@@ -55,7 +55,7 @@ let P = {},
 function F() {
   let e = Chunk771845.ZP.getFlattenedGuildIds().flatMap(e => m.ZP.getSelectableChannelIds(e)),
     t = Chunk601070.Z.getAllActiveJoinedThreads(),
-    n = e => !(!C.TPd.GUILD_TEXTUAL.has(e.type) || (0, T.ES)(e)) && ((0, _.Q5)(e.type) ? (0, f.J)(e) === N.iN.ALL_MESSAGES && !d.Z.isMuted(e.id) : y.ZP.allowAllMessages(e)),
+    n = e => !!C.TPd.GUILD_TEXTUAL.has(e.type) && ((0, _.Q5)(e.type) ? (0, f.J)(e) === N.iN.ALL_MESSAGES && !d.Z.isMuted(e.id) : y.ZP.allowAllMessages(e)),
     r = [];
   for (let t of module) {
     let e = Chunk592125.Z.getBasicChannel(exports);
@@ -170,11 +170,8 @@ function J(e) {
     message: a
   } = e;
   if (null == w || (null == (t = a.author) ? true : t.id) === (null == (n = O.default.getCurrentUser()) ? true : n.id)) returnfalse;
-  let o = w.includes(i);
-  if ((0, T.ES)({
-      id: i
-    })) returnfalse;
-  let s = Q(a),
+  let o = w.includes(i),
+    s = Q(a),
     l = s.mentioned;
   if (!o && !l) {
     if (!D.includes(i)) returnfalse;

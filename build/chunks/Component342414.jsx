@@ -100,21 +100,23 @@ let J = e => {
       headingText: d,
       headingTop: f,
       showPill: p
-    } = er(), m = null;
-    s ? m = (0, r.jsx)(S.Z, {
+    } = er(), m = v.ZP.useExperiment({
+      location: "PremiumBrandRefreshHeadingBody"
+    }), g = null;
+    s ? g = (0, r.jsx)(S.Z, {
       variant: S.C.SUBSCRIBER_HOME
-    }) : l ? m = (0, r.jsx)(G.Z, {}) : u && (m = (0, r.jsx)(C._, {}));
-    let g = (0, o.e7)([h.Z], () => h.Z.getPremiumTypeSubscription()),
-      E = (0, T.N)(),
-      b = (0, I.Ng)(),
-      y = (0, I.Wp)(b, Z.Si.TIER_2) ? Z.Si.TIER_2 : true,
-      O = null != g && g.status !== V.O0b.ACCOUNT_HOLD && g.hasAnyPremiumNitro,
-      v = (0, _.Z)().isFractionalPremiumActive && !O && null == m,
-      A = (0, o.e7)([c.Z], () => c.Z.useReducedMotion),
+    }) : l ? g = (0, r.jsx)(G.Z, {}) : u && (g = m.cohort === v.S$.Control ? (0, r.jsx)(B.Z, {}) : (0, r.jsx)(C._, {}));
+    let E = (0, o.e7)([h.Z], () => h.Z.getPremiumTypeSubscription()),
+      b = (0, T.N)(),
+      y = (0, I.Ng)(),
+      O = (0, I.Wp)(y, Z.Si.TIER_2) ? Z.Si.TIER_2 : true,
+      A = null != E && E.status !== V.O0b.ACCOUNT_HOLD && E.hasAnyPremiumNitro,
+      N = (0, _.Z)().isFractionalPremiumActive && !A && null == g,
+      R = (0, o.e7)([c.Z], () => c.Z.useReducedMotion),
       {
-        visibilityPercentageRef: N,
-        visibilityPercentage: R
-      } = (0, L.E)(!A);
+        visibilityPercentageRef: D,
+        visibilityPercentage: x
+      } = (0, L.E)(!R);
     return (0, r.jsxs)("div", {
       className: a()(Y.container, i),
       "data-testid": "subscriber-nitro-home-hero-header",
@@ -122,26 +124,26 @@ let J = e => {
         className: Y.gradientBackground
       }), (0, r.jsxs)("div", {
         className: Y.content,
-        ref: N,
+        ref: D,
         children: [p && f, (0, r.jsxs)("div", {
           className: Y.headerContainer,
           children: [(0, r.jsx)(U.Z, {
-            containerVisibilityPercentage: R
+            containerVisibilityPercentage: x
           }), (0, r.jsx)(M.Z, {
             children: d
           })]
         }), (0, r.jsxs)("div", {
-          className: v ? Y.twoButtonContainer : true,
-          children: [v && (0, r.jsx)(w.Z, {
+          className: N ? Y.twoButtonContainer : true,
+          children: [N && (0, r.jsx)(w.Z, {
             size: "md",
             hasActivePromotion: !!s,
-            subscriptionTier: null != (n = null == E || null == (t = E.subscription_trial) ? true : t.sku_id) ? n : y
+            subscriptionTier: null != (n = null == b || null == (t = b.subscription_trial) ? true : t.sku_id) ? n : O
           }), (0, r.jsx)(P.Z, {
-            variant: v ? "secondary" : "expressive",
+            variant: N ? "secondary" : "expressive",
             size: "md",
             buttonTextOverride: F.intl.string(F.t["3KomGR"])
           })]
-        }), m]
+        }), g]
       })]
     })
   },
