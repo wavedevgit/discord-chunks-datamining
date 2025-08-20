@@ -2,10 +2,10 @@
 /** chunk id: 84615, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ox: () => N,
+  Ox: () => C,
   QP: () => I,
   ob: () => R,
-  q4: () => C
+  q4: () => N
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -113,7 +113,7 @@ let S = {
     exitDone: Chunk102521.exitDoneReducedMotion
   };
 
-function N() {
+function C() {
   let {
     reducedMotion: e
   } = Chunk647438.useContext(Chunk481060.Sfi), t = module.enabled ? A : S, n = I(e => e.fullScreenLayers), a = require.map(e => ({
@@ -149,7 +149,7 @@ function N() {
   })
 }
 
-function C(e) {
+function N(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : Object.freeze({}),
     {
       layerKey: n,

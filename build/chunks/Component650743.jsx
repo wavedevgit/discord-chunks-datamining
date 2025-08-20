@@ -51,7 +51,7 @@ function T(e) {
   let {
     soundboardSound: t,
     closePicker: v
-  } = e, T = (0, d.Iu)(e => e.searchQuery), S = (0, i.e7)([E.Z], () => null != t && E.Z.isFavoriteSound(t.soundId)), A = (0, i.e7)([_.Z], () => _.Z.getGuild(null == t ? true : t.guildId)), N = (0, i.e7)([l.Z], () => l.Z.useReducedMotion, []), C = (0, i.e7)([h.Z], () => h.Z.isFocused()), R = (0, i.e7)([p.ZP], () => p.ZP.getKeybindForAction(b.kg4.SOUNDBOARD_HOLD));
+  } = e, T = (0, d.Iu)(e => e.searchQuery), S = (0, i.e7)([E.Z], () => null != t && E.Z.isFavoriteSound(t.soundId)), A = (0, i.e7)([_.Z], () => _.Z.getGuild(null == t ? true : t.guildId)), C = (0, i.e7)([l.Z], () => l.Z.useReducedMotion, []), N = (0, i.e7)([h.Z], () => h.Z.isFocused()), R = (0, i.e7)([p.ZP], () => p.ZP.getKeybindForAction(b.kg4.SOUNDBOARD_HOLD));
   if (null != t && T.length > 0) return (0, r.jsx)(f.Z, {
     graphicPrimary: null != t.emojiId || null != t.emojiName ? (0, r.jsx)(s.Z, {
       emojiId: t.emojiId,
@@ -64,7 +64,7 @@ function T(e) {
     }),
     graphicSecondary: null != A ? (0, r.jsx)(u.Z, {
       guild: A,
-      shouldAnimate: !N && C
+      shouldAnimate: !C && N
     }) : null,
     titlePrimary: t.name,
     titleSecondary: null == A ? true : A.name,
@@ -80,14 +80,14 @@ function T(e) {
     },
     w = (0, c.zu)(a.z.SOUNDBOARD_KEYBIND_TIP),
     D = () => (0, c.Q3)(a.z.SOUNDBOARD_KEYBIND_TIP),
-    L = null != R && (0, m.isWindows)() && !w ? y.intl.format(y.t.udMTtr, {
+    x = null != R && (0, m.isWindows)() && !w ? y.intl.format(y.t.udMTtr, {
       keybind: (0, g.BB)(R.shortcut, true),
       openSettingsHook: (e, t) => (0, r.jsx)(o.eee, {
         onClick: P,
         children: e
       }, t)
     }) : null;
-  return null == L ? null : (0, r.jsxs)("div", {
+  return null == x ? null : (0, r.jsxs)("div", {
     className: O.keybindHint,
     children: [(0, r.jsx)(o.Mgn, {
       size: "custom",
@@ -99,7 +99,7 @@ function T(e) {
       variant: "text-sm/medium",
       color: "text-default",
       className: O.keybindHintText,
-      children: L
+      children: x
     }), (0, r.jsx)(o.P3F, {
       className: O.closeButton,
       onClick: D,

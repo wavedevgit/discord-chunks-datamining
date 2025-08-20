@@ -43,7 +43,7 @@ function D(e, t, n) {
   }) : e[t] = n, e
 }
 
-function L(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -56,7 +56,7 @@ function L(e) {
   return e
 }
 
-function x(e, t) {
+function L(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -67,16 +67,16 @@ function x(e, t) {
   return n
 }
 
-function M(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
+function j(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 new Chunk710845.Z("ChannelEditor.tsx");
-let k = function() {
+let M = function() {
     for (var e = arguments.length, t = Array(module), n = 0; require < module; require++) exports[require] = arguments[require]
   },
-  j = 1e3;
+  k = 1e3;
 class U extends Chunk647438.Component {
   _getEditorWindow() {
     var e, t, n, r, i;
@@ -88,13 +88,13 @@ class U extends Chunk647438.Component {
     return this._cachedEditorWindow
   }
   componentDidMount() {
-    this.props.focused && requestAnimationFrame(() => this.focus()), document.addEventListener("selectionchange", this.handleSelectionChange), window.addEventListener("beforeunload", this.handleBeforeUnload), this._initTimeoutId = setTimeout(() => void this._getEditorWindow(), j)
+    this.props.focused && requestAnimationFrame(() => this.focus()), document.addEventListener("selectionchange", this.handleSelectionChange), window.addEventListener("beforeunload", this.handleBeforeUnload), this._initTimeoutId = setTimeout(() => void this._getEditorWindow(), k)
   }
   componentDidUpdate(e) {
     if (this.fixFocus(e), this.props.useSlate !== e.useSlate) {
       var t, n;
       let e;
-      e = this.props.useSlate ? this.props.textValue : (0, C.sk)(this.props.richValue, {
+      e = this.props.useSlate ? this.props.textValue : (0, N.sk)(this.props.richValue, {
         mode: "plain"
       }), null == (t = (n = this.props).onChange) || t.call(n, null, e, (0, I.JM)(e))
     } else this.props.textValue !== e.textValue && this.saveCurrentTextThrottled()
@@ -224,17 +224,17 @@ class U extends Chunk647438.Component {
       useNewSlashCommands: O,
       canOnlyUseTextCommands: T,
       className: S,
-      id: C,
+      id: N,
       required: P,
       maxCharacterCount: D,
-      allowNewLines: x,
-      "aria-describedby": k,
-      "aria-labelledby": j,
+      allowNewLines: L,
+      "aria-describedby": M,
+      "aria-labelledby": k,
       accessibilityLabel: U
     } = this.props, {
       submitting: G,
       popup: B
-    } = this.state, V = {
+    } = this.state, Z = {
       channel: Chunk476326,
       className: o()(Chunk330122, Chunk564355.textArea, {
         [Chunk564355.textAreaSlate]: Chunk710845,
@@ -255,7 +255,7 @@ class U extends Chunk647438.Component {
       moveSelection: this.handleMoveSelection,
       maybeShowAutocomplete: this.maybeShowAutocomplete,
       hideAutocomplete: this.hideAutocomplete,
-      allowNewLines: x,
+      allowNewLines: L,
       onChange: Chunk729594,
       onResize: Chunk166459,
       onKeyDown: Chunk430742,
@@ -275,19 +275,19 @@ class U extends Chunk647438.Component {
       "aria-expanded": null !== B.id || true,
       "aria-activedescendant": null != (s = B.activeDescendant) ? Chunk392711 : true,
       "aria-invalid": l.length > D,
-      "aria-describedby": k,
-      "aria-labelledby": j,
+      "aria-describedby": M,
+      "aria-labelledby": k,
       "aria-autocomplete": "list"
-    }, F = Chunk710845 ? (0, Chunk951288.jsx)(Chunk4484.Z, M(L({
+    }, V = Chunk710845 ? (0, Chunk951288.jsx)(Chunk4484.Z, j(x({
       ref: this.ref
-    }, V), {
+    }, Z), {
       type: Chunk998698,
       value: u ? (0, Chunk752305.JM)("") : Chunk218887,
       canUseCommands: null == (t = Chunk998698.commands) ? true : exports.enabled,
       canOnlyUseTextCommands: Chunk30465
-    })) : (0, Chunk951288.jsx)(Chunk140963.Z, M(L({
+    })) : (0, Chunk951288.jsx)(Chunk140963.Z, j(x({
       ref: this.ref
-    }, V), {
+    }, Z), {
       value: u ? "" : l
     }));
     return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
@@ -297,7 +297,7 @@ class U extends Chunk647438.Component {
       }), (0, Chunk951288.jsx)(Chunk459273.d9, {
         event: Chunk981631.CkL.CLEAR_TEXT,
         handler: this.handleClearText
-      }), F]
+      }), V]
     })
   }
   constructor(e) {
@@ -411,7 +411,7 @@ class U extends Chunk647438.Component {
       }, O = null != s ? s : c, {
         files: v
       } = G(e.clipboardData, u.uploadLongMessages ? O : null);
-      return k("onPaste", [...e.clipboardData.items].map(e => {
+      return M("onPaste", [...e.clipboardData.items].map(e => {
         if ("file" !== e.kind) return {
           kind: e.kind,
           type: e.type

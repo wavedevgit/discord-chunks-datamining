@@ -92,20 +92,20 @@ function b(e) {
     allowOverflow: T,
     disableTooltipPointerEvents: S,
     clickableOnMobile: A,
-    hideOnClick: N
-  } = e, C = m(e, ["children", "text", "position", "align", "spacing", "layerContext", "onAnimationRest", "targetElementRef", "caretConfig", "className", "style", "color", "tooltipClassName", "tooltipContentClassName", "tooltipPointerClassName", "allowOverflow", "disableTooltipPointerEvents", "clickableOnMobile", "hideOnClick"]);
+    hideOnClick: C
+  } = e, N = m(e, ["children", "text", "position", "align", "spacing", "layerContext", "onAnimationRest", "targetElementRef", "caretConfig", "className", "style", "color", "tooltipClassName", "tooltipContentClassName", "tooltipPointerClassName", "allowOverflow", "disableTooltipPointerEvents", "clickableOnMobile", "hideOnClick"]);
   let R = (0, d.c)(f),
     P = i.useId(),
     {
       isVisible: w,
       isRendered: D,
-      triggerProps: L,
-      handleExitComplete: x
+      triggerProps: x,
+      handleExitComplete: L
     } = (0, c.l)(_({
       targetElementRef: R.targetElementRef
-    }, C)),
-    M = i.useMemo(() => ({
-      triggerHandlers: L,
+    }, N)),
+    j = i.useMemo(() => ({
+      triggerHandlers: x,
       triggerRef: R.triggerRef,
       targetElementRef: R.targetElementRef,
       tooltipId: P,
@@ -118,10 +118,10 @@ function b(e) {
       caretConfig: p,
       layerContext: l,
       onAnimationRest: u,
-      handleExitComplete: x
-    }), [L, R.triggerRef, R.targetElementRef, P, w, D, n, a, o, s, p, l, u, x]);
+      handleExitComplete: L
+    }), [x, R.triggerRef, R.targetElementRef, P, w, D, n, a, o, s, p, l, u, L]);
   return (0, r.jsxs)(E.Provider, {
-    value: M,
+    value: j,
     children: [t, (0, r.jsx)(v, {})]
   })
 }

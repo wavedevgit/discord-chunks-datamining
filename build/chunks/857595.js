@@ -8,11 +8,11 @@ require.d(exports, {
   Qj: () => _,
   TX: () => I,
   Uv: () => R,
-  X2: () => N,
+  X2: () => C,
   ZZ: () => d,
   Zt: () => y,
   cq: () => f,
-  eN: () => C,
+  eN: () => N,
   f1: () => h,
   gs: () => T,
   lq: () => m,
@@ -169,14 +169,14 @@ function A(e) {
   })
 }
 
-function N(e) {
+function C(e) {
   r.Z.dispatch({
     type: "ACCESSIBILITY_SET_DISPLAY_NAME_STYLES_ENABLED",
     enabled: e
   })
 }
 
-function C() {
+function N() {
   Chunk570140.Z.dispatch({
     type: "ACCESSIBILITY_SUBMIT_BUTTON_TOGGLE"
   })

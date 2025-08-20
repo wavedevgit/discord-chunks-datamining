@@ -2,7 +2,7 @@
 /** chunk id: 454585, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => N
+  Z: () => C
 }), require("./388685.js");
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
@@ -85,7 +85,7 @@ let h = {
   A = {
     text: Chunk428595.Z.RULES.text
   },
-  N = {
+  C = {
     combineAndInjectMentionRule: p,
     createReactRules: Chunk691424.Z,
     defaultReactRuleOptions: h,

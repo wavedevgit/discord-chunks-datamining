@@ -1,12 +1,13 @@
-/** Chunk was on 66181 **/
-/** chunk id: 923834, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 923834, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => c
+  Z: () => _
 }), require("./35282.js"), require("./415506.js");
-var i, Chunk442837 = require("./442837.js"),
+var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -14,40 +15,49 @@ function a(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
+
+function s(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      o(e, t, n[t])
+    })
+  }
+  return e
+}
 let l = null;
-class o extends(i = Chunk442837.ZP.Store) {
+
+function c(e) {
+  let {
+    location: t
+  } = e;
+  l = s({}, t)
+}
+
+function u() {
+  l = null
+}
+
+function d(e) {
+  let t = null != e && null != e.search ? e.search : "";
+  return null != e ? "".concat(e.pathname).concat(t) : null
+}
+class f extends(r = Chunk442837.ZP.Store) {
   getCurrentPath() {
     return null != l ? l.pathname : null
   }
   getCurrentRoute() {
-    var e = l;
-    let t = null != module && null != module.search ? module.search : "";
-    return null != module ? "".concat(module.pathname).concat(exports) : null
+    return d(l)
   }
   reset() {
     throw Error("Should not reset the store this way outside of a test environment")
   }
 }
-a(o, "displayName", "ApplicationStoreLocationStore");
-let c = new o(Chunk570140.Z, {
-  APPLICATION_STORE_LOCATION_CHANGE: function(e) {
-    let {
-      location: t
-    } = e;
-    l = function(e) {
-      for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-          i = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-          return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), i.forEach(function(t) {
-          a(e, t, n[t])
-        })
-      }
-      return e
-    }({}, t)
-  },
-  APPLICATION_STORE_RESET_NAVIGATION: function() {
-    l = null
-  }
+o(f, "displayName", "ApplicationStoreLocationStore");
+let _ = new f(Chunk570140.Z, {
+  APPLICATION_STORE_LOCATION_CHANGE: c,
+  APPLICATION_STORE_RESET_NAVIGATION: u
 })

@@ -1,5 +1,6 @@
-/** Chunk was on 66181 **/
-/** chunk id: 361045, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 361045, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   n: () => c
 });
@@ -16,46 +17,46 @@ function c(e) {
     markAsDismissed: t,
     onCTA: c
   } = e;
-  return (0, i.jsxs)("div", {
-    className: o.popup,
-    children: [(0, i.jsxs)("div", {
-      className: o.background,
-      children: [(0, i.jsx)("div", {
-        className: o.blur0
-      }), (0, i.jsx)("div", {
-        className: o.blur1
-      }), (0, i.jsx)("div", {
-        className: o.blur2
+  return (0, r.jsxs)("div", {
+    className: l.popup,
+    children: [(0, r.jsxs)("div", {
+      className: l.background,
+      children: [(0, r.jsx)("div", {
+        className: l.blur0
+      }), (0, r.jsx)("div", {
+        className: l.blur1
+      }), (0, r.jsx)("div", {
+        className: l.blur2
       })]
-    }), (0, i.jsxs)("div", {
-      className: o.content,
-      children: [(0, i.jsx)(r.P3F, {
-        className: o.closeIcon,
-        onClick: () => t(a.L.USER_DISMISS),
-        children: (0, i.jsx)(r.Dio, {})
-      }), (0, i.jsx)("img", {
+    }), (0, r.jsxs)("div", {
+      className: l.content,
+      children: [(0, r.jsx)(i.P3F, {
+        className: l.closeIcon,
+        onClick: () => t(o.L.USER_DISMISS),
+        children: (0, r.jsx)(i.Dio, {})
+      }), (0, r.jsx)("img", {
         src: n(414190),
-        className: o.art,
+        className: l.art,
         alt: ""
-      }), (0, i.jsxs)("div", {
-        children: [(0, i.jsxs)(r.X6q, {
+      }), (0, r.jsxs)("div", {
+        children: [(0, r.jsxs)(i.X6q, {
           variant: "heading-md/semibold",
           color: "header-primary",
-          className: o.heading,
-          children: [l.intl.string(l.t.MLt8Hx), (0, i.jsx)(s.Z, {
-            className: o.betaTag
+          className: l.heading,
+          children: [s.intl.string(s.t.MLt8Hx), (0, r.jsx)(a.Z, {
+            className: l.betaTag
           })]
-        }), (0, i.jsx)(r.Text, {
+        }), (0, r.jsx)(i.Text, {
           variant: "text-sm/normal",
           color: "header-secondary",
-          children: l.intl.string(l.t["l+lSLi"])
+          children: s.intl.string(s.t["l+lSLi"])
         })]
-      }), (0, i.jsx)(r.zxk, {
+      }), (0, r.jsx)(i.zxk, {
         variant: "primary",
-        text: l.intl.string(l.t["9WdoBw"]),
+        text: s.intl.string(s.t["9WdoBw"]),
         fullWidth: true,
         onClick: () => {
-          t(a.L.TAKE_ACTION), c()
+          t(o.L.TAKE_ACTION), c()
         }
       })]
     })]

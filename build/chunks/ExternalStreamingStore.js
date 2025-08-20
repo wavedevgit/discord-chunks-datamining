@@ -2,7 +2,7 @@
 /** chunk id: 272053, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => j
+  Z: () => k
 }), require("./388685.js"), require("./35282.js"), require("./415506.js"), require("./539854.js"), require("./993155.js");
 var r, Chunk348327 = require("./348327.js"),
   a = require.n(Chunk348327),
@@ -35,8 +35,8 @@ let g = "33kozedd0zs6fbauka98psnc7zwom2s",
   T = null,
   S = 0,
   A = null,
-  N = new Set,
-  C = {};
+  C = new Set,
+  N = {};
 
 function R(e) {
   var t;
@@ -56,7 +56,7 @@ function P(e, t, n) {
 }
 async function w(e, t) {
   var n;
-  let r = C[e];
+  let r = N[e];
   if (null != r) return r;
   let {
     body: {
@@ -65,7 +65,7 @@ async function w(e, t) {
   } = await P("/games", {
     id: e
   }, t), a = null == (n = i[0]) ? true : n.name;
-  return C[e] = a, a
+  return N[e] = a, a
 }
 class D {
   start() {
@@ -115,7 +115,7 @@ class D {
   }
   async _checkYouTube(e) {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null;
-    if (A = null, e.revoked || N.has(e.id)) return null;
+    if (A = null, e.revoked || C.has(e.id)) return null;
     try {
       var n;
       let {
@@ -153,7 +153,7 @@ class D {
       }
     } catch (n) {
       if (401 === n.status && null == t) return c.Z.refreshAccessToken(e.type, e.id).then(t => this._checkYouTube(e, t)).catch(() => null);
-      return 403 === n.status && N.add(e.id), null
+      return 403 === n.status && C.add(e.id), null
     }
   }
   _check() {
@@ -182,27 +182,27 @@ class D {
     m(this, "_nextCheck", true), m(this, "_started", true), this._started = false
   }
 }
-let L = new D;
+let x = new D;
 
-function x() {
-  Chunk246946.Z.enabled ? L.start() : L.stop()
+function L() {
+  Chunk246946.Z.enabled ? x.start() : x.stop()
 }
 
-function M(e) {
+function j(e) {
   var t;
   if (a()(e.stream, T)) returnfalse;
   T = null != (t = e.stream) ? t : null
 }
-class k extends(r = Chunk442837.ZP.Store) {
+class M extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    x(), this.waitFor(Chunk553795.Z), this.syncWith([Chunk246946.Z], x)
+    L(), this.waitFor(Chunk553795.Z), this.syncWith([Chunk246946.Z], L)
   }
   getStream() {
     return T
   }
 }
-m(k, "displayName", "ExternalStreamingStore");
-let j = new k(Chunk570140.Z, {
-  STREAMING_UPDATE: M,
-  USER_CONNECTIONS_UPDATE: () => L._check()
+m(M, "displayName", "ExternalStreamingStore");
+let k = new M(Chunk570140.Z, {
+  STREAMING_UPDATE: j,
+  USER_CONNECTIONS_UPDATE: () => x._check()
 })

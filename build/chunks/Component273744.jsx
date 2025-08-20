@@ -1,12 +1,12 @@
-/** Chunk was on 26475 **/
+/** Chunk was on 40226 **/
 /** chunk id: 273744, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   s: () => c
 });
-var r, a, Chunk951288 = require("./951288.js");
+var r, i, Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk159635 = require("./159635.js"),
-  l = require.n(Chunk159635),
+  o = require.n(Chunk159635),
   Chunk481060 = require("./481060.js");
 let c = (r = function(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -25,21 +25,21 @@ let c = (r = function(e) {
     })
   }
   return e
-}({}, l().defaultRules.link), a = a = {
+}({}, o().defaultRules.link), i = i = {
   react: function(e, t, n) {
-    return (0, i.jsx)(s.eee, {
+    return (0, l.jsx)(s.eee, {
       href: e.target,
       target: "_blank",
       children: t(e.content, n)
     })
   }
-}, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+}, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
     n.push.apply(n, r)
   }
   return n
-})(Object(a)).forEach(function(e) {
-  Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(a, e))
+})(Object(i)).forEach(function(e) {
+  Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
 }), r)

@@ -35,8 +35,8 @@ let y = [Chunk186901.ff.AUTHENTICATION_FAILED, Chunk186901.ff.NOT_ENTITLED],
   T = false,
   S = null,
   A = null,
-  N = false,
-  C = new Map,
+  C = false,
+  N = new Map,
   R = false,
   P = null;
 
@@ -44,7 +44,7 @@ function w() {
   let e = {
     queue: v,
     paused: T,
-    userActions: Array.from(C)
+    userActions: Array.from(N)
   };
   Chunk433517.K.set(O, module)
 }
@@ -53,7 +53,7 @@ function D(e, t) {
   return null != S && S.applicationId === e && S.branchId === t || null != A && A.applicationId === e && A.branchId === t
 }
 
-function L() {
+function x() {
   let e = v[0];
   if (null != module) {
     let {
@@ -72,12 +72,12 @@ function L() {
   }
 }
 
-function x(e, t) {
+function L(e, t) {
   let n = (0, _.Tu)(e, t);
   return v.findIndex(e => e.comboId === n)
 }
 
-function M(e, t, n, r) {
+function j(e, t, n, r) {
   let i = (0, _.Tu)(e, t),
     a = {
       comboId: i,
@@ -85,28 +85,28 @@ function M(e, t, n, r) {
     },
     o = I.indexOf(i);
   false !== o && I.splice(o, 1);
-  let s = x(e, t);
-  0 !== s && (n ? false === s && (v.push(a), L()) : (s > 0 && v.splice(s, 1), v.unshift(a), L())), !n && T && p.Z.resume(), w()
+  let s = L(e, t);
+  0 !== s && (n ? false === s && (v.push(a), x()) : (s > 0 && v.splice(s, 1), v.unshift(a), x())), !n && T && p.Z.resume(), w()
 }
 
-function k(e, t) {
+function M(e, t) {
   let n = (0, _.Tu)(e, t),
     r = I.indexOf(n);
   false !== r && I.splice(r, 1);
-  let i = x(e, t);
-  false !== i && (v.splice(i, 1), w()), L()
+  let i = L(e, t);
+  false !== i && (v.splice(i, 1), w()), x()
 }
 
-function j(e) {
+function k(e) {
   let {
     applicationId: t,
     branchId: n
   } = e;
-  C.set((0, _.Tu)(t, n), "Install"), M(t, n, false, "Patch")
+  N.set((0, _.Tu)(t, n), "Install"), j(t, n, false, "Patch")
 }
 
 function U(e) {
-  V(e), Z(e)
+  Z(e), F(e)
 }
 
 function G(e) {
@@ -114,7 +114,7 @@ function G(e) {
     applicationId: t,
     branchId: n
   } = e;
-  C.set((0, _.Tu)(t, n), "Repair"), M(t, n, false, "Repair")
+  N.set((0, _.Tu)(t, n), "Repair"), j(t, n, false, "Repair")
 }
 
 function B(e) {
@@ -123,27 +123,27 @@ function B(e) {
     branchId: n,
     automatic: r
   } = e;
-  M(t, n, r, "Patch")
+  j(t, n, r, "Patch")
+}
+
+function Z(e) {
+  let {
+    applicationId: t,
+    branchId: n
+  } = e;
+  M(t, n)
 }
 
 function V(e) {
   let {
     applicationId: t,
     branchId: n
-  } = e;
-  k(t, n)
+  } = e, r = L(t, n);
+  if (r < 1) returnfalse;
+  v.splice(0, 0, v.splice(r, 1)[0]), x(), T && p.Z.resume(), w()
 }
 
 function F(e) {
-  let {
-    applicationId: t,
-    branchId: n
-  } = e, r = x(t, n);
-  if (r < 1) returnfalse;
-  v.splice(0, 0, v.splice(r, 1)[0]), L(), T && p.Z.resume(), w()
-}
-
-function Z(e) {
   let {
     applicationId: t,
     branchId: n
@@ -155,7 +155,7 @@ function H(e) {
   let {
     state: t
   } = e;
-  !N && (N = true, L(), T || p.Z.resume());
+  !C && (C = true, x(), T || p.Z.resume());
   let n = T;
   T = t.paused, S = t.currentTask, A = t.nextTask;
   let r = false;
@@ -167,20 +167,20 @@ function H(e) {
       branchId: i
     } = (0, _.CP)(t), o = m.Z.getState(n, i), s = f.Z.getTargetBuildId(n, i), l = f.Z.getTargetManifests(n, i);
     if (null != o && o.type === g.vxO.UP_TO_DATE && o.buildId === o.targetBuildId && o.buildId === s && a().isEqual(o.manifestIds, o.targetManifestIds) && a().isEqual(o.manifestIds, l)) {
-      if (I.push(t), C.has(t)) {
-        switch (C.get(t)) {
+      if (I.push(t), N.has(t)) {
+        switch (N.get(t)) {
           case "Install":
             c.XT(n, o);
             break;
           case "Repair":
             c.Wx(n, o)
         }
-        C.delete(t)
+        N.delete(t)
       }
       return r = true, false
     }
     returntrue
-  }), L(), (r || n !== T) && w()
+  }), x(), (r || n !== T) && w()
 }
 
 function Y() {
@@ -206,7 +206,7 @@ function W(e) {
           application_id: t,
           branch_id: n
         } = e;
-        k(t, n)
+        M(t, n)
       }
     }
   }
@@ -240,7 +240,7 @@ class Q extends(r = Chunk442837.ZP.Store) {
       paused: null,
       userActions: null
     };
-    null != exports.queue && (v = X(exports.queue)), null != exports.paused && (T = exports.paused), null != exports.userActions && (C = new Map(Array.from(exports.userActions))), this.waitFor(Chunk417363.Z, Chunk594190.ZP), this.syncWith([Chunk594190.ZP], K), this.waitFor(Chunk417363.Z)
+    null != exports.queue && (v = X(exports.queue)), null != exports.paused && (T = exports.paused), null != exports.userActions && (N = new Map(Array.from(exports.userActions))), this.waitFor(Chunk417363.Z, Chunk594190.ZP), this.syncWith([Chunk594190.ZP], K), this.waitFor(Chunk417363.Z)
   }
   get activeItems() {
     return v.map(e => {
@@ -257,7 +257,7 @@ class Q extends(r = Chunk442837.ZP.Store) {
     return T
   }
   getQueuePosition(e, t) {
-    return x(e, t)
+    return L(e, t)
   }
   isCorruptInstallation() {
     return R
@@ -265,13 +265,13 @@ class Q extends(r = Chunk442837.ZP.Store) {
 }
 b(Q, "displayName", "DispatchManagerStore");
 let J = new Q(Chunk570140.Z, {
-  DISPATCH_APPLICATION_INSTALL: j,
+  DISPATCH_APPLICATION_INSTALL: k,
   DISPATCH_APPLICATION_UPDATE: B,
   DISPATCH_APPLICATION_UNINSTALL: U,
-  DISPATCH_APPLICATION_CANCEL: V,
+  DISPATCH_APPLICATION_CANCEL: Z,
   DISPATCH_APPLICATION_REPAIR: G,
-  DISPATCH_APPLICATION_MOVE_UP: F,
-  DISPATCH_APPLICATION_REMOVE_FINISHED: Z,
+  DISPATCH_APPLICATION_MOVE_UP: V,
+  DISPATCH_APPLICATION_REMOVE_FINISHED: F,
   DISPATCH_APPLICATION_STATE_UPDATE: H,
   DISPATCH_APPLICATION_ERROR: W,
   CONNECTION_OPEN: z,

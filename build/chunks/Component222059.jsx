@@ -1,4 +1,4 @@
-/** Chunk was on 69003 **/
+/** Chunk was on 91488 **/
 /** chunk id: 222059, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   u: () => D
@@ -54,21 +54,21 @@ function R(e) {
     badge: f,
     link: m,
     showProgressBadge: b
-  } = e, [O, _] = i.useState(false), [y, v] = i.useState(false), [j, C] = i.useState(null), [N, R] = i.useState(0), D = (0, l.Ie)("home"), L = (0, d.oq)().activePanel === d.wh.APP_ICON, M = () => {
-    C(null), R(0), clearTimeout(j)
+  } = e, [O, _] = i.useState(false), [y, j] = i.useState(false), [v, C] = i.useState(null), [N, R] = i.useState(0), D = (0, l.Ie)("home"), M = (0, d.oq)().activePanel === d.wh.APP_ICON, L = () => {
+    C(null), R(0), clearTimeout(v)
   };
   if (null == p) return null;
   let k = Z.intl.string(Z.t.YUU0RE);
-  y && (k = a.K.get(I.wli) ? Z.intl.string(Z.t.nkq1l5) : Z.intl.string(Z.t.Be8Q5O));
+  y && (k = a.K.get(P.wli) ? Z.intl.string(Z.t.nkq1l5) : Z.intl.string(Z.t.Be8Q5O));
   let U = null;
   !o && b && (U = (0, r.jsx)(c.Z, {
     className: T.downloadProgress,
     determineOwnVisibility: false
   }));
-  let G = o || O || L,
+  let G = o || O || M,
     B = (0, r.jsx)(s.aRk, {
       selected: true,
-      lowerBadge: f > 0 ? (0, P.Ne)(f) : null,
+      lowerBadge: f > 0 ? (0, I.Ne)(f) : null,
       upperBadge: U,
       lowerBadgeSize: {
         width: (0, s.OVM)(f)
@@ -94,11 +94,11 @@ function R(e) {
         onMouseEnter: () => _(true),
         onMouseLeave: () => _(false),
         onClick: () => {
-          if (!__OVERLAY__ && (null != j && clearTimeout(j), C(setTimeout(M, 500)), R(N + 1), 15 === N)) {
-            M();
-            let e = !a.K.get(I.wli);
-            a.K.set(I.wli, e), e && a.K.set(w.O5, true), e ? (0, h.GN)("discodo") : (0, h.GN)("user_leave"), v(true), setTimeout(() => {
-              v(false)
+          if (!__OVERLAY__ && (null != v && clearTimeout(v), C(setTimeout(L, 500)), R(N + 1), 15 === N)) {
+            L();
+            let e = !a.K.get(P.wli);
+            a.K.set(P.wli, e), e && a.K.set(w.O5, true), e ? (0, h.GN)("discodo") : (0, h.GN)("user_leave"), j(true), setTimeout(() => {
+              j(false)
             }, 1e3)
           }
         },
@@ -111,9 +111,9 @@ function R(e) {
           pathname: m,
           state: {
             analyticsSource: {
-              page: I.ZY5.GUILD_CHANNEL,
-              section: I.jXE.NAVIGATION,
-              object: I.qAy.BUTTON_HOME
+              page: P.ZY5.GUILD_CHANNEL,
+              section: P.jXE.NAVIGATION,
+              object: P.qAy.BUTTON_HOME
             }
           }
         },
@@ -135,8 +135,8 @@ function R(e) {
       inlineSpecs: A,
       tutorialId: "friends-list",
       position: "right",
-      children: (0, r.jsxs)(x.H, {
-        children: [(0, r.jsx)(E.Z, {
+      children: (0, r.jsxs)(E.H, {
+        children: [(0, r.jsx)(x.Z, {
           selected: o,
           hovered: O,
           className: T.pill
@@ -177,8 +177,8 @@ function D() {
     d = (0, Chunk899740.q)(),
     h = require + Chunk481060 + Chunk550385,
     g = Chunk460181 === Chunk481060 && Chunk481060 > 0 && require + Chunk550385 === 0,
-    E = Chunk774343.Z.getHomeLink();
-  return Chunk155409 && (E = Chunk981631.Z5c.APPLICATION_STORE), (0, Chunk951288.jsx)(R, {
+    x = Chunk774343.Z.getHomeLink();
+  return Chunk155409 && (x = Chunk981631.Z5c.APPLICATION_STORE), (0, Chunk951288.jsx)(R, {
     selected: module,
     user: Chunk864682,
     selectedChannelId: Chunk944486.Z.getChannelId(Chunk981631.ME),

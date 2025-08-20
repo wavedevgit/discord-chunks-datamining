@@ -1,12 +1,13 @@
-/** Chunk was on 66181 **/
-/** chunk id: 381496, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 381496, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  j: () => a
+  j: () => o
 });
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
   Chunk981631 = require("./981631.js");
-let a = () => Chunk544891.tn.get({
+let o = () => Chunk544891.tn.get({
   url: Chunk981631.ANM.GUILD_AFFINITIES,
   oldFormErrors: true,
   rejectWithError: false
@@ -16,7 +17,7 @@ let a = () => Chunk544891.tn.get({
       guild_affinities: t
     }
   } = e;
-  r.Z.dispatch({
+  i.Z.dispatch({
     type: "LOAD_GUILD_AFFINITIES_SUCCESS",
     guildAffinities: t
   })

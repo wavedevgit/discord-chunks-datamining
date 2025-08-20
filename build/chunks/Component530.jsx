@@ -35,12 +35,12 @@ function g(e) {
     onOpenProfile: T,
     onClose: S,
     nicknameVariant: A = "heading-lg/bold"
-  } = e, N = e => null == T ? e : (0, r.jsx)(o.kL8, {
+  } = e, C = e => null == T ? e : (0, r.jsx)(o.kL8, {
     onClick: T,
     className: m.clickableUsername,
     "aria-label": h.intl.string(h.t["+Xp3ho"]),
     children: e
-  }), C = null != y && y.length > 0, R = (0, l.D)(t), P = (0, u.Y)({
+  }), N = null != y && y.length > 0, R = (0, l.D)(t), P = (0, u.Y)({
     location: "UserProfileUsername"
   }) && null != b;
   return (0, r.jsxs)("div", {
@@ -49,7 +49,7 @@ function g(e) {
     }, O),
     children: [(0, r.jsxs)("div", {
       className: m.usernameRow,
-      children: [N(P ? (0, r.jsx)(o.Text, {
+      children: [C(P ? (0, r.jsx)(o.Text, {
         variant: A,
         children: (0, r.jsx)(f.Z, {
           userName: g,
@@ -73,10 +73,10 @@ function g(e) {
       })]
     }), (0, r.jsxs)("div", {
       className: a()(m.tags, {
-        [m.pronouns]: C,
+        [m.pronouns]: N,
         [m.bot]: null != R
       }),
-      children: [!t.isProvisional && N((0, r.jsx)(s.Z, {
+      children: [!t.isProvisional && C((0, r.jsx)(s.Z, {
         user: t,
         usernameIcon: n,
         forceUsername: true,
@@ -85,7 +85,7 @@ function g(e) {
         usernameClass: m.userTagUsername,
         discriminatorClass: m.userTagDiscriminator,
         hideBotTag: true
-      })), C && (0, r.jsxs)(r.Fragment, {
+      })), N && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
           "aria-hidden": "true",
           className: m.dotSpacer

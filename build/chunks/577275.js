@@ -1,31 +1,31 @@
-/** Chunk was on 31930 **/
-/** chunk id: 577275, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 577275, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => s
+  Z: () => a
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk586739 = require("./586739.js");
-let s = function() {
+let a = function() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {},
     {
       refreshOnDepChange: t
     } = module,
-    [n, s] = Chunk647438.useState([]),
-    [l, o] = Chunk647438.useState(true),
-    a = async () => {
-      o(true);
+    [n, a] = Chunk647438.useState([]),
+    [o, s] = Chunk647438.useState(true),
+    l = async () => {
+      s(true);
       try {
         let e = await Chunk586739.Z.fetchTeams(true);
-        s(module.body)
+        a(module.body)
       } catch (e) {}
-      o(false)
+      s(false)
     }, c = Chunk647438.useRef(true);
   return Chunk647438.useEffect(() => {
-    (c.current || exports) && (c.current = false, a())
+    (c.current || exports) && (c.current = false, l())
   }, [exports]), {
     teams: require,
-    loading: l,
-    refresh: a
+    loading: o,
+    refresh: l
   }
 }

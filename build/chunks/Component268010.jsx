@@ -45,24 +45,24 @@ let I = (e, t, n) => {
       onReaction: u,
       onVoiceChannelPreview: S
     } = e, A = (0, a.e7)([l.default], () => l.default.getUser(n.author_id)), {
-      largeImage: N
+      largeImage: C
     } = (0, f.rv)({
       entry: n
     }), {
-      primaryColor: C,
+      primaryColor: N,
       secondaryColor: R
-    } = (0, m.Z)(null == N ? true : N.src), P = (0, a.e7)([s.default], () => s.default.locale), w = (0, h.Z)(O.ABu.CRUNCHYROLL), D = (0, _.ap)(n.extra.media_assets_large_text), L = i.useCallback(e => {
-      if (null != A && (null == N ? true : N.src) != null) return (0, p.B)({
+    } = (0, m.Z)(null == C ? true : C.src), P = (0, a.e7)([s.default], () => s.default.locale), w = (0, h.Z)(O.ABu.CRUNCHYROLL), D = (0, _.ap)(n.extra.media_assets_large_text), x = i.useCallback(e => {
+      if (null != A && (null == C ? true : C.src) != null) return (0, p.B)({
         entry: n,
-        mediaImageSrc: null == N ? true : N.src,
+        mediaImageSrc: null == C ? true : C.src,
         avatarSrc: A.getAvatarURL(null == t ? true : t.guild_id, 128),
         description: I(n, t, A),
         timestamp: (0, _.yh)(n, P),
         episodeDescription: D,
-        colors: [C, R],
+        colors: [N, R],
         channelId: e
       })
-    }, [t, n, D, P, null == N ? true : N.src, C, R, A]), x = () => {
+    }, [t, n, D, P, null == C ? true : C.src, N, R, A]), L = () => {
       if (null == n.extra.url) return;
       let e = d.Z.safeParseWithQuery(n.extra.url);
       null != e && null != e.protocol && null != e.hostname && (0, c.q)({
@@ -88,15 +88,15 @@ let I = (e, t, n) => {
             entry: n
           }, t))
         }),
-        onClickTitle: x,
-        onClickThumbnail: x
+        onClickTitle: L,
+        onClickThumbnail: L
       }), (0, r.jsx)(b.St, {
         children: (0, r.jsx)(b.WT, {
           onReaction: u,
           onVoiceChannelPreview: S,
           user: A,
           channel: t,
-          generateReactionImage: L,
+          generateReactionImage: x,
           reactionImageAltText: T(n, A),
           entry: n
         })

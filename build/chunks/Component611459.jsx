@@ -1,5 +1,6 @@
-/** Chunk was on 96750 **/
-/** chunk id: 611459, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 611459, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   Z: () => c
 });
@@ -18,17 +19,17 @@ function c(e) {
     source: c,
     look: u,
     color: d,
-    onAction: p
+    onAction: f
   } = e;
-  return null != t && (0, l.Z)(t, o.xjy.PLAY) && (0, a.Z)(t) ? (0, r.jsx)(i.Z, {
-    className: s.button,
-    size: s.buttonSize,
+  return null != t && (0, a.Z)(t, s.xjy.PLAY) && (0, o.Z)(t) ? (0, r.jsx)(i.Z, {
+    className: l.button,
+    size: l.buttonSize,
     look: u,
     color: d,
     fullWidth: true,
     activity: t,
     user: n,
     source: c,
-    onAction: p
+    onAction: f
   }, "play") : null
 }

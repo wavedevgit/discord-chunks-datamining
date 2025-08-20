@@ -1,7 +1,7 @@
-/** Chunk was on 62634 **/
-/** chunk id: 461964, original params: t,e,n (module,exports,require) **/
+/** Chunk was on 73872 **/
+/** chunk id: 461964, original params: t,e,a (module,exports,require) **/
 require.d(exports, {
-  default: () => p
+  default: () => u
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -15,62 +15,62 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk582914 = require("./582914.js");
 
-function p(t) {
+function u(t) {
   let {
     transitionState: e,
-    onClose: n
-  } = t, p = (0, o.Dt)();
-  return i.useEffect(() => {
-    _.r_()
-  }, []), (0, l.jsxs)(c.Y0X, {
+    onClose: a
+  } = t, u = (0, d.Dt)();
+  return r.useEffect(() => {
+    o.r_()
+  }, []), (0, n.jsxs)(i.Y0X, {
     transitionState: e,
     role: "alertdialog",
-    "aria-labelledby": p,
+    "aria-labelledby": u,
     parentComponent: "KeyboardNavigationModal",
-    children: [(0, l.jsxs)(c.hzk, {
-      className: h.content,
-      children: [(0, l.jsx)(c.X6q, {
+    children: [(0, n.jsxs)(i.hzk, {
+      className: m.content,
+      children: [(0, n.jsx)(i.X6q, {
         variant: "heading-xl/semibold",
-        id: p,
-        className: h.header,
-        children: d.intl.format(d.t.V4fxrq, {
-          tab: (t, e) => (0, l.jsx)(c.M2$, {
+        id: u,
+        className: m.header,
+        children: x.intl.format(x.t.V4fxrq, {
+          tab: (t, e) => (0, n.jsx)(i.M2$, {
             shortcut: "tab",
-            className: h.headerShortcut
+            className: m.headerShortcut
           }, e)
         })
-      }), (0, l.jsx)(c.Text, {
+      }), (0, n.jsx)(i.Text, {
         variant: "text-md/normal",
-        children: d.intl.string(d.t["oQA/OD"])
-      }), (0, l.jsxs)("ul", {
-        className: h.tips,
-        children: [(0, l.jsxs)("li", {
-          children: [(0, l.jsx)(c.M2$, {
-            shortcut: r._.binds["0"]
-          }), (0, l.jsx)(c.Text, {
+        children: x.intl.string(x.t["oQA/OD"])
+      }), (0, n.jsxs)("ul", {
+        className: m.tips,
+        children: [(0, n.jsxs)("li", {
+          children: [(0, n.jsx)(i.M2$, {
+            shortcut: l._.binds["0"]
+          }), (0, n.jsx)(i.Text, {
             variant: "text-md/normal",
-            children: d.intl.string(d.t["43Qn2t"])
+            children: x.intl.string(x.t["43Qn2t"])
           })]
-        }), (0, l.jsxs)("li", {
-          children: [(0, l.jsx)(c.M2$, {
-            shortcut: a.$.binds["0"]
-          }), (0, l.jsx)(c.Text, {
+        }), (0, n.jsxs)("li", {
+          children: [(0, n.jsx)(i.M2$, {
+            shortcut: s.$.binds["0"]
+          }), (0, n.jsx)(i.Text, {
             variant: "text-md/normal",
-            children: d.intl.string(d.t.zJg4FR)
+            children: x.intl.string(x.t.zJg4FR)
           })]
         })]
-      }), (0, l.jsx)(c.Text, {
+      }), (0, n.jsx)(i.Text, {
         variant: "text-md/normal",
-        children: d.intl.format(d.t.EWFVSU, {
-          link: s.Z.getArticleURL(u.BhN.KEYBOARD_NAVIGATION)
+        children: x.intl.format(x.t.EWFVSU, {
+          link: c.Z.getArticleURL(h.BhN.KEYBOARD_NAVIGATION)
         })
       })]
-    }), (0, l.jsx)(c.mzw, {
-      children: (0, l.jsx)(c.zxk, {
+    }), (0, n.jsx)(i.mzw, {
+      children: (0, n.jsx)(i.zxk, {
         variant: "primary",
         size: "sm",
-        text: d.intl.string(d.t.BddRzc),
-        onClick: n,
+        text: x.intl.string(x.t.BddRzc),
+        onClick: a,
         autoFocus: true
       })
     })]

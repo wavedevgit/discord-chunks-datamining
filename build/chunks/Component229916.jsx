@@ -1,4 +1,4 @@
-/** Chunk was on 26475 **/
+/** Chunk was on 40226 **/
 /** chunk id: 229916, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -15,14 +15,14 @@ let d = e => {
   let {
     widget: t,
     userId: n
-  } = e, d = (0, a.e7)([l.default], () => l.default.getUser(n));
+  } = e, d = (0, i.e7)([o.default], () => o.default.getUser(n));
   return null == d ? null : (0, r.jsxs)("div", {
     className: c.container,
-    children: [(0, r.jsx)(i.X6q, {
+    children: [(0, r.jsx)(l.X6q, {
       className: c.header,
       variant: "heading-sm/semibold",
       children: s.intl.string(s.t.SpsnDQ)
-    }), (0, r.jsx)(o.Z, {
+    }), (0, r.jsx)(a.Z, {
       widget: t,
       user: d,
       isGameFetching: () => false,

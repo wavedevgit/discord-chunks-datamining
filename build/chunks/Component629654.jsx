@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 629654, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 629654, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => f
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -13,47 +14,47 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk19895 = require("./19895.js");
 
-function m(e) {
+function f(e) {
   let {
     preset: t,
     onShuffle: n
-  } = e, m = (0, s.e7)([l.Z], () => l.Z.useReducedMotion), p = (0, o.g2)({
-    useReducedMotion: m
+  } = e, f = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), _ = (0, l.g2)({
+    useReducedMotion: f
   }), {
-    name: g,
+    name: p,
     header: h
-  } = r.useMemo(() => {
+  } = i.useMemo(() => {
     let e = (0, c.Ib)(t);
     return {
       name: e.getName(),
       header: e.getHeaderSrc()
     }
   }, [t]);
-  return (0, i.jsxs)("div", {
-    className: u.container,
-    children: [(0, i.jsx)(a.P3F, {
+  return (0, r.jsxs)("div", {
+    className: d.container,
+    children: [(0, r.jsx)(o.P3F, {
       onClick: () => {
-        n(), p.startAnimation(false)
+        n(), _.startAnimation(false)
       },
-      className: u.button,
-      "aria-label": d.intl.string(d.t["44yJxs"]),
-      children: p.render()
-    }), (0, i.jsxs)(a.P3F, {
+      className: d.button,
+      "aria-label": u.intl.string(u.t["44yJxs"]),
+      children: _.render()
+    }), (0, r.jsxs)(o.P3F, {
       onClick: () => {
-        n(), p.startAnimation(false)
+        n(), _.startAnimation(false)
       },
-      "aria-label": "".concat(g, ": ").concat(d.intl.string(d.t["44yJxs"])),
-      className: u.select,
-      children: [(0, i.jsx)("img", {
+      "aria-label": "".concat(p, ": ").concat(u.intl.string(u.t["44yJxs"])),
+      className: d.select,
+      children: [(0, r.jsx)("img", {
         alt: "",
         "aria-hidden": true,
         src: h,
-        className: u.presetImage
-      }), (0, i.jsx)(a.Text, {
-        className: u.presetLabel,
+        className: d.presetImage
+      }), (0, r.jsx)(o.Text, {
+        className: d.presetLabel,
         variant: "text-sm/bold",
         color: "always-white",
-        children: g
+        children: p
       })]
     })]
   })

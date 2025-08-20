@@ -1,4 +1,4 @@
-/** Chunk was on 59650 **/
+/** Chunk was on 5749 **/
 /** chunk id: 684471, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
@@ -21,27 +21,27 @@ function h(t) {
     senderId: e,
     trackAnalyticsEvent: n,
     onNavigate: h
-  } = t, p = (0, s.e7)([a.default], () => {
+  } = t, m = (0, s.e7)([a.default], () => {
     let t = a.default.getUser(e);
     return o.ZP.getName(t)
   });
-  return (0, r.jsx)(d.Z, {
+  return (0, i.jsx)(d.Z, {
     header: u.intl.string(u.t.sSMgCw),
     description: u.intl.formatToPlainString(u.t.q2QrTU, {
-      username: p
+      username: m
     }),
-    heroImageSrc: _,
+    heroImageSrc: p,
     heroImageAlt: u.intl.string(u.t["3QhxXF"]),
-    children: (0, r.jsxs)("div", {
-      className: E.buttonContainer,
-      children: [(0, r.jsx)(i.zxk, {
+    children: (0, i.jsxs)("div", {
+      className: x.buttonContainer,
+      children: [(0, i.jsx)(r.zxk, {
         text: u.intl.string(u.t["+o4Q7e"]),
         variant: "primary",
         fullWidth: true,
         onClick: () => {
           h(l.x.TAKE_ACTION), n(c.NM.USER_TAKEOVER_MODAL_TAKE_ACTION)
         }
-      }), (0, r.jsx)(i.zxk, {
+      }), (0, i.jsx)(r.zxk, {
         text: u.intl.string(u.t.xLkGzM),
         variant: "secondary",
         fullWidth: true,

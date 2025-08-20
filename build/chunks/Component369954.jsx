@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 369954, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 369954, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  J: () => b
+  J: () => g
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -17,34 +18,39 @@ var Chunk793030 = require("./793030.js"),
   Chunk345909 = require("./345909.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk271650 = require("./271650.js");
-let f = e => {
+let m = e => {
     let {
       title: t,
       buttonText: n,
-      onButtonPress: a
+      onButtonPress: o
     } = e;
-    return (0, i.jsxs)(r.Kq, {
+    return (0, r.jsxs)(i.Kq, {
       justify: "space-between",
       direction: "horizontal",
       align: "center",
       gap: 32,
-      children: [(0, i.jsx)(r.xv, {
+      children: [(0, r.jsx)(i.xv, {
         variant: "text-sm/semibold",
         color: "interactive-active",
         children: t
-      }), (0, i.jsx)(s.zxk, {
+      }), (0, r.jsx)(a.zxk, {
         text: n,
-        onClick: a,
+        onClick: o,
         variant: "secondary",
         size: "sm"
       })]
     })
   },
-  b = () => {
+  g = () => {
     let e = (0, Chunk981312.U)(),
       t = (0, Chunk631885.mq)(Chunk292352.ne.ACTIVE);
     if (!(0, Chunk277537.PO)("settings-controls") || 0 === exports.length) return null;
-    let n = e => {};
+    let n = e => {},
+      a = () => {
+        (0, Chunk37234.xf)(), Chunk493683.Z.openPrivateChannel({
+          recipientIds: exports.map(e => e.id)
+        })
+      };
     return (0, Chunk951288.jsxs)(Chunk793030.Kq, {
       padding: {
         top: 24
@@ -56,24 +62,20 @@ let f = e => {
         children: Chunk388032.intl.string(Chunk345909.default.ahKIJC)
       }), (0, Chunk951288.jsx)(Chunk793030.Kq, {
         gap: 8,
-        children: module ? (0, Chunk951288.jsx)(f, {
+        children: module ? (0, Chunk951288.jsx)(m, {
           title: Chunk388032.intl.string(Chunk345909.default.X9rW0t),
           buttonText: Chunk388032.intl.formatToPlainString(Chunk345909.default.w0JA3N, {
             count: exports.length
           }),
-          onButtonPress: () => {
-            (0, Chunk37234.xf)(), Chunk493683.Z.openPrivateChannel({
-              recipientIds: exports.map(e => e.id)
-            })
-          }
+          onButtonPress: Chunk481060
         }) : (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-          children: [(0, Chunk951288.jsx)(f, {
+          children: [(0, Chunk951288.jsx)(m, {
             title: Chunk388032.intl.string(Chunk388032.t["+o1pDQ"]),
             buttonText: Chunk388032.intl.string(Chunk388032.t.bt75u7),
             onButtonPress: () => require("content_and_social")
           }), (0, Chunk951288.jsx)(Chunk511010.Z, {
             className: Chunk271650.divider
-          }), (0, Chunk951288.jsx)(f, {
+          }), (0, Chunk951288.jsx)(m, {
             title: Chunk388032.intl.string(Chunk388032.t.OAuOHB),
             buttonText: Chunk388032.intl.string(Chunk388032.t.bt75u7),
             onButtonPress: () => require("data_and_privacy")

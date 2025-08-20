@@ -1,9 +1,10 @@
-/** Chunk was on 66317 **/
-/** chunk id: 23547, original params: e,t,r (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 23547, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Mm: () => h,
-  jj: () => b,
-  wH: () => d
+  Mm: () => m,
+  jj: () => _,
+  wH: () => f
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -12,29 +13,32 @@ var Chunk951288 = require("./951288.js"),
   Chunk751648 = require("./751648.js"),
   Chunk479766 = require("./479766.js");
 
-function c(e) {
+function c(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function u(e) {
   for (var t = 1; t < arguments.length; t++) {
-    var r = null != arguments[t] ? arguments[t] : {},
-      n = Object.keys(r);
-    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(r, e).enumerable
-    }))), n.forEach(function(t) {
-      var n;
-      n = r[t], t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: true,
-        configurable: true,
-        writable: true
-      }) : e[t] = n
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      c(e, t, n[t])
     })
   }
   return e
 }
-let s = "balance-widget-menu-coachmark-modal",
-  d = () => (0, Chunk481060.nfh)(s),
-  b = () => (0, Chunk481060.Mr3)(s),
-  f = {
-    modalKey: s,
+let d = "balance-widget-menu-coachmark-modal",
+  f = () => (0, Chunk481060.nfh)(d),
+  _ = () => (0, Chunk481060.Mr3)(d),
+  p = {
+    modalKey: d,
     onCloseCallback: Chunk751648.j2,
     onCloseRequest: async () => {
       await (0, Chunk751648.j2)()
@@ -42,20 +46,21 @@ let s = "balance-widget-menu-coachmark-modal",
   };
 
 function h(e) {
-  let t = (0, l.cj)([u.Z], () => u.Z.earnedOrbsCoachmark),
+  e.isCoachmarkEnabled && (0, o.ZDy)(async () => {
+    let {
+      WrappedBalanceWidgetEarnedOrbsCoachmarkModal: t
+    } = await Promise.resolve().then(n.bind(n, 720463));
+    return n => (0, r.jsx)(t, u({}, e, n))
+  }, p)
+}
+
+function m(e) {
+  let t = (0, a.cj)([l.Z], () => l.Z.earnedOrbsCoachmark),
     {
-      shouldOpen: o
+      shouldOpen: n
     } = t;
-  return (0, a.useEffect)(() => {
-    let t = d();
-    if (o && !t) {
-      var a;
-      (a = c({}, e)).isCoachmarkEnabled && (0, i.ZDy)(async () => {
-        let {
-          WrappedBalanceWidgetEarnedOrbsCoachmarkModal: e
-        } = await r.e("82081").then(r.bind(r, 720463));
-        return t => (0, n.jsx)(e, c({}, a, t))
-      }, f)
-    } else !o && t && b()
-  }, [o, e]), c({}, t)
+  return (0, i.useEffect)(() => {
+    let t = f();
+    n && !t ? h(u({}, e)) : !n && t && _()
+  }, [n, e]), u({}, t)
 }

@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 665166, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 665166, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => d
+  Z: () => u
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -11,7 +12,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk931115 = require("./931115.js"),
   Chunk388032 = require("./388032.jsx");
 
-function d() {
+function u() {
   Chunk647438.useSyncExternalStore(Chunk388032.intl.onLocaleChange, () => Chunk388032.intl.currentLocale);
   let [, e] = Chunk647438.useState({});
   return Chunk647438.useEffect(() => {
@@ -67,7 +68,7 @@ function d() {
         variant: "text-md/normal",
         children: Chunk388032.intl.format(Chunk931115.Z.XOdbAw, {
           username: "some user",
-          usernameHook: e => (0, i.jsx)("span", {
+          usernameHook: e => (0, r.jsx)("span", {
             style: {
               backgroundColor: "green",
               color: "white",

@@ -2,7 +2,7 @@
 /** chunk id: 710631, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => C
+  Z: () => N
 }), require("./539854.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -64,13 +64,13 @@ let T = "max_uses",
   S = "User Invite Context Menu",
   A = "context_menu";
 
-function N(e, t) {
+function C(e, t) {
   s.Z.ensurePrivateChannel(e).then(e => {
     null != d.Z.getChannel(e) && c.Z.sendInvite(e, t, A, null)
   })
 }
 
-function C(e) {
+function N(e) {
   let {
     user: t,
     guildId: n,
@@ -89,11 +89,11 @@ function C(e) {
     if (null != n) {
       if (v(I(O({}, y), {
           [e.id]: true
-        })), !p.Z.can(E.Plq.CREATE_INSTANT_INVITE, e) && null != e.vanityURLCode) return void N(t, e.vanityURLCode);
+        })), !p.Z.can(E.Plq.CREATE_INSTANT_INVITE, e) && null != e.vanityURLCode) return void C(t, e.vanityURLCode);
       l.ZP.createInvite(n.id, {
         [T]: 1,
         unique: true
-      }, S).then(e => N(t, e.code))
+      }, S).then(e => C(t, e.code))
     }
   }
   return (null == c ? true : c.id) === t.id || t.bot || 0 === d.length || h.Z.isBlockedOrIgnored(t.id) ? null : (0, r.jsx)(o.sNh, {

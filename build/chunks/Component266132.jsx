@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 266132, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 266132, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => u
+  Z: () => d
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -13,7 +14,7 @@ var Chunk630759 = require("./630759.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk766817 = require("./766817.js");
 
-function u() {
+function d() {
   let e = (0, Chunk921157.s)();
   return (0, Chunk951288.jsxs)(Chunk838436.U, {
     setting: Chunk726985.s6.PRIVACY_ENCRYPTION_VERIFIED_DEVICES_V2,
@@ -22,9 +23,9 @@ function u() {
       description: Chunk388032.intl.format(Chunk388032.t.jrTSWV, {
         helpArticle: (0, Chunk630759.pL)()
       })
-    }), module.map(e => (0, i.jsx)("div", {
-      className: d.item,
-      children: (0, i.jsx)(a.q, {
+    }), module.map(e => (0, r.jsx)("div", {
+      className: u.item,
+      children: (0, r.jsx)(o.q, {
         userId: e
       })
     }, e))]

@@ -1,5 +1,6 @@
-/** Chunk was on 96750 **/
-/** chunk id: 606925, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 606925, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   Z: () => u
 });
@@ -18,29 +19,30 @@ function u(e) {
     color: n,
     look: u,
     onAction: d,
-    Icon: p
+    Icon: f
   } = e;
-  if ((0, i.e7)([a.Z], () => a.Z.getAccounts().some(e => e.type === t.type))) return null;
-  let f = null != p ? (0, r.jsx)(p, {
-    className: c.platformIcon
-  }) : (0, r.jsx)("img", {
-    alt: "",
-    className: c.platformIcon,
-    src: t.icon.whiteSVG
-  });
-  return (0, r.jsx)(o.Z, {
-    onClick: () => {
-      null == d || d(), (0, l.Z)({
+  if ((0, i.e7)([o.Z], () => o.Z.getAccounts().some(e => e.type === t.type))) return null;
+  let _ = () => {
+      null == d || d(), (0, a.Z)({
         platformType: t.type,
         location: "Activity Action"
       })
     },
+    p = null != f ? (0, r.jsx)(f, {
+      className: c.platformIcon
+    }) : (0, r.jsx)("img", {
+      alt: "",
+      className: c.platformIcon,
+      src: t.icon.whiteSVG
+    });
+  return (0, r.jsx)(s.Z, {
+    onClick: _,
     color: n,
     look: u,
     fullWidth: true,
     children: (0, r.jsxs)("div", {
       className: c.flex,
-      children: [f, s.intl.format(s.t.XWSHTU, {
+      children: [p, l.intl.format(l.t.XWSHTU, {
         platform: t.name
       })]
     })

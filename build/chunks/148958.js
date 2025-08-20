@@ -1,7 +1,8 @@
-/** Chunk was on 62981 **/
-/** chunk id: 148958, original params: e,n,t (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 148958, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  h: () => s
+  h: () => p
 }), require("./388685.js"), require("./539854.js"), require("./642613.js");
 var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
@@ -11,70 +12,83 @@ var Chunk647438 = require("./647438.js"),
   Chunk822245 = require("./822245.js"),
   Chunk526761 = require("./526761.js");
 
-function s(e, n) {
+function u(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function d(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      u(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function f(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+
+function p(e, t) {
   r.useEffect(() => {
-    a.DZ.loadIfUncached(d.yP.FRECENCY_AND_FAVORITES_SETTINGS)
+    o.DZ.loadIfUncached(c.yP.FRECENCY_AND_FAVORITES_SETTINGS)
   }, []);
-  let t = (0, o.e7)([l.Z], () => l.Z.getApplicationFrecencyWithoutLoadingLatest()),
-    s = r.useMemo(() => null == n || 0 === n.length ? e : e.map(e => {
-      var t, r, o;
-      return r = function(e) {
-        for (var n = 1; n < arguments.length; n++) {
-          var t = null != arguments[n] ? arguments[n] : {},
-            r = Object.keys(t);
-          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(t, e).enumerable
-          }))), r.forEach(function(n) {
-            var r;
-            r = t[n], n in e ? Object.defineProperty(e, n, {
-              value: r,
-              enumerable: true,
-              configurable: true,
-              writable: true
-            }) : e[n] = r
-          })
-        }
-        return e
-      }({}, e), o = o = {
-        isUserApp: null != (t = null == n ? true : n.some(n => n.application.id === e.id)) && t
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(o)) : (function(e, n) {
-        var t = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e);
-          t.push.apply(t, r)
-        }
-        return t
-      })(Object(o)).forEach(function(e) {
-        Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(o, e))
-      }), r
-    }), [e, n]),
-    u = r.useMemo(() => null == n ? true : n.filter(n => !e.some(e => e.id === n.application.id)), [e, n]),
+  let n = (0, i.e7)([l.Z], () => l.Z.getApplicationFrecencyWithoutLoadingLatest()),
+    u = r.useMemo(() => null == t || 0 === t.length ? e : e.map(e => {
+      var n;
+      return _(d({}, e), {
+        isUserApp: null != (n = null == t ? true : t.some(t => t.application.id === e.id)) && n
+      })
+    }), [e, t]),
+    f = r.useMemo(() => null == t ? true : t.filter(t => !e.some(e => e.id === t.application.id)), [e, t]),
     p = r.useMemo(() => {
       var e;
-      null == u || u.forEach(e => {
-        let n = c.default.extractTimestamp(e.id);
-        null == t.getEntry(e.application.id) && t.track(e.application.id, n)
-      }), t.compute();
-      let n = null != (e = null == u ? true : u.map(e => (0, i.X0)(e.application, true))) ? e : [],
-        r = [...s];
-      return r.push(...n), r.sort((e, n) => {
-        var r, o;
-        let i = (null != (r = t.getScore(n.id)) ? r : 0) - (null != (o = t.getScore(e.id)) ? o : 0);
-        return 0 !== i ? i : e.name.localeCompare(n.name)
+      null == f || f.forEach(e => {
+        let t = s.default.extractTimestamp(e.id);
+        null == n.getEntry(e.application.id) && n.track(e.application.id, t)
+      }), n.compute();
+      let t = null != (e = null == f ? true : f.map(e => (0, a.X0)(e.application, true))) ? e : [],
+        r = [...u];
+      return r.push(...t), r.sort((e, t) => {
+        var r, i;
+        let a = (null != (r = n.getScore(t.id)) ? r : 0) - (null != (i = n.getScore(e.id)) ? i : 0);
+        return 0 !== a ? a : e.name.localeCompare(t.name)
       }), r
-    }, [s, t, u]);
+    }, [u, n, f]);
   return r.useMemo(() => {
     var e, r;
-    let o, i;
-    null == n || n.forEach(e => {
-      let n = c.default.extractTimestamp(e.id);
-      (null == i || n > i) && (o = e, i = n)
-    }), s.forEach(e => {
-      var n, r;
-      let a = Math.max(...null != (r = null == (n = t.getEntry(e.id)) ? true : n.recentUses) ? r : []);
-      (null == i || a > i) && (o = e, i = a)
+    let i, a;
+    null == t || t.forEach(e => {
+      let t = s.default.extractTimestamp(e.id);
+      (null == a || t > a) && (i = e, a = t)
+    }), u.forEach(e => {
+      var t, r;
+      let o = Math.max(...null != (r = null == (t = n.getEntry(e.id)) ? true : t.recentUses) ? r : []);
+      (null == a || o > a) && (i = e, a = o)
     });
-    let a = null != (r = null == o || null == (e = o.application) ? true : e.id) ? r : "";
-    return [...p.filter(e => e.id === a), ...p.filter(e => e.id !== a)]
-  }, [p, s, t, n])
+    let o = null != (r = null == i || null == (e = i.application) ? true : e.id) ? r : "";
+    return [...p.filter(e => e.id === o), ...p.filter(e => e.id !== o)]
+  }, [p, u, n, t])
 }

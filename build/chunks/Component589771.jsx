@@ -18,9 +18,9 @@ function d(e) {
     initialPlanId: n,
     guildId: d,
     setAnalyticsData: m,
-    handleClose: f
+    handleClose: p
   } = e, {
-    blockedPayments: p,
+    blockedPayments: f,
     setStep: b,
     hasFetchedSubscriptions: h,
     hasFetchedSubscriptionPlans: g,
@@ -28,23 +28,23 @@ function d(e) {
     selectedSkuId: v,
     setSelectedSkuId: j,
     setSelectedPlanId: y,
-    priceOptions: C,
-    setSubscriptionMetadataRequest: O
+    priceOptions: O,
+    setSubscriptionMetadataRequest: C
   } = (0, c.JL)(), {
     isGift: S
   } = (0, s.wD)(), [P, N] = r.useState(!h || !g || x);
   return (r.useEffect(() => {
     N(!h || !g || x)
   }, [x, g, h]), r.useEffect(() => {
-    null != d && O({
+    null != d && C({
       guild_id: d
     })
-  }, [d, O]), r.useEffect(() => {
+  }, [d, C]), r.useEffect(() => {
     y(n);
     let e = null != n ? a.Z.get(n) : null;
-    P || p || (m(t => {
+    P || f || (m(t => {
       var n, i;
-      let r = null != e ? (0, o.aS)(e.id, false, S, C) : true;
+      let r = null != e ? (0, o.aS)(e.id, false, S, O) : true;
       return n = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -66,7 +66,7 @@ function d(e) {
         subscription_plan_id: null == e ? true : e.id,
         price: null == r ? true : r.amount,
         regular_price: null == e ? true : e.price,
-        currency: C.currency
+        currency: O.currency
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -78,7 +78,7 @@ function d(e) {
         Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
       }), n
     }), null != e && (j(null == e ? true : e.skuId), b(t)))
-  }, [p, n, S, P, C, v, m, y, j, b, t]), P) ? (0, i.jsx)(u.Z, {}) : p ? (0, i.jsx)(l.Vq, {
-    onClose: f
+  }, [f, n, S, P, O, v, m, y, j, b, t]), P) ? (0, i.jsx)(u.Z, {}) : f ? (0, i.jsx)(l.Vq, {
+    onClose: p
   }) : null
 }

@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 64220, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 64220, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => d
+  Z: () => u
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -14,47 +15,49 @@ function c(e) {
   let {
     markAsDismissed: t
   } = e;
-  return r.useEffect(() => {
+  i.useEffect(() => {
     let e = setTimeout(() => {
-      t(a.L.AUTO_DISMISS)
+      t(o.L.AUTO_DISMISS)
     }, 8e3);
     return () => {
       clearTimeout(e)
     }
-  }, [t]), (0, i.jsxs)(s.P3F, {
-    className: o.container,
-    onClick: () => {
-      t(a.L.USER_DISMISS)
-    },
-    children: [(0, i.jsx)(s.Text, {
+  }, [t]);
+  let n = () => {
+    t(o.L.USER_DISMISS)
+  };
+  return (0, r.jsxs)(a.P3F, {
+    className: l.container,
+    onClick: n,
+    children: [(0, r.jsx)(a.Text, {
       variant: "text-sm/medium",
       color: "always-white",
-      children: l.intl.string(l.t.fJNqJi)
-    }), (0, i.jsx)("div", {
-      className: o.pointer
+      children: s.intl.string(s.t.fJNqJi)
+    }), (0, r.jsx)("div", {
+      className: l.pointer
     })]
   })
 }
 
-function d(e) {
+function u(e) {
   let {
     children: t,
     markAsDismissed: n,
-    targetElementRef: a
-  } = e, [l, o] = r.useState(false);
-  return r.useEffect(() => {
+    targetElementRef: o
+  } = e, [s, l] = i.useState(false);
+  return i.useEffect(() => {
     let e = setTimeout(() => {
-      o(true)
+      l(true)
     }, 1e3);
     return () => {
       clearTimeout(e)
     }
-  }, [o]), (0, i.jsx)(s.yRy, {
-    targetElementRef: a,
+  }, [l]), (0, r.jsx)(a.yRy, {
+    targetElementRef: o,
     position: "top",
     align: "left",
-    shouldShow: l,
-    renderPopout: () => (0, i.jsx)(c, {
+    shouldShow: s,
+    renderPopout: () => (0, r.jsx)(c, {
       markAsDismissed: n
     }),
     children: t

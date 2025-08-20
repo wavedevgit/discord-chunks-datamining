@@ -1,60 +1,63 @@
-/** Chunk was on 66181 **/
-/** chunk id: 304432, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 304432, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   F: () => u,
-  W: () => c
+  W: () => l
 }), require("./642613.js"), require("./388685.js");
-var i, Chunk647438 = require("./647438.js"),
+var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk695346 = require("./695346.js"),
   Chunk430824 = require("./430824.js"),
   Chunk771845 = require("./771845.js"),
-  c = ((i = {}).SERVER_ORDER = "server-order", i.RECENTLY_JOINED = "recently-joined", i.ACTIVITY_SHARING_ON = "activity-sharing-on", i.ACTIVITY_SHARING_OFF = "activity-sharing-off", i);
-let d = {
+  l = function(e) {
+    return e.SERVER_ORDER = "server-order", e.RECENTLY_JOINED = "recently-joined", e.ACTIVITY_SHARING_ON = "activity-sharing-on", e.ACTIVITY_SHARING_OFF = "activity-sharing-off", e
+  }({});
+let c = {
   "recently-joined": e => e.concat().sort((e, t) => null == e.joinedAt ? false : null == t.joinedAt ? 1 : e.joinedAt === t.joinedAt ? 0 : new Date(t.joinedAt).getTime() - new Date(e.joinedAt).getTime()),
   "activity-sharing-on": (e, t) => e.concat().sort((e, n) => {
-    let i = t.includes(e.id),
-      r = t.includes(n.id);
-    return !i && r ? false : i && !r ? 1 : 0
+    let r = t.includes(e.id),
+      i = t.includes(n.id);
+    return !r && i ? false : r && !i ? 1 : 0
   }),
   "activity-sharing-off": (e, t) => e.concat().sort((e, n) => {
-    let i = t.includes(e.id),
-      r = t.includes(n.id);
-    return i && !r ? false : !i && r ? 1 : 0
+    let r = t.includes(e.id),
+      i = t.includes(n.id);
+    return r && !i ? false : !r && i ? 1 : 0
   }),
   "server-order": e => e
 };
 
 function u() {
-  let [e, t] = (0, Chunk647438.useState)(""), [n, i] = (0, Chunk647438.useState)("server-order"), c = (0, Chunk442837.e7)([Chunk771845.ZP], () => Chunk771845.ZP.getFlattenedGuildIds()), u = (0, Chunk442837.e7)([Chunk430824.Z], () => Chunk430824.Z.getGuilds()), m = c.map(e => u[e]), p = Chunk695346.CW.useSetting(), [g, h] = (0, Chunk647438.useState)(p), f = async e => {
+  let [e, t] = (0, Chunk647438.useState)(""), [n, l] = (0, Chunk647438.useState)("server-order"), u = (0, Chunk442837.e7)([Chunk771845.ZP], () => Chunk771845.ZP.getFlattenedGuildIds()), d = (0, Chunk442837.e7)([Chunk430824.Z], () => Chunk430824.Z.getGuilds()), f = u.map(e => d[e]), _ = Chunk695346.CW.useSetting(), [p, h] = (0, Chunk647438.useState)(_), m = async e => {
     h(e);
     try {
       await a.CW.updateSetting(e)
     } catch (e) {
-      h(p)
+      h(_)
     }
-  }, b = 0 !== g.length, [x, _] = (0, Chunk647438.useState)(() => d[require](m, p)), j = x.map(e => u[e.id]).filter(Boolean);
+  }, g = e => {
+    let {
+      checked: t,
+      guildId: n
+    } = e, r = new Set(p);
+    t ? r.delete(n) : r.add(n), m([...r])
+  }, E = e => p.includes(e), b = 0 !== p.length, y = () => {
+    b ? m([]) : m(u)
+  }, [O, v] = (0, Chunk647438.useState)(() => c[require](f, _)), I = O.map(e => d[e.id]).filter(Boolean);
   return {
-    guilds: "" === module ? j : j.filter(t => t.name.toLowerCase().includes(e.toLowerCase())),
+    guilds: "" === module ? I : I.filter(t => t.name.toLowerCase().includes(e.toLowerCase())),
     sortOrder: require,
     searchQuery: module,
     setSortOrder: e => {
-      _(d[e](m, p)), i(e)
+      v(c[e](f, _)), l(e)
     },
     setSearchQuery: exports,
-    onToggleActivityRestrictedGuild: e => {
-      let {
-        checked: t,
-        guildId: n
-      } = e, i = new Set(g);
-      t ? i.delete(n) : i.add(n), f([...i])
-    },
-    isActivityRestricted: e => g.includes(e),
+    onToggleActivityRestrictedGuild: g,
+    isActivityRestricted: E,
     hasActivityRestrictedGuilds: b,
-    onToggleAllActivityRestrictedGuilds: () => {
-      b ? f([]) : f(c)
-    },
-    numTotalGuilds: c.length,
-    numActivityRestrictedGuilds: g.length
+    onToggleAllActivityRestrictedGuilds: y,
+    numTotalGuilds: u.length,
+    numActivityRestrictedGuilds: p.length
   }
 }

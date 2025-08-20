@@ -1,5 +1,6 @@
-/** Chunk was on 93886 **/
-/** chunk id: 674944, original params: e,t,a (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 674944, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   wrapper: "wrapper_fc8177",
   compact: "compact_fc8177",

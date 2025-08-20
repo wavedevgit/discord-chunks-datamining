@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 287647, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 287647, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  e: () => x
+  e: () => E
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,32 +18,32 @@ var Chunk951288 = require("./951288.js"),
   Chunk693450 = require("./693450.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk374104 = require("./374104.js");
-let b = new Chunk710845.Z("DisplayNameStylesCoachmark");
+let g = new Chunk710845.Z("DisplayNameStylesCoachmark");
 
-function x(e) {
+function E(e) {
   let {
     markAsDismissed: t,
     targetElementRef: n,
     children: c
   } = e, {
-    analyticsLocations: x
-  } = (0, o.ZP)(), _ = (0, r.useRef)(null), j = (0, s.e7)([d.Z], () => d.Z.isFocused()), E = (0, r.useCallback)(() => {
-    t(p.L.TAKE_ACTION), l.Z.open(m.oAB.PROFILE_CUSTOMIZATION, null, {
-      analyticsLocations: x
-    }), (0, u.I)({
-      analyticsLocations: x
+    analyticsLocations: E
+  } = (0, l.ZP)(), b = (0, i.useRef)(null), y = (0, a.e7)([u.Z], () => u.Z.isFocused()), O = (0, i.useCallback)(() => {
+    t(_.L.TAKE_ACTION), s.Z.open(f.oAB.PROFILE_CUSTOMIZATION, null, {
+      analyticsLocations: E
+    }), (0, d.I)({
+      analyticsLocations: E
     })
-  }, [t, x]), C = (0, r.useCallback)(() => {
-    t(p.L.USER_DISMISS)
+  }, [t, E]), v = (0, i.useCallback)(() => {
+    t(_.L.USER_DISMISS)
   }, [t]);
-  return (0, r.useEffect)(() => {
+  return (0, i.useEffect)(() => {
     var e, t, n;
-    j && (null == (e = _.current) ? true : e.paused) ? null == (t = _.current) || t.play().catch(b.error) : j || null == (n = _.current) || n.pause()
-  }, [j]), (0, i.jsxs)(i.Fragment, {
-    children: [c, (0, i.jsx)(a.J, {
+    y && (null == (e = b.current) ? true : e.paused) ? null == (t = b.current) || t.play().catch(g.error) : y || null == (n = b.current) || n.pause()
+  }, [y]), (0, r.jsxs)(r.Fragment, {
+    children: [c, (0, r.jsx)(o.J, {
       targetElementRef: n,
       shouldShow: true,
-      onRequestClose: C,
+      onRequestClose: v,
       align: "right",
       position: "top",
       caretConfig: {
@@ -52,8 +53,8 @@ function x(e) {
       gradientColor: "nitro-pink",
       graphic: {
         type: "video",
-        ref: _,
-        src: f.Z,
+        ref: b,
+        src: m.Z,
         aspectRatio: "21/9",
         loop: true
       },
@@ -62,12 +63,12 @@ function x(e) {
         type: "beta",
         variant: "expressive"
       },
-      title: h.intl.string(g.default["1AE46+"]),
-      body: [h.intl.string(g.default.cNc1g4), h.intl.string(h.t["4JNXHB"])],
+      title: h.intl.string(p.default["1AE46+"]),
+      body: [h.intl.string(p.default.cNc1g4), h.intl.string(h.t["4JNXHB"])],
       actions: [{
         text: h.intl.string(h.t.uw9zIy),
         variant: "primary",
-        onClick: E
+        onClick: O
       }]
     })]
   })

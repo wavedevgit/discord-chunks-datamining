@@ -2,7 +2,7 @@
 /** chunk id: 324067, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => k
+  Z: () => M
 }), require("./539854.js"), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -114,12 +114,12 @@ function A(e) {
   h[t] = true, t === p && y(t)
 }
 
-function N() {
+function C() {
   if (null == p) returnfalse;
   y(p)
 }
 
-function C(e) {
+function N(e) {
   let {
     guildId: t
   } = e;
@@ -160,24 +160,24 @@ function D(e) {
   y(t)
 }
 
-function L() {
+function x() {
   y(Chunk981631.I_8)
 }
 
-function x(e) {
+function L(e) {
   let t = h[e];
   return null != t ? t : y(e)
 }
-class M extends(r = Chunk442837.ZP.Store) {
+class j extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk984933.ZP, Chunk430824.Z, Chunk314897.default, Chunk592125.Z, Chunk853856.Z), this.syncWith([Chunk853856.Z], L)
+    this.waitFor(Chunk984933.ZP, Chunk430824.Z, Chunk314897.default, Chunk592125.Z, Chunk853856.Z), this.syncWith([Chunk853856.Z], x)
   }
   getCategories(e) {
-    return null != e ? x(e) : E
+    return null != e ? L(e) : E
   }
 }
-_(M, "displayName", "GuildCategoryStore");
-let k = new M(Chunk570140.Z, {
+_(j, "displayName", "GuildCategoryStore");
+let M = new j(Chunk570140.Z, {
   CHANNEL_SELECT: D,
   CONNECTION_OPEN: O,
   OVERLAY_INITIALIZE: O,
@@ -189,12 +189,12 @@ let k = new M(Chunk570140.Z, {
   CHANNEL_DELETE: T,
   CHANNEL_UPDATES: S,
   GUILD_MEMBER_UPDATE: A,
-  CURRENT_USER_UPDATE: N,
-  GUILD_ROLE_CREATE: C,
-  GUILD_ROLE_UPDATE: C,
-  GUILD_ROLE_DELETE: C,
-  IMPERSONATE_UPDATE: C,
-  IMPERSONATE_STOP: C,
+  CURRENT_USER_UPDATE: C,
+  GUILD_ROLE_CREATE: N,
+  GUILD_ROLE_UPDATE: N,
+  GUILD_ROLE_DELETE: N,
+  IMPERSONATE_UPDATE: N,
+  IMPERSONATE_STOP: N,
   VOICE_CHANNEL_SELECT: P,
   VOICE_STATE_UPDATES: w
 })

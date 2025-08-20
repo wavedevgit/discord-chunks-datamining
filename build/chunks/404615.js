@@ -1,13 +1,14 @@
-/** Chunk was on 66181 **/
-/** chunk id: 404615, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 404615, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  _: () => o
+  _: () => l
 });
 var Chunk442837 = require("./442837.js"),
   Chunk607070 = require("./607070.js"),
   Chunk391110 = require("./391110.js"),
   Chunk424373 = require("./424373.js");
-let l = {
+let s = {
     subtitle: {
       onlyShowOnHover: false
     },
@@ -19,33 +20,33 @@ let l = {
       onlyShowOnHover: true
     }
   },
-  o = e => {
-    let t = (0, i.e7)([r.Z], () => r.Z.useReducedMotion),
+  l = e => {
+    let t = !(0, r.e7)([i.Z], () => i.Z.useReducedMotion),
       n = {
-        [s.zW.DEFAULT]: l,
-        [s.zW.REWARD]: {
+        [a.zW.DEFAULT]: s,
+        [a.zW.REWARD]: {
           subtitle: {
             onlyShowOnHover: true,
             textVariant: "text-sm/semibold"
           },
           description: {
             onlyShowOnHover: true,
-            className: a.cardDescriptionTenureReward
+            className: o.cardDescriptionTenureReward
           },
           descriptionCta: {
             onlyShowOnHover: false,
             hideOnHoverComponent: true,
-            className: a.descriptionCTATenureReward
+            className: o.descriptionCTATenureReward
           },
           cardContainer: {
-            className: t ? true : a.nitroGradientBorderHover
+            className: t ? o.nitroGradientBorderHover : true
           }
         },
-        [s.zW.NITRO_GRADIENT_HOVER_BORDER]: {
+        [a.zW.NITRO_GRADIENT_HOVER_BORDER]: {
           cardContainer: {
-            className: a.nitroGradientBorderHover
+            className: o.nitroGradientBorderHover
           }
         }
       };
-    return null != e ? n[e] : n[s.zW.DEFAULT]
+    return null != e ? n[e] : n[a.zW.DEFAULT]
   }

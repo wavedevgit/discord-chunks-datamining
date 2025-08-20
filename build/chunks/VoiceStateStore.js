@@ -3,7 +3,7 @@
 "use strict";
 let r, i;
 require.d(exports, {
-  Z: () => F
+  Z: () => V
 }), require("./388685.js");
 var a, Chunk392711 = require("./392711.js"),
   s = require.n(Chunk392711),
@@ -54,12 +54,12 @@ function A(e) {
   return null != (t = E.get(e)) ? t : new Set
 }
 
-function N(e, t) {
+function C(e, t) {
   let n = A(e);
   n.has(t) || ((n = new Set(n)).add(t), E.set(e, n))
 }
 
-function C(e, t) {
+function N(e, t) {
   let n = A(e);
   n.has(t) && ((n = new Set(n)).delete(t), 0 === n.size ? E.delete(e) : E.set(e, n))
 }
@@ -68,7 +68,7 @@ function R(e, t, n) {
   let r = T(m, null != e ? e : d.ME),
     i = r[t],
     a = n(i);
-  return i === a ? [false, a, i] : (null != i && (delete r[t], null != i.channelId && (delete T(b, i.channelId)[t], delete T(y, i.channelId)[t]), null != i.sessionId && delete T(O, t)[i.sessionId], C(null != e ? e : d.ME, t)), null != a && (r[t] = a, null != a.channelId && (T(b, a.channelId)[t] = a, a.selfVideo && (T(y, a.channelId)[t] = a, N(null != e ? e : d.ME, t))), null != a.sessionId && (T(O, t)[a.sessionId] = a)), [true, a, i])
+  return i === a ? [false, a, i] : (null != i && (delete r[t], null != i.channelId && (delete T(b, i.channelId)[t], delete T(y, i.channelId)[t]), null != i.sessionId && delete T(O, t)[i.sessionId], N(null != e ? e : d.ME, t)), null != a && (r[t] = a, null != a.channelId && (T(b, a.channelId)[t] = a, a.selfVideo && (T(y, a.channelId)[t] = a, C(null != e ? e : d.ME, t))), null != a.sessionId && (T(O, t)[a.sessionId] = a)), [true, a, i])
 }
 
 function P(e) {
@@ -76,7 +76,7 @@ function P(e) {
     voiceStates: t
   } = e;
   return t.reduce((e, t) => {
-    let [n, r, a] = L(t.guildId, t);
+    let [n, r, a] = x(t.guildId, t);
     return n ? (t.sessionId === i && null != r && null != a && a.channelId !== r.channelId && (p += 1), h++, true) : e
   }, false)
 }
@@ -84,7 +84,7 @@ function P(e) {
 function w(e) {
   let t = false;
   for (let n of e.voiceStates) {
-    let [r] = L(e.guildId, n);
+    let [r] = x(e.guildId, n);
     t = t || r
   }
   for (let n of e.removedVoiceStateUsers) R(e.guildId, n, () => null), t = true;
@@ -100,7 +100,7 @@ function D(e) {
   v[I(t, n)] = r
 }
 
-function L(e, t) {
+function x(e, t) {
   return R(e, t.userId, e => {
     if (null == t.channelId) return null;
     {
@@ -123,7 +123,7 @@ function L(e, t) {
   })
 }
 
-function x(e) {
+function L(e) {
   let {
     guildId: t,
     channelId: n
@@ -131,7 +131,7 @@ function x(e) {
   return i
 }
 
-function M(e) {
+function j(e) {
   let {
     user: t,
     sessionId: n
@@ -139,11 +139,11 @@ function M(e) {
   return a && (m = {}, b = {}, O = {}, y = {}, E.clear()), r = t.id, i = n, a
 }
 
-function k() {
+function M() {
   m = {}, b = {}, O = {}, y = {}, E.clear()
 }
 
-function j(e) {
+function k(e) {
   let {
     voiceStates: t,
     user: n,
@@ -176,7 +176,7 @@ function B(e) {
   } = e;
   S(t)
 }
-class V extends(a = Chunk442837.ZP.Store) {
+class Z extends(a = Chunk442837.ZP.Store) {
   getAllVoiceStates() {
     return m
   }
@@ -248,12 +248,12 @@ class V extends(a = Chunk442837.ZP.Store) {
     return p
   }
 }
-_(V, "displayName", "VoiceStateStore");
-let F = new V(Chunk570140.Z, {
-  CONNECTION_OPEN: M,
-  CONNECTION_OPEN_SUPPLEMENTAL: k,
-  OVERLAY_INITIALIZE: j,
-  VOICE_CHANNEL_SELECT: x,
+_(Z, "displayName", "VoiceStateStore");
+let V = new Z(Chunk570140.Z, {
+  CONNECTION_OPEN: j,
+  CONNECTION_OPEN_SUPPLEMENTAL: M,
+  OVERLAY_INITIALIZE: k,
+  VOICE_CHANNEL_SELECT: L,
   VOICE_STATE_UPDATES: P,
   GUILD_DELETE: U,
   GUILD_CREATE: U,

@@ -1,12 +1,13 @@
-/** Chunk was on 66181 **/
-/** chunk id: 491758, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 491758, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => A
+  Z: () => L
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
-  a = require.n(Chunk512722),
+  o = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk660216 = require("./660216.js"),
@@ -31,28 +32,67 @@ var Chunk951288 = require("./951288.js"),
   Chunk749799 = require("./749799.js"),
   Chunk197571 = require("./197571.js");
 
-function A() {
+function P(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function w(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      P(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function D(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function x(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : D(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+
+function L() {
   let e = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getHardwareEncoding()),
     {
       clipsEnabled: t,
       remindersEnabled: n,
-      decoupledClipsEnabled: s,
-      clipsLength: A,
-      clipsQuality: P
+      decoupledClipsEnabled: a,
+      clipsLength: P,
+      clipsQuality: D
     } = (0, Chunk442837.cj)([Chunk435064.Z], () => Chunk435064.Z.getSettings()),
-    R = (0, Chunk442837.e7)([Chunk435064.Z], () => Chunk435064.Z.getHardwareClassification()),
-    D = (0, Chunk442837.e7)([Chunk556296.ZP], () => Chunk556296.ZP.getKeybindForAction(Chunk981631.kg4.SAVE_CLIP, true)),
-    Z = Chunk435064.Z.isDecoupledGameClippingEnabled(),
-    w = (0, Chunk779618.Z)(Chunk131951.Z),
+    L = (0, Chunk442837.e7)([Chunk435064.Z], () => Chunk435064.Z.getHardwareClassification()),
+    j = (0, Chunk442837.e7)([Chunk556296.ZP], () => Chunk556296.ZP.getKeybindForAction(Chunk981631.kg4.SAVE_CLIP, true)),
+    M = Chunk435064.Z.isDecoupledGameClippingEnabled(),
+    k = (0, Chunk779618.Z)(Chunk131951.Z),
     {
-      showClipsHeaderEntrypoint: k
+      showClipsHeaderEntrypoint: U
     } = Chunk924557.NV.useExperiment({
       location: "clips_recording_settings"
     }, {
       autoTrackExposure: false
     });
-  a()(null != D, "Save clip keybind unset");
-  let L = (0, Chunk442837.e7)([Chunk706454.default], () => Chunk706454.default.locale),
+  o()(null != j, "Save clip keybind unset");
+  let G = (0, Chunk442837.e7)([Chunk706454.default], () => Chunk706454.default.locale),
     B = Chunk647438.useMemo(() => [{
       value: Chunk356659.OT.SECONDS_30,
       label: Chunk388032.intl.formatToPlainString(Chunk388032.t["bTFv//"], {
@@ -68,8 +108,8 @@ function A() {
       label: Chunk388032.intl.formatToPlainString(Chunk388032.t.ICo9Nj, {
         count: 2
       })
-    }], [L]),
-    M = Chunk647438.useMemo(() => [{
+    }], [G]),
+    Z = Chunk647438.useMemo(() => [{
       value: Chunk37113.LY.RESOLUTION_480,
       label: Chunk388032.intl.formatToPlainString(Chunk388032.t.TEOC0N, {
         resolution: Chunk37113.LY.RESOLUTION_480
@@ -92,8 +132,8 @@ function A() {
     }, {
       value: Chunk37113.LY.RESOLUTION_SOURCE,
       label: Chunk388032.intl.string(Chunk388032.t.XjXqzs)
-    }], [L]),
-    U = Chunk647438.useMemo(() => [{
+    }], [G]),
+    V = Chunk647438.useMemo(() => [{
       value: Chunk37113.ws.FPS_15,
       label: Chunk388032.intl.formatToPlainString(Chunk388032.t.Qb44XF, {
         fps: Chunk37113.ws.FPS_15
@@ -108,39 +148,12 @@ function A() {
       label: Chunk388032.intl.formatToPlainString(Chunk388032.t.Qb44XF, {
         fps: Chunk37113.ws.FPS_60
       })
-    }], [L]),
-    V = Chunk647438.useCallback(e => {
-      var t, n;
-      c.Z.setKeybind((t = function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {},
-            i = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), i.forEach(function(t) {
-            var i;
-            i = n[t], t in e ? Object.defineProperty(e, t, {
-              value: i,
-              enumerable: true,
-              configurable: true,
-              writable: true
-            }) : e[t] = i
-          })
-        }
-        return e
-      }({}, D), n = n = {
+    }], [G]),
+    F = Chunk647438.useCallback(e => {
+      c.Z.setKeybind(x(w({}, j), {
         shortcut: e
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-          var i = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, i)
-        }
-        return n
-      })(Object(n)).forEach(function(e) {
-        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-      }), t))
-    }, [D]);
+      }))
+    }, [j]);
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsxs)(Chunk481060.hjN, {
       disabled: !module,
@@ -152,7 +165,7 @@ function A() {
             scrollPosition: Chunk526761.KQ.VoiceAndVideoScrollPositions.HARDWARE_ACCELERATION
           })
         })
-      }), R === Chunk894694.x.BELOW_MINIMUM ? (0, Chunk951288.jsx)(Chunk494620.Z, {
+      }), L === Chunk894694.x.BELOW_MINIMUM ? (0, Chunk951288.jsx)(Chunk494620.Z, {
         look: Chunk494620.z.WARNING,
         className: Chunk749799.formItem,
         children: Chunk388032.intl.string(Chunk388032.t.SIxrIC)
@@ -162,7 +175,7 @@ function A() {
         className: Chunk749799.formItem,
         value: exports,
         note: Chunk388032.intl.string(Chunk388032.t["4Qw3ND"]),
-        onChange: e => j.em({
+        onChange: e => y.em({
           clipsEnabled: e,
           trackAnalytics: true
         }),
@@ -171,7 +184,7 @@ function A() {
         className: Chunk749799.formItem,
         children: Chunk388032.intl.string(Chunk388032.t["Z+Mfqa"])
       })]
-    }), Z && w && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+    }), M && k && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [(0, Chunk951288.jsx)(Chunk481060.$i$, {}), (0, Chunk951288.jsx)(Chunk481060.hjN, {
         className: Chunk197571.marginTop20,
         disabled: !module,
@@ -181,14 +194,14 @@ function A() {
           className: Chunk749799.formItem,
           value: Chunk512722,
           note: Chunk388032.intl.string(Chunk388032.t.YP3ujo),
-          onChange: e => j._Q({
+          onChange: e => y._Q({
             enabled: e,
             trackAnalytics: true
           }),
           children: Chunk388032.intl.string(Chunk388032.t.yXvykp)
         })
       })]
-    }), k && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+    }), U && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [(0, Chunk951288.jsx)(Chunk481060.$i$, {}), (0, Chunk951288.jsx)(Chunk481060.hjN, {
         className: Chunk197571.marginTop20,
         children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
@@ -196,7 +209,7 @@ function A() {
           className: Chunk749799.formItem,
           value: require,
           note: Chunk388032.intl.string(Chunk388032.t.m4Cjj4),
-          onChange: e => j.N0(e),
+          onChange: e => y.N0(e),
           children: Chunk388032.intl.string(Chunk388032.t["3zwNf3"])
         })
       })]
@@ -207,28 +220,28 @@ function A() {
         select: Chunk39604.eU,
         title: Chunk388032.intl.string(Chunk388032.t.OgfUio),
         note: Chunk388032.intl.string(Chunk388032.t.H7j4tb),
-        value: A,
+        value: P,
         options: B
       }), (0, Chunk951288.jsx)(Chunk442334.Q, {
         className: Chunk749799.formItem,
-        select: e => j.yi({
+        select: e => y.yi({
           resolution: e,
-          frameRate: P.frameRate
+          frameRate: D.frameRate
         }),
         title: Chunk388032.intl.string(Chunk388032.t.aFudZG),
         note: Chunk388032.intl.string(Chunk388032.t.nIrkW1),
-        value: P.resolution,
-        options: M
+        value: D.resolution,
+        options: Z
       }), (0, Chunk951288.jsx)(Chunk442334.Q, {
         className: Chunk749799.formItem,
-        select: e => j.yi({
-          resolution: P.resolution,
+        select: e => y.yi({
+          resolution: D.resolution,
           frameRate: e
         }),
         title: Chunk388032.intl.string(Chunk388032.t["2wScLy"]),
         note: Chunk388032.intl.string(Chunk388032.t["Rf9+f3"]),
-        value: P.frameRate,
-        options: U
+        value: D.frameRate,
+        options: V
       }), (0, Chunk951288.jsx)(Chunk442334.O, {
         className: Chunk749799.formItem,
         title: Chunk388032.intl.string(Chunk388032.t.pf54ER),
@@ -236,8 +249,8 @@ function A() {
         children: (0, Chunk951288.jsx)("div", {
           className: Chunk556865.keyRecorder,
           children: (0, Chunk951288.jsx)(Chunk825209.Z, {
-            defaultValue: D.shortcut,
-            onChange: V
+            defaultValue: j.shortcut,
+            onChange: F
           })
         })
       })]

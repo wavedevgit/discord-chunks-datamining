@@ -1,38 +1,38 @@
 /** Chunk was on 56035 **/
-/** chunk id: 586826, original params: e,t,n (module,exports,require) **/
+/** chunk id: 586826, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  p: () => o
+  p: () => s
 });
 var Chunk524825 = require("./524825.js"),
   Chunk131193 = require("./131193.js"),
   Chunk731965 = require("./731965.js"),
   Chunk174727 = require("./174727.js");
-let s = (0, Chunk131193.F)(e => ({
+let o = (0, Chunk131193.F)(e => ({
   audio: null,
   file: null,
   loading: false,
-  loadAudioFromFile: async t => {
+  loadAudioFromFile: async n => {
     if ((0, i.j)(() => e({
-        file: t,
+        file: n,
         audio: null,
-        loading: null != t
-      })), null == t) return;
-    let n = await (0, r.lj)(t);
-    null != n && (0, i.j)(() => e({
-      audio: n,
+        loading: null != n
+      })), null == n) return;
+    let t = await (0, r.lj)(n);
+    null != t && (0, i.j)(() => e({
+      audio: t,
       loading: false
     }))
   },
   maxVolume: 1,
-  setMaxVolume: t => {
+  setMaxVolume: n => {
     (0, i.j)(() => e({
-      maxVolume: t
+      maxVolume: n
     }))
   }
 }));
 
-function o() {
-  return s(e => ({
+function s() {
+  return o(e => ({
     audio: e.audio,
     file: e.file,
     loading: e.loading,

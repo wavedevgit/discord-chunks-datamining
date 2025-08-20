@@ -1,4 +1,4 @@
-/** Chunk was on 26475 **/
+/** Chunk was on 40226 **/
 /** chunk id: 842401, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => s
@@ -14,25 +14,25 @@ let s = e => {
     user: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: l.container,
-    children: [(0, r.jsx)(a.X6q, {
-      className: l.header,
+    className: o.container,
+    children: [(0, r.jsx)(i.X6q, {
+      className: o.header,
       variant: "heading-sm/semibold",
-      children: o.intl.string(o.t["Rsth7+"])
+      children: a.intl.string(a.t["Rsth7+"])
     }), (0, r.jsx)("div", {
-      className: l.userContainer,
+      className: o.userContainer,
       children: (0, r.jsxs)("div", {
-        className: l.userInfo,
-        children: [(0, r.jsx)(i.Z, {
-          className: l.userIcon,
+        className: o.userInfo,
+        children: [(0, r.jsx)(l.Z, {
+          className: o.userIcon,
           user: t,
-          size: a.EFr.SIZE_40
+          size: i.EFr.SIZE_40
         }), (0, r.jsxs)("div", {
-          children: [null != t.globalName && (0, r.jsx)(a.Text, {
+          children: [null != t.globalName && (0, r.jsx)(i.Text, {
             variant: "text-md/semibold",
             color: "header-primary",
             children: t.globalName
-          }), (0, r.jsx)(a.Text, {
+          }), (0, r.jsx)(i.Text, {
             color: "header-secondary",
             variant: "text-sm/normal",
             children: t.username

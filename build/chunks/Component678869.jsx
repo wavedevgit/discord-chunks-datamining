@@ -2,7 +2,7 @@
 /** chunk id: 678869, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => x
+  Z: () => L
 }), require("./804061.js"), require("./704826.js"), require("./35282.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -34,7 +34,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk951948 = require("./951948.js");
 
 function w(e, t) {
-  return C.intl.formatToPlainString(C.t.h2yWWV, {
+  return N.intl.formatToPlainString(N.t.h2yWWV, {
     username: t.username,
     activity: e
   })
@@ -43,15 +43,15 @@ let D = (e, t, n) => {
   let {
     artist: r,
     media: i
-  } = e, a = C.t["6iNxrq"], o = m.ZP.getName(t.guild_id, t.id, n);
-  return C.intl.formatToMarkdownString(a, {
+  } = e, a = N.t["6iNxrq"], o = m.ZP.getName(t.guild_id, t.id, n);
+  return N.intl.formatToMarkdownString(a, {
     artist: r,
     userName: o,
     media: i
   }).replaceAll("*", "")
 };
 
-function L(e) {
+function x(e) {
   let {
     activity: t
   } = e, n = t.timestamps, {
@@ -98,114 +98,114 @@ function L(e) {
   })
 }
 
-function x(e) {
+function L(e) {
   var t;
   let n, m, T, {
       channel: R,
-      entry: x,
-      closePopout: M,
-      onReaction: k,
-      onVoiceChannelPreview: j
+      entry: L,
+      closePopout: j,
+      onReaction: M,
+      onVoiceChannelPreview: k
     } = e,
     {
       largeImage: U
     } = (0, g.rv)({
-      entry: x
+      entry: L
     }),
     {
       activity: G,
       currentEntry: B,
-      artist: V,
-      title: F,
-      user: Z
-    } = (0, v.pi)(x),
+      artist: Z,
+      title: V,
+      user: F
+    } = (0, v.pi)(L),
     {
       primaryColor: H,
       secondaryColor: Y
     } = (0, O.Z)(null == U ? true : U.src),
     W = (0, y.Z)(A.ABu.SPOTIFY),
-    K = (0, o.e7)([u.Z, p.default], () => (null == G ? true : G.type) === A.IIU.LISTENING && null != Z ? (0, f.Z)(u.Z, p.default, Z, G) : true, [G, Z], s.Z),
+    K = (0, o.e7)([u.Z, p.default], () => (null == G ? true : G.type) === A.IIU.LISTENING && null != F ? (0, f.Z)(u.Z, p.default, F, G) : true, [G, F], s.Z),
     z = i.useCallback(() => {
       var e;
-      if (null == R || null == Z) return;
+      if (null == R || null == F) return;
       let t = null == (e = G.timestamps) ? true : e.start,
         n = (0, E.T_)(null != t ? {
           start: t
-        } : x, Date.now());
+        } : L, Date.now());
       return (0, b.CR)({
-        user: Z,
+        user: F,
         channel: R,
         mediaImageSrc: null == U ? true : U.src,
-        artist: V,
+        artist: Z,
         description: D({
-          artist: V,
-          media: F
-        }, R, Z),
+          artist: Z,
+          media: V
+        }, R, F),
         colors: [H, Y],
         badges: (0, b.jE)({
           timestamp: n
         })
       })
-    }, [G, V, R, x, null == U ? true : U.src, H, Y, F, Z]);
+    }, [G, Z, R, L, null == U ? true : U.src, H, Y, V, F]);
   if (null == G || null == B) return null;
-  let q = V,
+  let q = Z,
     X = [];
   if (B.media.provider === a.p.SPOTIFY) {
     m = () => {
       (0, c.aG)(G)
     }, T = () => {
-      (0, c.Z5)(G, Z.id)
+      (0, c.Z5)(G, F.id)
     }, n = () => {
       var e;
       null != (e = null == W ? true : W()) || (0, c.aG)(G)
     };
     let e = e => {
-      (0, c.d$)(G, Z.id, e)
+      (0, c.d$)(G, F.id, e)
     };
     if (q = (0, r.jsx)(d.Z, {
-        artists: V,
+        artists: Z,
         canOpen: null != G.sync_id,
         linkClassName: P.popoutTextSecondary,
         onOpenSpotifyArtist: e
       }), (null == K ? true : K.syncDisabled) === false) {
       let e = () => {
-        (0, _.Z)(K, N.kG.USER_ACTIVITY_SYNC), M()
+        (0, _.Z)(K, C.kG.USER_ACTIVITY_SYNC), j()
       };
       X.push((0, r.jsx)(I.Ll, {
         onClick: e,
         icon: l.iOO,
-        text: C.intl.string(C.t.eU3inJ)
+        text: N.intl.string(N.t.eU3inJ)
       }, "listen-along"))
     }
   }
   let Q = (0, r.jsx)(I.wG, {
     onClickThumbnail: T,
     channel: R,
-    entry: x,
+    entry: L,
     headerIcons: B.media.provider === a.p.SPOTIFY ? (0, r.jsx)(S.Z, {
       onClick: n,
-      "aria-label": C.intl.string(C.t.rRffNz),
+      "aria-label": N.intl.string(N.t.rRffNz),
       Icon: h.Z
     }) : null,
-    userDescription: (0, E.kr)(x) ? C.t.Tzx5Dw : C.t.CcVI1d,
-    title: F,
+    userDescription: (0, E.kr)(L) ? N.t.Tzx5Dw : N.t.CcVI1d,
+    title: V,
     onClickTitle: m,
     subtitle: q,
     badges: null,
-    children: (null == (t = G.timestamps) ? true : t.start) != null && (0, r.jsx)(L, {
+    children: (null == (t = G.timestamps) ? true : t.start) != null && (0, r.jsx)(x, {
       activity: G
     })
   });
   return (0, r.jsxs)(I.yR, {
     children: [Q, (0, r.jsx)(I.St, {
       children: (0, r.jsx)(I.WT, {
-        onReaction: k,
-        onVoiceChannelPreview: j,
-        user: Z,
+        onReaction: M,
+        onVoiceChannelPreview: k,
+        user: F,
         channel: R,
         generateReactionImage: z,
-        reactionImageAltText: w(V, Z),
-        entry: x,
+        reactionImageAltText: w(Z, F),
+        entry: L,
         buttons: X
       })
     })]

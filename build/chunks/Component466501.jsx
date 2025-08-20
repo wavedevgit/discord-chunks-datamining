@@ -1,7 +1,7 @@
 /** Chunk was on 21863 **/
-/** chunk id: 466501, original params: e,t,n (module,exports,require) **/
+/** chunk id: 466501, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
-  default: () => y
+  default: () => f
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,62 +16,62 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function f(e) {
+function j(e) {
   let {
     eligibility: t,
-    eligibilityLoading: n,
+    eligibilityLoading: i,
     eligibilityError: c,
     guildId: p,
-    onEligibilityBecameStale: f
-  } = e, y = i.useMemo(() => ({
-    onEligibilityBecameStale: f,
+    onEligibilityBecameStale: j
+  } = e, f = r.useMemo(() => ({
+    onEligibilityBecameStale: j,
     sortedByIneligible: true,
     actions: {
       onEnableMFAClick: a.ZP.enableMFA,
       onRequireModeratorMFAClick: () => {
-        (0, l.Mr3)(d.Q), s.Z.open(p, h.pNK.SAFETY, true, h.KsC.SAFETY_PERMISSIONS)
+        (0, l.Mr3)(u.Q), s.Z.open(p, b.pNK.SAFETY, true, b.KsC.SAFETY_PERMISSIONS)
       }
     }
-  }), [p, f]), j = (0, o.Z)(t, y);
-  return null != c ? (0, r.jsx)("div", {
-    children: (0, r.jsx)(u.Z, {
+  }), [p, j]), g = (0, o.Z)(t, f);
+  return null != c ? (0, n.jsx)("div", {
+    children: (0, n.jsx)(d.Z, {
       children: c.message
     })
-  }) : null == j || n ? (0, r.jsx)("div", {
-    children: (0, r.jsx)(l.$jN, {})
-  }) : (0, r.jsx)("div", {
-    children: j.map((e, t) => (0, r.jsxs)(i.Fragment, {
-      children: [(0, r.jsx)(b.d, {
+  }) : null == g || i ? (0, n.jsx)("div", {
+    children: (0, n.jsx)(l.$jN, {})
+  }) : (0, n.jsx)("div", {
+    children: g.map((e, t) => (0, n.jsxs)(r.Fragment, {
+      children: [(0, n.jsx)(h.d, {
         name: e.checked ? e.checkedLabel : e.uncheckedLabel,
         description: e.description,
         checked: e.checked,
         actionLabel: e.actionLabel,
         actionHandler: e.actionHandler
-      }), t < j.length - 1 ? (0, r.jsx)(l.$i$, {}) : null]
+      }), t < g.length - 1 ? (0, n.jsx)(l.$i$, {}) : null]
     }, e.checkedLabel))
   })
 }
 
-function y(e) {
+function f(e) {
   let {
     eligibility: t,
-    eligibilityLoading: n,
-    eligibilityError: i,
+    eligibilityLoading: i,
+    eligibilityError: r,
     refreshEligibility: o,
     guildId: s,
     transitionState: a
   } = e;
-  return (0, r.jsx)(c.Modal, {
+  return (0, n.jsx)(c.Modal, {
     transitionState: a,
     title: p.intl.string(p.t["3s47iI"]),
     actions: [],
     onClose: async () => {
-      await (0, l.Mr3)(d.Q)
+      await (0, l.Mr3)(u.Q)
     },
-    children: (0, r.jsx)(f, {
+    children: (0, n.jsx)(j, {
       eligibility: t,
-      eligibilityLoading: n,
-      eligibilityError: i,
+      eligibilityLoading: i,
+      eligibilityError: r,
       guildId: s,
       onEligibilityBecameStale: o
     })

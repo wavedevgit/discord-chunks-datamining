@@ -1,4 +1,4 @@
-/** Chunk was on 69003 **/
+/** Chunk was on 91488 **/
 /** chunk id: 416568, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => ed
@@ -172,7 +172,7 @@ class ea {
       null != e && this.setIsScrolledToBottom(e.isScrolledToBottom())
     }, 100), this.setNodeRef = (e, t) => {
       this.nodeRefs[e] = t
-    }, (0, x.zb)(this.getVisibleGuildIds)
+    }, (0, E.zb)(this.getVisibleGuildIds)
   }
 }
 
@@ -185,11 +185,11 @@ function es(e) {
     pathname: o
   } = (0, c.TH)(), a = o.startsWith(ee.Z5c.GUILD_MEMBER_VERIFICATION_FOR_HUB("")), s = (0, p.Wu)([D.Z, R.ZP], () => D.Z.getGuildIds().filter(e => R.ZP.isCurrentUserGuest(e))), u = i.concat(s), {
     entrypoint: d
-  } = (0, P.pN)({
+  } = (0, I.pN)({
     location: "GuildsBar"
   });
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(W.u, {}), d === P.u3.SERVER_RAIL_TOP && (0, r.jsx)(I.Z, {}), l ? (0, r.jsx)(E.Z, {}) : null, (0, r.jsx)(K.Z, {
+    children: [(0, r.jsx)(W.u, {}), d === I.u3.SERVER_RAIL_TOP && (0, r.jsx)(P.Z, {}), l ? (0, r.jsx)(x.Z, {}) : null, (0, r.jsx)(K.Z, {
       isOnHubVerificationRoute: a
     }), !t && (0, r.jsx)(B.Z, {}), u.map(e => (0, r.jsx)($.Z, {
       guildId: e
@@ -206,8 +206,8 @@ function ec(e) {
     isOverlay: i,
     renderTreeNode: l,
     lurkingGuildIds: o
-  } = e, [a] = (0, p.Wu)([L.ZP], () => {
-    let e = L.ZP.getGuildsTree();
+  } = e, [a] = (0, p.Wu)([M.ZP], () => {
+    let e = M.ZP.getGuildsTree();
     return [e, e.version]
   }), s = a.getRoots(), c = (0, p.Wu)([A.Z], () => A.Z.getGeoRestrictedGuilds()).map(e => (0, r.jsx)(H.Z, {
     id: e.id,
@@ -229,14 +229,14 @@ function ec(e) {
 
 function eu(e) {
   let {
-    disableAppDownload: t = M.isPlatformEmbedded,
+    disableAppDownload: t = L.isPlatformEmbedded,
     isOverlay: n = false,
     className: l,
     themeOverride: a
-  } = e, [s] = (0, p.Wu)([L.ZP], () => {
-    let e = L.ZP.getGuildsTree();
+  } = e, [s] = (0, p.Wu)([M.ZP], () => {
+    let e = M.ZP.getGuildsTree();
     return [e, e.version]
-  }), d = (0, p.e7)([S.Z], () => S.Z.lurkingGuildIds()), f = i.useMemo(() => n ? [] : d, [d, n]), b = (0, p.e7)([j.Z], () => j.Z.isFullscreenInContext()), [_, C] = i.useState(false), E = i.useCallback(() => C(true), []), x = i.useCallback(() => C(false), []), A = i.useRef(false), [R] = i.useState(() => new h.V7), D = i.useRef(null), B = i.useRef(null), V = (0, u.OP)(), {
+  }), d = (0, p.e7)([S.Z], () => S.Z.lurkingGuildIds()), f = i.useMemo(() => n ? [] : d, [d, n]), b = (0, p.e7)([v.Z], () => v.Z.isFullscreenInContext()), [_, C] = i.useState(false), x = i.useCallback(() => C(true), []), E = i.useCallback(() => C(false), []), A = i.useRef(false), [R] = i.useState(() => new h.V7), D = i.useRef(null), B = i.useRef(null), V = (0, u.OP)(), {
     ref: F
   } = V, H = function(e, t) {
     if (null == e) return {};
@@ -274,7 +274,7 @@ function eu(e) {
   }), [er]);
   let {
     analyticsLocations: eu
-  } = (0, v.ZP)(y.Z.GUILDS_LIST), {
+  } = (0, j.ZP)(y.Z.GUILDS_LIST), {
     pathname: ed
   } = (0, c.TH)(), ep = eo(ed);
   (0, O.Ng)(() => {
@@ -317,8 +317,8 @@ function eu(e) {
           setNodeRef: er.setNodeRef,
           draggable: true,
           sorting: _,
-          onDragStart: E,
-          onDragEnd: x,
+          onDragStart: x,
+          onDragEnd: E,
           renderChildNode: e,
           "aria-setsize": i,
           "aria-posinset": true !== n ? n + 1 : true
@@ -329,15 +329,15 @@ function eu(e) {
           setRef: er.setNodeRef,
           draggable: true,
           sorting: _,
-          onDragStart: E,
-          onDragEnd: x,
+          onDragStart: x,
+          onDragEnd: E,
           "aria-setsize": i,
           "aria-posinset": true !== n ? n + 1 : true
         }, t.id);
       default:
         return null
     }
-  }, [E, x, _, er.setNodeRef]);
+  }, [x, E, _, er.setNodeRef]);
   (0, Z.t)();
   let eg = i.useRef(null),
     em = i.useCallback(e => (0, r.jsx)(z.Z, ei({
@@ -353,11 +353,11 @@ function eu(e) {
     }),
     {
       entrypoint: eO
-    } = (0, P.pN)({
+    } = (0, I.pN)({
       location: "GuildsBar"
     }),
-    e_ = eO === P.u3.SERVER_RAIL_BOTTOM;
-  return (0, r.jsx)(v.Gt, {
+    e_ = eO === I.u3.SERVER_RAIL_BOTTOM;
+  return (0, r.jsx)(j.Gt, {
     value: eu,
     children: (0, r.jsx)(m.f6W, {
       theme: a,
@@ -405,7 +405,7 @@ function eu(e) {
                   fullWidth: true
                 }), (0, r.jsx)("div", {
                   className: en.bottomRailNotifCenterButton,
-                  children: (0, r.jsx)(I.Z, {})
+                  children: (0, r.jsx)(P.Z, {})
                 })]
               })]
             })

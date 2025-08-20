@@ -1,5 +1,6 @@
-/** Chunk was on 66181 **/
-/** chunk id: 467842, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 467842, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   upsellOverlayContainer: "upsellOverlayContainer__0f7dc",
   upsellOverlay: "upsellOverlay__0f7dc",

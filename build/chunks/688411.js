@@ -1,12 +1,12 @@
-/** Chunk was on 91584 **/
-/** chunk id: 688411, original params: t (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 688411, original params: e (module,exports,re quire) **/
 "use strict";
-module.exports = function(t) {
-  return t.Window && t instanceof t.Window ? {
-    x: t.pageXOffset || t.document.documentElement.scrollLeft,
-    y: t.pageYOffset || t.document.documentElement.scrollTop
+module.exports = function(e) {
+  return e.Window && e instanceof e.Window ? {
+    x: e.pageXOffset || e.document.documentElement.scrollLeft,
+    y: e.pageYOffset || e.document.documentElement.scrollTop
   } : {
-    x: t.scrollLeft,
-    y: t.scrollTop
+    x: e.scrollLeft,
+    y: e.scrollTop
   }
 }

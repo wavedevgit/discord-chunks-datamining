@@ -32,20 +32,20 @@ let f = 20,
       sectionHeaderHeight: T,
       sectionFooterHeight: S,
       renderUpsell: A
-    } = e, N = i.useRef(false), C = i.useRef(null), R = (0, l.Iu)(e => e.searchQuery), P = a.useStore(e => e.activeCategoryIndex), w = n.map(e => (0, s._O)(e.categoryInfo) ? {
+    } = e, C = i.useRef(false), N = i.useRef(null), R = (0, l.Iu)(e => e.searchQuery), P = a.useStore(e => e.activeCategoryIndex), w = n.map(e => (0, s._O)(e.categoryInfo) ? {
       isNitroLocked: e.categoryInfo.isNitroLocked
     } : {
       isNitroLocked: false
     }), D = (0, u.Qs)({
       activeCategoryIndex: P,
-      isScrolling: N,
-      listRef: C,
+      isScrolling: C,
+      listRef: N,
       onActiveCategoryIndexChange: a.setActiveCategoryIndex,
       scrollOffset: f,
       searchQuery: R
-    }), L = i.useCallback(e => {
+    }), x = i.useCallback(e => {
       D(e), p({
-        listRef: C,
+        listRef: N,
         searchQuery: R,
         nitroLockedSectionStates: w,
         scrollTop: e
@@ -54,39 +54,39 @@ let f = 20,
     return (0, u.Xs)({
       searchQuery: R,
       activeCategoryIndex: P,
-      listRef: C
+      listRef: N
     }), i.useImperativeHandle(t, () => ({
       scrollTo: function() {
         for (var e, t = arguments.length, n = Array(t), r = 0; r < t; r++) n[r] = arguments[r];
-        return null == (e = C.current) ? true : e.scrollTo(...n)
+        return null == (e = N.current) ? true : e.scrollTo(...n)
       },
       getRowDescriptors: () => {
         var e, t;
-        return null != (t = null == (e = C.current) ? true : e.getRowDescriptors()) ? t : []
+        return null != (t = null == (e = N.current) ? true : e.getRowDescriptors()) ? t : []
       },
       getSectionDescriptors: () => {
         var e, t;
-        return null != (t = null == (e = C.current) ? true : e.getSectionDescriptors()) ? t : []
+        return null != (t = null == (e = N.current) ? true : e.getSectionDescriptors()) ? t : []
       },
       scrollToSectionTop: function() {
         for (var e, t = arguments.length, n = Array(t), r = 0; r < t; r++) n[r] = arguments[r];
-        return null == (e = C.current) ? true : e.scrollToSectionTop(...n)
+        return null == (e = N.current) ? true : e.scrollToSectionTop(...n)
       },
       scrollRowIntoView: function() {
         for (var e, t = arguments.length, n = Array(t), r = 0; r < t; r++) n[r] = arguments[r];
-        return null == (e = C.current) ? true : e.scrollRowIntoView(...n)
+        return null == (e = N.current) ? true : e.scrollRowIntoView(...n)
       },
       getScrollerNode: function() {
         for (var e, t = arguments.length, n = Array(t), r = 0; r < t; r++) n[r] = arguments[r];
-        return null == (e = C.current) ? true : e.getScrollerNode(...n)
+        return null == (e = N.current) ? true : e.getScrollerNode(...n)
       },
       scrollIntoViewNode: function() {
         for (var e, t = arguments.length, n = Array(t), r = 0; r < t; r++) n[r] = arguments[r];
-        return null == (e = C.current) ? true : e.scrollIntoViewNode(...n)
+        return null == (e = N.current) ? true : e.scrollIntoViewNode(...n)
       },
       getListDimensions: function() {
         for (var e, t, n = arguments.length, r = Array(n), i = 0; i < n; i++) r[i] = arguments[i];
-        return null != (t = null == (e = C.current) ? true : e.getListDimensions(...r)) ? t : {
+        return null != (t = null == (e = N.current) ? true : e.getListDimensions(...r)) ? t : {
           height: false,
           totalHeight: false
         }
@@ -96,7 +96,7 @@ let f = 20,
       children: [R.length > 0 && !c && null != y ? y() : (0, r.jsx)(o.Z, {
         role: "none presentation",
         listPadding: _,
-        onScroll: L,
+        onScroll: x,
         renderRow: h,
         renderSection: m,
         renderSectionHeader: g,
@@ -107,7 +107,7 @@ let f = 20,
         sectionHeaderHeight: T,
         sectionFooterHeight: S,
         stickyHeaders: true,
-        ref: C
+        ref: N
       }), null == A ? true : A(), null == b ? true : b()]
     })
   }),

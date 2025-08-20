@@ -1,6 +1,7 @@
-/** Chunk was on 96750 **/
-/** chunk id: 206733, original params: e,t,n (module,exports,require) **/
-require.r(module.exports = {
+/** Chunk was on web.js **/
+/** chunk id: 206733, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+var r = {
   ellipsis: "ellipsis__2ef49",
   headerContainer: "headerContainer__2ef49",
   headerText: "headerText__2ef49",
@@ -71,4 +72,5 @@ require.r(module.exports = {
   wrap: "wrap__2ef49",
   activityDetails: "activityDetails__2ef49",
   activityStreamPreview: "activityStreamPreview__2ef49"
-})
+};
+require.r(module.exports = r)

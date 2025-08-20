@@ -1,5 +1,6 @@
-/** Chunk was on 66181 **/
-/** chunk id: 343396, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 343396, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   lockIcon: "lockIcon__2666b",
   userSettingsSecurityImage: "userSettingsSecurityImage__2666b",

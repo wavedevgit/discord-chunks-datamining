@@ -2,7 +2,7 @@
 /** chunk id: 215105, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => N
+  Z: () => C
 }), require("./388685.js"), require("./781311.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -71,7 +71,7 @@ let T = (0, Chunk131704.kt)({
     }
   };
 
-function N(e) {
+function C(e) {
   let {
     user: t,
     guildId: n,
@@ -80,15 +80,15 @@ function N(e) {
     sourceDetails: f,
     setPopoutRef: _,
     modalKey: E,
-    onAction: N,
-    onClose: C,
+    onAction: C,
+    onClose: N,
     entry: R
   } = e, {
     resetInteraction: P,
     setInteractionToast: w
   } = (0, g.Xo)(), {
     primaryColor: D
-  } = (0, b.z)(), [L, x] = i.useState(""), [M, k] = i.useState((0, u.JM)(L)), j = i.useRef(false), U = i.useRef(null), G = i.useCallback(e => {
+  } = (0, b.z)(), [x, L] = i.useState(""), [j, M] = i.useState((0, u.JM)(x)), k = i.useRef(false), U = i.useRef(null), G = i.useCallback(e => {
     e.key === O.vn.ESCAPE && (e.stopPropagation(), P())
   }, [P]);
   i.useEffect(() => {
@@ -96,11 +96,11 @@ function N(e) {
   }, [U, _]);
   let B = async e => {
     if (null == e) return;
-    s === y.n_.AVATAR ? N({
+    s === y.n_.AVATAR ? C({
       action: "SEND_REPLY_AVATAR"
-    }) : s === y.n_.STATUS ? N({
+    }) : s === y.n_.STATUS ? C({
       action: "SEND_REPLY_CUSTOM_STATUS"
-    }) : N({
+    }) : C({
       action: "SEND_REPLY_ACTIVITY"
     });
     let n = S({
@@ -121,7 +121,7 @@ function N(e) {
       })
     } catch (e) {}
     w(y.P.REPLY)
-  }, V = {
+  }, Z = {
     [I.status]: s === y.n_.STATUS,
     [I.avatar]: s === y.n_.AVATAR,
     [I.activity]: s === y.n_.ACTIVITY
@@ -130,7 +130,7 @@ function N(e) {
     ref: U,
     onKeyDown: G,
     children: (0, r.jsx)("div", {
-      className: o()(I.container, V, {
+      className: o()(I.container, Z, {
         [I.customProfileTheme]: null != D
       }),
       children: (0, r.jsx)(d.ZP, {
@@ -144,14 +144,14 @@ function N(e) {
           username: p.ZP.getName(n, a, t)
         }),
         channel: T,
-        textValue: L,
-        richValue: M,
+        textValue: x,
+        richValue: j,
         onChange: (e, t, n) => {
-          t !== L && (x(t), k(n))
+          t !== x && (L(t), M(n))
         },
-        focused: j.current,
+        focused: k.current,
         onFocus: () => {
-          j.current = true
+          k.current = true
         },
         onSubmit: async e => {
           let {
@@ -162,7 +162,7 @@ function N(e) {
             shouldRefocus: false
           };
           try {
-            return await B(n), P(), null == C || C(), {
+            return await B(n), P(), null == N || N(), {
               shouldClear: true,
               shouldRefocus: false
             }

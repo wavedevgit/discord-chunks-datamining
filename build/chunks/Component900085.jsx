@@ -1,4 +1,4 @@
-/** Chunk was on 69003 **/
+/** Chunk was on 91488 **/
 /** chunk id: 900085, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => q
@@ -37,7 +37,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk712198 = require("./712198.js");
 
-function M(e, t, n) {
+function L(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -53,7 +53,7 @@ function k(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      M(e, t, n[t])
+      L(e, t, n[t])
     })
   }
   return e
@@ -95,7 +95,7 @@ class B extends(r = Chunk647438.Component) {
     }))
   }
 }
-M(B, "defaultProps", {
+L(B, "defaultProps", {
   unread: false
 });
 let V = Chunk442837.ZP.connectStores([Chunk306680.ZP, Chunk592125.Z], e => {
@@ -115,7 +115,7 @@ let V = Chunk442837.ZP.connectStores([Chunk306680.ZP, Chunk592125.Z], e => {
     } = e;
     if (null == t.guild_id) throw Error("ConnectedVoiceChannel - somehow we got a voice channel with no guild_id...");
     return {
-      voiceStates: x.ZP.getVoiceStates(t.guild_id)[t.id]
+      voiceStates: E.ZP.getVoiceStates(t.guild_id)[t.id]
     }
   })(B),
   H = Chunk442837.ZP.connectStores([Chunk888369.default], e => {
@@ -123,7 +123,7 @@ let V = Chunk442837.ZP.connectStores([Chunk306680.ZP, Chunk592125.Z], e => {
       guild: t
     } = e;
     return {
-      unread: v.default.hasUnread(t.id)
+      unread: j.default.hasUnread(t.id)
     }
   })(Chunk415795.ic),
   z = Chunk442837.ZP.connectStores([Chunk306680.ZP], e => {
@@ -147,7 +147,7 @@ function K(e, t, n) {
   return (0, i.jsx)(u.ua7, {
     text: n,
     children: e => (0, i.jsx)("span", U(k({}, e), {
-      className: L.autocompleteQuerySymbol,
+      className: M.autocompleteQuerySymbol,
       children: t
     }))
   }, e)
@@ -241,7 +241,7 @@ class Y extends Chunk647438.PureComponent {
     })
   }
   focusNode(e) {
-    P.S.dispatch(R.CkL.QUICKSWITCHER_RESULT_FOCUS, {
+    I.S.dispatch(R.CkL.QUICKSWITCHER_RESULT_FOCUS, {
       node: e
     })
   }
@@ -288,26 +288,26 @@ class Y extends Chunk647438.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), M(this, "scrollerRef", l.createRef()), M(this, "inputRef", l.createRef()), M(this, "_listId", (0, O.hQ)()), M(this, "state", {
+    super(...e), L(this, "scrollerRef", l.createRef()), L(this, "inputRef", l.createRef()), L(this, "_listId", (0, O.hQ)()), L(this, "state", {
       query: this.props.query,
       mouseFocusDisabled: true
-    }), M(this, "handleInputChange", () => {
+    }), L(this, "handleInputChange", () => {
       let {
         current: e
       } = this.inputRef;
       null != e && this.search(e.value)
-    }), M(this, "handleMouseMove", () => {
+    }), L(this, "handleMouseMove", () => {
       let {
         mouseFocusDisabled: e
       } = this.state;
       false !== e && this.setState({
         mouseFocusDisabled: false
       })
-    }), M(this, "focusResult", e => {
+    }), L(this, "focusResult", e => {
       this.state.mouseFocusDisabled || (0, N.tF)(this.props.results.indexOf(e))
-    }), M(this, "selectResult", e => {
+    }), L(this, "selectResult", e => {
       (0, N.Se)(e, this.props.queryMode === h.h8.TEXT_CHANNEL)
-    }), M(this, "handleContextMenu", e => {
+    }), L(this, "handleContextMenu", e => {
       let t = this.props.results[this.props.selectedIndex];
       switch (t.type) {
         case h.h8.GUILD:
@@ -324,7 +324,7 @@ class Y extends Chunk647438.PureComponent {
         case h.h8.TEXT_CHANNEL:
         case h.h8.VOICE_CHANNEL:
           let r = t.record,
-            l = j.Z.getGuild(r.getGuildId());
+            l = v.Z.getGuild(r.getGuildId());
           if (null == l) return;
           switch (r.type) {
             case R.d4z.GUILD_TEXT:
@@ -394,7 +394,7 @@ class Y extends Chunk647438.PureComponent {
             } = await Promise.all([n.e("79695"), n.e("57789"), n.e("81239")]).then(n.bind(n, 354741));
             return n => (0, i.jsx)(e, U(k({}, n), {
               channel: t.record,
-              selected: E.Z.getChannelId() === t.record.id,
+              selected: x.Z.getChannelId() === t.record.id,
               onSelect: N.Cp
             }))
           });
@@ -402,14 +402,14 @@ class Y extends Chunk647438.PureComponent {
           return (0, d.jW)(e, async () => {
             let {
               default: e
-            } = await Promise.all([n.e("79695"), n.e("69220"), n.e("74820")]).then(n.bind(n, 881351));
+            } = await Promise.all([n.e("79695"), n.e("69220")]).then(n.bind(n, 881351));
             return n => (0, i.jsx)(e, U(k({}, n), {
               user: t.record,
               onSelect: N.Cp
             }))
           })
       }
-    }), M(this, "handleKeyDown", e => {
+    }), L(this, "handleKeyDown", e => {
       let {
         mouseFocusDisabled: t,
         query: n
@@ -455,7 +455,7 @@ class Y extends Chunk647438.PureComponent {
           return
       }
       e.preventDefault(), (0, N.tF)(l)
-    }), M(this, "renderRow", e => {
+    }), L(this, "renderRow", e => {
       let {
         row: t
       } = e, n = this.props.results[t], {
@@ -559,7 +559,7 @@ class Y extends Chunk647438.PureComponent {
             score: l ? n.score : true,
             id: this.getRowId(t),
             children: n.record.type === g.Ky.SETTINGS && (0, i.jsx)("div", {
-              className: L.miscContainer,
+              className: M.miscContainer,
               children: D.intl.string(D.t["3D5yo6"])
             })
           }, "".concat(n.type, "-").concat(n.record.id));

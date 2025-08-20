@@ -7,7 +7,7 @@ require.d(exports, {
   cG: () => G,
   ly: () => B,
   oL: () => X,
-  vo: () => Z
+  vo: () => F
 }), require("./388685.js"), require("./997841.js"), require("./415506.js");
 var Chunk647438 = require("./647438.js"),
   Chunk392711 = require("./392711.js"),
@@ -41,7 +41,7 @@ var Chunk647438 = require("./647438.js"),
   Chunk526761 = require("./526761.js"),
   Chunk388032 = require("./388032.jsx");
 
-function x(e, t, n) {
+function L(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -50,20 +50,20 @@ function x(e, t, n) {
   }) : e[t] = n, e
 }
 
-function M(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      x(e, t, n[t])
+      L(e, t, n[t])
     })
   }
   return e
 }
 
-function k(e, t) {
+function M(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -74,8 +74,8 @@ function k(e, t) {
   return n
 }
 
-function j(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
+function k(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -86,25 +86,25 @@ function U(e, t) {
   let l = (0, o.Wu)([g.Z], () => g.Z.getGuildsArray()),
     c = r.useCallback(() => {
       let r = {};
-      for (let i of l) r[i.id] = V(i, n, e, t, a[i.id]);
+      for (let i of l) r[i.id] = Z(i, n, e, t, a[i.id]);
       return r
     }, [l, n, e, t, a]),
     [u, d] = r.useState(() => c());
   return r.useEffect(() => d(c()), [c]), {
     guildPlans: u,
     overrideGuild: r.useCallback((e, t) => {
-      s(n => j(M({}, n), {
+      s(n => k(j({}, n), {
         [e]: t
       }))
     }, []),
     setThresholds: i,
-    getDebug: () => F(Object.values(u), t)
+    getDebug: () => V(Object.values(u), t)
   }
 }
 
 function G(e, t) {
   return g.Z.getGuildsArray().some(n => {
-    let [r] = p.Z.hasConsented(P.pjP.PERSONALIZATION) ? (0, N.q)(n, R.nf, e, t, false) : (0, N.A)(n, e);
+    let [r] = p.Z.hasConsented(P.pjP.PERSONALIZATION) ? (0, C.q)(n, R.nf, e, t, false) : (0, C.A)(n, e);
     return r === R.AR.UseGreyDot
   })
 }
@@ -125,9 +125,9 @@ function B() {
   })
 }
 
-function V(e, t, n, r, i) {
+function Z(e, t, n, r, i) {
   var a;
-  let [o, s, l] = p.Z.hasConsented(P.pjP.PERSONALIZATION) ? (0, N.q)(e, t, n, r, true) : (0, N.A)(e, n), c = null != (a = n.filter(t => t.guild_id === e.id)[0]) ? a : {}, u = (0, A.Z)(e, null != i ? i : o, c, r, t);
+  let [o, s, l] = p.Z.hasConsented(P.pjP.PERSONALIZATION) ? (0, C.q)(e, t, n, r, true) : (0, C.A)(e, n), c = null != (a = n.filter(t => t.guild_id === e.id)[0]) ? a : {}, u = (0, A.Z)(e, null != i ? i : o, c, r, t);
   return {
     guildId: e.id,
     mode: o,
@@ -140,7 +140,7 @@ function V(e, t, n, r, i) {
   }
 }
 
-function F(e, t) {
+function V(e, t) {
   let n = t.reduce((e, t) => {
       var n;
       return e + Number(null != (n = t.num_year_opens) ? n : 0)
@@ -174,7 +174,7 @@ function F(e, t) {
   return "\n# Basic Stats\n- Total channel visits (yr): ".concat(n, "\n- Total channel visits (month): ").concat(r, "\n\n").concat(s.join("\n\n"))
 }
 
-function Z(e) {
+function F(e) {
   let [t, n] = r.useState(false), [i, a] = r.useState(false), o = r.useCallback(async t => {
     if (i) throw Error("Already submitted notifications migration");
     n(true);
@@ -217,8 +217,8 @@ async function H(e, t) {
     } else n()
   } catch (e) {
     I.Z.captureException(e), c.Z.show({
-      title: L.intl.string(L.t.j2d6Ki),
-      body: L.intl.string(L.t.mCjLAQ),
+      title: x.intl.string(x.t.j2d6Ki),
+      body: x.intl.string(x.t.mCjLAQ),
       onConfirm: t
     })
   }
@@ -240,7 +240,7 @@ function Y(e) {
       unmuted_server_ids: t.filter(e => b.ZP.isMuted(e.plan.guildId)).map(e => e.plan.guildId)
     };
   return () => {
-    y.default.track(P.rMx.NOTIFICATION_MIGRATION_COMPLETED, j(M({}, n), {
+    y.default.track(P.rMx.NOTIFICATION_MIGRATION_COMPLETED, k(j({}, n), {
       auto_migrated: true,
       pre_selected_server_ids: Object.values(e).filter(e => e.mode === R.AR.UseGreyDot).map(e => e.guildId),
       final_selected_server_ids: t.map(e => e.plan.guildId),
@@ -257,7 +257,7 @@ function Y(e) {
   }
 }
 async function W(e) {
-  await K(() => z()), await K(() => u.Z.setAccountFlag(C.c.USE_NEW_NOTIFICATIONS, true));
+  await K(() => z()), await K(() => u.Z.setAccountFlag(N.c.USE_NEW_NOTIFICATIONS, true));
   let t = await K(() => f.Z.saveUserGuildSettingsBulk(e));
   l.Z.dispatch({
     type: "USER_GUILD_SETTINGS_FULL_UPDATE",

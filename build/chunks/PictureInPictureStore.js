@@ -162,10 +162,10 @@ function A(e) {
   null != n && (n.component === c.NYg.VIDEO ? r = t : n.component === c.NYg.ACTIVITY ? i = t : n.component === c.NYg.FRAME && (a = t))
 }
 
-function N() {
+function C() {
   r = null, i = null, a = null, h = new Map
 }
-class C extends(o = Chunk442837.ZP.PersistedStore) {
+class N extends(o = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     if (null == e) {
       g = c.VD2.BOTTOM_RIGHT, E = {
@@ -214,7 +214,7 @@ class C extends(o = Chunk442837.ZP.PersistedStore) {
     }
   }
 }
-d(C, "displayName", "PictureInPictureStore"), d(C, "persistKey", "PictureInPictureStore"), d(C, "migrations", [e => {
+d(N, "displayName", "PictureInPictureStore"), d(N, "persistKey", "PictureInPictureStore"), d(N, "migrations", [e => {
   var t, n;
   return {
     pipWidths: {
@@ -224,7 +224,7 @@ d(C, "displayName", "PictureInPictureStore"), d(C, "persistKey", "PictureInPictu
     openPosition: null != (n = e.openPosition) ? n : c.VD2.BOTTOM_RIGHT
   }
 }]);
-let R = new C(Chunk570140.Z, {
+let R = new N(Chunk570140.Z, {
   PICTURE_IN_PICTURE_OPEN: b,
   PICTURE_IN_PICTURE_CLOSE: y,
   PICTURE_IN_PICTURE_MOVE: O,
@@ -233,5 +233,5 @@ let R = new C(Chunk570140.Z, {
   PICTURE_IN_PICTURE_SHOW: S,
   PICTURE_IN_PICTURE_UPDATE_RECT: I,
   PICTURE_IN_PICTURE_UPDATE_SELECTED_WINDOW: A,
-  LOGOUT: N
+  LOGOUT: C
 })

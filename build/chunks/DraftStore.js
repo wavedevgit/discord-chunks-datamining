@@ -2,7 +2,7 @@
 /** chunk id: 703558, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => M,
+  Z: () => j,
   d: () => E
 }), require("./388685.js"), require("./781311.js");
 var r, Chunk392711 = require("./392711.js"),
@@ -129,12 +129,12 @@ function A() {
   for (let e in exports) null == Chunk592125.Z.getChannel(module) && delete exports[module]
 }
 
-function N() {
+function C() {
   let e = Chunk314897.default.getId();
   return module in b || (b[module] = {}), A(), false
 }
 
-function C() {
+function N() {
   return A(), false
 }
 
@@ -181,16 +181,16 @@ function D(e) {
   e.userId in b && delete b[e.userId]
 }
 
-function L() {
+function x() {
   for (let [e, t] of Chunk709054.default.entries(b))
     for (let [n, r] of Chunk709054.default.entries(exports)) {
       let t = r[0];
       null != exports && ("" === exports.draft || "" === exports.draft.trim()) && S(require, 0, module)
     }
 }
-class x extends(r = Chunk442837.ZP.PersistedStore) {
+class L extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    b = null != e ? e : {}, L(), this.waitFor(u.default, d.Z, f.Z)
+    b = null != e ? e : {}, x(), this.waitFor(u.default, d.Z, f.Z)
   }
   getState() {
     return b
@@ -243,7 +243,7 @@ class x extends(r = Chunk442837.ZP.PersistedStore) {
     return null == n ? null : n[1]
   }
 }
-_(x, "displayName", "DraftStore"), _(x, "persistKey", "DraftStore"), _(x, "migrations", [e => {
+_(L, "displayName", "DraftStore"), _(L, "persistKey", "DraftStore"), _(L, "migrations", [e => {
   if (null == e) return {};
   for (let t in e) "timestamp" in e[t] && (e[t] = {
     0: e[t]
@@ -257,11 +257,11 @@ _(x, "displayName", "DraftStore"), _(x, "persistKey", "DraftStore"), _(x, "migra
   for (let t in e) r[t] = e[t];
   return n
 }]);
-let M = new x(Chunk570140.Z, {
-  CONNECTION_OPEN: N,
+let j = new L(Chunk570140.Z, {
+  CONNECTION_OPEN: C,
   LOGOUT: w,
   MULTI_ACCOUNT_REMOVE_ACCOUNT: D,
-  GUILD_DELETE: C,
+  GUILD_DELETE: N,
   CHANNEL_DELETE: R,
   THREAD_DELETE: R,
   THREAD_CREATE: P,

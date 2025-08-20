@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 778764, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 778764, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => N
 }), require("./388685.js"), require("./49124.js"), require("./953529.js"), require("./457542.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -23,172 +24,179 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk421156 = require("./421156.js");
 
-function C(e) {
+function v(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      i = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), i.forEach(function(t) {
-      var i;
-      i = n[t], t in e ? Object.defineProperty(e, t, {
-        value: i,
-        enumerable: true,
-        configurable: true,
-        writable: true
-      }) : e[t] = i
+    }))), r.forEach(function(t) {
+      v(e, t, n[t])
     })
   }
   return e
 }
 
-function O(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-      var i = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, i)
-    }
-    return n
-  })(Object(t)).forEach(function(n) {
+function T(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function S(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function v(e) {
+function A(e) {
   let {
     transitionState: t,
-    onClose: a,
-    ticket: l,
+    onClose: o,
+    ticket: s,
     challenge: c
-  } = e, m = (0, d.Dt)(), [b, C] = r.useState(""), [O, v] = r.useState(true), [S, T] = r.useState(x.x.INIT), [N, I] = r.useState(""), [y, A] = r.useState(null), P = async () => {
+  } = e, f = (0, u.Dt)(), [g, v] = i.useState(""), [I, T] = i.useState(true), [S, A] = i.useState(E.x.INIT), [C, N] = i.useState(""), [R, P] = i.useState(null), w = async () => {
     let e;
-    T(x.x.REGISTER);
-    let t = p.isPlatformEmbedded && h.ZP.supportsFeature(_.eRX.WEBAUTHN) ? h.ZP.webAuthnRegister(c) : s.Ue(JSON.parse(c)).then(e => JSON.stringify(e));
+    A(E.x.REGISTER);
+    let t = _.isPlatformEmbedded && h.ZP.supportsFeature(b.eRX.WEBAUTHN) ? h.ZP.webAuthnRegister(c) : a.Ue(JSON.parse(c)).then(e => JSON.stringify(e));
     try {
       e = await t
     } catch (e) {
-      g.Z.captureException(e), A(j.intl.string(j.t.xSCvBQ)), T(x.x.INIT);
+      p.Z.captureException(e), P(y.intl.string(y.t.xSCvBQ)), A(E.x.INIT);
       return
     }
-    I(e), T(x.x.NAME)
+    N(e), A(E.x.NAME)
   };
-  return (0, i.jsxs)(o.Y0X, {
+  return (0, r.jsxs)(l.Y0X, {
     transitionState: t,
-    "aria-labelledby": m,
+    "aria-labelledby": f,
     parentComponent: "UserSettingsWebAuthn",
-    children: [(0, i.jsxs)(o.xBx, {
-      className: E.header,
+    children: [(0, r.jsxs)(l.xBx, {
+      className: O.header,
       separator: false,
-      children: [(0, i.jsxs)(o.X6q, {
-        id: m,
+      children: [(0, r.jsxs)(l.X6q, {
+        id: f,
         variant: "heading-lg/semibold",
-        children: [S === x.x.INIT && j.intl.string(j.t.vrOCCg), S === x.x.REGISTER && j.intl.string(j.t.wePEBA), S === x.x.NAME && j.intl.string(j.t["cY/IOj"])]
-      }), (0, i.jsx)(o.olH, {
-        onClick: a,
-        className: E.modalCloseButton
+        children: [S === E.x.INIT && y.intl.string(y.t.vrOCCg), S === E.x.REGISTER && y.intl.string(y.t.wePEBA), S === E.x.NAME && y.intl.string(y.t["cY/IOj"])]
+      }), (0, r.jsx)(l.olH, {
+        onClick: o,
+        className: O.modalCloseButton
       })]
-    }), (0, i.jsxs)(o.MyZ, {
+    }), (0, r.jsxs)(l.MyZ, {
       activeSlide: S,
       width: 440,
-      children: [(0, i.jsxs)(o.Mi4, {
-        id: x.x.INIT,
-        children: [(0, i.jsxs)(o.hzk, {
-          className: E.content,
-          children: [(0, i.jsx)("div", {
-            className: E.icon,
-            children: (0, i.jsx)("img", {
+      children: [(0, r.jsxs)(l.Mi4, {
+        id: E.x.INIT,
+        children: [(0, r.jsxs)(l.hzk, {
+          className: O.content,
+          children: [(0, r.jsx)("div", {
+            className: O.icon,
+            children: (0, r.jsx)("img", {
               alt: "",
               src: n(773072)
             })
-          }), (0, i.jsx)("div", {
-            children: null != y && (0, i.jsx)(o.Text, {
+          }), (0, r.jsx)("div", {
+            children: null != R && (0, r.jsx)(l.Text, {
               variant: "text-md/normal",
               color: "status-danger",
-              children: y
+              children: R
             })
-          }), (0, i.jsx)("div", {
-            children: (0, i.jsx)(o.Text, {
+          }), (0, r.jsx)("div", {
+            children: (0, r.jsx)(l.Text, {
               variant: "text-md/normal",
-              children: j.intl.string(j.t.Lh5vTU)
+              children: y.intl.string(y.t.Lh5vTU)
             })
           })]
-        }), (0, i.jsx)(o.mzw, {
-          children: (0, i.jsx)(o.zxk, {
+        }), (0, r.jsx)(l.mzw, {
+          children: (0, r.jsx)(l.zxk, {
             variant: "primary",
-            text: j.intl.string(j.t.oibaQU),
-            onClick: P
+            text: y.intl.string(y.t.oibaQU),
+            onClick: w
           })
         })]
-      }), (0, i.jsxs)(o.Mi4, {
-        id: x.x.REGISTER,
-        children: [(0, i.jsxs)(o.hzk, {
-          className: E.content,
-          children: [(0, i.jsx)("div", {
-            className: E.icon,
-            children: (0, i.jsx)("img", {
+      }), (0, r.jsxs)(l.Mi4, {
+        id: E.x.REGISTER,
+        children: [(0, r.jsxs)(l.hzk, {
+          className: O.content,
+          children: [(0, r.jsx)("div", {
+            className: O.icon,
+            children: (0, r.jsx)("img", {
               alt: "",
               src: n(773072)
             })
-          }), (0, i.jsx)("div", {
-            children: (0, i.jsx)(o.Text, {
+          }), (0, r.jsx)("div", {
+            children: (0, r.jsx)(l.Text, {
               variant: "text-md/normal",
-              children: j.intl.string(j.t.aVMiX1)
+              children: y.intl.string(y.t.aVMiX1)
             })
           })]
-        }), (0, i.jsx)(o.mzw, {
-          children: (0, i.jsx)(o.zxk, {
+        }), (0, r.jsx)(l.mzw, {
+          children: (0, r.jsx)(l.zxk, {
             variant: "primary",
             text: "",
             loading: true
           })
         })]
-      }), (0, i.jsx)(o.Mi4, {
-        id: x.x.NAME,
-        children: (0, i.jsxs)("form", {
+      }), (0, r.jsx)(l.Mi4, {
+        id: E.x.NAME,
+        children: (0, r.jsxs)("form", {
           onSubmit: e => {
-            e.preventDefault(), (0, f.Sr)(b, l, N).then(async () => {
-              await (0, u.Yn)(false)
-            }).then(() => a()).catch(() => {
-              A(j.intl.string(j.t.fEptJC)), T(x.x.INIT)
+            e.preventDefault(), (0, m.Sr)(g, s, C).then(async () => {
+              await (0, d.Yn)(false)
+            }).then(() => o()).catch(() => {
+              P(y.intl.string(y.t.fEptJC)), A(E.x.INIT)
             })
           },
-          children: [(0, i.jsxs)(o.hzk, {
-            className: E.content,
-            children: [(0, i.jsx)("div", {
-              className: E.icon,
-              children: (0, i.jsx)("img", {
+          children: [(0, r.jsxs)(l.hzk, {
+            className: O.content,
+            children: [(0, r.jsx)("div", {
+              className: O.icon,
+              children: (0, r.jsx)("img", {
                 alt: "",
                 src: n(637163)
               })
-            }), (0, i.jsxs)(o.Kqy, {
+            }), (0, r.jsxs)(l.Kqy, {
               gap: 8,
-              children: [(0, i.jsx)(o.Text, {
+              children: [(0, r.jsx)(l.Text, {
                 variant: "text-md/normal",
-                children: j.intl.string(j.t["Jzd+z8"])
-              }), (0, i.jsx)(o.oil, {
-                value: b,
+                children: y.intl.string(y.t["Jzd+z8"])
+              }), (0, r.jsx)(l.oil, {
+                value: g,
                 onChange: e => {
-                  C(e), v(0 === e.length)
+                  v(e), T(0 === e.length)
                 },
                 autoFocus: true,
                 minLength: 1
               })]
             })]
-          }), (0, i.jsx)(o.mzw, {
-            className: E.footer,
-            children: (0, i.jsxs)(o.hE2, {
+          }), (0, r.jsx)(l.mzw, {
+            className: O.footer,
+            children: (0, r.jsxs)(l.hE2, {
               direction: "horizontal-reverse",
-              children: [(0, i.jsx)(o.zxk, {
+              children: [(0, r.jsx)(l.zxk, {
                 variant: "primary",
-                text: j.intl.string(j.t["5dyZ1d"]),
+                text: y.intl.string(y.t["5dyZ1d"]),
                 type: "submit",
-                disabled: O
-              }), (0, i.jsx)(o.zxk, {
+                disabled: I
+              }), (0, r.jsx)(l.zxk, {
                 variant: "secondary",
-                text: j.intl.string(j.t["13/7kZ"]),
+                text: y.intl.string(y.t["13/7kZ"]),
                 onClick: () => {
-                  T(x.x.INIT)
+                  A(E.x.INIT)
                 }
               })]
             })
@@ -199,41 +207,41 @@ function v(e) {
   })
 }
 
-function S(e) {
+function C(e) {
   let {
     onSelect: t,
-    credential: r
+    credential: i
   } = e;
-  return (0, i.jsxs)(o.v2r, {
+  return (0, r.jsxs)(l.v2r, {
     navId: "webauthn-credential-actions",
     onClose: c.Zy,
-    "aria-label": j.intl.string(j.t["+nrTbG"]),
+    "aria-label": y.intl.string(y.t["+nrTbG"]),
     onSelect: t,
-    children: [(0, i.jsx)(o.sNh, {
-      id: "webauthn-edit-credential-".concat(r.id),
-      label: j.intl.string(j.t.bt75u7),
+    children: [(0, r.jsx)(l.sNh, {
+      id: "webauthn-edit-credential-".concat(i.id),
+      label: y.intl.string(y.t.bt75u7),
       action: () => {
-        (0, o.ZDy)(async () => {
+        (0, l.ZDy)(async () => {
           let {
             default: e
           } = await n.e("804").then(n.bind(n, 89616));
-          return t => (0, i.jsx)(e, C({
-            credential: r
+          return t => (0, r.jsx)(e, I({
+            credential: i
           }, t))
         })
       }
-    }), (0, i.jsx)(o.sNh, {
-      id: "webauthn-delete-credential-".concat(r.id),
-      label: j.intl.string(j.t["+xgS+P"]),
+    }), (0, r.jsx)(l.sNh, {
+      id: "webauthn-delete-credential-".concat(i.id),
+      label: y.intl.string(y.t["+xgS+P"]),
       color: "danger",
       action: () => {
-        (0, f.cT)(r)
+        (0, m.cT)(i)
       }
     })]
   })
 }
 
-function T() {
+function N() {
   let {
     credentials: e,
     hasFetchedCredentials: t
@@ -244,7 +252,7 @@ function T() {
   Chunk647438.useEffect(() => {
     exports || (0, Chunk365007.hL)()
   }, [exports]);
-  let [n, s] = Chunk647438.useState(false);
+  let [n, a] = Chunk647438.useState(false);
   return (0, Chunk951288.jsxs)(Chunk481060.hjN, {
     title: Chunk388032.intl.string(Chunk388032.t.y7SXYW),
     className: Chunk421156.settings,
@@ -254,26 +262,26 @@ function T() {
       children: Chunk388032.intl.string(Chunk388032.t.TMukAA)
     }), module.length > 0 && (0, Chunk951288.jsx)("div", {
       className: Chunk421156.credentialList,
-      children: module.map(e => (0, i.jsxs)("div", {
-        className: E.credentialItem,
-        children: [(0, i.jsx)(o.Text, {
+      children: module.map(e => (0, r.jsxs)("div", {
+        className: O.credentialItem,
+        children: [(0, r.jsx)(l.Text, {
           variant: "text-md/semibold",
           children: e.name
-        }), (0, i.jsx)(l.zx, {
-          look: l.zx.Looks.BLANK,
-          color: l.zx.Colors.TRANSPARENT,
-          size: l.zx.Sizes.ICON,
+        }), (0, r.jsx)(s.zx, {
+          look: s.zx.Looks.BLANK,
+          color: s.zx.Colors.TRANSPARENT,
+          size: s.zx.Sizes.ICON,
           onClick: t => {
-            (0, c.vq)(t, t => (0, i.jsx)(S, O(C({}, t), {
+            (0, c.vq)(t, t => (0, r.jsx)(C, S(I({}, t), {
               credential: e
             })))
           },
-          "aria-label": j.intl.string(j.t["+nrTbG"]),
-          innerClassName: E.credentialOptions,
-          children: (0, i.jsx)(o.Huf, {
+          "aria-label": y.intl.string(y.t["+nrTbG"]),
+          innerClassName: O.credentialOptions,
+          children: (0, r.jsx)(l.Huf, {
             size: "md",
-            className: E.__invalid_overflowIcon,
-            colorClass: E.__invalid_overflowIconFg,
+            className: O.__invalid_overflowIcon,
+            colorClass: O.__invalid_overflowIconFg,
             "aria-hidden": true
           })
         })]
@@ -289,12 +297,12 @@ function T() {
               ticket: t,
               challenge: n
             } = e;
-            (0, o.h7j)(e => (0, i.jsx)(v, O(C({}, e), {
+            (0, l.h7j)(e => (0, r.jsx)(A, S(I({}, e), {
               ticket: t,
               challenge: n
             })))
           }).catch(e => {
-            e.message !== j.intl.string(j.t.N2yb9f) && g.Z.captureException(e)
+            e.message !== y.intl.string(y.t.N2yb9f) && p.Z.captureException(e)
           }).finally(() => {
             Chunk849055(false)
           })

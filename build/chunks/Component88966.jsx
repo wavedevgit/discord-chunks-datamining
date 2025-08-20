@@ -1,4 +1,4 @@
-/** Chunk was on 78086 **/
+/** Chunk was on 74379 **/
 /** chunk id: 88966, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -15,14 +15,14 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx");
 
 function f(e, n, t) {
-  let f = (0, a.Aq)();
-  return (0, i.e7)([s.default], () => s.default.getId() === e) || n === u.IlC.POPOUT ? null : (0, r.jsx)(l.sNh, {
+  let f = (0, s.Aq)();
+  return (0, i.e7)([c.default], () => c.default.getId() === e) || n === d.IlC.POPOUT ? null : (0, r.jsx)(l.sNh, {
     id: "message-user",
-    label: d.intl.string(d.t.OAJQlJ),
+    label: u.intl.string(u.t.OAJQlJ),
     action: () => {
-      (0, c.i)(n, true), o.Z.openPrivateChannel({
+      (0, a.i)(n, true), o.Z.openPrivateChannel({
         recipientIds: e
-      }), f.dispatch(u.CkL.POPOUT_CLOSE), (0, l.pTH)()
+      }), f.dispatch(d.CkL.POPOUT_CLOSE), (0, l.pTH)()
     },
     icon: t
   })

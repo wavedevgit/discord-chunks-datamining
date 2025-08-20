@@ -53,12 +53,12 @@ function A(e) {
   ])
 }
 
-function N(e) {
+function C(e) {
   let t = [b.dCx.FILTER_HAS];
   return d.Z.hidePersonalInformation || (t.push(b.dCx.FILTER_FROM), t.push(b.dCx.FILTER_MENTIONS)), (0, m.R6)(e) && t.push(b.dCx.FILTER_IN), t
 }
 
-function C(e) {
+function N(e) {
   let {
     searchContext: t,
     query: n,
@@ -111,7 +111,7 @@ function P(e, t) {
   } = a, {
     autocompletes: _
   } = a;
-  _ = G(e, u, d), v[r] = C({
+  _ = G(e, u, d), v[r] = N({
     searchContext: e,
     query: c,
     mode: u,
@@ -144,7 +144,7 @@ function D(e) {
   O = t, H(t)
 }
 
-function L(e) {
+function x(e) {
   var t;
   let n, {
     searchContext: r,
@@ -174,7 +174,7 @@ function L(e) {
       }), n = c.autocompletes, d = false
     } else u.context.clearQuery(), n = G(r, s, i)
   }
-  return v[l] = C({
+  return v[l] = N({
     searchContext: r,
     query: o,
     mode: s,
@@ -184,7 +184,7 @@ function L(e) {
   }), d
 }
 
-function x(e) {
+function L(e) {
   var t, n, r;
   let i, {
     filter: a,
@@ -242,7 +242,7 @@ function x(e) {
   }
 }
 
-function M(e, t) {
+function j(e, t) {
   let n = (null != e ? e.getFullMatch() : "").trim(),
     r = A(t),
     i = (0, E.nB)(n).filter(e => null != e.token && true === r.get(e.token));
@@ -252,12 +252,12 @@ function M(e, t) {
   }
 }
 
-function k(e, t, n) {
+function M(e, t, n) {
   let r = (null != e ? e.getFullMatch() : "").trim(),
     i = [];
-  return null != r && "" !== r && (N(t).forEach(r => {
+  return null != r && "" !== r && (C(t).forEach(r => {
     if (null == r) return;
-    let a = x({
+    let a = L({
       filter: r,
       token: e,
       searchContext: t,
@@ -265,10 +265,10 @@ function k(e, t, n) {
       tokens: n
     });
     null != a && i.push(a)
-  }), i.push(j(e, t))), 5 > (0, m.BU)(i) && i.push(M(e, t)), i
+  }), i.push(k(e, t))), 5 > (0, m.BU)(i) && i.push(j(e, t)), i
 }
 
-function j(e, t) {
+function k(e, t) {
   let n = (null != e ? e.getFullMatch() : "").trim();
   if (null != n && "" !== n) {
     var r, i, a, o, s, l, c, u, d;
@@ -313,20 +313,20 @@ function U(e) {
 
 function G(e, t, n) {
   let r = [];
-  return t.type === b.Sap.FILTER ? r.push(x({
+  return t.type === b.Sap.FILTER ? r.push(L({
     filter: t.filter,
     token: t.token,
     searchContext: e,
     maxResults: T,
     tokens: n
-  })) : t.type === b.Sap.FILTER_ALL ? r = k(t.token, e, n) : t.type === b.Sap.EMPTY && (r.push(M(t.token, e)), r.push(U(e))), r
+  })) : t.type === b.Sap.FILTER_ALL ? r = M(t.token, e, n) : t.type === b.Sap.EMPTY && (r.push(j(t.token, e)), r.push(U(e))), r
 }
 
 function B() {
   (0, Chunk607802.WU)()
 }
 
-function V(e) {
+function Z(e) {
   let t = v[e];
   if (null == t) return;
   let {
@@ -337,7 +337,7 @@ function V(e) {
     cursorScope: o,
     autocompletes: s
   } = t;
-  v[e] = C({
+  v[e] = N({
     searchContext: n,
     query: r,
     mode: i,
@@ -347,15 +347,15 @@ function V(e) {
   })
 }
 
-function F(e) {
+function V(e) {
   let {
     id: t
   } = e;
-  V(t)
+  Z(t)
 }
 
-function Z() {
-  Object.keys(v).forEach(V)
+function F() {
+  Object.keys(v).forEach(Z)
 }
 
 function H(e) {
@@ -367,7 +367,7 @@ function H(e) {
     tokens: i,
     cursorScope: a
   } = v[t];
-  v[t] = C({
+  v[t] = N({
     searchContext: e,
     query: n,
     mode: r,
@@ -405,7 +405,7 @@ class K extends(r = Chunk442837.ZP.Store) {
   }
   getState(e) {
     var t;
-    return null != (t = v[(0, m.Tm)(e)]) ? t : C({
+    return null != (t = v[(0, m.Tm)(e)]) ? t : N({
       searchContext: e
     })
   }
@@ -415,14 +415,14 @@ class K extends(r = Chunk442837.ZP.Store) {
 }
 y(K, "displayName", "SearchAutocompleteStore");
 let z = new K(Chunk570140.Z, {
-    SEARCH_AUTOCOMPLETE_QUERY_UPDATE: L,
+    SEARCH_AUTOCOMPLETE_QUERY_UPDATE: x,
     SEARCH_EDITOR_STATE_CLEAR: R,
     CHANNEL_CREATE: B,
     CHANNEL_DELETE: B,
     STREAMER_MODE_UPDATE: Y,
     SEARCH_SCREEN_OPEN: D,
     CHANNEL_SELECT: W,
-    LOGOUT: Z,
-    SEARCH_HISTORY_WEB_CLEAR_ITEMS: F
+    LOGOUT: F,
+    SEARCH_HISTORY_WEB_CLEAR_ITEMS: V
   }),
   q = z

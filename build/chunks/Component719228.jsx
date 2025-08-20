@@ -1,12 +1,13 @@
-/** Chunk was on 30419 **/
-/** chunk id: 719228, original params: e,t,l (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 719228, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  default: () => S
+  default: () => O
 }), require("./539854.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk658722 = require("./658722.js"),
-  s = require.n(Chunk658722),
+  o = require.n(Chunk658722),
   Chunk442837 = require("./442837.js"),
   Chunk82659 = require("./82659.jsx"),
   Chunk481060 = require("./481060.js"),
@@ -20,105 +21,105 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk30408 = require("./30408.js");
 
-function p(e) {
+function b(e) {
   let {
     setQuery: t,
-    query: l
+    query: n
   } = e;
-  return (0, n.jsx)(c.E1j, {
-    placeholder: C.intl.string(C.t.vf3ZTU),
-    "aria-label": C.intl.string(C.t.vf3ZTU),
-    query: l,
+  return (0, r.jsx)(c.E1j, {
+    placeholder: g.intl.string(g.t.vf3ZTU),
+    "aria-label": g.intl.string(g.t.vf3ZTU),
+    query: n,
     onChange: t,
     onClear: () => t("")
   })
 }
 
-function v(e) {
+function y(e) {
   let {
     isTransfer: t = false,
-    selectedSlotGuilds: l,
-    onClose: r,
-    onSelectGuild: i,
-    query: o
-  } = e, p = (0, a.e7)([g.ZP], () => g.ZP.getFlattenedGuildIds()), v = (0, a.Wu)([x.Z], () => p.reduce((e, t) => {
-    let n = x.Z.getGuild(t);
-    return null == n || null != l && l.some(e => e.id === t) || (o.length <= 0 || s()(o.toLowerCase(), null == n ? true : n.name.toLowerCase())) && e.push(n), e
+    selectedSlotGuilds: n,
+    onClose: i,
+    onSelectGuild: a,
+    query: l
+  } = e, b = (0, s.e7)([p.ZP], () => p.ZP.getFlattenedGuildIds()), y = (0, s.Wu)([_.Z], () => b.reduce((e, t) => {
+    let r = _.Z.getGuild(t);
+    return null == r || null != n && n.some(e => e.id === t) || (l.length <= 0 || o()(l.toLowerCase(), null == r ? true : r.name.toLowerCase())) && e.push(r), e
   }, []));
 
-  function S() {
-    r(), (0, d.xf)(), (0, m.uL)(f.Z5c.GUILD_DISCOVERY)
+  function O() {
+    i(), (0, u.xf)(), (0, f.uL)(m.Z5c.GUILD_DISCOVERY)
   }
-  return (0, n.jsxs)(n.Fragment, {
-    children: [0 === v.length && (0, n.jsx)("div", {
-      className: j.emptyStateWrapper,
-      children: (0, n.jsx)(c.Text, {
+  return (0, r.jsxs)(r.Fragment, {
+    children: [0 === y.length && (0, r.jsx)("div", {
+      className: E.emptyStateWrapper,
+      children: (0, r.jsx)(c.Text, {
         variant: "text-md/normal",
-        children: 0 === p.length ? C.intl.format(C.t["E3tB6+"], {
-          publicGuildDirectoryHook: (e, t) => (0, n.jsx)(c.P3F, {
-            onClick: S,
+        children: 0 === b.length ? g.intl.format(g.t["E3tB6+"], {
+          publicGuildDirectoryHook: (e, t) => (0, r.jsx)(c.P3F, {
+            onClick: O,
             tag: "a",
             children: e
           }, t)
-        }) : C.intl.string(C.t.w3GLl5)
+        }) : g.intl.string(g.t.w3GLl5)
       })
-    }), v.map(e => (0, n.jsxs)(c.P3F, {
-      className: j.selectGuild,
+    }), y.map(e => (0, r.jsxs)(c.P3F, {
+      className: E.selectGuild,
       onClick: () => {
-        i(e)
+        a(e)
       },
-      children: [(0, n.jsx)(u.Z, {
-        className: j.selectGuildIcon,
+      children: [(0, r.jsx)(d.Z, {
+        className: E.selectGuildIcon,
         guild: e,
-        size: u.Z.Sizes.SMALL
-      }), (0, n.jsxs)("div", {
-        className: j.selectGuildCopy,
-        children: [(0, n.jsx)(c.Text, {
-          className: j.selectGuildName,
+        size: d.Z.Sizes.SMALL
+      }), (0, r.jsxs)("div", {
+        className: E.selectGuildCopy,
+        children: [(0, r.jsx)(c.Text, {
+          className: E.selectGuildName,
           variant: "text-md/normal",
           children: e.name
-        }), (0, n.jsx)(c.Text, {
-          className: j.selectGuildLevel,
+        }), (0, r.jsx)(c.Text, {
+          className: E.selectGuildLevel,
           color: "text-muted",
           variant: "text-xs/normal",
           children: (0, h.nW)(e.premiumTier)
         })]
-      }), (0, n.jsx)(c.Text, {
-        className: j.selectGuildPseudoCta,
+      }), (0, r.jsx)(c.Text, {
+        className: E.selectGuildPseudoCta,
         color: "always-white",
         variant: "text-sm/medium",
-        children: t ? C.intl.string(C.t.dUgaFx) : C.intl.string(C.t.Uj0md3)
+        children: t ? g.intl.string(g.t.dUgaFx) : g.intl.string(g.t.Uj0md3)
       })]
     }, e.id))]
   })
 }
 
-function S(e) {
+function O(e) {
   let {
     onClose: t,
-    onSelectGuild: l,
-    transitionState: i,
-    isTransfer: s = false,
-    selectedSlotGuilds: a
-  } = e, [c, d] = r.useState(""), u = async () => {
+    onSelectGuild: n,
+    transitionState: a,
+    isTransfer: o = false,
+    selectedSlotGuilds: s
+  } = e, [c, u] = i.useState(""), d = async () => {
     await t()
-  }, m = s ? C.intl.string(C.t.IB13DQ) : C.intl.string(C.t.cQYceX);
-  return (0, n.jsx)(o.Modal, {
-    transitionState: i,
-    onClose: u,
+  }, f = o ? g.intl.string(g.t.IB13DQ) : g.intl.string(g.t.cQYceX);
+  return (0, r.jsx)(l.Modal, {
+    transitionState: a,
+    onClose: d,
     size: "md",
-    title: m,
-    input: (0, n.jsx)(p, {
+    title: f,
+    input: (0, r.jsx)(b, {
       query: c,
-      setQuery: d
+      setQuery: u
     }),
     actions: [],
-    children: (0, n.jsx)(v, {
+    children: (0, r.jsx)(y, {
       onClose: t,
-      onSelectGuild: l,
+      onSelectGuild: n,
       query: c,
-      isTransfer: s,
-      selectedSlotGuilds: a
+      isTransfer: o,
+      selectedSlotGuilds: s
     })
   })
 }

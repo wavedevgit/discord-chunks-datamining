@@ -1,7 +1,8 @@
-/** Chunk was on 26434 **/
-/** chunk id: 502115, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 502115, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  FJ: () => s,
+  FJ: () => l,
   HL: () => u,
   Yc: () => d,
   xe: () => c
@@ -13,19 +14,19 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk304946 = require("./304946.js");
 
-function s(e) {
+function l(e) {
   let {
     message: t,
     compact: i,
-    onClick: s
+    onClick: l
   } = e;
-  return (0, r.jsx)(l.Z, {
+  return (0, r.jsx)(a.Z, {
     icon: n(508933),
     timestamp: t.timestamp,
     compact: i,
-    contentClassName: a.messageContent,
+    contentClassName: s.messageContent,
     children: o.intl.format(o.t.bYdG3d, {
-      onClick: s
+      onClick: l
     })
   })
 }
@@ -35,11 +36,11 @@ function c(e) {
     message: t,
     compact: i
   } = e;
-  return (0, r.jsx)(l.Z, {
+  return (0, r.jsx)(a.Z, {
     icon: n(324606),
     timestamp: t.timestamp,
     compact: i,
-    contentClassName: a.messageContent,
+    contentClassName: s.messageContent,
     children: o.intl.string(o.t.tu6tOT)
   })
 }
@@ -49,17 +50,17 @@ function u(e) {
     message: t,
     compact: n
   } = e;
-  return (0, r.jsx)(l.Z, {
+  return (0, r.jsx)(a.Z, {
     iconNode: (0, r.jsx)(i.Mgn, {
       size: "custom",
       width: 20,
       height: 20,
       color: "currentColor",
-      className: a.alertIcon
+      className: s.alertIcon
     }),
     timestamp: t.timestamp,
     compact: n,
-    contentClassName: a.messageContent,
+    contentClassName: s.messageContent,
     children: o.intl.string(o.t.vzfXqq)
   })
 }
@@ -69,17 +70,17 @@ function d(e) {
     message: t,
     compact: n
   } = e;
-  return (0, r.jsx)(l.Z, {
+  return (0, r.jsx)(a.Z, {
     iconNode: (0, r.jsx)(i.Mgn, {
       size: "custom",
       width: 20,
       height: 20,
       color: "currentColor",
-      className: a.alertIcon
+      className: s.alertIcon
     }),
     timestamp: t.timestamp,
     compact: n,
-    contentClassName: a.messageContent,
+    contentClassName: s.messageContent,
     children: o.intl.string(o.t["/Tfvyc"])
   })
 }

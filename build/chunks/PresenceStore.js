@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => et,
-  f: () => L
+  f: () => x
 }), require("./539854.js"), require("./388685.js"), require("./361932.js"), require("./187205.js"), require("./583741.js"), require("./642613.js");
 var r, Chunk348327 = require("./348327.js"),
   a = require.n(Chunk348327),
@@ -37,11 +37,11 @@ let y = Object.freeze([]),
   S = {},
   A = {};
 
-function N(e, t) {
+function C(e, t) {
   let n = O[e];
   return null != n ? n[t] : null
 }
-let C = e => {
+let N = e => {
   switch (e.type) {
     case E.IIU.CUSTOM_STATUS:
       return 4;
@@ -57,7 +57,7 @@ let C = e => {
 };
 
 function R(e, t) {
-  return C(t) - C(e)
+  return N(t) - N(e)
 }
 let P = e => +!!(0, u.Z)(e);
 
@@ -70,11 +70,11 @@ function D(e, t) {
   return (null != (n = t.created_at) ? n : 0) - (null != (r = e.created_at) ? r : 0)
 }
 
-function L(e, t) {
+function x(e, t) {
   return R(e, t) || w(e, t) || D(e, t)
 }
 
-function x(e, t) {
+function L(e, t) {
   if (t === m.default.getId()) return {
     visible: e,
     hidden: []
@@ -107,7 +107,7 @@ function x(e, t) {
   }
 }
 
-function M(e) {
+function j(e) {
   if (delete v[e], delete I[e], delete T[e], delete S[e], null == O[e]) return;
   let t = Object.values(O[e]),
     n = t.reduce((e, t) => {
@@ -117,23 +117,23 @@ function M(e) {
         a = null != e.activities ? e.activities.length : 0;
       return n > r || n === r && i > a ? t : e
     }, t[0]);
-  n.status !== E.Skl.OFFLINE || null != n.hiddenActivities && n.hiddenActivities.length > 0 ? (v[e] = n.status, I[e] = n.activities, T[e] = k(Object.values(t).flatMap(e => {
+  n.status !== E.Skl.OFFLINE || null != n.hiddenActivities && n.hiddenActivities.length > 0 ? (v[e] = n.status, I[e] = n.activities, T[e] = M(Object.values(t).flatMap(e => {
     var t;
     return null != (t = e.hiddenActivities) ? t : []
-  })), null != n.clientStatus && (S[e] = n.clientStatus)) : s().every(O[e], e => e.status === E.Skl.OFFLINE && (null == e.hiddenActivities || 0 === e.hiddenActivities.length)) ? delete O[e] : n.status === E.Skl.OFFLINE && t.some(e => null != e.hiddenActivities && e.hiddenActivities.length > 0) && (T[e] = k(Object.values(t).flatMap(e => {
+  })), null != n.clientStatus && (S[e] = n.clientStatus)) : s().every(O[e], e => e.status === E.Skl.OFFLINE && (null == e.hiddenActivities || 0 === e.hiddenActivities.length)) ? delete O[e] : n.status === E.Skl.OFFLINE && t.some(e => null != e.hiddenActivities && e.hiddenActivities.length > 0) && (T[e] = M(Object.values(t).flatMap(e => {
     var t;
     return null != (t = e.hiddenActivities) ? t : []
   })))
 }
 
-function k(e) {
+function M(e) {
   return 0 === e.length ? e : [...new Map([...e].reverse().map(e => {
     var t;
     return ["".concat(e.application_id, ":").concat(null == (t = e.party) ? true : t.id), e]
   })).values()]
 }
 
-function j(e) {
+function k(e) {
   let t = O[e];
   if (null == t) return;
   let n = s().maxBy(Object.values(t), e => e.processedAtTimestamp);
@@ -171,7 +171,7 @@ function U(e) {
     let {
       visible: e,
       hidden: c
-    } = x(o.length > 1 ? [...o].sort(L) : o, n), d = k([...null != s ? s : [], ...c]), f = u[t];
+    } = L(o.length > 1 ? [...o].sort(x) : o, n), d = M([...null != s ? s : [], ...c]), f = u[t];
     o = null != f && a()(f.activities, e) ? f.activities : e, u[t] = {
       status: r,
       clientStatus: i,
@@ -180,7 +180,7 @@ function U(e) {
       processedAtTimestamp: l
     }
   }
-  return delete A[n], M(n), true
+  return delete A[n], j(n), true
 }
 
 function G(e) {
@@ -211,7 +211,7 @@ function G(e) {
     let {
       visible: e,
       hidden: l
-    } = x(a.length > 1 ? [...a].sort(L) : a, n), u = k([...null != o ? o : [], ...l]);
+    } = L(a.length > 1 ? [...a].sort(x) : a, n), u = M([...null != o ? o : [], ...l]);
     c[t] = {
       status: r,
       clientStatus: i,
@@ -226,18 +226,18 @@ function B(e, t) {
   if (t === m.default.getId()) returnfalse;
   let n = O[t];
   if (null == n || null == n[e]) returnfalse;
-  delete n[e], 0 === Object.keys(n).length && delete O[t], M(t)
-}
-
-function V(e) {
-  for (let t of h.default.keys(O)) B(e, t)
-}
-
-function F() {
-  returntrue
+  delete n[e], 0 === Object.keys(n).length && delete O[t], j(t)
 }
 
 function Z(e) {
+  for (let t of h.default.keys(O)) B(e, t)
+}
+
+function V() {
+  returntrue
+}
+
+function F(e) {
   let {
     guilds: t,
     presences: n
@@ -290,7 +290,7 @@ function Z(e) {
       hiddenActivities: o,
       processedAtTimestamp: s
     }), i.add(t.id))
-  }), i.delete(r), i.forEach(j)
+  }), i.delete(r), i.forEach(k)
 }
 
 function H(e) {
@@ -304,7 +304,7 @@ function Y(e) {
   let {
     presences: t
   } = e;
-  V(E.ME), t.forEach(e => {
+  Z(E.ME), t.forEach(e => {
     let {
       user: t,
       status: n,
@@ -354,7 +354,7 @@ function K(e) {
   let {
     guild: t
   } = e;
-  V(t.id)
+  Z(t.id)
 }
 
 function z(e) {
@@ -430,7 +430,7 @@ function Q(e) {
 function J(e) {
   let t = m.default.getId();
   if (v[t] === e.status && I[t] === e.activities && T[t] === e.hiddenActivities) returnfalse;
-  v[t] = e.status, I[t] = [...e.activities].sort(L), T[t] = [...e.hiddenActivities].sort(L), delete A[t]
+  v[t] = e.status, I[t] = [...e.activities].sort(x), T[t] = [...e.hiddenActivities].sort(x), delete A[t]
 }
 
 function $(e) {
@@ -445,7 +445,7 @@ class ee extends(r = Chunk442837.ZP.Store) {
     this.waitFor(Chunk314897.default, Chunk106301.Z)
   }
   setCurrentUserOnConnectionOpen(e, t) {
-    v[m.default.getId()] = e, I[m.default.getId()] = [...t].sort(L)
+    v[m.default.getId()] = e, I[m.default.getId()] = [...t].sort(x)
   }
   getStatus(e) {
     var t, n;
@@ -453,7 +453,7 @@ class ee extends(r = Chunk442837.ZP.Store) {
       i = arguments.length > 2 && true !== arguments[2] ? arguments[2] : E.Skl.OFFLINE,
       a = g.default.getUser(e);
     if (null != a && a.hasFlag(E.xW$.BOT_HTTP_INTERACTIONS) && (i = E.Skl.UNKNOWN), null == r) return null != (t = v[e]) ? t : i;
-    let o = N(e, r);
+    let o = C(e, r);
     return null != (n = null == o ? true : o.status) ? n : i
   }
   getActivities(e) {
@@ -462,13 +462,13 @@ class ee extends(r = Chunk442837.ZP.Store) {
       var n;
       return null != (n = I[e]) ? n : y
     }
-    let r = N(e, t);
+    let r = C(e, t);
     return null == r || null == r.activities ? y : r.activities
   }
   getHiddenActivities(e) {
     var t, n, r;
     let i = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null;
-    return null == i ? null != (n = T[e]) ? n : y : null != (r = null == (t = N(e, i)) ? true : t.hiddenActivities) ? r : y
+    return null == i ? null != (n = T[e]) ? n : y : null != (r = null == (t = C(e, i)) ? true : t.hiddenActivities) ? r : y
   }
   getPrimaryActivity(e) {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null;
@@ -520,8 +520,8 @@ class ee extends(r = Chunk442837.ZP.Store) {
 }
 b(ee, "displayName", "PresenceStore");
 let et = new ee(Chunk570140.Z, {
-  CONNECTION_OPEN: F,
-  CONNECTION_OPEN_SUPPLEMENTAL: Z,
+  CONNECTION_OPEN: V,
+  CONNECTION_OPEN_SUPPLEMENTAL: F,
   OVERLAY_INITIALIZE: H,
   GUILD_CREATE: W,
   GUILD_DELETE: K,

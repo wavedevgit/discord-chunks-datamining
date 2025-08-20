@@ -33,14 +33,14 @@ let f = e => {
   } = (0, o.Z)({
     isTryItOut: m,
     guildId: f
-  }), S = h && true !== T && true !== v && v === (null == n ? true : n.id), A = null != f && null === T, N = (0, u.Z)(S ? A ? null == n ? true : n.avatarDecoration : null != T ? T : I : null != I ? I : null == n ? true : n.avatarDecoration), C = r.useMemo(() => (0, c.NZ)({
-    avatarDecoration: true !== g ? g : N,
+  }), S = h && true !== T && true !== v && v === (null == n ? true : n.id), A = null != f && null === T, C = (0, u.Z)(S ? A ? null == n ? true : n.avatarDecoration : null != T ? T : I : null != I ? I : null == n ? true : n.avatarDecoration), N = r.useMemo(() => (0, c.NZ)({
+    avatarDecoration: true !== g ? g : C,
     canAnimate: y,
     size: _
-  }), [N, y, _, g]);
+  }), [C, y, _, g]);
   return {
     avatarPlaceholderSrc: d,
-    avatarDecorationSrc: C,
+    avatarDecorationSrc: N,
     isAvatarDecorationAnimating: y,
     eventHandlers: {
       onMouseEnter: r.useCallback(() => b(true), []),

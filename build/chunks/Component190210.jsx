@@ -1,4 +1,4 @@
-/** Chunk was on 36499 **/
+/** Chunk was on 5665 **/
 /** chunk id: 190210, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => en
@@ -112,7 +112,7 @@ let en = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
   let {
     textValue: p,
     richValue: g,
-    className: O,
+    className: j,
     id: S,
     required: P,
     disabled: I,
@@ -137,8 +137,8 @@ let en = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
     autoCompletePosition: eC,
     children: ex,
     disableThemedBackground: ev = false,
-    emojiPickerCloseOnModalOuterClick: ej,
-    parentModalKey: eO
+    emojiPickerCloseOnModalOuterClick: eO,
+    parentModalKey: ej
   } = e, eE = v.Z.useField("channelDrafts")[D.id], eS = null != (l = null == eE ? true : eE.title) ? l : "", eP = null == eE ? true : eE.heroFile, eI = null == (o = null == eE ? true : eE.publish) || o, eZ = null == (u = null == eE ? true : eE.createThread) || u;
   s()(null != G, "chat input type must be set");
   let {
@@ -297,13 +297,13 @@ let en = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
       heroFile: null
     })
   }, [D.id, eP, G.drafts.type]);
-  return (0, r.jsx)(j.f6, {
+  return (0, r.jsx)(O.f6, {
     value: eY,
     children: (0, r.jsxs)(_.Gt, {
       value: eT,
       children: [(0, r.jsxs)("div", {
         ref: eN,
-        className: a()(O, Q.channelTextArea),
+        className: a()(j, Q.channelTextArea),
         onMouseDown: tt,
         children: [(0, r.jsx)("div", {
           ref: eR,
@@ -488,8 +488,8 @@ let en = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
         onSelectEmoji: tn,
         onSelectSticker: ti,
         channel: D,
-        closeOnModalOuterClick: ej,
-        parentModalKey: eO,
+        closeOnModalOuterClick: eO,
+        parentModalKey: ej,
         position: "top",
         align: "right",
         positionLayerClassName: Q.expressionPickerPositionLayer
@@ -558,7 +558,7 @@ function ei(e) {
       src: l,
       alt: K.intl.string(K.t["2ePvR0"]),
       className: X.heroImage
-    }), o ? (0, r.jsx)(O.ZP, {
+    }), o ? (0, r.jsx)(j.ZP, {
       className: X.heroOverlay,
       children: (0, r.jsx)(G.Z, {
         tooltip: K.intl.string(K.t.VjC219),

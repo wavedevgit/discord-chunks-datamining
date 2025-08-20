@@ -2,10 +2,10 @@
 /** chunk id: 80932, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $K: () => N,
+  $K: () => C,
   OQ: () => O,
   RE: () => I,
-  Xe: () => C,
+  Xe: () => N,
   dv: () => T,
   rS: () => v,
   t0: () => y
@@ -131,7 +131,7 @@ function A(e) {
   return null == e ? null : null != (r = null != (n = e.id) ? n : null == (t = u.ZP.convertSurrogateToBase(e.surrogates)) ? true : t.name) ? r : e.name
 }
 
-function N(e) {
+function C(e) {
   let t = A(e);
   null != t && _.DZ.updateAsync("favoriteEmojis", e => (e.emojis = S(e.emojis), i().size(e.emojis) >= E.oX) ? (m.Z.show({
     title: b.intl.string(b.t["+XYXtb"]),
@@ -141,7 +141,7 @@ function N(e) {
   }), false) : !e.emojis.includes(t) && void e.emojis.push(t), E.fy.INFREQUENT_USER_ACTION)
 }
 
-function C(e) {
+function N(e) {
   let t = A(e);
   null != t && _.DZ.updateAsync("favoriteEmojis", e => {
     if (e.emojis = S(e.emojis), !e.emojis.includes(t)) returnfalse;

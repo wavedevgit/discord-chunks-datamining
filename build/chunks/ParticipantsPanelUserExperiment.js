@@ -1,7 +1,8 @@
-/** Chunk was on 54157 **/
-/** chunk id: 185935, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 185935, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => s
+  Z: () => i
 });
 let r = (0, require("./818083.js").B)({
   kind: "user",
@@ -19,6 +20,6 @@ let r = (0, require("./818083.js").B)({
   }]
 });
 
-function s(e) {
+function i(e) {
   return r.useExperiment(e)
 }

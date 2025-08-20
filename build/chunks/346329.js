@@ -1,11 +1,12 @@
-/** Chunk was on 6380 **/
-/** chunk id: 346329, original params: t,e,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 346329, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.r(exports), require.d(exports, {
-  installApplication: () => p,
-  performDefaultLibraryApplicationAction: () => y,
+  installApplication: () => f,
+  performDefaultLibraryApplicationAction: () => h,
   playApplication: () => Chunk696748.a,
-  repairApplication: () => f,
-  updateApplication: () => h
+  repairApplication: () => p,
+  updateApplication: () => _
 });
 var Chunk51025 = require("./51025.js"),
   Chunk696748 = require("./696748.jsx"),
@@ -17,37 +18,37 @@ var Chunk51025 = require("./51025.js"),
   Chunk702523 = require("./702523.jsx"),
   Chunk981631 = require("./981631.js");
 
-function p(t, e, n) {
-  let i = l.Z.getApplication(t);
-  if (null == i) return;
-  let r = o.Z.getTargetBuildId(i.id, e),
-    a = o.Z.getTargetManifests(i.id, e);
-  null != r && null != a && null != d.L && (0, d.L)(i, e, r, a, n)
+function f(e, t, n) {
+  let r = a.Z.getApplication(e);
+  if (null == r) return;
+  let i = o.Z.getTargetBuildId(r.id, t),
+    s = o.Z.getTargetManifests(r.id, t);
+  null != i && null != s && null != u.L && (0, u.L)(r, t, i, s, n)
 }
 
-function h(t, e) {
-  let n = l.Z.getApplication(t);
-  if (null != n) return i.li(n, e, o.Z.getTargetBuildId(n.id, e), o.Z.getTargetManifests(n.id, e))
+function _(e, t) {
+  let n = a.Z.getApplication(e);
+  if (null != n) return r.li(n, t, o.Z.getTargetBuildId(n.id, t), o.Z.getTargetManifests(n.id, t))
 }
 
-function f(t, e, n) {
-  let r = l.Z.getApplication(t);
-  if (null != r) return i.cG(r, e, n)
+function p(e, t, n) {
+  let i = a.Z.getApplication(e);
+  if (null != i) return r.cG(i, t, n)
 }
 
-function y(t, e) {
-  let n = (0, a.i)(t, c.Z, s.Z),
+function h(e, t) {
+  let n = (0, s.i)(e, l.Z, c.Z),
     {
-      analyticsParams: i
-    } = e;
+      analyticsParams: r
+    } = t;
   switch (n) {
-    case u.apO.PLAY:
-      return (0, r.a)(t.id, t, {
-        analyticsParams: i
+    case d.apO.PLAY:
+      return (0, i.a)(e.id, e, {
+        analyticsParams: r
       });
-    case u.apO.INSTALL:
-      return p(t.id, t.branchId, i.source);
-    case u.apO.UPDATE:
-      return h(t.id, t.branchId)
+    case d.apO.INSTALL:
+      return f(e.id, e.branchId, r.source);
+    case d.apO.UPDATE:
+      return _(e.id, e.branchId)
   }
 }

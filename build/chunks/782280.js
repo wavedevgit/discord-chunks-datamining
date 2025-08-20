@@ -1,5 +1,5 @@
-/** Chunk was on 75347 **/
-/** chunk id: 782280, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 782280, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 module.exports = {
   avatarBackground: "avatarBackground_eb2508",

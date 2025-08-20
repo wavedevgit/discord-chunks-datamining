@@ -21,7 +21,7 @@ function f(e) {
     onClose: n,
     questContent: f,
     quest: g
-  } = e, j = (e => {
+  } = e, p = (e => {
     switch (e) {
       case c.jn.QUEST_BAR:
       case c.jn.QUEST_BAR_V2:
@@ -40,12 +40,12 @@ function f(e) {
   })(f), _ = s.useMemo(() => {
     var e;
     return (0, l.Fs)({
-      isTargetedDisclosure: null != j,
+      isTargetedDisclosure: null != p,
       gamePublisher: g.config.messages.gamePublisher,
       gameTitle: g.config.messages.gameTitle,
       cosponsorName: null == (e = g.config.cosponsorMetadata) ? true : e.name
     })
-  }, [g, j]);
+  }, [g, p]);
   return (0, r.jsxs)(a.Y0X, {
     transitionState: t,
     size: a.CgR.DYNAMIC,
@@ -78,8 +78,8 @@ function f(e) {
         color: "header-secondary",
         className: u.upperBodyText,
         children: _
-      }), (0, r.jsx)(p, {
-        targetedTraits: j
+      }), (0, r.jsx)(j, {
+        targetedTraits: p
       }), (0, r.jsx)(a.Text, {
         variant: "text-xs/medium",
         color: "text-muted",
@@ -106,20 +106,20 @@ function g(e) {
   } = e;
   return (0, r.jsxs)("ul", {
     className: u.targetList,
-    children: [t && (0, r.jsx)(j, {
+    children: [t && (0, r.jsx)(p, {
       icon: a.enf,
       children: m.intl.string(m.t.xQSdPj)
-    }), n && (0, r.jsx)(j, {
+    }), n && (0, r.jsx)(p, {
       icon: a.tBG,
       children: m.intl.string(m.t.mYt7hY)
-    }), s && (0, r.jsx)(j, {
+    }), s && (0, r.jsx)(p, {
       icon: a.iWm,
       children: m.intl.string(m.t.XAsWxc)
     })]
   })
 }
 
-function p(e) {
+function j(e) {
   let {
     targetedTraits: t
   } = e;
@@ -143,7 +143,7 @@ function p(e) {
   }({}, t)) : null
 }
 
-function j(e) {
+function p(e) {
   let {
     icon: t,
     children: n

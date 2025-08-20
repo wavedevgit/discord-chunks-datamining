@@ -1,7 +1,7 @@
-/** Chunk was on 26475 **/
+/** Chunk was on 40226 **/
 /** chunk id: 778231, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => x
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,65 +17,65 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk719706 = require("./719706.js"),
   Chunk970952 = require("./970952.js");
-let b = e => {
+let x = e => {
   var t, n;
   let {
-    entry: b
+    entry: x
   } = e, {
-    name: h
-  } = b, x = (0, i.e7)([_.Z], () => _.Z.getNewestTokenForApplication(b.id)), v = null != (n = b.getIconURL(40)) ? n : f, j = (0, d.Z)({
-    application: b
-  }), y = a.useRef(false);
-  a.useEffect(() => {
-    y.current || (l.Z.fetch(), y.current = true)
+    name: b
+  } = x, h = (0, l.e7)([m.Z], () => m.Z.getNewestTokenForApplication(x.id)), v = null != (n = x.getIconURL(40)) ? n : g, j = (0, d.Z)({
+    application: x
+  }), y = i.useRef(false);
+  i.useEffect(() => {
+    y.current || (o.Z.fetch(), y.current = true)
   }, []);
-  let C = null != x ? m.default.extractTimestamp(x.id) : true;
+  let O = null != h ? _.default.extractTimestamp(h.id) : true;
   return (0, r.jsxs)("div", {
-    className: g.container,
-    children: [(0, r.jsx)(o.X6q, {
-      className: g.header,
+    className: f.container,
+    children: [(0, r.jsx)(a.X6q, {
+      className: f.header,
       variant: "heading-sm/semibold",
       children: p.intl.string(p.t["aYfK//"])
     }), (0, r.jsx)("div", {
-      className: g.appContainer,
+      className: f.appContainer,
       children: (0, r.jsxs)("div", {
-        className: g.appInfo,
+        className: f.appInfo,
         children: [(0, r.jsx)(s.ZP, {
           mask: s.ZP.Masks.AVATAR_DEFAULT,
           width: 40,
           height: 40,
-          className: g.appIconMask,
+          className: f.appIconMask,
           children: (0, r.jsx)("img", {
             src: v,
             alt: "",
-            className: g.appIcon
+            className: f.appIcon
           })
         }), (0, r.jsxs)("div", {
-          className: g.textContainer,
-          children: [(0, r.jsx)(o.Text, {
+          className: f.textContainer,
+          children: [(0, r.jsx)(a.Text, {
             color: "header-primary",
             variant: "text-md/medium",
-            children: h
+            children: b
           }), j.length > 0 ? (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)(o.Text, {
+            children: [(0, r.jsx)(a.Text, {
               color: "text-default",
               variant: "text-md/normal",
               children: (0, u.Z)(j.length)
             }), (0, r.jsx)(c.Z, {
-              className: g.guildStack,
+              className: f.guildStack,
               guilds: j,
               maxGuilds: 6
             })]
           }) : (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)(o.Text, {
+            children: [(0, r.jsx)(a.Text, {
               color: "text-default",
               variant: "text-md/normal",
-              children: null == (t = b.bot) ? true : t.tag
-            }), null != C && (0, r.jsx)(o.Text, {
+              children: null == (t = x.bot) ? true : t.tag
+            }), null != O && (0, r.jsx)(a.Text, {
               color: "text-default",
               variant: "text-md/normal",
               children: p.intl.formatToPlainString(p.t.C9rUOz, {
-                authorizedAt: C
+                authorizedAt: O
               })
             })]
           })]

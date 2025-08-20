@@ -135,13 +135,13 @@ function A(e) {
   null != n && "" !== n && r.pathLabels[t] !== n && b(t, n), i && r.defaultInstallationPath !== t && (r.defaultInstallationPath = t)
 }
 
-function N(e) {
+function C(e) {
   let {
     metadataPayload: t
   } = e;
   for (let e in t) g(e, t[e])
 }
-class C extends(i = Chunk442837.ZP.PersistedStore) {
+class N extends(i = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     let t = f({}, e);
     null == t.installations && (t.installations = {}), null == t.defaultInstallationPath && (t.defaultInstallationPath = m), null == t.installationPaths ? t.installationPaths = new Set([t.defaultInstallationPath]) : t.installationPaths = new Set(Array.from(t.installationPaths)), null == t.pathLabels && (t.pathLabels = {}), r = t
@@ -181,14 +181,14 @@ class C extends(i = Chunk442837.ZP.PersistedStore) {
     return e === m ? u.intl.string(u.t.VdDrjo) : null != (n = null != (t = s.Z.fileManager.basename(e)) ? t : e.replace(/[/\\]+$/, "").split(/[/\\]+/g).slice(false)[0]) ? n : "?"
   }
 }
-d(C, "displayName", "InstallationManagerStore"), d(C, "persistKey", "InstallationManagerStore");
-let R = new C(Chunk570140.Z, {
+d(N, "displayName", "InstallationManagerStore"), d(N, "persistKey", "InstallationManagerStore");
+let R = new N(Chunk570140.Z, {
   DISPATCH_APPLICATION_INSTALL: O,
   DISPATCH_APPLICATION_UNINSTALL: I,
   DISPATCH_APPLICATION_CANCEL: v,
   INSTALLATION_LOCATION_ADD: T,
   INSTALLATION_LOCATION_REMOVE: S,
   INSTALLATION_LOCATION_UPDATE: A,
-  INSTALLATION_LOCATION_FETCH_METADATA: N,
+  INSTALLATION_LOCATION_FETCH_METADATA: C,
   DISPATCH_APPLICATION_ADD_TO_INSTALLATIONS: O
 })

@@ -1,4 +1,4 @@
-/** Chunk was on 26475 **/
+/** Chunk was on 40226 **/
 /** chunk id: 273389, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -15,39 +15,39 @@ let c = e => {
       submitting: c,
       disableNext: d,
       onClick: u,
-      canNavigateBack: _,
-      onBackClicked: m,
+      canNavigateBack: m,
+      onBackClicked: _,
       isModeratorReport: p
     } = e,
-    g = a.useRef(null),
-    f = null != n && "cancel" !== n.type,
-    b = _ && (null == n ? true : n.type) !== "done",
-    h = f || b;
-  if (a.useEffect(() => {
+    f = i.useRef(null),
+    g = null != n && "cancel" !== n.type,
+    x = m && (null == n ? true : n.type) !== "done",
+    b = g || x;
+  if (i.useEffect(() => {
       if ((null == n ? true : n.type) === "submit" || (null == n ? true : n.type) === "done") {
         var e;
-        null == (e = g.current) || e.focus()
+        null == (e = f.current) || e.focus()
       }
-    }, [null == n ? true : n.type]), !h) return null;
-  let x = l.intl.string(l.t.i4jeWV);
-  return (null == n ? true : n.type) === "submit" ? (t = "critical-primary", x = p ? l.intl.string(s.default.ZUyreX) : l.intl.string(l.t["G+vU8/"])) : (null == n ? true : n.type) === "next" ? x = l.intl.string(l.t.PDTjLC) : (null == n ? true : n.type) === "cancel" && (x = l.intl.string(l.t["ETE/oK"]), t = "secondary"), (0, r.jsx)(i.mzw, {
+    }, [null == n ? true : n.type]), !b) return null;
+  let h = o.intl.string(o.t.i4jeWV);
+  return (null == n ? true : n.type) === "submit" ? (t = "critical-primary", h = p ? o.intl.string(s.default.ZUyreX) : o.intl.string(o.t["G+vU8/"])) : (null == n ? true : n.type) === "next" ? h = o.intl.string(o.t.PDTjLC) : (null == n ? true : n.type) === "cancel" && (h = o.intl.string(o.t["ETE/oK"]), t = "secondary"), (0, r.jsx)(l.mzw, {
     "data-migration-pending": true,
-    direction: o.Z.Direction.HORIZONTAL,
-    children: (0, r.jsxs)(i.hE2, {
-      fullWidth: b && f,
-      children: [b && (0, r.jsx)(i.zxk, {
-        onClick: m,
+    direction: a.Z.Direction.HORIZONTAL,
+    children: (0, r.jsxs)(l.hE2, {
+      fullWidth: x && g,
+      children: [x && (0, r.jsx)(l.zxk, {
+        onClick: _,
         variant: "secondary",
         disabled: c,
-        text: l.intl.string(l.t["13/7kZ"])
-      }), f && (0, r.jsx)(i.zxk, {
+        text: o.intl.string(o.t["13/7kZ"])
+      }), g && (0, r.jsx)(l.zxk, {
         onClick: () => {
           null != n && u(n)
         },
         variant: t,
         disabled: c || d,
-        buttonRef: g,
-        text: x
+        buttonRef: f,
+        text: h
       })]
     })
   })

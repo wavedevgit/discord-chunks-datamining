@@ -1,7 +1,7 @@
-/** Chunk was on 53893 **/
-/** chunk id: 686768, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 22447 **/
+/** chunk id: 686768, original params: n,t,e (module,exports,require) **/
 require.d(exports, {
-  default: () => N
+  default: () => b
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,82 +16,82 @@ var Chunk951288 = require("./951288.js"),
   Chunk800530 = require("./800530.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk740076 = require("./740076.js");
-let N = function(e) {
+let b = function(n) {
   let {
     transitionState: t,
-    entryPoint: n,
-    onClose: N
-  } = e, {
-    loading: p,
-    initiateAgeVerification: S
-  } = (0, d.WD)(N, true), L = o.useMemo(() => (0, r.Z)(), []);
-  o.useEffect(() => {
-    (0, _.lA)(L, _.d_.RETRY, n)
-  }, [L, n]);
-  let T = o.useMemo(() => [{
-    title: I.intl.string(I.t.FYkioq),
-    description: I.intl.string(I.t.xMfbR0),
-    buttonText: I.intl.string(I.t.RtOE1t),
+    entryPoint: e,
+    onClose: b
+  } = n, {
+    loading: h,
+    initiateAgeVerification: p
+  } = (0, u.WD)(b, true), j = r.useMemo(() => (0, i.Z)(), []);
+  r.useEffect(() => {
+    (0, d.lA)(j, d.d_.RETRY, e)
+  }, [j, e]);
+  let R = r.useMemo(() => [{
+    title: _.intl.string(_.t.FYkioq),
+    description: _.intl.string(_.t.xMfbR0),
+    buttonText: _.intl.string(_.t.RtOE1t),
     buttonVariant: "primary",
-    buttonIcon: s.Gr1,
-    buttonLoading: p,
+    buttonIcon: a.Gr1,
+    buttonLoading: h,
     onButtonPress: () => {
-      S(), (0, _.x3)(L, _.d_.RETRY, _.sU.GET_STARTED)
+      p(), (0, d.x3)(j, d.d_.RETRY, d.sU.GET_STARTED)
     }
   }, {
-    title: I.intl.string(I.t["LZO+HR"]),
-    description: I.intl.string(I.t.N2mHaG),
-    buttonText: I.intl.string(I.t["LZO+HR"]),
-    buttonIcon: s.Gr1,
+    title: _.intl.string(_.t["LZO+HR"]),
+    description: _.intl.string(_.t.N2mHaG),
+    buttonText: _.intl.string(_.t["LZO+HR"]),
+    buttonIcon: a.Gr1,
     onButtonPress: () => {
-      c.Z.openUrl(u.sQ.APPEALS_LINK), (0, _.x3)(L, _.d_.RETRY, _.sU.MANUAL_REVIEW_REQUEST)
+      c.Z.openUrl(m.sQ.APPEALS_LINK), (0, d.x3)(j, d.d_.RETRY, d.sU.MANUAL_REVIEW_REQUEST)
     }
-  }], [S, L, p]);
-  return (0, i.jsx)(s.Y0X, {
+  }], [p, j, h]);
+  return (0, o.jsx)(a.Y0X, {
     transitionState: t,
-    className: m.root,
+    className: f.root,
     parentComponent: "AgeVerificationRetryModal",
-    children: (0, i.jsxs)(s.hzk, {
-      className: m.content,
-      children: [(0, i.jsxs)("div", {
-        className: m.headersContainer,
-        children: [(0, i.jsx)(s.X6q, {
+    children: (0, o.jsxs)(a.hzk, {
+      className: f.content,
+      children: [(0, o.jsxs)("div", {
+        className: f.headersContainer,
+        children: [(0, o.jsx)(a.X6q, {
           variant: "heading-xl/bold",
-          children: I.intl.string(I.t["5l3R/v"])
-        }), (0, i.jsx)(s.X6q, {
+          children: _.intl.string(_.t["5l3R/v"])
+        }), (0, o.jsx)(a.X6q, {
           variant: "heading-md/medium",
           color: "text-default",
-          children: I.intl.string(I.t.O7SO0N)
-        }), (0, i.jsx)(s.olH, {
-          className: m.modalClose,
-          onClick: N
+          children: _.intl.string(_.t.O7SO0N)
+        }), (0, o.jsx)(a.olH, {
+          className: f.modalClose,
+          onClick: b
         })]
-      }), T.map((e, t) => (0, i.jsx)(l.JZ, function(e) {
+      }), R.map((n, t) => (0, o.jsx)(l.JZ, function(n) {
         for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {},
-            i = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), i.forEach(function(t) {
-            var i;
-            i = n[t], t in e ? Object.defineProperty(e, t, {
-              value: i,
+          var e = null != arguments[t] ? arguments[t] : {},
+            o = Object.keys(e);
+          "function" == typeof Object.getOwnPropertySymbols && (o = o.concat(Object.getOwnPropertySymbols(e).filter(function(n) {
+            return Object.getOwnPropertyDescriptor(e, n).enumerable
+          }))), o.forEach(function(t) {
+            var o;
+            o = e[t], t in n ? Object.defineProperty(n, t, {
+              value: o,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : e[t] = i
+            }) : n[t] = o
           })
         }
-        return e
+        return n
       }({
         buttonIconPosition: "end"
-      }, e), t)), (0, i.jsx)(s.Text, {
+      }, n), t)), (0, o.jsx)(a.Text, {
         variant: "text-xs/medium",
         color: "text-muted",
-        className: m.learnMore,
-        children: I.intl.format(I.t["L+FgkZ"], {
+        className: f.learnMore,
+        children: _.intl.format(_.t["L+FgkZ"], {
           handleOnHelpUrlHook: () => {
-            c.Z.openUrl(a.Z.getArticleURL(E.BhN.TIGGER_PAWTECT_LEARN_MORE)), (0, _.x3)(L, _.d_.RETRY, _.sU.LEARN_MORE)
+            c.Z.openUrl(s.Z.getArticleURL(x.BhN.TIGGER_PAWTECT_LEARN_MORE)), (0, d.x3)(j, d.d_.RETRY, d.sU.LEARN_MORE)
           }
         })
       })]

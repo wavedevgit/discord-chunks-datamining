@@ -7,8 +7,8 @@ require.d(exports, {
   Jc: () => A,
   LK: () => I,
   ON: () => y,
-  bP: () => C,
-  le: () => N,
+  bP: () => N,
+  le: () => C,
   oK: () => w,
   sD: () => v,
   x3: () => E,
@@ -85,7 +85,7 @@ function y(e, t) {
     s = t.subgameInfo,
     l = t.application,
     c = Number(null == (n = e.gameMetadata) ? true : n[u.wF.ROBLOX_TIME_STARTED]);
-  if ((isNaN(c) || 0 === c) && (c = null != (r = e.start) ? r : Date.now()), null == s) N(e) && (a.id = u.eB, a.name = f.EOG[f.GQo.ROBLOX]), a.gameMetadata = true, a.sku = true, a.start = c, a.lastFocused = Math.floor(c / 1e3);
+  if ((isNaN(c) || 0 === c) && (c = null != (r = e.start) ? r : Date.now()), null == s) C(e) && (a.id = u.eB, a.name = f.EOG[f.GQo.ROBLOX]), a.gameMetadata = true, a.sku = true, a.start = c, a.lastFocused = Math.floor(c / 1e3);
   else {
     let t = {};
     null != l && (0, o.ik)({
@@ -149,11 +149,11 @@ function A(e) {
   }), n
 }
 
-function N(e) {
+function C(e) {
   return e.distributor === f.GQo.ROBLOX && e.id !== u.eB
 }
 
-function C(e) {
+function N(e) {
   return e.thirdPartySkus.some(e => e.distributor === f.GQo.ROBLOX)
 }
 async function R(e) {

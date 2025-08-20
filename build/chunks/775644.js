@@ -1,5 +1,6 @@
-/** Chunk was on 26434 **/
-/** chunk id: 775644, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 775644, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   Z: () => c
 });
@@ -8,17 +9,17 @@ var Chunk544891 = require("./544891.js"),
   Chunk881052 = require("./881052.js"),
   Chunk122289 = require("./122289.js"),
   Chunk981631 = require("./981631.js");
-let s = Object.freeze({}),
+let l = Object.freeze({}),
   c = {
     redeemGiftCode: async function(e) {
       let {
         code: t,
-        options: n = s,
+        options: n = l,
         onRedeemed: c,
         onError: u
       } = e, {
         channelId: d = null,
-        paymentSource: p = null
+        paymentSource: f = null
       } = n;
       i.Z.dispatch({
         type: "GIFT_CODE_REDEEM",
@@ -26,11 +27,11 @@ let s = Object.freeze({}),
       });
       try {
         let e = await r.tn.post({
-          url: a.ANM.GIFT_CODE_REDEEM(t),
+          url: s.ANM.GIFT_CODE_REDEEM(t),
           body: {
             channel_id: d,
-            payment_source_id: null == p ? true : p.id,
-            gateway_checkout_context: await (0, o.cn)(p)
+            payment_source_id: null == f ? true : f.id,
+            gateway_checkout_context: await (0, o.cn)(f)
           },
           oldFormErrors: true,
           rejectWithError: false
@@ -44,7 +45,7 @@ let s = Object.freeze({}),
           entitlement: e
         }
       } catch (n) {
-        let e = new l.HF(n);
+        let e = new a.HF(n);
         throw i.Z.dispatch({
           type: "GIFT_CODE_REDEEM_FAILURE",
           code: t,

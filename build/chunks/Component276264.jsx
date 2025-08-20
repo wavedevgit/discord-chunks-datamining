@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => J,
-  x: () => Z
+  x: () => F
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -40,7 +40,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk894723 = require("./894723.js");
 
-function j(e, t, n) {
+function k(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -56,7 +56,7 @@ function U(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      j(e, t, n[t])
+      k(e, t, n[t])
     })
   }
   return e
@@ -79,9 +79,9 @@ function B(e, t) {
   }), e
 }
 
-function V(e, t) {
+function Z(e, t) {
   if (null == e) return {};
-  var n, r, i = F(e, t);
+  var n, r, i = V(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -89,14 +89,14 @@ function V(e, t) {
   return i
 }
 
-function F(e, t) {
+function V(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let Z = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
+let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
   H = 3,
   Y = Chunk647438.memo(function(e) {
     let {
@@ -105,12 +105,12 @@ let Z = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       ownerTooltipText: i
     } = e;
     return null != t && t && null == n ? (0, r.jsx)(c.ua7, {
-      text: null != i ? i : M.intl.string(M.t.pclUFB),
+      text: null != i ? i : j.intl.string(j.t.pclUFB),
       children: e => (0, r.jsx)(c.CEn, B(U({
         size: "md",
         color: "currentColor"
       }, e), {
-        className: k.ownerIcon
+        className: M.ownerIcon
       }))
     }) : null
   }),
@@ -120,7 +120,7 @@ let Z = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       onClickPremiumGuildIcon: n
     } = e;
     return null == t ? null : (0, r.jsx)(c.ua7, {
-      text: M.intl.formatToPlainString(M.t.IWkAq6, {
+      text: j.intl.formatToPlainString(j.t.IWkAq6, {
         date: t
       }),
       children: e => (0, r.jsx)(c.P3F, {
@@ -128,7 +128,7 @@ let Z = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
         tabIndex: false,
         children: (0, r.jsx)(c.$Eu, B(U({}, e), {
           color: c.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK,
-          className: k.premiumIcon
+          className: M.premiumIcon
         }))
       })
     })
@@ -138,9 +138,9 @@ let Z = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       user: t
     } = e;
     if (null == t || !t.bot) return null;
-    let n = L.Hb.BOT;
+    let n = x.Hb.BOT;
     return (0, r.jsx)(h.Z, {
-      className: k.botTag,
+      className: M.botTag,
       type: n,
       verified: t.isVerifiedBot()
     })
@@ -191,7 +191,7 @@ let Z = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
         colorString: n,
         colorStrings: i,
         name: a,
-        className: k.name,
+        className: M.name,
         displayNameStylesFont: d,
         animateRoleGradient: u
       }), !o && (0, r.jsx)(v.ZP, {
@@ -199,7 +199,7 @@ let Z = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
         userId: null == s ? true : s.id,
         contextGuildId: l,
         disableGuildProfile: true,
-        className: k.clanTag
+        className: M.clanTag
       })]
     })
   }),
@@ -232,7 +232,7 @@ let Z = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       })), (0, r.jsx)(I.Z, {
         confettiSpawnRef: p,
         shouldFire: d && null != h && t.id !== h.id,
-        confettiLocation: x.Hn.MEMBER_USER
+        confettiLocation: L.Hn.MEMBER_USER
       })]
     })
   }),
@@ -292,13 +292,13 @@ let Z = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       activities: v,
       applicationStream: I,
       status: P,
-      shouldAnimateStatus: L = false,
-      isMobile: x,
-      premiumSince: M,
-      channel: j,
+      shouldAnimateStatus: x = false,
+      isMobile: L,
+      premiumSince: j,
+      channel: k,
       guildId: G,
-      className: F,
-      nameplate: Z,
+      className: V,
+      nameplate: F,
       hideClanTag: Y = false,
       hideSubtext: W = false,
       hideTooltip: K = false,
@@ -327,21 +327,21 @@ let Z = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
     }), eT = eI ? ev : true, {
       avatarDecorationSrc: eS,
       avatarSrc: eA,
-      eventHandlers: eN
-    } = (0, C.Z)({
+      eventHandlers: eC
+    } = (0, N.Z)({
       userId: ed,
       size: c.EFr.SIZE_32,
       animateOnHover: !(n || em),
       guildId: G
-    }), eC = null != ec ? ec : {}, {
+    }), eN = null != ec ? ec : {}, {
       onFocus: eR
-    } = eC, eP = V(eC, ["onFocus"]), ew = (0, T.X7)(G, ed, null != l ? l : null), eD = (0, s.e7)([A.Z], () => null != A.Z.questEnrollmentBlockedUntil, []), [eL, ex] = i.useState(false);
+    } = eN, eP = Z(eN, ["onFocus"]), ew = (0, T.X7)(G, ed, null != l ? l : null), eD = (0, s.e7)([A.Z], () => null != A.Z.questEnrollmentBlockedUntil, []), [ex, eL] = i.useState(false);
     i.useEffect(() => {
-      n && ex(false)
+      n && eL(false)
     }, [n]);
-    let eM = (0, S.fN)(v),
-      ek = null != eM && !e_ && n && !eL,
-      ej = i.useCallback(() => {
+    let ej = (0, S.fN)(v),
+      eM = null != ej && !e_ && n && !ex,
+      ek = i.useCallback(() => {
         eg(true)
       }, []),
       eU = i.useCallback(() => {
@@ -353,26 +353,26 @@ let Z = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       eB = i.useCallback(() => {
         eb(false)
       }, []),
-      eV = i.useCallback(e => {
+      eZ = i.useCallback(e => {
         eO(e)
       }, []),
-      eF = i.useCallback(e => (0, r.jsx)(N.Z, B(U({
+      eV = i.useCallback(e => (0, r.jsx)(C.Z, B(U({
         name: null != b ? b : ef,
-        quest: eM,
+        quest: ej,
         memberListItemRef: eh,
         applicationStream: I,
         isQuestEnrollmentBlocked: eD
       }, e), {
-        closePopout: () => ex(true)
-      })), [eM, eh, I, eD, b, ef]);
+        closePopout: () => eL(true)
+      })), [ej, eh, I, eD, b, ef]);
     return null == y ? (0, r.jsx)(m.Z, {
       avatarSize: c.EFr.SIZE_32,
-      className: k.placeholder
+      className: M.placeholder
     }) : (0, r.jsx)(c.yRy, {
       targetElementRef: eh,
-      renderPopout: eF,
+      renderPopout: eV,
       position: "bottom",
-      shouldShow: ek,
+      shouldShow: eM,
       nudgeAlignIntoViewport: false,
       useRawTargetDimensions: true,
       animation: c.yRy.Animation.NONE,
@@ -380,21 +380,21 @@ let Z = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       children: () => (0, r.jsx)(g.Z, U({
         ref: eh,
         selected: n,
-        className: o()(k.member, F, {
-          [k.offline]: P === D.Skl.OFFLINE && !n,
-          [k.flatBottom]: ek
+        className: o()(M.member, V, {
+          [M.offline]: P === D.Skl.OFFLINE && !n,
+          [M.flatBottom]: eM
         }),
-        innerClassName: k.memberInner,
+        innerClassName: M.memberInner,
         onClick: ee,
         onKeyDown: $,
         onMouseDown: J,
         onContextMenu: et,
-        onMouseEnter: ej,
+        onMouseEnter: ek,
         onMouseLeave: eU,
         onBlur: eB,
         hovered: em,
         name: null == h ? (0, r.jsx)("span", {
-          className: k.username,
+          className: M.username,
           children: (0, r.jsx)(q, {
             colorRoleName: u,
             colorString: null != a ? a : null,
@@ -408,7 +408,7 @@ let Z = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
         }) : (0, r.jsx)(c.ua7, {
           text: h,
           children: e => (0, r.jsx)("span", B(U({}, e), {
-            className: o()(k.username, k.lostPermission),
+            className: o()(M.username, M.lostPermission),
             children: (0, r.jsx)(q, {
               colorRoleName: u,
               colorString: null != a ? a : null,
@@ -423,19 +423,19 @@ let Z = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
         }),
         avatar: (0, r.jsx)(X, {
           user: y,
-          shouldAnimateStatus: L,
+          shouldAnimateStatus: x,
           activities: v,
           status: P,
-          eventHandlers: eN,
+          eventHandlers: eC,
           avatarSrc: eA,
-          isMobile: x,
+          isMobile: L,
           isTyping: E,
           avatarDecorationSrc: eS,
-          handleSetTypingRef: eV,
+          handleSetTypingRef: eZ,
           typingRef: ey,
           currentUser: O
         }),
-        nameplate: Z,
+        nameplate: F,
         subText: (0, r.jsx)(Q, {
           hideSubtext: W,
           activities: v,
@@ -443,9 +443,9 @@ let Z = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
           applicationStream: I,
           voiceStatusChannel: eT,
           user: y,
-          channel: j,
+          channel: k,
           isHoveringOrFocusing: em || eE,
-          quest: eM,
+          quest: ej,
           hideTooltip: K
         }),
         decorators: (0, r.jsx)(z, {
@@ -453,7 +453,7 @@ let Z = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
           isOwner: f,
           lostPermissionTooltipText: h,
           ownerTooltipText: p,
-          premiumSince: M,
+          premiumSince: j,
           onClickPremiumGuildIcon: en
         }),
         "aria-controls": er,

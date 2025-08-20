@@ -2,19 +2,19 @@
 /** chunk id: 675478, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  BU: () => L,
-  Cd: () => j,
+  BU: () => x,
+  Cd: () => k,
   DZ: () => P,
   PS: () => D,
-  T6: () => N,
+  T6: () => C,
   Z1: () => B,
   aj: () => w,
-  bE: () => F,
+  bE: () => V,
   fy: () => Chunk526761.fy,
   hW: () => R,
   m9: () => U,
-  nm: () => x,
-  sr: () => V,
+  nm: () => L,
+  sr: () => Z,
   w9: () => G
 }), require("./415506.js"), require("./388685.js"), require("./410992.js"), require("./227481.js"), require("./730884.js"), require("./20464.js"), require("./341884.js"), require("./364341.js"), require("./629680.js"), require("./505025.js"), require("./918970.js"), require("./121784.js"), require("./644351.js"), require("./146733.js");
 var Chunk512722 = require("./512722.js"),
@@ -62,7 +62,7 @@ let T = 5e3,
   S = "UserSettingsProtoLastWriteTimes",
   A = Date.now();
 
-function N() {}
+function C() {}
 Chunk570140.Z.subscribe("CONNECTION_OPEN", () => {
   A = Date.now()
 }), Chunk570140.Z.subscribe("CONNECTION_CLOSED", () => {
@@ -72,7 +72,7 @@ Chunk570140.Z.subscribe("CONNECTION_OPEN", () => {
 }), document.addEventListener("keydown", () => {
   A = 0
 }));
-class C {
+class N {
   getEditInfo() {
     return Chunk581883.Z.getFullState()[this.type]
   }
@@ -283,8 +283,8 @@ class C {
     }, this.logger = new d.Z(this.ProtoClass.typeName)
   }
 }
-let R = new C(Chunk524437.o8, Chunk526761.yP.PRELOADED_USER_SETTINGS),
-  P = new C(Chunk377108.ji, Chunk526761.yP.FRECENCY_AND_FAVORITES_SETTINGS),
+let R = new N(Chunk524437.o8, Chunk526761.yP.PRELOADED_USER_SETTINGS),
+  P = new N(Chunk377108.ji, Chunk526761.yP.FRECENCY_AND_FAVORITES_SETTINGS),
   w = {
     [Chunk526761.yP.PRELOADED_USER_SETTINGS]: R,
     [Chunk526761.yP.FRECENCY_AND_FAVORITES_SETTINGS]: P
@@ -294,29 +294,29 @@ function D(e, t, n) {
   return R.updateAsync("guilds", n => (0, b.u0)(n, e, t), n)
 }
 
-function L(e, t, n, r) {
+function x(e, t, n, r) {
   return D(e, e => (0, b.uL)(e, t, n), r)
 }
 
-function x(e) {
-  return M(e), R.updateAsync("userContent", t => {
+function L(e) {
+  return j(e), R.updateAsync("userContent", t => {
     if ((0, m.jl)(t.dismissedContents, e)) returnfalse;
     t.dismissedContents = (0, m.GV)(t.dismissedContents, e)
   }, y.fy.INFREQUENT_USER_ACTION)
 }
 
-function M(e) {
-  !E.Z.hasLoaded(y.yP.PRELOADED_USER_SETTINGS) && (k(e) || p.default.track(O.rMx.DISMISSIBLE_CONTENT_DISMISSED_BEFORE_CONNECTION_OPEN, {
+function j(e) {
+  !E.Z.hasLoaded(y.yP.PRELOADED_USER_SETTINGS) && (M(e) || p.default.track(O.rMx.DISMISSIBLE_CONTENT_DISMISSED_BEFORE_CONNECTION_OPEN, {
     content_type: o.z[e]
   }))
 }
 
-function k(e) {
+function M(e) {
   var t;
   let n = null == (t = E.Z.settings.userContent) ? true : t.dismissedContents;
   return null != n && (0, m.jl)(n, e)
 }
-async function j(e, t) {
+async function k(e, t) {
   return await R.updateAsync("userContent", n => {
     n.recurringDismissibleContentStates[e] = I({}, n.recurringDismissibleContentStates[e], t)
   }, y.fy.INFREQUENT_USER_ACTION)
@@ -335,20 +335,20 @@ function G(e) {
 }
 
 function B(e) {
-  return j(e, {
+  return k(e, {
     lastDismissedVersion: 0,
     lastDismissedAtMs: "0",
     lastDismissedObjectId: "0"
   })
 }
 
-function V() {
+function Z() {
   return R.updateAsync("userContent", e => {
     e.dismissedContents = new Uint8Array, e.recurringDismissibleContentStates = {}
   }, Chunk526761.fy.INFREQUENT_USER_ACTION)
 }
 
-function F() {
+function V() {
   return R.updateAsync("userContent", e => {
     let t = new Uint8Array;
     for (let n of f.V_)(0, f.O2)(n) ? t = (0, m.GV)(t, n) : e.recurringDismissibleContentStates[n] = (0, _.F8)(n);

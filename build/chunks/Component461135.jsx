@@ -1,5 +1,6 @@
-/** Chunk was on 26434 **/
-/** chunk id: 461135, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 461135, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   Z: () => c
 });
@@ -16,20 +17,20 @@ function c(e) {
     message: t,
     compact: n,
     usernameHook: c
-  } = e, u = (0, l.ZP)(t), d = c(u), p = a.intl.format(a.t.Yy6vLi, {
+  } = e, u = (0, a.ZP)(t), d = c(u), f = s.intl.format(s.t.Yy6vLi, {
     username: u.nick,
     usernameHook: d,
     topic: t.content
   });
   return (0, r.jsx)(o.Z, {
-    className: s.stageSystemMessage,
+    className: l.stageSystemMessage,
     iconNode: (0, r.jsx)(i.ewx, {
       size: "md",
       color: "currentColor"
     }),
-    iconContainerClassName: s.iconContainer,
+    iconContainerClassName: l.iconContainer,
     timestamp: t.timestamp,
     compact: n,
-    children: p
+    children: f
   })
 }

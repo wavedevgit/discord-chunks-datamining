@@ -1,4 +1,4 @@
-/** Chunk was on 36499 **/
+/** Chunk was on 5665 **/
 /** chunk id: 400023, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => Y
@@ -104,7 +104,7 @@ let W = (0, Chunk803948.animated)(Chunk481060.eTT),
       showNewMessagesBar: _,
       messageDisplayCompact: x,
       channelStream: v,
-      uploads: j,
+      uploads: O,
       hasUnreads: E,
       editingMessageId: S,
       fontSize: P,
@@ -115,7 +115,7 @@ let W = (0, Chunk803948.animated)(Chunk481060.eTT),
       jumpBarClassName: R,
       typingGradient: k,
       isChatInputBottomAligned: q
-    } = e, [Y, K] = i.useState(null != (n = O.Z.isAtBottom(g.id)) && n), X = i.useMemo(() => x ? (0, M.aJ)({
+    } = e, [Y, K] = i.useState(null != (n = j.Z.isAtBottom(g.id)) && n), X = i.useMemo(() => x ? (0, M.aJ)({
       compact: true,
       messageGroups: 30,
       groupRange: 4,
@@ -158,7 +158,7 @@ let W = (0, Chunk803948.animated)(Chunk481060.eTT),
       showNewMessagesBar: _,
       messageDisplayCompact: x,
       channelStream: v,
-      uploads: j,
+      uploads: O,
       loadMore: Q.loadMore,
       scrollManager: Q,
       specs: X,
@@ -282,7 +282,7 @@ let W = (0, Chunk803948.animated)(Chunk481060.eTT),
     let {
       canManageMessages: h,
       permissionVersion: C,
-      canChat: O
+      canChat: j
     } = function(e) {
       let t = e.getGuildId(),
         n = (0, c.e7)([S.Z], () => null == t || S.Z.canChatInGuild(t), [t]),
@@ -349,7 +349,7 @@ let W = (0, Chunk803948.animated)(Chunk481060.eTT),
         }, {
           autoTrackExposure: false
         }),
-        o = null != (n = null == (t = N.default.getUser(j.default.getId())) ? true : t.hasFlag(B.xW$.SPAMMER)) && n,
+        o = null != (n = null == (t = N.default.getUser(O.default.getId())) ? true : t.hasFlag(B.xW$.SPAMMER)) && n,
         s = (0, p.ts)(e),
         u = (0, y.Z)("use_topic_dividers_in_chat"),
         d = (0, c.Wu)([x.Z], () => {
@@ -399,7 +399,7 @@ let W = (0, Chunk803948.animated)(Chunk481060.eTT),
           uploads: (0, c.e7)([T.Z], () => T.Z.getFiles(t.id), [t]),
           unreadCount: (0, c.e7)([Z.ZP], () => Z.ZP.getUnreadCount(t.id), [t]),
           hasUnreads: null != W,
-          canChat: O,
+          canChat: j,
           editingMessageId: Y,
           fontSize: M,
           keyboardModeEnabled: U,

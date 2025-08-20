@@ -59,13 +59,13 @@ function A(e, t) {
   return n
 }
 
-function N(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function C(e, t) {
+function N(e, t) {
   if (null == e) return {};
   var n, r, i = R(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -118,11 +118,11 @@ class P extends Chunk647438.PureComponent {
       attributes: o,
       children: s
     } = e;
-    "rtl" === o.dir && (o.style = N(S({}, o.style), {
+    "rtl" === o.dir && (o.style = C(S({}, o.style), {
       textAlign: "right"
     }));
     let l = null != (t = null == a ? true : a(e)) ? t : (0, b.Z)(e, n, i);
-    return null != l ? l : (0, r.jsx)("div", N(S({}, o), {
+    return null != l ? l : (0, r.jsx)("div", C(S({}, o), {
       children: s
     }))
   }
@@ -135,7 +135,7 @@ class P extends Chunk647438.PureComponent {
       attributes: a,
       children: o
     } = e, s = null != (t = null == i ? true : i(e)) ? t : (0, y.Z)(n, e);
-    return null != s ? s : (0, r.jsx)("span", N(S({}, a), {
+    return null != s ? s : (0, r.jsx)("span", C(S({}, a), {
       children: o
     }))
   }
@@ -324,7 +324,7 @@ class P extends Chunk647438.PureComponent {
         let {
           default: e
         } = await n.e("41984").then(n.bind(n, 343602));
-        return n => (0, r.jsx)(e, N(S({}, n), {
+        return n => (0, r.jsx)(e, C(S({}, n), {
           editor: t,
           text: m.bN.getSelectedText(t, true)
         }))
@@ -362,7 +362,7 @@ class P extends Chunk647438.PureComponent {
         renderExtraElement: E,
         renderExtraLeaf: b
       } = module,
-      y = C(module, ["editor", "className", "containerClassName", "canFocus", "autoFocus", "placeholder", "channelId", "guildId", "onChange", "onFocus", "onBlur", "onKeyDown", "onKeyUp", "decorateExtra", "renderExtraElement", "renderExtraLeaf"]);
+      y = N(module, ["editor", "className", "containerClassName", "canFocus", "autoFocus", "placeholder", "channelId", "guildId", "onChange", "onFocus", "onBlur", "onKeyDown", "onKeyUp", "decorateExtra", "renderExtraElement", "renderExtraLeaf"]);
     return (0, Chunk951288.jsxs)("div", {
       ref: this.containerRef,
       className: Chunk647438,
@@ -373,7 +373,7 @@ class P extends Chunk647438.PureComponent {
       }) : null, (0, Chunk951288.jsx)(Chunk755712.mH, {
         editor: exports,
         value: [...this.state.initialValue],
-        children: (0, Chunk951288.jsx)(Chunk755712.CX, N(S({}, Chunk653309), {
+        children: (0, Chunk951288.jsx)(Chunk755712.CX, C(S({}, Chunk653309), {
           className: o()(Chunk430864.markup, Chunk115488.editor, require),
           decorate: this.decorate,
           renderElement: this.renderElement,

@@ -85,11 +85,11 @@ var I = false,
   S = 5,
   A = false;
 
-function N() {
+function C() {
   return !(exports.unstable_now() - A < S)
 }
 
-function C() {
+function N() {
   if (I) {
     var e = exports.unstable_now();
     A = module;
@@ -102,7 +102,7 @@ function C() {
         var a = p;
         try {
           a: {
-            for (O(module), _ = r(u); null !== _ && !(_.expirationTime > module && N());) {
+            for (O(module), _ = r(u); null !== _ && !(_.expirationTime > module && C());) {
               var s = _.callback;
               if ("function" == typeof s) {
                 _.callback = null, p = _.priorityLevel;
@@ -134,16 +134,16 @@ function C() {
   }
 }
 if ("function" == typeof y) o = function() {
-  y(C)
+  y(N)
 };
 else if ("undefined" != typeof MessageChannel) {
   var R = new MessageChannel,
     P = R.port2;
-  R.port1.onmessage = C, o = function() {
+  R.port1.onmessage = N, o = function() {
     P.postMessage(null)
   }
 } else o = function() {
-  E(C, 0)
+  E(N, 0)
 };
 
 function w() {
@@ -226,7 +226,7 @@ exports.unstable_IdlePriority = 5, exports.unstable_ImmediatePriority = 1, expor
     expirationTime: s,
     sortIndex: false
   }, a > o ? (e.sortIndex = a, n(d, e), null === r(u) && e === r(d) && (g ? (b(T), T = false) : g = true, D(v, a - o))) : (e.sortIndex = s, n(u, e), m || h || (m = true, w())), e
-}, exports.unstable_shouldYield = N, exports.unstable_wrapCallback = function(e) {
+}, exports.unstable_shouldYield = C, exports.unstable_wrapCallback = function(e) {
   var t = p;
   return function() {
     var n = p;

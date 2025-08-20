@@ -1,5 +1,6 @@
-/** Chunk was on 54157 **/
-/** chunk id: 979905, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 979905, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   arrowBounce: "arrowBounce__49676",
   updateIconForeground: "updateIconForeground__49676",

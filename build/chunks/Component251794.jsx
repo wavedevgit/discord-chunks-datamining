@@ -1,8 +1,8 @@
-/** Chunk was on 49802 **/
+/** Chunk was on 50568 **/
 /** chunk id: 251794, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  q: () => a,
-  z: () => o
+  q: () => o,
+  z: () => a
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -27,11 +27,11 @@ function l(e) {
   return e
 }
 
-function o(e) {
+function a(e) {
   let {
     guildId: t,
-    userId: o,
-    anaylticsLocations: a,
+    userId: a,
+    anaylticsLocations: o,
     modReportId: u
   } = e;
   (0, i.ZDy)(async () => {
@@ -40,18 +40,18 @@ function o(e) {
     } = await n.e("72920").then(n.bind(n, 109730));
     return n => (0, r.jsx)(e, l({
       guildId: t,
-      userId: o,
-      anaylticsLocations: a,
+      userId: a,
+      anaylticsLocations: o,
       modReportId: u
     }, n))
   })
 }
 
-function a(e) {
+function o(e) {
   let {
     guildId: t,
-    userId: o,
-    anaylticsLocations: a
+    userId: a,
+    anaylticsLocations: o
   } = e;
   (0, i.ZDy)(async () => {
     let {
@@ -59,8 +59,8 @@ function a(e) {
     } = await n.e("76233").then(n.bind(n, 171494));
     return n => (0, r.jsx)(e, l({
       guildId: t,
-      userId: o,
-      anaylticsLocations: a
+      userId: a,
+      anaylticsLocations: o
     }, n))
   })
 }

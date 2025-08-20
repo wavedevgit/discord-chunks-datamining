@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 520384, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 520384, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -14,25 +15,25 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk197571 = require("./197571.js");
 
-function p(e) {
+function _(e) {
   let {
     refreshStyles: t = false
-  } = e, n = o.I0.useSetting(), {
-    analyticsLocations: p
-  } = (0, a.ZP)(), g = r.useCallback(e => {
-    (0, c.Z)("stream_previews_disabled", e, o.I0.getSetting(), p), o.I0.updateSetting(e)
-  }, [p]), h = (0, i.jsx)(s.j7V, {
+  } = e, n = l.I0.useSetting(), {
+    analyticsLocations: _
+  } = (0, o.ZP)(), p = i.useCallback(e => {
+    (0, c.Z)("stream_previews_disabled", e, l.I0.getSetting(), _), l.I0.updateSetting(e)
+  }, [_]), h = (0, r.jsx)(a.j7V, {
     value: n,
-    onChange: g,
-    note: u.intl.string(u.t.jTNPHB),
+    onChange: p,
+    note: d.intl.string(d.t.jTNPHB),
     hideBorder: t,
-    children: u.intl.string(u.t["1CzWUF"])
+    children: d.intl.string(d.t["1CzWUF"])
   });
-  return (0, i.jsx)(l.F, {
-    setting: d.s6.VOICE_AND_VIDEO_STREAM_PREVIEWS,
-    children: t ? h : (0, i.jsx)(s.hjN, {
-      className: m.marginBottom20,
-      title: u.intl.string(u.t.OBwCXF),
+  return (0, r.jsx)(s.F, {
+    setting: u.s6.VOICE_AND_VIDEO_STREAM_PREVIEWS,
+    children: t ? h : (0, r.jsx)(a.hjN, {
+      className: f.marginBottom20,
+      title: d.intl.string(d.t.OBwCXF),
       children: h
     })
   })

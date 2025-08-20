@@ -1,26 +1,27 @@
-/** Chunk was on 66181 **/
-/** chunk id: 175756, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 175756, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => l
+  Z: () => s
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk597688 = require("./597688.js"),
   Chunk884697 = require("./884697.js"),
   Chunk223143 = require("./223143.js");
-let l = e => {
-  let [t, n] = i.useState(), {
-    categories: l
-  } = (0, a.ZP)();
-  return i.useEffect(() => {
-    (null == t || 0 === t.size) && n(l)
-  }, [l, t]), i.useMemo(() => {
+let s = e => {
+  let [t, n] = r.useState(), {
+    categories: s
+  } = (0, o.ZP)();
+  return r.useEffect(() => {
+    (null == t || 0 === t.size) && n(s)
+  }, [s, t]), r.useMemo(() => {
     if (null != e) return e;
     if (null == t) return;
-    let n = (0, s.XS)(t).filter(e => {
+    let n = (0, a.XS)(t).filter(e => {
       let {
         skuId: t
-      } = e, n = r.Z.getProduct(t);
-      return (0, s.G1)(n)
+      } = e, n = i.Z.getProduct(t);
+      return (0, a.G1)(n)
     }).map(e => e.id);
     return n[Math.floor(Math.random() * n.length)]
   }, [t, e])

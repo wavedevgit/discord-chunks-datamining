@@ -1,4 +1,4 @@
-/** Chunk was on 36499 **/
+/** Chunk was on 5665 **/
 /** chunk id: 248789, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Y: () => y
@@ -69,16 +69,16 @@ function y(e) {
       name: l.V.SAFETY_WARNING_VIEW
     })
   }, [v]);
-  let j = i.useCallback(e => {
+  let O = i.useCallback(e => {
       (0, p.qc)(b(g({}, v), {
         cta: e
       }))
     }, [v]),
-    O = i.useCallback(() => {
+    j = i.useCallback(() => {
       (0, o.ZDy)(async () => {
         let {
           default: e
-        } = await Promise.all([n.e("49508"), n.e("37031"), n.e("89650")]).then(n.bind(n, 611446));
+        } = await Promise.all([n.e("37031"), n.e("89650")]).then(n.bind(n, 611446));
         return n => {
           let {
             transitionState: i,
@@ -95,14 +95,14 @@ function y(e) {
         }
       }, {
         modalKey: f.X_
-      }), j(p.NM.USER_BANNER_OPEN_SAFETY_TOOLS)
-    }, [t, _, y, j]),
+      }), O(p.NM.USER_BANNER_OPEN_SAFETY_TOOLS)
+    }, [t, _, y, O]),
     E = i.useCallback(() => {
-      C(), j(p.NM.USER_BANNER_BLOCK_CONFIRM)
-    }, [C, j]),
+      C(), O(p.NM.USER_BANNER_BLOCK_CONFIRM)
+    }, [C, O]),
     S = i.useCallback(() => {
-      C(), j(p.NM.USER_BANNER_BLOCK_AND_REPORT_CONFIRM)
-    }, [C, j]),
+      C(), O(p.NM.USER_BANNER_BLOCK_AND_REPORT_CONFIRM)
+    }, [C, O]),
     P = i.useCallback(() => {
       (0, o.ZDy)(async () => {
         let {
@@ -118,7 +118,7 @@ function y(e) {
             onBlock: E,
             onBlockAndReport: S,
             onCancel: () => {
-              null == l || l(), j(p.NM.USER_BANNER_BLOCK_CANCEL)
+              null == l || l(), O(p.NM.USER_BANNER_BLOCK_CANCEL)
             },
             onClose: l,
             userId: _,
@@ -126,7 +126,7 @@ function y(e) {
           })
         }
       })
-    }, [E, S, _, t, j]);
+    }, [E, S, _, t, O]);
   return (0, r.jsx)(h.Q, {
     channelId: t,
     warningId: y,
@@ -138,7 +138,7 @@ function y(e) {
     buttons: [{
       text: m.intl.string(m.t.Qyu4UF),
       variant: "primary",
-      onClick: O
+      onClick: j
     }, ...x ? [] : [{
       text: m.intl.string(m.t["7q0bNT"]),
       variant: "secondary",

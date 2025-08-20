@@ -1,10 +1,20 @@
-/** Chunk was on 30243 **/
-/** chunk id: 775379, original params: e,t,r (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 775379, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  S: () => l
+  S: () => a
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js");
-class l extends Chunk647438.PureComponent {
+
+function i(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+class a extends Chunk647438.PureComponent {
   static getDerivedStateFromError(e) {
     return {
       error: e
@@ -17,16 +27,8 @@ class l extends Chunk647438.PureComponent {
     return null != this.state.error ? this.props.fallback : this.props.children
   }
   constructor(...e) {
-    super(...e),
-      function(e, t, r) {
-        t in e ? Object.defineProperty(e, t, {
-          value: r,
-          enumerable: true,
-          configurable: true,
-          writable: true
-        }) : e[t] = r
-      }(this, "state", {
-        error: null
-      })
+    super(...e), i(this, "state", {
+      error: null
+    })
   }
 }

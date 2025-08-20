@@ -94,24 +94,24 @@ function m(e, t) {
     } = t, I = p(t, ["children", "className", "onResize", "contentClassName", "onScroll", "dir", "fade", "customTheme", "style"]);
     let T = i.useRef(null),
       S = i.useRef(null),
-      [A, N] = i.useState(false),
+      [A, C] = i.useState(false),
       {
-        scrollerRef: C,
+        scrollerRef: N,
         getScrollerState: R
       } = (0, l.Ke)(),
-      P = (0, l.t2)(C);
+      P = (0, l.t2)(N);
     i.useImperativeHandle(u, () => d({
-      getScrollerNode: () => C.current,
+      getScrollerNode: () => N.current,
       isScrolling: () => null != T.current,
       getScrollerState: R
-    }, (0, l.Ue)(C, R, P)), [C, R, P]);
+    }, (0, l.Ue)(N, R, P)), [N, R, P]);
     let w = i.useCallback(e => {
-      null == T.current ? N(true) : clearTimeout(T.current), T.current = setTimeout(() => {
-        T.current = null, N(false)
+      null == T.current ? C(true) : clearTimeout(T.current), T.current = setTimeout(() => {
+        T.current = null, C(false)
       }, 200), null != E && E(e)
     }, [E]);
     return i.useEffect(() => () => clearTimeout(T.current), []), (0, l.zn)({
-      ref: C,
+      ref: N,
       key: "container",
       onUpdate: m,
       resizeObserver: a,
@@ -123,7 +123,7 @@ function m(e, t) {
       resizeObserver: a,
       listenerMap: n
     }), (0, r.jsx)("div", _(d({
-      ref: C,
+      ref: N,
       className: o()(h, {
         [c.fade]: y,
         [c.customTheme]: O,

@@ -63,9 +63,9 @@ function y(e) {
     })
   }, [S, t.channelId]);
   if (b && y) return null;
-  let N = (null == n ? true : n.name) === "" ? null : null == n ? true : n.name,
-    C = null != N ? g.intl.format(g.t["0wJXSk"], {
-      name: N
+  let C = (null == n ? true : n.name) === "" ? null : null == n ? true : n.name,
+    N = null != C ? g.intl.format(g.t["0wJXSk"], {
+      name: C
     }) : g.intl.string(g.t.eXan7O),
     R = !O && null != I && null != T;
   return (0, r.jsxs)(r.Fragment, {
@@ -82,7 +82,7 @@ function y(e) {
       className: h,
       canTruncate: v,
       hideTooltip: O,
-      children: C
+      children: N
     })]
   })
 }

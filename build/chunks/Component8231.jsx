@@ -1,12 +1,13 @@
-/** Chunk was on 66181 **/
-/** chunk id: 8231, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 8231, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   Z: () => B
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk780384 = require("./780384.js"),
   Chunk481060 = require("./481060.js"),
@@ -28,38 +29,45 @@ var Chunk951288 = require("./951288.js"),
   Chunk314907 = require("./314907.js"),
   Chunk826701 = require("./826701.js");
 
+function C(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
 function N(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      i = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), i.forEach(function(t) {
-      var i;
-      i = n[t], t in e ? Object.defineProperty(e, t, {
-        value: i,
-        enumerable: true,
-        configurable: true,
-        writable: true
-      }) : e[t] = i
+    }))), r.forEach(function(t) {
+      C(e, t, n[t])
     })
   }
   return e
 }
 
-function I(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-      var i = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, i)
-    }
-    return n
-  })(Object(t)).forEach(function(n) {
+function R(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function P(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let y = () => (0, Chunk951288.jsx)("div", {
+let w = () => (0, Chunk951288.jsx)("div", {
     className: Chunk893296.comparisonTablePill,
     children: (0, Chunk951288.jsx)(Chunk481060.X6q, {
       className: Chunk893296.mostPopularText,
@@ -67,7 +75,7 @@ let y = () => (0, Chunk951288.jsx)("div", {
       children: Chunk388032.intl.string(Chunk388032.t.TR2B4e)
     })
   }),
-  A = () => (0, Chunk951288.jsx)("div", {
+  D = () => (0, Chunk951288.jsx)("div", {
     className: Chunk893296.comparisonTablePill,
     children: (0, Chunk951288.jsx)(Chunk481060.X6q, {
       className: Chunk893296.mostPopularText,
@@ -75,118 +83,118 @@ let y = () => (0, Chunk951288.jsx)("div", {
       children: Chunk388032.intl.string(Chunk388032.t.IBYG5e)
     })
   }),
-  P = e => {
+  x = e => {
     let {
       text: t,
       badge: n,
-      variant: r
+      variant: i
     } = e;
-    return (0, i.jsxs)(c.Text, {
+    return (0, r.jsxs)(c.Text, {
       color: "none",
-      variant: null != r ? r : "text-md/medium",
-      className: C.rowLabelText,
-      children: [t, null != n && (0, i.jsxs)(i.Fragment, {
+      variant: null != i ? i : "text-md/medium",
+      className: v.rowLabelText,
+      children: [t, null != n && (0, r.jsxs)(r.Fragment, {
         children: [" ", n]
       })]
     })
   },
-  R = e => {
+  L = e => {
     let {
       isIncluded: t,
       isTier0: n
     } = e;
-    return t ? (0, i.jsxs)(i.Fragment, {
-      children: [(0, i.jsx)(c.dz2, {
+    return t ? (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(c.dz2, {
         size: "md",
         color: "currentColor",
-        className: n ? C.basicCheckMark : C.premiumCheckMark,
+        className: n ? v.basicCheckMark : v.premiumCheckMark,
         "aria-hidden": true
-      }), (0, i.jsx)(c.nn4, {
-        children: E.intl.string(E.t["tq+6t7"])
+      }), (0, r.jsx)(c.nn4, {
+        children: O.intl.string(O.t["tq+6t7"])
       })]
-    }) : (0, i.jsxs)(i.Fragment, {
-      children: [(0, i.jsx)(c.Dio, {
+    }) : (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(c.Dio, {
         size: "md",
         color: "currentColor",
-        className: C.closeIcon,
+        className: v.closeIcon,
         "aria-hidden": true
-      }), (0, i.jsx)(c.nn4, {
-        children: E.intl.string(E.t.l4qZrq)
+      }), (0, r.jsx)(c.nn4, {
+        children: O.intl.string(O.t.l4qZrq)
       })]
     })
   },
-  D = e => {
+  j = e => {
     let {
       label: t,
       tier0ColumnData: n,
-      tier2ColumnData: r,
-      withBottomMargin: s
+      tier2ColumnData: i,
+      withBottomMargin: a
     } = e;
-    return (0, i.jsxs)("tr", {
-      className: a()(C.row, C.rowBottomBorder, {
-        [C.bottomMargin]: s
+    return (0, r.jsxs)("tr", {
+      className: o()(v.row, v.rowBottomBorder, {
+        [v.bottomMargin]: a
       }),
-      children: [(0, i.jsx)("th", {
+      children: [(0, r.jsx)("th", {
         scope: "row",
-        className: C.labelCell,
-        children: (0, i.jsx)(P, {
+        className: v.labelCell,
+        children: (0, r.jsx)(x, {
           text: t
         })
-      }), (0, i.jsx)("td", {
-        className: C.cell,
-        children: null != n.text ? (0, i.jsx)(P, {
+      }), (0, r.jsx)("td", {
+        className: v.cell,
+        children: null != n.text ? (0, r.jsx)(x, {
           text: n.text
-        }) : (0, i.jsx)(R, {
+        }) : (0, r.jsx)(L, {
           isIncluded: !!n.includes,
           isTier0: true
         })
-      }), (0, i.jsx)("td", {
-        className: C.cell,
-        children: null != r.text ? (0, i.jsx)(P, {
-          text: r.text
-        }) : (0, i.jsx)(R, {
-          isIncluded: !!r.includes
+      }), (0, r.jsx)("td", {
+        className: v.cell,
+        children: null != i.text ? (0, r.jsx)(x, {
+          text: i.text
+        }) : (0, r.jsx)(L, {
+          isIncluded: !!i.includes
         })
       })]
     })
   },
-  Z = e => {
+  M = e => {
     let {
       title: t,
       rows: n
     } = e;
-    return (0, i.jsxs)(i.Fragment, {
-      children: [(0, i.jsxs)("tr", {
-        className: C.row,
-        children: [(0, i.jsx)("th", {
+    return (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsxs)("tr", {
+        className: v.row,
+        children: [(0, r.jsx)("th", {
           scope: "row",
-          className: C.labelCell,
-          children: (0, i.jsx)(P, {
+          className: v.labelCell,
+          children: (0, r.jsx)(x, {
             text: t,
             variant: "text-lg/bold"
           })
-        }), (0, i.jsx)("td", {}), (0, i.jsx)("td", {})]
-      }), n.map((e, t) => (0, i.jsx)(D, I(N({}, e), {
+        }), (0, r.jsx)("td", {}), (0, r.jsx)("td", {})]
+      }), n.map((e, t) => (0, r.jsx)(j, P(N({}, e), {
         withBottomMargin: t === n.length - 1
       }), e.id))]
     })
   },
-  w = e => {
+  k = e => {
     let t, {
         premiumType: n
       } = e,
-      r = (0, d.ZP)();
-    t = n === j.p9.TIER_0 ? (0, o.wj)(r) ? O : v : (0, o.wj)(r) ? S : T;
-    let s = (0, h.Px)(n);
-    return (0, i.jsx)("img", {
+      i = (0, u.ZP)();
+    t = n === y.p9.TIER_0 ? (0, l.wj)(i) ? I : T : (0, l.wj)(i) ? S : A;
+    let a = (0, h.Px)(n);
+    return (0, r.jsx)("img", {
       src: t,
-      className: C.logo,
-      alt: s
+      className: v.logo,
+      alt: a
     })
   },
-  k = () => (0, Chunk951288.jsx)("thead", {
+  U = () => (0, Chunk951288.jsx)("thead", {
     children: (0, Chunk951288.jsxs)("tr", {
-      className: a()(Chunk893296.headerRow, Chunk893296.topBorderRadius),
+      className: o()(Chunk893296.headerRow, Chunk893296.topBorderRadius),
       children: [(0, Chunk951288.jsx)("th", {
         scope: "col",
         className: Chunk893296.headerLabelCell,
@@ -198,43 +206,43 @@ let y = () => (0, Chunk951288.jsx)("div", {
       }), (0, Chunk951288.jsx)("th", {
         scope: "col",
         className: Chunk893296.headerCell,
-        children: (0, Chunk951288.jsx)(w, {
+        children: (0, Chunk951288.jsx)(k, {
           premiumType: Chunk474936.p9.TIER_0
         })
       }), (0, Chunk951288.jsx)("th", {
         scope: "col",
-        className: a()(Chunk893296.headerCell, Chunk893296.topBorderRadius),
-        children: (0, Chunk951288.jsx)(w, {
+        className: o()(Chunk893296.headerCell, Chunk893296.topBorderRadius),
+        children: (0, Chunk951288.jsx)(k, {
           premiumType: Chunk474936.p9.TIER_2
         })
       })]
     })
   }),
-  L = e => {
+  G = e => {
     let {
       tier0MonthlyPrice: t,
       tier2MonthlyPrice: n,
-      shouldUseDiscountPrice: r,
-      tier2DiscountedPriceString: s
+      shouldUseDiscountPrice: i,
+      tier2DiscountedPriceString: a
     } = e;
-    return (0, i.jsxs)("tr", {
-      className: a()(C.row, C.rowBottomBorder, C.bottomMargin),
-      children: [(0, i.jsx)("th", {
+    return (0, r.jsxs)("tr", {
+      className: o()(v.row, v.rowBottomBorder, v.bottomMargin),
+      children: [(0, r.jsx)("th", {
         scope: "row",
-        className: C.labelCell,
-        children: (0, i.jsx)(P, {
-          text: E.intl.string(E.t["09yRKy"]),
+        className: v.labelCell,
+        children: (0, r.jsx)(x, {
+          text: O.intl.string(O.t["09yRKy"]),
           variant: "text-lg/bold"
         })
-      }), (0, i.jsx)("td", {
-        className: C.cell,
-        children: (0, i.jsx)(P, {
-          text: h.ZP.formatPriceString(t, j.rV.MONTH)
+      }), (0, r.jsx)("td", {
+        className: v.cell,
+        children: (0, r.jsx)(x, {
+          text: h.ZP.formatPriceString(t, y.rV.MONTH)
         })
-      }), (0, i.jsx)("td", {
-        className: C.cell,
-        children: (0, i.jsx)(P, {
-          text: r ? s : h.ZP.formatPriceString(n, j.rV.MONTH)
+      }), (0, r.jsx)("td", {
+        className: v.cell,
+        children: (0, r.jsx)(x, {
+          text: i ? a : h.ZP.formatPriceString(n, y.rV.MONTH)
         })
       })]
     })
@@ -242,55 +250,55 @@ let y = () => (0, Chunk951288.jsx)("div", {
   B = e => {
     var t;
     let n, {
-        className: s,
-        hidePill: o = false,
+        className: a,
+        hidePill: l = false,
         selectedPlanColumnClassName: c,
-        selectedPlanTier: d = j.p9.TIER_2
+        selectedPlanTier: u = y.p9.TIER_2
       } = e,
       {
-        analyticsLocations: E
-      } = (0, m.ZP)(u.Z.PREMIUM_MARKETING_PLAN_COMPARISON),
-      O = (0, l.e7)([g.Z], () => g.Z.hasFetchedSubscriptions()),
-      v = (0, p.V)(j.nS),
-      S = (0, b.N)(),
-      T = null == S || null == (t = S.subscription_trial) ? true : t.sku_id,
-      P = (0, f.Ng)(),
-      R = null != P && (0, f.Wp)(P, j.Si.TIER_2),
-      D = (0, x.A)(j.Xh.PREMIUM_MONTH_TIER_2),
-      w = "".concat(D, "/").concat((0, h.eP)(j.rV.MONTH)),
-      B = (0, h.CY)(j.Xh.PREMIUM_MONTH_TIER_0),
-      M = (0, h.CY)(j.Xh.PREMIUM_MONTH_TIER_2),
-      U = (0, _.e)();
-    if (!O || !v) return null;
-    n = o ? null : null != S ? (0, i.jsx)(A, {}) : (0, i.jsx)(y, {});
-    let V = T === j.Si.TIER_0 || d === j.p9.TIER_0;
-    return (0, i.jsx)(m.Gt, {
-      value: E,
-      children: (0, i.jsx)("div", {
-        className: a()(C.root, s),
+        analyticsLocations: O
+      } = (0, f.ZP)(d.Z.PREMIUM_MARKETING_PLAN_COMPARISON),
+      I = (0, s.e7)([p.Z], () => p.Z.hasFetchedSubscriptions()),
+      T = (0, _.V)(y.nS),
+      S = (0, g.N)(),
+      A = null == S || null == (t = S.subscription_trial) ? true : t.sku_id,
+      C = (0, m.Ng)(),
+      R = null != C && (0, m.Wp)(C, y.Si.TIER_2),
+      x = (0, E.A)(y.Xh.PREMIUM_MONTH_TIER_2),
+      L = "".concat(x, "/").concat((0, h.eP)(y.rV.MONTH)),
+      j = (0, h.CY)(y.Xh.PREMIUM_MONTH_TIER_0),
+      k = (0, h.CY)(y.Xh.PREMIUM_MONTH_TIER_2),
+      B = (0, b.e)();
+    if (!I || !T) return null;
+    n = l ? null : null != S ? (0, r.jsx)(D, {}) : (0, r.jsx)(w, {});
+    let Z = A === y.Si.TIER_0 || u === y.p9.TIER_0;
+    return (0, r.jsx)(f.Gt, {
+      value: O,
+      children: (0, r.jsx)("div", {
+        className: o()(v.root, a),
         "data-testid": "application-home-marketing-page-comparison-table",
-        children: (0, i.jsxs)("div", {
-          className: C.tableWrapper,
-          children: [(0, i.jsxs)("div", {
-            className: a()(c, {
-              [C.tier0ColumnPosition]: V,
-              [C.tier2ColumnPosition]: !V
+        children: (0, r.jsxs)("div", {
+          className: v.tableWrapper,
+          children: [(0, r.jsxs)("div", {
+            className: o()(c, {
+              [v.tier0ColumnPosition]: Z,
+              [v.tier2ColumnPosition]: !Z
             }),
-            children: [!V && n, (0, i.jsx)("div", {
-              className: a()({
-                [C.tier0ColumnOuter]: V,
-                [C.tier2ColumnOuter]: !V
+            children: [!Z && n, (0, r.jsx)("div", {
+              className: o()({
+                [v.tier0ColumnOuter]: Z,
+                [v.tier2ColumnOuter]: !Z
               })
             })]
-          }), (0, i.jsxs)("table", {
-            className: C.table,
-            children: [(0, i.jsx)(k, {}), (0, i.jsxs)("tbody", {
-              children: [(0, i.jsx)(L, {
-                tier0MonthlyPrice: B,
-                tier2MonthlyPrice: M,
+          }), (0, r.jsxs)("table", {
+            className: v.table,
+            children: [(0, r.jsx)(U, {}), (0, r.jsxs)("tbody", {
+              children: [(0, r.jsx)(G, {
+                tier0MonthlyPrice: j,
+                tier2MonthlyPrice: k,
                 shouldUseDiscountPrice: R,
-                tier2DiscountedPriceString: w
-              }), U.map(e => (0, r.createElement)(Z, I(N({}, e), {
+                tier2DiscountedPriceString: L
+              }), B.map(e => (0, i.createElement)(M, P(N({}, e), {
                 key: e.id
               })))]
             })]

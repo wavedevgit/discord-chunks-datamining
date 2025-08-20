@@ -3,13 +3,13 @@
 "use strict";
 require.d(exports, {
   $R: () => D,
-  C7: () => N,
+  C7: () => C,
   Ek: () => T,
   Gu: () => B,
   JQ: () => A,
   NE: () => b,
-  RG: () => L,
-  Xb: () => k,
+  RG: () => x,
+  Xb: () => M,
   Xu: () => O,
   Y: () => G,
   cD: () => v,
@@ -17,7 +17,7 @@ require.d(exports, {
   kn: () => w,
   tM: () => E,
   tc: () => P,
-  xl: () => x,
+  xl: () => L,
   yw: () => U
 }), require("./388685.js");
 var Chunk392711 = require("./392711.js"),
@@ -102,14 +102,14 @@ function A(e) {
   })
 }
 
-function N(e) {
+function C(e) {
   let t = (0, o.e7)([_.Z], () => _.Z.getChannel(null == e ? true : e.parent_id)),
     n = (0, o.e7)([p.Z], () => null != t && p.Z.can(g.Plq.MANAGE_THREADS, t), [t]),
     r = (0, o.e7)([f.default], () => f.default.getId());
   return null != e && null != t && !!e.isThread() && (!!n || !e.isLockedThread() && e.ownerId === r)
 }
 
-function C(e, t) {
+function N(e, t) {
   return null != e && t.can(g.Plq.SEND_MESSAGES_IN_THREADS, e)
 }
 
@@ -119,14 +119,14 @@ function R(e, t, n) {
 }
 
 function P(e) {
-  let t = (0, o.e7)([p.Z], () => C(e, p.Z)),
-    n = k(e);
+  let t = (0, o.e7)([p.Z], () => N(e, p.Z)),
+    n = M(e);
   return R(e, t, n)
 }
 
 function w(e) {
-  let t = C(e, p.Z),
-    n = j(e);
+  let t = N(e, p.Z),
+    n = k(e);
   return R(e, t, n)
 }
 
@@ -136,28 +136,28 @@ function D(e) {
   return null != e && (!e.isThread() || e.isActiveThread() || e.isArchivedThread() && (null == (t = e.threadMetadata) ? true : t.locked) !== true && n)
 }
 
-function L(e) {
+function x(e) {
   var t;
   return null != e && (!e.isThread() || e.isActiveThread() || e.isArchivedThread() && (null == (t = e.threadMetadata) ? true : t.locked) !== true && p.Z.can(g.Plq.SEND_MESSAGES_IN_THREADS, e))
 }
 
-function x(e) {
+function L(e) {
   let t = p.Z.can(g.Plq.MANAGE_THREADS, e);
   return e.isArchivedLockedThread() && !t
 }
 
-function M(e, t) {
+function j(e, t) {
   return null != e && t.can(g.Plq.MANAGE_THREADS, e)
 }
 
-function k(e) {
-  return (0, o.e7)([p.Z], () => j(e, [p.Z]))
+function M(e) {
+  return (0, o.e7)([p.Z], () => k(e, [p.Z]))
 }
 
-function j(e) {
+function k(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [p.Z],
     [n] = t;
-  return M(e, n)
+  return j(e, n)
 }
 
 function U(e) {
@@ -165,7 +165,7 @@ function U(e) {
     let t = _.Z.getChannel(e);
     if (null == t) returnfalse;
     let n = f.default.getId();
-    return t.type === g.d4z.PRIVATE_THREAD && t.ownerId === n || j(t, [p.Z])
+    return t.type === g.d4z.PRIVATE_THREAD && t.ownerId === n || k(t, [p.Z])
   })
 }
 
@@ -184,6 +184,6 @@ function G(e) {
 }
 
 function B(e) {
-  let t = k(e);
+  let t = M(e);
   return e.isLockedThread() && !t
 }

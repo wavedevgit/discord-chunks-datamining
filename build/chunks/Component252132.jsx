@@ -1,4 +1,4 @@
-/** Chunk was on 36499 **/
+/** Chunk was on 5665 **/
 /** chunk id: 252132, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => o
@@ -29,7 +29,7 @@ function o(e) {
     pulseSpeakingIndicator: C,
     participant: x,
     width: v
-  } = e, j = function(e, t) {
+  } = e, O = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -44,7 +44,7 @@ function o(e) {
     }
     return i
   }(e, ["aspectRatio", "blocked", "ignored", "channel", "className", "focused", "children", "inCall", "inPopout", "noBorder", "onClick", "onContextMenu", "onDoubleClick", "onVideoResize", "paused", "pulseSpeakingIndicator", "participant", "width"]);
-  let O = l.Z.getVideoComponent();
+  let j = l.Z.getVideoComponent();
   return (0, r.jsx)("div", {
     style: {
       width: v
@@ -88,9 +88,9 @@ function o(e) {
         participant: x,
         paused: _,
         pulseSpeakingIndicator: C,
-        videoComponent: O,
+        videoComponent: j,
         width: v
-      }, j)), d]
+      }, O)), d]
     })
   })
 }

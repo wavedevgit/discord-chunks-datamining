@@ -1,4 +1,4 @@
-/** Chunk was on 36499 **/
+/** Chunk was on 5665 **/
 /** chunk id: 544142, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -42,7 +42,7 @@ function v(e) {
   return e
 }
 
-function j(e, t) {
+function O(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -55,13 +55,13 @@ function j(e, t) {
   }), e
 }
 
-function O(e) {
+function j(e) {
   var t, l, p;
   let {
     userId: y,
     channel: _
   } = e, C = i.useRef(null), {
-    analyticsLocations: O
+    analyticsLocations: j
   } = (0, d.ZP)(u.Z.USERNAME), E = (0, o.e7)([g.default], () => g.default.getUser(y)), S = (0, o.e7)([m.ZP], () => null != y ? m.ZP.getMember(_.guild_id, y) : null), P = (0, h.X7)(_.guild_id, null != y ? y : true, null != (t = null == S ? true : S.colorStrings) ? t : null);
 
   function I(e) {
@@ -70,7 +70,7 @@ function O(e) {
       let {
         default: e
       } = await Promise.all([n.e("79695"), n.e("70675")]).then(n.bind(n, 654663));
-      return t => (0, r.jsx)(e, j(v({}, t), {
+      return t => (0, r.jsx)(e, O(v({}, t), {
         user: E,
         guildId: _.guild_id,
         channel: _
@@ -83,7 +83,7 @@ function O(e) {
     className: a()(x.threadCreatorName, x.unknownCreatorName),
     children: Z
   }) : (0, r.jsx)(d.Gt, {
-    value: O,
+    value: j,
     children: (0, r.jsx)(f.Z, {
       targetElementRef: C,
       user: E,
@@ -91,7 +91,7 @@ function O(e) {
       channelId: _.id,
       roleId: null == S ? true : S.colorRoleId,
       clickTrap: true,
-      children: e => (0, r.jsx)(s.P3F, j(v({}, e), {
+      children: e => (0, r.jsx)(s.P3F, O(v({}, e), {
         innerRef: C,
         tag: "span",
         className: x.threadCreatorName,
@@ -123,7 +123,7 @@ function E(e) {
       children: (0, r.jsx)("div", {
         className: x.subtitle,
         children: C.intl.format(C.t.imPXd3, {
-          usernameHook: (e, n) => (0, r.jsx)(O, {
+          usernameHook: (e, n) => (0, r.jsx)(j, {
             userId: t.ownerId,
             channel: t
           }, n)

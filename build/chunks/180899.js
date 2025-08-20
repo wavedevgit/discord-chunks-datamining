@@ -15,19 +15,19 @@ function s(e) {
     defaultStep: n,
     error: i,
     onSave: s
-  } = e, [c, d] = r.useState(n), [u, h] = r.useState(), [g, _] = r.useState(null);
+  } = e, [c, d] = r.useState(n), [u, x] = r.useState(), [h, g] = r.useState(null);
   return r.useEffect(() => {
     null != i && d(a.lv.STAGE_CHANNEL_SETTINGS)
   }, [i]), {
     modalStep: c,
     setModalStep: d,
-    readySlide: g,
+    readySlide: h,
     handleSlideReady: function(e) {
-      return _(e)
+      return g(e)
     },
     savedOptions: u,
     handleSettingsSave: function(e) {
-      if (h(e), e.privacyLevel === o.j8.PUBLIC && (null == t ? true : t.privacy_level) !== o.j8.PUBLIC) return void d(a.lv.PUBLIC_STAGE_PREVIEW);
+      if (x(e), e.privacyLevel === o.j8.PUBLIC && (null == t ? true : t.privacy_level) !== o.j8.PUBLIC) return void d(a.lv.PUBLIC_STAGE_PREVIEW);
       s(e)
     },
     handleDelayedSave: function() {

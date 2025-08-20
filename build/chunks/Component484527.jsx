@@ -1,7 +1,7 @@
 /** Chunk was on 89311 **/
 /** chunk id: 484527, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => v
 }), require("./388685.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,13 +20,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk226788 = require("./226788.js"),
   Chunk943987 = require("./943987.js");
 
-function j(e) {
+function v(e) {
   let {
     detectedGame: t,
     trackClick: n,
     onInviteResolved: l,
-    closeModal: j
-  } = e, [O, y] = i.useState(), b = (0, o.e7)([m.Z], () => {
+    closeModal: v
+  } = e, [O, b] = i.useState(), y = (0, o.e7)([m.Z], () => {
     var e, t;
     return (null == O || null == (e = O.guild) ? true : e.id) != null && m.Z.isMember(null == O || null == (t = O.guild) ? true : t.id)
   }), I = i.useMemo(() => {
@@ -44,33 +44,33 @@ function j(e) {
         if (null != t) {
           if (null != O && O.code.toLowerCase() === t.toLowerCase()) return;
           let e = await (0, d.Z)(t);
-          true !== e.banned && (y(e.invite), null != e.invite && (null == l || l(e.invite)))
+          true !== e.banned && (b(e.invite), null != e.invite && (null == l || l(e.invite)))
         }
       };
       null != I && e(I.url)
     }, [I, l, O]), null == O || null == O.guild || !O.guild.features.includes(g.oNc.VERIFIED)) return null;
-  let E = f.ZP.getGuildIconURL({
+  let P = p.ZP.getGuildIconURL({
     id: O.guild.id,
     icon: O.guild.icon,
     size: 32
   });
   return (0, r.jsxs)("div", {
-    className: h.column,
+    className: j.column,
     children: [(0, r.jsx)(c.X6q, {
-      className: h.sectionHeader,
+      className: j.sectionHeader,
       variant: "text-xs/semibold",
       color: "header-secondary",
       children: x.intl.string(x.t.kBDZSE)
     }), (0, r.jsxs)("div", {
-      className: a()(h.row, h.gapMd),
+      className: a()(j.row, j.gapMd),
       children: [(0, r.jsx)("img", {
-        className: v.guildIcon,
-        src: E,
+        className: h.guildIcon,
+        src: P,
         alt: x.intl.formatToPlainString(x.t.xm6W9P, {
           guildName: O.guild.name
         })
       }), (0, r.jsxs)("div", {
-        className: v.inviteInfo,
+        className: h.inviteInfo,
         children: [(0, r.jsx)(c.Text, {
           variant: "text-sm/normal",
           children: O.guild.name
@@ -83,9 +83,9 @@ function j(e) {
       })]
     }), (0, r.jsx)(c.zxk, {
       variant: "secondary",
-      text: b ? x.intl.string(x.t.cEnaW1) : x.intl.string(x.t.XpeFYm),
+      text: y ? x.intl.string(x.t.cEnaW1) : x.intl.string(x.t.XpeFYm),
       onClick: () => {
-        j(), n(p.as.JoinOfficialServer), u.Z.dispatch({
+        v(), n(f.as.JoinOfficialServer), u.Z.dispatch({
           type: "INVITE_MODAL_OPEN",
           invite: O,
           code: O.code,

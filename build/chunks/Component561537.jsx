@@ -1,34 +1,35 @@
-/** Chunk was on 66181 **/
-/** chunk id: 561537, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 561537, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  l: () => o
+  l: () => l
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk539510 = require("./539510.js");
 
-function o(e) {
+function l(e) {
   let {
     className: t,
     header: n,
-    headerClassName: s,
-    children: o
-  } = e, c = r.useMemo(() => {
+    headerClassName: a,
+    children: l
+  } = e, c = i.useMemo(() => {
     let e = false;
-    return r.Children.forEach(o, t => {
+    return i.Children.forEach(l, t => {
       null != t && (e = true)
     }), e
-  }, [o]);
-  return (0, i.jsxs)("div", {
-    className: a()(l.wrapper, t),
-    children: [(0, i.jsx)("div", {
-      className: a()(l.header, s),
+  }, [l]);
+  return (0, r.jsxs)("div", {
+    className: o()(s.wrapper, t),
+    children: [(0, r.jsx)("div", {
+      className: o()(s.header, a),
       children: n
-    }), c && (0, i.jsx)("div", {
-      className: l.content,
-      children: o
+    }), c && (0, r.jsx)("div", {
+      className: s.content,
+      children: l
     })]
   })
 }

@@ -1,7 +1,8 @@
-/** Chunk was on 26434 **/
-/** chunk id: 722334, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 722334, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  W: () => s
+  W: () => l
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -10,14 +11,14 @@ var Chunk497505 = require("./497505.js"),
   Chunk46140 = require("./46140.js"),
   Chunk388032 = require("./388032.jsx");
 
-function s(e) {
+function l(e) {
   let {
     questId: t
   } = e;
-  return (0, r.jsx)(l.w, {
+  return (0, r.jsx)(a.w, {
     questId: t,
     fallbackReason: o.V_.EXCLUDED_QUEST,
-    bodyText: a.intl.string(a.t.nuWSYW),
+    bodyText: s.intl.string(s.t.nuWSYW),
     questContent: i.jn.EXCLUDED_QUEST_EMBED
   })
 }

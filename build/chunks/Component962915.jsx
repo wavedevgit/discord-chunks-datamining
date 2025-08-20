@@ -1,5 +1,6 @@
-/** Chunk was on 66181 **/
-/** chunk id: 962915, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 962915, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   x: () => h
 }), require("./388685.js");
@@ -19,39 +20,39 @@ let h = e => {
     let {
       transitionState: t,
       onClose: n,
-      premiumSubscription: l,
-      premiumType: o,
+      premiumSubscription: s,
+      premiumType: l,
       churnDiscount: c,
-      planId: d,
-      renewalInvoice: m,
-      renewalInvoiceDetails: p,
+      planId: u,
+      renewalInvoice: f,
+      renewalInvoiceDetails: _,
       errorOnCancel: h,
-      errorOnRedeem: b,
-      setActiveStep: x,
-      activeStep: _
+      errorOnRedeem: g,
+      setActiveStep: E,
+      activeStep: b
     } = e, {
-      analyticsLocations: j
-    } = (0, a.ZP)(s.Z.USER_SETTINGS), [E, C] = r.useState(f(_));
-    return (0, r.useEffect)(() => {
-      C(f(_))
-    }, [_]), (0, i.jsx)(u.D.Provider, {
+      analyticsLocations: y
+    } = (0, o.ZP)(a.Z.USER_SETTINGS), [O, v] = i.useState(m(b));
+    return (0, i.useEffect)(() => {
+      v(m(b))
+    }, [b]), (0, r.jsx)(d.D.Provider, {
       value: {
-        setStep: x,
-        premiumType: o,
+        setStep: E,
+        premiumType: l,
         onClose: n,
         transitionState: t,
-        premiumSubscription: l,
-        analyticsLocations: j,
-        analyticsLocation: g.Sbl.USER_SETTINGS,
+        premiumSubscription: s,
+        analyticsLocations: y,
+        analyticsLocation: p.Sbl.USER_SETTINGS,
         confettiCanvas: null,
         churnUserDiscountOffer: c,
         isFetchingChurnDiscountOffer: false,
         fullPrice: "$9.99",
         discountedPrice: "$4.99",
-        planId: d,
+        planId: u,
         paymentsBlocked: false,
-        renewalInvoice: m,
-        renewalInvoiceDetails: p,
+        renewalInvoice: f,
+        renewalInvoiceDetails: _,
         handleCancellation: () => new Promise((e, t) => {
           setTimeout(() => {
             if (h) return void t();
@@ -60,26 +61,26 @@ let h = e => {
         }),
         applyOffer: () => new Promise((e, t) => {
           setTimeout(() => {
-            if (b) return void t();
+            if (g) return void t();
             e()
           }, 1e3)
         })
       },
-      children: E
+      children: O
     })
   },
-  f = e => {
+  m = e => {
     switch (e) {
-      case d.R.DISCOUNT_APPLIED:
-        return (0, i.jsx)(c.i, {});
-      case d.R.CONFIRM_DISCOUNT:
-        return (0, i.jsx)(o.U, {});
-      case d.R.CONFIRM:
-        return (0, i.jsx)(l.G, {});
-      case d.R.PREVIEW:
-        return (0, i.jsx)(m.w, {});
-      case d.R.WHAT_YOU_LOSE:
+      case u.R.DISCOUNT_APPLIED:
+        return (0, r.jsx)(c.i, {});
+      case u.R.CONFIRM_DISCOUNT:
+        return (0, r.jsx)(l.U, {});
+      case u.R.CONFIRM:
+        return (0, r.jsx)(s.G, {});
+      case u.R.PREVIEW:
+        return (0, r.jsx)(f.w, {});
+      case u.R.WHAT_YOU_LOSE:
       default:
-        return (0, i.jsx)(p.n, {})
+        return (0, r.jsx)(_.n, {})
     }
   }

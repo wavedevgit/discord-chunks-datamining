@@ -2,7 +2,7 @@
 /** chunk id: 201542, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => C
+  Z: () => N
 }), require("./388685.js"), require("./704826.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -60,7 +60,7 @@ function A(e, t, n) {
   }, [e, t, n])
 }
 
-function N(e, t, n) {
+function C(e, t, n) {
   i.useEffect(() => {
     if (t) return h.S.dispatch(y.CkL.VOICE_MESSAGE_PLAYBACK_STARTED, {
       src: e
@@ -76,7 +76,7 @@ function N(e, t, n) {
     }
   }, [e, t, n])
 }
-let C = Chunk647438.memo(function(e) {
+let N = Chunk647438.memo(function(e) {
   let t, {
       src: n,
       volume: a = 1,
@@ -84,20 +84,20 @@ let C = Chunk647438.memo(function(e) {
       onMute: h,
       waveform: b,
       durationSecs: y,
-      onVolumeShow: C,
+      onVolumeShow: N,
       onVolumeHide: R,
       onPlay: P,
       onPause: w,
       onError: D,
-      playbackCacheKey: L
+      playbackCacheKey: x
     } = e,
-    x = i.useRef(null),
-    M = i.useMemo(() => null != L ? d.ZP.getPlaybackPosition(L) : 0, [L]),
-    k = (0, s.e7)([d.ZP], () => d.ZP.getPlaybackRate(d.Ir.VOICE_MESSAGE)),
-    [j, U] = i.useState(M > 0),
-    [G, B] = i.useState(M),
-    [V, F] = i.useState(y),
-    [Z, H] = i.useState(false),
+    L = i.useRef(null),
+    j = i.useMemo(() => null != x ? d.ZP.getPlaybackPosition(x) : 0, [x]),
+    M = (0, s.e7)([d.ZP], () => d.ZP.getPlaybackRate(d.Ir.VOICE_MESSAGE)),
+    [k, U] = i.useState(j > 0),
+    [G, B] = i.useState(j),
+    [Z, V] = i.useState(y),
+    [F, H] = i.useState(false),
     [Y, W] = i.useState(false),
     [K, z] = i.useState(false),
     [q, X] = i.useState(false),
@@ -112,11 +112,11 @@ let C = Chunk647438.memo(function(e) {
     }, []),
     ei = i.useCallback(e => {
       let t = e.currentTarget.duration;
-      isNaN(t) || F(t)
+      isNaN(t) || V(t)
     }, []),
     ea = i.useCallback(e => {
-      null != y && null != L && (0, u.U)(L, e, y)
-    }, [L, y]),
+      null != y && null != x && (0, u.U)(x, e, y)
+    }, [x, y]),
     eo = i.useCallback(() => {
       W(false), null == et.current && (et.current = setTimeout(() => {
         U(false), X(false), et.current = true
@@ -126,11 +126,11 @@ let C = Chunk647438.memo(function(e) {
       K || (ea(0), eo())
     }, [eo, K, ea]),
     el = i.useCallback(e => {
-      let t = x.current;
+      let t = L.current;
       null != t && (B(e), t.currentTime = e, U(true))
     }, []),
     ec = i.useCallback(() => {
-      let e = x.current;
+      let e = L.current;
       if (null == e) return;
       let t = e.error;
       null == D || D(t)
@@ -140,21 +140,21 @@ let C = Chunk647438.memo(function(e) {
       H(0 === t), ee(t), null == _ || _(t)
     }, [_]),
     ed = i.useCallback(() => {
-      H(!Z), null == h || h(!Z)
-    }, [Z, h]),
+      H(!F), null == h || h(!F)
+    }, [F, h]),
     ef = i.useCallback(() => {
       z(true)
     }, []),
     e_ = i.useCallback(() => {
-      z(false), G === V && eo(), ea(G)
-    }, [G, V, eo, ea]),
+      z(false), G === Z && eo(), ea(G)
+    }, [G, Z, eo, ea]),
     ep = i.useCallback(e => {
-      let t = x.current;
-      null != V && null != t && (el(e * V), clearTimeout(et.current), et.current = true)
-    }, [V, el]);
+      let t = L.current;
+      null != Z && null != t && (el(e * Z), clearTimeout(et.current), et.current = true)
+    }, [Z, el]);
   i.useEffect(() => {
-    !j && Y && U(true)
-  }, [Y, j]);
+    !k && Y && U(true)
+  }, [Y, k]);
   let eh = i.useRef(null),
     em = {
       played: q,
@@ -166,12 +166,12 @@ let C = Chunk647438.memo(function(e) {
   i.useEffect(() => {
     eg.current = em
   }), i.useEffect(() => {
-    M > 0 && el(M)
-  }, [M, el]), i.useEffect(() => {
+    j > 0 && el(j)
+  }, [j, el]), i.useEffect(() => {
     let e;
     return Y && !K && (e = setInterval(() => {
       var e, t;
-      ea(null != (t = null == (e = x.current) ? true : e.currentTime) ? t : 0)
+      ea(null != (t = null == (e = L.current) ? true : e.currentTime) ? t : 0)
     }, m.Z.Millis.SECOND)), () => {
       null != e && clearInterval(e)
     }
@@ -185,23 +185,23 @@ let C = Chunk647438.memo(function(e) {
     if (e || Y)
       if (Y) {
         var i, a;
-        eh.current = performance.now(), null == r || r(false, t, (null != (a = null == (i = x.current) ? true : i.duration) ? a : 0) * m.Z.Millis.SECOND)
+        eh.current = performance.now(), null == r || r(false, t, (null != (a = null == (i = L.current) ? true : i.duration) ? a : 0) * m.Z.Millis.SECOND)
       } else {
         let e = performance.now(),
           r = eh.current,
           i = null != r ? (e - r) / 1e3 : 0;
         null == n || n(t, i), ea(t), eh.current = null
       }
-  }, [Y, n, V, ea]), A(x, Y, B), N(n, Y, W);
+  }, [Y, n, Z, ea]), A(L, Y, B), C(n, Y, W);
   let eE = Y ? l.fpf : l.o1U,
     eb = Y ? O.intl.string(O.t.ZcgDJS) : O.intl.string(O.t.RscU7O),
     ey = O.intl.formatToPlainString(O.t.LgCPMj, {
-      playbackRate: k
+      playbackRate: M
     }),
-    eO = "".concat(k.toString().replace(/^0/, ""), "X");
+    eO = "".concat(M.toString().replace(/^0/, ""), "X");
   t = "Safari" === platform.name ? (0, r.jsx)(i.Suspense, {
     children: (0, r.jsx)(I, {
-      ref: x,
+      ref: L,
       className: v.audioElement,
       src: n,
       preload: Q,
@@ -209,21 +209,21 @@ let C = Chunk647438.memo(function(e) {
       onEnded: es,
       onLoadedMetadata: ei,
       onError: ec,
-      muted: Z,
+      muted: F,
       volume: $,
-      playbackRate: k
+      playbackRate: M
     })
   }) : (0, r.jsx)(f.Z, {
-    ref: x,
+    ref: L,
     className: v.audioElement,
     controls: false,
     preload: Q,
     onEnded: es,
     onLoadedMetadata: ei,
     onError: ec,
-    muted: Z,
+    muted: F,
     volume: $,
-    playbackRate: k,
+    playbackRate: M,
     playing: Y && !K,
     children: (0, r.jsx)("source", {
       src: n
@@ -255,19 +255,19 @@ let C = Chunk647438.memo(function(e) {
       className: v.waveform,
       waveform: b,
       currentTime: G,
-      duration: null != V ? V : 1,
+      duration: null != Z ? Z : 1,
       playing: Y,
-      played: j,
+      played: k,
       onDrag: ep,
       onDragStart: ef,
       onDragEnd: e_
     }), (0, r.jsx)(S, {
-      played: j,
+      played: k,
       currentTime: G,
-      duration: V
+      duration: Z
     }), (0, r.jsx)(l.P3F, {
       className: v.playbackRateContainer,
-      onClick: () => T(k),
+      onClick: () => T(M),
       "aria-label": ey,
       children: (0, r.jsx)(l.Text, {
         variant: "text-xs/semibold",
@@ -279,14 +279,14 @@ let C = Chunk647438.memo(function(e) {
       iconClassName: v.volumeButtonIcon,
       iconColor: "currentColor",
       sliderWrapperClassName: v.volumeSlider,
-      muted: Z,
+      muted: F,
       value: (0, g.P)($, 1),
       minValue: 0,
       maxValue: 1,
       currentWindow: window,
       onValueChange: eu,
       onToggleMute: ed,
-      onVolumeShow: C,
+      onVolumeShow: N,
       onVolumeHide: R
     }), t]
   })

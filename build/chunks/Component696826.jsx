@@ -5,10 +5,10 @@ require.d(exports, {
   Dk: () => T,
   QF: () => O,
   Sk: () => Chunk981631.Skl,
-  W5: () => C,
+  W5: () => N,
   lm: () => y,
   qb: () => R,
-  rs: () => N,
+  rs: () => C,
   vP: () => A,
   vj: () => b
 }), require("./388685.js");
@@ -232,7 +232,7 @@ function A(e, t, n) {
   })
 }
 
-function N(e, t) {
+function C(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
   if (n) return c.ZP.Masks.STATUS_TYPING;
   switch (e) {
@@ -253,7 +253,7 @@ function N(e, t) {
   }
 }
 
-function C(e, t, n) {
+function N(e, t, n) {
   let r = arguments.length > 3 && true !== arguments[3] && arguments[3];
   return t === u.Skl.ONLINE && n && !r ? {
     width: e,
@@ -274,10 +274,10 @@ function R(e) {
     color: l
   } = e, d = t === u.Skl.ONLINE && n, _ = b(t, l);
   return (0, r.jsx)(c.ZP, m(p({
-    mask: N(t, d),
+    mask: C(t, d),
     className: a()(f.mask, o),
     style: s
-  }, C(i, t, d)), {
+  }, N(i, t, d)), {
     children: (0, r.jsx)("div", {
       style: {
         backgroundColor: _

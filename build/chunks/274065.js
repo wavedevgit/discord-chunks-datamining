@@ -1,5 +1,6 @@
-/** Chunk was on 99315 **/
-/** chunk id: 274065, original params: e,r,o (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 274065, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   pricePerInterval: "pricePerInterval_fd0764",
   price: "price_fd0764",

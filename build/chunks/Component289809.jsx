@@ -1,4 +1,4 @@
-/** Chunk was on 26475 **/
+/** Chunk was on 40226 **/
 /** chunk id: 289809, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => s
@@ -18,17 +18,17 @@ function s(e) {
         is_localized: s
       }
     }
-  } = e, c = a.useRef(o.Z.reactParserFor(o.Z.defaultRules));
+  } = e, c = i.useRef(a.Z.reactParserFor(a.Z.defaultRules));
   return s && (null != t || null != n) ? (0, r.jsxs)("div", {
-    className: l.container,
-    children: [null != t && (0, r.jsx)(i.X6q, {
+    className: o.container,
+    children: [null != t && (0, r.jsx)(l.X6q, {
       variant: "heading-sm/semibold",
       color: "header-secondary",
-      className: l.header,
+      className: o.header,
       children: t
-    }), null != n && (0, r.jsx)(i.Text, {
+    }), null != n && (0, r.jsx)(l.Text, {
       variant: "text-sm/normal",
-      className: l.bodyText,
+      className: o.bodyText,
       children: c.current(n)
     })]
   }) : null

@@ -1,15 +1,15 @@
-/** Chunk was on 91584 **/
-/** chunk id: 304611, original params: t (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 304611, original params: e (module,exports,re quire) **/
 "use strict";
 
-function e(t) {
+function t(e) {
   return function() {
-    return t
+    return e
   }
 }
-var r = function() {};
-r.thatReturns = e, r.thatReturnsFalse = e(false), r.thatReturnsTrue = e(true), r.thatReturnsNull = e(null), r.thatReturnsThis = function() {
+var n = function() {};
+n.thatReturns = t, n.thatReturnsFalse = t(false), n.thatReturnsTrue = t(true), n.thatReturnsNull = t(null), n.thatReturnsThis = function() {
   return this
-}, r.thatReturnsArgument = function(t) {
-  return t
-}, module.exports = r
+}, n.thatReturnsArgument = function(e) {
+  return e
+}, module.exports = n

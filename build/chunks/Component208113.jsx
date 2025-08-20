@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 208113, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 208113, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => g
+  Z: () => h
 }), require("./539854.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -16,52 +17,55 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk197571 = require("./197571.js");
 
-function g(e) {
+function p(e, t, n) {
+  let r = [{
+    value: d.iA.STANDARD,
+    label: f.intl.string(f.t.dqb2JS)
+  }];
+  return e && r.push({
+    value: d.iA.LEGACY,
+    label: f.intl.string(f.t["TYfH+/"])
+  }), t && r.push({
+    value: d.iA.EXPERIMENTAL,
+    label: f.intl.string(f.t.liQmtr)
+  }), n && r.push({
+    value: d.iA.AUTOMATIC,
+    label: f.intl.string(f.t.qNgtOz)
+  }), r
+}
+
+function h(e) {
   let {
     refreshStyles: t = false
   } = e, {
     audioSubsystem: n,
-    legacyAudioSubsystemSupported: g,
-    experimentalAudioSubsystemSupported: h,
-    automaticAudioSubsystemSupported: f
-  } = (0, r.cj)([o.Z], () => ({
-    audioSubsystem: o.Z.getAudioSubsystem(),
-    legacyAudioSubsystemSupported: o.Z.supports(u.AN.LEGACY_AUDIO_SUBSYSTEM),
-    experimentalAudioSubsystemSupported: o.Z.supports(u.AN.EXPERIMENTAL_AUDIO_SUBSYSTEM),
-    automaticAudioSubsystemSupported: o.Z.supports(u.AN.AUTOMATIC_AUDIO_SUBSYSTEM)
-  })), b = (0, i.jsx)(s.q4e, {
-    className: p.marginBottom20,
+    legacyAudioSubsystemSupported: h,
+    experimentalAudioSubsystemSupported: m,
+    automaticAudioSubsystemSupported: g
+  } = (0, i.cj)([l.Z], () => ({
+    audioSubsystem: l.Z.getAudioSubsystem(),
+    legacyAudioSubsystemSupported: l.Z.supports(d.AN.LEGACY_AUDIO_SUBSYSTEM),
+    experimentalAudioSubsystemSupported: l.Z.supports(d.AN.EXPERIMENTAL_AUDIO_SUBSYSTEM),
+    automaticAudioSubsystemSupported: l.Z.supports(d.AN.AUTOMATIC_AUDIO_SUBSYSTEM)
+  })), E = (0, r.jsx)(a.q4e, {
+    className: _.marginBottom20,
     value: n,
-    options: function(e, t, n) {
-      let i = [{
-        value: u.iA.STANDARD,
-        label: m.intl.string(m.t.dqb2JS)
-      }];
-      return e && i.push({
-        value: u.iA.LEGACY,
-        label: m.intl.string(m.t["TYfH+/"])
-      }), t && i.push({
-        value: u.iA.EXPERIMENTAL,
-        label: m.intl.string(m.t.liQmtr)
-      }), n && i.push({
-        value: u.iA.AUTOMATIC,
-        label: m.intl.string(m.t.qNgtOz)
-      }), i
-    }(g, h, f),
+    options: p(h, m, g),
     onChange: e => {
-      (0, c.Z)(m.intl.string(m.t.uY7AcX), m.intl.string(m.t.gBqik5), () => a.Z.setAudioSubsystem(e))
+      let t = () => o.Z.setAudioSubsystem(e);
+      (0, c.Z)(f.intl.string(f.t.uY7AcX), f.intl.string(f.t.gBqik5), t)
     }
   });
-  return (0, i.jsx)(l.F, {
-    setting: d.s6.VOICE_AND_VIDEO_ADVANCED_SUBSYSTEM,
-    children: t ? (0, i.jsx)(s.xJW, {
-      title: m.intl.string(m.t.wVBHr6),
-      children: b
-    }) : (0, i.jsxs)(s.hjN, {
-      className: p.marginBottom20,
-      title: m.intl.string(m.t.wVBHr6),
-      children: [b, (0, i.jsx)(s.$i$, {
-        className: p.marginBottom20
+  return (0, r.jsx)(s.F, {
+    setting: u.s6.VOICE_AND_VIDEO_ADVANCED_SUBSYSTEM,
+    children: t ? (0, r.jsx)(a.xJW, {
+      title: f.intl.string(f.t.wVBHr6),
+      children: E
+    }) : (0, r.jsxs)(a.hjN, {
+      className: _.marginBottom20,
+      title: f.intl.string(f.t.wVBHr6),
+      children: [E, (0, r.jsx)(a.$i$, {
+        className: _.marginBottom20
       })]
     })
   })

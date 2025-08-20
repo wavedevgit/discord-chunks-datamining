@@ -1,15 +1,15 @@
-/** Chunk was on 19157 **/
+/** Chunk was on 33648 **/
 /** chunk id: 757853, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  F: () => z,
-  G: () => U
+  F: () => V,
+  G: () => G
 }), require("./388685.js");
 var l, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk913527 = require("./913527.js"),
-  c = require.n(Chunk913527),
+  u = require.n(Chunk913527),
   Chunk91192 = require("./91192.jsx"),
   Chunk442837 = require("./442837.js"),
   Chunk755721 = require("./755721.js"),
@@ -58,7 +58,7 @@ function k(e) {
   return e
 }
 
-function G(e, t) {
+function F(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -71,289 +71,289 @@ function G(e, t) {
   }), e
 }
 
-function M(e, t) {
+function W(e, t) {
   if (null == e) return {};
   var n, l, r = function(e, t) {
     if (null == e) return {};
     var n, l, r = {},
-      i = Object.keys(e);
-    for (l = 0; l < i.length; l++) n = i[l], t.indexOf(n) >= 0 || (r[n] = e[n]);
+      a = Object.keys(e);
+    for (l = 0; l < a.length; l++) n = a[l], t.indexOf(n) >= 0 || (r[n] = e[n]);
     return r
   }(e, t);
   if (Object.getOwnPropertySymbols) {
-    var i = Object.getOwnPropertySymbols(e);
-    for (l = 0; l < i.length; l++) n = i[l], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (l = 0; l < a.length; l++) n = a[l], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
   }
   return r
 }
-var U = ((l = {}).TOGGLE = "toggle", l.SEND = "send", l);
+var G = ((l = {}).TOGGLE = "toggle", l.SEND = "send", l);
 
-function H(e) {
+function U(e) {
   let {
     message: t,
     destination: n,
     rowMode: l,
-    icon: a,
+    icon: s,
     label: o,
-    subLabel: c,
+    subLabel: u,
     selected: d,
-    disabled: _,
-    onPressDestination: m,
-    "aria-setsize": p,
-    "aria-posinset": E
-  } = e, b = (0, u.JA)(n.id), [y, I] = i.useState(false), S = i.useRef(false), A = i.useCallback(() => {
+    disabled: m,
+    onPressDestination: p,
+    "aria-setsize": b,
+    "aria-posinset": _
+  } = e, v = (0, c.JA)(n.id), [x, y] = a.useState(false), w = a.useRef(false), j = a.useCallback(() => {
     if ("send" === l) {
-      I(true), S.current = true;
+      y(true), w.current = true;
       return
     }
-    null == m || m(n)
-  }, [l, m, n]), O = i.useCallback(() => {
-    N.default.track(w.rMx.FORWARD_ONE_TAP_VIEW, {
+    null == p || p(n)
+  }, [l, p, n]), O = a.useCallback(() => {
+    Z.default.track(R.rMx.FORWARD_ONE_TAP_VIEW, {
       channel_id: t.channel_id,
       message_id: t.id
-    }), S.current = false, null == m || m(n, {
+    }), w.current = false, null == p || p(n, {
       transitionToDestination: true,
       closeAfterSend: true
     })
-  }, [t.channel_id, t.id, m, n]), v = i.useCallback(() => {
-    I(false), S.current = false, N.default.track(w.rMx.FORWARD_ONE_TAP_UNDO, {
+  }, [t.channel_id, t.id, p, n]), P = a.useCallback(() => {
+    y(false), w.current = false, Z.default.track(R.rMx.FORWARD_ONE_TAP_UNDO, {
       channel_id: t.channel_id,
       message_id: t.id
     })
   }, [t]);
   return (0, g.ZP)(() => () => {
-    S.current && (S.current = false, null == m || m(n, {
+    w.current && (w.current = false, null == p || p(n, {
       transitionToDestination: false,
       closeAfterSend: false
     }))
-  }), (0, r.jsxs)(h.P3F, G(k({
-    className: s()(F.destinationRow, {
-      [F.disabled]: _
+  }), (0, r.jsxs)(f.P3F, F(k({
+    className: i()(A.destinationRow, {
+      [A.disabled]: m
     }),
-    onClick: _ || y ? true : A,
+    onClick: m || x ? true : j,
     "aria-selected": d,
-    "aria-setsize": p,
-    "aria-posinset": E
-  }, b), {
+    "aria-setsize": b,
+    "aria-posinset": _
+  }, v), {
     children: [(0, r.jsxs)("div", {
-      className: F.identity,
+      className: A.identity,
       children: [(0, r.jsx)("div", {
-        className: F.iconWrapper,
-        children: a
+        className: A.iconWrapper,
+        children: s
       }), (0, r.jsxs)("div", {
-        className: F.labels,
-        children: [(0, r.jsx)(h.Text, {
+        className: A.labels,
+        children: [(0, r.jsx)(f.Text, {
           tag: "strong",
-          className: F.label,
+          className: A.label,
           variant: "text-md/semibold",
           lineClamp: 1,
           children: o
-        }), (0, r.jsx)(h.Text, {
-          className: F.subLabel,
+        }), (0, r.jsx)(f.Text, {
+          className: A.subLabel,
           variant: "text-xs/normal",
           color: "text-muted",
-          children: c
+          children: u
         })]
       })]
-    }), "toggle" === l && (0, r.jsx)(h.XZJ, {
-      type: h.XZJ.Types.INVERTED,
+    }), "toggle" === l && (0, r.jsx)(f.XZJ, {
+      type: f.XZJ.Types.INVERTED,
       displayOnly: true,
       size: 24,
       value: d,
-      disabled: _,
-      className: F.checkbox
-    }), "send" === l && !_ && (0, r.jsxs)("div", {
-      className: F.actions,
-      children: [y ? (0, r.jsx)(h.zxk, {
+      disabled: m,
+      className: A.checkbox
+    }), "send" === l && !m && (0, r.jsxs)("div", {
+      className: A.actions,
+      children: [x ? (0, r.jsx)(f.zxk, {
         variant: "secondary",
         size: "sm",
-        text: R.intl.string(R.t["HO/oXl"]),
+        text: I.intl.string(I.t["HO/oXl"]),
         onClick: O
       }) : (0, r.jsx)("div", {
-        className: s()((0, f.nY)({
-          size: f.zx.Sizes.SMALL,
-          color: f.zx.Colors.BRAND
-        }), F.fauxButton),
-        children: R.intl.string(R.t.TXNS7e)
-      }), y && (0, r.jsx)(f.zx, {
-        size: f.zx.Sizes.SMALL,
-        color: f.zx.Colors.BRAND,
-        look: f.zx.Looks.OUTLINED,
-        onClick: v,
-        children: R.intl.string(R.t.KyUKhY)
+        className: i()((0, h.nY)({
+          size: h.zx.Sizes.SMALL,
+          color: h.zx.Colors.BRAND
+        }), A.fauxButton),
+        children: I.intl.string(I.t.TXNS7e)
+      }), x && (0, r.jsx)(h.zx, {
+        size: h.zx.Sizes.SMALL,
+        color: h.zx.Colors.BRAND,
+        look: h.zx.Looks.OUTLINED,
+        onClick: P,
+        children: I.intl.string(I.t.KyUKhY)
       })]
     })]
   }))
 }
 
-function W(e) {
+function z(e) {
   var {
     user: t,
     subLabel: n
-  } = e, l = M(e, ["user", "subLabel"]);
-  let i = j.ZP.useName(t),
-    a = j.ZP.useUserTag(t, {
+  } = e, l = W(e, ["user", "subLabel"]);
+  let a = M.ZP.useName(t),
+    s = M.ZP.useUserTag(t, {
       decoration: "never"
     }),
-    s = (0, d.e7)([x.Z], () => x.Z.getNickname(t.id)),
-    o = (0, d.e7)([v.Z], () => v.Z.getStatus(t.id));
-  return (0, r.jsx)(H, G(k({}, l), {
-    icon: (0, r.jsx)(_.Z, {
+    i = (0, d.e7)([E.Z], () => E.Z.getNickname(t.id)),
+    o = (0, d.e7)([P.Z], () => P.Z.getStatus(t.id));
+  return (0, r.jsx)(U, F(k({}, l), {
+    icon: (0, r.jsx)(m.Z, {
       "aria-hidden": true,
-      size: h.EFr.SIZE_32,
+      size: f.EFr.SIZE_32,
       user: t,
       status: o
     }),
-    label: null != s ? s : i,
-    subLabel: null != n ? n : a
+    label: null != i ? i : a,
+    subLabel: null != n ? n : s
   }))
 }
 
-function Q(e) {
+function H(e) {
   var {
     channel: t,
     subLabel: n
-  } = e, l = M(e, ["channel", "subLabel"]);
-  let i = (0, E.ZP)(t),
-    a = (0, I._)(t);
-  return (0, r.jsx)(H, G(k({}, l), {
-    icon: (0, r.jsx)(b.Z, {
+  } = e, l = W(e, ["channel", "subLabel"]);
+  let a = (0, _.ZP)(t),
+    s = (0, y._)(t);
+  return (0, r.jsx)(U, F(k({}, l), {
+    icon: (0, r.jsx)(v.Z, {
       "aria-hidden": true,
-      size: h.EFr.SIZE_32,
+      size: f.EFr.SIZE_32,
       channel: t,
       experimentLocation: "forward-modal"
     }),
-    label: i,
-    subLabel: null != n ? n : a
+    label: a,
+    subLabel: null != n ? n : s
+  }))
+}
+
+function B(e) {
+  var {
+    channel: t,
+    subLabel: n
+  } = e, l = W(e, ["channel", "subLabel"]);
+  let a = (0, d.e7)([O.Z], () => O.Z.getGuild(null == t ? true : t.guild_id)),
+    s = (0, _.ZP)(t),
+    i = (0, d.e7)([j.Z, C.default, E.Z], () => {
+      let e = j.Z.getChannel(t.parent_id);
+      return null == e ? null : (0, _.F6)(e, C.default, E.Z, false)
+    }),
+    o = (0, d.e7)([S.ZP], () => S.ZP.lastMessageTimestamp(t.id, D.W.CHANNEL)),
+    c = null == a ? true : a.name;
+  if (t.isThread() || t.isForumPost()) {
+    let e = t.isForumPost() ? f.Mmi : f.VL1;
+    c = (0, r.jsxs)("div", {
+      className: A.threadSubLabel,
+      children: [(0, r.jsx)(e, {
+        color: f.TVs.colors.TEXT_SECONDARY,
+        className: A.subLabelIcon
+      }), (0, r.jsx)(f.Text, {
+        variant: "text-xs/medium",
+        color: "text-secondary",
+        lineClamp: 1,
+        children: i
+      }), null != o ? (0, r.jsxs)(r.Fragment, {
+        children: [(0, r.jsx)(f.Text, {
+          className: A.subLabelSeparator,
+          variant: "text-xs/medium",
+          color: "text-secondary",
+          children: "•"
+        }), (0, r.jsx)(f.Text, {
+          variant: "text-xs/medium",
+          color: "text-secondary",
+          children: (0, N.Xf)(u()(o))
+        })]
+      }) : null]
+    })
+  }
+  return (0, r.jsx)(U, F(k({}, l), {
+    icon: (0, r.jsx)(x.Z, {
+      size: x.E.SMALL_32,
+      guild: a,
+      channel: t
+    }),
+    label: s,
+    subLabel: null != n ? n : c
   }))
 }
 
 function V(e) {
   var {
-    channel: t,
-    subLabel: n
-  } = e, l = M(e, ["channel", "subLabel"]);
-  let i = (0, d.e7)([O.Z], () => O.Z.getGuild(null == t ? true : t.guild_id)),
-    a = (0, E.ZP)(t),
-    s = (0, d.e7)([A.Z, P.default, x.Z], () => {
-      let e = A.Z.getChannel(t.parent_id);
-      return null == e ? null : (0, E.F6)(e, P.default, x.Z, false)
-    }),
-    o = (0, d.e7)([C.ZP], () => C.ZP.lastMessageTimestamp(t.id, D.W.CHANNEL)),
-    u = null == i ? true : i.name;
-  if (t.isThread() || t.isForumPost()) {
-    let e = t.isForumPost() ? h.Mmi : h.VL1;
-    u = (0, r.jsxs)("div", {
-      className: F.threadSubLabel,
-      children: [(0, r.jsx)(e, {
-        color: h.TVs.colors.TEXT_SECONDARY,
-        className: F.subLabelIcon
-      }), (0, r.jsx)(h.Text, {
-        variant: "text-xs/medium",
-        color: "text-secondary",
-        lineClamp: 1,
-        children: s
-      }), null != o ? (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(h.Text, {
-          className: F.subLabelSeparator,
-          variant: "text-xs/medium",
-          color: "text-secondary",
-          children: "•"
-        }), (0, r.jsx)(h.Text, {
-          variant: "text-xs/medium",
-          color: "text-secondary",
-          children: (0, T.Xf)(c()(o))
-        })]
-      }) : null]
-    })
-  }
-  return (0, r.jsx)(H, G(k({}, l), {
-    icon: (0, r.jsx)(y.Z, {
-      size: y.E.SMALL_32,
-      guild: i,
-      channel: t
-    }),
-    label: a,
-    subLabel: null != n ? n : u
-  }))
-}
-
-function z(e) {
-  var {
     rowData: t,
     rowMode: n,
     message: l,
-    originChannel: a,
-    selectedDestinations: s,
+    originChannel: s,
+    selectedDestinations: i,
     handleToggleDestination: o,
-    disableSelection: c
-  } = e, d = M(e, ["rowData", "rowMode", "message", "originChannel", "selectedDestinations", "handleToggleDestination", "disableSelection"]);
-  let f = i.useMemo(() => [t.length], [t.length]),
-    _ = i.useCallback(() => 48, []),
-    g = i.useMemo(() => {
+    disableSelection: u
+  } = e, d = W(e, ["rowData", "rowMode", "message", "originChannel", "selectedDestinations", "handleToggleDestination", "disableSelection"]);
+  let h = a.useMemo(() => [t.length], [t.length]),
+    m = a.useCallback(() => 48, []),
+    g = a.useMemo(() => {
       var e;
-      return null != (e = null == s ? true : s.map(S.hC)) ? e : []
-    }, [s]),
-    E = i.useCallback(e => {
+      return null != (e = null == i ? true : i.map(w.hC)) ? e : []
+    }, [i]),
+    _ = a.useCallback(e => {
       let {
-        section: i,
-        row: s
+        section: a,
+        row: i
       } = e;
-      if (i > 0) return;
+      if (a > 0) return;
       let {
-        type: u,
+        type: c,
         record: d
-      } = t[s];
-      if (u === p.h8.HEADER) return;
-      let f = u === p.h8.USER ? {
+      } = t[i];
+      if (c === b.h8.HEADER) return;
+      let h = c === b.h8.USER ? {
           type: "user",
           id: d.id
         } : {
           type: "channel",
           id: d.id
         },
-        h = (0, S.hC)(f),
-        _ = (0, Z.HY)(l, a, d),
-        m = g.includes(h),
-        E = {
-          key: h,
+        f = (0, w.hC)(h),
+        m = (0, T.HY)(l, s, d),
+        p = g.includes(f),
+        _ = {
+          key: f,
           message: l,
-          destination: f,
+          destination: h,
           rowMode: n,
-          subLabel: null != _ ? _.label : true,
-          disabled: c && !m || null != _,
-          selected: m,
+          subLabel: null != m ? m.label : true,
+          disabled: u && !p || null != m,
+          selected: p,
           onPressDestination: o,
-          "aria-posinset": s + 1,
+          "aria-posinset": i + 1,
           "aria-setsize": t.length
         };
-      return u === p.h8.USER ? (0, r.jsx)(W, k({
+      return c === b.h8.USER ? (0, r.jsx)(z, k({
         user: d
-      }, E)) : u === p.h8.GROUP_DM ? (0, r.jsx)(Q, k({
+      }, _)) : c === b.h8.GROUP_DM ? (0, r.jsx)(H, k({
         channel: d
-      }, E)) : u === p.h8.TEXT_CHANNEL || u === p.h8.VOICE_CHANNEL ? (0, r.jsx)(V, k({
+      }, _)) : c === b.h8.TEXT_CHANNEL || c === b.h8.VOICE_CHANNEL ? (0, r.jsx)(B, k({
         channel: d
-      }, E)) : void(0, L.vE)(u)
-    }, [c, o, l, a, t, n, g]),
-    b = i.useRef(null),
-    y = (0, m.Z)("forward-modal", b);
-  return (0, r.jsx)(u.bG, {
-    navigator: y,
-    children: (0, r.jsx)(u.SJ, {
+      }, _)) : void(0, L.vE)(c)
+    }, [u, o, l, s, t, n, g]),
+    v = a.useRef(null),
+    x = (0, p.Z)("forward-modal", v);
+  return (0, r.jsx)(c.bG, {
+    navigator: x,
+    children: (0, r.jsx)(c.SJ, {
       children: e => {
         var {
           ref: t
-        } = e, n = M(e, ["ref"]);
-        return (0, r.jsx)(h.YAO, G(k({
+        } = e, n = W(e, ["ref"]);
+        return (0, r.jsx)(f.YAO, F(k({
           scrollerRef: e => {
             var n;
-            b.current = e, t.current = null != (n = null == e ? true : e.getScrollerNode()) ? n : null
+            v.current = e, t.current = null != (n = null == e ? true : e.getScrollerNode()) ? n : null
           }
         }, n, d), {
-          sections: f,
+          sections: h,
           sectionHeight: 0,
-          renderRow: E,
-          rowHeight: _
+          renderRow: _,
+          rowHeight: m
         }))
       }
     })

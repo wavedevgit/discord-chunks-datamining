@@ -1,29 +1,29 @@
-/** Chunk was on 31930 **/
-/** chunk id: 996733, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 996733, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  QH: () => s,
-  Z7: () => l,
-  yN: () => r
+  QH: () => a,
+  Z7: () => o,
+  yN: () => i
 }), require("./781311.js");
-let i = (0, require("./972959.js").H)(() => ({
+let r = (0, require("./972959.js").H)(() => ({
   query: "",
   isActive: false,
   selected: null
 }));
 
-function r(e) {
-  i.setState({
+function i(e) {
+  r.setState({
     query: e
   })
 }
 
-function s(e) {
-  i.setState({
+function a(e) {
+  r.setState({
     isActive: e
   })
 }
 
-function l() {
-  return i.useField("query")
+function o() {
+  return r.useField("query")
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 36499 **/
+/** Chunk was on 5665 **/
 /** chunk id: 52639, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -31,16 +31,16 @@ function _(e) {
     context: C
   } = (0, s.KZ)(), x = (0, i.Z)(), {
     mutualFriendsCount: v,
-    mutualFriends: j,
-    mutualGuilds: O
-  } = (0, c.Z)(t), E = !t.bot && null != v && v > 0, S = null != O && O.length > 0;
+    mutualFriends: O,
+    mutualGuilds: j
+  } = (0, c.Z)(t), E = !t.bot && null != v && v > 0, S = null != j && j.length > 0;
   return E || S ? (0, r.jsxs)(m.Z.Overlay, {
     className: y.overlay,
     children: [S && (0, r.jsx)(g.Z, {
       section: "MUTUAL_GUILDS",
       header: b.intl.string(b.t["4lTDZm"]),
       listClassName: y.list,
-      items: O.map(e => {
+      items: j.map(e => {
         let {
           guild: n,
           nick: i
@@ -59,7 +59,7 @@ function _(e) {
       header: b.intl.string(b.t["0mTJ3t"]),
       listClassName: y.list,
       onExpand: () => (0, u.Z)(t.id, x),
-      items: null == j ? Array.from({
+      items: null == O ? Array.from({
         length: v
       }).map((e, t) => (0, r.jsxs)("div", {
         className: y.loadingMutualFriend,
@@ -70,7 +70,7 @@ function _(e) {
           width: 135,
           opacity: .08
         })]
-      }, t)) : j.map(e => {
+      }, t)) : O.map(e => {
         let {
           key: t,
           user: i,

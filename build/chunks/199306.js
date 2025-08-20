@@ -1,5 +1,6 @@
-/** Chunk was on 66181 **/
-/** chunk id: 199306, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 199306, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   backgroundIconOptionIcon: "backgroundIconOptionIcon__53965",
   backgroundOptions: "backgroundOptions__53965",

@@ -2,9 +2,9 @@
 /** chunk id: 226186, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => r,
-  u: () => a
+  u: () => s
 });
-let s = (0, require("./818083.js").B)({
+let a = (0, require("./818083.js").B)({
   kind: "user",
   id: "2024-10_email_change_reasoning_buttons_free_text_response",
   label: "Email Change Reasoning Buttons Free Text Response",
@@ -20,11 +20,11 @@ let s = (0, require("./818083.js").B)({
   }]
 });
 
-function a(e) {
-  return !!s.useExperiment({
+function s(e) {
+  return !!a.useExperiment({
     location: e
   }, {
     autoTrackExposure: false
   }).enabled
 }
-let r = s
+let r = a

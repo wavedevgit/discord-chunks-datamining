@@ -1,12 +1,13 @@
-/** Chunk was on 66181 **/
-/** chunk id: 302289, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 302289, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => g
+  Z: () => p
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk785681 = require("./785681.js"),
   Chunk130310 = require("./130310.jsx"),
@@ -15,10 +16,10 @@ var Chunk120356 = require("./120356.js"),
   Chunk398739 = require("./398739.js"),
   Chunk519279 = require("./519279.js"),
   Chunk128216 = require("./128216.js");
-let g = () => {
+let p = () => {
   let e = (0, Chunk785681.o)(Chunk388032.intl.string(Chunk345909.default.i4XFEB), Chunk388032.intl.string(Chunk345909.default.eHQZuL));
   return (0, Chunk951288.jsxs)("div", {
-    className: s()(Chunk398739.container, Chunk519279.box, Chunk519279),
+    className: a()(Chunk398739.container, Chunk519279.box, Chunk519279),
     children: [(0, Chunk951288.jsxs)("div", {
       children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
         className: Chunk398739.header,

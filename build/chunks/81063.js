@@ -117,7 +117,7 @@ async function A(e, t) {
     of r) b[e] = t
 }
 
-function N(e, t) {
+function C(e, t) {
   let n = 0;
   if (e.filter(e => (null == e ? true : e.startsWith("http:")) || (null == e ? true : e.startsWith("https:"))).length > 0)
     for (let r = 0; r < e.length; r++) {
@@ -129,7 +129,7 @@ function N(e, t) {
   return n === e.length
 }
 
-function C(e, t, n, r) {
+function N(e, t, n, r) {
   let i = false;
   for (let a = 0; a < e.length; a++) {
     let o = e[a];
@@ -154,7 +154,7 @@ async function R(e, t) {
   });
   let r = [],
     i = t.filter(e => (null == e ? true : e.startsWith("http:")) || (null == e ? true : e.startsWith("https:")));
-  if (i.length > 0 && await A(e, i), N(t, r)) return o.Z.dispatch({
+  if (i.length > 0 && await A(e, i), C(t, r)) return o.Z.dispatch({
     type: "APPLICATION_ASSETS_FETCH_SUCCESS",
     applicationId: e
   }), r;
@@ -163,7 +163,7 @@ async function R(e, t) {
     type: "APPLICATION_ASSETS_UPDATE",
     applicationId: e,
     assets: a
-  }), C(t, r, a, n)) ? O(e).then(() => R(e, t, n - 1)) : (o.Z.dispatch({
+  }), N(t, r, a, n)) ? O(e).then(() => R(e, t, n - 1)) : (o.Z.dispatch({
     type: "APPLICATION_ASSETS_FETCH_SUCCESS",
     applicationId: e
   }), r)

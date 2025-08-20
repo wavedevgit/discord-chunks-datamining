@@ -1,33 +1,36 @@
-/** Chunk was on 66181 **/
-/** chunk id: 940315, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 940315, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Y: () => a
+  Y: () => l
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk709706 = require("./709706.js");
+let o = 3e3,
+  s = 4e3;
 
-function a() {
+function l() {
   let e = (0, Chunk442837.e7)([Chunk709706.Z], () => Chunk709706.Z.getLastReportedLagTimestamp()),
     [t, n] = Chunk647438.useState(false),
-    [a, l] = Chunk647438.useState(false),
-    o = Chunk647438.useRef(null);
+    [l, c] = Chunk647438.useState(false),
+    u = Chunk647438.useRef(null);
   return Chunk647438.useEffect(() => {
     let t = null != module;
     require(exports);
-    let i = exports ? setTimeout(() => require(false), 3e3) : null;
+    let r = exports ? setTimeout(() => require(false), o) : null;
     return () => {
       clearTimeout(Chunk647438), require(false)
     }
   }, [module]), Chunk647438.useEffect(() => {
-    let t = null != module && null == o.current;
-    l(exports);
+    let t = null != module && null == u.current;
+    c(exports);
     let n = null;
-    return exports && (o.current = Date.now(), n = setTimeout(() => l(false), 4e3)), () => {
-      clearTimeout(require), l(false)
+    return exports && (u.current = Date.now(), n = setTimeout(() => c(false), s)), () => {
+      clearTimeout(require), c(false)
     }
   }, [module]), {
     showSilentLagWarning: exports,
-    showLagTooltip: a
+    showLagTooltip: l
   }
 }

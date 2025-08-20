@@ -1,6 +1,7 @@
-/** Chunk was on 96750 **/
-/** chunk id: 478875, original params: e,t,n (module,exports,require) **/
-require.r(module.exports = {
+/** Chunk was on web.js **/
+/** chunk id: 478875, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+var r = {
   profile: "profile_ed0705",
   underDevelopment: "underDevelopment_ed0705",
   insetBorder: "insetBorder_ed0705",
@@ -39,4 +40,5 @@ require.r(module.exports = {
   solara: "solara_ed0705",
   cave: "cave_ed0705",
   deepfried: "deepfried_ed0705"
-})
+};
+require.r(module.exports = r)

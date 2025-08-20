@@ -1,5 +1,6 @@
-/** Chunk was on 96750 **/
-/** chunk id: 697761, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 697761, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   Z: () => c
 });
@@ -19,13 +20,15 @@ function c(e) {
     color: u,
     onAction: d
   } = e;
-  return (0, l.Z)(t, o.xjy.INSTANCE) ? (0, r.jsx)(a.Z, {
+  if (!(0, a.Z)(t, s.xjy.INSTANCE)) return null;
+  let f = () => {
+    null == d || d(), new i.Z("UserActivityActions").log("notify", n.id, t)
+  };
+  return (0, r.jsx)(o.Z, {
     look: c,
     color: u,
-    onClick: () => {
-      null == d || d(), new i.Z("UserActivityActions").log("notify", n.id, t)
-    },
+    onClick: f,
     fullWidth: true,
-    children: s.intl.string(s.t.vwl1PD)
-  }, "notify") : null
+    children: l.intl.string(l.t.vwl1PD)
+  }, "notify")
 }

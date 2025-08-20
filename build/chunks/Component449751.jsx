@@ -1,4 +1,4 @@
-/** Chunk was on 38342 **/
+/** Chunk was on 76676 **/
 /** chunk id: 449751, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -12,12 +12,12 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx");
 
 function u(e, t) {
-  return s.wS ? (0, i.jsx)(l.sNh, {
+  return r.wS ? (0, i.jsx)(l.sNh, {
     id: "copy-link",
     label: o.intl.string(o.t.Xrt5Pj),
     icon: l.xPt,
     action: () => {
-      (0, s.JG)("".concat(location.protocol, "//").concat(location.host).concat(a.Z5c.CHANNEL(t.guild_id, t.id, e.id))), r.default.track(a.rMx.MESSAGE_LINK_COPIED, {
+      (0, r.JG)("".concat(location.protocol, "//").concat(location.host).concat(a.Z5c.CHANNEL(t.guild_id, t.id, e.id))), s.default.track(a.rMx.MESSAGE_LINK_COPIED, {
         message_id: e.id,
         channel: e.channel_id
       })

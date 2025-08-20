@@ -59,31 +59,31 @@ let v = e => {
       introDelay: O = d.lG
     } = e, v = i.useRef(null), [I, T] = i.useState([]);
     (0, E.Z)(g);
-    let [S, A] = i.useState(0), [N, C] = i.useState(0), {
+    let [S, A] = i.useState(0), [C, N] = i.useState(0), {
       accessibilityLabel: R
     } = g, [P, w] = i.useState(-O), {
       stop: D,
-      reset: L,
-      ticking: x
+      reset: x,
+      ticking: L
     } = (0, _.Z)(e => {
       w(t => t + e)
-    }), M = i.useRef(O);
+    }), j = i.useRef(O);
     i.useEffect(() => {
-      M.current = O
+      j.current = O
     }), i.useEffect(() => {
-      w(-M.current), T((0, h.H)(g.effects))
+      w(-j.current), T((0, h.H)(g.effects))
     }, [g]), i.useEffect(() => {
       let e = 0,
         t = 1 / 0;
       I.forEach(n => {
         let r = n.start + n.duration;
         r > e && (e = r), n.loop && n.start < t && (t = n.start)
-      }), A(t), C(e)
-    }, [C, I]);
-    let [k, j] = i.useState(false);
+      }), A(t), N(e)
+    }, [N, I]);
+    let [M, k] = i.useState(false);
     return i.useEffect(() => {
-      true === c || s || (D(), w(0)), !s && k && x.current && (D(), w(0)), a && s && !x.current && (L(), g.animationType === f.Q.PERSISTENT ? w(u === f.j.FromStart ? 0 : S) : w(0))
-    }, [s, k, S, a, D, L, x, g.animationType, c, u]), (0, r.jsx)("div", {
+      true === c || s || (D(), w(0)), !s && M && L.current && (D(), w(0)), a && s && !L.current && (x(), g.animationType === f.Q.PERSISTENT ? w(u === f.j.FromStart ? 0 : S) : w(0))
+    }, [s, M, S, a, D, x, L, g.animationType, c, u]), (0, r.jsx)("div", {
       ref: v,
       className: o()(b.profileEffects, {
         [b.hovered]: s && l
@@ -93,7 +93,7 @@ let v = e => {
       children: (0, r.jsx)("div", {
         className: y ? b.innerNoRadius : b.inner,
         children: I.map((e, i) => {
-          if (!x.current && g.animationType === f.Q.PERSISTENT && null != g.staticFrameSrc && 0 === i && true === c) {
+          if (!L.current && g.animationType === f.Q.PERSISTENT && null != g.staticFrameSrc && 0 === i && true === c) {
             var a, o, s, l;
             let {
               staticFrameSrc: n
@@ -112,13 +112,13 @@ let v = e => {
           return (0, r.jsx)(m.Z, {
             layerConfig: e,
             animationType: g.animationType,
-            ticking: x.current,
+            ticking: L.current,
             time: P,
-            hasPlayedThrough: k,
-            setHasPlayedThrough: j,
+            hasPlayedThrough: M,
+            setHasPlayedThrough: k,
             urlQueryString: p,
             maxLoops: n,
-            loopEnd: N,
+            loopEnd: C,
             bannerAdjustment: t
           }, e.src + i)
         })

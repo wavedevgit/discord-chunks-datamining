@@ -37,7 +37,7 @@ function i() {
   function _(e, t, n, r) {
     var i = Object.create((t && t.prototype instanceof y ? t : y).prototype);
     return s(i, "_invoke", {
-      value: R(e, n, new L(r || []))
+      value: R(e, n, new x(r || []))
     }), i
   }
 
@@ -71,11 +71,11 @@ function i() {
     return this
   });
   var T = Object.getPrototypeOf,
-    S = T && T(T(x([])));
+    S = T && T(T(L([])));
   S && S !== a && o.call(S, c) && (I = S);
   var A = v.prototype = y.prototype = Object.create(I);
 
-  function N(e) {
+  function C(e) {
     ["next", "throw", "return"].forEach(function(t) {
       f(e, t, function(e) {
         return this._invoke(t, e)
@@ -83,7 +83,7 @@ function i() {
     })
   }
 
-  function C(e, t) {
+  function N(e, t) {
     var n;
 
     function i(n, a, s, l) {
@@ -176,13 +176,13 @@ function i() {
     t.type = "normal", delete t.arg, e.completion = t
   }
 
-  function L(e) {
+  function x(e) {
     this.tryEntries = [{
       tryLoc: "root"
     }], e.forEach(w, this), this.reset(true)
   }
 
-  function x(e) {
+  function L(e) {
     if (e || "" === e) {
       var n = e[c];
       if (n) return n.call(e);
@@ -214,15 +214,15 @@ function i() {
     return {
       __await: e
     }
-  }, N(C.prototype), f(C.prototype, u, function() {
+  }, C(N.prototype), f(N.prototype, u, function() {
     return this
-  }), require.AsyncIterator = C, require.async = function(e, t, r, i, a) {
+  }), require.AsyncIterator = N, require.async = function(e, t, r, i, a) {
     true === a && (a = Promise);
-    var o = new C(_(e, t, r, i), a);
+    var o = new N(_(e, t, r, i), a);
     return n.isGeneratorFunction(t) ? o : o.next().then(function(e) {
       return e.done ? e.value : o.next()
     })
-  }, N(A), f(A, d, "Generator"), f(A, c, function() {
+  }, C(A), f(A, d, "Generator"), f(A, c, function() {
     return this
   }), f(A, "toString", function() {
     return "[object Generator]"
@@ -238,8 +238,8 @@ function i() {
         }
         return e.done = true, e
       }
-  }, require.values = x, L.prototype = {
-    constructor: L,
+  }, require.values = L, x.prototype = {
+    constructor: x,
     reset: function(e) {
       if (this.prev = 0, this.next = 0, this.sent = this._sent = t, this.done = false, this.delegate = null, this.method = "next", this.arg = t, this.tryEntries.forEach(D), !e)
         for (var n in this) "t" === n.charAt(0) && o.call(this, n) && !isNaN(+n.slice(1)) && (this[n] = t)
@@ -314,7 +314,7 @@ function i() {
     },
     delegateYield: function(e, n, r) {
       return this.delegate = {
-        iterator: x(e),
+        iterator: L(e),
         resultName: n,
         nextLoc: r
       }, "next" === this.method && (this.arg = t), b

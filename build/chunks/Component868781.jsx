@@ -84,13 +84,13 @@ function v(e) {
   let {
     text: S,
     tooltip: A
-  } = (0, _.Z)(t, y || v), N = O(t, b), C = d && !g && null != A;
+  } = (0, _.Z)(t, y || v), C = O(t, b), N = d && !g && null != A;
   return (0, r.jsxs)(r.Fragment, {
-    children: [!u && null != N && (0, r.jsx)(h.Z, {
-      icon: N,
-      tooltipText: C ? A : true,
+    children: [!u && null != C && (0, r.jsx)(h.Z, {
+      icon: C,
+      tooltipText: N ? A : true,
       className: s,
-      onTooltipShow: C ? T : true
+      onTooltipShow: N ? T : true
     }), !d && (0, r.jsx)(m.Z, {
       variant: n,
       className: a,

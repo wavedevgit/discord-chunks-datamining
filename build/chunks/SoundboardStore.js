@@ -39,11 +39,11 @@ function A() {
   E.clear(), b.clear(), T.clear(), S = false, v = 0, O = 0
 }
 
-function N() {
+function C() {
   b.clear(), T.clear()
 }
 
-function C() {
+function N() {
   v = 1
 }
 
@@ -82,7 +82,7 @@ function D(e) {
   E.set(t, n)
 }
 
-function L(e) {
+function x(e) {
   let {
     soundId: t,
     guildId: n
@@ -90,18 +90,18 @@ function L(e) {
   null == r || null == i || i < 0 || (r.splice(i, 1), E.set(n, [...r]))
 }
 
-function x() {
+function L() {
   O = 1
 }
 
-function M(e) {
+function j(e) {
   let {
     soundboardSounds: t
   } = e;
   E.set(p.X8, t), O = 2
 }
 
-function k(e) {
+function M(e) {
   var t, n, r;
   let {
     soundId: i,
@@ -110,7 +110,7 @@ function k(e) {
   b.set(i, o), T.set(a, s), a !== (null == (t = u.default.getCurrentUser()) ? true : t.id) && (S = true)
 }
 
-function j(e) {
+function k(e) {
   var t, n;
   let {
     soundId: r,
@@ -142,7 +142,7 @@ function B(e) {
   for (let e of y.keys()) null == r[e] && y.delete(e)
 }
 
-function V(e) {
+function Z(e) {
   let {
     settings: t
   } = e, {
@@ -155,14 +155,14 @@ function V(e) {
   } else n === m.yP.PRELOADED_USER_SETTINGS && B(r)
 }
 
-function F(e) {
+function V(e) {
   let {
     userId: t
   } = e;
   y.has(t) ? y.delete(t) : y.add(t)
 }
 
-function Z(e) {
+function F(e) {
   let {
     soundboardStoreState: t
   } = e;
@@ -233,20 +233,20 @@ class H extends(r = Chunk442837.ZP.Store) {
 g(H, "displayName", "SoundboardStore");
 let Y = new H(Chunk570140.Z, {
   LOGOUT: A,
-  GUILD_SOUNDBOARD_FETCH: C,
+  GUILD_SOUNDBOARD_FETCH: N,
   GUILD_SOUNDBOARD_SOUND_CREATE: w,
   GUILD_SOUNDBOARD_SOUND_UPDATE: w,
-  GUILD_SOUNDBOARD_SOUND_DELETE: L,
-  GUILD_SOUNDBOARD_SOUND_PLAY_START: k,
-  GUILD_SOUNDBOARD_SOUND_PLAY_END: j,
+  GUILD_SOUNDBOARD_SOUND_DELETE: x,
+  GUILD_SOUNDBOARD_SOUND_PLAY_START: M,
+  GUILD_SOUNDBOARD_SOUND_PLAY_END: k,
   GUILD_SOUNDBOARD_SOUNDS_UPDATE: D,
   USER_SOUNDBOARD_SET_VOLUME: G,
-  VOICE_CHANNEL_SELECT: N,
-  USER_SETTINGS_PROTO_UPDATE: V,
-  SOUNDBOARD_FETCH_DEFAULT_SOUNDS: x,
-  SOUNDBOARD_FETCH_DEFAULT_SOUNDS_SUCCESS: M,
+  VOICE_CHANNEL_SELECT: C,
+  USER_SETTINGS_PROTO_UPDATE: Z,
+  SOUNDBOARD_FETCH_DEFAULT_SOUNDS: L,
+  SOUNDBOARD_FETCH_DEFAULT_SOUNDS_SUCCESS: j,
   SOUNDBOARD_SOUNDS_RECEIVED: R,
   GUILD_DELETE: P,
-  AUDIO_TOGGLE_LOCAL_SOUNDBOARD_MUTE: F,
-  OVERLAY_INITIALIZE: Z
+  AUDIO_TOGGLE_LOCAL_SOUNDBOARD_MUTE: V,
+  OVERLAY_INITIALIZE: F
 })

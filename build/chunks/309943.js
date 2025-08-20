@@ -1,5 +1,5 @@
-/** Chunk was on 91584 **/
-/** chunk id: 309943, original params: t,e,r (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 309943, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 var Chunk76466 = require("./76466.js"),
   Chunk641686 = require("./641686.js"),
@@ -14,82 +14,82 @@ var Chunk76466 = require("./76466.js"),
   Chunk986464 = require("./986464.js"),
   Chunk838510 = require("./838510.js"),
   Chunk978113 = require("./978113.js"),
-  y = Chunk65183.OrderedSet,
-  v = {
-    replaceText: function(t, e, r, i, o) {
-      var a = d(h(t, e), e),
-        u = n.create({
-          style: i || y(),
-          entity: o || null
+  m = Chunk65183.OrderedSet,
+  g = {
+    replaceText: function(e, t, n, i, a) {
+      var o = p(_(e, t), t),
+        s = r.create({
+          style: i || m(),
+          entity: a || null
         });
-      return l(a, a.getSelectionAfter(), r, u)
+      return u(o, o.getSelectionAfter(), n, s)
     },
-    insertText: function(t, e, r, n, i) {
-      return e.isCollapsed() || f(false), v.replaceText(t, e, r, n, i)
+    insertText: function(e, t, n, r, i) {
+      return t.isCollapsed() || d(false), g.replaceText(e, t, n, r, i)
     },
-    moveText: function(t, e, r) {
-      var n = u(t, e),
-        i = v.removeRange(t, e, "backward");
-      return v.replaceWithFragment(i, r, n)
+    moveText: function(e, t, n) {
+      var r = s(e, t),
+        i = g.removeRange(e, t, "backward");
+      return g.replaceWithFragment(i, n, r)
     },
-    replaceWithFragment: function(t, e, r) {
-      var n = arguments.length > 3 && true !== arguments[3] ? arguments[3] : "REPLACE_WITH_NEW_DATA",
-        i = d(h(t, e), e);
-      return c(i, i.getSelectionAfter(), r, n)
+    replaceWithFragment: function(e, t, n) {
+      var r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : "REPLACE_WITH_NEW_DATA",
+        i = p(_(e, t), t);
+      return c(i, i.getSelectionAfter(), n, r)
     },
-    removeRange: function(t, e, r) {
-      e.getIsBackward() && (e = e.merge({
-        anchorKey: e.getFocusKey(),
-        anchorOffset: e.getFocusOffset(),
-        focusKey: e.getAnchorKey(),
-        focusOffset: e.getAnchorOffset(),
+    removeRange: function(e, t, n) {
+      t.getIsBackward() && (t = t.merge({
+        anchorKey: t.getFocusKey(),
+        anchorOffset: t.getFocusOffset(),
+        focusKey: t.getAnchorKey(),
+        focusOffset: t.getAnchorOffset(),
         isBackward: false
-      })), n = e.getAnchorKey(), i = e.getFocusKey(), o = t.getBlockForKey(n);
-      var n, i, o, u = t.getBlockForKey(i),
-        s = e.getStartOffset(),
-        c = e.getEndOffset(),
-        l = o.getEntityAt(s),
-        f = u.getEntityAt(c - 1);
-      if (n === i && l && l === f) {
-        var p = a(t.getEntityMap(), o, u, e, r);
-        return d(t, p)
+      })), r = t.getAnchorKey(), i = t.getFocusKey(), a = e.getBlockForKey(r);
+      var r, i, a, s = e.getBlockForKey(i),
+        l = t.getStartOffset(),
+        c = t.getEndOffset(),
+        u = a.getEntityAt(l),
+        d = s.getEntityAt(c - 1);
+      if (r === i && u && u === d) {
+        var f = o(e.getEntityMap(), a, s, t, n);
+        return p(e, f)
       }
-      return d(h(t, e), e)
+      return p(_(e, t), t)
     },
-    splitBlock: function(t, e) {
-      var r = d(h(t, e), e);
-      return g(r, r.getSelectionAfter())
+    splitBlock: function(e, t) {
+      var n = p(_(e, t), t);
+      return h(n, n.getSelectionAfter())
     },
-    applyInlineStyle: function(t, e, r) {
-      return i.add(t, e, r)
+    applyInlineStyle: function(e, t, n) {
+      return i.add(e, t, n)
     },
-    removeInlineStyle: function(t, e, r) {
-      return i.remove(t, e, r)
+    removeInlineStyle: function(e, t, n) {
+      return i.remove(e, t, n)
     },
-    setBlockType: function(t, e, r) {
-      return p(t, e, function(t) {
-        return t.merge({
-          type: r,
+    setBlockType: function(e, t, n) {
+      return f(e, t, function(e) {
+        return e.merge({
+          type: n,
           depth: 0
         })
       })
     },
-    setBlockData: function(t, e, r) {
-      return p(t, e, function(t) {
-        return t.merge({
-          data: r
+    setBlockData: function(e, t, n) {
+      return f(e, t, function(e) {
+        return e.merge({
+          data: n
         })
       })
     },
-    mergeBlockData: function(t, e, r) {
-      return p(t, e, function(t) {
-        return t.merge({
-          data: t.getData().merge(r)
+    mergeBlockData: function(e, t, n) {
+      return f(e, t, function(e) {
+        return e.merge({
+          data: e.getData().merge(n)
         })
       })
     },
-    applyEntity: function(t, e, r) {
-      return o(h(t, e), e, r)
+    applyEntity: function(e, t, n) {
+      return a(_(e, t), t, n)
     }
   };
-module.exports = v
+module.exports = g

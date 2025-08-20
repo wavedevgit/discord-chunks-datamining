@@ -1,5 +1,5 @@
 /** Chunk was on 56035 **/
-/** chunk id: 622594, original params: e,t,n (module,exports,require) **/
+/** chunk id: 622594, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => h
 }), require("./388685.js");
@@ -16,196 +16,196 @@ var Chunk951288 = require("./951288.js"),
   Chunk21243 = require("./21243.js");
 let h = Chunk647438.memo(function(e) {
   let {
-    playing: t,
-    onPausePlayback: n,
+    playing: n,
+    onPausePlayback: t,
     onPlaybackChange: i,
     onChangePosition: h,
     disabled: g = false
   } = e, p = function(e) {
-    for (var t = 1; t < arguments.length; t++) {
-      var n = null != arguments[t] ? arguments[t] : {},
-        l = Object.keys(n);
-      "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-        return Object.getOwnPropertyDescriptor(n, e).enumerable
-      }))), l.forEach(function(t) {
-        var l;
-        l = n[t], t in e ? Object.defineProperty(e, t, {
-          value: l,
+    for (var n = 1; n < arguments.length; n++) {
+      var t = null != arguments[n] ? arguments[n] : {},
+        a = Object.keys(t);
+      "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+        return Object.getOwnPropertyDescriptor(t, e).enumerable
+      }))), a.forEach(function(n) {
+        var a;
+        a = t[n], n in e ? Object.defineProperty(e, n, {
+          value: a,
           enumerable: true,
           configurable: true,
           writable: true
-        }) : e[t] = l
+        }) : e[n] = a
       })
     }
     return e
   }({}, f.nl), {
     audio: y
-  } = (0, u.p)(), b = null != y, v = a.useRef(null), x = a.useRef(null), j = a.useRef(null), [w, N] = a.useState(0), [C, S] = a.useState(0), [O, E] = a.useState(0), [P, Z] = a.useState(false), [M, k] = a.useState(false), [I, T] = a.useState(false), [D, R] = a.useState(0), [_, F] = a.useState(false), A = a.useMemo(() => D / p.fineTuningScale, [p.fineTuningScale, D]);
-  a.useEffect(() => {
+  } = (0, u.p)(), b = null != y, v = l.useRef(null), x = l.useRef(null), j = l.useRef(null), [_, w] = l.useState(0), [N, C] = l.useState(0), [S, O] = l.useState(0), [E, I] = l.useState(false), [P, k] = l.useState(false), [Z, M] = l.useState(false), [T, F] = l.useState(0), [D, R] = l.useState(false), B = l.useMemo(() => T / p.fineTuningScale, [p.fineTuningScale, T]);
+  l.useEffect(() => {
     if (null == y) return;
-    let e = y.duration * o.Z.Millis.SECOND;
-    N(0), S(0), E(e), R(e)
+    let e = y.duration * s.Z.Millis.SECOND;
+    w(0), C(0), O(e), F(e)
   }, [y]);
-  let B = a.useCallback((e, t) => {
-      if (n(), 0 === e.button) switch (t) {
+  let H = l.useCallback((e, n) => {
+      if (t(), 0 === e.button) switch (n) {
         case 0:
-          Z(true);
+          I(true);
           break;
         case 1:
           k(true);
           break;
         case 2:
-          T(true)
+          M(true)
       }
-    }, [n]),
-    U = a.useCallback(e => {
+    }, [t]),
+    A = l.useCallback(e => {
       switch (e) {
         case 0:
-          Z(false);
+          I(false);
           break;
         case 1:
           k(false);
           break;
         case 2:
-          T(false)
+          M(false)
       }
-      F(false)
+      R(false)
     }, []),
-    z = a.useCallback(e => {
+    U = l.useCallback(e => {
+      if (null == y || !E) return;
+      let n = parseInt(e.target.value),
+        t = n > S ? S : n;
+      i((0, c.my)(t)), w(t), C(t)
+    }, [y, i, S, E]),
+    z = l.useCallback(e => {
       if (null == y || !P) return;
-      let t = parseInt(e.target.value),
-        n = t > O ? O : t;
-      i((0, c.my)(n)), N(n), S(n)
-    }, [y, i, O, P]),
-    L = a.useCallback(e => {
-      if (null == y || !M) return;
-      let t = parseInt(e.target.value);
-      t < w ? (i((0, c.my)(w)), S(w)) : t > O ? (i((0, c.my)(O)), S(O)) : (i((0, c.my)(t)), S(t))
-    }, [y, i, O, M, w]),
-    G = a.useCallback(e => {
-      if (null == y || !I) return;
-      let t = parseInt(e.target.value),
-        n = t > w ? t : w;
-      i((0, c.my)(w)), S(w), E(n)
-    }, [y, i, I, w]);
-  return a.useEffect(() => {
+      let n = parseInt(e.target.value);
+      n < _ ? (i((0, c.my)(_)), C(_)) : n > S ? (i((0, c.my)(S)), C(S)) : (i((0, c.my)(n)), C(n))
+    }, [y, i, S, P, _]),
+    L = l.useCallback(e => {
+      if (null == y || !Z) return;
+      let n = parseInt(e.target.value),
+        t = n > _ ? n : _;
+      i((0, c.my)(_)), C(_), O(t)
+    }, [y, i, Z, _]);
+  return l.useEffect(() => {
     null != h && b && h({
-      startPositionMs: w,
-      endPositionMs: O,
-      playheadPositionMs: C
+      startPositionMs: _,
+      endPositionMs: S,
+      playheadPositionMs: N
     })
-  }, [w, O, h, b, C]), a.useEffect(() => {
+  }, [_, S, h, b, N]), l.useEffect(() => {
     let e;
-    if (null != y) return t && (e = setInterval(() => {
-      y.currentTime < (0, c.my)(O) ? y.currentTime >= (0, c.my)(C) && S(y.currentTime * o.Z.Millis.SECOND) : (n((0, c.my)(w)), S(w))
+    if (null != y) return n && (e = setInterval(() => {
+      y.currentTime < (0, c.my)(S) ? y.currentTime >= (0, c.my)(N) && C(y.currentTime * s.Z.Millis.SECOND) : (t((0, c.my)(_)), C(_))
     }, 16)), () => {
       clearInterval(e)
     }
-  }, [y, O, n, C, t, w]), a.useEffect(() => {
+  }, [y, S, t, N, n, _]), l.useEffect(() => {
     if (p.fineTuningDelay <= 0) return;
     let e = setTimeout(() => {
-      P && w == w && false === _ ? F(w) : I && O == O && false === _ ? F(O) : M && C == C && false === _ && F(C)
+      E && _ == _ && false === D ? R(_) : Z && S == S && false === D ? R(S) : P && N == N && false === D && R(N)
     }, p.fineTuningDelay);
     return () => {
       clearTimeout(e)
     }
-  }, [p.fineTuningDelay, I, O, _, M, C, P, w]), (0, l.jsxs)("div", {
+  }, [p.fineTuningDelay, Z, S, D, P, N, E, _]), (0, a.jsxs)("div", {
     className: r()(m.timeline, {
       [m.initialized]: b
     }),
-    children: [(0, l.jsxs)("div", {
+    children: [(0, a.jsxs)("div", {
       className: m.rangeHandleContainer,
-      children: [(0, l.jsxs)("div", {
+      children: [(0, a.jsxs)("div", {
         className: m.rangeHandleFrame,
-        children: [(0, l.jsx)("input", {
+        children: [(0, a.jsx)("input", {
           ref: v,
           className: r()(m.rangeHandle, m.rangeHandleStart),
           type: "range",
-          min: (0, c.ao)(_, A, D),
-          max: (0, c.MN)(_, A, D),
-          value: w,
-          onChange: z,
-          onMouseDown: e => B(e, 0),
-          onMouseUp: () => U(0),
+          min: (0, c.ao)(D, B, T),
+          max: (0, c.MN)(D, B, T),
+          value: _,
+          onChange: U,
+          onMouseDown: e => H(e, 0),
+          onMouseUp: () => A(0),
           disabled: !b || g
-        }), (0, l.jsx)("input", {
+        }), (0, a.jsx)("input", {
           ref: j,
           className: r()(m.rangeHandle, m.rangeHandleEnd),
           type: "range",
-          min: (0, c.ao)(_, A, D),
-          max: (0, c.MN)(_, A, D),
-          value: O,
-          onChange: G,
-          onMouseDown: e => B(e, 2),
-          onMouseUp: () => U(2),
+          min: (0, c.ao)(D, B, T),
+          max: (0, c.MN)(D, B, T),
+          value: S,
+          onChange: L,
+          onMouseDown: e => H(e, 2),
+          onMouseUp: () => A(2),
           disabled: !b || g
         })]
-      }), (0, l.jsx)("div", {
+      }), (0, a.jsx)("div", {
         className: m.__invalid_handlePlayheadTrack,
-        children: (0, l.jsx)("input", {
+        children: (0, a.jsx)("input", {
           ref: x,
           className: r()(m.rangeHandle, m.rangeHandlePlayhead),
           type: "range",
-          min: (0, c.ao)(_, A, D),
-          max: (0, c.MN)(_, A, D),
-          value: C,
-          onChange: L,
-          onMouseDown: e => B(e, 1),
-          onMouseUp: () => U(1),
+          min: (0, c.ao)(D, B, T),
+          max: (0, c.MN)(D, B, T),
+          value: N,
+          onChange: z,
+          onMouseDown: e => H(e, 1),
+          onMouseUp: () => A(1),
           disabled: !b || g
         })
       })]
-    }), (0, l.jsxs)("div", {
+    }), (0, a.jsxs)("div", {
       className: m.handleContainer,
-      children: [(0, l.jsxs)("div", {
+      children: [(0, a.jsxs)("div", {
         className: r()(m.handleFrame, {
-          [m.startDragging]: P,
-          [m.endDragging]: I
+          [m.startDragging]: E,
+          [m.endDragging]: Z
         }),
         style: {
-          left: "".concat((0, c.pN)(w, _, A, D), "%"),
-          right: "".concat((0, c.kD)(O, _, A, D), "%")
+          left: "".concat((0, c.pN)(_, D, B, T), "%"),
+          right: "".concat((0, c.kD)(S, D, B, T), "%")
         },
-        children: [(0, l.jsx)("div", {
+        children: [(0, a.jsx)("div", {
           className: r()(m.handleIconFrame, m.handleIconFrameStart),
-          children: (0, l.jsx)("div", {
+          children: (0, a.jsx)("div", {
             className: r()(m.handleIconContainer, m.__invalid_start),
-            children: (0, l.jsx)(s.Z, {
-              direction: s.Z.Directions.RIGHT,
+            children: (0, a.jsx)(o.Z, {
+              direction: o.Z.Directions.RIGHT,
               className: m.handleIcon,
               width: 16,
               height: 16
             })
           })
-        }), (0, l.jsx)("div", {
+        }), (0, a.jsx)("div", {
           className: r()(m.handleIconFrame, m.handleIconFrameEnd),
-          children: (0, l.jsx)("div", {
+          children: (0, a.jsx)("div", {
             className: r()(m.handleIconContainer, m.__invalid_end),
-            children: (0, l.jsx)(s.Z, {
-              direction: s.Z.Directions.LEFT,
+            children: (0, a.jsx)(o.Z, {
+              direction: o.Z.Directions.LEFT,
               className: m.handleIcon,
               width: 16,
               height: 16
             })
           })
         })]
-      }), (0, l.jsx)("div", {
+      }), (0, a.jsx)("div", {
         className: m.playheadTrack,
-        children: (0, l.jsx)("div", {
+        children: (0, a.jsx)("div", {
           className: r()(m.playhead, {
-            [m.dragging]: M || P || I || t
+            [m.dragging]: P || E || Z || n
           }),
           style: {
-            left: "".concat((0, c.pN)(C, _, A, D), "%")
+            left: "".concat((0, c.pN)(N, D, B, T), "%")
           }
         })
       })]
-    }), (0, l.jsx)("div", {
+    }), (0, a.jsx)("div", {
       className: m.waveformContainer,
-      children: (0, l.jsx)(d.Z, {
-        fineTuning: _,
-        fineTuningResolution: A,
-        duration: D
+      children: (0, a.jsx)(d.Z, {
+        fineTuning: D,
+        fineTuningResolution: B,
+        duration: T
       })
     })]
   })

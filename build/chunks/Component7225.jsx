@@ -1,7 +1,7 @@
-/** Chunk was on 19517 **/
-/** chunk id: 7225, original params: e,t,r (module,exports,require) **/
+/** Chunk was on 62199 **/
+/** chunk id: 7225, original params: t,e,s (module,exports,require) **/
 require.d(exports, {
-  default: () => j
+  default: () => N
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -23,91 +23,91 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk465103 = require("./465103.js");
 
-function j(e) {
+function N(t) {
   let {
-    onClose: t,
-    transitionState: r,
-    appId: j,
-    guildId: S
-  } = e, v = (0, l.e7)([d.Z], () => d.Z.getApplication(j), [j]), [O, w] = n.useState(() => d.Z.isFetchingApplication(j) ? {
+    onClose: e,
+    transitionState: s,
+    appId: N,
+    guildId: b
+  } = t, v = (0, o.e7)([p.Z], () => p.Z.getApplication(N), [N]), [A, T] = a.useState(() => p.Z.isFetchingApplication(N) ? {
     status: 1
   } : {
     status: 0
   });
-  n.useEffect(() => {
-    0 === O.status && (w({
+  a.useEffect(() => {
+    0 === A.status && (T({
       status: 1
-    }), a.ZP.fetchApplication(j).then(() => {
-      w({
+    }), l.ZP.fetchApplication(N).then(() => {
+      T({
         status: 2
       })
-    }).catch(e => {
-      w({
+    }).catch(t => {
+      T({
         status: 3,
-        error: e.message
+        error: t.message
       })
     }))
-  }, [j, O.status]);
+  }, [N, A.status]);
   let {
-    subscriptions: y,
+    subscriptions: w,
     otps: P
-  } = (0, _.q)(j);
+  } = (0, m.q)(N);
   if (null == v) return null;
-  let Z = L.intl.formatToPlainString(L.t.XDRjs7, {
+  let Z = j.intl.formatToPlainString(j.t.XDRjs7, {
     appName: v.name
   });
-  return (0, i.jsxs)(c.Y0X, {
-    transitionState: r,
+  return (0, r.jsxs)(c.Y0X, {
+    transitionState: s,
     "aria-label": Z,
     size: c.CgR.DYNAMIC,
-    className: x.modal,
+    className: C.modal,
     parentComponent: "AppStorefrontModal",
-    children: [(0, i.jsxs)(c.xBx, {
-      className: x.modalHeader,
-      children: [(0, i.jsxs)("div", {
-        className: x.modalTitle,
-        children: [(0, i.jsx)(p.Z, {}), (0, i.jsx)(c.X6q, {
+    children: [(0, r.jsxs)(c.xBx, {
+      className: C.modalHeader,
+      children: [(0, r.jsxs)("div", {
+        className: C.modalTitle,
+        children: [(0, r.jsx)(u.Z, {}), (0, r.jsx)(c.X6q, {
           variant: "heading-md/semibold",
           children: Z
         })]
-      }), (0, i.jsxs)("div", {
-        className: x.modalHeaderLinks,
-        children: [u.wS && (0, i.jsx)(s.zx, {
-          look: s.iL.BLANK,
-          size: s.Ph.ICON,
-          color: s.Tt.TRANSPARENT,
-          "aria-label": L.intl.string(L.t.WqhZsr),
+      }), (0, r.jsxs)("div", {
+        className: C.modalHeaderLinks,
+        children: [_.wS && (0, r.jsx)(n.zx, {
+          look: n.iL.BLANK,
+          size: n.Ph.ICON,
+          color: n.Tt.TRANSPARENT,
+          "aria-label": j.intl.string(j.t.WqhZsr),
           onClick: () => {
-            let e = "".concat(location.protocol, "//").concat(location.host).concat(b.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(j, g.GlobalDiscoveryAppsSections.STORE));
-            (0, u.JG)(e, () => (0, c.showToast)((0, c.createToast)(L.intl.string(L.t["L/PwZW"]), c.ToastType.SUCCESS))), (0, f.X)(j, f.B.STORE_MODAL)
+            let t = "".concat(location.protocol, "//").concat(location.host).concat(S.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(N, g.GlobalDiscoveryAppsSections.STORE));
+            (0, _.JG)(t, () => (0, c.showToast)((0, c.createToast)(j.intl.string(j.t["L/PwZW"]), c.ToastType.SUCCESS))), (0, f.X)(N, f.B.STORE_MODAL)
           },
-          children: (0, i.jsx)(c.xPt, {
+          children: (0, r.jsx)(c.xPt, {
             size: "sm"
           })
-        }), (0, i.jsx)(c.olH, {
-          onClick: t,
-          className: x.modalCloseBtn
+        }), (0, r.jsx)(c.olH, {
+          onClick: e,
+          className: C.modalCloseBtn
         })]
       })]
-    }), (0, i.jsx)("div", {
-      className: x.scrollerWrapper,
-      children: (0, i.jsx)(o.Z, {
-        className: x.scroller,
-        children: (0, i.jsx)(h.AF, {
+    }), (0, r.jsx)("div", {
+      className: C.scrollerWrapper,
+      children: (0, r.jsx)(i.Z, {
+        className: C.scroller,
+        children: (0, r.jsx)(x.AF, {
           app: v,
-          guildId: S,
-          subscriptions: y,
+          guildId: b,
+          subscriptions: w,
           otps: P
         })
       })
-    }), (0, i.jsx)(c.mzw, {
-      justify: C.Z.Justify.END,
-      children: (0, i.jsx)(c.Text, {
+    }), (0, r.jsx)(c.mzw, {
+      justify: d.Z.Justify.END,
+      children: (0, r.jsx)(c.Text, {
         variant: "text-md/normal",
-        children: null != v.termsOfServiceUrl || null != v.privacyPolicyUrl ? (0, i.jsx)(m.Z, {
+        children: null != v.termsOfServiceUrl || null != v.privacyPolicyUrl ? (0, r.jsx)(h.Z, {
           termsOfServiceUrl: v.termsOfServiceUrl,
           privacyPolicyUrl: v.privacyPolicyUrl
-        }) : L.intl.string(L.t["3ZY+0N"])
+        }) : j.intl.string(j.t["3ZY+0N"])
       })
     })]
   })

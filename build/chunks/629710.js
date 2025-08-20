@@ -5,14 +5,14 @@ require.d(exports, {
   AT: () => E,
   DQ: () => A,
   Hz: () => w,
-  LD: () => N,
+  LD: () => C,
   MD: () => S,
   SI: () => P,
   UJ: () => R,
   X6: () => I,
   aQ: () => U,
-  g4: () => C,
-  hi: () => L,
+  g4: () => N,
+  hi: () => x,
   kC: () => v,
   kh: () => O,
   px: () => G,
@@ -47,7 +47,7 @@ let g = false,
   y = (e, t) => {
     let n = d.default.getCurrentUser();
     if (null == n || t === n.id) return m.qn.NONE;
-    let r = L(e, t, [l.Z, u.Z]);
+    let r = x(e, t, [l.Z, u.Z]);
     return null == r ? m.qn.NONE : O(r)
   },
   O = e => {
@@ -63,10 +63,10 @@ function v(e) {
 function I(e, t) {
   var n, r;
   if (t === m.qn.NONE || null == e) returnfalse;
-  if ((null == (n = e.attachments) ? true : n.some(e => N({
+  if ((null == (n = e.attachments) ? true : n.some(e => C({
       type: p.l.Attachment,
       media: e
-    }, t).length > 0)) || (null == (r = e.embeds) ? true : r.some(e => N({
+    }, t).length > 0)) || (null == (r = e.embeds) ? true : r.some(e => C({
       type: p.l.Embed,
       media: e
     }, t).length > 0))) returntrue;
@@ -137,13 +137,13 @@ function A(e) {
   }
 }
 
-function N(e, t) {
+function C(e, t) {
   if (t === m.qn.NONE) return [];
   let n = D(t);
   return 0 === n.length ? [] : n.filter(t => P(t, e)).map(e => m.Fj[e].obscureReason)
 }
 
-function C(e, t) {
+function N(e, t) {
   if (t === m.qn.NONE) returnfalse;
   let n = D(t);
   return 0 !== n.length && n.filter(t => P(t, e)).length > 0
@@ -155,11 +155,11 @@ function R(e, t) {
   if (0 === n.length) returnfalse;
   switch (e.type) {
     case p.l.Embed:
-      return x(e.media, n);
+      return L(e.media, n);
     case p.l.Attachment:
-      return M(e.media, n);
+      return j(e.media, n);
     case p.l.GenericMedia:
-      return k(e.media, n);
+      return M(e.media, n);
     default:
       returnfalse
   }
@@ -201,7 +201,7 @@ function D(e) {
   return t
 }
 
-function L(e, t) {
+function x(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [l.Z, u.Z],
     [r, i] = n,
     a = r.getChannel(e),
@@ -209,31 +209,31 @@ function L(e, t) {
   return null == o || t === o.id || null == a ? null : a.isDM() || a.isGroupDM() ? null != t && i.getFriendIDs().includes(t) ? p.n.FRIEND_DM : p.n.NON_FRIEND_DM : p.n.GUILD
 }
 
-function x(e, t) {
+function L(e, t) {
   var n, r, i, a, o, s, l;
   return !(0 === t.length || null == e || 0 === t.filter(t => !P(t, {
     type: p.l.Embed,
     media: e
-  })).length || "video" in e && null != e.video && (null == (n = e.video) ? true : n.width) === 0 && (null == (r = e.video) ? true : r.height) === 0 || "thumbnail" in e && null != e.thumbnail && (null == (i = e.thumbnail) ? true : i.width) === 0 && (null == (a = e.thumbnail) ? true : a.height) === 0 || "image" in e && null != e.image && (null == (o = e.image) ? true : o.width) === 0 && (null == (s = e.image) ? true : s.height) === 0 || "images" in e && (null == (l = e.images) ? true : l.some(e => null != e && 0 === e.width && 0 === e.height))) && j(B(e), t)
+  })).length || "video" in e && null != e.video && (null == (n = e.video) ? true : n.width) === 0 && (null == (r = e.video) ? true : r.height) === 0 || "thumbnail" in e && null != e.thumbnail && (null == (i = e.thumbnail) ? true : i.width) === 0 && (null == (a = e.thumbnail) ? true : a.height) === 0 || "image" in e && null != e.image && (null == (o = e.image) ? true : o.width) === 0 && (null == (s = e.image) ? true : s.height) === 0 || "images" in e && (null == (l = e.images) ? true : l.some(e => null != e && 0 === e.width && 0 === e.height))) && k(B(e), t)
+}
+
+function j(e, t) {
+  var n;
+  return 0 !== t.length && 0 !== t.filter(t => !P(t, {
+    type: p.l.Attachment,
+    media: e
+  })).length && k(null != (n = e.content_scan_version) ? n : e.contentScanVersion, t)
 }
 
 function M(e, t) {
   var n;
   return 0 !== t.length && 0 !== t.filter(t => !P(t, {
-    type: p.l.Attachment,
+    type: p.l.GenericMedia,
     media: e
-  })).length && j(null != (n = e.content_scan_version) ? n : e.contentScanVersion, t)
+  })).length && k(null == (n = e.contentScanMetadata) ? true : n.version, t)
 }
 
 function k(e, t) {
-  var n;
-  return 0 !== t.length && 0 !== t.filter(t => !P(t, {
-    type: p.l.GenericMedia,
-    media: e
-  })).length && j(null == (n = e.contentScanMetadata) ? true : n.version, t)
-}
-
-function j(e, t) {
   let n = h.Z.validContentScanVersion;
   return e !== g && (t.includes(m._.GORE) ? null == e || e < n : null == e)
 }

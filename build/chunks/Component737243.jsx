@@ -1,4 +1,4 @@
-/** Chunk was on 36499 **/
+/** Chunk was on 5665 **/
 /** chunk id: 737243, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -27,11 +27,11 @@ let h = Chunk647438.memo(function(e) {
     setPopout: x
   } = e, {
     isInteractionUserBlocked: v,
-    isInteractionUserIgnored: j
+    isInteractionUserIgnored: O
   } = (0, l.cj)([c.Z], () => ({
     isInteractionUserBlocked: c.Z.isBlockedForMessage(h),
     isInteractionUserIgnored: c.Z.isIgnoredForMessage(h)
-  }), [h]), O = (0, l.e7)([s.Z], () => s.Z.getMessageByReference(null == h ? true : h.messageReference)), E = (0, d.wq)(null == (t = h.interaction) ? true : t.user.id, f.id), S = (0, d.Nk)(h.interaction, f, g, x), P = (0, d.NU)(b, x), I = (0, o.t0)(h), Z = (null == I ? true : I.type) === a.B8.APPLICATION_COMMAND ? null == (n = I.target_user) ? true : n.id : true, T = (0, d.wq)(Z, f.id), N = (0, d.JC)(Z, f, _, x), A = (0, d.rY)(C, x), w = (0, d.Xn)(y, x), R = i.useCallback(() => {
+  }), [h]), j = (0, l.e7)([s.Z], () => s.Z.getMessageByReference(null == h ? true : h.messageReference)), E = (0, d.wq)(null == (t = h.interaction) ? true : t.user.id, f.id), S = (0, d.Nk)(h.interaction, f, g, x), P = (0, d.NU)(b, x), I = (0, o.t0)(h), Z = (null == I ? true : I.type) === a.B8.APPLICATION_COMMAND ? null == (n = I.target_user) ? true : n.id : true, T = (0, d.wq)(Z, f.id), N = (0, d.JC)(Z, f, _, x), A = (0, d.rY)(C, x), w = (0, d.Xn)(y, x), R = i.useCallback(() => {
     x({
       interactionUsernameProfile: false,
       interactionAvatarProfile: false,
@@ -47,16 +47,16 @@ let h = Chunk647438.memo(function(e) {
     referencedAvatarProfile: C,
     referencedUsernameProfile: _,
     replyReference: h.messageReference,
-    replyMessage: O,
+    replyMessage: j,
     isReplySpineClickable: false,
     showReplySpine: false
-  }), [f, m, h, C, O, _, x]);
+  }), [f, m, h, C, j, _, x]);
   return (0, r.jsx)(u.Z, {
     message: h,
     channel: f,
     compact: m,
     isInteractionUserBlocked: v,
-    isInteractionUserIgnored: j,
+    isInteractionUserIgnored: O,
     showAvatarPopout: b,
     showUsernamePopout: g,
     showDataPopout: y,

@@ -1,11 +1,14 @@
-/** Chunk was on 66181 **/
-/** chunk id: 45474, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 45474, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  O: () => s,
+  O: () => i,
   R: () => r
 }), require("./647438.js");
-var i, r = ((i = {})[i.WHAT_YOU_LOSE = 1] = "WHAT_YOU_LOSE", i[i.CONFIRM = 2] = "CONFIRM", i[i.PREVIEW = 3] = "PREVIEW", i[i.CONFIRM_DISCOUNT = 4] = "CONFIRM_DISCOUNT", i[i.DISCOUNT_APPLIED = 5] = "DISCOUNT_APPLIED", i[i.PAUSE_SELECT = 6] = "PAUSE_SELECT", i[i.PAUSE_CONFIRM = 7] = "PAUSE_CONFIRM", i);
-let s = {
+var r = function(e) {
+  return e[e.WHAT_YOU_LOSE = 1] = "WHAT_YOU_LOSE", e[e.CONFIRM = 2] = "CONFIRM", e[e.PREVIEW = 3] = "PREVIEW", e[e.CONFIRM_DISCOUNT = 4] = "CONFIRM_DISCOUNT", e[e.DISCOUNT_APPLIED = 5] = "DISCOUNT_APPLIED", e[e.PAUSE_SELECT = 6] = "PAUSE_SELECT", e[e.PAUSE_CONFIRM = 7] = "PAUSE_CONFIRM", e
+}({});
+let i = {
   1: "What You're Losing",
   2: "Confirm Cancellation",
   3: "Preview Updated Subscription",

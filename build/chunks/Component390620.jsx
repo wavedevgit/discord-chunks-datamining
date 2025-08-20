@@ -1,12 +1,12 @@
-/** Chunk was on 67079 **/
+/** Chunk was on 65819 **/
 /** chunk id: 390620, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  y: () => f
+  y: () => x
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk596454 = require("./596454.jsx"),
@@ -17,32 +17,32 @@ var Chunk120356 = require("./120356.js"),
   Chunk583140 = require("./583140.js");
 let g = 6 * Chunk70956.Z.Millis.SECOND;
 
-function p(e) {
+function h(e) {
   let {
     emoji: t,
     guildId: n
-  } = e, l = (0, i.e7)([u.Z], () => {
+  } = e, l = (0, a.e7)([u.Z], () => {
     var e;
     return null == (e = u.Z.getGuild(n)) ? true : e.name
   });
   return (0, r.jsxs)("div", {
-    className: a()(h.toast, m.toast),
-    children: [(0, r.jsx)(o.Z, {
+    className: i()(f.toast, m.toast),
+    children: [(0, r.jsx)(s.Z, {
       emojiId: t.id,
       size: "default"
-    }), (0, r.jsx)(s.Text, {
+    }), (0, r.jsx)(o.Text, {
       variant: "text-md/normal",
       color: "text-tertiary",
       children: d.intl.format(d.t.BaxFf3, {
         emojiName: t.name,
-        emojiNameHook: (e, t) => (0, r.jsx)(s.Text, {
+        emojiNameHook: (e, t) => (0, r.jsx)(o.Text, {
           variant: "text-md/semibold",
           color: "text-primary",
           tag: "strong",
           children: e
         }, t),
         guildName: l,
-        guildNameHook: (e, t) => (0, r.jsx)(s.Text, {
+        guildNameHook: (e, t) => (0, r.jsx)(o.Text, {
           variant: "text-md/semibold",
           color: "text-primary",
           tag: "strong",
@@ -53,14 +53,14 @@ function p(e) {
   })
 }
 
-function f(e) {
+function x(e) {
   let {
     emoji: t,
     guildId: n
   } = e;
-  (0, s.showToast)((0, s.createToast)("", s.ToastType.CUSTOM, {
-    position: s.ToastPosition.TOP,
-    component: (0, r.jsx)(p, {
+  (0, o.showToast)((0, o.createToast)("", o.ToastType.CUSTOM, {
+    position: o.ToastPosition.TOP,
+    component: (0, r.jsx)(h, {
       emoji: t,
       guildId: n
     }),

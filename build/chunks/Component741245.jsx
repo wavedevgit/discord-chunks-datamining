@@ -1,13 +1,14 @@
-/** Chunk was on 8016 **/
-/** chunk id: 741245, original params: a,l,e (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 741245, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Yk: () => v,
-  ZP: () => L
+  Yk: () => I,
+  ZP: () => S
 }), require("./415506.js"), require("./388685.js");
-var h, t, Chunk951288 = require("./951288.js"),
+var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  c = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk748780 = require("./748780.js"),
   Chunk692547 = require("./692547.js"),
   Chunk780384 = require("./780384.js"),
@@ -17,15 +18,63 @@ var h, t, Chunk951288 = require("./951288.js"),
   Chunk474936 = require("./474936.js"),
   Chunk513825 = require("./513825.js");
 
-function u(a, l, e) {
-  return l in a ? Object.defineProperty(a, l, {
-    value: e,
+function m(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
     enumerable: true,
     configurable: true,
     writable: true
-  }) : a[l] = e, a
+  }) : e[t] = n, e
 }
-let E = Object.freeze({
+
+function g(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      m(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function E(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function b(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+
+function y(e, t) {
+  if (null == e) return {};
+  var n, r, i = O(e, t);
+  if (Object.getOwnPropertySymbols) {
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+  }
+  return i
+}
+
+function O(e, t) {
+  if (null == e) return {};
+  var n, r, i = {},
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+  return i
+}
+let v = Object.freeze({
   DURATION: {
     [Chunk474936.p9.TIER_0]: 1e3,
     [Chunk474936.p9.TIER_1]: 1e3,
@@ -39,29 +88,31 @@ let E = Object.freeze({
   FLASH_TIME_PERCENT: .72,
   FLASH_DURATION_PERCENT: .08
 });
-var v = ((t = {}).PREMIUM_ACTIVATED = "PREMIUM_ACTIVATED", t.PREMIUM_UPDATED = "PREMIUM_UPDATED", t.PREMIUM_UPGRADED = "PREMIUM_UPGRADED", t.GUILD_BOOST_APPLIED = "GUILD_BOOST_APPLIED", t.PREMIUM_PAYMENT_STARTED = "PREMIUM_PAYMENT_STARTED", t);
-class g extends(h = Chunk647438.PureComponent) {
+var I = function(e) {
+  return e.PREMIUM_ACTIVATED = "PREMIUM_ACTIVATED", e.PREMIUM_UPDATED = "PREMIUM_UPDATED", e.PREMIUM_UPGRADED = "PREMIUM_UPGRADED", e.GUILD_BOOST_APPLIED = "GUILD_BOOST_APPLIED", e.PREMIUM_PAYMENT_STARTED = "PREMIUM_PAYMENT_STARTED", e
+}({});
+class T extends(r = Chunk647438.PureComponent) {
   componentDidMount() {
     this.animate()
   }
   animate() {
     let {
-      premiumType: a
+      premiumType: e
     } = this.props;
     Chunk748780.Z.timing(this.animation, {
       toValue: 1,
-      delay: E.DELAY[module],
-      duration: E.DURATION[module]
+      delay: v.DELAY[module],
+      duration: v.DURATION[module]
     }).start()
   }
   getContainerStyle() {
     let {
-      flashColor: a
-    } = this.props, l = E.FLASH_TIME_PERCENT, e = E.FLASH_DURATION_PERCENT, h = (0, Chunk302221.Cj)(module, 0);
+      flashColor: e
+    } = this.props, t = v.FLASH_TIME_PERCENT, n = v.FLASH_DURATION_PERCENT, r = (0, Chunk302221.Cj)(module, 0);
     return {
       backgroundColor: this.animation.interpolate({
         inputRange: [0, exports, exports, exports + require, 1],
-        outputRange: [h, h, module, module, h]
+        outputRange: [r, r, module, module, r]
       })
     }
   }
@@ -77,8 +128,8 @@ class g extends(h = Chunk647438.PureComponent) {
   }
   getSvgBorderGradientId() {
     let {
-      premiumType: a,
-      type: l
+      premiumType: e,
+      type: t
     } = this.props;
     switch (exports) {
       case "GUILD_BOOST_APPLIED":
@@ -96,7 +147,7 @@ class g extends(h = Chunk647438.PureComponent) {
   }
   renderSvgBorder() {
     let {
-      type: a
+      type: e
     } = this.props;
     switch (module) {
       case "GUILD_BOOST_APPLIED":
@@ -174,7 +225,7 @@ class g extends(h = Chunk647438.PureComponent) {
   }
   renderSvgCopy() {
     let {
-      type: a
+      type: e
     } = this.props;
     switch (module) {
       case "GUILD_BOOST_APPLIED":
@@ -276,10 +327,10 @@ class g extends(h = Chunk647438.PureComponent) {
   }
   render() {
     let {
-      className: a
+      className: e
     } = this.props;
     return (0, Chunk951288.jsxs)("div", {
-      className: c()(Chunk513825.container, module),
+      className: s()(Chunk513825.container, module),
       children: [this.renderSvgBorder(), (0, Chunk951288.jsxs)(Chunk748780.Z.div, {
         className: Chunk513825.animationContainer,
         style: this.getContainerStyle(),
@@ -290,56 +341,21 @@ class g extends(h = Chunk647438.PureComponent) {
       })]
     })
   }
-  constructor(...a) {
-    super(...a), u(this, "animation", new i.Z.Value(0))
+  constructor(...e) {
+    super(...e), m(this, "animation", new l.Z.Value(0))
   }
 }
 
-function L(a) {
-  var l, e, {
-      theme: h
-    } = a,
-    t = function(a, l) {
-      if (null == a) return {};
-      var e, h, t = function(a, l) {
-        if (null == a) return {};
-        var e, h, t = {},
-          r = Object.keys(a);
-        for (h = 0; h < r.length; h++) e = r[h], l.indexOf(e) >= 0 || (t[e] = a[e]);
-        return t
-      }(a, l);
-      if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(a);
-        for (h = 0; h < r.length; h++) e = r[h], !(l.indexOf(e) >= 0) && Object.prototype.propertyIsEnumerable.call(a, e) && (t[e] = a[e])
-      }
-      return t
-    }(a, ["theme"]);
-  let s = (0, p.dQu)(o.Z.unsafe_rawColors.WHITE_500).hex(),
-    n = (0, p.dQu)(o.Z.unsafe_rawColors.BRAND_500).hex(),
-    c = (0, d.wj)(h) ? s : n;
-  return (0, r.jsx)(g, (l = function(a) {
-    for (var l = 1; l < arguments.length; l++) {
-      var e = null != arguments[l] ? arguments[l] : {},
-        h = Object.keys(e);
-      "function" == typeof Object.getOwnPropertySymbols && (h = h.concat(Object.getOwnPropertySymbols(e).filter(function(a) {
-        return Object.getOwnPropertyDescriptor(e, a).enumerable
-      }))), h.forEach(function(l) {
-        u(a, l, e[l])
-      })
-    }
-    return a
-  }({}, t), e = e = {
-    theme: h,
-    flashColor: c
-  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(e)) : (function(a, l) {
-    var e = Object.keys(a);
-    if (Object.getOwnPropertySymbols) {
-      var h = Object.getOwnPropertySymbols(a);
-      e.push.apply(e, h)
-    }
-    return e
-  })(Object(e)).forEach(function(a) {
-    Object.defineProperty(l, a, Object.getOwnPropertyDescriptor(e, a))
-  }), l))
+function S(e) {
+  var {
+    theme: t
+  } = e, n = y(e, ["theme"]);
+  let r = (0, d.dQu)(c.Z.unsafe_rawColors.WHITE_500).hex(),
+    a = (0, d.dQu)(c.Z.unsafe_rawColors.BRAND_500).hex(),
+    o = (0, u.wj)(t) ? r : a;
+  return (0, i.jsx)(T, b(g({}, n), {
+    theme: t,
+    flashColor: o
+  }))
 }
-u(g, "Types", v), L.Types = v
+m(T, "Types", I), S.Types = I

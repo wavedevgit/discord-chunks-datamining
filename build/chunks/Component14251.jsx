@@ -1,7 +1,7 @@
 /** Chunk was on 87337 **/
-/** chunk id: 14251, original params: t,e,n (module,exports,require) **/
+/** chunk id: 14251, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  a: () => _,
+  a: () => u,
   r: () => c
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -11,38 +11,38 @@ var Chunk951288 = require("./951288.js"),
   Chunk5192 = require("./5192.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk405842 = require("./405842.js");
-let c = (t, e) => {
-    if (1 === t.length) {
-      let n = a.default.getUser(t[0]);
-      return null != n ? (0, i.jsx)(r.qEK, {
-        src: n.getAvatarURL(e, 32),
-        size: r.EFr.SIZE_32,
+let c = (e, t) => {
+    if (1 === e.length) {
+      let n = a.default.getUser(e[0]);
+      return null != n ? (0, i.jsx)(s.qEK, {
+        src: n.getAvatarURL(t, 32),
+        size: s.EFr.SIZE_32,
         "aria-hidden": true
-      }) : (0, i.jsx)(r.tBG, {})
+      }) : (0, i.jsx)(s.tBG, {})
     }
-    return (0, i.jsx)(s.Z, {
-      recipients: t,
-      size: r.EFr.SIZE_32
+    return (0, i.jsx)(r.Z, {
+      recipients: e,
+      size: s.EFr.SIZE_32
     })
   },
-  _ = (t, e, n, s) => {
-    let c = [...t].map(t => a.default.getUser(t)),
-      _ = t => (0, i.jsx)(r.Text, {
+  u = (e, t, n, r) => {
+    let c = [...e].map(e => a.default.getUser(e)),
+      u = e => (0, i.jsx)(s.Text, {
         variant: "text-md/semibold",
-        className: u.username,
-        children: l.ZP.getName(n, s, t)
+        className: d.username,
+        children: l.ZP.getName(n, r, e)
       });
-    return e >= 4 ? o.intl.format(o.t.qfo6KS, {
-      usernameHook1: () => _(c[0]),
-      usernameHook2: () => _(c[1]),
-      numberOfOtherUsers: e - t.length
-    }) : 3 === e ? o.intl.format(o.t["67ZE+/"], {
-      usernameHook1: () => _(c[0]),
-      usernameHook2: () => _(c[1])
-    }) : 2 === e ? o.intl.format(o.t.veV4IC, {
-      usernameHook1: () => _(c[0]),
-      usernameHook2: () => _(c[1])
+    return t >= 4 ? o.intl.format(o.t.qfo6KS, {
+      usernameHook1: () => u(c[0]),
+      usernameHook2: () => u(c[1]),
+      numberOfOtherUsers: t - e.length
+    }) : 3 === t ? o.intl.format(o.t["67ZE+/"], {
+      usernameHook1: () => u(c[0]),
+      usernameHook2: () => u(c[1])
+    }) : 2 === t ? o.intl.format(o.t.veV4IC, {
+      usernameHook1: () => u(c[0]),
+      usernameHook2: () => u(c[1])
     }) : o.intl.format(o.t["4WHCtr"], {
-      usernameHook: () => _(c[0])
+      usernameHook: () => u(c[0])
     })
   }

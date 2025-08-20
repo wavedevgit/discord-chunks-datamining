@@ -23,40 +23,40 @@ function g(e) {
   let {
     transitionState: n,
     onClose: g
-  } = e, _ = (0, s.e7)([u.ZP], () => u.ZP.getKeybindForAction(b.kg4.SOUNDBOARD_HOLD)), [E, y] = r.useState(null != (t = null == _ ? true : _.shortcut) ? t : []), D = r.useCallback(() => {
-    if (0 === E.length) return null != _ && l.Z.deleteKeybind(_.id), g();
-    if (null == _) l.Z.addKeybind({
-      action: b.kg4.SOUNDBOARD_HOLD,
-      shortcut: E,
+  } = e, m = (0, a.e7)([b.ZP], () => b.ZP.getKeybindForAction(O.kg4.SOUNDBOARD_HOLD)), [h, j] = i.useState(null != (t = null == m ? true : m.shortcut) ? t : []), v = i.useCallback(() => {
+    if (0 === h.length) return null != m && s.Z.deleteKeybind(m.id), g();
+    if (null == m) s.Z.addKeybind({
+      action: O.kg4.SOUNDBOARD_HOLD,
+      shortcut: h,
       enabled: true,
       params: {}
     });
     else {
       var e, t;
-      l.Z.setKeybind((e = function(e) {
+      s.Z.setKeybind((e = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
-            i = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            r = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), i.forEach(function(t) {
-            var i;
-            i = n[t], t in e ? Object.defineProperty(e, t, {
-              value: i,
+          }))), r.forEach(function(t) {
+            var r;
+            r = n[t], t in e ? Object.defineProperty(e, t, {
+              value: r,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : e[t] = i
+            }) : e[t] = r
           })
         }
         return e
-      }({}, _), t = t = {
-        shortcut: E
+      }({}, m), t = t = {
+        shortcut: h
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-          var i = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, i)
+          var r = Object.getOwnPropertySymbols(e);
+          n.push.apply(n, r)
         }
         return n
       })(Object(t)).forEach(function(n) {
@@ -64,52 +64,52 @@ function g(e) {
       }), e))
     }
     g()
-  }, [_, g, E]);
-  r.useEffect(() => (d.Z.disable(), () => {
-    d.Z.enable()
+  }, [m, g, h]);
+  i.useEffect(() => (u.Z.disable(), () => {
+    u.Z.enable()
   }), []);
-  let C = r.useMemo(() => [{
+  let w = i.useMemo(() => [{
     text: f.intl.string(f.t["ETE/oK"]),
     onClick: g,
     variant: "secondary"
   }, {
     text: f.intl.string(f.t.R3BPHx),
-    onClick: D,
+    onClick: v,
     variant: "primary"
-  }], [g, D]);
-  return (0, i.jsxs)(o.Modal, {
+  }], [g, v]);
+  return (0, r.jsxs)(o.Modal, {
     transitionState: n,
     title: f.intl.string(f.t["0Osu39"]),
-    actions: C,
+    actions: w,
     onClose: g,
-    children: [(0, i.jsx)(a.Wn, {
-      className: m.warning,
-      messageType: a.QYI.WARNING,
+    children: [(0, r.jsx)(c.Wn, {
+      className: y.warning,
+      messageType: c.QYI.WARNING,
       children: f.intl.string(f.t["O2v/eH"])
-    }), (0, i.jsx)(a.X6q, {
-      className: m.formHeader,
+    }), (0, r.jsx)(c.X6q, {
+      className: y.formHeader,
       variant: "eyebrow",
       color: "header-secondary",
       children: f.intl.string(f.t.UUpADw)
-    }), (0, i.jsx)(a.Text, {
-      className: m.action,
+    }), (0, r.jsx)(c.Text, {
+      className: y.action,
       variant: "text-md/normal",
       children: f.intl.string(f.t["1xFbPz"])
-    }), (0, i.jsx)(a.Text, {
-      className: m.actionDescription,
+    }), (0, r.jsx)(c.Text, {
+      className: y.actionDescription,
       variant: "text-sm/normal",
       children: f.intl.string(f.t.laNlTk)
-    }), (0, i.jsx)(a.X6q, {
-      className: m.formHeader,
+    }), (0, r.jsx)(c.X6q, {
+      className: y.formHeader,
       variant: "eyebrow",
       color: "header-secondary",
       children: f.intl.string(f.t["1La4tL"])
-    }), (0, i.jsx)(c.Z, {
-      defaultValue: E,
-      onChange: y
-    }), (0, i.jsx)(a.eee, {
-      className: m.resetButton,
-      onClick: () => y((0, h.Kd)(p.D_)),
+    }), (0, r.jsx)(l.Z, {
+      defaultValue: h,
+      onChange: j
+    }), (0, r.jsx)(c.eee, {
+      className: y.resetButton,
+      onClick: () => j((0, d.Kd)(p.D_)),
       children: f.intl.string(f.t["s7+2ra"])
     })]
   })

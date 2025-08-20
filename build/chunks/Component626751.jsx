@@ -1,7 +1,8 @@
-/** Chunk was on 26434 **/
-/** chunk id: 626751, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 626751, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => f
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -13,21 +14,21 @@ var Chunk951288 = require("./951288.js"),
   Chunk523361 = require("./523361.js"),
   Chunk981631 = require("./981631.js");
 
-function p(e) {
+function f(e) {
   var t, n;
   let {
-    channel: p,
-    message: m
-  } = e, f = null != (n = null == (t = m.roleSubscriptionData) ? true : t.is_renewal) && n ? (0, u.Md)() : (0, u.Q8)(), g = p.guild_id, _ = (0, l.e7)([a.Z], () => {
+    channel: f,
+    message: _
+  } = e, p = null != (n = null == (t = _.roleSubscriptionData) ? true : t.is_renewal) && n ? (0, u.Md)() : (0, u.Q8)(), h = f.guild_id, m = (0, a.e7)([s.Z], () => {
     var e;
-    return null == (e = a.Z.getGuild(g)) ? true : e.systemChannelFlags
-  }, [g]), h = null != _ && (0, s.yE)(_, d.xmn.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATION_REPLIES), b = i.useMemo(() => (0, c._i)(p, m), [p, m]);
-  return h ? null : (0, r.jsx)(o.Z, {
-    channel: p,
-    message: m,
-    buttonLabels: f,
+    return null == (e = s.Z.getGuild(h)) ? true : e.systemChannelFlags
+  }, [h]), g = null != m && (0, l.yE)(m, d.xmn.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATION_REPLIES), E = i.useMemo(() => (0, c._i)(f, _), [f, _]);
+  return g ? null : (0, r.jsx)(o.Z, {
+    channel: f,
+    message: _,
+    buttonLabels: p,
     stickers: u.HG,
     event: d.rMx.ROLE_SUBSCRIPTION_PURCHASE_SYSTEM_MESSAGE_CTA_CLICKED,
-    eventProperties: b
+    eventProperties: E
   })
 }

@@ -95,12 +95,12 @@ function T(e, t) {
     onKeyDown: T,
     draftType: S,
     size: A = 1
-  } = e, N = (0, s.JA)(n), {
-    onFocus: C
-  } = N, R = y(N, ["onFocus"]), {
+  } = e, C = (0, s.JA)(n), {
+    onFocus: N
+  } = C, R = y(C, ["onFocus"]), {
     handleFocus: P,
     handleBlur: w
-  } = (0, f.b)(C), D = 0 === A, L = null != E, x = e => {
+  } = (0, f.b)(N), D = 0 === A, x = null != E, L = e => {
     if (v) {
       switch (e.which) {
         case _.yXg.D:
@@ -126,14 +126,14 @@ function T(e, t) {
     children: (0, r.jsx)("li", b(g({}, R), {
       onFocus: P,
       onBlur: w,
-      onKeyDown: x,
+      onKeyDown: L,
       className: o()(h.upload, a, {
         [h.sizeClip]: 2 === A
       }),
       ref: t,
       children: (0, r.jsxs)("div", {
         className: h.uploadContainer,
-        children: [m, L ? (0, r.jsx)("div", {
+        children: [m, x ? (0, r.jsx)("div", {
           className: h.actionBarContainer,
           children: (0, r.jsx)("div", {
             className: o()(h.actionBar, {

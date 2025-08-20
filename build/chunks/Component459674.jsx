@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 459674, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 459674, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -15,27 +16,27 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk197571 = require("./197571.js");
 
-function p(e) {
+function _(e) {
   let {
     refreshStyles: t = false
-  } = e, n = (0, r.e7)([o.ZP], () => o.ZP.disableVoiceChannelChangeAlert);
-  return (0, i.jsx)(l.F, {
-    setting: d.s6.VOICE_AND_VIDEO_SWITCH_CHANNEL_ALERT,
-    children: (0, i.jsx)(s.j7V, {
-      className: m.marginBottom20,
-      note: u.intl.string(u.t.YCCMkJ),
+  } = e, n = (0, i.e7)([l.ZP], () => l.ZP.disableVoiceChannelChangeAlert);
+  return (0, r.jsx)(s.F, {
+    setting: u.s6.VOICE_AND_VIDEO_SWITCH_CHANNEL_ALERT,
+    children: (0, r.jsx)(a.j7V, {
+      className: f.marginBottom20,
+      note: d.intl.string(d.t.YCCMkJ),
       onChange: e => {
-        (0, c.Z)("switch_channel_warning_enabled", e, !n), a.ZP.updatedUnsyncedSettings({
+        (0, c.Z)("switch_channel_warning_enabled", e, !n), o.ZP.updatedUnsyncedSettings({
           disableVoiceChannelChangeAlert: !e
         })
       },
       value: !n,
       hideBorder: t,
-      children: (0, i.jsx)(s.X6q, {
+      children: (0, r.jsx)(a.X6q, {
         variant: "text-md/medium",
         color: "header-primary",
-        className: m.marginBottom8,
-        children: u.intl.string(u.t.e7LIiY)
+        className: f.marginBottom8,
+        children: d.intl.string(d.t.e7LIiY)
       })
     })
   })

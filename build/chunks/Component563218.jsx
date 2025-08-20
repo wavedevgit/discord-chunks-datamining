@@ -1,7 +1,7 @@
 /** Chunk was on 24255 **/
 /** chunk id: 563218, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
+  Z: () => v
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -22,18 +22,18 @@ let g = (e, t) => {
   })
 };
 
-function S(e) {
+function v(e) {
   let t, {
       embedId: n,
       className: a,
       style: o
     } = e,
-    S = (0, i.e7)([u.Z], () => u.Z.getWindow(E.KJ3.CHANNEL_CALL_POPOUT)),
-    v = (0, p.Z)(),
+    v = (0, i.e7)([u.Z], () => u.Z.getWindow(E.KJ3.CHANNEL_CALL_POPOUT)),
+    S = (0, p.Z)(),
     h = (0, i.e7)([c.ZP], () => c.ZP.getActivityPanelMode());
-  if (null == v || (0, f.Z)((0, d.p)(v.location)) || h !== m.Ez.PANEL) {
+  if (null == S || (0, f.Z)((0, d.p)(S.location)) || h !== m.Ez.PANEL) {
     var b;
-    t = null != (b = null == S ? true : S.window) ? b : window
+    t = null != (b = null == v ? true : v.window) ? b : window
   } else t = window;
   let O = l.useRef(null),
     y = l.useMemo(() => {

@@ -1,4 +1,4 @@
-/** Chunk was on 36499 **/
+/** Chunk was on 5665 **/
 /** chunk id: 111248, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -32,13 +32,13 @@ function y(e) {
     return [e, i.useCallback(e => {
       s.K.set(b, e), t(e)
     }, [])]
-  }(), j = i.useRef(null), O = null == y.getGuildId() ? 70 : 50, E = (0, o.e7)([d.Z], () => d.Z.pipWidth(f.cL.CAMERA_PREVIEW)), S = _.length, P = E * S + 8 * (S - 1), I = i.useMemo(() => ({
+  }(), O = i.useRef(null), j = null == y.getGuildId() ? 70 : 50, E = (0, o.e7)([d.Z], () => d.Z.pipWidth(f.cL.CAMERA_PREVIEW)), S = _.length, P = E * S + 8 * (S - 1), I = i.useMemo(() => ({
     minWidth: f.Rv[f.cL.CAMERA_PREVIEW] * S + 8 * (S - 1),
     maxWidth: f.$i[f.cL.CAMERA_PREVIEW] * S + 8 * (S - 1)
   }), [S]);
   i.useLayoutEffect(() => {
     var e;
-    null == (e = j.current) || e.ensureIsInPosition()
+    null == (e = O.current) || e.ensureIsInPosition()
   }, [_.length]);
   let Z = i.useCallback(e => {
       let t = 0 === S ? e : (e - 8 * (S - 1)) / S;
@@ -53,12 +53,12 @@ function y(e) {
       position: x,
       id: 0,
       width: P,
-      ref: j,
+      ref: O,
       onMove: T,
       onResize: Z,
       maxX: t,
       maxY: l,
-      edgeOffsetTop: O,
+      edgeOffsetTop: j,
       edgeOffsetBottom: 70,
       edgeOffsetLeft: 16,
       edgeOffsetRight: 16,

@@ -49,9 +49,9 @@ function A(e) {
   return e
 }
 
-function N(e, t) {
+function C(e, t) {
   if (null == e) return {};
-  var n, r, i = C(e, t);
+  var n, r, i = N(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -59,7 +59,7 @@ function N(e, t) {
   return i
 }
 
-function C(e, t) {
+function N(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -71,8 +71,8 @@ function R(e) {
   var {
     user: t,
     closePopout: n
-  } = e, S = N(e, ["user", "closePopout"]);
-  let C = i.useRef(null),
+  } = e, S = C(e, ["user", "closePopout"]);
+  let N = i.useRef(null),
     R = (0, a.e7)([y.Z], () => {
       var e;
       return null == (e = y.Z.getUserProfile(t.id)) ? true : e.application
@@ -80,7 +80,7 @@ function R(e) {
     P = (0, a.e7)([h.Z, p.Z], () => p.Z.getChannel(h.Z.getChannelId())),
     w = (0, s.Z)(P),
     D = t.id,
-    L = i.useCallback(() => {
+    x = i.useCallback(() => {
       if (null != R)
         if (w) {
           let e = h.Z.getCurrentlySelectedChannelId(),
@@ -95,13 +95,13 @@ function R(e) {
           applicationId: R.id
         }, R))
     }, [R, w, D, null == P ? true : P.guild_id, n]),
-    x = w ? T.intl.string(T.t["Cia+Aw"]) : T.intl.string(T.t.NgXl3N);
+    L = w ? T.intl.string(T.t["Cia+Aw"]) : T.intl.string(T.t.NgXl3N);
   if (null == R || !(0, d.Eb)(R)) return null;
   let {
-    customInstallUrl: M
-  } = R, k = null == M || E.Z.isDiscordUrl(M) ? o.qJs : o.Gr1, j = w ? true : k;
+    customInstallUrl: j
+  } = R, M = null == j || E.Z.isDiscordUrl(j) ? o.qJs : o.Gr1, k = w ? true : M;
   return g.wS ? (0, r.jsx)(o.yRy, {
-    targetElementRef: C,
+    targetElementRef: N,
     renderPopout: e => {
       let {
         closePopout: t
@@ -123,20 +123,20 @@ function R(e) {
     children: e => {
       var {
         onClick: t
-      } = e, n = N(e, ["onClick"]);
+      } = e, n = C(e, ["onClick"]);
       return (0, r.jsx)(v.tG, A({
-        ref: C,
+        ref: N,
         action: "PRESS_ADD_APP",
-        text: x,
-        icon: j,
+        text: L,
+        icon: k,
         onContextMenu: t,
-        onClick: L
+        onClick: x
       }, n, S))
     }
   }) : (0, r.jsx)(v.tG, A({
     action: "PRESS_ADD_APP",
-    text: x,
-    icon: j,
-    onClick: L
+    text: L,
+    icon: k,
+    onClick: x
   }, S))
 }

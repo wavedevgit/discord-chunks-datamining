@@ -1,5 +1,6 @@
-/** Chunk was on 26434 **/
-/** chunk id: 466794, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 466794, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   X: () => o
 });
@@ -14,13 +15,13 @@ function o(e) {
     textColor: n
   } = e;
   return (0, r.jsxs)("span", {
-    className: l.tooltipTextContainer,
+    className: a.tooltipTextContainer,
     children: [(0, r.jsx)(i.SrA, {
       size: "md",
       color: "currentColor",
-      className: l.nitroWheel
+      className: a.nitroWheel
     }), (0, r.jsx)(i.Text, {
-      className: l.tooltipText,
+      className: a.tooltipText,
       variant: "text-sm/medium",
       color: null != n ? n : "text-default",
       children: t

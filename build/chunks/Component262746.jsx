@@ -1,4 +1,4 @@
-/** Chunk was on 36499 **/
+/** Chunk was on 5665 **/
 /** chunk id: 262746, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -26,10 +26,10 @@ function g(e) {
   if ((0, c.ZP)(() => {
       _ && s.Z.searchGuildBans(t.guild_id, true, [null == g ? true : g.id]).finally(() => x(false))
     }), !v) return null;
-  let j = true === y ? m.intl.string(f.default.dpfwQ0) : m.intl.string(f.default.ASv23d),
-    O = "ban-user-".concat(null == g ? true : g.id);
+  let O = true === y ? m.intl.string(f.default.dpfwQ0) : m.intl.string(f.default.ASv23d),
+    j = "ban-user-".concat(null == g ? true : g.id);
   return (0, r.jsx)(h.Z, {
-    text: j,
+    text: O,
     icon: o.pgN,
     onClick: () => {
       null != g && (0, o.ZDy)(async () => {
@@ -75,5 +75,5 @@ function g(e) {
     disabled: true === y || C,
     submitting: C,
     color: a.zx.Colors.RED
-  }, O)
+  }, j)
 }

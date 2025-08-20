@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   C: () => R,
-  Z: () => M
+  Z: () => j
 }), require("./953529.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -32,12 +32,12 @@ let v = e => e.preventDefault(),
     tension: 1100,
     friction: 40
   },
-  N = {
+  C = {
     tension: 1600,
     friction: 60
   };
 
-function C(e, t) {
+function N(e, t) {
   return i.cloneElement(e, {
     "data-type": "sticker",
     "data-id": t
@@ -101,9 +101,9 @@ let P = e => {
       onError: m
     } = e, g = i.useRef(null), E = i.useRef(null), [v, I] = i.useState(true), [T, S] = i.useState(false), A = i.useRef(false);
     A.current = t && u;
-    let N = null == s ? (0, b.Q6)(o) : s;
-    return (l()(null != N, "Unable to determine sticker asset URL. Sticker ID: ".concat(o.id)), i.useEffect(() => {
-      if (null == g.current || null == N) return;
+    let C = null == s ? (0, b.Q6)(o) : s;
+    return (l()(null != C, "Unable to determine sticker asset URL. Sticker ID: ".concat(o.id)), i.useEffect(() => {
+      if (null == g.current || null == C) return;
       let e = Math.min(2, (0, p.x_)());
       g.current.width = a * e, g.current.height = a * e;
       let t = false;
@@ -114,7 +114,7 @@ let P = e => {
         null != g.current && (E.current = new e({
           canvas: g.current,
           animationId: o.id,
-          assetUrl: N,
+          assetUrl: C,
           assetData: c,
           onInitialDraw: () => {
             t || I(false)
@@ -127,11 +127,11 @@ let P = e => {
         var e;
         null == (e = E.current) || e.drop(), E.current = null, t = true
       }
-    }, [N, a, o.id, c, m]), i.useEffect(() => {
+    }, [C, a, o.id, c, m]), i.useEffect(() => {
       var e;
       let n;
       t || (n = 0), null == (e = E.current) || e.setState(t && u, n)
-    }, [o, t, u]), null == N) ? null : (0, r.jsx)("div", {
+    }, [o, t, u]), null == C) ? null : (0, r.jsx)("div", {
       role: "img",
       className: d,
       "aria-label": T ? y.intl.string(y.t.yEvsKy) : R(o),
@@ -142,7 +142,7 @@ let P = e => {
         maskAsset: f,
         size: a,
         withLoadingIndicator: h,
-        children: C((0, r.jsx)("canvas", {
+        children: N((0, r.jsx)("canvas", {
           className: O.lottieCanvas,
           ref: g
         }), o.id)
@@ -163,7 +163,7 @@ let P = e => {
     } = e, [p, h] = i.useState(false), [m, g] = i.useState(true), [E, y] = i.useState(false), T = i.useRef(null), S = i.useRef(null), A = null != _ ? _ : (0, b.Q6)(n, {
       isPreview: !t || !p || !a,
       size: s
-    }), N = i.useCallback(() => {
+    }), C = i.useCallback(() => {
       g(false)
     }, []), w = i.useCallback(() => {
       y(true)
@@ -192,13 +192,13 @@ let P = e => {
           maskAsset: c,
           size: s,
           withLoadingIndicator: f,
-          children: C((0, r.jsx)("img", {
+          children: N((0, r.jsx)("img", {
             className: O.pngImage,
             alt: R(n),
             src: A,
             draggable: false,
             onError: w,
-            onLoad: N,
+            onLoad: C,
             onContextMenu: v,
             ref: S
           }), n.id)
@@ -206,7 +206,7 @@ let P = e => {
       })
     })
   },
-  L = e => {
+  x = e => {
     let {
       disableAnimation: t,
       enlargeScaleFactor: n,
@@ -231,7 +231,7 @@ let P = e => {
       ref: b,
       transform: o || p ? "translateY(0)" : "translateY(-25px)",
       opacity: +!!o,
-      config: N
+      config: C
     }, "animate-always");
     return (0, c.useChain)(o ? [m, b] : [b, m], o ? [0, .0625] : [0, 0]), E((e, i) => i && (0, r.jsx)(h.W5, {
       className: O.positionedLayer,
@@ -244,7 +244,7 @@ let P = e => {
         children: [(0, r.jsx)(c.animated.div, {
           className: O.overlayStickerWrapper,
           style: e,
-          children: (0, r.jsx)(x, {
+          children: (0, r.jsx)(L, {
             className: O.__invalid_overlaySticker,
             disableAnimation: t,
             enlargeOnInteraction: false,
@@ -266,7 +266,7 @@ let P = e => {
       })
     }))
   },
-  x = e => {
+  L = e => {
     let {
       isInteracting: t = false,
       disableAnimation: n = false,
@@ -297,7 +297,7 @@ let P = e => {
         assetData: _,
         fileUri: p,
         onError: h
-      }), a && (0, r.jsx)(L, {
+      }), a && (0, r.jsx)(x, {
         disableAnimation: n,
         enlargeScaleFactor: s,
         enlargeWithName: o,
@@ -308,4 +308,4 @@ let P = e => {
       })]
     }, "".concat(u.id, ",").concat(c))
   },
-  M = x
+  j = L

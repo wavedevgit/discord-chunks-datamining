@@ -1,12 +1,13 @@
-/** Chunk was on 66181 **/
-/** chunk id: 632257, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 632257, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => j
+  Z: () => O
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk674746 = require("./674746.js"),
   Chunk442837 = require("./442837.js"),
   Chunk780384 = require("./780384.js"),
@@ -21,32 +22,33 @@ var Chunk120356 = require("./120356.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk125321 = require("./125321.js");
-let j = Chunk442837.ZP.connectStores([Chunk594174.default], () => ({
-  user: Chunk594174.default.getCurrentUser()
-}))((0, Chunk666743.Z)(e => {
-  let {
-    isAuthenticated: t,
-    user: n
-  } = e, r = (0, h.I5)(n, b.p9.TIER_2), l = (0, m.ZP)();
-  return (0, i.jsx)(d.Z, {
-    section: f.jXE.NAVIGATION,
-    children: (0, i.jsx)(c.f6W, {
-      theme: l,
-      children: e => (0, i.jsxs)(p.Z, {
-        isAuthenticated: t,
-        className: s()(_.headerBar, e, {
-          [_.headerBarV2LightBackground]: !r && !(0, o.wj)(l),
-          [_.headerBarV2DarkBackground]: !r && (0, o.wj)(l)
-        }),
-        role: "navigation",
-        children: [(0, i.jsx)(p.Z.Icon, {
-          icon: c.SrA,
-          "aria-hidden": true,
-          color: r ? true : a.Z.PREMIUM_TIER_2_PINK
-        }), (0, i.jsx)(p.Z.Title, {
-          children: x.intl.string(x.t.Ipxkoq)
-        })]
+let y = e => {
+    let {
+      isAuthenticated: t,
+      user: n
+    } = e, i = (0, h.I5)(n, g.p9.TIER_2), s = (0, f.ZP)();
+    return (0, r.jsx)(u.Z, {
+      section: m.jXE.NAVIGATION,
+      children: (0, r.jsx)(c.f6W, {
+        theme: s,
+        children: e => (0, r.jsxs)(_.Z, {
+          isAuthenticated: t,
+          className: a()(b.headerBar, e, {
+            [b.headerBarV2LightBackground]: !i && !(0, l.wj)(s),
+            [b.headerBarV2DarkBackground]: !i && (0, l.wj)(s)
+          }),
+          role: "navigation",
+          children: [(0, r.jsx)(_.Z.Icon, {
+            icon: c.SrA,
+            "aria-hidden": true,
+            color: i ? true : o.Z.PREMIUM_TIER_2_PINK
+          }), (0, r.jsx)(_.Z.Title, {
+            children: E.intl.string(E.t.Ipxkoq)
+          })]
+        })
       })
     })
-  })
-}))
+  },
+  O = Chunk442837.ZP.connectStores([Chunk594174.default], () => ({
+    user: Chunk594174.default.getCurrentUser()
+  }))((0, Chunk666743.Z)(y))

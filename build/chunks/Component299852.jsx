@@ -1,7 +1,7 @@
 /** Chunk was on 27978 **/
 /** chunk id: 299852, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => j
 }), require("./35282.js"), require("./388685.js");
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,7 +19,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk197571 = require("./197571.js");
 
-function b(e, t, n) {
+function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -85,7 +85,7 @@ class v extends(r = Chunk647438.PureComponent) {
         className: x.marginTop8,
         color: d.zx.Colors.LINK,
         look: d.zx.Looks.LINK,
-        onClick: () => r(f.Z5c.SETTINGS("notifications", g.vG)),
+        onClick: () => r(g.Z5c.SETTINGS("notifications", f.vG)),
         children: _.intl.string(_.t.YYTira)
       })]
     })
@@ -148,7 +148,7 @@ class v extends(r = Chunk647438.PureComponent) {
     return module ? this.renderBusy() : exports ? this.renderSuccess() : this.renderError()
   }
   constructor(...e) {
-    super(...e), b(this, "state", {
+    super(...e), E(this, "state", {
       busy: true,
       success: false,
       user: null,
@@ -156,9 +156,9 @@ class v extends(r = Chunk647438.PureComponent) {
     })
   }
 }
-b(v, "defaultProps", {
+E(v, "defaultProps", {
   transitionTo: e => n.g.location.assign(e)
 });
-let E = Chunk442837.ZP.connectStores([Chunk896797.Z], () => ({
+let j = Chunk442837.ZP.connectStores([Chunk896797.Z], () => ({
   defaultRoute: Chunk896797.Z.defaultRoute
 }))(v)

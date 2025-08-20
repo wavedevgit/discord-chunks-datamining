@@ -2,18 +2,18 @@
 /** chunk id: 378233, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  B0: () => C,
+  B0: () => N,
   Hc: () => w,
   J8: () => D,
-  Q6: () => N,
-  V9: () => M,
+  Q6: () => C,
+  V9: () => j,
   WD: () => P,
   Zt: () => I,
   Zv: () => S,
   _V: () => A,
-  cv: () => x,
+  cv: () => L,
   gM: () => U,
-  jl: () => L,
+  jl: () => x,
   z: () => R
 }), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./415506.js"), require("./781311.js");
 var Chunk134432 = require("./134432.js"),
@@ -66,7 +66,7 @@ let {
     default:
       throw Error("Unexpected file type: ".concat(e))
   }
-}, A = e => null == e ? null : "".concat(e.name, ".").concat(T(e.format_type)), N = function(e) {
+}, A = e => null == e ? null : "".concat(e.name, ".").concat(T(e.format_type)), C = function(e) {
   let {
     isPreview: t = false,
     size: n = f.lE
@@ -84,7 +84,7 @@ let {
     return "".concat(location.protocol).concat(h).concat(o, "?size=").concat((0, r.oO)(n * a)).concat(i).concat(s)
   }
   return "".concat(location.protocol).concat(p).concat(o)
-}, C = e => null != e.match("development" !== m ? O : v), R = e => ({
+}, N = e => null != e.match("development" !== m ? O : v), R = e => ({
   type: d.Ih.PACK,
   id: e.id,
   name: e.name,
@@ -103,17 +103,17 @@ let {
     default:
       returnfalse
   }
-}, D = e => e.type === d.n0.GUILD, L = e => e.type === d.n0.STANDARD, x = e => e.stickerItems.length > 0 ? e.stickerItems : e.stickers.length > 0 ? e.stickers : [], M = e => {
+}, D = e => e.type === d.n0.GUILD, x = e => e.type === d.n0.STANDARD, L = e => e.stickerItems.length > 0 ? e.stickerItems : e.stickers.length > 0 ? e.stickers : [], j = e => {
   if (null === e) returnfalse;
   let t = e.guild_id;
   return true !== a.Z.getGuild(t)
-}, k = [];
+}, M = [];
 
-function j() {
+function k() {
   var e, t;
-  return null != (t = null == (e = Chunk581883.Z.frecencyWithoutFetchingLatest.favoriteStickers) ? true : module.stickerIds) ? exports : k
+  return null != (t = null == (e = Chunk581883.Z.frecencyWithoutFetchingLatest.favoriteStickers) ? true : module.stickerIds) ? exports : M
 }
 
 function U(e) {
-  return j().includes(e)
+  return k().includes(e)
 }

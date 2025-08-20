@@ -1,14 +1,15 @@
-/** Chunk was on 66181 **/
-/** chunk id: 165630, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 165630, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   Z: () => m
 }), require("./539854.js");
-var i, Chunk442837 = require("./442837.js"),
+var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk381496 = require("./381496.js"),
   Chunk430824 = require("./430824.js");
 
-function o(e, t, n) {
+function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -16,54 +17,61 @@ function o(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let c = {},
+let c = 864e5,
+  u = {},
   d = () => {
-    c = {
+    u = {
       guildAffinitiesByGuildId: {},
       guildAffinities: [],
       lastFetched: 0
     }
   };
+
+function f(e) {
+  let {
+    guildAffinities: t
+  } = e;
+  u.guildAffinities = [], u.guildAffinitiesByGuildId = {}, u.lastFetched = Date.now(), t.forEach((e, t) => {
+    let {
+      affinity: n,
+      guild_id: r
+    } = e, i = {
+      score: n,
+      guildId: r,
+      index: t
+    };
+    u.guildAffinitiesByGuildId[r] = i, u.guildAffinities.push(i)
+  })
+}
+
+function _() {
+  return Date.now() - u.lastFetched > c && (0, Chunk381496.j)(), false
+}
+
+function p() {
+  d()
+}
 d();
-class u extends(i = Chunk442837.ZP.PersistedStore) {
+class h extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    null != e && (c = e), this.waitFor(l.Z)
+    null != e && (u = e), this.waitFor(s.Z)
   }
   getState() {
-    return c
+    return u
   }
   getGuildAffinity(e) {
-    return c.guildAffinitiesByGuildId[e]
+    return u.guildAffinitiesByGuildId[e]
   }
   get affinities() {
-    return c.guildAffinities
+    return u.guildAffinities
   }
   get hasRequestResolved() {
-    return 0 !== c.lastFetched
+    return 0 !== u.lastFetched
   }
 }
-o(u, "displayName", "GuildAffinitiesStore"), o(u, "persistKey", "GuildAffinitiesStore");
-let m = new u(Chunk570140.Z, {
-  CONNECTION_OPEN: function() {
-    return Date.now() - c.lastFetched > 864e5 && (0, Chunk381496.j)(), false
-  },
-  LOAD_GUILD_AFFINITIES_SUCCESS: function(e) {
-    let {
-      guildAffinities: t
-    } = e;
-    c.guildAffinities = [], c.guildAffinitiesByGuildId = {}, c.lastFetched = Date.now(), t.forEach((e, t) => {
-      let {
-        affinity: n,
-        guild_id: i
-      } = e, r = {
-        score: n,
-        guildId: i,
-        index: t
-      };
-      c.guildAffinitiesByGuildId[i] = r, c.guildAffinities.push(r)
-    })
-  },
-  LOGOUT: function() {
-    d()
-  }
+l(h, "displayName", "GuildAffinitiesStore"), l(h, "persistKey", "GuildAffinitiesStore");
+let m = new h(Chunk570140.Z, {
+  CONNECTION_OPEN: _,
+  LOAD_GUILD_AFFINITIES_SUCCESS: f,
+  LOGOUT: p
 })

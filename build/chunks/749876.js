@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 749876, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 749876, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => o
+  Z: () => l
 });
 var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
@@ -9,14 +10,14 @@ var Chunk647438 = require("./647438.js"),
   Chunk870822 = require("./870822.js"),
   Chunk881998 = require("./881998.js");
 
-function o(e) {
-  let t = (0, r.e7)([l.Z], () => l.Z.getFetchState()),
-    n = (0, r.e7)([l.Z], () => e ? l.Z.getNewestTokensForNonChildrenApplications() : l.Z.getNewestTokens()),
-    o = i.useMemo(() => null == n ? [] : n.filter(e => (0, a.Z)(e.application)).map(e => e.application), [n]);
-  return i.useEffect(() => {
-    s.Z.fetch()
+function l(e) {
+  let t = (0, i.e7)([s.Z], () => s.Z.getFetchState()),
+    n = (0, i.e7)([s.Z], () => e ? s.Z.getNewestTokensForNonChildrenApplications() : s.Z.getNewestTokens()),
+    l = r.useMemo(() => null == n ? [] : n.filter(e => (0, o.Z)(e.application)).map(e => e.application), [n]);
+  return r.useEffect(() => {
+    a.Z.fetch()
   }, []), {
-    showLoadingIndicator: t === l.M.FETCHING && null == n,
-    slayerSdkApplications: o
+    showLoadingIndicator: t === s.M.FETCHING && null == n,
+    slayerSdkApplications: l
   }
 }

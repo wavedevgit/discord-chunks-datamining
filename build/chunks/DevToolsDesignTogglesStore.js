@@ -1,13 +1,13 @@
-/** Chunk was on 31930 **/
-/** chunk id: 863750, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 863750, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => u
+  Z: () => d
 }), require("./388685.js");
-var i, Chunk442837 = require("./442837.js"),
+var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
-function l(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -15,7 +15,7 @@ function l(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let o = {
+let s = {
     enable_recently_active: "Enable recently active channels",
     theme_setting_in_account_sheet: "Show theme settings in the Account action sheet",
     nav_experiment_server_drawer_enabled: "[NavI] Enable expandable server drawer",
@@ -23,40 +23,42 @@ let o = {
     show_icymi_debug_scores: "Show ICYMI debug scores",
     channel_list_scrim: "Dim the channel list when chat appears"
   },
-  a = {};
-class c extends(i = Chunk442837.ZP.DeviceSettingsStore) {
+  l = {};
+
+function c(e) {
+  l[e.toggle] = e.value
+}
+class u extends(r = Chunk442837.ZP.DeviceSettingsStore) {
   getUserAgnosticState() {
     return {
-      toggleStates: a
+      toggleStates: l
     }
   }
   initialize(e) {
-    for (var t in o) {
-      var n, i;
-      let r = null != (i = null == e || null == (n = e.toggleStates) ? true : n[t]) && i;
-      a[t] = r
+    for (var t in s) {
+      var n, r;
+      let i = null != (r = null == e || null == (n = e.toggleStates) ? true : n[t]) && r;
+      l[t] = i
     }
   }
   get(e) {
     var t;
-    return null != (t = a[e]) && t
+    return null != (t = l[e]) && t
   }
   set(e, t) {
-    return a[e] = t, t
+    return l[e] = t, t
   }
   all() {
-    return a
+    return l
   }
   allWithDescriptions() {
-    return Object.entries(a).map(e => {
+    return Object.entries(l).map(e => {
       let [t, n] = e;
-      return [t, n, o[t]]
+      return [t, n, s[t]]
     })
   }
 }
-l(c, "displayName", "DevToolsDesignTogglesStore"), l(c, "persistKey", "DevToolsDesignTogglesStore");
-let u = new c(Chunk570140.Z, {
-  DEV_TOOLS_DESIGN_TOGGLE_SET: function(e) {
-    a[e.toggle] = e.value
-  }
+o(u, "displayName", "DevToolsDesignTogglesStore"), o(u, "persistKey", "DevToolsDesignTogglesStore");
+let d = new u(Chunk570140.Z, {
+  DEV_TOOLS_DESIGN_TOGGLE_SET: c
 })

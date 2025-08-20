@@ -1,1 +1,1 @@
-{"id":"711758","type":"store","data":{"name":"IgnoreNoticeStore","functions":[{"name":"initialize","args":["e"]},{"name":"getState","args":[]},{"name":"getIgnoreTimestamps","args":[]}],"events":["RELATIONSHIP_IGNORE_USER_SUCCESS"]},"fromModule":{"id":"66672"}}
+{"id":"711758","type":"store","data":{"name":"IgnoreNoticeStore","functions":[{"name":"initialize","args":["e"]},{"name":"getState","args":[]},{"name":"getIgnoreTimestamps","args":[]}],"events":["RELATIONSHIP_IGNORE_USER_SUCCESS"]},"fromModule":{"id":"web.js"}}

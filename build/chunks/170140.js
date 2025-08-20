@@ -1,7 +1,8 @@
-/** Chunk was on 26434 **/
-/** chunk id: 170140, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 170140, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  J: () => b
+  J: () => v
 });
 var Chunk647438 = require("./647438.js"),
   Chunk399606 = require("./399606.js"),
@@ -19,83 +20,95 @@ var Chunk647438 = require("./647438.js"),
   Chunk874748 = require("./874748.js"),
   Chunk981631 = require("./981631.js");
 
-function b(e, t) {
-  let n = (0, f.p$)(),
-    b = (0, _.LR)(e),
-    E = (0, i.e7)([c.ZP, a.default], () => {
-      let e = a.default.getId();
-      return c.ZP.isMember(null == b ? true : b.guildId, e)
-    }, [b]),
-    C = (0, i.e7)([l.Z], () => null != b && (null == b ? true : b.channelId) != null && l.Z.isChannelGated(b.guildId, b.channelId), [b]),
-    v = t.hasFlag(h.iLy.IS_CROSSPOST),
+function E(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function b(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      E(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function y(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function O(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+
+function v(e, t) {
+  let n = (0, p.p$)(),
+    E = (0, m.LR)(e),
+    y = (0, i.e7)([c.ZP, s.default], () => {
+      let e = s.default.getId();
+      return c.ZP.isMember(null == E ? true : E.guildId, e)
+    }, [E]),
+    v = (0, i.e7)([a.Z], () => null != E && (null == E ? true : E.channelId) != null && a.Z.isChannelGated(E.guildId, E.channelId), [E]),
+    I = t.hasFlag(g.iLy.IS_CROSSPOST),
     {
-      rawMediaPostEmbedData: O,
-      guild: y,
-      parentChannel: x,
-      user: j,
-      selectedGuildId: I,
-      canAccess: S
-    } = (0, i.cj)([g.Z, u.Z, s.Z, p.default, d.Z], () => {
+      rawMediaPostEmbedData: T,
+      guild: S,
+      parentChannel: A,
+      user: C,
+      selectedGuildId: N,
+      canAccess: R
+    } = (0, i.cj)([h.Z, u.Z, l.Z, f.default, d.Z], () => {
       var e;
-      let t = null == (e = g.Z.getMediaPostEmbed(null == b ? true : b.threadId)) ? true : e.media,
-        n = u.Z.getGuild(null == b ? true : b.guildId),
-        r = s.Z.getChannel(null == b ? true : b.channelId),
-        i = p.default.getUser(null == t ? true : t.author_id),
-        l = d.Z.getGuildId(),
-        a = null != r && (0, o.YO)(r);
+      let t = null == (e = h.Z.getMediaPostEmbed(null == E ? true : E.threadId)) ? true : e.media,
+        n = u.Z.getGuild(null == E ? true : E.guildId),
+        r = l.Z.getChannel(null == E ? true : E.channelId),
+        i = f.default.getUser(null == t ? true : t.author_id),
+        a = d.Z.getGuildId(),
+        s = null != r && (0, o.YO)(r);
       return {
         rawMediaPostEmbedData: t,
         guild: n,
         parentChannel: r,
         user: i,
-        selectedGuildId: l,
-        canAccess: a
+        selectedGuildId: a,
+        canAccess: s
       }
-    }, [b]),
-    T = r.useMemo(() => {
-      var e, t;
-      let n = (0, _.ku)({
-        mediaPostEmbedData: O,
-        guild: y,
-        parentChannel: x,
-        user: j,
-        selectedGuildId: I,
-        canAccess: S
+    }, [E]),
+    P = r.useMemo(() => {
+      let e = (0, m.ku)({
+        mediaPostEmbedData: T,
+        guild: S,
+        parentChannel: A,
+        user: C,
+        selectedGuildId: N,
+        canAccess: R
       });
-      return null == n ? null : (e = function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-              value: r,
-              enumerable: true,
-              configurable: true,
-              writable: true
-            }) : e[t] = r
-          })
-        }
-        return e
-      }({}, n), t = t = {
-        user: j
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, r)
-        }
-        return n
-      })(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-      }), e)
-    }, [O, y, x, j, I, S]);
+      return null == e ? null : O(b({}, e), {
+        user: C
+      })
+    }, [T, S, A, C, N, R]);
   return r.useEffect(() => {
-    if ((null == b ? true : b.threadId) != null) {
-      let e = g.Z.getEmbedFetchState(b.threadId);
-      true !== n || e !== g.M.NOT_FETCHED || E && false === C || !E && v || (0, m.xP)(null == b ? true : b.threadId)
+    if ((null == E ? true : E.threadId) != null) {
+      let e = h.Z.getEmbedFetchState(E.threadId);
+      true !== n || e !== h.M.NOT_FETCHED || y && false === v || !y && I || (0, _.xP)(null == E ? true : E.threadId)
     }
-  }, [b, n, E, C, v]), T
+  }, [E, n, y, v, I]), P
 }

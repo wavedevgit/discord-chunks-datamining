@@ -79,19 +79,19 @@ function f(e) {
     forceUpdate: b
   }), {
     items: A
-  } = y.current, N = null, {
-    scrollTop: C
+  } = y.current, C = null, {
+    scrollTop: N
   } = g();
   for (let e of A) {
-    if (0 === C) break;
+    if (0 === N) break;
     if ("footer" === e.type || "header" === e.type || null == e.anchorId) continue;
     let t = "row" === e.type ? e.row : true;
-    if (e.offsetTop >= C) {
-      N = {
+    if (e.offsetTop >= N) {
+      C = {
         id: e.anchorId,
         section: e.section,
         row: t,
-        scrollOffset: e.offsetTop - C
+        scrollOffset: e.offsetTop - N
       };
       break
     }
@@ -113,7 +113,7 @@ function f(e) {
   return (0, r.useLayoutEffect)(() => void(y.current = P)), u(l({}, P), {
     listComputer: O,
     forceUpdateOnChunkChange: S,
-    anchor: N,
+    anchor: C,
     isSidebarVisible: R
   })
 }

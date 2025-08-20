@@ -1,4 +1,4 @@
-/** Chunk was on 36499 **/
+/** Chunk was on 5665 **/
 /** chunk id: 224184, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => P
@@ -39,13 +39,13 @@ let P = e => {
   } = _.n.useExperiment({
     guildId: P.guild_id,
     location: "HangStatusPopout"
-  }), N = (0, o.e7)([p.default], () => p.default.getId()), A = (0, o.e7)([g.default], () => g.default.getUser(l)), w = (0, o.e7)([m.Z], () => m.Z.getChannelId() === P.id), R = (0, o.e7)([f.Z], () => f.Z.can(O.Plq.CONNECT, P)), M = (null == t ? true : t.emoji) == null || (0, x.K)(t.emoji, P), k = (0, o.e7)([h.ZP], () => null != P.guild_id && null != A ? h.ZP.getMember(P.guild_id, l) : null), D = i.useMemo(() => null != A ? (0, d.SG)(true, k, A, {
+  }), N = (0, o.e7)([p.default], () => p.default.getId()), A = (0, o.e7)([g.default], () => g.default.getUser(l)), w = (0, o.e7)([m.Z], () => m.Z.getChannelId() === P.id), R = (0, o.e7)([f.Z], () => f.Z.can(j.Plq.CONNECT, P)), M = (null == t ? true : t.emoji) == null || (0, x.K)(t.emoji, P), k = (0, o.e7)([h.ZP], () => null != P.guild_id && null != A ? h.ZP.getMember(P.guild_id, l) : null), D = i.useMemo(() => null != A ? (0, d.SG)(true, k, A, {
     size: 40
   }) : true, [k, A]);
   return (i.useEffect(() => {
     (0, y.UP)()
   }, []), i.useEffect(() => {
-    T && null != t && I && null != A && N !== l && b.default.track(O.rMx.VIEW_HANG_STATUS, {
+    T && null != t && I && null != A && N !== l && b.default.track(j.rMx.VIEW_HANG_STATUS, {
       source: "HangStatusPopout",
       guild_id: P.guild_id,
       channel_id: P.id
@@ -54,7 +54,7 @@ let P = e => {
     className: a()(S.popoutWrapper, {
       [S.mounted]: I
     }),
-    children: (0, r.jsx)(j.v, {
+    children: (0, r.jsx)(O.v, {
       currentStatus: t,
       channel: P
     })
@@ -95,7 +95,7 @@ let P = e => {
       size: "sm",
       text: E.intl.string(E.t["B/dHXF"]),
       onClick: () => {
-        !w && R && (u.default.selectVoiceChannel(P.id), b.default.track(O.rMx.HANG_STATUS_CTA_CLICKED, {
+        !w && R && (u.default.selectVoiceChannel(P.id), b.default.track(j.rMx.HANG_STATUS_CTA_CLICKED, {
           source: "HangStatusPopout",
           guild_id: P.guild_id,
           channel_id: P.id
@@ -106,7 +106,7 @@ let P = e => {
       text: E.intl.string(E.t.xcVcFR),
       onClick: () => {
         let e = t.state;
-        e === O.tNA.CUSTOM ? (0, c.ZDy)(async () => {
+        e === j.tNA.CUSTOM ? (0, c.ZDy)(async () => {
           let {
             default: e
           } = await n.e("1631").then(n.bind(n, 333541));
@@ -143,7 +143,7 @@ let P = e => {
               Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
             }), i))
           }
-        }) : (0, y.Zx)(e, true), b.default.track(O.rMx.SWIPE_HANG_STATUS, {
+        }) : (0, y.Zx)(e, true), b.default.track(j.rMx.SWIPE_HANG_STATUS, {
           guild_id: P.guild_id,
           channel_id: P.id,
           media_session_id: m.Z.getMediaSessionId()

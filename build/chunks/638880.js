@@ -36,24 +36,24 @@ async function O(e) {
       source: T,
       inviterUserId: S,
       customId: A,
-      referrerId: N
+      referrerId: C
     } = e,
-    C = (0, h.Z)(),
+    N = (0, h.Z)(),
     R = i.Z.getChannel(l),
     P = null == R ? true : R.getGuildId(),
     w = null == P || "" === P,
     D = o.default.getCurrentUser();
   if (null == D) returnfalse;
   if (null == R || w && !R.isPrivate() || null == l) return Promise.resolve(false);
-  let L = u.ZP.getCurrentEmbeddedActivity();
-  if ((null == L ? true : L.applicationId) != null && (t = r.Z.getApplication(null == L ? true : L.applicationId)), a.Z.getVoiceChannelId() === l && null != L && L.applicationId === n && (0, _.p)(L.location) === a.Z.getVoiceChannelId()) return (0, E.Z)(P, L.location), Promise.resolve(true);
-  let x = await (0, p.Z)(n, l);
+  let x = u.ZP.getCurrentEmbeddedActivity();
+  if ((null == x ? true : x.applicationId) != null && (t = r.Z.getApplication(null == x ? true : x.applicationId)), a.Z.getVoiceChannelId() === l && null != x && x.applicationId === n && (0, _.p)(x.location) === a.Z.getVoiceChannelId()) return (0, E.Z)(P, x.location), Promise.resolve(true);
+  let L = await (0, p.Z)(n, l);
   if (!await (0, f.p)({
       applicationId: n,
-      application: x,
+      application: L,
       channel: R,
       currentEmbeddedApplication: t,
-      embeddedActivitiesManager: C,
+      embeddedActivitiesManager: N,
       user: D
     })) returnfalse;
   if (null != R) {
@@ -66,11 +66,11 @@ async function O(e) {
         })) returnfalse
     } else if (!(0, s.WS)(R) || !n) returnfalse
   } else if (null == R) returnfalse;
-  return null != l && (0, d.Z)(l), null != L && (0, c.cG)(L.location), await (0, c.G6)({
+  return null != l && (0, d.Z)(l), null != x && (0, c.cG)(x.location), await (0, c.G6)({
     channelId: l,
     applicationId: n,
     isStart: false,
-    embeddedActivitiesManager: C,
+    embeddedActivitiesManager: N,
     analyticsLocations: O,
     locationObject: y,
     componentId: v,
@@ -78,6 +78,6 @@ async function O(e) {
     source: T,
     inviterUserId: S,
     customId: A,
-    referrerId: N
+    referrerId: C
   })
 }

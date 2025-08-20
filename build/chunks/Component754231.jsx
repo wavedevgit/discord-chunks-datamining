@@ -1,7 +1,7 @@
-/** Chunk was on 69003 **/
+/** Chunk was on 91488 **/
 /** chunk id: 754231, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => E
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -86,7 +86,7 @@ function y(e) {
   })) : _
 }
 
-function v(e) {
+function j(e) {
   let {
     activity: t,
     embeddedApp: n,
@@ -111,7 +111,7 @@ function v(e) {
   })
 }
 
-function j(e) {
+function v(e) {
   let {
     activity: t,
     user: n,
@@ -140,7 +140,7 @@ function C(e) {
   })
 }
 
-function E(e) {
+function x(e) {
   let {
     activity: t
   } = e;
@@ -162,7 +162,7 @@ function E(e) {
   })
 }
 
-function x(e) {
+function E(e) {
   let {
     activity: t,
     embeddedApp: n,
@@ -172,18 +172,18 @@ function x(e) {
     onOpenSpotifyTrack: p,
     onOpenSpotifyArtist: h,
     onOpenSpotifyAlbum: g
-  } = e, x = [];
-  null != n ? x = Array.from(n.embeddedActivity.userIds) : (0, c.Z)(t) && null != u && (x = u.map(e => e.user.id));
-  let S = (0, a.Wu)([f.default], () => x.map(e => f.default.getUser(e)).filter(m.lm)),
-    P = null != n || (0, c.Z)(t),
-    I = i.useMemo(() => {
+  } = e, E = [];
+  null != n ? E = Array.from(n.embeddedActivity.userIds) : (0, c.Z)(t) && null != u && (E = u.map(e => e.user.id));
+  let S = (0, a.Wu)([f.default], () => E.map(e => f.default.getUser(e)).filter(m.lm)),
+    I = null != n || (0, c.Z)(t),
+    P = i.useMemo(() => {
       let e = new Map;
-      return P && null != u && u.forEach(t => {
+      return I && null != u && u.forEach(t => {
         let n = t.member;
         null != n && e.set(t.user.id, n)
       }), e
-    }, [u, P]);
-  return P ? (0, r.jsxs)("div", {
+    }, [u, I]);
+  return I ? (0, r.jsxs)("div", {
     className: O.flexColumn,
     children: [(0, r.jsxs)("div", {
       className: O.flexRow,
@@ -194,17 +194,17 @@ function x(e) {
         onOpenSpotifyAlbum: g
       }), (0, r.jsxs)("div", {
         className: O.detailsAndAvatarsContainer,
-        children: [(0, r.jsx)(v, {
+        children: [(0, r.jsx)(j, {
           activity: t,
           embeddedApp: n,
           onOpenSpotifyTrack: p
-        }), (0, r.jsx)(j, {
+        }), (0, r.jsx)(v, {
           activity: t,
           user: l,
           onOpenSpotifyArtist: h
         }), (0, r.jsx)(C, {
           activity: t
-        }), x.length > 0 && (0, r.jsx)(d.ZP, {
+        }), E.length > 0 && (0, r.jsx)(d.ZP, {
           className: O.usersSummary,
           guildId: o.guild_id,
           users: S,
@@ -213,7 +213,7 @@ function x(e) {
           renderUser: e => {
             var t;
             if (null == e || e === d.ag) return null;
-            let n = I.get(e.id),
+            let n = P.get(e.id),
               i = null != (t = null == n ? true : n.nick) ? t : b.ZP.getName(e);
             return (0, r.jsx)(s.DY3, {
               text: i,
@@ -227,7 +227,7 @@ function x(e) {
           }
         })]
       })]
-    }), (0, r.jsx)(E, {
+    }), (0, r.jsx)(x, {
       activity: t
     })]
   }) : null

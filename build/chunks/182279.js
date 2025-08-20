@@ -1,5 +1,6 @@
-/** Chunk was on 98464 **/
-/** chunk id: 182279, original params: e,n,t (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 182279, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   inviteDetailsContainer: "inviteDetailsContainer_da5e8d",
   clickable: "clickable_da5e8d",

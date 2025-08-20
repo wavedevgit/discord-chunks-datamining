@@ -72,8 +72,8 @@ function L(e) {
     participants: i,
     application: m,
     channel: g,
-    width: S
-  } = e, v = S > 400 ? 2 : +(S > 300), [h] = S > 400 ? [s.EFr.SIZE_56, 56] : S > 300 ? [s.EFr.SIZE_32, 32] : [s.EFr.SIZE_24, 24], b = (0, o.Wu)([C.default, P.default], () => Array.from(i).map(e => (0, p.J)(e, P.default) ? null : C.default.getUser(e.userId)).filter(x.lm)), O = (0, o.e7)([d.ZP], () => {
+    width: v
+  } = e, S = v > 400 ? 2 : +(v > 300), [h] = v > 400 ? [s.EFr.SIZE_56, 56] : v > 300 ? [s.EFr.SIZE_32, 32] : [s.EFr.SIZE_24, 24], b = (0, o.Wu)([C.default, P.default], () => Array.from(i).map(e => (0, p.J)(e, P.default) ? null : C.default.getUser(e.userId)).filter(x.lm)), O = (0, o.e7)([d.ZP], () => {
     var e;
     return null != (e = d.ZP.getEmbeddedActivitiesForChannel(g.id).find(e => e.applicationId === m.id)) ? e : d.ZP.getEmbeddedActivitiesForStartingChannel(g.id).find(e => e.applicationId === m.id)
   }), {
@@ -101,8 +101,8 @@ function L(e) {
       users: b
     }), (0, r.jsx)(s.Text, {
       className: a()(T.subheader, {
-        [T.small]: 0 === v,
-        [T.medium]: 1 === v
+        [T.small]: 0 === S,
+        [T.medium]: 1 === S
       }),
       variant: "text-sm/normal",
       children: b.length > 1 ? N.intl.formatToPlainString(N.t.cpe6CA, {
@@ -113,8 +113,8 @@ function L(e) {
       })
     }), (0, r.jsx)(s.Text, {
       className: a()(T.header, {
-        [T.small]: 0 === v,
-        [T.medium]: 1 === v
+        [T.small]: 0 === S,
+        [T.medium]: 1 === S
       }),
       variant: "text-sm/normal",
       children: m.name
@@ -140,7 +140,7 @@ function L(e) {
             case 0:
               return u.zx.Sizes.SMALL
           }
-        }(v),
+        }(S),
         className: T.button,
         look: u.iL.FILLED,
         color: u.zx.Colors.WHITE,
@@ -163,7 +163,7 @@ function F(e) {
     applicationId: c
   } = t, d = (0, g.Z)(), f = null != d && (0, m.p)(d.location) === u.id && d.applicationId === c, [p] = (0, I.Z)([c]), {
     url: E
-  } = (0, S.Z)({
+  } = (0, v.Z)({
     applicationId: c,
     names: D,
     size: 1024
@@ -180,7 +180,7 @@ function F(e) {
     value: s,
     children: (0, r.jsxs)("div", {
       className: T.container,
-      children: [b && null != d && (0, r.jsx)(v.Z, {
+      children: [b && null != d && (0, r.jsx)(S.Z, {
         className: T.iframe,
         embedId: (0, O.Z)(d.location.id, c)
       }), j && null != p && null != E && "" !== E ? (0, r.jsx)("img", {

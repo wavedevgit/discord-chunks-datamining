@@ -1,11 +1,12 @@
-/** Chunk was on 66181 **/
-/** chunk id: 921157, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 921157, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  s: () => s
+  s: () => a
 });
 var Chunk442837 = require("./442837.js"),
   Chunk651941 = require("./651941.js");
 
-function s() {
+function a() {
   return (0, Chunk442837.Wu)([Chunk651941.Z], () => Chunk651941.Z.getUserIds())
 }

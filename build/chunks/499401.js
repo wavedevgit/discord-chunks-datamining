@@ -1,22 +1,23 @@
-/** Chunk was on 16766 **/
-/** chunk id: 499401, original params: t,e,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 499401, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Y: () => l
+  Y: () => i
 });
 var Chunk388032 = require("./388032.jsx");
 
-function l(t) {
+function i(e) {
   let {
-    application: e,
+    application: t,
     username: n,
-    usernameOnClick: l
-  } = t;
-  return null != e ? r.intl.formatToParts(r.t.Tes5Oj, {
+    usernameOnClick: i
+  } = e;
+  return null != t ? r.intl.formatToParts(r.t.Tes5Oj, {
     username: n,
-    applicationName: e.name,
-    usernameOnClick: l
+    applicationName: t.name,
+    usernameOnClick: i
   }) : r.intl.formatToParts(r.t.PUJtgo, {
     username: n,
-    usernameOnClick: l
+    usernameOnClick: i
   })
 }

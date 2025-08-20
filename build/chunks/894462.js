@@ -1,5 +1,6 @@
-/** Chunk was on 66181 **/
-/** chunk id: 894462, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 894462, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   item: "item__740f2",
   keybindMessage: "keybindMessage__740f2",

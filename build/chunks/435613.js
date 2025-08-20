@@ -1,5 +1,6 @@
-/** Chunk was on 73628 **/
-/** chunk id: 435613, original params: e,t,A (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 435613, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   container: "container_fcf29c",
   flexContainer: "flexContainer_fcf29c",

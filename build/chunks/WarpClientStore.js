@@ -1,9 +1,10 @@
-/** Chunk was on 66181 **/
-/** chunk id: 956097, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 956097, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => b
+  Z: () => E
 }), require("./388685.js");
-var i, r, Chunk442837 = require("./442837.js"),
+var r, Chunk442837 = require("./442837.js"),
   Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
   Chunk668781 = require("./668781.js"),
@@ -11,17 +12,27 @@ var i, r, Chunk442837 = require("./442837.js"),
   Chunk998502 = require("./998502.js"),
   Chunk49226 = require("./49226.js"),
   Chunk981631 = require("./981631.js");
-let p = {
+
+function f(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+let _ = 10,
+  p = {
     status: ""
   },
-  g = [],
-  h = ["discord.com", "discordapp.com", "discordapp.net", "dl.discordapp.net", "discordcdn.com", "discord.gg", "discord.media"];
-class f extends(i = Chunk442837.ZP.Store) {
+  h = [],
+  m = ["discord.com", "discordapp.com", "discordapp.net", "dl.discordapp.net", "discordcdn.com", "discord.gg", "discord.media"];
+class g extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.updateState(), this.addListener()
   }
   logEvent(e) {
-    "status" in e && "string" == typeof e.status && (p = e), g = [...g.slice(g.length < 10 ? 0 : 1, 10), e], this.emitChange()
+    "status" in e && "string" == typeof e.status && (p = e), h = [...h.slice(h.length < _ ? 0 : 1, _), e], this.emitChange()
   }
   async updateState() {
     try {
@@ -36,9 +47,9 @@ class f extends(i = Chunk442837.ZP.Store) {
     } catch (e) {}
   }
   async runCommand(e) {
-    for (var t = arguments.length, n = Array(t > 1 ? t - 1 : 0), i = 1; i < t; i++) n[i - 1] = arguments[i];
+    for (var t = arguments.length, n = Array(t > 1 ? t - 1 : 0), r = 1; r < t; r++) n[r - 1] = arguments[r];
     try {
-      return await d.ZP.getDiscordUtils().runWarpCommand(e, ...n)
+      return await c.ZP.getDiscordUtils().runWarpCommand(e, ...n)
     } catch (e) {
       throw this.logEvent({
         commandError: e.message
@@ -92,7 +103,7 @@ class f extends(i = Chunk442837.ZP.Store) {
     try {
       let t = await this.runCommand("tunnel", "host", "list");
       if ((null == exports ? true : exports.mode) === "exclude")
-        for (let n of h) {
+        for (let n of m) {
           var e;
           (null == exports || null == (e = exports.hosts) ? true : module.indexOf(require)) === false && await this.runCommand("tunnel", "host", "add", require)
         }
@@ -107,7 +118,7 @@ class f extends(i = Chunk442837.ZP.Store) {
     return p
   }
   get log() {
-    return g
+    return h
   }
   get clientEnabled() {
     return Chunk49226.Z.getCurrentConfig({
@@ -143,10 +154,6 @@ class f extends(i = Chunk442837.ZP.Store) {
       status: "DisconnectCommandSent"
     }), this.clientEnabled
   }
-}(r = "displayName") in f ? Object.defineProperty(f, r, {
-  value: "WarpClientStore",
-  enumerable: true,
-  configurable: true,
-  writable: true
-}) : f[r] = "WarpClientStore";
-let b = new f(Chunk570140.Z, {})
+}
+f(g, "displayName", "WarpClientStore");
+let E = new g(Chunk570140.Z, {})

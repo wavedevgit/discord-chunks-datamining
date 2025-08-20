@@ -2,7 +2,7 @@
 /** chunk id: 256226, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => N
+  Z: () => C
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -79,23 +79,23 @@ function A(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let N = Chunk647438.forwardRef(function(e, t) {
+let C = Chunk647438.forwardRef(function(e, t) {
   var a, O, I;
   let A, {
-      canRemove: N,
-      className: C,
+      canRemove: C,
+      className: N,
       role: R,
       onRemove: P,
       guildId: w,
       disableBorderColor: D,
-      onMouseDown: L
+      onMouseDown: x
     } = e,
-    x = (0, s.JA)(R.id),
+    L = (0, s.JA)(R.id),
     {
-      tabIndex: M
-    } = x,
-    k = S(x, ["tabIndex"]),
-    j = (0, g.p9)({
+      tabIndex: j
+    } = L,
+    M = S(L, ["tabIndex"]),
+    k = (0, g.p9)({
       roleId: R.id,
       size: 16,
       guildId: w
@@ -113,41 +113,41 @@ let N = Chunk647438.forwardRef(function(e, t) {
         }))
       })
     }, [R.id]),
-    V = (0, d.dQu)(u.Z.unsafe_rawColors.PRIMARY_300).hsl(),
-    F = null != (O = R.colorString) ? O : V,
-    Z = null != (I = (0, l.wK)(F, .6)) ? I : true,
+    Z = (0, d.dQu)(u.Z.unsafe_rawColors.PRIMARY_300).hsl(),
+    V = null != (O = R.colorString) ? O : Z,
+    F = null != (I = (0, l.wK)(V, .6)) ? I : true,
     H = u.Z.unsafe_rawColors.WHITE_500.css,
-    Y = (0, l._i)(F);
+    Y = (0, l._i)(V);
   null != Y && .3 > (0, l.Bd)(Y) && (H = u.Z.unsafe_rawColors.PRIMARY_630.css);
   let W = (0, E._f)(w, R, R.colorStrings);
   A = G ? (0, r.jsx)(p.Z, {
     className: y.roleFlowerStar,
-    iconClassName: N ? y.roleVerifiedIcon : true,
-    color: F,
+    iconClassName: C ? y.roleVerifiedIcon : true,
+    color: V,
     size: 14
   }) : "dot" === U ? (0, r.jsx)(d.FhE, {
     className: y.roleDot,
-    color: F,
+    color: V,
     background: false,
     colors: W,
     tooltip: false
   }) : (0, r.jsx)(d.xko, {
-    color: F,
+    color: V,
     colors: W,
     className: y.roleCircle
   });
   let K = i.useMemo(() => {
       var t;
       return v({
-        borderColor: D ? true : Z
+        borderColor: D ? true : F
       }, null != (t = e.style) ? t : {})
-    }, [Z, D, e.style]),
-    z = () => N ? (0, r.jsx)(d.DY3, {
+    }, [F, D, e.style]),
+    z = () => C ? (0, r.jsx)(d.DY3, {
       text: b.intl.string(b.t.u3RVsL),
       children: (0, r.jsxs)(d.P3F, {
         className: o()(y.roleRemoveButtonCanRemove, y.roleRemoveButton),
         onClick: P,
-        tabIndex: M,
+        tabIndex: j,
         focusProps: {
           focusClassName: y.roleRemoveIconFocused
         },
@@ -177,16 +177,16 @@ let N = Chunk647438.forwardRef(function(e, t) {
   return (0, r.jsx)(d.tEY, {
     children: (0, r.jsxs)("div", T(v({
       ref: t,
-      className: o()(y.role, C),
+      className: o()(y.role, N),
       style: K,
       onContextMenu: B,
-      onMouseDown: L,
+      onMouseDown: x,
       "aria-label": R.name,
-      tabIndex: M
-    }, k), {
-      children: [z(), null != j ? (0, r.jsx)(m.Z, T(v({
+      tabIndex: j
+    }, M), {
+      children: [z(), null != k ? (0, r.jsx)(m.Z, T(v({
         className: y.roleIcon
-      }, j), {
+      }, k), {
         enableTooltip: false
       })) : null, (0, r.jsx)("div", {
         "aria-hidden": true,

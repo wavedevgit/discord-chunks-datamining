@@ -1,5 +1,6 @@
-/** Chunk was on 66181 **/
-/** chunk id: 246652, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 246652, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   k: () => l
 }), require("./388685.js");
@@ -7,6 +8,15 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk481060 = require("./481060.js"),
   Chunk959591 = require("./959591.js");
+
+function s(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
 class l extends Chunk647438.PureComponent {
   componentDidCatch(e, t) {
     console.error("Error rendering component (LocalErrorBoundary): ", e), this.setState({
@@ -25,17 +35,9 @@ class l extends Chunk647438.PureComponent {
     }) : this.props.children
   }
   constructor(...e) {
-    super(...e),
-      function(e, t, n) {
-        t in e ? Object.defineProperty(e, t, {
-          value: n,
-          enumerable: true,
-          configurable: true,
-          writable: true
-        }) : e[t] = n
-      }(this, "state", {
-        error: null,
-        info: null
-      })
+    super(...e), s(this, "state", {
+      error: null,
+      info: null
+    })
   }
 }

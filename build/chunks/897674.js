@@ -1,5 +1,6 @@
-/** Chunk was on 89311 **/
-/** chunk id: 897674, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 897674, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   Z: () => u,
   g: () => c
@@ -25,12 +26,12 @@ function u(e) {
   } = e, {
     feed: u,
     filters: d
-  } = (0, i.cj)([l.Z], () => ({
-    feed: l.Z.getFeed(t),
-    filters: l.Z.getFilters()
-  })), m = r.useMemo(() => {
+  } = (0, i.cj)([a.Z], () => ({
+    feed: a.Z.getFeed(t),
+    filters: a.Z.getFilters()
+  })), f = r.useMemo(() => {
     let e = n ? null == u ? true : u.unranked_game_entries.map(e => e.content) : null == u ? true : u.entries.map(e => e.content);
     return null != d ? null == e ? true : e.filter(e => c(d, e)) : e
   }, [u, d, n]);
-  return m = (0, a.Z)(m), m = (0, s.Z)(m), m = (0, o.Z)(m)
+  return f = (0, o.Z)(f), f = (0, s.Z)(f), f = (0, l.Z)(f)
 }

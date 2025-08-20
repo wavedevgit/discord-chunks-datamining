@@ -154,7 +154,7 @@ function O(e) {
     trailing: O
   } = e, {
     headingId: I
-  } = (0, _.v)(), T = null != t, S = (0, f.MW)(n), A = h ? S ? b : y : E, N = null != n && (0, r.jsx)("div", {
+  } = (0, _.v)(), T = null != t, S = (0, f.MW)(n), A = h ? S ? b : y : E, C = null != n && (0, r.jsx)("div", {
     className: o()(p.headerGraphic, {
       [p.headerGraphicAnimated]: S
     }),
@@ -162,7 +162,7 @@ function O(e) {
       className: p.headerGraphicContainer,
       children: (0, r.jsx)(d.z, m({}, n))
     })
-  }), C = (0, r.jsx)(s.X6, {
+  }), N = (0, r.jsx)(s.X6, {
     className: p.headerTitle,
     id: I,
     variant: null != l ? l : "heading-lg/semibold",
@@ -173,7 +173,7 @@ function O(e) {
     variant: "text-md/normal",
     color: "text-secondary",
     children: c
-  }), P = null != n ? N : C, w = (0, r.jsx)("header", {
+  }), P = null != n ? C : N, w = (0, r.jsx)("header", {
     className: o()(p.section, p.header, {
       [p.headerCentered]: h
     }),
@@ -192,7 +192,7 @@ function O(e) {
         })
       }), (0, r.jsx)(v, {
         badge: i
-      }), null != n && null != a && C, null != c && R]
+      }), null != n && null != a && N, null != c && R]
     })
   });
   return T ? (0, r.jsx)(u.$, {

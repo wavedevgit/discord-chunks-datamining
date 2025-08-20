@@ -1,7 +1,8 @@
-/** Chunk was on 30243 **/
-/** chunk id: 861529, original params: e,t,r (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 861529, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => b
+  Z: () => h
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -15,23 +16,25 @@ var Chunk951288 = require("./951288.js"),
   Chunk709136 = require("./709136.js"),
   Chunk430864 = require("./430864.js");
 
-function b(e) {
+function p(e) {
+  let t = (0, c.CJ)();
+  return (0, i.useMemo)(() => {
+    let n;
+    return null === t ? null : (n = null != t.message ? (0, l.rs)(t.message, d.u) : (0, l.p6)({
+      channelId: t.channelId,
+      renderOptions: d.u
+    }), s.Z.parse(e, true, n))
+  }, [e, t])
+}
+
+function h(e) {
   let {
     content: t,
-    className: r
-  } = e, i = function(e) {
-    let t = (0, s.CJ)();
-    return (0, l.useMemo)(() => {
-      let r;
-      return null === t ? null : (r = null != t.message ? (0, c.rs)(t.message, d.u) : (0, c.p6)({
-        channelId: t.channelId,
-        renderOptions: d.u
-      }), a.Z.parse(e, true, r))
-    }, [e, t])
-  }(t), b = (0, u.Gt)();
-  return (0, n.jsx)("div", {
-    className: o()(r, f.markup, p.markdownContainer, {
-      [p.containerSizedText]: b
+    className: n
+  } = e, i = p(t), a = (0, u.Gt)();
+  return (0, r.jsx)("div", {
+    className: o()(n, _.markup, f.markdownContainer, {
+      [f.containerSizedText]: a
     }),
     children: i
   })

@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   JO: () => v,
-  ZP: () => N,
+  ZP: () => C,
   iz: () => T
 });
 var Chunk951288 = require("./951288.js"),
@@ -134,17 +134,17 @@ let y = 24,
       tooltipColor: T,
       tooltipPosition: S = "bottom",
       tooltipAlign: A,
-      tooltipDisabled: N,
-      tooltipSpacing: C,
+      tooltipDisabled: C,
+      tooltipSpacing: N,
       hideOnClick: R = true,
       role: P,
       "aria-label": w,
       "aria-hidden": D,
-      "aria-checked": L,
-      "aria-expanded": x,
-      "aria-haspopup": M,
-      "data-jump-section": k
-    } = e, j = null != g ? {
+      "aria-checked": x,
+      "aria-expanded": L,
+      "aria-haspopup": j,
+      "data-jump-section": M
+    } = e, k = null != g ? {
       secondaryColorClass: g
     } : {}, U = (0, r.jsx)(E, h({
       x: 0,
@@ -155,15 +155,15 @@ let y = 24,
       className: o()(i, _.icon),
       colorClass: null != m ? m : true,
       color: null != p ? p : "currentColor"
-    }, j)), G = w;
+    }, k)), G = w;
     return null == G && "string" == typeof I && (G = I), (0, r.jsx)(c.ua7, {
       text: I,
       color: T,
       position: S,
       align: A,
       hideOnClick: R,
-      shouldShow: !N,
-      spacing: C,
+      shouldShow: !C,
+      spacing: N,
       children: e => {
         let {
           onMouseEnter: g,
@@ -190,7 +190,7 @@ let y = 24,
             onMouseLeave: y,
             onFocus: I,
             onBlur: T
-          }, j))
+          }, k))
         }) : (0, r.jsxs)(c.P3F, {
           innerRef: t,
           tag: "div",
@@ -209,11 +209,11 @@ let y = 24,
           role: P,
           "aria-label": G,
           "aria-hidden": D,
-          "aria-checked": L,
-          "aria-haspopup": M,
-          "aria-expanded": x,
+          "aria-checked": x,
+          "aria-haspopup": j,
+          "aria-expanded": L,
           tabIndex: l || null == O ? false : 0,
-          "data-jump-section": k,
+          "data-jump-section": M,
           children: [u ? (0, r.jsx)(d.ZP, {
             mask: "top" === f ? d.ZP.Masks.HEADER_BAR_BADGE_TOP : d.ZP.Masks.HEADER_BAR_BADGE_BOTTOM,
             height: b,
@@ -313,4 +313,4 @@ let A = e => {
   })
 };
 A.Icon = v, A.ChannelIcon = I, A.Title = O, A.Divider = T, A.Caret = S;
-let N = A
+let C = A

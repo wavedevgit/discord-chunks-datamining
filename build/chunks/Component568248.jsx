@@ -1,7 +1,8 @@
-/** Chunk was on 30243 **/
-/** chunk id: 568248, original params: e,t,r (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 568248, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => y
+  Z: () => E
 }), require("./953529.js"), require("./997841.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,52 +18,53 @@ var Chunk951288 = require("./951288.js"),
   Chunk295435 = require("./295435.jsx"),
   Chunk217702 = require("./217702.js"),
   Chunk156259 = require("./156259.js");
+let g = 85;
 
-function y(e) {
+function E(e) {
   let {
     media: t,
-    spoiler: r,
-    description: i
-  } = e, y = (0, u.pU)(t), j = (0, f.yE)(t.flags, s.hR.IS_ANIMATED), {
-    gifAutoPlay: g
-  } = (0, d.c)(), [h, v] = l.useState(r), P = e => {
-    var r, l;
-    return "IMAGE" !== y ? (0, n.jsx)(b.S, {
-      className: O.imgContainer,
+    spoiler: n,
+    description: a
+  } = e, E = (0, u.pU)(t), b = (0, _.yE)(t.flags, c.hR.IS_ANIMATED), {
+    gifAutoPlay: y
+  } = (0, d.c)(), [O, v] = i.useState(n), I = e => {
+    var n, i;
+    return "IMAGE" !== E ? (0, r.jsx)(p.S, {
+      className: m.imgContainer,
       media: t,
-      placeholderWidth: 85,
-      placeholderHeight: 85,
-      maxWidth: 85,
-      maxHeight: 85,
+      placeholderWidth: g,
+      placeholderHeight: g,
+      maxWidth: g,
+      maxHeight: g,
       hiddenSpoilers: e
-    }) : (0, n.jsx)(p.Yi, {
-      containerClassName: o()(O.imgContainer, {
-        [O.hiddenSpoiler]: e
+    }) : (0, r.jsx)(f.Yi, {
+      containerClassName: o()(m.imgContainer, {
+        [m.hiddenSpoiler]: e
       }),
-      imageClassName: O.img,
+      imageClassName: m.img,
       src: t.proxyUrl,
-      alt: i,
+      alt: a,
       original: t.url,
       placeholder: t.placeholder,
       placeholderVersion: t.placeholderVersion,
-      width: null != (r = t.width) ? r : 0,
-      height: null != (l = t.height) ? l : 0,
+      width: null != (n = t.width) ? n : 0,
+      height: null != (i = t.height) ? i : 0,
       hiddenSpoilers: e,
-      maxWidth: 170,
-      maxHeight: 170,
-      minWidth: 85,
-      minHeight: 85,
-      autoPlay: g && !e,
-      mediaLayoutType: m.hV.MOSAIC,
+      maxWidth: 2 * g,
+      maxHeight: 2 * g,
+      minWidth: g,
+      minHeight: g,
+      autoPlay: y && !e,
+      mediaLayoutType: h.hV.MOSAIC,
       reducedSizeAltTextButton: true,
-      srcIsAnimated: j
+      srcIsAnimated: b
     })
   };
-  return r ? (0, n.jsx)(a.ZP, {
-    type: a.ZP.Types.ATTACHMENT,
-    reason: c.wk.SPOILER,
-    obscured: h,
+  return n ? (0, r.jsx)(s.ZP, {
+    type: s.ZP.Types.ATTACHMENT,
+    reason: l.wk.SPOILER,
+    obscured: O,
     onToggleObscurity: () => v(e => !e),
-    children: e => P(e)
-  }) : P(false)
+    children: e => I(e)
+  }) : I(false)
 }

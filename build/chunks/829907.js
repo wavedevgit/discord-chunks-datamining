@@ -2,7 +2,7 @@
 /** chunk id: 829907, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  DH: () => C,
+  DH: () => N,
   H8: () => A,
   HD: () => f,
   O0: () => p,
@@ -117,14 +117,14 @@ function A(e) {
   let t = a.ZP.getGameOrTransformedSubgameForPID(e);
   return null != t && null != t.name && S(t)
 }
-let N = new Set([Chunk593472.Jx.UNKNOWN, Chunk593472.Jx.FULLSCREEN]);
+let C = new Set([Chunk593472.Jx.UNKNOWN, Chunk593472.Jx.FULLSCREEN]);
 
-function C(e, t, n) {
+function N(e, t, n) {
   if (e.overlayMethod !== c.gl.OutOfProcess && e.overlayMethod !== c.gl.OutOfProcessLimitedInteraction) returnfalse;
   if (!n) returntrue;
   switch (t) {
     case r.Jx.UNKNOWN:
-      return N.has(e.previousFullscreenType);
+      return C.has(e.previousFullscreenType);
     case r.Jx.FULLSCREEN:
       returntrue
   }

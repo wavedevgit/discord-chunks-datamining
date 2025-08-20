@@ -1,5 +1,5 @@
-/** Chunk was on 75283 **/
-/** chunk id: 786366, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 8853 **/
+/** chunk id: 786366, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => f
 }), require("./953529.js"), require("./997841.js");
@@ -15,15 +15,15 @@ var Chunk597312 = require("./597312.js"),
 
 function u(e) {
   let {
-    icon: t,
-    title: n,
+    icon: n,
+    title: t,
     description: o
   } = e;
   return (0, r.jsxs)("div", {
     className: d.row,
     children: [(0, r.jsx)("div", {
       className: d.rowIcon,
-      children: (0, r.jsx)(t, {
+      children: (0, r.jsx)(n, {
         size: "custom",
         width: 20,
         height: 20,
@@ -31,10 +31,10 @@ function u(e) {
       })
     }), (0, r.jsxs)("div", {
       className: d.rowText,
-      children: [(0, r.jsx)(l.X6q, {
+      children: [(0, r.jsx)(i.X6q, {
         variant: "text-xs/semibold",
-        children: n
-      }), (0, r.jsx)(l.Text, {
+        children: t
+      }), (0, r.jsx)(i.Text, {
         variant: "text-sm/normal",
         children: o
       })]
@@ -44,33 +44,33 @@ function u(e) {
 
 function f(e) {
   let {
-    user: t
-  } = e, n = (0, i.e7)([c.Z], () => {
+    user: n
+  } = e, t = (0, l.e7)([a.Z], () => {
     var e;
-    return null == (e = c.Z.getUserProfile(t.id)) ? true : e.application
+    return null == (e = a.Z.getUserProfile(n.id)) ? true : e.application
   }), {
     hasMessageContent: f,
-    hasGuildPresences: p,
-    hasGuildMembers: m
-  } = (0, a.w)({
-    flags: null == n ? true : n.flags
+    hasGuildPresences: m,
+    hasGuildMembers: p
+  } = (0, c.w)({
+    flags: null == t ? true : t.flags
   });
   return (0, r.jsxs)(o.zJ, {
     fade: true,
     className: d.scroller,
     children: [f && (0, r.jsx)(u, {
-      icon: l.kBi,
+      icon: i.kBi,
       title: s.intl.string(s.t["7Tmhfn"]),
       description: s.intl.string(s.t["eu5x7+"])
-    }), p && (0, r.jsx)(u, {
-      icon: l.iWm,
+    }), m && (0, r.jsx)(u, {
+      icon: i.iWm,
       title: s.intl.string(s.t.awYSsL),
       description: s.intl.string(s.t.TpsXoK)
-    }), m && (0, r.jsx)(u, {
-      icon: l.BFJ,
+    }), p && (0, r.jsx)(u, {
+      icon: i.BFJ,
       title: s.intl.string(s.t.WuKeSE),
       description: s.intl.string(s.t.wOBmtb)
-    }), (0, r.jsx)(l.Text, {
+    }), (0, r.jsx)(i.Text, {
       variant: "text-xs/normal",
       children: s.intl.format(s.t.b6nqk5, {
         helpCenterUrl: "https://support.discord.com/hc/articles/7933951485975"

@@ -85,8 +85,8 @@ function O(e) {
   } = i.useMemo(() => (0, c.Hl)(t), [t]), {
     progressBarFillWidthFactor: S,
     isProgressBarAnimationComplete: A,
-    setShouldFireConfetti: N,
-    shouldFireConfetti: C,
+    setShouldFireConfetti: C,
+    shouldFireConfetti: N,
     tierMarkerAnimationPosition: R
   } = y({
     fillFactor: I,
@@ -132,7 +132,7 @@ function O(e) {
       guild: t,
       isProgressBarAnimationComplete: A,
       setConfettiCount: E,
-      setShouldFireConfetti: N,
+      setShouldFireConfetti: C,
       tier: e,
       tierMarkerAnimationPosition: R,
       totalAvailableBoostsCount: T,
@@ -140,7 +140,7 @@ function O(e) {
     }, e)), (0, r.jsx)(u.Z, {
       confettiCount: g,
       confettiTriggerRef: O,
-      isFiring: C
+      isFiring: N
     })]
   })
 }

@@ -1,7 +1,8 @@
-/** Chunk was on 11868 **/
-/** chunk id: 912193, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 912193, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  b: () => d
+  b: () => _
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -9,40 +10,45 @@ var Chunk481060 = require("./481060.js"),
   Chunk846027 = require("./846027.js"),
   Chunk468026 = require("./468026.jsx"),
   Chunk388032 = require("./388032.jsx");
-let c = null;
 
-function s() {
-  null !== c && (0, Chunk481060.Mr3)(c), c = null
+function l(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
 }
 
-function u() {
+function c(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      l(e, t, n[t])
+    })
+  }
+  return e
+}
+let u = null;
+
+function d() {
+  null !== u && (0, Chunk481060.Mr3)(u), u = null
+}
+
+function f() {
   Chunk846027.Z.setSilenceWarning(false)
 }
 
-function d() {
-  c = (0, Chunk481060.h7j)(e => (0, r.jsx)(a.default, function(e) {
-    for (var t = 1; t < arguments.length; t++) {
-      var n = null != arguments[t] ? arguments[t] : {},
-        r = Object.keys(n);
-      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-        return Object.getOwnPropertyDescriptor(n, e).enumerable
-      }))), r.forEach(function(t) {
-        var r;
-        r = n[t], t in e ? Object.defineProperty(e, t, {
-          value: r,
-          enumerable: true,
-          configurable: true,
-          writable: true
-        }) : e[t] = r
-      })
-    }
-    return e
-  }({
-    title: o.intl.string(o.t["zQ1+Jy"]),
-    body: o.intl.string(o.t.K1gWXl),
-    secondaryConfirmText: o.intl.string(o.t.XAiAgI),
-    onConfirmSecondary: u,
-    onConfirm: s,
-    confirmText: o.intl.string(o.t.BddRzc)
+function _() {
+  u = (0, Chunk481060.h7j)(e => (0, r.jsx)(o.default, c({
+    title: s.intl.string(s.t["zQ1+Jy"]),
+    body: s.intl.string(s.t.K1gWXl),
+    secondaryConfirmText: s.intl.string(s.t.XAiAgI),
+    onConfirmSecondary: f,
+    onConfirm: d,
+    confirmText: s.intl.string(s.t.BddRzc)
   }, e)))
 }

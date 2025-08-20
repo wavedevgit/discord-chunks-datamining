@@ -46,9 +46,9 @@ function g(e) {
   }), T = (0, _.j)(E), {
     primaryColor: S,
     secondaryColor: A
-  } = (0, c.Z)("".concat(T, "?forColors")), N = (0, s.e7)([u.default], () => u.default.getUser(null == y ? true : y.user_id));
-  if (null == N) return null;
-  let C = d.ZP.getName(g, true, N);
+  } = (0, c.Z)("".concat(T, "?forColors")), C = (0, s.e7)([u.default], () => u.default.getUser(null == y ? true : y.user_id));
+  if (null == C) return null;
+  let N = d.ZP.getName(g, true, C);
   return (0, r.jsxs)("div", {
     className: a()(h.container, b),
     style: {
@@ -59,7 +59,7 @@ function g(e) {
       className: h.title,
       children: m(E.settings.interval_type)
     }), (0, r.jsx)(l.qEK, {
-      src: N.getAvatarURL(g, 16),
+      src: C.getAvatarURL(g, 16),
       size: l.EFr.SIZE_16,
       "aria-label": "avatar"
     }), (0, r.jsx)(l.LZC, {
@@ -71,7 +71,7 @@ function g(e) {
         className: h.username,
         variant: "text-xs/semibold",
         color: "header-primary",
-        children: C
+        children: N
       }), (0, r.jsx)(l.Text, {
         className: h.statsText,
         variant: "text-xxs/medium",

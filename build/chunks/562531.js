@@ -1,28 +1,28 @@
-/** Chunk was on 91584 **/
-/** chunk id: 562531, original params: t,e,r (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 562531, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 var Chunk309943 = require("./309943.js"),
   Chunk102736 = require("./102736.js"),
   Chunk361788 = require("./361788.js");
-module.exports = function(t) {
-  var e, r, a = t.getSelection();
-  if (!a.isCollapsed()) return t;
-  var u = a.getAnchorOffset();
-  if (0 === u) return t;
-  var s = a.getAnchorKey(),
-    c = t.getCurrentContent(),
-    l = c.getBlockForKey(s).getLength();
-  if (l <= 1) return t;
-  u === l ? (e = a.set("anchorOffset", u - 1), r = a) : r = (e = a.set("focusOffset", u + 1)).set("anchorOffset", u + 1);
-  var f = o(c, e),
-    p = n.removeRange(c, e, "backward"),
-    h = p.getSelectionAfter(),
-    d = h.getAnchorOffset() - 1,
-    g = h.merge({
-      anchorOffset: d,
-      focusOffset: d
+module.exports = function(e) {
+  var t, n, o = e.getSelection();
+  if (!o.isCollapsed()) return e;
+  var s = o.getAnchorOffset();
+  if (0 === s) return e;
+  var l = o.getAnchorKey(),
+    c = e.getCurrentContent(),
+    u = c.getBlockForKey(l).getLength();
+  if (u <= 1) return e;
+  s === u ? (t = o.set("anchorOffset", s - 1), n = o) : n = (t = o.set("focusOffset", s + 1)).set("anchorOffset", s + 1);
+  var d = a(c, t),
+    f = r.removeRange(c, t, "backward"),
+    _ = f.getSelectionAfter(),
+    p = _.getAnchorOffset() - 1,
+    h = _.merge({
+      anchorOffset: p,
+      focusOffset: p
     }),
-    y = n.replaceWithFragment(p, g, f),
-    v = i.push(t, y, "insert-fragment");
-  return i.acceptSelection(v, r)
+    m = r.replaceWithFragment(f, h, d),
+    g = i.push(e, m, "insert-fragment");
+  return i.acceptSelection(g, n)
 }

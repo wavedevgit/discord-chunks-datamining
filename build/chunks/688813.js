@@ -1,6 +1,9 @@
-/** Chunk was on 26434 **/
-/** chunk id: 688813, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 688813, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  $: () => i
+  $: () => r
 });
-var r, i = ((r = {}).JOIN_RAID = "JOIN_RAID", r.DM_RAID = "DM_RAID", r.MENTION_RAID = "MENTION_RAID", r)
+var r = function(e) {
+  return e.JOIN_RAID = "JOIN_RAID", e.DM_RAID = "DM_RAID", e.MENTION_RAID = "MENTION_RAID", e
+}({})

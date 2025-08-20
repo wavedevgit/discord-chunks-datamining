@@ -1,5 +1,6 @@
-/** Chunk was on 26434 **/
-/** chunk id: 682392, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 682392, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   mainContainer: "mainContainer_b99f57",
   compact: "compact_b99f57",

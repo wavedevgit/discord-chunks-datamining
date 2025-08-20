@@ -1,13 +1,16 @@
-/** Chunk was on 26434 **/
-/** chunk id: 870041, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 870041, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  ZP: () => a,
-  xI: () => o
+  ZP: () => o,
+  xI: () => a
 });
-var r, Chunk818083 = require("./818083.js"),
+var Chunk818083 = require("./818083.js"),
   Chunk987338 = require("./987338.js"),
-  o = ((r = {}).Control = "CONTROL", r.Interactive = "INTERACTIVE", r.Static = "STATIC", r);
-let a = (0, Chunk818083.B)({
+  a = function(e) {
+    return e.Control = "CONTROL", e.Interactive = "INTERACTIVE", e.Static = "STATIC", e
+  }({});
+let o = (0, Chunk818083.B)({
   kind: "user",
   id: "2025-08_referral_program_popover",
   label: "Referral Program Popover Experiment",

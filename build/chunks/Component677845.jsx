@@ -1,4 +1,4 @@
-/** Chunk was on 36499 **/
+/** Chunk was on 5665 **/
 /** chunk id: 677845, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -37,7 +37,7 @@ function S(e) {
     className: Z,
     inCall: T,
     totalNumberOfParticipants: N
-  } = e, A = (0, c.bp)() === O.IlC.POPOUT, w = (0, o.e7)([y.Z], () => y.Z.getGuild(I.guild_id), [I.guild_id]), {
+  } = e, A = (0, c.bp)() === j.IlC.POPOUT, w = (0, o.e7)([y.Z], () => y.Z.getGuild(I.guild_id), [I.guild_id]), {
     dismissedActivityEntryPointTileChannel: R
   } = (0, v.d)(), M = (0, o.e7)([h.Z], () => h.Z.getUserParticipantCount(I.id), [I]), k = (0, b.bt)(I.id, t), D = i.useCallback(() => {
     (0, a.j)(() => {
@@ -89,7 +89,7 @@ function S(e) {
     inPopout: A,
     handleClose: D,
     userParticipantCount: M
-  })) : z.push(e => (0, r.jsx)(j.Z, {
+  })) : z.push(e => (0, r.jsx)(O.Z, {
     width: e,
     channel: I,
     guild: w,

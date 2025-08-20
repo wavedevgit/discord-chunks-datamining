@@ -1,4 +1,4 @@
-/** Chunk was on 69003 **/
+/** Chunk was on 91488 **/
 /** chunk id: 424785, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => q
@@ -145,8 +145,8 @@ class K extends Chunk98597.ZP {
       mentionCount: _,
       isFavoriteSuggestion: y
     } = this.props, {
-      shouldShowGuildVerificationPopout: v
-    } = this.state, j = this.getVoiceStatesCount(), C = (0, Chunk951288.jsxs)("li", {
+      shouldShowGuildVerificationPopout: j
+    } = this.state, v = this.getVoiceStatesCount(), C = (0, Chunk951288.jsxs)("li", {
       className: o()(this.getModeClass(), {
         [Chunk55940.disabled]: this.isDisabled()
       }),
@@ -179,7 +179,7 @@ class K extends Chunk98597.ZP {
               }
               return i
             }(l, ["onClick", "onContextMenu"]);
-            return (0, r.jsxs)(M.ZP, W(z({
+            return (0, r.jsxs)(L.ZP, W(z({
               ref: this.channelItemRef,
               className: V.iconVisibility,
               iconClassName: o()({
@@ -205,7 +205,7 @@ class K extends Chunk98597.ZP {
                 channel: e,
                 unread: b,
                 mentionCount: _,
-                userCount: j,
+                userCount: v,
                 isSubscriptionGated: g,
                 needSubscriptionToAccess: m
               })
@@ -244,7 +244,7 @@ class K extends Chunk98597.ZP {
     }), H(this, "handleContextMenu", e => {
       let {
         channel: t
-      } = this.props, i = I.Z.getGuild(t.getGuildId());
+      } = this.props, i = P.Z.getGuild(t.getGuildId());
       null != i && (0, u.jW)(e, async () => {
         let {
           default: e
@@ -326,8 +326,8 @@ function q(e) {
   } = e, c = (0, a.cj)([Z.ZP], () => ({
     unread: Z.ZP.hasUnread(n.id),
     mentionCount: Z.ZP.getMentionCount(n.id)
-  })), u = (0, a.e7)([T.ZP], () => T.ZP.resolveUnreadSetting(n)), d = (0, a.cj)([P.Z, N.Z, w.Z], () => {
-    let e = P.Z.getChannel(n.parent_id),
+  })), u = (0, a.e7)([T.ZP], () => T.ZP.resolveUnreadSetting(n)), d = (0, a.cj)([I.Z, N.Z, w.Z], () => {
+    let e = I.Z.getChannel(n.parent_id),
       r = N.Z.getCheck(n.guild_id);
     return {
       canManageChannel: null != t && w.Z.can(U.Plq.MANAGE_CHANNELS, n),
@@ -337,10 +337,10 @@ function q(e) {
       bypassLimit: w.Z.can(U.Plq.MOVE_MEMBERS, n),
       unverifiedAccount: !r.canChat
     }
-  }), p = (0, a.e7)([S.Z], () => S.Z.isCollapsed(n.parent_id)), f = (0, x.ZP)(n.id), h = (0, a.e7)([C.Z], () => C.Z.getStageInstanceByChannel(n.id), [n.id]), g = (0, v.Rk)(n.id, j.pV.AUDIENCE), {
+  }), p = (0, a.e7)([S.Z], () => S.Z.isCollapsed(n.parent_id)), f = (0, E.ZP)(n.id), h = (0, a.e7)([C.Z], () => C.Z.getStageInstanceByChannel(n.id), [n.id]), g = (0, j.Rk)(n.id, v.pV.AUDIENCE), {
     isSubscriptionGated: m,
     needSubscriptionToAccess: O
-  } = (0, b.Z)(n.id), _ = (0, a.e7)([T.ZP], () => T.ZP.isFavorite(t.id, n.id)), y = (0, E.xJ)(n.id), I = (0, L.Z)({
+  } = (0, b.Z)(n.id), _ = (0, a.e7)([T.ZP], () => T.ZP.isFavorite(t.id, n.id)), y = (0, x.xJ)(n.id), P = (0, M.Z)({
     channel: n,
     isChannelSelected: false,
     isChannelCollapsed: o,
@@ -348,7 +348,7 @@ function q(e) {
     isSubscriptionGated: m,
     needSubscriptionToAccess: O,
     enableConnectedUserLimit: y || n.userLimit > 0 && n.userLimit < U.xGv
-  }), A = e.connected && null == I;
+  }), A = e.connected && null == P;
   return (0, r.jsx)(Y, W(z({
     categoryCollapsed: p,
     connectAction: f,
@@ -359,7 +359,7 @@ function q(e) {
   }, c, d, e), {
     isFavoriteSuggestion: l && !_,
     forceShowButtons: A,
-    channelInfo: I,
+    channelInfo: P,
     resolvedUnreadSetting: u
   }))
 }

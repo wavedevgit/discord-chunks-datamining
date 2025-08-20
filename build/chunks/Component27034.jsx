@@ -63,20 +63,20 @@ function E(e) {
       setFooterNode: T,
       setModalOverlayNode: S,
       setReadySlideId: A,
-      premiumBrandRefreshBackgroundClassName: N,
-      selectedSkuId: C,
+      premiumBrandRefreshBackgroundClassName: C,
+      selectedSkuId: N,
       isDisplayingWowMomentConfirmation: R,
       isGift: P
     } = (0, d.JL)(),
-    w = null != C && C in _.y7,
+    w = null != N && N in _.y7,
     D = v.find(e => e.key === O);
   i.useEffect(() => {
     S(null)
   }, [O, S]), l()(null != D, "Unknown step for current payment flow.");
-  let L = null != (c = null == D || null == (t = D.options) ? true : t.hideSlider) && c,
-    x = null == D || null == (n = D.options) ? true : n.bodyClassName,
-    M = null == D || null == (a = D.options) ? true : a.sliderBodyClassName;
-  switch (true !== b && b && (M = p.sliderBodyLarge), O) {
+  let x = null != (c = null == D || null == (t = D.options) ? true : t.hideSlider) && c,
+    L = null == D || null == (n = D.options) ? true : n.bodyClassName,
+    j = null == D || null == (a = D.options) ? true : a.sliderBodyClassName;
+  switch (true !== b && b && (j = p.sliderBodyLarge), O) {
     case f.h8.ADD_PAYMENT_STEPS:
       m = 408;
       break;
@@ -87,10 +87,10 @@ function E(e) {
       w && !P && (m = "100%")
   }
   return (0, r.jsxs)(r.Fragment, {
-    children: [null == (h = null == D || null == (s = D.options) ? true : s.renderHeader) || h ? E : null, D.renderStep(y), null == O || L ? null : (0, r.jsxs)(r.Fragment, {
+    children: [null == (h = null == D || null == (s = D.options) ? true : s.renderHeader) || h ? E : null, D.renderStep(y), null == O || x ? null : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(u.hzk, {
         "data-migration-pending": true,
-        className: o()(x, p.body, N, {
+        className: o()(L, p.body, C, {
           [p.reviewStep]: O === f.h8.REVIEW,
           [p.addPaymentStepForPremium]: O === f.h8.ADD_PAYMENT_STEPS && w
         }),
@@ -103,7 +103,7 @@ function E(e) {
           children: v.filter(e => null != e.key).map(e => (0, r.jsx)(u.Mi4, {
             id: e.key,
             children: (0, r.jsx)("form", {
-              className: o()(p.sliderBody, M),
+              className: o()(p.sliderBody, j),
               ref: e => {
                 I(e)
               },

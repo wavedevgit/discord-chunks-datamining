@@ -1,4 +1,4 @@
-/** Chunk was on 36499 **/
+/** Chunk was on 5665 **/
 /** chunk id: 450936, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -29,10 +29,10 @@ function b(e) {
   }, [_]), x = (0, i.e7)([d.Z], () => {
     var e;
     return d.Z.isFetchingProfile(null != (e = null == C ? true : C.id) ? e : m.lds)
-  }), v = (0, o.Z)(x), j = (0, i.e7)([c.Z], () => c.Z.getAppIdForBotUserId(null == C ? true : C.id)), O = (0, i.e7)([d.Z], () => {
+  }), v = (0, o.Z)(x), O = (0, i.e7)([c.Z], () => c.Z.getAppIdForBotUserId(null == C ? true : C.id)), j = (0, i.e7)([d.Z], () => {
     var e;
     return null !== C ? null == (e = d.Z.getUserProfile(null == C ? true : C.id)) ? true : e.application : true
-  }), E = null != j ? j : null == O ? true : O.id;
+  }), E = null != O ? O : null == j ? true : j.id;
   r.useEffect(() => {
     if (null == E) {
       var e;

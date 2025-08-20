@@ -1,4 +1,4 @@
-/** Chunk was on 36499 **/
+/** Chunk was on 5665 **/
 /** chunk id: 983559, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => w
@@ -94,8 +94,8 @@ function w(e) {
             style: H,
             className: N.backdrop
           }), (0, r.jsxs)(a.u2, {
-            children: [(0, r.jsxs)(j.Z, {
-              children: [(0, r.jsx)(O.Z, {
+            children: [(0, r.jsxs)(O.Z, {
+              children: [(0, r.jsx)(j.Z, {
                 user: t,
                 themeType: Z.l.SIDEBAR,
                 shouldShowTooltip: null === F.interactionType

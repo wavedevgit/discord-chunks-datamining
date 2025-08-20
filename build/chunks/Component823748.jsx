@@ -1,4 +1,4 @@
-/** Chunk was on 36499 **/
+/** Chunk was on 5665 **/
 /** chunk id: 823748, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => tc
@@ -83,7 +83,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk657218 = require("./657218.jsx"),
   Chunk407908 = require("./407908.jsx"),
   Chunk66556 = require("./66556.jsx"),
-  Chunk739830 = require("./739830.jsx"),
+  Chunk131694 = require("./131694.jsx"),
   Chunk377929 = require("./377929.jsx"),
   Chunk900157 = require("./900157.jsx"),
   Chunk108427 = require("./108427.js"),
@@ -204,7 +204,7 @@ class to extends Chunk647438.PureComponent {
     s()(null != i, "Missing user in Channel.openDMContextMenu"), (0, y.jW)(e, async () => {
       let {
         default: e
-      } = await Promise.all([n.e("79695"), n.e("70205"), n.e("98783"), n.e("57789"), n.e("56826"), n.e("36658")]).then(n.bind(n, 131404));
+      } = await Promise.all([n.e("79695"), n.e("70205"), n.e("98783"), n.e("57789"), n.e("56826"), n.e("92595")]).then(n.bind(n, 131404));
       return n => (0, r.jsx)(e, tl(ti({}, n), {
         user: i,
         channelSelected: true,
@@ -809,16 +809,16 @@ let ts = (0, Chunk112724.Z)(to),
       let e = null != o ? R.Z.getParticipants(o) : [],
         t = null != o ? R.Z.getActivityParticipants(o) : [];
       return e.length - t.length > 0
-    }, [o]), v = (0, z.Z)(), j = (0, p.e7)([eW.Z], () => {
+    }, [o]), v = (0, z.Z)(), O = (0, p.e7)([eW.Z], () => {
       var e;
       return (null != (e = null == v ? true : v.channelId) ? e : eW.Z.getVoiceChannelId()) === (null == c ? true : c.id)
-    }), O = (0, p.e7)([P.ZP], () => null != c ? P.ZP.getSelfEmbeddedActivityForChannel(c.id) : null, [c]), I = (0, p.e7)([ez.Z], () => ez.Z.isConnected()), N = (0, S.Z)(I), A = I && false === N;
+    }), j = (0, p.e7)([P.ZP], () => null != c ? P.ZP.getSelfEmbeddedActivityForChannel(c.id) : null, [c]), I = (0, p.e7)([ez.Z], () => ez.Z.isConnected()), N = (0, S.Z)(I), A = I && false === N;
     i.useEffect(() => {
-      j && A && null != O && null != c && b.Z.selectParticipant(c.id, (0, w.gN)({
-        applicationId: O.applicationId,
-        instanceId: O.compositeInstanceId
+      O && A && null != j && null != c && b.Z.selectParticipant(c.id, (0, w.gN)({
+        applicationId: j.applicationId,
+        instanceId: j.compositeInstanceId
       }))
-    }, [A, c, j, O]);
+    }, [A, c, O, j]);
     let M = (0, p.e7)([P.ZP], () => P.ZP.getCurrentEmbeddedActivity()),
       k = (0, p.e7)([P.ZP], () => P.ZP.getActivityPanelMode()),
       D = null != M && !(0, Z.Z)(null == c ? true : c.id) && k === e4.Ez.PANEL,
@@ -875,7 +875,7 @@ let ts = (0, Chunk112724.Z)(to),
         channel: e,
         inCurrentVoiceChannel: t
       } = ed.current;
-      null != l && null != e && ec && e.id === l && !t && ((0, eO.Cq)(e), a(null))
+      null != l && null != e && ec && e.id === l && !t && ((0, ej.Cq)(e), a(null))
     }, [l, ec]);
     let ep = (0, E.ts)(c),
       eb = null != c && c.isPrivate(),

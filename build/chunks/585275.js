@@ -28,19 +28,19 @@ var Chunk512722 = require("./512722.js"),
 let T = 3e5,
   S = 6e4,
   A = {},
-  N = new Chunk846519.V7,
-  C = false,
+  C = new Chunk846519.V7,
+  N = false,
   R = window.document.createElement("canvas"),
   P = 512,
   w = 288;
 R.width = 512, R.height = w;
 let D = R.getContext("2d");
 
-function L() {
-  N.stop(), null != r && (Chunk649754.Z.removeSink(r, A), r = null)
+function x() {
+  C.stop(), null != r && (Chunk649754.Z.removeSink(r, A), r = null)
 }
-let x = s().debounce((e, t, n, r) => {
-  k(e, (0, y.V9)({
+let L = s().debounce((e, t, n, r) => {
+  M(e, (0, y.V9)({
     streamType: null != t ? O.lo.GUILD : O.lo.CALL,
     guildId: t,
     channelId: n,
@@ -48,7 +48,7 @@ let x = s().debounce((e, t, n, r) => {
   }))
 }, 500);
 
-function M(e) {
+function j(e) {
   let t = Math.min(P / e.width, w / e.height),
     n = e.width * t,
     r = e.height * t;
@@ -61,12 +61,12 @@ function M(e) {
     null == D || D.drawImage(i, 0, 0, e.width, e.height, 0, 0, n, r), t()
   })
 }
-async function k(e, t) {
+async function M(e, t) {
   if (r !== e || (0, E.isWeb)() && h.I0.getSetting() || m.Z.getIsActiveStreamPreviewDisabled(t)) return;
-  let n = () => k(e, t);
-  if (!C) try {
-    let n = await j(e, 60);
-    await M(n);
+  let n = () => M(e, t);
+  if (!N) try {
+    let n = await k(e, 60);
+    await j(n);
     let r = R.toDataURL("image/jpeg");
     if (_.Z.dispatch({
         type: "STREAM_PREVIEW_FETCH_SUCCESS",
@@ -89,13 +89,13 @@ async function k(e, t) {
       rejectWithError: false
     })
   } catch (t) {
-    new p.Z("ApplicationStreamPreviewUploadManager").error("Failed to post stream preview", t), r === e && N.start(S, n);
+    new p.Z("ApplicationStreamPreviewUploadManager").error("Failed to post stream preview", t), r === e && C.start(S, n);
     return
   }
-  r === e && (C ? N.start(S, n) : N.start(T, n))
+  r === e && (N ? C.start(S, n) : C.start(T, n))
 }
 
-function j(e, t) {
+function k(e, t) {
   let n = 0;
   return (E.isPlatformEmbedded ? G : U)(e, e => {
     if (new Uint32Array(e.data.buffer).some(e => 0 !== e)) returntrue;
@@ -148,7 +148,7 @@ function G(e, t) {
 }
 let B = {
   init() {
-    Chunk570140.Z.subscribe("CONNECTION_OPEN", L), Chunk570140.Z.subscribe("LOGOUT", L), Chunk570140.Z.subscribe("STREAM_DELETE", L), Chunk570140.Z.subscribe("RTC_CONNECTION_VIDEO", e => {
+    Chunk570140.Z.subscribe("CONNECTION_OPEN", x), Chunk570140.Z.subscribe("LOGOUT", x), Chunk570140.Z.subscribe("STREAM_DELETE", x), Chunk570140.Z.subscribe("RTC_CONNECTION_VIDEO", e => {
       let {
         guildId: t,
         channelId: n,
@@ -156,12 +156,12 @@ let B = {
         streamId: a,
         context: o
       } = e;
-      null == a || o !== I.Yn.STREAM || i !== g.default.getId() || __OVERLAY__ || (L(), r = a, x(a, t, n, i))
+      null == a || o !== I.Yn.STREAM || i !== g.default.getId() || __OVERLAY__ || (x(), r = a, L(a, t, n, i))
     }), Chunk570140.Z.subscribe("MEDIA_ENGINE_VIDEO_STATE_CHANGED", e => {
       let {
         videoState: t
       } = e;
-      C = t === v.FQ1.PAUSED
+      N = t === v.FQ1.PAUSED
     })
   }
 }

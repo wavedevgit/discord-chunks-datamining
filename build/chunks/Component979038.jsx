@@ -41,25 +41,25 @@ function P(e) {
     onClose: w,
     application: D
   } = e, {
-    themeType: L
-  } = (0, m.z)(), x = (0, c.q)(D, "UserProfileActivityButtons"), M = (0, u.L)(null != n ? n : true, true), {
-    showPlayButton: k
+    themeType: x
+  } = (0, m.z)(), L = (0, c.q)(D, "UserProfileActivityButtons"), j = (0, u.L)(null != n ? n : true, true), {
+    showPlayButton: M
   } = d.m.useConfig({
     location: "UserProfileActivityButtons"
   });
-  if (k && null != D && (0, f.bP)(D)) return (0, r.jsx)(v.Z, {
+  if (M && null != D && (0, f.bP)(D)) return (0, r.jsx)(v.Z, {
     user: t,
     application: D,
     onAction: P,
     onClose: w
   });
   if ((0, s.Z)(n)) return (0, r.jsx)(O.Z, {
-    platformType: N.ABu.XBOX,
+    platformType: C.ABu.XBOX,
     icon: () => (0, r.jsx)(h.Z, {}),
     onAction: P
   });
   if ((0, o.Z)(n)) return (0, r.jsx)(O.Z, {
-    platformType: N.ABu.PLAYSTATION,
+    platformType: C.ABu.PLAYSTATION,
     icon: () => (0, r.jsx)(p.Z, {}),
     onAction: P
   });
@@ -67,13 +67,13 @@ function P(e) {
     activity: n,
     onAction: P
   });
-  let j = L === C.l.MODAL || L === C.l.MODAL_V2;
-  if (!M && x && null != D && !j) return (0, r.jsx)(A.Z, {
+  let k = x === N.l.MODAL || x === N.l.MODAL_V2;
+  if (!j && L && null != D && !k) return (0, r.jsx)(A.Z, {
     application: D,
     onAction: P,
     onClose: w
   });
-  let U = (0, i.Z)(n, N.xjy.JOIN) || (0, a.Z)(n),
+  let U = (0, i.Z)(n, C.xjy.JOIN) || (0, a.Z)(n),
     G = (null == n ? true : n.application_id) != null;
   return U && G ? (0, r.jsxs)("div", {
     className: R.buttonContainer,
@@ -91,7 +91,7 @@ function P(e) {
     activity: n,
     onAction: P,
     onClose: w
-  }) : (null == n ? true : n.type) === N.IIU.HANG_STATUS ? (0, r.jsx)(E.Z, {
+  }) : (null == n ? true : n.type) === C.IIU.HANG_STATUS ? (0, r.jsx)(E.Z, {
     user: t,
     activity: n,
     onAction: P,
@@ -103,7 +103,7 @@ function P(e) {
   }) : G ? (0, r.jsx)(T.Z, {
     activity: n,
     onAction: P
-  }) : (0, i.Z)(n, N.xjy.INSTANCE) ? (0, r.jsx)(y.Z, {
+  }) : (0, i.Z)(n, C.xjy.INSTANCE) ? (0, r.jsx)(y.Z, {
     user: t,
     activity: n,
     onAction: P

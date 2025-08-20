@@ -69,13 +69,13 @@ function p(e) {
     className: a()(u.border, {
       [u.speaking]: i
     })
-  }, "border"), N = () => d && i ? (0, r.jsxs)(r.Fragment, {
+  }, "border"), C = () => d && i ? (0, r.jsxs)(r.Fragment, {
     children: [A(), S()]
   }) : d || _ || T ? (0, r.jsx)(r.Fragment, {
     children: S()
   }) : (0, r.jsx)(r.Fragment, {
     children: A()
-  }), C = () => {
+  }), N = () => {
     let e = (0, s.pxk)(n),
       t = (0, r.jsx)("img", {
         src: p,
@@ -94,7 +94,7 @@ function p(e) {
         height: e,
         mask: i,
         children: [null == b ? true : b(), t]
-      }), N()]
+      }), C()]
     })
   }, R = a()(u.wrapper, {
     [u.clickable]: null != O,
@@ -108,7 +108,7 @@ function p(e) {
     style: w,
     onContextMenu: v,
     className: R,
-    children: C()
+    children: N()
   })
 }
 p.RingingType = _;

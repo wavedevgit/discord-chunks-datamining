@@ -27,27 +27,27 @@ var Chunk807675 = require("./807675.js"),
   Chunk960904 = require("./960904.js"),
   Chunk981631 = require("./981631.js");
 let A = 10,
-  N = /^\/([a-zA-Z0-9-]+)$/,
-  C = /^\/channels\/([0-9]+|@me)\/([0-9]+)$/,
+  C = /^\/([a-zA-Z0-9-]+)$/,
+  N = /^\/channels\/([0-9]+|@me)\/([0-9]+)$/,
   R = /^\/(invite|template)\/([a-zA-Z0-9-]+)\/?\.?$/,
   P = RegExp("^/events/(\\d+)(?:/)(\\d+)?((?:/)(\\d+))?"),
   w = /^\/(application-directory|discovery\/applications)\/([0-9-]+)\/?((about|images|privacy)\/?)?$/,
   D = /^\/(application-directory|discovery\/applications)\/([0-9-]+)\/store\/?([0-9-]+)?\/?$/,
-  L = /^\/activities\/([0-9-]+)\/?$/,
-  x = /^\/channels\/([0-9]+)\/shop\/([0-9]+)$/,
-  M = /^\/channels\/([0-9]+)\/shop$/,
-  k = /^\/quests\/([0-9-]+)\/?$/,
-  j = /^\/oauth2\/authorize/,
+  x = /^\/activities\/([0-9-]+)\/?$/,
+  L = /^\/channels\/([0-9]+)\/shop\/([0-9]+)$/,
+  j = /^\/channels\/([0-9]+)\/shop$/,
+  M = /^\/quests\/([0-9-]+)\/?$/,
+  k = /^\/oauth2\/authorize/,
   U = /^#itemSkuId=([0-9]+)$/,
   G = /dev:\/\/[\w-.~:\/?#\[\]@!$&'()*+,;=%]+/i,
   B = q(window.GLOBAL_ENV.INVITE_HOST),
-  V = q(window.GLOBAL_ENV.GUILD_TEMPLATE_HOST),
-  F = q(null != (o = window.GLOBAL_ENV.WEBAPP_ENDPOINT) ? o : "//canary.".concat(Chunk981631.$R1)),
-  Z = q("//canary.".concat(Chunk981631.$R1)),
+  Z = q(window.GLOBAL_ENV.GUILD_TEMPLATE_HOST),
+  V = q(null != (o = window.GLOBAL_ENV.WEBAPP_ENDPOINT) ? o : "//canary.".concat(Chunk981631.$R1)),
+  F = q("//canary.".concat(Chunk981631.$R1)),
   H = q("//ptb.".concat(Chunk981631.$R1)),
   Y = q("discordapp.com"),
   W = q("discord.com"),
-  K = [Chunk226951.Z.escape(null != (s = B.host) ? s : ""), Chunk226951.Z.escape(null != (l = V.host) ? l : ""), Chunk226951.Z.escape(null != (c = F.host) ? c : ""), Chunk226951.Z.escape(null != (u = Y.host) ? u : ""), Chunk226951.Z.escape(null != (d = W.host) ? d : "")].filter(Boolean),
+  K = [Chunk226951.Z.escape(null != (s = B.host) ? s : ""), Chunk226951.Z.escape(null != (l = Z.host) ? l : ""), Chunk226951.Z.escape(null != (c = V.host) ? c : ""), Chunk226951.Z.escape(null != (u = Y.host) ? u : ""), Chunk226951.Z.escape(null != (d = W.host) ? d : "")].filter(Boolean),
   z = RegExp("((https?://[^ ]*)|^|[^/][^/.])(".concat(K.join("|"), ")"), "g");
 
 function q(e) {
@@ -89,7 +89,7 @@ function ee(e, t) {
 
 function et(e) {
   var t, n, r, i;
-  return null != (i = null != (r = null != (n = null != (t = ee(F, e)) ? t : ee(Z, e)) ? n : ee(H, e)) ? r : ee(Y, e)) ? i : ee(W, e)
+  return null != (i = null != (r = null != (n = null != (t = ee(V, e)) ? t : ee(F, e)) ? n : ee(H, e)) ? r : ee(Y, e)) ? i : ee(W, e)
 }
 
 function en(e) {
@@ -112,8 +112,8 @@ function er(e) {
     primaryHostRemainingPath: null
   };
   let o = ee(B, a),
-    s = ee(V, a),
-    l = null != (i = null != (r = null != (n = null != (t = ee(F, a)) ? t : ee(Z, a)) ? n : ee(H, a)) ? r : ee(Y, a)) ? i : ee(W, a);
+    s = ee(Z, a),
+    l = null != (i = null != (r = null != (n = null != (t = ee(V, a)) ? t : ee(F, a)) ? n : ee(H, a)) ? r : ee(Y, a)) ? i : ee(W, a);
   return {
     url: a,
     inviteHostRemainingPath: o,
@@ -127,7 +127,7 @@ function ei(e) {
     let r = es(e);
     if (null == r) returnfalse;
     if ($(B, r)) returntrue;
-    if ([F, Z, H, Y, W].some(e => $(e, r))) {
+    if ([V, F, H, Y, W].some(e => $(e, r))) {
       var t, n;
       return null != (n = null == (t = r.pathname) ? true : t.toUpperCase().includes(T.g.INVITE)) && n
     }
@@ -159,11 +159,11 @@ function ea(e) {
         url: e
       }))
     };
-    if ((null == i ? true : i.match(N)) != null && ("https:" === r.protocol || "http:" === r.protocol)) {
+    if ((null == i ? true : i.match(C)) != null && ("https:" === r.protocol || "http:" === r.protocol)) {
       let t = (0, b.mb)(i.substring(1), r.search);
       if (O.Z.getInvite(t), e.includes("\\")) continue;
       u(T.g.INVITE, t)
-    }(null == l ? true : l.match(N)) != null && u(T.g.TEMPLATE, l.substring(1));
+    }(null == l ? true : l.match(C)) != null && u(T.g.TEMPLATE, l.substring(1));
     let d = null == c ? true : c.match(R);
     if (null != d) {
       let t = d[1].toUpperCase();
@@ -172,9 +172,9 @@ function ea(e) {
         let t = (0, b.mb)(d[2], r.search);
         u(T.g.INVITE, t)
       } else u(t, d[2])
-    }(null == c ? true : c.match(C)) != null && u(T.g.CHANNEL_LINK, c.replace("/channels/", ""));
+    }(null == c ? true : c.match(N)) != null && u(T.g.CHANNEL_LINK, c.replace("/channels/", ""));
     let f = en(r.pathname);
-    if (null != f && u(T.g.EVENT, "".concat(f.guildId, "-").concat(f.guildEventId) + (null != f.recurrenceId ? "-".concat(f.recurrenceId) : "")), null != (null == c ? true : c.match(j)) && null != r.query) {
+    if (null != f && u(T.g.EVENT, "".concat(f.guildId, "-").concat(f.guildEventId) + (null != f.recurrenceId ? "-".concat(f.recurrenceId) : "")), null != (null == c ? true : c.match(k)) && null != r.query) {
       let e = (0, y.y)(r.query),
         t = e.clientId;
       null == t || "" === t || (null == (a = e.scopes) ? true : a.some(e => e !== g.x.APPLICATIONS_COMMANDS)) || u(T.g.APP_OAUTH2_LINK, t)
@@ -193,14 +193,14 @@ function ea(e) {
         u(T.g.APP_DIRECTORY_STOREFRONT_SKU, n)
       } else u(T.g.APP_DIRECTORY_STOREFRONT, e)
     }
-    let h = null == c ? true : c.match(L);
+    let h = null == c ? true : c.match(x);
     if (null != h) {
       let e = h[1];
       u(T.g.ACTIVITY_BOOKMARK, e)
     }
-    let m = null == c ? true : c.match(x);
+    let m = null == c ? true : c.match(L);
     null != m && u(T.g.GUILD_PRODUCT, "".concat(m[1], "-").concat(m[2]));
-    let v = null == c ? true : c.match(M);
+    let v = null == c ? true : c.match(j);
     null != v && u(T.g.SERVER_SHOP, v[1]);
     let I = eo(e);
     if (null != I && u(T.g.QUESTS_EMBED, I), "/shop" === c) {
@@ -214,7 +214,7 @@ function ea(e) {
 function eo(e) {
   var t, n;
   let r = er(e),
-    i = null == r || null == (t = r.primaryHostRemainingPath) ? true : t.match(k);
+    i = null == r || null == (t = r.primaryHostRemainingPath) ? true : t.match(M);
   return null != (n = null == i ? true : i[1]) ? n : null
 }
 

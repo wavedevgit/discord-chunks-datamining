@@ -2,7 +2,7 @@
 /** chunk id: 210887, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => M
+  Z: () => j
 });
 var r, Chunk442837 = require("./442837.js"),
   Chunk780384 = require("./780384.js"),
@@ -69,7 +69,7 @@ function A() {
   let e = S();
   return module === I || (I = module, (0, Chunk49214.Z)(I), true)
 }
-class N extends(r = Chunk442837.ZP.PersistedStore) {
+class C extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     (null == e ? true : e.theme) != null && (y = 1, I = e.theme, (0, u.Z)(I), null != e.preferences && (O = e.preferences), (0, a.wj)(I) && (O[p.zd.DARK] = I)), this.waitFor(f.ZP, d.Z, _.Z, s.Z)
   }
@@ -91,7 +91,7 @@ class N extends(r = Chunk442837.ZP.PersistedStore) {
   }
 }
 
-function C() {
+function N() {
   return 0 === y && (O = b(g({}, O), {
     [Chunk874893.zd.DARK]: Chunk981631.BRd.DARKER
   }), y = 1), A()
@@ -116,22 +116,22 @@ function D(e) {
   return O = g({}, O, e.preferences), A()
 }
 
-function L(e) {
+function x(e) {
   return T = e.theme, A()
 }
 
-function x() {
+function L() {
   return T = null, A()
 }
-m(N, "displayName", "ThemeStore"), m(N, "persistKey", "ThemeStore"), m(N, "migrations", [e => {
+m(C, "displayName", "ThemeStore"), m(C, "persistKey", "ThemeStore"), m(C, "migrations", [e => {
   let t = e.theme;
   return "amoled" === t && (t = "midnight"), b(g({}, e), {
     theme: t
   })
 }, e => e]);
-let M = new N(Chunk570140.Z, {
+let j = new C(Chunk570140.Z, {
   CACHE_LOADED: A,
-  CONNECTION_OPEN: C,
+  CONNECTION_OPEN: N,
   LOGOUT: P,
   OVERLAY_INITIALIZE: A,
   SELECTIVELY_SYNCED_USER_SETTINGS_UPDATE: A,
@@ -141,6 +141,6 @@ let M = new N(Chunk570140.Z, {
   SYSTEM_THEME_CHANGE: w,
   ACCESSIBILITY_DARK_SIDEBAR_TOGGLE: R,
   UPDATE_THEME_PREFERENCES: D,
-  SET_THEME_OVERRIDE: L,
-  CLEAR_THEME_OVERRIDE: x
+  SET_THEME_OVERRIDE: x,
+  CLEAR_THEME_OVERRIDE: L
 })

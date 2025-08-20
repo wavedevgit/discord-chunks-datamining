@@ -1,17 +1,18 @@
-/** Chunk was on 84533 **/
-/** chunk id: 480466, original params: e,t,r (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 480466, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => s
+  Z: () => i
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js");
-let s = function(e, t) {
-  let [r, s] = a.useState(e);
-  return a.useEffect(() => {
-    let r = setTimeout(() => {
-      s(e)
+let i = function(e, t) {
+  let [n, i] = r.useState(e);
+  return r.useEffect(() => {
+    let n = setTimeout(() => {
+      i(e)
     }, t);
     return () => {
-      clearTimeout(r)
+      clearTimeout(n)
     }
-  }, [e, t]), r
+  }, [e, t]), n
 }

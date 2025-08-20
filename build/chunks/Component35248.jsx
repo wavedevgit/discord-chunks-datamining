@@ -56,10 +56,10 @@ let I = e => {
         browserCheckoutStateLoadId: T,
         browserCheckoutStateSkuId: S,
         browserCheckoutStatePlanId: A,
-        contextMetadata: N
+        contextMetadata: C
       } = (0, p.JL)(),
       {
-        isGift: C
+        isGift: N
       } = (0, _.wD)(),
       [R, P] = i.useState(false);
     switch (n) {
@@ -72,12 +72,12 @@ let I = e => {
     return i.useEffect(() => {
       let e = setTimeout(() => {
         var e;
-        R || (P(true), (0, l.r5)(N.loadId), v(null != (e = null == u ? true : u.id) ? e : E.Xh.PREMIUM_MONTH_TIER_2, C, N.loadId, o, t))
+        R || (P(true), (0, l.r5)(C.loadId), v(null != (e = null == u ? true : u.id) ? e : E.Xh.PREMIUM_MONTH_TIER_2, N, C.loadId, o, t))
       }, O);
       return () => clearTimeout(e)
-    }, [u, C, N, o, P, R, t]), i.useEffect(() => {
-      null !== S && (E.YQ.includes(S) && ((0, c.GZ)(S), (0, l.jg)()), f(S)), null !== A && d(A), T === N.loadId && I === m.Y.DONE && a()
-    }, [f, d, I, T, S, A, N, a]), (0, r.jsxs)("div", {
+    }, [u, N, C, o, P, R, t]), i.useEffect(() => {
+      null !== S && (E.YQ.includes(S) && ((0, c.GZ)(S), (0, l.jg)()), f(S)), null !== A && d(A), T === C.loadId && I === m.Y.DONE && a()
+    }, [f, d, I, T, S, A, C, a]), (0, r.jsxs)("div", {
       className: y.body,
       children: [(0, r.jsx)(s.X6q, {
         variant: "heading-xl/bold",

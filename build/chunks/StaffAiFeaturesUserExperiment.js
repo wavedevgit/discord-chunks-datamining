@@ -1,10 +1,9 @@
 /** Chunk was on 41984 **/
 /** chunk id: 466721, original params: t,e,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
-  C: () => s
+  C: () => l
 });
-let s = (0, require("./818083.js").B)({
+let l = (0, require("./818083.js").B)({
   kind: "user",
   id: "2025-07_staff_ai_features",
   label: "Staff AI Features",

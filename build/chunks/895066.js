@@ -317,20 +317,20 @@ class g extends Chunk47770.Z {
             var r, a, o, s, l, c, u, d, _, p, h, m, g, E, b, y, O, v, I, T;
             let S = null != (r = e.transport.ping) ? r : 0,
               A = t.packetsReceived,
-              N = t.packetsLost,
-              C = t.bytesReceived,
+              C = t.packetsLost,
+              N = t.bytesReceived,
               R = t.nackCount,
               P = null != (a = t.fecPacketsReceived) ? a : 0,
               w = null != (o = t.fecPacketsDiscarded) ? o : 0,
               D = null != (s = t.jitterBuffer) ? s : 0,
-              L = {
+              x = {
                 audioJitterBuffer: t.audioJitterBuffer,
                 audioJitterTarget: t.audioJitterTarget,
                 audioJitterDelay: t.audioJitterDelay,
                 relativeReceptionDelay: t.relativeReceptionDelay,
                 relativePlayoutDelay: t.relativePlayoutDelay
               },
-              x = {
+              L = {
                 silent: t.opSilence,
                 normal: t.opNormal,
                 merged: t.opMerge,
@@ -339,7 +339,7 @@ class g extends Chunk47770.Z {
                 preemptiveExpanded: t.opPreemptiveExpand,
                 cng: t.opCNG
               },
-              M = {
+              j = {
                 passthroughCount: null != (l = t.passthroughCount) ? l : 0,
                 decryptSuccessCount: null != (c = t.decryptSuccessCount) ? c : 0,
                 decryptFailureCount: null != (u = t.decryptFailureCount) ? u : 0,
@@ -351,14 +351,14 @@ class g extends Chunk47770.Z {
             if (null != this.inboundStats[n]) {
               let e = this.inboundStats[n],
                 r = A - e.packetsReceived,
-                a = N - e.packetsLost,
+                a = C - e.packetsLost,
                 o = 0,
                 s = e.mosBuckets,
-                l = null != (m = e.decryptFailureBeforeSuccessCount) ? m : M.decryptSuccessCount > 0 ? M.decryptFailureCount : true;
+                l = null != (m = e.decryptFailureBeforeSuccessCount) ? m : j.decryptSuccessCount > 0 ? j.decryptFailureCount : true;
               r > 0 && a >= 0 && (o = this.calculateMos(S + D, i().clamp(a / (r + a), 0, 1)), s[Math.floor(o)]++), this.inboundStats[n] = f({
                 packetsReceived: A,
-                bytesReceived: C,
-                packetsLost: N,
+                bytesReceived: N,
+                packetsLost: C,
                 nackCount: null != R ? R : 0,
                 fecPacketsReceived: P,
                 fecPacketsDiscarded: w,
@@ -366,14 +366,14 @@ class g extends Chunk47770.Z {
                 mosSum: e.mosSum + o,
                 mosCount: e.mosCount + +(o > 0),
                 mosBuckets: s,
-                bufferStats: L,
-                frameOpStats: x,
+                bufferStats: x,
+                frameOpStats: L,
                 decryptFailureBeforeSuccessCount: l
-              }, M), this.periodicInboundStats[n] = {
+              }, j), this.periodicInboundStats[n] = {
                 previousTimestampMs: this.periodicInboundStats[n].previousTimestampMs,
                 previous: this.periodicInboundStats[n].previous,
                 currentTimestampMs: performance.now(),
-                current: x,
+                current: L,
                 accelerateRateSum: this.periodicInboundStats[n].accelerateRateSum + (null != (g = t.accelerateRate) ? g : 0),
                 expandRateSum: this.periodicInboundStats[n].expandRateSum + (null != (E = t.expandRate) ? E : 0),
                 preemptiveExpandRateSum: this.periodicInboundStats[n].preemptiveExpandRateSum + (null != (b = t.preemptiveExpandRate) ? b : 0),
@@ -382,8 +382,8 @@ class g extends Chunk47770.Z {
               }
             } else this.inboundStats[n] = f({
               packetsReceived: A,
-              bytesReceived: C,
-              packetsLost: N,
+              bytesReceived: N,
+              packetsLost: C,
               nackCount: null != R ? R : 0,
               fecPacketsReceived: P,
               fecPacketsDiscarded: w,
@@ -391,13 +391,13 @@ class g extends Chunk47770.Z {
               mosSum: 0,
               mosCount: 0,
               mosBuckets: [0, 0, 0, 0, 0],
-              bufferStats: L,
-              frameOpStats: x
-            }, M), this.periodicInboundStats[n] = {
+              bufferStats: x,
+              frameOpStats: L
+            }, j), this.periodicInboundStats[n] = {
               previousTimestampMs: performance.now(),
-              previous: x,
+              previous: L,
               currentTimestampMs: performance.now(),
-              current: x,
+              current: L,
               accelerateRateSum: null != (O = t.accelerateRate) ? O : 0,
               expandRateSum: null != (v = t.expandRate) ? v : 0,
               preemptiveExpandRateSum: null != (I = t.preemptiveExpandRate) ? I : 0,

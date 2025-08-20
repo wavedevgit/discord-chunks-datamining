@@ -22,10 +22,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk285006 = require("./285006.js");
 
 function j(e) {
-  var t, n, j, y, _, w, C, P;
+  var t, n, j, y, _, w, C, k;
   let {
-    clip: k,
-    channelId: O,
+    clip: O,
+    channelId: P,
     transitionState: S,
     onClose: N
   } = e, [E, R] = a.useState(true), [L, T] = a.useState(null), [F, D] = a.useState(null), {
@@ -35,7 +35,7 @@ function j(e) {
     !async function() {
       let e;
       try {
-        e = await s.Z.clips.loadClip(k.filepath)
+        e = await s.Z.clips.loadClip(O.filepath)
       } catch (e) {
         N(), o.Z.show({
           title: x.intl.string(x.t.yjoSOD),
@@ -52,15 +52,15 @@ function j(e) {
         }));
       D(n), T(r)
     }()
-  }, [k.filepath, N]), a.useEffect(() => () => {
+  }, [O.filepath, N]), a.useEffect(() => () => {
     null != L && URL.revokeObjectURL(L)
   }, [L]), a.useEffect(() => () => {
     null != F && URL.revokeObjectURL(F)
   }, [F]);
-  let [A, Z] = a.useState(null == (_ = null == (t = k.editMetadata) ? true : t.voiceAudio) || _), [B, M] = a.useState(null == (w = null == (n = k.editMetadata) ? true : n.applicationAudio) || w), [z, H] = a.useState({
-    start: null != (C = null == (j = k.editMetadata) ? true : j.start) ? C : 0,
-    end: null != (P = null == (y = k.editMetadata) ? true : y.end) ? P : 0
-  }), [W, U] = a.useState(k.name), V = a.useRef({
+  let [A, Z] = a.useState(null == (_ = null == (t = O.editMetadata) ? true : t.voiceAudio) || _), [B, M] = a.useState(null == (w = null == (n = O.editMetadata) ? true : n.applicationAudio) || w), [z, H] = a.useState({
+    start: null != (C = null == (j = O.editMetadata) ? true : j.start) ? C : 0,
+    end: null != (k = null == (y = O.editMetadata) ? true : y.end) ? k : 0
+  }), [W, U] = a.useState(O.name), V = a.useRef({
     name: W,
     editMetadata: {
       start: z.start,
@@ -78,13 +78,13 @@ function j(e) {
       applicationAudio: B
     }
   };
-  let X = (0, f.l)(k);
+  let X = (0, f.l)(O);
   a.useEffect(() => {
     async function e() {
       let e = {};
       null != X && (e = {
         thumbnail: await (0, p.R)(X, V.current.editMetadata.start)
-      }), (0, d.Tm)(k.id, function(e) {
+      }), (0, d.Tm)(O.id, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -106,7 +106,7 @@ function j(e) {
     return () => {
       e()
     }
-  }, [k.id, X]);
+  }, [O.id, X]);
   let G = a.useRef(null),
     K = a.useMemo(() => ({
       videoPlayerRef: G,
@@ -142,10 +142,10 @@ function j(e) {
               audioURL: F,
               transitionState: S
             }), !E && (0, r.jsx)(h.Z, {
-              channelId: O,
+              channelId: P,
               onSetClipName: U,
               clipName: W,
-              clip: k,
+              clip: O,
               onClose: N
             })]
           })

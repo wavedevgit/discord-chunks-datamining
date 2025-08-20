@@ -164,8 +164,8 @@ class m extends Chunk836560.EventEmitter {
     for (let e of Object.values(v)) Array.isArray(module) && (T += module.length);
     let S = true === v.isLoading,
       A = this.shouldShow(T, S, g),
-      N = this.state.selectedIndex;
-    !A || S ? N = null : null != N && N >= T && (N = T - 1), A && !this.state.isVisible && (0, Chunk376918.a7)(m, this.props.channel, I), this.setState({
+      C = this.state.selectedIndex;
+    !A || S ? C = null : null != C && C >= T && (C = T - 1), A && !this.state.isVisible && (0, Chunk376918.a7)(m, this.props.channel, I), this.setState({
       query: {
         type: m,
         typeInfo: g,
@@ -176,7 +176,7 @@ class m extends Chunk836560.EventEmitter {
         isLoading: S
       },
       isVisible: A,
-      selectedIndex: N
+      selectedIndex: C
     })
   }
   shouldShow(e, t, n) {

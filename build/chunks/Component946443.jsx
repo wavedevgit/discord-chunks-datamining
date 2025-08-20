@@ -1,9 +1,9 @@
-/** Chunk was on 69003 **/
+/** Chunk was on 91488 **/
 /** chunk id: 946443, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   QP: () => N,
   ZP: () => S,
-  h6: () => I
+  h6: () => P
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -30,15 +30,15 @@ var Chunk951288 = require("./951288.js"),
   Chunk915087 = require("./915087.js");
 
 function S(e) {
-  var t, n, l, a, _, S, I;
+  var t, n, l, a, _, S, P;
   let {
     onJump: N,
     showTutorial: w,
     setSeenTutorial: Z,
     closePopout: T
-  } = e, A = i.useRef(null), [R, D] = (0, j.ZP)(A), {
-    loadState: L,
-    channels: M
+  } = e, A = i.useRef(null), [R, D] = (0, v.ZP)(A), {
+    loadState: M,
+    channels: L
   } = R, {
     maybeLoadMore: k
   } = D, U = (0, u.e7)([h.Z], () => h.Z.messageGroupSpacing);
@@ -88,11 +88,11 @@ function S(e) {
     b.S.unsubscribe(C.CkL.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead)
   }));
   let G = (0, g.Z)("unreads", A);
-  if (0 === M.length) {
+  if (0 === L.length) {
     return (0, r.jsx)(y.Z, {
       Icon: d.xx7,
-      header: E.intl.string(E.t["6XMM+P"]),
-      tip: (null == (I = s().os) ? true : I.family) === "OS X" ? E.intl.string(E.t.w9uDOT) : E.intl.string(E.t.BiUJCw)
+      header: x.intl.string(x.t["6XMM+P"]),
+      tip: (null == (P = s().os) ? true : P.family) === "OS X" ? x.intl.string(x.t.w9uDOT) : x.intl.string(x.t.BiUJCw)
     })
   }
   return (0, r.jsx)(c.bG, {
@@ -140,12 +140,12 @@ function S(e) {
             A.current = e, i.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
           }
         }, l), n = n = {
-          onScroll: L === j.jd.Done ? true : k,
-          className: o()(x.scroller, "group-spacing-".concat(U)),
-          children: [w ? (0, r.jsx)(P, {
+          onScroll: M === v.jd.Done ? true : k,
+          className: o()(E.scroller, "group-spacing-".concat(U)),
+          children: [w ? (0, r.jsx)(I, {
             setSeenTutorial: Z
-          }) : null, (0, v.Z)(M, D, N), L === j.jd.Done ? null : (0, r.jsx)(d.$jN, {
-            className: x.spinner
+          }) : null, (0, j.Z)(L, D, N), M === v.jd.Done ? null : (0, r.jsx)(d.$jN, {
+            className: E.spinner
           })]
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);
@@ -162,34 +162,34 @@ function S(e) {
   })
 }
 
-function P(e) {
+function I(e) {
   let {
     setSeenTutorial: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: x.tutorial,
+    className: E.tutorial,
     children: [(0, r.jsx)("div", {
-      className: x.tutorialIcon,
+      className: E.tutorialIcon,
       children: (0, r.jsx)(d.xx7, {
         size: "md",
         color: "currentColor"
       })
     }), (0, r.jsxs)("div", {
       children: [(0, r.jsx)(d.X6q, {
-        className: x.__invalid_tutorialHeader,
+        className: E.__invalid_tutorialHeader,
         variant: "heading-md/semibold",
-        children: E.intl.string(E.t.vZPktL)
+        children: x.intl.string(x.t.vZPktL)
       }), (0, r.jsx)(d.Text, {
         color: "header-secondary",
         variant: "text-sm/normal",
-        children: E.intl.string(E.t.vWkIIC)
+        children: x.intl.string(x.t.vWkIIC)
       }), (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
-        className: x.tutorialButton,
+        className: E.tutorialButton,
         children: (0, r.jsx)(d.zxk, {
           variant: "primary",
           size: "sm",
-          text: E.intl.string(E.t["+IrDzM"]),
+          text: x.intl.string(x.t["+IrDzM"]),
           onClick: t
         })
       })]
@@ -197,7 +197,7 @@ function P(e) {
   })
 }
 
-function I() {
+function P() {
   return (0, Chunk951288.jsx)(Chunk240126.Z, {
     Icon: Chunk481060.xx7,
     disableStars: true,

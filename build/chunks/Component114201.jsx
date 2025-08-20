@@ -64,7 +64,7 @@ function A(e, t) {
   }), e
 }
 
-function N(e) {
+function C(e) {
   if (e > p.Z.Seconds.DAYS_30) {
     let t = Math.round(e / p.Z.Seconds.DAYS_30);
     return O.intl.formatToPlainString(O.t["HF7p4+"], {
@@ -92,7 +92,7 @@ function N(e) {
   }
 }
 
-function C(e, t) {
+function N(e, t) {
   if (null == e) return {
     disabled: false,
     subtext: true
@@ -103,7 +103,7 @@ function C(e, t) {
     subtext: true
   };
   let r = null != t ? e.getTime() > t.getTime() && n < p.Z.Seconds.HOUR : n < p.Z.Seconds.HOUR,
-    i = r ? O.intl.string(O.t["3gPhoa"]) : N(n);
+    i = r ? O.intl.string(O.t["3gPhoa"]) : C(n);
   return {
     disabled: r,
     subtext: i
@@ -114,31 +114,31 @@ function R(e) {
   let {
     guildId: t,
     leaderboardId: p
-  } = e, I = (0, o.e7)([c.default], () => c.default.getId()), S = (0, o.e7)([u.Z], () => u.Z.getAccount(null, y.ABu.RIOT_GAMES)), N = (0, o.e7)([u.Z], () => u.Z.getAccount(null, y.ABu.LEAGUE_OF_LEGENDS)), R = (0, g.Z)({
+  } = e, I = (0, o.e7)([c.default], () => c.default.getId()), S = (0, o.e7)([u.Z], () => u.Z.getAccount(null, y.ABu.RIOT_GAMES)), C = (0, o.e7)([u.Z], () => u.Z.getAccount(null, y.ABu.LEAGUE_OF_LEGENDS)), R = (0, g.Z)({
     guildId: t,
     leaderboardId: p
   }), {
     leaderboardsDisabled: P
-  } = (0, m.O)(t, p), w = null != N && null != S ? () => {
+  } = (0, m.O)(t, p), w = null != C && null != S ? () => {
     _.default.track(y.rMx.LEADERBOARD_USER_DATA_REFRESH_REQUESTED, {
       leaderboard_id: p,
       guild_id: t
     }), (0, h._7)({
       riotConnectionId: S.id,
-      lolConnectionId: N.id
+      lolConnectionId: C.id
     })
   } : y.dG4, D = null == S || P ? O.intl.string(O.t["0yRXHx"]) : O.intl.string(O.t["KWpU6+"]), {
-    lastUpdateRequested: L,
-    statisticLastUpdatedDate: x
+    lastUpdateRequested: x,
+    statisticLastUpdatedDate: L
   } = (0, E.Z)({
     userId: I,
     guildId: t,
     leaderboardId: p,
     statisticId: a.E.LOL_TOTAL_KILLS
   }), {
-    disabled: M,
-    subtext: k
-  } = C(L, x), j = (0, o.e7)([f.Z, d.Z], () => {
+    disabled: j,
+    subtext: M
+  } = N(x, L), k = (0, o.e7)([f.Z, d.Z], () => {
     let e = d.Z.getGuild(t);
     return f.Z.can(y.Plq.ADMINISTRATOR, e)
   }, [t]), U = i.useRef(null);
@@ -163,8 +163,8 @@ function R(e) {
             id: "refresh-my-data",
             label: O.intl.string(O.t.iopWUV),
             action: w,
-            disabled: M,
-            subtext: k
+            disabled: j,
+            subtext: M
           }), (0, r.jsx)(s.sNh, {
             id: "leaderboard-modal",
             label: D,
@@ -179,7 +179,7 @@ function R(e) {
                 }))
               }), null == i || i()
             }
-          }), j ? (0, r.jsx)(s.sNh, {
+          }), k ? (0, r.jsx)(s.sNh, {
             id: "leaderboard-settings-modal",
             label: O.intl.string(O.t["QV4/6u"]),
             action: () => {

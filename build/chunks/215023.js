@@ -3,13 +3,13 @@
 "use strict";
 require.d(exports, {
   AW: () => v,
-  Cm: () => N,
-  HU: () => x,
-  IV: () => C,
+  Cm: () => C,
+  HU: () => L,
+  IV: () => N,
   J0: () => P,
-  K8: () => L,
+  K8: () => x,
   RE: () => T,
-  Vt: () => k,
+  Vt: () => M,
   ZS: () => h,
   a$: () => D,
   aK: () => S,
@@ -19,7 +19,7 @@ require.d(exports, {
   kN: () => w,
   lb: () => A,
   o0: () => U,
-  o8: () => M,
+  o8: () => j,
   pv: () => R,
   rL: () => m,
   xg: () => G,
@@ -165,23 +165,23 @@ let I = ["avatar-decorations", "profile-effects", "nameplates", "bundles"],
   T = e => I.includes(e),
   S = e => null != e && "home" !== e && "catalog" !== e,
   A = 800,
-  N = 6048e5,
-  C = 12,
+  C = 6048e5,
+  N = 12,
   R = 1128,
   P = 518,
   w = 5,
   D = new Date("2025-02-15T23:59:00-08:00"),
-  L = 3,
-  x = ["1212569433839636530", "1212570343567261736", "1212582298893946880"];
-var M = function(e) {
+  x = 3,
+  L = ["1212569433839636530", "1212570343567261736", "1212582298893946880"];
+var j = function(e) {
   return e[e.FIAT = 0] = "FIAT", e[e.ORB = 1] = "ORB", e[e.PREMIUM_PURCHASE = 2] = "PREMIUM_PURCHASE", e[e.PROMOTIONAL = 3] = "PROMOTIONAL", e[e.TENURE_REWARD = 4] = "TENURE_REWARD", e[e.GIFT = 5] = "GIFT", e
 }({});
-let k = {
+let M = {
     ORB_PROFILE_BADGE: "1342211853484429445",
     FRACTIONAL_PREMIUM: Chunk314794.a.PREMIUM_TIER_2_3_DAY
   },
-  j = new Set(Object.values(k)),
-  U = e => j.has(e),
+  k = new Set(Object.values(M)),
+  U = e => k.has(e),
   G = [Chunk335818.G.AVATAR_DECORATION, Chunk335818.G.PROFILE_EFFECT, Chunk335818.G.NAMEPLATE, Chunk335818.G.BUNDLE],
   B = [{
     sortType: Chunk792091.E.RELEVANCE,

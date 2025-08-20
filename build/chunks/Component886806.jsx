@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk893776 = require("./893776.js"),
   Chunk493773 = require("./493773.js"),
@@ -20,73 +20,73 @@ var Chunk951288 = require("./951288.js"),
   Chunk767307 = require("./767307.js"),
   Chunk197571 = require("./197571.js");
 
-function b(e) {
+function E(e) {
   n.g.location.assign(e)
 }
 
 function v(e) {
   let {
     location: t,
-    transitionTo: l = b
-  } = e, [o, v] = i.useState("submitting"), E = i.useRef(true);
+    transitionTo: l = E
+  } = e, [o, v] = i.useState("submitting"), j = i.useRef(true);
   (0, c.ZP)(() => {
     (0, p.e)("verify_email");
     let e = (0, u.Z)(t);
     if (null == e) return void v("failed");
     (async () => {
       try {
-        let t = await s.Z.verify(e);
-        v("succeeded"), E.current = t
+        let t = await a.Z.verify(e);
+        v("succeeded"), j.current = t
       } catch (e) {
         v("failed")
       }
     })()
   });
-  let j = i.useCallback(() => {
-      l(f.Z5c.LOGIN, {
+  let b = i.useCallback(() => {
+      l(g.Z5c.LOGIN, {
         source: "verify_email"
       })
     }, [l]),
     I = i.useCallback(() => {
-      m.default.track(f.rMx.VERIFY_ACCOUNT_APP_OPENED, {
-        verifying_user_id: E.current
+      m.default.track(g.rMx.VERIFY_ACCOUNT_APP_OPENED, {
+        verifying_user_id: j.current
       }), (0, h.Z)("verify_email")
     }, []);
   return "failed" === o ? (0, r.jsxs)(d.ZP, {
     children: [(0, r.jsx)(d.Ee, {
       src: n(375673),
-      className: a()(_.image, x.marginBottom20)
+      className: s()(_.image, x.marginBottom20)
     }), (0, r.jsx)(d.Dx, {
       className: x.marginBottom8,
-      children: g.intl.string(g.t.PCgG39)
+      children: f.intl.string(f.t.PCgG39)
     }), (0, r.jsx)(d.DK, {
       className: x.marginBottom40,
-      children: g.intl.string(g.t.tQpeAw)
+      children: f.intl.string(f.t.tQpeAw)
     }), (0, r.jsx)(d.zx, {
-      onClick: j,
-      children: g.intl.string(g.t.dKhVQE)
+      onClick: b,
+      children: f.intl.string(f.t.dKhVQE)
     })]
   }) : "succeeded" === o ? (0, r.jsxs)(d.ZP, {
     children: [(0, r.jsx)(d.Ee, {
       src: n(73962),
-      className: a()(_.image, x.marginBottom20)
+      className: s()(_.image, x.marginBottom20)
     }), (0, r.jsx)(d.Dx, {
       className: x.marginBottom40,
-      children: g.intl.string(g.t.dAfGb2)
+      children: f.intl.string(f.t.dAfGb2)
     }), (0, r.jsx)(d.zx, {
       onClick: I,
-      children: g.intl.string(g.t.uJWIj4)
+      children: f.intl.string(f.t.uJWIj4)
     })]
   }) : (0, r.jsxs)(d.ZP, {
     children: [(0, r.jsx)(d.Ee, {
       src: n(892235),
-      className: a()(_.image, x.marginBottom20)
+      className: s()(_.image, x.marginBottom20)
     }), (0, r.jsx)(d.Dx, {
       className: x.marginBottom8,
-      children: g.intl.string(g.t["0c8+5u"])
+      children: f.intl.string(f.t["0c8+5u"])
     }), (0, r.jsx)(d.DK, {
       className: x.marginBottom40,
-      children: g.intl.string(g.t.ULTCBA)
+      children: f.intl.string(f.t.ULTCBA)
     }), (0, r.jsx)(d.zx, {
       submitting: true,
       color: d.zx.Colors.PRIMARY

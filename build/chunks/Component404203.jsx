@@ -1,28 +1,28 @@
-/** Chunk was on 31930 **/
-/** chunk id: 404203, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 404203, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => l
+  Z: () => o
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js");
-let s = e => t => {
+let a = e => t => {
   null == t || t.stopPropagation(), e()
 };
 
-function l(e) {
+function o(e) {
   let {
     onClick: t,
     className: n,
-    children: l
-  } = e, o = r.useRef(null);
-  return (0, i.jsx)("div", {
+    children: o
+  } = e, s = i.useRef(null);
+  return (0, r.jsx)("div", {
     onClick: t,
-    ref: o,
+    ref: s,
     className: n,
-    children: l({
-      areaRef: o,
-      handleStopPropagation: s
+    children: o({
+      areaRef: s,
+      handleStopPropagation: a
     })
   })
 }

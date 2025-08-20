@@ -4,7 +4,7 @@
 let r;
 require.d(exports, {
   I: () => y,
-  Z: () => Z
+  Z: () => F
 }), require("./388685.js"), require("./642613.js"), require("./583741.js");
 var i, Chunk392711 = require("./392711.js"),
   o = require.n(Chunk392711),
@@ -36,12 +36,12 @@ let y = 25,
   T = false,
   S = null,
   A = Chunk683860.z.LATEST_ACTIVITY,
-  N = [],
-  C = 0,
+  C = [],
+  N = 0,
   R = Chunk697988.z.MATCH_SOME;
 
 function P() {
-  O = false, v = true, I = false, T = false, S = null, A = Chunk683860.z.LATEST_ACTIVITY, r = new Set, C = 0, N = [], R = Chunk697988.z.MATCH_SOME
+  O = false, v = true, I = false, T = false, S = null, A = Chunk683860.z.LATEST_ACTIVITY, r = new Set, N = 0, C = [], R = Chunk697988.z.MATCH_SOME
 }
 
 function w(e, t) {
@@ -52,31 +52,31 @@ function D(e) {
   e.channelId === S && e.sortOrder === A && (0, c.O)(e.tagFilter, r) && e.tagSetting === R || P(), S = e.channelId, A = e.sortOrder, r = e.tagFilter instanceof Set ? e.tagFilter : new Set(e.tagFilter), R = e.tagSetting, O = true, v = false
 }
 
-function L(e) {
+function x(e) {
   if (e.channelId !== S || e.sortOrder !== A || !(0, c.O)(e.tagFilter, r) || e.tagSetting !== R) returnfalse;
   let t = e.threads.filter(e => p.AW.has(e.type)).map(e => e.id);
-  N = N.concat(t);
+  C = C.concat(t);
   let n = h.Z.getChannel(S);
   null != n && n.isForumLikeChannel() && (0, _.Hr)({
     guildId: n.guild_id,
     channelId: n.id,
-    numArchivedThreads: N.length,
+    numArchivedThreads: C.length,
     hasMoreThreads: e.hasMore,
     filterTagIds: Array.from(e.tagFilter),
     sortOrder: e.sortOrder
-  }), M(), I = e.hasMore, C = e.offset + y, O = false, v = false
+  }), j(), I = e.hasMore, N = e.offset + y, O = false, v = false
 }
 
-function x(e) {
-  return (null == S || null == e.channelId || S === e.channelId) && M()
+function L(e) {
+  return (null == S || null == e.channelId || S === e.channelId) && j()
 }
 
-function M() {
+function j() {
   if (null == S) returnfalse;
   let e = !I,
-    t = Chunk592125.Z.getChannel(N[N.length - 1]),
+    t = Chunk592125.Z.getChannel(C[C.length - 1]),
     n = null == exports ? null : w(exports, A);
-  N = o()(Chunk592125.Z.getAllThreadsForParent(S)).filter(e => e.isArchivedThread()).filter(t => {
+  C = o()(Chunk592125.Z.getAllThreadsForParent(S)).filter(e => e.isArchivedThread()).filter(t => {
     if (0 !== r.size) {
       var i, a;
       if (R === s.z.MATCH_SOME) {
@@ -94,19 +94,19 @@ function M() {
   }).sort((e, t) => g.default.compare(w(e, A), w(t, A))).map(e => e.id).reverse().value()
 }
 
-function k(e) {
+function M(e) {
   if (e.channelId !== S || e.sortOrder !== A || !(0, c.O)(e.tagFilter, r) || e.tagSetting !== R) returnfalse;
   O = false, T = true, v = false
 }
 
-function j(e) {
+function k(e) {
   if (e.channel.id !== S) returnfalse;
   P()
 }
 
 function U(e) {
-  if (!(N.indexOf(e) >= 0)) returnfalse;
-  N = N.filter(t => t !== e)
+  if (!(C.indexOf(e) >= 0)) returnfalse;
+  C = C.filter(t => t !== e)
 }
 
 function G(e) {
@@ -122,8 +122,8 @@ function B(e) {
   } = e;
   return S === t.parent_id && !!(0, f.yv)(t.id) && void U(t.id)
 }
-let V = [];
-class F extends(i = Chunk442837.ZP.Store) {
+let Z = [];
+class V extends(i = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk592125.Z, Chunk569471.Z, Chunk306680.ZP)
   }
@@ -131,7 +131,7 @@ class F extends(i = Chunk442837.ZP.Store) {
     return I && !O && !T
   }
   get nextOffset() {
-    return C
+    return N
   }
   get isInitialLoad() {
     return v
@@ -140,17 +140,17 @@ class F extends(i = Chunk442837.ZP.Store) {
     return S === e && A === t && (0, c.O)(r, n) && R === i ? O : (P(), false)
   }
   getThreads(e, t, n, i) {
-    return S === e && A === t && (0, c.O)(r, n) && R === i ? N : V
+    return S === e && A === t && (0, c.O)(r, n) && R === i ? C : Z
   }
 }
-b(F, "displayName", "ArchivedThreadsStore");
-let Z = new F(Chunk570140.Z, {
+b(V, "displayName", "ArchivedThreadsStore");
+let F = new V(Chunk570140.Z, {
   CONNECTION_OPEN: P,
   THREAD_DELETE: G,
   THREAD_UPDATE: B,
-  CHANNEL_DELETE: j,
+  CHANNEL_DELETE: k,
   LOAD_ARCHIVED_THREADS: D,
-  LOAD_ARCHIVED_THREADS_SUCCESS: L,
-  LOAD_ARCHIVED_THREADS_FAIL: k,
-  RESORT_THREADS: x
+  LOAD_ARCHIVED_THREADS_SUCCESS: x,
+  LOAD_ARCHIVED_THREADS_FAIL: M,
+  RESORT_THREADS: L
 })

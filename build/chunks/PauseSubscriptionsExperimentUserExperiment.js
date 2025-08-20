@@ -1,9 +1,10 @@
-/** Chunk was on 66181 **/
-/** chunk id: 879463, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 879463, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  ZP: () => r
+  ZP: () => i
 });
-let i = (0, require("./818083.js").B)({
+let r = (0, require("./818083.js").B)({
     kind: "user",
     id: "2023-12_pause_subscriptions_experiment",
     label: "Pause Subscriptions Experiment",
@@ -18,16 +19,16 @@ let i = (0, require("./818083.js").B)({
       }
     }]
   }),
-  r = e => {
+  i = e => {
     let {
       location: t,
       autoTrackExposure: n = true,
-      trackExposureOptions: r = {}
+      trackExposureOptions: i = {}
     } = e;
-    return i.useExperiment({
+    return r.useExperiment({
       location: t
     }, {
       autoTrackExposure: n,
-      trackExposureOptions: r
+      trackExposureOptions: i
     })
   }

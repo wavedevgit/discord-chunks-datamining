@@ -4,10 +4,10 @@
 require.d(exports, {
   Dz: () => p,
   SW: () => D,
-  T_: () => k,
-  _v: () => j,
-  jd: () => M,
-  pz: () => L,
+  T_: () => M,
+  _v: () => k,
+  jd: () => j,
+  pz: () => x,
   s5: () => P
 }), require("./388685.js"), require("./467055.js"), require("./361932.js"), require("./187205.js"), require("./539854.js"), require("./642613.js");
 var Chunk921738 = require("./921738.js"),
@@ -266,7 +266,7 @@ class A {
     null != t ? this.keyMap = t : this.keyMap = O(d({}, e)), this._initializeInternalLayoutMap(), this.keyCodeMap = this._buildKeyCodeMapFromKeyMap(), this.updateCaches(), this.save()
   }
 }
-class N extends A {
+class C extends A {
   getKeyString(e, t) {
     var n;
     let r = this.getKeyCodeMapItem(e);
@@ -365,14 +365,14 @@ class N extends A {
     }
   }
 }
-let C = null,
+let N = null,
   R = null;
 
 function P() {
   return null != R ? R : R = new Promise(async e => {
-    await b(), C = new N(_), document.addEventListener("keydown", e => {
+    await b(), N = new C(_), document.addEventListener("keydown", e => {
       try {
-        null == C || C.addEvent(e)
+        null == N || N.addEvent(e)
       } catch (t) {
         f.error("KeyboardMapper - Error adding event", {
           event: e,
@@ -384,26 +384,26 @@ function P() {
 }
 
 function w() {
-  return null == C ? (P(), null) : C
+  return null == N ? (P(), null) : N
 }
 async function D() {
   var e;
   await b(), null == (e = w()) || module.reset()
 }
 
-function L() {
+function x() {
   var e, t;
   let n = arguments.length > 0 && true !== arguments[0] && arguments[0];
   return require ? y() : null != (t = null == (e = w()) ? true : module.getLayoutMap()) ? exports : y()
 }
 
-function x(e) {
+function L(e) {
   var t, n;
   let r = null != e ? m(e) : true;
   if (null != r) return null != (n = null == (t = w()) ? true : t.findCodeFromKeyboardLayoutMap(r)) ? n : true
 }
 
-function M(e) {
+function j(e) {
   let t = v(e);
   if (null != t.key) {
     var n, r;
@@ -412,11 +412,11 @@ function M(e) {
   return null
 }
 
-function k(e) {
+function M(e) {
   var t, n, r, i;
   let a = null != e ? m(e) : true;
   if (null == a) return null;
-  let o = x(a),
+  let o = L(a),
     s = null != (n = null == (t = w()) ? true : t.findKeyboardEventByKey(a, o)) ? n : null;
   if (null != s) return s;
   try {
@@ -433,7 +433,7 @@ function k(e) {
   }
 }
 
-function j(e) {
+function k(e) {
   var t, n, r, i;
   let a = null != (n = null == (t = w()) ? true : t.findKeyboardEventByKeyCode(e)) ? n : null;
   if (null != a) return a;

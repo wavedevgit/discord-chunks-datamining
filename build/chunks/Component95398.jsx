@@ -142,7 +142,7 @@ let v = e => {
     })
   },
   A = Chunk647438.createContext(false);
-class N extends Chunk647438.PureComponent {
+class C extends Chunk647438.PureComponent {
   renderWithTooltip(e) {
     return (0, r.jsx)(l.ua7, {
       position: "left",
@@ -401,13 +401,13 @@ class N extends Chunk647438.PureComponent {
     })
   }
 }
-let C = e => {
+let N = e => {
   let t = (0, f.m8)() && null != e.reason && _.eq.has(e.reason),
     n = (0, d.Jm)();
-  return (0, r.jsx)(N, y(E({}, e), {
+  return (0, r.jsx)(C, y(E({}, e), {
     shouldAgeVerify: t,
     isVerifiedTeen: n
   }))
 };
-C.Types = O, C.Reasons = Chunk936141.wk;
-let R = C
+N.Types = O, N.Reasons = Chunk936141.wk;
+let R = N

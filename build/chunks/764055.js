@@ -1,5 +1,6 @@
-/** Chunk was on 66181 **/
-/** chunk id: 764055, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 764055, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   divider: "divider_eda416",
   defaultSetting: "defaultSetting_eda416",

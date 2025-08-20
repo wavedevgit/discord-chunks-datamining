@@ -1,64 +1,65 @@
-/** Chunk was on 66181 **/
-/** chunk id: 526156, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 526156, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => d
+  Z: () => u
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk230711 = require("./230711.js"),
   Chunk528084 = require("./528084.js"),
   Chunk9352 = require("./9352.js");
-let d = e => {
+let u = e => {
   var t;
   let {
     tabs: n,
-    settingsSection: r,
-    parentSetting: d,
-    panelClassName: u,
-    defaultTabIndex: m,
-    onTabChange: p,
-    orientation: g = "horizontal"
+    settingsSection: i,
+    parentSetting: u,
+    panelClassName: d,
+    defaultTabIndex: f,
+    onTabChange: _,
+    orientation: p = "horizontal"
   } = e, {
     viewableTabs: h,
-    filteredTab: f
-  } = (0, o.a)(n, d), b = null != m ? n[m] : null, x = null != (t = null != b ? b : f) ? t : h[0];
-  return (0, i.jsxs)("div", {
-    className: s()(c.tabbedSettingsContainer, {
-      [c.vertical]: "vertical" === g
+    filteredTab: m
+  } = (0, l.a)(n, u), g = null != f ? n[f] : null, E = null != (t = null != g ? g : m) ? t : h[0], b = e => {
+    let t = e.component;
+    return "function" == typeof t ? (0, r.jsx)(t, {}) : t
+  }, y = e => {
+    s.Z.setSection(i, e), null == _ || _(e)
+  };
+  return (0, r.jsxs)("div", {
+    className: a()(c.tabbedSettingsContainer, {
+      [c.vertical]: "vertical" === p
     }),
-    children: [(0, i.jsx)(a.njP, {
-      className: s()(c.tabBar, {
-        [c.vertical]: "vertical" === g
+    children: [(0, r.jsx)(o.njP, {
+      className: a()(c.tabBar, {
+        [c.vertical]: "vertical" === p
       }),
-      selectedItem: x.setting,
-      onItemSelect: e => {
-        l.Z.setSection(r, e), null == p || p(e)
-      },
-      orientation: g,
-      type: "vertical" === g ? "side" : "top",
+      selectedItem: E.setting,
+      onItemSelect: y,
+      orientation: p,
+      type: "vertical" === p ? "side" : "top",
       look: "brand",
-      children: h.map(e => (0, i.jsx)(a.njP.Item, {
-        className: s()(c.tab, {
-          [c.vertical]: "vertical" === g,
-          [c.selected]: e.setting === x.setting
+      children: h.map(e => (0, r.jsx)(o.njP.Item, {
+        className: a()(c.tab, {
+          [c.vertical]: "vertical" === p,
+          [c.selected]: e.setting === E.setting
         }),
         id: e.setting,
         "aria-label": e.title,
         children: e.title
       }, e.setting))
-    }), (0, i.jsx)(a.njP.Panel, {
-      id: x.setting,
-      "aria-labelledby": x.title,
-      className: s()(c.tabBarPanel, u, {
-        [c.vertical]: "vertical" === g
+    }), (0, r.jsx)(o.njP.Panel, {
+      id: E.setting,
+      "aria-labelledby": E.title,
+      className: a()(c.tabBarPanel, d, {
+        [c.vertical]: "vertical" === p
       }),
-      children: (e => {
-        let t = e.component;
-        return "function" == typeof t ? (0, i.jsx)(t, {}) : t
-      })(x)
+      children: b(E)
     })]
   })
 }

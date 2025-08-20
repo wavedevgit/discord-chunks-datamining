@@ -27,7 +27,7 @@ function g(e) {
     guildId: b,
     context: y,
     onItemClick: O
-  } = e, v = null != (t = null == E ? true : E.id) ? t : null == g ? true : g.id, I = _.Z.getGuild(b), T = (0, a.e7)([p.Z], () => null != I ? p.Z.can(h.Plq.MANAGE_GUILD, I) : null), S = true, A = true, N = (0, c.LD)(b, A), C = (0, c.PL)(S, A), R = (0, a.e7)([f.Z], () => null != f.Z.getNewestTokenForApplication(v)), {
+  } = e, v = null != (t = null == E ? true : E.id) ? t : null == g ? true : g.id, I = _.Z.getGuild(b), T = (0, a.e7)([p.Z], () => null != I ? p.Z.can(h.Plq.MANAGE_GUILD, I) : null), S = true, A = true, C = (0, c.LD)(b, A), N = (0, c.PL)(S, A), R = (0, a.e7)([f.Z], () => null != f.Z.getNewestTokenForApplication(v)), {
     isUserApp: P,
     isGuildApp: w
   } = i.useMemo(() => {
@@ -36,8 +36,8 @@ function g(e) {
       isGuildApp: false,
       isUserApp: false
     };
-    let i = Object.values(null != (n = null == (e = N.result) ? true : e.sections) ? n : {}),
-      a = Object.values(null != (r = null == (t = C.result) ? true : t.sections) ? r : {});
+    let i = Object.values(null != (n = null == (e = C.result) ? true : e.sections) ? n : {}),
+      a = Object.values(null != (r = null == (t = N.result) ? true : t.sections) ? r : {});
     return {
       isGuildApp: i.some(e => {
         var t;
@@ -48,14 +48,14 @@ function g(e) {
         return (null == (t = e.descriptor.application) ? true : t.id) === v
       })
     }
-  }, [N, C, v]);
+  }, [C, N, v]);
   i.useEffect(() => {
     n(360606)
   }, []);
   let D = i.useCallback(() => {
       (null == I ? true : I.id) != null && (u.Z.open(I.id, h.pNK.INTEGRATIONS), s.Z.setSection(h.b4C.APPLICATION, v), null == O || O())
     }, [v, null == I ? true : I.id, O]),
-    L = i.useCallback(() => {
+    x = i.useCallback(() => {
       l.Z.open(h.oAB.AUTHORIZED_APPS);
       let e = "";
       null != E ? e = E.name : null != g && (e = g.username), "" !== e && d.J.setState({
@@ -63,14 +63,14 @@ function g(e) {
       }), null == O || O()
     }, [E, O, g]);
   if (y === h.IlC.POPOUT) return null;
-  let x = [];
-  return w && T && x.push((0, r.jsx)(o.sNh, {
+  let L = [];
+  return w && T && L.push((0, r.jsx)(o.sNh, {
     id: "manage-server-integration",
     label: m.intl.string(m.t.IuSJT0),
     action: D
-  }, "manage-server-integration")), P && R && x.push((0, r.jsx)(o.sNh, {
+  }, "manage-server-integration")), P && R && L.push((0, r.jsx)(o.sNh, {
     id: "manage-authorized-app",
     label: m.intl.string(m.t.V8ruv7),
-    action: L
-  }, "manage-authorized-app")), x
+    action: x
+  }, "manage-authorized-app")), L
 }

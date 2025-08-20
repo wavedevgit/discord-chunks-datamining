@@ -2,7 +2,7 @@
 /** chunk id: 117652, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Dd: () => L
+  Dd: () => x
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -55,16 +55,16 @@ function D(e) {
   }
   return e
 }
-let L = {
+let x = {
   key: Chunk409813.h8.GIFT_CUSTOMIZATION,
-  renderStep: e => (0, r.jsx)(M, D({}, e)),
+  renderStep: e => (0, r.jsx)(j, D({}, e)),
   options: {
     isLargeModal: true,
     useBreadcrumbLabel: () => Chunk388032.intl.string(Chunk388032.t["W685+f"])
   }
 };
 
-function x(e) {
+function L(e) {
   let {
     onStepChange: t,
     onBackClick: n,
@@ -79,14 +79,14 @@ function x(e) {
       onClick: () => t(c),
       disabled: o,
       loading: s,
-      text: C.intl.string(C.t.XiOHRU)
+      text: N.intl.string(N.t.XiOHRU)
     }), i ? (0, r.jsx)(m.Z, {
       onClick: n
     }) : null]
   })
 }
 
-function M(e) {
+function j(e) {
   let {
     handleStepChange: t,
     handleClose: n
@@ -97,24 +97,24 @@ function M(e) {
     setGiftRecipientError: T,
     validatingGiftRecipient: w,
     giftRecipient: D,
-    recommendedGiftSkuIds: L,
-    giftingOrigin: M,
-    setValidatingGiftRecipient: j
+    recommendedGiftSkuIds: x,
+    giftingOrigin: j,
+    setValidatingGiftRecipient: k
   } = (0, v.wD)(), {
     selectedSkuId: U,
     setSelectedSkuId: G,
     selectedSkuPricePreview: B,
-    paymentSourceId: V,
-    skuPricePreviewsById: F
-  } = (0, I.JL)(), Z = (0, i.e7)([E.default], () => E.default.getCurrentUser()), {
+    paymentSourceId: Z,
+    skuPricePreviewsById: V
+  } = (0, I.JL)(), F = (0, i.e7)([E.default], () => E.default.getCurrentUser()), {
     enabled: H,
     giftRecommendationAlgorithm: Y
   } = _.G.useExperiment({
     location: "CollectiblesPaymentModalGiftCustomizationStep"
   }, {
     autoTrackExposure: false
-  }), W = H && M === N.Wt.DM_CHANNEL, K = Y === _.u.POPULAR ? C.intl.string(C.t.Kwgrrq) : C.intl.string(C.t.r1huYW), z = async (e, t) => {
-    j(true), null != m && T(), await (0, c.B1)(e.id, t) || T(C.intl.string(C.t["4kgVqa"])), j(false)
+  }), W = H && j === C.Wt.DM_CHANNEL, K = Y === _.u.POPULAR ? N.intl.string(N.t.Kwgrrq) : N.intl.string(N.t.r1huYW), z = async (e, t) => {
+    k(true), null != m && T(), await (0, c.B1)(e.id, t) || T(N.intl.string(N.t["4kgVqa"])), k(false)
   };
   (0, o.ZP)(() => {
     null != U && null != D && (y.default.track(A.rMx.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
@@ -127,11 +127,11 @@ function M(e) {
       }), null != D && z(D, e), G(e)
     },
     X = e => {
-      let t = F[e],
+      let t = V[e],
         n = null;
       if (null != t) {
         var i;
-        n = null != V && null != (i = t[V]) ? i : t[b.c]
+        n = null != Z && null != (i = t[Z]) ? i : t[b.c]
       }
       if (null == n) return;
       let a = (0, O.T4)(n.amount, n.currency);
@@ -144,7 +144,7 @@ function M(e) {
       }, e)
     },
     Q = () => (0, r.jsx)(p.Z, {
-      sectionTitle: C.intl.string(C.t.B3miEx),
+      sectionTitle: N.intl.string(N.t.B3miEx),
       onTextChange: e => null == l ? true : l(e),
       pendingText: s,
       currentText: s,
@@ -159,7 +159,7 @@ function M(e) {
         color: "header-secondary",
         className: R.selectGiftTitle,
         children: K.toLocaleUpperCase()
-      }), L.map(e => X(e)), (0, r.jsx)(k, {
+      }), x.map(e => X(e)), (0, r.jsx)(M, {
         handleClose: n
       })]
     }) : (0, r.jsx)("div", {
@@ -205,10 +205,10 @@ function M(e) {
       children: (0, r.jsx)(a.mzw, {
         justify: f.Z.Justify.BETWEEN,
         align: f.Z.Align.CENTER,
-        children: (0, r.jsx)(x, {
+        children: (0, r.jsx)(L, {
           onStepChange: t,
           onBackClick: n,
-          disabled: null != m || null == D || D.id === (null == Z ? true : Z.id) || s.length > N.$n,
+          disabled: null != m || null == D || D.id === (null == F ? true : F.id) || s.length > C.$n,
           loading: w
         })
       })
@@ -216,7 +216,7 @@ function M(e) {
   })
 }
 
-function k(e) {
+function M(e) {
   let {
     handleClose: t
   } = e, {
@@ -249,11 +249,11 @@ function k(e) {
           children: [(0, r.jsx)(a.Text, {
             color: "header-primary",
             variant: "text-md/semibold",
-            children: C.intl.string(C.t["1+Co8P"])
+            children: N.intl.string(N.t["1+Co8P"])
           }), (0, r.jsx)(a.X6q, {
             color: "header-secondary",
             variant: "heading-sm/medium",
-            children: C.intl.string(C.t.nYn52N)
+            children: N.intl.string(N.t.nYn52N)
           })]
         })]
       }), (0, r.jsx)("div", {

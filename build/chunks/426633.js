@@ -1,5 +1,6 @@
-/** Chunk was on 66181 **/
-/** chunk id: 426633, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 426633, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   toggle: "toggle_a63120"
 }

@@ -1,7 +1,8 @@
-/** Chunk was on 18824 **/
-/** chunk id: 959562, original params: t,e,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 959562, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => l
+  Z: () => s
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -9,21 +10,21 @@ var Chunk481060 = require("./481060.js"),
   Chunk782280 = require("./782280.js"),
   Chunk660097 = require("./660097.js");
 
-function l(t) {
+function s(e) {
   let {
-    user: e,
+    user: t,
     size: n
-  } = t, l = (0, i.UCu)(n), c = null != e ? e.getAvatarURL(null, l.size) : r;
-  return (0, s.jsx)("div", {
+  } = e, s = (0, i.UCu)(n), l = null != t ? t.getAvatarURL(null, s.size) : o;
+  return (0, r.jsx)("div", {
     className: a.avatarBackground,
-    children: (0, s.jsx)("div", {
+    children: (0, r.jsx)("div", {
       className: a.avatar,
       style: {
-        width: l.size,
-        height: l.size
+        width: s.size,
+        height: s.size
       },
-      children: (0, s.jsx)(i.qEK, {
-        src: c,
+      children: (0, r.jsx)(i.qEK, {
+        src: l,
         "aria-hidden": true,
         size: n
       })

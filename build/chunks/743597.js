@@ -76,7 +76,7 @@ function m(e, t, n) {
       });
       p(t, n, E), (0, u.gr)(E, e, n), i.current.start(c.FO, () => m(E))
     }, [e, t, n, m]),
-    S = r.useCallback((r, a, o) => {
+    v = r.useCallback((r, a, o) => {
       p.cancel(), (0, u.Df)(t, n, l.current), (0, u.gr)(f(d({}, r), {
         id: l.current,
         x: a,
@@ -86,11 +86,11 @@ function m(e, t, n) {
         lastUpdatedAt: Date.now()
       }), e, n), i.current.stop()
     }, [t, n, e]),
-    v = r.useCallback((e, t, n) => g(e, t, n), [g]);
+    S = r.useCallback((e, t, n) => g(e, t, n), [g]);
   return r.useMemo(() => ({
     handleMouseDown: E,
     handleMouseMove: g,
-    handleMouseUp: S,
-    handleMouseEnter: v
-  }), [E, v, g, S])
+    handleMouseUp: v,
+    handleMouseEnter: S
+  }), [E, S, g, v])
 }

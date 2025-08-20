@@ -1,12 +1,13 @@
-/** Chunk was on 66181 **/
-/** chunk id: 595242, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 595242, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => j
+  Z: () => y
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk570140 = require("./570140.js"),
@@ -21,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk412124 = require("./412124.js");
 
-function j() {
+function y() {
   Chunk647438.useEffect(() => {
     Chunk570140.Z.wait(() => {
       Chunk355467.jg(), Chunk355467.tZ(), (0, Chunk179360.X8)(), (0, Chunk821849.Y2)(null, null, Chunk981631.JjL.DISCOVERY), (0, Chunk179360.tH)(true)
@@ -33,8 +34,8 @@ function j() {
   } = (0, Chunk442837.cj)([Chunk78839.Z], () => ({
     hasFetchedSubscriptions: Chunk78839.Z.hasFetchedSubscriptions(),
     premiumSubscription: Chunk78839.Z.getPremiumTypeSubscription()
-  })), n = (0, Chunk15640.V)(), s = (0, Chunk442837.e7)([Chunk853872.Z], () => Chunk853872.Z.hasFetchedPaymentSources), j = (0, Chunk442837.e7)([Chunk899667.Z], () => Chunk899667.Z.isFetchingCurrentUserAppliedBoosts);
-  return module && require && Chunk120356 && !j ? (0, Chunk951288.jsxs)("div", {
+  })), n = (0, Chunk15640.V)(), a = (0, Chunk442837.e7)([Chunk853872.Z], () => Chunk853872.Z.hasFetchedPaymentSources), y = (0, Chunk442837.e7)([Chunk899667.Z], () => Chunk899667.Z.isFetchingCurrentUserAppliedBoosts);
+  return module && require && Chunk120356 && !y ? (0, Chunk951288.jsxs)("div", {
     className: Chunk412124.container,
     children: [(0, Chunk951288.jsx)("div", {
       className: Chunk412124.background
@@ -45,7 +46,7 @@ function j() {
       })
     })]
   }) : (0, Chunk951288.jsx)("div", {
-    className: a()(Chunk412124.container, Chunk412124.loading),
+    className: o()(Chunk412124.container, Chunk412124.loading),
     children: (0, Chunk951288.jsx)(Chunk481060.$jN, {})
   })
 }

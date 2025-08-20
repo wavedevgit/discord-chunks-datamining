@@ -1,5 +1,6 @@
-/** Chunk was on 96750 **/
-/** chunk id: 544671, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 544671, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   Z: () => c
 });
@@ -18,20 +19,20 @@ function c(e) {
     guildId: c,
     channelId: u,
     source: d,
-    look: p,
-    color: f,
-    onAction: m
+    look: f,
+    color: _,
+    onAction: p
   } = e;
-  return null != t && (0, l.Z)(t, o.xjy.SYNC) && (0, a.Z)(t) ? (0, r.jsx)(i.Z, {
-    className: s.button,
-    size: s.buttonSize,
-    look: p,
-    color: f,
+  return null != t && (0, a.Z)(t, s.xjy.SYNC) && (0, o.Z)(t) ? (0, r.jsx)(i.Z, {
+    className: l.button,
+    size: l.buttonSize,
+    look: f,
+    color: _,
     user: n,
     activity: t,
     guildId: null != c ? c : true,
     channelId: u,
     source: d,
-    onAction: m
+    onAction: p
   }, "sync") : null
 }

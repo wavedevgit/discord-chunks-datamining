@@ -1,12 +1,13 @@
-/** Chunk was on 66181 **/
-/** chunk id: 881493, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 881493, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  w: () => f
+  w: () => m
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk434333 = require("./434333.jsx"),
   Chunk82659 = require("./82659.jsx"),
   Chunk74538 = require("./74538.js"),
@@ -16,24 +17,24 @@ var Chunk951288 = require("./951288.js"),
   Chunk594135 = require("./594135.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk704442 = require("./704442.js");
-let f = () => {
+let m = () => {
   let {
     transitionState: e,
     planId: t,
     renewalInvoice: n,
-    onClose: s,
-    handleCancellation: f,
-    renewalInvoiceDetails: b,
-    fullPrice: x,
-    premiumSubscription: _
-  } = (0, Chunk594135.a)(), [j, E] = Chunk647438.useState(false), [C, O] = Chunk647438.useState(false);
+    onClose: a,
+    handleCancellation: m,
+    renewalInvoiceDetails: g,
+    fullPrice: E,
+    premiumSubscription: b
+  } = (0, Chunk594135.a)(), [y, O] = Chunk647438.useState(false), [v, I] = Chunk647438.useState(false);
   if (null == require) return null;
-  let v = async () => {
-    E(true), O(false);
+  let T = async () => {
+    O(true), I(false);
     try {
-      await f(), Chunk120356()
+      await m(), Chunk120356()
     } catch (e) {
-      O(true), E(false)
+      I(true), O(false)
     }
   }, S = [{
     text: Chunk388032.intl.string(Chunk388032.t.h9tkAA),
@@ -43,16 +44,16 @@ let f = () => {
     text: "".concat(Chunk388032.intl.format(Chunk388032.t.yxFzdH, {
       planPremiumType: Chunk74538.ZP.getDisplayPremiumType("".concat(exports))
     })),
-    onClick: v,
-    disabled: j,
+    onClick: T,
+    disabled: y,
     variant: "critical-primary",
-    loading: j
+    loading: y
   }];
-  if (null == b) return null;
+  if (null == g) return null;
   let {
-    intervalType: T,
-    intervalCount: N
-  } = b, I = (0, Chunk937615.og)("".concat(x), T, N);
+    intervalType: A,
+    intervalCount: C
+  } = g, N = (0, Chunk937615.og)("".concat(E), A, C);
   return (0, Chunk951288.jsxs)(Chunk82659.Modal, {
     size: "md",
     transitionState: module,
@@ -61,7 +62,7 @@ let f = () => {
     })),
     subtitle: 0 !== require.total ? Chunk388032.intl.format(Chunk388032.t.ycyeBw, {
       renewalDate: require.subscriptionPeriodStart,
-      rate: (0, Chunk937615.og)((0, Chunk937615.T4)(require.total, require.currency), T, N)
+      rate: (0, Chunk937615.og)((0, Chunk937615.T4)(require.total, require.currency), A, C)
     }) : Chunk388032.intl.format(Chunk388032.t["+y0Tj4"], {
       renewalDate: require.subscriptionPeriodStart
     }),
@@ -69,8 +70,8 @@ let f = () => {
     onClose: async () => Chunk120356(),
     children: [(0, Chunk951288.jsxs)(Chunk811334.aO, {
       isPremiumRebrand: true,
-      className: a()({
-        [Chunk704442.hasError]: C
+      className: o()({
+        [Chunk704442.hasError]: v
       }),
       children: [(0, Chunk951288.jsx)(Chunk811334.Z9, {
         children: Chunk388032.intl.string(Chunk388032.t.iqhIp6)
@@ -78,14 +79,14 @@ let f = () => {
         label: Chunk388032.intl.formatToPlainString(Chunk388032.t.r3jVZm, {
           planName: Chunk74538.ZP.getDisplayName("".concat(exports))
         }),
-        value: "".concat(I),
+        value: "".concat(N),
         className: Chunk704442.canceled
       }), (0, Chunk951288.jsx)(Chunk811334.UN, {}), (0, Chunk951288.jsx)(Chunk42818.nd, {
-        premiumSubscription: _,
+        premiumSubscription: b,
         renewalInvoice: require,
         isUpdate: true
       })]
-    }), C ? (0, Chunk951288.jsx)(Chunk434333.k, {
+    }), v ? (0, Chunk951288.jsx)(Chunk434333.k, {
       children: Chunk388032.intl.string(Chunk388032.t["5mlOCQ"])
     }) : null]
   })

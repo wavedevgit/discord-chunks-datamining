@@ -2,7 +2,7 @@
 /** chunk id: 905128, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => N
+  Z: () => C
 }), require("./388685.js"), require("./467055.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -189,7 +189,7 @@ c(A, "displayName", "GuildPowerupsStore"), c(A, "persistKey", "GuildPowerupsStor
     unlockedPowerups: null != (r = o.unlockedPowerups) ? r : {}
   })]
 }))]);
-let N = new A(Chunk570140.Z, {
+let C = new A(Chunk570140.Z, {
   LOGOUT: S,
   GUILD_POWERUP_CATALOG_FETCH_SUCCESS: y,
   GUILD_UNLOCKED_POWERUPS_FETCH_SUCCESS: O,

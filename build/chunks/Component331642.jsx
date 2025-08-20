@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 331642, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 331642, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => j
+  Z: () => T
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,145 +20,159 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk298879 = require("./298879.js");
 
-function x(e) {
+function E(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function b(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      E(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function y(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function O(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+
+function v(e) {
   let {
     onSelect: t
-  } = e, [n, a] = r.useState(false), o = (0, s.e7)([c.default], () => c.default.getCurrentUser()), u = d.ZP.canUseCustomCallSounds(o), m = r.useRef(null);
+  } = e, [n, o] = i.useState(false), l = (0, a.e7)([c.default], () => c.default.getCurrentUser()), d = u.ZP.canUseCustomCallSounds(l), f = i.useRef(null);
 
-  function x(e) {
-    u && (a(false), null == t || t(e))
+  function E(e) {
+    d && (o(false), null == t || t(e))
   }
-  return (0, i.jsx)(l.yRy, {
-    targetElementRef: m,
+  return (0, r.jsx)(s.yRy, {
+    targetElementRef: f,
     shouldShow: n,
     position: "left",
-    onRequestClose: () => a(false),
+    onRequestClose: () => o(false),
     renderPopout: e => {
       let {
         closePopout: t
       } = e;
-      return (0, i.jsx)(l.VqE, {
-        children: (0, i.jsx)(g.Z, {
+      return (0, r.jsx)(s.VqE, {
+        children: (0, r.jsx)(p.Z, {
           suppressPlaySound: true,
           shouldShowUpsell: false,
           guildId: null,
           channel: null,
           onClose: t,
-          onSelect: x,
-          gridNotice: u ? null : (0, i.jsx)(p.o, {}),
+          onSelect: E,
+          gridNotice: d ? null : (0, r.jsx)(_.o, {}),
           analyticsSource: "call sounds edit setting"
         })
       })
     },
-    children: e => {
-      var t, r;
-      return (0, i.jsx)(h.hU, (t = function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {},
-            i = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), i.forEach(function(t) {
-            var i;
-            i = n[t], t in e ? Object.defineProperty(e, t, {
-              value: i,
-              enumerable: true,
-              configurable: true,
-              writable: true
-            }) : e[t] = i
-          })
-        }
-        return e
-      }({}, e), r = r = {
-        ref: m,
-        onClick: () => {
-          a(!n)
-        },
-        text: f.intl.string(f.t.uOe0Aw),
-        children: (0, i.jsx)(l.vdY, {
-          size: "md",
-          color: "currentColor",
-          className: b.secondaryIcon
-        })
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-          var i = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, i)
-        }
-        return n
-      })(Object(r)).forEach(function(e) {
-        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
-      }), t))
-    }
+    children: e => (0, r.jsx)(h.hU, O(b({}, e), {
+      ref: f,
+      onClick: () => {
+        o(!n)
+      },
+      text: m.intl.string(m.t.uOe0Aw),
+      children: (0, r.jsx)(s.vdY, {
+        size: "md",
+        color: "currentColor",
+        className: g.secondaryIcon
+      })
+    }))
   })
 }
 
-function _(e) {
+function I(e) {
   let {
     sound: t
   } = e, {
     previewSound: n
-  } = (0, m.Z)(t, null), r = 0 === (0, u.pI)() ? f.intl.string(f.t.OASXjo) : f.intl.formatToPlainString(f.t["/8fYOz"], {
+  } = (0, f.Z)(t, null), i = 0 === (0, d.pI)() ? m.intl.string(m.t.OASXjo) : m.intl.formatToPlainString(m.t["/8fYOz"], {
     emojiName: t.emojiName,
     soundName: t.name
   });
-  return (0, i.jsx)(h.hU, {
+  return (0, r.jsx)(h.hU, {
     onClick: n,
-    text: r,
-    children: (0, i.jsx)(l.gj8, {
+    text: i,
+    children: (0, r.jsx)(s.gj8, {
       size: "md",
       color: "currentColor",
-      className: b.secondaryIconActive
+      className: g.secondaryIconActive
     })
   })
 }
 
-function j(e) {
+function T(e) {
   let {
     sound: t,
     isGlobal: n,
-    onSelect: r
-  } = e, s = null != t, c = null == t ? true : t.emojiId, d = null == t ? true : t.emojiName, u = s && (null != d || null != c);
-  return (0, i.jsxs)("div", {
-    className: b.soundButtonSettingContainer,
-    children: [(0, i.jsxs)("div", {
-      className: b.container,
-      children: [u && (0, i.jsx)(o.Z, {
+    onSelect: i
+  } = e, a = null != t, c = null == t ? true : t.emojiId, u = null == t ? true : t.emojiName, d = a && (null != u || null != c), f = e => (0, r.jsx)(s.Text, {
+    variant: "text-xs/medium",
+    color: "header-secondary",
+    tag: "span",
+    children: e
+  });
+
+  function _() {
+    return null == t ? m.intl.string(m.t.PoWNfX) : n ? m.intl.format(m.t.B6HU6O, {
+      soundName: t.name,
+      subtextHook: f
+    }) : t.name
+  }
+  return (0, r.jsxs)("div", {
+    className: g.soundButtonSettingContainer,
+    children: [(0, r.jsxs)("div", {
+      className: g.container,
+      children: [d && (0, r.jsx)(l.Z, {
         emojiId: c,
-        emojiName: d,
-        className: b.emoji
-      }), (0, i.jsx)(l.Text, {
+        emojiName: u,
+        className: g.emoji
+      }), (0, r.jsx)(s.Text, {
         variant: "text-xs/medium",
         color: "header-primary",
-        className: b.soundText,
-        children: null == t ? f.intl.string(f.t.PoWNfX) : n ? f.intl.format(f.t.B6HU6O, {
-          soundName: t.name,
-          subtextHook: e => (0, i.jsx)(l.Text, {
-            variant: "text-xs/medium",
-            color: "header-secondary",
-            tag: "span",
-            children: e
-          })
-        }) : t.name
-      }), s ? (0, i.jsx)(_, {
+        className: g.soundText,
+        children: _()
+      }), a ? (0, r.jsx)(I, {
         sound: t
-      }) : (0, i.jsx)(l.gj8, {
+      }) : (0, r.jsx)(s.gj8, {
         size: "md",
         color: "currentColor",
-        className: b.secondaryIconDisabled
+        className: g.secondaryIconDisabled
       })]
-    }), (0, i.jsxs)("div", {
-      className: b.container,
-      children: [(0, i.jsx)(x, {
-        onSelect: r
-      }), s && !n && (0, i.jsx)(h.hU, {
-        onClick: () => r(null),
-        text: f.intl.string(f.t.jmtcGB),
-        children: (0, i.jsx)(l.XHJ, {
+    }), (0, r.jsxs)("div", {
+      className: g.container,
+      children: [(0, r.jsx)(v, {
+        onSelect: i
+      }), a && !n && (0, r.jsx)(h.hU, {
+        onClick: () => i(null),
+        text: m.intl.string(m.t.jmtcGB),
+        children: (0, r.jsx)(s.XHJ, {
           size: "md",
-          color: a.Z.unsafe_rawColors.RED_400.css,
-          className: b.secondaryIcon
+          color: o.Z.unsafe_rawColors.RED_400.css,
+          className: g.secondaryIcon
         })
       })]
     })]

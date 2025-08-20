@@ -1,5 +1,6 @@
-/** Chunk was on 66181 **/
-/** chunk id: 74650, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 74650, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   U: () => h
 });
@@ -21,50 +22,50 @@ function h(e) {
   let {
     markAsDismissed: t,
     onCTA: n
-  } = e, h = (0, r.e7)([o.default], () => o.default.getCurrentUser()), f = (0, c.M5)(h, u.p9.TIER_2);
-  return (0, i.jsx)("div", {
-    className: p.popup,
-    children: (0, i.jsxs)("div", {
-      className: p.content,
-      children: [(0, i.jsx)(a.P3F, {
-        className: p.closeIcon,
-        onClick: () => t(d.L.USER_DISMISS),
-        children: (0, i.jsx)(a.Dio, {
+  } = e, h = (0, i.e7)([l.default], () => l.default.getCurrentUser()), m = (0, c.M5)(h, d.p9.TIER_2);
+  return (0, r.jsx)("div", {
+    className: _.popup,
+    children: (0, r.jsxs)("div", {
+      className: _.content,
+      children: [(0, r.jsx)(o.P3F, {
+        className: _.closeIcon,
+        onClick: () => t(u.L.USER_DISMISS),
+        children: (0, r.jsx)(o.Dio, {
           size: "xs"
         })
-      }), (0, i.jsx)("img", {
-        src: g,
+      }), (0, r.jsx)("img", {
+        src: p,
         alt: "",
-        className: p.asset
-      }), (0, i.jsxs)("div", {
-        children: [(0, i.jsx)(a.X6q, {
+        className: _.asset
+      }), (0, r.jsxs)("div", {
+        children: [(0, r.jsx)(o.X6q, {
           variant: "heading-md/semibold",
           color: "text-primary",
-          className: p.title,
-          children: m.intl.string(m.t["PRXV4+"])
-        }), (0, i.jsx)(a.Text, {
+          className: _.title,
+          children: f.intl.string(f.t["PRXV4+"])
+        }), (0, r.jsx)(o.Text, {
           variant: "text-sm/medium",
           color: "text-secondary",
-          children: m.intl.string(m.t.RSHtFx)
+          children: f.intl.string(f.t.RSHtFx)
         })]
-      }), f ? (0, i.jsx)(a.zxk, {
-        text: m.intl.string(m.t.LhcHi4),
+      }), m ? (0, r.jsx)(o.zxk, {
+        text: f.intl.string(f.t.LhcHi4),
         fullWidth: true,
         onClick: () => {
-          t(d.L.TAKE_ACTION), n()
+          t(u.L.TAKE_ACTION), n()
         }
-      }) : (0, i.jsx)(l.Z, {
+      }) : (0, r.jsx)(s.Z, {
         onClick: () => {
-          t(d.L.TAKE_ACTION)
+          t(u.L.TAKE_ACTION)
         },
         showGradient: true,
-        subscriptionTier: u.Si.TIER_2,
-        size: s.zx.Sizes.LARGE,
-        color: s.zx.Colors.CUSTOM,
+        subscriptionTier: d.Si.TIER_2,
+        size: a.zx.Sizes.LARGE,
+        color: a.zx.Colors.CUSTOM,
         textOptions: {
-          textOverride: m.intl.string(m.t.pj0XBA)
+          textOverride: f.intl.string(f.t.pj0XBA)
         },
-        className: p.button
+        className: _.button
       })]
     })
   })

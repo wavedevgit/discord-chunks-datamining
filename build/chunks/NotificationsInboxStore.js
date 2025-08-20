@@ -41,21 +41,21 @@ function R(e, t, n) {
 let P = {},
   w = null,
   D = [],
-  L = new Chunk810457.Z,
-  x = false,
+  x = new Chunk810457.Z,
+  L = false,
+  j = false,
   M = false,
   k = false,
-  j = false,
   U = Chunk709054.default.fromTimestamp(Date.now()),
   G = true,
   B = null,
-  V = null,
-  F = true;
+  Z = null,
+  V = true;
 
-function Z() {
+function F() {
   let e = Chunk771845.ZP.getFlattenedGuildIds().flatMap(e => m.ZP.getSelectableChannelIds(e)),
     t = Chunk601070.Z.getAllActiveJoinedThreads(),
-    n = e => !!N.TPd.GUILD_TEXTUAL.has(e.type) && ((0, _.Q5)(e.type) ? (0, f.J)(e) === C.iN.ALL_MESSAGES && !d.Z.isMuted(e.id) : y.ZP.allowAllMessages(e)),
+    n = e => !!C.TPd.GUILD_TEXTUAL.has(e.type) && ((0, _.Q5)(e.type) ? (0, f.J)(e) === N.iN.ALL_MESSAGES && !d.Z.isMuted(e.id) : y.ZP.allowAllMessages(e)),
     r = [];
   for (let t of module) {
     let e = Chunk592125.Z.getBasicChannel(exports);
@@ -81,7 +81,7 @@ function H(e) {
   if (!g.Z.isReady(e)) return;
   let n = h.Z.getBasicChannel(e),
     r = g.Z.getMessages(e);
-  if (r.hasPresent() && 0 !== r.length) return L.addChannelMessages({
+  if (r.hasPresent() && 0 !== r.length) return x.addChannelMessages({
     channel: n,
     channelMessages: r,
     userId: null == (t = O.default.getCurrentUser()) ? true : t.id
@@ -107,7 +107,7 @@ function W() {
   let {
     notifyingChannelIds: e,
     staleChannelIds: t
-  } = Z();
+  } = F();
   w = module, D = exports, a()(null != w, "notifyingChannelIds should not be null");
   let n = w.filter(e => null == P[e]),
     r = Object.keys(P).filter(e => !(null == w ? true : w.includes(e)));
@@ -123,11 +123,11 @@ function W() {
         var i, o;
         P[module].loadState = Chunk982183.a7.LOADED, P[module].mostRecentMessageId = null != (o = null == (i = exports.last()) ? true : Chunk512722.id) ? Chunk442837 : P[module].mostRecentMessageId
       }
-    } L.updateChannelIds(w), Y()
+    } x.updateChannelIds(w), Y()
 }
 
 function K() {
-  P = {}, w = null, D = [], L = new Chunk810457.Z, x = false, M = false, k = false, U = Chunk709054.default.fromTimestamp(Date.now()), G = true, j = false, V = null, B = null
+  P = {}, w = null, D = [], x = new Chunk810457.Z, L = false, j = false, M = false, U = Chunk709054.default.fromTimestamp(Date.now()), G = true, k = false, Z = null, B = null
 }
 
 function z() {
@@ -137,7 +137,7 @@ function z() {
     null != r && (P[require].loadState = Chunk982183.a7.LOADED, P[require].mostRecentMessageId = null != (t = null == (e = r.last()) ? true : module.id) ? exports : null, Y())
   }
   let r = null != (n = Chunk455199.ZP.getSettingsFilteredMentions()) ? require : [];
-  L.addMessages(r.map(e => {
+  x.addMessages(r.map(e => {
     var t;
     return {
       id: e.id,
@@ -178,7 +178,7 @@ function J(e) {
     W()
   }
   if (!o && l && !(0, c.ln)(s)) returnfalse;
-  L.addMessage({
+  x.addMessage({
     id: a.id,
     channelId: a.channel_id,
     guildId: null == (r = h.Z.getBasicChannel(a.channel_id)) ? true : r.guild_id,
@@ -205,7 +205,7 @@ function ee(e) {
   if (0 === t.length) returnfalse;
   let n = c.ZP.getSettingsFilteredMentions();
   if (null == n || 0 === n.length) returnfalse;
-  L.addMessages(n.map(e => {
+  x.addMessages(n.map(e => {
     var t;
     return {
       id: e.id,
@@ -221,18 +221,18 @@ function et(e) {
   let {
     id: t
   } = e;
-  return L.deleteMessages([t])
+  return x.deleteMessages([t])
 }
 
 function en(e) {
   let {
     ids: t
   } = e;
-  return L.deleteMessages(t)
+  return x.deleteMessages(t)
 }
 
 function er() {
-  x = true
+  L = true
 }
 
 function ei(e) {
@@ -241,7 +241,7 @@ function ei(e) {
     hasMoreToLoad: n,
     analyticsPayload: r
   } = e;
-  x = false, t ? j = true : (null != n && (G = n), k = true), V = null != r ? r : null
+  L = false, t ? k = true : (null != n && (G = n), M = true), Z = null != r ? r : null
 }
 
 function ea(e) {
@@ -252,11 +252,11 @@ function ea(e) {
   return null != (null == (t = (0, I.Ag)({
     location: "NotificationsInboxStore.canLoadMore",
     autoTrackExposure: false
-  })) ? true : t.notificationCenterVariant) && null != w && !x && !M && (!n || !j) && G
+  })) ? true : t.notificationCenterVariant) && null != w && !L && !j && (!n || !k) && G
 }
 
 function eo() {
-  x = false, V = null, M = true
+  L = false, Z = null, j = true
 }
 
 function es(e) {
@@ -285,7 +285,7 @@ function el(e) {
 }
 
 function ec() {
-  M = false
+  j = false
 }
 
 function eu() {
@@ -319,7 +319,7 @@ function e_(e) {
   if (null == a) returnfalse;
   if (null == r ? true : r.some(e => e.userId === a)) {
     let e = h.Z.getBasicChannel(n);
-    return !(null == e || d.Z.isMuted(n)) && (0, f.J)(e) !== C.iN.NO_MESSAGES && void q()
+    return !(null == e || d.Z.isMuted(n)) && (0, f.J)(e) !== N.iN.NO_MESSAGES && void q()
   }
   return null != i && !!i.includes(a) && void q()
 }
@@ -328,7 +328,7 @@ function ep(e) {
   let {
     channel: t
   } = e;
-  if (!L.getMessages().some(e => e.channelId === t.id)) returnfalse;
+  if (!x.getMessages().some(e => e.channelId === t.id)) returnfalse;
   q()
 }
 
@@ -336,7 +336,7 @@ function eh(e) {
   let {
     guild: t
   } = e;
-  if (!L.getMessages().some(e => e.guildId === t.id)) returnfalse;
+  if (!x.getMessages().some(e => e.guildId === t.id)) returnfalse;
   q()
 }
 
@@ -344,7 +344,7 @@ function em(e) {
   let {
     navOnClick: t
   } = e;
-  F = null == t || t
+  V = null == t || t
 }
 class eg extends(r = Chunk442837.ZP.Store) {
   initialize() {
@@ -359,7 +359,7 @@ class eg extends(r = Chunk442837.ZP.Store) {
     })
   }
   getInboxMessages() {
-    return L.getMessages()
+    return x.getMessages()
   }
   getNotifyingChannelIds() {
     return w
@@ -374,26 +374,26 @@ class eg extends(r = Chunk442837.ZP.Store) {
     return G
   }
   get isLoading() {
-    return x
+    return L
   }
   get hasLoadedEver() {
-    return k
+    return M
   }
   get hasPreloaded() {
-    return j
+    return k
   }
   get isLoadingComplete() {
-    return !x && !G
+    return !L && !G
   }
   get selectedItemInfo() {
     return B
   }
   get currentRequestAnalyticsPayload() {
-    return V
+    return Z
   }
   getDevOverrides() {
     return {
-      navOnClick: F
+      navOnClick: V
     }
   }
 }

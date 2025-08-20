@@ -1,12 +1,13 @@
-/** Chunk was on 66181 **/
-/** chunk id: 317941, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 317941, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => R
+  Z: () => L
 }), require("./388685.js"), require("./415506.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk913527 = require("./913527.js"),
-  a = require.n(Chunk913527),
+  o = require.n(Chunk913527),
   Chunk442837 = require("./442837.js"),
   Chunk846519 = require("./846519.js"),
   Chunk755721 = require("./755721.js"),
@@ -30,7 +31,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk669255 = require("./669255.js");
 
-function y(e, t, n) {
+function R(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -38,7 +39,9 @@ function y(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class A extends Chunk647438.PureComponent {
+let P = 512,
+  w = 1e3;
+class D extends Chunk647438.PureComponent {
   componentWillUnmount() {
     this._copyModeTimeout.stop()
   }
@@ -53,7 +56,7 @@ class A extends Chunk647438.PureComponent {
     }
   }
   handleRevoke(e) {
-    u.Z.revokeGiftCode(e)
+    d.Z.revokeGiftCode(e)
   }
   render() {
     let {
@@ -79,7 +82,7 @@ class A extends Chunk647438.PureComponent {
         className: Chunk669255.subTextRow,
         children: [null != exports.expiresAt ? (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
           children: [Chunk388032.intl.format(Chunk388032.t.ltVZcH, {
-            hours: exports.expiresAt.diff(a()(), "h")
+            hours: exports.expiresAt.diff(o()(), "h")
           }), " —\xa0"]
         }) : null, (0, Chunk951288.jsx)(Chunk481060.P3F, {
           tag: "a",
@@ -90,26 +93,26 @@ class A extends Chunk647438.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), y(this, "_copyModeTimeout", new o.V7), y(this, "state", {
-      copyMode: d.uA3.DEFAULT
-    }), y(this, "handleCopy", e => {
+    super(...e), R(this, "_copyModeTimeout", new l.V7), R(this, "state", {
+      copyMode: u.uA3.DEFAULT
+    }), R(this, "handleCopy", e => {
       let {
         giftCode: t,
         sku: n
       } = this.props;
-      (0, v.dM)(t, n), (0, O.JG)(e, () => this.setState({
-        copyMode: d.uA3.SUCCESS
+      (0, T.dM)(t, n), (0, I.JG)(e, () => this.setState({
+        copyMode: u.uA3.SUCCESS
       }), () => this.setState({
-        copyMode: d.uA3.ERROR
-      })), this._copyModeTimeout.start(1e3, () => {
+        copyMode: u.uA3.ERROR
+      })), this._copyModeTimeout.start(w, () => {
         this.setState({
-          copyMode: d.uA3.DEFAULT
+          copyMode: u.uA3.DEFAULT
         })
       })
     })
   }
 }
-class P extends Chunk647438.PureComponent {
+class x extends Chunk647438.PureComponent {
   componentDidMount() {
     this._loadedAt = Date.now()
   }
@@ -117,7 +120,7 @@ class P extends Chunk647438.PureComponent {
     let e, {
       sku: t,
       subscriptionPlan: n,
-      giftCodeBatchId: r
+      giftCodeBatchId: i
     } = this.props;
     return e = Chunk647438 === Chunk474936.m8 ? Chunk388032.intl.string(Chunk388032.t.odsU6e) : Chunk647438 === Chunk474936.rX && null != require ? Chunk388032.intl.formatToPlainString(require.interval === Chunk474936.rV.MONTH ? Chunk388032.t.uZjpiI : Chunk388032.t.bJW1EB, {
       skuName: exports.name,
@@ -157,13 +160,13 @@ class P extends Chunk647438.PureComponent {
       entitlements: e,
       application: t,
       giftCodes: n,
-      className: s,
-      sku: a,
-      isFetching: l,
-      hideCodes: o,
+      className: a,
+      sku: o,
+      isFetching: s,
+      hideCodes: l,
       giftStyle: c
     } = this.props, {
-      isOpen: u
+      isOpen: d
     } = this.state;
     return (0, Chunk951288.jsxs)(Chunk189907.Z, {
       className: Chunk913527,
@@ -173,7 +176,7 @@ class P extends Chunk647438.PureComponent {
         onMouseEnter: () => this.setIsHovered(true),
         onMouseLeave: () => this.setIsHovered(false),
         children: (0, Chunk951288.jsx)(Chunk189907.Z.Header, {
-          splashArtURL: exports.getSplashURL(512),
+          splashArtURL: exports.getSplashURL(P),
           children: (0, Chunk951288.jsxs)("div", {
             className: Chunk669255.cardHeader,
             children: [(0, Chunk951288.jsxs)(Chunk600164.Z, {
@@ -185,7 +188,7 @@ class P extends Chunk647438.PureComponent {
               }) : (0, Chunk951288.jsx)(Chunk925329.Z, {
                 game: exports,
                 size: Chunk925329.Z.Sizes.MEDIUM,
-                skuId: a.id
+                skuId: o.id
               }), (0, Chunk951288.jsxs)("div", {
                 className: Chunk669255.headerText,
                 children: [this.renderTitle(), (0, Chunk951288.jsx)("div", {
@@ -205,60 +208,60 @@ class P extends Chunk647438.PureComponent {
         children: Chunk442837 ? (0, Chunk951288.jsx)(Chunk481060.$jN, {
           className: Chunk669255.spinner
         }) : (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
-          children: [require.length < module.length ? this.renderGenerateGiftCodeRow() : null, require.map(e => (0, i.jsx)(A, {
+          children: [require.length < module.length ? this.renderGenerateGiftCodeRow() : null, require.map(e => (0, r.jsx)(D, {
             giftCode: e,
-            sku: a,
-            hideCode: o
+            sku: o,
+            hideCode: l
           }, e.code))]
         })
       }) : null]
     })
   }
   constructor(...e) {
-    super(...e), y(this, "_loadedAt", null), y(this, "state", {
+    super(...e), R(this, "_loadedAt", null), R(this, "state", {
       isOpen: false,
       isCreating: false,
       isHovered: false
-    }), y(this, "handleGenerateGiftCode", async e => {
+    }), R(this, "handleGenerateGiftCode", async e => {
       e.stopPropagation();
       let {
         skuId: t,
         subscriptionPlanId: n,
-        giftStyle: i
+        giftStyle: r
       } = this.props;
       this.setState({
         isCreating: true
-      }), await u.Z.createGiftCode(t, n, i), this.setState({
+      }), await d.Z.createGiftCode(t, n, r), this.setState({
         isCreating: false,
         isOpen: true
       })
-    }), y(this, "handleToggleOpen", () => {
+    }), R(this, "handleToggleOpen", () => {
       let {
         skuId: e,
         subscriptionPlanId: t,
         loadedAt: n
-      } = this.props, i = !this.state.isOpen;
-      (null == n || null == this._loadedAt || n < this._loadedAt) && i && u.Z.fetchUserGiftCodesForSKU(e, t), this.setState({
+      } = this.props, r = !this.state.isOpen;
+      (null == n || null == this._loadedAt || n < this._loadedAt) && r && d.Z.fetchUserGiftCodesForSKU(e, t), this.setState({
         isOpen: !this.state.isOpen
       })
     })
   }
 }
-let R = Chunk442837.ZP.connectStores([Chunk55563.Z, Chunk246946.Z, Chunk82142.Z, Chunk812206.Z, Chunk509545.Z, Chunk314897.default], e => {
+let L = Chunk442837.ZP.connectStores([Chunk55563.Z, Chunk246946.Z, Chunk82142.Z, Chunk812206.Z, Chunk509545.Z, Chunk314897.default], e => {
   let {
     skuId: t,
     subscriptionPlanId: n,
-    giftStyle: i
-  } = e, r = E.Z.get(t);
-  if (null == r) throw Error("SKU was unavailable while rendering gift.");
-  let s = x.Z.getForGifterSKUAndPlan(b.default.getId(), t, n).filter(e => !e.isClaimed).filter(e => e.giftStyle === i);
+    giftStyle: r
+  } = e, i = O.Z.get(t);
+  if (null == i) throw Error("SKU was unavailable while rendering gift.");
+  let a = E.Z.getForGifterSKUAndPlan(g.default.getId(), t, n).filter(e => !e.isClaimed).filter(e => e.giftStyle === r);
   return {
-    sku: r,
-    hideCodes: _.Z.enabled,
-    isFetching: x.Z.getUserGiftCodesFetchingForSKUAndPlan(t, n),
-    loadedAt: x.Z.getUserGiftCodesLoadedAtForSKUAndPlan(t, n),
-    application: p.Z.getApplication(r.applicationId),
+    sku: i,
+    hideCodes: b.Z.enabled,
+    isFetching: E.Z.getUserGiftCodesFetchingForSKUAndPlan(t, n),
+    loadedAt: E.Z.getUserGiftCodesLoadedAtForSKUAndPlan(t, n),
+    application: _.Z.getApplication(i.applicationId),
     subscriptionPlan: null != n ? (0, S.oE)(n) : null,
-    giftCodes: s
+    giftCodes: a
   }
-})(P)
+})(x)

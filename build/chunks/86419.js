@@ -6,16 +6,16 @@ require.d(exports, {
   ES: () => w,
   M8: () => E,
   RZ: () => P,
-  X6: () => x,
-  kQ: () => k,
+  X6: () => L,
+  kQ: () => M,
   n$: () => R,
   np: () => O,
-  ou: () => V,
-  qH: () => N,
-  tk: () => M,
-  vH: () => L,
+  ou: () => Z,
+  qH: () => C,
+  tk: () => j,
+  vH: () => x,
   vI: () => g,
-  y8: () => C
+  y8: () => N
 }), require("./388685.js"), require("./642613.js"), require("./415506.js");
 var Chunk624238 = require("./624238.js"),
   Chunk296009 = require("./296009.js"),
@@ -125,14 +125,14 @@ function A(e, t) {
   return T([t, ...n])
 }
 
-function N(e) {
+function C(e) {
   let t = I();
   if (null != t.find(t => t.type === e)) return;
   let n = S(e);
   l.Z.setPendingWidgets(T([n, ...t]))
 }
 
-function C(e) {
+function N(e) {
   let t = I().filter(t => t.type !== e);
   l.Z.setPendingWidgets(t)
 }
@@ -185,7 +185,7 @@ function D(e, t) {
   l.Z.setPendingWidgets(i)
 }
 
-function L(e) {
+function x(e) {
   let t = e => ({
       game_id: e.applicationId,
       comment: e.comment,
@@ -200,7 +200,7 @@ function L(e) {
     }
   }
 }
-async function x() {
+async function L() {
   let e = Chunk224724.Z.getPendingWidgets();
   if (null !== module) try {
     await Chunk592183.Z.savePendingWidgets(module)
@@ -208,7 +208,7 @@ async function x() {
     console.error("Failed to save sample widgets:", module)
   }
 }
-async function M() {
+async function j() {
   try {
     await Chunk592183.Z.savePendingWidgets([])
   } catch (e) {
@@ -216,23 +216,23 @@ async function M() {
   }
 }
 
-function k(e) {
+function M(e) {
   let t = r.k[e.type];
   return e.games.length >= t
 }
 
-function j(e) {
+function k(e) {
   return null == e || "" === e || Array.isArray(e) && 0 === e.length ? null : e
 }
 
 function U(e, t) {
-  return e.applicationId === t.applicationId && j(e.comment) === j(t.comment)
+  return e.applicationId === t.applicationId && k(e.comment) === k(t.comment)
 }
 
 function G(e, t) {
   if (e.applicationId !== t.applicationId) returnfalse;
-  let n = j(e.tags),
-    r = j(t.tags);
+  let n = k(e.tags),
+    r = k(t.tags);
   return null === n && null === r || null !== n && null !== r && n.length === r.length && n.every((e, t) => e === r[t])
 }
 
@@ -240,7 +240,7 @@ function B(e, t) {
   return e.applicationId === t.applicationId
 }
 
-function V(e, t, n) {
+function Z(e, t, n) {
   let r;
   if (e.length !== t.length) returnfalse;
   switch (n) {

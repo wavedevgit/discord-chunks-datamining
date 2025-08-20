@@ -2,7 +2,7 @@
 /** chunk id: 64621, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => N
+  Z: () => C
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -29,34 +29,34 @@ let T = 200,
   S = 32,
   A = 30;
 
-function N(e) {
+function C(e) {
   let {
     sourceType: t,
     children: n,
-    user: N,
-    targetElementRef: C
+    user: C,
+    targetElementRef: N
   } = e, {
     themeType: R
   } = (0, m.z)(), P = (0, h.T)({
     location: "UserProfilePopoutInteractionCoachmark"
   }), w = (0, a.e7)([p.default], () => {
     var e;
-    return (null == (e = p.default.getCurrentUser()) ? true : e.id) === N.id
-  }), D = (0, a.e7)([_.Z], () => _.Z.findActivity(N.id, e => {
+    return (null == (e = p.default.getCurrentUser()) ? true : e.id) === C.id
+  }), D = (0, a.e7)([_.Z], () => _.Z.findActivity(C.id, e => {
     let {
       type: t
     } = e;
     return t === E.IIU.CUSTOM_STATUS
-  })), L = () => !w && R === b.l.POPOUT && (t === g.n_.AVATAR ? P && null == D : t === g.n_.STATUS ? P : t === g.n_.ACTIVITY && !P), [x, M] = i.useState(false);
-  (0, c.Z)(() => M(true), L() ? T : null);
+  })), x = () => !w && R === b.l.POPOUT && (t === g.n_.AVATAR ? P && null == D : t === g.n_.STATUS ? P : t === g.n_.ACTIVITY && !P), [L, j] = i.useState(false);
+  (0, c.Z)(() => j(true), x() ? T : null);
   let {
-    asset: k,
-    assetClassName: j,
+    asset: M,
+    assetClassName: k,
     className: U,
     content: G,
     header: B,
-    spacing: V,
-    dismissibleContentType: F
+    spacing: Z,
+    dismissibleContentType: V
   } = P ? {
     asset: I,
     assetClassName: O.profileImage,
@@ -73,13 +73,13 @@ function N(e) {
     header: y.intl.string(y.t.XDBiPT),
     spacing: S,
     dismissibleContentType: o.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK_ACTIVITY
-  }, Z = (0, u.Nj)(o.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK), H = x && !Z ? [F] : [], [Y, W] = (0, d.US)(H);
+  }, F = (0, u.Nj)(o.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK), H = L && !F ? [V] : [], [Y, W] = (0, d.US)(H);
   return (0, r.jsx)(l.yRy, {
-    targetElementRef: C,
+    targetElementRef: N,
     align: "center",
     position: t === g.n_.AVATAR ? "left" : "right",
     shouldShow: null != Y,
-    spacing: V,
+    spacing: Z,
     renderPopout: e => {
       let {
         position: t,
@@ -94,8 +94,8 @@ function N(e) {
           className: U,
           asset: (0, r.jsx)("img", {
             alt: "",
-            src: k,
-            className: j
+            src: M,
+            className: k
           }),
           buttonCTA: y.intl.string(y.t["+IrDzM"]),
           buttonLayout: f._F.STACKED,

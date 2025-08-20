@@ -1,4 +1,4 @@
-/** Chunk was on 36499 **/
+/** Chunk was on 5665 **/
 /** chunk id: 368478, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   J: () => y,
@@ -26,21 +26,21 @@ function b(e) {
     application: a,
     showAppLauncherPopup: s = false
   } = e, [p, b] = r.useState(false), y = (0, i.e7)([l.ZP], () => l.ZP.getCurrentEmbeddedActivity()), _ = s ? g.t.cpT0Cg : g.t["0hKkS0"], C = r.useMemo(() => null != n ? (0, d.XZ)(n.displayName) : g.intl.string(g.t["3xjX0d"]), [n]), x = true !== a.flags && (0, f.yE)(a.flags, m.udG.EMBEDDED), v = null != y && y.applicationId === a.id && (0, o.p)(y.location) === t.channel.id, {
-    analyticsLocations: j
-  } = (0, u.ZP)(c.Z.APP_DMS_ENTRY_POINT_COMMAND_BUTTON), O = null != t.channel.recipients ? t.channel.recipients[0] : true;
+    analyticsLocations: O
+  } = (0, u.ZP)(c.Z.APP_DMS_ENTRY_POINT_COMMAND_BUTTON), j = null != t.channel.recipients ? t.channel.recipients[0] : true;
   return {
     isExecutingLaunchInteraction: p,
     buttonText: (0, h.ms)({
       context: t,
       applicationId: a.id,
-      botUserId: O
+      botUserId: j
     }) && x ? v ? g.intl.string(g.t["Hi1/aW"]) : null != C ? C : g.intl.string(g.t.zKX8Nj) : g.intl.string(_),
     hasActiveMatchingEmbeddedActivity: v,
     isEmbeddedApp: x,
     currentEmbeddedActivity: y,
-    channelRecipientUserId: O,
+    channelRecipientUserId: j,
     setIsExecutingLaunchInteraction: b,
-    analyticsLocations: j
+    analyticsLocations: O
   }
 }
 

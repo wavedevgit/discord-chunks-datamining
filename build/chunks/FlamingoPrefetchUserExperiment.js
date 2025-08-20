@@ -1,8 +1,9 @@
-/** Chunk was on 96750 **/
-/** chunk id: 967021, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 967021, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   HM: () => i,
-  J_: () => l
+  J_: () => a
 });
 let r = (0, require("./818083.js").B)({
   kind: "user",
@@ -44,18 +45,18 @@ function i(e) {
   return i
 }
 
-function l(e) {
+function a(e) {
   let {
     location: t,
     autoTrackExposure: n,
     disable: i
   } = e, {
-    isDownloadIconEnabled: l
+    isDownloadIconEnabled: a
   } = r.useExperiment({
     location: t
   }, {
     autoTrackExposure: n,
     disable: __OVERLAY__ || i
   });
-  return l
+  return a
 }

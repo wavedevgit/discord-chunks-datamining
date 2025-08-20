@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 710220, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 710220, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => c
+  Z: () => f
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -11,53 +12,59 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk215062 = require("./215062.js");
 
-function c(e) {
+function c(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function u(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      c(e, t, n[t])
+    })
+  }
+  return e
+}
+let d = e => null != e.globalName ? e.globalName : e.username;
+
+function f(e) {
   let {
     referrer: t,
     enablePremiumBrandRefresh: n
   } = e, {
     avatarSrc: c,
-    eventHandlers: d
-  } = (0, s.Z)({
+    eventHandlers: f
+  } = (0, a.Z)({
     userId: null == t ? true : t.id,
-    size: n ? a.EF.SIZE_24 : a.EF.SIZE_32,
+    size: n ? o.EF.SIZE_24 : o.EF.SIZE_32,
     animateOnHover: true
   });
-  return (0, i.jsx)("div", {
-    className: o.attributionBannerContainerRebranded,
-    children: (0, i.jsxs)("div", {
-      className: o.attributionBannerContentApplicationHomeRebranded,
-      children: [(0, i.jsx)("div", {
-        className: o.iconContainerApplicationHome,
-        children: (0, i.jsx)(r.qEK, function(e) {
-          for (var t = 1; t < arguments.length; t++) {
-            var n = null != arguments[t] ? arguments[t] : {},
-              i = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-              return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), i.forEach(function(t) {
-              var i;
-              i = n[t], t in e ? Object.defineProperty(e, t, {
-                value: i,
-                enumerable: true,
-                configurable: true,
-                writable: true
-              }) : e[t] = i
-            })
-          }
-          return e
-        }({
-          className: o.icon,
+  return (0, r.jsx)("div", {
+    className: l.attributionBannerContainerRebranded,
+    children: (0, r.jsxs)("div", {
+      className: l.attributionBannerContentApplicationHomeRebranded,
+      children: [(0, r.jsx)("div", {
+        className: l.iconContainerApplicationHome,
+        children: (0, r.jsx)(i.qEK, u({
+          className: l.icon,
           src: c,
           "aria-label": t.username,
-          size: a.EF.SIZE_32
-        }, d))
-      }), (0, i.jsx)(r.X6q, {
+          size: o.EF.SIZE_32
+        }, f))
+      }), (0, r.jsx)(i.X6q, {
         variant: "heading-sm/normal",
-        className: o.textContainerRebranded,
+        className: l.textContainerRebranded,
         color: "header-primary",
-        children: l.intl.format(l.t.IqxblZ, {
-          username: null != t.globalName ? t.globalName : t.username
+        children: s.intl.format(s.t.IqxblZ, {
+          username: d(t)
         })
       })]
     })

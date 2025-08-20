@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 914677, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 914677, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => d
+  Z: () => E
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -9,130 +10,139 @@ var Chunk951288 = require("./951288.js"),
   Chunk410030 = require("./410030.js"),
   Chunk119269 = require("./119269.jsx"),
   Chunk106742 = require("./106742.js");
-let c = "url(#gradient)",
-  d = e => {
+let c = "0.3",
+  u = "0.2",
+  d = "var(--premium-tier-2-purple)",
+  f = "var(--background-base-low)",
+  _ = "url(#gradient)",
+  p = "url(#gradient_nitro_logo)",
+  h = (e, t) => {
+    switch (e) {
+      case s.Qo.NITRO_LOGO:
+        return t ? c : u;
+      case s.Qo.NITRO_GEM:
+      case s.Qo.AVATAR_DECO:
+      default:
+        return
+    }
+  },
+  m = e => {
+    switch (e) {
+      case s.Qo.NITRO_GEM:
+      case s.Qo.AVATAR_DECO:
+        return f;
+      case s.Qo.NITRO_LOGO:
+        return d;
+      default:
+        return
+    }
+  },
+  g = (e, t) => {
+    switch (t) {
+      case s.Qo.NITRO_GEM:
+      case s.Qo.AVATAR_DECO:
+        return _;
+      case s.Qo.NITRO_LOGO:
+        return e ? p : _;
+      default:
+        return
+    }
+  },
+  E = e => {
     let {
       percentage: t = 0,
       children: n,
-      animationClassName: d,
+      animationClassName: c,
       initialPercentage: u = 0,
-      progressCircleStrokeSize: m = 2,
-      progressCircleVariation: p,
-      progressCircleStroke: g
-    } = e, h = 43 + m / 2, f = 2 * Math.PI * h, [b, x] = r.useState(u);
-    r.useEffect(() => {
+      progressCircleStrokeSize: d = 2,
+      progressCircleVariation: f,
+      progressCircleStroke: _
+    } = e, p = 43 + d / 2, E = 2 * Math.PI * p, [b, y] = i.useState(u);
+    i.useEffect(() => {
       let e = setTimeout(() => {
-        x(t)
+        y(t)
       }, 200);
       return () => clearTimeout(e)
     }, [t]);
-    let _ = (0, a.ZP)(),
-      j = (0, s.ap)(_),
-      E = (e => {
-        switch (e) {
-          case l.Qo.NITRO_GEM:
-          case l.Qo.AVATAR_DECO:
-            return "var(--background-base-low)";
-          case l.Qo.NITRO_LOGO:
-            return "var(--premium-tier-2-purple)";
-          default:
-            return
-        }
-      })(p),
-      C = ((e, t) => {
-        switch (e) {
-          case l.Qo.NITRO_LOGO:
-            return t ? "0.3" : "0.2";
-          case l.Qo.NITRO_GEM:
-          case l.Qo.AVATAR_DECO:
-          default:
-            return
-        }
-      })(p, j),
-      O = null != g ? g : ((e, t) => {
-        switch (t) {
-          case l.Qo.NITRO_GEM:
-          case l.Qo.AVATAR_DECO:
-            return c;
-          case l.Qo.NITRO_LOGO:
-            return e ? "url(#gradient_nitro_logo)" : c;
-          default:
-            return
-        }
-      })(j, p);
-    return (0, i.jsxs)("div", {
-      className: o.circleContainer,
-      children: [(0, i.jsxs)("svg", {
+    let O = (0, o.ZP)(),
+      v = (0, a.ap)(O),
+      I = (1 - b / 100) * E,
+      T = m(f),
+      S = h(f, v),
+      A = null != _ ? _ : g(v, f);
+    return (0, r.jsxs)("div", {
+      className: l.circleContainer,
+      children: [(0, r.jsxs)("svg", {
         viewBox: "0 0 100 100",
-        className: o.circleSVG,
-        children: [(0, i.jsx)("circle", {
-          className: p === l.Qo.NITRO_GEM || p === l.Qo.AVATAR_DECO ? o.baseProgressCircle : true,
+        className: l.circleSVG,
+        children: [(0, r.jsx)("circle", {
+          className: f === s.Qo.NITRO_GEM || f === s.Qo.AVATAR_DECO ? l.baseProgressCircle : true,
           fill: "transparent",
-          strokeWidth: m,
-          r: "".concat(h),
+          strokeWidth: d,
+          r: "".concat(p),
           cx: "50%",
           cy: "50%",
-          stroke: E,
-          strokeOpacity: C
-        }), (0, i.jsx)("circle", {
-          stroke: O,
-          strokeWidth: m,
+          stroke: T,
+          strokeOpacity: S
+        }), (0, r.jsx)("circle", {
+          stroke: A,
+          strokeWidth: d,
           strokeLinecap: "round",
-          strokeDasharray: "".concat(f, " ").concat(f),
-          className: d,
+          strokeDasharray: "".concat(E, " ").concat(E),
+          className: c,
           style: {
-            strokeDashoffset: (1 - b / 100) * f
+            strokeDashoffset: I
           },
-          r: "".concat(h),
+          r: "".concat(p),
           cx: "50%",
           cy: "50%"
         })]
-      }), (0, i.jsxs)("svg", {
+      }), (0, r.jsxs)("svg", {
         width: "0",
         height: "0",
-        children: [(0, i.jsxs)("linearGradient", {
+        children: [(0, r.jsxs)("linearGradient", {
           id: "gradient",
           x1: "0%",
           y1: "0%",
           x2: "100%",
           y2: "100%",
-          children: [(0, i.jsx)("stop", {
+          children: [(0, r.jsx)("stop", {
             offset: "0%",
             style: {
               stopColor: "#FFBDF2"
             }
-          }), (0, i.jsx)("stop", {
+          }), (0, r.jsx)("stop", {
             offset: "100%",
             style: {
               stopColor: "#E742E1"
             }
           })]
-        }), (0, i.jsxs)("linearGradient", {
+        }), (0, r.jsxs)("linearGradient", {
           id: "gradient_nitro_logo",
           x1: "2.99995",
           y1: "67.6298",
           x2: "132.55",
           y2: "67.6298",
           gradientUnits: "userSpaceOnUse",
-          children: [(0, i.jsx)("stop", {
+          children: [(0, r.jsx)("stop", {
             stopColor: "#F9A0E8"
-          }), (0, i.jsx)("stop", {
+          }), (0, r.jsx)("stop", {
             offset: "1",
             stopColor: "#E742E1"
           })]
-        }), (0, i.jsxs)("linearGradient", {
+        }), (0, r.jsxs)("linearGradient", {
           id: "dark-purple-gradient",
           x1: "0%",
           y1: "0%",
           x2: "100%",
           y2: "0%",
-          children: [(0, i.jsx)("stop", {
+          children: [(0, r.jsx)("stop", {
             offset: "0%",
             style: {
               stopColor: "#241731",
               stopOpacity: 1
             }
-          }), (0, i.jsx)("stop", {
+          }), (0, r.jsx)("stop", {
             offset: "100%",
             style: {
               stopColor: "#241731",
@@ -140,8 +150,8 @@ let c = "url(#gradient)",
             }
           })]
         })]
-      }), (0, i.jsx)("div", {
-        className: o.childrenContainer,
+      }), (0, r.jsx)("div", {
+        className: l.childrenContainer,
         children: n
       })]
     })

@@ -1,8 +1,8 @@
 /** Chunk was on 24209 **/
 /** chunk id: 867581, original params: e,t,n (module,exports,require) **/
-let r, i;
+let r, o;
 require.d(exports, {
-  Z: () => h
+  Z: () => w
 }), require("./388685.js"), require("./781311.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -21,56 +21,56 @@ var Chunk951288 = require("./951288.js"),
   Chunk604509 = require("./604509.js"),
   Chunk216019 = require("./216019.js"),
   Chunk286359 = require("./286359.js");
-let C = "hTKzmak",
-  b = (0, Chunk313201.hQ)(),
-  g = (r = window.GLOBAL_ENV.INVITE_HOST, i = "", null == r && (r = location.host, i = Chunk981631.Z5c.INVITE("")), "".concat(location.protocol, "//").concat(r).concat(i, "/")),
-  L = [C, "".concat(g).concat(C), "".concat(g).concat("wumpus-friends")],
-  D = e => {
+let E = "hTKzmak",
+  C = (0, Chunk313201.hQ)(),
+  x = (r = window.GLOBAL_ENV.INVITE_HOST, o = "", null == r && (r = location.host, o = Chunk981631.Z5c.INVITE("")), "".concat(location.protocol, "//").concat(r).concat(o, "/")),
+  h = [E, "".concat(x).concat(E), "".concat(x).concat("wumpus-friends")],
+  g = e => {
     let {
       onClick: t
     } = e;
     return (0, l.jsxs)(u.P3F, {
-      className: E.rowContainer,
+      className: b.rowContainer,
       onClick: () => {
         t(), (0, f.uL)(N.Z5c.GUILD_DISCOVERY)
       },
       children: [(0, l.jsx)("img", {
         width: 40,
         height: 40,
-        className: E.rowIcon,
+        className: b.rowIcon,
         alt: "",
         src: O
       }), (0, l.jsxs)("div", {
         children: [(0, l.jsx)(u.X6q, {
-          className: E.rowText,
+          className: b.rowText,
           variant: "heading-md/semibold",
           children: T.intl.string(T.t.DwDxDQ)
         }), (0, l.jsx)(u.Text, {
-          className: E.rowText,
+          className: b.rowText,
           variant: "text-xs/normal",
           children: T.intl.string(T.t["5RL4CA"])
         })]
       }), (0, l.jsx)("img", {
-        className: E.rowArrow,
+        className: b.rowArrow,
         alt: "",
         src: S
       })]
     })
   };
 
-function h(e) {
+function w(e) {
   let {
     onBack: t,
     onClose: n,
     isSlideReady: r
-  } = e, [i, a] = o.useState(""), [p, f] = o.useState(false), [N, S] = o.useState(null), O = o.useRef(null);
-  o.useEffect(() => {
+  } = e, [o, a] = i.useState(""), [p, f] = i.useState(false), [N, S] = i.useState(null), O = i.useRef(null);
+  i.useEffect(() => {
     var e;
     r && (null == (e = O.current) || e.focus())
   }, [r]);
-  let h = e => {
+  let w = e => {
     e.preventDefault();
-    let t = i.trim();
+    let t = o.trim();
     if ("" === t) return void S(T.intl.string(T.t.IRq5am));
     S(null), f(true);
     let r = t.split("/"),
@@ -102,11 +102,11 @@ function h(e) {
   };
   return (0, l.jsxs)("div", {
     children: [(0, l.jsxs)(u.xBx, {
-      className: E.header,
+      className: b.header,
       direction: m.Z.Direction.VERTICAL,
       separator: false,
       children: [(0, l.jsx)(u.X6q, {
-        className: E.title,
+        className: b.title,
         variant: "heading-xl/semibold",
         children: T.intl.string(T.t.riOUtL)
       }), (0, l.jsx)(u.Text, {
@@ -114,51 +114,51 @@ function h(e) {
         variant: "text-sm/normal",
         children: T.intl.string(T.t["7jub2t"])
       }), (0, l.jsx)(u.olH, {
-        className: E.closeButton,
+        className: b.closeButton,
         onClick: n
       })]
     }), (0, l.jsxs)(u.hzk, {
-      className: E.__invalid_content,
+      className: b.__invalid_content,
       children: [(0, l.jsx)("form", {
-        onSubmit: h,
-        className: E.inputForm,
+        onSubmit: w,
+        className: b.inputForm,
         children: (0, l.jsxs)(u.xJW, {
           children: [(0, l.jsx)(u.vwX, {
-            id: b,
+            id: C,
             error: N,
-            className: s()(E.formTitle, {
-              [E.error]: null != N
+            className: s()(b.formTitle, {
+              [b.error]: null != N
             }),
             required: true,
             children: T.intl.string(T.t.qreV29)
           }), (0, l.jsx)(u.oil, {
-            value: i,
+            value: o,
             onChange: a,
-            placeholder: "".concat(g).concat(C),
+            placeholder: "".concat(x).concat(E),
             inputRef: O,
             required: true,
-            "aria-labelledby": b
+            "aria-labelledby": C
           })]
         })
       }), (0, l.jsx)(u.xJW, {
         title: T.intl.string(T.t.Bnq46O),
-        titleClassName: E.formTitle,
-        className: E.examplesForm,
-        children: L.map(e => (0, l.jsx)(u.P3F, {
-          className: E.sampleLink,
+        titleClassName: b.formTitle,
+        className: b.examplesForm,
+        children: h.map(e => (0, l.jsx)(u.P3F, {
+          className: b.sampleLink,
           onClick: () => a(e),
           children: e
         }, e))
-      }), (0, l.jsx)(D, {
+      }), (0, l.jsx)(g, {
         onClick: n
       })]
     }), (0, l.jsxs)(u.mzw, {
-      className: E.footer,
+      className: b.footer,
       children: [(0, l.jsx)(u.zxk, {
         variant: "primary",
         text: T.intl.string(T.t["Ts/9AQ"]),
         loading: p,
-        onClick: h
+        onClick: w
       }), (0, l.jsx)(c.zx, {
         color: c.zx.Colors.PRIMARY,
         look: c.zx.Looks.LINK,

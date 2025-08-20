@@ -63,7 +63,7 @@ function B(e) {
   return e
 }
 
-function V(e, t) {
+function Z(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -74,13 +74,13 @@ function V(e, t) {
   return n
 }
 
-function F(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : V(Object(t)).forEach(function(n) {
+function V(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : Z(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function Z(e) {
+function F(e) {
   let {
     emojiTooltipPosition: t = "top",
     enableEmojiClick: n = true
@@ -121,7 +121,7 @@ function H(e) {
       } = a, d = _.ZP.getDisambiguatedEmojiContext(s).getById(e.emojiId);
       if (null != d) {
         let t = d.require_colons;
-        e = F(B({}, e), {
+        e = V(B({}, e), {
           name: t ? ":".concat(d.name, ":") : d.name
         })
       }
@@ -141,18 +141,18 @@ function Y(e, t, n) {
   let r = T.Z.getGuild(e);
   if (null == e || null == r) return;
   let i = t => {
-    r.features.has(M.oNc.COMMUNITY) && (0, O.uL)(M.Z5c.CHANNEL(e, t))
+    r.features.has(j.oNc.COMMUNITY) && (0, O.uL)(j.Z5c.CHANNEL(e, t))
   };
   switch (t) {
     case "home":
     case "guide":
-      i(k.oC.GUILD_HOME);
+      i(M.oC.GUILD_HOME);
       break;
     case "browse":
-      i(k.oC.CHANNEL_BROWSER);
+      i(M.oC.CHANNEL_BROWSER);
       break;
     case "customize":
-      i(k.oC.CUSTOMIZE_COMMUNITY);
+      i(M.oC.CUSTOMIZE_COMMUNITY);
       break;
     case "linked-roles":
       if (null != n) {
@@ -195,9 +195,9 @@ require("./324509.js");
 let K = {
   blockQuote: {
     react: (e, t, n) => (0, r.jsxs)("div", {
-      className: j.blockquoteContainer,
+      className: k.blockquoteContainer,
       children: [(0, r.jsx)("div", {
-        className: j.blockquoteDivider
+        className: k.blockquoteDivider
       }), (0, r.jsx)("blockquote", {
         children: t(e.content, n)
       })]
@@ -233,9 +233,9 @@ let K = {
       });
       return (0, r.jsx)("pre", {
         children: (0, r.jsxs)("div", {
-          className: j.codeContainer,
+          className: k.codeContainer,
           children: [S.wS ? (0, r.jsx)("div", {
-            className: j.codeActions,
+            className: k.codeActions,
             children: (0, r.jsx)(W, {
               text: e.content
             })
@@ -301,7 +301,7 @@ let K = {
     }
   },
   timestamp: {
-    react: (e, t, n) => (0, r.jsx)(N.Z, {
+    react: (e, t, n) => (0, r.jsx)(C.Z, {
       node: e
     }, n.key)
   },
@@ -311,7 +311,7 @@ let K = {
         a = null == e.start ? true : (e.start + (e.items.length - 1)).toString().length;
       return (0, s.reactElement)(i, "".concat(n.key), {
         start: e.start,
-        className: n.formatInline ? j.inlineFormat : null,
+        className: n.formatInline ? k.inlineFormat : null,
         style: {
           "--totalCharacters": a
         },
@@ -337,7 +337,7 @@ let K = {
         children: [i, (0, r.jsx)(l.nn4, {
           children: ","
         }, "screen-reader-pause")],
-        className: n.formatInline ? j.inlineFormat : null
+        className: n.formatInline ? k.inlineFormat : null
       })
     }
   },
@@ -366,7 +366,7 @@ let K = {
       });
       return (0, s.reactElement)("small", (null == n ? true : n.key) != null ? "".concat(n.key) : null, {
         children: r,
-        className: n.formatInline ? j.inlineFormat : null
+        className: n.formatInline ? k.inlineFormat : null
       })
     }
   },
@@ -380,15 +380,15 @@ let K = {
 };
 
 function z(e) {
-  return F(B({}, K), {
-    link: (0, L.Z)(e),
+  return V(B({}, K), {
+    link: (0, x.Z)(e),
     devLink: (0, w.Z)(e),
-    emoji: Z(e),
+    emoji: F(e),
     customEmoji: H(e),
     channelMention: (0, R.Z)(e),
     commandMention: (0, P.ZP)(e),
-    attachmentLink: (0, C.Z)(e),
-    shopLink: (0, x.Z)(e),
+    attachmentLink: (0, N.Z)(e),
+    shopLink: (0, L.Z)(e),
     gameMention: D.Z
   })
 }

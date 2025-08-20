@@ -1,9 +1,10 @@
-/** Chunk was on 30243 **/
-/** chunk id: 870456, original params: e,t,r (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 870456, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  u: () => n
+  u: () => r
 });
-let n = {
+let r = {
   allowList: true,
   allowHeading: true,
   allowLinks: true,

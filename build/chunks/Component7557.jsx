@@ -1,16 +1,17 @@
-/** Chunk was on 76540 **/
-/** chunk id: 7557, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 7557, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   Z: () => p
 }), require("./388685.js"), require("./539854.js");
-var s, i, Chunk951288 = require("./951288.js"),
+var r, i, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk600164 = require("./600164.jsx"),
   Chunk501640 = require("./501640.js");
 
-function u(e, t, n) {
+function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -18,14 +19,14 @@ function u(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class d extends(s = Chunk647438.PureComponent) {
+class f extends(r = Chunk647438.PureComponent) {
   render() {
     let {
       className: e
     } = this.props;
     return (0, Chunk951288.jsx)("input", {
       ref: this.setCodeBlockRef,
-      className: a()(Chunk501640.input, module),
+      className: l()(Chunk501640.input, module),
       maxLength: 1,
       value: null != this.props.code ? this.props.code : true,
       autoFocus: this.props.autoFocus,
@@ -42,17 +43,17 @@ class d extends(s = Chunk647438.PureComponent) {
     null == (e = this._codeBlockRef) || module.blur()
   }
   constructor(...e) {
-    super(...e), u(this, "_codeBlockRef", true), u(this, "setCodeBlockRef", e => {
+    super(...e), d(this, "_codeBlockRef", true), d(this, "setCodeBlockRef", e => {
       this._codeBlockRef = e
-    }), u(this, "handleKeyDown", e => {
+    }), d(this, "handleKeyDown", e => {
       let t = 8 === e.which || 37 === e.which || 39 === e.which,
         n = e.which >= 48 && e.which <= 57 || e.keyCode >= 96 && e.keyCode <= 105;
       t || n || e.preventDefault();
       let {
-        onKeyDown: s
+        onKeyDown: r
       } = this.props;
-      null == s || s(e)
-    }), u(this, "handleChange", e => {
+      null == r || r(e)
+    }), d(this, "handleChange", e => {
       let {
         onChange: t
       } = this.props;
@@ -60,20 +61,20 @@ class d extends(s = Chunk647438.PureComponent) {
     })
   }
 }
-u(d, "defaultProps", {
+d(f, "defaultProps", {
   autoFocus: false
 });
-class E extends(i = Chunk647438.PureComponent) {
+class _ extends(i = Chunk647438.PureComponent) {
   render() {
     let {
       className: e,
       inputClassName: t
     } = this.props, {
       codes: n
-    } = this.state, s = [];
-    for (let e = 0; module < require.length; module++) module === require.length / 2 && s.push((0, Chunk951288.jsx)("div", {
+    } = this.state, r = [];
+    for (let e = 0; module < require.length; module++) module === require.length / 2 && r.push((0, Chunk951288.jsx)("div", {
       className: Chunk501640.spacer
-    }, "spacer")), s.push((0, Chunk951288.jsx)(d, {
+    }, "spacer")), r.push((0, Chunk951288.jsx)(f, {
       ref: t => this.setCodeBlockRef(e, t),
       code: require[module],
       autoFocus: 0 === module,
@@ -85,7 +86,7 @@ class E extends(i = Chunk647438.PureComponent) {
       align: Chunk600164.Z.Align.CENTER,
       justify: Chunk600164.Z.Justify.CENTER,
       className: module,
-      children: s
+      children: r
     })
   }
   setCodeBlockRef(e, t) {
@@ -107,8 +108,8 @@ class E extends(i = Chunk647438.PureComponent) {
     if (8 === t.which && e > 0 && (null == n[e] || 0 === n[e].length)) {
       let t = e - 1;
       n[t] = "";
-      let s = this._codeBlockRefs[t];
-      null == s || s.focus()
+      let r = this._codeBlockRefs[t];
+      null == r || r.focus()
     }
   }
   getCodeOrFirstEmptyIndex() {
@@ -128,12 +129,12 @@ class E extends(i = Chunk647438.PureComponent) {
     null == t || t(e)
   }
   constructor(e) {
-    super(e), u(this, "_codeBlockRefs", Array(this.props.count)), this.state = {
+    super(e), d(this, "_codeBlockRefs", Array(this.props.count)), this.state = {
       codes: Array(e.count)
     }
   }
 }
-u(E, "defaultProps", {
+d(_, "defaultProps", {
   count: 6
 });
-let p = E
+let p = _

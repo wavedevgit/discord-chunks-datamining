@@ -422,21 +422,21 @@ class y {
       T = null != (s = e.hasMoreBefore) && s,
       S = null != (l = e.hasMoreAfter) && l,
       A = null != (u = e.avoidInitialScroll) && u,
-      N = null != (d = e.cached) && d,
-      C = i()(y).reverse().map(a.Z.getCurrentConfig({
+      C = null != (d = e.cached) && d,
+      N = i()(y).reverse().map(a.Z.getCurrentConfig({
         location: "2ecb25_2"
       }, {
         autoTrackExposure: false
       }).enabled ? e => (0, c.e5)(e) : e => E(this, e)).value(),
       R = null;
-    if ((O || v) && null == I && this.ready) R = this.merge(C, O, true);
+    if ((O || v) && null == I && this.ready) R = this.merge(N, O, true);
     else {
       let e = this._array.filter(e => e.state === f.yb.SENDING),
         t = this._array.filter(e => e.state === f.yb.SEND_FAILED),
         n = e.length > 0 || t.length > 0;
-      R = this.reset(C), !n || O || v || (null == I ? true : I.messageId) != null || (null == I ? true : I.offset) != null ? h.info("loadComplete: resetting state for channelId=".concat(this.channelId, ", sending.length=").concat(e.length)) : (t.length > 0 && (h.info("loadComplete: merging with SEND_FAILED messages for channelId=".concat(this.channelId)), R = R.merge(t)), e.length > 0 && (h.info("loadComplete: merging with SENDING messages for channelId=".concat(this.channelId)), R = R.merge(e)))
+      R = this.reset(N), !n || O || v || (null == I ? true : I.messageId) != null || (null == I ? true : I.offset) != null ? h.info("loadComplete: resetting state for channelId=".concat(this.channelId, ", sending.length=").concat(e.length)) : (t.length > 0 && (h.info("loadComplete: merging with SEND_FAILED messages for channelId=".concat(this.channelId)), R = R.merge(t)), e.length > 0 && (h.info("loadComplete: merging with SENDING messages for channelId=".concat(this.channelId)), R = R.merge(e)))
     }
-    let P = !N && R.cached && !A;
+    let P = !C && R.cached && !A;
     return R.mutate({
       ready: true,
       loadingMore: false,
@@ -450,7 +450,7 @@ class y {
       jumpReturnTargetId: null != (b = null == I ? true : I.returnMessageId) ? b : null,
       hasMoreBefore: null == I && v ? R.hasMoreBefore : T,
       hasMoreAfter: null == I && O ? R.hasMoreAfter : S,
-      cached: N,
+      cached: C,
       hasFetched: e.hasFetched,
       error: false,
       initialScrollSequenceId: P ? R.initialScrollSequenceId + 1 : R.initialScrollSequenceId

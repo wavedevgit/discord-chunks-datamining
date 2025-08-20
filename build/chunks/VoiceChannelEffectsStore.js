@@ -21,8 +21,8 @@ let p = [],
       userId: e
     })
   },
-  S = [],
-  v = 10 * Chunk70956.Z.Millis.SECOND,
+  v = [],
+  S = 10 * Chunk70956.Z.Millis.SECOND,
   h = (0, Chunk392711.debounce)(() => {
     let e = (0, Chunk963838.cX)(E);
     Chunk780384.uv.announce(module, "polite"), E = []
@@ -76,10 +76,10 @@ let O = new b(Chunk570140.Z, {
   },
   VOICE_CHANNEL_EFFECT_SENT_LOCAL: () => {
     let e = new Date;
-    if ((S = [module, ...S].slice(0, 20)).length >= 20) {
-      let t = S[S.length - 1],
+    if ((v = [module, ...v].slice(0, 20)).length >= 20) {
+      let t = v[v.length - 1],
         n = module.getTime() - exports.getTime();
-      require < v && (r = new Date(module.getTime() + v - require))
+      require < S && (r = new Date(module.getTime() + S - require))
     }
   },
   VOICE_CHANNEL_EFFECT_UPDATE_TIME_STAMP: e => {

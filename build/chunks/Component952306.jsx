@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 952306, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 952306, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => o
+  Z: () => c
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -9,34 +10,37 @@ var Chunk481060 = require("./481060.js"),
   Chunk723359 = require("./723359.js"),
   Chunk231338 = require("./231338.js");
 
+function s(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
 function l(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      i = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), i.forEach(function(t) {
-      var i;
-      i = n[t], t in e ? Object.defineProperty(e, t, {
-        value: i,
-        enumerable: true,
-        configurable: true,
-        writable: true
-      }) : e[t] = i
+    }))), r.forEach(function(t) {
+      s(e, t, n[t])
     })
   }
   return e
 }
-let o = {
+let c = {
   openNewUserAgeGateModal: e => {
-    (0, r.ZDy)(async () => {
+    (0, i.ZDy)(async () => {
       let {
         default: e
       } = await Promise.all([n.e("71172"), n.e("1337"), n.e("75816")]).then(n.bind(n, 298237));
-      return t => (0, i.jsx)(e, l({}, t))
+      return t => (0, r.jsx)(e, l({}, t))
     }, {
-      modalKey: s.$$,
-      onCloseRequest: a.dG,
+      modalKey: a.$$,
+      onCloseRequest: o.dG,
       onCloseCallback: e
     })
   },
@@ -47,7 +51,7 @@ let o = {
       let {
         default: t
       } = await require.e("60827").then(require.bind(require, 324239));
-      return n => (0, i.jsx)(t, l({
+      return n => (0, r.jsx)(t, l({
         claimRequired: e
       }, n))
     }, {

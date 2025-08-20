@@ -1,8 +1,8 @@
 /** Chunk was on 73628 **/
 /** chunk id: 776045, original params: e,t,A (module,exports,require) **/
 require.d(exports, {
-  A: () => c,
-  default: () => d
+  A: () => d,
+  default: () => c
 }), require("./388685.js");
 var n, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -10,37 +10,37 @@ var n, Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk86054 = require("./86054.js"),
-  c = ((n = {}).DANGER = "danger", n.WARNING = "warning", n);
+  d = ((n = {}).DANGER = "danger", n.WARNING = "warning", n);
 
-function d(e) {
+function c(e) {
   let {
     transitionState: t,
     onClose: A,
     title: n,
-    body: c,
-    cta: d,
+    body: d,
+    cta: c,
     closeLabel: u,
-    onConfirm: g,
-    iconVariant: f = "warning"
-  } = e, [p, h] = a.useState(false), m = async () => {
-    h(true);
+    onConfirm: f,
+    iconVariant: g = "warning"
+  } = e, [p, m] = l.useState(false), h = async () => {
+    m(true);
     try {
-      await g(), A()
+      await f(), A()
     } finally {
-      h(false)
+      m(false)
     }
-  }, v = null != n ? n : o.intl.string(o.t.D94rwc);
-  return (0, r.jsxs)(i.Y0X, {
+  }, b = null != n ? n : i.intl.string(i.t.D94rwc);
+  return (0, r.jsxs)(o.Y0X, {
     className: s.__invalid_container,
-    size: i.CgR.DYNAMIC,
+    size: o.CgR.DYNAMIC,
     transitionState: t,
-    "aria-label": v,
+    "aria-label": b,
     parentComponent: "WarningModal",
-    children: [(0, r.jsxs)(i.hzk, {
+    children: [(0, r.jsxs)(o.hzk, {
       className: s.content,
       children: [(0, r.jsxs)("div", {
         className: s.header,
-        children: [(0, r.jsx)(i.Mgn, {
+        children: [(0, r.jsx)(o.Mgn, {
           size: "custom",
           color: "currentColor",
           width: 20,
@@ -52,35 +52,35 @@ function d(e) {
               case "warning":
                 return s.warningIcon
             }
-          }(f)
-        }), (0, r.jsx)(i.LZC, {
+          }(g)
+        }), (0, r.jsx)(o.LZC, {
           size: 8,
           horizontal: true
-        }), (0, r.jsx)(i.X6q, {
+        }), (0, r.jsx)(o.X6q, {
           variant: "heading-xl/semibold",
           color: "header-primary",
-          children: v
+          children: b
         })]
-      }), (0, r.jsx)(i.LZC, {
+      }), (0, r.jsx)(o.LZC, {
         size: 12
-      }), (0, r.jsx)(i.Text, {
+      }), (0, r.jsx)(o.Text, {
         variant: "text-md/normal",
         color: "text-muted",
         className: s.__invalid_body,
-        children: c
+        children: d
       })]
-    }), (0, r.jsxs)(i.mzw, {
-      children: [(0, r.jsx)(i.zxk, {
+    }), (0, r.jsxs)(o.mzw, {
+      children: [(0, r.jsx)(o.zxk, {
         variant: "primary",
-        text: d,
-        onClick: m,
+        text: c,
+        onClick: h,
         loading: p
-      }), (0, r.jsx)(i.LZC, {
+      }), (0, r.jsx)(o.LZC, {
         size: 12,
         horizontal: true
-      }), null != u && (0, r.jsx)(l.zx, {
-        color: l.zx.Colors.PRIMARY,
-        look: l.zx.Looks.OUTLINED,
+      }), null != u && (0, r.jsx)(a.zx, {
+        color: a.zx.Colors.PRIMARY,
+        look: a.zx.Looks.OUTLINED,
         onClick: A,
         children: u
       })]

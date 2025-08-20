@@ -9,10 +9,10 @@ require.r(exports), require.d(exports, {
   hideToken: () => A,
   init: () => y,
   removeAnalyticsToken: () => R,
-  removeToken: () => C,
+  removeToken: () => N,
   setAnalyticsToken: () => I,
   setToken: () => T,
-  showToken: () => N
+  showToken: () => C
 }), require("./388685.js");
 var Chunk433517 = require("./433517.js"),
   Chunk231338 = require("./231338.js");
@@ -87,12 +87,12 @@ function v(e) {
 }
 
 function I(e) {
-  if (null == e) return void C(l);
+  if (null == e) return void N(l);
   S(e, l)
 }
 
 function T(e, t) {
-  if (null == e) return void C(t);
+  if (null == e) return void N(t);
   r = e, S(e, t)
 }
 
@@ -104,17 +104,17 @@ function A() {
   h || (h = true, g())
 }
 
-function N() {
+function C() {
   h && (h = false, g())
 }
 
-function C(e) {
+function N(e) {
   let t = r;
   return null != e && (t = _[e], delete _[e], delete p[e]), t === r && (r = null, i = null), g(), null != t
 }
 
 function R() {
-  return C(l)
+  return N(l)
 }
 
 function P() {

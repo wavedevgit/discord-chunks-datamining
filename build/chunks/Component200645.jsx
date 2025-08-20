@@ -1,19 +1,20 @@
-/** Chunk was on 66181 **/
-/** chunk id: 200645, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 200645, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => g
+  Z: () => p
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk358085 = require("./358085.js"),
   Chunk998502 = require("./998502.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk197571 = require("./197571.js");
 
-function m(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -21,7 +22,7 @@ function m(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class p extends Chunk647438.PureComponent {
+class _ extends Chunk647438.PureComponent {
   async componentDidMount() {
     this.setState({
       openOnStartup: await Chunk998502.ZP.getSetting("OPEN_ON_STARTUP", true),
@@ -34,7 +35,7 @@ class p extends Chunk647438.PureComponent {
       openOnStartup: e,
       startMinimized: t,
       minimizeToTray: n
-    } = this.state, r = (0, Chunk358085.isLinux)() ? Chunk388032.intl.string(Chunk388032.t["7pPjTU"]) : Chunk388032.intl.string(Chunk388032.t.ZkDZoq);
+    } = this.state, i = (0, Chunk358085.isLinux)() ? Chunk388032.intl.string(Chunk388032.t["7pPjTU"]) : Chunk388032.intl.string(Chunk388032.t.ZkDZoq);
     return (0, Chunk951288.jsxs)(Chunk481060.hjN, {
       tag: Chunk481060.RB0.H1,
       title: Chunk647438,
@@ -48,13 +49,13 @@ class p extends Chunk647438.PureComponent {
         children: Chunk388032.intl.string(Chunk388032.t.WQm4p6)
       }), (0, Chunk358085.isWindows)() ? (0, Chunk951288.jsx)(Chunk481060.j7V, {
         disabled: !module,
-        className: a()(Chunk197571.marginTop8, Chunk197571.marginBottom20),
+        className: o()(Chunk197571.marginTop8, Chunk197571.marginBottom20),
         value: !!module && exports,
         note: Chunk388032.intl.string(Chunk388032.t.o2FSjI),
         onChange: this.handleToggleStartMinimized,
         children: Chunk388032.intl.string(Chunk388032.t.n7Yjen)
       }) : null, (0, Chunk951288.jsx)(Chunk481060.vwX, {
-        className: a()(Chunk197571.marginTop20, Chunk197571.marginBottom8),
+        className: o()(Chunk197571.marginTop20, Chunk197571.marginBottom8),
         children: Chunk388032.intl.string(Chunk388032.t.h0hFx8)
       }), (0, Chunk951288.jsx)(Chunk481060.j7V, {
         className: Chunk197571.marginBottom20,
@@ -66,17 +67,17 @@ class p extends Chunk647438.PureComponent {
     })
   }
   constructor(e) {
-    super(e), m(this, "handleToggleOpenOnStartup", () => {
+    super(e), f(this, "handleToggleOpenOnStartup", () => {
       let e = !this.state.openOnStartup;
       this.setState({
         openOnStartup: e
       }), c.ZP.send("TOGGLE_OPEN_ON_STARTUP", e)
-    }), m(this, "handleToggleStartMinimized", () => {
+    }), f(this, "handleToggleStartMinimized", () => {
       let e = !this.state.startMinimized;
       this.setState({
         startMinimized: e
       }), c.ZP.send("TOGGLE_START_MINIMIZED", e)
-    }), m(this, "handleToggleMinimizeToTray", () => {
+    }), f(this, "handleToggleMinimizeToTray", () => {
       let e = !this.state.minimizeToTray;
       this.setState({
         minimizeToTray: e
@@ -88,4 +89,4 @@ class p extends Chunk647438.PureComponent {
     }
   }
 }
-let g = p
+let p = _

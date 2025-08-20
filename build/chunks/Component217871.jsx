@@ -1,4 +1,4 @@
-/** Chunk was on 36499 **/
+/** Chunk was on 5665 **/
 /** chunk id: 217871, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => E
@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk989830 = require("./989830.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk23586 = require("./23586.js");
-let j = Chunk647438.memo(function(e) {
+let O = Chunk647438.memo(function(e) {
     let {
       channelId: t,
       width: n
@@ -56,7 +56,7 @@ let j = Chunk647438.memo(function(e) {
       })
     })
   }),
-  O = Chunk647438.memo(function(e) {
+  j = Chunk647438.memo(function(e) {
     let {
       value: t,
       multiplier: n
@@ -152,14 +152,14 @@ let j = Chunk647438.memo(function(e) {
       multiplier: E ? P.multiplier : I.current.multiplier
     }), [E, P, I]);
     return (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(j, {
+      children: [(0, r.jsx)(O, {
         channelId: t,
         width: m
       }), (0, r.jsx)(o.animated.div, {
         ref: p,
         className: v.combo,
         style: S,
-        children: (0, r.jsx)(O, {
+        children: (0, r.jsx)(j, {
           value: T,
           multiplier: Z
         })

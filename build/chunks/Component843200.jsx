@@ -1,14 +1,15 @@
-/** Chunk was on 66181 **/
-/** chunk id: 843200, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 843200, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => f
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
-  l = require.n(Chunk512722),
+  s = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk600164 = require("./600164.jsx"),
@@ -17,98 +18,115 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk401721 = require("./401721.js");
 
-function h(e) {
+function h(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      i = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), i.forEach(function(t) {
-      var i;
-      i = n[t], t in e ? Object.defineProperty(e, t, {
-        value: i,
-        enumerable: true,
-        configurable: true,
-        writable: true
-      }) : e[t] = i
+    }))), r.forEach(function(t) {
+      h(e, t, n[t])
     })
   }
   return e
 }
 
-function f(e) {
+function g(e) {
   let {
     unclaimedNotice: t,
-    unverifiedNotice: r,
-    className: a
+    unverifiedNotice: i,
+    className: o
   } = e, {
-    isClaimed: f,
-    isVerified: b,
-    hasEmail: x
-  } = (0, o.cj)([u.default], () => {
-    let e = u.default.getCurrentUser();
-    return l()(null != e, "EmailNotice: currentUser cannot be undefined"), {
+    isClaimed: h,
+    isVerified: g,
+    hasEmail: E
+  } = (0, l.cj)([d.default], () => {
+    let e = d.default.getCurrentUser();
+    return s()(null != e, "EmailNotice: currentUser cannot be undefined"), {
       isClaimed: e.isClaimed(),
       isVerified: e.verified,
       hasEmail: null != e.email
     }
   });
 
-  function _() {
+  function b() {
+    return h ? null != i ? i : _.intl.string(_.t.WuyBbG) : null != t ? t : _.intl.string(_.t["f+Zaoq"])
+  }
+
+  function y() {
+    return h ? E ? (0, r.jsx)(u.Z.Child, {
+      grow: 0,
+      shrink: 0,
+      children: (0, r.jsx)(f.Z, {})
+    }) : (0, r.jsx)(c.zxk, {
+      variant: "primary",
+      text: _.intl.string(_.t.ydw5nZ),
+      onClick: I
+    }) : (0, r.jsx)(u.Z.Child, {
+      grow: 0,
+      shrink: 0,
+      children: (0, r.jsx)(c.zxk, {
+        variant: "primary",
+        text: _.intl.string(_.t.fiNVio),
+        onClick: v
+      })
+    })
+  }
+
+  function O() {
+    return h && E ? (0, r.jsx)(u.Z.Child, {
+      grow: 0,
+      shrink: 0,
+      children: (0, r.jsx)(c.zxk, {
+        variant: "secondary",
+        text: _.intl.string(_.t.Vm8akJ),
+        onClick: I
+      })
+    }) : null
+  }
+
+  function v() {
     (0, c.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("9343"), n.e("28175")]).then(n.bind(n, 642298));
-      return t => (0, i.jsx)(e, h({}, t))
+      } = await n.e("60827").then(n.bind(n, 324239));
+      return t => (0, r.jsx)(e, m({}, t))
     })
   }
-  return f && b ? null : (0, i.jsx)(c.Zbd, {
-    className: s()(g.wrapper, a),
-    children: (0, i.jsxs)(d.Z, {
-      align: d.Z.Align.CENTER,
-      children: [(0, i.jsx)(d.Z.Child, {
-        className: g.image,
+
+  function I() {
+    (0, c.ZDy)(async () => {
+      let {
+        default: e
+      } = await n.e("9343").then(n.bind(n, 642298));
+      return t => (0, r.jsx)(e, m({}, t))
+    })
+  }
+  return h && g ? null : (0, r.jsx)(c.Zbd, {
+    className: a()(p.wrapper, o),
+    children: (0, r.jsxs)(u.Z, {
+      align: u.Z.Align.CENTER,
+      children: [(0, r.jsx)(u.Z.Child, {
+        className: p.image,
         grow: 0,
         shrink: 0
-      }), (0, i.jsxs)(d.Z.Child, {
-        children: [(0, i.jsx)(c.Text, {
+      }), (0, r.jsxs)(u.Z.Child, {
+        children: [(0, r.jsx)(c.Text, {
           variant: "text-sm/normal",
-          children: f ? null != r ? r : p.intl.string(p.t.WuyBbG) : null != t ? t : p.intl.string(p.t["f+Zaoq"])
-        }), (0, i.jsxs)(d.Z, {
-          justify: d.Z.Justify.CENTER,
-          className: g.content,
-          children: [f ? x ? (0, i.jsx)(d.Z.Child, {
-            grow: 0,
-            shrink: 0,
-            children: (0, i.jsx)(m.Z, {})
-          }) : (0, i.jsx)(c.zxk, {
-            variant: "primary",
-            text: p.intl.string(p.t.ydw5nZ),
-            onClick: _
-          }) : (0, i.jsx)(d.Z.Child, {
-            grow: 0,
-            shrink: 0,
-            children: (0, i.jsx)(c.zxk, {
-              variant: "primary",
-              text: p.intl.string(p.t.fiNVio),
-              onClick: function() {
-                (0, c.ZDy)(async () => {
-                  let {
-                    default: e
-                  } = await n.e("60827").then(n.bind(n, 324239));
-                  return t => (0, i.jsx)(e, h({}, t))
-                })
-              }
-            })
-          }), f && x ? (0, i.jsx)(d.Z.Child, {
-            grow: 0,
-            shrink: 0,
-            children: (0, i.jsx)(c.zxk, {
-              variant: "secondary",
-              text: p.intl.string(p.t.Vm8akJ),
-              onClick: _
-            })
-          }) : null]
+          children: b()
+        }), (0, r.jsxs)(u.Z, {
+          justify: u.Z.Justify.CENTER,
+          className: p.content,
+          children: [y(), O()]
         })]
       })]
     })

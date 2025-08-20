@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 603963, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 603963, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => l
+  Z: () => s
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -9,33 +10,33 @@ var Chunk481060 = require("./481060.js"),
   Chunk921801 = require("./921801.js"),
   Chunk198840 = require("./198840.js");
 
-function l(e) {
+function s(e) {
   let {
     children: t,
     title: n,
-    description: l,
-    webSetting: o
+    description: s,
+    webSetting: l
   } = e;
-  return (0, i.jsx)(s.F, {
-    setting: o,
-    children: (0, i.jsxs)("div", {
-      className: a.category,
-      children: [(null != n || null != l) && (0, i.jsxs)("div", {
-        className: a.categoryHeader,
-        children: [null != n && (0, i.jsx)(r.X6q, {
+  return (0, r.jsx)(a.F, {
+    setting: l,
+    children: (0, r.jsxs)("div", {
+      className: o.category,
+      children: [(null != n || null != s) && (0, r.jsxs)("div", {
+        className: o.categoryHeader,
+        children: [null != n && (0, r.jsx)(i.X6q, {
           variant: "heading-lg/semibold",
           color: "header-primary",
           children: n
-        }), null != l && (0, i.jsx)(r.Text, {
+        }), null != s && (0, r.jsx)(i.Text, {
           variant: "text-sm/normal",
           color: "header-secondary",
-          children: l
+          children: s
         })]
-      }), (0, i.jsx)("div", {
-        className: a.categoryContent,
+      }), (0, r.jsx)("div", {
+        className: o.categoryContent,
         children: t
-      }), (0, i.jsx)(r.$i$, {
-        className: a.categoryDivider
+      }), (0, r.jsx)(i.$i$, {
+        className: o.categoryDivider
       })]
     })
   })

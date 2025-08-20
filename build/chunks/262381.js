@@ -1,5 +1,6 @@
-/** Chunk was on 91526 **/
-/** chunk id: 262381, original params: e,n,t (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 262381, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   upsellOuter: "upsellOuter__50e68",
   upsellInner: "upsellInner__50e68",

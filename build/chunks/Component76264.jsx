@@ -1,4 +1,4 @@
-/** Chunk was on 26475 **/
+/** Chunk was on 40226 **/
 /** chunk id: 76264, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk259580 = require("./259580.jsx"),
   Chunk520310 = require("./520310.js"),
@@ -15,17 +15,17 @@ let d = e => {
     let {
       child: t,
       onClick: n
-    } = e, [a] = t;
-    return (0, r.jsxs)(o.P3F, {
-      className: i()(c.childButton, s.listElement),
+    } = e, [i] = t;
+    return (0, r.jsxs)(a.P3F, {
+      className: l()(c.childButton, s.listElement),
       onClick: () => n(t),
-      children: [(0, r.jsx)(o.Text, {
+      children: [(0, r.jsx)(a.Text, {
         className: c.childText,
         variant: "text-md/semibold",
-        children: a
-      }), (0, r.jsx)(l.Z, {
+        children: i
+      }), (0, r.jsx)(o.Z, {
         className: c.childIcon,
-        direction: l.Z.Directions.RIGHT
+        direction: o.Z.Directions.RIGHT
       })]
     })
   },
@@ -37,15 +37,15 @@ let d = e => {
       onSelectChild: n
     } = e;
     if (null == t || 0 === t.length) return null;
-    let a = t.map(e => {
-      let [t, a] = e;
+    let i = t.map(e => {
+      let [t, i] = e;
       return (0, r.jsx)(d, {
         child: e,
         onClick: n
-      }, "".concat(t, "+").concat(a))
+      }, "".concat(t, "+").concat(i))
     });
     return (0, r.jsx)("div", {
       className: s.listElementWrapper,
-      children: a
+      children: i
     })
   }

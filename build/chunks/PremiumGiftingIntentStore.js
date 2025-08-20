@@ -54,8 +54,8 @@ function I() {
 let T = I(),
   S = [],
   A = new Set,
-  N = {},
-  C = null;
+  C = {},
+  N = null;
 
 function R(e, t) {
   let n = new Date,
@@ -72,8 +72,8 @@ function P(e) {
 }
 
 function w() {
-  if (null != C) return void K(C);
-  if (x(), !Chunk480294.Z.hasConsented(Chunk981631.pjP.PERSONALIZATION)) return;
+  if (null != N) return void K(N);
+  if (L(), !Chunk480294.Z.hasConsented(Chunk981631.pjP.PERSONALIZATION)) return;
   let {
     enabled: e
   } = Chunk522558.w.getCurrentConfig({
@@ -88,7 +88,7 @@ function w() {
         n = Chunk752048.Z.getUserAffinity(module);
       if (!Chunk699516.Z.isIgnored(module) && null != require && require.communicationProbability > 0 && null != exports) {
         let n = new Date(exports);
-        P(require) && (S.push(module), N[module] = {
+        P(require) && (S.push(module), C[module] = {
           friendsSince: require
         })
       }
@@ -106,23 +106,23 @@ function D(e) {
   return Math.round(s()().diff(e, "years", true))
 }
 
-function L() {
+function x() {
   return Array.from(A).some(e => !T.lastShownFriendsListGiftIntents.includes(e))
 }
 
-function x() {
-  S.length = 0, A.clear(), N = {}
-}
-
-function M() {
-  x()
-}
-
-function k() {
-  T = I(), x()
+function L() {
+  S.length = 0, A.clear(), C = {}
 }
 
 function j() {
+  L()
+}
+
+function M() {
+  T = I(), L()
+}
+
+function k() {
   T.lastShownFriendsListGiftIntents = Array.from(A)
 }
 
@@ -130,7 +130,7 @@ function U(e) {
   let {
     recipientUserId: t
   } = e;
-  V(t)
+  Z(t)
 }
 
 function G() {
@@ -141,21 +141,21 @@ function B(e) {
   let {
     recipientUserId: t
   } = e;
-  V(t)
+  Z(t)
 }
 
-function V(e) {
+function Z(e) {
   null == T.messageGiftIntentLastShownMap[e] && (T.messageGiftIntentLastShownMap[e] = Date.now())
 }
 
-function F() {
+function V() {
   for (let e in T.messageGiftIntentLastShownMap) {
     let t = T.messageGiftIntentLastShownMap[module];
     Date.now() - exports > v && delete T.messageGiftIntentLastShownMap[module]
   }
 }
 
-function Z() {
+function F() {
   T.lastShownFriendsListGiftIntents = []
 }
 
@@ -172,14 +172,14 @@ function W(e) {
     total: t
   } = e;
   if (null == t) {
-    C = null, w();
+    N = null, w();
     return
   }
   K(t)
 }
 
 function K(e) {
-  x();
+  L();
   let {
     enabled: t
   } = p.w.getCurrentConfig({
@@ -188,13 +188,13 @@ function K(e) {
     autoTrackExposure: false
   });
   if (!t) return;
-  C = e;
+  N = e;
   let n = _.Z.getFriendIDs().filter(e => !_.Z.isIgnored(e));
   a().sampleSize(n, e).forEach(e => {
     let t = _.Z.getSince(e);
     if (null != t) {
       let n = new Date(t);
-      S.push(e), N[e] = {
+      S.push(e), C[e] = {
         friendsSince: n
       }
     }
@@ -202,7 +202,7 @@ function K(e) {
 }
 class z extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    T = I(), null != e && (T.friendsTabBadgeLastDismissedTime = e.friendsTabBadgeLastDismissedTime, T.lastShownFriendsListGiftIntents = Array.from(e.lastShownFriendsListGiftIntents), T.messageGiftIntentLastShownMap = g({}, e.messageGiftIntentLastShownMap)), this.syncWith([_.Z, d.Z, f.Z, u.Z], w), F()
+    T = I(), null != e && (T.friendsTabBadgeLastDismissedTime = e.friendsTabBadgeLastDismissedTime, T.lastShownFriendsListGiftIntents = Array.from(e.lastShownFriendsListGiftIntents), T.messageGiftIntentLastShownMap = g({}, e.messageGiftIntentLastShownMap)), this.syncWith([_.Z, d.Z, f.Z, u.Z], w), V()
   }
   getState() {
     return T
@@ -225,17 +225,17 @@ class z extends(r = Chunk442837.ZP.PersistedStore) {
   canShowFriendsTabBadge() {
     var e;
     let t = null != (e = T.friendsTabBadgeLastDismissedTime) ? module : 0;
-    return !(Date.now() - exports <= O) && L()
+    return !(Date.now() - exports <= O) && x()
   }
   getFriendAnniversaryYears(e) {
-    let t = N[e];
+    let t = C[e];
     return null == t ? 0 : D(t.friendsSince)
   }
   isGiftIntentMessageInCooldown(e) {
     return null != T.messageGiftIntentLastShownMap[e]
   }
   getDevToolTotalFriendAnniversaries() {
-    return C
+    return N
   }
 }
 m(z, "displayName", "PremiumGiftingIntentStore"), m(z, "persistKey", "PremiumGiftingIntentStore"), m(z, "migrations", [e => {
@@ -247,13 +247,13 @@ m(z, "displayName", "PremiumGiftingIntentStore"), m(z, "persistKey", "PremiumGif
   }
 }]);
 let q = new z(Chunk570140.Z, {
-  CONNECTION_OPEN: M,
-  LOGOUT: k,
+  CONNECTION_OPEN: j,
+  LOGOUT: M,
   MESSAGE_GIFT_INTENT_SHOWN: U,
-  FRIENDS_LIST_GIFT_INTENTS_SHOWN: j,
+  FRIENDS_LIST_GIFT_INTENTS_SHOWN: k,
   FRIENDS_TAB_BADGE_DISMISS: G,
   GIFT_INTENT_FLOW_PURCHASED_GIFT: B,
-  DEV_TOOLS_FRIENDS_LIST_GIFT_INTENTS_SHOWN_RESET: Z,
+  DEV_TOOLS_FRIENDS_LIST_GIFT_INTENTS_SHOWN_RESET: F,
   DEV_TOOLS_GIFT_MESSAGE_COOLDOWN_RESET: H,
   DEV_TOOLS_FRIENDS_TAB_BADGE_COOLDOWN_RESET: Y,
   DEV_TOOLS_SET_FRIEND_ANNIVERSARY_COUNT: W

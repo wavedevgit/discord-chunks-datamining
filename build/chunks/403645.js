@@ -1,5 +1,6 @@
-/** Chunk was on 66181 **/
-/** chunk id: 403645, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 403645, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   labelSpacing: "labelSpacing__5f04d",
   applyChangesButton: "applyChangesButton__5f04d",

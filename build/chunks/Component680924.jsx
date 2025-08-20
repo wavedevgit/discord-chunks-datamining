@@ -1,52 +1,63 @@
-/** Chunk was on 66181 **/
-/** chunk id: 680924, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 680924, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => a
+  Z: () => u
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx");
 
-function a(e, t, n) {
-  (0, r.h7j)(a => {
-    var l, o;
-    return (0, i.jsx)(r.ConfirmModal, (l = function(e) {
-      for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-          i = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-          return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), i.forEach(function(t) {
-          var i;
-          i = n[t], t in e ? Object.defineProperty(e, t, {
-            value: i,
-            enumerable: true,
-            configurable: true,
-            writable: true
-          }) : e[t] = i
-        })
-      }
-      return e
-    }({
-      header: e,
-      confirmText: s.intl.string(s.t.BddRzc),
-      cancelText: s.intl.string(s.t["ETE/oK"]),
-      onConfirm: n
-    }, a), o = o = {
-      children: (0, i.jsx)(r.Text, {
-        variant: "text-md/normal",
-        children: t
-      })
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
-      var n = Object.keys(e);
-      if (Object.getOwnPropertySymbols) {
-        var i = Object.getOwnPropertySymbols(e);
-        n.push.apply(n, i)
-      }
-      return n
-    })(Object(o)).forEach(function(e) {
-      Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(o, e))
-    }), l))
-  })
+function o(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function s(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      o(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function l(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function c(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : l(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+
+function u(e, t, n) {
+  (0, i.h7j)(o => (0, r.jsx)(i.ConfirmModal, c(s({
+    header: e,
+    confirmText: a.intl.string(a.t.BddRzc),
+    cancelText: a.intl.string(a.t["ETE/oK"]),
+    onConfirm: n
+  }, o), {
+    children: (0, r.jsx)(i.Text, {
+      variant: "text-md/normal",
+      children: t
+    })
+  })))
 }

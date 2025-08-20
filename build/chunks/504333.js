@@ -1,5 +1,6 @@
-/** Chunk was on 66181 **/
-/** chunk id: 504333, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 504333, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   paymentPane: "paymentPane__01014",
   paymentRow: "paymentRow__01014",

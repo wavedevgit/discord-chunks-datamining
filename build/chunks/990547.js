@@ -16,9 +16,9 @@ require.r(exports), require.d(exports, {
   analyticsTrackingStoreMaker: () => Chunk699407.l,
   encodeProperties: () => Chunk947486.Z,
   extendSuperProperties: () => z,
-  getCampaignParams: () => L,
+  getCampaignParams: () => x,
   getDevice: () => U,
-  getOS: () => j,
+  getOS: () => k,
   getSuperProperties: () => X,
   getSuperPropertiesBase64: () => Q,
   isThrottled: () => K,
@@ -81,8 +81,8 @@ function S(e, t) {
   }), e
 }
 let A = "deviceProperties",
-  N = "referralProperties",
-  C = {},
+  C = "referralProperties",
+  N = {},
   R = {},
   P = window.DiscordNative;
 if (null != P) {
@@ -131,7 +131,7 @@ function D(e, t) {
   return null === n || "string" != typeof n[1] && n[1].length ? "" : decodeURIComponent(n[1]).replace(/\+/g, " ")
 }
 
-function L(e) {
+function x(e) {
   let t = {};
   return w.forEach(n => {
     let r = D(e, n);
@@ -139,15 +139,15 @@ function L(e) {
   }), t
 }
 
-function x() {
+function L() {
   let e = document.referrer;
   return 0 === module.search("https?://(.*)google.([^/?]*)") ? "google" : 0 === module.search("https?://(.*)bing.com") ? "bing" : 0 === module.search("https?://(.*)yahoo.com") ? "yahoo" : 0 === module.search("https?://(.*)duckduckgo.com") ? "duckduckgo" : null
 }
 
-function M() {
+function j() {
   let e = {},
     t = document.referrer,
-    n = x(),
+    n = L(),
     r = "yahoo" !== require ? "q" : "p";
   if (null != require) {
     module.search_engine = require;
@@ -157,7 +157,7 @@ function M() {
   return module
 }
 
-function k() {
+function M() {
   let {
     userAgent: e,
     vendor: t = ""
@@ -179,7 +179,7 @@ function k() {
   else return ""
 }
 
-function j() {
+function k() {
   let {
     userAgent: e
   } = window.navigator;
@@ -211,10 +211,10 @@ function G() {
 
 function B() {
   let e = {};
-  return module.os = j(), module.browser = k(), module.device = U(), module.system_locale = (0, Chunk627420.qf)(), module.has_client_mods = (0, Chunk903772.e)(), module
+  return module.os = k(), module.browser = M(), module.device = U(), module.system_locale = (0, Chunk627420.qf)(), module.has_client_mods = (0, Chunk903772.e)(), module
 }
 
-function V() {
+function Z() {
   var e, t;
   return S(I({}, {
     browser_user_agent: window.navigator.userAgent || "",
@@ -224,12 +224,12 @@ function V() {
   })
 }
 
-function F() {
+function V() {
   let e = {};
-  return module.referrer = document.referrer, module.referring_domain = G(), e = I({}, module, L(window.location.href), M())
+  return module.referrer = document.referrer, module.referring_domain = G(), e = I({}, module, x(window.location.href), j())
 }
 
-function Z(e, t) {
+function F(e, t) {
   let n = {};
   return Object.keys(e).map(r => n["".concat(r).concat(t)] = e[r]), n
 }
@@ -237,10 +237,10 @@ function Z(e, t) {
 function H() {
   let e = Chunk433517.K.get(A);
   null == module && (e = B(), Chunk433517.K.set(A, module));
-  let t = Chunk433517.K.get(N);
-  null == exports && (t = F(), Chunk433517.K.set(N, exports));
-  let n = Chunk298444.x.get(N);
-  return null == require && (n = Z(F(), "_current"), Chunk298444.x.set(N, require)), I({}, module, V(), exports, require)
+  let t = Chunk433517.K.get(C);
+  null == exports && (t = V(), Chunk433517.K.set(C, exports));
+  let n = Chunk298444.x.get(C);
+  return null == require && (n = F(V(), "_current"), Chunk298444.x.set(C, require)), I({}, module, Z(), exports, require)
 }
 
 function Y() {
@@ -255,14 +255,14 @@ function W() {
   let n = {},
     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
   r && (null == require.release_channel || "" === require.release_channel) && (require.release_channel = r.split("-")[0]);
-  let i = parseInt("434146", 10);
+  let i = parseInt("434187", 10);
   isNaN(i) || (require.client_build_number = i);
   let a = null == P || null == (e = (t = P.remoteApp).getBuildNumber) ? true : module.call(exports);
   return isNaN(a) || (require.native_build_number = a), require.client_event_source = Y(), require.has_client_mods = (0, Chunk903772.e)(), require.client_launch_id = Chunk923452.s, require
 }
 
 function K(e) {
-  return null != C[e] && C[e] > Date.now()
+  return null != N[e] && N[e] > Date.now()
 }
 if (null == r) try {
   r = H()
@@ -298,7 +298,7 @@ let q = e => {
           if (s()(e, o)) return Promise.resolve();
           R[t] = o
         }
-        C[t] = Date.now() + l.throttlePeriod
+        N[t] = Date.now() + l.throttlePeriod
       } else if ("throttlePercent" in l) {
       if (Math.random() > l.throttlePercent) return Promise.resolve()
     } else c()(false, "Unsupported analytics event config: ".concat(l));

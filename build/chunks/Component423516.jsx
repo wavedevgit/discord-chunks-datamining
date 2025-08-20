@@ -1,4 +1,4 @@
-/** Chunk was on 82096 **/
+/** Chunk was on 84927 **/
 /** chunk id: 423516, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk570928 = require("./570928.jsx"),
   Chunk388032 = require("./388032.jsx"),
@@ -18,15 +18,15 @@ let u = function(e) {
     text: l,
     hasConnectedChannel: u,
     textVariant: d = "text-md/medium"
-  } = e, f = n ? a.intl.string(a.t.IlHdW1) : a.intl.string(a.t.WsOisr);
-  return (0, r.jsx)(s.Z, {
-    className: i()(t, c.hoverableStatus),
-    hoverText: u ? (0, r.jsx)(o.Text, {
+  } = e, h = n ? o.intl.string(o.t.IlHdW1) : o.intl.string(o.t.WsOisr);
+  return (0, r.jsx)(a.Z, {
+    className: s()(t, c.hoverableStatus),
+    hoverText: u ? (0, r.jsx)(i.Text, {
       variant: d,
       color: "currentColor",
-      children: f
+      children: h
     }) : null,
-    children: (0, r.jsx)(o.Text, {
+    children: (0, r.jsx)(i.Text, {
       variant: d,
       color: "currentColor",
       children: l

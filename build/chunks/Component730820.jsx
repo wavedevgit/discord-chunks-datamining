@@ -1,12 +1,13 @@
-/** Chunk was on 66181 **/
-/** chunk id: 730820, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 730820, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => L
+  Z: () => U
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
-  a = require.n(Chunk512722),
+  o = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk816814 = require("./816814.js"),
@@ -33,7 +34,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk343396 = require("./343396.js"),
   Chunk197571 = require("./197571.js");
 
-function R(e, t, n) {
+function D(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -42,58 +43,62 @@ function R(e, t, n) {
   }) : e[t] = n, e
 }
 
-function D(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      i = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), i.forEach(function(t) {
-      R(e, t, n[t])
+    }))), r.forEach(function(t) {
+      D(e, t, n[t])
     })
   }
   return e
 }
 
-function Z(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-      var i = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, i)
-    }
-    return n
-  })(Object(t)).forEach(function(n) {
+function L(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function j(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function w(e) {
+function M(e) {
   let {
     code: {
       code: t,
       consumed: n
     }
-  } = e, s = "".concat(t.substr(0, 4), "-").concat(t.substr(4)), a = r.useRef(null), l = r.useCallback(e => {
-    if ("c" === e.key && e.metaKey && C.wS) {
+  } = e, a = "".concat(t.substr(0, 4), "-").concat(t.substr(4)), o = i.useRef(null), s = i.useCallback(e => {
+    if ("c" === e.key && e.metaKey && v.wS) {
       var t;
-      e.preventDefault(), e.stopPropagation(), (0, C.JG)(s), null == a || null == (t = a.current) || t.focus()
+      e.preventDefault(), e.stopPropagation(), (0, v.JG)(a), null == o || null == (t = o.current) || t.focus()
     }
-  }, [s]);
-  return (0, i.jsx)("li", {
-    className: P.marginBottom20,
-    children: (0, i.jsx)(o.P3F, {
-      innerRef: a,
-      className: A.backupCode,
-      onKeyDown: l,
-      children: (0, i.jsx)(o.XZJ, {
+  }, [a]);
+  return (0, r.jsx)("li", {
+    className: w.marginBottom20,
+    children: (0, r.jsx)(l.P3F, {
+      innerRef: o,
+      className: P.backupCode,
+      onKeyDown: s,
+      children: (0, r.jsx)(l.XZJ, {
         displayOnly: true,
         readOnly: true,
-        className: A.codeCheckbox,
+        className: P.codeCheckbox,
         value: n,
-        children: (0, i.jsx)("span", {
-          className: A.code,
-          children: s
+        children: (0, r.jsx)("span", {
+          className: P.code,
+          children: a
         })
       })
     })
@@ -108,13 +113,13 @@ class k extends Chunk647438.PureComponent {
         revealed: n
       } = this.state,
       {
-        currentUser: r,
-        togglingSMS: s,
-        hasTOTPEnabled: a
+        currentUser: i,
+        togglingSMS: a,
+        hasTOTPEnabled: o
       } = this.props,
-      l = null != Chunk647438.phone,
+      s = null != Chunk647438.phone,
       c = Chunk647438.hasFlag(Chunk981631.xW$.MFA_SMS);
-    if (a) {
+    if (o) {
       if (Chunk442837 || Chunk816814) {
         let e = require ? Chunk647438.phone : this.maskPhoneNumber(Chunk647438.phone);
         t = (0, Chunk951288.jsxs)(Chunk481060.R94, {
@@ -196,7 +201,7 @@ class k extends Chunk647438.PureComponent {
           text: Chunk388032.intl.string(Chunk388032.t.qZZUy8)
         })
       });
-      let r = e => e.map(e => (0, i.jsx)(w, {
+      let i = e => e.map(e => (0, r.jsx)(M, {
         code: e
       }, e.code));
       e = (0, Chunk951288.jsxs)(Chunk481060.hjN, {
@@ -298,52 +303,52 @@ class k extends Chunk647438.PureComponent {
   }
   openPhoneVerificationModal() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
-    (0, Chunk481060.h7j)(t => (0, i.jsx)(b.default, D({
+    (0, Chunk481060.h7j)(t => (0, r.jsx)(g.default, x({
       reason: h.L.USER_SETTINGS_UPDATE
     }, t, e)), {
       modalKey: Chunk815660.M
     })
   }
   constructor(...e) {
-    super(...e), R(this, "state", {
+    super(...e), D(this, "state", {
       revealed: false,
       password: ""
-    }), R(this, "togglePhoneNumberVisibility", e => {
+    }), D(this, "togglePhoneNumberVisibility", e => {
       e.preventDefault(), this.setState({
         revealed: !this.state.revealed
       })
-    }), R(this, "handleDisableMFA", () => {
-      d.Z.show({
-        title: y.intl.string(y.t["D+aE7u"]),
-        body: y.intl.string(y.t.EA4ZEh),
-        cancelText: y.intl.string(y.t["ETE/oK"]),
+    }), D(this, "handleDisableMFA", () => {
+      u.Z.show({
+        title: R.intl.string(R.t["D+aE7u"]),
+        body: R.intl.string(R.t.EA4ZEh),
+        cancelText: R.intl.string(R.t["ETE/oK"]),
         onConfirm: () => c.Z.disable()
       })
-    }), R(this, "generateBackupCodes", async () => {
-      let e = j.Z.getVerificationKey();
+    }), D(this, "generateBackupCodes", async () => {
+      let e = y.Z.getVerificationKey();
       await c.Z.confirmViewBackupCodes(e, true)
-    }), R(this, "sendMFABackupCodesVerificationKeyEmail", () => {
-      (0, o.h7j)(e => (0, i.jsx)(p.Z, Z(D({}, e), {
+    }), D(this, "sendMFABackupCodesVerificationKeyEmail", () => {
+      (0, l.h7j)(e => (0, r.jsx)(_.Z, j(x({}, e), {
         handleSubmit: e => c.Z.sendMFABackupCodesVerificationKeyEmail(e).then(() => {
           this.viewBackupCodes(e)
         }),
-        title: y.intl.string(y.t.PsQmzc),
-        actionText: y.intl.string(y.t.ajkYcH)
+        title: R.intl.string(R.t.PsQmzc),
+        actionText: R.intl.string(R.t.ajkYcH)
       })))
-    }), R(this, "viewBackupCodes", e => {
-      (0, o.h7j)(t => (0, i.jsx)(m.Z, Z(D({}, t), {
+    }), D(this, "viewBackupCodes", e => {
+      (0, l.h7j)(t => (0, r.jsx)(f.Z, j(x({}, t), {
         handleSubmit: e => c.Z.confirmViewBackupCodes(e, false).then(() => t.onClose()),
         maxLength: 8,
-        title: y.intl.string(y.t.mGppp6),
-        label: y.intl.string(y.t.TjGb4e),
+        title: R.intl.string(R.t.mGppp6),
+        label: R.intl.string(R.t.TjGb4e),
         forceNoPlaceholder: true,
-        retryPrompt: y.intl.string(y.t.PZgmxs),
-        retrySuccessMessage: y.intl.string(y.t.j4qu8v),
+        retryPrompt: R.intl.string(R.t.PZgmxs),
+        retrySuccessMessage: R.intl.string(R.t.j4qu8v),
         onRetry: () => c.Z.sendMFABackupCodesVerificationKeyEmail(e),
-        actionText: y.intl.string(y.t.piW6YW),
-        helpMessage: y.intl.string(y.t["37S9yc"])
+        actionText: R.intl.string(R.t.piW6YW),
+        helpMessage: R.intl.string(R.t["37S9yc"])
       })))
-    }), R(this, "getDownloadFileContents", () => {
+    }), D(this, "getDownloadFileContents", () => {
       let e = this.props.backupCodes.map(e => {
           let {
             consumed: t,
@@ -351,37 +356,37 @@ class k extends Chunk647438.PureComponent {
           } = e;
           return "* ".concat(n.substr(0, 4), "-").concat(n.substr(4), " ").concat(t ? "(used)" : "")
         }).join("\r\n"),
-        t = y.intl.formatToPlainString(y.t.uYWwh4, {
+        t = R.intl.formatToPlainString(R.t.uYWwh4, {
           email: this.props.currentUser.email
         });
       return "".concat(t, "\r\n\r\n").concat(e)
-    }), R(this, "handleChangePhoneNumber", () => {
+    }), D(this, "handleChangePhoneNumber", () => {
       this.openPhoneVerificationModal()
-    }), R(this, "handleEnableSMS", () => {
+    }), D(this, "handleEnableSMS", () => {
       let {
         currentUser: e
       } = this.props;
       null == e.phone ? this.openPhoneVerificationModal({
         onAddedPhone: c.Z.enableSMS
       }) : c.Z.enableSMS()
-    }), R(this, "handleDisableSMS", () => {
-      (0, o.h7j)(e => (0, i.jsx)(p.Z, Z(D({}, e), {
+    }), D(this, "handleDisableSMS", () => {
+      (0, l.h7j)(e => (0, r.jsx)(_.Z, j(x({}, e), {
         handleSubmit: c.Z.disableSMS,
-        title: y.intl.string(y.t.KLWnio),
-        children: y.intl.string(y.t["W0/Dub"])
+        title: R.intl.string(R.t.KLWnio),
+        children: R.intl.string(R.t["W0/Dub"])
       })))
     })
   }
 }
 
-function L(e) {
-  let t = (0, l.e7)([E.default], () => E.default.getCurrentUser());
-  a()(null != t, "TwoFactorAuth: currentUser cannot be undefined");
-  let n = (0, l.cj)([j.Z, _.default], () => ({
-    togglingSMS: j.Z.togglingSMS,
-    hasTOTPEnabled: _.default.hasTOTPEnabled()
+function U(e) {
+  let t = (0, s.e7)([O.default], () => O.default.getCurrentUser());
+  o()(null != t, "TwoFactorAuth: currentUser cannot be undefined");
+  let n = (0, s.cj)([y.Z, b.default], () => ({
+    togglingSMS: y.Z.togglingSMS,
+    hasTOTPEnabled: b.default.hasTOTPEnabled()
   }));
-  return (0, i.jsx)(k, D({
+  return (0, r.jsx)(k, x({
     currentUser: t
   }, n, e))
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 69003 **/
+/** Chunk was on 91488 **/
 /** chunk id: 179809, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => w
@@ -28,7 +28,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk106663 = require("./106663.js"),
   Chunk534175 = require("./534175.js");
-let I = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
+let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
   N = (0, Chunk803948.animated)(Chunk481060.Kqy),
   w = Chunk647438.memo(function(e) {
     let {
@@ -44,8 +44,8 @@ let I = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
       draggable: A = false,
       sorting: R = false,
       onDragStart: D,
-      onDragEnd: L,
-      onExpandCollapse: M,
+      onDragEnd: M,
+      onExpandCollapse: L,
       onContextMenu: k,
       renderChildNode: U,
       folderButtonSize: G,
@@ -69,7 +69,7 @@ let I = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
         nodeId: t.id
       }),
       end() {
-        null == L || L(), (0, f.V1)(g.ZP.getCompatibleGuildFolders())
+        null == M || M(), (0, f.V1)(g.ZP.getCompatibleGuildFolders())
       },
       collect: e => ({
         dragging: e.isDragging()
@@ -77,8 +77,8 @@ let I = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
     }), et = i.useCallback(e => {
       X(e)
     }, []), en = i.useCallback(e => {
-      ("ArrowRight" === e.key && !s || "ArrowLeft" === e.key && s) && M()
-    }, [M, s]), er = null != z && "" !== z ? z : null != T && "" !== T ? T : x.intl.string(x.t.xV9hVl), ei = (0, c.Ie)("".concat(H)), el = "folder-items-".concat(H), eo = function(e) {
+      ("ArrowRight" === e.key && !s || "ArrowLeft" === e.key && s) && L()
+    }, [L, s]), er = null != z && "" !== z ? z : null != T && "" !== T ? T : E.intl.string(E.t.xV9hVl), ei = (0, c.Ie)("".concat(H)), el = "folder-items-".concat(H), eo = function(e) {
       let t = (0, p.dQu)(p.TVs.modules.guildbar.FOLDER_SIZE),
         n = (0, p.dQu)(p.TVs.modules.guildbar.AVATAR_SIZE),
         r = (0, p.dQu)(p.TVs.space.SPACE_XS);
@@ -94,15 +94,15 @@ let I = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
         height: 0
       },
       config: {
-        duration: I
+        duration: P
       }
-    }), es = i.useCallback(e => null == n ? true : n(H, e), [n, H]), ec = (0, r.jsxs)(j.H, {
+    }), es = i.useCallback(e => null == n ? true : n(H, e), [n, H]), ec = (0, r.jsxs)(v.H, {
       children: [(0, r.jsx)(O.Z, {
         disabled: $ || s,
         hovered: K,
         selected: l,
         unread: Z,
-        className: P.pill
+        className: I.pill
       }), (0, r.jsx)(C.Z, {
         text: er,
         disabled: R,
@@ -114,10 +114,10 @@ let I = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
           } : true,
           className: o()(S.folderHeader, {
             [S.folderHeaderSmall]: "icon" === G || J,
-            [P.wobble]: !$ && q && !s
+            [I.wobble]: !$ && q && !s
           }),
           "data-dnd-name": er,
-          children: $ ? (0, r.jsx)(v.Z, {
+          children: $ ? (0, r.jsx)(j.Z, {
             isFolder: true
           }) : (0, r.jsx)(_.Z, {
             folderNode: t,
@@ -128,7 +128,7 @@ let I = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
             isMentionLowImportance: w,
             tooltipName: er,
             folderGroupId: el,
-            onClick: M,
+            onClick: L,
             onContextMenu: k,
             onHoverChange: Y,
             onKeyDown: en,
@@ -143,7 +143,7 @@ let I = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
         targetNode: t,
         onDragOverChanged: et
       }) : null]
-    }), eu = null != t.color ? t.color : E.Wyy, ed = eu === E.Wyy ? true : (0, u.Rf)(eu);
+    }), eu = null != t.color ? t.color : x.Wyy, ed = eu === x.Wyy ? true : (0, u.Rf)(eu);
     return (0, r.jsxs)("div", {
       ref: es,
       className: o()(S.folderGroup, {

@@ -81,14 +81,14 @@ function A(e) {
   })
 }
 
-function N(e) {
+function C(e) {
   return (0, i.jsx)("div", {
     className: s()(p.moreUsers, p.moreUsersDimmed),
     children: e
   })
 }
 
-function C() {
+function N() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : b.SIZE_24;
   switch (module) {
     case b.SIZE_16:
@@ -153,7 +153,7 @@ class P extends(r = Chunk647438.PureComponent) {
       renderMoreUsers: o,
       users: s,
       dimEmptyUsers: l
-    } = this.props, c = Math.min(e, s.length), u = l ? N : o;
+    } = this.props, c = Math.min(e, s.length), u = l ? C : o;
     if (!r) {
       if (null != n) {
         if (n >= t) return (0, i.jsx)(a.Fragment, {
@@ -193,7 +193,7 @@ class P extends(r = Chunk647438.PureComponent) {
       popoutUserId: l
     } = this.state;
     if (null == Chunk481060) return (0, Chunk951288.jsxs)("div", {
-      className: s()(module, Chunk245141.container, C(exports)),
+      className: s()(module, Chunk245141.container, N(exports)),
       children: [this.renderIcon(), this.renderUsers()]
     });
     let c = require.find(e => e instanceof d.Z && e.id === l),
@@ -210,7 +210,7 @@ class P extends(r = Chunk647438.PureComponent) {
       }),
       clickTrap: true,
       children: n => (0, i.jsxs)("div", E(m({
-        className: s()(e, p.container, C(t)),
+        className: s()(e, p.container, N(t)),
         ref: this._ref
       }, n), {
         children: [this.renderIcon(), this.renderUsers()]

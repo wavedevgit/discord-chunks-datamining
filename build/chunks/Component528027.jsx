@@ -1,5 +1,5 @@
-/** Chunk was on 31930 **/
-/** chunk id: 528027, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 528027, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
   Z: () => d
@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk596454 = require("./596454.jsx"),
   Chunk377171 = require("./377171.js"),
   Chunk403910 = require("./403910.js"),
@@ -18,17 +18,17 @@ function d(e) {
   var t;
   let {
     guildId: n,
-    emojiId: r,
+    emojiId: i,
     emojiName: d,
-    className: h
-  } = e, p = (0, a.Z)(n, r);
-  return null != p || null != d ? (0, i.jsx)(l.Z, {
-    emojiId: null == p ? true : p.id,
-    emojiName: null != d ? d : null == p ? true : p.name,
-    animated: null != (t = null == p ? true : p.animated) && t,
-    className: s()(u.emojiIcon, h)
-  }) : (0, i.jsx)(c.Z, {
-    className: s()(u.emojiIcon, h),
-    color: o.Z.CREATOR_REVENUE_LOCKED_CHANNEL_ICON
+    className: f
+  } = e, _ = (0, l.Z)(n, i);
+  return null != _ || null != d ? (0, r.jsx)(o.Z, {
+    emojiId: null == _ ? true : _.id,
+    emojiName: null != d ? d : null == _ ? true : _.name,
+    animated: null != (t = null == _ ? true : _.animated) && t,
+    className: a()(u.emojiIcon, f)
+  }) : (0, r.jsx)(c.Z, {
+    className: a()(u.emojiIcon, f),
+    color: s.Z.CREATOR_REVENUE_LOCKED_CHANNEL_ICON
   })
 }

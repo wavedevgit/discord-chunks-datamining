@@ -51,15 +51,15 @@ function B(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let V = 2e3,
+let Z = 2e3,
+  V = {},
   F = {},
-  Z = {},
   H = {};
 
 function Y(e) {
   var t;
   return {
-    releasePhase: null == e || null == (t = e.activity) ? true : t.client_platform_config[(0, M.Z)((0, I.getOS)())].release_phase
+    releasePhase: null == e || null == (t = e.activity) ? true : t.client_platform_config[(0, j.Z)((0, I.getOS)())].release_phase
   }
 }
 
@@ -70,7 +70,7 @@ function W(e) {
     locations: r,
     source: i
   } = e;
-  return (null != r || null != i) && (Z[t] = {
+  return (null != r || null != i) && (F[t] = {
     nonce: n,
     locations: r,
     source: i
@@ -78,12 +78,12 @@ function W(e) {
 }
 
 function K(e, t) {
-  let n = Z[e];
-  if (null != n && n.nonce === t) return delete Z[e], n
+  let n = F[e];
+  if (null != n && n.nonce === t) return delete F[e], n
 }
 
 function z(e, t) {
-  setTimeout(() => K(e, t), V)
+  setTimeout(() => K(e, t), Z)
 }
 
 function q(e) {
@@ -106,7 +106,7 @@ async function X(e) {
     applicationId: n,
     location: r,
     instanceId: i
-  } = e, o = N.ZP.getEmbeddedActivityDurationMs(r.id, n), s = m.default.getSessionId();
+  } = e, o = C.ZP.getEmbeddedActivityDurationMs(r.id, n), s = m.default.getSessionId();
   null != i && null != s && await a.tn.post({
     url: U.ANM.ACTIVITY_LEAVE(n, r.id, i),
     body: {
@@ -115,14 +115,14 @@ async function X(e) {
     retries: 2,
     rejectWithError: false
   });
-  let l = F[n],
-    c = (0, x.p)(r),
-    u = (0, x.j)(r),
+  let l = V[n],
+    c = (0, L.p)(r),
+    u = (0, L.j)(r),
     d = g.Z.getChannel(c),
     f = y.default.getCurrentUser();
   if (null == l || null == f) return;
-  let _ = N.ZP.getShelfActivities(u),
-    h = (0, C.Z)({
+  let _ = C.ZP.getShelfActivities(u),
+    h = (0, N.Z)({
       applicationId: n,
       activityConfigs: _
     }),
@@ -155,7 +155,7 @@ async function X(e) {
     raw_thermal_state: b,
     duration_ms: o,
     embedded_activity_location_kind: r.kind
-  }), delete F[n]
+  }), delete V[n]
 }
 
 function Q(e) {
@@ -168,25 +168,25 @@ function Q(e) {
     embeddedActivity: c,
     location: u,
     inviterUserId: f
-  } = e, h = m.default.getId(), b = l.find(e => e.userId === h), v = (0, x.p)(u), I = (0, x.j)(u), A = g.Z.getChannel(v);
+  } = e, h = m.default.getId(), b = l.find(e => e.userId === h), v = (0, L.p)(u), I = (0, L.j)(u), A = g.Z.getChannel(v);
   if (o && null != A && A.isPrivate() && a && null == b && s.Z.selectParticipant(A.id, null), null == b) return;
   let R = E.Z.getMediaSessionId(),
     P = c.compositeInstanceId,
     w = null == R && (null == A ? true : A.isVocal()) === true && (null == A ? true : A.isPrivate()) === false;
   if (null == P || w) return;
   let D = (0, i.Z)(),
-    L = "location" in c ? 2 : 1,
-    M = y.default.getCurrentUser();
-  if (null == M) return;
-  let k = N.ZP.getShelfActivities(I),
-    j = S.Z.getState().shelfOrder,
-    G = (0, C.Z)({
+    x = "location" in c ? 2 : 1,
+    j = y.default.getCurrentUser();
+  if (null == j) return;
+  let M = C.ZP.getShelfActivities(I),
+    k = S.Z.getState().shelfOrder,
+    G = (0, N.Z)({
       applicationId: r,
-      activityConfigs: k
+      activityConfigs: M
     }),
-    B = 1 + j.findIndex(e => e === r),
+    B = 1 + k.findIndex(e => e === r),
     {
-      releasePhase: V
+      releasePhase: Z
     } = Y(G),
     H = p.Z.getRawThermalState(),
     W = null != R ? [R] : [],
@@ -195,10 +195,10 @@ function Q(e) {
       activityUserSessionId: D,
       launchId: c.launchId,
       mediaSessionIds: W,
-      activitiesInfraVersion: L
+      activitiesInfraVersion: x
     };
-  F[r] = K;
-  let z = Z[r];
+  V[r] = K;
+  let z = F[r];
   (0, T.Ew)(b.nonce) || b.nonce === (null == z ? true : z.nonce) || (z = true), O.default.track(U.rMx.ACTIVITY_SESSION_JOINED, {
     channel_id: v,
     guild_id: I,
@@ -206,11 +206,11 @@ function Q(e) {
     activity_session_id: P,
     application_id: r,
     location_stack: null == z ? true : z.locations,
-    user_premium_tier: M.premiumType,
+    user_premium_tier: j.premiumType,
     raw_thermal_state: H,
     n_participants: null != A ? _.Z.getUserParticipantCount(A.id) : null,
     is_activity_start: o,
-    release_phase: V,
+    release_phase: Z,
     shelf_rank: null == G || null == (t = G.activity) ? true : t.shelf_rank,
     shelf_sorted_rank: B > 0 ? B : null,
     activity_user_session_id: D,
@@ -233,13 +233,13 @@ function Q(e) {
     is_activity_start: o,
     shelf_rank: null == G || null == (n = G.activity) ? true : n.shelf_rank,
     shelf_sorted_rank: B > 0 ? B : null,
-    activities_infra_version: L,
+    activities_infra_version: x,
     embedded_activity_location_kind: u.kind
   })
 }
 
 function J(e) {
-  return F[e]
+  return V[e]
 }
 class $ extends Chunk317770.Z {
   _initialize() {
@@ -255,20 +255,20 @@ class $ extends Chunk317770.Z {
           location: t,
           applicationId: n
         }
-        of N.ZP.getSelfEmbeddedActivities().values()) {
-        let r = (0, x.p)(t);
-        null != r && (0, j.Z)(r) && r !== e && this.leaveActivity({
+        of C.ZP.getSelfEmbeddedActivities().values()) {
+        let r = (0, L.p)(t);
+        null != r && (0, k.Z)(r) && r !== e && this.leaveActivity({
           location: t,
           applicationId: n
         })
       }
       if (null != e) {
-        let t = N.ZP.getEmbeddedActivitiesForChannel(e),
+        let t = C.ZP.getEmbeddedActivitiesForChannel(e),
           n = m.default.getId();
         t.forEach(e => {
           if (e.userIds.has(n)) {
-            let t = (0, x.p)(e.location),
-              n = N.ZP.getSelfEmbeddedActivityForChannel(t);
+            let t = (0, L.p)(e.location),
+              n = C.ZP.getSelfEmbeddedActivityForChannel(t);
             null == n ? this.leaveActivity({
               location: e.location,
               applicationId: e.applicationId
@@ -297,7 +297,7 @@ class $ extends Chunk317770.Z {
         applicationId: a,
         isStart: o,
         locationKind: s
-      } = e, l = K(a, n), c = await (0, L.k)(t, a);
+      } = e, l = K(a, n), c = await (0, x.k)(t, a);
       this.showLaunchErrorModal(c.message);
       let u = g.Z.getChannel(r),
         d = p.Z.getRawThermalState();
@@ -325,7 +325,7 @@ class $ extends Chunk317770.Z {
             applicationId: e,
             location: t
           }
-          of N.ZP.getSelfEmbeddedActivities().values()) e === r && this.leaveActivity({
+          of C.ZP.getSelfEmbeddedActivities().values()) e === r && this.leaveActivity({
           location: t,
           applicationId: r
         });
@@ -345,7 +345,7 @@ class $ extends Chunk317770.Z {
       let t = e.channelId;
       this.handleCallEnded(t)
     }), B(this, "handleCallEnded", e => {
-      let t = N.ZP.getSelfEmbeddedActivityForChannel(e);
+      let t = C.ZP.getSelfEmbeddedActivityForChannel(e);
       null != t && this.leaveActivity({
         location: t.location,
         applicationId: t.applicationId
@@ -360,11 +360,11 @@ class $ extends Chunk317770.Z {
         inviterUserId: l
       } = e, c = g.Z.getChannel(i);
       if (true === c || h.tx.has(null == c ? true : c.type) && b.Z.getVoiceChannelId() !== i) return;
-      let u = N.ZP.getSelfEmbeddedActivityForChannel(i);
+      let u = C.ZP.getSelfEmbeddedActivityForChannel(i);
       if ((null == u ? true : u.applicationId) === a) return;
       let d = await f.ZP.fetchApplication(a);
       if (!(0, D.a)()) return void this.showLaunchErrorModal(G.intl.string(G.t.UXoQTk));
-      if (!(0, k.Z)(null == d || null == (t = d.embedded_activity_config) ? true : t.supported_platforms)) return void this.showLaunchErrorModal(G.intl.string(G.t.uGDCc3));
+      if (!(0, M.Z)(null == d || null == (t = d.embedded_activity_config) ? true : t.supported_platforms)) return void this.showLaunchErrorModal(G.intl.string(G.t.uGDCc3));
       let _ = null != (n = null == c ? true : c.getGuildId()) ? n : true,
         {
           activityConfigs: p,
@@ -372,7 +372,7 @@ class $ extends Chunk317770.Z {
         } = await (0, A.w1)({
           guildId: _
         });
-      if (null == (0, C.Z)({
+      if (null == (0, N.Z)({
           applicationId: a,
           activityConfigs: p,
           applications: m
@@ -381,13 +381,13 @@ class $ extends Chunk317770.Z {
           guildId: _,
           force: true
         });
-        (0, C.Z)({
+        (0, N.Z)({
           applicationId: a,
           activityConfigs: e.activityConfigs,
           applications: e.applications
         })
       }
-      let E = N.ZP.getEmbeddedActivitiesForChannel(i).find(e => e.applicationId === a);
+      let E = C.ZP.getEmbeddedActivitiesForChannel(i).find(e => e.applicationId === a);
       (null != (r = null == E ? true : E.userIds.size) ? r : 0) > 0 ? await (0, P.k)({
         channelId: i,
         applicationId: a,
@@ -406,11 +406,11 @@ class $ extends Chunk317770.Z {
       let {
         guild: t
       } = e;
-      N.ZP.getSelfEmbeddedActivities().forEach(e => {
+      C.ZP.getSelfEmbeddedActivities().forEach(e => {
         let {
           location: n,
           applicationId: r
-        } = e, i = (0, x.j)(n);
+        } = e, i = (0, L.j)(n);
         t.id === i && this.leaveActivity({
           location: n,
           applicationId: r
@@ -419,7 +419,7 @@ class $ extends Chunk317770.Z {
     }), B(this, "handleChannelDelete", e => {
       let {
         channel: t
-      } = e, n = N.ZP.getSelfEmbeddedActivityForChannel(t.id);
+      } = e, n = C.ZP.getSelfEmbeddedActivityForChannel(t.id);
       null != n && this.leaveActivity({
         location: n.location,
         applicationId: n.applicationId
@@ -429,7 +429,7 @@ class $ extends Chunk317770.Z {
         nonce: t,
         data: n
       } = e;
-      if (null == Z[n.applicationId]) {
+      if (null == F[n.applicationId]) {
         let e;
         n.interactionType === l.B8.APPLICATION_COMMAND ? e = [u.Z.INTERACTION_APPLICATION_COMMAND] : n.interactionType === l.B8.MESSAGE_COMPONENT ? e = [u.Z.INTERACTION_MESSAGE_COMPONENT] : n.interactionType === l.B8.MODAL_SUBMIT && (e = [u.Z.INTERACTION_MODAL_SUBMIT]), W({
           applicationId: n.applicationId,
@@ -445,7 +445,7 @@ class $ extends Chunk317770.Z {
       if (null == t) return;
       let r = H[t];
       if (null == r) return;
-      let i = Z[r];
+      let i = F[r];
       null != i && (i.interactionId = n)
     }), B(this, "handleInteractionSuccess", e => {
       let {

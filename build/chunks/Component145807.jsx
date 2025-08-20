@@ -1,7 +1,8 @@
-/** Chunk was on 26434 **/
-/** chunk id: 145807, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 145807, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => s
+  Z: () => l
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -9,22 +10,22 @@ var Chunk442837 = require("./442837.js"),
   Chunk699516 = require("./699516.js"),
   Chunk697451 = require("./697451.jsx");
 
-function a(e) {
+function s(e) {
   let {
     message: t,
     channel: n,
-    compact: a
-  } = e, s = (0, i.e7)([l.Z], () => null != t.interaction && l.Z.isBlocked(t.interaction.user.id), [t.interaction]);
+    compact: s
+  } = e, l = (0, i.e7)([a.Z], () => null != t.interaction && a.Z.isBlocked(t.interaction.user.id), [t.interaction]);
   return (0, r.jsx)(o.Z, {
     message: t,
     channel: n,
-    compact: a,
-    isInteractionUserBlocked: s
+    compact: s,
+    isInteractionUserBlocked: l
   })
 }
 
-function s(e, t, n) {
-  return null != e.interaction && "" !== e.interaction.displayName ? (0, r.jsx)(a, {
+function l(e, t, n) {
+  return null != e.interaction && "" !== e.interaction.displayName ? (0, r.jsx)(s, {
     message: e,
     channel: t,
     compact: n

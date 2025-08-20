@@ -1,5 +1,6 @@
-/** Chunk was on 26475 **/
-/** chunk id: 871320, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 871320, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   iconContainer: "iconContainer__45eb7",
   content: "content__45eb7",

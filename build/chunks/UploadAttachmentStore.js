@@ -122,7 +122,7 @@ function A(e) {
   b(t, r, n)
 }
 
-function N(e) {
+function C(e) {
   let {
     channelId: t,
     draftType: n
@@ -130,7 +130,7 @@ function N(e) {
   b(t, n, [])
 }
 
-function C(e) {
+function N(e) {
   let {
     baseChannelId: t
   } = e;
@@ -166,8 +166,8 @@ let P = new R(Chunk570140.Z, {
   UPLOAD_ATTACHMENT_UPDATE_FILE: T,
   UPLOAD_ATTACHMENT_REMOVE_FILE: v,
   UPLOAD_ATTACHMENT_REMOVE_FILES: I,
-  UPLOAD_ATTACHMENT_CLEAR_ALL_FILES: N,
+  UPLOAD_ATTACHMENT_CLEAR_ALL_FILES: C,
   UPLOAD_ATTACHMENT_SET_UPLOADS: A,
   UPLOAD_ATTACHMENT_SET_FILE: S,
-  SIDEBAR_CLOSE: C
+  SIDEBAR_CLOSE: N
 })

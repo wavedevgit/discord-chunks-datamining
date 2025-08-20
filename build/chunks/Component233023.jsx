@@ -37,10 +37,10 @@ function m(e) {
   if (null == t && null == E) return null;
   let S = null == t ? true : t.emoji,
     A = null == t ? true : t.state,
-    N = I ? (0, c.Z)(t) : null,
-    C = null != N ? "".concat((0, u.Z)(N), ": ") : null,
+    C = I ? (0, c.Z)(t) : null,
+    N = null != C ? "".concat((0, u.Z)(C), ": ") : null,
     R = null != A && "" !== A,
-    P = R || null != N,
+    P = R || null != C,
     w = null;
   null != E && T ? w = (0, r.jsx)(d.Z, {
     className: a()(i, h.hangStatusIcon),
@@ -52,20 +52,20 @@ function m(e) {
     hideTooltip: v || P
   }));
   let D = R && (null != w ? " ".concat(A) : A),
-    L = () => {
-      let e = null != S && !O && !R && null == N;
+    x = () => {
+      let e = null != S && !O && !R && null == C;
       return v || e ? (0, r.jsxs)(r.Fragment, {
-        children: [C, w, D]
+        children: [N, w, D]
       }) : (0, r.jsxs)(s.Z, {
         delay: p.X,
         tooltipClassName: m,
-        children: [C, w, D]
+        children: [N, w, D]
       })
     };
   return (0, r.jsx)(o.Text, {
     variant: "text-".concat(b, "/medium"),
     color: "none",
     className: a()(h.truncated, n),
-    children: L()
+    children: x()
   })
 }

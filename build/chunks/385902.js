@@ -1,4 +1,4 @@
-/** Chunk was on 69003 **/
+/** Chunk was on 91488 **/
 /** chunk id: 385902, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   K: () => O,
@@ -45,24 +45,24 @@ function O(e, t) {
   let O = (0, l.e7)([o.Z], () => o.Z.getGuild(e)),
     _ = (0, l.e7)([a.Z], () => a.Z.hasLayers()),
     y = null != (b = (0, u.Z)(e)) && b,
-    v = (0, c.q8)(e, t),
-    j = (0, l.e7)([s.Z], () => s.Z.getStateForGuild(e)),
-    C = (null == j || null == (n = j.unlockedPowerups) ? true : n[i.A$]) != null,
-    E = null == j || null == (d = j.allPowerups) ? true : d[i.A$],
-    x = null == E ? true : E.storeRemovalDate,
-    S = null == j || null == (h = j.allPowerups) ? true : h[i.XW],
+    j = (0, c.q8)(e, t),
+    v = (0, l.e7)([s.Z], () => s.Z.getStateForGuild(e)),
+    C = (null == v || null == (n = v.unlockedPowerups) ? true : n[i.A$]) != null,
+    x = null == v || null == (d = v.allPowerups) ? true : d[i.A$],
+    E = null == x ? true : x.storeRemovalDate,
+    S = null == v || null == (h = v.allPowerups) ? true : h[i.XW],
     {
-      onActivate: P
+      onActivate: I
     } = (0, f._C)(e, S),
-    I = !_ && y && v && C && null != E && null != x && null != S && null != O,
+    P = !_ && y && j && C && null != x && null != E && null != S && null != O,
     N = r.useCallback(e => {
-      P(e)
-    }, [P]),
+      I(e)
+    }, [I]),
     w = r.useMemo(() => {
-      if (!I) return null;
-      let e = (0, p.Z)(x);
+      if (!P) return null;
+      let e = (0, p.Z)(E);
       return {
-        firstHeader: E.title,
+        firstHeader: x.title,
         secondHeader: m.intl.formatToPlainString(g.default["8imxAg"], {
           dateString: e
         }),
@@ -71,15 +71,15 @@ function O(e, t) {
         }),
         secondBody: m.intl.formatToPlainString(g.default.D09fdn, {
           dateString: e,
-          boostCount: E.cost
+          boostCount: x.cost
         }),
         thirdBody: m.intl.string(g.default["+zvKPj"]),
         primaryButtonText: m.intl.string(g.default["0uo/LC"]),
         onPrimaryClick: N
       }
-    }, [I, E, x, O, N]);
+    }, [P, x, E, O, N]);
   return {
-    shouldShow: I,
+    shouldShow: P,
     modalConfig: w
   }
 }

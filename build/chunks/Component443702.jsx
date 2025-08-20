@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 443702, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 443702, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => N
+  Z: () => w
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -25,11 +26,51 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk61365 = require("./61365.js");
-let S = () => (0, Chunk951288.jsx)("div", {
+
+function S(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function A(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      S(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function C(e, t) {
+  if (null == e) return {};
+  var n, r, i = N(e, t);
+  if (Object.getOwnPropertySymbols) {
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+  }
+  return i
+}
+
+function N(e, t) {
+  if (null == e) return {};
+  var n, r, i = {},
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+  return i
+}
+let R = () => (0, Chunk951288.jsx)("div", {
   className: Chunk61365.syncing,
   children: (0, Chunk951288.jsx)(Chunk481060.$jN, {})
 });
-class T extends Chunk647438.PureComponent {
+class P extends Chunk647438.PureComponent {
   componentDidMount() {
     Chunk570140.Z.wait(() => {
       Chunk355467.tZ(), Chunk355467.jg()
@@ -43,14 +84,14 @@ class T extends Chunk647438.PureComponent {
       syncing: e,
       hide: t,
       paymentSources: n,
-      defaultPaymentSourceId: r,
-      locale: s,
-      premiumSubscription: l,
-      isRemovingPaymentSource: o,
+      defaultPaymentSourceId: i,
+      locale: a,
+      premiumSubscription: s,
+      isRemovingPaymentSource: l,
       isUpdatingPaymentSource: c
     } = this.props;
     return exports ? (0, Chunk951288.jsx)(Chunk497321.Z, {}) : (0, Chunk951288.jsxs)("div", {
-      children: [module && 0 === Object.keys(require).length ? (0, Chunk951288.jsx)(S, {}) : (0, Chunk951288.jsx)(Chunk921801.F, {
+      children: [module && 0 === Object.keys(require).length ? (0, Chunk951288.jsx)(R, {}) : (0, Chunk951288.jsx)(Chunk921801.F, {
         setting: Chunk726985.s6.BILLING_PAYMENT_METHODS,
         children: (0, Chunk951288.jsx)(Chunk390954.Z, {
           paymentSources: require,
@@ -85,7 +126,7 @@ class T extends Chunk647438.PureComponent {
   }
 }
 
-function N() {
+function w() {
   let e = (0, Chunk442837.cj)([Chunk706454.default, Chunk351402.Z, Chunk853872.Z, Chunk594174.default, Chunk246946.Z, Chunk78839.Z], () => {
     let e = Chunk78839.Z.getPremiumTypeSubscription(),
       t = Chunk594174.default.getCurrentUser();
@@ -105,40 +146,9 @@ function N() {
       isUpdatingPaymentSource: Chunk351402.Z.isUpdatingPaymentSource
     }
   });
-  if (!module.shouldRenderBillingSettings) return (0, Chunk951288.jsx)(S, {});
+  if (!module.shouldRenderBillingSettings) return (0, Chunk951288.jsx)(R, {});
   let {
     shouldRenderBillingSettings: t
-  } = module, n = function(e, t) {
-    if (null == e) return {};
-    var n, i, r = function(e, t) {
-      if (null == e) return {};
-      var n, i, r = {},
-        s = Object.keys(e);
-      for (i = 0; i < s.length; i++) n = s[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
-      return r
-    }(e, t);
-    if (Object.getOwnPropertySymbols) {
-      var s = Object.getOwnPropertySymbols(e);
-      for (i = 0; i < s.length; i++) n = s[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
-    }
-    return r
-  }(module, ["shouldRenderBillingSettings"]);
-  return (0, Chunk951288.jsx)(T, function(e) {
-    for (var t = 1; t < arguments.length; t++) {
-      var n = null != arguments[t] ? arguments[t] : {},
-        i = Object.keys(n);
-      "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-        return Object.getOwnPropertyDescriptor(n, e).enumerable
-      }))), i.forEach(function(t) {
-        var i;
-        i = n[t], t in e ? Object.defineProperty(e, t, {
-          value: i,
-          enumerable: true,
-          configurable: true,
-          writable: true
-        }) : e[t] = i
-      })
-    }
-    return e
-  }({}, require))
+  } = module, n = C(module, ["shouldRenderBillingSettings"]);
+  return (0, Chunk951288.jsx)(P, A({}, require))
 }

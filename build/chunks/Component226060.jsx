@@ -1,12 +1,13 @@
-/** Chunk was on 26434 **/
-/** chunk id: 226060, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 226060, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => y
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk512722 = require("./512722.js"),
-  l = require.n(Chunk512722),
+  a = require.n(Chunk512722),
   Chunk399606 = require("./399606.js"),
   Chunk481060 = require("./481060.js"),
   Chunk607070 = require("./607070.js"),
@@ -18,64 +19,79 @@ var Chunk512722 = require("./512722.js"),
   Chunk400916 = require("./400916.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function _(e) {
+function m(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function g(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      m(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function E(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function b(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+
+function y(e) {
   let {
     guildId: t,
     guildProductListingId: n,
     sourceAnalyticsLocations: i
-  } = e, _ = (0, o.e7)([p.Z], () => p.Z.getGuildProduct(n)), h = (0, o.e7)([c.Z], () => c.Z.getGuild(t), [t]), b = (0, o.e7)([s.Z], () => s.Z.useReducedMotion), E = (0, u.n)();
-  return (l()(null != h, "guild cannot be null"), l()(null != _, "guildProductListing cannot be null"), (0, d.SO)(h)) ? (0, r.jsx)(a.ua7, {
-    text: g.intl.string(g.t.sAJr9f),
-    children: e => {
-      var t, n;
-      return (0, r.jsx)(a.zxk, (t = function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-              value: r,
-              enumerable: true,
-              configurable: true,
-              writable: true
-            }) : e[t] = r
-          })
-        }
-        return e
-      }({
-        variant: "primary",
-        text: g.intl.string(g.t.xUi3BA)
-      }, e), n = n = {
-        disabled: true
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, r)
-        }
-        return n
-      })(Object(n)).forEach(function(e) {
-        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-      }), t))
-    }
-  }) : _.has_entitlement ? null != _.attachments ? (0, r.jsx)(f.Z, {
-    guildId: h.id,
-    productId: _.id
-  }) : (0, r.jsx)(a.zxk, {
+  } = e, m = (0, o.e7)([f.Z], () => f.Z.getGuildProduct(n)), E = (0, o.e7)([c.Z], () => c.Z.getGuild(t), [t]), y = (0, o.e7)([l.Z], () => l.Z.useReducedMotion), O = (0, u.n)();
+  if (a()(null != E, "guild cannot be null"), a()(null != m, "guildProductListing cannot be null"), (0, d.SO)(E)) return (0, r.jsx)(s.ua7, {
+    text: h.intl.string(h.t.sAJr9f),
+    children: e => (0, r.jsx)(s.zxk, b(g({
+      variant: "primary",
+      text: h.intl.string(h.t.xUi3BA)
+    }, e), {
+      disabled: true
+    }))
+  });
+  if (m.has_entitlement) return null != m.attachments ? (0, r.jsx)(p.Z, {
+    guildId: E.id,
+    productId: m.id
+  }) : (0, r.jsx)(s.zxk, {
     variant: "secondary",
-    text: g.intl.string(g.t.RcTOGB),
+    text: h.intl.string(h.t.RcTOGB),
     disabled: true
-  }) : (0, r.jsx)(a.gtL, {
-    shineSize: a.gtL.ShineSizes.SMALL,
-    pauseAnimation: b || !E,
-    onClick: () => (0, m.z)({
-      guildProductListing: _,
-      guildId: h.id,
+  });
+  {
+    let e = () => (0, _.z)({
+      guildProductListing: m,
+      guildId: E.id,
       sourceAnalyticsLocations: i
-    }),
-    children: g.intl.string(g.t.xUi3BA)
-  })
+    });
+    return (0, r.jsx)(s.gtL, {
+      shineSize: s.gtL.ShineSizes.SMALL,
+      pauseAnimation: y || !O,
+      onClick: e,
+      children: h.intl.string(h.t.xUi3BA)
+    })
+  }
 }

@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 333576, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 333576, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => u
+  Z: () => d
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -12,7 +13,7 @@ var Chunk693789 = require("./693789.jsx"),
   Chunk52647 = require("./52647.js"),
   Chunk450272 = require("./450272.jsx"),
   Chunk981631 = require("./981631.js");
-let u = function() {
+let d = function() {
   let {
     resetOnboardingAnnouncementModal: e,
     resetQuestStatus: t

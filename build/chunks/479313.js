@@ -122,7 +122,7 @@ function A(e, t) {
     rating: t
   })
 }
-async function N() {
+async function C() {
   var e;
   let t, n;
   if (!Chunk765104.Z.shouldFetchChannelAffinities()) return Promise.resolve(null);
@@ -148,7 +148,7 @@ async function N() {
     receivedAt: Date.now()
   })
 }
-async function C(e) {
+async function N(e) {
   let t, n, {
     useQuickSwitcher: r = true,
     useChannelAffinities: i = true
@@ -205,9 +205,9 @@ function R() {
     exports && module();
     async function e() {
       try {
-        await N()
+        await C()
       } catch (e) {}
-      await C(require.split(","))
+      await N(require.split(","))
     }
   }, [require, exports])
 }
@@ -230,7 +230,7 @@ let w = {
   setSelectedSummary: T,
   setHighlightedSummary: v,
   fetchSummaries: O,
-  fetchSummariesBulk: C,
+  fetchSummariesBulk: N,
   useChannelSummaries: function(e) {
     let {
       channelIds: t = []

@@ -1,5 +1,6 @@
-/** Chunk was on 96750 **/
-/** chunk id: 335189, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 335189, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   row: "row__6500b",
   container: "container__6500b",

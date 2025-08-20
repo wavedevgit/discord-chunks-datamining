@@ -2,11 +2,11 @@
 /** chunk id: 701488, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $y: () => x,
+  $y: () => L,
   Cr: () => y,
   Ev: () => s,
   Fu: () => m,
-  GM: () => L,
+  GM: () => x,
   Gu: () => w,
   In: () => p,
   JT: () => h,
@@ -18,7 +18,7 @@ require.d(exports, {
   Si: () => g,
   Ws: () => v,
   Zc: () => _,
-  cE: () => N,
+  cE: () => C,
   cc: () => a,
   d: () => o,
   eB: () => E,
@@ -64,10 +64,10 @@ var O = function(e) {
   }({});
 let S = new Set([c, u, d, f]),
   A = new Set([u, d, f]);
-var N = function(e) {
+var C = function(e) {
   return e[e.FOCUSED = 0] = "FOCUSED", e[e.PIP = 1] = "PIP", e[e.GRID = 2] = "GRID", e
 }({});
-let C = {
+let N = {
     label_type: Chunk911969.ww.NONE,
     release_phase: "",
     label_from: null,
@@ -82,9 +82,9 @@ let C = {
     tablet_default_orientation_lock_state: 1,
     supported_platforms: [Chunk911969.C3.WEB],
     client_platform_config: {
-      [Chunk911969.C3.WEB]: C,
-      [Chunk911969.C3.IOS]: C,
-      [Chunk911969.C3.ANDROID]: C
+      [Chunk911969.C3.WEB]: N,
+      [Chunk911969.C3.IOS]: N,
+      [Chunk911969.C3.ANDROID]: N
     },
     has_csp_exception: false,
     displays_advertisements: false
@@ -92,7 +92,7 @@ let C = {
   P = [Chunk981631.d4z.GUILD_TEXT, Chunk981631.d4z.DM, Chunk981631.d4z.GROUP_DM],
   w = [...P, Chunk981631.d4z.GUILD_VOICE],
   D = "https://support-dev.discord.com/hc/en-us/articles/21692628851351-Private-Activity-Safety";
-var L = function(e) {
+var x = function(e) {
   return e.NORMAL = "normal", e.FULL_SCREEN = "full-screen", e
 }({});
-let x = 216e5
+let L = 216e5

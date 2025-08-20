@@ -7,7 +7,7 @@ require.d(exports, {
   dg: () => v,
   dp: () => g,
   f3: () => b,
-  iL: () => N,
+  iL: () => C,
   nA: () => I,
   qF: () => m,
   uV: () => y,
@@ -123,7 +123,7 @@ function A() {
   return null != module && module.isStaff() ? h : p
 }
 
-function N(e) {
+function C(e) {
   let {
     guildId: t,
     onClick: n

@@ -1,8 +1,8 @@
-/** Chunk was on 69003 **/
+/** Chunk was on 91488 **/
 /** chunk id: 583962, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   PD: () => A,
-  ZP: () => L,
+  ZP: () => M,
   aR: () => R
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -71,41 +71,41 @@ let T = (0, Chunk624138.Mg)(Chunk477690.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITI
     tension: 180,
     friction: 80
   },
-  L = Chunk647438.memo(e => {
+  M = Chunk647438.memo(e => {
     let {
       guild: t,
       tooltipTypes: l,
       withMargin: d
-    } = e, v = (0, y.Jh)(t.id), T = (0, b.Z)(t.id), A = (0, y.FZ)(v), R = null == A, L = null != A ? A : v, M = (0, c.e7)([C.Z], () => {
+    } = e, j = (0, y.Jh)(t.id), T = (0, b.Z)(t.id), A = (0, y.FZ)(j), R = null == A, M = null != A ? A : j, L = (0, c.e7)([C.Z], () => {
       var e;
       return null != (e = C.Z.getCountForGuild(t.id)) ? e : 0
-    }), k = (0, c.e7)([O.Z], () => O.Z.can(x.Plq.MANAGE_GUILD, t));
+    }), k = (0, c.e7)([O.Z], () => O.Z.can(E.Plq.MANAGE_GUILD, t));
     i.useEffect(() => {
-      M !== T && (0, j.v)(t.id, T)
-    }, [t.id, M, T]);
-    let U = R ? "100%" : "".concat(Math.min(100, T / x.oCV[L] * 100), "%"),
+      L !== T && (0, v.v)(t.id, T)
+    }, [t.id, L, T]);
+    let U = R ? "100%" : "".concat(Math.min(100, T / E.oCV[M] * 100), "%"),
       {
         current: G
       } = i.useRef(U),
       [B] = (0, p.q_F)(() => ({
         from: {
-          width: M === T ? G : "0%"
+          width: L === T ? G : "0%"
         },
         to: {
           width: U
         },
         config: D
-      }), "respect-motion-settings", [M, T, G, U]),
-      V = t.premiumTier < L && M >= x.oCV[L],
-      F = (0, E.Z)(t, h.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY),
-      H = P.intl.formatToPlainString(P.t["2oNfMT"], {
-        levelName: (0, y.e9)(L)
+      }), "respect-motion-settings", [L, T, G, U]),
+      V = t.premiumTier < M && L >= E.oCV[M],
+      F = (0, x.Z)(t, h.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY),
+      H = I.intl.formatToPlainString(I.t["2oNfMT"], {
+        levelName: (0, y.e9)(M)
       }),
-      z = P.intl.format(P.t.dhKnYm, {
+      z = I.intl.format(I.t.dhKnYm, {
         numBoosts: T,
-        numTotal: x.oCV[L]
+        numTotal: E.oCV[M]
       });
-    R && (H = (0, y.e9)(L), z = P.intl.format(P.t.B2byER, {
+    R && (H = (0, y.e9)(M), z = I.intl.format(I.t.B2byER, {
       numBoosts: T
     })), H = H.toLocaleLowerCase();
     let W = (0, s.JA)("boosts-".concat(t.id)),
@@ -177,7 +177,7 @@ let T = (0, Chunk624138.Mg)(Chunk477690.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITI
             className: N.progressBar,
             style: B
           }), R ? (0, r.jsx)("span", {
-            "aria-label": P.intl.string(P.t["7iL1q6"]),
+            "aria-label": I.intl.string(I.t["7iL1q6"]),
             role: "img",
             className: N.tadaIcon,
             children: "\uD83C\uDF89"
@@ -186,10 +186,10 @@ let T = (0, Chunk624138.Mg)(Chunk477690.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITI
       }));
     return (0, r.jsx)("li", {
       children: (0, r.jsx)(p.ua7, {
-        text: V ? P.intl.formatToPlainString(I.default["9CtPjo"], {
-          perk: (0, y.nW)(L)
-        }) : R ? P.intl.string(P.t["Y+V9go"]) : P.intl.formatToPlainString(P.t.UyDKl5, {
-          levelName: (0, y.nW)(L)
+        text: V ? I.intl.formatToPlainString(P.default["9CtPjo"], {
+          perk: (0, y.nW)(M)
+        }) : R ? I.intl.string(I.t["Y+V9go"]) : I.intl.formatToPlainString(I.t.UyDKl5, {
+          levelName: (0, y.nW)(M)
         }),
         position: "top",
         delay: 200,

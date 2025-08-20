@@ -1,5 +1,5 @@
-/** Chunk was on 31930 **/
-/** chunk id: 486807, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 486807, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 module.exports = {
   tabBarItemContainer: "tabBarItemContainer_c7e907",

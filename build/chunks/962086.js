@@ -6,8 +6,8 @@ require.d(exports, {
   aq: () => R,
   iD: () => v,
   mL: () => T,
-  og: () => C,
-  zS: () => N
+  og: () => N,
+  zS: () => C
 }), require("./388685.js");
 var Chunk570140 = require("./570140.js"),
   Chunk367907 = require("./367907.js"),
@@ -113,11 +113,11 @@ function A(e, t) {
     if (null == t) returnfalse;
     if (r.some(e => !t.roles.includes(e))) returntrue;
     let i = [...s.ZP.getSelectableChannelIds(e), ...s.ZP.getVocalChannelIds(e)].filter(e => !n.includes(e));
-    return i.length > 0 && N(e, i, []), false
+    return i.length > 0 && C(e, i, []), false
   })
 }
 
-function N(e, t, n) {
+function C(e, t, n) {
   let r = new Set(f.ZP.getOptedInChannels(e));
   t.forEach(e => r.add(e)), n.forEach(e => r.delete(e)), I(e, {
     type: h.z.NEW_MEMBER,
@@ -125,7 +125,7 @@ function N(e, t, n) {
   })
 }
 
-function C(e, t) {
+function N(e, t) {
   A(e, t);
   let n = {};
   for (let r of c.Z.getManyRoles(e, t)) n[r.id] = r;

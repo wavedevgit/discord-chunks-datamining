@@ -1,5 +1,6 @@
-/** Chunk was on 21046 **/
-/** chunk id: 70858, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 70858, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   contentExpanded: "contentExpanded_f339f7",
   contentInteractable: "contentInteractable_f339f7",

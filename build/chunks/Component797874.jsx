@@ -74,7 +74,7 @@ let T = function(e) {
         guildId: S
       }))
     })
-  } : true, N = null != v ? (0, r.jsx)("img", {
+  } : true, C = null != v ? (0, r.jsx)("img", {
     alt: "",
     className: o()(b.icon, b.imageIcon),
     src: h.ZP.getApplicationIconURL({
@@ -82,7 +82,7 @@ let T = function(e) {
       icon: v.icon,
       size: 32
     })
-  }) : null, C = (0, d.ZP)({
+  }) : null, N = (0, d.ZP)({
     applicationId: t,
     location: "GameMention",
     source: u.m1.GameMention,
@@ -111,13 +111,13 @@ let T = function(e) {
           ref: y
         }, e), {
           onClick: n => {
-            if (C.shouldOpenGameProfile && null != t) {
+            if (N.shouldOpenGameProfile && null != t) {
               var r;
               null == (r = e.onClick) || r.call(e, n)
             } else R()
           },
           children: [(0, r.jsx)(g.Z, {
-            children: N
+            children: C
           }), (0, r.jsx)("span", {
             className: b.name,
             children: null != (n = null == v ? true : v.name) ? n : E.intl.string(E.t["11pdXV"])

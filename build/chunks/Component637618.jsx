@@ -1,7 +1,8 @@
-/** Chunk was on 26434 **/
-/** chunk id: 637618, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 637618, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => f
 }), require("./388685.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -14,21 +15,21 @@ var Chunk990547 = require("./990547.js"),
   Chunk675297 = require("./675297.jsx"),
   Chunk20281 = require("./20281.js");
 
-function p(e) {
+function f(e) {
   let {
     code: t
-  } = e, [n, p] = t.split("-"), m = (0, c.hO)(n, p), f = (0, l.e7)([s.Z], () => s.Z.getGuildId());
-  return ((0, a.Z)({
+  } = e, [n, f] = t.split("-"), _ = (0, c.hO)(n, f), p = (0, a.e7)([l.Z], () => l.Z.getGuildId());
+  return ((0, s.Z)({
     type: d.n.VIEW,
     name: i.ImpressionNames.GUILD_PRODUCT_LISTING_EMBED,
     properties: {
-      guild_product_listing_id: p,
-      has_entitlement: (null == m ? true : m.has_entitlement) === true
+      guild_product_listing_id: f,
+      has_entitlement: (null == _ ? true : _.has_entitlement) === true
     }
   }, {
-    disableTrack: null == m
-  }), null == m || f !== n) ? null : (0, r.jsx)(u.H, {
-    guildProductListing: m,
+    disableTrack: null == _
+  }), null == _ || p !== n) ? null : (0, r.jsx)(u.H, {
+    guildProductListing: _,
     guildId: n,
     location: o.Z.GUILD_PRODUCT_EMBED_CARD,
     cardWidth: 390,

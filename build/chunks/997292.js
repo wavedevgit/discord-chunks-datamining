@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 997292, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 997292, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  r: () => g
+  r: () => p
 });
 var Chunk106351 = require("./106351.js"),
   Chunk475179 = require("./475179.js"),
@@ -14,7 +15,7 @@ var Chunk106351 = require("./106351.js"),
   Chunk944486 = require("./944486.js"),
   Chunk914010 = require("./914010.js"),
   Chunk981631 = require("./981631.js");
-let g = {
+let p = {
   binds: ["mod+u"],
   comboKeysBindGlobal: true,
   action() {
@@ -24,8 +25,8 @@ let g = {
     if (null != exports && null != require && require.type === Chunk106351.d.GUILD_VOICE) return Chunk475179.Z.updateChatOpen(exports, !Chunk358221.Z.getChatOpen(exports)), false;
     if (null != exports && null != require && require.type === Chunk106351.d.DM) {
       let e = Chunk433355.ZP.getSection(exports, null == require ? true : require.isDM()),
-        i = (0, Chunk687158.Of)(require.getRecipientId()),
-        r = module === Chunk981631.ULH.PROFILE;
+        r = (0, Chunk687158.Of)(require.getRecipientId()),
+        i = module === Chunk981631.ULH.PROFILE;
       return (0, Chunk221292.TY)({
         displayProfile: Chunk106351,
         isProfileOpen: !Chunk475179

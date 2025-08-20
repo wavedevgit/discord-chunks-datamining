@@ -2,8 +2,8 @@
 /** chunk id: 609218, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => j,
-  p: () => k
+  Z: () => k,
+  p: () => M
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -38,41 +38,41 @@ var Chunk951288 = require("./951288.js"),
   Chunk42948 = require("./42948.js"),
   Chunk109194 = require("./109194.js"),
   Chunk352812 = require("./352812.js"),
-  k = function(e) {
+  M = function(e) {
     return e[e.NONE = 0] = "NONE", e[e.PARENT_CONTAINER = 1] = "PARENT_CONTAINER", e[e.TAB_PARENT_CONTAINER = 2] = "TAB_PARENT_CONTAINER", e
   }({});
 
-function j(e) {
+function k(e) {
   let {
     containerContext: t,
     image: n,
     title: a,
-    description: k,
-    enableSocialProof: j,
+    description: M,
+    enableSocialProof: k,
     analyticsLocationSection: U,
     upsellViewedTrackingData: G,
     onClose: B,
-    onDisplay: V,
-    onLearnMore: F,
-    isEmojiPickerOverlay: Z = false
+    onDisplay: Z,
+    onLearnMore: V,
+    isEmojiPickerOverlay: F = false
   } = e, H = (0, s.e7)([b.Z], () => b.Z.affinities), Y = (0, s.e7)([b.Z], () => b.Z.hasFetched);
   i.useEffect(() => {
-    !Y && j && f.MH()
-  }, [Y, j]), i.useEffect(() => {
-    m.default.track(N.rMx.PREMIUM_UPSELL_VIEWED, G), null == V || V()
-  }, [V, G]);
-  let W = H.length > 1 && j,
+    !Y && k && f.MH()
+  }, [Y, k]), i.useEffect(() => {
+    m.default.track(C.rMx.PREMIUM_UPSELL_VIEWED, G), null == Z || Z()
+  }, [Z, G]);
+  let W = H.length > 1 && k,
     K = () => 2 === t ? P.hasTabParentContainer : 1 === t ? P.hasParentContainer : P.noParentContainer,
     z = () => {
-      m.default.track(N.rMx.PREMIUM_PROMOTION_OPENED, {
+      m.default.track(C.rMx.PREMIUM_PROMOTION_OPENED, {
         location_section: U,
-        location_object: N.qAy.NAVIGATION_LINK
-      }), null == F || F(), (0, p.Z)(), B(), (0, _.xf)(), (0, h.uL)(N.Z5c.APPLICATION_STORE)
+        location_object: C.qAy.NAVIGATION_LINK
+      }), null == V || V(), (0, p.Z)(), B(), (0, _.xf)(), (0, h.uL)(C.Z5c.APPLICATION_STORE)
     },
     q = (0, O.N)(),
     X = i.useCallback(() => {
       var e;
-      return null != (e = (0, E.fr)(q)) ? e : C.intl.string(C.t.pj0XBA)
+      return null != (e = (0, E.fr)(q)) ? e : N.intl.string(N.t.pj0XBA)
     }, [q]),
     Q = (0, y.Z)({
       location: "PremiumUpsellPickerOverlay"
@@ -80,8 +80,8 @@ function j(e) {
     J = (0, T.Z)(A.Si.TIER_2);
   if (Q) {
     let e;
-    e = Z ? (0, g.rO)() ? D.Z : L.Z : (0, g.rO)() ? x.Z : M.Z;
-    let t = Z ? "nitro-pink" : "green";
+    e = F ? (0, g.rO)() ? D.Z : x.Z : (0, g.rO)() ? L.Z : j.Z;
+    let t = F ? "nitro-pink" : "green";
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(d.ZMr, {
         onClick: B,
@@ -120,7 +120,7 @@ function j(e) {
               variant: "text-md/medium",
               color: "text-secondary",
               className: R.body,
-              children: k
+              children: M
             })]
           })]
         }), (0, r.jsx)("div", {
@@ -130,12 +130,12 @@ function j(e) {
             children: [(0, r.jsx)(d.zxk, {
               variant: "secondary",
               onClick: z,
-              text: C.intl.string(C.t.ZnqyZ2),
+              text: N.intl.string(N.t.ZnqyZ2),
               fullWidth: true
             }), (0, r.jsx)(v.Z, {
               premiumModalAnalyticsLocation: {
                 section: U,
-                object: N.qAy.BUTTON_CTA
+                object: C.qAy.BUTTON_CTA
               },
               subscriptionTier: A.Si.TIER_2,
               onClick: () => {
@@ -178,7 +178,7 @@ function j(e) {
         }), (0, r.jsx)(d.Text, {
           variant: "text-sm/medium",
           className: P.body,
-          children: k
+          children: M
         })]
       }), (0, r.jsxs)("div", {
         className: P.ctaContainer,
@@ -189,12 +189,12 @@ function j(e) {
           color: u.zx.Colors.CUSTOM,
           look: u.zx.Looks.LINK,
           onClick: z,
-          children: C.intl.string(C.t.ZnqyZ2)
+          children: N.intl.string(N.t.ZnqyZ2)
         }), (0, r.jsx)(I.Z, {
           showGradient: true,
           premiumModalAnalyticsLocation: {
             section: U,
-            object: N.qAy.BUTTON_CTA
+            object: C.qAy.BUTTON_CTA
           },
           subscriptionTier: A.Si.TIER_2,
           size: u.zx.Sizes.SMALL,

@@ -1,7 +1,8 @@
-/** Chunk was on 21046 **/
-/** chunk id: 941348, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 941348, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => f
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -12,71 +13,71 @@ var Chunk951288 = require("./951288.js"),
   Chunk495722 = require("./495722.jsx"),
   Chunk321025 = require("./321025.jsx"),
   Chunk975888 = require("./975888.js");
-let p = function(e) {
+let f = function(e) {
   var t;
   let {
     expandedContentRef: n,
-    expansionSpring: p,
-    isExpanded: m,
-    isExpansionAnimationComplete: f,
-    onCtxMenuOpened: g,
-    onCtxMenuClosed: x,
-    onCtxMenuSelection: h,
-    quest: b,
-    useReducedMotion: _,
-    collapsedHeight: j,
-    shouldShowRewardsCTAWhenCollapsed: v
-  } = e, C = s.useRef(null), y = s.useRef(null), E = (null == (t = b.userStatus) ? true : t.enrolledAt) != null, O = (0, o.Rf)(b);
-  return (0, r.jsxs)(i.p, {
+    expansionSpring: f,
+    isExpanded: _,
+    isExpansionAnimationComplete: p,
+    onCtxMenuOpened: h,
+    onCtxMenuClosed: m,
+    onCtxMenuSelection: g,
+    quest: E,
+    useReducedMotion: b,
+    collapsedHeight: y,
+    shouldShowRewardsCTAWhenCollapsed: O
+  } = e, v = i.useRef(null), I = i.useRef(null), T = (null == (t = E.userStatus) ? true : t.enrolledAt) != null, S = (0, a.Rf)(E);
+  return (0, r.jsxs)(s.p, {
     expandedContentRef: n,
-    collapsedContentRef: C,
-    expansionSpring: p,
+    collapsedContentRef: v,
+    expansionSpring: f,
     children: [(0, r.jsx)(l.Z, {
-      ref: C,
-      className: u.content,
-      expansionSpring: p,
-      isExpanded: m,
-      isExpansionAnimationComplete: f,
-      quest: b,
-      useReducedMotion: _,
-      taskDetails: O,
-      onCtxMenuOpen: g,
-      onCtxMenuClose: x,
-      onCtxMenuSelect: h,
-      overlayRef: y,
-      shouldShowRewardsCTAWhenCollapsed: v
-    }, v ? "collapsed-with-rewards" : "collapsed-without-rewards"), (0, r.jsx)(c.Z, {
-      expansionSpring: p,
-      className: u.content,
-      collapsedHeight: j,
-      onCtxMenuOpen: g,
-      onCtxMenuClose: x,
-      onCtxMenuSelect: h,
-      overlayRef: y,
-      isExpanded: m,
-      isExpansionAnimationComplete: f,
-      quest: b,
-      useReducedMotion: _,
+      ref: v,
+      className: d.content,
+      expansionSpring: f,
+      isExpanded: _,
+      isExpansionAnimationComplete: p,
+      quest: E,
+      useReducedMotion: b,
+      taskDetails: S,
+      onCtxMenuOpen: h,
+      onCtxMenuClose: m,
+      onCtxMenuSelect: g,
+      overlayRef: I,
+      shouldShowRewardsCTAWhenCollapsed: O
+    }, O ? "collapsed-with-rewards" : "collapsed-without-rewards"), (0, r.jsx)(c.Z, {
+      expansionSpring: f,
+      className: d.content,
+      collapsedHeight: y,
+      onCtxMenuOpen: h,
+      onCtxMenuClose: m,
+      onCtxMenuSelect: g,
+      overlayRef: I,
+      isExpanded: _,
+      isExpansionAnimationComplete: p,
+      quest: E,
+      useReducedMotion: b,
       ref: n,
-      taskDetails: O,
+      taskDetails: S,
       children: (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(d.Z, {
-          expansionSpring: p,
-          isExpanded: m
-        }), !E && (0, r.jsx)(a.Z, {
-          quest: b,
-          expansionSpring: p,
-          useReducedMotion: _,
-          isExpanded: m,
-          isExpansionAnimationComplete: f,
-          onCtxMenuOpen: g,
-          onCtxMenuClose: x,
-          onCtxMenuSelect: h
+        children: [(0, r.jsx)(u.Z, {
+          expansionSpring: f,
+          isExpanded: _
+        }), !T && (0, r.jsx)(o.Z, {
+          quest: E,
+          expansionSpring: f,
+          useReducedMotion: b,
+          isExpanded: _,
+          isExpansionAnimationComplete: p,
+          onCtxMenuOpen: h,
+          onCtxMenuClose: m,
+          onCtxMenuSelect: g
         })]
       })
     }), (0, r.jsx)("div", {
-      ref: y,
-      className: u.overlay
+      ref: I,
+      className: d.overlay
     })]
   })
 }

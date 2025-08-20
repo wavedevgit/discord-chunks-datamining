@@ -1,11 +1,14 @@
-/** Chunk was on 21046 **/
-/** chunk id: 988303, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 988303, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  P: () => o,
+  P: () => i,
   u: () => a
 });
-var r, Chunk818083 = require("./818083.js"),
-  o = ((r = {})[r.V1 = 0] = "V1", r[r.V2 = 1] = "V2", r);
+var Chunk818083 = require("./818083.js"),
+  i = function(e) {
+    return e[e.V1 = 0] = "V1", e[e.V2 = 1] = "V2", e
+  }({});
 let a = (0, Chunk818083.B)({
   id: "2024-05_quest_bar",
   kind: "user",

@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   F: () => S,
-  H: () => N
+  H: () => C
 }), require("./953529.js"), require("./388685.js"), require("./415506.js");
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -63,7 +63,7 @@ function T(e, t) {
 }
 let S = Symbol("POPOUT_PREVENT_CLOSE"),
   A = new Set(["Spacebar", " ", "Enter"]);
-class N extends(r = Chunk647438.Component) {
+class C extends(r = Chunk647438.Component) {
   shouldShowPopout(e, t) {
     return null != e.shouldShow ? e.shouldShow : t.shouldShowPopout
   }
@@ -279,10 +279,10 @@ class N extends(r = Chunk647438.Component) {
     })
   }
 }
-O(N, "defaultProps", {
+O(C, "defaultProps", {
   autoInvert: false,
   nudgeAlignIntoViewport: false,
   spacing: 0,
   loadingComponent: (0, Chunk951288.jsx)(Chunk920676.x, {}),
   closeOnClickOutside: true
-}), O(N, "contextType", Chunk40851.ZP)
+}), O(C, "contextType", Chunk40851.ZP)

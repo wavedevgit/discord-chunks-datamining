@@ -1,12 +1,13 @@
-/** Chunk was on 66181 **/
-/** chunk id: 903250, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 903250, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => P
+  Z: () => D
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -31,83 +32,84 @@ var Chunk951288 = require("./951288.js"),
   Chunk181960 = require("./181960.js"),
   Chunk313199 = require("./313199.js"),
   Chunk821969 = require("./821969.js");
-let P = Chunk647438.forwardRef((e, t) => {
-  let {
-    className: n,
-    buttonClassName: r,
-    subscriptionTier: s,
-    isDarkMode: P,
-    isEligibleForBogoPromotion: R,
-    videoRef: D
-  } = e, {
-    analyticsLocations: Z
-  } = (0, m.ZP)(u.Z.PREMIUM_MARKETING_HERO_CTA), w = (0, b._O)(), k = (0, f.Nx)(), L = (0, l.e7)([h.Z], () => h.Z.affinities), B = (0, _.Z)(), M = null != B, U = P ? o.Tt.WHITE : o.Tt.BRAND, V = L.length > 0, G = (0, x.ZP)({
-    location: "HeroHeading"
-  }) ? T.intl.string(T.t["EW+VIS"]) : T.intl.string(T.t.YCZldH), F = (0, g.rO)(), H = (0, l.e7)([d.Z], () => d.Z.useReducedMotion);
-  return (0, i.jsx)(m.Gt, {
-    value: Z,
-    children: (0, i.jsxs)("div", {
-      className: a()(N.container, N.heroHeadingContainer, n),
-      ref: t,
-      "data-testid": "marketing-page-hero-header",
-      children: [(0, i.jsx)("div", {
-        className: N.container,
-        children: (0, i.jsxs)("div", {
-          className: N.marketingPageTextContainer,
-          children: [k && (0, i.jsx)(v.Z, {}), (0, i.jsx)(c.X6q, {
-            className: N.marketingPageHeading,
-            variant: "display-sm",
-            color: "header-primary",
-            children: G
-          }), M ? (0, i.jsx)(C.Z, {
-            referrer: B
-          }) : V && (0, i.jsx)("div", {
-            className: N.affinityDescriptionContainer,
-            children: (0, i.jsx)(E.Z, {
-              textColor: "text-default",
-              smallerText: false,
+let w = (e, t) => {
+    let {
+      className: n,
+      buttonClassName: i,
+      subscriptionTier: a,
+      isDarkMode: w,
+      isEligibleForBogoPromotion: D,
+      videoRef: x
+    } = e, {
+      analyticsLocations: L
+    } = (0, f.ZP)(d.Z.PREMIUM_MARKETING_HERO_CTA), j = (0, g._O)(), M = (0, m.Nx)(), k = (0, s.e7)([h.Z], () => h.Z.affinities), U = (0, b.Z)(), G = null != U, B = w ? l.Tt.WHITE : l.Tt.BRAND, Z = k.length > 0, V = (0, E.ZP)({
+      location: "HeroHeading"
+    }) ? A.intl.string(A.t["EW+VIS"]) : A.intl.string(A.t.YCZldH), F = (0, p.rO)(), H = (0, s.e7)([u.Z], () => u.Z.useReducedMotion);
+    return (0, r.jsx)(f.Gt, {
+      value: L,
+      children: (0, r.jsxs)("div", {
+        className: o()(C.container, C.heroHeadingContainer, n),
+        ref: t,
+        "data-testid": "marketing-page-hero-header",
+        children: [(0, r.jsx)("div", {
+          className: C.container,
+          children: (0, r.jsxs)("div", {
+            className: C.marketingPageTextContainer,
+            children: [M && (0, r.jsx)(T.Z, {}), (0, r.jsx)(c.X6q, {
+              className: C.marketingPageHeading,
+              variant: "display-sm",
+              color: "header-primary",
+              children: V
+            }), G ? (0, r.jsx)(v.Z, {
+              referrer: U
+            }) : Z && (0, r.jsx)("div", {
+              className: C.affinityDescriptionContainer,
+              children: (0, r.jsx)(O.Z, {
+                textColor: "text-default",
+                smallerText: false,
+                isApplicationHome: true
+              })
+            }), j ? (0, r.jsx)("div", {
+              className: o()(C.buttonContainer, C.marketingPageCTAContainer, {
+                [C.marketingPageCTAMargin]: !(Z || G)
+              }),
+              children: (0, r.jsx)(y.Z, {
+                className: o()(C.button, i),
+                color: B
+              })
+            }) : (0, r.jsx)(I.PK, {
+              subscriptionTier: a,
+              inOfferExperience: M,
+              containerClassName: o()(C.marketingPageCTAContainer, {
+                [C.marketingPageCTAMargin]: !(Z || G)
+              }),
+              buttonClassName: i,
+              isApplicationHome: true,
+              isDarkMode: w,
+              isEligibleForBogoPromotion: D
+            }), (0, r.jsx)(I._O, {
+              variant: "text-sm/normal",
+              withBottomMargin: false,
               isApplicationHome: true
-            })
-          }), w ? (0, i.jsx)("div", {
-            className: a()(N.buttonContainer, N.marketingPageCTAContainer, {
-              [N.marketingPageCTAMargin]: !(V || M)
-            }),
-            children: (0, i.jsx)(j.Z, {
-              className: a()(N.button, r),
-              color: U
-            })
-          }) : (0, i.jsx)(O.PK, {
-            subscriptionTier: s,
-            inOfferExperience: k,
-            containerClassName: a()(N.marketingPageCTAContainer, {
-              [N.marketingPageCTAMargin]: !(V || M)
-            }),
-            buttonClassName: r,
-            isApplicationHome: true,
-            isDarkMode: P,
-            isEligibleForBogoPromotion: R
-          }), (0, i.jsx)(O._O, {
-            variant: "text-sm/normal",
-            withBottomMargin: false,
-            isApplicationHome: true
-          })]
-        })
-      }), (0, i.jsx)("div", {
-        className: N.heroHeadingV2ArtContainer,
-        children: (0, i.jsx)(p.Z, {
-          autoPlay: !H,
-          playsInline: true,
-          preload: H ? "none" : "auto",
-          poster: y.Z,
-          loop: true,
-          className: N.heroHeadingV2Art,
-          ref: D,
-          children: (0, i.jsx)("source", {
-            src: F ? I.Z : A.Z,
-            type: F ? S.m.MP4 : S.m.WEBM
+            })]
           })
-        })
-      })]
+        }), (0, r.jsx)("div", {
+          className: C.heroHeadingV2ArtContainer,
+          children: (0, r.jsx)(_.Z, {
+            autoPlay: !H,
+            playsInline: true,
+            preload: H ? "none" : "auto",
+            poster: R.Z,
+            loop: true,
+            className: C.heroHeadingV2Art,
+            ref: x,
+            children: (0, r.jsx)("source", {
+              src: F ? N.Z : P.Z,
+              type: F ? S.m.MP4 : S.m.WEBM
+            })
+          })
+        })]
+      })
     })
-  })
-})
+  },
+  D = Chunk647438.forwardRef(w)

@@ -1,4 +1,4 @@
-/** Chunk was on 36499 **/
+/** Chunk was on 5665 **/
 /** chunk id: 742603, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => W
@@ -197,7 +197,7 @@ function W(e) {
           className: a()(U.channelStatus, B.markup, {
             [U.hoverable]: G
           }),
-          children: j.Z.parseVoiceChannelStatus(w, true, {
+          children: O.Z.parseVoiceChannelStatus(w, true, {
             channelId: t.id
           })
         }), G && (0, r.jsx)(s.vdY, {
@@ -269,7 +269,7 @@ function W(e) {
           channel: t
         })]
       })
-    }), (0, r.jsx)(O.Z, {
+    }), (0, r.jsx)(j.Z, {
       channelId: t.id
     })]
   })

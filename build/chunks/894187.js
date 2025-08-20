@@ -1,6 +1,6 @@
-/** Chunk was on 91584 **/
-/** chunk id: 894187, original params: t (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 894187, original params: e (module,exports,re quire) **/
 "use strict";
-module.exports = function(t) {
-  return t && t.ownerDocument && t.ownerDocument.defaultView ? t.ownerDocument.defaultView : window
+module.exports = function(e) {
+  return e && e.ownerDocument && e.ownerDocument.defaultView ? e.ownerDocument.defaultView : window
 }

@@ -1,7 +1,7 @@
 /** Chunk was on 73628 **/
 /** chunk id: 871388, original params: e,t,A (module,exports,require) **/
 require.d(exports, {
-  B: () => i
+  B: () => o
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -9,11 +9,11 @@ var Chunk481060 = require("./481060.js"),
   Chunk120651 = require("./120651.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function i(e, t, A) {
-  let i = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {};
-  (0, a.Z)({
+function o(e, t, A) {
+  let o = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {};
+  (0, l.Z)({
     title: e,
-    body: "string" == typeof t ? t : l.intl.format(t, function(e) {
+    body: "string" == typeof t ? t : a.intl.format(t, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var A = null != arguments[t] ? arguments[t] : {},
           n = Object.keys(A);
@@ -39,8 +39,8 @@ function i(e, t, A) {
         },
         children: e
       })
-    }, i)),
-    cta: l.intl.string(l.t["NX+WJC"]),
+    }, o)),
+    cta: a.intl.string(a.t["NX+WJC"]),
     onConfirm: () => {},
     iconVariant: A
   })

@@ -1,10 +1,11 @@
-/** Chunk was on 86513 **/
-/** chunk id: 17894, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 17894, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var Chunk525654 = require("./525654.js"),
-  r = require.n(Chunk525654),
+  i = require.n(Chunk525654),
   Chunk39612 = require("./39612.js"),
   Chunk271579 = require("./271579.js"),
   Chunk756647 = require("./756647.js"),
@@ -15,31 +16,31 @@ var Chunk525654 = require("./525654.js"),
   Chunk626135 = require("./626135.js"),
   Chunk954824 = require("./954824.js"),
   Chunk981631 = require("./981631.js");
-async function b(e) {
+async function h(e) {
   var t, n;
-  let i = null == (t = r().os) ? true : t.family;
-  if ("Android" === i || "iOS" === i) {
+  let r = null == (t = i().os) ? true : t.family;
+  if ("Android" === r || "iOS" === r) {
     let t = null != (n = u.default.getFingerprint()) ? n : u.default.getId(),
-      i = (0, a.WS)();
+      r = (0, o.WS)();
     if (null == t && u.default.isAuthenticated()) try {
-      await (0, s.k)(), t = u.default.getId()
+      await (0, l.k)(), t = u.default.getId()
     } catch (e) {}
-    return (0, a.ZP)((0, l.Gk)(), {
+    return (0, o.ZP)((0, a.Gk)(), {
       utmSource: e,
       fingerprint: t,
-      attemptId: i
+      attemptId: r
     })
   }
   return "discord://"
 }
-async function h(e) {
-  let t = await b(e),
-    n = (0, a.zS)(t);
-  null != n && m.default.track(p.rMx.DEEP_LINK_CLICKED, {
-    fingerprint: (0, o.K)(n.fingerprint),
+async function m(e) {
+  let t = await h(e),
+    n = (0, o.zS)(t);
+  null != n && f.default.track(p.rMx.DEEP_LINK_CLICKED, {
+    fingerprint: (0, s.K)(n.fingerprint),
     attempt_id: n.attemptId,
     source: n.utmSource
-  }), f.Z.launch(t, e => {
+  }), _.Z.launch(t, e => {
     e || (0, c.dL)(d.Z.fallbackRoute)
   })
 }

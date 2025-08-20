@@ -2,7 +2,7 @@
 /** chunk id: 959856, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => C
+  Z: () => N
 }), require("./457542.js"), require("./415506.js"), require("./388685.js"), require("./600040.js");
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
@@ -36,8 +36,8 @@ function A(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let N = new Chunk579092.Yd("MediaEngineWebRTC");
-class C extends Chunk47770.Z {
+let C = new Chunk579092.Yd("MediaEngineWebRTC");
+class N extends Chunk47770.Z {
   destroy() {
     null != this.voiceActivityInput && (this.voiceActivityInput.destroy(), this.voiceActivityInput = null), this.eachConnection(e => e.destroy()), this.emit(Chunk46973.aB.Destroy), this.removeAllListeners()
   }
@@ -45,7 +45,7 @@ class C extends Chunk47770.Z {
     this.interacted || (document.createElement("audio").play(), this.interacted = true), this.eachConnection(e => e.interact())
   }
   static supported() {
-    return !__OVERLAY__ && (Chunk436620.fi && null != window.AudioContext && null != window.RTCPeerConnection ? (require("./266370.js"), true) : (N.info("WebRTC is not supported on", o().name, o().version), false))
+    return !__OVERLAY__ && (Chunk436620.fi && null != window.AudioContext && null != window.RTCPeerConnection ? (require("./266370.js"), true) : (C.info("WebRTC is not supported on", o().name, o().version), false))
   }
   supported() {
     returntrue
@@ -289,9 +289,9 @@ class C extends Chunk47770.Z {
   fetchAsyncResources(e) {
     return e.fetchDave ? (0, y.IT)() ? (0, y.Ft)() ? new Promise((e, t) => {
       (0, y.D5)().then(t => {
-        this.dave = t, this.transientKeys = (0, y.Yk)(), this.maxSupportedProtocolVersion = t.MaxSupportedProtocolVersion(), N.info("Successfully initialized DAVE, version:", this.maxSupportedProtocolVersion), e()
+        this.dave = t, this.transientKeys = (0, y.Yk)(), this.maxSupportedProtocolVersion = t.MaxSupportedProtocolVersion(), C.info("Successfully initialized DAVE, version:", this.maxSupportedProtocolVersion), e()
       }).catch(e => {
-        this.maxSupportedProtocolVersion = 0, N.error("Failed to initialize DAVE", e), t(e)
+        this.maxSupportedProtocolVersion = 0, C.error("Failed to initialize DAVE", e), t(e)
       })
     }) : (this.maxSupportedProtocolVersion = 0, Promise.reject(Error("WebAssembly is not supported on this platform."))) : (this.maxSupportedProtocolVersion = 0, Promise.reject(Error("Encoded transforms are not supported on this platform."))) : (this.maxSupportedProtocolVersion = 0, Promise.resolve())
   }

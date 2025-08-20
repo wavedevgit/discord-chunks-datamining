@@ -1,5 +1,6 @@
-/** Chunk was on 66181 **/
-/** chunk id: 86852, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 86852, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   nitroGemAnimation: "nitroGemAnimation__7d30a",
   gemGlow: "gemGlow__7d30a",

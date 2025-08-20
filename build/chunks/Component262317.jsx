@@ -1,4 +1,4 @@
-/** Chunk was on 36499 **/
+/** Chunk was on 5665 **/
 /** chunk id: 262317, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   XX: () => L,
@@ -148,9 +148,9 @@ let B = (0, Chunk888651.$)(function(e) {
     hangStatusActivity: ef,
     requestToStreamActivity: em,
     showHangStatus: eg
-  } = e, eb = i.useRef(null), [ey, e_] = i.useState(false), [eC, ex] = i.useState(false), ev = (null == em ? true : em.session_id) != null, ej = () => {
+  } = e, eb = i.useRef(null), [ey, e_] = i.useState(false), [eC, ex] = i.useState(false), ev = (null == em ? true : em.session_id) != null, eO = () => {
     e_(!ey)
-  }, eO = () => {
+  }, ej = () => {
     ($ || eg || ev) && (null == ei || ei(h.id))
   }, eE = i.useMemo(() => new o.sW(500, () => {
     ex(true)
@@ -183,13 +183,13 @@ let B = (0, Chunk888651.$)(function(e) {
         })
       }))
     })
-  }, eT = () => (0, r.jsx)(j.Z, {
+  }, eT = () => (0, r.jsx)(O.Z, {
     previewIsOpen: ea,
     channel: L,
     hangStatusActivity: ef,
     userId: h.id,
     targetElementRef: eb
-  }), eN = () => (0, r.jsx)(O.Z, {
+  }), eN = () => (0, r.jsx)(j.Z, {
     userId: h.id,
     channel: L
   }), eA = () => (0, f.dl)() && (0, f.zd)(L.id) ? null : (0, r.jsx)(v.Z, {
@@ -204,7 +204,7 @@ let B = (0, Chunk888651.$)(function(e) {
     onMouseEnter: ec ? true : () => {
       ($ || eg || ev) && !ey && (null == er || er(h.id))
     },
-    onMouseLeave: ec ? true : eO,
+    onMouseLeave: ec ? true : ej,
     children: (0, r.jsx)(E.Z, {
       clickTrap: (null == h ? true : h.id) === (null == (t = T.default.getCurrentUser()) ? true : t.id) && ey,
       targetElementRef: eb,
@@ -243,7 +243,7 @@ let B = (0, Chunk888651.$)(function(e) {
             }),
             disabled: ec && !t,
             selected: ey,
-            onClick: t ? true : ej,
+            onClick: t ? true : eO,
             onDoubleClick: eI,
             onContextMenu: eZ,
             guildId: L.guild_id,
@@ -288,7 +288,7 @@ let B = (0, Chunk888651.$)(function(e) {
           position: "right",
           renderPopout: o,
           shouldShow: el && !ey,
-          onRequestClose: eO,
+          onRequestClose: ej,
           spacing: 0,
           children: () => (0, r.jsx)(S.ZP, D(k({}, n), {
             ref: eb,

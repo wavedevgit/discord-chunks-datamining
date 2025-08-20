@@ -102,7 +102,7 @@ function v(e) {
 
 function I(e) {
   if (null == E.limitedTimeVoices) return void g.warn("No limited time voices available to update");
-  E.limitedTimeVoices.current_set_end = e.toISOString(), E.limitedTimeVoices.next_set_start = e.toISOString(), E.limitedTimeVoices.next_set_end = (0, i.default)(e, 2).toISOString(), C()
+  E.limitedTimeVoices.current_set_end = e.toISOString(), E.limitedTimeVoices.next_set_start = e.toISOString(), E.limitedTimeVoices.next_set_end = (0, i.default)(e, 2).toISOString(), N()
 }
 
 function T(e) {
@@ -143,7 +143,7 @@ function S(e) {
 function A() {
   E.catalogFetchFailed = true
 }
-class N extends(r = Chunk442837.ZP.Store) {
+class C extends(r = Chunk442837.ZP.Store) {
   getVoiceFilterModels() {
     return E.models
   }
@@ -207,7 +207,7 @@ class N extends(r = Chunk442837.ZP.Store) {
   }
 }
 
-function C() {
+function N() {
   let e = v(E.limitedTimeVoices);
   E.catalogUpdateTime = module.catalogUpdateTime, Object.keys(E.voiceFilters).forEach(t => {
     E.voiceFilters[t].temporarilyAvailable = e.currentSet.includes(t)
@@ -257,40 +257,40 @@ function D(e) {
   })
 }
 
-function L(e) {
+function x(e) {
   let {
     timeInSeconds: t
   } = e;
   I((0, a.Z)(new Date, t))
 }
 
-function x(e) {
+function L(e) {
   E.nativeVoiceFilterModuleState = e.state
 }
 
-function M() {
+function j() {
   E.error = "ERROR_ACTIVATING_VOICE_FILTER"
 }
 
-function k() {
+function M() {
   E.error = null
 }
 
-function j() {
+function k() {
   b = Date.now()
 }
-f(N, "displayName", "VoiceFilterStore");
-let U = new N(Chunk570140.Z, {
+f(C, "displayName", "VoiceFilterStore");
+let U = new C(Chunk570140.Z, {
   VOICE_FILTER_DOWNLOAD_STARTED: R,
   VOICE_FILTER_DOWNLOAD_PROGRESS: P,
   VOICE_FILTER_DOWNLOAD_FAILED: w,
   VOICE_FILTER_FILE_READY: D,
   VOICE_FILTER_CATALOG_FETCH_SUCCESS: S,
   VOICE_FILTER_CATALOG_FETCH_FAILED: A,
-  VOICE_FILTER_UPDATE_LIMITED_TIME_VOICES: C,
-  VOICE_FILTER_DEV_TOOLS_SET_UPDATE_TIME: L,
-  VOICE_FILTER_NATIVE_MODULE_STATE_CHANGE: x,
-  VOICE_FILTER_APPLY_FAILED: M,
-  VOICE_FILTER_REQUEST_SWITCH: k,
-  VOICE_FILTER_LAGGING: j
+  VOICE_FILTER_UPDATE_LIMITED_TIME_VOICES: N,
+  VOICE_FILTER_DEV_TOOLS_SET_UPDATE_TIME: x,
+  VOICE_FILTER_NATIVE_MODULE_STATE_CHANGE: L,
+  VOICE_FILTER_APPLY_FAILED: j,
+  VOICE_FILTER_REQUEST_SWITCH: M,
+  VOICE_FILTER_LAGGING: k
 })

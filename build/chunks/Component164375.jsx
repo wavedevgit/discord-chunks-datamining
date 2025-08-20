@@ -1,7 +1,7 @@
 /** Chunk was on 87337 **/
-/** chunk id: 164375, original params: t,e,n (module,exports,require) **/
+/** chunk id: 164375, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => S
+  default: () => g
 }), require("./388685.js"), require("./290780.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -18,105 +18,105 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk405842 = require("./405842.js");
 
-function S(t) {
+function g(e) {
   let {
-    channelId: e,
+    channelId: t,
     blockedUserIds: n,
-    ignoredUserIds: S = [],
-    transitionState: g,
-    onClose: L
-  } = t;
-  return r.useEffect(() => {
-    u.default.track(E.rMx.GDM_BLOCKED_USER_WARNING_VIEWED, {
-      channel_id: e,
-      warning_medium: A.WR.MODAL,
+    ignoredUserIds: g = [],
+    transitionState: E,
+    onClose: N
+  } = e;
+  return s.useEffect(() => {
+    d.default.track(f.rMx.GDM_BLOCKED_USER_WARNING_VIEWED, {
+      channel_id: t,
+      warning_medium: m.WR.MODAL,
       blocked_user_ids: n,
-      ignored_user_ids: S
+      ignored_user_ids: g
     })
-  }, [e, n, S]), (0, i.jsx)(_.Z, {
-    headerText: I.intl.string(I.t["mwJJ+f"]),
-    descriptionText: ((t, e) => {
-      let n = t > 0,
-        i = e > 0;
-      return n && i ? I.intl.string(I.t["0dP7Fh"]) : n ? I.intl.formatToPlainString(I.t.OpIG9f, {
-        n: t
-      }) : i ? I.intl.formatToPlainString(I.t["D+V4jI"], {
+  }, [t, n, g]), (0, i.jsx)(u.Z, {
+    headerText: x.intl.string(x.t["mwJJ+f"]),
+    descriptionText: ((e, t) => {
+      let n = e > 0,
+        i = t > 0;
+      return n && i ? x.intl.string(x.t["0dP7Fh"]) : n ? x.intl.formatToPlainString(x.t.OpIG9f, {
         n: e
+      }) : i ? x.intl.formatToPlainString(x.t["D+V4jI"], {
+        n: t
       }) : null
-    })(n.length, S.length),
-    infoRows: (t => {
+    })(n.length, g.length),
+    infoRows: (e => {
       let {
-        channelId: e,
+        channelId: t,
         blockedUserIds: n,
-        ignoredUserIds: r
-      } = t, a = o.Z.getChannel(e), u = n.length > 0, c = r.length > 0, _ = [{
+        ignoredUserIds: s
+      } = e, a = o.Z.getChannel(t), d = n.length > 0, c = s.length > 0, u = [{
         icon: (0, i.jsx)("div", {
-          className: f.icon,
-          children: (0, i.jsx)(s.owK, {})
+          className: h.icon,
+          children: (0, i.jsx)(r.owK, {})
         }),
-        text: I.intl.string(I.t["RIMw5+"]),
-        className: f.row
+        text: x.intl.string(x.t["RIMw5+"]),
+        className: h.row
       }, {
         icon: (0, i.jsx)("div", {
-          className: f.icon,
-          children: (0, i.jsx)(s.d3s, {})
+          className: h.icon,
+          children: (0, i.jsx)(r.d3s, {})
         }),
-        text: I.intl.string(I.t.bejNWF),
-        className: f.row
+        text: x.intl.string(x.t.bejNWF),
+        className: h.row
       }];
-      if (u && c) {
-        let t = [...n, ...r],
-          o = t.slice(0, 2);
-        _.unshift({
+      if (d && c) {
+        let e = [...n, ...s],
+          o = e.slice(0, 2);
+        u.unshift({
           icon: (0, i.jsx)("div", {
-            className: f.icon,
+            className: h.icon,
             children: (0, i.jsx)(l.Z, {
               recipients: o,
-              size: s.EFr.SIZE_32
+              size: r.EFr.SIZE_32
             })
           }),
-          text: (0, d.a)(o, t.length, null == a ? true : a.guild_id, e),
-          className: f.row
+          text: (0, _.a)(o, e.length, null == a ? true : a.guild_id, t),
+          className: h.row
         })
       } else {
-        let t = u ? [...n].slice(0, 2) : [...r].slice(0, 2),
-          s = u ? n.length : r.length;
-        _.unshift({
+        let e = d ? [...n].slice(0, 2) : [...s].slice(0, 2),
+          r = d ? n.length : s.length;
+        u.unshift({
           icon: (0, i.jsx)("div", {
-            className: f.icon,
-            children: (0, d.r)(t, null == a ? true : a.guild_id)
+            className: h.icon,
+            children: (0, _.r)(e, null == a ? true : a.guild_id)
           }),
-          text: (0, d.a)(t, s, null == a ? true : a.guild_id, e),
-          className: f.row
+          text: (0, _.a)(e, r, null == a ? true : a.guild_id, t),
+          className: h.row
         })
       }
-      return _
+      return u
     })({
-      channelId: e,
+      channelId: t,
       blockedUserIds: n,
-      ignoredUserIds: S
+      ignoredUserIds: g
     }),
     onDismissAndStay: () => {
-      L(), (0, c.O)(e), u.default.track(E.rMx.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, {
-        action: A.q.CLICK_TO_STAY,
-        channel_id: e,
-        warning_medium: A.WR.MODAL,
+      N(), (0, c.O)(t), d.default.track(f.rMx.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, {
+        action: m.q.CLICK_TO_STAY,
+        channel_id: t,
+        warning_medium: m.WR.MODAL,
         blocked_user_ids: n,
-        ignored_user_ids: S
+        ignored_user_ids: g
       })
     },
     onDismissAndLeave: () => {
-      L(), (0, c.O)(e), a.Z.closePrivateChannel(e, true, true), u.default.track(E.rMx.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, {
-        action: A.q.CLICK_TO_LEAVE,
-        channel_id: e,
-        warning_medium: A.WR.MODAL,
+      N(), (0, c.O)(t), a.Z.closePrivateChannel(t, true, true), d.default.track(f.rMx.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, {
+        action: m.q.CLICK_TO_LEAVE,
+        channel_id: t,
+        warning_medium: m.WR.MODAL,
         blocked_user_ids: n,
-        ignored_user_ids: S
+        ignored_user_ids: g
       })
     },
-    leaveButtonText: I.intl.string(I.t["Hi1/aW"]),
-    stayButtonText: I.intl.string(I.t.SW3lpK),
-    transitionState: g,
-    onClose: L
+    leaveButtonText: x.intl.string(x.t["Hi1/aW"]),
+    stayButtonText: x.intl.string(x.t.SW3lpK),
+    transitionState: E,
+    onClose: N
   })
 }

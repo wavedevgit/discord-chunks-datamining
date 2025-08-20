@@ -1,7 +1,7 @@
 /** Chunk was on 87337 **/
-/** chunk id: 343544, original params: t,e,n (module,exports,require) **/
+/** chunk id: 343544, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => u
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -12,45 +12,45 @@ var Chunk951288 = require("./951288.js"),
   Chunk511010 = require("./511010.jsx"),
   Chunk64515 = require("./64515.js");
 
-function _(t) {
+function u(e) {
   let {
-    headerText: e,
+    headerText: t,
     descriptionText: n,
-    infoRows: s,
-    onDismissAndStay: _,
-    onDismissAndLeave: d,
-    leaveButtonText: A,
-    stayButtonText: E,
-    transitionState: I,
-    impression: f
-  } = t;
+    infoRows: r,
+    onDismissAndStay: u,
+    onDismissAndLeave: _,
+    leaveButtonText: m,
+    stayButtonText: f,
+    transitionState: x,
+    impression: h
+  } = e;
   return (0, i.jsx)(l.Modal, {
-    transitionState: I,
-    onClose: () => (_(), Promise.resolve()),
+    transitionState: x,
+    onClose: () => (u(), Promise.resolve()),
     trackingProps: {
-      impression: f
+      impression: h
     },
-    title: e,
+    title: t,
     subtitle: null != n ? n : true,
     actions: [{
-      text: E,
-      onClick: _,
+      text: f,
+      onClick: u,
       variant: "secondary"
     }, {
-      text: A,
-      onClick: d
+      text: m,
+      onClick: _
     }],
     children: (0, i.jsx)("div", {
       className: c.infoGroup,
-      children: s.map((t, e) => (0, i.jsxs)(r.Fragment, {
+      children: r.map((e, t) => (0, i.jsxs)(s.Fragment, {
         children: [(0, i.jsxs)("div", {
-          className: a()(c.infoRow, t.className),
-          children: [t.icon, (0, i.jsx)(o.Text, {
+          className: a()(c.infoRow, e.className),
+          children: [e.icon, (0, i.jsx)(o.Text, {
             variant: "text-md/medium",
-            children: t.text
+            children: e.text
           })]
-        }), e < s.length - 1 && (0, i.jsx)(u.Z, {})]
-      }, e))
+        }), t < r.length - 1 && (0, i.jsx)(d.Z, {})]
+      }, t))
     })
   })
 }

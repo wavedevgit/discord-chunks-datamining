@@ -1,12 +1,13 @@
-/** Chunk was on 66181 **/
-/** chunk id: 269876, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 269876, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => C
+  Z: () => v
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk46973 = require("./46973.js"),
   Chunk846519 = require("./846519.js"),
@@ -21,31 +22,31 @@ var Chunk951288 = require("./951288.js"),
   Chunk89079 = require("./89079.js"),
   Chunk149715 = require("./149715.js"),
   Chunk197571 = require("./197571.js");
-let E = (0, Chunk313201.hQ)();
+let O = (0, Chunk313201.hQ)();
 
-function C() {
-  let [e, t] = Chunk647438.useState(false), [n, s] = Chunk647438.useState(false), {
-    threshold: C,
-    autoThreshold: O
+function v() {
+  let [e, t] = Chunk647438.useState(false), [n, a] = Chunk647438.useState(false), {
+    threshold: v,
+    autoThreshold: I
   } = (0, Chunk442837.cj)([Chunk131951.Z], () => ({
     threshold: Chunk131951.Z.getModeOptions().threshold,
     autoThreshold: Chunk131951.Z.getModeOptions().autoThreshold
   })), {
-    inputMode: v,
+    inputMode: T,
     automaticVADSupported: S,
-    isEnabled: T
+    isEnabled: A
   } = (0, Chunk442837.cj)([Chunk131951.Z], () => ({
     inputMode: Chunk131951.Z.getMode(),
     automaticVADSupported: Chunk131951.Z.supports(Chunk65154.AN.AUTOMATIC_VAD),
     isEnabled: Chunk131951.Z.isEnabled()
   }));
 
-  function N(e, n) {
-    t(e), s((n & h.Dg.VOICE) === h.Dg.VOICE)
+  function C(e, n) {
+    t(e), a((n & h.Dg.VOICE) === h.Dg.VOICE)
   }
 
-  function I(e, t) {
-    m.Z.setMode(v, {
+  function N(e, t) {
+    f.Z.setMode(T, {
       threshold: e,
       autoThreshold: t
     })
@@ -53,28 +54,28 @@ function C() {
   Chunk647438.useEffect(() => {
     let e = new Chunk846519.V7;
     return module.start(1e3, () => {
-      Chunk131951.Z.getMediaEngine().on(Chunk46973.aB.VoiceActivity, N), module.stop()
+      Chunk131951.Z.getMediaEngine().on(Chunk46973.aB.VoiceActivity, C), module.stop()
     }), () => {
-      Chunk131951.Z.getMediaEngine().removeListener(Chunk46973.aB.VoiceActivity, N), module.stop()
+      Chunk131951.Z.getMediaEngine().removeListener(Chunk46973.aB.VoiceActivity, C), module.stop()
     }
   }, []);
-  let y = (0, Chunk951288.jsx)("section", {
-    className: a()(Chunk192294.inputSensitivityToggle, Chunk192294.manual),
+  let R = (0, Chunk951288.jsx)("section", {
+    className: o()(Chunk192294.inputSensitivityToggle, Chunk192294.manual),
     children: (0, Chunk951288.jsx)(Chunk481060.iRW, {
-      initialValue: C + 100,
+      initialValue: v + 100,
       onValueRender: e => "".concat((-((100 - e) * 1)).toFixed(0), "dB"),
-      onValueChange: e => I(-((100 - e) * 1), O),
+      onValueChange: e => N(-((100 - e) * 1), I),
       barStyles: {
         background: Chunk692547.Z.unsafe_rawColors.GREEN_360.css
       },
       fillStyles: {
         background: Chunk692547.Z.unsafe_rawColors.YELLOW_300.css
       },
-      "aria-labelledby": E,
+      "aria-labelledby": O,
       children: (0, Chunk951288.jsxs)("div", {
-        className: a()(Chunk192294.sliderBar, Chunk192294.microphone, Chunk192294.inputSensitivityBar, Chunk89079.bar),
+        className: o()(Chunk192294.sliderBar, Chunk192294.microphone, Chunk192294.inputSensitivityBar, Chunk89079.bar),
         children: [(0, Chunk951288.jsx)("div", {
-          className: a()(Chunk192294.fill, Chunk192294.inputSensitivityBarFill),
+          className: o()(Chunk192294.fill, Chunk192294.inputSensitivityBarFill),
           style: {
             width: module + 100 + "%"
           }
@@ -84,12 +85,12 @@ function C() {
       })
     })
   });
-  return O && (y = (0, Chunk951288.jsxs)("section", {
+  return I && (R = (0, Chunk951288.jsxs)("section", {
     className: Chunk192294.inputSensitivityToggle,
     children: [(0, Chunk951288.jsx)("div", {
       className: Chunk192294.inputSensitivitySlider,
       children: (0, Chunk951288.jsx)("div", {
-        className: a()(Chunk192294.inputSensitivityBar, Chunk192294.sliderBar, {
+        className: o()(Chunk192294.inputSensitivityBar, Chunk192294.sliderBar, {
           [Chunk192294.speaking]: require
         })
       })
@@ -100,27 +101,27 @@ function C() {
     })]
   })), (0, Chunk951288.jsxs)(Chunk481060.xJW, {
     title: Chunk388032.intl.string(Chunk388032.t["sqUm+v"]),
-    titleId: E,
+    titleId: O,
     className: Chunk192294.sensitivity,
     children: [S && (0, Chunk951288.jsx)(Chunk313201.FG, {
-      children: e => (0, i.jsxs)("div", {
-        className: a()(_.horizontal, j.marginBottom4),
-        children: [(0, i.jsx)(u.vwX, {
-          tag: u.RB0.H3,
-          className: j.marginReset,
-          children: (0, i.jsx)("label", {
+      children: e => (0, r.jsxs)("div", {
+        className: o()(b.horizontal, y.marginBottom4),
+        children: [(0, r.jsx)(d.vwX, {
+          tag: d.RB0.H3,
+          className: y.marginReset,
+          children: (0, r.jsx)("label", {
             htmlFor: e,
-            children: f.intl.string(f.t.I1Zuq6)
+            children: m.intl.string(m.t.I1Zuq6)
           })
-        }), (0, i.jsx)(u.rsf, {
+        }), (0, r.jsx)(d.rsf, {
           id: e,
-          checked: O,
-          onChange: e => I(C, e)
+          checked: I,
+          onChange: e => N(v, e)
         })]
       })
-    }), y, !T && (0, Chunk951288.jsx)(Chunk481060.R94, {
+    }), R, !A && (0, Chunk951288.jsx)(Chunk481060.R94, {
       type: Chunk481060.R94.Types.DESCRIPTION,
-      className: a()(Chunk192294.inputDisabledWarning, Chunk197571.marginBottom8),
+      className: o()(Chunk192294.inputDisabledWarning, Chunk197571.marginBottom8),
       children: Chunk388032.intl.format(Chunk388032.t["O13I+P"], {
         onEnableClick: () => Chunk846027.Z.enable(true)
       })

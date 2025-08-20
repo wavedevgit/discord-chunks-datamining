@@ -1,20 +1,20 @@
-/** Chunk was on 91584 **/
-/** chunk id: 292489, original params: t,e,r (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 292489, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
-function n(t, e) {
-  var r = i.get(t, e);
-  return "auto" === r || "scroll" === r
+function r(e, t) {
+  var n = i.get(e, t);
+  return "auto" === n || "scroll" === n
 }
 var i = {
   get: require("./858255.js"),
-  getScrollParent: function(t) {
-    if (!t) return null;
-    for (var e = t.ownerDocument; t && t !== e.body;) {
-      if (n(t, "overflow") || n(t, "overflowY") || n(t, "overflowX")) return t;
-      t = t.parentNode
+  getScrollParent: function(e) {
+    if (!e) return null;
+    for (var t = e.ownerDocument; e && e !== t.body;) {
+      if (r(e, "overflow") || r(e, "overflowY") || r(e, "overflowX")) return e;
+      e = e.parentNode
     }
-    return e.defaultView || e.parentWindow
+    return t.defaultView || t.parentWindow
   }
 };
 module.exports = i

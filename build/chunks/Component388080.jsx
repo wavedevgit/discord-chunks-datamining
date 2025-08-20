@@ -1,15 +1,14 @@
-/** Chunk was on 20296 **/
+/** Chunk was on 44808 **/
 /** chunk id: 388080, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
-  Z: () => E
+  Z: () => _
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk913527 = require("./913527.js"),
-  c = require.n(Chunk913527),
+  s = require.n(Chunk913527),
   Chunk481060 = require("./481060.js"),
   Chunk446411 = require("./446411.jsx"),
   Chunk468846 = require("./468846.jsx"),
@@ -24,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk491068 = require("./491068.js"),
   Chunk400167 = require("./400167.js");
 
-function x(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -32,9 +31,9 @@ function x(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let v = Chunk454585.Z.reactParserFor(Chunk55406.default.getDefaultRules(Chunk491068)),
-  C = {};
-class k extends Chunk647438.PureComponent {
+let k = Chunk454585.Z.reactParserFor(Chunk55406.default.getDefaultRules(Chunk491068)),
+  S = {};
+class E extends Chunk647438.PureComponent {
   track(e, t, n) {
     this.props.track(e, t, n)
   }
@@ -77,7 +76,7 @@ class k extends Chunk647438.PureComponent {
   renderVideo() {
     let {
       changeLog: e
-    } = this.props, t = module.youtube_video_id, o = module.video, a = module.image;
+    } = this.props, t = module.youtube_video_id, l = module.video, o = module.image;
     if (null != exports && "" !== exports) return (0, Chunk951288.jsx)(Chunk446411.BC, {
       className: Chunk491068.video,
       allowFullScreen: false,
@@ -148,16 +147,16 @@ class k extends Chunk647438.PureComponent {
           })
         })]
       }), (0, Chunk951288.jsx)(Chunk481060.hzk, {
-        className: i()(Chunk400167.content, Chunk491068.container, {}),
+        className: a()(Chunk400167.content, Chunk491068.container, {}),
         scrollerRef: this.scrollerRef,
         onScroll: this.handleScroll,
         children: (0, Chunk951288.jsxs)("div", {
           tabIndex: 0,
           role: "region",
           "aria-label": Chunk388032.intl.string(Chunk388032.t.HzBchI),
-          children: [this.renderVideo(), v(module.body, false, {
+          children: [this.renderVideo(), k(module.body, false, {
             changeLog: this,
-            interpolations: C,
+            interpolations: S,
             onLinkClick: this.trackLinkClick
           })]
         })
@@ -168,7 +167,7 @@ class k extends Chunk647438.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), x(this, "scrollerRef", o.createRef()), x(this, "handleScroll", () => {
+    super(...e), y(this, "scrollerRef", l.createRef()), y(this, "handleScroll", () => {
       let {
         current: e
       } = this.scrollerRef;
@@ -176,30 +175,30 @@ class k extends Chunk647438.PureComponent {
         var t, n;
         null == (t = (n = this.props).onScroll) || t.call(n, e)
       }
-    }), x(this, "trackLinkClick", e => {
-      this.props.track(f.rMx.CHANGE_LOG_CTA_CLICKED, {
+    }), y(this, "trackLinkClick", e => {
+      this.props.track(j.rMx.CHANGE_LOG_CTA_CLICKED, {
         cta_type: "inline_link",
         target: e
       }, false)
-    }), x(this, "renderHeader", () => {
+    }), y(this, "renderHeader", () => {
       let {
         changeLog: e
       } = this.props;
-      return (0, r.jsxs)(m.Z.Child, {
+      return (0, r.jsxs)(u.Z.Child, {
         grow: 1,
         shrink: 1,
-        children: [(0, r.jsx)(s.X6q, {
+        children: [(0, r.jsx)(c.X6q, {
           variant: "heading-lg/semibold",
-          children: y.intl.string(y.t.LRmNAg)
-        }), (0, r.jsx)(s.Text, {
+          children: C.intl.string(C.t.LRmNAg)
+        }), (0, r.jsx)(c.Text, {
           variant: "text-xs/normal",
-          className: O.date,
-          children: y.intl.format(y.t.Fb8xx8, {
-            date: null != e.date && "" !== e.date ? c()(e.date).toDate() : new Date
+          className: b.date,
+          children: C.intl.format(C.t.Fb8xx8, {
+            date: null != e.date && "" !== e.date ? s()(e.date).toDate() : new Date
           })
         })]
       })
     })
   }
 }
-let E = k
+let _ = E

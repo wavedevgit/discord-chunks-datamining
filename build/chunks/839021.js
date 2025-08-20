@@ -1,5 +1,6 @@
-/** Chunk was on 96750 **/
-/** chunk id: 839021, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 839021, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   body: "body__6da2d",
   streamPreviewWrapper: "streamPreviewWrapper__6da2d",

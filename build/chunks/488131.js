@@ -2,7 +2,7 @@
 /** chunk id: 488131, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  NK: () => N,
+  NK: () => C,
   R6: () => S,
   ok: () => T,
   vN: () => A
@@ -79,7 +79,7 @@ function A(e, t) {
   })
 }
 
-function N(e) {
+function C(e) {
   s.Z.dispatch({
     type: "SIDEBAR_CLOSE",
     baseChannelId: e

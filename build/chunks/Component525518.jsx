@@ -1,4 +1,4 @@
-/** Chunk was on 17768 **/
+/** Chunk was on 2026 **/
 /** chunk id: 525518, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   n: () => d
@@ -16,17 +16,17 @@ function d(e) {
   let {
     skuId: t,
     tab: n
-  } = e, d = a.useCallback(() => {
-    o.default.track(s.rMx.COLLECTIBLES_SHARE_LINK_BUTTON_CLICKED, {
+  } = e, d = i.useCallback(() => {
+    a.default.track(c.rMx.COLLECTIBLES_SHARE_LINK_BUTTON_CLICKED, {
       sku_id: t
     });
-    let e = "".concat(location.protocol, "//").concat(location.host).concat(s.Z5c.COLLECTIBLES_SHOP).concat((0, c.aK)(n) ? "?tab=".concat(n) : "", "#itemSkuId=").concat(t);
-    (0, l.JG)(e, () => (0, i.showToast)((0, i.createToast)(u.intl.string(u.t["L/PwZW"]), i.ToastType.SUCCESS)))
+    let e = "".concat(location.protocol, "//").concat(location.host).concat(c.Z5c.COLLECTIBLES_SHOP).concat((0, s.aK)(n) ? "?tab=".concat(n) : "", "#itemSkuId=").concat(t);
+    (0, o.JG)(e, () => (0, l.showToast)((0, l.createToast)(u.intl.string(u.t["L/PwZW"]), l.ToastType.SUCCESS)))
   }, [t, n]);
-  return (0, r.jsx)(i.hU, {
+  return (0, r.jsx)(l.hU, {
     "aria-label": u.intl.string(u.t.WqhZsr),
     onClick: d,
-    icon: i.xPt,
+    icon: l.xPt,
     variant: "overlay-secondary",
     size: "sm"
   })

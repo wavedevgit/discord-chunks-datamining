@@ -30,9 +30,9 @@ let h = e => {
       onConfirmSecondary: T,
       title: S,
       transitionState: A,
-      titleClassName: N
+      titleClassName: C
     } = e,
-    C = s.zx.Sizes.MEDIUM,
+    N = s.zx.Sizes.MEDIUM,
     [R, P] = i.useState(false);
   i.useEffect(() => () => {
     R && (null == T || T())
@@ -45,7 +45,7 @@ let h = e => {
     };
   return null != m && "" !== m && (t = (0, r.jsx)(s.zx, {
     type: "button",
-    size: C,
+    size: N,
     color: s.zx.Colors.PRIMARY,
     onClick: w,
     className: p.secondaryButton,
@@ -53,7 +53,7 @@ let h = e => {
   })), null != b && "" !== b && (n = (0, r.jsx)(s.zx, {
     type: "submit",
     color: E,
-    size: C,
+    size: N,
     className: p.primaryButton,
     autoFocus: true,
     children: b
@@ -78,11 +78,11 @@ let h = e => {
       children: [(0, r.jsx)(c.xB, {
         children: null != S ? (0, r.jsx)(d.X6q, {
           variant: "heading-lg/semibold",
-          className: o()(p.title, N),
+          className: o()(p.title, C),
           children: S
         }) : (0, r.jsx)(l.v, {
           tag: "h2",
-          className: o()(p.title, N),
+          className: o()(p.title, C),
           children: S
         })
       }), (0, r.jsx)(c.hz, {

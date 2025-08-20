@@ -1,8 +1,8 @@
-/** Chunk was on 69003 **/
+/** Chunk was on 91488 **/
 /** chunk id: 590965, original params: e,t,n (module,exports,require) **/
 let r;
 require.d(exports, {
-  Z: () => P
+  Z: () => I
 }), require("./388685.js"), require("./539854.js");
 var i, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -40,13 +40,13 @@ function y(e) {
   }
   return e
 }
-let v = Chunk981631.IlC.APP,
-  j = false,
+let j = Chunk981631.IlC.APP,
+  v = false,
   C = false,
-  E = [];
+  x = [];
 
-function x() {
-  j = true
+function E() {
+  v = true
 }
 class S extends(i = Chunk442837.ZP.Store) {
   initialize() {
@@ -54,22 +54,22 @@ class S extends(i = Chunk442837.ZP.Store) {
   }
   isOpen() {
     let e = __OVERLAY__ ? Chunk981631.IlC.OVERLAY : Chunk981631.IlC.APP;
-    return !!(j && E.length > 0 && v === module)
+    return !!(v && x.length > 0 && j === module)
   }
   getProps() {
     return {
-      invite: E.length > 0 ? E[0][0] : null,
+      invite: x.length > 0 ? x[0][0] : null,
       error: null != r && "" !== r ? r : null,
       submitting: C
     }
   }
 }
 _(S, "displayName", "InviteModalStore");
-let P = new S(Chunk570140.Z, {
-  OVERLAY_INITIALIZE: x,
-  CONNECTION_OPEN: x,
+let I = new S(Chunk570140.Z, {
+  OVERLAY_INITIALIZE: E,
+  CONNECTION_OPEN: E,
   CONNECTION_CLOSED: function() {
-    j = false
+    v = false
   },
   INVITE_MODAL_OPEN: function(e) {
     let t = e.invite;
@@ -100,11 +100,11 @@ let P = new S(Chunk570140.Z, {
         }
       }
     }
-    if (E.some(e => {
+    if (x.some(e => {
         let [n] = e;
         return n.code === t.code
       })) returnfalse;
-    v = e.context, C = false;
+    j = e.context, C = false;
     let n = function(e) {
       let {
         approximate_member_count: t,
@@ -131,11 +131,11 @@ let P = new S(Chunk570140.Z, {
       };
       return null != c && (p.channel = y({}, c)), null != u && (p.guild = (0, g.Qs)(u)), null != e.inviter && (p.inviter = y({}, e.inviter)), p
     }(t);
-    E.push([n, e.resolve])
+    x.push([n, e.resolve])
   },
   INVITE_MODAL_CLOSE: function() {
-    if (r = null, C = false, E.length > 0) {
-      let [, e] = E.shift();
+    if (r = null, C = false, x.length > 0) {
+      let [, e] = x.shift();
       null != module && module()
     }
   },

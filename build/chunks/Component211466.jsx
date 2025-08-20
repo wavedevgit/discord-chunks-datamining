@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 211466, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 211466, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  n: () => g
+  n: () => p
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -16,7 +17,7 @@ var Chunk925513 = require("./925513.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function g() {
+function p() {
   let e = (0, Chunk925513.v6)(),
     t = [{
       title: Chunk388032.intl.string(Chunk388032.t.GYpoAg),

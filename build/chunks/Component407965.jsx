@@ -1,12 +1,13 @@
-/** Chunk was on 66181 **/
-/** chunk id: 407965, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 407965, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  n: () => j
+  n: () => y
 }), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
-  a = require.n(Chunk512722),
+  o = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk82659 = require("./82659.jsx"),
   Chunk481060 = require("./481060.js"),
@@ -19,34 +20,34 @@ var Chunk951288 = require("./951288.js"),
   Chunk594135 = require("./594135.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk181679 = require("./181679.js");
-let _ = e => {
+let b = e => {
     let {
       churnUserDiscountOffer: t
     } = e;
-    return null == t ? null : (0, i.jsx)("div", {
-      className: x.previewContainer,
-      children: (0, i.jsx)(g.o, {
+    return null == t ? null : (0, r.jsx)("div", {
+      className: E.previewContainer,
+      children: (0, r.jsx)(p.o, {
         userDiscountOffer: t
       })
     })
   },
-  j = () => {
+  y = () => {
     let {
       transitionState: e,
       onClose: t,
       premiumType: n,
-      setStep: s,
-      churnUserDiscountOffer: g,
-      isFetchingChurnDiscountOffer: x
-    } = (0, Chunk594135.a)(), j = (0, Chunk442837.e7)([Chunk594174.default], () => {
+      setStep: a,
+      churnUserDiscountOffer: p,
+      isFetchingChurnDiscountOffer: E
+    } = (0, Chunk594135.a)(), y = (0, Chunk442837.e7)([Chunk594174.default], () => {
       let e = Chunk594174.default.getCurrentUser();
-      return a()(null != module, "ProfileItem: currentUser cannot be undefined"), module
+      return o()(null != module, "ProfileItem: currentUser cannot be undefined"), module
     });
     Chunk647438.useEffect(() => {
-      (0, Chunk484459.Z)(j.id, j.getAvatarURL(null, 80))
-    }, [j]);
-    let E = (0, Chunk847903.Z)(),
-      C = "US" === E.ipCountryCode && "CA" === E.ipSubdivisionCode;
+      (0, Chunk484459.Z)(y.id, y.getAvatarURL(null, 80))
+    }, [y]);
+    let O = (0, Chunk847903.Z)(),
+      v = "US" === O.ipCountryCode && "CA" === O.ipSubdivisionCode;
     if (Chunk181679) return (0, Chunk951288.jsx)(Chunk82659.Modal, {
       transitionState: module,
       title: "",
@@ -55,31 +56,31 @@ let _ = e => {
         exports()
       }
     });
-    let O = [];
-    return null != Chunk10508 ? O.push({
+    let I = [];
+    return null != Chunk10508 ? I.push({
       text: Chunk388032.intl.string(Chunk388032.t.zrCzVF),
       onClick: () => Chunk512722(Chunk45474.R.CONFIRM_DISCOUNT),
       variant: "secondary",
       icon: Chunk481060.SrA
-    }) : O.push({
+    }) : I.push({
       text: Chunk388032.intl.string(Chunk388032.t.h9tkAA),
       onClick: () => exports(),
       variant: "secondary"
-    }), O.push({
-      text: C ? Chunk388032.intl.string(Chunk388032.t.PfnxqK) : Chunk388032.intl.string(Chunk388032.t["3PatS0"]),
+    }), I.push({
+      text: v ? Chunk388032.intl.string(Chunk388032.t.PfnxqK) : Chunk388032.intl.string(Chunk388032.t["3PatS0"]),
       onClick: () => Chunk512722(Chunk45474.R.CONFIRM),
       variant: "primary"
     }), (0, Chunk951288.jsx)(Chunk82659.Modal, {
       transitionState: module,
       title: Chunk388032.intl.string(Chunk388032.t.PWq8TE),
       subtitle: Chunk388032.intl.formatToPlainString(Chunk388032.t.nsGVzs, {}),
-      actions: O,
-      preview: null !== Chunk10508 && (0, Chunk951288.jsx)(_, {
+      actions: I,
+      preview: null !== Chunk10508 && (0, Chunk951288.jsx)(b, {
         churnUserDiscountOffer: Chunk10508
       }),
       onClose: async () => exports(),
       children: (0, Chunk951288.jsx)(Chunk807163.g, {
-        currentUser: j,
+        currentUser: y,
         premiumType: require,
         onClose: exports,
         isDowngrade: false,

@@ -1,5 +1,6 @@
-/** Chunk was on 66181 **/
-/** chunk id: 912152, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 912152, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   Z: () => p
 });
@@ -14,60 +15,62 @@ var Chunk481060 = require("./481060.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk137435 = require("./137435.js");
+
+function _(e) {
+  let {
+    hasAppliedGuildBoosts: t,
+    hasBoostPerk: n,
+    hasGuildAffinitiesOrInGuild: r,
+    subscriptionIsPausedOrPausePending: i
+  } = e;
+  if (i) return {
+    flavor: d.intl.format(d.t.doslJi, {
+      onClick: () => a.Z.open(c.oAB.SUBSCRIPTIONS)
+    })
+  };
+  if (!r) return {
+    subtitle: d.intl.string(d.t.oiWYAQ)
+  };
+  if (t) return {
+    subtitle: d.intl.string(d.t.W5rDjY),
+    flavor: d.intl.format(d.t.cUHcaW, {
+      helpdeskArticle: o.Z.getArticleURL(c.BhN.GUILD_SUBSCRIPTIONS)
+    })
+  };
+  let f = u.GP[u.Xh.PREMIUM_MONTH_GUILD],
+    _ = s.ZP.getDefaultPrice(f.id, n),
+    p = (0, l.og)((0, l.T4)(_.amount, _.currency), f.interval, f.intervalCount);
+  return {
+    subtitle: n ? d.intl.string(d.t.bhPzXV) : d.intl.string(d.t.Zs9h9f),
+    flavor: d.intl.formatToPlainString(d.t.PGgTdH, {
+      monthlyGuildBoostPrice: p
+    })
+  }
+}
 let p = function(e) {
   let {
     hasAppliedGuildBoosts: t,
     hasBoostPerk: n,
-    hasGuildAffinitiesOrInGuild: p,
-    subscriptionIsPausedOrPausePending: g
+    hasGuildAffinitiesOrInGuild: a,
+    subscriptionIsPausedOrPausePending: o
   } = e, {
-    subtitle: h,
-    flavor: f
-  } = function(e) {
-    let {
-      hasAppliedGuildBoosts: t,
-      hasBoostPerk: n,
-      hasGuildAffinitiesOrInGuild: i,
-      subscriptionIsPausedOrPausePending: r
-    } = e;
-    if (r) return {
-      flavor: u.intl.format(u.t.doslJi, {
-        onClick: () => s.Z.open(c.oAB.SUBSCRIPTIONS)
-      })
-    };
-    if (!i) return {
-      subtitle: u.intl.string(u.t.oiWYAQ)
-    };
-    if (t) return {
-      subtitle: u.intl.string(u.t.W5rDjY),
-      flavor: u.intl.format(u.t.cUHcaW, {
-        helpdeskArticle: a.Z.getArticleURL(c.BhN.GUILD_SUBSCRIPTIONS)
-      })
-    };
-    let m = d.GP[d.Xh.PREMIUM_MONTH_GUILD],
-      p = l.ZP.getDefaultPrice(m.id, n),
-      g = (0, o.og)((0, o.T4)(p.amount, p.currency), m.interval, m.intervalCount);
-    return {
-      subtitle: n ? u.intl.string(u.t.bhPzXV) : u.intl.string(u.t.Zs9h9f),
-      flavor: u.intl.formatToPlainString(u.t.PGgTdH, {
-        monthlyGuildBoostPrice: g
-      })
-    }
-  }({
+    subtitle: s,
+    flavor: l
+  } = _({
     hasAppliedGuildBoosts: t,
     hasBoostPerk: n,
-    hasGuildAffinitiesOrInGuild: p,
-    subscriptionIsPausedOrPausePending: g
+    hasGuildAffinitiesOrInGuild: a,
+    subscriptionIsPausedOrPausePending: o
   });
-  return (0, i.jsxs)("div", {
-    className: m.wrapper,
-    children: [(0, i.jsx)(r.X6q, {
+  return (0, r.jsxs)("div", {
+    className: f.wrapper,
+    children: [(0, r.jsx)(i.X6q, {
       variant: "heading-lg/bold",
-      className: m.subtitle,
-      children: h
-    }), null != f && (0, i.jsx)(r.Text, {
+      className: f.subtitle,
+      children: s
+    }), null != l && (0, r.jsx)(i.Text, {
       variant: "text-sm/normal",
-      children: f
+      children: l
     })]
   })
 }

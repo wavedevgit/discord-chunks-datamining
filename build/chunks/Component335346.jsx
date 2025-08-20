@@ -1,42 +1,43 @@
-/** Chunk was on 82081 **/
-/** chunk id: 335346, original params: e,t,r (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 335346, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  V: () => c
+  V: () => s
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk557766 = require("./557766.js");
-let c = e => {
+let s = e => {
   let {
     invertTail: t,
-    leftOffset: r,
-    rightOffset: a,
-    tailSpineClassName: c,
-    tailTargetInnerClassName: s
+    leftOffset: n,
+    rightOffset: i,
+    tailSpineClassName: s,
+    tailTargetInnerClassName: l
   } = e;
-  return (0, n.jsxs)("div", {
-    className: o()(i.tail, t ? i.tailPositionInverted : i.tailPositionNormal),
+  return (0, r.jsxs)("div", {
+    className: a()(o.tail, t ? o.tailPositionInverted : o.tailPositionNormal),
     style: {
-      left: r,
-      right: a
+      left: n,
+      right: i
     },
-    children: [(0, n.jsx)("div", {
-      className: o()(i.tailSpine, c)
-    }), (0, n.jsx)("div", {
-      className: o()(i.tailTargetOuter, t ? i.tailTargetPositionInverted : i.tailTargetPositionNormal),
-      children: (0, n.jsx)("svg", {
+    children: [(0, r.jsx)("div", {
+      className: a()(o.tailSpine, s)
+    }), (0, r.jsx)("div", {
+      className: a()(o.tailTargetOuter, t ? o.tailTargetPositionInverted : o.tailTargetPositionNormal),
+      children: (0, r.jsx)("svg", {
         xmlns: "http://www.w3.org/2000/svg",
         width: "8",
         height: "8",
         viewBox: "0 0 8 8",
         fill: "none",
-        children: (0, n.jsx)("circle", {
+        children: (0, r.jsx)("circle", {
           cx: "50%",
           cy: "50%",
           r: "3",
-          className: o()(i.tailTargetInner, s)
+          className: a()(o.tailTargetInner, l)
         })
       })
     })]

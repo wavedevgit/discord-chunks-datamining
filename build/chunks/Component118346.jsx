@@ -2,7 +2,7 @@
 /** chunk id: 118346, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   B: () => m,
-  b: () => d
+  b: () => u
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -12,8 +12,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk624463 = require("./624463.js");
 
-function u() {
-  let [e, t] = Chunk647438.useState(false), [n, s] = Chunk647438.useState(false), [u, d] = Chunk647438.useState(false);
+function d() {
+  let [e, t] = Chunk647438.useState(false), [n, a] = Chunk647438.useState(false), [d, u] = Chunk647438.useState(false);
   Chunk647438.useEffect(() => {
     let e;
     return require && (e = setTimeout(() => {
@@ -26,7 +26,7 @@ function u() {
     if (!module) {
       exports(true);
       try {
-        await Chunk893776.Z.verifyResend(), Chunk489813(true), d(true)
+        await Chunk893776.Z.verifyResend(), Chunk489813(true), u(true)
       } catch (e) {} finally {
         exports(false)
       }
@@ -40,13 +40,13 @@ function u() {
   }) : (0, Chunk951288.jsx)(Chunk481060.zxk, {
     variant: "primary",
     size: "sm",
-    text: u ? Chunk388032.intl.string(Chunk388032.t.WnX4Jy) : Chunk388032.intl.string(Chunk388032.t["13ofGh"]),
+    text: d ? Chunk388032.intl.string(Chunk388032.t.WnX4Jy) : Chunk388032.intl.string(Chunk388032.t["13ofGh"]),
     loading: module,
     onClick: m
   })
 }
 
-function d() {
+function u() {
   return (0, Chunk951288.jsx)(Chunk489813.PU, {
     className: Chunk624463.editableRequirementContainer,
     icon: Chunk481060._XJ,
@@ -68,13 +68,13 @@ function d() {
 function m(e) {
   let {
     isUserVerified: t
-  } = e, n = t ? a.intl.string(a.t.qY1jHB) : a.intl.string(a.t.c6EUJC);
-  return (0, r.jsx)(s.PU, {
+  } = e, n = t ? o.intl.string(o.t.qY1jHB) : o.intl.string(o.t.c6EUJC);
+  return (0, r.jsx)(a.PU, {
     className: c.editableRequirementContainer,
-    icon: l._XJ,
+    icon: i._XJ,
     text: n,
-    footnote: a.intl.string(a.t["jMh+TU"]),
+    footnote: o.intl.string(o.t["jMh+TU"]),
     meetsRequirement: t,
-    children: (0, r.jsx)(u, {})
+    children: (0, r.jsx)(d, {})
   })
 }

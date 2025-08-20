@@ -2,7 +2,7 @@
 /** chunk id: 119226, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => C
+  Z: () => N
 }), require("./314940.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -103,7 +103,7 @@ function A(e) {
   })
 }
 
-function N(e) {
+function C(e) {
   let {
     nameplate: t
   } = e;
@@ -119,7 +119,7 @@ function N(e) {
   })
 }
 
-function C(e) {
+function N(e) {
   let {
     sku: t
   } = e, {
@@ -136,7 +136,7 @@ function C(e) {
     id: e.id
   })).with({
     type: a.Z.NAMEPLATE
-  }, e => (0, r.jsx)(N, {
+  }, e => (0, r.jsx)(C, {
     nameplate: e
   })).otherwise(() => null);
   return null != n && null == l ? (0, r.jsx)("div", {

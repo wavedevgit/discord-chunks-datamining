@@ -1,7 +1,8 @@
-/** Chunk was on 48091 **/
-/** chunk id: 108427, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 108427, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  e: () => d
+  e: () => h
 }), require("./388685.js"), require("./35282.js");
 var Chunk772848 = require("./772848.js"),
   Chunk579806 = require("./579806.js"),
@@ -9,7 +10,7 @@ var Chunk772848 = require("./772848.js"),
   Chunk998502 = require("./998502.js"),
   Chunk981631 = require("./981631.js");
 
-function o(e, t, n) {
+function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -17,80 +18,98 @@ function o(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let c = new class {
+
+function c(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      l(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function u(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function d(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : u(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+
+function f() {
+  return window.GLOBAL_ENV.HTML_TIMESTAMP
+}
+class _ {
   trackEvent(e) {
     let t = Date.now();
     requestIdleCallback(() => {
-      var n, r;
-      l.default.track(s.rMx.APP_UI_VIEWED, (n = function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), r.forEach(function(t) {
-            o(e, t, n[t])
-          })
-        }
-        return e
-      }({}, function() {
-        var e, t, n;
-        let r = "--campaign-id=";
-        for (let l of null != (n = null === i.Z || true === i.Z || null == (t = i.Z.processUtils) || null == (e = t.getMainArgvSync) ? true : e.call(t)) ? n : [])
-          if (l.startsWith(r)) return {
-            referrer: l.substr(r.length)
-          };
-        return {}
-      }(), function() {
-        let e = false,
-          t = {
-            total_compressed_byte_size: 0,
-            total_uncompressed_byte_size: 0,
-            total_transfer_byte_size: 0,
-            js_compressed_byte_size: 0,
-            js_uncompressed_byte_size: 0,
-            js_transfer_byte_size: 0,
-            css_compressed_byte_size: 0,
-            css_uncompressed_byte_size: 0,
-            css_transfer_byte_size: 0
-          };
-        return null != window.performance && null != window.performance.getEntries && window.performance.getEntries().forEach(n => {
-          let r = null != n.encodedBodySize ? n.encodedBodySize : n.decodedBodySize,
-            i = null != n.decodedBodySize ? n.decodedBodySize : n.encodedBodySize,
-            l = n.transferSize;
-          null != i && null != r && (e = true, t.total_compressed_byte_size += r, t.total_uncompressed_byte_size += i, null != l && (t.total_uncompressed_byte_size += l), "resource" === n.entryType && ("script" === n.initiatorType && null != n.name && null != n.name.match(/\.js/) && (t.js_compressed_byte_size += r, t.js_uncompressed_byte_size += i, null != l && (t.js_uncompressed_byte_size += l)), "link" === n.initiatorType && null != n.name && null != n.name.match(/\.css/) && (t.css_compressed_byte_size += r, t.css_uncompressed_byte_size += i, null != l && (t.css_uncompressed_byte_size += l))))
-        }), e ? t : {}
-      }()), r = r = {
+      a.default.track(s.rMx.APP_UI_VIEWED, d(c({}, m(), g()), {
         load_id: this.loadId,
         screen_name: e,
-        duration_ms_since_app_opened: t - window.GLOBAL_ENV.HTML_TIMESTAMP,
-        app_hardware_acceleration_enabled: a.ZP.getEnableHardwareAcceleration()
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, r)
-        }
-        return n
-      })(Object(r)).forEach(function(e) {
-        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
-      }), n))
+        duration_ms_since_app_opened: t - f(),
+        app_hardware_acceleration_enabled: o.ZP.getEnableHardwareAcceleration()
+      }))
     })
   }
   trackAppUIViewed(e) {
     if (!this.appUIViewed) {
       this.trackEvent(e);
       try {
-        a.ZP.appViewed()
+        o.ZP.appViewed()
       } catch (e) {}
       this.appUIViewed = true
     }
   }
   constructor() {
-    o(this, "loadId", (0, Chunk772848.Z)()), o(this, "appUIViewed", false)
+    l(this, "loadId", (0, Chunk772848.Z)()), l(this, "appUIViewed", false)
   }
-};
+}
+let p = new _;
 
-function d(e) {
-  c.trackAppUIViewed(e)
+function h(e) {
+  p.trackAppUIViewed(e)
+}
+
+function m() {
+  var e, t, n;
+  let r = "--campaign-id=";
+  for (let a of null != (n = null === Chunk579806.Z || true === Chunk579806.Z || null == (t = Chunk579806.Z.processUtils) || null == (e = exports.getMainArgvSync) ? true : module.call(exports)) ? require : [])
+    if (Chunk626135.startsWith(Chunk772848)) return {
+      referrer: Chunk626135.substr(Chunk772848.length)
+    };
+  return {}
+}
+
+function g() {
+  let e = false,
+    t = {
+      total_compressed_byte_size: 0,
+      total_uncompressed_byte_size: 0,
+      total_transfer_byte_size: 0,
+      js_compressed_byte_size: 0,
+      js_uncompressed_byte_size: 0,
+      js_transfer_byte_size: 0,
+      css_compressed_byte_size: 0,
+      css_uncompressed_byte_size: 0,
+      css_transfer_byte_size: 0
+    };
+  return null != window.performance && null != window.performance.getEntries && window.performance.getEntries().forEach(n => {
+    let r = null != n.encodedBodySize ? n.encodedBodySize : n.decodedBodySize,
+      i = null != n.decodedBodySize ? n.decodedBodySize : n.encodedBodySize,
+      a = n.transferSize;
+    null != i && null != r && (e = true, t.total_compressed_byte_size += r, t.total_uncompressed_byte_size += i, null != a && (t.total_uncompressed_byte_size += a), "resource" === n.entryType && ("script" === n.initiatorType && null != n.name && null != n.name.match(/\.js/) && (t.js_compressed_byte_size += r, t.js_uncompressed_byte_size += i, null != a && (t.js_uncompressed_byte_size += a)), "link" === n.initiatorType && null != n.name && null != n.name.match(/\.css/) && (t.css_compressed_byte_size += r, t.css_uncompressed_byte_size += i, null != a && (t.css_uncompressed_byte_size += a))))
+  }), module ? exports : {}
 }

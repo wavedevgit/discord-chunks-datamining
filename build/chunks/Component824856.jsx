@@ -1,12 +1,13 @@
-/** Chunk was on 66181 **/
-/** chunk id: 824856, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 824856, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => b
+  Z: () => g
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk561537 = require("./561537.jsx"),
   Chunk269210 = require("./269210.jsx"),
   Chunk481060 = require("./481060.js"),
@@ -18,62 +19,62 @@ var Chunk951288 = require("./951288.js"),
   Chunk993553 = require("./993553.jsx"),
   Chunk337913 = require("./337913.js");
 
-function b(e) {
+function g(e) {
   let {
     cta: t,
     storeListing: n,
-    className: s
+    className: a
   } = e, {
-    applicationId: b,
-    benefits: x,
-    description: _
-  } = n, j = r.useMemo(() => null == n.thumbnail ? null : (0, g.q)(b, n.thumbnail, 256), [b, n.thumbnail]), {
-    data: E
-  } = (0, d.X)(n.skuId), C = r.useMemo(() => {
-    if (null == E || 0 === E.length) return null;
-    let e = E[0];
-    return (0, m.xg)(e)
-  }, [E]);
-  return null == C ? null : (0, i.jsxs)(l.l, {
-    className: a()(f.wrapper, s),
-    header: (0, i.jsxs)(i.Fragment, {
-      children: [(0, i.jsxs)("div", {
-        className: f.headerTitle,
-        children: [null != j && (0, i.jsx)(c.Eep, {
-          src: j.href,
-          imageClassName: f.subscriptionImg,
+    applicationId: g,
+    benefits: E,
+    description: b
+  } = n, y = i.useMemo(() => null == n.thumbnail ? null : (0, p.q)(g, n.thumbnail, 256), [g, n.thumbnail]), {
+    data: O
+  } = (0, u.X)(n.skuId), v = i.useMemo(() => {
+    if (null == O || 0 === O.length) return null;
+    let e = O[0];
+    return (0, f.xg)(e)
+  }, [O]);
+  return null == v ? null : (0, r.jsxs)(s.l, {
+    className: o()(m.wrapper, a),
+    header: (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsxs)("div", {
+        className: m.headerTitle,
+        children: [null != y && (0, r.jsx)(c.Eep, {
+          src: y.href,
+          imageClassName: m.subscriptionImg,
           width: 48,
           height: 48
-        }), (0, i.jsxs)("div", {
-          children: [(0, i.jsx)(c.X6q, {
+        }), (0, r.jsxs)("div", {
+          children: [(0, r.jsx)(c.X6q, {
             variant: "heading-md/bold",
             children: n.summary
-          }), (0, i.jsx)(c.Text, {
+          }), (0, r.jsx)(c.Text, {
             variant: "text-md/medium",
-            children: C
+            children: v
           })]
         })]
       }), t]
     }),
-    children: [!(0, p.Ew)(_) && (0, i.jsx)("div", {
-      className: f.description,
-      children: (0, i.jsx)(h.Z, {
+    children: [!(0, _.Ew)(b) && (0, r.jsx)("div", {
+      className: m.description,
+      children: (0, r.jsx)(h.Z, {
         variant: "text-sm/medium",
-        children: _
+        children: b
       })
-    }), null != x && x.length > 0 && (0, i.jsx)("div", {
-      className: f.benefits,
-      children: x.map(e => {
+    }), null != E && E.length > 0 && (0, r.jsx)("div", {
+      className: m.benefits,
+      children: E.map(e => {
         let {
           id: t,
           name: n,
-          description: r,
-          icon: s
+          description: i,
+          icon: a
         } = e;
-        return (0, i.jsx)(o.Gm, {
+        return (0, r.jsx)(l.Gm, {
           header: n,
-          icon: (0, u.n)(b, s),
-          description: r
+          icon: (0, d.n)(g, a),
+          description: i
         }, t)
       })
     })]

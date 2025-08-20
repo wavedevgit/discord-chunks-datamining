@@ -1,6 +1,7 @@
-/** Chunk was on 66181 **/
-/** chunk id: 642650, original params: e,t,n (module,exports,require) **/
-require.r(module.exports = {
+/** Chunk was on web.js **/
+/** chunk id: 642650, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+var r = {
   boxBackdrop: "boxBackdrop_abac7b",
   bentoBoxesGrid: "bentoBoxesGrid_abac7b",
   referralProgramBackground: "referralProgramBackground_abac7b",
@@ -29,4 +30,5 @@ require.r(module.exports = {
   bentoBoxButtonWhite: "bentoBoxButtonWhite_abac7b",
   bentoBoxButtonBrand: "bentoBoxButtonBrand_abac7b",
   badge: "badge_abac7b"
-})
+};
+require.r(module.exports = r)

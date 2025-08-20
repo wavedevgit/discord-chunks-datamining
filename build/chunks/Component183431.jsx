@@ -1,5 +1,6 @@
-/** Chunk was on 26434 **/
-/** chunk id: 183431, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 183431, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   Z: () => u
 });
@@ -14,10 +15,10 @@ var Chunk951288 = require("./951288.js"),
 function u(e) {
   let {
     channelId: t
-  } = e, n = (0, s.l6)(), u = (0, s.L5)(), d = i.useCallback(() => {
-    o.Z.showAgeVerificationGetStartedModal(a.cU.SYSTEM_DM_RETRY_BUTTON), (0, a.Z7)(a.io.RETRY, t)
+  } = e, n = (0, l.l6)(), u = (0, l.L5)(), d = i.useCallback(() => {
+    o.Z.showAgeVerificationGetStartedModal(s.cU.SYSTEM_DM_RETRY_BUTTON), (0, s.Z7)(s.io.RETRY, t)
   }, [t]);
-  return (0, r.jsx)(l.zxk, {
+  return (0, r.jsx)(a.zxk, {
     variant: "primary",
     text: n ? c.intl.string(c.t.KPGVWl) : c.intl.string(c.t["/nicWl"]),
     onClick: d,

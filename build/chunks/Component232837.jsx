@@ -1,7 +1,7 @@
 /** Chunk was on 85505 **/
-/** chunk id: 232837, original params: t,e,n (module,exports,require) **/
+/** chunk id: 232837, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  default: () => g
+  default: () => C
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -22,62 +22,62 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk623146 = require("./623146.js");
 
-function g(t) {
+function C(e) {
   let {
-    channelId: e,
-    userId: n,
-    transitionState: g,
-    onClose: p
-  } = t, m = i.useRef(false), h = (0, a.e7)([c.Z], () => c.Z.isBlocked(n)), C = (0, a.e7)([_.Z], () => _.Z.getChannel(e));
+    channelId: n,
+    userId: t,
+    transitionState: C,
+    onClose: k
+  } = e, O = r.useRef(false), v = (0, o.e7)([c.Z], () => c.Z.isBlocked(t)), A = (0, o.e7)([d.Z], () => d.Z.getChannel(n));
   if ((0, u.zq)(() => {
-      m.current || (0, E.nC)(n)
-    }), null == d.default.getUser(n)) return null;
-  let P = [{
-      icon: (0, I.r)([n], null == C ? true : C.guild_id),
-      text: (0, I.a)([n], 1, null == C ? true : C.guild_id, e),
-      className: O.row
+      O.current || (0, m.nC)(t)
+    }), null == _.default.getUser(t)) return null;
+  let w = [{
+      icon: (0, N.r)([t], null == A ? true : A.guild_id),
+      text: (0, N.a)([t], 1, null == A ? true : A.guild_id, n),
+      className: p.row
     }, {
-      icon: (0, r.jsx)("div", {
-        className: O.icon,
-        children: (0, r.jsx)(l.aNP, {})
+      icon: (0, i.jsx)("div", {
+        className: p.icon,
+        children: (0, i.jsx)(a.aNP, {})
       }),
-      text: L.intl.string(L.t["+4O9nZ"]),
-      className: O.row
+      text: h.intl.string(h.t["+4O9nZ"]),
+      className: p.row
     }],
-    x = h ? L.intl.string(L.t.QnTzrq) : L.intl.string(L.t.QsWbfX);
-  return (0, r.jsx)(f.Z, {
-    headerText: L.intl.string(L.t["1/gpFh"]),
-    descriptionText: x,
-    infoRows: P,
+    I = v ? h.intl.string(h.t.QnTzrq) : h.intl.string(h.t.QsWbfX);
+  return (0, i.jsx)(x.Z, {
+    headerText: h.intl.string(h.t["1/gpFh"]),
+    descriptionText: I,
+    infoRows: w,
     onDismissAndStay: () => {
-      m.current = true, p(), (0, E.nC)(n), A.default.track(N.rMx.VOICE_CHANNEL_BLOCKED_USER_WARNING_ENGAGEMENT, {
-        action: S.q.CLICK_TO_STAY,
-        channel_id: e,
-        blocked_user_ids: h ? [n] : [],
-        ignored_user_ids: h ? [] : [n],
-        warning_surface: S.fz.POST_JOIN_MODAL
+      O.current = true, k(), (0, m.nC)(t), f.default.track(E.rMx.VOICE_CHANNEL_BLOCKED_USER_WARNING_ENGAGEMENT, {
+        action: g.q.CLICK_TO_STAY,
+        channel_id: n,
+        blocked_user_ids: v ? [t] : [],
+        ignored_user_ids: v ? [] : [t],
+        warning_surface: g.fz.POST_JOIN_MODAL
       })
     },
     onDismissAndLeave: () => {
-      m.current = true, p(), o.default.disconnect(), A.default.track(N.rMx.VOICE_CHANNEL_BLOCKED_USER_WARNING_ENGAGEMENT, {
-        action: S.q.CLICK_TO_LEAVE,
-        channel_id: e,
-        blocked_user_ids: h ? [n] : [],
-        ignored_user_ids: h ? [] : [n],
-        warning_surface: S.fz.POST_JOIN_MODAL
+      O.current = true, k(), l.default.disconnect(), f.default.track(E.rMx.VOICE_CHANNEL_BLOCKED_USER_WARNING_ENGAGEMENT, {
+        action: g.q.CLICK_TO_LEAVE,
+        channel_id: n,
+        blocked_user_ids: v ? [t] : [],
+        ignored_user_ids: v ? [] : [t],
+        warning_surface: g.fz.POST_JOIN_MODAL
       })
     },
-    leaveButtonText: L.intl.string(L.t["Hi1/aW"]),
-    stayButtonText: L.intl.string(L.t["Z+/hfX"]),
-    transitionState: g,
-    onClose: p,
+    leaveButtonText: h.intl.string(h.t["Hi1/aW"]),
+    stayButtonText: h.intl.string(h.t["Z+/hfX"]),
+    transitionState: C,
+    onClose: k,
     impression: {
       impressionName: s.ImpressionNames.VOICE_CHANNEL_BLOCKED_USER_WARNING,
       impressionProperties: {
-        channel_id: e,
-        blocked_user_ids: h ? [n] : [],
-        ignored_user_ids: h ? [] : [n],
-        warning_surface: S.fz.POST_JOIN_MODAL
+        channel_id: n,
+        blocked_user_ids: v ? [t] : [],
+        ignored_user_ids: v ? [] : [t],
+        warning_surface: g.fz.POST_JOIN_MODAL
       }
     }
   })

@@ -1,5 +1,6 @@
-/** Chunk was on 26434 **/
-/** chunk id: 105341, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 105341, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   separator: "separator_ae2544",
   infoTitle: "infoTitle_ae2544",

@@ -1,12 +1,12 @@
 /** Chunk was on 56035 **/
-/** chunk id: 812613, original params: e,t,n (module,exports,require) **/
+/** chunk id: 812613, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Zk: () => d,
   bb: () => f,
   kV: () => h
 }), require("./415506.js"), require("./644351.js"), require("./146733.js"), require("./539854.js"), require("./17294.js"), require("./227481.js"), require("./730884.js"), require("./20464.js"), require("./341884.js"), require("./364341.js"), require("./629680.js"), require("./505025.js"), require("./918970.js"), require("./121784.js"), require("./410992.js");
 var Chunk512722 = require("./512722.js"),
-  a = require.n(Chunk512722),
+  l = require.n(Chunk512722),
   Chunk304809 = require("./304809.js"),
   Chunk70956 = require("./70956.js"),
   Chunk208049 = require("./208049.js"),
@@ -21,78 +21,78 @@ try {
 } catch (e) {}
 async function c(e) {
   if (null == u) throw Error("Failed to create audio context");
-  let t = await e.arrayBuffer();
-  if (!(t instanceof ArrayBuffer)) throw Error("Unexpected file type");
-  return u.decodeAudioData(t)
+  let n = await e.arrayBuffer();
+  if (!(n instanceof ArrayBuffer)) throw Error("Unexpected file type");
+  return u.decodeAudioData(n)
 }
 async function d(e) {
-  var t;
-  let n = await (t = t => {
-    t.readAsDataURL(e)
-  }, new Promise((e, n) => {
-    let l = new FileReader,
-      a = () => {
-        l.removeEventListener("load", a), l.removeEventListener("error", n), e(l.result)
+  var n;
+  let t = await (n = n => {
+    n.readAsDataURL(e)
+  }, new Promise((e, t) => {
+    let a = new FileReader,
+      l = () => {
+        a.removeEventListener("load", l), a.removeEventListener("error", t), e(a.result)
       };
-    l.addEventListener("load", a), l.addEventListener("error", n), t(l)
+    a.addEventListener("load", l), a.addEventListener("error", t), n(a)
   }));
-  if ("string" != typeof n) throw Error("Unexpected file type");
-  return n
+  if ("string" != typeof t) throw Error("Unexpected file type");
+  return t
 }
 async function f(e) {
   let {
-    readPromise: t,
-    guildId: n,
-    name: l,
-    volume: a,
+    readPromise: n,
+    guildId: t,
+    name: a,
+    volume: l,
     emojiId: i,
     emojiName: r
   } = e;
-  return (0, s.Dx)({
-    guildId: n,
-    name: l,
-    sound: await t,
-    volume: a,
+  return (0, o.Dx)({
+    guildId: t,
+    name: a,
+    sound: await n,
+    volume: l,
     emojiId: i,
     emojiName: r
   })
 }
 async function m(e) {
-  let t = [],
-    n = function(e) {
+  let n = [],
+    t = function(e) {
       if (1 === e.length) return e[0];
       if (2 === e.length) {
-        let t = e[0],
-          n = e[1],
-          l = [];
-        for (let e = 0; e < t.length; e++) l.push(t[e]), l.push(n[e]);
-        let a = new Float32Array(l.length);
-        return a.set(l), a
+        let n = e[0],
+          t = e[1],
+          a = [];
+        for (let e = 0; e < n.length; e++) a.push(n[e]), a.push(t[e]);
+        let l = new Float32Array(a.length);
+        return l.set(a), l
       }
       throw Error("Only handles up to 2 channels")
     }(function(e) {
       let {
-        numberOfChannels: t
-      } = e, n = [];
-      for (let l = 0; l < t; l++) n.push(e.getChannelData(l));
-      return n
+        numberOfChannels: n
+      } = e, t = [];
+      for (let a = 0; a < n; a++) t.push(e.getChannelData(a));
+      return t
     }(e)),
-    l = new AudioData({
+    a = new AudioData({
       format: "f32",
       sampleRate: e.sampleRate,
       numberOfFrames: e.length,
       numberOfChannels: e.numberOfChannels,
       timestamp: 1e3 * e.duration * 1e3,
-      data: n
+      data: t
     }),
     i = new AudioEncoder({
-      output: function(n) {
-        a()(null != n.duration, "Chunk duration must not be null");
-        let l = n.duration / 1e6 * e.sampleRate,
-          i = new Uint8Array(n.byteLength);
-        n.copyTo(i), t.push({
+      output: function(t) {
+        l()(null != t.duration, "Chunk duration must not be null");
+        let a = t.duration / 1e6 * e.sampleRate,
+          i = new Uint8Array(t.byteLength);
+        t.copyTo(i), n.push({
           buffer: i,
-          numSamples: l
+          numSamples: a
         })
       },
       error: e => {
@@ -103,7 +103,7 @@ async function m(e) {
     codec: "opus",
     sampleRate: e.sampleRate,
     numberOfChannels: e.numberOfChannels
-  }), i.encode(l), await i.flush(), new Blob([(0, o.Z)(t, {
+  }), i.encode(a), await i.flush(), new Blob([(0, s.Z)(n, {
     channelCount: e.numberOfChannels,
     inputSampleRate: e.sampleRate,
     outputGain: 0,
@@ -112,30 +112,30 @@ async function m(e) {
     type: "audio/ogg"
   })
 }
-async function h(e, t) {
-  let n = function(e, t) {
+async function h(e, n) {
+  let t = function(e, n) {
     let {
-      startMs: n,
-      endMs: l
-    } = t, {
-      sampleRate: a,
+      startMs: t,
+      endMs: a
+    } = n, {
+      sampleRate: l,
       numberOfChannels: i,
-      duration: s
-    } = e, o = s * r.Z.Millis.SECOND, c = Math.min(l, o);
-    if (0 === n && c === o) return e;
+      duration: o
+    } = e, s = o * r.Z.Millis.SECOND, c = Math.min(a, s);
+    if (0 === t && c === s) return e;
     if (null == u) throw Error("Failed to create audio context");
-    let d = Math.floor(n / o * e.length),
-      f = Math.floor(c / o * e.length),
-      m = u.createBuffer(i, f - d, a);
-    for (let t = 0; t < i; t++) {
-      let n = m.getChannelData(t),
-        l = e.getChannelData(t),
-        a = 0;
-      for (let e = d; e <= f; e++) n[a] = l[e], a++
+    let d = Math.floor(t / s * e.length),
+      f = Math.floor(c / s * e.length),
+      m = u.createBuffer(i, f - d, l);
+    for (let n = 0; n < i; n++) {
+      let t = m.getChannelData(n),
+        a = e.getChannelData(n),
+        l = 0;
+      for (let e = d; e <= f; e++) t[l] = a[e], l++
     }
     return m
-  }(await c(e), t);
-  return new File([await m(n)], "sound.ogg", {
+  }(await c(e), n);
+  return new File([await m(t)], "sound.ogg", {
     type: "audio/ogg"
   })
 }

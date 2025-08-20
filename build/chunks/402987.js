@@ -1,5 +1,6 @@
-/** Chunk was on 75283 **/
-/** chunk id: 402987, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 402987, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   connectedAccountVanityMetadata: "connectedAccountVanityMetadata_fffe42",
   connectedAccountVanityMetadataTag: "connectedAccountVanityMetadataTag_fffe42",

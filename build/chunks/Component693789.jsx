@@ -143,34 +143,34 @@ function T(e) {
     type: T = "button",
     style: S,
     wrapperClassName: A,
-    className: N,
-    innerClassName: C,
+    className: C,
+    innerClassName: N,
     onClick: R,
     onDoubleClick: P,
     onMouseDown: w,
     onMouseUp: D,
-    onMouseEnter: L,
-    onMouseLeave: x,
-    onKeyDown: M,
-    children: k,
-    rel: j,
+    onMouseEnter: x,
+    onMouseLeave: L,
+    onKeyDown: j,
+    children: M,
+    rel: k,
     buttonRef: U,
     focusProps: G,
     "aria-label": B,
-    submittingStartedLabel: V,
-    submittingFinishedLabel: F
-  } = e, Z = g(e, ["look", "color", "size", "fullWidth", "grow", "disabled", "submitting", "type", "style", "wrapperClassName", "className", "innerClassName", "onClick", "onDoubleClick", "onMouseDown", "onMouseUp", "onMouseEnter", "onMouseLeave", "onKeyDown", "children", "rel", "buttonRef", "focusProps", "aria-label", "submittingStartedLabel", "submittingFinishedLabel"]);
+    submittingStartedLabel: Z,
+    submittingFinishedLabel: V
+  } = e, F = g(e, ["look", "color", "size", "fullWidth", "grow", "disabled", "submitting", "type", "style", "wrapperClassName", "className", "innerClassName", "onClick", "onDoubleClick", "onMouseDown", "onMouseUp", "onMouseEnter", "onMouseLeave", "onKeyDown", "children", "rel", "buttonRef", "focusProps", "aria-label", "submittingStartedLabel", "submittingFinishedLabel"]);
   let H = h || E,
-    Y = H && (null != L || null != x),
+    Y = H && (null != x || null != L),
     W = Y ? null : A,
     K = v(G, t),
     z = i.useRef(false);
   i.useEffect(() => {
-    true === E && (z.current = true, l.u.announce(null != V ? V : d.intl.string(d.t.pfChQk))), false === E && true === z.current && l.u.announce(null != F ? F : d.intl.string(d.t.SVPara))
-  }, [E, V, F]);
+    true === E && (z.current = true, l.u.announce(null != Z ? Z : d.intl.string(d.t.pfChQk))), false === E && true === z.current && l.u.announce(null != V ? V : d.intl.string(d.t.SVPara))
+  }, [E, Z, V]);
   let q = (0, r.jsx)(c.t, m(p({}, G), {
     offset: K,
-    children: (0, r.jsxs)("button", m(p({}, H ? null : Z), {
+    children: (0, r.jsxs)("button", m(p({}, H ? null : F), {
       "aria-label": B,
       "aria-busy": !!E || true,
       ref: U,
@@ -178,14 +178,14 @@ function T(e) {
       onDoubleClick: H ? e => e.preventDefault() : P,
       onMouseUp: h ? true : D,
       onMouseDown: h ? true : w,
-      onMouseEnter: L,
-      onMouseLeave: x,
-      onKeyDown: h ? true : M,
+      onMouseEnter: x,
+      onMouseLeave: L,
+      onKeyDown: h ? true : j,
       type: T,
       disabled: h,
       style: S,
-      rel: j,
-      className: o()(N, I({
+      rel: k,
+      className: o()(C, I({
         look: t,
         color: n,
         size: a,
@@ -199,8 +199,8 @@ function T(e) {
         className: f.spinner,
         itemClassName: f.spinnerItem
       }) : null, (0, r.jsx)("div", {
-        className: o()(f.contents, C),
-        children: k
+        className: o()(f.contents, N),
+        children: M
       })]
     }))
   }));
@@ -210,8 +210,8 @@ function T(e) {
       [f.fullWidth]: s
     }),
     children: [q, (0, r.jsx)("span", {
-      onMouseEnter: L,
-      onMouseLeave: x,
+      onMouseEnter: x,
+      onMouseLeave: L,
       className: f.disabledButtonOverlay
     })]
   }) : q

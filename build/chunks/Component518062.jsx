@@ -1,7 +1,8 @@
-/** Chunk was on 66546 **/
-/** chunk id: 518062, original params: e,n,t (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 518062, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => s
+  Z: () => d
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -13,34 +14,34 @@ var Chunk442837 = require("./442837.js"),
   Chunk110818 = require("./110818.jsx"),
   Chunk197081 = require("./197081.js");
 
-function s(e) {
+function d(e) {
   let {
-    purchaseState: n,
-    currentStep: t,
-    onClose: s
-  } = e, [u, d] = (0, c.z)({
-    purchaseState: n,
-    currentStep: t,
-    initialScene: _.fe.Scenes.ENTRY,
-    purchaseScene: _.fe.Scenes.STARS,
-    errorScene: _.fe.Scenes.ERROR,
-    successScene: _.fe.Scenes.SUCCESS
-  }), b = (0, r.e7)([a.Z], () => a.Z.useReducedMotion);
-  return (0, o.jsxs)(i.xBx, {
-    align: l.Z.Align.START,
-    className: p.header,
+    purchaseState: t,
+    currentStep: n,
+    onClose: d
+  } = e, [f, _] = (0, l.z)({
+    purchaseState: t,
+    currentStep: n,
+    initialScene: c.fe.Scenes.ENTRY,
+    purchaseScene: c.fe.Scenes.STARS,
+    errorScene: c.fe.Scenes.ERROR,
+    successScene: c.fe.Scenes.SUCCESS
+  }), p = (0, i.e7)([o.Z], () => o.Z.useReducedMotion);
+  return (0, r.jsxs)(a.xBx, {
+    align: s.Z.Align.START,
+    className: u.header,
     separator: false,
-    children: [(0, o.jsx)(_.fe, {
-      className: p.animation,
-      nextScene: u,
-      onScenePlay: e => d(_.fe.getNextScene(e)),
+    children: [(0, r.jsx)(c.fe, {
+      className: u.animation,
+      nextScene: f,
+      onScenePlay: e => _(c.fe.getNextScene(e)),
       pauseWhileUnfocused: false,
-      pause: b
-    }), (0, o.jsx)("div", {
-      className: p.headerTitle
-    }), (0, o.jsx)(i.olH, {
-      onClick: s,
-      className: p.closeButton
+      pause: p
+    }), (0, r.jsx)("div", {
+      className: u.headerTitle
+    }), (0, r.jsx)(a.olH, {
+      onClick: d,
+      className: u.closeButton
     })]
   })
 }

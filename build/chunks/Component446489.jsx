@@ -1,17 +1,18 @@
-/** Chunk was on 38626 **/
-/** chunk id: 446489, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 446489, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => b,
-  y: () => g
+  Z: () => g,
+  y: () => m
 });
-var i, l, Chunk951288 = require("./951288.js"),
+var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk392711 = require("./392711.js"),
   s = require.n(Chunk392711),
   Chunk748780 = require("./748780.js"),
   Chunk451478 = require("./451478.js");
 
-function d(e, t, n) {
+function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -20,80 +21,86 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function d(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      i = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), i.forEach(function(t) {
-      d(e, t, n[t])
+    }))), r.forEach(function(t) {
+      u(e, t, n[t])
     })
   }
   return e
 }
 
-function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-      var i = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, i)
-    }
-    return n
-  })(Object(t)).forEach(function(n) {
+function f(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var m = ((i = m || {})[i.ABOVE = 0] = "ABOVE", i[i.VISIBLE = 1] = "VISIBLE", i[i.BELOW = 2] = "BELOW", i);
+var p = function(e) {
+  return e[e.ABOVE = 0] = "ABOVE", e[e.VISIBLE = 1] = "VISIBLE", e[e.BELOW = 2] = "BELOW", e
+}(p || {});
 
-function f(e, t) {
+function h(e, t) {
   return {
     toValue: e,
     duration: null != t ? t : 300,
-    easing: c.Z.Easing.inOut(c.Z.Easing.back())
+    easing: l.Z.Easing.inOut(l.Z.Easing.back())
   }
 }
 
-function g(e, t, n) {
+function m(e, t, n) {
   if (null != t) {
-    let i = Math.ceil(Math.log10(e + 1));
-    return null != n && n > 0 ? Math.min(i, n) * t : i * t
+    let r = Math.ceil(Math.log10(e + 1));
+    return null != n && n > 0 ? Math.min(r, n) * t : r * t
   }
 }
-class b extends(l = Chunk647438.PureComponent) {
+class g extends(r = Chunk647438.PureComponent) {
   static getDerivedStateFromProps(e, t) {
     let {
       prevValue: n,
-      currValue: i,
-      nextValue: l
+      currValue: r,
+      nextValue: i
     } = t;
-    return null == n && i !== e.value ? {
-      prevValue: u.Z.isFocused() ? i : null,
+    return null == n && r !== e.value ? {
+      prevValue: c.Z.isFocused() ? r : null,
       currValue: e.value
-    } : null != l && l !== e.value ? {
+    } : null != i && i !== e.value ? {
       nextValue: e.value
     } : null
   }
   componentDidUpdate(e, t) {
     let {
       prevValue: n,
-      currValue: i
+      currValue: r
     } = this.state;
-    n !== t.prevValue && null != n && this.animateBetween(n, i)
+    n !== t.prevValue && null != n && this.animateBetween(n, r)
   }
   animateBetween(e, t) {
     let n, {
-      forcePosition: i,
-      animationSpeed: l
+      forcePosition: r,
+      animationSpeed: i
     } = this.props;
-    this.prevAnimate.setValue(1), null != i ? 0 === i ? (this.currAnimate.setValue(0), n = 2) : 2 === i && (this.currAnimate.setValue(2), n = 0) : e > t ? (this.currAnimate.setValue(0), n = 2) : (this.currAnimate.setValue(2), n = 0), c.Z.parallel([c.Z.timing(this.prevAnimate, f(n, l)), c.Z.timing(this.currAnimate, f(1, l))]).start(this.animateNext)
+    this.prevAnimate.setValue(1), null != r ? 0 === r ? (this.currAnimate.setValue(0), n = 2) : 2 === r && (this.currAnimate.setValue(2), n = 0) : e > t ? (this.currAnimate.setValue(0), n = 2) : (this.currAnimate.setValue(2), n = 0), l.Z.parallel([l.Z.timing(this.prevAnimate, h(n, i)), l.Z.timing(this.currAnimate, h(1, i))]).start(this.animateNext)
   }
   getAnimatedStyle(e) {
     let {
       animationColor: t
     } = this.props;
-    return h({
+    return d({
       transform: [{
         translateY: e.interpolate({
           inputRange: [0, 1, 2],
@@ -114,7 +121,7 @@ class b extends(l = Chunk647438.PureComponent) {
       digitWidth: t,
       padStartLength: n
     } = this.props;
-    return g(e, t, n)
+    return m(e, t, n)
   }
   padValue(e) {
     let {
@@ -128,17 +135,17 @@ class b extends(l = Chunk647438.PureComponent) {
       currValue: t
     } = this.state, {
       color: n,
-      formatString: i
-    } = this.props, l = s().omit(this.props, ["value", "digitWidth", "padStartLength", "forcePosition"]);
-    if (null == module) return (0, Chunk951288.jsx)("div", p(h({}, l), {
+      formatString: r
+    } = this.props, a = s().omit(this.props, ["value", "digitWidth", "padStartLength", "forcePosition"]);
+    if (null == module) return (0, Chunk951288.jsx)("div", _(d({}, Chunk647438), {
       style: {
         color: require,
         minWidth: this.getMinWidth(exports)
       },
-      children: null != i ? i(this.padValue(exports)) : this.padValue(exports)
+      children: null != r ? r(this.padValue(exports)) : this.padValue(exports)
     }));
     let o = Math.max(module, exports);
-    return (0, Chunk951288.jsxs)("div", p(h({}, l), {
+    return (0, Chunk951288.jsxs)("div", _(d({}, Chunk647438), {
       style: {
         color: require,
         position: "relative",
@@ -147,30 +154,30 @@ class b extends(l = Chunk647438.PureComponent) {
       children: [(0, Chunk951288.jsx)("div", {
         style: {
           visibility: "hidden",
-          minWidth: this.getMinWidth(Chunk647438)
+          minWidth: this.getMinWidth(Chunk392711)
         },
-        children: this.padValue(Chunk647438)
+        children: this.padValue(Chunk392711)
       }), (0, Chunk951288.jsx)(Chunk748780.Z.div, {
-        style: h({
+        style: d({
           color: require
         }, this.getAnimatedStyle(this.prevAnimate)),
-        children: null != i ? i(this.padValue(module)) : this.padValue(module)
+        children: null != r ? r(this.padValue(module)) : this.padValue(module)
       }), (0, Chunk951288.jsx)(Chunk748780.Z.div, {
-        style: h({
+        style: d({
           color: require
         }, this.getAnimatedStyle(this.currAnimate)),
-        children: null != i ? i(this.padValue(exports)) : this.padValue(exports)
+        children: null != r ? r(this.padValue(exports)) : this.padValue(exports)
       })]
     }))
   }
   constructor(e) {
-    super(e), d(this, "prevAnimate", true), d(this, "currAnimate", true), d(this, "animateNext", () => {
+    super(e), u(this, "prevAnimate", true), u(this, "currAnimate", true), u(this, "animateNext", () => {
       let {
         currValue: e,
         nextValue: t
       } = this.state;
       null != t ? this.setState({
-        prevValue: u.Z.isFocused() ? e : null,
+        prevValue: c.Z.isFocused() ? e : null,
         currValue: t,
         nextValue: null
       }) : this.setState({
@@ -180,7 +187,7 @@ class b extends(l = Chunk647438.PureComponent) {
       prevValue: null,
       currValue: e.value,
       nextValue: null
-    }, this.prevAnimate = new c.Z.Value(0), this.currAnimate = new c.Z.Value(1)
+    }, this.prevAnimate = new l.Z.Value(0), this.currAnimate = new l.Z.Value(1)
   }
 }
-d(b, "Positions", m)
+u(g, "Positions", p)

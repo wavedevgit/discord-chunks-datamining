@@ -2,7 +2,7 @@
 /** chunk id: 914010, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => C
+  Z: () => N
 });
 var r, Chunk843611 = require("./843611.js"),
   Chunk442837 = require("./442837.js"),
@@ -74,7 +74,7 @@ function S(e) {
 function A() {
   m = null, g = null
 }
-class N extends(r = Chunk442837.ZP.PersistedStore) {
+class C extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     var t, n, r, a;
     this.mustEmitChanges(e => "CONNECTION_OPEN" !== e.type), this.waitFor(f.Z, u.default, d.Z), E = null != (n = null == e ? true : e.selectedGuildTimestampMillis) ? n : {}, m = null != (r = null == e ? true : e.selectedGuildId) ? r : null, g = null != (a = null == e ? true : e.lastSelectedGuildId) ? a : null;
@@ -101,8 +101,8 @@ class N extends(r = Chunk442837.ZP.PersistedStore) {
     return m === e ? h : E[e]
   }
 }
-p(N, "displayName", "SelectedGuildStore"), p(N, "persistKey", "SelectedGuildStore");
-let C = new N(Chunk570140.Z, {
+p(C, "displayName", "SelectedGuildStore"), p(C, "persistKey", "SelectedGuildStore");
+let N = new C(Chunk570140.Z, {
   CONNECTION_OPEN: b,
   OVERLAY_INITIALIZE: y,
   CHANNEL_SELECT: v,

@@ -1,5 +1,5 @@
-/** Chunk was on 72375 **/
-/** chunk id: 187881, original params: e,n,i (module,exports,require) **/
+/** Chunk was on 64099 **/
+/** chunk id: 187881, original params: t,n,e (module,exports,require) **/
 module.exports = {
   card: "card__88264",
   lurking: "lurking__88264",

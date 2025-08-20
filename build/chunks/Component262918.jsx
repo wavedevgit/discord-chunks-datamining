@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
-  s = require.n(Chunk512722),
+  o = require.n(Chunk512722),
   Chunk902704 = require("./902704.js"),
   Chunk481060 = require("./481060.js"),
   Chunk935369 = require("./935369.js"),
@@ -40,34 +40,34 @@ function _(e) {
       }
       return i
     }(e, ["guildId", "leaderboardId"]);
-  let y = (0, g.Z)({
+  let w = (0, f.Z)({
     guildId: a,
     leaderboardId: _
   });
-  s()(null != y, "Leaderboard must be loaded before opening the settings modal");
-  let w = y.guild_settings,
-    [v, O] = i.useState(w.sort_by_statistic_id),
-    [C, S] = i.useState(w.sort_desc),
-    [I, N] = i.useState(w.show_winner_crown),
-    [Z, {
-      loading: L
-    }] = (0, c.Z)(u._);
+  o()(null != w, "Leaderboard must be loaded before opening the settings modal");
+  let y = w.guild_settings,
+    [v, O] = i.useState(y.sort_by_statistic_id),
+    [C, I] = i.useState(y.sort_desc),
+    [S, N] = i.useState(y.show_winner_crown),
+    [L, {
+      loading: Z
+    }] = (0, d.Z)(u._);
   i.useEffect(() => {
-    d.ZP.trackWithMetadata(m.rMx.OPEN_MODAL, {
+    c.ZP.trackWithMetadata(m.rMx.OPEN_MODAL, {
       type: m.jXE.GUILD_LEADERBOARD_SETTINGS_MODAL
     })
   }, []);
-  let k = v !== w.sort_by_statistic_id || C !== w.sort_desc || I !== w.show_winner_crown,
-    P = async () => {
-      await Z({
+  let P = v !== y.sort_by_statistic_id || C !== y.sort_desc || S !== y.show_winner_crown,
+    k = async () => {
+      await L({
         guildId: a,
         leaderboardId: _,
         sortByStatisticId: v,
         sortDesc: C,
-        showWinnerCrown: I
+        showWinnerCrown: S
       }), j.onClose()
     }, B = i.useMemo(() => {
-      let e = Object.values(y.settings.statistics).filter(e => e.selectable_for_competition),
+      let e = Object.values(w.settings.statistics).filter(e => e.selectable_for_competition),
         t = [];
       for (let r of e)
         for (let e of [true, false]) t.push({
@@ -75,18 +75,18 @@ function _(e) {
             sortByStatisticId: r.id,
             sortDesc: e
           },
-          label: (0, f.s)({
+          label: (0, g.s)({
             statisticId: r.id,
             sortDesc: e,
             aggregationType: r.aggregation_type
           })
         });
       return t
-    }, [y]), E = B.find(e => (0, o.Z)(e.value, {
+    }, [w]), E = B.find(e => (0, s.Z)(e.value, {
       sortByStatisticId: v,
       sortDesc: C
     }));
-  return (0, n.jsx)(h.Z, (t = function(e) {
+  return (0, n.jsx)(x.Z, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {},
         n = Object.keys(r);
@@ -105,24 +105,24 @@ function _(e) {
     return e
   }({}, j), r = r = {
     guildId: a,
-    title: x.intl.string(x.t.rv9GUV),
+    title: b.intl.string(b.t.rv9GUV),
     buttons: (0, n.jsx)(l.zxk, {
       variant: "primary",
-      text: x.intl.string(x.t.R3BPHx),
-      onClick: P,
-      loading: L,
-      disabled: !k
+      text: b.intl.string(b.t.R3BPHx),
+      onClick: k,
+      loading: Z,
+      disabled: !P
     }),
     children: (0, n.jsxs)(l.hzk, {
       className: p.content,
       children: [(0, n.jsx)(l.Text, {
         variant: "text-md/medium",
         color: "header-primary",
-        children: x.intl.string(x.t.IQO9Fx)
+        children: b.intl.string(b.t.IQO9Fx)
       }), (0, n.jsx)(l.LZC, {
         size: 8
       }), (0, n.jsx)(l.q4e, {
-        placeholder: x.intl.string(x.t["g/Rr2d"]),
+        placeholder: b.intl.string(b.t["g/Rr2d"]),
         value: null == E ? true : E.value,
         options: B,
         onChange: e => {
@@ -130,28 +130,28 @@ function _(e) {
             sortByStatisticId: t,
             sortDesc: r
           } = e;
-          O(t), S(r)
+          O(t), I(r)
         }
       }), (0, n.jsx)("div", {
         className: p.divider
       }), (0, n.jsx)(l.vwX, {
-        children: x.intl.string(x.t.HU4EKC)
+        children: b.intl.string(b.t.HU4EKC)
       }), (0, n.jsx)(l.LZC, {
         size: 8
       }), (0, n.jsx)(l.j7V, {
         hideBorder: true,
         onChange: () => N(e => !e),
-        value: I,
+        value: S,
         className: p.showWinnerCrownSwitch,
         children: (0, n.jsxs)("div", {
           className: p.showWinnerCrownTextContainer,
           children: [(0, n.jsx)(l.Text, {
             variant: "text-md/medium",
             color: "header-primary",
-            children: x.intl.string(x.t.cH7QEx)
-          }), (0, n.jsx)(b.Z, {
+            children: b.intl.string(b.t.cH7QEx)
+          }), (0, n.jsx)(h.Z, {
             className: p.winnerImage,
-            leaderboard: y
+            leaderboard: w
           })]
         })
       })]

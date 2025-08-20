@@ -93,24 +93,24 @@ function g(e, t, n) {
         getSectionHeight: T,
         chunkSize: S,
         renderSection: A,
-        renderItem: N,
-        getSectionProps: C,
+        renderItem: C,
+        getSectionProps: N,
         itemGutter: R,
         removeEdgeItemGutters: P,
         sectionGutter: w,
         padding: D,
-        paddingVertical: L,
-        paddingHorizontal: x,
-        fade: M = false,
-        className: k,
-        style: j,
+        paddingVertical: x,
+        paddingHorizontal: L,
+        fade: j = false,
+        className: M,
+        style: k,
         maxContentWidth: U,
         renderAccessory: G,
         onItemVisibilityChange: B
       } = n,
-      V = h(n, ["onScroll", "dir", "sections", "columns", "getItemKey", "getItemHeight", "getSectionHeight", "chunkSize", "renderSection", "renderItem", "getSectionProps", "itemGutter", "removeEdgeItemGutters", "sectionGutter", "padding", "paddingVertical", "paddingHorizontal", "fade", "className", "style", "maxContentWidth", "renderAccessory", "onItemVisibilityChange"]);
-    let F = i.useRef(null),
-      Z = i.useRef(null),
+      Z = h(n, ["onScroll", "dir", "sections", "columns", "getItemKey", "getItemHeight", "getSectionHeight", "chunkSize", "renderSection", "renderItem", "getSectionProps", "itemGutter", "removeEdgeItemGutters", "sectionGutter", "padding", "paddingVertical", "paddingHorizontal", "fade", "className", "style", "maxContentWidth", "renderAccessory", "onItemVisibilityChange"]);
+    let V = i.useRef(null),
+      F = i.useRef(null),
       H = i.useRef({}),
       [Y, W] = i.useState(false),
       {
@@ -120,7 +120,7 @@ function g(e, t, n) {
       } = (0, c.T4)();
     (0, c.tT)({
       scrollerRef: K,
-      className: k,
+      className: M,
       specs: a,
       orientation: "vertical",
       dir: b
@@ -144,8 +144,8 @@ function g(e, t, n) {
       removeEdgeItemGutters: P,
       sectionGutter: w,
       padding: D,
-      paddingVertical: L,
-      paddingHorizontal: x,
+      paddingVertical: x,
+      paddingHorizontal: L,
       getScrollerState: q,
       dir: b,
       maxBufferWidth: U
@@ -174,8 +174,8 @@ function g(e, t, n) {
       getScrollerState: q
     }, (0, c.Ue)(K, q, ei)), [K, q, ea, ei, eo]);
     let el = (0, i.useCallback)(e => {
-      er(1), null == F.current ? W(true) : clearTimeout(F.current), F.current = setTimeout(() => {
-        F.current = null, W(false)
+      er(1), null == V.current ? W(true) : clearTimeout(V.current), V.current = setTimeout(() => {
+        V.current = null, W(false)
       }, 200), null != E && E(e)
     }, [E, er]);
     return i.useLayoutEffect(() => {
@@ -183,38 +183,38 @@ function g(e, t, n) {
     }, [ee, z]), (0, r.jsxs)("div", p(f({
       ref: K,
       onScroll: el,
-      className: o()(k, {
+      className: o()(M, {
         [e]: true,
-        [t]: M,
+        [t]: j,
         [u.scrolling]: Y
       }),
-      style: (0, c.uT)(j)
-    }, V), {
+      style: (0, c.uT)(k)
+    }, Z), {
       children: [null != (g = null == G ? true : G(ee)) ? g : null, (0, i.useMemo)(() => (0, r.jsx)(l.J, {
-        containerRef: Z,
+        containerRef: F,
         children: (0, r.jsx)("div", {
           style: {
             height: ee
           },
           className: u.content,
-          ref: Z,
+          ref: F,
           children: Object.keys($).map(e => {
             var t;
             let n = (0, c.t$)(e),
               i = Q[e],
               a = $[e],
               o = Q[(0, c.DP)(n)],
-              s = null == C ? true : C(n);
+              s = null == N ? true : N(n);
             return null != i && null != a ? (0, r.jsxs)("div", p(f({}, s), {
               style: f({}, i, null != (t = null == s ? true : s.style) ? t : {}),
               children: [null != A && null != o && A(n, o, e), a.map(e => {
                 let [t, n, r] = e, i = Q[t];
-                return null != i ? N(n, r, i, t, J) : null
+                return null != i ? C(n, r, i, t, J) : null
               })]
             }), e) : null
           })
         })
-      }), [$, N, A, Q, ee, C, J])]
+      }), [$, C, A, Q, ee, N, J])]
     }))
   })
 }

@@ -2,7 +2,7 @@
 /** chunk id: 742738, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => N
+  Z: () => C
 });
 var r, Chunk348327 = require("./348327.js"),
   a = require.n(Chunk348327),
@@ -45,8 +45,8 @@ function v() {
     T = (null == O || null == (e = O.party) ? true : module.id) === I ? O : null,
     S = Chunk565799.Z.getMutableParticipants(y.id, Chunk501655.pV.SPEAKER),
     A = S.filter(e => e.type === p.Ui.STREAM).length,
-    N = S.length - A,
-    C = Chunk565799.Z.getParticipantCount(Chunk570140) - A,
+    C = S.length - A,
+    N = Chunk565799.Z.getParticipantCount(Chunk570140) - A,
     R = (null == T || null == (t = T.party) ? true : exports.size) != null ? T.party.size[1] : 0;
   return {
     application_id: Chunk157925.gD,
@@ -61,7 +61,7 @@ function v() {
     },
     party: {
       id: I,
-      size: [N, Math.max(C, R)]
+      size: [C, Math.max(N, R)]
     }
   }
 }
@@ -96,7 +96,7 @@ class A extends(r = Chunk442837.ZP.Store) {
   }
 }
 y(A, "displayName", "StageChannelSelfRichPresenceStore");
-let N = new A(Chunk570140.Z, {
+let C = new A(Chunk570140.Z, {
   CONNECTION_OPEN: I,
   STAGE_INSTANCE_CREATE: I,
   STAGE_INSTANCE_UPDATE: I,

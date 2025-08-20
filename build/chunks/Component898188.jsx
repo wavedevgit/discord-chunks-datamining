@@ -2,7 +2,7 @@
 /** chunk id: 898188, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => C
+  Z: () => N
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -65,7 +65,7 @@ function A(e) {
   })
 }
 
-function N(e) {
+function C(e) {
   var t, n, a, d;
   let {
     guildId: f,
@@ -74,20 +74,20 @@ function N(e) {
   } = e, {
     channelAction: h,
     completed: b
-  } = (0, E.P3)(f, _), y = (0, E.K_)(f, null == h ? true : h.channelId), O = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), N = (null == h ? true : h.actionType) === g.oi.VIEW, C = (0, c.dQu)(c.TVs.colors.WHITE), [R, P] = i.useState(false), [w] = i.useState(new s.Z.Value(0)), [D] = i.useState(new s.Z.Value(0));
+  } = (0, E.P3)(f, _), y = (0, E.K_)(f, null == h ? true : h.channelId), O = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), C = (null == h ? true : h.actionType) === g.oi.VIEW, N = (0, c.dQu)(c.TVs.colors.WHITE), [R, P] = i.useState(false), [w] = i.useState(new s.Z.Value(0)), [D] = i.useState(new s.Z.Value(0));
   i.useEffect(() => {
     b ? s.Z.timing(w, {
       toValue: 0,
       duration: O ? 1 : 350,
       easing: s.Z.Easing.quad,
-      delay: 500 * !N
+      delay: 500 * !C
     }).start(() => P(true)) : s.Z.timing(w, {
       toValue: 1,
       duration: O ? 1 : 350,
       easing: s.Z.Easing.quad,
       delay: 400
     }).start()
-  }, [b, w, N, O]), i.useEffect(() => {
+  }, [b, w, C, O]), i.useEffect(() => {
     b && R && s.Z.timing(D, {
       toValue: 1,
       duration: 350 * !O,
@@ -95,10 +95,10 @@ function N(e) {
       delay: 400
     }).start()
   }, [b, D, R, O]);
-  let L = i.useCallback(() => {
+  let x = i.useCallback(() => {
     null != y && (0, m.gp)(f, y.channelId)
   }, [f, y]);
-  return null == h || N && !R ? null : (0, r.jsx)("div", {
+  return null == h || C && !R ? null : (0, r.jsx)("div", {
     className: o()(I.container, p),
     children: R && null != y ? (0, r.jsx)(s.Z.div, {
       style: {
@@ -109,7 +109,7 @@ function N(e) {
       },
       children: (0, r.jsxs)(c.P3F, {
         className: o()(I.banner, I.clickable),
-        onClick: L,
+        onClick: x,
         children: [(0, r.jsx)(A, {
           channelId: y.channelId,
           emojiId: null == (t = y.emoji) ? true : t.id,
@@ -129,7 +129,7 @@ function N(e) {
           className: I.iconCircle,
           children: (0, r.jsx)(c.ZSh, {
             size: "xs",
-            color: C.hex(),
+            color: N.hex(),
             className: I.nextIcon
           })
         })]
@@ -161,7 +161,7 @@ function N(e) {
         size: "custom",
         color: "currentColor",
         className: I.completed,
-        secondaryColor: C.hex(),
+        secondaryColor: N.hex(),
         width: 20,
         height: 20
       }) : null]
@@ -169,7 +169,7 @@ function N(e) {
   })
 }
 
-function C(e) {
+function N(e) {
   let {
     guildId: t,
     channel: n,
@@ -181,7 +181,7 @@ function C(e) {
     var e;
     return null == (e = h.Z.getGuild(t)) ? true : e.features.has(O.oNc.GUILD_SERVER_GUIDE)
   });
-  return s || o || !a || !c ? null : (0, r.jsx)(N, {
+  return s || o || !a || !c ? null : (0, r.jsx)(C, {
     guildId: t,
     channel: n,
     className: i

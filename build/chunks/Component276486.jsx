@@ -1,8 +1,8 @@
 /** Chunk was on 36605 **/
 /** chunk id: 276486, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  l: () => u,
-  v: () => d
+  l: () => d,
+  v: () => u
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -13,7 +13,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk624463 = require("./624463.js");
 
-function u() {
+function d() {
   return (0, Chunk951288.jsx)(Chunk489813.PU, {
     className: Chunk624463.editableRequirementContainer,
     icon: Chunk481060.AtH,
@@ -32,25 +32,25 @@ function u() {
   })
 }
 
-function d(e) {
+function u(e) {
   let {
     isUserVerified: t
-  } = e, u = t ? a.intl.string(a.t.WWzQtb) : a.intl.string(a.t.woMjLS);
-  return (0, r.jsx)(o.PU, {
+  } = e, d = t ? o.intl.string(o.t.WWzQtb) : o.intl.string(o.t.woMjLS);
+  return (0, r.jsx)(s.PU, {
     className: c.editableRequirementContainer,
-    icon: i.AtH,
-    text: u,
-    footnote: a.intl.string(a.t["jMh+TU"]),
+    icon: l.AtH,
+    text: d,
+    footnote: o.intl.string(o.t["jMh+TU"]),
     meetsRequirement: t,
-    children: (0, r.jsx)(i.zxk, {
+    children: (0, r.jsx)(l.zxk, {
       variant: "primary",
       size: "sm",
-      text: a.intl.string(a.t["13ofGh"]),
+      text: o.intl.string(o.t["13ofGh"]),
       onClick: () => {
-        (0, i.ZDy)(async () => {
+        (0, l.ZDy)(async () => {
           let {
             default: e
-          } = await Promise.all([n.e("76540"), n.e("32103")]).then(n.bind(n, 607018));
+          } = await Promise.resolve().then(n.bind(n, 607018));
           return t => (0, r.jsx)(e, function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
@@ -69,10 +69,10 @@ function d(e) {
             }
             return e
           }({
-            reason: l.L.GUILD_PHONE_REQUIRED
+            reason: i.L.GUILD_PHONE_REQUIRED
           }, t))
         }, {
-          modalKey: s.M
+          modalKey: a.M
         })
       }
     })

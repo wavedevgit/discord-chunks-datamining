@@ -30,12 +30,12 @@ let I = 1e3,
     let {
       children: t,
       isConfirmationStep: n
-    } = e, a = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), [I, T] = (0, i.useState)("entry"), S = (0, i.useRef)(null), A = (0, i.useRef)(null), N = (0, i.useCallback)(() => {
+    } = e, a = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), [I, T] = (0, i.useState)("entry"), S = (0, i.useRef)(null), A = (0, i.useRef)(null), C = (0, i.useCallback)(() => {
       if ("entry" === I && (T("idle"), null != S.current)) {
         var e;
         null == (e = S.current) || e.play()
       }
-    }, [I]), C = (0, i.useCallback)(() => {
+    }, [I]), N = (0, i.useCallback)(() => {
       if ("exit" !== I && (T("exit"), null != A.current)) {
         var e;
         null == (e = A.current) || e.play()
@@ -46,43 +46,43 @@ let I = 1e3,
       wasTier2PremiumBeforePurchase: P,
       selectedSkuId: w,
       purchaseState: D
-    } = (0, m.JL)(), [L, x] = (0, i.useState)(false);
+    } = (0, m.JL)(), [x, L] = (0, i.useState)(false);
     (0, i.useEffect)(() => {
-      D === g.A.PURCHASING && x(true)
+      D === g.A.PURCHASING && L(true)
     }, [D]);
-    let M = (0, f.P)(R, !!P, w),
+    let j = (0, f.P)(R, !!P, w),
       {
-        mediaUrls: k,
-        isSuccess: j
-      } = (0, E.Z)(!a && M && L),
+        mediaUrls: M,
+        isSuccess: k
+      } = (0, E.Z)(!a && j && x),
       U = (0, i.useRef)(null),
       [G, B] = (0, i.useState)(false),
-      [V, F] = (0, i.useState)(false),
-      [Z, H] = (0, i.useState)("none"),
+      [Z, V] = (0, i.useState)(false),
+      [F, H] = (0, i.useState)("none"),
       [Y, W] = (0, i.useState)(false);
     if ((0, i.useEffect)(() => {
         let e;
-        M && n && !Y && "none" === Z && (a || !j ? (H("static"), a || (W(true), _.default.track(b.rMx.PREMIUM_BRAND_REFRESH_WOW_MOMENT_ASSETS_NOT_LOADED_ON_CONFIRMATION)), e = false) : (H("animated"), F(true), e = true), c.Z.dispatch({
+        j && n && !Y && "none" === F && (a || !k ? (H("static"), a || (W(true), _.default.track(b.rMx.PREMIUM_BRAND_REFRESH_WOW_MOMENT_ASSETS_NOT_LOADED_ON_CONFIRMATION)), e = false) : (H("animated"), V(true), e = true), c.Z.dispatch({
           type: "WOW_MOMENT_CONFIRMATION_SET_IS_DISPLAYING_WOW_MOMENT_CONFIRMATION",
           value: true,
           isAnimated: e
         }), _.default.track(b.rMx.PREMIUM_BRAND_REFRESH_WOW_MOMENT_VIEWED, {
           wow_moment_type: e ? "animated" : "static"
         }))
-      }, [a, M, n, j, Y, Z]), (0, i.useEffect)(() => {
+      }, [a, j, n, k, Y, F]), (0, i.useEffect)(() => {
         function e() {
-          B(true), C()
+          B(true), N()
         }
         return p.S.subscribe(b.CkL.PREMIUM_PAYMENT_MODAL_CLOSED, e), () => {
           p.S.unsubscribe(b.CkL.PREMIUM_PAYMENT_MODAL_CLOSED, e)
         }
-      }, [C]), (0, i.useEffect)(() => () => {
+      }, [N]), (0, i.useEffect)(() => () => {
         c.Z.dispatch({
           type: "WOW_MOMENT_CONFIRMATION_SET_IS_DISPLAYING_WOW_MOMENT_CONFIRMATION",
           value: false,
           isAnimated: false
         })
-      }, []), "animated" === Z) return (0, r.jsxs)("div", {
+      }, []), "animated" === F) return (0, r.jsxs)("div", {
       children: [(0, r.jsxs)("div", {
         className: y.videoContainer,
         children: [(0, r.jsx)("div", {
@@ -91,10 +91,10 @@ let I = 1e3,
             playsInline: true,
             muted: true,
             autoPlay: true,
-            onEnded: N,
+            onEnded: C,
             className: o()(y.video, "entry" === I ? y.visible : y.hidden),
             children: (0, r.jsx)("source", {
-              src: k.modalGlowEntry
+              src: M.modalGlowEntry
             })
           })
         }), (0, r.jsx)(d.Z, {
@@ -104,7 +104,7 @@ let I = 1e3,
           loop: true,
           className: o()(y.video, "idle" === I ? y.visible : y.hidden),
           children: (0, r.jsx)("source", {
-            src: k.modalGlowIdle
+            src: M.modalGlowIdle
           })
         }), (0, r.jsx)(d.Z, {
           ref: A,
@@ -112,7 +112,7 @@ let I = 1e3,
           muted: true,
           className: o()(y.video, "exit" === I ? y.visible : y.hidden),
           children: (0, r.jsx)("source", {
-            src: k.modalGlowExit
+            src: M.modalGlowExit
           })
         })]
       }), (0, r.jsx)("div", {
@@ -122,7 +122,7 @@ let I = 1e3,
           ref: U,
           dataBinding: {
             ExitTrigger: G,
-            EntryTrigger: V
+            EntryTrigger: Z
           }
         })
       }), (0, r.jsx)("div", {
@@ -131,7 +131,7 @@ let I = 1e3,
       })]
     });
     let K = !G;
-    return "static" === Z ? (0, r.jsxs)(r.Fragment, {
+    return "static" === F ? (0, r.jsxs)(r.Fragment, {
       children: [K && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("img", {
           src: O.Z,

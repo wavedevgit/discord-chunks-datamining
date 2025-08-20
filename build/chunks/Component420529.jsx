@@ -1,4 +1,4 @@
-/** Chunk was on 67096 **/
+/** Chunk was on 15105 **/
 /** chunk id: 420529, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
   Z: () => U
@@ -51,50 +51,50 @@ function g(t, n) {
 }
 
 function U(t) {
-  let n = (0, l.e7)([_.Z], () => _.Z.getChannelId() === t.id),
+  let n = (0, d.e7)([_.Z], () => _.Z.getChannelId() === t.id),
     U = (0, u.Z)(),
     L = (null == U ? true : U.channelId) === t.id,
     y = (0, a.V)(t) && !t.isPrivate(),
     D = (0, a.Z)(t),
-    m = !(0, l.e7)([s.Z], () => s.Z.isInChannel(t.id)) && D || y,
-    O = (0, o.Z)();
-  return L || 0 !== O.length ? L ? (0, i.jsx)(d.sNh, {
+    m = !(0, d.e7)([s.Z], () => s.Z.isInChannel(t.id)) && D || y,
+    O = (0, I.Z)();
+  return L || 0 !== O.length ? L ? (0, i.jsx)(l.sNh, {
     label: E.intl.string(E.t.PlwgdX),
     id: "handoff",
     action: () => {
       (0, p.F)(U)
     },
-    icon: (0, I.Z)(true),
+    icon: (0, o.Z)(true),
     disabled: m
-  }) : O.map(l => {
+  }) : O.map(d => {
     var a, _;
-    return (0, i.jsx)(d.sNh, {
-      id: "transfer-".concat(l.type, "-").concat(l.id),
-      label: (a = l.type, _ = n, a === c.ABu.XBOX ? _ ? E.intl.string(E.t["qVE/VF"]) : E.intl.string(E.t.E8euSk) : a === c.ABu.PLAYSTATION ? _ ? E.intl.string(E.t.vzfxmZ) : E.intl.string(E.t.QxEYDg) : a === c.ABu.PLAYSTATION_STAGING ? _ ? E.intl.string(E.t.BDiXtb) : E.intl.string(E.t["bhdB9/"]) : true),
+    return (0, i.jsx)(l.sNh, {
+      id: "transfer-".concat(d.type, "-").concat(d.id),
+      label: (a = d.type, _ = n, a === c.ABu.XBOX ? _ ? E.intl.string(E.t["qVE/VF"]) : E.intl.string(E.t.E8euSk) : a === c.ABu.PLAYSTATION ? _ ? E.intl.string(E.t.vzfxmZ) : E.intl.string(E.t.QxEYDg) : a === c.ABu.PLAYSTATION_STAGING ? _ ? E.intl.string(E.t.BDiXtb) : E.intl.string(E.t["bhdB9/"]) : true),
       action: () => (n => {
         if (!n.twoWayLink || n.revoked) return void(0, r.Z)({
           platformType: n.type,
           location: "Console Transfer Item"
         });
-        n.type === c.ABu.XBOX ? (0, d.ZDy)(async () => {
+        n.type === c.ABu.XBOX ? (0, l.ZDy)(async () => {
           let {
             default: n
           } = await Promise.all([e.e("20193"), e.e("522")]).then(e.bind(e, 200623));
           return e => (0, i.jsx)(n, g(T({}, e), {
             channel: t
           }))
-        }) : (n.type === c.ABu.PLAYSTATION || n.type === c.ABu.PLAYSTATION_STAGING) && (0, d.ZDy)(async () => {
+        }) : (n.type === c.ABu.PLAYSTATION || n.type === c.ABu.PLAYSTATION_STAGING) && (0, l.ZDy)(async () => {
           let {
-            default: l
+            default: d
           } = await e.e("638").then(e.bind(e, 543974));
-          return e => (0, i.jsx)(l, g(T({}, e), {
+          return e => (0, i.jsx)(d, g(T({}, e), {
             platform: n.type,
             channel: t
           }))
         })
-      })(l),
-      icon: (0, I.Z)(l.type),
+      })(d),
+      icon: (0, o.Z)(d.type),
       disabled: m
-    }, l.id)
+    }, d.id)
   }) : null
 }

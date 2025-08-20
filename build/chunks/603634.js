@@ -1,5 +1,6 @@
-/** Chunk was on 96750 **/
-/** chunk id: 603634, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 603634, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   streamIcon: "streamIcon__43481",
   iconButton: "iconButton__43481",

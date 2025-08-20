@@ -1,9 +1,9 @@
-/** Chunk was on 68294 **/
-/** chunk id: 423589, original params: t,e,n (module,exports,require) **/
+/** Chunk was on 99964 **/
+/** chunk id: 423589, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Mn: () => E,
-  OD: () => S,
-  W9: () => _
+  Mn: () => b,
+  OD: () => h,
+  W9: () => u
 }), require("./388685.js"), require("./997841.js");
 var Chunk442837 = require("./442837.js"),
   Chunk798140 = require("./798140.js"),
@@ -16,7 +16,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk526761 = require("./526761.js"),
   Chunk388032 = require("./388032.jsx");
 
-function _() {
+function u() {
   return [{
     label: Chunk388032.intl.string(Chunk388032.t["8ot6go"]),
     value: Chunk969943.Oe.MINUTES_15
@@ -37,27 +37,27 @@ function _() {
     value: Chunk969943.Oe.ALWAYS
   }]
 }
-let f = {
+let S = {
   ignoreMute: false,
   ignoreUnreadSetting: true,
   ignoreNotificationSetting: false
 };
 
-function S(t) {
-  let e = arguments.length > 1 && true !== arguments[1] ? arguments[1] : f;
-  return r.default.keys(t).filter(n => {
-    var i, a;
-    let r = t[n].message_notifications !== d.bL.NULL,
-      o = s.yE(null != (i = t[n].flags) ? i : 0, u.ic.UNREADS_ALL_MESSAGES) || s.yE(null != (a = t[n].flags) ? a : 0, u.ic.UNREADS_ONLY_MENTIONS);
-    return !e.ignoreUnreadSetting && o || !e.ignoreNotificationSetting && r || !e.ignoreMute && (0, l.m$)(t[n])
+function h(e) {
+  let n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : S;
+  return _.default.keys(e).filter(t => {
+    var i, o;
+    let _ = e[t].message_notifications !== c.bL.NULL,
+      r = s.yE(null != (i = e[t].flags) ? i : 0, d.ic.UNREADS_ALL_MESSAGES) || s.yE(null != (o = e[t].flags) ? o : 0, d.ic.UNREADS_ONLY_MENTIONS);
+    return !n.ignoreUnreadSetting && r || !n.ignoreNotificationSetting && _ || !n.ignoreMute && (0, a.m$)(e[t])
   })
 }
 
-function E(t) {
-  let e = (0, i.e7)([a.ZP], () => a.ZP.useNewNotifications);
-  return o.xT.useExperiment({
-    location: t
+function b(e) {
+  let n = (0, i.e7)([o.ZP], () => o.ZP.useNewNotifications);
+  return r.xT.useExperiment({
+    location: e
   }, {
     autoTrackExposure: false
-  }).enabled && e
+  }).enabled && n
 }

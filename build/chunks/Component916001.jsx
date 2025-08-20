@@ -1,7 +1,8 @@
-/** Chunk was on 26434 **/
-/** chunk id: 916001, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 916001, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => s
+  Z: () => l
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -10,35 +11,35 @@ var Chunk866442 = require("./866442.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk229928 = require("./229928.js");
 
-function s(e) {
+function l(e) {
   let {
     locked: t,
     role: n,
-    textVariant: s = "text-xs/medium"
-  } = e, c = (0, l.dQu)(l.TVs.colors.INTERACTIVE_NORMAL).hex();
+    textVariant: l = "text-xs/medium"
+  } = e, c = (0, a.dQu)(a.TVs.colors.INTERACTIVE_NORMAL).hex();
   return (0, r.jsx)("div", {
-    className: a.roleTagContainer,
+    className: s.roleTagContainer,
     children: (0, r.jsxs)("div", {
-      className: a.roleTag,
+      className: s.roleTag,
       children: [(0, r.jsx)("div", {
-        className: a.roleColor,
+        className: s.roleColor,
         style: {
           backgroundColor: (0, i.Rf)(n.color)
         }
-      }), (0, r.jsx)(l.LZC, {
+      }), (0, r.jsx)(a.LZC, {
         size: 8,
         horizontal: true
-      }), (0, r.jsxs)(l.Text, {
-        variant: s,
+      }), (0, r.jsxs)(a.Text, {
+        variant: l,
         color: "text-default",
-        children: [(0, r.jsx)(l.nn4, {
+        children: [(0, r.jsx)(a.nn4, {
           children: o.intl.string(o.t.RnyseH)
         }), n.name]
       }), true === t && (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(l.LZC, {
+        children: [(0, r.jsx)(a.LZC, {
           size: 8,
           horizontal: true
-        }), (0, r.jsx)(l.mBM, {
+        }), (0, r.jsx)(a.mBM, {
           size: "md",
           color: c
         })]

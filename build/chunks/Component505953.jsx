@@ -2,7 +2,7 @@
 /** chunk id: 505953, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => C
+  Z: () => N
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -64,22 +64,22 @@ function A(e, t) {
   }), e
 }
 
-function N(e) {
+function C(e) {
   let {
     summary: t,
     channel: f,
     members: b,
     guildId: I,
     unread: S,
-    onClick: N
-  } = e, [C, R] = i.useState(false), P = (0, u.Ye)(h.default.extractTimestamp(t.startId)), w = (0, a.e7)([m.Z], () => m.Z.summaryFeedback(t)), D = (e, n) => {
+    onClick: C
+  } = e, [N, R] = i.useState(false), P = (0, u.Ye)(h.default.extractTimestamp(t.startId)), w = (0, a.e7)([m.Z], () => m.Z.summaryFeedback(t)), D = (e, n) => {
     e.stopPropagation(), (0, g.Z)({
       summary: t,
       channel: f,
       rating: n
     })
-  }, L = d.Z.can(y.Plq.MANAGE_MESSAGES, f), x = e => {
-    L && (0, s.jW)(e, async () => {
+  }, x = d.Z.can(y.Plq.MANAGE_MESSAGES, f), L = e => {
+    x && (0, s.jW)(e, async () => {
       let {
         default: e
       } = await n.e("12891").then(n.bind(n, 519620));
@@ -90,12 +90,12 @@ function N(e) {
   };
   return (0, r.jsxs)(o.P3F, {
     className: v.container,
-    onClick: N,
-    onContextMenu: x,
+    onClick: C,
+    onContextMenu: L,
     onMouseEnter: () => R(true),
     onMouseLeave: () => R(false),
     children: [(0, r.jsx)(c.Z, {
-      hovered: C,
+      hovered: N,
       unread: S,
       className: v.unreadPill
     }), (0, r.jsx)("div", {
@@ -138,7 +138,7 @@ function N(e) {
           })]
         })]
       })
-    }), C && !w && (0, r.jsxs)("div", {
+    }), N && !w && (0, r.jsxs)("div", {
       className: v.feedbackContainer,
       children: [(0, r.jsx)(o.P3F, {
         onClick: e => D(e, O.aZ.GOOD),
@@ -169,7 +169,7 @@ function N(e) {
   })
 }
 
-function C(e) {
+function N(e) {
   let {
     summaries: t,
     summariesMembers: n,
@@ -183,7 +183,7 @@ function C(e) {
     children: t.map((e, t) => {
       var i;
       let a = null != (i = n[t]) ? i : [];
-      return (0, r.jsx)(N, {
+      return (0, r.jsx)(C, {
         summary: e,
         channel: o,
         members: a,

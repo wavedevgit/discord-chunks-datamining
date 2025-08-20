@@ -1,9 +1,9 @@
-/** Chunk was on 91584 **/
-/** chunk id: 322273, original params: t (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 322273, original params: e (module,exports,re quire) **/
 "use strict";
-var e = /-(.)/g;
-module.exports = function(t) {
-  return t.replace(e, function(t, e) {
-    return e.toUpperCase()
+var t = /-(.)/g;
+module.exports = function(e) {
+  return e.replace(t, function(e, t) {
+    return t.toUpperCase()
   })
 }

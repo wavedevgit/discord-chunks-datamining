@@ -19,42 +19,42 @@ let x = function(t) {
   let {
     onClose: e,
     channelId: n
-  } = t, [x, b] = r.useState(false), p = r.useCallback(() => {
-    l.Z.open(d.oAB.CONTENT_AND_SOCIAL, null, {
+  } = t, [x, p] = s.useState(false), b = s.useCallback(() => {
+    l.Z.open(u.oAB.CONTENT_AND_SOCIAL, null, {
       scrollPosition: T.FY.DM_SAFETY_ALERTS_V2
     }), e()
-  }, [e]), O = r.useCallback(() => {
-    x || (b(true), (0, o.Uj)(n).then(() => {
+  }, [e]), E = s.useCallback(() => {
+    x || (p(true), (0, o.Uj)(n).then(() => {
       e(), (0, c.t)({
-        text: S.intl.string(S.t.FhgVWl),
+        text: _.intl.string(_.t.FhgVWl),
         id: "safety-tools-report-false-positive"
       })
     }).catch(() => {
-      b(false), (0, s.showToast)((0, s.createToast)(S.intl.string(S.t.R0RpRU), s.ToastType.FAILURE))
+      p(false), (0, r.showToast)((0, r.createToast)(_.intl.string(_.t.R0RpRU), r.ToastType.FAILURE))
     }))
   }, [n, e, x]);
-  return (0, i.jsxs)(u.Z, {
-    style: _.wrapperStyle,
-    children: [(0, i.jsx)(s.Text, {
+  return (0, i.jsxs)(d.Z, {
+    style: S.wrapperStyle,
+    children: [(0, i.jsx)(r.Text, {
       variant: "text-md/normal",
       color: "header-secondary",
-      children: S.intl.format(S.t["njJ/Cg"], {
-        learnMoreLink: a.Z.getArticleURL(d.BhN.SAFETY_ALERTS)
+      children: _.intl.format(_.t["njJ/Cg"], {
+        learnMoreLink: a.Z.getArticleURL(u.BhN.SAFETY_ALERTS)
       })
     }), (0, i.jsxs)("div", {
-      children: [(0, i.jsx)(s.zxk, {
-        onClick: p,
+      children: [(0, i.jsx)(r.zxk, {
+        onClick: b,
         fullWidth: true,
-        text: S.intl.string(S.t.qpWnyM)
-      }), (0, i.jsx)(s.Text, {
+        text: _.intl.string(_.t.qpWnyM)
+      }), (0, i.jsx)(r.Text, {
         variant: "text-sm/normal",
         color: "text-muted",
-        className: _.reportFalsePositiveText,
-        children: S.intl.format(S.t["2uYViI"], {
-          reportFalsePositiveHook: (t, e) => (0, i.jsx)(s.P3F, {
-            className: _.reportFalsePositiveButton,
+        className: S.reportFalsePositiveText,
+        children: _.intl.format(_.t["2uYViI"], {
+          reportFalsePositiveHook: (t, e) => (0, i.jsx)(r.P3F, {
+            className: S.reportFalsePositiveButton,
             tag: "span",
-            onClick: O,
+            onClick: E,
             children: t
           }, e)
         })

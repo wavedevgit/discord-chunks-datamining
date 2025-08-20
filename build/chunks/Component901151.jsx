@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 901151, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 901151, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => O
+  Z: () => R
 }), require("./642613.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -21,122 +22,135 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk42101 = require("./42101.js");
 
-function j(e) {
+function y(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function O(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      y(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function v(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function I(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+let T = 3,
+  S = 3;
+
+function A(e) {
   let {
     applications: t
-  } = e, n = r.useMemo(() => t.sort((e, t) => d.default.compare(t.id, e.id)), [t]), s = r.useMemo(() => {
+  } = e, n = i.useMemo(() => t.sort((e, t) => u.default.compare(t.id, e.id)), [t]), a = i.useMemo(() => {
     let e = [];
-    for (let t = 0; t < 3; t++) {
-      let i = n[t];
-      if (null == i) break;
-      e.push(i.name)
+    for (let t = 0; t < T; t++) {
+      let r = n[t];
+      if (null == r) break;
+      e.push(r.name)
     }
     let t = e.join(", "),
-      r = n.length - 3;
-    return r > 0 ? x.intl.format(x.t.sHFdTk, {
+      i = n.length - T;
+    return i > 0 ? E.intl.format(E.t.sHFdTk, {
       gameList: t,
-      plusMoreHook: (e, t) => (0, i.jsx)(a.Text, {
+      plusMoreHook: (e, t) => (0, r.jsx)(o.Text, {
         tag: "span",
         variant: "text-sm/medium",
         color: "text-muted",
-        children: x.intl.format(x.t["EADv+/"], {
-          count: r
+        children: E.intl.format(E.t["EADv+/"], {
+          count: i
         })
       }, t)
     }) : e.join(", ")
-  }, [n]), c = r.useMemo(() => {
+  }, [n]), c = i.useMemo(() => {
     let e = [];
-    for (let t = 0; t < 3; t++) {
-      let r = n[t];
-      if (null == r) break;
+    for (let t = 0; t < S; t++) {
+      let i = n[t];
+      if (null == i) break;
       let {
-        icon: s,
-        name: l,
+        icon: a,
+        name: s,
         id: c
-      } = r, d = o.ZP.getApplicationIconURL({
+      } = i, u = l.ZP.getApplicationIconURL({
         id: c,
-        icon: s
+        icon: a
       });
-      e.push((0, i.jsx)(a.ua7, {
-        text: l,
-        children: e => (0, i.jsx)("img", function(e, t) {
-          return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-            var n = Object.keys(e);
-            if (Object.getOwnPropertySymbols) {
-              var i = Object.getOwnPropertySymbols(e);
-              n.push.apply(n, i)
-            }
-            return n
-          })(Object(t)).forEach(function(n) {
-            Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-          }), e
-        }(function(e) {
-          for (var t = 1; t < arguments.length; t++) {
-            var n = null != arguments[t] ? arguments[t] : {},
-              i = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-              return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), i.forEach(function(t) {
-              var i;
-              i = n[t], t in e ? Object.defineProperty(e, t, {
-                value: i,
-                enumerable: true,
-                configurable: true,
-                writable: true
-              }) : e[t] = i
-            })
-          }
-          return e
-        }({}, e), {
-          src: d,
-          "aria-label": l,
-          className: _.icon
+      e.push((0, r.jsx)(o.ua7, {
+        text: s,
+        children: e => (0, r.jsx)("img", I(O({}, e), {
+          src: u,
+          "aria-label": s,
+          className: b.icon
         }))
       }, c))
     }
-    let t = n.length - 3;
-    return t > 0 && e.push((0, i.jsx)("div", {
-      className: _.moreIcon,
-      children: (0, i.jsx)(a.Text, {
+    let t = n.length - S;
+    return t > 0 && e.push((0, r.jsx)("div", {
+      className: b.moreIcon,
+      children: (0, r.jsx)(o.Text, {
         variant: "text-xs/medium",
         color: "text-default",
         children: "+".concat(t)
       })
     }, "omitted")), e
-  }, [n]), u = r.useCallback(() => {
-    l.Z.open(b.oAB.AUTHORIZED_APPS)
+  }, [n]), d = i.useCallback(() => {
+    s.Z.open(g.oAB.AUTHORIZED_APPS)
   }, []);
-  return (0, i.jsxs)("div", {
-    className: _.header,
-    children: [(0, i.jsxs)("div", {
-      className: _.gameNamesHeader,
-      children: [(0, i.jsx)(a.Text, {
+  return (0, r.jsxs)("div", {
+    className: b.header,
+    children: [(0, r.jsxs)("div", {
+      className: b.gameNamesHeader,
+      children: [(0, r.jsx)(o.Text, {
         variant: "text-md/normal",
         color: "header-primary",
-        children: s
-      }), (0, i.jsxs)(a.P3F, {
-        onClick: u,
-        className: _.manageGamesLink,
-        children: [(0, i.jsx)(a.Text, {
+        children: a
+      }), (0, r.jsxs)(o.P3F, {
+        onClick: d,
+        className: b.manageGamesLink,
+        children: [(0, r.jsx)(o.Text, {
           variant: "text-xs/normal",
           color: "interactive-normal",
-          children: x.intl.format(x.t.oYaYOT, {})
-        }), (0, i.jsx)(a.Fbu, {
+          children: E.intl.format(E.t.oYaYOT, {})
+        }), (0, r.jsx)(o.Fbu, {
           size: "xxs",
-          color: a.TVs.colors.INTERACTIVE_NORMAL,
-          className: _.manageGamesChevron
+          color: o.TVs.colors.INTERACTIVE_NORMAL,
+          className: b.manageGamesChevron
         })]
       })]
-    }), (0, i.jsx)("div", {
-      className: _.divider
-    }), (0, i.jsx)("div", {
-      className: _.gameIcons,
+    }), (0, r.jsx)("div", {
+      className: b.divider
+    }), (0, r.jsx)("div", {
+      className: b.gameIcons,
       children: c
     })]
   })
 }
 
-function E() {
+function C() {
   let e = Chunk695346._j.useSetting();
   return (0, Chunk951288.jsx)(Chunk838436.U, {
     setting: Chunk726985.s6.PRIVACY_AND_SAFETY_ALLOW_GAME_FRIEND_DMS,
@@ -151,7 +165,7 @@ function E() {
   })
 }
 
-function C() {
+function N() {
   let e = Chunk695346.JG.useSetting(),
     t = module === Chunk524437.O_.SLAYER_SDK_RECEIVE_IN_GAME_DMS_UNSET ? Chunk524437.O_.SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL : module,
     n = [{
@@ -176,24 +190,24 @@ function C() {
         let {
           value: t
         } = e;
-        return u.JG.updateSetting(t)
+        return d.JG.updateSetting(t)
       }
     })]
   })
 }
 
-function O() {
+function R() {
   let {
     showLoadingIndicator: e,
     slayerSdkApplications: t
   } = (0, Chunk749876.Z)(true);
   return (0, Chunk951288.jsx)(Chunk546957.Z, {
     children: module ? (0, Chunk951288.jsx)(Chunk481060.$jN, {}) : exports.length > 0 ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-      children: [(0, Chunk951288.jsx)(j, {
+      children: [(0, Chunk951288.jsx)(A, {
         applications: exports
-      }), (0, Chunk951288.jsx)(E, {}), (0, Chunk951288.jsx)("div", {
+      }), (0, Chunk951288.jsx)(C, {}), (0, Chunk951288.jsx)("div", {
         className: Chunk42101.divider
-      }), (0, Chunk951288.jsx)(C, {})]
+      }), (0, Chunk951288.jsx)(N, {})]
     }) : (0, Chunk951288.jsxs)("div", {
       className: Chunk42101.emptyContainer,
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {

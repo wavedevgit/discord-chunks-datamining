@@ -95,11 +95,11 @@ let A = Chunk647438.forwardRef((e, t) => {
     minWidth: P = 0,
     minHeight: w = 0,
     mediaLayoutType: D,
-    limitResponsiveWidth: L = true,
-    accessory: x,
-    zoomable: M = true,
-    original: k,
-    children: j = e => {
+    limitResponsiveWidth: x = true,
+    accessory: L,
+    zoomable: j = true,
+    original: M,
+    children: k = e => {
       let {
         src: t,
         size: n,
@@ -117,9 +117,9 @@ let A = Chunk647438.forwardRef((e, t) => {
     renderAccessory: U,
     onClick: G,
     tabIndex: B,
-    dataSafeSrc: V,
-    useFullWidth: F = false,
-    srcIsAnimated: Z
+    dataSafeSrc: Z,
+    useFullWidth: V = false,
+    srcIsAnimated: F
   } = e, H = T(e, ["className", "imageClassName", "readyState", "src", "placeholder", "placeholderVersion", "alt", "width", "height", "maxWidth", "maxHeight", "minWidth", "minHeight", "mediaLayoutType", "limitResponsiveWidth", "accessory", "zoomable", "original", "children", "renderAccessory", "onClick", "tabIndex", "dataSafeSrc", "useFullWidth", "srcIsAnimated"]);
   let Y = i.useRef(null),
     W = i.useRef(null);
@@ -133,13 +133,13 @@ let A = Chunk647438.forwardRef((e, t) => {
       minHeight: w
     }),
     z = 0 !== K.width ? K.width / K.height : 1;
-  "" !== f && c !== p.zo9.ERROR ? n = j({
+  "" !== f && c !== p.zo9.ERROR ? n = k({
     src: f,
     size: K,
     alt: b,
     className: s,
     mediaLayoutType: D
-  }) : c !== p.zo9.LOADING && (n = (0, r.jsx)(N, {
+  }) : c !== p.zo9.LOADING && (n = (0, r.jsx)(C, {
     size: K,
     mediaLayoutType: D,
     alt: b
@@ -152,27 +152,27 @@ let A = Chunk647438.forwardRef((e, t) => {
     children: n
   });
   let q = null != U ? U() : null;
-  return q = null != q ? q : x, (0, r.jsx)(l.tEY, {
+  return q = null != q ? q : L, (0, r.jsx)(l.tEY, {
     ringTarget: Y,
     focusTarget: W,
     children: (0, r.jsxs)("div", I(O({
       ref: t,
       className: o()("imageWrapper", g.imageWrapper, {
-        [g.imageZoom]: M,
+        [g.imageZoom]: j,
         [g.imageWrapperBackground]: c !== p.zo9.READY,
         [g.clickable]: null != G
       }, a),
-      style: C(K, L, F, D)
+      style: N(K, x, V, D)
     }, H), {
-      children: [null != k && (0, r.jsx)("a", {
+      children: [null != M && (0, r.jsx)("a", {
         tabIndex: false,
         onClick: G,
         "aria-hidden": true,
         className: g.originalLink,
-        href: k,
+        href: M,
         ref: Y,
         "data-role": "img",
-        "data-safe-src": null != V ? V : f
+        "data-safe-src": null != Z ? Z : f
       }), null != G ? (0, r.jsx)(l.P3F, {
         className: g.clickableWrapper,
         tabIndex: null != B ? B : 0,
@@ -192,7 +192,7 @@ let A = Chunk647438.forwardRef((e, t) => {
   })
 });
 
-function N(e) {
+function C(e) {
   let {
     size: t,
     mediaLayoutType: n,
@@ -209,7 +209,7 @@ function N(e) {
   })
 }
 
-function C(e, t, n, r) {
+function N(e, t, n, r) {
   return r === h.hV.MOSAIC ? {
     display: "block",
     maxHeight: "inherit",

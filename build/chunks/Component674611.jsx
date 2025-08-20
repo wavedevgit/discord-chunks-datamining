@@ -1,5 +1,6 @@
-/** Chunk was on 26434 **/
-/** chunk id: 674611, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 674611, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   Z: () => u
 });
@@ -15,8 +16,8 @@ function u(e) {
   let {
     messageId: t,
     channelId: n
-  } = e, u = (0, l.e7)([s.Z], () => s.Z.canSubmitFpReport(t)), d = i.useCallback(() => {
-    (0, a.e)(n, t)
+  } = e, u = (0, a.e7)([l.Z], () => l.Z.canSubmitFpReport(t)), d = i.useCallback(() => {
+    (0, s.e)(n, t)
   }, [n, t]);
   return (0, r.jsx)(o.zxk, {
     variant: "secondary",

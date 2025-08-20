@@ -1,5 +1,6 @@
-/** Chunk was on 54157 **/
-/** chunk id: 478942, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 478942, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   channelHeader: "channelHeader__06fb5",
   icon: "icon__06fb5",

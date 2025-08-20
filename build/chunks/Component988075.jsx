@@ -1,7 +1,8 @@
-/** Chunk was on 30243 **/
-/** chunk id: 988075, original params: e,t,r (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 988075, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 }), require("./35282.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,36 +17,36 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk382985 = require("./382985.js");
 
-function m(e) {
+function h(e) {
   let {
     file: t,
-    name: r,
-    size: i,
-    spoiler: m
-  } = e, O = (0, a.e7)([p.Z], () => p.Z.getChannelId()), y = l.useMemo(() => null != t.contentType && false !== t.contentType.indexOf("/") ? t.contentType.split("/") : ["unknown", "unknown"], [t.contentType]), [j, g] = l.useState(m), h = l.useMemo(() => () => (0, n.jsx)(d.mz, {
-    mimeType: y,
+    name: n,
+    size: a,
+    spoiler: h
+  } = e, m = (0, s.e7)([f.Z], () => f.Z.getChannelId()), g = i.useMemo(() => null != t.contentType && false !== t.contentType.indexOf("/") ? t.contentType.split("/") : ["unknown", "unknown"], [t.contentType]), [E, b] = i.useState(h), y = i.useMemo(() => () => (0, r.jsx)(d.mz, {
+    mimeType: g,
     downloadURL: t.url,
     showDownload: true,
     showImageAppPicker: false,
     isVisualMediaType: false,
-    channelId: O
-  }), [t, y, O]), v = e => (0, n.jsx)(c.Z, {
+    channelId: m
+  }), [t, g, m]), O = e => (0, r.jsx)(l.Z, {
     className: o()({
-      [b.fileHidden]: e
+      [p.fileHidden]: e
     }),
     url: t.url,
-    fileName: null != r ? r : f.intl.string(f.t.GnuJ5u),
-    fileSize: null != i ? i : 0,
-    renderAdjacentContent: h
+    fileName: null != n ? n : _.intl.string(_.t.GnuJ5u),
+    fileSize: null != a ? a : 0,
+    renderAdjacentContent: y
   });
-  return (0, n.jsx)("div", {
-    className: b.fileDisplayContainer,
-    children: m ? (0, n.jsx)(s.ZP, {
-      type: s.ZP.Types.ATTACHMENT,
+  return (0, r.jsx)("div", {
+    className: p.fileDisplayContainer,
+    children: h ? (0, r.jsx)(c.ZP, {
+      type: c.ZP.Types.ATTACHMENT,
       reason: u.wk.SPOILER,
-      obscured: j,
-      onToggleObscurity: () => g(e => !e),
-      children: e => v(e)
-    }) : v(false)
+      obscured: E,
+      onToggleObscurity: () => b(e => !e),
+      children: e => O(e)
+    }) : O(false)
   })
 }

@@ -1,7 +1,7 @@
-/** Chunk was on 69003 **/
+/** Chunk was on 91488 **/
 /** chunk id: 830993, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => I
+  Z: () => P
 }), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -29,7 +29,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk413409 = require("./413409.js"),
   Chunk21265 = require("./21265.js");
 
-function I(e) {
+function P(e) {
   var t, l;
   let {
     channel: o,
@@ -38,7 +38,7 @@ function I(e) {
     voiceStates: g,
     isChannelSelected: b,
     shouldShowSettingNudge: _
-  } = e, v = i.useMemo(() => {
+  } = e, j = i.useMemo(() => {
     var e;
     return null == g || g.length > 50 ? {} : {
       [o.getGuildId()]: null != (e = g.map(e => {
@@ -49,14 +49,14 @@ function I(e) {
       })) ? e : []
     }
   }, [o, g]);
-  (0, c.$)(v);
-  let j = (0, u.ZP)(o),
-    C = Array.from((0, u.uF)(j).values()),
-    P = null != (t = null == g ? true : g.filter(O.lm)) ? t : [],
-    I = (0, a.e7)([m.Z], () => {
+  (0, c.$)(j);
+  let v = (0, u.ZP)(o),
+    C = Array.from((0, u.uF)(v).values()),
+    I = null != (t = null == g ? true : g.filter(O.lm)) ? t : [],
+    P = (0, a.e7)([m.Z], () => {
       let e = {};
-      return P.forEach(t => {
-        let n = m.Z.findActivity(t.user.id, e => [E.IIU.PLAYING, E.IIU.WATCHING].includes(e.type) && (null != e.assets || null != e.state || null != e.details || null != e.party) && (null == e.session_id || e.session_id === t.voiceState.sessionId) || e.type === E.IIU.LISTENING);
+      return I.forEach(t => {
+        let n = m.Z.findActivity(t.user.id, e => [x.IIU.PLAYING, x.IIU.WATCHING].includes(e.type) && (null != e.assets || null != e.state || null != e.details || null != e.party) && (null == e.session_id || e.session_id === t.voiceState.sessionId) || e.type === x.IIU.LISTENING);
         if (null != n && !(0, p.Z)(n)) {
           var r, i, l, o;
           let a = "".concat(null != (i = n.application_id) ? i : "", ":").concat(null != (l = null == (r = n.party) ? true : r.id) ? l : t.user.id),
@@ -64,11 +64,11 @@ function I(e) {
               members: [],
               activity: n
             };
-          s.members.push(t), (0, d.Z)(s.activity, E.xjy.JOIN) || (s.activity = n), e[a] = s
+          s.members.push(t), (0, d.Z)(s.activity, x.xjy.JOIN) || (s.activity = n), e[a] = s
         }
       }), Object.values(e)
-    }, [P], a.pF);
-  return I.length + C.length === 0 ? null : (0, r.jsxs)(s.Ttm, {
+    }, [I], a.pF);
+  return P.length + C.length === 0 ? null : (0, r.jsxs)(s.Ttm, {
     className: S.container,
     children: [(0, r.jsx)(N, {
       channel: o,
@@ -84,7 +84,7 @@ function I(e) {
         channel: o,
         onAction: h
       }, t)
-    }), I.map((e, t) => {
+    }), P.map((e, t) => {
       let {
         members: n,
         activity: i
@@ -103,7 +103,7 @@ function I(e) {
         children: (0, r.jsx)(s.Text, {
           variant: "text-xs/normal",
           tag: "span",
-          children: x.intl.format(x.t.ePyoY2, {
+          children: E.intl.format(E.t.ePyoY2, {
             onClick: () => {
               (0, s.ZDy)(async () => {
                 let {
@@ -155,17 +155,17 @@ function N(e) {
     channel: t,
     isChannelSelected: n,
     voiceStatesCount: i
-  } = e, l = (0, a.e7)([g.Z], () => !g.Z.can(E.Plq.CONNECT, t)), s = (0, a.e7)([b.Z], () => b.Z.hasVideo(t.id)), c = (0, _.ZP)({
+  } = e, l = (0, a.e7)([g.Z], () => !g.Z.can(x.Plq.CONNECT, t)), s = (0, a.e7)([b.Z], () => b.Z.hasVideo(t.id)), c = (0, _.ZP)({
     channel: t,
     locked: l,
     video: s,
     selected: n
   }), u = (0, a.e7)([h.Z], () => h.Z.getGuild(t.guild_id));
   return null == (0, f.KS)(t, u) ? null : (0, r.jsxs)("div", {
-    className: o()(S.popoutHeaderContainer, P.popoutHeaderContainer),
-    children: [(0, r.jsx)(v.Z, {
+    className: o()(S.popoutHeaderContainer, I.popoutHeaderContainer),
+    children: [(0, r.jsx)(j.Z, {
       channel: t
-    }), c ? (0, r.jsx)(j.Z, {
+    }), c ? (0, r.jsx)(v.Z, {
       userCount: i,
       video: s,
       channel: t

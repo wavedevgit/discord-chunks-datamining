@@ -1,15 +1,16 @@
-/** Chunk was on 54157 **/
-/** chunk id: 579612, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 579612, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  GQ: () => S,
-  MC: () => g,
-  P: () => m,
-  ZP: () => y
+  GQ: () => g,
+  MC: () => m,
+  P: () => E,
+  ZP: () => b
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk933557 = require("./933557.js"),
   Chunk471445 = require("./471445.js"),
@@ -21,85 +22,85 @@ var Chunk120356 = require("./120356.js"),
   Chunk51144 = require("./51144.js"),
   Chunk495824 = require("./495824.js");
 
-function g(e) {
+function m(e) {
   let {
     channel: t
   } = e;
   if (t.isDM()) {
     let e = t.getRecipientId(),
-      n = p.default.getUser(e);
+      n = _.default.getUser(e);
     if (null == n) return null;
-    let s = n.getAvatarURL(null, 20);
-    return (0, r.jsx)(a.qEK, {
+    let i = n.getAvatarURL(null, 20);
+    return (0, r.jsx)(o.qEK, {
       "aria-hidden": true,
-      className: _.searchResultDMChannelIcon,
-      size: a.EFr.SIZE_20,
-      src: s
+      className: h.searchResultDMChannelIcon,
+      size: o.EFr.SIZE_20,
+      src: i
     })
   }
   if (t.isGroupDM()) return (0, r.jsx)(c.Z, {
     "aria-hidden": true,
-    className: _.searchResultGDMChannelIcon,
+    className: h.searchResultGDMChannelIcon,
     channel: t,
-    size: a.EFr.SIZE_20,
+    size: o.EFr.SIZE_20,
     experimentLocation: "search_popout"
   });
-  let n = (0, o.KS)(t);
+  let n = (0, l.KS)(t);
   return null == n ? null : (0, r.jsx)(n, {
-    className: _.searchResultChannelIcon
+    className: h.searchResultChannelIcon
   })
 }
 
-function S(e) {
+function g(e) {
   let {
     channel: t
   } = e;
   return t.isDM() || t.isGroupDM() ? (0, r.jsx)("span", {
-    className: _.searchResultDMChannelName,
-    children: (0, i.F6)(t, p.default, d.Z)
+    className: h.searchResultDMChannelName,
+    children: (0, s.F6)(t, _.default, d.Z)
   }) : (0, r.jsx)("strong", {
-    children: (0, i.F6)(t, p.default, d.Z)
+    children: (0, s.F6)(t, _.default, d.Z)
   })
 }
 
-function m(e) {
+function E(e) {
   let {
     channel: t
   } = e, n = u.Z.getChannel(t.parent_id);
   if (t.isDM()) {
     let e = t.getRecipientId(),
-      n = p.default.getUser(e);
+      n = _.default.getUser(e);
     return null == n ? null : (0, r.jsx)("span", {
-      className: _.searchResultDMUserName,
-      children: f.ZP.getUserTag(n, {
-        identifiable: h.Z.enabled && h.Z.hidePersonalInformation ? "never" : "always"
+      className: h.searchResultDMUserName,
+      children: p.ZP.getUserTag(n, {
+        identifiable: f.Z.enabled && f.Z.hidePersonalInformation ? "never" : "always"
       })
     })
   }
   if (null != n) return (0, r.jsx)("span", {
-    className: _.searchResultChannelCategory,
-    children: (0, i.F6)(n, p.default, d.Z)
+    className: h.searchResultChannelCategory,
+    children: (0, s.F6)(n, _.default, d.Z)
   })
 }
 
-function y(e) {
+function b(e) {
   let {
     channel: t,
     text: n,
-    channelContainerClassName: s,
-    textContainerClassName: a
+    channelContainerClassName: i,
+    textContainerClassName: o
   } = e;
   return null == t ? (0, r.jsx)("strong", {
     children: n
   }) : (0, r.jsxs)("div", {
-    className: l()(_.resultChannel, s),
-    children: [(0, r.jsx)(g, {
+    className: a()(h.resultChannel, i),
+    children: [(0, r.jsx)(m, {
       channel: t
     }), (0, r.jsxs)("div", {
-      className: a,
-      children: [(0, r.jsx)(S, {
+      className: o,
+      children: [(0, r.jsx)(g, {
         channel: t
-      }), (0, r.jsx)(m, {
+      }), (0, r.jsx)(E, {
         channel: t
       })]
     })]

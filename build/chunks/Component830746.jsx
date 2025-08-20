@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 830746, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 830746, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => j
+  Z: () => y
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -21,16 +22,16 @@ var Chunk399606 = require("./399606.js"),
   Chunk345909 = require("./345909.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk862964 = require("./862964.js");
-let j = () => {
+let y = () => {
   let e = (0, Chunk631885.mq)(Chunk292352.ne.ACTIVE),
     t = module.length > 0,
     n = (0, Chunk277537.PO)("family_center_activity_page"),
-    j = (0, Chunk780985.c)(),
-    E = (0, Chunk399606.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
-    C = (0, Chunk785681.o)(Chunk388032.intl.string(Chunk345909.default["5RZ8Tk"]), Chunk388032.intl.string(Chunk345909.default.bmhCnJ)),
-    O = (0, Chunk785681.o)(Chunk388032.intl.string(Chunk345909.default.XKnFFh), Chunk388032.intl.string(Chunk345909.default["68zfxM"])),
-    v = (0, Chunk785681.o)(Chunk388032.intl.string(Chunk345909.default["Rm/6a2"]), Chunk388032.intl.string(Chunk345909.default["1xPTwM"]));
-  return true === E ? null : (0, Chunk951288.jsxs)("div", {
+    y = (0, Chunk780985.c)(),
+    O = (0, Chunk399606.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
+    v = (0, Chunk785681.o)(Chunk388032.intl.string(Chunk345909.default["5RZ8Tk"]), Chunk388032.intl.string(Chunk345909.default.bmhCnJ)),
+    I = (0, Chunk785681.o)(Chunk388032.intl.string(Chunk345909.default.XKnFFh), Chunk388032.intl.string(Chunk345909.default["68zfxM"])),
+    T = (0, Chunk785681.o)(Chunk388032.intl.string(Chunk345909.default["Rm/6a2"]), Chunk388032.intl.string(Chunk345909.default["1xPTwM"]));
+  return true === O ? null : (0, Chunk951288.jsxs)("div", {
     className: Chunk862964.container,
     children: [require && exports ? null : (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [(0, Chunk951288.jsx)("div", {
@@ -41,19 +42,19 @@ let j = () => {
         children: [(0, Chunk951288.jsx)(Chunk946690.Z, {
           icon: Chunk481060.eQA,
           header: Chunk388032.intl.string(Chunk345909.default["001l3t"]),
-          description: C
+          description: v
         }), (0, Chunk951288.jsx)(Chunk946690.Z, {
           icon: Chunk481060.tEF,
           header: Chunk388032.intl.string(Chunk345909.default.yipAeH),
-          description: O
+          description: I
         }), (0, Chunk951288.jsx)(Chunk946690.Z, {
           icon: Chunk481060.IkH,
           header: Chunk388032.intl.string(Chunk345909.default.hhOuMT),
-          description: v
+          description: T
         })]
       })]
-    }), exports ? null : (0, Chunk951288.jsx)(Chunk302289.Z, {}), true !== j && module.length > 0 ? (0, Chunk951288.jsx)(Chunk87792.Z, {
-      user: j
+    }), exports ? null : (0, Chunk951288.jsx)(Chunk302289.Z, {}), true !== y && module.length > 0 ? (0, Chunk951288.jsx)(Chunk87792.Z, {
+      user: y
     }) : null, (0, Chunk951288.jsx)(Chunk369954.J, {})]
   })
 }

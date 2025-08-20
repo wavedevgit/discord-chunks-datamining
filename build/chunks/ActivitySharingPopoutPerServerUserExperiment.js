@@ -1,9 +1,10 @@
-/** Chunk was on 66181 **/
-/** chunk id: 316496, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 316496, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  D: () => r
+  D: () => i
 });
-let i = (0, require("./818083.js").B)({
+let r = (0, require("./818083.js").B)({
   kind: "user",
   id: "2025-05_activity_sharing_popout_per_server",
   label: "Activity Sharing Popout Per Server",
@@ -57,8 +58,8 @@ let i = (0, require("./818083.js").B)({
   }]
 });
 
-function r(e) {
-  return i.useExperiment({
+function i(e) {
+  return r.useExperiment({
     location: e
   }, {
     autoTrackExposure: true

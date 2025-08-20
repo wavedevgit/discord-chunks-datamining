@@ -1,5 +1,6 @@
-/** Chunk was on 21046 **/
-/** chunk id: 694802, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 694802, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   Z: () => c
 }), require("./784620.js"), require("./973216.js");
@@ -16,24 +17,24 @@ function l(e) {
     children: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: i.card,
+    className: s.card,
     children: [(0, r.jsxs)("div", {
-      className: i.header,
-      children: [(0, r.jsx)(s.Mgn, {
+      className: s.header,
+      children: [(0, r.jsx)(i.Mgn, {
         size: "custom",
         color: "currentColor",
-        className: i.icon,
+        className: s.icon,
         width: 16,
         height: 16
-      }), (0, r.jsx)(s.X6q, {
+      }), (0, r.jsx)(i.X6q, {
         color: "text-default",
         variant: "heading-sm/medium",
         children: t
       })]
-    }), (0, r.jsx)(s.Text, {
+    }), (0, r.jsx)(i.Text, {
       color: "text-muted",
       variant: "text-xs/normal",
-      className: i.warningBody,
+      className: s.warningBody,
       children: n
     })]
   })
@@ -41,14 +42,14 @@ function l(e) {
 let c = function(e) {
   let {
     quest: t
-  } = e, n = (0, o.qb)(t);
+  } = e, n = (0, a.qb)(t);
   if (0 === n.length) return null;
-  let s = n.at(0);
-  return s === a.intl.string(a.t.BV6xDg) ? (0, r.jsx)(l, {
-    header: a.intl.string(a.t.onh6cn),
-    children: a.intl.string(a.t.arVHRE)
-  }) : s === a.intl.string(a.t.MFGxFB) ? (0, r.jsx)(l, {
-    header: a.intl.string(a.t.JPihZG),
-    children: a.intl.string(a.t.MFGxFB)
+  let i = n.at(0);
+  return i === o.intl.string(o.t.BV6xDg) ? (0, r.jsx)(l, {
+    header: o.intl.string(o.t.onh6cn),
+    children: o.intl.string(o.t.arVHRE)
+  }) : i === o.intl.string(o.t.MFGxFB) ? (0, r.jsx)(l, {
+    header: o.intl.string(o.t.JPihZG),
+    children: o.intl.string(o.t.MFGxFB)
   }) : null
 }

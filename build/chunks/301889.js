@@ -1,5 +1,6 @@
-/** Chunk was on 21046 **/
-/** chunk id: 301889, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 301889, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   modalRoot: "modalRoot__5b400",
   modalHeader: "modalHeader__5b400",

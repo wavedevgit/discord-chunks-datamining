@@ -1,4 +1,4 @@
-/** Chunk was on 36499 **/
+/** Chunk was on 5665 **/
 /** chunk id: 335615, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => ec
@@ -132,9 +132,9 @@ let et = Chunk998502.ZP.getEnableHardwareAcceleration(),
       guildId: C,
       isTyping: x,
       isMobileOnline: v,
-      premiumSince: j,
-      nameplate: O
-    } = e, E = ee(e, ["colorString", "colorStrings", "colorRoleName", "colorRoleId", "isOwner", "nick", "user", "currentUser", "activities", "applicationStream", "status", "channel", "guildId", "isTyping", "isMobileOnline", "premiumSince", "nameplate"]), S = i.useRef(null), [P, I] = i.useState(false), Z = null != j ? new Date(j) : null, T = i.useCallback(e => {
+      premiumSince: O,
+      nameplate: j
+    } = e, E = ee(e, ["colorString", "colorStrings", "colorRoleName", "colorRoleId", "isOwner", "nick", "user", "currentUser", "activities", "applicationStream", "status", "channel", "guildId", "isTyping", "isMobileOnline", "premiumSince", "nameplate"]), S = i.useRef(null), [P, I] = i.useState(false), Z = null != O ? new Date(O) : null, T = i.useCallback(e => {
       (0, m.jW)(e, async () => {
         let {
           default: e
@@ -207,7 +207,7 @@ let et = Chunk998502.ZP.getEnableHardwareAcceleration(),
           onClickPremiumGuildIcon: w,
           selected: P,
           itemProps: E,
-          nameplate: O,
+          nameplate: j,
           onClick: e => {
             e.shiftKey ? null == A || A() : I(e => !e)
           },
@@ -386,7 +386,7 @@ class eo extends Chunk647438.Component {
         groups: n,
         channel: l
       } = this.props, a = n[t];
-      if ((0, O.R)(a)) return (0, i.createElement)(O.Z, $(J({}, a), {
+      if ((0, j.R)(a)) return (0, i.createElement)(j.Z, $(J({}, a), {
         key: "section-".concat(t)
       }));
       if (0 === t) {
@@ -485,7 +485,7 @@ class eo extends Chunk647438.Component {
       this.props.updateMaxContentFeedRowSeen(r)
     }, 50)), Q(this, "getContentFeedGroup", () => {
       let e = this.props.groups[P.T];
-      if ((0, O.R)(e)) return e
+      if ((0, j.R)(e)) return e
     }), Q(this, "hasContentFeed", () => null != this.getContentFeedGroup()), Q(this, "getRowHeightComputer", () => {
       let e = this.getContentFeedGroup(),
         {
@@ -583,13 +583,13 @@ function es(e) {
         })
       }
     })
-  }, [42]), j = i.useCallback(() => new Promise(e => {
+  }, [42]), O = i.useCallback(() => new Promise(e => {
     let t = b.current;
     if (null == t) return e();
     t.scrollToTop({
       callback: () => requestAnimationFrame(() => e())
     })
-  }), []), O = i.useCallback(() => new Promise(e => {
+  }), []), j = i.useCallback(() => new Promise(e => {
     let t = b.current;
     if (null == t) return e();
     t.scrollToBottom({
@@ -601,8 +601,8 @@ function es(e) {
     id: "members-".concat(t.id),
     setFocus: x,
     isEnabled: o,
-    scrollToStart: j,
-    scrollToEnd: O
+    scrollToStart: O,
+    scrollToEnd: j
   });
   return (0, r.jsx)(v.Gt, {
     value: l,

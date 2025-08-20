@@ -33,8 +33,8 @@ function O(e) {
     profileGuildId: T
   } = e, S = (0, h.T)({
     location: "UserProfileActivityCardWrapper"
-  }), A = t.id === n.id, N = S && !A && !t.bot, {
-    voiceGuild: C,
+  }), A = t.id === n.id, C = S && !A && !t.bot, {
+    voiceGuild: N,
     voiceChannel: R
   } = (0, a.cj)([f.Z, _.Z, d.Z], () => {
     var e, n;
@@ -55,7 +55,7 @@ function O(e) {
       guild_id: null == w ? true : w.guild_id,
       channel_id: null == w ? true : w.id
     })
-  }, [null == O ? true : O.type, P, null == w ? true : w.id, null == w ? true : w.guild_id]), (null == O ? true : O.type) !== y.IIU.CUSTOM_STATUS && ((null == O ? true : O.type) !== y.IIU.HANG_STATUS || P)) ? (0, s.Z)(O) ? N ? (0, r.jsx)(b.Z, {
+  }, [null == O ? true : O.type, P, null == w ? true : w.id, null == w ? true : w.guild_id]), (null == O ? true : O.type) !== y.IIU.CUSTOM_STATUS && ((null == O ? true : O.type) !== y.IIU.HANG_STATUS || P)) ? (0, s.Z)(O) ? C ? (0, r.jsx)(b.Z, {
     user: t,
     currentUser: n,
     activity: O,
@@ -68,12 +68,12 @@ function O(e) {
     activity: O,
     className: v,
     onClose: I
-  }) : N ? (0, r.jsx)(g.Z, {
+  }) : C ? (0, r.jsx)(g.Z, {
     user: t,
     currentUser: n,
     activity: O,
     application: D,
-    voiceGuild: C,
+    voiceGuild: N,
     voiceChannel: R,
     profileGuildId: T,
     className: v,
@@ -83,7 +83,7 @@ function O(e) {
     currentUser: n,
     activity: O,
     application: D,
-    voiceGuild: C,
+    voiceGuild: N,
     voiceChannel: R,
     className: v,
     onClose: I

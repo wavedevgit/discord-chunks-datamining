@@ -1,7 +1,7 @@
-/** Chunk was on 36499 **/
+/** Chunk was on 5665 **/
 /** chunk id: 419388, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  ZP: () => O
+  ZP: () => j
 }), require("./388685.js"), require("./642613.js"), require("./539854.js");
 var Chunk647438 = require("./647438.js"),
   Chunk392711 = require("./392711.js"),
@@ -57,7 +57,7 @@ let v = {
   scrollHeight: 0,
   offsetHeight: 0
 };
-class j {
+class O {
   isReady() {
     return this.props.messages.ready
   }
@@ -566,7 +566,7 @@ class j {
   }
 }
 
-function O(e) {
+function j(e) {
   let {
     messages: t,
     channel: n,
@@ -580,7 +580,7 @@ function O(e) {
     additionalMessagePadding: p = 0
   } = e, {
     windowId: h
-  } = r.useContext(u.ZP), [f] = r.useState(() => new j({
+  } = r.useContext(u.ZP), [f] = r.useState(() => new O({
     messages: t,
     channel: n,
     compact: i,

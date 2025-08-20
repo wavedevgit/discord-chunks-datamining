@@ -1,13 +1,12 @@
-/** Chunk was on 82411 **/
+/** Chunk was on 92229 **/
 /** chunk id: 628908, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
-  default: () => F
+  default: () => _
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
-  a = require.n(Chunk512722),
+  o = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -25,7 +24,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk505198 = require("./505198.js");
 
-function M(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,52 +33,52 @@ function M(e, t, n) {
   }) : e[t] = n, e
 }
 
-function N(e) {
+function P(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      M(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
 }
-let C = e => {
+let M = e => {
   var t, n, {
-      label: o,
+      label: s,
       text: i,
-      children: a
+      children: o
     } = e,
-    s = function(e, t) {
+    l = function(e, t) {
       if (null == e) return {};
-      var n, r, o = function(e, t) {
+      var n, r, s = function(e, t) {
         if (null == e) return {};
-        var n, r, o = {},
+        var n, r, s = {},
           i = Object.keys(e);
-        for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (o[n] = e[n]);
-        return o
+        for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (s[n] = e[n]);
+        return s
       }(e, t);
       if (Object.getOwnPropertySymbols) {
         var i = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
+        for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (s[n] = e[n])
       }
-      return o
+      return s
     }(e, ["label", "text", "children"]);
-  return (0, r.jsxs)(h.Z, (t = N({
-    direction: h.Z.Direction.VERTICAL
-  }, s), n = n = {
+  return (0, r.jsxs)(u.Z, (t = P({
+    direction: u.Z.Direction.VERTICAL
+  }, l), n = n = {
     children: [(0, r.jsx)(c.vwX, {
       tag: "h2",
-      children: o
+      children: s
     }), null != i ? (0, r.jsx)(c.Text, {
       variant: "text-md/normal",
-      className: g.sectionBody,
+      className: O.sectionBody,
       children: i
-    }) : null, (0, r.jsx)(h.Z.Child, {
+    }) : null, (0, r.jsx)(u.Z.Child, {
       wrap: true,
-      children: a
+      children: o
     })]
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
@@ -92,12 +91,12 @@ let C = e => {
     Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
   }), t))
 };
-class A extends Chunk647438.PureComponent {
+class k extends Chunk647438.PureComponent {
   renderSMSSection() {
     let {
       currentUser: e
-    } = this.props, t = null != this.props.currentUser.phone, n = module.hasFlag(Chunk981631.xW$.MFA_SMS), o = module.hasFlag(Chunk981631.xW$.PARTNER) || module.hasFlag(Chunk981631.xW$.STAFF);
-    return exports ? (0, Chunk951288.jsxs)(C, {
+    } = this.props, t = null != this.props.currentUser.phone, n = module.hasFlag(Chunk981631.xW$.MFA_SMS), s = module.hasFlag(Chunk981631.xW$.PARTNER) || module.hasFlag(Chunk981631.xW$.STAFF);
+    return exports ? (0, Chunk951288.jsxs)(M, {
       label: Chunk388032.intl.string(Chunk388032.t.DZQe29),
       text: Chunk388032.intl.string(Chunk388032.t.fspJ4O),
       children: [(0, Chunk951288.jsxs)(Chunk481060.Text, {
@@ -123,7 +122,7 @@ class A extends Chunk647438.PureComponent {
         onClick: this.handleEnableSMS,
         disabled: require || Chunk647438
       })]
-    }) : (0, Chunk951288.jsx)(C, {
+    }) : (0, Chunk951288.jsx)(M, {
       label: Chunk388032.intl.string(Chunk388032.t.DZQe29),
       text: Chunk388032.intl.string(Chunk388032.t.fspJ4O),
       children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
@@ -136,8 +135,8 @@ class A extends Chunk647438.PureComponent {
     })
   }
   renderBackupCodesSection(e) {
-    return (0, r.jsx)(C, {
-      label: O.intl.string(O.t.qZZUy8),
+    return (0, r.jsx)(M, {
+      label: C.intl.string(C.t.qZZUy8),
       text: e,
       children: (0, r.jsx)(p.Z, {
         fileContents: this.getDownloadFileContents,
@@ -149,7 +148,7 @@ class A extends Chunk647438.PureComponent {
         children: (0, r.jsx)(c.zxk, {
           variant: "active",
           size: "sm",
-          text: O.intl.string(O.t.qZZUy8)
+          text: C.intl.string(C.t.qZZUy8)
         })
       })
     })
@@ -157,19 +156,19 @@ class A extends Chunk647438.PureComponent {
   renderHeader(e, t) {
     return (0, r.jsxs)(c.xBx, {
       separator: false,
-      children: [(0, r.jsxs)(h.Z.Child, {
+      children: [(0, r.jsxs)(u.Z.Child, {
         grow: 1,
         shrink: 1,
         children: [(0, r.jsx)(c.X6q, {
           variant: "heading-lg/semibold",
-          className: g.header,
-          children: _.Z.parse(e)
+          className: O.header,
+          children: m.Z.parse(e)
         }), (0, r.jsx)(c.Text, {
           variant: "text-xs/normal",
-          className: g.subHeader,
+          className: O.subHeader,
           children: t
         })]
-      }), (0, r.jsx)(h.Z.Child, {
+      }), (0, r.jsx)(u.Z.Child, {
         grow: 0,
         children: (0, r.jsx)(c.olH, {
           onClick: this.handleCloseModal
@@ -183,9 +182,9 @@ class A extends Chunk647438.PureComponent {
     } = this.props;
     return (0, r.jsx)(c.sYh, {
       dismissable: true,
-      header: O.intl.string(O.t.mwVXnJ),
-      confirmText: O.intl.string(O.t.MwSEo6),
-      cancelText: O.intl.string(O.t["ETE/oK"]),
+      header: C.intl.string(C.t.mwVXnJ),
+      confirmText: C.intl.string(C.t.MwSEo6),
+      cancelText: C.intl.string(C.t["ETE/oK"]),
       onCancel: () => this.setState({
         showConfirmModal: false
       }),
@@ -243,16 +242,16 @@ class A extends Chunk647438.PureComponent {
   }
   openPhoneVerificationModal() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
-    (0, Chunk481060.h7j)(t => (0, r.jsx)(E.default, N({
-      reason: f.L.MFA_PHONE_UPDATE
+    (0, Chunk481060.h7j)(t => (0, r.jsx)(x.default, P({
+      reason: b.L.MFA_PHONE_UPDATE
     }, t, e)), {
       modalKey: Chunk815660.M
     })
   }
   constructor(...e) {
-    super(...e), M(this, "state", {
+    super(...e), y(this, "state", {
       showConfirmModal: false
-    }), M(this, "handleCloseModal", () => {
+    }), y(this, "handleCloseModal", () => {
       let {
         onClose: e,
         hasSeenBackupPrompt: t
@@ -260,35 +259,35 @@ class A extends Chunk647438.PureComponent {
       t ? null == e || e() : this.setState({
         showConfirmModal: true
       })
-    }), M(this, "getDownloadFileContents", () => {
+    }), y(this, "getDownloadFileContents", () => {
       let e = this.props.backupCodes.map(e => {
           let {
             consumed: t,
             code: n
           } = e;
-          return "* ".concat(n.substr(0, 4), "-").concat(n.substr(4), " ").concat(t ? "(".concat(O.intl.string(O.t["ycME+/"]), ")") : "")
+          return "* ".concat(n.substr(0, 4), "-").concat(n.substr(4), " ").concat(t ? "(".concat(C.intl.string(C.t["ycME+/"]), ")") : "")
         }).join("\r\n"),
-        t = O.intl.formatToPlainString(O.t.uYWwh4, {
+        t = C.intl.formatToPlainString(C.t.uYWwh4, {
           email: this.props.currentUser.email
         });
       return "".concat(t, "\r\n\r\n").concat(e)
-    }), M(this, "handleChangePhoneNumber", () => {
+    }), y(this, "handleChangePhoneNumber", () => {
       this.openPhoneVerificationModal()
-    }), M(this, "handleEnableSMS", () => {
+    }), y(this, "handleEnableSMS", () => {
       let {
         currentUser: e
       } = this.props;
       null == e.phone ? this.openPhoneVerificationModal({
-        onAddedPhone: u.Z.enableSMS
-      }) : u.Z.enableSMS()
+        onAddedPhone: h.Z.enableSMS
+      }) : h.Z.enableSMS()
     })
   }
 }
-let F = Chunk442837.ZP.connectStores([Chunk594174.default, Chunk325067.Z], () => {
+let _ = Chunk442837.ZP.connectStores([Chunk594174.default, Chunk325067.Z], () => {
   let e = Chunk594174.default.getCurrentUser();
-  return a()(null != module, "MFAEnableSuccess: currentUser cannot be undefined"), {
+  return o()(null != module, "MFAEnableSuccess: currentUser cannot be undefined"), {
     currentUser: module,
     backupCodes: Chunk325067.Z.getBackupCodes(),
     hasSeenBackupPrompt: Chunk325067.Z.hasSeenBackupPrompt
   }
-})(A)
+})(k)

@@ -1,26 +1,26 @@
-/** Chunk was on 91584 **/
-/** chunk id: 126502, original params: t (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 126502, original params: e (module,exports,re quire) **/
 "use strict";
 
-function e() {
-  var t;
-  return document.documentElement && (t = document.documentElement.clientWidth), !module && document.body && (t = document.body.clientWidth), module || 0
-}
-
-function r() {
-  var t;
-  return document.documentElement && (t = document.documentElement.clientHeight), !module && document.body && (t = document.body.clientHeight), module || 0
+function t() {
+  var e;
+  return document.documentElement && (e = document.documentElement.clientWidth), !module && document.body && (e = document.body.clientWidth), module || 0
 }
 
 function n() {
+  var e;
+  return document.documentElement && (e = document.documentElement.clientHeight), !module && document.body && (e = document.body.clientHeight), module || 0
+}
+
+function r() {
   return {
-    width: window.innerWidth || e(),
-    height: window.innerHeight || r()
+    width: window.innerWidth || t(),
+    height: window.innerHeight || n()
   }
 }
-n.withoutScrollbars = function() {
+r.withoutScrollbars = function() {
   return {
-    width: e(),
-    height: r()
+    width: t(),
+    height: n()
   }
-}, module.exports = n
+}, module.exports = r

@@ -1,47 +1,48 @@
-/** Chunk was on 66181 **/
-/** chunk id: 103433, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 103433, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => d
+  Z: () => u
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk38249 = require("./38249.js"),
   Chunk505944 = require("./505944.js");
-let d = e => {
+let u = e => {
   let {
     className: t,
     onBackClick: n
   } = e;
-  return (0, i.jsxs)("div", {
-    className: s()(o.container, t),
+  return (0, r.jsxs)("div", {
+    className: a()(l.container, t),
     "data-testid": "all-perks-hero-header",
-    children: [(0, i.jsx)("img", {
+    children: [(0, r.jsx)("img", {
       src: c,
       alt: "",
-      className: o.headerArt
-    }), (0, i.jsxs)("div", {
-      className: o.containerInner,
-      children: [(0, i.jsx)("div", {
-        className: o.backButtonContainer,
-        children: (0, i.jsxs)(a.P3F, {
+      className: l.headerArt
+    }), (0, r.jsxs)("div", {
+      className: l.containerInner,
+      children: [(0, r.jsx)("div", {
+        className: l.backButtonContainer,
+        children: (0, r.jsxs)(o.P3F, {
           onClick: n,
-          className: o.backButton,
-          children: [(0, i.jsx)(a.V7D, {
+          className: l.backButton,
+          children: [(0, r.jsx)(o.V7D, {
             color: "currentColor"
-          }), l.intl.string(l.t["13/7kZ"])]
+          }), s.intl.string(s.t["13/7kZ"])]
         })
-      }), (0, i.jsx)("div", {
-        className: o.__invalid_contentContainer,
-        children: (0, i.jsx)("div", {
-          className: o.content,
-          children: (0, i.jsx)(a.X6q, {
+      }), (0, r.jsx)("div", {
+        className: l.__invalid_contentContainer,
+        children: (0, r.jsx)("div", {
+          className: l.content,
+          children: (0, r.jsx)(o.X6q, {
             variant: "display-lg",
             color: "always-white",
-            children: l.intl.string(l.t.hqjDX1)
+            children: s.intl.string(s.t.hqjDX1)
           })
         })
       })]

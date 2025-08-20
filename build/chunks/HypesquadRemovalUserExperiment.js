@@ -1,9 +1,10 @@
-/** Chunk was on 66181 **/
-/** chunk id: 319828, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 319828, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => i
+  Z: () => r
 });
-let i = (0, require("./818083.js").B)({
+let r = (0, require("./818083.js").B)({
   kind: "user",
   id: "2024-11_hypesquad_removal",
   label: "HypeSquad Removal",

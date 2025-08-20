@@ -162,10 +162,10 @@ function S() {
 
 function A(e) {
   let t = o.Z.getDMChannelFromUserId(e);
-  null != t && N([t])
+  null != t && C([t])
 }
 
-function N(e) {
+function C(e) {
   if (!g()) return;
   let t = [],
     n = [],
@@ -190,7 +190,7 @@ function N(e) {
     } else n.push(a.id);
   t.length > 0 && _.Z.indexDomains(t), n.length > 0 && _.Z.deleteSearchItems(n)
 }
-class C extends Chunk147913.Z {
+class N extends Chunk147913.Z {
   handleInit() {
     T(Chunk944486.Z.getCurrentlySelectedChannelId()), E() && Chunk495527.Z.clearSearchIndex(), g() && S()
   }
@@ -228,7 +228,7 @@ class C extends Chunk147913.Z {
     let {
       channels: t
     } = e;
-    N(t)
+    C(t)
   }
   handleGuildCreateOrUpdate(e) {
     let {
@@ -250,7 +250,7 @@ class C extends Chunk147913.Z {
     let {
       channel: t
     } = e;
-    N([t])
+    C([t])
   }
   handleUserUpdate(e) {
     let {
@@ -285,4 +285,4 @@ class C extends Chunk147913.Z {
     })
   }
 }
-let R = new C
+let R = new N

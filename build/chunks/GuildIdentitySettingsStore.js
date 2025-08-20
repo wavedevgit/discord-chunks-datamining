@@ -3,7 +3,7 @@
 "use strict";
 let r, i, a, o, s, l, c, u, d, f, _;
 require.d(exports, {
-  Z: () => F
+  Z: () => V
 });
 var p, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -46,14 +46,14 @@ function A(e) {
   b = g.QZA.OPEN, y = e.errors
 }
 
-function N(e) {
+function C(e) {
   let {
     avatar: t
   } = e;
   r = t
 }
 
-function C(e) {
+function N(e) {
   let {
     avatarDecoration: t
   } = e;
@@ -88,32 +88,32 @@ function D(e) {
   c = t
 }
 
-function L(e) {
+function x(e) {
   let {
     nickname: t
   } = e;
   u = t
 }
 
-function x(e) {
+function L(e) {
   let {
     themeColors: t
   } = e;
   d = t
 }
 
-function M(e) {
+function j(e) {
   let {
     nameplate: t
   } = e;
   a = t
 }
 
-function k() {
-  j(), U(), y = {}, b = Chunk981631.QZA.OPEN
+function M() {
+  k(), U(), y = {}, b = Chunk981631.QZA.OPEN
 }
 
-function j() {
+function k() {
   r = true, u = true, i = true, a = true
 }
 
@@ -126,9 +126,9 @@ function G() {
 }
 
 function B() {
-  k(), v()
+  M(), v()
 }
-class V extends(p = Chunk442837.ZP.Store) {
+class Z extends(p = Chunk442837.ZP.Store) {
   getFormState() {
     return b
   }
@@ -191,26 +191,26 @@ class V extends(p = Chunk442837.ZP.Store) {
     return _
   }
 }
-E(V, "displayName", "GuildIdentitySettingsStore");
-let F = new V(Chunk570140.Z, {
+E(Z, "displayName", "GuildIdentitySettingsStore");
+let V = new Z(Chunk570140.Z, {
   GUILD_IDENTITY_SETTINGS_INIT: O,
   GUILD_IDENTITY_SETTINGS_RESET_AND_CLOSE_FORM: B,
   GUILD_IDENTITY_SETTINGS_SET_GUILD: T,
   GUILD_IDENTITY_SETTINGS_SUBMIT: I,
   GUILD_IDENTITY_SETTINGS_SUBMIT_FAILURE: S,
   USER_PROFILE_UPDATE_FAILURE: A,
-  GUILD_IDENTITY_SETTINGS_SET_PENDING_AVATAR: N,
-  GUILD_IDENTITY_SETTINGS_SET_PENDING_AVATAR_DECORATION: C,
-  GUILD_IDENTITY_SETTINGS_SET_PENDING_NAMEPLATE: M,
+  GUILD_IDENTITY_SETTINGS_SET_PENDING_AVATAR: C,
+  GUILD_IDENTITY_SETTINGS_SET_PENDING_AVATAR_DECORATION: N,
+  GUILD_IDENTITY_SETTINGS_SET_PENDING_NAMEPLATE: j,
   GUILD_IDENTITY_SETTINGS_SET_PENDING_PROFILE_EFFECT_ID: R,
   GUILD_IDENTITY_SETTINGS_SET_PENDING_BANNER: P,
   GUILD_IDENTITY_SETTINGS_SET_PENDING_BIO: w,
   GUILD_IDENTITY_SETTINGS_SET_PENDING_PRONOUNS: D,
-  GUILD_IDENTITY_SETTINGS_SET_PENDING_NICKNAME: L,
-  GUILD_IDENTITY_SETTINGS_SET_PENDING_THEME_COLORS: x,
-  GUILD_IDENTITY_SETTINGS_RESET_PENDING_MEMBER_CHANGES: j,
+  GUILD_IDENTITY_SETTINGS_SET_PENDING_NICKNAME: x,
+  GUILD_IDENTITY_SETTINGS_SET_PENDING_THEME_COLORS: L,
+  GUILD_IDENTITY_SETTINGS_RESET_PENDING_MEMBER_CHANGES: k,
   GUILD_IDENTITY_SETTINGS_RESET_PENDING_PROFILE_CHANGES: U,
-  GUILD_IDENTITY_SETTINGS_RESET_ALL_PENDING: k,
-  GUILD_IDENTITY_SETTINGS_SUBMIT_SUCCESS: k,
+  GUILD_IDENTITY_SETTINGS_RESET_ALL_PENDING: M,
+  GUILD_IDENTITY_SETTINGS_SUBMIT_SUCCESS: M,
   GUILD_IDENTITY_SETTINGS_CLEAR_ERRORS: G
 })

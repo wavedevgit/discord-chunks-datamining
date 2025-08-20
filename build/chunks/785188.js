@@ -1,5 +1,6 @@
-/** Chunk was on 26434 **/
-/** chunk id: 785188, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 785188, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   container: "container_cacd02",
   bumpBox: "bumpBox_cacd02",

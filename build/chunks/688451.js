@@ -55,11 +55,11 @@ function d(e, t) {
 }
 
 function f(e) {
-  return V && e instanceof Map
+  return Z && e instanceof Map
 }
 
 function _(e) {
-  return F && e instanceof Set
+  return V && e instanceof Set
 }
 
 function p(e) {
@@ -137,14 +137,14 @@ function A(e) {
   0 === t.i || 1 === t.i ? t.j() : t.g = true
 }
 
-function N(e, t) {
+function C(e, t) {
   t._ = t.p.length;
   var n = t.p[0],
     i = true !== e && e !== n;
-  return t.h.O || b("ES5").S(t, e, i), i ? (n[W].P && (I(t), r(4)), a(e) && (e = C(t, e), t.l || P(t, e)), t.u && b("Patches").M(n[W].t, e, t.u, t.s)) : e = C(t, n, []), I(t), t.u && t.v(t.u, t.s), e !== H ? e : true
+  return t.h.O || b("ES5").S(t, e, i), i ? (n[W].P && (I(t), r(4)), a(e) && (e = N(t, e), t.l || P(t, e)), t.u && b("Patches").M(n[W].t, e, t.u, t.s)) : e = N(t, n, []), I(t), t.u && t.v(t.u, t.s), e !== H ? e : true
 }
 
-function C(e, t, n) {
+function N(e, t, n) {
   if (E(t)) return t;
   var r = t[W];
   if (!r) return o(t, function(i, a) {
@@ -166,13 +166,13 @@ function C(e, t, n) {
 
 function R(e, t, n, r, o, s, c) {
   if (i(o)) {
-    var d = C(e, o, s && t && 3 !== t.i && !l(t.R, r) ? s.concat(r) : true);
+    var d = N(e, o, s && t && 3 !== t.i && !l(t.R, r) ? s.concat(r) : true);
     if (u(n, r, d), !i(d)) return;
     e.m = false
   } else c && n.add(o);
   if (a(o) && !E(o)) {
     if (!e.h.D && e._ < 1) return;
-    C(e, o), t && t.A.l || P(e, o)
+    N(e, o), t && t.A.l || P(e, o)
   }
 }
 
@@ -194,15 +194,15 @@ function D(e, t) {
     }
 }
 
-function L(e) {
-  e.P || (e.P = true, e.l && L(e.l))
+function x(e) {
+  e.P || (e.P = true, e.l && x(e.l))
 }
 
-function x(e) {
+function L(e) {
   e.o || (e.o = h(e.t))
 }
 
-function M(e, t, n) {
+function j(e, t, n) {
   var r = f(t) ? b("MapSet").F(t, n) : _(t) ? b("MapSet").T(t, n) : e.O ? function(e, t) {
     var n = Array.isArray(e),
       r = {
@@ -229,7 +229,7 @@ function M(e, t, n) {
   return (n ? n.A : O()).p.push(r), r
 }
 
-function k(e) {
+function M(e) {
   return i(e) || r(22, e),
     function e(t) {
       if (!a(t)) return t;
@@ -237,15 +237,15 @@ function k(e) {
         i = s(t);
       if (r) {
         if (!r.P && (r.i < 4 || !b("ES5").K(r))) return r.t;
-        r.I = true, n = j(t, i), r.I = false
-      } else n = j(t, i);
+        r.I = true, n = k(t, i), r.I = false
+      } else n = k(t, i);
       return o(n, function(t, i) {
         r && c(r.t, t) === i || u(n, t, e(i))
       }), 3 === i ? new Set(n) : n
     }(e)
 }
 
-function j(e, t) {
+function k(e, t) {
   switch (t) {
     case 2:
       return new Map(e);
@@ -261,9 +261,9 @@ require.d(exports, {
   mv: () => i
 });
 var U, G, B = "undefined" != typeof Symbol && "symbol" == typeof Symbol("x"),
-  V = "undefined" != typeof Map,
-  F = "undefined" != typeof Set,
-  Z = "undefined" != typeof Proxy && true !== Proxy.revocable && "undefined" != typeof Reflect,
+  Z = "undefined" != typeof Map,
+  V = "undefined" != typeof Set,
+  F = "undefined" != typeof Proxy && true !== Proxy.revocable && "undefined" != typeof Reflect,
   H = B ? Symbol.for("immer-nothing") : ((U = {})["immer-nothing"] = true, U),
   Y = B ? Symbol.for("immer-draftable") : "__$immer_draftable",
   W = B ? Symbol.for("immer-state") : "__$immer_state",
@@ -288,7 +288,7 @@ var U, G, B = "undefined" != typeof Symbol && "symbol" == typeof Symbol("x"),
         return i ? "value" in i ? i.value : null == (r = i.get) ? true : r.call(e.k) : true
       }(e, n, t);
       var r = n[t];
-      return e.I || !a(r) ? r : r === w(e.t, t) ? (x(e), e.o[t] = M(e.A.h, r, e)) : r
+      return e.I || !a(r) ? r : r === w(e.t, t) ? (L(e), e.o[t] = j(e.A.h, r, e)) : r
     },
     has: function(e, t) {
       return t in p(e)
@@ -304,12 +304,12 @@ var U, G, B = "undefined" != typeof Symbol && "symbol" == typeof Symbol("x"),
           a = null == i ? true : i[W];
         if (a && a.t === n) return e.o[t] = n, e.R[t] = false, true;
         if (d(n, i) && (true !== n || l(e.t, t))) returntrue;
-        x(e), L(e)
+        L(e), x(e)
       }
       return e.o[t] === n && (true !== n || t in e.o) || Number.isNaN(n) && Number.isNaN(e.o[t]) || (e.o[t] = n, e.R[t] = true), true
     },
     deleteProperty: function(e, t) {
-      return true !== w(e.t, t) || t in e.t ? (e.R[t] = false, x(e), L(e)) : delete e.R[t], e.o && delete e.o[t], true
+      return true !== w(e.t, t) || t in e.t ? (e.R[t] = false, L(e), x(e)) : delete e.R[t], e.o && delete e.o[t], true
     },
     getOwnPropertyDescriptor: function(e, t) {
       var n = p(e),
@@ -344,7 +344,7 @@ o(J, function(e, t) {
 var ee = new(function() {
     function e(e) {
       var t = this;
-      this.O = Z, this.D = true, this.produce = function(e, n, i) {
+      this.O = F, this.D = true, this.produce = function(e, n, i) {
         if ("function" == typeof e && "function" != typeof n) {
           var o, s = n;
           n = e;
@@ -361,7 +361,7 @@ var ee = new(function() {
         }
         if ("function" != typeof n && r(6), true !== i && "function" != typeof i && r(7), a(e)) {
           var c = S(t),
-            u = M(t, e, true),
+            u = j(t, e, true),
             d = true;
           try {
             o = n(u), d = false
@@ -369,10 +369,10 @@ var ee = new(function() {
             d ? I(c) : T(c)
           }
           return "undefined" != typeof Promise && o instanceof Promise ? o.then(function(e) {
-            return v(c, i), N(e, c)
+            return v(c, i), C(e, c)
           }, function(e) {
             throw I(c), e
-          }) : (v(c, i), N(o, c))
+          }) : (v(c, i), C(o, c))
         }
         if (!e || "object" != typeof e) {
           if (true === (o = n(e)) && (o = e), o === H && (o = true), t.D && m(o, true), i) {
@@ -400,17 +400,17 @@ var ee = new(function() {
     }
     var t = module.prototype;
     return exports.createDraft = function(e) {
-      a(e) || r(8), i(e) && (e = k(e));
+      a(e) || r(8), i(e) && (e = M(e));
       var t = S(this),
-        n = M(this, e, true);
+        n = j(this, e, true);
       return n[W].C = true, T(t), n
     }, exports.finishDraft = function(e, t) {
       var n = (e && e[W]).A;
-      return v(n, t), N(true, n)
+      return v(n, t), C(true, n)
     }, exports.setAutoFreeze = function(e) {
       this.D = e
     }, exports.setUseProxies = function(e) {
-      e && !Z && r(20), this.O = e
+      e && !F && r(20), this.O = e
     }, exports.applyPatches = function(e, t) {
       for (n = t.length - 1; n >= 0; n--) {
         var n, r = t[n];

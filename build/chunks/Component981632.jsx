@@ -59,7 +59,7 @@ function u(e) {
     } = A.current;
     b && (E(null == t), y(false), e())
   }, [b]);
-  let N = () => {
+  let C = () => {
     null != f && (h(f), E(true))
   };
   if (!c.Cj.hasOwnProperty(t)) throw Error("Unexpected giftStyle ".concat(t));
@@ -68,7 +68,7 @@ function u(e) {
     shouldAnimate: !_ && u,
     className: n,
     versionKey: O,
-    onComplete: null != f ? N : true,
+    onComplete: null != f ? C : true,
     loop: g
   })
 }

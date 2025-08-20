@@ -1,7 +1,8 @@
-/** Chunk was on 26434 **/
-/** chunk id: 100604, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 100604, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  r: () => g
+  r: () => m
 });
 var Chunk933557 = require("./933557.js"),
   Chunk356264 = require("./356264.js"),
@@ -15,7 +16,7 @@ var Chunk933557 = require("./933557.js"),
 require("./978003.js");
 var Chunk388032 = require("./388032.jsx");
 
-function m(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -23,79 +24,80 @@ function m(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
+let p = 16;
 
-function f(e, t) {
+function h(e, t) {
   return {
     originLabel: e.name,
     originIconUrl: u.ZP.getGuildIconURL({
       id: e.id,
-      size: 16,
+      size: p,
       icon: e.icon,
       canAnimate: false
     }),
     timestampLabel: t,
-    accessibilityLabel: p.intl.formatToPlainString(p.t["+l04BA"], {
+    accessibilityLabel: f.intl.formatToPlainString(f.t["+l04BA"], {
       origin: e.name,
       timestamp: t
     })
   }
 }
-class g {
+class m {
   getForwardInfo() {
     var e, t, n, u;
-    let m = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk592125.Z,
-      g = arguments.length > 1 && true !== arguments[1] ? arguments[1] : Chunk594174.default,
-      _ = arguments.length > 2 && true !== arguments[2] ? arguments[2] : Chunk699516.Z,
-      h = arguments.length > 3 && true !== arguments[3] ? arguments[3] : Chunk496675.Z,
-      b = arguments.length > 4 && true !== arguments[4] ? arguments[4] : Chunk430824.Z,
-      E = arguments.length > 5 && true !== arguments[5] ? arguments[5] : Chunk356264.Z,
+    let _ = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk592125.Z,
+      p = arguments.length > 1 && true !== arguments[1] ? arguments[1] : Chunk594174.default,
+      m = arguments.length > 2 && true !== arguments[2] ? arguments[2] : Chunk699516.Z,
+      g = arguments.length > 3 && true !== arguments[3] ? arguments[3] : Chunk496675.Z,
+      E = arguments.length > 4 && true !== arguments[4] ? arguments[4] : Chunk430824.Z,
+      b = arguments.length > 5 && true !== arguments[5] ? arguments[5] : Chunk356264.Z,
       {
-        snapshotIndex: C,
-        parentMessage: v,
-        messageSnapshot: O
+        snapshotIndex: y,
+        parentMessage: O,
+        messageSnapshot: v
       } = this,
-      y = (0, Chunk55935.Xf)(O.message.timestamp),
-      x = m.getChannel(this.parentMessage.channel_id);
-    if (null != x && x.guild_id === (null == (e = v.messageReference) ? true : module.guild_id)) {
-      let e = m.getChannel(null == (n = v.messageReference) ? true : require.channel_id);
+      I = (0, Chunk55935.Xf)(v.message.timestamp),
+      T = _.getChannel(this.parentMessage.channel_id);
+    if (null != T && T.guild_id === (null == (e = O.messageReference) ? true : module.guild_id)) {
+      let e = _.getChannel(null == (n = O.messageReference) ? true : require.channel_id);
       if (null == module) {
-        let e = b.getGuild(x.guild_id);
+        let e = E.getGuild(T.guild_id);
         return null == module ? {
-          snapshotIndex: C
+          snapshotIndex: y
         } : {
-          snapshotIndex: C,
-          footerInfo: f(module, y)
+          snapshotIndex: y,
+          footerInfo: h(module, I)
         }
       }
-      if (!h.can(module.accessPermissions, module)) return {
-        snapshotIndex: C
+      if (!g.can(module.accessPermissions, module)) return {
+        snapshotIndex: y
       };
-      let t = (0, Chunk933557.F6)(module, g, _, true);
+      let t = (0, Chunk933557.F6)(module, p, m, true);
       return {
-        snapshotIndex: C,
+        snapshotIndex: y,
         footerInfo: {
           originLabel: exports,
-          timestampLabel: y,
+          timestampLabel: I,
           accessibilityLabel: Chunk388032.intl.formatToPlainString(Chunk388032.t["+l04BA"], {
             origin: exports,
-            timestamp: y
+            timestamp: I
           })
         }
       }
     }
-    let j = null == (t = v.messageReference) ? true : exports.guild_id;
-    if (null == j) return {
-      snapshotIndex: C
+    let S = null == (t = O.messageReference) ? true : exports.guild_id;
+    if (null == S) return {
+      snapshotIndex: y
     };
-    let I = null != (u = b.getGuild(j)) ? Chunk768581 : E.getGuild(j);
-    return null == I ? {
-      snapshotIndex: C
+    let A = null != (u = E.getGuild(S)) ? Chunk768581 : b.getGuild(S);
+    return null == A ? {
+      snapshotIndex: y
     } : {
-      snapshotIndex: C,
-      footerInfo: f(I, y)
+      snapshotIndex: y,
+      footerInfo: h(A, I)
     }
   }
   constructor(e, t, n) {
-    m(this, "parentMessage", true), m(this, "messageSnapshot", true), m(this, "snapshotIndex", true), this.parentMessage = e, this.messageSnapshot = t, this.snapshotIndex = n
+    _(this, "parentMessage", true), _(this, "messageSnapshot", true), _(this, "snapshotIndex", true), this.parentMessage = e, this.messageSnapshot = t, this.snapshotIndex = n
   }
 }

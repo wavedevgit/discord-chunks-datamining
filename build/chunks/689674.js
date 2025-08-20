@@ -1,7 +1,8 @@
-/** Chunk was on 26434 **/
-/** chunk id: 689674, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 689674, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => d
+  Z: () => f
 });
 var Chunk647438 = require("./647438.js"),
   Chunk106351 = require("./106351.js"),
@@ -11,32 +12,33 @@ var Chunk647438 = require("./647438.js"),
   Chunk63205 = require("./63205.js"),
   Chunk529726 = require("./529726.js"),
   Chunk981631 = require("./981631.js");
+let d = 0;
 
-function d(e) {
+function f(e) {
   var t, n;
   let {
-    message: d,
-    channel: p,
-    enabled: m = true
-  } = e, f = (0, l.e7)([a.Z], () => {
+    message: f,
+    channel: _,
+    enabled: p = true
+  } = e, h = (0, a.e7)([s.Z], () => {
     var e;
-    let t = a.Z.getGuild(p.guild_id);
+    let t = s.Z.getGuild(_.guild_id);
     return null != (e = null == t ? true : t.features.has(u.oNc.COMMUNITY)) && e
-  }, [p.guild_id]), g = (null == (t = d.messageReference) ? true : t.guild_id) != null && null != d.webhookId && d.hasFlag(u.iLy.IS_CROSSPOST) && null != p.guild_id, _ = p.type === i.d.GUILD_ANNOUNCEMENT && f, h = !d.hasFlag(u.iLy.EPHEMERAL) && (g || _), b = g && null != d.messageReference ? d.messageReference.message_id : d.id, E = g && null != d.messageReference ? d.messageReference.channel_id : p.id, C = g && (null == (n = d.messageReference) ? true : n.guild_id) != null ? d.messageReference.guild_id : p.guild_id, v = r.useCallback(e => {
+  }, [_.guild_id]), m = (null == (t = f.messageReference) ? true : t.guild_id) != null && null != f.webhookId && f.hasFlag(u.iLy.IS_CROSSPOST) && null != _.guild_id, g = _.type === i.d.GUILD_ANNOUNCEMENT && h, E = !f.hasFlag(u.iLy.EPHEMERAL) && (m || g), b = m && null != f.messageReference ? f.messageReference.message_id : f.id, y = m && null != f.messageReference ? f.messageReference.channel_id : _.id, O = m && (null == (n = f.messageReference) ? true : n.guild_id) != null ? f.messageReference.guild_id : _.guild_id, v = r.useCallback(e => {
     e ? c.Z.handleMessageBecameVisible({
       messageId: b,
-      channelId: p.id,
-      guildId: p.guild_id,
-      sourceChannelId: E,
-      sourceGuildId: C
+      channelId: _.id,
+      guildId: _.guild_id,
+      sourceChannelId: y,
+      sourceGuildId: O
     }) : c.Z.handleMessageLostVisibility(b)
-  }, [b, p.id, p.guild_id, E, C]), O = s.Z.useExperiment({
+  }, [b, _.id, _.guild_id, y, O]), I = l.Z.useExperiment({
     location: "836a4b_1"
   }, {
-    disable: !h || !m,
+    disable: !E || !p,
     autoTrackExposure: true
-  }).enabled, y = (0, o.O)(v, 0, O);
+  }).enabled, T = (0, o.O)(v, d, I);
   return r.useEffect(() => () => {
     c.Z.handleMessageLostVisibility(b)
-  }, [b]), y
+  }, [b]), T
 }

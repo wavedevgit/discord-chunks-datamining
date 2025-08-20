@@ -20,7 +20,7 @@ function m(e) {
     application: r,
     size: a,
     className: d
-  } = e, [m, f] = l.useState(false), p = null != (t = null == r ? true : r.name) ? t : n.name, g = null != n.firstReleaseDate ? new Date(n.firstReleaseDate) : null;
+  } = e, [m, p] = l.useState(false), f = null != (t = null == r ? true : r.name) ? t : n.name, g = null != n.firstReleaseDate ? new Date(n.firstReleaseDate) : null;
   return null == n.coverImageUrl || m ? (0, i.jsxs)("div", {
     className: s()(u.fallback, d),
     children: [(0, i.jsx)("div", {
@@ -29,7 +29,7 @@ function m(e) {
       variant: 1 === a ? "text-md/medium" : "text-xs/medium",
       color: "always-white",
       lineClamp: 1 === a ? 4 : 3,
-      children: p
+      children: f
     }), (0, i.jsx)("div", {
       className: u.spacer
     }), (0, i.jsx)(o.xv, {
@@ -41,13 +41,13 @@ function m(e) {
     className: d,
     src: n.coverImageUrl,
     alt: c.intl.formatToPlainString(c.t["3ev90d"], {
-      game: p
+      game: f
     }),
     onError: () => {
-      f(true)
+      p(true)
     },
     onLoad: () => {
-      f(false)
+      p(false)
     }
   })
 }

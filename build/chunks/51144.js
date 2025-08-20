@@ -4,13 +4,13 @@
 require.d(exports, {
   EO: () => T,
   Fc: () => I,
-  Ft: () => N,
+  Ft: () => C,
   W5: () => A,
   ZP: () => R,
   _T: () => E,
   oY: () => g,
   u5: () => O,
-  vP: () => C
+  vP: () => N
 }), require("./415506.js");
 var Chunk442837 = require("./442837.js"),
   Chunk246946 = require("./246946.js"),
@@ -152,13 +152,13 @@ function A(e, t) {
   return S(e, n, r)
 }
 
-function N(e) {
+function C(e) {
   return (0, r.e7)([a.default], () => {
     if (null != e) return e.isPrivate() && e.isDM() ? a.default.getUser(e.getRecipientId()) : null
   })
 }
 
-function C() {
+function N() {
   let e = Chunk594174.default.getCurrentUser();
   return null != module && module.isStaff()
 }
@@ -170,9 +170,9 @@ let R = {
   useUserTag: function(e, t) {
     return S(e, c({}, p, t), (0, r.e7)([i.Z], () => i.Z.hidePersonalInformation))
   },
-  getUserIsStaff: C,
+  getUserIsStaff: N,
   getFormattedName: y,
   getGlobalName: b,
   humanizeStatus: O,
-  useDirectMessageRecipient: N
+  useDirectMessageRecipient: C
 }

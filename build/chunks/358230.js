@@ -1,8 +1,9 @@
-/** Chunk was on 66181 **/
-/** chunk id: 358230, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 358230, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  T: () => g,
-  Z: () => p
+  T: () => p,
+  Z: () => _
 }), require("./539854.js");
 var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
@@ -15,49 +16,49 @@ var Chunk647438 = require("./647438.js"),
   Chunk981631 = require("./981631.js"),
   Chunk647086 = require("./647086.js");
 
-function p(e) {
+function _(e) {
   let {
     withVoiceChannels: t = false,
     withCurrentVoiceChannel: n = false
-  } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {}, i = arguments.length > 2 ? arguments[2] : true;
-  return h(e === m._ || e === u.I_8 ? (0, a.t)() : s.Z.getGuildWithoutChangingGuildActionRows(e).guildChannels, {
-    currentVoiceChannelId: d.Z.getVoiceChannelId(),
-    selectedChannelId: d.Z.getChannelId()
+  } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {}, r = arguments.length > 2 ? arguments[2] : true;
+  return h(e === f._ || e === d.I_8 ? (0, o.t)() : a.Z.getGuildWithoutChangingGuildActionRows(e).guildChannels, {
+    currentVoiceChannelId: u.Z.getVoiceChannelId(),
+    selectedChannelId: u.Z.getChannelId()
   }, {
     withVoiceChannels: t,
     withCurrentVoiceChannel: n
-  }, i)
+  }, r)
 }
 
-function g(e, t, n) {
+function p(e, t, n) {
   let {
-    withVoiceChannels: s = false,
-    withCurrentVoiceChannel: a = false
-  } = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {}, l = arguments.length > 4 ? arguments[4] : true, u = (0, r.e7)([c.default], () => c.default.getGuildChangeSentinel(e)), m = (0, r.e7)([o.Z], () => o.Z.version), {
-    currentVoiceChannelId: p,
-    selectedChannelId: g
-  } = (0, r.cj)([d.Z], () => ({
-    currentVoiceChannelId: d.Z.getVoiceChannelId(),
-    selectedChannelId: d.Z.getChannelId()
+    withVoiceChannels: a = false,
+    withCurrentVoiceChannel: o = false
+  } = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {}, s = arguments.length > 4 ? arguments[4] : true, d = (0, i.e7)([c.default], () => c.default.getGuildChangeSentinel(e)), f = (0, i.e7)([l.Z], () => l.Z.version), {
+    currentVoiceChannelId: _,
+    selectedChannelId: p
+  } = (0, i.cj)([u.Z], () => ({
+    currentVoiceChannelId: u.Z.getVoiceChannelId(),
+    selectedChannelId: u.Z.getChannelId()
   }));
-  return (0, i.useMemo)(() => h(t, {
-    currentVoiceChannelId: p,
-    selectedChannelId: g
+  return (0, r.useMemo)(() => h(t, {
+    currentVoiceChannelId: _,
+    selectedChannelId: p
   }, {
-    withVoiceChannels: s,
-    withCurrentVoiceChannel: a
-  }, l).map(e => e.id), [t, n, u, m])
+    withVoiceChannels: a,
+    withCurrentVoiceChannel: o
+  }, s).map(e => e.id), [t, n, d, f])
 }
 
 function h(e, t) {
   let {
     currentVoiceChannelId: n,
-    selectedChannelId: i
+    selectedChannelId: r
   } = t, {
-    withVoiceChannels: r,
-    withCurrentVoiceChannel: s
-  } = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {}, a = arguments.length > 3 ? arguments[3] : true, o = [];
+    withVoiceChannels: i,
+    withCurrentVoiceChannel: a
+  } = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {}, o = arguments.length > 3 ? arguments[3] : true, l = [];
   return e.forEachShownChannel(e => {
-    ((0, l.r8)(e.type) || r && (0, l.bw)(e.type) || s && (e.id === n || e.id === i)) && o.push(e)
-  }, a), o
+    ((0, s.r8)(e.type) || i && (0, s.bw)(e.type) || a && (e.id === n || e.id === r)) && l.push(e)
+  }, o), l
 }

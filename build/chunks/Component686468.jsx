@@ -1,4 +1,4 @@
-/** Chunk was on 36499 **/
+/** Chunk was on 5665 **/
 /** chunk id: 686468, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => E
@@ -24,7 +24,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk196979 = require("./196979.js");
 
-function j(e) {
+function O(e) {
   let {
     onClick: t,
     className: n
@@ -48,7 +48,7 @@ function j(e) {
   })
 }
 
-function O(e) {
+function j(e) {
   let {
     channel: t
   } = e, {
@@ -119,12 +119,12 @@ function E(e) {
       }) : null, u ? (0, r.jsx)(p.Z, {
         className: v.eventPrompt,
         guildId: s
-      }) : null, l ? (0, r.jsx)(j, {
+      }) : null, l ? (0, r.jsx)(O, {
         className: a()({
           [v.eventPrompt]: true
         }),
         onClick: n
-      }) : null, (0, r.jsx)(O, {
+      }) : null, (0, r.jsx)(j, {
         channel: t
       })]
     })]

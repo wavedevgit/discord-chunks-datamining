@@ -7,7 +7,7 @@ require.d(exports, {
 var i, Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  r = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk686529 = require("./686529.js"),
@@ -19,21 +19,21 @@ function m(e) {
     onClick: n,
     submitted: i
   } = e;
-  return (0, r.jsxs)("div", {
+  return (0, s.jsxs)("div", {
     className: o.tabs,
-    children: [(0, r.jsx)(u, {
+    children: [(0, s.jsx)(x, {
       tab: 0,
       selectedTab: t,
       label: c.intl.string(c.t.JwwVrq),
       disabled: i,
       onClick: n
-    }), (0, r.jsx)(u, {
+    }), (0, s.jsx)(x, {
       tab: 1,
       selectedTab: t,
       label: c.intl.string(c.t["56vYWV"]),
       disabled: i,
       onClick: n
-    }), (0, r.jsx)(u, {
+    }), (0, s.jsx)(x, {
       tab: 2,
       selectedTab: t,
       label: c.intl.string(c.t["0l0rJi"]),
@@ -43,33 +43,33 @@ function m(e) {
   })
 }
 
-function u(e) {
+function x(e) {
   let {
     tab: t,
     selectedTab: n,
     label: i,
-    disabled: s,
+    disabled: a,
     onClick: c
   } = e;
-  return s ? (0, r.jsxs)("div", {
-    className: a()(o.tab, {
+  return a ? (0, s.jsxs)("div", {
+    className: r()(o.tab, {
       [o.current]: n === t
     }),
-    children: [(0, r.jsx)("div", {
+    children: [(0, s.jsx)("div", {
       className: o.progressBar
-    }), (0, r.jsx)(l.Text, {
+    }), (0, s.jsx)(l.Text, {
       variant: "text-xs/medium",
       color: n === t ? "text-brand" : "text-muted",
       children: i
     })]
-  }) : (0, r.jsxs)(l.P3F, {
+  }) : (0, s.jsxs)(l.P3F, {
     onClick: () => c(t),
-    className: a()(o.tab, {
+    className: r()(o.tab, {
       [o.current]: n === t
     }),
-    children: [(0, r.jsx)("div", {
+    children: [(0, s.jsx)("div", {
       className: o.progressBar
-    }), (0, r.jsx)(l.Text, {
+    }), (0, s.jsx)(l.Text, {
       variant: "text-xs/medium",
       color: n === t ? "text-brand" : "text-muted",
       children: i

@@ -1,82 +1,103 @@
-/** Chunk was on 82411 **/
-/** chunk id: 325067, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 325067, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => E
+  Z: () => T
 });
-var r, o, Chunk392711 = require("./392711.js"),
+var r, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
   Chunk213919 = require("./213919.js"),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
-let d = false,
-  u = [],
-  p = "",
-  h = false,
-  _ = {
+
+function c(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+let u = false,
+  d = [],
+  f = "",
+  _ = false,
+  p = {
     viewNonce: "",
     regenerateNonce: ""
   };
-class f extends(o = Chunk442837.ZP.Store) {
+
+function h() {
+  _ = true
+}
+
+function m(e) {
+  let {
+    token: t,
+    codes: n
+  } = e;
+  true !== t && o.setToken(t), d = n
+}
+
+function g(e) {
+  let {
+    token: t
+  } = e;
+  o.setToken(t)
+}
+
+function E() {
+  u = true
+}
+
+function b() {
+  u = false
+}
+
+function y(e) {
+  let {
+    nonces: t
+  } = e;
+  p = t
+}
+
+function O(e) {
+  let {
+    codes: t,
+    key: n
+  } = e;
+  d = a().sortBy(t, "code"), f = n
+}
+
+function v() {
+  d = []
+}
+class I extends(r = Chunk442837.ZP.Store) {
   getVerificationKey() {
-    return p
+    return f
   }
   getBackupCodes() {
-    return u
-  }
-  get togglingSMS() {
     return d
   }
+  get togglingSMS() {
+    return u
+  }
   getNonces() {
-    return _
+    return p
   }
   get hasSeenBackupPrompt() {
-    return h
+    return _
   }
-}(r = "displayName") in f ? Object.defineProperty(f, r, {
-  value: "MFAStore",
-  enumerable: true,
-  configurable: true,
-  writable: true
-}) : f[r] = "MFAStore";
-let E = new f(Chunk570140.Z, {
-  MFA_ENABLE_SUCCESS: function(e) {
-    let {
-      token: t,
-      codes: n
-    } = e;
-    true !== t && s.setToken(t), u = n
-  },
-  MFA_DISABLE_SUCCESS: function(e) {
-    let {
-      token: t
-    } = e;
-    s.setToken(t)
-  },
-  MFA_SMS_TOGGLE: function() {
-    d = true
-  },
-  MFA_SMS_TOGGLE_COMPLETE: function() {
-    d = false
-  },
-  MFA_CLEAR_BACKUP_CODES: function() {
-    u = []
-  },
-  MFA_VIEW_BACKUP_CODES: function(e) {
-    let {
-      codes: t,
-      key: n
-    } = e;
-    u = a().sortBy(t, "code"), p = n
-  },
-  MFA_SEND_VERIFICATION_KEY: function(e) {
-    let {
-      nonces: t
-    } = e;
-    _ = t
-  },
-  MFA_SEEN_BACKUP_CODE_PROMPT: function() {
-    h = true
-  },
+}
+c(I, "displayName", "MFAStore");
+let T = new I(Chunk570140.Z, {
+  MFA_ENABLE_SUCCESS: m,
+  MFA_DISABLE_SUCCESS: g,
+  MFA_SMS_TOGGLE: E,
+  MFA_SMS_TOGGLE_COMPLETE: b,
+  MFA_CLEAR_BACKUP_CODES: v,
+  MFA_VIEW_BACKUP_CODES: O,
+  MFA_SEND_VERIFICATION_KEY: y,
+  MFA_SEEN_BACKUP_CODE_PROMPT: h,
   CONNECTION_OPEN: () => {}
 })

@@ -3,8 +3,8 @@
 "use strict";
 let r;
 require.d(exports, {
-  Jc: () => k,
-  dx: () => M,
+  Jc: () => M,
+  dx: () => j,
   tE: () => G
 });
 var i, Chunk647438 = require("./647438.js"),
@@ -312,9 +312,9 @@ class A {
     return exports
   }
 }
-let N = new A;
-"u" > typeof window && N.setContainer(document.body);
-let C = Chunk647438.createContext(N);
+let C = new A;
+"u" > typeof window && C.setContainer(document.body);
+let N = Chunk647438.createContext(C);
 var R = function(e, t, n, r) {
   var i = n ? n.call(r, e, t) : true;
   if (true !== i) return !!i;
@@ -335,28 +335,28 @@ var R = function(e, t, n, r) {
 let P = false,
   w, D = {};
 
-function L() {
+function x() {
   if (!P) return;
   let e = null == r ? true : r.getStyle();
-  null == module || R(module, D) ? null != w && cancelAnimationFrame(w) : (D = module, null == r || r.invalidate()), w = requestAnimationFrame(L)
+  null == module || R(module, D) ? null != w && cancelAnimationFrame(w) : (D = module, null == r || r.invalidate()), w = requestAnimationFrame(x)
 }
-let x = false,
-  M = {
+let L = false,
+  j = {
     get ringsEnabled() {
-      return x
+      return L
     },
     setRingsEnabled(e) {
-      x = e, null == r || r.invalidate()
+      L = e, null == r || r.invalidate()
     },
     enableAnimationTracking() {
-      P = true, w = requestAnimationFrame(L)
+      P = true, w = requestAnimationFrame(x)
     },
     disableAnimationTracking() {
       P = false, null != w && cancelAnimationFrame(w)
     }
   };
 
-function k(e) {
+function M(e) {
   let {
     containerRef: t,
     children: n,
@@ -364,18 +364,18 @@ function k(e) {
   } = e, i = a.useRef(new A);
   return a.useEffect(() => {
     i.current.setContainer(t.current), i.current.setThemeOptions(r)
-  }, [t.current]), (0, o.jsxs)(C.Provider, {
+  }, [t.current]), (0, o.jsxs)(N.Provider, {
     value: i.current,
-    children: [n, (0, o.jsx)(j, {})]
+    children: [n, (0, o.jsx)(k, {})]
   })
 }
 
-function j() {
-  let e = Chunk647438.useContext(C),
+function k() {
+  let e = Chunk647438.useContext(N),
     [, t] = Chunk647438.useState({});
   return Chunk647438.useEffect(() => (module.invalidate = () => exports({}), () => {
     module.invalidate = () => null
-  }), [module]), M.ringsEnabled && module.visible ? (0, Chunk951288.jsx)("div", {
+  }), [module]), j.ringsEnabled && module.visible ? (0, Chunk951288.jsx)("div", {
     className: d("focus-rings-ring", module.className),
     style: module.getStyle()
   }) : null
@@ -398,7 +398,7 @@ function G(e) {
   null != o && f(null != s, "FocusRing was given a focusTarget but the required ringTarget was not provided. A ringTarget is required to avoid ambiguity of where the ring will be applied."), null != r && f(null != s, "FocusRing was given a controlled focused prop but no ringTarget to apply the ring to. A ringTarget is required since it cannot be inferred through regular focus events.");
   let p = a.useRef(false),
     [h, m] = a.useState(false),
-    g = a.useContext(C),
+    g = a.useContext(N),
     E = a.Children.only(_),
     {
       onBlur: b,

@@ -1,7 +1,8 @@
-/** Chunk was on 62981 **/
-/** chunk id: 87005, original params: e,n,t (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 87005, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  f: () => C
+  f: () => g
 }), require("./388685.js"), require("./539854.js");
 var Chunk647438 = require("./647438.js"),
   Chunk243814 = require("./243814.js"),
@@ -16,7 +17,7 @@ require("./445392.js");
 var Chunk783097 = require("./783097.js"),
   Chunk701488 = require("./701488.js"),
   Chunk689079 = require("./689079.js");
-let f = {
+let h = {
     commandTypes: [Chunk911969.yU.CHAT, Chunk911969.yU.PRIMARY_ENTRY_POINT]
   },
   m = {
@@ -25,47 +26,49 @@ let f = {
     includeFrecency: true
   };
 
-function C(e) {
+function g(e) {
   let {
-    context: n,
-    onlyActivityApps: t,
-    allowCommandFetch: c,
-    includeAuthorizedAppsAndFetch: C
+    context: t,
+    onlyActivityApps: n,
+    allowCommandFetch: r,
+    includeAuthorizedAppsAndFetch: i
   } = e, {
-    sectionDescriptors: y,
-    loading: g
+    sectionDescriptors: a,
+    loading: o
   } = l.wi({
-    context: n,
-    filters: f,
+    context: t,
+    filters: h,
     options: m,
-    allowFetch: c
+    allowFetch: r
   });
   return {
-    loading: g,
-    frecentApps: function(e) {
-      let {
-        sectionDescriptors: n,
-        context: t,
-        onlyActivityApps: c,
-        includeAuthorizedAppsAndFetch: l
-      } = e, f = (0, i.e7)([u.Z], () => u.Z.getFetchState());
-      r.useEffect(() => {
-        l && f === u.M.NOT_FETCHED && a.Z.fetch()
-      }, [l, f]);
-      let m = (0, i.Wu)([u.Z], () => l ? u.Z.getNewestTokens().filter(e => e.scopes.includes(o.x.APPLICATIONS_COMMANDS)) : []),
-        C = n.filter(e => e.id !== _.bi.FRECENCY && e.id !== _.bi.BUILT_IN),
-        y = "contextless" === t.type,
-        g = r.useMemo(() => {
-          let e = [];
-          return y && e.push(b.jT), e
-        }, [y]),
-        O = (0, s.h)(C, m);
-      return r.useMemo(() => c ? O.filter(e => null != e.application && (0, p.ye)(e.application) && null != (0, d.Xu)(t, e.id)).filter(e => !g.includes(e.id)) : O.filter(e => !g.includes(e.id)), [c, O, t, g])
-    }({
-      sectionDescriptors: y,
-      context: n,
-      onlyActivityApps: t,
-      includeAuthorizedAppsAndFetch: C
+    loading: o,
+    frecentApps: E({
+      sectionDescriptors: a,
+      context: t,
+      onlyActivityApps: n,
+      includeAuthorizedAppsAndFetch: i
     })
   }
+}
+
+function E(e) {
+  let {
+    sectionDescriptors: t,
+    context: n,
+    onlyActivityApps: s,
+    includeAuthorizedAppsAndFetch: l
+  } = e, h = (0, a.e7)([d.Z], () => d.Z.getFetchState());
+  r.useEffect(() => {
+    l && h === d.M.NOT_FETCHED && o.Z.fetch()
+  }, [l, h]);
+  let m = (0, a.Wu)([d.Z], () => l ? d.Z.getNewestTokens().filter(e => e.scopes.includes(i.x.APPLICATIONS_COMMANDS)) : []),
+    g = t.filter(e => e.id !== p.bi.FRECENCY && e.id !== p.bi.BUILT_IN),
+    E = "contextless" === n.type,
+    b = r.useMemo(() => {
+      let e = [];
+      return E && e.push(_.jT), e
+    }, [E]),
+    y = (0, u.h)(g, m);
+  return r.useMemo(() => s ? y.filter(e => null != e.application && (0, f.ye)(e.application) && null != (0, c.Xu)(n, e.id)).filter(e => !b.includes(e.id)) : y.filter(e => !b.includes(e.id)), [s, y, n, b])
 }

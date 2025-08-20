@@ -2,7 +2,7 @@
 /** chunk id: 326133, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => M
+  Z: () => j
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -59,13 +59,13 @@ function A(e, t) {
   return n
 }
 
-function N(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function C(e, t) {
+function N(e, t) {
   if (null == e) return {};
   var n, r, i = R(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -85,34 +85,34 @@ function R(e, t) {
 let P = 490,
   w = 490,
   D = 245,
-  L = 200,
-  x = 120,
-  M = Chunk647438.forwardRef(function(e, t) {
-    var n, a, T, A, R, M, k;
+  x = 200,
+  L = 120,
+  j = Chunk647438.forwardRef(function(e, t) {
+    var n, a, T, A, R, j, M;
     let {
-      channel: j,
+      channel: k,
       type: U,
       editorHeight: G,
       onVisibilityChange: B,
-      editorScrollerRef: V,
-      barsHeight: F
-    } = e, Z = (0, h.Dt)(), H = (0, l.e7)([E.Z], () => {
+      editorScrollerRef: Z,
+      barsHeight: V
+    } = e, F = (0, h.Dt)(), H = (0, l.e7)([E.Z], () => {
       var e;
-      return null != (e = E.Z.getGuild(j.guild_id)) ? e : null
-    }, [j.guild_id]), Y = i.useRef(null), [W, K, z] = (0, O.Z)(N(S({}, e), {
+      return null != (e = E.Z.getGuild(k.guild_id)) ? e : null
+    }, [k.guild_id]), Y = i.useRef(null), [W, K, z] = (0, O.Z)(C(S({}, e), {
       guild: H
     }), t, Y), q = (null == (n = U.autocomplete) ? true : n.forceChatLayer) ? g.ZP : m.ZP, X = (0, _.DJ)(W.selectedIndex);
-    (0, p.KR)(Z, W.isVisible, X);
+    (0, p.KR)(F, W.isVisible, X);
     let Q = (0, y.Z)({
         editorHeight: G,
         type: U,
         state: W
       }),
       J = (0, l.e7)([d.ZP], () => {
-        let e = d.ZP.getSelfEmbeddedActivityForChannel(j.id),
+        let e = d.ZP.getSelfEmbeddedActivityForChannel(k.id),
           t = d.ZP.getActivityPanelMode();
-        return (0, u.l5)(j) && null != e && (0, f.p)(e.location) === j.id && t === v.Ez.PANEL
-      }, [j]),
+        return (0, u.l5)(k) && null != e && (0, f.p)(e.location) === k.id && t === v.Ez.PANEL
+      }, [k]),
       $ = i.useMemo(() => (null == Q ? true : Q.top) == null && (null == Q ? true : Q.left) == null && (null == Q ? true : Q.bottom) == null && (null == Q ? true : Q.right) == null ? "" : String(Date.now()), [null == Q ? true : Q.top, null == Q ? true : Q.left, null == Q ? true : Q.bottom, null == Q ? true : Q.right]);
     if (i.useEffect(() => {
         B(W.isVisible)
@@ -120,7 +120,7 @@ let P = 490,
     let ee = null != (T = W.query.typeInfo.renderResults({
       results: W.query.results,
       selectedIndex: W.selectedIndex,
-      channel: j,
+      channel: k,
       guild: H,
       query: W.query.queryText,
       options: W.query.options,
@@ -135,12 +135,12 @@ let P = 490,
         [I.autocompleteTop]: J
       },
       en = P;
-    null != Q && (en = (null == (A = U.autocomplete) ? true : A.small) ? L : (null == (R = W.query) ? true : R.type) === b.eq.EMOJIS_AND_STICKERS ? w : D);
-    let er = Math.max(G, null != (M = null == V || null == (a = V.current) ? true : a.clientHeight) ? M : 0),
+    null != Q && (en = (null == (A = U.autocomplete) ? true : A.small) ? x : (null == (R = W.query) ? true : R.type) === b.eq.EMOJIS_AND_STICKERS ? w : D);
+    let er = Math.max(G, null != (j = null == Z || null == (a = Z.current) ? true : a.clientHeight) ? j : 0),
       ei = Math.min(.5 * window.innerHeight, er);
-    en = Math.min(window.innerHeight - x - ei - (null != F ? F : 0), en);
+    en = Math.min(window.innerHeight - L - ei - (null != V ? V : 0), en);
     let ea = (0, r.jsx)(_.ZP, {
-      id: Z,
+      id: F,
       className: o()(I.autocomplete, et),
       innerClassName: I.autocompleteInner,
       onMouseDown: e => e.preventDefault(),
@@ -150,9 +150,9 @@ let P = 490,
           children: e => {
             var {
               ref: t
-            } = e, n = C(e, ["ref"]);
-            return (0, r.jsx)(c.h21, N(S({
-              id: Z,
+            } = e, n = N(e, ["ref"]);
+            return (0, r.jsx)(c.h21, C(S({
+              id: F,
               ref: e => {
                 var n;
                 t.current = null != (n = null == e ? true : e.getScrollerNode()) ? n : null, Y.current = e
@@ -163,7 +163,7 @@ let P = 490,
                 maxHeight: en
               },
               role: "listbox",
-              "aria-labelledby": (0, _.rp)(Z),
+              "aria-labelledby": (0, _.rp)(F),
               children: ee
             }))
           }
@@ -175,7 +175,7 @@ let P = 490,
         targetRef: e.targetRef,
         overrideTargetRect: Q,
         positionKey: $,
-        position: null != (k = e.position) ? k : "top",
+        position: null != (M = e.position) ? M : "top",
         align: "left",
         spacing: 8,
         autoInvert: true,

@@ -69,14 +69,14 @@ function v(e) {
     queryParams: E,
     allowPopups: y = false,
     referrerPolicy: v = "origin"
-  } = e, I = (0, f.sU)({}), T = (0, s.useMemoOne)(() => (0, l.Z)(), [t]), S = i.useRef(null), A = (0, _.Z)(S, g, null == I ? window : I), N = O(b({}, E), {
+  } = e, I = (0, f.sU)({}), T = (0, s.useMemoOne)(() => (0, l.Z)(), [t]), S = i.useRef(null), A = (0, _.Z)(S, g, null == I ? window : I), C = O(b({}, E), {
     frame_id: T,
     platform: h.S4.DESKTOP
-  }), [C, R] = i.useState(false), P = u.Z.theme, w = b({}, a);
+  }), [N, R] = i.useState(false), P = u.Z.theme, w = b({}, a);
 
   function D(e) {
     var n;
-    null == o || o(e.target), S.current = e.target, A(true), null == (n = e.target.contentWindow) || n.postMessage([c.Z.HELLO, N], null != t ? t : "")
+    null == o || o(e.target), S.current = e.target, A(true), null == (n = e.target.contentWindow) || n.postMessage([c.Z.HELLO, C], null != t ? t : "")
   }
   return P === m.BRd.LIGHT ? w.colorScheme = "light" : w.colorScheme = "dark", i.useEffect(() => (d.S.dispatch(m.CkL.IFRAME_MOUNT, {
     id: T
@@ -94,7 +94,7 @@ function v(e) {
     return d.S.subscribe(m.CkL.MANUAL_IFRAME_RESIZING, e), () => {
       d.S.unsubscribe(m.CkL.MANUAL_IFRAME_RESIZING, e)
     }
-  }, []), C && (w.pointerEvents = "none"), null != t ? (0, r.jsx)("iframe", {
+  }, []), N && (w.pointerEvents = "none"), null != t ? (0, r.jsx)("iframe", {
     style: w,
     allow: "autoplay; encrypted-media",
     referrerPolicy: v,
@@ -103,7 +103,7 @@ function v(e) {
       allowPopups: y
     }),
     className: n,
-    src: "".concat(t, "?").concat(new URLSearchParams(N))
+    src: "".concat(t, "?").concat(new URLSearchParams(C))
   }) : null
 }
 

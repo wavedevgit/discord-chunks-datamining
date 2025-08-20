@@ -37,10 +37,10 @@ var Chunk857192 = require("./857192.js"),
   Chunk70956 = require("./70956.js"),
   Chunk378799 = require("./378799.js");
 Chunk857192.default.cssDebuggingEnabled && require.e("95666").then(require.bind(require, 754261)), (0, Chunk378799.s5)();
-let F = 5 * Chunk70956.Z.Millis.MINUTE,
-  Z = document.getElementById("app-mount");
-_()(null != Z, "Could not find app-mount"), Z.className = __OVERLAY__ ? "" : Chunk113752.appMount;
-let H = (0, Chunk602954.createRoot)(Z),
+let V = 5 * Chunk70956.Z.Millis.MINUTE,
+  F = document.getElementById("app-mount");
+_()(null != F, "Could not find app-mount"), F.className = __OVERLAY__ ? "" : Chunk113752.appMount;
+let H = (0, Chunk602954.createRoot)(F),
   Y = {
     "/oauth2/authorize": Chunk534713.Z
   };
@@ -48,10 +48,10 @@ let H = (0, Chunk602954.createRoot)(Z),
 function W(e, t, n) {
   var r;
   let i = null != n ? new URLSearchParams(n) : null;
-  null != (r = Y[t]) && r.call(Y, i) || (0, C.uL)(t)
+  null != (r = Y[t]) && r.call(Y, i) || (0, N.uL)(t)
 }
-let K = e => H.render((0, u.jsx)(x.w, {
-  children: (0, u.jsx)(L.Z, {
+let K = e => H.render((0, u.jsx)(L.w, {
+  children: (0, u.jsx)(x.Z, {
     children: (0, u.jsx)(e, {})
   })
 }));
@@ -80,7 +80,7 @@ else if (null != window.require && null == window.DiscordNative) K(Chunk832037.Z
 else {
   if (document.addEventListener("scroll", e => e.preventDefault()), Chunk358085.isPlatformEmbedded) {
     window.onbeforeunload = () => Chunk998502.ZP.beforeUnload(), Chunk998502.ZP.on("HELP_OPEN", () => window.open(Chunk63063.Z.getCommunityURL()));
-    let e = new Chunk846519.sW(F, () => Chunk998502.ZP.purgeMemory());
+    let e = new Chunk846519.sW(V, () => Chunk998502.ZP.purgeMemory());
     Chunk998502.ZP.on("MAIN_WINDOW_BLUR", () => {
       module.delay(), Chunk998502.ZP.setFocused(false), (0, Chunk284737.T_)(window, false)
     }), Chunk998502.ZP.on("MAIN_WINDOW_FOCUS", () => {

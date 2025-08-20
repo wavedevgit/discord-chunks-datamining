@@ -71,7 +71,7 @@ function A(e) {
   return y(t).updateMembersByMemberIds(n)
 }
 
-function N(e) {
+function C(e) {
   let {
     chunks: t
   } = e, n = false;
@@ -79,7 +79,7 @@ function N(e) {
   return n
 }
 
-function C(e) {
+function N(e) {
   let {
     guildId: t
   } = e, n = o.default.getId();
@@ -125,7 +125,7 @@ function D(e) {
   return r.updateMembersByMemberIds(i)
 }
 
-function L(e) {
+function x(e) {
   let {
     guildId: t,
     addedMembers: n
@@ -139,7 +139,7 @@ function L(e) {
   return r.updateMembersByMemberIds(i)
 }
 
-function x(e) {
+function L(e) {
   let {
     guildId: t,
     members: n
@@ -153,7 +153,7 @@ function x(e) {
   return r.updateMembersByMemberIds(i)
 }
 
-function M(e) {
+function j(e) {
   let {
     guildId: t,
     threads: n
@@ -170,7 +170,7 @@ function M(e) {
   return i.updateMembersByMemberIds(a)
 }
 
-function k(e) {
+function M(e) {
   let {
     guildId: t,
     guildMember: n
@@ -178,7 +178,7 @@ function k(e) {
   return y(t).updateMembersByMemberIds([n.user.id])
 }
 
-function j(e) {
+function k(e) {
   let t = false;
   return e.guilds.forEach(e => {
     let {
@@ -206,14 +206,14 @@ function U(e) {
 }
 
 function G(e) {
-  return E ? E = false : v(true), j(e)
+  return E ? E = false : v(true), k(e)
 }
 
 function B(e) {
   return U(e)
 }
 
-function V(e) {
+function Z(e) {
   let {
     guildMembers: t
   } = e, n = false;
@@ -223,7 +223,7 @@ function V(e) {
   }), n
 }
 
-function F(e) {
+function V(e) {
   let {
     guildId: t,
     members: n
@@ -236,7 +236,7 @@ function F(e) {
   return i.length > 0 && r.updateClientMembers(i)
 }
 
-function Z(e) {
+function F(e) {
   let {
     members: t,
     guildId: n
@@ -401,25 +401,25 @@ g(Q, "displayName", "MemberSafetyStore");
 let J = new Q(Chunk570140.Z, {
   CONNECTION_OPEN: G,
   CONNECTION_OPEN_SUPPLEMENTAL: B,
-  LOCAL_MESSAGES_LOADED: F,
-  CACHE_LOADED: V,
-  PASSIVE_UPDATE_V2: Z,
+  LOCAL_MESSAGES_LOADED: V,
+  CACHE_LOADED: Z,
+  PASSIVE_UPDATE_V2: F,
   GUILD_CREATE: I,
   GUILD_DELETE: T,
-  GUILD_MEMBERS_CHUNK_BATCH: N,
+  GUILD_MEMBERS_CHUNK_BATCH: C,
   GUILD_MEMBER_ADD: S,
   GUILD_MEMBER_UPDATE: S,
-  GUILD_MEMBER_UPDATE_LOCAL: C,
+  GUILD_MEMBER_UPDATE_LOCAL: N,
   GUILD_MEMBER_REMOVE: R,
   GUILD_ROLE_UPDATE: P,
   GUILD_ROLE_DELETE: P,
-  GUILD_MEMBER_PROFILE_UPDATE: k,
+  GUILD_MEMBER_PROFILE_UPDATE: M,
   GUILD_ROLE_MEMBER_REMOVE: w,
   GUILD_ROLE_MEMBER_ADD: w,
   THREAD_MEMBER_LIST_UPDATE: D,
-  THREAD_MEMBERS_UPDATE: L,
-  LOAD_ARCHIVED_THREADS_SUCCESS: x,
-  LOAD_FORUM_POSTS: M,
+  THREAD_MEMBERS_UPDATE: x,
+  LOAD_ARCHIVED_THREADS_SUCCESS: L,
+  LOAD_FORUM_POSTS: j,
   INITIALIZE_MEMBER_SAFETY_STORE: H,
   MEMBER_SAFETY_NEW_MEMBER_TIMESTAMP_REFRESH: Y,
   MEMBER_SAFETY_PAGINATION_UPDATE: W,

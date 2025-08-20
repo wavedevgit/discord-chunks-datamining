@@ -1,12 +1,13 @@
-/** Chunk was on 26434 **/
-/** chunk id: 365206, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 365206, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => f
+  Z: () => y
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk871230 = require("./871230.js"),
   Chunk481060 = require("./481060.js"),
   Chunk839963 = require("./839963.js"),
@@ -14,7 +15,49 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk33470 = require("./33470.js");
 
-function p(e) {
+function f(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function _(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      f(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function p(e, t) {
+  if (null == e) return {};
+  var n, r, i = h(e, t);
+  if (Object.getOwnPropertySymbols) {
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+  }
+  return i
+}
+
+function h(e, t) {
+  if (null == e) return {};
+  var n, r, i = {},
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+  return i
+}
+let m = 40,
+  g = 18;
+
+function E(e) {
   let {
     didSelfVote: t,
     label: n,
@@ -24,11 +67,11 @@ function p(e) {
     className: d.votesData,
     children: [t && (0, r.jsx)(o.T, {
       children: u.intl.string(u.t["8DAM+/"])
-    }), (0, r.jsxs)(a.Text, {
+    }), (0, r.jsxs)(s.Text, {
       variant: "text-md/semibold",
       color: "none",
       children: [i, "%"]
-    }), (0, r.jsx)(a.Text, {
+    }), (0, r.jsx)(s.Text, {
       variant: "text-xs/semibold",
       color: "none",
       children: n
@@ -36,36 +79,36 @@ function p(e) {
   })
 }
 
-function m(e) {
+function b(e) {
   let {
     answer: t,
     isExpired: n,
     myAvatarUrl: i,
     canShowVoteCounts: o
-  } = e, a = true === t.isSelected, s = true === t.didSelfVote, u = true === t.isVictor;
+  } = e, s = true === t.isSelected, l = true === t.didSelfVote, u = true === t.isVictor;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.$w, {
-      attachmentClassName: l()(d.attachment, {
+      attachmentClassName: a()(d.attachment, {
         [d.attachmentWithResults]: o
       }),
       emojiClassName: d.emoji,
       media: t.pollMedia,
       fallback: (0, r.jsx)("div", {
-        className: l()(d.attachment, d.mediaMissing)
+        className: a()(d.attachment, d.mediaMissing)
       })
-    }), a && (0, r.jsx)(c.ZY, {
-      size: 40,
+    }), s && (0, r.jsx)(c.ZY, {
+      size: m,
       isVictor: u,
       isExpired: n,
       className: d.selectedIcon
     }), o && (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(p, {
-        didSelfVote: s,
+      children: [(0, r.jsx)(E, {
+        didSelfVote: l,
         percentage: t.votesPercentage,
         label: t.votes,
-        myAvatarUrl: s ? i : true
-      }), (!n && s || u) && (0, r.jsx)(c.ZY, {
-        size: 18,
+        myAvatarUrl: l ? i : true
+      }), (!n && l || u) && (0, r.jsx)(c.ZY, {
+        size: g,
         isVictor: u,
         isExpired: n,
         className: d.pollAnswerIcon
@@ -74,57 +117,26 @@ function m(e) {
   })
 }
 
-function f(e) {
+function y(e) {
   var {
     isExpired: t,
     myAvatarUrl: n,
     answersInteraction: i,
     canShowVoteCounts: o
-  } = e, a = function(e, t) {
-    if (null == e) return {};
-    var n, r, i = function(e, t) {
-      if (null == e) return {};
-      var n, r, i = {},
-        l = Object.keys(e);
-      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-      return i
-    }(e, t);
-    if (Object.getOwnPropertySymbols) {
-      var l = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
-    }
-    return i
-  }(e, ["isExpired", "myAvatarUrl", "answersInteraction", "canShowVoteCounts"]);
-  return (0, r.jsx)(c.$e, function(e) {
-    for (var t = 1; t < arguments.length; t++) {
-      var n = null != arguments[t] ? arguments[t] : {},
-        r = Object.keys(n);
-      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-        return Object.getOwnPropertyDescriptor(n, e).enumerable
-      }))), r.forEach(function(t) {
-        var r;
-        r = n[t], t in e ? Object.defineProperty(e, t, {
-          value: r,
-          enumerable: true,
-          configurable: true,
-          writable: true
-        }) : e[t] = r
-      })
-    }
-    return e
-  }({
+  } = e, s = p(e, ["isExpired", "myAvatarUrl", "answersInteraction", "canShowVoteCounts"]);
+  return (0, r.jsx)(c.$e, _({
     className: d.answersContainer,
-    answerClassName: l()(d.answer, {
-      [d.currentlyVoting]: i !== s.Y7.LIST
+    answerClassName: a()(d.answer, {
+      [d.currentlyVoting]: i !== l.Y7.LIST
     }),
     myAvatarUrl: n,
     answersInteraction: i,
-    renderAnswerContent: e => (0, r.jsx)(m, {
+    renderAnswerContent: e => (0, r.jsx)(b, {
       answer: e,
       isExpired: t,
       myAvatarUrl: n,
       answersInteraction: i,
       canShowVoteCounts: o
     })
-  }, a))
+  }, s))
 }

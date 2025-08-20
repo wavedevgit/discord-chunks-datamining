@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   E: () => w,
-  Y: () => C
+  Y: () => N
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -88,13 +88,13 @@ let S = {
     sm: "xs",
     md: "refresh_sm"
   },
-  N = {
+  C = {
     xs: "sm",
     sm: "sm",
     md: "md"
   };
 
-function C(e) {
+function N(e) {
   var t, n, {
       role: a = "button",
       variant: s = "primary",
@@ -104,20 +104,20 @@ function C(e) {
       iconPosition: O = "start",
       iconOpticalOffsetMargin: T = 0,
       fullWidth: A = false,
-      focusProps: N,
-      loading: C,
+      focusProps: C,
+      loading: N,
       loadingStartedLabel: D,
-      loadingFinishedLabel: L,
-      rounded: x = false,
-      type: M = "button",
-      rel: k,
-      onClick: j,
+      loadingFinishedLabel: x,
+      rounded: L = false,
+      type: j = "button",
+      rel: M,
+      onClick: k,
       onDoubleClick: U,
       onMouseEnter: G,
       onMouseLeave: B,
-      onMouseUp: V,
-      onMouseDown: F,
-      onKeyDown: Z,
+      onMouseUp: Z,
+      onMouseDown: V,
+      onKeyDown: F,
       disabled: H,
       className: Y,
       style: W,
@@ -143,11 +143,11 @@ function C(e) {
     ei = (0, p.a)((0, h.ZP)()),
     ea = i.useRef(false);
   i.useEffect(() => {
-    true === C && (ea.current = true, l.u.announce(null != D ? D : m.intl.string(m.t.A11Y_LOADING_STARTED))), false === C && true === ea.current && (l.u.announce(null != L ? L : m.intl.string(m.t.A11Y_LOADING_FINISHED)), ea.current = false)
-  }, [C, D, L]);
+    true === N && (ea.current = true, l.u.announce(null != D ? D : m.intl.string(m.t.A11Y_LOADING_STARTED))), false === N && true === ea.current && (l.u.announce(null != x ? x : m.intl.string(m.t.A11Y_LOADING_FINISHED)), ea.current = false)
+  }, [N, D, x]);
   let eo = (0, r.jsxs)("div", {
       className: o()(E.buttonChildren, {
-        [E.loading]: C
+        [E.loading]: N
       }),
       children: [null != et && "start" === O && et, J && (0, r.jsx)(_.x, {
         tag: "span",
@@ -157,25 +157,25 @@ function C(e) {
         children: f
       }), null != et && "end" === O && et]
     }),
-    es = H || C,
-    el = (0, r.jsx)(u.t, v(y({}, N), {
+    es = H || N,
+    el = (0, r.jsx)(u.t, v(y({}, C), {
       children: (0, r.jsxs)("button", v(y({
         "data-mana-component": "button",
         role: a,
-        "aria-busy": C,
+        "aria-busy": N,
         className: o()(E.button, E[X], E[s], {
           [E.hasText]: J,
           [E.fullWidth]: Q,
-          [E.rounded]: x
+          [E.rounded]: L
         }),
         ref: ee,
-        rel: k,
-        type: M,
-        onClick: es ? e => e.preventDefault() : j,
+        rel: M,
+        type: j,
+        onClick: es ? e => e.preventDefault() : k,
         onDoubleClick: es ? e => e.preventDefault() : U,
-        onMouseUp: es ? true : V,
-        onMouseDown: es ? true : F,
-        onKeyDown: es ? true : Z,
+        onMouseUp: es ? true : Z,
+        onMouseDown: es ? true : V,
+        onKeyDown: es ? true : F,
         onMouseEnter: es ? true : G,
         onMouseLeave: es ? true : B,
         disabled: H
@@ -185,11 +185,11 @@ function C(e) {
           buttonRef: ee,
           isLightMode: ei,
           disabled: H
-        }), null == C ? (0, r.jsx)("div", {
+        }), null == N ? (0, r.jsx)("div", {
           className: E.buttonChildrenWrapper,
           children: eo
         }) : (0, r.jsx)(R, {
-          loading: C,
+          loading: N,
           size: X,
           children: eo
         })]
@@ -328,7 +328,7 @@ function w(e) {
     } else if ("sticker" === t.type) {
       let e = t.component;
       u = (0, r.jsx)(e, {
-        size: s.Z[N[o]],
+        size: s.Z[C[o]],
         sticker: t.asset,
         isInteracting: f
       })

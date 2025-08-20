@@ -49,8 +49,8 @@ function I(e) {
 let T = 8,
   S = 4,
   A = 4,
-  N = 40,
-  C = 6;
+  C = 40,
+  N = 6;
 
 function R(e, t) {
   return (0, r.jsx)(f.Z, {
@@ -77,7 +77,7 @@ let D = {
     let a = r.allowSoundmoji && (0, o.dX)({
         location: "queryResults"
       }),
-      s = r.allowStickers || a ? 0 : N,
+      s = r.allowStickers || a ? 0 : C,
       u = b.rnv + s,
       {
         emojis: {
@@ -107,7 +107,7 @@ let D = {
     a && (_ = h.ZP.querySoundmoji(n, e).map(e => ({
       sound: e
     })).slice(0, A), "-" === n[0] && (_ = _.filter(e => e.sound.name === n)));
-    let p = d.slice(0, Math.max(C, u - f.length - _.length));
+    let p = d.slice(0, Math.max(N, u - f.length - _.length));
     return {
       results: {
         emojis: p,

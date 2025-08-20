@@ -1,10 +1,11 @@
-/** Chunk was on 66181 **/
-/** chunk id: 675997, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 675997, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => s,
-  l: () => r
+  Z: () => a,
+  l: () => i
 });
-let i = (0, require("./427164.js").le)({
+let r = (0, require("./427164.js").le)({
     name: "2025-08-collectibles-shop-takeover",
     kind: "user",
     defaultConfig: {
@@ -19,7 +20,7 @@ let i = (0, require("./427164.js").le)({
       }
     }
   }),
-  r = e => i.getConfig({
+  i = e => r.getConfig({
     location: e
   }).enableShopTakeOver,
-  s = i
+  a = r

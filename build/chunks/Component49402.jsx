@@ -86,12 +86,12 @@ function m(e, t, n) {
     } = u, S = p(u, ["children", "className", "dir", "orientation", "fade", "customTheme", "paddingFix", "style", "gap", "experimental_useStack"]);
     let {
       scrollerRef: A,
-      getScrollerState: N
-    } = (0, c.Ke)(), C = (0, c.t2)(A, E);
+      getScrollerState: C
+    } = (0, c.Ke)(), N = (0, c.t2)(A, E);
     i.useImperativeHandle(f, () => d({
       getScrollerNode: () => A.current,
-      getScrollerState: N
-    }, (0, c.Ue)(A, N, C, E)), [A, N, E, C]);
+      getScrollerState: C
+    }, (0, c.Ue)(A, C, N, E)), [A, C, E, N]);
     let R = (0, c.tT)({
       paddingFix: O,
       orientation: E,

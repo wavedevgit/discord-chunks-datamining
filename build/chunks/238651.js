@@ -2,10 +2,10 @@
 /** chunk id: 238651, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ji: () => L,
+  Ji: () => x,
   O_: () => w,
   qA: () => c,
-  uR: () => x
+  uR: () => L
 });
 var Chunk647438 = require("./647438.js"),
   Chunk772848 = require("./772848.js");
@@ -378,7 +378,7 @@ function A(e) {
   }))
 }
 
-function N(e) {
+function C(e) {
   return function(e) {
     switch (e.type) {
       case "static":
@@ -421,7 +421,7 @@ function N(e) {
   }))
 }
 
-function C(e) {
+function N(e) {
   return function(e) {
     switch (e.type) {
       case "static":
@@ -493,13 +493,13 @@ function R(e, t, n, r, i) {
     }(null != r ? r : c, i, n);
   return new s({
     id: e,
-    position: N(a.position),
-    velocity: N(a.velocity),
-    rotation: C(a.rotation),
-    dragCoefficient: N(a.dragCoefficient),
-    size: N(a.size),
+    position: C(a.position),
+    velocity: C(a.velocity),
+    rotation: N(a.rotation),
+    dragCoefficient: C(a.dragCoefficient),
+    size: C(a.size),
     opacity: A(a.opacity),
-    airResistanceArea: N(a.airResistanceArea),
+    airResistanceArea: C(a.airResistanceArea),
     spriteX: d * n.spriteWidth + 2 * d,
     spriteY: u * n.spriteHeight + 2 * u,
     spriteWidth: n.spriteWidth,
@@ -562,8 +562,8 @@ var w = Chunk647438.forwardRef(function(e, t) {
       T = O.removeReadyListener,
       S = O.setIsReady,
       A = r.useRef(new Map),
-      N = r.useRef(null),
-      C = r.useRef(0),
+      C = r.useRef(null),
+      N = r.useRef(0),
       w = r.useRef(0),
       D = r.useCallback(function() {
         var e = y.current;
@@ -574,46 +574,46 @@ var w = Chunk647438.forwardRef(function(e, t) {
               var i = n.confetti,
                 a = n.spriteCanvas;
               i.update(s), i.draw(a, t), i.shouldDestroy(e, s) && A.current.delete(r)
-            }), null == p || p(t), A.current.size > 0 ? N.current = m(D) : (t.clearRect(0, 0, e.width, e.height), N.current = null);
+            }), null == p || p(t), A.current.size > 0 ? C.current = m(D) : (t.clearRect(0, 0, e.width, e.height), C.current = null);
             var n = Date.now();
-            0 !== C.current && (w.current = 1e3 / (n - C.current)), C.current = n
+            0 !== N.current && (w.current = 1e3 / (n - N.current)), N.current = n
           }
         }
       }, [s, p, _, m]);
     r.useEffect(function() {
-      null != N.current && (E(N.current), N.current = m(D))
+      null != C.current && (E(C.current), C.current = m(D))
     }, [E, D, m]);
-    var L = r.useCallback(function(e, t) {
+    var x = r.useCallback(function(e, t) {
         A.current.set(e.id, {
           confetti: e,
           spriteCanvas: t
-        }), null == N.current && D()
+        }), null == C.current && D()
       }, [D]),
-      x = r.useCallback(function(e, t, n, r, a) {
+      L = r.useCallback(function(e, t, n, r, a) {
         var o, s = R(null != (o = e.id) ? o : (0, i.Z)(), e, n, r, a);
-        return L(s, t), s
-      }, [L]),
-      M = r.useCallback(function(e) {
+        return x(s, t), s
+      }, [x]),
+      j = r.useCallback(function(e) {
         A.current.delete(e)
       }, []),
-      k = r.useCallback(function() {
+      M = r.useCallback(function() {
         return A.current.clear()
       }, []),
-      j = r.useCallback(function() {
+      k = r.useCallback(function() {
         return y.current
       }, []);
     r.useImperativeHandle(t, function() {
       return {
-        createConfetti: x,
-        addConfetti: L,
-        deleteConfetti: M,
-        clearConfetti: k,
-        getCanvas: j,
+        createConfetti: L,
+        addConfetti: x,
+        deleteConfetti: j,
+        clearConfetti: M,
+        getCanvas: k,
         addReadyListener: I,
         removeReadyListener: T,
         isReady: v
       }
-    }, [x, L, M, k, j, I, T, v]);
+    }, [L, x, j, M, k, I, T, v]);
     var U = r.useCallback(function(e, t) {
         var n, r, i = t.clickHandler,
           o = t.mouseHandler;
@@ -669,12 +669,12 @@ var w = Chunk647438.forwardRef(function(e, t) {
           clickHandler: c
         })
       }, [U, c]),
-      V = r.useCallback(function(e) {
+      Z = r.useCallback(function(e) {
         return U(e, {
           mouseHandler: u
         })
       }, [U, u]),
-      F = r.useCallback(function(e) {
+      V = r.useCallback(function(e) {
         return U(e, {
           mouseHandler: d
         })
@@ -683,11 +683,11 @@ var w = Chunk647438.forwardRef(function(e, t) {
       var e = function(e, t, n) {
         null != n && window.addEventListener(e, t)
       };
-      return e("click", G, l), e("mousedown", B, c), e("mousemove", V, u), e("mouseup", F, d),
+      return e("click", G, l), e("mousedown", B, c), e("mousemove", Z, u), e("mouseup", V, d),
         function() {
-          window.removeEventListener("click", G), window.removeEventListener("mousedown", B), window.removeEventListener("mousemove", V), window.removeEventListener("mouseup", V)
+          window.removeEventListener("click", G), window.removeEventListener("mousedown", B), window.removeEventListener("mousemove", Z), window.removeEventListener("mouseup", Z)
         }
-    }, [G, B, V, F, l, c, u, d]), r.useEffect(function() {
+    }, [G, B, Z, V, l, c, u, d]), r.useEffect(function() {
       var e = y.current,
         t = new ResizeObserver(function() {
           ! function(e) {
@@ -715,7 +715,7 @@ var w = Chunk647438.forwardRef(function(e, t) {
     height: 0,
     left: "-100%"
   },
-  L = Chunk647438.forwardRef(function(e, t) {
+  x = Chunk647438.forwardRef(function(e, t) {
     var n = e.className,
       i = e.visible,
       a = true !== i && i,
@@ -826,7 +826,7 @@ var w = Chunk647438.forwardRef(function(e, t) {
     })
   });
 
-function x(e, t) {
+function L(e, t) {
   var n, i, a = r.useState(null != (n = null == t ? true : t.isReady) && n),
     o = a[0],
     s = a[1],

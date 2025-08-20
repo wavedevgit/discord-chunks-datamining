@@ -1,5 +1,5 @@
-/** Chunk was on 62292 **/
-/** chunk id: 202722, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 83691 **/
+/** chunk id: 202722, original params: e,n,t (module,exports,require) **/
 module.exports = {
   footer: "footer__6be55",
   guildRow: "guildRow__6be55",

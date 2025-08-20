@@ -1,12 +1,13 @@
-/** Chunk was on 66181 **/
-/** chunk id: 177508, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 177508, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => el
+  Z: () => ed
 }), require("./704826.js"), require("./35282.js"), require("./388685.js"), require("./361932.js"), require("./187205.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   Chunk971809 = require("./971809.js"),
   Chunk442837 = require("./442837.js"),
@@ -50,53 +51,78 @@ var Chunk951288 = require("./951288.js"),
   Chunk315416 = require("./315416.js"),
   Chunk715720 = require("./715720.js");
 
-function q(e) {
+function q(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function X(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      i = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), i.forEach(function(t) {
-      var i;
-      i = n[t], t in e ? Object.defineProperty(e, t, {
-        value: i,
-        enumerable: true,
-        configurable: true,
-        writable: true
-      }) : e[t] = i
+    }))), r.forEach(function(t) {
+      q(e, t, n[t])
     })
   }
   return e
 }
 
-function X(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-      var i = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, i)
-    }
-    return n
-  })(Object(t)).forEach(function(n) {
+function Q(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function J(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : Q(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function J() {
+function $(e, t) {
+  if (null == e) return {};
+  var n, r, i = ee(e, t);
+  if (Object.getOwnPropertySymbols) {
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+  }
+  return i
+}
+
+function ee(e, t) {
+  if (null == e) return {};
+  var n, r, i = {},
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+  return i
+}
+
+function et() {
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk726927.root,
-    children: [(0, Chunk951288.jsx)(Q, {}), (0, Chunk951288.jsx)(ec, {}), (0, Chunk951288.jsx)(eb, {}), (0, Chunk951288.jsx)(ex, {}), (0, Chunk951288.jsx)(ef, {}), (0, Chunk951288.jsx)(eg, {}), (0, Chunk951288.jsx)(eh, {}), (0, Chunk951288.jsx)(ep, {}), (0, Chunk951288.jsx)(em, {}), (0, Chunk951288.jsx)(eN, {}), (0, Chunk951288.jsx)(eI, {}), (0, Chunk951288.jsx)($, {}), (0, Chunk951288.jsx)(eA, {})]
+    children: [(0, Chunk951288.jsx)(en, {}), (0, Chunk951288.jsx)(e_, {}), (0, Chunk951288.jsx)(eO, {}), (0, Chunk951288.jsx)(ev, {}), (0, Chunk951288.jsx)(ey, {}), (0, Chunk951288.jsx)(eE, {}), (0, Chunk951288.jsx)(eb, {}), (0, Chunk951288.jsx)(eg, {}), (0, Chunk951288.jsx)(em, {}), (0, Chunk951288.jsx)(ew, {}), (0, Chunk951288.jsx)(eD, {}), (0, Chunk951288.jsx)(er, {}), (0, Chunk951288.jsx)(eL, {})]
   })
 }
 
-function Q() {
+function en() {
   let e = (0, Chunk580747.Z)("highlight_mana_components");
   return (0, Chunk951288.jsx)(Chunk481060.hjN, {
     title: "Design System Controls",
     children: (0, Chunk951288.jsx)(Chunk481060.xJW, {
       children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
         value: module,
-        onChange: e => (0, R.Z)("highlight_mana_components", e),
+        onChange: e => (0, D.Z)("highlight_mana_components", e),
         note: "Highlights all mana components marked with data-mana-component",
         hideBorder: true,
         children: "Highlight Mana Components"
@@ -105,7 +131,7 @@ function Q() {
   })
 }
 
-function $() {
+function er() {
   let e = Object.keys(Chunk481060.DM8);
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk726927.section,
@@ -114,57 +140,57 @@ function $() {
       children: "Notice"
     }), (0, Chunk951288.jsx)(Chunk481060.Kqy, {
       gap: 16,
-      children: module.map(e => (0, i.jsx)(N.qXd, {
-        color: N.DM8[e],
-        children: (0, i.jsxs)("code", {
+      children: module.map(e => (0, r.jsx)(C.qXd, {
+        color: C.DM8[e],
+        children: (0, r.jsxs)("code", {
           children: ["NoticeColors.", e]
         })
       }, e))
     })]
   })
 }
-let ee = ["neutral", "blue_new", "blurple", "green_new", "red_new", "teal_new", "yellow_new", "orange_new", "pink", "purple"],
-  et = ["background-surface-highest", "background-surface-higher", "background-surface-high", "background-base-low", "background-base-lower", "background-base-lowest"],
-  en = ["background-gradient-lowest", "background-gradient-lower", "background-gradient-low", "background-gradient-high", "background-gradient-higher", "background-gradient-highest"],
-  ei = ["", "background-mod-subtle", "background-mod-normal", "background-mod-strong"],
-  er = ["critical", "warning", "positive", "info"],
-  es = ["text-default", "text-primary", "text-secondary", "text-tertiary", "text-feedback-critical", "text-feedback-warning", "text-feedback-positive", "text-feedback-info", "premium-nitro-pink-text"];
+let ei = ["neutral", "blue_new", "blurple", "green_new", "red_new", "teal_new", "yellow_new", "orange_new", "pink", "purple"],
+  ea = ["background-surface-highest", "background-surface-higher", "background-surface-high", "background-base-low", "background-base-lower", "background-base-lowest"],
+  eo = ["background-gradient-lowest", "background-gradient-lower", "background-gradient-low", "background-gradient-high", "background-gradient-higher", "background-gradient-highest"],
+  es = ["", "background-mod-subtle", "background-mod-normal", "background-mod-strong"],
+  el = ["critical", "warning", "positive", "info"],
+  ec = ["text-default", "text-primary", "text-secondary", "text-tertiary", "text-feedback-critical", "text-feedback-warning", "text-feedback-positive", "text-feedback-info", "premium-nitro-pink-text"];
 
-function ea() {
-  let e = (0, Chunk442837.e7)([Chunk514361.Z], () => Chunk514361.Z.gradientPreset);
+function eu() {
+  let e = null !== (0, Chunk442837.e7)([Chunk514361.Z], () => Chunk514361.Z.gradientPreset);
   return (0, Chunk951288.jsxs)("div", {
     children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
       variant: "heading-xl/semibold",
       className: Chunk726927.heading,
       children: "Background Colors"
-    }), et.map(e => (0, i.jsxs)("div", {
-      className: G.palette,
+    }), ea.map(e => (0, r.jsxs)("div", {
+      className: V.palette,
       style: {
         backgroundColor: "var(--".concat(e, ")"),
         padding: 24
       },
-      children: [(0, i.jsx)(N.Text, {
+      children: [(0, r.jsx)(C.Text, {
         variant: "text-md/medium",
         children: e
-      }), (0, i.jsx)("div", {
+      }), (0, r.jsx)("div", {
         style: {
           display: "grid",
           gap: 8,
           gridTemplateColumns: "repeat(3, 1fr)"
         },
-        children: ei.map(e => (0, i.jsxs)("div", {
-          className: G.color,
+        children: es.map(e => (0, r.jsxs)("div", {
+          className: V.color,
           style: {
             padding: 16,
             background: "var(--".concat(e, ")")
           },
-          children: [(0, i.jsx)(N.Text, {
+          children: [(0, r.jsx)(C.Text, {
             variant: "text-xs/semibold",
             color: "header-secondary",
             children: e
-          }), (0, i.jsx)("hr", {
-            className: G.sectionDivider
-          }), es.map(e => (0, i.jsx)(N.Text, {
+          }), (0, r.jsx)("hr", {
+            className: V.sectionDivider
+          }), ec.map(e => (0, r.jsx)(C.Text, {
             variant: "text-xs/medium",
             style: {
               color: "var(--".concat(e, ")")
@@ -172,33 +198,33 @@ function ea() {
             children: e
           }, e))]
         }, e))
-      }), (0, i.jsx)("hr", {
-        className: G.sectionDivider
-      }), (0, i.jsx)("div", {
+      }), (0, r.jsx)("hr", {
+        className: V.sectionDivider
+      }), (0, r.jsx)("div", {
         style: {
           display: "grid",
           gap: 8,
           gridTemplateColumns: "repeat(3, 1fr)"
         },
-        children: er.map(e => {
+        children: el.map(e => {
           let t = "var(--text-feedback-".concat(e, ")");
-          return (0, i.jsxs)("div", {
-            className: G.color,
+          return (0, r.jsxs)("div", {
+            className: V.color,
             style: {
               padding: 16,
               background: "var(--background-feedback-".concat(e, ")")
             },
-            children: [(0, i.jsx)(N.Text, {
+            children: [(0, r.jsx)(C.Text, {
               variant: "text-xs/semibold",
               color: "header-secondary"
-            }), (0, i.jsxs)(N.Kqy, {
-              children: [(0, i.jsxs)(N.Text, {
+            }), (0, r.jsxs)(C.Kqy, {
+              children: [(0, r.jsxs)(C.Text, {
                 variant: "text-xs/semibold",
                 style: {
                   color: t
                 },
                 children: ["background-feedback-", e]
-              }), (0, i.jsx)(N.Text, {
+              }), (0, r.jsx)(C.Text, {
                 variant: "text-xs/normal",
                 style: {
                   color: t
@@ -209,7 +235,7 @@ function ea() {
           }, e)
         })
       })]
-    }, e)), null !== module && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+    }, e)), module && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
         variant: "heading-xl/semibold",
         className: Chunk726927.heading,
@@ -221,13 +247,13 @@ function ea() {
           gridTemplateColumns: "repeat(6, 1fr)",
           transform: "translateZ(0)"
         },
-        children: en.map(e => (0, i.jsx)("div", {
-          className: G.palette,
+        children: eo.map(e => (0, r.jsx)("div", {
+          className: V.palette,
           style: {
             background: "var(--".concat(e, ")"),
             height: 400
           },
-          children: (0, i.jsx)(N.Text, {
+          children: (0, r.jsx)(C.Text, {
             variant: "text-xs/medium",
             children: e
           })
@@ -237,23 +263,23 @@ function ea() {
       variant: "heading-xl/semibold",
       className: Chunk726927.heading,
       children: "Scales"
-    }), ee.map(e => (0, i.jsxs)("div", {
-      className: G.palette,
-      children: [(0, i.jsx)(N.Text, {
+    }), ei.map(e => (0, r.jsxs)("div", {
+      className: V.palette,
+      children: [(0, r.jsx)(C.Text, {
         variant: "text-lg/semibold",
         children: e
-      }), (0, i.jsx)("div", {
-        className: G.colors,
+      }), (0, r.jsx)("div", {
+        className: V.colors,
         children: Array.from({
           length: 100
-        }, (t, n) => (0, i.jsx)("div", {
-          className: G.color,
+        }, (t, n) => (0, r.jsx)("div", {
+          className: V.color,
           style: {
             background: "var(--".concat(e.replace("_", "-"), "-").concat(n + 1, ")")
           },
-          children: (0, i.jsx)(N.f6W, {
+          children: (0, r.jsx)(C.f6W, {
             theme: n < 50 ? "light" : "dark",
-            children: t => (0, i.jsxs)(N.Text, {
+            children: t => (0, r.jsxs)(C.Text, {
               className: t,
               variant: "text-xs/medium",
               children: [e, ".", n + 1]
@@ -265,18 +291,18 @@ function ea() {
   })
 }
 
-function el() {
+function ed() {
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsx)(Chunk526156.Z, {
       parentSetting: Chunk726985.s6.DESIGN_SYSTEMS,
       settingsSection: Chunk981631.oAB.DESIGN_SYSTEMS,
       tabs: [{
         title: "Components",
-        component: () => (0, Chunk951288.jsx)(J, {}),
+        component: () => (0, Chunk951288.jsx)(et, {}),
         setting: Chunk726985.s6.DESIGN_SYSTEMS_COMPONENTS
       }, {
         title: "Colors",
-        component: () => (0, Chunk951288.jsx)(ea, {}),
+        component: () => (0, Chunk951288.jsx)(eu, {}),
         setting: Chunk726985.s6.DESIGN_SYSTEMS_COLORS
       }, {
         title: "Animations",
@@ -303,65 +329,51 @@ function el() {
   })
 }
 
-function eo(e) {
+function ef(e) {
   var {
     component: t,
     showLoadingAnimation: n
-  } = e, s = function(e, t) {
-    if (null == e) return {};
-    var n, i, r = function(e, t) {
-      if (null == e) return {};
-      var n, i, r = {},
-        s = Object.keys(e);
-      for (i = 0; i < s.length; i++) n = s[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
-      return r
-    }(e, t);
-    if (Object.getOwnPropertySymbols) {
-      var s = Object.getOwnPropertySymbols(e);
-      for (i = 0; i < s.length; i++) n = s[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
-    }
-    return r
-  }(e, ["component", "showLoadingAnimation"]);
-  let [a, l] = r.useState(false), o = r.useRef(false);
-  return r.useEffect(() => (a && n && (o.current = setTimeout(() => {
-    l(false)
+  } = e, a = $(e, ["component", "showLoadingAnimation"]);
+  let [o, s] = i.useState(false), l = i.useRef(false);
+  return i.useEffect(() => (o && n && (l.current = setTimeout(() => {
+    s(false)
   }, 3e3)), () => {
-    o.current >= 0 && clearTimeout(o.current)
-  }), [a, n]), (0, i.jsx)(t, X(q({}, s), {
-    loading: n ? a : true,
-    onClick: () => l(!a)
+    l.current >= 0 && clearTimeout(l.current)
+  }), [o, n]), (0, r.jsx)(t, J(X({}, a), {
+    loading: n ? o : true,
+    onClick: () => s(!o)
   }))
 }
 
-function ec() {
-  let [e, t] = Chunk647438.useState("md"), [n, s] = Chunk647438.useState("start"), [a, o] = Chunk647438.useState(true), c = ["primary", "secondary", "critical-primary", "critical-secondary", "active", "overlay-primary", "overlay-secondary"], d = [...Chunk442837, "expressive"].map(t => (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(eo, {
-      component: u.z,
+function e_() {
+  let [e, t] = Chunk647438.useState("md"), [n, a] = Chunk647438.useState("start"), [o, l] = Chunk647438.useState(true), c = ["primary", "secondary", "critical-primary", "critical-secondary", "active", "overlay-primary", "overlay-secondary"], u = [...Chunk442837, "expressive"].map(t => (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(ef, {
+      component: d.z,
       variant: t,
-      text: "".concat((0, l.capitalize)(t), " ").concat(e.toUpperCase()),
+      text: "".concat((0, s.capitalize)(t), " ").concat(e.toUpperCase()),
       size: e,
-      icon: "none" !== n ? N.gw7 : true,
+      icon: "none" !== n ? C.gw7 : true,
       iconPosition: n,
-      showLoadingAnimation: a
-    }, t + e), (0, i.jsx)(eo, {
-      component: u.z,
+      showLoadingAnimation: o
+    }, t + e), (0, r.jsx)(ef, {
+      component: d.z,
       variant: t,
-      text: "".concat((0, l.capitalize)(t), " ").concat(e.toUpperCase()),
+      text: "".concat((0, s.capitalize)(t), " ").concat(e.toUpperCase()),
       size: e,
-      icon: "none" !== n ? N.gw7 : true,
+      icon: "none" !== n ? C.gw7 : true,
       iconPosition: n,
-      showLoadingAnimation: a,
+      showLoadingAnimation: o,
       disabled: true
     }, t + e + "disabled")]
-  })), g = [...Chunk442837, "icon-only"].map(t => (0, i.jsx)(eo, {
-    component: p.h,
+  })), p = [...Chunk442837, "icon-only"].map(t => (0, r.jsx)(ef, {
+    component: _.h,
     variant: t,
-    icon: N.gw7,
+    icon: C.gw7,
     size: e,
     "aria-label": "".concat(t, " ").concat(e),
-    showLoadingAnimation: a
-  }, t + e)), f = ["primary", "secondary", "always-white", "critical"].map(e => (0, i.jsx)(r.Fragment, {
-    children: (0, i.jsx)(h.A, {
+    showLoadingAnimation: o
+  }, t + e)), m = ["primary", "secondary", "always-white", "critical"].map(e => (0, r.jsx)(i.Fragment, {
+    children: (0, r.jsx)(h.A, {
       variant: e,
       text: "Text button"
     })
@@ -371,7 +383,7 @@ function ec() {
     children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
       variant: "heading-xl/semibold",
       children: "Buttons"
-    }), (0, Chunk951288.jsxs)(eu, {
+    }), (0, Chunk951288.jsxs)(eh, {
       title: "Button Options",
       children: [(0, Chunk951288.jsx)(Chunk481060.xJW, {
         title: "Button size",
@@ -398,7 +410,7 @@ function ec() {
             let {
               value: t
             } = e;
-            return s(t)
+            return a(t)
           },
           options: [{
             value: "none",
@@ -419,7 +431,7 @@ function ec() {
             let {
               value: t
             } = e;
-            return o("on" === t)
+            return l("on" === t)
           },
           options: [{
             value: "off",
@@ -428,7 +440,7 @@ function ec() {
             value: "on",
             name: "On"
           }],
-          value: a ? "on" : "off"
+          value: o ? "on" : "off"
         })
       })]
     }), (0, Chunk951288.jsxs)("div", {
@@ -456,30 +468,30 @@ function ec() {
           gap: 16,
           children: [(0, Chunk951288.jsxs)(Chunk374415.h, {
             size: module,
-            children: [(0, Chunk951288.jsx)(eo, {
+            children: [(0, Chunk951288.jsx)(ef, {
               component: Chunk680018.z,
               variant: "secondary",
               text: "Cancel",
-              showLoadingAnimation: a
-            }), (0, Chunk951288.jsx)(eo, {
+              showLoadingAnimation: o
+            }), (0, Chunk951288.jsx)(ef, {
               component: Chunk680018.z,
               variant: "primary",
               text: "Submit",
-              showLoadingAnimation: a
+              showLoadingAnimation: o
             })]
           }), (0, Chunk951288.jsxs)(Chunk374415.h, {
             size: module,
-            children: [(0, Chunk951288.jsx)(eo, {
+            children: [(0, Chunk951288.jsx)(ef, {
               component: Chunk680018.z,
               variant: "primary",
               text: "Submit",
-              showLoadingAnimation: a
-            }), (0, Chunk951288.jsx)(eo, {
+              showLoadingAnimation: o
+            }), (0, Chunk951288.jsx)(ef, {
               component: Chunk861066.h,
               variant: "secondary",
               icon: Chunk481060.gw7,
               "aria-label": "Clyde",
-              showLoadingAnimation: a
+              showLoadingAnimation: o
             })]
           })]
         }), (0, Chunk951288.jsx)(Chunk481060.Kqy, {
@@ -487,16 +499,16 @@ function ec() {
           children: (0, Chunk951288.jsxs)(Chunk374415.h, {
             size: module,
             fullWidth: true,
-            children: [(0, Chunk951288.jsx)(eo, {
+            children: [(0, Chunk951288.jsx)(ef, {
               component: Chunk680018.z,
               variant: "secondary",
               text: "Cancel",
-              showLoadingAnimation: a
-            }), (0, Chunk951288.jsx)(eo, {
+              showLoadingAnimation: o
+            }), (0, Chunk951288.jsx)(ef, {
               component: Chunk680018.z,
               variant: "primary",
               text: "Submit",
-              showLoadingAnimation: a
+              showLoadingAnimation: o
             })]
           })
         })]
@@ -511,16 +523,16 @@ function ec() {
           children: (0, Chunk951288.jsxs)(Chunk374415.h, {
             direction: "vertical",
             size: module,
-            children: [(0, Chunk951288.jsx)(eo, {
+            children: [(0, Chunk951288.jsx)(ef, {
               component: Chunk680018.z,
               variant: "secondary",
               text: "Cancel",
-              showLoadingAnimation: a
-            }), (0, Chunk951288.jsx)(eo, {
+              showLoadingAnimation: o
+            }), (0, Chunk951288.jsx)(ef, {
               component: Chunk680018.z,
               variant: "primary",
               text: "Submit",
-              showLoadingAnimation: a
+              showLoadingAnimation: o
             })]
           })
         }), (0, Chunk951288.jsx)(Chunk481060.Kqy, {
@@ -529,79 +541,79 @@ function ec() {
             fullWidth: true,
             direction: "vertical",
             size: module,
-            children: [(0, Chunk951288.jsx)(eo, {
+            children: [(0, Chunk951288.jsx)(ef, {
               component: Chunk680018.z,
               variant: "secondary",
               text: "Cancel",
-              showLoadingAnimation: a
-            }), (0, Chunk951288.jsx)(eo, {
+              showLoadingAnimation: o
+            }), (0, Chunk951288.jsx)(ef, {
               component: Chunk680018.z,
               variant: "primary",
               text: "Submit",
-              showLoadingAnimation: a
+              showLoadingAnimation: o
             })]
           })
         })]
-      }), (0, Chunk951288.jsx)(ed, {
+      }), (0, Chunk951288.jsx)(ep, {
         buttonSize: module
       })]
     })]
   })
 }
 
-function ed(e) {
+function ep(e) {
   let {
     buttonSize: t
-  } = e, [n, s] = r.useState(false);
-  return (0, i.jsxs)(N.Kqy, {
+  } = e, [n, a] = i.useState(false);
+  return (0, r.jsxs)(C.Kqy, {
     gap: 16,
-    children: [(0, i.jsx)(N.X6q, {
+    children: [(0, r.jsx)(C.X6q, {
       variant: "heading-xl/semibold",
       children: "PlayButton"
-    }), (0, i.jsx)(N.Kqy, {
+    }), (0, r.jsx)(C.Kqy, {
       direction: "horizontal",
       gap: 16,
-      children: ["dark", "mid", "light"].map(e => (0, i.jsx)("div", {
-        className: G.video,
+      children: ["dark", "mid", "light"].map(e => (0, r.jsx)("div", {
+        className: V.video,
         "data-luminance": e,
-        children: (0, i.jsx)(g.J, {
+        children: (0, r.jsx)(p.J, {
           size: t,
           playing: n,
-          onClick: () => s(!n)
+          onClick: () => a(!n)
         })
       }, e))
     })]
   })
 }
 
-function eu(e) {
+function eh(e) {
   let {
     children: t,
     title: n
-  } = e, [s, l] = r.useState(false);
-  return (0, i.jsxs)(N.Kqy, {
+  } = e, [a, s] = i.useState(false);
+  return (0, r.jsxs)(C.Kqy, {
     direction: "vertical",
     gap: 0,
     padding: 16,
-    className: G.floatingControls,
-    children: [(0, i.jsxs)(N.Kqy, {
+    className: V.floatingControls,
+    children: [(0, r.jsxs)(C.Kqy, {
       direction: "horizontal",
       gap: 16,
       align: "center",
       justify: "space-between",
-      children: [(0, i.jsx)(N.X6q, {
+      children: [(0, r.jsx)(C.X6q, {
         variant: "heading-lg/semibold",
         children: n
-      }), (0, i.jsx)(f.Q, {
-        icon: s ? N.hic : N.sXD,
-        onClick: () => l(!s),
-        pressed: s,
+      }), (0, r.jsx)(m.Q, {
+        icon: a ? C.hic : C.sXD,
+        onClick: () => s(!a),
+        pressed: a,
         "aria-label": "Show controls"
       })]
-    }), (0, i.jsx)(N.Kqy, {
+    }), (0, r.jsx)(C.Kqy, {
       gap: 16,
-      className: a()(G.floatingControlsContent, {
-        [G.floatingControlsContentHidden]: !s
+      className: o()(V.floatingControlsContent, {
+        [V.floatingControlsContentHidden]: !a
       }),
       children: t
     })]
@@ -638,8 +650,8 @@ function em() {
   })
 }
 
-function ep() {
-  let [e, t] = Chunk647438.useState(1), [n, s] = Chunk647438.useState(false), [a, l] = Chunk647438.useState(5), [o, c] = Chunk647438.useState(false), d = Chunk647438.useRef(null);
+function eg() {
+  let [e, t] = Chunk647438.useState(1), [n, a] = Chunk647438.useState(false), [o, s] = Chunk647438.useState(5), [l, c] = Chunk647438.useState(false), u = Chunk647438.useRef(null);
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk726927.section,
     children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
@@ -705,12 +717,12 @@ function ep() {
             }), (0, Chunk951288.jsx)(Chunk481060.II_, {
               id: "slider",
               label: "Slider",
-              control: (e, t) => (0, i.jsx)(N._wy, {
+              control: (e, t) => (0, r.jsx)(C._wy, {
                 ref: t,
-                value: a,
+                value: o,
                 minValue: 0,
                 maxValue: 100,
-                onChange: e => l(e),
+                onChange: e => s(e),
                 "aria-label": "Slider"
               })
             })]
@@ -732,7 +744,7 @@ function ep() {
   })
 }
 
-function eg() {
+function eE() {
   let [e, t] = Chunk647438.useState(Chunk481060.FGA.PRIMARY), n = Chunk647438.useMemo(() => Object.entries(Chunk481060.FGA).map(e => {
     let [t, n] = e;
     return {
@@ -765,7 +777,7 @@ function eg() {
         color: module,
         text: "Here's top aligned tooltip text!",
         position: "top",
-        children: e => (0, i.jsx)(N.zxk, q({
+        children: e => (0, r.jsx)(C.zxk, X({
           variant: "primary",
           text: "Tooltip on the top"
         }, e))
@@ -773,7 +785,7 @@ function eg() {
         color: module,
         text: "Here's right aligned tooltip text!",
         position: "left",
-        children: e => (0, i.jsx)(N.zxk, q({
+        children: e => (0, r.jsx)(C.zxk, X({
           variant: "primary",
           text: "Tooltip on the left"
         }, e))
@@ -781,7 +793,7 @@ function eg() {
         color: module,
         text: "Here's bottom aligned tooltip text!",
         position: "bottom",
-        children: e => (0, i.jsx)(N.zxk, q({
+        children: e => (0, r.jsx)(C.zxk, X({
           variant: "primary",
           text: "Tooltip on the bottom"
         }, e))
@@ -789,7 +801,7 @@ function eg() {
         color: module,
         text: "Here's right aligned tooltip text!",
         position: "right",
-        children: e => (0, i.jsx)(N.zxk, q({
+        children: e => (0, r.jsx)(C.zxk, X({
           variant: "primary",
           text: "Tooltip on the right"
         }, e))
@@ -1052,8 +1064,8 @@ function eg() {
   })
 }
 
-function eh() {
-  let [e, t] = Chunk647438.useState(false), [n, s] = Chunk647438.useState(false), [a, l] = Chunk647438.useState(false), [o, c] = Chunk647438.useState(false), [d, u] = Chunk647438.useState(false), [m, p] = Chunk647438.useState(false), [g, h] = Chunk647438.useState(false), [f, b] = Chunk647438.useState(false), [x, _] = Chunk647438.useState(false), [j, E] = Chunk647438.useState(false), [C, O] = Chunk647438.useState(false), [T, I] = Chunk647438.useState(false), [y, A] = Chunk647438.useState(false), [P, R] = Chunk647438.useState(false), [D, Z] = Chunk647438.useState(false), [w, k] = Chunk647438.useState(false), [L, B] = Chunk647438.useState(false), [M, U] = Chunk647438.useState(false), [V, F] = Chunk647438.useState(false), [H, z] = Chunk647438.useState(false), [q, X] = Chunk647438.useState(false), J = Chunk647438.useRef(null), Q = Chunk647438.useRef(null), $ = Chunk647438.useRef(null), ee = Chunk647438.useRef(null), et = Chunk647438.useRef(null), en = Chunk647438.useRef(null), ei = Chunk647438.useRef(null), er = Chunk647438.useRef(null), es = Chunk647438.useRef(null), ea = Chunk647438.useRef(null), el = Chunk647438.useRef(null), eo = Chunk647438.useRef(null), ec = Chunk647438.useRef(null), ed = Chunk647438.useRef(null), eu = Chunk647438.useRef(null), em = Chunk647438.useRef(null), ep = Chunk647438.useRef(null), eg = Chunk647438.useRef(null), eh = Chunk647438.useRef(null), ef = Chunk647438.useRef(null), eb = Chunk647438.useRef(null), ex = Chunk647438.useCallback(() => {
+function eb() {
+  let [e, t] = Chunk647438.useState(false), [n, a] = Chunk647438.useState(false), [o, s] = Chunk647438.useState(false), [l, c] = Chunk647438.useState(false), [u, d] = Chunk647438.useState(false), [f, _] = Chunk647438.useState(false), [p, h] = Chunk647438.useState(false), [m, g] = Chunk647438.useState(false), [E, b] = Chunk647438.useState(false), [y, O] = Chunk647438.useState(false), [v, I] = Chunk647438.useState(false), [A, N] = Chunk647438.useState(false), [R, P] = Chunk647438.useState(false), [w, D] = Chunk647438.useState(false), [x, L] = Chunk647438.useState(false), [j, M] = Chunk647438.useState(false), [k, U] = Chunk647438.useState(false), [G, B] = Chunk647438.useState(false), [Z, F] = Chunk647438.useState(false), [H, Y] = Chunk647438.useState(false), [q, X] = Chunk647438.useState(false), Q = Chunk647438.useRef(null), J = Chunk647438.useRef(null), $ = Chunk647438.useRef(null), ee = Chunk647438.useRef(null), et = Chunk647438.useRef(null), en = Chunk647438.useRef(null), er = Chunk647438.useRef(null), ei = Chunk647438.useRef(null), ea = Chunk647438.useRef(null), eo = Chunk647438.useRef(null), es = Chunk647438.useRef(null), el = Chunk647438.useRef(null), ec = Chunk647438.useRef(null), eu = Chunk647438.useRef(null), ed = Chunk647438.useRef(null), ef = Chunk647438.useRef(null), e_ = Chunk647438.useRef(null), ep = Chunk647438.useRef(null), eh = Chunk647438.useRef(null), em = Chunk647438.useRef(null), eg = Chunk647438.useRef(null), eE = Chunk647438.useCallback(() => {
     exports(false), Chunk120356(false), Chunk392711(false), Chunk442837(false), Chunk680018(false), Chunk861066(false), Chunk179538(false), Chunk257465(false), Chunk82659(false), Chunk103866(false), Chunk37148(false), Chunk240872(false), Chunk705262(false), Chunk581612(false), Chunk594174(false), Chunk799071(false), Chunk706705(false), Chunk981631(false), Chunk177475(false), Chunk691739(false), X(false)
   }, []);
   return (0, Chunk951288.jsxs)("div", {
@@ -1062,9 +1074,9 @@ function eh() {
       variant: "heading-xl/semibold",
       children: "Popovers"
     }), (0, Chunk951288.jsx)(Chunk907862.J2, {
-      targetElementRef: J,
+      targetElementRef: Q,
       shouldShow: module,
-      onRequestClose: ex,
+      onRequestClose: eE,
       caretConfig: {
         position: "bottom",
         align: "center"
@@ -1079,12 +1091,12 @@ function eh() {
       badge: "new",
       actions: [{
         text: "Button",
-        onClick: ex
+        onClick: eE
       }]
     }), (0, Chunk951288.jsx)(Chunk907862.J2, {
-      targetElementRef: Q,
+      targetElementRef: J,
       shouldShow: require,
-      onRequestClose: ex,
+      onRequestClose: eE,
       caretConfig: {
         position: "bottom",
         align: "center"
@@ -1098,12 +1110,12 @@ function eh() {
       badge: "new",
       actions: [{
         text: "Button",
-        onClick: ex
+        onClick: eE
       }]
     }), (0, Chunk951288.jsx)(Chunk907862.J2, {
       targetElementRef: $,
-      shouldShow: a,
-      onRequestClose: ex,
+      shouldShow: o,
+      onRequestClose: eE,
       caretConfig: {
         position: "bottom",
         align: "center"
@@ -1112,12 +1124,12 @@ function eh() {
       body: "Lorem ipsum dolor sit amet, consectetur elit. Sed do eiusmod.",
       actions: [{
         text: "Button",
-        onClick: ex
+        onClick: eE
       }]
     }), (0, Chunk951288.jsx)(Chunk907862.J2, {
       targetElementRef: ee,
       shouldShow: Chunk971809,
-      onRequestClose: ex,
+      onRequestClose: eE,
       caretConfig: {
         position: "bottom",
         align: "center"
@@ -1131,7 +1143,7 @@ function eh() {
       badge: "new",
       actions: [{
         text: "Button",
-        onClick: ex
+        onClick: eE
       }],
       textLink: {
         text: "Learn More",
@@ -1141,7 +1153,7 @@ function eh() {
     }), (0, Chunk951288.jsx)(Chunk907862.J2, {
       targetElementRef: et,
       shouldShow: Chunk836459,
-      onRequestClose: ex,
+      onRequestClose: eE,
       caretConfig: {
         position: "bottom",
         align: "center"
@@ -1155,17 +1167,17 @@ function eh() {
       badge: "new",
       actions: [{
         text: "Primary",
-        onClick: ex,
+        onClick: eE,
         variant: "primary"
       }, {
         text: "Secondary",
-        onClick: ex,
+        onClick: eE,
         variant: "secondary"
       }]
     }), (0, Chunk951288.jsx)(Chunk907862.J2, {
       targetElementRef: en,
       shouldShow: Chunk374415,
-      onRequestClose: ex,
+      onRequestClose: eE,
       caretConfig: {
         position: "bottom",
         align: "center"
@@ -1178,9 +1190,9 @@ function eh() {
       },
       badge: "new"
     }), (0, Chunk951288.jsx)(Chunk907862.J2, {
-      targetElementRef: ei,
+      targetElementRef: er,
       shouldShow: Chunk780842,
-      onRequestClose: ex,
+      onRequestClose: eE,
       caretConfig: {
         position: "top",
         align: "end"
@@ -1194,12 +1206,12 @@ function eh() {
       badge: "new",
       actions: [{
         text: "Got it",
-        onClick: ex
+        onClick: eE
       }]
     }), (0, Chunk951288.jsx)(Chunk907862.J2, {
-      targetElementRef: er,
+      targetElementRef: ei,
       shouldShow: Chunk279570,
-      onRequestClose: ex,
+      onRequestClose: eE,
       caretConfig: {
         position: "left",
         align: "start"
@@ -1213,12 +1225,12 @@ function eh() {
       badge: "early_access",
       actions: [{
         text: "Close",
-        onClick: ex
+        onClick: eE
       }]
     }), (0, Chunk951288.jsx)(Chunk907862.J2, {
-      targetElementRef: es,
+      targetElementRef: ea,
       shouldShow: Chunk667202,
-      onRequestClose: ex,
+      onRequestClose: eE,
       caretConfig: {
         position: "bottom",
         align: "custom",
@@ -1233,12 +1245,12 @@ function eh() {
       badge: "beta",
       actions: [{
         text: "Amazing!",
-        onClick: ex
+        onClick: eE
       }]
     }), (0, Chunk951288.jsx)(Chunk907862.J2, {
-      targetElementRef: ea,
+      targetElementRef: eo,
       shouldShow: Chunk369585,
-      onRequestClose: ex,
+      onRequestClose: eE,
       position: "right",
       caretConfig: {
         position: "left",
@@ -1253,12 +1265,12 @@ function eh() {
       badge: "new",
       actions: [{
         text: "Perfect!",
-        onClick: ex
+        onClick: eE
       }]
     }), (0, Chunk951288.jsx)(Chunk907862.J2, {
-      targetElementRef: el,
+      targetElementRef: es,
       shouldShow: Chunk213734,
-      onRequestClose: ex,
+      onRequestClose: eE,
       caretConfig: {
         position: "bottom",
         align: "center"
@@ -1273,12 +1285,12 @@ function eh() {
       badge: "new",
       actions: [{
         text: "Looks Great!",
-        onClick: ex
+        onClick: eE
       }]
     }), (0, Chunk951288.jsx)(Chunk907862.J2, {
-      targetElementRef: eo,
+      targetElementRef: el,
       shouldShow: Chunk681715,
-      onRequestClose: ex,
+      onRequestClose: eE,
       caretConfig: {
         position: "bottom",
         align: "center"
@@ -1293,12 +1305,12 @@ function eh() {
       badge: "beta",
       actions: [{
         text: "Nice!",
-        onClick: ex
+        onClick: eE
       }]
     }), (0, Chunk951288.jsx)(Chunk907862.J2, {
       targetElementRef: ec,
       shouldShow: Chunk514361,
-      onRequestClose: ex,
+      onRequestClose: eE,
       caretConfig: {
         position: "bottom",
         align: "center"
@@ -1317,12 +1329,12 @@ function eh() {
       },
       actions: [{
         text: "Get Nitro",
-        onClick: ex
+        onClick: eE
       }]
     }), (0, Chunk951288.jsx)(Chunk907862.J2, {
-      targetElementRef: ed,
+      targetElementRef: eu,
       shouldShow: Chunk377089,
-      onRequestClose: ex,
+      onRequestClose: eE,
       caretConfig: {
         position: "bottom",
         align: "center"
@@ -1337,12 +1349,12 @@ function eh() {
       gradientColor: "purple",
       actions: [{
         text: "Try it now",
-        onClick: ex
+        onClick: eE
       }]
     }), (0, Chunk951288.jsx)(Chunk907862.Mb, {
-      targetElementRef: eu,
+      targetElementRef: ed,
       shouldShow: Chunk580747,
-      onRequestClose: ex,
+      onRequestClose: eE,
       caretConfig: {
         position: "bottom",
         align: "center"
@@ -1353,12 +1365,12 @@ function eh() {
       badge: "new",
       action: {
         text: "Learn More",
-        onClick: ex
+        onClick: eE
       }
     }), (0, Chunk951288.jsx)(Chunk907862.Mb, {
-      targetElementRef: em,
+      targetElementRef: ef,
       shouldShow: Chunk526156,
-      onRequestClose: ex,
+      onRequestClose: eE,
       caretConfig: {
         position: "bottom",
         align: "center"
@@ -1370,12 +1382,12 @@ function eh() {
       badge: "new",
       action: {
         text: "Learn More",
-        onClick: ex
+        onClick: eE
       }
     }), (0, Chunk951288.jsx)(Chunk907862.Mb, {
-      targetElementRef: ep,
+      targetElementRef: e_,
       shouldShow: Chunk554042,
-      onRequestClose: ex,
+      onRequestClose: eE,
       caretConfig: {
         position: "bottom",
         align: "center"
@@ -1386,12 +1398,12 @@ function eh() {
       badge: "new",
       action: {
         text: "Learn More",
-        onClick: ex
+        onClick: eE
       }
     }), (0, Chunk951288.jsx)(Chunk466590.e, {
-      targetElementRef: eg,
+      targetElementRef: ep,
       shouldShow: Chunk726985,
-      onRequestClose: ex,
+      onRequestClose: eE,
       caretConfig: {
         position: "bottom",
         align: "center"
@@ -1440,7 +1452,7 @@ function eh() {
     }), (0, Chunk951288.jsx)(Chunk907862.J2, {
       targetElementRef: eh,
       shouldShow: Chunk231338,
-      onRequestClose: ex,
+      onRequestClose: eE,
       caretConfig: {
         position: "bottom",
         align: "center"
@@ -1455,13 +1467,13 @@ function eh() {
       gradientColor: "nitro-pink",
       actions: [{
         text: "Subscribe to Nitro",
-        onClick: ex,
+        onClick: eE,
         variant: "expressive"
       }]
     }), (0, Chunk951288.jsx)(Chunk466590.e, {
-      targetElementRef: ef,
+      targetElementRef: em,
       shouldShow: Chunk518797,
-      onRequestClose: ex,
+      onRequestClose: eE,
       caretConfig: {
         position: "bottom",
         align: "center"
@@ -1509,9 +1521,9 @@ function eh() {
       }],
       onStepChange: e => {}
     }), (0, Chunk951288.jsx)(Chunk907862.Mb, {
-      targetElementRef: eb,
+      targetElementRef: eg,
       shouldShow: q,
-      onRequestClose: ex,
+      onRequestClose: eE,
       caretConfig: {
         position: "bottom",
         align: "center"
@@ -1522,7 +1534,7 @@ function eh() {
       badge: "new",
       action: {
         text: "Experience More",
-        onClick: ex,
+        onClick: eE,
         variant: "expressive"
       }
     }), (0, Chunk951288.jsxs)("div", {
@@ -1542,21 +1554,21 @@ function eh() {
         children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Small Content",
-          buttonRef: J,
+          buttonRef: Q,
           onClick: () => {
-            ex(), exports(true)
+            eE(), exports(true)
           }
         }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Medium Content",
-          buttonRef: Q,
+          buttonRef: J,
           onClick: () => {
-            ex(), Chunk120356(true)
+            eE(), Chunk120356(true)
           }
         }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
           buttonRef: $,
           onClick: () => {
-            ex(), Chunk392711(true)
+            eE(), Chunk392711(true)
           },
           text: "No Asset"
         })]
@@ -1580,19 +1592,19 @@ function eh() {
           text: "External Link",
           buttonRef: ee,
           onClick: () => {
-            ex(), Chunk442837(true)
+            eE(), Chunk442837(true)
           }
         }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Two Actions",
           buttonRef: et,
           onClick: () => {
-            ex(), Chunk680018(true)
+            eE(), Chunk680018(true)
           }
         }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
           buttonRef: en,
           onClick: () => {
-            ex(), Chunk861066(true)
+            eE(), Chunk861066(true)
           },
           text: "No Actions"
         })]
@@ -1614,30 +1626,30 @@ function eh() {
         children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Custom Caret API",
-          buttonRef: ei,
+          buttonRef: er,
           onClick: () => {
-            ex(), Chunk179538(true)
+            eE(), Chunk179538(true)
           }
         }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Left Side Caret",
-          buttonRef: er,
+          buttonRef: ei,
           onClick: () => {
-            ex(), Chunk257465(true)
+            eE(), Chunk257465(true)
           }
         }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Custom Offset",
-          buttonRef: es,
+          buttonRef: ea,
           onClick: () => {
-            ex(), Chunk82659(true)
+            eE(), Chunk82659(true)
           }
         }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Left Center",
-          buttonRef: ea,
+          buttonRef: eo,
           onClick: () => {
-            ex(), Chunk103866(true)
+            eE(), Chunk103866(true)
           }
         })]
       })]
@@ -1658,23 +1670,23 @@ function eh() {
         children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Purple Gradient",
-          buttonRef: el,
+          buttonRef: es,
           onClick: () => {
-            ex(), Chunk37148(true)
+            eE(), Chunk37148(true)
           }
         }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Blue Gradient",
-          buttonRef: eo,
+          buttonRef: el,
           onClick: () => {
-            ex(), Chunk240872(true)
+            eE(), Chunk240872(true)
           }
         }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Nitro Pink Gradient",
           buttonRef: ec,
           onClick: () => {
-            ex(), Chunk705262(true)
+            eE(), Chunk705262(true)
           }
         })]
       })]
@@ -1695,30 +1707,30 @@ function eh() {
         children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Voice Filters",
-          buttonRef: ed,
+          buttonRef: eu,
           onClick: () => {
-            ex(), Chunk581612(true)
+            eE(), Chunk581612(true)
           }
         }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Video Media Viewer",
-          buttonRef: eu,
+          buttonRef: ed,
           onClick: () => {
-            ex(), Chunk594174(true)
+            eE(), Chunk594174(true)
           }
         }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Video with Different Preview",
-          buttonRef: em,
+          buttonRef: ef,
           onClick: () => {
-            ex(), Chunk799071(true)
+            eE(), Chunk799071(true)
           }
         }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "With image",
-          buttonRef: ep,
+          buttonRef: e_,
           onClick: () => {
-            ex(), Chunk706705(true)
+            eE(), Chunk706705(true)
           }
         })]
       })]
@@ -1739,9 +1751,9 @@ function eh() {
         children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Multi-Step",
-          buttonRef: eg,
+          buttonRef: ep,
           onClick: () => {
-            ex(), Chunk981631(true)
+            eE(), Chunk981631(true)
           }
         })
       })]
@@ -1764,21 +1776,21 @@ function eh() {
           text: "Expressive Popover",
           buttonRef: eh,
           onClick: () => {
-            ex(), Chunk177475(true)
+            eE(), Chunk177475(true)
           }
         }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Expressive Multi-Step",
-          buttonRef: ef,
+          buttonRef: em,
           onClick: () => {
-            ex(), Chunk691739(true)
+            eE(), Chunk691739(true)
           }
         }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Expressive Video",
-          buttonRef: eb,
+          buttonRef: eg,
           onClick: () => {
-            ex(), X(true)
+            eE(), X(true)
           }
         })]
       })]
@@ -1786,8 +1798,8 @@ function eh() {
   })
 }
 
-function ef() {
-  let [e, t] = Chunk647438.useState(false), [n, s] = Chunk647438.useState(false), [a, l] = Chunk647438.useState("auto");
+function ey() {
+  let [e, t] = Chunk647438.useState(false), [n, a] = Chunk647438.useState(false), [o, s] = Chunk647438.useState("auto");
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsxs)("div", {
       className: Chunk726927.section,
@@ -1834,7 +1846,7 @@ function ef() {
       }), (0, Chunk951288.jsx)(Chunk481060.j7V, {
         hideBorder: true,
         value: require,
-        onChange: e => s(e),
+        onChange: e => a(e),
         children: "FormSwitch with a label"
       })]
     }), (0, Chunk951288.jsxs)("div", {
@@ -1848,7 +1860,7 @@ function ef() {
             let {
               value: t
             } = e;
-            return l(t)
+            return s(t)
           },
           options: [{
             value: "auto",
@@ -1860,7 +1872,7 @@ function ef() {
             value: "1080p",
             name: "1080p"
           }],
-          value: a
+          value: o
         })
       })]
     }), (0, Chunk951288.jsxs)("div", {
@@ -1942,8 +1954,8 @@ function ef() {
   })
 }
 
-function eb() {
-  let [e, t] = Chunk647438.useState(null), [n, s] = Chunk647438.useState(null), [a, l] = Chunk647438.useState([]), [c, d] = Chunk647438.useState([]), [u, m] = Chunk647438.useState([]);
+function eO() {
+  let [e, t] = Chunk647438.useState(null), [n, a] = Chunk647438.useState(null), [o, s] = Chunk647438.useState([]), [c, u] = Chunk647438.useState([]), [d, f] = Chunk647438.useState([]);
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk726927.section,
     children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
@@ -1958,36 +1970,36 @@ function eb() {
       placeholder: "Single select (clearable)",
       clearable: true,
       value: require,
-      onChange: e => s(e),
+      onChange: e => a(e),
       options: Chunk971809.G
     }), (0, Chunk951288.jsx)(Chunk481060.VcW, {
       placeholder: "Multi select",
       multi: true,
-      value: a,
-      onChange: e => l(e),
+      value: o,
+      onChange: e => s(e),
       options: Chunk971809.G
     }), (0, Chunk951288.jsx)(Chunk481060.VcW, {
       placeholder: "Multi select (clearable)",
       multi: true,
       clearable: true,
       value: Chunk680018,
-      onChange: e => m(e),
+      onChange: e => f(e),
       options: Chunk971809.G
     }), (0, Chunk951288.jsx)(Chunk481060.VcW, {
       placeholder: "Multi select (custom pills)",
       multi: true,
       value: Chunk442837,
-      onChange: e => d(e),
+      onChange: e => u(e),
       options: Chunk971809.G,
       hidePills: true,
       customPillContainerClassName: Chunk726927.customPillContainer,
-      renderCustomPill: e => (0, i.jsx)("div", {
+      renderCustomPill: e => (0, r.jsx)("div", {
         style: {
           padding: 8,
           border: "1px solid var(--bg-brand)",
           borderRadius: 8
         },
-        children: (0, i.jsx)(N.Text, {
+        children: (0, r.jsx)(C.Text, {
           variant: "text-md/bold",
           children: e.label
         })
@@ -1996,8 +2008,8 @@ function eb() {
   })
 }
 
-function ex() {
-  let [e, t] = Chunk647438.useState(""), [n, s] = Chunk647438.useState(""), [a, l] = Chunk647438.useState(""), o = (0, Chunk377089.U)("UserSettingsDesignSystems");
+function ev() {
+  let [e, t] = Chunk647438.useState(""), [n, a] = Chunk647438.useState(""), [o, s] = Chunk647438.useState(""), l = (0, Chunk377089.U)("UserSettingsDesignSystems");
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk726927.section,
     children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
@@ -2009,14 +2021,14 @@ function ex() {
         gap: 8,
         children: [(0, Chunk951288.jsx)(Chunk481060.E1j, {
           placeholder: "Search...",
-          onChange: e => l(e),
-          query: a,
+          onChange: e => s(e),
+          query: o,
           onClear: () => Chunk392711("")
         }), (0, Chunk951288.jsx)(Chunk481060.E1j, {
           size: "sm",
           placeholder: "Search...",
-          onChange: e => l(e),
-          query: a,
+          onChange: e => s(e),
+          query: o,
           onClear: () => Chunk392711("")
         })]
       })
@@ -2093,30 +2105,30 @@ function ex() {
   })
 }
 
-function e_(e) {
+function eI(e) {
   let {
     transitionState: t
-  } = e, [n, s] = r.useState(false), [a, l] = r.useState(N.CgR.SMALL), [o, c] = r.useState(false), d = n ? G.modalOutlines : "";
-  return (0, i.jsxs)(N.Y0X, {
+  } = e, [n, a] = i.useState(false), [o, s] = i.useState(C.CgR.SMALL), [l, c] = i.useState(false), u = n ? V.modalOutlines : "";
+  return (0, r.jsxs)(C.Y0X, {
     transitionState: t,
-    size: a,
+    size: o,
     parentComponent: "UserSettingsDesignSystem",
-    children: [(0, i.jsx)(N.xBx, {
-      className: d,
-      children: (0, i.jsx)(N.X6q, {
+    children: [(0, r.jsx)(C.xBx, {
+      className: u,
+      children: (0, r.jsx)(C.X6q, {
         variant: "heading-xl/semibold",
         children: "Modal"
       })
-    }), (0, i.jsx)(N.hzk, {
-      className: d,
-      children: (0, i.jsxs)(N.Kqy, {
+    }), (0, r.jsx)(C.hzk, {
+      className: u,
+      children: (0, r.jsxs)(C.Kqy, {
         gap: 16,
-        children: [(0, i.jsx)(N.xJW, {
+        children: [(0, r.jsx)(C.xJW, {
           title: "Modal Size",
-          children: (0, i.jsx)(N.q4e, {
-            value: a,
-            onChange: l,
-            options: Object.entries(N.CgR).map(e => {
+          children: (0, r.jsx)(C.q4e, {
+            value: o,
+            onChange: s,
+            options: Object.entries(C.CgR).map(e => {
               let [t, n] = e;
               return {
                 label: t,
@@ -2124,21 +2136,21 @@ function e_(e) {
               }
             })
           })
-        }), (0, i.jsx)(N.hjN, {
+        }), (0, r.jsx)(C.hjN, {
           title: "Options",
-          children: (0, i.jsxs)(N.Kqy, {
+          children: (0, r.jsxs)(C.Kqy, {
             gap: 16,
-            children: [(0, i.jsx)(N.XZJ, {
+            children: [(0, r.jsx)(C.XZJ, {
               value: n,
-              onChange: (e, t) => s(t),
-              children: (0, i.jsx)(N.Text, {
+              onChange: (e, t) => a(t),
+              children: (0, r.jsx)(C.Text, {
                 variant: "text-md/medium",
                 children: "Show Section Outlines"
               })
-            }), (0, i.jsx)(N.XZJ, {
-              value: o,
+            }), (0, r.jsx)(C.XZJ, {
+              value: l,
               onChange: (e, t) => c(t),
-              children: (0, i.jsx)(N.Text, {
+              children: (0, r.jsx)(C.Text, {
                 variant: "text-md/medium",
                 children: "Show secondary action in footer"
               })
@@ -2146,16 +2158,16 @@ function e_(e) {
           })
         })]
       })
-    }), (0, i.jsx)(N.mzw, {
-      className: d,
-      children: (0, i.jsxs)(N.Kqy, {
+    }), (0, r.jsx)(C.mzw, {
+      className: u,
+      children: (0, r.jsxs)(C.Kqy, {
         direction: "horizontal",
         justify: "end",
         gap: 8,
-        children: [o && (0, i.jsx)(N.zxk, {
+        children: [l && (0, r.jsx)(C.zxk, {
           variant: "secondary",
           text: "Secondary Action"
-        }), (0, i.jsx)(N.zxk, {
+        }), (0, r.jsx)(C.zxk, {
           variant: "primary",
           text: "Close"
         })]
@@ -2164,32 +2176,39 @@ function e_(e) {
   })
 }
 
-function ej(e) {
+function eT(e) {
   let {
     transitionState: t,
     onClose: n,
-    modalCount: s = 1
-  } = e, [a, l] = r.useState("replace"), o = s < 3;
-  return (0, i.jsxs)(N.Y0X, {
+    modalCount: a = 1
+  } = e, [o, s] = i.useState("replace"), l = () => {
+    let e = a + 1;
+    (0, C.h7j)(t => (0, r.jsx)(eT, J(X({}, t), {
+      modalCount: e
+    })), {
+      stackingBehavior: o
+    })
+  }, c = a < 3;
+  return (0, r.jsxs)(C.Y0X, {
     transitionState: t,
-    size: 1 === s ? N.CgR.LARGE : 2 === s ? N.CgR.MEDIUM : N.CgR.SMALL,
+    size: 1 === a ? C.CgR.LARGE : 2 === a ? C.CgR.MEDIUM : C.CgR.SMALL,
     parentComponent: "UserSettingsDesignSystem",
-    children: [(0, i.jsx)(N.xBx, {
-      children: (0, i.jsx)(N.X6q, {
+    children: [(0, r.jsx)(C.xBx, {
+      children: (0, r.jsx)(C.X6q, {
         variant: "heading-xl/semibold",
         children: "Modal Stacking Demo"
       })
-    }), (0, i.jsx)(N.hzk, {
-      children: (0, i.jsxs)(N.Kqy, {
+    }), (0, r.jsx)(C.hzk, {
+      children: (0, r.jsxs)(C.Kqy, {
         gap: 16,
-        children: [(0, i.jsxs)(N.Text, {
+        children: [(0, r.jsxs)(C.Text, {
           variant: "text-md/medium",
-          children: ["This is modal level ", s, "."]
-        }), o && (0, i.jsx)(N.xJW, {
+          children: ["This is modal level ", a, "."]
+        }), c && (0, r.jsx)(C.xJW, {
           title: "Stacking Behavior",
-          children: (0, i.jsx)(N.q4e, {
-            value: a,
-            onChange: l,
+          children: (0, r.jsx)(C.q4e, {
+            value: o,
+            onChange: s,
             options: [{
               label: "Replace (default)",
               value: "replace"
@@ -2201,105 +2220,98 @@ function ej(e) {
               value: "replaceAll"
             }]
           })
-        }), (0, i.jsxs)(N.Kqy, {
+        }), (0, r.jsxs)(C.Kqy, {
           gap: 8,
-          children: [(0, i.jsxs)(N.Text, {
+          children: [(0, r.jsxs)(C.Text, {
             variant: "text-sm/normal",
             color: "text-muted",
-            children: [(0, i.jsx)("strong", {
+            children: [(0, r.jsx)("strong", {
               children: "Replace One:"
             }), " The modal directly below is hidden (default behavior)"]
-          }), (0, i.jsxs)(N.Text, {
+          }), (0, r.jsxs)(C.Text, {
             variant: "text-sm/normal",
             color: "text-muted",
-            children: [(0, i.jsx)("strong", {
+            children: [(0, r.jsx)("strong", {
               children: "Replace All:"
             }), " All modals below are hidden"]
-          }), (0, i.jsxs)(N.Text, {
+          }), (0, r.jsxs)(C.Text, {
             variant: "text-sm/normal",
             color: "text-muted",
-            children: [(0, i.jsx)("strong", {
+            children: [(0, r.jsx)("strong", {
               children: "Stack:"
             }), " The modal directly below remains visible"]
           })]
         })]
       })
-    }), (0, i.jsx)(N.mzw, {
-      children: (0, i.jsxs)(N.Kqy, {
+    }), (0, r.jsx)(C.mzw, {
+      children: (0, r.jsxs)(C.Kqy, {
         direction: "horizontal",
         justify: "end",
         gap: 8,
-        children: [(0, i.jsx)(N.zxk, {
+        children: [(0, r.jsx)(C.zxk, {
           variant: "secondary",
           text: "Close",
           onClick: n
-        }), o && (0, i.jsx)(N.zxk, {
+        }), c && (0, r.jsx)(C.zxk, {
           variant: "primary",
           text: "Open Next Modal",
-          onClick: () => {
-            let e = s + 1;
-            (0, N.h7j)(t => (0, i.jsx)(ej, X(q({}, t), {
-              modalCount: e
-            })), {
-              stackingBehavior: a
-            })
-          }
+          onClick: l
         })]
       })
     })]
   })
 }
 
-function eE(e) {
+function eS(e) {
   let {
     transitionState: t,
     onClose: n
   } = e;
 
-  function r(e) {
+  function i(e) {
     let {
       children: t
     } = e;
-    return (0, i.jsx)("div", {
-      className: G.modalOutlines,
+    return (0, r.jsx)("div", {
+      className: V.modalOutlines,
       style: {
         padding: "24px"
       },
       children: t
     })
   }
-  return (0, i.jsxs)(b.I, {
+  return (0, r.jsxs)(g.I, {
     transitionState: t,
     onClose: n,
-    children: [(0, i.jsx)("div", {
-      className: G.modalOutlines,
-      children: (0, i.jsx)(O.x, {
+    children: [(0, r.jsx)("div", {
+      className: V.modalOutlines,
+      children: (0, r.jsx)(I.x, {
         title: "Demo Modal",
         subtitle: "The ModalHeader can have leading and trailing items on either side of the text",
-        leading: (0, i.jsx)(r, {}),
-        trailing: (0, i.jsx)(r, {})
+        leading: (0, r.jsx)(i, {}),
+        trailing: (0, r.jsx)(i, {})
       })
-    }), (0, i.jsx)("div", {
-      className: G.modalOutlines,
-      children: (0, i.jsx)(E.f, {
-        controls: (0, i.jsx)(r, {
+    }), (0, r.jsx)("div", {
+      className: V.modalOutlines,
+      children: (0, r.jsx)(O.f, {
+        controls: (0, r.jsx)(i, {
           children: "This ModalBody renders any controls here"
         }),
-        children: (0, i.jsx)(r, {
+        children: (0, r.jsx)(i, {
           children: "This is the main ModalBody. This area scrolls if there is enough content"
         })
       })
-    }), (0, i.jsx)("div", {
-      className: G.modalOutlines,
-      children: (0, i.jsx)(C.m, {
-        children: (0, i.jsx)(r, {
+    }), (0, r.jsx)("div", {
+      className: V.modalOutlines,
+      children: (0, r.jsx)(v.m, {
+        children: (0, r.jsx)(i, {
           children: "This is the ModalFooter"
         })
       })
-    }), (0, i.jsx)("div", {
-      className: G.modalOutlines,
-      children: (0, i.jsx)(j.G, {
-        leading: (0, i.jsx)(r, {
+    }), (0, r.jsx)("div", {
+      className: V.modalOutlines,
+      children: (0, r.jsx)(y.G, {
+        leading: (0, r.jsx)(i, {
           children: "ModalActionBar leading"
         }),
         actions: [{
@@ -2316,32 +2328,32 @@ function eE(e) {
   })
 }
 
-function eC(e) {
+function eA(e) {
   let {
     transitionState: t,
     onClose: n
-  } = e, [s, a] = r.useState("md"), [l, o] = r.useState("Demo Modal"), [c, d] = r.useState("Header body copy"), [u, m] = r.useState(false), [p, g] = r.useState(false), [h, f] = r.useState(false), [x, _] = r.useState(false), [v, S] = r.useState(false);
-  return (0, i.jsxs)(b.I, {
+  } = e, [a, o] = i.useState("md"), [s, l] = i.useState("Demo Modal"), [c, u] = i.useState("Header body copy"), [d, f] = i.useState(false), [_, p] = i.useState(false), [h, m] = i.useState(false), [E, b] = i.useState(false), [T, S] = i.useState(false);
+  return (0, r.jsxs)(g.I, {
     transitionState: t,
     onClose: n,
-    size: s,
-    children: [(0, i.jsx)(O.x, {
-      title: l,
+    size: a,
+    children: [(0, r.jsx)(I.x, {
+      title: s,
       subtitle: c,
-      alignCenter: u
-    }), (0, i.jsx)(E.f, {
-      controls: p ? (0, i.jsx)(N.E1j, {
+      alignCenter: d
+    }), (0, r.jsx)(O.f, {
+      controls: _ ? (0, r.jsx)(C.E1j, {
         placeholder: "Search",
         onChange: () => null,
         query: ""
       }) : true,
-      children: (0, i.jsxs)(N.Kqy, {
+      children: (0, r.jsxs)(C.Kqy, {
         gap: 16,
-        children: [(0, i.jsx)(N.xJW, {
+        children: [(0, r.jsx)(C.xJW, {
           title: "Modal Size",
-          children: (0, i.jsx)(N.q4e, {
-            value: s,
-            onChange: a,
+          children: (0, r.jsx)(C.q4e, {
+            value: a,
+            onChange: o,
             options: [{
               label: "Small",
               value: "sm"
@@ -2356,54 +2368,54 @@ function eC(e) {
               value: "xl"
             }]
           })
-        }), (0, i.jsx)(N.xJW, {
+        }), (0, r.jsx)(C.xJW, {
           title: "Header Title",
-          children: (0, i.jsx)(N.oil, {
-            onChange: o,
-            defaultValue: l
+          children: (0, r.jsx)(C.oil, {
+            onChange: l,
+            defaultValue: s
           })
-        }), (0, i.jsx)(N.xJW, {
+        }), (0, r.jsx)(C.xJW, {
           title: "Header body",
-          children: (0, i.jsx)(N.oil, {
-            onChange: d,
+          children: (0, r.jsx)(C.oil, {
+            onChange: u,
             defaultValue: c
           })
-        }), (0, i.jsx)(N.xJW, {
+        }), (0, r.jsx)(C.xJW, {
           title: "Optional Content",
-          children: (0, i.jsxs)(N.Kqy, {
+          children: (0, r.jsxs)(C.Kqy, {
             gap: 12,
-            children: [(0, i.jsx)(N.XZJ, {
-              value: u,
-              onChange: (e, t) => m(t),
-              children: (0, i.jsx)(N.Text, {
+            children: [(0, r.jsx)(C.XZJ, {
+              value: d,
+              onChange: (e, t) => f(t),
+              children: (0, r.jsx)(C.Text, {
                 variant: "text-md/medium",
                 children: "Header Align Center"
               })
-            }), (0, i.jsx)(N.XZJ, {
-              value: p,
-              onChange: (e, t) => g(t),
-              children: (0, i.jsx)(N.Text, {
+            }), (0, r.jsx)(C.XZJ, {
+              value: _,
+              onChange: (e, t) => p(t),
+              children: (0, r.jsx)(C.Text, {
                 variant: "text-md/medium",
                 children: "Show Search Input"
               })
-            }), (0, i.jsx)(N.XZJ, {
+            }), (0, r.jsx)(C.XZJ, {
               value: h,
-              onChange: (e, t) => f(t),
-              children: (0, i.jsx)(N.Text, {
+              onChange: (e, t) => m(t),
+              children: (0, r.jsx)(C.Text, {
                 variant: "text-md/medium",
                 children: "Show Preview Content"
               })
-            }), (0, i.jsx)(N.XZJ, {
-              value: x,
-              onChange: (e, t) => _(t),
-              children: (0, i.jsx)(N.Text, {
+            }), (0, r.jsx)(C.XZJ, {
+              value: E,
+              onChange: (e, t) => b(t),
+              children: (0, r.jsx)(C.Text, {
                 variant: "text-md/medium",
                 children: "Show Action Bar Leading Input"
               })
-            }), (0, i.jsx)(N.XZJ, {
-              value: v,
+            }), (0, r.jsx)(C.XZJ, {
+              value: T,
               onChange: (e, t) => S(t),
-              children: (0, i.jsx)(N.Text, {
+              children: (0, r.jsx)(C.Text, {
                 variant: "text-md/medium",
                 children: "Full Width Actions"
               })
@@ -2411,21 +2423,21 @@ function eC(e) {
           })
         })]
       })
-    }), h && (0, i.jsxs)(C.m, {
-      children: [(0, i.jsx)(N.X6q, {
+    }), h && (0, r.jsxs)(v.m, {
+      children: [(0, r.jsx)(C.X6q, {
         variant: "heading-lg/semibold",
         children: "Celebration Station"
-      }), (0, i.jsx)(N.Text, {
+      }), (0, r.jsx)(C.Text, {
         variant: "text-sm/normal",
         color: "text-secondary",
         children: "32 Members ● 19 Online"
       })]
-    }), (0, i.jsx)(j.G, {
-      leading: x ? (0, i.jsx)(j.B, {
+    }), (0, r.jsx)(y.G, {
+      leading: E ? (0, r.jsx)(y.B, {
         value: false,
         onChange: () => {}
       }) : true,
-      actionsFullWidth: v,
+      actionsFullWidth: T,
       actions: [{
         variant: "secondary",
         text: "Cancel",
@@ -2439,45 +2451,45 @@ function eC(e) {
   })
 }
 
-function eO(e) {
+function eC(e) {
   let {
     transitionState: t,
     onClose: n
   } = e;
 
-  function s(e) {
+  function a(e) {
     let {
       text: t
-    } = e, [n, s] = r.useState(false);
-    return (0, i.jsx)("div", {
+    } = e, [n, a] = i.useState(false);
+    return (0, r.jsx)("div", {
       style: {
         padding: "8px 0"
       },
-      children: (0, i.jsx)(N.XZJ, {
+      children: (0, r.jsx)(C.XZJ, {
         value: n,
-        onChange: (e, t) => s(t),
-        children: (0, i.jsx)(N.Text, {
+        onChange: (e, t) => a(t),
+        children: (0, r.jsx)(C.Text, {
           variant: "text-md/medium",
           children: t
         })
       })
     })
   }
-  return (0, i.jsxs)(_.Modal, {
+  return (0, r.jsxs)(b.Modal, {
     transitionState: t,
     onClose: n,
     size: "md",
     title: "Invite to server",
-    input: (0, i.jsx)(N.E1j, {
+    input: (0, r.jsx)(C.E1j, {
       placeholder: "Search",
       onChange: () => null,
       query: ""
     }),
-    preview: (0, i.jsxs)(i.Fragment, {
-      children: [(0, i.jsx)(N.X6q, {
+    preview: (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(C.X6q, {
         variant: "heading-lg/semibold",
         children: "Celebration Station"
-      }), (0, i.jsx)(N.Text, {
+      }), (0, r.jsx)(C.Text, {
         variant: "text-sm/normal",
         color: "text-secondary",
         children: "32 Members ● 19 Online"
@@ -2490,52 +2502,52 @@ function eO(e) {
     }, {
       variant: "primary",
       text: "Send Invite",
-      icon: N.kBi,
+      icon: C.kBi,
       iconPosition: "end",
       onClick: n
     }],
-    children: [(0, i.jsx)(s, {
+    children: [(0, r.jsx)(a, {
       text: "John Doe"
-    }), (0, i.jsx)(s, {
+    }), (0, r.jsx)(a, {
       text: "Mark"
-    }), (0, i.jsx)(s, {
+    }), (0, r.jsx)(a, {
       text: "KawaiiHermit"
-    }), (0, i.jsx)(s, {
+    }), (0, r.jsx)(a, {
       text: "YurBruhGio"
-    }), (0, i.jsx)(s, {
+    }), (0, r.jsx)(a, {
       text: "John Doe"
-    }), (0, i.jsx)(s, {
+    }), (0, r.jsx)(a, {
       text: "Mark"
-    }), (0, i.jsx)(s, {
+    }), (0, r.jsx)(a, {
       text: "KawaiiHermit"
-    }), (0, i.jsx)(s, {
+    }), (0, r.jsx)(a, {
       text: "YurBruhGio"
-    }), (0, i.jsx)(s, {
+    }), (0, r.jsx)(a, {
       text: "John Doe"
-    }), (0, i.jsx)(s, {
+    }), (0, r.jsx)(a, {
       text: "Mark"
-    }), (0, i.jsx)(s, {
+    }), (0, r.jsx)(a, {
       text: "KawaiiHermit"
-    }), (0, i.jsx)(s, {
+    }), (0, r.jsx)(a, {
       text: "YurBruhGio"
-    }), (0, i.jsx)(s, {
+    }), (0, r.jsx)(a, {
       text: "John Doe"
-    }), (0, i.jsx)(s, {
+    }), (0, r.jsx)(a, {
       text: "Mark"
-    }), (0, i.jsx)(s, {
+    }), (0, r.jsx)(a, {
       text: "KawaiiHermit"
-    }), (0, i.jsx)(s, {
+    }), (0, r.jsx)(a, {
       text: "YurBruhGio"
     })]
   })
 }
 
-function ev(e) {
+function eN(e) {
   let {
     transitionState: t,
     onClose: n
   } = e;
-  return (0, i.jsx)(_.Modal, {
+  return (0, r.jsx)(b.Modal, {
     transitionState: t,
     onClose: n,
     title: "Alert Modal",
@@ -2552,80 +2564,80 @@ function ev(e) {
   })
 }
 
-function eS(e) {
+function eR(e) {
   let {
     transitionState: t,
-    onClose: s
-  } = e, [a, l] = r.useState(0), [o, c] = r.useState(false), u = r.useMemo(() => 0 === a ? {
+    onClose: a
+  } = e, [o, s] = i.useState(0), [l, c] = i.useState(false), d = [{
+    label: "Image",
+    value: 0
+  }, {
+    label: "Lottie",
+    value: 1
+  }, {
+    label: "Rive",
+    value: 2
+  }, {
+    label: "Looping Video",
+    value: 3
+  }, {
+    label: "Dynamic Content",
+    value: 4
+  }], f = i.useMemo(() => 0 === o ? {
     type: "image",
     src: F
-  } : 1 === a ? {
+  } : 1 === o ? {
     type: "lottie",
     lottie: () => n.e("94792").then(n.t.bind(n, 972951, 19)),
     aspectRatio: "6/4"
-  } : 2 === a ? {
+  } : 2 === o ? {
     type: "rive",
-    rive: d.PerfTestRive
-  } : 3 === a ? {
+    rive: u.PerfTestRive
+  } : 3 === o ? {
     type: "video",
-    src: z.Z,
+    src: Y.Z,
     fallbackImageSrc: F,
     loop: true,
     loopAt: 2.5
-  } : 4 === a ? {
+  } : 4 === o ? {
     type: "dynamic",
-    component: N.AX$.DEMO,
+    component: C.AX$.DEMO,
     props: {
       text: "Dynamic Content"
     }
-  } : true, [a]);
-  return (0, i.jsxs)(x.I, {
+  } : true, [o]);
+  return (0, r.jsxs)(E.I, {
     transitionState: t,
-    onClose: s,
+    onClose: a,
     gradientColor: "nitro-pink",
-    graphic: u,
-    badge: o ? "beta" : true,
+    graphic: f,
+    badge: l ? "beta" : true,
     title: "Expressive Modal",
     subtitle: "This is an expressive modal with a header image",
     actions: [{
       variant: "secondary",
       text: "Cancel",
-      onClick: s
+      onClick: a
     }, {
       variant: "primary",
       text: "Submit",
-      onClick: s
+      onClick: a
     }],
-    children: [(0, i.jsx)(N.xJW, {
+    children: [(0, r.jsx)(C.xJW, {
       title: "Graphic Type",
-      children: (0, i.jsx)(N.q4e, {
-        value: a,
-        onChange: l,
-        options: [{
-          label: "Image",
-          value: 0
-        }, {
-          label: "Lottie",
-          value: 1
-        }, {
-          label: "Rive",
-          value: 2
-        }, {
-          label: "Looping Video",
-          value: 3
-        }, {
-          label: "Dynamic Content",
-          value: 4
-        }]
+      children: (0, r.jsx)(C.q4e, {
+        value: o,
+        onChange: s,
+        options: d
       })
-    }), (0, i.jsx)(N.xJW, {
+    }), (0, r.jsx)(C.xJW, {
       style: {
         paddingTop: "16px"
       },
-      children: (0, i.jsx)(N.XZJ, {
-        value: o,
+      children: (0, r.jsx)(C.XZJ, {
+        value: l,
         onChange: (e, t) => c(t),
-        children: (0, i.jsx)(N.Text, {
+        children: (0, r.jsx)(C.Text, {
           variant: "text-md/medium",
           children: "Show beta badge"
         })
@@ -2634,41 +2646,41 @@ function eS(e) {
   })
 }
 
-function eT(e) {
+function eP(e) {
   let {
     transitionState: t,
     onClose: n,
-    modalCount: s = 1
-  } = e, [a, l] = r.useState("replace"), o = s < 3;
-  return (0, i.jsx)(_.Modal, {
+    modalCount: a = 1
+  } = e, [o, s] = i.useState("replace"), l = () => {
+    let e = a + 1;
+    (0, C.h7j)(t => (0, r.jsx)(eP, J(X({}, t), {
+      modalCount: e
+    })), {
+      stackingBehavior: o
+    })
+  }, c = a < 3;
+  return (0, r.jsx)(b.Modal, {
     transitionState: t,
     onClose: n,
-    size: 1 === s ? "md" : "sm",
+    size: 1 === a ? "md" : "sm",
     title: "Mana Modal Stacking Demo",
-    subtitle: "This is modal level ".concat(s, "."),
+    subtitle: "This is modal level ".concat(a, "."),
     actions: [{
       variant: "secondary",
       text: "Close",
       onClick: n
-    }, ...o ? [{
+    }, ...c ? [{
       variant: "primary",
       text: "Open Next Modal",
-      onClick: () => {
-        let e = s + 1;
-        (0, N.h7j)(t => (0, i.jsx)(eT, X(q({}, t), {
-          modalCount: e
-        })), {
-          stackingBehavior: a
-        })
-      }
+      onClick: l
     }] : []],
-    children: (0, i.jsxs)(N.Kqy, {
+    children: (0, r.jsxs)(C.Kqy, {
       gap: 16,
-      children: [o && (0, i.jsx)(N.xJW, {
+      children: [c && (0, r.jsx)(C.xJW, {
         title: "Stacking Behavior",
-        children: (0, i.jsx)(N.q4e, {
-          value: a,
-          onChange: l,
+        children: (0, r.jsx)(C.q4e, {
+          value: o,
+          onChange: s,
           options: [{
             label: "Replace (default)",
             value: "replace"
@@ -2680,24 +2692,24 @@ function eT(e) {
             value: "replaceAll"
           }]
         })
-      }), (0, i.jsxs)(N.Kqy, {
+      }), (0, r.jsxs)(C.Kqy, {
         gap: 8,
-        children: [(0, i.jsxs)(N.Text, {
+        children: [(0, r.jsxs)(C.Text, {
           variant: "text-sm/normal",
           color: "text-muted",
-          children: [(0, i.jsx)("strong", {
+          children: [(0, r.jsx)("strong", {
             children: "Replace One:"
           }), " The modal directly below is hidden (default behavior)"]
-        }), (0, i.jsxs)(N.Text, {
+        }), (0, r.jsxs)(C.Text, {
           variant: "text-sm/normal",
           color: "text-muted",
-          children: [(0, i.jsx)("strong", {
+          children: [(0, r.jsx)("strong", {
             children: "Replace All:"
           }), " All modals below are hidden"]
-        }), (0, i.jsxs)(N.Text, {
+        }), (0, r.jsxs)(C.Text, {
           variant: "text-sm/normal",
           color: "text-muted",
-          children: [(0, i.jsx)("strong", {
+          children: [(0, r.jsx)("strong", {
             children: "Stack:"
           }), " The modal directly below remains visible"]
         })]
@@ -2706,7 +2718,39 @@ function eT(e) {
   })
 }
 
-function eN() {
+function ew() {
+  let e = () => {
+      (0, Chunk481060.h7j)(e => (0, r.jsx)(eI, X({}, e)))
+    },
+    t = () => {
+      (0, Chunk481060.h7j)(e => (0, r.jsx)(eT, X({}, e)))
+    },
+    n = () => {
+      (0, Chunk481060.h7j)(e => (0, r.jsx)(eS, X({}, e)))
+    },
+    i = () => {
+      (0, Chunk481060.h7j)(e => (0, r.jsx)(eA, X({}, e)))
+    },
+    a = () => {
+      (0, Chunk481060.h7j)(e => (0, r.jsx)(eC, X({}, e)))
+    },
+    o = () => {
+      (0, Chunk481060.h7j)(e => (0, r.jsx)(eN, X({}, e)))
+    },
+    s = () => {
+      (0, Chunk481060.h7j)(e => (0, r.jsx)(eR, X({}, e)))
+    },
+    l = () => {
+      (0, Chunk481060.h7j)(e => (0, r.jsx)(eP, X({}, e)))
+    },
+    c = () => {
+      Chunk240872.Z.show({
+        title: "Alert",
+        body: "This is an alert",
+        confirmText: "Confirm Text",
+        cancelText: "Cancel Text"
+      })
+    };
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsxs)("div", {
       className: Chunk726927.section,
@@ -2716,26 +2760,15 @@ function eN() {
       }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
         variant: "primary",
         text: "Open modal",
-        onClick: () => {
-          (0, Chunk481060.h7j)(e => (0, i.jsx)(e_, q({}, e)))
-        }
+        onClick: module
       }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
         variant: "primary",
         text: "Show Alert",
-        onClick: () => {
-          Chunk240872.Z.show({
-            title: "Alert",
-            body: "This is an alert",
-            confirmText: "Confirm Text",
-            cancelText: "Cancel Text"
-          })
-        }
+        onClick: Chunk442837
       }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
         variant: "primary",
         text: "Open modal stacking demo",
-        onClick: () => {
-          (0, Chunk481060.h7j)(e => (0, i.jsx)(ej, q({}, e)))
-        }
+        onClick: exports
       })]
     }), (0, Chunk951288.jsxs)("div", {
       className: Chunk726927.section,
@@ -2745,45 +2778,34 @@ function eN() {
       }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
         variant: "primary",
         text: "Open modal section visualizer",
-        onClick: () => {
-          (0, Chunk481060.h7j)(e => (0, i.jsx)(eE, q({}, e)))
-        }
+        onClick: require
       }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
         variant: "primary",
         text: "Open demo modal",
-        onClick: () => {
-          (0, Chunk481060.h7j)(e => (0, i.jsx)(eC, q({}, e)))
-        }
+        onClick: Chunk647438
       }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
         variant: "primary",
         text: "Open sample invite modal",
-        onClick: () => {
-          (0, Chunk481060.h7j)(e => (0, i.jsx)(eO, q({}, e)))
-        }
+        onClick: Chunk120356
       }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
         variant: "primary",
         text: "Open sample alert modal",
-        onClick: () => {
-          (0, Chunk481060.h7j)(e => (0, i.jsx)(ev, q({}, e)))
-        }
+        onClick: o
       }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
         variant: "primary",
         text: "Open expressive modal",
-        onClick: () => {
-          (0, Chunk481060.h7j)(e => (0, i.jsx)(eS, q({}, e)))
-        }
+        onClick: Chunk392711
       }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
         variant: "primary",
         text: "Open Mana modal stacking demo",
-        onClick: () => {
-          (0, Chunk481060.h7j)(e => (0, i.jsx)(eT, q({}, e)))
-        }
+        onClick: Chunk971809
       })]
     })]
   })
 }
 
-function eI() {
+function eD() {
+  let e = ["SIZE_16", "SIZE_20", "SIZE_24", "SIZE_32", "SIZE_40", "SIZE_44", "SIZE_48", "SIZE_80", "SIZE_96", "SIZE_120"];
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk726927.section,
     children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
@@ -2794,53 +2816,53 @@ function eI() {
         display: "flex",
         justifyContent: "space-between"
       },
-      children: ["SIZE_16", "SIZE_20", "SIZE_24", "SIZE_32", "SIZE_40", "SIZE_44", "SIZE_48", "SIZE_80", "SIZE_96", "SIZE_120"].map(e => (0, i.jsx)(ey, {
+      children: module.map(e => (0, r.jsx)(ex, {
         size: e
       }, e))
     })]
   })
 }
 
-function ey(e) {
+function ex(e) {
   let {
     size: t
   } = e, {
     user: n
-  } = (0, c.cj)([Z.default], () => ({
-    user: Z.default.getCurrentUser()
-  })), r = Number(t.split("_")[1]);
-  return (0, i.jsxs)("div", {
+  } = (0, c.cj)([L.default], () => ({
+    user: L.default.getCurrentUser()
+  })), i = Number(t.split("_")[1]);
+  return (0, r.jsxs)("div", {
     style: {
       display: "flex",
       flexDirection: "column",
       justifyContent: "space-between",
       gap: 8
     },
-    children: [(0, i.jsxs)(N.X6q, {
+    children: [(0, r.jsxs)(C.X6q, {
       variant: "heading-sm/semibold",
       style: {
         textAlign: "center"
       },
-      children: [r, "px"]
-    }), (0, i.jsx)(N.qEK, {
-      src: null == n ? true : n.getAvatarURL(true, r),
+      children: [i, "px"]
+    }), (0, r.jsx)(C.qEK, {
+      src: null == n ? true : n.getAvatarURL(true, i),
       size: t,
       "aria-label": null == n ? true : n.username,
-      status: V.Sk.ONLINE
-    }), (0, i.jsx)(N.qEK, {
-      src: null == n ? true : n.getAvatarURL(true, r),
+      status: Z.Sk.ONLINE
+    }), (0, r.jsx)(C.qEK, {
+      src: null == n ? true : n.getAvatarURL(true, i),
       size: t,
       "aria-label": null == n ? true : n.username,
-      status: V.Sk.ONLINE,
+      status: Z.Sk.ONLINE,
       isTyping: true
-    }), (0, i.jsx)(N.qEK, {
-      src: null == n ? true : n.getAvatarURL(true, r),
+    }), (0, r.jsx)(C.qEK, {
+      src: null == n ? true : n.getAvatarURL(true, i),
       size: t,
       "aria-label": null == n ? true : n.username,
-      status: V.Sk.ONLINE,
+      status: Z.Sk.ONLINE,
       isMobile: true
-    }), (0, i.jsx)(N.qEK, {
-      src: null == n ? true : n.getAvatarURL(true, r),
+    }), (0, r.jsx)(C.qEK, {
+      src: null == n ? true : n.getAvatarURL(true, i),
       size: t,
       "aria-label": null == n ? true : n.username,
       isSpeaking: true
@@ -2848,40 +2870,40 @@ function ey(e) {
   })
 }
 
-function eA() {
+function eL() {
   let e = (0, Chunk442837.e7)([Chunk514361.Z], () => Chunk514361.Z.gradientPreset);
   return (0, Chunk951288.jsx)(Chunk481060.f6W, {
     theme: Chunk231338.BR.DARKER,
     disableAdaptiveTheme: true,
-    children: t => (0, i.jsxs)("div", {
-      className: a()(t, G.section),
-      children: [(0, i.jsx)(N.zxk, {
+    children: t => (0, r.jsxs)("div", {
+      className: o()(t, V.section),
+      children: [(0, r.jsx)(C.zxk, {
         variant: "secondary",
         text: "Button",
         fullWidth: true
-      }), (0, i.jsx)(N.f6W, {
-        theme: V.BR.LIGHT,
-        children: t => (0, i.jsxs)("div", {
-          className: a()(t, G.section),
-          children: [(0, i.jsx)(N.zxk, {
+      }), (0, r.jsx)(C.f6W, {
+        theme: Z.BR.LIGHT,
+        children: t => (0, r.jsxs)("div", {
+          className: o()(t, V.section),
+          children: [(0, r.jsx)(C.zxk, {
             variant: "secondary",
             text: "Button",
             fullWidth: true
-          }), (0, i.jsx)(N.f6W, {
-            theme: V.BR.DARKER,
-            children: e => (0, i.jsx)("div", {
-              className: a()(e, G.section),
-              children: (0, i.jsx)(N.zxk, {
+          }), (0, r.jsx)(C.f6W, {
+            theme: Z.BR.DARKER,
+            children: e => (0, r.jsx)("div", {
+              className: o()(e, V.section),
+              children: (0, r.jsx)(C.zxk, {
                 variant: "secondary",
                 text: "Button",
                 fullWidth: true
               })
             })
-          }), (0, i.jsx)(N.f6W, {
+          }), (0, r.jsx)(C.f6W, {
             gradient: e,
-            children: e => (0, i.jsx)("div", {
-              className: a()(e, G.section),
-              children: (0, i.jsx)(N.zxk, {
+            children: e => (0, r.jsx)("div", {
+              className: o()(e, V.section),
+              children: (0, r.jsx)(C.zxk, {
                 variant: "secondary",
                 text: "Button",
                 fullWidth: true

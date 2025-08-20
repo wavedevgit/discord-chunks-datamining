@@ -1,25 +1,25 @@
-/** Chunk was on 75283 **/
-/** chunk id: 398145, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 8853 **/
+/** chunk id: 398145, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => a
+  Z: () => c
 });
 var Chunk806729 = require("./806729.js"),
   Chunk146078 = require("./146078.js"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx");
 
-function a(e) {
+function c(e) {
   let {
-    mutualGuilds: t
-  } = (0, r.Z)(e), n = null == t ? true : t.length;
+    mutualGuilds: n
+  } = (0, r.Z)(e), t = null == n ? true : n.length;
   return [{
-    section: i.oh.BOT_INFO,
-    text: l.intl.string(l.t.jGoPJS)
+    section: l.oh.BOT_INFO,
+    text: i.intl.string(i.t.jGoPJS)
   }, {
-    section: i.oh.MUTUAL_GUILDS,
-    text: (0, o.Z)(n)
+    section: l.oh.MUTUAL_GUILDS,
+    text: (0, o.Z)(t)
   }, {
-    section: i.oh.BOT_DATA_ACCESS,
-    text: l.intl.string(l.t.WstFb2)
+    section: l.oh.BOT_DATA_ACCESS,
+    text: i.intl.string(i.t.WstFb2)
   }]
 }

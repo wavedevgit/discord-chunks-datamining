@@ -1,5 +1,6 @@
-/** Chunk was on 21046 **/
-/** chunk id: 557579, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 557579, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   contentCollapsed: "contentCollapsed__5f897",
   contentCollapsedWrapper: "contentCollapsedWrapper__5f897",

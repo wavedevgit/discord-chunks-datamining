@@ -98,13 +98,13 @@ module.exports = function(e) {
         subLanguage: "graphql"
       }
     },
-    N = {
+    C = {
       className: "string",
       begin: "`",
       end: "`",
       contains: [e.BACKSLASH_ESCAPE, I]
     },
-    C = {
+    N = {
       className: "comment",
       variants: [e.COMMENT(/\/\*\*(?!\/)/, "\\*/", {
         relevance: 0,
@@ -133,7 +133,7 @@ module.exports = function(e) {
         }]
       }), e.C_BLOCK_COMMENT_MODE, e.C_LINE_COMMENT_MODE]
     },
-    R = [e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, T, S, A, N, {
+    R = [e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, T, S, A, C, {
       match: /\$\d+/
     }, v];
   I.contains = R.concat({
@@ -142,7 +142,7 @@ module.exports = function(e) {
     keywords: E,
     contains: ["self"].concat(R)
   });
-  let P = [].concat(C, I.contains),
+  let P = [].concat(N, I.contains),
     w = P.concat([{
       begin: /(\s*)\(/,
       end: /\)/,
@@ -158,7 +158,7 @@ module.exports = function(e) {
       keywords: E,
       contains: w
     },
-    L = {
+    x = {
       variants: [{
         match: [/class/, /\s+/, d, /\s+/, /extends/, /\s+/, c.concat(d, "(", c.concat(/\./, d), ")*")],
         scope: {
@@ -175,7 +175,7 @@ module.exports = function(e) {
         }
       }]
     },
-    x = {
+    L = {
       relevance: 0,
       match: c.either(/\bJSON/, /\b[A-Z][a-z]+([A-Z][a-z]*|\d)*/, /\b[A-Z]{2,}([A-Z][a-z]+|\d)+([A-Z][a-z]*)*/, /\b[A-Z]{2,}[a-z]+([A-Z][a-z]+|\d)*([A-Z][a-z]*)*/),
       className: "title.class",
@@ -183,13 +183,13 @@ module.exports = function(e) {
         _: [...i, ...a]
       }
     },
-    M = {
+    j = {
       label: "use_strict",
       className: "meta",
       relevance: 10,
       begin: /^\s*['"]use (strict|asm)['"]/
     },
-    k = {
+    M = {
       variants: [{
         match: [/function/, /\s+/, d, /(?=\s*\()/]
       }, {
@@ -203,7 +203,7 @@ module.exports = function(e) {
       contains: [D],
       illegal: /%/
     },
-    j = {
+    k = {
       relevance: 0,
       match: /\b[A-Z][A-Z_0-9]+\b/,
       className: "variable.constant"
@@ -225,7 +225,7 @@ module.exports = function(e) {
       className: "property",
       relevance: 0
     },
-    V = {
+    Z = {
       match: [/get|set/, /\s+/, d, /(?=\()/],
       className: {
         1: "keyword",
@@ -235,9 +235,9 @@ module.exports = function(e) {
         begin: /\(\)/
       }, D]
     },
-    F = "(\\([^()]*(\\([^()]*(\\([^()]*\\)[^()]*)*\\)[^()]*)*\\)|" + e.UNDERSCORE_IDENT_RE + ")\\s*=>",
-    Z = {
-      match: [/const|var|let/, /\s+/, d, /\s*/, /=\s*/, /(async\s*)?/, c.lookahead(F)],
+    V = "(\\([^()]*(\\([^()]*(\\([^()]*\\)[^()]*)*\\)[^()]*)*\\)|" + e.UNDERSCORE_IDENT_RE + ")\\s*=>",
+    F = {
+      match: [/const|var|let/, /\s+/, d, /\s*/, /=\s*/, /(async\s*)?/, c.lookahead(V)],
       keywords: "async",
       className: {
         1: "keyword",
@@ -251,26 +251,26 @@ module.exports = function(e) {
     keywords: E,
     exports: {
       PARAMS_CONTAINS: w,
-      CLASS_REFERENCE: x
+      CLASS_REFERENCE: L
     },
     illegal: /#(?![$_A-z])/,
     contains: [e.SHEBANG({
       label: "shebang",
       binary: "node",
       relevance: 5
-    }), M, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, T, S, A, N, C, {
+    }), j, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, T, S, A, C, N, {
       match: /\$\d+/
-    }, v, x, {
+    }, v, L, {
       scope: "attr",
       match: d + c.lookahead(":"),
       relevance: 0
-    }, Z, {
+    }, F, {
       begin: "(" + e.RE_STARTERS_RE + "|\\b(case|return|throw)\\b)\\s*",
       keywords: "return throw case",
       relevance: 0,
-      contains: [C, e.REGEXP_MODE, {
+      contains: [N, e.REGEXP_MODE, {
         className: "function",
-        begin: F,
+        begin: V,
         returnBegin: true,
         end: "\\s*=>",
         contains: [{
@@ -316,7 +316,7 @@ module.exports = function(e) {
           contains: ["self"]
         }]
       }]
-    }, k, {
+    }, M, {
       beginKeywords: "while if switch catch for"
     }, {
       begin: "\\b(?!function)" + e.UNDERSCORE_IDENT_RE + "\\([^()]*(\\([^()]*(\\([^()]*\\)[^()]*)*\\)[^()]*)*\\)\\s*\\{",
@@ -338,7 +338,7 @@ module.exports = function(e) {
         1: "title.function"
       },
       contains: [D]
-    }, G, j, L, V, {
+    }, G, k, x, Z, {
       match: /\$[(.]/
     }]
   }

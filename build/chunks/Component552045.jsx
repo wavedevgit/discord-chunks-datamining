@@ -1,12 +1,13 @@
-/** Chunk was on 66181 **/
-/** chunk id: 552045, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 552045, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => j
+  Z: () => y
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk785681 = require("./785681.js"),
   Chunk841409 = require("./841409.js"),
@@ -20,7 +21,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk519279 = require("./519279.js"),
   Chunk633488 = require("./633488.js"),
   Chunk361848 = require("./361848.js");
-let _ = () => {
+let b = () => {
     let e = (0, Chunk631885.mq)(Chunk292352.ne.ACTIVE),
       t = (0, Chunk880257.Z)(),
       {
@@ -35,7 +36,7 @@ let _ = () => {
       }) : (0, Chunk951288.jsx)(Chunk568671.Z, {})
     })
   },
-  j = () => {
+  y = () => {
     let e = (0, Chunk880257.Z)(),
       t = (0, Chunk785681.o)(Chunk388032.intl.string(Chunk345909.default.T7GyW1), Chunk388032.intl.string(Chunk345909.default.goKE2d)),
       n = (0, Chunk785681.o)(Chunk388032.intl.format(Chunk345909.default.MXjDSk, {
@@ -44,7 +45,7 @@ let _ = () => {
         articleLink: "https://support.discord.com/hc/articles/14155043715735"
       }));
     return (0, Chunk951288.jsxs)("div", {
-      className: s()(Chunk26919.container, Chunk519279.box),
+      className: a()(Chunk26919.container, Chunk519279.box),
       children: [(0, Chunk951288.jsxs)("div", {
         children: [(0, Chunk951288.jsx)("div", {
           children: (0, Chunk951288.jsxs)("div", {
@@ -60,7 +61,7 @@ let _ = () => {
               children: require
             })]
           })
-        }), (0, Chunk951288.jsx)(_, {})]
+        }), (0, Chunk951288.jsx)(b, {})]
       }), (0, Chunk951288.jsx)("div", {
         className: Chunk26919.headerImage,
         children: (0, Chunk951288.jsx)("img", {

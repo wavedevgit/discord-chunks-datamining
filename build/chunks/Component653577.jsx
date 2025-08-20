@@ -1,4 +1,4 @@
-/** Chunk was on 69003 **/
+/** Chunk was on 91488 **/
 /** chunk id: 653577, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -27,29 +27,29 @@ function O(e) {
     subtitle: O,
     onClick: _,
     enableHangStatus: y,
-    allowChannelTopic: v
-  } = e, j = (0, a.e7)([u.Z], () => u.Z.getChannelStatus(t)), C = null != j && j.length > 0, E = (0, c.ZP)(t, true), x = (!y || !!v) && E, S = null != O && O.length > 0;
+    allowChannelTopic: j
+  } = e, v = (0, a.e7)([u.Z], () => u.Z.getChannelStatus(t)), C = null != v && v.length > 0, x = (0, c.ZP)(t, true), E = (!y || !!j) && x, S = null != O && O.length > 0;
   if (i.useEffect(() => {
       C && f.default.track(h.rMx.VOICE_CHANNEL_TOPIC_VIEWED, {
         channel_id: t.id,
         guild_id: t.guild_id
       })
     }, [C, t.id, t.guild_id]), null == t.guild_id) return null;
-  let P = o()(m.statusDiv, n && x ? m.hoverable : null);
+  let I = o()(m.statusDiv, n && E ? m.hoverable : null);
   return C ? (0, r.jsx)(s.P3F, {
-    className: P,
-    onClick: x ? _ : true,
+    className: I,
+    onClick: E ? _ : true,
     children: (0, r.jsx)(s.Text, {
       variant: "text-xs/medium",
       className: o()(m.statusText, b.markup),
       children: (0, r.jsx)(d.Z, {
-        children: p.Z.parseVoiceChannelStatus(j, true, {
+        children: p.Z.parseVoiceChannelStatus(v, true, {
           channelId: t.id
         })
       })
     })
-  }) : n && x && (!S || l) ? (0, r.jsxs)(s.P3F, {
-    className: P,
+  }) : n && E && (!S || l) ? (0, r.jsxs)(s.P3F, {
+    className: I,
     onClick: _,
     children: [(0, r.jsx)(s.Text, {
       variant: "text-xs/medium",

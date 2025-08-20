@@ -1,5 +1,5 @@
-/** Chunk was on 75283 **/
-/** chunk id: 993160, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 8853 **/
+/** chunk id: 993160, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => b
 });
@@ -19,99 +19,99 @@ var Chunk755721 = require("./755721.js"),
 
 function b(e) {
   let {
-    user: t,
-    currentUser: n,
+    user: n,
+    currentUser: t,
     guildId: b,
     channelId: g,
-    displayProfile: h,
-    relationshipType: x,
-    onClose: _
+    displayProfile: x,
+    relationshipType: h,
+    onClose: j
   } = e, {
-    newestAnalyticsLocation: j
-  } = (0, l.ZP)(), v = (0, a.Z)({
-    user: t,
+    newestAnalyticsLocation: v
+  } = (0, i.ZP)(), _ = (0, c.Z)({
+    user: n,
     guildId: b,
     channelId: g,
-    displayProfile: h,
-    onClose: _
+    displayProfile: x,
+    onClose: j
   }), {
     gameFriends: y,
     hasOutgoingPendingGameFriends: I,
     hasIncomingPendingGameFriends: O
-  } = (0, p.H)({
-    userId: t.id
-  }), Z = y.length > 0 || I || O;
-  return x === m.OGo.BLOCKED ? null : t.id === n.id ? (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(c.Z, {
-      user: t,
+  } = (0, m.H)({
+    userId: n.id
+  }), P = y.length > 0 || I || O;
+  return h === p.OGo.BLOCKED ? null : n.id === t.id ? (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(a.Z, {
+      user: n,
       guildId: b,
-      onClose: _
+      onClose: j
     }), (0, r.jsx)(u.Z, {
-      onClose: _
+      onClose: j
     }), (0, r.jsx)(d.Z, {
       type: "icon",
-      user: t,
+      user: n,
       guildId: b,
-      viewProfileItem: v,
+      viewProfileItem: _,
       themeColor: "secondary"
     })]
-  }) : t.bot ? (0, r.jsxs)(r.Fragment, {
+  }) : n.bot ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.Z, {
       type: "text",
-      userId: t.id,
-      onClose: i.Z.popAll,
+      userId: n.id,
+      onClose: l.Z.popAll,
       autoFocus: true
     }), (0, r.jsx)(d.Z, {
       type: "icon",
-      user: t,
+      user: n,
       guildId: b,
-      viewProfileItem: v,
+      viewProfileItem: _,
       themeColor: "secondary"
     })]
-  }) : x === m.OGo.PENDING_INCOMING ? (0, r.jsxs)(r.Fragment, {
+  }) : h === p.OGo.PENDING_INCOMING ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.Z, {
       type: "text",
-      userId: t.id,
+      userId: n.id,
       color: o.zx.Colors.BRAND,
-      onClose: i.Z.popAll,
+      onClose: l.Z.popAll,
       autoFocus: true
     }), (0, r.jsx)(d.Z, {
       type: "icon",
-      user: t,
+      user: n,
       guildId: b,
       themeColor: "secondary"
     })]
-  }) : x === m.OGo.FRIEND || x === m.OGo.PENDING_OUTGOING ? (0, r.jsxs)(r.Fragment, {
+  }) : h === p.OGo.FRIEND || h === p.OGo.PENDING_OUTGOING ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.Z, {
       type: "text",
-      userId: t.id,
+      userId: n.id,
       color: o.zx.Colors.BRAND,
-      onClose: i.Z.popAll,
+      onClose: l.Z.popAll,
       autoFocus: true
     }), (0, r.jsx)(f.g, {
       type: "icon",
-      user: t,
-      relationshipType: x,
+      user: n,
+      relationshipType: h,
       shouldShowTooltip: true,
       themeColor: "secondary",
-      analyticsLocation: j
+      analyticsLocation: v
     }), (0, r.jsx)(d.Z, {
       type: "icon",
-      user: t,
+      user: n,
       guildId: b,
-      viewProfileItem: v,
+      viewProfileItem: _,
       themeColor: "secondary"
     })]
-  }) : x === m.OGo.NONE && Z ? (0, r.jsxs)(r.Fragment, {
+  }) : h === p.OGo.NONE && P ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.Z, {
       type: "text",
-      userId: t.id,
-      onClose: i.Z.popAll,
+      userId: n.id,
+      onClose: l.Z.popAll,
       autoFocus: true
     }), (0, r.jsx)(f.k9, {
       type: "icon",
-      user: t,
-      analyticsLocation: j,
+      user: n,
+      analyticsLocation: v,
       themeColor: "secondary",
       gameFriends: y,
       tooltipPosition: "top",
@@ -121,28 +121,28 @@ function b(e) {
       hasOutgoingPendingGameFriends: I
     }), (0, r.jsx)(d.Z, {
       type: "icon",
-      user: t,
+      user: n,
       guildId: b,
-      viewProfileItem: v,
+      viewProfileItem: _,
       themeColor: "secondary"
     })]
   }) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(f.Z7, {
       type: "text",
-      userId: t.id,
-      analyticsLocation: j,
+      userId: n.id,
+      analyticsLocation: v,
       color: o.zx.Colors.BRAND,
       autoFocus: true
     }), (0, r.jsx)(s.Z, {
       type: "icon",
-      userId: t.id,
-      onClose: i.Z.popAll,
+      userId: n.id,
+      onClose: l.Z.popAll,
       themeColor: "secondary"
     }), (0, r.jsx)(d.Z, {
       type: "icon",
-      user: t,
+      user: n,
       guildId: b,
-      viewProfileItem: v,
+      viewProfileItem: _,
       themeColor: "secondary"
     })]
   })

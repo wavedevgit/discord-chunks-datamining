@@ -1,5 +1,6 @@
-/** Chunk was on 66181 **/
-/** chunk id: 841409, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 841409, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   Z: () => c
 });
@@ -12,8 +13,8 @@ var Chunk399606 = require("./399606.js"),
 let c = () => ({
   selectedTab: (0, Chunk399606.e7)([Chunk914788.Z], () => Chunk914788.Z.getSelectedTab()),
   handleTabChange: e => {
-    s.ZP.selectTab(e), r.default.track(o.rMx.FAMILY_CENTER_ACTION, {
-      action: l.YC.TabChange,
+    a.ZP.selectTab(e), i.default.track(l.rMx.FAMILY_CENTER_ACTION, {
+      action: s.YC.TabChange,
       tab: e
     })
   }

@@ -1,5 +1,6 @@
-/** Chunk was on 54157 **/
-/** chunk id: 448402, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 448402, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   search: "search__97492",
   searchBar: "searchBar__97492",

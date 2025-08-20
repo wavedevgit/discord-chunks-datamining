@@ -1,4 +1,4 @@
-/** Chunk was on 67079 **/
+/** Chunk was on 65819 **/
 /** chunk id: 903759, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   u: () => m
@@ -15,53 +15,53 @@ var Chunk951288 = require("./951288.js"),
 let m = e => {
     let {
       setImage: t
-    } = e, [n, s] = l.useState(null);
+    } = e, [n, o] = l.useState(null);
     return (0, r.jsx)("div", {
       className: d.emptyState,
       children: (0, r.jsxs)("div", {
         className: d.dropZone,
-        children: [(0, r.jsx)(a.FmF, {
+        children: [(0, r.jsx)(i.FmF, {
           size: "lg",
-          color: a.TVs.colors.HEADER_MUTED,
+          color: i.TVs.colors.HEADER_MUTED,
           className: d.imagePlusIcon
         }), (0, r.jsxs)("div", {
           className: d.textContainer,
-          children: [(0, r.jsx)(a.Text, {
+          children: [(0, r.jsx)(i.Text, {
             variant: "text-md/medium",
             children: c.intl.format(c.t["Ks2/3d"], {
-              selectFileHook: (e, n) => (0, r.jsx)(h, {
+              selectFileHook: (e, n) => (0, r.jsx)(f, {
                 translatedContent: e,
                 setUserImage: t
               }, n)
             })
-          }), (0, r.jsx)(a.Text, {
+          }), (0, r.jsx)(i.Text, {
             variant: "text-xs/normal",
             color: "text-tertiary",
             children: c.intl.string(c.t.UTE8Cw)
           })]
         }), null !== n && (0, r.jsx)(u.H, {
-          error: o.ze.IMAGE_LOAD,
+          error: s.ze.IMAGE_LOAD,
           variant: "text-sm/normal",
           color: "text-danger"
-        }), (0, r.jsx)(i.X, {
+        }), (0, r.jsx)(a.X, {
           onSuccess: t,
-          onError: s
+          onError: o
         })]
       })
     })
   },
-  h = e => {
+  f = e => {
     let {
       setUserImage: t,
       translatedContent: n
     } = e;
-    return (0, r.jsx)(a.P3F, {
+    return (0, r.jsx)(i.P3F, {
       focusProps: {
         within: true
       },
       tag: "a",
       children: (0, r.jsxs)("label", {
-        children: [n, (0, r.jsx)(s.ZP, {
+        children: [n, (0, r.jsx)(o.ZP, {
           tabIndex: 0,
           onChange: (e, n, r) => (t({
             data: e,

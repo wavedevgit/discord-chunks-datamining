@@ -71,10 +71,10 @@ let v = function(e) {
   }), S = E === p.z;
   if ((!S || null != v && null != I) && !y) return null;
   let A = l.Z.get(h.ABu.RIOT_GAMES),
-    N = S && null == v && null == I,
-    C = S && null != v && null == I,
+    C = S && null == v && null == I,
+    N = S && null != v && null == I,
     R = S && null == v && null != I,
-    P = C || R;
+    P = N || R;
 
   function w() {
     null != T && (0, s.ZDy)(async () => {
@@ -89,24 +89,24 @@ let v = function(e) {
   }
 
   function D() {
-    return N || P ? (0, c.Z)({
+    return C || P ? (0, c.Z)({
       platformType: h.ABu.RIOT_GAMES
     }) : w()
   }
 
-  function L() {
-    return N ? m.intl.string(m.t.w6VSSE) : P ? m.intl.string(m.t.CHNBdn) : m.intl.string(m.t["0yRXHx"])
+  function x() {
+    return C ? m.intl.string(m.t.w6VSSE) : P ? m.intl.string(m.t.CHNBdn) : m.intl.string(m.t["0yRXHx"])
   }
 
-  function x() {
+  function L() {
     if (y) return null;
-    let e = N ? (0, r.jsx)(s.d3s, {
+    let e = C ? (0, r.jsx)(s.d3s, {
         className: g.infoMessageIcon
       }) : (0, r.jsx)(s.aNP, {
         color: a.Z.colors.STATUS_WARNING,
         className: g.infoMessageIcon
       }),
-      t = N ? m.intl.string(m.t["Ihg/Dg"]) : m.intl.string(m.t["J8U+Iy"]);
+      t = C ? m.intl.string(m.t["Ihg/Dg"]) : m.intl.string(m.t["J8U+Iy"]);
     return (0, r.jsxs)("div", {
       className: g.updateMessage,
       children: [e, (0, r.jsx)(s.Text, {
@@ -119,7 +119,7 @@ let v = function(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(u.Z, {
       className: g.divider
-    }), x(), (0, r.jsxs)(o.zx, {
+    }), L(), (0, r.jsxs)(o.zx, {
       className: g.joinLeaderboardButton,
       innerClassName: g.joinLeaderboardButtonInner,
       onClick: D,
@@ -127,7 +127,7 @@ let v = function(e) {
         alt: "Riot Games",
         src: A.icon.whiteSVG,
         className: g.riotIcon
-      }), L()]
+      }), x()]
     })]
   })
 }

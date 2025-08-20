@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   PH: () => R,
-  ZP: () => F,
-  sQ: () => N
+  ZP: () => V,
+  sQ: () => C
 }), require("./388685.js");
 var r, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -76,15 +76,15 @@ function A(e, t, n) {
   let i = null != (r = null == t ? true : t.nick) ? r : m.ZP.getName(n);
   return {
     member: t,
-    comparator: N(e, i)
+    comparator: C(e, i)
   }
 }
 
-function N(e, t) {
+function C(e, t) {
   return "".concat(e.selfStream ? "\0" : "\x01").concat(t.toLowerCase(), "\0").concat(e.userId)
 }
 
-function C(e, t, n) {
+function N(e, t, n) {
   return A(n, S(e, t), t)
 }
 
@@ -100,7 +100,7 @@ function R(e, t, n, r) {
   let {
     member: s,
     comparator: l
-  } = C(t, a, e), u = {
+  } = N(t, a, e), u = {
     voiceState: e,
     user: a,
     member: s,
@@ -124,7 +124,7 @@ class P {
           o = null != (i = null == a ? true : a.nick) ? i : m.ZP.getName(r);
         return this._voiceStates.set(e, O(b({}, n), {
           member: a,
-          comparator: N(t, o),
+          comparator: C(t, o),
           nick: o,
           voiceState: t
         })), true
@@ -206,7 +206,7 @@ function D() {
   B()
 }
 
-function L(e) {
+function x(e) {
   let {
     voiceStates: t
   } = e;
@@ -219,7 +219,7 @@ function L(e) {
   }, false)
 }
 
-function x(e) {
+function L(e) {
   var t, n;
   let r = false,
     i = new Set(null == (t = I[e.guildId]) ? true : t.getUserIds()),
@@ -230,18 +230,18 @@ function x(e) {
   return r
 }
 
-function M(e) {
+function j(e) {
   let {
     guildId: t
   } = e, n = u.default.getId();
   return null != n && T(null != t ? t : g.ME).updateVoiceState(n)
 }
 
-function k() {
+function M() {
   return a().reduce(I, (e, t) => t.updateUsers() || e, false)
 }
 
-function j(e) {
+function k(e) {
   let {
     guildId: t,
     user: n
@@ -272,9 +272,9 @@ function B() {
     })
   })
 }
-class V extends(r = Chunk442837.ZP.Store) {
+class Z extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    B(), this.waitFor(Chunk314897.default, Chunk594174.default, Chunk271383.ZP, Chunk979651.Z), this.syncWith([Chunk594174.default], k)
+    B(), this.waitFor(Chunk314897.default, Chunk594174.default, Chunk271383.ZP, Chunk979651.Z), this.syncWith([Chunk594174.default], M)
   }
   getVoiceStates(e) {
     return T(null != e ? e : g.ME).getVoiceStates()
@@ -300,14 +300,14 @@ class V extends(r = Chunk442837.ZP.Store) {
     return T(null != e ? e : g.ME).getVersion()
   }
 }
-E(V, "displayName", "SortedVoiceStateStore");
-let F = new V(Chunk570140.Z, {
+E(Z, "displayName", "SortedVoiceStateStore");
+let V = new Z(Chunk570140.Z, {
   CONNECTION_OPEN: w,
   OVERLAY_INITIALIZE: D,
-  VOICE_CHANNEL_SELECT: M,
-  VOICE_STATE_UPDATES: L,
-  GUILD_MEMBER_UPDATE: j,
+  VOICE_CHANNEL_SELECT: j,
+  VOICE_STATE_UPDATES: x,
+  GUILD_MEMBER_UPDATE: k,
   GUILD_CREATE: U,
   GUILD_DELETE: G,
-  PASSIVE_UPDATE_V2: x
+  PASSIVE_UPDATE_V2: L
 })

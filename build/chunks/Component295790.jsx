@@ -1,5 +1,6 @@
-/** Chunk was on 26434 **/
-/** chunk id: 295790, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 295790, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   Z: () => o
 });
@@ -13,12 +14,12 @@ function o(e) {
     message: t,
     channel: n,
     compact: o,
-    disableInteraction: a
+    disableInteraction: s
   } = e;
-  return (0, i.Z)(t) ? (0, r.jsx)(l.Z, {
+  return (0, i.Z)(t) ? (0, r.jsx)(a.Z, {
     message: t,
     channel: n,
     compact: o,
-    disableInteraction: a
+    disableInteraction: s
   }) : null
 }

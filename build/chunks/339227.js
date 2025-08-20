@@ -231,10 +231,10 @@ let v = new Chunk710845.Z("MarkdownToSlate"),
 for (let e in Chunk428595.Z.RULES) {
   if (!(module in I)) throw Error("Slate: Unknown markdown rule: ".concat(module, ".  If you have just added a new markdown rule ") + "then you probably need to add it to this file so that the rich chat box understands it.");
   let t = I[module];
-  "skip" !== exports.type && (S[module] = N(Chunk428595.Z.RULES[module])), "skip" !== exports.type && "inlineObject" !== exports.type && (A[module] = N("text" === module ? Chunk594199.ZP : Chunk428595.Z.RULES[module]))
+  "skip" !== exports.type && (S[module] = C(Chunk428595.Z.RULES[module])), "skip" !== exports.type && "inlineObject" !== exports.type && (A[module] = C("text" === module ? Chunk594199.ZP : Chunk428595.Z.RULES[module]))
 }
 
-function N(e) {
+function C(e) {
   i()(null != e.parse, "Slate: rule must have a parse function");
   let t = e.parse;
   return O(b({}, e), {
@@ -245,7 +245,7 @@ function N(e) {
   })
 }
 
-function C(e) {
+function N(e) {
   return {
     type: "autolink",
     content: e[1],
@@ -269,13 +269,13 @@ let R = {
         type: "text",
         content: e[0],
         originalMatch: e
-      } : C(e)
+      } : N(e)
     },
     mailto: {
-      parse: C
+      parse: N
     },
     tel: {
-      parse: C
+      parse: N
     },
     codeBlockSyntax: {
       order: Chunk159635.defaultRules.inlineCode.order - .1,
@@ -298,15 +298,15 @@ let R = {
   P = /(-# +)/,
   w = (0, Chunk364458.Z)([S, R]),
   D = (0, Chunk364458.Z)([A, R]),
-  L = Chunk25209._p(w),
-  x = Chunk25209._p(D),
-  M = {
+  x = Chunk25209._p(w),
+  L = Chunk25209._p(D),
+  j = {
     max: 1 / 0,
     maxAge: +Chunk70956.Z.Millis.MINUTE,
     updateAgeOnGet: true
   },
-  k = new(o())(M),
-  j = new(o())(M);
+  M = new(o())(j),
+  k = new(o())(j);
 
 function U(e, t, n) {
   let r = [],
@@ -317,8 +317,8 @@ function U(e, t, n) {
       isSlate: true,
       allowGameMentions: true
     },
-    a = n ? x : L,
-    o = n ? j : k,
+    a = n ? L : x,
+    o = n ? k : M,
     s = o.get(e);
   if (null != s) return s;
   let l = e.replace(/\r\n/g, " \n").replace(/[\r\f]/g, " ").replace(/\t/g, " ") + "\n\n",
@@ -330,7 +330,7 @@ function U(e, t, n) {
       type: "paragraph",
       content: a(l, true, i)
     };
-  V(r, l, c, 0, []);
+  Z(r, l, c, 0, []);
   let u = B(r);
   return o.set(e, u), u
 }
@@ -377,7 +377,7 @@ function B(e) {
   return t
 }
 
-function V(e, t, n, r, a) {
+function Z(e, t, n, r, a) {
   let {
     content: o,
     type: s,
@@ -389,7 +389,7 @@ function V(e, t, n, r, a) {
     case "paragraph":
     case "text":
     case "emoticon":
-      return Z(e, t, o || "", r, a);
+      return F(e, t, o || "", r, a);
     case "emoji":
     case "customEmoji": {
       let i = t.substring(r);
@@ -489,7 +489,7 @@ function V(e, t, n, r, a) {
         attributes: [s],
         data: n
       });
-      return Z(e, t, l[0], r, a);
+      return F(e, t, l[0], r, a);
     case "em":
     case "autolink":
     case "mailto":
@@ -509,15 +509,15 @@ function V(e, t, n, r, a) {
       let {
         before: n,
         after: i
-      } = F(t, s, r, l);
-      return r = H(e, t, n, r, "syntaxBefore"), a.push(s), r = Z(e, t, null != o ? o : "", r, a), a.pop(), r = H(e, t, i, r, "syntaxAfter"), W(t, r)
+      } = V(t, s, r, l);
+      return r = H(e, t, n, r, "syntaxBefore"), a.push(s), r = F(e, t, null != o ? o : "", r, a), a.pop(), r = H(e, t, i, r, "syntaxAfter"), W(t, r)
     }
     default:
       throw Error("Slate: Unknown rule type: ".concat(s))
   }
 }
 
-function F(e, t, n, r) {
+function V(e, t, n, r) {
   if ("inlineCode" === t) return {
     before: r[1],
     after: r[1]
@@ -535,7 +535,7 @@ function F(e, t, n, r) {
   throw Error("Slate: rule must be an inlineStyle")
 }
 
-function Z(e, t, n, r, i) {
+function F(e, t, n, r, i) {
   return "string" == typeof n ? r = Y({
     result: e,
     sourceText: t,
@@ -544,7 +544,7 @@ function Z(e, t, n, r, i) {
     attributes: i,
     data: null
   }) : (n instanceof Array || (n = [n]), n.forEach(n => {
-    r = V(e, t, n, r, i)
+    r = Z(e, t, n, r, i)
   })), W(t, r)
 }
 

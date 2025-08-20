@@ -1,5 +1,6 @@
-/** Chunk was on 66181 **/
-/** chunk id: 645616, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 645616, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   Z: () => h
 });
@@ -14,73 +15,73 @@ var Chunk951288 = require("./951288.js"),
   Chunk323053 = require("./323053.js"),
   Chunk530347 = require("./530347.js"),
   Chunk334937 = require("./334937.js");
-let g = e => {
+let p = e => {
     let {
       supportHEVCAlpha: t,
       isMotionReduced: n,
-      containerVisibilityPercentage: r
+      containerVisibilityPercentage: i
     } = e;
-    return n ? (0, i.jsx)("div", {
-      className: d.flyingWumpusContainer,
-      children: (0, i.jsx)("img", {
-        src: p.Z,
+    return n ? (0, r.jsx)("div", {
+      className: u.flyingWumpusContainer,
+      children: (0, r.jsx)("img", {
+        src: _.Z,
         alt: "",
-        className: d.flyingWumpusAsset
+        className: u.flyingWumpusAsset
       })
-    }) : (0, i.jsx)("div", {
-      className: d.flyingWumpusContainer,
-      children: (0, i.jsx)(o.ZP, {
+    }) : (0, r.jsx)("div", {
+      className: u.flyingWumpusContainer,
+      children: (0, r.jsx)(l.ZP, {
         scaleAnimationData: {
           startScale: .9,
           endScale: 1,
-          duration: o.SR
+          duration: l.SR
         },
         yAxisAnimationData: {
           range: 20,
-          duration: o.b5,
-          path: o.js.SINE
+          duration: l.b5,
+          path: l.js.SINE
         },
         parallaxAnimationData: {
-          pathDirection: o.eo.UP,
+          pathDirection: l.eo.UP,
           range: 200,
-          containerVisibilityPercentage: r,
+          containerVisibilityPercentage: i,
           changeOpacity: false
         },
         animateXAxisWiggle: true,
-        children: t ? (0, i.jsx)("img", {
-          src: u.Z,
+        children: t ? (0, r.jsx)("img", {
+          src: d.Z,
           alt: "",
-          className: d.flyingWumpusAsset
-        }) : (0, i.jsx)(a.Z, {
+          className: u.flyingWumpusAsset
+        }) : (0, r.jsx)(o.Z, {
           muted: true,
           autoPlay: true,
           playsInline: true,
           loop: true,
-          className: d.flyingWumpusAsset,
-          children: (0, i.jsx)("source", {
-            src: m.Z
+          className: u.flyingWumpusAsset,
+          children: (0, r.jsx)("source", {
+            src: f.Z
           })
-        }, m.Z)
+        }, f.Z)
       })
     })
   },
   h = e => {
     let {
       containerVisibilityPercentage: t
-    } = e, n = (0, r.e7)([s.Z], () => s.Z.useReducedMotion), a = (0, l.rO)();
-    return (0, i.jsxs)(i.Fragment, {
-      children: [(0, i.jsx)(g, {
-        supportHEVCAlpha: a,
+    } = e, n = (0, i.e7)([a.Z], () => a.Z.useReducedMotion), o = (0, s.rO)();
+    return (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(p, {
+        supportHEVCAlpha: o,
         isMotionReduced: n,
         containerVisibilityPercentage: t
-      }), (0, i.jsx)(c.Z, {
+      }), (0, r.jsx)(c.Z, {
         isMotionReduced: n,
         containerVisibilityPercentage: t,
-        boltTrinketClassName: d.bolt,
-        carTrinketClassName: d.car,
-        hammerTrinketClassName: d.hammer,
-        keyTrinketClassName: d.key,
-        starTrinketClassName: d.star
+        boltTrinketClassName: u.bolt,
+        carTrinketClassName: u.car,
+        hammerTrinketClassName: u.hammer,
+        keyTrinketClassName: u.key,
+        starTrinketClassName: u.star
       })]
     })
   }

@@ -40,11 +40,11 @@ Chunk98405({
   DOMException: S ? b : E
 });
 var A = Chunk154028(m),
-  N = A.prototype;
-if (N.constructor !== A) {
-  for (var C in Chunk511696 || s(N, "constructor", Chunk530575(1, A)), Chunk17204)
-    if (Chunk77025(Chunk17204, C)) {
-      var R = Chunk17204[C],
+  C = A.prototype;
+if (C.constructor !== A) {
+  for (var N in Chunk511696 || s(C, "constructor", Chunk530575(1, A)), Chunk17204)
+    if (Chunk77025(Chunk17204, N)) {
+      var R = Chunk17204[N],
         P = R.s;
       Chunk77025(A, P) || s(A, P, Chunk530575(6, R.c))
     }

@@ -1,7 +1,8 @@
-/** Chunk was on 26434 **/
-/** chunk id: 498179, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 498179, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -13,70 +14,77 @@ var Chunk442837 = require("./442837.js"),
   Chunk701560 = require("./701560.jsx"),
   Chunk785547 = require("./785547.jsx");
 
-function d(e) {
+function d(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      var r;
-      r = n[t], t in e ? Object.defineProperty(e, t, {
-        value: r,
-        enumerable: true,
-        configurable: true,
-        writable: true
-      }) : e[t] = r
+      d(e, t, n[t])
     })
   }
   return e
 }
 
+function _(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
 function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
-    }
-    return n
-  })(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function m(e) {
+function h(e) {
   let {
     application: t,
     fullWidth: n = false,
-    size: m = l.zx.Sizes.LARGE,
-    color: f,
-    customDisabledColor: g,
-    hideNotLaunchable: _,
-    tooltipPosition: h,
-    onClick: b,
-    className: E,
-    source: C,
-    hover: v,
-    innerClassName: O
-  } = e, y = {
+    size: d = a.zx.Sizes.LARGE,
+    color: _,
+    customDisabledColor: h,
+    hideNotLaunchable: m,
+    tooltipPosition: g,
+    onClick: E,
+    className: b,
+    source: y,
+    hover: O,
+    innerClassName: v
+  } = e, I = {
     fullWidth: n,
-    size: m,
-    color: f,
-    customDisabledColor: g,
-    tooltipPosition: h,
-    onClick: b,
-    className: E,
-    hover: v,
-    innerClassName: O
-  }, x = (0, i.e7)([o.Z], () => o.Z.getActiveLibraryApplication(t.id)), j = null != x ? x.sku.id : null, I = null != j ? j : t.primarySkuId, S = (0, i.e7)([a.Z], () => null != I && !a.Z.didFetchingSkuFail(I));
-  return null != x && (0, s.Je)(x) ? (0, r.jsx)(u.Z, p(d({}, y), {
-    libraryApplication: x,
-    source: C
-  })) : S ? (0, r.jsx)("div", {
+    size: d,
+    color: _,
+    customDisabledColor: h,
+    tooltipPosition: g,
+    onClick: E,
+    className: b,
+    hover: O,
+    innerClassName: v
+  }, T = (0, i.e7)([o.Z], () => o.Z.getActiveLibraryApplication(t.id)), S = null != T ? T.sku.id : null, A = null != S ? S : t.primarySkuId, C = (0, i.e7)([s.Z], () => null != A && !s.Z.didFetchingSkuFail(A));
+  return null != T && (0, l.Je)(T) ? (0, r.jsx)(u.Z, p(f({}, I), {
+    libraryApplication: T,
+    source: y
+  })) : C ? (0, r.jsx)("div", {
     children: "deprecated!"
-  }) : (0, r.jsx)(c.Z, p(d({}, y), {
-    hideNotLaunchable: _,
+  }) : (0, r.jsx)(c.Z, p(f({}, I), {
+    hideNotLaunchable: m,
     applicationId: t.id
   }))
 }

@@ -17,8 +17,8 @@ function d(e) {
     location: t
   } = e, [d, h] = i.useState("submitting");
   return (i.useEffect(() => {
-    (0, s.e)("authorize_payment");
-    let e = (0, a.Z)(t);
+    (0, a.e)("authorize_payment");
+    let e = (0, s.Z)(t);
     if (null == e) return void h("failed");
     (async () => {
       try {

@@ -1,7 +1,7 @@
-/** Chunk was on 91584 **/
-/** chunk id: 143310, original params: t (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 143310, original params: e (module,exports,re quire) **/
 "use strict";
-var e = "undefined" != typeof navigator && navigator.userAgent.indexOf("AppleWebKit") > false;
-module.exports = function(t) {
-  return (t = t || document).scrollingElement ? t.scrollingElement : e || "CSS1Compat" !== t.compatMode ? t.body : t.documentElement
+var t = "undefined" != typeof navigator && navigator.userAgent.indexOf("AppleWebKit") > false;
+module.exports = function(e) {
+  return (e = e || document).scrollingElement ? e.scrollingElement : t || "CSS1Compat" !== e.compatMode ? e.body : e.documentElement
 }

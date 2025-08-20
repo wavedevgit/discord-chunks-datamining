@@ -1,24 +1,25 @@
-/** Chunk was on 66181 **/
-/** chunk id: 123274, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 123274, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => o
+  Z: () => l
 });
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk399731 = require("./399731.js");
-let o = e => {
+let l = e => {
   let {
     className: t,
     color: n = "header-primary",
-    responsive: r = true,
-    children: o
+    responsive: i = true,
+    children: l
   } = e;
-  return (0, i.jsx)(a.X6q, {
-    className: s()(l.header, t, r && l.responsive),
+  return (0, r.jsx)(o.X6q, {
+    className: a()(s.header, t, i && s.responsive),
     variant: "display-md",
     color: n,
-    children: o
+    children: l
   })
 }

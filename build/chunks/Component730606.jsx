@@ -2,7 +2,7 @@
 /** chunk id: 730606, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Qk: () => N,
+  Qk: () => C,
   WG: () => P,
   ZP: () => w
 }), require("./388685.js");
@@ -31,7 +31,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk810348 = require("./810348.js");
 
-function N(e) {
+function C(e) {
   let {
     src: t,
     width: n,
@@ -57,7 +57,7 @@ function N(e) {
   })
 }
 
-function C(e, t) {
+function N(e, t) {
   return (e % t + t) % t
 }
 
@@ -92,7 +92,7 @@ function R(e) {
 function P(e, t) {
   if ("IMAGE" === e.type) {
     if (!(0, m._H)(e)) return void(0, f.po)(e.url);
-    N({
+    C({
       src: (0, p.q)({
         proxyURL: e.proxyUrl,
         url: e.url
@@ -114,29 +114,29 @@ function w(e) {
     shouldHideMediaOptions: u = false
   } = e, [f, _] = i.useState(a), p = i.useRef(a), {
     zoomed: m,
-    setZoomed: N
+    setZoomed: C
   } = (0, E.Y)(), P = i.useCallback(e => {
-    _(e = C(e, t.length)), p.current = e, null == n || n(e), N(false)
-  }, [n, t, N]);
+    _(e = N(e, t.length)), p.current = e, null == n || n(e), C(false)
+  }, [n, t, C]);
   i.useEffect(() => {
     let e = () => P(p.current + 1),
       t = () => P(p.current - 1);
     return h.S.subscribe(T.CkL.MODAL_CAROUSEL_NEXT, e), h.S.subscribe(T.CkL.MODAL_CAROUSEL_PREV, t), () => {
       h.S.unsubscribe(T.CkL.MODAL_CAROUSEL_NEXT, e), h.S.unsubscribe(T.CkL.MODAL_CAROUSEL_PREV, t)
     }
-  }, [P, N]);
+  }, [P, C]);
   let w = t[f],
     D = (0, d.g4)({
       type: c.l.GenericMedia,
       media: w
     }, l),
-    L = u ? e => {
+    x = u ? e => {
       e.stopPropagation(), e.preventDefault()
     } : () => (0, g.yg)(g.uG.CONTEXT_MENU_OPENED),
-    x = t.length > 1;
+    L = t.length > 1;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(y.ZP, {
-      children: e => x ? (0, r.jsxs)(r.Fragment, {
+      children: e => L ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(v.Z, {
           onClick: e => {
             e.stopPropagation(), h.S.dispatch(T.CkL.MODAL_CAROUSEL_PREV)
@@ -164,10 +164,10 @@ function w(e) {
           maxWidth: e,
           maxHeight: t,
           obscured: n,
-          onContextMenu: L
+          onContextMenu: x
         })
       })
-    }), x && (0, r.jsx)(y.ZP, {
+    }), L && (0, r.jsx)(y.ZP, {
       children: e => (0, r.jsx)(O.Z, {
         items: t,
         currentIndex: f,

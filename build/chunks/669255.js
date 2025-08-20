@@ -1,5 +1,6 @@
-/** Chunk was on 66181 **/
-/** chunk id: 669255, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 669255, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   card: "card__6bc46",
   subText: "subText__6bc46",

@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 792423, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 792423, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => u
+  Z: () => d
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -11,7 +12,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk919047 = require("./919047.js");
 
-function d(e, t, n) {
+function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -19,7 +20,7 @@ function d(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class u extends Chunk647438.PureComponent {
+class d extends Chunk647438.PureComponent {
   renderErrorMessage() {
     let {
       hasError: e
@@ -52,18 +53,18 @@ class u extends Chunk647438.PureComponent {
     }) : null
   }
   constructor(...e) {
-    super(...e), d(this, "state", {
+    super(...e), u(this, "state", {
       isRequestPending: false,
       hasError: false
-    }), d(this, "handleLeaveHypeSquadError", () => {
+    }), u(this, "handleLeaveHypeSquadError", () => {
       this.setState({
         hasError: true
       })
-    }), d(this, "handleLeaveHypeSquadClick", () => {
+    }), u(this, "handleLeaveHypeSquadClick", () => {
       this.setState({
         isRequestPending: true
       }, () => {
-        l.Z.leaveHypeSquadOnline().then(() => {
+        s.Z.leaveHypeSquadOnline().then(() => {
           this.setState({
             isRequestPending: false
           })

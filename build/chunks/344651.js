@@ -44,7 +44,7 @@ function D(e, t, n) {
   }) : e[t] = n, e
 }
 
-function L(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -57,7 +57,7 @@ function L(e) {
   return e
 }
 
-function x(e, t) {
+function L(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -68,15 +68,15 @@ function x(e, t) {
   return n
 }
 
-function M(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
+function j(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function k(e, t) {
+function M(e, t) {
   if (null == e) return {};
-  var n, r, i = j(e, t);
+  var n, r, i = k(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -84,7 +84,7 @@ function k(e, t) {
   return i
 }
 
-function j(e, t) {
+function k(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -100,7 +100,7 @@ let U = new Chunk710845.Z("ConnectionStore"),
     };
     let r = (0, E.q_)(t),
       i = O.Z.getChannel(t.id),
-      a = null == i ? true : i.merge(M(L({}, r), {
+      a = null == i ? true : i.merge(j(x({}, r), {
         recipients: i.recipients,
         bitrate: null != (n = r.bitrate) ? n : i.bitrate
       }));
@@ -122,32 +122,32 @@ let U = new Chunk710845.Z("ConnectionStore"),
       guildId: t.guild_id
     }))
   }), e), e => "SOUNDBOARD_SOUNDS" !== e),
-  V = new Chunk483012.Z(Chunk955132.Wb, (e, t) => ((e = null != e ? e : {
+  Z = new Chunk483012.Z(Chunk955132.Wb, (e, t) => ((e = null != e ? e : {
     type: "GUILD_MEMBERS_CHUNK_BATCH",
     chunks: []
   }).chunks.push(t), e), e => "GUILD_MEMBERS_CHUNK" !== e),
-  F = new Chunk483012.Z(Chunk955132.Wb, (e, t) => ((e = null == e ? {
+  V = new Chunk483012.Z(Chunk955132.Wb, (e, t) => ((e = null == e ? {
     type: "PRESENCE_UPDATES",
     updates: []
   } : e).updates.push(t), e), e => "PRESENCE_UPDATE" !== e && "GUILD_MEMBERS_CHUNK" !== e),
-  Z = {};
+  F = {};
 
 function H(e, t) {
-  for (let n of e) Z[n] = {
+  for (let n of e) F[n] = {
     preload: () => null,
     dispatch: t
   }
 }
 
 function Y(e, t, n) {
-  for (let r of e) Z[r] = {
+  for (let r of e) F[r] = {
     preload: t,
     dispatch: n
   }
 }
 
 function W(e) {
-  return Z[e]
+  return F[e]
 }
 
 function K(e) {
@@ -259,7 +259,7 @@ function J(e) {
     clientStatus: o,
     processedAtTimestamp: s
   } = e;
-  F.add({
+  V.add({
     guildId: t,
     user: n,
     status: r,
@@ -572,7 +572,7 @@ Y(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : O.o.loadGuildIds([e.id
 }), Y(["THREAD_CREATE", "THREAD_UPDATE", "THREAD_DELETE"], e => O.o.loadGuildIds([e.guild_id]), (e, t) => {
   let {
     newly_created: n
-  } = e, r = k(e, ["newly_created"]);
+  } = e, r = M(e, ["newly_created"]);
   z({
     type: t,
     isNewlyCreated: n,
@@ -691,7 +691,7 @@ Y(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : O.o.loadGuildIds([e.id
   })
 }), H(["GUILD_MEMBERS_CHUNK"], e => {
   a.ZP.Emitter.batched(() => {
-    V.add({
+    Z.add({
       guildId: e.guild_id,
       members: e.members,
       notFound: e.not_found
@@ -838,7 +838,7 @@ Y(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : O.o.loadGuildIds([e.id
     requiredAction: e.required_action
   })
 }), H(["USER_NOTE_UPDATE"], e => {
-  z(L({
+  z(x({
     type: "USER_NOTE_UPDATE"
   }, e))
 }), H(["RELATIONSHIP_ADD"], e => {
@@ -1048,7 +1048,7 @@ Y(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : O.o.loadGuildIds([e.id
     type: "MESSAGE_REACTION_ADD_MANY",
     channelId: e.channel_id,
     messageId: e.message_id,
-    reactions: e.votes.map(e => M(L({}, e), {
+    reactions: e.votes.map(e => j(x({}, e), {
       emoji: {
         id: e.answer_id,
         name: ""
@@ -1093,12 +1093,12 @@ Y(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : O.o.loadGuildIds([e.id
 }), H(["USER_PREMIUM_GUILD_SUBSCRIPTION_SLOT_CREATE"], e => {
   z({
     type: "GUILD_BOOST_SLOT_CREATE",
-    guildBoostSlot: b.Z.createFromServer(e, N.Z.getSubscriptionById(e.subscription_id))
+    guildBoostSlot: b.Z.createFromServer(e, C.Z.getSubscriptionById(e.subscription_id))
   })
 }), H(["USER_PREMIUM_GUILD_SUBSCRIPTION_SLOT_UPDATE"], e => {
   z({
     type: "GUILD_BOOST_SLOT_UPDATE",
-    guildBoostSlot: b.Z.createFromServer(e, N.Z.getSubscriptionById(e.subscription_id))
+    guildBoostSlot: b.Z.createFromServer(e, C.Z.getSubscriptionById(e.subscription_id))
   })
 }), H(["BILLING_POPUP_BRIDGE_CALLBACK"], e => {
   z({
@@ -1116,7 +1116,7 @@ Y(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : O.o.loadGuildIds([e.id
     skuSubscriptionPlanId: e.sku_subscription_plan_id
   })
 }), H(["USER_PAYMENT_CLIENT_ADD"], e => {
-  (0, C.L)().then(t => {
+  (0, N.L)().then(t => {
     let n = e.purchase_token_hash;
     n === t && z({
       type: "USER_PAYMENT_CLIENT_ADD",
@@ -1538,7 +1538,7 @@ Y(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : O.o.loadGuildIds([e.id
     openid_params: e.openid_params
   })
 }), H(["DELETED_ENTITY_IDS"], e => {
-  z(L({
+  z(x({
     type: "DELETED_ENTITY_IDS"
   }, e))
 }), Y(["CHANNEL_SYNC"], e => O.o.loadGuildIds([e.guild_id]), e => {
@@ -1642,7 +1642,7 @@ Y(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : O.o.loadGuildIds([e.id
     inviteIds: e.invite_ids
   })
 }), H(["CONVERSATION_SUMMARY_UPDATE"], e => {
-  z(L({
+  z(x({
     type: "CONVERSATION_SUMMARY_UPDATE"
   }, e))
 }), H(["PREMIUM_MARKETING_PREVIEW"], e => {

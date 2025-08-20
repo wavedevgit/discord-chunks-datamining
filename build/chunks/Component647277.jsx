@@ -1,11 +1,12 @@
-/** Chunk was on 66181 **/
-/** chunk id: 647277, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 647277, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  _: () => v
+  _: () => N
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk518950 = require("./518950.js"),
@@ -21,159 +22,168 @@ var Chunk951288 = require("./951288.js"),
   Chunk756555 = require("./756555.js"),
   Chunk295234 = require("./295234.js");
 
-function j(e) {
+function y(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      i = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), i.forEach(function(t) {
-      var i;
-      i = n[t], t in e ? Object.defineProperty(e, t, {
-        value: i,
-        enumerable: true,
-        configurable: true,
-        writable: true
-      }) : e[t] = i
+    }))), r.forEach(function(t) {
+      y(e, t, n[t])
     })
   }
   return e
 }
-let E = e => {
+
+function v(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function I(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+let T = e => {
     let {
       startingScreen: t,
-      analyticsLocations: r
+      analyticsLocations: i
     } = e;
-    c.default.track(f.rMx.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
-      location_stack: r
-    }), (0, l.ZDy)(async () => {
+    c.default.track(m.rMx.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
+      location_stack: i
+    }), (0, s.ZDy)(async () => {
       let {
         default: e
       } = await Promise.resolve().then(n.bind(n, 656139));
-      return n => {
-        var r, s;
-        return (0, i.jsx)(e, (r = j({}, n), s = s = {
-          startingScreen: t
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
-          var n = Object.keys(e);
-          if (Object.getOwnPropertySymbols) {
-            var i = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, i)
-          }
-          return n
-        })(Object(s)).forEach(function(e) {
-          Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(s, e))
-        }), r))
-      }
+      return n => (0, r.jsx)(e, I(O({}, n), {
+        startingScreen: t
+      }))
     })
   },
-  C = e => {
+  S = e => {
     let {
       user: t
     } = e, {
       avatarSrc: n,
-      eventHandlers: r
-    } = (0, o.Z)({
+      eventHandlers: i
+    } = (0, l.Z)({
       userId: t.id,
-      size: l.EFr.SIZE_24
+      size: s.EFr.SIZE_24
     });
-    return (0, i.jsx)(l.qEK, j({
-      className: x.reminderAvatar,
+    return (0, r.jsx)(s.qEK, O({
+      className: E.reminderAvatar,
       src: n,
-      "aria-label": (0, u.oY)(t),
-      size: l.EFr.SIZE_24
-    }, r), t.id)
+      "aria-label": (0, d.oY)(t),
+      size: s.EFr.SIZE_24
+    }, i), t.id)
   },
-  O = e => {
+  A = e => {
+    let {
+      recipientNames: t
+    } = e, [n, r, i] = t;
+    return 1 === t.length ? g.intl.format(g.t["B/IYFR"], {
+      recipientName: n
+    }) : 2 === t.length ? g.intl.format(g.t.uIOxcH, {
+      firstRecipientName: n,
+      secondRecipientName: r
+    }) : 3 === t.length ? g.intl.format(g.t["1k64R0"], {
+      firstRecipientName: n,
+      secondRecipientName: r,
+      thirdRecipientName: i
+    }) : ""
+  },
+  C = e => {
     let {
       referralSentUsers: t,
       allRedeemed: n
     } = e;
-    return (0, i.jsxs)("div", {
-      className: x.reminderContainer,
-      children: [(0, i.jsxs)("div", {
-        className: x.remindersSentContainer,
-        children: [t.map(e => (0, i.jsx)(C, {
+    return (0, r.jsxs)("div", {
+      className: E.reminderContainer,
+      children: [(0, r.jsxs)("div", {
+        className: E.remindersSentContainer,
+        children: [t.map(e => (0, r.jsx)(S, {
           user: e
-        }, e.id)), (0, i.jsx)(l.Text, {
+        }, e.id)), (0, r.jsx)(s.Text, {
           variant: "text-md/medium",
           color: "text-primary",
-          className: x.reminderAvatarText,
-          children: (e => {
-            let {
-              recipientNames: t
-            } = e, [n, i, r] = t;
-            return 1 === t.length ? b.intl.format(b.t["B/IYFR"], {
-              recipientName: n
-            }) : 2 === t.length ? b.intl.format(b.t.uIOxcH, {
-              firstRecipientName: n,
-              secondRecipientName: i
-            }) : 3 === t.length ? b.intl.format(b.t["1k64R0"], {
-              firstRecipientName: n,
-              secondRecipientName: i,
-              thirdRecipientName: r
-            }) : ""
-          })({
-            recipientNames: t.map(e => (0, u.oY)(e))
+          className: E.reminderAvatarText,
+          children: A({
+            recipientNames: t.map(e => (0, d.oY)(e))
           })
         })]
-      }), (0, i.jsx)(l.zxk, {
+      }), (0, r.jsx)(s.zxk, {
         variant: "secondary",
         size: "sm",
         disabled: n,
-        text: b.intl.string(b.t.NPCYFR),
-        onClick: () => E({
+        text: g.intl.string(g.t.NPCYFR),
+        onClick: () => T({
           startingScreen: h.K.REMINDER,
           analyticsLocations: []
         })
       })]
     })
   },
-  v = e => {
+  N = e => {
     let {
       className: t
     } = e, {
       referralSentUsers: n
-    } = (0, g.G)(), r = (0, a.e7)([p.Z], () => p.Z.getRecipientStatus()).values().every(e => e === m.Fe.REDEEMED);
-    return (0, i.jsxs)("div", {
-      className: s()(x.container, t),
-      children: [(0, i.jsxs)("div", {
-        className: x.bannerContainer,
-        children: [(0, i.jsx)(l.Eep, {
-          src: _.Z,
+    } = (0, p.G)(), i = (0, o.e7)([_.Z], () => _.Z.getRecipientStatus()).values().every(e => e === f.Fe.REDEEMED), l = () => n.length === p.Q ? true === i ? g.intl.format(g.t["1aEjsL"], {
+      helpdeskArticle: u.Z.getArticleURL(m.BhN.REFERRAL_PROGRAM)
+    }) : g.intl.format(g.t["+u3AOD"], {
+      helpdeskArticle: u.Z.getArticleURL(m.BhN.REFERRAL_PROGRAM)
+    }) : g.intl.format(g.t["omMr+f"], {
+      helpdeskArticle: u.Z.getArticleURL(m.BhN.REFERRAL_PROGRAM)
+    });
+    return (0, r.jsxs)("div", {
+      className: a()(E.container, t),
+      children: [(0, r.jsxs)("div", {
+        className: E.bannerContainer,
+        children: [(0, r.jsx)(s.Eep, {
+          src: b.Z,
           height: 84,
           width: 144
-        }), (0, i.jsxs)("div", {
-          className: x.bannerContent,
-          children: [(0, i.jsxs)("div", {
-            className: x.bannerContentText,
-            children: [(0, i.jsx)(l.X6q, {
+        }), (0, r.jsxs)("div", {
+          className: E.bannerContent,
+          children: [(0, r.jsxs)("div", {
+            className: E.bannerContentText,
+            children: [(0, r.jsx)(s.X6q, {
               variant: "heading-md/semibold",
               color: "header-primary",
-              children: b.intl.string(b.t.USo4s7)
-            }), (0, i.jsx)(l.Text, {
+              children: g.intl.string(g.t.USo4s7)
+            }), (0, r.jsx)(s.Text, {
               variant: "text-md/medium",
               color: "text-secondary",
-              children: n.length === g.Q ? true === r ? b.intl.format(b.t["1aEjsL"], {
-                helpdeskArticle: d.Z.getArticleURL(f.BhN.REFERRAL_PROGRAM)
-              }) : b.intl.format(b.t["+u3AOD"], {
-                helpdeskArticle: d.Z.getArticleURL(f.BhN.REFERRAL_PROGRAM)
-              }) : b.intl.format(b.t["omMr+f"], {
-                helpdeskArticle: d.Z.getArticleURL(f.BhN.REFERRAL_PROGRAM)
-              })
+              children: l()
             })]
-          }), (0, i.jsx)(l.zxk, {
+          }), (0, r.jsx)(s.zxk, {
             variant: "primary",
-            text: b.intl.string(b.t.Lm2nFR),
-            onClick: () => E({
+            text: g.intl.string(g.t.Lm2nFR),
+            onClick: () => T({
               startingScreen: h.K.SELECT_FRIENDS,
               analyticsLocations: []
             })
           })]
         })]
-      }), n.length > 0 && (0, i.jsx)(O, {
+      }), n.length > 0 && (0, r.jsx)(C, {
         referralSentUsers: n,
-        allRedeemed: r
+        allRedeemed: i
       })]
     })
   }

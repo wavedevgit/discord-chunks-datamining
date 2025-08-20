@@ -1,8 +1,8 @@
-/** Chunk was on 86031 **/
+/** Chunk was on 71387 **/
 /** chunk id: 576386, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => f
+  Z: () => b
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -15,58 +15,58 @@ var Chunk951288 = require("./951288.js"),
   Chunk594174 = require("./594174.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk24391 = require("./24391.js");
-let h = e => {
+let f = e => {
     var t;
     let {
       nameplate: r,
-      isPurchased: i = false,
-      isSelected: h = false,
-      onClick: f
-    } = e, v = (0, o.e7)([d.default], () => d.default.getCurrentUser()), [m, _] = (0, a.useState)(false);
-    return null == v ? null : (0, n.jsxs)(s.P3F, {
+      isPurchased: a = false,
+      isSelected: f = false,
+      onClick: b
+    } = e, m = (0, o.e7)([d.default], () => d.default.getCurrentUser()), [g, h] = (0, i.useState)(false);
+    return null == m ? null : (0, n.jsxs)(s.P3F, {
       "aria-label": null != (t = r.label) ? t : p.intl.string(p.t.x5CoXV),
-      className: b.nameplateItem,
-      onClick: f,
-      onMouseEnter: () => _(true),
-      onMouseLeave: () => _(false),
+      className: v.nameplateItem,
+      onClick: b,
+      onMouseEnter: () => h(true),
+      onMouseLeave: () => h(false),
       children: [(0, n.jsx)(c.Z, {
         nameplate: r,
-        user: v,
+        user: m,
         showPlaceholderUser: true,
-        isHighlighted: m
+        isHighlighted: g
       }), (0, n.jsx)("div", {
-        className: l()(b.nameplateItemOverlay, {
-          [b.selected]: h
+        className: l()(v.nameplateItemOverlay, {
+          [v.selected]: f
         })
-      }), !i && (0, n.jsx)(s.G2e, {
+      }), !a && (0, n.jsx)(s.G2e, {
         icon: () => (0, n.jsx)(s.mBM, {
           size: "xxs",
           color: "currentColor"
         }),
         color: u.Z.BACKGROUND_ACCENT,
-        className: b.iconBadge
+        className: v.iconBadge
       })]
     })
   },
-  f = e => {
+  b = e => {
     let {
       selected: t,
       onSelect: r,
-      onOpenShop: a,
-      available: i,
+      onOpenShop: i,
+      available: a,
       purchased: c,
       isPerGuild: u
     } = e;
     return null == (0, o.e7)([d.default], () => d.default.getCurrentUser()) ? null : (0, n.jsxs)(s.u2D, {
-      className: b.inventory,
+      className: v.inventory,
       children: [(0, n.jsxs)("div", {
         children: [(0, n.jsx)(s.vwX, {
           children: p.intl.string(p.t["WfGV5+"])
         }), (0, n.jsxs)("div", {
-          className: b.inventoryControls,
+          className: v.inventoryControls,
           children: [(0, n.jsxs)(s.P3F, {
-            className: l()(b.inventoryControlsButton, {
-              [b.selected]: null == t
+            className: l()(v.inventoryControlsButton, {
+              [v.selected]: null == t
             }),
             onClick: () => r(null),
             children: [(0, n.jsx)(s.t6m, {
@@ -77,8 +77,8 @@ let h = e => {
               children: u ? p.intl.string(p.t.CHf9iI) : p.intl.string(p.t.PoWNfX)
             })]
           }), (0, n.jsxs)(s.P3F, {
-            className: b.inventoryControlsButton,
-            onClick: a,
+            className: v.inventoryControlsButton,
+            onClick: i,
             children: [(0, n.jsx)(s.EOn, {
               size: "md",
               color: "currentColor"
@@ -88,20 +88,20 @@ let h = e => {
             })]
           })]
         }), 0 !== c.length ? (0, n.jsx)("div", {
-          className: b.list,
-          children: c.map(e => (0, n.jsx)(h, {
+          className: v.list,
+          children: c.map(e => (0, n.jsx)(f, {
             nameplate: e,
             isPurchased: true,
             isSelected: (null == t ? true : t.id) === e.id,
             onClick: () => r(e, true)
           }, e.id))
         }) : null]
-      }), 0 !== i.length ? (0, n.jsxs)("div", {
+      }), 0 !== a.length ? (0, n.jsxs)("div", {
         children: [(0, n.jsx)(s.vwX, {
           children: p.intl.string(p.t["1vbbeX"])
         }), (0, n.jsx)("div", {
-          className: b.list,
-          children: i.map(e => (0, n.jsx)(h, {
+          className: v.list,
+          children: a.map(e => (0, n.jsx)(f, {
             nameplate: e,
             isSelected: (null == t ? true : t.id) === e.id,
             onClick: () => r(e, false)

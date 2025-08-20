@@ -1,5 +1,6 @@
-/** Chunk was on 66181 **/
-/** chunk id: 402583, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 402583, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   Z: () => h
 });
@@ -19,12 +20,12 @@ var Chunk951288 = require("./951288.js"),
 function h() {
   let e = (0, Chunk442837.e7)([Chunk480294.Z], () => Chunk480294.Z.hasConsented(Chunk981631.pjP.USAGE_STATISTICS)),
     t = Chunk647438.useCallback(e => {
-      e ? (0, a.g)([p.pjP.USAGE_STATISTICS], []).catch(u.S) : (0, u.V)({
-        header: g.intl.string(g.t.OdPCbG),
-        body: g.intl.string(g.t.MGWabG),
-        confirmText: g.intl.string(g.t["D3+rU1"]),
-        cancelText: g.intl.string(g.t.kYpG0t),
-        onConfirm: () => (0, a.g)([], [p.pjP.USAGE_STATISTICS]).catch(u.S)
+      e ? (0, o.g)([_.pjP.USAGE_STATISTICS], []).catch(d.S) : (0, d.V)({
+        header: p.intl.string(p.t.OdPCbG),
+        body: p.intl.string(p.t.MGWabG),
+        confirmText: p.intl.string(p.t["D3+rU1"]),
+        cancelText: p.intl.string(p.t.kYpG0t),
+        onConfirm: () => (0, o.g)([], [_.pjP.USAGE_STATISTICS]).catch(d.S)
       })
     }, []);
   return (0, Chunk951288.jsx)(Chunk838436.U, {

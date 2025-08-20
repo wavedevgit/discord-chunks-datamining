@@ -1,4 +1,4 @@
-/** Chunk was on 69003 **/
+/** Chunk was on 91488 **/
 /** chunk id: 178088, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   k: () => w
@@ -43,8 +43,8 @@ function w(e) {
     spacing: R,
     dialogClassName: D
   } = e, {
-    analyticsLocations: L
-  } = (0, p.ZP)(d.Z.NOTIFICATION_CENTER), [M, k] = i.useState(false), [U, G] = [(0, s.e7)([_.Z], () => {
+    analyticsLocations: M
+  } = (0, p.ZP)(d.Z.NOTIFICATION_CENTER), [L, k] = i.useState(false), [U, G] = [(0, s.e7)([_.Z], () => {
     var e, t;
     return null != (t = null == (e = _.Z.settings.inbox) ? true : e.currentTab) ? t : c.X.UNREADS
   }), i.useCallback(e => {
@@ -70,11 +70,11 @@ function w(e) {
       setSeenTutorial: n
     }
   }(U), F = i.useCallback(() => {
-    k(false), M && (null == n || n())
-  }, [n, M]), H = i.useCallback(() => {
-    k(!M), M ? null == n || n() : null == t || t()
-  }, [n, t, M]);
-  i.useEffect(() => (y.S.subscribe(P.CkL.TOGGLE_INBOX, H), () => void y.S.unsubscribe(P.CkL.TOGGLE_INBOX, H)), [H]);
+    k(false), L && (null == n || n())
+  }, [n, L]), H = i.useCallback(() => {
+    k(!L), L ? null == n || n() : null == t || t()
+  }, [n, t, L]);
+  i.useEffect(() => (y.S.subscribe(I.CkL.TOGGLE_INBOX, H), () => void y.S.unsubscribe(I.CkL.TOGGLE_INBOX, H)), [H]);
   let {
     enabled: z,
     inInbox: W
@@ -95,18 +95,18 @@ function w(e) {
       location: "ForYou"
     });
   return (0, r.jsx)(p.Gt, {
-    value: L,
+    value: M,
     children: (0, r.jsx)(u.yRy, {
       targetElementRef: A,
       animation: u.yRy.Animation.NONE,
       position: Z,
       align: T,
       autoInvert: false,
-      shouldShow: M,
+      shouldShow: L,
       onRequestClose: F,
       renderPopout: function() {
         return (0, r.jsx)(u.VqE, {
-          "aria-label": I.intl.string(I.t.GSmTKC),
+          "aria-label": P.intl.string(P.t.GSmTKC),
           className: D,
           children: (0, r.jsx)("div", {
             className: o()(N.container, {
@@ -119,13 +119,13 @@ function w(e) {
                 badgeState: w,
                 closePopout: F
               }),
-              children: U === c.X.FOR_YOU ? (0, r.jsx)(v.ZP, {}) : U === c.X.MENTIONS ? (0, r.jsx)(j.Z, {
+              children: U === c.X.FOR_YOU ? (0, r.jsx)(j.ZP, {}) : U === c.X.MENTIONS ? (0, r.jsx)(v.Z, {
                 onJump: q
               }) : Y && U === c.X.GAME_INVITES ? (0, r.jsx)(S.Z, {}) : z && W && U === c.X.BOOKMARKS ? (0, r.jsx)(m.K, {
                 closePopout: F
-              }) : U === c.X.SCHEDULED ? (0, r.jsx)(E._, {}) : (0, r.jsx)(a.SV, {
-                fallback: (0, r.jsx)(x.h6, {}),
-                children: (0, r.jsx)(x.ZP, {
+              }) : U === c.X.SCHEDULED ? (0, r.jsx)(x._, {}) : (0, r.jsx)(a.SV, {
+                fallback: (0, r.jsx)(E.h6, {}),
+                children: (0, r.jsx)(E.ZP, {
                   onJump: q,
                   showTutorial: B,
                   setSeenTutorial: V,

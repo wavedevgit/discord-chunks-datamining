@@ -1,4 +1,4 @@
-/** Chunk was on 36499 **/
+/** Chunk was on 5665 **/
 /** chunk id: 406326, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -58,8 +58,8 @@ function _(e) {
     totalResults: _,
     isIndexing: x,
     isSearching: v,
-    documentsIndexed: j
-  } = e, O = (0, d.UX)({
+    documentsIndexed: O
+  } = e, j = (0, d.UX)({
     location: "SearchHeader"
   }), E = (0, p.xd)({
     isXDMSearch: t.type === f.aib.DMS,
@@ -67,7 +67,7 @@ function _(e) {
   }), S = (0, h.I)(t), {
     totalFilters: P
   } = (0, c.hE)(S), I = i.useMemo(() => {
-    if (t.type === f.aib.DMS && O) {
+    if (t.type === f.aib.DMS && j) {
       var e, n;
       let t = null != (n = null == (e = (0, u.$G)(S).channel_id) ? true : e.length) ? n : 0;
       return t > 0 ? m.intl.format(m.t.A2dqWF, {
@@ -75,7 +75,7 @@ function _(e) {
       }) : m.intl.string(m.t.tc619f)
     }
     return null
-  }, [O, t.type, S]), Z = i.useMemo(() => [{
+  }, [j, t.type, S]), Z = i.useMemo(() => [{
     label: m.intl.string(m.t.CbaapK),
     value: f.QIO.NEWEST
   }, {
@@ -108,7 +108,7 @@ function _(e) {
         subtitle: I,
         isIndexing: x,
         isSearching: v,
-        documentsIndexed: j
+        documentsIndexed: O
       })
     }), E ? (0, r.jsxs)("div", {
       className: g.searchModeAndFiltersContainer,
@@ -158,7 +158,7 @@ function C(e) {
   } = e;
   return l ? (0, r.jsx)(v, {
     documentsIndexed: a
-  }) : i ? (0, r.jsx)(j, {}) : (0, r.jsx)(O, {
+  }) : i ? (0, r.jsx)(O, {}) : (0, r.jsx)(j, {
     totalResults: t,
     subtitle: n
   })
@@ -199,7 +199,7 @@ function v(e) {
   })
 }
 
-function j() {
+function O() {
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-md/medium",
@@ -209,7 +209,7 @@ function j() {
   })
 }
 
-function O(e) {
+function j(e) {
   let {
     totalResults: t,
     subtitle: n

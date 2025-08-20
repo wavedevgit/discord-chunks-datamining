@@ -1,8 +1,9 @@
-/** Chunk was on 26434 **/
-/** chunk id: 942833, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 942833, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   C: () => o,
-  k: () => a
+  k: () => s
 });
 var Chunk647438 = require("./647438.js"),
   Chunk937615 = require("./937615.js"),
@@ -13,11 +14,11 @@ function o(e) {
     if (null == e) return;
     let t = null != e.role_id,
       n = e.attachments_count > 0;
-    return t && n ? l.intl.string(l.t.ih4QMT) : t ? l.intl.string(l.t.o9xphY) : n ? l.intl.string(l.t.DWYJub) : true
+    return t && n ? a.intl.string(a.t.ih4QMT) : t ? a.intl.string(a.t.o9xphY) : n ? a.intl.string(a.t.DWYJub) : true
   }, [e])
 }
 
-function a(e) {
+function s(e) {
   return r.useMemo(() => {
     if ((null == e ? true : e.price) == null) return;
     let {

@@ -1,4 +1,4 @@
-/** Chunk was on 38342 **/
+/** Chunk was on 76676 **/
 /** chunk id: 151007, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => o
@@ -10,8 +10,8 @@ var Chunk665906 = require("./665906.js"),
   Chunk981631 = require("./981631.js");
 
 function o(e, t) {
-  let n = !t.isSystemDM() && !(0, s.Z)(e),
-    o = r.D.getCurrentConfig({
+  let n = !t.isSystemDM() && !(0, r.Z)(e),
+    o = s.D.getCurrentConfig({
       guildId: t.guild_id,
       location: "pin util"
     }).enabled ? l.Z.can(a.Plq.MANAGE_MESSAGES, t) || l.Z.can(a.Plq.PIN_MESSAGES, t) : l.Z.can(a.Plq.MANAGE_MESSAGES, t);

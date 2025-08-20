@@ -1,10 +1,11 @@
-/** Chunk was on 38626 **/
-/** chunk id: 831244, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 831244, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  T: () => r
+  T: () => a
 });
 var Chunk347904 = require("./347904.js");
-let l = [{
+let i = [{
     load: () => require.e("59642").then(require.t.bind(require, 759983, 19))
   }, {
     load: () => require.e("54931").then(require.t.bind(require, 488583, 19))
@@ -41,8 +42,8 @@ let l = [{
   }, {
     load: () => require.e("73921").then(require.t.bind(require, 558619, 19))
   }],
-  r = async function(e, t, n) {
+  a = async function(e, t, n) {
     arguments.length > 3 && true !== arguments[3] && arguments[3];
-    let r = l[(0, i.vJ)("".concat(e).concat(t).concat(n)) % l.length];
-    return await r.load()
+    let a = i[(0, r.vJ)("".concat(e).concat(t).concat(n)) % i.length];
+    return await a.load()
   }

@@ -1,12 +1,13 @@
-/** Chunk was on 26434 **/
-/** chunk id: 396252, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 396252, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk385499 = require("./385499.jsx"),
@@ -19,65 +20,65 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk682392 = require("./682392.js");
 
-function h(e) {
+function g(e) {
   var t;
   let {
     message: n,
     compact: i,
-    usernameHook: h,
-    channel: b
-  } = e, E = (0, o.e7)([c.Z], () => c.Z.getGuild(b.guild_id)), C = (0, u.ZP)(n), v = h(C), {
-    avatarSrc: O,
+    usernameHook: g,
+    channel: E
+  } = e, b = (0, o.e7)([c.Z], () => c.Z.getGuild(E.guild_id)), y = (0, u.ZP)(n), O = g(y), {
+    avatarSrc: v,
     eventHandlers: {
-      onMouseEnter: y,
-      onMouseLeave: x
+      onMouseEnter: I,
+      onMouseLeave: T
     }
-  } = (0, p.m)(true);
+  } = (0, f.m)(true);
   return (0, r.jsx)("div", {
-    onMouseEnter: y,
-    onMouseLeave: x,
-    children: (0, r.jsx)(m.Z, {
-      className: l()(_.mainContainer, {
-        [_.compact]: i
+    onMouseEnter: I,
+    onMouseLeave: T,
+    children: (0, r.jsx)(_.Z, {
+      className: a()(m.mainContainer, {
+        [m.compact]: i
       }),
-      iconNode: i ? null : (0, r.jsx)(p.S, {
-        src: O
+      iconNode: i ? null : (0, r.jsx)(f.S, {
+        src: v
       }),
-      iconContainerClassName: _.iconContainer,
+      iconContainerClassName: m.iconContainer,
       compact: i,
       children: (0, r.jsxs)("div", {
-        className: l()(_.content, {
-          [_.compact]: i
+        className: a()(m.content, {
+          [m.compact]: i
         }),
         children: [(0, r.jsx)(d.nD, {
           message: n,
-          messageClassname: _.spanCorrection,
-          className: l()(_.usernameContainer, _.spanCorrection, {
-            [_.compact]: i
+          messageClassname: m.spanCorrection,
+          className: a()(m.usernameContainer, m.spanCorrection, {
+            [m.compact]: i
           }),
           username: (0, r.jsxs)("div", {
-            className: _.spanCorrection,
-            children: [(0, r.jsx)(a.Text, {
+            className: m.spanCorrection,
+            children: [(0, r.jsx)(s.Text, {
               variant: "text-md/normal",
               color: "text-brand",
               tag: "span",
-              className: _.username,
-              children: g.intl.string(g.t.hG1StL)
-            }), (0, r.jsx)(s.Z, {
-              type: f.Hb.SYSTEM_DM,
-              className: _.systemTag
+              className: m.username,
+              children: h.intl.string(h.t.hG1StL)
+            }), (0, r.jsx)(l.Z, {
+              type: p.Hb.SYSTEM_DM,
+              className: m.systemTag
             })]
           }),
           compact: i,
           showTimestamp: true
         }), (0, r.jsx)("div", {
-          className: l()(_.__invalid_messageContent, {
-            [_.compact]: i
+          className: a()(m.__invalid_messageContent, {
+            [m.compact]: i
           }),
-          children: g.intl.format(g.t.W0UBIy, {
-            username: C.nick,
-            usernameHook: v,
-            guildName: null != (t = null == E ? true : E.name) ? t : ""
+          children: h.intl.format(h.t.W0UBIy, {
+            username: y.nick,
+            usernameHook: O,
+            guildName: null != (t = null == b ? true : b.name) ? t : ""
           })
         })]
       })

@@ -6,7 +6,7 @@ require.d(exports, {
   UB: () => D,
   Uc: () => I,
   ZP: () => H,
-  kE: () => L
+  kE: () => x
 });
 var i, Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
@@ -40,8 +40,8 @@ var I = function(e) {
 let T = false,
   S = 0,
   A = 0,
-  N = false,
-  C = {};
+  C = false,
+  N = {};
 
 function R() {
   return Chunk131951.Z.supports(Chunk65154.AN.NATIVE_SCREENSHARE_PICKER)
@@ -53,9 +53,9 @@ function P() {
 
 function w() {
   let e = P() && (A > 0 || T && 0 === S);
-  if (module !== N) {
+  if (module !== C) {
     var t, n;
-    N = module, null == (n = Chunk131951.Z.getMediaEngine()) || null == (t = require.setNativeDesktopVideoSourcePickerActive) || exports.call(require, N)
+    C = module, null == (n = Chunk131951.Z.getMediaEngine()) || null == (t = require.setNativeDesktopVideoSourcePickerActive) || exports.call(require, C)
   }
 }
 
@@ -65,40 +65,40 @@ function D() {
   }), [])
 }
 
-function L() {
+function x() {
   return (0, Chunk647438.useEffect)(() => (A++, w(), () => {
     --A, w()
   }), [])
 }
 
-function x() {
+function L() {
   let e = Chunk592125.Z.getChannel(Chunk944486.Z.getVoiceChannelId());
   return T = null != module && (0, Chunk74299.Z)(Chunk131951.Z) && (0, Chunk102172.JL)(module, Chunk430824.Z, Chunk496675.Z, false), w(), false
 }
 
-function M() {
+function j() {
   return null != r ? (0, Chunk783443.Z)(r) : null
 }
 
-function k() {
+function M() {
   return null != r ? (0, Chunk692417.Z)(r) : null
 }
 
-function j() {
+function k() {
   var e;
   let {
     soundshareEnabled: t
   } = Chunk361291.Z.getState();
   return {
     sourceId: "prepicked:0",
-    nativePickerStyleUsed: C.lastPresentedPickerStyle,
-    sourceName: null != (e = M()) ? module : Chunk388032.intl.string(Chunk388032.t["KKcy9/"]),
+    nativePickerStyleUsed: N.lastPresentedPickerStyle,
+    sourceName: null != (e = j()) ? module : Chunk388032.intl.string(Chunk388032.t["KKcy9/"]),
     sound: exports
   }
 }
 class U extends(i = Chunk442837.ZP.Store) {
   initialize() {
-    this.syncWith([Chunk131951.Z, Chunk944486.Z, Chunk592125.Z, Chunk430824.Z, Chunk496675.Z], x), x()
+    this.syncWith([Chunk131951.Z, Chunk944486.Z, Chunk592125.Z, Chunk430824.Z, Chunk496675.Z], L), L()
   }
   supported() {
     return R()
@@ -110,19 +110,19 @@ class U extends(i = Chunk442837.ZP.Store) {
     (0, Chunk299570.t)()
   }
   getPickerState() {
-    return C
+    return N
   }
   getLastPickedContent() {
     return r
   }
   getLastPickedContentTitle() {
-    return M()
+    return j()
   }
   getLastPickedContentPID() {
-    return k()
+    return M()
   }
   getStreamStartOptions() {
-    return j()
+    return k()
   }
 }
 
@@ -131,48 +131,48 @@ function G(e) {
     existing: t,
     content: n
   } = e;
-  if (C = {
+  if (N = {
       lastPickerAction: 1
     }, r = n, 0 === S && !t) {
     let e = u.Z.getChannel(p.Z.getVoiceChannelId());
-    null != e && (0, m.Z)(f.Z) && (0, h.JL)(e, d.Z, _.Z, false) && (0, l.WH)(e.getGuildId(), e.id, j())
+    null != e && (0, m.Z)(f.Z) && (0, h.JL)(e, d.Z, _.Z, false) && (0, l.WH)(e.getGuildId(), e.id, k())
   }
 }
 
 function B() {
-  C = {
+  N = {
     lastPickerAction: 2
   }
 }
 
-function V(e) {
+function Z(e) {
   let {
     error: t
   } = e;
-  C = {
+  N = {
     lastPickerAction: 3,
     lastPickerError: t
   }
 }
 
-function F(e) {
+function V(e) {
   let {
     style: t
   } = e;
-  C = {
+  N = {
     lastPickerAction: 0,
     lastPresentedPickerStyle: t
   }
 }
 
-function Z() {
-  C = {}
+function F() {
+  N = {}
 }
 v(U, "displayName", "NativeScreenSharePickerStore");
 let H = new U(Chunk570140.Z, {
   NATIVE_SCREEN_SHARE_PICKER_UPDATE: G,
   NATIVE_SCREEN_SHARE_PICKER_CANCEL: B,
-  NATIVE_SCREEN_SHARE_PICKER_ERROR: V,
-  NATIVE_SCREEN_SHARE_PICKER_PRESENT: F,
-  NATIVE_SCREEN_SHARE_PICKER_RELEASE: Z
+  NATIVE_SCREEN_SHARE_PICKER_ERROR: Z,
+  NATIVE_SCREEN_SHARE_PICKER_PRESENT: V,
+  NATIVE_SCREEN_SHARE_PICKER_RELEASE: F
 })

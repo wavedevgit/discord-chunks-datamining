@@ -1,4 +1,4 @@
-/** Chunk was on 36499 **/
+/** Chunk was on 5665 **/
 /** chunk id: 911266, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -24,21 +24,21 @@ let _ = e => {
     message: t,
     hovering: n,
     compact: l
-  } = e, _ = i.useRef((0, o.random)(false, 24)).current, C = (0, s.e7)([h.Z], () => h.Z.confettiMode), x = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), v = i.useRef(0), j = i.useRef(null), O = i.useRef(null), [E, S] = i.useState(false), P = i.useMemo(() => !n && !C && !x, [C, n, x]);
+  } = e, _ = i.useRef((0, o.random)(false, 24)).current, C = (0, s.e7)([h.Z], () => h.Z.confettiMode), x = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), v = i.useRef(0), O = i.useRef(null), j = i.useRef(null), [E, S] = i.useState(false), P = i.useMemo(() => !n && !C && !x, [C, n, x]);
   if (i.useEffect(() => {
       n || S(false), n && C && S(true)
     }, [n, C]), i.useEffect(() => {
-      !x && (E || (false === n && (v.current = 0, null != j.current && (clearTimeout(j.current), j.current = null)), v.current = Date.now(), j.current = setTimeout(() => {
+      !x && (E || (false === n && (v.current = 0, null != O.current && (clearTimeout(O.current), O.current = null)), v.current = Date.now(), O.current = setTimeout(() => {
         let e = v.current;
         if (0 !== e && false !== n && !(Date.now() - e < 1e3) && !C) {
-          if (null != O.current) {
+          if (null != j.current) {
             var r;
             let {
               x: e,
               y: n,
               width: i,
               height: l
-            } = null == (r = O.current) ? true : r.getBoundingClientRect();
+            } = null == (r = j.current) ? true : r.getBoundingClientRect();
             (0, g.Z)(t, {
               x: e,
               y: n - 20,
@@ -67,7 +67,7 @@ let _ = e => {
       forcePNG: true
     });
   return (0, r.jsxs)("div", {
-    ref: O,
+    ref: j,
     className: y.emojiWrapper,
     style: {
       right: "".concat(256 + _, "px")

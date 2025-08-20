@@ -1,7 +1,8 @@
-/** Chunk was on 26434 **/
-/** chunk id: 265299, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 265299, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -18,45 +19,45 @@ var Chunk951288 = require("./951288.js"),
   Chunk46140 = require("./46140.js"),
   Chunk506207 = require("./506207.js");
 
-function h(e) {
+function g(e) {
   let {
     questId: t
   } = e, {
     quests: n,
-    excludedQuests: h,
-    isFetchingCurrentQuests: b
-  } = (0, s.J2)({
+    excludedQuests: g,
+    isFetchingCurrentQuests: E
+  } = (0, l.J2)({
     fetchPolicy: "cache-or-network",
     callerSource: "embed"
-  }), E = i.useMemo(() => n.find(e => e.id === t), [t, n]), C = i.useMemo(() => h.find(e => e.id === t), [t, h]), v = i.useMemo(() => (null == E ? true : E.config.features.includes(l.S.MOBILE_ONLY_QUEST_PUSH_TO_MOBILE)) === true, [null == E ? true : E.config.features]);
-  if (b) return (0, r.jsx)(o.$jN, {
-    className: _.spinner
+  }), b = i.useMemo(() => n.find(e => e.id === t), [t, n]), y = i.useMemo(() => g.find(e => e.id === t), [t, g]), O = i.useMemo(() => (null == b ? true : b.config.features.includes(a.S.MOBILE_ONLY_QUEST_PUSH_TO_MOBILE)) === true, [null == b ? true : b.config.features]);
+  if (E) return (0, r.jsx)(o.$jN, {
+    className: m.spinner
   });
-  if (null != C) return (0, r.jsx)(p.W, {
+  if (null != y) return (0, r.jsx)(f.W, {
     questId: t
   });
-  if (null == E) return (0, r.jsx)(m.o, {
+  if (null == b) return (0, r.jsx)(_.o, {
     questId: t,
-    reason: m.X.NOT_FOUND
+    reason: _.X.NOT_FOUND
   });
-  if ((0, a.HJ)(E)) {
+  if ((0, s.HJ)(b)) {
     let {
       enabled: e
     } = u.S.getCurrentConfig({
-      location: g.dr.EMBED_DESKTOP
+      location: h.dr.EMBED_DESKTOP
     }, {
-      autoTrackExposure: v
+      autoTrackExposure: O
     });
-    if (!v || !e) return (0, r.jsx)(m.o, {
+    if (!O || !e) return (0, r.jsx)(_.o, {
       questId: t,
-      reason: m.X.MOBILE_ONLY
+      reason: _.X.MOBILE_ONLY
     })
   }
-  return (0, a.vB)(E.config) ? (0, r.jsx)(d.Z, {
-    quest: E,
+  return (0, s.vB)(b.config) ? (0, r.jsx)(d.Z, {
+    quest: b,
     location: c.jn.QUESTS_EMBED,
     sourceQuestContent: c.jn.QUESTS_EMBED
-  }, E.id) : (0, r.jsx)(f.J, {
+  }, b.id) : (0, r.jsx)(p.J, {
     questId: t
   })
 }

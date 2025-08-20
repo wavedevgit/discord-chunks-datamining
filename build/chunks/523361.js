@@ -1,15 +1,16 @@
-/** Chunk was on 26434 **/
-/** chunk id: 523361, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 523361, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  HG: () => a,
+  HG: () => s,
   Md: () => o,
-  Q8: () => l
+  Q8: () => a
 });
 var Chunk373228 = require("./373228.js"),
   Chunk388032 = require("./388032.jsx");
-let l = () => [Chunk388032.intl.string(Chunk388032.t.b6wEe3), Chunk388032.intl.string(Chunk388032.t.i8o9hY)],
+let a = () => [Chunk388032.intl.string(Chunk388032.t.b6wEe3), Chunk388032.intl.string(Chunk388032.t.i8o9hY)],
   o = () => [Chunk388032.intl.string(Chunk388032.t.vqnToa), Chunk388032.intl.string(Chunk388032.t["9yh+dH"])],
-  a = [{
+  s = [{
     id: "781323471249604648",
     format_type: Chunk373228.u3.APNG,
     description: "Cheerful Choco jumps out of gift box",

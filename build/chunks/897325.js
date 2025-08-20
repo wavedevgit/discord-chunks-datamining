@@ -1,7 +1,8 @@
-/** Chunk was on 26434 **/
-/** chunk id: 897325, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 897325, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  E: () => a,
+  E: () => s,
   _: () => o
 }), require("./314940.js");
 var Chunk278074 = require("./278074.js"),
@@ -9,21 +10,21 @@ var Chunk278074 = require("./278074.js"),
   Chunk807554 = require("./807554.js");
 
 function o(e, t) {
-  let n = (0, r.EQ)(t).with(i.C.IMAGE_ONLY_ANSWERS, () => l.normalStylesImageOnlyAnswers).otherwise(() => l.normalStylesDefault);
+  let n = (0, r.EQ)(t).with(i.C.IMAGE_ONLY_ANSWERS, () => a.normalStylesImageOnlyAnswers).otherwise(() => a.normalStylesDefault);
   return {
     styles: {
       loserSelected: n,
       normal: n,
       notVoted: n,
       selected: n,
-      voted: l.votedStyles,
-      victorSelected: l.victorStyles,
-      victorNotSelected: l.victorStyles,
+      voted: a.votedStyles,
+      victorSelected: a.victorStyles,
+      victorNotSelected: a.victorStyles,
       normalVote: n
     }
   }
 }
 
-function a(e, t) {
+function s(e, t) {
   return e.getAvatarURL(t, 20, false)
 }

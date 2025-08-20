@@ -1,10 +1,11 @@
-/** Chunk was on 66181 **/
-/** chunk id: 462354, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 462354, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Az: () => r,
-  JN: () => s
+  Az: () => i,
+  JN: () => a
 });
-let i = (0, require("./818083.js").B)({
+let r = (0, require("./818083.js").B)({
   kind: "user",
   id: "2025-07_voice_activity_notifications",
   label: "Voice Activity Notifications",
@@ -38,16 +39,16 @@ let i = (0, require("./818083.js").B)({
   }]
 });
 
-function r(e) {
-  return i.useExperiment({
+function i(e) {
+  return r.useExperiment({
     location: e
   }, {
     autoTrackExposure: false
   })
 }
 
-function s(e) {
-  return i.getCurrentConfig({
+function a(e) {
+  return r.getCurrentConfig({
     location: e
   }).enabled
 }

@@ -13,12 +13,12 @@ var Chunk442837 = require("./442837.js"),
 
 function u(t) {
   let e = (0, i.e7)([a.Z], () => a.Z.getMute(t));
-  return (0, r.jsx)(c.S89, {
+  return (0, r.jsx)(o.S89, {
     id: "mute-game",
     label: l.intl.string(l.t["6EwEws"]),
     checked: e,
     action: () => {
-      (0, o.X)(t, !e)
+      (0, c.X)(t, !e)
     }
   })
 }

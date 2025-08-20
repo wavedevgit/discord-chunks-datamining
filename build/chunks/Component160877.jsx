@@ -1,13 +1,14 @@
-/** Chunk was on 57539 **/
-/** chunk id: 160877, original params: t,e,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 160877, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  $: () => T,
-  s: () => C
+  $: () => O,
+  s: () => y
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk470167 = require("./470167.js"),
   Chunk82659 = require("./82659.jsx"),
   Chunk572691 = require("./572691.js"),
@@ -18,107 +19,107 @@ var Chunk951288 = require("./951288.js"),
   Chunk719548 = require("./719548.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk463300 = require("./463300.js");
-let E = t => {
+let g = e => {
     let {
-      attachment: e
-    } = t, {
+      attachment: t
+    } = e, {
       url: n,
-      description: a
-    } = e;
-    return null == n ? null : (0, i.jsx)(x, {
-      url: n,
-      description: a
-    })
-  },
-  p = t => {
-    var e, n, a;
-    let {
-      embed: o
+      description: i
     } = t;
-    if (!I.n2.has(o.type)) return null;
-    let l = true !== o.video && o.type !== r.h.GIFV ? o.video.url : null != (a = null == (e = o.thumbnail) ? true : e.url) ? a : null == (n = o.image) ? true : n.url;
-    return null == l ? null : (0, i.jsx)(x, {
-      url: l
+    return null == n ? null : (0, r.jsx)(b, {
+      url: n,
+      description: i
     })
   },
-  x = t => {
+  E = e => {
+    var t, n, i;
     let {
-      url: e,
+      embed: a
+    } = e;
+    if (!p.n2.has(a.type)) return null;
+    let o = true !== a.video && a.type !== s.h.GIFV ? a.video.url : null != (i = null == (t = a.thumbnail) ? true : t.url) ? i : null == (n = a.image) ? true : n.url;
+    return null == o ? null : (0, r.jsx)(b, {
+      url: o
+    })
+  },
+  b = e => {
+    let {
+      url: t,
       description: n
-    } = t, a = (0, d.cb)(e);
-    return (0, i.jsx)("div", {
-      className: v.mediaContainer,
-      children: a ? (0, i.jsx)(u.Z, {
-        className: l()(v.video, v.media),
+    } = e, i = (0, d.cb)(t);
+    return (0, r.jsx)("div", {
+      className: m.mediaContainer,
+      children: i ? (0, r.jsx)(u.Z, {
+        className: o()(m.video, m.media),
         controls: true,
-        src: e
-      }) : (0, i.jsx)("img", {
-        className: l()(v.image, v.media),
-        src: e,
+        src: t
+      }) : (0, r.jsx)("img", {
+        className: o()(m.image, m.media),
+        src: t,
         alt: n
       })
     })
   };
 
-function C(t) {
+function y(e) {
   c.Z.pop(), (0, f.t)({
     id: "explicit-media-false-positive-modal",
-    text: _.intl.string(_.t.gFsTKi)
-  }), t()
+    text: h.intl.string(h.t.gFsTKi)
+  }), e()
 }
 
-function T(t) {
+function O(e) {
   let {
-    channelId: e,
+    channelId: t,
     messageId: n,
-    isReportFalsePositiveLoading: o,
-    analyticsContext: l,
-    attachmentPreview: r,
+    isReportFalsePositiveLoading: a,
+    analyticsContext: o,
+    attachmentPreview: s,
     embedPreview: c,
     onConfirmPress: u,
     transitionState: d,
     onClose: f
-  } = t, I = a.useCallback(() => {
-    (0, m.aP)({
-      action: m.Yy.EXPLICIT_MEDIA_FALSE_POSITIVE_CLICK_CANCEL,
-      channelId: e,
+  } = e, p = i.useCallback(() => {
+    (0, _.aP)({
+      action: _.Yy.EXPLICIT_MEDIA_FALSE_POSITIVE_CLICK_CANCEL,
+      channelId: t,
       messageId: n,
-      context: l
+      context: o
     }), f()
-  }, [e, n, l, f]), v = a.useCallback(() => {
-    null == u || u(), (0, m.aP)({
-      action: m.Yy.EXPLICIT_MEDIA_FALSE_POSITIVE_CLICK_CONFIRM,
-      channelId: e,
+  }, [t, n, o, f]), m = i.useCallback(() => {
+    null == u || u(), (0, _.aP)({
+      action: _.Yy.EXPLICIT_MEDIA_FALSE_POSITIVE_CLICK_CONFIRM,
+      channelId: t,
       messageId: n,
-      context: l
+      context: o
     })
-  }, [e, n, l, u]);
-  return a.useEffect(() => {
-    (0, m.aP)({
-      action: m.Yy.EXPLICIT_MEDIA_FALSE_POSITIVE_VIEWED,
-      channelId: e,
+  }, [t, n, o, u]);
+  return i.useEffect(() => {
+    (0, _.aP)({
+      action: _.Yy.EXPLICIT_MEDIA_FALSE_POSITIVE_VIEWED,
+      channelId: t,
       messageId: n,
-      context: l
+      context: o
     })
-  }, [e, n, l]), (0, i.jsxs)(s.Modal, {
+  }, [t, n, o]), (0, r.jsxs)(l.Modal, {
     transitionState: d,
     onClose: f,
-    title: _.intl.string(_.t.TPpVkJ),
-    subtitle: _.intl.string(_.t["z4du/P"]),
+    title: h.intl.string(h.t.TPpVkJ),
+    subtitle: h.intl.string(h.t["z4du/P"]),
     actions: [{
-      text: _.intl.string(_.t["ETE/oK"]),
-      onClick: I,
+      text: h.intl.string(h.t["ETE/oK"]),
+      onClick: p,
       variant: "secondary",
-      disabled: o
+      disabled: a
     }, {
-      text: _.intl.string(_.t["cY+Ooa"]),
-      onClick: v,
-      loading: o,
-      disabled: o
+      text: h.intl.string(h.t["cY+Ooa"]),
+      onClick: m,
+      loading: a,
+      disabled: a
     }],
-    children: [null != r && (0, i.jsx)(E, {
-      attachment: r
-    }), null != c && (0, i.jsx)(p, {
+    children: [null != s && (0, r.jsx)(g, {
+      attachment: s
+    }), null != c && (0, r.jsx)(E, {
       embed: c
     })]
   })

@@ -1,4 +1,4 @@
-/** Chunk was on 36499 **/
+/** Chunk was on 5665 **/
 /** chunk id: 526846, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   m: () => L
@@ -81,7 +81,7 @@ function D(e) {
       sectionOverallPosition: 0,
       promotionalLabel: null != g ? (0, b.dF)(g.application) : true
     });
-  return null == g || null == h || f ? null : (null != g.id && null != g.image_hash && (n = (0, j.$_)({
+  return null == g || null == h || f ? null : (null != g.id && null != g.image_hash && (n = (0, O.$_)({
     itemId: g.id,
     hash: g.image_hash,
     containerWidth: 584
@@ -122,14 +122,14 @@ let L = Chunk647438.forwardRef(function(e, t) {
     className: y
   } = e, x = (0, d.e7)([f.Z], () => f.Z.useReducedMotion), {
     id: v,
-    guild_id: j
+    guild_id: O
   } = l;
   i.useEffect(() => {
     S.default.track(A.rMx.ACTIVITIES_CENTER_CONTROL_TRAY_BUTTON_HOVERED, {
       channel_id: v,
-      guild_id: j
+      guild_id: O
     })
-  }, [v, j]), i.useEffect(() => {
+  }, [v, O]), i.useEffect(() => {
     o || s()
   }, [s, o]);
   let E = (0, h.bp)(),
@@ -170,7 +170,7 @@ let L = Chunk647438.forwardRef(function(e, t) {
   }, [c, l]), V = F ? p.iWm : p.nG3;
   return (0, r.jsx)(g.Gt, {
     value: M,
-    children: (0, r.jsx)(O.Z, {
+    children: (0, r.jsx)(j.Z, {
       children: (0, r.jsxs)(p.VqE, {
         ref: t,
         "aria-labelledby": k,

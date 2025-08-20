@@ -2,7 +2,7 @@
 /** chunk id: 254238, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  LO: () => C,
+  LO: () => N,
   On: () => S,
   Vv: () => I,
   _: () => T,
@@ -63,7 +63,7 @@ async function O() {
     type: "REMOTE_SESSION_DISCONNECT"
   });
   let n = [];
-  ((null == module ? true : module.type) === Chunk981631.ABu.PLAYSTATION || (null == module ? true : module.type) === Chunk981631.ABu.PLAYSTATION_STAGING) && (null == module ? true : module.commandId) != null && (null == module ? true : module.deviceId) != null && require.push(w(module.type, module.deviceId, module.commandId)), null != exports && require.push(N(exports));
+  ((null == module ? true : module.type) === Chunk981631.ABu.PLAYSTATION || (null == module ? true : module.type) === Chunk981631.ABu.PLAYSTATION_STAGING) && (null == module ? true : module.commandId) != null && (null == module ? true : module.deviceId) != null && require.push(w(module.type, module.deviceId, module.commandId)), null != exports && require.push(C(exports));
   try {
     await Promise.all(require)
   } catch (e) {
@@ -138,13 +138,13 @@ async function A() {
   return module
 }
 
-function N(e) {
+function C(e) {
   return a.tn.del({
     url: m.ANM.CONNECT_REQUEST(e),
     rejectWithError: false
   })
 }
-async function C(e) {
+async function N(e) {
   let t;
   o.Z.dispatch({
     type: "GAME_CONSOLE_FETCH_DEVICES_START",

@@ -54,39 +54,39 @@ function T(e) {
     channelId: T,
     messageId: S,
     roleId: A,
-    openedAt: N,
-    onHide: C,
+    openedAt: C,
+    onHide: N,
     newAnalyticsLocations: R = [],
     disableAutoFocus: P = false
   } = e, w = (0, a.e7)([c.Z], () => c.Z.isBlocked(t.id)), {
     analyticsLocations: D
-  } = (0, l.ZP)([...R, w ? s.Z.BLOCKED_PROFILE_POPOUT : s.Z.IGNORED_PROFILE_POPOUT]), L = (0, d.ZB)({
+  } = (0, l.ZP)([...R, w ? s.Z.BLOCKED_PROFILE_POPOUT : s.Z.IGNORED_PROFILE_POPOUT]), x = (0, d.ZB)({
     layout: "POPOUT",
     userId: t.id,
     guildId: n,
     channelId: T,
     messageId: S,
     roleId: A
-  }), x = i.useRef(null), M = (0, _.ZP)(t.id, n);
+  }), L = i.useRef(null), j = (0, _.ZP)(t.id, n);
   i.useEffect(() => {
-    null == v || v(null == x ? true : x.current)
-  }, [x, v]);
-  let k = w ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
-    j = P ? "div" : o.VqE;
+    null == v || v(null == L ? true : L.current)
+  }, [L, v]);
+  let M = w ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
+    k = P ? "div" : o.VqE;
   return (0, r.jsx)(l.Gt, {
     value: D,
     children: (0, r.jsx)(d.Mt, {
-      value: L,
-      openedAt: N,
-      fetchStartedAt: null == M ? true : M.fetchStartedAt,
-      fetchEndedAt: null == M ? true : M.fetchEndedAt,
-      isLoaded: null == M ? true : M.isLoaded,
-      children: (0, r.jsx)(j, {
-        ref: x,
+      value: x,
+      openedAt: C,
+      fetchStartedAt: null == j ? true : j.fetchStartedAt,
+      fetchEndedAt: null == j ? true : j.fetchEndedAt,
+      isLoaded: null == j ? true : j.isLoaded,
+      children: (0, r.jsx)(k, {
+        ref: L,
         "aria-label": t.username,
         children: (0, r.jsx)(h.Z, {
           user: t,
-          displayProfile: M,
+          displayProfile: j,
           themeType: E.l.POPOUT,
           children: (0, r.jsxs)("div", {
             className: y.container,
@@ -116,18 +116,18 @@ function T(e) {
                 children: [(0, r.jsx)(g.Z, {
                   isBlocked: w,
                   onClick: () => {
-                    C(), (0, f.pQ)(I({
-                      action: k,
+                    N(), (0, f.pQ)(I({
+                      action: M,
                       analyticsLocations: D
-                    }, L))
+                    }, x))
                   }
                 }), (0, r.jsx)(m.Z, {
                   userId: t.id,
                   onClick: () => {
-                    C(), (0, f.pQ)(I({
+                    N(), (0, f.pQ)(I({
                       action: "DONT_SHOW_AGAIN_IGNORED_PROFILE",
                       analyticsLocations: D
-                    }, L))
+                    }, x))
                   }
                 })]
               })]

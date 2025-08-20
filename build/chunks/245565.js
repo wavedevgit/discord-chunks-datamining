@@ -1,5 +1,6 @@
-/** Chunk was on 21046 **/
-/** chunk id: 245565, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 245565, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   questProgressWrapper: "questProgressWrapper__1d950",
   questProgressRewardTile: "questProgressRewardTile__1d950",

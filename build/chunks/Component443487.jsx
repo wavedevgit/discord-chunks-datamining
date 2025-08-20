@@ -107,8 +107,8 @@ function O(e) {
     return (null == T ? true : T.colorRoleId) != null ? null == (e = d.Z.getRole(n, T.colorRoleId)) ? true : e.name : true
   }, [n, T]), A = (0, c.X7)(n, g, null != (t = null == T ? true : T.colorStrings) ? t : null);
   if (null == E) return null;
-  let N = null == T ? true : T.colorString,
-    C = _.ZP.getName(n, i, E);
+  let C = null == T ? true : T.colorString,
+    N = _.ZP.getName(n, i, E);
   return (0, r.jsxs)("div", {
     className: m.userSection,
     children: [(0, r.jsx)(y, {
@@ -116,10 +116,10 @@ function O(e) {
       guildId: n,
       "aria-hidden": true
     }), (0, r.jsx)(s.PUh, {
-      colorString: null != N ? N : null,
+      colorString: null != C ? C : null,
       roleName: S,
       colorStrings: A,
-      name: C,
+      name: N,
       className: m.userName,
       "aria-hidden": true
     }), I > 0 ? (0, r.jsx)("div", {

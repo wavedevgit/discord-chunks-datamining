@@ -1,54 +1,56 @@
-/** Chunk was on 26434 **/
-/** chunk id: 344997, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 344997, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  g: () => h
+  g: () => E
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk913527 = require("./913527.js"),
-  l = require.n(Chunk913527),
+  a = require.n(Chunk913527),
   Chunk692547 = require("./692547.js"),
   Chunk481060 = require("./481060.js"),
   Chunk788080 = require("./788080.js"),
   Chunk800530 = require("./800530.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk304451 = require("./304451.js");
+let f = e => a()().diff(a().unix(e), "days");
 
-function p(e) {
+function _(e) {
   let {
     classificationId: t
-  } = e;
-  return (0, r.jsx)(a.eee, {
-    onClick: () => {
-      (0, a.ZDy)(async () => {
-        let {
-          default: e
-        } = await Promise.all([n.e("25183"), n.e("3940"), n.e("18831"), n.e("33587")]).then(n.bind(n, 41164));
-        return n => (0, r.jsx)(e, {
-          classificationId: t,
-          source: c.s.SystemDM,
-          transitionState: n.transitionState,
-          onClose: n.onClose
-        })
+  } = e, i = () => {
+    (0, s.ZDy)(async () => {
+      let {
+        default: e
+      } = await n.e("18831").then(n.bind(n, 41164));
+      return n => (0, r.jsx)(e, {
+        classificationId: t,
+        source: c.s.SystemDM,
+        transitionState: n.transitionState,
+        onClose: n.onClose
       })
-    },
+    })
+  };
+  return (0, r.jsx)(s.eee, {
+    onClick: i,
     className: d.detailsButton,
     children: u.intl.string(u.t.QsqdXF)
   })
 }
 
-function m(e) {
+function p(e) {
   let {
     learnMoreLink: t
   } = e;
-  return (0, r.jsx)(a.eee, {
+  return (0, r.jsx)(s.eee, {
     className: d.detailsButton,
     href: t,
     children: u.intl.string(u.t["8/GdRE"])
   })
 }
 
-function f(e) {
+function h(e) {
   let {
     ctaType: t,
     classificationId: n,
@@ -57,12 +59,12 @@ function f(e) {
   switch (t) {
     case c.wo.POLICY_VIOLATION_DETAIL:
       if (null == n) return null;
-      return (0, r.jsx)(p, {
+      return (0, r.jsx)(_, {
         classificationId: n
       });
     case c.wo.LEARN_MORE_LINK:
       if (null == i) return null;
-      return (0, r.jsx)(m, {
+      return (0, r.jsx)(p, {
         learnMoreLink: i
       });
     default:
@@ -70,15 +72,15 @@ function f(e) {
   }
 }
 
-function g(e) {
+function m(e) {
   let {
     iconType: t
   } = e, n = {
-    default: (0, r.jsx)(a.MqZ, {
+    default: (0, r.jsx)(s.MqZ, {
       size: "xs",
       color: o.Z.colors.TEXT_LINK.css
     }),
-    danger: (0, r.jsx)(a.aNP, {
+    danger: (0, r.jsx)(s.aNP, {
       color: o.Z.colors.STATUS_DANGER
     })
   };
@@ -88,7 +90,7 @@ function g(e) {
   }) : null
 }
 
-function _(e) {
+function g(e) {
   let {
     children: t,
     theme: n
@@ -102,45 +104,44 @@ function _(e) {
   })
 }
 
-function h(e) {
+function E(e) {
   var t, n;
-  let i;
   if (null == e.embed || null == e.embed.fields) return null;
-  let o = (0, s.fr)(e.embed);
-  return null == o ? null : (0, r.jsxs)(a.P3F, {
+  let i = (0, l.fr)(e.embed);
+  return null == i ? null : (0, r.jsxs)(s.P3F, {
     className: d.safetyPolicyNoticeContainer,
     children: [(0, r.jsxs)("div", {
       className: d.noticeContent,
       children: [(0, r.jsxs)("div", {
         className: d.headerRow,
-        children: [(0, r.jsx)(g, {
-          iconType: o.icon
-        }), (0, r.jsx)(a.Text, {
+        children: [(0, r.jsx)(m, {
+          iconType: i.icon
+        }), (0, r.jsx)(s.Text, {
           variant: "text-md/semibold",
-          children: o.header
+          children: i.header
         })]
       }), (0, r.jsx)("div", {
         className: d.incidentTiming,
-        children: (0, r.jsx)(a.Text, {
+        children: (0, r.jsx)(s.Text, {
           variant: "text-xs/medium",
           children: u.intl.format(u.t.eevFb2, {
-            daysAgo: (i = null != (n = o.timestamp) ? n : 0, l()().diff(l().unix(i), "days"))
+            daysAgo: f(null != (n = i.timestamp) ? n : 0)
           })
         })
       }), (0, r.jsx)("div", {
         className: d.noticeBody,
-        children: (0, r.jsx)(a.Text, {
+        children: (0, r.jsx)(s.Text, {
           variant: "text-md/normal",
           color: "text-muted",
-          children: o.body
+          children: i.body
         })
       })]
-    }), (0, r.jsx)(_, {
-      theme: o.theme,
-      children: null == (t = o.ctas) ? true : t.map(e => (0, r.jsx)(f, {
+    }), (0, r.jsx)(g, {
+      theme: i.theme,
+      children: null == (t = i.ctas) ? true : t.map(e => (0, r.jsx)(h, {
         ctaType: e,
-        classificationId: o.classification_id,
-        learnMoreLink: o.learn_more_link
+        classificationId: i.classification_id,
+        learnMoreLink: i.learn_more_link
       }, e))
     })]
   })

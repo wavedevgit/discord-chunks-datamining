@@ -82,7 +82,7 @@ function y(e) {
         analyticsLocations: T
       })
     }),
-    N = (0, c.Z)({
+    C = (0, c.Z)({
       user: n,
       guildId: m,
       location: S,
@@ -101,7 +101,7 @@ function y(e) {
         analyticsLocations: T
       })
     }),
-    C = (0, u.Z)({
+    N = (0, u.Z)({
       user: n,
       guildId: m,
       location: S,
@@ -132,7 +132,7 @@ function y(e) {
     }),
     P = [
       [b, A],
-      [C, N, R, (0, f.T)({
+      [N, C, R, (0, f.T)({
         user: n,
         guildId: m,
         location: S,

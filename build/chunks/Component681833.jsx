@@ -1,12 +1,13 @@
-/** Chunk was on 66181 **/
-/** chunk id: 681833, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 681833, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk987997 = require("./987997.jsx"),
@@ -15,44 +16,44 @@ var Chunk120356 = require("./120356.js"),
   Chunk903163 = require("./903163.js"),
   Chunk845904 = require("./845904.js");
 
-function p(e) {
+function _(e) {
   let {
     onClickManageSubscription: t,
     count: n
   } = e;
-  return (0, i.jsxs)("div", {
-    children: [(0, i.jsx)(l.X6q, {
+  return (0, r.jsxs)("div", {
+    children: [(0, r.jsx)(s.X6q, {
       variant: "heading-md/bold",
       children: c.intl.string(c.t["48ywCg"])
-    }), (0, i.jsx)(l.LZC, {
+    }), (0, r.jsx)(s.LZC, {
       size: 4
-    }), (0, i.jsx)(l.Text, {
+    }), (0, r.jsx)(s.Text, {
       variant: "text-md/normal",
-      className: d.sectionDescription,
+      className: u.sectionDescription,
       children: c.intl.string(c.t.VWxmSk)
-    }), (0, i.jsx)(l.LZC, {
+    }), (0, r.jsx)(s.LZC, {
       size: 24
-    }), (0, i.jsxs)("div", {
-      className: s()(u.guildBoostingSubscriptionRow, d.card),
-      children: [(0, i.jsx)("img", {
-        src: m,
+    }), (0, r.jsxs)("div", {
+      className: a()(d.guildBoostingSubscriptionRow, u.card),
+      children: [(0, r.jsx)("img", {
+        src: f,
         alt: "",
-        className: d.bannerImage
-      }), (0, i.jsxs)("div", {
-        className: d.textContainer,
-        children: [(0, i.jsx)(l.X6q, {
+        className: u.bannerImage
+      }), (0, r.jsxs)("div", {
+        className: u.textContainer,
+        children: [(0, r.jsx)(s.X6q, {
           variant: "heading-xl/semibold",
-          className: d.header,
+          className: u.header,
           children: c.intl.string(c.t["48ywCg"])
-        }), (0, i.jsx)(l.Text, {
+        }), (0, r.jsx)(s.Text, {
           variant: "text-md/normal",
-          className: d.description,
+          className: u.description,
           children: c.intl.format(c.t["/esXLi"], {
             numSubscriptions: n
           })
         })]
-      }), (0, i.jsx)(o.Z, {
-        color: a.zx.Colors.BRAND,
+      }), (0, r.jsx)(l.Z, {
+        color: o.zx.Colors.BRAND,
         onClick: t,
         children: c.intl.string(c.t.z5YcJy)
       })]

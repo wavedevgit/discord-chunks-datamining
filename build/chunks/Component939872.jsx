@@ -1,7 +1,8 @@
-/** Chunk was on 48091 **/
-/** chunk id: 939872, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 939872, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  m: () => m
+  m: () => f
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -13,40 +14,40 @@ var Chunk442837 = require("./442837.js"),
   Chunk313550 = require("./313550.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk406671 = require("./406671.js");
-let m = e => {
+let f = e => {
   let {
     onClose: t,
     listing: n,
-    guildId: m
-  } = e, p = (0, i.e7)([o.Z], () => o.Z.getGuild(m), [m]), f = (0, c.Z)({
+    guildId: f
+  } = e, _ = (0, i.e7)([l.Z], () => l.Z.getGuild(f), [f]), p = (0, c.Z)({
     listing: n,
-    guildId: m
+    guildId: f
   });
   return (0, r.jsxs)("div", {
-    className: u.confirmationContainer,
-    children: [(0, r.jsx)(a.X6q, {
-      className: u.confirmationHeader,
+    className: d.confirmationContainer,
+    children: [(0, r.jsx)(o.X6q, {
+      className: d.confirmationHeader,
       variant: "heading-lg/extrabold",
-      children: d.intl.format(d.t.I5dYFh, {
-        serverName: null == p ? true : p.name,
+      children: u.intl.format(u.t.I5dYFh, {
+        serverName: null == _ ? true : _.name,
         tierName: n.name
       })
-    }), !f.isEmpty() && (0, r.jsx)(a.Text, {
-      className: u.confirmationSubtitle,
+    }), !p.isEmpty() && (0, r.jsx)(o.Text, {
+      className: d.confirmationSubtitle,
       variant: "text-sm/normal",
       color: "header-secondary",
-      children: d.intl.format(d.t.TnhFHh, {
-        benefits: f.asString()
+      children: u.intl.format(u.t.TnhFHh, {
+        benefits: p.asString()
       })
-    }), (0, r.jsx)(l.zx, {
-      className: u.openDiscordButton,
+    }), (0, r.jsx)(a.zx, {
+      className: d.openDiscordButton,
       onClick: () => (0, s.Z)("role_sub_mweb_success_modal"),
-      children: d.intl.string(d.t.WWvswM)
-    }), (0, r.jsx)(l.zx, {
-      className: u.doneButton,
-      look: l.zx.Looks.BLANK,
+      children: u.intl.string(u.t.WWvswM)
+    }), (0, r.jsx)(a.zx, {
+      className: d.doneButton,
+      look: a.zx.Looks.BLANK,
       onClick: () => t(true),
-      children: d.intl.string(d.t.y84Dho)
+      children: u.intl.string(u.t.y84Dho)
     })]
   })
 }

@@ -1,12 +1,13 @@
-/** Chunk was on 54157 **/
-/** chunk id: 575016, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 575016, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  AT: () => _,
-  fC: () => S,
-  gr: () => g,
-  hQ: () => f
+  AT: () => p,
+  fC: () => m,
+  gr: () => h,
+  hQ: () => _
 });
-var r, Chunk647438 = require("./647438.js"),
+var Chunk647438 = require("./647438.js"),
   Chunk913527 = require("./913527.js"),
   a = require.n(Chunk913527),
   Chunk442837 = require("./442837.js"),
@@ -16,9 +17,11 @@ var r, Chunk647438 = require("./647438.js"),
   Chunk592125 = require("./592125.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  f = ((r = {})[r.LONG = 0] = "LONG", r[r.SHORT = 1] = "SHORT", r);
+  _ = function(e) {
+    return e[e.LONG = 0] = "LONG", e[e.SHORT = 1] = "SHORT", e
+  }({});
 
-function _(e) {
+function p(e) {
   let {
     dueAt: t,
     now: n,
@@ -28,32 +31,33 @@ function _(e) {
     string: "",
     isOverdue: false
   };
-  let s = 0 === r ? p.t.TjNWND : p.t.H4gnX1,
-    l = 0 === r ? p.t.haia19 : p.t["Uq7Y+/"],
-    i = n > t;
+  let i = 0 === r ? f.t.TjNWND : f.t.H4gnX1,
+    o = 0 === r ? f.t.haia19 : f.t["Uq7Y+/"],
+    s = n > t,
+    l = s ? o : i;
   return {
-    dueInText: p.intl.formatToPlainString(i ? l : s, {
+    dueInText: f.intl.formatToPlainString(l, {
       duration: a().duration(t.getTime() - n.getTime(), "millisecond").humanize()
     }),
-    isOverdue: i
+    isOverdue: s
   }
 }
 
-function g(e) {
-  let t = (0, i.e7)([d.Z], () => d.Z.getChannel(e.saveData.channelId));
-  return s.useMemo(() => null != t ? t : null != e.message ? new u.nl({
+function h(e) {
+  let t = (0, o.e7)([u.Z], () => u.Z.getChannel(e.saveData.channelId));
+  return r.useMemo(() => null != t ? t : null != e.message ? new c.nl({
     id: e.saveData.channelId,
     guild_id: e.saveData.guildId,
-    type: h.d4z.UNKNOWN,
-    name: p.intl.string(p.t.J90oLS)
+    type: d.d4z.UNKNOWN,
+    name: f.intl.string(f.t.J90oLS)
   }) : true, [t, e])
 }
-async function S(e, t) {
-  if ((null == t ? true : t.type) === h.d4z.UNKNOWN && null == e.saveData.guildId) try {
-    let t = await o.Z.fetchChannel(e.saveData.channelId);
+async function m(e, t) {
+  if ((null == t ? true : t.type) === d.d4z.UNKNOWN && null == e.saveData.guildId) try {
+    let t = await s.Z.fetchChannel(e.saveData.channelId);
     if (null == t.recipients || t.recipients.length > 1) return;
-    await o.Z.ensurePrivateChannel(t.recipients.map(e => e.id))
-  } catch (e) {}(0, c.Z)(h.Z5c.CHANNEL(null == t ? true : t.getGuildId(), e.saveData.channelId, e.saveData.messageId), {
+    await s.Z.ensurePrivateChannel(t.recipients.map(e => e.id))
+  } catch (e) {}(0, l.Z)(d.Z5c.CHANNEL(null == t ? true : t.getGuildId(), e.saveData.channelId, e.saveData.messageId), {
     openChannel: true
   })
 }

@@ -14,7 +14,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk981631 = require("./981631.js"),
   Chunk630724 = require("./630724.js");
 
-function _(e, t, n, i) {
+function _(e, t, n, o) {
   return (0, r.jsx)(a.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -34,30 +34,30 @@ function _(e, t, n, i) {
     return e
   }({
     onSuccess: t => {
-      l.Z.flowStep(u.MK.CREATE_GUILD, u.X2.SUCCESS), e.onClose(), null == i || i(t)
+      l.Z.flowStep(u.MK.CREATE_GUILD, u.X2.SUCCESS), e.onClose(), null == o || o(t)
     },
     onSlideChange: e => (function(e, t) {
       switch (e) {
         case s._m.GUILD_TEMPLATES:
-          l.Z.flowStepOrStart(u.MK.CREATE_GUILD, u.X2.GUILD_TEMPLATES), o.default.track(c.rMx.OPEN_MODAL, {
+          l.Z.flowStepOrStart(u.MK.CREATE_GUILD, u.X2.GUILD_TEMPLATES), i.default.track(c.rMx.OPEN_MODAL, {
             type: "Create Guild Templates",
             location: t
           });
           break;
         case s._m.CUSTOMIZE_GUILD:
-          l.Z.flowStep(u.MK.CREATE_GUILD, u.X2.GUILD_CREATE), o.default.track(c.rMx.OPEN_MODAL, {
+          l.Z.flowStep(u.MK.CREATE_GUILD, u.X2.GUILD_CREATE), i.default.track(c.rMx.OPEN_MODAL, {
             type: "Create Guild Step 2",
             location: t
           });
           break;
         case s._m.CREATION_INTENT:
-          o.default.track(c.rMx.OPEN_MODAL, {
+          i.default.track(c.rMx.OPEN_MODAL, {
             type: "Server Intent Discovery",
             location: t
           });
           break;
         case s._m.JOIN_GUILD:
-          l.Z.flowStep(u.MK.CREATE_GUILD, u.X2.JOIN_GUILD), o.default.track(c.rMx.OPEN_MODAL, {
+          l.Z.flowStep(u.MK.CREATE_GUILD, u.X2.JOIN_GUILD), i.default.track(c.rMx.OPEN_MODAL, {
             type: "Join Guild",
             location: t
           })
@@ -73,7 +73,7 @@ let d = e => {
       location: n,
       onSuccess: r
     } = e;
-    (0, i.h7j)(e => _(e, t, n, r), {
+    (0, o.h7j)(e => _(e, t, n, r), {
       modalKey: s.PU
     })
   },
@@ -82,5 +82,5 @@ let d = e => {
       slide: t,
       location: n
     } = e;
-    (0, i.oav)(s.PU, e => _(e, t, n))
+    (0, o.oav)(s.PU, e => _(e, t, n))
   }

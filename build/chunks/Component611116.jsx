@@ -1,13 +1,14 @@
-/** Chunk was on 66181 **/
-/** chunk id: 611116, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 611116, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  G_: () => f,
-  g: () => h
+  G_: () => b,
+  g: () => E
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk572995 = require("./572995.js"),
   Chunk42373 = require("./42373.jsx"),
@@ -15,102 +16,110 @@ var Chunk951288 = require("./951288.js"),
   Chunk642650 = require("./642650.js"),
   Chunk595475 = require("./595475.js");
 
+function _(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
 function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      i = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), i.forEach(function(t) {
-      var i;
-      i = n[t], t in e ? Object.defineProperty(e, t, {
-        value: i,
-        enumerable: true,
-        configurable: true,
-        writable: true
-      }) : e[t] = i
+    }))), r.forEach(function(t) {
+      _(e, t, n[t])
     })
   }
   return e
+}
+
+function h(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
 }
 
 function g(e) {
   let {
     className: t,
     boxLayout: n,
-    title: r,
-    shouldLoadVideo: s,
-    isReducedMotion: d,
-    includeSideGradient: g = false,
+    title: i,
+    shouldLoadVideo: a,
+    isReducedMotion: u,
+    includeSideGradient: _ = false,
     startLeftAligned: h = false,
-    enablePremiumBrandRefreshDesign: f
-  } = e, b = f ? m : u;
-  return (0, i.jsxs)("div", {
-    className: a()(b.boxBackdrop, t),
-    children: [(0, i.jsx)(l.X6q, {
-      className: b.bentoSectionHeader,
+    enablePremiumBrandRefreshDesign: g
+  } = e, E = g ? f : d;
+  return (0, r.jsxs)("div", {
+    className: o()(E.boxBackdrop, t),
+    children: [(0, r.jsx)(s.X6q, {
+      className: E.bentoSectionHeader,
       variant: "display-md",
       color: "header-primary",
-      children: r
-    }), (0, i.jsx)("div", {
-      className: b.bentoBoxesGrid,
+      children: i
+    }), (0, r.jsx)("div", {
+      className: E.bentoBoxesGrid,
       children: n.map((e, t) => {
         let n;
         switch (e.length) {
           case 3:
-            n = o.y$.SMALL;
+            n = l.y$.SMALL;
             break;
           case 2:
-            n = o.y$.MEDIUM;
+            n = l.y$.MEDIUM;
             break;
           default:
-            n = o.y$.LARGE
+            n = l.y$.LARGE
         }
-        return (0, i.jsx)(i.Fragment, {
-          children: e.map(e => {
-            var r, a;
-            return (0, i.jsx)(c.Z, (r = p({
-              index: t + +!!h
-            }, e), a = a = {
-              size: n,
-              shouldLoadVideo: s,
-              isReducedMotion: d,
-              enablePremiumBrandRefreshDesign: f
-            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
-              var n = Object.keys(e);
-              if (Object.getOwnPropertySymbols) {
-                var i = Object.getOwnPropertySymbols(e);
-                n.push.apply(n, i)
-              }
-              return n
-            })(Object(a)).forEach(function(e) {
-              Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(a, e))
-            }), r), e.name)
-          })
+        return (0, r.jsx)(r.Fragment, {
+          children: e.map(e => (0, r.jsx)(c.Z, m(p({
+            index: t + +!!h
+          }, e), {
+            size: n,
+            shouldLoadVideo: a,
+            isReducedMotion: u,
+            enablePremiumBrandRefreshDesign: g
+          }), e.name))
         })
       })
-    }), g && (0, i.jsx)("div", {
-      className: u.bentoSideGradient
+    }), _ && (0, r.jsx)("div", {
+      className: d.bentoSideGradient
     })]
   })
 }
-let h = Chunk647438.memo(function(e) {
+let E = Chunk647438.memo(function(e) {
     let {
       whatsNewBoxes: t
-    } = (0, o.ZP)();
-    return (0, i.jsx)(g, p({
+    } = (0, l.ZP)();
+    return (0, r.jsx)(g, p({
       boxLayout: t,
-      title: d.intl.string(d.t.LRmNAg),
+      title: u.intl.string(u.t.LRmNAg),
       startLeftAligned: e.enablePremiumBrandRefreshDesign
     }, e))
   }),
-  f = Chunk647438.memo(function(e) {
+  b = Chunk647438.memo(function(e) {
     let {
       bestOfBoxes: t
-    } = (0, o.ZP)();
-    return (0, i.jsx)(g, p({
+    } = (0, l.ZP)();
+    return (0, r.jsx)(g, p({
       boxLayout: t,
-      title: d.intl.string(d.t.EnzW2N),
+      title: u.intl.string(u.t.EnzW2N),
       includeSideGradient: !e.enablePremiumBrandRefreshDesign,
       startLeftAligned: true
     }, e))

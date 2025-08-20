@@ -1,242 +1,292 @@
-/** Chunk was on 3940 **/
-/** chunk id: 236289, original params: t,e,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 236289, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => B
+  Z: () => en
 });
-var i, E, Chunk979079 = require("./979079.js"),
-  l = require.n(Chunk979079),
+var r, Chunk979079 = require("./979079.js"),
+  a = require.n(Chunk979079),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk531441 = require("./531441.js"),
   Chunk800530 = require("./800530.js");
-let o = {},
-  S = {},
-  s = {
+
+function u(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+let d = {},
+  f = {},
+  _ = {
     state: Chunk531441.Sn.ALL_GOOD
   },
-  T = false,
-  c = false,
-  U = null,
-  p = null,
-  d = false,
-  f = false,
-  g = [],
-  C = false,
-  F = null,
-  I = Chunk800530.bK.DIDNT_VIOLATE_POLICY,
-  R = "",
-  D = "",
-  H = "",
-  L = 0,
-  N = null,
+  p = false,
+  h = false,
+  m = null,
+  g = null,
+  E = false,
+  b = false,
+  y = [],
   O = false,
+  v = null,
+  I = Chunk800530.bK.DIDNT_VIOLATE_POLICY,
+  T = "",
+  S = "",
+  A = "",
+  C = 0,
+  N = null,
+  R = false,
   P = Chunk800530.oE.NONE,
-  b = null;
+  w = null;
 
-function h(t) {
-  let {} = t;
-  H = "", N = null, O = false
+function D(e) {
+  p = true
 }
-class Y extends(E = Chunk442837.ZP.Store) {
+
+function x(e) {
+  let {
+    classifications: t,
+    accountStanding: n,
+    isDsaEligible: r,
+    isAppealEligible: i,
+    username: o,
+    appealEligibility: s
+  } = e;
+  d = a()(t, "id"), _ = n, E = r, b = i, p = false, h = true, m = null, S = o, y = s
+}
+
+function L(e) {
+  let {
+    error: t
+  } = e;
+  p = false, h = false, m = t
+}
+
+function j(e) {
+  f[e.classificationId] = l.OY.PENDING, p = true
+}
+
+function M(e) {
+  let {
+    classification: t,
+    accountStanding: n,
+    isDsaEligible: r,
+    username: i,
+    isAppealEligible: a
+  } = e;
+  d[t.id] = t, f[t.id] = l.OY.SUCCESS, _ = n, p = false, m = null, E = r, b = a, h = true, S = i
+}
+
+function k(e) {
+  let {
+    error: t,
+    classificationId: n
+  } = e;
+  p = false, m = t, f[n] = l.OY.FAILED, h = false
+}
+
+function U(e) {
+  let {
+    classificationId: t
+  } = e;
+  g = t
+}
+
+function G() {
+  g = null, I = Chunk800530.bK.DIDNT_VIOLATE_POLICY, T = ""
+}
+
+function B(e) {
+  let {
+    signal: t
+  } = e;
+  I = t
+}
+
+function Z(e) {
+  let {
+    userInput: t
+  } = e;
+  T = t
+}
+
+function V(e) {
+  let {} = e;
+  O = true, v = null
+}
+
+function F(e) {
+  let {
+    classificationId: t
+  } = e;
+  O = false, v = null, d[t].appeal_status = {
+    status: l.hQ.REVIEW_PENDING
+  }
+}
+
+function H(e) {
+  let {
+    error: t
+  } = e;
+  O = false, v = t
+}
+
+function Y(e) {
+  let {} = e;
+  A = "", N = null, R = true
+}
+
+function W(e) {
+  let {
+    verificationWebviewUrl: t
+  } = e;
+  A = t, N = null, R = false
+}
+
+function K(e) {
+  let {
+    error: t
+  } = e;
+  A = "", N = t, R = false
+}
+
+function z(e) {
+  let {} = e;
+  A = "", N = null, R = false
+}
+
+function q(e) {
+  let {} = e;
+  for (let e in P = c.oE.LOADING, d) d[e].is_coppa && (d[e].appeal_status = {
+    status: l.hQ.REVIEW_PENDING
+  })
+}
+
+function X(e) {
+  let {} = e;
+  P = c.oE.LOADING, w = null
+}
+
+function Q(e) {
+  let {} = e;
+  P = c.oE.LOADING, w = null, C += 1
+}
+
+function J(e) {
+  let {
+    success: t
+  } = e;
+  P = t ? c.oE.SUCCESS : C < c.o6 ? c.oE.LOADING : c.oE.FAILURE, w = null
+}
+
+function $(e) {
+  let {
+    error: t
+  } = e;
+  P = c.oE.ERROR, w = t
+}
+
+function ee() {
+  p = false, d = {}, _ = {
+    state: Chunk531441.Sn.ALL_GOOD
+  }, g = null, I = Chunk800530.bK.DIDNT_VIOLATE_POLICY, T = "", y = []
+}
+class et extends(r = Chunk442837.ZP.Store) {
   isFetching() {
-    return T
-  }
-  getClassifications() {
-    return Object.values(o)
-  }
-  getClassification(t) {
-    return o[t]
-  }
-  getAccountStanding() {
-    return s
-  }
-  getFetchError() {
-    return U
-  }
-  isInitialized() {
-    return c
-  }
-  getClassificationRequestState(t) {
-    return S[t]
-  }
-  getAppealClassificationId() {
     return p
   }
+  getClassifications() {
+    return Object.values(d)
+  }
+  getClassification(e) {
+    return d[e]
+  }
+  getAccountStanding() {
+    return _
+  }
+  getFetchError() {
+    return m
+  }
+  isInitialized() {
+    return h
+  }
+  getClassificationRequestState(e) {
+    return f[e]
+  }
+  getAppealClassificationId() {
+    return g
+  }
   getIsDsaEligible() {
-    return d
+    return E
   }
   getIsAppealEligible() {
-    return f
+    return b
   }
   getAppealEligibility() {
-    return g
+    return y
   }
   getAppealSignal() {
     return I
   }
   getFreeTextAppealReason() {
-    return R
+    return T
   }
   getIsSubmitting() {
-    return C
+    return O
   }
   getSubmitError() {
-    return F
+    return v
   }
   getUsername() {
-    return D
+    return S
   }
   getAgeVerificationWebviewUrl() {
-    return H
+    return A
   }
   getAgeVerificationError() {
     return N
   }
   getIsLoadingAgeVerification() {
-    return O
+    return R
   }
   getAgeCheckStatus() {
     return P
   }
   getAgeCheckError() {
-    return b
+    return w
   }
   getAgeCheckAttempts() {
-    return L
+    return C
   }
-}(i = "displayName") in Y ? Object.defineProperty(Y, i, {
-  value: "SafetyHubStore",
-  enumerable: true,
-  configurable: true,
-  writable: true
-}) : Y[i] = "SafetyHubStore";
-let B = new Y(Chunk570140.Z, {
-  SAFETY_HUB_FETCH_START: function(t) {
-    T = true
-  },
-  SAFETY_HUB_FETCH_SUCCESS: function(t) {
-    let {
-      classifications: e,
-      accountStanding: n,
-      isDsaEligible: i,
-      isAppealEligible: E,
-      username: _,
-      appealEligibility: A
-    } = t;
-    o = l()(e, "id"), s = n, d = i, f = E, T = false, c = true, U = null, D = _, g = A
-  },
-  SAFETY_HUB_FETCH_FAILURE: function(t) {
-    let {
-      error: e
-    } = t;
-    T = false, c = false, U = e
-  },
-  SAFETY_HUB_FETCH_CLASSIFICATION_START: function(t) {
-    S[t.classificationId] = r.OY.PENDING, T = true
-  },
-  SAFETY_HUB_FETCH_CLASSIFICATION_SUCCESS: function(t) {
-    let {
-      classification: e,
-      accountStanding: n,
-      isDsaEligible: i,
-      username: E,
-      isAppealEligible: _
-    } = t;
-    o[e.id] = e, S[e.id] = r.OY.SUCCESS, s = n, T = false, U = null, d = i, f = _, c = true, D = E
-  },
-  SAFETY_HUB_FETCH_CLASSIFICATION_FAILURE: function(t) {
-    let {
-      error: e,
-      classificationId: n
-    } = t;
-    T = false, U = e, S[n] = r.OY.FAILED, c = false
-  },
-  SAFETY_HUB_APPEAL_OPEN: function(t) {
-    let {
-      classificationId: e
-    } = t;
-    p = e
-  },
-  SAFETY_HUB_APPEAL_CLOSE: function() {
-    p = null, I = Chunk800530.bK.DIDNT_VIOLATE_POLICY, R = ""
-  },
-  SAFETY_HUB_APPEAL_SIGNAL_SELECT: function(t) {
-    let {
-      signal: e
-    } = t;
-    I = e
-  },
-  SAFETY_HUB_APPEAL_SIGNAL_CUSTOM_INPUT_CHANGE: function(t) {
-    let {
-      userInput: e
-    } = t;
-    R = e
-  },
-  SAFETY_HUB_REQUEST_REVIEW_START: function(t) {
-    let {} = t;
-    C = true, F = null
-  },
-  SAFETY_HUB_REQUEST_REVIEW_SUCCESS: function(t) {
-    let {
-      classificationId: e
-    } = t;
-    C = false, F = null, o[e].appeal_status = {
-      status: r.hQ.REVIEW_PENDING
-    }
-  },
-  SAFETY_HUB_REQUEST_REVIEW_FAILURE: function(t) {
-    let {
-      error: e
-    } = t;
-    C = false, F = e
-  },
-  SAFETY_HUB_REQUEST_AUTOMATED_UNDERAGE_APPEAL_START: function(t) {
-    let {} = t;
-    H = "", N = null, O = true
-  },
-  SAFETY_HUB_REQUEST_AUTOMATED_UNDERAGE_APPEAL_SUCCESS: function(t) {
-    let {
-      verificationWebviewUrl: e
-    } = t;
-    H = e, N = null, O = false
-  },
-  SAFETY_HUB_REQUEST_AUTOMATED_UNDERAGE_APPEAL_FAILURE: function(t) {
-    let {
-      error: e
-    } = t;
-    H = "", N = e, O = false
-  },
-  SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_MODAL_OPEN: h,
-  SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_MODAL_CLOSE: h,
-  SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_SUBMIT_SUCCESS: function(t) {
-    let {} = t;
-    for (let t in P = u.oE.LOADING, o) o[t].is_coppa && (o[t].appeal_status = {
-      status: r.hQ.REVIEW_PENDING
-    })
-  },
-  SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_START_POLL: function(t) {
-    let {} = t;
-    P = u.oE.LOADING, b = null
-  },
-  SAFETY_HUB_CHECK_AUTOMATED_UNDERAGE_APPEAL_START: function(t) {
-    let {} = t;
-    P = u.oE.LOADING, b = null, L += 1
-  },
-  SAFETY_HUB_CHECK_AUTOMATED_UNDERAGE_APPEAL_SUCCESS: function(t) {
-    let {
-      success: e
-    } = t;
-    P = e ? u.oE.SUCCESS : L < u.o6 ? u.oE.LOADING : u.oE.FAILURE, b = null
-  },
-  SAFETY_HUB_CHECK_AUTOMATED_UNDERAGE_APPEAL_FAILURE: function(t) {
-    let {
-      error: e
-    } = t;
-    P = u.oE.ERROR, b = e
-  },
-  LOGOUT: function() {
-    T = false, o = {}, s = {
-      state: Chunk531441.Sn.ALL_GOOD
-    }, p = null, I = Chunk800530.bK.DIDNT_VIOLATE_POLICY, R = "", g = []
-  }
+}
+u(et, "displayName", "SafetyHubStore");
+let en = new et(Chunk570140.Z, {
+  SAFETY_HUB_FETCH_START: D,
+  SAFETY_HUB_FETCH_SUCCESS: x,
+  SAFETY_HUB_FETCH_FAILURE: L,
+  SAFETY_HUB_FETCH_CLASSIFICATION_START: j,
+  SAFETY_HUB_FETCH_CLASSIFICATION_SUCCESS: M,
+  SAFETY_HUB_FETCH_CLASSIFICATION_FAILURE: k,
+  SAFETY_HUB_APPEAL_OPEN: U,
+  SAFETY_HUB_APPEAL_CLOSE: G,
+  SAFETY_HUB_APPEAL_SIGNAL_SELECT: B,
+  SAFETY_HUB_APPEAL_SIGNAL_CUSTOM_INPUT_CHANGE: Z,
+  SAFETY_HUB_REQUEST_REVIEW_START: V,
+  SAFETY_HUB_REQUEST_REVIEW_SUCCESS: F,
+  SAFETY_HUB_REQUEST_REVIEW_FAILURE: H,
+  SAFETY_HUB_REQUEST_AUTOMATED_UNDERAGE_APPEAL_START: Y,
+  SAFETY_HUB_REQUEST_AUTOMATED_UNDERAGE_APPEAL_SUCCESS: W,
+  SAFETY_HUB_REQUEST_AUTOMATED_UNDERAGE_APPEAL_FAILURE: K,
+  SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_MODAL_OPEN: z,
+  SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_MODAL_CLOSE: z,
+  SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_SUBMIT_SUCCESS: q,
+  SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_START_POLL: X,
+  SAFETY_HUB_CHECK_AUTOMATED_UNDERAGE_APPEAL_START: Q,
+  SAFETY_HUB_CHECK_AUTOMATED_UNDERAGE_APPEAL_SUCCESS: J,
+  SAFETY_HUB_CHECK_AUTOMATED_UNDERAGE_APPEAL_FAILURE: $,
+  LOGOUT: ee
 })

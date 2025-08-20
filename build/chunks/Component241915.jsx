@@ -2,7 +2,7 @@
 /** chunk id: 241915, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => C,
+  Z: () => N,
   _: () => A
 }), require("./388685.js");
 var r, Chunk951288 = require("./951288.js"),
@@ -315,7 +315,7 @@ h(A, "defaultProps", {
   hidden: false,
   roundCorners: true
 });
-let N = e => {
+let C = e => {
     let {
       selectedPIPWindow: t,
       pipWindows: n,
@@ -331,16 +331,16 @@ let N = e => {
       resizeConfig: v,
       className: I,
       getDockedRectPositionY: T
-    } = e, [S, N] = a.useState(false), C = a.useMemo(() => null == t ? null : n.map(e => {
+    } = e, [S, C] = a.useState(false), N = a.useMemo(() => null == t ? null : n.map(e => {
       if (e.id !== t.id && e.component !== f.NYg.ACTIVITY && e.component !== f.NYg.FRAME) return null;
       let n = "string" == typeof e.component ? h[e.component] : e.component;
       return (0, i.jsx)(n, m({
         width: r
       }, e.props), e.id)
     }), [n, t, r, h]), R = a.useCallback(() => {
-      N(true)
+      C(true)
     }, []), P = a.useCallback(() => {
-      N(false)
+      C(false)
     }, []), w = a.useMemo(() => n.some(e => e.component === f.NYg.ACTIVITY), [n]), D = a.useMemo(() => n.some(e => e.component === f.NYg.FRAME), [n]);
     return null == t ? (0, i.jsx)(d.ZP, {
       children: (0, i.jsx)("div", {
@@ -371,9 +371,9 @@ let N = e => {
           edgeOffsetRight: b,
           roundCorners: E,
           resizeConfig: w || D ? true : v,
-          children: C
+          children: N
         })
       })
     })
   },
-  C = Chunk647438.memo(N)
+  N = Chunk647438.memo(C)

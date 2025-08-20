@@ -1,5 +1,6 @@
-/** Chunk was on 66181 **/
-/** chunk id: 475977, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 475977, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   Z: () => h
 });
@@ -21,18 +22,25 @@ let h = () => {
   } = (0, Chunk906732.ZP)(Chunk100527.Z.COLLECTIBLES_PROFILE_SETTINGS_UPSELL), t = Chunk647438.useRef(null), {
     asset: n,
     popoutAsset: h,
-    title: f,
-    body: b,
-    version: x,
-    revertTextColor: _
+    title: m,
+    body: g,
+    version: E,
+    revertTextColor: b
   } = (0, Chunk196033.W)();
-  return Chunk647438.useEffect(() => {
+  Chunk647438.useEffect(() => {
     Chunk626135.default.track(Chunk981631.rMx.PREMIUM_UPSELL_VIEWED, {
       type: Chunk474936.cd.COLLECTIBLES_PROFILE_SETTINGS_UPSELL,
       location_stack: module,
-      version: x
+      version: E
     })
-  }, [module, x]), (0, Chunk951288.jsxs)("div", {
+  }, [module, E]);
+  let y = () => {
+    (0, Chunk335131.mK)({
+      analyticsLocations: module,
+      analyticsSource: Chunk100527.Z.COLLECTIBLES_PROFILE_SETTINGS_UPSELL
+    })
+  };
+  return (0, Chunk951288.jsxs)("div", {
     ref: exports,
     className: Chunk227919.container,
     style: {
@@ -51,21 +59,16 @@ let h = () => {
       className: Chunk227919.mainColumn,
       children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
         variant: "heading-lg/extrabold",
-        color: _ ? "redesign-button-overlay-text" : "currentColor",
+        color: b ? "redesign-button-overlay-text" : "currentColor",
         className: Chunk227919.title,
-        children: f
+        children: m
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",
-        color: _ ? "redesign-button-overlay-text" : "currentColor",
-        children: b
+        color: b ? "redesign-button-overlay-text" : "currentColor",
+        children: g
       })]
     }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
-      onClick: () => {
-        (0, Chunk335131.mK)({
-          analyticsLocations: module,
-          analyticsSource: Chunk100527.Z.COLLECTIBLES_PROFILE_SETTINGS_UPSELL
-        })
-      },
+      onClick: y,
       variant: "overlay-primary",
       text: Chunk388032.intl.string(Chunk388032.t.fYfGgI)
     })]

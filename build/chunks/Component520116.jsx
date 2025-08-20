@@ -1,4 +1,4 @@
-/** Chunk was on 69003 **/
+/** Chunk was on 91488 **/
 /** chunk id: 520116, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -24,12 +24,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk557047 = require("./557047.js");
-let E = {
+let x = {
   left: 4,
   right: false
 };
 
-function x(e) {
+function E(e) {
   var t, n, l;
   let {
     channel: o,
@@ -45,7 +45,7 @@ function x(e) {
     }
   }, [o.id]);
   return (0, r.jsx)(c.tEY, {
-    offset: E,
+    offset: x,
     children: (0, r.jsxs)("div", (n = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -106,13 +106,13 @@ function S(e) {
     location: "20e3b0_1"
   }, {
     autoTrackExposure: false
-  }), _ = g.jU.useSetting(), E = (0, p.P1)(l), S = false, P = 0 === i.messages.length || o()(i.messages[0].timestamp).isSame(o()(), "day"), I = null != (n = null == (t = b.default.getUser(m.default.getId())) ? true : t.hasFlag(v.xW$.SPAMMER)) && n, N = [];
+  }), _ = g.jU.useSetting(), x = (0, p.P1)(l), S = false, I = 0 === i.messages.length || o()(i.messages[0].timestamp).isSame(o()(), "day"), P = null != (n = null == (t = b.default.getUser(m.default.getId())) ? true : t.hasFlag(j.xW$.SPAMMER)) && n, N = [];
   if (!i.collapsed) {
     let e = null,
       t = null,
       n = i.messages.slice(0, y.hC);
     n.forEach(n => {
-      if (!P && (null == e || !e.isSame(n.timestamp, "day"))) {
+      if (!I && (null == e || !e.isSame(n.timestamp, "day"))) {
         let t = (0, O.vc)(n.timestamp, "LL");
         N.push((0, r.jsx)(f.Z, {
           className: C.divider,
@@ -120,22 +120,22 @@ function S(e) {
         }, t)), e = o()(n.timestamp)
       }
       let i = null == t || (0, d.Z)(l, t, n);
-      t = n, S = S || (0, p.DQ)(n), N.push((0, r.jsx)(x, {
+      t = n, S = S || (0, p.DQ)(n), N.push((0, r.jsx)(E, {
         channel: l,
         message: n,
         compact: _,
         isGroupStart: i,
-        treatSpam: !I && h && (0, p.DQ)(n) && E,
+        treatSpam: !P && h && (0, p.DQ)(n) && x,
         gotoChannel: a
       }, n.id))
     }), i.messages.length >= y.hC && N.push((0, r.jsxs)(s.zx, {
       color: s.zx.Colors.LINK,
       look: s.zx.Looks.LINK,
       onClick: e => a(e, n[n.length - 1].id),
-      children: [j.intl.string(j.t["9OB9ho"]), " ›"]
+      children: [v.intl.string(v.t["9OB9ho"]), " ›"]
     }, "view-all")), 0 === N.length && (N = [(0, r.jsx)(c.$jN, {}, "spinner")])
   }
-  return S && E && u.Z.trackExposure({
+  return S && x && u.Z.trackExposure({
     location: "20e3b0_2"
   }), (0, r.jsx)("div", {
     className: C.messages,

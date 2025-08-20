@@ -1,24 +1,24 @@
-/** Chunk was on 31930 **/
-/** chunk id: 903773, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 903773, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => l
+  Z: () => o
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk481060 = require("./481060.js"),
   Chunk696936 = require("./696936.jsx");
 
-function l(e) {
+function o(e) {
   let {
     children: t,
     className: n,
-    color: l = s.W.YELLOW
+    color: o = a.W.YELLOW
   } = e;
-  return (0, i.jsx)(s.Z, {
+  return (0, r.jsx)(a.Z, {
     className: n,
-    color: l,
-    icon: r.Mgn,
+    color: o,
+    icon: i.Mgn,
     children: t
   })
 }

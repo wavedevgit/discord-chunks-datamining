@@ -1,7 +1,8 @@
-/** Chunk was on 26434 **/
-/** chunk id: 779125, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 779125, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => E
+  Z: () => y
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -21,48 +22,50 @@ var Chunk442837 = require("./442837.js"),
   Chunk900849 = require("./900849.js"),
   Chunk981631 = require("./981631.js");
 
-function E(e) {
+function b(e, t) {
+  let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
+  if (null == e || null == t) return;
+  let r = _.Z.getGuild(e);
+  if ((null == r ? true : r.joinedAt) == null) return void g.Ub(e, {}, {
+    channelId: t
+  });
+  let i = f.Z.getChannel(t);
+  if (null != i && (0, d.bw)(i.type)) {
+    if (n) {
+      o.Z.updateChatOpen(i.id, true), (0, u.uL)(E.Z5c.CHANNEL(e, t));
+      return
+    }
+    s.default.selectVoiceChannel(i.id);
+    return
+  }(0, u.uL)(E.Z5c.CHANNEL(e, t))
+}
+
+function y(e) {
   let {
     channel: t,
     onClick: n,
-    beforeTransition: E,
-    className: C,
-    openChatWithoutConnecting: v
-  } = e, O = (0, i.e7)([g.default, f.Z], () => null == t ? "" : (0, s.F6)(t, g.default, f.Z), [t]);
-  return (0, r.jsx)(l.ua7, {
-    text: O,
+    beforeTransition: o,
+    className: s,
+    openChatWithoutConnecting: u
+  } = e, d = (0, i.e7)([h.default, p.Z], () => null == t ? "" : (0, l.F6)(t, h.default, p.Z), [t]);
+  return (0, r.jsx)(a.ua7, {
+    text: d,
     position: "top",
     children: e => {
       let {
         onMouseEnter: i,
-        onMouseLeave: s
+        onMouseLeave: l
       } = e;
       return (0, r.jsx)(c.Z, {
         role: "link",
-        className: C,
+        className: s,
         onClick: e => {
-          e.stopPropagation(), null != n ? n() : (null != E && E(), (0, l.pTH)(), function(e, t) {
-            let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
-            if (null == e || null == t) return;
-            let r = m.Z.getGuild(e);
-            if ((null == r ? true : r.joinedAt) == null) return h.Ub(e, {}, {
-              channelId: t
-            });
-            let i = p.Z.getChannel(t);
-            if (null != i && (0, d.bw)(i.type)) {
-              if (n) {
-                o.Z.updateChatOpen(i.id, true), (0, u.uL)(b.Z5c.CHANNEL(e, t));
-                return
-              }
-              a.default.selectVoiceChannel(i.id);
-              return
-            }(0, u.uL)(b.Z5c.CHANNEL(e, t))
-          }(null == t ? true : t.guild_id, null == t ? true : t.id, v))
+          e.stopPropagation(), null != n ? n() : (null != o && o(), (0, a.pTH)(), b(null == t ? true : t.guild_id, null == t ? true : t.id, u))
         },
         onMouseEnter: i,
-        onMouseLeave: s,
-        iconType: (0, _.wl)(t),
-        children: O
+        onMouseLeave: l,
+        iconType: (0, m.wl)(t),
+        children: d
       })
     }
   })

@@ -1,5 +1,6 @@
-/** Chunk was on 26434 **/
-/** chunk id: 624367, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 624367, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   Z: () => d
 }), require("./388685.js");
@@ -18,26 +19,26 @@ function d(e) {
     applicationId: t,
     customId: n,
     referrerId: d,
-    linkId: p
+    linkId: f
   } = e, {
-    analyticsLocations: m
-  } = (0, l.ZP)(i.Z.ACTIVITY_BOOKMARK), [f] = (0, s.Z)([t]), g = null != f && (0, o.ye)(f), {
-    data: _,
-    error: h
-  } = (0, c.h)(null == f ? true : f.id, p);
-  return null == f || false === g ? null : null != p && null == h && null != _ ? (0, r.jsx)(l.Gt, {
-    value: m,
+    analyticsLocations: _
+  } = (0, a.ZP)(i.Z.ACTIVITY_BOOKMARK), [p] = (0, l.Z)([t]), h = null != p && (0, o.ye)(p), {
+    data: m,
+    error: g
+  } = (0, c.h)(null == p ? true : p.id, f);
+  return null == p || false === h ? null : null != f && null == g && null != m ? (0, r.jsx)(a.Gt, {
+    value: _,
     children: (0, r.jsx)(u.b, {
-      application: f,
+      application: p,
       customId: n,
-      customLink: _,
+      customLink: m,
       referrerId: d
     })
-  }) : (0, r.jsx)(l.Gt, {
-    value: m,
-    children: (0, r.jsx)(a.O, {
-      app: f,
-      linkType: a.U.ACTIVITY,
+  }) : (0, r.jsx)(a.Gt, {
+    value: _,
+    children: (0, r.jsx)(s.O, {
+      app: p,
+      linkType: s.U.ACTIVITY,
       activityCustomId: n,
       activityReferrerId: d
     })

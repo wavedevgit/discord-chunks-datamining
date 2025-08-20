@@ -1,5 +1,6 @@
-/** Chunk was on 66181 **/
-/** chunk id: 115596, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 115596, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   flyingWumpusContainer: "flyingWumpusContainer__08987",
   flyingWumpusAsset: "flyingWumpusAsset__08987",

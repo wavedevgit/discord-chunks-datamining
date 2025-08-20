@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 279804, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 279804, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => d
+  Z: () => u
 });
 var Chunk951288 = require("./951288.js"),
   Chunk399606 = require("./399606.js"),
@@ -10,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk151451 = require("./151451.jsx"),
   Chunk143229 = require("./143229.js"),
   Chunk798500 = require("./798500.js");
-let d = () => {
+let u = () => {
   let e = (0, Chunk399606.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion);
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsx)("div", {

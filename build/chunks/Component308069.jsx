@@ -1,12 +1,13 @@
-/** Chunk was on 21046 **/
-/** chunk id: 308069, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 308069, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => I
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk803948 = require("./803948.js"),
   Chunk481060 = require("./481060.js"),
   Chunk617136 = require("./617136.js"),
@@ -19,66 +20,105 @@ var Chunk951288 = require("./951288.js"),
   Chunk303385 = require("./303385.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk579605 = require("./579605.js");
-let _ = e => {
+
+function b(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function y(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      b(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function O(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function v(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+let I = e => {
   let {
     quest: t,
     expansionSpring: n,
-    onCtxMenuSelect: o,
-    onCtxMenuOpen: _,
-    onCtxMenuClose: j,
-    useReducedMotion: v,
-    isExpanded: C,
-    isExpansionAnimationComplete: y
-  } = e, E = (0, d.aM)(), O = s.useCallback(() => {
-    (0, f.openDisclosureModal)(t, {
-      content: p.jn.QUEST_BAR_V2,
+    onCtxMenuSelect: a,
+    onCtxMenuOpen: b,
+    onCtxMenuClose: O,
+    useReducedMotion: I,
+    isExpanded: T,
+    isExpansionAnimationComplete: S
+  } = e, A = (0, u.aM)(), C = i.useCallback(() => {
+    (0, p.openDisclosureModal)(t, {
+      content: f.jn.QUEST_BAR_V2,
       ctaContent: c.jZ.OPEN_DISCLOSURE,
-      sourceQuestContent: p.jn.QUEST_BAR_V2
+      sourceQuestContent: f.jn.QUEST_BAR_V2
     })
-  }, [t]), S = s.useCallback(() => {
-    (0, u.nc)(t, {
-      content: p.jn.QUEST_BAR_V2,
+  }, [t]), N = i.useCallback(() => {
+    (0, d.nc)(t, {
+      content: f.jn.QUEST_BAR_V2,
       ctaContent: c.jZ.OPEN_GAME_LINK,
-      impressionId: E,
-      sourceQuestContent: p.jn.QUEST_BAR_V2
+      impressionId: A,
+      sourceQuestContent: f.jn.QUEST_BAR_V2
     })
-  }, [E, t]), T = C && y, w = (0, r.jsx)(l.P3F, {
-    onClick: S,
-    className: a()(b.clickable, {
-      [b.logo]: T
+  }, [A, t]), R = T && S, P = (0, r.jsx)(l.P3F, {
+    onClick: N,
+    className: o()(E.clickable, {
+      [E.logo]: R
     }),
-    children: (0, r.jsx)(m.ZP, {
+    children: (0, r.jsx)(_.ZP, {
       quest: t,
-      logotypeClassName: b.rewardHighlightLogotype,
+      logotypeClassName: E.rewardHighlightLogotype,
       withGameTile: false
     })
   });
-  return (0, r.jsxs)(i.animated.div, {
-    className: a()(b.wrapper, b.rewardHighlightWrapper, {
-      [b.interactable]: T
+  return (0, r.jsxs)(s.animated.div, {
+    className: o()(E.wrapper, E.rewardHighlightWrapper, {
+      [E.interactable]: R
     }),
     style: {
-      transform: (0, i.to)([n.to({
+      transform: (0, s.to)([n.to({
         range: [0, 1],
         output: [8, 0]
       })], e => "translateY(".concat(e, "px"))
     },
-    children: [(0, r.jsx)(i.animated.div, {
-      className: b.opaqueExpandedBackground,
+    children: [(0, r.jsx)(s.animated.div, {
+      className: E.opaqueExpandedBackground,
       style: {
         opacity: n.to({
           range: [0, 1],
           output: [0, 1]
         })
       }
-    }), (0, r.jsx)(x.Z, {
+    }), (0, r.jsx)(m.Z, {
       quest: t,
       expansionSpring: n,
-      isFullyExpanded: T,
-      partnerBranding: w,
-      useReducedMotion: v
-    }), (0, r.jsxs)(i.animated.div, {
-      className: b.promotedBadgeWrapper,
+      isFullyExpanded: R,
+      partnerBranding: P,
+      useReducedMotion: I
+    }), (0, r.jsxs)(s.animated.div, {
+      className: E.promotedBadgeWrapper,
       style: {
         opacity: n.to({
           range: [0, 1],
@@ -86,63 +126,34 @@ let _ = e => {
         })
       },
       children: [(0, r.jsxs)(l.P3F, {
-        className: b.promotedBadge,
-        onClick: O,
+        className: E.promotedBadge,
+        onClick: C,
         children: [(0, r.jsx)(l.Text, {
           color: "always-white",
           variant: "text-xs/normal",
-          children: h.intl.string(h.t.o6FLcH)
+          children: g.intl.string(g.t.o6FLcH)
         }), (0, r.jsx)(l.idN, {
           color: l.TVs.colors.WHITE,
-          className: b.promotedBadgeIcon
+          className: E.promotedBadgeIcon
         })]
-      }), (0, r.jsx)(g.r, {
-        onOpen: _,
-        onClose: j,
-        onSelect: o,
-        questContent: p.jn.QUEST_BAR_V2,
+      }), (0, r.jsx)(h.r, {
+        onOpen: b,
+        onClose: O,
+        onSelect: a,
+        questContent: f.jn.QUEST_BAR_V2,
         quest: t,
         shouldShowDisclosure: true,
         showShareLink: true,
-        sourceQuestContent: p.jn.QUEST_BAR_V2,
-        children: e => {
-          var t, n;
-          return (0, r.jsx)(l.P3F, (t = function(e) {
-            for (var t = 1; t < arguments.length; t++) {
-              var n = null != arguments[t] ? arguments[t] : {},
-                r = Object.keys(n);
-              "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                return Object.getOwnPropertyDescriptor(n, e).enumerable
-              }))), r.forEach(function(t) {
-                var r;
-                r = n[t], t in e ? Object.defineProperty(e, t, {
-                  value: r,
-                  enumerable: true,
-                  configurable: true,
-                  writable: true
-                }) : e[t] = r
-              })
-            }
-            return e
-          }({}, e), n = n = {
-            className: b.submenuWrapper,
-            "aria-label": h.intl.string(h.t.DEoVWV),
-            children: (0, r.jsx)(l.xhG, {
-              size: "md",
-              color: "currentColor",
-              className: a()(b.submenuIcon, b.white)
-            })
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
-            var n = Object.keys(e);
-            if (Object.getOwnPropertySymbols) {
-              var r = Object.getOwnPropertySymbols(e);
-              n.push.apply(n, r)
-            }
-            return n
-          })(Object(n)).forEach(function(e) {
-            Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-          }), t))
-        }
+        sourceQuestContent: f.jn.QUEST_BAR_V2,
+        children: e => (0, r.jsx)(l.P3F, v(y({}, e), {
+          className: E.submenuWrapper,
+          "aria-label": g.intl.string(g.t.DEoVWV),
+          children: (0, r.jsx)(l.xhG, {
+            size: "md",
+            color: "currentColor",
+            className: o()(E.submenuIcon, E.white)
+          })
+        }))
       })]
     })]
   })

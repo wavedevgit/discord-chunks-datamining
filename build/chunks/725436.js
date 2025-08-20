@@ -1,11 +1,21 @@
-/** Chunk was on 34082 **/
-/** chunk id: 725436, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 725436, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  m: () => u
+  m: () => f
 });
 var Chunk454585 = require("./454585.js"),
   Chunk551452 = require("./551452.jsx"),
   Chunk532901 = require("./532901.jsx");
+
+function o(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
 
 function s(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -14,44 +24,42 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      var r;
-      r = n[t], t in e ? Object.defineProperty(e, t, {
-        value: r,
-        enumerable: true,
-        configurable: true,
-        writable: true
-      }) : e[t] = r
+      o(e, t, n[t])
     })
   }
   return e
 }
 
-function a(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
-    }
-    return n
-  })(Object(t)).forEach(function(n) {
+function l(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function c(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : l(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let o = a(s({}, Chunk454585.Z.guildEventRules.link), {
+let u = c(s({}, Chunk454585.Z.guildEventRules.link), {
     react: (0, Chunk532901.Z)({
       enableBuildOverrides: false,
       mustConfirmExternalLink: true
     }).react
   }),
-  c = a(s({}, Chunk454585.Z.guildEventRules.channelMention), {
+  d = c(s({}, Chunk454585.Z.guildEventRules.channelMention), {
     react: (0, Chunk551452.Z)({
       enableBuildOverrides: false,
       shouldCloseDefaultModals: true,
       shouldStopPropagation: true
     }).react
   }),
-  u = Chunk454585.Z.reactParserFor(a(s({}, Chunk454585.Z.guildEventRules), {
-    link: o,
-    channelMention: c
+  f = Chunk454585.Z.reactParserFor(c(s({}, Chunk454585.Z.guildEventRules), {
+    link: u,
+    channelMention: d
   }))

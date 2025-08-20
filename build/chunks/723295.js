@@ -1,5 +1,6 @@
-/** Chunk was on 26434 **/
-/** chunk id: 723295, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 723295, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   description: "description_c8f246",
   info: "info_c8f246",

@@ -1,5 +1,6 @@
-/** Chunk was on 26434 **/
-/** chunk id: 853392, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 853392, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   infoWrapper: "infoWrapper_c44293",
   activityPresenceDetailsContainer: "activityPresenceDetailsContainer_c44293",

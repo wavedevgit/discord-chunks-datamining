@@ -1,4 +1,4 @@
-/** Chunk was on 36499 **/
+/** Chunk was on 5665 **/
 /** chunk id: 308177, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => C
@@ -31,13 +31,13 @@ let C = (0, Chunk112724.Z)(e => {
     onScroll: x
   } = e, {
     selectedParticipantId: v,
-    largeStream: j,
-    chatOpen: O
+    largeStream: O,
+    chatOpen: j
   } = (0, l.cj)([o.Z], () => ({
     selectedParticipantId: o.Z.getSelectedParticipantId(a.id),
     largeStream: o.Z.getStageStreamSize(a.id),
     chatOpen: o.Z.getChatOpen(a.id)
-  }), [a.id]), E = (0, c.Io)(a.id), S = (0, c.Rk)(a.id, u.pV.AUDIENCE), P = (0, l.e7)([s.Z], () => null != v ? s.Z.getParticipant(a.id, v) : null), I = (0, c.w8)(a.id, u.pV.SPEAKER), Z = I.filter(_), T = null != I.find(e => e.type === u.Ui.STREAM), N = Math.floor((C - 32) / 102), A = C < 424 ? 1 : C < 624 ? 2 : C < 824 || O ? 3 : 4, w = {
+  }), [a.id]), E = (0, c.Io)(a.id), S = (0, c.Rk)(a.id, u.pV.AUDIENCE), P = (0, l.e7)([s.Z], () => null != v ? s.Z.getParticipant(a.id, v) : null), I = (0, c.w8)(a.id, u.pV.SPEAKER), Z = I.filter(_), T = null != I.find(e => e.type === u.Ui.STREAM), N = Math.floor((C - 32) / 102), A = C < 424 ? 1 : C < 624 ? 2 : C < 824 || j ? 3 : 4, w = {
     [u.pV.SPEAKER]: A,
     [u.pV.AUDIENCE]: N,
     [u.pV.SELECTED]: 1
@@ -51,7 +51,7 @@ let C = (0, Chunk112724.Z)(e => {
       speakerTileWidth: n,
       speakerTileHeight: r
     }
-  })(C, A), B = j ? C - 32 : Math.min(C - 64, 3 * L + 8), F = e => e === M.length - 1 || 0 === S && 1 === e, [H, G] = i.useState(false), [V, z] = i.useState(false);
+  })(C, A), B = O ? C - 32 : Math.min(C - 64, 3 * L + 8), F = e => e === M.length - 1 || 0 === S && 1 === e, [H, G] = i.useState(false), [V, z] = i.useState(false);
   return (0, r.jsx)(h.Z, {
     sections: D,
     renderSection: e => {

@@ -2,7 +2,7 @@
 /** chunk id: 835648, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => j
+  Z: () => k
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -59,13 +59,13 @@ function A(e, t) {
   return n
 }
 
-function N(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function C(e, t) {
+function N(e, t) {
   if (null == e) return {};
   var n, r, i = R(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -91,8 +91,8 @@ function D(e) {
     isSelected: n,
     onClick: i,
     listItemProps: a
-  } = e, s = C(e, ["icon", "isSelected", "onClick", "listItemProps"]);
-  return (0, r.jsx)(c.P3F, N(S({}, a, s), {
+  } = e, s = N(e, ["icon", "isSelected", "onClick", "listItemProps"]);
+  return (0, r.jsx)(c.P3F, C(S({}, a, s), {
     onClick: i,
     className: o()(I.categoryIcon, {
       [I.selected]: n
@@ -104,31 +104,31 @@ function D(e) {
   }))
 }
 
-function L(e, t, n, i, a, o) {
+function x(e, t, n, i, a, o) {
   switch (e.categoryInfo.type) {
     case g.bg.FAVORITES:
-      return (0, r.jsx)(D, N(S({}, i), {
+      return (0, r.jsx)(D, C(S({}, i), {
         icon: c.r7p,
         onClick: t,
         isSelected: n,
         listItemProps: a
       }), e.key);
     case g.bg.RECENTLY_HEARD:
-      return (0, r.jsx)(D, N(S({}, i), {
+      return (0, r.jsx)(D, C(S({}, i), {
         icon: c.T39,
         onClick: t,
         isSelected: n,
         listItemProps: a
       }), e.key);
     case g.bg.FREQUENTLY_USED:
-      return (0, r.jsx)(D, N(S({}, i), {
+      return (0, r.jsx)(D, C(S({}, i), {
         icon: c.IeX,
         onClick: t,
         isSelected: n,
         listItemProps: a
       }), e.key);
     case g.bg.GUILD:
-      return (0, r.jsx)(c.P3F, N(S({}, a, i), {
+      return (0, r.jsx)(c.P3F, C(S({}, a, i), {
         className: I.category,
         onClick: t,
         children: (0, r.jsx)(u.Z, {
@@ -138,7 +138,7 @@ function L(e, t, n, i, a, o) {
         })
       }), e.key);
     case g.bg.DEFAULTS:
-      return (0, r.jsx)(D, N(S({}, i), {
+      return (0, r.jsx)(D, C(S({}, i), {
         icon: c.gw7,
         onClick: t,
         isSelected: n,
@@ -149,7 +149,7 @@ function L(e, t, n, i, a, o) {
   }
 }
 
-function x(e) {
+function L(e) {
   switch (e.categoryInfo.type) {
     case g.bg.FAVORITES:
       return v.intl.string(v.t.k8fFjo);
@@ -167,7 +167,7 @@ function x(e) {
   }
 }
 
-function M(e) {
+function j(e) {
   switch (e.categoryInfo.type) {
     case g.bg.FAVORITES:
       return v.intl.string(v.t.k8fFjo);
@@ -182,7 +182,7 @@ function M(e) {
   }
 }
 
-function k(e) {
+function M(e) {
   let {
     category: t,
     categoryIndex: n,
@@ -191,14 +191,14 @@ function k(e) {
     isNitroLocked: o
   } = e, l = (0, s.JA)("soundboard_guild_".concat(n));
   return (0, r.jsx)(c.ua7, {
-    text: x(t),
-    "aria-label": M(t),
+    text: L(t),
+    "aria-label": j(t),
     position: "right",
-    children: e => L(t, i, a, e, l, o)
+    children: e => x(t, i, a, e, l, o)
   })
 }
 
-function j(e) {
+function k(e) {
   let {
     soundboardListRef: t,
     categories: n,
@@ -220,7 +220,7 @@ function j(e) {
           pack_id: null
         }), n()
       };
-    return (0, r.jsx)(k, {
+    return (0, r.jsx)(M, {
       category: e,
       categoryIndex: t,
       onClick: l,

@@ -1,5 +1,6 @@
-/** Chunk was on 66181 **/
-/** chunk id: 906364, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 906364, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   Z: () => l
 });
@@ -8,29 +9,32 @@ require("./647438.js");
 var Chunk481060 = require("./481060.js"),
   Chunk993413 = require("./993413.jsx"),
   Chunk388032 = require("./388032.jsx");
+let s = 40;
 
 function l(e) {
   let {
     sectionTitle: t,
     errors: n,
     onPronounsChange: l,
-    pendingPronouns: o,
-    placeholder: c,
+    pendingPronouns: c,
+    placeholder: u,
     currentPronouns: d,
-    disabled: u = false
+    disabled: f = false
   } = e;
-  return (0, i.jsx)(s.Z, {
+
+  function _(e) {
+    l(e === d ? true : e)
+  }
+  return (0, r.jsx)(a.Z, {
     title: t,
     errors: n,
-    disabled: u,
-    children: (0, i.jsx)(r.oil, {
-      placeholder: null != c ? c : a.intl.string(a.t.NPEUUl),
-      maxLength: 40,
-      value: null != o ? o : d,
-      onChange: function(e) {
-        l(e === d ? true : e)
-      },
-      disabled: u
+    disabled: f,
+    children: (0, r.jsx)(i.oil, {
+      placeholder: null != u ? u : o.intl.string(o.t.NPEUUl),
+      maxLength: s,
+      value: null != c ? c : d,
+      onChange: _,
+      disabled: f
     })
   })
 }

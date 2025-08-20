@@ -85,19 +85,19 @@ function A(e) {
   h = t
 }
 
-function N(e) {
+function C(e) {
   let {
     changelogDate: t
   } = e;
   b = new Date(t), a.K.set(g, t)
 }
 
-function C() {
+function N() {
   E = Chunk695346.l4.getSetting()
 }
 class R extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk706454.default, Chunk581883.Z), this.syncWith([Chunk706454.default], () => true), this.syncWith([Chunk581883.Z], C);
+    this.waitFor(Chunk706454.default, Chunk581883.Z), this.syncWith([Chunk706454.default], () => true), this.syncWith([Chunk581883.Z], N);
     let e = Chunk433517.K.get(g);
     if (null != module) try {
       b = new Date(module)
@@ -151,5 +151,5 @@ let P = new R(Chunk570140.Z, {
   CHANGE_LOG_FETCH_SUCCESS: T,
   CHANGE_LOG_FETCH_FAILED: S,
   CHANGE_LOG_SET_OVERRIDE: A,
-  CHANGE_LOG_MARK_SEEN: N
+  CHANGE_LOG_MARK_SEEN: C
 })

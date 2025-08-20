@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 610966, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 610966, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => u
+  Z: () => d
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -13,20 +14,20 @@ var Chunk866442 = require("./866442.js"),
   Chunk993413 = require("./993413.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function u(e) {
+function d(e) {
   var t;
   let {
     user: n,
-    savedUserColor: u,
-    pendingColor: m,
-    setPendingAccentColor: p
-  } = e, g = n.getAvatarURL(null, 80), h = (0, a.dQu)(s.Z.unsafe_rawColors.PRIMARY_530).hex(), f = (0, l.Cf)(g, h, false), b = (0, r._i)(f[0]);
-  return (0, i.jsx)(c.Z, {
-    title: d.intl.string(d.t["/X3fkZ"]),
-    children: (0, i.jsx)(o.Z, {
-      onChange: e => p(e),
-      color: null != (t = null != m ? m : u) ? t : b,
-      suggestedColors: f,
+    savedUserColor: d,
+    pendingColor: f,
+    setPendingAccentColor: _
+  } = e, p = n.getAvatarURL(null, 80), h = (0, o.dQu)(a.Z.unsafe_rawColors.PRIMARY_530).hex(), m = (0, s.Cf)(p, h, false), g = (0, i._i)(m[0]);
+  return (0, r.jsx)(c.Z, {
+    title: u.intl.string(u.t["/X3fkZ"]),
+    children: (0, r.jsx)(l.Z, {
+      onChange: e => _(e),
+      color: null != (t = null != f ? f : d) ? t : g,
+      suggestedColors: m,
       showEyeDropper: true
     })
   })

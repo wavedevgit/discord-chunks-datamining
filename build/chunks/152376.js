@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   C1: () => A,
-  Mo: () => N,
-  QG: () => C,
+  Mo: () => C,
+  QG: () => N,
   XQ: () => I,
   _U: () => w,
   dM: () => R,
@@ -157,7 +157,7 @@ async function S(e, t) {
 }
 let A = (0, Chunk392711.debounce)((e, t) => S(e, t), 1e3);
 
-function N(e, t) {
+function C(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
     r = arguments.length > 3 ? arguments[3] : true;
   if (null == e) return;
@@ -188,7 +188,7 @@ function N(e, t) {
   }))
 }
 
-function C(e, t, n) {
+function N(e, t, n) {
   if (c.Z.isFullServerPreview(e)) return void(0, l.aq)(e, {
     optInEnabled: t
   });

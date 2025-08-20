@@ -1,14 +1,15 @@
-/** Chunk was on 66181 **/
-/** chunk id: 451392, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 451392, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => x
+  Z: () => E
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk498607 = require("./498607.js"),
-  l = require.n(Chunk498607),
+  s = require.n(Chunk498607),
   Chunk692547 = require("./692547.js"),
   Chunk481060 = require("./481060.js"),
   Chunk220082 = require("./220082.js"),
@@ -20,77 +21,77 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk190941 = require("./190941.js");
 
-function x(e) {
+function E(e) {
   let {
     user: t,
     pendingAvatarSrc: n,
-    pendingColors: r,
-    onThemeColorsChange: a,
-    preventDisabled: x,
-    guildId: _,
-    className: j,
-    showPremiumIcon: E = true,
-    showResetThemeButton: C = false,
-    forcedDivider: O
-  } = e, v = (0, u.ZP)(t.id, _), {
+    pendingColors: i,
+    onThemeColorsChange: o,
+    preventDisabled: E,
+    guildId: b,
+    className: y,
+    showPremiumIcon: O = true,
+    showResetThemeButton: v = false,
+    forcedDivider: I
+  } = e, T = (0, d.ZP)(t.id, b), {
     primaryColor: S,
-    secondaryColor: T
-  } = (0, m.Z)({
+    secondaryColor: A
+  } = (0, f.Z)({
     user: t,
-    displayProfile: v,
-    pendingThemeColors: r,
+    displayProfile: T,
+    pendingThemeColors: i,
     isPreview: true
-  }), N = p.ZP.canUsePremiumProfileCustomization(t), I = null != n ? n : t.getAvatarURL(_, 80), y = (0, c.dQu)(o.Z.unsafe_rawColors.PRIMARY_530).hex(), A = (0, d.Cf)(I, y, false);
-  if (null == S || null == T) return null;
-  let P = e => {
-    a(l()(e, null == v ? true : v.themeColors) ? true : e)
+  }), C = _.ZP.canUsePremiumProfileCustomization(t), N = null != n ? n : t.getAvatarURL(b, 80), R = (0, c.dQu)(l.Z.unsafe_rawColors.PRIMARY_530).hex(), P = (0, u.Cf)(N, R, false);
+  if (null == S || null == A) return null;
+  let w = e => {
+    o(s()(e, null == T ? true : T.themeColors) ? true : e)
   };
-  return (0, i.jsx)(h.Z, {
-    title: f.intl.string(f.t.DMeO2d),
-    disabled: !N && !x,
-    className: s()(b.__invalid_profileThemesSection, j),
-    showPremiumIcon: E,
-    forcedDivider: O,
-    children: (0, i.jsxs)("div", {
-      className: b.sectionContainer,
-      children: [(0, i.jsx)("div", {
-        className: b.sparkleContainer,
-        children: (0, i.jsx)(g.Z, {
-          onChange: e => P([e, T]),
+  return (0, r.jsx)(h.Z, {
+    title: m.intl.string(m.t.DMeO2d),
+    disabled: !C && !E,
+    className: a()(g.__invalid_profileThemesSection, y),
+    showPremiumIcon: O,
+    forcedDivider: I,
+    children: (0, r.jsxs)("div", {
+      className: g.sectionContainer,
+      children: [(0, r.jsx)("div", {
+        className: g.sparkleContainer,
+        children: (0, r.jsx)(p.Z, {
+          onChange: e => w([e, A]),
           color: S,
-          suggestedColors: A,
+          suggestedColors: P,
           showEyeDropper: true,
-          label: (0, i.jsx)(c.Text, {
-            className: b.colorSwatchLabel,
+          label: (0, r.jsx)(c.Text, {
+            className: g.colorSwatchLabel,
             color: "header-secondary",
             variant: "text-xs/normal",
             "aria-hidden": true,
-            children: f.intl.string(f.t.C3KTQk)
+            children: m.intl.string(m.t.C3KTQk)
           })
         })
-      }), (0, i.jsx)("div", {
-        className: b.sparkleContainer,
-        children: (0, i.jsx)(g.Z, {
-          onChange: e => P([S, e]),
-          color: T,
-          suggestedColors: A,
+      }), (0, r.jsx)("div", {
+        className: g.sparkleContainer,
+        children: (0, r.jsx)(p.Z, {
+          onChange: e => w([S, e]),
+          color: A,
+          suggestedColors: P,
           showEyeDropper: true,
-          label: (0, i.jsx)(c.Text, {
-            className: b.colorSwatchLabel,
+          label: (0, r.jsx)(c.Text, {
+            className: g.colorSwatchLabel,
             color: "header-secondary",
             variant: "text-xs/normal",
             "aria-hidden": true,
-            children: f.intl.string(f.t["8elvy8"])
+            children: m.intl.string(m.t["8elvy8"])
           })
         })
-      }), C && null != _ && (0, i.jsx)("div", {
+      }), v && null != b && (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
-        className: b.resetButton,
-        children: (0, i.jsx)(c.zxk, {
+        className: g.resetButton,
+        children: (0, r.jsx)(c.zxk, {
           variant: "secondary",
           size: "sm",
-          text: f.intl.string(f.t["L+Gmoa"]),
-          onClick: () => P([null, null])
+          text: m.intl.string(m.t["L+Gmoa"]),
+          onClick: () => w([null, null])
         })
       })]
     })

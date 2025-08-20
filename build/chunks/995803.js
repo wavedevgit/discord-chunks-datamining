@@ -247,29 +247,29 @@ function b(e) {
     T = r.useState(true),
     S = T[0],
     A = T[1],
-    N = d.fitCanvasToArtboardHeight,
-    C = d.shouldResizeCanvasToContainer,
+    C = d.fitCanvasToArtboardHeight,
+    N = d.shouldResizeCanvasToContainer,
     R = d.useDevicePixelRatio,
     P = d.customDevicePixelRatio,
-    w = m(a, C),
+    w = m(a, N),
     D = u(P),
-    L = null != c ? c : {},
-    x = L.maxX,
-    M = L.maxY,
-    k = r.useCallback(function() {
+    x = null != c ? c : {},
+    L = x.maxX,
+    j = x.maxY,
+    M = r.useCallback(function() {
       var e, t, n, r, i = null != (t = null == (e = a.current) ? true : e.clientWidth) ? t : 0,
         o = null != (r = null == (n = a.current) ? true : n.clientHeight) ? r : 0;
-      return N && c ? {
+      return C && c ? {
         width: i,
         height: i * (c.maxY / c.maxX)
       } : {
         width: i,
         height: o
       }
-    }, [a, N, x, M]);
+    }, [a, C, L, j]);
   r.useEffect(function() {
-    if (C && a.current && n) {
-      var e = k(),
+    if (N && a.current && n) {
+      var e = M(),
         t = e.width,
         r = e.height,
         o = false;
@@ -295,7 +295,7 @@ function b(e) {
       }
       l && (S || o) && l && l(), S && A(false)
     }
-  }, [i, a, w, D, k, S, A, O, v, p, h, l, C, N, R, n]), r.useEffect(function() {
+  }, [i, a, w, D, M, S, A, O, v, p, h, l, N, C, R, n]), r.useEffect(function() {
     I({
       width: 0,
       height: 0
@@ -436,11 +436,11 @@ function A(e, t) {
       f && (f.cleanup(), _(null))
     }
   }, [f, s]);
-  var N = null == e ? true : e.animations;
+  var C = null == e ? true : e.animations;
   r.useEffect(function() {
-    f && N && (f.isPlaying ? (f.stop(f.animationNames), f.play(N)) : f.isPaused && (f.stop(f.animationNames), f.pause(N)))
-  }, [N, f]);
-  var C = r.useCallback(function(e) {
+    f && C && (f.isPlaying ? (f.stop(f.animationNames), f.play(C)) : f.isPaused && (f.stop(f.animationNames), f.pause(C)))
+  }, [C, f]);
+  var N = r.useCallback(function(e) {
     return a.default.createElement(S, o({
       setContainerRef: O,
       setCanvasRef: y
@@ -452,11 +452,11 @@ function A(e, t) {
     setCanvasRef: y,
     setContainerRef: O,
     rive: f,
-    RiveComponent: C
+    RiveComponent: N
   }
 }
 
-function N(e, t, n) {
+function C(e, t, n) {
   var i = r.useState(null),
     a = i[0],
     s = i[1],
@@ -632,7 +632,7 @@ exports.default = function(e) {
     } else f(null)
   }, [e, i, o, l, c]), d
 }, exports.useViewModelInstanceBoolean = function(e, t) {
-  var n = N(e, t, {
+  var n = C(e, t, {
     getProperty: r.useCallback(function(e, t) {
       return e.boolean(t)
     }, []),
@@ -655,7 +655,7 @@ exports.default = function(e) {
     setValue: n.setValue
   }
 }, exports.useViewModelInstanceColor = function(e, t) {
-  var n = N(e, t, {
+  var n = C(e, t, {
     getProperty: r.useCallback(function(e, t) {
       return e.color(t)
     }, []),
@@ -702,7 +702,7 @@ exports.default = function(e) {
     setOpacity: n.setOpacity
   }
 }, exports.useViewModelInstanceEnum = function(e, t) {
-  var n = N(e, t, {
+  var n = C(e, t, {
     getProperty: r.useCallback(function(e, t) {
       return e.enum(t)
     }, []),
@@ -729,7 +729,7 @@ exports.default = function(e) {
     setValue: n.setValue
   }
 }, exports.useViewModelInstanceNumber = function(e, t) {
-  var n = N(e, t, {
+  var n = C(e, t, {
     getProperty: r.useCallback(function(e, t) {
       return e.number(t)
     }, []),
@@ -752,7 +752,7 @@ exports.default = function(e) {
     setValue: n.setValue
   }
 }, exports.useViewModelInstanceString = function(e, t) {
-  var n = N(e, t, {
+  var n = C(e, t, {
     getProperty: r.useCallback(function(e, t) {
       return e.string(t)
     }, []),
@@ -777,7 +777,7 @@ exports.default = function(e) {
 }, exports.useViewModelInstanceTrigger = function(e, t, n) {
   var i = (null != n ? n : {}).onTrigger;
   return {
-    trigger: N(e, t, {
+    trigger: C(e, t, {
       getProperty: r.useCallback(function(e, t) {
         return e.trigger(t)
       }, []),

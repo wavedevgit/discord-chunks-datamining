@@ -1,4 +1,4 @@
-/** Chunk was on 36499 **/
+/** Chunk was on 5665 **/
 /** chunk id: 544610, original params: e,t,n (module,exports,require) **/
 let r;
 require.d(exports, {
@@ -21,13 +21,13 @@ var i, l, Chunk442837 = require("./442837.js"),
 let C = false,
   x = "",
   v = 0,
-  j = [],
-  O = false,
+  O = [],
+  j = false,
   E = new Set,
   S = null;
 
 function P() {
-  x = "", v = 0, j = [], E = new Set, C = false, S = null
+  x = "", v = 0, O = [], E = new Set, C = false, S = null
 }
 
 function I(e) {
@@ -37,7 +37,7 @@ function I(e) {
 function Z() {
   if (!C) returnfalse;
   let e = Chunk592125.Z.getChannel(S);
-  if (0 === x.trim().length) return null != r && r.clearQuery(), j = function(e) {
+  if (0 === x.trim().length) return null != r && r.clearQuery(), O = function(e) {
     let t = b.Z.getFriendIDs(),
       n = y.default.getCurrentUser();
     return (null == n ? true : n.isStaff()) && (t = Array.from(new Set([...t, ...y.default.filter(e => e.isStaff() && e.id !== n.id, false).map(e => e.id)]))), (null == e ? true : e.isPrivate()) && (t = t.filter(t => !e.recipients.includes(t))), t.reduce((e, t) => {
@@ -85,8 +85,8 @@ function Z() {
 
 function T() {
   if (!C) returnfalse;
-  let e = O;
-  return (O = Chunk699516.Z.getFriendCount() > 0) !== module
+  let e = j;
+  return (j = Chunk699516.Z.getFriendCount() > 0) !== module
 }
 
 function N(e, t) {
@@ -116,7 +116,7 @@ function A(e) {
       comparator: r
     })
   }
-  j = n, L.emitChange()
+  O = n, L.emitChange()
 }
 
 function w() {
@@ -141,10 +141,10 @@ class D extends(i = Chunk442837.ZP.Store) {
     this.waitFor(Chunk594174.default, Chunk592125.Z, Chunk699516.Z, Chunk353926.Z, Chunk480294.Z), this.syncWith([Chunk594174.default, Chunk592125.Z], Z), this.syncWith([Chunk699516.Z], T)
   }
   getResults() {
-    return j
+    return O
   }
   hasFriends() {
-    return O
+    return j
   }
   getSelectedUsers() {
     return E
@@ -157,8 +157,8 @@ class D extends(i = Chunk442837.ZP.Store) {
       query: x,
       selectedRow: v,
       selectedUsers: E,
-      results: j,
-      hasFriends: O
+      results: O,
+      hasFriends: j
     }
   }
 }(l = "displayName") in D ? Object.defineProperty(D, l, {

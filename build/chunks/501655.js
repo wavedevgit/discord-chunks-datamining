@@ -90,11 +90,11 @@ function A(e) {
   return null == r ? t.id : "".concat(Date.parse(r)).concat(t.id)
 }
 
-function N(e) {
+function C(e) {
   return e === g.xO.REQUESTED_TO_SPEAK || e === g.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK
 }
 
-function C(e) {
+function N(e) {
   let {
     speaker: t,
     role: n,
@@ -103,7 +103,7 @@ function C(e) {
     ignored: a,
     isFriend: o
   } = e, s = [];
-  return N(r) && s.push("ALL_REQUESTED_TO_SPEAK"), r === g.xO.REQUESTED_TO_SPEAK && s.push("REQUESTED_TO_SPEAK_ONLY"), t ? s.push("SPEAKER") : (null != n ? s.push(n.id) : s.push("NO_ROLE"), s.push("AUDIENCE")), i ? s.push("BLOCKED") : a && s.push("IGNORED"), o && s.push("FRIEND"), s
+  return C(r) && s.push("ALL_REQUESTED_TO_SPEAK"), r === g.xO.REQUESTED_TO_SPEAK && s.push("REQUESTED_TO_SPEAK_ONLY"), t ? s.push("SPEAKER") : (null != n ? s.push(n.id) : s.push("NO_ROLE"), s.push("AUDIENCE")), i ? s.push("BLOCKED") : a && s.push("IGNORED"), o && s.push("FRIEND"), s
 }
 class R {
   _getParticipantsForUser(e, t) {
@@ -116,7 +116,7 @@ class R {
     let T = null != t ? t[0] : null,
       S = null != this.guildId ? c.ZP.getMember(this.guildId, e) : null,
       A = null != (n = null == S ? true : S.nick) ? n : p.ZP.getName(this.guildId, this.channelId, I),
-      N = {
+      C = {
         user: I,
         userNick: p.ZP.getName(this.guildId, this.channelId, I),
         nick: A,
@@ -130,16 +130,16 @@ class R {
         isFriend: u.Z.isFriend(I.id),
         connectedOn: null != (r = null == T ? true : T.connectedOn) ? r : Date.now()
       },
-      C = v(y({}, N), {
+      N = v(y({}, C), {
         type: "VOICE",
         id: I.id,
         rtsState: (0, g.gf)(O)
       });
-    b.push(C);
+    b.push(N);
     let R = null != (i = o.Z.getStreamForUser(e, this.guildId)) ? i : o.Z.getActiveStreamForUser(e, this.guildId);
     if (null != R && R.channelId === this.channelId) {
       let e = (0, a.V9)(R);
-      s = v(y({}, N), {
+      s = v(y({}, C), {
         id: e,
         type: "STREAM",
         rtsState: g.xO.NONE
@@ -153,7 +153,7 @@ class R {
     return (null != t || 0 !== n.length) && (null == t || t.forEach(e => {
       this._participantsIndex.delete(e.id), this._requestToSpeakIndex.delete(e.id)
     }), n.forEach(t => {
-      this._participantsIndex.set(t.id, t), t.id === e && N(t.rtsState) ? this._requestToSpeakIndex.set(e, t) : this._requestToSpeakIndex.delete(e)
+      this._participantsIndex.set(t.id, t), t.id === e && C(t.rtsState) ? this._requestToSpeakIndex.set(e, t) : this._requestToSpeakIndex.delete(e)
     }), this.participants[e] = n, true)
   }
   rebuild() {
@@ -183,6 +183,6 @@ class R {
   }
   constructor(e) {
     var t;
-    b(this, "channelId", true), b(this, "guildId", true), b(this, "participants", {}), b(this, "_participantsIndex", new r.h(C, S)), b(this, "_requestToSpeakIndex", new r.h(() => [], A)), this.channelId = e, this.guildId = null == (t = s.Z.getChannel(e)) ? true : t.getGuildId()
+    b(this, "channelId", true), b(this, "guildId", true), b(this, "participants", {}), b(this, "_participantsIndex", new r.h(N, S)), b(this, "_requestToSpeakIndex", new r.h(() => [], A)), this.channelId = e, this.guildId = null == (t = s.Z.getChannel(e)) ? true : t.getGuildId()
   }
 }

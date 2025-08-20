@@ -1,12 +1,12 @@
 /** Chunk was on 27978 **/
 /** chunk id: 580497, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => f
 });
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
   Chunk525654 = require("./525654.js"),
-  a = require.n(Chunk525654),
+  s = require.n(Chunk525654),
   Chunk39612 = require("./39612.js"),
   Chunk271579 = require("./271579.js"),
   Chunk756647 = require("./756647.js"),
@@ -17,14 +17,14 @@ var Chunk512722 = require("./512722.js"),
   Chunk954824 = require("./954824.js"),
   Chunk981631 = require("./981631.js");
 
-function g(e) {
+function f(e) {
   let t = function(e) {
       var t;
-      let n = null == (t = a().os) ? true : t.family;
+      let n = null == (t = s().os) ? true : t.family;
       if ("Android" === n || "iOS" === n) {
         let t = d.default.getFingerprint(),
-          n = (0, s.WS)();
-        return i()(null != e, "generateAppPath: guildId cannot be null"), (0, s.ZP)((0, o.z0)(e), {
+          n = (0, a.WS)();
+        return i()(null != e, "generateAppPath: guildId cannot be null"), (0, a.ZP)((0, o.z0)(e), {
           utmSource: "verify_hub_email",
           fingerprint: t,
           attemptId: n
@@ -32,8 +32,8 @@ function g(e) {
       }
       return "discord://"
     }(e),
-    n = (0, s.zS)(t);
-  null != n && p.default.track(f.rMx.DEEP_LINK_CLICKED, {
+    n = (0, a.zS)(t);
+  null != n && p.default.track(g.rMx.DEEP_LINK_CLICKED, {
     fingerprint: (0, c.K)(n.fingerprint),
     attempt_id: n.attemptId,
     source: n.utmSource

@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk239336 = require("./239336.js");
 
-function b(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var l = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(l);
@@ -60,18 +60,18 @@ function E(e) {
     error: s,
     emojiId: E,
     emojiName: I,
-    isRequiredField: N = true,
-    shouldUpdateBothEmojiFields: O = false,
-    setEmojiId: S,
-    setEmojiName: w
+    isRequiredField: w = true,
+    shouldUpdateBothEmojiFields: N = false,
+    setEmojiId: O,
+    setEmojiName: S
   } = e, C = (0, j.Z)({
     emojiId: E,
     emojiName: I
   }), P = (0, a.e7)([p.ZP], () => null != l ? p.ZP.getDefaultChannel(l) : null), D = i.useRef(null), k = (0, m.Z)(D), Z = () => {
-    w(true), S(true)
+    S(true), O(true)
   }, R = e => {
     e.stopPropagation(), Z()
-  }, T = i.useMemo(() => {
+  }, _ = i.useMemo(() => {
     let e = null != E && "" !== E,
       t = null != I && "" !== I,
       l = null != C && "" !== C,
@@ -84,9 +84,9 @@ function E(e) {
     }
   }, [E, I, C]);
   return (0, n.jsx)(u.xJW, {
-    required: N,
-    title: x.intl.string(x.t["3BQmiI"]),
-    className: r()(t, h.section),
+    required: w,
+    title: b.intl.string(b.t["3BQmiI"]),
+    className: r()(t, x.section),
     error: s,
     children: (0, n.jsx)(u.yRy, {
       targetElementRef: D,
@@ -105,7 +105,7 @@ function E(e) {
               emoji: l,
               willClose: n
             } = e, i = (null == l ? true : l.id) == null;
-            Z(), i ? w(null == l ? true : l.optionallyDiverseSequence) : (O && w(null == l ? true : l.name), S(null == l ? true : l.id)), n && t()
+            Z(), i ? S(null == l ? true : l.optionallyDiverseSequence) : (N && S(null == l ? true : l.name), O(null == l ? true : l.id)), n && t()
           },
           guildId: l,
           channel: P
@@ -115,25 +115,25 @@ function E(e) {
         let {
           isShown: l
         } = t;
-        return (0, n.jsxs)("div", y(b({}, e), {
-          className: h.emojiInput,
+        return (0, n.jsxs)("div", y(h({}, e), {
+          className: x.emojiInput,
           ref: D,
           children: [(0, n.jsx)(f.Z, {
-            className: h.emojiButton,
+            className: x.emojiButton,
             active: l,
             tabIndex: 0,
-            renderButtonContents: !T.isDeletedCustomEmoji && (T.hasEmojiId || T.hasEmojiName) ? () => (0, n.jsx)(c.Z, {
+            renderButtonContents: !_.isDeletedCustomEmoji && (_.hasEmojiId || _.hasEmojiName) ? () => (0, n.jsx)(c.Z, {
               emojiName: I,
               emojiId: E
             }) : null
           }), (0, n.jsx)(o.Is, {
-            inputClassName: h.emojiText,
-            placeholder: x.intl.string(x.t.QTK0TE),
-            value: !T.isDeletedCustomEmoji && T.hasEmojiDisplayName ? ":".concat(C, ":") : "",
+            inputClassName: x.emojiText,
+            placeholder: b.intl.string(b.t.QTK0TE),
+            value: !_.isDeletedCustomEmoji && _.hasEmojiDisplayName ? ":".concat(C, ":") : "",
             readOnly: true
-          }), !T.isDeletedCustomEmoji && T.hasEmojiDisplayName && k && (0, n.jsx)(d.Z, y(b({}, e), {
+          }), !_.isDeletedCustomEmoji && _.hasEmojiDisplayName && k && (0, n.jsx)(d.Z, y(h({}, e), {
             onClick: R,
-            className: h.removeButton
+            className: x.removeButton
           }))]
         }))
       }

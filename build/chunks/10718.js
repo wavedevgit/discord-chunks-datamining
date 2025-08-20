@@ -156,7 +156,7 @@ function I(e) {
     allowFetch: c
   })), [y, O] = r.useState(null), v = r.useMemo(() => {
     var e;
-    return C(null != (e = o.placeholderCount) ? e : 0, n.commandTypes[0])
+    return N(null != (e = o.placeholderCount) ? e : 0, n.commandTypes[0])
   }, [n.commandTypes, o.placeholderCount]);
   return r.useMemo(() => {
     let e = {
@@ -202,7 +202,7 @@ function T(e, t, n) {
     descriptors: i,
     commands: a,
     loading: o
-  } = l.ZP.query(e, t, n), c = C(o && null != (r = n.placeholderCount) ? r : 0, t.commandTypes[0]);
+  } = l.ZP.query(e, t, n), c = N(o && null != (r = n.placeholderCount) ? r : 0, t.commandTypes[0]);
   return {
     commands: o ? [...a, ...c] : a,
     sections: o && 0 === i.length ? [s.Tm[f.bi.BUILT_IN]] : i
@@ -247,13 +247,13 @@ function A(e, t, n) {
     }
   }, [null == i ? true : i.result, null == a ? true : a.result, t, n])
 }
-let N = {
+let C = {
   id: "placeholder-section",
   type: Chunk895924.Qi.APPLICATION,
   name: ""
 };
 
-function C(e, t) {
+function N(e, t) {
   let n = [];
   for (let r = 0; r < e; r++) n.push(R(r, t));
   return n
@@ -269,6 +269,6 @@ function R(e, t) {
     untranslatedDescription: "",
     displayDescription: "",
     applicationId: "",
-    section: N
+    section: C
   }
 }

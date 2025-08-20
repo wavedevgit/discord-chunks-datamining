@@ -2,7 +2,7 @@
 /** chunk id: 877481, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => L
+  Z: () => x
 }), require("./415506.js"), require("./388685.js");
 var Chunk274616 = require("./274616.js"),
   Chunk710845 = require("./710845.js"),
@@ -64,14 +64,14 @@ let y = new Chunk710845.Z("Games"),
   S = 12e4,
   A = 36e5;
 
-function N() {
+function C() {
   return null != I ? Promise.resolve(I) : (0, Chunk358085.isDesktop)() ? Chunk998502.ZP.ensureModule("discord_game_utils").then(() => {
     let e = Chunk998502.ZP.getGameUtils();
     return null != module && null != module.findLaunchable ? (I = module, module) : Promise.reject(Error("game utils not found"))
   }) : Promise.reject(Error("not desktop client"))
 }
 
-function C(e) {
+function N(e) {
   let t = {
       id: e.id,
       name: e.name,
@@ -98,7 +98,7 @@ async function P(e) {
     }))), 0 === e.length) throw Error("No remaining launchable queries");
   let t = Date.now();
   t > v && (v = t + A, O = {});
-  let n = await N();
+  let n = await C();
   for (let t of e) {
     let e = O[t.id];
     if (null != e) return e;
@@ -121,13 +121,13 @@ function D(e) {
     null == _.Z.safeParseWithQuery(e.launchTarget) ? n(Error("Failed to parse launch target. ".concat(e.launchTarget))) : (window.open(e.launchTarget), t([]))
   })
 }
-let L = {
+let x = {
   waitSubscribed: (e, t) => new Promise((n, r) => w(() => o.Z.isSubscribed(e, t), n, r)),
   waitConnected(e) {
     return new Promise(w.bind(this, () => l.Z.isConnected(e)))
   },
-  isLaunchable: e => P(C(e)).then(e => null != e).catch(() => false),
-  launch: e => P(C(e)).then(D),
+  isLaunchable: e => P(N(e)).then(e => null != e).catch(() => false),
+  launch: e => P(N(e)).then(D),
   launchDispatchApplication(e, t, n, i, o) {
     let {
       launchOptions: l,
@@ -161,7 +161,7 @@ let L = {
       return d.Z.launch(_, p, E.name, r)
     })
   },
-  removeShortcuts: e => (0, f.isWindows)() ? N().then(t => {
+  removeShortcuts: e => (0, f.isWindows)() ? C().then(t => {
     var n, r;
     return null != (r = null == (n = t.removeShortcuts) ? true : n.call(t, e)) && r
   }) : Promise.resolve(false),
@@ -169,19 +169,19 @@ let L = {
     if (null == i || !(0, f.isWindows)()) return Promise.resolve(false);
     let a = "discord:///library/".concat(r, "/launch"),
       o = "".concat(i, "\\icon.ico");
-    return N().then(r => {
+    return C().then(r => {
       var i, s;
       return null != (s = null == (i = r.createShortcuts) ? true : i.call(r, e, t, n, a, o)) && s
     })
   },
   isGameLaunchable: e => P(R(e)).then(e => null != e).catch(() => false),
   launchGame: e => l.Z.isConnected(e) ? Promise.resolve() : P(R(e)).then(D),
-  isProtocolRegistered: e => N().then(t => {
+  isProtocolRegistered: e => C().then(t => {
     var n, r;
     return null != (r = null == (n = t.isProtocolSchemeRegistered) ? true : n.call(t, e)) && r
   }),
   setRecentGames(e) {
-    N().then(t => {
+    C().then(t => {
       var n;
       return null == (n = t.setRecentGames) ? true : n.call(t, e)
     }).catch(() => {})

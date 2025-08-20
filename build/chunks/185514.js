@@ -1,11 +1,12 @@
-/** Chunk was on 66181 **/
-/** chunk id: 185514, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 185514, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  $c: () => p,
-  Nx: () => g,
+  $c: () => _,
+  Nx: () => p,
   On: () => h,
-  tQ: () => u,
-  x5: () => m
+  tQ: () => d,
+  x5: () => f
 });
 var Chunk140492 = require("./140492.js"),
   Chunk475468 = require("./475468.js"),
@@ -15,17 +16,17 @@ var Chunk140492 = require("./140492.js"),
   Chunk914010 = require("./914010.js"),
   Chunk358085 = require("./358085.js"),
   Chunk981631 = require("./981631.js");
-let u = {
+let d = {
     binds: ["alt+down"],
     comboKeysBindGlobal: true,
     action: () => ((0, Chunk140492.Z)(), false)
   },
-  m = {
+  f = {
     binds: ["alt+up"],
     comboKeysBindGlobal: true,
     action: () => ((0, Chunk140492.Z)(false), false)
   },
-  p = {
+  _ = {
     binds: ["mod+alt+right"],
     comboKeysBindGlobal: true,
     action() {
@@ -38,7 +39,7 @@ let u = {
       return null != module && (0, Chunk769654.X)(module), false
     }
   },
-  g = {
+  p = {
     binds: (0, Chunk358085.isMac)() ? ["mod+["] : ["alt+left"],
     comboKeysBindGlobal: true,
     action: () => ((0, Chunk891304.Hm)("keybind"), false)

@@ -1,21 +1,22 @@
-/** Chunk was on 48091 **/
-/** chunk id: 896083, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 896083, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  F: () => l
+  F: () => a
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk295141 = require("./295141.js");
-let l = () => {
-  let [e, t] = Chunk647438.useState(false), [n, l] = Chunk647438.useState(null);
+let a = () => {
+  let [e, t] = Chunk647438.useState(false), [n, a] = Chunk647438.useState(null);
   return {
     loading: module,
     error: require,
     getTrialPurchaseEligibility: Chunk647438.useCallback(async (e, n, r) => {
-      t(true), l(null);
+      t(true), a(null);
       try {
         return await (0, i.LB)(e, n, r)
       } catch (e) {
-        l(e)
+        a(e)
       } finally {
         t(false)
       }

@@ -3,16 +3,16 @@
 "use strict";
 require.d(exports, {
   D$: () => P,
-  N4: () => k,
+  N4: () => M,
   UI: () => R,
   Uu: () => S,
   cS: () => w,
-  cZ: () => j,
+  cZ: () => k,
   e1: () => B,
-  eQ: () => C,
-  fw: () => N,
+  eQ: () => N,
+  fw: () => C,
   uY: () => D,
-  x9: () => x
+  x9: () => L
 }), require("./704826.js"), require("./35282.js"), require("./388685.js"), require("./781311.js");
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
@@ -84,12 +84,12 @@ function A() {
   return (0, Chunk772848.Z)()
 }
 
-function N(e) {
+function C(e) {
   let t = /\b[a-f\d]{8}-(?:[a-f\d]{4}-){3}[a-f\d]{12}-\b/i;
   return e.replace(t, "")
 }
 
-function C(e) {
+function N(e) {
   for (let t of e.reactions)
     if (null == t.me_vote) returntrue;
   returnfalse
@@ -115,11 +115,11 @@ function D(e) {
   return null != e.image && (null == n || 0 === n.length)
 }
 
-function L(e) {
+function x(e) {
   return new Date(Date.now() + e * m.Z.Millis.HOUR).toISOString()
 }
 
-function x(e) {
+function L(e) {
   var t;
   if (null == e) return;
   let n = null == e || null == (t = e.answers) ? true : t.map((e, t) => {
@@ -136,29 +136,29 @@ function x(e) {
         poll_media: a
       })
     }),
-    r = (null == e ? true : e.duration) != null ? L(e.duration) : "0";
+    r = (null == e ? true : e.duration) != null ? x(e.duration) : "0";
   return T(v({}, e), {
     expiry: r,
     answers: n
   })
 }
 
-function M(e, t) {
+function j(e, t) {
   var n, r, i, a;
   let s = null != (a = null == (i = e.embeds[0]) || null == (r = i.fields) || null == (n = r.find(e => "poll_question_text" === e.rawName)) ? true : n.rawValue) ? a : "";
   return null != t ? (0, o.aF)(s, t) : s
 }
 
-function k(e) {
+function M(e) {
   let t = (0, u.ZH)(e),
-    n = M(e, E.Dv);
+    n = j(e, E.Dv);
   return y.intl.format(y.t.Vn97KS, {
     username: t.nick,
     title: n
   })
 }
 
-function j(e) {
+function k(e) {
   return e.reduce((e, t) => {
     var n, r;
     return e + (null != (r = null == (n = t.count_details) ? true : n.vote) ? r : 0)

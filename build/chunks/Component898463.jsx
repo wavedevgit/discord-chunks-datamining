@@ -2,7 +2,7 @@
 /** chunk id: 898463, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => L,
+  Z: () => x,
   r: () => D
 }), require("./388685.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
@@ -60,12 +60,12 @@ function A(e, t) {
   return n
 }
 
-function N(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let C = ["image/jpeg", "image/png", "image/webp", "image/gif", "image/avif", "video/quicktime", "video/mp4"];
+let N = ["image/jpeg", "image/png", "image/webp", "image/gif", "image/avif", "video/quicktime", "video/mp4"];
 
 function R(e) {
   let {
@@ -114,7 +114,7 @@ function P(e) {
     height: 0
   }), p = s === O.q.SMALL;
   i.useEffect(() => {
-    if (null == t || false === C.includes(t.type)) return;
+    if (null == t || false === N.includes(t.type)) return;
     let e = URL.createObjectURL(t);
     d(e);
     let n = new Image;
@@ -248,7 +248,7 @@ function D(e) {
   })
 }
 
-function L(e) {
+function x(e) {
   let {
     channelId: t,
     draftType: n,
@@ -259,11 +259,11 @@ function L(e) {
     canEdit: m = true,
     hideFileName: E = false,
     clip: T
-  } = e, A = null != T, C = (h = A ? O.q.CLIP : h) === O.q.SMALL, R = (0, s.e7)([g.Z], () => {
+  } = e, A = null != T, N = (h = A ? O.q.CLIP : h) === O.q.SMALL, R = (0, s.e7)([g.Z], () => {
     var e;
     return null == (e = g.Z.getChannel(t)) ? true : e.guild_id
   }), P = e => {
-    e.stopPropagation(), (0, l.h7j)(e => (0, r.jsx)(u.default, N(S({}, e), {
+    e.stopPropagation(), (0, l.h7j)(e => (0, r.jsx)(u.default, C(S({}, e), {
       draftType: n,
       upload: a,
       channelId: t,
@@ -285,7 +285,7 @@ function L(e) {
     actions: (0, r.jsxs)(i.Fragment, {
       children: [m ? (0, r.jsx)(y.Z, {
         className: o()({
-          [I.action]: C
+          [I.action]: N
         }),
         tooltip: A ? v.intl.string(v.t.MYgdY2) : v.intl.string(v.t.cuurzM),
         onClick: () => c.Z.update(t, a.id, n, {
@@ -295,18 +295,18 @@ function L(e) {
           size: "md",
           color: "currentColor",
           className: o()({
-            [I.actionBarIcon]: C
+            [I.actionBarIcon]: N
           })
         }) : (0, r.jsx)(l.tEF, {
           size: "xs",
           color: "currentColor",
           className: o()({
-            [I.actionBarIcon]: C
+            [I.actionBarIcon]: N
           })
         })
       }) : null, m && !A ? (0, r.jsx)(y.Z, {
         className: o()({
-          [I.action]: C
+          [I.action]: N
         }),
         tooltip: v.intl.string(v.t.Y8ujqq),
         onClick: P,
@@ -314,12 +314,12 @@ function L(e) {
           size: "xs",
           color: "currentColor",
           className: o()({
-            [I.actionBarIcon]: C
+            [I.actionBarIcon]: N
           })
         })
       }) : null, (0, r.jsx)(y.Z, {
         className: o()({
-          [I.action]: C
+          [I.action]: N
         }),
         tooltip: A ? v.intl.string(v.t.MskAXV) : v.intl.string(v.t.vN7REx),
         onClick: () => c.Z.remove(t, a.id, n),
@@ -328,7 +328,7 @@ function L(e) {
           size: "md",
           color: "currentColor",
           className: o()({
-            [I.actionBarIcon]: C
+            [I.actionBarIcon]: N
           })
         })
       })]
@@ -340,7 +340,7 @@ function L(e) {
     keyboardModeEnabled: d,
     size: h,
     className: o()({
-      [I.attachmentItemSmall]: C
+      [I.attachmentItemSmall]: N
     }),
     children: [(0, r.jsx)(D, {
       upload: a,

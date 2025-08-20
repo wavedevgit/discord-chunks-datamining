@@ -79,8 +79,8 @@ let I = 3,
   T = 80,
   S = 12,
   A = 16,
-  N = () => T,
-  C = e => {
+  C = () => T,
+  N = e => {
     var {
       children: t,
       className: n,
@@ -113,7 +113,7 @@ let I = 3,
         size: T,
         onlyAnimateOnHover: !h
       });
-    return (0, r.jsxs)(C, y(E({
+    return (0, r.jsxs)(N, y(E({
       innerRef: null != a ? a : f,
       isSelected: s
     }, d), {
@@ -142,7 +142,7 @@ let I = 3,
         section: y,
         items: O
       } = u[e];
-      return (0, s.EQ)(O[d]).with(_.Tm, () => (0, r.jsxs)(C, {
+      return (0, s.EQ)(O[d]).with(_.Tm, () => (0, r.jsxs)(N, {
         style: E({}, g),
         isSelected: null === i,
         onSelect: () => o(null),
@@ -155,7 +155,7 @@ let I = 3,
           color: "header-primary",
           children: (0, f.ad)(t, n) ? h.intl.string(h.t.CHf9iI) : h.intl.string(h.t.PoWNfX)
         })]
-      }, b)).with(_.oT, () => (0, r.jsxs)(C, {
+      }, b)).with(_.oT, () => (0, r.jsxs)(N, {
         style: g,
         onSelect: c,
         children: [(0, r.jsx)(l.EOn, {
@@ -215,6 +215,6 @@ let I = 3,
       renderSection: b,
       getSectionHeight: e => u[e].height,
       getItemKey: (e, t) => u[e].items[t].id,
-      getItemHeight: N
+      getItemHeight: C
     })
   }

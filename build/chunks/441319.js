@@ -2,7 +2,7 @@
 /** chunk id: 441319, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  M9: () => C,
+  M9: () => N,
   aW: () => D,
   wu: () => w
 }), require("./388685.js");
@@ -31,7 +31,7 @@ var Chunk997945 = require("./997945.js"),
   Chunk730886 = require("./730886.js"),
   Chunk473974 = require("./473974.js"),
   Chunk563856 = require("./563856.js");
-let C = 60;
+let N = 60;
 
 function R() {
   return {

@@ -1,20 +1,20 @@
-/** Chunk was on 91584 **/
-/** chunk id: 533531, original params: t,e,r (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 533531, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-require("./42547.js"), module.exports = function(t, e) {
-  var r = t.getSelection(),
-    n = t.getCurrentContent(),
-    i = r.getStartKey(),
-    o = r.getStartOffset(),
-    a = i,
-    u = 0;
-  if (e > o) {
-    var s = n.getKeyBefore(i);
-    null == s ? a = i : (a = s, u = n.getBlockForKey(s).getText().length)
-  } else u = o - e;
-  return r.merge({
-    focusKey: a,
-    focusOffset: u,
+require("./42547.js"), module.exports = function(e, t) {
+  var n = e.getSelection(),
+    r = e.getCurrentContent(),
+    i = n.getStartKey(),
+    a = n.getStartOffset(),
+    o = i,
+    s = 0;
+  if (t > a) {
+    var l = r.getKeyBefore(i);
+    null == l ? o = i : (o = l, s = r.getBlockForKey(l).getText().length)
+  } else s = a - t;
+  return n.merge({
+    focusKey: o,
+    focusOffset: s,
     isBackward: true
   })
 }

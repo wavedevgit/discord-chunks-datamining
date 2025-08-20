@@ -45,7 +45,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk116649 = require("./116649.js");
 
-function Z(e, t, n) {
+function F(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -61,7 +61,7 @@ function H(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      Z(e, t, n[t])
+      F(e, t, n[t])
     })
   }
   return e
@@ -89,7 +89,7 @@ function z(e) {
   let {
     user: t,
     currentUser: n,
-    guildId: Z,
+    guildId: F,
     channelId: Y,
     messageId: z,
     roleId: q,
@@ -105,18 +105,18 @@ function z(e) {
   } = (0, _.ZP)([...ee, f.Z.USER_PROFILE_POPOUT]), ei = (0, T.ZB)({
     layout: "POPOUT",
     userId: t.id,
-    guildId: Z,
+    guildId: F,
     channelId: Y,
     messageId: z,
     roleId: q
-  }), ea = (0, o.e7)([v.Z], () => null != Z ? v.Z.getGuild(Z) : null), eo = i.useMemo(() => null != Z ? {
-    [Z]: [t.id]
-  } : {}, [Z, t.id]);
+  }), ea = (0, o.e7)([v.Z], () => null != F ? v.Z.getGuild(F) : null), eo = i.useMemo(() => null != F ? {
+    [F]: [t.id]
+  } : {}, [F, t.id]);
   (0, d.$)(eo);
   let es = i.useRef(null),
-    el = (0, A.ZP)(t.id, Z),
+    el = (0, A.ZP)(t.id, F),
     ec = (0, c.Z)(es),
-    eu = (0, N.$m)(),
+    eu = (0, C.$m)(),
     ed = (0, l.q_F)({
       opacity: +(null != eu.interactionType),
       config: {
@@ -151,7 +151,7 @@ function z(e) {
     }),
     eI = i.useMemo(() => (0, g.Z)(), []),
     eT = e => {
-      null == Q || Q(), (0, C.openUserProfileModal)(W(H({
+      null == Q || Q(), (0, N.openUserProfileModal)(W(H({
         sourceAnalyticsLocations: er,
         hideRestrictedProfile: true,
         customStatusPrompt: eI
@@ -161,7 +161,7 @@ function z(e) {
     },
     eS = () => $ ? null : (0, r.jsx)(l.sNh, {
       id: "view-profile",
-      label: V.intl.string(V.t["+Xp3ho"]),
+      label: Z.intl.string(Z.t["+Xp3ho"]),
       action: () => {
         eT(), (0, S.pQ)(H({
           action: "PRESS_VIEW_PROFILE",
@@ -170,8 +170,8 @@ function z(e) {
       }
     }),
     eA = en ? "div" : l.VqE,
-    eN = (0, p.Dt)(),
-    eC = I.ZP.useName(null == ea ? true : ea.id, Y, t);
+    eC = (0, p.Dt)(),
+    eN = I.ZP.useName(null == ea ? true : ea.id, Y, t);
   return (0, r.jsx)(_.Gt, {
     value: er,
     children: (0, r.jsx)(T.Mt, {
@@ -180,16 +180,16 @@ function z(e) {
       fetchStartedAt: null == el ? true : el.fetchStartedAt,
       fetchEndedAt: null == el ? true : el.fetchEndedAt,
       isLoaded: null == el ? true : el.isLoaded,
-      children: (0, r.jsx)(N.NJ, {
+      children: (0, r.jsx)(C.NJ, {
         value: eu,
         children: (0, r.jsxs)(eA, {
           ref: es,
-          "aria-labelledby": eN,
+          "aria-labelledby": eC,
           children: [(0, r.jsx)(l.nn4, {
             children: (0, r.jsx)(l.H, {
-              id: eN,
-              children: V.intl.format(V.t.KRe1Fh, {
-                name: eC
+              id: eC,
+              children: Z.intl.format(Z.t.KRe1Fh, {
+                name: eN
               })
             })
           }), (0, r.jsxs)(D.Z, {
@@ -198,42 +198,42 @@ function z(e) {
             themeType: B.l.POPOUT,
             children: [null != eu.interactionType && (0, r.jsx)(a.animated.div, {
               style: ed,
-              className: F.backdrop
-            }), (0, r.jsxs)(L.Z, {
-              children: [(0, r.jsx)(M.Z, {
+              className: V.backdrop
+            }), (0, r.jsxs)(x.Z, {
+              children: [(0, r.jsx)(j.Z, {
                 shouldShowTooltip: null === eu.interactionType,
                 user: t,
-                guildId: Z,
+                guildId: F,
                 channelId: Y,
                 onClose: Q,
                 appContext: et
-              }), (0, r.jsx)(x.Z, {
+              }), (0, r.jsx)(L.Z, {
                 shouldShowTooltip: null === eu.interactionType,
                 themeType: B.l.POPOUT,
                 user: t
-              }), !eE && (0, r.jsx)(k.Z, {
+              }), !eE && (0, r.jsx)(M.Z, {
                 type: "banner",
                 user: t,
-                guildId: Z,
+                guildId: F,
                 viewProfileItem: eS(),
                 appContext: et
               })]
             }), (0, r.jsxs)("div", {
-              className: F.header,
+              className: V.header,
               children: [(0, r.jsx)(P.Z, {
                 user: t,
                 displayProfile: el,
-                guildId: Z,
+                guildId: F,
                 themeType: B.l.POPOUT
               }), (0, r.jsx)(w.Z, {
                 userId: t.id,
-                className: F.toast,
+                className: V.toast,
                 onClose: Q
               }), (0, r.jsx)(R.Z, {
                 location: "UserProfilePopout",
                 user: t,
                 displayProfile: el,
-                guildId: Z,
+                guildId: F,
                 channelId: Y,
                 themeType: B.l.POPOUT,
                 onOpenProfile: $ ? true : eT
@@ -242,21 +242,21 @@ function z(e) {
                 markAsDismissed: ey,
                 targetElementRef: ef,
                 onTryFeature: Q,
-                children: () => (0, r.jsx)(j.Z, {
+                children: () => (0, r.jsx)(k.Z, {
                   ref: ef,
                   location: "UserProfilePopout",
                   user: t,
-                  guildId: Z,
+                  guildId: F,
                   channelId: Y,
                   themeType: B.l.POPOUT,
                   onCloseProfile: Q,
                   prompt: eI
                 })
-              }) : (0, r.jsx)(j.Z, {
+              }) : (0, r.jsx)(k.Z, {
                 ref: eO ? ef : true,
                 location: "UserProfilePopout",
                 user: t,
-                guildId: Z,
+                guildId: F,
                 channelId: Y,
                 themeType: B.l.POPOUT,
                 onCloseProfile: Q,
@@ -273,7 +273,7 @@ function z(e) {
               onClose: Q
             }), (0, r.jsx)(G.Z, {
               user: t,
-              guildId: Z,
+              guildId: F,
               channelId: Y,
               onClose: Q,
               appContext: et,

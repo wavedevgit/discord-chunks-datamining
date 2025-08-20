@@ -1,34 +1,35 @@
-/** Chunk was on 66181 **/
-/** chunk id: 878596, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 878596, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => a
+  Z: () => o
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk481060 = require("./481060.js"),
   Chunk64372 = require("./64372.js");
-let a = e => {
+let o = e => {
   let {
     label: t,
     onClick: n,
-    submitting: a
+    submitting: o
   } = e;
-  return (0, i.jsx)(r.P3F, {
-    onClick: a ? true : n,
-    className: s.button,
-    children: (0, i.jsxs)("div", {
-      className: s.contentContainer,
-      children: [a ? (0, i.jsx)(r.$jN, {
-        type: r.$jN.Type.PULSING_ELLIPSIS,
-        className: s.__invalid_spinner
-      }) : (0, i.jsx)(r.Text, {
+  return (0, r.jsx)(i.P3F, {
+    onClick: o ? true : n,
+    className: a.button,
+    children: (0, r.jsxs)("div", {
+      className: a.contentContainer,
+      children: [o ? (0, r.jsx)(i.$jN, {
+        type: i.$jN.Type.PULSING_ELLIPSIS,
+        className: a.__invalid_spinner
+      }) : (0, r.jsx)(i.Text, {
         variant: "text-md/medium",
-        className: s.label,
+        className: a.label,
         children: t
-      }), (0, i.jsx)(r.CJ0, {
+      }), (0, r.jsx)(i.CJ0, {
         size: "md",
         color: "currentColor",
-        className: s.arrow
+        className: a.arrow
       })]
     })
   })

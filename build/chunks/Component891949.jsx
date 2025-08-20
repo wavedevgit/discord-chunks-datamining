@@ -25,9 +25,9 @@ function d(e) {
       url: e,
       type: "IMAGE"
     })), ...e]
-  }, [t.artwork, t.screenshots]), f = m.length > 2;
+  }, [t.artwork, t.screenshots]), p = m.length > 2;
 
-  function p(e) {
+  function f(e) {
     if (null == d.current) return;
     let t = d.current.getScrollerState().scrollLeft;
     d.current.scrollTo({
@@ -42,7 +42,7 @@ function d(e) {
       color: "header-primary",
       children: o.intl.string(o.t["bNdK5+"])
     }), (0, r.jsxs)("div", {
-      className: f ? u.gameProfileMediaSmall : u.gameProfileMediaLarge,
+      className: p ? u.gameProfileMediaSmall : u.gameProfileMediaLarge,
       children: [(0, r.jsx)(l.xVE, {
         ref: d,
         className: u.imageScroller,
@@ -69,13 +69,13 @@ function d(e) {
             })
           })
         }, t))
-      }), f && (0, r.jsxs)("div", {
+      }), p && (0, r.jsxs)("div", {
         className: u.mediaOverlay,
         children: [(0, r.jsx)("div", {
           className: u.gradientLeft
         }), (0, r.jsx)(l.P3F, {
           className: u.arrowClickable,
-          onClick: () => p(false),
+          onClick: () => f(false),
           children: (0, r.jsx)(l.whL, {
             className: u.arrow,
             color: "currentColor"
@@ -84,7 +84,7 @@ function d(e) {
           className: u.gradientRight
         }), (0, r.jsx)(l.P3F, {
           className: u.arrowClickable,
-          onClick: () => p(1),
+          onClick: () => f(1),
           children: (0, r.jsx)(l.ZSh, {
             className: u.arrow,
             color: "currentColor"

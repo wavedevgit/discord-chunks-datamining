@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 985002, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 985002, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  G: () => o
+  G: () => l
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk881052 = require("./881052.js"),
@@ -9,127 +10,127 @@ var Chunk647438 = require("./647438.js"),
   Chunk914788 = require("./914788.js"),
   Chunk292352 = require("./292352.js");
 
-function o(e) {
+function l(e) {
   let {
     onError: t,
     onSuccess: n
-  } = null != e ? e : {}, [o, c] = i.useState(false), [d, u] = i.useState(false), [m, p] = i.useState(false), [g, h] = i.useState(false), [f, b] = i.useState(false), [x, _] = i.useState(false), [j, E] = i.useState(false), [C, O] = i.useState(false), v = o || d || m || g || x || C, S = i.useCallback(async e => {
-    if (!v) {
+  } = null != e ? e : {}, [l, c] = r.useState(false), [u, d] = r.useState(false), [f, _] = r.useState(false), [p, h] = r.useState(false), [m, g] = r.useState(false), [E, b] = r.useState(false), [y, O] = r.useState(false), [v, I] = r.useState(false), T = l || u || f || p || E || v, S = r.useCallback(async e => {
+    if (!T) {
       c(true);
       try {
-        await (0, s.Yw)(e.id, l.ne.ACTIVE), null == n || n()
+        await (0, a.Yw)(e.id, s.ne.ACTIVE), null == n || n()
       } catch (n) {
-        let e = new r.Hx(n);
+        let e = new i.Hx(n);
         null == t || t(e)
       } finally {
         c(false)
       }
     }
-  }, [v, t, n]), T = i.useCallback(async e => {
-    if (!v) {
-      u(true);
+  }, [T, t, n]), A = r.useCallback(async e => {
+    if (!T) {
+      d(true);
       try {
-        await (0, s.Yw)(e.id, l.ne.DECLINED), null == n || n()
+        await (0, a.Yw)(e.id, s.ne.DECLINED), null == n || n()
       } catch (n) {
-        let e = new r.Hx(n);
+        let e = new i.Hx(n);
         null == t || t(e)
       } finally {
-        u(false)
+        d(false)
       }
     }
-  }, [v, t, n]), N = i.useCallback(async e => {
-    if (!v) {
-      p(true);
+  }, [T, t, n]), C = r.useCallback(async e => {
+    if (!T) {
+      _(true);
       try {
-        await (0, s.Yw)(e.id, l.ne.INACTIVE), null == n || n()
+        await (0, a.Yw)(e.id, s.ne.INACTIVE), null == n || n()
       } catch (n) {
-        let e = new r.Hx(n);
+        let e = new i.Hx(n);
         null == t || t(e)
       } finally {
-        p(false)
+        _(false)
       }
     }
-  }, [v, t, n]), I = i.useCallback(async e => {
-    if (!v) {
+  }, [T, t, n]), N = r.useCallback(async e => {
+    if (!T) {
       h(true);
       try {
-        await (0, s.fc)(e.id), null == n || n()
+        await (0, a.fc)(e.id), null == n || n()
       } catch (n) {
-        let e = new r.Hx(n);
+        let e = new i.Hx(n);
         null == t || t(e)
       } finally {
         h(false)
       }
     }
-  }, [v, t, n]), y = i.useCallback(async () => {
-    if (!f) {
-      b(true);
+  }, [T, t, n]), R = r.useCallback(async () => {
+    if (!m) {
+      g(true);
       try {
-        await (0, s.qd)(), null == n || n()
+        await (0, a.qd)(), null == n || n()
       } catch (n) {
-        let e = new r.Hx(n);
+        let e = new i.Hx(n);
         null == t || t(e)
       } finally {
-        b(false)
+        g(false)
       }
     }
-  }, [f, t, n]), A = i.useCallback(async e => {
-    if (!j) {
-      E(true);
+  }, [m, t, n]), P = r.useCallback(async e => {
+    if (!y) {
+      O(true);
       try {
-        await s.ZP.fetchTeenActivity(e), null == n || n()
+        await a.ZP.fetchTeenActivity(e), null == n || n()
       } catch (n) {
-        let e = new r.Hx(n);
+        let e = new i.Hx(n);
         null == t || t(e)
       } finally {
-        E(false)
+        O(false)
       }
     }
-  }, [j, t, n]);
+  }, [y, t, n]);
   return {
     acceptLinkRequest: S,
-    declineLinkRequest: T,
-    disconnectLinkRequest: N,
-    cancelLinkRequest: I,
-    selectTeenUser: A,
-    getLinkCode: y,
-    requestLink: i.useCallback(async (e, i) => {
-      if (!x) {
-        _(true);
+    declineLinkRequest: A,
+    disconnectLinkRequest: C,
+    cancelLinkRequest: N,
+    selectTeenUser: P,
+    getLinkCode: R,
+    requestLink: r.useCallback(async (e, r) => {
+      if (!E) {
+        b(true);
         try {
-          await s.ZP.requestLink(e, i), null == n || n()
+          await a.ZP.requestLink(e, r), null == n || n()
         } catch (n) {
-          let e = new r.Hx(n);
+          let e = new i.Hx(n);
           null == t || t(e)
         } finally {
-          _(false)
+          b(false)
         }
       }
-    }, [x, t, n]),
-    loadMore: i.useCallback(async e => {
-      let n = a.Z.getActionsForDisplayType(e),
-        i = n[n.length - 1],
-        l = a.Z.getStartId(),
-        o = a.Z.getSelectedTeenId();
-      if (!C && null != l && null != o) {
-        O(true);
+    }, [E, t, n]),
+    loadMore: r.useCallback(async e => {
+      let n = o.Z.getActionsForDisplayType(e),
+        r = n[n.length - 1],
+        s = o.Z.getStartId(),
+        l = o.Z.getSelectedTeenId();
+      if (!v && null != s && null != l) {
+        I(true);
         try {
-          await s.ZP.fetchMoreTeenActivity(o, e, l, i.event_id)
+          await a.ZP.fetchMoreTeenActivity(l, e, s, r.event_id)
         } catch (n) {
-          let e = new r.Hx(n);
+          let e = new i.Hx(n);
           null == t || t(e)
         } finally {
-          O(false)
+          I(false)
         }
       }
-    }, [C, t]),
-    isAcceptLoading: o,
-    isDeclineLoading: d,
-    isDisconnectLoading: m,
-    isCancelLoading: g,
-    isGetLinkCodeLoading: f,
-    isSelectTeenUserLoading: j,
-    isRequestingLink: x,
-    isMoreLoading: C
+    }, [v, t]),
+    isAcceptLoading: l,
+    isDeclineLoading: u,
+    isDisconnectLoading: f,
+    isCancelLoading: p,
+    isGetLinkCodeLoading: m,
+    isSelectTeenUserLoading: y,
+    isRequestingLink: E,
+    isMoreLoading: v
   }
 }

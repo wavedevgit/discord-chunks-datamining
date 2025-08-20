@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   B: () => R,
-  E: () => C
+  E: () => N
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -78,7 +78,7 @@ let y = (e, t) => null != t && e.productLine === g.POd.COLLECTIBLES && t.type !=
       fallbackLabel: null
     })
   },
-  N = e => {
+  C = e => {
     let {
       discount: t
     } = e, n = (0, c.e7)([p.default], () => p.default.locale), i = null != t && null != t.percentage_amount ? (0, h.T3)(n, -(t.percentage_amount / 100 * 1)) : null;
@@ -91,7 +91,7 @@ let y = (e, t) => null != t && e.productLine === g.POd.COLLECTIBLES && t.type !=
       })
     })
   },
-  C = e => {
+  N = e => {
     let {
       sku: t,
       value: n
@@ -143,7 +143,7 @@ function R(e) {
       })]
     }), null != f && (0, r.jsxs)(v, {
       children: ["THREE_COLUMN" === a && (0, r.jsx)(I, {
-        children: (0, r.jsx)(N, {
+        children: (0, r.jsx)(C, {
           discount: f
         })
       }), (0, r.jsx)(T, {

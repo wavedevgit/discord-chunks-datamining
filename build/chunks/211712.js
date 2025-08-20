@@ -1,11 +1,12 @@
-/** Chunk was on 66181 **/
-/** chunk id: 211712, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 211712, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Ib: () => s,
-  hq: () => r
+  Ib: () => a,
+  hq: () => i
 });
 var Chunk388032 = require("./388032.jsx");
-let r = {
+let i = {
     above_the_clouds: {
       preset: "above_the_clouds",
       themeColors: [752280, 9215590],
@@ -45,4 +46,4 @@ let r = {
       getBannerSrc: e => e ? n(217258).Z : n(892814).Z
     }
   },
-  s = e => r[e]
+  a = e => i[e]

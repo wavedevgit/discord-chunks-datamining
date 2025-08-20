@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 940021, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 940021, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => u
+  Z: () => d
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -13,7 +14,7 @@ var Chunk63063 = require("./63063.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function u() {
+function d() {
   let e = Chunk695346.bh.useSetting();
   return (0, Chunk951288.jsx)(Chunk838436.U, {
     setting: Chunk726985.s6.PRIVACY_DATA_QUESTS_V2,
@@ -23,7 +24,7 @@ function u() {
         helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.QUESTS_PRIVACY_CONTROLS)
       }),
       value: !module,
-      onChange: e => s.bh.updateSetting(!e)
+      onChange: e => a.bh.updateSetting(!e)
     })
   })
 }

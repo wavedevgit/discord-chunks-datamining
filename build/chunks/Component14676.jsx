@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 14676, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 14676, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => d
+  Z: () => u
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -11,7 +12,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk272008 = require("./272008.js"),
   Chunk981631 = require("./981631.js"),
   Chunk571006 = require("./571006.js");
-let d = function() {
+let u = function() {
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
       variant: "heading-xl/semibold",

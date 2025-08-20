@@ -1,13 +1,13 @@
-/** Chunk was on 31930 **/
-/** chunk id: 798379, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 798379, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => c
+  Z: () => u
 }), require("./388685.js");
-var i, Chunk442837 = require("./442837.js"),
+var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
-function l(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -15,27 +15,29 @@ function l(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let o = new Set;
-class a extends(i = Chunk442837.ZP.PersistedStore) {
+let s = new Set;
+
+function l(e) {
+  let {
+    guildId: t,
+    collapsed: n
+  } = e;
+  n ? s.add(t) : s.delete(t)
+}
+class c extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    o.clear(), null == e || e.guilds.forEach(e => o.add(e))
+    s.clear(), null == e || e.guilds.forEach(e => s.add(e))
   }
   isCollapsed(e) {
-    return o.has(e)
+    return s.has(e)
   }
   getState() {
     return {
-      guilds: o
+      guilds: s
     }
   }
 }
-l(a, "displayName", "RecentlyActiveCollapseStore"), l(a, "persistKey", "RecentlyActiveCollapseStore");
-let c = new a(Chunk570140.Z, {
-  SET_RECENTLY_ACTIVE_COLLAPSED: function(e) {
-    let {
-      guildId: t,
-      collapsed: n
-    } = e;
-    n ? o.add(t) : o.delete(t)
-  }
+o(c, "displayName", "RecentlyActiveCollapseStore"), o(c, "persistKey", "RecentlyActiveCollapseStore");
+let u = new c(Chunk570140.Z, {
+  SET_RECENTLY_ACTIVE_COLLAPSED: l
 })

@@ -1,10 +1,15 @@
-/** Chunk was on 66181 **/
-/** chunk id: 675999, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 675999, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  PU: () => l,
-  _m: () => s,
-  lr: () => a
+  PU: () => a,
+  _m: () => r,
+  lr: () => i
 });
-var i, r, s = ((i = {}).GUILD_TEMPLATES = "guild-templates", i.CUSTOMIZE_GUILD = "customize-guild", i.CHANNEL_PROMPT = "channel-prompt", i.JOIN_GUILD = "join-guild", i.CREATION_INTENT = "creation-intent", i),
-  a = ((r = {}).FRIENDS = "FRIENDS", r.COMMUNITY = "COMMUNITY", r.CLAN = "CLAN", r);
-let l = "create-guild"
+var r = function(e) {
+    return e.GUILD_TEMPLATES = "guild-templates", e.CUSTOMIZE_GUILD = "customize-guild", e.CHANNEL_PROMPT = "channel-prompt", e.JOIN_GUILD = "join-guild", e.CREATION_INTENT = "creation-intent", e
+  }({}),
+  i = function(e) {
+    return e.FRIENDS = "FRIENDS", e.COMMUNITY = "COMMUNITY", e.CLAN = "CLAN", e
+  }({});
+let a = "create-guild"

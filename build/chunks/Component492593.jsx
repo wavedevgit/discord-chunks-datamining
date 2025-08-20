@@ -1,13 +1,13 @@
-/** Chunk was on 31978 **/
-/** chunk id: 492593, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 492593, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => O
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk573385 = require("./573385.js"),
   Chunk481060 = require("./481060.js"),
@@ -17,123 +17,134 @@ var Chunk951288 = require("./951288.js"),
   Chunk485386 = require("./485386.js"),
   Chunk724913 = require("./724913.js");
 
-function f(e) {
+function h(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      var r;
-      r = n[t], t in e ? Object.defineProperty(e, t, {
-        value: r,
-        enumerable: true,
-        configurable: true,
-        writable: true
-      }) : e[t] = r
+      h(e, t, n[t])
     })
   }
   return e
 }
 
-function b(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
-    }
-    return n
-  })(Object(t)).forEach(function(n) {
+function g(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function E(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let h = function(e) {
+
+function b(e, t) {
+  if (null == e) return {};
+  var n, r, i = y(e, t);
+  if (Object.getOwnPropertySymbols) {
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+  }
+  return i
+}
+
+function y(e, t) {
+  if (null == e) return {};
+  var n, r, i = {},
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+  return i
+}
+let O = function(e) {
   var {
     className: t,
     compact: n = false,
-    contentOnly: o = false,
+    contentOnly: a = false,
     zalgo: h = true,
-    preview: O = false,
+    preview: g = false,
     disableInteraction: y = false,
-    childrenRepliedMessage: v,
-    childrenExecutedCommand: j,
-    childrenHeader: P,
-    childrenSystemMessage: x,
-    childrenButtons: w,
-    childrenMessageContent: C,
-    childrenAccessories: N,
-    messageRef: S,
-    focusProps: E = {
+    childrenRepliedMessage: O,
+    childrenExecutedCommand: v,
+    childrenHeader: I,
+    childrenSystemMessage: T,
+    childrenButtons: S,
+    childrenMessageContent: A,
+    childrenAccessories: C,
+    messageRef: N,
+    focusProps: R = {
       offset: {
         left: 4,
         right: 4
       }
     },
-    hasThread: Z,
-    isSystemMessage: R,
-    hasReply: T,
-    author: I,
-    onMouseEnter: k,
-    onMouseLeave: M
-  } = e, D = function(e, t) {
-    if (null == e) return {};
-    var n, r, l = function(e, t) {
-      if (null == e) return {};
-      var n, r, l = {},
-        o = Object.keys(e);
-      for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
-      return l
-    }(e, t);
-    if (Object.getOwnPropertySymbols) {
-      var o = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
-    }
-    return l
-  }(e, ["className", "compact", "contentOnly", "zalgo", "preview", "disableInteraction", "childrenRepliedMessage", "childrenExecutedCommand", "childrenHeader", "childrenSystemMessage", "childrenButtons", "childrenMessageContent", "childrenAccessories", "messageRef", "focusProps", "hasThread", "isSystemMessage", "hasReply", "author", "onMouseEnter", "onMouseLeave"]);
-  let _ = (0, a.e7)([m.Z], () => (null == I ? true : I.guildId) == null || (null == I ? true : I.colorRoleId) == null ? null : m.Z.getRole(I.guildId, I.colorRoleId)),
-    A = (0, p.yH)(null == I ? true : I.guildId, _) && (0, d.S2)(I),
-    [L, G] = l.useState(false),
-    U = l.useCallback(e => {
-      G(true), null == k || k(e)
-    }, [k]),
-    B = l.useCallback(e => {
-      G(false), null == M || M(e)
-    }, [M]),
+    hasThread: P,
+    isSystemMessage: w,
+    hasReply: D,
+    author: x,
+    onMouseEnter: L,
+    onMouseLeave: j
+  } = e, M = b(e, ["className", "compact", "contentOnly", "zalgo", "preview", "disableInteraction", "childrenRepliedMessage", "childrenExecutedCommand", "childrenHeader", "childrenSystemMessage", "childrenButtons", "childrenMessageContent", "childrenAccessories", "messageRef", "focusProps", "hasThread", "isSystemMessage", "hasReply", "author", "onMouseEnter", "onMouseLeave"]);
+  let k = (0, s.e7)([_.Z], () => (null == x ? true : x.guildId) == null || (null == x ? true : x.colorRoleId) == null ? null : _.Z.getRole(x.guildId, x.colorRoleId)),
+    U = (0, f.yH)(null == x ? true : x.guildId, k) && (0, d.S2)(x),
+    [G, B] = i.useState(false),
+    Z = i.useCallback(e => {
+      B(true), null == L || L(e)
+    }, [L]),
+    V = i.useCallback(e => {
+      B(false), null == j || j(e)
+    }, [j]),
     F = (0, u.Y)({
       location: "BaseMessage"
     }),
-    H = (0, r.jsx)(s.d.Provider, {
+    H = (0, r.jsx)(l.d.Provider, {
       value: {
-        animate: L,
-        setAnimate: G
+        animate: G,
+        setAnimate: B
       },
-      children: (0, r.jsx)(c.tEY, b(f({}, E), {
-        children: (0, r.jsxs)("div", b(f({
-          className: i()(t, {
-            [g.gradient]: A,
-            [g.withDisplayNameStyles]: F && (null == I ? true : I.displayNameStyles) != null && (null == I ? true : I.guildId) == null,
-            [g.wrapper]: true,
-            [g.contentOnly]: o,
-            [g.compact]: n,
-            [g.preview]: O,
-            [g.cozy]: !n,
-            [g.zalgo]: h,
-            [g.hasThread]: Z,
-            [g.isSystemMessage]: R,
-            [g.hasReply]: T
+      children: (0, r.jsx)(c.tEY, E(m({}, R), {
+        children: (0, r.jsxs)("div", E(m({
+          className: o()(t, {
+            [p.gradient]: U,
+            [p.withDisplayNameStyles]: F && (null == x ? true : x.displayNameStyles) != null && (null == x ? true : x.guildId) == null,
+            [p.wrapper]: true,
+            [p.contentOnly]: a,
+            [p.compact]: n,
+            [p.preview]: g,
+            [p.cozy]: !n,
+            [p.zalgo]: h,
+            [p.hasThread]: P,
+            [p.isSystemMessage]: w,
+            [p.hasReply]: D
           }),
-          ref: S
-        }, D), {
+          ref: N
+        }, M), {
           role: "article",
-          onMouseEnter: U,
-          onMouseLeave: B,
-          children: [v, j, (0, r.jsxs)("div", {
-            className: g.contents,
-            children: [x, P, null == x && C]
-          }), N, null != w ? (0, r.jsx)("div", {
-            className: g.buttonContainer,
-            children: w
+          onMouseEnter: Z,
+          onMouseLeave: V,
+          children: [O, v, (0, r.jsxs)("div", {
+            className: p.contents,
+            children: [T, I, null == T && A]
+          }), C, null != S ? (0, r.jsx)("div", {
+            className: p.buttonContainer,
+            children: S
           }) : null]
         }))
       }))

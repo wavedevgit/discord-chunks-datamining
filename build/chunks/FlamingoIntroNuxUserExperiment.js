@@ -1,9 +1,10 @@
-/** Chunk was on 66181 **/
-/** chunk id: 702977, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 702977, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  av: () => r
+  av: () => i
 });
-let i = (0, require("./818083.js").B)({
+let r = (0, require("./818083.js").B)({
   kind: "user",
   id: "2025-05_flamingo_intro_nux",
   label: "Flamingo Intro NUX",
@@ -19,17 +20,17 @@ let i = (0, require("./818083.js").B)({
   }]
 });
 
-function r(e) {
+function i(e) {
   let {
     location: t,
     autoTrackExposure: n
   } = e, {
-    enabled: r
-  } = i.useExperiment({
+    enabled: i
+  } = r.useExperiment({
     location: t
   }, {
     autoTrackExposure: n,
     disable: __OVERLAY__
   });
-  return r
+  return i
 }

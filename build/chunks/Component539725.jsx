@@ -1,7 +1,7 @@
 /** Chunk was on 49078 **/
-/** chunk id: 539725, original params: e,t,r (module,exports,require) **/
+/** chunk id: 539725, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => o
+  default: () => c
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -11,28 +11,28 @@ var Chunk435935 = require("./435935.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk255597 = require("./255597.js");
 
-function o(e) {
+function c(e) {
   let {
     transitionState: t,
-    onClose: r
+    onClose: n
   } = e;
-  return (0, n.jsxs)(i.Y0X, {
-    size: i.CgR.SMALL,
+  return (0, r.jsxs)(s.Y0X, {
+    size: s.CgR.SMALL,
     transitionState: t,
     parentComponent: "AddFriendModal",
-    children: [(0, n.jsxs)(i.xBx, {
-      justify: l.k.Justify.BETWEEN,
-      children: [(0, n.jsx)(i.X6q, {
+    children: [(0, r.jsxs)(s.xBx, {
+      justify: i.k.Justify.BETWEEN,
+      children: [(0, r.jsx)(s.X6q, {
         variant: "heading-lg/semibold",
-        children: a.intl.string(a.t.w5uwoK)
-      }), (0, n.jsx)(i.olH, {
-        onClick: r
+        children: u.intl.string(u.t.w5uwoK)
+      }), (0, r.jsx)(s.olH, {
+        onClick: n
       })]
-    }), (0, n.jsx)(i.hzk, {
-      children: (0, n.jsx)("div", {
-        className: u.content,
-        children: (0, n.jsx)(s.Z, {
-          placeholder: a.intl.string(a.t.IEpCBQ)
+    }), (0, r.jsx)(s.hzk, {
+      children: (0, r.jsx)("div", {
+        className: l.content,
+        children: (0, r.jsx)(a.Z, {
+          placeholder: u.intl.string(u.t.IEpCBQ)
         })
       })
     })]

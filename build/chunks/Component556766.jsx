@@ -2,7 +2,7 @@
 /** chunk id: 556766, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => C
+  Z: () => N
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -73,7 +73,7 @@ function A() {
   return 500 !== o().random(1, 1e3) ? "call_ringing" : o().sample(["call_ringing_beat", "call_ringing_snow_halation"])
 }
 
-function N() {
+function C() {
   let e = (0, Chunk442837.Wu)([Chunk340895.Z, Chunk944486.Z, Chunk317381.ZP], () => Chunk340895.Z.getIncomingCalls().filter(e => {
       let {
         channel: t
@@ -117,4 +117,4 @@ function N() {
     animatedStyle: e
   })))
 }
-let C = Chunk647438.memo(N)
+let N = Chunk647438.memo(C)

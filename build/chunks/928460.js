@@ -1,78 +1,83 @@
-/** Chunk was on 91584 **/
-/** chunk id: 928460, original params: t,e,r (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 928460, original params: e,t,n (module,exports,re quire) **/
 "use strict";
+
+function r(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      i(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function i(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
 var Chunk401770 = require("./401770.js"),
   Chunk65183 = require("./65183.js"),
   Chunk581079 = require("./581079.js"),
-  a = (0, Chunk65183.Map)(),
-  u = 0;
+  l = (0, Chunk65183.Map)(),
+  c = 0;
 
-function s(t, e) {
-  console.warn("WARNING: " + t + ' will be deprecated soon!\nPlease use "' + e + '" instead.')
+function u(e, t) {
+  console.warn("WARNING: " + e + ' will be deprecated soon!\nPlease use "' + t + '" instead.')
 }
-var c = {
+var d = {
   getLastCreatedEntityKey: function() {
-    return s("DraftEntity.getLastCreatedEntityKey", "contentState.getLastCreatedEntityKey"), c.__getLastCreatedEntityKey()
+    return u("DraftEntity.getLastCreatedEntityKey", "contentState.getLastCreatedEntityKey"), d.__getLastCreatedEntityKey()
   },
-  create: function(t, e, r) {
-    return s("DraftEntity.create", "contentState.createEntity"), c.__create(t, e, r)
+  create: function(e, t, n) {
+    return u("DraftEntity.create", "contentState.createEntity"), d.__create(e, t, n)
   },
-  add: function(t) {
-    return s("DraftEntity.add", "contentState.addEntity"), c.__add(t)
+  add: function(e) {
+    return u("DraftEntity.add", "contentState.addEntity"), d.__add(e)
   },
-  get: function(t) {
-    return s("DraftEntity.get", "contentState.getEntity"), c.__get(t)
+  get: function(e) {
+    return u("DraftEntity.get", "contentState.getEntity"), d.__get(e)
   },
-  mergeData: function(t, e) {
-    return s("DraftEntity.mergeData", "contentState.mergeEntityData"), c.__mergeData(t, e)
+  mergeData: function(e, t) {
+    return u("DraftEntity.mergeData", "contentState.mergeEntityData"), d.__mergeData(e, t)
   },
-  replaceData: function(t, e) {
-    return s("DraftEntity.replaceData", "contentState.replaceEntityData"), c.__replaceData(t, e)
+  replaceData: function(e, t) {
+    return u("DraftEntity.replaceData", "contentState.replaceEntityData"), d.__replaceData(e, t)
   },
   __getLastCreatedEntityKey: function() {
-    return "" + u
+    return "" + c
   },
-  __create: function(t, e, r) {
-    return c.__add(new n({
-      type: t,
-      mutability: e,
-      data: r || {}
+  __create: function(e, t, n) {
+    return d.__add(new a({
+      type: e,
+      mutability: t,
+      data: n || {}
     }))
   },
-  __add: function(t) {
-    var e = "" + ++u;
-    return a = a.set(e, t), e
+  __add: function(e) {
+    var t = "" + ++c;
+    return l = l.set(t, e), t
   },
-  __get: function(t) {
-    var e = a.get(t);
-    return e || o(false), e
+  __get: function(e) {
+    var t = l.get(e);
+    return t || s(false), t
   },
-  __mergeData: function(t, e) {
-    var r = c.__get(t),
-      n = function(t) {
-        for (var e = 1; e < arguments.length; e++) {
-          var r = null != arguments[e] ? arguments[e] : {},
-            n = Object.keys(r);
-          "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(t) {
-            return Object.getOwnPropertyDescriptor(r, t).enumerable
-          }))), n.forEach(function(e) {
-            var n, i, o;
-            n = t, i = e, o = r[e], i in n ? Object.defineProperty(n, i, {
-              value: o,
-              enumerable: true,
-              configurable: true,
-              writable: true
-            }) : n[i] = o
-          })
-        }
-        return t
-      }({}, r.getData(), e),
-      i = r.set("data", n);
-    return a = a.set(t, i), i
+  __mergeData: function(e, t) {
+    var n = d.__get(e),
+      i = r({}, n.getData(), t),
+      a = n.set("data", i);
+    return l = l.set(e, a), a
   },
-  __replaceData: function(t, e) {
-    var r = c.__get(t).set("data", e);
-    return a = a.set(t, r), r
+  __replaceData: function(e, t) {
+    var n = d.__get(e).set("data", t);
+    return l = l.set(e, n), n
   }
 };
-module.exports = c
+module.exports = d

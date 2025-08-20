@@ -1,11 +1,11 @@
-/** Chunk was on 17768 **/
+/** Chunk was on 2026 **/
 /** chunk id: 219778, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  n: () => l
+  n: () => o
 });
 var Chunk647438 = require("./647438.js"),
   Chunk180650 = require("./180650.js");
-let i = {
+let l = {
     [Chunk180650.T.AESPA]: {
       responsive: true,
       backgroundStyle: "linear-gradient(0deg,rgba(40, 8, 120, 1) 0%,rgba(13, 8, 111, 1) 15%,rgba(11, 2, 60, 1) 50%,rgba(6, 1, 21, 1) 100%)"
@@ -16,13 +16,13 @@ let i = {
       hideSideShadow: true
     }
   },
-  o = 12633 == require.j ? {
+  a = 12633 == require.j ? {
     responsive: true,
     backgroundStyle: true,
     hideSideShadow: false
   } : null,
-  l = e => (0, r.useMemo)(() => {
-    let t = null != e ? i[e] : null;
+  o = e => (0, r.useMemo)(() => {
+    let t = null != e ? l[e] : null;
     return null != t ? function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -40,5 +40,5 @@ let i = {
         })
       }
       return e
-    }({}, o, t) : o
+    }({}, a, t) : a
   }, [e])

@@ -18,56 +18,56 @@ function A(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let N = Chunk981631.QZA.CLOSED,
-  C = {};
+let C = Chunk981631.QZA.CLOSED,
+  N = {};
 
 function R() {
-  N = Chunk981631.QZA.OPEN, C = {}
+  C = Chunk981631.QZA.OPEN, N = {}
 }
 
 function P() {
-  N = Chunk981631.QZA.CLOSED, C = {}
+  C = Chunk981631.QZA.CLOSED, N = {}
 }
 
 function w() {
-  N = Chunk981631.QZA.SUBMITTING, C = {}
+  C = Chunk981631.QZA.SUBMITTING, N = {}
 }
 
 function D(e) {
   var t;
-  if (N !== S.QZA.SUBMITTING) returnfalse;
-  N = S.QZA.OPEN, C = null != (t = e.errors) ? t : {}
+  if (C !== S.QZA.SUBMITTING) returnfalse;
+  C = S.QZA.OPEN, N = null != (t = e.errors) ? t : {}
 }
 
-function L(e) {
+function x(e) {
   let {
     section: t
   } = e;
   return t === S.oAB.ACCOUNT && R()
 }
 
-function x(e) {
+function L(e) {
   let {
     avatar: t
   } = e;
   r = t, g = true
 }
 
-function M(e) {
+function j(e) {
   let {
     globalName: t
   } = e;
   i = t
 }
 
-function k(e) {
+function M(e) {
   let {
     legacyUsernameDisabled: t
   } = e;
   _ = t
 }
 
-function j(e) {
+function k(e) {
   let {
     avatarDecoration: t
   } = e;
@@ -95,21 +95,21 @@ function B(e) {
   (null == t ? true : t.type) === v.Z.PROFILE_EFFECT ? (E = null, b = null == t ? true : t.id) : (null == t ? true : t.type) === v.Z.AVATAR_DECORATION && (b = null, E = t)
 }
 
-function V(e) {
+function Z(e) {
   let {
     banner: t
   } = e;
   l = t
 }
 
-function F(e) {
+function V(e) {
   let {
     bio: t
   } = e;
   c = t
 }
 
-function Z(e) {
+function F(e) {
   let {
     pronouns: t
   } = e;
@@ -193,11 +193,11 @@ function ee() {
 }
 
 function et() {
-  C = {}
+  N = {}
 }
 
 function en() {
-  er(), ei(), es(), el(), C = {}
+  er(), ei(), es(), el(), N = {}
 }
 
 function er() {
@@ -229,10 +229,10 @@ function ec() {
 }
 class eu extends(O = Chunk442837.ZP.Store) {
   getFormState() {
-    return N
+    return C
   }
   getErrors() {
-    return C
+    return N
   }
   showNotice() {
     return true !== r || true !== l || true !== c || true !== u || true !== d || true !== f || true !== a || true !== o || true !== i || true !== s || true !== _ || true !== p || true !== h
@@ -317,21 +317,21 @@ let ed = new eu(Chunk570140.Z, {
   USER_SETTINGS_ACCOUNT_INIT: R,
   USER_SETTINGS_MODAL_INIT: R,
   USER_SETTINGS_ACCOUNT_SUBMIT_SUCCESS: R,
-  USER_SETTINGS_MODAL_SET_SECTION: L,
+  USER_SETTINGS_MODAL_SET_SECTION: x,
   USER_SETTINGS_ACCOUNT_CLOSE: P,
   USER_SETTINGS_ACCOUNT_RESET_AND_CLOSE_FORM: ec,
   USER_SETTINGS_ACCOUNT_SUBMIT: w,
   USER_SETTINGS_ACCOUNT_SUBMIT_FAILURE: D,
-  USER_SETTINGS_ACCOUNT_SET_PENDING_AVATAR: x,
-  USER_SETTINGS_ACCOUNT_SET_PENDING_GLOBAL_NAME: M,
-  USER_SETTINGS_ACCOUNT_SET_PENDING_LEGACY_USERNAME_DISABLED: k,
-  USER_SETTINGS_ACCOUNT_SET_PENDING_AVATAR_DECORATION: j,
+  USER_SETTINGS_ACCOUNT_SET_PENDING_AVATAR: L,
+  USER_SETTINGS_ACCOUNT_SET_PENDING_GLOBAL_NAME: j,
+  USER_SETTINGS_ACCOUNT_SET_PENDING_LEGACY_USERNAME_DISABLED: M,
+  USER_SETTINGS_ACCOUNT_SET_PENDING_AVATAR_DECORATION: k,
   USER_SETTINGS_ACCOUNT_SET_PENDING_NAMEPLATE: U,
   USER_SETTINGS_ACCOUNT_SET_SINGLE_TRY_IT_OUT_COLLECTIBLES_ITEM: B,
   USER_SETTINGS_ACCOUNT_SET_PENDING_PROFILE_EFFECT_ID: G,
-  USER_SETTINGS_ACCOUNT_SET_PENDING_BANNER: V,
-  USER_SETTINGS_ACCOUNT_SET_PENDING_BIO: F,
-  USER_SETTINGS_ACCOUNT_SET_PENDING_PRONOUNS: Z,
+  USER_SETTINGS_ACCOUNT_SET_PENDING_BANNER: Z,
+  USER_SETTINGS_ACCOUNT_SET_PENDING_BIO: V,
+  USER_SETTINGS_ACCOUNT_SET_PENDING_PRONOUNS: F,
   USER_SETTINGS_ACCOUNT_SET_PENDING_ACCENT_COLOR: H,
   USER_SETTINGS_ACCOUNT_SET_PENDING_THEME_COLORS: Y,
   USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_AVATAR: q,

@@ -1,4 +1,4 @@
-/** Chunk was on 69003 **/
+/** Chunk was on 91488 **/
 /** chunk id: 603274, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => N
@@ -30,9 +30,9 @@ var Chunk120356 = require("./120356.js"),
 
 function S(e, t) {
   return 0 === t.length ? null : (0, r.jsxs)("div", {
-    className: E.row,
+    className: x.row,
     children: [(0, r.jsx)(e, {
-      className: E.activityIcon,
+      className: x.activityIcon,
       color: "currentColor"
     }), (0, r.jsx)(p.ZP, {
       guildId: true,
@@ -42,11 +42,11 @@ function S(e, t) {
   })
 }
 
-function P() {
+function I() {
   let e = (0, Chunk442837.Wu)([Chunk853856.Z, Chunk592125.Z], () => Chunk709054.default.keys(Chunk853856.Z.getFavoriteChannels()).map(e => m.Z.getChannel(e)).filter(Chunk823379.lm)),
     t = module.map(e => e.id),
-    n = module.filter(e => e.type === j.d4z.GUILD_VOICE),
-    i = module.filter(e => e.type === j.d4z.GUILD_STAGE_VOICE).map(e => e.id),
+    n = module.filter(e => e.type === v.d4z.GUILD_VOICE),
+    i = module.filter(e => e.type === v.d4z.GUILD_STAGE_VOICE).map(e => e.id),
     l = (0, Chunk442837.Wu)([Chunk938475.ZP], () => a().flatMap(require, e => O.ZP.getVoiceStatesForChannel(e).map(e => {
       let {
         user: t
@@ -64,8 +64,8 @@ function P() {
       for (let t of Chunk120356) e += Chunk565799.Z.getParticipantCount(exports, Chunk501655.pV.AUDIENCE);
       return module
     }),
-    x = (0, Chunk442837.Wu)([Chunk199902.Z], () => Chunk199902.Z.getAllApplicationStreams().filter(e => t.includes(e.channelId)).map(e => e.ownerId), [exports]),
-    P = (0, Chunk442837.Wu)([Chunk317381.ZP], () => {
+    E = (0, Chunk442837.Wu)([Chunk199902.Z], () => Chunk199902.Z.getAllApplicationStreams().filter(e => t.includes(e.channelId)).map(e => e.ownerId), [exports]),
+    I = (0, Chunk442837.Wu)([Chunk317381.ZP], () => {
       let e = Chunk317381.ZP.getEmbeddedActivitiesByChannel(),
         n = [];
       for (let l of exports) {
@@ -74,9 +74,9 @@ function P() {
       }
       return require
     }, [exports]),
-    I = (0, Chunk442837.Wu)([Chunk594174.default], () => P.map(e => b.default.getUser(e)), [P]),
+    P = (0, Chunk442837.Wu)([Chunk594174.default], () => I.map(e => b.default.getUser(e)), [I]),
     N = (0, Chunk442837.Wu)([Chunk594174.default], () => Chunk78480.map(e => b.default.getUser(e)), [Chunk78480]),
-    w = S(Chunk481060.gj8, l.filter(e => !x.includes(e.id) && !P.includes(e.id))),
+    w = S(Chunk481060.gj8, l.filter(e => !E.includes(e.id) && !I.includes(e.id))),
     Z = 0 === Chunk392711.length ? null : (0, Chunk951288.jsxs)("div", {
       className: Chunk132789.row,
       children: [(0, Chunk951288.jsx)(Chunk481060.ewx, {
@@ -100,7 +100,7 @@ function P() {
         })]
       })]
     }),
-    T = S(Chunk481060.hGI, N.filter(e => null != e && !P.includes(e.id))),
+    T = S(Chunk481060.hGI, N.filter(e => null != e && !I.includes(e.id))),
     {
       enabled: A
     } = Chunk456100.c.useExperiment({
@@ -108,13 +108,13 @@ function P() {
     }, {
       autoTrackExposure: true
     }),
-    R = S(A ? Chunk481060.iWm : Chunk481060.nG3, I);
+    R = S(A ? Chunk481060.iWm : Chunk481060.nG3, P);
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [Z, w, T, R]
   })
 }
 
-function I() {
+function P() {
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsx)("div", {
       className: l()(Chunk132789.row, Chunk132789.rowGuildName),
@@ -122,7 +122,7 @@ function I() {
         className: l()(Chunk132789.guildNameText, Chunk132789.guildNameTextLimitedSize),
         children: Chunk388032.intl.string(Chunk388032.t.wMWycn)
       })
-    }), (0, Chunk951288.jsx)(P, {})]
+    }), (0, Chunk951288.jsx)(I, {})]
   })
 }
 
@@ -136,9 +136,9 @@ function N(e) {
     hideOnClick: true,
     spacing: 12,
     position: "right",
-    text: (0, r.jsx)(I, {}),
+    text: (0, r.jsx)(P, {}),
     "aria-label": t,
-    tooltipClassName: x.listItemTooltip,
+    tooltipClassName: E.listItemTooltip,
     onTooltipShow: n,
     children: e => {
       var t, n;

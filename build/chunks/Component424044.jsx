@@ -1,7 +1,7 @@
 /** Chunk was on 27978 **/
 /** chunk id: 424044, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => E
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,51 +20,51 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk197571 = require("./197571.js");
 Chunk442837.ZP.initialize();
-let b = e => {
+let E = e => {
   let {
     location: t
-  } = e, n = (0, l.e7)([f.default], () => f.default.isAuthenticated()), b = (0, l.e7)([d.Z], () => d.Z.hasLoadedExperiments), v = (0, p.oK)("RSL - Landing Page"), [E, j] = i.useState(false), [I, y] = i.useState(_.intl.string(_.t["9exy+f"])), [O, N] = i.useState(true), S = e => {
+  } = e, n = (0, l.e7)([g.default], () => g.default.isAuthenticated()), E = (0, l.e7)([d.Z], () => d.Z.hasLoadedExperiments), v = (0, p.oK)("RSL - Landing Page"), [j, b] = i.useState(false), [I, O] = i.useState(_.intl.string(_.t["9exy+f"])), [N, y] = i.useState(true), S = e => {
     switch (e) {
-      case g.evJ.INVALID_FORM_BODY:
-      case g.evJ.DSA_RSL_REPORT_NOT_FOUND:
-        y(_.intl.string(_.t.bzXDfX));
+      case f.evJ.INVALID_FORM_BODY:
+      case f.evJ.DSA_RSL_REPORT_NOT_FOUND:
+        O(_.intl.string(_.t.bzXDfX));
         break;
-      case g.evJ.DSA_RSL_ALREADY_REQUESTED:
-        y(_.intl.string(_.t.rV00ws));
+      case f.evJ.DSA_RSL_ALREADY_REQUESTED:
+        O(_.intl.string(_.t.rV00ws));
         break;
-      case g.evJ.DSA_RSL_LIMITED_TIME:
-        y(_.intl.string(_.t["0dI29v"]));
+      case f.evJ.DSA_RSL_LIMITED_TIME:
+        O(_.intl.string(_.t["0dI29v"]));
         break;
-      case g.evJ.DSA_RSL_REPORT_INELIGIBLE:
-        y(_.intl.string(_.t["RGa/GR"]));
+      case f.evJ.DSA_RSL_REPORT_INELIGIBLE:
+        O(_.intl.string(_.t["RGa/GR"]));
         break;
       default:
-        y(_.intl.string(_.t["0QLzfn"]))
+        O(_.intl.string(_.t["0QLzfn"]))
     }
   };
   return i.useEffect(() => {
-    n ? (N(true), s.k({
+    n ? (y(true), a.k({
       withAnalyticsToken: true
-    }).then(() => N(false)).catch(() => N(false))) : N(false)
+    }).then(() => y(false)).catch(() => y(false))) : y(false)
   }, [n]), i.useEffect(() => {
-    b || v || o.Z.getExperiments()
-  }, [b, v]), i.useEffect(() => {
+    E || v || o.Z.getExperiments()
+  }, [E, v]), i.useEffect(() => {
     let e = async e => {
       var t, n;
       try {
         let n = null != e ? await (0, h.hs)(e) : true;
-        null != n ? y(_.intl.string(_.t.e6mZMj)) : S(null == (t = n.body) ? true : t.code)
+        null != n ? O(_.intl.string(_.t.e6mZMj)) : S(null == (t = n.body) ? true : t.code)
       } catch (e) {
         S(null == (n = e.body) ? true : n.code)
       } finally {
-        j(false)
+        b(false)
       }
     };
-    j(true), e((0, c.Z)(t)), (0, m.e)("report_second_look")
-  }, [t]), v && !O && (0, r.jsxs)(u.ZP, {
+    b(true), e((0, c.Z)(t)), (0, m.e)("report_second_look")
+  }, [t]), v && !N && (0, r.jsxs)(u.ZP, {
     children: [(0, r.jsx)(u.Dx, {
       className: x.marginBottom8,
       children: I
-    }), E && (0, r.jsx)(a.$jN, {})]
+    }), j && (0, r.jsx)(s.$jN, {})]
   })
 }

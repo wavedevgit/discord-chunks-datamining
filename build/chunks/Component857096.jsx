@@ -37,7 +37,7 @@ function T(e) {
     platform: y.S4.DESKTOP
   };
 
-  function N(e) {
+  function C(e) {
     let {
       onActive: t,
       onForceIdle: i,
@@ -84,7 +84,7 @@ function T(e) {
         noBorder: !T,
         children: [(0, r.jsx)("div", {
           className: "theme-dark",
-          children: N({
+          children: C({
             onActive: o,
             onForceIdle: f,
             idle: i

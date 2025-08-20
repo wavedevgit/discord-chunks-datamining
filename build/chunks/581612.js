@@ -1,21 +1,22 @@
-/** Chunk was on 66181 **/
-/** chunk id: 581612, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 581612, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => s,
-  q: () => a
+  Z: () => a,
+  q: () => o
 });
 var Chunk570140 = require("./570140.js"),
   Chunk91311 = require("./91311.js");
 
-function s(e, t) {
-  let n = "boolean" == typeof t ? t : !r.Z.get(e);
-  i.Z.dispatch({
+function a(e, t) {
+  let n = "boolean" == typeof t ? t : !i.Z.get(e);
+  r.Z.dispatch({
     type: "DEV_TOOLS_DESIGN_TOGGLE_WEB_SET",
     toggle: e,
     value: n
   })
 }
 
-function a() {
-  for (let e in Chunk91311.Z.enabled()) s(module, false)
+function o() {
+  for (let e in Chunk91311.Z.enabled()) a(module, false)
 }

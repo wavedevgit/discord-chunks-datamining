@@ -25,15 +25,15 @@ Chunk98405({
   proto: true
 }, {
   replaceAll: function(e, t) {
-    var n, r, a, p, v, I, T, S, A, N = o(this),
-      C = 0,
+    var n, r, a, p, v, I, T, S, A, C = o(this),
+      N = 0,
       R = "";
     if (!l(e)) {
       if ((n = c(e)) && !~E(u(o(f(e))), "g")) throw new g("`.replaceAll` does not allow non-global regexes");
-      if (r = d(e, m)) return i(r, e, N, t);
-      if (h && n) return b(u(N), e, t)
+      if (r = d(e, m)) return i(r, e, C, t);
+      if (h && n) return b(u(C), e, t)
     }
-    for (a = u(N), p = u(e), (v = s(t)) || (t = u(t)), T = O(1, I = p.length), S = E(a, p); false !== S;) A = v ? u(t(p, S, a)) : _(p, a, S, [], true, t), R += y(a, C, S) + A, C = S + I, S = S + T > a.length ? false : E(a, p, S + T);
-    return C < a.length && (R += y(a, C)), R
+    for (a = u(C), p = u(e), (v = s(t)) || (t = u(t)), T = O(1, I = p.length), S = E(a, p); false !== S;) A = v ? u(t(p, S, a)) : _(p, a, S, [], true, t), R += y(a, N, S) + A, N = S + I, S = S + T > a.length ? false : E(a, p, S + T);
+    return N < a.length && (R += y(a, N)), R
   }
 })

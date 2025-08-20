@@ -1,9 +1,10 @@
-/** Chunk was on 26434 **/
-/** chunk id: 495437, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 495437, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   EB: () => o,
-  Je: () => s,
-  cf: () => a,
+  Je: () => l,
+  cf: () => s,
   mh: () => c
 });
 var Chunk570140 = require("./570140.js"),
@@ -15,7 +16,7 @@ let o = async e => {
     guildId: e
   });
   try {
-    let t = await l.uV(e);
+    let t = await a.uV(e);
     r.Z.dispatch({
       type: "GUILD_PRODUCTS_FETCH_SUCCESS",
       guildId: e,
@@ -27,13 +28,13 @@ let o = async e => {
       guildId: e
     })
   }
-}, a = async (e, t) => {
+}, s = async (e, t) => {
   r.Z.dispatch({
     type: "GUILD_PRODUCT_FETCH",
     productId: t
   });
   try {
-    let n = await l.p9(e, t);
+    let n = await a.p9(e, t);
     return r.Z.dispatch({
       type: "GUILD_PRODUCT_FETCH_SUCCESS",
       product: n
@@ -46,15 +47,15 @@ let o = async e => {
     }), e
   }
 };
-async function s(e, t, n) {
-  let i = await l.Je(e, t, n);
+async function l(e, t, n) {
+  let i = await a.Je(e, t, n);
   return r.Z.dispatch({
     type: "GUILD_PRODUCT_UPDATE",
     product: i
   }), i
 }
 async function c(e, t) {
-  return await l.mh(e, t), r.Z.dispatch({
+  return await a.mh(e, t), r.Z.dispatch({
     type: "GUILD_PRODUCT_DELETE",
     productId: t
   }), true

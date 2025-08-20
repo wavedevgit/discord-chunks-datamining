@@ -102,8 +102,8 @@ function O(e) {
     onRequestOpen: T,
     onRequestClose: S,
     onClosePopout: A,
-    shouldShow: N,
-    shouldPreload: C = true
+    shouldShow: C,
+    shouldPreload: N = true
   } = e, R = m(e, ["children", "user", "currentUser", "guildId", "channelId", "messageId", "roleId", "disableUserProfileLink", "newAnalyticsLocations", "appContext", "avatarUrl", "preload", "renderPopout", "onRequestOpen", "onRequestClose", "onClosePopout", "shouldShow", "shouldPreload"]);
   let P = i.useRef(true),
     w = i.useCallback(() => null != v ? v() : (0, l.Z)(n.id, null != O ? O : n.getAvatarURL(s, E), {
@@ -130,8 +130,8 @@ function O(e) {
     })), [n, a, I, s, d, p, f, g, b, y, A]);
   return (0, r.jsx)(o.yRy, h(_({
     popoutKey: u.Tg,
-    shouldShow: N,
-    preload: C ? w : true,
+    shouldShow: C,
+    preload: N ? w : true,
     renderPopout: D,
     onRequestOpen: T,
     onRequestClose: S

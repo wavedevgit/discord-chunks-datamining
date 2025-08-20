@@ -1,15 +1,15 @@
 /** Chunk was on 36605 **/
 /** chunk id: 489813, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  CA: () => u,
-  Ih: () => d,
+  CA: () => d,
+  Ih: () => u,
   PU: () => m,
   hK: () => c
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk692547 = require("./692547.js"),
   Chunk481060 = require("./481060.js"),
   Chunk690663 = require("./690663.js");
@@ -20,9 +20,9 @@ function c(e) {
     children: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: a.questionContainer,
-    children: [(0, r.jsx)(s.Text, {
-      className: a.questionTitle,
+    className: o.questionContainer,
+    children: [(0, r.jsx)(a.Text, {
+      className: o.questionTitle,
       variant: "text-md/normal",
       color: "header-primary",
       children: t
@@ -30,15 +30,15 @@ function c(e) {
   })
 }
 
-function u(e) {
+function d(e) {
   let {
     title: t,
     children: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: a.disabledQuestionContainer,
-    children: [(0, r.jsx)(s.Text, {
-      className: a.questionTitle,
+    className: o.disabledQuestionContainer,
+    children: [(0, r.jsx)(a.Text, {
+      className: o.questionTitle,
       variant: "text-sm/medium",
       color: "text-muted",
       children: t
@@ -46,34 +46,34 @@ function u(e) {
   })
 }
 
-function d(e) {
+function u(e) {
   let {
     icon: t,
     text: n,
-    meetsRequirement: i
+    meetsRequirement: l
   } = e;
   return (0, r.jsxs)("div", {
-    className: a.requirementContainer,
+    className: o.requirementContainer,
     children: [(0, r.jsx)(t, {
-      className: a.requirementIcon,
+      className: o.requirementIcon,
       height: 16,
       width: 16,
       size: "custom",
       color: "currentColor"
-    }), (0, r.jsx)(s.Text, {
-      className: a.requirementText,
+    }), (0, r.jsx)(a.Text, {
+      className: o.requirementText,
       variant: "text-sm/medium",
       children: n
-    }), i ? (0, r.jsx)(s.owK, {
+    }), l ? (0, r.jsx)(a.owK, {
       size: "sm",
       color: "currentColor",
-      className: a.requirementSuccess,
-      secondaryColor: o.Z.colors.WHITE.css
-    }) : (0, r.jsx)(s.k$p, {
+      className: o.requirementSuccess,
+      secondaryColor: s.Z.colors.WHITE.css
+    }) : (0, r.jsx)(a.k$p, {
       size: "sm",
       color: "currentColor",
-      className: a.requirementFailure,
-      secondaryColor: o.Z.colors.WHITE.css
+      className: o.requirementFailure,
+      secondaryColor: s.Z.colors.WHITE.css
     })]
   })
 }
@@ -82,35 +82,35 @@ function m(e) {
   let {
     icon: t,
     text: n,
-    footnote: i,
+    footnote: l,
     meetsRequirement: c,
-    children: u,
-    className: d
+    children: d,
+    className: u
   } = e;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: l()(a.requirementContainer, d),
+      className: i()(o.requirementContainer, u),
       children: [(0, r.jsx)(t, {
-        className: a.requirementIcon,
+        className: o.requirementIcon,
         height: 20,
         width: 20,
         size: "custom",
         color: "currentColor"
-      }), (0, r.jsx)(s.Text, {
-        className: a.requirementText,
+      }), (0, r.jsx)(a.Text, {
+        className: o.requirementText,
         variant: "text-md/normal",
         children: n
-      }), c ? (0, r.jsx)(s.owK, {
+      }), c ? (0, r.jsx)(a.owK, {
         size: "md",
         color: "currentColor",
-        className: a.requirementSuccess,
-        secondaryColor: o.Z.colors.WHITE.css
-      }) : u]
-    }), null != i && (0, r.jsx)(s.Text, {
+        className: o.requirementSuccess,
+        secondaryColor: s.Z.colors.WHITE.css
+      }) : d]
+    }), null != l && (0, r.jsx)(a.Text, {
       color: "header-secondary",
-      className: a.footnote,
+      className: o.footnote,
       variant: "text-xs/normal",
-      children: i
+      children: l
     })]
   })
 }

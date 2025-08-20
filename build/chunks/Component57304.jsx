@@ -1,4 +1,4 @@
-/** Chunk was on 36499 **/
+/** Chunk was on 5665 **/
 /** chunk id: 57304, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -55,17 +55,17 @@ let _ = function(e) {
   } = e, n = (0, l.e7)([u.Z, p.default], () => {
     let e = p.default.getCurrentUser();
     return null == e || (0, c.aC)(t) && (!e.nsfwAllowed || !u.Z.didAgree(t.getGuildId()))
-  }, [t]), [_, C] = i.useState(false), x = (0, l.e7)([d.ZP], () => d.ZP.hasUnreadPins(t.id), [t]), v = (0, s.Aq)(), j = i.useRef(null), O = i.useCallback(() => {
+  }, [t]), [_, C] = i.useState(false), x = (0, l.e7)([d.ZP], () => d.ZP.hasUnreadPins(t.id), [t]), v = (0, s.Aq)(), O = i.useRef(null), j = i.useCallback(() => {
     n || C(e => !e)
   }, [n]);
 
   function E(e) {
     (null == e ? true : e.shiftKey) || v.dispatch(m.CkL.POPOUT_CLOSE)
   }
-  return i.useEffect(() => (h.S.subscribe(m.CkL.TOGGLE_CHANNEL_PINS, O), () => {
-    h.S.unsubscribe(m.CkL.TOGGLE_CHANNEL_PINS, O)
-  }), [O]), (0, r.jsx)(a.yRy, {
-    targetElementRef: j,
+  return i.useEffect(() => (h.S.subscribe(m.CkL.TOGGLE_CHANNEL_PINS, j), () => {
+    h.S.unsubscribe(m.CkL.TOGGLE_CHANNEL_PINS, j)
+  }), [j]), (0, r.jsx)(a.yRy, {
+    targetElementRef: O,
     shouldShow: _,
     animation: a.yRy.Animation.NONE,
     position: "bottom",
@@ -85,8 +85,8 @@ let _ = function(e) {
         isShown: i
       } = t;
       return (0, r.jsx)(f.JO, y(b({}, e), {
-        ref: j,
-        onClick: O,
+        ref: O,
+        onClick: j,
         tooltip: i ? null : g.intl.string(g.t["mp1N//"]),
         icon: a.qQX,
         iconSize: 20,

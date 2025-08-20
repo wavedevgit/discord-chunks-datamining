@@ -71,7 +71,7 @@ function ec(e) {
     onResize: a,
     onResizeEnd: r
   } = e, l = (0, d.Z)({
-    minDimension: j.h,
+    minDimension: g.h,
     resizableDomNodeRef: t,
     onElementResize: a,
     onElementResizeEnd: r,
@@ -107,9 +107,9 @@ function ed(e) {
       id: "dispatcher",
       name: "Dispatcher",
       group: er.v0.EVENTS,
-      render: () => (0, n.jsx)(E.Z, {})
+      render: () => (0, n.jsx)(T.Z, {})
     }];
-    return v.Z.isDeveloper && (e.push({
+    return b.Z.isDeveloper && (e.push({
       id: "shop",
       name: "Shop",
       group: er.v0.BILLING,
@@ -138,7 +138,7 @@ function ed(e) {
       id: "overlay",
       name: "Overlay v3",
       group: er.v0.GAMES,
-      render: () => (0, n.jsx)(z.Z, {})
+      render: () => (0, n.jsx)(U.Z, {})
     }), e.push({
       id: "slayer_sdk",
       name: "Slayer SDK",
@@ -163,7 +163,7 @@ function ed(e) {
       id: "design_toggles",
       name: "Design Toggles",
       group: er.v0.UI,
-      render: () => (0, n.jsx)(O.Z, {})
+      render: () => (0, n.jsx)(E.Z, {})
     }), e.push({
       id: "appearance_randomizer",
       name: "Appearance Randomizer",
@@ -173,19 +173,19 @@ function ed(e) {
       id: "overlays",
       name: "Dev Overlays",
       group: er.v0.DEVELOPMENT,
-      render: () => (0, n.jsx)(w.Z, {
+      render: () => (0, n.jsx)(I.Z, {
         devSettingsCategory: _.zU.OVERLAYS
       })
     }), e.push({
       id: "messaging",
       name: "Messaging",
       group: er.v0.USERS,
-      render: () => (0, n.jsx)(U.Z, {})
+      render: () => (0, n.jsx)(z.Z, {})
     }), e.push({
       id: "reporting",
       name: "Reporting",
       group: er.v0.EXPERIMENTS,
-      render: () => (0, n.jsx)(w.Z, {
+      render: () => (0, n.jsx)(I.Z, {
         devSettingsCategory: _.zU.REPORTING
       })
     }), e.push({
@@ -213,7 +213,7 @@ function ed(e) {
       name: "Widgets",
       group: er.v0.USERS,
       render: () => (0, n.jsx)(ea.Z, {})
-    }), v.Z.isDeveloper && (e.push({
+    }), b.Z.isDeveloper && (e.push({
       id: "content_inventory",
       name: "Content Inventory",
       group: er.v0.USERS,
@@ -227,7 +227,7 @@ function ed(e) {
       id: "dcf",
       name: "DCF",
       group: er.v0.EXPERIMENTS,
-      render: () => (0, n.jsx)(T.Z, {})
+      render: () => (0, n.jsx)(O.Z, {})
     }), e.push({
       id: "perks",
       name: "Perks",
@@ -257,7 +257,7 @@ function ed(e) {
       id: "fractional_nitro",
       name: "Fractional Nitro",
       group: er.v0.PREMIUM,
-      render: () => (0, n.jsx)(I.Z, {})
+      render: () => (0, n.jsx)(w.Z, {})
     })), e.push({
       id: "gifting_intent",
       name: "Gifting Intent",
@@ -290,9 +290,9 @@ function ed(e) {
     selectedTabId: d
   } = (0, er.ZP)({
     tabs: l,
-    initialSelectedTabId: null != (t = j.Z.lastOpenTabId) ? t : true,
+    initialSelectedTabId: null != (t = g.Z.lastOpenTabId) ? t : true,
     onChangeTab: e => {
-      (0, g.Qh)({
+      (0, j.Qh)({
         lastOpenTabId: e
       })
     }
@@ -311,7 +311,7 @@ function ed(e) {
           icon: c.rgF,
           tooltip: "Pop Out",
           onClick: () => {
-            (0, b.bA)(el.KJ3.DEVTOOLS_POPOUT, () => (0, n.jsx)(p.Z, {
+            (0, v.bA)(el.KJ3.DEVTOOLS_POPOUT, () => (0, n.jsx)(p.Z, {
               windowKey: el.KJ3.DEVTOOLS_POPOUT,
               title: "DevTools",
               withTitleBar: true,
@@ -327,7 +327,7 @@ function ed(e) {
         }), (0, n.jsx)(x.ZP.Icon, {
           icon: c.Dio,
           tooltip: ei.intl.string(ei.t.cpT0Cg),
-          onClick: g.SO
+          onClick: j.SO
         })]
       }),
       children: [(0, n.jsx)(x.ZP.Icon, {
@@ -346,7 +346,7 @@ function eu() {
   let e = Chunk647438.useRef(null),
     t = (0, Chunk442837.e7)([Chunk19759.Z], () => Chunk19759.Z.sidebarWidth),
     [a, l] = Chunk647438.useState(null),
-    i = Chunk647438.useCallback(e => (0, g.Qh)({
+    i = Chunk647438.useCallback(e => (0, j.Qh)({
       sidebarWidth: e
     }), []);
   return (Chunk647438.useEffect(() => {

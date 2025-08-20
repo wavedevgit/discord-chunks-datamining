@@ -1,12 +1,13 @@
-/** Chunk was on 37447 **/
-/** chunk id: 543433, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 543433, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  w: () => C
+  w: () => b
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk772848 = require("./772848.js"),
   Chunk481060 = require("./481060.js"),
   Chunk626135 = require("./626135.js"),
@@ -18,89 +19,94 @@ var Chunk120356 = require("./120356.js"),
   Chunk598272 = require("./598272.js"),
   Chunk87181 = require("./87181.js");
 
-function x(e) {
+function m(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function g(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      m(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function E(e) {
   let {
     questId: t,
     questContent: n,
-    fullWidth: o
-  } = e;
+    fullWidth: i
+  } = e, a = () => {
+    (0, u.navigateToQuestHome)({
+      fromContent: n
+    }), l.default.track(f.rMx.QUEST_CONTENT_CLICKED, g({
+      quest_id: t,
+      click_id: (0, o.Z)(),
+      cta_name: c.jZ.VIEW_QUESTS,
+      is_targeted: false
+    }, (0, c.mH)(n)))
+  };
   return (0, r.jsx)("div", {
-    className: h.buttonContainer,
-    children: (0, r.jsx)(a.zxk, {
-      fullWidth: o,
+    className: p.buttonContainer,
+    children: (0, r.jsx)(s.zxk, {
+      fullWidth: i,
       variant: "primary",
-      onClick: () => {
-        (0, c.navigateToQuestHome)({
-          fromContent: n
-        }), l.default.track(m.rMx.QUEST_CONTENT_CLICKED, function(e) {
-          for (var t = 1; t < arguments.length; t++) {
-            var n = null != arguments[t] ? arguments[t] : {},
-              r = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-              return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), r.forEach(function(t) {
-              var r;
-              r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: true,
-                configurable: true,
-                writable: true
-              }) : e[t] = r
-            })
-          }
-          return e
-        }({
-          quest_id: t,
-          click_id: (0, i.Z)(),
-          cta_name: u.jZ.VIEW_QUESTS,
-          is_targeted: false
-        }, (0, u.mH)(n)))
-      },
-      text: p.intl.string(p.t.GURBQk)
+      onClick: a,
+      text: _.intl.string(_.t.GURBQk)
     })
   })
 }
 
-function C(e) {
+function b(e) {
   let {
     questId: t,
     fallbackReason: n,
-    bodyText: o,
-    questContent: i
+    bodyText: i,
+    questContent: o
   } = e, {
     containerRef: l,
-    size: c
+    size: u
   } = (0, d.h)();
-  return (0, u.Zk)(n, t), (0, r.jsxs)("div", {
+  return (0, c.Zk)(n, t), (0, r.jsxs)("div", {
     ref: e => {
       l.current = e
     },
-    className: s()(h.container, {
-      [h.wide]: "lg" === c,
-      [h.tall]: "lg" !== c
+    className: a()(p.container, {
+      [p.wide]: "lg" === u,
+      [p.tall]: "lg" !== u
     }),
     children: [(0, r.jsxs)("div", {
-      className: h.contentContainer,
-      children: [(0, r.jsx)(a.X6q, {
-        variant: "lg" === c ? "heading-xl/bold" : "heading-lg/bold",
+      className: p.contentContainer,
+      children: [(0, r.jsx)(s.X6q, {
+        variant: "lg" === u ? "heading-xl/bold" : "heading-lg/bold",
         color: "header-primary",
-        children: p.intl.string(p.t.vnP31d)
-      }), (0, r.jsx)(a.Text, {
-        variant: "lg" === c ? "text-sm/medium" : "text-xs/medium",
+        children: _.intl.string(_.t.vnP31d)
+      }), (0, r.jsx)(s.Text, {
+        variant: "lg" === u ? "text-sm/medium" : "text-xs/medium",
         color: "text-default",
-        className: h.__invalid_mobileWebCopy,
-        children: o
-      }), (0, r.jsx)(x, {
+        className: p.__invalid_mobileWebCopy,
+        children: i
+      }), (0, r.jsx)(E, {
         questId: t,
-        questContent: i,
-        fullWidth: "lg" !== c
+        questContent: o,
+        fullWidth: "lg" !== u
       })]
     }), (0, r.jsx)("div", {
-      className: h.imgContainer,
+      className: p.imgContainer,
       children: (0, r.jsx)("img", {
-        src: g,
+        src: h,
         alt: "",
-        className: h.missingQuestImage
+        className: p.missingQuestImage
       })
     })]
   })

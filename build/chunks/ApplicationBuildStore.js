@@ -35,41 +35,41 @@ let v = new Set,
   T = new Set,
   S = {},
   A = new Set,
-  N = {},
-  C = 10 * Chunk70956.Z.Millis.MINUTE,
+  C = {},
+  N = 10 * Chunk70956.Z.Millis.MINUTE,
   R = 6 * Chunk70956.Z.Millis.HOUR,
   P = 10 * Chunk70956.Z.Millis.MINUTE,
   w = new Chunk846519.V7;
 
 function D(e) {
-  w.start(e + Math.random() * C, c.o)
-}
-
-function L() {
-  return !Chunk695346.bm.getSetting() && (D(R), x())
+  w.start(e + Math.random() * N, c.o)
 }
 
 function x() {
+  return !Chunk695346.bm.getSetting() && (D(R), L())
+}
+
+function L() {
   if (!(0, Chunk804739.Q)() || Chunk695346.bm.getSetting()) returnfalse;
   let e = Chunk283595.Z.entitledBranchIds,
     t = [];
-  for (let n of module) N.hasOwnProperty(require) || (N[require] = null, exports.push(require));
+  for (let n of module) C.hasOwnProperty(require) || (C[require] = null, exports.push(require));
   if (0 === exports.length) returnfalse;
   Chunk570140.Z.wait(() => Chunk274616.o(exports))
 }
 
-function M() {
+function j() {
   if (!(0, Chunk804739.Q)()) returnfalse;
   for (let e of A) {
     let {
       applicationId: t,
       branchId: n
     } = (0, Chunk780570.CP)(module);
-    null != Chunk812206.Z.getApplication(exports) && (A.delete(module), k(exports, require))
+    null != Chunk812206.Z.getApplication(exports) && (A.delete(module), M(exports, require))
   }
 }
 
-function k(e, t) {
+function M(e, t) {
   if (null != I[t] && g.Z.shouldBeInstalled(e, t)) {
     let n = I[t],
       r = n.manifestIds,
@@ -81,7 +81,7 @@ function k(e, t) {
   }
 }
 
-function j(e) {
+function k(e) {
   let {
     branchId: t
   } = e;
@@ -109,7 +109,7 @@ function U(e) {
     branchId: n,
     locale: r,
     manifestIds: a
-  }, k(t, n)
+  }, M(t, n)
 }
 
 function G(e) {
@@ -126,7 +126,7 @@ function B(e) {
   S.hasOwnProperty(t) || (S[t] = null)
 }
 
-function V(e) {
+function Z(e) {
   let {
     buildId: t,
     sizeKB: n
@@ -134,14 +134,14 @@ function V(e) {
   S[t] = n
 }
 
-function F(e) {
+function V(e) {
   let {
     buildId: t
   } = e;
   null == S[t] && delete S[t]
 }
 
-function Z(e) {
+function F(e) {
   let {
     branches: t
   } = e, n = {};
@@ -154,11 +154,11 @@ function Z(e) {
       id: t,
       liveBuildId: r
     } = e;
-    if (r !== N[t]) {
+    if (r !== C[t]) {
       let e = n[t];
       null != e && l.Z.wait(() => u.l(e.id, e.branchId, true))
     }
-    N[t] = r
+    C[t] = r
   }
   D(R)
 }
@@ -185,7 +185,7 @@ function W(e) {
 }
 class K extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.syncWith([Chunk283595.Z], x), this.waitFor(Chunk417363.Z, Chunk283595.Z, Chunk812206.Z, Chunk581883.Z)
+    this.syncWith([Chunk283595.Z], L), this.waitFor(Chunk417363.Z, Chunk283595.Z, Chunk812206.Z, Chunk581883.Z)
   }
   getTargetBuildId(e, t) {
     return null == I[t] ? null : I[t].id
@@ -208,15 +208,15 @@ class K extends(r = Chunk442837.ZP.Store) {
 }
 O(K, "displayName", "ApplicationBuildStore");
 let z = new K(Chunk570140.Z, {
-  CONNECTION_OPEN: L,
-  GAMES_DATABASE_UPDATE: M,
-  APPLICATION_BUILD_FETCH_START: j,
+  CONNECTION_OPEN: x,
+  GAMES_DATABASE_UPDATE: j,
+  APPLICATION_BUILD_FETCH_START: k,
   APPLICATION_BUILD_FETCH_SUCCESS: U,
   APPLICATION_BUILD_NOT_FOUND: G,
   APPLICATION_BUILD_SIZE_FETCH_START: B,
-  APPLICATION_BUILD_SIZE_FETCH_SUCCESS: V,
-  APPLICATION_BUILD_SIZE_FETCH_FAIL: F,
-  APPLICATION_BRANCHES_FETCH_SUCCESS: Z,
+  APPLICATION_BUILD_SIZE_FETCH_SUCCESS: Z,
+  APPLICATION_BUILD_SIZE_FETCH_FAIL: V,
+  APPLICATION_BRANCHES_FETCH_SUCCESS: F,
   APPLICATION_BRANCHES_FETCH_FAIL: H,
   CONNECTION_CLOSED: Y,
   LOGOUT: Y,

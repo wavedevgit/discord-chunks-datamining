@@ -1,12 +1,13 @@
-/** Chunk was on 66181 **/
-/** chunk id: 216045, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 216045, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => z
+  Z: () => J
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
-  a = require.n(Chunk512722),
+  o = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
   Chunk622535 = require("./622535.js"),
@@ -44,138 +45,159 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk391371 = require("./391371.js");
 
-function F(e) {
+function F(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function H(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      i = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), i.forEach(function(t) {
-      var i;
-      i = n[t], t in e ? Object.defineProperty(e, t, {
-        value: i,
-        enumerable: true,
-        configurable: true,
-        writable: true
-      }) : e[t] = i
+    }))), r.forEach(function(t) {
+      F(e, t, n[t])
     })
   }
   return e
 }
 
-function H(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-      var i = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, i)
-    }
-    return n
-  })(Object(t)).forEach(function(n) {
+function Y(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function W(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : Y(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function z() {
+function K(e, t) {
+  if (null == e) return {};
+  var n, r, i = z(e, t);
+  if (Object.getOwnPropertySymbols) {
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+  }
+  return i
+}
+
+function z(e, t) {
+  if (null == e) return {};
+  var n, r, i = {},
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+  return i
+}
+
+function q() {
+  let e = (0, Chunk373230.T)({
+      location: "UserSettingsProfileCustomization"
+    }),
+    t = (0, Chunk266454.Nj)(Chunk704215.z.RECENT_AVATARS_SETTINGS_MENU_NEW_BADGE),
+    n = module && !exports;
+  Chunk647438.useEffect(() => {
+    require && (0, Chunk266454.Q3)(Chunk704215.z.RECENT_AVATARS_SETTINGS_MENU_NEW_BADGE, {
+      forceTrack: true
+    })
+  }, [require])
+}
+
+function X() {
+  let [e, t] = (0, Chunk243778.US)([Chunk704215.z.NAMEPLATE_USER_SETTINGS_MENU_NEW_BADGE]), n = module === Chunk704215.z.NAMEPLATE_USER_SETTINGS_MENU_NEW_BADGE;
+  Chunk647438.useEffect(() => {
+    require && exports(Chunk921944.L.TAKE_ACTION)
+  }, [require, exports])
+}
+
+function Q() {
+  let [e, t] = (0, Chunk243778.US)([Chunk704215.z.DISPLAY_NAME_STYLES_NEW_BADGE]), n = module === Chunk704215.z.DISPLAY_NAME_STYLES_NEW_BADGE;
+  Chunk647438.useEffect(() => {
+    require && exports(Chunk921944.L.TAKE_ACTION)
+  }, [require, exports])
+}
+
+function J() {
   let e = (0, Chunk442837.e7)([Chunk594174.default], () => {
       let e = Chunk594174.default.getCurrentUser();
-      return a()(null != module, "UserSettingsProfileCustomization: user cannot be undefined"), module
+      return o()(null != module, "UserSettingsProfileCustomization: user cannot be undefined"), module
     }),
     t = (0, Chunk442837.e7)([Chunk246946.Z], () => Chunk246946.Z.hidePersonalInformation),
     n = (0, Chunk442837.cj)([Chunk25990.Z], () => Chunk25990.Z.getAllPending()),
     {
-      pendingBio: s,
-      pendingAvatar: z,
-      pendingNameplate: W
+      pendingBio: a,
+      pendingAvatar: l,
+      pendingNameplate: b
     } = require,
-    Y = function(e, t) {
-      if (null == e) return {};
-      var n, i, r = function(e, t) {
-        if (null == e) return {};
-        var n, i, r = {},
-          s = Object.keys(e);
-        for (i = 0; i < s.length; i++) n = s[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
-        return r
-      }(e, t);
-      if (Object.getOwnPropertySymbols) {
-        var s = Object.getOwnPropertySymbols(e);
-        for (i = 0; i < s.length; i++) n = s[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
-      }
-      return r
-    }(require, ["pendingBio", "pendingAvatar", "pendingNameplate"]),
-    K = (0, Chunk643879.SD)({
+    y = K(require, ["pendingBio", "pendingAvatar", "pendingNameplate"]),
+    R = (0, Chunk643879.SD)({
       userId: module.id,
-      image: z
+      image: Chunk704215
     }),
-    q = (0, Chunk442837.e7)([Chunk25990.Z], () => Chunk25990.Z.showNotice()),
-    X = Chunk695346.dN.useSetting() && null != Chunk512722 ? Chunk957730.ZP.parse(true, Chunk512722).content : Chunk512722,
-    J = Chunk74538.ZP.canUsePremiumProfileCustomization(module),
+    B = (0, Chunk442837.e7)([Chunk25990.Z], () => Chunk25990.Z.showNotice()),
+    F = Chunk695346.dN.useSetting() && null != Chunk512722 ? Chunk957730.ZP.parse(true, Chunk512722).content : Chunk512722,
+    Y = Chunk74538.ZP.canUsePremiumProfileCustomization(module),
     {
-      analyticsLocations: Q,
-      newestAnalyticsLocation: $
-    } = (0, Chunk906732.ZP)(Chunk100527.Z.USER_SETTINGS_USER_PROFILE),
-    ee = (0, Chunk373230.T)({
-      location: "UserSettingsProfileCustomization"
-    }),
-    et = (0, Chunk266454.Nj)(Chunk704215.z.RECENT_AVATARS_SETTINGS_MENU_NEW_BADGE),
-    en = ee && !et;
-  Chunk647438.useEffect(() => {
-    en && (0, Chunk266454.Q3)(Chunk704215.z.RECENT_AVATARS_SETTINGS_MENU_NEW_BADGE, {
-      forceTrack: true
-    })
-  }, [en]);
-  let [ei, er] = (0, Chunk243778.US)([Chunk704215.z.NAMEPLATE_USER_SETTINGS_MENU_NEW_BADGE]), es = ei === Chunk704215.z.NAMEPLATE_USER_SETTINGS_MENU_NEW_BADGE;
-  Chunk647438.useEffect(() => {
-    es && er(Chunk921944.L.TAKE_ACTION)
-  }, [es, er]);
-  let [ea, el] = (0, Chunk243778.US)([Chunk704215.z.DISPLAY_NAME_STYLES_NEW_BADGE]), eo = ea === Chunk704215.z.DISPLAY_NAME_STYLES_NEW_BADGE;
-  Chunk647438.useEffect(() => {
-    eo && el(Chunk921944.L.TAKE_ACTION)
-  }, [eo, el]), Chunk647438.useEffect(() => () => Chunk570140.Z.wait(Chunk809206.W3), []);
-  let [ec, ed] = Chunk647438.useState(false), {
-    showRedesign: eu
+      analyticsLocations: z,
+      newestAnalyticsLocation: J
+    } = (0, Chunk906732.ZP)(Chunk100527.Z.USER_SETTINGS_USER_PROFILE);
+  q(), X(), Q(), Chunk647438.useEffect(() => () => Chunk570140.Z.wait(Chunk809206.W3), []);
+  let [$, ee] = Chunk647438.useState(false), {
+    showRedesign: et
   } = Chunk413182.b.useExperiment({
     location: "profile customization"
-  }), em = !J, ep = Chunk647438.useRef(null);
+  }), en = !Y, er = Chunk647438.useRef(null);
   return exports ? (0, Chunk951288.jsx)(Chunk497321.Z, {}) : (0, Chunk951288.jsxs)(Chunk906732.Gt, {
-    value: Q,
+    value: z,
     children: [(0, Chunk951288.jsx)(Chunk475977.Z, {}), (0, Chunk951288.jsx)(Chunk296810.Z, {
-      profilePreview: (0, Chunk951288.jsx)(Chunk678135.Z, H(F({
+      profilePreview: (0, Chunk951288.jsx)(Chunk678135.Z, W(H({
         user: module,
-        canUsePremiumCustomization: J,
+        canUsePremiumCustomization: Y,
         onUpsellClick: Chunk265159.Z,
-        pendingBio: X
-      }, Y), {
-        pendingAvatar: K
+        pendingBio: F
+      }, Chunk243778), {
+        pendingAvatar: Chunk373230
       })),
-      nameplatePreview: (0, Chunk951288.jsx)(Chunk22267.Z, H(F({
+      nameplatePreview: (0, Chunk951288.jsx)(Chunk22267.Z, W(H({
         user: module,
-        nameplate: W,
-        nameplateData: true === W ? module.nameplate : true
-      }, Y), {
+        nameplate: Chunk266454,
+        nameplateData: true === Chunk266454 ? module.nameplate : true
+      }, Chunk243778), {
         className: Chunk391371.nameplatePreview,
         isHighlighted: true
       })),
       children: (0, Chunk951288.jsx)(Chunk532495.Z, {})
-    }), eu && (0, Chunk951288.jsx)(Chunk610794.Z, {}), (0, Chunk951288.jsx)(Chunk622535.$, {
-      innerRef: ep,
-      onChange: e => ed(e),
+    }), et && (0, Chunk951288.jsx)(Chunk610794.Z, {}), (0, Chunk951288.jsx)(Chunk622535.$, {
+      innerRef: er,
+      onChange: e => ee(e),
       threshold: .25,
-      active: em,
+      active: en,
       children: (0, Chunk951288.jsx)("div", {
-        ref: ep,
+        ref: er,
         children: (0, Chunk951288.jsx)(Chunk935147.Z, {
           user: module,
-          shouldShow: em,
-          isVisible: ec
+          shouldShow: en,
+          isVisible: $
         })
       })
-    }), em && !q && (0, Chunk951288.jsx)(Chunk53691.p, {
+    }), en && !Chunk921944 && (0, Chunk951288.jsx)(Chunk53691.p, {
       className: Chunk391371.floatingNitroUpsell,
-      showUpsell: em && !ec,
+      showUpsell: en && !$,
       text: Chunk388032.intl.format(Chunk388032.t.TmfgIy, {
         onClick: () => (0, Chunk267717.y)({
-          analyticsSource: $
+          analyticsSource: J
         })
       }),
       textVariant: "heading-md/medium",
@@ -186,7 +208,7 @@ function z() {
           var e;
           Chunk626135.default.track(Chunk981631.rMx.TRY_IT_OUT_PRESET_CLICKED, {
             cta_variant: "floating_action_button"
-          }), null == ep || null == (e = ep.current) || module.scrollIntoView({
+          }), null == er || null == (e = er.current) || module.scrollIntoView({
             behavior: "smooth"
           })
         },

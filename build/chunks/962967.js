@@ -1,5 +1,6 @@
-/** Chunk was on 66181 **/
-/** chunk id: 962967, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 962967, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   bgShade: "bgShade__6d791",
   titleWrapper: "titleWrapper__6d791 bgShade__6d791",

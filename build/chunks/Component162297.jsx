@@ -1,7 +1,8 @@
-/** Chunk was on 26434 **/
-/** chunk id: 162297, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 162297, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => f
+  Z: () => p
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -15,40 +16,40 @@ var Chunk951288 = require("./951288.js"),
   Chunk230171 = require("./230171.jsx"),
   Chunk433534 = require("./433534.js");
 
-function f(e) {
+function p(e) {
   let {
     applicationId: t
-  } = e, [n, l, a] = (0, o.Wu)([d.Z], () => [d.Z.getApplication(t), d.Z.isFetchingApplication(t), d.Z.didFetchingApplicationFail(t)], [t]);
+  } = e, [n, a, s] = (0, o.Wu)([d.Z], () => [d.Z.getApplication(t), d.Z.isFetchingApplication(t), d.Z.didFetchingApplicationFail(t)], [t]);
   return (i.useEffect(() => {
-    null != n || l || a || u.ZP.fetchApplication(t)
-  }, [n, l, a, t]), null != n && (0, m.Eb)({
+    null != n || a || s || u.ZP.fetchApplication(t)
+  }, [n, a, s, t]), null != n && (0, _.Eb)({
     customInstallUrl: n.customInstallUrl,
     installParams: n.installParams,
     integrationTypesConfig: n.integrationTypesConfig
-  })) ? (0, r.jsx)(g, {
+  })) ? (0, r.jsx)(h, {
     application: n
   }) : null
 }
 
-function g(e) {
+function h(e) {
   let {
     application: t
   } = e, n = i.useCallback(() => {
     (0, c.h)({
-      type: l.ImpressionTypes.VIEW,
-      name: l.ImpressionNames.APP_OAUTH2_LINK_EMBED,
+      type: a.ImpressionTypes.VIEW,
+      name: a.ImpressionNames.APP_OAUTH2_LINK_EMBED,
       properties: {
         application_id: t.id
       }
     })
   }, [t.id]), {
     analyticsLocations: o
-  } = (0, s.ZP)(a.Z.APP_OAUTH2_LINK_EMBED);
-  return (0, r.jsx)(s.Gt, {
+  } = (0, l.ZP)(s.Z.APP_OAUTH2_LINK_EMBED);
+  return (0, r.jsx)(l.Gt, {
     value: o,
-    children: (0, r.jsx)(p.O, {
+    children: (0, r.jsx)(f.O, {
       app: t,
-      linkType: p.U.OAUTH,
+      linkType: f.U.OAUTH,
       onView: n
     })
   })

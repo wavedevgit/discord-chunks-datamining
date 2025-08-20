@@ -1,5 +1,5 @@
-/** Chunk was on 99315 **/
-/** chunk id: 908780, original params: e,r,o (module,exports,require) **/
+/** Chunk was on 54400 **/
+/** chunk id: 908780, original params: e,n,t (module,exports,require) **/
 module.exports = {
   attributionBannerContainer: "attributionBannerContainer__7b5f3",
   avatarContainer: "avatarContainer__7b5f3",

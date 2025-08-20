@@ -1,8 +1,9 @@
-/** Chunk was on 74891 **/
-/** chunk id: 929011, original params: t,e,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 929011, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  H: () => S,
-  r: () => O
+  H: () => p,
+  r: () => h
 }), require("./997841.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
@@ -15,78 +16,78 @@ var Chunk951288 = require("./951288.js"),
   Chunk171246 = require("./171246.js"),
   Chunk689011 = require("./689011.jsx"),
   Chunk981631 = require("./981631.js");
-async function S(t) {
+async function p(e) {
   let {
-    subscriptionPlanId: e,
+    subscriptionPlanId: t,
     sku: o,
-    subscriptionGroupPlanIds: S,
-    initialSubscribeForGuild: O,
-    analyticsLocations: I,
-    analyticsLocation: b,
-    disableGuildSelector: g = false
-  } = t, {
-    promise: _,
+    subscriptionGroupPlanIds: p,
+    initialSubscribeForGuild: h,
+    analyticsLocations: m,
+    analyticsLocation: g,
+    disableGuildSelector: E = false
+  } = e, {
+    promise: b,
     resolve: y
   } = Promise.withResolvers();
-  if ((0, d.KK)(o.flags) && false === g) {
+  if ((0, d.KK)(o.flags) && false === E) {
     let {
-      promise: t,
-      resolve: e
+      promise: e,
+      resolve: t
     } = Promise.withResolvers();
-    (0, r.ZDy)(async () => {
+    (0, i.ZDy)(async () => {
       let {
-        GuildSubscriptionSelectionModal: t
+        GuildSubscriptionSelectionModal: e
       } = await n.e("43889").then(n.bind(n, 279875));
-      return n => (0, i.jsx)(t, {
+      return n => (0, r.jsx)(e, {
         transitionState: n.transitionState,
         onClose: n.onClose,
         sku: o,
-        onSelect: e,
-        currentGuildId: O
+        onSelect: t,
+        currentGuildId: h
       })
     }, {
       stackingBehavior: "stack"
-    }), O = await t
+    }), h = await e
   }
-  let P = s.Z.getParentSKU(o.id),
+  let O = c.Z.getParentSKU(o.id),
     v = null;
-  return null != P && ([v] = (0, c.E8)({
-    groupSku: P,
-    SubscriptionStore: u.Z,
-    SubscriptionPlanStore: a.Z,
-    mapSubscriptionItems: c.ec,
-    guildId: O
-  })), (0, l.h)({
-    initialPlanId: e,
+  return null != O && ([v] = (0, u.E8)({
+    groupSku: O,
+    SubscriptionStore: l.Z,
+    SubscriptionPlanStore: s.Z,
+    mapSubscriptionItems: u.ec,
+    guildId: h
+  })), (0, a.h)({
+    initialPlanId: t,
     skuId: o.id,
     activeSubscription: v,
     applicationId: o.applicationId,
-    planGroup: S,
-    guildId: O,
-    renderHeader: (t, e, n) => (0, i.jsx)(p.t, {
+    planGroup: p,
+    guildId: h,
+    renderHeader: (e, t, n) => (0, r.jsx)(f.t, {
       step: n,
-      onClose: () => e(false)
+      onClose: () => t(false)
     }),
-    analyticsSubscriptionType: f.NYc.APPLICATION,
-    analyticsLocations: I,
-    analyticsLocation: b,
+    analyticsSubscriptionType: _.NYc.APPLICATION,
+    analyticsLocations: m,
+    analyticsLocation: g,
     onComplete: y,
     showBenefitsFirst: false,
     forcesTransitionToGuild: false
-  }), _
+  }), b
 }
 
-function O(t) {
+function h(e) {
   let {
-    appId: e,
+    appId: t,
     skuId: n,
-    analyticsLocations: i,
-    isGift: r
-  } = t;
+    analyticsLocations: r,
+    isGift: i
+  } = e;
   (0, o.Z)({
-    applicationId: e,
+    applicationId: t,
     skuId: n,
-    analyticsLocations: i,
-    isGift: null != r && r
+    analyticsLocations: r,
+    isGift: null != i && i
   })
 }

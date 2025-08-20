@@ -1,5 +1,6 @@
-/** Chunk was on 66181 **/
-/** chunk id: 609894, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 609894, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   imageWrapper: "imageWrapper__5ef8c",
   image: "image__5ef8c",

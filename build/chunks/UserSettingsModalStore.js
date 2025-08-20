@@ -48,11 +48,11 @@ let f = Chunk981631.QZA.CLOSED,
   S = null,
   A = null;
 
-function N(e) {
-  y = true, C(e)
+function C(e) {
+  y = true, N(e)
 }
 
-function C(e) {
+function N(e) {
   var t, n, r, i, a, o;
   let s = l.default.getCurrentUser();
   if (null == s) return R();
@@ -93,7 +93,7 @@ function D(e) {
   null != t ? delete m[t] : null != p && delete m[p]
 }
 
-function L(e) {
+function x(e) {
   let {
     settings: t
   } = e;
@@ -102,13 +102,13 @@ function L(e) {
   b[c.oAB.ACCOUNT] = d({}, n, t)
 }
 
-function x() {
+function L() {
   f = Chunk981631.QZA.SUBMITTING
 }
 
-function M() {
+function j() {
   let e = Chunk594174.default.getCurrentUser();
-  k(), null != module && (b = d({}, E = {
+  M(), null != module && (b = d({}, E = {
     [Chunk981631.oAB.ACCOUNT]: {
       userId: module.id,
       username: module.username,
@@ -122,11 +122,11 @@ function M() {
   }))
 }
 
-function k() {
+function M() {
   f = Chunk981631.QZA.OPEN, g = {}
 }
 
-function j(e) {
+function k(e) {
   var t;
   if (f !== c.QZA.SUBMITTING) returnfalse;
   f = c.QZA.OPEN, p = c.oAB.ACCOUNT, g = null != (t = e.errors) ? t : {}
@@ -178,16 +178,16 @@ class U extends(r = Chunk442837.ZP.Store) {
 }
 u(U, "displayName", "UserSettingsModalStore");
 let G = new U(Chunk570140.Z, {
-  USER_SETTINGS_MODAL_OPEN: N,
-  USER_SETTINGS_MODAL_INIT: C,
+  USER_SETTINGS_MODAL_OPEN: C,
+  USER_SETTINGS_MODAL_INIT: N,
   USER_SETTINGS_MODAL_CLOSE: R,
   LOGOUT: R,
-  USER_SETTINGS_MODAL_SUBMIT: x,
-  USER_SETTINGS_MODAL_SUBMIT_FAILURE: j,
+  USER_SETTINGS_MODAL_SUBMIT: L,
+  USER_SETTINGS_MODAL_SUBMIT_FAILURE: k,
   USER_SETTINGS_MODAL_SET_SECTION: P,
   USER_SETTINGS_MODAL_CLEAR_SUBSECTION: w,
   USER_SETTINGS_MODAL_CLEAR_SCROLL_POSITION: D,
-  USER_SETTINGS_MODAL_UPDATE_ACCOUNT: L,
-  USER_SETTINGS_MODAL_SUBMIT_COMPLETE: k,
-  USER_SETTINGS_MODAL_RESET: M
+  USER_SETTINGS_MODAL_UPDATE_ACCOUNT: x,
+  USER_SETTINGS_MODAL_SUBMIT_COMPLETE: M,
+  USER_SETTINGS_MODAL_RESET: j
 })

@@ -1,14 +1,14 @@
-/** Chunk was on 91584 **/
-/** chunk id: 4145, original params: t,e,r (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 4145, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
-function n(t, e, r) {
-  return e in t ? Object.defineProperty(t, e, {
-    value: r,
+function r(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
     enumerable: true,
     configurable: true,
     writable: true
-  }) : t[e] = r, t
+  }) : e[t] = n, e
 }
 var Chunk169774 = require("./169774.js"),
   Chunk273083 = require("./273083.js"),
@@ -16,55 +16,55 @@ var Chunk169774 = require("./169774.js"),
   Chunk65183 = require("./65183.js"),
   Chunk581079 = require("./581079.js"),
   Chunk467159 = require("./467159.js"),
-  l = Chunk65183.Map,
-  f = {
+  u = Chunk65183.Map,
+  d = {
     subtree: true,
     characterData: true,
     childList: true,
     characterDataOldValue: false,
     attributes: false
   },
-  p = Chunk169774.isBrowser("IE <= 11");
+  f = Chunk169774.isBrowser("IE <= 11");
 module.exports = function() {
-  function t(t) {
-    var e = this;
-    n(this, "observer", true), n(this, "container", true), n(this, "mutations", true), n(this, "onCharData", true), this.container = t, this.mutations = l();
-    var r = a(t);
-    r.MutationObserver && !p ? this.observer = new r.MutationObserver(function(t) {
-      return e.registerMutations(t)
-    }) : this.onCharData = function(t) {
-      t.target instanceof Node || s(false), e.registerMutation({
+  function e(e) {
+    var t = this;
+    r(this, "observer", true), r(this, "container", true), r(this, "mutations", true), r(this, "onCharData", true), this.container = e, this.mutations = u();
+    var n = o(e);
+    n.MutationObserver && !f ? this.observer = new n.MutationObserver(function(e) {
+      return t.registerMutations(e)
+    }) : this.onCharData = function(e) {
+      e.target instanceof Node || l(false), t.registerMutation({
         type: "characterData",
-        target: t.target
+        target: e.target
       })
     }
   }
-  var e = module.prototype;
+  var t = module.prototype;
   return exports.start = function() {
-    this.observer ? this.observer.observe(this.container, f) : this.container.addEventListener("DOMCharacterDataModified", this.onCharData)
+    this.observer ? this.observer.observe(this.container, d) : this.container.addEventListener("DOMCharacterDataModified", this.onCharData)
   }, exports.stopAndFlushMutations = function() {
-    var t = this.observer;
+    var e = this.observer;
     module ? (this.registerMutations(module.takeRecords()), module.disconnect()) : this.container.removeEventListener("DOMCharacterDataModified", this.onCharData);
-    var e = this.mutations;
-    return this.mutations = l(), exports
-  }, exports.registerMutations = function(t) {
-    for (var e = 0; e < t.length; e++) this.registerMutation(t[e])
-  }, exports.getMutationTextContent = function(t) {
-    var e = t.type,
-      r = t.target,
-      n = t.removedNodes;
-    if ("characterData" === e) {
-      if ("" !== r.textContent) return p ? r.textContent.replace("\n", "") : r.textContent
-    } else if ("childList" === e) {
-      if (n && n.length) return "";
-      else if ("" !== r.textContent) return r.textContent
+    var t = this.mutations;
+    return this.mutations = u(), exports
+  }, exports.registerMutations = function(e) {
+    for (var t = 0; t < e.length; t++) this.registerMutation(e[t])
+  }, exports.getMutationTextContent = function(e) {
+    var t = e.type,
+      n = e.target,
+      r = e.removedNodes;
+    if ("characterData" === t) {
+      if ("" !== n.textContent) return f ? n.textContent.replace("\n", "") : n.textContent
+    } else if ("childList" === t) {
+      if (r && r.length) return "";
+      else if ("" !== n.textContent) return n.textContent
     }
     return null
-  }, exports.registerMutation = function(t) {
-    var e = this.getMutationTextContent(t);
-    if (null != e) {
-      var r = c(o(t.target));
-      this.mutations = this.mutations.set(r, e)
+  }, exports.registerMutation = function(e) {
+    var t = this.getMutationTextContent(e);
+    if (null != t) {
+      var n = c(a(e.target));
+      this.mutations = this.mutations.set(n, t)
     }
   }, module
 }()

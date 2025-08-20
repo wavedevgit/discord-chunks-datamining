@@ -60,12 +60,12 @@ function m(e) {
       applicationId: t
     } = e;
     return t
-  }), [O]), A = (0, a.e7)([c.Z], () => c.Z.getRelationshipType(E), [E]), N = p(S, v || 1 === O.length);
+  }), [O]), A = (0, a.e7)([c.Z], () => c.Z.getRelationshipType(E), [E]), C = p(S, v || 1 === O.length);
   if (y || 0 === O.length || A === d.OGo.FRIEND) return null;
   if (1 === O.length) {
     let {
       applicationId: e
-    } = O[0], n = N.get(e);
+    } = O[0], n = C.get(e);
     return null == n ? null : (0, r.jsx)(o.sNh, {
       color: g,
       id: t,
@@ -77,12 +77,12 @@ function m(e) {
       action: () => m(n)
     })
   }
-  let C = [];
+  let N = [];
   return (O.forEach(e => {
     let {
       applicationId: t
-    } = e, n = N.get(t);
-    null != n && C.push((0, r.jsx)(o.sNh, {
+    } = e, n = C.get(t);
+    null != n && N.push((0, r.jsx)(o.sNh, {
       id: t,
       label: n.name,
       icon: (0, r.jsx)(l.Z, {
@@ -91,11 +91,11 @@ function m(e) {
       }),
       action: () => m(n)
     }, t))
-  }), 0 === C.length) ? null : (0, r.jsx)(o.sNh, {
+  }), 0 === N.length) ? null : (0, r.jsx)(o.sNh, {
     color: g,
     id: t,
     label: s,
     onFocus: T,
-    children: C
+    children: N
   })
 }

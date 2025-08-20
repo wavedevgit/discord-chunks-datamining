@@ -13,7 +13,7 @@ let o = function(e) {
     match: t,
     location: n
   } = e, o = async (e, t) => {
-    await (0, i.s)(a.jE.PICK_GUILD_SETTINGS, {
+    await (0, i.s)(s.jE.PICK_GUILD_SETTINGS, {
       section: e.params.section,
       subsection: e.params.subsection,
       search: t.search

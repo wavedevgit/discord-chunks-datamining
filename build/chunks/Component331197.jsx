@@ -1,7 +1,7 @@
-/** Chunk was on 36499 **/
+/** Chunk was on 5665 **/
 /** chunk id: 331197, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => j
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -25,10 +25,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk127379 = require("./127379.js"),
   Chunk388032 = require("./388032.jsx");
 
-function O(e) {
+function j(e) {
   let {
     channel: t,
-    themeable: O,
+    themeable: j,
     whichPopoutIsOpen: E,
     setWhichPopoutIsOpen: S
   } = e, {
@@ -136,8 +136,8 @@ function O(e) {
     children: () => (0, r.jsx)(x.d, {
       ref: q,
       isTrayButton: true,
-      themeable: O,
-      label: w ? j.intl.string(j.t["Ox4/zc"]) : R ? j.intl.string(j.t["+YBKYG"]) : M ? j.intl.string(j.t.X1lQlp) : true,
+      themeable: j,
+      label: w ? O.intl.string(O.t["Ox4/zc"]) : R ? O.intl.string(O.t["+YBKYG"]) : M ? O.intl.string(O.t.X1lQlp) : true,
       iconComponent: I,
       disabled: k,
       onContextMenu: z,

@@ -1,16 +1,17 @@
-/** Chunk was on 66181 **/
-/** chunk id: 415795, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 415795, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  $W: () => N,
-  Mx: () => A,
-  PZ: () => I,
-  h4: () => P,
-  ic: () => T,
-  n5: () => y,
-  rU: () => R,
-  s8: () => D
+  $W: () => C,
+  Mx: () => P,
+  PZ: () => N,
+  h4: () => w,
+  ic: () => A,
+  n5: () => R,
+  rU: () => D,
+  s8: () => x
 }), require("./388685.js"), require("./35282.js");
-var i, Chunk951288 = require("./951288.js"),
+var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk481060 = require("./481060.js"),
   Chunk456100 = require("./456100.js"),
@@ -31,7 +32,7 @@ var i, Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk297762 = require("./297762.js");
 
-function v(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -54,18 +55,18 @@ class S extends Chunk647438.PureComponent {
       focused: t,
       onFocus: n
     } = this.props, {
-      node: i
+      node: r
     } = this;
-    null != i && t && !e.focused && n(i)
+    null != r && t && !e.focused && n(r)
   }
   render() {
     let {
       focused: e,
       children: t,
       score: n,
-      onContextMenu: i,
-      id: s,
-      "aria-label": l
+      onContextMenu: r,
+      id: a,
+      "aria-label": s
     } = this.props;
     return (0, Chunk951288.jsxs)(Chunk481060.P3F, {
       role: "option",
@@ -80,7 +81,7 @@ class S extends Chunk647438.PureComponent {
       className: Chunk297762.result,
       onClick: this.handleClick,
       onMouseEnter: this.handleMouseEnter,
-      onContextMenu: i,
+      onContextMenu: r,
       children: [exports, null != require ? (0, Chunk951288.jsx)("div", {
         className: Chunk297762.score,
         children: 0 | require
@@ -88,7 +89,7 @@ class S extends Chunk647438.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), v(this, "node", true), v(this, "handleClick", e => {
+    super(...e), T(this, "node", true), T(this, "handleClick", e => {
       e.preventDefault();
       let {
         onClick: t
@@ -96,19 +97,19 @@ class S extends Chunk647438.PureComponent {
         node: n
       } = this;
       null != n && t(e, n)
-    }), v(this, "handleMouseEnter", e => {
+    }), T(this, "handleMouseEnter", e => {
       let {
         onMouseEnter: t
       } = this.props, {
         node: n
       } = this;
       null != n && t(e, n)
-    }), v(this, "setRef", e => {
+    }), T(this, "setRef", e => {
       this.node = e
     })
   }
 }
-class T extends Chunk647438.Component {
+class A extends Chunk647438.Component {
   renderIcon() {
     let {
       guild: e
@@ -161,10 +162,10 @@ class T extends Chunk647438.Component {
       onMouseEnter: e,
       onClick: t,
       onFocus: n,
-      onContextMenu: i,
-      focused: s,
-      score: a,
-      id: l
+      onContextMenu: r,
+      focused: a,
+      score: o,
+      id: s
     } = this.props;
     return (0, Chunk951288.jsx)(S, {
       id: Chunk456100,
@@ -172,25 +173,25 @@ class T extends Chunk647438.Component {
       onMouseEnter: module,
       onClick: exports,
       onFocus: require,
-      onContextMenu: i,
+      onContextMenu: r,
       focused: Chunk647438,
       score: Chunk481060,
       children: this.renderContent()
     })
   }
 }
-class N extends(i = Chunk647438.Component) {
+class C extends(r = Chunk647438.Component) {
   renderIcon() {
     var e;
     let {
       channel: t
     } = this.props, n = (0, Chunk471445.KS)(exports);
     if (null == require) return null;
-    let i = null != (e = (0, Chunk16206.Z)(exports)) ? module : "";
+    let r = null != (e = (0, Chunk16206.Z)(exports)) ? module : "";
     return (0, Chunk951288.jsx)("div", {
       className: Chunk297762.iconContainer,
       role: "img",
-      "aria-label": i,
+      "aria-label": r,
       children: (0, Chunk951288.jsx)(require, {
         className: Chunk297762.icon,
         size: "xs",
@@ -201,17 +202,17 @@ class N extends(i = Chunk647438.Component) {
   renderName() {
     let e, t, {
       mentions: n,
-      category: i,
-      channel: s,
-      isMentionLowImportance: a
+      category: r,
+      channel: a,
+      isMentionLowImportance: o
     } = this.props;
     return null != require && require > 0 && (e = (0, Chunk951288.jsx)(Chunk790145.Z, {
       className: Chunk297762.badge,
       value: require,
       lowImportance: Chunk481060
-    })), null != i && (t = (0, Chunk951288.jsx)("span", {
+    })), null != r && (t = (0, Chunk951288.jsx)("span", {
       className: Chunk297762.note,
-      children: (0, Chunk933557.F6)(i, Chunk594174.default, Chunk699516.Z)
+      children: (0, Chunk933557.F6)(r, Chunk594174.default, Chunk699516.Z)
     })), (0, Chunk951288.jsxs)("div", {
       className: Chunk297762.name,
       children: [(0, Chunk951288.jsx)("span", {
@@ -258,9 +259,9 @@ class N extends(i = Chunk647438.Component) {
     var e;
     let {
       channel: t
-    } = this.props, n = null == (e = Chunk430824.Z.getGuild(this.props.channel.guild_id)) ? true : module.name, i = (0, Chunk933557.F6)(exports, Chunk594174.default, Chunk699516.Z), r = (0, Chunk16206.Z)(exports);
+    } = this.props, n = null == (e = Chunk430824.Z.getGuild(this.props.channel.guild_id)) ? true : module.name, r = (0, Chunk933557.F6)(exports, Chunk594174.default, Chunk699516.Z), i = (0, Chunk16206.Z)(exports);
     return Chunk388032.intl.formatToPlainString(Chunk388032.t["Vw/da2"], {
-      name: i,
+      name: r,
       type: Chunk951288,
       guild: require
     })
@@ -270,10 +271,10 @@ class N extends(i = Chunk647438.Component) {
       onMouseEnter: e,
       onClick: t,
       onFocus: n,
-      onContextMenu: i,
-      focused: s,
-      score: a,
-      id: l
+      onContextMenu: r,
+      focused: a,
+      score: o,
+      id: s
     } = this.props;
     return (0, Chunk951288.jsx)(S, {
       id: Chunk456100,
@@ -281,17 +282,17 @@ class N extends(i = Chunk647438.Component) {
       onMouseEnter: module,
       onClick: exports,
       onFocus: require,
-      onContextMenu: i,
+      onContextMenu: r,
       focused: Chunk647438,
       score: Chunk481060,
       children: this.renderContent()
     })
   }
 }
-v(N, "defaultProps", {
+T(C, "defaultProps", {
   unread: false
 });
-class I extends Chunk647438.Component {
+class N extends Chunk647438.Component {
   renderIcon() {
     let {
       channel: e
@@ -351,10 +352,10 @@ class I extends Chunk647438.Component {
       onMouseEnter: e,
       onClick: t,
       onFocus: n,
-      onContextMenu: i,
-      focused: s,
-      score: a,
-      id: l
+      onContextMenu: r,
+      focused: a,
+      score: o,
+      id: s
     } = this.props;
     return (0, Chunk951288.jsx)(S, {
       id: Chunk456100,
@@ -362,14 +363,14 @@ class I extends Chunk647438.Component {
       onMouseEnter: module,
       onClick: exports,
       onFocus: require,
-      onContextMenu: i,
+      onContextMenu: r,
       focused: Chunk647438,
       score: Chunk481060,
       children: this.renderContent()
     })
   }
 }
-class y extends Chunk647438.Component {
+class R extends Chunk647438.Component {
   renderIcon() {
     let {
       user: e
@@ -388,15 +389,15 @@ class y extends Chunk647438.Component {
         user: t,
         comparator: n
       } = this.props,
-      i = Chunk699516.Z.getNickname(exports.id);
-    return ((e = require === exports.tag || null == require || "" === require ? exports.username : require) === exports.username || module === exports.id) && (e = null != i ? i : Chunk51144.ZP.getName(exports)), module
+      r = Chunk699516.Z.getNickname(exports.id);
+    return ((e = require === exports.tag || null == require || "" === require ? exports.username : require) === exports.username || module === exports.id) && (e = null != r ? r : Chunk51144.ZP.getName(exports)), module
   }
   renderName() {
     let e, {
         user: t,
         mentions: n
       } = this.props,
-      i = this.getDisplayNickname();
+      r = this.getDisplayNickname();
     return null != require && require > 0 && (e = (0, Chunk951288.jsx)(Chunk790145.Z, {
       className: Chunk297762.badge,
       value: require
@@ -404,7 +405,7 @@ class y extends Chunk647438.Component {
       className: Chunk297762.name,
       children: [(0, Chunk951288.jsx)("span", {
         className: Chunk297762.match,
-        children: i
+        children: r
       }), module, (0, Chunk951288.jsx)("span", {
         className: Chunk297762.username,
         children: Chunk51144.ZP.getUserTag(exports)
@@ -428,14 +429,14 @@ class y extends Chunk647438.Component {
     let {
       mentions: e,
       user: t
-    } = this.props, n = this.getDisplayNickname(), i = Chunk51144.ZP.getUserTag(exports);
+    } = this.props, n = this.getDisplayNickname(), r = Chunk51144.ZP.getUserTag(exports);
     return null != module && module > 0 ? Chunk388032.intl.formatToPlainString(Chunk388032.t["6b9Ura"], {
       name: require,
-      id: i,
+      id: r,
       mentions: module
     }) : Chunk388032.intl.formatToPlainString(Chunk388032.t.GWYOAQ, {
       name: require,
-      id: i
+      id: r
     })
   }
   render() {
@@ -443,10 +444,10 @@ class y extends Chunk647438.Component {
       onMouseEnter: e,
       onClick: t,
       onFocus: n,
-      onContextMenu: i,
-      focused: s,
-      score: a,
-      id: l
+      onContextMenu: r,
+      focused: a,
+      score: o,
+      id: s
     } = this.props;
     return (0, Chunk951288.jsx)(S, {
       id: Chunk456100,
@@ -454,14 +455,14 @@ class y extends Chunk647438.Component {
       onMouseEnter: module,
       onClick: exports,
       onFocus: require,
-      onContextMenu: i,
+      onContextMenu: r,
       focused: Chunk647438,
       score: Chunk481060,
       children: this.renderContent()
     })
   }
 }
-class A extends Chunk647438.Component {
+class P extends Chunk647438.Component {
   renderContent() {
     let {
       children: e,
@@ -488,20 +489,20 @@ class A extends Chunk647438.Component {
       onMouseEnter: e,
       onClick: t,
       onFocus: n,
-      focused: i,
-      id: s
+      focused: r,
+      id: a
     } = this.props;
     return (0, Chunk951288.jsx)(S, {
       id: Chunk647438,
       onMouseEnter: module,
       onClick: exports,
       onFocus: require,
-      focused: i,
+      focused: r,
       children: this.renderContent()
     })
   }
 }
-class P extends Chunk647438.Component {
+class w extends Chunk647438.Component {
   render() {
     return (0, Chunk951288.jsx)("div", {
       className: Chunk297762.__invalid_resultDefault,
@@ -515,13 +516,13 @@ class P extends Chunk647438.Component {
     })
   }
 }
-class R extends Chunk647438.Component {
+class D extends Chunk647438.Component {
   renderContent() {
     let e, t, {
         link: n,
-        children: i
+        children: r
       } = this.props,
-      s = (0, Chunk754688.Qj)(require.path);
+      a = (0, Chunk754688.Qj)(require.path);
     return null == Chunk647438 || true === Chunk647438.messageId ? (e = Chunk388032.intl.string(Chunk388032.t.qbSCqq), t = (0, Chunk951288.jsx)(Chunk481060.xPt, {
       size: "xs",
       color: "currentColor"
@@ -538,7 +539,7 @@ class R extends Chunk647438.Component {
         children: exports
       }), module, (0, Chunk951288.jsx)("div", {
         className: Chunk297762.misc,
-        children: i
+        children: r
       })]
     })
   }
@@ -547,31 +548,31 @@ class R extends Chunk647438.Component {
       onMouseEnter: e,
       onClick: t,
       onFocus: n,
-      onContextMenu: i,
-      focused: s,
-      score: a,
-      id: l
+      onContextMenu: r,
+      focused: a,
+      score: o,
+      id: s
     } = this.props;
     return (0, Chunk951288.jsx)(S, {
       id: Chunk456100,
       onMouseEnter: module,
       onClick: exports,
       onFocus: require,
-      onContextMenu: i,
+      onContextMenu: r,
       focused: Chunk647438,
       score: Chunk481060,
       children: this.renderContent()
     })
   }
 }
-class D extends Chunk647438.Component {
+class x extends Chunk647438.Component {
   renderContent() {
     let e, t, {
         navigationRecord: n,
-        children: i
+        children: r
       } = this.props,
       {
-        enabled: s
+        enabled: a
       } = Chunk456100.c.getCurrentConfig({
         location: "QuickSwitcherResults"
       }, {
@@ -604,8 +605,8 @@ class D extends Chunk647438.Component {
         });
         break;
       case Chunk815372.Ky.SETTINGS:
-        var d;
-        e = null != (d = require.label) ? Chunk933557 : Chunk388032.intl.string(Chunk388032.t["3D5yo6"]), t = (0, Chunk951288.jsx)(Chunk481060.ewm, {
+        var u;
+        e = null != (u = require.label) ? Chunk933557 : Chunk388032.intl.string(Chunk388032.t["3D5yo6"]), t = (0, Chunk951288.jsx)(Chunk481060.ewm, {
           size: "xs",
           color: "currentColor"
         });
@@ -626,7 +627,7 @@ class D extends Chunk647438.Component {
         children: module
       }), (0, Chunk951288.jsx)("div", {
         className: Chunk297762.misc,
-        children: i
+        children: r
       })]
     })
   }
@@ -635,17 +636,17 @@ class D extends Chunk647438.Component {
       onMouseEnter: e,
       onClick: t,
       onFocus: n,
-      onContextMenu: i,
-      focused: s,
-      score: a,
-      id: l
+      onContextMenu: r,
+      focused: a,
+      score: o,
+      id: s
     } = this.props;
     return (0, Chunk951288.jsx)(S, {
       id: Chunk456100,
       onMouseEnter: module,
       onClick: exports,
       onFocus: require,
-      onContextMenu: i,
+      onContextMenu: r,
       focused: Chunk647438,
       score: Chunk481060,
       children: this.renderContent()

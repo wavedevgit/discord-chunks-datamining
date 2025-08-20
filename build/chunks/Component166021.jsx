@@ -1,115 +1,132 @@
-/** Chunk was on 66181 **/
-/** chunk id: 166021, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 166021, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => u
+  Z: () => g
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk803948 = require("./803948.js"),
   Chunk481060 = require("./481060.js"),
   Chunk51636 = require("./51636.jsx"),
   Chunk329352 = require("./329352.js");
-let u = e => {
-  let {
-    cards: t,
-    className: n,
-    cardType: s
-  } = e, u = () => window.innerWidth < 910 ? 1 : window.innerWidth < 1400 ? 2 : 3, [m, p] = r.useState(0), [g, h] = r.useState(u()), f = t.length;
-  r.useEffect(() => {
-    let e = () => {
-      h(u())
-    };
-    return window.addEventListener("resize", e), () => {
-      window.removeEventListener("resize", e)
-    }
-  }, []), r.useEffect(() => {
-    p(e => f > g && e > f - g ? f - g : f <= g ? 0 : e)
-  }, [f, g]);
-  let b = m > 0,
-    x = r.useCallback(e => ({
-      x: (e - m) * 100
-    }), [m]),
-    [_, j] = (0, o.bYB)(t.length, x);
-  return r.useEffect(() => {
-    j(x)
-  }, [j, x]), (0, i.jsx)("div", {
-    className: n,
-    children: (0, i.jsxs)("div", {
-      className: d.cardContainer,
-      children: [f > g && (0, i.jsx)(o.P3F, {
-        onClick: b ? () => {
-          p(e => 0 === e ? f - g : e - 1)
-        } : true,
-        className: a()({
-          [d.leftArrow]: b,
-          [d.inactiveArrow]: !b
-        }),
-        children: (0, i.jsx)(o.whL, {
-          className: d.arrowIcon,
-          colorClass: d.arrowIcon
-        })
-      }), (0, i.jsx)("div", {
-        className: d.cardInnerContainer,
-        children: _.map((e, n) => {
-          var r, a;
-          let {
-            x: o
-          } = e;
-          return (0, i.jsx)(l.animated.div, {
-            className: d.card,
-            style: {
-              transform: null == o ? true : o.to(e => "translate3d(".concat(e, "%,0,0)"))
-            },
-            children: (0, i.jsx)(c.Z, (r = function(e) {
-              for (var t = 1; t < arguments.length; t++) {
-                var n = null != arguments[t] ? arguments[t] : {},
-                  i = Object.keys(n);
-                "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                  return Object.getOwnPropertyDescriptor(n, e).enumerable
-                }))), i.forEach(function(t) {
-                  var i;
-                  i = n[t], t in e ? Object.defineProperty(e, t, {
-                    value: i,
-                    enumerable: true,
-                    configurable: true,
-                    writable: true
-                  }) : e[t] = i
-                })
-              }
-              return e
-            }({}, t[n]), a = a = {
-              cardType: s
-            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
-              var n = Object.keys(e);
-              if (Object.getOwnPropertySymbols) {
-                var i = Object.getOwnPropertySymbols(e);
-                n.push.apply(n, i)
-              }
-              return n
-            })(Object(a)).forEach(function(e) {
-              Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(a, e))
-            }), r), "".concat(t[n].name, "_").concat(n, "_perks_card"))
-          }, "".concat(t[n].name, "_").concat(n, "_animated_div"))
-        })
-      }), f > g && (0, i.jsx)(o.P3F, {
-        onClick: () => {
-          p(e => e >= f - g ? 0 : e + 1)
-        },
-        className: d.rightArrow,
-        children: (0, i.jsx)(o.ZSh, {
-          className: d.arrowIcon,
-          colorClass: d.arrowIcon
-        })
-      }), f > g && (0, i.jsx)("div", {
-        className: d.cardProgressBar,
-        children: t.map((e, t) => {
-          if (!(t > f - g)) return (0, i.jsx)("div", {
-            className: t === m ? d.selectedDot : d.dot
-          }, "progress_bar_dot_".concat(t))
-        })
-      })]
-    })
-  })
+
+function d(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
 }
+
+function f(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      d(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function _(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function p(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+let h = 910,
+  m = 1400,
+  g = e => {
+    let {
+      cards: t,
+      className: n,
+      cardType: a
+    } = e, d = () => window.innerWidth < h ? 1 : window.innerWidth < m ? 2 : 3, [_, g] = i.useState(0), [E, b] = i.useState(d()), y = t.length;
+    i.useEffect(() => {
+      let e = () => {
+        b(d())
+      };
+      return window.addEventListener("resize", e), () => {
+        window.removeEventListener("resize", e)
+      }
+    }, []), i.useEffect(() => {
+      g(e => y > E && e > y - E ? y - E : y <= E ? 0 : e)
+    }, [y, E]);
+    let O = _ > 0,
+      v = () => {
+        g(e => 0 === e ? y - E : e - 1)
+      },
+      I = () => {
+        g(e => e >= y - E ? 0 : e + 1)
+      },
+      T = i.useCallback(e => ({
+        x: (e - _) * 100
+      }), [_]),
+      [S, A] = (0, l.bYB)(t.length, T);
+    return i.useEffect(() => {
+      A(T)
+    }, [A, T]), (0, r.jsx)("div", {
+      className: n,
+      children: (0, r.jsxs)("div", {
+        className: u.cardContainer,
+        children: [y > E && (0, r.jsx)(l.P3F, {
+          onClick: O ? v : true,
+          className: o()({
+            [u.leftArrow]: O,
+            [u.inactiveArrow]: !O
+          }),
+          children: (0, r.jsx)(l.whL, {
+            className: u.arrowIcon,
+            colorClass: u.arrowIcon
+          })
+        }), (0, r.jsx)("div", {
+          className: u.cardInnerContainer,
+          children: S.map((e, n) => {
+            let {
+              x: i
+            } = e;
+            return (0, r.jsx)(s.animated.div, {
+              className: u.card,
+              style: {
+                transform: null == i ? true : i.to(e => "translate3d(".concat(e, "%,0,0)"))
+              },
+              children: (0, r.jsx)(c.Z, p(f({}, t[n]), {
+                cardType: a
+              }), "".concat(t[n].name, "_").concat(n, "_perks_card"))
+            }, "".concat(t[n].name, "_").concat(n, "_animated_div"))
+          })
+        }), y > E && (0, r.jsx)(l.P3F, {
+          onClick: I,
+          className: u.rightArrow,
+          children: (0, r.jsx)(l.ZSh, {
+            className: u.arrowIcon,
+            colorClass: u.arrowIcon
+          })
+        }), y > E && (0, r.jsx)("div", {
+          className: u.cardProgressBar,
+          children: t.map((e, t) => {
+            if (!(t > y - E)) return (0, r.jsx)("div", {
+              className: t === _ ? u.selectedDot : u.dot
+            }, "progress_bar_dot_".concat(t))
+          })
+        })]
+      })
+    })
+  }

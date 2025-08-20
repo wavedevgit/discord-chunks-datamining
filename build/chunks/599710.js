@@ -1,5 +1,6 @@
-/** Chunk was on 66181 **/
-/** chunk id: 599710, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 599710, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   backContainer: "backContainer__951af",
   icon: "icon__951af",

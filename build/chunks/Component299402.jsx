@@ -1,12 +1,12 @@
 /** Chunk was on 24209 **/
 /** chunk id: 299402, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => b
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
-  o = require.n(Chunk512722),
+  i = require.n(Chunk512722),
   Chunk990547 = require("./990547.js"),
   Chunk481060 = require("./481060.js"),
   Chunk110924 = require("./110924.js"),
@@ -20,40 +20,40 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk719889 = require("./719889.js");
 
-function E(e) {
+function b(e) {
   let {
     transitionState: t,
     initialSlide: n = I._m.GUILD_TEMPLATES,
     onSuccess: l,
-    onClose: E,
+    onClose: b,
     onSlideChange: S,
     hasJoinButton: O
-  } = e, [C, b] = i.useState(n), g = (0, c.Z)(C), [L, D] = i.useState(null), [h, A] = i.useState(null), [x, v] = i.useState(null), [w, U] = i.useState(false);
-  i.useEffect(() => {
-    b(n)
-  }, [b, n]), i.useEffect(() => {
-    C !== g && S(C)
-  }, [S, C, g]);
-  let y = i.useCallback(e => {
-      b(I._m.CREATION_INTENT), A(e), u.default.track(N.rMx.GUILD_TEMPLATE_SELECTED, {
+  } = e, [E, C] = o.useState(n), x = (0, c.Z)(E), [h, g] = o.useState(null), [w, L] = o.useState(null), [v, y] = o.useState(null), [D, j] = o.useState(false);
+  o.useEffect(() => {
+    C(n)
+  }, [C, n]), o.useEffect(() => {
+    E !== x && S(E)
+  }, [S, E, x]);
+  let A = o.useCallback(e => {
+      C(I._m.CREATION_INTENT), L(e), u.default.track(N.rMx.GUILD_TEMPLATE_SELECTED, {
         template_name: e.id,
         template_code: e.code
       })
     }, []),
-    G = i.useCallback(e => {
-      U(e === I.lr.COMMUNITY), b(I._m.CUSTOMIZE_GUILD)
+    U = o.useCallback(e => {
+      j(e === I.lr.COMMUNITY), C(I._m.CUSTOMIZE_GUILD)
     }, []),
-    j = i.useCallback(() => b(I._m.JOIN_GUILD), [b]),
-    P = i.useCallback(() => {
-      if (C === I._m.CUSTOMIZE_GUILD) return void b(I._m.CREATION_INTENT);
-      b(I._m.GUILD_TEMPLATES), A(null)
-    }, [C]),
-    M = i.useCallback(e => {
-      v(e), l(e)
+    G = o.useCallback(() => C(I._m.JOIN_GUILD), [C]),
+    P = o.useCallback(() => {
+      if (E === I._m.CUSTOMIZE_GUILD) return void C(I._m.CREATION_INTENT);
+      C(I._m.GUILD_TEMPLATES), L(null)
+    }, [E]),
+    M = o.useCallback(e => {
+      y(e), l(e)
+    }, [l, y]),
+    k = o.useCallback(() => {
+      i()(null != v, "handleSuccess called before onGuildCreated"), l(v)
     }, [l, v]),
-    k = i.useCallback(() => {
-      o()(null != x, "handleSuccess called before onGuildCreated"), l(x)
-    }, [l, x]),
     R = {
       impression_group: a.ImpressionGroups.GUILD_ADD_FLOW
     },
@@ -66,49 +66,49 @@ function E(e) {
       children: (0, r.jsx)("div", {
         className: T.container,
         children: (0, r.jsxs)(s.MyZ, {
-          activeSlide: C,
+          activeSlide: E,
           width: Z,
-          onSlideReady: e => D(e),
+          onSlideReady: e => g(e),
           children: [(0, r.jsx)(s.Mi4, {
             id: I._m.GUILD_TEMPLATES,
             impressionName: a.ImpressionNames.GUILD_ADD_LANDING,
             impressionProperties: R,
             children: (0, r.jsx)(p.Z, {
               isNewUser: false,
-              onJoin: O ? j : true,
-              onChooseTemplate: y,
-              onClose: E
+              onJoin: O ? G : true,
+              onChooseTemplate: A,
+              onClose: b
             })
           }), (0, r.jsx)(s.Mi4, {
             id: I._m.CREATION_INTENT,
             impressionName: a.ImpressionNames.GUILD_ADD_INTENT_SELECTION,
             impressionProperties: R,
             children: (0, r.jsx)(d.Z, {
-              onClose: E,
+              onClose: b,
               onBack: P,
-              onCreationIntentChosen: G
+              onCreationIntentChosen: U
             })
           }), (0, r.jsx)(s.Mi4, {
             id: I._m.CUSTOMIZE_GUILD,
             impressionName: a.ImpressionNames.GUILD_ADD_CUSTOMIZE,
             impressionProperties: R,
             children: (0, r.jsx)(m.Z, {
-              guildTemplate: h,
+              guildTemplate: w,
               onGuildCreated: M,
-              onClose: E,
+              onClose: b,
               onBack: P,
-              isSlideReady: L === I._m.CUSTOMIZE_GUILD,
-              isCommunity: w
+              isSlideReady: h === I._m.CUSTOMIZE_GUILD,
+              isCommunity: D
             })
           }), (0, r.jsx)(s.Mi4, {
             id: I._m.CHANNEL_PROMPT,
             impressionName: a.ImpressionNames.GUILD_ADD_CHANNEL_PROMPT,
             impressionProperties: R,
             children: (0, r.jsx)(_.Z, {
-              createdGuildId: x,
-              onClose: E,
+              createdGuildId: v,
+              onClose: b,
               onChannelPromptCompleted: k,
-              isSlideReady: L === I._m.CHANNEL_PROMPT
+              isSlideReady: h === I._m.CHANNEL_PROMPT
             })
           }), (0, r.jsx)(s.Mi4, {
             id: I._m.JOIN_GUILD,
@@ -116,8 +116,8 @@ function E(e) {
             impressionProperties: R,
             children: (0, r.jsx)(f.Z, {
               onBack: P,
-              onClose: E,
-              isSlideReady: L === I._m.JOIN_GUILD
+              onClose: b,
+              isSlideReady: h === I._m.JOIN_GUILD
             })
           })]
         })

@@ -1,4 +1,4 @@
-/** Chunk was on 69003 **/
+/** Chunk was on 91488 **/
 /** chunk id: 55185, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   I: () => T,
@@ -21,7 +21,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk87587 = require("./87587.js"),
   Chunk354810 = require("./354810.js");
-async function v(e) {
+async function j(e) {
   await d.hW.updateAsync("status", t => {
     t.status = s.Gm.create({
       value: e
@@ -29,7 +29,7 @@ async function v(e) {
   }, d.fy.INFREQUENT_USER_ACTION)
 }
 
-function j(e) {
+function v(e) {
   let {
     closePopout: t
   } = e;
@@ -41,7 +41,7 @@ function j(e) {
       size: "sm",
       text: O.intl.string(b.default.Poezn5),
       onClick: () => {
-        t(), v(c.Skl.ONLINE)
+        t(), j(c.Skl.ONLINE)
       },
       fullWidth: true
     })
@@ -80,14 +80,14 @@ function C(e) {
       })]
     }), (0, i.jsx)(c.rsf, {
       onChange: e => {
-        u.G6.updateSetting(e), n && v(e ? c.Skl.ONLINE : c.Skl.INVISIBLE)
+        u.G6.updateSetting(e), n && j(e ? c.Skl.ONLINE : c.Skl.INVISIBLE)
       },
       checked: t
     })]
   })
 }
 
-function E(e) {
+function x(e) {
   let {
     children: t,
     closePopout: n
@@ -127,11 +127,11 @@ function E(e) {
   })
 }
 
-function x(e) {
+function E(e) {
   let {
     closePopout: t
   } = e, n = u.G6.useSetting();
-  return (0, i.jsxs)(E, {
+  return (0, i.jsxs)(x, {
     closePopout: t,
     children: [(0, i.jsx)(c.Text, {
       variant: "text-xs/normal",
@@ -155,7 +155,7 @@ function S(e) {
   let {
     closePopout: t
   } = e;
-  return (0, i.jsxs)(E, {
+  return (0, i.jsxs)(x, {
     closePopout: t,
     children: [(0, i.jsx)(c.Text, {
       variant: "text-xs/normal",
@@ -164,17 +164,17 @@ function S(e) {
       children: O.intl.format(b.default["vtp/IS"], {
         learnMoreLink: f.Z.getArticleURL(m.BhN.ACTIVITY_STATUS_SETTINGS)
       })
-    }), (0, i.jsx)(j, {
+    }), (0, i.jsx)(v, {
       closePopout: t
     })]
   })
 }
 
-function P(e) {
+function I(e) {
   let {
     closePopout: t
   } = e, n = u.G6.useSetting();
-  return (0, i.jsxs)(E, {
+  return (0, i.jsxs)(x, {
     closePopout: t,
     children: [(0, i.jsx)(c.Text, {
       variant: "text-xs/normal",
@@ -194,13 +194,13 @@ function P(e) {
   })
 }
 
-function I(e) {
+function P(e) {
   let {
     closePopout: t
   } = e, n = u.G6.useSetting(), {
     showLinkToSettings: r
   } = (0, h.D)("popout");
-  return (0, i.jsxs)(E, {
+  return (0, i.jsxs)(x, {
     children: [(0, i.jsx)(C, {
       showCurrentGame: n,
       closePopout: t
@@ -222,7 +222,7 @@ function N(e) {
   let {
     closePopout: t
   } = e;
-  return (0, i.jsxs)(E, {
+  return (0, i.jsxs)(x, {
     children: [(0, i.jsx)(o.X6, {
       variant: "heading-sm/semibold",
       color: "header-primary",
@@ -234,7 +234,7 @@ function N(e) {
       children: O.intl.format(b.default["vtp/IS"], {
         learnMoreLink: f.Z.getArticleURL(m.BhN.ACTIVITY_STATUS_SETTINGS)
       })
-    }), (0, i.jsx)(j, {
+    }), (0, i.jsx)(v, {
       closePopout: t
     })]
   })
@@ -246,7 +246,7 @@ function w(e) {
   } = e, n = u.G6.useSetting(), {
     showLinkToSettings: r
   } = (0, h.D)("popout");
-  return (0, i.jsxs)(E, {
+  return (0, i.jsxs)(x, {
     children: [(0, i.jsx)(C, {
       showCurrentGame: n,
       shouldShowStatus: true,
@@ -276,7 +276,7 @@ function T(e) {
       r()
     }, [r]), o) {
     case 0:
-      return (0, i.jsx)(x, {
+      return (0, i.jsx)(E, {
         closePopout: n
       });
     case 1:
@@ -284,11 +284,11 @@ function T(e) {
         closePopout: n
       });
     case 2:
-      return (0, i.jsx)(P, {
+      return (0, i.jsx)(I, {
         closePopout: n
       });
     case 3:
-      return (0, i.jsx)(I, {
+      return (0, i.jsx)(P, {
         closePopout: n
       });
     case 4:

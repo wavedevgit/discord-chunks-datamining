@@ -1,7 +1,7 @@
 /** Chunk was on 93886 **/
 /** chunk id: 496025, original params: e,t,a (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => T
 }), require("./388685.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk165432 = require("./165432.js"),
   Chunk451429 = require("./451429.js");
 
-function T() {
+function O() {
   var e;
   let t = (0, Chunk442837.Wu)([Chunk55589.Z], () => Chunk55589.Z.getSortedChannels()[1]),
     [a, l] = Chunk647438.useState(exports.length > 0 ? exports[0].channelId : true),
@@ -39,17 +39,17 @@ function T() {
         let t = h.Z.getChannel(e.channelId);
         return {
           value: e.channelId,
-          label: null != t ? (0, m.F6)(t, b.default, p.Z) : e.channelId
+          label: null != t ? (0, m.F6)(t, v.default, p.Z) : e.channelId
         }
       })
     })),
-    g = Chunk647438.useCallback(() => {
+    j = Chunk647438.useCallback(() => {
       var e;
       if (null == i || !i.isPrivate()) return;
       let t = (0, Chunk630388.x9)(null != (e = i.recipientFlags) ? module : 0, Chunk602715.V.DISMISSED_IN_GAME_MESSAGE_NUX);
       Chunk258732.Z.updatePrivateChannelRecipientFlags(i.id, exports)
     }, [i]),
-    j = null != i && !!i.isPrivate() && (0, Chunk630388.yE)(null != (e = i.recipientFlags) ? module : 0, Chunk602715.V.DISMISSED_IN_GAME_MESSAGE_NUX);
+    g = null != i && !!i.isPrivate() && (0, Chunk630388.yE)(null != (e = i.recipientFlags) ? module : 0, Chunk602715.V.DISMISSED_IN_GAME_MESSAGE_NUX);
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-md/semibold",
@@ -83,7 +83,7 @@ function T() {
   })
 }
 
-function O() {
+function E() {
   let e = Chunk647438.useCallback(() => {
     Chunk493683.Z.openPrivateChannel({
       recipientIds: [Chunk894257.I]
@@ -97,14 +97,14 @@ function O() {
   })
 }
 
-function E() {
+function T() {
   let e = (0, Chunk442837.e7)([Chunk432877.ZP], () => Chunk432877.ZP.allByCategory(Chunk432877.zU.MESSAGING), [], Chunk442837.pF).map(e => {
     let [t, a, {
       label: r
     }] = e;
     return (0, n.jsx)(c.j7V, {
       value: a,
-      onChange: e => (0, g.Z)(t, e),
+      onChange: e => (0, j.Z)(t, e),
       hideBorder: true,
       className: C.switch,
       children: r
@@ -114,8 +114,8 @@ function E() {
     className: i()(Chunk451429.panel, Chunk165432.panel),
     children: [module, (0, Chunk951288.jsx)("div", {
       className: Chunk165432.divider
-    }), (0, Chunk951288.jsx)(T, {}), (0, Chunk951288.jsx)("div", {
+    }), (0, Chunk951288.jsx)(O, {}), (0, Chunk951288.jsx)("div", {
       className: Chunk165432.divider
-    }), (0, Chunk951288.jsx)(O, {})]
+    }), (0, Chunk951288.jsx)(E, {})]
   })
 }

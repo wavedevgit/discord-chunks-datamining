@@ -46,15 +46,15 @@ let A = {
       a = h.Z.getChannel(i),
       l = p.ZP.getSection(i, null == a ? true : a.isDM()) === S.ULH.SIDEBAR_CHAT ? p.ZP.getSidebarState(i) : null,
       c = (null == l ? true : l.type) === d.tI.VIEW_THREAD || (null == l ? true : l.type) === d.tI.VIEW_CHANNEL ? l.channelId : null;
-    if (false === N(i) || false === N(c)) returnfalse;
+    if (false === C(i) || false === C(c)) returnfalse;
     if (null != i && (null == l ? true : l.type) === d.tI.CREATE_THREAD) return u.Z.closeChannelSidebar(i), false;
-    let f = C(i),
-      _ = C(c);
+    let f = N(i),
+      _ = N(c);
     return null == i || f || _ || null == l ? null != i && !f && s.Z.getChatOpen(i) ? r.Z.updateChatOpen(i, false) : T.S.dispatch(S.CkL.SCROLLTO_PRESENT) : u.Z.closeChannelSidebar(i), false
   }
 };
 
-function N(e) {
+function C(e) {
   if (null != e) {
     if (g.Z.isEditingAny(e)) return i.Z.endEditMessage(e), false;
     if (null != c.Z.getPendingReply(e)) return (0, l.A6)(e), false;
@@ -62,7 +62,7 @@ function N(e) {
   }
 }
 
-function C(e) {
+function N(e) {
   if (null == e) returnfalse;
   let t = false;
   return E.Z.getMessages(e).hasMoreAfter && (i.Z.jumpToPresent(e, S.AQB), t = true), b.ZP.hasUnread(e) && ((0, a.In)(e, {

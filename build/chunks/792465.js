@@ -147,8 +147,8 @@ module.exports = function(e) {
       contains: [S]
     };
   S.contains.push(A);
-  let N = [T, I, e.C_BLOCK_COMMENT_MODE, p, h, O],
-    C = {
+  let C = [T, I, e.C_BLOCK_COMMENT_MODE, p, h, O],
+    N = {
       begin: t.concat(/#\[\s*\\?/, t.either(i, a)),
       beginScope: "meta",
       end: /]/,
@@ -164,8 +164,8 @@ module.exports = function(e) {
           literal: m,
           keyword: ["new", "array"]
         },
-        contains: ["self", ...N]
-      }, ...N, {
+        contains: ["self", ...C]
+      }, ...C, {
         scope: "meta",
         variants: [{
           match: i
@@ -177,7 +177,7 @@ module.exports = function(e) {
   return {
     case_insensitive: false,
     keywords: b,
-    contains: [C, e.HASH_COMMENT_MODE, e.COMMENT("//", "$"), e.COMMENT("/\\*", "\\*/", {
+    contains: [N, e.HASH_COMMENT_MODE, e.COMMENT("//", "$"), e.COMMENT("/\\*", "\\*/", {
       contains: [{
         scope: "doctag",
         match: "@[A-Za-z]+"
@@ -222,7 +222,7 @@ module.exports = function(e) {
         excludeBegin: true,
         excludeEnd: true,
         keywords: b,
-        contains: ["self", C, o, I, e.C_BLOCK_COMMENT_MODE, p, h]
+        contains: ["self", N, o, I, e.C_BLOCK_COMMENT_MODE, p, h]
       }]
     }, {
       scope: "class",

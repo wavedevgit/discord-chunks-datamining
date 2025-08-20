@@ -1,12 +1,13 @@
-/** Chunk was on 66181 **/
-/** chunk id: 429789, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 429789, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => f
+  Z: () => m
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk846027 = require("./846027.js"),
@@ -18,54 +19,54 @@ var Chunk120356 = require("./120356.js"),
   Chunk197571 = require("./197571.js");
 let h = (0, Chunk313201.hQ)();
 
-function f(e) {
+function m(e) {
   let {
     refreshStyles: t
   } = e, {
     attenuation: n,
-    attenuateWhileSpeakingSelf: r,
+    attenuateWhileSpeakingSelf: i,
     attenuateWhileSpeakingOthers: c
-  } = (0, a.cj)([u.Z], () => ({
-    attenuation: u.Z.getAttenuation(),
-    attenuateWhileSpeakingSelf: u.Z.getAttenuateWhileSpeakingSelf(),
-    attenuateWhileSpeakingOthers: u.Z.getAttenuateWhileSpeakingOthers()
-  })), f = (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(l.vwX, {
+  } = (0, o.cj)([d.Z], () => ({
+    attenuation: d.Z.getAttenuation(),
+    attenuateWhileSpeakingSelf: d.Z.getAttenuateWhileSpeakingSelf(),
+    attenuateWhileSpeakingOthers: d.Z.getAttenuateWhileSpeakingOthers()
+  })), m = (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(s.vwX, {
       id: h,
-      tag: l.RB0.H5,
-      className: g.marginBottom8,
-      children: p.intl.string(p.t.oSdBvb)
-    }), (0, i.jsx)(l.iRW, {
+      tag: s.RB0.H5,
+      className: p.marginBottom8,
+      children: _.intl.string(_.t.oSdBvb)
+    }), (0, r.jsx)(s.iRW, {
       initialValue: n,
       onValueChange: e => {
-        o.Z.setAttenuation(e, r, c)
+        l.Z.setAttenuation(e, i, c)
       },
       "aria-labelledby": h
-    }), (0, i.jsx)(l.R94, {
-      className: s()({
-        [g.marginBottom20]: !t
+    }), (0, r.jsx)(s.R94, {
+      className: a()({
+        [p.marginBottom20]: !t
       }),
-      type: l.R94.Types.DESCRIPTION,
-      children: p.intl.string(p.t["0A/8Rk"])
-    }), !t && (0, i.jsx)(l.$i$, {
-      className: g.marginBottom20
-    }), (0, i.jsx)(l.j7V, {
-      value: r,
-      onChange: e => o.Z.setAttenuation(n, e, c),
+      type: s.R94.Types.DESCRIPTION,
+      children: _.intl.string(_.t["0A/8Rk"])
+    }), !t && (0, r.jsx)(s.$i$, {
+      className: p.marginBottom20
+    }), (0, r.jsx)(s.j7V, {
+      value: i,
+      onChange: e => l.Z.setAttenuation(n, e, c),
       hideBorder: t,
-      children: p.intl.string(p.t["9dHxRU"])
-    }), (0, i.jsx)(l.j7V, {
+      children: _.intl.string(_.t["9dHxRU"])
+    }), (0, r.jsx)(s.j7V, {
       value: c,
-      onChange: e => o.Z.setAttenuation(n, r, e),
+      onChange: e => l.Z.setAttenuation(n, i, e),
       hideBorder: t,
-      children: p.intl.string(p.t.SMt0Gh)
+      children: _.intl.string(_.t.SMt0Gh)
     })]
   });
-  return (0, i.jsx)(d.F, {
-    setting: m.s6.VOICE_AND_VIDEO_ADVANCED_ATTENUATION,
-    children: t ? f : (0, i.jsx)(l.hjN, {
-      className: g.marginBottom20,
-      children: f
+  return (0, r.jsx)(u.F, {
+    setting: f.s6.VOICE_AND_VIDEO_ADVANCED_ATTENUATION,
+    children: t ? m : (0, r.jsx)(s.hjN, {
+      className: p.marginBottom20,
+      children: m
     })
   })
 }

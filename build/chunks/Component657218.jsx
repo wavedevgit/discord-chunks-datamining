@@ -1,4 +1,4 @@
-/** Chunk was on 36499 **/
+/** Chunk was on 5665 **/
 /** chunk id: 657218, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => K
@@ -117,17 +117,17 @@ function X(e) {
     });
     (0, B.NK)(t)
   }, [t]);
-  return (0, r.jsxs)(O.ZP, {
-    toolbar: (0, r.jsx)(O.ZP.Icon, {
+  return (0, r.jsxs)(j.ZP, {
+    toolbar: (0, r.jsx)(j.ZP.Icon, {
       icon: c.Dio,
       tooltip: V.intl.string(V.t.cpT0Cg),
       onClick: n
     }),
-    children: [(0, r.jsx)(O.ZP.Icon, {
+    children: [(0, r.jsx)(j.ZP.Icon, {
       icon: c.or_,
       disabled: true,
       "aria-label": V.intl.string(V.t["7Xm5QE"])
-    }), (0, r.jsx)(O.ZP.Title, {
+    }), (0, r.jsx)(j.ZP.Title, {
       children: V.intl.string(V.t["4WNcpq"])
     })]
   })
@@ -194,7 +194,7 @@ function Q(e) {
   }(t, f), C = (0, L.vH)(t), {
     isGeneratingAI: x,
     enableAIFeatures: v,
-    renderAiGenerateButton: O
+    renderAiGenerateButton: j
   } = (0, F.U)({
     parentChannel: t,
     parentMessageId: n,
@@ -296,7 +296,7 @@ function Q(e) {
           fade: true,
           children: (0, r.jsxs)("div", {
             className: z.scrollerInner,
-            children: [(0, r.jsxs)(j.ZP, {
+            children: [(0, r.jsxs)(O.ZP, {
               channelId: "create-thread-null",
               children: [(0, r.jsx)("div", {
                 className: W.iconWrapper,
@@ -312,7 +312,7 @@ function Q(e) {
                 disabled: N,
                 isGeneratingAI: x,
                 enableAIFeatures: v,
-                renderAiGenerateButton: O
+                renderAiGenerateButton: j
               }), t.type === G.d4z.GUILD_TEXT ? (0, r.jsx)(J, {
                 startedFromMessage: null != n,
                 threadSettings: p,

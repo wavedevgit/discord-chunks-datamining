@@ -53,14 +53,14 @@ function y(e, t) {
   }), e
 }
 let _ = function(e) {
-  var t, n, l, _, P, k;
+  var t, n, l, _, k, O;
   let {
-    sourceURL: O
+    sourceURL: P
   } = e, {
     videoPlayerRef: S,
     cropData: N,
     setCropData: E
-  } = (0, h.S)(), [R, L] = a.useState(((k = !(null == (n = S.current) || null == (t = n.videoElement) ? true : t.paused), true), k)), T = a.useRef(null), [F, D] = a.useState(null), [I, A] = a.useState(), Z = a.useRef(null), B = a.useRef(null), [M, z] = a.useState(0), [H, W] = a.useState(false), [U, V] = a.useState(null);
+  } = (0, h.S)(), [R, L] = a.useState(((O = !(null == (n = S.current) || null == (t = n.videoElement) ? true : t.paused), true), O)), T = a.useRef(null), [F, D] = a.useState(null), [I, A] = a.useState(), Z = a.useRef(null), B = a.useRef(null), [M, z] = a.useState(0), [H, W] = a.useState(false), [U, V] = a.useState(null);
   (0, m.Z)(() => {
     var e;
     let t = null == (e = S.current) ? true : e.videoElement;
@@ -265,7 +265,7 @@ let _ = function(e) {
           },
           className: b.timelineVideo,
           ref: T,
-          src: O,
+          src: P,
           muted: true
         }), (0, r.jsxs)("div", {
           className: b.dragBox,
@@ -318,7 +318,7 @@ let _ = function(e) {
               "aria-valuemin": N.start + g.Hp,
               "aria-valuenow": N.end,
               "aria-valuetext": C(N.end),
-              "aria-valuemax": null == (P = S.current) || null == (_ = P.videoElement) ? true : _.duration,
+              "aria-valuemax": null == (k = S.current) || null == (_ = k.videoElement) ? true : _.duration,
               "aria-label": x.intl.string(x.t.bBgBYm),
               children: (0, r.jsx)("div", {
                 className: b.cropRightArrow

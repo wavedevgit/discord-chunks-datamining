@@ -1,7 +1,8 @@
-/** Chunk was on 17938 **/
-/** chunk id: 789155, original params: e,s,r (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 789155, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => d
+  Z: () => f
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -13,57 +14,57 @@ var Chunk780384 = require("./780384.js"),
   Chunk978774 = require("./978774.js"),
   Chunk982404 = require("./982404.js"),
   Chunk299156 = require("./299156.js");
-let d = function(e) {
+let f = function(e) {
   let {
-    churnUserDiscountOffer: s,
-    onDiscountClaim: r,
-    onContinue: d
-  } = e, p = (0, o.ZP)(), x = (0, n.wj)(p) ? u : m;
-  return null == s ? null : (0, t.jsxs)("div", {
+    churnUserDiscountOffer: t,
+    onDiscountClaim: n,
+    onContinue: f
+  } = e, _ = (0, s.ZP)(), p = (0, i.wj)(_) ? u : d;
+  return null == t ? null : (0, r.jsxs)("div", {
     className: c.churnFooterContainer,
-    children: [(0, t.jsx)("div", {
+    children: [(0, r.jsx)("div", {
       className: c.churnFooterGlow
-    }), (0, t.jsx)("div", {
+    }), (0, r.jsx)("div", {
       className: c.churnFooterTopBorder
-    }), (0, t.jsx)("div", {
+    }), (0, r.jsx)("div", {
       className: c.churnFooterContent,
-      children: (0, t.jsxs)("div", {
+      children: (0, r.jsxs)("div", {
         className: c.churnFooterContentBody,
-        children: [(0, t.jsx)("img", {
+        children: [(0, r.jsx)("img", {
           alt: "",
-          src: x,
+          src: p,
           className: c.churnFooterIcon
-        }), (0, t.jsxs)("div", {
+        }), (0, r.jsxs)("div", {
           className: c.churnFooterContentBodyInner,
-          children: [(0, t.jsx)(i.Text, {
+          children: [(0, r.jsx)(o.Text, {
             variant: "text-md/medium",
             className: c.churnFooterCopy,
             children: l.intl.format(l.t["2gem09"], {
-              percent: s.discount.amount,
-              numMonths: s.discount.user_usage_limit
+              percent: t.discount.amount,
+              numMonths: t.discount.user_usage_limit
             })
-          }), (0, t.jsxs)("div", {
+          }), (0, r.jsxs)("div", {
             className: c.churnFooterCTAs,
-            children: [(0, t.jsxs)(i.gtL, {
+            children: [(0, r.jsxs)(o.gtL, {
               "data-migration-pending": true,
               className: c.churnFooterClaimCTA,
               innerClassName: c.churnFooterClaimCTAInner,
               look: a.iL.OUTLINED,
               color: a.Tt.CUSTOM,
-              onClick: () => null == r ? true : r(),
-              children: [(0, t.jsx)(i.SrA, {
+              onClick: () => null == n ? true : n(),
+              children: [(0, r.jsx)(o.SrA, {
                 size: "xs",
                 color: "currentColor",
                 className: c.churnFooterClaimIcon
-              }), (0, t.jsx)(i.Text, {
+              }), (0, r.jsx)(o.Text, {
                 variant: "text-sm/semibold",
                 className: c.churnFooterClaimCopy,
                 children: l.intl.string(l.t.zrCzVF)
               })]
-            }), (0, t.jsx)(i.zxk, {
+            }), (0, r.jsx)(o.zxk, {
               variant: "primary",
               text: l.intl.string(l.t["3PatS0"]),
-              onClick: () => null == d ? true : d()
+              onClick: () => null == f ? true : f()
             })]
           })]
         })]

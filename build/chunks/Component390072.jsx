@@ -1,7 +1,7 @@
-/** Chunk was on 98464 **/
-/** chunk id: 390072, original params: e,n,t (module,exports,require) **/
+/** Chunk was on 27978 **/
+/** chunk id: 390072, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  Z: () => d
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -12,36 +12,36 @@ var Chunk951288 = require("./951288.js"),
   Chunk765305 = require("./765305.js"),
   Chunk831272 = require("./831272.js");
 
-function u(e) {
+function d(e) {
   let {
-    guildScheduledEvent: n,
-    channel: t,
-    onClose: u
-  } = e, _ = n.entity_type === s.WX.EXTERNAL, g = l.useCallback(e => (0, a.Qt)(n, u)(e), [n, u]), p = (0, o.u)(n, t);
-  if (null == p) return null;
+    guildScheduledEvent: t,
+    channel: n,
+    onClose: d
+  } = e, h = t.entity_type === c.WX.EXTERNAL, p = i.useCallback(e => (0, o.Qt)(t, d)(e), [t, d]), m = (0, a.u)(t, n);
+  if (null == m) return null;
   let {
-    IconComponent: m,
+    IconComponent: g,
     locationName: f
-  } = p, I = (0, i.jsxs)(i.Fragment, {
-    children: [null != m && (0, i.jsx)(m, {
+  } = m, _ = (0, r.jsxs)(r.Fragment, {
+    children: [null != g && (0, r.jsx)(g, {
       size: "custom",
       color: "currentColor",
       width: 20,
       height: 20,
-      className: c.channelIcon
-    }), (0, i.jsx)(r.Text, {
+      className: u.channelIcon
+    }), (0, r.jsx)(l.Text, {
       color: "header-secondary",
       variant: "text-sm/normal",
-      className: c.locationText,
-      children: (0, d.m)(f, true)
+      className: u.locationText,
+      children: (0, s.m)(f, true)
     })]
   });
-  return (0, i.jsx)("div", {
-    className: c.row,
-    children: null != g ? (0, i.jsx)(r.P3F, {
-      className: _ ? c.externalLocation : c.channelLocation,
-      onClick: g,
-      children: I
-    }) : I
+  return (0, r.jsx)("div", {
+    className: u.row,
+    children: null != p ? (0, r.jsx)(l.P3F, {
+      className: h ? u.externalLocation : u.channelLocation,
+      onClick: p,
+      children: _
+    }) : _
   })
 }

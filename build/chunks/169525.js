@@ -1,12 +1,13 @@
-/** Chunk was on 85372 **/
-/** chunk id: 169525, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 169525, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  As: () => O,
-  BP: () => f,
-  MC: () => I,
+  As: () => E,
+  BP: () => h,
+  MC: () => y,
   dn: () => p,
-  hL: () => g,
-  lK: () => y
+  hL: () => b,
+  lK: () => m
 }), require("./997841.js");
 var Chunk399606 = require("./399606.js"),
   Chunk991621 = require("./991621.js"),
@@ -23,80 +24,82 @@ let p = (e, t) => {
     let {
       spoiler: n,
       flags: r = 0
-    } = e, a = (0, o.LD)({
+    } = e, s = (0, o.LD)({
       type: i.l.Attachment,
       media: e
-    }, t), s = (0, o.UJ)({
+    }, t), l = (0, o.UJ)({
       type: i.l.Attachment,
       media: e
     }, t);
-    return a.length > 0 ? a[0] : s ? l.wk.POTENTIAL_EXPLICIT_CONTENT : n || (0, c.yE)(r, m.J0y.IS_SPOILER) ? l.wk.SPOILER : null
+    return s.length > 0 ? s[0] : l ? a.wk.POTENTIAL_EXPLICIT_CONTENT : n || (0, u.yE)(r, f.J0y.IS_SPOILER) ? a.wk.SPOILER : null
   },
-  f = (e, t, n, r) => {
-    let a = (0, o.LD)({
+  h = (e, t, n, r) => {
+    let s = (0, o.LD)({
         type: i.l.Embed,
         media: e
       }, r),
-      s = !t.author.bot && (0, o.UJ)({
+      l = !t.author.bot && (0, o.UJ)({
         type: i.l.Embed,
         media: e
       }, r);
-    return a.length > 0 ? a[0] : s ? l.wk.POTENTIAL_EXPLICIT_CONTENT : n ? l.wk.SPOILER : null
+    return s.length > 0 ? s[0] : l ? a.wk.POTENTIAL_EXPLICIT_CONTENT : n ? a.wk.SPOILER : null
   },
-  y = function(e, t) {
+  m = function(e, t) {
     let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
       r = arguments.length > 3 && true !== arguments[3] && arguments[3],
-      a = (0, o.LD)({
+      s = (0, o.LD)({
         type: i.l.GenericMedia,
         media: e
       }, t),
-      s = !r && (0, o.UJ)({
+      l = !r && (0, o.UJ)({
         type: i.l.GenericMedia,
         media: e
       }, t);
-    return a.includes(l.wk.EXPLICIT_CONTENT) ? l.wk.EXPLICIT_CONTENT : a.includes(l.wk.GORE_CONTENT) ? l.wk.GORE_CONTENT : s ? l.wk.POTENTIAL_EXPLICIT_CONTENT : n ? l.wk.SPOILER : null
+    return s.includes(a.wk.EXPLICIT_CONTENT) ? a.wk.EXPLICIT_CONTENT : s.includes(a.wk.GORE_CONTENT) ? a.wk.GORE_CONTENT : l ? a.wk.POTENTIAL_EXPLICIT_CONTENT : n ? a.wk.SPOILER : null
   };
 
-function O(e, t, n) {
-  if (null == e) return [false, true];
-  let r = function(e) {
-    switch (e.type) {
-      case a.Ah.EMBED:
-        return {
-          type: i.l.Embed, media: e
-        };
-      case a.Ah.ATTACHMENT:
-        return {
-          type: i.l.Attachment, media: e
-        };
-      case a.Ah.COMPONENT:
-        return {
-          type: i.l.GenericMedia, media: e.srcUnfurledMediaItem
-        };
-      default:
-        return null
-    }
-  }(e);
-  if (null == r) return [false, true];
-  let s = (0, o.LD)(r, n),
-    u = (0, o.UJ)(r, n);
-  return s.length > 0 ? [true, s[0]] : u ? [true, l.wk.POTENTIAL_EXPLICIT_CONTENT] : e.spoiler ? [t, l.wk.SPOILER] : [false, true]
+function g(e) {
+  switch (e.type) {
+    case s.Ah.EMBED:
+      return {
+        type: i.l.Embed, media: e
+      };
+    case s.Ah.ATTACHMENT:
+      return {
+        type: i.l.Attachment, media: e
+      };
+    case s.Ah.COMPONENT:
+      return {
+        type: i.l.GenericMedia, media: e.srcUnfurledMediaItem
+      };
+    default:
+      return null
+  }
 }
 
-function g(e) {
+function E(e, t, n) {
+  if (null == e) return [false, true];
+  let r = g(e);
+  if (null == r) return [false, true];
+  let i = (0, o.LD)(r, n),
+    s = (0, o.UJ)(r, n);
+  return i.length > 0 ? [true, i[0]] : s ? [true, a.wk.POTENTIAL_EXPLICIT_CONTENT] : e.spoiler ? [t, a.wk.SPOILER] : [false, true]
+}
+
+function b(e) {
   let {
     channel: t,
     media: n
-  } = e, l = (0, r.e7)([u.Z], () => null != t && u.Z.can(m.Plq.MANAGE_MESSAGES, t)), a = s.cC.useSetting(), c = (0, o.kh)(i.n.GUILD);
-  return O(n, !(0, d.Z)(a, l), c)
+  } = e, a = (0, r.e7)([c.Z], () => null != t && c.Z.can(f.Plq.MANAGE_MESSAGES, t)), s = l.cC.useSetting(), u = (0, o.kh)(i.n.GUILD);
+  return E(n, !(0, d.Z)(s, a), u)
 }
-let I = e => {
+let y = e => {
   switch (e) {
-    case l.wk.EXPLICIT_CONTENT:
-    case l.wk.GORE_CONTENT:
-      return h.intl.string(h.t.SEgHFh);
-    case l.wk.SPOILER:
-      return h.intl.string(h.t.XpfDHx);
+    case a.wk.EXPLICIT_CONTENT:
+    case a.wk.GORE_CONTENT:
+      return _.intl.string(_.t.SEgHFh);
+    case a.wk.SPOILER:
+      return _.intl.string(_.t.XpfDHx);
     default:
       return
   }

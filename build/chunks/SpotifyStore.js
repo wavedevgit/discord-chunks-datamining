@@ -3,7 +3,7 @@
 "use strict";
 let r, i, a;
 require.d(exports, {
-  Z: () => eV
+  Z: () => eZ
 }), require("./388685.js"), require("./49124.js"), require("./35282.js"), require("./539854.js"), require("./704826.js"), require("./997841.js");
 var o, Chunk392711 = require("./392711.js"),
   l = require.n(Chunk392711),
@@ -40,7 +40,7 @@ function D(e, t, n) {
   }) : e[t] = n, e
 }
 
-function L(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -53,7 +53,7 @@ function L(e) {
   return e
 }
 
-function x(e, t) {
+function L(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -64,19 +64,19 @@ function x(e, t) {
   return n
 }
 
-function M(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
+function j(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let k = Chunk726542.Z.get(Chunk981631.ABu.SPOTIFY),
-  j = "wss://dealer.spotify.com/?access_token=",
+let M = Chunk726542.Z.get(Chunk981631.ABu.SPOTIFY),
+  k = "wss://dealer.spotify.com/?access_token=",
   U = "hm://pusher/v1/connections/",
   G = 30 * Chunk70956.Z.Millis.SECOND,
   B = 30 * Chunk70956.Z.Millis.SECOND,
-  V = 100,
-  F = 5 * Chunk70956.Z.Millis.MINUTE,
-  Z = 5 * Chunk70956.Z.Millis.SECOND,
+  Z = 100,
+  V = 5 * Chunk70956.Z.Millis.MINUTE,
+  F = 5 * Chunk70956.Z.Millis.SECOND,
   H = 1.5 * Chunk70956.Z.Millis.SECOND,
   Y = "Computer",
   W = 5,
@@ -140,7 +140,7 @@ class eh {
   }
   connect() {
     this.connected || this._requestedConnect || ($.info("WS Connecting"), this._requestedDisconnect = false, this._requestedConnect = true, eU(this.accountId, this.accessToken).then(() => {
-      this._requestedConnect = false, this.socket = new WebSocket("".concat(j).concat(this.accessToken)), this.socket.onopen = this.handleOpen.bind(this), this.socket.onmessage = this.handleMessage.bind(this), this.socket.onclose = this.socket.onerror = this.handleClose.bind(this)
+      this._requestedConnect = false, this.socket = new WebSocket("".concat(k).concat(this.accessToken)), this.socket.onopen = this.handleOpen.bind(this), this.socket.onmessage = this.handleMessage.bind(this), this.socket.onclose = this.socket.onerror = this.handleClose.bind(this)
     }).catch(e => {
       $.error(e), this._requestedConnect = false, this.handleClose()
     }))
@@ -198,7 +198,7 @@ class eh {
     } = e;
     switch (t) {
       case "PLAYER_STATE_CHANGED":
-        null != n && null != n.state && ej(this.accountId, this.accessToken, n.state);
+        null != n && null != n.state && ek(this.accountId, this.accessToken, n.state);
         break;
       case "DEVICE_STATE_CHANGED":
         this.handleDeviceStateChange()
@@ -353,7 +353,7 @@ function eT(e) {
     E = null != c && null != i && 0 === s && !n;
   E || (es[t] = g);
   let O = r;
-  if (r = l().values(es).find(e => null != e), eD(b.default.getId()), null == o || E ? er.stop() : er.start(o.duration - s + Z, () => ef(p.id)), null != i && (!n && s > 0 || null == c || null != g && i.trackId !== g.track.id) ? ($.info("Listen along active but playback stopped or track changed. Stopping listen along in ".concat(Z, "ms")), ei.start(Z, () => {
+  if (r = l().values(es).find(e => null != e), eD(b.default.getId()), null == o || E ? er.stop() : er.start(o.duration - s + F, () => ef(p.id)), null != i && (!n && s > 0 || null == c || null != g && i.trackId !== g.track.id) ? ($.info("Listen along active but playback stopped or track changed. Stopping listen along in ".concat(F, "ms")), ei.start(F, () => {
       $.info("Stopping listening along"), (0, m.Z)(), ef(p.id)
     })) : ei.isStarted() && ($.info("Listen along stop cancelled as playback of track resumed"), ei.stop()), O === r || null == h && null == g || null != h && null != g && h.track.id === g.track.id && h.startTime === g.startTime) return f;
   null != o && (_.Z.dispatch({
@@ -387,7 +387,7 @@ function eA(e) {
   eo[t] = n, $.info("Devices updated for ".concat(t, ":"), n)
 }
 
-function eN(e) {
+function eC(e) {
   let {
     accountId: t,
     deviceId: n
@@ -395,7 +395,7 @@ function eN(e) {
   eE(t, n)
 }
 
-function eC(e) {
+function eN(e) {
   var t;
   let n, {
       activity: r,
@@ -429,7 +429,7 @@ function eP() {
   let {
     userId: e
   } = i, t = e_(module);
-  if (null == exports) return en.start(F, () => {
+  if (null == exports) return en.start(V, () => {
     null != i && i.userId === module && (0, Chunk524331.Z)()
   }), false;
   en.stop();
@@ -459,19 +459,19 @@ function eD(e) {
         checkSoundSharing: true,
         checkSoundboardSounds: false
       });
-    t && n && null != r ? (ee.start(B, ew, false), et.stop()) : et.start(V, () => ee.stop(), false)
+    t && n && null != r ? (ee.start(B, ew, false), et.stop()) : et.start(Z, () => ee.stop(), false)
   }
   returnfalse
 }
 
-function eL(e) {
+function ex(e) {
   let {
     userId: t
   } = e;
   return eD(t)
 }
 
-function ex(e) {
+function eL(e) {
   let {
     voiceStates: t
   } = e;
@@ -483,7 +483,7 @@ function ex(e) {
   }, false)
 }
 
-function eM(e) {
+function ej(e) {
   let {
     accountId: t,
     isPremium: n
@@ -492,7 +492,7 @@ function eM(e) {
   r.isPremium = n, $.info("Profile updated for ".concat(t, ": isPremium = ").concat(n))
 }
 
-function ek(e) {
+function eM(e) {
   let {
     settings: t
   } = e;
@@ -502,11 +502,11 @@ function ek(e) {
       sourceId: e,
       sound: n
     } = null == t ? true : t.desktopSettings;
-    null != e && E.ZP.getObservedAppNameForWindow(e) === k.name && n ? (ec = new f.Xp).start(B, ew) : (null == ec || ec.stop(), ec = null)
+    null != e && E.ZP.getObservedAppNameForWindow(e) === M.name && n ? (ec = new f.Xp).start(B, ew) : (null == ec || ec.stop(), ec = null)
   } else null == t && (null == ec || ec.stop(), ec = null)
 }
 
-function ej(e, t, n) {
+function ek(e, t, n) {
   var r, i, a, o, s, l, c, u, d, f, p, h, m, g;
   let E, b, {
     device: y,
@@ -529,7 +529,7 @@ function ej(e, t, n) {
         image: null == (a = T.album) ? true : a.images[0],
         type: null != (c = null == (o = T.album) ? true : o.type) ? c : P.Hw.ALBUM
       },
-      artists: Array.isArray(T.artists) ? T.artists.filter(e => (0, C.lm)(e.id) && (0, C.lm)(e.name)) : [],
+      artists: Array.isArray(T.artists) ? T.artists.filter(e => (0, N.lm)(e.id) && (0, N.lm)(e.name)) : [],
       isLocal: T.is_local || false
     }
   } else null != T && T.type === P.Hw.EPISODE && (E = {
@@ -546,7 +546,7 @@ function ej(e, t, n) {
     artists: [],
     isLocal: false
   });
-  if (null != y && true !== y.is_active && (y = M(L({}, y), {
+  if (null != y && true !== y.is_active && (y = j(x({}, y), {
       is_active: true
     })), null != S && [P.Hw.PLAYLIST, P.Hw.ALBUM].includes(S.type)) {
     let n = eB.getPlayerState(e);
@@ -586,7 +586,7 @@ function eU(e, t) {
     onlyRetryOnAuthorizationErrors: true
   }).then(n => {
     let r = n.body;
-    null != r ? ej(e, t, r).then(() => n) : ef(e)
+    null != r ? ek(e, t, r).then(() => n) : ef(e)
   }).catch(() => ef(e))
 }
 class eG extends(o = Chunk442837.ZP.Store) {
@@ -676,7 +676,7 @@ class eG extends(o = Chunk442837.ZP.Store) {
         button_urls: []
       },
       y = {
-        name: k.name,
+        name: M.name,
         assets: Chunk726542,
         details: Chunk710845,
         state: module,
@@ -697,16 +697,16 @@ let eB = new eG(Chunk570140.Z, {
     CONNECTION_OPEN: eO,
     SPOTIFY_ACCOUNT_ACCESS_TOKEN: ev,
     SPOTIFY_ACCOUNT_ACCESS_TOKEN_REVOKE: eI,
-    SPOTIFY_PROFILE_UPDATE: eM,
+    SPOTIFY_PROFILE_UPDATE: ej,
     SPOTIFY_PLAYER_STATE: eT,
     SPOTIFY_PLAYER_PLAY: eS,
-    ACTIVITY_PLAY: eC,
+    ACTIVITY_PLAY: eN,
     ACTIVITY_SYNC: eR,
     ACTIVITY_SYNC_STOP: ey,
     SPOTIFY_SET_DEVICES: eA,
-    SPOTIFY_SET_ACTIVE_DEVICE: eN,
-    SPEAKING: eL,
-    VOICE_STATE_UPDATES: ex,
-    MEDIA_ENGINE_SET_GO_LIVE_SOURCE: ek
+    SPOTIFY_SET_ACTIVE_DEVICE: eC,
+    SPEAKING: ex,
+    VOICE_STATE_UPDATES: eL,
+    MEDIA_ENGINE_SET_GO_LIVE_SOURCE: eM
   }),
-  eV = eB
+  eZ = eB

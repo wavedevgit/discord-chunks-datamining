@@ -1,78 +1,84 @@
-/** Chunk was on 84533 **/
-/** chunk id: 28061, original params: e,t,r (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 28061, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   Z: () => d
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  n = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk518950 = require("./518950.js"),
   Chunk871952 = require("./871952.js");
 
+function c(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function u(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      c(e, t, n[t])
+    })
+  }
+  return e
+}
+
 function d(e) {
   var t;
   let {
-    user: r,
-    checked: s,
-    onChange: d,
-    disabled: o
+    user: n,
+    checked: i,
+    onChange: c,
+    disabled: d
   } = e, {
-    avatarSrc: u,
-    eventHandlers: m
-  } = (0, l.Z)({
-    userId: null == r ? true : r.id,
-    size: i.EFr.SIZE_32
-  }), h = null != (t = r.globalName) ? t : r.username;
-  return (0, a.jsxs)("div", {
-    className: c.container,
-    children: [(0, a.jsx)("div", {
-      className: c.userAvatar,
-      children: (0, a.jsx)(i.qEK, function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var r = null != arguments[t] ? arguments[t] : {},
-            a = Object.keys(r);
-          "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(r, e).enumerable
-          }))), a.forEach(function(t) {
-            var a;
-            a = r[t], t in e ? Object.defineProperty(e, t, {
-              value: a,
-              enumerable: true,
-              configurable: true,
-              writable: true
-            }) : e[t] = a
-          })
-        }
-        return e
-      }({
-        className: n()({
-          [c.muted]: o
+    avatarSrc: f,
+    eventHandlers: _
+  } = (0, s.Z)({
+    userId: null == n ? true : n.id,
+    size: o.EFr.SIZE_32
+  }), p = null != (t = n.globalName) ? t : n.username;
+  return (0, r.jsxs)("div", {
+    className: l.container,
+    children: [(0, r.jsx)("div", {
+      className: l.userAvatar,
+      children: (0, r.jsx)(o.qEK, u({
+        className: a()({
+          [l.muted]: d
         }),
-        src: u,
-        "aria-label": h,
-        size: i.EFr.SIZE_32
-      }, m))
-    }), (0, a.jsxs)("div", {
-      className: c.usernameContainer,
-      children: [(0, a.jsx)(i.Text, {
-        className: c.userName,
-        color: o ? "text-muted" : "text-default",
+        src: f,
+        "aria-label": p,
+        size: o.EFr.SIZE_32
+      }, _))
+    }), (0, r.jsxs)("div", {
+      className: l.usernameContainer,
+      children: [(0, r.jsx)(o.Text, {
+        className: l.userName,
+        color: d ? "text-muted" : "text-default",
         variant: "text-md/semibold",
-        children: r.username
-      }), (0, a.jsx)(i.Text, {
-        className: c.userName,
-        color: o ? "text-muted" : "text-secondary",
+        children: n.username
+      }), (0, r.jsx)(o.Text, {
+        className: l.userName,
+        color: d ? "text-muted" : "text-secondary",
         variant: "text-xs/normal",
-        children: "@".concat(h)
+        children: "@".concat(p)
       })]
-    }), (0, a.jsx)("div", {
-      className: c.checkbox,
-      children: (0, a.jsx)(i.XZJ, {
-        disabled: o,
-        value: s,
-        onChange: (e, t) => d(r, t)
+    }), (0, r.jsx)("div", {
+      className: l.checkbox,
+      children: (0, r.jsx)(o.XZJ, {
+        disabled: d,
+        value: i,
+        onChange: (e, t) => c(n, t)
       })
     })]
   })

@@ -1,7 +1,8 @@
-/** Chunk was on 11868 **/
-/** chunk id: 236069, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 236069, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => E
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -16,46 +17,49 @@ var Chunk442837 = require("./442837.js"),
   Chunk526761 = require("./526761.js"),
   Chunk388032 = require("./388032.jsx");
 
-function I(e) {
+function p(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      var r;
-      r = n[t], t in e ? Object.defineProperty(e, t, {
-        value: r,
-        enumerable: true,
-        configurable: true,
-        writable: true
-      }) : e[t] = r
+      p(e, t, n[t])
     })
   }
   return e
 }
 
-function T(e) {
+function m(e) {
   let {
     guildId: t,
     analyticsLocations: n,
     analyticsLocation: i
-  } = e, [a, o] = (0, u.ww)({
+  } = e, [o, s] = (0, u.ww)({
     guildId: t,
     analyticsLocations: n,
     analyticsLocation: i,
     openWithoutBackstack: true
-  }), c = o ? E.intl.string(E.t["6ndMcn"]) : E.intl.string(E.t["0eiu6O"]), s = o ? E.intl.string(E.t.S09nw8) : E.intl.string(E.t.tEttXV);
-  return (0, r.jsxs)(l.qXd, {
-    color: l.DM8.DANGER,
-    children: [c, (0, r.jsx)(l.EyT, {
-      onClick: a,
-      children: s
+  }), l = s ? _.intl.string(_.t["6ndMcn"]) : _.intl.string(_.t["0eiu6O"]), c = s ? _.intl.string(_.t.S09nw8) : _.intl.string(_.t.tEttXV);
+  return (0, r.jsxs)(a.qXd, {
+    color: a.DM8.DANGER,
+    children: [l, (0, r.jsx)(a.EyT, {
+      onClick: o,
+      children: c
     })]
   })
 }
 
-function O() {
+function g() {
   let e = (0, Chunk300284.Z)({
     scrollPosition: Chunk526761.Y_.GUILD_TAG
   });
@@ -68,11 +72,11 @@ function O() {
   })
 }
 
-function p(e) {
-  let t = (0, i.e7)([o.default, c.ZP], () => {
+function E(e) {
+  let t = (0, i.e7)([s.default, l.ZP], () => {
     if (null == e.guildId) return new Set;
-    let t = o.default.getId();
-    return (0, s.no)(c.ZP.getMember(e.guildId, t))
+    let t = s.default.getId();
+    return (0, c.no)(l.ZP.getMember(e.guildId, t))
   }, [e.guildId]);
-  return t.has(d.q.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) || t.has(d.q.AUTOMOD_QUARANTINED_BIO) ? (0, r.jsx)(T, I({}, e)) : t.has(d.q.AUTOMOD_QUARANTINED_SERVER_TAG) ? (0, r.jsx)(O, {}) : (0, r.jsx)(T, I({}, e))
+  return t.has(d.q.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) || t.has(d.q.AUTOMOD_QUARANTINED_BIO) ? (0, r.jsx)(m, h({}, e)) : t.has(d.q.AUTOMOD_QUARANTINED_SERVER_TAG) ? (0, r.jsx)(g, {}) : (0, r.jsx)(m, h({}, e))
 }

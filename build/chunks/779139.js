@@ -1,5 +1,6 @@
-/** Chunk was on 26434 **/
-/** chunk id: 779139, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 779139, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   TZ: () => u,
   y6: () => c
@@ -13,17 +14,18 @@ var Chunk904245 = require("./904245.js"),
 let c = e => {
     var t;
     let n = null == (t = i.default.getCurrentUser()) ? true : t.id,
-      r = ((null != n ? o.default.extractTimestamp(n) : 0) + o.default.extractTimestamp(e)) % a.m.length;
-    return a.m[r]
+      r = ((null != n ? o.default.extractTimestamp(n) : 0) + o.default.extractTimestamp(e)) % s.m.length;
+    return s.m[r]
   },
   u = (e, t, n) => {
     var o;
-    r.Z.sendGreetMessage(e.id, n, r.Z.getSendMessageOptionsForReply({
+    let s = {
       channel: e,
       message: t,
       shouldMention: true,
       showMentionToggle: true
-    })), l.default.track(s.rMx.WELCOME_CTA_CLICKED, {
+    };
+    r.Z.sendGreetMessage(e.id, n, r.Z.getSendMessageOptionsForReply(s)), a.default.track(l.rMx.WELCOME_CTA_CLICKED, {
       is_reply: true,
       sticker_id: n,
       target_user: t.author.id,

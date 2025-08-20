@@ -1,7 +1,8 @@
-/** Chunk was on 48091 **/
-/** chunk id: 575460, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 575460, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => d
+  Z: () => u
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -12,26 +13,26 @@ var Chunk481060 = require("./481060.js"),
   Chunk113318 = require("./113318.js"),
   Chunk490944 = require("./490944.js");
 
-function d(e) {
+function u(e) {
   let {
     benefit: t,
     guildId: n,
-    onClick: d
-  } = e, u = (0, o.Z)(n, t.ref_id), m = (0, r.jsx)(a.Z, {
+    onClick: u
+  } = e, d = (0, l.Z)(n, t.ref_id), f = () => {
+    null == d || d.navigateToChannel(), u()
+  }, _ = (0, r.jsx)(o.Z, {
     guildId: n,
     emojiId: t.emoji_id,
     emojiName: t.emoji_name
   });
   return (0, r.jsxs)(i.P3F, {
     className: c.container,
-    onClick: () => {
-      null == u || u.navigateToChannel(), d()
-    },
-    "aria-label": null == u ? true : u.ariaLabel,
+    onClick: f,
+    "aria-label": null == d ? true : d.ariaLabel,
     role: "link",
     children: [(0, r.jsx)("div", {
       className: c.emojiContainer,
-      children: m
+      children: _
     }), (0, r.jsxs)("div", {
       className: c.infoContainer,
       children: [(0, r.jsx)(i.Text, {
@@ -44,8 +45,8 @@ function d(e) {
         variant: "text-sm/normal",
         children: t.description
       })]
-    }), (0, r.jsx)(l.Z, {
-      direction: l.Z.Directions.RIGHT,
+    }), (0, r.jsx)(a.Z, {
+      direction: a.Z.Directions.RIGHT,
       className: c.caret
     })]
   })

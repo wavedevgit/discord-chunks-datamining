@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 394655, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 394655, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => f
 });
 var Chunk951288 = require("./951288.js"),
   Chunk905405 = require("./905405.js"),
@@ -13,13 +14,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function m() {
+function f() {
   let e = (0, Chunk905405.p)();
   return (0, Chunk951288.jsx)(Chunk838436.U, {
     setting: Chunk726985.s6.PRIVACY_KEYWORD_FILTER_V2,
     children: (0, Chunk951288.jsx)(Chunk51331.Z, {
       value: module,
-      onChange: e => a.gw.updateSetting({
+      onChange: e => o.gw.updateSetting({
         profanity: e,
         slurs: e,
         sexualContent: e

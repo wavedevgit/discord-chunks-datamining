@@ -2,7 +2,7 @@
 /** chunk id: 22267, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => C
+  Z: () => N
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -28,34 +28,34 @@ var Chunk951288 = require("./951288.js"),
   Chunk198921 = require("./198921.js"),
   Chunk460400 = require("./460400.js"),
   Chunk943549 = require("./943549.js");
-let N = {
+let C = {
     xlarge: Chunk481060.EFr.SIZE_48,
     large: Chunk481060.EFr.SIZE_40,
     default: Chunk481060.EFr.SIZE_32
   },
-  C = e => {
+  N = e => {
     let {
       user: t,
       guildId: n,
       nameplate: a,
-      nameplateData: C,
+      nameplateData: N,
       className: R,
       innerClassName: P,
       isHighlighted: w,
       showStatus: D,
-      showPlaceholderUser: L,
-      pendingGlobalName: x,
-      pendingDisplayNameStyles: M,
-      nameplatePreviewSize: k = "default",
-      isPurchased: j = false
-    } = e, U = (0, s.e7)([b.Z], () => (0, l.wj)(b.Z.theme)), G = null != a ? (0, v.EU)(a) : C, B = (0, s.e7)([O.Z], () => null != t ? O.Z.getStatus(t.id) : c.Skl.ONLINE), V = U ? "#706F74" : "#aaaab2", F = i.useRef(null), Z = (0, s.e7)([y.ZP], () => null != n && null != t ? y.ZP.getMember(n, t.id) : null), H = null != t ? (0, E.Ly)({
+      showPlaceholderUser: x,
+      pendingGlobalName: L,
+      pendingDisplayNameStyles: j,
+      nameplatePreviewSize: M = "default",
+      isPurchased: k = false
+    } = e, U = (0, s.e7)([b.Z], () => (0, l.wj)(b.Z.theme)), G = null != a ? (0, v.EU)(a) : N, B = (0, s.e7)([O.Z], () => null != t ? O.Z.getStatus(t.id) : c.Skl.ONLINE), Z = U ? "#706F74" : "#aaaab2", V = i.useRef(null), F = (0, s.e7)([y.ZP], () => null != n && null != t ? y.ZP.getMember(n, t.id) : null), H = null != t ? (0, E.Ly)({
       pendingNickname: true,
-      pendingGlobalName: x,
+      pendingGlobalName: L,
       user: t,
-      guildMember: Z
-    }) : true, Y = N[k], W = (0, f.Y)({
+      guildMember: F
+    }) : true, Y = C[M], W = (0, f.Y)({
       location: "NameplatePreview"
-    }), K = true !== M ? M : null == t ? true : t.displayNameStyles;
+    }), K = true !== j ? j : null == t ? true : t.displayNameStyles;
     return (0, r.jsx)("div", {
       role: "img",
       "aria-label": I.intl.string(I.t.SZeUdX),
@@ -65,21 +65,21 @@ let N = {
       },
       children: (0, r.jsxs)(c.Rny, {
         className: o()(R, T.nameplatePreview, {
-          [T.nameplatePurchased]: j && !w,
-          [T.large]: "large" === k,
-          [T.xlarge]: "xlarge" === k
+          [T.nameplatePurchased]: k && !w,
+          [T.large]: "large" === M,
+          [T.xlarge]: "xlarge" === M
         }),
         children: [null != G && (0, r.jsx)(g.Z, {
           nameplate: G,
           hovered: w,
           placement: m.i.PREVIEW,
-          content: L ? true : F
+          content: x ? true : V
         }, null == a ? true : a.id), (0, r.jsxs)("div", {
           className: T.overlayContainer,
           children: [null != t ? (0, r.jsx)("div", {
-            className: o()(T.avatarContainer, !L && T.avatarVisible),
+            className: o()(T.avatarContainer, !x && T.avatarVisible),
             children: (0, r.jsx)(u.Z, {
-              ref: F,
+              ref: V,
               avatar: (0, r.jsx)(d.Z, {
                 user: t,
                 guildId: n,
@@ -102,13 +102,13 @@ let N = {
               withDisplayNameStyles: W && null != K
             })
           }) : null, (0, r.jsxs)("div", {
-            className: o()(T.avatarContainer, L && T.avatarVisible),
+            className: o()(T.avatarContainer, x && T.avatarVisible),
             children: [(0, r.jsx)(c.qEK, {
               src: U ? S : A,
               size: Y,
               "aria-hidden": true,
               status: c.Skl.ONLINE,
-              statusColor: V,
+              statusColor: Z,
               className: T.avatar
             }), (0, r.jsx)("div", {
               className: T.placeholderUsername

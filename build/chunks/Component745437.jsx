@@ -10,10 +10,10 @@ var Chunk481060 = require("./481060.js"),
   Chunk168524 = require("./168524.js");
 
 function a(t) {
-  let e = (0, o.Z)({
+  let e = (0, c.Z)({
     location: "ContentPopout",
     applicationId: null == t ? true : t.id,
-    source: c.m1.ActivityCard,
+    source: o.m1.ActivityCard,
     trackEntryPointImpression: true,
     sourceUserId: true
   }, {});

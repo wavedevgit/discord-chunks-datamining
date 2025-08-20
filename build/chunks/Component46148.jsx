@@ -1,7 +1,7 @@
-/** Chunk was on 69003 **/
+/** Chunk was on 91488 **/
 /** chunk id: 46148, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  W: () => E
+  W: () => x
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -42,34 +42,34 @@ function C(e) {
   }
   return e
 }
-let E = Chunk647438.memo(function(e) {
+let x = Chunk647438.memo(function(e) {
   let t = e.channel.id,
     n = e.selected,
-    E = (0, c.Nj)(o.z.CHAT_WALLPAPERS_PICKER_COACHMARK),
-    x = (0, l.e7)([p.Z], () => p.Z.getLayers().includes(b.S9g.USER_SETTINGS)),
+    x = (0, c.Nj)(o.z.CHAT_WALLPAPERS_PICKER_COACHMARK),
+    E = (0, l.e7)([p.Z], () => p.Z.getLayers().includes(b.S9g.USER_SETTINGS)),
     {
       canAccessPicker: S,
-      entryPoint: P
+      entryPoint: I
     } = (0, h.m)({
       location: "ChatWallpaperDMListCoachmark",
       channelId: t
     }),
-    I = P === f.FN.CONTEXT_MENU,
-    [N, w] = (0, u.US)(E && I && n && S && !x ? [o.z.CHAT_WALLPAPERS_DM_LIST_COACHMARK] : []),
+    P = I === f.FN.CONTEXT_MENU,
+    [N, w] = (0, u.US)(x && P && n && S && !E ? [o.z.CHAT_WALLPAPERS_DM_LIST_COACHMARK] : []),
     Z = (0, d.m)(_.p9.TIER_2),
     T = (0, g.Z)(t),
     A = N === o.z.CHAT_WALLPAPERS_DM_LIST_COACHMARK,
     R = (0, i.useRef)(null),
     D = (0, i.useRef)(null),
-    L = (0, i.useRef)(null),
-    [M, k] = (0, i.useState)(m.U.TOP);
+    M = (0, i.useRef)(null),
+    [L, k] = (0, i.useState)(m.U.TOP);
   if ((0, i.useLayoutEffect)(() => {
       if (null === R.current) return;
       let e = () => {
         var e, t, n;
         let r = null == (e = R.current) ? true : e.getBoundingClientRect();
         if (null == r) return;
-        let i = null != (n = null == (t = L.current) ? true : t.getBoundingClientRect().height) ? n : 0;
+        let i = null != (n = null == (t = M.current) ? true : t.getBoundingClientRect().height) ? n : 0;
         window.innerHeight - r.bottom < i ? k(m.U.BOTTOM) : k(m.U.TOP)
       };
       return e(), window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
@@ -96,22 +96,22 @@ let E = Chunk647438.memo(function(e) {
     ref: R,
     children: (0, r.jsx)(a.yRy, {
       targetElementRef: D,
-      align: M,
+      align: L,
       position: "right",
       shouldShow: A,
       onRequestClose: U,
       renderPopout: () => (0, r.jsx)(m.Z, {
-        ref: L,
+        ref: M,
         onClose: U,
         buttonText: y.intl.string(y.t["+IrDzM"]),
         header: B,
         art: (0, r.jsx)("img", {
-          src: j.Z,
+          src: v.Z,
           alt: "",
-          className: v.chatWallpaperDMListCoachmarkArt
+          className: j.chatWallpaperDMListCoachmarkArt
         }),
         body: V,
-        align: M
+        align: L
       }),
       children: t => {
         var n, i;

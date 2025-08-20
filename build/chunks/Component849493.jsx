@@ -1,14 +1,14 @@
 /** Chunk was on 33551 **/
-/** chunk id: 849493, original params: e,t,s (module,exports,require) **/
+/** chunk id: 849493, original params: o,i,d (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => o
+  default: () => r
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk481060 = require("./481060.js"),
   Chunk915312 = require("./915312.js");
 
-function o() {
+function r() {
   return (0, Chunk915312.bN)(document.body), (0, Chunk951288.jsx)(Chunk481060.nn4, {
     children: (0, Chunk951288.jsx)("svg", {
       "aria-hidden": true,

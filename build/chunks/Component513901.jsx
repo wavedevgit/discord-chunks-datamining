@@ -1,12 +1,13 @@
-/** Chunk was on 66181 **/
-/** chunk id: 513901, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 513901, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => j
+  Z: () => y
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk906732 = require("./906732.jsx"),
@@ -21,62 +22,65 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk78946 = require("./78946.js");
 
-function j(e) {
+function y(e) {
   let {
     user: t,
     guild: n,
-    className: s,
-    sectionTitle: j,
-    forcedDivider: E = false,
-    withTutorial: C = false,
-    showBorder: O = false,
-    isTryItOutFlow: v = false,
+    className: a,
+    sectionTitle: y,
+    forcedDivider: O = false,
+    withTutorial: v = false,
+    showBorder: I = false,
+    isTryItOutFlow: T = false,
     initialSelectedEffectId: S
-  } = e, T = (0, p.Kg)(t, n), N = m.ZP.canUsePremiumProfileCustomization(t), {
-    analyticsLocations: I
+  } = e, A = (0, _.Kg)(t, n), C = f.ZP.canUsePremiumProfileCustomization(t), {
+    analyticsLocations: N
   } = (0, c.ZP)(), {
-    pendingProfileEffectId: y,
-    errors: A
-  } = (0, p.bd)(n), P = r.useCallback(() => (0, d.H)({
-    analyticsLocations: I,
+    pendingProfileEffectId: R,
+    errors: P
+  } = (0, _.bd)(n), w = i.useCallback(() => (0, u.H)({
+    analyticsLocations: N,
     initialSelectedEffectId: S,
     guild: n
-  }), [I, S, n]);
-  r.useEffect(() => {
-    N && u.default.track(f.rMx.PREMIUM_UPSELL_VIEWED, {
-      type: b.cd.PROFILE_EFFECTS_INLINE_SETTINGS,
-      location_stack: I
+  }), [N, S, n]);
+  i.useEffect(() => {
+    C && d.default.track(m.rMx.PREMIUM_UPSELL_VIEWED, {
+      type: g.cd.PROFILE_EFFECTS_INLINE_SETTINGS,
+      location_stack: N
     })
-  }, [N, I]);
-  let R = null != n,
-    D = C ? o.gtL : l.zx;
-  return (0, i.jsx)(g.Z, {
-    forcedDivider: E,
+  }, [C, N]);
+  let D = null != n,
+    x = T || true !== R ? null != R : null != A;
+
+  function L() {
+    (0, _.s6)(null, A, null == n ? true : n.id)
+  }
+  let j = v ? l.gtL : s.zx;
+  return (0, r.jsx)(p.Z, {
+    forcedDivider: O,
     borderType: h.Y.PREMIUM,
     hasBackground: true,
-    title: j,
-    showBorder: O,
-    errors: A,
-    className: s,
-    children: (0, i.jsxs)("div", {
-      className: _.buttonsContainer,
-      children: [(0, i.jsx)(D, {
-        size: l.zx.Sizes.SMALL,
-        onClick: P,
-        className: a()({
-          [_.buttonHighlighted]: C
+    title: y,
+    showBorder: I,
+    errors: P,
+    className: a,
+    children: (0, r.jsxs)("div", {
+      className: b.buttonsContainer,
+      children: [(0, r.jsx)(j, {
+        size: s.zx.Sizes.SMALL,
+        onClick: w,
+        className: o()({
+          [b.buttonHighlighted]: v
         }),
-        children: x.intl.string(x.t["/dRfCQ"])
-      }), (v || true !== y ? null != y : null != T) && (0, i.jsx)("div", {
+        children: E.intl.string(E.t["/dRfCQ"])
+      }), x && (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
-        className: _.removeButton,
-        children: (0, i.jsx)(o.zxk, {
+        className: b.removeButton,
+        children: (0, r.jsx)(l.zxk, {
           variant: "secondary",
           size: "sm",
-          text: R ? x.intl.string(x.t.CHf9iI) : x.intl.string(x.t.uMuafH),
-          onClick: function() {
-            (0, p.s6)(null, T, null == n ? true : n.id)
-          }
+          text: D ? E.intl.string(E.t.CHf9iI) : E.intl.string(E.t.uMuafH),
+          onClick: L
         })
       })]
     })

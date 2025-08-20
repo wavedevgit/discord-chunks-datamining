@@ -4,11 +4,11 @@
 require.d(exports, {
   RR: () => A,
   WW: () => T,
-  bE: () => C,
-  n4: () => M,
-  q8: () => N,
+  bE: () => N,
+  n4: () => j,
+  q8: () => C,
   t$: () => S,
-  xl: () => x
+  xl: () => L
 }), require("./415506.js"), require("./388685.js"), require("./781311.js");
 var Chunk683860 = require("./683860.js"),
   Chunk344185 = require("./344185.js"),
@@ -86,7 +86,7 @@ function A(e) {
   return d.Z.getUploads(e, c.d.FirstThreadMessage).length
 }
 
-function N(e) {
+function C(e) {
   var t, n;
   let r = l.Z.getChannel(e);
   if (null == r) return [];
@@ -98,7 +98,7 @@ function N(e) {
   return Array.from(o).filter(e => s.has(e))
 }
 
-function C(e, t) {
+function N(e, t) {
   return Object.keys(i.Z.getThreadsForParent(e, t)).length
 }
 
@@ -131,7 +131,7 @@ function D(e) {
   return null != (n = null == (t = r.appliedTags) ? true : t.filter(e => o.has(e))) ? n : []
 }
 
-function L(e) {
+function x(e) {
   let t = R(e);
   return null == t ? [] : t.attachments.map(e => {
     var t;
@@ -139,7 +139,7 @@ function L(e) {
   })
 }
 
-function x(e) {
+function L(e) {
   var t, n, r, i;
   let {
     channelId: a,
@@ -163,7 +163,7 @@ function x(e) {
   } : null
 }
 
-function M(e) {
+function j(e) {
   var t, n, r, i, c, u, d;
   let {
     channelId: _,
@@ -171,7 +171,7 @@ function M(e) {
   } = e, m = l.Z.getChannel(_);
   if (null == m || !m.isForumPost()) return null;
   let g = l.Z.getChannel(m.parent_id);
-  return null != g && g.isForumLikeChannel() ? I(O({}, x({
+  return null != g && g.isForumLikeChannel() ? I(O({}, L({
     channelId: g.id,
     sessionId: p
   })), {
@@ -190,6 +190,6 @@ function M(e) {
     forum_post_is_new: null == (i = h.Z.getReadStateSnapshotAnalytics(m.id)) ? true : i.isNew,
     forum_post_is_unread: null == (c = h.Z.getReadStateSnapshotAnalytics(m.id)) ? true : c.hasUnreads,
     forum_post_is_following: a.Z.hasJoined(m.id),
-    forum_post_attachment_mimetypes: L(m.id)
+    forum_post_attachment_mimetypes: x(m.id)
   }) : null
 }

@@ -1,5 +1,6 @@
-/** Chunk was on 66181 **/
-/** chunk id: 306052, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 306052, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   g: () => h
 });
@@ -19,55 +20,54 @@ var Chunk442837 = require("./442837.js"),
 let h = e => {
   let {
     isDevTools: t = false
-  } = e, n = (0, r.e7)([u.default], () => u.default.getCurrentUser()), h = (0, r.e7)([c.Z], () => {
+  } = e, n = (0, i.e7)([d.default], () => d.default.getCurrentUser()), h = (0, i.e7)([c.Z], () => {
     let e = c.Z.getCreatedAtOverride();
     return null != e ? e.toISOString().substring(0, 10) : ""
-  }), f = (0, r.e7)([c.Z], () => c.Z.getPremiumTypeOverride());
-  return (0, i.jsxs)("div", {
-    children: [(0, i.jsxs)(d.F, {
-      setting: m.s6.DEVELOPER_OPTIONS_OVERRIDE_CLIENT_SIDE_PREMIUM_TYPE,
-      children: [(0, i.jsx)(a.hjN, {
+  }), m = (0, i.e7)([c.Z], () => c.Z.getPremiumTypeOverride()), g = e => {
+    (0, l.u)(new Date(e))
+  };
+  return (0, r.jsxs)("div", {
+    children: [(0, r.jsxs)(u.F, {
+      setting: f.s6.DEVELOPER_OPTIONS_OVERRIDE_CLIENT_SIDE_PREMIUM_TYPE,
+      children: [(0, r.jsx)(o.hjN, {
         title: "Override Client-Side Premium Type",
-        tag: a.RB0.H3,
-        children: (0, i.jsx)(a.q4e, {
-          options: p.b6,
-          value: f,
+        tag: o.RB0.H3,
+        children: (0, r.jsx)(o.q4e, {
+          options: _.b6,
+          value: m,
           onChange: e => {
-            (0, o.C)(e, n)
+            (0, l.C)(e, n)
           },
-          popoutLayerContext: t ? l.O$ : true
+          popoutLayerContext: t ? s.O$ : true
         })
-      }), (0, i.jsx)(s.zx, {
-        look: s.zx.Looks.LINK,
+      }), (0, r.jsx)(a.zx, {
+        look: a.zx.Looks.LINK,
         style: {
           padding: "0"
         },
         onClick: () => {
-          (0, o.C)(p.F_, n)
+          (0, l.C)(_.F_, n)
         },
         children: "Reset premium type override"
       })]
-    }), (0, i.jsxs)(d.F, {
-      setting: m.s6.DEVELOPER_OPTIONS_OVERRIDE_CLIENT_SIDE_ACCOUNT_CREATED_DATA,
-      children: [(0, i.jsx)(a.hjN, {
+    }), (0, r.jsxs)(u.F, {
+      setting: f.s6.DEVELOPER_OPTIONS_OVERRIDE_CLIENT_SIDE_ACCOUNT_CREATED_DATA,
+      children: [(0, r.jsx)(o.hjN, {
         title: "Override Client-Side Account Created At Date",
-        tag: a.RB0.H3,
-        children: (0, i.jsx)("input", {
+        tag: o.RB0.H3,
+        children: (0, r.jsx)("input", {
           type: "date",
           value: h,
-          onChange: e => {
-            var t;
-            return t = e.target.value, void(0, o.u)(new Date(t))
-          },
-          className: g.datePicker
+          onChange: e => g(e.target.value),
+          className: p.datePicker
         })
-      }), (0, i.jsx)(s.zx, {
-        look: s.zx.Looks.LINK,
+      }), (0, r.jsx)(a.zx, {
+        look: a.zx.Looks.LINK,
         style: {
           padding: "0"
         },
         type: "submit",
-        onClick: () => (0, o.u)(true),
+        onClick: () => (0, l.u)(true),
         children: "Reset account created at override"
       })]
     })]

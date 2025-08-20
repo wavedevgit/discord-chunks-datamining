@@ -1,5 +1,6 @@
-/** Chunk was on 66181 **/
-/** chunk id: 125321, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 125321, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   headerBar: "headerBar__0920e",
   spinner: "spinner__0920e",

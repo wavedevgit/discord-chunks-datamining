@@ -1,5 +1,6 @@
-/** Chunk was on 76540 **/
-/** chunk id: 607018, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 607018, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   default: () => p
 }), require("./388685.js");
@@ -18,44 +19,44 @@ let p = Chunk647438.forwardRef(function(e, t) {
   let {
     onAddedPhone: n,
     onClose: p,
-    transitionState: R,
+    transitionState: h,
     reason: m
-  } = e, I = (0, r.e7)([u.default], () => u.default.getCurrentUser()), C = (0, r.e7)([h.Z], () => h.Z.getAction()), [f, g] = i.useState(null), [y, _] = i.useState(null), [P, b] = i.useState(null), [x, j] = i.useState(false), v = i.useCallback(async e => {
-    j(true);
+  } = e, g = (0, a.e7)([d.default], () => d.default.getCurrentUser()), E = (0, a.e7)([u.Z], () => u.Z.getAction()), [b, y] = i.useState(null), [O, v] = i.useState(null), [I, T] = i.useState(null), [S, A] = i.useState(false), C = i.useCallback(async e => {
+    A(true);
     try {
-      d.Z.isPhoneReverification(I, C) ? await a.Z.beginReverifyPhone(e, m) : await a.Z.beginAddPhone(e, m), b(null), g(e)
+      f.Z.isPhoneReverification(g, E) ? await l.Z.beginReverifyPhone(e, m) : await l.Z.beginAddPhone(e, m), T(null), y(e)
     } catch (e) {
-      b(new o.Z(e))
+      T(new s.Z(e))
     }
-    j(false)
-  }, [I, m, C]), N = i.useCallback(async e => {
-    if (null != f && null != I) {
-      j(true);
+    A(false)
+  }, [g, m, E]), N = i.useCallback(async e => {
+    if (null != b && null != g) {
+      A(true);
       try {
         let {
           token: t
-        } = await a.Z.verifyPhone(f, e);
-        b(null), _(t)
+        } = await l.Z.verifyPhone(b, e);
+        T(null), v(t)
       } catch (e) {
-        b(new o.Z(e))
+        T(new s.Z(e))
       }
-      j(false)
+      A(false)
     }
-  }, [I, f]), O = i.useCallback(async e => {
-    null != y && (d.Z.isPhoneReverification(I, C) ? await a.Z.reverifyPhone(y, e, m) : await a.Z.addPhone(y, e, m), null == n || n(), p())
-  }, [n, p, y, m, I, C]);
-  return null != y ? (0, s.jsx)(l.Z, {
+  }, [g, b]), R = i.useCallback(async e => {
+    null != O && (f.Z.isPhoneReverification(g, E) ? await l.Z.reverifyPhone(O, e, m) : await l.Z.addPhone(O, e, m), null == n || n(), p())
+  }, [n, p, O, m, g, E]);
+  return null != O ? (0, r.jsx)(o.Z, {
     onClose: p,
-    transitionState: R,
-    title: E.intl.string(E.t.ZtCDc3),
-    handleSubmit: O
-  }) : (0, s.jsx)(c.Z, {
+    transitionState: h,
+    title: _.intl.string(_.t.ZtCDc3),
+    handleSubmit: R
+  }) : (0, r.jsx)(c.Z, {
     onClose: p,
-    transitionState: R,
-    error: null == P ? true : P.getAnyErrorMessage(),
-    working: x,
-    validPhone: null != f,
-    onAddPhone: v,
+    transitionState: h,
+    error: null == I ? true : I.getAnyErrorMessage(),
+    working: S,
+    validPhone: null != b,
+    onAddPhone: C,
     onVerifyPhone: N
   })
 })

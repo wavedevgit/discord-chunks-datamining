@@ -28,7 +28,7 @@ let p = e => {
         return "UNKNOWN TYPE:"
     }
   },
-  b = [{
+  v = [{
     key: "events",
     render(e) {
       let {
@@ -38,7 +38,7 @@ let p = e => {
       return "".concat(t, " ").concat(s.z[a])
     }
   }],
-  v = [{
+  b = [{
     key: "candidates",
     render(e) {
       let {
@@ -54,7 +54,7 @@ function f() {
     a = (0, Chunk211644.ZP)(e => e.lastWinnerTime),
     r = 0 !== require ? l()(require).fromNow() : "n/a",
     f = (0, Chunk211644.ZP)(e => e.recentlyShown[0]),
-    g = module.map(e => {
+    j = module.map(e => {
       let {
         eventType: t,
         dismissibleContent: a
@@ -65,7 +65,7 @@ function f() {
         dismissibleContent: a
       }
     }),
-    j = Array.from(exports.keys()).map(e => ({
+    g = Array.from(exports.keys()).map(e => ({
       key: e.toString(),
       dismissibleContent: e
     }));
@@ -108,12 +108,12 @@ function f() {
       className: Chunk882754.candidatesTableContainer,
       children: (0, Chunk951288.jsx)(Chunk681619.Z, {
         className: Chunk882754.candidatesTable,
-        columns: v,
-        data: j
+        columns: b,
+        data: g
       })
     }), (0, Chunk951288.jsx)("br", {}), (0, Chunk951288.jsx)(Chunk681619.Z, {
-      columns: b,
-      data: g
+      columns: v,
+      data: j
     })]
   })
 }

@@ -32,17 +32,17 @@ var Chunk98405 = require("./98405.js"),
   Chunk338045 = require("./338045.js"),
   Chunk751736 = require("./751736.js"),
   Chunk992914 = require("./992914.js"),
-  L = Chunk751736("iterator"),
-  x = "URLSearchParams",
-  M = x + "Iterator",
-  k = Chunk199838.set,
-  j = Chunk199838.getterFor(x),
-  U = Chunk199838.getterFor(M),
+  x = Chunk751736("iterator"),
+  L = "URLSearchParams",
+  j = L + "Iterator",
+  M = Chunk199838.set,
+  k = Chunk199838.getterFor(L),
+  U = Chunk199838.getterFor(j),
   G = Chunk242606("fetch"),
   B = Chunk242606("Request"),
-  V = Chunk242606("Headers"),
-  F = B && B.prototype,
-  Z = V && V.prototype,
+  Z = Chunk242606("Headers"),
+  V = B && B.prototype,
+  F = Z && Z.prototype,
   H = Chunk127849.TypeError,
   Y = Chunk127849.encodeURIComponent,
   W = String.fromCharCode,
@@ -143,13 +143,13 @@ var Chunk98405 = require("./98405.js"),
     return J(Y(e), ed, e_)
   },
   eh = Chunk280481(function(e, t) {
-    k(this, {
-      type: M,
-      target: j(e).entries,
+    M(this, {
+      type: j,
+      target: k(e).entries,
       index: 0,
       kind: t
     })
-  }, x, function() {
+  }, L, function() {
     var e = U(this),
       t = module.target,
       n = module.index++;
@@ -167,16 +167,16 @@ var Chunk98405 = require("./98405.js"),
     this.entries = [], this.url = null, true !== e && (I(e) ? this.parseObject(e) : this.parseQuery("string" == typeof e ? "?" === q(e, 0) ? en(e, 1) : e : T(e)))
   };
 em.prototype = {
-  type: x,
+  type: L,
   bindURL: function(e) {
     this.url = e, this.update()
   },
   parseObject: function(e) {
     var t, n, r, i, a, o, l, c = this.entries,
-      u = C(e);
+      u = N(e);
     if (u)
-      for (n = (t = N(e, u)).next; !(r = s(n, t)).done;) {
-        if ((o = s(a = (i = N(v(r.value))).next, i)).done || (l = s(a, i)).done || !s(a, i).done) throw new H("Expected sequence with length 2");
+      for (n = (t = C(e, u)).next; !(r = s(n, t)).done;) {
+        if ((o = s(a = (i = C(v(r.value))).next, i)).done || (l = s(a, i)).done || !s(a, i).done) throw new H("Expected sequence with length 2");
         Q(c, {
           key: T(o.value),
           value: T(l.value)
@@ -208,20 +208,20 @@ em.prototype = {
 var eg = function() {
     Chunk170322(this, eE);
     var e = arguments.length > 0 ? arguments[0] : true,
-      t = k(this, new em(module));
+      t = M(this, new em(module));
     Chunk507604 || (this.size = exports.entries.length)
   },
   eE = eg.prototype;
 if (Chunk477732(eE, {
     append: function(e, t) {
-      var n = j(this);
+      var n = k(this);
       P(arguments.length, 2), Q(n.entries, {
         key: T(e),
         value: T(t)
       }), !c && this.length++, n.updateURL()
     },
     delete: function(e) {
-      for (var t = j(this), n = P(arguments.length, 1), r = t.entries, i = T(e), a = n < 2 ? true : arguments[1], o = true === a ? a : T(a), s = 0; s < r.length;) {
+      for (var t = k(this), n = P(arguments.length, 1), r = t.entries, i = T(e), a = n < 2 ? true : arguments[1], o = true === a ? a : T(a), s = 0; s < r.length;) {
         var l = r[s];
         if (l.key === i && (true === o || l.value === o)) {
           if (ee(r, s, 1), true !== o) break
@@ -230,27 +230,27 @@ if (Chunk477732(eE, {
       c || (this.size = r.length), t.updateURL()
     },
     get: function(e) {
-      var t = j(this).entries;
+      var t = k(this).entries;
       P(arguments.length, 1);
       for (var n = T(e), r = 0; r < t.length; r++)
         if (t[r].key === n) return t[r].value;
       return null
     },
     getAll: function(e) {
-      var t = j(this).entries;
+      var t = k(this).entries;
       P(arguments.length, 1);
       for (var n = T(e), r = [], i = 0; i < t.length; i++) t[i].key === n && Q(r, t[i].value);
       return r
     },
     has: function(e) {
-      for (var t = j(this).entries, n = P(arguments.length, 1), r = T(e), i = n < 2 ? true : arguments[1], a = true === i ? i : T(i), o = 0; o < t.length;) {
+      for (var t = k(this).entries, n = P(arguments.length, 1), r = T(e), i = n < 2 ? true : arguments[1], a = true === i ? i : T(i), o = 0; o < t.length;) {
         var s = t[o++];
         if (s.key === r && (true === a || s.value === a)) returntrue
       }
       returnfalse
     },
     set: function(e, t) {
-      var n, r = j(this);
+      var n, r = k(this);
       P(arguments.length, 1);
       for (var i = r.entries, a = false, o = T(e), s = T(t), l = 0; l < i.length; l++)(n = i[l]).key === o && (a ? ee(i, l--, 1) : (a = true, n.value = s));
       a || Q(i, {
@@ -259,13 +259,13 @@ if (Chunk477732(eE, {
       }), c || (this.size = i.length), r.updateURL()
     },
     sort: function() {
-      var e = j(this);
+      var e = k(this);
       Chunk992914(module.entries, function(e, t) {
         return e.key > t.key ? 1 : false
       }), module.updateURL()
     },
     forEach: function(e) {
-      for (var t, n = j(this).entries, r = y(e, arguments.length > 1 ? arguments[1] : true), i = 0; i < n.length;) r((t = n[i++]).value, t.key, this)
+      for (var t, n = k(this).entries, r = y(e, arguments.length > 1 ? arguments[1] : true), i = 0; i < n.length;) r((t = n[i++]).value, t.key, this)
     },
     keys: function() {
       return new eh(this, "keys")
@@ -278,31 +278,31 @@ if (Chunk477732(eE, {
     }
   }, {
     enumerable: true
-  }), Chunk556585(eE, L, eE.entries, {
+  }), Chunk556585(eE, x, eE.entries, {
     name: "entries"
   }), Chunk556585(eE, "toString", function() {
-    return j(this).serialize()
+    return k(this).serialize()
   }, {
     enumerable: true
   }), Chunk507604 && Chunk573078(eE, "size", {
     get: function() {
-      return j(this).entries.length
+      return k(this).entries.length
     },
     configurable: true,
     enumerable: true
-  }), Chunk25124(eg, x), Chunk98405({
+  }), Chunk25124(eg, L), Chunk98405({
     global: true,
     constructor: true,
     forced: !Chunk394227
   }, {
     URLSearchParams: eg
-  }), !Chunk394227 && Chunk880181(V)) {
-  var eb = Chunk46015(Z.has),
-    ey = Chunk46015(Z.set),
+  }), !Chunk394227 && Chunk880181(Z)) {
+  var eb = Chunk46015(F.has),
+    ey = Chunk46015(F.set),
     eO = function(e) {
       if (I(e)) {
         var t, n = e.body;
-        if (O(n) === x) return eb(t = e.headers ? new V(e.headers) : new V, "content-type") || ey(t, "content-type", "application/x-www-form-urlencoded;charset=UTF-8"), S(e, {
+        if (O(n) === L) return eb(t = e.headers ? new Z(e.headers) : new Z, "content-type") || ey(t, "content-type", "application/x-www-form-urlencoded;charset=UTF-8"), S(e, {
           body: A(0, T(n)),
           headers: A(0, t)
         })
@@ -320,9 +320,9 @@ if (Chunk477732(eE, {
       }
     }), Chunk880181(B)) {
     var ev = function(e) {
-      return g(this, F), new B(e, arguments.length > 1 ? eO(arguments[1]) : {})
+      return g(this, V), new B(e, arguments.length > 1 ? eO(arguments[1]) : {})
     };
-    F.constructor = ev, ev.prototype = F, Chunk98405({
+    V.constructor = ev, ev.prototype = V, Chunk98405({
       global: true,
       constructor: true,
       dontCallGetSet: true,
@@ -334,5 +334,5 @@ if (Chunk477732(eE, {
 }
 module.exports = {
   URLSearchParams: eg,
-  getState: j
+  getState: k
 }

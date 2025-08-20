@@ -1,7 +1,8 @@
-/** Chunk was on 26434 **/
-/** chunk id: 161314, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 161314, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => I
+  Z: () => N
 }), require("./388685.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -27,72 +28,77 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk736636 = require("./736636.js");
 
-function I(e) {
+function A(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function C(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      A(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function N(e) {
   var t;
   let {
     guildId: n
-  } = e, l = (0, c.e7)([b.Z], () => b.Z.getGuild(n)), {
-    loading: I,
-    subscriptionsSettings: S
-  } = (0, C.H)(n), {
-    listingsLoaded: T
-  } = (0, g.eD)(n), P = (0, g.ue)(n, {
+  } = e, a = (0, c.e7)([E.Z], () => E.Z.getGuild(n)), {
+    loading: A,
+    subscriptionsSettings: N
+  } = (0, y.H)(n), {
+    listingsLoaded: R
+  } = (0, h.eD)(n), P = (0, h.ue)(n, {
     publishedOnly: true
-  }), N = i.useCallback(async () => {
-    E.default.track(y.rMx.GUILD_SHOP_EMBED_CLICKED, function(e) {
-      for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-          r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-          return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-          var r;
-          r = n[t], t in e ? Object.defineProperty(e, t, {
-            value: r,
-            enumerable: true,
-            configurable: true,
-            writable: true
-          }) : e[t] = r
-        })
-      }
-      return e
-    }({}, (0, p.hH)(n))), await (0, _.Z)(y.Z5c.SERVER_SHOP(n))
+  }), w = i.useCallback(async () => {
+    b.default.track(I.rMx.GUILD_SHOP_EMBED_CLICKED, C({}, (0, f.hH)(n))), await (0, m.Z)(I.Z5c.SERVER_SHOP(n))
   }, [n]);
-  (0, m.Z)({
-    type: a.ImpressionTypes.VIEW,
-    name: a.ImpressionNames.GUILD_SHOP_EMBED
+  (0, _.Z)({
+    type: s.ImpressionTypes.VIEW,
+    name: s.ImpressionNames.GUILD_SHOP_EMBED
   }, {
-    disableTrack: null == l
+    disableTrack: null == a
   });
-  let A = P.length > 0 ? new Date(Math.min(...P.map(e => Date.parse(e.published_at)))) : true;
-  return I || !T ? (0, r.jsx)("div", {
-    className: o()(j.guildShopEmbed, j.spinnerContainer),
+  let D = P.length > 0 ? new Date(Math.min(...P.map(e => Date.parse(e.published_at)))) : true;
+  return A || !R ? (0, r.jsx)("div", {
+    className: o()(S.guildShopEmbed, S.spinnerContainer),
     children: (0, r.jsx)(d.$jN, {})
-  }) : null == l || null == S ? null : (0, r.jsxs)("div", {
-    className: j.guildShopEmbed,
-    children: [(0, r.jsx)(v.Z, {
-      coverImageAsset: null != (t = S.cover_image_asset) ? t : null
+  }) : null == a || null == N ? null : (0, r.jsxs)("div", {
+    className: S.guildShopEmbed,
+    children: [(0, r.jsx)(O.Z, {
+      coverImageAsset: null != (t = N.cover_image_asset) ? t : null
     }), (0, r.jsx)(d.LZC, {
       size: 16
     }), (0, r.jsxs)("div", {
-      className: j.serverShopLabel,
-      children: [(0, r.jsx)(O.Z, {
+      className: S.serverShopLabel,
+      children: [(0, r.jsx)(v.Z, {
         height: "16px",
         width: "16px",
-        color: s.Z.INTERACTIVE_NORMAL
+        color: l.Z.INTERACTIVE_NORMAL
       }), (0, r.jsx)(d.X6q, {
         variant: "heading-sm/semibold",
         color: "interactive-normal",
-        className: j.serverShopLabelText,
-        children: x.intl.string(x.t.al5EXF)
+        className: S.serverShopLabelText,
+        children: T.intl.string(T.t.al5EXF)
       })]
     }), (0, r.jsx)(d.LZC, {
       size: 16
     }), (0, r.jsx)(d.X6q, {
       variant: "heading-md/semibold",
       color: "text-default",
-      children: x.intl.format(x.t.NZeik5, {
-        guildName: l.name
+      children: T.intl.format(T.t.NZeik5, {
+        guildName: a.name
       })
     }), (0, r.jsx)(d.LZC, {
       size: 4
@@ -100,40 +106,40 @@ function I(e) {
       variant: "text-sm/normal",
       color: "text-muted",
       lineClamp: 2,
-      children: S.description
+      children: N.description
     }), (0, r.jsx)(d.LZC, {
       size: 16
-    }), (0, r.jsx)(h.Z, {}), (0, r.jsx)(d.LZC, {
+    }), (0, r.jsx)(g.Z, {}), (0, r.jsx)(d.LZC, {
       size: 16
     }), (0, r.jsxs)("div", {
-      className: j.guildShopEmbedFooter,
-      children: [(0, r.jsx)(f.Z, {
-        guild: l
+      className: S.guildShopEmbedFooter,
+      children: [(0, r.jsx)(p.Z, {
+        guild: a
       }), (0, r.jsxs)("ul", {
-        className: j.guildShopSummary,
+        className: S.guildShopSummary,
         children: [(0, r.jsx)("li", {
           children: (0, r.jsx)(d.Text, {
             variant: "text-sm/normal",
             color: "text-muted",
-            children: x.intl.format(x.t.tKZNlZ, {
+            children: T.intl.format(T.t.tKZNlZ, {
               listingCount: P.length
             })
           })
-        }), null != A && (0, r.jsx)("li", {
+        }), null != D && (0, r.jsx)("li", {
           children: (0, r.jsx)(d.Text, {
             variant: "text-sm/normal",
             color: "text-muted",
-            children: x.intl.format(x.t["kXr8+f"], {
-              createdYear: A.getFullYear()
+            children: T.intl.format(T.t["kXr8+f"], {
+              createdYear: D.getFullYear()
             })
           })
         })]
       }), (0, r.jsx)("div", {
-        className: j.guildShopEmbedCta,
+        className: S.guildShopEmbedCta,
         children: (0, r.jsx)(u.zx, {
-          onClick: N,
-          icon: O.P,
-          text: x.intl.string(x.t.jXx1CA)
+          onClick: w,
+          icon: v.P,
+          text: T.intl.string(T.t.jXx1CA)
         })
       })]
     })]

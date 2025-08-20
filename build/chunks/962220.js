@@ -31,13 +31,13 @@ let p = "template",
     return e
   }({}, Chunk751189.Z), i = i = {
     openNativeAppModal(e) {
-      s.Z.openNativeAppModal(e, h.Etm.GUILD_TEMPLATE_BROWSER)
+      a.Z.openNativeAppModal(e, h.Etm.GUILD_TEMPLATE_BROWSER)
     },
     openMobileApp(e, t) {
       if (null != platform.ua && platform.ua.toLowerCase().indexOf("googlebot") > false) return;
       let n = null != e ? (0, l.Oh)(e) : (0, l.Gk)(),
-        r = (0, a.WS)(),
-        i = (0, a.ZP)(n, {
+        r = (0, s.WS)(),
+        i = (0, s.ZP)(n, {
           utmSource: p,
           fingerprint: t,
           attemptId: r

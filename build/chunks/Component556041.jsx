@@ -1,7 +1,8 @@
-/** Chunk was on 26434 **/
-/** chunk id: 556041, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 556041, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => c
+  Z: () => _
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -10,7 +11,46 @@ var Chunk481060 = require("./481060.js"),
   Chunk245315 = require("./245315.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk5146 = require("./5146.js");
-let c = () => (0, Chunk951288.jsxs)(Chunk600164.Z, {
+
+function c(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function u(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      c(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function d(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function f(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+let _ = () => (0, Chunk951288.jsxs)(Chunk600164.Z, {
   align: Chunk600164.Z.Align.CENTER,
   justify: Chunk600164.Z.Justify.CENTER,
   direction: Chunk600164.Z.Direction.VERTICAL,
@@ -25,38 +65,9 @@ let c = () => (0, Chunk951288.jsxs)(Chunk600164.Z, {
     className: Chunk5146.nameWrapper,
     children: [(0, Chunk951288.jsx)(Chunk481060.ua7, {
       text: Chunk388032.intl.string(Chunk388032.t.oMx98P),
-      children: e => {
-        var t, n;
-        return (0, r.jsx)("div", (t = function(e) {
-          for (var t = 1; t < arguments.length; t++) {
-            var n = null != arguments[t] ? arguments[t] : {},
-              r = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-              return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), r.forEach(function(t) {
-              var r;
-              r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: true,
-                configurable: true,
-                writable: true
-              }) : e[t] = r
-            })
-          }
-          return e
-        }({}, e), n = n = {
-          className: s.staffBadge
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
-          var n = Object.keys(e);
-          if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
-          }
-          return n
-        })(Object(n)).forEach(function(e) {
-          Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-        }), t))
-      }
+      children: e => (0, r.jsx)("div", f(u({}, e), {
+        className: l.staffBadge
+      }))
     }), (0, Chunk951288.jsx)(Chunk481060.X6q, {
       className: Chunk5146.header,
       variant: "heading-md/semibold",

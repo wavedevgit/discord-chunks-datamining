@@ -1,7 +1,7 @@
-/** Chunk was on 31930 **/
-/** chunk id: 630016, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 630016, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-require.r(module.exports = {
+var r = {
   standardSidebarView: "standardSidebarView__23e6b",
   withUpsell: "withUpsell__23e6b",
   sidebarRegion: "sidebarRegion__23e6b",
@@ -37,4 +37,5 @@ require.r(module.exports = {
   isMobileAndroid: "isMobileAndroid__23e6b",
   mobileToolsCloseIcon: "mobileToolsCloseIcon__23e6b",
   mobileSidebarHeader: "mobileSidebarHeader__23e6b"
-})
+};
+require.r(module.exports = r)

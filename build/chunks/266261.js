@@ -194,7 +194,7 @@ Chunk41958.Globals.assign({
   createStringInterpolator: Chunk179237.createStringInterpolator,
   batchedUpdates: Chunk603113.unstable_batchedUpdates
 });
-var N = Chunk363920.createHost(A, {
+var C = Chunk363920.createHost(A, {
   applyAnimatedValues: h,
   createAnimatedStyle: function(e) {
     return new T(e)
@@ -210,4 +210,4 @@ Object.keys(Chunk41958).forEach(function(e) {
       return a[e]
     }
   })
-}), exports.a = N, exports.animated = N
+}), exports.a = C, exports.animated = C

@@ -1,5 +1,5 @@
-/** Chunk was on 63653 **/
-/** chunk id: 530410, original params: e,n,t (module,exports,require) **/
+/** Chunk was on 91499 **/
+/** chunk id: 530410, original params: e,t,n (module,exports,require) **/
 module.exports = {
   row: "row__5fe04",
   clickable: "clickable__5fe04",

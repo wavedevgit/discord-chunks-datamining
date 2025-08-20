@@ -2,7 +2,7 @@
 /** chunk id: 107062, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => x
+  ZP: () => L
 }), require("./804061.js"), require("./704826.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -29,7 +29,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function N(e, t, n) {
+function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -38,14 +38,14 @@ function N(e, t, n) {
   }) : e[t] = n, e
 }
 
-function C(e) {
+function N(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      N(e, t, n[t])
+      C(e, t, n[t])
     })
   }
   return e
@@ -81,7 +81,7 @@ let w = (e, t) => A.intl.formatToPlainString(A.t.tAwI1t, {
       userName: i
     }).replaceAll("*", "")
   },
-  L = e => {
+  x = e => {
     let {
       entry: t,
       channel: n,
@@ -95,29 +95,29 @@ let w = (e, t) => A.intl.formatToPlainString(A.t.tAwI1t, {
       countOthers: i
     }).replaceAll("*", "")
   },
-  x = e => {
+  L = e => {
     let {
       channel: t,
       entry: n,
       onReaction: m,
-      onVoiceChannelPreview: N,
+      onVoiceChannelPreview: C,
       disableActivityProfileLinks: P
     } = e, {
-      largeImage: x
+      largeImage: L
     } = (0, g.rv)({
       entry: n,
       showCoverImage: false
     }), {
-      user: M,
-      details: k,
-      activity: j,
+      user: j,
+      details: M,
+      activity: k,
       embeddedActivity: U
     } = (0, T.n)(n), {
       primaryColor: G,
       secondaryColor: B
-    } = (0, O.Z)(null == x ? true : x.src), V = (0, a.e7)([p.default], () => p.default.locale), {
-      displayParticipants: F,
-      participant1: Z,
+    } = (0, O.Z)(null == L ? true : L.src), Z = (0, a.e7)([p.default], () => p.default.locale), {
+      displayParticipants: V,
+      participant1: F,
       participant2: H,
       numOtherParticipants: Y
     } = (0, E.Z)(n, 3), W = () => {
@@ -125,30 +125,30 @@ let w = (e, t) => A.intl.formatToPlainString(A.t.tAwI1t, {
         applicationId: n.extra.application_id
       })
     }, K = i.useCallback(e => {
-      if ((null == x ? true : x.src) == null || null == t || null == M) return;
-      let r = Y > 0 ? L({
+      if ((null == L ? true : L.src) == null || null == t || null == j) return;
+      let r = Y > 0 ? x({
         entry: n,
         channel: t,
-        users: [Z, H],
+        users: [F, H],
         countOthers: Y
-      }) : D(n, t, M);
+      }) : D(n, t, j);
       return (0, y.C4)({
         entry: n,
-        applicationImageSrc: null == x ? true : x.src,
-        avatarSrcs: F.map(e => e.getAvatarURL(t.guild_id, 128)),
+        applicationImageSrc: null == L ? true : L.src,
+        avatarSrcs: V.map(e => e.getAvatarURL(t.guild_id, 128)),
         description: r,
-        timestamp: (0, b.yh)(n, V),
+        timestamp: (0, b.yh)(n, Z),
         colors: [G, B],
         channelId: e
       })
-    }, [null == x ? true : x.src, t, F, n, V, Y, Z, H, G, B, M]), {
+    }, [null == L ? true : L.src, t, V, n, Z, Y, F, H, G, B, j]), {
       enabled: z
     } = s.c.useExperiment({
       location: "MemberListAcitivtyContentPopout"
     }, {
       autoTrackExposure: true
     });
-    if (null == M) return null;
+    if (null == j) return null;
     let q = (0, r.jsx)(v.PZ, {
         location: v.Gt.POPOUT,
         entry: n
@@ -157,7 +157,7 @@ let w = (e, t) => A.intl.formatToPlainString(A.t.tAwI1t, {
         channel: t,
         userDescription: (0, b.kr)(n) ? A.t.vPg1JS : A.t.rPqqtr,
         title: n.extra.activity_name,
-        subtitle: k,
+        subtitle: M,
         badges: q,
         entry: n,
         showCoverImage: false,
@@ -165,17 +165,17 @@ let w = (e, t) => A.intl.formatToPlainString(A.t.tAwI1t, {
         onClickSubtitle: P ? true : W,
         onClickThumbnail: P ? true : W
       }),
-      Q = (0, l.Z)(j, S.xjy.JOIN) || (0, c.Z)(j),
+      Q = (0, l.Z)(k, S.xjy.JOIN) || (0, c.Z)(k),
       J = Q ? (0, r.jsx)(u.Z, {
         embeddedActivity: U,
-        activity: j,
-        user: M,
+        activity: k,
+        user: j,
         ButtonComponent: e => {
           let {
             children: t,
             size: n
           } = e, i = R(e, ["children", "size"]);
-          return (0, r.jsx)(I.Ll, C({
+          return (0, r.jsx)(I.Ll, N({
             icon: o.YVR,
             text: t
           }, i))
@@ -192,11 +192,11 @@ let w = (e, t) => A.intl.formatToPlainString(A.t.tAwI1t, {
       children: [X, (0, r.jsx)(I.St, {
         children: (0, r.jsx)(I.WT, {
           onReaction: m,
-          onVoiceChannelPreview: N,
-          user: M,
+          onVoiceChannelPreview: C,
+          user: j,
           channel: t,
           generateReactionImage: K,
-          reactionImageAltText: w(n, M),
+          reactionImageAltText: w(n, j),
           entry: n,
           buttons: et
         })

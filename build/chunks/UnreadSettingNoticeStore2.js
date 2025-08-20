@@ -1,4 +1,4 @@
-/** Chunk was on 36499 **/
+/** Chunk was on 5665 **/
 /** chunk id: 390289, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => R
@@ -48,14 +48,14 @@ let _ = [{
   v = {
     channels: {}
   },
-  j = new Set,
-  O = null,
+  O = new Set,
+  j = null,
   E = 0,
   S = 0;
 
 function P() {
-  if (null == O || !T(O)) returnfalse;
-  let e = Z(O);
+  if (null == j || !T(j)) returnfalse;
+  let e = Z(j);
   if (module.lastActionTime > Date.now() - Chunk70956.Z.Millis.DAY && module.viewDuration > C) returnfalse;
   let t = Date.now();
   module.lastActionTime = exports, module.viewDuration += exports - E, E = exports
@@ -76,7 +76,7 @@ function Z(e) {
 }
 
 function T(e) {
-  if (!u.ZP.useNewNotifications || j.has(e)) returnfalse;
+  if (!u.ZP.useNewNotifications || O.has(e)) returnfalse;
   let t = o.Z.getBasicChannel(e);
   if (null == t || null == t.guild_id || u.ZP.isGuildOrCategoryOrChannelMuted(t.guild_id, t.id) || N(t.guild_id, t.id) || N(t.guild_id, t.parent_id)) returnfalse;
   let n = u.ZP.resolveUnreadSetting(t);
@@ -112,17 +112,17 @@ class A extends(r = Chunk442837.ZP.PersistedStore) {
       for (let e of _)
         if (i < e.timeSinceJoin && (l.numSends >= e.sends || l.viewDuration >= e.viewTime)) returntrue;
       returnfalse
-    }(t) && (delete v.channels[e], j.add(e), (0, f.IG)(t.guild_id, t.id, g.i.ALL_MESSAGES), true)
+    }(t) && (delete v.channels[e], O.add(e), (0, f.IG)(t.guild_id, t.id, g.i.ALL_MESSAGES), true)
   }
 }
 y(A, "displayName", "UnreadSettingNoticeStore2"), y(A, "persistKey", "UnreadSettingNoticeStore2");
 let w = new A(Chunk570140.Z, {
     CHANNEL_SELECT: function() {
       let e = P();
-      return O = Chunk944486.Z.getChannelId(), E = Date.now(), module
+      return j = Chunk944486.Z.getChannelId(), E = Date.now(), module
     },
     CONNECTION_OPEN: function() {
-      O = Chunk944486.Z.getChannelId(), E = Date.now(), I();
+      j = Chunk944486.Z.getChannelId(), E = Date.now(), I();
       let e = Date.now() - x;
       Chunk709054.default.forEach(v.channels, (t, n) => {
         let {

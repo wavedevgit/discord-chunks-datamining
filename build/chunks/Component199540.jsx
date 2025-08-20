@@ -1,4 +1,4 @@
-/** Chunk was on 69003 **/
+/** Chunk was on 91488 **/
 /** chunk id: 199540, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -86,15 +86,15 @@ function b(e) {
     folderGroupId: O,
     folderButtonContent: _,
     onClick: y,
-    onContextMenu: v,
-    onHoverChange: j,
+    onContextMenu: j,
+    onHoverChange: v,
     onKeyDown: C,
     treeItemProps: {
-      onFocus: E
+      onFocus: x
     },
-    "aria-setsize": x,
+    "aria-setsize": E,
     "aria-posinset": S
-  } = e, P = function(e, t) {
+  } = e, I = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -108,11 +108,11 @@ function b(e) {
       for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
-  }(e.treeItemProps, ["onFocus"]), [I, N] = i.useState(false), w = i.useCallback(() => {
-    a || N(true), null == j || j(true)
-  }, [a, j]), Z = i.useCallback(() => {
-    a || N(false), null == j || j(false)
-  }, [a, j]), T = o || null == u ? null : (0, p.Or)(u), A = !o && d > 0 ? (0, p.Ne)(d, g ? c.Z.BACKGROUND_ACCENT : c.Z.STATUS_DANGER) : null;
+  }(e.treeItemProps, ["onFocus"]), [P, N] = i.useState(false), w = i.useCallback(() => {
+    a || N(true), null == v || v(true)
+  }, [a, v]), Z = i.useCallback(() => {
+    a || N(false), null == v || v(false)
+  }, [a, v]), T = o || null == u ? null : (0, p.Or)(u), A = !o && d > 0 ? (0, p.Ne)(d, g ? c.Z.BACKGROUND_ACCENT : c.Z.STATUS_DANGER) : null;
   return (0, r.jsx)(s.tEY, {
     children: (0, r.jsx)(s.P3F, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -134,17 +134,17 @@ function b(e) {
     }({
       className: h.folderButton,
       onClick: y,
-      onContextMenu: v,
+      onContextMenu: j,
       onMouseEnter: w,
       onMouseLeave: Z,
       onKeyDown: C,
-      onFocus: E,
+      onFocus: x,
       focusProps: {
         enabled: false
       }
-    }, P), n = n = {
+    }, I), n = n = {
       role: "treeitem",
-      "aria-setsize": x,
+      "aria-setsize": E,
       "aria-posinset": S,
       "aria-expanded": o,
       "aria-owns": O,
@@ -167,7 +167,7 @@ function b(e) {
             children: _
           }) : (0, r.jsx)(m, {
             folderNode: l,
-            hovered: I,
+            hovered: P,
             sorting: a
           })
         })]

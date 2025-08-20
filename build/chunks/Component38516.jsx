@@ -1,7 +1,7 @@
 /** Chunk was on 89311 **/
 /** chunk id: 38516, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => f
 }), require("./415506.js"), require("./642613.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -15,7 +15,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk803351 = require("./803351.js");
 let m = [Chunk643872.p.OFFICIAL, Chunk643872.p.TWITTER, Chunk643872.p.YOUTUBE];
 
-function f(e) {
+function p(e) {
   let {
     website: t,
     trackClick: n
@@ -109,7 +109,7 @@ function f(e) {
     }
   })
 }
-let p = function(e) {
+let f = function(e) {
   let {
     detectedGame: t,
     trackClick: n
@@ -129,7 +129,7 @@ let p = function(e) {
       children: c.intl.string(c.t.Oj3o19)
     }), (0, r.jsx)("div", {
       className: l()(u.row, u.gapMd),
-      children: i.map(e => (0, r.jsx)(f, {
+      children: i.map(e => (0, r.jsx)(p, {
         website: e,
         trackClick: n
       }, e.url))

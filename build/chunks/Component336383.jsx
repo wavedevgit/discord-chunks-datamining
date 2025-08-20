@@ -90,9 +90,9 @@ let I = Chunk647438.forwardRef(function(e, t) {
   } = (0, f.z)(), {
     analyticsLocations: A
   } = (0, l.ZP)(), {
-    context: N
+    context: C
   } = (0, c.KZ)();
-  return S === p.l.MODAL || S === p.l.MODAL_V2 || (null == N ? true : N.userId) == null ? (0, r.jsx)("article", {
+  return S === p.l.MODAL || S === p.l.MODAL_V2 || (null == C ? true : C.userId) == null ? (0, r.jsx)("article", {
     "aria-label": v,
     "aria-labelledby": I,
     children: (0, r.jsx)(d.Z.Overlay, y(E({
@@ -116,7 +116,7 @@ let I = Chunk647438.forwardRef(function(e, t) {
           section: _.oh.ACTIVITY,
           sourceAnalyticsLocations: A,
           subsection: a
-        }, N)), null == b || b()
+        }, C)), null == b || b()
       },
       children: (0, r.jsx)(d.Z.Overlay, y(E({
         ref: t,

@@ -128,13 +128,13 @@ function O(e, t, n) {
     minidump_exception_module_code_id: null
   }, A);
   console.log("AppCrashedFatalReport lastCrash:", n, e);
-  let N = null == n ? true : n.minidumpInformation;
+  let C = null == n ? true : n.minidumpInformation;
   return _({
     electron_crash_reporter_did_crash: e,
-    minidump_exception_type: null != (b = null == N ? true : N.exceptionString) ? b : null,
-    minidump_exception_module_name: null != (y = null == N ? true : N.exceptionModuleName) ? y : null,
-    minidump_relative_crash_address: null != (O = null == N ? true : N.relativeCrashAddress) ? O : null,
-    minidump_exception_module_version: null != (v = null == N ? true : N.exceptionModuleVersion) ? v : null,
-    minidump_exception_module_code_id: null != (I = null == N ? true : N.exceptionModuleCodeId) ? I : null
+    minidump_exception_type: null != (b = null == C ? true : C.exceptionString) ? b : null,
+    minidump_exception_module_name: null != (y = null == C ? true : C.exceptionModuleName) ? y : null,
+    minidump_relative_crash_address: null != (O = null == C ? true : C.relativeCrashAddress) ? O : null,
+    minidump_exception_module_version: null != (v = null == C ? true : C.exceptionModuleVersion) ? v : null,
+    minidump_exception_module_code_id: null != (I = null == C ? true : C.exceptionModuleCodeId) ? I : null
   }, A)
 }

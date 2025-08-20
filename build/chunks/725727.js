@@ -71,8 +71,8 @@ function g() {
       promotion: t
     }
     of O) A[exports.id] = module;
-  let N = m(require, g, E, A),
-    C = new Set(N.map(e => {
+  let C = m(require, g, E, A),
+    N = new Set(C.map(e => {
       let {
         id: t
       } = e;
@@ -80,12 +80,12 @@ function g() {
     }));
   return {
     promotionsLoaded: b && (!S || null != module || E),
-    activeOutboundPromotions: N,
+    activeOutboundPromotions: C,
     claimedEndedOutboundPromotions: O.filter(e => {
       let {
         promotion: t
       } = e;
-      return !C.has(t.id)
+      return !N.has(t.id)
     }).filter(e => (0, f.ZC)(e.promotion)),
     claimedOutboundPromotionCodeMap: A,
     addClaimedOutboundPromotionCode: I

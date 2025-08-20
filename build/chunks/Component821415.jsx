@@ -1,4 +1,4 @@
-/** Chunk was on 36499 **/
+/** Chunk was on 5665 **/
 /** chunk id: 821415, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -50,9 +50,9 @@ function E(e) {
   if (t.type === x.IIU.PLAYING) {
     let e = null == a ? true : a.getIconURL(46);
     return (0, r.jsxs)("div", {
-      className: O.activityRow,
+      className: j.activityRow,
       children: [(0, r.jsxs)("div", {
-        className: O.activityRowContent,
+        className: j.activityRowContent,
         children: [p || null == e ? (0, r.jsx)(s.IMN, {
           size: "custom",
           width: 46,
@@ -76,7 +76,7 @@ function E(e) {
         disabled: u || y,
         fullWidth: true,
         size: "sm",
-        text: u ? j.intl.string(v.default["8HU1Mz"]) : y ? j.intl.string(v.default.qRXatr) : j.intl.string(v.default.DKHheX),
+        text: u ? O.intl.string(v.default["8HU1Mz"]) : y ? O.intl.string(v.default.qRXatr) : O.intl.string(v.default.DKHheX),
         onClick: C
       })]
     })
@@ -87,7 +87,7 @@ function S(e) {
   let {
     userId: t,
     channel: n
-  } = e, c = (0, o.e7)([y.default], () => y.default.getUser(t)), d = (0, o.e7)([g.Z], () => g.Z.getActivities(t, n.getGuildId())), h = (0, o.e7)([g.Z], () => g.Z.getStatus(t, n.getGuildId())), b = (0, m.Z)(n, null != c ? c : null), _ = (0, C.Z)(n.id), v = null == c || !_, j = i.useMemo(() => l.uniqBy(d.filter(e => e.type === x.IIU.PLAYING), e => e.application_id), [d]);
+  } = e, c = (0, o.e7)([y.default], () => y.default.getUser(t)), d = (0, o.e7)([g.Z], () => g.Z.getActivities(t, n.getGuildId())), h = (0, o.e7)([g.Z], () => g.Z.getStatus(t, n.getGuildId())), b = (0, m.Z)(n, null != c ? c : null), _ = (0, C.Z)(n.id), v = null == c || !_, O = i.useMemo(() => l.uniqBy(d.filter(e => e.type === x.IIU.PLAYING), e => e.application_id), [d]);
   return ((0, p.Z)({
     type: a.ImpressionTypes.POPOUT,
     name: a.ImpressionNames.VOICE_USER_ACTIVITY_POPOUT,
@@ -97,9 +97,9 @@ function S(e) {
   }), v) ? null : (0, r.jsx)(f.Z.Provider, {
     value: n.guild_id,
     children: (0, r.jsxs)("div", {
-      className: O.root,
+      className: j.root,
       children: [(0, r.jsxs)("div", {
-        className: O.userHeader,
+        className: j.userHeader,
         children: [(0, r.jsx)(u.Z, {
           user: c,
           status: h,
@@ -109,8 +109,8 @@ function S(e) {
           children: b
         })]
       }), (0, r.jsx)("div", {
-        className: O.activityList,
-        children: j.map(e => (0, r.jsx)(E, {
+        className: j.activityList,
+        children: O.map(e => (0, r.jsx)(E, {
           activity: e,
           channel: n,
           userId: t

@@ -1,12 +1,13 @@
-/** Chunk was on 66181 **/
-/** chunk id: 521450, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 521450, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => E
+  Z: () => O
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk799899 = require("./799899.js"),
   Chunk435935 = require("./435935.jsx"),
   Chunk442837 = require("./442837.js"),
@@ -21,12 +22,16 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk286661 = require("./286661.js"),
   Chunk197571 = require("./197571.js");
-let E = () => {
+let O = () => {
   let e = Chunk695346.Ex.useSetting(),
     {
       categories: t,
       initialized: n
     } = (0, Chunk442837.cj)([Chunk151662.Z], () => Chunk151662.Z.getEmailSettings());
+
+  function a(e) {
+    (0, f.pR)(m.$Z.FAMILY_CENTER_DIGEST, e)
+  }
   return Chunk647438.useEffect(() => {
     null == require && (0, Chunk960412.Y7)()
   }, [require]), (0, Chunk951288.jsxs)("div", {
@@ -36,7 +41,7 @@ let E = () => {
       color: "text-muted",
       children: Chunk388032.intl.string(Chunk345909.default.USIXU1)
     }), (0, Chunk951288.jsx)(Chunk481060.j7V, {
-      className: a()(Chunk197571.marginTop8, Chunk197571.marginBottom20),
+      className: o()(Chunk197571.marginTop8, Chunk197571.marginBottom20),
       value: module,
       note: Chunk388032.intl.string(Chunk345909.default["5MdB3t"]),
       hideBorder: true,
@@ -72,13 +77,11 @@ let E = () => {
         })]
       })
     }) : null, (0, Chunk951288.jsx)(Chunk481060.j7V, {
-      className: a()(Chunk197571.marginTop20, Chunk197571.marginBottom20),
+      className: o()(Chunk197571.marginTop20, Chunk197571.marginBottom20),
       value: !!exports[Chunk930441.$Z.FAMILY_CENTER_DIGEST],
       note: Chunk388032.intl.string(Chunk345909.default["y34S4+"]),
       hideBorder: true,
-      onChange: function(e) {
-        (0, m.pR)(f.$Z.FAMILY_CENTER_DIGEST, e)
-      },
+      onChange: Chunk120356,
       children: Chunk388032.intl.string(Chunk345909.default.irvJKS)
     })]
   })

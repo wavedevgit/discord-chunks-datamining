@@ -121,15 +121,15 @@ function O(e, t, n) {
   if ((true === t || t < 0) && (t = 0), t > this.length || ((true === n || n > this.length) && (n = this.length), n <= 0 || (n >>>= 0) <= (t >>>= 0))) return "";
   for (e || (e = "utf8");;) switch (e) {
     case "hex":
-      return j(this, t, n);
+      return k(this, t, n);
     case "utf8":
     case "utf-8":
       return D(this, t, n);
     case "ascii":
-      return M(this, t, n);
+      return j(this, t, n);
     case "latin1":
     case "binary":
-      return k(this, t, n);
+      return M(this, t, n);
     case "base64":
       return w(this, t, n);
     case "ucs2":
@@ -213,12 +213,12 @@ function A(e, t, n, r) {
   return X(W(t, e.length - n), e, n, r)
 }
 
-function N(e, t, n, r) {
+function C(e, t, n, r) {
   return X(K(t), e, n, r)
 }
 
-function C(e, t, n, r) {
-  return N(e, t, n, r)
+function N(e, t, n, r) {
+  return C(e, t, n, r)
 }
 
 function R(e, t, n, r) {
@@ -254,7 +254,7 @@ function D(e, t, n) {
     }
     null === u ? (u = 65533, d = 1) : u > 65535 && (u -= 65536, r.push(u >>> 10 & 1023 | 55296), u = 56320 | 1023 & u), r.push(u), i += d
   }
-  return x(r)
+  return L(r)
 }
 r = 0x7fffffff, c.TYPED_ARRAY_SUPPORT = function e() {
   try {
@@ -384,10 +384,10 @@ r = 0x7fffffff, c.TYPED_ARRAY_SUPPORT = function e() {
     case "utf-8":
       return A(this, e, t, n);
     case "ascii":
-      return N(this, e, t, n);
+      return C(this, e, t, n);
     case "latin1":
     case "binary":
-      return C(this, e, t, n);
+      return N(this, e, t, n);
     case "base64":
       return R(this, e, t, n);
     case "ucs2":
@@ -405,30 +405,30 @@ r = 0x7fffffff, c.TYPED_ARRAY_SUPPORT = function e() {
     data: Array.prototype.slice.call(this._arr || this, 0)
   }
 };
-var L = 4096;
+var x = 4096;
 
-function x(e) {
+function L(e) {
   var t = e.length;
-  if (t <= L) return String.fromCharCode.apply(String, e);
-  for (var n = "", r = 0; r < t;) n += String.fromCharCode.apply(String, e.slice(r, r += L));
+  if (t <= x) return String.fromCharCode.apply(String, e);
+  for (var n = "", r = 0; r < t;) n += String.fromCharCode.apply(String, e.slice(r, r += x));
   return n
 }
 
-function M(e, t, n) {
+function j(e, t, n) {
   var r = "";
   n = Math.min(e.length, n);
   for (var i = t; i < n; ++i) r += String.fromCharCode(127 & e[i]);
   return r
 }
 
-function k(e, t, n) {
+function M(e, t, n) {
   var r = "";
   n = Math.min(e.length, n);
   for (var i = t; i < n; ++i) r += String.fromCharCode(e[i]);
   return r
 }
 
-function j(e, t, n) {
+function k(e, t, n) {
   var r = e.length;
   (!t || t < 0) && (t = 0), (!n || n < 0 || n > r) && (n = r);
   for (var i = "", a = t; a < n; ++a) i += $[e[a]];
@@ -451,16 +451,16 @@ function B(e, t, n, r, i, a) {
   if (n + r > e.length) throw RangeError("Index out of range")
 }
 
-function V(e, t, n, r, i, a) {
+function Z(e, t, n, r, i, a) {
   if (n + r > e.length || n < 0) throw RangeError("Index out of range")
 }
 
-function F(e, t, n, r, i) {
-  return t *= 1, n >>>= 0, i || V(e, t, n, 4, 34028234663852886e22, false), a.write(e, t, n, r, 23, 4), n + 4
+function V(e, t, n, r, i) {
+  return t *= 1, n >>>= 0, i || Z(e, t, n, 4, 34028234663852886e22, false), a.write(e, t, n, r, 23, 4), n + 4
 }
 
-function Z(e, t, n, r, i) {
-  return t *= 1, n >>>= 0, i || V(e, t, n, 8, 17976931348623157e292, false), a.write(e, t, n, r, 52, 8), n + 8
+function F(e, t, n, r, i) {
+  return t *= 1, n >>>= 0, i || Z(e, t, n, 8, 17976931348623157e292, false), a.write(e, t, n, r, 52, 8), n + 8
 }
 c.prototype.slice = function(e, t) {
   var n = this.length;
@@ -574,13 +574,13 @@ c.prototype.slice = function(e, t) {
 }, c.prototype.writeInt32BE = function(e, t, n) {
   return e *= 1, t >>>= 0, n || B(this, e, t, 4, 0x7fffffff, false), e < 0 && (e = 0xffffffff + e + 1), this[t] = e >>> 24, this[t + 1] = e >>> 16, this[t + 2] = e >>> 8, this[t + 3] = 255 & e, t + 4
 }, c.prototype.writeFloatLE = function(e, t, n) {
-  return F(this, e, t, true, n)
+  return V(this, e, t, true, n)
 }, c.prototype.writeFloatBE = function(e, t, n) {
-  return F(this, e, t, false, n)
+  return V(this, e, t, false, n)
 }, c.prototype.writeDoubleLE = function(e, t, n) {
-  return Z(this, e, t, true, n)
+  return F(this, e, t, true, n)
 }, c.prototype.writeDoubleBE = function(e, t, n) {
-  return Z(this, e, t, false, n)
+  return F(this, e, t, false, n)
 }, c.prototype.copy = function(e, t, n, r) {
   if (!c.isBuffer(e)) throw TypeError("argument should be a Buffer");
   if (n || (n = 0), r || 0 === r || (r = this.length), t >= e.length && (t = e.length), t || (t = 0), r > 0 && r < n && (r = n), r === n || 0 === e.length || 0 === this.length) return 0;

@@ -54,21 +54,21 @@ let y = (e, t, n, r) => {
       appName: S
     } = (0, g.n)(n), {
       primaryColor: A,
-      secondaryColor: N
-    } = (0, d.Z)(null == v ? true : v.src), C = (0, c.yA)(n), R = (0, c.Nq)(n), P = i.useCallback(e => {
-      if (null != t && null != I && null != C && null != R && (0, _.qy)(R)) return (0, u.SO)({
+      secondaryColor: C
+    } = (0, d.Z)(null == v ? true : v.src), N = (0, c.yA)(n), R = (0, c.Nq)(n), P = i.useCallback(e => {
+      if (null != t && null != I && null != N && null != R && (0, _.qy)(R)) return (0, u.SO)({
         entry: n,
         applicationImageSrc: null == v ? true : v.src,
         avatarSrcs: [I.getAvatarURL(null == t ? true : t.guild_id, 128)],
         description: y(n, t, I, R),
         timestamp: E.intl.formatToPlainString(E.t.YL7UEx, {
-          hours: Math.round(C / o.Z.Seconds.HOUR)
+          hours: Math.round(N / o.Z.Seconds.HOUR)
         }),
-        colors: [A, N],
+        colors: [A, C],
         channelId: e
       })
-    }, [null == v ? true : v.src, t, C, n, A, R, N, I]);
-    if (null == I || null == C || null == R || !(0, _.qy)(R)) return null;
+    }, [null == v ? true : v.src, t, N, n, A, R, C, I]);
+    if (null == I || null == N || null == R || !(0, _.qy)(R)) return null;
     let w = null != n.extra.platform ? f.v[n.extra.platform] : null;
     return (0, r.jsxs)(h.yR, {
       children: [(0, r.jsx)(h.wG, {

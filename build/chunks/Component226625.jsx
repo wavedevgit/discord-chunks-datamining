@@ -1,53 +1,56 @@
-/** Chunk was on 66181 **/
-/** chunk id: 226625, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 226625, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => g
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  l = require.n(Chunk392711),
   Chunk803948 = require("./803948.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk607070 = require("./607070.js"),
   Chunk901976 = require("./901976.js");
-let g = {
-  mass: 10,
-  tension: 550,
-  friction: 140
-};
+let p = 90,
+  h = 20,
+  m = {
+    mass: 10,
+    tension: 550,
+    friction: 140
+  };
 
-function h(e) {
+function g(e) {
   let {
     className: t,
     pageMultiplier: n
-  } = e, s = (0, d.e7)([m.Z], () => m.Z.useReducedMotion), [l, h] = r.useState({
+  } = e, a = (0, u.e7)([f.Z], () => f.Z.useReducedMotion), [s, g] = i.useState({
     x: 0,
     y: 0
-  }), f = r.useMemo(() => o().throttle(e => {
-    if (!s) h({
-      x: (window.innerWidth - e.pageX * n) / 90,
-      y: (window.innerHeight - e.pageY * n) / 90
+  }), E = i.useMemo(() => l().throttle(e => {
+    if (!a) g({
+      x: (window.innerWidth - e.pageX * n) / p,
+      y: (window.innerHeight - e.pageY * n) / p
     })
-  }, 20), [n, s]);
-  r.useEffect(() => (window.addEventListener("mousemove", f), () => window.removeEventListener("mousemove", f)), [f]);
-  let [b, x] = (0, u.q_F)(() => ({
+  }, h), [n, a]);
+  i.useEffect(() => (window.addEventListener("mousemove", E), () => window.removeEventListener("mousemove", E)), [E]);
+  let [b, y] = (0, d.q_F)(() => ({
     x: 0,
     y: 0,
-    config: g
+    config: m
   }));
-  return r.useEffect(() => {
-    x({
-      x: l.x,
-      y: l.y
+  return i.useEffect(() => {
+    y({
+      x: s.x,
+      y: s.y
     })
-  }, [l.x, l.y, x]), (0, i.jsx)(c.animated.div, {
+  }, [s.x, s.y, y]), (0, r.jsx)(c.animated.div, {
     style: {
       transform: (0, c.to)([b.x, b.y], (e, t) => "translate3d(".concat(e, "px, ").concat(t, "px, 0)"))
     },
-    className: a()(p.background, t)
+    className: o()(_.background, t)
   })
 }

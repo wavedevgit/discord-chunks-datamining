@@ -120,13 +120,13 @@ async function h(e, t) {
     autoArchiveDuration: T,
     locked: S,
     invitable: A,
-    availableTags: N,
-    defaultSortOrder: C,
+    availableTags: C,
+    defaultSortOrder: N,
     defaultForumLayout: R,
     defaultTagSetting: P,
     iconEmoji: w,
     themeColor: D
-  } = t, L = s.Z.getChannel(e);
+  } = t, x = s.Z.getChannel(e);
   return i.Z.dispatch({
     type: "CHANNEL_SETTINGS_SUBMIT"
   }), await o.Z.unarchiveThreadIfNecessary(e), r.tn.patch({
@@ -154,14 +154,14 @@ async function h(e, t) {
         emoji_id: null == O ? true : O.emojiId,
         emoji_name: null == O ? true : O.emojiName
       } : null === O ? null : true,
-      available_tags: null == N ? true : N.map(e => ({
+      available_tags: null == C ? true : C.map(e => ({
         id: e.id,
         name: e.name,
         emoji_id: e.emojiId,
         emoji_name: e.emojiName,
         moderated: e.moderated
       })),
-      default_sort_order: C,
+      default_sort_order: N,
       default_forum_layout: R,
       default_tag_setting: P,
       icon_emoji: null != w ? {
@@ -177,8 +177,8 @@ async function h(e, t) {
       type: "CHANNEL_SETTINGS_SUBMIT_SUCCESS",
       channelId: e
     });
-    let n = null == L ? true : L.getGuildId();
-    return null == n || (null == L ? true : L.isThread()) || a.Z.checkGuildTemplateDirty(n), t
+    let n = null == x ? true : x.getGuildId();
+    return null == n || (null == x ? true : x.isThread()) || a.Z.checkGuildTemplateDirty(n), t
   }, e => (i.Z.dispatch({
     type: "CHANNEL_SETTINGS_SUBMIT_FAILURE",
     errors: e.body

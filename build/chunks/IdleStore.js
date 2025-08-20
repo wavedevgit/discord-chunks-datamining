@@ -75,11 +75,11 @@ function A(e) {
   m = e.idle
 }
 
-function N(e) {
+function C(e) {
   g = e.afk
 }
 
-function C(e) {
+function N(e) {
   let {
     userId: t,
     speakingFlags: n
@@ -133,8 +133,8 @@ class w extends(r = Chunk442837.ZP.Store) {
 p(w, "displayName", "IdleStore");
 let D = new w(Chunk570140.Z, {
   IDLE: A,
-  AFK: N,
-  SPEAKING: C,
+  AFK: C,
+  SPEAKING: N,
   APP_STATE_UPDATE: R,
   OVERLAY_SET_NOT_IDLE: P,
   CHANNEL_SELECT: P,

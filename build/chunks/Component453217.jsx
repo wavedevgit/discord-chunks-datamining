@@ -1,12 +1,13 @@
-/** Chunk was on 21046 **/
-/** chunk id: 453217, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 453217, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk803948 = require("./803948.js"),
   Chunk481060 = require("./481060.js"),
   Chunk113434 = require("./113434.js"),
@@ -18,64 +19,64 @@ var Chunk120356 = require("./120356.js"),
   Chunk46140 = require("./46140.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk785421 = require("./785421.js");
-let h = function(e) {
+let g = function(e) {
   var t;
   let {
     className: n,
-    expansionSpring: s,
-    isExpanded: h,
-    isExpansionAnimationComplete: b,
-    quest: _,
-    useReducedMotion: j
-  } = e, v = (null == (t = _.userStatus) ? true : t.enrolledAt) != null, {
-    percentComplete: C
-  } = (0, l.Rf)(_), y = (0, l.Jf)(_), E = null != y ? y.percentComplete > 0 : C > 0;
-  return (0, r.jsxs)(a.animated.div, {
-    "aria-hidden": h && b,
-    className: o()(n, x.contentCollapsed, {
-      [x.contentCollapsedExpanded]: h,
-      [x.contentCollapsedAccepted]: v
+    expansionSpring: i,
+    isExpanded: g,
+    isExpansionAnimationComplete: E,
+    quest: b,
+    useReducedMotion: y
+  } = e, O = (null == (t = b.userStatus) ? true : t.enrolledAt) != null, {
+    percentComplete: v
+  } = (0, l.Rf)(b), I = (0, l.Jf)(b), T = null != I ? I.percentComplete > 0 : v > 0;
+  return (0, r.jsxs)(o.animated.div, {
+    "aria-hidden": g && E,
+    className: a()(n, m.contentCollapsed, {
+      [m.contentCollapsedExpanded]: g,
+      [m.contentCollapsedAccepted]: O
     }),
     style: {
-      opacity: s.to({
+      opacity: i.to({
         range: [0, 1],
         output: [1, 0]
       })
     },
-    children: [(0, r.jsx)(m.Z, {
-      quest: _,
-      useReducedMotion: j
+    children: [(0, r.jsx)(_.Z, {
+      quest: b,
+      useReducedMotion: y
     }), (0, r.jsx)("div", {
-      className: x.contentCollapsedWrapper,
-      children: v ? (0, r.jsxs)("div", {
-        className: x.questProgressWrapper,
-        children: [(0, r.jsx)(p.Z, {
-          className: x.questProgressRewardTile,
-          quest: _,
+      className: m.contentCollapsedWrapper,
+      children: O ? (0, r.jsxs)("div", {
+        className: m.questProgressWrapper,
+        children: [(0, r.jsx)(f.Z, {
+          className: m.questProgressRewardTile,
+          quest: b,
           questContent: c.jn.QUEST_BAR,
           autoplay: false,
-          location: f.dr.QUESTS_BAR,
+          location: p.dr.QUESTS_BAR,
           sourceQuestContent: c.jn.QUEST_BAR
-        }), E ? (0, r.jsx)(u.Z, {
-          className: x.questProgressBar,
-          quest: _
-        }) : (0, r.jsx)(i.Text, {
-          className: x.questProgressHint,
+        }), T ? (0, r.jsx)(d.Z, {
+          className: m.questProgressBar,
+          quest: b
+        }) : (0, r.jsx)(s.Text, {
+          className: m.questProgressHint,
           color: "always-white",
           variant: "text-sm/semibold",
-          children: g.intl.string(g.t["7e5k7O"])
+          children: h.intl.string(h.t["7e5k7O"])
         })]
       }) : (0, r.jsxs)("div", {
-        className: x.brandingWrapper,
-        children: [(0, r.jsx)(d.ZP, {
-          className: x.partnerBranding,
-          quest: _
-        }), (0, r.jsx)(i.X6q, {
+        className: m.brandingWrapper,
+        children: [(0, r.jsx)(u.ZP, {
+          className: m.partnerBranding,
+          quest: b
+        }), (0, r.jsx)(s.X6q, {
           color: "always-white",
           variant: "heading-sm/medium",
-          className: x.questName,
-          children: g.intl.format(g.t.EAYZAg, {
-            questName: _.config.messages.questName
+          className: m.questName,
+          children: h.intl.format(h.t.EAYZAg, {
+            questName: b.config.messages.questName
           })
         })]
       })

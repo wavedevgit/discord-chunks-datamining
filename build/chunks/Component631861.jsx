@@ -20,19 +20,19 @@ let v = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(t) {
   let {
     game: e,
     guildId: n,
-    context: o,
+    context: c,
     onSelect: a
-  } = t, l = (0, f.Z)(e.id), p = (0, d.Z)(e), v = (0, s.Z)(e, n, o), Z = (0, u.Z)({
+  } = t, l = (0, f.Z)(e.id), d = (0, b.Z)(e), v = (0, s.Z)(e, n, c), Z = (0, u.Z)({
     id: e.id,
-    label: b.intl.string(b.t["FfCL+/"])
+    label: p.intl.string(p.t["FfCL+/"])
   });
   return (0, r.jsxs)(i.v2r, {
     navId: "game-context",
-    onClose: c.Zy,
-    "aria-label": b.intl.string(b.t.liqwPD),
+    onClose: o.Zy,
+    "aria-label": p.intl.string(p.t.liqwPD),
     onSelect: a,
     children: [(0, r.jsxs)(i.kSQ, {
-      children: [l, p, v]
+      children: [l, d, v]
     }), (0, r.jsx)(i.kSQ, {
       children: Z
     })]

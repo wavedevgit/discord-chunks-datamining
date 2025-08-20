@@ -1,21 +1,31 @@
-/** Chunk was on 48091 **/
-/** chunk id: 622545, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 622545, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => s
+  Z: () => l
 });
 var Chunk388032 = require("./388032.jsx");
-let i = ["a", "b", "c", "d"],
-  l = e => e;
 
-function a(e, t) {
+function i(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+let a = ["a", "b", "c", "d"],
+  o = e => e;
+
+function s(e, t) {
   let n = {},
-    r = Math.min(e.length, i.length);
-  for (let l = 0; l < r; ++l) n[i[l]] = (n, r) => t(e[l], r);
+    r = Math.min(e.length, a.length);
+  for (let i = 0; i < r; ++i) n[a[i]] = (n, r) => t(e[i], r);
   return n
 }
-class s {
+class l {
   asString() {
-    return this.transformed(l)
+    return this.transformed(o)
   }
   isEmpty() {
     return 0 === this.items.length
@@ -27,21 +37,14 @@ class s {
       case 1:
         return e(this.items[0], "");
       case 2:
-        return r.intl.format(r.t.GENERIC_FORMATTED_LIST_TWO, a(this.items, e));
+        return r.intl.format(r.t.GENERIC_FORMATTED_LIST_TWO, s(this.items, e));
       case 3:
-        return r.intl.format(r.t.GENERIC_FORMATTED_LIST_THREE, a(this.items, e));
+        return r.intl.format(r.t.GENERIC_FORMATTED_LIST_THREE, s(this.items, e));
       default:
-        return r.intl.format(r.t.GENERIC_FORMATTED_LIST_FOUR, a(this.items, e))
+        return r.intl.format(r.t.GENERIC_FORMATTED_LIST_FOUR, s(this.items, e))
     }
   }
   constructor(e) {
-    ! function(e, t, n) {
-      t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: true,
-        configurable: true,
-        writable: true
-      }) : e[t] = n
-    }(this, "items", true), this.items = e
+    i(this, "items", true), this.items = e
   }
 }

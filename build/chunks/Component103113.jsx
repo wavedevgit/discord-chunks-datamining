@@ -30,7 +30,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk116649 = require("./116649.js");
 
-function C(e, t, n) {
+function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -46,7 +46,7 @@ function R(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      C(e, t, n[t])
+      N(e, t, n[t])
     })
   }
   return e
@@ -56,48 +56,48 @@ function P(e) {
   let {
     user: t,
     guildId: n,
-    channelId: C,
+    channelId: N,
     messageId: P,
     roleId: w,
     openedAt: D,
-    setPopoutRef: L,
-    closePopout: x,
-    disableUserProfileLink: M = __OVERLAY__,
-    newAnalyticsLocations: k = [],
-    disableAutoFocus: j = false
+    setPopoutRef: x,
+    closePopout: L,
+    disableUserProfileLink: j = __OVERLAY__,
+    newAnalyticsLocations: M = [],
+    disableAutoFocus: k = false
   } = e, U = (0, h.ZP)(t.id, n), {
     analyticsLocations: G
-  } = (0, l.ZP)([...k, s.Z.USER_PROFILE_POPOUT]), B = (0, _.ZB)({
+  } = (0, l.ZP)([...M, s.Z.USER_PROFILE_POPOUT]), B = (0, _.ZB)({
     layout: "POPOUT",
     userId: t.id,
     guildId: n,
-    channelId: C,
+    channelId: N,
     messageId: P,
     roleId: w
-  }), V = i.useRef(null), F = (0, o.Z)(V);
+  }), Z = i.useRef(null), V = (0, o.Z)(Z);
   i.useEffect(() => {
-    null == L || L(null == V ? true : V.current)
-  }, [V, L]);
-  let Z = () => {
-      null == x || x(), (0, m.openUserProfileModal)(R({
+    null == x || x(null == Z ? true : Z.current)
+  }, [Z, x]);
+  let F = () => {
+      null == L || L(), (0, m.openUserProfileModal)(R({
         sourceAnalyticsLocations: G,
         hideRestrictedProfile: true
       }, B))
     },
-    H = !M && (0, c.Z)(t.id),
+    H = !j && (0, c.Z)(t.id),
     Y = () => H ? (0, r.jsx)(a.sNh, {
       id: "view-profile",
       label: A.intl.string(A.t["+Xp3ho"]),
       action: () => {
-        Z(), (0, p.pQ)(R({
+        F(), (0, p.pQ)(R({
           action: "PRESS_VIEW_PROFILE",
           analyticsLocations: G
         }, B))
       }
     }) : null,
-    W = j ? "div" : a.VqE,
+    W = k ? "div" : a.VqE,
     K = (0, u.Dt)(),
-    z = f.ZP.useName(n, C, t);
+    z = f.ZP.useName(n, N, t);
   return (0, r.jsx)(l.Gt, {
     value: G,
     children: (0, r.jsx)(_.Mt, {
@@ -107,7 +107,7 @@ function P(e) {
       fetchEndedAt: null == U ? true : U.fetchEndedAt,
       isLoaded: null == U ? true : U.isLoaded,
       children: (0, r.jsxs)(W, {
-        ref: V,
+        ref: Z,
         "aria-labelledby": K,
         children: [(0, r.jsx)(a.nn4, {
           children: (0, r.jsx)(a.H, {
@@ -126,7 +126,7 @@ function P(e) {
               viewProfileItem: Y()
             })
           }), (0, r.jsxs)("div", {
-            className: N.header,
+            className: C.header,
             children: [(0, r.jsx)(b.Z, {
               user: t,
               displayProfile: U,
@@ -136,21 +136,21 @@ function P(e) {
               user: t,
               displayProfile: U,
               guildId: n,
-              channelId: C,
+              channelId: N,
               themeType: S.l.POPOUT,
-              onOpenProfile: H ? Z : true
+              onOpenProfile: H ? F : true
             })]
           }), (0, r.jsxs)(a.Ttm, {
             fade: true,
-            className: N.body,
+            className: C.body,
             children: [(0, r.jsx)(v.Z, {
               user: t,
-              nickname: f.ZP.getName(n, C, t),
-              onOpenProfile: H ? Z : true,
+              nickname: f.ZP.getName(n, N, t),
+              onOpenProfile: H ? F : true,
               tags: (0, r.jsx)(E.Z, {
                 displayProfile: U,
                 themeType: S.l.POPOUT,
-                onClose: x
+                onClose: L
               })
             }), (0, r.jsx)(y.Z, {
               userId: t.id,
@@ -159,11 +159,11 @@ function P(e) {
               textColor: "header-primary"
             })]
           }), (0, r.jsx)("div", {
-            className: N.footer
+            className: C.footer
           })]
         }), (null == U ? true : U.profileEffectId) != null && (0, r.jsx)(d.Z, {
           profileEffectId: null == U ? true : U.profileEffectId,
-          isHovering: F
+          isHovering: V
         })]
       })
     })

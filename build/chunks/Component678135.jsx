@@ -35,23 +35,23 @@ function v(e) {
     pendingAccentColor: T,
     pendingBio: S,
     pendingPronouns: A,
-    pendingAvatar: N,
-    pendingAvatarDecoration: C,
+    pendingAvatar: C,
+    pendingAvatarDecoration: N,
     pendingNickname: R,
     pendingGlobalName: P,
     pendingThemeColors: w,
     pendingProfileEffectId: D,
-    pendingLegacyUsernameDisabled: L,
-    pendingDisplayNameStyles: x,
-    avatarClassName: M,
-    containerClassName: k,
-    isTryItOutFlow: j = false,
+    pendingLegacyUsernameDisabled: x,
+    pendingDisplayNameStyles: L,
+    avatarClassName: j,
+    containerClassName: M,
+    isTryItOutFlow: k = false,
     disabledInputs: U = false,
     hideCustomStatus: G = false,
     hideBioSection: B = false,
-    hideMessageInput: V = true,
-    pendingBadges: F,
-    shouldOpenBadgeTooltip: Z,
+    hideMessageInput: Z = true,
+    pendingBadges: V,
+    shouldOpenBadgeTooltip: F,
     hideViewFullProfileButton: H = false,
     interactive: Y = true
   } = e, W = (0, l.ZP)(t.id, null == n ? true : n.id), {
@@ -60,8 +60,8 @@ function v(e) {
   } = (0, u.Z)({
     userId: null == t ? true : t.id,
     guildId: null == n ? true : n.id,
-    avatarDecorationOverride: C,
-    avatarOverride: N,
+    avatarDecorationOverride: N,
+    avatarOverride: C,
     size: o.EFr.SIZE_80,
     showPending: true
   }), q = (0, _.ZT)({
@@ -80,7 +80,7 @@ function v(e) {
     displayProfile: W,
     themeType: b.l.POPOUT,
     pendingThemeColors: w,
-    className: a()(O.container, k),
+    className: a()(O.container, M),
     forceShowPremium: i,
     children: [(0, r.jsxs)("div", {
       className: O.header,
@@ -91,7 +91,7 @@ function v(e) {
         canUsePremiumCustomization: i,
         pendingBanner: I,
         pendingAccentColor: T,
-        isTryItOutFlow: j,
+        isTryItOutFlow: k,
         disabledInputs: U,
         onUpsellClick: () => null == v ? true : v({
           object: E.qAy.EDIT_PROFILE_BANNER
@@ -105,9 +105,9 @@ function v(e) {
         previewAvatarDecoration: z,
         previewTheme: X,
         previewPrimaryColor: Q,
-        className: M,
+        className: j,
         disabledInputs: U,
-        isTryItOutFlow: j,
+        isTryItOutFlow: k,
         onUpsellClick: () => null == v ? true : v({
           object: E.qAy.AVATAR
         })
@@ -121,20 +121,20 @@ function v(e) {
       user: t,
       displayProfile: W,
       guild: n,
-      pendingAvatar: N,
+      pendingAvatar: C,
       pendingNickname: R,
       pendingGlobalName: P,
       pendingBio: S,
       pendingPronouns: A,
-      pendingLegacyUsernameDisabled: L,
-      pendingDisplayNameStyles: x,
-      isTryItOutFlow: j,
+      pendingLegacyUsernameDisabled: x,
+      pendingDisplayNameStyles: L,
+      isTryItOutFlow: k,
       hideBioSection: B,
-      pendingBadges: F,
-      shouldOpenBadgeTooltip: Z
+      pendingBadges: V,
+      shouldOpenBadgeTooltip: F
     }), (0, r.jsx)(g.Z, {
       user: t,
-      hideMessageInput: V,
+      hideMessageInput: Z,
       hideViewFullProfileButton: H
     }), null != q && (0, r.jsx)(s.Z, {
       profileEffectId: q

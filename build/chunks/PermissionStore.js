@@ -35,19 +35,19 @@ function A(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let N = {},
-  C = {},
+let C = {},
+  N = {},
   R = {},
   P = 0;
 
 function w(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
-    n = N[e];
+    n = C[e];
   if (null != n) return n;
   let r = I.default.getCurrentUser();
   if (null == r) return b.Hn;
   let i = v.Z.getGuild(e);
-  return null == i ? b.Hn : N[e] = b.uB({
+  return null == i ? b.Hn : C[e] = b.uB({
     user: r,
     context: i,
     checkElevated: t
@@ -70,34 +70,34 @@ function D(e) {
   })
 }
 
-function L(e) {
+function x(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
-    n = C[e];
-  return null != n ? n : C[e] = D(e, t)
+    n = N[e];
+  return null != n ? n : N[e] = D(e, t)
 }
 
-function x(e) {
+function L(e) {
   if (null != e) {
     var t;
     R[e] = (null != (t = R[e]) ? t : 0) + 1
   }
 }
 
-function M() {
-  for (let e in N = {}, C = {}, R) R[module] += 1;
+function j() {
+  for (let e in C = {}, N = {}, R) R[module] += 1;
   P += 1
 }
 
-function k() {
-  M()
+function M() {
+  j()
 }
 
-function j() {
+function k() {
   $()
 }
 
 function U() {
-  M()
+  j()
 }
 
 function G(e) {
@@ -106,7 +106,7 @@ function G(e) {
     user: n
   } = e;
   if (n.id !== (null == (t = I.default.getCurrentUser()) ? true : t.id)) returnfalse;
-  M()
+  j()
 }
 
 function B(e) {
@@ -121,11 +121,11 @@ function B(e) {
       user: r,
       context: n
     });
-  if (C[n.id] === i) returnfalse;
-  C[n.id] = i, P += 1, x(n.getGuildId())
+  if (N[n.id] === i) returnfalse;
+  N[n.id] = i, P += 1, L(n.getGuildId())
 }
 
-function V(e) {
+function Z(e) {
   let {
     channels: t
   } = e, n = false;
@@ -140,22 +140,22 @@ function V(e) {
         user: r,
         context: t
       });
-    C[t.id] !== i && (C[t.id] = i, x(t.getGuildId()), n = true)
+    N[t.id] !== i && (N[t.id] = i, L(t.getGuildId()), n = true)
   }
   return !!n && (P += 1, n)
 }
 
-function F() {
+function V() {
   returntrue
 }
 
-function Z(e) {
+function F(e) {
   var t;
-  return (null == (t = I.default.getCurrentUser()) ? true : t.id) === e.userId && (x(e.guildId), true)
+  return (null == (t = I.default.getCurrentUser()) ? true : t.id) === e.userId && (L(e.guildId), true)
 }
 
 function H(e) {
-  return !!(0, _.s)(e) && (x(e.guildId), true)
+  return !!(0, _.s)(e) && (L(e.guildId), true)
 }
 
 function Y(e) {
@@ -182,18 +182,18 @@ function K(e) {
   let {
     channel: t
   } = e;
-  return delete C[t.id], P += 1, x(t.guild_id), false
+  return delete N[t.id], P += 1, L(t.guild_id), false
 }
 
 function z(e) {
   let {
     guildId: t
   } = e;
-  delete N[t];
+  delete C[t];
   let n = y.Z.getMutableBasicGuildChannelsForGuild(t);
   a().forEach(n, e => {
-    delete C[e.id]
-  }), P += 1, x(t)
+    delete N[e.id]
+  }), P += 1, L(t)
 }
 
 function q(e) {
@@ -206,19 +206,19 @@ function q(e) {
       user: r,
       context: n
     });
-  if (i === C[n.id]) returnfalse;
-  C[n.id] = i, P += 1
+  if (i === N[n.id]) returnfalse;
+  N[n.id] = i, P += 1
 }
 
 function X(e) {
   let {
     guildId: t
   } = e;
-  delete N[t];
+  delete C[t];
   let n = y.Z.getMutableBasicGuildChannelsForGuild(t);
   a().forEach(n, e => {
-    delete C[e.id]
-  }), P += 1, x(t)
+    delete N[e.id]
+  }), P += 1, L(t)
 }
 
 function Q(e, t, n, r) {
@@ -228,7 +228,7 @@ function Q(e, t, n, r) {
       let i = y.Z.getChannel(e.parent_id);
       return null == i ? b.Hn : b.Og(e, Q(i, t, n, r), f.Z.hasJoined(e.id))
     }
-    i = L(e.id)
+    i = x(e.id)
   } else(0, E.lM)(e) && (i = w(e.id));
   return true !== t || true !== n || true !== r ? b.uB({
     user: I.default.getCurrentUser(),
@@ -244,7 +244,7 @@ class J extends(r = Chunk442837.ZP.Store) {
     this.waitFor(Chunk594174.default, Chunk430824.Z, Chunk592125.Z, Chunk271383.ZP, Chunk569471.Z, Chunk427679.Z, Chunk160404.Z)
   }
   getChannelPermissions(e) {
-    return p.Ec.has(e.type) ? D(e.id) : L(e.id)
+    return p.Ec.has(e.type) ? D(e.id) : x(e.id)
   }
   getGuildPermissions(e) {
     return w(e.id)
@@ -325,16 +325,16 @@ class J extends(r = Chunk442837.ZP.Store) {
 }
 
 function $() {
-  C = {}, N = {}, R = {}, P = 0
+  N = {}, C = {}, R = {}, P = 0
 }
 A(J, "displayName", "PermissionStore");
 let ee = new J(Chunk570140.Z, {
-  BACKGROUND_SYNC: k,
-  CONNECTION_OPEN: k,
-  OVERLAY_INITIALIZE: k,
-  CACHE_LOADED: k,
-  CACHE_LOADED_LAZY: k,
-  CONNECTION_CLOSED: j,
+  BACKGROUND_SYNC: M,
+  CONNECTION_OPEN: M,
+  OVERLAY_INITIALIZE: M,
+  CACHE_LOADED: M,
+  CACHE_LOADED_LAZY: M,
+  CONNECTION_CLOSED: k,
   GUILD_CREATE: U,
   GUILD_UPDATE: U,
   GUILD_DELETE: U,
@@ -342,16 +342,16 @@ let ee = new J(Chunk570140.Z, {
   GUILD_MEMBER_UPDATE: G,
   CURRENT_USER_UPDATE: G,
   CHANNEL_CREATE: B,
-  THREAD_CREATE: F,
-  THREAD_UPDATE: F,
-  THREAD_LIST_SYNC: F,
-  LOAD_THREADS_SUCCESS: F,
-  LOAD_ARCHIVED_THREADS_SUCCESS: F,
-  CHANNEL_UPDATES: V,
+  THREAD_CREATE: V,
+  THREAD_UPDATE: V,
+  THREAD_LIST_SYNC: V,
+  LOAD_THREADS_SUCCESS: V,
+  LOAD_ARCHIVED_THREADS_SUCCESS: V,
+  CHANNEL_UPDATES: Z,
   LOAD_MESSAGES_SUCCESS: Y,
   SEARCH_MESSAGES_SUCCESS: W,
   MOD_VIEW_SEARCH_MESSAGES_SUCCESS: W,
-  THREAD_MEMBER_UPDATE: Z,
+  THREAD_MEMBER_UPDATE: F,
   THREAD_MEMBERS_UPDATE: H,
   CHANNEL_DELETE: K,
   GUILD_ROLE_CREATE: z,

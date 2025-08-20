@@ -1,12 +1,13 @@
-/** Chunk was on 66181 **/
-/** chunk id: 186934, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 186934, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   Z: () => h
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk846027 = require("./846027.js"),
@@ -22,38 +23,38 @@ function h(e) {
     refreshStyles: t = false
   } = e, {
     sidechainEnabled: n,
-    sidechainStrength: r
-  } = (0, a.cj)([u.Z], () => ({
-    sidechainEnabled: u.Z.getSidechainCompression(),
-    sidechainStrength: u.Z.getSidechainCompressionStrength()
+    sidechainStrength: i
+  } = (0, o.cj)([d.Z], () => ({
+    sidechainEnabled: d.Z.getSidechainCompression(),
+    sidechainStrength: d.Z.getSidechainCompressionStrength()
   })), {
     analyticsLocations: h
-  } = (0, c.ZP)(), f = (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(l.j7V, {
-      className: t ? null : s()(g.marginTop8, g.marginBottom20),
+  } = (0, c.ZP)(), m = (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(s.j7V, {
+      className: t ? null : a()(p.marginTop8, p.marginBottom20),
       value: n,
-      onChange: e => o.Z.setSidechainCompression(e, {
+      onChange: e => l.Z.setSidechainCompression(e, {
         analyticsLocations: h
       }),
-      note: p.intl.string(p.t.zlA23N),
+      note: _.intl.string(_.t.zlA23N),
       hideBorder: t,
-      children: p.intl.string(p.t["/jwMtr"])
-    }), (0, i.jsx)(l.xJW, {
-      title: p.intl.string(p.t.fhEzfn),
-      children: (0, i.jsx)(l.iRW, {
-        initialValue: r,
+      children: _.intl.string(_.t["/jwMtr"])
+    }), (0, r.jsx)(s.xJW, {
+      title: _.intl.string(_.t.fhEzfn),
+      children: (0, r.jsx)(s.iRW, {
+        initialValue: i,
         minValue: 1,
-        onValueChange: e => o.Z.setSidechainCompressionStrength(e, {
+        onValueChange: e => l.Z.setSidechainCompressionStrength(e, {
           analyticsLocations: h
         })
       })
     })]
   });
-  return (0, i.jsx)(d.F, {
-    setting: m.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_SIDECHAIN_COMPRESSION,
-    children: t ? f : (0, i.jsx)(l.hjN, {
-      className: g.marginBottom20,
-      children: f
+  return (0, r.jsx)(u.F, {
+    setting: f.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_SIDECHAIN_COMPRESSION,
+    children: t ? m : (0, r.jsx)(s.hjN, {
+      className: p.marginBottom20,
+      children: m
     })
   })
 }

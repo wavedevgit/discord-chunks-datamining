@@ -2,7 +2,7 @@
 /** chunk id: 224724, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => N
+  Z: () => C
 }), require("./388685.js");
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
@@ -115,7 +115,7 @@ class A extends Chunk442837.ZP.Store {
     return _
   }
 }
-let N = new A(Chunk570140.Z, {
+let C = new A(Chunk570140.Z, {
   WIDGET_PENDING_SET: g,
   WIDGET_PENDING_SAVE_START: v,
   WIDGET_PENDING_SAVE_SUCCESS: I,

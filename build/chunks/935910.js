@@ -1,12 +1,13 @@
-/** Chunk was on 40694 **/
-/** chunk id: 935910, original params: e,n,t (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 935910, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => i
+  Z: () => a
 });
 var Chunk245315 = require("./245315.js"),
   Chunk368859 = require("./368859.js");
 
-function i(e) {
-  var n;
-  return !((0, r.cp)(e) || (0, l.Z)(e) && (null == (n = e.messageReference) ? true : n.guild_id) != null) && (null == e.interaction || "SENDING" !== e.state)
+function a(e) {
+  var t;
+  return !((0, r.cp)(e) || (0, i.Z)(e) && (null == (t = e.messageReference) ? true : t.guild_id) != null) && (null == e.interaction || "SENDING" !== e.state)
 }

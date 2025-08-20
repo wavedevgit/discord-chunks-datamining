@@ -1,5 +1,5 @@
-/** Chunk was on 31930 **/
-/** chunk id: 762641, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 762641, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 module.exports = {
   messageBlock: "messageBlock__2d815",

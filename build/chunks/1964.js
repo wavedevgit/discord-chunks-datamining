@@ -1,49 +1,50 @@
-/** Chunk was on 76540 **/
-/** chunk id: 1964, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 1964, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => E
+  Z: () => _
 });
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 let {
-  CAPTCHA: o,
-  EMAIL: a,
+  CAPTCHA: s,
+  EMAIL: l,
   PHONE: c,
-  REVERIFY_EMAIL: h,
-  REVERIFY_PHONE: u
-} = Chunk981631.PUi, d = {
-  [Chunk981631.c2C.REQUIRE_VERIFIED_EMAIL]: [a],
+  REVERIFY_EMAIL: u,
+  REVERIFY_PHONE: d
+} = Chunk981631.PUi, f = {
+  [Chunk981631.c2C.REQUIRE_VERIFIED_EMAIL]: [l],
   [Chunk981631.c2C.REQUIRE_VERIFIED_PHONE]: [c],
-  [Chunk981631.c2C.REQUIRE_REVERIFIED_EMAIL]: [h],
-  [Chunk981631.c2C.REQUIRE_REVERIFIED_PHONE]: [u],
-  [Chunk981631.c2C.REQUIRE_VERIFIED_EMAIL_OR_VERIFIED_PHONE]: [a, c],
-  [Chunk981631.c2C.REQUIRE_REVERIFIED_EMAIL_OR_VERIFIED_PHONE]: [c, h],
-  [Chunk981631.c2C.REQUIRE_VERIFIED_EMAIL_OR_REVERIFIED_PHONE]: [a, u],
-  [Chunk981631.c2C.REQUIRE_REVERIFIED_EMAIL_OR_REVERIFIED_PHONE]: [h, u],
-  [Chunk981631.c2C.REQUIRE_CAPTCHA]: [o],
+  [Chunk981631.c2C.REQUIRE_REVERIFIED_EMAIL]: [u],
+  [Chunk981631.c2C.REQUIRE_REVERIFIED_PHONE]: [d],
+  [Chunk981631.c2C.REQUIRE_VERIFIED_EMAIL_OR_VERIFIED_PHONE]: [l, c],
+  [Chunk981631.c2C.REQUIRE_REVERIFIED_EMAIL_OR_VERIFIED_PHONE]: [c, u],
+  [Chunk981631.c2C.REQUIRE_VERIFIED_EMAIL_OR_REVERIFIED_PHONE]: [l, d],
+  [Chunk981631.c2C.REQUIRE_REVERIFIED_EMAIL_OR_REVERIFIED_PHONE]: [u, d],
+  [Chunk981631.c2C.REQUIRE_CAPTCHA]: [s],
   [Chunk981631.c2C.AGREEMENTS]: [],
   [Chunk981631.c2C.REQUIRE_SAFETY_FLOWS]: []
-}, E = {
-  isPhoneReverification: (e, t) => true !== e && e.isPhoneVerified() && (t === r.c2C.REQUIRE_REVERIFIED_PHONE || t === r.c2C.REQUIRE_REVERIFIED_EMAIL_OR_REVERIFIED_PHONE || t === r.c2C.REQUIRE_VERIFIED_EMAIL_OR_REVERIFIED_PHONE),
-  isEmailReverification: e => e === r.c2C.REQUIRE_REVERIFIED_EMAIL || e === r.c2C.REQUIRE_REVERIFIED_EMAIL_OR_REVERIFIED_PHONE || e === r.c2C.REQUIRE_REVERIFIED_EMAIL_OR_VERIFIED_PHONE,
+}, _ = {
+  isPhoneReverification: (e, t) => true !== e && e.isPhoneVerified() && (t === a.c2C.REQUIRE_REVERIFIED_PHONE || t === a.c2C.REQUIRE_REVERIFIED_EMAIL_OR_REVERIFIED_PHONE || t === a.c2C.REQUIRE_VERIFIED_EMAIL_OR_REVERIFIED_PHONE),
+  isEmailReverification: e => e === a.c2C.REQUIRE_REVERIFIED_EMAIL || e === a.c2C.REQUIRE_REVERIFIED_EMAIL_OR_REVERIFIED_PHONE || e === a.c2C.REQUIRE_REVERIFIED_EMAIL_OR_VERIFIED_PHONE,
   isFullScreenVerification(e) {
-    return e === r.c2C.REQUIRE_CAPTCHA || e === r.c2C.REQUIRE_VERIFIED_EMAIL || e === r.c2C.REQUIRE_VERIFIED_PHONE || e === r.c2C.REQUIRE_REVERIFIED_PHONE || e === r.c2C.REQUIRE_REVERIFIED_EMAIL_OR_REVERIFIED_PHONE || e === r.c2C.REQUIRE_VERIFIED_EMAIL_OR_REVERIFIED_PHONE || this.isEmailReverification(e)
+    return e === a.c2C.REQUIRE_CAPTCHA || e === a.c2C.REQUIRE_VERIFIED_EMAIL || e === a.c2C.REQUIRE_VERIFIED_PHONE || e === a.c2C.REQUIRE_REVERIFIED_PHONE || e === a.c2C.REQUIRE_REVERIFIED_EMAIL_OR_REVERIFIED_PHONE || e === a.c2C.REQUIRE_VERIFIED_EMAIL_OR_REVERIFIED_PHONE || this.isEmailReverification(e)
   },
-  getVerificationTypes: e => null == e || "symbol" == typeof e ? [] : d[e],
+  getVerificationTypes: e => null == e || "symbol" == typeof e ? [] : f[e],
   getButtonTitle(e) {
     switch (e) {
-      case r.PUi.EMAIL:
-        return l.intl.string(l.t["1MPz29"]);
-      case r.PUi.PHONE:
-        return l.intl.string(l.t.mjJecn);
-      case r.PUi.REVERIFY_EMAIL:
-        return l.intl.string(l.t.nmdPFR);
-      case r.PUi.REVERIFY_PHONE:
-        return l.intl.string(l.t.of2129);
+      case a.PUi.EMAIL:
+        return o.intl.string(o.t["1MPz29"]);
+      case a.PUi.PHONE:
+        return o.intl.string(o.t.mjJecn);
+      case a.PUi.REVERIFY_EMAIL:
+        return o.intl.string(o.t.nmdPFR);
+      case a.PUi.REVERIFY_PHONE:
+        return o.intl.string(o.t.of2129);
       default:
-        return l.intl.string(l.t["oF6+W1"])
+        return o.intl.string(o.t["oF6+W1"])
     }
   },
   areVerificationTypesEqual: (e, t) => i().isEqual(e, t)

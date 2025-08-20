@@ -1,19 +1,20 @@
-/** Chunk was on 66181 **/
-/** chunk id: 91430, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 91430, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  MM: () => q,
-  Yn: () => Q,
-  ZP: () => $,
+  MM: () => X,
+  Yn: () => $,
+  ZP: () => ee,
   eS: () => J
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
-  o = require.n(Chunk512722),
+  l = require.n(Chunk512722),
   Chunk913527 = require("./913527.js"),
-  d = require.n(Chunk913527),
+  u = require.n(Chunk913527),
   Chunk442837 = require("./442837.js"),
   Chunk692547 = require("./692547.js"),
   Chunk755721 = require("./755721.js"),
@@ -47,74 +48,75 @@ var Chunk951288 = require("./951288.js"),
   Chunk362786 = require("./362786.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk903163 = require("./903163.js");
+let H = "app";
 
-function H(e) {
+function Y(e) {
   let t, {
       subscription: n,
-      renewalInvoicePreview: r,
-      fractionalPremiumInfo: s,
-      fromStandaloneBillingPage: l = true,
+      renewalInvoicePreview: i,
+      fractionalPremiumInfo: a,
+      fromStandaloneBillingPage: s = true,
       className: c
     } = e,
-    d = (0, u.e7)([v.default], () => {
-      let e = v.default.getCurrentUser();
-      return o()(null != e, "GuildBoostingHeader: currentUser cannot be undefined"), e
+    u = (0, d.e7)([T.default], () => {
+      let e = T.default.getCurrentUser();
+      return l()(null != e, "GuildBoostingHeader: currentUser cannot be undefined"), e
     });
-  if (0 === (0, N.uV)(n.additionalPlans)) return null;
+  if (0 === (0, C.uV)(n.additionalPlans)) return null;
   let {
-    status: m
-  } = n, f = (0, N.v6)(n);
-  if (f) t = F.guildBoostingSubscriptionRowCanceled;
-  else switch (m) {
-    case U.O0b.PAST_DUE:
-    case U.O0b.ACCOUNT_HOLD:
-    case U.O0b.BILLING_RETRY:
+    status: f
+  } = n, m = (0, C.v6)(n);
+  if (m) t = F.guildBoostingSubscriptionRowCanceled;
+  else switch (f) {
+    case B.O0b.PAST_DUE:
+    case B.O0b.ACCOUNT_HOLD:
+    case B.O0b.BILLING_RETRY:
       t = F.guildBoostingSubscriptionRowFailedPayment;
       break;
-    case U.O0b.PAUSE_PENDING:
-    case U.O0b.PAUSED:
-      t = n.pauseReason !== V.Id.FRACTIONAL_PREMIUM ? F.guildBoostingSubscriptionRowPaused : F.guildBoostingSubscriptionRowActive;
+    case B.O0b.PAUSE_PENDING:
+    case B.O0b.PAUSED:
+      t = n.pauseReason !== Z.Id.FRACTIONAL_PREMIUM ? F.guildBoostingSubscriptionRowPaused : F.guildBoostingSubscriptionRowActive;
       break;
     default:
       t = F.guildBoostingSubscriptionRowActive
   }
-  return (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsxs)("div", {
-      className: a()(t, c),
-      children: [(0, i.jsx)("div", {
+  return (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsxs)("div", {
+      className: o()(t, c),
+      children: [(0, r.jsx)("div", {
         className: F.guildBoostingSubscriptionRowBackground
-      }), (0, i.jsx)("div", {
+      }), (0, r.jsx)("div", {
         className: F.guildBoostingImage
-      }), (0, i.jsxs)("div", {
+      }), (0, r.jsxs)("div", {
         className: F.guildBoostingSubscriptionRowBody,
-        children: [(0, i.jsx)("div", {
-          className: a()(F.guildBoostingWordmark, {
-            [F.canceled]: f
+        children: [(0, r.jsx)("div", {
+          className: o()(F.guildBoostingWordmark, {
+            [F.canceled]: m
           })
-        }), (0, i.jsx)("div", {
-          children: (0, N.bt)({
+        }), (0, r.jsx)("div", {
+          children: (0, C.bt)({
             subscription: n,
-            renewalInvoicePreview: r,
-            user: d,
-            fractionalPremiumInfo: s
+            renewalInvoicePreview: i,
+            user: u,
+            fractionalPremiumInfo: a
           })
         })]
-      }), l && (0, i.jsx)(w.Z, {
-        color: p.zx.Colors.BRAND,
-        onClick: () => h.Z.open(U.oAB.GUILD_BOOSTING),
-        children: G.intl.string(G.t["NQ5g/f"])
+      }), s && (0, r.jsx)(j.Z, {
+        color: _.zx.Colors.BRAND,
+        onClick: () => h.Z.open(B.oAB.GUILD_BOOSTING),
+        children: V.intl.string(V.t["NQ5g/f"])
       })]
-    }), !l && (0, i.jsx)(g.Text, {
+    }), !s && (0, r.jsx)(p.Text, {
       className: F.boostingDesktopAppBlurb,
       variant: "text-sm/normal",
-      children: G.intl.format(G.t.k6haR0, {
-        openAppHook: () => (0, x.Z)("app")
+      children: V.intl.format(V.t.k6haR0, {
+        openAppHook: () => (0, E.Z)(H)
       })
     })]
   })
 }
 
-function z() {
+function W() {
   return Chunk647438.useEffect(() => {
     Chunk626135.default.track(Chunk981631.rMx.TOOLTIP_VIEWED, {
       type: "subscription_settings_missing_payment_method"
@@ -135,7 +137,7 @@ function z() {
   })
 }
 
-function W() {
+function K() {
   return Chunk647438.useEffect(() => {
     Chunk626135.default.track(Chunk981631.rMx.TOOLTIP_VIEWED, {
       type: "subscription_settings_invalid_payment_method"
@@ -156,36 +158,36 @@ function W() {
   })
 }
 
-function Y(e) {
+function z(e) {
   let {
     daysPastDue: t,
     subscription: n,
-    openInvoiceId: s
+    openInvoiceId: a
   } = e, {
-    analyticsLocations: a
-  } = (0, b.ZP)(f.Z.PAST_DUE_ONE_TIME_PAYMENT_METHOD_BANNER);
-  return r.useEffect(() => {
-    S.default.track(U.rMx.TOOLTIP_VIEWED, {
+    analyticsLocations: o
+  } = (0, g.ZP)(m.Z.PAST_DUE_ONE_TIME_PAYMENT_METHOD_BANNER);
+  return i.useEffect(() => {
+    S.default.track(B.rMx.TOOLTIP_VIEWED, {
       type: "subscription_settings_invalid_payment_method"
     })
-  }, []), (0, i.jsxs)("div", {
+  }, []), (0, r.jsxs)("div", {
     className: F.paymentBanner,
-    children: [(0, i.jsx)(g.Mgn, {
+    children: [(0, r.jsx)(p.Mgn, {
       size: "custom",
       width: 20,
       height: 20,
       className: F.paymentBannerIcon,
-      color: m.Z.unsafe_rawColors.YELLOW_260.css
-    }), (0, i.jsx)(g.Text, {
+      color: f.Z.unsafe_rawColors.YELLOW_260.css
+    }), (0, r.jsx)(p.Text, {
       className: F.paymentBannerText,
       variant: "text-sm/normal",
-      children: G.intl.format(G.t["0nbf/P"], {
+      children: V.intl.format(V.t["0nbf/P"], {
         daysPastDue: t,
         paymentModalRedirect: () => {
-          (0, C.Z)({
+          (0, v.Z)({
             initialPlanId: n.planIdFromItems,
-            openInvoiceId: s,
-            analyticsLocations: a
+            openInvoiceId: a,
+            analyticsLocations: o
           })
         }
       })
@@ -193,27 +195,27 @@ function Y(e) {
   })
 }
 
-function K(e) {
+function q(e) {
   let {
     subscription: t,
     renewalInvoicePreview: n,
-    openInvoice: r,
-    className: s,
-    fractionalPremiumInfo: l
+    openInvoice: i,
+    className: a,
+    fractionalPremiumInfo: s
   } = e;
-  return (0, i.jsxs)("div", {
-    className: a()(F.billingInformation, s),
-    children: [(0, i.jsx)(g.vwX, {
+  return (0, r.jsxs)("div", {
+    className: o()(F.billingInformation, a),
+    children: [(0, r.jsx)(p.vwX, {
       tag: "h3",
       className: F.detailBlockHeader,
-      children: G.intl.string(G.t.KXQjfX)
-    }), (0, i.jsx)("div", {
-      children: N.ZP.getBillingInformationString(t, n, r, false, l)
+      children: V.intl.string(V.t.KXQjfX)
+    }), (0, r.jsx)("div", {
+      children: C.ZP.getBillingInformationString(t, n, i, false, s)
     })]
   })
 }
 
-function q() {
+function X() {
   return (0, Chunk951288.jsxs)("div", {
     children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
       className: Chunk903163.sectionTitle,
@@ -240,101 +242,101 @@ function q() {
   })
 }
 
-function X(e) {
+function Q(e) {
   let {
     subscription: t,
     analyticsLocation: n,
-    paymentSource: r,
-    busy: s,
-    fromStandaloneBillingPage: l,
-    showInvalidPaymentMethod: o,
+    paymentSource: i,
+    busy: a,
+    fromStandaloneBillingPage: s,
+    showInvalidPaymentMethod: l,
     showNoPaymentMethod: c,
-    fetchedCurrentInvoicePreview: d,
-    fetchedRenewalInvoicePreview: u,
-    fetchedOpenInvoice: m
+    fetchedCurrentInvoicePreview: u,
+    fetchedRenewalInvoicePreview: d,
+    fetchedOpenInvoice: f
   } = e, {
-    analyticsLocations: p
-  } = (0, b.ZP)(f.Z.SUBSCRIPTION_DETAILS), h = null != d ? {} : {
+    analyticsLocations: _
+  } = (0, g.ZP)(m.Z.SUBSCRIPTION_DETAILS), h = null != u ? {} : {
     subscriptionId: t.id,
     renewal: true,
-    analyticsLocations: p,
+    analyticsLocations: _,
     analyticsLocation: n
-  }, [x] = (0, y.ED)(h);
-  x = null != d ? d : x;
-  let j = null != u ? {} : {
+  }, [E] = (0, R.ED)(h);
+  E = null != u ? u : E;
+  let y = null != d ? {} : {
       subscriptionId: t.id,
       renewal: true,
       applyEntitlements: true,
-      analyticsLocations: p,
+      analyticsLocations: _,
       analyticsLocation: n
     },
-    [E] = (0, y.ED)(j);
-  E = null != u ? u : E;
-  let C = (0, _.Z)(),
-    O = (0, R.$)(),
-    v = (0, A.lr)(),
-    S = N.ZP.isBaseSubscriptionCanceled(t),
-    T = (0, D.P)(t, r);
-  if (null == x || null == E) return (0, i.jsx)(g.$jN, {});
-  let P = T ? (0, A.Yi)(E) : null,
-    w = null != P || null != v && (v.discountId === M.dT || v.discountId === M.dB),
-    B = T && (S && null != O || !S && w);
-  return (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsxs)("div", {
+    [O] = (0, R.ED)(y);
+  O = null != d ? d : O;
+  let v = (0, b.Z)(),
+    I = (0, D.$)(),
+    T = (0, P.lr)(),
+    S = C.ZP.isBaseSubscriptionCanceled(t),
+    A = (0, x.P)(t, i);
+  if (null == E || null == O) return (0, r.jsx)(p.$jN, {});
+  let w = A ? (0, P.Yi)(O) : null,
+    j = null != w || null != T && (T.discountId === G.dT || T.discountId === G.dB),
+    U = A && (S && null != I || !S && j);
+  return (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsxs)("div", {
       className: F.subscriptionRows,
-      children: [B ? (0, i.jsx)(Z.Z, {
+      children: [U ? (0, r.jsx)(L.Z, {
         subscription: t,
-        currentInvoicePreview: x,
+        currentInvoicePreview: E,
+        renewalInvoicePreview: O,
+        paymentSource: i,
+        discountOffer: I,
+        renewalChurnDiscountInfo: w,
+        discountInfo: T,
+        isLoading: a,
+        analyticsLocation: n
+      }) : (0, r.jsx)(M.Z, {
+        subscription: t,
         renewalInvoicePreview: E,
-        paymentSource: r,
-        discountOffer: O,
-        renewalChurnDiscountInfo: P,
-        discountInfo: v,
-        isLoading: s,
+        paymentSource: i,
+        busy: a,
         analyticsLocation: n
-      }) : (0, i.jsx)(k.Z, {
+      }), (0, r.jsx)(Y, {
         subscription: t,
-        renewalInvoicePreview: x,
-        paymentSource: r,
-        busy: s,
-        analyticsLocation: n
-      }), (0, i.jsx)(H, {
-        subscription: t,
-        renewalInvoicePreview: x,
-        fromStandaloneBillingPage: l,
+        renewalInvoicePreview: E,
+        fromStandaloneBillingPage: s,
         className: F.guildSubscriptionRow,
-        fractionalPremiumInfo: C
+        fractionalPremiumInfo: v
       })]
-    }), (0, i.jsx)("div", {
-      children: (0, i.jsx)(g.y5t, {
-        component: (0, i.jsx)(g.vwX, {
+    }), (0, r.jsx)("div", {
+      children: (0, r.jsx)(p.y5t, {
+        component: (0, r.jsx)(p.vwX, {
           tag: "h5",
-          children: G.intl.string(G.t.Sb6wIy)
+          children: V.intl.string(V.t.Sb6wIy)
         }),
-        children: (0, i.jsxs)("div", {
+        children: (0, r.jsxs)("div", {
           className: F.details,
-          children: [(0, i.jsx)(K, {
+          children: [(0, r.jsx)(q, {
             subscription: t,
-            renewalInvoicePreview: E,
+            renewalInvoicePreview: O,
             className: F.detailsBlock,
-            fractionalPremiumInfo: C,
-            openInvoice: m
-          }), (0, i.jsxs)("div", {
-            className: a()(F.detailsBlock, {
-              [F.redBorder]: o
+            fractionalPremiumInfo: v,
+            openInvoice: f
+          }), (0, r.jsxs)("div", {
+            className: o()(F.detailsBlock, {
+              [F.redBorder]: l
             }),
-            children: [(0, i.jsx)(g.vwX, {
+            children: [(0, r.jsx)(p.vwX, {
               tag: "h3",
               className: F.detailBlockHeader,
-              children: t.isPurchasedExternally && null != t.paymentGateway ? G.intl.formatToPlainString(G.t.rTk9v7, {
-                paymentGatewayName: U.Vzj[t.paymentGateway]
-              }) : G.intl.string(G.t.iRzXKS)
-            }), (0, i.jsx)(L.Z, {
+              children: t.isPurchasedExternally && null != t.paymentGateway ? V.intl.formatToPlainString(V.t.rTk9v7, {
+                paymentGatewayName: B.Vzj[t.paymentGateway]
+              }) : V.intl.string(V.t.iRzXKS)
+            }), (0, r.jsx)(k.Z, {
               subscription: t,
-              onPaymentSourceAdded: I.i1,
-              highlightAddPaymentMethodButton: c || o,
+              onPaymentSourceAdded: N.i1,
+              highlightAddPaymentMethodButton: c || l,
               analyticsLocation: n,
-              currentInvoicePreview: x,
+              currentInvoicePreview: E,
               dropdownClassName: F.paymentDropdown
             })]
           })]
@@ -345,7 +347,7 @@ function X(e) {
 }
 let J = new Set([Chunk981631.O0b.ACTIVE, Chunk981631.O0b.PAST_DUE, Chunk981631.O0b.CANCELED, Chunk981631.O0b.PAUSE_PENDING, Chunk981631.O0b.PAUSED]);
 
-function Q() {
+function $() {
   return Chunk647438.useEffect(() => {
     Chunk626135.default.track(Chunk981631.rMx.TOOLTIP_VIEWED, {
       type: "subscription_settings_duplicate_subscriptions"
@@ -367,88 +369,88 @@ function Q() {
   })
 }
 
-function $(e) {
+function ee(e) {
   var t;
   let n, {
-    subscription: r,
-    subscriptions: s,
-    paymentSource: a,
-    busy: l,
-    fromStandaloneBillingPage: o = true,
+    subscription: i,
+    subscriptions: a,
+    paymentSource: o,
+    busy: s,
+    fromStandaloneBillingPage: l = true,
     analyticsLocation: c
   } = e;
-  null != s && null != s[0] && (r = s[0]);
+  null != a && null != a[0] && (i = a[0]);
   let {
-    analyticsLocations: m
-  } = (0, b.ZP)(f.Z.SUBSCRIPTION_DETAILS), p = (0, R.$)(), h = null != s ? s.slice(1) : [], [x] = (0, y.ED)({
-    subscriptionId: r.id,
+    analyticsLocations: f
+  } = (0, g.ZP)(m.Z.SUBSCRIPTION_DETAILS), _ = (0, D.$)(), h = null != a ? a.slice(1) : [], [E] = (0, R.ED)({
+    subscriptionId: i.id,
     renewal: true,
-    analyticsLocations: m,
+    analyticsLocations: f,
     analyticsLocation: c
-  }), [_] = (0, y.ED)({
-    subscriptionId: r.id,
+  }), [b] = (0, R.ED)({
+    subscriptionId: i.id,
     renewal: true,
     applyEntitlements: true,
-    analyticsLocations: m,
+    analyticsLocations: f,
     analyticsLocation: c,
-    userDiscountOfferId: null == p ? true : p.id
-  }), j = null == a ? true : a.invalid, E = (0, u.e7)([v.default], () => {
+    userDiscountOfferId: null == _ ? true : _.id
+  }), y = null == o ? true : o.invalid, O = (0, d.e7)([T.default], () => {
     var e;
-    return null == (e = v.default.getCurrentUser()) ? true : e.hasFreePremium()
-  }), C = d()(r.currentPeriodEnd), S = null != r.paymentSourceId, T = null != (t = null == _ ? true : _.total) ? t : 0, N = !S && T > 0 && (7 >= C.diff(d()(), "days") || r.status === U.O0b.PAST_DUE) && !E && !r.isPurchasedExternally, I = j && r.status === U.O0b.PAST_DUE && !E && !r.isPurchasedExternally, A = (0, P.U)(), D = !E && A, Z = (null == r ? true : r.status) === U.O0b.PAST_DUE, w = Z ? d()().diff(d()(r.currentPeriodStart), "days") : 0, [k] = (0, y.Ox)({
-    subscriptionId: r.id,
-    preventFetch: !(D || Z)
+    return null == (e = T.default.getCurrentUser()) ? true : e.hasFreePremium()
+  }), v = u()(i.currentPeriodEnd), S = null != i.paymentSourceId, A = null != (t = null == b ? true : b.total) ? t : 0, C = !S && A > 0 && (7 >= v.diff(u()(), "days") || i.status === B.O0b.PAST_DUE) && !O && !i.isPurchasedExternally, N = y && i.status === B.O0b.PAST_DUE && !O && !i.isPurchasedExternally, P = (0, w.U)(), x = !O && P, L = (null == i ? true : i.status) === B.O0b.PAST_DUE, j = L ? u()().diff(u()(i.currentPeriodStart), "days") : 0, [M] = (0, R.Ox)({
+    subscriptionId: i.id,
+    preventFetch: !(x || L)
   });
-  return null == x || null == _ ? (0, i.jsx)(g.$jN, {}) : (null != r.renewalMutations && (r.renewalMutations.planId !== r.planId && !(0, O.Q0)(r.renewalMutations.planId) || r.hasExternalPlanChange) && (n = (0, i.jsx)(B.Z, {
-    subscription: r,
-    renewalMutations: r.renewalMutations,
+  return null == E || null == b ? (0, r.jsx)(p.$jN, {}) : (null != i.renewalMutations && (i.renewalMutations.planId !== i.planId && !(0, I.Q0)(i.renewalMutations.planId) || i.hasExternalPlanChange) && (n = (0, r.jsx)(U.Z, {
+    subscription: i,
+    renewalMutations: i.renewalMutations,
     className: F.renewalMutationNotice,
     analyticsLocation: c
-  })), (0, i.jsx)("div", {
-    children: (0, i.jsxs)(g.y5t, {
-      component: (0, i.jsx)(g.vwX, {
+  })), (0, r.jsx)("div", {
+    children: (0, r.jsxs)(p.y5t, {
+      component: (0, r.jsx)(p.vwX, {
         className: F.sectionTitle,
         tag: "h1",
-        children: G.intl.string(G.t["/gs+Pz"])
+        children: V.intl.string(V.t["/gs+Pz"])
       }),
-      children: [N ? (0, i.jsx)(z, {}) : null, I ? (0, i.jsx)(W, {}) : null, D && null != k ? (0, i.jsx)(Y, {
-        daysPastDue: w,
-        subscription: r,
-        openInvoiceId: k.id
-      }) : null, n, (0, i.jsx)("div", {
-        children: (0, i.jsx)("p", {
+      children: [C ? (0, r.jsx)(W, {}) : null, N ? (0, r.jsx)(K, {}) : null, x && null != M ? (0, r.jsx)(z, {
+        daysPastDue: j,
+        subscription: i,
+        openInvoiceId: M.id
+      }) : null, n, (0, r.jsx)("div", {
+        children: (0, r.jsx)("p", {
           className: F.sectionDescription,
-          children: G.intl.string(G.t.D8UpUl)
+          children: V.intl.string(V.t.D8UpUl)
         })
-      }), (0, i.jsxs)("div", {
-        children: [(0, i.jsx)("div", {
+      }), (0, r.jsxs)("div", {
+        children: [(0, r.jsx)("div", {
           className: h.length > 0 ? F.dupSubscriptionRow : F.__invalid_singleSubscription,
-          children: (0, i.jsx)(X, {
-            subscription: r,
+          children: (0, r.jsx)(Q, {
+            subscription: i,
             analyticsLocation: c,
-            paymentSource: a,
-            busy: l,
-            fromStandaloneBillingPage: o,
-            showNoPaymentMethod: N,
-            showInvalidPaymentMethod: I,
-            fetchedCurrentInvoicePreview: x,
-            fetchedRenewalInvoicePreview: _,
-            fetchedOpenInvoice: k
+            paymentSource: o,
+            busy: s,
+            fromStandaloneBillingPage: l,
+            showNoPaymentMethod: C,
+            showInvalidPaymentMethod: N,
+            fetchedCurrentInvoicePreview: E,
+            fetchedRenewalInvoicePreview: b,
+            fetchedOpenInvoice: M
           })
-        }), h.map((e, t) => (0, i.jsxs)("div", {
+        }), h.map((e, t) => (0, r.jsxs)("div", {
           className: F.dupSubscriptionRow,
-          children: [(0, i.jsx)(g.vwX, {
+          children: [(0, r.jsx)(p.vwX, {
             tag: "h2",
             className: F.duplicateHeader,
             children: "Duplicate Subscriptions"
-          }), (0, i.jsx)(X, {
+          }), (0, r.jsx)(Q, {
             subscription: e,
             analyticsLocation: c,
-            paymentSource: a,
-            busy: l,
-            fromStandaloneBillingPage: o,
-            showNoPaymentMethod: N,
-            showInvalidPaymentMethod: I,
+            paymentSource: o,
+            busy: s,
+            fromStandaloneBillingPage: l,
+            showNoPaymentMethod: C,
+            showInvalidPaymentMethod: N,
             fetchedCurrentInvoicePreview: null,
             fetchedRenewalInvoicePreview: null,
             fetchedOpenInvoice: null

@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Qw: () => R,
-  Vi: () => C,
+  Vi: () => N,
   l2: () => P
 });
 var Chunk913527 = require("./913527.js"),
@@ -31,7 +31,7 @@ var Chunk913527 = require("./913527.js"),
   Chunk981631 = require("./981631.js");
 let A = 10;
 
-function N(e) {
+function C(e) {
   let {
     experimentEnabled: t,
     premiumSubscription: n,
@@ -59,7 +59,7 @@ function N(e) {
   return !(a.tq && f.Z.isFractionalPremiumActive())
 }
 
-function C() {
+function N() {
   var e;
   let t = !(arguments.length > 0) || true === arguments[0] || arguments[0],
     {
@@ -96,13 +96,13 @@ function C() {
     delay: Chunk981631 ? false : Chunk1844 - Chunk474936
   });
   let A = !Chunk873546.tq || (0, Chunk358085.isAndroid)() && Chunk355467,
-    C = N({
+    N = C({
       experimentEnabled: i,
       premiumSubscription: Chunk431,
       mostRecentSubscription: Chunk594174,
       previousPremiumSubscription: Chunk580130
     }),
-    R = A && C && null == Chunk74538 && null != Chunk913527 && !require && null == Chunk748770,
+    R = A && N && null == Chunk74538 && null != Chunk913527 && !require && null == Chunk748770,
     {
       enabled: P
     } = Chunk617799.Z.useExperiment({
@@ -142,7 +142,7 @@ async function R() {
   if (Chunk913527 || i || !Chunk399606 || exports && !Chunk358085 || !Chunk74538 || Chunk431.Z.hasFetchedOffer() && (Chunk431.Z.hasAnyUnexpiredOffer() || Chunk431.Z.hasAnyUnexpiredDiscountOffer())) returnfalse;
   !Chunk78839.Z.hasFetchedMostRecentPremiumTypeSubscription() && (null == (e = Chunk594174.default.getCurrentUser()) ? true : module.hasPurchasedFlag(Chunk474936.in.PREMIUM_TIER_2)) && await (0, Chunk355467.ou)(), Chunk78839.Z.hasFetchedSubscriptions() || await (0, Chunk355467.jg)();
   let E = Chunk78839.Z.getMostRecentPremiumTypeSubscription();
-  return N({
+  return C({
     experimentEnabled: Chunk399606,
     premiumSubscription: Chunk78839.Z.getPremiumTypeSubscription(),
     mostRecentSubscription: Chunk104494,

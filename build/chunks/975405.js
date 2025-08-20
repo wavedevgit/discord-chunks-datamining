@@ -1,5 +1,6 @@
-/** Chunk was on 43694 **/
-/** chunk id: 975405, original params: e,t,a (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 975405, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   potionBadge: "potionBadge__18061"
 }

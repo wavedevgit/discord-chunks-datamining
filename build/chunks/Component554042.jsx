@@ -1,12 +1,13 @@
-/** Chunk was on 66181 **/
-/** chunk id: 554042, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 554042, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => j
+  Z: () => y
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk153867 = require("./153867.js"),
@@ -19,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk461059 = require("./461059.js");
-let _ = [{
+let b = [{
   label: "Latin alphabet",
   value: "aBcDeFgHiJkLmNoPqRsTuVwXyZ"
 }, {
@@ -42,14 +43,14 @@ let _ = [{
   value: "custom"
 }];
 
-function j() {
+function y() {
   let [e, t] = Chunk647438.useState(Math.round(window.outerWidth / window.innerWidth * 100)), {
     platformZoom: n,
-    theme: s
+    theme: a
   } = (0, Chunk442837.cj)([Chunk210887.Z, Chunk607070.Z], () => ({
     theme: Chunk210887.Z.theme,
     platformZoom: Chunk607070.Z.zoom
-  })), [j, E] = Chunk647438.useState("upright"), C = ["normal", "medium", "semibold", "bold", "extrabold"], O = new Map([
+  })), [y, O] = Chunk647438.useState("upright"), v = ["normal", "medium", "semibold", "bold", "extrabold"], I = [10, 12, 14, 15, 16, 18, 20, 24], T = new Map([
     ["normal", 400],
     ["medium", 500],
     ["semibold", 600],
@@ -61,26 +62,26 @@ function j() {
       exports(Math.round(window.outerWidth / window.innerWidth * 100))
     })
   }, []);
-  let v = Chunk358085.isPlatformEmbedded ? require : module,
-    S = (0, Chunk442837.e7)([Chunk304761.C], () => {
+  let S = Chunk358085.isPlatformEmbedded ? require : module,
+    A = (0, Chunk442837.e7)([Chunk304761.C], () => {
       var e, t;
       return (0, Chunk865427.fD)() ? null == (t = Chunk304761.C.getCurrentBuildOverride()) || null == (e = exports.overrides) ? true : module.discord_web : null
     }),
-    [T, N] = (0, Chunk918222.R)("playground-overrideText", null),
-    [I, y] = (0, Chunk918222.R)("playground-defaultText", _[0].value),
-    A = Chunk647438.useCallback(e => {
-      let t = _.find(t => {
+    [C, N] = (0, Chunk918222.R)("playground-overrideText", null),
+    [R, P] = (0, Chunk918222.R)("playground-defaultText", b[0].value),
+    w = Chunk647438.useCallback(e => {
+      let t = b.find(t => {
         let {
           value: n
         } = t;
         return n === e
       });
-      "" === e || null == e ? (y(_[0].value), N(null)) : null != t ? y(t.value) : (y("custom"), N(e))
-    }, [N, y]);
+      "" === e || null == e ? (P(b[0].value), N(null)) : null != t ? P(t.value) : (P("custom"), N(e))
+    }, [N, P]);
   return (0, Chunk951288.jsx)("div", {
     style: {
-      "--playground-font-family": "mono" === j ? "gg mono" : "gg sans",
-      "--playground-font-style": "italic" === j ? "italic" : "normal"
+      "--playground-font-family": "mono" === y ? "gg mono" : "gg sans",
+      "--playground-font-style": "italic" === y ? "italic" : "normal"
     },
     children: (0, Chunk951288.jsxs)(Chunk481060.hjN, {
       tag: Chunk481060.RB0.H1,
@@ -93,8 +94,8 @@ function j() {
             style: {
               display: "inline-block"
             },
-            children: ["Zoom: ", v, "%"]
-          }), null != S ? (0, Chunk951288.jsxs)(Chunk481060.Text, {
+            children: ["Zoom: ", S, "%"]
+          }), null != A ? (0, Chunk951288.jsxs)(Chunk481060.Text, {
             tag: "div",
             variant: "heading-lg/bold",
             style: {
@@ -102,22 +103,22 @@ function j() {
               marginLeft: "1em"
             },
             color: "header-secondary",
-            children: ["(", S.id, ")"]
+            children: ["(", A.id, ")"]
           }) : null]
         }), (0, Chunk951288.jsx)(Chunk481060.xJW, {
           children: (0, Chunk951288.jsx)(Chunk481060.q4e, {
             className: Chunk461059.select,
-            options: _,
-            onChange: e => A(e),
-            value: I
+            options: b,
+            onChange: e => w(e),
+            value: R
           })
         }), (0, Chunk951288.jsx)(Chunk481060.xJW, {
           children: (0, Chunk951288.jsx)("div", {
             className: Chunk461059.input,
             children: (0, Chunk951288.jsx)(Chunk481060.oil, {
               placeholder: "Enter custom input...",
-              value: null != T ? T : "",
-              onChange: A
+              value: null != C ? C : "",
+              onChange: w
             })
           })
         })]
@@ -158,56 +159,56 @@ function j() {
               value: "mono"
             }],
             onChange: e => {
-              E(e.value)
+              O(e.value)
             },
-            value: j
+            value: y
           })
         })]
       }), (0, Chunk951288.jsxs)("div", {
         className: Chunk461059.textGrid,
-        children: [(0, Chunk951288.jsx)("div", {}), C.map(e => (0, i.jsx)("div", {
-          className: x.columnHeading,
-          children: (0, i.jsx)(o.X6q, {
+        children: [(0, Chunk951288.jsx)("div", {}), v.map(e => (0, r.jsx)("div", {
+          className: E.columnHeading,
+          children: (0, r.jsx)(l.X6q, {
             variant: "eyebrow",
             children: e
           })
-        }, e)), [10, 12, 14, 15, 16, 18, 20, 24].map(e => (0, i.jsxs)(r.Fragment, {
-          children: [(0, i.jsxs)("div", {
-            className: x.fontSize,
-            children: [(0, i.jsxs)(o.X6q, {
+        }, e)), I.map(e => (0, r.jsxs)(i.Fragment, {
+          children: [(0, r.jsxs)("div", {
+            className: E.fontSize,
+            children: [(0, r.jsxs)(l.X6q, {
               variant: "eyebrow",
               children: [e, "px"]
-            }), 100 !== v ? (0, i.jsxs)(o.X6q, {
+            }), 100 !== S ? (0, r.jsxs)(l.X6q, {
               variant: "eyebrow",
               color: "text-muted",
-              children: ["(", e * v / 100, ")"]
+              children: ["(", e * S / 100, ")"]
             }) : null]
-          }, e), C.map(t => {
+          }, e), v.map(t => {
             var n;
-            let r = null != (n = "custom" === I ? T : I) ? n : "";
-            return (0, i.jsx)("div", {
-              className: x.textSample,
-              children: (0, i.jsxs)("div", {
+            let i = null != (n = "custom" === R ? C : R) ? n : "";
+            return (0, r.jsx)("div", {
+              className: E.textSample,
+              children: (0, r.jsxs)("div", {
                 title: "".concat(e, "px at ").concat(t),
-                className: a()(x.text, {
-                  [x.breakAnywhere]: !r.includes(" ")
+                className: o()(E.text, {
+                  [E.breakAnywhere]: !i.includes(" ")
                 }),
                 style: {
                   fontSize: e,
-                  fontWeight: O.get(t)
+                  fontWeight: T.get(t)
                 },
-                children: [(0, i.jsx)("p", {
-                  children: r
-                }), (0, i.jsx)("p", {
+                children: [(0, r.jsx)("p", {
+                  children: i
+                }), (0, r.jsx)("p", {
                   style: {
                     textTransform: "lowercase"
                   },
-                  children: r
-                }), (0, i.jsx)("p", {
+                  children: i
+                }), (0, r.jsx)("p", {
                   style: {
                     textTransform: "uppercase"
                   },
-                  children: r
+                  children: i
                 })]
               })
             }, "".concat(e, "-").concat(t))

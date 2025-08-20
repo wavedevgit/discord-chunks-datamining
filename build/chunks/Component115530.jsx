@@ -1,12 +1,13 @@
-/** Chunk was on 66181 **/
-/** chunk id: 115530, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 115530, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   Z: () => c
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk338390 = require("./338390.js"),
   Chunk859148 = require("./859148.js");
@@ -15,11 +16,11 @@ function c(e) {
   let {
     children: t,
     className: n
-  } = e, r = (0, l.Z)("PanelTitle");
-  return (0, i.jsx)(a.Text, {
+  } = e, i = (0, s.Z)("PanelTitle");
+  return (0, r.jsx)(o.Text, {
     color: "none",
-    className: s()(o.title, n),
-    variant: r ? "text-md/medium" : "text-sm/medium",
+    className: a()(l.title, n),
+    variant: i ? "text-md/medium" : "text-sm/medium",
     children: t
   })
 }

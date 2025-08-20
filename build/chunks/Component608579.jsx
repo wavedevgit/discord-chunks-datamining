@@ -2,7 +2,7 @@
 /** chunk id: 608579, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => M
+  Z: () => j
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -55,7 +55,7 @@ function D(e) {
   return e
 }
 
-function L(e, t) {
+function x(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -66,60 +66,60 @@ function L(e, t) {
   return n
 }
 
-function x(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
+function L(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function M(e) {
+function j(e) {
   var t;
   let {
     onClose: n,
     onComplete: a,
     onStepChange: w,
-    transitionState: L,
-    loadId: M,
-    skuId: k,
-    isGift: j = false,
+    transitionState: x,
+    loadId: j,
+    skuId: M,
+    isGift: k = false,
     giftRecipient: U,
     giftMessage: G,
     giftingOrigin: B,
-    analyticsLocations: V,
-    returnRef: F
+    analyticsLocations: Z,
+    returnRef: V
   } = e, {
-    analyticsLocations: Z
-  } = (0, d.ZP)([...V, u.Z.COLLECTIBLES_PAYMENT_MODAL]), H = i.useRef(new s.qA), [Y, W] = i.useState(null), [K, z] = i.useState(false), q = i.useMemo(() => (0, N.UY)({
-    purchaseType: C.o8.FIAT,
-    skuId: k
-  }), [k]), X = (0, l.Wu)([f.Z], () => f.Z.recommendedGiftSkuIds, []), Q = null != k ? [k] : X, J = null != (t = Q[0]) ? t : null, $ = null != k && p.Rm.has(k), ee = i.useCallback(() => {
+    analyticsLocations: F
+  } = (0, d.ZP)([...Z, u.Z.COLLECTIBLES_PAYMENT_MODAL]), H = i.useRef(new s.qA), [Y, W] = i.useState(null), [K, z] = i.useState(false), q = i.useMemo(() => (0, C.UY)({
+    purchaseType: N.o8.FIAT,
+    skuId: M
+  }), [M]), X = (0, l.Wu)([f.Z], () => f.Z.recommendedGiftSkuIds, []), Q = null != M ? [M] : X, J = null != (t = Q[0]) ? t : null, $ = null != M && p.Rm.has(M), ee = i.useCallback(() => {
     z(true), null == a || a()
   }, [a]), et = i.useCallback(e => {
     z(false), n(e), c.Z.dispatch({
       type: "SKU_PURCHASE_MODAL_CLOSE",
       error: null
     })
-  }, [n]), en = (e, t, n) => j ? (0, r.jsx)(O.Z, {
+  }, [n]), en = (e, t, n) => k ? (0, r.jsx)(O.Z, {
     step: n,
     onClose: () => t(false),
     giftingOrigin: B
   }) : (0, r.jsx)(S.Z, {
     step: n,
     onClose: () => t(false)
-  }), er = i.useMemo(() => [y.WA, ...j ? [T.Dd] : [], v.n, ...y.yp, y.wo, {
+  }), er = i.useMemo(() => [y.WA, ...k ? [T.Dd] : [], v.n, ...y.yp, y.wo, {
     key: g.h8.CONFIRM,
-    renderStep: e => (0, r.jsx)(I.x, x(D({}, e), {
+    renderStep: e => (0, r.jsx)(I.x, L(D({}, e), {
       confettiCanvas: Y,
-      analyticsLocations: Z,
+      analyticsLocations: F,
       hideConfetti: null != q
     })),
     options: {
       bodyClassName: P.modalOverrideBody,
       sliderBodyClassName: P.modalOverrideSliderBody
     }
-  }], [Z, Y, q, j]);
+  }], [F, Y, q, k]);
   return (0, r.jsxs)(d.Gt, {
-    value: Z,
+    value: F,
     children: [(0, r.jsx)(s.O_, {
       ref: W,
       className: P.confettiCanvas,
@@ -130,17 +130,17 @@ function M(e) {
         [P.hidden]: !K
       })
     }), (0, r.jsx)(m.PaymentContextProvider, {
-      loadId: M,
+      loadId: j,
       stepConfigs: er,
       applicationId: A.XAJ,
       skuIDs: Q,
-      isGift: j,
+      isGift: k,
       activeSubscription: null,
       purchaseType: R.GZ.ONE_TIME,
       excludeSubscriptionPlansBySKU: true,
       children: (0, r.jsx)(E.c1, {
         children: (0, r.jsx)(h.KB, {
-          isGift: j,
+          isGift: k,
           giftRecipient: U,
           giftMessage: G,
           giftingOrigin: B,
@@ -150,10 +150,10 @@ function M(e) {
             applicationId: A.XAJ,
             skuId: J,
             initialPlanId: null,
-            analyticsLocations: Z,
-            transitionState: L,
+            analyticsLocations: F,
+            transitionState: x,
             renderHeader: en,
-            returnRef: F,
+            returnRef: V,
             onStepChange: w,
             skipConfirm: $,
             hideShadow: true

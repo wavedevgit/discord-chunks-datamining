@@ -2,7 +2,7 @@
 /** chunk id: 810097, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => C,
+  ZP: () => N,
   _1: () => T,
   jd: () => S
 });
@@ -69,13 +69,13 @@ let T = 2700,
     [Chunk228168.n_.STATUS]: () => Chunk388032.intl.string(Chunk388032.t.TKdBCw),
     [Chunk228168.n_.ACTIVITY]: () => Chunk388032.intl.string(Chunk388032.t.bSe71N)
   },
-  N = {
+  C = {
     [Chunk228168.n_.AVATAR]: () => Chunk388032.intl.string(Chunk388032.t.xvN0fX),
     [Chunk228168.n_.STATUS]: () => Chunk388032.intl.string(Chunk388032.t["C/vzS0"]),
     [Chunk228168.n_.ACTIVITY]: () => Chunk388032.intl.string(Chunk388032.t.ObfsSk)
   };
 
-function C(e) {
+function N(e) {
   let {
     user: t,
     sourceType: n,
@@ -84,35 +84,35 @@ function C(e) {
     interactionSourceId: v,
     targetRef: T,
     onAction: S,
-    renderMoreButtonPopout: C
+    renderMoreButtonPopout: N
   } = e, R = i.useRef(null), P = (0, s.e7)([f.default], () => f.default.getId() === t.id), w = (0, _.Z)(t.id), {
     themeType: D
   } = (0, h.z)(), {
-    onInteraction: L,
-    onInteractionPopoutTargetRefChange: x
+    onInteraction: x,
+    onInteractionPopoutTargetRefChange: L
   } = (0, p.Xo)();
   if (t.bot || P || !w) return null;
-  let M = () => {
-      x(T), n === m.n_.AVATAR ? S({
+  let j = () => {
+      L(T), n === m.n_.AVATAR ? S({
         action: "PRESS_REACT_AVATAR"
       }) : n === m.n_.STATUS ? S({
         action: "PRESS_REACT_CUSTOM_STATUS"
       }) : S({
         action: "PRESS_REACT_ACTIVITY"
-      }), null == L || L({
+      }), null == x || x({
         interactionType: m.P.REACT,
         interactionSource: n,
         interactionSourceId: v
       }), D === g.l.POPOUT && (0, d.Q3)(l.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK)
     },
-    k = () => {
-      x(T), n === m.n_.AVATAR ? S({
+    M = () => {
+      L(T), n === m.n_.AVATAR ? S({
         action: "PRESS_REPLY_AVATAR"
       }) : n === m.n_.STATUS ? S({
         action: "PRESS_REPLY_CUSTOM_STATUS"
       }) : S({
         action: "PRESS_REPLY_ACTIVITY"
-      }), null == L || L({
+      }), null == x || x({
         interactionType: m.P.REPLY,
         interactionSource: n,
         interactionSourceId: v
@@ -133,7 +133,7 @@ function C(e) {
       delay: 0,
       "aria-label": false,
       children: (0, r.jsx)(u.zx, {
-        onClick: M,
+        onClick: j,
         className: b.button,
         "aria-label": A[n](),
         "aria-haspopup": "dialog",
@@ -149,19 +149,19 @@ function C(e) {
       delay: 0,
       "aria-label": false,
       children: (0, r.jsx)(u.zx, {
-        onClick: k,
+        onClick: M,
         className: b.button,
-        "aria-label": N[n](),
+        "aria-label": C[n](),
         "aria-haspopup": "dialog",
         children: (0, r.jsx)(c.n$P, {
           size: "xs",
           className: b.icon
         })
       })
-    }), null == C ? true : C(e => {
+    }), null == N ? true : N(e => {
       let t = () => {
         var t;
-        x(R), null == (t = e.onClick) || t.call(e)
+        L(R), null == (t = e.onClick) || t.call(e)
       };
       return (0, r.jsx)(c.DY3, {
         text: E.intl.string(E.t.UKOtz8),

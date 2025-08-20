@@ -1,5 +1,6 @@
-/** Chunk was on 26434 **/
-/** chunk id: 701306, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 701306, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   playButton: "playButton__0cb56",
   playButtonContents: "playButtonContents__0cb56",

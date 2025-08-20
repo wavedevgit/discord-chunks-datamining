@@ -1,4 +1,4 @@
-/** Chunk was on 69003 **/
+/** Chunk was on 91488 **/
 /** chunk id: 346356, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   H: () => w
@@ -28,7 +28,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk49898 = require("./49898.js"),
   Chunk46140 = require("./46140.js"),
   Chunk388032 = require("./388032.jsx");
-let I = "orbs_discovery_reheat_coachmark",
+let P = "orbs_discovery_reheat_coachmark",
   N = e => {
     let {
       targetElementRef: t,
@@ -42,13 +42,13 @@ let I = "orbs_discovery_reheat_coachmark",
     } = e, d = i.useMemo(() => ({
       onClose: s,
       onCtaClick: c,
-      titleText: P.intl.string(P.t.RAMiYW),
-      descriptionText: P.intl.format(P.t.xk12LC, {
+      titleText: I.intl.string(I.t.RAMiYW),
+      descriptionText: I.intl.format(I.t.xk12LC, {
         quantity: 200
       }),
-      ctaText: P.intl.string(P.t["cA+7mp"])
+      ctaText: I.intl.string(I.t["cA+7mp"])
     }), [c, s]);
-    return (0, r.jsx)(v.G6, {
+    return (0, r.jsx)(j.G6, {
       errorBoundarySource: "ORBS_DISCOVERY_REHEAT_COACHMARK",
       targetElementRef: t,
       targetQuestId: a,
@@ -63,7 +63,7 @@ let I = "orbs_discovery_reheat_coachmark",
     let {
       targetElementRef: t,
       scrollToBottom: n,
-      renderDiscoveryButton: P,
+      renderDiscoveryButton: I,
       isGuildBarScrolling: w
     } = e, {
       enabled: Z
@@ -74,8 +74,8 @@ let I = "orbs_discovery_reheat_coachmark",
         onShowCoachmarkHandler: t,
         isVirtualCurrencyEnabled: n
       } = e, r = (0, _.F)({
-        location: I
-      }), [y, v] = i.useState(false), j = (e => {
+        location: P
+      }), [y, j] = i.useState(false), v = (e => {
         let {
           isIntroQuestUnclaimed: t
         } = (0, o.cj)([p.Z], () => {
@@ -92,35 +92,35 @@ let I = "orbs_discovery_reheat_coachmark",
         })), r = O.Z.useExperiment(e);
         return null != n && r.enabled && !(0, m.EO)(n) && t
       })({
-        location: I
-      }), P = (0, o.e7)([h.Z], () => h.Z.hasLayers()), N = (0, s.s9z)(s.JQI), w = n && j && !r && !(N || P), [Z, T] = (0, c.US)(w ? [a.z.VIRTUAL_CURRENCY_DISCOVERY_REHEAT_COACHMARK] : []), A = Z === a.z.VIRTUAL_CURRENCY_DISCOVERY_REHEAT_COACHMARK, R = i.useCallback(() => {
-        T(E.L.TAKE_ACTION), (0, u.k5)({
-          source: x.GlobalDiscoveryAnalyticsLocations.VIRTUAL_CURRENCY_REHEAT_COACHMARK
+        location: P
+      }), I = (0, o.e7)([h.Z], () => h.Z.hasLayers()), N = (0, s.s9z)(s.JQI), w = n && v && !r && !(N || I), [Z, T] = (0, c.US)(w ? [a.z.VIRTUAL_CURRENCY_DISCOVERY_REHEAT_COACHMARK] : []), A = Z === a.z.VIRTUAL_CURRENCY_DISCOVERY_REHEAT_COACHMARK, R = i.useCallback(() => {
+        T(x.L.TAKE_ACTION), (0, u.k5)({
+          source: E.GlobalDiscoveryAnalyticsLocations.VIRTUAL_CURRENCY_REHEAT_COACHMARK
         }), (0, f.navigateToQuestHome)({
           fromContent: l.j.ORBS_REHEAT_COACHMARK_CTA,
           questId: S.V6
         })
       }, [T]), D = i.useCallback(() => {
-        T(E.L.USER_DISMISS)
-      }, [T]), L = i.useCallback(() => {
-        T(E.L.TAKE_ACTION), (0, b.Y)({
+        T(x.L.USER_DISMISS)
+      }, [T]), M = i.useCallback(() => {
+        T(x.L.TAKE_ACTION), (0, b.Y)({
           pageType: C.ZY5.GUILD_LIST,
           sectionType: C.jXE.ORBS_DISCOVERY_REHEAT_COACHMARK,
           ctaObject: C.qAy.DISCOVERY_BUTTON_TO_ORB_INTRO_QUEST
         })
       }, [T]);
       return i.useEffect(() => {
-        n && A && !y && (v(true), t())
+        n && A && !y && (j(true), t())
       }, [A, t, n, y]), {
         shouldShow: A,
         onCtaClick: R,
         onClose: D,
         questId: S.V6,
-        onDiscoveryButtonClick: L
+        onDiscoveryButtonClick: M
       }
     })({
       isVirtualCurrencyEnabled: Z,
-      onShowCoachmarkHandler: (0, v.O5)({
+      onShowCoachmarkHandler: (0, j.O5)({
         targetElementRef: t,
         scrollToBottom: n
       })
@@ -160,13 +160,13 @@ let I = "orbs_discovery_reheat_coachmark",
       return e
     }({
       targetElementRef: t,
-      renderDiscoveryButton: P,
+      renderDiscoveryButton: I,
       isGuildBarScrolling: w,
       shouldShow: A
-    }, R)) : (0, r.jsx)(j.u, {
+    }, R)) : (0, r.jsx)(v.u, {
       targetElementRef: t,
       scrollToBottom: n,
-      renderDiscoveryButton: P,
+      renderDiscoveryButton: I,
       isGuildBarScrolling: w
     })
   }

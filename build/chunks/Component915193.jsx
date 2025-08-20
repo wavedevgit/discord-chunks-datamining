@@ -1,7 +1,7 @@
-/** Chunk was on 78086 **/
+/** Chunk was on 74379 **/
 /** chunk id: 915193, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => b
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -15,7 +15,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk452438 = require("./452438.js");
 
-function h(e) {
+function m(e) {
   let {
     color: n,
     className: t
@@ -52,16 +52,16 @@ function h(e) {
   })
 }
 
-function p(e, n) {
-  let t = (0, i.e7)([u.default], () => u.default.getCurrentUser());
+function b(e, n) {
+  let t = (0, i.e7)([d.default], () => d.default.getCurrentUser());
   return null == t || n.ownerId !== t.id || e.id === t.id ? null : (0, r.jsx)(o.sNh, {
     id: "make-dm-owner",
     color: "danger",
-    label: d.intl.string(d.t["6t3CyM"]),
+    label: u.intl.string(u.t["6t3CyM"]),
     action: () => {
       (0, o.h7j)(i => {
-        var u, p;
-        return (0, r.jsxs)(o.ConfirmModal, (u = function(e) {
+        var d, b;
+        return (0, r.jsxs)(o.ConfirmModal, (d = function(e) {
           for (var n = 1; n < arguments.length; n++) {
             var t = null != arguments[n] ? arguments[n] : {},
               r = Object.keys(t);
@@ -80,32 +80,32 @@ function p(e, n) {
           return e
         }({
           bodyClassName: f.confirmModal,
-          header: d.intl.string(d.t.WZoUsr),
-          confirmText: d.intl.string(d.t["cY+Ooa"]),
-          cancelText: d.intl.string(d.t["ETE/oK"]),
-          onConfirm: () => a.Z.setDMOwner(n.id, e.id)
-        }, i), p = p = {
-          children: [(0, r.jsx)(h, {
+          header: u.intl.string(u.t.WZoUsr),
+          confirmText: u.intl.string(u.t["cY+Ooa"]),
+          cancelText: u.intl.string(u.t["ETE/oK"]),
+          onConfirm: () => s.Z.setDMOwner(n.id, e.id)
+        }, i), b = b = {
+          children: [(0, r.jsx)(m, {
             color: l.Z.unsafe_rawColors.PRIMARY_300.css
           }), (0, r.jsxs)("div", {
             className: f.fromToWrapper,
             children: [(0, r.jsx)("div", {
               className: f.from,
-              children: (0, r.jsx)(s.Z, {
+              children: (0, r.jsx)(c.Z, {
                 user: t,
                 size: o.EFr.SIZE_80
               })
             }), (0, r.jsx)("div", {
               className: f.to,
-              children: (0, r.jsx)(s.Z, {
+              children: (0, r.jsx)(c.Z, {
                 user: e,
                 size: o.EFr.SIZE_80
               })
             })]
           }), (0, r.jsx)(o.Text, {
             variant: "text-md/normal",
-            children: d.intl.format(d.t.gsBb3N, {
-              usernameHook: (n, t) => (0, r.jsx)(c.Z, {
+            children: u.intl.format(u.t.gsBb3N, {
+              usernameHook: (n, t) => (0, r.jsx)(a.Z, {
                 usernameIcon: (0, r.jsx)(o.qEK, {
                   className: f.avatarIcon,
                   src: e.getAvatarURL(true, 16),
@@ -119,16 +119,16 @@ function p(e, n) {
               }, t)
             })
           })]
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(u, Object.getOwnPropertyDescriptors(p)) : (function(e, n) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(d, Object.getOwnPropertyDescriptors(b)) : (function(e, n) {
           var t = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e);
             t.push.apply(t, r)
           }
           return t
-        })(Object(p)).forEach(function(e) {
-          Object.defineProperty(u, e, Object.getOwnPropertyDescriptor(p, e))
-        }), u))
+        })(Object(b)).forEach(function(e) {
+          Object.defineProperty(d, e, Object.getOwnPropertyDescriptor(b, e))
+        }), d))
       })
     }
   })

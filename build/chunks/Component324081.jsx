@@ -1,7 +1,7 @@
-/** Chunk was on 69003 **/
+/** Chunk was on 91488 **/
 /** chunk id: 324081, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => I
+  Z: () => P
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -28,14 +28,14 @@ var Chunk120356 = require("./120356.js"),
   Chunk594174 = require("./594174.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk888097 = require("./888097.js");
-let P = {
+let I = {
   top: 8,
   bottom: 8,
   left: false,
   right: false
 };
 
-function I(e) {
+function P(e) {
   var t, n;
   let {
     channel: i,
@@ -46,7 +46,7 @@ function I(e) {
     toggleCollapsed: d
   } = e, p = (0, o.JA)("recents-header-".concat(i.id, "-").concat((0, b.Dt)()));
   return (0, r.jsx)(s.tEY, {
-    offset: P,
+    offset: I,
     children: (0, r.jsxs)("div", (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -111,7 +111,7 @@ function w(e) {
   let {
     channel: t,
     gotoChannel: n
-  } = e, i = (0, a.e7)([E.default], () => t.isDM() ? E.default.getUser(t.getRecipientId()) : null), l = null == i ? (0, f.x)(t) : i.getAvatarURL(true, 40);
+  } = e, i = (0, a.e7)([x.default], () => t.isDM() ? x.default.getUser(t.getRecipientId()) : null), l = null == i ? (0, f.x)(t) : i.getAvatarURL(true, 40);
   return (0, r.jsx)(s.P3F, {
     onClick: n,
     tabIndex: false,
@@ -128,7 +128,7 @@ function Z(e) {
   let {
     channel: t,
     gotoChannel: n
-  } = e, i = (0, a.e7)([v.Z], () => v.Z.getGuild(t.guild_id));
+  } = e, i = (0, a.e7)([j.Z], () => j.Z.getGuild(t.guild_id));
   return null == i ? null : (0, r.jsx)(O.Z, {
     "aria-hidden": true,
     className: S.guildIcon,
@@ -145,7 +145,7 @@ function T(e) {
     channel: t,
     gotoChannel: n,
     mentionCount: i
-  } = e, o = (0, a.e7)([v.Z], () => v.Z.getGuild(t.guild_id)), c = (0, a.e7)([y.Z], () => y.Z.getChannel(t.parent_id)), u = (0, a.e7)([C.ZP], () => C.ZP.getIsMentionLowImportance(t.id)), d = (0, g.KS)(t, o), p = (0, h.ZP)(t, false), f = null == c ? null == o ? true : o.name : "".concat(null == o ? true : o.name, " › ").concat(c.name), b = t.isMultiUserDM() ? x.intl.formatToPlainString(x.t.CxSA5O, {
+  } = e, o = (0, a.e7)([j.Z], () => j.Z.getGuild(t.guild_id)), c = (0, a.e7)([y.Z], () => y.Z.getChannel(t.parent_id)), u = (0, a.e7)([C.ZP], () => C.ZP.getIsMentionLowImportance(t.id)), d = (0, g.KS)(t, o), p = (0, h.ZP)(t, false), f = null == c ? null == o ? true : o.name : "".concat(null == o ? true : o.name, " › ").concat(c.name), b = t.isMultiUserDM() ? E.intl.formatToPlainString(E.t.CxSA5O, {
     members: t.recipients.length + 1
   }) : t.isPrivate() ? (0, r.jsx)(A, {
     channel: t
@@ -196,12 +196,12 @@ function A(e) {
     status: i,
     activities: l,
     applicationStream: o
-  } = (0, a.cj)([E.default, j.Z, _.Z], () => {
-    let e = E.default.getUser(t.getRecipientId());
+  } = (0, a.cj)([x.default, v.Z, _.Z], () => {
+    let e = x.default.getUser(t.getRecipientId());
     return {
       user: e,
-      status: null != e ? j.Z.getStatus(e.id) : null,
-      activities: null != e ? j.Z.getActivities(e.id) : null,
+      status: null != e ? v.Z.getStatus(e.id) : null,
+      activities: null != e ? v.Z.getActivities(e.id) : null,
       applicationStream: null != e ? _.Z.getAnyStreamForUser(e.id) : null
     }
   }), {

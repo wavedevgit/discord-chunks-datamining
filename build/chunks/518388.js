@@ -1,5 +1,6 @@
-/** Chunk was on 21046 **/
-/** chunk id: 518388, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 518388, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   container: "container_b5b7aa",
   positionContentOverBackground: "positionContentOverBackground_b5b7aa",

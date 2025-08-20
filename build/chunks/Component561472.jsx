@@ -1,4 +1,4 @@
-/** Chunk was on 36499 **/
+/** Chunk was on 5665 **/
 /** chunk id: 561472, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => v
@@ -27,11 +27,11 @@ let v = function(e) {
     className: t,
     style: n,
     channel: v,
-    draftType: j
-  } = e, [O, E] = i.useState(true), S = (0, l.e7)([p.Z], () => p.Z.hasLayers()), P = (0, l.e7)([h.Z], () => null != v && h.Z.can(C.Plq.ATTACH_FILES, v), [v]), I = null != (0, l.e7)([o.Z], () => o.Z.getActiveCommand(v.id)), Z = v.getGuildId(), T = j === c.d.FirstThreadMessage, N = (0, l.e7)([m.default], () => {
+    draftType: O
+  } = e, [j, E] = i.useState(true), S = (0, l.e7)([p.Z], () => p.Z.hasLayers()), P = (0, l.e7)([h.Z], () => null != v && h.Z.can(C.Plq.ATTACH_FILES, v), [v]), I = null != (0, l.e7)([o.Z], () => o.Z.getActiveCommand(v.id)), Z = v.getGuildId(), T = O === c.d.FirstThreadMessage, N = (0, l.e7)([m.default], () => {
     var e;
     returntrue == !(null == (e = m.default.getCurrentUser()) ? true : e.nsfwAllowed)
-  }), A = (0, l.e7)([u.Z], () => u.Z.didAgree(Z)) && !N, w = i.useMemo(() => !S && (v.isPrivate() && !v.isManaged() || null != Z && (!(0, a.aC)(v) || A) && P && d.Z.canChatInGuild(Z)), [P, A, v, Z, S]), R = T ? C.TPd.GUILD_THREADS_ONLY.has(v.type) ? x.intl.string(x.t.RBBLhI) : x.intl.string(x.t.gUx4en) : O ? x.intl.format(x.t.dYP2FR, {
+  }), A = (0, l.e7)([u.Z], () => u.Z.didAgree(Z)) && !N, w = i.useMemo(() => !S && (v.isPrivate() && !v.isManaged() || null != Z && (!(0, a.aC)(v) || A) && P && d.Z.canChatInGuild(Z)), [P, A, v, Z, S]), R = T ? C.TPd.GUILD_THREADS_ONLY.has(v.type) ? x.intl.string(x.t.RBBLhI) : x.intl.string(x.t.gUx4en) : j ? x.intl.format(x.t.dYP2FR, {
     destination: (0, s.F6)(v, m.default, f.Z, true)
   }) : x.intl.string(x.t.h76ulJ);
   return I || !w ? null : (0, r.jsx)(y.Z, {
@@ -42,8 +42,8 @@ let v = function(e) {
     icons: _.J6,
     onDrop: e => {
       if (I) returnfalse;
-      w && null != v && ((0, b.d5)(e, v, j, {
-        requireConfirm: O,
+      w && null != v && ((0, b.d5)(e, v, O, {
+        requireConfirm: j,
         showLargeMessageDialog: false,
         origin: "drag_drop"
       }), g.S.dispatchToLastSubscribed(C.CkL.TEXTAREA_FOCUS))
@@ -51,7 +51,7 @@ let v = function(e) {
     onDragClear: () => E(true),
     onDragOver: e => {
       if (I) returnfalse;
-      T || e.shiftKey !== O || E(!e.shiftKey)
+      T || e.shiftKey !== j || E(!e.shiftKey)
     }
   })
 }

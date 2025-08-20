@@ -1,58 +1,62 @@
-/** Chunk was on 91584 **/
-/** chunk id: 633110, original params: t,e,r (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 633110, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 var Chunk102801 = require("./102801.js"),
   Chunk65183 = require("./65183.js"),
-  o = Chunk65183.List,
-  a = Chunk65183.Repeat,
-  u = Chunk65183.Record,
-  s = function() {
+  a = Chunk65183.List,
+  o = Chunk65183.Repeat,
+  s = Chunk65183.Record,
+  l = function() {
     returntrue
   },
-  c = u({
+  c = s({
     start: null,
     end: null
   }),
-  l = u({
+  u = s({
     start: null,
     end: null,
     decoratorKey: null,
     leaves: null
   });
 
-function f(t, e) {
-  return t === e
+function d(e, t) {
+  var n = [];
+  return r(e.map(function(e) {
+    return e.getStyle()
+  }).toList(), f, l, function(e, r) {
+    n.push(new c({
+      start: e + t,
+      end: r + t
+    }))
+  }), a(n)
+}
+
+function f(e, t) {
+  return e === t
 }
 module.exports = {
-  generate: function(t, e, r) {
-    var i = e.getLength();
-    if (!i) return o.of(new l({
+  generate: function(e, t, n) {
+    var i = t.getLength();
+    if (!i) return a.of(new u({
       start: 0,
       end: 0,
       decoratorKey: null,
-      leaves: o.of(new c({
+      leaves: a.of(new c({
         start: 0,
         end: 0
       }))
     }));
-    var u = [],
-      p = r ? r.getDecorations(e, t) : o(a(null, i)),
-      h = e.getCharacterList();
-    return n(p, f, s, function(t, e) {
-      var r, i, a;
-      u.push(new l({
-        start: t,
-        end: e,
-        decoratorKey: p.get(t),
-        leaves: (r = h.slice(t, e).toList(), i = t, a = [], n(r.map(function(t) {
-          return t.getStyle()
-        }).toList(), f, s, function(t, e) {
-          a.push(new c({
-            start: t + i,
-            end: e + i
-          }))
-        }), o(a))
+    var s = [],
+      _ = n ? n.getDecorations(t, e) : a(o(null, i)),
+      p = t.getCharacterList();
+    return r(_, f, l, function(e, t) {
+      s.push(new u({
+        start: e,
+        end: t,
+        decoratorKey: _.get(e),
+        leaves: d(p.slice(e, t).toList(), e)
       }))
-    }), o(u)
+    }), a(s)
   }
 }

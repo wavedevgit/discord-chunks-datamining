@@ -1,15 +1,16 @@
-/** Chunk was on 66181 **/
-/** chunk id: 214852, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 214852, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  z: () => a
+  z: () => o
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk353926 = require("./353926.js");
 
-function a(e) {
-  let [t, n] = (0, r.Wu)([s.Z], () => [s.Z.getAllUserExperimentDescriptors(), s.Z.getGuildExperiments()]);
-  i.useEffect(() => {
+function o(e) {
+  let [t, n] = (0, i.Wu)([a.Z], () => [a.Z.getAllUserExperimentDescriptors(), a.Z.getGuildExperiments()]);
+  r.useEffect(() => {
     e.trigger()
   }, [e, t, n])
 }

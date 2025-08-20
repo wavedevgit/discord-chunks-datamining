@@ -1,39 +1,39 @@
 /** Chunk was on 36605 **/
 /** chunk id: 73880, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Q8: () => d,
+  Q8: () => u,
   jn: () => m,
   lX: () => f
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk755721 = require("./755721.js"),
   Chunk489813 = require("./489813.jsx"),
   Chunk592286 = require("./592286.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk624463 = require("./624463.js");
 
-function d(e) {
+function u(e) {
   let {
     value: t,
     placeholder: n,
-    onChange: i,
-    disabled: s,
+    onChange: l,
+    disabled: a,
     className: c,
-    autofocus: d
+    autofocus: u
   } = e;
-  return (0, r.jsx)(o.iS, {
-    className: l()(u.paragraphFieldBody, c),
-    maxLength: a.RS,
+  return (0, r.jsx)(s.iS, {
+    className: i()(d.paragraphFieldBody, c),
+    maxLength: o.RS,
     value: null != t ? t : "",
     placeholder: null != n ? n : "",
-    onChange: i,
-    disabled: s,
-    autoFocus: d,
+    onChange: l,
+    disabled: a,
+    autoFocus: u,
     autosize: true,
-    showRemainingCharacterCount: !s
+    showRemainingCharacterCount: !a
   })
 }
 
@@ -41,10 +41,10 @@ function m(e) {
   let {
     formField: t
   } = e;
-  return (0, r.jsx)(s.CA, {
+  return (0, r.jsx)(a.CA, {
     title: t.label,
-    children: (0, r.jsx)(d, {
-      className: u.disabledFieldBackground,
+    children: (0, r.jsx)(u, {
+      className: d.disabledFieldBackground,
       value: t.response,
       disabled: true
     })
@@ -55,13 +55,13 @@ function f(e) {
   let {
     formField: t,
     autofocus: n,
-    onChange: i
+    onChange: l
   } = e;
-  return (0, r.jsx)(s.hK, {
+  return (0, r.jsx)(a.hK, {
     title: t.label,
-    children: (0, r.jsx)(d, {
+    children: (0, r.jsx)(u, {
       value: t.response,
-      onChange: i,
+      onChange: l,
       autofocus: n,
       placeholder: c.intl.string(c.t["Sqn+Wl"])
     })

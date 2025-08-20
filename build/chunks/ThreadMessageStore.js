@@ -72,16 +72,16 @@ function S(e) {
 }
 
 function A(e, t) {
-  c.AW.has(e.type) && N(R(e), t)
+  c.AW.has(e.type) && C(R(e), t)
 }
 
-function N(e, t) {
+function C(e, t) {
   var n;
   let r = (null != (n = I[e.parentId]) ? n : 0) + 1;
   I[e.parentId] = r, t(e)
 }
 
-function C(e) {
+function N(e) {
   var t;
   null == (t = e.threads) || t.forEach(P)
 }
@@ -118,10 +118,10 @@ function w(e) {
 }
 
 function D(e) {
-  I = {}, O.clear(), e.guilds.forEach(C)
+  I = {}, O.clear(), e.guilds.forEach(N)
 }
 
-function L(e) {
+function x(e) {
   let {
     threadMessages: t
   } = e;
@@ -133,28 +133,28 @@ function L(e) {
   }
 }
 
-function x(e) {
+function L(e) {
   let {
     guild: t
   } = e;
-  C(t)
+  N(t)
 }
 
-function M(e) {
+function j(e) {
   let {
     guild: t
   } = e;
   T(t.id)
 }
 
-function k(e) {
+function M(e) {
   let {
     channel: t
   } = e;
   P(t)
 }
 
-function j(e) {
+function k(e) {
   let {
     threads: t,
     mostRecentMessages: n
@@ -198,14 +198,14 @@ function B(e) {
   S(t.id)
 }
 
-function V(e) {
+function Z(e) {
   let {
     channel: t
   } = e;
   delete v[t.id]
 }
 
-function F(e) {
+function V(e) {
   let {
     message: t,
     optimistic: n,
@@ -214,13 +214,13 @@ function F(e) {
   } = e;
   if (n || r || null != i) returnfalse;
   let a = f.Z.getChannel(t.channel_id);
-  if (null == a || !c.Ec.has(a.type) || !Z(a, t)) returnfalse;
+  if (null == a || !c.Ec.has(a.type) || !F(a, t)) returnfalse;
   A(a, e => {
     e.count = Math.min(e.count + 1, h.M3), e.mostRecentRawMessage = t, e.mostRecentMessage = null
   })
 }
 
-function Z(e, t) {
+function F(e, t) {
   return !(t.type === m.uaV.THREAD_STARTER_MESSAGE || e.isForumPost() && t.id === p.default.castChannelIdAsMessageId(e.id))
 }
 
@@ -230,7 +230,7 @@ function H(e) {
     message: n
   } = e, r = v[n.channel_id], i = null != (t = null == r ? true : r.mostRecentRawMessage) ? t : null == r ? true : r.mostRecentMessage;
   if (null == r || null == i || i.id !== n.id) returnfalse;
-  N(r, e => {
+  C(r, e => {
     null != e.mostRecentMessage && (e.mostRecentMessage = (0, l.wi)(e.mostRecentMessage, n)), null != e.mostRecentRawMessage && (e.mostRecentRawMessage = (0, l.gx)(e.mostRecentRawMessage, n))
   })
 }
@@ -243,7 +243,7 @@ function Y(e) {
   if (null == r) returnfalse;
   let i = p.default.castChannelIdAsMessageId(n) !== t,
     a = !O.has(t);
-  N(r, e => {
+  C(r, e => {
     var n;
     let r = null != (n = e.mostRecentRawMessage) ? n : e.mostRecentMessage;
     null != r && r.id === t && (e.mostRecentMessage = null, e.mostRecentRawMessage = null), e.count = i && a ? Math.max(e.count - 1, 0) : e.count, O.add(t)
@@ -261,7 +261,7 @@ function W(e) {
       r = !O.has(e);
     return t && r
   }).length;
-  i > 0 && N(r, e => {
+  i > 0 && C(r, e => {
     var n;
     let r = null != (n = e.mostRecentRawMessage) ? n : e.mostRecentMessage;
     null != r && t.includes(r.id) && (e.mostRecentMessage = null, e.mostRecentRawMessage = null), e.count -= i, t.forEach(e => O.add(e))
@@ -317,12 +317,12 @@ class q extends(r = Chunk442837.ZP.Store) {
 g(q, "displayName", "ThreadMessageStore");
 let X = new q(Chunk570140.Z, {
   CONNECTION_OPEN: D,
-  OVERLAY_INITIALIZE: L,
-  GUILD_CREATE: x,
-  GUILD_DELETE: M,
-  THREAD_CREATE: k,
-  THREAD_UPDATE: k,
-  THREAD_LIST_SYNC: j,
+  OVERLAY_INITIALIZE: x,
+  GUILD_CREATE: L,
+  GUILD_DELETE: j,
+  THREAD_CREATE: M,
+  THREAD_UPDATE: M,
+  THREAD_LIST_SYNC: k,
   LOAD_THREADS_SUCCESS: U,
   LOAD_ARCHIVED_THREADS_SUCCESS: U,
   RELATIONSHIP_ADD: z,
@@ -330,9 +330,9 @@ let X = new q(Chunk570140.Z, {
   RELATIONSHIP_REMOVE: z,
   SEARCH_MESSAGES_SUCCESS: G,
   MOD_VIEW_SEARCH_MESSAGES_SUCCESS: G,
-  THREAD_DELETE: V,
+  THREAD_DELETE: Z,
   CHANNEL_DELETE: B,
-  MESSAGE_CREATE: F,
+  MESSAGE_CREATE: V,
   MESSAGE_UPDATE: H,
   MESSAGE_DELETE: Y,
   MESSAGE_DELETE_BULK: W,

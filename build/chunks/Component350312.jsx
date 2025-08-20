@@ -1,12 +1,12 @@
 /** Chunk was on 32249 **/
 /** chunk id: 350312, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => _
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk754700 = require("./754700.js"),
   Chunk481060 = require("./481060.js"),
   Chunk497505 = require("./497505.js"),
@@ -14,34 +14,34 @@ var Chunk951288 = require("./951288.js"),
   Chunk602667 = require("./602667.jsx"),
   Chunk524953 = require("./524953.js");
 
-function p(e) {
+function m(e) {
   let {
     asset: t
   } = e;
   return null == t ? null : (0, r.jsx)("img", {
     src: t.url,
     alt: "",
-    className: m.endScreenImageBackground
+    className: f.endScreenImageBackground
   })
 }
 
-function f(e) {
+function p(e) {
   let {
     quest: t,
     asset: n,
-    sourceQuestContent: l
+    sourceQuestContent: o
   } = e;
   return null == n ? null : (0, r.jsx)(d.A, {
     questOrQuests: t,
     questContent: c.jn.VIDEO_MODAL_END_CARD,
-    sourceQuestContent: l,
+    sourceQuestContent: o,
     children: e => (0, r.jsx)("img", {
       ref: t => {
         e.current = t
       },
       src: n.url,
       alt: "Video thumbnail",
-      className: m.endScreenCard
+      className: f.endScreenCard
     })
   })
 }
@@ -50,93 +50,93 @@ function v(e) {
   let {
     ctaBtnLabel: t,
     title: n,
-    subtitle: l,
-    onCTAClick: o
+    subtitle: o,
+    onCTAClick: l
   } = e;
   return (0, r.jsxs)("div", {
-    className: m.endScreenCtaContainer,
-    children: [(0, r.jsx)(E, {
+    className: f.endScreenCtaContainer,
+    children: [(0, r.jsx)(C, {
       title: n,
-      subtitle: l
-    }), (0, r.jsx)(g, {
+      subtitle: o
+    }), (0, r.jsx)(E, {
       label: t,
       icon: s.d4D,
-      onClick: o
+      onClick: l
+    })]
+  })
+}
+
+function C(e) {
+  let {
+    title: t,
+    subtitle: n
+  } = e;
+  return (0, r.jsxs)("div", {
+    className: f.endScreenCtaTitleContainer,
+    children: [(0, r.jsx)(s.X6q, {
+      variant: "heading-md/semibold",
+      className: f.endScreenCtaTitle,
+      children: t
+    }), (0, r.jsx)(s.X6q, {
+      variant: "heading-sm/normal",
+      className: f.endScreenCtaSubtitle,
+      children: n
     })]
   })
 }
 
 function E(e) {
   let {
-    title: t,
-    subtitle: n
-  } = e;
-  return (0, r.jsxs)("div", {
-    className: m.endScreenCtaTitleContainer,
-    children: [(0, r.jsx)(s.X6q, {
-      variant: "heading-md/semibold",
-      className: m.endScreenCtaTitle,
-      children: t
-    }), (0, r.jsx)(s.X6q, {
-      variant: "heading-sm/normal",
-      className: m.endScreenCtaSubtitle,
-      children: n
-    })]
-  })
-}
-
-function g(e) {
-  let {
     label: t,
     icon: n,
-    onClick: o,
-    className: a
-  } = e, [c, u] = l.useState(false), d = () => {
+    onClick: l,
+    className: i
+  } = e, [c, u] = o.useState(false), d = () => {
     u(true)
-  }, p = () => {
+  }, m = () => {
     u(false)
   };
   return (0, r.jsxs)(s.P3F, {
-    className: i()(m.endScreenCtaBtn, m.accentOnHover, a),
+    className: a()(f.endScreenCtaBtn, f.accentOnHover, i),
     onMouseEnter: d,
-    onMouseLeave: p,
+    onMouseLeave: m,
     onFocus: d,
-    onBlur: p,
-    onClick: o,
+    onBlur: m,
+    onClick: l,
     children: [(0, r.jsx)(s.X6q, {
       variant: "heading-md/semibold",
-      className: m.endScreenCtaBtnTitle,
+      className: f.endScreenCtaBtnTitle,
       children: t
     }), (0, r.jsx)(n, {
       size: "md",
       color: c ? s.TVs.colors.WHITE : "#B5BAC1",
-      className: m.endScreenIcon
+      className: f.endScreenIcon
     })]
   })
 }
-let O = function(e) {
+let _ = function(e) {
   let {
     quest: t,
     ctaBtnLabel: n,
-    title: o,
-    subtitle: i,
+    title: l,
+    subtitle: a,
     onCTAClick: s,
     sourceQuestContent: c
-  } = e, d = l.useMemo(() => (0, u.z0)(t, a.X.WATCH_VIDEO, u.n1.VIDEO, u.O.THUMBNAIL), [t]);
+  } = e, d = o.useMemo(() => (0, u.z0)(t, i.X.WATCH_VIDEO, u.n1.VIDEO, u.O.THUMBNAIL), [t]);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(p, {
+    children: [(0, r.jsx)(m, {
       asset: d
     }), (0, r.jsx)("div", {
-      className: m.endScreenOverlay
+      className: f.endScreenOverlay
     }), (0, r.jsxs)("div", {
-      className: m.endScreenContainer,
-      children: [(0, r.jsx)(f, {
+      className: f.endScreenContainer,
+      children: [(0, r.jsx)(p, {
         quest: t,
         asset: d,
         sourceQuestContent: c
       }), (0, r.jsx)(v, {
-        title: o,
-        subtitle: i,
+        title: l,
+        subtitle: a,
         ctaBtnLabel: n,
         onCTAClick: s
       })]

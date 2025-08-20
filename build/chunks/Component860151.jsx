@@ -1,14 +1,15 @@
-/** Chunk was on 64838 **/
-/** chunk id: 860151, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 860151, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   Z: () => d
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
-  Chunk192023 = require("./192023.js"),
+  Chunk381176 = require("./381176.js"),
   Chunk373370 = require("./373370.js"),
   Chunk644646 = require("./644646.jsx"),
   Chunk73231 = require("./73231.js");
@@ -16,39 +17,39 @@ let d = function(e) {
   let {
     className: t,
     autoplay: n,
-    quest: r,
+    quest: i,
     questContent: d,
-    taskDetails: E,
-    location: m,
+    taskDetails: f,
+    location: _,
     sourceQuestContent: p
-  } = e, f = (0, a.DD)({
-    quest: r,
-    taskDetails: E,
-    location: m,
+  } = e, h = (0, l.DD)({
+    quest: i,
+    taskDetails: f,
+    location: _,
     questContent: d,
     sourceQuestContent: p
-  }), j = (0, o.h)({
-    location: m,
-    questConfig: r.config
+  }), m = (0, s.h)({
+    location: _,
+    questConfig: i.config
   });
-  return (0, l.jsxs)("div", {
-    className: s()(c.wrapper, t),
-    style: j ? true : {
-      color: r.config.colors.primary
+  return (0, r.jsxs)("div", {
+    className: a()(u.wrapper, t),
+    style: m ? true : {
+      color: i.config.colors.primary
     },
-    children: [(0, l.jsx)(u.Z, {
+    children: [(0, r.jsx)(c.Z, {
       autoplay: n,
-      className: c.rewardTile,
-      quest: r,
+      className: u.rewardTile,
+      quest: i,
       questContent: d,
-      location: m,
+      location: _,
       sourceQuestContent: p
-    }), (0, l.jsx)("div", {
-      className: c.copy,
-      children: (0, l.jsx)(i.Text, {
+    }), (0, r.jsx)("div", {
+      className: u.copy,
+      children: (0, r.jsx)(o.Text, {
         variant: "text-sm/normal",
         color: "text-default",
-        children: f
+        children: h
       })
     })]
   })

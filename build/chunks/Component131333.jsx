@@ -2,7 +2,7 @@
 /** chunk id: 131333, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  t: () => j
+  t: () => k
 }), require("./388685.js"), require("./35282.js"), require("./413496.js"), require("./433524.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -63,8 +63,8 @@ let b = [],
   T = 11,
   S = 125,
   A = 20,
-  N = 12,
-  C = 48,
+  C = 12,
+  N = 48,
   R = .01,
   P = new Set(["jack_o_lantern", "nose"]),
   w = {
@@ -82,7 +82,7 @@ function D(e) {
     if (null != e.match(new RegExp(":".concat(t, "(_tone[1-9])?")))) return t;
   return null
 }
-let L = {
+let x = {
   enter: {
     BEG: 0,
     END: 22
@@ -97,7 +97,7 @@ let L = {
   }
 };
 
-function x() {
+function L() {
   return require.e("77843").then(require.t.bind(require, 931152, 19)).then(e => {
     let {
       default: t
@@ -106,7 +106,7 @@ function x() {
   })
 }
 
-function M(e) {
+function j(e) {
   if (null == e) return "enter";
   switch (e) {
     case "enter":
@@ -117,7 +117,7 @@ function M(e) {
       return "enter"
   }
 }
-let k = Chunk647438.forwardRef(function(e, t) {
+let M = Chunk647438.forwardRef(function(e, t) {
   let {
     sprites: n
   } = e, [o, s] = i.useState(null), {
@@ -146,8 +146,8 @@ let k = Chunk647438.forwardRef(function(e, t) {
         },
         size: {
           type: "static-random",
-          minValue: N,
-          maxValue: C
+          minValue: C,
+          maxValue: N
         },
         dragCoefficient: {
           type: "static",
@@ -159,15 +159,15 @@ let k = Chunk647438.forwardRef(function(e, t) {
     ref: s,
     colors: b,
     sprites: n,
-    spriteWidth: C,
-    spriteHeight: C
+    spriteWidth: N,
+    spriteHeight: N
   })
 });
 
-function j(e) {
+function k(e) {
   let {
     children: t
-  } = e, n = i.useRef({}), [a, l] = i.useState(null), c = M(a), _ = i.useRef(null), [h, m] = i.useState(false), g = i.useRef("jack_o_lantern"), E = (0, s.bp)(), b = i.useCallback(e => {
+  } = e, n = i.useRef({}), [a, l] = i.useState(null), c = j(a), _ = i.useRef(null), [h, m] = i.useState(false), g = i.useRef("jack_o_lantern"), E = (0, s.bp)(), b = i.useCallback(e => {
     if (!h) {
       let t = D(e);
       null != t && (g.current = t, m(true), l(null))
@@ -195,7 +195,7 @@ function j(e) {
     value: y,
     children: [t, Object.keys(w).map(e => {
       let t = w[e];
-      return (0, r.jsx)(k, {
+      return (0, r.jsx)(M, {
         ref: t => {
           null != t ? n.current[e] = t : delete n.current[e]
         },
@@ -208,10 +208,10 @@ function j(e) {
           animationRef: I,
           className: p.lottieAnimation,
           nextScene: c,
-          sceneSegments: L,
+          sceneSegments: x,
           onScenePlay: O,
           onSceneComplete: v,
-          importData: x,
+          importData: L,
           pauseWhileUnfocused: false
         })
       })

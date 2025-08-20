@@ -1,5 +1,6 @@
-/** Chunk was on 66181 **/
-/** chunk id: 876544, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 876544, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   heroHeadingContainer: "heroHeadingContainer__81281",
   container: "container__81281",

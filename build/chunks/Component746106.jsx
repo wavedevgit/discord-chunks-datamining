@@ -33,17 +33,17 @@ function S(e) {
     children: n
   } = e, a = null != t, [S] = i.useState(() => v.ZP.getEnableHardwareAcceleration()), {
     locale: A,
-    theme: N,
-    focused: C,
+    theme: C,
+    focused: N,
     currentWindow: R,
     fontScale: P,
     fontScaleClass: w,
     keyboardModeEnabled: D,
-    saturation: L,
-    desaturateUserColors: x,
-    useForcedColors: M,
-    systemForcedColors: k,
-    useReducedMotion: j,
+    saturation: x,
+    desaturateUserColors: L,
+    useForcedColors: j,
+    systemForcedColors: M,
+    useReducedMotion: k,
     alwaysShowLinkDecorations: U,
     confettiMode: G,
     highContrastMode: B
@@ -66,12 +66,12 @@ function S(e) {
       highContrastMode: c.Z.isHighContrastModeEnabled,
       confettiMode: g.Z.confettiMode
     }
-  }), V = u.U.useExperiment({
+  }), Z = u.U.useExperiment({
     location: "RootThemeContextProvider"
   }, {
     autoTrackExposure: true
-  }).enabled, F = (0, p.Z)(R, __OVERLAY__ || C), Z = 0;
-  1 !== L && (Z = (0, l.OdO)(Z, l.bgu.REDUCE_SATURATION_ENABLED));
+  }).enabled, V = (0, p.Z)(R, __OVERLAY__ || N), F = 0;
+  1 !== x && (F = (0, l.OdO)(F, l.bgu.REDUCE_SATURATION_ENABLED));
   let H = (0, I.A)(),
     Y = (0, h.Ml)("RootThemeContextProvider"),
     W = (0, h.CL)("RootThemeContextProvider"),
@@ -88,27 +88,27 @@ function S(e) {
       isSearchDesktopTopLevelEnabled: X
     });
   return (0, r.jsx)(l.wMY, {
-    theme: N,
-    flags: Z,
-    saturation: L,
+    theme: C,
+    flags: F,
+    saturation: x,
     density: H,
     children: (0, r.jsx)(T.cE, {
       lang: A,
-      theme: N,
+      theme: C,
       density: H,
-      focused: C,
+      focused: N,
       fontScale: P,
       fontScaleClass: w,
       keyboardModeEnabled: D,
-      mouseMode: F,
-      saturation: L,
-      desaturateUserColors: x,
-      useForcedColors: M,
-      systemForcedColors: k,
-      useReducedMotion: j,
+      mouseMode: V,
+      saturation: x,
+      desaturateUserColors: L,
+      useForcedColors: j,
+      systemForcedColors: M,
+      useReducedMotion: k,
       alwaysShowLinkDecorations: U,
       hardwareAccelerationEnabled: S,
-      highContrastMode: V && B,
+      highContrastMode: Z && B,
       rootClassName: o()(Q, {
         "confetti-mode": G,
         "refresh-fast-follow-avatars": Y && !q,

@@ -1,11 +1,12 @@
-/** Chunk was on 26434 **/
-/** chunk id: 863663, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 863663, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   NB: () => o,
-  ar: () => u,
-  fG: () => c,
-  kg: () => a,
-  pM: () => s
+  ar: () => d,
+  fG: () => u,
+  kg: () => s,
+  pM: () => c
 }), require("./781311.js"), require("./953529.js");
 var Chunk881052 = require("./881052.js");
 require("./496675.js");
@@ -13,68 +14,70 @@ var Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 let o = "_role";
 
-function a(e) {
+function s(e) {
   if (!(e >= 0)) switch (-e) {
     case i.evJ.ENTITY_TOO_LARGE:
-      return l.intl.string(l.t.YbdEFB);
+      return a.intl.string(a.t.YbdEFB);
     case i.evJ.INVALID_SKU_ATTACHMENT_NO_ARCHIVES:
-      return l.intl.string(l.t.ZaXBoK);
+      return a.intl.string(a.t.ZaXBoK);
     case 1:
-      return l.intl.string(l.t.R0RpRU);
+      return a.intl.string(a.t.R0RpRU);
     default:
-      return l.intl.formatToPlainString(l.t.cYwlp6, {
+      return a.intl.formatToPlainString(a.t.cYwlp6, {
         code: -e
       })
   }
 }
 
-function s(e) {
-  let {
-    newRoleParams: t
-  } = e;
-  if (null != t && "" === t.name.trim()) {
-    var n;
-    return n = l.intl.string(l.t["V0B/k5"]), new r.Hx({
-      status: 400,
-      body: {
-        message: "Invalid form body",
-        errors: {
-          [o]: {
-            _errors: [{
-              code: "",
-              message: n
-            }]
-          }
-        }
+function l(e, t) {
+  let n = {
+    message: "Invalid form body",
+    errors: {
+      [e]: {
+        _errors: [{
+          code: "",
+          message: t
+        }]
       }
-    })
-  }
+    }
+  };
+  return new r.Hx({
+    status: 400,
+    body: n
+  })
 }
 
 function c(e) {
+  let {
+    newRoleParams: t
+  } = e;
+  if (null != t && "" === t.name.trim()) return l(o, a.intl.string(a.t["V0B/k5"]))
+}
+
+function u(e) {
   var t;
   let {
     guildProductListing: n,
     name: r,
     priceTier: i,
-    description: l,
+    description: a,
     image: o,
-    imageName: a,
-    isImageChanged: s,
+    imageName: s,
+    isImageChanged: l,
     newRoleParams: c,
     hasUnsavedAttachmentChanges: u
   } = e, d = {};
-  (null == n ? true : n.name) !== r && "" !== r.trim() && (d.name = r), (null != (t = null == n ? true : n.description) ? t : "") !== l && (d.description = l), (null == n ? true : n.price_tier) !== i && null != i && (d.priceTier = i), null != c && "" !== c.name.trim() ? d.createNewRole = true : null === c && (d.unlinkRole = true), o.startsWith("data:") && (s || null == n && (Object.keys(d).length > 0 || u)) && (d.image = o, d.imageName = a);
-  let p = Object.keys(d).length > 0 || u;
+  (null == n ? true : n.name) !== r && "" !== r.trim() && (d.name = r), (null != (t = null == n ? true : n.description) ? t : "") !== a && (d.description = a), (null == n ? true : n.price_tier) !== i && null != i && (d.priceTier = i), null != c && "" !== c.name.trim() ? d.createNewRole = true : null === c && (d.unlinkRole = true), o.startsWith("data:") && (l || null == n && (Object.keys(d).length > 0 || u)) && (d.image = o, d.imageName = s);
+  let f = Object.keys(d).length > 0 || u;
   return {
     changes: d,
-    hasUnsavedChanges: p,
-    canSaveForDraft: p,
-    canSaveForPublished: p,
-    canPublishOrUnpublish: !(null == n || p)
+    hasUnsavedChanges: f,
+    canSaveForDraft: f,
+    canSaveForPublished: f,
+    canPublishOrUnpublish: !(null == n || f)
   }
 }
 
-function u(e, t) {
+function d(e, t) {
   return "".concat(location.protocol, "//").concat(location.host).concat(i.Z5c.GUILD_PRODUCT(e, t))
 }

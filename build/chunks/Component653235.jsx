@@ -59,12 +59,12 @@ function A(e, t) {
   return n
 }
 
-function N(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let C = (e, t) => (0, r.jsx)(b.G0, {
+let N = (e, t) => (0, r.jsx)(b.G0, {
   columns: e
 }, t);
 
@@ -183,7 +183,7 @@ class P extends Chunk647438.PureComponent {
       return 0 === a.length ? (0, r.jsx)(b.u$, {
         columns: e,
         width: t,
-        renderColumn: C
+        renderColumn: N
       }) : (0, r.jsx)(f.GMG, {
         ref: this._masonryRef,
         fade: true,
@@ -214,7 +214,7 @@ function w(e) {
   let t = (0, c.e7)([h.Z], () => h.Z.getTrendingCategories()),
     n = (0, g.gG)(),
     i = (0, y.PY)();
-  return (0, r.jsx)(P, N(S({}, e, i), {
+  return (0, r.jsx)(P, C(S({}, e, i), {
     trendingCategories: t,
     favorites: n
   }))

@@ -1,88 +1,91 @@
-/** Chunk was on 91584 **/
-/** chunk id: 978113, original params: t,e,r (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 978113, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 var Chunk470427 = require("./470427.js"),
   Chunk656367 = require("./656367.js"),
   Chunk65183 = require("./65183.js"),
   Chunk581079 = require("./581079.js"),
   Chunk140207 = require("./140207.js"),
-  s = Chunk65183.List,
+  l = Chunk65183.List,
   c = Chunk65183.Map,
-  l = function(t, e, r) {
-    if (t) {
-      var n = e.get(t);
-      n && e.set(t, r(n))
+  u = function(e, t, n) {
+    if (e) {
+      var r = t.get(e);
+      r && t.set(e, n(r))
     }
+  },
+  d = function(e, t, n) {
+    return e.withMutations(function(e) {
+      var r = t.getKey(),
+        i = n.getKey();
+      u(t.getParentKey(), e, function(e) {
+        var t = e.getChildKeys(),
+          n = t.indexOf(r) + 1,
+          a = t.toArray();
+        return a.splice(n, 0, i), e.merge({
+          children: l(a)
+        })
+      }), u(t.getNextSiblingKey(), e, function(e) {
+        return e.merge({
+          prevSibling: i
+        })
+      }), u(r, e, function(e) {
+        return e.merge({
+          nextSibling: i
+        })
+      }), u(i, e, function(e) {
+        return e.merge({
+          prevSibling: r
+        })
+      })
+    })
   };
-module.exports = function(t, e) {
-  e.isCollapsed() || a(false);
-  var r = e.getAnchorKey(),
-    o = t.getBlockMap(),
-    f = o.get(r),
-    p = f.getText();
-  if (!p) {
-    var h = f.getType();
-    if ("unordered-list-item" === h || "ordered-list-item" === h) return u(t, e, function(t) {
-      return t.merge({
+module.exports = function(e, t) {
+  t.isCollapsed() || o(false);
+  var n = t.getAnchorKey(),
+    a = e.getBlockMap(),
+    l = a.get(n),
+    u = l.getText();
+  if (!u) {
+    var f = l.getType();
+    if ("unordered-list-item" === f || "ordered-list-item" === f) return s(e, t, function(e) {
+      return e.merge({
         type: "unstyled",
         depth: 0
       })
     })
   }
-  var d = e.getAnchorOffset(),
-    g = f.getCharacterList(),
-    y = i(),
-    v = f instanceof n,
-    m = f.merge({
-      text: p.slice(0, d),
-      characterList: g.slice(0, d)
+  var _ = t.getAnchorOffset(),
+    p = l.getCharacterList(),
+    h = i(),
+    m = l instanceof r,
+    g = l.merge({
+      text: u.slice(0, _),
+      characterList: p.slice(0, _)
     }),
-    _ = m.merge({
-      key: y,
-      text: p.slice(d),
-      characterList: g.slice(d),
+    E = g.merge({
+      key: h,
+      text: u.slice(_),
+      characterList: p.slice(_),
       data: c()
     }),
-    b = o.toSeq().takeUntil(function(t) {
-      return t === f
+    b = a.toSeq().takeUntil(function(e) {
+      return e === l
     }),
-    S = o.toSeq().skipUntil(function(t) {
-      return t === f
+    y = a.toSeq().skipUntil(function(e) {
+      return e === l
     }).rest(),
-    w = b.concat([
-      [r, m],
-      [y, _]
-    ], S).toOrderedMap();
-  return v && (f.getChildKeys().isEmpty() || a(false), w = w.withMutations(function(t) {
-    var e = m.getKey(),
-      r = _.getKey();
-    l(m.getParentKey(), t, function(t) {
-      var n = t.getChildKeys(),
-        i = n.indexOf(e) + 1,
-        o = n.toArray();
-      return o.splice(i, 0, r), t.merge({
-        children: s(o)
-      })
-    }), l(m.getNextSiblingKey(), t, function(t) {
-      return t.merge({
-        prevSibling: r
-      })
-    }), l(e, t, function(t) {
-      return t.merge({
-        nextSibling: r
-      })
-    }), l(r, t, function(t) {
-      return t.merge({
-        prevSibling: e
-      })
-    })
-  })), t.merge({
-    blockMap: w,
-    selectionBefore: e,
-    selectionAfter: e.merge({
-      anchorKey: y,
+    O = b.concat([
+      [n, g],
+      [h, E]
+    ], y).toOrderedMap();
+  return m && (l.getChildKeys().isEmpty() || o(false), O = d(O, g, E)), e.merge({
+    blockMap: O,
+    selectionBefore: t,
+    selectionAfter: t.merge({
+      anchorKey: h,
       anchorOffset: 0,
-      focusKey: y,
+      focusKey: h,
       focusOffset: 0,
       isBackward: false
     })

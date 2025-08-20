@@ -1,8 +1,9 @@
-/** Chunk was on 26434 **/
-/** chunk id: 83561, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 83561, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  S: () => f,
-  m: () => m
+  S: () => p,
+  m: () => _
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -13,9 +14,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk998502 = require("./998502.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk545869 = require("./545869.js");
-let p = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk481060.qEK;
+let f = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk481060.qEK;
 
-function m() {
+function _() {
   let e = arguments.length > 0 && true !== arguments[0] && arguments[0],
     [t, n] = Chunk647438.useState(false),
     r = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion),
@@ -32,13 +33,13 @@ function m() {
   }
 }
 
-function f(e) {
+function p(e) {
   let {
     src: t
   } = e;
   return (0, r.jsx)("div", {
     className: d.avatarContainer,
-    children: (0, r.jsx)(p, {
+    children: (0, r.jsx)(f, {
       src: t,
       size: o.EFr.SIZE_40,
       "aria-label": u.intl.string(u.t.hG1StL)

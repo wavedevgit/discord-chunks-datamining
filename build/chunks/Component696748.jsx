@@ -1,7 +1,8 @@
-/** Chunk was on 6380 **/
-/** chunk id: 696748, original params: t,e,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 696748, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  a: () => S
+  a: () => T
 }), require("./953529.js"), require("./415506.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -21,52 +22,52 @@ var Chunk951288 = require("./951288.js"),
   Chunk422622 = require("./422622.js"),
   Chunk197571 = require("./197571.js");
 
-function b(t, e, n) {
-  return e in t ? Object.defineProperty(t, e, {
+function y(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
     configurable: true,
     writable: true
-  }) : t[e] = n, t
+  }) : e[t] = n, e
 }
 
-function N(t) {
-  for (var e = 1; e < arguments.length; e++) {
-    var n = null != arguments[e] ? arguments[e] : {},
-      i = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(t) {
-      return Object.getOwnPropertyDescriptor(n, t).enumerable
-    }))), i.forEach(function(e) {
-      b(t, e, n[e])
+function O(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      y(e, t, n[t])
     })
   }
-  return t
+  return e
 }
-class T extends Chunk647438.PureComponent {
-  renderConflictButton(t, e, n, r) {
-    return (0, i.jsxs)(c.zx, {
-      className: m.conflictButton,
-      innerClassName: m.conflictButtonInner,
-      onClick: r,
-      children: [(0, i.jsx)("div", {
+class v extends Chunk647438.PureComponent {
+  renderConflictButton(e, t, n, i) {
+    return (0, r.jsxs)(l.zx, {
+      className: E.conflictButton,
+      innerClassName: E.conflictButtonInner,
+      onClick: i,
+      children: [(0, r.jsx)("div", {
         className: n
-      }), (0, i.jsxs)("div", {
-        className: m.buttonBody,
-        children: [(0, i.jsx)("div", {
-          className: m.conflictTitle,
-          children: t
-        }), (0, i.jsx)("div", {
-          children: O.intl.string(O.t.gflHOz)
-        }), (0, i.jsx)("div", {
-          className: m.timestamp,
-          children: o()(e).calendar()
+      }), (0, r.jsxs)("div", {
+        className: E.buttonBody,
+        children: [(0, r.jsx)("div", {
+          className: E.conflictTitle,
+          children: e
+        }), (0, r.jsx)("div", {
+          children: g.intl.string(g.t.gflHOz)
+        }), (0, r.jsx)("div", {
+          className: E.timestamp,
+          children: o()(t).calendar()
         })]
       })]
     })
   }
   renderError() {
     let {
-      application: t
+      application: e
     } = this.props;
     return (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
       children: [(0, Chunk951288.jsxs)(Chunk481060.hzk, {
@@ -114,8 +115,8 @@ class T extends Chunk647438.PureComponent {
   }
   renderConflict() {
     let {
-      application: t,
-      cloudSyncState: e
+      application: e,
+      cloudSyncState: t
     } = this.props;
     if (exports.type !== Chunk981631.TzF.CONFLICT) throw Error("Cannot render conflict for non conflict type");
     return (0, Chunk951288.jsxs)(Chunk481060.hzk, {
@@ -141,8 +142,8 @@ class T extends Chunk647438.PureComponent {
   }
   render() {
     let {
-      cloudSyncState: t,
-      transitionState: e
+      cloudSyncState: e,
+      transitionState: t
     } = this.props, n = module.type === Chunk981631.TzF.CONFLICT ? Chunk388032.intl.string(Chunk388032.t.oNbO1d) : Chunk388032.intl.string(Chunk388032.t.as4Tgo);
     return (0, Chunk951288.jsxs)(Chunk481060.Y0X, {
       transitionState: exports,
@@ -162,73 +163,73 @@ class T extends Chunk647438.PureComponent {
       }), module.type === Chunk981631.TzF.CONFLICT ? this.renderConflict() : this.renderError()]
     })
   }
-  constructor(...t) {
-    var e;
-    super(...t), e = this, b(this, "onClose", () => {
+  constructor(...e) {
+    var t;
+    super(...e), t = this, y(this, "onClose", () => {
       this.props.onClose()
-    }), b(this, "handlePlay", function() {
-      let t = !(arguments.length > 0) || true === arguments[0] || arguments[0],
+    }), y(this, "handlePlay", function() {
+      let e = !(arguments.length > 0) || true === arguments[0] || arguments[0],
         n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null,
         {
-          libraryApplication: i,
-          analyticsParams: r
-        } = e.props;
-      e.onClose(), S(i.id, i, {
-        analyticsParams: r,
-        cloudSync: t,
+          libraryApplication: r,
+          analyticsParams: i
+        } = t.props;
+      t.onClose(), T(r.id, r, {
+        analyticsParams: i,
+        cloudSync: e,
         cloudSyncForceHash: n
       })
-    }), b(this, "handleChooseDownload", () => {
+    }), y(this, "handleChooseDownload", () => {
       let {
-        cloudSyncState: t
+        cloudSyncState: e
       } = this.props;
-      t.type === C.TzF.CONFLICT && this.handlePlay(true, t.remote.hash)
-    }), b(this, "handleChooseUpload", () => {
+      e.type === m.TzF.CONFLICT && this.handlePlay(true, e.remote.hash)
+    }), y(this, "handleChooseUpload", () => {
       let {
-        cloudSyncState: t
+        cloudSyncState: e
       } = this.props;
-      t.type === C.TzF.CONFLICT && this.handlePlay(true, t.next.hash)
+      e.type === m.TzF.CONFLICT && this.handlePlay(true, e.next.hash)
     })
   }
 }
-let A = Chunk442837.ZP.connectStores([Chunk293245.Z, Chunk812206.Z], t => {
+let I = Chunk442837.ZP.connectStores([Chunk293245.Z, Chunk812206.Z], e => {
   let {
-    libraryApplication: e,
+    libraryApplication: t,
     branchId: n
-  } = t;
+  } = e;
   return {
-    cloudSyncState: f.Z.getState(e.id, n),
-    application: p.Z.getApplication(e.id)
+    cloudSyncState: p.Z.getState(t.id, n),
+    application: f.Z.getApplication(t.id)
   }
-})(T);
-async function S(t, e, n) {
-  let r = p.Z.getApplication(t);
-  if (null == r) return;
+})(v);
+async function T(e, t, n) {
+  let i = f.Z.getApplication(e);
+  if (null == i) return;
   let {
-    cloudSync: l = true,
+    cloudSync: a = true,
     cloudSyncForceHash: o = null,
-    analyticsParams: a
+    analyticsParams: s
   } = n;
-  if (l && null != e) {
-    let t = e.branchId;
+  if (a && null != t) {
+    let e = t.branchId;
     try {
-      await d.Z(e.id, t, o)
+      await u.Z(t.id, e, o)
     } catch (n) {
-      (0, s.h7j)(n => (0, i.jsx)(A, N({
-        libraryApplication: e,
-        analyticsParams: a,
-        branchId: t
+      (0, c.h7j)(n => (0, r.jsx)(I, O({
+        libraryApplication: t,
+        analyticsParams: s,
+        branchId: e
       }, n)));
       return
     }
   }
-  return y.default.track(C.rMx.APPLICATION_OPENED, N({
-    application_id: r.id,
-    application_name: r.name,
-    type: C.q5t.LAUNCH,
-    distributor: null != e ? e.getDistributor() : null
-  }, a)), u.Z.launch({
-    applicationId: r.id,
-    branchId: null == e ? true : e.branchId
+  return h.default.track(m.rMx.APPLICATION_OPENED, O({
+    application_id: i.id,
+    application_name: i.name,
+    type: m.q5t.LAUNCH,
+    distributor: null != t ? t.getDistributor() : null
+  }, s)), d.Z.launch({
+    applicationId: i.id,
+    branchId: null == t ? true : t.branchId
   })
 }

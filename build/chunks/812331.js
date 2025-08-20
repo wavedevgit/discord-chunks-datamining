@@ -1,5 +1,6 @@
-/** Chunk was on 26434 **/
-/** chunk id: 812331, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 812331, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   embedHorizontal: "embedHorizontal_a8b53f",
   embedVertical: "embedVertical_a8b53f",

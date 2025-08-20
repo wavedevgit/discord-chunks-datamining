@@ -2,10 +2,10 @@
 /** chunk id: 110818, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Db: () => N,
+  Db: () => C,
   HC: () => O,
   NQ: () => E,
-  fe: () => x
+  fe: () => L
 }), require("./388685.js");
 var r, i, a, o, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -249,19 +249,19 @@ let S = Object.freeze({
     }
   }),
   A = 1.2;
-class N extends(a = Chunk647438.PureComponent) {
+class C extends(a = Chunk647438.PureComponent) {
   static getNextScene(e) {
     switch (e) {
-      case N.Scenes.IDLE_ENTRY:
-        return N.Scenes.IDLE_LOOP;
-      case N.Scenes.BOOST_START:
-        return N.Scenes.BOOST_LOOP;
-      case N.Scenes.BOOST_END:
-        return N.Scenes.VICTORY;
-      case N.Scenes.VICTORY:
-        return N.Scenes.IDLE_ENTRY;
-      case N.Scenes.ERROR:
-        return N.Scenes.IDLE_LOOP;
+      case C.Scenes.IDLE_ENTRY:
+        return C.Scenes.IDLE_LOOP;
+      case C.Scenes.BOOST_START:
+        return C.Scenes.BOOST_LOOP;
+      case C.Scenes.BOOST_END:
+        return C.Scenes.VICTORY;
+      case C.Scenes.VICTORY:
+        return C.Scenes.IDLE_ENTRY;
+      case C.Scenes.ERROR:
+        return C.Scenes.IDLE_LOOP;
       default:
         return e
     }
@@ -381,10 +381,10 @@ class N extends(a = Chunk647438.PureComponent) {
     })
   }
 }
-h(N, "Scenes", v);
-var C = function(e) {
+h(C, "Scenes", v);
+var N = function(e) {
   return e.ENTRY = "entry", e.IDLE = "idle", e.STARS = "stars", e.ERROR = "error", e.SUCCESS = "success", e
-}(C || {});
+}(N || {});
 let R = {
     entry: {
       BEG: 0,
@@ -456,7 +456,7 @@ let R = {
     EASING_END: Chunk748780.Z.Easing.bezier(0, false, .99, 0)
   });
 
-function L(e) {
+function x(e) {
   let {
     animate: t
   } = e, [n, r] = l.useState(0), i = (0, _.bYB)(w.length, w.map((e, i) => {
@@ -514,7 +514,7 @@ function L(e) {
     })
   })
 }
-class x extends(o = Chunk647438.PureComponent) {
+class L extends(o = Chunk647438.PureComponent) {
   static getNextScene(e) {
     switch (e) {
       case "entry":
@@ -553,10 +553,10 @@ class x extends(o = Chunk647438.PureComponent) {
         onSceneComplete: i,
         pauseWhileUnfocused: a,
         pause: require
-      }), (0, Chunk951288.jsx)(L, {
+      }), (0, Chunk951288.jsx)(x, {
         animate: !require && "stars" === exports
       })]
     })
   }
 }
-h(x, "Scenes", C)
+h(L, "Scenes", N)

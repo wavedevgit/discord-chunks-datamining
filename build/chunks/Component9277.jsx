@@ -67,14 +67,14 @@ function I(e, t) {
   } = e, [b, O] = i.useState(false), I = (0, l.e7)([f.Z], () => {
     var e, t;
     return b && Object.values(null != (t = null == (e = f.Z.frecencyWithoutFetchingLatest.favoriteGifs) ? true : e.gifs) ? t : {}).length <= 2
-  }), [T, S, A] = (0, d.Iu)(e => [e.activeView, e.activeViewType, e.pickerId], s.X), N = i.useRef(0), C = i.useCallback(() => {
-    O(true), clearTimeout(N.current), N.current = setTimeout(() => {
-      O(false), N.current = 0
+  }), [T, S, A] = (0, d.Iu)(e => [e.activeView, e.activeViewType, e.pickerId], s.X), C = i.useRef(0), N = i.useCallback(() => {
+    O(true), clearTimeout(C.current), C.current = setTimeout(() => {
+      O(false), C.current = 0
     }, 2e3)
   }, []);
   (0, _.yp)({
     event: h.CkL.FAVORITE_GIF,
-    handler: C
+    handler: N
   });
   let R = i.useCallback(() => {
       (0, d.RO)(m.X1.GIF, a)
@@ -85,7 +85,7 @@ function I(e, t) {
       play: D
     } = (0, c.V)();
   if (n) return null;
-  let L = T === m.X1.GIF && S === a;
+  let x = T === m.X1.GIF && S === a;
   return (0, r.jsx)(u.ua7, {
     text: I ? g.intl.string(g.t.mE2e8P) : null,
     forceOpen: true,
@@ -100,10 +100,10 @@ function I(e, t) {
         onClick: () => {
           R(), D()
         },
-        isActive: L,
+        isActive: x,
         pulse: b,
         "aria-label": g.intl.string(g.t.PtVpk5),
-        "aria-expanded": L,
+        "aria-expanded": x,
         "aria-haspopup": "dialog",
         "aria-controls": A,
         children: (0, r.jsx)(P, {

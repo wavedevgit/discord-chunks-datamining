@@ -1,26 +1,27 @@
-/** Chunk was on 66181 **/
-/** chunk id: 796634, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 796634, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   G: () => c,
-  Q: () => o
+  Q: () => l
 });
 var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk232567 = require("./232567.js"),
   Chunk594174 = require("./594174.js"),
   Chunk276444 = require("./276444.js");
-let o = 3;
+let l = 3;
 
 function c() {
   let e = (0, Chunk442837.Wu)([Chunk276444.Z], () => Chunk276444.Z.getSentUserIds()),
-    t = (0, Chunk442837.Wu)([Chunk594174.default], () => module.map(e => a.default.getUser(e)).filter(e => null != e));
+    t = (0, Chunk442837.Wu)([Chunk594174.default], () => module.map(e => o.default.getUser(e)).filter(e => null != e));
   return Chunk647438.useEffect(() => {
     module.forEach(e => {
-      (0, s.PR)(e)
+      (0, a.PR)(e)
     })
   }, [module]), {
     referralSentUsers: exports,
-    hasSentAllReferrals: module.length === o,
+    hasSentAllReferrals: module.length === l,
     refreshAt: (0, Chunk442837.e7)([Chunk276444.Z], () => Chunk276444.Z.getRefreshAt())
   }
 }

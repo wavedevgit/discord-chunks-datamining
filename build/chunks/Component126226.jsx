@@ -2,7 +2,7 @@
 /** chunk id: 126226, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  K: () => N,
+  K: () => C,
   Z: () => P
 }), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./781311.js");
 var Chunk951288 = require("./951288.js");
@@ -50,13 +50,13 @@ function A(e) {
   }
   return e
 }
-let N = {
+let C = {
   results: {
     entries: []
   }
 };
 
-function C() {
+function N() {
   (0, Chunk952265.ZD)(async () => {
     let {
       default: e
@@ -73,7 +73,7 @@ let P = {
   stores: [Chunk998698.Z, Chunk213459.ZP, Chunk496675.Z],
   matches: (e, t, n, r, i) => i.commands !== y.L8.DISABLED && null == f.Z.getActiveCommand(e.id) && (r || i.commands !== y.L8.OLD_BUILT_INS),
   queryResults(e, t, n, r, i) {
-    if (0 === n.length && r.commands !== y.L8.OLD_BUILT_INS) return N;
+    if (0 === n.length && r.commands !== y.L8.OLD_BUILT_INS) return C;
     if (r.commands === y.L8.OLD_BUILT_INS) {
       let r = (0, l.Kh)([o.yU.CHAT], false, false),
         i = RegExp("^".concat(E.Z.escape(n)), "i"),
@@ -82,7 +82,7 @@ let P = {
           guild: t
         }, y.AQ),
         s = l.Tm[v.bi.BUILT_IN];
-      return 0 === a.length ? N : {
+      return 0 === a.length ? C : {
         results: {
           entries: a.map(e => ({
             command: e,
@@ -107,14 +107,14 @@ let P = {
         scoreMethod: d.p.COMMAND_OR_APPLICATION,
         allowFetch: i
       });
-    if (null == s) return N;
+    if (null == s) return C;
     let f = s;
     if (a.hasSpaceTerminator) {
       let e = a.text.trim(),
         t = e + " ";
       f = f.filter(n => n.displayName === e || n.displayName.startsWith(t))
     }
-    return 0 === f.length ? N : {
+    return 0 === f.length ? C : {
       results: {
         entries: f.slice(0, y.AQ).map(e => ({
           command: e,
@@ -166,7 +166,7 @@ let P = {
         look: i.zx.Looks.LINK,
         color: i.zx.Colors.BRAND,
         size: i.zx.Sizes.MIN,
-        onClick: C,
+        onClick: N,
         children: I.intl.string(I.t["8a0P09"])
       }) : null
     })

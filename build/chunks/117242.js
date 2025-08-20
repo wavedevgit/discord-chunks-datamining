@@ -1,11 +1,11 @@
 /** Chunk was on 32249 **/
 /** chunk id: 117242, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => i
+  Z: () => a
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js");
 
-function l(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -24,7 +24,7 @@ function l(e) {
   return e
 }
 
-function o(e, t) {
+function l(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -37,16 +37,16 @@ function o(e, t) {
   }), e
 }
 
-function i(e) {
+function a(e) {
   let {
     getCurrentVideoTime: t,
     isPlaying: n,
-    isMetadataLoaded: i,
-    isInitialSeekComplete: a,
+    isMetadataLoaded: a,
+    isInitialSeekComplete: i,
     onAnalytics: s,
     emitIntervalMs: c,
     minSegmentDurationMs: u
-  } = e, [d, m] = r.useState(null), p = (0, r.useRef)(null), f = (0, r.useRef)(Date.now()), v = (0, r.useRef)(false), E = (0, r.useCallback)(e => {
+  } = e, [d, f] = r.useState(null), m = (0, r.useRef)(null), p = (0, r.useRef)(Date.now()), v = (0, r.useRef)(false), C = (0, r.useCallback)(e => {
     e.segmentEndSec < e.segmentStartSec || s({
       start_time: e.startTime,
       end_time: e.endTime,
@@ -55,62 +55,62 @@ function i(e) {
       segment_end_sec: e.segmentEndSec,
       segment_duration_sec: e.segmentEndSec - e.segmentStartSec
     })
-  }, [s]), g = (0, r.useCallback)(() => {
+  }, [s]), E = (0, r.useCallback)(() => {
     let e = t();
-    if (null != e && i && a) {
+    if (null != e && a && i) {
       let t = Date.now();
-      m({
+      f({
         startTime: t,
         endTime: t,
         segmentStartSec: e,
         segmentEndSec: e
       }), v.current = true
     }
-  }, [t, i, a]), O = (0, r.useCallback)(() => {
+  }, [t, a, i]), _ = (0, r.useCallback)(() => {
     let e = t();
     if (null == e || null == d) return;
     let n = Date.now();
-    !(n - f.current < c) && (e - d.segmentStartSec < u / 1e3 || (E(o(l({}, d), {
+    !(n - p.current < c) && (e - d.segmentStartSec < u / 1e3 || (C(l(o({}, d), {
       endTime: n,
       segmentEndSec: e
-    })), m({
+    })), f({
       startTime: n,
       endTime: n,
       segmentStartSec: e,
       segmentEndSec: e
-    }), f.current = n))
-  }, [d, E, c, u, t]);
+    }), p.current = n))
+  }, [d, C, c, u, t]);
   return (0, r.useEffect)(() => {
-    i && a || (m(null), v.current = false)
-  }, [i, a]), (0, r.useEffect)(() => {
-    if (n && i && a) v.current || g(), p.current = window.setInterval(() => {
-      O()
+    a && i || (f(null), v.current = false)
+  }, [a, i]), (0, r.useEffect)(() => {
+    if (n && a && i) v.current || E(), m.current = window.setInterval(() => {
+      _()
     }, 200);
     else {
       let e = t();
       if (null != d && null != e) {
         let t = Date.now();
-        e - d.segmentStartSec > .2 && E(o(l({}, d), {
+        e - d.segmentStartSec > .2 && C(l(o({}, d), {
           endTime: t,
           segmentEndSec: e
         }))
       }
-      m(null), v.current = false, null != p.current && (clearInterval(p.current), p.current = null)
+      f(null), v.current = false, null != m.current && (clearInterval(m.current), m.current = null)
     }
     return () => {
-      null != p.current && (clearInterval(p.current), p.current = null)
+      null != m.current && (clearInterval(m.current), m.current = null)
     }
-  }, [n, i, a, d, O, E, g, t]), {
+  }, [n, a, i, d, _, C, E, t]), {
     forceSendCurrentSegment: (0, r.useCallback)(() => {
       let e = t();
       if (null != d && null != e) {
         let t = Date.now();
-        e - d.segmentStartSec > .2 && E(o(l({}, d), {
+        e - d.segmentStartSec > .2 && C(l(o({}, d), {
           endTime: t,
           segmentEndSec: e
-        })), m(null), v.current = false
+        })), f(null), v.current = false
       }
-    }, [d, E, t]),
+    }, [d, C, t]),
     isInitialized: v.current
   }
 }

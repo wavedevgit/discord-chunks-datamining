@@ -1,12 +1,12 @@
 /** Chunk was on 73628 **/
 /** chunk id: 470209, original params: e,t,A (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
-  l = require.n(Chunk512722),
+  a = require.n(Chunk512722),
   Chunk866442 = require("./866442.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk744422 = require("./744422.js");
 
-function f(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var A = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(A);
@@ -46,59 +46,59 @@ function p(e, t) {
     Object.defineProperty(e, A, Object.getOwnPropertyDescriptor(t, A))
   }), e
 }
-let h = (0, Chunk313201.hQ)();
+let m = (0, Chunk313201.hQ)();
 
-function m(e) {
+function h(e) {
   let {
     newRoleParams: t,
     setNewRoleParams: A
-  } = e, a = r.useRef(null), {
-    name: c,
-    color: m
-  } = t, v = e => A(t => (l()(null != t, "newRoleParams should be defined"), p(f({}, t), {
+  } = e, l = r.useRef(null), {
+    name: d,
+    color: h
+  } = t, b = e => A(t => (a()(null != t, "newRoleParams should be defined"), p(g({}, t), {
     color: e
   })));
   return (0, n.jsxs)("div", {
-    className: g.roleInputContainer,
-    children: [(0, n.jsx)(o.Is, {
+    className: f.roleInputContainer,
+    children: [(0, n.jsx)(i.Is, {
       autoFocus: true,
-      value: c,
-      onChange: e => A(t => (l()(null != t, "newRoleParams should be defined"), p(f({}, t), {
+      value: d,
+      onChange: e => A(t => (a()(null != t, "newRoleParams should be defined"), p(g({}, t), {
         name: e
       }))),
-      id: h,
+      id: m,
       placeholder: u.intl.string(u.t.oNauur),
-      maxLength: d.VKK,
-      inputClassName: g.input
+      maxLength: c.VKK,
+      inputClassName: f.input
     }), (0, n.jsxs)("div", {
-      className: g.roleColorContainer,
+      className: f.roleColorContainer,
       children: [(0, n.jsx)(s.nn4, {
         children: u.intl.format(u.t["Vlq/pK"], {
-          color: (0, i.Rf)(m)
+          color: (0, o.Rf)(h)
         })
       }), (0, n.jsx)("div", {
-        className: g.roleColorPreview,
+        className: f.roleColorPreview,
         style: {
-          backgroundColor: (0, i.Rf)(m)
+          backgroundColor: (0, o.Rf)(h)
         }
       }), (0, n.jsx)(s.LZC, {
         size: 8,
         horizontal: true
       }), (0, n.jsx)(s.yRy, {
-        targetElementRef: a,
-        renderPopout: e => (0, n.jsx)(s.Z$W, p(f({}, e), {
-          value: m,
-          onChange: v
+        targetElementRef: l,
+        renderPopout: e => (0, n.jsx)(s.Z$W, p(g({}, e), {
+          value: h,
+          onChange: b
         })),
-        children: e => (0, n.jsx)(s.P3F, p(f({}, e), {
-          innerRef: a,
+        children: e => (0, n.jsx)(s.P3F, p(g({}, e), {
+          innerRef: l,
           tag: "span",
           "aria-label": u.intl.string(u.t.QLgdlZ),
-          className: g.dropperIconContainer,
+          className: f.dropperIconContainer,
           children: (0, n.jsx)(s.ilE, {
             size: "xs",
             color: "currentColor",
-            className: g.dropperIcon
+            className: f.dropperIcon
           })
         }))
       })]

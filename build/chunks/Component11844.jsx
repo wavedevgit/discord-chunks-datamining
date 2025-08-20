@@ -1,5 +1,6 @@
-/** Chunk was on 66181 **/
-/** chunk id: 11844, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 11844, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   Z: () => b
 });
@@ -16,34 +17,41 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk569029 = require("./569029.js");
 
-function h(e) {
+function h(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      i = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), i.forEach(function(t) {
-      var i;
-      i = n[t], t in e ? Object.defineProperty(e, t, {
-        value: i,
-        enumerable: true,
-        configurable: true,
-        writable: true
-      }) : e[t] = i
+    }))), r.forEach(function(t) {
+      h(e, t, n[t])
     })
   }
   return e
 }
 
-function f(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-      var i = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, i)
-    }
-    return n
-  })(Object(t)).forEach(function(n) {
+function g(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function E(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -53,28 +61,28 @@ let b = function() {
       analyticsLocations: t
     } = (0, Chunk906732.ZP)(),
     {
-      fractionalState: b
+      fractionalState: h
     } = (0, Chunk975298.Z)();
 
-  function x(n) {
-    null != e.current && (0, a.Mr3)(e.current), (0, d.u)({
+  function g(n) {
+    null != e.current && (0, o.Mr3)(e.current), (0, u.u)({
       analyticsLocation: {
-        page: m.ZY5.GUILD_BOOSTING_USER_SETTINGS,
-        section: m.jXE.GUILD_BOOSTING_BOOST_ANY_GUILD_CTA,
-        object: m.qAy.BUTTON_CTA,
-        objectType: m.Qqv.BUY
+        page: f.ZY5.GUILD_BOOSTING_USER_SETTINGS,
+        section: f.jXE.GUILD_BOOSTING_BOOST_ANY_GUILD_CTA,
+        object: f.qAy.BUTTON_CTA,
+        objectType: f.Qqv.BUY
       },
       analyticsLocations: t,
       guild: n
     })
   }
-  async function _() {
+  async function b() {
     module.current = await (0, Chunk481060.ZDy)(async () => {
       let {
         default: e
       } = await Promise.resolve().then(require.bind(require, 719228));
-      return t => (0, i.jsx)(e, f(h({}, t), {
-        onSelectGuild: x
+      return t => (0, r.jsx)(e, E(m({}, t), {
+        onSelectGuild: g
       }))
     }, {
       onCloseRequest: () => {
@@ -82,8 +90,8 @@ let b = function() {
       }
     })
   }
-  let j = (0, Chunk267642.aq)({
-    fractionalState: b
+  let y = (0, Chunk267642.aq)({
+    fractionalState: h
   });
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk569029.wrapper,
@@ -96,22 +104,22 @@ let b = function() {
       variant: "text-sm/medium",
       children: Chunk388032.intl.format(Chunk388032.t.kqC5vr, {
         boostAnyGuildHook: (e, t) => {
-          let n = null != j,
-            r = (0, i.jsx)(s.zx, {
-              className: g.cta,
+          let n = null != y,
+            i = (0, r.jsx)(a.zx, {
+              className: p.cta,
               disabled: n,
-              color: s.zx.Colors.LINK,
-              look: s.zx.Looks.LINK,
-              onClick: n ? true : _,
+              color: a.zx.Colors.LINK,
+              look: a.zx.Looks.LINK,
+              onClick: n ? true : b,
               children: e
             }, t);
-          return n ? (0, i.jsx)(c.Z, {
-            text: j,
-            "aria-label": j.toString(),
-            children: e => (0, i.jsx)("span", f(h({}, e), {
-              children: r
+          return n ? (0, r.jsx)(c.Z, {
+            text: y,
+            "aria-label": y.toString(),
+            children: e => (0, r.jsx)("span", E(m({}, e), {
+              children: i
             }))
-          }, t) : r
+          }, t) : i
         }
       })
     })]

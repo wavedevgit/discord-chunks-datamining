@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 387747, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 387747, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => g
+  Z: () => p
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -16,7 +17,7 @@ var Chunk410575 = require("./410575.jsx"),
   Chunk726985 = require("./726985.js"),
   Chunk981631 = require("./981631.js");
 
-function g() {
+function p() {
   let {
     analyticsLocations: e
   } = (0, Chunk906732.ZP)(Chunk100527.Z.USER_SETTINGS_GIFT_INVENTORY);

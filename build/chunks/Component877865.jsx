@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk408886 = require("./408886.js"),
   Chunk233398 = require("./233398.js"),
   Chunk866419 = require("./866419.js"),
-  Chunk507962 = require("./507962.js"),
+  Chunk771934 = require("./771934.js"),
   Chunk119475 = require("./119475.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk531604 = require("./531604.js");
@@ -69,13 +69,13 @@ function A() {
     children: (0, Chunk951288.jsx)(Chunk481060.$jN, {})
   })
 }
-let N = (0, Chunk608787.Un)({
+let C = (0, Chunk608787.Un)({
     createPromise: () => Promise.all([require.e("3115"), require.e("24530")]).then(require.bind(require, 932329)),
     webpackId: 932329,
     name: "CustomThemeColorPickerControl",
     renderLoader: A
   }),
-  C = 5;
+  N = 5;
 
 function R(e, t) {
   return e.length < 1 ? 0 : t / (e.length - 1) * 80 + 10
@@ -146,31 +146,31 @@ function D(e) {
       let t = e.trim();
       return t.startsWith("#") ? t : t.length > 0 ? "#".concat(t) : t
     },
-    L = e => {
+    x = e => {
       let t = D(e);
       if (R(t), (0, u.FX)(t) && ((0, E.zW)(), n(t), o.length > 0)) {
         let e = [...o];
         e[v] = t, s(e)
       }
     },
-    x = i.useCallback(e => {
+    L = i.useCallback(e => {
       R(e.hex)
     }, []),
-    M = e => {
+    j = e => {
       if ((0, E.P0)(), n(e.hex), o.length > 0) {
         let t = [...o];
         t[v] = e.hex, s(t)
       }
     },
-    k = async () => {
+    M = async () => {
       if (null != c) try {
         let {
           sRGBHex: e
         } = await c.open();
-        (0, E.J4)(), L(e)
+        (0, E.J4)(), x(e)
       } catch (e) {}
-    }, j = () => {
-      if (o.length === C) return;
+    }, k = () => {
+      if (o.length === N) return;
       0 === o.length && (0, g.ft)(), (0, E.gG)();
       let e = o.length > 0 ? o[o.length - 1] : A,
         t = o.length > 0 ? w(e) : e,
@@ -194,11 +194,11 @@ function D(e) {
         children: y.intl.string(b.default["8ZcEfn"])
       }), (0, r.jsx)(p.ua7, {
         text: y.intl.string(b.default["61KGaW"]),
-        shouldShow: o.length === C,
+        shouldShow: o.length === N,
         children: e => (0, r.jsx)(p.P3F, S(I({}, e), {
-          onClick: o.length === C ? true : j,
+          onClick: o.length === N ? true : k,
           className: l()(O.addColorButton, {
-            [O.disabled]: o.length === C
+            [O.disabled]: o.length === N
           }),
           children: (0, r.jsx)(p.Text, {
             variant: "text-sm/medium",
@@ -211,16 +211,16 @@ function D(e) {
       colors: o,
       selectedIndex: v,
       onColorSelect: G
-    }), (0, r.jsx)(N, {
-      onChange: x,
-      onChangeComplete: M,
+    }), (0, r.jsx)(C, {
+      onChange: L,
+      onChangeComplete: j,
       color: A
     }), (0, r.jsxs)("div", {
       className: O.hexInputContainer,
       children: [(0, r.jsx)("input", {
         className: O.hexInput,
         value: A.toUpperCase(),
-        onChange: e => L(e.target.value),
+        onChange: e => x(e.target.value),
         maxLength: 7,
         placeholder: m.Dp,
         type: "text"
@@ -233,7 +233,7 @@ function D(e) {
             variant: "icon-only",
             size: "sm"
           }, e), {
-            onClick: k,
+            onClick: M,
             icon: d.i,
             "aria-label": y.intl.string(b.default["8QXO8v"])
           }))

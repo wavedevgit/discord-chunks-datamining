@@ -1,8 +1,9 @@
-/** Chunk was on 30243 **/
-/** chunk id: 52396, original params: e,t,r (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 52396, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  B: () => j,
-  r: () => h
+  B: () => y,
+  r: () => v
 }), require("./415506.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,189 +18,194 @@ var Chunk951288 = require("./951288.js"),
   Chunk301419 = require("./301419.js"),
   Chunk397035 = require("./397035.js");
 
+function h(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
 function m(e) {
   for (var t = 1; t < arguments.length; t++) {
-    var r = null != arguments[t] ? arguments[t] : {},
-      n = Object.keys(r);
-    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(r, e).enumerable
-    }))), n.forEach(function(t) {
-      var n;
-      n = r[t], t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: true,
-        configurable: true,
-        writable: true
-      }) : e[t] = n
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      h(e, t, n[t])
     })
   }
   return e
 }
 
-function O(e, t) {
+function g(e, t) {
   if (null == e) return {};
-  var r, n, l = function(e, t) {
-    if (null == e) return {};
-    var r, n, l = {},
-      i = Object.keys(e);
-    for (n = 0; n < i.length; n++) r = i[n], t.indexOf(r) >= 0 || (l[r] = e[r]);
-    return l
-  }(e, t);
+  var n, r, i = E(e, t);
   if (Object.getOwnPropertySymbols) {
-    var i = Object.getOwnPropertySymbols(e);
-    for (n = 0; n < i.length; n++) r = i[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
-  return l
+  return i
 }
-let y = Chunk647438.createContext(true);
 
-function j() {
-  let e = Chunk647438.useContext(y);
+function E(e, t) {
+  if (null == e) return {};
+  var n, r, i = {},
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+  return i
+}
+let b = Chunk647438.createContext(true);
+
+function y() {
+  let e = Chunk647438.useContext(b);
   return o()(null != module, "useEntryDataContext must be used within a EntryDataContextProvider"), module
 }
 
-function g(e) {
+function O(e) {
   var {
     entry: t
-  } = e, r = O(e, ["entry"]);
-  let l = m({
+  } = e, n = g(e, ["entry"]);
+  let i = m({
     baseEntryData: (0, u.Z)({
       entry: t,
-      channel: r.channel
+      channel: n.channel
     })
-  }, r);
+  }, n);
   switch (t.content_type) {
-    case a.s.TOP_ARTIST:
-      return (0, n.jsx)(P, m({
+    case s.s.TOP_ARTIST:
+      return (0, r.jsx)(T, m({
         entry: t
-      }, l));
-    case a.s.TOP_GAME:
-      return (0, n.jsx)(x, m({
+      }, i));
+    case s.s.TOP_GAME:
+      return (0, r.jsx)(S, m({
         entry: t
-      }, l));
-    case a.s.PLAYED_GAME:
-      return (0, n.jsx)(S, m({
+      }, i));
+    case s.s.PLAYED_GAME:
+      return (0, r.jsx)(A, m({
         entry: t
-      }, l));
-    case a.s.WATCHED_MEDIA:
-      return (0, n.jsx)(w, m({
+      }, i));
+    case s.s.WATCHED_MEDIA:
+      return (0, r.jsx)(C, m({
         entry: t
-      }, l));
-    case a.s.LISTENED_SESSION:
-      return (0, n.jsx)(C, m({
+      }, i));
+    case s.s.LISTENED_SESSION:
+      return (0, r.jsx)(N, m({
         entry: t
-      }, l));
-    case a.s.LAUNCHED_ACTIVITY:
-      return (0, n.jsx)(v, m({
+      }, i));
+    case s.s.LAUNCHED_ACTIVITY:
+      return (0, r.jsx)(I, m({
         entry: t
-      }, l));
+      }, i));
     default:
       throw Error("Unsupported content type: ".concat(t.content_type))
   }
 }
 
-function h(e) {
-  var {
-    errorFallback: t
-  } = e, r = O(e, ["errorFallback"]);
-  return (0, n.jsx)(c.S, {
-    fallback: t,
-    children: (0, n.jsx)(g, m({}, r))
-  })
-}
-
 function v(e) {
   var {
-    entry: t,
-    children: r
-  } = e, l = O(e, ["entry", "children"]);
-  let i = (0, s.Z)(m({
-    entry: t
-  }, l));
-  return (0, n.jsx)(y.Provider, {
-    value: m({
-      parsedEntry: i
-    }, l),
-    children: r
+    errorFallback: t
+  } = e, n = g(e, ["errorFallback"]);
+  return (0, r.jsx)(l.S, {
+    fallback: t,
+    children: (0, r.jsx)(O, m({}, n))
   })
 }
 
-function P(e) {
+function I(e) {
   var {
     entry: t,
-    children: r
-  } = e, l = O(e, ["entry", "children"]);
-  let i = (0, f.Z)(m({
+    children: n
+  } = e, i = g(e, ["entry", "children"]);
+  let a = (0, c.Z)(m({
     entry: t
-  }, l));
-  return (0, n.jsx)(y.Provider, {
+  }, i));
+  return (0, r.jsx)(b.Provider, {
     value: m({
-      parsedEntry: i
-    }, l),
-    children: r
+      parsedEntry: a
+    }, i),
+    children: n
   })
 }
 
-function x(e) {
+function T(e) {
   var {
     entry: t,
-    children: r
-  } = e, l = O(e, ["entry", "children"]);
-  let i = (0, d.Z)(m({
+    children: n
+  } = e, i = g(e, ["entry", "children"]);
+  let a = (0, _.Z)(m({
     entry: t
-  }, l));
-  return (0, n.jsx)(y.Provider, {
+  }, i));
+  return (0, r.jsx)(b.Provider, {
     value: m({
-      parsedEntry: i
-    }, l),
-    children: r
+      parsedEntry: a
+    }, i),
+    children: n
   })
 }
 
 function S(e) {
   var {
     entry: t,
-    children: r
-  } = e, l = O(e, ["entry", "children"]);
-  let i = (0, d.Z)(m({
+    children: n
+  } = e, i = g(e, ["entry", "children"]);
+  let a = (0, d.Z)(m({
     entry: t
-  }, l));
-  return (0, n.jsx)(y.Provider, {
+  }, i));
+  return (0, r.jsx)(b.Provider, {
     value: m({
-      parsedEntry: i
-    }, l),
-    children: r
+      parsedEntry: a
+    }, i),
+    children: n
   })
 }
 
-function w(e) {
+function A(e) {
   var {
     entry: t,
-    children: r
-  } = e, l = O(e, ["entry", "children"]);
-  let i = (0, b.Z)(m({
+    children: n
+  } = e, i = g(e, ["entry", "children"]);
+  let a = (0, d.Z)(m({
     entry: t
-  }, l));
-  return (0, n.jsx)(y.Provider, {
+  }, i));
+  return (0, r.jsx)(b.Provider, {
     value: m({
-      parsedEntry: i
-    }, l),
-    children: r
+      parsedEntry: a
+    }, i),
+    children: n
   })
 }
 
 function C(e) {
   var {
     entry: t,
-    children: r
-  } = e, l = O(e, ["entry", "children"]);
-  let i = (0, p.Z)(m({
+    children: n
+  } = e, i = g(e, ["entry", "children"]);
+  let a = (0, p.Z)(m({
     entry: t
-  }, l));
-  return (0, n.jsx)(y.Provider, {
+  }, i));
+  return (0, r.jsx)(b.Provider, {
     value: m({
-      parsedEntry: i
-    }, l),
-    children: r
+      parsedEntry: a
+    }, i),
+    children: n
+  })
+}
+
+function N(e) {
+  var {
+    entry: t,
+    children: n
+  } = e, i = g(e, ["entry", "children"]);
+  let a = (0, f.Z)(m({
+    entry: t
+  }, i));
+  return (0, r.jsx)(b.Provider, {
+    value: m({
+      parsedEntry: a
+    }, i),
+    children: n
   })
 }

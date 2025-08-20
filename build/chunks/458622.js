@@ -1,5 +1,6 @@
-/** Chunk was on 66181 **/
-/** chunk id: 458622, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 458622, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   tierCard: "tierCard_a45ed3",
   withTier2Rim: "withTier2Rim_a45ed3",

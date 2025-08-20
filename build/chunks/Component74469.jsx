@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 74469, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 74469, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => j
+  Z: () => y
 }), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,68 +20,68 @@ var Chunk951288 = require("./951288.js"),
   Chunk526761 = require("./526761.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk999087 = require("./999087.js");
-let _ = (0, Chunk313201.hQ)(),
-  j = Chunk647438.memo(function(e) {
+let b = (0, Chunk313201.hQ)(),
+  y = Chunk647438.memo(function(e) {
     let {
       availablePrimaryGuilds: t,
       pendingPrimaryGuildId: n,
-      onChange: o
-    } = e, [j, E] = (0, c.US)([a.z.GUILD_TAG_USER_PROFILE_NEW_BADGE]), C = r.useMemo(() => new Map(t.map(e => [e.id, e])), [t]), O = (0, s.e7)([p.default], () => {
+      onChange: l
+    } = e, [y, O] = (0, c.US)([o.z.GUILD_TAG_USER_PROFILE_NEW_BADGE]), v = i.useMemo(() => new Map(t.map(e => [e.id, e])), [t]), I = (0, a.e7)([_.default], () => {
       var e;
-      return (0, d.Pb)(null == (e = p.default.getCurrentUser()) ? true : e.primaryGuild).guildId
-    }), v = true !== n ? n : O, S = r.useMemo(() => t.reduce((e, t) => {
+      return (0, u.Pb)(null == (e = _.default.getCurrentUser()) ? true : e.primaryGuild).guildId
+    }), T = true !== n ? n : I, S = i.useMemo(() => t.reduce((e, t) => {
       var n;
       return (null == (n = t.profile) ? true : n.tag) != null && e.push({
         label: t.name,
         value: t.id
       }), e
-    }, []), [t]), T = r.useCallback(e => {
-      var t, n, r;
+    }, []), [t]), A = i.useCallback(e => {
+      var t, n, i;
       if (null == e) return null;
-      let s = C.get(e.value);
-      if (null == s) return null;
-      let a = null == (t = s.profile) ? true : t.tag;
-      return null == a ? null : (0, i.jsx)(g.Z, {
-        guildTag: a,
-        guildBadge: null != (r = null == (n = s.profile) ? true : n.badge) ? r : true,
-        guildId: s.id,
+      let a = v.get(e.value);
+      if (null == a) return null;
+      let o = null == (t = a.profile) ? true : t.tag;
+      return null == o ? null : (0, r.jsx)(p.Z, {
+        guildTag: o,
+        guildBadge: null != (i = null == (n = a.profile) ? true : n.badge) ? i : true,
+        guildId: a.id,
         guildName: e.label,
-        guildIcon: s.icon,
+        guildIcon: a.icon,
         guildIconSize: 32
       })
-    }, [C]), N = r.useCallback(e => {
+    }, [v]), C = i.useCallback(e => {
       let t = e[0];
-      return null == t ? null : (0, i.jsx)(i.Fragment, {
-        children: T(t)
+      return null == t ? null : (0, r.jsx)(r.Fragment, {
+        children: A(t)
       })
-    }, [T]), I = r.useCallback(e => {
-      E(h.L.TAKE_ACTION), null == o || o(e)
-    }, [E, o]), y = r.useCallback(e => e === v, [v]), A = r.useCallback(e => e, []), P = r.useCallback(() => {
-      E(h.L.TAKE_ACTION), null == o || o(null)
-    }, [E, o]), R = r.useRef(null);
-    return (0, m.Z)(R, f.Y_.GUILD_TAG), (0, i.jsxs)(u.Z, {
-      title: b.intl.string(b.t.Pdd1nZ),
-      titleId: _,
-      ref: R,
-      titleIcon: j === a.z.GUILD_TAG_USER_PROFILE_NEW_BADGE && (0, i.jsx)(l.IGR, {
-        text: b.intl.string(b.t.y2b7CA),
-        className: x.newBadge
+    }, [A]), N = i.useCallback(e => {
+      O(h.L.TAKE_ACTION), null == l || l(e)
+    }, [O, l]), R = i.useCallback(e => e === T, [T]), P = i.useCallback(e => e, []), w = i.useCallback(() => {
+      O(h.L.TAKE_ACTION), null == l || l(null)
+    }, [O, l]), D = i.useRef(null);
+    return (0, f.Z)(D, m.Y_.GUILD_TAG), (0, r.jsxs)(d.Z, {
+      title: g.intl.string(g.t.Pdd1nZ),
+      titleId: b,
+      ref: D,
+      titleIcon: y === o.z.GUILD_TAG_USER_PROFILE_NEW_BADGE && (0, r.jsx)(s.IGR, {
+        text: g.intl.string(g.t.y2b7CA),
+        className: E.newBadge
       }),
-      children: [(0, i.jsx)(l.Text, {
-        className: x.subtitle,
+      children: [(0, r.jsx)(s.Text, {
+        className: E.subtitle,
         variant: "text-sm/normal",
-        children: b.intl.string(b.t.mlZ6Jy)
-      }), (0, i.jsx)(l.PhF, {
-        className: x.select,
-        optionClassName: x.selectPopout,
-        isSelected: y,
+        children: g.intl.string(g.t.mlZ6Jy)
+      }), (0, r.jsx)(s.PhF, {
+        className: E.select,
+        optionClassName: E.selectPopout,
+        isSelected: R,
         options: S,
-        select: I,
-        renderOptionValue: N,
-        renderOptionLabel: T,
-        serialize: A,
-        clear: P,
-        clearable: null != v
+        select: N,
+        renderOptionValue: C,
+        renderOptionLabel: A,
+        serialize: P,
+        clear: w,
+        clearable: null != T
       })]
     })
   })

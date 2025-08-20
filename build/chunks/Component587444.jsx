@@ -1,8 +1,8 @@
 /** Chunk was on 27978 **/
 /** chunk id: 587444, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g,
-  u: () => f
+  Z: () => f,
+  u: () => g
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -18,19 +18,19 @@ var Chunk120356 = require("./120356.js"),
   Chunk149715 = require("./149715.js"),
   Chunk197571 = require("./197571.js");
 
-function f(e) {
+function g(e) {
   let {
     text: t,
     buttonCta: i,
     onClick: u
   } = e;
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(s.Ee, {
+    children: [(0, r.jsx)(a.Ee, {
       src: n(689411)
-    }), (0, r.jsx)(s.Dx, {
+    }), (0, r.jsx)(a.Dx, {
       className: l()(m.marginTop20, m.marginBottom8, p.flexCenter),
       children: d.intl.string(d.t.eL5z0t)
-    }), (0, r.jsx)(s.DK, {
+    }), (0, r.jsx)(a.DK, {
       className: m.marginBottom40,
       children: d.intl.string(d.t["poAv6+"])
     }), (0, r.jsxs)(o.Zbd, {
@@ -54,10 +54,10 @@ function f(e) {
           className: h.buttonTitle,
           variant: "text-md/normal",
           style: {
-            color: a.Z.unsafe_rawColors.PRIMARY_300.css
+            color: s.Z.unsafe_rawColors.PRIMARY_300.css
           },
           children: t
-        }), (0, r.jsx)(s.zx, {
+        }), (0, r.jsx)(a.zx, {
           className: h.button,
           onClick: u,
           children: i
@@ -67,16 +67,16 @@ function f(e) {
   })
 }
 
-function g(e) {
+function f(e) {
   let {
     text: t,
     buttonCta: n,
     theme: i = u.BRd.DARK,
     onClick: l
   } = e;
-  return (0, r.jsx)(s.ZP, {
+  return (0, r.jsx)(a.ZP, {
     theme: i,
-    children: (0, r.jsx)(f, {
+    children: (0, r.jsx)(g, {
       text: t,
       buttonCta: n,
       onClick: l

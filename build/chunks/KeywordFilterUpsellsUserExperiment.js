@@ -1,7 +1,8 @@
-/** Chunk was on 25292 **/
-/** chunk id: 517858, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 517858, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  C3: () => o,
+  C3: () => a,
   GW: () => i
 });
 let r = (0, require("./818083.js").B)({
@@ -33,7 +34,7 @@ function i(e) {
   return n
 }
 
-function o(e) {
+function a(e) {
   let {
     location: t
   } = e, {

@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   ZP: () => R,
-  ku: () => N
+  ku: () => C
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -83,7 +83,7 @@ function A(e) {
   })
 }
 
-function N(e) {
+function C(e) {
   let {
     soundId: t
   } = e, n = (0, s.e7)([h.Z], () => h.Z.getSoundById(t)), i = (0, d.V2)({
@@ -92,7 +92,7 @@ function N(e) {
     isPlaying: a,
     playSound: o
   } = (0, p.Z)(n);
-  return i ? null == n ? (0, r.jsx)(A, {}) : (0, r.jsx)(C, {
+  return i ? null == n ? (0, r.jsx)(A, {}) : (0, r.jsx)(N, {
     className: O.inlineTextArea,
     isPlaying: a,
     playSound: o,
@@ -100,7 +100,7 @@ function N(e) {
   }) : null
 }
 
-function C(e) {
+function N(e) {
   let {
     className: t,
     sound: n,
@@ -138,7 +138,7 @@ let R = function(e) {
   } = e, d = E.jU.useSetting(), y = (0, s.e7)([h.Z], () => h.Z.getSoundById(a), [a]), v = i.useMemo(() => {
     var e;
     return null != (e = (0, f.Z)(t, n, a, o)) ? e : y
-  }, [t, n, a, o, y]), T = (0, s.e7)([b.Z], () => b.Z.getChannel(t)), N = (0, u.X0)({
+  }, [t, n, a, o, y]), T = (0, s.e7)([b.Z], () => b.Z.getChannel(t)), C = (0, u.X0)({
     location: "SoundboardMention"
   }), R = i.useRef(null), {
     isPlaying: P,
@@ -149,7 +149,7 @@ let R = function(e) {
       null == (e = R.current) || e.addAnimation()
     }
   }, [w]);
-  return N ? null == v ? (0, r.jsx)(A, {
+  return C ? null == v ? (0, r.jsx)(A, {
     playSound: D
   }) : c && !d ? (0, r.jsx)(g.ZP, {
     containerClassName: O.jumboContainer,
@@ -176,7 +176,7 @@ let R = function(e) {
     position: "top",
     delay: 500,
     children: e => (0, r.jsx)("span", S(I({}, e), {
-      children: (0, r.jsx)(C, {
+      children: (0, r.jsx)(N, {
         sound: v,
         playSound: D,
         isPlaying: P

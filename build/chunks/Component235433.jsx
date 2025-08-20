@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 235433, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 235433, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => j
+  Z: () => y
 }), require("./539854.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -21,43 +22,43 @@ var Chunk951288 = require("./951288.js"),
   Chunk693450 = require("./693450.js"),
   Chunk147164 = require("./147164.js");
 
-function j(e) {
+function y(e) {
   let {
     user: t,
     className: n
-  } = e, j = d.J.useExperiment({
+  } = e, y = u.J.useExperiment({
     location: "DisplayNameStylesSection"
-  }).enabled, E = p.ZP.canUsePremiumProfileCustomization(t), {
-    analyticsLocations: C
-  } = (0, o.ZP)(), O = null != t.displayNameStyles, v = [];
-  j && v.push(s.z.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE);
-  let [S, T] = (0, c.US)(v), N = S === s.z.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE, I = (0, r.useCallback)(() => {
-    T(f.L.TAKE_ACTION), m.default.track(h.rMx.DISPLAY_NAME_STYLES_FROM_SETTINGS), (0, u.I)({
-      analyticsLocations: C
+  }).enabled, O = _.ZP.canUsePremiumProfileCustomization(t), {
+    analyticsLocations: v
+  } = (0, l.ZP)(), I = null != t.displayNameStyles, T = [];
+  y && T.push(a.z.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE);
+  let [S, A] = (0, c.US)(T), C = S === a.z.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE, N = (0, i.useCallback)(() => {
+    A(m.L.TAKE_ACTION), f.default.track(h.rMx.DISPLAY_NAME_STYLES_FROM_SETTINGS), (0, d.I)({
+      analyticsLocations: v
     })
-  }, [C, T]), y = (0, r.useCallback)(() => {
-    (0, l.NI)(null), m.default.track(h.rMx.DISPLAY_NAME_STYLES_REMOVED)
+  }, [v, A]), R = (0, i.useCallback)(() => {
+    (0, s.NI)(null), f.default.track(h.rMx.DISPLAY_NAME_STYLES_REMOVED)
   }, []);
-  return j || O ? (0, i.jsx)(g.Z, {
-    title: b.intl.string(x.default["86GtGB"]),
-    titleIcon: N ? (0, i.jsx)(a.IGR, {
-      text: b.intl.string(b.t.y2b7CA),
-      className: _.newBadge
+  return y || I ? (0, r.jsx)(p.Z, {
+    title: g.intl.string(E.default["86GtGB"]),
+    titleIcon: C ? (0, r.jsx)(o.IGR, {
+      text: g.intl.string(g.t.y2b7CA),
+      className: b.newBadge
     }) : true,
     className: n,
-    showPremiumIcon: E,
-    children: (0, i.jsxs)("div", {
-      className: _.buttonsContainer,
-      children: [j && (0, i.jsx)(a.zxk, {
+    showPremiumIcon: O,
+    children: (0, r.jsxs)("div", {
+      className: b.buttonsContainer,
+      children: [y && (0, r.jsx)(o.zxk, {
         variant: "primary",
         size: "sm",
-        text: b.intl.string(x.default.vJqrIi),
-        onClick: I
-      }), O && (0, i.jsx)(a.zxk, {
+        text: g.intl.string(E.default.vJqrIi),
+        onClick: N
+      }), I && (0, r.jsx)(o.zxk, {
         variant: "secondary",
         size: "sm",
-        text: b.intl.string(x.default.ymq8WV),
-        onClick: y
+        text: g.intl.string(E.default.ymq8WV),
+        onClick: R
       })]
     })
   }) : null

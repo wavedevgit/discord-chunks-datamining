@@ -1,5 +1,6 @@
-/** Chunk was on 66181 **/
-/** chunk id: 106742, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 106742, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   circleContainer: "circleContainer_c1b44f",
   childrenContainer: "childrenContainer_c1b44f",

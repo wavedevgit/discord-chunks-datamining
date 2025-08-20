@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 419636, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 419636, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => u
+  Z: () => d
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -11,13 +12,13 @@ var Chunk481060 = require("./481060.js"),
   Chunk58839 = require("./58839.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk281413 = require("./281413.js");
-let d = {
+let u = {
   offset: {
     top: false
   }
 };
 
-function u() {
+function d() {
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk281413.socialLinks,
     children: [(0, Chunk951288.jsx)(Chunk481060.eee, {
@@ -27,7 +28,7 @@ function u() {
       title: "X",
       href: (0, Chunk299379.Z)(Chunk981631.RK.TWITTER),
       className: Chunk281413.link,
-      focusProps: d,
+      focusProps: u,
       children: (0, Chunk951288.jsx)(Chunk481060.TAi, {
         size: "xs",
         color: "currentColor",
@@ -41,7 +42,7 @@ function u() {
       tabIndex: false,
       href: Chunk981631.fK7.INSTAGRAM_URL,
       className: Chunk281413.link,
-      focusProps: d,
+      focusProps: u,
       children: (0, Chunk951288.jsx)(Chunk481060.gST, {
         size: "xs",
         color: "currentColor",
@@ -55,7 +56,7 @@ function u() {
       tabIndex: false,
       href: Chunk981631.fK7.FACEBOOK_URL,
       className: Chunk281413.link,
-      focusProps: d,
+      focusProps: u,
       children: (0, Chunk951288.jsx)(Chunk481060.tdR, {
         size: "xs",
         color: "currentColor",
@@ -69,7 +70,7 @@ function u() {
       tabIndex: false,
       href: Chunk981631.fK7.YOUTUBE_URL,
       className: Chunk281413.link,
-      focusProps: d,
+      focusProps: u,
       children: (0, Chunk951288.jsx)(Chunk58839.Z, {
         width: 16,
         height: 16,
@@ -83,7 +84,7 @@ function u() {
       tabIndex: false,
       href: Chunk981631.fK7.TIKTOK_URL,
       className: Chunk281413.link,
-      focusProps: d,
+      focusProps: u,
       children: (0, Chunk951288.jsx)(Chunk447293.Z, {
         width: 16,
         height: 16,

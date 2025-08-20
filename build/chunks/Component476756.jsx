@@ -1,12 +1,13 @@
-/** Chunk was on 66181 **/
-/** chunk id: 476756, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 476756, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk512722 = require("./512722.js"),
-  s = require.n(Chunk512722),
+  a = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk716364 = require("./716364.js"),
@@ -15,10 +16,10 @@ var Chunk512722 = require("./512722.js"),
   Chunk871465 = require("./871465.js"),
   Chunk388032 = require("./388032.jsx");
 
-function p() {
+function _() {
   let e = (0, Chunk442837.e7)([Chunk474873.Z], () => Chunk474873.Z.getSoundpack()),
     t = Chunk197344.Z.useHolidaySoundpack();
-  s()(null != exports, "should not render this without a holiday soundpack");
+  a()(null != exports, "should not render this without a holiday soundpack");
   let n = [{
     value: Chunk871465.YC.CLASSIC,
     label: Chunk388032.intl.string(Chunk388032.t.p3Hg5e)

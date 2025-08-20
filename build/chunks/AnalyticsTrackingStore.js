@@ -63,30 +63,30 @@ let m = "x-science-test",
   T = O,
   S = g,
   A = 0,
-  N = 0,
   C = 0,
+  N = 0,
   R = 0,
   P = 0,
   w = null,
   D = 0,
-  L = Number.MAX_SAFE_INTEGER,
-  x = 0,
-  M = 0,
-  k = null,
-  j = false,
+  x = Number.MAX_SAFE_INTEGER,
+  L = 0,
+  j = 0,
+  M = null,
+  k = false,
   U = null,
   G = null;
 
 function B() {
-  N = 0, C = 0, R = 0, D = 0, L = Number.MAX_SAFE_INTEGER, x = 0, M = 0, w = Date.now(), P = A
+  C = 0, N = 0, R = 0, D = 0, x = Number.MAX_SAFE_INTEGER, L = 0, j = 0, w = Date.now(), P = A
 }
 
-function V(e) {
+function Z(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 1;
   return e + t
 }
-let F = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e()),
-  Z = new Chunk761609.R,
+let V = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e()),
+  F = new Chunk761609.R,
   H = {
     handleConnectionOpen: () => {},
     handleConnectionClosed: () => {},
@@ -108,7 +108,7 @@ let F = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
       TRACKING_URL: b,
       drainTimeoutOverride: y,
       waitFor: O,
-      scheduleWhenIdle: z = F,
+      scheduleWhenIdle: z = V,
       getLaunchSignature: q = () => null
     } = e;
 
@@ -135,17 +135,17 @@ let F = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
     function $() {
       if (W = null, !Q()) return Promise.resolve();
       let e = Y.slice();
-      Y = [], D = V(D);
+      Y = [], D = Z(D);
       let t = e.length;
-      L = Math.min(L, t), x = Math.max(x, t), M = V(M, t);
+      x = Math.min(x, t), L = Math.max(L, t), j = Z(j, t);
       let n = ee(e);
       return n.then(() => {
         e.forEach(e => {
           var t;
           null == (t = e.resolve) || t.call(e)
-        }), C = V(C)
+        }), N = Z(N)
       }, t => {
-        Y.unshift(...e), R = V(R);
+        Y.unshift(...e), R = Z(R);
         let {
           message: n
         } = t.body || t;
@@ -162,7 +162,7 @@ let F = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
           })
         })),
         a = {};
-      return j || (G = (0, o.Z)(), a[m] = G, j = true), c.tn.post({
+      return k || (G = (0, o.Z)(), a[m] = G, k = true), c.tn.post({
         url: t,
         headers: a,
         body: {
@@ -185,17 +185,17 @@ let F = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
         type: d.cN.CLIENT_TELEMETRY,
         properties: {
           client_track_timestamp: Date.now(),
-          rpc_success_count: C,
+          rpc_success_count: N,
           rpc_failure_count: R,
           first_seen_event_sequence_number: P,
           last_seen_event_sequence_number: A,
           telemetry_period_start_timestamp: w,
           telemetry_period_end_timestamp: Date.now(),
-          event_queue_rejection_count: N,
+          event_queue_rejection_count: C,
           event_queue_batch_count: D,
-          event_queue_batch_min_size: L === Number.MAX_SAFE_INTEGER ? 0 : L,
-          event_queue_batch_max_size: x,
-          event_queue_batch_avg_size: D > 0 ? M / D : 0,
+          event_queue_batch_min_size: x === Number.MAX_SAFE_INTEGER ? 0 : x,
+          event_queue_batch_max_size: L,
+          event_queue_batch_avg_size: D > 0 ? j / D : 0,
           science_request_id: G,
           science_response: U,
           launch_signature: q()
@@ -205,32 +205,32 @@ let F = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
     }
 
     function en() {
-      if (null == k) returnfalse;
-      switch (k.type) {
+      if (null == M) returnfalse;
+      switch (M.type) {
         case "timeout":
-          clearTimeout(k.id);
+          clearTimeout(M.id);
           break;
         case "interval":
-          clearInterval(k.id);
+          clearInterval(M.id);
           break;
         default:
-          k.type
+          M.type
       }
-      return k = null, true
+      return M = null, true
     }
 
     function er() {
-      if (null != k) return;
+      if (null != M) return;
       let e = () => {
         let t = .1 * v;
-        k = {
+        M = {
           type: "timeout",
           id: setTimeout(() => {
             et(), e()
           }, Math.max(v + (Math.floor(Math.random() * t * 2) - t), I))
         }
       };
-      k = {
+      M = {
         type: "timeout",
         id: setTimeout(() => {
           et(), e()
@@ -274,9 +274,9 @@ let F = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
           }, n),
           resolve: a
         }, l = X(s);
-        if (null != l && (s.properties.client_uuid = Z.generate(l)), Y.push(s), Y.length > E) {
+        if (null != l && (s.properties.client_uuid = F.generate(l)), Y.push(s), Y.length > E) {
           let e = Y.length - E;
-          N = V(N, e), Y = Y.slice(-E)
+          C = Z(C, e), Y = Y.slice(-E)
         }
         r ? J({
           shouldFlushOnNextTick: true

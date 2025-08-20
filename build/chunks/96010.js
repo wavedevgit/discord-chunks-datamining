@@ -1,10 +1,10 @@
-/** Chunk was on 91584 **/
-/** chunk id: 96010, original params: t,e,r (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 96010, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var n = require("./733359.js").substr;
-module.exports = function(t, e) {
-  var r = Array(t.length).fill(null);
-  return e && e.forEach(function(e) {
-    for (var i = n(t, 0, e.offset).length, o = i + n(t, e.offset, e.length).length, a = i; a < o; a++) r[a] = e.key
-  }), r
+var r = require("./733359.js").substr;
+module.exports = function(e, t) {
+  var n = Array(e.length).fill(null);
+  return t && t.forEach(function(t) {
+    for (var i = r(e, 0, t.offset).length, a = i + r(e, t.offset, t.length).length, o = i; o < a; o++) n[o] = t.key
+  }), n
 }

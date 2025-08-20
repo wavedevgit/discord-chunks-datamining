@@ -1,7 +1,7 @@
-/** Chunk was on 69003 **/
+/** Chunk was on 91488 **/
 /** chunk id: 339149, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  E: () => I,
+  E: () => P,
   Z: () => N
 }), require("./388685.js"), require("./539854.js");
 var r, Chunk951288 = require("./951288.js"),
@@ -33,7 +33,7 @@ function C(e, t, n) {
   }) : e[t] = n, e
 }
 
-function E(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -45,54 +45,54 @@ function E(e) {
   }
   return e
 }
-let x = {
+let E = {
   [Chunk981631.vxO.INSTALLING]: {
-    [Chunk707409.J6.NONE]: (e, t) => v.intl.formatToPlainString(v.t["p+2sEx"], {
+    [Chunk707409.J6.NONE]: (e, t) => j.intl.formatToPlainString(j.t["p+2sEx"], {
       name: e
     }),
-    [Chunk707409.J6.SECONDS]: (e, t) => v.intl.formatToPlainString(v.t["/0NgPD"], {
+    [Chunk707409.J6.SECONDS]: (e, t) => j.intl.formatToPlainString(j.t["/0NgPD"], {
       name: e,
       timeRemaining: t
     }),
-    [Chunk707409.J6.MINUTES]: (e, t) => v.intl.formatToPlainString(v.t.ZIwMzs, {
+    [Chunk707409.J6.MINUTES]: (e, t) => j.intl.formatToPlainString(j.t.ZIwMzs, {
       name: e,
       timeRemaining: t
     }),
-    [Chunk707409.J6.HOURS]: (e, t) => v.intl.formatToPlainString(v.t["3IQDUl"], {
+    [Chunk707409.J6.HOURS]: (e, t) => j.intl.formatToPlainString(j.t["3IQDUl"], {
       name: e,
       timeRemaining: t
     })
   },
   [Chunk981631.vxO.UPDATING]: {
-    [Chunk707409.J6.NONE]: (e, t) => v.intl.formatToPlainString(v.t["6F9QzM"], {
+    [Chunk707409.J6.NONE]: (e, t) => j.intl.formatToPlainString(j.t["6F9QzM"], {
       name: e
     }),
-    [Chunk707409.J6.SECONDS]: (e, t) => v.intl.formatToPlainString(v.t["2OVgVl"], {
+    [Chunk707409.J6.SECONDS]: (e, t) => j.intl.formatToPlainString(j.t["2OVgVl"], {
       name: e,
       timeRemaining: t
     }),
-    [Chunk707409.J6.MINUTES]: (e, t) => v.intl.formatToPlainString(v.t.mgQg1N, {
+    [Chunk707409.J6.MINUTES]: (e, t) => j.intl.formatToPlainString(j.t.mgQg1N, {
       name: e,
       timeRemaining: t
     }),
-    [Chunk707409.J6.HOURS]: (e, t) => v.intl.formatToPlainString(v.t["aTdq4+"], {
+    [Chunk707409.J6.HOURS]: (e, t) => j.intl.formatToPlainString(j.t["aTdq4+"], {
       name: e,
       timeRemaining: t
     })
   },
   [Chunk981631.vxO.REPAIRING]: {
-    [Chunk707409.J6.NONE]: (e, t) => v.intl.formatToPlainString(v.t["p+2sEx"], {
+    [Chunk707409.J6.NONE]: (e, t) => j.intl.formatToPlainString(j.t["p+2sEx"], {
       name: e
     }),
-    [Chunk707409.J6.SECONDS]: (e, t) => v.intl.formatToPlainString(v.t["/0NgPD"], {
+    [Chunk707409.J6.SECONDS]: (e, t) => j.intl.formatToPlainString(j.t["/0NgPD"], {
       name: e,
       timeRemaining: t
     }),
-    [Chunk707409.J6.MINUTES]: (e, t) => v.intl.formatToPlainString(v.t.ZIwMzs, {
+    [Chunk707409.J6.MINUTES]: (e, t) => j.intl.formatToPlainString(j.t.ZIwMzs, {
       name: e,
       timeRemaining: t
     }),
-    [Chunk707409.J6.HOURS]: (e, t) => v.intl.formatToPlainString(v.t["3IQDUl"], {
+    [Chunk707409.J6.HOURS]: (e, t) => j.intl.formatToPlainString(j.t["3IQDUl"], {
       name: e,
       timeRemaining: t
     })
@@ -132,7 +132,7 @@ class S extends Chunk647438.PureComponent {
       if (null == l || null == o || null == i) return null;
       let s = e[e.length - 1] / t * 1e3,
         c = 0 !== s ? Math.max(1, (o - l) / s) : null,
-        u = x[a],
+        u = E[a],
         d = null != u ? Object.keys(u) : [],
         {
           unit: p,
@@ -146,7 +146,7 @@ class S extends Chunk647438.PureComponent {
     })
   }
 }
-class P extends(r = Chunk647438.PureComponent) {
+class I extends(r = Chunk647438.PureComponent) {
   componentWillAppear(e) {
     this.state.animationScale.setValue(1), e()
   }
@@ -194,14 +194,14 @@ class P extends(r = Chunk647438.PureComponent) {
         "aria-label": false,
         children: n => {
           var r, l;
-          return (0, i.jsx)("div", (r = E({}, n), l = l = {
+          return (0, i.jsx)("div", (r = x({}, n), l = l = {
             children: (0, i.jsx)(p._3P, {
               percent: e,
               colorOverride: t ? u.Z.unsafe_rawColors.PRIMARY_500.css : null,
               children: (0, i.jsx)(p._8t, {
                 size: "md",
                 color: "currentColor",
-                className: j.downloadIcon
+                className: v.downloadIcon
               })
             })
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
@@ -230,7 +230,7 @@ class P extends(r = Chunk647438.PureComponent) {
   }
 }
 
-function I(e, t) {
+function P(e, t) {
   return e.reduce((e, n) => {
     let {
       applicationId: r,
@@ -239,12 +239,12 @@ function I(e, t) {
     return null != l && e.push(l), e
   }, [])
 }
-C(P, "defaultProps", {
+C(I, "defaultProps", {
   strokeSize: Chunk481060._3P.StrokeSizes.MEDIUM
 });
 let N = Chunk442837.ZP.connectStores([Chunk941128.Z, Chunk417363.Z, Chunk812206.Z], () => {
   let e = Chunk941128.Z.activeItems,
-    t = I(module, Chunk417363.Z),
+    t = P(module, Chunk417363.Z),
     {
       total: n,
       progress: r
@@ -275,6 +275,6 @@ let N = Chunk442837.ZP.connectStores([Chunk941128.Z, Chunk417363.Z, Chunk812206.
   }(e, ["determineOwnVisibility"]);
   return t ? (0, i.jsx)(d.W, {
     component: l.Fragment,
-    children: n.percent > 0 && n.percent < 100 ? (0, i.jsx)(P, E({}, n)) : null
-  }) : (0, i.jsx)(P, E({}, n))
+    children: n.percent > 0 && n.percent < 100 ? (0, i.jsx)(I, x({}, n)) : null
+  }) : (0, i.jsx)(I, x({}, n))
 })

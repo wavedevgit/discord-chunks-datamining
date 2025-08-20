@@ -1,9 +1,10 @@
-/** Chunk was on 66181 **/
-/** chunk id: 626562, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 626562, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  V: () => r
+  V: () => i
 });
-let i = (0, require("./818083.js").B)({
+let r = (0, require("./818083.js").B)({
   kind: "user",
   id: "2025-01_custom_status_edit_preview_mobile",
   label: "Custom Status Edit Preview (Mobile)",
@@ -19,16 +20,16 @@ let i = (0, require("./818083.js").B)({
   }]
 });
 
-function r(e) {
+function i(e) {
   let {
     location: t,
     autoTrackExposure: n = true
   } = e, {
-    enabled: r
-  } = i.useExperiment({
+    enabled: i
+  } = r.useExperiment({
     location: t
   }, {
     autoTrackExposure: n
   });
-  return r
+  return i
 }

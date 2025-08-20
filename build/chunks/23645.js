@@ -1,14 +1,23 @@
-/** Chunk was on 82411 **/
-/** chunk id: 23645, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 23645, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => s
+  Z: () => l
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk817080 = require("./817080.js"),
   Chunk579806 = require("./579806.js"),
   Chunk358085 = require("./358085.js");
-class s extends Chunk647438.Component {
+
+function s(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+class l extends Chunk647438.Component {
   getFileContents() {
     let {
       fileContents: e
@@ -16,13 +25,13 @@ class s extends Chunk647438.Component {
     return "function" == typeof module && (e = module()), module
   }
   downloadNative(e, t) {
-    i.Z.fileManager.saveWithDialog(e, t)
+    a.Z.fileManager.saveWithDialog(e, t)
   }
   downloadHtml5(e, t) {
     let n = new Blob([e], {
       type: this.props.contentType
     });
-    (0, o.saveAs)(n, t)
+    (0, i.saveAs)(n, t)
   }
   render() {
     let {
@@ -33,22 +42,14 @@ class s extends Chunk647438.Component {
     })
   }
   constructor(...e) {
-    super(...e),
-      function(e, t, n) {
-        t in e ? Object.defineProperty(e, t, {
-          value: n,
-          enumerable: true,
-          configurable: true,
-          writable: true
-        }) : e[t] = n
-      }(this, "handleFileDownload", e => {
-        e.preventDefault();
-        let t = this.getFileContents(),
-          {
-            fileName: n,
-            onDownload: r
-          } = this.props;
-        a.isPlatformEmbedded ? this.downloadNative(t, n) : this.downloadHtml5(t, n), null == r || r()
-      })
+    super(...e), s(this, "handleFileDownload", e => {
+      e.preventDefault();
+      let t = this.getFileContents(),
+        {
+          fileName: n,
+          onDownload: r
+        } = this.props;
+      o.isPlatformEmbedded ? this.downloadNative(t, n) : this.downloadHtml5(t, n), null == r || r()
+    })
   }
 }

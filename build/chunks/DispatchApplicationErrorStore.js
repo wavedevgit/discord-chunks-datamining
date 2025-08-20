@@ -1,32 +1,42 @@
-/** Chunk was on 26434 **/
-/** chunk id: 922156, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 922156, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   Z: () => p
 });
-var r, i, Chunk442837 = require("./442837.js"),
+var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk186901 = require("./186901.js");
-let s = null,
+
+function s(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+let l = null,
   c = [Chunk186901.ff.REDISTRIBUTABLE_INSTALL_FAILED, Chunk186901.ff.POST_INSTALL_FAILED, Chunk186901.ff.POST_INSTALL_CANCELLED],
   u = [Chunk186901.ff.APPLICATION_NOT_FOUND, Chunk186901.ff.APPLICATION_LOAD_FAILED, Chunk186901.ff.INTERRUPTED, Chunk186901.ff.DESERIALIZATION_FAILED];
-class d extends(i = Chunk442837.ZP.Store) {
+
+function d(e) {
+  let {
+    error: t
+  } = e;
+  l = null != t.code && u.includes(t.code) ? null : t
+}
+
+function f() {
+  null != l && null != l.code && c.includes(l.code) && (l = null)
+}
+class _ extends(r = Chunk442837.ZP.Store) {
   getLastError() {
-    return s
+    return l
   }
-}(r = "displayName") in d ? Object.defineProperty(d, r, {
-  value: "DispatchApplicationErrorStore",
-  enumerable: true,
-  configurable: true,
-  writable: true
-}) : d[r] = "DispatchApplicationErrorStore";
-let p = new d(Chunk570140.Z, {
-  DISPATCH_APPLICATION_LAUNCH_SETUP_START: function() {
-    null != s && null != s.code && c.includes(s.code) && (s = null)
-  },
-  DISPATCH_APPLICATION_ERROR: function(e) {
-    let {
-      error: t
-    } = e;
-    s = null != t.code && u.includes(t.code) ? null : t
-  }
+}
+s(_, "displayName", "DispatchApplicationErrorStore");
+let p = new _(Chunk570140.Z, {
+  DISPATCH_APPLICATION_LAUNCH_SETUP_START: f,
+  DISPATCH_APPLICATION_ERROR: d
 })

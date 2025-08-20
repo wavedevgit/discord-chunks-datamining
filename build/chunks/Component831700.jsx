@@ -1,4 +1,4 @@
-/** Chunk was on 69003 **/
+/** Chunk was on 91488 **/
 /** chunk id: 831700, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => en
@@ -180,14 +180,14 @@ class ee extends Chunk98597.ZP {
       canReorderChannel: O,
       canMoveMembers: _,
       showTutorial: y,
-      hasActiveEvent: v,
-      embeddedApps: j,
+      hasActiveEvent: j,
+      embeddedApps: v,
       isSubscriptionGated: C,
-      isFavoriteSuggestion: E,
-      withGuildIcon: x
+      isFavoriteSuggestion: x,
+      withGuildIcon: E
     } = this.props, {
       shouldShowActivities: S,
-      shouldShowGuildVerificationPopout: P
+      shouldShowGuildVerificationPopout: I
     } = this.state, N = (0, Chunk340541.jW)({
       location: "voice_channel"
     }).entrypoints, w = this.getVoiceStatesCount(), T = (0, Chunk951288.jsxs)("li", {
@@ -231,11 +231,11 @@ class ee extends Chunk98597.ZP {
                 ref: this.channelItemRef,
                 className: X.iconVisibility,
                 iconClassName: o()({
-                  [X.iconLive]: v
+                  [X.iconLive]: j
                 }),
-                hasActiveEvent: v,
+                hasActiveEvent: j,
                 channel: e,
-                selected: !E && t,
+                selected: !x && t,
                 connected: n,
                 unread: n ? i : true,
                 resolvedUnreadSetting: l,
@@ -249,24 +249,24 @@ class ee extends Chunk98597.ZP {
                   this.handleContextMenu(e), null == d || d()
                 },
                 connectDragPreview: g,
-                isFavoriteSuggestion: E,
+                isFavoriteSuggestion: x,
                 "aria-label": (0, m.ZP)({
                   channel: e,
                   unread: i,
                   mentionCount: a,
                   userCount: w,
-                  embeddedActivitiesCount: j.length,
+                  embeddedActivitiesCount: v.length,
                   isSubscriptionGated: C
                 }),
                 "aria-describedby": (0, b.Z)({
                   channel: e,
-                  embeddedApps: j
+                  embeddedApps: v
                 }),
-                withGuildIcon: x
+                withGuildIcon: E
               }, p), {
-                children: [E && (0, r.jsxs)(r.Fragment, {
+                children: [x && (0, r.jsxs)(r.Fragment, {
                   children: [this.renderAcceptSuggestionButton(), this.renderRemoveSuggestionButton()]
-                }), !E && (0, r.jsxs)(r.Fragment, {
+                }), !x && (0, r.jsxs)(r.Fragment, {
                   children: [this.renderOpenChatButton(), this.renderInviteButton(), N ? this.renderOptionsButton({
                     onContextMenu: this.handleContextMenu
                   }) : this.renderEditButton(), this.renderChannelInfo()]
@@ -346,7 +346,7 @@ class ee extends Chunk98597.ZP {
       let {
         channel: e
       } = this.props, t = e.getGuildId();
-      null != t && (0, C.n)(t) && (0, j.hk)(t), this.handleVoiceConnect()
+      null != t && (0, C.n)(t) && (0, v.hk)(t), this.handleVoiceConnect()
     }), Q(this, "handleVoiceStatusClick", e => {
       let {
         connected: t,
@@ -436,27 +436,27 @@ function en(e) {
     selected: o,
     collapsed: s,
     voiceStates: c
-  } = e, u = (0, a.cj)([M.ZP], () => ({
-    unread: M.ZP.hasUnread(n.id),
-    mentionCount: M.ZP.getMentionCount(n.id)
-  })), d = (0, a.e7)([k.ZP], () => k.ZP.resolveUnreadSetting(n)), p = (0, a.cj)([A.Z, D.Z, L.Z], () => {
+  } = e, u = (0, a.cj)([L.ZP], () => ({
+    unread: L.ZP.hasUnread(n.id),
+    mentionCount: L.ZP.getMentionCount(n.id)
+  })), d = (0, a.e7)([k.ZP], () => k.ZP.resolveUnreadSetting(n)), p = (0, a.cj)([A.Z, D.Z, M.Z], () => {
     let e = A.Z.getChannel(n.parent_id),
       r = D.Z.getCheck(n.guild_id);
     return {
-      canManageChannel: L.Z.can(K.Plq.MANAGE_CHANNELS, n),
-      canReorderChannel: true !== i && (t.id === Y._ || (null != e ? L.Z.can(K.Plq.MANAGE_CHANNELS, e) : L.Z.can(K.Plq.MANAGE_CHANNELS, t))),
-      canMoveMembers: L.Z.can(K.Plq.MOVE_MEMBERS, n),
-      locked: !L.Z.can(K.Plq.CONNECT, n),
-      bypassLimit: L.Z.can(K.Plq.MOVE_MEMBERS, n),
+      canManageChannel: M.Z.can(K.Plq.MANAGE_CHANNELS, n),
+      canReorderChannel: true !== i && (t.id === Y._ || (null != e ? M.Z.can(K.Plq.MANAGE_CHANNELS, e) : M.Z.can(K.Plq.MANAGE_CHANNELS, t))),
+      canMoveMembers: M.Z.can(K.Plq.MOVE_MEMBERS, n),
+      locked: !M.Z.can(K.Plq.CONNECT, n),
+      bypassLimit: M.Z.can(K.Plq.MOVE_MEMBERS, n),
       unverifiedAccount: !r.canChat
     }
-  }), f = (0, a.e7)([U.Z], () => U.Z.hasVideo(n.id)), g = (0, h.ZP)(n), m = (0, O.ZP)(n), b = (0, x.qY)(n.id), {
+  }), f = (0, a.e7)([U.Z], () => U.Z.hasVideo(n.id)), g = (0, h.ZP)(n), m = (0, O.ZP)(n), b = (0, E.qY)(n.id), {
     isSubscriptionGated: _,
     needSubscriptionToAccess: y
-  } = (0, E.Z)(n.id), j = (0, v.Z)(), C = (0, a.e7)([k.ZP], () => k.ZP.isFavorite(t.id, n.id)), S = e.connected || (null == j ? true : j.channelId) === n.id, {
-    enableHangStatus: I,
+  } = (0, x.Z)(n.id), v = (0, j.Z)(), C = (0, a.e7)([k.ZP], () => k.ZP.isFavorite(t.id, n.id)), S = e.connected || (null == v ? true : v.channelId) === n.id, {
+    enableHangStatus: P,
     allowChannelTopic: w
-  } = P.n.useExperiment({
+  } = I.n.useExperiment({
     guildId: n.guild_id,
     location: "VoiceChannel"
   }, {
@@ -490,7 +490,7 @@ function en(e) {
     forceShowButtons: R,
     channelInfo: T,
     resolvedUnreadSetting: d,
-    enableHangStatus: I,
+    enableHangStatus: P,
     allowChannelTopic: w,
     enableOpenTIVForPing: Z
   }))

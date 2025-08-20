@@ -133,7 +133,7 @@ function A(e) {
   }
 }
 
-function N(e) {
+function C(e) {
   var t;
   let {
     channelId: n,
@@ -142,7 +142,7 @@ function N(e) {
   E[n] = a().union(null != (t = E[n]) ? t : [], null != r ? r : ["all"])
 }
 
-function C(e) {
+function N(e) {
   let {
     channelId: t,
     messageId: n,
@@ -218,8 +218,8 @@ let D = new w(Chunk570140.Z, {
   CHANNEL_SELECT: T,
   CHANNEL_DELETE: S,
   CALL_CREATE: A,
-  CALL_UPDATE: C,
+  CALL_UPDATE: N,
   CALL_DELETE: R,
-  CALL_ENQUEUE_RING: N,
+  CALL_ENQUEUE_RING: C,
   VOICE_CHANNEL_SELECT: P
 })

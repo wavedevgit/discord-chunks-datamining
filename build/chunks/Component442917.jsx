@@ -243,7 +243,7 @@ class ef extends Chunk647438.PureComponent {
       timeout: 1800,
       children: e => {
         var t;
-        return (0, r.jsx)(M.Z, ed(ec({
+        return (0, r.jsx)(j.Z, ed(ec({
           title: o,
           backgroundKey: null != (t = null == n ? true : n.id) ? t : "",
           screenMessage: null == l ? this.getScreenMessage() : null,
@@ -251,7 +251,7 @@ class ef extends Chunk647438.PureComponent {
           onHide: this.handleHidePIP,
           renderBottomLeftControls: this.renderBottomLeftControls,
           renderBottomRightControls: this.renderBottomRightControls,
-          preventIdleComponent: x.Z,
+          preventIdleComponent: L.Z,
           width: a,
           className: es.elevationHigh,
           videoControlsClassName: (null == c ? true : c.state) === ei.jm8.ENDED ? eo.videoControls : true
@@ -312,7 +312,7 @@ class ef extends Chunk647438.PureComponent {
       return (0, r.jsxs)(r.Fragment, {
         children: [a ? this.renderViewersIcon() : null, e ? this.renderSettingsIcon() : null, t ? this.renderPopoutIcon() : null, i ? this.renderStopStreamButton() : null, n ? this.renderDisconnectButton() : null]
       })
-    }), el(this, "renderDisconnectButton", () => (0, r.jsx)(k.Z, {
+    }), el(this, "renderDisconnectButton", () => (0, r.jsx)(M.Z, {
       className: eo.rightTrayIcon,
       onClick: () => (0, v.v)(g.Z.VIDEO_PIP, v.d.DISCONNECT)
     })), el(this, "renderStopStreamButton", () => {
@@ -329,7 +329,7 @@ class ef extends Chunk647438.PureComponent {
         participantOnScreen: e,
         channel: t
       } = this.props;
-      return o()((0, ea._5)(e) || (null == e ? true : e.type) === ea.fO.ACTIVITY, "Cannot render participants for participant type ".concat(null == e ? true : e.type)), (0, r.jsx)(x.Z, {
+      return o()((0, ea._5)(e) || (null == e ? true : e.type) === ea.fO.ACTIVITY, "Cannot render participants for participant type ".concat(null == e ? true : e.type)), (0, r.jsx)(L.Z, {
         children: (0, r.jsx)(O.Z, {
           channelId: t.id,
           guildId: t.getGuildId(),
@@ -338,7 +338,7 @@ class ef extends Chunk647438.PureComponent {
           compact: true
         })
       })
-    }), el(this, "renderPopoutIcon", () => (0, r.jsx)(j.Z, {
+    }), el(this, "renderPopoutIcon", () => (0, r.jsx)(k.Z, {
       className: eo.rightTrayIcon,
       popoutOpen: false,
       onOpenPopout: this.handleOpenPopout,
@@ -364,7 +364,7 @@ function e_(e) {
   let {
     channel: t,
     width: n
-  } = e, i = (0, c.e7)([Y.Z], () => Y.Z.getSpeaker(t.id)), a = (0, c.e7)([b.Z], () => b.Z.getParticipant(t.id, i), [t.id, i]), o = (0, c.e7)([F.Z], () => l()(F.Z.getVideoDevices()).values().first()), s = (0, c.e7)([W.Z], () => null != a && a.type !== ea.fO.ACTIVITY && a.type !== ea.fO.HIDDEN_STREAM ? W.Z.getStreamId(a.user.id, t.getGuildId(), (0, y.Z)(a.type)) : null, [a, t]), d = null == o || o.disabled, f = !d, _ = (0, c.e7)([F.Z], () => !d && F.Z.isVideoEnabled(), [d]), p = (0, c.e7)([F.Z], () => (0, N.Z)(F.Z)), h = (0, c.e7)([V.default], () => V.default.getId()), m = (0, c.e7)([B.Z], () => B.Z.getCurrentUserActiveStream()), g = null != a && "user" in a ? a.user.id : "", E = (0, S.Z)((null == a ? true : a.type) === ea.fO.STREAM ? u.Yn.STREAM : u.Yn.DEFAULT, g), O = (0, T.Z)(g), v = (0, c.Wu)([B.Z], () => B.Z.getAllActiveStreams());
+  } = e, i = (0, c.e7)([Y.Z], () => Y.Z.getSpeaker(t.id)), a = (0, c.e7)([b.Z], () => b.Z.getParticipant(t.id, i), [t.id, i]), o = (0, c.e7)([V.Z], () => l()(V.Z.getVideoDevices()).values().first()), s = (0, c.e7)([W.Z], () => null != a && a.type !== ea.fO.ACTIVITY && a.type !== ea.fO.HIDDEN_STREAM ? W.Z.getStreamId(a.user.id, t.getGuildId(), (0, y.Z)(a.type)) : null, [a, t]), d = null == o || o.disabled, f = !d, _ = (0, c.e7)([V.Z], () => !d && V.Z.isVideoEnabled(), [d]), p = (0, c.e7)([V.Z], () => (0, C.Z)(V.Z)), h = (0, c.e7)([Z.default], () => Z.default.getId()), m = (0, c.e7)([B.Z], () => B.Z.getCurrentUserActiveStream()), g = null != a && "user" in a ? a.user.id : "", E = (0, S.Z)((null == a ? true : a.type) === ea.fO.STREAM ? u.Yn.STREAM : u.Yn.DEFAULT, g), O = (0, T.Z)(g), v = (0, c.Wu)([B.Z], () => B.Z.getAllActiveStreams());
   return (0, r.jsx)(ef, {
     channel: t,
     streamId: s,

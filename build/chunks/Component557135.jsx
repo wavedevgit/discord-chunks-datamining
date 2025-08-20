@@ -63,9 +63,9 @@ let v = {
       bypassGuildIdCheck: A = false
     } = e;
     t.isThread() && (await d.Z.unarchiveThreadIfNecessary(t.id), u.Z.hasJoined(t.id) || await d.Z.joinThread(t, "Join Voice"));
-    let N = o.Z.getRemoteSessionId(),
-      C = p.Z.getVoiceStateForSession(f.default.getId(), N),
-      R = (null == C ? true : C.channelId) === t.id || _.Z.getChannelId() === p.Z.getCurrentClientVoiceChannelId(t.guild_id),
+    let C = o.Z.getRemoteSessionId(),
+      N = p.Z.getVoiceStateForSession(f.default.getId(), C),
+      R = (null == N ? true : N.channelId) === t.id || _.Z.getChannelId() === p.Z.getCurrentClientVoiceChannelId(t.guild_id),
       P = c.Z.getBlockedUsersForVoiceChannel(t.id),
       w = c.Z.getIgnoredUsersForVoiceChannel(t.id);
     return ((0, l.Fd)(new Set([...P, ...w])) && (S = true), S || v || s || !(P.size > 0) && !(w.size > 0)) ? !T && !v && (0, m._)(t) ? new Promise(e => {

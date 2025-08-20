@@ -35,7 +35,7 @@ var Chunk392711 = require("./392711.js"),
   Chunk185923 = require("./185923.js"),
   Chunk388032 = require("./388032.jsx");
 
-function L(e, t, n) {
+function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -44,20 +44,20 @@ function L(e, t, n) {
   }) : e[t] = n, e
 }
 
-function x(e) {
+function L(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      L(e, t, n[t])
+      x(e, t, n[t])
     })
   }
   return e
 }
 
-function M(e, t) {
+function j(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -68,13 +68,13 @@ function M(e, t) {
   return n
 }
 
-function k(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
+function M(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function j(e, t, n) {
+function k(e, t, n) {
   let r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : null;
   if (t[0] !== e) return null;
   let i = t.substr(e.length);
@@ -105,7 +105,7 @@ function j(e, t, n) {
 function U(e, t, n) {
   let r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : null;
   if (t[0] !== e) return null;
-  if ('"' !== t[1]) return j(e, t, n, r);
+  if ('"' !== t[1]) return k(e, t, n, r);
   let i = 2;
   for (; i < t.length; i++) {
     if ("\\" === t[i]) {
@@ -154,9 +154,9 @@ function B(e) {
     })
   }
 }
-let V = Chunk428595.Z.RULES,
-  F = Chunk594199.ZP,
-  Z = /^<@!?(\d+)>/,
+let Z = Chunk428595.Z.RULES,
+  V = Chunk594199.ZP,
+  F = /^<@!?(\d+)>/,
   H = /^<@&(\d+)>/,
   Y = /^<@\$(\d+)>/,
   W = /^<#(\d+)>/,
@@ -166,9 +166,9 @@ let V = Chunk428595.Z.RULES,
     link: G(o().defaultRules.link),
     autolink: G(o().defaultRules.autolink),
     url: G(o().defaultRules.url),
-    inlineCode: G(V.inlineCode),
-    codeBlock: G(V.codeBlock),
-    rawUserMention: B(Z),
+    inlineCode: G(Z.inlineCode),
+    codeBlock: G(Z.codeBlock),
+    rawUserMention: B(F),
     rawRoleMention: B(H),
     rawChannelMention: B(W),
     rawEmoji: B(K),
@@ -176,9 +176,9 @@ let V = Chunk428595.Z.RULES,
       match(e, t, n) {
         let r = n.split(" ").pop() + e;
         if (/^[^ ]+@[^ ]+\.[^ .]+/.test(r)) return null;
-        let i = j("@", e, t.users, "mention");
-        if (i || (i = j("@", e, t.mentionableRoles, "roleMention"))) return i;
-        if (!(i = j("@", e, t.users.map(e => k(x({}, e), {
+        let i = k("@", e, t.users, "mention");
+        if (i || (i = k("@", e, t.mentionableRoles, "roleMention"))) return i;
+        if (!(i = k("@", e, t.users.map(e => M(L({}, e), {
             text: e.text.split("#")[0]
           })), "mention"))) return null;
         let a = z.exec(e);
@@ -217,7 +217,7 @@ let V = Chunk428595.Z.RULES,
       })
     },
     emoji: {
-      order: V.emoji.order,
+      order: Z.emoji.order,
       match: e => c.ZP.EMOJI_NAME_RE.exec(e),
       parse(e, t, n) {
         let [r, i] = e, {
@@ -256,15 +256,15 @@ let V = Chunk428595.Z.RULES,
         }
       }
     },
-    text: k(x({}, F), {
-      match: (e, t) => "string" == typeof t.textExclusions && "" !== t.textExclusions ? (0, f.T9)(t.textExclusions).exec(e) : null != F.match ? F.match(e, t, "") : null
+    text: M(L({}, V), {
+      match: (e, t) => "string" == typeof t.textExclusions && "" !== t.textExclusions ? (0, f.T9)(t.textExclusions).exec(e) : null != V.match ? V.match(e, t, "") : null
     })
   },
   X = {
-    inlineCode: G(V.inlineCode),
-    codeBlock: G(V.codeBlock),
+    inlineCode: G(Z.inlineCode),
+    codeBlock: G(Z.codeBlock),
     mention: {
-      match: o().anyScopeRegex(Z),
+      match: o().anyScopeRegex(F),
       parse(e, t, n) {
         let {
           isNotification: r,
@@ -378,10 +378,10 @@ let V = Chunk428595.Z.RULES,
         content: "<id:".concat(e[1], ">")
       })
     },
-    timestamp: k(x({}, V.timestamp), {
+    timestamp: M(L({}, Z.timestamp), {
       parse() {
         for (var e = arguments.length, t = Array(module), n = 0; require < module; require++) exports[require] = arguments[require];
-        let r = V.timestamp.parse(...exports);
+        let r = Z.timestamp.parse(...exports);
         return "text" === Chunk392711.type ? {
           content: Chunk392711.content
         } : {
@@ -389,7 +389,7 @@ let V = Chunk428595.Z.RULES,
         }
       }
     }),
-    text: x({}, F)
+    text: L({}, V)
   };
 [q, X].forEach(e => {
   Object.keys(e).forEach((t, n) => {
@@ -482,7 +482,7 @@ function en(e) {
         text: n
       }
     }),
-    u = null != n ? i()(N.k1).filter(e => e !== b.sH).flatMap(e => b.ZP.getChannels(n)[e].map(e => ({
+    u = null != n ? i()(C.k1).filter(e => e !== b.sH).flatMap(e => b.ZP.getChannels(n)[e].map(e => ({
       id: e.channel.id,
       text: e.channel.name
     }))).value() : [],
@@ -522,7 +522,7 @@ let ei = {
         validNonShortcutEmojis: []
       };
     return i.content = et(i.content, r, (t, n) => {
-      C.ZP.isEmojiPremiumLocked({
+      N.ZP.isEmojiPremiumLocked({
         emoji: t,
         channel: e,
         intention: w.Hz.CHAT

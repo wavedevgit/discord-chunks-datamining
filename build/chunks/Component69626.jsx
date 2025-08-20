@@ -61,13 +61,13 @@ function A(e, t) {
   return n
 }
 
-function N(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function C(e, t, n, i, a) {
+function N(e, t, n, i, a) {
   if (null == e) return;
   let d = () => {
     let r = p.Z.getChannel(e);
@@ -103,7 +103,7 @@ function C(e, t, n, i, a) {
       })
     }
   };
-  "" !== h.Z.getDraft(e, h.d.ChannelMessage) ? (0, s.h7j)(t => (0, r.jsx)(s.ConfirmModal, N(S({
+  "" !== h.Z.getDraft(e, h.d.ChannelMessage) ? (0, s.h7j)(t => (0, r.jsx)(s.ConfirmModal, C(S({
     header: v.intl.string(v.t.pe26Cg),
     confirmText: v.intl.string(v.t.VkKicX),
     cancelText: v.intl.string(v.t["ETE/oK"]),
@@ -151,7 +151,7 @@ function R(e) {
     let t = (null == I ? true : I.applicationId) === y.bi.BUILT_IN;
     return !!e || !!t || !!E
   }, [l, I, h, E, n.commandName, T]), A = i.useCallback(e => {
-    null == e || e.stopPropagation(), null != l && null != n.commandName && null != n.commandKey && C(l.id, n.commandName, n.commandKey, u.Vh.MENTION)
+    null == e || e.stopPropagation(), null != l && null != n.commandName && null != n.commandKey && N(l.id, n.commandName, n.commandKey, u.Vh.MENTION)
   }, [l, n.commandKey, n.commandName]);
   return S ? (0, r.jsxs)(d.Z, {
     role: "link",
@@ -170,7 +170,7 @@ function P(e) {
     applicationId: l,
     onClick: c
   } = e, d = (0, a.e7)([g.Z], () => g.Z.getChannelId()), f = e => {
-    null == e || e.stopPropagation(), C(d, n, t, u.Vh.POPULAR_COMMANDS, l), null == c || c(t)
+    null == e || e.stopPropagation(), N(d, n, t, u.Vh.POPULAR_COMMANDS, l), null == c || c(t)
   };
   return (0, r.jsx)(s.ua7, {
     text: i,

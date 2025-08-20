@@ -121,7 +121,7 @@ let O = function(e) {
       return u.test(e) ? T(e.slice(4).toLowerCase()) : e
     })
   },
-  N = function(e) {
+  C = function(e) {
     return b(e, function(e) {
       return d.test(e) ? "xn--" + S(e) : e
     })
@@ -134,6 +134,6 @@ module.exports = {
   },
   decode: T,
   encode: S,
-  toASCII: N,
+  toASCII: C,
   toUnicode: A
 }

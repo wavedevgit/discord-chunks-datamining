@@ -1,5 +1,6 @@
-/** Chunk was on 26434 **/
-/** chunk id: 479110, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 479110, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   Z: () => c
 });
@@ -15,13 +16,13 @@ function c(e) {
     message: t,
     channel: n,
     compact: c
-  } = e, u = (0, i.e7)([o.default], () => o.default.getCurrentUser()), d = (0, l.ZP)(t), p = (null == u ? true : u.id) === t.author.id ? s.intl.string(s.t.huMLgY) : s.intl.format(s.t.PVAL4O, {
+  } = e, u = (0, i.e7)([o.default], () => o.default.getCurrentUser()), d = (0, a.ZP)(t), f = (null == u ? true : u.id) === t.author.id ? l.intl.string(l.t.huMLgY) : l.intl.format(l.t.PVAL4O, {
     username: null == d ? true : d.nick
   });
-  return (0, r.jsx)(a.Z, {
+  return (0, r.jsx)(s.Z, {
     channel: n,
     message: t,
     compact: c,
-    content: p
+    content: f
   })
 }

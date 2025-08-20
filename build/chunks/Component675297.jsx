@@ -1,7 +1,8 @@
-/** Chunk was on 26434 **/
-/** chunk id: 675297, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 675297, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  H: () => C
+  H: () => O
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -21,79 +22,83 @@ var Chunk399606 = require("./399606.js"),
   Chunk964793 = require("./964793.jsx"),
   Chunk226060 = require("./226060.jsx"),
   Chunk981631 = require("./981631.js");
+let y = 600;
 
-function C(e) {
+function O(e) {
   let {
     guildProductListing: t,
     guildId: n,
-    location: C,
+    location: O,
     shouldShowFullDescriptionButton: v = true,
-    hideRoleTag: O = false,
-    lineClamp: y = 1,
-    cardWidth: x,
-    cardHeight: j,
-    thumbnailHeight: I,
-    descriptionTextVariant: S = "text-sm/normal",
-    showOpaqueBackground: T = false
-  } = e, P = (0, i.e7)([c.Z], () => c.Z.getGuild(n), [n]), N = (0, i.e7)([s.Z], () => {
+    hideRoleTag: I = false,
+    lineClamp: T = 1,
+    cardWidth: S,
+    cardHeight: A,
+    thumbnailHeight: C,
+    descriptionTextVariant: N = "text-sm/normal",
+    showOpaqueBackground: R = false
+  } = e, P = (0, i.e7)([c.Z], () => c.Z.getGuild(n), [n]), w = (0, i.e7)([l.Z], () => {
     var e;
-    return s.Z.getRole(n, null != (e = null == t ? true : t.role_id) ? e : E.lds)
-  }), A = (0, l.U)(t, 600), w = (0, g.C)(t), Z = (0, d.SO)(P), {
-    shouldHideGuildPurchaseEntryPoints: R
-  } = (0, a.uP)(n), D = (0, g.k)(t);
-  if (null == P || R) return null;
-  let L = () => (0, h.e)({
+    return l.Z.getRole(n, null != (e = null == t ? true : t.role_id) ? e : b.lds)
+  }), D = (0, a.U)(t, y), x = (0, h.C)(t), L = (0, d.SO)(P), {
+    shouldHideGuildPurchaseEntryPoints: j
+  } = (0, s.uP)(n), M = (0, h.k)(t);
+  if (null == P || j) return null;
+  let k = () => (0, g.e)({
       guildId: n,
       guildProductListingId: t.id,
-      analyticsLocation: C
+      analyticsLocation: O
     }),
-    M = (0, r.jsx)(_.m, {
+    U = () => {
+      _.h(P.id, t.id)
+    },
+    G = () => {
+      (0, o.x)({
+        listing: t
+      })
+    },
+    B = () => {
+      (0, u.JG)((0, f.ar)(n, t.id))
+    },
+    Z = (0, r.jsx)(m.m, {
       product: t,
       guildId: n,
-      showEditProduct: Z,
+      showEditProduct: L,
       showUnpublishProduct: false,
       showCopyLink: true,
       showTestDownload: false,
       showDeleteProduct: false,
       showReportProduct: true,
-      onEditProduct: Z ? () => {
-        m.h(P.id, t.id)
-      } : () => {},
+      onEditProduct: L ? U : () => {},
       onUnpublishProduct: () => {},
       onDeleteProduct: () => {},
-      onReportProduct: () => {
-        (0, o.x)({
-          listing: t
-        })
-      },
-      onCopyProductLink: () => {
-        (0, u.JG)((0, p.ar)(n, t.id))
-      },
+      onReportProduct: G,
+      onCopyProductLink: B,
       onTestDownload: () => {}
     });
-  return (0, r.jsx)(f.Z, {
-    imageUrl: A,
+  return (0, r.jsx)(p.Z, {
+    imageUrl: D,
     name: t.name,
     description: t.description,
-    formattedPrice: D,
-    role: N,
-    ctaComponent: (0, r.jsx)(b.Z, {
+    formattedPrice: M,
+    role: w,
+    ctaComponent: (0, r.jsx)(E.Z, {
       guildId: n,
       guildProductListingId: t.id,
-      sourceAnalyticsLocations: C
+      sourceAnalyticsLocations: O
     }),
-    productType: w,
+    productType: x,
     shouldShowFullDescriptionButton: v,
-    onShowFullDescription: L,
-    onTapCard: L,
-    actionMenu: M,
-    showOpaqueBackground: T,
-    hideRoleTag: O,
-    lineClamp: y,
-    cardWidth: x,
-    cardHeight: j,
-    thumbnailHeight: I,
-    descriptionTextVariant: S,
+    onShowFullDescription: k,
+    onTapCard: k,
+    actionMenu: Z,
+    showOpaqueBackground: R,
+    hideRoleTag: I,
+    lineClamp: T,
+    cardWidth: S,
+    cardHeight: A,
+    thumbnailHeight: C,
+    descriptionTextVariant: N,
     isDraft: !t.published
   }, t.id)
 }

@@ -1,12 +1,13 @@
-/** Chunk was on 66181 **/
-/** chunk id: 726763, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 726763, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => b
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk780384 = require("./780384.js"),
   Chunk481060 = require("./481060.js"),
@@ -19,29 +20,29 @@ var Chunk120356 = require("./120356.js"),
 let Chunk651714 = require("./651714.js"),
   Chunk297166 = require("./297166.js");
 
-function b(e) {
+function g(e) {
   let {
     refreshStyles: t = false
-  } = e, n = (0, a.e7)([u.Z], () => u.Z.theme);
-  return (0, i.jsx)(d.F, {
-    setting: m.s6.VOICE_AND_VIDEO_ADVANCED_CODECS_AUDIO,
-    children: (0, i.jsx)(o.hjN, {
-      className: s()({
-        [g.marginBottom20]: !t
+  } = e, n = (0, o.e7)([d.Z], () => d.Z.theme);
+  return (0, r.jsx)(u.F, {
+    setting: f.s6.VOICE_AND_VIDEO_ADVANCED_CODECS_AUDIO,
+    children: (0, r.jsx)(l.hjN, {
+      className: a()({
+        [p.marginBottom20]: !t
       }),
-      title: p.intl.string(p.t.DSGme3),
-      children: (0, i.jsx)(o.ToO, {
-        className: s()({
-          [g.marginBottom20]: !t
+      title: _.intl.string(_.t.DSGme3),
+      children: (0, r.jsx)(l.ToO, {
+        className: a()({
+          [p.marginBottom20]: !t
         }),
-        type: o.Dd5.PRIMARY,
+        type: l.Dd5.PRIMARY,
         imageData: {
-          src: (0, l.ap)(n) ? h : f,
+          src: (0, s.ap)(n) ? h : m,
           width: 70,
           height: 40
         },
         align: c.Z.Align.CENTER,
-        body: p.intl.string(p.t["2nDAzM"])
+        body: _.intl.string(_.t["2nDAzM"])
       })
     })
   })

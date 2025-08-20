@@ -1,4 +1,4 @@
-/** Chunk was on 89006 **/
+/** Chunk was on 53488 **/
 /** chunk id: 807582, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk158638 = require("./158638.js"),
   Chunk267642 = require("./267642.js"),
@@ -14,18 +14,18 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk552461 = require("./552461.js");
 let f = e => {
-  let t, n, o, {
+  let t, n, i, {
       guildFeature: f,
-      guild: u,
-      className: p,
+      guild: p,
+      className: u,
       hideTooltip: m = false,
       tooltipPosition: b = "left",
-      onClick: v
+      onClick: g
     } = e,
-    g = u.features.has(f),
-    h = (0, l.AR)(u.id, "GuildSettingsBoostPerks"),
-    y = (0, c._p)(f);
-  return !g && f === s.oNc.VANITY_URL && h ? null : (g ? (null != y && (o = d.intl.string(d.t.hUgjyM)), t = (0, r.jsxs)(r.Fragment, {
+    v = p.features.has(f),
+    h = (0, c.AR)(p.id, "GuildSettingsBoostPerks"),
+    y = (0, l._p)(f);
+  return !v && f === s.oNc.VANITY_URL && h ? null : (v ? (null != y && (i = d.intl.string(d.t.hUgjyM)), t = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(a.$Eu, {
       color: a.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK,
       className: _.unlockedIcon
@@ -34,23 +34,23 @@ let f = e => {
       className: _.description,
       children: d.intl.string(d.t["0O+87u"])
     })]
-  })) : (null != y && (o = d.intl.string(d.t.L2wYYm)), t = (0, r.jsxs)(r.Fragment, {
+  })) : (null != y && (i = d.intl.string(d.t.L2wYYm)), t = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(a.$Eu, {
       color: "currentColor",
       className: _.icon
     }), (0, r.jsx)(a.X6q, {
       variant: "eyebrow",
       className: _.description,
-      children: null != y && (0, c.e9)(y)
+      children: null != y && (0, l.e9)(y)
     })]
-  })), n = m || null == o ? (0, r.jsx)("div", {
-    className: i()(_.availabilityIndicator, p),
+  })), n = m || null == i ? (0, r.jsx)("div", {
+    className: o()(_.availabilityIndicator, u),
     children: t
   }) : (0, r.jsx)(a.ua7, {
     position: b,
-    text: o,
+    text: i,
     children: e => {
-      var n, o;
+      var n, i;
       return (0, r.jsx)("div", (n = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -68,22 +68,22 @@ let f = e => {
           })
         }
         return e
-      }({}, e), o = o = {
-        className: i()(_.availabilityIndicator, p),
+      }({}, e), i = i = {
+        className: o()(_.availabilityIndicator, u),
         children: t
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e);
           n.push.apply(n, r)
         }
         return n
-      })(Object(o)).forEach(function(e) {
-        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(o, e))
+      })(Object(i)).forEach(function(e) {
+        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
       }), n))
     }
-  }), null == v || g) ? n : (0, r.jsx)(a.P3F, {
-    onClick: v,
+  }), null == g || v) ? n : (0, r.jsx)(a.P3F, {
+    onClick: g,
     className: _.clickable,
     children: n
   })

@@ -1,7 +1,7 @@
 /** Chunk was on 33397 **/
 /** chunk id: 802063, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  i: () => s
+  i: () => a
 });
 var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
@@ -9,31 +9,31 @@ var Chunk647438 = require("./647438.js"),
   Chunk959457 = require("./959457.js"),
   Chunk630759 = require("./630759.js");
 
-function s(e) {
+function a(e) {
   let {
     channelId: t,
     userId: r,
-    nickname: s,
-    onAlertOpen: c
-  } = e, o = function(e) {
+    nickname: a,
+    onAlertOpen: o
+  } = e, s = function(e) {
     let {
       userId: t
     } = e;
-    return (0, l.e7)([u.Z, i.Z], () => (0, a.UB)(t, [u.Z, i.Z]))
+    return (0, l.e7)([u.Z, i.Z], () => (0, c.UB)(t, [u.Z, i.Z]))
   }({
     userId: r
   }), f = n.useRef(null);
   n.useEffect(() => {
-    o && null == f.current ? f.current = setTimeout(() => {
-      c(), (0, a.lg)({
+    s && null == f.current ? f.current = setTimeout(() => {
+      o(), (0, c.lg)({
         userId: r,
         channelId: t,
-        nickname: s
+        nickname: a
       })
     }, 1e3) : (clearTimeout(f.current), f.current = null);
     let e = f.current;
     return () => {
       clearTimeout(e)
     }
-  }, [t, o, s, c, r])
+  }, [t, s, a, o, r])
 }

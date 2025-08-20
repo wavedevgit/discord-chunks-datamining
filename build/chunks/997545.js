@@ -2,7 +2,7 @@
 /** chunk id: 997545, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => L
+  Z: () => x
 }), require("./388685.js"), require("./415506.js"), require("./49124.js"), require("./642613.js"), require("./35282.js"), require("./539854.js");
 var Chunk595182 = require("./595182.js"),
   i = require.n(Chunk595182),
@@ -63,8 +63,8 @@ function A(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let N = 50,
-  C = .9,
+let C = 50,
+  N = .9,
   R = .1,
   P = 0;
 
@@ -75,13 +75,13 @@ function w(e) {
 function D(e) {
   return null != e && 0 !== e ? e + 1 : 0
 }
-class L extends Chunk839548.Z {
+class x extends Chunk839548.Z {
   static create(e, t, n) {
-    let r = new L(e, t, true);
+    let r = new x(e, t, true);
     return r.initialize(n), r
   }
   static createReplay(e, t) {
-    let n = new L(e, "0", true),
+    let n = new x(e, "0", true),
       r = (0, b.zS)();
     n.initializeStreamParameters([{
       type: O.Tr.VIDEO,
@@ -865,7 +865,7 @@ class L extends Chunk839548.Z {
           var n, r, a, o;
           let s = this.videoStreamParameters.find(e => e.ssrc === t);
           if (true !== s && (null != (n = s.quality) ? n : 0) < 100 && "video" === s.type) {
-            let n = Math.floor(e.bitrate * C);
+            let n = Math.floor(e.bitrate * N);
             n = i()(n, null != (r = s.minBitrate) ? r : 0, null != (a = s.maxBitrate) ? a : n);
             let l = null != (o = s.targetBitrate) ? o : 0;
             (Math.abs(n - l) / ((n + l) / 2) > R || true === s.targetBitrate) && (this.logger.info("Updating target bitrate for SSRC ".concat(t, " from ").concat(s.targetBitrate, " to ").concat(n)), this.videoQualityManager.setGoLiveSimulcastLQTargetBitrate(n), this.updateVideoQuality())
@@ -938,11 +938,11 @@ class L extends Chunk839548.Z {
           if (null != o && null != s && null != o.framesCaptured && null != s.framesCaptured) {
             let e = o.framesCaptured - s.framesCaptured,
               t = null != o.noiseCancellerFrames ? null != s.noiseCancellerFrames ? o.noiseCancellerFrames - s.noiseCancellerFrames : 0 : e;
-            if (this.noiseCancellation && t > N && null != o.noiseCancellerProcessTime && null != s.noiseCancellerProcessTime) {
+            if (this.noiseCancellation && t > C && null != o.noiseCancellerProcessTime && null != s.noiseCancellerProcessTime) {
               let e = o.noiseCancellerProcessTime - s.noiseCancellerProcessTime;
               e / t > 8 ? this.emit(m.Sh.NoiseCancellationError, v.H3.CPU_OVERUSE) : 0 === e && this.emit(m.Sh.NoiseCancellationError, v.H3.FAILED)
             }
-            this.inputMode === v.pM.VOICE_ACTIVITY && this.vadAutoThreshold && this.vadUseKrisp && e > N && null != o.voiceActivityDetectorProcessTime && null != s.voiceActivityDetectorProcessTime && (o.voiceActivityDetectorProcessTime - s.voiceActivityDetectorProcessTime) / e > 4 && this.emit(m.Sh.VoiceActivityDetectorError, v.H3.VAD_CPU_OVERUSE)
+            this.inputMode === v.pM.VOICE_ACTIVITY && this.vadAutoThreshold && this.vadUseKrisp && e > C && null != o.voiceActivityDetectorProcessTime && null != s.voiceActivityDetectorProcessTime && (o.voiceActivityDetectorProcessTime - s.voiceActivityDetectorProcessTime) / e > 4 && this.emit(m.Sh.VoiceActivityDetectorError, v.H3.VAD_CPU_OVERUSE)
           }
         }
         this.stats = e

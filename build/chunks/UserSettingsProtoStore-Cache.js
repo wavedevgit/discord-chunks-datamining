@@ -2,7 +2,7 @@
 /** chunk id: 581883, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => L
+  Z: () => x
 });
 var r, Chunk512722 = require("./512722.js"),
   a = require.n(Chunk512722),
@@ -94,14 +94,14 @@ function A(e) {
   null != e.editInfo.timeout && clearTimeout(e.editInfo.timeout), e.editInfo = (0, h.JC)()
 }
 
-function N(e) {
+function C(e) {
   let {
     userSettingsProto: t
   } = e;
   E.proto = (0, p.ac)(t), a()("string" != typeof E.proto, "UserSettingsProto cannot be a string")
 }
 
-function C(e) {
+function N(e) {
   let {
     settings: {
       proto: t,
@@ -215,14 +215,14 @@ class D extends(r = Chunk442837.ZP.PersistedStore) {
   }
 }
 m(D, "displayName", "UserSettingsProtoStore"), m(D, "persistKey", "UserSettingsProtoStore-Cache");
-let L = new D(Chunk570140.Z, {
+let x = new D(Chunk570140.Z, {
   CACHE_LOADED: P,
-  USER_SETTINGS_PROTO_UPDATE: C,
-  USER_SETTINGS_PROTO_ENQUEUE_UPDATE: C,
+  USER_SETTINGS_PROTO_UPDATE: N,
+  USER_SETTINGS_PROTO_ENQUEUE_UPDATE: N,
   USER_SETTINGS_PROTO_UPDATE_EDIT_INFO: R,
   CONNECTION_OPEN: v,
   CONNECTION_CLOSED: I,
   CONNECTION_RESUMED: I,
-  OVERLAY_INITIALIZE: N,
+  OVERLAY_INITIALIZE: C,
   LOGOUT: T
 })

@@ -1,5 +1,5 @@
 /** Chunk was on 18831 **/
-/** chunk id: 41164, original params: e,t,n (module,exports,require) **/
+/** chunk id: 41164, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
   default: () => m
 });
@@ -17,38 +17,38 @@ var Chunk481060 = require("./481060.js"),
 let m = e => {
   let {
     transitionState: t,
-    onClose: n,
+    onClose: i,
     classificationId: m,
-    source: f
-  } = e, h = (0, r.Z)(), g = () => {
-    n(), l.Z.open(s.oAB.ACCOUNT, c.s6.PRIVACY_AND_SAFETY_STANDING)
+    source: p
+  } = e, h = (0, o.Z)(), g = () => {
+    i(), l.Z.open(r.oAB.ACCOUNT, c.s6.PRIVACY_AND_SAFETY_STANDING)
   };
-  return (0, i.jsxs)(a.Y0X, {
+  return (0, n.jsxs)(a.Y0X, {
     className: u.modalRoot,
     transitionState: t,
     parentComponent: "ClassificationDetailModal",
-    children: [(0, i.jsxs)("div", {
+    children: [(0, n.jsxs)("div", {
       className: u.modalHeader,
-      children: [(0, i.jsx)("img", {
+      children: [(0, n.jsx)("img", {
         className: u.image,
-        src: p,
+        src: f,
         alt: ""
-      }), (0, i.jsx)(a.olH, {
+      }), (0, n.jsx)(a.olH, {
         className: u.modalClose,
-        onClick: n
+        onClick: i
       })]
-    }), (0, i.jsx)(a.hzk, {
+    }), (0, n.jsx)(a.hzk, {
       className: u.modalContent,
-      children: h ? (0, i.jsx)(a.$jN, {}) : (0, i.jsx)(o.Z, {
+      children: h ? (0, n.jsx)(a.$jN, {}) : (0, n.jsx)(s.Z, {
         classificationId: m,
-        source: f,
+        source: p,
         onError: g,
         onClose: g
       })
-    }), (0, i.jsx)(a.mzw, {
-      children: (0, i.jsx)("div", {
+    }), (0, n.jsx)(a.mzw, {
+      children: (0, n.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
-        children: (0, i.jsx)(a.zxk, {
+        children: (0, n.jsx)(a.zxk, {
           variant: "primary",
           text: d.intl.string(d.t.elrEjI),
           type: "button",

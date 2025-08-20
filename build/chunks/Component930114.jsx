@@ -1,5 +1,6 @@
-/** Chunk was on 26434 **/
-/** chunk id: 930114, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 930114, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   V: () => p
 });
@@ -14,51 +15,56 @@ var Chunk481060 = require("./481060.js"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js");
 
+function f(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function _(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      f(e, t, n[t])
+    })
+  }
+  return e
+}
+
 function p(e) {
   let {
     processedCode: t,
-    channelContext: p,
-    customGiftMessage: m,
-    giftInfo: f
-  } = e, g = false, _ = null, h = l.default.getCurrentUser(), b = (0, s.yd)(null == h ? true : h.premiumType, u.p9.TIER_0);
+    channelContext: f,
+    customGiftMessage: p,
+    giftInfo: h
+  } = e, m = false, g = null, E = a.default.getCurrentUser(), b = (0, l.yd)(null == E ? true : E.premiumType, u.p9.TIER_0);
   (0, i.ZDy)(async () => {
     let {
       default: e
     } = await Promise.all([n.e("92446"), n.e("50981")]).then(n.bind(n, 409858));
     return n => {
-      var i, l;
-      return (0, r.jsx)(e, function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-              value: r,
-              enumerable: true,
-              configurable: true,
-              writable: true
-            }) : e[t] = r
-          })
-        }
-        return e
-      }({
+      var i, a;
+      return (0, r.jsx)(e, _({
         code: t,
-        channelContext: p,
-        customGiftMessage: m,
-        emojiName: null == f || null == (i = f.emoji) ? true : i.name,
-        soundId: null == f || null == (l = f.sound) ? true : l.id,
+        channelContext: f,
+        customGiftMessage: p,
+        emojiName: null == h || null == (i = h.emoji) ? true : i.name,
+        soundId: null == h || null == (a = h.sound) ? true : a.id,
         onComplete: (e, t) => {
-          _ = e, t && (g = t, e.isSubscription && null == o.Z.getPremiumSubscription(false) && (0, c.H)(true))
+          g = e, t && (m = t, e.isSubscription && null == o.Z.getPremiumSubscription(false) && (0, c.H)(true))
         }
       }, n))
     }
   }, {
     onCloseCallback: () => {
       var e;
-      g && null != _ && !b && _.isSubscription && (null == _ || null == (e = _.subscriptionPlan) ? true : e.premiumSubscriptionType) === u.p9.TIER_2 && a.S.dispatch(d.CkL.PREMIUM_SUBSCRIPTION_CREATED)
+      m && null != g && !b && g.isSubscription && (null == g || null == (e = g.subscriptionPlan) ? true : e.premiumSubscriptionType) === u.p9.TIER_2 && s.S.dispatch(d.CkL.PREMIUM_SUBSCRIPTION_CREATED)
     }
   })
 }

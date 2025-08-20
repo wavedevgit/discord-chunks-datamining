@@ -1,7 +1,7 @@
 /** Chunk was on 93626 **/
 /** chunk id: 136735, original params: e,t,l (module,exports,require) **/
 require.d(exports, {
-  default: () => U
+  default: () => L
 }), require("./388685.js"), require("./953529.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -34,19 +34,19 @@ var Chunk951288 = require("./951288.js"),
   Chunk491202 = require("./491202.js"),
   Chunk434227 = require("./434227.js"),
   Chunk600126 = require("./600126.js");
-let T = new Set(["application/json", "image/png", "image/apng", "image/gif", "image/jpeg", "image/jpg"]),
-  _ = [{
+let _ = new Set(["application/json", "image/png", "image/apng", "image/gif", "image/jpeg", "image/jpg"]),
+  T = [{
     name: "Sticker file",
     extensions: ["json", "png", "apng", "gif", "jpeg", "jpg"]
   }];
 
-function z(e, t) {
-  b.default.track(P.rMx.STICKER_UPLOAD_COMPLETED, {
+function A(e, t) {
+  h.default.track(P.rMx.STICKER_UPLOAD_COMPLETED, {
     successful: e,
     error: null != t ? t : ""
   })
 }
-let A = e => {
+let z = e => {
   let {
     stickerPreview: t
   } = e;
@@ -75,21 +75,21 @@ async function B(e) {
   return (0, I.Bo)(n, e.name, "image/png")
 }
 
-function U(e) {
-  var t, l, s, o, Z, R, U, L;
+function L(e) {
+  var t, l, s, o, Z, R, L, U;
   let {
     transitionState: K,
     onClose: M,
     guildId: F,
     sticker: W
-  } = e, Y = (0, u.e7)([p.ZP], () => (null == W ? true : W.tags) != null ? p.ZP.getCustomEmojiById(W.tags) : null), q = null != (l = null == (t = h.default.getCurrentUser()) ? true : t.isStaff()) && l ? C.OC : C.Ht, [G, J] = i.useState(null), [V, X] = i.useState(null != (s = null == W ? true : W.name) ? s : ""), [H, Q] = i.useState({
+  } = e, Y = (0, u.e7)([p.ZP], () => (null == W ? true : W.tags) != null ? p.ZP.getCustomEmojiById(W.tags) : null), q = null != (l = null == (t = x.default.getCurrentUser()) ? true : t.isStaff()) && l ? C.OC : C.Ht, [G, J] = i.useState(null), [V, X] = i.useState(null != (s = null == W ? true : W.name) ? s : ""), [H, Q] = i.useState({
     file: null,
-    filename: null != (o = (0, S._V)(W)) ? o : ""
-  }), [$, ee] = i.useState(null == Y ? true : Y.id), [et, el] = i.useState(null != (Z = null == Y ? true : Y.name) ? Z : null == W ? true : W.tags), [en, ei] = i.useState(null != (R = null == W ? true : W.description) ? R : ""), [es, er] = i.useState(false), [ea, eo] = i.useState(null), eu = (0, u.e7)([x.Z], () => x.Z.getGuild(F)), ec = (null == eu ? true : eu.features.has(P.oNc.PARTNERED)) || (null == eu ? true : eu.features.has(P.oNc.VERIFIED)), ed = null != W, em = ed || (null == H ? true : H.file) != null, ef = 0 === en.length || en.length >= 2 && en.length <= 100, eg = !es && (null == ea ? true : ea.isBlocking) !== true && V.length >= 2 && (null != $ || null != et || (null == W ? true : W.tags) != null && (null == W ? true : W.tags) !== "") && em && ef, ep = async e => {
+    filename: null != (o = (0, O._V)(W)) ? o : ""
+  }), [$, ee] = i.useState(null == Y ? true : Y.id), [et, el] = i.useState(null != (Z = null == Y ? true : Y.name) ? Z : null == W ? true : W.tags), [en, ei] = i.useState(null != (R = null == W ? true : W.description) ? R : ""), [es, er] = i.useState(false), [ea, eo] = i.useState(null), eu = (0, u.e7)([b.Z], () => b.Z.getGuild(F)), ec = (null == eu ? true : eu.features.has(P.oNc.PARTNERED)) || (null == eu ? true : eu.features.has(P.oNc.VERIFIED)), ed = null != W, em = ed || (null == H ? true : H.file) != null, ef = 0 === en.length || en.length >= 2 && en.length <= 100, eg = !es && (null == ea ? true : ea.isBlocking) !== true && V.length >= 2 && (null != $ || null != et || (null == W ? true : W.tags) != null && (null == W ? true : W.tags) !== "") && em && ef, ep = async e => {
     var t;
     if (null == e) return;
     let l = null == (t = e.type) ? true : t.split(";")[0];
-    if (!T.has(l)) return void eo({
+    if (!_.has(l)) return void eo({
       message: D.intl.string(D.t.B2hGAA),
       isBlocking: true
     });
@@ -97,7 +97,7 @@ function U(e) {
     if ("image/jpeg" === l || "image/jpg" === l) n = await B(e);
     else if ("image/png" === l && e.size > q && !await (0, I.c0)(e)) {
       let t = (n = await B(e)).size > q;
-      b.default.track(P.rMx.STICKER_FILE_RESIZED, {
+      h.default.track(P.rMx.STICKER_FILE_RESIZED, {
         original_file_size_bytes: e.size,
         resized_file_size_bytes: n.size,
         resized_file_too_big: t
@@ -111,14 +111,14 @@ function U(e) {
           })
         }),
         isBlocking: null == H.file
-      }), b.default.track(P.rMx.STICKER_UPLOAD_FILE_SIZE_LIMIT_EXCEEDED, {
+      }), h.default.track(P.rMx.STICKER_UPLOAD_FILE_SIZE_LIMIT_EXCEEDED, {
         size: n.size,
         filetype: n.type
       });
       return
     }
-    let i = (0, S.Zv)(n.type);
-    if (i === O.u3.LOTTIE) {
+    let i = (0, O.Zv)(n.type);
+    if (i === N.u3.LOTTIE) {
       if (!ec) return void eo({
         message: D.intl.format(D.t.RNNjy8, {
           articleURL: E.Z.getArticleURL(P.BhN.STICKERS_UPLOAD)
@@ -150,27 +150,27 @@ function U(e) {
     e.preventDefault();
     let a = null != (l = null != (t = null != $ ? $ : et) ? t : null == W ? true : W.tags) ? l : "";
     try {
-      if (er(true), ed) await (0, N.Jf)(F, null != (n = null == W ? true : W.id) ? n : "", {
+      if (er(true), ed) await (0, w.Jf)(F, null != (n = null == W ? true : W.id) ? n : "", {
         name: V,
         tags: a,
         description: en
       });
       else {
         let e = new FormData;
-        e.append("name", V), e.append("tags", a), e.append("description", en), (null == H ? true : H.file) != null && e.append("file", H.file), r = null != (s = null == (i = H.file) ? true : i.type) ? s : "", b.default.track(P.rMx.STICKER_UPLOAD_STARTED, {
+        e.append("name", V), e.append("tags", a), e.append("description", en), (null == H ? true : H.file) != null && e.append("file", H.file), r = null != (s = null == (i = H.file) ? true : i.type) ? s : "", h.default.track(P.rMx.STICKER_UPLOAD_STARTED, {
           filetype: r
-        }), await (0, N.lY)({
+        }), await (0, w.lY)({
           guildId: F,
           body: e,
           platform: "web"
-        }), z(true), (0, g.showToast)((0, g.createToast)(D.intl.string(D.t.QR85gY), g.ToastType.SUCCESS))
+        }), A(true), (0, g.showToast)((0, g.createToast)(D.intl.string(D.t.QR85gY), g.ToastType.SUCCESS))
       }
       M()
     } catch (e) {
       eo({
         message: e.body.message,
         isBlocking: false
-      }), z(false, e.body.message)
+      }), A(false, e.body.message)
     } finally {
       er(false)
     }
@@ -180,7 +180,7 @@ function U(e) {
       previewData: l,
       onStickerError: i
     } = e;
-    if (null != t) return (0, n.jsx)(w.Z, {
+    if (null != t) return (0, n.jsx)(S.Z, {
       size: 160,
       sticker: t
     });
@@ -190,7 +190,7 @@ function U(e) {
       formatType: r,
       content: a
     } = l;
-    return (0, n.jsx)(w.Z, {
+    return (0, n.jsx)(S.Z, {
       assetData: a,
       fileUri: a,
       size: 160,
@@ -212,7 +212,7 @@ function U(e) {
         isBlocking: true
       })
     }, [])
-  }), ex = ec ? D.t.alYXBA : D.t.kpcMfn;
+  }), eb = ec ? D.t.alYXBA : D.t.kpcMfn;
   return (0, n.jsx)("form", {
     onSubmit: ej,
     className: k.form,
@@ -222,7 +222,7 @@ function U(e) {
       size: "lg",
       children: [(0, n.jsx)(f.x, {
         title: D.intl.string(D.t.yxVsBA),
-        subtitle: D.intl.format(ex, {
+        subtitle: D.intl.format(eb, {
           fileSize: (0, y.IC)(C.Ht, {
             useKibibytes: true
           })
@@ -231,7 +231,7 @@ function U(e) {
         children: [(0, n.jsx)(g.hjN, {
           title: D.intl.string(D.t.gjdiKC),
           className: k.formItem,
-          children: (0, n.jsx)(A, {
+          children: (0, n.jsx)(z, {
             stickerPreview: ev
           })
         }), (0, n.jsxs)(g.hjN, {
@@ -242,11 +242,11 @@ function U(e) {
             className: k.formItemRowChild,
             children: ed ? (0, n.jsx)(g.oil, {
               disabled: true,
-              value: null != (U = null == H ? true : H.filename) ? U : ""
+              value: null != (L = null == H ? true : H.filename) ? L : ""
             }) : (0, n.jsx)(v.Z, {
               buttonText: D.intl.string(D.t.xEnDUV),
-              filters: _,
-              filename: null != (L = null == H ? true : H.filename) ? L : "",
+              filters: T,
+              filename: null != (U = null == H ? true : H.filename) ? U : "",
               placeholder: D.intl.string(D.t.rUYLJy),
               onFileSelect: ep
             })

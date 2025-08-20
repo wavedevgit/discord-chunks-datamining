@@ -1,4 +1,4 @@
-/** Chunk was on 36499 **/
+/** Chunk was on 5665 **/
 /** chunk id: 915718, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => k
@@ -193,10 +193,10 @@ function k(e) {
   })), y = n.getRecipientId(), {
     notFriend: _,
     isBlocked: v
-  } = (0, l.cj)([j.Z], () => ({
-    notFriend: n.type === Z.d4z.DM && null != y && !j.Z.isFriend(y),
-    isBlocked: n.type === Z.d4z.DM && null != y && j.Z.isBlocked(y)
-  })), S = (0, l.e7)([O.default], () => O.default.getUser(y)), P = (0, u.bp)(), I = [], T = (0, p.Z)(n.id), N = (0, l.e7)([x.Z], () => x.Z.hasLayers());
+  } = (0, l.cj)([O.Z], () => ({
+    notFriend: n.type === Z.d4z.DM && null != y && !O.Z.isFriend(y),
+    isBlocked: n.type === Z.d4z.DM && null != y && O.Z.isBlocked(y)
+  })), S = (0, l.e7)([j.default], () => j.default.getUser(y)), P = (0, u.bp)(), I = [], T = (0, p.Z)(n.id), N = (0, l.e7)([x.Z], () => x.Z.hasLayers());
   T && !N && I.push(a.z.ACTIVITY_GDM_CALL_TOOLTIP);
   let [A, w] = i.useState(false);
   return (i.useEffect(() => {

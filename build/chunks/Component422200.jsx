@@ -1,7 +1,7 @@
-/** Chunk was on 78650 **/
-/** chunk id: 422200, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 71350 **/
+/** chunk id: 422200, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  default: () => C
+  default: () => E
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -26,31 +26,31 @@ var Chunk481060 = require("./481060.js"),
   Chunk612856 = require("./612856.jsx"),
   Chunk137591 = require("./137591.jsx"),
   Chunk388032 = require("./388032.jsx");
-let C = (0, Chunk108843.Z)(function(e) {
+let E = (0, Chunk108843.Z)(function(e) {
   let {
-    channel: t,
-    onSelect: n
-  } = e, a = (0, c.Z)(t), o = (0, h.Z)(t), C = (0, _.Z)(t), P = (0, u.Z)(t), N = (0, b.Z)(t), A = (0, f.Z)(t), T = (0, s.Z)({
-    id: t.id,
-    label: y.intl.string(y.t.DQ797u)
-  }), R = (0, g.Z)(t, "Context Menu"), x = (0, Z.Z)(t), S = (0, j.Z)(t), k = (0, m.Z)(t), M = (0, O.Z)(t.id), I = (0, v.Z)(t), U = (0, E.Z)(t), D = (0, d.l)(t), w = (0, d.P)(t), F = (0, p.Z)(t);
+    channel: n,
+    onSelect: t
+  } = e, a = (0, d.Z)(n), o = (0, h.Z)(n), E = (0, m.Z)(n), P = (0, u.Z)(n), N = (0, O.Z)(n), A = (0, f.Z)(n), R = (0, s.Z)({
+    id: n.id,
+    label: C.intl.string(C.t.DQ797u)
+  }), T = (0, p.Z)(n, "Context Menu"), S = (0, b.Z)(n), I = (0, _.Z)(n), U = (0, y.Z)(n), w = (0, Z.Z)(n.id), D = (0, g.Z)(n), x = (0, j.Z)(n), M = (0, c.l)(n), k = (0, c.P)(n), G = (0, v.Z)(n);
   return (0, i.jsxs)(r.v2r, {
     navId: "thread-context",
     onClose: l.Zy,
-    "aria-label": y.intl.string(y.t["1NBjqa"]),
-    onSelect: n,
+    "aria-label": C.intl.string(C.t["1NBjqa"]),
+    onSelect: t,
     children: [(0, i.jsxs)(r.kSQ, {
-      children: [o, D]
+      children: [o, M]
     }, "mark-as-read-or-favorite"), (0, i.jsxs)(r.kSQ, {
-      children: [R, I, P, N, k, M, a]
+      children: [T, D, P, N, U, w, a]
     }, "thread-actions"), (0, i.jsxs)(r.kSQ, {
-      children: [C, S]
+      children: [E, I]
     }, "notifications"), (0, i.jsx)(r.kSQ, {
-      children: w
+      children: k
     }), (0, i.jsxs)(r.kSQ, {
-      children: [U, x, A, F]
+      children: [x, S, A, G]
     }, "admin-actions"), (0, i.jsx)(r.kSQ, {
-      children: T
+      children: R
     }, "developer-actions")]
   })
 }, [Chunk100527.Z.CONTEXT_MENU, Chunk100527.Z.CHANNEL_LIST_THREAD_MENU])

@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk536285 = require("./536285.js"),
   Chunk857458 = require("./857458.jsx"),
   Chunk388905 = require("./388905.jsx"),
@@ -23,14 +23,14 @@ let p = function(e) {
     o.default.once("connected", () => {
       m(1)
     }), o.default.once("disconnected", () => {
-      (0, u.uL)((0, s.M)())
+      (0, u.uL)((0, a.M)())
     }), o.default.connect()
   }, []), i.useEffect(() => {
     if (0 !== p) return;
-    let e = setTimeout(() => (0, u.uL)((0, s.M)()), 3e3);
+    let e = setTimeout(() => (0, u.uL)((0, a.M)()), 3e3);
     return () => clearTimeout(e)
   }, [p]);
-  let f = i.useCallback(async (e, t) => {
+  let g = i.useCallback(async (e, t) => {
     try {
       m(2), await l(e, t), m(3)
     } catch (e) {
@@ -48,13 +48,13 @@ let p = function(e) {
           children: d.intl.string(d.t.SXCxyc)
         }), (0, r.jsx)(c.zx, {
           className: h.marginTop40,
-          onClick: () => f(t, n),
+          onClick: () => g(t, n),
           children: d.intl.string(d.t.UQvCf3)
         }), (0, r.jsx)(c.zx, {
-          className: a()(h.marginTop8, h.marginCenterHorz),
+          className: s()(h.marginTop8, h.marginCenterHorz),
           color: c.zx.Colors.LINK,
           look: c.zx.Looks.LINK,
-          onClick: () => (0, u.uL)((0, s.M)()),
+          onClick: () => (0, u.uL)((0, a.M)()),
           children: d.intl.string(d.t["2ixEBg"])
         })]
       });

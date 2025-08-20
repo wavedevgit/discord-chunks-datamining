@@ -2,9 +2,9 @@
 /** chunk id: 515270, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  L6: () => C,
+  L6: () => N,
   ZP: () => h,
-  iF: () => N
+  iF: () => C
 }), require("./388685.js"), require("./539854.js"), require("./35282.js"), require("./704826.js");
 var Chunk466332 = require("./466332.js"),
   Chunk31775 = require("./31775.js"),
@@ -179,7 +179,7 @@ function A(e) {
   return i
 }
 
-function N(e, t) {
+function C(e, t) {
   let n = 0;
   for (let i of d.bN.nodes(e, {
       at: {
@@ -201,8 +201,8 @@ function N(e, t) {
   return n % 2 != 0
 }
 
-function C(e) {
+function N(e) {
   if (null == e.selection) returnfalse;
   let t = d.M8.start(e.selection);
-  return N(e, t)
+  return C(e, t)
 }

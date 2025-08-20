@@ -1,9 +1,10 @@
-/** Chunk was on 66181 **/
-/** chunk id: 116841, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 116841, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  c: () => r
+  c: () => i
 });
-let i = (0, require("./987170.js").Z)({
+let r = (0, require("./987170.js").Z)({
   kind: "user",
   id: "2025-03_activity_privacy_per_guild_settings",
   label: "Show per-guild activity privacy settings",
@@ -19,8 +20,8 @@ let i = (0, require("./987170.js").Z)({
   }]
 });
 
-function r(e) {
-  return i.useExperiment({
+function i(e) {
+  return r.useExperiment({
     location: e
   }, {
     autoTrackExposure: true

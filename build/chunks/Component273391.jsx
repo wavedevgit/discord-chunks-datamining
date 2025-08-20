@@ -1,4 +1,4 @@
-/** Chunk was on 67079 **/
+/** Chunk was on 65819 **/
 /** chunk id: 273391, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   v: () => E
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk36793 = require("./36793.js"),
   Chunk33309 = require("./33309.js"),
   Chunk755721 = require("./755721.js"),
@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk645765 = require("./645765.js");
 
-function b(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -39,7 +39,7 @@ function b(e) {
   return e
 }
 
-function _(e, t) {
+function j(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -51,8 +51,8 @@ function _(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let j = new Chunk710845.Z("ImageEditor"),
-  O = {
+let _ = new Chunk710845.Z("ImageEditor"),
+  N = {
     width: 240,
     height: 240
   },
@@ -60,92 +60,92 @@ let j = new Chunk710845.Z("ImageEditor"),
     let {
       file: t,
       imageUri: n,
-      onUpdate: a,
+      onUpdate: i,
       onThrottledEdit: m
     } = e, E = l.useRef({
       x: 0,
       y: 0
-    }), [I, w] = l.useState({
+    }), [S, w] = l.useState({
       x: 0,
       y: 0
-    }), S = l.useRef(null), [T, A] = l.useState(1), [M, k] = l.useState(null), [P, R] = l.useState({
+    }), T = l.useRef(null), [P, A] = l.useState(1), [M, R] = l.useState(null), [k, D] = l.useState({
       top: 0,
       bottom: 0,
       left: 0,
       right: 0
-    }), [L, Z] = l.useState(0), [z, G] = l.useState({
+    }), [z, G] = l.useState(0), [L, Z] = l.useState({
       x: 0,
       y: 0
-    }), [U, F] = l.useState(false), B = "image/gif" === t.type, W = (0, o.v)(t.type), H = W && !B, [V, J] = l.useState(null), Y = (0, d.h)(null != m ? m : f.dG, 500);
+    }), [U, B] = l.useState(false), F = "image/gif" === t.type, H = (0, s.v)(t.type), V = H && !F, [J, Y] = l.useState(null), W = (0, d.h)(null != m ? m : x.dG, 500);
     l.useEffect(() => {
       (0, g.Z)()
     }, []);
     let K = l.useCallback(e => {
-        if (null == S.current) return;
+        if (null == T.current) return;
         let {
           x: t,
           y: n
-        } = (0, h.U$)(e.x, e.y, P);
+        } = (0, f.U$)(e.x, e.y, k);
         E.current = {
           x: t,
           y: n
-        }, S.current.style.transform = "translate3d(".concat(t, "px, ").concat(n, "px, 0) rotate(").concat(L, "deg)"), w({
+        }, T.current.style.transform = "translate3d(".concat(t, "px, ").concat(n, "px, 0) rotate(").concat(z, "deg)"), w({
           x: t,
           y: n
         })
-      }, [S, L, P]),
+      }, [T, z, k]),
       X = l.useCallback(e => {
         if (null == M) return;
-        let t = D(M, e, W),
+        let t = I(M, e, H),
           {
             x: n,
             y: r
           } = E.current;
-        A(e), R(t), K({
+        A(e), D(t), K({
           x: n,
           y: r
-        }), null == Y || Y()
-      }, [M, K, W, Y]),
+        }), null == W || W()
+      }, [M, K, H, W]),
       q = l.useCallback(() => {
-        if (null == S.current || null == M) return;
-        let e = (L + 90) % 360,
+        if (null == T.current || null == M) return;
+        let e = (z + 90) % 360,
           t = -E.current.x,
           n = E.current.y,
           r = M.height,
           l = M.width,
-          a = D({
+          i = I({
             width: r,
             height: l
-          }, T, W);
+          }, P, H);
         K({
           x: n,
           y: t
-        }), Z(e), k({
+        }), G(e), R({
           width: r,
           height: l
-        }), R(a), null == Y || Y()
-      }, [M, L, K, T, W, Y]),
+        }), D(i), null == W || W()
+      }, [M, z, K, P, H, W]),
       Q = l.useCallback(() => {
         if (null == M) return {};
         let {
           height: e,
           width: t
-        } = y(N(M, L), T);
+        } = C(O(M, z), P);
         return {
           height: e,
           width: t,
           minHeight: e,
           minWidth: t
         }
-      }, [M, L, T]),
+      }, [M, z, P]),
       $ = l.useCallback(e => {
-        G({
+        Z({
           x: e.clientX - E.current.x,
           y: e.clientY - E.current.y
-        }), F(true)
+        }), B(true)
       }, []);
     l.useEffect(() => {
-      let e = () => F(false);
+      let e = () => B(false);
       return window.addEventListener("mouseup", e), () => window.removeEventListener("mouseup", e)
     }, []);
     let ee = l.useCallback(e => {
@@ -154,133 +154,133 @@ let j = new Chunk710845.Z("ImageEditor"),
         y: n
       } = E.current;
       U && (e.clientX !== t || e.clientY !== n) && (K({
-        x: t = e.clientX - z.x,
-        y: n = e.clientY - z.y
-      }), null == Y || Y())
-    }, [U, z, K, Y]);
+        x: t = e.clientX - L.x,
+        y: n = e.clientY - L.y
+      }), null == W || W())
+    }, [U, L, K, W]);
     l.useEffect(() => {
       if (U) return window.addEventListener("mousemove", ee), () => window.removeEventListener("mousemove", ee)
     }, [ee, U]);
     let et = l.useRef(null),
       en = l.useCallback(async () => {
         let e;
-        if (null == S.current || null == M) return;
+        if (null == T.current || null == M) return;
         let r = Date.now(),
-          l = S.current,
-          i = {
-            height: p.eT,
-            width: p.eT
+          l = T.current,
+          a = {
+            height: h.eT,
+            width: h.eT
           },
-          o = null;
-        if (null != et.current && (et.current(), et.current = null), B) try {
-          let n = C({
+          s = null;
+        if (null != et.current && (et.current(), et.current = null), F) try {
+          let n = y({
               file: t,
               image: l,
-              cropDimensions: O,
+              cropDimensions: N,
               cropOriginCoordinates: E.current,
-              maxDimensions: i,
-              imageRotation: L,
-              resizeWidth: p.eT,
-              resizeHeight: p.eT
-            }, M, T),
+              maxDimensions: a,
+              imageRotation: z,
+              resizeWidth: h.eT,
+              resizeHeight: h.eT
+            }, M, P),
             {
               result: r,
-              cancelFn: a
-            } = await (0, h.$p)(n);
-          et.current = a, e = await r
+              cancelFn: i
+            } = await (0, f.$p)(n);
+          et.current = i, e = await r
         } catch (e) {
-          j.error("Error cropping GIF", e), o = p.ze.GIF_CROPPING
+          _.error("Error cropping GIF", e), s = h.ze.GIF_CROPPING
         } finally {
           var u;
           null == (u = et.current) || u.call(et), et.current = null
-        } else e = H ? n : (0, s.PT)({
+        } else e = V ? n : (0, o.PT)({
           image: l,
-          cropDimensions: O,
+          cropDimensions: N,
           cropOriginCoordinates: E.current,
-          maxDimensions: i,
-          imageRotation: L
+          maxDimensions: a,
+          imageRotation: z
         });
-        return a({
+        return i({
           imageData: e,
           imageDataTimestamp: r,
-          error: o,
+          error: s,
           loading: false
         }), () => {
           var e;
           null == (e = et.current) || e.call(et), et.current = null
         }
-      }, [t, L, B, H, a, M, T, n]);
+      }, [t, z, F, V, i, M, P, n]);
     l.useEffect(() => {
       en()
-    }, [en, I, L, M, U, T, V]);
+    }, [en, S, z, M, U, P, J]);
     let er = l.useCallback(() => {
-      if (null == S.current) return;
-      let e = S.current.naturalWidth,
-        t = S.current.naturalHeight;
-      k({
+      if (null == T.current) return;
+      let e = T.current.naturalWidth,
+        t = T.current.naturalHeight;
+      R({
         width: e,
         height: t
       });
       let n = Math.min(Math.max(e, t) / Math.min(e, t), 4);
-      J(n), A(n), R(D({
+      Y(n), A(n), D(I({
         width: e,
         height: t
-      }, n, W))
-    }, [W]);
+      }, n, H))
+    }, [H]);
     return (0, r.jsxs)("div", {
-      className: i()(x.imageEditor, {
-        [x.isDragging]: U
+      className: a()(b.imageEditor, {
+        [b.isDragging]: U
       }),
       style: {
         "--custom-image-editor-size": "".concat(240, "px")
       },
       children: [(0, r.jsxs)("div", {
-        className: x.editingContainer,
+        className: b.editingContainer,
         children: [(0, r.jsx)("img", {
           onLoad: er,
           onError: () => {
-            a({
-              error: p.ze.IMAGE_LOAD,
+            i({
+              error: h.ze.IMAGE_LOAD,
               loading: false
             })
           },
-          style: b({
+          style: v({
             opacity: +(null != M),
-            transform: "translate3d(".concat(E.current.x, "px, ").concat(E.current.y, "px, 0) rotate(").concat(L, "deg)")
+            transform: "translate3d(".concat(E.current.x, "px, ").concat(E.current.y, "px, 0) rotate(").concat(z, "deg)")
           }, Q()),
-          className: x.image,
+          className: b.image,
           src: n,
           crossOrigin: "anonymous",
-          alt: v.intl.string(v.t.EYR1FR),
-          ref: S,
+          alt: p.intl.string(p.t.EYR1FR),
+          ref: T,
           onMouseDown: $,
           draggable: false
-        }), !H && (0, r.jsx)("div", {
-          className: x.overlay,
+        }), !V && (0, r.jsx)("div", {
+          className: b.overlay,
           style: {
             opacity: +(null != M),
-            width: O.width,
-            height: O.height
+            width: N.width,
+            height: N.height
           },
           children: (0, r.jsx)(c.Text, {
-            className: x.panHint,
+            className: b.panHint,
             variant: "text-xs/normal",
             color: "text-primary",
-            children: v.intl.string(v.t.oBPhdH)
+            children: p.intl.string(p.t.oBPhdH)
           })
         })]
-      }), H ? (0, r.jsx)("div", {
-        className: x.animatedInfoContainer,
+      }), V ? (0, r.jsx)("div", {
+        className: b.animatedInfoContainer,
         children: (0, r.jsx)(c.Text, {
           variant: "text-sm/normal",
           color: "text-muted",
-          children: v.intl.string(v.t["5XCxio"])
+          children: p.intl.string(p.t["5XCxio"])
         })
       }) : (0, r.jsxs)("div", {
-        className: x.toolsContainer,
+        className: b.toolsContainer,
         children: [(0, r.jsx)(c.ua7, {
-          text: v.intl.string(v.t["oCs/+P"]),
-          "aria-label": v.intl.string(v.t["oCs/+P"]),
+          text: p.intl.string(p.t["oCs/+P"]),
+          "aria-label": p.intl.string(p.t["oCs/+P"]),
           children: e => {
             var {
               onClick: t
@@ -289,18 +289,18 @@ let j = new Chunk710845.Z("ImageEditor"),
               var n, r, l = function(e, t) {
                 if (null == e) return {};
                 var n, r, l = {},
-                  a = Object.keys(e);
-                for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
+                  i = Object.keys(e);
+                for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
                 return l
               }(e, t);
               if (Object.getOwnPropertySymbols) {
-                var a = Object.getOwnPropertySymbols(e);
-                for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
+                var i = Object.getOwnPropertySymbols(e);
+                for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
               }
               return l
             }(e, ["onClick"]);
-            return (0, r.jsx)(u.zx, _(b({
-              className: x.toolButton,
+            return (0, r.jsx)(u.zx, j(v({
+              className: b.toolButton,
               look: u.zx.Looks.BLANK,
               size: u.Ph.NONE,
               color: u.zx.Colors.TRANSPARENT,
@@ -314,20 +314,20 @@ let j = new Chunk710845.Z("ImageEditor"),
             }))
           }
         }), (0, r.jsxs)("div", {
-          className: x.zoomControls,
+          className: b.zoomControls,
           children: [(0, r.jsx)(c.BlJ, {
             color: c.TVs.colors.ICON_SECONDARY,
             size: "sm"
-          }), null != V && (0, r.jsx)(c.iRW, {
-            className: x.slider,
-            initialValue: V,
+          }), null != J && (0, r.jsx)(c.iRW, {
+            className: b.slider,
+            initialValue: J,
             minValue: 1,
             maxValue: 4,
             keyboardStep: .025,
             asValueChanges: X,
             equidistant: true,
             hideBubble: true,
-            "aria-label": v.intl.string(v.t["2hPcVF"])
+            "aria-label": p.intl.string(p.t["2hPcVF"])
           }), (0, r.jsx)(c.OyE, {
             color: c.TVs.colors.ICON_SECONDARY,
             size: "sm"
@@ -336,7 +336,7 @@ let j = new Chunk710845.Z("ImageEditor"),
       })]
     })
   },
-  N = (e, t) => {
+  O = (e, t) => {
     let {
       width: n,
       height: r
@@ -349,45 +349,45 @@ let j = new Chunk710845.Z("ImageEditor"),
       height: r
     }
   },
-  y = (e, t) => {
+  C = (e, t) => {
     let {
       width: n,
       height: r
-    } = e, l = 240 * t, a = n / r;
-    return n > r ? r = (n = l) / a : n = (r = l) * a, {
+    } = e, l = 240 * t, i = n / r;
+    return n > r ? r = (n = l) / i : n = (r = l) * i, {
       width: n,
       height: r
     }
   };
 
-function D(e, t, n) {
+function I(e, t, n) {
   let {
     width: r,
     height: l
-  } = y(e, t), a = Math.abs(240 - r) / 2, i = Math.abs(240 - l) / 2;
+  } = C(e, t), i = Math.abs(240 - r) / 2, a = Math.abs(240 - l) / 2;
   return n && (r < 240 || l < 240) ? {
     top: 0,
     bottom: 0,
     left: 0,
     right: 0
   } : {
-    top: i,
-    bottom: -i,
-    left: -a,
-    right: a
+    top: a,
+    bottom: -a,
+    left: -i,
+    right: i
   }
 }
-let C = (e, t, n) => {
+let y = (e, t, n) => {
   let {
     height: r,
     width: l
-  } = y(t, n), a = (r = Math.min(r, 240)) / (l = Math.min(l, 240)), i = {
+  } = C(t, n), i = (r = Math.min(r, 240)) / (l = Math.min(l, 240)), a = {
     height: r,
     width: l
-  }, s = Math.floor(a < 1 ? p.eT * a : p.eT / a), o = a < 1 ? s : p.eT, u = a > 1 ? s : p.eT;
-  return _(b({}, e), {
-    cropDimensions: i,
-    resizeHeight: o,
+  }, o = Math.floor(i < 1 ? h.eT * i : h.eT / i), s = i < 1 ? o : h.eT, u = i > 1 ? o : h.eT;
+  return j(v({}, e), {
+    cropDimensions: a,
+    resizeHeight: s,
     resizeWidth: u
   })
 }

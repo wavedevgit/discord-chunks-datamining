@@ -1,16 +1,17 @@
-/** Chunk was on 66181 **/
-/** chunk id: 882029, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 882029, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => y
 });
-var i, Chunk442837 = require("./442837.js"),
+var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk314897 = require("./314897.js"),
   Chunk57562 = require("./57562.jsx"),
   Chunk351780 = require("./351780.js"),
   Chunk843693 = require("./843693.js");
 
-function d(e, t, n) {
+function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -19,65 +20,77 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 
-function u(e) {
+function d(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      i = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), i.forEach(function(t) {
-      d(e, t, n[t])
+    }))), r.forEach(function(t) {
+      u(e, t, n[t])
     })
   }
   return e
 }
-let m = {
+
+function f(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+let p = 2e3,
+  h = {
     unlockedAchievements: {}
   },
-  p = u({}, m);
-class g extends(i = Chunk442837.ZP.PersistedStore) {
+  m = d({}, h);
+
+function g(e) {
+  return null == m.unlockedAchievements[e] && (m.unlockedAchievements = _(d({}, m.unlockedAchievements), {
+    [e]: {
+      achievementId: e,
+      dateUnlocked: Date.now()
+    }
+  }), setTimeout(() => {
+    (0, s.D)(e, true)
+  }, p), true)
+}
+
+function E(e) {
+  let {
+    achievementId: t
+  } = e;
+  if (!l.Z.isEnabled()) returnfalse;
+  g(t)
+}
+class b extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    this.waitFor(a.default, c.ZP);
-    let t = null != e ? e : u({}, m);
-    for (let e in t) p[e] = t[e]
+    this.waitFor(o.default, c.ZP);
+    let t = null != e ? e : d({}, h);
+    for (let e in t) m[e] = t[e]
   }
   getState() {
-    return p
+    return m
   }
   getAllUnlockedAchievements() {
-    return p.unlockedAchievements
+    return m.unlockedAchievements
   }
   getUnlocked(e) {
     var t;
-    return null != (t = p.unlockedAchievements[e]) ? t : null
+    return null != (t = m.unlockedAchievements[e]) ? t : null
   }
 }
-d(g, "displayName", "PoggermodeAchievementStore"), d(g, "persistKey", "PoggermodeAchievementStore");
-let h = new g(Chunk570140.Z, {
-  POGGERMODE_ACHIEVEMENT_UNLOCK: function(e) {
-    let {
-      achievementId: t
-    } = e;
-    if (!o.Z.isEnabled()) returnfalse;
-    ! function(e) {
-      var t, n;
-      if (null == p.unlockedAchievements[e]) t = u({}, p.unlockedAchievements), n = n = {
-        [e]: {
-          achievementId: e,
-          dateUnlocked: Date.now()
-        }
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-          var i = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, i)
-        }
-        return n
-      })(Object(n)).forEach(function(e) {
-        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-      }), p.unlockedAchievements = t, setTimeout(() => {
-        (0, l.D)(e, true)
-      }, 2e3)
-    }(t)
-  }
+u(b, "displayName", "PoggermodeAchievementStore"), u(b, "persistKey", "PoggermodeAchievementStore");
+let y = new b(Chunk570140.Z, {
+  POGGERMODE_ACHIEVEMENT_UNLOCK: E
 })

@@ -1,12 +1,13 @@
-/** Chunk was on 37447 **/
-/** chunk id: 611855, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 611855, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   Z: () => d
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk780384 = require("./780384.js"),
   Chunk481060 = require("./481060.js"),
   Chunk410030 = require("./410030.js"),
@@ -16,22 +17,22 @@ let d = function(e) {
   let {
     className: t,
     color: n = "header-primary",
-    textOpacity: o = .9
-  } = e, d = (0, l.Fg)(), m = (0, i.wj)(d);
-  return (0, r.jsxs)(a.Text, {
+    textOpacity: i = .9
+  } = e, d = (0, l.Fg)(), f = (0, o.wj)(d) ? .2 : .08;
+  return (0, r.jsxs)(s.Text, {
     variant: "text-xxs/medium",
     color: n,
-    className: s()(c.promotedTag, t),
+    className: a()(u.promotedTag, t),
     children: [(0, r.jsx)("span", {
-      className: c.promotedTagBackground,
+      className: u.promotedTagBackground,
       style: {
-        backgroundColor: "rgba(0, 0, 0, ".concat(m ? .2 : .08, ")")
+        backgroundColor: "rgba(0, 0, 0, ".concat(f, ")")
       }
     }), (0, r.jsx)("span", {
       style: {
-        opacity: o
+        opacity: i
       },
-      children: u.intl.string(u.t.o6FLcH)
+      children: c.intl.string(c.t.o6FLcH)
     })]
   })
 }

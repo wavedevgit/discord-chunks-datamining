@@ -72,17 +72,17 @@ function I(e) {
     hasVideo: T = false,
     gradientColor: S,
     caretConfig: A
-  } = e, [N, C] = i.useState(p), R = (0, l.e7)([f.Z], () => f.Z.getLayers()), P = null != (t = R[R.length - 1]) ? t : "base", w = i.useMemo(() => {
+  } = e, [C, N] = i.useState(p), R = (0, l.e7)([f.Z], () => f.Z.getLayers()), P = null != (t = R[R.length - 1]) ? t : "base", w = i.useMemo(() => {
     var e;
     return null == a.current || (null == (e = a.current.closest("[data-layer]")) ? true : e.getAttribute("data-layer")) === P
   }, [a, P]);
   i.useEffect(() => {
-    C(w && p)
+    N(w && p)
   }, [w, p]);
   let D = () => {
-      C(false)
+      N(false)
     },
-    L = e => {
+    x = e => {
       switch (e) {
         case "top":
           return "bottom";
@@ -95,12 +95,12 @@ function I(e) {
           return "left"
       }
     },
-    x = (0, _.i)({
+    L = (0, _.i)({
       shouldShow: p,
-      caretPosition: (null == A ? true : A.position) != null ? A.position : L(E),
+      caretPosition: (null == A ? true : A.position) != null ? A.position : x(E),
       onExitComplete: D
     }),
-    M = e => x((t, i) => {
+    j = e => L((t, i) => {
       if (!i) return null;
       let l = (0, r.jsx)(u.V, b(g({}, e), {
         modal: false,
@@ -122,7 +122,7 @@ function I(e) {
     });
   return (0, r.jsx)(c.H, {
     targetElementRef: a,
-    shouldShow: N,
+    shouldShow: C,
     onRequestClose: m,
     position: E,
     align: I,
@@ -134,7 +134,7 @@ function I(e) {
     autoInvert: true,
     nudgeAlignIntoViewport: true,
     closeOnClickOutside: false,
-    renderPopout: M,
+    renderPopout: j,
     children: v
   })
 }

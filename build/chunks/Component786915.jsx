@@ -1,4 +1,4 @@
-/** Chunk was on 36499 **/
+/** Chunk was on 5665 **/
 /** chunk id: 786915, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -47,8 +47,8 @@ function _(e) {
     exitFullScreen: C,
     appContext: x,
     analyticsLocation: v,
-    guildScheduledEvent: j,
-    shouldPrioritizeGroupPlusIcon: O = false,
+    guildScheduledEvent: O,
+    shouldPrioritizeGroupPlusIcon: j = false,
     isRichPresenceInvite: E = false,
     iconClassName: S,
     look: P,
@@ -77,7 +77,7 @@ function _(e) {
     R = null == _ ? true : _.getGuildId(),
     M = (0, a.e7)([p.Z], () => null != R ? p.Z.getGuild(R) : null, [R]),
     k = (0, a.e7)([h.Z], () => null != t ? h.Z.getApplicationActivity(t) : true),
-    D = null == t || O ? o.ejJ : o.gQj,
+    D = null == t || j ? o.ejJ : o.gQj,
     L = null != t ? b.intl.string(b.t["OzOM/v"]) : b.intl.string(b.t["6F9ivr"]);
   return null != k && E ? (0, r.jsx)(m.Z, {
     onClick: () => {
@@ -141,7 +141,7 @@ function _(e) {
           appContext: null != x ? x : A,
           exitFullScreen: C,
           analyticsLocation: v,
-          guildScheduledEvent: j
+          guildScheduledEvent: O
         })
     },
     iconComponent: D,

@@ -1,12 +1,12 @@
 /** Chunk was on 20102 **/
 /** chunk id: 444688, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => b
+  default: () => g
 }), require("./388685.js"), require("./457542.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
-  a = require.n(Chunk512722),
+  l = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk82659 = require("./82659.jsx"),
   Chunk481060 = require("./481060.js"),
@@ -14,58 +14,58 @@ var Chunk951288 = require("./951288.js"),
   Chunk594174 = require("./594174.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk97411 = require("./97411.js");
-let b = function(e) {
+let g = function(e) {
   let {
     onClose: t,
-    transitionState: l
-  } = e, b = (0, o.e7)([d.default], () => d.default.getCurrentUser()), [p, g] = i.useState(false), y = i.useCallback(() => (null == t || t(), Promise.resolve()), [t]), h = i.useCallback(() => {
-    null == t || t(), (0, c.ZDy)(async () => {
+    transitionState: a
+  } = e, g = (0, s.e7)([d.default], () => d.default.getCurrentUser()), [b, p] = r.useState(false), v = r.useCallback(() => (null == t || t(), Promise.resolve()), [t]), y = r.useCallback(() => {
+    null == t || t(), (0, u.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("9343"), n.e("84577")]).then(n.bind(n, 642298));
-      return t => (0, r.jsx)(e, function(e) {
+      } = await n.e("9343").then(n.bind(n, 642298));
+      return t => (0, i.jsx)(e, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            i = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-              value: r,
+          }))), i.forEach(function(t) {
+            var i;
+            i = n[t], t in e ? Object.defineProperty(e, t, {
+              value: i,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : e[t] = r
+            }) : e[t] = i
           })
         }
         return e
       }({}, t))
     })
-  }, [t]), O = i.useCallback(() => {
-    null == t || t(), a()(null != b, "ResendEmailVerificationButton: currentUser cannot be undefined"), g(true), (0, u.s)(b).finally(() => g(false))
-  }, [b, t]), j = i.useMemo(() => (null == b ? true : b.email) == null ? [{
+  }, [t]), k = r.useCallback(() => {
+    null == t || t(), l()(null != g, "ResendEmailVerificationButton: currentUser cannot be undefined"), p(true), (0, c.s)(g).finally(() => p(false))
+  }, [g, t]), C = r.useMemo(() => (null == g ? true : g.email) == null ? [{
     text: f.intl.string(f.t.ydw5nZ),
-    onClick: h,
+    onClick: y,
     variant: "primary"
   }] : [{
     text: f.intl.string(f.t.Vm8akJ),
-    onClick: h,
+    onClick: y,
     variant: "secondary"
   }, {
     text: f.intl.string(f.t.lm1UKi),
-    onClick: O,
+    onClick: k,
     variant: "primary",
-    loading: p
-  }], [b, h, O, p]);
-  return (0, r.jsxs)(s.Modal, {
+    loading: b
+  }], [g, y, k, b]);
+  return (0, i.jsxs)(o.Modal, {
     title: f.intl.string(f.t.UZLrY2),
-    transitionState: l,
-    onClose: y,
-    actions: j,
-    children: [(0, r.jsx)("div", {
+    transitionState: a,
+    onClose: v,
+    actions: C,
+    children: [(0, i.jsx)("div", {
       className: m.imageUnverified
-    }), (0, r.jsx)(c.Text, {
+    }), (0, i.jsx)(u.Text, {
       variant: "text-md/normal",
       className: m.message,
       children: f.intl.string(f.t["0LgOKC"])

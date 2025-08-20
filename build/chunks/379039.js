@@ -1,6 +1,7 @@
-/** Chunk was on 66181 **/
-/** chunk id: 379039, original params: e,t,n (module,exports,require) **/
-require.r(module.exports = {
+/** Chunk was on web.js **/
+/** chunk id: 379039, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+var r = {
   container: "container_f48ee4",
   fadeInFromTop: "fadeInFromTop_f48ee4",
   containerBackground: "containerBackground_f48ee4",
@@ -16,4 +17,5 @@ require.r(module.exports = {
   scroller: "scroller_f48ee4",
   topOfPageGradient: "topOfPageGradient_f48ee4",
   bottomOfPageGradient: "bottomOfPageGradient_f48ee4"
-})
+};
+require.r(module.exports = r)

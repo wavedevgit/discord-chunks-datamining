@@ -1,7 +1,7 @@
-/** Chunk was on 26475 **/
+/** Chunk was on 40226 **/
 /** chunk id: 189472, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => g
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,26 +16,26 @@ var Chunk951288 = require("./951288.js"),
   Chunk621600 = require("./621600.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let f = e => {
+let g = e => {
   let {
     user: t,
     channelId: n,
-    reportId: f
-  } = e, b = d.Z.getDMFromUserId(t.id), h = (0, i.e7)([d.Z], () => d.Z.getChannel(n), [n]), x = a.useMemo(() => _.ZP.getName(null == h ? true : h.guild_id, null == h ? true : h.id, t), [h, t]), v = (0, i.e7)([u.ZP], () => null == b ? null : u.ZP.isChannelMuted(null, b)), [j, y] = a.useState(null != v && v), C = a.useCallback(() => {
-    null != b && (y(true), l.ZP.trackWithMetadata(p.rMx.IAR_MUTE_USER_BUTTON_CLICKED, {
+    reportId: g
+  } = e, x = d.Z.getDMFromUserId(t.id), b = (0, l.e7)([d.Z], () => d.Z.getChannel(n), [n]), h = i.useMemo(() => m.ZP.getName(null == b ? true : b.guild_id, null == b ? true : b.id, t), [b, t]), v = (0, l.e7)([u.ZP], () => null == x ? null : u.ZP.isChannelMuted(null, x)), [j, y] = i.useState(null != v && v), O = i.useCallback(() => {
+    null != x && (y(true), o.ZP.trackWithMetadata(p.rMx.IAR_MUTE_USER_BUTTON_CLICKED, {
       other_user_id: t.id,
-      report_id: f
-    }), o.Z.updateChannelOverrideSettings(null, b, {
+      report_id: g
+    }), a.Z.updateChannelOverrideSettings(null, x, {
       muted: true
-    }, m.ZB.Muted), s.Z.showMuteSuccessToast(t.id, n))
-  }, [b, n, t, f]);
+    }, _.ZB.Muted), s.Z.showMuteSuccessToast(t.id, n))
+  }, [x, n, t, g]);
   return (0, r.jsx)(c.JZ, {
-    title: g.intl.formatToPlainString(g.t.TRp5wc, {
-      username: x
+    title: f.intl.formatToPlainString(f.t.TRp5wc, {
+      username: h
     }),
-    description: g.intl.string(g.t["yM/+AA"]),
-    buttonText: j ? g.intl.string(g.t.E8x4Nj) : g.intl.string(g.t.HITUcX),
+    description: f.intl.string(f.t["yM/+AA"]),
+    buttonText: j ? f.intl.string(f.t.E8x4Nj) : f.intl.string(f.t.HITUcX),
     buttonDisabled: j,
-    onButtonPress: C
+    onButtonPress: O
   })
 }

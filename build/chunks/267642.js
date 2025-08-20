@@ -5,11 +5,11 @@ require.d(exports, {
   A3: () => S,
   FZ: () => T,
   Hl: () => J,
-  Je: () => C,
-  Jh: () => x,
+  Je: () => N,
+  Jh: () => L,
   KK: () => K,
   Oe: () => I,
-  Qi: () => Z,
+  Qi: () => F,
   Ro: () => O,
   _k: () => B,
   _p: () => D,
@@ -17,15 +17,15 @@ require.d(exports, {
   cP: () => R,
   e9: () => w,
   ee: () => q,
-  f2: () => k,
-  gZ: () => F,
-  ge: () => L,
+  f2: () => M,
+  gZ: () => V,
+  ge: () => x,
   ig: () => A,
   nL: () => Y,
   nW: () => P,
-  tb: () => M,
+  tb: () => j,
   tl: () => z,
-  vx: () => j,
+  vx: () => k,
   y4: () => W,
   yw: () => H
 }), require("./583741.js"), require("./415506.js"), require("./388685.js"), require("./642613.js");
@@ -66,12 +66,12 @@ let v = [Chunk981631.Eu4.NONE, Chunk981631.Eu4.TIER_1, Chunk981631.Eu4.TIER_2, C
   I = v.slice().reverse(),
   T = e => {
     var t;
-    return e === g.Eu4.NONE ? g.Eu4.TIER_1 : null == (t = V.find(t => t.tier === e)) ? true : t.nextTier
+    return e === g.Eu4.NONE ? g.Eu4.TIER_1 : null == (t = Z.find(t => t.tier === e)) ? true : t.nextTier
   },
   S = (e, t) => null != t && t.features.has(g.oNc.MORE_STICKERS) && e === g.Eu4.TIER_3 ? a.D.MAX_STICKER_SLOTS : b.$8[e],
   A = e => b.pH[e],
-  N = (e, t) => null != t && t.features.has(g.oNc.MORE_SOUNDBOARD) ? b.w1 : b._k[e],
-  C = e => {
+  C = (e, t) => null != t && t.features.has(g.oNc.MORE_SOUNDBOARD) ? b.w1 : b._k[e],
+  N = e => {
     if (e === g.Eu4.NONE) return b._k[e];
     let t = v[v.indexOf(e) - 1];
     return b._k[e] - b._k[t]
@@ -95,8 +95,8 @@ let v = [Chunk981631.Eu4.NONE, Chunk981631.Eu4.TIER_1, Chunk981631.Eu4.TIER_2, C
       icon: 8
     }, {
       title: y.intl.formatToPlainString(y.t.NRuk5u, {
-        soundCount: C(g.Eu4.TIER_1),
-        totalSoundCount: N(g.Eu4.TIER_1)
+        soundCount: N(g.Eu4.TIER_1),
+        totalSoundCount: C(g.Eu4.TIER_1)
       }),
       description: y.intl.string(y.t.Oq7OVl),
       icon: 13
@@ -138,8 +138,8 @@ let v = [Chunk981631.Eu4.NONE, Chunk981631.Eu4.TIER_1, Chunk981631.Eu4.TIER_2, C
       icon: 8
     }, {
       title: y.intl.formatToPlainString(y.t.NRuk5u, {
-        soundCount: C(g.Eu4.TIER_2),
-        totalSoundCount: N(g.Eu4.TIER_2)
+        soundCount: N(g.Eu4.TIER_2),
+        totalSoundCount: C(g.Eu4.TIER_2)
       }),
       description: y.intl.string(y.t.pEYlPT),
       icon: 13
@@ -197,8 +197,8 @@ let v = [Chunk981631.Eu4.NONE, Chunk981631.Eu4.TIER_1, Chunk981631.Eu4.TIER_2, C
       icon: 8
     }, {
       title: y.intl.formatToPlainString(y.t.NRuk5u, {
-        soundCount: C(g.Eu4.TIER_3),
-        totalSoundCount: N(g.Eu4.TIER_3)
+        soundCount: N(g.Eu4.TIER_3),
+        totalSoundCount: C(g.Eu4.TIER_3)
       }),
       description: y.intl.string(y.t["8omJSU"]),
       icon: 13
@@ -271,23 +271,23 @@ function w(e) {
   }
 }
 let D = i().memoize(e => b.HO[g.Eu4.TIER_1].features.includes(e) ? g.Eu4.TIER_1 : b.HO[g.Eu4.TIER_2].features.includes(e) ? g.Eu4.TIER_2 : b.HO[g.Eu4.TIER_3].features.includes(e) ? g.Eu4.TIER_3 : null),
-  L = e => e === g.Eu4.NONE ? g.Qqv.NONE : e === g.Eu4.TIER_1 ? g.Qqv.TIER_1 : e === g.Eu4.TIER_2 ? g.Qqv.TIER_2 : e === g.Eu4.TIER_3 ? g.Qqv.TIER_3 : null;
+  x = e => e === g.Eu4.NONE ? g.Qqv.NONE : e === g.Eu4.TIER_1 ? g.Qqv.TIER_1 : e === g.Eu4.TIER_2 ? g.Qqv.TIER_2 : e === g.Eu4.TIER_3 ? g.Qqv.TIER_3 : null;
 
-function x(e) {
+function L(e) {
   var t;
   let n = null == (t = c.Z.getGuild(e)) ? true : t.premiumTier;
   return null != n ? n : g.Eu4.NONE
 }
 
-function M(e, t) {
+function j(e, t) {
   return null == t || null != e && e >= t
 }
 
-function k(e, t) {
-  return M(e.premiumTier, t)
+function M(e, t) {
+  return j(e.premiumTier, t)
 }
 
-function j(e) {
+function k(e) {
   return i().values(e).filter(e => e.isAvailable())
 }
 
@@ -296,7 +296,7 @@ function U(e) {
     fractionalState: t
   } = e, n = d.Z.getPremiumTypeSubscription();
   u.Z.hasFetched || u.Z.isFetching || (0, o.X8)();
-  let r = j(u.Z.boostSlots),
+  let r = k(u.Z.boostSlots),
     i = null == n ? true : n.isPausedOrPausePending,
     a = r.length > 0;
   if (i && t === b.a$.NONE && !a) return y.intl.string(y.t.mOWsFx);
@@ -323,12 +323,12 @@ function G(e) {
 function B(e, t) {
   var n;
   if ((null == (n = c.Z.getGuild(t)) ? true : n.features.has(g.oNc.PREMIUM_TIER_3_OVERRIDE)) === true) return 0;
-  let r = x(t),
+  let r = L(t),
     i = g.oCV[r],
     a = e.filter(e => null != e.endsAt);
   return i - (e.length - a.length)
 }
-let V = [{
+let Z = [{
   tier: Chunk981631.Eu4.TIER_3,
   amount: Chunk981631.oCV[Chunk981631.Eu4.TIER_3],
   nextTier: null
@@ -342,7 +342,7 @@ let V = [{
   nextTier: Chunk981631.Eu4.TIER_2
 }];
 
-function F(e, t) {
+function V(e, t) {
   let n = B(e, t);
   if (n > 0) {
     let r = G(e).filter(e => null != e.endsAt),
@@ -352,7 +352,7 @@ function F(e, t) {
       message: "Negative index while checking grace period ending date.",
       data: {
         subscriptionLength: e.length,
-        subscriptionsNeededForPremiumTier: g.oCV[x(t)],
+        subscriptionsNeededForPremiumTier: g.oCV[L(t)],
         endingSubscriptionLength: r.length
       }
     });
@@ -362,7 +362,7 @@ function F(e, t) {
   return null
 }
 
-function Z(e, t) {
+function F(e, t) {
   let n = A(t),
     r = v.indexOf(t);
   if (false === r) return 0;

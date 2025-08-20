@@ -1,5 +1,6 @@
-/** Chunk was on 66181 **/
-/** chunk id: 875210, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 875210, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   header: "header_b87308",
   appIcon: "appIcon_b87308",

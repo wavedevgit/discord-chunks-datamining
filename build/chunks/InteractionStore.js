@@ -98,14 +98,14 @@ function A(e) {
   i.state = _.F.CREATED, null == (t = i.onCreate) || t.call(i, r)
 }
 
-function N(e) {
+function C(e) {
   let {
     nonce: t
   } = e;
-  k(t)
+  M(t)
 }
 
-function C(e) {
+function N(e) {
   let {
     message: t
   } = e;
@@ -114,7 +114,7 @@ function C(e) {
     var n;
     let e = y[t.nonce];
     if (null == e) returnfalse;
-    null == (n = e.onSuccess) || n.call(e), j(t.nonce)
+    null == (n = e.onSuccess) || n.call(e), k(t.nonce)
   }
 }
 
@@ -130,7 +130,7 @@ function R(e) {
   if (null == n) returnfalse;
   let s = y[n];
   if (null == s) returnfalse;
-  null == (t = s.onFailure) || t.call(s, r, i, a, o), s.data.interactionType === c.B8.APPLICATION_COMMAND ? j(n) : y[n] = g(h({}, s), {
+  null == (t = s.onFailure) || t.call(s, r, i, a, o), s.data.interactionType === c.B8.APPLICATION_COMMAND ? k(n) : y[n] = g(h({}, s), {
     state: _.F.FAILED,
     errorCode: r,
     errorMessage: i
@@ -142,14 +142,14 @@ function P(e) {
     channelId: t
   } = e;
   if (null == d.Z.getChannel(t)) returnfalse;
-  for (let [e, t] of Object.entries(y)) t.state === _.F.FAILED && j(e)
+  for (let [e, t] of Object.entries(y)) t.state === _.F.FAILED && k(e)
 }
 
 function w(e) {
   let {
     nonce: t
   } = e;
-  k(t)
+  M(t)
 }
 
 function D(e) {
@@ -157,21 +157,21 @@ function D(e) {
     application: t,
     nonce: n
   } = e;
-  i = t.id, k(n)
+  i = t.id, M(n)
 }
 
-function L() {
+function x() {
   r = true, i = true
 }
 
-function x(e) {
+function L(e) {
   let {
     modalKey: t
   } = e;
   r = t
 }
 
-function M(e) {
+function j(e) {
   let t, n, {
       participants: r
     } = e,
@@ -180,18 +180,18 @@ function M(e) {
     o = r.find(e => e.user_id === a && e.session_id === i);
   if (null == o || null == o.nonce) return;
   let s = I[o.nonce];
-  null == s ? (t = v[o.nonce], n = y[o.nonce]) : (t = s.messageId, n = s.interaction), null != n && null != t && (j(o.nonce), null != t && "channelId" in n.data && l.Z.deleteMessage(n.data.channelId, t, true))
+  null == s ? (t = v[o.nonce], n = y[o.nonce]) : (t = s.messageId, n = s.interaction), null != n && null != t && (k(o.nonce), null != t && "channelId" in n.data && l.Z.deleteMessage(n.data.channelId, t, true))
 }
 
-function k(e) {
+function M(e) {
   var t;
   if (null == e) returnfalse;
   let n = y[e];
   if (null == n) returnfalse;
-  null == (t = n.onSuccess) || t.call(n), j(e)
+  null == (t = n.onSuccess) || t.call(n), k(e)
 }
 
-function j(e) {
+function k(e) {
   if (null != I[e]) return void delete I[e];
   let t = y[e];
   delete y[e];
@@ -232,13 +232,13 @@ let G = new U(Chunk570140.Z, {
   LOGOUT: T,
   INTERACTION_QUEUE: S,
   INTERACTION_CREATE: A,
-  INTERACTION_SUCCESS: N,
+  INTERACTION_SUCCESS: C,
   INTERACTION_FAILURE: R,
-  MESSAGE_CREATE: C,
+  MESSAGE_CREATE: N,
   CHANNEL_SELECT: P,
   INTERACTION_IFRAME_MODAL_CREATE: D,
-  INTERACTION_IFRAME_MODAL_CLOSE: L,
-  INTERACTION_IFRAME_MODAL_KEY_CREATE: x,
+  INTERACTION_IFRAME_MODAL_CLOSE: x,
+  INTERACTION_IFRAME_MODAL_KEY_CREATE: L,
   INTERACTION_MODAL_CREATE: w,
-  EMBEDDED_ACTIVITY_UPDATE_V2: M
+  EMBEDDED_ACTIVITY_UPDATE_V2: j
 })

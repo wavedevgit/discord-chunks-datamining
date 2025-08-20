@@ -1,8 +1,7 @@
 /** Chunk was on 23746 **/
 /** chunk id: 837651, original params: e,t,r (module,exports,require) **/
-"use strict";
 require.d(exports, {
-  default: () => _
+  default: () => x
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -15,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk186603 = require("./186603.js");
 
-function p(e, t, r) {
+function g(e, t, r) {
   return t in e ? Object.defineProperty(e, t, {
     value: r,
     enumerable: true,
@@ -23,34 +22,34 @@ function p(e, t, r) {
     writable: true
   }) : e[t] = r, e
 }
-let g = e => {
+let p = e => {
   let {
     image: t,
     label: r,
     text: i,
-    children: o
+    children: a
   } = e;
-  return (0, n.jsxs)(a.Z, {
-    className: h.spacing,
-    children: [(0, n.jsx)(a.Z, {
+  return (0, s.jsxs)(l.Z, {
+    className: u.spacing,
+    children: [(0, s.jsx)(l.Z, {
       grow: 0,
       shrink: 0,
       basis: "156px",
-      justify: a.Z.Justify.CENTER,
-      className: h.image,
+      justify: l.Z.Justify.CENTER,
+      className: u.image,
       children: t
-    }), (0, n.jsx)(a.Z, {
-      direction: a.Z.Direction.VERTICAL,
-      justify: a.Z.Justify.CENTER,
-      children: (0, n.jsxs)("div", {
-        children: [(0, n.jsx)(s.vwX, {
+    }), (0, s.jsx)(l.Z, {
+      direction: l.Z.Direction.VERTICAL,
+      justify: l.Z.Justify.CENTER,
+      children: (0, s.jsxs)("div", {
+        children: [(0, s.jsx)(n.vwX, {
           tag: "h5",
-          className: h.headerSpacing,
+          className: u.headerSpacing,
           children: r
-        }), (0, n.jsx)(s.R94, {
-          type: s.R94.Types.DESCRIPTION,
+        }), (0, s.jsx)(n.R94, {
+          type: n.R94.Types.DESCRIPTION,
           children: i
-        }), o]
+        }), a]
       })
     })]
   })
@@ -62,16 +61,16 @@ class f extends Chunk647438.PureComponent {
       transitionState: t,
       onClose: i
     } = this.props, {
-      totpSecret: o,
-      code: p,
+      totpSecret: a,
+      code: g,
       isVerifying: f
-    } = this.state, _ = null == (e = Chunk594174.default.getCurrentUser()) ? true : module.email, C = (0, Chunk287880.U0)(null != _ ? _ : "", Chunk816814), E = (0, Chunk951288.jsx)("form", {
+    } = this.state, x = null == (e = Chunk594174.default.getCurrentUser()) ? true : module.email, b = (0, Chunk287880.U0)(null != x ? x : "", Chunk816814), m = (0, Chunk951288.jsx)("form", {
       onSubmit: this.handleActivate,
       children: (0, Chunk951288.jsxs)(Chunk600164.Z, {
         className: Chunk186603.inputContainer,
         align: Chunk600164.Z.Align.START,
         children: [(0, Chunk951288.jsx)(Chunk481060.oil, {
-          value: p,
+          value: g,
           placeholder: "000 000",
           maxLength: 7,
           autoComplete: "one-time-code",
@@ -116,7 +115,7 @@ class f extends Chunk647438.PureComponent {
           })
         })]
       }), (0, Chunk951288.jsxs)(Chunk481060.hzk, {
-        children: [(0, Chunk951288.jsx)(g, {
+        children: [(0, Chunk951288.jsx)(p, {
           image: (0, Chunk951288.jsx)("img", {
             alt: "",
             src: require("./340061.js"),
@@ -130,9 +129,9 @@ class f extends Chunk647438.PureComponent {
           })
         }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
           className: Chunk186603.divider
-        }), (0, Chunk951288.jsx)(g, {
+        }), (0, Chunk951288.jsx)(p, {
           image: (0, Chunk951288.jsx)(Chunk198993.ZP, {
-            text: C
+            text: b
           }),
           label: Chunk388032.intl.string(Chunk388032.t["91InFx"]),
           text: Chunk388032.intl.string(Chunk388032.t.hFeBkp),
@@ -151,29 +150,29 @@ class f extends Chunk647438.PureComponent {
           })
         }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
           className: Chunk186603.divider
-        }), (0, Chunk951288.jsx)(g, {
+        }), (0, Chunk951288.jsx)(p, {
           image: (0, Chunk951288.jsx)("img", {
             alt: "",
             src: require("./308777.js")
           }),
           label: Chunk388032.intl.string(Chunk388032.t["SaD/LS"]),
           text: Chunk388032.intl.string(Chunk388032.t.vI1ziY),
-          children: E
+          children: m
         })]
       })]
     })
   }
   constructor(...e) {
-    super(...e), p(this, "state", {
+    super(...e), g(this, "state", {
       code: "",
       totpSecret: (0, d.bV)(),
       error: null,
       isVerifying: false
-    }), p(this, "handleCodeChange", e => {
+    }), g(this, "handleCodeChange", e => {
       this.setState({
         code: e
       })
-    }), p(this, "handleActivate", e => {
+    }), g(this, "handleActivate", e => {
       e.preventDefault();
       let {
         totpSecret: t,
@@ -181,14 +180,14 @@ class f extends Chunk647438.PureComponent {
       } = this.state;
       this.setState({
         isVerifying: true
-      }), o.Z.enable({
+      }), a.Z.enable({
         code: r,
         secret: (0, d.Qe)(t)
       }).then(this.handleActivateSuccess, e => this.setState({
         error: e.body.message,
         isVerifying: false
       }))
-    }), p(this, "handleActivateSuccess", () => {
+    }), g(this, "handleActivateSuccess", () => {
       let {
         onClose: e,
         handleEnableMFASuccess: t
@@ -199,4 +198,4 @@ class f extends Chunk647438.PureComponent {
     })
   }
 }
-let _ = f
+let x = f

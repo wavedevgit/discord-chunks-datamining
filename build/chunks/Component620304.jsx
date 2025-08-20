@@ -1,4 +1,4 @@
-/** Chunk was on 69003 **/
+/** Chunk was on 91488 **/
 /** chunk id: 620304, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => N
@@ -46,7 +46,7 @@ function S(e) {
   return e
 }
 
-function P(e, t) {
+function I(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -59,13 +59,13 @@ function P(e, t) {
   }), e
 }
 
-function I(e) {
+function P(e) {
   let {
     guild: t,
     tooltipTypes: l,
-    withMargin: I
+    withMargin: P
   } = e, N = (0, y.Z)(t, "GuildPowerupsProgressBar"), w = (0, _.Z)(t.id), Z = i.useCallback(() => {
-    (0, v.Z)(t.id, f.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY)
+    (0, j.Z)(t.id, f.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY)
   }, [t.id]), T = (0, c.e7)([m.Z], () => {
     var e;
     return null != (e = m.Z.getCountForGuild(t.id)) ? e : 0
@@ -87,10 +87,10 @@ function I(e) {
       width: "calc(".concat(A, "% - 4px)")
     })
   }, [A, D]);
-  let L = T >= N,
-    M = i.useRef(null),
+  let M = T >= N,
+    L = i.useRef(null),
     [k, U] = (0, h.US)(l),
-    G = e => (0, r.jsx)(d.P3F, P(S({}, e), {
+    G = e => (0, r.jsx)(d.P3F, I(S({}, e), {
       "aria-label": true,
       role: "button",
       focusProps: {
@@ -103,49 +103,49 @@ function I(e) {
         var t;
         null == e || null == (t = e.onClick) || t.call(e), Z()
       },
-      className: o()(x.container, {
-        [x.containerWithMargin]: I
+      className: o()(E.container, {
+        [E.containerWithMargin]: P
       }),
       onContextMenu: e => {
         w && (0, p.jW)(e, async () => {
           let {
             default: e
           } = await n.e("8570").then(n.bind(n, 651138));
-          return n => (0, r.jsx)(e, P(S({}, n), {
+          return n => (0, r.jsx)(e, I(S({}, n), {
             guild: t
           }))
         })
       },
       children: (0, r.jsxs)("div", {
-        className: x.contentContainer,
+        className: E.contentContainer,
         children: [(0, r.jsx)("div", {
-          className: x.progressContainer
+          className: E.progressContainer
         }), (0, r.jsx)(a.animated.div, {
-          className: o()(x.progress, {
-            [x.progressLow]: A <= 5
+          className: o()(E.progress, {
+            [E.progressLow]: A <= 5
           }),
           style: R
         }), (0, r.jsxs)("div", {
-          className: x.textContainer,
+          className: E.textContainer,
           children: [(0, r.jsxs)("div", {
-            className: x.textContentContainer,
+            className: E.textContentContainer,
             children: [(0, r.jsx)(s.xv, {
-              className: x.text,
+              className: E.text,
               variant: "text-xs/semibold",
-              children: E.intl.string(C.default.NI6IhY)
+              children: x.intl.string(C.default.NI6IhY)
             }), t.premiumSubscriberCount >= N && (0, r.jsx)(s.xv, {
-              className: x.text,
+              className: E.text,
               variant: "text-xs/semibold",
               children: "\uD83C\uDF89"
             })]
           }), (0, r.jsxs)("div", {
-            className: x.textContentContainer,
+            className: E.textContentContainer,
             children: [(0, r.jsx)(s.xv, {
-              className: o()(x.text, x.boostCountText),
+              className: o()(E.text, E.boostCountText),
               variant: "text-xs/semibold",
-              children: L ? E.intl.formatToPlainString(C.default["Ehpq+/"], {
+              children: M ? x.intl.formatToPlainString(C.default["Ehpq+/"], {
                 appliedBoostCount: T
-              }) : E.intl.formatToPlainString(C.default["/rbPDg"], {
+              }) : x.intl.formatToPlainString(C.default["/rbPDg"], {
                 appliedBoostCount: T,
                 maxBoostCount: N
               })
@@ -153,14 +153,14 @@ function I(e) {
               width: 12,
               height: 12,
               direction: b.Z.Directions.RIGHT,
-              className: o()(x.text, x.boostCountText)
+              className: o()(E.text, E.boostCountText)
             })]
           })]
         })]
       })
     }));
   return null != k ? (0, r.jsx)(d.yRy, {
-    targetElementRef: M,
+    targetElementRef: L,
     renderPopout: () => k === u.z.BOOSTER_ENHANCED_ROLE_COLORS_COACHMARK ? (0, r.jsx)(O.Z, {
       guild: t,
       markAsDismissed: U
@@ -169,10 +169,10 @@ function I(e) {
     align: "top",
     shouldShow: true,
     closeOnScroll: true,
-    onRequestClose: () => U(j.L.INDIRECT_ACTION),
+    onRequestClose: () => U(v.L.INDIRECT_ACTION),
     animation: d.yRy.Animation.TRANSLATE,
     children: e => (0, r.jsx)("div", {
-      ref: M,
+      ref: L,
       children: G(e)
     })
   }) : G()
@@ -184,7 +184,7 @@ function N(e) {
     tooltipTypes: n,
     withMargin: i
   } = e;
-  return (0, r.jsx)(I, {
+  return (0, r.jsx)(P, {
     guild: t,
     tooltipTypes: n,
     withMargin: i

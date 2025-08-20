@@ -1,4 +1,4 @@
-/** Chunk was on 36499 **/
+/** Chunk was on 5665 **/
 /** chunk id: 534469, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   AP: () => en,
@@ -185,8 +185,8 @@ function ei(e) {
     compact: b = false,
     className: y,
     groupId: _,
-    viewingChannelId: j
-  } = e, O = o.type === Y.uaV.REPLY ? o.messageReference : true, E = (0, c.JA)(null != (t = e.id) ? t : ""), {
+    viewingChannelId: O
+  } = e, j = o.type === Y.uaV.REPLY ? o.messageReference : true, E = (0, c.JA)(null != (t = e.id) ? t : ""), {
     onFocus: S
   } = E, I = et(E, ["onFocus"]), {
     isFocused: N,
@@ -196,7 +196,7 @@ function ei(e) {
     popouts: F,
     selected: V,
     setPopout: Q
-  } = (0, k.Z)(o.id, q.d$), J = v.RS.useSetting(), en = v.NA.useSetting(), er = (0, u.e7)([C.Z], () => C.Z.getMessageByReference(O)), ei = (0, m.A)((null != (n = o.editedTimestamp) ? n : o.timestamp).valueOf()), {
+  } = (0, k.Z)(o.id, q.d$), J = v.RS.useSetting(), en = v.NA.useSetting(), er = (0, u.e7)([C.Z], () => C.Z.getMessageByReference(j)), ei = (0, m.A)((null != (n = o.editedTimestamp) ? n : o.timestamp).valueOf()), {
     handleMouseEnter: el,
     handleMouseLeave: ea,
     isHovered: eo
@@ -216,7 +216,7 @@ function ei(e) {
     allowHeading: ei,
     allowLinks: true,
     previewLinkTarget: true,
-    viewingChannelId: j
+    viewingChannelId: O
   }), eh = (0, M.Z)(s, h, es), ef = (0, T.ZP)(o), em = (0, w.iG)(o, _), eg = (0, w.Gx)(o), eb = (0, G.Z)(e, ed, false), ey = i.useCallback(() => (0, x.XU)(g, h, s), [g, h, s]), e_ = (0, f.p9)({
     guildId: g,
     roleId: ef.iconRoleId
@@ -248,7 +248,7 @@ function ei(e) {
         setPopout: Q,
         referencedUsernameProfile: F.referencedUsernameProfile,
         referencedAvatarProfile: F.referencedAvatarProfile,
-        replyReference: O,
+        replyReference: j,
         replyMessage: er,
         isReplySpineClickable: true
       })),
@@ -256,7 +256,7 @@ function ei(e) {
         messageProps: e,
         setPopout: Q,
         messagePopouts: F,
-        replyReference: O,
+        replyReference: j,
         author: ef,
         repliedMessage: er,
         roleIcon: e_
@@ -320,8 +320,8 @@ let el = Chunk647438.memo(function(e) {
     {
       handleMouseEnter: ex,
       handleMouseLeave: ev,
-      hasHovered: ej,
-      isHovered: eO
+      hasHovered: eO,
+      isHovered: ej
     } = (0, R.tn)({
       groupId: ea,
       message: x,
@@ -343,11 +343,11 @@ let el = Chunk647438.memo(function(e) {
     eN = (0, u.e7)([E.Z], () => E.Z.isEditing(en, I), [en, I]),
     eA = (0, u.e7)([p.Z], () => p.Z.keyboardModeEnabled),
     ew = eb || eN || eA && eE,
-    eR = ew || eO,
-    eM = (0, u.e7)([j.Z], () => x.hasFlag(Y.iLy.HAS_THREAD) && j.Z.getChannel(S.default.castMessageIdAsChannelId(x.id))),
+    eR = ew || ej,
+    eM = (0, u.e7)([O.Z], () => x.hasFlag(Y.iLy.HAS_THREAD) && O.Z.getChannel(S.default.castMessageIdAsChannelId(x.id))),
     ek = x.isFirstMessageInForumPost(J),
     eD = (0, m.A)((null != (n = x.editedTimestamp) ? n : x.timestamp).valueOf()),
-    eL = (0, u.e7)([O.Z], () => O.Z.isDeveloper),
+    eL = (0, u.e7)([j.Z], () => j.Z.isDeveloper),
     {
       content: eU,
       hasSpoilerEmbeds: eB
@@ -398,7 +398,7 @@ let el = Chunk647438.memo(function(e) {
         children: [(0, y.Uw)(x) && (0, r.jsx)(g.Z, {
           compact: er,
           message: x,
-          hovering: eO && !eN && !eJ
+          hovering: ej && !eN && !eJ
         }), (0, r.jsx)(A.Z, ee($({}, ed), {
           "aria-setsize": false,
           "aria-roledescription": K.intl.string(K.t.BAB0yM),
@@ -426,7 +426,7 @@ let el = Chunk647438.memo(function(e) {
             [X.editing]: eN,
             [X.hasOpenPopouts]: eJ,
             [X.potioned]: (0, y.Uw)(x) && ep,
-            [Q.forceAnimate]: eO
+            [Q.forceAnimate]: ej
           }),
           zalgo: !eN,
           childrenRepliedMessage: eo || x.type !== Y.uaV.REPLY ? true : (0, z.Z)(ee($({}, e), {
@@ -455,11 +455,11 @@ let el = Chunk647438.memo(function(e) {
             isAutomodBlockedMessage: eQ,
             forceAddReactions: x.type === Y.uaV.EMOJI_ADDED
           }),
-          childrenButtons: ej || eS ? (0, F.Z)({
+          childrenButtons: eO || eS ? (0, F.Z)({
             buttonProps: e,
             setPopout: ey,
             messagePopouts: eg,
-            isFocused: eO || eE,
+            isFocused: ej || eE,
             messageWindow: eX.current
           }) : true,
           childrenSystemMessage: (0, W.Z)(e),

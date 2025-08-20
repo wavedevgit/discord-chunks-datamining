@@ -1,12 +1,12 @@
-/** Chunk was on 26475 **/
+/** Chunk was on 40226 **/
 /** chunk id: 996701, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => m
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk782568 = require("./782568.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -17,28 +17,28 @@ let u = e => {
     data: {
       url: t,
       link_text: n,
-      link_description: a,
+      link_description: i,
       is_localized: s
     }
   } = e;
-  return s ? (0, r.jsxs)(o.P3F, {
+  return s ? (0, r.jsxs)(a.P3F, {
     role: "link",
-    className: i()(d.linkButton, c.listElement),
+    className: l()(d.linkButton, c.listElement),
     onClick: () => {
-      (0, l.Z)(t)
+      (0, o.Z)(t)
     },
     children: [(0, r.jsxs)("div", {
       className: d.linkTextContainer,
-      children: [(0, r.jsx)(o.Text, {
+      children: [(0, r.jsx)(a.Text, {
         className: d.__invalid_linkText,
         variant: "text-md/semibold",
         children: n
-      }), null != a && "" !== a && (0, r.jsx)(o.Text, {
+      }), null != i && "" !== i && (0, r.jsx)(a.Text, {
         variant: "text-md/normal",
         color: "text-muted",
-        children: a
+        children: i
       })]
-    }), (0, r.jsx)(o.Gr1, {
+    }), (0, r.jsx)(a.Gr1, {
       size: "sm",
       color: "currentColor",
       className: d.linkIcon
@@ -46,7 +46,7 @@ let u = e => {
   }) : null
 };
 
-function _(e) {
+function m(e) {
   let {
     elements: t
   } = e;
@@ -64,15 +64,15 @@ function _(e) {
         data: n
       }, "external-link+".concat(t))
     }),
-    a = t.some(e => {
+    i = t.some(e => {
       let {
         data: t
       } = e;
       return t.is_header_hidden
     });
   return (0, r.jsxs)("div", {
-    className: i()(d.linksContainer, c.listElementWrapper),
-    children: [!a && (0, r.jsx)(o.X6q, {
+    className: l()(d.linksContainer, c.listElementWrapper),
+    children: [!i && (0, r.jsx)(a.X6q, {
       variant: "heading-sm/semibold",
       color: "header-secondary",
       className: d.header,

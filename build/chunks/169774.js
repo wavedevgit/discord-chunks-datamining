@@ -1,36 +1,36 @@
-/** Chunk was on 91584 **/
-/** chunk id: 169774, original params: t,e,r (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 169774, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 var Chunk947268 = require("./947268.js"),
   Chunk881886 = require("./881886.js");
 
-function o(t, e, r, n) {
-  if (t === r) returntrue;
-  if (!r.startsWith(t)) returnfalse;
-  var o = r.slice(t.length);
-  return !!e && (o = n ? n(o) : o, i.contains(o, e))
+function a(e, t, n, r) {
+  if (e === n) returntrue;
+  if (!n.startsWith(e)) returnfalse;
+  var a = n.slice(e.length);
+  return !!t && (a = r ? r(a) : a, i.contains(a, t))
 }
 
-function a(t) {
-  return "Windows" === n.platformName ? t.replace(/^\s*NT/, "") : t
+function o(e) {
+  return "Windows" === r.platformName ? e.replace(/^\s*NT/, "") : e
 }
 module.exports = require("./267100.js")({
-  isBrowser: function(t) {
-    return o(n.browserName, n.browserFullVersion, t)
+  isBrowser: function(e) {
+    return a(r.browserName, r.browserFullVersion, e)
   },
-  isBrowserArchitecture: function(t) {
-    return o(n.browserArchitecture, null, t)
+  isBrowserArchitecture: function(e) {
+    return a(r.browserArchitecture, null, e)
   },
-  isDevice: function(t) {
-    return o(n.deviceName, null, t)
+  isDevice: function(e) {
+    return a(r.deviceName, null, e)
   },
-  isEngine: function(t) {
-    return o(n.engineName, n.engineVersion, t)
+  isEngine: function(e) {
+    return a(r.engineName, r.engineVersion, e)
   },
-  isPlatform: function(t) {
-    return o(n.platformName, n.platformFullVersion, t, a)
+  isPlatform: function(e) {
+    return a(r.platformName, r.platformFullVersion, e, o)
   },
-  isPlatformArchitecture: function(t) {
-    return o(n.platformArchitecture, null, t)
+  isPlatformArchitecture: function(e) {
+    return a(r.platformArchitecture, null, e)
   }
 }, require("./746154.js"))

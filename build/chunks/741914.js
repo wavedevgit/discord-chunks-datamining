@@ -1,7 +1,8 @@
-/** Chunk was on 26434 **/
-/** chunk id: 741914, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 741914, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
@@ -9,49 +10,56 @@ var Chunk392711 = require("./392711.js"),
   Chunk428595 = require("./428595.js"),
   Chunk454585 = require("./454585.js");
 
-function s(e) {
+function l(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function c(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      var r;
-      r = n[t], t in e ? Object.defineProperty(e, t, {
-        value: r,
-        enumerable: true,
-        configurable: true,
-        writable: true
-      }) : e[t] = r
+      l(e, t, n[t])
     })
   }
   return e
 }
 
-function c(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
-    }
-    return n
-  })(Object(t)).forEach(function(n) {
+function u(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function d(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : u(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let u = i().omit(Chunk428595.Z.RULES, ["codeBlock", "heading"]),
-  d = c(s({}, Chunk723454.Z), {
+let f = i().omit(Chunk428595.Z.RULES, ["codeBlock", "heading"]),
+  _ = d(c({}, Chunk723454.Z), {
     parse: function(e, t, n) {
       var r;
-      let i = l.Z.parse(e, t, n),
+      let i = a.Z.parse(e, t, n),
         o = Math.min(6, (null != (r = n.initialHeaderLevel) ? r : 3) + i.level);
-      return c(s({}, i), {
+      return d(c({}, i), {
         level: o
       })
     }
   }),
-  p = Chunk454585.Z.combineAndInjectMentionRule(u, [Chunk454585.Z.createReactRules(Chunk454585.Z.defaultReactRuleOptions), {
-    header: d
+  p = Chunk454585.Z.combineAndInjectMentionRule(f, [Chunk454585.Z.createReactRules(Chunk454585.Z.defaultReactRuleOptions), {
+    header: _
   }]),
-  m = Chunk454585.Z.reactParserFor(p)
+  h = Chunk454585.Z.reactParserFor(p)

@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 821035, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 821035, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  P: () => j
+  P: () => y
 }), require("./290780.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -22,147 +23,147 @@ var Chunk524437 = require("./524437.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk789318 = require("./789318.js");
 
-function j(e) {
+function y(e) {
   var t;
   let {
     isNested: n = false
-  } = e, j = null == (t = (0, m.Z)()) || t, {
-    explicitContentGuilds: E,
-    explicitContentFriendDm: C,
-    explicitContentNonFriendDm: O
-  } = (0, d.B)(), v = e => {
+  } = e, y = null == (t = (0, f.Z)()) || t, {
+    explicitContentGuilds: O,
+    explicitContentFriendDm: v,
+    explicitContentNonFriendDm: I
+  } = (0, u.B)(), T = e => {
     let t = Object.values(e);
-    if ((0, o.Ks)() && t.includes(r.Q4.SHOW)) return void a.Z.showAgeVerificationGetStartedModal(l.cU.SENSITIVE_MEDIA_FILTER_SETTINGS);
+    if ((0, l.Ks)() && t.includes(i.Q4.SHOW)) return void o.Z.showAgeVerificationGetStartedModal(s.cU.SENSITIVE_MEDIA_FILTER_SETTINGS);
     (0, c.zj)(e)
   }, S = [{
-    value: r.Q4.BLUR,
-    label: x.intl.string(x.t.S49UaW)
+    value: i.Q4.BLUR,
+    label: E.intl.string(E.t.S49UaW)
   }, {
-    value: r.Q4.BLOCK,
-    label: x.intl.string(x.t["D/157e"])
-  }], T = [{
-    value: r.Q4.BLUR,
-    label: x.intl.string(x.t.S49UaW)
-  }], N = {
-    value: r.Q4.SHOW,
-    label: x.intl.string(x.t["5k5OFh"])
+    value: i.Q4.BLOCK,
+    label: E.intl.string(E.t["D/157e"])
+  }], A = [{
+    value: i.Q4.BLUR,
+    label: E.intl.string(E.t.S49UaW)
+  }], C = {
+    value: i.Q4.SHOW,
+    label: E.intl.string(E.t["5k5OFh"])
   };
-  return j && (S.unshift(N), T.unshift(N)), (0, i.jsx)(g.U, {
-    setting: f.s6.PRIVACY_SENSITIVE_MEDIA_V2,
+  return y && (S.unshift(C), A.unshift(C)), (0, r.jsx)(p.U, {
+    setting: m.s6.PRIVACY_SENSITIVE_MEDIA_V2,
     scrollPosition: h.FY.EXPLICIT_MEDIA_REDACTION_V2,
-    children: n ? (0, i.jsxs)(i.Fragment, {
-      children: [(0, i.jsxs)("div", {
-        className: _.selectItemRow,
-        children: [(0, i.jsx)(s.Text, {
+    children: n ? (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsxs)("div", {
+        className: b.selectItemRow,
+        children: [(0, r.jsx)(a.Text, {
           variant: "text-md/medium",
-          children: x.intl.string(x.t["+uI23N"])
-        }), (0, i.jsx)(s.q4e, {
-          look: s.qQH.CUSTOM,
+          children: E.intl.string(E.t["+uI23N"])
+        }), (0, r.jsx)(a.q4e, {
+          look: a.qQH.CUSTOM,
           options: S,
-          value: C,
-          onChange: e => v({
+          value: v,
+          onChange: e => T({
             explicitContentFriendDm: e
           }),
           renderOptionValue: e => {
             let [t] = e;
-            return (0, i.jsx)(u.Z, {
+            return (0, r.jsx)(d.Z, {
               option: t
             })
           },
-          renderOptionLabel: e => (0, i.jsx)(u.Z, {
+          renderOptionLabel: e => (0, r.jsx)(d.Z, {
             option: e
           })
         })]
-      }), (0, i.jsxs)("div", {
-        className: _.selectItemRow,
-        children: [(0, i.jsx)(s.Text, {
+      }), (0, r.jsxs)("div", {
+        className: b.selectItemRow,
+        children: [(0, r.jsx)(a.Text, {
           variant: "text-md/medium",
-          children: x.intl.string(x.t["Yh+HX1"])
-        }), (0, i.jsx)(s.q4e, {
-          look: s.qQH.CUSTOM,
+          children: E.intl.string(E.t["Yh+HX1"])
+        }), (0, r.jsx)(a.q4e, {
+          look: a.qQH.CUSTOM,
           options: S,
-          value: O,
-          onChange: e => v({
+          value: I,
+          onChange: e => T({
             explicitContentNonFriendDm: e
           }),
           renderOptionValue: e => {
             let [t] = e;
-            return (0, i.jsx)(u.Z, {
+            return (0, r.jsx)(d.Z, {
               option: t
             })
           },
-          renderOptionLabel: e => (0, i.jsx)(u.Z, {
+          renderOptionLabel: e => (0, r.jsx)(d.Z, {
             option: e
           })
         })]
-      }), (0, i.jsxs)("div", {
-        className: _.selectItemRow,
-        children: [(0, i.jsx)(s.Text, {
+      }), (0, r.jsxs)("div", {
+        className: b.selectItemRow,
+        children: [(0, r.jsx)(a.Text, {
           variant: "text-md/medium",
-          color: j ? "text-primary" : "text-muted",
-          children: x.intl.string(x.t["FP+a4+"])
-        }), (0, i.jsx)(s.q4e, {
-          look: s.qQH.CUSTOM,
-          options: T,
-          value: E,
-          onChange: e => v({
+          color: y ? "text-primary" : "text-muted",
+          children: E.intl.string(E.t["FP+a4+"])
+        }), (0, r.jsx)(a.q4e, {
+          look: a.qQH.CUSTOM,
+          options: A,
+          value: O,
+          onChange: e => T({
             explicitContentGuilds: e
           }),
-          isDisabled: !j,
+          isDisabled: !y,
           renderOptionValue: e => {
             let [t] = e;
-            return (0, i.jsx)(u.Z, {
+            return (0, r.jsx)(d.Z, {
               option: t
             })
           },
-          renderOptionLabel: e => (0, i.jsx)(u.Z, {
+          renderOptionLabel: e => (0, r.jsx)(d.Z, {
             option: e
           })
         })]
-      }), (0, i.jsx)(s.Text, {
+      }), (0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
         color: "text-muted",
-        children: x.intl.string(x.t.Wnojv7)
+        children: E.intl.string(E.t.Wnojv7)
       })]
-    }) : (0, i.jsxs)(i.Fragment, {
-      children: [(0, i.jsx)(g.H, {
-        header: x.intl.string(x.t["c/UOwM"]),
-        description: x.intl.format(x.t.ZUvrwM, {
-          learnMoreLink: p.Z.getArticleURL(b.BhN.EXPLICIT_MEDIA_REDACTION)
+    }) : (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(p.H, {
+        header: E.intl.string(E.t["c/UOwM"]),
+        description: E.intl.format(E.t.ZUvrwM, {
+          learnMoreLink: _.Z.getArticleURL(g.BhN.EXPLICIT_MEDIA_REDACTION)
         })
-      }), (0, i.jsx)(s.xJW, {
-        tag: s.RB0.H3,
-        title: x.intl.string(x.t["6k0AgI"]),
-        titleClassName: _.selectItemTitle,
-        children: (0, i.jsx)(s.q4e, {
+      }), (0, r.jsx)(a.xJW, {
+        tag: a.RB0.H3,
+        title: E.intl.string(E.t["6k0AgI"]),
+        titleClassName: b.selectItemTitle,
+        children: (0, r.jsx)(a.q4e, {
           options: S,
-          value: C,
-          onChange: e => v({
+          value: v,
+          onChange: e => T({
             explicitContentFriendDm: e
           })
         })
-      }), (0, i.jsx)(s.xJW, {
-        tag: s.RB0.H3,
-        title: x.intl.string(x.t.D2EGSk),
-        titleClassName: _.selectItemTitle,
-        children: (0, i.jsx)(s.q4e, {
+      }), (0, r.jsx)(a.xJW, {
+        tag: a.RB0.H3,
+        title: E.intl.string(E.t.D2EGSk),
+        titleClassName: b.selectItemTitle,
+        children: (0, r.jsx)(a.q4e, {
           options: S,
-          value: O,
-          onChange: e => v({
+          value: I,
+          onChange: e => T({
             explicitContentNonFriendDm: e
           })
         })
-      }), (0, i.jsx)(s.xJW, {
-        tag: s.RB0.H3,
-        title: x.intl.string(x.t["FP+a4+"]),
-        titleClassName: _.selectItemTitle,
-        children: (0, i.jsx)(s.q4e, {
-          options: T,
-          value: E,
-          onChange: e => v({
+      }), (0, r.jsx)(a.xJW, {
+        tag: a.RB0.H3,
+        title: E.intl.string(E.t["FP+a4+"]),
+        titleClassName: b.selectItemTitle,
+        children: (0, r.jsx)(a.q4e, {
+          options: A,
+          value: O,
+          onChange: e => T({
             explicitContentGuilds: e
           }),
-          isDisabled: !j
+          isDisabled: !y
         })
       })]
     })

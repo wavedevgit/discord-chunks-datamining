@@ -2,7 +2,7 @@
 /** chunk id: 224706, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => V
+  Z: () => Z
 }), require("./388685.js"), require("./35282.js"), require("./415506.js");
 var Chunk664751 = require("./664751.js"),
   Chunk990547 = require("./990547.js"),
@@ -35,11 +35,11 @@ var Chunk664751 = require("./664751.js"),
   Chunk981631 = require("./981631.js"),
   Chunk701488 = require("./701488.js"),
   Chunk388032 = require("./388032.jsx");
-let x = 3,
-  M = 20,
-  k = new Chunk710845.Z("GamesActionCreators");
+let L = 3,
+  j = 20,
+  M = new Chunk710845.Z("GamesActionCreators");
 
-function j(e) {
+function k(e) {
   let {
     applicationId: t,
     secret: n,
@@ -160,7 +160,7 @@ async function B(e) {
       pids: e
     })
   }).catch(e => {
-    P.Z.show(w.kVF.LAUNCH_GAME_FAILURE, L.intl.string(L.t.YZEBdn)), l.Z.dispatch({
+    P.Z.show(w.kVF.LAUNCH_GAME_FAILURE, x.intl.string(x.t.YZEBdn)), l.Z.dispatch({
       type: "GAME_LAUNCH_FAIL",
       applicationId: t,
       error: f
@@ -171,7 +171,7 @@ async function B(e) {
     error: f
   }), Promise.reject(f))
 }
-let V = {
+let Z = {
   addGame(e, t) {
     l.Z.dispatch({
       type: "RUNNING_GAME_ADD_OVERRIDE",
@@ -216,7 +216,7 @@ let V = {
   },
   identifyGame: (e, t) => (0, d.Z)().then(t => new Promise((n, r) => {
     if (null == t) return void r(Error("Game utils module not loaded"));
-    t.identifyGame(e, (t, i) => (k.log("Identified game: ", {
+    t.identifyGame(e, (t, i) => (M.log("Identified game: ", {
       status: t,
       name: i.name,
       iconHash: i.iconHash,
@@ -262,7 +262,7 @@ let V = {
         })
       }
     };
-    for (; n.length > 0;) r(n.splice(0, M))
+    for (; n.length > 0;) r(n.splice(0, j))
   },
   getDetectableGames() {
     if (!Chunk77498.Z.canFetchDetectableGames()) return;
@@ -326,7 +326,7 @@ let V = {
       sku: a,
       executableName: s
     } = e, c = (0, d.F)(s);
-    k.log("Reporting unverified game: ", {
+    M.log("Reporting unverified game: ", {
       name: t,
       executableName: s,
       iconHash: n,
@@ -343,7 +343,7 @@ let V = {
         distributor_application: U(i, a),
         executable: c,
         publisher: r,
-        report_version: x
+        report_version: L
       },
       retries: 1,
       oldFormErrors: true,
@@ -410,8 +410,8 @@ let V = {
       applicationId: r
     });
     try {
-      let e = await C.Z.getJoinSecret(t, n, r, i, a);
-      return j({
+      let e = await N.Z.getJoinSecret(t, n, r, i, a);
+      return k({
         applicationId: r,
         secret: e,
         channelId: i,
@@ -428,5 +428,5 @@ let V = {
       }), false
     }
   },
-  joinWithSecret: j
+  joinWithSecret: k
 }

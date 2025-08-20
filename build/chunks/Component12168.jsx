@@ -60,12 +60,12 @@ function A(e, t) {
   return n
 }
 
-function N(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let C = Chunk185923.Hz.CHAT,
+let N = Chunk185923.Hz.CHAT,
   R = [Chunk633302.ZP.getByName("thumbsup"), Chunk633302.ZP.getByName("eyes"), Chunk633302.ZP.getByName("laughing"), Chunk633302.ZP.getByName("watermelon"), Chunk633302.ZP.getByName("fork_and_knife"), Chunk633302.ZP.getByName("yum")].filter(Chunk823379.lm);
 
 function P(e) {
@@ -150,14 +150,14 @@ function D(e) {
     recentlyUsedEmojis: b,
     analyticsOverride: T,
     ref: A
-  } = e, D = (0, f.Dt)(), [L, x] = i.useState(false), M = (0, _.wC)(t.guild_id), k = (0, s.uniqBy)([...M, ...R], "name").filter(e => !E.ZP.isEmojiFilteredOrLocked({
+  } = e, D = (0, f.Dt)(), [x, L] = i.useState(false), j = (0, _.wC)(t.guild_id), M = (0, s.uniqBy)([...j, ...R], "name").filter(e => !E.ZP.isEmojiFilteredOrLocked({
     emoji: e,
     channel: t,
-    intention: C
+    intention: N
   })).slice(0, y.e5);
-  null != b && b.length > 0 && k.splice(k.length - 1, 1, b[0]);
-  let j = e => {
-      x(e), null == p || p(e)
+  null != b && b.length > 0 && M.splice(M.length - 1, 1, b[0]);
+  let k = e => {
+      L(e), null == p || p(e)
     },
     U = e => {
       let {
@@ -165,10 +165,10 @@ function D(e) {
         willClose: n
       } = e;
       if (null == t && n) return void a();
-      null != t && u(t), j(!n), n && g.kJ.setSearchPlaceholder(null)
+      null != t && u(t), k(!n), n && g.kJ.setSearchPlaceholder(null)
     },
     G = e => {
-      null != e && e.key !== v.vn.TAB && (e.key !== v.vn.ENTER || e.shiftKey ? j(true) : j(!L))
+      null != e && e.key !== v.vn.TAB && (e.key !== v.vn.ENTER || e.shiftKey ? k(true) : k(!x))
     };
   return (0, r.jsxs)(c.VqE, {
     "aria-labelledby": D,
@@ -187,21 +187,21 @@ function D(e) {
         analyticsOverride: T,
         channel: t,
         className: o()(I.animatedPicker, {
-          [I.animatedPickerTall]: L
+          [I.animatedPickerTall]: x
         }),
         headerClassName: o()(I.emojiPickerHeader, {
-          [I.emojiPickerHeaderExpanded]: L
+          [I.emojiPickerHeaderExpanded]: x
         }),
         closePopout: a,
-        onSelectEmoji: L ? U : () => {},
-        shouldHidePickerActions: !L,
+        onSelectEmoji: x ? U : () => {},
+        shouldHidePickerActions: !x,
         wrapper: "div",
-        pickerIntention: C,
-        searchProps: N(S({}, m), {
+        pickerIntention: N,
+        searchProps: C(S({}, m), {
           accessory: (0, r.jsx)(w, {
             otherAccessories: null == m ? true : m.accessory,
-            isEmojiPickerExpanded: L,
-            onSetExpanded: j,
+            isEmojiPickerExpanded: x,
+            onSetExpanded: k,
             onFocus: l
           }),
           onKeyDown: G
@@ -210,7 +210,7 @@ function D(e) {
         className: I.slotsContainer,
         children: (0, r.jsx)("div", {
           className: o()(I.slots, I.slotsWide),
-          children: k.map(e => {
+          children: M.map(e => {
             let n = E.ZP.isEmojiDisabled({
               emoji: e,
               channel: t,

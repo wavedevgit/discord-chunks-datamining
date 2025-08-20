@@ -1,6 +1,6 @@
-/** Chunk was on 91584 **/
-/** chunk id: 740336, original params: t (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 740336, original params: e (module,exports,re quire) **/
 "use strict";
-module.exports = function(t) {
-  return "undefined" != typeof window && !!window.__DRAFT_GKX && !!window.__DRAFT_GKX[t]
+module.exports = function(e) {
+  return "undefined" != typeof window && !!window.__DRAFT_GKX && !!window.__DRAFT_GKX[e]
 }

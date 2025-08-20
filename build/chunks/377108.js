@@ -7,12 +7,12 @@ require.d(exports, {
   Lt: () => m,
   ND: () => y,
   PL: () => v,
-  UY: () => x,
+  UY: () => L,
   YI: () => T,
   _F: () => A,
-  h_: () => C,
+  h_: () => N,
   ji: () => u,
-  lG: () => k,
+  lG: () => M,
   ls: () => E,
   pL: () => D,
   wK: () => f
@@ -61,10 +61,10 @@ class c extends Chunk495852.C {
           a.applicationCommandFrecency = T.internalBinaryRead(e, e.uint32(), n, a.applicationCommandFrecency);
           break;
         case 8:
-          a.favoriteSoundboardSounds = C.internalBinaryRead(e, e.uint32(), n, a.favoriteSoundboardSounds);
+          a.favoriteSoundboardSounds = N.internalBinaryRead(e, e.uint32(), n, a.favoriteSoundboardSounds);
           break;
         case 9:
-          a.applicationFrecency = x.internalBinaryRead(e, e.uint32(), n, a.applicationFrecency);
+          a.applicationFrecency = L.internalBinaryRead(e, e.uint32(), n, a.applicationFrecency);
           break;
         case 10:
           a.heardSoundFrecency = P.internalBinaryRead(e, e.uint32(), n, a.heardSoundFrecency);
@@ -73,7 +73,7 @@ class c extends Chunk495852.C {
           a.playedSoundFrecency = D.internalBinaryRead(e, e.uint32(), n, a.playedSoundFrecency);
           break;
         case 12:
-          a.guildAndChannelFrecency = k.internalBinaryRead(e, e.uint32(), n, a.guildAndChannelFrecency);
+          a.guildAndChannelFrecency = M.internalBinaryRead(e, e.uint32(), n, a.guildAndChannelFrecency);
           break;
         case 13:
           a.emojiReactionFrecency = v.internalBinaryRead(e, e.uint32(), n, a.emojiReactionFrecency);
@@ -88,7 +88,7 @@ class c extends Chunk495852.C {
     return a
   }
   internalBinaryWrite(e, t, n) {
-    e.versions && s.L.internalBinaryWrite(e.versions, t.tag(1, r.TD.LengthDelimited).fork(), n).join(), e.favoriteGifs && f.internalBinaryWrite(e.favoriteGifs, t.tag(2, r.TD.LengthDelimited).fork(), n).join(), e.favoriteStickers && m.internalBinaryWrite(e.favoriteStickers, t.tag(3, r.TD.LengthDelimited).fork(), n).join(), e.stickerFrecency && E.internalBinaryWrite(e.stickerFrecency, t.tag(4, r.TD.LengthDelimited).fork(), n).join(), e.favoriteEmojis && y.internalBinaryWrite(e.favoriteEmojis, t.tag(5, r.TD.LengthDelimited).fork(), n).join(), e.emojiFrecency && v.internalBinaryWrite(e.emojiFrecency, t.tag(6, r.TD.LengthDelimited).fork(), n).join(), e.applicationCommandFrecency && T.internalBinaryWrite(e.applicationCommandFrecency, t.tag(7, r.TD.LengthDelimited).fork(), n).join(), e.favoriteSoundboardSounds && C.internalBinaryWrite(e.favoriteSoundboardSounds, t.tag(8, r.TD.LengthDelimited).fork(), n).join(), e.applicationFrecency && x.internalBinaryWrite(e.applicationFrecency, t.tag(9, r.TD.LengthDelimited).fork(), n).join(), e.heardSoundFrecency && P.internalBinaryWrite(e.heardSoundFrecency, t.tag(10, r.TD.LengthDelimited).fork(), n).join(), e.playedSoundFrecency && D.internalBinaryWrite(e.playedSoundFrecency, t.tag(11, r.TD.LengthDelimited).fork(), n).join(), e.guildAndChannelFrecency && k.internalBinaryWrite(e.guildAndChannelFrecency, t.tag(12, r.TD.LengthDelimited).fork(), n).join(), e.emojiReactionFrecency && v.internalBinaryWrite(e.emojiReactionFrecency, t.tag(13, r.TD.LengthDelimited).fork(), n).join();
+    e.versions && s.L.internalBinaryWrite(e.versions, t.tag(1, r.TD.LengthDelimited).fork(), n).join(), e.favoriteGifs && f.internalBinaryWrite(e.favoriteGifs, t.tag(2, r.TD.LengthDelimited).fork(), n).join(), e.favoriteStickers && m.internalBinaryWrite(e.favoriteStickers, t.tag(3, r.TD.LengthDelimited).fork(), n).join(), e.stickerFrecency && E.internalBinaryWrite(e.stickerFrecency, t.tag(4, r.TD.LengthDelimited).fork(), n).join(), e.favoriteEmojis && y.internalBinaryWrite(e.favoriteEmojis, t.tag(5, r.TD.LengthDelimited).fork(), n).join(), e.emojiFrecency && v.internalBinaryWrite(e.emojiFrecency, t.tag(6, r.TD.LengthDelimited).fork(), n).join(), e.applicationCommandFrecency && T.internalBinaryWrite(e.applicationCommandFrecency, t.tag(7, r.TD.LengthDelimited).fork(), n).join(), e.favoriteSoundboardSounds && N.internalBinaryWrite(e.favoriteSoundboardSounds, t.tag(8, r.TD.LengthDelimited).fork(), n).join(), e.applicationFrecency && L.internalBinaryWrite(e.applicationFrecency, t.tag(9, r.TD.LengthDelimited).fork(), n).join(), e.heardSoundFrecency && P.internalBinaryWrite(e.heardSoundFrecency, t.tag(10, r.TD.LengthDelimited).fork(), n).join(), e.playedSoundFrecency && D.internalBinaryWrite(e.playedSoundFrecency, t.tag(11, r.TD.LengthDelimited).fork(), n).join(), e.guildAndChannelFrecency && M.internalBinaryWrite(e.guildAndChannelFrecency, t.tag(12, r.TD.LengthDelimited).fork(), n).join(), e.emojiReactionFrecency && v.internalBinaryWrite(e.emojiReactionFrecency, t.tag(13, r.TD.LengthDelimited).fork(), n).join();
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.z.onWrite : i)(this.typeName, e, t), t
   }
@@ -132,12 +132,12 @@ class c extends Chunk495852.C {
       no: 8,
       name: "favorite_soundboard_sounds",
       kind: "message",
-      T: () => C
+      T: () => N
     }, {
       no: 9,
       name: "application_frecency",
       kind: "message",
-      T: () => x
+      T: () => L
     }, {
       no: 10,
       name: "heard_sound_frecency",
@@ -152,7 +152,7 @@ class c extends Chunk495852.C {
       no: 12,
       name: "guild_and_channel_frecency",
       kind: "message",
-      T: () => k
+      T: () => M
     }, {
       no: 13,
       name: "emoji_reaction_frecency",
@@ -673,7 +673,7 @@ class S extends Chunk495852.C {
   }
 }
 let A = new S;
-class N extends Chunk495852.C {
+class C extends Chunk495852.C {
   create(e) {
     let t = {
       soundIds: []
@@ -720,7 +720,7 @@ class N extends Chunk495852.C {
     }])
   }
 }
-let C = new N;
+let N = new C;
 class R extends Chunk495852.C {
   create(e) {
     let t = {
@@ -847,7 +847,7 @@ class w extends Chunk495852.C {
   }
 }
 let D = new w;
-class L extends Chunk495852.C {
+class x extends Chunk495852.C {
   create(e) {
     let t = {
       applications: {}
@@ -909,8 +909,8 @@ class L extends Chunk495852.C {
     }])
   }
 }
-let x = new L;
-class M extends Chunk495852.C {
+let L = new x;
+class j extends Chunk495852.C {
   create(e) {
     let t = {
       guildAndChannels: {}
@@ -972,4 +972,4 @@ class M extends Chunk495852.C {
     }])
   }
 }
-let k = new M
+let M = new j

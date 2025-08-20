@@ -2,7 +2,7 @@
 /** chunk id: 172800, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => x
+  Z: () => L
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -30,7 +30,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk999642 = require("./999642.js");
 
-function C(e, t, n) {
+function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -46,7 +46,7 @@ function R(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      C(e, t, n[t])
+      N(e, t, n[t])
     })
   }
   return e
@@ -71,7 +71,7 @@ function w(e, t) {
 
 function D(e, t) {
   if (null == e) return {};
-  var n, r, i = L(e, t);
+  var n, r, i = x(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -79,30 +79,30 @@ function D(e, t) {
   return i
 }
 
-function L(e, t) {
+function x(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let x = e => {
+let L = e => {
   let {
     emojiDescriptors: t,
     emojiSize: a,
-    onSelect: C,
+    onSelect: N,
     onSelectSoundmoji: P,
-    onInspect: L,
-    surrogateCodePoint: x,
-    getEmojiItemProps: M,
-    getEmojiRowProps: k,
-    isScrolling: j,
+    onInspect: x,
+    surrogateCodePoint: L,
+    getEmojiItemProps: j,
+    getEmojiRowProps: M,
+    isScrolling: k,
     isUsingKeyboardNavigation: U,
     rowIndex: G,
     allowAnimatedEmoji: B,
-    showEmojiFavoriteTooltip: V,
-    channelGuildId: F,
-    category: Z,
+    showEmojiFavoriteTooltip: Z,
+    channelGuildId: V,
+    category: F,
     selectedItemClassName: H,
     channelId: Y,
     messageId: W,
@@ -140,12 +140,12 @@ let x = e => {
           } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, {
             visibleRowIndex: _,
             columnIndex: p
-          } = e, h = null != (n = M(p, G)) ? n : {}, {
+          } = e, h = null != (n = j(p, G)) ? n : {}, {
             ref: m,
             tabIndex: g,
             onFocus: E
           } = h, b = D(h, ["ref", "tabIndex", "onFocus"]), y = el.rowIndex === _ && el.columnIndex === p, O = () => {
-            j.current || U.current || L(e)
+            k.current || U.current || x(e)
           };
           return (0, i.createElement)("li", w(R({}, b), {
             key: t
@@ -153,12 +153,12 @@ let x = e => {
             children: (0, r.jsx)("button", {
               "aria-label": d,
               ref: m,
-              className: o()(N.emojiItem, {
-                [N.emojiItemLarge]: e_,
-                [N.emojiItemMedium]: ep,
-                [N.emojiItemSelected]: y && !f,
+              className: o()(C.emojiItem, {
+                [C.emojiItemLarge]: e_,
+                [C.emojiItemMedium]: ep,
+                [C.emojiItemSelected]: y && !f,
                 [null != H ? H : ""]: y,
-                [N.showPulse]: eu === t
+                [C.showPulse]: eu === t
               }),
               onFocus: null != E ? E : O,
               onMouseOver: O,
@@ -176,7 +176,7 @@ let x = e => {
             visibleRowIndex: t,
             columnIndex: i
           } = e, a = el.rowIndex === t && el.columnIndex === i, o = t => {
-            t.stopPropagation(), j.current || U.current || (C(e, {
+            t.stopPropagation(), k.current || U.current || (N(e, {
               isFinalSelection: true,
               toggleFavorite: false
             }), (0, f.D)(e.guildId), e.sectionCollapsedToThreeRows || q(), y.default.track(S.rMx.EMOJI_PICKER_THREE_ROW_COLLAPSE_TOGGLED, {
@@ -187,7 +187,7 @@ let x = e => {
           return n({
             handleSelect: o,
             icon: (0, r.jsx)("img", {
-              className: N.icon,
+              className: C.icon,
               src: l,
               alt: ""
             }),
@@ -198,7 +198,7 @@ let x = e => {
         case v.ld.CREATE_EMOJI: {
           if (Q) return null;
           let t = t => {
-            t.stopPropagation(), j.current || U.current || (C(e, {
+            t.stopPropagation(), k.current || U.current || (N(e, {
               isFinalSelection: true,
               toggleFavorite: false
             }), m.Z.open(e.guildId, S.pNK.EMOJI, S.jXE.EMOJI_PICKER_POPOUT))
@@ -208,8 +208,8 @@ let x = e => {
             icon: (0, r.jsx)(l.oFk, {
               size: "md",
               color: "currentColor",
-              className: N.icon,
-              colorClass: N.icon
+              className: C.icon,
+              colorClass: C.icon
             }),
             ariaLabel: A.intl.string(A.t["Z/r7IS"]),
             shouldShowRoundHighlight: false
@@ -226,20 +226,20 @@ let x = e => {
             descriptor: e,
             emojiItemKey: t,
             isInspected: o,
-            isScrolling: j,
+            isScrolling: k,
             isUsingKeyboardNavigation: U,
-            surrogateCodePoint: x,
+            surrogateCodePoint: L,
             allowAnimatedEmoji: B,
             selectedItemClassName: H,
-            onSelect: C,
-            onInspect: L,
-            channelGuildId: F,
-            getEmojiItemProps: M,
+            onSelect: N,
+            onInspect: x,
+            channelGuildId: V,
+            getEmojiItemProps: j,
             isMediumSize: ep,
             isLargeSize: e_,
             pulseItemKey: eu,
             setPulseItemKey: ed,
-            showEmojiFavoriteTooltip: V,
+            showEmojiFavoriteTooltip: Z,
             messageId: W,
             isBurstReaction: K,
             rowPosition: null == ef || null == (a = ef.current) ? true : a.getBoundingClientRect(),
@@ -250,23 +250,23 @@ let x = e => {
           return
       }
     },
-    em = e => (0, r.jsx)("ul", w(R({}, k(G)), {
-      className: o()(N.emojiListRow, {
-        [N.emojiListRowLargeSize]: e_,
-        [N.emojiListRowMediumSize]: ep
+    em = e => (0, r.jsx)("ul", w(R({}, M(G)), {
+      className: o()(C.emojiListRow, {
+        [C.emojiListRowLargeSize]: e_,
+        [C.emojiListRowMediumSize]: ep
       }),
       ref: ef,
       children: e.map(eh)
     }));
-  if (Z === T.UX.SOUNDMOJI) return (0, r.jsx)("ul", {
-    className: N.emojiListRow,
+  if (F === T.UX.SOUNDMOJI) return (0, r.jsx)("ul", {
+    className: C.emojiListRow,
     ref: ef,
     children: (0, r.jsx)(g.Z, {
       channelId: Y,
       onSelectSoundmoji: P
     })
   });
-  if (Z !== T.En.TOP_GUILD_EMOJI) return em(t);
+  if (F !== T.En.TOP_GUILD_EMOJI) return em(t);
   let eg = t.filter(e => {
       if (X && e.type === v.ld.CREATE_EMOJI) returntrue;
       let t = e;
@@ -277,28 +277,28 @@ let x = e => {
       return t.subCategory === T.t0.NEWLY_ADDED_EMOJI && t.emoji.type === _.B.GUILD && p.Z.isNewerThanLastSeen(t.emoji.guildId, t.emoji.id)
     });
   return 0 === eE.length ? em(t) : (0, r.jsxs)("div", {
-    className: N.topEmojiSectionContainer,
+    className: C.topEmojiSectionContainer,
     children: [(0, r.jsx)("div", {
-      className: o()(N.topEmojiContainer, {
-        [N.noEmojis]: 0 === eg.length
+      className: o()(C.topEmojiContainer, {
+        [C.noEmojis]: 0 === eg.length
       }),
       children: em(eg)
     }), (0, r.jsxs)("div", {
-      className: N.newlyAddedHighlightContainer,
+      className: C.newlyAddedHighlightContainer,
       children: [(0, r.jsx)("div", {
-        className: o()(N.newlyAddedHighlight, {
-          [N.oneItem]: 1 === eE.length,
-          [N.alignRight]: eg.length > 0
+        className: o()(C.newlyAddedHighlight, {
+          [C.oneItem]: 1 === eE.length,
+          [C.alignRight]: eg.length > 0
         }),
         children: em(eE)
       }), (0, r.jsxs)("div", {
-        className: o()(N.newlyAddedBadge, {
-          [N.newlyAddedBadgeLarge]: e_,
-          [N.newlyAddedBadgeMedium]: ep,
-          [N.alignRight]: eg.length > 0
+        className: o()(C.newlyAddedBadge, {
+          [C.newlyAddedBadgeLarge]: e_,
+          [C.newlyAddedBadgeMedium]: ep,
+          [C.alignRight]: eg.length > 0
         }),
         children: [(0, r.jsx)(b.Z, {
-          foreground: N.newlyAddedBadgeStar
+          foreground: C.newlyAddedBadgeStar
         }), (0, r.jsx)(l.Text, {
           variant: "text-xs/semibold",
           color: "always-white",

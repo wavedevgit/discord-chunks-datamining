@@ -2,7 +2,7 @@
 /** chunk id: 380736, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Y: () => N,
+  Y: () => C,
   Z: () => P
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -83,7 +83,7 @@ function S(e, t) {
 function A(e) {
   e.currentTarget.scrollTo(0, 0)
 }
-let N = Chunk647438.memo(function(e) {
+let C = Chunk647438.memo(function(e) {
   let {
     maxBodyLines: t,
     expand: n = false,
@@ -97,14 +97,14 @@ let N = Chunk647438.memo(function(e) {
     confirmText: I,
     icon: T,
     body: S,
-    title: N,
-    renderFooter: C,
+    title: C,
+    renderFooter: N,
     contentOpacity: R,
     status: P,
     containerRef: w,
     className: D,
-    wrapperClassName: L
-  } = e, [x, M] = i.useState(false), k = n || x || P === g._1z.FOCUSED, j = (0, l.e7)([h.ZP], () => h.ZP.isInputLocked((0, f.getPID)()));
+    wrapperClassName: x
+  } = e, [L, j] = i.useState(false), M = n || L || P === g._1z.FOCUSED, k = (0, l.e7)([h.ZP], () => h.ZP.isInputLocked((0, f.getPID)()));
   i.useEffect(() => {
     null == a || a()
   }, [a]);
@@ -117,14 +117,14 @@ let N = Chunk647438.memo(function(e) {
     B = i.useCallback(e => {
       e.stopPropagation(), null == m || m(e)
     }, [m]),
-    V = i.useCallback(() => {
-      M(true)
+    Z = i.useCallback(() => {
+      j(true)
     }, []),
-    F = i.useCallback(() => {
-      M(false)
+    V = i.useCallback(() => {
+      j(false)
     }, []);
 
-  function Z() {
+  function F() {
     return (0, r.jsx)(_.Z, {
       className: b.dismissButton,
       onDismiss: U,
@@ -133,7 +133,7 @@ let N = Chunk647438.memo(function(e) {
   }
 
   function H() {
-    let e = "function" == typeof O ? O(k, j) : O;
+    let e = "function" == typeof O ? O(M, k) : O;
     return null != O ? (0, r.jsx)(u.Text, {
       className: b.hint,
       color: "text-muted",
@@ -175,7 +175,7 @@ let N = Chunk647438.memo(function(e) {
   }
 
   function K() {
-    let e = null == C ? true : C(k, j);
+    let e = null == N ? true : N(M, k);
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)(s.animated.div, {
         className: b.iconAndDetails,
@@ -188,11 +188,11 @@ let N = Chunk647438.memo(function(e) {
             color: "interactive-normal",
             variant: "text-sm/semibold",
             lineClamp: 2,
-            children: N
+            children: C
           }), null != S ? (0, r.jsx)(u.Text, {
             color: "interactive-normal",
             variant: "text-sm/normal",
-            lineClamp: null != t ? t * (k ? 2 : 1) : true,
+            lineClamp: null != t ? t * (M ? 2 : 1) : true,
             children: S
           }) : null, H(), Y()]
         })]
@@ -206,24 +206,24 @@ let N = Chunk647438.memo(function(e) {
   }
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: o()(b.overflowWrapper, L),
+      className: o()(b.overflowWrapper, x),
       onScroll: A,
       children: (0, r.jsx)(u.P3F, {
         innerRef: w,
         ignoreKeyPress: true,
-        onMouseOver: V,
-        onMouseLeave: F,
+        onMouseOver: Z,
+        onMouseLeave: V,
         onClick: y,
         className: o()(b.container, {
           [b.clickable]: null != y
         }, D),
         children: K()
       })
-    }), Z()]
+    }), F()]
   })
 });
 
-function C(e) {
+function N(e) {
   let {
     springs: {
       opacity: t,
@@ -295,28 +295,28 @@ function P(e) {
     props: {
       onNotificationShow: w,
       onDismissClick: D,
-      renderFooter: L,
-      onNotificationClick: x,
-      onConfirmClick: M,
-      onCancelClick: k,
-      disableClickableRegions: j = false
+      renderFooter: x,
+      onNotificationClick: L,
+      onConfirmClick: j,
+      onCancelClick: M,
+      disableClickableRegions: k = false
     },
     status: U
-  } = t, G = T(t.props, ["onNotificationShow", "onDismissClick", "renderFooter", "onNotificationClick", "onConfirmClick", "onCancelClick", "disableClickableRegions"]), B = !o && a, V = 0 === n && !j && !B, {
-    ref: F,
-    springs: Z
+  } = t, G = T(t.props, ["onNotificationShow", "onDismissClick", "renderFooter", "onNotificationClick", "onConfirmClick", "onCancelClick", "disableClickableRegions"]), B = !o && a, Z = 0 === n && !k && !B, {
+    ref: V,
+    springs: F
   } = (0, m.X4)(t.id, s, l);
-  return (0, r.jsx)(C, {
+  return (0, r.jsx)(N, {
     transitionState: s,
-    springs: Z,
+    springs: F,
     index: n,
     locked: a,
     animationWrapperClassName: E,
     children: (0, r.jsx)(R, {
-      observe: V,
-      children: (0, r.jsx)(N, I(O({}, G), {
+      observe: Z,
+      children: (0, r.jsx)(C, I(O({}, G), {
         title: "function" == typeof G.title ? G.title(y) : G.title,
-        containerRef: F,
+        containerRef: V,
         notificationId: t.id,
         onNotificationShow: 0 === n ? b : true,
         onDismissClick: y,
@@ -328,7 +328,7 @@ function P(e) {
         index: n,
         locked: a,
         status: U,
-        contentOpacity: Z.contentOpacity
+        contentOpacity: F.contentOpacity
       }))
     })
   })

@@ -30,9 +30,9 @@ let m = Chunk647438.forwardRef(function(e, t) {
     } = e, v = i.useRef(null), I = (0, d.Iu)(e => e.searchQuery), [T, S] = u.kJ.useStore(e => [e.inspectedExpressionPosition, e.searchPlaceholder], s.X), A = i.useCallback(e => {
       var t;
       u.kJ.setActiveCategoryIndex("" === e ? 0 : f.c), u.kJ.setInspectedExpressionPosition(0, 0), u.kJ.setSearchPlaceholder(null), (0, d.ql)(e), null == (t = n.current) || t.scrollTo(0)
-    }, [n]), N = i.useCallback(() => {
+    }, [n]), C = i.useCallback(() => {
       (0, d.ql)("")
-    }, []), C = e => {
+    }, []), N = e => {
       switch (e.keyCode) {
         case _.yXg.ARROW_LEFT:
         case _.yXg.ARROW_RIGHT:
@@ -52,8 +52,8 @@ let m = Chunk647438.forwardRef(function(e, t) {
       query: I,
       ref: v,
       placeholder: null != S ? S : O,
-      onClear: N,
-      onKeyDown: C,
+      onClear: C,
+      onKeyDown: N,
       onFocus: E,
       onChange: A,
       className: o()(y, {

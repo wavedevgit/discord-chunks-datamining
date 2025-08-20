@@ -1,14 +1,15 @@
-/** Chunk was on 96750 **/
-/** chunk id: 651941, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 651941, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => d
+  Z: () => h
 }), require("./410992.js"), require("./227481.js"), require("./730884.js"), require("./20464.js"), require("./341884.js"), require("./364341.js"), require("./629680.js"), require("./505025.js"), require("./918970.js"), require("./121784.js"), require("./644351.js"), require("./146733.js"), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk974167 = require("./974167.js"),
   Chunk570140 = require("./570140.js"),
   Chunk709054 = require("./709054.js");
 
-function s(e, t, n) {
+function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -17,7 +18,39 @@ function s(e, t, n) {
   }) : e[t] = n, e
 }
 let c = {};
-class u extends(r = Chunk442837.ZP.PersistedStore) {
+
+function u(e) {
+  var t;
+  let n = null != (t = c[e]) ? t : {};
+  return c[e] = n, n
+}
+
+function d(e) {
+  let {
+    userId: t,
+    key: n
+  } = e, r = u(t), i = new Uint8Array(n);
+  r[(0, a.MK)(i)] = Date.now()
+}
+
+function f(e) {
+  let {
+    userId: t,
+    serializedKey: n
+  } = e, r = c[t];
+  if (null == r) returnfalse;
+  let i = delete r[n],
+    a = false;
+  return 0 === Object.keys(r).length && (delete c[t], a = true), i || a
+}
+
+function _(e) {
+  let {
+    userId: t
+  } = e;
+  return null != c[t] && delete c[t]
+}
+class p extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     var t;
     c = null != (t = null == e ? true : e.users) ? t : {}
@@ -29,7 +62,7 @@ class u extends(r = Chunk442837.ZP.PersistedStore) {
   }
   getKeyTrustedAt(e, t) {
     var n;
-    let r = (0, l.MK)(t);
+    let r = (0, a.MK)(t);
     return null == (n = c[e]) ? true : n[r]
   }
   isKeyVerified(e, t) {
@@ -42,33 +75,9 @@ class u extends(r = Chunk442837.ZP.PersistedStore) {
     return c[e]
   }
 }
-s(u, "displayName", "VerifiedKeyStore"), s(u, "persistKey", "VerifiedKeyStore");
-let d = new u(Chunk570140.Z, {
-  SECURE_FRAMES_VERIFIED_KEY_CREATE: function(e) {
-    let {
-      userId: t,
-      key: n
-    } = e, r = function(e) {
-      var t;
-      let n = null != (t = c[e]) ? t : {};
-      return c[e] = n, n
-    }(t), i = new Uint8Array(n);
-    r[(0, l.MK)(i)] = Date.now()
-  },
-  SECURE_FRAMES_VERIFIED_KEY_DELETE: function(e) {
-    let {
-      userId: t,
-      serializedKey: n
-    } = e, r = c[t];
-    if (null == r) returnfalse;
-    let i = delete r[n],
-      l = false;
-    return 0 === Object.keys(r).length && (delete c[t], l = true), i || l
-  },
-  SECURE_FRAMES_USER_VERIFIED_KEYS_DELETE: function(e) {
-    let {
-      userId: t
-    } = e;
-    return null != c[t] && delete c[t]
-  }
+l(p, "displayName", "VerifiedKeyStore"), l(p, "persistKey", "VerifiedKeyStore");
+let h = new p(Chunk570140.Z, {
+  SECURE_FRAMES_VERIFIED_KEY_CREATE: d,
+  SECURE_FRAMES_VERIFIED_KEY_DELETE: f,
+  SECURE_FRAMES_USER_VERIFIED_KEYS_DELETE: _
 })

@@ -1,7 +1,8 @@
-/** Chunk was on 48091 **/
-/** chunk id: 934826, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 934826, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => u
+  Z: () => d
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
@@ -12,28 +13,28 @@ var Chunk647438 = require("./647438.js"),
   Chunk697227 = require("./697227.js"),
   Chunk981631 = require("./981631.js");
 
-function u(e) {
+function d(e) {
   let t = (0, i.e7)([s.Z], () => s.Z.getSubscriptions()),
     n = r.useMemo(() => {
       if (null == t) return {};
       let e = {};
-      for (let n of Object.values(t)) n.type === d.NYc.GUILD && (e[(0, c.W)(n)] = n);
+      for (let n of Object.values(t)) n.type === u.NYc.GUILD && (e[(0, c.W)(n)] = n);
       return e
     }, [t]),
     {
-      activeSubscription: u,
-      activeSubscriptionListing: m
-    } = (0, i.cj)([o.Z], () => {
+      activeSubscription: d,
+      activeSubscriptionListing: f
+    } = (0, i.cj)([l.Z], () => {
       var t;
       let r, i = null,
-        l = null != e ? o.Z.getSubscriptionGroupListing(e) : null;
-      for (let e of null != (t = null == l ? true : l.subscription_listings_ids) ? t : []) {
-        let t = o.Z.getSubscriptionListing(e),
-          l = null == t ? true : t.subscription_plans[0].id;
-        if (null == l) continue;
-        let a = n[l];
-        if (null != a) {
-          i = a, r = t;
+        a = null != e ? l.Z.getSubscriptionGroupListing(e) : null;
+      for (let e of null != (t = null == a ? true : a.subscription_listings_ids) ? t : []) {
+        let t = l.Z.getSubscriptionListing(e),
+          a = null == t ? true : t.subscription_plans[0].id;
+        if (null == a) continue;
+        let o = n[a];
+        if (null != o) {
+          i = o, r = t;
           break
         }
       }
@@ -42,16 +43,16 @@ function u(e) {
         activeSubscriptionListing: r
       }
     }),
-    p = null == m ? true : m.subscription_plans[0],
-    f = null == p ? true : p.id,
-    h = null == p ? true : p.sku_id,
-    g = (0, i.e7)([a.Z], () => null != f ? a.Z.get(f) : null),
-    v = null == m ? true : m.soft_deleted;
+    _ = null == f ? true : f.subscription_plans[0],
+    p = null == _ ? true : _.id,
+    h = null == _ ? true : _.sku_id,
+    m = (0, i.e7)([o.Z], () => null != p ? o.Z.get(p) : null),
+    g = null == f ? true : f.soft_deleted;
   return r.useEffect(() => {
-    null != g || null == h || a.Z.isFetchingForSKU(h) || (0, l.GZ)(h, true, true, v)
-  }, [g, h, v]), {
-    activeSubscription: u,
-    activeSubscriptionListing: m,
-    activeSubscriptionPlanFromStore: g
+    null != m || null == h || o.Z.isFetchingForSKU(h) || (0, a.GZ)(h, true, true, g)
+  }, [m, h, g]), {
+    activeSubscription: d,
+    activeSubscriptionListing: f,
+    activeSubscriptionPlanFromStore: m
   }
 }

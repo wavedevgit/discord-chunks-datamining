@@ -2,7 +2,7 @@
 /** chunk id: 549817, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => L
+  Z: () => x
 }), require("./472816.js"), require("./794429.js"), require("./415506.js"), require("./388685.js"), require("./997841.js");
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
@@ -29,7 +29,7 @@ var Chunk392711 = require("./392711.js"),
   Chunk372897 = require("./372897.js"),
   Chunk490897 = require("./490897.js");
 
-function N(e, t, n) {
+function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -38,14 +38,14 @@ function N(e, t, n) {
   }) : e[t] = n, e
 }
 
-function C(e) {
+function N(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      N(e, t, n[t])
+      C(e, t, n[t])
     })
   }
   return e
@@ -129,7 +129,7 @@ function D(e, t, n) {
     removedRoleIds: n
   })
 }
-let L = {
+let x = {
   selectOption(e, t, n, r) {
     let a = O.Z.getOnboardingPrompt(t);
     if (null == a) return;
@@ -153,10 +153,10 @@ let L = {
       o = O.Z.getEnabled(e) ? O.Z.getDefaultChannelIds(e) : [],
       [c, f] = (0, v.Ee)(e, t, o),
       b = [...a, ...o],
-      N = b.map(e => _.Z.getChannel(e)).filter(E.lm),
-      R = (0, I.v)(e, new Set(b), N, true).length,
+      C = b.map(e => _.Z.getChannel(e)).filter(E.lm),
+      R = (0, I.v)(e, new Set(b), C, true).length,
       D = null == n ? [] : n.options.map(e => e.id);
-    if (m.default.track(T.rMx.GUILD_ONBOARDING_STEP_COMPLETED, P(C({}, (0, l.hH)(e)), {
+    if (m.default.track(T.rMx.GUILD_ONBOARDING_STEP_COMPLETED, P(N({}, (0, l.hH)(e)), {
         step: t.length - 1,
         options_selected: null == n ? 0 : r.filter(e => D.includes(e.id)).length,
         skipped: D.length > 0,
@@ -173,8 +173,8 @@ let L = {
       }), (0, u.og)(e, Array.from(i));
       let t = h.default.getCurrentUser();
       if (null != t) {
-        var L, x;
-        let n = null != (x = null == (L = p.ZP.getMember(e, t.id)) ? true : L.flags) ? x : 0;
+        var x, L;
+        let n = null != (L = null == (x = p.ZP.getMember(e, t.id)) ? true : x.flags) ? L : 0;
         (0, u.aq)(e, {
           memberOptions: {
             flags: (0, g.mB)(n, S.q.COMPLETED_ONBOARDING, true)

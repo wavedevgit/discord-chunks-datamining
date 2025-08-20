@@ -1,4 +1,4 @@
-/** Chunk was on 26475 **/
+/** Chunk was on 40226 **/
 /** chunk id: 356110, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -13,33 +13,33 @@ let s = e => {
       element: t,
       onChange: n,
       initialOption: s
-    } = e, [c, d] = a.useState("");
-    a.useEffect(() => {
+    } = e, [c, d] = i.useState("");
+    i.useEffect(() => {
       d(null != s ? s : "")
     }, [s]);
     let u = t.name,
       {
-        title: _,
-        options: m
+        title: m,
+        options: _
       } = t.data,
-      p = a.useCallback(e => {
+      p = i.useCallback(e => {
         null != e && (d(e), n(e))
       }, [n]);
     return (0, r.jsxs)("div", {
-      className: l.marginBottom8,
-      children: [null != _ && (0, r.jsx)("div", {
-        className: l.marginBottom8,
-        children: (0, r.jsxs)(i.Text, {
+      className: o.marginBottom8,
+      children: [null != m && (0, r.jsx)("div", {
+        className: o.marginBottom8,
+        children: (0, r.jsxs)(l.Text, {
           variant: "text-sm/bold",
-          children: [_, t.should_submit_data && (0, r.jsx)("span", {
-            className: o.required,
+          children: [m, t.should_submit_data && (0, r.jsx)("span", {
+            className: a.required,
             children: "*"
           })]
         })
-      }), (0, r.jsx)(i.q4e, {
+      }), (0, r.jsx)(l.q4e, {
         value: c,
         onChange: p,
-        options: m
+        options: _
       })]
     }, u)
   },
@@ -47,17 +47,17 @@ let s = e => {
     let {
       elements: t,
       onChange: n,
-      state: a
-    } = e, i = t.map(e => {
-      var t, i;
-      let o = e.name;
+      state: i
+    } = e, l = t.map(e => {
+      var t, l;
+      let a = e.name;
       return (0, r.jsx)(s, {
         element: e,
-        initialOption: null != (i = null == a || null == (t = a[o]) ? true : t.value) ? i : true,
-        onChange: e => n(o, e)
-      }, o)
+        initialOption: null != (l = null == i || null == (t = i[a]) ? true : t.value) ? l : true,
+        onChange: e => n(a, e)
+      }, a)
     });
     return (0, r.jsx)("div", {
-      children: i
+      children: l
     })
   }

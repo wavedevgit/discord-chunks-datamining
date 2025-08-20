@@ -1,7 +1,7 @@
-/** Chunk was on 78650 **/
-/** chunk id: 13736, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 99534 **/
+/** chunk id: 13736, original params: t,n,i (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => o
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -10,15 +10,15 @@ var Chunk481060 = require("./481060.js"),
   Chunk665906 = require("./665906.js"),
   Chunk388032 = require("./388032.jsx");
 
-function s(e) {
-  let t = (0, a.C7)(e),
-    n = (0, a.$R)(e),
-    s = (0, a.Gu)(e);
-  return !t || !n || s || e.isModeratorReportChannel() || __OVERLAY__ ? null : (0, i.jsx)(r.sNh, {
+function o(t) {
+  let n = (0, a.C7)(t),
+    i = (0, a.$R)(t),
+    o = (0, a.Gu)(t);
+  return !n || !i || o || t.isModeratorReportChannel() || __OVERLAY__ ? null : (0, e.jsx)(l.sNh, {
     id: "edit-thread",
-    label: e.isForumPost() ? o.intl.string(o.t.NP1yHB) : o.intl.string(o.t["2Mk1TE"]),
+    label: t.isForumPost() ? d.intl.string(d.t.NP1yHB) : d.intl.string(d.t["2Mk1TE"]),
     action: () => {
-      (0, r.pTH)(), l.ZP.open(e.id)
+      (0, l.pTH)(), r.ZP.open(t.id)
     }
   })
 }

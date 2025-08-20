@@ -1,7 +1,7 @@
 /** Chunk was on 89311 **/
 /** chunk id: 978313, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => j
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -18,18 +18,18 @@ var Chunk951288 = require("./951288.js"),
   Chunk226788 = require("./226788.js"),
   Chunk802318 = require("./802318.js");
 
-function h(e) {
+function j(e) {
   let {
     detectedGame: t,
     trackAction: n
-  } = e, [l, h] = i.useState((null == t ? true : t.summaryLocalized) != null), [v, j] = i.useState(true), [O, y] = i.useState(false), b = i.useRef(null), {
+  } = e, [l, j] = i.useState((null == t ? true : t.summaryLocalized) != null), [h, v] = i.useState(true), [O, b] = i.useState(false), y = i.useRef(null), {
     width: I,
-    height: E
+    height: P
   } = (0, d.Z)();
   return (i.useEffect(() => {
-    let e = b.current;
-    null != e && y(e.scrollHeight - e.clientHeight > 1 || !v)
-  }, [b, I, E, v]), null == t.summary) ? null : (0, r.jsxs)("div", {
+    let e = y.current;
+    null != e && b(e.scrollHeight - e.clientHeight > 1 || !h)
+  }, [y, I, P, h]), null == t.summary) ? null : (0, r.jsxs)("div", {
     className: a()(g.column, g.gapMd),
     children: [null != t.summaryLocalized && (0, r.jsxs)("div", {
       className: a()(g.row, g.gapSm),
@@ -39,27 +39,27 @@ function h(e) {
       }), (0, r.jsx)(o.xv, {
         variant: "text-xs/medium",
         color: "header-secondary",
-        children: l ? p.intl.format(p.t.aZ2iIi, {
-          onShowOriginal: () => h(false)
-        }) : p.intl.format(p.t["/2ylFx"], {
-          onShowTranslated: () => h(true)
+        children: l ? f.intl.format(f.t.aZ2iIi, {
+          onShowOriginal: () => j(false)
+        }) : f.intl.format(f.t["/2ylFx"], {
+          onShowTranslated: () => j(true)
         })
       })]
     }), (0, r.jsx)(o.xv, {
-      ref: b,
-      lineClamp: v ? 8 : true,
+      ref: y,
+      lineClamp: h ? 8 : true,
       variant: "text-sm/normal",
       children: l ? t.summaryLocalized : t.summary
     }), O && (0, r.jsx)(u.P3F, {
       className: g.clickable,
       onClick: () => {
-        n(v ? m.as.ShowMore : m.as.ShowLess), j(!v)
+        n(h ? m.as.ShowMore : m.as.ShowLess), v(!h)
       },
       children: (0, r.jsx)(o.xv, {
         variant: "text-sm/semibold",
-        children: v ? p.intl.string(p.t.lBeKY2) : p.intl.string(p.t["6MwJo6"])
+        children: h ? f.intl.string(f.t.lBeKY2) : f.intl.string(f.t["6MwJo6"])
       })
-    }), (0, r.jsx)(f.Z, {
+    }), (0, r.jsx)(p.Z, {
       className: x.platforms,
       detectedGame: t
     })]

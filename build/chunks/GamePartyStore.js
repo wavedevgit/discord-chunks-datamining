@@ -141,7 +141,7 @@ function S(e) {
     guildId: t,
     members: n
   } = e;
-  return N(t, n.map(e => e.presence))
+  return C(t, n.map(e => e.presence))
 }
 
 function A(e) {
@@ -149,17 +149,17 @@ function A(e) {
     guildId: t,
     addedMembers: n
   } = e;
-  return null != n && N(t, n.map(e => e.presence))
+  return null != n && C(t, n.map(e => e.presence))
 }
 
-function N(e, t) {
+function C(e, t) {
   let n = false;
   return t.forEach(t => {
     null != t && b(e, t.user.id, t.activities, t.status) && (n = true)
   }), n
 }
 
-function C() {
+function N() {
   let e = Chunk314897.default.getId(),
     t = Chunk885110.Z.getActivities();
   return b(Chunk981631.ME, module, exports)
@@ -190,7 +190,7 @@ function P(e) {
 }
 class w extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.syncWith([Chunk885110.Z], C), this.waitFor(Chunk885110.Z, Chunk699516.Z)
+    this.syncWith([Chunk885110.Z], N), this.waitFor(Chunk885110.Z, Chunk699516.Z)
   }
   getParty(e) {
     return null != e && h.has(e) ? h.get(e) : null

@@ -1,12 +1,13 @@
-/** Chunk was on 66181 **/
-/** chunk id: 433411, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 433411, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => x
+  Z: () => E
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk906732 = require("./906732.jsx"),
@@ -19,76 +20,80 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk642588 = require("./642588.js");
 
-function x(e) {
+function E(e) {
   let {
     user: t,
     guild: n,
-    className: s,
-    sectionTitle: p,
-    forcedDivider: x = false,
-    withTutorial: j = false,
-    isTryItOutFlow: E = false
+    className: a,
+    sectionTitle: _,
+    forcedDivider: E = false,
+    withTutorial: b = false,
+    isTryItOutFlow: O = false
   } = e, {
-    analyticsLocations: C
-  } = (0, c.ZP)(), O = null != n, {
-    userAvatarDecoration: v,
+    analyticsLocations: v
+  } = (0, c.ZP)(), I = null != n, {
+    userAvatarDecoration: T,
     guildAvatarDecoration: S,
-    pendingAvatarDecoration: T,
-    pendingErrors: N
-  } = (0, g.$U)(t, n), I = (0, m.Z)("enable_avatar_decoration_uploads"), y = r.useCallback(() => (0, u.ps)({
-    analyticsLocations: C,
-    isTryItOutFlow: E,
+    pendingAvatarDecoration: A,
+    pendingErrors: C
+  } = (0, p.$U)(t, n), N = (0, f.Z)("enable_avatar_decoration_uploads"), R = i.useCallback(() => (0, d.ps)({
+    analyticsLocations: v,
+    isTryItOutFlow: O,
     guild: n
-  }), [C, E, n]), A = E || true !== T ? null != T : (O ? S : v) != null, P = j ? o.gtL : l.zx;
-  return (0, i.jsxs)(h.Z, {
-    className: s,
-    forcedDivider: x,
+  }), [v, O, n]), P = O || true !== A ? null != A : (I ? S : T) != null;
+
+  function w() {
+    (0, p.PO)(null == n ? true : n.id, null)
+  }
+  let D = b ? l.gtL : s.zx;
+  return (0, r.jsxs)(h.Z, {
+    className: a,
+    forcedDivider: E,
     hasBackground: true,
-    title: p,
-    errors: N,
-    children: [(0, i.jsxs)("div", {
-      className: b.buttonsContainer,
-      children: [(0, i.jsx)(P, {
-        size: l.zx.Sizes.SMALL,
-        onClick: y,
-        className: a()({
-          [b.buttonHighlighted]: j
+    title: _,
+    errors: C,
+    children: [(0, r.jsxs)("div", {
+      className: g.buttonsContainer,
+      children: [(0, r.jsx)(D, {
+        size: s.zx.Sizes.SMALL,
+        onClick: R,
+        className: o()({
+          [g.buttonHighlighted]: b
         }),
-        children: f.intl.string(f.t.BVcYCw)
-      }), A && (0, i.jsx)("div", {
+        children: m.intl.string(m.t.BVcYCw)
+      }), P && (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
-        className: b.removeButton,
-        children: (0, i.jsx)(o.zxk, {
+        className: g.removeButton,
+        children: (0, r.jsx)(l.zxk, {
           variant: "secondary",
           size: "sm",
-          text: (0, d.ad)(t, n) ? f.intl.string(f.t.CHf9iI) : f.intl.string(f.t.OrokWl),
-          onClick: function() {
-            (0, g.PO)(null == n ? true : n.id, null)
-          }
+          text: (0, u.ad)(t, n) ? m.intl.string(m.t.CHf9iI) : m.intl.string(m.t.OrokWl),
+          onClick: w
         })
       })]
-    }), t.isStaff() && I && (0, i.jsx)(_, {
+    }), t.isStaff() && N && (0, r.jsx)(y, {
       user: t
     })]
   })
 }
-let _ = e => {
-  let {
-    user: t
-  } = e;
-  return (0, i.jsxs)("div", {
-    className: b.overrideButtonsContainer,
-    children: [(0, i.jsx)(o.Text, {
-      variant: "text-xs/bold",
-      children: "STAFF ONLY and Experimental. Upload a decoration to view throughout the app."
-    }), (0, i.jsx)(p.Z, {
-      onChange: e => {
-        null != e && (t.avatarDecoration = {
-          asset: e,
-          skuID: "PALUE000000001"
-        })
-      },
-      buttonCTA: "Upload Override"
-    })]
-  })
-}
+let b = "PALUE000000001",
+  y = e => {
+    let {
+      user: t
+    } = e;
+    return (0, r.jsxs)("div", {
+      className: g.overrideButtonsContainer,
+      children: [(0, r.jsx)(l.Text, {
+        variant: "text-xs/bold",
+        children: "STAFF ONLY and Experimental. Upload a decoration to view throughout the app."
+      }), (0, r.jsx)(_.Z, {
+        onChange: e => {
+          null != e && (t.avatarDecoration = {
+            asset: e,
+            skuID: b
+          })
+        },
+        buttonCTA: "Upload Override"
+      })]
+    })
+  }

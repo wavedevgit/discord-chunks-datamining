@@ -4,13 +4,13 @@
 require.d(exports, {
   Bg: () => U,
   E5: () => ee,
-  Fp: () => V,
+  Fp: () => Z,
   HL: () => en,
   JT: () => $,
   L2: () => z,
-  MY: () => k,
-  Nz: () => Z,
-  Q_: () => F,
+  MY: () => M,
+  Nz: () => F,
+  Q_: () => V,
   TO: () => W,
   Z0: () => G,
   bT: () => H,
@@ -18,8 +18,8 @@ require.d(exports, {
   dQ: () => K,
   e$: () => Q,
   iM: () => X,
-  pO: () => j,
-  xr: () => M,
+  pO: () => k,
+  xr: () => j,
   z2: () => J
 }), require("./388685.js"), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./704826.js"), require("./314940.js"), require("./781311.js");
 var Chunk278074 = require("./278074.js"),
@@ -66,19 +66,19 @@ let y = ["discordapp.com/gifts", "discord.com/gifts"],
   T = [...["discord.com/billing/promotions", "promos.discord.gg"].map(e => _.Z.escape(e))].join("|"),
   S = RegExp("(?: |^|https?://)(?:".concat(T, ")(/|(/)?\\?code=)([a-z0-9-]+)"), "gi"),
   A = "abcdefghjkmnpqrstuvwxyzABCDEFGHJKMNPQRSTUVWXYZ23456789",
-  N = (e, t) => Array(t).fill(true).map(() => "[".concat(A, "]{").concat(e, "}")).join("-?"),
-  C = N(4, 4),
-  R = N(4, 6),
-  P = N(5, 3),
+  C = (e, t) => Array(t).fill(true).map(() => "[".concat(A, "]{").concat(e, "}")).join("-?"),
+  N = C(4, 4),
+  R = C(4, 6),
+  P = C(5, 3),
   w = "WUMP-?",
-  D = [C, R, P, "[a-zA-Z]{4}-?[0-9a-zA-Z]{4}-?[a-zA-Z]{4}"].join("|"),
-  L = new RegExp("^(".concat(w, ")?(").concat(D, ")$")),
-  x = "-";
-var M = function(e) {
+  D = [N, R, P, "[a-zA-Z]{4}-?[0-9a-zA-Z]{4}-?[a-zA-Z]{4}"].join("|"),
+  x = new RegExp("^(".concat(w, ")?(").concat(D, ")$")),
+  L = "-";
+var j = function(e) {
   return e[e.DEFAULT = 0] = "DEFAULT", e[e.CUSTOM_STYLE = 1] = "CUSTOM_STYLE", e[e.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD = 2] = "CUSTOM_MESSAGE_EMOJI_SOUNDBOARD", e
 }({});
-let k = (e, t) => i.tq || i.Em ? 0 : null != e || t ? 2 : 1,
-  j = e => 0 !== k(e);
+let M = (e, t) => i.tq || i.Em ? 0 : null != e || t ? 2 : 1,
+  k = e => 0 !== M(e);
 
 function U(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null,
@@ -98,11 +98,11 @@ function G(e) {
 function B(e) {
   return e.replace(/[^A-Za-z0-9]/g, "")
 }
-let V = e => {
+let Z = e => {
     var t;
     return (null == e ? true : e.type) === h.uaV.CUSTOM_GIFT && (null == e || null == (t = e.embeds) ? true : t.length) === 1 && (null == e ? true : e.embeds[0].type) === h.hBH.GIFT
   },
-  F = e => {
+  V = e => {
     let t;
     if (null == e) return [];
     let n = new Set;
@@ -111,7 +111,7 @@ let V = e => {
     return Array.from(n)
   };
 
-function Z() {
+function F() {
   let e, t = arguments.length > 0 && true !== arguments[0] ? arguments[0] : "",
     n = window.GLOBAL_ENV.GIFT_CODE_HOST;
   return null != require ? e = "/".concat(exports) : (n = location.host, e = "/gifts/".concat(exports)), "".concat(location.protocol, "//").concat(require).concat(module)
@@ -277,10 +277,10 @@ function J(e, t, n) {
 }
 
 function $(e) {
-  let t = e.trim().split("/").pop().match(L);
+  let t = e.trim().split("/").pop().match(x);
   if (null == t) return null;
   let [n, r, i] = t;
-  return null == i ? null : i.replace(RegExp(x, "g"), "")
+  return null == i ? null : i.replace(RegExp(L, "g"), "")
 }
 let ee = (e, t) => (0, a.e7)([l.Z], () => {
   if (null == e || !t) return null;

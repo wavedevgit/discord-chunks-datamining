@@ -1,19 +1,19 @@
-/** Chunk was on 86031 **/
-/** chunk id: 790542, original params: e,t,r (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 790542, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => o
+  A: () => s
 });
 var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk751648 = require("./751648.js"),
   Chunk479766 = require("./479766.js");
 
-function o() {
+function s() {
   let {
     balance: e,
     isFetching: t,
-    error: r
+    error: n
   } = (0, Chunk442837.cj)([Chunk479766.Z], () => ({
     balance: Chunk479766.Z.balance,
     isFetching: Chunk479766.Z.isFetchingBalance,

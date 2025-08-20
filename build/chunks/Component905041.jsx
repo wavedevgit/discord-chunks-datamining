@@ -38,49 +38,49 @@ function p(t) {
 let b = /^(tel|sms|mailto):([^?;]+)/;
 
 function m(t, n, e, m) {
-  let g = (0, a.Z)(null == e ? true : e.getChannelId());
-  if (!c.isPlatformEmbedded || null == t || "" === t || g || (null == m ? true : m.shouldHideMediaOptions) === true || !(0, r.Jj)(t)) return null;
-  let O = (0, o.F)(t),
-    y = t => {
-      s.default.track(h.rMx.CONTEXT_MENU_LINK_COPIED, p({
-        hostname: O
-      }, (0, v.v)())), d.ZP.copy(t), (0, i.showToast)((0, i.createToast)(f.intl.string(f.t["L/PwZW"]), i.ToastType.SUCCESS))
+  let y = (0, a.Z)(null == e ? true : e.getChannelId());
+  if (!u.isPlatformEmbedded || null == t || "" === t || y || (null == m ? true : m.shouldHideMediaOptions) === true || !(0, r.Jj)(t)) return null;
+  let g = (0, o.F)(t),
+    j = t => {
+      s.default.track(f.rMx.CONTEXT_MENU_LINK_COPIED, p({
+        hostname: g
+      }, (0, v.v)())), d.ZP.copy(t), (0, i.showToast)((0, i.createToast)(h.intl.string(h.t["L/PwZW"]), i.ToastType.SUCCESS))
     },
-    _ = (e, l) => {
+    O = (e, l) => {
       let i = true === l ? t.replace("tel:", "sms:") : t;
-      s.default.track(h.rMx.CONTEXT_MENU_LINK_OPENED, p({
-        hostname: O
-      }, (0, v.v)())), (0, u.q)({
+      s.default.track(f.rMx.CONTEXT_MENU_LINK_OPENED, p({
+        hostname: g
+      }, (0, v.v)())), (0, c.q)({
         href: i,
-        trusted: (0, u.r)(t, n),
+        trusted: (0, c.r)(t, n),
         shouldConfirm: true
       }, e)
     },
-    Z = [],
+    k = [],
     C = t.match(b);
   if (null != C) {
-    let t = f.intl.string("mailto" === C[1] ? f.t.ZYLVKi : f.t["3zozoa"]);
-    Z.push((0, l.jsx)(i.sNh, {
+    let t = h.intl.string("mailto" === C[1] ? h.t.ZYLVKi : h.t["3zozoa"]);
+    k.push((0, l.jsx)(i.sNh, {
       id: "copy-native-contact",
       label: t,
       action: () => {
-        y(C[2])
+        j(C[2])
       }
-    }, "copy-native-contact")), "tel" === C[1] && Z.push((0, l.jsx)(i.sNh, {
+    }, "copy-native-contact")), "tel" === C[1] && k.push((0, l.jsx)(i.sNh, {
       id: "native-send-sms",
-      label: f.intl.string(f.t["+wbjMT"]),
-      action: t => _(t, true)
+      label: h.intl.string(h.t["+wbjMT"]),
+      action: t => O(t, true)
     }, "native-send-sms"))
   }
   return [(0, l.jsx)(i.sNh, {
     id: "copy-native-link",
-    label: f.intl.string(f.t.WqhZsr),
+    label: h.intl.string(h.t.WqhZsr),
     action: () => {
-      y(t)
+      j(t)
     }
-  }, "copy-native-link"), ...Z, (0, l.jsx)(i.sNh, {
+  }, "copy-native-link"), ...k, (0, l.jsx)(i.sNh, {
     id: "open-native-link",
-    label: f.intl.string(f.t.wuRE8P),
-    action: t => _(t)
+    label: h.intl.string(h.t.wuRE8P),
+    action: t => O(t)
   }, "open-native-link")]
 }

@@ -1,21 +1,21 @@
-/** Chunk was on 86031 **/
-/** chunk id: 479766, original params: e,t,r (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 479766, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => s
+  Z: () => l
 }), require("./539854.js");
-var n, Chunk442837 = require("./442837.js"),
+var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
-function l(e, t, r) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
-    value: r,
+    value: n,
     enumerable: true,
     configurable: true,
     writable: true
-  }) : e[t] = r, e
+  }) : e[t] = n, e
 }
-class o extends(n = Chunk442837.ZP.Store) {
+class s extends(r = Chunk442837.ZP.Store) {
   get earnedOrbsCoachmark() {
     return {
       shouldOpen: this._earnedOrbsCoachmarkOpen,
@@ -109,9 +109,9 @@ class o extends(n = Chunk442837.ZP.Store) {
   handleEarnedOrbsCoachmarkOpen(e) {
     let {
       earnedOrbsQuantity: t,
-      dedupeKey: r
+      dedupeKey: n
     } = e;
-    true !== r && this._earnedOrbsCoachmarkDedupeKeys.includes(r) || (this._earnedOrbsCoachmarkOpen = true, this._earnedOrbsCoachmarkQuantity = t, true !== r && this._earnedOrbsCoachmarkDedupeKeys.push(r))
+    true !== n && this._earnedOrbsCoachmarkDedupeKeys.includes(n) || (this._earnedOrbsCoachmarkOpen = true, this._earnedOrbsCoachmarkQuantity = t, true !== n && this._earnedOrbsCoachmarkDedupeKeys.push(n))
   }
   handleEarnedOrbsCoachmarkClose(e) {
     let {} = e;
@@ -134,8 +134,8 @@ class o extends(n = Chunk442837.ZP.Store) {
       VIRTUAL_CURRENCY_SET_BALANCE_PILL_OVERLAY: e => {
         this.setBalancePillOverlay(e.balancePillOverlay)
       }
-    }), l(this, "_entitlements", null), l(this, "_redeemingSkuId", null), l(this, "_isRedeemingVirtualCurrency", false), l(this, "_redeemVirtualCurrencyError", null), l(this, "_balance", null), l(this, "_fetchBalanceError", null), l(this, "_isFetchingBalance", false), l(this, "_onboardingModalOpenedPrior", false), l(this, "_earnedOrbsCoachmarkOpen", false), l(this, "_earnedOrbsCoachmarkDedupeKeys", []), l(this, "_earnedOrbsCoachmarkQuantity", 0), l(this, "_balancePillOverlay", false)
+    }), o(this, "_entitlements", null), o(this, "_redeemingSkuId", null), o(this, "_isRedeemingVirtualCurrency", false), o(this, "_redeemVirtualCurrencyError", null), o(this, "_balance", null), o(this, "_fetchBalanceError", null), o(this, "_isFetchingBalance", false), o(this, "_onboardingModalOpenedPrior", false), o(this, "_earnedOrbsCoachmarkOpen", false), o(this, "_earnedOrbsCoachmarkDedupeKeys", []), o(this, "_earnedOrbsCoachmarkQuantity", 0), o(this, "_balancePillOverlay", false)
   }
 }
-l(o, "displayName", "VirtualCurrencyStore");
-let s = new o
+o(s, "displayName", "VirtualCurrencyStore");
+let l = new s

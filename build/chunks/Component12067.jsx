@@ -1,7 +1,8 @@
-/** Chunk was on 30243 **/
-/** chunk id: 12067, original params: e,t,r (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 12067, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => j
+  Z: () => E
 }), require("./997841.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -20,74 +21,75 @@ var Chunk442837 = require("./442837.js"),
   Chunk970184 = require("./970184.jsx"),
   Chunk981631 = require("./981631.js");
 
-function j(e) {
+function E(e) {
   let {
     message: t
-  } = (0, O.CJ)(), r = (0, l.e7)([f.Z], () => f.Z.getChannel(null == t ? true : t.channel_id)), {
-    shouldHideMediaOptions: j,
-    enabledContentHarmTypeFlags: g,
-    gifAutoPlay: h,
-    getGifFavButton: v,
-    getOnMediaItemContextMenu: P
+  } = (0, m.CJ)(), n = (0, i.e7)([_.Z], () => _.Z.getChannel(null == t ? true : t.channel_id)), {
+    shouldHideMediaOptions: E,
+    enabledContentHarmTypeFlags: b,
+    gifAutoPlay: y,
+    getGifFavButton: O,
+    getOnMediaItemContextMenu: v
   } = (0, u.c)();
-  if (null == t || null == r) return null;
-  let x = e.items.map(e => (0, o.ze)(e.media, t)).filter(e => "INVALID" !== e.type),
+  if (null == t || null == n) return null;
+  let I = e.items.map(e => (0, o.ze)(e.media, t)).filter(e => "INVALID" !== e.type),
     {
-      srcToOnClickOverride: S,
-      srcToHandlePreloadImage: w
-    } = x.length > 1 ? (0, p.G)(x, {
-      shouldHideMediaOptions: j,
-      enabledContentHarmTypeFlags: g
+      srcToOnClickOverride: T,
+      srcToHandlePreloadImage: S
+    } = I.length > 1 ? (0, f.G)(I, {
+      shouldHideMediaOptions: E,
+      enabledContentHarmTypeFlags: b
     }, "Media Mosaic") : {
       srcToOnClickOverride: {},
       srcToHandlePreloadImage: {}
     };
 
-  function C(e, r) {
-    var n;
-    let l = e.originalItem;
-    return (0, a.lK)(l.media, r, l.spoiler, null != (n = null == t ? true : t.author.bot) && n)
+  function A(e, n) {
+    var r;
+    let i = e.originalItem;
+    return (0, s.lK)(i.media, n, i.spoiler, null != (r = null == t ? true : t.author.bot) && r)
   }
-  let E = e.items.map((e, r) => {
-    let n = e.media,
-      l = null == P ? true : P(n),
-      o = {
+  let C = e.items.map((e, n) => {
+    let r = e.media,
+      i = (e, t, n) => {},
+      o = null == v ? true : v(r),
+      s = {
         message: t,
         item: {
-          uniqueId: "".concat(n.proxyUrl, "--").concat(r),
+          uniqueId: "".concat(r.proxyUrl, "--").concat(n),
           originalItem: e,
-          type: (0, c.pU)(n),
-          downloadUrl: n.url,
-          height: n.height,
-          width: n.width,
+          type: (0, l.pU)(r),
+          downloadUrl: r.url,
+          height: r.height,
+          width: r.width,
           spoiler: e.spoiler,
-          contentType: n.contentType,
-          srcIsAnimated: (0, m.yE)(n.flags, i.hR.IS_ANIMATED)
+          contentType: r.contentType,
+          srcIsAnimated: (0, h.yE)(r.flags, a.hR.IS_ANIMATED)
         },
-        onContextMenu: l,
-        autoPlayGif: h,
-        getObscureReason: C,
-        renderImageComponent: s.aB,
-        renderVideoComponent: s.rJ,
-        renderVisualPlaceholderComponent: s.yF,
-        renderAudioComponent: y.dG4,
-        renderPlaintextFilePreview: y.dG4,
-        renderGenericFileComponent: y.dG4,
-        renderMosaicItemFooter: y.dG4,
-        gifFavoriteButton: v(n),
-        onPlay: (e, t, r) => {},
+        onContextMenu: o,
+        autoPlayGif: y,
+        getObscureReason: A,
+        renderImageComponent: c.aB,
+        renderVideoComponent: c.rJ,
+        renderVisualPlaceholderComponent: c.yF,
+        renderAudioComponent: g.dG4,
+        renderPlaintextFilePreview: g.dG4,
+        renderGenericFileComponent: g.dG4,
+        renderMosaicItemFooter: g.dG4,
+        gifFavoriteButton: O(r),
+        onPlay: i,
         canRemoveItem: false,
-        onRemoveItem: y.dG4
+        onRemoveItem: g.dG4
       },
-      a = (0, b.q)({
-        proxyURL: n.proxyUrl,
-        url: n.url
+      u = (0, p.q)({
+        proxyURL: r.proxyUrl,
+        url: r.url
       });
-    return a in S && (o.onClick = S[a], o.handlePreloadImage = w[a]), o
+    return u in T && (s.onClick = T[u], s.handlePreloadImage = S[u]), s
   });
-  return (0, n.jsx)("div", {
-    children: (0, n.jsx)(d.Z, {
-      items: E,
+  return (0, r.jsx)("div", {
+    children: (0, r.jsx)(d.Z, {
+      items: C,
       isInAppComponentsV2: true
     })
   })

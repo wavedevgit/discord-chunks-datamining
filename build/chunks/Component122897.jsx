@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 122897, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 122897, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -17,11 +18,13 @@ var Chunk524437 = require("./524437.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk918526 = require("./918526.js");
 
-function h() {
-  var e;
-  let t = Chunk695346.Xr.useSetting(),
-    n = Chunk695346.UP.useSetting(),
-    h = exports !== Chunk524437.Xr.DEFAULT_UNSET ? exports : null != (e = Chunk973005.O7.get(require)) ? module : Chunk524437.Xr.NON_FRIENDS;
+function h(e, t) {
+  var n;
+  return e !== i.Xr.DEFAULT_UNSET ? e : null != (n = u.O7.get(t)) ? n : i.Xr.NON_FRIENDS
+}
+
+function m() {
+  let e = h(Chunk695346.Xr.useSetting(), Chunk695346.UP.useSetting());
   return (0, Chunk951288.jsxs)(Chunk838436.U, {
     setting: Chunk726985.s6.PRIVACY_DIRECT_MESSAGE_SPAM_FILTER_V2,
     children: [(0, Chunk951288.jsx)(Chunk838436.H, {
@@ -32,13 +35,13 @@ function h() {
     }), (0, Chunk951288.jsx)(Chunk481060.FXm, {
       className: Chunk918526.radioGroup,
       radioItemClassName: Chunk918526.radioGroupItem,
-      value: h,
+      value: module,
       options: (0, Chunk78451.c7)(),
       onChange: e => {
         let {
           value: t
         } = e;
-        return o.Xr.updateSetting(t)
+        return l.Xr.updateSetting(t)
       }
     })]
   })

@@ -1,5 +1,5 @@
 /** Chunk was on 18831 **/
-/** chunk id: 621145, original params: e,t,n (module,exports,require) **/
+/** chunk id: 621145, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
   Z: () => U
 }), require("./997841.js"), require("./388685.js"), require("./457542.js");
@@ -33,100 +33,100 @@ var Chunk951288 = require("./951288.js"),
   Chunk217702 = require("./217702.js"),
   Chunk20316 = require("./20316.js");
 
-function k(e) {
+function N(e) {
   for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      i = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), i.forEach(function(t) {
-      var i;
-      i = n[t], t in e ? Object.defineProperty(e, t, {
-        value: i,
+    var i = null != arguments[t] ? arguments[t] : {},
+      n = Object.keys(i);
+    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(i).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(i, e).enumerable
+    }))), n.forEach(function(t) {
+      var n;
+      n = i[t], t in e ? Object.defineProperty(e, t, {
+        value: n,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = i
+      }) : e[t] = n
     })
   }
   return e
 }
 
-function I(e, t) {
+function L(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var n = Object.keys(e);
+    var i = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var i = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, i)
+      var n = Object.getOwnPropertySymbols(e);
+      i.push.apply(i, n)
     }
-    return n
-  })(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+    return i
+  })(Object(t)).forEach(function(i) {
+    Object.defineProperty(e, i, Object.getOwnPropertyDescriptor(t, i))
   }), e
 }
-let L = e => {
+let I = e => {
   let {
     message: t
   } = e, {
-    attachments: n
+    attachments: i
   } = t;
-  if (0 === n.length) return null;
-  let a = 1 === n.length;
+  if (0 === i.length) return null;
+  let a = 1 === i.length;
 
-  function r(e, t) {
+  function o(e, t) {
     return (0, d.dn)(e.originalItem, t)
   }
-  return (0, i.jsx)("div", {
-    className: N.classificationEvidenceMessageAttachment,
-    children: (0, i.jsx)(x.Z, {
-      items: n.map(e => {
-        var n;
+  return (0, n.jsx)("div", {
+    className: k.classificationEvidenceMessageAttachment,
+    children: (0, n.jsx)(x.Z, {
+      items: i.map(e => {
+        var i;
         return {
           item: {
             uniqueId: e.id,
             originalItem: e,
-            type: (0, p.aw)(e, true),
+            type: (0, f.aw)(e, true),
             downloadUrl: e.proxy_url,
             height: e.height,
             width: e.width,
             spoiler: e.spoiler,
             contentType: e.content_type,
-            srcIsAnimated: (0, E.yE)(null != (n = e.flags) ? n : 0, S.J0y.IS_ANIMATED)
+            srcIsAnimated: (0, E.yE)(null != (i = e.flags) ? i : 0, T.J0y.IS_ANIMATED)
           },
           message: t,
-          mediaLayoutType: C.hV.MOSAIC,
+          mediaLayoutType: S.hV.MOSAIC,
           autoPlayGif: false,
           canRemoveItem: false,
           isSingleMosaicItem: a,
           onRemoveItem: l.noop,
-          renderVideoComponent: t => ((e, t, n) => {
-            let a = T.Sv,
-              r = T.EY;
+          renderVideoComponent: t => ((e, t, i) => {
+            let a = w.Sv,
+              o = w.EY;
             if (null != t.width && null != t.height) {
-              let e = (0, _.Dc)({
+              let e = (0, O.Dc)({
                 width: t.width,
                 height: t.height,
-                maxWidth: T.Sv,
-                maxHeight: T.EY
+                maxWidth: w.Sv,
+                maxHeight: w.EY
               });
-              a = (0, l.clamp)(Math.round(t.width * e), 0, T.Sv), r = (0, l.clamp)(Math.round(t.height * e), 0, T.EY)
+              a = (0, l.clamp)(Math.round(t.width * e), 0, w.Sv), o = (0, l.clamp)(Math.round(t.height * e), 0, w.EY)
             }
-            return (0, i.jsx)("div", {
+            return (0, n.jsx)("div", {
               style: {
-                width: n ? a : "100%",
-                height: n ? r : "100%"
+                width: i ? a : "100%",
+                height: i ? o : "100%"
               },
-              children: (0, i.jsx)(s.ZP, {
+              children: (0, n.jsx)(r.ZP, {
                 className: e.className,
                 forceExternal: false,
                 src: t.url,
-                width: n ? a : "100%",
-                height: n ? r : "100%",
+                width: i ? a : "100%",
+                height: i ? o : "100%",
                 responsive: true,
                 volume: e.volume,
                 autoPlay: false,
                 autoMute: false,
-                type: s.ZP.Types.VIDEO,
+                type: r.ZP.Types.VIDEO,
                 mediaLayoutType: e.mediaLayoutType,
                 fileName: t.filename,
                 fileSize: null == t.size ? true : t.size.toString(),
@@ -141,7 +141,7 @@ let L = e => {
               })
             })
           })(t, e, a),
-          renderImageComponent: e => (0, i.jsx)(g.dS, I(k({}, e), {
+          renderImageComponent: e => (0, n.jsx)(g.dS, L(N({}, e), {
             hiddenSpoilers: true,
             shouldHideMediaOptions: true,
             shouldLink: false
@@ -150,7 +150,7 @@ let L = e => {
           renderPlaintextFilePreview: g.d4,
           renderGenericFileComponent: g.ZK,
           renderMosaicItemFooter: g.L9,
-          getObscureReason: r,
+          getObscureReason: o,
           gifFavoriteButton: () => null
         }
       })
@@ -161,37 +161,37 @@ let L = e => {
 function U(e) {
   var t;
   let {
-    flaggedContent: n
-  } = e, l = (0, r.e7)([O.default], () => O.default.getCurrentUser()), [s, d] = a.useState({}), [p, g] = a.useState(true), y = (0, r.e7)([w.Z], () => w.Z.getUsername()), x = n[0], E = ((e, t, n, i) => {
+    flaggedContent: i
+  } = e, l = (0, o.e7)([j.default], () => j.default.getCurrentUser()), [r, d] = a.useState({}), [f, g] = a.useState(true), y = (0, o.e7)([C.Z], () => C.Z.getUsername()), x = i[0], E = ((e, t, i, n) => {
     let a = e.attachments.map(e => {
-      var n, i, a, l;
-      let r = I(k({}, e), {
+      var i, n, a, l;
+      let o = L(N({}, e), {
         filename: (0, P.eS)(e),
         size: 0,
         proxy_url: e.url
       });
-      return (0, c.CO)(e.filename) || (0, c.NU)(e.filename) ? I(k({}, r), {
-        width: null != (a = null == (n = t[e.id]) ? true : n.width) ? a : T.Sv,
-        height: null != (l = null == (i = t[e.id]) ? true : i.height) ? l : T.EY
-      }) : r
+      return (0, c.CO)(e.filename) || (0, c.NU)(e.filename) ? L(N({}, o), {
+        width: null != (a = null == (i = t[e.id]) ? true : i.width) ? a : w.Sv,
+        height: null != (l = null == (n = t[e.id]) ? true : n.height) ? l : w.EY
+      }) : o
     });
-    return (0, u.e5)(I(k({}, (0, m.ZP)({
-      author: null != n ? n : {
+    return (0, u.e5)(L(N({}, (0, m.ZP)({
+      author: null != i ? i : {
         id: "",
         avatar: true,
         discriminator: "0000",
-        username: i
+        username: n
       },
       nonce: e.id,
       content: e.content,
-      type: S.uaV.DEFAULT,
-      channelId: S.lds
+      type: T.uaV.DEFAULT,
+      channelId: T.lds
     })), {
       timestamp: new Date(A.default.extractTimestamp(e.id)).toISOString(),
       attachments: a,
-      state: S.yb.SENT
+      state: T.yb.SENT
     }))
-  })(x, s, l, y), _ = (0, f.ZP)(E), C = (0, j.Z)(E, {
+  })(x, r, l, y), O = (0, p.ZP)(E), S = (0, b.Z)(E, {
     hideSimpleEmbedContent: false,
     allowList: false,
     allowHeading: false,
@@ -204,37 +204,37 @@ function U(e) {
         filename: t
       } = e;
       return (0, c.CO)(t) || (0, c.NU)(t)
-    }).map(e => new Promise((t, n) => {
+    }).map(e => new Promise((t, i) => {
       if ((0, c.CO)(e.filename)) {
-        let i = new Image;
-        i.src = e.url, i.onload = () => {
-          t(i)
-        }, i.onerror = () => {
-          n()
+        let n = new Image;
+        n.src = e.url, n.onload = () => {
+          t(n)
+        }, n.onerror = () => {
+          i()
         }
       } else if ((0, c.NU)(e.filename)) {
-        let i = document.createElement("video");
-        i.src = e.url, i.onloadedmetadata = () => {
+        let n = document.createElement("video");
+        n.src = e.url, n.onloadedmetadata = () => {
           t({
-            width: i.videoWidth,
-            height: i.videoHeight
+            width: n.videoWidth,
+            height: n.videoHeight
           })
-        }, i.onerror = () => {
-          n()
+        }, n.onerror = () => {
+          i()
         }
       } else t({
         width: 0,
         height: 0
       })
-    }).then(t => d(n => I(k({}, n), {
+    }).then(t => d(i => L(N({}, i), {
       [e.id]: t
     }))))).finally(() => g(false))
-  }, [x.attachments]), "" === E.content && 0 === E.attachments.length) ? null : (0, i.jsx)("div", {
-    className: N.classificationEvidenceCard,
-    children: p ? (0, i.jsx)(o.$jN, {}) : (0, i.jsx)(h.Z, {
+  }, [x.attachments]), "" === E.content && 0 === E.attachments.length) ? null : (0, n.jsx)("div", {
+    className: k.classificationEvidenceCard,
+    children: f ? (0, n.jsx)(s.$jN, {}) : (0, n.jsx)(h.Z, {
       compact: false,
-      childrenHeader: (0, b.Z)({
-        author: I(k({}, l), {
+      childrenHeader: (0, _.Z)({
+        author: L(N({}, l), {
           colorString: "",
           colorStrings: null,
           nick: null != (t = null == l ? true : l.username) ? t : y
@@ -248,15 +248,15 @@ function U(e) {
         roleIcon: true,
         hideTimestamp: false
       }),
-      childrenAccessories: (0, i.jsx)(L, {
+      childrenAccessories: (0, n.jsx)(I, {
         message: E
       }),
       childrenMessageContent: (0, v.Z)({
         message: E
-      }, C.content),
+      }, S.content),
       hasThread: false,
       hasReply: false,
-      author: _
+      author: O
     })
   })
 }

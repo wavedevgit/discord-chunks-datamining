@@ -1,5 +1,5 @@
 /** Chunk was on 56035 **/
-/** chunk id: 671895, original params: e,t,n (module,exports,require) **/
+/** chunk id: 671895, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => d
 });
@@ -13,26 +13,26 @@ var Chunk951288 = require("./951288.js"),
   Chunk852545 = require("./852545.js");
 let d = Chunk647438.memo(function(e) {
   let {
-    sound: t,
-    volume: n,
-    disabled: a = false,
+    sound: n,
+    volume: t,
+    disabled: l = false,
     onChange: d
   } = e, {
     file: f
-  } = (0, s.p)();
-  return (0, l.jsx)(i.hjN, {
+  } = (0, o.p)();
+  return (0, a.jsx)(i.hjN, {
     className: c.section,
     title: u.intl.string(u.t.CCRKNz),
-    children: (0, l.jsxs)("div", {
+    children: (0, a.jsxs)("div", {
       className: c.fakeInput,
-      children: [null != t && (0, l.jsx)(o.Z, {
-        sound: t,
-        volume: n,
-        disabled: a
-      }), null == t && null != f && (0, l.jsx)(r.Z, {
+      children: [null != n && (0, a.jsx)(s.Z, {
+        sound: n,
+        volume: t,
+        disabled: l
+      }), null == n && null != f && (0, a.jsx)(r.Z, {
         className: c.audioTrimmer,
-        volume: n,
-        disabled: a,
+        volume: t,
+        disabled: l,
         onChange: d
       })]
     })

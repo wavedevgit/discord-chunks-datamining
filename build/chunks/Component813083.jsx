@@ -1,4 +1,4 @@
-/** Chunk was on 86031 **/
+/** Chunk was on 71387 **/
 /** chunk id: 813083, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -23,8 +23,8 @@ let p = e => {
   if (null == t.unpublishedAt) return null;
   let p = (0, c.OT)(t.unpublishedAt);
 
-  function b(e) {
-    return (0, a.jsx)(o.IGR, {
+  function v(e) {
+    return (0, i.jsx)(o.IGR, {
       disableColor: true,
       text: e,
       className: n,
@@ -37,9 +37,9 @@ let p = e => {
       }
     })
   }
-  return (0, i.EQ)([r, p > 1]).with(["card", true], () => null).with(["banner", true], () => b(u.intl.formatToPlainString(u.t["8gsP5O"], {
+  return (0, a.EQ)([r, p > 1]).with(["card", true], () => null).with(["banner", true], () => v(u.intl.formatToPlainString(u.t["8gsP5O"], {
     days: p
-  }))).with(["modal", true], () => b(u.intl.formatToPlainString(u.t.Io7ozs, {
+  }))).with(["modal", true], () => v(u.intl.formatToPlainString(u.t.Io7ozs, {
     days: p
-  }))).otherwise(() => b(u.intl.string(u.t.Bc13HB)))
+  }))).otherwise(() => v(u.intl.string(u.t.Bc13HB)))
 }

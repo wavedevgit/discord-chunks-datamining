@@ -1,5 +1,6 @@
-/** Chunk was on 66181 **/
-/** chunk id: 342156, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 342156, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   features: "features_b8f10d",
   video: "video_b8f10d",

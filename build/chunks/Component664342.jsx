@@ -1,4 +1,4 @@
-/** Chunk was on 36499 **/
+/** Chunk was on 5665 **/
 /** chunk id: 664342, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => N
@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk359110 = require("./359110.js"),
   Chunk585483 = require("./585483.js"),
   Chunk407908 = require("./407908.jsx"),
-  Chunk739830 = require("./739830.jsx"),
+  Chunk131694 = require("./131694.jsx"),
   Chunk488131 = require("./488131.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
@@ -103,7 +103,7 @@ function T(e) {
     channel: t,
     closePopout: n,
     onSelect: i
-  } = e, y = (0, c.Z)(t, "Sidebar Overflow"), _ = (0, d.Z)(t), v = (0, f.Z)(t), j = (0, m.Z)(t), O = (0, a.Z)(t), P = (0, u.Z)(t), I = (0, h.Z)(t.id), Z = (0, p.Z)(t), T = (0, s.Z)(t), N = (0, o.Z)(t), A = (0, b.Z)({
+  } = e, y = (0, c.Z)(t, "Sidebar Overflow"), _ = (0, d.Z)(t), v = (0, f.Z)(t), O = (0, m.Z)(t), j = (0, a.Z)(t), P = (0, u.Z)(t), I = (0, h.Z)(t.id), Z = (0, p.Z)(t), T = (0, s.Z)(t), N = (0, o.Z)(t), A = (0, b.Z)({
     id: t.id,
     label: S.intl.string(S.t.DQ797u)
   }), w = (0, g.Z)(t);
@@ -123,7 +123,7 @@ function T(e) {
         action: R
       })]
     }), (0, r.jsxs)(l.kSQ, {
-      children: [v, j]
+      children: [v, O]
     }), (0, r.jsxs)(l.kSQ, {
       children: [Z, _, I]
     }), (0, r.jsxs)(l.kSQ, {
@@ -147,7 +147,7 @@ function T(e) {
         }
       })]
     }), (0, r.jsxs)(l.kSQ, {
-      children: [w, O, P, T]
+      children: [w, j, P, T]
     }), (0, r.jsxs)(l.kSQ, {
       children: [N, A]
     })]
@@ -160,7 +160,7 @@ function N(e) {
     baseChannelId: n
   } = e;
   return (0, r.jsxs)(r.Fragment, {
-    children: [t.isForumPost() ? null : (0, r.jsx)(j.Z, {
+    children: [t.isForumPost() ? null : (0, r.jsx)(O.Z, {
       channel: t
     }), t.isModeratorReportChannel() ? (0, r.jsx)(v.Z, {
       channel: t
@@ -169,7 +169,7 @@ function N(e) {
     }), (0, r.jsx)(_.ZP.Icon, {
       icon: l.Dio,
       tooltip: S.intl.string(S.t.cpT0Cg),
-      onClick: () => (0, O.vN)((0, y.e)(t), null != n ? n : t.parent_id)
+      onClick: () => (0, j.vN)((0, y.e)(t), null != n ? n : t.parent_id)
     })]
   })
 }

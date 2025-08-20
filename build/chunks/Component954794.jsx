@@ -1,5 +1,6 @@
-/** Chunk was on 66181 **/
-/** chunk id: 954794, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 954794, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   Z: () => h
 }), require("./642613.js");
@@ -19,77 +20,77 @@ var Chunk951288 = require("./951288.js"),
 function h(e) {
   let {
     onBackClick: t
-  } = e, n = (0, s.e7)([d.Z], () => d.Z.getAllUnlockedAchievements()), h = r.useMemo(() => Object.values(n).sort((e, t) => t.dateUnlocked - e.dateUnlocked), [n]), f = r.useMemo(() => Object.values(u.LG).filter(c.lm).filter(e => null == n[e.id]).sort((e, t) => e.rarity - t.rarity), [n]);
-  return (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(l.hjN, {
-      children: (0, i.jsxs)(l.P3F, {
+  } = e, n = (0, a.e7)([u.Z], () => u.Z.getAllUnlockedAchievements()), h = i.useMemo(() => Object.values(n).sort((e, t) => t.dateUnlocked - e.dateUnlocked), [n]), m = i.useMemo(() => Object.values(d.LG).filter(c.lm).filter(e => null == n[e.id]).sort((e, t) => e.rarity - t.rarity), [n]);
+  return (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(s.hjN, {
+      children: (0, r.jsxs)(s.P3F, {
         onClick: t,
-        className: g.backContainer,
-        children: [(0, i.jsx)(o.Z, {
-          direction: o.Z.Directions.LEFT,
-          className: g.icon
-        }), (0, i.jsx)(l.Text, {
+        className: p.backContainer,
+        children: [(0, r.jsx)(l.Z, {
+          direction: l.Z.Directions.LEFT,
+          className: p.icon
+        }), (0, r.jsx)(s.Text, {
           variant: "text-lg/normal",
           color: "text-default",
-          children: p.intl.string(p.t["13/7kZ"])
+          children: _.intl.string(_.t["13/7kZ"])
         })]
       })
-    }), (0, i.jsxs)("div", {
-      className: g.headerContainer,
-      children: [(0, i.jsxs)("div", {
-        className: g.headerTextContainer,
-        children: [(0, i.jsx)(l.X6q, {
+    }), (0, r.jsxs)("div", {
+      className: p.headerContainer,
+      children: [(0, r.jsxs)("div", {
+        className: p.headerTextContainer,
+        children: [(0, r.jsx)(s.X6q, {
           variant: "heading-lg/extrabold",
           color: "header-primary",
-          children: p.intl.string(p.t["6jI0hY"])
-        }), (0, i.jsx)(l.Text, {
+          children: _.intl.string(_.t["6jI0hY"])
+        }), (0, r.jsx)(s.Text, {
           variant: "text-md/normal",
           color: "header-secondary",
-          children: p.intl.string(p.t.GuUItb)
+          children: _.intl.string(_.t.GuUItb)
         })]
-      }), (0, i.jsx)("div", {
-        className: g.headerIcon,
-        children: (0, i.jsx)(l.rm8, {
+      }), (0, r.jsx)("div", {
+        className: p.headerIcon,
+        children: (0, r.jsx)(s.rm8, {
           size: "custom",
-          color: a.Z.unsafe_rawColors.ORANGE_345.css,
+          color: o.Z.unsafe_rawColors.ORANGE_345.css,
           width: 40,
           height: 40
         })
       })]
-    }), h.length > 0 && (0, i.jsx)(l.hjN, {
-      className: g.divider,
-      children: (0, i.jsx)("div", {
-        className: g.achievementGrid,
+    }), h.length > 0 && (0, r.jsx)(s.hjN, {
+      className: p.divider,
+      children: (0, r.jsx)("div", {
+        className: p.achievementGrid,
         children: h.map(e => {
           let {
             achievementId: t,
             dateUnlocked: n
           } = e;
-          return (0, i.jsx)(m.Z, {
+          return (0, r.jsx)(f.Z, {
             achievementId: t,
             dateUnlocked: n
           }, t)
         })
       })
-    }), f.length > 0 && (0, i.jsxs)(l.hjN, {
-      className: g.divider,
-      children: [(0, i.jsx)("div", {
-        className: g.headerTextContainer,
-        children: (0, i.jsx)(l.Text, {
+    }), m.length > 0 && (0, r.jsxs)(s.hjN, {
+      className: p.divider,
+      children: [(0, r.jsx)("div", {
+        className: p.headerTextContainer,
+        children: (0, r.jsx)(s.Text, {
           variant: "text-md/bold",
           color: "header-secondary",
-          children: p.intl.string(p.t.GFyMg4)
+          children: _.intl.string(_.t.GFyMg4)
         })
-      }), (0, i.jsx)("div", {
-        className: g.achievementGrid,
-        children: f.map(e => (0, i.jsx)(m.Z, {
+      }), (0, r.jsx)("div", {
+        className: p.achievementGrid,
+        children: m.map(e => (0, r.jsx)(f.Z, {
           achievementId: e.id
         }, e.id))
       })]
-    }), (0, i.jsx)(l.hjN, {
-      className: g.divider,
-      children: (0, i.jsx)("div", {
-        className: g.bottomPadding
+    }), (0, r.jsx)(s.hjN, {
+      className: p.divider,
+      children: (0, r.jsx)("div", {
+        className: p.bottomPadding
       })
     })]
   })

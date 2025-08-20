@@ -48,7 +48,7 @@ function O(e) {
   var t;
   let n = null == (t = p.Z.getGuild(e.guild_id)) ? true : t.name;
   b.fileOnly("received deleted guild entities (id: ".concat(e.guild_id, ", name: ").concat(n, ")")), a.ZP.Emitter.batched(() => {
-    null != e.channels && N(e.guild_id, new Set(e.channels)), null != e.roles && C(e.guild_id, new Set(e.roles)), null != e.emojis && R(e.guild_id, new Set(e.emojis)), null != e.stickers && P(e.guild_id, new Set(e.stickers))
+    null != e.channels && C(e.guild_id, new Set(e.channels)), null != e.roles && N(e.guild_id, new Set(e.roles)), null != e.emojis && R(e.guild_id, new Set(e.emojis)), null != e.stickers && P(e.guild_id, new Set(e.stickers))
   })
 }
 
@@ -84,7 +84,7 @@ function A(e) {
   return i().v3(e.sort().join(",")).toString()
 }
 
-function N(e, t) {
+function C(e, t) {
   let n = h.default.keys(f.Z.getMutableBasicGuildChannelsForGuild(e));
   b.fileOnly("syncChannels", {
     channelIdsInMemory: n,
@@ -101,7 +101,7 @@ function N(e, t) {
   })
 }
 
-function C(e, t) {
+function N(e, t) {
   h.default.keys(_.Z.getUnsafeMutableRoles(e)).forEach(n => {
     t.has(n) || o.Z.dispatch({
       type: "GUILD_ROLE_DELETE",

@@ -63,22 +63,22 @@ function D(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let L = null,
-  x = {},
-  M = null;
+let x = null,
+  L = {},
+  j = null;
 
-function k() {
+function M() {
   r = new Map, i = {}, a = {}, o = {}
 }
 
-function j(e) {
+function k(e) {
   var t;
-  null == i[e.ownerId] && (i[e.ownerId] = {}), i[e.ownerId][null != (t = e.guildId) ? t : N.kod] = e
+  null == i[e.ownerId] && (i[e.ownerId] = {}), i[e.ownerId][null != (t = e.guildId) ? t : C.kod] = e
 }
 
 function U(e, t) {
   var n;
-  let r = null != t ? t : N.kod;
+  let r = null != t ? t : C.kod;
   return (null == (n = i[e]) ? true : n[r]) != null && (delete i[e][r], true)
 }
 
@@ -95,14 +95,14 @@ function B() {
   return module
 }
 
-function V(e) {
+function Z(e) {
   let {
     applicationStreamState: t
   } = e;
   i = t.streamsByUserAndGuild, r = new Map(t.activeStreams), a = t.rtcStreams, o = t.streamerActiveStreamMetadatas
 }
 
-function F(e) {
+function V(e) {
   let {
     voiceStates: t
   } = e;
@@ -115,8 +115,8 @@ function F(e) {
       selfStream: o,
       discoverable: s
     } = t;
-    if (o && null != i) return j({
-      streamType: null != r ? C.lo.GUILD : C.lo.CALL,
+    if (o && null != i) return k({
+      streamType: null != r ? N.lo.GUILD : N.lo.CALL,
       ownerId: n,
       guildId: r,
       channelId: i,
@@ -129,13 +129,13 @@ function F(e) {
   }, false)
 }
 
-function Z(e) {
+function F(e) {
   let {
     streamKey: t
   } = e, n = (0, p.my)(t);
   r.delete(t), r.set(t, D(P({}, n), {
-    state: N.jm8.CONNECTING
-  })), n.ownerId === b.default.getId() && (x[n.channelId] = false)
+    state: C.jm8.CONNECTING
+  })), n.ownerId === b.default.getId() && (L[n.channelId] = false)
 }
 
 function H(e) {
@@ -169,7 +169,7 @@ function H(e) {
     guildId: i,
     channelId: a,
     ownerId: b.default.getId(),
-    state: N.jm8.CONNECTING
+    state: C.jm8.CONNECTING
   })
 }
 
@@ -196,7 +196,7 @@ function W(e) {
   for (let e in o) {
     let t = r.get(e);
     null != t && (r.set(e, D(P({}, t), {
-      state: N.jm8.FAILED,
+      state: C.jm8.FAILED,
       endReason: n,
       errorCode: i
     })), a = true)
@@ -239,7 +239,7 @@ function q(e) {
     paused: o
   } = e;
   r.set(t, D(P({}, (0, p.my)(t)), {
-    state: o ? N.jm8.PAUSED : N.jm8.ACTIVE
+    state: o ? C.jm8.PAUSED : C.jm8.ACTIVE
   })), a[t] = {
     streamKey: t,
     region: n,
@@ -259,9 +259,9 @@ function Q(e) {
     id: t,
     channelId: n
   } = e;
-  L = t, Array.from(r.values()).forEach(e => {
-    (0, p.V9)(e) !== L && e.state === N.jm8.ENDED && G((0, p.V9)(e))
-  }), null != t && (0, p.DB)(t) && t.includes(b.default.getId()) && (x[n] = false)
+  x = t, Array.from(r.values()).forEach(e => {
+    (0, p.V9)(e) !== x && e.state === C.jm8.ENDED && G((0, p.V9)(e))
+  }), null != t && (0, p.DB)(t) && t.includes(b.default.getId()) && (L[n] = false)
 }
 
 function J(e) {
@@ -273,10 +273,10 @@ function J(e) {
   delete a[t];
   let s = r.get(t);
   if (null == s) returnfalse;
-  let l = N.jm8.ENDED;
-  if (i) l = N.jm8.RECONNECTING;
-  else if (o === N.si2.UNAUTHORIZED) l = N.jm8.FAILED;
-  else if (o === N.si2.SAFETY_GUILD_RATE_LIMITED) {
+  let l = C.jm8.ENDED;
+  if (i) l = C.jm8.RECONNECTING;
+  else if (o === C.si2.UNAUTHORIZED) l = C.jm8.FAILED;
+  else if (o === C.si2.SAFETY_GUILD_RATE_LIMITED) {
     let {
       guildId: e
     } = (0, p.my)(t);
@@ -285,11 +285,11 @@ function J(e) {
         default: n
       } = t;
       n(e)
-    }), l = N.jm8.ENDED
-  } else s.state === N.jm8.FAILED && o === N.si2.USER_REQUESTED && (l = N.jm8.FAILED);
+    }), l = C.jm8.ENDED
+  } else s.state === C.jm8.FAILED && o === C.si2.USER_REQUESTED && (l = C.jm8.FAILED);
   r.set(t, D(P({}, s), {
     state: l
-  })), l === N.jm8.ENDED && L !== t && G(t)
+  })), l === C.jm8.ENDED && x !== t && G(t)
 }
 
 function $(e) {
@@ -298,7 +298,7 @@ function $(e) {
   } = e, n = r.get(t);
   if (null == n) returnfalse;
   r.set(t, D(P({}, n), {
-    state: N.jm8.FAILED
+    state: C.jm8.FAILED
   }))
 }
 
@@ -309,14 +309,14 @@ function ee(e) {
   } = e;
   if (null == t) returnfalse;
   let i = r.get(t);
-  if (null == i || i.state === N.jm8.ENDED || i.state === N.jm8.FAILED && i.ownerId === b.default.getId()) returnfalse;
+  if (null == i || i.state === C.jm8.ENDED || i.state === C.jm8.FAILED && i.ownerId === b.default.getId()) returnfalse;
   let a = i.state;
   switch (n) {
-    case N.hes.DISCONNECTED:
-      a = N.jm8.RECONNECTING;
+    case C.hes.DISCONNECTED:
+      a = C.jm8.RECONNECTING;
       break;
-    case N.hes.RTC_CONNECTED:
-      a = N.jm8.ACTIVE
+    case C.hes.RTC_CONNECTED:
+      a = C.jm8.ACTIVE
   }
   if (a === i.state) returnfalse;
   r.set(t, D(P({}, i), {
@@ -329,19 +329,19 @@ function et(e) {
     channelId: t,
     selfStreamHidden: n
   } = e;
-  (0, p.DB)(L) && (null == L ? true : L.includes(b.default.getId())) && false === x[t] && true === n && (L = null), x[t] = n
+  (0, p.DB)(x) && (null == x ? true : x.includes(b.default.getId())) && false === L[t] && true === n && (x = null), L[t] = n
 }
 
 function en(e) {
   let {
     intent: t
   } = e;
-  M = t
+  j = t
 }
 
 function er(e, t) {
   let n = y.Z.getBasicChannel(t);
-  return e === C.lo.CALL || null != n && I.Z.canBasicChannel(N.S7T.VIEW_CHANNEL, n)
+  return e === N.lo.CALL || null != n && I.Z.canBasicChannel(C.S7T.VIEW_CHANNEL, n)
 }
 
 function ei(e) {
@@ -349,19 +349,19 @@ function ei(e) {
   let t = y.Z.getBasicChannel(e.channelId);
   return null != t && (0, h.p9)(t, A.Z, O.Z, I.Z, f.Z)[0]
 }
-k();
+M();
 class ea extends(c = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    this.syncWith([I.Z], () => true), this.waitFor(_.ZP, I.Z), (null == e ? true : e.selfStreamParticipantsHidden) !== true && Object.assign(x, null == e ? true : e.selfStreamParticipantsHidden)
+    this.syncWith([I.Z], () => true), this.waitFor(_.ZP, I.Z), (null == e ? true : e.selfStreamParticipantsHidden) !== true && Object.assign(L, null == e ? true : e.selfStreamParticipantsHidden)
   }
   getState() {
     return {
-      selfStreamParticipantsHidden: x
+      selfStreamParticipantsHidden: L
     }
   }
   isSelfStreamHidden(e) {
     var t;
-    return null != (t = x[e]) && t
+    return null != (t = L[e]) && t
   }
   getLastActiveStream() {
     var e;
@@ -425,7 +425,7 @@ class ea extends(c = Chunk442837.ZP.PersistedStore) {
   getStreamForUser(e, t) {
     var n;
     if (!(0, m.Z)(v.Z)) return null;
-    let r = null == (n = i[e]) ? true : n[null != t ? t : N.kod];
+    let r = null == (n = i[e]) ? true : n[null != t ? t : C.kod];
     return null != r && ei(r) ? r : null
   }
   getRTCStream(e) {
@@ -445,7 +445,7 @@ class ea extends(c = Chunk442837.ZP.PersistedStore) {
     return null != n ? n.viewerIds : []
   }
   getCurrentAppIntent() {
-    return M
+    return j
   }
   getStreamingState() {
     return (0, Chunk139656.Z)(Chunk131951.Z) ? {
@@ -465,9 +465,9 @@ R(ea, "displayName", "ApplicationStreamingStore"), R(ea, "persistKey", "Applicat
 let eo = new ea(Chunk570140.Z, {
   MEDIA_ENGINE_SET_GO_LIVE_SOURCE: W,
   NATIVE_SCREEN_SHARE_PICKER_UPDATE: K,
-  OVERLAY_INITIALIZE: V,
-  VOICE_STATE_UPDATES: F,
-  STREAM_WATCH: Z,
+  OVERLAY_INITIALIZE: Z,
+  VOICE_STATE_UPDATES: V,
+  STREAM_WATCH: F,
   STREAM_START: H,
   STREAM_STOP: z,
   STREAM_CREATE: q,
@@ -479,7 +479,7 @@ let eo = new ea(Chunk570140.Z, {
   SET_STREAM_APP_INTENT: en,
   RTC_CONNECTION_STATE: ee,
   CHANNEL_RTC_SELECT_PARTICIPANT: Q,
-  CONNECTION_OPEN: k,
-  CONNECTION_CLOSED: k,
-  LOGOUT: k
+  CONNECTION_OPEN: M,
+  CONNECTION_CLOSED: M,
+  LOGOUT: M
 })

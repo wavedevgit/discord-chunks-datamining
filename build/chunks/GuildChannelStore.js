@@ -37,8 +37,8 @@ function I(e, t, n) {
 let T = "SELECTABLE",
   S = "VOCAL",
   A = null,
-  N = {},
   C = {},
+  N = {},
   R = {},
   P = null,
   w = {},
@@ -50,11 +50,11 @@ let T = "SELECTABLE",
       name: "Uncategorized"
     })
   },
-  L = k(Chunk981631.kod),
-  x = [],
-  M = {};
+  x = M(Chunk981631.kod),
+  L = [],
+  j = {};
 
-function k(e) {
+function M(e) {
   return {
     id: e,
     [T]: [],
@@ -64,8 +64,8 @@ function k(e) {
   }
 }
 
-function j(e) {
-  let t = N[e];
+function k(e) {
+  let t = C[e];
   return null == t && (t = Y(e)), t
 }
 
@@ -86,7 +86,7 @@ function B(e) {
   return (0, _.r8)(e) ? T : (0, _.bw)(e) ? S : e
 }
 
-function V() {
+function Z() {
   let e = {},
     t = Chunk853856.Z.getFavoriteChannels();
   for (let n in exports) {
@@ -102,8 +102,8 @@ function V() {
   return module
 }
 
-function F(e) {
-  if (e === v.I_8) return V();
+function V(e) {
+  if (e === v.I_8) return Z();
   let t = {},
     n = m.Z.getMutableGuildChannelsForGuild(e);
   for (let e in n) t[e] = {
@@ -113,10 +113,10 @@ function F(e) {
   return t
 }
 
-function Z(e) {
+function F(e) {
   let {
     id: t
-  } = e, n = F(t);
+  } = e, n = V(t);
   return a().forEach(n, n => {
     let r = n.channel;
     if (e.count += 1, _.zS.has(r.type) && !b.Z.can(v.Plq.VIEW_CHANNEL, r) && !c.Z.isChannelGated(r.guild_id, r.id) && r.id !== P) return;
@@ -126,16 +126,16 @@ function Z(e) {
 }
 
 function H() {
-  N = {}, w = {}, C = {}, R = {}, null != A && Y(A)
+  C = {}, w = {}, N = {}, R = {}, null != A && Y(A)
 }
 
 function Y(e) {
-  let t = k(e);
-  return N[e] = t, w[e] = [], Z(t), G(t), W(t), en(e), t
+  let t = M(e);
+  return C[e] = t, w[e] = [], F(t), G(t), W(t), en(e), t
 }
 
 function W(e) {
-  let t = C[e.id] = {},
+  let t = N[e.id] = {},
     n = {};
   e[T].forEach(e => {
     let {
@@ -155,7 +155,7 @@ function K(e) {
     }
   } = e;
   if (null == t) returnfalse;
-  N[t] = true, A === t && Y(t)
+  C[t] = true, A === t && Y(t)
 }
 
 function z(e) {
@@ -164,7 +164,7 @@ function z(e) {
       id: t
     }
   } = e;
-  return delete N[t], delete C[t], delete R[t], delete w[t], true
+  return delete C[t], delete N[t], delete R[t], delete w[t], true
 }
 
 function q(e) {
@@ -173,7 +173,7 @@ function q(e) {
     user: n
   } = e;
   if (h.default.getId() !== n.id) returnfalse;
-  N[t] = true, t === A && Y(t)
+  C[t] = true, t === A && Y(t)
 }
 
 function X(e) {
@@ -188,7 +188,7 @@ function Q(e) {
     }
   } = e;
   if (null == t) returnfalse;
-  N[t] = true, t === A && Y(t)
+  C[t] = true, t === A && Y(t)
 }
 
 function J(e) {
@@ -199,7 +199,7 @@ function J(e) {
     let {
       guild_id: t
     } = e;
-    null != t && (N[t] = true, n = true, A === t && Y(t))
+    null != t && (C[t] = true, n = true, A === t && Y(t))
   }
   return n
 }
@@ -208,7 +208,7 @@ function $(e) {
   let {
     guildId: t
   } = e;
-  N[t] = true, t === A && Y(t)
+  C[t] = true, t === A && Y(t)
 }
 
 function ee(e, t) {
@@ -222,7 +222,7 @@ function ee(e, t) {
 function et(e, t) {
   let n = E.Z.getGuild(t);
   if (null != n && ee(e, n)) returntrue;
-  let r = N[t];
+  let r = C[t];
   null == r && (r = Y(t));
   let {
     [T]: i, [S]: a
@@ -249,7 +249,7 @@ function er(e, t) {
   P = t;
   let r = null != (n = null == e ? true : e.getGuildId()) ? n : null;
   if (null == r) returnfalse;
-  N[r] = true, r === A && Y(r)
+  C[r] = true, r === A && Y(r)
 }
 
 function ei(e) {
@@ -276,7 +276,7 @@ function eo(e) {
   let {
     guildId: t
   } = e;
-  if (A = null != t ? t : null, null == t || null != N[t]) returnfalse;
+  if (A = null != t ? t : null, null == t || null != C[t]) returnfalse;
   Y(t)
 }
 
@@ -288,10 +288,10 @@ class el extends(r = Chunk442837.ZP.Store) {
     this.waitFor(Chunk430824.Z, Chunk271383.ZP, Chunk592125.Z, Chunk496675.Z, Chunk314897.default, Chunk430198.Z, Chunk853856.Z), this.syncWith([Chunk853856.Z], es)
   }
   getAllGuilds() {
-    return N
+    return C
   }
   getChannels(e) {
-    return null != e ? j(e) : L
+    return null != e ? k(e) : x
   }
   getFirstChannelOfType(e, t, n) {
     let r = this.getChannels(e)[n].find(t);
@@ -338,7 +338,7 @@ class el extends(r = Chunk442837.ZP.Store) {
         channel: t
       } = e;
       return t.id
-    })) ? n : x
+    })) ? n : L
   }
   hasSelectableChannel(e, t) {
     return this.getSelectableChannelIds(e).includes(t)
@@ -354,7 +354,7 @@ class el extends(r = Chunk442837.ZP.Store) {
   }
   getTextChannelNameDisambiguations(e) {
     var t;
-    return null != e && null != (t = C[e]) ? t : M
+    return null != e && null != (t = N[e]) ? t : j
   }
 }
 I(el, "displayName", "GuildChannelStore");

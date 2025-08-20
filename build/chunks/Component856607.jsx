@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 856607, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 856607, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => u
+  Z: () => d
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -13,7 +14,10 @@ var Chunk481060 = require("./481060.js"),
   Chunk433155 = require("./433155.js"),
   Chunk322221 = require("./322221.js");
 
-function u() {
+function d() {
+  let e = () => {
+    (0, Chunk703656.uL)(Chunk981631.Z5c.GUILD_DISCOVERY), Chunk37234.xf()
+  };
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk433155.emptyState,
     children: [(0, Chunk951288.jsx)("img", {
@@ -34,9 +38,7 @@ function u() {
       children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
         variant: "primary",
         text: Chunk388032.intl.string(Chunk388032.t.jQ3pqq),
-        onClick: () => {
-          (0, Chunk703656.uL)(Chunk981631.Z5c.GUILD_DISCOVERY), Chunk37234.xf()
-        }
+        onClick: module
       })
     })]
   })

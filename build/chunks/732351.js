@@ -1,49 +1,53 @@
-/** Chunk was on 91584 **/
-/** chunk id: 732351, original params: t,e,r (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 732351, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 var Chunk381538 = require("./381538.js");
 
 function i() {
-  return (i = Chunk381538 || function(t) {
-    for (var e = 1; e < arguments.length; e++) {
-      var r = arguments[e];
-      for (var n in r) Object.prototype.hasOwnProperty.call(r, n) && (t[n] = r[n])
+  return (i = Chunk381538 || function(e) {
+    for (var t = 1; t < arguments.length; t++) {
+      var n = arguments[t];
+      for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
     }
-    return t
+    return e
   }).apply(this, arguments)
+}
+
+function a(e, t) {
+  e.prototype = Object.create(t.prototype), e.prototype.constructor = e, e.__proto__ = t
 }
 var Chunk654530 = require("./654530.js"),
   Chunk647438 = require("./647438.js"),
   Chunk746117 = require("./746117.js"),
   Chunk856084 = require("./856084.js");
-module.exports = function(t) {
-  function e() {
-    return t.apply(this, arguments) || this
+module.exports = function(e) {
+  function t() {
+    return e.apply(this, arguments) || this
   }
-  return e.prototype = Object.create(t.prototype), e.prototype.constructor = e, e.__proto__ = t, e.prototype.render = function() {
-    var t = this.props,
-      e = t.block,
-      r = t.children,
-      n = t.contentState,
-      c = t.decorator,
-      l = t.decoratorKey,
-      f = t.direction,
-      p = t.leafSet,
-      h = t.text,
-      d = e.getKey(),
-      g = p.get("leaves"),
-      y = c.getComponentForKey(l),
-      v = c.getPropsForKey(l),
-      m = o.encode(d, parseInt(l, 10), 0),
-      _ = h.slice(g.first().get("start"), g.last().get("end")),
-      b = s.getHTMLDirIfDifferent(u.getDirection(_), f);
-    return a.createElement(y, i({}, v, {
-      contentState: n,
-      decoratedText: _,
-      dir: b,
-      key: m,
-      entityKey: e.getEntityAt(p.get("start")),
-      offsetKey: m
-    }), r)
-  }, e
+  return a(t, e), t.prototype.render = function() {
+    var e = this.props,
+      t = e.block,
+      n = e.children,
+      r = e.contentState,
+      a = e.decorator,
+      u = e.decoratorKey,
+      d = e.direction,
+      f = e.leafSet,
+      _ = e.text,
+      p = t.getKey(),
+      h = f.get("leaves"),
+      m = a.getComponentForKey(u),
+      g = a.getPropsForKey(u),
+      E = o.encode(p, parseInt(u, 10), 0),
+      b = _.slice(h.first().get("start"), h.last().get("end")),
+      y = c.getHTMLDirIfDifferent(l.getDirection(b), d);
+    return s.createElement(m, i({}, g, {
+      contentState: r,
+      decoratedText: b,
+      dir: y,
+      key: E,
+      entityKey: t.getEntityAt(f.get("start")),
+      offsetKey: E
+    }), n)
+  }, t
 }(Chunk647438.Component)

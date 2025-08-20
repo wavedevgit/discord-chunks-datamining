@@ -1,13 +1,14 @@
-/** Chunk was on 66181 **/
-/** chunk id: 578361, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 578361, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => f,
-  n: () => p
+  Z: () => h,
+  n: () => f
 });
-var i, Chunk951288 = require("./951288.js"),
+var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk748780 = require("./748780.js"),
   Chunk215569 = require("./215569.js"),
   Chunk278397 = require("./278397.js");
@@ -21,27 +22,29 @@ function u(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function d(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      i = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), i.forEach(function(t) {
+    }))), r.forEach(function(t) {
       u(e, t, n[t])
     })
   }
   return e
 }
-var p = ((i = {})[i.RIGHT = false] = "RIGHT", i[i.LEFT = 1] = "LEFT", i);
-let g = {
+var f = function(e) {
+  return e[e.RIGHT = false] = "RIGHT", e[e.LEFT = 1] = "LEFT", e
+}({});
+let _ = {
   friction: 7,
   tension: 40,
   clamp: true
 };
-class h extends Chunk647438.PureComponent {
+class p extends Chunk647438.PureComponent {
   componentWillEnter(e) {
-    this._animated.setValue(-this.props.direction), o.Z.spring(this._animated, m({
+    this._animated.setValue(-this.props.direction), s.Z.spring(this._animated, d({
       toValue: 0
     }, this.props.springSettings)).start(e)
   }
@@ -49,7 +52,7 @@ class h extends Chunk647438.PureComponent {
     this._animated.setValue(0)
   }
   componentWillLeave(e) {
-    o.Z.spring(this._animated, m({
+    s.Z.spring(this._animated, d({
       toValue: this.props.direction
     }, this.props.springSettings)).start(e)
   }
@@ -75,25 +78,25 @@ class h extends Chunk647438.PureComponent {
     })
   }
   constructor(e) {
-    super(e), u(this, "_animated", true), this._animated = new o.Z.Value(false * e.direction)
+    super(e), u(this, "_animated", true), this._animated = new s.Z.Value(false * e.direction)
   }
 }
-let f = e => {
+let h = e => {
   let {
     children: t,
     step: n,
     direction: i,
-    className: s,
-    springSettings: a = g,
-    fadeInOut: o = false
+    className: a,
+    springSettings: s = _,
+    fadeInOut: u = false
   } = e;
-  return (0, r.jsx)(c.W, {
+  return (0, r.jsx)(l.W, {
     component: "div",
-    className: l()(d.animator, s),
-    children: (0, r.jsx)(h, {
+    className: o()(c.animator, a),
+    children: (0, r.jsx)(p, {
       direction: i,
-      springSettings: a,
-      fadeInOut: o,
+      springSettings: s,
+      fadeInOut: u,
       children: t
     }, n)
   })

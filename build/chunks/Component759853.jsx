@@ -1,12 +1,13 @@
-/** Chunk was on 21046 **/
-/** chunk id: 759853, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 759853, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => C
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk238651 = require("./238651.js"),
   Chunk603113 = require("./603113.js"),
   Chunk803948 = require("./803948.js"),
@@ -18,150 +19,169 @@ var Chunk951288 = require("./951288.js"),
   Chunk675654 = require("./675654.js"),
   Chunk674386 = require("./674386.js"),
   Chunk197857 = require("./197857.js");
-let b = ["#51BC9D"],
-  _ = e => {
-    var t;
-    let {
-      expansionSpring: n,
-      overlayRef: o,
-      quest: _,
-      progressBarRef: j,
-      isExpanded: v,
-      isHovered: C,
-      shouldShowRewardsCTAWhenCollapsed: y
-    } = e, {
-      completionSpring: E,
-      startCompletionAnimation: O
-    } = (0, f.G)(), S = (null == (t = _.userStatus) ? true : t.completedAt) != null, T = s.useRef(false), w = (0, d.e7)([p.Z], () => p.Z.useReducedMotion), P = s.useRef(null), A = (0, d.e7)([m.Z], () => m.Z.hasLayers()), N = (0, u.Z)(A), [R, B] = s.useState(null), [k, I] = s.useState(null), q = s.useRef(new i.qA({
-      gravity: 0,
-      wind: 0
-    })), Q = (0, i.uR)(R, k), D = s.useCallback(() => {
-      if (w) return;
-      let e = j.current,
-        t = P.current;
-      if (null != t && null != e && Q.isReady) {
-        var n, r, s, o, a, i;
-        let {
-          x: l,
-          y: c
-        } = e.getBoundingClientRect(), {
-          x: d,
-          y: u
-        } = t.getBoundingClientRect();
-        Q.createMultipleConfetti((n = l - d, r = c - u, s = e.clientHeight, o = e.clientWidth, a = function(e) {
-          for (var t = 1; t < arguments.length; t++) {
-            var n = null != arguments[t] ? arguments[t] : {},
-              r = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-              return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), r.forEach(function(t) {
-              var r;
-              r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: true,
-                configurable: true,
-                writable: true
-              }) : e[t] = r
-            })
-          }
-          return e
-        }({}, g.We), i = i = {
-          position: {
-            type: "static-random",
-            minValue: {
-              x: n,
-              y: r
-            },
-            maxValue: {
-              x: n + s,
-              y: r + o
-            }
-          },
-          velocity: {
-            type: "static-random",
-            minValue: {
-              x: false,
-              y: false
-            },
-            maxValue: {
-              x: 20,
-              y: 20
-            }
-          },
-          opacity: {
-            type: "linear",
-            value: 2,
-            addValue: false
-          },
-          dragCoefficient: {
-            type: "static",
-            value: .166
-          },
-          size: {
-            type: "static-random",
-            minValue: 2,
-            maxValue: 3
-          }
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
-          var n = Object.keys(e);
-          if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
-          }
-          return n
-        })(Object(i)).forEach(function(e) {
-          Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(i, e))
-        }), a), 100)
-      }
-    }, [j, P, Q, w]), V = (0, u.Z)(v);
-    return (s.useEffect(() => {
-      S && v && !V && (O(), D())
-    }, [v, S, O, D, V]), s.useEffect(() => {
-      S && !A && N && setTimeout(() => {
-        O(), D()
-      }, 200)
-    }, [S, N, A, O, D]), s.useEffect(() => {
-      Q.isReady && (!T.current && S && (O(), D()), T.current = S)
-    }, [S, T, D, O, Q]), s.useEffect(() => {
-      C && y && (O(), D())
-    }, [C, y, O, D]), w) ? null : (0, r.jsxs)("div", {
-      className: x.wrapper,
-      "aria-hidden": "true",
-      ref: P,
-      children: [(0, r.jsx)(c.animated.div, {
-        className: x.background,
-        style: {
-          opacity: E
-        }
-      }), (0, r.jsx)(c.animated.div, {
-        className: a()(x.borders, x.bordersTopLeft),
-        style: {
-          opacity: E
-        }
-      }), (0, r.jsxs)(c.animated.div, {
-        className: x.confettiWrapper,
-        style: {
-          transform: n.to({
-            range: [0, 1],
-            output: [false, 0]
-          }).to(e => "translateY(".concat(e, "px)"))
-        },
-        children: [(0, r.jsx)(i.O_, {
-          ref: B,
-          className: x.confetti,
-          environment: q.current
-        }), (0, r.jsx)(i.Ji, {
-          ref: I,
-          sprites: [h],
-          colors: b,
-          spriteWidth: g.Ko,
-          spriteHeight: g.Ko
-        }), null != o.current && (0, l.createPortal)((0, r.jsx)(c.animated.div, {
-          className: a()(x.borders, x.bordersBottom),
-          style: {
-            opacity: E
-          }
-        }), o.current)]
-      })]
+
+function E(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function b(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      E(e, t, n[t])
     })
   }
+  return e
+}
+
+function y(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function O(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+let v = ["#51BC9D"],
+  I = 100,
+  T = 20,
+  S = false;
+
+function A(e, t, n, r) {
+  return O(b({}, h.We), {
+    position: {
+      type: "static-random",
+      minValue: {
+        x: e,
+        y: t
+      },
+      maxValue: {
+        x: e + n,
+        y: t + r
+      }
+    },
+    velocity: {
+      type: "static-random",
+      minValue: {
+        x: -T,
+        y: -T
+      },
+      maxValue: {
+        x: T,
+        y: T
+      }
+    },
+    opacity: {
+      type: "linear",
+      value: 2,
+      addValue: false
+    },
+    dragCoefficient: {
+      type: "static",
+      value: .166
+    },
+    size: {
+      type: "static-random",
+      minValue: 2,
+      maxValue: 3
+    }
+  })
+}
+let C = e => {
+  var t;
+  let {
+    expansionSpring: n,
+    overlayRef: a,
+    quest: E,
+    progressBarRef: b,
+    isExpanded: y,
+    isHovered: O,
+    shouldShowRewardsCTAWhenCollapsed: T
+  } = e, {
+    completionSpring: C,
+    startCompletionAnimation: N
+  } = (0, p.G)(), R = (null == (t = E.userStatus) ? true : t.completedAt) != null, P = i.useRef(false), w = (0, u.e7)([f.Z], () => f.Z.useReducedMotion), D = i.useRef(null), x = (0, u.e7)([_.Z], () => _.Z.hasLayers()), L = (0, d.Z)(x), [j, M] = i.useState(null), [k, U] = i.useState(null), G = i.useRef(new s.qA({
+    gravity: 0,
+    wind: 0
+  })), B = (0, s.uR)(j, k), Z = i.useCallback(() => {
+    if (w) return;
+    let e = b.current,
+      t = D.current;
+    if (null != t && null != e && B.isReady) {
+      let {
+        x: n,
+        y: r
+      } = e.getBoundingClientRect(), {
+        x: i,
+        y: a
+      } = t.getBoundingClientRect();
+      B.createMultipleConfetti(A(n - i, r - a, e.clientHeight, e.clientWidth), I)
+    }
+  }, [b, D, B, w]), V = (0, d.Z)(y);
+  return (i.useEffect(() => {
+    R && y && !V && (N(), Z())
+  }, [y, R, N, Z, V]), i.useEffect(() => {
+    R && !x && L && setTimeout(() => {
+      N(), Z()
+    }, 200)
+  }, [R, L, x, N, Z]), i.useEffect(() => {
+    B.isReady && (!P.current && R && (N(), Z()), P.current = R)
+  }, [R, P, Z, N, B]), i.useEffect(() => {
+    O && T && (N(), Z())
+  }, [O, T, N, Z]), w) ? null : (0, r.jsxs)("div", {
+    className: m.wrapper,
+    "aria-hidden": "true",
+    ref: D,
+    children: [(0, r.jsx)(c.animated.div, {
+      className: m.background,
+      style: {
+        opacity: C
+      }
+    }), (0, r.jsx)(c.animated.div, {
+      className: o()(m.borders, m.bordersTopLeft),
+      style: {
+        opacity: C
+      }
+    }), (0, r.jsxs)(c.animated.div, {
+      className: m.confettiWrapper,
+      style: {
+        transform: n.to({
+          range: [0, 1],
+          output: [S, 0]
+        }).to(e => "translateY(".concat(e, "px)"))
+      },
+      children: [(0, r.jsx)(s.O_, {
+        ref: M,
+        className: m.confetti,
+        environment: G.current
+      }), (0, r.jsx)(s.Ji, {
+        ref: U,
+        sprites: [g],
+        colors: v,
+        spriteWidth: h.Ko,
+        spriteHeight: h.Ko
+      }), null != a.current && (0, l.createPortal)((0, r.jsx)(c.animated.div, {
+        className: o()(m.borders, m.bordersBottom),
+        style: {
+          opacity: C
+        }
+      }), a.current)]
+    })]
+  })
+}

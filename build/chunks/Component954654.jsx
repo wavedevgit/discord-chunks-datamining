@@ -1,13 +1,14 @@
-/** Chunk was on 30243 **/
-/** chunk id: 954654, original params: e,t,r (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 954654, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  ZP: () => T,
-  xX: () => I
+  ZP: () => x,
+  xX: () => w
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk911969 = require("./911969.js"),
   Chunk23750 = require("./23750.js"),
@@ -30,113 +31,122 @@ var Chunk120356 = require("./120356.js"),
   Chunk892519 = require("./892519.jsx"),
   Chunk429577 = require("./429577.js");
 
-function E(e) {
+function C(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function N(e) {
   for (var t = 1; t < arguments.length; t++) {
-    var r = null != arguments[t] ? arguments[t] : {},
-      n = Object.keys(r);
-    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(r, e).enumerable
-    }))), n.forEach(function(t) {
-      var n;
-      n = r[t], t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: true,
-        configurable: true,
-        writable: true
-      }) : e[t] = n
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      C(e, t, n[t])
     })
   }
   return e
 }
 
-function N(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var r = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-      var n = Object.getOwnPropertySymbols(e);
-      r.push.apply(r, n)
-    }
-    return r
-  })(Object(t)).forEach(function(r) {
-    Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
+function R(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function P(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function I(e) {
-  return e.map((e, t) => (0, n.jsxs)(n.Fragment, {
-    children: [function e(t, r) {
-      switch (t.type) {
-        case a.re.ACTION_ROW:
-          return (0, n.jsx)(P.Z, N(E({}, t), {
-            renderComponents: I
-          }), r);
-        case a.re.BUTTON:
-          return (0, n.jsx)(d.Z, E({}, t), r);
-        case a.re.STRING_SELECT:
-          return (0, n.jsx)(b.Z, E({}, t), r);
-        case a.re.CHANNEL_SELECT:
-          return (0, n.jsx)(p.Z, E({}, t), r);
-        case a.re.USER_SELECT:
-        case a.re.ROLE_SELECT:
-        case a.re.MENTIONABLE_SELECT:
-          return (0, n.jsx)(f.Z, E({}, t), r);
-        case a.re.TEXT_INPUT:
-          return (0, n.jsx)(m.Z, E({}, t), r);
-        case a.re.SECTION:
-          return (0, n.jsx)(w.Z, N(E({}, t), {
-            renderComponents: I
-          }), r);
-        case a.re.TEXT_DISPLAY:
-          return (0, n.jsx)(g.Z, E({}, t), r);
-        case a.re.MEDIA_GALLERY:
-          return (0, n.jsx)(y.Z, E({}, t), r);
-        case a.re.THUMBNAIL:
-          return (0, n.jsx)(h.Z, E({}, t), r);
-        case a.re.FILE:
-          return (0, n.jsx)(O.Z, E({}, t), r);
-        case a.re.SEPARATOR:
-          return (0, n.jsx)(j.Z, E({}, t), r);
-        case a.re.CONTENT_INVENTORY_ENTRY:
-          return (0, n.jsx)(v.Z, E({}, t), r);
-        case a.re.CONTAINER:
-          return (0, n.jsx)(x.ZP, N(E({}, t), {
-            renderComponents: I
-          }), r);
-        case a.re.LABEL:
-          return (0, n.jsx)(S.Z, N(E({}, t), {
-            renderComponent: e
-          }), r)
-      }
-    }(e, t.toString()), (0, n.jsx)(o.nn4, {
+function w(e) {
+  return e.map((e, t) => (0, r.jsxs)(r.Fragment, {
+    children: [D(e, t.toString()), (0, r.jsx)(o.nn4, {
       children: ","
     })]
   }))
 }
 
-function T(e) {
+function D(e, t) {
+  switch (e.type) {
+    case s.re.ACTION_ROW:
+      return (0, r.jsx)(v.Z, P(N({}, e), {
+        renderComponents: w
+      }), t);
+    case s.re.BUTTON:
+      return (0, r.jsx)(d.Z, N({}, e), t);
+    case s.re.STRING_SELECT:
+      return (0, r.jsx)(p.Z, N({}, e), t);
+    case s.re.CHANNEL_SELECT:
+      return (0, r.jsx)(f.Z, N({}, e), t);
+    case s.re.USER_SELECT:
+    case s.re.ROLE_SELECT:
+    case s.re.MENTIONABLE_SELECT:
+      return (0, r.jsx)(_.Z, N({}, e), t);
+    case s.re.TEXT_INPUT:
+      return (0, r.jsx)(h.Z, N({}, e), t);
+    case s.re.SECTION:
+      return (0, r.jsx)(S.Z, P(N({}, e), {
+        renderComponents: w
+      }), t);
+    case s.re.TEXT_DISPLAY:
+      return (0, r.jsx)(b.Z, N({}, e), t);
+    case s.re.MEDIA_GALLERY:
+      return (0, r.jsx)(g.Z, N({}, e), t);
+    case s.re.THUMBNAIL:
+      return (0, r.jsx)(y.Z, N({}, e), t);
+    case s.re.FILE:
+      return (0, r.jsx)(m.Z, N({}, e), t);
+    case s.re.SEPARATOR:
+      return (0, r.jsx)(E.Z, N({}, e), t);
+    case s.re.CONTENT_INVENTORY_ENTRY:
+      return (0, r.jsx)(O.Z, N({}, e), t);
+    case s.re.CONTAINER:
+      return (0, r.jsx)(I.ZP, P(N({}, e), {
+        renderComponents: w
+      }), t);
+    case s.re.LABEL:
+      return (0, r.jsx)(T.Z, P(N({}, e), {
+        renderComponent: D
+      }), t)
+  }
+}
+
+function x(e) {
   let {
     message: t,
-    shouldDisableInteractiveComponents: r
+    shouldDisableInteractiveComponents: n
   } = e, {
-    components: l
-  } = t, [o, a] = (0, u.e4)();
-  return 0 === l.length ? null : (0, n.jsx)(s.Il, {
+    components: i
+  } = t, [o, s] = (0, u.e4)();
+  return 0 === i.length ? null : (0, r.jsx)(c.Il, {
     message: t,
-    shouldDisableInteractiveComponents: r,
-    children: (0, n.jsx)(u.am.Root, {
-      containerInnerWidth: a,
-      children: (0, n.jsx)("div", {
+    shouldDisableInteractiveComponents: n,
+    children: (0, r.jsx)(u.am.Root, {
+      containerInnerWidth: s,
+      children: (0, r.jsx)("div", {
         style: {
           width: "100%"
         },
         ref: o,
-        children: (0, n.jsx)(u.am.AutoMeasuredNestedContainer, {
-          children: e => (0, n.jsx)("div", {
+        children: (0, r.jsx)(u.am.AutoMeasuredNestedContainer, {
+          children: e => (0, r.jsx)("div", {
             ref: e,
-            className: i()([C.container, {
-              [C.isComponentsV2]: (0, c.hv)(t)
+            className: a()([A.container, {
+              [A.isComponentsV2]: (0, l.hv)(t)
             }]),
-            children: I(l)
+            children: w(i)
           })
         })
       })

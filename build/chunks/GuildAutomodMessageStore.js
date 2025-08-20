@@ -1,7 +1,8 @@
-/** Chunk was on 26434 **/
-/** chunk id: 223606, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 223606, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => y
+  Z: () => w
 });
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -14,7 +15,7 @@ var r, Chunk442837 = require("./442837.js"),
   Chunk825829 = require("./825829.js"),
   Chunk981631 = require("./981631.js");
 
-function f(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -22,122 +23,140 @@ function f(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let g = {},
-  _ = 0,
-  h = {},
-  b = {},
-  E = e => {
-    null != g[e] && delete g[e], _++
+let h = {},
+  m = 0,
+  g = {},
+  E = {},
+  b = (e, t) => {
+    let n = (0, o.hc)(e),
+      r = {
+        id: n,
+        isBlockedEdit: (0, o.Bz)(e),
+        messageData: e,
+        errorMessage: (0, d.uF)(e, t)
+      };
+    h[n] = r, m++
+  },
+  y = e => h[e],
+  O = e => {
+    null != h[e] && delete h[e], m++
   };
 
-function C(e) {
+function v(e) {
+  return 0 !== Object.keys(h).length && (h = {}, m++, true)
+}
+
+function I(e) {
   let {
     messageData: t,
     errorResponseBody: n
-  } = e, r = (0, o.hc)(t), i = {
-    id: r,
-    isBlockedEdit: (0, o.Bz)(t),
-    messageData: t,
-    errorMessage: (0, d.uF)(t, n)
-  };
-  return g[r] = i, _++, true
+  } = e;
+  return b(t, n), true
 }
 
-function v(e) {
+function T(e) {
+  let {
+    messageId: t
+  } = e;
+  return O(t), true
+}
+
+function S(e) {
+  let {
+    response: t
+  } = e;
+  if ((null == t ? true : t.body) == null || t.body.code === _.evJ.AUTOMOD_MESSAGE_BLOCKED) returnfalse;
+  let n = t.body.id;
+  if (null == n) returnfalse;
+  O(n)
+}
+
+function A(e) {
+  let {
+    guildId: t,
+    decisionId: n,
+    suspiciousMentionActivityUntil: r
+  } = e;
+  return g[t] = {
+    guildId: t,
+    decisionId: n,
+    suspiciousMentionActivityUntil: r
+  }, true
+}
+
+function C(e) {
+  let {
+    guildId: t
+  } = e;
+  return delete g[t], true
+}
+
+function N(e) {
+  let {
+    guildId: t,
+    message: n
+  } = e;
+  if (null == t || n.type !== _.uaV.AUTO_MODERATION_ACTION) returnfalse;
+  let r = (0, s.e5)(n);
+  return !!(0, f.nY)(r) && !!(0, f.OP)(r) && (E[t] = r.id, true)
+}
+
+function R(e) {
   var t;
   let {
     channelId: n,
     messages: r
-  } = e, i = null == (t = s.Z.getChannel(n)) ? true : t.getGuildId();
+  } = e, i = null == (t = l.Z.getChannel(n)) ? true : t.getGuildId();
   if (null == i) returnfalse;
-  let l = b[i],
+  let a = E[i],
     o = r.reduce((e, t) => {
       var n;
-      return t.type === m.uaV.AUTO_MODERATION_ACTION && (null == (n = t.embeds) ? true : n.some(e => {
+      return t.type === _.uaV.AUTO_MODERATION_ACTION && (null == (n = t.embeds) ? true : n.some(e => {
         let {
           type: t
         } = e;
-        return t === m.hBH.AUTO_MODERATION_NOTIFICATION
+        return t === _.hBH.AUTO_MODERATION_NOTIFICATION
       })) ? null == e || false === u.default.compare(e, t.id) ? t.id : true : e
-    }, l);
-  return null != o && b[i] !== o && (b[i] = o, true)
+    }, a);
+  return null != o && E[i] !== o && (E[i] = o, true)
 }
-class O extends(r = Chunk442837.ZP.PersistedStore) {
+class P extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    this.waitFor(c.Z), null != e && (g = e.automodFailedMessages, h = e.mentionRaidDetectionByGuild)
+    this.waitFor(c.Z), null != e && (h = e.automodFailedMessages, g = e.mentionRaidDetectionByGuild)
   }
   getState() {
     return {
-      automodFailedMessages: g,
-      mentionRaidDetectionByGuild: h,
-      lastIncidentAlertMessage: b
+      automodFailedMessages: h,
+      mentionRaidDetectionByGuild: g,
+      lastIncidentAlertMessage: E
     }
   }
   getMessage(e) {
     var t;
-    return null == e ? null : null != (t = g[e]) ? t : null
+    return null == e ? null : null != (t = y(e)) ? t : null
   }
   getMessagesVersion() {
-    return _
+    return m
   }
   getMentionRaidDetected(e) {
     var t;
-    return null != (t = h[e]) ? t : null
+    return null != (t = g[e]) ? t : null
   }
   getLastIncidentAlertMessage(e) {
     var t;
-    return null != (t = b[e]) ? t : null
+    return null != (t = E[e]) ? t : null
   }
 }
-f(O, "displayName", "GuildAutomodMessageStore"), f(O, "persistKey", "GuildAutomodMessages");
-let y = new O(Chunk570140.Z, {
-  CONNECTION_OPEN: function(e) {
-    return 0 !== Object.keys(g).length && (g = {}, _++, true)
-  },
-  LOAD_MESSAGES_SUCCESS: v,
-  LOCAL_MESSAGES_LOADED: v,
-  MESSAGE_CREATE: function(e) {
-    let {
-      guildId: t,
-      message: n
-    } = e;
-    if (null == t || n.type !== m.uaV.AUTO_MODERATION_ACTION) returnfalse;
-    let r = (0, a.e5)(n);
-    return !!(0, p.nY)(r) && !!(0, p.OP)(r) && (b[t] = r.id, true)
-  },
-  MESSAGE_SEND_FAILED_AUTOMOD: C,
-  MESSAGE_EDIT_FAILED_AUTOMOD: C,
-  REMOVE_AUTOMOD_MESSAGE_NOTICE: function(e) {
-    let {
-      messageId: t
-    } = e;
-    return E(t), true
-  },
-  MESSAGE_END_EDIT: function(e) {
-    let {
-      response: t
-    } = e;
-    if ((null == t ? true : t.body) == null || t.body.code === m.evJ.AUTOMOD_MESSAGE_BLOCKED) returnfalse;
-    let n = t.body.id;
-    if (null == n) returnfalse;
-    E(n)
-  },
-  AUTO_MODERATION_MENTION_RAID_DETECTION: function(e) {
-    let {
-      guildId: t,
-      decisionId: n,
-      suspiciousMentionActivityUntil: r
-    } = e;
-    return h[t] = {
-      guildId: t,
-      decisionId: n,
-      suspiciousMentionActivityUntil: r
-    }, true
-  },
-  AUTO_MODERATION_MENTION_RAID_NOTICE_DISMISS: function(e) {
-    let {
-      guildId: t
-    } = e;
-    return delete h[t], true
-  }
+p(P, "displayName", "GuildAutomodMessageStore"), p(P, "persistKey", "GuildAutomodMessages");
+let w = new P(Chunk570140.Z, {
+  CONNECTION_OPEN: v,
+  LOAD_MESSAGES_SUCCESS: R,
+  LOCAL_MESSAGES_LOADED: R,
+  MESSAGE_CREATE: N,
+  MESSAGE_SEND_FAILED_AUTOMOD: I,
+  MESSAGE_EDIT_FAILED_AUTOMOD: I,
+  REMOVE_AUTOMOD_MESSAGE_NOTICE: T,
+  MESSAGE_END_EDIT: S,
+  AUTO_MODERATION_MENTION_RAID_DETECTION: A,
+  AUTO_MODERATION_MENTION_RAID_NOTICE_DISMISS: C
 })

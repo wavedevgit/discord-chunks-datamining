@@ -1,9 +1,9 @@
-/** Chunk was on 69003 **/
+/** Chunk was on 91488 **/
 /** chunk id: 432792, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  M: () => x,
-  M4: () => P,
-  WS: () => I,
+  M: () => E,
+  M4: () => I,
+  WS: () => P,
   t4: () => C
 }), require("./388685.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
@@ -27,11 +27,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk447489 = require("./447489.js"),
   Chunk484885 = require("./484885.js");
 let C = () => (0, Chunk930153.Lk)(document.body.style.getPropertyValue("--custom-app-panels-height"), 56) + 8,
-  E = {
+  x = {
     discover: Chunk704215.z.VIRTUAL_CURRENCY_DISCOVERY_ONBOARDING_COACHMARK,
     shop: Chunk704215.z.VIRTUAL_CURRENCY_SHOP_ONBOARDING_COACHMARK
   },
-  x = e => {
+  E = e => {
     let {
       onboardingCoachmarkType: t,
       prevCoachmarksDismissed: n = true,
@@ -40,9 +40,9 @@ let C = () => (0, Chunk930153.Lk)(document.body.style.getPropertyValue("--custom
       enabled: a
     } = (0, m.WX)({
       location: "virtual_currency_onboarding_coachmark"
-    }), s = E[t], c = (0, p.Nj)(s), u = a && l && n && !c, d = i.useCallback(function() {
+    }), s = x[t], c = (0, p.Nj)(s), u = a && l && n && !c, d = i.useCallback(function() {
       let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : "CLOSE";
-      c || (0, p.Q3)(E[t], {
+      c || (0, p.Q3)(x[t], {
         forceTrack: true,
         dismissAction: "CTA_CLICK" === e ? _.L.TAKE_ACTION : _.L.USER_DISMISS,
         groupName: _.R.VIRTUAL_CURRENCY_ONBOARDING
@@ -60,7 +60,7 @@ let C = () => (0, Chunk930153.Lk)(document.body.style.getPropertyValue("--custom
   S = e => {
     let {
       customIconSrcs: t
-    } = e, n = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), i = true !== t ? t.animated : j.Z, o = true !== t ? t.static : v.Z;
+    } = e, n = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), i = true !== t ? t.animated : v.Z, o = true !== t ? t.static : j.Z;
     return n || null == i ? (0, r.jsx)("img", {
       src: o,
       className: y.orbAsset,
@@ -70,16 +70,16 @@ let C = () => (0, Chunk930153.Lk)(document.body.style.getPropertyValue("--custom
       loop: true,
       className: y.orbAsset,
       children: [(0, r.jsx)("source", {
-        src: j.Z,
+        src: v.Z,
         type: "video/webm"
       }), (0, r.jsx)("img", {
-        src: v.Z,
+        src: j.Z,
         className: y.orbAsset,
         alt: "Orb"
       })]
     })
   },
-  P = e => {
+  I = e => {
     let {
       titleText: t,
       descriptionText: n,
@@ -120,7 +120,7 @@ let C = () => (0, Chunk930153.Lk)(document.body.style.getPropertyValue("--custom
     })
   };
 
-function I(e) {
+function P(e) {
   let {
     calculateVisibility: t,
     children: n,
@@ -132,15 +132,15 @@ function I(e) {
     onGetTargetElementDimensions: p,
     spacing: f,
     position: h = "right"
-  } = e, [g, m] = i.useState("bottom" === u), [O, _] = i.useState(true), [y, v] = i.useState(String(Date.now())), j = (0, c.Z)(), C = i.useCallback(e => {
+  } = e, [g, m] = i.useState("bottom" === u), [O, _] = i.useState(true), [y, j] = i.useState(String(Date.now())), v = (0, c.Z)(), C = i.useCallback(e => {
     let n = t(e);
     n !== O && _(n)
-  }, [O, t]), E = a.current, x = i.useCallback(() => {
+  }, [O, t]), x = a.current, E = i.useCallback(() => {
     null != o && null != o.current && o.current.updateElementPosition()
   }, [o]);
-  i.useEffect(() => (null != E && E.ownerDocument.addEventListener("scroll", x, true), () => {
-    null != E && E.ownerDocument.removeEventListener("scroll", x, true)
-  }), [E, x]);
+  i.useEffect(() => (null != x && x.ownerDocument.addEventListener("scroll", E, true), () => {
+    null != x && x.ownerDocument.removeEventListener("scroll", E, true)
+  }), [x, E]);
   let S = i.useCallback(e => {
     let {
       height: t,
@@ -152,10 +152,10 @@ function I(e) {
         height: t,
         width: n
       }), null != r) {
-      if (C(r), i && v(String(Date.now())), d) return;
+      if (C(r), i && j(String(Date.now())), d) return;
       let e = r.top < window.innerHeight / 2;
       if (e === g) return;
-      m(e), v(String(Date.now()))
+      m(e), j(String(Date.now()))
     }
   }, [g, C, p, d]);
   (0, b.fu)({
@@ -164,18 +164,18 @@ function I(e) {
     shouldPollPositionOnMount: true,
     targetElementRef: a
   });
-  let P = i.useMemo(() => d ? null != u ? u : "bottom" : g ? "top" : "bottom", [d, u, g]),
-    I = O && !j,
+  let I = i.useMemo(() => d ? null != u ? u : "bottom" : g ? "top" : "bottom", [d, u, g]),
+    P = O && !v,
     N = i.Children.map(l, e => i.cloneElement(e, {
-      align: P
+      align: I
     }));
   return (0, r.jsx)(s.yRy, {
     autoInvert: false,
     renderPopout: () => N,
     position: h,
-    align: P,
+    align: I,
     nudgeAlignIntoViewport: false,
-    shouldShow: I,
+    shouldShow: P,
     spacing: f,
     positionKey: y,
     animation: s.yRy.Animation.TRANSLATE,

@@ -1,10 +1,11 @@
-/** Chunk was on 21046 **/
-/** chunk id: 743294, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 743294, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Li: () => o,
+  Li: () => a,
   aY: () => r,
-  v6: () => s
+  v6: () => i
 });
 let r = "#00000000",
-  s = "#CDD8FF1A",
-  o = 12
+  i = "#CDD8FF1A",
+  a = 12

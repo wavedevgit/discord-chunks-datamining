@@ -63,7 +63,7 @@ class E extends Chunk147913.Z {
     Chunk344532.Z.wasLoginAttemptedInSession(module.id) && exports ? (0, Chunk481060.ZDy)(async () => {
       let {
         default: e
-      } = await require.e("48707").then(require.bind(require, 194530));
+      } = await Promise.resolve().then(require.bind(require, 194530));
       return function(t) {
         let n = () => {
             t.onClose(), a.Z.logout("login_required_account_manager", d.Z5c.LOGIN)

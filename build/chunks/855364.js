@@ -1,6 +1,7 @@
-/** Chunk was on 96750 **/
-/** chunk id: 855364, original params: e,t,n (module,exports,require) **/
-require.r(module.exports = {
+/** Chunk was on web.js **/
+/** chunk id: 855364, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+var r = {
   actionsStreamPreview: "actionsStreamPreview__34f7d",
   actionsProfile: "actionsProfile__34f7d",
   actionsProfileV2: "actionsProfileV2__34f7d",
@@ -9,4 +10,5 @@ require.r(module.exports = {
   errorImage: "errorImage__34f7d",
   cannotLaunchImage: "cannotLaunchImage__34f7d errorImage__34f7d",
   actionsWrapper: "actionsWrapper__34f7d"
-})
+};
+require.r(module.exports = r)

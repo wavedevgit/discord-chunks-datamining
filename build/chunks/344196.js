@@ -1,13 +1,13 @@
-/** Chunk was on 91584 **/
-/** chunk id: 344196, original params: t,e,r (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 344196, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 var Chunk733359 = require("./733359.js"),
   i = require("./65183.js").OrderedSet,
-  o = Chunk733359.substr,
-  a = i();
-module.exports = function(t, e) {
-  var r = Array(t.length).fill(a);
-  return e && e.forEach(function(e) {
-    for (var n = o(t, 0, e.offset).length, i = n + o(t, e.offset, e.length).length; n < i;) r[n] = r[n].add(e.style), n++
-  }), r
+  a = Chunk733359.substr,
+  o = i();
+module.exports = function(e, t) {
+  var n = Array(e.length).fill(o);
+  return t && t.forEach(function(t) {
+    for (var r = a(e, 0, t.offset).length, i = r + a(e, t.offset, t.length).length; r < i;) n[r] = n[r].add(t.style), r++
+  }), n
 }

@@ -6,7 +6,7 @@ require.d(exports, {
   FO: () => S,
   G1: () => R,
   I6: () => I,
-  J7: () => N,
+  J7: () => C,
   JM: () => T,
   Jw: () => m,
   WL: () => y,
@@ -18,7 +18,7 @@ require.d(exports, {
   sq: () => p,
   tV: () => w,
   uu: () => P,
-  wk: () => C,
+  wk: () => N,
   zd: () => O
 });
 var Chunk367907 = require("./367907.js"),
@@ -229,7 +229,7 @@ function A(e, t) {
     emailToken: e
   })
 }
-async function N(e, t, n) {
+async function C(e, t, n) {
   try {
     await (0, c.ox)({
       name: l.b.MESSAGE,
@@ -242,7 +242,7 @@ async function N(e, t, n) {
   }
 }
 
-function C(e, t) {
+function N(e, t) {
   D(l.b.MESSAGE, {
     message_id: e.id,
     channel_id: e.channel_id

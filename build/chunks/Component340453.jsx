@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 340453, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 340453, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => u
+  Z: () => h
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -11,69 +12,81 @@ var Chunk481060 = require("./481060.js"),
   Chunk631885 = require("./631885.js"),
   Chunk329242 = require("./329242.jsx"),
   Chunk173664 = require("./173664.js");
-let d = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk481060.qEK;
 
-function u(e) {
-  var t, n;
+function u(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function d(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      u(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function f(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+let p = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk481060.qEK;
+
+function h(e) {
   let {
-    otherUser: a,
-    status: u
-  } = e, m = (0, l.j_)(a.id, u), {
-    avatarSrc: p,
-    avatarDecorationSrc: g,
+    otherUser: t,
+    status: n
+  } = e, o = (0, s.j_)(t.id, n), {
+    avatarSrc: u,
+    avatarDecorationSrc: f,
     eventHandlers: h
-  } = (0, s.Z)({
-    userId: a.id,
-    size: r.EFr.SIZE_40,
+  } = (0, a.Z)({
+    userId: t.id,
+    size: i.EFr.SIZE_40,
     animateOnHover: true
   });
-  return (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)("div", (t = function(e) {
-      for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-          i = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-          return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), i.forEach(function(t) {
-          var i;
-          i = n[t], t in e ? Object.defineProperty(e, t, {
-            value: i,
-            enumerable: true,
-            configurable: true,
-            writable: true
-          }) : e[t] = i
-        })
-      }
-      return e
-    }({}, h), n = n = {
-      children: (0, i.jsx)(d, {
+  return (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)("div", _(d({}, h), {
+      children: (0, r.jsx)(p, {
         className: c.avatar,
-        src: p,
-        avatarDecoration: g,
-        size: r.EFr.SIZE_40,
-        "aria-label": a.username
+        src: u,
+        avatarDecoration: f,
+        size: i.EFr.SIZE_40,
+        "aria-label": t.username
       })
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
-      var n = Object.keys(e);
-      if (Object.getOwnPropertySymbols) {
-        var i = Object.getOwnPropertySymbols(e);
-        n.push.apply(n, i)
-      }
-      return n
-    })(Object(n)).forEach(function(e) {
-      Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-    }), t)), (0, i.jsxs)("div", {
+    })), (0, r.jsxs)("div", {
       className: c.userPreview,
-      children: [(0, i.jsx)("div", {
+      children: [(0, r.jsx)("div", {
         className: c.userContainerWithTimestamp,
-        children: (0, i.jsx)(o.Z, {
-          user: a
+        children: (0, r.jsx)(l.Z, {
+          user: t
         })
-      }), (0, i.jsx)(r.Text, {
+      }), (0, r.jsx)(i.Text, {
         className: c.__invalid_timestamp,
         color: "text-muted",
         variant: "text-xs/normal",
-        children: m
+        children: o
       })]
     })]
   })

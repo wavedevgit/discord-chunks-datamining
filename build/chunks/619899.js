@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   N9: () => y,
-  O1: () => C,
-  St: () => N,
+  O1: () => N,
+  St: () => C,
   ex: () => I,
   xq: () => O,
   zL: () => v
@@ -240,7 +240,7 @@ let y = (0, Chunk879690.U)(e => ({
     let r = Object.values(t);
     return e && 0 !== r.length ? null != n ? t[n] : r[0] : null
   },
-  N = e => {
+  C = e => {
     let {
       previewEnabled: t,
       previewAvatarDecorationId: n
@@ -258,7 +258,7 @@ let y = (0, Chunk879690.U)(e => ({
       })
     }, [e, t, n, i])
   },
-  C = e => {
+  N = e => {
     let {
       previewEnabled: t,
       previewAvatarDecorationId: n

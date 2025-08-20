@@ -1,7 +1,8 @@
-/** Chunk was on 30243 **/
-/** chunk id: 482417, original params: e,t,r (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 482417, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => c
+  Z: () => f
 }), require("./388685.js");
 var Chunk423875 = require("./423875.js"),
   Chunk740605 = require("./740605.js"),
@@ -9,68 +10,80 @@ var Chunk423875 = require("./423875.js"),
   Chunk616922 = require("./616922.js"),
   Chunk388032 = require("./388032.jsx");
 
+function l(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
 function c(e) {
-  var t, r;
-  let c, {
-      entry: s,
-      baseEntryData: u
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      l(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function u(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function d(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : u(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+
+function f(e) {
+  let t, {
+      entry: n,
+      baseEntryData: l
     } = e,
-    d = s.extra.entries[0].media,
-    p = d.artists[0],
+    u = n.extra.entries[0].media,
+    f = u.artists[0],
     {
-      title: f,
-      provider: b,
-      image_url: m
-    } = d,
-    O = p.name,
-    y = {
-      onClick: () => (0, l.o)(o.Hw.TRACK, d.external_id),
-      ariaDescription: a.intl.formatToPlainString(a.t.xTsar6, {
-        itemName: f
+      title: _,
+      provider: p,
+      image_url: h
+    } = u,
+    m = f.name,
+    g = {
+      onClick: () => (0, i.o)(o.Hw.TRACK, u.external_id),
+      ariaDescription: s.intl.formatToPlainString(s.t.xTsar6, {
+        itemName: _
       })
     },
-    j = {
-      onClick: () => (0, l.o)(o.Hw.ARTIST, p.external_id),
-      ariaDescription: a.intl.formatToPlainString(a.t.xTsar6, {
-        itemName: O
+    E = {
+      onClick: () => (0, i.o)(o.Hw.ARTIST, f.external_id),
+      ariaDescription: s.intl.formatToPlainString(s.t.xTsar6, {
+        itemName: m
       })
     };
-  return b === n.p.SPOTIFY && (c = {
-    type: i.kG.SPOTIFY
-  }), t = function(e) {
-    for (var t = 1; t < arguments.length; t++) {
-      var r = null != arguments[t] ? arguments[t] : {},
-        n = Object.keys(r);
-      "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-        return Object.getOwnPropertyDescriptor(r, e).enumerable
-      }))), n.forEach(function(t) {
-        var n;
-        n = r[t], t in e ? Object.defineProperty(e, t, {
-          value: n,
-          enumerable: true,
-          configurable: true,
-          writable: true
-        }) : e[t] = n
-      })
-    }
-    return e
-  }({}, u), r = r = {
-    title: f,
-    subtitle: O,
-    thumbnailUrl: m,
-    titleClickable: y,
-    subtitleClickable: j,
-    thumbnailClickable: y,
-    userDescription: a.t.CcVI1d,
-    providerIconProps: c
-  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
-    var r = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-      var n = Object.getOwnPropertySymbols(e);
-      r.push.apply(r, n)
-    }
-    return r
-  })(Object(r)).forEach(function(e) {
-    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
-  }), t
+  return p === r.p.SPOTIFY && (t = {
+    type: a.kG.SPOTIFY
+  }), d(c({}, l), {
+    title: _,
+    subtitle: m,
+    thumbnailUrl: h,
+    titleClickable: g,
+    subtitleClickable: E,
+    thumbnailClickable: g,
+    userDescription: s.t.CcVI1d,
+    providerIconProps: t
+  })
 }

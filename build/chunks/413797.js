@@ -1,5 +1,5 @@
 /** Chunk was on 99617 **/
-/** chunk id: 413797, original params: n,e,t (module,exports,require) **/
+/** chunk id: 413797, original params: e,t,n (module,exports,require) **/
 module.exports = {
   contentPadding: "contentPadding__1db97",
   title: "title__1db97",

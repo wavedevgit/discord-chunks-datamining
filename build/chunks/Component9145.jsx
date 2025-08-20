@@ -1,4 +1,4 @@
-/** Chunk was on 36499 **/
+/** Chunk was on 5665 **/
 /** chunk id: 9145, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => G
@@ -155,7 +155,7 @@ function G(e) {
     var t;
     if (null == e || true === e || e === A.ag) return null;
     let n = em.get(e.id),
-      i = null != (t = null == n ? true : n.nick) ? t : O.ZP.getName(e);
+      i = null != (t = null == n ? true : n.nick) ? t : j.ZP.getName(e);
     return (0, r.jsx)(c.DY3, {
       text: i,
       position: "bottom",
@@ -242,12 +242,12 @@ function G(e) {
         maxHeight: G,
         resizableNode: $,
         onResize: e => {
-          j.S.dispatch(L.CkL.MANUAL_IFRAME_RESIZING, {
+          O.S.dispatch(L.CkL.MANUAL_IFRAME_RESIZING, {
             resizing: true
           }), er(e)
         },
         onResizeEnd: e => {
-          j.S.dispatch(L.CkL.MANUAL_IFRAME_RESIZING, {
+          O.S.dispatch(L.CkL.MANUAL_IFRAME_RESIZING, {
             resizing: false
           }), ei(e)
         }

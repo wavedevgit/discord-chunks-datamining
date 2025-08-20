@@ -1,5 +1,5 @@
-/** Chunk was on 91584 **/
-/** chunk id: 831206, original params: t,e,r (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 831206, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 var Chunk179361 = require("./179361.js"),
   Chunk470427 = require("./470427.js"),
@@ -8,125 +8,129 @@ var Chunk179361 = require("./179361.js"),
   Chunk581079 = require("./581079.js"),
   Chunk539622 = require("./539622.js"),
   c = Chunk65183.List,
-  l = function(t, e, r, n, i, o) {
-    var u = arguments.length > 6 && true !== arguments[6] ? arguments[6] : "REPLACE_WITH_NEW_DATA",
-      s = r.get(i),
-      c = s.getText(),
-      l = s.getCharacterList(),
-      f = o + n.getText().length,
-      p = null;
-    switch (u) {
+  u = function(e, t, n, r, i, a) {
+    var s = arguments.length > 6 && true !== arguments[6] ? arguments[6] : "REPLACE_WITH_NEW_DATA",
+      l = n.get(i),
+      c = l.getText(),
+      u = l.getCharacterList(),
+      d = i,
+      f = a + r.getText().length,
+      _ = null;
+    switch (s) {
       case "MERGE_OLD_DATA_TO_NEW_DATA":
-        p = n.getData().merge(s.getData());
+        _ = r.getData().merge(l.getData());
         break;
       case "REPLACE_WITH_NEW_DATA":
-        p = n.getData()
+        _ = r.getData()
     }
-    var h = s.merge({
-      text: c.slice(0, o) + n.getText() + c.slice(o),
-      characterList: a(l, n.getCharacterList(), o),
-      data: p
+    var p = l.merge({
+      text: c.slice(0, a) + r.getText() + c.slice(a),
+      characterList: o(u, r.getCharacterList(), a),
+      data: _
     });
-    return t.merge({
-      blockMap: r.set(i, h),
-      selectionBefore: e,
-      selectionAfter: e.merge({
-        anchorKey: i,
+    return e.merge({
+      blockMap: n.set(i, p),
+      selectionBefore: t,
+      selectionAfter: t.merge({
+        anchorKey: d,
         anchorOffset: f,
-        focusKey: i,
+        focusKey: d,
         focusOffset: f,
         isBackward: false
       })
     })
   },
-  f = function(t, e, r) {
-    var n = t.getText(),
-      i = t.getCharacterList(),
-      o = n.slice(0, e),
-      a = i.slice(0, e),
-      u = r.first();
-    return t.merge({
-      text: o + u.getText(),
-      characterList: a.concat(u.getCharacterList()),
-      type: o ? t.getType() : u.getType(),
-      data: u.getData()
-    })
-  },
-  p = function(t, e, r) {
-    var n = t.getText(),
-      i = t.getCharacterList(),
-      o = n.length,
-      a = n.slice(e, o),
-      u = i.slice(e, o),
-      s = r.last();
-    return s.merge({
-      text: s.getText() + a,
-      characterList: s.getCharacterList().concat(u),
+  d = function(e, t, n) {
+    var r = e.getText(),
+      i = e.getCharacterList(),
+      a = r.slice(0, t),
+      o = i.slice(0, t),
+      s = n.first();
+    return e.merge({
+      text: a + s.getText(),
+      characterList: o.concat(s.getCharacterList()),
+      type: a ? e.getType() : s.getType(),
       data: s.getData()
     })
   },
-  h = function(t, e) {
-    var r = t.getKey(),
-      n = t,
+  f = function(e, t, n) {
+    var r = e.getText(),
+      i = e.getCharacterList(),
+      a = r.length,
+      o = r.slice(t, a),
+      s = i.slice(t, a),
+      l = n.last();
+    return l.merge({
+      text: l.getText() + o,
+      characterList: l.getCharacterList().concat(s),
+      data: l.getData()
+    })
+  },
+  _ = function(e, t) {
+    var n = e.getKey(),
+      r = e,
       i = [];
-    for (e.get(r) && i.push(r); n && n.getNextSiblingKey();) {
-      var o = n.getNextSiblingKey();
-      if (!o) break;
-      i.push(o), n = e.get(o)
+    for (t.get(n) && i.push(n); r && r.getNextSiblingKey();) {
+      var a = r.getNextSiblingKey();
+      if (!a) break;
+      i.push(a), r = t.get(a)
     }
     return i
   },
-  d = function(t, e, r, o, a, u) {
-    var s, l = r.first() instanceof i,
-      d = [],
-      g = o.size,
-      y = r.get(a),
-      v = o.first(),
-      m = o.last(),
-      _ = m.getLength(),
-      b = m.getKey(),
-      S = l && (!y.getChildKeys().isEmpty() || !v.getChildKeys().isEmpty());
-    r.forEach(function(t, e) {
-      if (e !== a) return void d.push(t);
-      S ? d.push(t) : d.push(f(t, u, o)), o.slice(+!S, g - 1).forEach(function(t) {
-        return d.push(t)
-      }), d.push(p(t, u, o))
-    });
-    var w = n.createFromArray(d);
-    return l && (w = (s = w).withMutations(function(t) {
-      var e = y.getKey(),
-        r = v.getKey(),
-        n = y.getNextSiblingKey(),
-        i = y.getParentKey(),
-        o = h(v, s),
-        a = o[o.length - 1];
-      if (t.get(r) ? (t.setIn([e, "nextSibling"], r), t.setIn([r, "prevSibling"], e)) : (t.setIn([e, "nextSibling"], v.getNextSiblingKey()), t.setIn([v.getNextSiblingKey(), "prevSibling"], e)), t.setIn([a, "nextSibling"], n), n && t.setIn([n, "prevSibling"], a), o.forEach(function(e) {
-          return t.setIn([e, "parent"], i)
-        }), i) {
-        var u = s.get(i).getChildKeys(),
-          l = u.indexOf(e),
-          f = u.toArray();
-        f.splice.apply(f, [l + 1, 0].concat(o)), t.setIn([i, "children"], c(f))
+  p = function(e, t, n, r) {
+    return e.withMutations(function(t) {
+      var i = n.getKey(),
+        a = r.getKey(),
+        o = n.getNextSiblingKey(),
+        s = n.getParentKey(),
+        l = _(r, e),
+        u = l[l.length - 1];
+      if (t.get(a) ? (t.setIn([i, "nextSibling"], a), t.setIn([a, "prevSibling"], i)) : (t.setIn([i, "nextSibling"], r.getNextSiblingKey()), t.setIn([r.getNextSiblingKey(), "prevSibling"], i)), t.setIn([u, "nextSibling"], o), o && t.setIn([o, "prevSibling"], u), l.forEach(function(e) {
+          return t.setIn([e, "parent"], s)
+        }), s) {
+        var d = e.get(s).getChildKeys(),
+          f = d.indexOf(i) + 1,
+          p = d.toArray();
+        p.splice.apply(p, [f, 0].concat(l)), t.setIn([s, "children"], c(p))
       }
-    })), t.merge({
-      blockMap: w,
-      selectionBefore: e,
-      selectionAfter: e.merge({
-        anchorKey: b,
-        anchorOffset: _,
-        focusKey: b,
-        focusOffset: _,
+    })
+  },
+  h = function(e, t, n, a, o, s) {
+    var l = n.first() instanceof i,
+      c = [],
+      u = a.size,
+      _ = n.get(o),
+      h = a.first(),
+      m = a.last(),
+      g = m.getLength(),
+      E = m.getKey(),
+      b = l && (!_.getChildKeys().isEmpty() || !h.getChildKeys().isEmpty());
+    n.forEach(function(e, t) {
+      if (t !== o) return void c.push(e);
+      b ? c.push(e) : c.push(d(e, s, a)), a.slice(+!b, u - 1).forEach(function(e) {
+        return c.push(e)
+      }), c.push(f(e, s, a))
+    });
+    var y = r.createFromArray(c);
+    return l && (y = p(y, n, _, h)), e.merge({
+      blockMap: y,
+      selectionBefore: t,
+      selectionAfter: t.merge({
+        anchorKey: E,
+        anchorOffset: g,
+        focusKey: E,
+        focusOffset: g,
         isBackward: false
       })
     })
   };
-module.exports = function(t, e, r) {
-  var n = arguments.length > 3 && true !== arguments[3] ? arguments[3] : "REPLACE_WITH_NEW_DATA";
-  e.isCollapsed() || u(false);
-  var o = t.getBlockMap(),
-    a = s(r),
-    c = e.getStartKey(),
-    f = e.getStartOffset(),
-    p = o.get(c);
-  return (p instanceof i && (p.getChildKeys().isEmpty() || u(false)), 1 === a.size) ? l(t, e, o, a.first(), c, f, n) : d(t, e, o, a, c, f)
+module.exports = function(e, t, n) {
+  var r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : "REPLACE_WITH_NEW_DATA";
+  t.isCollapsed() || s(false);
+  var a = e.getBlockMap(),
+    o = l(n),
+    c = t.getStartKey(),
+    d = t.getStartOffset(),
+    f = a.get(c);
+  return (f instanceof i && (f.getChildKeys().isEmpty() || s(false)), 1 === o.size) ? u(e, t, a, o.first(), c, d, r) : h(e, t, a, o, c, d)
 }

@@ -1,7 +1,8 @@
-/** Chunk was on 94136 **/
-/** chunk id: 33052, original params: e,t,i (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 33052, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  K: () => m
+  K: () => f
 });
 var Chunk951288 = require("./951288.js"),
   Chunk442837 = require("./442837.js"),
@@ -13,33 +14,33 @@ var Chunk951288 = require("./951288.js"),
   Chunk897942 = require("./897942.jsx"),
   Chunk897159 = require("./897159.js");
 
-function m() {
+function f() {
   let e = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion),
     {
       claimableRewards: t
     } = (0, Chunk987209.wD)(),
-    i = (0, Chunk347896.Z)(),
-    m = null == require ? true : require.planSelection;
-  if (null == m || null == exports || 0 === exports.length) return null;
-  let C = (0, Chunk717401.Tl)(m.gradientConfig);
+    n = (0, Chunk347896.Z)(),
+    f = null == require ? true : require.planSelection;
+  if (null == f || null == exports || 0 === exports.length) return null;
+  let _ = (0, Chunk717401.Tl)(f.gradientConfig);
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk897159.promotionalGiftMessage,
-    style: C,
+    style: _,
     children: [(0, Chunk951288.jsxs)("div", {
       className: Chunk897159.promotionalTextSection,
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         className: Chunk897159.promotionalGiftMessageText,
         variant: "text-sm/semibold",
-        children: m.heading()
-      }), null != m.subheading && exports.length > 1 && (0, Chunk951288.jsx)(Chunk481060.Text, {
+        children: f.heading()
+      }), null != f.subheading && exports.length > 1 && (0, Chunk951288.jsx)(Chunk481060.Text, {
         className: Chunk897159.promotionalGiftMessageText,
         variant: "text-sm/normal",
-        children: m.subheading(exports.length)
+        children: f.subheading(exports.length)
       })]
     }), (0, Chunk951288.jsx)("div", {
       className: Chunk897159.avatar,
       children: (0, Chunk951288.jsx)(Chunk897942.Z, {
-        maxRewardImageSrc: m.getImageUrl(true, module),
+        maxRewardImageSrc: f.getImageUrl(true, module),
         claimableRewards: exports,
         size: Chunk481060.EFr.SIZE_80
       })

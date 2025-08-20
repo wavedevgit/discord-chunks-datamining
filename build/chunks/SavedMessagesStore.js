@@ -2,7 +2,7 @@
 /** chunk id: 768943, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => V
+  Z: () => Z
 }), require("./415506.js"), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk759174 = require("./759174.js"),
@@ -104,14 +104,14 @@ function A() {
   m = true, h.clear(), y.clear(), b.clear()
 }
 
-function N(e) {
+function C(e) {
   let {
     savedMessages: t
   } = e;
   for (let e of (m = false, h.clear(), y.clear(), b.clear(), t)) I(e)
 }
 
-function C(e) {
+function N(e) {
   let {
     savedMessage: t
   } = e;
@@ -160,7 +160,7 @@ function D(e) {
   })
 }
 
-function L(e) {
+function x(e) {
   let {
     message: t
   } = e;
@@ -175,12 +175,12 @@ function L(e) {
   i.message = (0, s.wi)(r.message, t), h.set(n, i)
 }
 
-function x() {
+function L() {
   if (0 === b.size || m) returnfalse;
   m = true
 }
 
-function M(e) {
+function j(e) {
   let {
     channel: t
   } = e;
@@ -188,7 +188,7 @@ function M(e) {
   m = true
 }
 
-function k(e) {
+function M(e) {
   let {
     channels: t
   } = e;
@@ -198,7 +198,7 @@ function k(e) {
   return n
 }
 
-function j(e) {
+function k(e) {
   let {
     channel: t
   } = e;
@@ -269,24 +269,24 @@ class B extends(r = Chunk442837.ZP.Store) {
   }
 }
 u(B, "displayName", "SavedMessagesStore");
-let V = new B(Chunk570140.Z, {
+let Z = new B(Chunk570140.Z, {
   POST_CONNECTION_OPEN: S,
   LOGOUT: A,
-  SAVED_MESSAGES_UPDATE: N,
-  SAVED_MESSAGE_CREATE: C,
+  SAVED_MESSAGES_UPDATE: C,
+  SAVED_MESSAGE_CREATE: N,
   SAVED_MESSAGE_DELETE: R,
   MESSAGE_DELETE: w,
   MESSAGE_DELETE_BULK: D,
-  MESSAGE_UPDATE: L,
-  GUILD_CREATE: x,
-  GUILD_UPDATE: x,
-  GUILD_DELETE: x,
-  CHANNEL_CREATE: M,
-  CHANNEL_UPDATES: k,
-  CHANNEL_DELETE: j,
+  MESSAGE_UPDATE: x,
+  GUILD_CREATE: L,
+  GUILD_UPDATE: L,
+  GUILD_DELETE: L,
+  CHANNEL_CREATE: j,
+  CHANNEL_UPDATES: M,
+  CHANNEL_DELETE: k,
   GUILD_MEMBER_UPDATE: U,
-  GUILD_ROLE_CREATE: x,
-  GUILD_ROLE_UPDATE: x,
-  GUILD_ROLE_DELETE: x,
+  GUILD_ROLE_CREATE: L,
+  GUILD_ROLE_UPDATE: L,
+  GUILD_ROLE_DELETE: L,
   MESSAGE_REMINDER_DUE: G
 })

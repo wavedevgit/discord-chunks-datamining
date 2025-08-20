@@ -70,7 +70,7 @@ function A(e) {
   }
 }
 
-function N(e, t) {
+function C(e, t) {
   let n = T;
   if (T = new c.g8, 0 === e.length && t.length > 0)
     for (let e of t) T.addNode((0, c.Mg)(e));
@@ -88,15 +88,15 @@ function N(e, t) {
   return r ? T = n : T.version = n.version + 1, !r
 }
 
-function C() {
+function N() {
   var e, t, n;
-  return N(null != (t = Chunk581883.Z.getGuildFolders()) ? exports : [], null != (n = null == (e = Chunk581883.Z.settings.guildFolders) ? true : module.guildPositions) ? require : [])
+  return C(null != (t = Chunk581883.Z.getGuildFolders()) ? exports : [], null != (n = null == (e = Chunk581883.Z.settings.guildFolders) ? true : module.guildPositions) ? require : [])
 }
 
 function R() {
   var e, t;
   let n = Chunk581883.Z.getGuildFolders();
-  return !(null != r && a()(r, require)) && N(null != (r = require) ? r : [], null != (t = null == (e = Chunk581883.Z.settings.guildFolders) ? true : module.guildPositions) ? exports : [])
+  return !(null != r && a()(r, require)) && C(null != (r = require) ? r : [], null != (t = null == (e = Chunk581883.Z.settings.guildFolders) ? true : module.guildPositions) ? exports : [])
 }
 
 function P(e) {
@@ -155,7 +155,7 @@ function D(e) {
   })
 }
 
-function L(e) {
+function x(e) {
   let {
     targetId: t
   } = e, n = T.getNode(t);
@@ -166,7 +166,7 @@ function L(e) {
   })
 }
 
-function x(e) {
+function L(e) {
   let {
     guildId: t,
     joinedAt: n,
@@ -174,10 +174,10 @@ function x(e) {
   } = e, i = y.default.getCurrentUser(), a = g.Z.getGuild(t);
   if ((null == i ? true : i.id) !== r.id || null == a) returnfalse;
   let o = "string" == typeof n ? new Date(n) : n;
-  return o !== a.joinedAt && null != o && C()
+  return o !== a.joinedAt && null != o && N()
 }
 
-function M(e) {
+function j(e) {
   let {
     folderId: t
   } = e, n = T.getNode(t), r = p.Z.isFolderExpanded(t);
@@ -185,7 +185,7 @@ function M(e) {
   U(n, r)
 }
 
-function k(e) {
+function M(e) {
   let {
     folderId: t,
     expanded: n
@@ -194,7 +194,7 @@ function k(e) {
   U(r, n)
 }
 
-function j() {
+function k() {
   for (let e of T.allNodes()) module.type === Chunk727258.eD.FOLDER && module.expanded && U(module, false)
 }
 
@@ -204,7 +204,7 @@ function U(e, t) {
 }
 let G = (0, Chunk251625.oH)((e, t) => e.sortedGuildNodes().map(e => e.id)),
   B = (0, Chunk251625.oH)((e, t) => e.getRoots().map(A)),
-  V = (0, Chunk251625.oH)((e, t) => {
+  Z = (0, Chunk251625.oH)((e, t) => {
     let n = [];
 
     function r(e) {
@@ -217,8 +217,8 @@ let G = (0, Chunk251625.oH)((e, t) => e.sortedGuildNodes().map(e => e.id)),
     }
     return r(e.root), n
   }),
-  F = (0, Chunk251625.oH)((e, t) => e.root.children.map(A));
-class Z extends Chunk750041.Z {
+  V = (0, Chunk251625.oH)((e, t) => e.root.children.map(A));
+class F extends Chunk750041.Z {
   initialize() {
     this.waitFor(Chunk430824.Z, Chunk9156.ZP, Chunk581883.Z, Chunk486472.Z, Chunk41776.Z, Chunk664915.Z, Chunk937111.Z)
   }
@@ -235,17 +235,17 @@ class Z extends Chunk750041.Z {
     return G(T, T.version)
   }
   getFlattenedGuildFolderList() {
-    return V(T, T.version)
+    return Z(T, T.version)
   }
   getCompatibleGuildFolders() {
-    return F(T, T.version)
+    return V(T, T.version)
   }
   getFastListGuildFolders() {
     return T.getRoots()
   }
   takeSnapshot() {
     return {
-      version: Z.LATEST_SNAPSHOT_VERSION,
+      version: F.LATEST_SNAPSHOT_VERSION,
       data: {
         tree: T.getSnapshot()
       }
@@ -253,27 +253,27 @@ class Z extends Chunk750041.Z {
   }
   constructor() {
     super({
-      CONNECTION_OPEN: C,
-      OVERLAY_INITIALIZE: C,
+      CONNECTION_OPEN: N,
+      OVERLAY_INITIALIZE: N,
       CACHE_LOADED: () => this.loadCache(),
-      GUILD_CREATE: C,
-      GUILD_DELETE: C,
-      GUILD_MEMBER_ADD: x,
+      GUILD_CREATE: N,
+      GUILD_DELETE: N,
+      GUILD_MEMBER_ADD: L,
       USER_SETTINGS_PROTO_UPDATE: R,
       GUILD_MOVE_BY_ID: P,
       GUILD_FOLDER_CREATE_LOCAL: w,
       GUILD_FOLDER_EDIT_LOCAL: D,
-      GUILD_FOLDER_DELETE_LOCAL: L,
-      TOGGLE_GUILD_FOLDER_EXPAND: M,
-      SET_GUILD_FOLDER_EXPANDED: k,
-      GUILD_FOLDER_COLLAPSE: j
+      GUILD_FOLDER_DELETE_LOCAL: x,
+      TOGGLE_GUILD_FOLDER_EXPAND: j,
+      SET_GUILD_FOLDER_EXPANDED: M,
+      GUILD_FOLDER_COLLAPSE: k
     }), O(this, "loadCache", () => {
-      let e = this.readSnapshot(Z.LATEST_SNAPSHOT_VERSION),
+      let e = this.readSnapshot(F.LATEST_SNAPSHOT_VERSION),
         t = null == module ? true : module.tree;
       if (null != exports)
         for (let e of ((T = new Chunk727258.g8).loadSnapshot(exports), T.allNodes())) module.type === Chunk727258.eD.FOLDER && (module.expanded = Chunk664915.Z.isFolderExpanded(module.id))
     })
   }
 }
-O(Z, "displayName", "SortedGuildStore"), O(Z, "LATEST_SNAPSHOT_VERSION", 2);
-let H = new Z
+O(F, "displayName", "SortedGuildStore"), O(F, "LATEST_SNAPSHOT_VERSION", 2);
+let H = new F

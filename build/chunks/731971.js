@@ -1,4 +1,4 @@
-/** Chunk was on 69003 **/
+/** Chunk was on 91488 **/
 /** chunk id: 731971, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   NQ: () => b,
@@ -11,8 +11,8 @@ require.d(exports, {
   oE: () => f,
   pB: () => p,
   y: () => _,
-  yS: () => v,
-  yr: () => j
+  yS: () => j,
+  yr: () => v
 }), require("./781311.js");
 var Chunk879690 = require("./879690.js"),
   Chunk524437 = require("./524437.js"),
@@ -127,8 +127,8 @@ let d = (0, Chunk879690.U)(e => ({
   O = () => d.getState().dmsAllowed,
   _ = () => d.getState().nickname,
   y = () => d.getState().showActivity,
-  v = () => d.getState().mutedServer,
-  j = () => {
+  j = () => d.getState().mutedServer,
+  v = () => {
     var e, t;
     let {
       nickname: n

@@ -31,7 +31,7 @@ class p extends Chunk317770.Z {
       handoffKey: t,
       handoffToken: n,
       fingerprint: i,
-      handoffSource: s
+      handoffSource: a
     } = e;
     null != n ? r.tn.post({
       url: d.ANM.HANDOFF_EXCHANGE,
@@ -44,16 +44,16 @@ class p extends Chunk317770.Z {
       let {
         body: t
       } = e;
-      (0, a.Vb)(t.user), l.Z.loginToken(t.token, false), h(true, s)
+      (0, s.Vb)(t.user), l.Z.loginToken(t.token, false), h(true, a)
     }, e => {
-      if (null != i && h(false, s), l.Z.setFingerprint(i), (0, a.lx)(), s === o.F.ROLE_SUBSCRIPTION) {
+      if (null != i && h(false, a), l.Z.setFingerprint(i), (0, s.lx)(), a === o.F.ROLE_SUBSCRIPTION) {
         var t;
         c.default.track(d.rMx.MOBILE_WEB_HANDOFF_FAILURE, {
           reason: null != (t = e.message) ? t : e.text,
-          handoff_source: s
+          handoff_source: a
         })
       }
-    }) : null != i ? (l.Z.setFingerprint(i), h(false, s), (0, a.lx)()) : (l.Z.setFingerprint(i), (0, a.by)())
+    }) : null != i ? (l.Z.setFingerprint(i), h(false, a), (0, s.lx)()) : (l.Z.setFingerprint(i), (0, s.by)())
   }
   constructor(...e) {
     super(...e),
@@ -68,13 +68,13 @@ class p extends Chunk317770.Z {
         let {
           handoffToken: t,
           fingerprint: n
-        } = e, r = s.Z.key;
-        null != r && s.Z.isHandoffAvailable() ? this.handleHandoff({
+        } = e, r = a.Z.key;
+        null != r && a.Z.isHandoffAvailable() ? this.handleHandoff({
           handoffKey: r,
           handoffToken: t,
           fingerprint: n,
           handoffSource: true
-        }) : (l.Z.setFingerprint(null), (0, a.by)())
+        }) : (l.Z.setFingerprint(null), (0, s.by)())
       })
   }
 }

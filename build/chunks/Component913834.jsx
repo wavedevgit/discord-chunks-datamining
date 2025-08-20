@@ -1,8 +1,8 @@
-/** Chunk was on 31978 **/
-/** chunk id: 913834, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 913834, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => f
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -14,49 +14,52 @@ var Chunk951288 = require("./951288.js"),
   Chunk463031 = require("./463031.js"),
   Chunk607439 = require("./607439.js");
 
-function p(e) {
+function f(e) {
   let {
     guild: t,
     message: n
-  } = e, p = l.useRef(null), [m, g] = l.useState(false), f = l.useRef(false), b = (0, a.Z)({
+  } = e, f = i.useRef(null), [_, p] = i.useState(false), h = i.useRef(false), m = (0, s.Z)({
     guildId: t.id,
     leaderboardId: u.z,
     intervalOffset: 0
-  }), h = l.useMemo(() => {
+  }), g = i.useMemo(() => {
     var e;
-    if ((null == b || null == (e = b.guild_settings) ? true : e.show_winner_crown) !== true) returnfalse;
-    let t = b.users[0];
+    if ((null == m || null == (e = m.guild_settings) ? true : e.show_winner_crown) !== true) returnfalse;
+    let t = m.users[0];
     return n.author.id === (null == t ? true : t.user_id)
-  }, [b, n]);
-  return null != b && h ? (0, r.jsx)("div", {
-    className: d.badge,
-    onMouseEnter: () => {
-      f.current = true, g(true)
+  }, [m, n]);
+  if (null == m || !g) return null;
+  let E = () => {
+      h.current = true, p(true)
     },
-    onMouseLeave: () => {
-      f.current = false, setTimeout(() => {
-        f.current || g(false)
+    b = () => {
+      h.current = false, setTimeout(() => {
+        h.current || p(false)
       }, 100)
-    },
-    children: (0, r.jsx)(o.yRy, {
-      targetElementRef: p,
-      animation: o.yRy.Animation.TRANSLATE,
+    };
+  return (0, r.jsx)("div", {
+    className: d.badge,
+    onMouseEnter: E,
+    onMouseLeave: b,
+    children: (0, r.jsx)(a.yRy, {
+      targetElementRef: f,
+      animation: a.yRy.Animation.TRANSLATE,
       align: "center",
       autoInvert: true,
       nudgeAlignIntoViewport: true,
       position: "top",
-      shouldShow: m,
-      renderPopout: () => (0, r.jsx)(s.Z, {
+      shouldShow: _,
+      renderPopout: () => (0, r.jsx)(l.Z, {
         guildId: t.id,
         previewMode: true,
-        source: i.Z.MEMBER_LIST,
-        leaderboardId: b.leaderboard_id
+        source: o.Z.MEMBER_LIST,
+        leaderboardId: m.leaderboard_id
       }),
       children: () => (0, r.jsx)(c.Z, {
-        leaderboard: b,
+        leaderboard: m,
         className: d.image,
-        ref: p
+        ref: f
       })
     })
-  }) : null
+  })
 }

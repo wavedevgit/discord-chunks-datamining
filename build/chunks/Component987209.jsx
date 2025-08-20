@@ -32,18 +32,18 @@ function y(e) {
     children: E
   } = e, {
     selectedSkuId: b
-  } = (0, d.JL)(), [y, O] = i.useState(n), [v, I] = i.useState(), [T, S] = i.useState(false), A = (0, u.pO)(y), N = m;
-  A && (N = null != f ? f : h);
-  let [C, R] = i.useState(N), P = (0, l.iE)(), w = (0, l.yX)(), [D, L] = i.useState(), [x, M] = i.useState(t && (0, u.MY)(y) === u.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD && null == c ? p.intl.string(p.t.ZkOo1d) : c), [k, j] = i.useState(true), [U, G] = i.useState(true), B = (0, u.E5)(b, t), [V, F] = i.useState(false), [Z, H] = i.useState(false), [Y, W] = i.useState(), K = i.useCallback(e => {
+  } = (0, d.JL)(), [y, O] = i.useState(n), [v, I] = i.useState(), [T, S] = i.useState(false), A = (0, u.pO)(y), C = m;
+  A && (C = null != f ? f : h);
+  let [N, R] = i.useState(C), P = (0, l.iE)(), w = (0, l.yX)(), [D, x] = i.useState(), [L, j] = i.useState(t && (0, u.MY)(y) === u.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD && null == c ? p.intl.string(p.t.ZkOo1d) : c), [M, k] = i.useState(true), [U, G] = i.useState(true), B = (0, u.E5)(b, t), [Z, V] = i.useState(false), [F, H] = i.useState(false), [Y, W] = i.useState(), K = i.useCallback(e => {
     let {
       onSubscriptionConfirmation: t
     } = e;
     return H(true), (0, s.YD)(y, B).then(() => {
-      H(false), null == t || t(), F(true)
+      H(false), null == t || t(), V(true)
     }).catch(e => {
-      H(false), W(e), F(true)
+      H(false), W(e), V(true)
     })
-  }, [y, B, H, F, W]), z = (0, a.Wu)([o.Z], () => o.Z.recommendedGiftSkuIds);
+  }, [y, B, H, V, W]), z = (0, a.Wu)([o.Z], () => o.Z.recommendedGiftSkuIds);
   return (0, r.jsx)(g.Provider, {
     value: {
       isGift: t,
@@ -55,24 +55,24 @@ function y(e) {
       setGiftRecipientError: I,
       validatingGiftRecipient: T,
       setValidatingGiftRecipient: S,
-      soundEffect: k,
-      setSoundEffect: j,
+      soundEffect: M,
+      setSoundEffect: k,
       emojiConfetti: U,
       setEmojiConfetti: G,
-      customGiftMessage: x,
-      setCustomGiftMessage: M,
-      selectedGiftStyle: C,
+      customGiftMessage: L,
+      setCustomGiftMessage: j,
+      selectedGiftStyle: N,
       setSelectedGiftStyle: R,
       sendGiftMessage: K,
-      hasSentMessage: V,
-      isSendingMessage: Z,
+      hasSentMessage: Z,
+      isSendingMessage: F,
       giftMessageError: Y,
       recommendedGiftSkuIds: z,
       giftingOrigin: _,
       claimableRewards: P,
       claimableVariants: w,
       selectedGiftingPromotionReward: D,
-      setSelectedGiftingPromotionReward: L
+      setSelectedGiftingPromotionReward: x
     },
     children: E
   })

@@ -1,4 +1,4 @@
-/** Chunk was on 2668 **/
+/** Chunk was on 57478 **/
 /** chunk id: 207346, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -21,53 +21,53 @@ function d(e) {
     sortOrder: p,
     setSortOrder: m
   } = e;
-  return (0, r.jsxs)(a.xBx, {
+  return (0, l.jsxs)(a.xBx, {
     className: u.root,
     separator: false,
-    children: [(0, r.jsx)(a.AlX, {
+    children: [(0, l.jsx)(a.AlX, {
       size: "xs",
       color: "currentColor",
       className: u.icon
-    }), (0, r.jsx)(a.X6q, {
+    }), (0, l.jsx)(a.X6q, {
       className: u.title,
       variant: "heading-xxl/bold",
-      children: c.intl.string(c.t.z2jK6e)
-    }), (0, r.jsx)("div", {
+      children: s.intl.string(s.t.z2jK6e)
+    }), (0, l.jsx)("div", {
       className: u.betaTag,
-      children: (0, r.jsx)(o.Z, {})
-    }), (0, r.jsx)(a.E1j, {
+      children: (0, l.jsx)(o.Z, {})
+    }), (0, l.jsx)(a.E1j, {
       autoFocus: true,
-      placeholder: c.intl.string(c.t["5h0QOD"]),
+      placeholder: s.intl.string(s.t["5h0QOD"]),
       className: u.queryInput,
       query: t,
       onChange: n,
       onClear: () => n("")
-    }), (0, r.jsx)(a.PhF, {
-      placeholder: c.intl.string(c.t["0XtAW1"]),
+    }), (0, l.jsx)(a.PhF, {
+      placeholder: s.intl.string(s.t["0XtAW1"]),
       className: u.sortInput,
       options: [{
         value: "descending",
-        label: c.intl.string(c.t.SCsC5u)
+        label: s.intl.string(s.t.SCsC5u)
       }, {
         value: "ascending",
-        label: c.intl.string(c.t.fdx7aG)
+        label: s.intl.string(s.t.fdx7aG)
       }],
       isSelected: e => e === p,
       select: m,
       serialize: e => e
-    }), (0, r.jsx)(l.zx, {
-      color: l.Tt.TRANSPARENT,
-      size: l.zx.Sizes.NONE,
+    }), (0, l.jsx)(r.zx, {
+      color: r.Tt.TRANSPARENT,
+      size: r.zx.Sizes.NONE,
       className: u.settingsButton,
-      look: l.zx.Looks.FILLED,
+      look: r.zx.Looks.FILLED,
       onClick: () => {
-        (0, i.Z)(s.Z.CLIPS), d()
+        (0, i.Z)(c.Z.CLIPS), d()
       },
-      children: (0, r.jsx)(a.ewm, {
+      children: (0, l.jsx)(a.ewm, {
         size: "md",
         color: "currentColor"
       })
-    }), (0, r.jsx)(a.olH, {
+    }), (0, l.jsx)(a.olH, {
       className: u.button,
       onClick: d
     })]

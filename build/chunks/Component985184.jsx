@@ -1,7 +1,8 @@
-/** Chunk was on 30243 **/
-/** chunk id: 985184, original params: e,t,r (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 985184, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Gt: () => b,
+  Gt: () => h,
   ZP: () => m
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -15,53 +16,54 @@ var Chunk951288 = require("./951288.js"),
 let d = {
     isInContainer: true
   },
-  p = Chunk647438.createContext({
+  f = {
     isInContainer: false
-  });
+  },
+  _ = Chunk647438.createContext(f);
 
-function f(e) {
+function p(e) {
   let {
     children: t
   } = e;
-  return (0, n.jsx)(p.Provider, {
+  return (0, r.jsx)(_.Provider, {
     value: d,
     children: t
   })
 }
 
-function b() {
+function h() {
   let {
     isInContainer: e
-  } = Chunk647438.useContext(p);
+  } = Chunk647438.useContext(_);
   return module
 }
 
 function m(e) {
   let {
     components: t,
-    accentColor: r,
-    spoiler: i,
+    accentColor: n,
+    spoiler: a,
     renderComponents: d
-  } = e, [p, b] = l.useState(i), m = e => (0, n.jsx)(s.am.AutoMeasuredNestedContainer, {
-    children: l => (0, n.jsx)("div", {
-      ref: l,
+  } = e, [f, _] = i.useState(a), h = e => (0, r.jsx)(c.am.AutoMeasuredNestedContainer, {
+    children: i => (0, r.jsx)("div", {
+      ref: i,
       className: o()(u.container, {
         [u.isHidden]: e,
-        [u.withAccentColor]: null != r
+        [u.withAccentColor]: null != n
       }),
       style: {
-        "--__accent-color": r
+        "--__accent-color": n
       },
-      children: (0, n.jsx)(f, {
+      children: (0, r.jsx)(p, {
         children: d(t)
       })
     })
   });
-  return null == t || 0 === t.length ? null : i ? (0, n.jsx)(a.ZP, {
-    type: a.ZP.Types.ATTACHMENT,
-    reason: c.wk.SPOILER,
-    obscured: p,
-    onToggleObscurity: () => b(e => !e),
-    children: e => m(e)
-  }) : m(false)
+  return null == t || 0 === t.length ? null : a ? (0, r.jsx)(s.ZP, {
+    type: s.ZP.Types.ATTACHMENT,
+    reason: l.wk.SPOILER,
+    obscured: f,
+    onToggleObscurity: () => _(e => !e),
+    children: e => h(e)
+  }) : h(false)
 }

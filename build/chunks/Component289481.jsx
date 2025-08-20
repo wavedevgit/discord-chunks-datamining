@@ -1,7 +1,7 @@
-/** Chunk was on 69003 **/
+/** Chunk was on 91488 **/
 /** chunk id: 289481, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => E
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -25,7 +25,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk550116 = require("./550116.js");
 
-function E(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -43,7 +43,7 @@ function E(e) {
   }
   return e
 }
-let x = Chunk647438.memo(function(e) {
+let E = Chunk647438.memo(function(e) {
     let {
       channel: t,
       deleteChannel: n
@@ -81,7 +81,7 @@ let x = Chunk647438.memo(function(e) {
     return (0, r.jsx)(a.animated.div, {
       ref: l,
       style: h,
-      children: (0, r.jsx)(S, E({}, e))
+      children: (0, r.jsx)(S, x({}, e))
     })
   }),
   S = Chunk647438.memo(function(e) {
@@ -94,19 +94,19 @@ let x = Chunk647438.memo(function(e) {
     if (i.useEffect(() => {
         null == a || !t.isFullyLoaded || t.hasError || t.collapsed || "messages" !== t.type || 0 !== t.messages.length || d.Z.wait(() => {
           (0, p.In)(t.channelId, {
-            section: v.jXE.INBOX,
-            object: v.qAy.ACK_INBOX_CHANNEL_NO_MESSAGES,
-            objectType: v.Qqv.ACK_AUTOMATIC
+            section: j.jXE.INBOX,
+            object: j.qAy.ACK_INBOX_CHANNEL_NO_MESSAGES,
+            objectType: j.Qqv.ACK_AUTOMATIC
           }, true), l(t.channelId)
         })
       }), null == a || !t.hasLoadedAnything) return null;
     let s = (e, r) => {
-      (0, f.yw)(v.rMx.INBOX_CHANNEL_CLICKED, {
+      (0, f.yw)(j.rMx.INBOX_CHANNEL_CLICKED, {
         channel_id: t.channelId,
         guild_id: t.guildId
       });
       let i = null != r ? r : t.oldestUnreadMessageId;
-      (0, h.uL)(v.Z5c.CHANNEL(t.guildId, t.channelId, "forum" === t.type ? null : i)), n(e)
+      (0, h.uL)(j.Z5c.CHANNEL(t.guildId, t.channelId, "forum" === t.type ? null : i)), n(e)
     };
     return (0, r.jsx)("div", {
       className: C.channel,
@@ -119,7 +119,7 @@ let x = Chunk647438.memo(function(e) {
           channelState: t,
           children: [(0, r.jsx)(b.Z, {
             channel: a
-          }), (0, r.jsx)(P, E({}, e)), "nsfw" === t.type ? null : (0, r.jsx)(I, E({}, e))]
+          }), (0, r.jsx)(I, x({}, e)), "nsfw" === t.type ? null : (0, r.jsx)(P, x({}, e))]
         }),
         children: t.collapsed ? null : "messages" === t.type ? (0, r.jsx)(y.Z, {
           channel: t,
@@ -134,7 +134,7 @@ let x = Chunk647438.memo(function(e) {
     })
   });
 
-function P(e) {
+function I(e) {
   let {
     channel: t,
     markChannelRead: n,
@@ -143,7 +143,7 @@ function P(e) {
   } = e, o = (0, s.Z)() && null != t.guildId;
   return (0, r.jsx)(u.M0o, {
     className: C.markReadButton,
-    tooltip: o ? j.intl.string(j.t["5lLMhI"]) : j.intl.string(j.t.e6RscX),
+    tooltip: o ? v.intl.string(v.t["5lLMhI"]) : v.intl.string(v.t.e6RscX),
     color: u.YX$.TERTIARY,
     icon: o ? (0, r.jsx)(u.W6s, {
       size: "xs",
@@ -153,7 +153,7 @@ function P(e) {
       color: "currentColor"
     }),
     onClick: function() {
-      o && null != t.guildId ? i(t.guildId) : n(t), (0, f.yw)(v.rMx.INBOX_CHANNEL_ACKED, {
+      o && null != t.guildId ? i(t.guildId) : n(t), (0, f.yw)(j.rMx.INBOX_CHANNEL_ACKED, {
         channel_id: t.channelId,
         guild_id: t.guildId,
         marked_all_channels_as_read: false,
@@ -163,7 +163,7 @@ function P(e) {
   })
 }
 
-function I(e) {
+function P(e) {
   let {
     channel: t,
     toggle: n,
@@ -171,7 +171,7 @@ function I(e) {
   } = e;
 
   function l() {
-    n(t), (0, f.yw)(v.rMx.INBOX_CHANNEL_COLLAPSED, {
+    n(t), (0, f.yw)(j.rMx.INBOX_CHANNEL_COLLAPSED, {
       channel_id: t.channelId,
       guild_id: t.guildId,
       num_unread_channels_remaining: i(),
@@ -179,10 +179,10 @@ function I(e) {
     })
   }
   return (0, r.jsx)(u.ua7, {
-    text: j.intl.string(j.t.iTcumZ),
+    text: v.intl.string(v.t.iTcumZ),
     children: e => {
       var n, i;
-      return (0, r.jsx)(u.P3F, (n = E({}, e), i = i = {
+      return (0, r.jsx)(u.P3F, (n = x({}, e), i = i = {
         className: o()(C.collapseButton, {
           [C.collapsed]: t.collapsed
         }),

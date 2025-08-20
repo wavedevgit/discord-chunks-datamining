@@ -1,15 +1,16 @@
-/** Chunk was on 66181 **/
-/** chunk id: 455279, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 455279, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => E,
-  c: () => x
+  Z: () => y,
+  c: () => g
 }), require("./388685.js");
-var i, Chunk951288 = require("./951288.js"),
+var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk879443 = require("./879443.js"),
-  c = require.n(Chunk879443),
+  l = require.n(Chunk879443),
   Chunk392711 = require("./392711.js"),
   u = require.n(Chunk392711),
   Chunk481060 = require("./481060.js"),
@@ -18,7 +19,7 @@ var i, Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk151028 = require("./151028.js");
 
-function b(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,12 +27,14 @@ function b(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-var x = ((i = {}).DEFAULT = "DEFAULT", i.RECORDING = "RECORDING", i);
-let _ = {
+var g = function(e) {
+  return e.DEFAULT = "DEFAULT", e.RECORDING = "RECORDING", e
+}({});
+let E = {
   DEFAULT: Chunk151028.__invalid_default,
   RECORDING: Chunk151028.recording
 };
-class j extends Chunk647438.PureComponent {
+class b extends Chunk647438.PureComponent {
   componentWillUnmount() {
     null != this._unregisterNativeRecorder && this._unregisterNativeRecorder()
   }
@@ -43,13 +46,13 @@ class j extends Chunk647438.PureComponent {
     } = e;
     if (n === t) return;
     let {
-      _inputRef: i
+      _inputRef: r
     } = this;
-    if (null == i.current) return;
+    if (null == r.current) return;
     let {
-      activeElement: r
+      activeElement: i
     } = document;
-    "DEFAULT" === t && i.current === r && i.current.blur(), "RECORDING" === t && i.current !== r && i.current.focus()
+    "DEFAULT" === t && r.current === i && r.current.blur(), "RECORDING" === t && r.current !== i && r.current.focus()
   }
   render() {
     let e, {
@@ -57,7 +60,7 @@ class j extends Chunk647438.PureComponent {
         value: n,
         disabled: i
       } = this.props,
-      s = (0, Chunk13140.BB)(require, true);
+      a = (0, Chunk13140.BB)(require, true);
     return e = "RECORDING" === exports ? Chunk388032.intl.string(Chunk388032.t.bmOri4) : 0 === require.length ? Chunk388032.intl.string(Chunk388032.t.co3wt7) : Chunk388032.intl.string(Chunk388032.t.idFMvL), (0, Chunk951288.jsx)(Chunk481060.tEY, {
       focusTarget: this._inputRef,
       ringTarget: this._containerRef,
@@ -65,8 +68,8 @@ class j extends Chunk647438.PureComponent {
         onClick: this.handleClick,
         onMouseDown: this.handleMouseDown,
         ref: this._containerRef,
-        className: l()(Chunk151028.recorderContainer, _[exports], {
-          [Chunk151028.containerDisabled]: i
+        className: o()(Chunk151028.recorderContainer, E[exports], {
+          [Chunk151028.containerDisabled]: Chunk647438
         }),
         children: (0, Chunk951288.jsxs)(Chunk600164.Z, {
           className: Chunk151028.recorderLayout,
@@ -78,8 +81,8 @@ class j extends Chunk647438.PureComponent {
               type: "text",
               ref: this.setInputRef,
               readOnly: true,
-              value: Chunk647438,
-              disabled: "RECORDING" !== this.props.mode || i
+              value: Chunk120356,
+              disabled: "RECORDING" !== this.props.mode || Chunk647438
             })
           }), (0, Chunk951288.jsx)("div", {
             className: Chunk151028.buttonContainer,
@@ -90,7 +93,7 @@ class j extends Chunk647438.PureComponent {
               onClick: e => {
                 e.stopPropagation(), e.preventDefault(), this.handleClick(e)
               },
-              disabled: i
+              disabled: Chunk647438
             })
           })]
         })
@@ -98,28 +101,28 @@ class j extends Chunk647438.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), b(this, "_inputId", u().uniqueId("key-recorder-")), b(this, "_unregisterNativeRecorder", null), b(this, "_mousedownMode", null), b(this, "_inputRef", s.createRef()), b(this, "_containerRef", s.createRef()), b(this, "setInputRef", e => {
-      var t;
+    super(...e), m(this, "_inputId", u().uniqueId("key-recorder-")), m(this, "_unregisterNativeRecorder", null), m(this, "_mousedownMode", null), m(this, "_inputRef", i.createRef()), m(this, "_containerRef", i.createRef()), m(this, "setInputRef", e => {
+      var t, n;
       let {
-        registerNativeRecorder: n,
+        registerNativeRecorder: r,
         onChange: i
       } = this.props;
-      if (this._inputRef.current = e, null == (t = this._unregisterNativeRecorder) || t.call(this), null != e)
-        if (null != n && null != i) try {
-          this._unregisterNativeRecorder = n(e.id, i)
+      if (this._inputRef.current = e, null == (t = (n = this)._unregisterNativeRecorder) || t.call(n), null != e)
+        if (null != r && null != i) try {
+          this._unregisterNativeRecorder = r(e.id, i)
         } catch (e) {
           this._unregisterNativeRecorder = null
-        } else null != i && (new(c())(e).handleKey = i)
-    }), b(this, "handleClick", e => {
+        } else null != i && (new(l())(e).handleKey = i)
+    }), m(this, "handleClick", e => {
       e.stopPropagation(), e.preventDefault();
       let {
         onClick: t,
         disableOnClickWhileRecording: n
       } = this.props;
       n && "RECORDING" === this._mousedownMode || t()
-    }), b(this, "handleMouseDown", () => {
+    }), m(this, "handleMouseDown", () => {
       this._mousedownMode = this.props.mode
     })
   }
 }
-let E = j
+let y = b

@@ -1,4 +1,4 @@
-/** Chunk was on 2668 **/
+/** Chunk was on 57478 **/
 /** chunk id: 937784, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   e: () => f
@@ -20,65 +20,65 @@ async function f(e, t) {
     channelId: f,
     editMetadata: b,
     analyticsLocations: g
-  } = t, j = a.Z.getChannel(f);
-  if (null != j) try {
+  } = t, h = a.Z.getChannel(f);
+  if (null != h) try {
     var y;
     let t = await (0, d.rO)(e, b),
-      n = null != (y = e.name) ? y : (0, p.yl)(s.default.extractTimestamp(e.id)),
-      r = (0, u.Z)(n);
-    await (0, c.d5)([new File([t], "".concat("" !== r ? r : "clip", ".mp4"), {
+      n = null != (y = e.name) ? y : (0, p.yl)(c.default.extractTimestamp(e.id)),
+      l = (0, u.Z)(n);
+    await (0, s.d5)([new File([t], "".concat("" !== l ? l : "clip", ".mp4"), {
       type: "video/mp4"
-    })], j, i.d.ChannelMessage, {
+    })], h, i.d.ChannelMessage, {
       filesMetadata: [{
         clip: e
       }],
       origin: "unknown:clip_share"
     }), o.default.track(m.rMx.CLIP_SHARED, {
       location_stack: g,
-      guild_id: j.guild_id,
-      channel_id: j.id,
-      channel_type: j.type,
+      guild_id: h.guild_id,
+      channel_id: h.id,
+      channel_type: h.type,
       application_id: e.applicationId,
       clip_id: e.id
     })
   } catch (e) {
     throw p.jF.error(e), e
-  } else(0, l.ZDy)(async () => {
+  } else(0, r.ZDy)(async () => {
     let {
       default: t
     } = await n.e("99617").then(n.bind(n, 502801));
     return n => {
-      var l, a;
-      return (0, r.jsx)(t, (l = function(e) {
+      var r, a;
+      return (0, l.jsx)(t, (r = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            l = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-              value: r,
+          }))), l.forEach(function(t) {
+            var l;
+            l = n[t], t in e ? Object.defineProperty(e, t, {
+              value: l,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : e[t] = r
+            }) : e[t] = l
           })
         }
         return e
       }({}, n), a = a = {
         clip: e,
         editMetadata: b
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, r)
+          var l = Object.getOwnPropertySymbols(e);
+          n.push.apply(n, l)
         }
         return n
       })(Object(a)).forEach(function(e) {
-        Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(a, e))
-      }), l))
+        Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(a, e))
+      }), r))
     }
   })
 }

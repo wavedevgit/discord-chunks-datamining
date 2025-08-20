@@ -21,15 +21,15 @@ var r, i, a, o, Chunk127849 = require("./127849.js"),
   T = Chunk127849.MessageChannel,
   S = Chunk127849.String,
   A = 0,
-  N = {},
-  C = "onreadystatechange";
+  C = {},
+  N = "onreadystatechange";
 Chunk621523(function() {
   r = Chunk127849.location
 });
 var R = function(e) {
-    if (d(N, e)) {
-      var t = N[e];
-      delete N[e], t()
+    if (d(C, e)) {
+      var t = C[e];
+      delete C[e], t()
     }
   },
   P = function(e) {
@@ -47,17 +47,17 @@ b && y || (b = function(e) {
   m(arguments.length, 1);
   var t = u(e) ? e : I(e),
     n = p(arguments, 1);
-  return N[++A] = function() {
+  return C[++A] = function() {
     l(t, true, n)
   }, i(A), A
 }, y = function(e) {
-  delete N[e]
+  delete C[e]
 }, Chunk426625 ? i = function(e) {
   O.nextTick(P(e))
 } : v && v.now ? i = function(e) {
   v.now(P(e))
-} : T && !Chunk266782 ? (o = (a = new T).port2, a.port1.onmessage = w, i = Chunk48657(o.postMessage, o)) : Chunk127849.addEventListener && Chunk880181(Chunk127849.postMessage) && !Chunk127849.importScripts && r && "file:" !== r.protocol && !Chunk621523(D) ? (i = D, Chunk127849.addEventListener("message", w, false)) : i = C in Chunk809290("script") ? function(e) {
-  _.appendChild(h("script"))[C] = function() {
+} : T && !Chunk266782 ? (o = (a = new T).port2, a.port1.onmessage = w, i = Chunk48657(o.postMessage, o)) : Chunk127849.addEventListener && Chunk880181(Chunk127849.postMessage) && !Chunk127849.importScripts && r && "file:" !== r.protocol && !Chunk621523(D) ? (i = D, Chunk127849.addEventListener("message", w, false)) : i = N in Chunk809290("script") ? function(e) {
+  _.appendChild(h("script"))[N] = function() {
     _.removeChild(this), R(e)
   }
 } : function(e) {

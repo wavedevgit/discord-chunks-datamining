@@ -106,9 +106,9 @@ function S(e) {
 function A() {
   b.userTrialOffers = {}, b.userDiscountOffers = {}, b.userOffersLastFetchedAtDate = true, b.isFetching = false
 }
-let N = () => true;
+let C = () => true;
 
-function C() {
+function N() {
   return null != Chunk78839.Z.getPremiumTypeSubscription() && (null != b.userDiscountOffers[Chunk474936.dT] ? b.userDiscountOffers = {
     [Chunk474936.dT]: b.userDiscountOffers[Chunk474936.dT]
   } : null != b.userDiscountOffers[Chunk474936.dB] ? b.userDiscountOffers = {
@@ -134,7 +134,7 @@ function P() {
 }
 class w extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    b = null != e ? e : E, this.waitFor(l.default), this.syncWith([l.default], N), this.syncWith([d.Z], C), this.syncWith([o.Z], P)
+    b = null != e ? e : E, this.waitFor(l.default), this.syncWith([l.default], C), this.syncWith([d.Z], N), this.syncWith([o.Z], P)
   }
   getUserTrialOffer(e) {
     if (null !== e) return b.userTrialOffers[e]

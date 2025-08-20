@@ -1,4 +1,4 @@
-/** Chunk was on 36499 **/
+/** Chunk was on 5665 **/
 /** chunk id: 625938, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   v: () => Z
@@ -81,7 +81,7 @@ let I = e => {
       channel: l
     } = e, o = i.useRef(y.Z.getRecentCustomStatuses()), [Z, T] = i.useState(false), N = (0, _.V)(), [A, w] = i.useState(null != t ? t : null), R = (0, c.e7)([m.default], () => m.default.getCurrentUser()), M = i.useMemo(() => [], []), k = i.useRef(null).current;
     i.useEffect(() => (Z || M.push(u.z.HANG_STATUS_NEW_BADGE), () => {
-      Z && (null == k || k(j.L.PRIMARY))
+      Z && (null == k || k(O.L.PRIMARY))
     }), [Z, M, k]);
     let D = i.useCallback(e => {
         e.stopPropagation(), (0, b.Sc)(true)
@@ -105,7 +105,7 @@ let I = e => {
         w({
           type: v.IIU.HANG_STATUS,
           name: "Hang Status",
-          state: O.tN.CUSTOM,
+          state: j.tN.CUSTOM,
           details: e.status,
           emoji: e.emoji
         })

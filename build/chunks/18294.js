@@ -1,5 +1,6 @@
-/** Chunk was on 26434 **/
-/** chunk id: 18294, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 18294, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   embed: "embed_f69538",
   container: "container_f69538",

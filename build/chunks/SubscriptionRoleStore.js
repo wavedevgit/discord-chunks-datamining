@@ -96,14 +96,14 @@ function A(e) {
   return !!m.has(t) && O(t)
 }
 
-function N(e) {
+function C(e) {
   let {
     guildId: t,
     user: n
   } = e, r = d.default.getCurrentUser();
   return !!(n.id === (null == r ? true : r.id) && m.has(t)) && O(t)
 }
-class C extends(r = Chunk442837.ZP.Store) {
+class N extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk430824.Z, Chunk485386.Z, Chunk594174.default, Chunk271383.ZP)
   }
@@ -130,8 +130,8 @@ class C extends(r = Chunk442837.ZP.Store) {
     return this.buildRoles(e), null != (t = b.get(e)) && t
   }
 }
-p(C, "displayName", "SubscriptionRoleStore");
-let R = new C(Chunk570140.Z, {
+p(N, "displayName", "SubscriptionRoleStore");
+let R = new N(Chunk570140.Z, {
   CONNECTION_OPEN: I,
   LOGOUT: I,
   GUILD_CREATE: S,
@@ -140,5 +140,5 @@ let R = new C(Chunk570140.Z, {
   GUILD_ROLE_CREATE: A,
   GUILD_ROLE_UPDATE: A,
   GUILD_ROLE_DELETE: A,
-  GUILD_MEMBER_UPDATE: N
+  GUILD_MEMBER_UPDATE: C
 })

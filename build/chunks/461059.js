@@ -1,5 +1,6 @@
-/** Chunk was on 66181 **/
-/** chunk id: 461059, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 461059, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   select: "select_f8dc05",
   text: "text_f8dc05",

@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 924356, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 924356, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => d
+  Z: () => u
 });
 var Chunk951288 = require("./951288.js"),
   Chunk695346 = require("./695346.js"),
@@ -11,7 +12,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx");
 
-function d() {
+function u() {
   var e;
   let t = Chunk695346.xM.useSetting(),
     n = null == (e = (0, Chunk682578.J)()) || module;

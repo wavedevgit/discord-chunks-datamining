@@ -1,7 +1,8 @@
-/** Chunk was on 26434 **/
-/** chunk id: 587737, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 587737, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => a
+  Z: () => s
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -9,24 +10,24 @@ var Chunk739566 = require("./739566.js"),
   Chunk834129 = require("./834129.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function a(e) {
+function s(e) {
   let {
     message: t,
-    channel: a,
-    targetUser: s,
+    channel: s,
+    targetUser: l,
     actorUsernameHook: c,
     targetUsernameHook: u,
     compact: d
-  } = e, p = (0, i.ZP)(t), m = (0, i.Sw)(s, a), f = c(p), g = u(null != m ? m : true), _ = o.intl.format(o.t.tusv2t, {
-    actorName: p.nick,
-    actorHook: f,
-    targetName: null == m ? true : m.nick,
-    targetHook: g
+  } = e, f = (0, i.ZP)(t), _ = (0, i.Sw)(l, s), p = c(f), h = u(null != _ ? _ : true), m = o.intl.format(o.t.tusv2t, {
+    actorName: f.nick,
+    actorHook: p,
+    targetName: null == _ ? true : _.nick,
+    targetHook: h
   });
-  return (0, r.jsx)(l.Z, {
+  return (0, r.jsx)(a.Z, {
     icon: n(570111),
     timestamp: t.timestamp,
     compact: d,
-    children: _
+    children: m
   })
 }

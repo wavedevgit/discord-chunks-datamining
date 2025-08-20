@@ -1,4 +1,4 @@
-/** Chunk was on 86031 **/
+/** Chunk was on 71387 **/
 /** chunk id: 237031, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk481060 = require("./481060.js");
-let i = "collectibles shop product details modal",
+let a = "collectibles shop product details modal",
   l = e => {
     let {
       product: t,
@@ -19,13 +19,13 @@ let i = "collectibles shop product details modal",
       returnRef: u,
       tab: d
     } = e;
-    (0, a.ZDy)(async () => {
+    (0, i.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([r.e("25292"), r.e("31978"), r.e("40694"), r.e("17768")]).then(r.bind(r, 702370));
+      } = await r.e("2026").then(r.bind(r, 702370));
       return r => {
-        var a, i;
-        return (0, n.jsx)(e, (a = function(e) {
+        var i, a;
+        return (0, n.jsx)(e, (i = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var r = null != arguments[t] ? arguments[t] : {},
               n = Object.keys(r);
@@ -42,7 +42,7 @@ let i = "collectibles shop product details modal",
             })
           }
           return e
-        }({}, r), i = i = {
+        }({}, r), a = a = {
           product: t,
           category: l,
           shouldCheckoutWithOrbs: o,
@@ -50,21 +50,21 @@ let i = "collectibles shop product details modal",
           analyticsLocations: c,
           returnRef: u,
           tab: d
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
           var r = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var n = Object.getOwnPropertySymbols(e);
             r.push.apply(r, n)
           }
           return r
-        })(Object(i)).forEach(function(e) {
-          Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(i, e))
-        }), a))
+        })(Object(a)).forEach(function(e) {
+          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(a, e))
+        }), i))
       }
     }, {
-      modalKey: i
+      modalKey: a
     })
   },
   o = () => {
-    (0, Chunk481060.Mr3)(i)
+    (0, Chunk481060.Mr3)(a)
   }

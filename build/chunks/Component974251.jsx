@@ -1,4 +1,4 @@
-/** Chunk was on 36499 **/
+/** Chunk was on 5665 **/
 /** chunk id: 974251, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => G
@@ -82,7 +82,7 @@ let G = Chunk647438.memo(function(e) {
     editorTextContent: W,
     setValue: q,
     canOnlyUseTextCommands: Y
-  } = e, K = (0, p.bp)(), X = i.useRef(null), Q = i.useRef(null), J = (0, o.e7)([I.Z], () => I.Z.getActivities()), $ = (0, o.e7)([g.Z], () => g.Z.getSettings().clipsEnabled), ee = (0, o.e7)([g.Z], () => g.Z.getLastClipsSession()), et = (0, o.Wu)([g.Z], () => g.Z.getNewClipIds()), en = (0, o.e7)([O.ZP], () => null == O.ZP.getCurrentSidebarChannelId(V.id)), {
+  } = e, K = (0, p.bp)(), X = i.useRef(null), Q = i.useRef(null), J = (0, o.e7)([I.Z], () => I.Z.getActivities()), $ = (0, o.e7)([g.Z], () => g.Z.getSettings().clipsEnabled), ee = (0, o.e7)([g.Z], () => g.Z.getLastClipsSession()), et = (0, o.Wu)([g.Z], () => g.Z.getNewClipIds()), en = (0, o.e7)([j.ZP], () => null == j.ZP.getCurrentSidebarChannelId(V.id)), {
     showClipsHeaderEntrypoint: er
   } = m.NV.useExperiment({
     location: "ChannelAttachButton"
@@ -96,7 +96,7 @@ let G = Chunk647438.memo(function(e) {
     (0, c.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("2668"), n.e("10286")]).then(n.bind(n, 542055));
+      } = await n.e("57478").then(n.bind(n, 542055));
       return t => (0, r.jsx)(e, H(F({}, t), {
         channelId: V.id
       }))
@@ -115,14 +115,14 @@ let G = Chunk647438.memo(function(e) {
   });
   let eg = (0, v.NE)(V),
     eb = (0, v.Xu)(V),
-    ey = !j.dN.useSetting() && !(0, T.isAndroidWeb)() && null != window.ResizeObserver,
+    ey = !O.dN.useSetting() && !(0, T.isAndroidWeb)() && null != window.ResizeObserver,
     e_ = (0, C.UI)(null != V ? V : true),
     eC = (0, h.qB)(),
     ex = (0, x.Us)({
       location: "ChannelAttachButton"
     }),
     ev = null != (l = null == et ? true : et.length) ? l : 0,
-    ej = (0, M.Z)({
+    eO = (0, M.Z)({
       canAttachFiles: ep,
       canStartThreads: eg || eb,
       useSlate: ey,
@@ -136,10 +136,10 @@ let G = Chunk647438.memo(function(e) {
       appContext: K,
       canSendScheduledMessages: ex
     }),
-    eO = (0, f.Z)("ChannelAttachButton");
-  if (0 === ej.length) return null;
+    ej = (0, f.Z)("ChannelAttachButton");
+  if (0 === eO.length) return null;
   let eE = "refresh_sm",
-    eS = eO ? (0, r.jsx)(c.svS, {
+    eS = ej ? (0, r.jsx)(c.svS, {
       size: eE,
       color: "currentColor",
       colorClass: B.attachButtonPlus
@@ -175,7 +175,7 @@ let G = Chunk647438.memo(function(e) {
           case "attachMenu":
             return (0, r.jsx)(R.Z, H(F({}, e), {
               onClose: () => ec(null),
-              options: ej,
+              options: eO,
               channel: V,
               onFileUpload: () => {
                 var e;

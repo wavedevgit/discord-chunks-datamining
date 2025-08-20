@@ -1,5 +1,6 @@
-/** Chunk was on 66181 **/
-/** chunk id: 632357, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 632357, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   wrapper: "wrapper__8e08c",
   gradient: "gradient__8e08c",

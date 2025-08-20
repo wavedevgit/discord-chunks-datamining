@@ -1,5 +1,5 @@
 /** Chunk was on 55183 **/
-/** chunk id: 364705, original params: e,t,r (module,exports,require) **/
+/** chunk id: 364705, original params: e,t,n (module,exports,require) **/
 module.exports = {
   icon: "icon_b4019a",
   notAllowedIcon: "notAllowedIcon_b4019a icon_b4019a",

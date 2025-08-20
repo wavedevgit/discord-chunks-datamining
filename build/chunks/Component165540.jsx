@@ -1,4 +1,4 @@
-/** Chunk was on 36499 **/
+/** Chunk was on 5665 **/
 /** chunk id: 165540, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => P
@@ -43,7 +43,7 @@ let S = Chunk647438.forwardRef(function(e, t) {
     }), [C]);
     let S = i.useCallback(() => {
         g ? p.yT(f.ti.DISMISSED) : ((0, y.Q3)(s.z.DESKTOP_APP_LAUNCHER_ONBOARDING, {
-          dismissAction: j.L.TAKE_ACTION
+          dismissAction: O.L.TAKE_ACTION
         }), p.__(f._b.TEXT, d), u.ux()), x()
       }, [g, d, x]),
       P = (0, r.jsx)(_, {
@@ -78,7 +78,7 @@ let S = Chunk647438.forwardRef(function(e, t) {
           [E.buttonActive]: g
         }),
         onClick: S,
-        "aria-label": O.intl.string(O.t.erHFxM),
+        "aria-label": j.intl.string(j.t.erHFxM),
         "aria-expanded": g,
         "aria-haspopup": "dialog",
         focusProps: {

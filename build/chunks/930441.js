@@ -1,16 +1,19 @@
-/** Chunk was on 66181 **/
-/** chunk id: 930441, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 930441, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   $Z: () => a,
-  M0: () => l,
-  Od: () => o,
-  vG: () => s
+  M0: () => o,
+  Od: () => s,
+  vG: () => i
 });
-var i, Chunk388032 = require("./388032.jsx");
-let s = "emails";
-var a = ((i = {}).COMMUNICATION = "communication", i.SOCIAL = "social", i.TIPS = "tips", i.RECOMMENDATIONS_AND_EVENTS = "recommendations_and_events", i.UPDATES_AND_ANNOUNCEMENTS = "updates_and_announcements", i.FAMILY_CENTER_DIGEST = "family_center_digest", i);
-let l = ["tips", "recommendations_and_events", "updates_and_announcements"],
-  o = [{
+var Chunk388032 = require("./388032.jsx");
+let i = "emails";
+var a = function(e) {
+  return e.COMMUNICATION = "communication", e.SOCIAL = "social", e.TIPS = "tips", e.RECOMMENDATIONS_AND_EVENTS = "recommendations_and_events", e.UPDATES_AND_ANNOUNCEMENTS = "updates_and_announcements", e.FAMILY_CENTER_DIGEST = "family_center_digest", e
+}({});
+let o = ["tips", "recommendations_and_events", "updates_and_announcements"],
+  s = [{
     category: "communication",
     label: () => Chunk388032.intl.string(Chunk388032.t["B75+xc"]),
     subLabel: () => Chunk388032.intl.string(Chunk388032.t.ZHg9TU)

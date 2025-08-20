@@ -1,12 +1,13 @@
-/** Chunk was on 66181 **/
-/** chunk id: 346033, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 346033, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => U
+  Z: () => B
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk622535 = require("./622535.js"),
   Chunk780384 = require("./780384.js"),
@@ -39,47 +40,48 @@ var Chunk951288 = require("./951288.js"),
   Chunk740150 = require("./740150.js"),
   Chunk689095 = require("./689095.js"),
   Chunk865215 = require("./865215.js");
-let M = e => {
+let G = e => {
     let {
       inOfferExperience: t
     } = e;
-    return t ? (0, i.jsx)(I.Z, {
+    return t ? (0, r.jsx)(N.Z, {
       lifted: t
     }) : null
   },
-  U = () => {
+  B = () => {
     var e, t;
     (0, Chunk214852.z)(Chunk433811.X);
     let n = Chunk647438.useRef(null),
-      s = Chunk647438.useRef(null),
-      I = Chunk647438.useRef(null),
-      U = (0, Chunk410030.ZP)(),
-      V = (0, Chunk780384.wj)(U),
-      [G, F] = Chunk647438.useState(false),
-      [H, z] = Chunk647438.useState(false),
-      [W, Y] = Chunk647438.useState(false),
-      [K, q] = Chunk647438.useState(false),
-      X = (0, Chunk442837.e7)([Chunk78839.Z], () => Chunk78839.Z.getPremiumTypeSubscription()),
-      J = null != X ? (0, Chunk74538.Af)(X) : null,
-      Q = null != J ? Chunk74538.ZP.getSkuIdForPlan(J.planId) : null,
-      $ = null !== Q && Q !== Chunk474936.Si.TIER_2 ? Chunk474936.Si.TIER_2 : null,
-      ee = (0, Chunk639119.N)(),
-      et = null == ee || null == (e = ee.subscription_trial) ? true : module.sku_id,
-      en = (0, Chunk140465.Nx)(),
+      a = Chunk647438.useRef(null),
+      N = Chunk647438.useRef(null),
+      B = (0, Chunk410030.ZP)(),
+      Z = (0, Chunk780384.wj)(B),
+      [V, F] = Chunk647438.useState(false),
+      [H, Y] = Chunk647438.useState(false),
+      [W, K] = Chunk647438.useState(false),
+      z = !V && !H,
+      [q, X] = Chunk647438.useState(false),
+      Q = (0, Chunk442837.e7)([Chunk78839.Z], () => Chunk78839.Z.getPremiumTypeSubscription()),
+      J = null != Q ? (0, Chunk74538.Af)(Q) : null,
+      $ = null != J ? Chunk74538.ZP.getSkuIdForPlan(J.planId) : null,
+      ee = null !== $ && $ !== Chunk474936.Si.TIER_2 ? Chunk474936.Si.TIER_2 : null,
+      et = (0, Chunk639119.N)(),
+      en = null == et || null == (e = et.subscription_trial) ? true : module.sku_id,
+      er = (0, Chunk140465.Nx)(),
       ei = (0, Chunk367074.Vi)(),
-      er = null != ei && ei,
-      es = null == (t = (0, Chunk347896.Z)()) ? true : exports.billingSettingsMarketingBanner,
+      ea = null != ei && ei,
+      eo = null == (t = (0, Chunk347896.Z)()) ? true : exports.billingSettingsMarketingBanner,
       {
-        analyticsLocations: ea
+        analyticsLocations: es
       } = (0, Chunk906732.ZP)(Chunk100527.Z.PREMIUM_MARKETING);
     Chunk647438.useEffect(() => {
-      q(true)
+      X(true)
     }, []);
     let el = (0, Chunk951288.jsx)("div", {
       className: Chunk689095.premiumTierCardsContainerSettings,
       children: (0, Chunk951288.jsx)(Chunk622535.$, {
         innerRef: require,
-        onChange: e => z(e),
+        onChange: e => Y(e),
         threshold: .1,
         active: true,
         children: (0, Chunk951288.jsx)(Chunk823188.IY, {
@@ -92,7 +94,7 @@ let M = e => {
             color: Chunk755721.Tt.WHITE,
             buttonShineClassName: Chunk740150.buttonShine
           }),
-          tier2CTAButton: et === Chunk474936.Si.TIER_0 ? (0, Chunk951288.jsx)(Chunk784238.Z, {
+          tier2CTAButton: en === Chunk474936.Si.TIER_0 ? (0, Chunk951288.jsx)(Chunk784238.Z, {
             showIcon: false,
             subscriptionTier: Chunk474936.Si.TIER_2,
             className: Chunk740150.subButton,
@@ -104,7 +106,7 @@ let M = e => {
             showIcon: false,
             subscriptionTier: Chunk474936.Si.TIER_2,
             className: Chunk740150.subButton,
-            hasActivePromotion: er,
+            hasActivePromotion: ea,
             textOptions: {
               textClassName: Chunk740150.subButtonText
             },
@@ -117,12 +119,12 @@ let M = e => {
       className: Chunk689095.container,
       "data-cy": "tier-0-marketing-page",
       children: [(0, Chunk951288.jsx)(Chunk135785.Z, {
-        premiumSubscription: X,
-        className: a()(Chunk689095.existingSubscriberSpacing, {
-          [Chunk689095.zIndex1]: en
+        premiumSubscription: Q,
+        className: o()(Chunk689095.existingSubscriberSpacing, {
+          [Chunk689095.zIndex1]: er
         })
-      }), (0, Chunk951288.jsx)(M, {
-        inOfferExperience: en
+      }), (0, Chunk951288.jsx)(G, {
+        inOfferExperience: er
       }), (0, Chunk951288.jsx)("div", {
         children: (0, Chunk951288.jsx)(Chunk622535.$, {
           innerRef: Chunk120356,
@@ -131,14 +133,14 @@ let M = e => {
           active: true,
           children: (0, Chunk951288.jsx)(Chunk635921.ZP, {
             ref: Chunk120356,
-            subscriptionTier: $,
-            className: a()({
-              [Chunk689095.settingsHeroNoBackground]: en,
-              [Chunk689095.trialMarketingMargin]: en,
+            subscriptionTier: ee,
+            className: o()({
+              [Chunk689095.settingsHeroNoBackground]: er,
+              [Chunk689095.trialMarketingMargin]: er,
               [Chunk689095.settingsHeroBogoHeight]: ei,
-              [Chunk689095.noTopPaddingOverride]: null != X
+              [Chunk689095.noTopPaddingOverride]: null != Q
             }),
-            isDarkMode: V
+            isDarkMode: Z
           })
         })
       }), (0, Chunk951288.jsx)("div", {
@@ -146,9 +148,9 @@ let M = e => {
         children: (0, Chunk951288.jsx)(Chunk8647.Z, {
           variant: Chunk8647.C.NITRO_SETTINGS
         })
-      }), el, null != es && (0, Chunk951288.jsx)(Chunk218390.C, {
+      }), el, null != eo && (0, Chunk951288.jsx)(Chunk218390.C, {
         className: Chunk689095.giftPromoCard,
-        config: es
+        config: eo
       }), (0, Chunk951288.jsx)(Chunk177839.Z, {
         className: Chunk689095.perkCardsContainerSpacingSettings
       }), (0, Chunk951288.jsx)("div", {
@@ -160,16 +162,16 @@ let M = e => {
       }), (0, Chunk951288.jsx)("div", {
         className: Chunk689095.footerSpacing
       }), (0, Chunk951288.jsx)(Chunk349803.Z, {
-        isVisible: !G && !H && K,
-        subscriptionTier: $,
+        isVisible: z && q,
+        subscriptionTier: ee,
         isApplicationHome: false,
         isEligibleForBogoPromotion: ei
       }), (0, Chunk951288.jsx)(Chunk622535.$, {
         innerRef: Chunk498765,
         onChange: e => {
-          e && !W && (b.default.track(Z.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
-            location_stack: ea
-          }), Y(true))
+          e && !W && (g.default.track(L.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+            location_stack: es
+          }), K(true))
         },
         children: (0, Chunk951288.jsx)("div", {
           ref: Chunk498765,

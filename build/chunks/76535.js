@@ -1,8 +1,9 @@
-/** Chunk was on 26434 **/
-/** chunk id: 76535, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 76535, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   H: () => c,
-  R: () => s
+  R: () => l
 });
 var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
@@ -10,13 +11,13 @@ var Chunk647438 = require("./647438.js"),
   Chunk17079 = require("./17079.js"),
   Chunk281320 = require("./281320.js");
 
-function s(e, t) {
-  let n = (0, i.e7)([a.Z], () => a.Z.getPriceTiersForGuildAndType(e, t)),
-    l = (0, i.e7)([a.Z], () => a.Z.getPriceTiersFetchStateForGuildAndType(e, t));
+function l(e, t) {
+  let n = (0, i.e7)([s.Z], () => s.Z.getPriceTiersForGuildAndType(e, t)),
+    a = (0, i.e7)([s.Z], () => s.Z.getPriceTiersFetchStateForGuildAndType(e, t));
   return r.useEffect(() => {
-    l === a.M.NOT_FETCHED && (0, o.T)(e, t)
-  }, [e, l, t]), {
-    loading: l === a.M.FETCHING,
+    a === s.M.NOT_FETCHED && (0, o.T)(e, t)
+  }, [e, a, t]), {
+    loading: a === s.M.FETCHING,
     priceTiers: n
   }
 }
@@ -26,11 +27,11 @@ function c(e) {
     fetchSubscriptionsSettings: t,
     loading: n,
     error: i
-  } = (0, l.JH)();
+  } = (0, a.JH)();
   r.useEffect(() => {
     t(e)
   }, [t, e]);
-  let o = (0, l.YB)(e);
+  let o = (0, a.YB)(e);
   return {
     loaded: null != o && !n,
     subscriptionsSettings: o,

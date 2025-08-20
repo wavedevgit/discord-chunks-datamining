@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 872736, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 872736, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => o
+  Z: () => l
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -10,20 +11,20 @@ var Chunk481060 = require("./481060.js"),
   Chunk695346 = require("./695346.js"),
   Chunk388032 = require("./388032.jsx");
 
-function o(e) {
+function l(e) {
   let {
     legacyUsername: t,
     pendingLegacyUsernameDisabled: n
-  } = e, o = a.R_.useSetting(), c = true !== n ? n : o;
-  return (0, i.jsx)(r.j7V, {
+  } = e, l = o.R_.useSetting(), c = true !== n ? n : l;
+  return (0, r.jsx)(i.j7V, {
     hideBorder: true,
     value: !c,
     onChange: e => {
-      !e === o ? (0, s.iR)() : (0, s.e1)(!e)
+      !e === l ? (0, a.iR)() : (0, a.e1)(!e)
     },
-    note: c ? null : l.intl.formatToPlainString(l.t.aYhclZ, {
+    note: c ? null : s.intl.formatToPlainString(s.t.aYhclZ, {
       username: t
     }),
-    children: l.intl.string(l.t["3cWDuL"])
+    children: s.intl.string(s.t["3cWDuL"])
   })
 }

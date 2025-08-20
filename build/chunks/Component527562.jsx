@@ -43,7 +43,7 @@ function b(e) {
   }, [t, y]), i.useEffect(() => {
     null == a || a(null == S ? true : S.current)
   }, [S, a]);
-  let N = i.useMemo(() => I === f.a.NOT_FETCHED || I === f.a.FETCHING ? (0, r.jsx)("div", {
+  let C = i.useMemo(() => I === f.a.NOT_FETCHED || I === f.a.FETCHING ? (0, r.jsx)("div", {
     className: o()(g.container, g.spinnerContainer),
     children: (0, r.jsx)(l.$jN, {})
   }) : null == O && T === E ? (0, r.jsx)("div", {
@@ -68,6 +68,6 @@ function b(e) {
   return (0, r.jsx)(l.VqE, {
     ref: S,
     "aria-label": null == O ? true : O.name,
-    children: N
+    children: C
   })
 }

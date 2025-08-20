@@ -232,7 +232,7 @@ function A(e) {
   })
 }
 
-function N(e) {
+function C(e) {
   return (0, r.jsx)(l.ua7, {
     text: p.intl.string(p.t["0PQYk5"]),
     children: t => (0, r.jsx)(l.P3F, y(E({}, t), {
@@ -248,7 +248,7 @@ function N(e) {
   })
 }
 
-function C(e) {
+function N(e) {
   var t;
   let {
     url: n,
@@ -261,13 +261,13 @@ function C(e) {
     setLanguage: m,
     bytesLeft: g,
     className: E
-  } = e, b = null == s ? true : s.split("\n"), y = null != (t = null == b ? true : b.length) ? t : 0, O = c ? 100 : 6, v = 0 === g, C = "";
-  v && c && y > O ? C = "\n..." : v || (C = "..."), "" !== C && (v ? C += " " + p.intl.formatToPlainString(p.t.DQnFp6, {
+  } = e, b = null == s ? true : s.split("\n"), y = null != (t = null == b ? true : b.length) ? t : 0, O = c ? 100 : 6, v = 0 === g, N = "";
+  v && c && y > O ? N = "\n..." : v || (N = "..."), "" !== N && (v ? N += " " + p.intl.formatToPlainString(p.t.DQnFp6, {
     lines: y - O
-  }) : C += " " + p.intl.formatToPlainString(p.t["1+gGcH"], {
+  }) : N += " " + p.intl.formatToPlainString(p.t["1+gGcH"], {
     formattedBytes: (0, _.IC)(g)
   }));
-  let R = (null == b ? true : b.slice(0, O).join("\n")) + C,
+  let R = (null == b ? true : b.slice(0, O).join("\n")) + N,
     P = (0, u.yx)(R),
     w = c || O < y;
   return (0, r.jsxs)("div", {
@@ -292,7 +292,7 @@ function C(e) {
           setExpanded: d,
           isWholeFile: v,
           numLines: y
-        }), (0, r.jsx)(N, {
+        }), (0, r.jsx)(C, {
           url: n,
           fileName: i,
           fileSize: a,
@@ -381,7 +381,7 @@ let P = Chunk647438.memo(function(e) {
     onClick: u,
     onContextMenu: d,
     className: l
-  }) : (0, r.jsx)(C, {
+  }) : (0, r.jsx)(N, {
     url: t,
     fileName: n,
     fileSize: a,

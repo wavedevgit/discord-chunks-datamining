@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 190014, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 190014, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => b
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,38 +20,38 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function x(e) {
+function E(e) {
   let {
     ingress: t,
     guildId: n
-  } = e, c = o.iH.useSetting().includes(n), p = r.useCallback(e => {
-    let i = (0, l.rr)();
-    e ? i.delete(n) : i.add(n), o.iH.updateSetting([...i]), s.default.track(f.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
-      action: m.Y.RESTRICT_GUILD_ACTIVITY_JOIN_TOGGLE,
+  } = e, c = l.iH.useSetting().includes(n), _ = i.useCallback(e => {
+    let r = (0, s.rr)();
+    e ? r.delete(n) : r.add(n), l.iH.updateSetting([...r]), a.default.track(m.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
+      action: f.Y.RESTRICT_GUILD_ACTIVITY_JOIN_TOGGLE,
       ingress: t,
       guild_id: n
     })
   }, [t, n]);
-  return n === h.T ? null : (0, i.jsx)(d.U, {
-    setting: g.s6.PRIVACY_SERVER_SPECIFIC_PRIVACY_ACTIVITY_JOINING_V2,
-    children: (0, i.jsx)(u.Z, {
-      title: b.intl.string(b.t["T+nevL"]),
+  return n === h.T ? null : (0, r.jsx)(u.U, {
+    setting: p.s6.PRIVACY_SERVER_SPECIFIC_PRIVACY_ACTIVITY_JOINING_V2,
+    children: (0, r.jsx)(d.Z, {
+      title: g.intl.string(g.t["T+nevL"]),
       value: !c,
-      onChange: p,
-      note: b.intl.format(b.t.jXKQCg, {
-        helpdeskArticle: a.Z.getArticleURL(f.BhN.ACTIVITY_STATUS_SETTINGS)
+      onChange: _,
+      note: g.intl.format(g.t.jXKQCg, {
+        helpdeskArticle: o.Z.getArticleURL(m.BhN.ACTIVITY_STATUS_SETTINGS)
       })
     })
   })
 }
 
-function _(e) {
+function b(e) {
   let {
-    ingress: t = p.f4.USER_SETTINGS_PRIVACY_SAFETY,
+    ingress: t = _.f4.USER_SETTINGS_PRIVACY_SAFETY,
     guildId: n
-  } = e, r = (0, c.is)();
-  return (0, i.jsx)(x, {
+  } = e, i = (0, c.is)();
+  return (0, r.jsx)(E, {
     ingress: t,
-    guildId: null != n ? n : r
+    guildId: null != n ? n : i
   })
 }

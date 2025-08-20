@@ -1,12 +1,13 @@
-/** Chunk was on 11868 **/
-/** chunk id: 346683, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 346683, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Q: () => l
+  Q: () => a
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk542094 = require("./542094.js");
 
-function l(e) {
+function a(e) {
   let [t, n] = r.useState(e);
   return r.useLayoutEffect(() => {
     if (e === i.JS.LEAVE) {

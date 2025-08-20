@@ -1,7 +1,7 @@
 /** Chunk was on 33397 **/
 /** chunk id: 963410, original params: e,t,r (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => N
+  default: () => C
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -27,132 +27,132 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk547990 = require("./547990.js");
 
-function j(e) {
+function T(e) {
   let {
     badgeText: t,
     badgeColor: r
   } = e, u = l.useRef(t), i = l.useRef(r);
-  return (0, n.jsx)(a.IGR, {
+  return (0, n.jsx)(c.IGR, {
     text: u.current,
     color: i.current
   })
 }
 
-function N(e) {
+function C(e) {
   var t, r;
   let {
-    transitionState: N,
-    userId: C,
-    channelId: I,
-    onClose: Z
-  } = e, A = (0, u.e7)([o.default], () => o.default.getUser(C)), w = (0, u.e7)([c.Z], () => {
+    transitionState: C,
+    userId: R,
+    channelId: Z,
+    onClose: I
+  } = e, w = (0, u.e7)([s.default], () => s.default.getUser(R)), A = (0, u.e7)([o.Z], () => {
     var e;
-    return null == (e = c.Z.getChannel(I)) ? true : e.getGuildId()
-  }), P = f.ZP.useName(w, null, A), {
-    fingerprint: x,
-    userKey: U
-  } = (0, b.q)({
-    userId: C
-  }), k = (0, S.W)({
-    fingerprintBase64: x,
-    chunkSize: v.iQ,
-    desiredLength: v.KN
-  }), M = l.useCallback(() => {
+    return null == (e = o.Z.getChannel(Z)) ? true : e.getGuildId()
+  }), x = f.ZP.useName(A, null, w), {
+    fingerprint: P,
+    userKey: k
+  } = (0, m.q)({
+    userId: R
+  }), M = (0, b.W)({
+    fingerprintBase64: P,
+    chunkSize: N.iQ,
+    desiredLength: N.KN
+  }), U = l.useCallback(() => {
     (0, d.s$)({
-      userId: C,
-      channelId: I
+      userId: R,
+      channelId: Z
     })
-  }, [I, C]), F = (0, p.wV)({
-    userId: C,
-    channelId: I
+  }, [Z, R]), F = (0, p.wV)({
+    userId: R,
+    channelId: Z
   });
-  (0, g.i)({
-    channelId: I,
-    userId: C,
-    nickname: P,
-    onAlertOpen: Z
+  (0, y.i)({
+    channelId: Z,
+    userId: R,
+    nickname: x,
+    onAlertOpen: I
   });
   let {
     isCurrentUserKeyPersistent: V,
-    isOtherUserKeyPersistent: K,
-    loading: D
-  } = (0, y.y)({
-    userId: C
+    isOtherUserKeyPersistent: D,
+    loading: K
+  } = (0, g.y)({
+    userId: R
   }), L = l.useCallback(() => {
-    null != U && ((0, E.TQ)(C, U, K, I, R.Sbl.E2EE_USER_VERIFY_MODAL), Z())
-  }, [U, C, K, I, Z]), Y = l.useCallback(() => {
-    null != U && ((0, E.LO)(C, U, K), Z())
-  }, [U, C, K, Z]), [G, z] = l.useMemo(() => F ? [T.intl.string(T.t.UNUuen), s.Z.BG_BRAND] : [T.intl.string(T.t.y2b7CA), s.Z.STATUS_DANGER], [F]), B = l.useMemo(() => (0, E.kK)({
+    null != k && ((0, E.TQ)(R, k, D, Z, h.Sbl.E2EE_USER_VERIFY_MODAL), I())
+  }, [k, R, D, Z, I]), G = l.useCallback(() => {
+    null != k && ((0, E.LO)(R, k, D), I())
+  }, [k, R, D, I]), [Y, B] = l.useMemo(() => F ? [j.intl.string(j.t.UNUuen), a.Z.BG_BRAND] : [j.intl.string(j.t.y2b7CA), a.Z.STATUS_DANGER], [F]), J = l.useMemo(() => (0, E.kK)({
     isCurrentUserKeyPersistent: V,
-    isOtherUserKeyPersistent: K,
-    otherUserNickname: P
-  }), [V, K, P]), J = (0, _.P)({
-    userId: C,
-    keyToOmit: U
+    isOtherUserKeyPersistent: D,
+    otherUserNickname: x
+  }), [V, D, x]), z = (0, O.P)({
+    userId: R,
+    keyToOmit: k
   });
   l.useEffect(() => {
     (0, d.Rq)({
-      userId: C,
-      channelId: I
+      userId: R,
+      channelId: Z
     })
-  }, [I, C]);
+  }, [Z, R]);
   let W = {
-      transitionState: N,
-      title: T.intl.string(T.t["/WPGnJ"]),
-      subtitle: T.intl.format(T.t.oc2kcX, {
-        username: P
+      transitionState: C,
+      title: j.intl.string(j.t["/WPGnJ"]),
+      subtitle: j.intl.format(j.t.oc2kcX, {
+        username: x
       })
     },
     X = (0, n.jsxs)(n.Fragment, {
       children: [(0, n.jsxs)("div", {
-        className: h.verification,
-        children: [J > 0 && (0, n.jsx)(a.Wn, {
-          messageType: a.QYI.INFO,
-          className: h.helpMessage,
-          children: T.intl.format(T.t.uZDkz8, {
-            count: J
+        className: v.verification,
+        children: [z > 0 && (0, n.jsx)(c.Wn, {
+          messageType: c.QYI.INFO,
+          className: v.helpMessage,
+          children: j.intl.format(j.t.uZDkz8, {
+            count: z
           })
         }), (0, n.jsxs)("div", {
-          className: h.header,
-          children: [(0, n.jsx)(a.X6q, {
+          className: v.header,
+          children: [(0, n.jsx)(c.X6q, {
             variant: "text-sm/bold",
             color: "header-primary",
-            children: T.intl.string(T.t["/WPGnJ"])
-          }), null != k && (0, n.jsx)(O.H, {
-            className: h.copyIcon,
-            chunks: k,
-            color: a.TVs.colors.INTERACTIVE_NORMAL,
-            onCopy: M
+            children: j.intl.string(j.t["/WPGnJ"])
+          }), null != M && (0, n.jsx)(_.H, {
+            className: v.copyIcon,
+            chunks: M,
+            color: c.TVs.colors.INTERACTIVE_NORMAL,
+            onCopy: U
           }), (0, n.jsx)("div", {
-            className: h.codeStatus,
-            children: null == k ? (0, n.jsx)(a.$jN, {
-              className: h.spinner,
-              type: a.RAz.SPINNING_CIRCLE
-            }) : (0, n.jsx)(j, {
-              badgeText: G,
-              badgeColor: z
+            className: v.codeStatus,
+            children: null == M ? (0, n.jsx)(c.$jN, {
+              className: v.spinner,
+              type: c.RAz.SPINNING_CIRCLE
+            }) : (0, n.jsx)(T, {
+              badgeText: Y,
+              badgeColor: B
             })
           })]
-        }), (0, n.jsx)(m.b, {
-          className: h.code,
-          chunks: k,
-          columns: v.ak
+        }), (0, n.jsx)(S.b, {
+          className: v.code,
+          chunks: M,
+          columns: N.ak
         })]
-      }), (0, n.jsx)(a.Text, {
-        className: h.footer,
+      }), (0, n.jsx)(c.Text, {
+        className: v.footer,
         variant: "text-sm/normal",
         color: "text-muted",
-        children: B
+        children: J
       })]
     }),
     q = {
-      text: F ? T.intl.string(T.t["Osb+/v"]) : T.intl.string(T.t["0tvNAg"]),
-      disabled: null == k || D,
-      onClick: F ? Y : L
+      text: F ? j.intl.string(j.t["Osb+/v"]) : j.intl.string(j.t["0tvNAg"]),
+      disabled: null == M || K,
+      onClick: F ? G : L
     },
     $ = {
-      text: T.intl.string(T.t["ETE/oK"]),
-      onClick: Z,
+      text: j.intl.string(j.t["ETE/oK"]),
+      onClick: I,
       variant: "secondary"
     };
   return (0, n.jsx)(i.Modal, (t = function(e) {
@@ -173,7 +173,7 @@ function N(e) {
     }
     return e
   }({
-    onClose: Z
+    onClose: I
   }, W), r = r = {
     actions: [$, q],
     children: X

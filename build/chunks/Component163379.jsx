@@ -36,7 +36,7 @@ function l() {
   !module && (0, Chunk481060.$sL)() || (0, Chunk481060.ZDy)(async () => {
     let {
       default: e
-    } = await Promise.all([require.e("22878"), require.e("53937"), require.e("20296")]).then(require.bind(require, 678420));
+    } = await require.e("44808").then(require.bind(require, 678420));
     return t => (0, r.jsx)(e, s({}, t))
   }, {
     modalKey: Chunk596401.Xd

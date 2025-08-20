@@ -1,4 +1,4 @@
-/** Chunk was on 69003 **/
+/** Chunk was on 91488 **/
 /** chunk id: 11799, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   y6: () => p
@@ -29,10 +29,10 @@ let p = () => {
     } = e, g = (0, i.e7)([u.Z], () => u.Z.shouldReload()), m = r.useRef(false), [b, O] = r.useState(false), {
       initialized: _,
       loading: y,
-      items: v,
-      hasMore: j,
+      items: j,
+      hasMore: v,
       cursor: C,
-      errored: E
+      errored: x
     } = (0, i.cj)([c.Z], () => ({
       initialized: c.Z.initialized,
       loading: c.Z.loading,
@@ -41,7 +41,7 @@ let p = () => {
       cursor: c.Z.cursor,
       errored: c.Z.errored
     })), {
-      roleFilter: x,
+      roleFilter: E,
       everyoneFilter: S
     } = (0, i.cj)([a.ZP], () => ({
       everyoneFilter: a.ZP.everyoneFilter,
@@ -50,40 +50,40 @@ let p = () => {
     r.useEffect(() => ((0, s.Vk)(true), () => (0, s.Vk)(false)), []), r.useEffect(() => {
       _ && t && (0, l.FT)(d.W.NOTIFICATION_CENTER)
     }, [t, _]);
-    let P = (0, o.Z)();
+    let I = (0, o.Z)();
     r.useEffect(() => () => {
-      p ? !P() && (E || v.length > 100) && (0, s.jF)() : n && v.length > 100 && (0, s.jF)()
-    }, [n, v, p, P, E]), r.useEffect(() => {
+      p ? !I() && (x || j.length > 100) && (0, s.jF)() : n && j.length > 100 && (0, s.jF)()
+    }, [n, j, p, I, x]), r.useEffect(() => {
       let e = g && t;
       (!_ || e) && (0, s.jk)({
         limit: null != h ? h : f ? 8 : 20,
         with_mentions: f,
-        roles_filter: x,
+        roles_filter: E,
         everyone_filter: S
       })
-    }, [_, g, t, f, x, S, h]);
-    let I = r.useCallback(async e => {
-      !m.current && _ && j && null != C && (e || !E) && (m.current = true, O(true), await (0, s.jk)({
+    }, [_, g, t, f, E, S, h]);
+    let P = r.useCallback(async e => {
+      !m.current && _ && v && null != C && (e || !x) && (m.current = true, O(true), await (0, s.jk)({
         after: C,
         with_mentions: f,
-        roles_filter: x,
+        roles_filter: E,
         everyone_filter: S,
         limit: f ? 8 : 20
       }, () => {
         m.current = false
       }), O(false))
-    }, [_, j, C, E, f, x, S]);
+    }, [_, v, C, x, f, E, S]);
     return {
       initialized: _,
       loading: y,
-      items: v,
-      hasMore: j,
-      loadMore: I,
+      items: j,
+      hasMore: v,
+      loadMore: P,
       loadingMore: b,
       setReadNotifItemToAcked: e => {
         e.acked || (e.acked = true)
       },
-      errored: E
+      errored: x
     }
   })({
     isFocused: true,

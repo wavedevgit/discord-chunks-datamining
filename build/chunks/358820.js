@@ -3,10 +3,10 @@
 "use strict";
 require.d(exports, {
   fz: () => P,
-  ge: () => M,
-  r5: () => k,
+  ge: () => j,
+  r5: () => M,
   rk: () => w,
-  wV: () => x
+  wV: () => L
 }), require("./388685.js"), require("./415506.js"), require("./457542.js");
 var Chunk392711 = require("./392711.js"),
   Chunk544891 = require("./544891.js"),
@@ -67,14 +67,14 @@ function T(e, t) {
 }
 let S = new Chunk710845.Z("VoiceFilterActionCreators"),
   A = 1e3,
-  N = (0, Chunk392711.debounce)(() => {
+  C = (0, Chunk392711.debounce)(() => {
     Chunk570140.Z.dispatch({
       type: "VOICE_FILTER_LAGGING"
     })
   }, A, {
     leading: true
   }),
-  C = false,
+  N = false,
   R = new Map;
 
 function P(e) {
@@ -151,7 +151,7 @@ function P(e) {
 }
 async function w(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null;
-  await k();
+  await M();
   let n = performance.now();
   try {
     let r = p.ZP.getVoiceFilters();
@@ -190,7 +190,7 @@ async function D(e) {
   if (null == o) throw Error("Voice filters catalog signature is missing");
   return await e.setCatalog(r, o), a
 }
-async function L(e) {
+async function x(e) {
   if (!p.ZP.canCheckVoiceFilterFilesExist()) return;
   let t = Object.keys(e.models).map(e => ({
       id: e,
@@ -208,13 +208,13 @@ async function L(e) {
   let i = t.map(e => e.fileName);
   return (0, o.dZ)(i) && await (0, E.A)(i), r
 }
-async function x() {
+async function L() {
   if (!Chunk709706.Z.isNativeModuleLoaded()) return void S.info("Voice Filter catalog refresh ignored, module not loaded.");
-  if (!C) try {
-    C = true;
+  if (!N) try {
+    N = true;
     let e = Chunk998502.ZP.getVoiceFilters(),
       t = await D(module),
-      n = null == Chunk709706.Z.getCatalogLastFetchTime() ? await L(exports) : true;
+      n = null == Chunk709706.Z.getCatalogLastFetchTime() ? await x(exports) : true;
     await Chunk570140.Z.dispatch({
       type: "VOICE_FILTER_CATALOG_FETCH_SUCCESS",
       catalog: exports,
@@ -228,16 +228,16 @@ async function x() {
       type: "VOICE_FILTER_CATALOG_FETCH_FAILED"
     })
   } finally {
-    C = false
+    N = false
   }
 }
 
-function M() {
+function j() {
   Chunk570140.Z.dispatch({
     type: "VOICE_FILTER_DOWNLOAD_CANCELED"
   })
 }
-async function k() {
+async function M() {
   if (!(Chunk709706.Z.isNativeModuleLoaded() || Chunk709706.Z.isNativeModuleLoading()) && !__OVERLAY__) {
     if (!(0, Chunk358085.isWindows)() && !(0, Chunk358085.isMac)()) return void Chunk570140.Z.dispatch({
       type: "VOICE_FILTER_NATIVE_MODULE_STATE_CHANGE",
@@ -249,7 +249,7 @@ async function k() {
         state: Chunk750180.O.LOADING
       }), await Chunk998502.ZP.ensureModule("discord_voice_filters");
       let t = Chunk998502.ZP.getVoiceFilters();
-      await exports.setupResources(), true !== exports.setVoiceFilterLaggingCallback && await exports.setVoiceFilterLaggingCallback(N), true !== exports.setVoiceFilterReadyCallback && await exports.setVoiceFilterReadyCallback(e => {
+      await exports.setupResources(), true !== exports.setVoiceFilterLaggingCallback && await exports.setVoiceFilterLaggingCallback(C), true !== exports.setVoiceFilterReadyCallback && await exports.setVoiceFilterReadyCallback(e => {
         s.Z.dispatch({
           type: "VOICE_FILTER_READY",
           name: e
@@ -257,7 +257,7 @@ async function k() {
       }), await Chunk570140.Z.dispatch({
         type: "VOICE_FILTER_NATIVE_MODULE_STATE_CHANGE",
         state: Chunk750180.O.LOADED
-      }), await x();
+      }), await L();
       let n = Chunk131951.Z.getMostRecentlyRequestedVoiceFilter();
       if (null != require) {
         var e;

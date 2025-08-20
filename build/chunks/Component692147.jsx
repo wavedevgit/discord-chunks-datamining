@@ -1,7 +1,8 @@
-/** Chunk was on 38626 **/
-/** chunk id: 692147, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 692147, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => h
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -13,42 +14,47 @@ var Chunk951288 = require("./951288.js"),
   Chunk112843 = require("./112843.js"),
   Chunk524484 = require("./524484.js");
 
-function h(e) {
-  let {
-    reactionRef: t,
-    count: n
-  } = e, i = l.useRef(n), s = (0, o.e7)([a.Z], () => a.Z.getState()), d = (0, u.Z)(), h = (0, c.Z)(t);
-  return l.useEffect(() => {
-    if (n > i.current && null != h) {
-      let e = (0, r.clamp)(n, s.confettiCount / 2, 2 * s.confettiCount);
-      d.fire(h.x, h.y, {
-        count: e
-      })
-    }
-    i.current = n
-  }, [n, h, d, s.confettiCount]), null
+function f(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function _(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      f(e, t, n[t])
+    })
+  }
+  return e
 }
 
 function p(e) {
-  return (0, i.jsx)(s.Z, {
+  let {
+    reactionRef: t,
+    count: n
+  } = e, r = i.useRef(n), l = (0, o.e7)([s.Z], () => s.Z.getState()), d = (0, u.Z)(), f = (0, c.Z)(t);
+  return i.useEffect(() => {
+    if (n > r.current && null != f) {
+      let e = (0, a.clamp)(n, l.confettiCount / 2, 2 * l.confettiCount);
+      d.fire(f.x, f.y, {
+        count: e
+      })
+    }
+    r.current = n
+  }, [n, f, d, l.confettiCount]), null
+}
+
+function h(e) {
+  return (0, r.jsx)(l.Z, {
     confettiLocation: d.Hn.REACTION,
-    children: (0, i.jsx)(h, function(e) {
-      for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-          i = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-          return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), i.forEach(function(t) {
-          var i;
-          i = n[t], t in e ? Object.defineProperty(e, t, {
-            value: i,
-            enumerable: true,
-            configurable: true,
-            writable: true
-          }) : e[t] = i
-        })
-      }
-      return e
-    }({}, e))
+    children: (0, r.jsx)(p, _({}, e))
   })
 }

@@ -92,7 +92,7 @@ function I(e) {
   }, [a]), A = i.useCallback((e, t) => {
     var n;
     return t ? (null == (n = a[e + 1]) ? true : n.type) === u.Qi.BUILT_IN ? 0 : 2 * O : 0 === e ? 0 : 2 * O
-  }, [a]), N = i.useCallback((e, t) => {
+  }, [a]), C = i.useCallback((e, t) => {
     let i = a[t];
     if (null == i) return;
     let o = (0, d.ky)(i),
@@ -139,7 +139,7 @@ function I(e) {
       store: l.Xn,
       categories: a,
       className: f.list,
-      renderCategoryListItem: N,
+      renderCategoryListItem: C,
       rowCount: a.length,
       categoryHeight: S,
       listPadding: b,

@@ -126,12 +126,12 @@ function A(e) {
   return null != (t = b.find(t => e <= t)) ? t : b[b.length - 1]
 }
 
-function N(e) {
+function C(e) {
   let [t, n] = e.split("?");
   return [t, s.parse(n)]
 }
 
-function C(e) {
+function N(e) {
   let {
     src: t,
     sourceWidth: n,
@@ -144,7 +144,7 @@ function C(e) {
     srcIsAnimated: p = false
   } = e;
   if (t.startsWith("data:image") || d.Z.isDiscordCdnUrl(t)) return t;
-  let [h, m] = N(t);
+  let [h, m] = C(t);
   null != l && (m.format = l), null != u && (m.quality = u), f && p && (g.test(t) || E.test(t)) && (m.animated = true), E.test(t) && (m.format = "webp");
   let b = (0, c.Tj)({
     width: a,
@@ -170,7 +170,7 @@ function R(e) {
   } = e, d = n, _ = r;
   o < 1 && (d = Math.round(n * o), _ = Math.round(r * o)), null != i && (d = Math.min(d, i)), null != a && (_ = Math.min(_, a));
   let p = (0, f.Z)();
-  return C({
+  return N({
     src: t,
     sourceWidth: n,
     sourceHeight: r,

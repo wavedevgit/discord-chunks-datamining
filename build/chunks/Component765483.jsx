@@ -1,5 +1,5 @@
-/** Chunk was on 78650 **/
-/** chunk id: 765483, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 71350 **/
+/** chunk id: 765483, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => f
 });
@@ -15,15 +15,15 @@ var Chunk442837 = require("./442837.js"),
   Chunk474440 = require("./474440.js");
 
 function f(e) {
-  let t = e.isArchivedThread(),
-    n = (0, s.P0)(e),
+  let n = e.isArchivedThread(),
+    t = (0, s.P0)(e),
     {
       firstMessage: f
     } = (0, r.e7)([a.Z], () => a.Z.getMessage(e.id), [e.id]);
-  return !n || t || null == f ? null : (0, i.jsx)(l.sNh, {
+  return !t || n || null == f ? null : (0, i.jsx)(l.sNh, {
     id: "resolve-report",
-    label: d.intl.string(u.default["8yIKen"]),
+    label: c.intl.string(u.default["8yIKen"]),
     action: () => o.Z.resolveFlag(e.id),
-    className: c.menuItem
+    className: d.menuItem
   })
 }

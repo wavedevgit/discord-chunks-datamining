@@ -33,7 +33,7 @@ function b(e) {
   } = e, T = (0, p.X)(), S = u.ZP.getApplicationIconURL({
     id: n.id,
     icon: n.icon
-  }), A = u.ZP.getUserAvatarURL(t), N = i.useMemo(() => I.some(e => (0, _.sg)(e)) ? (0, r.jsxs)(r.Fragment, {
+  }), A = u.ZP.getUserAvatarURL(t), C = i.useMemo(() => I.some(e => (0, _.sg)(e)) ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.x, {
       variant: "text-lg/normal",
       color: "header-secondary",
@@ -86,7 +86,7 @@ function b(e) {
         size: m.EF.SIZE_80,
         "aria-label": t.username
       })]
-    }), N, O ? (0, r.jsx)("div", {
+    }), C, O ? (0, r.jsx)("div", {
       className: E.currentUser,
       children: (0, r.jsxs)(l.x, {
         variant: "text-sm/normal",

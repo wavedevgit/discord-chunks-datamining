@@ -2,7 +2,7 @@
 /** chunk id: 91896, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => C
+  Z: () => N
 }), require("./539854.js"), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk759174 = require("./759174.js"),
@@ -92,7 +92,7 @@ function S(e) {
 function A(e) {
   v(e.userId, e.applicationId), y()
 }
-class N extends(r = Chunk442837.ZP.Store) {
+class C extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk699516.Z)
   }
@@ -130,8 +130,8 @@ class N extends(r = Chunk442837.ZP.Store) {
     return m.version
   }
 }
-c(N, "displayName", "GameRelationshipStore");
-let C = new N(Chunk570140.Z, {
+c(C, "displayName", "GameRelationshipStore");
+let N = new C(Chunk570140.Z, {
   CONNECTION_OPEN: T,
   GAME_RELATIONSHIP_ADD: S,
   GAME_RELATIONSHIP_REMOVE: A,

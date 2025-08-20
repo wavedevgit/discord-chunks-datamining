@@ -1,63 +1,66 @@
-/** Chunk was on 66181 **/
-/** chunk id: 794347, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 794347, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => x,
-  _: () => h
+  Z: () => g,
+  _: () => p
 });
-var i, Chunk951288 = require("./951288.js"),
+var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk692547 = require("./692547.js"),
   Chunk477690 = require("./477690.js"),
   Chunk393238 = require("./393238.js"),
   Chunk162168 = require("./162168.jsx"),
   Chunk624138 = require("./624138.js"),
   Chunk776421 = require("./776421.js");
-let g = (0, Chunk624138.Mg)(Chunk477690.Z.GRADIENT_PROGRESS_NOTCH_WIDTH);
-var h = ((i = {}).BLACK = "BLACK", i.GRAY = "GRAY", i);
-let f = {
+let _ = (0, Chunk624138.Mg)(Chunk477690.Z.GRADIENT_PROGRESS_NOTCH_WIDTH);
+var p = function(e) {
+  return e.BLACK = "BLACK", e.GRAY = "GRAY", e
+}({});
+let h = {
   BLACK: Chunk776421.black,
   GRAY: Chunk776421.gray
 };
 
-function b(e) {
-  return Math.round(e / g) * g
+function m(e) {
+  return Math.round(e / _) * _
 }
 
-function x(e) {
+function g(e) {
   let {
     notchBackground: t,
     progress: n,
-    gradientStart: i = o.Z.unsafe_rawColors.YELLOW_260.css,
-    gradientEnd: a = o.Z.unsafe_rawColors.GREEN_360.css,
-    className: c,
-    children: m
+    gradientStart: a = s.Z.unsafe_rawColors.YELLOW_260.css,
+    gradientEnd: l = s.Z.unsafe_rawColors.GREEN_360.css,
+    className: d,
+    children: _
   } = e, {
-    ref: g,
-    width: h
-  } = (0, d.ZP)(), x = s.useMemo(() => null != h ? b(h) : 0, [h]), _ = s.useMemo(() => {
-    let e = Math.abs(b(x * (100 - Math.max(0, Math.min(100, n))) / 100) - x);
+    ref: p,
+    width: g
+  } = (0, c.ZP)(), E = i.useMemo(() => null != g ? m(g) : 0, [g]), b = i.useMemo(() => {
+    let e = Math.abs(m(E * (100 - Math.max(0, Math.min(100, n))) / 100) - E);
     return {
       transform: "translateX(".concat(e, "px)")
     }
-  }, [n, x]), j = s.useMemo(() => ({
-    width: "".concat(x, "px"),
-    background: n <= 0 ? "none" : "linear-gradient(to right, ".concat(i, ", ").concat(a, ")")
-  }), [a, i, n, x]);
+  }, [n, E]), y = i.useMemo(() => ({
+    width: "".concat(E, "px"),
+    background: n <= 0 ? "none" : "linear-gradient(to right, ".concat(a, ", ").concat(l, ")")
+  }), [l, a, n, E]);
   return (0, r.jsxs)("div", {
-    className: p.wrapper,
-    ref: g,
+    className: f.wrapper,
+    ref: p,
     children: [(0, r.jsxs)("div", {
-      className: l()(p.container, c),
-      style: j,
+      className: o()(f.container, d),
+      style: y,
       children: [(0, r.jsx)("div", {
-        className: p.progress,
-        style: _
-      }), 0 !== x && (0, r.jsx)(u.Z, {
-        width: x,
-        className: l()(p.notches, f[t])
+        className: f.progress,
+        style: b
+      }), 0 !== E && (0, r.jsx)(u.Z, {
+        width: E,
+        className: o()(f.notches, h[t])
       })]
-    }), m]
+    }), _]
   })
 }

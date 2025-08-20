@@ -1,4 +1,4 @@
-/** Chunk was on 36499 **/
+/** Chunk was on 5665 **/
 /** chunk id: 651612, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -46,8 +46,8 @@ function _(e) {
       (0, h.gC)(e)
     }, [x]),
     {
-      unreadCount: j,
-      mentionCount: O
+      unreadCount: O,
+      mentionCount: j
     } = function(e) {
       let t = (0, a.e7)([d.Z], () => !(0, l.isEmpty)(d.Z.getTypingUsers(e)), [e]),
         {
@@ -73,11 +73,11 @@ function _(e) {
   });
   let S = x ? b.intl.string(b.t["5MstTk"]) : b.intl.string(b.t.kkKapK),
     P = [S];
-  O > 0 && P.push(b.intl.formatToPlainString(b.t["3l1GOz"], {
-    mentionCount: O
-  })), j > 0 && P.push(b.intl.string(b.t.x5zAGR));
+  j > 0 && P.push(b.intl.formatToPlainString(b.t["3l1GOz"], {
+    mentionCount: j
+  })), O > 0 && P.push(b.intl.string(b.t.x5zAGR));
   let I = (0, a.e7)([f.ZP], () => f.ZP.getFocusedLayout()),
-    Z = O > 0 ? O : j,
+    Z = j > 0 ? j : O,
     T = Z > 0;
   return (0, r.jsxs)("div", {
     className: y.wrapper,
@@ -109,7 +109,7 @@ function _(e) {
       themeable: true,
       className: n
     }, _)), T ? (0, r.jsx)(s.Z, {
-      hasMentions: O > 0,
+      hasMentions: j > 0,
       truncatedCount: Z > 99 ? "99+" : Z,
       className: y.badge
     }) : null]

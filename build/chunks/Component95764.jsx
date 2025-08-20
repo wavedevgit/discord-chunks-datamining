@@ -1,4 +1,4 @@
-/** Chunk was on 36499 **/
+/** Chunk was on 5665 **/
 /** chunk id: 95764, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -26,11 +26,11 @@ function b(e) {
     canManageGuildEvent: C
   } = (0, s.XJ)(_), x = C(y), v = i.useRef(null);
   if (null == y) return null;
-  let j = () => {
+  let O = () => {
       if (null != _ && (0, f.Z)(_)) return void(0, p.lC)(_, b);
       n()
     },
-    O = () => {
+    j = () => {
       h.Z.endEvent(y.id, y.guild_id)
     };
   return x ? (0, r.jsx)(a.yRy, {
@@ -48,7 +48,7 @@ function b(e) {
           children: (0, r.jsx)(a.sNh, {
             id: "end-voice-event",
             color: "danger",
-            action: O,
+            action: j,
             label: g.intl.string(g.t.qaYzPD),
             icon: a.k$p
           })
@@ -65,7 +65,7 @@ function b(e) {
       return (0, r.jsx)(u.Z, {
         buttonRef: v,
         label: g.intl.string(g.t["6vrfgo"]),
-        onClick: j,
+        onClick: O,
         onPopoutClick: t
       })
     }

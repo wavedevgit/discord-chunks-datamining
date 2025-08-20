@@ -1,46 +1,52 @@
-/** Chunk was on 66181 **/
-/** chunk id: 774572, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 774572, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  D: () => l
+  D: () => c
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk289008 = require("./289008.js"),
   Chunk622999 = require("./622999.js"),
   Chunk246652 = require("./246652.jsx");
-let l = e => {
+
+function s(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function l(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      s(e, t, n[t])
+    })
+  }
+  return e
+}
+let c = e => {
   let {
     errorLabel: t,
     children: n,
-    elementOptions: l
-  } = e, o = Date.now();
-  return (0, i.jsx)(a.k, {
+    elementOptions: s
+  } = e, c = Date.now();
+  return (0, r.jsx)(o.k, {
     label: t,
-    children: (0, i.jsx)(r.Elements, {
-      stripe: (0, s.d2)(),
-      options: function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {},
-            i = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), i.forEach(function(t) {
-            var i;
-            i = n[t], t in e ? Object.defineProperty(e, t, {
-              value: i,
-              enumerable: true,
-              configurable: true,
-              writable: true
-            }) : e[t] = i
-          })
-        }
-        return e
-      }({
+    children: (0, r.jsx)(i.Elements, {
+      stripe: (0, a.d2)(),
+      options: l({
         mode: "setup",
         currency: "usd",
         setup_future_usage: "off_session"
-      }, l),
+      }, s),
       children: n
     })
-  }, o)
+  }, c)
 }

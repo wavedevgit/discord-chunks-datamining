@@ -1,5 +1,6 @@
-/** Chunk was on 66181 **/
-/** chunk id: 677599, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 677599, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   container: "container_ca1a02",
   perksDiscoverability: "perksDiscoverability_ca1a02",

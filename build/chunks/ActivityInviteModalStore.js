@@ -1,8 +1,8 @@
-/** Chunk was on 82096 **/
+/** Chunk was on 84927 **/
 /** chunk id: 606206, original params: e,t,n (module,exports,require) **/
 let r;
 require.d(exports, {
-  Z: () => _
+  Z: () => S
 }), require("./388685.js"), require("./539854.js"), require("./781311.js"), require("./35282.js");
 var l, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -18,7 +18,7 @@ var l, Chunk442837 = require("./442837.js"),
   Chunk55589 = require("./55589.js"),
   Chunk981631 = require("./981631.js");
 
-function N(e, t, n) {
+function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -27,13 +27,13 @@ function N(e, t, n) {
   }) : e[t] = n, e
 }
 let b = [Chunk212819.h8.TEXT_CHANNEL, Chunk212819.h8.GROUP_DM, Chunk212819.h8.USER],
-  x = null,
-  E = null,
-  m = [],
+  N = null,
+  m = null,
+  E = [],
   C = [];
 
-function v(e) {
-  m = [...m, e], C = C.map(e => {
+function j(e) {
+  E = [...E, e], C = C.map(e => {
     var t, n;
     return t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -42,12 +42,12 @@ function v(e) {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-          N(e, t, n[t])
+          x(e, t, n[t])
         })
       }
       return e
     }({}, e), n = n = {
-      sent: m.includes(e.data.record.id)
+      sent: E.includes(e.data.record.id)
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -58,23 +58,23 @@ function v(e) {
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t
-  }), S.emitChange()
+  }), P.emitChange()
+}
+
+function v() {
+  N = null, null != r && (r.destroy(), r = null), null != m && m()
 }
 
 function T() {
-  x = null, null != r && (r.destroy(), r = null), null != E && E()
-}
-
-function j() {
-  let e = null != x && null != x.application_id ? Chunk293273.Z.getApplicationActivity(x.application_id) : null;
-  if (null != x && (null == module || null == module.party || null == module.party.id)) return T()
+  let e = null != N && null != N.application_id ? Chunk293273.Z.getApplicationActivity(N.application_id) : null;
+  if (null != N && (null == module || null == module.party || null == module.party.id)) return v()
 }
 class I extends(l = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk293273.Z)
   }
   getActivity() {
-    return x
+    return N
   }
   getQuery() {
     var e;
@@ -84,10 +84,10 @@ class I extends(l = Chunk442837.ZP.Store) {
     return C
   }
 }
-N(I, "displayName", "ActivityInviteModalStore");
-let S = new I(Chunk570140.Z, {
+x(I, "displayName", "ActivityInviteModalStore");
+let P = new I(Chunk570140.Z, {
     ACTIVITY_INVITE_MODAL_OPEN: function(e) {
-      x = e.activity, E = e.resolve, m = [], null == r && (r = new a.ZP((e, t) => {
+      N = e.activity, m = e.resolve, E = [], null == r && (r = new o.ZP((e, t) => {
         C = ("" === t.trim() ? function() {
           let e = [];
           return O.Z.getPrivateChannelIds().forEach(t => {
@@ -97,56 +97,56 @@ let S = new I(Chunk570140.Z, {
                 let t = n.getRecipientId(),
                   r = null != t ? p.default.getUser(t) : null;
                 null != r && e.push({
-                  type: a.h8.USER,
+                  type: o.h8.USER,
                   record: r,
                   score: 0
                 })
               } else n.isMultiUserDM() && e.push({
-                type: a.h8.GROUP_DM,
+                type: o.h8.GROUP_DM,
                 record: n,
                 score: 0
               })
           }), e
         }() : e).map(e => {
           switch (e.type) {
-            case a.h8.USER: {
+            case o.h8.USER: {
               let {
                 record: t
               } = e;
               return {
-                type: a.h8.USER,
-                sent: m.includes(t.id),
-                status: h.Z.getStatus(t.id),
+                type: o.h8.USER,
+                sent: E.includes(t.id),
+                status: f.Z.getStatus(t.id),
                 data: e
               }
             }
-            case a.h8.TEXT_CHANNEL: {
+            case o.h8.TEXT_CHANNEL: {
               var t;
               let {
                 record: n
               } = e, r = u.Z.getChannel(n.parent_id), l = d.Z.getGuild(n.guild_id);
               return {
-                type: a.h8.TEXT_CHANNEL,
-                sent: m.includes(n.id),
+                type: o.h8.TEXT_CHANNEL,
+                sent: E.includes(n.id),
                 categoryName: null != r ? (0, c.F6)(r, p.default, g.Z) : "",
                 guildName: null != (t = null == l ? true : l.name) ? t : "",
                 data: e
               }
             }
-            case a.h8.GROUP_DM: {
+            case o.h8.GROUP_DM: {
               let {
                 record: t
               } = e;
               return {
-                type: a.h8.GROUP_DM,
-                sent: m.includes(t.id),
+                type: o.h8.GROUP_DM,
+                sent: E.includes(t.id),
                 data: e
               }
             }
             default:
               return null
           }
-        }).filter(e => null != e), S.emitChange()
+        }).filter(e => null != e), P.emitChange()
       }, b, 100)), r.search("")
     },
     ACTIVITY_INVITE_MODAL_QUERY: function(e) {
@@ -156,29 +156,29 @@ let S = new I(Chunk570140.Z, {
       null != r && r.search(t)
     },
     ACTIVITY_INVITE_MODAL_SEND: function(e) {
-      if (null == x) return;
+      if (null == N) return;
       let t = e.channelId,
         n = e.userId;
-      null != t ? s.Z.sendActivityInvite({
+      null != t ? a.Z.sendActivityInvite({
         channelId: t,
         type: y.mFx.JOIN,
-        activity: x,
+        activity: N,
         location: "Channel Text Area - Invite to Join Modal"
-      }).then(() => v(t)) : null != n && s.Z.sendActivityInviteUser({
+      }).then(() => j(t)) : null != n && a.Z.sendActivityInviteUser({
         userId: n,
         type: y.mFx.JOIN,
-        activity: x,
+        activity: N,
         location: "Channel Text Area - Invite to Join Modal"
-      }).then(() => v(n))
+      }).then(() => j(n))
     },
-    ACTIVITY_INVITE_MODAL_CLOSE: T,
+    ACTIVITY_INVITE_MODAL_CLOSE: v,
     OVERLAY_SET_INPUT_LOCKED: function(e) {
       let {
         locked: t
       } = e;
-      return !!t && null != x && (T(), true)
+      return !!t && null != N && (v(), true)
     },
-    LOCAL_ACTIVITY_UPDATE: j,
-    RPC_APP_DISCONNECTED: j
+    LOCAL_ACTIVITY_UPDATE: T,
+    RPC_APP_DISCONNECTED: T
   }),
-  _ = 12633 == require.j ? S : null
+  S = 12633 == require.j ? P : null

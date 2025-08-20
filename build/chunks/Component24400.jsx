@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 24400, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 24400, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 });
 var Chunk951288 = require("./951288.js"),
   Chunk604849 = require("./604849.js"),
@@ -14,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function p() {
+function _() {
   let e = (0, Chunk604849.c)();
   return (0, Chunk951288.jsx)(Chunk838436.U, {
     setting: Chunk726985.s6.PRIVACY_SAFETY_ALERTS_V2,

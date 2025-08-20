@@ -73,15 +73,15 @@ let y = e => {
         showTrialBadge: S = false,
         showDiscountBadge: A = false
       } = e,
-      N = I === m.p9.TIER_2;
+      C = I === m.p9.TIER_2;
     n = I === m.p9.TIER_0 ? c.Z : I === m.p9.TIER_1 ? u.Z : l.Z;
-    let C = (0, p.Ng)(),
-      R = null == C || null == (t = C.discount) ? true : t.amount;
+    let N = (0, p.Ng)(),
+      R = null == N || null == (t = N.discount) ? true : t.amount;
     return (0, r.jsxs)("div", {
       "aria-hidden": true,
       className: a()({
-        [E.headerBackground]: !N,
-        [E.tier2HeaderBackground]: N
+        [E.headerBackground]: !C,
+        [E.tier2HeaderBackground]: C
       }, T),
       children: [(S || A) && (0, r.jsx)(d.Z, {
         className: E.trialBadgeSparkles
@@ -92,7 +92,7 @@ let y = e => {
         children: [(0, r.jsxs)("div", {
           children: [(0, r.jsx)(n, {
             className: a()(E.headerIcon, {
-              [E.nonTier2]: !N
+              [E.nonTier2]: !C
             })
           }), (S || A) && (0, r.jsx)(y, {
             isTier0: I === m.p9.TIER_0,

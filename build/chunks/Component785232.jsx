@@ -1,7 +1,8 @@
-/** Chunk was on 87337 **/
-/** chunk id: 785232, original params: t,e,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 785232, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => o
+  Z: () => u
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -9,41 +10,45 @@ var Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk289823 = require("./289823.jsx"),
   Chunk594174 = require("./594174.js");
-let o = function(t) {
+
+function l(e, t) {
+  if (null == e) return {};
+  var n, r, i = c(e, t);
+  if (Object.getOwnPropertySymbols) {
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+  }
+  return i
+}
+
+function c(e, t) {
+  if (null == e) return {};
+  var n, r, i = {},
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+  return i
+}
+let u = function(e) {
   var {
-    recipients: e,
+    recipients: t,
     size: n,
-    status: o,
+    status: c,
     isTyping: u,
-    className: c
-  } = t, _ = function(t, e) {
-    if (null == t) return {};
-    var n, i, r = function(t, e) {
-      if (null == t) return {};
-      var n, i, r = {},
-        s = Object.keys(t);
-      for (i = 0; i < s.length; i++) n = s[i], e.indexOf(n) >= 0 || (r[n] = t[n]);
-      return r
-    }(t, e);
-    if (Object.getOwnPropertySymbols) {
-      var s = Object.getOwnPropertySymbols(t);
-      for (i = 0; i < s.length; i++) n = s[i], !(e.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(t, n) && (r[n] = t[n])
-    }
-    return r
-  }(t, ["recipients", "size", "status", "isTyping", "className"]);
-  let d = s.ny6[n],
-    A = (0, r.Wu)([l.default], () => e.slice(0, 2).map(t => {
-      let e = l.default.getUser(t);
-      if (null != e) return e.getAvatarURL(true, d.size, false)
-    }), [e, d.size]);
-  return (0, i.jsx)(a.Z, {
-    "aria-label": _["aria-label"],
-    "aria-hidden": _["aria-hidden"],
-    backSrc: A[0],
-    frontSrc: A[1],
+    className: d
+  } = e, f = l(e, ["recipients", "size", "status", "isTyping", "className"]);
+  let _ = a.ny6[n],
+    p = (0, i.Wu)([s.default], () => t.slice(0, 2).map(e => {
+      let t = s.default.getUser(e);
+      if (null != t) return t.getAvatarURL(true, _.size, false)
+    }), [t, _.size]);
+  return (0, r.jsx)(o.Z, {
+    "aria-label": f["aria-label"],
+    "aria-hidden": f["aria-hidden"],
+    backSrc: p[0],
+    frontSrc: p[1],
     size: n,
-    status: o,
+    status: c,
     isTyping: null != u && u,
-    className: c
+    className: d
   })
 }

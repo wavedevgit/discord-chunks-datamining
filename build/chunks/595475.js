@@ -1,6 +1,7 @@
-/** Chunk was on 66181 **/
-/** chunk id: 595475, original params: e,t,n (module,exports,require) **/
-require.r(module.exports = {
+/** Chunk was on web.js **/
+/** chunk id: 595475, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+var r = {
   boxBackdrop: "boxBackdrop_b0db00",
   bentoSectionHeader: "bentoSectionHeader_b0db00",
   bentoBoxesGrid: "bentoBoxesGrid_b0db00",
@@ -18,4 +19,5 @@ require.r(module.exports = {
   boxContainer: "boxContainer_b0db00",
   textBox: "textBox_b0db00",
   gradientBackground: "gradientBackground_b0db00"
-})
+};
+require.r(module.exports = r)

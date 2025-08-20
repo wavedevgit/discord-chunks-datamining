@@ -72,7 +72,7 @@ function m(e) {
   }), [I, T] = (0, a.Wu)([c.Z], () => [c.Z.isFriend(E), c.Z.isBlocked(E)], [E]), [S, A] = i.useState(false);
   if (y || O) return null;
 
-  function N() {
+  function C() {
     (0, o.ZDy)(async () => {
       let {
         ConfirmModal: e
@@ -103,7 +103,7 @@ function m(e) {
   return I ? (0, r.jsx)(o.sNh, {
     id: "remove-friend",
     label: d.intl.string(d.t.cvSt1N),
-    action: N
+    action: C
   }) : (0, r.jsx)(o.sNh, {
     id: "add-friend",
     label: S ? d.intl.string(d.t.xMH6vL) : v,

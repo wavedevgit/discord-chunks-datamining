@@ -71,11 +71,11 @@ function T(e) {
     hideTooltip: y = false,
     canTruncate: v = true,
     showChannelName: T = false
-  } = e, S = (0, s.vjg)(s.Skl.ONLINE), A = (0, u.ZP)(t), N = t.isDM() || t.isGroupDM(), {
-    enableTopNavButton: C
+  } = e, S = (0, s.vjg)(s.Skl.ONLINE), A = (0, u.ZP)(t), C = t.isDM() || t.isGroupDM(), {
+    enableTopNavButton: N
   } = (0, d.Cq)({
     location: "VoiceActivityStatus"
-  }), R = !C && T, {
+  }), R = !N && T, {
     analyticsLocations: P
   } = (0, l.ZP)(), w = i.useCallback(() => {
     (0, p.A)({
@@ -83,7 +83,7 @@ function T(e) {
       activityType: "VOICE",
       voiceChannelId: t.id
     })
-  }, [P, t.id]), D = () => y || N ? (0, r.jsx)(_.Z, {
+  }, [P, t.id]), D = () => y || C ? (0, r.jsx)(_.Z, {
     size: "custom",
     color: S,
     channel: t,
@@ -101,14 +101,14 @@ function T(e) {
       channel: t,
       className: o()(b.icon, f)
     }))
-  }), L = () => C ? A : N ? E.intl.string(E.t["9FaEzs"]) : t.isGuildStageVoice() ? E.intl.string(E.t.QygGCA) : E.intl.string(E.t.msxteH);
+  }), x = () => N ? A : C ? E.intl.string(E.t["9FaEzs"]) : t.isGuildStageVoice() ? E.intl.string(E.t.QygGCA) : E.intl.string(E.t.msxteH);
   return (0, r.jsxs)(r.Fragment, {
     children: [D(), !m && (0, r.jsxs)(h.Z, {
       variant: n,
       className: a,
       canTruncate: v,
       hideTooltip: y,
-      children: [L(), R && null != A && " (".concat(A, ")")]
+      children: [x(), R && null != A && " (".concat(A, ")")]
     })]
   })
 }

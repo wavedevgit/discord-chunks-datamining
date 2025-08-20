@@ -1,29 +1,30 @@
-/** Chunk was on 66181 **/
-/** chunk id: 240351, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 240351, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => l
+  Z: () => s
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk481060 = require("./481060.js"),
   Chunk858719 = require("./858719.js"),
   Chunk548564 = require("./548564.js");
-let l = e => {
+let s = e => {
   let {
     header: t,
     displayType: n
-  } = e, l = (0, s.C7)(n), o = (0, s.A)(n);
-  return (0, i.jsxs)("div", {
-    className: a.counter,
-    children: [(0, i.jsx)(r.X6q, {
+  } = e, s = (0, a.C7)(n) > 0 ? "text-brand" : "text-muted", l = (0, a.A)(n);
+  return (0, r.jsxs)("div", {
+    className: o.counter,
+    children: [(0, r.jsx)(i.X6q, {
       variant: "heading-xxl/medium",
-      color: l > 0 ? "text-brand" : "text-muted",
-      children: (0, i.jsx)(r.y5t, {
-        children: o
+      color: s,
+      children: (0, r.jsx)(i.y5t, {
+        children: l
       })
-    }), (0, i.jsx)(r.Text, {
+    }), (0, r.jsx)(i.Text, {
       variant: "text-sm/semibold",
-      className: a.counterText,
+      className: o.counterText,
       children: t
     })]
   })

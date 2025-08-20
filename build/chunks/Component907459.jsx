@@ -2,7 +2,7 @@
 /** chunk id: 907459, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => x
+  Z: () => L
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -52,7 +52,7 @@ let w = () => {
     let {
       markAsDismissed: t
     } = e, n = () => {
-      null == t || t(N.L.DISMISS), (0, m.Ll)(), (0, I.O)()
+      null == t || t(C.L.DISMISS), (0, m.Ll)(), (0, I.O)()
     };
     return (0, r.jsxs)("div", {
       className: P.editorHeader,
@@ -75,12 +75,12 @@ let w = () => {
       })]
     })
   },
-  L = e => {
+  x = e => {
     let {
       isCoachmark: t,
       markAsDismissed: n
     } = e, i = (0, s.e7)([T.Z], () => T.Z.isUpsellPreview), a = () => {
-      null == n || n(N.L.DISMISS), (0, m.Ll)(), (0, I.O)(), t || d.Z.open()
+      null == n || n(C.L.DISMISS), (0, m.Ll)(), (0, I.O)(), t || d.Z.open()
     };
     return (0, r.jsxs)("div", {
       className: P.editorFooter,
@@ -93,7 +93,7 @@ let w = () => {
     })
   };
 
-function x(e) {
+function L(e) {
   let {
     isCoachmark: t,
     markAsDismissed: n
@@ -108,7 +108,7 @@ function x(e) {
   })), g = m.oq.getState().activePanel === m.wh.APP_ICON;
   i.useEffect(() => {
     c && O.default.track(A.rMx.PREMIUM_UPSELL_VIEWED, {
-      type: C.cd.APP_ICON_UPSELL,
+      type: N.cd.APP_ICON_UPSELL,
       location_stack: a
     })
   }, [c, a]);
@@ -130,7 +130,7 @@ function x(e) {
             className: P.selectionGroup,
             isEditor: true
           })
-        }), (0, r.jsx)(L, {
+        }), (0, r.jsx)(x, {
           markAsDismissed: n,
           isCoachmark: t
         })]

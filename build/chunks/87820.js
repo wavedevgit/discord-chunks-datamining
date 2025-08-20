@@ -1,13 +1,14 @@
-/** Chunk was on 66181 **/
-/** chunk id: 87820, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 87820, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  r: () => a
+  r: () => o
 });
 var Chunk647438 = require("./647438.js"),
   Chunk88658 = require("./88658.js"),
   Chunk695346 = require("./695346.js");
 
-function a() {
+function o() {
   let e = Chunk695346.xq.useSetting(),
     t = Chunk647438.useMemo(() => (0, Chunk88658.bL)(module), [module]);
   return exports.mutualGuilds && !exports.all

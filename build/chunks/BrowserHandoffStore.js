@@ -59,10 +59,10 @@ function A(e) {
   a = new _.Z(e.user)
 }
 
-function N() {
+function C() {
   v()
 }
-class C extends(o = Chunk442837.ZP.Store) {
+class N extends(o = Chunk442837.ZP.Store) {
   initialize() {
     false !== Chunk433517.K.get(E) && (b = Chunk358085.isPlatformEmbedded && "stable" === window.GLOBAL_ENV.RELEASE_CHANNEL)
   }
@@ -76,15 +76,15 @@ class C extends(o = Chunk442837.ZP.Store) {
     return i
   }
 }
-g(C, "displayName", "BrowserHandoffStore");
-let R = new C(Chunk570140.Z, {
+g(N, "displayName", "BrowserHandoffStore");
+let R = new N(Chunk570140.Z, {
   RPC_SERVER_READY: I,
   BROWSER_HANDOFF_BEGIN: T,
   BROWSER_HANDOFF_FROM_APP: S,
   BROWSER_HANDOFF_UNAVAILABLE: v,
   BROWSER_HANDOFF_SET_USER: A,
-  LOGIN: N,
-  LOGIN_SUCCESS: N,
-  LOGOUT: N,
-  REGISTER: N
+  LOGIN: C,
+  LOGIN_SUCCESS: C,
+  LOGOUT: C,
+  REGISTER: C
 })

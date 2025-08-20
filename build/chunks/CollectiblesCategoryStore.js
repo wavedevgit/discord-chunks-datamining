@@ -33,41 +33,41 @@ let m = new Map,
   T = [],
   S = b,
   A = y,
-  N = null,
-  C = false,
+  C = null,
+  N = false,
   R = new Set,
   P = new Map,
   w = new Map,
   D = {},
-  L = 0,
-  x = e => {
+  x = 0,
+  L = e => {
     let {
       skuId: t
     } = e;
     (R = new Set(R)).add(t), (P = new Map(P)).delete(t), (w = new Map(w)).delete(t)
   },
-  M = e => {
+  j = e => {
     let {
       skuId: t,
       error: n
     } = e;
     (R = new Set(R)).delete(t), (P = new Map(P)).set(t, n), (w = new Map(w)).set(t, Date.now())
   },
-  k = e => {
+  M = e => {
     let {
       skuId: t,
       product: n
     } = e;
     v.set(t, n), (R = new Set(R)).delete(t), (P = new Map(P)).delete(t), (w = new Map(w)).delete(t)
   },
-  j = e => {
-    C = true, r = true, a = true, D = e.options
+  k = e => {
+    N = true, r = true, a = true, D = e.options
   },
   U = e => {
     let {
       error: t
     } = e;
-    O = m, v = g, A = y, C = false, R = new Set, r = t, a = Date.now()
+    O = m, v = g, A = y, N = false, R = new Set, r = t, a = Date.now()
   },
   G = e => {
     if (0 === e.categories.length) O = m, v = g;
@@ -78,19 +78,19 @@ let m = new Map,
         !t.has(r) && (null == e.unpublishedAt || e.unpublishedAt > n) && t.set(r, e)
       }), S = new Map([...(O = t).values()].map(e => [e.storeListingId, e])), v = new Map((0, _.Cs)(O, true).map(e => [e.skuId, e])), T = [...(I = new Map((0, _.Cs)(O, false).map(e => [e.storeListingId, e]))).values()]
     }
-    V(e.categories, v), i = Date.now(), C = false, r = true, a = true
+    Z(e.categories, v), i = Date.now(), N = false, r = true, a = true
   },
   B = e => {
     if (0 === e.shopHome.categories.length) return;
     let t = new Map(e.shopHome.categories.map(e => [e.skuId, e]));
     S = new Map([...(O = new Map([...O, ...t])).values()].map(e => [e.storeListingId, e])), v = new Map((0, _.Cs)(O, true).map(e => [e.skuId, e]))
   },
-  V = (e, t) => {
+  Z = (e, t) => {
     if (0 === e.length) {
       A = y;
       return
     }
-    switch (N) {
+    switch (C) {
       case d.u.POPULAR:
         A = p.HU;
         break;
@@ -102,10 +102,10 @@ let m = new Map,
         A = y
     }
   },
-  F = () => {
-    O = m, v = g, A = y, i = true, C = false, R = new Set, r = true, a = true, D = {}, L = 0
+  V = () => {
+    O = m, v = g, A = y, i = true, N = false, R = new Set, r = true, a = true, D = {}, x = 0
   },
-  Z = () => {
+  F = () => {
     if (!Chunk353926.Z.hasLoadedExperiments) return;
     let {
       giftRecommendationAlgorithm: e
@@ -114,17 +114,17 @@ let m = new Map,
     }, {
       autoTrackExposure: false
     });
-    module !== N && (i = true), N = module
+    module !== C && (i = true), C = module
   },
   H = e => {
-    L = e.skipNumCategories
+    x = e.skipNumCategories
   };
 class Y extends(o = Chunk442837.ZP.Store) {
   initialize() {
-    this.syncWith([Chunk706454.default], F), this.syncWith([Chunk353926.Z], Z)
+    this.syncWith([Chunk706454.default], V), this.syncWith([Chunk353926.Z], F)
   }
   get isFetchingCategories() {
-    return C
+    return N
   }
   isFetchingProduct(e) {
     return null != e && R.has(e)
@@ -154,7 +154,7 @@ class Y extends(o = Chunk442837.ZP.Store) {
     return A
   }
   get skipNumCategories() {
-    return L
+    return x
   }
   getCategory(e) {
     return null != e ? O.get(e) : true
@@ -184,13 +184,13 @@ class Y extends(o = Chunk442837.ZP.Store) {
 }
 h(Y, "displayName", "CollectiblesCategoryStore");
 let W = new Y(Chunk570140.Z, {
-  COLLECTIBLES_CATEGORIES_FETCH: j,
+  COLLECTIBLES_CATEGORIES_FETCH: k,
   COLLECTIBLES_CATEGORIES_FETCH_SUCCESS: G,
   COLLECTIBLES_CATEGORIES_FETCH_FAILURE: U,
-  COLLECTIBLES_PRODUCT_FETCH: x,
-  COLLECTIBLES_PRODUCT_FETCH_SUCCESS: k,
-  COLLECTIBLES_PRODUCT_FETCH_FAILURE: M,
+  COLLECTIBLES_PRODUCT_FETCH: L,
+  COLLECTIBLES_PRODUCT_FETCH_SUCCESS: M,
+  COLLECTIBLES_PRODUCT_FETCH_FAILURE: j,
   COLLECTIBLES_SHOP_HOME_FETCH_SUCCESS: B,
   COLLECTIBLES_SKIP_NUM_CATEGORIES: H,
-  LOGOUT: F
+  LOGOUT: V
 })

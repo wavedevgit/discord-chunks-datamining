@@ -1,12 +1,13 @@
-/** Chunk was on 66181 **/
-/** chunk id: 406174, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 406174, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => f
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -14,48 +15,48 @@ var Chunk120356 = require("./120356.js"),
   Chunk903163 = require("./903163.js"),
   Chunk834300 = require("./834300.js");
 
-function m(e) {
+function f(e) {
   let {
     onClickManageSubscription: t,
     count: n
   } = e;
-  return (0, i.jsxs)("div", {
-    children: [(0, i.jsx)(l.X6q, {
+  return (0, r.jsxs)("div", {
+    children: [(0, r.jsx)(s.X6q, {
       variant: "heading-md/bold",
-      children: o.intl.string(o.t["KzCF//"])
-    }), (0, i.jsx)(l.LZC, {
+      children: l.intl.string(l.t["KzCF//"])
+    }), (0, r.jsx)(s.LZC, {
       size: 4
-    }), (0, i.jsx)(l.Text, {
+    }), (0, r.jsx)(s.Text, {
       variant: "text-md/normal",
       className: c.sectionDescription,
-      children: o.intl.string(o.t["3D7qCg"])
-    }), (0, i.jsx)(l.LZC, {
+      children: l.intl.string(l.t["3D7qCg"])
+    }), (0, r.jsx)(s.LZC, {
       size: 24
-    }), (0, i.jsxs)("div", {
-      className: s()(d.guildBoostingSubscriptionRow, c.card),
-      children: [(0, i.jsx)("img", {
-        src: u,
+    }), (0, r.jsxs)("div", {
+      className: a()(u.guildBoostingSubscriptionRow, c.card),
+      children: [(0, r.jsx)("img", {
+        src: d,
         alt: "",
         className: c.handImage
-      }), (0, i.jsxs)("div", {
+      }), (0, r.jsxs)("div", {
         className: c.textContainer,
-        children: [(0, i.jsx)(l.X6q, {
+        children: [(0, r.jsx)(s.X6q, {
           variant: "heading-xl/semibold",
           className: c.header,
-          children: o.intl.string(o.t["KzCF//"])
-        }), (0, i.jsx)(l.Text, {
+          children: l.intl.string(l.t["KzCF//"])
+        }), (0, r.jsx)(s.Text, {
           variant: "text-md/normal",
           className: c.description,
-          children: o.intl.format(o.t["m+pcOD"], {
+          children: l.intl.format(l.t["m+pcOD"], {
             numSubscriptions: n
           })
         })]
-      }), (0, i.jsx)(a.zx, {
-        color: a.zx.Colors.CUSTOM,
-        size: a.zx.Sizes.SMALL,
+      }), (0, r.jsx)(o.zx, {
+        color: o.zx.Colors.CUSTOM,
+        size: o.zx.Sizes.SMALL,
         className: c.manageSubscriptionsButton,
         onClick: t,
-        children: o.intl.string(o.t["3a8Xxs"])
+        children: l.intl.string(l.t["3a8Xxs"])
       })]
     })]
   })

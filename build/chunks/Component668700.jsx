@@ -36,7 +36,7 @@ function I(e) {
     onClose: S
   } = e, {
     themeType: A
-  } = (0, m.z)(), N = (0, p.Z)(I), C = (0, s.ZP)(I), {
+  } = (0, m.z)(), C = (0, p.Z)(I), N = (0, s.ZP)(I), {
     canViewChannel: R,
     canConnect: P
   } = (0, i.cj)([_.Z], () => ({
@@ -67,7 +67,7 @@ function I(e) {
         color: "text-secondary",
         lineClamp: 1,
         children: (0, r.jsx)(l.Z, {
-          children: C
+          children: N
         })
       });
       let e = e => {
@@ -83,12 +83,12 @@ function I(e) {
           color: "text-secondary",
           lineClamp: 1,
           children: (0, r.jsx)(l.Z, {
-            children: C
+            children: N
           })
         })
       })
     },
-    L = A !== b.l.MODAL && A !== b.l.MODAL_V2 && A !== b.l.SIDEBAR;
+    x = A !== b.l.MODAL && A !== b.l.MODAL_V2 && A !== b.l.SIDEBAR;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(h.Z, {
       className: O.voiceChannelDivider
@@ -106,7 +106,7 @@ function I(e) {
           className: O.voiceIcon
         }), D()]
       }), (0, r.jsx)(c.Z, {
-        users: N,
+        users: C,
         guildId: n.id,
         channelId: I.id,
         maxUsers: v,
@@ -119,7 +119,7 @@ function I(e) {
           })
         },
         onUserClick: e => e.stopPropagation(),
-        disableUserPopout: !!L || (e => e === t.id),
+        disableUserPopout: !!x || (e => e === t.id),
         "aria-label": y.intl.string(y.t.jNqDh4)
       })]
     })]

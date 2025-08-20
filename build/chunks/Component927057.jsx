@@ -1,7 +1,8 @@
-/** Chunk was on 30243 **/
-/** chunk id: 927057, original params: e,t,r (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 927057, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => b
+  Z: () => p
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -15,29 +16,29 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk111566 = require("./111566.js");
 
-function b(e) {
+function p(e) {
   var t;
   let {
-    channelTypes: r
-  } = e, b = (0, s.CJ)(), m = null == b || null == (t = b.message) ? true : t.getChannelId(), O = a.Z.getChannel(m), y = c.Z.getGuild(null == O ? true : O.getGuildId()), j = l.useMemo(() => (0, u.tx)(e.defaultValues, null == y ? true : y.id, r), [e.defaultValues, y, r]);
-  return (0, n.jsx)(d.ZP, {
+    channelTypes: n
+  } = e, p = (0, c.CJ)(), h = null == p || null == (t = p.message) ? true : t.getChannelId(), m = s.Z.getChannel(h), g = l.Z.getGuild(null == m ? true : m.getGuildId()), E = e => (0, u.af)(e, h, n), b = (e, t) => {
+    let n = s.Z.getChannel(null == e ? true : e.value);
+    if (null == n) return null;
+    let i = n.type === f.d4z.GUILD_CATEGORY ? a.ROc : (0, o.KS)(n);
+    return null != i ? (0, r.jsx)(i, {
+      size: "custom",
+      color: "currentColor",
+      width: t,
+      height: t
+    }) : null
+  }, y = e => (0, r.jsx)("span", {
+    className: _.label,
+    children: e.label
+  }), O = i.useMemo(() => (0, u.tx)(e.defaultValues, null == g ? true : g.id, n), [e.defaultValues, g, n]);
+  return (0, r.jsx)(d.ZP, {
     selectActionComponent: e,
-    queryOptions: e => (0, u.af)(e, m, r),
-    renderIcon: (e, t) => {
-      let r = a.Z.getChannel(null == e ? true : e.value);
-      if (null == r) return null;
-      let l = r.type === p.d4z.GUILD_CATEGORY ? i.ROc : (0, o.KS)(r);
-      return null != l ? (0, n.jsx)(l, {
-        size: "custom",
-        color: "currentColor",
-        width: t,
-        height: t
-      }) : null
-    },
-    renderOptionLabel: e => (0, n.jsx)("span", {
-      className: f.label,
-      children: e.label
-    }),
-    defaultValues: j
+    queryOptions: E,
+    renderIcon: b,
+    renderOptionLabel: y,
+    defaultValues: O
   })
 }

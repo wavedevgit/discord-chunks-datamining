@@ -1,4 +1,4 @@
-/** Chunk was on 19157 **/
+/** Chunk was on 33648 **/
 /** chunk id: 895442, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => o
@@ -8,23 +8,23 @@ var Chunk592125 = require("./592125.js"),
   Chunk594174 = require("./594174.js"),
   Chunk981631 = require("./981631.js");
 
-function s(e) {
+function i(e) {
   if (!e.isPrivate()) {
     let t = r.Z.getGuild(e.guild_id);
-    return null != t && t.features.has(a.oNc.INTERNAL_EMPLOYEE_ONLY)
+    return null != t && t.features.has(s.oNc.INTERNAL_EMPLOYEE_ONLY)
   }
   return e.recipients.every(e => {
-    let t = i.default.getUser(e);
+    let t = a.default.getUser(e);
     return null != t && t.isStaff()
   })
 }
 
 function o(e, t) {
   var n;
-  if (!(null == (n = i.default.getCurrentUser()) ? true : n.isStaff())) returnfalse;
+  if (!(null == (n = a.default.getCurrentUser()) ? true : n.isStaff())) returnfalse;
   let r = l.Z.getChannel(e.channel_id);
-  return null != r && !!s(r) && t.some(e => {
+  return null != r && !!i(r) && t.some(e => {
     let t = l.Z.getChannel(e);
-    return !(null == t || t.isPrivate()) && !s(t)
+    return !(null == t || t.isPrivate()) && !i(t)
   })
 }

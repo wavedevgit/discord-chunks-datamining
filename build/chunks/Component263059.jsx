@@ -2,7 +2,7 @@
 /** chunk id: 263059, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => j
+  Z: () => k
 }), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -37,7 +37,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk671955 = require("./671955.js"),
   Chunk704543 = require("./704543.js");
 
-function M(e, t, n) {
+function j(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -46,66 +46,66 @@ function M(e, t, n) {
   }) : e[t] = n, e
 }
 
-function k(e) {
+function M(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      M(e, t, n[t])
+      j(e, t, n[t])
     })
   }
   return e
 }
 
-function j(e) {
+function k(e) {
   var t;
   let {
     user: n,
     currentUser: a,
-    activity: M,
-    profileGuildId: j,
+    activity: j,
+    profileGuildId: k,
     className: U,
     onClose: G
-  } = e, B = (0, p.Dt)(), V = (0, p.Dt)(), F = i.useRef(null), {
-    themeType: Z
+  } = e, B = (0, p.Dt)(), Z = (0, p.Dt)(), V = i.useRef(null), {
+    themeType: F
   } = (0, I.z)(), {
     interactionSource: H,
     interactionSourceId: Y
   } = (0, y.Xo)(), W = (0, _.Z)({
-    activity: M,
+    activity: j,
     user: n
-  }), K = (0, E.Z)(M), z = null != K.text && "" !== K.text, {
+  }), K = (0, E.Z)(j), z = null != K.text && "" !== K.text, {
     largeImage: q
-  } = (0, d.FO)(M), {
+  } = (0, d.FO)(j), {
     analyticsLocations: X
   } = (0, u.ZP)(c.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), Q = (0, m.Z)({
     display: "live",
     user: n,
-    activity: M,
+    activity: j,
     entry: W,
     analyticsLocations: X
   }), J = (0, g.Z)({
     userId: n.id,
     onAction: Q
   });
-  if (!(0, l.Z)(M)) return null;
+  if (!(0, l.Z)(j)) return null;
   let $ = () => {
       var e, t;
-      let a = null != (t = null == (e = M.state) ? true : e.split(";")) ? t : [];
-      return 0 === a.length ? null : null == M.sync_id ? (0, r.jsx)(C.Z, {
+      let a = null != (t = null == (e = j.state) ? true : e.split(";")) ? t : [];
+      return 0 === a.length ? null : null == j.sync_id ? (0, r.jsx)(N.Z, {
         variant: "text-xs/normal",
         text: a.join(", ")
-      }) : (0, r.jsx)(C.Z, {
+      }) : (0, r.jsx)(N.Z, {
         variant: "text-xs/normal",
         text: a.map((e, t) => (0, r.jsxs)(i.Fragment, {
           children: [(0, r.jsx)(s.P3F, {
-            className: o()(x.clickableText, x.inline),
+            className: o()(L.clickableText, L.inline),
             onClick: e => {
               e.stopPropagation(), Q({
                 action: "OPEN_SPOTIFY_ARTIST"
-              }), (0, h.d$)(M, n.id, t)
+              }), (0, h.d$)(j, n.id, t)
             },
             children: e
           }), t < a.length - 1 ? ", " : ""]
@@ -115,7 +115,7 @@ function j(e) {
     ee = () => {
       let {
         timestamps: e
-      } = M;
+      } = j;
       if (null == e) return null;
       let {
         start: t,
@@ -127,35 +127,35 @@ function j(e) {
       })
     },
     et = () => n.id === a.id ? null : (0, r.jsx)("div", {
-      className: x.actions,
+      className: L.actions,
       children: (0, r.jsx)(P.Z, {
         user: n,
-        activity: M,
+        activity: j,
         onAction: Q
       })
     });
-  if (null === Z) return null;
-  let en = null != (t = M.application_id) ? t : M.name,
+  if (null === F) return null;
+  let en = null != (t = j.application_id) ? t : j.name,
     er = H === D.n_.ACTIVITY && Y === en;
   return (0, r.jsx)(u.Gt, {
     value: X,
     children: (0, r.jsx)(T.Z, {
-      targetElementRef: F,
+      targetElementRef: V,
       sourceType: D.n_.ACTIVITY,
       user: n,
       children: (0, r.jsx)(O.Z, {
         user: n,
-        guildId: j,
-        themeType: Z,
+        guildId: k,
+        themeType: F,
         sourceId: en,
-        sourceDetails: null == W ? (0, b.Z)(M) : null,
+        sourceDetails: null == W ? (0, b.Z)(j) : null,
         entry: W,
         sourceType: D.n_.ACTIVITY,
         onAction: Q,
         children: () => (0, r.jsx)(v.Z, {
-          ref: F,
+          ref: V,
           user: n,
-          className: x.toolbarContainer,
+          className: L.toolbarContainer,
           sourceType: D.n_.ACTIVITY,
           interactionSourceId: en,
           onAction: Q,
@@ -165,7 +165,7 @@ function j(e) {
           renderMoreButtonPopout: e => (0, r.jsx)(w.Z, {
             display: "live",
             user: n,
-            activity: M,
+            activity: j,
             entry: W,
             onClose: G,
             children: e
@@ -173,47 +173,47 @@ function j(e) {
           children: (0, r.jsxs)(A.Z, {
             ref: J,
             className: o()(U, {
-              [x.hoisted]: er
+              [L.hoisted]: er
             }),
             onAction: Q,
             onClose: G,
-            "aria-labelledby": z ? "".concat(V, " ").concat(B) : B,
-            children: [(0, r.jsx)(N.Z, k({
-              textId: V
+            "aria-labelledby": z ? "".concat(Z, " ").concat(B) : B,
+            children: [(0, r.jsx)(C.Z, M({
+              textId: Z
             }, K)), (0, r.jsx)("div", {
-              className: x.body,
+              className: L.body,
               children: (0, r.jsxs)("div", {
-                className: x.content,
+                className: L.content,
                 children: [(0, r.jsx)(f.E, {
                   image: q,
-                  size: Z === L.l.MODAL_V2 ? f.J.SIZE_100 : f.J.SIZE_60,
-                  className: x.clickableImage,
+                  size: F === x.l.MODAL_V2 ? f.J.SIZE_100 : f.J.SIZE_60,
+                  className: L.clickableImage,
                   onClick: e => {
                     e.stopPropagation(), Q({
                       action: "OPEN_SPOTIFY_ALBUM"
-                    }), (0, h.Z5)(M, n.id)
+                    }), (0, h.Z5)(j, n.id)
                   }
                 }), (0, r.jsxs)("div", {
-                  className: x.details,
+                  className: L.details,
                   children: [(0, r.jsxs)("div", {
-                    children: [(0, r.jsx)(C.f, {
+                    children: [(0, r.jsx)(N.f, {
                       variant: "heading-sm/semibold",
-                      text: M.details,
+                      text: j.details,
                       onClick: () => {
                         Q({
                           action: "OPEN_SPOTIFY_TRACK"
-                        }), (0, h.aG)(M)
+                        }), (0, h.aG)(j)
                       },
                       id: B
                     }), $()]
                   }), (0, r.jsx)(S.Z, {
                     user: n,
-                    activity: M,
-                    className: x.badges
-                  }), ee(), Z === L.l.MODAL_V2 && et()]
-                }), Z === L.l.MODAL && et()]
+                    activity: j,
+                    className: L.badges
+                  }), ee(), F === x.l.MODAL_V2 && et()]
+                }), F === x.l.MODAL && et()]
               })
-            }), Z !== L.l.MODAL && Z !== L.l.MODAL_V2 && et()]
+            }), F !== x.l.MODAL && F !== x.l.MODAL_V2 && et()]
           })
         })
       })

@@ -1,10 +1,10 @@
-/** Chunk was on 31930 **/
-/** chunk id: 18036, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 18036, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => f
+  Z: () => g
 }), require("./388685.js");
-var i, Chunk442837 = require("./442837.js"),
+var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk592125 = require("./592125.js"),
   Chunk944486 = require("./944486.js"),
@@ -18,9 +18,10 @@ function c(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let u = {},
+let u = 50,
   d = {},
-  h = {};
+  f = {},
+  _ = {};
 
 function p() {
   let e = Chunk944486.Z.getChannelId();
@@ -28,26 +29,34 @@ function p() {
   let t = Chunk592125.Z.getChannel(module);
   if (null == exports || null == exports.guild_id) return;
   let n = exports.guild_id;
-  if (null == h[module] && (h[module] = 0), exports.isThread() || Chunk9156.ZP.isOptInEnabled(require) && !Chunk9156.ZP.isChannelOrParentOptedIn(require, exports.id)) {
-    delete h[module], null != u[require] && u[require].delete(module);
+  if (null == _[module] && (_[module] = 0), exports.isThread() || Chunk9156.ZP.isOptInEnabled(require) && !Chunk9156.ZP.isChannelOrParentOptedIn(require, exports.id)) {
+    delete _[module], null != d[require] && d[require].delete(module);
     return
   }
-  return (h[module]++, null == u[require] && (u[require] = new Set), Chunk9156.ZP.isFavorite(require, module)) ? void u[require].delete(module) : (null == d[require] || !d[require].has(module)) && h[module] > 50 ? (u[require].add(module), true) : true
+  return (_[module]++, null == d[require] && (d[require] = new Set), Chunk9156.ZP.isFavorite(require, module)) ? void d[require].delete(module) : (null == f[require] || !f[require].has(module)) && _[module] > u ? (d[require].add(module), true) : true
 }
-class g extends(i = Chunk442837.ZP.PersistedStore) {
+
+function h(e) {
+  let {
+    guildId: t,
+    channelId: n
+  } = e;
+  return null == f[t] && (f[t] = new Set), f[t].add(n), d[t].delete(n), true
+}
+class m extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     var t, n;
-    if (this.syncWith([o.Z], p), null == e) return;
+    if (this.syncWith([s.Z], p), null == e) return;
     let {
-      suggestedChannels: i,
-      dismissedSuggestions: r,
-      channelOpensByChannelId: s
+      suggestedChannels: r,
+      dismissedSuggestions: i,
+      channelOpensByChannelId: a
     } = e;
-    if (null != i)
-      for (let e in i) t = new Set(i[e]), u[e] = true !== t ? t : new Set;
     if (null != r)
-      for (let e in r) n = new Set(r[e]), d[e] = true !== n ? n : new Set;
-    h = null != s ? s : {}
+      for (let e in r) t = new Set(r[e]), d[e] = true !== t ? t : new Set;
+    if (null != i)
+      for (let e in i) n = new Set(i[e]), f[e] = true !== n ? n : new Set;
+    _ = null != a ? a : {}
   }
   getSuggestedChannelId(e) {
     return null
@@ -60,13 +69,7 @@ class g extends(i = Chunk442837.ZP.PersistedStore) {
     }
   }
 }
-c(g, "displayName", "FavoritesSuggestionStore"), c(g, "persistKey", "FavoritesSuggestionStore");
-let f = new g(Chunk570140.Z, {
-  DISMISS_FAVORITE_SUGGESTION: function(e) {
-    let {
-      guildId: t,
-      channelId: n
-    } = e;
-    return null == d[t] && (d[t] = new Set), d[t].add(n), u[t].delete(n), true
-  }
+c(m, "displayName", "FavoritesSuggestionStore"), c(m, "persistKey", "FavoritesSuggestionStore");
+let g = new m(Chunk570140.Z, {
+  DISMISS_FAVORITE_SUGGESTION: h
 })

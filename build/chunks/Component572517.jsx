@@ -1,4 +1,4 @@
-/** Chunk was on 54433 **/
+/** Chunk was on 54400 **/
 /** chunk id: 572517, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   c: () => x
@@ -20,28 +20,28 @@ function x() {
   let n = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion),
     t = (0, Chunk410030.ZP)(),
     x = (0, Chunk780384.wj)(require),
-    h = (0, Chunk347896.Z)(),
-    j = null == h ? true : h.planSelectionBanner,
+    _ = (0, Chunk347896.Z)(),
+    f = null == _ ? true : _.planSelectionBanner,
     {
-      claimableRewards: f
+      claimableRewards: h
     } = (0, Chunk987209.wD)();
-  if (null == j || null == f) return null;
-  let m = null == (e = j.gradientConfig) ? true : module.call(j, {
+  if (null == f || null == h) return null;
+  let j = null == (e = f.gradientConfig) ? true : module.call(f, {
       isDarkMode: x,
       isAndroid: false
     }),
-    _ = (0, Chunk717401.Tl)(m);
+    L = (0, Chunk717401.Tl)(j);
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk432483.promotionalFooterBanner,
-    style: _,
+    style: L,
     children: [(0, Chunk951288.jsx)(Chunk897942.Z, {
-      claimableRewards: f,
-      maxRewardImageSrc: j.getImageUrl(x, exports),
+      claimableRewards: h,
+      maxRewardImageSrc: f.getImageUrl(x, exports),
       size: Chunk481060.EFr.SIZE_40
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-md/medium",
       className: Chunk432483.bannerText,
-      children: j.desktopBannerText(f.length)
+      children: f.desktopBannerText(h.length)
     })]
   })
 }

@@ -164,12 +164,12 @@ let ec = e => {
       application: t,
       isVisible: n
     } = e, i = () => {
-      null != t.terms_of_service_url && (0, Z.q)({
+      null != t.terms_of_service_url && (0, F.q)({
         href: t.terms_of_service_url,
         shouldConfirm: true
       })
     }, a = () => {
-      null != t.privacy_policy_url && (0, Z.q)({
+      null != t.privacy_policy_url && (0, F.q)({
         href: t.privacy_policy_url,
         shouldConfirm: true
       })
@@ -218,23 +218,23 @@ let ec = e => {
       disclosures: d,
       locale: p,
       id: g
-    } = e, b = a.id, I = i.useMemo(() => M.ZP.createFromServer(a), [a]), T = (0, F.yE)(I.flags, $.udG.EMBEDDED), S = (0, _.e7)([q.Z], () => {
+    } = e, b = a.id, I = i.useMemo(() => j.ZP.createFromServer(a), [a]), T = (0, V.yE)(I.flags, $.udG.EMBEDDED), S = (0, _.e7)([q.Z], () => {
       var e, t, n, r;
       return null == (r = q.Z.settings.applications) || null == (n = r.appSettings) || null == (t = n[b]) || null == (e = t.appDmSettings) ? true : e.allowMobilePush
-    }, [b]), A = C.w.useExperiment({
+    }, [b]), A = N.w.useExperiment({
       location: "oauth2_authorize"
-    }), P = a.bot, k = (0, _.e7)([j.Z], () => j.Z.getDMFromUserId(null == P ? true : P.id)), {
+    }), P = a.bot, M = (0, _.e7)([k.Z], () => k.Z.getDMFromUserId(null == P ? true : P.id)), {
       appDMChannelMuteConfig: U,
       dmChannelMuted: G
-    } = (0, _.cj)([B.ZP], () => null == k ? {
+    } = (0, _.cj)([B.ZP], () => null == M ? {
       appDMChannelMuteConfig: null,
       dmChannelMuted: false
     } : {
-      appDMChannelMuteConfig: B.ZP.getChannelMuteConfig(null, k),
-      dmChannelMuted: B.ZP.isChannelMuted(null, k)
-    }), [Z, W] = i.useState(false), [K, Q] = i.useState(false), ea = () => {
+      appDMChannelMuteConfig: B.ZP.getChannelMuteConfig(null, M),
+      dmChannelMuted: B.ZP.isChannelMuted(null, M)
+    }), [F, W] = i.useState(false), [K, Q] = i.useState(false), ea = () => {
       let e = [];
-      for (let n of t) e.push(...(0, x.CI)(n, t)), n === f.x.APPLICATIONS_COMMANDS && e.push(et.intl.string(et.t.Ls2XRk));
+      for (let n of t) e.push(...(0, L.CI)(n, t)), n === f.x.APPLICATIONS_COMMANDS && e.push(et.intl.string(et.t.Ls2XRk));
       if (e.length > 0 || null != d && d.length > 0) return (0, r.jsx)(E.zF9, {
         className: en.appDetailsSection,
         isExpanded: K,
@@ -296,19 +296,19 @@ let ec = e => {
         className: er.markup,
         variant: "text-sm/normal",
         color: "text-default",
-        children: (0, L.parseBioReact)(a.description)
+        children: (0, x.parseBioReact)(a.description)
       })
     }, [a.description]), ef = () => {
       let e = null != a.description && "" !== a.description,
         t = null != a.terms_of_service_url || null != a.privacy_policy_url;
       return e || t ? (0, r.jsx)(E.zF9, {
         className: en.appDetailsSection,
-        isExpanded: Z,
+        isExpanded: F,
         collapsibleContent: (0, r.jsxs)("div", {
           className: en.appDetailsContent,
           children: [e && es, t && (0, r.jsx)(ed, {
             application: a,
-            isVisible: Z
+            isVisible: F
           })]
         }),
         children: e => {
@@ -318,13 +318,13 @@ let ec = e => {
           return (0, r.jsxs)(m.P, {
             className: en.appDetailsSectionHeader,
             onClick: e => {
-              W(!Z), t(e)
+              W(!F), t(e)
             },
             children: [(0, r.jsx)(E.X6q, {
               variant: "heading-sm/medium",
               color: "header-primary",
               children: et.intl.string(et.t.fcYgiY)
-            }), Z ? (0, r.jsx)(E.CJ0, {
+            }), F ? (0, r.jsx)(E.CJ0, {
               size: "md",
               color: E.TVs.colors.INTERACTIVE_NORMAL
             }) : (0, r.jsx)(E.Fbu, {
@@ -335,7 +335,7 @@ let ec = e => {
         }
       }) : null
     }, e_ = () => {
-      let e = V.ZP.getApplicationIconURL({
+      let e = Z.ZP.getApplicationIconURL({
           id: a.id,
           icon: a.icon
         }),
@@ -378,14 +378,14 @@ let ec = e => {
             allowMobilePush: e
           })
         })
-      }, z.fy.INFREQUENT_USER_ACTION), N.ZP.trackWithMetadata($.rMx.NOTIFICATION_SETTINGS_UPDATED, {
+      }, z.fy.INFREQUENT_USER_ACTION), C.ZP.trackWithMetadata($.rMx.NOTIFICATION_SETTINGS_UPDATED, {
         update_type: ee.I.AUTHORIZED_APP_DM_PUSH_NOTIFICATION,
         application_id: a.id,
         label: e ? H.ZB.Unmuted : H.ZB.Muted
       })
     }, eh = i.useCallback(async () => {
       u()(null != P, "dm channel mute setting requires having a bot user");
-      let e = k;
+      let e = M;
       null == e && (e = await y.Z.ensurePrivateChannel(P.id)), G ? O.Z.updateAppDMOverrideSettings(null, e, a.id, {
         muted: false
       }, H.ZB.Unmuted) : (0, E.ZDy)(async () => {
@@ -397,7 +397,7 @@ let ec = e => {
           applicationId: a.id
         }, n))
       })
-    }, [k, P, G, a.id]), em = () => A.enabled ? (0, r.jsxs)("div", {
+    }, [M, P, G, a.id]), em = () => A.enabled ? (0, r.jsxs)("div", {
       className: en.directMessagesSection,
       children: [(0, r.jsx)(E.X6q, {
         variant: "heading-sm/medium",

@@ -1,4 +1,4 @@
-/** Chunk was on 36499 **/
+/** Chunk was on 5665 **/
 /** chunk id: 753898, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => C
@@ -27,13 +27,13 @@ function C(e) {
   let {
     channel: x,
     children: v,
-    user: j
-  } = e, O = (0, i.e7)([s.Z], () => s.Z.useReducedMotion), E = null != (t = (0, d.ZP)(x)) ? t : "", {
+    user: O
+  } = e, j = (0, i.e7)([s.Z], () => s.Z.useReducedMotion), E = null != (t = (0, d.ZP)(x)) ? t : "", {
     avatarDecorationSrc: S,
     eventHandlers: P,
     isAnimating: I
   } = (0, g.Z)({
-    userId: null == j ? true : j.id,
+    userId: null == O ? true : O.id,
     size: o.EFr.SIZE_80,
     animateOnHover: true
   });
@@ -58,7 +58,7 @@ function C(e) {
     channelId: x.id
   }, P), C = C = {
     children: [(() => {
-      let e = !O && I;
+      let e = !j && I;
       return x.isMultiUserDM() ? (0, r.jsx)(h.v, {
         channel: x,
         editable: true,

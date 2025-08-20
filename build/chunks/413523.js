@@ -4,7 +4,7 @@
 require.d(exports, {
   Yr: () => R,
   ZP: () => w,
-  gN: () => C,
+  gN: () => N,
   sI: () => P
 }), require("./35282.js"), require("./388685.js"), require("./539854.js");
 var Chunk392711 = require("./392711.js"),
@@ -66,9 +66,9 @@ function A(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let N = "__EMBEDDED_ACTIVITIES__";
+let C = "__EMBEDDED_ACTIVITIES__";
 
-function C(e) {
+function N(e) {
   let {
     applicationId: t,
     instanceId: n
@@ -118,14 +118,14 @@ class w {
     return null != (t = this.participantByIndex.get(e)) ? t : null
   }
   updateEmbeddedActivities() {
-    return this.updateParticipant(N)
+    return this.updateParticipant(C)
   }
   hasEmbeddedActivity() {
     return this.size("ACTIVITY") > 0
   }
   updateParticipant(e) {
     let t = this.participants[e],
-      n = e === N ? this._getParticipantsForEmbeddedActivities() : this._getParticipantsForUser(e);
+      n = e === C ? this._getParticipantsForEmbeddedActivities() : this._getParticipantsForUser(e);
     return (null != t || 0 !== n.length) && (null == t || t.forEach(e => {
       this.participantByIndex.delete(e.id)
     }), n.forEach(e => {
@@ -169,7 +169,7 @@ class w {
       var n, r, i;
       return {
         type: y.fO.ACTIVITY,
-        id: C({
+        id: N({
           applicationId: e.applicationId,
           instanceId: e.compositeInstanceId
         }),
@@ -187,18 +187,18 @@ class w {
     let b, O, I = [],
       S = h.default.getUser(e);
     if (null == S) return I;
-    let N = g.Z.getVoiceStateForChannel(this.channelId, e),
-      C = g.Z.getVoicePlatformForChannel(this.channelId, e),
+    let C = g.Z.getVoiceStateForChannel(this.channelId, e),
+      N = g.Z.getVoicePlatformForChannel(this.channelId, e),
       R = f.Z.getChannel(this.channelId),
       P = null == R ? true : R.getGuildId(),
       w = null != (r = (null == (n = this.call) || null == (t = n.ringing) ? true : t.includes(e)) || this.guildRingingUsers.has(e)) && r;
-    (null != N || w) && (b = A(T({
+    (null != C || w) && (b = A(T({
       type: y.fO.USER
     }, m.Z.getUserStreamData(e, P)), {
       user: S,
       id: S.id,
-      voiceState: N,
-      voicePlatform: C,
+      voiceState: C,
+      voicePlatform: N,
       speaking: (0, a.O)({
         userId: e,
         checkIsMuted: true
@@ -222,7 +222,7 @@ class w {
       O = A(T({}, m.Z.getUserStreamData(e, P, v.Yn.STREAM), i), {
         type: r ? y.fO.HIDDEN_STREAM : y.fO.STREAM,
         id: t,
-        userVideo: null != (d = null == N ? true : N.selfVideo) && d,
+        userVideo: null != (d = null == C ? true : C.selfVideo) && d,
         user: S,
         userNick: E.ZP.getName(P, this.channelId, S),
         stream: D

@@ -1,44 +1,46 @@
-/** Chunk was on 66181 **/
-/** chunk id: 938736, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 938736, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  $s: () => c,
+  $s: () => u,
   Hg: () => d,
-  Kn: () => o
+  Kn: () => c
 });
 var Chunk704215 = require("./704215.js"),
   Chunk266454 = require("./266454.js"),
   Chunk533525 = require("./533525.js"),
   Chunk796634 = require("./796634.js"),
   Chunk388032 = require("./388032.jsx");
-let o = e => {
-    let t = (0, s.b)(e),
-      n = (0, r.Nj)(i.z.REFERRAL_PROGRAM_PREMIUM_TAB_BADGE);
-    return t && !n
+let l = e => {
+    let {
+      hasSentAll: t,
+      hasSentAtLeastOne: n,
+      helpdeskArticle: r
+    } = e;
+    return t ? s.intl.format(s.t["TYu+MD"], {
+      helpdeskArticle: r
+    }) : s.intl.format(s.t["omMr+f"], {
+      helpdeskArticle: r
+    })
   },
   c = e => {
+    let t = (0, a.b)(e),
+      n = (0, i.Nj)(r.z.REFERRAL_PROGRAM_PREMIUM_TAB_BADGE);
+    return t && !n
+  },
+  u = e => {
     let {
       hasSentAll: t
     } = e;
-    return l.intl.string(l.t.USo4s7)
+    return s.intl.string(s.t.USo4s7)
   },
   d = e => {
     let {
       helpdeskArticle: t,
       referralsStatuses: n
     } = e;
-    return (e => {
-      let {
-        hasSentAll: t,
-        hasSentAtLeastOne: n,
-        helpdeskArticle: i
-      } = e;
-      return t ? l.intl.format(l.t["TYu+MD"], {
-        helpdeskArticle: i
-      }) : l.intl.format(l.t["omMr+f"], {
-        helpdeskArticle: i
-      })
-    })({
-      hasSentAll: n.sent >= a.Q,
+    return l({
+      hasSentAll: n.sent >= o.Q,
       hasSentAtLeastOne: n.sent >= 1,
       helpdeskArticle: t
     })

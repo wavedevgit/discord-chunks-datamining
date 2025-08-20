@@ -1,7 +1,8 @@
-/** Chunk was on 11868 **/
-/** chunk id: 132144, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 132144, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  W: () => I
+  W: () => h
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -14,37 +15,38 @@ var Chunk951288 = require("./951288.js"),
   Chunk921944 = require("./921944.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js");
-let I = e => {
-  let {
-    dismissibleContent: t,
-    noticeType: n
-  } = e, I = i.useMemo(() => {
-    switch (n) {
-      case _.kVF.PREMIUM_TIER_2_TRIAL_ENDING:
-        let e = c.Z.getAlmostExpiringTrialOffers([E.Si.TIER_2]);
+let p = e => i.useMemo(() => {
+    switch (e) {
+      case f.kVF.PREMIUM_TIER_2_TRIAL_ENDING:
+        let t = l.Z.getAlmostExpiringTrialOffers([_.Si.TIER_2]);
         return {
-          cooldownDurationMs: (0, s.yg)(e[0])
+          cooldownDurationMs: (0, c.yg)(t[0])
         };
-      case _.kVF.PREMIUM_TIER_2_DISCOUNT_ENDING:
-        let t = c.Z.getAlmostExpiringDiscountOffers([E.Si.TIER_2]);
+      case f.kVF.PREMIUM_TIER_2_DISCOUNT_ENDING:
+        let n = l.Z.getAlmostExpiringDiscountOffers([_.Si.TIER_2]);
         return {
-          cooldownDurationMs: (0, s.yg)(t[0])
+          cooldownDurationMs: (0, c.yg)(n[0])
         };
       default:
         return {
           cooldownDurationMs: 1 / 0
         }
     }
-  }, [n]), [T, O] = (0, u.Tt)(t, I, d.R.NOTICE_BAR);
-  if (null == T) return null;
-  if (T === l.z.NAGBAR_NOTICE_OFFER_EXPIRING) {
-    if (n === _.kVF.PREMIUM_TIER_2_TRIAL_ENDING) return (0, r.jsx)(o.Z, {
-      dismissCurrentNotice: () => O(d.L.USER_DISMISS),
-      subscriptionTier: E.Si.TIER_2
-    });
-    if (n === _.kVF.PREMIUM_TIER_2_DISCOUNT_ENDING) return (0, r.jsx)(a.Z, {
-      dismissCurrentNotice: () => O(d.L.USER_DISMISS),
-      subscriptionTier: E.Si.TIER_2
-    })
+  }, [e]),
+  h = e => {
+    let {
+      dismissibleContent: t,
+      noticeType: n
+    } = e, i = p(n), [l, c] = (0, u.Tt)(t, i, d.R.NOTICE_BAR);
+    if (null == l) return null;
+    if (l === a.z.NAGBAR_NOTICE_OFFER_EXPIRING) {
+      if (n === f.kVF.PREMIUM_TIER_2_TRIAL_ENDING) return (0, r.jsx)(s.Z, {
+        dismissCurrentNotice: () => c(d.L.USER_DISMISS),
+        subscriptionTier: _.Si.TIER_2
+      });
+      if (n === f.kVF.PREMIUM_TIER_2_DISCOUNT_ENDING) return (0, r.jsx)(o.Z, {
+        dismissCurrentNotice: () => c(d.L.USER_DISMISS),
+        subscriptionTier: _.Si.TIER_2
+      })
+    }
   }
-}

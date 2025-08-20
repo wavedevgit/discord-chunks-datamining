@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   V: () => D,
-  Z: () => L
+  Z: () => x
 }), require("./410992.js"), require("./227481.js"), require("./730884.js"), require("./20464.js"), require("./341884.js"), require("./364341.js"), require("./629680.js"), require("./505025.js"), require("./918970.js"), require("./121784.js"), require("./644351.js"), require("./146733.js"), require("./388685.js"), require("./49124.js"), require("./997841.js");
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
@@ -65,9 +65,9 @@ let y = 20 * Chunk70956.Z.Millis.SECOND,
   T = .1,
   S = 5 * Chunk70956.Z.Millis.SECOND,
   A = 2,
-  N = 8;
+  C = 8;
 
-function C(e) {
+function N(e) {
   return e.map(e => ({
     name: e.name,
     type: e.type,
@@ -122,7 +122,7 @@ function w(e) {
 var D = function(e) {
   return e.Connecting = "connecting", e.Connect = "connect", e.Disconnect = "disconnect", e.Resuming = "resuming", e.Ready = "ready", e.Speaking = "speaking", e.Video = "video", e.Ping = "ping", e.ClientConnect = "client-connect", e.ClientDisconnect = "client-disconnect", e.Codecs = "codecs", e.MediaSessionId = "media-session-id", e.MediaSinkWants = "media-sink-wants", e.VoiceBackendVersion = "voice-backend-version", e.KeyframeInterval = "keyframe-interval", e.ChannelOptionsUpdateSecureFramesProtocol = "update-secure-frames-protocol", e.Flags = "flags", e.Platform = "platform", e.SDP = "sdp", e.Encryption = "encryption", e.BandwidthEstimationExperiment = "bandwidth-estimation-experiment", e.SecureFramesInit = "secure-frames-init", e.SecureFramesPrepareTransition = "secure-frames-prepare-transition", e.SecureFramesExecuteTransition = "secure-frames-execute-transition", e.SecureFramesPrepareEpoch = "secure-frames-prepare-epoch", e.MLSExternalSenderPackage = "mls-external-sender-package", e.MLSProposals = "mls-proposals", e.MLSPrepareCommitTransition = "mls-prepare-commit-transition", e.MLSWelcome = "mls-welcome", e
 }({});
-class L extends Chunk47770.Z {
+class x extends Chunk47770.Z {
   createWebSocket() {
     this.logger.info("[CONNECT] ".concat(this.url)), null !== this.webSocket && (this.logger.error("Connect called with already existing websocket"), this.cleanupWebSocket(e => e.close(4e3))), this.connectionStartTime = (0, Chunk379649.zO)(), this.helloTimeout = setTimeout(() => {
       let e = (0, Chunk379649.zO)() - this.connectionStartTime;
@@ -314,8 +314,8 @@ class L extends Chunk47770.Z {
     {
       let t = new Uint8Array(e.data),
         n = null;
-      this.serverVersion >= N && (n = new DataView(t.buffer).getUint16(0, false));
-      let r = 2 * (this.serverVersion >= N),
+      this.serverVersion >= C && (n = new DataView(t.buffer).getUint16(0, false));
+      let r = 2 * (this.serverVersion >= C),
         i = 1;
       return {
         op: t[r],
@@ -330,7 +330,7 @@ class L extends Chunk47770.Z {
   handleHeartbeatAck(e) {
     this.logger.info("Heartbeat ACK received");
     let t = null;
-    t = this.serverVersion >= N ? e.t : e, this.emit("ping", (0, s.zO)() - t), this.lastHeartbeatAckTime = (0, s.zO)(), this.heartbeatAck = true, null !== this.expeditedHeartbeatTimeout && (clearTimeout(this.expeditedHeartbeatTimeout), this.expeditedHeartbeatTimeout = null, this.logger.info("Expedited heartbeat succeeded"))
+    t = this.serverVersion >= C ? e.t : e, this.emit("ping", (0, s.zO)() - t), this.lastHeartbeatAckTime = (0, s.zO)(), this.heartbeatAck = true, null !== this.expeditedHeartbeatTimeout && (clearTimeout(this.expeditedHeartbeatTimeout), this.expeditedHeartbeatTimeout = null, this.logger.info("Expedited heartbeat succeeded"))
   }
   handleHeartbeatTimeout() {
     this.cleanupWebSocket(e => e.close(4e3));
@@ -343,7 +343,7 @@ class L extends Chunk47770.Z {
     }, this.heartbeatInterval)
   }
   sendHeartbeat() {
-    if (this.serverVersion >= N) {
+    if (this.serverVersion >= C) {
       var e;
       let t = null != (e = this.lastRecvSeqNum) ? module : false;
       this.logger.info("Sending heartbeat with last received sequence number: ".concat(exports)), this.send(3, {
@@ -405,14 +405,14 @@ class L extends Chunk47770.Z {
   selectProtocol(e, t, n, r) {
     let i, a = {};
     null == n ? i = null : "sdp" in n && null != n.sdp && "" !== n.sdp ? (i = n.sdp, a = m(p({}, n), {
-      codecs: C(n.codecs),
+      codecs: N(n.codecs),
       rtc_connection_id: t
     })) : "address" in n && null != n.address && "" !== n.address && n.port && null != n.mode && "" !== n.mode && (i = {
       address: n.address,
       port: n.port,
       mode: n.mode
     }, a = m(p({}, n), {
-      codecs: C(n.codecs),
+      codecs: N(n.codecs),
       rtc_connection_id: t,
       experiments: r
     })), this.send(1, p({
@@ -422,7 +422,7 @@ class L extends Chunk47770.Z {
   }
   updateSession(e) {
     this.send(14, {
-      codecs: C(e.codecs)
+      codecs: N(e.codecs)
     })
   }
   speaking(e) {

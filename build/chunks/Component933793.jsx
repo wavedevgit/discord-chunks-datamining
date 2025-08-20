@@ -1,7 +1,7 @@
-/** Chunk was on 78650 **/
-/** chunk id: 933793, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 99534 **/
+/** chunk id: 933793, original params: t,n,i (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => Z
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -15,25 +15,25 @@ var Chunk442837 = require("./442837.js"),
   Chunk176505 = require("./176505.js"),
   Chunk388032 = require("./388032.jsx");
 
-function h(e) {
-  let t = (0, r.e7)([u.Z], () => u.Z.getChannel(e.parent_id)),
-    n = (0, d.Xb)(e),
-    h = (0, o.kF)(e);
-  return (null == t ? true : t.isForumLikeChannel()) && n ? e.hasFlag(c.zZ.PINNED) ? (0, i.jsx)(l.sNh, {
+function Z(t) {
+  let n = (0, l.e7)([u.Z], () => u.Z.getChannel(t.parent_id)),
+    i = (0, s.Xb)(t),
+    Z = (0, d.kF)(t);
+  return (null == n ? true : n.isForumLikeChannel()) && i ? t.hasFlag(c.zZ.PINNED) ? (0, e.jsx)(r.sNh, {
     id: "unpin-thread",
-    label: f.intl.string(f.t.trD8am),
-    action: () => s.Z.unpin(e)
-  }) : (0, i.jsx)(l.sNh, {
+    label: h.intl.string(h.t.trD8am),
+    action: () => o.Z.unpin(t)
+  }) : (0, e.jsx)(r.sNh, {
     id: "pin-thread",
-    label: f.intl.string(f.t.EnaWho),
+    label: h.intl.string(h.t.EnaWho),
     action: function() {
-      null != h ? a.Z.show({
-        title: f.intl.string(f.t.IMbjxs),
-        body: f.intl.string(f.t["mi5+Vl"]),
+      null != Z ? a.Z.show({
+        title: h.intl.string(h.t.IMbjxs),
+        body: h.intl.string(h.t["mi5+Vl"]),
         onConfirm: async () => {
-          await s.Z.unpin(h), s.Z.pin(e)
+          await o.Z.unpin(Z), o.Z.pin(t)
         }
-      }) : s.Z.pin(e)
+      }) : o.Z.pin(t)
     }
   }) : null
 }

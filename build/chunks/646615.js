@@ -1,5 +1,6 @@
-/** Chunk was on 98464 **/
-/** chunk id: 646615, original params: e,n,t (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 646615, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   eventStatusContainer: "eventStatusContainer__29021",
   isRecurring: "isRecurring__29021",

@@ -1,7 +1,8 @@
-/** Chunk was on 69003 **/
-/** chunk id: 674680, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 674680, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => g
+  Z: () => b
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -14,25 +15,28 @@ var Chunk780384 = require("./780384.js"),
   Chunk231338 = require("./231338.js"),
   Chunk395786 = require("./395786.js");
 
-function p(e) {
+function f(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      var r;
-      r = n[t], t in e ? Object.defineProperty(e, t, {
-        value: r,
-        enumerable: true,
-        configurable: true,
-        writable: true
-      }) : e[t] = r
+      f(e, t, n[t])
     })
   }
   return e
 }
-let f = {
+let p = {
     trophy: Chunk231338.Il.PRIMARY_400,
     locked: Chunk231338.Il.PRIMARY_400,
     unlocked: Chunk231338.Il.GREEN_330
@@ -41,68 +45,71 @@ let f = {
     trophy: Chunk231338.Il.PRIMARY_400,
     locked: Chunk231338.Il.PRIMARY_400,
     unlocked: Chunk231338.Il.GREEN_330
-  };
+  },
+  m = .8,
+  g = .4,
+  E = 1;
 
-function g(e) {
+function b(e) {
   var t;
   let {
     achievementId: n,
     unlocked: u,
-    size: g = l.EFr.SIZE_40
-  } = e, m = (0, o.ZP)(), b = (0, c.oX)(n);
-  if (null == b) return null;
-  let O = (0, l.UCu)(g),
+    size: f = a.EFr.SIZE_40
+  } = e, b = (0, o.ZP)(), y = (0, c.oX)(n);
+  if (null == y) return null;
+  let O = (0, a.UCu)(f),
     {
-      name: _,
-      rarity: y
-    } = b,
+      name: v,
+      rarity: I
+    } = y,
     {
-      color: v
-    } = (0, c.F7)(y),
-    j = (0, i.wj)(m) ? f : h,
-    C = (O.size - O.offset - 2 * O.stroke) * .8,
-    E = O.size - O.stroke,
-    x = {
-      width: .4 * C,
-      height: .4 * C
+      color: T
+    } = (0, c.F7)(I),
+    S = (0, i.wj)(b) ? p : h,
+    A = (O.size - O.offset - 2 * O.stroke) * m,
+    C = O.size - O.stroke,
+    N = {
+      width: A * g,
+      height: A * g
     },
-    S = {
-      width: x.width + 1,
-      height: x.height + 1,
-      right: O.stroke + 1,
-      bottom: O.stroke + 1,
+    R = {
+      width: N.width + E,
+      height: N.height + E,
+      right: O.stroke + E,
+      bottom: O.stroke + E,
       padding: 0
     };
   return (0, r.jsxs)("div", {
     className: d.container,
     style: {
-      width: E,
-      height: E,
+      width: C,
+      height: C,
       padding: O.stroke
     },
-    "aria-label": "".concat(null != (t = _()) ? t : ""),
+    "aria-label": "".concat(null != (t = v()) ? t : ""),
     children: [(0, r.jsx)("div", {
       className: d.trophyIconContainer,
-      children: (0, r.jsx)(l.rm8, {
+      children: (0, r.jsx)(a.rm8, {
         size: "custom",
-        color: u ? v : (0, a.Lq)(j.trophy),
-        width: C,
-        height: C
+        color: u ? T : (0, s.Lq)(S.trophy),
+        width: A,
+        height: A
       })
     }), !u && (0, r.jsx)("div", {
       className: d.lockContainer,
-      style: S,
-      children: (0, r.jsx)(l.mBM, p({
+      style: R,
+      children: (0, r.jsx)(a.mBM, _({
         size: "custom",
-        color: (0, a.Lq)(j.locked)
-      }, x))
-    }), u && y === c.EP.LEGENDARY && (0, r.jsx)("div", {
+        color: (0, s.Lq)(S.locked)
+      }, N))
+    }), u && I === c.EP.LEGENDARY && (0, r.jsx)("div", {
       className: d.lockContainer,
-      style: S,
-      children: (0, r.jsx)(s.Z, p({
+      style: R,
+      children: (0, r.jsx)(l.Z, _({
         className: d.confettiIcon
-      }, x))
+      }, N))
     })]
   })
 }
-g.Sizes = Chunk481060.EFr
+b.Sizes = Chunk481060.EFr

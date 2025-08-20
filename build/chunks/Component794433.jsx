@@ -1,10 +1,11 @@
-/** Chunk was on 88360 **/
-/** chunk id: 794433, original params: e,t,a (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 794433, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  F: () => b,
-  Z: () => m
+  F: () => m,
+  Z: () => E
 }), require("./539854.js"), require("./388685.js");
-var r, l, Chunk951288 = require("./951288.js"),
+var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
@@ -14,21 +15,36 @@ var r, l, Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk599684 = require("./599684.js");
 
-function _(e, t, a) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
-    value: a,
+    value: n,
     enumerable: true,
     configurable: true,
     writable: true
-  }) : e[t] = a, e
+  }) : e[t] = n, e
 }
-let g = Object.freeze({
+
+function p(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      _(e, t, n[t])
+    })
+  }
+  return e
+}
+let h = Object.freeze({
   SMALL: Chunk599684.small,
   MEDIUM: Chunk599684.medium,
   LARGE: Chunk599684.large
 });
-var b = ((l = {}).MEMBER = "MEMBER", l.ROLE = "ROLE", l.CHANNEL = "CHANNEL", l.GUILD = "GUILD", l.USER = "USER", l);
-class f extends(r = Chunk647438.Component) {
+var m = function(e) {
+  return e.MEMBER = "MEMBER", e.ROLE = "ROLE", e.CHANNEL = "CHANNEL", e.GUILD = "GUILD", e.USER = "USER", e
+}({});
+class g extends(r = Chunk647438.Component) {
   componentDidMount() {
     let e = this.containerRef.current;
     null != module && (this.previousHeight = module.offsetHeight)
@@ -36,190 +52,179 @@ class f extends(r = Chunk647438.Component) {
   componentDidUpdate(e) {
     let {
       focusAfterReady: t,
-      isReady: a
+      isReady: n
     } = this.props;
-    t && !e.isReady && a && this.focus(), (e.tags !== this.props.tags || e.query !== this.props.query) && this.handleHeightChange()
+    t && !e.isReady && n && this.focus(), (e.tags !== this.props.tags || e.query !== this.props.query) && this.handleHeightChange()
   }
   handleHeightChange() {
     let e = this.containerRef.current;
     if (null == module) return;
     let t = module.offsetHeight,
-      a = exports - this.previousHeight;
+      n = exports - this.previousHeight;
     if (0 !== require) {
-      var r, l;
-      this.previousHeight = exports, null == (r = (l = this.props).onHeightChange) || r.call(l, require)
+      var r, i;
+      this.previousHeight = exports, null == (r = (i = this.props).onHeightChange) || r.call(Chunk951288, require)
     }
   }
   handleKeyDownGrid(e) {
     let {
       selectedRow: t,
-      selectedColumn: a,
+      selectedColumn: n,
       sections: r,
-      query: l,
-      tags: n,
+      query: i,
+      tags: a,
       onSelectionChange: o,
-      onSelect: i,
-      onRemoveTag: s,
+      onSelect: s,
+      onRemoveTag: l,
       preventEscapePropagation: c
     } = this.props;
     if (0 !== r.length) {
       switch (e.keyCode) {
         case u.yXg.BACKSPACE:
-          (null == l || 0 === l.length) && null != n && n.length > 0 && (e.preventDefault(), e.stopPropagation(), null == s || s(n.length - 1));
+          (null == i || 0 === i.length) && null != a && a.length > 0 && (e.preventDefault(), e.stopPropagation(), null == l || l(a.length - 1));
           break;
         case u.yXg.ARROW_DOWN:
-          e.preventDefault(), e.stopPropagation(), false === t ? (t = 0, a = 0) : ((t += 1) >= r.length && (t = r.length - 1), a >= r[t] && (a = r[t] - 1));
+          e.preventDefault(), e.stopPropagation(), false === t ? (t = 0, n = 0) : ((t += 1) >= r.length && (t = r.length - 1), n >= r[t] && (n = r[t] - 1));
           break;
         case u.yXg.ARROW_UP:
-          e.preventDefault(), e.stopPropagation(), (t -= 1) < 0 ? (t = 0, a = 0) : a >= r[t] && (a = r[t] - 1);
+          e.preventDefault(), e.stopPropagation(), t -= 1, t < 0 ? (t = 0, n = 0) : n >= r[t] && (n = r[t] - 1);
           break;
         case u.yXg.ARROW_LEFT:
-          e.preventDefault(), e.stopPropagation(), false === t && (t = 0), (a -= 1) < 0 && ((t -= 1) >= 0 ? a = r[t] - 1 : t < 0 && (t = 0, a = 0));
+          e.preventDefault(), e.stopPropagation(), false === t && (t = 0), n -= 1, n < 0 && ((t -= 1) >= 0 ? n = r[t] - 1 : t < 0 && (t = 0, n = 0));
           break;
         case u.yXg.ARROW_RIGHT:
-          e.preventDefault(), e.stopPropagation(), false === t && (t = 0), (a += 1) >= r[t] && (a = 0, (t += 1) >= r.length && (t = r.length - 1, a = r[t] - 1));
+          e.preventDefault(), e.stopPropagation(), false === t && (t = 0), n += 1, n >= r[t] && (n = 0, (t += 1) >= r.length && (t = r.length - 1, n = r[t] - 1));
           break;
         case u.yXg.ENTER:
-          if (e.preventDefault(), e.stopPropagation(), false === t && (t = 0), false === a && (a = 0), t >= r.length || a >= r[t]) return;
-          null != i && i(t, a, e);
+          if (e.preventDefault(), e.stopPropagation(), false === t && (t = 0), false === n && (n = 0), t >= r.length || n >= r[t]) return;
+          null != s && s(t, n, e);
           return;
         case u.yXg.ESCAPE:
-          e.preventDefault(), c && e.stopPropagation(), null != i && i(null, null, e);
+          e.preventDefault(), c && e.stopPropagation(), null != s && s(null, null, e);
           return;
         default:
           return
       }
-      null != o && o(t, a)
+      null != o && o(t, n)
     }
   }
   handleKeyDownList(e) {
     let {
       sections: t,
-      selectedSection: a,
+      selectedSection: n,
       selectedRow: r,
-      onSelect: l,
-      onSelectionChange: n,
+      onSelect: i,
+      onSelectionChange: a,
       query: o,
-      tags: i,
-      preventEscapePropagation: s
+      tags: s,
+      preventEscapePropagation: l
     } = this.props, {
       current: c
     } = this.ref;
     if (null != c) switch (e.keyCode) {
       case u.yXg.BACKSPACE:
-        if ((null == o || 0 === o.length) && null != i && i.length > 0) {
-          var d, h;
-          e.preventDefault(), e.stopPropagation(), null == (d = (h = this.props).onRemoveTag) || d.call(h, i.length - 1)
+        if ((null == o || 0 === o.length) && null != s && s.length > 0) {
+          var d, f;
+          e.preventDefault(), e.stopPropagation(), null == (d = (f = this.props).onRemoveTag) || d.call(f, s.length - 1)
         }
         break;
       case u.yXg.ARROW_DOWN:
-        e.preventDefault(), e.stopPropagation(), t.length > a && ++r >= t[a] && (++a >= t.length && (a = 0), r = 0), null == n || n(a, r);
+        e.preventDefault(), e.stopPropagation(), t.length > n && ++r >= t[n] && (++n >= t.length && (n = 0), r = 0), null == a || a(n, r);
         break;
       case u.yXg.ARROW_UP:
-        e.preventDefault(), e.stopPropagation(), --r < 0 && (--a < 0 && (a = t.length - 1), r = t[a] - 1), null == n || n(a, r);
+        e.preventDefault(), e.stopPropagation(), --r < 0 && (--n < 0 && (n = t.length - 1), r = t[n] - 1), null == a || a(n, r);
         break;
       case u.yXg.ENTER:
-        e.preventDefault(), e.stopPropagation(), t.length > a && t[a] > r && (null == l || l(a, r, e));
+        e.preventDefault(), e.stopPropagation(), t.length > n && t[n] > r && (null == i || i(n, r, e));
         break;
       case u.yXg.ESCAPE:
-        e.preventDefault(), s && e.stopPropagation(), null == l || l(null, null, e), c.blur()
+        e.preventDefault(), l && e.stopPropagation(), null == i || i(null, null, e), c.blur()
     }
   }
   render() {
     let {
       autoFocus: e,
       query: t,
-      placeholder: a = Chunk388032.intl.string(Chunk388032.t.LzcpeX),
+      placeholder: n = Chunk388032.intl.string(Chunk388032.t.LzcpeX),
       themeOverride: r,
-      disabled: l,
+      disabled: a,
       size: o,
-      maxHeight: i,
-      tags: u,
-      onActivate: g,
-      className: b,
-      inputProps: f,
-      focusAfterReady: m
-    } = this.props, E = false, y = [];
-    return null != Chunk981631 && Chunk981631.length > 0 && ("string" == typeof Chunk981631[0] ? Chunk981631.forEach((e, t) => y.push((0, n.jsxs)(c.eee, {
+      maxHeight: u,
+      tags: _,
+      onActivate: h,
+      className: m,
+      inputProps: g,
+      focusAfterReady: E
+    } = this.props, b = false, y = [];
+    return null != _ && _.length > 0 && ("string" == typeof _[0] ? _.forEach((e, t) => y.push((0, i.jsxs)(l.eee, {
       focusProps: {
         offset: 4
       },
-      className: p.tag,
+      className: f.tag,
       onClick: this.handleRemoveTag.bind(this, t),
-      children: [e, (0, n.jsx)(c.Dio, {
+      children: [e, (0, i.jsx)(l.Dio, {
         size: "md",
         color: "currentColor",
-        className: p.close,
-        "aria-label": h.intl.string(h.t.N86XcH)
+        className: f.close,
+        "aria-label": d.intl.string(d.t.N86XcH)
       })]
-    }, t))) : (E = true, Chunk981631.forEach((e, t) => y.push((0, n.jsxs)(c.eee, {
-      className: s()(p.tag, p.richTag),
+    }, t))) : (b = true, _.forEach((e, t) => y.push((0, i.jsxs)(l.eee, {
+      className: s()(f.tag, f.richTag),
       onClick: this.handleRemoveTag.bind(this, t),
-      children: [("MEMBER" === e.type || "USER" === e.type) && null != e.avatar && (0, n.jsx)(c.qEK, {
+      children: [("MEMBER" === e.type || "USER" === e.type) && null != e.avatar && (0, i.jsx)(l.qEK, {
         src: e.avatar,
         "aria-hidden": true,
-        size: c.EFr.SIZE_16
-      }), "ROLE" === e.type && null != e.color && (0, n.jsx)("span", {
-        className: p.tagRoleColor,
+        size: l.EFr.SIZE_16
+      }), "ROLE" === e.type && null != e.color && (0, i.jsx)("span", {
+        className: f.tagRoleColor,
         style: {
           backgroundColor: e.color
         }
-      }), "GUILD" === e.type && null != e.guild && (0, n.jsx)(d.Z, {
+      }), "GUILD" === e.type && null != e.guild && (0, i.jsx)(c.Z, {
         guild: e.guild,
         active: true,
-        size: d.Z.Sizes.SMOL
-      }), (0, n.jsx)("span", {
-        className: p.tagLabel,
+        size: c.Z.Sizes.SMOL
+      }), (0, i.jsx)("span", {
+        className: f.tagLabel,
         children: e.label
-      }), (0, n.jsx)(c.Dio, {
+      }), (0, i.jsx)(l.Dio, {
         size: "md",
         color: "currentColor",
-        className: p.close,
-        "aria-label": h.intl.string(h.t.N86XcH)
+        className: f.close,
+        "aria-label": d.intl.string(d.t.N86XcH)
       })]
     }, t))))), (0, Chunk951288.jsx)(Chunk481060.tEY, {
       focusTarget: this.ref,
       ringTarget: this.containerRef,
       children: (0, Chunk951288.jsx)(Chunk481060.f6W, {
         theme: r,
-        children: r => (0, n.jsx)("div", {
+        children: r => (0, i.jsx)("div", {
           ref: this.containerRef,
-          className: s()(b, p.container, o, r, {
-            [p.disabled]: l
+          className: s()(m, f.container, o, r, {
+            [f.disabled]: a
           }),
-          children: (0, n.jsxs)(c.zJl, {
-            className: p.inner,
+          children: (0, i.jsxs)(l.zJl, {
+            className: f.inner,
             style: {
-              maxHeight: i
+              maxHeight: u
             },
-            children: [y, (0, n.jsx)("input", function(e) {
-              for (var t = 1; t < arguments.length; t++) {
-                var a = null != arguments[t] ? arguments[t] : {},
-                  r = Object.keys(a);
-                "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(a).filter(function(e) {
-                  return Object.getOwnPropertyDescriptor(a, e).enumerable
-                }))), r.forEach(function(t) {
-                  _(e, t, a[t])
-                })
-              }
-              return e
-            }({
-              className: s()(p.input, {
-                [p.richTagInput]: E
+            children: [y, (0, i.jsx)("input", p({
+              className: s()(f.input, {
+                [f.richTagInput]: b
               }),
               type: "text",
               ref: this.ref,
               spellCheck: "false",
-              placeholder: a,
+              placeholder: n,
               value: t,
               onChange: this.handleChange,
               onKeyDown: this.handleKeyDown,
               onFocus: this.handleFocus,
-              disabled: l,
-              "aria-disabled": l,
-              autoFocus: !m && e,
-              onMouseDown: g
-            }, this.defaultInputProps, f))]
+              disabled: a,
+              "aria-disabled": a,
+              autoFocus: !E && e,
+              onMouseDown: h
+            }, this.defaultInputProps, g))]
           })
         })
       })
@@ -230,26 +235,26 @@ class f extends(r = Chunk647438.Component) {
       role: "combobox",
       "aria-haspopup": "listbox",
       "aria-autocomplete": "list"
-    }), _(this, "ref", o.createRef()), _(this, "containerRef", o.createRef()), _(this, "previousHeight", 0), _(this, "handleKeyDown", e => {
+    }), _(this, "ref", a.createRef()), _(this, "containerRef", a.createRef()), _(this, "previousHeight", 0), _(this, "handleKeyDown", e => {
       let {
         onActivate: t,
-        onKeyDown: a,
+        onKeyDown: n,
         onQueryChange: r,
-        useKeyboardNavigation: l
+        useKeyboardNavigation: i
       } = this.props;
-      null != a && a(e);
+      null != n && n(e);
       let {
-        current: n
+        current: a
       } = this.ref;
-      if (null == n || null != t) {
+      if (null == a || null != t) {
         e.keyCode !== u.yXg.TAB && null != t && t(e);
         return
       }
-      if (e.keyCode === u.yXg.ESCAPE && null != n.value && "" !== n.value && n.value.length > 0) {
-        n.value = "", null != r && r("");
+      if (e.keyCode === u.yXg.ESCAPE && null != a.value && "" !== a.value && a.value.length > 0) {
+        a.value = "", null != r && r("");
         return
       }
-      l && (this.props.gridResults ? this.handleKeyDownGrid(e) : this.handleKeyDownList(e))
+      i && (this.props.gridResults ? this.handleKeyDownGrid(e) : this.handleKeyDownList(e))
     }), _(this, "handleChange", e => {
       let {
         onQueryChange: t
@@ -273,8 +278,8 @@ class f extends(r = Chunk647438.Component) {
     })
   }
 }
-_(f, "Sizes", g), _(f, "defaultProps", {
-  size: g.SMALL,
+_(g, "Sizes", h), _(g, "defaultProps", {
+  size: h.SMALL,
   query: "",
   sections: [],
   selectedSection: 0,
@@ -286,4 +291,4 @@ _(f, "Sizes", g), _(f, "defaultProps", {
   preventEscapePropagation: true,
   useKeyboardNavigation: true
 });
-let m = f
+let E = g

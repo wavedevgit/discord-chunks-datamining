@@ -107,15 +107,15 @@ true === b && (b = E), b(function(e, t) {
     T = e.style,
     S = e.to,
     A = e.innerRef,
-    N = (0, l.Z)(e, ["aria-current", "activeClassName", "activeStyle", "className", "exact", "isActive", "location", "sensitive", "strict", "style", "to", "innerRef"]);
+    C = (0, l.Z)(e, ["aria-current", "activeClassName", "activeStyle", "className", "exact", "isActive", "location", "sensitive", "strict", "style", "to", "innerRef"]);
   return a.createElement(r.s6.Consumer, null, function(e) {
     e || (0, c.Z)(false);
     var n = O || e.location,
       o = f(d(S, n), n),
       l = o.pathname,
-      C = l && l.replace(/([.+*?=^!:${}()[\]|/\\])/g, "\\$1"),
-      R = C ? (0, r.LX)(n.pathname, {
-        path: C,
+      N = l && l.replace(/([.+*?=^!:${}()[\]|/\\])/g, "\\$1"),
+      R = N ? (0, r.LX)(n.pathname, {
+        path: N,
         exact: h,
         sensitive: v,
         strict: I
@@ -123,12 +123,12 @@ true === b && (b = E), b(function(e, t) {
       P = !!(m ? m(R, n) : R),
       w = P ? y(p, u) : p,
       D = P ? (0, s.Z)({}, T, {}, _) : T,
-      L = (0, s.Z)({
+      x = (0, s.Z)({
         "aria-current": P && i || null,
         className: w,
         style: D,
         to: o
-      }, N);
-    return E !== b ? L.ref = t || A : L.innerRef = A, a.createElement(g, L)
+      }, C);
+    return E !== b ? x.ref = t || A : x.innerRef = A, a.createElement(g, x)
   })
 })

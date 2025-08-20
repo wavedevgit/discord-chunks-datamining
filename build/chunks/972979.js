@@ -1,5 +1,6 @@
-/** Chunk was on 66181 **/
-/** chunk id: 972979, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 972979, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   popup: "popup__49a20",
   closeIcon: "closeIcon__49a20",

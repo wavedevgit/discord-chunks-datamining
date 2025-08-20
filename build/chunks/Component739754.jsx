@@ -1,14 +1,15 @@
-/** Chunk was on 71088 **/
-/** chunk id: 739754, original params: e,n,t (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 739754, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  ZP: () => x,
-  c4: () => I,
-  st: () => h
+  ZP: () => O,
+  c4: () => g,
+  st: () => b
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk338379 = require("./338379.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -19,91 +20,95 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk954800 = require("./954800.js");
 
-function b(e) {
+function m(e) {
   return {
     text: e,
-    icon: (0, o.jsx)(_.bbz, {
-      className: p.icon,
+    icon: (0, r.jsx)(c.bbz, {
+      className: h.icon,
       dotRadius: 3.5,
       themed: true
     })
   }
 }
 
-function I(e) {
+function g(e) {
   return {
-    text: null != e ? e : f.intl.string(f.t.VCsUJi),
+    text: null != e ? e : p.intl.string(p.t.VCsUJi),
     color: "text-danger",
-    icon: (0, o.jsx)(_.Mgn, {
+    icon: (0, r.jsx)(c.Mgn, {
       size: "xs",
       color: "currentColor",
-      className: a()(p.icon, p.errorIcon)
+      className: o()(h.icon, h.errorIcon)
     })
   }
 }
 
-function h(e) {
+function E(e, t) {
+  switch ((0, f.t$)(t, e)) {
+    case f.rQ.SENDING:
+      return m(p.intl.string(p.t.RiLfBQ));
+    case f.rQ.CREATED:
+      return m(p.intl.formatToPlainString(p.t["7ePV4u"], {
+        applicationName: t.author.username
+      }));
+    case f.rQ.TIMED_OUT:
+      return g(p.intl.string(p.t.h8hzPT));
+    case f.rQ.FAILED:
+      return g(t.interactionError)
+  }
+}
+
+function b(e) {
   let {
-    className: n,
-    icon: t,
+    className: t,
+    icon: n,
     text: i,
-    color: r
+    color: a
   } = e;
-  return (0, o.jsxs)("div", {
-    className: a()(p.wrapper, n),
-    children: [t, (0, o.jsx)(_.Text, {
+  return (0, r.jsxs)("div", {
+    className: o()(h.wrapper, t),
+    children: [n, (0, r.jsx)(c.Text, {
       variant: "text-md/normal",
-      color: r,
+      color: a,
       scaleFontToUserSetting: true,
       children: i
     })]
   })
 }
-let x = Chunk647438.memo(function(e) {
+
+function y(e) {
   let {
-    message: n,
-    className: t,
-    component: r
-  } = e, a = (0, c.Z)(), _ = (0, l.e7)([d.ZP], () => d.ZP.getInteraction(n), [n]);
+    message: t,
+    className: n,
+    component: a
+  } = e, o = (0, s.Z)(), c = (0, l.e7)([d.ZP], () => d.ZP.getInteraction(t), [t]);
   i.useEffect(() => {
     let e = null;
-    if (n.hasFlag(m.iLy.LOADING) && null != _) {
-      let t = (0, u.ow)(n.id) - Date.now();
-      t > 0 && (e = setTimeout(() => a(), 1e3 + t))
+    if (t.hasFlag(_.iLy.LOADING) && null != c) {
+      let n = (0, f.ow)(t.id) - Date.now();
+      n > 0 && (e = setTimeout(() => o(), 1e3 + n))
     }
     return () => {
       clearTimeout(e)
     }
-  }, [a, _, n]);
+  }, [o, c, t]);
   let p = null;
-  if (null == r) p = function(e, n) {
-    switch ((0, u.t$)(n, e)) {
-      case u.rQ.SENDING:
-        return b(f.intl.string(f.t.RiLfBQ));
-      case u.rQ.CREATED:
-        return b(f.intl.formatToPlainString(f.t["7ePV4u"], {
-          applicationName: n.author.username
-        }));
-      case u.rQ.TIMED_OUT:
-        return I(f.intl.string(f.t.h8hzPT));
-      case u.rQ.FAILED:
-        return I(n.interactionError)
-    }
-  }(_, n);
+  if (null == a) p = E(c, t);
   else {
-    let e = (0, s.SD)(_, n, r);
-    null != e && (p = I(e))
+    let e = (0, u.SD)(c, t, a);
+    null != e && (p = g(e))
   }
   if (null == p) return null;
   let {
-    text: x,
-    icon: g,
-    color: C
+    text: h,
+    icon: m,
+    color: y
   } = p;
-  return (0, o.jsx)(h, {
-    icon: g,
-    text: x,
-    className: t,
-    color: C
+  return (0, r.jsx)(b, {
+    icon: m,
+    text: h,
+    className: n,
+    color: y
   })
-})
+}
+let O = Chunk647438.memo(y)

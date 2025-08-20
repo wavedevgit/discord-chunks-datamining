@@ -90,7 +90,7 @@ function A(e) {
   }))), r
 }
 
-function N(e) {
+function C(e) {
   let {
     settings: {
       type: t
@@ -100,7 +100,7 @@ function N(e) {
   return t === h.yP.FRECENCY_AND_FAVORITES_SETTINGS && !!n && (R.pendingUsages = [], true)
 }
 
-function C() {
+function N() {
   var e;
   let t = null == (e = Chunk581883.Z.frecencyWithoutFetchingLatest.guildAndChannelFrecency) ? true : module.guildAndChannels;
   if (null == exports) returnfalse;
@@ -113,7 +113,7 @@ let R = {
 };
 class P extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    this.waitFor(_.Z, f.Z), null != e && (e.pendingUsages = e.pendingUsages.filter(e => null != e && p.Xyh.test(e.key)), R = e), this.syncWith([c.Z], C)
+    this.waitFor(_.Z, f.Z), null != e && (e.pendingUsages = e.pendingUsages.filter(e => null != e && p.Xyh.test(e.key)), R = e), this.syncWith([c.Z], N)
   }
   getState() {
     return R
@@ -146,5 +146,5 @@ m(P, "displayName", "FrecencyStore"), m(P, "persistKey", "FrecencyStore");
 let w = new P(Chunk570140.Z, {
   CHANNEL_SELECT: A,
   VOICE_CHANNEL_SELECT: A,
-  USER_SETTINGS_PROTO_UPDATE: N
+  USER_SETTINGS_PROTO_UPDATE: C
 })

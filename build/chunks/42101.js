@@ -1,5 +1,6 @@
-/** Chunk was on 66181 **/
-/** chunk id: 42101, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 42101, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   header: "header_de8069",
   gameNamesHeader: "gameNamesHeader_de8069",

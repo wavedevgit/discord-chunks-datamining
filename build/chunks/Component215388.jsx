@@ -1,12 +1,12 @@
 /** Chunk was on 73628 **/
 /** chunk id: 215388, original params: e,t,A (module,exports,require) **/
 require.d(exports, {
-  Z: () => q
+  Z: () => v
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk772848 = require("./772848.js"),
   Chunk481060 = require("./481060.js"),
   Chunk752305 = require("./752305.js"),
@@ -17,13 +17,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk231319 = require("./231319.js"),
   Chunk8542 = require("./8542.js");
-let m = (0, Chunk772848.Z)(),
-  v = (0, Chunk131704.kt)({
+let h = (0, Chunk772848.Z)(),
+  b = (0, Chunk131704.kt)({
     id: "1",
     type: Chunk981631.d4z.DM
   });
 
-function b() {
+function q() {
   return new Promise(e => {
     e({
       shouldClear: false,
@@ -37,40 +37,40 @@ function C(e) {
   let {
     hasError: A,
     maxLength: r,
-    text: a
+    text: l
   } = e;
   return (0, n.jsxs)("div", {
-    className: l()(h.maxLength, {
-      [h.errorOverflow]: A
+    className: a()(m.maxLength, {
+      [m.errorOverflow]: A
     }),
     "aria-hidden": "true",
-    children: [null != (t = null == a ? true : a.length) ? t : 0, " ", null != r && "/ ".concat(r)]
+    children: [null != (t = null == l ? true : l.length) ? t : 0, " ", null != r && "/ ".concat(r)]
   })
 }
 
-function q(e) {
+function v(e) {
   var t;
   let {
     "aria-labelledby": A,
-    className: a,
-    id: i,
-    autoFocus: d,
-    maxLength: g,
-    onChange: h,
-    onSubmit: q,
-    showCharacterCount: x = false,
-    placeholder: j,
+    className: l,
+    id: o,
+    autoFocus: c,
+    maxLength: f,
+    onChange: m,
+    onSubmit: v,
+    showCharacterCount: j = false,
+    placeholder: x,
     required: U,
-    value: O,
-    enableThemedBackground: V = false,
+    value: V,
+    enableThemedBackground: O = false,
     parentModalKey: P
-  } = e, y = (0, o.Gc0)(), [N, I] = r.useState(() => (0, s.JM)(O)), F = r.useRef(true === d), T = null != A ? A : null == y ? true : y.titleId, K = null != (t = null == y ? true : y.errorId) ? t : m, Z = r.useMemo(() => ({
+  } = e, I = (0, i.Gc0)(), [N, F] = r.useState(() => (0, s.JM)(V)), y = r.useRef(true === c), K = null != A ? A : null == I ? true : I.titleId, T = null != (t = null == I ? true : I.errorId) ? t : h, X = r.useMemo(() => ({
     analyticsName: "simple",
     autocomplete: {
       alwaysUseLayer: true,
       small: true
     },
-    disableAutoFocus: true !== d,
+    disableAutoFocus: true !== c,
     drafts: {
       type: u.d.ChannelMessage
     },
@@ -84,41 +84,41 @@ function q(e) {
       useDisabledStylesOnSubmit: true,
       disableEnterToSubmit: true
     }
-  }), [d]);
-  return (0, n.jsxs)(c.ZP, {
-    "aria-describedby": K,
-    "aria-labelledby": T,
-    innerClassName: l()(a, p.textArea),
-    id: i,
-    maxCharacterCount: g,
+  }), [c]);
+  return (0, n.jsxs)(d.ZP, {
+    "aria-describedby": T,
+    "aria-labelledby": K,
+    innerClassName: a()(l, p.textArea),
+    id: o,
+    maxCharacterCount: f,
     onChange: function(e, t, A) {
-      h(t), I(A)
+      m(t), F(A)
     },
-    placeholder: j,
+    placeholder: x,
     required: U,
-    channel: v,
-    textValue: O,
+    channel: b,
+    textValue: V,
     richValue: N,
-    type: Z,
+    type: X,
     onBlur: () => {
-      F.current = false
+      y.current = false
     },
     onFocus: () => {
-      F.current = true
+      y.current = true
     },
-    focused: F.current,
-    onSubmit: null != q ? q : b,
-    disableThemedBackground: !V,
+    focused: y.current,
+    onSubmit: null != v ? v : q,
+    disableThemedBackground: !O,
     parentModalKey: P,
     emojiPickerCloseOnModalOuterClick: true,
-    children: [true === x && (0, n.jsx)(C, {
-      hasError: null != y.error || null != g && O.length > g,
-      text: O,
-      maxLength: g
-    }), null != g && (0, n.jsx)(o.nn4, {
-      id: m,
-      children: f.intl.format(f.t["+DFxLS"], {
-        maxLength: g
+    children: [true === j && (0, n.jsx)(C, {
+      hasError: null != I.error || null != f && V.length > f,
+      text: V,
+      maxLength: f
+    }), null != f && (0, n.jsx)(i.nn4, {
+      id: h,
+      children: g.intl.format(g.t["+DFxLS"], {
+        maxLength: f
       })
     })]
   })

@@ -1,7 +1,7 @@
 /** Chunk was on 27978 **/
 /** chunk id: 806701, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -22,7 +22,7 @@ function m(e) {
   } = e;
   return (0, r.jsx)("li", {
     className: h.listItem,
-    children: (0, r.jsx)(a.Text, {
+    children: (0, r.jsx)(s.Text, {
       variant: "text-sm/medium",
       color: "text-default",
       children: t
@@ -30,7 +30,7 @@ function m(e) {
   })
 }
 
-function f(e) {
+function g(e) {
   let {
     setSlide: t,
     transitionTo: i
@@ -42,24 +42,24 @@ function f(e) {
     }), (0, r.jsx)(o.Dx, {
       className: p.marginBottom8,
       children: d.intl.string(d.t["8UcxIy"])
-    }), (0, r.jsx)(a.Text, {
+    }), (0, r.jsx)(s.Text, {
       variant: "text-md/normal",
       children: d.intl.string(d.t.O37hMj)
     }), (0, r.jsxs)(o.gO, {
       className: l()(p.marginBottom20, p.marginTop20),
-      children: [(0, r.jsx)(a.Text, {
+      children: [(0, r.jsx)(s.Text, {
         variant: "text-sm/normal"
       }), (0, r.jsxs)("ul", {
         className: h.listContainer,
         children: [(0, r.jsx)(m, {
           children: d.intl.string(d.t.Gj1Zr6)
-        }), (0, r.jsx)(s.Z, {}), (0, r.jsx)(m, {
+        }), (0, r.jsx)(a.Z, {}), (0, r.jsx)(m, {
           children: d.intl.string(d.t["8C6t3N"])
-        }), (0, r.jsx)(s.Z, {}), (0, r.jsx)(m, {
+        }), (0, r.jsx)(a.Z, {}), (0, r.jsx)(m, {
           children: d.intl.string(d.t.mToZMD)
-        }), (0, r.jsx)(s.Z, {}), (0, r.jsx)(m, {
+        }), (0, r.jsx)(a.Z, {}), (0, r.jsx)(m, {
           children: d.intl.string(d.t.TPEvkZ)
-        }), (0, r.jsx)(s.Z, {}), (0, r.jsx)(m, {
+        }), (0, r.jsx)(a.Z, {}), (0, r.jsx)(m, {
           children: d.intl.string(d.t.H8Y1Li)
         })]
       })]

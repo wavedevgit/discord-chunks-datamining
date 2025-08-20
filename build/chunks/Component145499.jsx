@@ -101,7 +101,7 @@ let w = e => {
           (0, c.ZDy)(async () => {
             let {
               default: e
-            } = await Promise.all([n.e("93626"), n.e("34765")]).then(n.bind(n, 136735));
+            } = await Promise.all([n.e("93626"), n.e("74395")]).then(n.bind(n, 136735));
             return n => (0, r.jsx)(e, P({
               guildId: t
             }, n))

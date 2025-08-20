@@ -1,5 +1,6 @@
-/** Chunk was on 66181 **/
-/** chunk id: 679865, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 679865, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   wrapper: "wrapper__70f7f",
   fullscreenWrapper: "fullscreenWrapper__70f7f",

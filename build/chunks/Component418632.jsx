@@ -1,13 +1,14 @@
-/** Chunk was on 66181 **/
-/** chunk id: 418632, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 418632, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => _,
+  Z: () => O,
   s: () => b
 }), require("./388685.js");
-var i, Chunk951288 = require("./951288.js"),
+var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
-  l = require.n(Chunk512722),
+  s = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -25,56 +26,61 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function f(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      i = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), i.forEach(function(t) {
+    }))), r.forEach(function(t) {
       h(e, t, n[t])
     })
   }
   return e
 }
 
+function g(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function E(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+
 function b(e) {
-  return u.Z.verifyResend().then(() => {
-    (0, d.h7j)(t => {
-      var n, i;
-      return (0, r.jsx)(d.ConfirmModal, (n = f({
-        header: g.intl.string(g.t.LykQYm),
-        confirmText: g.intl.string(g.t.BddRzc),
-        confirmButtonColor: c.zx.Colors.BRAND
-      }, t), i = i = {
-        children: (0, r.jsx)(d.Text, {
-          variant: "text-md/normal",
-          children: g.intl.format(g.t.azKEPz, {
-            email: e.email
-          })
+  return d.Z.verifyResend().then(() => {
+    (0, u.h7j)(t => (0, i.jsx)(u.ConfirmModal, E(m({
+      header: p.intl.string(p.t.LykQYm),
+      confirmText: p.intl.string(p.t.BddRzc),
+      confirmButtonColor: c.zx.Colors.BRAND
+    }, t), {
+      children: (0, i.jsx)(u.Text, {
+        variant: "text-md/normal",
+        children: p.intl.format(p.t.azKEPz, {
+          email: e.email
         })
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-          var i = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, i)
-        }
-        return n
-      })(Object(i)).forEach(function(e) {
-        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
-      }), n))
-    })
+      })
+    })))
   }).catch(e => {
     let {
       body: t
-    } = e, n = g.intl.string(g.t.XcrQNz);
-    null != t && t.email && (n = t.email), (0, d.h7j)(e => (0, r.jsx)(m.default, f({
-      title: g.intl.string(g.t.VbTh0N),
+    } = e, n = p.intl.string(p.t.XcrQNz);
+    null != t && t.email && (n = t.email), (0, u.h7j)(e => (0, i.jsx)(f.default, m({
+      title: p.intl.string(p.t.VbTh0N),
       body: n
     }, e)))
   })
 }
-class x extends(i = Chunk647438.Component) {
+class y extends(r = Chunk647438.Component) {
   render() {
     let {
       color: e,
@@ -108,13 +114,13 @@ class x extends(i = Chunk647438.Component) {
     })
   }
 }
-h(x, "defaultProps", {
+h(y, "defaultProps", {
   size: Chunk755721.zx.Sizes.MEDIUM,
   color: Chunk755721.zx.Colors.BRAND
 });
-let _ = Chunk442837.ZP.connectStores([Chunk594174.default], () => {
+let O = Chunk442837.ZP.connectStores([Chunk594174.default], () => {
   let e = Chunk594174.default.getCurrentUser();
-  return l()(null != module, "ResendEmailVerificationButton: currentUser cannot be undefined"), {
+  return s()(null != module, "ResendEmailVerificationButton: currentUser cannot be undefined"), {
     currentUser: module
   }
-})(x)
+})(y)

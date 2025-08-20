@@ -1,5 +1,5 @@
-/** Chunk was on 31978 **/
-/** chunk id: 595173, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 595173, original params: e,t,n (module,exports,re quire) **/
 var r = {
   "./2017-11-16.mp4": "221825",
   "./channel-following.png": "247815",
@@ -11,17 +11,17 @@ var r = {
   "./store.jpg": "926213"
 };
 
-function l(e) {
-  return n(o(e))
+function i(e) {
+  return n(a(e))
 }
 
-function o(e) {
+function a(e) {
   if (!n.o(r, e)) {
     var t = Error("Cannot find module '" + e + "'");
     throw t.code = "MODULE_NOT_FOUND", t
   }
   return r[e]
 }
-l.keys = function() {
+i.keys = function() {
   return Object.keys(r)
-}, l.resolve = o, module.exports = l, l.id = 595173
+}, i.resolve = a, module.exports = i, i.id = 595173

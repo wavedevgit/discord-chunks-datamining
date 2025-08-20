@@ -1,13 +1,14 @@
-/** Chunk was on 66181 **/
-/** chunk id: 666743, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 666743, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => l
+  Z: () => u
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk314897 = require("./314897.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -16,46 +17,55 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 
-function l(e) {
-  return class extends r.Component {
+function s(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      o(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function l(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function c(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : l(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+
+function u(e) {
+  return class extends i.Component {
     componentDidMount() {
-      s.default.addChangeListener(this.onStoreChange)
+      a.default.addChangeListener(this.onStoreChange)
     }
     componentWillUnmount() {
-      s.default.removeChangeListener(this.onStoreChange)
+      a.default.removeChangeListener(this.onStoreChange)
     }
     render() {
-      var t, n;
-      return (0, i.jsx)(e, (t = function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {},
-            i = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), i.forEach(function(t) {
-            a(e, t, n[t])
-          })
-        }
-        return e
-      }({}, this.props), n = n = {
+      return (0, r.jsx)(e, c(s({}, this.props), {
         isAuthenticated: this.state.isAuthenticated
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-          var i = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, i)
-        }
-        return n
-      })(Object(n)).forEach(function(e) {
-        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-      }), t))
+      }))
     }
     constructor(...e) {
-      super(...e), a(this, "state", {
-        isAuthenticated: s.default.isAuthenticated()
-      }), a(this, "onStoreChange", () => {
+      super(...e), o(this, "state", {
+        isAuthenticated: a.default.isAuthenticated()
+      }), o(this, "onStoreChange", () => {
         this.setState({
-          isAuthenticated: s.default.isAuthenticated()
+          isAuthenticated: a.default.isAuthenticated()
         })
       })
     }

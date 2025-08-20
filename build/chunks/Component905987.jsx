@@ -1,12 +1,12 @@
 /** Chunk was on 53512 **/
 /** chunk id: 905987, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => b
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  r = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk340541 = require("./340541.js"),
@@ -19,14 +19,14 @@ var Chunk951288 = require("./951288.js"),
   Chunk920178 = require("./920178.js"),
   Chunk667146 = require("./667146.js");
 
-function f(e) {
+function b(e) {
   let {
     count: t
-  } = e, [n, s] = r.useState("server");
+  } = e, [n, a] = s.useState("server");
   return (0, i.jsxs)(c.Ttm, {
     className: g.content,
     children: [(0, i.jsxs)("div", {
-      className: a()(g.header, b.header),
+      className: r()(g.header, _.header),
       children: [(0, i.jsx)(c.owK, {
         size: "custom",
         color: "currentColor",
@@ -45,23 +45,23 @@ function f(e) {
         children: j.intl.string(j.t["jr/rn5"])
       })]
     }), (0, i.jsxs)("div", {
-      className: b.tabs,
+      className: _.tabs,
       children: [(0, i.jsx)("div", {
-        className: b.tabBackground,
+        className: _.tabBackground,
         style: {
           left: "server" === n ? 0 : "50%"
         }
       }), (0, i.jsx)(c.P3F, {
-        className: b.tab,
-        onClick: () => s("server"),
+        className: _.tab,
+        onClick: () => a("server"),
         children: (0, i.jsx)(c.Text, {
           variant: "text-sm/medium",
           color: "server" === n ? "header-primary" : "text-muted",
           children: j.intl.string(j.t.pS4WEh)
         })
       }), (0, i.jsx)(c.P3F, {
-        className: b.tab,
-        onClick: () => s("channel"),
+        className: _.tab,
+        onClick: () => a("channel"),
         children: (0, i.jsx)(c.Text, {
           variant: "text-sm/medium",
           color: "channel" === n ? "header-primary" : "text-muted",
@@ -69,10 +69,10 @@ function f(e) {
         })
       })]
     }), (0, i.jsxs)("div", {
-      className: b.container,
+      className: _.container,
       children: [(0, i.jsx)(v, {
         hidden: "channel" === n
-      }), (0, i.jsx)(_, {
+      }), (0, i.jsx)(f, {
         hidden: "server" === n
       })]
     })]
@@ -85,45 +85,45 @@ function v(e) {
   } = e, n = (0, l.e7)([d.Z, m.ZP], () => {
     var e;
     return null == (e = d.Z.getGuild(m.ZP.getFlattenedGuildIds()[0])) ? true : e.name
-  }), [s, x] = r.useState(0);
-  r.useEffect(() => {
+  }), [a, h] = s.useState(0);
+  s.useEffect(() => {
     if (t) return;
     let e = 0,
-      n = [1500, 1e3, 1e3, 500].map((t, n) => setTimeout(() => x(n + 1), e += t));
+      n = [1500, 1e3, 1e3, 500].map((t, n) => setTimeout(() => h(n + 1), e += t));
     return () => {
-      n.forEach(e => clearTimeout(e)), setTimeout(() => x(0), 150)
+      n.forEach(e => clearTimeout(e)), setTimeout(() => h(0), 150)
     }
   }, [t]);
   let {
-    entrypoints: h
+    entrypoints: u
   } = (0, o._k)({
     location: "tips_tab"
   });
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)("div", {
-      className: b.containerInner,
+      className: _.containerInner,
       children: (0, i.jsxs)("div", {
-        className: a()(b.serversSection, {
-          [b.hidden]: t,
-          [b.showBigMenu]: s >= 1,
-          [b.fadeChannels]: s >= 1,
-          [b.showModal]: s >= 3
+        className: r()(_.serversSection, {
+          [_.hidden]: t,
+          [_.showBigMenu]: a >= 1,
+          [_.fadeChannels]: a >= 1,
+          [_.showModal]: a >= 3
         }),
         children: [(0, i.jsxs)("div", {
-          className: b.channels,
+          className: _.channels,
           children: [(0, i.jsxs)("div", {
-            className: b.guildName,
+            className: _.guildName,
             children: [(0, i.jsx)(c.Text, {
               variant: "text-md/medium",
               color: "interactive-active",
               lineClamp: 1,
               children: null != n ? n : "Keyboard Nerds"
-            }), s >= 1 ? (0, i.jsx)(c.Dio, {
+            }), a >= 1 ? (0, i.jsx)(c.Dio, {
               size: "md",
               color: "currentColor",
-              className: b.icon
-            }) : (0, i.jsx)(u.Z, {
-              className: a()(b.__invalid_downCaret, b.icon),
+              className: _.icon
+            }) : (0, i.jsx)(x.Z, {
+              className: r()(_.__invalid_downCaret, _.icon),
               width: 24,
               height: 24
             })]
@@ -148,56 +148,56 @@ function v(e) {
             name: j.intl.string(j.t["Ime/t7"])
           })]
         }), (0, i.jsxs)("div", {
-          className: b.bigMenu,
-          children: [(0, i.jsx)(y, {
-            text: h ? j.intl.string(j.t.Sd8Ix8) : j.intl.string(j.t.BN75l5),
+          className: _.bigMenu,
+          children: [(0, i.jsx)(C, {
+            text: u ? j.intl.string(j.t.Sd8Ix8) : j.intl.string(j.t.BN75l5),
             icon: (0, i.jsx)(c.ejJ, {
               size: "sm",
-              className: b.icon
+              className: _.icon
             })
           }), (0, i.jsx)("div", {
-            className: b.divider
-          }), (0, i.jsx)(y, {
-            active: s >= 2,
+            className: _.divider
+          }), (0, i.jsx)(C, {
+            active: a >= 2,
             text: j.intl.string(j.t.h850Sk),
             icon: (0, i.jsx)(c.Dkj, {
               size: "sm",
               color: "currentColor",
-              className: b.icon
+              className: _.icon
             })
-          }), (0, i.jsx)(y, {
+          }), (0, i.jsx)(C, {
             text: j.intl.string(j.t.BayiAg),
             icon: (0, i.jsx)(c.b7C, {
               size: "sm",
               color: "currentColor",
-              className: b.icon
+              className: _.icon
             })
-          }), (0, i.jsx)(y, {
+          }), (0, i.jsx)(C, {
             text: j.intl.string(j.t["154/bG"]),
             icon: (0, i.jsx)(c.ewm, {
               size: "sm",
               color: "currentColor",
-              className: b.icon
+              className: _.icon
             })
-          }), (0, i.jsx)(y, {
+          }), (0, i.jsx)(C, {
             text: j.intl.string(j.t.qyjZub),
             icon: (0, i.jsx)(c.VZI, {
               size: "sm",
               color: "currentColor",
-              className: b.icon
+              className: _.icon
             })
           })]
         }), (0, i.jsxs)("div", {
-          className: b.notifModal,
+          className: _.notifModal,
           children: [(0, i.jsx)(c.Text, {
-            className: b.modalHeader,
+            className: _.modalHeader,
             variant: "text-md/medium",
             color: "interactive-active",
             children: j.intl.string(j.t.h850Sk)
           }), (0, i.jsxs)("div", {
-            className: b.notifTabs,
+            className: _.notifTabs,
             children: [(0, i.jsxs)("div", {
-              className: b.notifTab,
+              className: _.notifTab,
               children: [(0, i.jsx)(c.owK, {
                 size: "md",
                 color: "currentColor"
@@ -208,7 +208,7 @@ function v(e) {
                 children: j.intl.string(j.t.hZrr6u)
               })]
             }), (0, i.jsxs)("div", {
-              className: b.activeNotifTab,
+              className: _.activeNotifTab,
               children: [(0, i.jsx)(c.lOy, {
                 size: "md",
                 color: "currentColor"
@@ -219,7 +219,7 @@ function v(e) {
                 children: j.intl.string(j.t.y59NJi)
               })]
             }), (0, i.jsxs)("div", {
-              className: b.notifTab,
+              className: _.notifTab,
               children: [(0, i.jsx)(c.owu, {
                 size: "md",
                 color: "currentColor"
@@ -231,20 +231,20 @@ function v(e) {
               })]
             })]
           }), (0, i.jsxs)("div", {
-            className: b.controls,
+            className: _.controls,
             children: [(0, i.jsxs)("div", {
-              className: b.control,
+              className: _.control,
               children: [(0, i.jsx)("div", {
-                className: b.controlPlaceholder
+                className: _.controlPlaceholder
               }), (0, i.jsx)("div", {
-                className: b.switchOn
+                className: _.switchOn
               })]
             }), (0, i.jsxs)("div", {
-              className: b.control,
+              className: _.control,
               children: [(0, i.jsx)("div", {
-                className: b.controlPlaceholder
+                className: _.controlPlaceholder
               }), (0, i.jsx)("div", {
-                className: b.switchOff
+                className: _.switchOff
               })]
             })]
           })]
@@ -252,35 +252,35 @@ function v(e) {
       })
     }), (0, i.jsx)(p, {
       text: j.intl.string(j.t["C//fOz"]),
-      className: b.tipServers2,
-      hidden: t || s < 4
+      className: _.tipServers2,
+      hidden: t || a < 4
     })]
   })
 }
 
-function _(e) {
+function f(e) {
   let {
     hidden: t
-  } = e, [n, s] = r.useState(0);
-  return r.useEffect(() => {
+  } = e, [n, a] = s.useState(0);
+  return s.useEffect(() => {
     if (t) return;
     let e = 0,
-      n = [1e3, 1e3, 1e3, 800, 800].map((t, n) => setTimeout(() => s(n + 1), e += t));
+      n = [1e3, 1e3, 1e3, 800, 800].map((t, n) => setTimeout(() => a(n + 1), e += t));
     return () => {
-      n.forEach(e => clearTimeout(e)), setTimeout(() => s(0), 150)
+      n.forEach(e => clearTimeout(e)), setTimeout(() => a(0), 150)
     }
   }, [t]), (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)("div", {
-      className: b.containerInner,
+      className: _.containerInner,
       children: (0, i.jsxs)("div", {
-        className: a()(b.channelsSection, {
-          [b.hidden]: t,
-          [b.fadeOtherChannels]: n >= 2,
-          [b.showLeftMenu]: n >= 2,
-          [b.showRightMenu]: n >= 3
+        className: r()(_.channelsSection, {
+          [_.hidden]: t,
+          [_.fadeOtherChannels]: n >= 2,
+          [_.showLeftMenu]: n >= 2,
+          [_.showRightMenu]: n >= 3
         }),
         children: [(0, i.jsxs)("div", {
-          className: b.channels,
+          className: _.channels,
           children: [(0, i.jsx)(N, {
             selected: n >= 1,
             grey: n >= 5,
@@ -304,66 +304,66 @@ function _(e) {
             name: j.intl.string(j.t["Ime/t7"])
           })]
         }), (0, i.jsxs)("div", {
-          className: a()(b.menu, b.leftMenu),
-          children: [(0, i.jsx)(y, {
+          className: r()(_.menu, _.leftMenu),
+          children: [(0, i.jsx)(C, {
             small: true,
             text: j.intl.string(j.t["w4m94+"]),
-            icon: (0, i.jsx)(u.Z, {
-              className: b.caret,
+            icon: (0, i.jsx)(x.Z, {
+              className: _.caret,
               width: 12,
               height: 12
             })
-          }), (0, i.jsx)(y, {
+          }), (0, i.jsx)(C, {
             small: true,
             text: j.intl.string(j.t.HcoRu7),
             active: n >= 3,
-            icon: (0, i.jsx)(u.Z, {
-              className: b.caret,
+            icon: (0, i.jsx)(x.Z, {
+              className: _.caret,
               width: 12,
               height: 12
             })
           })]
         }), (0, i.jsxs)("div", {
-          className: a()(b.menu, b.rightMenu),
-          children: [(0, i.jsx)(y, {
+          className: r()(_.menu, _.rightMenu),
+          children: [(0, i.jsx)(C, {
             small: true,
             text: j.intl.string(j.t.hZrr6u),
-            icon: n <= 4 ? (0, i.jsx)(h.Z, {
-              className: b.icon,
+            icon: n <= 4 ? (0, i.jsx)(u.Z, {
+              className: _.icon,
               width: 12,
               height: 12
-            }) : (0, i.jsx)(x.Z, {
-              className: b.icon,
+            }) : (0, i.jsx)(h.Z, {
+              className: _.icon,
               width: 12,
               height: 12
             }),
             active: n <= 4
-          }), (0, i.jsx)(y, {
+          }), (0, i.jsx)(C, {
             small: true,
             text: j.intl.string(j.t.y59NJi),
-            icon: n >= 5 ? (0, i.jsx)(h.Z, {
-              className: b.icon,
+            icon: n >= 5 ? (0, i.jsx)(u.Z, {
+              className: _.icon,
               width: 12,
               height: 12
-            }) : (0, i.jsx)(x.Z, {
-              className: b.icon,
+            }) : (0, i.jsx)(h.Z, {
+              className: _.icon,
               width: 12,
               height: 12
             }),
             active: n >= 5
-          }), (0, i.jsx)(y, {
+          }), (0, i.jsx)(C, {
             small: true,
             text: j.intl.string(j.t["pGn/bG"]),
-            icon: (0, i.jsx)(x.Z, {
-              className: b.icon,
+            icon: (0, i.jsx)(h.Z, {
+              className: _.icon,
               width: 12,
               height: 12
             })
-          }), (0, i.jsx)(y, {
+          }), (0, i.jsx)(C, {
             small: true,
             text: j.intl.string(j.t["32yow8"]),
-            icon: (0, i.jsx)(x.Z, {
-              className: b.icon,
+            icon: (0, i.jsx)(h.Z, {
+              className: _.icon,
               width: 12,
               height: 12
             })
@@ -372,11 +372,11 @@ function _(e) {
       })
     }), (0, i.jsx)(p, {
       text: j.intl.string(j.t["5Il5fn"]),
-      className: b.tipChannels1,
+      className: _.tipChannels1,
       hidden: t || n < 4
     }), (0, i.jsx)(p, {
       text: j.intl.string(j.t["+ROcrq"]),
-      className: b.tipChannels2,
+      className: _.tipChannels2,
       hidden: t || n < 4
     })]
   })
@@ -386,19 +386,19 @@ function p(e) {
   let {
     text: t,
     className: n,
-    hidden: r
+    hidden: s
   } = e;
   return (0, i.jsxs)("div", {
-    className: a()(n, b.tip, {
-      [b.hidden]: r
+    className: r()(n, _.tip, {
+      [_.hidden]: s
     }),
     children: [(0, i.jsx)(c.Text, {
-      className: b.__invalid_tipText,
+      className: _.__invalid_tipText,
       variant: "text-sm/normal",
       color: "text-secondary",
       children: t
     }), (0, i.jsx)("div", {
-      className: b.tipLine
+      className: _.tipLine
     })]
   })
 }
@@ -407,42 +407,42 @@ function N(e) {
   let {
     grey: t,
     nodot: n,
-    selected: r,
-    name: s
+    selected: s,
+    name: a
   } = e;
   return (0, i.jsxs)("div", {
-    className: a()(b.channel, {
-      [b.grey]: t || n,
-      [b.nodot]: n,
-      [b.selected]: r
+    className: r()(_.channel, {
+      [_.grey]: t || n,
+      [_.nodot]: n,
+      [_.selected]: s
     }),
     children: [(0, i.jsx)(c.VL1, {
       size: "xs",
       color: "currentColor",
-      className: b.channelIcon
+      className: _.channelIcon
     }), (0, i.jsx)(c.Text, {
       variant: "text-md/medium",
-      className: b.channelName,
-      children: s
+      className: _.channelName,
+      children: a
     })]
   })
 }
 
-function y(e) {
+function C(e) {
   let {
     text: t,
     active: n,
-    small: r,
-    icon: s
+    small: s,
+    icon: a
   } = e;
   return (0, i.jsxs)("div", {
-    className: a()(b.menuItem, {
-      [b.active]: n
+    className: r()(_.menuItem, {
+      [_.active]: n
     }),
     children: [(0, i.jsx)(c.Text, {
-      variant: r ? "text-xs/normal" : "text-sm/normal",
+      variant: s ? "text-xs/normal" : "text-sm/normal",
       color: n ? "always-white" : "interactive-normal",
       children: t
-    }), s]
+    }), a]
   })
 }

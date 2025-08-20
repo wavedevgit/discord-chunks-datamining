@@ -1,16 +1,20 @@
-/** Chunk was on 66181 **/
-/** chunk id: 64914, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 64914, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => O
+  ZP: () => w,
+  fD: () => R
 }), require("./388685.js"), require("./49124.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
+  Chunk433517 = require("./433517.js"),
   Chunk481060 = require("./481060.js"),
   Chunk401430 = require("./401430.js"),
   Chunk100527 = require("./100527.js"),
   Chunk415439 = require("./415439.js"),
   Chunk956097 = require("./956097.js"),
+  Chunk947851 = require("./947851.js"),
   Chunk921801 = require("./921801.js"),
   Chunk695103 = require("./695103.js"),
   Chunk998502 = require("./998502.js"),
@@ -23,66 +27,89 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk692278 = require("./692278.js");
 
-function C(e) {
+function T(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      i = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), i.forEach(function(t) {
-      var i;
-      i = n[t], t in e ? Object.defineProperty(e, t, {
-        value: i,
-        enumerable: true,
-        configurable: true,
-        writable: true
-      }) : e[t] = i
+    }))), r.forEach(function(t) {
+      T(e, t, n[t])
     })
   }
   return e
 }
 
-function O() {
-  let [e] = Chunk647438.useState(() => Chunk998502.ZP.getEnableHardwareAcceleration()), t = Chunk695346.bm.useSetting(), n = Chunk695346.Sb.useSetting(), O = (0, Chunk442837.e7)([Chunk695103.Z], () => Chunk695103.Z.testModeApplicationId), v = (0, Chunk442837.e7)([Chunk740492.ZP], () => Chunk740492.ZP.showPlayAgain), S = Chunk647438.useCallback(e => {
-    h.bm.updateSetting(!e)
+function A(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function C(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+let N = "AppHardwareAcceleration";
+
+function R() {
+  if ((0, Chunk947851.Y)("DesktopNativeUtils")) {
+    let e = Chunk433517.K.get(N);
+    if ("boolean" == typeof module) return module
+  }
+  return Chunk998502.ZP.getEnableHardwareAcceleration()
+}
+
+function P(e) {
+  (0, f.Y)("DesktopNativeUtils") ? (o.K.set(N, e), h.ZP.setEnableHardwareAcceleration(true)) : h.ZP.setEnableHardwareAcceleration(e)
+}
+
+function w() {
+  let [e] = Chunk647438.useState(() => R()), t = Chunk695346.bm.useSetting(), n = Chunk695346.Sb.useSetting(), o = (0, Chunk442837.e7)([Chunk695103.Z], () => Chunk695103.Z.testModeApplicationId), f = (0, Chunk442837.e7)([Chunk740492.ZP], () => Chunk740492.ZP.showPlayAgain), h = Chunk647438.useCallback(e => {
+    g.bm.updateSetting(!e)
   }, []), T = Chunk647438.useCallback(e => {
-    e ? (0, a.h7j)(e => (0, i.jsx)(b.Z, C({}, e))) : l.mc()
+    e ? (0, s.h7j)(e => (0, r.jsx)(b.Z, S({}, e))) : l.mc()
+  }, []), A = Chunk647438.useCallback(e => {
+    (0, u.BV)(e, c.Z.USER_SETTINGS)
   }, []), N = Chunk647438.useCallback(e => {
-    (0, c.BV)(e, o.Z.USER_SETTINGS)
-  }, []), I = Chunk647438.useCallback(e => {
-    (0, a.h7j)(t => {
-      var n, r;
-      let s = e ? j.intl.format(j.t.LYXRxM, {}) : j.intl.format(j.t.uDP3Ky, {});
-      return (0, i.jsx)(a.ConfirmModal, (n = C({
-        header: j.intl.string(j.t.aqpAvr),
-        confirmText: j.intl.string(j.t.vT7ckp),
-        cancelText: j.intl.string(j.t["ETE/oK"]),
-        onConfirm: () => p.ZP.setEnableHardwareAcceleration(e)
-      }, t), r = r = {
-        children: (0, i.jsx)(a.Text, {
+    (0, s.h7j)(t => {
+      let n = e ? v.intl.format(v.t.LYXRxM, {}) : v.intl.format(v.t.uDP3Ky, {});
+      return (0, r.jsx)(s.ConfirmModal, C(S({
+        header: v.intl.string(v.t.aqpAvr),
+        confirmText: v.intl.string(v.t.vT7ckp),
+        cancelText: v.intl.string(v.t["ETE/oK"]),
+        onConfirm: () => P(e)
+      }, t), {
+        children: (0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
-          children: s
+          children: n
         })
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-          var i = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, i)
-        }
-        return n
-      })(Object(r)).forEach(function(e) {
-        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
-      }), n))
+      }))
     })
   }, []), {
-    warpEnabled: y,
-    warpConnecting: A,
-    warpLog: P
+    warpEnabled: w,
+    warpConnecting: D,
+    warpLog: x
   } = (0, Chunk442837.cj)([Chunk956097.Z], () => ({
     warpEnabled: Chunk956097.Z.enabled,
     warpConnecting: Chunk956097.Z.connecting,
     warpLog: Chunk956097.Z.log
-  })), R = Chunk647438.useCallback(e => {
+  })), L = Chunk647438.useCallback(e => {
     e ? d.Z.connect() : d.Z.disconnect()
   }, []);
   return (0, Chunk951288.jsxs)(Chunk481060.hjN, {
@@ -103,7 +130,7 @@ function O() {
       children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
         className: module ? "" : Chunk692278.formSwitchExtension,
         value: module,
-        onChange: I,
+        onChange: N,
         note: Chunk388032.intl.string(Chunk388032.t.Afc7l5),
         hideBorder: !module,
         children: Chunk388032.intl.string(Chunk388032.t["eOC/Fx"])
@@ -119,14 +146,14 @@ function O() {
       setting: Chunk726985.s6.SETTINGS_ADVANCED_SHOW_GAME_LIBRARY,
       children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
         value: !exports,
-        onChange: S,
+        onChange: Chunk998502,
         note: Chunk388032.intl.string(Chunk388032.t["8mYp39"]),
         children: Chunk388032.intl.string(Chunk388032.t.fi3UQE)
       })
     }), (0, Chunk951288.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.SETTINGS_ADVANCED_APPLICATION_TEST_MODE,
       children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
-        value: null != O,
+        value: null != Chunk433517,
         note: Chunk388032.intl.string(Chunk388032.t["52hMnJ"]),
         onChange: T,
         children: Chunk388032.intl.string(Chunk388032.t.erOqlp)
@@ -134,21 +161,21 @@ function O() {
     }), (0, Chunk951288.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.SETTINGS_ADVANCED_SHOW_PLAY_AGAIN,
       children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
-        value: v,
+        value: Chunk947851,
         note: Chunk388032.intl.string(Chunk388032.t["B/qU4O"]),
-        onChange: N,
+        onChange: A,
         children: Chunk388032.intl.string(Chunk388032.t.qDZryM)
       })
     }), (0, Chunk951288.jsxs)(Chunk921801.F, {
       setting: Chunk726985.s6.SETTINGS_ADVANCED_CF_WARP,
       children: [(0, Chunk951288.jsx)(Chunk481060.j7V, {
-        value: y,
+        value: w,
         note: "Enable WARP Proxy Connection",
-        onChange: R,
+        onChange: L,
         children: "Enable WARP"
-      }), A ? (0, Chunk951288.jsx)(Chunk481060.$jN, {}) : null, (0, Chunk951288.jsx)(Chunk481060.Text, {
+      }), D ? (0, Chunk951288.jsx)(Chunk481060.$jN, {}) : null, (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "code",
-        children: P.map((e, t) => (0, i.jsx)("div", {
+        children: x.map((e, t) => (0, r.jsx)("div", {
           children: JSON.stringify(e)
         }, t))
       })]

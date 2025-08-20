@@ -2,7 +2,7 @@
 /** chunk id: 303628, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => L
+  Z: () => x
 }), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -59,13 +59,13 @@ function A(e, t) {
   return n
 }
 
-function N(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function C(e, t) {
+function N(e, t) {
   if (null == e) return {};
   var n, r, i = R(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -92,8 +92,8 @@ function w(e) {
     smallAttachments: T = false
   } = e, A = (0, c.e7)([_.Z], () => _.Z.keyboardModeEnabled), R = (0, p.Z)("attachments", l.hy.HORIZONTAL), w = (0, c.e7)([m.Z], () => m.Z.getUploads(t, n.drafts.type)), {
     isApplicationCommand: D,
-    commandOptions: L,
-    commandOptionStates: x
+    commandOptions: x,
+    commandOptionStates: L
   } = (0, c.cj)([h.Z], () => {
     let e = h.Z.getActiveCommand(t);
     if (null == e) return {
@@ -107,13 +107,13 @@ function w(e) {
       commandOptions: e.options,
       commandOptionStates: n
     }
-  }), M = i.useMemo(() => {
+  }), j = i.useMemo(() => {
     var e;
-    return null != (e = null == L ? true : L.filter(e => {
+    return null != (e = null == x ? true : x.filter(e => {
       var t;
-      return e.type === f.jw.ATTACHMENT && (null == x || null == (t = x[e.name]) ? true : t.hasValue)
+      return e.type === f.jw.ATTACHMENT && (null == L || null == (t = L[e.name]) ? true : t.hasValue)
     })) ? e : []
-  }, [L, x]), [k, j] = i.useState([]);
+  }, [x, L]), [M, k] = i.useState([]);
   i.useEffect(() => {
     let e = () => {
       d.Z.clearAll(t, n.drafts.type)
@@ -129,8 +129,8 @@ function w(e) {
   });
   let G = {
       isApplicationCommand: D,
-      previousUploadOptions: k,
-      uploadOptions: M
+      previousUploadOptions: M,
+      uploadOptions: j
     },
     B = i.useRef(G);
   i.useEffect(() => {
@@ -147,26 +147,26 @@ function w(e) {
         i.some(e => t.name === e.name) || e.push(t)
       }), e.forEach(e => {
         d.Z.remove(t, e.name, n.drafts.type)
-      }), j(i)
+      }), k(i)
     }
-  }, [t, M.length, n]);
-  let V = w.filter(e => e.filename !== a);
-  return !D && 0 === V.length || D && 0 === M.length ? null : (0, r.jsx)(s.bG, {
+  }, [t, j.length, n]);
+  let Z = w.filter(e => e.filename !== a);
+  return !D && 0 === Z.length || D && 0 === j.length ? null : (0, r.jsx)(s.bG, {
     navigator: R,
     children: (0, r.jsx)(s.SJ, {
       children: e => {
         var {
           ref: i
-        } = e, a = C(e, ["ref"]);
-        return (0, r.jsx)("ul", N(S({
+        } = e, a = N(e, ["ref"]);
+        return (0, r.jsx)("ul", C(S({
           ref: i
         }, a), {
           className: o()(v.channelAttachmentArea, I.scrollbarGhost),
-          children: D ? M.map(e => (0, r.jsx)(b.Z, {
+          children: D ? j.map(e => (0, r.jsx)(b.Z, {
             channelId: t,
             keyboardModeEnabled: A,
             option: e
-          }, e.name)) : V.map(e => (0, r.jsx)(y.Z, {
+          }, e.name)) : Z.map(e => (0, r.jsx)(y.Z, {
             channelId: t,
             draftType: n.drafts.type,
             upload: e,
@@ -195,4 +195,4 @@ function D(e) {
     smallAttachments: o
   }) : null
 }
-let L = Chunk647438.memo(D)
+let x = Chunk647438.memo(D)

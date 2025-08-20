@@ -1,7 +1,7 @@
 /** Chunk was on 84686 **/
 /** chunk id: 665111, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => b
+  default: () => m
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -15,36 +15,36 @@ var Chunk755721 = require("./755721.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk376589 = require("./376589.js");
 
-function b(e) {
+function m(e) {
   var t, n, {
-      channel: b,
-      transitionState: _,
-      onClose: p
+      channel: m,
+      transitionState: x,
+      onClose: j
     } = e,
-    m = function(e, t) {
+    p = function(e, t) {
       if (null == e) return {};
-      var n, r, i = function(e, t) {
+      var n, r, o = function(e, t) {
         if (null == e) return {};
-        var n, r, i = {},
-          o = Object.keys(e);
-        for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-        return i
+        var n, r, o = {},
+          s = Object.keys(e);
+        for (r = 0; r < s.length; r++) n = s[r], t.indexOf(n) >= 0 || (o[n] = e[n]);
+        return o
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var o = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+        var s = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < s.length; r++) n = s[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
       }
-      return i
+      return o
     }(e, ["channel", "transitionState", "onClose"]);
-  let g = (0, l.Dt)(),
-    f = (0, s._d)(b.id),
-    j = (0, s.K3)(b.id),
-    x = async () => {
-      await (0, c.yi)(b), p()
+  let h = (0, c.Dt)(),
+    g = (0, i._d)(m.id),
+    f = (0, i.K3)(m.id),
+    O = async () => {
+      await (0, a.yi)(m), j()
     }, y = async () => {
-      await (0, c.RK)(b, false), p()
+      await (0, a.RK)(m, false), j()
     };
-  return (0, r.jsx)(o.Y0X, (t = function(e) {
+  return (0, r.jsx)(s.Y0X, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -62,67 +62,67 @@ function b(e) {
     }
     return e
   }({
-    transitionState: _,
-    "aria-labelledby": g
-  }, m), n = n = {
-    size: o.CgR.SMALL,
+    transitionState: x,
+    "aria-labelledby": h
+  }, p), n = n = {
+    size: s.CgR.SMALL,
     parentComponent: "StageChannelModeratorJoinModal",
-    children: (0, r.jsxs)(o.hzk, {
-      className: h.content,
-      children: [(0, r.jsx)(u.Z, {
+    children: (0, r.jsxs)(s.hzk, {
+      className: b.content,
+      children: [(0, r.jsx)(d.Z, {
         children: (0, r.jsx)("div", {
-          className: h.stageIconBackground,
-          children: (0, r.jsx)(o.ewx, {
+          className: b.stageIconBackground,
+          children: (0, r.jsx)(s.ewx, {
             size: "custom",
             color: "currentColor",
             width: 40,
             height: 40,
-            className: h.stageIcon
+            className: b.stageIcon
           })
         })
-      }), (0, r.jsx)(o.X6q, {
-        id: g,
+      }), (0, r.jsx)(s.X6q, {
+        id: h,
         variant: "heading-xl/semibold",
         color: "header-primary",
-        className: h.headerTitle,
-        children: d.intl.string(d.t.njetU1)
-      }), (0, r.jsx)(o.Text, {
+        className: b.headerTitle,
+        children: u.intl.string(u.t.njetU1)
+      }), (0, r.jsx)(s.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",
-        className: h.headerSubtitle,
-        children: d.intl.string(d.t.LQY4JS)
-      }), (f > 0 || j > 0) && (0, r.jsx)(a.mv, {
-        channelId: b.id
+        className: b.headerSubtitle,
+        children: u.intl.string(u.t.LQY4JS)
+      }), (g > 0 || f > 0) && (0, r.jsx)(l.mv, {
+        channelId: m.id
       }), (0, r.jsxs)("div", {
-        className: h.buttonsContainer,
-        children: [(0, r.jsxs)(i.zx, {
-          color: i.zx.Colors.PRIMARY,
-          className: h.button,
-          innerClassName: h.innerButton,
+        className: b.buttonsContainer,
+        children: [(0, r.jsxs)(o.zx, {
+          color: o.zx.Colors.PRIMARY,
+          className: b.button,
+          innerClassName: b.innerButton,
           onClick: y,
           children: [(0, r.jsx)("div", {
-            className: h.icon,
-            children: (0, r.jsx)(o.S6n, {
+            className: b.icon,
+            children: (0, r.jsx)(s.S6n, {
               size: "custom",
               color: "currentColor",
               width: 20,
               height: 20
             })
-          }), d.intl.string(d.t["Q8o/tb"])]
-        }), (0, r.jsxs)(i.zx, {
-          color: i.zx.Colors.PRIMARY,
-          className: h.button,
-          innerClassName: h.innerButton,
-          onClick: x,
+          }), u.intl.string(u.t["Q8o/tb"])]
+        }), (0, r.jsxs)(o.zx, {
+          color: o.zx.Colors.PRIMARY,
+          className: b.button,
+          innerClassName: b.innerButton,
+          onClick: O,
           children: [(0, r.jsx)("div", {
-            className: h.icon,
-            children: (0, r.jsx)(o.BFJ, {
+            className: b.icon,
+            children: (0, r.jsx)(s.BFJ, {
               size: "custom",
               color: "currentColor",
               width: 20,
               height: 20
             })
-          }), d.intl.string(d.t["N3/Oyc"])]
+          }), u.intl.string(u.t["N3/Oyc"])]
         })]
       })]
     })

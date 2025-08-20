@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 267717, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 267717, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  default: () => h,
+  default: () => E,
   y: () => g
 });
 var Chunk951288 = require("./951288.js");
@@ -16,87 +17,94 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk561870 = require("./561870.js");
 
+function _(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
 function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      i = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), i.forEach(function(t) {
-      var i;
-      i = n[t], t in e ? Object.defineProperty(e, t, {
-        value: i,
-        enumerable: true,
-        configurable: true,
-        writable: true
-      }) : e[t] = i
+    }))), r.forEach(function(t) {
+      _(e, t, n[t])
     })
   }
   return e
 }
 
+function h(e, t) {
+  if (null == e) return {};
+  var n, r, i = m(e, t);
+  if (Object.getOwnPropertySymbols) {
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+  }
+  return i
+}
+
+function m(e, t) {
+  if (null == e) return {};
+  var n, r, i = {},
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+  return i
+}
+
 function g(e) {
   let {
     analyticsSource: t,
-    onSubscribeFinish: s
-  } = e, l = a.default.getCurrentUser();
-  null != l && (0, r.ZDy)(async () => {
+    onSubscribeFinish: a
+  } = e, s = o.default.getCurrentUser();
+  null != s && (0, i.ZDy)(async () => {
     let {
       default: e
     } = await Promise.resolve().then(n.bind(n, 267717));
-    return n => (0, i.jsx)(e, p({
-      user: l,
+    return n => (0, r.jsx)(e, p({
+      user: s,
       analyticsSource: t,
       analyticsLocation: {
-        section: d.jXE.USER_PROFILE,
-        object: d.qAy.BUTTON_CTA
+        section: u.jXE.USER_PROFILE,
+        object: u.qAy.BUTTON_CTA
       },
-      onSubscribeFinish: s
+      onSubscribeFinish: a
     }, n))
   })
 }
 
-function h(e) {
+function E(e) {
   var {
     user: t,
     onClose: n
-  } = e, r = function(e, t) {
-    if (null == e) return {};
-    var n, i, r = function(e, t) {
-      if (null == e) return {};
-      var n, i, r = {},
-        s = Object.keys(e);
-      for (i = 0; i < s.length; i++) n = s[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
-      return r
-    }(e, t);
-    if (Object.getOwnPropertySymbols) {
-      var s = Object.getOwnPropertySymbols(e);
-      for (i = 0; i < s.length; i++) n = s[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
-    }
-    return r
-  }(e, ["user", "onClose"]);
-  return (0, i.jsx)(o.Z, p({
-    modalClassName: m.modal,
-    modalContentClassName: m.modalContent,
+  } = e, i = h(e, ["user", "onClose"]);
+  return (0, r.jsx)(l.Z, p({
+    modalClassName: f.modal,
+    modalContentClassName: f.modalContent,
     type: c.cd.TRY_IT_OUT_MODAL_UPSELL,
-    title: u.intl.string(u.t.reVc0N),
-    body: u.intl.string(u.t.KckEj4),
-    glowUp: u.intl.string(u.t.reVc0N),
+    title: d.intl.string(d.t.reVc0N),
+    body: d.intl.string(d.t.KckEj4),
+    glowUp: d.intl.string(d.t.reVc0N),
     onSecondaryClick: () => {
-      (0, l.$)(n)
+      (0, s.$)(n)
     },
-    secondaryCTA: u.intl.string(u.t.PcTCBw),
+    secondaryCTA: d.intl.string(d.t.PcTCBw),
     onClose: n,
     enableArtBoxShadow: false,
     hideBackButton: true,
     showEnhancedUpsell: true,
-    LeadingComponent: (0, i.jsx)("div", {
-      className: m.previewContainerParent,
-      children: (0, i.jsx)(s.Z, {
-        containerClassName: m.previewContainer,
+    LeadingComponent: (0, r.jsx)("div", {
+      className: f.previewContainerParent,
+      children: (0, r.jsx)(a.Z, {
+        containerClassName: f.previewContainer,
         user: t,
         disabledInputs: true
       })
     })
-  }, r))
+  }, i))
 }

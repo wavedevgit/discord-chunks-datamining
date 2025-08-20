@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 235144, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 235144, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => g
+  Z: () => p
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -15,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk197571 = require("./197571.js");
 
-function g() {
+function p() {
   let {
     analyticsLocations: e
   } = (0, Chunk906732.ZP)(), t = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getActiveInputProfile()), {
@@ -23,11 +24,11 @@ function g() {
   } = (0, Chunk321614.c)({
     location: "UserSettingsInputProfile",
     autoTrackExposure: false
-  }), g = Chunk647438.useCallback(t => {
+  }), p = Chunk647438.useCallback(t => {
     let {
       value: n
     } = t;
-    l.Z.setActiveInputProfile(n, {
+    s.Z.setActiveInputProfile(n, {
       analyticsLocations: e
     })
   }, [module]), h = [{
@@ -52,7 +53,7 @@ function g() {
     title: Chunk388032.intl.string(Chunk388032.t.LM3U3t),
     className: Chunk197571.marginBottom20,
     children: (0, Chunk951288.jsx)(Chunk481060.FXm, {
-      onChange: g,
+      onChange: p,
       options: h,
       value: null != exports ? exports : Chunk345655._.CUSTOM
     })

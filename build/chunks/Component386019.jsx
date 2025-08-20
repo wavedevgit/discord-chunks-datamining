@@ -35,7 +35,7 @@ function _(e) {
     activity: p,
     entry: h,
     analyticsLocations: I
-  }), S = (0, u.yi)(), A = i.useRef(null), N = null != (t = null == S ? true : S.interactionPopoutTargetRef) ? t : A, C = (0, d.Z)({
+  }), S = (0, u.yi)(), A = i.useRef(null), C = null != (t = null == S ? true : S.interactionPopoutTargetRef) ? t : A, N = (0, d.Z)({
     entry: h,
     activity: p,
     user: _,
@@ -45,8 +45,8 @@ function _(e) {
     isMenuOpen: O,
     appContext: b
   });
-  return 0 === C.length || _.bot ? null : (0, r.jsx)(a.yRy, {
-    targetElementRef: null != y ? y : N,
+  return 0 === N.length || _.bot ? null : (0, r.jsx)(a.yRy, {
+    targetElementRef: null != y ? y : C,
     align: "top",
     position: "right",
     disablePointerEvents: false,
@@ -69,7 +69,7 @@ function _(e) {
           "aria-label": f.intl.string(f.t.PlAQz8),
           onSelect: g,
           children: (0, r.jsx)(a.kSQ, {
-            children: C
+            children: N
           })
         })
       })

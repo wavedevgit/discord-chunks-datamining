@@ -1,5 +1,6 @@
-/** Chunk was on 26434 **/
-/** chunk id: 33470, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 33470, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   answersContainer: "answersContainer__10758",
   answer: "answer__10758",

@@ -1,5 +1,6 @@
-/** Chunk was on 66181 **/
-/** chunk id: 270782, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 270782, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   button: "button_e08d4d",
   seeMore: "seeMore_e08d4d",

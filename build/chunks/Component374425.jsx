@@ -1,7 +1,8 @@
-/** Chunk was on 26434 **/
-/** chunk id: 374425, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 374425, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => O
+  Z: () => S
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,97 +21,106 @@ var Chunk951288 = require("./951288.js"),
   Chunk474936 = require("./474936.js"),
   Chunk205844 = require("./205844.js");
 
-function E(e) {
+function b(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      var r;
-      r = n[t], t in e ? Object.defineProperty(e, t, {
-        value: r,
-        enumerable: true,
-        configurable: true,
-        writable: true
-      }) : e[t] = r
+      b(e, t, n[t])
     })
   }
   return e
 }
 
-function C(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
-    }
-    return n
-  })(Object(t)).forEach(function(n) {
+function O(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function v(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let v = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
-  O = e => {
+let I = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
+  T = e => {
+    null != e && l.ZP.trackWithMetadata(m.rMx.EXPRESSION_TOOLTIP_VIEWED, {
+      type: g.cd.STICKER_IN_MESSAGE_HOVER,
+      expression_id: e.id,
+      expression_name: e.name,
+      is_animated: (0, _.aQ)(e.format_type),
+      is_custom: (0, _.z)(e.type)
+    })
+  },
+  S = e => {
     let {
       renderableSticker: t,
       channel: n,
-      isInteracting: l
-    } = e, d = i.useRef(null), [O, y] = i.useState(true), [x, j] = i.useState(String(Date.now())), [I] = (0, p.XW)(t, l), {
-      analyticsLocations: S
-    } = (0, c.ZP)(a.Z.STICKER_MESSAGE), T = (0, r.jsxs)("span", {
-      className: b.stickerName,
+      isInteracting: a
+    } = e, l = i.useRef(null), [d, _] = i.useState(true), [m, g] = i.useState(String(Date.now())), [b] = (0, f.XW)(t, a), {
+      analyticsLocations: O
+    } = (0, c.ZP)(s.Z.STICKER_MESSAGE), S = (0, r.jsxs)("span", {
+      className: E.stickerName,
       children: [(0, r.jsx)(o.B7q, {
         size: "xs",
         color: "currentColor",
-        className: b.stickerIcon
-      }), (null != I ? I : t).name]
+        className: E.stickerIcon
+      }), (null != b ? b : t).name]
     });
     return (0, r.jsx)(c.Gt, {
-      value: S,
+      value: O,
       children: (0, r.jsx)(o.yRy, {
         align: "center",
         animation: o.yRy.Animation.TRANSLATE,
-        positionKey: x,
+        positionKey: m,
         onRequestClose: () => {
-          y(true)
+          _(true)
         },
-        renderPopout: e => (0, r.jsx)(g.Z, C(E({}, e), {
+        renderPopout: e => (0, r.jsx)(h.Z, v(y({}, e), {
           renderableSticker: t,
           channel: n,
-          refreshPositionKey: () => j(String(Date.now()))
+          refreshPositionKey: () => g(String(Date.now()))
         })),
-        targetElementRef: d,
+        targetElementRef: l,
         children: e => {
           let {
             onClick: n
           } = e;
-          return (0, r.jsx)(o.ua7, C(E({}, u.b_), {
-            shouldShow: O,
-            text: (0, u.Y)(T),
+          return (0, r.jsx)(o.ua7, v(y({}, u.b_), {
+            shouldShow: d,
+            text: (0, u.Y)(S),
             "aria-label": false,
             onTooltipShow: () => {
-              var e;
-              null != (e = I) && s.ZP.trackWithMetadata(_.rMx.EXPRESSION_TOOLTIP_VIEWED, {
-                type: h.cd.STICKER_IN_MESSAGE_HOVER,
-                expression_id: e.id,
-                expression_name: e.name,
-                is_animated: (0, m.aQ)(e.format_type),
-                is_custom: (0, m.z)(e.type)
-              })
+              T(b)
             },
-            children: e => (0, r.jsx)(o.P3F, C(E({}, e), {
-              innerRef: d,
-              className: b.clickableSticker,
+            children: e => (0, r.jsx)(o.P3F, v(y({}, e), {
+              innerRef: l,
+              className: E.clickableSticker,
               onClick: e => {
-                y(!O), n(e)
+                _(!d), n(e)
               },
               tag: "span",
-              children: (0, r.jsx)(f.Z, {
-                isInteracting: l,
-                size: v,
-                sticker: null != I ? I : t
+              children: (0, r.jsx)(p.Z, {
+                isInteracting: a,
+                size: I,
+                sticker: null != b ? b : t
               })
             }))
           }))

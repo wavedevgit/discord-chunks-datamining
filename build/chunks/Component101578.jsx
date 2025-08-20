@@ -1,7 +1,8 @@
-/** Chunk was on 26434 **/
-/** chunk id: 101578, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 101578, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => d
+  Z: () => f
 });
 var Chunk951288 = require("./951288.js"),
   Chunk627861 = require("./627861.jsx"),
@@ -11,22 +12,26 @@ var Chunk951288 = require("./951288.js"),
   Chunk973616 = require("./973616.js"),
   Chunk789407 = require("./789407.js"),
   Chunk616922 = require("./616922.js");
-let d = e => {
+
+function d(e) {
+  return null != e.application ? l.ZP.createFromServer(e.application) : null != e.activity && null != e.activity.party_id && (0, u.Ps)(e.activity.party_id) ? c.r9 : true
+}
+let f = e => {
   var t;
   let {
     channel: n,
-    message: d,
-    hideParty: p
+    message: l,
+    hideParty: c
   } = e, {
-    analyticsLocations: m
-  } = (0, o.ZP)(l.Z.INVITE_EMBED), f = null != d.application ? s.ZP.createFromServer(d.application) : null != d.activity && null != d.activity.party_id && (0, u.Ps)(d.activity.party_id) ? c.r9 : true, {
-    data: g
-  } = (0, a.IX)(null == (t = d.application) ? true : t.id), _ = null != g ? g : f;
-  return null == _ ? null : (0, r.jsx)(i.c, {
-    app: _,
+    analyticsLocations: u
+  } = (0, o.ZP)(a.Z.INVITE_EMBED), f = d(l), {
+    data: _
+  } = (0, s.IX)(null == (t = l.application) ? true : t.id), p = null != _ ? _ : f;
+  return null == p ? null : (0, r.jsx)(i.c, {
+    app: p,
     channel: n,
-    message: d,
-    hideParty: p,
-    analyticsLocations: m
+    message: l,
+    hideParty: c,
+    analyticsLocations: u
   })
 }

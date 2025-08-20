@@ -10,7 +10,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk742593 = require("./742593.jsx"),
   Chunk83908 = require("./83908.js");
 
-function s(e) {
+function a(e) {
   let {
     channel: t
   } = e, n = (0, l.Th)(t.type);
@@ -37,16 +37,16 @@ function c(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: o.container,
-    children: [(0, r.jsx)(a.HZ, {
+    children: [(0, r.jsx)(s.HZ, {
       className: o.statusContainer,
       guildId: n.guild_id,
       guildEvent: n,
       eventPreview: n
-    }), (0, r.jsx)(a.Rf, {
+    }), (0, r.jsx)(s.Rf, {
       name: n.name,
       description: n.description,
       guildId: n.guild_id
-    }), null != t && n.channel_id === t.id ? (0, r.jsx)(s, {
+    }), null != t && n.channel_id === t.id ? (0, r.jsx)(a, {
       channel: t
     }) : null]
   })

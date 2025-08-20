@@ -1,4 +1,4 @@
-/** Chunk was on 69003 **/
+/** Chunk was on 91488 **/
 /** chunk id: 919436, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => D
@@ -87,7 +87,7 @@ class R extends(r = Chunk647438.PureComponent) {
       controller: t
     } = this.state;
     e(), t.update({
-      immediate: !v.Z.isFocused(),
+      immediate: !j.Z.isFocused(),
       height: 1,
       opacity: 1,
       scale: 1,
@@ -115,7 +115,7 @@ class R extends(r = Chunk647438.PureComponent) {
     this.setState({
       animating: true
     }, () => t.update({
-      immediate: !v.Z.isFocused(),
+      immediate: !j.Z.isFocused(),
       height: 0,
       opacity: 0,
       scale: 0,
@@ -267,17 +267,17 @@ let D = Chunk647438.forwardRef(function(e, t) {
     g = (0, s.e7)([_.Z], () => _.Z.getChannelId(), []),
     y = (0, s.e7)([O.ZP], () => O.ZP.getMentionCount(n), [n]),
     {
-      isFacepileEnabled: v
+      isFacepileEnabled: j
     } = h.Z.useExperiment({
       location: "unread_direct_message"
     }, {
       autoTrackExposure: false
     }),
-    j = o === n,
+    v = o === n,
     C = false,
-    E = false;
-  j && (C = u === S.WtW.VOICE, E = u === S.WtW.VIDEO);
-  let x = (0, c.dQu)(c.TVs.modules.guildbar.AVATAR_SIZE);
+    x = false;
+  v && (C = u === S.WtW.VOICE, x = u === S.WtW.VIDEO);
+  let E = (0, c.dQu)(c.TVs.modules.guildbar.AVATAR_SIZE);
   return (0, i.jsx)(R, Z(w({}, e), {
     ref: t,
     channelName: r,
@@ -285,11 +285,11 @@ let D = Chunk647438.forwardRef(function(e, t) {
     selected: g === n,
     badge: y,
     audio: C,
-    video: E,
+    video: x,
     stream: p,
-    isCurrentUserInThisDMCall: j,
-    isGDMFacepileEnabled: v,
-    size: x,
+    isCurrentUserInThisDMCall: v,
+    isGDMFacepileEnabled: j,
+    size: E,
     treeItemProps: l
   }))
 })

@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  r = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk514923 = require("./514923.js");
 
@@ -14,16 +14,16 @@ function o(t) {
   let {
     tips: e,
     className: n,
-    headerText: r
+    headerText: s
   } = t;
   return (0, i.jsxs)("div", {
-    className: s()(a.tipsSection, n),
+    className: r()(a.tipsSection, n),
     children: [(0, i.jsx)("div", {
       className: a.tipsHeader,
       children: (0, i.jsx)(l.X6q, {
         variant: "heading-lg/bold",
         className: a.headerText,
-        children: r
+        children: s
       })
     }), (0, i.jsx)("ul", {
       className: a.tipsList,

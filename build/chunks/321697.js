@@ -1,12 +1,13 @@
-/** Chunk was on 66181 **/
-/** chunk id: 321697, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 321697, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  r: () => a
+  r: () => o
 });
 var Chunk481060 = require("./481060.js"),
   Chunk560067 = require("./560067.js"),
   Chunk675999 = require("./675999.js");
-let a = {
+let o = {
   binds: ["mod+shift+n"],
   comboKeysBindGlobal: true,
   action() {

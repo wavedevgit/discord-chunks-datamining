@@ -1,8 +1,6 @@
-/** Chunk was on 26434 **/
-/** chunk id: 912244, original params: e,t,n (module,exports,require) **/
-require.d(exports, {
-  N: () => r
-});
+/** Chunk was on web.js **/
+/** chunk id: 912244, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 
 function r(e) {
   return {
@@ -10,3 +8,6 @@ function r(e) {
     eligibleToFetch: true
   }
 }
+require.d(exports, {
+  N: () => r
+})

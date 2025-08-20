@@ -17,11 +17,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk451429 = require("./451429.js"),
   Chunk104444 = require("./104444.js");
 
-function b(e, t) {
+function v(e, t) {
   return e.store.getName().localeCompare(t.store.getName())
 }
 
-function v(e) {
+function b(e) {
   let {
     store: t,
     dataGetter: a
@@ -48,7 +48,7 @@ let f = [{
       return t.getName()
     }
   }],
-  g = [{
+  j = [{
     id: "local",
     name: "Local Variables",
     group: Chunk621060.v0.NONE,
@@ -61,7 +61,7 @@ let f = [{
         children: ["Store is missing ", (0, n.jsx)("code", {
           children: "__getLocalVars"
         }), " method."]
-      }) : (0, n.jsx)(v, {
+      }) : (0, n.jsx)(b, {
         store: t,
         dataGetter: e => e.__getLocalVars()
       })
@@ -74,14 +74,14 @@ let f = [{
       let {
         store: t
       } = e;
-      return (0, n.jsx)(v, {
+      return (0, n.jsx)(b, {
         store: t,
         dataGetter: e => e
       })
     }
   }];
 
-function j(e) {
+function g(e) {
   let {
     store: t,
     initialHeight: a
@@ -89,7 +89,7 @@ function j(e) {
     TabBar: r,
     renderSelectedTab: l
   } = (0, x.ZP)({
-    tabs: g
+    tabs: j
   }, []);
   return (0, n.jsxs)(u.Z, {
     className: p.subPanel,
@@ -116,7 +116,7 @@ function _() {
     c = Chunk647438.useMemo(() => Chunk120356.map(e => ({
       key: e._dispatchToken,
       store: e
-    })).sort(b), [Chunk120356]).filter(e => (function(e, t) {
+    })).sort(v), [Chunk120356]).filter(e => (function(e, t) {
       let {
         store: a
       } = e;
@@ -143,7 +143,7 @@ function _() {
       data: Chunk665149,
       selectedRowKey: Chunk428530,
       onClickRow: e => u(e.key)
-    }), null != Chunk621060 && (0, Chunk951288.jsx)(j, {
+    }), null != Chunk621060 && (0, Chunk951288.jsx)(g, {
       store: Chunk621060,
       initialHeight: null != module.current ? module.current.clientHeight / 2 : 300
     })]

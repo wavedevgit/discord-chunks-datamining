@@ -2,7 +2,7 @@
 /** chunk id: 353647, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => N
+  Z: () => C
 }), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -141,7 +141,7 @@ class A extends(r = Chunk442837.ZP.Store) {
   }
 }
 s(A, "displayName", "ContentInventoryOutboxStore");
-let N = new A(Chunk570140.Z, {
+let C = new A(Chunk570140.Z, {
   CONNECTION_OPEN: T,
   LOGOUT: S,
   CONTENT_INVENTORY_FETCH_OUTBOX_START: m,

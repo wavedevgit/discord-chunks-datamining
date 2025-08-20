@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 674116, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 674116, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => V
+  Z: () => Z
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -40,19 +41,19 @@ var Chunk951288 = require("./951288.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk197571 = require("./197571.js");
-let U = "".concat(Chunk63063.Z.getArticleURL(Chunk981631.BhN.VOICE_VIDEO_TROUBLESHOOTING), "?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-voice-video&utm_content=--t%3Apm");
+let B = "".concat(Chunk63063.Z.getArticleURL(Chunk981631.BhN.VOICE_VIDEO_TROUBLESHOOTING), "?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-voice-video&utm_content=--t%3Apm");
 
-function V() {
+function Z() {
   let {
     inputMode: e
   } = (0, Chunk442837.cj)([Chunk131951.Z], () => ({
     inputMode: Chunk131951.Z.getMode()
-  })), t = (0, Chunk442837.e7)([Chunk663389.Z], () => Chunk663389.Z.getSubsection()), n = Chunk647438.useRef(null), m = Chunk647438.useRef(null);
+  })), t = (0, Chunk442837.e7)([Chunk663389.Z], () => Chunk663389.Z.getSubsection()), n = Chunk647438.useRef(null), f = Chunk647438.useRef(null);
   Chunk647438.useEffect(() => {
-    var e, i;
-    exports === Chunk526761.GA && (null == require || null == (e = require.current) || module.scrollIntoView(), Chunk230711.Z.clearSubsection()), exports === Chunk526761.gP && (null == Chunk63063 || null == (i = Chunk63063.current) || Chunk951288.scrollIntoView(), Chunk230711.Z.clearSubsection())
+    var e, r;
+    exports === Chunk526761.GA && (null == require || null == (e = require.current) || module.scrollIntoView(), Chunk230711.Z.clearSubsection()), exports === Chunk526761.gP && (null == Chunk63063 || null == (r = Chunk63063.current) || Chunk951288.scrollIntoView(), Chunk230711.Z.clearSubsection())
   }, [require, Chunk63063, exports]);
-  let k = (0, Chunk58765.Z)();
+  let M = (0, Chunk58765.Z)();
   return (0, Chunk951288.jsxs)(Chunk481060.hjN, {
     tag: Chunk481060.RB0.H1,
     title: Chunk388032.intl.string(Chunk388032.t.NiTd0d),
@@ -70,7 +71,7 @@ function V() {
           className: Chunk197571.marginBottom20,
           type: Chunk481060.R94.Types.DESCRIPTION,
           children: Chunk388032.intl.format(Chunk388032.t["V+B3FB"], {
-            guideURL: U
+            guideURL: B
           })
         }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
           className: Chunk197571.marginBottom20

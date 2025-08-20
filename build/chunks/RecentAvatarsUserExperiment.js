@@ -1,7 +1,8 @@
-/** Chunk was on 89006 **/
-/** chunk id: 373230, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 373230, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  T: () => o,
+  T: () => i,
   c: () => r
 });
 let r = (0, require("./818083.js").B)({
@@ -26,16 +27,16 @@ let r = (0, require("./818083.js").B)({
   }]
 });
 
-function o(e) {
+function i(e) {
   let {
     location: t,
     autoTrackExposure: n = true
   } = e, {
-    enabled: o
+    enabled: i
   } = r.useExperiment({
     location: t
   }, {
     autoTrackExposure: n
   });
-  return o
+  return i
 }

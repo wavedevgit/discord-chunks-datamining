@@ -7,7 +7,7 @@ require.d(exports, {
   JC: () => A,
   Om: () => S,
   Sf: () => h,
-  U4: () => N,
+  U4: () => C,
   Vg: () => g,
   Xc: () => T,
   ZP: () => f,
@@ -18,7 +18,7 @@ require.d(exports, {
   o_: () => O,
   qo: () => p,
   sn: () => y,
-  u_: () => C,
+  u_: () => N,
   z: () => I
 }), require("./997841.js"), require("./415506.js");
 var Chunk81825 = require("./81825.js"),
@@ -132,13 +132,13 @@ class f extends Chunk81825.Z {
       case s.HeQ.GOPAY_WALLET:
         return new A(c({}, r));
       case s.HeQ.BANCONTACT:
-        return new N(c({}, r));
+        return new C(c({}, r));
       case s.HeQ.IDEAL:
         return new b(d(c({}, r), {
           bank: e.bank
         }));
       case s.HeQ.CASH_APP:
-        return new C(d(c({}, r), {
+        return new N(d(c({}, r), {
           username: e.username
         }));
       default:
@@ -174,13 +174,13 @@ class f extends Chunk81825.Z {
       case s.HeQ.GOPAY_WALLET:
         return new A(e);
       case s.HeQ.BANCONTACT:
-        return new N(e);
+        return new C(e);
       case s.HeQ.EPS:
         return new E(e);
       case s.HeQ.IDEAL:
         return new b(e);
       case s.HeQ.CASH_APP:
-        return new C(e);
+        return new N(e);
       default:
         (0, o.vE)(t)
     }
@@ -283,12 +283,12 @@ class A extends f {
     if (super(e), e.type !== s.HeQ.GOPAY_WALLET) throw Error("Cannot instantiate GoPayWalletSourceRecord with type: ".concat(e.type, ", must be ").concat(s.HeQ.GOPAY_WALLET))
   }
 }
-class N extends f {
+class C extends f {
   constructor(e) {
     if (super(e), e.type !== s.HeQ.BANCONTACT) throw Error("Cannot instantiate BancontactSourceRecord with type: ".concat(e.type, ", must be ").concat(s.HeQ.BANCONTACT))
   }
 }
-class C extends f {
+class N extends f {
   constructor(e) {
     if (super(e), l(this, "username", true), e.type !== s.HeQ.CASH_APP) throw Error("Cannot instantiate Cashapp with type: ".concat(e.type, ", must be ").concat(s.HeQ.CASH_APP));
     this.username = e.username || ""

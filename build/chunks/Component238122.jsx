@@ -1,7 +1,7 @@
-/** Chunk was on 26475 **/
+/** Chunk was on 40226 **/
 /** chunk id: 238122, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => m
 }), require("./388685.js"), require("./413496.js"), require("./433524.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,16 +16,16 @@ let u = e => {
     let {
       data: {
         title: u,
-        subtitle: _,
-        placeholder: m,
+        subtitle: m,
+        placeholder: _,
         rows: p,
-        character_limit: g,
-        pattern: f
+        character_limit: f,
+        pattern: g
       },
-      onChange: b,
-      initialText: h,
-      isRequired: x
-    } = e, v = a.useRef(o.Z.reactParserFor((t = function(e) {
+      onChange: x,
+      initialText: b,
+      isRequired: h
+    } = e, v = i.useRef(a.Z.reactParserFor((t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -42,8 +42,8 @@ let u = e => {
         })
       }
       return e
-    }({}, o.Z.defaultRules), n = n = {
-      link: l.s
+    }({}, a.Z.defaultRules), n = n = {
+      link: o.s
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -53,64 +53,64 @@ let u = e => {
       return n
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-    }), t))), [j, y] = a.useState(""), [C, O] = a.useState(null);
-    a.useEffect(() => {
+    }), t))), [j, y] = i.useState(""), [O, C] = i.useState(null);
+    i.useEffect(() => {
       var e;
-      y(null != (e = null == h ? true : h.value) ? e : "")
-    }, [h]);
-    let I = a.useCallback(e => {
-      let t = null != f ? new RegExp(f) : null;
-      null == t || t.test(e) ? null != e && (O(null), y(e), b({
+      y(null != (e = null == b ? true : b.value) ? e : "")
+    }, [b]);
+    let Z = i.useCallback(e => {
+      let t = null != g ? new RegExp(g) : null;
+      null == t || t.test(e) ? null != e && (C(null), y(e), x({
         value: e,
         isValid: true
-      })) : (O(s.intl.string(s.t["24xrGR"])), b({
+      })) : (C(s.intl.string(s.t["24xrGR"])), x({
         value: e,
         isValid: false
       }))
-    }, [b, f]);
+    }, [x, g]);
     return (0, r.jsxs)("div", {
       className: d.marginBottom8,
       children: [null != u && (0, r.jsx)("div", {
         className: d.marginBottom8,
-        children: (0, r.jsxs)(i.Text, {
+        children: (0, r.jsxs)(l.Text, {
           variant: "text-sm/bold",
-          children: [u, x && (0, r.jsx)("span", {
+          children: [u, h && (0, r.jsx)("span", {
             className: c.required,
             children: "*"
           })]
         })
-      }), (0, r.jsx)(i.Kx8, {
-        maxLength: g,
-        onChange: I,
+      }), (0, r.jsx)(l.Kx8, {
+        maxLength: f,
+        onChange: Z,
         value: j,
-        error: C,
+        error: O,
         rows: p,
-        placeholder: m,
+        placeholder: _,
         autoFocus: true
-      }), null != _ && (0, r.jsx)("div", {
-        children: (0, r.jsx)(i.Text, {
+      }), null != m && (0, r.jsx)("div", {
+        children: (0, r.jsx)(l.Text, {
           variant: "text-sm/normal",
-          children: v.current(_)
+          children: v.current(m)
         })
       })]
     })
   },
-  _ = e => {
+  m = e => {
     let {
       elements: t,
       onChange: n,
-      state: a
-    } = e, i = t.map(e => {
+      state: i
+    } = e, l = t.map(e => {
       var t;
-      let i = e.name;
+      let l = e.name;
       return (0, r.jsx)(u, {
         data: e.data,
-        onChange: e => n(i, e.value, e.isValid),
-        initialText: null != (t = null == a ? true : a[i]) ? t : true,
+        onChange: e => n(l, e.value, e.isValid),
+        initialText: null != (t = null == i ? true : i[l]) ? t : true,
         isRequired: e.should_submit_data
-      }, i)
+      }, l)
     });
     return (0, r.jsx)("div", {
-      children: i
+      children: l
     })
   }

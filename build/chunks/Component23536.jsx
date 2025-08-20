@@ -1,4 +1,4 @@
-/** Chunk was on 36499 **/
+/** Chunk was on 5665 **/
 /** chunk id: 23536, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -41,10 +41,10 @@ function y(e) {
       reset: true
     })
   });
-  let j = i.useCallback(() => {
+  let O = i.useCallback(() => {
       s.Z.fetchPins(t.id)
     }, [t.id]),
-    O = i.useCallback(() => {
+    j = i.useCallback(() => {
       var e;
       s.Z.fetchPins(t.id, {
         before: null == (e = _.at(false)) ? true : e.pinnedAt
@@ -55,7 +55,7 @@ function y(e) {
     "aria-label": g.intl.string(g.t["mp1N//"]),
     children: (0, r.jsx)(f.ZP, {
       channel: t,
-      onFetch: j,
+      onFetch: O,
       messages: x,
       loading: C === p.M.LOADING,
       hasMore: C === p.M.LOADED_HAS_MORE,
@@ -77,7 +77,7 @@ function y(e) {
         null != e && (n.shiftKey ? s.Z.unpinMessage(t, e.id) : m.Z.confirmUnpin(t, e))
       },
       onJump: y,
-      loadMore: O,
+      loadMore: j,
       getProTip: function() {
         return t.isPrivate() ? g.intl.string(g.t["3dLGAg"]) : g.intl.string(g.t.KTbRcn)
       },

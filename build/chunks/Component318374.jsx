@@ -94,19 +94,19 @@ function v(e) {
     overflowCountColor: T = "interactive-normal",
     overflowCountClassName: S,
     hideOverflowCount: A = false,
-    disableUsernameTooltip: N = false,
-    disableUserPopout: C = false,
+    disableUsernameTooltip: C = false,
+    disableUserPopout: N = false,
     onClickOverflow: R,
     onFocusOverflow: P,
     onUserClick: w,
     onUserPopoutRequestClose: D,
-    "aria-label": L,
-    "aria-labelledby": x,
-    "aria-hidden": M
-  } = e, [k, j] = i.useState(false), U = y(v), G = i.useRef(null), B = t.length - a, V = B + 1, F = B > 0 && !A && !M, Z = () => (0, r.jsx)(c.VqE, {
+    "aria-label": x,
+    "aria-labelledby": L,
+    "aria-hidden": j
+  } = e, [M, k] = i.useState(false), U = y(v), G = i.useRef(null), B = t.length - a, Z = B + 1, V = B > 0 && !A && !j, F = () => (0, r.jsx)(c.VqE, {
     className: h.popoutWrapper,
-    "aria-label": L,
-    "aria-labelledby": x,
+    "aria-label": x,
+    "aria-labelledby": L,
     children: (0, r.jsx)(c.Ttm, {
       className: h.scroller,
       children: t.map(e => (0, r.jsx)(d.Z, {
@@ -114,32 +114,32 @@ function v(e) {
         guildId: s,
         channelId: m,
         nick: f.ZP.getNickname(s, m, e),
-        disablePopout: "function" == typeof C ? C(e.id) : C,
+        disablePopout: "function" == typeof N ? N(e.id) : N,
         onClick: w,
         onPopoutRequestClose: () => {
-          j(false), null == D || D()
+          k(false), null == D || D()
         },
         onContextMenu: t => (0, u.jW)(t, async () => {
           let {
             default: t
-          } = await Promise.all([n.e("70274"), n.e("79695"), n.e("69220"), n.e("92522")]).then(n.bind(n, 881351));
+          } = await Promise.all([n.e("79695"), n.e("69220")]).then(n.bind(n, 881351));
           return n => (0, r.jsx)(t, b(g({}, n), {
             user: e,
             guildId: s,
             channelId: m
           }))
         }, {
-          onClose: () => j(false)
+          onClose: () => k(false)
         })
       }, e.id))
     })
   }), H = () => {
-    let e = F ? a - 1 : Math.min(t.length, a),
+    let e = V ? a - 1 : Math.min(t.length, a),
       n = e - 1,
       i = l()(t).take(e).map((e, t) => {
         let i = f.ZP.getNickname(s, m, e),
           a = null != i ? i : _.ZP.getName(e),
-          l = t === n && !F,
+          l = t === n && !V,
           u = o()(h.avatar, U, l && h.isLast),
           d = (0, r.jsx)(c.qEK, {
             src: e.getAvatarURL(s, 24),
@@ -148,7 +148,7 @@ function v(e) {
           });
         return (0, r.jsx)("li", {
           className: u,
-          children: N ? (0, r.jsx)("span", {
+          children: C ? (0, r.jsx)("span", {
             role: "img",
             "aria-label": a,
             children: d
@@ -168,38 +168,38 @@ function v(e) {
       children: i
     })
   }, Y = () => {
-    if (!F) return null;
+    if (!V) return null;
     let e = null != I ? I : O(v);
     return (0, r.jsx)(c.yRy, {
       targetElementRef: G,
-      renderPopout: Z,
-      shouldShow: k,
+      renderPopout: F,
+      shouldShow: M,
       position: "bottom",
-      onRequestClose: () => j(false),
+      onRequestClose: () => k(false),
       children: t => (0, r.jsx)(c.P3F, b(g({}, t), {
         innerRef: G,
         className: o()(h.overflow, U, S),
         onFocus: P,
         onClick: e => {
-          null == R || R(e), j(true)
+          null == R || R(e), k(true)
         },
         "aria-label": p.intl.formatToPlainString(p.t.R8Z8Qk, {
-          count: V
+          count: Z
         }),
         children: (0, r.jsx)(c.Text, {
           variant: e,
           color: T,
-          children: V > 99 ? ">99" : "+".concat(V)
+          children: Z > 99 ? ">99" : "+".concat(Z)
         })
       }))
     }, "overflow")
   };
   return t.length <= 0 ? null : (0, r.jsxs)("div", {
     role: "group",
-    "aria-label": L,
-    "aria-labelledby": x,
+    "aria-label": x,
+    "aria-labelledby": L,
     className: o()(E, h.avatars),
-    "aria-hidden": M,
+    "aria-hidden": j,
     children: [H(), Y()]
   })
 }

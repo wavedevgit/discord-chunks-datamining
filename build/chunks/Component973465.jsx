@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 973465, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 973465, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => d
+  Z: () => u
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -12,7 +13,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx");
 
-function d() {
+function u() {
   let e = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.isVideoAvailable());
   return (0, Chunk951288.jsx)(Chunk481060.xJW, {
     title: Chunk388032.intl.string(Chunk388032.t.FsQ3OT),

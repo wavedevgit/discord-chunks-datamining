@@ -44,7 +44,7 @@ function D(e, t, n) {
   }) : e[t] = n, e
 }
 
-function L(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -57,7 +57,7 @@ function L(e) {
   return e
 }
 
-function x(e, t) {
+function L(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -68,13 +68,13 @@ function x(e, t) {
   return n
 }
 
-function M(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
+function j(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let k = 190,
-  j = 178,
+let M = 190,
+  k = 178,
   U = "MESSAGE_CONFETTI_POTION_MODAL_KEY",
   G = e => {
     let {
@@ -86,12 +86,12 @@ let k = 190,
       source: u
     } = e, d = m.Z.getChannel(t);
     null != d && ((0, _.Q3)(s.z.CONFETTI_POTION_UPSELL, {
-      dismissAction: C.L.INDIRECT_ACTION
+      dismissAction: N.L.INDIRECT_ACTION
     }), (0, c.ZDy)(async () => {
       let {
         default: e
       } = await Promise.resolve().then(n.bind(n, 135793));
-      return t => (0, r.jsx)(e, M(L({}, t), {
+      return t => (0, r.jsx)(e, j(x({}, t), {
         channel: d,
         message: i,
         onRedeem: a,
@@ -127,7 +127,7 @@ function B(e) {
         }
       }
     },
-    children: (0, r.jsx)(V, {
+    children: (0, r.jsx)(Z, {
       channel: n,
       message: o,
       onRedeem: s,
@@ -136,7 +136,7 @@ function B(e) {
   })
 }
 
-function V(e) {
+function Z(e) {
   let {
     channel: t,
     message: n,
@@ -151,7 +151,7 @@ function V(e) {
     fetchedEntitlement: O,
     error: I
   } = (0, A.t6)(v.D1), S = g || I, {
-    analyticsLocations: C
+    analyticsLocations: N
   } = (0, f.ZP)([d.Z.CONFETTI_POTION_MODAL]), R = null != E && !E.consumed, P = m || !O;
   (0, i.useEffect)(() => () => {
     S && (0, b.SN)(v.D1)
@@ -162,35 +162,35 @@ function V(e) {
     D = (0, i.useCallback)(() => {
       (0, h.Z)({
         skuId: v.D1,
-        analyticsLocations: C,
+        analyticsLocations: N,
         onComplete: () => {
           w(), (0, b.gA)(v.D1)
         },
         variantsReturnStyle: o.v.INDIVIDUAL_PRODUCTS
       })
-    }, [w, C]),
-    L = (0, i.useCallback)(() => R ? w() : D(), [w, D, R]),
-    x = (0, i.useMemo)(() => {
+    }, [w, N]),
+    x = (0, i.useCallback)(() => R ? w() : D(), [w, D, R]),
+    L = (0, i.useMemo)(() => {
       if (null != E) {
         if ("apply" === s) return 3;
-        if (E.type === N.qc2.DEVELOPER_GIFT) return 1;
+        if (E.type === C.qc2.DEVELOPER_GIFT) return 1;
         if (R) return 2
       }
       return 0
     }, [E, R, s]),
-    M = (0, i.useMemo)(() => 0 === x ? 1 : u ? 2 : 3 * (null == _), [u, _, x]);
-  return (0, r.jsx)(F, {
+    j = (0, i.useMemo)(() => 0 === L ? 1 : u ? 2 : 3 * (null == _), [u, _, L]);
+  return (0, r.jsx)(V, {
     channel: t,
-    buttonPurchaseState: x,
-    buttonDisabledState: M,
+    buttonPurchaseState: L,
+    buttonDisabledState: j,
     price: p,
-    onActionClick: L,
+    onActionClick: x,
     loading: P,
     selectedEmoji: null != _ ? _ : true,
     isReaction: l
   })
 }
-let F = e => {
+let V = e => {
     let {
       channel: t,
       buttonPurchaseState: n,
@@ -223,7 +223,7 @@ let F = e => {
       children: [(0, r.jsx)("div", {
         className: P.modal,
         ref: d,
-        children: (0, r.jsx)(Z, {
+        children: (0, r.jsx)(F, {
           channel: t,
           selectedEmoji: c,
           isReaction: u
@@ -236,7 +236,7 @@ let F = e => {
       })]
     })
   },
-  Z = e => {
+  F = e => {
     let {
       channel: t,
       selectedEmoji: n,
@@ -259,7 +259,7 @@ let F = e => {
           color: "text-link",
           variant: "text-sm/normal",
           children: R.intl.format(R.t["jerM9/"], {
-            helpCenterLink: g.Z.getArticleURL(N.BhN.CONFETTI_POTION)
+            helpCenterLink: g.Z.getArticleURL(C.BhN.CONFETTI_POTION)
           })
         })]
       }), (0, r.jsx)("div", {
@@ -422,7 +422,7 @@ let F = e => {
       tooltipContentClassName: P.tooltip,
       text: u,
       shouldShow: !!s,
-      children: e => (0, r.jsx)(c.zxk, M(L({}, e), {
+      children: e => (0, r.jsx)(c.zxk, j(x({}, e), {
         onClick: o,
         disabled: s,
         text: l
@@ -435,8 +435,8 @@ let F = e => {
       className: Chunk393919.error,
       children: [(0, Chunk951288.jsx)(Chunk481060.Eep, {
         src: Chunk99713,
-        width: j,
-        height: k
+        width: k,
+        height: M
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         children: Chunk388032.intl.string(Chunk388032.t.oKJdSk)

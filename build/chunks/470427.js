@@ -1,77 +1,81 @@
-/** Chunk was on 91584 **/
-/** chunk id: 470427, original params: t,e,r (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 470427, original params: e,t,n (module,exports,re quire) **/
 "use strict";
+
+function r(e, t) {
+  e.prototype = Object.create(t.prototype), e.prototype.constructor = e, e.__proto__ = t
+}
 var Chunk76466 = require("./76466.js"),
   Chunk102801 = require("./102801.js"),
   Chunk65183 = require("./65183.js"),
-  a = Chunk65183.List,
-  u = Chunk65183.Map,
-  s = Chunk65183.OrderedSet,
-  c = Chunk65183.Record,
-  l = Chunk65183.Repeat,
-  f = s(),
-  p = {
+  s = Chunk65183.List,
+  l = Chunk65183.Map,
+  c = Chunk65183.OrderedSet,
+  u = Chunk65183.Record,
+  d = Chunk65183.Repeat,
+  f = c(),
+  _ = {
     parent: null,
-    characterList: a(),
-    data: u(),
+    characterList: s(),
+    data: l(),
     depth: 0,
     key: "",
     text: "",
     type: "unstyled",
-    children: a(),
+    children: s(),
     prevSibling: null,
     nextSibling: null
   },
-  h = function(t, e) {
-    return t.getStyle() === e.getStyle()
+  p = function(e, t) {
+    return e.getStyle() === t.getStyle()
   },
-  d = function(t, e) {
-    return t.getEntity() === e.getEntity()
+  h = function(e, t) {
+    return e.getEntity() === t.getEntity()
   },
-  g = function(t) {
-    if (!t) return t;
-    var e = t.characterList,
-      r = t.text;
-    return r && !e && (t.characterList = a(l(n.EMPTY, r.length))), t
+  m = function(e) {
+    if (!e) return e;
+    var t = e.characterList,
+      n = e.text;
+    return n && !t && (e.characterList = s(d(i.EMPTY, n.length))), e
   };
-module.exports = function(t) {
-  function e() {
-    var e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : p;
-    return t.call(this, g(e)) || this
+module.exports = function(e) {
+  function t() {
+    var t = arguments.length > 0 && true !== arguments[0] ? arguments[0] : _;
+    return e.call(this, m(t)) || this
   }
-  e.prototype = Object.create(t.prototype), e.prototype.constructor = e, e.__proto__ = t;
-  var r = e.prototype;
-  return r.getKey = function() {
+  r(t, e);
+  var n = t.prototype;
+  return n.getKey = function() {
     return this.get("key")
-  }, r.getType = function() {
+  }, n.getType = function() {
     return this.get("type")
-  }, r.getText = function() {
+  }, n.getText = function() {
     return this.get("text")
-  }, r.getCharacterList = function() {
+  }, n.getCharacterList = function() {
     return this.get("characterList")
-  }, r.getLength = function() {
+  }, n.getLength = function() {
     return this.getText().length
-  }, r.getDepth = function() {
+  }, n.getDepth = function() {
     return this.get("depth")
-  }, r.getData = function() {
+  }, n.getData = function() {
     return this.get("data")
-  }, r.getInlineStyleAt = function(t) {
-    var e = this.getCharacterList().get(t);
-    return e ? e.getStyle() : f
-  }, r.getEntityAt = function(t) {
-    var e = this.getCharacterList().get(t);
-    return e ? e.getEntity() : null
-  }, r.getChildKeys = function() {
+  }, n.getInlineStyleAt = function(e) {
+    var t = this.getCharacterList().get(e);
+    return t ? t.getStyle() : f
+  }, n.getEntityAt = function(e) {
+    var t = this.getCharacterList().get(e);
+    return t ? t.getEntity() : null
+  }, n.getChildKeys = function() {
     return this.get("children")
-  }, r.getParentKey = function() {
+  }, n.getParentKey = function() {
     return this.get("parent")
-  }, r.getPrevSiblingKey = function() {
+  }, n.getPrevSiblingKey = function() {
     return this.get("prevSibling")
-  }, r.getNextSiblingKey = function() {
+  }, n.getNextSiblingKey = function() {
     return this.get("nextSibling")
-  }, r.findStyleRanges = function(t, e) {
-    i(this.getCharacterList(), h, t, e)
-  }, r.findEntityRanges = function(t, e) {
-    i(this.getCharacterList(), d, t, e)
-  }, e
-}(c(p))
+  }, n.findStyleRanges = function(e, t) {
+    a(this.getCharacterList(), p, e, t)
+  }, n.findEntityRanges = function(e, t) {
+    a(this.getCharacterList(), h, e, t)
+  }, t
+}(u(_))

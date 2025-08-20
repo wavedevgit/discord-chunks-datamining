@@ -1,4 +1,4 @@
-/** Chunk was on 36499 **/
+/** Chunk was on 5665 **/
 /** chunk id: 677601, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => ez
@@ -435,7 +435,7 @@ class eV extends Chunk647438.PureComponent {
                 return (0, g.jW)(t, async () => {
                   let {
                     default: t
-                  } = await Promise.all([n.e("79695"), n.e("70205"), n.e("98783"), n.e("57789"), n.e("56826"), n.e("36658")]).then(n.bind(n, 131404));
+                  } = await Promise.all([n.e("79695"), n.e("70205"), n.e("98783"), n.e("57789"), n.e("56826"), n.e("92595")]).then(n.bind(n, 131404));
                   return n => (0, r.jsx)(t, eF(eB({}, n), {
                     showChannelCallItems: true,
                     showMediaItems: true,
@@ -661,7 +661,7 @@ class eV extends Chunk647438.PureComponent {
         channel: n,
         inCall: i
       } = this.props;
-      return !e || t || this.popoutOpen && !this.inPopout && i ? null : (0, r.jsx)(eO.ZP, {
+      return !e || t || this.popoutOpen && !this.inPopout && i ? null : (0, r.jsx)(ej.ZP, {
         children: (0, r.jsx)(X.Z, {
           className: eL.chatToasts,
           channelId: n.id
@@ -725,7 +725,7 @@ let ez = function(e) {
     ref: f
   } = (0, v.ZP)(), {
     ref: m
-  } = (0, v.ZP)(), g = (0, O.bp)(), b = (0, D.Z)(), y = (0, u.e7)([ep.Z], () => {
+  } = (0, v.ZP)(), g = (0, j.bp)(), b = (0, D.Z)(), y = (0, u.e7)([ep.Z], () => {
     var e;
     return (null != (e = null == b ? true : b.channelId) ? e : ep.Z.getVoiceChannelId()) === n.id
   }), {
@@ -768,7 +768,7 @@ let ez = function(e) {
     _.ZP.updatedUnsyncedSettings({
       callHeaderHeight: e
     })
-  }, []), en = null != (t = null == z ? true : z.id) ? t : null, er = (0, I.Z)(en, n.id), ei = (0, u.e7)([S.Z], () => S.Z.getFetchState(), []), eh = (0, j.Z)(ei);
+  }, []), en = null != (t = null == z ? true : z.id) ? t : null, er = (0, I.Z)(en, n.id), ei = (0, u.e7)([S.Z], () => S.Z.getFetchState(), []), eh = (0, O.Z)(ei);
   i.useEffect(() => {
     ei === S.O.ERROR && eh !== S.O.ERROR && (0, h.showToast)((0, h.createToast)(eD.intl.string(eD.t.AlJyIy), h.ToastType.FAILURE))
   }, [ei, eh]);
@@ -782,7 +782,7 @@ let ez = function(e) {
       null != t ? e_.ZP.unblockDisplaySleep(t) : e = true
     }
   }, [y, N]);
-  let em = (0, ej.Z)(n, true),
+  let em = (0, eO.Z)(n, true),
     {
       hasParticipantsPanel: eg
     } = (0, eZ.Z)({
@@ -801,7 +801,7 @@ let ez = function(e) {
     value: ey,
     children: (0, r.jsx)(x.Z, {
       page: ek.ZY5.CHANNEL_CALL,
-      children: (0, r.jsx)(eO.B2, {
+      children: (0, r.jsx)(ej.B2, {
         children: (0, r.jsxs)(eN._A, {
           children: [(0, r.jsx)(eV, {
             channel: n,
@@ -846,7 +846,7 @@ let ez = function(e) {
             awaitingRemoteSessionInfo: $,
             currentChannelActivities: ev,
             theme: eE
-          }), !n.isPrivate() && (0, r.jsx)(eN.YR, {}), (0, r.jsx)(eO.H_, {})]
+          }), !n.isPrivate() && (0, r.jsx)(eN.YR, {}), (0, r.jsx)(ej.H_, {})]
         })
       })
     })

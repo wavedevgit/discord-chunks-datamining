@@ -86,8 +86,8 @@ let E = function(e) {
       to: T,
       avatarClassName: S,
       selectedClassName: A,
-      innerClassName: N,
-      wrapContent: C,
+      innerClassName: C,
+      wrapContent: N,
       highlighted: R,
       focusProps: P
     } = e,
@@ -99,7 +99,7 @@ let E = function(e) {
     [d.clickable]: !v && (null != T || null != y)
   }), w["aria-selected"] = null != (t = w["aria-selected"]) ? t : v;
   let D = i.useRef(null),
-    L = (0, r.jsxs)("div", {
+    x = (0, r.jsxs)("div", {
       className: o()(d.childContainer, {
         [d.nameplated]: null != p
       }),
@@ -111,9 +111,9 @@ let E = function(e) {
         placement: c.i.MEMBER_LIST
       }), (0, r.jsxs)("div", {
         ref: D,
-        className: o()(N, d.layout, {
+        className: o()(C, d.layout, {
           [d.muted]: !v && I,
-          [d.wrappedLayout]: C
+          [d.wrappedLayout]: N
         }),
         children: [(0, r.jsx)("div", {
           className: o()(d.avatar, S),
@@ -124,7 +124,7 @@ let E = function(e) {
             className: d.nameAndDecorators,
             children: [(0, r.jsx)("div", {
               className: o()(d.name, {
-                [d.wrappedName]: C
+                [d.wrappedName]: N
               }),
               children: f
             }), b]
@@ -145,7 +145,7 @@ let E = function(e) {
     }, w), {
       role: "listitem",
       ref: n,
-      children: L
+      children: x
     }))
   })) : null != y ? (0, r.jsx)(l.P3F, h(_({
     onClick: y,
@@ -153,12 +153,12 @@ let E = function(e) {
   }, w), {
     role: "listitem",
     innerRef: n,
-    children: L
+    children: x
   })) : (0, r.jsx)(l.tEY, h(_({}, P), {
     children: (0, r.jsx)("div", h(_({}, w), {
       role: "listitem",
       ref: n,
-      children: L
+      children: x
     }))
   }))
 }

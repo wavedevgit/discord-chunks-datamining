@@ -83,7 +83,7 @@ function A(e) {
   O[e.integrationId] = true !== e.error ? e.error : ""
 }
 
-function N(e) {
+function C(e) {
   let {
     platformType: t,
     id: n,
@@ -94,7 +94,7 @@ function N(e) {
   null != r && (a.revoked = r), null != i && (a.accessToken = i)
 }
 
-function C(e) {
+function N(e) {
   let {
     code: t,
     state: n,
@@ -147,7 +147,7 @@ let P = new R(Chunk570140.Z, {
   CONNECTION_OPEN: I,
   USER_CONNECTIONS_UPDATE: T,
   USER_CONNECTIONS_INTEGRATION_JOINING: S,
-  USER_CONNECTION_UPDATE: N,
+  USER_CONNECTION_UPDATE: C,
   USER_CONNECTIONS_INTEGRATION_JOINING_ERROR: A,
-  USER_CONNECTIONS_CALLBACK: C
+  USER_CONNECTIONS_CALLBACK: N
 })

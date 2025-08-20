@@ -1,5 +1,6 @@
-/** Chunk was on 66181 **/
-/** chunk id: 147111, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 147111, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   row: "row__89d80",
   divider: "divider__89d80",

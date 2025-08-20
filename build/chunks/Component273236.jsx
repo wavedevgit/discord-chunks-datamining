@@ -1,26 +1,26 @@
 /** Chunk was on 53512 **/
 /** chunk id: 273236, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  Z: () => x
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  r = require.n(Chunk120356),
   Chunk603113 = require("./603113.js"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk814125 = require("./814125.js"),
   Chunk920178 = require("./920178.js");
-let u = Chunk647438.forwardRef(function(e, t) {
-  let {} = e, [s, a] = r.useState("before"), [u, j] = r.useState(false), [g, b] = r.useState(false);
-  r.useImperativeHandle(t, () => ({
-    maybeChangeToAfterTab: () => (g || f("after"), g)
+let x = Chunk647438.forwardRef(function(e, t) {
+  let {} = e, [a, r] = s.useState("before"), [x, j] = s.useState(false), [g, _] = s.useState(false);
+  s.useImperativeHandle(t, () => ({
+    maybeChangeToAfterTab: () => (g || b("after"), g)
   }));
-  let f = r.useCallback(e => {
+  let b = s.useCallback(e => {
     j(true), setTimeout(() => {
       l.unstable_batchedUpdates(() => {
-        "after" === e && b(true), j(false), a(e)
+        "after" === e && _(true), j(false), r(e)
       })
     }, 400)
   }, []);
@@ -50,22 +50,22 @@ let u = Chunk647438.forwardRef(function(e, t) {
         children: [(0, i.jsx)("div", {
           className: d.tabBackground,
           style: {
-            left: "before" === s ? 0 : "50%"
+            left: "before" === a ? 0 : "50%"
           }
         }), (0, i.jsx)(c.P3F, {
           className: d.tab,
-          onClick: () => f("before"),
+          onClick: () => b("before"),
           children: (0, i.jsx)(c.Text, {
             variant: "text-sm/medium",
-            color: "before" === s ? "header-primary" : "text-muted",
+            color: "before" === a ? "header-primary" : "text-muted",
             children: o.intl.string(o.t.sLv7LC)
           })
         }), (0, i.jsx)(c.P3F, {
           className: d.tab,
-          onClick: () => f("after"),
+          onClick: () => b("after"),
           children: (0, i.jsx)(c.Text, {
             variant: "text-sm/medium",
-            color: "after" === s ? "header-primary" : "text-muted",
+            color: "after" === a ? "header-primary" : "text-muted",
             children: o.intl.string(o.t.R8eSY2)
           })
         })]
@@ -82,7 +82,7 @@ let u = Chunk647438.forwardRef(function(e, t) {
               alt: "Example Guild Icon"
             })
           }), (0, i.jsx)("div", {
-            className: "after" === s ? d.guild : d.unreadGuild,
+            className: "after" === a ? d.guild : d.unreadGuild,
             children: (0, i.jsx)("img", {
               src: n(390115),
               width: 36,
@@ -90,7 +90,7 @@ let u = Chunk647438.forwardRef(function(e, t) {
               alt: "Example Guild Icon"
             })
           }), (0, i.jsx)("div", {
-            className: "after" === s ? d.guild : d.unreadGuild,
+            className: "after" === a ? d.guild : d.unreadGuild,
             children: (0, i.jsx)("img", {
               src: n(536411),
               width: 36,
@@ -100,41 +100,41 @@ let u = Chunk647438.forwardRef(function(e, t) {
           })]
         }), (0, i.jsxs)("div", {
           className: d.channels,
-          children: [(0, i.jsx)(h, {
+          children: [(0, i.jsx)(u, {
             mention: true,
             name: o.intl.string(o.t.WFejRk)
-          }), (0, i.jsx)(h, {
+          }), (0, i.jsx)(u, {
             name: o.intl.string(o.t.jqWm9f)
-          }), (0, i.jsx)(h, {
-            grey: "after" === s,
+          }), (0, i.jsx)(u, {
+            grey: "after" === a,
             name: o.intl.string(o.t.p9z9Iy)
-          }), (0, i.jsx)(h, {
-            grey: "after" === s,
+          }), (0, i.jsx)(u, {
+            grey: "after" === a,
             name: o.intl.string(o.t["2bdWDw"])
-          }), (0, i.jsx)(h, {
+          }), (0, i.jsx)(u, {
             name: o.intl.string(o.t["Ci+Our"])
-          }), (0, i.jsx)(h, {
-            grey: "after" === s,
+          }), (0, i.jsx)(u, {
+            grey: "after" === a,
             name: o.intl.string(o.t["/7TEdn"])
-          }), (0, i.jsx)(h, {
-            grey: "after" === s,
+          }), (0, i.jsx)(u, {
+            grey: "after" === a,
             name: o.intl.string(o.t["Ime/t7"])
           })]
         })]
-      }), (0, i.jsx)(x, {
-        hidden: u || "after" === s,
+      }), (0, i.jsx)(h, {
+        hidden: x || "after" === a,
         className: d.tipBefore1,
         text: o.intl.string(o.t.WrPMOD)
-      }), (0, i.jsx)(x, {
-        hidden: u || "after" === s,
+      }), (0, i.jsx)(h, {
+        hidden: x || "after" === a,
         className: d.tipBefore2,
         text: o.intl.string(o.t["pApL7+"])
-      }), (0, i.jsx)(x, {
-        hidden: u || "before" === s,
+      }), (0, i.jsx)(h, {
+        hidden: x || "before" === a,
         className: d.tipAfter1,
         text: o.intl.string(o.t.eZb3iY)
-      }), (0, i.jsx)(x, {
-        hidden: u || "before" === s,
+      }), (0, i.jsx)(h, {
+        hidden: x || "before" === a,
         className: d.tipAfter2,
         text: o.intl.string(o.t.M3KrJS)
       })]
@@ -142,15 +142,15 @@ let u = Chunk647438.forwardRef(function(e, t) {
   })
 });
 
-function x(e) {
+function h(e) {
   let {
     text: t,
     className: n,
-    hidden: r
+    hidden: s
   } = e;
   return (0, i.jsxs)("div", {
-    className: a()(n, d.tip, {
-      [d.hidden]: r
+    className: r()(n, d.tip, {
+      [d.hidden]: s
     }),
     children: [(0, i.jsx)(c.Text, {
       className: d.__invalid_tipText,
@@ -163,14 +163,14 @@ function x(e) {
   })
 }
 
-function h(e) {
+function u(e) {
   let {
     grey: t,
     mention: n,
-    name: r
+    name: s
   } = e;
   return (0, i.jsxs)("div", {
-    className: a()(d.channel, {
+    className: r()(d.channel, {
       [d.grey]: t,
       [d.mention]: n
     }),
@@ -181,7 +181,7 @@ function h(e) {
     }), (0, i.jsx)(c.Text, {
       variant: "text-md/medium",
       className: d.channelName,
-      children: r
+      children: s
     })]
   })
 }

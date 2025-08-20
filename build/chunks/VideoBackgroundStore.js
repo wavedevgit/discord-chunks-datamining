@@ -105,10 +105,10 @@ function A() {
   g !== Chunk944486.Z.getVoiceChannelId() && (E = false), I() && (E = true), g = Chunk944486.Z.getVoiceChannelId()
 }
 
-function N() {
+function C() {
   m = false, E = false, g = null, b = {}
 }
-class C extends(r = Chunk442837.ZP.Store) {
+class N extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk581883.Z, Chunk944486.Z, Chunk131951.Z), this.syncWith([Chunk944486.Z, Chunk131951.Z], A)
   }
@@ -122,12 +122,12 @@ class C extends(r = Chunk442837.ZP.Store) {
     return E
   }
 }
-f(C, "displayName", "VideoBackgroundStore");
-let R = new C(Chunk570140.Z, {
+f(N, "displayName", "VideoBackgroundStore");
+let R = new N(Chunk570140.Z, {
   VIDEO_FILTER_ASSETS_FETCH_SUCCESS: y,
   VIDEO_FILTER_ASSET_UPLOAD_SUCCESS: O,
   VIDEO_FILTER_ASSET_DELETE_SUCCESS: v,
   VIDEO_SAVE_LAST_USED_BACKGROUND_OPTION: T,
   MEDIA_ENGINE_APPLY_MEDIA_FILTER_SETTINGS: S,
-  LOGOUT: N
+  LOGOUT: C
 })

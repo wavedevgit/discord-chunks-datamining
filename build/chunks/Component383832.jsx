@@ -1,8 +1,9 @@
-/** Chunk was on 66181 **/
-/** chunk id: 383832, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 383832, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => o,
-  y: () => c
+  Z: () => d,
+  y: () => f
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -10,31 +11,51 @@ var Chunk481060 = require("./481060.js"),
   Chunk570140 = require("./570140.js"),
   Chunk71509 = require("./71509.js");
 
+function s(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
 function l(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      i = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), i.forEach(function(t) {
-      var i;
-      i = n[t], t in e ? Object.defineProperty(e, t, {
-        value: i,
-        enumerable: true,
-        configurable: true,
-        writable: true
-      }) : e[t] = i
+    }))), r.forEach(function(t) {
+      s(e, t, n[t])
     })
   }
   return e
 }
 
-function o() {
+function c(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function u(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : c(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+
+function d() {
   (0, Chunk481060.ZDy)(async () => {
     let {
       default: e
     } = await require.e("55944").then(require.bind(require, 266653));
-    return t => (0, i.jsx)(e, l({}, t))
+    return t => (0, r.jsx)(e, l({}, t))
   }, {
     onCloseCallback: () => {
       Chunk570140.Z.dispatch({
@@ -46,26 +67,14 @@ function o() {
   })
 }
 
-function c() {
+function f() {
   (0, Chunk481060.ZDy)(async () => {
     let {
       default: e
     } = await Promise.all([require.e("52030"), require.e("25761"), require.e("83560")]).then(require.bind(require, 153069));
-    return t => {
-      var n, r;
-      return (0, i.jsx)(e, (n = l({}, t), r = r = {
-        onBackPressed: o
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-          var i = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, i)
-        }
-        return n
-      })(Object(r)).forEach(function(e) {
-        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
-      }), n))
-    }
+    return t => (0, r.jsx)(e, u(l({}, t), {
+      onBackPressed: d
+    }))
   }, {
     onCloseCallback: () => {
       Chunk570140.Z.dispatch({

@@ -51,12 +51,12 @@ function u(e, t) {
   var n, o, l, u, d, f, _, p, h, m, g, E, b, y, O, v, I, T, S;
   let A = null == (n = t.powerup_metadata) ? true : n.category_type;
   if (null == A) return;
-  let N = null == (o = t.sku) ? true : o.powerup_metadata;
-  if (null == N) return;
-  let C = {
+  let C = null == (o = t.sku) ? true : o.powerup_metadata;
+  if (null == C) return;
+  let N = {
     title: t.summary,
     skuId: t.sku.id,
-    cost: N.boost_price,
+    cost: C.boost_price,
     dependencies: null != t.sku.dependent_sku_id ? [t.sku.dependent_sku_id] : [],
     animatedImageUrl: null == (l = t.powerup_metadata) ? true : l.animated_image_url,
     staticImageUrl: null == (u = t.powerup_metadata) ? true : u.static_image_url,
@@ -81,12 +81,12 @@ function u(e, t) {
           total_sound_slots: l,
           total_sticker_slots: u
         })
-      }, C)
+      }, N)
     }
     case i.Us.PERK:
       return s({
         type: i.Us.PERK,
         description: null != (S = t.description) ? S : ""
-      }, C)
+      }, N)
   }
 }

@@ -1,12 +1,13 @@
-/** Chunk was on 11868 **/
-/** chunk id: 859428, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 859428, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => f
+  Z: () => b
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -19,32 +20,33 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk990186 = require("./990186.js"),
   Chunk226910 = require("./226910.js");
-let f = () => {
+let b = () => {
   let e = (0, Chunk442837.e7)([Chunk914010.Z], () => Chunk914010.Z.getGuildId(), []),
     t = (0, Chunk442837.e7)([Chunk430824.Z], () => Chunk430824.Z.getGuild(module), [module]),
-    [n, l] = Chunk647438.useState(false);
+    [n, a] = Chunk647438.useState(false);
   if (null == exports) return null;
-  let f = async () => {
-    Chunk120356(true);
-    try {
-      Chunk900849.mT(exports.id), await Chunk749210.Z.joinGuild(exports.id, {
-        source: Chunk981631.vtS.NOTICE_BAR
-      })
-    } catch (e) {
-      Chunk120356(false)
-    }
-  };
+  let b = () => {
+      (0, Chunk703656.s1)().goBack()
+    },
+    y = async () => {
+      Chunk120356(true);
+      try {
+        Chunk900849.mT(exports.id), await Chunk749210.Z.joinGuild(exports.id, {
+          source: Chunk981631.vtS.NOTICE_BAR
+        })
+      } catch (e) {
+        Chunk120356(false)
+      }
+    };
   return (0, Chunk951288.jsxs)("div", {
-    className: a()(Chunk990186.notice, Chunk226910.notice),
+    className: o()(Chunk990186.notice, Chunk226910.notice),
     children: [(0, Chunk951288.jsxs)(Chunk755721.zx, {
       look: Chunk755721.zx.Looks.OUTLINED,
       color: Chunk755721.zx.Colors.WHITE,
       size: Chunk755721.zx.Sizes.NONE,
-      className: a()(Chunk990186.button, Chunk990186.back),
+      className: o()(Chunk990186.button, Chunk990186.back),
       innerClassName: Chunk990186.iconButton,
-      onClick: () => {
-        (0, Chunk703656.s1)().goBack()
-      },
+      onClick: b,
       children: [(0, Chunk951288.jsx)(Chunk481060.whL, {
         size: "xs",
         color: "currentColor",
@@ -60,7 +62,7 @@ let f = () => {
       color: Chunk755721.zx.Colors.WHITE,
       size: Chunk755721.zx.Sizes.NONE,
       submitting: require,
-      onClick: f,
+      onClick: y,
       children: Chunk388032.intl.format(Chunk388032.t.uHN7n5, {
         guild: exports.name
       })

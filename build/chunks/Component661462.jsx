@@ -1,7 +1,7 @@
-/** Chunk was on 75283 **/
-/** chunk id: 661462, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 8853 **/
+/** chunk id: 661462, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => p
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -14,132 +14,132 @@ var Chunk951288 = require("./951288.js"),
   Chunk228168 = require("./228168.js"),
   Chunk883101 = require("./883101.js");
 
-function p(e) {
+function m(e) {
   let {
-    user: t,
-    currentUser: n,
+    user: n,
+    currentUser: t,
     section: o,
-    subsection: i,
-    displayProfile: l,
+    subsection: l,
+    displayProfile: i,
     guildId: f,
-    channelId: p,
-    onClose: m
+    channelId: m,
+    onClose: p
   } = e;
-  return o === u.oh.ACTIVITY ? (0, r.jsx)(a.Z, {
-    user: t,
-    currentUser: n,
-    displayProfile: l,
+  return o === u.oh.ACTIVITY ? (0, r.jsx)(c.Z, {
+    user: n,
+    currentUser: t,
+    displayProfile: i,
     guildId: f,
-    channelId: p,
-    subsection: i,
-    onClose: m
-  }) : o === u.oh.MUTUAL_FRIENDS ? (0, r.jsx)(c.Z, {
-    user: t,
+    channelId: m,
+    subsection: l,
+    onClose: p
+  }) : o === u.oh.MUTUAL_FRIENDS ? (0, r.jsx)(a.Z, {
+    user: n,
     guildId: f,
-    channelId: p,
-    onClose: m
+    channelId: m,
+    onClose: p
   }) : o === u.oh.MUTUAL_GUILDS ? (0, r.jsx)(s.Z, {
-    user: t,
-    onClose: m
+    user: n,
+    onClose: p
   }) : o === u.oh.WIDGETS ? (0, r.jsx)(d.C, {
-    user: t,
+    user: n,
     guildId: f,
-    channelId: p
+    channelId: m
   }) : null
 }
 
-function m(e) {
-  var t, n, a;
+function p(e) {
+  var n, t, c;
   let {
-    user: c,
+    user: a,
     currentUser: s,
     displayProfile: d,
     guildId: u,
-    channelId: m,
+    channelId: p,
     items: b,
     initialSection: g,
-    initialSubsection: h,
-    onClose: x
+    initialSubsection: x,
+    onClose: h
   } = e, {
-    trackUserProfileAction: _
-  } = (0, l.KZ)(), [{
-    section: j,
-    subsection: v,
+    trackUserProfileAction: j
+  } = (0, i.KZ)(), [{
+    section: v,
+    subsection: _,
     text: y
-  }, I] = o.useState((n = function(e) {
-    for (var t = 1; t < arguments.length; t++) {
-      var n = null != arguments[t] ? arguments[t] : {},
-        r = Object.keys(n);
-      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-        return Object.getOwnPropertyDescriptor(n, e).enumerable
-      }))), r.forEach(function(t) {
+  }, I] = o.useState((t = function(e) {
+    for (var n = 1; n < arguments.length; n++) {
+      var t = null != arguments[n] ? arguments[n] : {},
+        r = Object.keys(t);
+      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+        return Object.getOwnPropertyDescriptor(t, e).enumerable
+      }))), r.forEach(function(n) {
         var r;
-        r = n[t], t in e ? Object.defineProperty(e, t, {
+        r = t[n], n in e ? Object.defineProperty(e, n, {
           value: r,
           enumerable: true,
           configurable: true,
           writable: true
-        }) : e[t] = r
+        }) : e[n] = r
       })
     }
     return e
-  }({}, null != (t = b.find(e => {
+  }({}, null != (n = b.find(e => {
     let {
-      section: t
+      section: n
     } = e;
-    return t === g
-  })) ? t : b[0]), a = a = {
-    subsection: h
-  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
-    var n = Object.keys(e);
+    return n === g
+  })) ? n : b[0]), c = c = {
+    subsection: x
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(c)) : (function(e, n) {
+    var t = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
       var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
+      t.push.apply(t, r)
     }
-    return n
-  })(Object(a)).forEach(function(e) {
-    Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(a, e))
-  }), n));
+    return t
+  })(Object(c)).forEach(function(e) {
+    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(c, e))
+  }), t));
   return (0, r.jsxs)("div", {
     className: f.container,
-    children: [(0, r.jsx)(i.Ttm, {
+    children: [(0, r.jsx)(l.Ttm, {
       orientation: "horizontal",
       className: f.scroller,
       fade: true,
       paddingFix: false,
-      children: (0, r.jsx)(i.njP, {
+      children: (0, r.jsx)(l.njP, {
         type: "top",
         look: "custom",
-        selectedItem: j,
+        selectedItem: v,
         onItemSelect: e => {
-          _({
+          j({
             action: "PRESS_SECTION",
             section: e
-          }), I(t => {
-            var n;
-            return null != (n = b.find(t => t.section === e)) ? n : t
+          }), I(n => {
+            var t;
+            return null != (t = b.find(n => n.section === e)) ? t : n
           })
         },
-        children: b.map(e => (0, r.jsx)(i.njP.Item, {
+        children: b.map(e => (0, r.jsx)(l.njP.Item, {
           className: f.tabBarItem,
           id: e.section,
           "aria-label": e.text,
           children: e.text
         }, e.section))
       })
-    }), (0, r.jsx)(i.njP.Panel, {
-      id: j,
+    }), (0, r.jsx)(l.njP.Panel, {
+      id: v,
       "aria-label": y,
       className: f.tabBarPanel,
-      children: (0, r.jsx)(p, {
-        user: c,
+      children: (0, r.jsx)(m, {
+        user: a,
         currentUser: s,
         displayProfile: d,
         guildId: u,
-        channelId: m,
-        section: j,
-        subsection: v,
-        onClose: x
+        channelId: p,
+        section: v,
+        subsection: _,
+        onClose: h
       })
     })]
   })

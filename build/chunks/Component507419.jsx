@@ -1,5 +1,5 @@
 /** Chunk was on 56035 **/
-/** chunk id: 507419, original params: e,t,n (module,exports,require) **/
+/** chunk id: 507419, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => m
 }), require("./388685.js");
@@ -15,38 +15,38 @@ var Chunk951288 = require("./951288.js"),
   Chunk612926 = require("./612926.js");
 let m = Chunk647438.memo(function(e) {
   let {
-    sound: t,
-    volume: n,
+    sound: n,
+    volume: t,
     disabled: m
-  } = e, [h, g] = a.useState(false), p = a.useRef(null), {
+  } = e, [h, g] = l.useState(false), p = l.useRef(null), {
     file: y,
     audio: b,
     loadAudioFromFile: v
-  } = (0, o.p)(), x = a.useMemo(() => (0, r.Z)(t.soundId), [t]);
-  return a.useEffect(() => {
-    null == p.current && (p.current = (0, u.XG)(x, t.name).then(v))
-  }, [x, v, t.name]), (0, l.jsxs)("div", {
+  } = (0, s.p)(), x = l.useMemo(() => (0, r.Z)(n.soundId), [n]);
+  return l.useEffect(() => {
+    null == p.current && (p.current = (0, u.XG)(x, n.name).then(v))
+  }, [x, v, n.name]), (0, a.jsxs)("div", {
     className: f.previewContainer,
-    children: [(0, l.jsx)(i.P3F, {
+    children: [(0, a.jsx)(i.P3F, {
       onClick: m ? true : function() {
-        null != b && (b.paused ? (b.volume = (0, s.Z)(n), b.currentTime = 0, b.play(), g(true), b.addEventListener("ended", () => g(false), {
+        null != b && (b.paused ? (b.volume = (0, o.Z)(t), b.currentTime = 0, b.play(), g(true), b.addEventListener("ended", () => g(false), {
           once: true
         })) : (b.pause(), g(false)))
       },
       className: f.playButton,
       "aria-label": h ? d.intl.string(d.t.hHBkuL) : d.intl.string(d.t.RscU7O),
-      children: h ? (0, l.jsx)(i.wNq, {
+      children: h ? (0, a.jsx)(i.wNq, {
         size: "xs",
         color: "currentColor",
         className: f.playIcon
-      }) : (0, l.jsx)(i.o1U, {
+      }) : (0, a.jsx)(i.o1U, {
         size: "xs",
         color: "currentColor",
         className: f.playIcon
       })
-    }), (0, l.jsx)("div", {
+    }), (0, a.jsx)("div", {
       className: f.waveformContainer,
-      children: (0, l.jsx)(c.Z, {
+      children: (0, a.jsx)(c.Z, {
         className: f.waveform,
         file: y,
         audio: b

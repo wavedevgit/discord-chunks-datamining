@@ -1,8 +1,8 @@
-/** Chunk was on 31930 **/
-/** chunk id: 22902, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 22902, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => a
+  Z: () => l
 });
 var Chunk647438 = require("./647438.js"),
   Chunk817460 = require("./817460.js"),
@@ -10,20 +10,20 @@ var Chunk647438 = require("./647438.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx");
 
-function a(e) {
-  return i.useMemo(() => {
+function l(e) {
+  return r.useMemo(() => {
     var t;
-    let n = s.DN.map(e => ({
+    let n = a.DN.map(e => ({
         value: e,
-        label: e.interval === l.rV.DAY && 7 === e.interval_count ? o.intl.formatToPlainString(o.t.XfSsr6, {
-          defaultLimit: (0, r.iG)(e)
-        }) : (0, r.iG)(e),
-        isDefault: e.interval === l.rV.DAY && 7 === e.interval_count
+        label: e.interval === o.rV.DAY && 7 === e.interval_count ? s.intl.formatToPlainString(s.t.XfSsr6, {
+          defaultLimit: (0, i.iG)(e)
+        }) : (0, i.iG)(e),
+        isDefault: e.interval === o.rV.DAY && 7 === e.interval_count
       })),
-      i = null != e ? null == (t = n.find(t => null != t.value && t.value.interval === e.interval && t.value.interval_count === e.interval_count)) ? true : t.value : e;
+      r = null != e ? null == (t = n.find(t => null != t.value && t.value.interval === e.interval && t.value.interval_count === e.interval_count)) ? true : t.value : e;
     return {
       options: n,
-      selectedOption: i
+      selectedOption: r
     }
   }, [e])
 }

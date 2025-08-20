@@ -1,7 +1,8 @@
-/** Chunk was on 26434 **/
-/** chunk id: 769409, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 769409, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  B: () => s
+  B: () => u
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -9,52 +10,57 @@ var Chunk481060 = require("./481060.js"),
   Chunk668781 = require("./668781.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx");
-let s = (e, t) => {
-  let s = "group-dm-edit-modal-".concat(e),
-    c = false,
-    u = e => {
-      c = e
+
+function l(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function c(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      l(e, t, n[t])
+    })
+  }
+  return e
+}
+let u = (e, t) => {
+  let l = "group-dm-edit-modal-".concat(e),
+    u = false,
+    d = e => {
+      u = e
     },
-    d = () => {
-      c ? l.Z.show({
-        title: a.intl.string(a.t.pvRCSk),
-        body: a.intl.string(a.t.DRi46e),
-        confirmText: a.intl.string(a.t["6GQDFh"]),
+    f = () => {
+      u ? a.Z.show({
+        title: s.intl.string(s.t.pvRCSk),
+        body: s.intl.string(s.t.DRi46e),
+        confirmText: s.intl.string(s.t["6GQDFh"]),
         confirmVariant: "critical-primary",
-        cancelText: a.intl.string(a.t.DmDzZG),
-        onConfirm: () => (0, i.Mr3)(s),
+        cancelText: s.intl.string(s.t.DmDzZG),
+        onConfirm: () => (0, i.Mr3)(l),
         onCancel: o.dG
-      }) : (0, i.Mr3)(s)
+      }) : (0, i.Mr3)(l)
     };
   (0, i.ZDy)(async () => {
     let {
       default: i
     } = await n.e("41259").then(n.bind(n, 912114));
-    return n => (0, r.jsx)(i, function(e) {
-      for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-          r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-          return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-          var r;
-          r = n[t], t in e ? Object.defineProperty(e, t, {
-            value: r,
-            enumerable: true,
-            configurable: true,
-            writable: true
-          }) : e[t] = r
-        })
-      }
-      return e
-    }({
-      closeOrShowDiscardChangesAlert: d,
-      setHasPendingChanges: u,
+    return n => (0, r.jsx)(i, c({
+      closeOrShowDiscardChangesAlert: f,
+      setHasPendingChanges: d,
       channelId: e,
       location: t
     }, n))
   }, {
-    modalKey: s,
-    onCloseRequest: d
+    modalKey: l,
+    onCloseRequest: f
   })
 }

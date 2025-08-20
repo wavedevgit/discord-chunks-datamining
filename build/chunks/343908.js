@@ -1,5 +1,6 @@
-/** Chunk was on 26434 **/
-/** chunk id: 343908, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 343908, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   tooltipTextContainer: "tooltipTextContainer__0ca35",
   nitroWheel: "nitroWheel__0ca35",

@@ -1,14 +1,15 @@
-/** Chunk was on 16120 **/
-/** chunk id: 36459, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 36459, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  $Y: () => P,
-  JK: () => p,
-  Je: () => m,
-  T9: () => A,
-  UE: () => S,
-  Xx: () => M,
-  mm: () => j,
-  qY: () => _
+  $Y: () => v,
+  JK: () => b,
+  Je: () => y,
+  T9: () => S,
+  UE: () => T,
+  Xx: () => I,
+  mm: () => O,
+  qY: () => E
 }), require("./388685.js");
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
@@ -22,14 +23,14 @@ var Chunk544891 = require("./544891.js"),
   Chunk226192 = require("./226192.jsx"),
   Chunk981631 = require("./981631.js");
 
-function E(e) {
+function p(e) {
   return {
     type: e.type,
     metadata: (0, d.X)(e.metadata)
   }
 }
 
-function g(e) {
+function h(e) {
   var t, n;
   let r = (0, d.X)(e.triggerMetadata);
   return null != r && delete r.keywordLists, {
@@ -39,7 +40,7 @@ function g(e) {
     event_type: e.eventType,
     trigger_type: e.triggerType,
     trigger_metadata: r,
-    actions: e.actions.filter(u.lm).map(E),
+    actions: e.actions.filter(l.lm).map(p),
     enabled: e.enabled,
     creator_id: e.creatorId,
     position: e.position,
@@ -48,72 +49,72 @@ function g(e) {
   }
 }
 
-function b(e) {
+function m(e) {
   return {
     type: e.type,
     metadata: (0, d.C)(e.metadata)
   }
 }
 
-function y(e) {
+function g(e) {
   var t, n, r;
-  let l = {
+  let i = {
     id: null != (t = e.id) ? t : c.default.fromTimestamp(Date.now()),
     name: e.name,
     guildId: e.guild_id,
     eventType: e.event_type,
     triggerType: e.trigger_type,
     triggerMetadata: (0, d.C)(e.trigger_metadata),
-    actions: e.actions.filter(u.lm).map(b),
+    actions: e.actions.filter(l.lm).map(m),
     enabled: e.enabled,
     creatorId: e.creator_id,
     position: e.position,
     exemptChannels: new Set(null != (n = e.exempt_channels) ? n : []),
     exemptRoles: new Set(null != (r = e.exempt_roles) ? r : [])
   };
-  return null != l.triggerMetadata && delete l.triggerMetadata.keywordLists, l
+  return null != i.triggerMetadata && delete i.triggerMetadata.keywordLists, i
 }
-async function _(e) {
-  let t = g(e),
+async function E(e) {
+  let t = h(e),
     n = await r.tn.post({
-      url: O.ANM.GUILD_AUTOMOD_VALIDATE_RULE(e.guildId),
+      url: _.ANM.GUILD_AUTOMOD_VALIDATE_RULE(e.guildId),
       body: t,
       rejectWithError: false
     });
   return (0, d.C)(n.body)
 }
-async function p(e) {
-  let t = g(e);
-  return delete t.id, y((await r.tn.post({
-    url: O.ANM.GUILD_AUTOMOD_RULES(e.guildId),
+async function b(e) {
+  let t = h(e);
+  return delete t.id, g((await r.tn.post({
+    url: _.ANM.GUILD_AUTOMOD_RULES(e.guildId),
     body: t,
     rejectWithError: false
   })).body)
 }
-async function m(e) {
-  let t = g(e);
-  return y((await r.tn.patch({
-    url: O.ANM.GUILD_AUTOMOD_RULE(e.guildId, e.id),
+async function y(e) {
+  let t = h(e);
+  return g((await r.tn.patch({
+    url: _.ANM.GUILD_AUTOMOD_RULE(e.guildId, e.id),
     body: t,
     rejectWithError: false
   })).body)
 }
-async function j(e, t) {
+async function O(e, t) {
   return await r.tn.del({
-    url: O.ANM.GUILD_AUTOMOD_RULE(t, e),
+    url: _.ANM.GUILD_AUTOMOD_RULE(t, e),
     rejectWithError: false
   }), true
 }
-async function P(e) {
+async function v(e) {
   let t = await r.tn.get({
-    url: O.ANM.GUILD_AUTOMOD_RULES(e),
+    url: _.ANM.GUILD_AUTOMOD_RULES(e),
     rejectWithError: false
   });
-  return Array.isArray(t.body) ? t.body.map(y) : []
+  return Array.isArray(t.body) ? t.body.map(g) : []
 }
-async function M(e, t, n) {
-  o.Z.can(O.Plq.MANAGE_MESSAGES, t) && await r.tn.post({
-    url: O.ANM.GUILD_AUTOMOD_ALERT_ACTION(t.guild_id),
+async function I(e, t, n) {
+  s.Z.can(_.Plq.MANAGE_MESSAGES, t) && await r.tn.post({
+    url: _.ANM.GUILD_AUTOMOD_ALERT_ACTION(t.guild_id),
     body: {
       message_id: e,
       channel_id: t.id,
@@ -123,21 +124,23 @@ async function M(e, t, n) {
   })
 }
 
-function S(e, t, n) {
-  let l = a.Z.getGuild(e);
-  null != l && o.Z.can(O.Plq.MANAGE_GUILD, l) && (0, f.UV)(() => {
-    (0, i.yw)(O.rMx.GUILD_AUTOMOD_FEEDBACK, {
-      feedback_type: s.x2.MENTION_RAID_REMOVE_RESTRICTION,
+function T(e, t, n) {
+  let i = o.Z.getGuild(e);
+  if (null == i || !s.Z.can(_.Plq.MANAGE_GUILD, i)) return;
+  let l = () => {
+    (0, a.yw)(_.rMx.GUILD_AUTOMOD_FEEDBACK, {
+      feedback_type: u.x2.MENTION_RAID_REMOVE_RESTRICTION,
       decision_id: t
     }), r.tn.post({
-      url: O.ANM.GUILD_AUTOMOD_CLEAR_MENTION_RAID(e),
+      url: _.ANM.GUILD_AUTOMOD_CLEAR_MENTION_RAID(e),
       rejectWithError: true
     }), n()
-  })
+  };
+  (0, f.UV)(l)
 }
 
-function A(e) {
-  l.Z.dispatch({
+function S(e) {
+  i.Z.dispatch({
     type: "AUTO_MODERATION_MENTION_RAID_NOTICE_DISMISS",
     guildId: e
   })

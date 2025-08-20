@@ -1,4 +1,4 @@
-/** Chunk was on 75283 **/
+/** Chunk was on 40226 **/
 /** chunk id: 956636, original params: e,t,n (module,exports,require) **/
 module.exports = {
   coverList: "coverList__9a5c3"

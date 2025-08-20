@@ -1,7 +1,8 @@
-/** Chunk was on 11868 **/
-/** chunk id: 101879, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 101879, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => f
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk704215 = require("./704215.js"),
@@ -13,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx");
 
-function _() {
+function f() {
   let [e, t] = (0, Chunk243778.bf)(Chunk704215.z.NAGBAR_NOTICE_IGNORE_USER_FEEDBACK, {
     cooldownDurationMs: Chunk987562.pv
   });

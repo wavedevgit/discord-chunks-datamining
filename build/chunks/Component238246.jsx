@@ -46,7 +46,7 @@ var Chunk587061 = require("./587061.js"),
   Chunk501787 = require("./501787.js"),
   Chunk413943 = require("./413943.js");
 
-function Z(e, t, n) {
+function F(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -62,7 +62,7 @@ function H(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      Z(e, t, n[t])
+      F(e, t, n[t])
     })
   }
   return e
@@ -90,7 +90,7 @@ function K(e) {
     withTitleBar: t,
     isFullScreen: n
   } = e;
-  return t && M.isPlatformEmbedded && !n
+  return t && j.isPlatformEmbedded && !n
 }
 class z extends(r = Chunk647438.Component) {
   componentDidMount() {
@@ -201,23 +201,23 @@ class z extends(r = Chunk647438.Component) {
     })
   }
   constructor(...e) {
-    super(...e), Z(this, "rootRef", a.createRef()), Z(this, "_cleanupWindowActionCreators", true), Z(this, "_combokeys", null), Z(this, "beforeUnload", e => {
+    super(...e), F(this, "rootRef", a.createRef()), F(this, "_cleanupWindowActionCreators", true), F(this, "_combokeys", null), F(this, "beforeUnload", e => {
       let {
         onBeforeUnload: t
       } = this.props, n = () => {
-        G.Z.unmountWindow(this.props.windowKey), M.isPlatformEmbedded && j.ZP.close(this.props.windowKey)
+        G.Z.unmountWindow(this.props.windowKey), j.isPlatformEmbedded && k.ZP.close(this.props.windowKey)
       };
       null != t ? t({
         e,
         unmountWindow: n
       }) : n()
-    }), Z(this, "handleBlur", () => {
+    }), F(this, "handleBlur", () => {
       var e, t;
       null == (e = (t = this.props).onBlur) || e.call(t)
     })
   }
 }
-Z(z, "defaultProps", {
+F(z, "defaultProps", {
   withTitleBar: true
 });
 let q = Chunk647438.forwardRef(function(e, t) {
@@ -229,7 +229,7 @@ let q = Chunk647438.forwardRef(function(e, t) {
       lang: l,
       style: c,
       className: d
-    } = (0, x.vP)();
+    } = (0, L.vP)();
     return a.useEffect(() => {
       let e = n.document.documentElement;
       u()(null != e, "Window document element was null"), e.setAttribute("style", c)

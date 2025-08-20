@@ -1,8 +1,8 @@
-/** Chunk was on 36514 **/
-/** chunk id: 234888, original params: e,t,r (module,exports,require) **/
+/** Chunk was on 61624 **/
+/** chunk id: 234888, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => a,
-  i: () => c
+  i: () => r
 });
-let c = 3e4,
+let r = 3e4,
   a = "Captcha"

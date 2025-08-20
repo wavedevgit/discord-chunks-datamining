@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 126631, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 126631, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => x
+  Z: () => E
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,47 +17,58 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk100077 = require("./100077.js");
 let h = (0, Chunk313201.hQ)(),
-  f = (0, Chunk131704.kt)({
+  m = (0, Chunk131704.kt)({
     id: "1",
     type: Chunk981631.d4z.DM
   }),
-  b = (0, Chunk313201.hQ)();
+  g = (0, Chunk313201.hQ)();
 
-function x(e) {
+function E(e) {
   let {
     sectionTitle: t,
     errors: n,
     onBioChange: c,
-    pendingBio: d,
-    placeholder: x,
-    currentBio: _,
-    disabled: j = false
-  } = e, [E, C] = r.useState(null != d ? d : _), [O, v] = r.useState((0, l.JM)(E)), S = r.useRef(false);
-  return r.useEffect(() => {
-    if (true === d) {
-      let e = (0, l.JM)(_);
-      C(_), v(e)
+    pendingBio: u,
+    placeholder: E,
+    currentBio: b,
+    disabled: y = false
+  } = e, [O, v] = i.useState(null != u ? u : b), [I, T] = i.useState((0, s.JM)(O)), S = i.useRef(false);
+
+  function A(e, t, n) {
+    t !== O && (v(t), T(n), c(t))
+  }
+
+  function C() {
+    return new Promise(e => {
+      e({
+        shouldClear: false,
+        shouldRefocus: true
+      })
+    })
+  }
+  return i.useEffect(() => {
+    if (true === u) {
+      let e = (0, s.JM)(b);
+      v(b), T(e)
     }
-  }, [d, _]), (0, i.jsxs)(u.Z, {
+  }, [u, b]), (0, r.jsxs)(d.Z, {
     title: t,
     titleId: h,
-    description: p.intl.string(p.t.Bbw6AQ),
+    description: _.intl.string(_.t.Bbw6AQ),
     errors: n,
-    disabled: j,
-    children: [(0, i.jsx)(o.ZP, {
-      "aria-describedby": b,
+    disabled: y,
+    children: [(0, r.jsx)(l.ZP, {
+      "aria-describedby": g,
       "aria-labelledby": h,
-      className: g.bioTextAreaContainer,
-      innerClassName: g.bioTextArea,
-      maxCharacterCount: m.tPV,
-      onChange: function(e, t, n) {
-        t !== E && (C(t), v(n), c(t))
-      },
-      placeholder: x,
-      channel: f,
-      textValue: E,
-      richValue: O,
-      type: a.Ie.PROFILE_BIO_INPUT,
+      className: p.bioTextAreaContainer,
+      innerClassName: p.bioTextArea,
+      maxCharacterCount: f.tPV,
+      onChange: A,
+      placeholder: E,
+      channel: m,
+      textValue: O,
+      richValue: I,
+      type: o.Ie.PROFILE_BIO_INPUT,
       onBlur: () => {
         S.current = false
       },
@@ -64,18 +76,11 @@ function x(e) {
         S.current = true
       },
       focused: S.current,
-      onSubmit: function() {
-        return new Promise(e => {
-          e({
-            shouldClear: false,
-            shouldRefocus: true
-          })
-        })
-      }
-    }), (0, i.jsx)(s.nn4, {
-      id: b,
-      children: p.intl.format(p.t["+DFxLS"], {
-        maxLength: m.tPV
+      onSubmit: C
+    }), (0, r.jsx)(a.nn4, {
+      id: g,
+      children: _.intl.format(_.t["+DFxLS"], {
+        maxLength: f.tPV
       })
     })]
   })

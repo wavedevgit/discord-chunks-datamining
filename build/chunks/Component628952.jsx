@@ -72,7 +72,7 @@ let I = e => {
   } = (0, p.T)(t), {
     giftRecipient: S,
     giftRecipientError: A
-  } = (0, u.wD)(), N = (0, l.e7)([_.default], () => _.default.getCurrentUser()), C = (0, m.kd)(T), R = i.useRef(null);
+  } = (0, u.wD)(), C = (0, l.e7)([_.default], () => _.default.getCurrentUser()), N = (0, m.kd)(T), R = i.useRef(null);
   if (null == T) return null;
   let [P] = T.items, w = () => {
     switch (P.type) {
@@ -85,7 +85,7 @@ let I = e => {
       default:
         return null
     }
-  }, D = null != S && S.id !== (null == N ? true : N.id) && P.type !== s.Z.NAMEPLATE, L = () => {
+  }, D = null != S && S.id !== (null == C ? true : C.id) && P.type !== s.Z.NAMEPLATE, x = () => {
     null != t && null != b && b(t)
   };
   return (0, r.jsxs)("div", {
@@ -121,7 +121,7 @@ let I = e => {
       }, S.id)]
     }), (0, r.jsxs)(c.P3F, {
       tag: "div",
-      onClick: L,
+      onClick: x,
       className: o()(E.previewContainer, {
         [E.previewContainerSelected]: n && null == A,
         [E.previewContainerError]: n && null != A
@@ -135,7 +135,7 @@ let I = e => {
           className: E.previewTextContainer,
           children: [(0, r.jsx)(c.Text, {
             variant: "text-md/semibold",
-            children: C
+            children: N
           }), (0, r.jsx)(c.X6q, {
             variant: "heading-sm/medium",
             color: "header-secondary",

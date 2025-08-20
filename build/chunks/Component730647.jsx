@@ -1,8 +1,9 @@
-/** Chunk was on 26434 **/
-/** chunk id: 730647, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 730647, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  f: () => u,
-  l: () => d
+  f: () => d,
+  l: () => f
 }), require("./415506.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -12,7 +13,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk289393 = require("./289393.js");
 let c = Chunk647438.createContext(true);
 
-function u(e) {
+function u(e, t) {
+  return i.useMemo(() => e === l.M.FETCHED && true !== t.current, [e, t])
+}
+
+function d(e) {
   let t = i.useContext(c);
   if (null == t) throw Error("".concat(null != e ? e : "useGroupListingsFetchContext", " must be used within a GroupListingsFetchContextProvider"));
   let {
@@ -22,26 +27,26 @@ function u(e) {
   return r(), n
 }
 
-function d(e) {
+function f(e) {
   let {
     guildId: t,
     children: n,
-    refetchOnMount: u,
-    includeSoftDeleted: d,
-    countryCode: p,
-    dontFetchWhileTrue: m
-  } = e, f = (0, l.e7)([o.Z], () => o.Z.isConnected()), g = (0, l.e7)([s.Z], () => null != t ? s.Z.getSubscriptionGroupListingsForGuildFetchState(t) : s.M.FETCHED), _ = i.useRef(u), h = i.useCallback(() => {
-    if (null == t || !f || true === m) return;
-    let e = s.Z.getSubscriptionGroupListingsForGuildFetchState(t);
-    (_.current || e === s.M.NOT_FETCHED) && (_.current = false, a.FP(t, {
-      includeSoftDeleted: d,
-      countryCode: p
+    refetchOnMount: d,
+    includeSoftDeleted: f,
+    countryCode: _,
+    dontFetchWhileTrue: p
+  } = e, h = (0, a.e7)([o.Z], () => o.Z.isConnected()), m = (0, a.e7)([l.Z], () => null != t ? l.Z.getSubscriptionGroupListingsForGuildFetchState(t) : l.M.FETCHED), g = i.useRef(d), E = i.useCallback(() => {
+    if (null == t || !h || true === p) return;
+    let e = l.Z.getSubscriptionGroupListingsForGuildFetchState(t);
+    (g.current || e === l.M.NOT_FETCHED) && (g.current = false, s.FP(t, {
+      includeSoftDeleted: f,
+      countryCode: _
     }))
-  }, [f, t, d, p, m]), b = i.useMemo(() => g === s.M.FETCHED && true !== _.current, [g, _]);
+  }, [h, t, f, _, p]), b = u(m, g);
   return (0, r.jsx)(c.Provider, {
     value: {
       listingsLoaded: b,
-      fetchGroupListingsForGuild: h
+      fetchGroupListingsForGuild: E
     },
     children: n
   })

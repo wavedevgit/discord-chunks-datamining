@@ -1,25 +1,26 @@
-/** Chunk was on 84533 **/
-/** chunk id: 514020, original params: e,t,r (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 514020, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => c
+  Z: () => l
 });
 var Chunk512722 = require("./512722.js"),
-  s = require.n(Chunk512722),
+  i = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk276444 = require("./276444.js"),
   Chunk388032 = require("./388032.jsx");
-let c = e => {
+let l = e => {
   let {
     numNewSelected: t,
-    anySelected: r
-  } = e, a = (0, n.e7)([i.Z], () => i.Z.getReferralsRemaining());
-  s()(null != a, "Referrals remaining should not be null");
-  let c = a - t;
-  return 0 === a ? l.intl.string(l.t.mPmPrq) : 0 !== t || r ? 1 === c ? l.intl.string(l.t.UfPk1t) : c > 0 ? l.intl.formatToPlainString(l.t.hZnIz8, {
-    numFriends: c
-  }) : l.intl.formatToPlainString(l.t["3PJw6e"], {
-    numReferrals: a
-  }) : l.intl.formatToPlainString(l.t.GcKM5e, {
-    numReferrals: a
+    anySelected: n
+  } = e, r = (0, a.e7)([o.Z], () => o.Z.getReferralsRemaining());
+  i()(null != r, "Referrals remaining should not be null");
+  let l = r - t;
+  return 0 === r ? s.intl.string(s.t.mPmPrq) : 0 !== t || n ? 1 === l ? s.intl.string(s.t.UfPk1t) : l > 0 ? s.intl.formatToPlainString(s.t.hZnIz8, {
+    numFriends: l
+  }) : s.intl.formatToPlainString(s.t["3PJw6e"], {
+    numReferrals: r
+  }) : s.intl.formatToPlainString(s.t.GcKM5e, {
+    numReferrals: r
   })
 }

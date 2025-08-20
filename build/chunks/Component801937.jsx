@@ -63,8 +63,8 @@ function A(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let N = new Chunk710845.Z("ChoosePaymentSourceType"),
-  C = {
+let C = new Chunk710845.Z("ChoosePaymentSourceType"),
+  N = {
     [Chunk981631.HeQ.CARD]: Chunk219929.ZP.Types.UNKNOWN,
     [Chunk981631.HeQ.PAYPAL]: Chunk219929.ZP.Types.PAYPAL,
     [Chunk981631.HeQ.SOFORT]: Chunk219929.ZP.Types.SOFORT,
@@ -95,7 +95,7 @@ class w extends Chunk647438.PureComponent {
     var e;
     let t = null != (e = this.props.paymentRequestWallets) ? module : [];
     if (0 === exports.length || !this.arePaymentRequestWalletsLoading()) return;
-    N.warn("Payment request wallets failed to load in time: ".concat(exports.join(", "), ". Max time allowed: ").concat(R, " ms"));
+    C.warn("Payment request wallets failed to load in time: ".concat(exports.join(", "), ". Max time allowed: ").concat(R, " ms"));
     let n = exports.reduce((e, t) => A(T({}, e), {
       ["".concat(t, "Loaded")]: true
     }), {});
@@ -121,7 +121,7 @@ class w extends Chunk647438.PureComponent {
   createPaymentButtons(e) {
     return e.map(e => {
       var t;
-      let n = C[e],
+      let n = N[e],
         i = m.W[e](),
         a = null == this.props.paymentSourceTypeRestrictions || (null == (t = this.props.paymentSourceTypeRestrictions) ? true : t.includes(e));
       return (0, r.jsx)(l.z, {

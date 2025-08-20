@@ -1,12 +1,12 @@
 /** Chunk was on 32249 **/
 /** chunk id: 347382, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  z: () => a
+  z: () => i
 });
 var Chunk818083 = require("./818083.js"),
   Chunk520278 = require("./520278.js"),
   Chunk46140 = require("./46140.js");
-let i = (0, Chunk818083.B)({
+let a = (0, Chunk818083.B)({
     id: "2025-02_quests_hls_video",
     kind: "user",
     label: "Quests Hls Video",
@@ -27,4 +27,4 @@ let i = (0, Chunk818083.B)({
       }
     }]
   }),
-  a = (e, t) => (0, l.J)(i, o.S7.VIDEO_QUEST_FORCE_HLS_VIDEO, e, t)
+  i = (e, t) => (0, o.J)(a, l.S7.VIDEO_QUEST_FORCE_HLS_VIDEO, e, t)

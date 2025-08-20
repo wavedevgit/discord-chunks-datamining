@@ -103,7 +103,7 @@ class b extends(r = Chunk647438.PureComponent) {
         "aria-label": S = Chunk388032.intl.string(Chunk388032.t["5h0QOD"])
       } = module,
       A = g(module, ["query", "autoFocus", "onClear", "className", "placeholder", "onKeyDown", "isLoading", "size", "disabled", "onChange", "onBlur", "onFocus", "autoComplete", "inputProps", "aria-label"]),
-      N = (0, Chunk951288.jsx)(Chunk532425.B, {
+      C = (0, Chunk951288.jsx)(Chunk532425.B, {
         size: E,
         hasContent: exports.length > 0,
         onClear: r,
@@ -149,7 +149,7 @@ class b extends(r = Chunk647438.PureComponent) {
             autoComplete: I,
             "aria-label": S,
             ref: this.inputRef
-          })), N]
+          })), C]
         })
       }))
     })

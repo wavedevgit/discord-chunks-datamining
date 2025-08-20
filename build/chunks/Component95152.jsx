@@ -64,7 +64,7 @@ function T(e, t) {
 let S = 104,
   A = 16;
 
-function N(e) {
+function C(e) {
   var t, n, a;
   let {
     file: s
@@ -110,10 +110,10 @@ function N(e) {
     }
   })
 }
-class C extends Chunk647438.Component {
+class N extends Chunk647438.Component {
   render() {
     var e;
-    return this.props.upload.item.platform !== Chunk476326.ow.WEB ? null : this.props.upload.isImage ? (0, Chunk951288.jsx)(N, {
+    return this.props.upload.item.platform !== Chunk476326.ow.WEB ? null : this.props.upload.isImage ? (0, Chunk951288.jsx)(C, {
       file: this.props.upload.item.file
     }) : (0, Chunk951288.jsx)("div", {
       className: o()(Chunk995751.icon, {
@@ -160,7 +160,7 @@ class R extends Chunk647438.Component {
           className: o()(Chunk995751.file, {
             [Chunk995751.expandable]: module.isImage
           }),
-          children: [(0, Chunk951288.jsx)(C, {
+          children: [(0, Chunk951288.jsx)(N, {
             upload: module
           }), (0, Chunk951288.jsxs)("div", {
             className: Chunk995751.description,

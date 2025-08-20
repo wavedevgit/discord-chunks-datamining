@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 625252, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 625252, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => x
+  Z: () => O
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,32 +20,38 @@ var Chunk951288 = require("./951288.js"),
   Chunk154115 = require("./154115.js"),
   Chunk66094 = require("./66094.js");
 
-function x() {
+function E(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function b(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      E(e, t, n[t])
+    })
+  }
+  return e
+}
+let y = "https://cdn.discordapp.com/assets/discovery/quests-wumpus-hikes-mountain-transparent-background.png";
+
+function O() {
   let e = (0, Chunk780384.wj)((0, Chunk410030.ZP)()),
     t = Chunk647438.useMemo(() => ({
-      backgroundImage: "url(".concat("https://cdn.discordapp.com/assets/discovery/quests-wumpus-hikes-mountain-transparent-background.png", ")")
+      backgroundImage: "url(".concat(y, ")")
     }), []),
     n = Chunk647438.useCallback(() => {
       (0, Chunk37234.xf)(), (0, Chunk110560.navigateToQuestHome)({
         fromContent: Chunk497505.jn.QUEST_HOME_MOVE_CALLOUT
-      }), Chunk626135.default.track(Chunk981631.rMx.QUEST_CONTENT_CLICKED, function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {},
-            i = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), i.forEach(function(t) {
-            var i;
-            i = n[t], t in e ? Object.defineProperty(e, t, {
-              value: i,
-              enumerable: true,
-              configurable: true,
-              writable: true
-            }) : e[t] = i
-          })
-        }
-        return e
-      }({
+      }), Chunk626135.default.track(Chunk981631.rMx.QUEST_CONTENT_CLICKED, b({
         cta_name: Chunk617136.jZ.VIEW_QUESTS,
         click_id: (0, Chunk772848.Z)(),
         is_targeted: false

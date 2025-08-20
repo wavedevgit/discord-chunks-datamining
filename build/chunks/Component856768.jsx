@@ -1,13 +1,14 @@
-/** Chunk was on 95257 **/
-/** chunk id: 856768, original params: e,n,l (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 856768, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   Z: () => g,
-  q: () => j
+  q: () => E
 }), require("./290780.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  d = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk565138 = require("./565138.jsx"),
@@ -21,62 +22,62 @@ var Chunk951288 = require("./951288.js"),
 
 function g(e) {
   let {
-    guildId: n,
-    className: l,
+    guildId: t,
+    className: n,
     globalOption: i,
     hideDivider: a = false,
-    onChange: o,
-    renderOptionSuffix: r
+    onChange: s,
+    renderOptionSuffix: l
   } = e;
-  return (0, t.jsx)(s.Z, {
-    className: d()(x.section, l),
-    title: m.intl.string(m.t.ref7Ki),
+  return (0, r.jsx)(u.Z, {
+    className: o()(m.section, n),
+    title: h.intl.string(h.t.ref7Ki),
     hideDivider: a,
     forcedDivider: true,
-    children: (0, t.jsx)(j, {
-      guildId: n,
-      onChange: o,
-      renderOptionSuffix: r,
+    children: (0, r.jsx)(E, {
+      guildId: t,
+      onChange: s,
+      renderOptionSuffix: l,
       globalOption: i
     })
   })
 }
 
-function j(e) {
+function E(e) {
   let {
-    guildId: n,
-    globalOption: l,
+    guildId: t,
+    globalOption: n,
     onChange: a,
-    renderOptionSuffix: d
-  } = e, s = (0, o.e7)([f.Z], () => f.Z.showNotice()), g = (0, o.e7)([h.ZP], () => h.ZP.getFlattenedGuildIds()), j = (0, o.e7)([u.Z], () => u.Z.getGuilds()), p = i.useMemo(() => {
+    renderOptionSuffix: o
+  } = e, u = (0, s.e7)([p.Z], () => p.Z.showNotice()), g = (0, s.e7)([f.ZP], () => f.ZP.getFlattenedGuildIds()), E = (0, s.e7)([d.Z], () => d.Z.getGuilds()), b = i.useMemo(() => {
     let e = g.map(e => {
-      let n = j[e];
-      return null == n ? null : {
-        label: n.name,
-        value: n.id
+      let t = E[e];
+      return null == t ? null : {
+        label: t.name,
+        value: t.id
       }
-    }).filter(v.lm);
-    return null != l && e.unshift(l), e
-  }, [g, j, l]), C = i.useCallback(e => {
-    let n = (null == e ? true : e.label) === (null == l ? true : l.label) && (null == e ? true : e.value) === (null == l ? true : l.value);
-    return null == e || "" === e.value || n ? null : (0, t.jsx)(c.Z, {
-      className: x.guildSelectOptionIcon,
-      guild: j[e.value],
+    }).filter(_.lm);
+    return null != n && e.unshift(n), e
+  }, [g, E, n]), y = i.useCallback(e => {
+    let t = (null == e ? true : e.label) === (null == n ? true : n.label) && (null == e ? true : e.value) === (null == n ? true : n.value);
+    return null == e || "" === e.value || t ? null : (0, r.jsx)(c.Z, {
+      className: m.guildSelectOptionIcon,
+      guild: E[e.value],
       size: c.Z.Sizes.SMOL,
       active: true
     })
-  }, [j, l]);
-  return (0, t.jsx)(r.VcW, {
-    isDisabled: s,
-    onChange: e => {
-      if ("" === e || e === (null == l ? true : l.value)) return void a(null);
-      let n = j[e];
-      null != n && a(n)
-    },
-    value: n,
-    options: p,
-    renderOptionPrefix: C,
-    renderOptionSuffix: d,
-    placeholder: m.intl.string(m.t["kMgj+f"])
+  }, [E, n]), O = e => {
+    if ("" === e || e === (null == n ? true : n.value)) return void a(null);
+    let t = E[e];
+    null != t && a(t)
+  };
+  return (0, r.jsx)(l.VcW, {
+    isDisabled: u,
+    onChange: O,
+    value: t,
+    options: b,
+    renderOptionPrefix: y,
+    renderOptionSuffix: o,
+    placeholder: h.intl.string(h.t["kMgj+f"])
   })
 }

@@ -68,19 +68,19 @@ let E = 57.75,
       analyticsLocations: y
     } = (0, l.ZP)(), [O, v] = i.useState(false), [I, T] = i.useState(false), S = i.useRef(null), A = e => {
       S.current = e, null != e && (v(!I && e.scrollHeight - e.clientHeight > 1), e.getBoundingClientRect().height > E && T(true))
-    }, N = () => {
+    }, C = () => {
       null == n || n(), (0, u.openUserProfileModal)(g(h({}, b), {
         userId: t.id,
         sourceAnalyticsLocations: y
       }))
-    }, C = e => {
+    }, N = e => {
       null == S.current || S.current.contains(e.relatedTarget) || (S.current.scrollTop = 0)
     };
     return p || null == a || "" === a ? null : (0, r.jsxs)("div", {
       children: [(0, r.jsx)("div", {
         ref: A,
         className: o()(_.descriptionClamp, I && _.maxBioHeight),
-        onBlur: C,
+        onBlur: N,
         children: (0, r.jsx)(d.Z, {
           userBio: a,
           setLineClamp: false,
@@ -93,7 +93,7 @@ let E = 57.75,
           size: "sm",
           variant: "secondary",
           text: f.intl.string(f.t.YDiPq6),
-          onClick: N,
+          onClick: C,
           disabled: m
         })
       })]

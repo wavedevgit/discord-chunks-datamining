@@ -1,4 +1,4 @@
-/** Chunk was on 69003 **/
+/** Chunk was on 91488 **/
 /** chunk id: 770202, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk490897 = require("./490897.js"),
   Chunk55940 = require("./55940.js");
 
-function v(e, t, n) {
+function j(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -31,14 +31,14 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function j(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      v(e, t, n[t])
+      j(e, t, n[t])
     })
   }
   return e
@@ -49,7 +49,7 @@ function C(e, t) {
   if (null == n) throw Error("TextChannel, preloadChannel: Channel does not have a guildId");
   s.Z.preload(n, t.id)
 }
-class E extends Chunk98597.ZP {
+class x extends Chunk98597.ZP {
   render() {
     let {
       channel: e,
@@ -81,7 +81,7 @@ class E extends Chunk98597.ZP {
     return Chunk442837 ? require(Chunk647438(Chunk493683)) : Chunk493683
   }
   constructor(...e) {
-    super(...e), v(this, "handleContextMenu", e => {
+    super(...e), j(this, "handleContextMenu", e => {
       let {
         channel: t
       } = this.props, i = h.Z.getGuild(t.getGuildId());
@@ -100,12 +100,12 @@ class E extends Chunk98597.ZP {
           })(Object(t)).forEach(function(n) {
             Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
           }), e
-        }(j({}, n), {
+        }(v({}, n), {
           channel: t,
           guild: i
         }))
       })
-    }), v(this, "handleClick", e => {
+    }), j(this, "handleClick", e => {
       ! function(e) {
         let t = e.getGuildId();
         if (null == t) throw Error("TextChannel, transitionTo: Channel does not have a guildId");
@@ -122,7 +122,7 @@ class E extends Chunk98597.ZP {
     })
   }
 }
-let x = (0, Chunk146773.B)(E),
+let E = (0, Chunk146773.B)(x),
   S = Chunk647438.memo(function(e) {
     let {
       channel: t,
@@ -135,5 +135,5 @@ let x = (0, Chunk146773.B)(E),
         canReorderChannel: true !== i && null != e ? g.Z.can(O.Plq.MANAGE_CHANNELS, e) : g.Z.can(O.Plq.MANAGE_CHANNELS, n)
       }
     });
-    return (0, r.jsx)(x, j({}, l, e))
+    return (0, r.jsx)(E, v({}, l, e))
   })

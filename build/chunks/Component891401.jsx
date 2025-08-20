@@ -58,33 +58,33 @@ function C(e, t) {
 function N() {
   return (0, Chunk951288.jsxs)(Chunk481060.Ttm, {
     className: Chunk715639.container,
-    children: [(0, Chunk951288.jsx)(T, {}), (0, Chunk951288.jsx)(O, {})]
+    children: [(0, Chunk951288.jsx)(O, {}), (0, Chunk951288.jsx)(E, {})]
   })
 }
 
-function T() {
+function O() {
   var e, t;
   let a = (0, Chunk442837.e7)([Chunk944486.Z], () => Chunk944486.Z.getChannelId()),
     l = (0, Chunk680783.Z)(require),
     s = null == Chunk120356 ? true : Chunk120356.wallpaperId,
     d = (0, Chunk461762.Z)(Chunk392711),
-    v = Chunk647438.useCallback(e => {
+    b = Chunk647438.useCallback(e => {
       null != s && (0, h.i)(s, {
         opacity: e
       })
     }, [Chunk392711]),
     f = Chunk647438.useCallback(e => {
-      E(null == l ? true : l.wallpaperId, e.target.value)
+      T(null == l ? true : l.wallpaperId, e.target.value)
     }, [null == Chunk120356 ? true : Chunk120356.wallpaperId]),
     N = Chunk647438.useCallback(e => {
       P(null == l ? true : l.wallpaperId, e.target.value)
     }, [null == Chunk120356 ? true : Chunk120356.wallpaperId]),
-    T = Chunk647438.useCallback(e => {
+    O = Chunk647438.useCallback(e => {
       S(null == l ? true : l.wallpaperId, e.target.value)
     }, [null == Chunk120356 ? true : Chunk120356.wallpaperId]),
-    O = Chunk647438.useCallback(() => E(null == Chunk120356 ? true : Chunk120356.wallpaperId, true), [null == Chunk120356 ? true : Chunk120356.wallpaperId]),
-    I = Chunk647438.useCallback(() => P(null == Chunk120356 ? true : Chunk120356.wallpaperId, true), [null == Chunk120356 ? true : Chunk120356.wallpaperId]),
-    w = Chunk647438.useCallback(() => S(null == Chunk120356 ? true : Chunk120356.wallpaperId, true), [null == Chunk120356 ? true : Chunk120356.wallpaperId]),
+    E = Chunk647438.useCallback(() => T(null == Chunk120356 ? true : Chunk120356.wallpaperId, true), [null == Chunk120356 ? true : Chunk120356.wallpaperId]),
+    w = Chunk647438.useCallback(() => P(null == Chunk120356 ? true : Chunk120356.wallpaperId, true), [null == Chunk120356 ? true : Chunk120356.wallpaperId]),
+    I = Chunk647438.useCallback(() => S(null == Chunk120356 ? true : Chunk120356.wallpaperId, true), [null == Chunk120356 ? true : Chunk120356.wallpaperId]),
     k = Chunk647438.useCallback(e => {
       null != s && (0, h.i)(s, {
         token_mix_amount: Math.round(e)
@@ -147,7 +147,7 @@ function T() {
             size: "xs",
             color: "currentColor"
           }),
-          onClick: O,
+          onClick: E,
           className: Chunk715639.removeButton
         })]
       }), (0, Chunk951288.jsx)(Chunk481060.ua7, {
@@ -171,7 +171,7 @@ function T() {
             size: "xs",
             color: "currentColor"
           }),
-          onClick: I,
+          onClick: w,
           className: Chunk715639.removeButton
         })]
       }), (0, Chunk951288.jsx)(Chunk481060.ua7, {
@@ -202,7 +202,7 @@ function T() {
         children: [(0, Chunk951288.jsx)("input", {
           type: "color",
           value: Chunk704215.link_color,
-          onChange: T
+          onChange: O
         }, "linkColor-".concat(Chunk704215.link_color)), (0, Chunk951288.jsx)(Chunk481060.M0o, {
           color: "currentColor",
           tooltip: Chunk388032.intl.string(Chunk388032.t.N86XcH),
@@ -210,7 +210,7 @@ function T() {
             size: "xs",
             color: "currentColor"
           }),
-          onClick: w,
+          onClick: I,
           className: Chunk715639.removeButton
         })]
       }), (0, Chunk951288.jsx)(Chunk755721.zx, {
@@ -222,7 +222,7 @@ function T() {
   })
 }
 
-function O() {
+function E() {
   let e = Chunk647438.useCallback(() => {
       (0, Chunk675478.Z1)(Chunk704215.z.NITRO_TENURE_BADGE_LEVEL_UP)
     }, []),
@@ -251,7 +251,7 @@ function O() {
     })]
   })
 }
-let E = (0, Chunk392711.debounce)(function(e, t) {
+let T = (0, Chunk392711.debounce)(function(e, t) {
     null != e && (0, h.i)(e, {
       primary_color: t
     })

@@ -1,13 +1,14 @@
-/** Chunk was on 96750 **/
-/** chunk id: 321614, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 321614, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  R: () => o,
-  c: () => s
+  R: () => s,
+  c: () => l
 });
 var Chunk818083 = require("./818083.js"),
   Chunk984134 = require("./984134.js"),
   Chunk345655 = require("./345655.js");
-let a = (0, Chunk818083.B)({
+let o = (0, Chunk818083.B)({
   kind: "user",
   id: "2025-05_input_profiles_experiment_web",
   label: "Audio input profiles (studio mode)",
@@ -23,7 +24,7 @@ let a = (0, Chunk818083.B)({
   }]
 });
 
-function o(e) {
+function s(e) {
   let {
     location: t,
     autoTrackExposure: n = true
@@ -34,7 +35,7 @@ function o(e) {
   }, {
     autoTrackExposure: n
   });
-  return a.getCurrentConfig({
+  return o.getCurrentConfig({
     location: t
   }, {
     disable: r,
@@ -42,7 +43,7 @@ function o(e) {
   })
 }
 
-function s(e) {
+function l(e) {
   let {
     location: t,
     autoTrackExposure: n = true
@@ -53,7 +54,7 @@ function s(e) {
   }, {
     autoTrackExposure: n
   });
-  return a.useExperiment({
+  return o.useExperiment({
     location: t
   }, {
     disable: r,

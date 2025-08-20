@@ -1,12 +1,13 @@
-/** Chunk was on 26434 **/
-/** chunk id: 824203, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 824203, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  i: () => l
+  i: () => a
 });
 var Chunk39621 = require("./39621.js"),
   Chunk388032 = require("./388032.jsx");
 
-function l(e) {
+function a(e) {
   switch (e) {
     case r.O.FEATURE_LIMITED:
       return i.intl.string(i.t.WCvmra);

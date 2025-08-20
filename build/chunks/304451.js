@@ -1,5 +1,6 @@
-/** Chunk was on 26434 **/
-/** chunk id: 304451, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 304451, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   safetyPolicyNoticeContainer: "safetyPolicyNoticeContainer__86361",
   noticeContent: "noticeContent__86361",

@@ -1,11 +1,11 @@
-/** Chunk was on 31930 **/
-/** chunk id: 78451, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 78451, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  IF: () => c,
-  LJ: () => a,
-  MF: () => u,
-  c7: () => d
+  IF: () => u,
+  LJ: () => c,
+  MF: () => d,
+  c7: () => f
 });
 var Chunk524437 = require("./524437.js"),
   Chunk900089 = require("./900089.js"),
@@ -14,32 +14,34 @@ var Chunk524437 = require("./524437.js"),
 require("./973005.js");
 var Chunk388032 = require("./388032.jsx");
 
-function a(e) {
+function l(e) {
+  switch (e) {
+    case (0, i.Fw)("PRIMARY_400"):
+      return a.q.ACCENT;
+    case (0, i.Fw)("GREEN_360"):
+      return a.q.GREEN;
+    case (0, i.Fw)("YELLOW_360"):
+      return a.q.YELLOW;
+    case (0, i.Fw)("ORANGE_345"):
+      return a.q.ORANGE;
+    case (0, i.Fw)("RED_400"):
+      return a.q.RED;
+    default:
+      return a.q.NONE
+  }
+}
+
+function c(e) {
   return e.map(e => ({
     title: e.name,
     description: e.desc,
-    highlightColor: function(e) {
-      switch (e) {
-        case (0, r.Fw)("PRIMARY_400"):
-          return s.q.ACCENT;
-        case (0, r.Fw)("GREEN_360"):
-          return s.q.GREEN;
-        case (0, r.Fw)("YELLOW_360"):
-          return s.q.YELLOW;
-        case (0, r.Fw)("ORANGE_345"):
-          return s.q.ORANGE;
-        case (0, r.Fw)("RED_400"):
-          return s.q.RED;
-        default:
-          return s.q.NONE
-      }
-    }(e.color),
+    highlightColor: l(e.color),
     value: e.value,
     disabled: e.disabled
   }))
 }
 
-function c() {
+function u() {
   let e = arguments.length > 0 && true !== arguments[0] && arguments[0],
     t = arguments.length > 1 && true !== arguments[1] && arguments[1];
   return [{
@@ -75,7 +77,7 @@ function c() {
   }]
 }
 
-function u() {
+function d() {
   let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
   return [{
     name: Chunk388032.intl.string(Chunk388032.t.iHuPEx),
@@ -99,7 +101,7 @@ function u() {
   }]
 }
 
-function d() {
+function f() {
   return [{
     name: Chunk388032.intl.string(Chunk388032.t["4IaoCA"]),
     desc: Chunk388032.intl.string(Chunk388032.t.TgipjI),

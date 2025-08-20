@@ -1,5 +1,6 @@
-/** Chunk was on 26434 **/
-/** chunk id: 5146, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 5146, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   popout: "popout_d5c2c4",
   staffBadge: "staffBadge_d5c2c4",

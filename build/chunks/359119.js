@@ -2,7 +2,7 @@
 /** chunk id: 359119, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => C,
+  ZP: () => N,
   ny: () => f,
   pj: () => d
 }), require("./388685.js");
@@ -135,7 +135,7 @@ function S() {
 function A(e) {
   return new Date(e).getTime() > Date.now() - u
 }
-class N extends Chunk442837.ZP.Store {
+class C extends Chunk442837.ZP.Store {
   initialize() {
     this.waitFor(Chunk592125.Z)
   }
@@ -151,7 +151,7 @@ class N extends Chunk442837.ZP.Store {
     return h.has(e)
   }
 }
-let C = new N(Chunk570140.Z, {
+let N = new C(Chunk570140.Z, {
   CHANNEL_CREATE: E,
   CHANNEL_DELETE: y,
   CHANNEL_UPDATES: b,

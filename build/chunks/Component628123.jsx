@@ -57,7 +57,7 @@ function A() {
     children: Chunk388032.intl.string(Chunk388032.t["/Nz9ra"])
   })
 }
-let N = o().throttle(e => {
+let C = o().throttle(e => {
   g.Z.increment({
     name: c.V.APP_CRASHED,
     tags: ["reason:".concat(s.v.UNHANDLED_JS_ERROR), "level:".concat(l.c.FATAL), "modded_client:".concat(e)]
@@ -65,7 +65,7 @@ let N = o().throttle(e => {
 }, 100, {
   trailing: false
 });
-class C extends Chunk647438.PureComponent {
+class N extends Chunk647438.PureComponent {
   componentDidCatch(e, t) {
     this.triggerSoftCrash(e, t)
   }
@@ -87,7 +87,7 @@ class C extends Chunk647438.PureComponent {
       sentry_issue_id: i,
       uses_client_mods: r,
       error_level: "fatal"
-    }), N(r), O.ZP.cleanupDisplaySleep()
+    }), C(r), O.ZP.cleanupDisplaySleep()
   }
   _handleSubmitReport() {
     location.reload(true)
@@ -139,4 +139,4 @@ class C extends Chunk647438.PureComponent {
     }), S(this, "discordErrorsSet", false)
   }
 }
-let R = C
+let R = N

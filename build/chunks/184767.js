@@ -1,5 +1,6 @@
-/** Chunk was on 66181 **/
-/** chunk id: 184767, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 184767, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   pttTools: "pttTools__1c5a3",
   pttToolsMessage: "pttToolsMessage__1c5a3",

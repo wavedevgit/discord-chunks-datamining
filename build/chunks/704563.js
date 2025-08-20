@@ -1,5 +1,6 @@
-/** Chunk was on 66181 **/
-/** chunk id: 704563, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 704563, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   voiceModalContainer: "voiceModalContainer__25eff",
   voiceModalRootContainer: "voiceModalRootContainer__25eff",

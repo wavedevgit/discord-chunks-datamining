@@ -1,5 +1,6 @@
-/** Chunk was on 66181 **/
-/** chunk id: 901750, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 901750, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   Z: () => l
 });
@@ -8,45 +9,47 @@ require("./647438.js");
 var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk632357 = require("./632357.js");
+
+function s(e) {
+  let {
+    hasGuildBoostSlots: t,
+    hasAppliedGuildBoosts: n,
+    hasBoostPerk: r,
+    canAddBoosts: i
+  } = e;
+  return i ? t ? r && !n ? a.intl.format(a.t.s9zQyM, {}) : a.intl.format(a.t.Rb8Jho, {}) : a.intl.string(a.t["2rh0b2"]) : a.intl.format(a.t.Rb8Jho, {})
+}
 let l = function(e) {
   let {
     hasGuildBoostSlots: t,
-    hasAppliedGuildBoosts: l,
-    hasBoostPerk: o,
+    hasAppliedGuildBoosts: a,
+    hasBoostPerk: l,
     canAddBoosts: c
   } = e;
-  return (0, i.jsxs)("div", {
-    className: a.wrapper,
-    children: [(0, i.jsx)("div", {
-      className: a.guildBoostGemWrapper,
-      children: (0, i.jsx)("img", {
+  return (0, r.jsxs)("div", {
+    className: o.wrapper,
+    children: [(0, r.jsx)("div", {
+      className: o.guildBoostGemWrapper,
+      children: (0, r.jsx)("img", {
         alt: "",
-        className: a.guildBoostGem,
+        className: o.guildBoostGem,
         src: n(908635)
       })
-    }), (0, i.jsxs)("div", {
-      className: a.gradient,
-      children: [(0, i.jsx)(r.X6q, {
+    }), (0, r.jsxs)("div", {
+      className: o.gradient,
+      children: [(0, r.jsx)(i.X6q, {
         variant: "display-md",
-        className: a.heading,
-        children: function(e) {
-          let {
-            hasGuildBoostSlots: t,
-            hasAppliedGuildBoosts: n,
-            hasBoostPerk: i,
-            canAddBoosts: r
-          } = e;
-          return r ? t ? i && !n ? s.intl.format(s.t.s9zQyM, {}) : s.intl.format(s.t.Rb8Jho, {}) : s.intl.string(s.t["2rh0b2"]) : s.intl.format(s.t.Rb8Jho, {})
-        }({
+        className: o.heading,
+        children: s({
           hasGuildBoostSlots: t,
-          hasBoostPerk: o,
-          hasAppliedGuildBoosts: l,
+          hasBoostPerk: l,
+          hasAppliedGuildBoosts: a,
           canAddBoosts: c
         })
-      }), (0, i.jsx)("svg", {
+      }), (0, r.jsx)("svg", {
         viewBox: "0 0 660 210",
-        className: a.wave,
-        children: (0, i.jsx)("path", {
+        className: o.wave,
+        children: (0, r.jsx)("path", {
           d: "M101.3,45.5C57.5,45.9,15.9,82.2,0,99.5V210h660V53.5c-164-137-265.2,32.4-385.8,33.6  C177.7,88.1,158.1,45,101.3,45.5z"
         })
       })]

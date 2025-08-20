@@ -1,7 +1,8 @@
-/** Chunk was on 40694 **/
-/** chunk id: 47930, original params: e,n,t (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 47930, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  b: () => a,
+  b: () => l,
   x: () => c
 });
 var Chunk951288 = require("./951288.js");
@@ -11,39 +12,39 @@ var Chunk385499 = require("./385499.jsx"),
   Chunk368859 = require("./368859.js"),
   Chunk724913 = require("./724913.js");
 
-function a(e) {
-  let n, {
-    message: t,
+function l(e) {
+  let t, {
+    message: n,
     channel: r,
-    user: u,
-    isRepliedMessage: a
+    user: s,
+    isRepliedMessage: l
   } = e;
-  return (null == t ? true : t.isSystemDM()) ? n = l.Z.Types.SYSTEM_DM : null != t && (0, o.Z)(t) ? n = (0, i.cp)(t) ? l.Z.Types.OFFICIAL : l.Z.Types.SERVER : (null == u ? true : u.bot) ? n = l.Z.Types.BOT : null != r && r.isForumPost() && r.ownerId === (null == u ? true : u.id) && !a && (n = l.Z.Types.ORIGINAL_POSTER), n
+  return (null == n ? true : n.isSystemDM()) ? t = i.Z.Types.SYSTEM_DM : null != n && (0, o.Z)(n) ? t = (0, a.cp)(n) ? i.Z.Types.OFFICIAL : i.Z.Types.SERVER : (null == s ? true : s.bot) ? t = i.Z.Types.BOT : null != r && r.isForumPost() && r.ownerId === (null == s ? true : s.id) && !l && (t = i.Z.Types.ORIGINAL_POSTER), t
 }
 
 function c(e) {
   let {
-    message: n,
-    channel: t,
-    user: i,
+    message: t,
+    channel: n,
+    user: a,
     compact: o,
     isRepliedMessage: c,
-    hideIcon: s = false,
+    hideIcon: u = false,
     children: d
-  } = e, f = a({
-    message: n,
-    channel: t,
-    user: i,
+  } = e, f = l({
+    message: t,
+    channel: n,
+    user: a,
     compact: o,
     isRepliedMessage: c,
-    hideIcon: s,
+    hideIcon: u,
     children: d
   });
-  return null == f ? null : (0, r.jsx)(l.Z, {
-    className: o ? u.botTagCompact : u.botTagCozy,
+  return null == f ? null : (0, r.jsx)(i.Z, {
+    className: o ? s.botTagCompact : s.botTagCozy,
     type: f,
-    verified: null == i ? true : i.isVerifiedBot(),
-    hideIcon: s,
+    verified: null == a ? true : a.isVerifiedBot(),
+    hideIcon: u,
     useRemSizes: true,
     children: d
   })

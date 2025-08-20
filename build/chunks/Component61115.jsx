@@ -2,7 +2,7 @@
 /** chunk id: 61115, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  C: () => N,
+  C: () => C,
   default: () => S
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -70,7 +70,7 @@ function S(e) {
     transitionState: a,
     onClose: o,
     onSubmit: f
-  } = e, p = (0, _.B4)(t), [b, O] = i.useState(0), [S, N] = (0, l.q_F)(() => ({
+  } = e, p = (0, _.B4)(t), [b, O] = i.useState(0), [S, C] = (0, l.q_F)(() => ({
     from: {
       width: "0%"
     },
@@ -78,17 +78,17 @@ function S(e) {
       duration: I
     }
   })), R = e => {
-    f(), O(1), null != p && d.default.track(h.rMx.QUEST_SURVEY_SUBMITTED, v(y({}, C(p, n)), {
+    f(), O(1), null != p && d.default.track(h.rMx.QUEST_SURVEY_SUBMITTED, v(y({}, N(p, n)), {
       choice: e.text,
       choice_id: e.key
     }))
   }, P = async e => {
-    1 === e && (await N({
+    1 === e && (await C({
       width: "100%"
     }), o())
   };
   return (0, c.ZP)(() => {
-    null != p && d.default.track(h.rMx.QUEST_SURVEY_DISPLAYED, C(p, n))
+    null != p && d.default.track(h.rMx.QUEST_SURVEY_DISPLAYED, N(p, n))
   }), null == p && o(), (0, r.jsx)(l.Y0X, {
     "data-migration-pending": true,
     transitionState: a,
@@ -182,7 +182,7 @@ function A(e) {
   })
 }
 
-function N(e) {
+function C(e) {
   let t = false;
   (0, l.ZDy)(async () => {
     let {
@@ -196,14 +196,14 @@ function N(e) {
   }, {
     onCloseCallback: () => {
       let n = p.Z.getQuest(e.questId);
-      null != n && d.default.track(h.rMx.QUEST_SURVEY_DISMISSED, v(y({}, C(n, e.survey)), {
+      null != n && d.default.track(h.rMx.QUEST_SURVEY_DISMISSED, v(y({}, N(n, e.survey)), {
         submitted: t
       }))
     }
   })
 }
 
-function C(e, t) {
+function N(e, t) {
   return {
     quest_id: e.id,
     quest_status: (0, f.uk)(e),

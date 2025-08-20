@@ -91,7 +91,7 @@ let a = new(require("./147567.js")),
     for (; n && r.length;) n = r.every(e => i.intersects(e, t)), i = r.pop();
     return n
   },
-  y = (e, t) => (l("comp", e, t), l("caret", e = T(e, t)), l("tildes", e = v(e, t)), l("xrange", e = A(e, t)), l("stars", e = C(e, t)), e),
+  y = (e, t) => (l("comp", e, t), l("caret", e = T(e, t)), l("tildes", e = v(e, t)), l("xrange", e = A(e, t)), l("stars", e = N(e, t)), e),
   O = e => !e || "x" === e.toLowerCase() || "*" === e,
   v = (e, t) => e.trim().split(/\s+/).map(e => I(e, t)).join(" "),
   I = (e, t) => {
@@ -111,8 +111,8 @@ let a = new(require("./147567.js")),
       return l("caret", e, t, n, i, a, o), O(n) ? s = "" : O(i) ? s = `>=${n}.0.0${r} <${+n+1}.0.0-0` : O(a) ? s = "0" === n ? `>=${n}.${i}.0${r} <${n}.${+i+1}.0-0` : `>=${n}.${i}.0${r} <${+n+1}.0.0-0` : o ? (l("replaceCaret pr", o), s = "0" === n ? "0" === i ? `>=${n}.${i}.${a}-${o} <${n}.${i}.${+a+1}-0` : `>=${n}.${i}.${a}-${o} <${n}.${+i+1}.0-0` : `>=${n}.${i}.${a}-${o} <${+n+1}.0.0-0`) : (l("no pr"), s = "0" === n ? "0" === i ? `>=${n}.${i}.${a}${r} <${n}.${i}.${+a+1}-0` : `>=${n}.${i}.${a}${r} <${n}.${+i+1}.0-0` : `>=${n}.${i}.${a} <${+n+1}.0.0-0`), l("caret return", s), s
     })
   },
-  A = (e, t) => (l("replaceXRanges", e, t), e.split(/\s+/).map(e => N(e, t)).join(" ")),
-  N = (e, t) => {
+  A = (e, t) => (l("replaceXRanges", e, t), e.split(/\s+/).map(e => C(e, t)).join(" ")),
+  C = (e, t) => {
     e = e.trim();
     let n = t.loose ? u[d.XRANGELOOSE] : u[d.XRANGE];
     return e.replace(n, (n, r, i, a, o, s) => {
@@ -124,7 +124,7 @@ let a = new(require("./147567.js")),
       return "=" === r && f && (r = ""), s = t.includePrerelease ? "-0" : "", c ? n = ">" === r || "<" === r ? "<0.0.0-0" : "*" : r && f ? (u && (a = 0), o = 0, ">" === r ? (r = ">=", u ? (i = +i + 1, a = 0) : a = +a + 1, o = 0) : "<=" === r && (r = "<", u ? i = +i + 1 : a = +a + 1), "<" === r && (s = "-0"), n = `${r+i}.${a}.${o}${s}`) : u ? n = `>=${i}.0.0${s} <${+i+1}.0.0-0` : d && (n = `>=${i}.${a}.0${s} <${i}.${+a+1}.0-0`), l("xRange return", n), n
     })
   },
-  C = (e, t) => (l("replaceStars", e, t), e.trim().replace(u[d.STAR], "")),
+  N = (e, t) => (l("replaceStars", e, t), e.trim().replace(u[d.STAR], "")),
   R = (e, t) => (l("replaceGTE0", e, t), e.trim().replace(u[t.includePrerelease ? d.GTE0PRE : d.GTE0], "")),
   P = e => (t, n, r, i, a, o, s, l, c, u, d, f) => (n = O(r) ? "" : O(i) ? `>=${r}.0.0${e?"-0":""}` : O(a) ? `>=${r}.${i}.0${e?"-0":""}` : o ? `>=${n}` : `>=${n}${e?"-0":""}`, l = O(c) ? "" : O(u) ? `<${+c+1}.0.0-0` : O(d) ? `<${c}.${+u+1}.0-0` : f ? `<=${c}.${u}.${d}-${f}` : e ? `<${c}.${u}.${+d+1}-0` : `<=${l}`, `${n} ${l}`.trim()),
   w = (e, t, n) => {

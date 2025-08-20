@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   Yy: () => O,
-  ZP: () => C,
-  ai: () => N
+  ZP: () => N,
+  ai: () => C
 }), require("./388685.js"), require("./539854.js");
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
@@ -40,10 +40,10 @@ let b = 100,
   T = 30 * Chunk70956.Z.Millis.SECOND,
   S = 120 * Chunk70956.Z.Millis.SECOND,
   A = false !== (0, Chunk526167.hY)();
-var N = function(e) {
+var C = function(e) {
   return e.UserSSRCUpdate = "user-ssrc-update", e.Update = "update", e
 }({});
-class C extends Chunk47770.Z {
+class N extends Chunk47770.Z {
   getWantsLevel() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : 0,
       t = this.getVideoParticipantCount();

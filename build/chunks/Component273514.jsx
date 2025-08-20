@@ -1,4 +1,4 @@
-/** Chunk was on 26475 **/
+/** Chunk was on 40226 **/
 /** chunk id: 273514, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -14,12 +14,12 @@ var Chunk481060 = require("./481060.js"),
 let d = e => {
   let {
     entry: t
-  } = e, n = o.Z.getChannel(t.channelId);
+  } = e, n = a.Z.getChannel(t.channelId);
   if (null == n) return null;
-  let d = l.Z.getGuild(n.guild_id);
+  let d = o.Z.getGuild(n.guild_id);
   return null == d ? null : (0, r.jsxs)("div", {
     className: c.container,
-    children: [(0, r.jsx)(a.X6q, {
+    children: [(0, r.jsx)(i.X6q, {
       className: c.header,
       variant: "heading-sm/semibold",
       children: s.intl.string(s.t.nTe4HB)
@@ -27,16 +27,16 @@ let d = e => {
       className: c.guildContainer,
       children: [(0, r.jsxs)("div", {
         className: c.hubInfo,
-        children: [(0, r.jsx)(i.Z, {
+        children: [(0, r.jsx)(l.Z, {
           guild: d,
-          size: i.Z.Sizes.MINI,
+          size: l.Z.Sizes.MINI,
           className: c.hubIcon
-        }), (0, r.jsx)(a.Text, {
+        }), (0, r.jsx)(i.Text, {
           color: "header-secondary",
           variant: "text-sm/normal",
           children: d.name
         })]
-      }), (0, r.jsx)(a.Text, {
+      }), (0, r.jsx)(i.Text, {
         variant: "text-md/semibold",
         color: "header-primary",
         children: t.name

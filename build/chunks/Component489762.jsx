@@ -43,7 +43,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk473049 = require("./473049.js"),
   Chunk239840 = require("./239840.js");
 
-function V(e, t, n) {
+function Z(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -52,20 +52,20 @@ function V(e, t, n) {
   }) : e[t] = n, e
 }
 
-function F(e) {
+function V(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      V(e, t, n[t])
+      Z(e, t, n[t])
     })
   }
   return e
 }
 
-function Z(e, t) {
+function F(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -77,7 +77,7 @@ function Z(e, t) {
 }
 
 function H(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : Z(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : F(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -140,20 +140,20 @@ let Y = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
           sticker: s
         } = e;
         if (null == s) return;
-        let l = H(F({}, a.location), {
-          object: "" === o ? k.qAy.STICKER_PICKER_VIEW_ALL : k.qAy.STICKER_SEARCH_VIEW_ALL
+        let l = H(V({}, a.location), {
+          object: "" === o ? M.qAy.STICKER_PICKER_VIEW_ALL : M.qAy.STICKER_SEARCH_VIEW_ALL
         });
         if (null != s && !(0, A.kl)(s, r, n)) {
           let e = (0, w.J8)(s);
           (0, A.cO)(s, r, n) === A.eb.SENDABLE_WITH_PREMIUM && (0, S.f)(true), e && A.eb.SENDABLE_WITH_BOOSTED_GUILD;
           return
         }
-        if (i) return void((0, w.gM)(s.id) ? (0, N.hW)(s.id) : ((0, C.cQ)({
+        if (i) return void((0, w.gM)(s.id) ? (0, C.hW)(s.id) : ((0, N.cQ)({
           sticker: s,
-          location: H(F({}, l), {
-            object: k.qAy.STICKER
+          location: H(V({}, l), {
+            object: M.qAy.STICKER
           })
-        }), (0, N.SA)(s.id)));
+        }), (0, C.SA)(s.id)));
         t(e)
       }, [a.location, o, r, n, t])
     }
@@ -174,26 +174,26 @@ let Y = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
       filteredStickers: E,
       ownedStickerPacks: T,
       channel: S
-    } = e, A = (0, u.O)(), N = (0, o.e7)([v.default], () => v.default.getCurrentUser()), {
-      handleStickerInspect: C,
-      handleSelect: x
+    } = e, A = (0, u.O)(), C = (0, o.e7)([v.default], () => v.default.getCurrentUser()), {
+      handleStickerInspect: N,
+      handleSelect: L
     } = e_({
       onSelectSticker: a,
       channel: S,
-      currentUser: N
-    }), [B, V] = i.useState(false), F = i.useCallback(e => {
+      currentUser: C
+    }), [B, Z] = i.useState(false), V = i.useCallback(e => {
       y._O.updateSetting(Array.from(e))
-    }, []), Z = i.useCallback(e => {
+    }, []), F = i.useCallback(e => {
       let t = m[e];
-      return null != t ? (0, r.jsx)(M.Z, {
+      return null != t ? (0, r.jsx)(j.Z, {
         getStickerItemProps: s,
         getStickerRowProps: c,
         gutterWidth: d,
         inspectedStickerPosition: f,
         isScrolling: _,
         isUsingKeyboardNavigation: h,
-        onInspect: C,
-        onSelect: x,
+        onInspect: N,
+        onSelect: L,
         rowIndex: e,
         stickerClassName: G.sticker,
         stickerDescriptors: t,
@@ -202,21 +202,21 @@ let Y = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
         ownedStickerPacks: T,
         isDisplayingIndividualStickers: true,
         channel: S,
-        currentUser: N
+        currentUser: C
       }, e) : null
-    }, [m, s, c, d, f, _, h, C, x, n, T, S, N]), H = i.useCallback((e, t) => (0, r.jsx)("div", {
+    }, [m, s, c, d, f, _, h, N, L, n, T, S, C]), H = i.useCallback((e, t) => (0, r.jsx)("div", {
       children: t
     }, e), []), K = i.useCallback(function(e) {
       let {
         isStickerPack: n = true
       } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {}, r = new Set(t), i = t.has(e);
-      i ? r.delete(e) : r.add(e), I.default.track(k.rMx.EXPRESSION_PICKER_CATEGORY_COLLAPSE_TOGGLED, {
+      i ? r.delete(e) : r.add(e), I.default.track(M.rMx.EXPRESSION_PICKER_CATEGORY_COLLAPSE_TOGGLED, {
         location: null == A ? true : A.location,
-        tab: j.X1.STICKER,
+        tab: k.X1.STICKER,
         collapsed: !i,
         sticker_pack_id: n ? e : null
-      }), F(r)
-    }, [A, t, F]), z = i.useCallback(e => {
+      }), V(r)
+    }, [A, t, V]), z = i.useCallback(e => {
       let n = g[e];
       if (null != E) {
         let {
@@ -318,19 +318,19 @@ let Y = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
       return $
     }, [E]);
     return {
-      renderRow: Z,
+      renderRow: F,
       renderSection: H,
       renderSectionHeader: z,
       sectionHeaderHeight: q,
       renderSectionFooter: i.useCallback(e => {
         let n = g[e],
           i = t.has(n.id);
-        return n.type !== P.Ih.EMPTY_GUILD_UPSELL || null != E || i ? null : (0, r.jsx)(L.Z, {
+        return n.type !== P.Ih.EMPTY_GUILD_UPSELL || null != E || i ? null : (0, r.jsx)(x.Z, {
           className: G.emptyGuildUpsell,
           guildId: n.id,
           channel: S,
           shouldTrackUpsellViewed: !B,
-          setTrackedUpsellViewed: V
+          setTrackedUpsellViewed: Z
         }, "sticker-picker-empty-guild-inline-upsell-".concat(n.id))
       }, [g, t, E, S, B]),
       sectionFooterHeight: i.useCallback(e => {
@@ -355,15 +355,15 @@ let Y = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
       stickersCategories: I,
       stickersGrid: T,
       channel: S
-    } = e, A = i.useRef(false), N = i.useRef(null), [C, P] = h.ZN.useStore(e => [e.activeCategoryIndex, e.inspectedExpressionPosition], a.X), {
+    } = e, A = i.useRef(false), C = i.useRef(null), [N, P] = h.ZN.useStore(e => [e.activeCategoryIndex, e.inspectedExpressionPosition], a.X), {
       analyticsLocations: w
-    } = (0, f.ZP)(d.Z.STICKER_PICKER), D = (0, m.Iu)(e => e.searchQuery), L = (0, o.e7)([R.Z], () => R.Z.getPremiumPacks()), {
-      renderRow: M,
-      renderSection: k,
-      renderSectionFooter: j,
-      sectionFooterHeight: V,
-      renderSectionHeader: F,
-      sectionHeaderHeight: Z
+    } = (0, f.ZP)(d.Z.STICKER_PICKER), D = (0, m.Iu)(e => e.searchQuery), x = (0, o.e7)([R.Z], () => R.Z.getPremiumPacks()), {
+      renderRow: j,
+      renderSection: M,
+      renderSectionFooter: k,
+      sectionFooterHeight: Z,
+      renderSectionHeader: V,
+      sectionHeaderHeight: F
     } = ep({
       collapsedStickersCategories: n,
       gridWidth: s,
@@ -377,52 +377,52 @@ let Y = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
       gutterWidth: g,
       inspectedStickerPosition: P,
       filteredStickers: l,
-      ownedStickerPacks: i.useMemo(() => new Set(L.map(e => e.id)), [L]),
+      ownedStickerPacks: i.useMemo(() => new Set(x.map(e => e.id)), [x]),
       channel: S
     }), H = (0, E.Qs)({
-      activeCategoryIndex: C,
+      activeCategoryIndex: N,
       isScrolling: A,
-      listRef: N,
+      listRef: C,
       onActiveCategoryIndexChange: h.ZN.setActiveCategoryIndex,
       scrollOffset: eo,
       searchQuery: D
     });
     return (0, E.Xs)({
       searchQuery: D,
-      activeCategoryIndex: C,
-      listRef: N
+      activeCategoryIndex: N,
+      listRef: C
     }), i.useImperativeHandle(t, () => ({
       scrollTo: function() {
         for (var e, t = arguments.length, n = Array(t), r = 0; r < t; r++) n[r] = arguments[r];
-        return null == (e = N.current) ? true : e.scrollTo(...n)
+        return null == (e = C.current) ? true : e.scrollTo(...n)
       },
       getRowDescriptors: () => {
         var e, t;
-        return null != (t = null == (e = N.current) ? true : e.getRowDescriptors()) ? t : []
+        return null != (t = null == (e = C.current) ? true : e.getRowDescriptors()) ? t : []
       },
       getSectionDescriptors: () => {
         var e, t;
-        return null != (t = null == (e = N.current) ? true : e.getSectionDescriptors()) ? t : []
+        return null != (t = null == (e = C.current) ? true : e.getSectionDescriptors()) ? t : []
       },
       scrollToSectionTop: function() {
         for (var e, t = arguments.length, n = Array(t), r = 0; r < t; r++) n[r] = arguments[r];
-        return null == (e = N.current) ? true : e.scrollToSectionTop(...n)
+        return null == (e = C.current) ? true : e.scrollToSectionTop(...n)
       },
       scrollRowIntoView: function() {
         for (var e, t = arguments.length, n = Array(t), r = 0; r < t; r++) n[r] = arguments[r];
-        return null == (e = N.current) ? true : e.scrollRowIntoView(...n)
+        return null == (e = C.current) ? true : e.scrollRowIntoView(...n)
       },
       getScrollerNode: function() {
         for (var e, t = arguments.length, n = Array(t), r = 0; r < t; r++) n[r] = arguments[r];
-        return null == (e = N.current) ? true : e.getScrollerNode(...n)
+        return null == (e = C.current) ? true : e.getScrollerNode(...n)
       },
       scrollIntoViewNode: function() {
         for (var e, t = arguments.length, n = Array(t), r = 0; r < t; r++) n[r] = arguments[r];
-        return null == (e = N.current) ? true : e.scrollIntoViewNode(...n)
+        return null == (e = C.current) ? true : e.scrollIntoViewNode(...n)
       },
       getListDimensions: function() {
         for (var e, t, n = arguments.length, r = Array(n), i = 0; i < n; i++) r[i] = arguments[i];
-        return null != (t = null == (e = N.current) ? true : e.getListDimensions(...r)) ? t : {
+        return null != (t = null == (e = C.current) ? true : e.getListDimensions(...r)) ? t : {
           height: false,
           totalHeight: false
         }
@@ -442,18 +442,18 @@ let Y = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
           role: "none presentation",
           listPadding: null != l ? el : es,
           onScroll: H,
-          renderRow: M,
-          renderSection: null == l ? k : true,
-          renderSectionHeader: F,
-          renderSectionFooter: j,
+          renderRow: j,
+          renderSection: null == l ? M : true,
+          renderSectionHeader: V,
+          renderSectionFooter: k,
           rowCount: O,
           rowCountBySection: v,
           rowHeight: s > Y ? ei : ea,
-          sectionHeaderHeight: Z,
-          sectionFooterHeight: V,
+          sectionHeaderHeight: F,
+          sectionFooterHeight: Z,
           stickyHeaders: true,
-          ref: N
-        }), (0, r.jsx)(x.Z, {
+          ref: C
+        }), (0, r.jsx)(L.Z, {
           stickersGrid: T
         })]
       })

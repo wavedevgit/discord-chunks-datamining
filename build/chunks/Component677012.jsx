@@ -1,7 +1,7 @@
-/** Chunk was on 60301 **/
+/** Chunk was on 57650 **/
 /** chunk id: 677012, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => w
+  default: () => _
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,27 +17,27 @@ var Chunk951288 = require("./951288.js"),
   Chunk674563 = require("./674563.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk409574 = require("./409574.js");
-let h = (0, Chunk624138.Mg)(Chunk477690.Z.INTERACTION_IFRAME_MODAL_MODAL_MIN_WIDTH),
+let m = (0, Chunk624138.Mg)(Chunk477690.Z.INTERACTION_IFRAME_MODAL_MODAL_MIN_WIDTH),
   g = (0, Chunk624138.Mg)(Chunk477690.Z.INTERACTION_IFRAME_MODAL_MODAL_MAX_WIDTH),
-  v = (0, Chunk624138.Mg)(Chunk477690.Z.INTERACTION_IFRAME_MODAL_MODAL_MARGIN),
-  j = (0, Chunk624138.Mg)(Chunk477690.Z.INTERACTION_IFRAME_MODAL_MODAL_HEADER_HEIGHT);
+  j = (0, Chunk624138.Mg)(Chunk477690.Z.INTERACTION_IFRAME_MODAL_MODAL_MARGIN),
+  w = (0, Chunk624138.Mg)(Chunk477690.Z.INTERACTION_IFRAME_MODAL_MODAL_HEADER_HEIGHT);
 
-function w(e) {
+function _(e) {
   var t, n, o;
   let {
-    title: f,
-    onClose: w
+    title: p,
+    onClose: _
   } = e, {
-    applicationIconURL: _,
+    applicationIconURL: v,
     applicationName: y,
     queryParams: x,
     iframeUrl: I
-  } = (0, p.b8)(e), {
+  } = (0, f.b8)(e), {
     width: M,
     height: N
   } = (0, d.Z)(), A = a.useMemo(() => {
-    let e = Math.min((N - j - 2 * v) * 16 / 9, g);
-    return Math.max(h, Math.min(M - 2 * v, e))
+    let e = Math.min((N - w - 2 * j) * 16 / 9, g);
+    return Math.max(m, Math.min(M - 2 * j, e))
   }, [M, N]);
   return (0, r.jsx)(c.Y0X, (n = function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -58,7 +58,7 @@ function w(e) {
     return e
   }({}, e), o = o = {
     size: c.CgR.DYNAMIC,
-    className: O.root,
+    className: h.root,
     parentComponent: "InteractionIframeModal",
     "data-migration-pending": true,
     children: (0, r.jsxs)("div", {
@@ -67,15 +67,15 @@ function w(e) {
       },
       children: [(0, r.jsxs)(c.xBx, {
         separator: false,
-        className: O.modalHeader,
+        className: h.modalHeader,
         "data-migration-pending": true,
         children: [(0, r.jsx)(c.qEK, {
-          src: _,
+          src: v,
           size: c.EFr.SIZE_32,
           "aria-label": y,
-          className: O.applicationIcon
+          className: h.applicationIcon
         }), (0, r.jsxs)("div", {
-          className: O.flexRow,
+          className: h.flexRow,
           children: [(0, r.jsxs)("div", {
             children: [(0, r.jsx)(c.X6q, {
               variant: "heading-sm/bold",
@@ -83,33 +83,33 @@ function w(e) {
             }), (0, r.jsx)(c.Text, {
               variant: "text-xs/medium",
               color: "interactive-normal",
-              children: f
+              children: p
             })]
-          }), (0, r.jsx)(s.Z, {
+          }), (0, r.jsx)(l.Z, {
             type: b.Hb.BOT,
-            className: O.botTag,
+            className: h.botTag,
             verified: null == (t = e.application.bot) ? true : t.verified
           })]
         }), (0, r.jsx)(i.zx, {
-          onClick: w,
-          innerClassName: O.closeButton,
-          className: O.closeButtonContainer,
+          onClick: _,
+          innerClassName: h.closeButton,
+          className: h.closeButtonContainer,
           look: i.zx.Looks.BLANK,
           size: i.zx.Sizes.NONE,
-          "aria-label": m.intl.string(m.t.WAI6xs),
+          "aria-label": O.intl.string(O.t.WAI6xs),
           "data-migration-pending": true,
           children: (0, r.jsx)(c.Dio, {
             size: "md",
             color: "currentColor",
-            className: O.closeIcon
+            className: h.closeIcon
           })
         })]
       }), (0, r.jsx)(u.Z, {
         aspectRatio: 16 / 9,
-        children: (0, r.jsx)(l.J, {
+        children: (0, r.jsx)(s.J, {
           url: I,
           shouldRefocus: true,
-          className: O.iframe,
+          className: h.iframe,
           queryParams: x
         })
       })]

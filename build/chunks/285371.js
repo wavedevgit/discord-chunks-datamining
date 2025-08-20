@@ -1,6 +1,7 @@
-/** Chunk was on 66181 **/
-/** chunk id: 285371, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 285371, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  J: () => i
+  J: () => r
 });
-let i = "KEYBOARD_SHORTCUT_MODAL_KEY"
+let r = "KEYBOARD_SHORTCUT_MODAL_KEY"

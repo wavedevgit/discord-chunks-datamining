@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 715495, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 715495, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => E
+  Z: () => I
 }), require("./388685.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,83 +21,90 @@ var Chunk951288 = require("./951288.js"),
   Chunk731994 = require("./731994.js"),
   Chunk30827 = require("./30827.js");
 
-function _(e) {
+function b(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      i = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), i.forEach(function(t) {
-      var i;
-      i = n[t], t in e ? Object.defineProperty(e, t, {
-        value: i,
-        enumerable: true,
-        configurable: true,
-        writable: true
-      }) : e[t] = i
+    }))), r.forEach(function(t) {
+      b(e, t, n[t])
     })
   }
   return e
 }
 
-function j(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-      var i = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, i)
-    }
-    return n
-  })(Object(t)).forEach(function(n) {
+function O(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function v(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function E() {
+function I() {
   var e;
-  let [t, n] = (0, Chunk647438.useState)(false), [s, l] = (0, Chunk647438.useState)(false), [d, g] = (0, Chunk647438.useState)(null), [f, E] = (0, Chunk647438.useState)(320), I = (0, Chunk647438.useRef)(null), y = (0, Chunk647438.useRef)(null), A = (0, Chunk647438.useRef)(null), P = (0, Chunk396821.ZP)(e => e.toolsCache), {
-    setToolsCache: R,
-    removeToolsCache: D
+  let [t, n] = (0, Chunk647438.useState)(false), [a, s] = (0, Chunk647438.useState)(false), [u, p] = (0, Chunk647438.useState)(null), [m, b] = (0, Chunk647438.useState)(320), O = (0, Chunk647438.useRef)(null), I = (0, Chunk647438.useRef)(null), P = (0, Chunk647438.useRef)(null), w = (0, Chunk396821.ZP)(e => e.toolsCache), {
+    setToolsCache: D,
+    removeToolsCache: x
   } = (0, Chunk396821.L3)(), {
-    setImgCache: Z
-  } = (0, Chunk396821.W_)(), w = (0, Chunk647438.useCallback)(e => {
-    let t = P[e];
-    null != t && g({
+    setImgCache: L
+  } = (0, Chunk396821.W_)(), j = (0, Chunk647438.useCallback)(e => {
+    let t = w[e];
+    null != t && p({
       src: t.url,
       palette: t.palette,
       preview: true
-    }), g(t => null == t ? {
+    }), p(t => null == t ? {
       src: e,
-      palette: m.jD,
+      palette: f.jD,
       preview: true
-    } : j(_({}, t), {
+    } : v(y({}, t), {
       src: e,
       preview: true
     }))
-  }, [P]), k = (0, Chunk647438.useCallback)(e => {
-    g(t => null == t ? null : j(_({}, t), {
+  }, [w]), M = (0, Chunk647438.useCallback)(e => {
+    p(t => null == t ? null : v(y({}, t), {
       palette: e,
       preview: true
     }))
-  }, []), L = (0, Chunk647438.useCallback)(e => {
-    D(e)
-  }, [D]), B = (0, Chunk647438.useCallback)(e => {
-    if (null != I.current) {
-      let t = I.current.getBoundingClientRect();
-      E(Math.max(264, Math.min(432, e.clientX - t.left)))
+  }, []), k = (0, Chunk647438.useCallback)(e => {
+    x(e)
+  }, [x]), U = (0, Chunk647438.useCallback)(e => {
+    if (null != O.current) {
+      let t = O.current.getBoundingClientRect();
+      b(Math.max(264, Math.min(432, e.clientX - t.left)))
     }
-  }, []), M = (0, Chunk647438.useCallback)(e => {
+  }, []), G = (0, Chunk647438.useCallback)(e => {
     e.preventDefault(), e.stopPropagation();
     let t = e => {
-        e.preventDefault(), B(e)
+        e.preventDefault(), U(e)
       },
       n = () => {
-        null != y.current && (document.removeEventListener("mousemove", y.current), y.current = null), null != A.current && (document.removeEventListener("mouseup", A.current), A.current = null)
+        null != I.current && (document.removeEventListener("mousemove", I.current), I.current = null), null != P.current && (document.removeEventListener("mouseup", P.current), P.current = null)
       };
-    y.current = t, A.current = n, document.addEventListener("mousemove", t), document.addEventListener("mouseup", n)
-  }, [B]);
+    I.current = t, P.current = n, document.addEventListener("mousemove", t), document.addEventListener("mouseup", n)
+  }, [U]);
   return (0, Chunk647438.useEffect)(() => () => {
-    null != y.current && (document.removeEventListener("mousemove", y.current), y.current = null), null != A.current && (document.removeEventListener("mouseup", A.current), A.current = null)
+    null != I.current && (document.removeEventListener("mousemove", I.current), I.current = null), null != P.current && (document.removeEventListener("mouseup", P.current), P.current = null)
   }, []), (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsxs)("div", {
       className: Chunk30827.controls,
@@ -122,14 +130,14 @@ function E() {
         children: [exports && (0, Chunk951288.jsx)(Chunk329013.i, {}), Chunk442837 && (0, Chunk951288.jsx)(Chunk711325.Z, {
           selected: null == Chunk594174 || null == (e = Chunk594174.palette) ? true : module.name,
           onSelect: e => {
-            (null == d ? true : d.src) != null && R(d.src, d.src, e), k(e)
+            (null == u ? true : u.src) != null && D(u.src, u.src, e), M(e)
           }
         })]
       })]
     }), (0, Chunk951288.jsxs)("div", {
       className: Chunk30827.main,
       children: [(0, Chunk951288.jsxs)("div", {
-        ref: I,
+        ref: O,
         className: Chunk30827.previews,
         style: {
           width: "".concat(Chunk852630, "px")
@@ -137,21 +145,21 @@ function E() {
         children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-sm/semibold",
           children: "Memberlist"
-        }), (0, Chunk951288.jsx)(S, {
+        }), (0, Chunk951288.jsx)(C, {
           nameplate: Chunk594174
         }), (0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-sm/semibold",
           children: "DMs"
-        }), (0, Chunk951288.jsx)(T, {
+        }), (0, Chunk951288.jsx)(N, {
           nameplate: Chunk594174
         }), (0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-sm/semibold",
           children: "RTC"
-        }), (0, Chunk951288.jsx)(N, {
+        }), (0, Chunk951288.jsx)(R, {
           nameplate: Chunk594174
         }), (0, Chunk951288.jsx)("div", {
           className: Chunk30827.resizeHandle,
-          onMouseDown: M
+          onMouseDown: G
         })]
       }), (0, Chunk951288.jsxs)("div", {
         className: Chunk30827.buttons,
@@ -165,29 +173,29 @@ function E() {
           onDrop: async e => {
             let t = URL.createObjectURL(e[0]),
               n = e[0],
-              i = await n.arrayBuffer();
-            Z(t, t, (0, p.xh)(i)), R(t, t, m.jD)
+              r = await n.arrayBuffer();
+            L(t, t, (0, _.xh)(r)), D(t, t, f.jD)
           }
         }), (0, Chunk951288.jsx)("div", {
           className: Chunk30827.uploadedArea,
-          children: Object.values(P).map(e => {
+          children: Object.values(w).map(e => {
             let {
               url: t
             } = e;
-            return (0, i.jsx)(C, {
+            return (0, r.jsx)(T, {
               src: t,
-              onSetStatic: w,
-              removeAsset: L
+              onSetStatic: j,
+              removeAsset: k
             }, t)
           })
-        }), (0, Chunk951288.jsx)(v, {
+        }), (0, Chunk951288.jsx)(A, {
           label: "gradient override",
-          onChange: e => k({
-            name: m._j,
+          onChange: e => M({
+            name: f._j,
             darkBackground: e,
             lightBackground: e
           })
-        }), (0, Chunk951288.jsx)(O, {
+        }), (0, Chunk951288.jsx)(S, {
           label: "set",
           onClick: () => {}
         })]
@@ -196,30 +204,30 @@ function E() {
   })
 }
 
-function C(e) {
+function T(e) {
   let {
     src: t,
     onSetStatic: n,
-    removeAsset: r
+    removeAsset: i
   } = e;
-  return (0, i.jsxs)("div", {
-    className: x.uploaded,
-    children: [(0, i.jsx)(a.P3F, {
-      onClick: () => r(t),
-      className: x.xicon,
-      children: (0, i.jsx)(a.Dio, {
+  return (0, r.jsxs)("div", {
+    className: E.uploaded,
+    children: [(0, r.jsx)(o.P3F, {
+      onClick: () => i(t),
+      className: E.xicon,
+      children: (0, r.jsx)(o.Dio, {
         size: "custom",
         width: 16,
         height: 16,
         name: "x"
       })
-    }), (0, i.jsx)("img", {
-      className: x.uploadedImg,
+    }), (0, r.jsx)("img", {
+      className: E.uploadedImg,
       src: t,
       alt: ""
-    }), (0, i.jsx)("div", {
-      className: x.uploadedControls,
-      children: (0, i.jsx)(a.zxk, {
+    }), (0, r.jsx)("div", {
+      className: E.uploadedControls,
+      children: (0, r.jsx)(o.zxk, {
         onClick: () => n(t),
         size: "sm",
         variant: "secondary",
@@ -229,17 +237,17 @@ function C(e) {
   })
 }
 
-function O(e) {
+function S(e) {
   let {
     label: t,
     onClick: n
   } = e;
-  return (0, i.jsxs)("div", {
-    className: x.flex,
-    children: [(0, i.jsx)(a.Text, {
+  return (0, r.jsxs)("div", {
+    className: E.flex,
+    children: [(0, r.jsx)(o.Text, {
       variant: "text-sm/normal",
       children: "coming soon"
-    }), (0, i.jsx)(a.zxk, {
+    }), (0, r.jsx)(o.zxk, {
       variant: "secondary",
       size: "sm",
       text: t,
@@ -249,86 +257,56 @@ function O(e) {
   })
 }
 
-function v(e) {
+function A(e) {
   let {
     label: t,
     onChange: n
   } = e;
-  return (0, i.jsxs)("div", {
-    className: x.hexInput,
-    children: [(0, i.jsx)(a.Text, {
+  return (0, r.jsxs)("div", {
+    className: E.hexInput,
+    children: [(0, r.jsx)(o.Text, {
       variant: "text-sm/normal",
       children: t
-    }), (0, i.jsx)("input", {
+    }), (0, r.jsx)("input", {
       onChange: e => {
         n(e.target.value)
       },
-      className: x.inputs,
+      className: E.inputs,
       placeholder: "#000000"
     })]
   })
 }
 
-function S(e) {
+function C(e) {
   let {
     nameplate: t
-  } = e, n = (0, s.e7)([d.default], () => d.default.getCurrentUser());
-  return (0, i.jsx)("div", {
-    className: x.preview,
-    children: (0, i.jsxs)("div", {
-      className: x.simArea,
-      children: [(0, i.jsx)(a.Text, {
-        className: x.label,
+  } = e, n = (0, a.e7)([u.default], () => u.default.getCurrentUser());
+  return (0, r.jsx)("div", {
+    className: E.preview,
+    children: (0, r.jsxs)("div", {
+      className: E.simArea,
+      children: [(0, r.jsx)(o.Text, {
+        className: E.label,
         variant: "text-sm/semibold",
         children: "DEFAULT"
-      }), (0, i.jsx)(l.Z, {
+      }), (0, r.jsx)(s.Z, {
         nameplate: t,
         user: n,
         currentUser: n
-      }), (0, i.jsx)(a.Text, {
-        className: x.label,
+      }), (0, r.jsx)(o.Text, {
+        className: E.label,
         variant: "text-sm/semibold",
         children: "FOCUSED"
-      }), (0, i.jsxs)("div", {
-        children: [(0, i.jsx)(l.Z, {
+      }), (0, r.jsxs)("div", {
+        children: [(0, r.jsx)(s.Z, {
           nameplate: t,
           selected: true,
           user: n,
           currentUser: n
-        }), (0, i.jsx)(l.Z, {
+        }), (0, r.jsx)(s.Z, {
           selected: true,
           user: n,
           currentUser: n
-        })]
-      })]
-    })
-  })
-}
-
-function T(e) {
-  let {
-    nameplate: t
-  } = e;
-  return (0, i.jsx)("div", {
-    className: x.preview,
-    children: (0, i.jsxs)("div", {
-      className: x.simArea,
-      children: [(0, i.jsx)(a.Text, {
-        className: x.label,
-        variant: "text-sm/semibold",
-        children: "DEFAULT"
-      }), (0, i.jsx)(f.Z, {
-        nameplate: t
-      }), (0, i.jsx)(a.Text, {
-        className: x.label,
-        variant: "text-sm/semibold",
-        children: "FOCUSED"
-      }), (0, i.jsxs)("div", {
-        children: [(0, i.jsx)(f.Z, {
-          selected: true,
-          nameplate: t
-        }), (0, i.jsx)(f.Z, {
-          selected: true
         })]
       })]
     })
@@ -339,11 +317,41 @@ function N(e) {
   let {
     nameplate: t
   } = e;
-  return (0, i.jsx)("div", {
-    className: x.preview,
-    children: (0, i.jsx)("div", {
-      className: x.rtcSim,
-      children: (0, i.jsx)(g.Z, {
+  return (0, r.jsx)("div", {
+    className: E.preview,
+    children: (0, r.jsxs)("div", {
+      className: E.simArea,
+      children: [(0, r.jsx)(o.Text, {
+        className: E.label,
+        variant: "text-sm/semibold",
+        children: "DEFAULT"
+      }), (0, r.jsx)(m.Z, {
+        nameplate: t
+      }), (0, r.jsx)(o.Text, {
+        className: E.label,
+        variant: "text-sm/semibold",
+        children: "FOCUSED"
+      }), (0, r.jsxs)("div", {
+        children: [(0, r.jsx)(m.Z, {
+          selected: true,
+          nameplate: t
+        }), (0, r.jsx)(m.Z, {
+          selected: true
+        })]
+      })]
+    })
+  })
+}
+
+function R(e) {
+  let {
+    nameplate: t
+  } = e;
+  return (0, r.jsx)("div", {
+    className: E.preview,
+    children: (0, r.jsx)("div", {
+      className: E.rtcSim,
+      children: (0, r.jsx)(p.Z, {
         nameplate: t
       })
     })

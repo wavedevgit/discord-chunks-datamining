@@ -56,7 +56,7 @@ function E(e) {
       null == e || e.removeEventListener("dragover", T, false), null == e || e.removeEventListener("dragleave", S, false), null == e || e.removeEventListener("drop", A, false)
     }
   }, [O, T, S, A]);
-  let N = e => {
+  let C = e => {
     var r, i;
     if (null != t && (null == (i = e.currentTarget) || null == (r = i.files) ? true : r[0]) != null) {
       let r = {
@@ -124,7 +124,7 @@ function E(e) {
           children: "Drag and drop or click to upload file"
         }), (0, r.jsx)(c.Z, {
           ref: E,
-          onChange: N,
+          onChange: C,
           multiple: false,
           tabIndex: false,
           "aria-hidden": true,

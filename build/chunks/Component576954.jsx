@@ -1,4 +1,4 @@
-/** Chunk was on 36499 **/
+/** Chunk was on 5665 **/
 /** chunk id: 576954, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   M: () => x
@@ -61,16 +61,16 @@ function x(e) {
     warningId: x,
     senderId: v
   } = e, {
-    isBlocked: j
+    isBlocked: O
   } = (0, a.cj)([p.Z], () => ({
     isBlocked: p.Z.isBlocked(v)
-  }), [v]), O = i.useCallback(() => {
+  }), [v]), j = i.useCallback(() => {
     (0, h.T)(t, [x])
   }, [t, x]), E = (0, b.C2)(), S = i.useCallback(e => () => {
     s.Z.blockUser(v, {
       location: b.zr
     }).then(() => {
-      O()
+      j()
     }), (0, m.qc)({
       channelId: t,
       warningId: x,
@@ -78,7 +78,7 @@ function x(e) {
       warningType: f.pj.STRANGER_DANGER,
       cta: e
     })
-  }, [O, t, x, v]);
+  }, [j, t, x, v]);
   i.useEffect(() => {
     (0, m.MC)(y.rMx.SAFETY_WARNING_VIEWED, {
       channelId: t,
@@ -186,7 +186,7 @@ function x(e) {
     warningType: f.pj.STRANGER_DANGER,
     header: _.intl.string(_.t.iOkDpK),
     description: _.intl.string(_.t.ISUbcH),
-    onDismiss: O,
+    onDismiss: j,
     buttons: [{
       text: _.intl.string(_.t["Qk/c4+"]),
       variant: "primary",
@@ -199,7 +199,7 @@ function x(e) {
           cta: m.NM.OPEN_MORE_TIPS
         })
       }
-    }, ...j ? [] : [{
+    }, ...O ? [] : [{
       text: _.intl.string(_.t.ie0QdH),
       variant: "critical-primary",
       onClick: () => I(m.NM.USER_BANNER_BLOCK_CONFIRM, m.NM.USER_BANNER_BLOCK_CANCEL)

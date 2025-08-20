@@ -1,6 +1,5 @@
 /** Chunk was on 93741 **/
-/** chunk id: 883385, original params: e,t,n (module,exports,require) **/
-"use strict";
+/** chunk id: 883385, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   Z: () => i
 });
@@ -8,30 +7,30 @@ var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk410575 = require("./410575.jsx");
 
-function i(e, t) {
+function i(t, e) {
   return function(n) {
     return (0, r.jsx)(o.Z, {
-      page: t.page,
-      section: t.section,
-      object: t.object,
-      objectType: t.objectType,
-      children: (0, r.jsx)(e, function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {},
+      page: e.page,
+      section: e.section,
+      object: e.object,
+      objectType: e.objectType,
+      children: (0, r.jsx)(t, function(t) {
+        for (var e = 1; e < arguments.length; e++) {
+          var n = null != arguments[e] ? arguments[e] : {},
             r = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), r.forEach(function(t) {
+          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(t) {
+            return Object.getOwnPropertyDescriptor(n, t).enumerable
+          }))), r.forEach(function(e) {
             var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
+            r = n[e], e in t ? Object.defineProperty(t, e, {
               value: r,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : e[t] = r
+            }) : t[e] = r
           })
         }
-        return e
+        return t
       }({}, n))
     })
   }

@@ -2,7 +2,7 @@
 /** chunk id: 523751, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => M
+  Z: () => j
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -37,7 +37,7 @@ function A(e, t, n) {
   }) : e[t] = n, e
 }
 
-function N(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -50,7 +50,7 @@ function N(e) {
   return e
 }
 
-function C(e, t) {
+function N(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -62,7 +62,7 @@ function C(e, t) {
 }
 
 function R(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : C(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : N(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -136,7 +136,7 @@ let D = {
   [Chunk284363.Q.NONE]: {}
 };
 
-function L(e) {
+function x(e) {
   let {
     guildTraits: t
   } = e;
@@ -166,7 +166,7 @@ function L(e) {
   })
 }
 
-function x(e) {
+function L(e) {
   let {
     badgeType: t,
     guildTraits: n
@@ -191,13 +191,13 @@ function x(e) {
         variant: "text-xs/medium",
         children: o
       }) : null]
-    }), n.premium ? (0, r.jsx)(L, {
+    }), n.premium ? (0, r.jsx)(x, {
       guildTraits: n
     }) : null]
   })
 }
 
-function M(e) {
+function j(e) {
   let t, n;
   var a, {
     guild: o,
@@ -209,17 +209,17 @@ function M(e) {
     badgeStrokeColor: v,
     badgeColor: T,
     disableBoostClick: A,
-    "aria-label": C = false
+    "aria-label": N = false
   } = e;
   let w = null != (a = P(e, ["guild", "tooltipColor", "tooltipPosition", "className", "flowerStarClassName", "iconClassName", "badgeStrokeColor", "badgeColor", "disableBoostClick", "aria-label"]).size) ? a : 18,
-    L = (0, s.e7)([m.default, h.ZP], () => {
+    x = (0, s.e7)([m.default, h.ZP], () => {
       let e = m.default.getCurrentUser();
       return h.ZP.isMember(null == o ? true : o.id, null == e ? true : e.id)
     }),
-    M = (0, s.e7)([p.Z], () => p.Z.theme),
-    k = (0, O.XX)(o),
-    j = (0, y.i)(k),
-    U = i.useMemo(() => k.premium && L && !A, [A, k.premium, L]),
+    j = (0, s.e7)([p.Z], () => p.Z.theme),
+    M = (0, O.XX)(o),
+    k = (0, y.i)(M),
+    U = i.useMemo(() => M.premium && x && !A, [A, M.premium, x]),
     G = i.useCallback(e => {
       U && (e.stopPropagation(), e.preventDefault(), (0, f.f)({
         guildId: o.id,
@@ -229,36 +229,36 @@ function M(e) {
         }
       }))
     }, [U, o.id]);
-  if (j === y.Q.NONE) return null;
+  if (k === y.Q.NONE) return null;
   let {
     IconComponent: B,
-    backgroundDarkColor: V,
-    backgroundLightColor: F,
-    foregroundDarkColor: Z,
+    backgroundDarkColor: Z,
+    backgroundLightColor: V,
+    foregroundDarkColor: F,
     foregroundLightColor: H,
     premiumBackgroundColor: Y,
     premiumForegroundColor: W,
     sizeAdjustment: K
-  } = D[j];
+  } = D[k];
   if (null == B) return null;
-  k.premium && (t = W, n = Y);
-  let z = (0, c.wj)(M) ? Z : H,
-    q = (0, c.wj)(M) ? V : F;
+  M.premium && (t = W, n = Y);
+  let z = (0, c.wj)(j) ? F : H,
+    q = (0, c.wj)(j) ? Z : V;
   t = null != t ? t : z, n = null != n ? n : q;
   let X = Math.floor(.75 * w) - (null != K ? K : 0);
   return (0, r.jsx)(u.ua7, {
     color: l,
     position: d,
-    "aria-label": C,
-    text: (0, r.jsx)(x, {
-      badgeType: j,
-      guildTraits: k
+    "aria-label": N,
+    text: (0, r.jsx)(L, {
+      badgeType: k,
+      guildTraits: M
     }),
     tooltipContentClassName: S.tooltipRemovePadding,
     children: e => (0, r.jsx)(u.P3F, {
       onClick: G,
       tabIndex: U ? 0 : false,
-      children: (0, r.jsx)(_.Z, R(N({}, e), {
+      children: (0, r.jsx)(_.Z, R(C({}, e), {
         className: g,
         flowerStarClassName: E,
         allowFullSizedIcon: true,

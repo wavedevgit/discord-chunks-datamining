@@ -1,7 +1,8 @@
-/** Chunk was on 26434 **/
-/** chunk id: 891614, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 891614, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => a
+  Z: () => s
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -9,12 +10,12 @@ var Chunk442837 = require("./442837.js"),
   Chunk607070 = require("./607070.js"),
   Chunk21054 = require("./21054.js");
 
-function a(e) {
+function s(e) {
   let {
     guildId: t,
     user: n,
-    className: a
-  } = e, s = (0, i.e7)([l.Z], () => !l.Z.useReducedMotion), c = n.getAvatarURL(t, 56, s), u = (0, r.jsx)("foreignObject", {
+    className: s
+  } = e, l = (0, i.e7)([a.Z], () => !a.Z.useReducedMotion), c = n.getAvatarURL(t, 56, l), u = (0, r.jsx)("foreignObject", {
     x: "30",
     y: "68",
     width: "56",
@@ -27,7 +28,7 @@ function a(e) {
     })
   });
   return (0, r.jsx)("div", {
-    className: a,
+    className: s,
     children: (0, r.jsxs)("svg", {
       width: "128",
       height: "200",

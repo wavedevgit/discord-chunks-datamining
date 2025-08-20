@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 675047, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 675047, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => C
+  Z: () => v
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -21,7 +22,7 @@ var Chunk924628 = require("./924628.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx");
 
-function _() {
+function b() {
   return (0, Chunk951288.jsxs)(Chunk893996.Z, {
     title: Chunk388032.intl.string(Chunk388032.t.WWaFn5),
     description: Chunk388032.intl.format(Chunk388032.t["/6sFWV"], {
@@ -32,7 +33,7 @@ function _() {
   })
 }
 
-function j() {
+function y() {
   return (0, Chunk951288.jsx)(Chunk893996.Z, {
     title: Chunk388032.intl.string(Chunk388032.t.BG7Qsb),
     webSetting: Chunk726985.s6.PRIVACY_AND_SAFETY_RECEIVE_DISCORD_DATA_CATEGORY,
@@ -40,7 +41,7 @@ function j() {
   })
 }
 
-function E() {
+function O() {
   return (0, Chunk951288.jsxs)(Chunk893996.Z, {
     title: Chunk388032.intl.string(Chunk388032.t.SRZyHh),
     webSetting: Chunk726985.s6.PRIVACY_AND_SAFETY_DISCORD_DATA_USAGE_CATEGORY,
@@ -48,11 +49,11 @@ function E() {
   })
 }
 
-function C() {
+function v() {
   return (0, Chunk493773.ZP)(() => {
     (0, Chunk924628.I)(), (0, Chunk398826.A)()
   }), (0, Chunk951288.jsxs)(Chunk10298.N, {
     header: Chunk388032.intl.string(Chunk388032.t.OAuOHB),
-    children: [(0, Chunk951288.jsx)(E, {}), (0, Chunk951288.jsx)(j, {}), (0, Chunk951288.jsx)(_, {})]
+    children: [(0, Chunk951288.jsx)(O, {}), (0, Chunk951288.jsx)(y, {}), (0, Chunk951288.jsx)(b, {})]
   })
 }

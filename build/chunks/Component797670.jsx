@@ -1,40 +1,41 @@
-/** Chunk was on 66181 **/
-/** chunk id: 797670, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 797670, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  V: () => d
+  V: () => u
 });
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk686546 = require("./686546.jsx"),
   Chunk601964 = require("./601964.js"),
   Chunk519252 = require("./519252.js");
 
-function d(e) {
+function u(e) {
   let {
     guild: t,
     size: n
-  } = e, r = (0, o.EB)(t, n, false, true), d = (0, o.gM)(t);
-  return (0, i.jsx)(l.ZP, {
+  } = e, i = (0, l.EB)(t, n, false, true), u = (0, l.gM)(t);
+  return (0, r.jsx)(s.ZP, {
     className: c.iconContainer,
-    mask: l.ZP.Masks.SQUIRCLE,
+    mask: s.ZP.Masks.SQUIRCLE,
     width: n,
     height: n,
-    children: null != r ? (0, i.jsx)("img", {
-      src: r,
+    children: null != i ? (0, r.jsx)("img", {
+      src: i,
       alt: t.name,
       height: n,
       width: n
-    }) : (0, i.jsx)("div", {
+    }) : (0, r.jsx)("div", {
       className: c.textContainer,
-      children: (0, i.jsx)(a.Text, {
-        className: s()({
+      children: (0, r.jsx)(o.Text, {
+        className: a()({
           [c.smallText]: 20 === n
         }),
         color: "text-secondary",
         variant: "text-md/semibold",
-        children: d
+        children: u
       })
     })
   })

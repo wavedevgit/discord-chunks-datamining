@@ -54,8 +54,8 @@ let b = Chunk647438.forwardRef(function(e, t) {
     borderType: T,
     hasBackground: S = false,
     forcedDivider: A = false,
-    showPremiumIcon: N = false,
-    showViewFullProfileButton: C = false
+    showPremiumIcon: C = false,
+    showViewFullProfileButton: N = false
   } = e, R = (0, s.e7)([d.default], () => d.default.getCurrentUser()), P = () => {
     null != R && (0, u.openUserProfileModal)({
       userId: R.id,
@@ -79,7 +79,7 @@ let b = Chunk647438.forwardRef(function(e, t) {
       children: [(0, r.jsxs)(c.vwX, {
         className: m.title,
         id: a,
-        children: [n, N && (0, r.jsx)(_.Z, {}), i, C && null != R && (0, r.jsx)(l.zx, {
+        children: [n, C && (0, r.jsx)(_.Z, {}), i, N && null != R && (0, r.jsx)(l.zx, {
           look: l.zx.Looks.LINK,
           color: l.zx.Colors.TRANSPARENT,
           size: l.zx.Sizes.TINY,

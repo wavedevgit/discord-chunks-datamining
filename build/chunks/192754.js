@@ -1,5 +1,6 @@
-/** Chunk was on 93886 **/
-/** chunk id: 192754, original params: e,t,a (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 192754, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   right: "right__89d2b",
   down: "down__89d2b",

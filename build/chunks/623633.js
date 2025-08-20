@@ -1,17 +1,18 @@
-/** Chunk was on 92522 **/
-/** chunk id: 623633, original params: n,e,t (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 623633, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => u
+  Z: () => o
 });
 var Chunk442837 = require("./442837.js"),
   Chunk592125 = require("./592125.js"),
   Chunk944486 = require("./944486.js");
 
-function u() {
+function o() {
   return (0, Chunk442837.e7)([Chunk944486.Z, Chunk592125.Z], () => {
-    let n = Chunk944486.Z.getVoiceChannelId();
+    let e = Chunk944486.Z.getVoiceChannelId();
     if (null != module) {
-      let e = Chunk592125.Z.getChannel(module);
+      let t = Chunk592125.Z.getChannel(module);
       if (null == exports ? true : exports.isGuildStageVoice()) return exports
     }
     return null

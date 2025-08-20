@@ -1,5 +1,6 @@
-/** Chunk was on 95257 **/
-/** chunk id: 216601, original params: e,n,l (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 216601, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   section: "section__999b5",
   guildSelectOptionIcon: "guildSelectOptionIcon__999b5"

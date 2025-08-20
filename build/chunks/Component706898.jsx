@@ -133,12 +133,12 @@ function A(e) {
   return "".concat(e.replace(/\s+/g, "-").toLowerCase(), "-tab")
 }
 
-function N(e, t) {
+function C(e, t) {
   if (null == e) return;
   let n = {};
   return "Selected" === t ? (n.backgroundColor = e, n.color = d.Z.unsafe_rawColors.WHITE_500.css) : ("Hover" === t && (n.backgroundColor = (0, u.wK)(e, .1)), n.color = e), n
 }
-class C extends(r = Chunk647438.Component) {
+class N extends(r = Chunk647438.Component) {
   getStyle() {
     let {
       color: e,
@@ -150,7 +150,7 @@ class C extends(r = Chunk647438.Component) {
       active: a
     } = this.state;
     if (null != module) {
-      if ("side" === r) return null != exports && require === exports || Chunk951288 ? N(module, "Selected") : i ? N(module, "Hover") : N(module);
+      if ("side" === r) return null != exports && require === exports || Chunk951288 ? C(module, "Selected") : i ? C(module, "Hover") : C(module);
       if ("top" === r)
         if (require === exports) return {
           borderColor: module,
@@ -252,7 +252,7 @@ class C extends(r = Chunk647438.Component) {
     })
   }
 }
-m(C, "defaultProps", {
+m(N, "defaultProps", {
   disabled: false,
   look: "grey",
   disableItemStyles: false
@@ -322,4 +322,4 @@ class R extends(i = Chunk647438.Component) {
     })
   }
 }
-m(R, "Header", I), m(R, "Item", C), m(R, "Separator", T), m(R, "Panel", S)
+m(R, "Header", I), m(R, "Item", N), m(R, "Separator", T), m(R, "Panel", S)

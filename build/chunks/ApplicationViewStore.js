@@ -34,7 +34,7 @@ var r, Chunk658722 = require("./658722.js"),
   Chunk7956 = require("./7956.js"),
   Chunk981631 = require("./981631.js");
 
-function L(e, t, n) {
+function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -42,10 +42,10 @@ function L(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let x = 5,
-  M = c()().subtract(1, "week"),
-  k = [],
-  j = "",
+let L = 5,
+  j = c()().subtract(1, "week"),
+  M = [],
+  k = "",
   U = false;
 
 function G(e, t) {
@@ -55,9 +55,9 @@ function G(e, t) {
 }
 
 function B(e, t) {
-  return null != e && c()(e.createdAt).isAfter(M) && 0 === t
+  return null != e && c()(e.createdAt).isAfter(j) && 0 === t
 }
-let V = {
+let Z = {
     [Chunk981631.iEv.NAME]: G,
     [Chunk981631.iEv.PLATFORM]: (e, t, n) => {
       let r = e.libraryApplication.getDistributor(),
@@ -67,11 +67,11 @@ let V = {
     [Chunk981631.iEv.LAST_PLAYED]: (e, t) => e.isNew && !t.isNew ? false : !e.isNew && t.isNew ? 1 : e.lastPlayed === t.lastPlayed ? 0 : e.lastPlayed > t.lastPlayed ? false : 1,
     [Chunk981631.iEv.ACTIONS]: null
   },
-  F = (0, Chunk251625.oH)(e => e.filter(e => null != e.libraryApplication && e.shouldShowInLibrary)),
-  Z = (0, Chunk251625.oH)(e => e.filter(e => null != e.libraryApplication && v.Z.isLaunchable(e.libraryApplication.id, e.libraryApplication.branchId))),
+  V = (0, Chunk251625.oH)(e => e.filter(e => null != e.libraryApplication && e.shouldShowInLibrary)),
+  F = (0, Chunk251625.oH)(e => e.filter(e => null != e.libraryApplication && v.Z.isLaunchable(e.libraryApplication.id, e.libraryApplication.branchId))),
   H = (0, Chunk251625.oH)((e, t) => e.filter(e => a()(t.toLowerCase(), e.application.name.toLowerCase()))),
   Y = (0, Chunk251625.oH)((e, t, n, r) => {
-    let i = V[t];
+    let i = Z[t];
     if (null == i) return e;
     let a = [...e].sort(i);
     return n === D.sHY.DESCENDING ? a.reverse() : a
@@ -89,7 +89,7 @@ function z(e) {
   let {
     query: t
   } = e;
-  j = t
+  k = t
 }
 
 function q(e, t, n, r, i) {
@@ -97,7 +97,7 @@ function q(e, t, n, r, i) {
   let a = f.Z.getApplication(e.id);
   if (null == a) return null;
   let o = K(a, n);
-  return (t.add(e.id), (0, N.Je)(e) || v.Z.isInstalled(e.id, e.branchId)) ? {
+  return (t.add(e.id), (0, C.Je)(e) || v.Z.isInstalled(e.id, e.branchId)) ? {
     key: "".concat(e.id, "-").concat(e.branchId),
     application: a,
     libraryApplication: e,
@@ -115,7 +115,7 @@ function q(e, t, n, r, i) {
       branchId: e.branchId
     }),
     isUpdatingFlags: E.Z.isUpdatingFlags(e.id, e.branchId),
-    shouldShowInLibrary: (0, N.d0)(a, e, b.Z),
+    shouldShowInLibrary: (0, C.d0)(a, e, b.Z),
     defaultAction: (0, w.i)(e, v.Z, I.Z)
   } : null
 }
@@ -157,38 +157,38 @@ function Q() {
     }),
     i = Object.values(Chunk283595.Z.getAllLibraryApplications()).map(r => q(r, n, t, e, true)).filter(Chunk823379.lm),
     a = [...r.map(r => X(r, n, t, e)).filter(Chunk823379.lm), ...Chunk658722].sort((e, t) => e.lastPlayed === t.lastPlayed ? 0 : e.lastPlayed > t.lastPlayed ? false : 1);
-  return U = null != Chunk77498.Z.lastFetched && Chunk283595.Z.fetched, !s().isEqual(a, k) && (k = a, Chunk358085.isPlatformEmbedded && Chunk998502.ZP.setSystemTrayApplications(Z(k).map(e => e.application).slice(0, x)), true)
+  return U = null != Chunk77498.Z.lastFetched && Chunk283595.Z.fetched, !s().isEqual(a, M) && (M = a, Chunk358085.isPlatformEmbedded && Chunk998502.ZP.setSystemTrayApplications(F(M).map(e => e.application).slice(0, L)), true)
 }
 class J extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.syncWith([Chunk812206.Z, Chunk77498.Z, Chunk592745.Z, Chunk594190.ZP, Chunk417363.Z, Chunk941128.Z, Chunk283595.Z, Chunk230307.Z, Chunk246946.Z, Chunk757266.Z], Q, 200), this.syncWith([Chunk799777.Z, Chunk706454.default], () => true)
   }
   get applicationFilterQuery() {
-    return j
-  }
-  get applicationViewItems() {
     return k
   }
+  get applicationViewItems() {
+    return M
+  }
   get launchableApplicationViewItems() {
-    return Z(k)
+    return F(M)
   }
   get libraryApplicationViewItems() {
-    return F(k)
+    return V(M)
   }
   get filteredLibraryApplicationViewItems() {
-    return H(this.libraryApplicationViewItems, j)
+    return H(this.libraryApplicationViewItems, k)
   }
   get sortedFilteredLibraryApplicationViewItems() {
     return Y(this.filteredLibraryApplicationViewItems, Chunk799777.Z.sortKey, Chunk799777.Z.sortDirection, Chunk706454.default.locale)
   }
   get hiddenLibraryApplicationViewItems() {
-    return W(k)
+    return W(M)
   }
   get hasFetchedApplications() {
     return U
   }
 }
-L(J, "displayName", "ApplicationViewStore");
+x(J, "displayName", "ApplicationViewStore");
 let $ = new J(Chunk570140.Z, {
   LIBRARY_APPLICATION_FILTER_UPDATE: z
 })

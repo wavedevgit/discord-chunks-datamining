@@ -1,12 +1,13 @@
-/** Chunk was on 96750 **/
-/** chunk id: 557711, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 557711, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   Z: () => d
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk5192 = require("./5192.js"),
@@ -19,40 +20,40 @@ function d(e) {
     user: n,
     channelId: i,
     guildId: d,
-    source: p,
-    size: f,
-    look: m,
-    color: g,
-    className: v,
-    onAction: _
+    source: f,
+    size: _,
+    look: p,
+    color: h,
+    className: m,
+    onAction: g
   } = e, {
-    tooltip: b,
-    loading: h,
+    tooltip: E,
+    loading: b,
     disabled: y,
     onClick: O
-  } = (0, c.Fe)(t, n, p, s.ZP.getNickname(d, i, n)), j = () => {
-    null == _ || _(), O()
+  } = (0, c.Fe)(t, n, f, l.ZP.getNickname(d, i, n)), v = () => {
+    null == g || g(), O()
   };
-  return (0, r.jsx)(o.ua7, {
-    text: b,
+  return (0, r.jsx)(s.ua7, {
+    text: E,
     children: e => {
       let {
         onMouseEnter: n,
         onMouseLeave: i
       } = e;
-      return (0, r.jsx)(a.zx, {
-        size: f,
-        className: l()(u.syncButton, v),
+      return (0, r.jsx)(o.zx, {
+        size: _,
+        className: a()(u.syncButton, m),
         innerClassName: u.syncButtonInner,
-        look: m,
-        color: g,
-        onClick: j,
+        look: p,
+        color: h,
+        onClick: v,
         onMouseEnter: n,
         onMouseLeave: i,
         disabled: y,
-        submitting: h,
-        "aria-label": null != b ? b : t.name,
-        children: (0, r.jsx)(o.iOO, {
+        submitting: b,
+        "aria-label": null != E ? E : t.name,
+        children: (0, r.jsx)(s.iOO, {
           size: "xs",
           color: "currentColor"
         })

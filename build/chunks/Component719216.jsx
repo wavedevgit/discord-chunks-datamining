@@ -1,7 +1,8 @@
-/** Chunk was on 96750 **/
-/** chunk id: 719216, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 719216, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => s
+  Z: () => l
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -10,11 +11,11 @@ var Chunk763472 = require("./763472.js"),
   Chunk591759 = require("./591759.js"),
   Chunk915863 = require("./915863.jsx");
 
-function s(e) {
+function l(e) {
   let {
     activity: t,
     color: n,
-    user: s,
+    user: l,
     look: c,
     onAction: u
   } = e;
@@ -23,22 +24,22 @@ function s(e) {
     try {
       let r = await (0, i.sd)(e, t);
       if (r.button_urls.length <= n) return;
-      let o = r.button_urls[n];
-      if ("string" != typeof o) return;
-      let s = a.Z.safeParseWithQuery(o);
-      if (null == s || null == s.protocol || null == s.hostname) return;
-      (0, l.q)({
-        href: a.Z.format(s),
+      let s = r.button_urls[n];
+      if ("string" != typeof s) return;
+      let l = o.Z.safeParseWithQuery(s);
+      if (null == l || null == l.protocol || null == l.hostname) return;
+      (0, a.q)({
+        href: o.Z.format(l),
         trusted: false
       })
     } catch (e) {}
   }
   return (0, r.jsx)(r.Fragment, {
-    children: t.buttons.map((e, i) => (0, r.jsx)(o.Z, {
+    children: t.buttons.map((e, i) => (0, r.jsx)(s.Z, {
       color: n,
       look: c,
       onClick: () => {
-        null == u || u(), d(t, s.id, i)
+        null == u || u(), d(t, l.id, i)
       },
       children: e
     }, "customButton-".concat(i)))

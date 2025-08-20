@@ -1,12 +1,12 @@
-/** Chunk was on 86031 **/
+/** Chunk was on 71387 **/
 /** chunk id: 653079, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => f
 });
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk597688 = require("./597688.js"),
@@ -15,21 +15,21 @@ var Chunk951288 = require("./951288.js"),
   Chunk25990 = require("./25990.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk763740 = require("./763740.js");
-let h = e => {
+let f = e => {
   let {
     user: t,
     guildId: r,
-    selectedNameplate: a,
-    purchased: h
-  } = e, f = (0, l.e7)([s.Z], () => s.Z.getProduct(null == a ? true : a.skuId)), v = (0, l.e7)([d.Z], () => d.Z.getPendingGlobalName());
+    selectedNameplate: i,
+    purchased: f
+  } = e, b = (0, l.e7)([s.Z], () => s.Z.getProduct(null == i ? true : i.skuId)), m = (0, l.e7)([d.Z], () => d.Z.getPendingGlobalName());
   return (0, n.jsxs)("div", {
-    className: i()(b.previewBorder, {
-      [b.upsell]: !h && null != a
+    className: a()(v.previewBorder, {
+      [v.upsell]: !f && null != i
     }),
     children: [(0, n.jsx)("div", {
-      className: b.previewBox,
+      className: v.previewBox,
       children: (0, n.jsxs)("div", {
-        className: b.previewContents,
+        className: v.previewContents,
         children: [(0, n.jsx)(c.d, {
           width: 124,
           opacity: .9
@@ -39,8 +39,8 @@ let h = e => {
         }), (0, n.jsx)(u.Z, {
           user: t,
           guildId: r,
-          nameplate: a,
-          pendingGlobalName: v,
+          nameplate: i,
+          pendingGlobalName: m,
           isHighlighted: true
         }), (0, n.jsx)(c.d, {
           width: 124,
@@ -50,12 +50,12 @@ let h = e => {
           opacity: .9
         })]
       })
-    }), null != a ? (0, n.jsxs)("div", {
-      className: b.previewDescription,
+    }), null != i ? (0, n.jsxs)("div", {
+      className: v.previewDescription,
       children: [(0, n.jsx)(o.Text, {
         variant: "text-sm/semibold",
-        children: null == f ? true : f.name
-      }), h ? null : (0, n.jsx)(o.Text, {
+        children: null == b ? true : b.name
+      }), f ? null : (0, n.jsx)(o.Text, {
         variant: "text-sm/normal",
         children: p.intl.string(p.t.fEGjVV)
       })]

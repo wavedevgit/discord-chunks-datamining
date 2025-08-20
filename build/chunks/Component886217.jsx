@@ -2,7 +2,7 @@
 /** chunk id: 886217, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => N
+  Z: () => C
 }), require("./804061.js"), require("./704826.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -42,7 +42,7 @@ let S = (e, t, n, r) => {
     username: t.username,
     artist: e.extra.artist.name
   }),
-  N = e => {
+  C = e => {
     let {
       channel: t,
       entry: n,
@@ -50,44 +50,44 @@ let S = (e, t, n, r) => {
       onVoiceChannelPreview: f
     } = e, {
       parent_title: T,
-      provider: N,
-      image_url: C
+      provider: C,
+      image_url: N
     } = n.extra.media, R = n.extra.artist.name, P = (0, s.e7)([c.default], () => c.default.getUser(n.author_id)), {
       primaryColor: w,
       secondaryColor: D
-    } = (0, m.Z)(C), L = (0, _.Nq)(n), x = i.useCallback(() => {
-      if (null == t || null == P || !(0, d.Hi)(L, g.y9)) return;
-      let e = S(n, t, P, L);
+    } = (0, m.Z)(N), x = (0, _.Nq)(n), L = i.useCallback(() => {
+      if (null == t || null == P || !(0, d.Hi)(x, g.y9)) return;
+      let e = S(n, t, P, x);
       return (0, p.CR)({
         user: P,
         channel: t,
-        mediaImageSrc: C,
+        mediaImageSrc: N,
         artist: R,
         description: e,
         colors: [w, D],
         badges: (0, p.UU)(n)
       })
-    }, [C, R, t, n, w, L, D, P]), M = (0, h.Z)(O.ABu.SPOTIFY);
-    if (null == P || !(0, d.Hi)(L, g.y9)) return null;
-    let k = () => {
+    }, [N, R, t, n, w, x, D, P]), j = (0, h.Z)(O.ABu.SPOTIFY);
+    if (null == P || !(0, d.Hi)(x, g.y9)) return null;
+    let M = () => {
         let e = v.Hw.ALBUM,
           t = l.Z.isProtocolRegistered() ? v.C7.PLAYER_OPEN(e, n.extra.media.external_parent_id) : v.C7.WEB_OPEN(e, n.extra.media.external_parent_id);
         window.open(t)
       },
-      j = () => {
+      k = () => {
         let e = v.Hw.ARTIST,
           t = l.Z.isProtocolRegistered() ? v.C7.PLAYER_OPEN(e, n.extra.artist.external_id) : v.C7.WEB_OPEN(e, n.extra.artist.external_id);
         window.open(t)
       };
     return (0, r.jsxs)(b.yR, {
       children: [(0, r.jsx)(b.wG, {
-        onClickTitle: k,
-        onClickSubtitle: j,
-        onClickThumbnail: k,
+        onClickTitle: M,
+        onClickSubtitle: k,
+        onClickThumbnail: M,
         channel: t,
         entry: n,
-        headerIcons: N === o.p.SPOTIFY ? (0, r.jsx)(y.Z, {
-          onClick: M,
+        headerIcons: C === o.p.SPOTIFY ? (0, r.jsx)(y.Z, {
+          onClick: j,
           Icon: u.Z,
           "aria-label": I.intl.string(I.t["0ZB/XF"])
         }) : null,
@@ -106,7 +106,7 @@ let S = (e, t, n, r) => {
           onVoiceChannelPreview: f,
           user: P,
           channel: t,
-          generateReactionImage: x,
+          generateReactionImage: L,
           reactionImageAltText: A(n, P),
           entry: n
         })

@@ -1,22 +1,22 @@
-/** Chunk was on 91584 **/
-/** chunk id: 366885, original params: t,e,r (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 366885, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 var Chunk169774 = require("./169774.js"),
   Chunk88408 = require("./88408.js"),
-  o = Chunk169774.isPlatform("Mac OS X"),
-  a = {
-    isCtrlKeyCommand: function(t) {
-      return !!t.ctrlKey && !t.altKey
+  a = Chunk169774.isPlatform("Mac OS X"),
+  o = {
+    isCtrlKeyCommand: function(e) {
+      return !!e.ctrlKey && !e.altKey
     },
-    isOptionKeyCommand: function(t) {
-      return o && t.altKey
+    isOptionKeyCommand: function(e) {
+      return a && e.altKey
     },
     usesMacOSHeuristics: function() {
-      return o
+      return a
     },
-    hasCommandModifier: function(t) {
-      return o ? !!t.metaKey && !t.altKey : a.isCtrlKeyCommand(t)
+    hasCommandModifier: function(e) {
+      return a ? !!e.metaKey && !e.altKey : o.isCtrlKeyCommand(e)
     },
     isSoftNewlineEvent: Chunk88408
   };
-module.exports = a
+module.exports = o

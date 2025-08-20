@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 277329, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 277329, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => b
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -19,37 +20,14 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk830260 = require("./830260.js");
 
-function b() {
+function g() {
   let e = (0, Chunk326528.b)(),
     t = (0, Chunk442837.e7)([Chunk663389.Z], () => Chunk663389.Z.getSubsection()),
-    n = null != exports && module.some(e => e.id === t) ? exports : module[0].id;
-  return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-    children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
-      className: Chunk830260.heading,
-      variant: "heading-xl/semibold",
-      children: Chunk388032.intl.string(Chunk388032.t.URyqtL)
-    }), (0, Chunk951288.jsx)(Chunk481060.njP, {
-      className: Chunk830260.tabBar,
-      selectedItem: require,
-      onItemSelect: e => {
-        a.Z.setSection(g.oAB.GAMES, e)
-      },
-      orientation: "horizontal",
-      type: "top",
-      look: "brand",
-      children: module.map(e => (0, i.jsxs)(s.njP.Item, {
-        className: f.tab,
-        id: e.id,
-        "aria-label": e.title,
-        children: [(0, i.jsx)(e.icon, {
-          className: f.tabIcon,
-          color: "currentColor"
-        }), (0, i.jsx)("div", {
-          className: f.iconTitle,
-          children: e.title
-        })]
-      }, e.id))
-    }), (() => {
+    n = null != exports && module.some(e => e.id === t) ? exports : module[0].id,
+    g = e => {
+      o.Z.setSection(p.oAB.GAMES, e)
+    },
+    E = () => {
       switch (require) {
         case Chunk332325.Z.CLIPS:
           return (0, Chunk951288.jsx)(Chunk574755.Z, {
@@ -73,6 +51,31 @@ function b() {
             showHeader: false
           })
       }
-    })()]
+    };
+  return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+    children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+      className: Chunk830260.heading,
+      variant: "heading-xl/semibold",
+      children: Chunk388032.intl.string(Chunk388032.t.URyqtL)
+    }), (0, Chunk951288.jsx)(Chunk481060.njP, {
+      className: Chunk830260.tabBar,
+      selectedItem: require,
+      onItemSelect: g,
+      orientation: "horizontal",
+      type: "top",
+      look: "brand",
+      children: module.map(e => (0, r.jsxs)(a.njP.Item, {
+        className: m.tab,
+        id: e.id,
+        "aria-label": e.title,
+        children: [(0, r.jsx)(e.icon, {
+          className: m.tabIcon,
+          color: "currentColor"
+        }), (0, r.jsx)("div", {
+          className: m.iconTitle,
+          children: e.title
+        })]
+      }, e.id))
+    }), E()]
   })
 }

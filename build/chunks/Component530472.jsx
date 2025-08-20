@@ -1,5 +1,6 @@
-/** Chunk was on 26434 **/
-/** chunk id: 530472, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 530472, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   Z: () => c
 });
@@ -18,31 +19,31 @@ function c(e) {
       onDeleteMessage: u,
       children: d
     } = e,
-    p = null == (t = c.interactionMetadata) ? true : t.ephemerality_reason,
-    m = () => u(c, true);
-  if (null != p) {
-    let e = (0, l.i)(p);
+    f = null == (t = c.interactionMetadata) ? true : t.ephemerality_reason,
+    _ = () => u(c, true);
+  if (null != f) {
+    let e = (0, a.i)(f);
     n = (0, r.jsx)("div", {
-      className: s.userAppsBetaContent,
-      children: a.intl.format(a.t.wx1tLS, {
-        handleDelete: m,
+      className: l.userAppsBetaContent,
+      children: s.intl.format(s.t.wx1tLS, {
+        handleDelete: _,
         reason: e
       })
     })
-  } else n = c.type === o.uaV.STAGE_RAISE_HAND ? a.intl.format(a.t["qDAX+/"], {
-    handleDelete: m
-  }) : a.intl.format(a.t.uX3ecH, {
+  } else n = c.type === o.uaV.STAGE_RAISE_HAND ? s.intl.format(s.t["qDAX+/"], {
+    handleDelete: _
+  }) : s.intl.format(s.t.uX3ecH, {
     count: 1,
     countMessages: 1,
-    handleDelete: m
+    handleDelete: _
   });
   return (0, r.jsxs)("div", {
-    className: s.ephemeralMessage,
+    className: l.ephemeralMessage,
     onClick: e => e.stopPropagation(),
     children: [(0, r.jsx)(i.tEF, {
       size: "xs",
       color: "currentColor",
-      className: s.icon
+      className: l.icon
     }), n, d]
   })
 }

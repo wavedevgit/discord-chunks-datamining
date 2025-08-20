@@ -1,5 +1,6 @@
-/** Chunk was on 89006 **/
-/** chunk id: 561870, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 561870, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   modal: "modal__038c3",
   modalContent: "modalContent__038c3",

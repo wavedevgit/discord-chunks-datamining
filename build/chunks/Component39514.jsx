@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk893776 = require("./893776.js"),
@@ -40,7 +40,7 @@ function A(e, t, n) {
   }) : e[t] = n, e
 }
 Chunk442837.ZP.initialize();
-class Z extends Chunk647438.PureComponent {
+class T extends Chunk647438.PureComponent {
   componentDidMount() {
     let {
       authenticated: e,
@@ -53,7 +53,7 @@ class Z extends Chunk647438.PureComponent {
       authenticated: t,
       isResolved: n
     } = this.props;
-    n || s.Z.wait(() => {
+    n || a.Z.wait(() => {
       this.resolveGiftCode()
     }), t && !e.authenticated && this.handleAuthenticated(), !t && e.authenticated && this.setState({
       currentUser: null
@@ -107,12 +107,12 @@ class Z extends Chunk647438.PureComponent {
         src: require("./167969.js"),
         className: Chunk197571.marginBottom8
       }), (0, Chunk951288.jsx)(Chunk388905.Dx, {
-        className: a()(Chunk197571.marginTop8, Chunk197571.marginBottom8),
+        className: s()(Chunk197571.marginTop8, Chunk197571.marginBottom8),
         children: Chunk388032.intl.string(Chunk388032.t.KPowgo)
       }), (0, Chunk951288.jsx)(Chunk388905.DK, {
         children: Chunk388032.intl.string(Chunk388032.t.j8734e)
       }), (0, Chunk951288.jsx)(Chunk388905.zx, {
-        className: a()(Chunk197571.marginTop40, Chunk197571.marginBottom8),
+        className: s()(Chunk197571.marginTop40, Chunk197571.marginBottom8),
         onClick: () => exports(module),
         children: Chunk388032.intl.string(Chunk388032.t.fIv16O)
       }), (0, Chunk951288.jsx)(Chunk388905.zx, {
@@ -146,24 +146,24 @@ class Z extends Chunk647438.PureComponent {
     return (0, r.jsxs)(p.ZP, {
       children: [(0, r.jsx)(p.Ee, {
         src: n(892235),
-        className: T.marginBottom8
+        className: Z.marginBottom8
       }), (0, r.jsx)(p.Dx, {
         children: C.intl.format(C.t.ivLUf3, {
           username: e.username
         })
       }), (0, r.jsx)(p.DK, {
-        className: T.marginTop20,
+        className: Z.marginTop20,
         children: C.intl.string(C.t["8Su18/"])
       }), (0, r.jsx)(p.zx, {
         disabled: t,
-        className: T.marginTop40,
+        className: Z.marginTop40,
         onClick: this.handleResendVerification,
         children: t ? C.intl.string(C.t.CMa9Rk) : C.intl.string(C.t.lm1UKi)
       }), (0, r.jsx)(p.zx, {
         look: p.zx.Looks.LINK,
         color: p.zx.Colors.LINK,
         onClick: this.refreshUser,
-        className: T.marginTop8,
+        className: Z.marginTop8,
         children: C.intl.string(C.t.Po9eBQ)
       })]
     })
@@ -171,18 +171,18 @@ class Z extends Chunk647438.PureComponent {
   renderAuthenticated(e, t) {
     let n = this.getErrorMessage(e);
     return (0, r.jsxs)(p.ZP, {
-      children: [(0, r.jsx)(y.Z, {
+      children: [(0, r.jsx)(O.Z, {
         giftCode: e
       }), (0, r.jsx)(p.zx, {
         disabled: null != n,
-        className: T.marginTop40,
+        className: Z.marginTop40,
         onClick: this.handleAccept,
         children: C.intl.string(C.t.n6I6k5)
       }), null != n ? (0, r.jsx)(p.DK, {
-        className: T.marginTop20,
+        className: Z.marginTop20,
         children: n
       }) : (0, r.jsx)(p.i_, {
-        className: T.marginTop20,
+        className: Z.marginTop20,
         children: C.intl.format(C.t.NYM08v, {
           userTag: I.ZP.getUserTag(t),
           onLogoutClick: this.handleLogout
@@ -197,16 +197,16 @@ class Z extends Chunk647438.PureComponent {
       authenticated: n,
       giftCode: i,
       isResolved: l,
-      isAccepting: a,
+      isAccepting: s,
       transitionTo: o,
-      location: s
+      location: a
     } = this.props, {
       fetchingUser: c,
       continueOnWeb: u
     } = this.state;
     if (module === Chunk981631.kEZ.OPEN && !Chunk533307) return this.renderAppOpened();
     if (module === Chunk981631.kEZ.OPENING) return this.renderSpinner(Chunk388032.intl.string(Chunk388032.t["Z+hCVV"]));
-    if (a) return this.renderSpinner(Chunk388032.intl.string(Chunk388032.t.bhJseH));
+    if (s) return this.renderSpinner(Chunk388032.intl.string(Chunk388032.t.bhJseH));
     if (null == Chunk647438) return Chunk120356 ? this.renderExpiredInvite() : this.renderSpinner(Chunk388032.intl.string(Chunk388032.t.b3lf1d));
     if (Chunk120356) {
       if (require) {
@@ -287,12 +287,12 @@ let P = Chunk442837.ZP.connectStores([Chunk82142.Z, Chunk283595.Z, Chunk314897.d
   return {
     giftCode: n,
     sku: r,
-    libraryApplication: null != r && (null == n ? true : n.entitlementBranches) != null ? E.z2(n.entitlementBranches, r, b.Z) : null,
-    authenticated: g.default.isAuthenticated(),
+    libraryApplication: null != r && (null == n ? true : n.entitlementBranches) != null ? j.z2(n.entitlementBranches, r, E.Z) : null,
+    authenticated: f.default.isAuthenticated(),
     defaultRoute: _.Z.defaultRoute,
     isResolved: x.Z.getIsResolved(t),
     isAccepting: x.Z.getIsAccepting(t),
-    libraryApplicationsFetched: b.Z.fetched,
+    libraryApplicationsFetched: E.Z.fetched,
     nativeAppState: m.Z.getState(t)
   }
-})(Z)
+})(T)

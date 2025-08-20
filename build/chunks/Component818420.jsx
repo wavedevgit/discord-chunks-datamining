@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 818420, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 818420, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => x
+  Z: () => E
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,51 +20,51 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk526265 = require("./526265.js");
 
-function x(e) {
+function E(e) {
   let {
     user: t,
     guild: n,
-    titleIcon: x
+    titleIcon: E
   } = e, {
-    analyticsLocations: _
-  } = (0, o.ZP)(), j = null != n, {
-    userNameplate: E,
-    guildNameplate: C,
-    pendingNameplate: O,
-    pendingErrors: v
-  } = (0, p.Zx)(t, null == n ? true : n.id), S = j ? [s.z.NAMEPLATE_GUILD_SETTINGS_PROFILE_PAGE_NEW_BADGE] : [s.z.NAMEPLATE_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE], [T, N] = (0, c.US)(S), I = T === s.z.NAMEPLATE_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE, y = T === s.z.NAMEPLATE_GUILD_SETTINGS_PROFILE_PAGE_NEW_BADGE, A = r.useCallback(() => {
-    N(h.L.TAKE_ACTION), (0, m.f)({
-      analyticsLocations: _,
+    analyticsLocations: b
+  } = (0, l.ZP)(), y = null != n, {
+    userNameplate: O,
+    guildNameplate: v,
+    pendingNameplate: I,
+    pendingErrors: T
+  } = (0, _.Zx)(t, null == n ? true : n.id), S = true === I ? (y ? v : O) != null : null != I, A = y ? [a.z.NAMEPLATE_GUILD_SETTINGS_PROFILE_PAGE_NEW_BADGE] : [a.z.NAMEPLATE_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE], [C, N] = (0, c.US)(A), R = C === a.z.NAMEPLATE_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE, P = C === a.z.NAMEPLATE_GUILD_SETTINGS_PROFILE_PAGE_NEW_BADGE, w = i.useCallback(() => {
+    N(h.L.TAKE_ACTION), (0, f.f)({
+      analyticsLocations: b,
       guildId: null == n ? true : n.id
     })
-  }, [_, N, null == n ? true : n.id]), P = r.useCallback(() => {
-    (null == n ? true : n.id) != null ? (0, d.RH)(null) : (0, l.Rx)(null)
+  }, [b, N, null == n ? true : n.id]), D = i.useCallback(() => {
+    (null == n ? true : n.id) != null ? (0, u.RH)(null) : (0, s.Rx)(null)
   }, [null == n ? true : n.id]);
-  return (0, i.jsx)(g.Z, {
-    title: f.intl.string(f.t.x5CoXV),
-    titleIcon: I || y ? (0, i.jsx)(u.Z, {
-      className: b.newBadge
-    }) : x,
-    errors: v,
-    showBorder: y,
-    hasBackground: y,
-    description: y && (0, i.jsx)(a.Text, {
+  return (0, r.jsx)(p.Z, {
+    title: m.intl.string(m.t.x5CoXV),
+    titleIcon: R || P ? (0, r.jsx)(d.Z, {
+      className: g.newBadge
+    }) : E,
+    errors: T,
+    showBorder: P,
+    hasBackground: P,
+    description: P && (0, r.jsx)(o.Text, {
       variant: "text-md/normal",
       color: "text-secondary",
-      children: f.intl.string(f.t.ca69xs)
+      children: m.intl.string(m.t.ca69xs)
     }),
-    children: (0, i.jsxs)("div", {
-      className: b.section,
-      children: [(0, i.jsx)(a.zxk, {
+    children: (0, r.jsxs)("div", {
+      className: g.section,
+      children: [(0, r.jsx)(o.zxk, {
         variant: "primary",
         size: "sm",
-        text: f.intl.string(f.t.BwdeMz),
-        onClick: A
-      }), (true === O ? (j ? C : E) != null : null != O) && (0, i.jsx)(a.zxk, {
+        text: m.intl.string(m.t.BwdeMz),
+        onClick: w
+      }), S && (0, r.jsx)(o.zxk, {
         variant: "secondary",
         size: "sm",
-        text: j ? f.intl.string(f.t.CHf9iI) : f.intl.string(f.t["9zwziY"]),
-        onClick: P
+        text: y ? m.intl.string(m.t.CHf9iI) : m.intl.string(m.t["9zwziY"]),
+        onClick: D
       })]
     })
   })

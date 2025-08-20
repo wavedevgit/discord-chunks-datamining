@@ -2,7 +2,7 @@
 /** chunk id: 252223, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => V
+  Z: () => Z
 }), require("./539854.js"), require("./781311.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -43,7 +43,7 @@ function D(e, t, n) {
   }) : e[t] = n, e
 }
 
-function L(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -56,7 +56,7 @@ function L(e) {
   return e
 }
 
-function x(e, t) {
+function L(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -67,20 +67,20 @@ function x(e, t) {
   return n
 }
 
-function M(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
+function j(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function k(e) {
+function M(e) {
   let t = (null == e ? true : e.name) === "" ? null : null == e ? true : e.name;
   return null != t ? P.intl.formatToPlainString(P.t["0wJXSk"], {
     name: t
   }) : P.intl.string(P.t.eXan7O)
 }
 
-function j(e, t) {
+function k(e, t) {
   return (e.isDM() || e.isGroupDM() ? P.intl.string(P.t["9FaEzs"]) : e.isGuildStageVoice() ? P.intl.string(P.t.QygGCA) : P.intl.string(P.t.msxteH)) + (null != t ? " (".concat(t, ")") : "")
 }
 
@@ -98,12 +98,12 @@ function U(e) {
   } = (0, m.Cq)({
     location: "StackedActivityStatus"
   }), s = (0, _.ZP)(r), l = a || o;
-  return null != t && i.push(k(t)), n.forEach(e => {
+  return null != t && i.push(M(t)), n.forEach(e => {
     let {
       tooltip: t
     } = (0, v.Z)(e, l);
     null != t && i.push(t)
-  }), null == t && null != r && i.push(j(r, s)), i.length > 0 ? i.join(", ") : ""
+  }), null == t && null != r && i.push(k(r, s)), i.length > 0 ? i.join(", ") : ""
 }
 
 function G(e) {
@@ -129,11 +129,11 @@ function B(e) {
   return (0, r.jsx)(l.xv, {
     variant: t,
     className: o()(w.dot, n),
-    children: C.l
+    children: N.l
   })
 }
 
-function V(e) {
+function Z(e) {
   let {
     user: t,
     activities: n,
@@ -145,12 +145,12 @@ function V(e) {
     animateEmoji: v = true,
     hasQuest: P = false,
     hideEmoji: D = false,
-    hideTooltip: x = false
+    hideTooltip: L = false
   } = e;
   (0, f.Z)(null == t ? true : t.id);
-  let k = (null == a ? true : a.discoverable) !== false ? a : null,
-    j = (0, g.Cf)(k),
-    V = i.useMemo(() => {
+  let M = (null == a ? true : a.discoverable) !== false ? a : null,
+    k = (0, g.Cf)(M),
+    Z = i.useMemo(() => {
       var e, t;
       let r = null == n ? true : n.find(e => {
         let {
@@ -162,8 +162,8 @@ function V(e) {
       let i = null != (t = null == (e = r.state) ? true : e.trim()) ? t : null;
       return null == ("" === i ? null : i) && null == r.emoji ? null : r
     }, [n]),
-    F = (0, c.e7)([b.default], () => b.default.getId() === (null == t ? true : t.id)),
-    Z = (0, c.e7)([E.Z], () => F ? E.Z.getHangStatusActivity() : null != n ? n.find(e => e.type === R.IIU.HANG_STATUS) : null),
+    V = (0, c.e7)([b.default], () => b.default.getId() === (null == t ? true : t.id)),
+    F = (0, c.e7)([E.Z], () => V ? E.Z.getHangStatusActivity() : null != n ? n.find(e => e.type === R.IIU.HANG_STATUS) : null),
     H = i.useMemo(() => {
       var e;
       return (0, s.uniqWith)(null != (e = null == n ? true : n.filter(e => {
@@ -171,21 +171,21 @@ function V(e) {
           type: t,
           name: n
         } = e;
-        return t !== R.IIU.CUSTOM_STATUS && t !== R.IIU.HANG_STATUS && n !== (null == j ? true : j.name)
+        return t !== R.IIU.CUSTOM_STATUS && t !== R.IIU.HANG_STATUS && n !== (null == k ? true : k.name)
       })) ? e : [], (e, t) => null != e.application_id && null != t.application_id && e.application_id === t.application_id || null != e.name && null != t.name && e.name === t.name)
-    }, [n, null == j ? true : j.name]),
-    Y = null == n ? true : n.find(e => e.name === (null == j ? true : j.name)),
+    }, [n, null == k ? true : k.name]),
+    Y = null == n ? true : n.find(e => e.name === (null == k ? true : k.name)),
     W = (null == t ? true : t.bot) === true,
     K = (0, c.e7)([y.Z], () => y.Z.isBlockedOrIgnored(null == t ? true : t.id)),
     z = (0, p.Z)({
       location: "ActivityStatus"
-    }) && null != V ? (0, h.Z)(V) : null,
-    q = (null == V ? true : V.state) != null || null != z,
-    X = null != k,
+    }) && null != Z ? (0, h.Z)(Z) : null,
+    q = (null == Z ? true : Z.state) != null || null != z,
+    X = null != M,
     Q = !X && null != l,
     J = H.length + (X || Q ? 1 : 0),
     $ = J > 1,
-    ee = (null == V ? true : V.state) != null && "xs" === O,
+    ee = (null == Z ? true : Z.state) != null && "xs" === O,
     et = U({
       streamActivity: Y,
       otherActivities: H,
@@ -194,9 +194,9 @@ function V(e) {
   if (K) return null;
   let en = function() {
       let e = arguments.length > 0 && true !== arguments[0] && arguments[0],
-        t = true === e || x;
-      if (null != k) return (0, r.jsx)(T.Z, {
-        stream: k,
+        t = true === e || L;
+      if (null != M) return (0, r.jsx)(T.Z, {
+        stream: M,
         game: Y,
         textVariant: "text-".concat(O, "/medium"),
         textClassName: _,
@@ -214,7 +214,7 @@ function V(e) {
         hideText: ee,
         hideIcon: W,
         hideTooltip: t
-      }) : null != l ? (0, r.jsx)(N.Z, {
+      }) : null != l ? (0, r.jsx)(C.Z, {
         channel: l,
         textVariant: "text-".concat(O, "/medium"),
         textClassName: _,
@@ -232,16 +232,16 @@ function V(e) {
           hideText: false,
           canTruncate: false
         };
-      return null != k && e.push((0, r.jsx)(T.Z, M(L({
-        stream: k,
+      return null != M && e.push((0, r.jsx)(T.Z, j(x({
+        stream: M,
         game: null == n ? true : n.find(d.Z)
       }, t), {
         showChannelName: true
       }), "stream")), H.forEach((n, i) => {
-        e.push((0, r.jsx)(A.Z, L({
+        e.push((0, r.jsx)(A.Z, x({
           activity: n
         }, t), "activity-".concat(i)))
-      }), Q && e.push((0, r.jsx)(N.Z, M(L({
+      }), Q && e.push((0, r.jsx)(C.Z, j(x({
         channel: l
       }, t), {
         showChannelName: true
@@ -253,15 +253,15 @@ function V(e) {
       hasCustomStatusText: q,
       totalActivityCount: J
     }),
-    ea = () => 0 === J ? null : $ && !W ? x ? (0, r.jsxs)("div", {
+    ea = () => 0 === J ? null : $ && !W ? L ? (0, r.jsxs)("div", {
       className: o()(w.activityContainer, ee && w.iconOnly),
       children: [en(), ei()]
     }) : (0, r.jsx)(u.ua7, {
       tooltipContentClassName: o()(w.container, w.activitiesTooltip, w.hasMultipleActivities),
-      delay: C.X,
+      delay: N.X,
       text: er(),
       "aria-label": et,
-      children: e => (0, r.jsxs)("div", M(L({
+      children: e => (0, r.jsxs)("div", j(x({
         className: o()(w.activityContainer, ee && w.iconOnly)
       }, e), {
         children: [en(true), ei()]
@@ -271,21 +271,21 @@ function V(e) {
       [w.textXs]: "xs" === O,
       [w.textSm]: "sm" === O
     }),
-    es = () => null == V && null == Z ? null : (0, r.jsx)(S.Z, {
-      customStatusActivity: V,
+    es = () => null == Z && null == F ? null : (0, r.jsx)(S.Z, {
+      customStatusActivity: Z,
       textSize: O,
       animateEmoji: v,
       hideEmoji: D,
-      hideTooltip: x,
+      hideTooltip: L,
       textClassName: _,
       iconClassName: m,
       tooltipClassName: eo,
       voiceChannel: l,
-      hangStatus: Z
+      hangStatus: F
     });
   return (0, r.jsxs)("div", {
     className: eo,
-    children: [ea(), null != V && J > 0 && (0, r.jsx)(B, {
+    children: [ea(), null != Z && J > 0 && (0, r.jsx)(B, {
       textVariant: "text-".concat(O, "/normal"),
       className: _
     }), es(), P && (0, r.jsx)(I.Z, {})]

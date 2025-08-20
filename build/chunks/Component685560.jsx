@@ -25,9 +25,9 @@ var Chunk951288 = require("./951288.js"),
 let y = [Chunk704215.z.GUILD_POWERUP_PERKS_COACHMARK, Chunk704215.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK, Chunk704215.z.GUILD_POWERUP_NOTIFICATION, Chunk704215.z.GUILD_TAG_AVAILABLE_COACHMARK, Chunk704215.z.GUILD_POWERUP_NEW_PERK_AVAILABLE_COACHMARK],
   C = [Chunk704215.C.GUILD_POWERUP_LEVEL_1_COACHMARK, Chunk704215.C.GUILD_POWERUP_LEVEL_2_COACHMARK, Chunk704215.C.GUILD_POWERUP_LEVEL_3_COACHMARK, Chunk704215.C.GUILD_POWERUP_SINGLE_SKU_PURCHASE_COACHMARK, Chunk704215.C.GUILD_POWERUP_CHOICE_SKU_PURCHASE_COACHMARK],
   N = [Chunk704215.C.ADOPT_CLAN_IDENTITY_NOTICE],
-  T = [Chunk704215.z.VANITY_URL_POWERUP_ROLLBACK_NOTIFICATION, Chunk704215.z.VANITY_URL_POWERUP_ROLLBACK_MODAL, Chunk704215.z.VANITY_URL_POWERUP_EDUCATIONAL_POPOVER];
+  O = [Chunk704215.z.VANITY_URL_POWERUP_ROLLBACK_NOTIFICATION, Chunk704215.z.VANITY_URL_POWERUP_ROLLBACK_MODAL, Chunk704215.z.VANITY_URL_POWERUP_EDUCATIONAL_POPOVER];
 
-function O(e) {
+function E(e) {
   switch (e) {
     case o.C.GUILD_POWERUP_LEVEL_1_COACHMARK:
       return "GUILD_POWERUP_LEVEL_1_COACHMARK";
@@ -43,9 +43,9 @@ function O(e) {
       return "ADOPT_CLAN_IDENTITY_NOTICE"
   }
 }
-async function E(e, t, a) {
+async function T(e, t, a) {
   await Promise.all(t.map(e => s.tn.patch({
-    url: j.ANM.APPLIED_BOOST_MODIFY_END_DATE(e.id),
+    url: g.ANM.APPLIED_BOOST_MODIFY_END_DATE(e.id),
     body: a ? {} : {
       ends_at: l()().add(1, "day")
     },
@@ -54,7 +54,7 @@ async function E(e, t, a) {
 }
 async function S(e) {
   await s.tn.post({
-    url: j.ANM.SEND_POWERUPS_SYSTEM_MESSAGE(e),
+    url: g.ANM.SEND_POWERUPS_SYSTEM_MESSAGE(e),
     rejectWithError: true
   })
 }
@@ -117,13 +117,13 @@ function P() {
           variant: "primary",
           text: "Set Half Boosts expiring in 1 day",
           onClick: () => {
-            E(exports, Chunk544891.slice(Math.floor(Chunk544891.length / 2)), false)
+            T(exports, Chunk544891.slice(Math.floor(Chunk544891.length / 2)), false)
           }
         }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Reset End Date",
           onClick: () => {
-            E(exports, Chunk544891, true)
+            T(exports, Chunk544891, true)
           }
         })]
       })]
@@ -153,7 +153,7 @@ function P() {
         value: r.includes(e),
         children: (0, n.jsx)(c.Text, {
           variant: "text-sm/normal",
-          children: O(e)
+          children: E(e)
         })
       }, e))]
     }), (0, Chunk951288.jsxs)("div", {
@@ -169,7 +169,7 @@ function P() {
         value: r.includes(e),
         children: (0, n.jsx)(c.Text, {
           variant: "text-sm/normal",
-          children: O(e)
+          children: E(e)
         })
       }, e))]
     }), (0, Chunk951288.jsxs)("div", {
@@ -178,7 +178,7 @@ function P() {
         variant: "eyebrow",
         className: Chunk617659.header,
         children: "Reset Powerup Rollback DCs"
-      }), T.map(e => (0, n.jsx)(u.u, {
+      }), O.map(e => (0, n.jsx)(u.u, {
         className: _.formSwitch,
         contents: l,
         content: o.z[e],

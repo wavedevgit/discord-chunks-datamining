@@ -1,30 +1,30 @@
-/** Chunk was on 69416 **/
+/** Chunk was on 79839 **/
 /** chunk id: 672598, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
   Z: () => a
 }), require("./388685.js");
 var Chunk209739 = require("./209739.js"),
-  n = require.n(Chunk209739),
+  o = require.n(Chunk209739),
   Chunk358085 = require("./358085.js");
-let o = {
+let i = {
   [Chunk358085.PlatformTypes.WINDOWS]: {
     nvidia: ">=397.93.0"
   }
 };
 
 function a(e) {
-  let t = o[(0, i.getPlatform)()];
+  let t = i[(0, n.getPlatform)()];
   if (null == t) returnfalse;
   for (let r of Object.keys(e)) {
     let l = e[r],
-      i = t[r];
-    if (null == l || null == i || null != l.error) continue;
-    let o = function(e) {
+      n = t[r];
+    if (null == l || null == n || null != l.error) continue;
+    let i = function(e) {
       var t, r;
       return "".concat(null != (t = e.major) ? t : 0, ".").concat(null != (r = e.minor) ? r : 0, ".0")
     }(l);
-    if (!n().satisfies(o, i)) returntrue
+    if (!o().satisfies(i, n)) returntrue
   }
   returnfalse
 }

@@ -1,5 +1,6 @@
-/** Chunk was on 66181 **/
-/** chunk id: 861526, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 861526, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   button: "button__67645",
   orangeGlow: "orangeGlow__67645",

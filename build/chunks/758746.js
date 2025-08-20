@@ -1,5 +1,6 @@
-/** Chunk was on 66181 **/
-/** chunk id: 758746, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 758746, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   group: "group_bc4a3e",
   title: "title_bc4a3e",

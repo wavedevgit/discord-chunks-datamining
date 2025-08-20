@@ -126,13 +126,13 @@ function A(e) {
   delete f[t.id]
 }
 
-function N(e) {
+function C(e) {
   let t = false;
   for (let n of e.messages) t = R(n.thread) || t;
   return t
 }
 
-function C(e) {
+function N(e) {
   let {
     data: t
   } = e, n = false;
@@ -191,10 +191,10 @@ let D = new w(Chunk570140.Z, {
   THREAD_UPDATE: v,
   THREAD_LIST_SYNC: I,
   THREAD_MEMBERS_UPDATE: P,
-  SEARCH_MESSAGES_SUCCESS: C,
-  MOD_VIEW_SEARCH_MESSAGES_SUCCESS: C,
+  SEARCH_MESSAGES_SUCCESS: N,
+  MOD_VIEW_SEARCH_MESSAGES_SUCCESS: N,
   LOAD_THREADS_SUCCESS: T,
   LOAD_ARCHIVED_THREADS_SUCCESS: T,
   THREAD_DELETE: A,
-  LOAD_MESSAGES_SUCCESS: N
+  LOAD_MESSAGES_SUCCESS: C
 })

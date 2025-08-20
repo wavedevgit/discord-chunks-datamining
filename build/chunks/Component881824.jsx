@@ -4,7 +4,7 @@
 require.d(exports, {
   $Q: () => O,
   Ev: () => y,
-  Gy: () => N,
+  Gy: () => C,
   R5: () => A,
   T: () => E,
   Us: () => T,
@@ -73,7 +73,7 @@ function E(e, t) {
   (0, i.ZD)(async () => {
     let {
       default: t
-    } = await Promise.all([n.e("70274"), n.e("82758"), n.e("73736")]).then(n.bind(n, 581355));
+    } = await Promise.all([n.e("82758"), n.e("73736")]).then(n.bind(n, 581355));
     return n => (0, r.jsx)(t, m(p({}, n), {
       channel: e
     }))
@@ -86,7 +86,7 @@ function b(e) {
   (0, i.ZD)(async () => {
     let {
       default: t
-    } = await Promise.all([n.e("70274"), n.e("84686")]).then(n.bind(n, 665111));
+    } = await n.e("84686").then(n.bind(n, 665111));
     return n => (0, r.jsx)(t, m(p({}, n), {
       channel: e
     }))
@@ -97,7 +97,7 @@ function y(e, t) {
   (0, i.ZD)(async () => {
     let {
       default: t
-    } = await Promise.all([n.e("70274"), n.e("2634")]).then(n.bind(n, 548841));
+    } = await n.e("2634").then(n.bind(n, 548841));
     return n => (0, r.jsx)(t, m(p({}, n), {
       channel: e
     }))
@@ -128,7 +128,7 @@ function T(e, t) {
   (0, i.ZD)(async () => {
     let {
       default: t
-    } = await Promise.all([n.e("70274"), n.e("85885")]).then(n.bind(n, 124779));
+    } = await n.e("85885").then(n.bind(n, 124779));
     return n => (0, r.jsx)(t, m(p({}, n), {
       channel: e
     }))
@@ -149,7 +149,7 @@ function A(e, t) {
   t !== e.id && (0, c.Ku)(true), v(e), t !== e.id && n && g(e)
 }
 
-function N(e, t) {
+function C(e, t) {
   return (0, i.ZD)(async () => {
     let {
       default: i

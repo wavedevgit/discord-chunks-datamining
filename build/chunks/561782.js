@@ -1,6 +1,5 @@
-/** Chunk was on 45356 **/
+/** Chunk was on 5665 **/
 /** chunk id: 561782, original params: e,t,n (module,exports,require) **/
-"use strict";
 module.exports = {
   wrapper: "wrapper_f563df",
   button: "button_f563df",

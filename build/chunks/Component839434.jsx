@@ -389,7 +389,7 @@ class el extends(i = Chunk647438.PureComponent) {
       (0, p.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("79695"), n.e("69220"), n.e("74820")]).then(n.bind(n, 881351));
+        } = await Promise.all([n.e("79695"), n.e("69220")]).then(n.bind(n, 881351));
         return n => (0, r.jsx)(e, er(ei({}, n), {
           user: t,
           showMediaItems: true,

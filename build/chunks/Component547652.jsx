@@ -1,8 +1,7 @@
 /** Chunk was on 93741 **/
-/** chunk id: 547652, original params: e,t,n (module,exports,require) **/
-"use strict";
+/** chunk id: 547652, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  default: () => j
+  default: () => P
 }), require("./415506.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -23,73 +22,73 @@ var Chunk951288 = require("./951288.js"),
   Chunk710111 = require("./710111.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let j = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
+let P = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(t) {
   let {
-    soundGuild: t,
+    soundGuild: e,
     sound: s,
     activeCallGuildId: d,
-    onSelect: f
-  } = e, h = function(e, t) {
+    onSelect: b
+  } = t, w = function(t, e) {
     let {
       canManageGuildExpressions: i
-    } = (0, a.cj)([p.Z], () => null == t ? {
+    } = (0, l.cj)([p.Z], () => null == e ? {
       canManageGuildExpressions: false
-    } : p.Z.getGuildPermissionProps(t), [t]), u = o.useCallback(() => {
-      if ((null == t ? true : t.id) == null) return null;
+    } : p.Z.getGuildPermissionProps(e), [e]), a = o.useCallback(() => {
+      if ((null == e ? true : e.id) == null) return null;
       (0, c.ZDy)(async () => {
         let {
           default: o
-        } = await Promise.all([n.e("12830"), n.e("56035"), n.e("62599")]).then(n.bind(n, 758961));
+        } = await n.e("56035").then(n.bind(n, 758961));
         return n => {
-          var i, a;
-          return (0, r.jsx)(o, (i = function(e) {
-            for (var t = 1; t < arguments.length; t++) {
-              var n = null != arguments[t] ? arguments[t] : {},
+          var i, l;
+          return (0, r.jsx)(o, (i = function(t) {
+            for (var e = 1; e < arguments.length; e++) {
+              var n = null != arguments[e] ? arguments[e] : {},
                 r = Object.keys(n);
-              "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                return Object.getOwnPropertyDescriptor(n, e).enumerable
-              }))), r.forEach(function(t) {
+              "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(t) {
+                return Object.getOwnPropertyDescriptor(n, t).enumerable
+              }))), r.forEach(function(e) {
                 var r;
-                r = n[t], t in e ? Object.defineProperty(e, t, {
+                r = n[e], e in t ? Object.defineProperty(t, e, {
                   value: r,
                   enumerable: true,
                   configurable: true,
                   writable: true
-                }) : e[t] = r
+                }) : t[e] = r
               })
             }
-            return e
-          }({}, n), a = a = {
-            existingSound: e,
-            guildId: t.id
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
-            var n = Object.keys(e);
+            return t
+          }({}, n), l = l = {
+            existingSound: t,
+            guildId: e.id
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(t, e) {
+            var n = Object.keys(t);
             if (Object.getOwnPropertySymbols) {
-              var r = Object.getOwnPropertySymbols(e);
+              var r = Object.getOwnPropertySymbols(t);
               n.push.apply(n, r)
             }
             return n
-          })(Object(a)).forEach(function(e) {
-            Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(a, e))
+          })(Object(l)).forEach(function(t) {
+            Object.defineProperty(i, t, Object.getOwnPropertyDescriptor(l, t))
           }), i))
         }
       })
-    }, [t, e]);
+    }, [e, t]);
     return i ? (0, r.jsx)(c.sNh, {
       id: "edit-soundboard-sound",
-      label: m.intl.string(m.t.ponZcH),
-      action: u
+      label: v.intl.string(v.t.ponZcH),
+      action: a
     }, "edit-soundboard-sound") : null
-  }(s, t), j = function(e) {
+  }(s, e), P = function(t) {
     let {
-      soundId: t
-    } = e, n = o.useCallback(async () => {
+      soundId: e
+    } = t, n = o.useCallback(async () => {
       try {
-        let e = (0, O.Z)(t),
-          n = await fetch(e),
+        let t = (0, j.Z)(e),
+          n = await fetch(t),
           r = await n.blob(),
-          o = function(e) {
-            switch (e.type) {
+          o = function(t) {
+            switch (t.type) {
               case "audio/mpeg":
               case "audio/mpeg3":
                 return "mp3";
@@ -99,32 +98,32 @@ let j = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
                 throw Error("unable to determine file type")
             }
           }(r),
-          a = "".concat(t, ".").concat(o);
-        y.isPlatformEmbedded ? await w.ZP.saveFile(e, a) : (0, i.saveAs)(r, a)
-      } catch (e) {
-        u.Z.show({
-          title: m.intl.string(m.t.mK3tDA),
-          body: m.intl.string(m.t.jLlfDA),
-          confirmText: m.intl.string(m.t.BddRzc)
+          l = "".concat(e, ".").concat(o);
+        y.isPlatformEmbedded ? await g.ZP.saveFile(t, l) : (0, i.saveAs)(r, l)
+      } catch (t) {
+        a.Z.show({
+          title: v.intl.string(v.t.mK3tDA),
+          body: v.intl.string(v.t.jLlfDA),
+          confirmText: v.intl.string(v.t.BddRzc)
         })
       }
-    }, [t]);
-    return e.guildId === v.X8 ? null : (0, r.jsx)(c.sNh, {
+    }, [e]);
+    return t.guildId === h.X8 ? null : (0, r.jsx)(c.sNh, {
       id: "download-soundboard-sound",
-      label: m.intl.string(m.t["/fzLLC"]),
+      label: v.intl.string(v.t["/fzLLC"]),
       action: n
     }, "download-soundboard-sound")
-  }(s), S = (0, g.Z)(s, d), P = (0, b.Z)({
+  }(s), m = (0, O.Z)(s, d), Z = (0, f.Z)({
     id: s.soundId,
-    label: m.intl.string(m.t.HJikXl)
+    label: v.intl.string(v.t.HJikXl)
   });
   return (0, r.jsx)(c.v2r, {
     navId: "sound-button-context",
-    onClose: l.Zy,
-    "aria-label": m.intl.string(m.t.liqwPD),
-    onSelect: f,
+    onClose: u.Zy,
+    "aria-label": v.intl.string(v.t.liqwPD),
+    onSelect: b,
     children: (0, r.jsxs)(c.kSQ, {
-      children: [h, S, j, P]
+      children: [w, m, P, Z]
     })
   })
 }, {

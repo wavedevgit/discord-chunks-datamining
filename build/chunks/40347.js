@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 40347, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 40347, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => A
 });
 var Chunk780384 = require("./780384.js"),
   Chunk410030 = require("./410030.js"),
@@ -24,7 +25,7 @@ var Chunk780384 = require("./780384.js"),
   Chunk943323 = require("./943323.js"),
   Chunk958657 = require("./958657.js"),
   Chunk605493 = require("./605493.js");
-let v = {
+let T = {
     [Chunk474936.VU.PREMIUM_TENURE_1_MONTH]: {
       dark: " #D76C1F, #F79C53",
       light: " #8E2A0B, #D4681C"
@@ -93,21 +94,21 @@ let v = {
     }
   };
 
-function T() {
+function A() {
   let e = (0, Chunk804413.Z)(),
     t = (0, Chunk780384.wj)((0, Chunk410030.ZP)());
   if (!module) return null;
-  let n = v[module],
-    o = S[module],
+  let n = T[module],
+    l = S[module],
     c = {
       currentBadge: (0, Chunk291175.fv)(module),
       currentBadgeTextGradient: exports ? null == require ? true : require.dark : null == require ? true : require.light,
       levelUpVideoSrc: exports ? null == Chunk538092 ? true : Chunk538092.dark : null == Chunk538092 ? true : Chunk538092.light
     },
-    d = Chunk474936.Qh.indexOf(module);
+    u = Chunk474936.Qh.indexOf(module);
   if (Chunk799974 > 0) {
     let e = Chunk474936.Qh[Chunk799974 - 1],
-      n = v[module];
+      n = T[module];
     Chunk533577.prevBadge = (0, Chunk291175.fv)(module), Chunk533577.prevBadgeTextGradient = exports ? null == require ? true : require.dark : null == require ? true : require.light
   }
   return Chunk533577

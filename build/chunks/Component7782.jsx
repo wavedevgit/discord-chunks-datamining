@@ -1,4 +1,4 @@
-/** Chunk was on 36499 **/
+/** Chunk was on 5665 **/
 /** chunk id: 7782, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => A
@@ -36,7 +36,7 @@ let Z = e => {
     } = e, l = (0, a.e7)([y.Z], () => y.Z.getMutualGuilds(t), [t]), o = i.useMemo(() => null != l ? l.slice(0, 3).map((e, t) => {
       let {
         guild: n
-      } = e, i = null != n ? j.ZP.getGuildIconURL({
+      } = e, i = null != n ? O.ZP.getGuildIconURL({
         id: n.id,
         icon: n.icon,
         size: 24
@@ -242,7 +242,7 @@ let Z = e => {
         relationshipType: c,
         userId: t,
         showingBanner: i
-      }), !i && (0, r.jsx)(O.Z, {
+      }), !i && (0, r.jsx)(j.Z, {
         otherUserId: t,
         channel: n,
         navigateAwayOnReportSuccess: d

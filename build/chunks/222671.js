@@ -1,20 +1,20 @@
-/** Chunk was on 91584 **/
-/** chunk id: 222671, original params: t,e,r (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 222671, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 var Chunk808570 = require("./808570.js");
-module.exports = function(t) {
-  var e = t.ownerDocument.documentElement;
-  if (!("getBoundingClientRect" in t) || !n(e, t)) return {
+module.exports = function(e) {
+  var t = e.ownerDocument.documentElement;
+  if (!("getBoundingClientRect" in e) || !r(t, e)) return {
     left: 0,
     right: 0,
     top: 0,
     bottom: 0
   };
-  var r = t.getBoundingClientRect();
+  var n = e.getBoundingClientRect();
   return {
-    left: Math.round(r.left) - e.clientLeft,
-    right: Math.round(r.right) - e.clientLeft,
-    top: Math.round(r.top) - e.clientTop,
-    bottom: Math.round(r.bottom) - e.clientTop
+    left: Math.round(n.left) - t.clientLeft,
+    right: Math.round(n.right) - t.clientLeft,
+    top: Math.round(n.top) - t.clientTop,
+    bottom: Math.round(n.bottom) - t.clientTop
   }
 }

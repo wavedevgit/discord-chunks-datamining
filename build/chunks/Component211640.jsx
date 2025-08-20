@@ -1,4 +1,4 @@
-/** Chunk was on 36499 **/
+/** Chunk was on 5665 **/
 /** chunk id: 211640, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -30,8 +30,8 @@ function m(e) {
   });
   if (!b) return null;
   let v = null == _ ? f.intl.string(h.default["0IZbwM"]) : f.intl.string(h.default.Uj6oDw),
-    j = null == _,
-    O = "delete-message-".concat(t.id);
+    O = null == _,
+    j = "delete-message-".concat(t.id);
   return (0, r.jsx)(p.Z, {
     text: v,
     icon: a.XHJ,
@@ -41,7 +41,7 @@ function m(e) {
         moderatorReportChannelId: g.id
       })
     },
-    disabled: j,
+    disabled: O,
     color: l.zx.Colors.RED
-  }, O)
+  }, j)
 }

@@ -2,7 +2,7 @@
 /** chunk id: 166584, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => M
+  Z: () => j
 }), require("./388685.js"), require("./539854.js"), require("./642613.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -59,13 +59,13 @@ function A(e, t) {
   return n
 }
 
-function N(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function C(e, t) {
+function N(e, t) {
   if (null == e) return {};
   var n, r, i = R(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -85,7 +85,7 @@ function R(e, t) {
 let P = 4,
   w = 268,
   D = 2,
-  L = e => {
+  x = e => {
     if (null == e) return 0;
     let {
       width: t
@@ -93,7 +93,7 @@ let P = 4,
     return t > 0 ? t + P : 0
   };
 
-function x(e) {
+function L(e) {
   let {
     user: t,
     currentUser: n,
@@ -106,13 +106,13 @@ function x(e) {
     onRemoveRole: E
   } = e, T = i.useRef({}), A = (e, t) => {
     null != t ? T.current[e] = t : delete T.current[e]
-  }, [R, x] = i.useState(d), [M, k] = i.useState(w), [j, U] = i.useState(false), G = i.useRef(null), B = i.useRef(null), V = i.useRef(0);
+  }, [R, L] = i.useState(d), [j, M] = i.useState(w), [k, U] = i.useState(false), G = i.useRef(null), B = i.useRef(null), Z = i.useRef(0);
   i.useLayoutEffect(() => {
-    V.current = 0
+    Z.current = 0
   }, [d]), i.useLayoutEffect(() => {
-    if (j) return;
-    let e = L(G.current),
-      t = L(B.current),
+    if (k) return;
+    let e = x(G.current),
+      t = x(B.current),
       n = [],
       r = w - e - t;
     for (let e = 0; e < D; e++) {
@@ -121,7 +121,7 @@ function x(e) {
         let i = d[r],
           a = T.current[i.id];
         if (null == a) {
-          0 === V.current && n.push(i);
+          0 === Z.current && n.push(i);
           continue
         }
         let o = Math.min(a.getBoundingClientRect().width, t);
@@ -129,11 +129,11 @@ function x(e) {
         e += o + P, n.push(i)
       }
     }
-    x(n.length === R.length ? R : n), k(r), V.current++
-  }, [d, R, j]);
-  let F = i.useMemo(() => "roles-".concat((0, a.Z)()), []),
-    Z = (0, o.ZP)({
-      id: F,
+    L(n.length === R.length ? R : n), M(r), Z.current++
+  }, [d, R, k]);
+  let V = i.useMemo(() => "roles-".concat((0, a.Z)()), []),
+    F = (0, o.ZP)({
+      id: V,
       isEnabled: true,
       scrollToStart: O.Cyb,
       scrollToEnd: O.Cyb,
@@ -143,13 +143,13 @@ function x(e) {
     Y = 0 === H ? v.intl.string(v.t["vR7M+/"]) : v.intl.formatToPlainString(v.t.PCs0oq, {
       numRoles: H
     }),
-    W = (j ? d : R).map((e, i) => {
+    W = (k ? d : R).map((e, i) => {
       var a;
       return (0, r.jsx)(b.Z, {
         role: e,
         guildId: l.id,
         style: {
-          maxWidth: j || i !== R.length - 1 ? w : M
+          maxWidth: k || i !== R.length - 1 ? w : j
         },
         disableBorderColor: true,
         ref: t => A(e.id, t),
@@ -171,18 +171,18 @@ function x(e) {
       })
     }, [K]);
   return (0, r.jsx)(s.bG, {
-    navigator: Z,
+    navigator: F,
     children: (0, r.jsx)(s.SJ, {
       children: e => {
         var {
           ref: t
-        } = e, n = C(e, ["ref"]);
-        return (0, r.jsxs)("div", N(S({
+        } = e, n = N(e, ["ref"]);
+        return (0, r.jsxs)("div", C(S({
           className: I.root,
           "aria-label": Y,
           ref: t
         }, n), {
-          children: [W, R.length < d.length ? j ? (0, r.jsx)(c.DY3, {
+          children: [W, R.length < d.length ? k ? (0, r.jsx)(c.DY3, {
             text: v.intl.string(v.t.XnXtCg),
             children: (0, r.jsx)(c.P3F, {
               onClick: q,
@@ -218,7 +218,7 @@ function x(e) {
   })
 }
 
-function M(e) {
+function j(e) {
   let {
     user: t,
     currentUser: n,
@@ -239,7 +239,7 @@ function M(e) {
     let n = null != c ? c : [];
     n.includes(e) || (n = [...n, e]), d.Z.updateMemberRoles(a.id, t.id, n, [e], [])
   }, [c, a.id, t.id, o]), T = y && null != s;
-  return 0 !== h.length || T ? (0, r.jsx)(x, {
+  return 0 !== h.length || T ? (0, r.jsx)(L, {
     user: t,
     currentUser: n,
     guild: a,

@@ -1,33 +1,34 @@
-/** Chunk was on 66181 **/
-/** chunk id: 275909, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 275909, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => o
+  Z: () => l
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk283029 = require("./283029.jsx"),
   Chunk681500 = require("./681500.js");
-let o = function(e) {
+let l = function(e) {
   let {
     className: t,
-    hasCooldown: r,
-    isCanceled: o,
+    hasCooldown: i,
+    isCanceled: l,
     useReducedMotion: c
   } = e;
-  return (0, i.jsxs)("div", {
-    className: s()(l.boostIconContainer, t),
-    children: [o ? (0, i.jsx)("img", {
-      className: s()(l.boostIcon, l.boostIconCanceled),
+  return (0, r.jsxs)("div", {
+    className: a()(s.boostIconContainer, t),
+    children: [l ? (0, r.jsx)("img", {
+      className: a()(s.boostIcon, s.boostIconCanceled),
       src: n(457026),
       alt: ""
-    }) : (0, i.jsx)(a.Z, {
-      className: l.boostIcon,
-      boostInCooldown: r,
+    }) : (0, r.jsx)(o.Z, {
+      className: s.boostIcon,
+      boostInCooldown: i,
       useReducedMotion: c
-    }), !o && r && (0, i.jsx)("img", {
-      className: l.snowflake,
+    }), !l && i && (0, r.jsx)("img", {
+      className: s.snowflake,
       src: n(765028),
       alt: ""
     })]

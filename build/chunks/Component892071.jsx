@@ -45,13 +45,13 @@ function p(e) {
     alwaysShowLinkDecorations: T,
     hardwareAccelerationEnabled: S,
     highContrastMode: A,
-    children: N
-  } = e, C = window.CSS.supports("selector(::-webkit-scrollbar)"), R = "font-size: ".concat(h, "%; --saturation-factor: ").concat(b, ";"), P = (0, d.Z)("highlight_mana_buttons"), w = (0, d.Z)("highlight_mana_components"), D = (0, d.Z)("highlight_void_toggleables"), L = (0, d.Z)("highlight_void_buttons"), x = o()((0, c.Z)(), (0, l.QeD)(a), "density-".concat(_), m, {
+    children: C
+  } = e, N = window.CSS.supports("selector(::-webkit-scrollbar)"), R = "font-size: ".concat(h, "%; --saturation-factor: ").concat(b, ";"), P = (0, d.Z)("highlight_mana_buttons"), w = (0, d.Z)("highlight_mana_components"), D = (0, d.Z)("highlight_void_toggleables"), x = (0, d.Z)("highlight_void_buttons"), L = o()((0, c.Z)(), (0, l.QeD)(a), "density-".concat(_), m, {
     "low-saturation": b <= l.AEw,
     "keyboard-mode": E,
     "decorate-links": T,
-    "no-webkit-scrollbar": !C,
-    "has-webkit-scrollbar": C,
+    "no-webkit-scrollbar": !N,
+    "has-webkit-scrollbar": N,
     "mouse-mode": g,
     "reduce-motion": I,
     "full-motion": !I,
@@ -67,15 +67,15 @@ function p(e) {
     "highlight-mana-buttons": P,
     "highlight-mana-components": w,
     "highlight-void-toggleables": D,
-    "highlight-void-buttons": L,
+    "highlight-void-buttons": x,
     "high-contrast-mode": A
-  }, t), M = i.useMemo(() => ({
+  }, t), j = i.useMemo(() => ({
     lang: n,
     style: R,
-    className: x
-  }), [n, R, x]);
+    className: L
+  }), [n, R, L]);
   return (0, r.jsx)(f.Provider, {
-    value: M,
-    children: N
+    value: j,
+    children: C
   })
 }

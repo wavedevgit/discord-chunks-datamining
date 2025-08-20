@@ -1,4 +1,4 @@
-/** Chunk was on 69003 **/
+/** Chunk was on 91488 **/
 /** chunk id: 931928, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   u: () => _
@@ -26,14 +26,14 @@ let O = [Chunk981631.Z5c.ME, Chunk981631.Z5c.COLLECTIBLES_SHOP, Chunk981631.Z5c.
       renderDiscoveryButton: _,
       isGuildBarScrolling: y
     } = e, {
-      enabled: v
+      enabled: j
     } = (0, u.WX)({
       location: "orbs_discovery_onboarding_coachmark"
     }), {
-      shouldShow: j,
+      shouldShow: v,
       questId: C,
-      onClose: E,
-      onCtaClick: x,
+      onClose: x,
+      onCtaClick: E,
       onDiscoveryButtonClick: S
     } = (e => {
       let {
@@ -74,28 +74,28 @@ let O = [Chunk981631.Z5c.ME, Chunk981631.Z5c.COLLECTIBLES_SHOP, Chunk981631.Z5c.
         onDiscoveryButtonClick: f.dG4
       }
     })({
-      isVirtualCurrencyEnabled: v,
+      isVirtualCurrencyEnabled: j,
       onShowCoachmarkHandler: (0, d.O5)({
         targetElementRef: t,
         scrollToBottom: n
       })
-    }), P = i.useMemo(() => ({
-      onCtaClick: x,
-      onClose: E,
+    }), I = i.useMemo(() => ({
+      onCtaClick: E,
+      onClose: x,
       titleText: b.intl.string(b.t.KnWRQU),
       descriptionText: b.intl.format(b.t["xYx+WV"], {
         quantity: 200
       }),
       ctaText: b.intl.string(b.t.v4HbPz)
-    }), [x, E]);
+    }), [E, x]);
     return (0, r.jsx)(d.G6, {
       errorBoundarySource: "ORBS_DISCOVERY_ONBOARDING_COACHMARK",
       targetElementRef: t,
       targetQuestId: C,
       renderDiscoveryButton: _,
-      showingCoachmark: j,
+      showingCoachmark: v,
       isGuildBarScrolling: y,
       onDiscoveryButtonClick: S,
-      innerCoachmarkProps: P
+      innerCoachmarkProps: I
     })
   }

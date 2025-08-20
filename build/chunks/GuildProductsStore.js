@@ -1,125 +1,156 @@
-/** Chunk was on 84239 **/
-/** chunk id: 240864, original params: e,t,u (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 240864, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  M: () => s,
-  Z: () => G
+  M: () => u,
+  Z: () => D
 }), require("./539854.js"), require("./388685.js");
-var n, r, l, Chunk442837 = require("./442837.js"),
+var r, Chunk442837 = require("./442837.js"),
   Chunk759174 = require("./759174.js"),
   Chunk570140 = require("./570140.js"),
   Chunk70956 = require("./70956.js"),
-  Chunk709054 = require("./709054.js"),
-  s = ((r = {})[r.NOT_FETCHED = 0] = "NOT_FETCHED", r[r.FETCHING = 1] = "FETCHING", r[r.FETCHED = 2] = "FETCHED", r);
-let E = {},
-  C = {},
-  f = {},
-  _ = 10 * Chunk70956.Z.Millis.MINUTE;
+  Chunk709054 = require("./709054.js");
 
-function D(e) {
+function c(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+var u = function(e) {
+  return e[e.NOT_FETCHED = 0] = "NOT_FETCHED", e[e.FETCHING = 1] = "FETCHING", e[e.FETCHED = 2] = "FETCHED", e
+}({});
+let d = {},
+  f = {},
+  _ = {},
+  p = 10 * Chunk70956.Z.Millis.MINUTE,
+  h = 1e12;
+
+function m(e) {
   return "guild:".concat(e)
 }
 
-function T(e) {
+function g(e) {
   return "guild:".concat(e, ":published")
 }
-let P = new Chunk759174.h(e => {
-    let t = [D(e.guild_id)];
-    return e.published && t.push(T(e.guild_id)), t
-  }, e => (function(e) {
-    let t = a.default.extractTimestamp(e.id);
-    return e.published ? -t : -t + 1e12
-  })(e)),
-  U = [];
-class O extends(n = Chunk442837.ZP.Store) {
+
+function E(e) {
+  let t = l.default.extractTimestamp(e.id);
+  return e.published ? -t : -t + h
+}
+let b = new Chunk759174.h(e => {
+    let t = [m(e.guild_id)];
+    return e.published && t.push(g(e.guild_id)), t
+  }, e => E(e)),
+  y = [];
+
+function O() {
+  b.clear(), d = {}, f = {}, _ = {}
+}
+
+function v(e) {
+  let {
+    guildId: t
+  } = e;
+  d[t] = 1, [...b.values(m(t))].forEach(e => {
+    b.delete(e.id)
+  })
+}
+
+function I(e) {
+  let {
+    guildId: t,
+    products: n
+  } = e;
+  d[t] = 2, _[t] = Date.now(), n.forEach(e => {
+    b.set(e.id, e), f[e.id] = 2
+  })
+}
+
+function T(e) {
+  let {
+    guildId: t
+  } = e;
+  d[t] = 2
+}
+
+function S(e) {
+  let {
+    productId: t
+  } = e;
+  f[t] = 1
+}
+
+function A(e) {
+  let {
+    product: t
+  } = e;
+  f[t.id] = 2, b.set(t.id, t)
+}
+
+function C(e) {
+  let {
+    productId: t,
+    error: n
+  } = e;
+  f[t] = 2, 404 === n.status && b.delete(t)
+}
+
+function N(e) {
+  let {
+    product: t
+  } = e;
+  b.set(t.id, t)
+}
+
+function R(e) {
+  let {
+    product: t
+  } = e;
+  b.set(t.id, t)
+}
+
+function P(e) {
+  let {
+    productId: t
+  } = e;
+  b.delete(t)
+}
+class w extends(r = Chunk442837.ZP.Store) {
   getGuildProductsForGuildFetchState(e) {
     var t;
-    return null != (t = E[e]) ? t : 0
+    return null != (t = d[e]) ? t : 0
   }
   getGuildProduct(e) {
-    return P.get(e)
+    return b.get(e)
   }
   getGuildProductsForGuild(e, t) {
     let {
-      publishedOnly: u
+      publishedOnly: n
     } = t;
-    return null == e ? U : P.values(u ? T(e) : D(e))
+    return null == e ? y : b.values(n ? g(e) : m(e))
   }
   getGuildProductFetchState(e) {
     var t;
-    return null != (t = C[e]) ? t : 0
+    return null != (t = f[e]) ? t : 0
   }
   isGuildProductsCacheExpired(e) {
     var t;
-    return Date.now() - (null != (t = f[e]) ? t : 0) > _
+    return Date.now() - (null != (t = _[e]) ? t : 0) > p
   }
-}(l = "displayName") in O ? Object.defineProperty(O, l, {
-  value: "GuildProductsStore",
-  enumerable: true,
-  configurable: true,
-  writable: true
-}) : O[l] = "GuildProductsStore";
-let G = new O(Chunk570140.Z, {
-  CONNECTION_OPEN: function() {
-    P.clear(), E = {}, C = {}, f = {}
-  },
-  GUILD_PRODUCTS_FETCH: function(e) {
-    let {
-      guildId: t
-    } = e;
-    E[t] = 1, [...P.values(D(t))].forEach(e => {
-      P.delete(e.id)
-    })
-  },
-  GUILD_PRODUCTS_FETCH_SUCCESS: function(e) {
-    let {
-      guildId: t,
-      products: u
-    } = e;
-    E[t] = 2, f[t] = Date.now(), u.forEach(e => {
-      P.set(e.id, e), C[e.id] = 2
-    })
-  },
-  GUILD_PRODUCTS_FETCH_FAILURE: function(e) {
-    let {
-      guildId: t
-    } = e;
-    E[t] = 2
-  },
-  GUILD_PRODUCT_CREATE: function(e) {
-    let {
-      product: t
-    } = e;
-    P.set(t.id, t)
-  },
-  GUILD_PRODUCT_UPDATE: function(e) {
-    let {
-      product: t
-    } = e;
-    P.set(t.id, t)
-  },
-  GUILD_PRODUCT_DELETE: function(e) {
-    let {
-      productId: t
-    } = e;
-    P.delete(t)
-  },
-  GUILD_PRODUCT_FETCH: function(e) {
-    let {
-      productId: t
-    } = e;
-    C[t] = 1
-  },
-  GUILD_PRODUCT_FETCH_SUCCESS: function(e) {
-    let {
-      product: t
-    } = e;
-    C[t.id] = 2, P.set(t.id, t)
-  },
-  GUILD_PRODUCT_FETCH_FAILURE: function(e) {
-    let {
-      productId: t,
-      error: u
-    } = e;
-    C[t] = 2, 404 === u.status && P.delete(t)
-  }
+}
+c(w, "displayName", "GuildProductsStore");
+let D = new w(Chunk570140.Z, {
+  CONNECTION_OPEN: O,
+  GUILD_PRODUCTS_FETCH: v,
+  GUILD_PRODUCTS_FETCH_SUCCESS: I,
+  GUILD_PRODUCTS_FETCH_FAILURE: T,
+  GUILD_PRODUCT_CREATE: N,
+  GUILD_PRODUCT_UPDATE: R,
+  GUILD_PRODUCT_DELETE: P,
+  GUILD_PRODUCT_FETCH: S,
+  GUILD_PRODUCT_FETCH_SUCCESS: A,
+  GUILD_PRODUCT_FETCH_FAILURE: C
 })

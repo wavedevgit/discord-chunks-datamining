@@ -1,12 +1,13 @@
-/** Chunk was on 66181 **/
-/** chunk id: 88624, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 88624, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => f
+  Z: () => m
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk512722 = require("./512722.js"),
-  s = require.n(Chunk512722),
+  a = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk346951 = require("./346951.jsx"),
@@ -18,26 +19,30 @@ var Chunk512722 = require("./512722.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk133365 = require("./133365.js");
 
-function f() {
+function m() {
   let {
     houseMembership: e,
     isClaimed: t,
     isVerified: n
   } = (0, Chunk442837.cj)([Chunk594174.default, Chunk674985.Z], () => {
     let e = Chunk594174.default.getCurrentUser();
-    return s()(null != module, "UserSettingsHypeSquad: currentUser cannot be undefined"), {
+    return a()(null != module, "UserSettingsHypeSquad: currentUser cannot be undefined"), {
       houseMembership: Chunk674985.Z.getHouseMembership(),
       isClaimed: module.isClaimed(),
       isVerified: module.verified
     }
   });
+
+  function i() {
+    return null == module ? Chunk388032.intl.string(Chunk388032.t.iZowCQ) : Chunk388032.intl.string(Chunk388032.t.e7fL7O)
+  }
   return (0, Chunk951288.jsxs)(Chunk481060.y5t, {
     component: (0, Chunk951288.jsxs)("div", {
       className: Chunk133365.intro,
       children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
         variant: "heading-xxl/semibold",
         className: Chunk133365.introHeader,
-        children: null == module ? Chunk388032.intl.string(Chunk388032.t.iZowCQ) : Chunk388032.intl.string(Chunk388032.t.e7fL7O)
+        children: Chunk512722()
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-lg/normal",
         children: Chunk388032.intl.string(Chunk388032.t["6FaVFB"])

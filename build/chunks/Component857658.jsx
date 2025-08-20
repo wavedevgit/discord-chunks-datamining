@@ -2,7 +2,7 @@
 /** chunk id: 857658, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  U: () => x
+  U: () => L
 }), require("./388685.js"), require("./781311.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk408886 = require("./408886.js"),
   Chunk233398 = require("./233398.js"),
   Chunk866419 = require("./866419.js"),
-  Chunk507962 = require("./507962.js"),
+  Chunk771934 = require("./771934.js"),
   Chunk119475 = require("./119475.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk209289 = require("./209289.js");
@@ -69,13 +69,13 @@ function A() {
     children: (0, Chunk951288.jsx)(Chunk481060.$jN, {})
   })
 }
-let N = (0, Chunk608787.Un)({
+let C = (0, Chunk608787.Un)({
     createPromise: () => Promise.all([require.e("3115"), require.e("35855")]).then(require.bind(require, 164267)),
     webpackId: 164267,
     name: "CustomThemeColorPickerControlV2",
     renderLoader: A
   }),
-  C = 5,
+  N = 5,
   R = "#000000";
 
 function P(e, t) {
@@ -137,13 +137,13 @@ function D(e) {
   })
 }
 
-function L(e) {
+function x(e) {
   if (!(0, u.FX)(e)) return e;
   let t = o()(e);
   return t.set("hsl.h", (t.get("hsl.h") + 15) % 360).hex()
 }
 
-function x(e) {
+function L(e) {
   let {
     value: t,
     onChange: n,
@@ -162,34 +162,34 @@ function x(e) {
       let t = e.trim();
       return t.startsWith("#") ? t : t.length > 0 ? "#".concat(t) : t
     },
-    x = e => {
+    L = e => {
       let t = P(e);
       if (R(t), (0, u.FX)(t) && ((0, E.zW)(), n(t), o.length > 0)) {
         let e = [...o];
         e[v] = t, s(e)
       }
     },
-    M = i.useCallback(e => {
+    j = i.useCallback(e => {
       R(e.hex)
     }, []),
-    k = e => {
+    M = e => {
       if ((0, E.P0)(), n(e.hex), o.length > 0) {
         let t = [...o];
         t[v] = e.hex, s(t)
       }
     },
-    j = async () => {
+    k = async () => {
       if (null != c) try {
         let {
           sRGBHex: e
         } = await c.open();
-        (0, E.J4)(), x(e)
+        (0, E.J4)(), L(e)
       } catch (e) {}
     }, U = () => {
-      if (o.length === C) return;
+      if (o.length === N) return;
       0 === o.length && (0, g.ft)(), (0, E.gG)();
       let e = o.length > 0 ? o[o.length - 1] : A,
-        t = o.length > 0 ? L(e) : e,
+        t = o.length > 0 ? x(e) : e,
         n = [...o, t];
       s(n), T(n.length - 1)
     }, G = e => {
@@ -200,16 +200,16 @@ function x(e) {
       }
     }, B = e => {
       T(e), (0, E.w8)()
-    }, V = o.length > 1;
+    }, Z = o.length > 1;
   return (0, r.jsxs)("div", {
     className: l()(O.container, a),
-    children: [V && (0, r.jsx)(w, {
+    children: [Z && (0, r.jsx)(w, {
       colors: o,
       selectedIndex: v,
       onColorSelect: B
-    }), (0, r.jsx)(N, {
-      onChange: M,
-      onChangeComplete: k,
+    }), (0, r.jsx)(C, {
+      onChange: j,
+      onChangeComplete: M,
       color: A
     }), (0, r.jsxs)("div", {
       className: O.hexInputContainer,
@@ -218,7 +218,7 @@ function x(e) {
       }), (0, r.jsx)("input", {
         className: O.hexInput,
         value: A.toUpperCase(),
-        onChange: e => x(e.target.value),
+        onChange: e => L(e.target.value),
         maxLength: 7,
         placeholder: m.Dp,
         type: "text"
@@ -231,11 +231,11 @@ function x(e) {
             variant: "icon-only",
             size: "sm"
           }, e), {
-            onClick: j,
+            onClick: k,
             icon: d.i,
             "aria-label": y.intl.string(b.default["NCFz+P"])
           }))
-        }), V && (0, r.jsx)(p.ua7, {
+        }), Z && (0, r.jsx)(p.ua7, {
           text: y.intl.string(y.t.N86XcH),
           children: e => (0, r.jsx)(_.h, S(I({}, e), {
             variant: "icon-only",
@@ -246,7 +246,7 @@ function x(e) {
           }))
         })]
       })]
-    }), o.length < C && (0, r.jsx)(f.z, {
+    }), o.length < N && (0, r.jsx)(f.z, {
       variant: "secondary",
       size: "md",
       onClick: U,

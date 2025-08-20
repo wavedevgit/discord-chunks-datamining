@@ -64,8 +64,8 @@ function I(e, t) {
 let T = "message_requests",
   S = false,
   A = false,
-  N = true,
-  C = false,
+  C = true,
+  N = false,
   R = {},
   P = {};
 
@@ -82,33 +82,33 @@ function D(e) {
   return [c.tI.VIEW_CHANNEL, c.tI.VIEW_THREAD, c.tI.VIEW_MESSAGE_REQUEST, c.tI.VIEW_MOD_REPORT].includes(e.type)
 }
 
-function L(e) {
+function x(e) {
   let t = false;
-  C && (C = false, t = true);
+  N && (N = false, t = true);
   let n = w(p.Z.getChannelId());
   return null != n && n in R && (delete R[n], t = true), t && e ? e : !e
 }
 
-function x() {
-  C && Chunk585483.S.dispatch(Chunk981631.CkL.SEARCH_RESULTS_CLOSE), A && (A = L(A)), S = L(S)
+function L() {
+  N && Chunk585483.S.dispatch(Chunk981631.CkL.SEARCH_RESULTS_CLOSE), A && (A = x(A)), S = x(S)
+}
+
+function j() {
+  S && (S = x(S)), A = x(A)
 }
 
 function M() {
-  S && (S = L(S)), A = L(A)
+  C || Chunk585483.S.dispatch(Chunk981631.CkL.SEARCH_RESULTS_CLOSE), C = x(C)
 }
 
-function k() {
-  N || Chunk585483.S.dispatch(Chunk981631.CkL.SEARCH_RESULTS_CLOSE), N = L(N)
-}
-
-function j(e) {
+function k(e) {
   let {
     sidebarType: t,
     guildId: n,
     baseChannelId: r,
     details: i
   } = e;
-  C = false;
+  N = false;
   let a = w(r);
   return null != a && (P[n] = {
     type: t,
@@ -132,7 +132,7 @@ function G(e) {
     channelId: r,
     details: i
   } = e;
-  C = false;
+  N = false;
   let a = w(n);
   if (null == a) returnfalse;
   let o = {
@@ -151,7 +151,7 @@ function B(e) {
     parentMessageId: n,
     location: r
   } = e;
-  C = false;
+  N = false;
   let i = w(t);
   null != i && (R[i] = {
     type: c.tI.CREATE_THREAD,
@@ -161,7 +161,7 @@ function B(e) {
   })
 }
 
-function V(e) {
+function Z(e) {
   let {
     channel: t
   } = e;
@@ -174,7 +174,7 @@ function V(e) {
   return n
 }
 
-function F(e) {
+function V(e) {
   let {
     channel: t
   } = e, n = R[t.parent_id];
@@ -182,7 +182,7 @@ function F(e) {
   delete R[t.parent_id]
 }
 
-function Z(e) {
+function F(e) {
   var t;
   let {
     channel: n
@@ -218,8 +218,8 @@ function W() {
   let e = Chunk518944.Z.getSelectedSearchContextId();
   if (null == module) returnfalse;
   let t = Chunk171900.Z.hasSearchState(module);
-  if (C === exports) returnfalse;
-  C = exports
+  if (N === exports) returnfalse;
+  N = exports
 }
 
 function K() {
@@ -229,7 +229,7 @@ class z extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     if (null != e) {
       var t, n, r, i, a;
-      S = null != (t = e.isMembersOpen) && t, A = null != (n = e.isSummariesOpen) && n, N = null == (r = e.isProfileOpen) || r, R = null != (i = e.sidebars) ? i : {}, P = null != (a = e.guildSidebars) ? a : {}
+      S = null != (t = e.isMembersOpen) && t, A = null != (n = e.isSummariesOpen) && n, C = null == (r = e.isProfileOpen) || r, R = null != (i = e.sidebars) ? i : {}, P = null != (a = e.guildSidebars) ? a : {}
     }
     this.syncWith([s.Z, l.Z], W), this.syncWith([_.Z], H), this.waitFor(l.Z, s.Z)
   }
@@ -237,15 +237,15 @@ class z extends(r = Chunk442837.ZP.PersistedStore) {
     return {
       isMembersOpen: S,
       isSummariesOpen: A,
-      isProfileOpen: N,
+      isProfileOpen: C,
       sidebars: R,
       guildSidebars: P
     }
   }
   getSection(e, t) {
-    if (C) return g.ULH.SEARCH;
+    if (N) return g.ULH.SEARCH;
     let n = w(e);
-    return null != n && null != R[n] ? g.ULH.SIDEBAR_CHAT : t && N ? g.ULH.PROFILE : A ? g.ULH.SUMMARIES : S ? g.ULH.MEMBERS : g.ULH.NONE
+    return null != n && null != R[n] ? g.ULH.SIDEBAR_CHAT : t && C ? g.ULH.PROFILE : A ? g.ULH.SUMMARIES : S ? g.ULH.MEMBERS : g.ULH.NONE
   }
   getSidebarState(e) {
     let t = w(e);
@@ -256,30 +256,30 @@ class z extends(r = Chunk442837.ZP.PersistedStore) {
   }
   getCurrentSidebarChannelId(e) {
     let t = w(e);
-    if (null == t || C) return null;
+    if (null == t || N) return null;
     let n = R[t];
     return null == n ? null : n.type === c.tI.VIEW_THREAD || n.type === c.tI.VIEW_CHANNEL || n.type === c.tI.VIEW_MOD_REPORT ? n.channelId : null
   }
   getCurrentSidebarMessageId(e) {
     var t;
     let n = w(e);
-    if (null == n || C) return null;
+    if (null == n || N) return null;
     let r = R[n];
     return null == r ? null : r.type === c.tI.VIEW_THREAD || r.type === c.tI.VIEW_CHANNEL || r.type === c.tI.VIEW_MOD_REPORT ? null == (t = r.details) ? true : t.initialMessageId : null
   }
 }
 y(z, "displayName", "ChannelSectionStore"), y(z, "persistKey", "ChannelSectionStore2");
 let q = new z(Chunk570140.Z, {
-  CHANNEL_TOGGLE_MEMBERS_SECTION: x,
-  USER_PROFILE_SIDEBAR_TOGGLE_SECTION: k,
-  CHANNEL_TOGGLE_SUMMARIES_SECTION: M,
+  CHANNEL_TOGGLE_MEMBERS_SECTION: L,
+  USER_PROFILE_SIDEBAR_TOGGLE_SECTION: M,
+  CHANNEL_TOGGLE_SUMMARIES_SECTION: j,
   SIDEBAR_VIEW_CHANNEL: G,
-  SIDEBAR_VIEW_GUILD: j,
+  SIDEBAR_VIEW_GUILD: k,
   SIDEBAR_CREATE_THREAD: B,
   SIDEBAR_CLOSE: Y,
   SIDEBAR_CLOSE_GUILD: U,
-  CHANNEL_DELETE: V,
+  CHANNEL_DELETE: Z,
   CHANNEL_SELECT: K,
-  THREAD_CREATE: Z,
-  THREAD_DELETE: F
+  THREAD_CREATE: F,
+  THREAD_DELETE: V
 })

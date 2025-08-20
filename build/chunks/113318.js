@@ -1,7 +1,8 @@
-/** Chunk was on 48091 **/
-/** chunk id: 113318, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 113318, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => u
+  Z: () => d
 });
 var Chunk442837 = require("./442837.js"),
   Chunk201895 = require("./201895.js"),
@@ -12,21 +13,21 @@ var Chunk442837 = require("./442837.js"),
   Chunk66999 = require("./66999.js"),
   Chunk981631 = require("./981631.js");
 
-function u(e, t) {
+function d(e, t) {
   let n = (0, r.e7)([s.Z], () => s.Z.getChannel(t)),
     {
-      needSubscriptionToAccess: u
+      needSubscriptionToAccess: d
     } = (0, c.Z)(null == n ? true : n.id);
-  if (null == n || u) return null;
-  let m = n.isGuildVocal();
+  if (null == n || d) return null;
+  let f = n.isGuildVocal();
   return {
     navigateToChannel: () => {
-      m ? l.Z.handleVoiceConnect({
+      f ? a.Z.handleVoiceConnect({
         channel: n,
-        connected: o.Z.isInChannel(n.id),
+        connected: l.Z.isInChannel(n.id),
         needSubscriptionToAccess: false,
         routeDirectlyToChannel: true
-      }) : (0, a.uL)(d.Z5c.CHANNEL(e, n.id))
+      }) : (0, o.uL)(u.Z5c.CHANNEL(e, n.id))
     },
     ariaLabel: (0, i.ZP)({
       channel: n

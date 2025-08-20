@@ -1,5 +1,6 @@
-/** Chunk was on 35506 **/
-/** chunk id: 310696, original params: e,t,r (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 310696, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   outerContainer: "outerContainer__092f9",
   outerContainerGiftInventory: "outerContainerGiftInventory__092f9",

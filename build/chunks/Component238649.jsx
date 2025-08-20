@@ -1,12 +1,13 @@
-/** Chunk was on 66181 **/
-/** chunk id: 238649, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 238649, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => C
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk607070 = require("./607070.js"),
@@ -26,79 +27,80 @@ var Chunk951288 = require("./951288.js"),
   Chunk645616 = require("./645616.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk350169 = require("./350169.js");
-let T = Chunk647438.memo(Chunk647438.forwardRef((e, t) => {
-  let {
-    className: n,
-    subscriptionTier: r,
-    isEligibleForBogoPromotion: s
-  } = e, {
-    analyticsLocations: T
-  } = (0, u.ZP)(d.Z.PREMIUM_MARKETING_HERO_CTA), N = (0, p.Nx)(), I = (0, x.$)(), y = (0, g.Z)(), A = null != y, P = (0, l.e7)([c.Z], () => c.Z.useReducedMotion), {
-    visibilityPercentageRef: R,
-    visibilityPercentage: D
-  } = (0, j.E)(!P), Z = (0, l.e7)([m.Z], () => m.Z.affinities), w = !A && Z.length > 0;
-  return (0, i.jsx)(u.Gt, {
-    value: T,
-    children: (0, i.jsx)("div", {
-      ref: t,
-      className: a()(S.container, n),
-      "data-testid": "marketing-page-hero-header",
-      children: (0, i.jsx)("div", {
-        ref: R,
-        children: (0, i.jsxs)("div", {
-          className: S.contentContainer,
-          children: [(0, i.jsx)(O.Z, {
-            containerVisibilityPercentage: D
-          }), N && (0, i.jsx)("div", {
-            className: S.offerPillContainer,
-            children: (0, i.jsx)(C.Z, {
-              enablePremiumBrandRefresh: true
-            })
-          }), (0, i.jsx)("div", {
-            className: S.marketingPageTextContainer,
-            children: (0, i.jsx)(E.Z, {
-              children: v.intl.string(v.t["EW+VIS"])
-            })
-          }), (0, i.jsxs)("div", {
-            className: S.body,
-            children: [A && (0, i.jsx)("div", {
-              className: S.referrerAttributionContainer,
-              children: (0, i.jsx)(_.Z, {
-                referrer: y,
+let A = (e, t) => {
+    let {
+      className: n,
+      subscriptionTier: i,
+      isEligibleForBogoPromotion: a
+    } = e, {
+      analyticsLocations: A
+    } = (0, d.ZP)(u.Z.PREMIUM_MARKETING_HERO_CTA), C = (0, _.Nx)(), N = (0, E.$)(), R = (0, p.Z)(), P = null != R, w = (0, s.e7)([c.Z], () => c.Z.useReducedMotion), {
+      visibilityPercentageRef: D,
+      visibilityPercentage: x
+    } = (0, y.E)(!w), L = (0, s.e7)([f.Z], () => f.Z.affinities), j = !P && L.length > 0;
+    return (0, r.jsx)(d.Gt, {
+      value: A,
+      children: (0, r.jsx)("div", {
+        ref: t,
+        className: o()(S.container, n),
+        "data-testid": "marketing-page-hero-header",
+        children: (0, r.jsx)("div", {
+          ref: D,
+          children: (0, r.jsxs)("div", {
+            className: S.contentContainer,
+            children: [(0, r.jsx)(I.Z, {
+              containerVisibilityPercentage: x
+            }), C && (0, r.jsx)("div", {
+              className: S.offerPillContainer,
+              children: (0, r.jsx)(v.Z, {
                 enablePremiumBrandRefresh: true
               })
-            }), w && (0, i.jsx)("div", {
-              className: S.affinitiesContainer,
-              children: (0, i.jsx)(b.Z, {
-                textColor: "text-primary",
-                smallerText: false,
-                isApplicationHome: true,
-                enablePremiumBrandRefresh: true
+            }), (0, r.jsx)("div", {
+              className: S.marketingPageTextContainer,
+              children: (0, r.jsx)(O.Z, {
+                children: T.intl.string(T.t["EW+VIS"])
               })
-            }), (0, i.jsxs)("div", {
-              className: N ? S.singleButtonContainer : S.twoButtonContainer,
-              children: [(0, i.jsx)(f.Z, {
-                size: "md",
-                fullWidth: N,
-                hasActivePromotion: !!s,
-                subscriptionTier: r
-              }), !N && (0, i.jsx)(h.Z, {
-                variant: "secondary",
-                size: "md"
-              })]
-            }), (0, i.jsx)("div", {
-              className: S.descriptionContainer,
-              children: (0, i.jsx)(o.Text, {
-                color: "text-tertiary",
-                variant: "text-xs/medium",
-                children: v.intl.format(v.t.kt9wxs, {
-                  cheapestMonthlyPrice: I
+            }), (0, r.jsxs)("div", {
+              className: S.body,
+              children: [P && (0, r.jsx)("div", {
+                className: S.referrerAttributionContainer,
+                children: (0, r.jsx)(b.Z, {
+                  referrer: R,
+                  enablePremiumBrandRefresh: true
                 })
-              })
+              }), j && (0, r.jsx)("div", {
+                className: S.affinitiesContainer,
+                children: (0, r.jsx)(g.Z, {
+                  textColor: "text-primary",
+                  smallerText: false,
+                  isApplicationHome: true,
+                  enablePremiumBrandRefresh: true
+                })
+              }), (0, r.jsxs)("div", {
+                className: C ? S.singleButtonContainer : S.twoButtonContainer,
+                children: [(0, r.jsx)(m.Z, {
+                  size: "md",
+                  fullWidth: C,
+                  hasActivePromotion: !!a,
+                  subscriptionTier: i
+                }), !C && (0, r.jsx)(h.Z, {
+                  variant: "secondary",
+                  size: "md"
+                })]
+              }), (0, r.jsx)("div", {
+                className: S.descriptionContainer,
+                children: (0, r.jsx)(l.Text, {
+                  color: "text-tertiary",
+                  variant: "text-xs/medium",
+                  children: T.intl.format(T.t.kt9wxs, {
+                    cheapestMonthlyPrice: N
+                  })
+                })
+              })]
             })]
-          })]
+          })
         })
       })
     })
-  })
-}))
+  },
+  C = Chunk647438.memo(Chunk647438.forwardRef(A))

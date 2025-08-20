@@ -1,7 +1,7 @@
-/** Chunk was on 36499 **/
+/** Chunk was on 5665 **/
 /** chunk id: 901434, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => O
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -23,14 +23,14 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk427538 = require("./427538.js");
 let v = (e, t) => b.ZP.getName(e.getGuildId(), e.id, t.user),
-  j = function(e) {
+  O = function(e) {
     let {
       participants: t,
       channel: n,
       hasConnectPermission: l
-    } = e, b = (0, h.J)(n.guild_id), j = i.useCallback(() => {
+    } = e, b = (0, h.J)(n.guild_id), O = i.useCallback(() => {
       b ? (0, p.hk)(n.guild_id, () => u.default.selectVoiceChannel(n.id)) : u.default.selectVoiceChannel(n.id)
-    }, [n.id, n.guild_id, b]), O = t.filter(e => e.type === y.Ui.VOICE), E = 4 === O.length ? 2 : 3, S = (0, o.Wu)([d.Z], () => O.map(e => d.Z.getParticipant(n.id, e.id)).filter(g.lm), [n.id, O]);
+    }, [n.id, n.guild_id, b]), j = t.filter(e => e.type === y.Ui.VOICE), E = 4 === j.length ? 2 : 3, S = (0, o.Wu)([d.Z], () => j.map(e => d.Z.getParticipant(n.id, e.id)).filter(g.lm), [n.id, j]);
     return (0, r.jsxs)("div", {
       className: x.container,
       children: [(0, r.jsx)(m.Z, {}), (0, r.jsx)("div", {
@@ -57,15 +57,15 @@ let v = (e, t) => b.ZP.getName(e.getGuildId(), e.id, t.user),
           tag: "div",
           color: "header-secondary",
           variant: "heading-lg/normal",
-          children: 0 === O.length ? C.intl.string(C.t.FUVhyM) : 1 === O.length ? C.intl.formatToPlainString(C.t.EQwZlJ, {
-            a: v(n, O[0])
-          }) : 2 === O.length ? C.intl.formatToPlainString(C.t.zBcKoK, {
-            a: v(n, O[0]),
-            b: v(n, O[1])
-          }) : O.length > 2 ? C.intl.formatToPlainString(C.t["3AqFaG"], {
-            a: v(n, O[0]),
-            b: v(n, O[1]),
-            n: O.length - 2
+          children: 0 === j.length ? C.intl.string(C.t.FUVhyM) : 1 === j.length ? C.intl.formatToPlainString(C.t.EQwZlJ, {
+            a: v(n, j[0])
+          }) : 2 === j.length ? C.intl.formatToPlainString(C.t.zBcKoK, {
+            a: v(n, j[0]),
+            b: v(n, j[1])
+          }) : j.length > 2 ? C.intl.formatToPlainString(C.t["3AqFaG"], {
+            a: v(n, j[0]),
+            b: v(n, j[1]),
+            n: j.length - 2
           }) : true
         })
       }), (0, r.jsxs)("div", {
@@ -76,7 +76,7 @@ let v = (e, t) => b.ZP.getName(e.getGuildId(), e.id, t.user),
             [x.roundButton]: false
           }),
           color: l ? s.zx.Colors.WHITE : s.zx.Colors.PRIMARY,
-          onClick: j,
+          onClick: O,
           size: s.zx.Sizes.MEDIUM,
           children: l ? C.intl.string(C.t["7vb2cX"]) : C.intl.string(C.t.TVBCKS)
         }), (0, r.jsx)(_.e, {

@@ -1,14 +1,15 @@
-/** Chunk was on 26434 **/
-/** chunk id: 33803, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 33803, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => ee
+  Z: () => ei
 }), require("./642613.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk913527 = require("./913527.js"),
-  s = require.n(Chunk913527),
+  l = require.n(Chunk913527),
   Chunk91192 = require("./91192.jsx"),
   Chunk722770 = require("./722770.js"),
   Chunk442837 = require("./442837.js"),
@@ -44,6 +45,15 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk545869 = require("./545869.js");
 
+function F(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
 function H(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
@@ -51,76 +61,76 @@ function H(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      var r;
-      r = n[t], t in e ? Object.defineProperty(e, t, {
-        value: r,
-        enumerable: true,
-        configurable: true,
-        writable: true
-      }) : e[t] = r
+      F(e, t, n[t])
     })
   }
   return e
 }
 
-function V(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
-    }
-    return n
-  })(Object(t)).forEach(function(n) {
+function Y(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function W(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : Y(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function z(e, t) {
+function K(e, t) {
   if (null == e) return {};
-  var n, r, i = function(e, t) {
-    if (null == e) return {};
-    var n, r, i = {},
-      l = Object.keys(e);
-    for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-    return i
-  }(e, t);
+  var n, r, i = z(e, t);
   if (Object.getOwnPropertySymbols) {
-    var l = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
 
-function W(e, t) {
+function z(e, t) {
+  if (null == e) return {};
+  var n, r, i = {},
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+  return i
+}
+
+function q(e, t) {
   let {
     popouts: n,
     selected: r,
-    setPopout: l
-  } = (0, R.Z)(e.id, M.d$), {
+    setPopout: a
+  } = (0, L.Z)(e.id, k.d$), {
     usernameProfile: o,
-    avatarProfile: a
-  } = n, s = (0, Z.wq)(e.author.id, t.id), c = (0, Z.RN)(e.author.id, t.id, e.id), u = (0, Z.XO)(e, t, o, l);
+    avatarProfile: s
+  } = n, l = (0, x.wq)(e.author.id, t.id), c = (0, x.RN)(e.author.id, t.id, e.id), u = (0, x.XO)(e, t, o, a);
   return {
     selected: r,
-    onContextMenu: s,
+    onContextMenu: l,
     onContextMenuModerateUser: c,
     onClickUsername: u,
-    onClickAvatar: (0, Z.R9)(a, l),
-    onPopoutRequestClose: i.useCallback(() => l({
+    onClickAvatar: (0, x.R9)(s, a),
+    onPopoutRequestClose: i.useCallback(() => a({
       usernameProfile: false,
       avatarProfile: false,
       referencedUsernameProfile: false
-    }), [l]),
-    renderPopout: w.Z,
-    showAvatarPopout: a,
+    }), [a]),
+    renderPopout: D.Z,
+    showAvatarPopout: s,
     showUsernamePopout: o
   }
 }
 
-function Y(e, t, n) {
+function X(e, t, n) {
   return i.useMemo(() => {
-    if (null != t && null != n) return i => (0, r.jsx)(O.Z, V(H({}, i), {
+    if (null != t && null != n) return i => (0, r.jsx)(v.Z, W(H({}, i), {
       user: t,
       currentUser: n,
       guildId: e.guild_id,
@@ -129,392 +139,396 @@ function Y(e, t, n) {
   }, [e, t, n])
 }
 
-function K(e) {
+function Q(e) {
   let {
     children: t,
     className: n,
     compact: i
   } = e;
   return (0, r.jsx)("div", {
-    className: o()(G.footerContainer, n, {
-      [G.compact]: i
+    className: o()(V.footerContainer, n, {
+      [V.compact]: i
     }),
     children: t
   })
 }
 
-function X(e) {
+function J(e) {
   let {
     children: t,
     className: n
   } = e;
   return (0, r.jsx)("div", {
-    className: o()(G.annotationRow, n),
+    className: o()(V.annotationRow, n),
     children: t
   })
 }
 
-function q(e, t) {
+function $(e, t) {
   switch (e) {
-    case _.d.DELETE_USER_MESSAGE:
-      return (0, r.jsx)(p.XHJ, H({
+    case m.d.DELETE_USER_MESSAGE:
+      return (0, r.jsx)(f.XHJ, H({
         size: "xs",
         color: "currentColor",
-        className: G.alertActionIcon
+        className: V.alertActionIcon
       }, t));
-    case _.d.SET_COMPLETED:
-      return (0, r.jsx)(p.dz2, H({
+    case m.d.SET_COMPLETED:
+      return (0, r.jsx)(f.dz2, H({
         size: "xs",
         color: "currentColor",
-        className: o()(G.alertActionIcon, G.alertActionSetCompletedIcon)
+        className: o()(V.alertActionIcon, V.alertActionSetCompletedIcon)
       }, t));
-    case _.d.SUBMIT_FEEDBACK:
-      return (0, r.jsx)(p.U65, H({
+    case m.d.SUBMIT_FEEDBACK:
+      return (0, r.jsx)(f.U65, H({
         size: "xs",
         color: "currentColor",
-        className: G.alertActionIcon
+        className: V.alertActionIcon
       }, t));
     default:
       return null
   }
 }
 
-function J(e) {
+function ee(e, t, n) {
+  var r;
+  let i = null != (r = S.ZP.getNickname(n, null, t)) ? r : A.ZP.getUserTag(t),
+    a = l()(e.ts),
+    o = "".concat(i, " ").concat(a.fromNow());
+  try {
+    switch (parseInt(e.actionType)) {
+      case m.d.DELETE_USER_MESSAGE:
+        return Z.intl.formatToPlainString(Z.t.BtKE9v, {
+          userName: i,
+          timestamp: a.fromNow()
+        });
+      case m.d.SET_COMPLETED:
+        return Z.intl.formatToPlainString(Z.t.dyo9UV, {
+          userName: i,
+          timestamp: a.fromNow()
+        });
+      case m.d.SUBMIT_FEEDBACK:
+        return Z.intl.formatToPlainString(Z.t["C9/kIC"], {
+          userName: i,
+          timestamp: a.fromNow()
+        });
+      default:
+        return o
+    }
+  } catch (e) {
+    return o
+  }
+}
+
+function et(e) {
   let {
     alertAction: t,
     guildId: n
-  } = e, i = (0, d.e7)([x.default], () => x.default.getUser(t.actor), [t.actor]);
+  } = e, i = (0, d.e7)([T.default], () => T.default.getUser(t.actor), [t.actor]);
   try {
     let e = parseInt(t.actionType);
-    if (null == i) return q(e, {});
-    let l = function(e, t, n) {
-      var r;
-      let i = null != (r = j.ZP.getNickname(n, null, t)) ? r : I.ZP.getUserTag(t),
-        l = s()(e.ts),
-        o = "".concat(i, " ").concat(l.fromNow());
-      try {
-        switch (parseInt(e.actionType)) {
-          case _.d.DELETE_USER_MESSAGE:
-            return B.intl.formatToPlainString(B.t.BtKE9v, {
-              userName: i,
-              timestamp: l.fromNow()
-            });
-          case _.d.SET_COMPLETED:
-            return B.intl.formatToPlainString(B.t.dyo9UV, {
-              userName: i,
-              timestamp: l.fromNow()
-            });
-          case _.d.SUBMIT_FEEDBACK:
-            return B.intl.formatToPlainString(B.t["C9/kIC"], {
-              userName: i,
-              timestamp: l.fromNow()
-            });
-          default:
-            return o
-        }
-      } catch (e) {
-        return o
-      }
-    }(t, i, n);
-    return (0, r.jsx)(p.ua7, {
-      text: l,
-      children: t => q(e, t)
+    if (null == i) return $(e, {});
+    let a = ee(t, i, n);
+    return (0, r.jsx)(f.ua7, {
+      text: a,
+      children: t => $(e, t)
     })
   } catch (e) {
     return null
   }
 }
 
-function Q(e) {
+function en(e) {
   let {
     alertActionsExecution: t,
     guildId: n
   } = e, i = Object.values(t.actions).sort((e, t) => e.actionType < t.actionType ? 1 : false);
   return (0, r.jsx)("div", {
-    className: G.alertActionsIconContainer,
-    children: i.map(e => (0, r.jsx)(J, {
+    className: V.alertActionsIconContainer,
+    children: i.map(e => (0, r.jsx)(et, {
       alertAction: e,
       guildId: n
     }, e.actionType))
   })
 }
-let $ = Chunk647438.memo(function(e) {
+let er = Chunk647438.memo(function(e) {
   let t, {
       message: n,
       channel: i,
-      embedChannel: l,
+      embedChannel: a,
       compact: o,
-      interactionUserId: a
+      interactionUserId: s
     } = e,
-    s = W(n, i),
-    c = Y(i, n.author),
-    u = (0, T.ZP)(n),
-    d = (0, A.CF)(H({
+    l = q(n, i),
+    c = X(i, n.author),
+    u = (0, N.ZP)(n),
+    d = (0, w.CF)(H({
       message: n,
       channel: i,
       author: u,
       guildId: null == i ? true : i.guild_id,
       compact: o
-    }, s), c),
-    m = x.default.getUser(a),
-    f = W(n, i),
-    g = Y(i, m, x.default.getCurrentUser());
-  if (null != m) {
-    let e = (0, T.ij)(m, i),
-      r = (0, A.CF)(H({
+    }, l), c),
+    _ = () => d,
+    p = T.default.getUser(s),
+    h = q(n, i),
+    m = X(i, p, T.default.getCurrentUser());
+  if (null != p) {
+    let e = (0, N.ij)(p, i),
+      r = (0, w.CF)(H({
         message: n,
         channel: i,
         author: e,
         guildId: null == i ? true : i.guild_id,
         compact: o
-      }, f), g);
+      }, h), m);
     t = () => r
   }
-  return (0, r.jsx)(p.Text, {
+  let E = () => (0, r.jsx)("div", {
+    className: V.channelNameContainer,
+    children: (0, r.jsx)(R.Z, {
+      channel: a,
+      className: V.channelName,
+      openChatWithoutConnecting: true
+    })
+  });
+  return (0, r.jsx)(f.Text, {
     variant: "text-md/normal",
     color: "header-primary",
     tag: "span",
-    className: G.spanCorrection,
-    children: (0, h.Mq)(n, l, () => (0, r.jsx)("div", {
-      className: G.channelNameContainer,
-      children: (0, r.jsx)(P.Z, {
-        channel: l,
-        className: G.channelName,
-        openChatWithoutConnecting: true
-      })
-    }), () => d, t)
+    className: V.spanCorrection,
+    children: (0, g.Mq)(n, a, E, _, t)
   })
 });
 
-function ee(e) {
+function ei(e) {
   var t;
   let {
     id: n,
-    compact: l,
-    message: a,
-    channel: s
+    compact: a,
+    message: s,
+    channel: l
   } = e, {
-    avatarSrc: O,
+    avatarSrc: v,
     eventHandlers: {
-      onMouseEnter: x,
-      onMouseLeave: j
+      onMouseEnter: T,
+      onMouseLeave: S
     }
-  } = (0, D.m)(true), I = (0, c.JA)(null != n ? n : ""), {
-    onFocus: T
-  } = I, P = z(I, ["onFocus"]), {
-    isFocused: w,
-    handleFocus: R,
-    handleBlur: M
-  } = (0, Z.bb)(T), Y = (0, d.e7)([f.Z], () => f.Z.keyboardModeEnabled), q = (0, d.e7)([y.Z], () => y.Z.can(k.Plq.MANAGE_MESSAGES, s), [s]), {
-    ruleName: J,
-    embedChannel: ee,
-    decisionId: et,
-    keywordMatchedContent: en,
-    keyword: er,
+  } = (0, j.m)(true), A = (0, c.JA)(null != n ? n : ""), {
+    onFocus: N
+  } = A, R = K(A, ["onFocus"]), {
+    isFocused: D,
+    handleFocus: L,
+    handleBlur: k
+  } = (0, x.bb)(N), F = (0, d.e7)([p.Z], () => p.Z.keyboardModeEnabled), Y = (0, d.e7)([I.Z], () => I.Z.can(U.Plq.MANAGE_MESSAGES, l), [l]), {
+    ruleName: z,
+    embedChannel: X,
+    decisionId: $,
+    keywordMatchedContent: ee,
+    keyword: et,
     content: ei,
-    flaggedMessageId: el,
+    flaggedMessageId: ea,
     timeoutDuration: eo,
-    decisionReason: ea,
-    alertActionsExecution: es,
+    decisionReason: es,
+    alertActionsExecution: el,
     quarantineType: ec,
     interactionUserId: eu
-  } = (0, h.ZP)(a), ed = i.useMemo(() => (0, S.k$)(ei, en, s.id), [ei, en, s]), ep = W(a, s), {
-    selected: em
-  } = ep, ef = z(ep, ["selected"]), eg = i.useCallback(() => {
-    (0, b._s)(a.id, ei, et, s)
-  }, [a.id, ei, et, s]), e_ = i.useCallback(e => {
-    null != el && null != ee && (e.stopPropagation(), e.preventDefault(), (0, C.Z)(k.Z5c.CHANNEL(null == ee ? true : ee.guild_id, null == ee ? true : ee.id, el)))
-  }, [ee, el]), eh = i.useCallback(e => {
-    null != ee && (m.default.selectChannel({
-      guildId: ee.guild_id,
+  } = (0, g.ZP)(s), ed = i.useMemo(() => (0, C.k$)(ei, ee, l.id), [ei, ee, l]), ef = q(s, l), {
+    selected: e_
+  } = ef, ep = K(ef, ["selected"]), eh = e_ || F && D, em = e => {
+    var t;
+    null == (t = ep.onContextMenuModerateUser) || t.call(ep, e)
+  }, eg = i.useCallback(() => {
+    (0, E._s)(s.id, ei, $, l)
+  }, [s.id, ei, $, l]), eE = i.useCallback(e => {
+    null != ea && null != X && (e.stopPropagation(), e.preventDefault(), (0, y.Z)(U.Z5c.CHANNEL(null == X ? true : X.guild_id, null == X ? true : X.id, ea)))
+  }, [X, ea]), eb = i.useCallback(e => {
+    null != X && (_.default.selectChannel({
+      guildId: X.guild_id,
       channelId: e,
-      messageId: a.id
-    }), (0, v.Kh)(e))
-  }, [a, ee]), eb = i.useCallback(() => {
-    (0, E.Xx)(a.id, s, _.d.DELETE_USER_MESSAGE)
-  }, [s, a.id]), eE = (0, F.L9)(Number(eo)), eC = null != ea, ev = q && null != el && (null == es || !es.actions.hasOwnProperty(_.d.DELETE_USER_MESSAGE)), eO = a.embeds.length > 0 ? null == (t = a.embeds[0].fields.find(e => "channel_id" === e.rawName)) ? true : t.rawValue : null, ey = null != eO;
+      messageId: s.id
+    }), (0, O.Kh)(e))
+  }, [s, X]), ey = i.useCallback(() => {
+    (0, b.Xx)(s.id, l, m.d.DELETE_USER_MESSAGE)
+  }, [l, s.id]), eO = (0, B.L9)(Number(eo)), ev = null != es, eI = Y && null != ea && (null == el || !el.actions.hasOwnProperty(m.d.DELETE_USER_MESSAGE)), eT = s.embeds.length > 0 ? null == (t = s.embeds[0].fields.find(e => "channel_id" === e.rawName)) ? true : t.rawValue : null, eS = null != eT;
   return (0, r.jsx)("div", {
-    onMouseEnter: x,
-    onMouseLeave: j,
-    children: (0, r.jsx)(L.Z, {
-      className: o()(G.mainContainer, {
-        [G.compact]: l
+    onMouseEnter: T,
+    onMouseLeave: S,
+    children: (0, r.jsx)(M.Z, {
+      className: o()(V.mainContainer, {
+        [V.compact]: a
       }),
-      iconNode: l ? null : (0, r.jsx)(D.S, {
-        src: O
+      iconNode: a ? null : (0, r.jsx)(j.S, {
+        src: v
       }),
-      iconContainerClassName: G.iconContainer,
-      compact: l,
+      iconContainerClassName: V.iconContainer,
+      compact: a,
       children: (0, r.jsxs)("div", {
-        className: o()(G.content, {
-          [G.compact]: l
+        className: o()(V.content, {
+          [V.compact]: a
         }),
-        children: [(0, r.jsx)(A.nD, {
-          message: a,
-          messageClassname: G.spanCorrection,
-          className: o()(G.usernameContainer, G.spanCorrection, {
-            [G.compact]: l
+        children: [(0, r.jsx)(w.nD, {
+          message: s,
+          messageClassname: V.spanCorrection,
+          className: o()(V.usernameContainer, V.spanCorrection, {
+            [V.compact]: a
           }),
           username: (0, r.jsxs)("div", {
-            className: G.spanCorrection,
-            children: [(0, r.jsx)(p.Text, {
+            className: V.spanCorrection,
+            children: [(0, r.jsx)(f.Text, {
               variant: "text-md/normal",
               color: "text-brand",
               tag: "span",
-              className: G.username,
-              children: B.intl.string(B.t.hG1StL)
-            }), (0, r.jsx)(g.Z, {
-              type: U.Hb.SYSTEM_DM,
-              className: G.systemTag
-            }), (0, r.jsx)($, {
-              message: a,
-              channel: s,
-              embedChannel: ee,
-              compact: l,
+              className: V.username,
+              children: Z.intl.string(Z.t.hG1StL)
+            }), (0, r.jsx)(h.Z, {
+              type: G.Hb.SYSTEM_DM,
+              className: V.systemTag
+            }), (0, r.jsx)(er, {
+              message: s,
+              channel: l,
+              embedChannel: X,
+              compact: a,
               interactionUserId: eu
             })]
           }),
-          compact: l,
+          compact: a,
           showTimestamp: true
         }), (0, r.jsx)("div", {
-          className: o()(G.messageContent, {
-            [G.compact]: l
+          className: o()(V.messageContent, {
+            [V.compact]: a
           }),
-          children: (0, r.jsx)(N.Z, V(H({}, P), {
-            message: a,
-            channel: ee,
+          children: (0, r.jsx)(P.Z, W(H({}, R), {
+            message: s,
+            channel: X,
             content: ed,
-            compact: l,
+            compact: a,
             withFooter: true,
             hideTimestamp: true,
-            className: o()(G.embedCard, {
-              [G.compact]: l,
-              [G.selected]: em || Y && w,
-              [G.isClickable]: null != el && null != ee
+            className: o()(V.embedCard, {
+              [V.compact]: a,
+              [V.selected]: eh,
+              [V.isClickable]: null != ea && null != X
             }),
             childrenAccessories: (0, r.jsxs)(r.Fragment, {
               children: [(0, r.jsxs)("div", {
-                className: G.centeredRowContainer,
-                children: [null != er && (0, r.jsxs)(r.Fragment, {
-                  children: [(0, r.jsx)(p.Text, {
+                className: V.centeredRowContainer,
+                children: [null != et && (0, r.jsxs)(r.Fragment, {
+                  children: [(0, r.jsx)(f.Text, {
                     variant: "text-xs/medium",
                     color: "text-muted",
                     tag: "span",
-                    children: B.intl.format(B.t.SYIUTU, {
-                      keyword: er
+                    children: Z.intl.format(Z.t.SYIUTU, {
+                      keyword: et
                     })
                   }), (0, r.jsx)("div", {
-                    className: o()(G.dot, G.dotMargin)
+                    className: o()(V.dot, V.dotMargin)
                   })]
-                }), null != J && (0, r.jsx)(p.Text, {
+                }), null != z && (0, r.jsx)(f.Text, {
                   variant: "text-xs/medium",
                   color: "text-muted",
                   tag: "span",
-                  children: B.intl.format(B.t.ZoOyKC, {
-                    ruleName: J
+                  children: Z.intl.format(Z.t.ZoOyKC, {
+                    ruleName: z
                   })
-                }), null != eE && (0, r.jsxs)(r.Fragment, {
+                }), null != eO && (0, r.jsxs)(r.Fragment, {
                   children: [(0, r.jsx)("div", {
-                    className: o()(G.dot, G.dotMargin)
-                  }), (0, r.jsx)(p.Text, {
+                    className: o()(V.dot, V.dotMargin)
+                  }), (0, r.jsx)(f.Text, {
                     variant: "text-xs/medium",
                     color: "text-muted",
                     tag: "span",
-                    className: G.__invalid_footerText,
-                    children: B.intl.format(B.t["3LYql5"], {
-                      duration: eE
+                    className: V.__invalid_footerText,
+                    children: Z.intl.format(Z.t["3LYql5"], {
+                      duration: eO
                     })
                   })]
                 }), null != ec && (0, r.jsxs)(r.Fragment, {
                   children: [(0, r.jsx)("div", {
-                    className: o()(G.dot, G.dotMargin)
-                  }), (0, r.jsx)(p.Text, {
+                    className: o()(V.dot, V.dotMargin)
+                  }), (0, r.jsx)(f.Text, {
                     variant: "text-xs/medium",
                     color: "text-muted",
                     tag: "span",
-                    className: G.titleCase,
-                    children: B.intl.format(B.t["26bB2N"], {
-                      reason: (0, h.hU)(ec)
+                    className: V.titleCase,
+                    children: Z.intl.format(Z.t["26bB2N"], {
+                      reason: (0, g.hU)(ec)
                     })
                   })]
                 })]
-              }), eC ? (0, r.jsx)(X, {
-                children: (0, r.jsx)(p.Text, {
+              }), ev ? (0, r.jsx)(J, {
+                children: (0, r.jsx)(f.Text, {
                   variant: "text-xs/medium",
                   color: "text-default",
                   tag: "span",
-                  children: ea
+                  children: es
                 })
               }) : null]
             }),
-            popoutProps: ef,
+            popoutProps: ep,
             zalgo: true,
-            onFocus: R,
-            onBlur: M,
-            onClick: e_
+            onFocus: L,
+            onBlur: k,
+            onClick: eE
           }))
-        }), (0, r.jsx)(K, {
-          compact: l,
+        }), (0, r.jsx)(Q, {
+          compact: a,
           children: (0, r.jsxs)("div", {
-            className: o()(G.centeredRowContainer, G.buttonContainer, {
-              [G.compact]: l
+            className: o()(V.centeredRowContainer, V.buttonContainer, {
+              [V.compact]: a
             }),
             children: [(0, r.jsxs)("div", {
-              className: G.footerAction,
-              children: [(0, r.jsx)(p.b7C, {
+              className: V.footerAction,
+              children: [(0, r.jsx)(f.b7C, {
                 size: "xs",
                 color: u.Z.BRAND,
-                className: G.footerIcon
-              }), (0, r.jsx)(p.Avr, {
+                className: V.footerIcon
+              }), (0, r.jsx)(f.Avr, {
                 variant: "primary",
                 size: "sm",
                 textVariant: "text-xs/normal",
-                text: B.intl.string(B.t.DEoVWV),
-                onClick: e => {
-                  var t;
-                  null == (t = ef.onContextMenuModerateUser) || t.call(ef, e)
-                }
+                text: Z.intl.string(Z.t.DEoVWV),
+                onClick: em
               })]
-            }), ey ? (0, r.jsxs)(r.Fragment, {
+            }), eS ? (0, r.jsxs)(r.Fragment, {
               children: [(0, r.jsx)("div", {
-                className: G.dot
+                className: V.dot
               }), (0, r.jsx)("div", {
-                className: G.footerAction,
-                children: (0, r.jsx)(p.Avr, {
-                  onClick: () => eh(eO),
+                className: V.footerAction,
+                children: (0, r.jsx)(f.Avr, {
+                  onClick: () => eb(eT),
                   variant: "primary",
                   size: "sm",
                   textVariant: "text-xs/normal",
-                  text: B.intl.string(B.t.jtkj09)
+                  text: Z.intl.string(Z.t.jtkj09)
                 })
               })]
             }) : null, (0, r.jsx)("div", {
-              className: G.dot
+              className: V.dot
             }), (0, r.jsx)("div", {
-              className: G.footerAction,
-              children: (0, r.jsx)(p.Avr, {
+              className: V.footerAction,
+              children: (0, r.jsx)(f.Avr, {
                 onClick: eg,
                 variant: "primary",
                 size: "sm",
                 textVariant: "text-xs/normal",
-                text: B.intl.string(B.t["94JbMz"])
+                text: Z.intl.string(Z.t["94JbMz"])
               })
-            }), ev ? (0, r.jsxs)(r.Fragment, {
+            }), eI ? (0, r.jsxs)(r.Fragment, {
               children: [(0, r.jsx)("div", {
-                className: G.dot
+                className: V.dot
               }), (0, r.jsx)("div", {
-                className: G.footerAction,
-                children: (0, r.jsx)(p.Avr, {
-                  onClick: eb,
+                className: V.footerAction,
+                children: (0, r.jsx)(f.Avr, {
+                  onClick: ey,
                   variant: "primary",
                   size: "sm",
                   textVariant: "text-xs/normal",
-                  text: B.intl.string(B.t["3A52tb"])
+                  text: Z.intl.string(Z.t["3A52tb"])
                 })
               })]
-            }) : null, null != es ? (0, r.jsx)(Q, {
-              alertActionsExecution: es,
-              guildId: s.guild_id
+            }) : null, null != el ? (0, r.jsx)(en, {
+              alertActionsExecution: el,
+              guildId: l.guild_id
             }) : null]
           })
         })]

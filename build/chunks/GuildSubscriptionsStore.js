@@ -52,11 +52,11 @@ function A(e, t) {
   })
 }
 
-function N(e, t) {
-  return S.subscribeToGuild(e), null != t && p.ZP.getSection(t) === I.ULH.MEMBERS && C(e, t, c.KV)
+function C(e, t) {
+  return S.subscribeToGuild(e), null != t && p.ZP.getSection(t) === I.ULH.MEMBERS && N(e, t, c.KV)
 }
 
-function C(e, t, n) {
+function N(e, t, n) {
   if (t === _.oL) return S.subscribeChannel(e, t, n);
   let r = h.Z.getChannel(t);
   if (null == r) returnfalse;
@@ -70,7 +70,7 @@ function R(e) {
   } = e;
   "CONNECTION_OPEN" === t && A(true, false);
   let n = v.Z.getGuildId();
-  null != n && N(n, O.Z.getChannelId(n));
+  null != n && C(n, O.Z.getChannelId(n));
   let r = {};
   S.forEach(e => {
     null == E.Z.getGuild(e) ? S.clearWithoutFlushing(e, true) : r[e] = S.get(e)
@@ -96,21 +96,21 @@ function D() {
   S.reset()
 }
 
-function L(e) {
+function x(e) {
   let {
     guild: t
   } = e;
-  t.id === v.Z.getGuildId() && Z()
+  t.id === v.Z.getGuildId() && F()
 }
 
-function x(e) {
+function L(e) {
   let {
     guild: t
   } = e;
   S.clearWithoutFlushing(t.id, true)
 }
 
-function M(e) {
+function j(e) {
   let {
     guildId: t,
     userIds: n
@@ -120,7 +120,7 @@ function M(e) {
   }), false
 }
 
-function k(e) {
+function M(e) {
   let {
     guildId: t,
     userIds: n
@@ -130,7 +130,7 @@ function k(e) {
   }), false
 }
 
-function j(e) {
+function k(e) {
   let {
     guildId: t
   } = e;
@@ -157,7 +157,15 @@ function B(e) {
     channelId: n,
     ranges: r
   } = e;
-  return C(t, n, r)
+  return N(t, n, r)
+}
+
+function Z(e) {
+  let {
+    guildId: t,
+    channelId: n
+  } = e;
+  return C(t, n)
 }
 
 function V(e) {
@@ -165,19 +173,11 @@ function V(e) {
     guildId: t,
     channelId: n
   } = e;
-  return N(t, n)
+  return !m.Z.isUnavailable(t) && C(t, n)
 }
 
-function F(e) {
-  let {
-    guildId: t,
-    channelId: n
-  } = e;
-  return !m.Z.isUnavailable(t) && N(t, n)
-}
-
-function Z() {
-  return N(Chunk914010.Z.getGuildId(), Chunk944486.Z.getChannelId())
+function F() {
+  return C(Chunk914010.Z.getGuildId(), Chunk944486.Z.getChannelId())
 }
 
 function H(e) {
@@ -222,7 +222,7 @@ function K(e) {
 }
 class z extends(i = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk592125.Z, Chunk430824.Z, Chunk914010.Z, Chunk944486.Z, Chunk19780.Z, Chunk314897.default, Chunk433355.ZP, Chunk353926.Z), this.syncWith([Chunk768419.Z], W), this.syncWith([Chunk433355.ZP], Z)
+    this.waitFor(Chunk592125.Z, Chunk430824.Z, Chunk914010.Z, Chunk944486.Z, Chunk19780.Z, Chunk314897.default, Chunk433355.ZP, Chunk353926.Z), this.syncWith([Chunk768419.Z], W), this.syncWith([Chunk433355.ZP], F)
   }
   getSubscribedThreadIds() {
     return S.getSubscribedThreadIds()
@@ -248,19 +248,19 @@ let q = new z(Chunk570140.Z, {
   CONNECTION_CLOSED: P,
   IDLE: w,
   LOGOUT: D,
-  VOICE_CHANNEL_SELECT: F,
-  CHANNEL_SELECT: F,
-  GUILD_CREATE: L,
-  GUILD_DELETE: x,
-  GUILD_SUBSCRIPTIONS_MEMBERS_ADD: M,
-  GUILD_SUBSCRIPTIONS_MEMBERS_REMOVE: k,
-  GUILD_SUBSCRIPTIONS_ADD_MEMBER_UPDATES: j,
+  VOICE_CHANNEL_SELECT: V,
+  CHANNEL_SELECT: V,
+  GUILD_CREATE: x,
+  GUILD_DELETE: L,
+  GUILD_SUBSCRIPTIONS_MEMBERS_ADD: j,
+  GUILD_SUBSCRIPTIONS_MEMBERS_REMOVE: M,
+  GUILD_SUBSCRIPTIONS_ADD_MEMBER_UPDATES: k,
   GUILD_SUBSCRIPTIONS_REMOVE_MEMBER_UPDATES: U,
   GUILD_SUBSCRIPTIONS_CHANNEL: B,
   GUILD_SUBSCRIPTIONS: G,
-  CHANNEL_PRELOAD: V,
+  CHANNEL_PRELOAD: Z,
   INBOX_OPEN: K,
   THREAD_UPDATE: H,
   THREAD_DELETE: Y,
-  THREAD_LIST_SYNC: Z
+  THREAD_LIST_SYNC: F
 })

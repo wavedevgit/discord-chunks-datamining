@@ -30,7 +30,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk88785 = require("./88785.js");
 
-function C(e) {
+function N(e) {
   let {
     user: t,
     categories: n,
@@ -40,7 +40,7 @@ function C(e) {
     initialSelectedDecoration: E,
     initialSelectedDecorationId: b,
     isTryItOutFlow: T,
-    guild: C
+    guild: N
   } = e, {
     pendingAvatarDecoration: R,
     setPendingAvatarDecoration: P,
@@ -48,76 +48,76 @@ function C(e) {
   } = (0, g.Z)({
     analyticsLocations: l,
     isTryItOut: T,
-    guildId: null == C ? true : C.id
-  }), [D, L] = i.useState(() => {
+    guildId: null == N ? true : N.id
+  }), [D, x] = i.useState(() => {
     var e, t;
     if (null != E) return E;
     let r = (0, u.iC)(a, n);
     return null != b ? null != (e = r.find(e => e.id === b)) ? e : null : true !== R ? R : null == w ? null : null != (t = r.find(e => (0, O.sr)(e, w))) ? t : null
   }), {
-    product: x,
-    purchase: M
-  } = (0, d.Z)(null == D ? true : D.skuId), k = y.ZP.canUseCollectibles(t), j = i.useRef(null), U = (0, _.Z)(l), G = (0, O.sr)(D, true === R ? w : R), B = e => {
-    L(e), null != e && U(e)
-  }, V = () => {
+    product: L,
+    purchase: j
+  } = (0, d.Z)(null == D ? true : D.skuId), M = y.ZP.canUseCollectibles(t), k = i.useRef(null), U = (0, _.Z)(l), G = (0, O.sr)(D, true === R ? w : R), B = e => {
+    x(e), null != e && U(e)
+  }, Z = () => {
     P(D), f()
-  }, F = i.useCallback(e => {
+  }, V = i.useCallback(e => {
     f(), (0, c.mK)({
       analyticsLocations: l,
       analyticsSource: s.Z.EDIT_AVATAR_DECORATION_MODAL,
       initialProductSkuId: e
     })
-  }, [l, f]), Z = (0, p.M)(), H = Z && (0, u.G1)(x), Y = () => null != M && (!(0, u.qS)(M) || k) || null === D ? (0, r.jsx)(o.zxk, {
+  }, [l, f]), F = (0, p.M)(), H = F && (0, u.G1)(L), Y = () => null != j && (!(0, u.qS)(j) || M) || null === D ? (0, r.jsx)(o.zxk, {
     variant: "primary",
     text: A.intl.string(A.t.Jh8fJy),
-    onClick: V,
+    onClick: Z,
     disabled: G
-  }) : null == M && (k || !(0, u.G1)(x)) ? (0, r.jsx)(o.zxk, {
+  }) : null == j && (M || !(0, u.G1)(L)) ? (0, r.jsx)(o.zxk, {
     variant: "primary",
-    onClick: () => F(null == x ? true : x.skuId),
+    onClick: () => V(null == L ? true : L.skuId),
     text: A.intl.string(A.t.fYfGgI)
   }) : (0, r.jsx)(m.Z, {
     subscriptionTier: S.Si.TIER_2,
-    showGradient: Z,
+    showGradient: F,
     textOptions: {
-      textOverride: y.ZP.isPremium(t) ? A.intl.string(A.t.KXLX7u) : Z ? A.intl.string(A.t.pj0XBA) : A.intl.string(A.t.mr4K7O)
+      textOverride: y.ZP.isPremium(t) ? A.intl.string(A.t.KXLX7u) : F ? A.intl.string(A.t.pj0XBA) : A.intl.string(A.t.mr4K7O)
     }
   });
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(o.xBx, {
       "data-migration-pending": true,
       separator: false,
-      className: N.modalHeader,
+      className: C.modalHeader,
       children: [(0, r.jsx)(o.X6q, {
         variant: "heading-lg/semibold",
         children: A.intl.string(A.t.HykynZ)
       }), (0, r.jsx)(o.olH, {
         "data-migration-pending": true,
-        className: N.modalCloseButton,
+        className: C.modalCloseButton,
         onClick: f
       })]
     }), (0, r.jsxs)(o.hzk, {
       "data-migration-pending": true,
-      className: N.modalContent,
+      className: C.modalContent,
       scrollbarType: "none",
       children: [(0, r.jsx)(I.Z, {
         user: t,
-        guild: C,
+        guild: N,
         pendingAvatarDecoration: D,
-        selectedAvatarDecorationRef: j,
+        selectedAvatarDecorationRef: k,
         onSelect: B,
-        onOpenShop: F
+        onOpenShop: V
       }), (0, r.jsx)(v.Z, {
-        className: N.modalPreview,
+        className: C.modalPreview,
         user: t,
-        guildId: null == C ? true : C.id,
+        guildId: null == N ? true : N.id,
         avatarDecorationOverride: D
       })]
     }), (0, r.jsxs)(o.mzw, {
       "data-migration-pending": true,
-      className: N.modalFooter,
+      className: C.modalFooter,
       children: [Y(), H ? (0, r.jsx)(h.Z, {
-        product: x,
+        product: L,
         onSecondaryClick: f
       }) : (0, r.jsx)(o.zxk, {
         variant: "secondary",
@@ -157,14 +157,14 @@ function R(e) {
     value: g,
     children: (0, r.jsx)(o.Y0X, {
       transitionState: t,
-      className: N.modal,
+      className: C.modal,
       size: S ? o.CgR.DYNAMIC : o.CgR.MEDIUM,
       parentComponent: "AvatarDecorationModal",
       "data-migration-pending": true,
       children: S ? (0, r.jsx)(o.$jN, {
-        className: N.spinner,
+        className: C.spinner,
         type: o.$jN.Type.SPINNING_CIRCLE
-      }) : (0, r.jsx)(C, {
+      }) : (0, r.jsx)(N, {
         user: m,
         guild: h,
         categories: y,

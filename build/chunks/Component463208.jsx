@@ -160,31 +160,31 @@ function I(e) {
     value: T,
     defaultValue: S,
     minLength: A,
-    error: N,
-    defaultDirty: C = false,
+    error: C,
+    defaultDirty: N = false,
     leading: R,
     trailing: P,
     validateOn: w = "change",
     size: D = "md",
-    fullWidth: L = false,
-    clearable: x = false,
-    helperText: M,
-    showCharacterCount: k = false,
-    successMessage: j
+    fullWidth: x = false,
+    clearable: L = false,
+    helperText: j,
+    showCharacterCount: M = false,
+    successMessage: k
   } = e, U = E(e, ["disabled", "editable", "inputRef", "focusProps", "name", "type", "placeholder", "maxLength", "value", "defaultValue", "minLength", "error", "defaultDirty", "leading", "trailing", "validateOn", "size", "fullWidth", "clearable", "helperText", "showCharacterCount", "successMessage"]), G = y(T, S), B = (0, d.m)({
     validateOn: w,
-    error: N,
+    error: C,
     value: T,
     minLength: A,
     maxLength: I,
-    defaultDirty: C
+    defaultDirty: N
   }), {
-    setShouldValidate: V
-  } = B, F = e => {
+    setShouldValidate: Z
+  } = B, V = e => {
     var t, n;
     let r = e.currentTarget.value;
-    null == (t = U.onChange) || t.call(U, r, p), V(true), null == (n = G.setHasValue) || n.call(G, "" !== r)
-  }, Z = e => {
+    null == (t = U.onChange) || t.call(U, r, p), Z(true), null == (n = G.setHasValue) || n.call(G, "" !== r)
+  }, F = e => {
     var t, n;
     null == (t = U.onFocus) || t.call(U, e), null == (n = G.setIsFocused) || n.call(G, true)
   }, H = e => {
@@ -199,7 +199,7 @@ function I(e) {
   }, W = i.useRef(null), K = U.readOnly;
   null == K && false === l && (K = true);
   let z = null;
-  ("boolean" == typeof x ? x && null != T && "" !== T && !K : x.show) ? z = (0, r.jsx)(v, {
+  ("boolean" == typeof L ? L && null != T && "" !== T && !K : L.show) ? z = (0, r.jsx)(v, {
     inputSize: D,
     onClick: Y
   }): null != P && (z = (0, r.jsx)(O, {
@@ -213,11 +213,11 @@ function I(e) {
   })), (0, r.jsxs)(u.J, {
     disabled: a,
     validation: B,
-    fullWidth: L,
+    fullWidth: x,
     readOnly: K,
-    helperText: M,
-    successMessage: j,
-    characterCount: k ? null != (t = null == T ? true : T.length) ? t : 0 : true,
+    helperText: j,
+    successMessage: k,
+    characterCount: M ? null != (t = null == T ? true : T.length) ? t : 0 : true,
     characterCountMaxLength: I,
     className: o()(_.container, _[D], {
       [_.leading]: null != q,
@@ -239,9 +239,9 @@ function I(e) {
         defaultValue: S
       }, U), {
         "aria-labelledby": null != (n = U["aria-labelledby"]) ? n : G.titleId,
-        onChange: F,
+        onChange: V,
         onBlur: H,
-        onFocus: Z,
+        onFocus: F,
         ref: c
       }))
     })), z]

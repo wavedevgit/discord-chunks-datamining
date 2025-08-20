@@ -1,7 +1,8 @@
-/** Chunk was on 11868 **/
-/** chunk id: 131130, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 131130, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  q: () => E
+  q: () => _
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -14,42 +15,42 @@ var Chunk704215 = require("./704215.js"),
   Chunk243778 = require("./243778.jsx"),
   Chunk921944 = require("./921944.js"),
   Chunk50953 = require("./50953.js");
-let E = e => {
+let _ = e => {
   let {
     dismissibleContent: t,
     noticeType: n
   } = e, {
-    analyticsLocations: E
-  } = (0, a.ZP)(), I = (0, c.Z)();
+    analyticsLocations: _
+  } = (0, o.ZP)(), p = (0, l.Z)();
   return (0, r.jsx)(u.Xf, {
     contentType: t,
-    latestVersion: (0, s.t)(t),
+    latestVersion: (0, c.t)(t),
     groupName: d.R.NOTICE_BAR,
     bypassAutoDismiss: true,
     children: e => {
       let {
         visibleContent: t,
-        markAsDismissed: a
+        markAsDismissed: o
       } = e;
       if (t === i.z.GIFTING_PROMOTION_REMINDER) {
-        let e = null == I ? true : I.reminderNagbar;
-        return (0, r.jsxs)(l.qXd, {
-          color: l.DM8.PREMIUM_TIER_2,
-          children: [(0, r.jsx)(l.RyX, {
-            onClick: () => a(d.L.USER_DISMISS),
+        let e = null == p ? true : p.reminderNagbar;
+        return (0, r.jsxs)(a.qXd, {
+          color: a.DM8.PREMIUM_TIER_2,
+          children: [(0, r.jsx)(a.RyX, {
+            onClick: () => o(d.L.USER_DISMISS),
             noticeType: n
-          }), (0, r.jsx)(l.OgN, {
+          }), (0, r.jsx)(a.OgN, {
             size: "custom",
             width: 20,
             height: 20,
             color: "currentColor",
-            className: _.giftIcon
-          }), null == e ? true : e.description(), (0, r.jsx)(l.NoS, {
+            className: f.giftIcon
+          }), null == e ? true : e.description(), (0, r.jsx)(a.NoS, {
             onClick: () => {
-              (0, o.Z)({
+              (0, s.Z)({
                 isGift: true,
                 initialPlanId: null,
-                analyticsLocations: E,
+                analyticsLocations: _,
                 analyticsLocation: null == e ? true : e.analyticsLocation,
                 analyticsObject: {
                   page: null == e ? true : e.analyticsPage

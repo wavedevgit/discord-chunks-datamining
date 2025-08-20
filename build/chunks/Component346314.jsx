@@ -92,7 +92,7 @@ function O(e) {
     I(true)
   }, []), S = i.useCallback(() => {
     I(false)
-  }, []), A = "username" === t, N = "dot" === t, C = null != c && null != c.primaryColor && null != c.secondaryColor, R = A && C, {
+  }, []), A = "username" === t, C = "dot" === t, N = null != c && null != c.primaryColor && null != c.secondaryColor, R = A && N, {
     gradientStyle: P,
     gradientClassname: w,
     gradientGlowClassname: D
@@ -100,18 +100,18 @@ function O(e) {
     colorStrings: c,
     roleStyle: "username",
     animateGradient: E || v || (null == O ? true : O.animate)
-  }), L = (0, f.EJ)(n), x = {
+  }), x = (0, f.EJ)(n), L = {
     className: o()(p.name, g, y, {
       [p.username]: A,
       [w]: R
     }),
-    children: L
-  }, M = {
+    children: x
+  }, j = {
     className: o()(p.nameGlow, D, y),
     children: n
-  }, k = N ? (0, r.jsx)(_.F, {
+  }, M = C ? (0, r.jsx)(_.F, {
     color: a,
-    colors: C ? c : null,
+    colors: N ? c : null,
     name: l,
     className: "left" === d ? p.roleDotLeft : p.roleDotRight,
     hoverOverride: E || v || (null == O ? true : O.animate)
@@ -120,24 +120,24 @@ function O(e) {
     className: o()(h, p.container),
     onMouseEnter: T,
     onMouseLeave: S,
-    children: ["left" === d && k, (0, r.jsxs)("span", {
+    children: ["left" === d && M, (0, r.jsxs)("span", {
       className: p.nameContainer,
       style: m({
-        color: A && !C && null != a ? a : true
+        color: A && !N && null != a ? a : true
       }, R ? P : {}),
       children: [null != b ? (0, r.jsx)(s.xv, m({
         tag: "span",
         color: "currentColor",
         variant: b
-      }, x)) : (0, r.jsx)("span", m({}, x)), R && (null != b ? (0, r.jsx)(s.xv, m({
+      }, L)) : (0, r.jsx)("span", m({}, L)), R && (null != b ? (0, r.jsx)(s.xv, m({
         tag: "span",
         color: "currentColor",
         "aria-hidden": true,
         variant: b
-      }, M)) : (0, r.jsx)("span", m({
+      }, j)) : (0, r.jsx)("span", m({
         "aria-hidden": true
-      }, M)))]
-    }), "right" === d && k]
+      }, j)))]
+    }), "right" === d && M]
   })
 }
 

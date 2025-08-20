@@ -1,4 +1,4 @@
-/** Chunk was on 36499 **/
+/** Chunk was on 5665 **/
 /** chunk id: 493754, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   W: () => C,
@@ -91,9 +91,9 @@ function x(e) {
       exitFullScreen: u,
       appContext: x,
       analyticsLocation: v,
-      className: j
+      className: O
     } = e,
-    O = function(e, t) {
+    j = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -116,7 +116,7 @@ function x(e) {
   let Z = g.intl.string(g.t.VINpSE);
   return null != n ? Z = g.intl.string(g.t["6VQaqa"]) : null != i && (Z = g.intl.string(g.t["OzOM/v"])), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.zx, _(y({
-      size: null != (t = O.size) ? t : c.zx.Sizes.SMALL,
+      size: null != (t = j.size) ? t : c.zx.Sizes.SMALL,
       color: b.buttonColor,
       onClick: () => {
         o()(null != P, "guild cannot be null"), o()(null != a, "channel cannot be null"), C({
@@ -130,14 +130,14 @@ function x(e) {
           guildScheduledEvent: I
         })
       },
-      className: l()(j, b.textButton)
-    }, O), {
+      className: l()(O, b.textButton)
+    }, j), {
       children: Z
     })), (0, r.jsx)(p.Z, {
       channel: a,
       stream: n,
       appContext: x,
-      className: l()(j, b.iconButton),
+      className: l()(O, b.iconButton),
       exitFullScreen: u,
       analyticsLocation: v,
       guildScheduledEvent: I

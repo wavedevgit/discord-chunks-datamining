@@ -1,5 +1,6 @@
-/** Chunk was on 35506 **/
-/** chunk id: 593710, original params: e,t,r (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 593710, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   partnerBranding: "partnerBranding__83420",
   partnerBrandingGameTile: "partnerBrandingGameTile__83420",

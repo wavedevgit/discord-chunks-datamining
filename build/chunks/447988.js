@@ -1,28 +1,3 @@
-/** Chunk was on 1272 **/
-/** chunk id: 447988, original params: e,t,n (module,exports,require) **/
-require.d(exports, {
-  J: () => l
-}), require("./388685.js");
-var Chunk647438 = require("./647438.js"),
-  Chunk685816 = require("./685816.js");
-let l = (e, t, n) => {
-    let [i, l] = (0, r.useState)(false);
-    return (0, r.useEffect)(() => {
-      let r = a(e);
-      if (t || n || null == r) return void l(false);
-      let i = r - Date.now();
-      if (i <= 0) return void l(true);
-      l(false);
-      let o = setTimeout(() => {
-        l(true)
-      }, Math.min(0x7fffffff, i));
-      return () => clearTimeout(o)
-    }, [t, n, e]), i
-  },
-  a = e => {
-    let t = null;
-    return e.forEach(e => {
-      let n = null;
-      e.type === i.z.IMMERSIVE_BANNER ? n = null != e.endTime ? e.endTime.getTime() : null : e.type === i.z.COUNTDOWN_TIMER && (n = e.endTime.getTime()), (null == t || null != n && n < t) && (t = n)
-    }), t
-  }
+/** Chunk was on 52385 **/
+/** chunk id: 447988, original params: a (module,exports,require) **/
+module.exports = JSON.parse('{"o/An3t":["Пользователь ",[1,"username"]," попросил вас провести трансляцию ",[1,"applicationName"]],"DKHheX":"Запрос на трансляцию","8qq+Hx":["Запрос на трансляцию ",[1,"applicationName"]],"s7bMT0":[[1,"username"]," просит вас провести трансляцию ",[1,"applicationName"]],"7pndSk":["Вы попросили кого-то провести трансляцию ",[1,"applicationName"]],"P0wwmJ":"Уже транслируется","u4QmWl":"Срок действия запроса истёк","qRXatr":"Не в голосовом канале","43zohI":"Не играет","8HU1Mz":"Запрос ещё не принят","5+172d":"Транслировать","jTbTAA":[[8,"$b",[[1,"username"]]]," хочет посмотреть, как вы играете в ",[8,"$b",[[1,"game"]]],". Начать стрим?"]}')

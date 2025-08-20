@@ -37,12 +37,12 @@ function u() {
   {
     let A = Chunk848479.Z.getMemoryUsageElectronRenderer();
     null != A && (module.client_heartbeat_renderer_memory = A);
-    let N = Chunk848479.Z.getMemoryUsageElectronRendererUsedHeapSize();
-    null != N && (module.client_heartbeat_renderer_memory_used_heap = N);
-    let C = Chunk848479.Z.getMemoryUsageElectronProcessTypeDetails();
-    if (null != C) {
+    let C = Chunk848479.Z.getMemoryUsageElectronRendererUsedHeapSize();
+    null != C && (module.client_heartbeat_renderer_memory_used_heap = C);
+    let N = Chunk848479.Z.getMemoryUsageElectronProcessTypeDetails();
+    if (null != N) {
       var t, n, r, i, a, o, l, c, u, d, f, _, p, h, m, g, E, b, y, O, v, I, T, S;
-      module.electron_process_memory_private = [null != (p = null == (t = C.unknown) ? true : exports.wss_priv_kb) ? p : false, null != (h = null == (n = C.main) ? true : require.wss_priv_kb) ? h : false, null != (m = null == (r = C.renderer) ? true : Chunk903772.wss_priv_kb) ? m : false, null != (g = null == (i = C.gpu) ? true : Chunk581567.wss_priv_kb) ? g : false, null != (E = null == (a = C.crashpad) ? true : Chunk594190.wss_priv_kb) ? E : false, null != (b = null == (o = C.utility) ? true : Chunk709706.wss_priv_kb) ? b : false], module.electron_process_memory_private_and_shared = [null != (y = null == (l = C.unknown) ? true : l.wss_kb) ? y : false, null != (O = null == (c = C.main) ? true : c.wss_kb) ? O : false, null != (v = null == (u = C.renderer) ? true : u.wss_kb) ? v : false, null != (I = null == (d = C.gpu) ? true : d.wss_kb) ? I : false, null != (T = null == (f = C.crashpad) ? true : f.wss_kb) ? T : false, null != (S = null == (_ = C.utility) ? true : _.wss_kb) ? S : false]
+      module.electron_process_memory_private = [null != (p = null == (t = N.unknown) ? true : exports.wss_priv_kb) ? p : false, null != (h = null == (n = N.main) ? true : require.wss_priv_kb) ? h : false, null != (m = null == (r = N.renderer) ? true : Chunk903772.wss_priv_kb) ? m : false, null != (g = null == (i = N.gpu) ? true : Chunk581567.wss_priv_kb) ? g : false, null != (E = null == (a = N.crashpad) ? true : Chunk594190.wss_priv_kb) ? E : false, null != (b = null == (o = N.utility) ? true : Chunk709706.wss_priv_kb) ? b : false], module.electron_process_memory_private_and_shared = [null != (y = null == (l = N.unknown) ? true : l.wss_kb) ? y : false, null != (O = null == (c = N.main) ? true : c.wss_kb) ? O : false, null != (v = null == (u = N.renderer) ? true : u.wss_kb) ? v : false, null != (I = null == (d = N.gpu) ? true : d.wss_kb) ? I : false, null != (T = null == (f = N.crashpad) ? true : f.wss_kb) ? T : false, null != (S = null == (_ = N.utility) ? true : _.wss_kb) ? S : false]
     }
   }
   return module

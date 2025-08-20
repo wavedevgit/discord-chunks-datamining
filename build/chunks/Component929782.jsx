@@ -2,10 +2,10 @@
 /** chunk id: 929782, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.r(exports), require.d(exports, {
-  enable: () => N,
+  enable: () => C,
   isNotSupported: () => S,
   trackToggleSelfDeaf: () => R,
-  trackToggleSelfMute: () => C
+  trackToggleSelfMute: () => N
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -98,7 +98,7 @@ function A(e) {
   })
 }
 
-function N() {
+function C() {
   let e = !(arguments.length > 0) || true === arguments[0] || arguments[0];
   return S() ? Promise.resolve(false) : (Chunk626135.default.track(Chunk981631.rMx.PERMISSIONS_REQUESTED, {
     type: "audio"
@@ -125,7 +125,7 @@ function N() {
   }).then(() => true))
 }
 
-function C(e) {
+function N(e) {
   let {
     usedKeybind: t = false,
     location: n

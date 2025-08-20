@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 306066, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 306066, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => f
+  Z: () => m
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -17,31 +18,31 @@ var Chunk399606 = require("./399606.js"),
   Chunk768741 = require("./768741.js"),
   Chunk857998 = require("./857998.js"),
   Chunk193371 = require("./193371.js");
-let f = e => {
+let m = e => {
   let t, {
       className: n
     } = e,
-    f = (0, r.e7)([l.Z], () => l.Z.useReducedMotion),
-    b = (0, c.rO)(),
-    x = (0, s.apv)((0, a.ZP)());
-  if (f) {
-    let e = x ? h.Z : m.Z;
-    return (0, i.jsx)("div", {
+    m = (0, i.e7)([s.Z], () => s.Z.useReducedMotion),
+    g = (0, c.rO)(),
+    E = (0, a.apv)((0, o.ZP)());
+  if (m) {
+    let e = E ? h.Z : f.Z;
+    return (0, r.jsx)("div", {
       className: n,
-      children: (0, i.jsx)("img", {
+      children: (0, r.jsx)("img", {
         src: e,
         alt: ""
       })
     })
   }
-  return t = b ? x ? p.Z : d.Z : x ? g.Z : u.Z, (0, i.jsx)("div", {
+  return t = g ? E ? _.Z : u.Z : E ? p.Z : d.Z, (0, r.jsx)("div", {
     className: n,
-    children: (0, i.jsx)(o.Z, {
+    children: (0, r.jsx)(l.Z, {
       muted: true,
       autoPlay: true,
       playsInline: true,
       loop: true,
-      children: (0, i.jsx)("source", {
+      children: (0, r.jsx)("source", {
         src: t
       })
     }, t)

@@ -105,9 +105,9 @@ let ee = {
 function ea(e) {
   let {
     header: t
-  } = e, n = L.Z.getCameraComponent(), a = (0, l.e7)([L.Z], () => L.Z.getVideoDeviceId()), o = (0, I.Z)();
+  } = e, n = x.Z.getCameraComponent(), a = (0, l.e7)([x.Z], () => x.Z.getVideoDeviceId()), o = (0, I.Z)();
   return i.useEffect(() => {
-    let e = x.default.getCurrentUser();
+    let e = L.default.getCurrentUser();
     if (o && null != e) {
       let t = (0, O.P)(e);
       (0, v.FU)(t, a, {
@@ -144,12 +144,12 @@ function eo(e) {
   } = (0, T.Z)(), _ = (0, S.Z)(n), p = i.useRef(null), g = a > 1;
   return (0, r.jsxs)("div", {
     className: o()(z.wrapper, z.actions),
-    children: [(0, r.jsx)(N.Z, {
+    children: [(0, r.jsx)(C.Z, {
       iconComponent: c.Dio,
       label: W.intl.string(W.t.WAI6xs),
       className: z.actionButton,
       onClick: () => {
-        (0, V.v)(s, V.d.DISCONNECT), k.default.track(H.rMx.RING_CALL_DECLINED, Q({
+        (0, Z.v)(s, Z.d.DISCONNECT), M.default.track(H.rMx.RING_CALL_DECLINED, Q({
           location: s,
           guild_id: n.guild_id
         }, (0, h.v_)(n))), u.Z.stopRinging(n.id)
@@ -162,8 +162,8 @@ function eo(e) {
         } = e;
         return (0, r.jsx)(B.Z, {
           onClose: t,
-          onInteraction: (0, F.u)("VideoDeviceMenu", s, {
-            entrypoint: Z.A5.CARET
+          onInteraction: (0, V.u)("VideoDeviceMenu", s, {
+            entrypoint: F.A5.CARET
           })
         })
       },
@@ -193,18 +193,18 @@ function eo(e) {
           onCameraUnavailable: A.Z,
           onChange: () => {
             var e;
-            (0, V.v)(s, V.d.JOIN_VIDEO_CALL), k.default.track(H.rMx.RING_CALL_ACCEPTED, Q({
+            (0, Z.v)(s, Z.d.JOIN_VIDEO_CALL), M.default.track(H.rMx.RING_CALL_ACCEPTED, Q({
               location: s,
               guild_id: n.guild_id
             }, (0, h.v_)(n))), f.default.selectVoiceChannel(n.id, true), (0, y.XU)(null != (e = n.guild_id) ? e : H.ME, n.id)
           }
         })
       }
-    }), (0, r.jsx)(C.Z, {
+    }), (0, r.jsx)(N.Z, {
       channel: n,
       color: "join",
       centerButton: true,
-      onCallJoined: () => k.default.track(H.rMx.RING_CALL_ACCEPTED, Q({
+      onCallJoined: () => M.default.track(H.rMx.RING_CALL_ACCEPTED, Q({
         location: s,
         guild_id: n.guild_id
       }, (0, h.v_)(n))),
@@ -222,13 +222,13 @@ function es(e) {
     channel: h
   } = e, {
     analyticsLocations: y
-  } = (0, m.ZP)(p.Z.INCOMING_CALL_MODAL), [O, v] = i.useState(false), I = (0, l.e7)([D.Z], () => D.Z.getGuild(h.guild_id)), T = null != I ? j.ZP.getGuildIconURL({
+  } = (0, m.ZP)(p.Z.INCOMING_CALL_MODAL), [O, v] = i.useState(false), I = (0, l.e7)([D.Z], () => D.Z.getGuild(h.guild_id)), T = null != I ? k.ZP.getGuildIconURL({
     id: I.id,
     icon: I.icon,
     size: ei
-  }) : null, S = null != (t = (0, g.x)(h, ei, true)) ? t : T, A = (0, E.ZP)(h), [N, C] = (0, l.Wu)([L.Z], () => [L.Z.supports(Y.AN.VIDEO), Object.keys(L.Z.getVideoDevices()).length]), R = null != I ? "".concat(A, ", ").concat(I.name) : A, x = (0, l.e7)([M.Z], () => M.Z.isFocused()), k = (0, l.e7)([U.Z], () => U.Z.getMode(h.id)), B = i.useCallback(e => {
+  }) : null, S = null != (t = (0, g.x)(h, ei, true)) ? t : T, A = (0, E.ZP)(h), [C, N] = (0, l.Wu)([x.Z], () => [x.Z.supports(Y.AN.VIDEO), Object.keys(x.Z.getVideoDevices()).length]), R = null != I ? "".concat(A, ", ").concat(I.name) : A, L = (0, l.e7)([j.Z], () => j.Z.isFocused()), M = (0, l.e7)([U.Z], () => U.Z.getMode(h.id)), B = i.useCallback(e => {
     null != e.top && null != e.left && d.Z.move(e.left, e.top)
-  }, []), V = (0, c.q_F)({
+  }, []), Z = (0, c.q_F)({
     value: +!!O,
     config: $(Q({}, s.config.stiff), {
       clamp: true
@@ -240,14 +240,14 @@ function es(e) {
     };
     return window.addEventListener("keydown", e), () => window.removeEventListener("keydown", e)
   }, [h]);
-  let F = k === H.WtW.VIDEO && N && C > 0,
+  let V = M === H.WtW.VIDEO && C && N > 0,
     {
-      enabled: Z
+      enabled: F
     } = P.Z.useExperiment({
       guildId: null == h ? true : h.guild_id,
       location: "IncomingCallModal"
     }),
-    X = k === H.WtW.VOICE || Z && h.type === H.d4z.GUILD_VOICE ? W.intl.string(W.t.Js8cKy) : W.intl.string(W.t.KcnWCA),
+    X = M === H.WtW.VOICE || F && h.type === H.d4z.GUILD_VOICE ? W.intl.string(W.t.Js8cKy) : W.intl.string(W.t.KcnWCA),
     J = (0, r.jsxs)(r.Fragment, {
       children: [null != I && null == T ? (0, r.jsx)("div", {
         className: o()(z.icon, K.wrapper, K.ringingIncoming),
@@ -266,7 +266,7 @@ function es(e) {
         })
       }) : (0, r.jsx)(G.Z, {
         className: z.icon,
-        ringing: x,
+        ringing: L,
         src: null != S ? S : "",
         ringingType: G.Z.RingingType.INCOMING,
         size: O ? c.EFr.SIZE_40 : c.EFr.SIZE_80
@@ -285,8 +285,8 @@ function es(e) {
         })]
       })]
     }),
-    es = F ? ee : et,
-    el = (0, l.e7)([M.Z], () => M.Z.windowSize());
+    es = V ? ee : et,
+    el = (0, l.e7)([j.Z], () => j.Z.windowSize());
   return (0, r.jsx)(m.Gt, {
     value: y,
     children: (0, r.jsx)(_.Z, {
@@ -307,9 +307,9 @@ function es(e) {
             [z.previewCamera]: O
           }, e),
           style: $(Q({}, n), {
-            width: V.value.interpolate([0, 1], [es.width, en]),
-            minHeight: V.value.interpolate([0, 1], [es.height, er]),
-            translateX: V.value.interpolate([0, 1], [0, false * Math.abs(en - es.width) / 2])
+            width: Z.value.interpolate([0, 1], [es.width, en]),
+            minHeight: Z.value.interpolate([0, 1], [es.height, er]),
+            translateX: Z.value.interpolate([0, 1], [0, false * Math.abs(en - es.width) / 2])
           }),
           children: [O ? (0, r.jsx)(ea, {
             header: J
@@ -317,10 +317,10 @@ function es(e) {
             className: z.mainChannelInfo,
             children: J
           }), (0, r.jsx)(eo, {
-            canVideo: F,
+            canVideo: V,
             channel: h,
-            numVideoDevices: C
-          }), F && !O ? (0, r.jsx)("div", {
+            numVideoDevices: N
+          }), V && !O ? (0, r.jsx)("div", {
             "data-button-hoisted-classname-wrapper": true,
             className: z.previewButton,
             children: (0, r.jsx)(c.zxk, {

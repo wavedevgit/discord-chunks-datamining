@@ -97,15 +97,15 @@ function E(e) {
     handleJoinRequest: T,
     buttonCTA: S,
     tooltip: A,
-    isEnabled: N,
-    isEmbedded: C
+    isEnabled: C,
+    isEmbedded: N
   } = y;
-  return C ? (0, r.jsx)(a.ua7, {
+  return N ? (0, r.jsx)(a.ua7, {
     text: A,
     children: e => (0, r.jsx)(u.tG, g(h({}, e), {
       icon: a.YVR,
       text: S,
-      disabled: !N,
+      disabled: !C,
       submitting: I,
       size: E === f.l.MODAL_V2 ? i.Ph.TINY : i.Ph.SMALL,
       fullWidth: E !== f.l.MODAL_V2,
@@ -121,7 +121,7 @@ function E(e) {
     children: e => (0, r.jsx)(u.tG, g(h({}, e), {
       icon: a.iWm,
       text: S,
-      disabled: !N,
+      disabled: !C,
       submitting: I,
       size: E === f.l.MODAL_V2 ? i.Ph.TINY : i.Ph.SMALL,
       fullWidth: E !== f.l.MODAL_V2,

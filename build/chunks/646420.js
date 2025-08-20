@@ -1,5 +1,6 @@
-/** Chunk was on 66181 **/
-/** chunk id: 646420, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 646420, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   wrapper: "wrapper_cb9f10",
   nav: "nav_cb9f10",

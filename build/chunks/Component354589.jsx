@@ -1,4 +1,4 @@
-/** Chunk was on 78086 **/
+/** Chunk was on 74379 **/
 /** chunk id: 354589, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   default: () => B
@@ -48,87 +48,87 @@ let B = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
   var n;
   let {
     user: t,
-    channel: a,
-    context: c,
-    showChatItems: d = true,
-    showMediaItems: G = false,
+    channel: s,
+    context: a,
+    showChatItems: u = true,
+    showMediaItems: F = false,
     showChannelCallItems: B = false,
-    showModalItems: K = true,
-    onSelect: H,
-    onHeightUpdate: Q,
-    onInteraction: q
-  } = e, Y = (0, R.Z)({
+    showModalItems: H = true,
+    onSelect: G,
+    onHeightUpdate: K,
+    onInteraction: W
+  } = e, Y = (0, L.Z)({
     userId: t.id,
     guildId: null
-  }), F = (0, w.Z)(t, null, c), z = (0, i.e7)([_.Z, y.Z], () => {
-    let e = _.Z.getVoiceChannelId();
-    return y.Z.getChannel(e)
+  }), z = (0, k.Z)(t, null, a), J = (0, i.e7)([v.Z, Z.Z], () => {
+    let e = v.Z.getVoiceChannelId();
+    return Z.Z.getChannel(e)
   }), {
     enabled: X
-  } = v.Z.useExperiment({
-    guildId: null == z ? true : z.guild_id,
+  } = j.Z.useExperiment({
+    guildId: null == J ? true : J.guild_id,
     location: "GroupDMUserContextMenu"
-  }), J = X ? null == z ? true : z.id : a.id, $ = (0, U.Z)(t, J), ee = (0, N.Z)(t.id, c), en = (0, x.Z)({
+  }), q = X ? null == J ? true : J.id : s.id, $ = (0, U.Z)(t, q), ee = (0, N.Z)(t.id, a), en = (0, P.Z)({
     user: t,
-    context: c
-  }), et = (0, j.Z)({
+    context: a
+  }), et = (0, _.Z)({
     user: t,
-    channelId: a.id,
-    context: c
-  }), er = (0, E.Z)({
+    channelId: s.id,
+    context: a
+  }), er = (0, y.Z)({
     user: t
-  }), ei = (0, L.Z)(t.id), el = (0, D.Z)(t.id, a.id), eo = (0, k.Z)(t.id), ea = (0, g.B)({
+  }), ei = (0, R.Z)(t.id), el = (0, D.Z)(t.id, s.id), eo = (0, A.Z)(t.id), es = (0, p.B)({
     userId: t.id,
-    channelId: a.id,
-    guildId: a.getGuildId()
-  }), ec = (0, I.Z)(t.id, a.id), es = (0, C.Z)({
+    channelId: s.id,
+    guildId: s.getGuildId()
+  }), ea = (0, I.Z)(t.id, s.id), ec = (0, T.Z)({
     user: t
-  }), eu = (0, u.Z)(null, t), ed = (0, O.Z)({
+  }), ed = (0, d.Z)(null, t), eu = (0, O.Z)({
     user: t
-  }), ef = (0, Z.Z)({
+  }), ef = (0, x.Z)({
     user: t
-  }), eh = (0, M.Z)({
+  }), em = (0, M.Z)({
     user: t
-  }), ep = (0, S.Z)({
+  }), eb = (0, E.Z)({
     user: t,
     location: "GroupDMUserContextMenu"
-  }), eg = (0, P.Z)({
+  }), ep = (0, C.Z)({
     user: t,
     location: "GroupDMUserContextMenu"
-  }), eb = (0, b.Z)({
+  }), eg = (0, g.Z)({
     id: t.id,
-    label: W.intl.string(W.t["/AXYnJ"])
-  }), em = (0, V.Z)(t.id), ev = (0, h.Z)(t.id), ey = (0, f.Z)(a.id), e_ = (0, m.Z)(t), eO = (0, p.Z)(t.id), eE = (0, T.Z)({
-    commandType: s.yU.USER,
+    label: Q.intl.string(Q.t["/AXYnJ"])
+  }), eh = (0, V.Z)(t.id), ej = (0, m.Z)(t.id), eZ = (0, f.Z)(s.id), ev = (0, h.Z)(t), eO = (0, b.Z)(t.id), ey = (0, w.Z)({
+    commandType: c.yU.USER,
     commandTargetId: t.id,
-    channel: a,
+    channel: s,
     guildId: true,
-    onHeightUpdate: Q
-  }), eZ = (0, A.Z)(t, a), ej = t.isNonUserBot(), eT = a.isManaged(), eS = null == (n = a.recipients) ? true : n.includes(t.id);
+    onHeightUpdate: K
+  }), ex = (0, S.Z)(t, s), e_ = t.isNonUserBot(), ew = s.isManaged(), eE = null == (n = s.recipients) ? true : n.includes(t.id);
   return (0, r.jsxs)(l.v2r, {
     navId: "user-context",
     onClose: o.Zy,
-    "aria-label": W.intl.string(W.t.liqwPD),
-    onSelect: H,
-    onInteraction: q,
-    children: [!ej && (0, r.jsxs)(r.Fragment, {
+    "aria-label": Q.intl.string(Q.t.liqwPD),
+    onSelect: G,
+    onInteraction: W,
+    children: [!e_ && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(l.kSQ, {
-        children: e_
+        children: ev
       }), (0, r.jsxs)(l.kSQ, {
-        children: [K && Y, d && F, ee, en, !eT && $, K && et, K && er, em]
-      }), G && (0, r.jsx)(l.kSQ, {
+        children: [H && Y, u && z, ee, en, !ew && $, H && et, H && er, eh]
+      }), F && (0, r.jsx)(l.kSQ, {
         children: ei
-      }), eS && (0, r.jsxs)(l.kSQ, {
-        children: [!eT && el, eZ]
+      }), eE && (0, r.jsxs)(l.kSQ, {
+        children: [!ew && el, ex]
       }), (0, r.jsx)(l.kSQ, {
-        children: K && eu
+        children: H && ed
       }), (0, r.jsxs)(l.kSQ, {
-        children: [G && eo, G && ea, G && ec, eE, K && es, ed, ef, eh, K && eg, K && ep, G && eO]
+        children: [F && eo, F && es, F && ea, ey, H && ec, eu, ef, em, H && ep, H && eb, F && eO]
       }), B && (0, r.jsxs)(l.kSQ, {
-        children: [ey, ev]
+        children: [eZ, ej]
       })]
     }), (0, r.jsx)(l.kSQ, {
-      children: eb
+      children: eg
     })]
   })
 }, {

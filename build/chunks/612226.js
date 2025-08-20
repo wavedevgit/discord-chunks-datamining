@@ -1,14 +1,15 @@
-/** Chunk was on 66181 **/
-/** chunk id: 612226, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 612226, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Q2: () => V,
-  Rv: () => W,
-  U6: () => F,
-  UD: () => G,
-  ZP: () => Y,
-  oT: () => z
+  Q2: () => B,
+  Rv: () => Y,
+  U6: () => V,
+  UD: () => Z,
+  ZP: () => W,
+  oT: () => H
 }), require("./415506.js"), require("./539854.js");
-var i, Chunk2818 = require("./2818.js"),
+var Chunk2818 = require("./2818.js"),
   Chunk186070 = require("./186070.js"),
   Chunk185514 = require("./185514.js"),
   Chunk395878 = require("./395878.js"),
@@ -45,45 +46,47 @@ var i, Chunk2818 = require("./2818.js"),
   Chunk547420 = require("./547420.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  V = ((i = {}).NAVIGATION = "NAVIGATION", i.CHAT = "CHAT", i.VOICE_AND_VIDEO = "VOICE_AND_VIDEO", i.MISCELLANEOUS = "MISCELLANEOUS", i.MESSAGE = "MESSAGE", i.DND = "DND", i);
+  B = function(e) {
+    return e.NAVIGATION = "NAVIGATION", e.CHAT = "CHAT", e.VOICE_AND_VIDEO = "VOICE_AND_VIDEO", e.MISCELLANEOUS = "MISCELLANEOUS", e.MESSAGE = "MESSAGE", e.DND = "DND", e
+  }({});
 
-function G(e) {
+function Z(e) {
   switch (e) {
     case "NAVIGATION":
-      return U.intl.string(U.t["yGE+jo"]);
+      return G.intl.string(G.t["yGE+jo"]);
     case "VOICE_AND_VIDEO":
-      return U.intl.string(U.t.bI8F5u);
+      return G.intl.string(G.t.bI8F5u);
     case "CHAT":
-      return U.intl.string(U.t.hDhbb2);
+      return G.intl.string(G.t.hDhbb2);
     case "MISCELLANEOUS":
-      return U.intl.string(U.t.cBdwqq);
+      return G.intl.string(G.t.cBdwqq);
     case "MESSAGE":
-      return U.intl.string(U.t["5fpmX1"]);
+      return G.intl.string(G.t["5fpmX1"]);
     case "DND":
-      return U.intl.string(U.t["69j6+/"])
+      return G.intl.string(G.t["69j6+/"])
   }
 }
 
-function F(e) {
+function V(e) {
   switch (e) {
     case "MESSAGE":
-      return U.intl.string(U.t.iepGDg);
+      return G.intl.string(G.t.iepGDg);
     case "DND":
-      return U.intl.string(U.t.LBsB0d);
+      return G.intl.string(G.t.LBsB0d);
     default:
       return null
   }
 }
 
-function H() {
+function F() {
   for (var e = arguments.length, t = Array(module), n = 0; require < module; require++) exports[require] = arguments[require];
   return exports.map(e => {
-    let t = z[e];
+    let t = H[e];
     if (null == t) throw Error("getBindsFor(...): No bind for ".concat(t));
     return t.binds[0]
   })
 }
-let z = {
+let H = {
   [Chunk981631.EkH.SERVER_NEXT]: Chunk510761.nq,
   [Chunk981631.EkH.SERVER_PREV]: Chunk510761.X3,
   [Chunk981631.EkH.CHANNEL_NEXT]: Chunk185514.tQ,
@@ -134,42 +137,42 @@ let z = {
   [Chunk981631.EkH.BROWSER_DEVTOOLS]: Chunk775774.p
 };
 
-function W() {
+function Y() {
   let e = [{
       description: Chunk388032.intl.string(Chunk388032.t.bx4Uy8),
-      binds: H(Chunk981631.EkH.SERVER_PREV, Chunk981631.EkH.SERVER_NEXT),
+      binds: F(Chunk981631.EkH.SERVER_PREV, Chunk981631.EkH.SERVER_NEXT),
       group: "NAVIGATION"
     }, {
       description: Chunk388032.intl.string(Chunk388032.t["+Wem6u"]),
-      binds: H(Chunk981631.EkH.CHANNEL_PREV, Chunk981631.EkH.CHANNEL_NEXT),
+      binds: F(Chunk981631.EkH.CHANNEL_PREV, Chunk981631.EkH.CHANNEL_NEXT),
       group: "NAVIGATION"
     }, {
       description: Chunk388032.intl.string(Chunk388032.t["+2fcd3"]),
-      binds: H(Chunk981631.EkH.NAVIGATE_BACK, Chunk981631.EkH.NAVIGATE_FORWARD),
+      binds: F(Chunk981631.EkH.NAVIGATE_BACK, Chunk981631.EkH.NAVIGATE_FORWARD),
       group: "NAVIGATION"
     }, {
       description: Chunk388032.intl.string(Chunk388032.t.eVmj1N),
-      binds: H(Chunk981631.EkH.UNREAD_PREV, Chunk981631.EkH.UNREAD_NEXT),
+      binds: F(Chunk981631.EkH.UNREAD_PREV, Chunk981631.EkH.UNREAD_NEXT),
       group: "NAVIGATION"
     }, {
       description: Chunk388032.intl.string(Chunk388032.t.EcqS7e),
-      binds: H(Chunk981631.EkH.MENTION_CHANNEL_PREV, Chunk981631.EkH.MENTION_CHANNEL_NEXT),
+      binds: F(Chunk981631.EkH.MENTION_CHANNEL_PREV, Chunk981631.EkH.MENTION_CHANNEL_NEXT),
       group: "NAVIGATION"
     }, {
       description: Chunk388032.intl.string(Chunk388032.t["4I3pwc"]),
-      binds: H(Chunk981631.EkH.JUMP_TO_CURRENT_CALL),
+      binds: F(Chunk981631.EkH.JUMP_TO_CURRENT_CALL),
       group: "NAVIGATION"
     }, {
       description: Chunk388032.intl.string(Chunk388032.t["Bqss7+"]),
-      binds: H(Chunk981631.EkH.TOGGLE_PREVIOUS_GUILD),
+      binds: F(Chunk981631.EkH.TOGGLE_PREVIOUS_GUILD),
       group: "NAVIGATION"
     }, {
       description: Chunk388032.intl.string(Chunk388032.t.yYsRlJ),
-      binds: H(Chunk981631.EkH.QUICKSWITCHER_SHOW),
+      binds: F(Chunk981631.EkH.QUICKSWITCHER_SHOW),
       group: "NAVIGATION"
     }, {
       description: Chunk388032.intl.string(Chunk388032.t.O7ouXF),
-      binds: H(Chunk981631.EkH.CREATE_GUILD),
+      binds: F(Chunk981631.EkH.CREATE_GUILD),
       group: "NAVIGATION",
       groupEnd: true
     }, {
@@ -191,93 +194,93 @@ function W() {
       groupEnd: true
     }, {
       description: Chunk388032.intl.string(Chunk388032.t.UaXAPz),
-      binds: H(Chunk981631.EkH.MARK_SERVER_READ),
+      binds: F(Chunk981631.EkH.MARK_SERVER_READ),
       group: "CHAT"
     }, {
       description: Chunk388032.intl.string(Chunk388032.t["5X9vFh"]),
-      binds: H(Chunk981631.EkH.MARK_CHANNEL_READ),
+      binds: F(Chunk981631.EkH.MARK_CHANNEL_READ),
       group: "CHAT"
     }, {
       description: Chunk388032.intl.string(Chunk388032.t.wxQFsr),
-      binds: H(Chunk981631.EkH.CREATE_DM_GROUP),
+      binds: F(Chunk981631.EkH.CREATE_DM_GROUP),
       group: "CHAT"
     }, {
       description: Chunk388032.intl.string(Chunk388032.t["C+XV7e"]),
-      binds: H(Chunk981631.EkH.TOGGLE_CHANNEL_PINS),
+      binds: F(Chunk981631.EkH.TOGGLE_CHANNEL_PINS),
       group: "CHAT"
     }, {
       description: Chunk388032.intl.string(Chunk388032.t["Q+YV/f"]),
-      binds: H(Chunk981631.EkH.TOGGLE_INBOX),
+      binds: F(Chunk981631.EkH.TOGGLE_INBOX),
       group: "CHAT"
     }, {
       description: Chunk388032.intl.string(Chunk388032.t["YEjV+f"]),
-      binds: H(Chunk981631.EkH.MARK_TOP_INBOX_CHANNEL_READ),
+      binds: F(Chunk981631.EkH.MARK_TOP_INBOX_CHANNEL_READ),
       group: "CHAT"
     }, {
       description: Chunk388032.intl.string(Chunk388032.t.AcBI9f),
-      binds: H(Chunk981631.EkH.TOGGLE_USERS),
+      binds: F(Chunk981631.EkH.TOGGLE_USERS),
       group: "CHAT"
     }, {
       description: Chunk388032.intl.string(Chunk388032.t.JoxNnp),
-      binds: H(Chunk981631.EkH.SEARCH_EMOJIS),
+      binds: F(Chunk981631.EkH.SEARCH_EMOJIS),
       group: "CHAT"
     }, {
       description: Chunk388032.intl.string(Chunk388032.t["3PHxo6"]),
-      binds: H(Chunk981631.EkH.SEARCH_GIFS),
+      binds: F(Chunk981631.EkH.SEARCH_GIFS),
       group: "CHAT"
     }, {
       description: Chunk388032.intl.string(Chunk388032.t.YFl7eX),
-      binds: H(Chunk981631.EkH.SEARCH_STICKERS),
+      binds: F(Chunk981631.EkH.SEARCH_STICKERS),
       group: "CHAT"
     }, {
       description: Chunk388032.intl.string(Chunk388032.t.L3RYYG),
-      binds: H(Chunk981631.EkH.SCROLL_UP, Chunk981631.EkH.SCROLL_DOWN),
+      binds: F(Chunk981631.EkH.SCROLL_UP, Chunk981631.EkH.SCROLL_DOWN),
       group: "CHAT"
     }, {
       description: Chunk388032.intl.string(Chunk388032.t["3HAurK"]),
-      binds: H(Chunk981631.EkH.JUMP_TO_FIRST_UNREAD),
+      binds: F(Chunk981631.EkH.JUMP_TO_FIRST_UNREAD),
       group: "CHAT"
     }, {
       description: Chunk388032.intl.string(Chunk388032.t.rrYBEh),
-      binds: H(Chunk981631.EkH.TEXTAREA_FOCUS),
+      binds: F(Chunk981631.EkH.TEXTAREA_FOCUS),
       group: "CHAT"
     }, {
       description: Chunk388032.intl.string(Chunk388032.t.sUJlPD),
-      binds: H(Chunk981631.EkH.UPLOAD_FILE),
+      binds: F(Chunk981631.EkH.UPLOAD_FILE),
       group: "CHAT",
       groupEnd: true
     }, {
       description: Chunk388032.intl.string(Chunk388032.t.tL6eVV),
-      binds: H(Chunk981631.EkH.TOGGLE_MUTE),
+      binds: F(Chunk981631.EkH.TOGGLE_MUTE),
       group: "VOICE_AND_VIDEO"
     }, {
       description: Chunk388032.intl.string(Chunk388032.t["QXe/7e"]),
-      binds: H(Chunk981631.EkH.TOGGLE_DEAFEN),
+      binds: F(Chunk981631.EkH.TOGGLE_DEAFEN),
       group: "VOICE_AND_VIDEO"
     }, {
       description: Chunk388032.intl.string(Chunk388032.t.d6UIio),
-      binds: H(Chunk981631.EkH.CALL_ACCEPT),
+      binds: F(Chunk981631.EkH.CALL_ACCEPT),
       group: "VOICE_AND_VIDEO"
     }, {
       description: Chunk388032.intl.string(Chunk388032.t.IcEW09),
-      binds: H(Chunk981631.EkH.MARK_CHANNEL_READ),
+      binds: F(Chunk981631.EkH.MARK_CHANNEL_READ),
       group: "VOICE_AND_VIDEO"
     }, {
       description: Chunk388032.intl.string(Chunk388032.t.WN2dsb),
-      binds: H(Chunk981631.EkH.CALL_START),
+      binds: F(Chunk981631.EkH.CALL_START),
       group: "VOICE_AND_VIDEO",
       groupEnd: true
     }, {
       description: Chunk388032.intl.string(Chunk388032.t.rUK0kp),
-      binds: H(Chunk981631.EkH.SEARCH_SOUNDBOARD),
+      binds: F(Chunk981631.EkH.SEARCH_SOUNDBOARD),
       group: "VOICE_AND_VIDEO"
     }, {
       description: Chunk388032.intl.string(Chunk388032.t.vkGkSk),
-      binds: H(Chunk981631.EkH.TOGGLE_HELP),
+      binds: F(Chunk981631.EkH.TOGGLE_HELP),
       group: "MISCELLANEOUS"
     }, {
       description: Chunk388032.intl.string(Chunk388032.t["FJvZ8/"]),
-      binds: H(Chunk981631.EkH.FOCUS_SEARCH),
+      binds: F(Chunk981631.EkH.FOCUS_SEARCH),
       group: "MISCELLANEOUS"
     }, {
       description: Chunk388032.intl.string(Chunk388032.t.HnNtEB),
@@ -323,7 +326,7 @@ function W() {
       groupEnd: true
     }, {
       description: Chunk388032.intl.string(Chunk388032.t.z9c6mp),
-      binds: H(Chunk981631.EkH.VIBE_WITH_WUMPUS),
+      binds: F(Chunk981631.EkH.VIBE_WITH_WUMPUS),
       group: "MISCELLANEOUS"
     }],
     {
@@ -336,8 +339,8 @@ function W() {
     });
   return exports && !require && module.push({
     description: Chunk388032.intl.string(Chunk388032.t.IWNSoK),
-    binds: H(Chunk981631.EkH.TOGGLE_FOR_LATER),
+    binds: F(Chunk981631.EkH.TOGGLE_FOR_LATER),
     group: "CHAT"
   }), module
 }
-let Y = 12633 == require.j ? z : null
+let W = H

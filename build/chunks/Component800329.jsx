@@ -1,4 +1,4 @@
-/** Chunk was on 36499 **/
+/** Chunk was on 5665 **/
 /** chunk id: 800329, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -41,8 +41,8 @@ function p(e) {
     height: y
   } = m, _ = null != (t = null == l ? true : l.length) ? t : 0, C = b - 16, x = y - (h + f), {
     tileStyle: v,
-    tileWidth: j,
-    rows: O,
+    tileWidth: O,
+    rows: j,
     columns: E
   } = i.useMemo(() => (function(e, t, n) {
     let {
@@ -80,7 +80,7 @@ function p(e) {
       rows: r,
       columns: i
     }
-  })(_, C, x), [_, C, x]), S = E + 1, P = S * j + (S - 1) * 8 <= b, I = Math.floor(j / c) + 8, Z = Math.max(0, x - I * O) / 2;
+  })(_, C, x), [_, C, x]), S = E + 1, P = S * O + (S - 1) * 8 <= b, I = Math.floor(O / c) + 8, Z = Math.max(0, x - I * j) / 2;
   return (0, r.jsx)(o.Z, {
     fade: true,
     className: n,
@@ -97,19 +97,19 @@ function p(e) {
             style: v,
             className: a()(s.tile, {
               [s.padColumn]: P,
-              [s.noVerticalMargin]: l >= (O - 1) * E,
+              [s.noVerticalMargin]: l >= (j - 1) * E,
               [s.noHorizontalMargin]: (l + 1) % E == 0 || l === _ - 1
             }),
             children: (0, r.jsx)("div", {
               className: s.tileSizer,
-              children: e(j)
+              children: e(O)
             })
           }, null != (i = null == p ? true : p(l)) ? i : l)
         })
       }, e)
     },
-    rowCount: O,
-    rowCountBySection: [O],
+    rowCount: j,
+    rowCountBySection: [j],
     rowHeight: I,
     onResize: g
   })

@@ -33,17 +33,17 @@ function v(e) {
     themeType: v
   } = (0, m.z)(), {
     analyticsLocations: I
-  } = (0, c.ZP)(), T = (0, p.W)(t), S = (0, u.ZP)(t, true), A = (0, s.e7)([f.Z], () => f.Z.getChannelStatus(t)), N = i.useMemo(() => null == A || "" === A ? null : _.Z.parseVoiceChannelStatus(A, true, {
+  } = (0, c.ZP)(), T = (0, p.W)(t), S = (0, u.ZP)(t, true), A = (0, s.e7)([f.Z], () => f.Z.getChannelStatus(t)), C = i.useMemo(() => null == A || "" === A ? null : _.Z.parseVoiceChannelStatus(A, true, {
     channelId: t.id
   }), [A, t.id]);
   i.useEffect(() => {
-    null != N && h.default.track(E.rMx.VOICE_CHANNEL_TOPIC_VIEWED, {
+    null != C && h.default.track(E.rMx.VOICE_CHANNEL_TOPIC_VIEWED, {
       channel_id: t.id,
       guild_id: t.guild_id,
       location_stack: I
     })
-  }, [N, t.id, t.guild_id, I]);
-  let C = e => {
+  }, [C, t.id, t.guild_id, I]);
+  let N = e => {
     e.stopPropagation(), n({
       action: "PRESS_VOICE_CHANNEL_STATUS"
     }), v === b.l.POPOUT && (null == a || a()), (0, d.Z)({
@@ -53,20 +53,20 @@ function v(e) {
   };
   return S && T ? (0, r.jsxs)(l.P3F, {
     className: O.clickable,
-    onClick: C,
+    onClick: N,
     children: [(0, r.jsx)(g.Z, {
-      text: null != N ? N : y.intl.string(y.t.Mgpxi4),
+      text: null != C ? C : y.intl.string(y.t.Mgpxi4),
       variant: "text-xs/normal",
       color: "text-secondary",
       className: O.text
     }), (0, r.jsx)(l.vdY, {
       color: "currentColor",
       size: "xxs",
-      className: o()(O.pencilIcon, null != N ? O.hidden : true),
+      className: o()(O.pencilIcon, null != C ? O.hidden : true),
       "aria-label": y.intl.string(y.t.bt75u7)
     })]
-  }) : null != N ? (0, r.jsx)(g.Z, {
-    text: N,
+  }) : null != C ? (0, r.jsx)(g.Z, {
+    text: C,
     variant: "text-xs/normal",
     color: "text-secondary",
     className: O.text

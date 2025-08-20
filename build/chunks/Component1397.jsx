@@ -1,4 +1,4 @@
-/** Chunk was on 36499 **/
+/** Chunk was on 5665 **/
 /** chunk id: 1397, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => q
@@ -118,9 +118,9 @@ class W extends Chunk647438.PureComponent {
       isStaff: C,
       guildJoinRequest: x,
       showLinkedLobbyApplicationLoadingIndicator: v,
-      requiredLinkedLobbyApplication: j
+      requiredLinkedLobbyApplication: O
     } = this.props, {
-      shouldShowLurkerModeUpsellPopout: O,
+      shouldShowLurkerModeUpsellPopout: j,
       shouldShowLurkerModeSuccessPopout: E
     } = this.state, S = {
       theme: Chunk749210,
@@ -171,7 +171,7 @@ class W extends Chunk647438.PureComponent {
           children: [this.renderMemberVerificationSuccessModal(), g ? (0, r.jsx)(c.yRy, {
             targetElementRef: this.upsellTargetRef,
             renderPopout: this.renderLurkerModeUpsellPopout,
-            shouldShow: O,
+            shouldShow: j,
             position: "top",
             children: e => (0, r.jsx)(c.P3F, z(V({
               innerRef: this.upsellTargetRef
@@ -196,7 +196,7 @@ class W extends Chunk647438.PureComponent {
       } = e, {
         guild: n
       } = this.props;
-      return a()(null != n, "This guildID cannot be null"), (0, r.jsx)(O.Z, {
+      return a()(null != n, "This guildID cannot be null"), (0, r.jsx)(j.Z, {
         onClose: t,
         guild: n
       })
@@ -239,7 +239,7 @@ class W extends Chunk647438.PureComponent {
       (0, c.ZDy)(async () => {
         let {
           default: e
-        } = await Promise.all([n.e("76540"), n.e("92304")]).then(n.bind(n, 607018));
+        } = await Promise.resolve().then(n.bind(n, 607018));
         return t => (0, r.jsx)(e, V({
           reason: S.L.GUILD_PHONE_REQUIRED
         }, t))
@@ -336,10 +336,10 @@ function q(e) {
   let {
     channel: i,
     children: l
-  } = e, a = i.getGuildId(), s = (0, o.e7)([N.Z], () => N.Z.getGuild(a)), c = (0, o.e7)([A.Z], () => A.Z.getCheck(a)), u = i.type === L.d4z.GUILD_ANNOUNCEMENT && null != s && s.features.has(L.oNc.NEWS), d = (0, o.e7)([Z.Z], () => u ? Z.Z.getFollowerStatsForChannel(i.id) : null), p = (0, o.e7)([j.Z], () => j.Z.isLurking(a)), f = (0, o.e7)([R.default], () => R.default.getCurrentUser()), m = null != (t = null == f ? true : f.isStaff()) && t, g = (0, o.e7)([T.ZP], () => {
+  } = e, a = i.getGuildId(), s = (0, o.e7)([N.Z], () => N.Z.getGuild(a)), c = (0, o.e7)([A.Z], () => A.Z.getCheck(a)), u = i.type === L.d4z.GUILD_ANNOUNCEMENT && null != s && s.features.has(L.oNc.NEWS), d = (0, o.e7)([Z.Z], () => u ? Z.Z.getFollowerStatsForChannel(i.id) : null), p = (0, o.e7)([O.Z], () => O.Z.isLurking(a)), f = (0, o.e7)([R.default], () => R.default.getCurrentUser()), m = null != (t = null == f ? true : f.isStaff()) && t, g = (0, o.e7)([T.ZP], () => {
     var e, t;
     return null != f && null != (t = null == (e = T.ZP.getMember(a, f.id)) ? true : e.isPending) && t
-  }), b = !!(0, _.Dc)(s), x = (0, o.e7)([v.Z], () => v.Z.shouldShowPopout(a)), O = (0, o.e7)([w.Z], () => w.Z.can(L.Plq.SEND_MESSAGES, i)), E = (0, o.e7)([C.Z], () => C.Z.getRequest(a)), {
+  }), b = !!(0, _.Dc)(s), x = (0, o.e7)([v.Z], () => v.Z.shouldShowPopout(a)), j = (0, o.e7)([w.Z], () => w.Z.can(L.Plq.SEND_MESSAGES, i)), E = (0, o.e7)([C.Z], () => C.Z.getRequest(a)), {
     showLinkedLobbyApplicationLoadingIndicator: S,
     requiredLinkedLobbyApplication: P
   } = (0, k.Z)(i.linkedLobby), D = z(V({}, c), {
@@ -349,7 +349,7 @@ function q(e) {
     shouldShowLurkerModeSuccessPopout: x,
     showLurkerModeUpsellPopout: p && null != s && M.Uu(L.Plq.SEND_MESSAGES, i),
     theme: I.Z.theme,
-    canSendMessages: O,
+    canSendMessages: j,
     channelFollowingUsersSeen: null != d ? d.usersSeenEver : null,
     hasVerificationGate: b,
     showMemberVerificationModal: g && b,

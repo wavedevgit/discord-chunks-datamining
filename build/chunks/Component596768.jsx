@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk599832 = require("./599832.js"),
   Chunk451429 = require("./451429.js");
-let O = [{
+let E = [{
     key: "id",
     cellClassName: Chunk599832.eventColumn,
     render(e) {
@@ -54,7 +54,7 @@ let O = [{
       return t.toLocaleString()
     }
   }],
-  E = [{
+  T = [{
     id: "details",
     name: "Details",
     group: Chunk621060.v0.NONE,
@@ -72,58 +72,58 @@ let O = [{
       } = e, u = d()(s);
       return (0, n.jsxs)(n.Fragment, {
         children: [(0, n.jsxs)(p.ZP, {
-          className: i()(T.headerBar, N.subPanelHeaderBar),
+          className: i()(O.headerBar, N.subPanelHeaderBar),
           children: [(0, n.jsx)(p.ZP.Icon, {
             icon: x.IeX,
             tooltip: t
           }), (0, n.jsx)(p.ZP.Title, {
             children: t
           })]
-        }), (0, n.jsxs)(g.E, {
+        }), (0, n.jsxs)(j.E, {
           className: N.commonProperties,
-          children: [(0, n.jsx)(g.Z9, {
+          children: [(0, n.jsx)(j.Z9, {
             name: "Timestamp (local)",
             children: (0, n.jsx)("time", {
               dateTime: s.toISOString(),
-              title: (0, b.vc)(u, "LLLL"),
-              children: (0, b.Y4)(u)
+              title: (0, v.vc)(u, "LLLL"),
+              children: (0, v.Y4)(u)
             })
-          }), "guild" === a.type && (0, n.jsx)(g.Z9, {
+          }), "guild" === a.type && (0, n.jsx)(j.Z9, {
             name: "Guild ID",
             children: (0, n.jsx)("code", {
               children: a.guildId
             })
-          }), (0, n.jsx)(g.Z9, {
+          }), (0, n.jsx)(j.Z9, {
             name: "Bucket",
             children: (0, n.jsx)("code", {
               children: a.bucket
             })
-          }), (0, n.jsx)(g.Z9, {
+          }), (0, n.jsx)(j.Z9, {
             name: "Revision",
             children: (0, n.jsx)("code", {
               children: a.revision
             })
-          }), (0, n.jsx)(g.Z9, {
+          }), (0, n.jsx)(j.Z9, {
             name: "Override",
-            children: (0, n.jsx)(g.wl, {
+            children: (0, n.jsx)(j.wl, {
               value: a.override
             })
-          }), (0, n.jsx)(g.Z9, {
+          }), (0, n.jsx)(j.Z9, {
             name: "Exposure type",
             children: (0, n.jsx)("code", {
               children: r
             })
-          }), (0, n.jsx)(g.Z9, {
+          }), (0, n.jsx)(j.Z9, {
             name: "Excluded",
-            children: (0, n.jsx)(g.wl, {
+            children: (0, n.jsx)(j.wl, {
               value: l
             })
-          }), (0, n.jsx)(g.Z9, {
+          }), (0, n.jsx)(j.Z9, {
             name: "Previously tracked",
-            children: (0, n.jsx)(g.wl, {
+            children: (0, n.jsx)(j.wl, {
               value: c
             })
-          }), (0, n.jsx)(g.Z9, {
+          }), (0, n.jsx)(j.Z9, {
             name: "Location",
             children: (0, n.jsx)("code", {
               children: o
@@ -136,10 +136,10 @@ let O = [{
 
 function S() {
   let [e, t] = Chunk647438.useState(""), a = Chunk647438.useRef(null), l = (0, Chunk442837.Wu)([Chunk120816.Z], () => Chunk120816.Z.loggedTriggers), s = Chunk647438.useMemo(() => Chunk120356.filter(t => 0 === e.length || o()(e, t.experimentId)).sort((e, t) => t.timestamp.getTime() - e.timestamp.getTime()), [Chunk120356, module]), [c, d] = Chunk647438.useState(true), p = Chunk658722.find(e => e.key === c), {
-    TabBar: b,
-    renderSelectedTab: g
+    TabBar: v,
+    renderSelectedTab: j
   } = (0, Chunk621060.ZP)({
-    tabs: E
+    tabs: T
   }, []), S = (0, Chunk442837.e7)([Chunk120816.Z], () => Chunk120816.Z.trackTriggers), P = Chunk647438.useCallback(e => {
     h.Z.dispatch({
       type: "SET_TRACK_TRIGGERS",
@@ -181,7 +181,7 @@ function S() {
         placeholder: "Search by experiment id"
       })]
     }), (0, Chunk951288.jsx)(Chunk681619.Z, {
-      columns: O,
+      columns: E,
       data: Chunk658722,
       selectedRowKey: Chunk913527,
       onClickRow: e => d(e.key)

@@ -67,7 +67,7 @@ function v(e) {
   }), {
     shouldShowNewBadge: T,
     markNewBadgeAsDismissed: S
-  } = (0, m.w)(), A = (0, _.Nj)(c.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), N = (0, d.ZP)(), C = null != I, R = (0, u.wjy)(N) ? y.darkOverlay : y.lightOverlay, P = (null != (n = null == I || null == (t = I.colors) ? true : t.length) ? n : 0) > 1, w = i.useMemo(() => {
+  } = (0, m.w)(), A = (0, _.Nj)(c.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), C = (0, d.ZP)(), N = null != I, R = (0, u.wjy)(C) ? y.darkOverlay : y.lightOverlay, P = (null != (n = null == I || null == (t = I.colors) ? true : t.length) ? n : 0) > 1, w = i.useMemo(() => {
     if (null == I || null == I.colors || 0 === I.colors.length) return;
     let e = I.colors[0];
     if (P) {
@@ -80,30 +80,30 @@ function v(e) {
     return {
       background: "var(--background-gradient), ".concat(e)
     }
-  }, [I, P]), D = (0, f.Sl)(g.Il.WHITE).hex, L = (0, f.Sl)(g.Il.RED_430).hex, x = C ? D : true, M = i.useCallback(() => {
+  }, [I, P]), D = (0, f.Sl)(g.Il.WHITE).hex, x = (0, f.Sl)(g.Il.RED_430).hex, L = N ? D : true, j = i.useCallback(() => {
     T && S(), null == v || v()
   }, [T, S, v]);
   return (0, r.jsxs)("div", {
     className: y.badgeContainer,
     children: [(0, r.jsxs)(h.S4, {
-      onSelect: a ? true : M,
+      onSelect: a ? true : j,
       isSelected: false,
-      showSelectionCircle: C,
+      showSelectionCircle: N,
       name: b.intl.string(E.default.KSBBpK),
-      className: o()(y.container, C && R, a && y.disabled),
+      className: o()(y.container, N && R, a && y.disabled),
       showBadge: false,
       showLockedBadge: false,
       style: w,
-      children: [!A && !C && (0, r.jsx)(O, {}), (0, r.jsx)("div", {
+      children: [!A && !N && (0, r.jsx)(O, {}), (0, r.jsx)("div", {
         className: y.borderOverlay
       }), (0, r.jsx)(s.V3v, {
-        color: x,
+        color: L,
         className: y.paletteIcon
       })]
     }), T && (0, r.jsx)(u.IGR, {
       className: y.newBadge,
       text: b.intl.string(b.t.y2b7CA),
-      color: L
+      color: x
     })]
   })
 }

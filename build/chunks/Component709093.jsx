@@ -2,7 +2,7 @@
 /** chunk id: 709093, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => N
+  Z: () => C
 }), require("./361932.js"), require("./187205.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -75,7 +75,7 @@ function A(e) {
     })]
   })
 }
-let N = function(e) {
+let C = function(e) {
   var t, n, i;
   let {
     hideCloseButton: f = false,
@@ -83,16 +83,16 @@ let N = function(e) {
     onClose: y,
     upgradeToPremiumType: O,
     isEligibleForTrial: v = false,
-    showTrialBadge: N = false,
-    showDiscountBadge: C = false
-  } = e, R = (0, s.apv)((0, l.ZP)()), P = O === g.p9.TIER_2, w = (0, d.Fv)(v), D = (0, h.Ng)(), L = null == D || null == (t = D.discount) ? true : t.amount, x = P ? T : I, M = P ? p.Z : _.Z, {
-    step: k,
-    breadcrumbs: j,
+    showTrialBadge: C = false,
+    showDiscountBadge: N = false
+  } = e, R = (0, s.apv)((0, l.ZP)()), P = O === g.p9.TIER_2, w = (0, d.Fv)(v), D = (0, h.Ng)(), x = null == D || null == (t = D.discount) ? true : t.amount, L = P ? T : I, j = P ? p.Z : _.Z, {
+    step: M,
+    breadcrumbs: k,
     startedPaymentFlowWithPaymentSourcesRef: U,
     isDisplayingWowMomentConfirmation: G
   } = (0, c.JL)();
-  if (null == j || 0 === j.length) return null;
-  let B = j.flatMap(e => {
+  if (null == k || 0 === k.length) return null;
+  let B = k.flatMap(e => {
     let t = e.useBreadcrumbLabel(v),
       n = e.sectionHeaderText;
     return null != t ? {
@@ -102,14 +102,14 @@ let N = function(e) {
     } : []
   });
   if (0 === B.length) return null;
-  let V = (B = B.filter(e => {
+  let Z = (B = B.filter(e => {
       let t = e.id !== u.h8.ADD_PAYMENT_STEPS,
         n = e.id === u.h8.ADD_PAYMENT_STEPS && !U.current;
       return !v || v && (t || n)
-    })).find(e => e.id === k),
-    F = null != (i = null == V || null == (n = V.sectionHeaderText) ? true : n.call(V)) ? i : null == V ? true : V.label,
-    Z = null != F && null != k,
-    H = w && Z && k === u.h8.REVIEW,
+    })).find(e => e.id === M),
+    V = null != (i = null == Z || null == (n = Z.sectionHeaderText) ? true : n.call(Z)) ? i : null == Z ? true : Z.label,
+    F = null != V && null != M,
+    H = w && F && M === u.h8.REVIEW,
     Y = P ? "nitro-pink" : "nitro-green";
   return G ? (0, r.jsx)("div", {
     className: E.container,
@@ -122,7 +122,7 @@ let N = function(e) {
     children: [(0, r.jsxs)(o.$, {
       color: Y,
       className: a()(E.headerContainer, {
-        [E.containerBottomPadding]: !Z
+        [E.containerBottomPadding]: !F
       }),
       children: [(0, r.jsx)(A, {
         isTier2: P
@@ -132,22 +132,22 @@ let N = function(e) {
         onClick: y,
         className: E.closeButtonPosition
       }), (0, r.jsx)("img", {
-        src: x,
+        src: L,
         alt: "",
         className: H ? E.bigWumpus : E.wumpus
       }), (0, r.jsx)("div", {
         className: E.textContainer,
-        children: (0, r.jsx)(M, {
+        children: (0, r.jsx)(j, {
           color: R ? "black" : "white",
           className: E.wordmark
         })
       })]
-    }), (N || C) && (0, r.jsx)(m.Z, {
-      discountAmount: L
-    }), Z && (0, r.jsx)(S, {
+    }), (C || N) && (0, r.jsx)(m.Z, {
+      discountAmount: x
+    }), F && (0, r.jsx)(S, {
       isOneStepCheckout: w,
-      headerText: F,
-      step: k,
+      headerText: V,
+      step: M,
       filteredBreadcrumbs: B
     }), H && (0, r.jsx)("div", {
       className: E.bodyGradientContainer,

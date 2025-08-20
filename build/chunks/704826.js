@@ -27,14 +27,14 @@ var Chunk636881 = require("./636881.js"),
   A = function(e) {
     return true === e ? e : String(e)
   },
-  N = function() {
+  C = function() {
     return "$0" === "a".replace(/./, "$0")
   }(),
-  C = function() {
+  N = function() {
     return !!/./ [b] && "" === /./ [b]("a", "$0")
   }();
 Chunk518187("replace", function(e, t, n) {
-  var a = C ? "$" : "$0";
+  var a = N ? "$" : "$0";
   return [function(e, n) {
     var r = p(this),
       a = u(e) ? true : m(e, b);
@@ -54,16 +54,16 @@ Chunk518187("replace", function(e, t, n) {
       ;
       "" === _(D[0]) && (o.lastIndex = h(s, f(o.lastIndex), P))
     }
-    for (var N = "", C = 0, R = 0; R < b.length; R++) {
-      for (var P, w, D = b[R], L = _(D[0]), x = y(O(d(D.index), s.length), 0), M = [], k = 1; k < D.length; k++) I(M, A(D[k]));
-      var j = D.groups;
+    for (var C = "", N = 0, R = 0; R < b.length; R++) {
+      for (var P, w, D = b[R], x = _(D[0]), L = y(O(d(D.index), s.length), 0), j = [], M = 1; M < D.length; M++) I(j, A(D[M]));
+      var k = D.groups;
       if (p) {
-        var U = v([L], M, x, s);
-        true !== j && I(U, j), w = _(r(i, true, U))
-      } else w = g(L, s, x, M, j, i);
-      x >= C && (N += S(s, C, x) + w, C = x + L.length)
+        var U = v([x], j, L, s);
+        true !== k && I(U, k), w = _(r(i, true, U))
+      } else w = g(x, s, L, j, k, i);
+      L >= N && (C += S(s, N, L) + w, N = L + x.length)
     }
-    return N + S(s, C)
+    return C + S(s, N)
   }]
 }, !!Chunk621523(function() {
   var e = /./;
@@ -73,4 +73,4 @@ Chunk518187("replace", function(e, t, n) {
       a: "7"
     }, module
   }, "7" !== "".replace(module, "$<a>")
-}) || !N || C)
+}) || !C || N)

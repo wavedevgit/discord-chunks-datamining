@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 852630, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 852630, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => o
+  Z: () => l
 });
 var Chunk951288 = require("./951288.js"),
   Chunk515753 = require("./515753.jsx"),
@@ -9,21 +10,21 @@ var Chunk951288 = require("./951288.js"),
   Chunk131704 = require("./131704.js"),
   Chunk981631 = require("./981631.js");
 
-function o(e) {
+function l(e) {
   let {
     selected: t,
     nameplate: n
-  } = e, o = (0, s.x)(), c = new a.mn({
+  } = e, l = (0, a.x)(), c = new o.mn({
     id: "0",
-    type: l.d4z.DM,
+    type: s.d4z.DM,
     name: "self",
     guild_id: "0",
-    recipients: [o.id]
+    recipients: [l.id]
   });
-  return (0, i.jsx)(r.RS, {
+  return (0, r.jsx)(i.RS, {
     selected: t,
     channel: c,
-    user: o,
+    user: l,
     nameplate: n
   })
 }

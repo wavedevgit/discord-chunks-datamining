@@ -1,4 +1,4 @@
-/** Chunk was on 69003 **/
+/** Chunk was on 91488 **/
 /** chunk id: 695301, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -22,10 +22,10 @@ let b = Chunk647438.memo(function(e) {
   let {
     guildNode: b,
     lowerBadge: O
-  } = e, _ = b.id, y = (0, l.e7)([p.Z], () => p.Z.getGuild(_)), v = (0, a.E)(y), j = (0, l.e7)([f.Z], () => f.Z.isFocused()), C = (0, l.e7)([u.Z], () => u.Z.isUnavailable(_)), E = (0, c.Z)(e => e.guildId), x = (0, h.Z)(_), {
+  } = e, _ = b.id, y = (0, l.e7)([p.Z], () => p.Z.getGuild(_)), j = (0, a.E)(y), v = (0, l.e7)([f.Z], () => f.Z.isFocused()), C = (0, l.e7)([u.Z], () => u.Z.isUnavailable(_)), x = (0, c.Z)(e => e.guildId), E = (0, h.Z)(_), {
     badge: S,
-    unread: P,
-    isMentionLowImportance: I
+    unread: I,
+    isMentionLowImportance: P
   } = (0, l.cj)([d.default], () => ({
     badge: d.default.getMentionCount(_),
     isMentionLowImportance: d.default.getIsMentionLowImportance(_),
@@ -60,14 +60,14 @@ let b = Chunk647438.memo(function(e) {
   }({}, e), n = n = {
     guild: y,
     unavailable: C,
-    animatable: j,
-    selected: E === _,
+    animatable: v,
+    selected: x === _,
     badge: S,
-    isMentionLowImportance: I,
+    isMentionLowImportance: P,
     lowerBadge: w,
-    unread: P,
-    mediaState: x,
-    guildJoinRequestStatus: v
+    unread: I,
+    mediaState: E,
+    guildJoinRequestStatus: j
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {

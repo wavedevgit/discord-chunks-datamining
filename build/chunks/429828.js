@@ -1,12 +1,13 @@
-/** Chunk was on 54157 **/
-/** chunk id: 429828, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 429828, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => l
+  Z: () => a
 });
 var Chunk647438 = require("./647438.js"),
   Chunk192720 = require("./192720.js");
 
-function l() {
+function a() {
   Chunk647438.useEffect(() => {
     (0, Chunk192720.sE)()
   }, [])

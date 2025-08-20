@@ -99,11 +99,11 @@ function A(e) {
   return "[object SharedArrayBuffer]" === u(e)
 }
 
-function N(e) {
+function C(e) {
   return true !== S && (true === A.working && (A.working = A(new S)), A.working ? A(e) : e instanceof S)
 }
 
-function C(e) {
+function N(e) {
   return m(e, d)
 }
 
@@ -122,7 +122,7 @@ function w(e) {
 function D(e) {
   return c && m(e, h)
 }
-exports.isSharedArrayBuffer = N, exports.isAsyncFunction = function(e) {
+exports.isSharedArrayBuffer = C, exports.isAsyncFunction = function(e) {
   return "[object AsyncFunction]" === u(e)
 }, exports.isMapIterator = function(e) {
   return "[object Map Iterator]" === u(e)
@@ -132,10 +132,10 @@ exports.isSharedArrayBuffer = N, exports.isAsyncFunction = function(e) {
   return "[object Generator]" === u(e)
 }, exports.isWebAssemblyCompiledModule = function(e) {
   return "[object WebAssembly.Module]" === u(e)
-}, exports.isNumberObject = C, exports.isStringObject = R, exports.isBooleanObject = P, exports.isBigIntObject = w, exports.isSymbolObject = D, exports.isBoxedPrimitive = function(e) {
-  return C(e) || R(e) || P(e) || w(e) || D(e)
+}, exports.isNumberObject = N, exports.isStringObject = R, exports.isBooleanObject = P, exports.isBigIntObject = w, exports.isSymbolObject = D, exports.isBoxedPrimitive = function(e) {
+  return N(e) || R(e) || P(e) || w(e) || D(e)
 }, exports.isAnyArrayBuffer = function(e) {
-  return "undefined" != typeof Uint8Array && (v(e) || N(e))
+  return "undefined" != typeof Uint8Array && (v(e) || C(e))
 }, ["isProxy", "isExternal", "isModuleNamespaceObject"].forEach(function(e) {
   Object.defineProperty(t, e, {
     enumerable: false,

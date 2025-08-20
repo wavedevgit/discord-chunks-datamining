@@ -3,8 +3,8 @@
 require.d(exports, {
   Tx: () => l,
   d8: () => c,
-  nY: () => o,
-  v6: () => i
+  nY: () => i,
+  v6: () => a
 });
 var Chunk951288 = require("./951288.js");
 
@@ -26,7 +26,7 @@ function c(e) {
   })
 }
 
-function i(e) {
+function a(e) {
   let {
     children: n
   } = e;
@@ -35,7 +35,7 @@ function i(e) {
   })
 }
 
-function o(e) {
+function i(e) {
   let {
     children: n
   } = e;

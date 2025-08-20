@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 918257, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 918257, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => f
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -14,22 +15,24 @@ var Chunk906732 = require("./906732.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function m(e) {
+function f(e) {
   let {
     refreshStyles: t = false
-  } = e, n = (0, a.pI)(), {
-    analyticsLocations: m
-  } = (0, r.ZP)();
-  return (0, i.jsx)(c.Z, {
-    title: u.intl.string(u.t.xbMc8v),
-    description: u.intl.format(u.t.BPbGq6, {
-      helpCenterArticle: l.Z.getArticleURL(d.BhN.SOUNDBOARD)
+  } = e, n = (0, o.pI)(), {
+    analyticsLocations: f
+  } = (0, i.ZP)();
+
+  function _(e) {
+    n = (0, l.A)(e), (0, a.xz)(n, f)
+  }
+  return (0, r.jsx)(c.Z, {
+    title: d.intl.string(d.t.xbMc8v),
+    description: d.intl.format(d.t.BPbGq6, {
+      helpCenterArticle: s.Z.getArticleURL(u.BhN.SOUNDBOARD)
     }),
-    label: u.intl.string(u.t.kbFsAA),
+    label: d.intl.string(d.t.kbFsAA),
     volume: n,
-    onVolumeChange: function(e) {
-      n = (0, o.A)(e), (0, s.xz)(n, m)
-    },
+    onVolumeChange: _,
     refreshStyles: t
   })
 }

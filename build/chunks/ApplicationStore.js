@@ -123,14 +123,14 @@ function A(e) {
     }
 }
 
-function N(e) {
+function C(e) {
   let {
     applicationId: t
   } = e, n = m[t];
   return m[t] = false, false !== n
 }
 
-function C(e) {
+function N(e) {
   let {
     applicationIds: t
   } = e, n = false;
@@ -173,7 +173,7 @@ function D(e) {
   })
 }
 
-function L(e) {
+function x(e) {
   let {
     userProfile: t
   } = e, {
@@ -186,7 +186,7 @@ function L(e) {
   })
 }
 
-function x(e) {
+function L(e) {
   let {
     botUserId: t
   } = e, n = g.botUserIdToAppUsage[t];
@@ -195,7 +195,7 @@ function x(e) {
   }))
 }
 
-function M(e) {
+function j(e) {
   let {
     applicationIds: t
   } = e, n = false;
@@ -206,7 +206,7 @@ function M(e) {
   return n
 }
 
-function k(e) {
+function M(e) {
   let {
     entitlements: t
   } = e, n = false;
@@ -217,7 +217,7 @@ function k(e) {
   return n
 }
 
-function j(e) {
+function k(e) {
   let {
     guildId: t,
     applications: n
@@ -256,7 +256,7 @@ function B(e) {
   b(o.ZP.createFromServer(n.store_listing.sku.application))
 }
 
-function V(e) {
+function Z(e) {
   let {
     invite: t
   } = e;
@@ -264,7 +264,7 @@ function V(e) {
   b(o.ZP.createFromServer(t.target_application))
 }
 
-function F(e) {
+function V(e) {
   let {
     storeListing: t
   } = e;
@@ -272,7 +272,7 @@ function F(e) {
   b(o.ZP.createFromServer(t.sku.application))
 }
 
-function Z(e) {
+function F(e) {
   let {
     messages: t
   } = e;
@@ -372,25 +372,25 @@ let q = new z(Chunk570140.Z, {
   OVERLAY_INITIALIZE: O,
   APPLICATION_FETCH: v,
   APPLICATION_FETCH_SUCCESS: T,
-  APPLICATION_FETCH_FAIL: N,
-  APPLICATIONS_FETCH: C,
+  APPLICATION_FETCH_FAIL: C,
+  APPLICATIONS_FETCH: N,
   APPLICATIONS_FETCH_SUCCESS: w,
-  APPLICATIONS_FETCH_FAIL: M,
+  APPLICATIONS_FETCH_FAIL: j,
   APPLICATION_UPDATE: I,
-  APPLICATION_SUBSCRIPTIONS_FETCH_ENTITLEMENTS_SUCCESS: k,
-  ENTITLEMENTS_FETCH_FOR_USER_SUCCESS: k,
-  ENTITLEMENTS_GIFTABLE_FETCH_SUCCESS: k,
-  GUILD_APPLICATIONS_FETCH_SUCCESS: j,
+  APPLICATION_SUBSCRIPTIONS_FETCH_ENTITLEMENTS_SUCCESS: M,
+  ENTITLEMENTS_FETCH_FOR_USER_SUCCESS: M,
+  ENTITLEMENTS_GIFTABLE_FETCH_SUCCESS: M,
+  GUILD_APPLICATIONS_FETCH_SUCCESS: k,
   BILLING_PAYMENTS_FETCH_SUCCESS: U,
   PAYMENT_UPDATE: G,
-  INVITE_RESOLVE_SUCCESS: V,
+  INVITE_RESOLVE_SUCCESS: Z,
   GIFT_CODE_RESOLVE_SUCCESS: B,
   LIBRARY_FETCH_SUCCESS: R,
-  STORE_LISTING_FETCH_SUCCESS: F,
-  LOAD_MESSAGES_SUCCESS: Z,
+  STORE_LISTING_FETCH_SUCCESS: V,
+  LOAD_MESSAGES_SUCCESS: F,
   APP_RECOMMENDATIONS_FETCH_RECOMMENDATIONS_SUCCESS: D,
-  USER_PROFILE_FETCH_SUCCESS: L,
-  APP_DM_OPEN: x,
+  USER_PROFILE_FETCH_SUCCESS: x,
+  APP_DM_OPEN: L,
   USER_AUTHORIZED_APPS_UPDATE: W,
   LOAD_NOTIFICATION_CENTER_ITEMS_SUCCESS: K,
   OAUTH2_TOKEN_CREATE: Y,

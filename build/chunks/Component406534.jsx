@@ -1,4 +1,4 @@
-/** Chunk was on 36499 **/
+/** Chunk was on 5665 **/
 /** chunk id: 406534, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => en
@@ -132,11 +132,11 @@ function en(e) {
     eg = B.length > 0 && (null == (t = B.first()) ? true : t.isFirstMessageInForumPost(f)),
     eb = (0, c.ts)(f),
     ey = (0, l.e7)([S.Z], () => S.Z.shouldShowTopicsBar() && !ed),
-    e_ = (0, O.P)(f.id),
+    e_ = (0, j.P)(f.id),
     eC = (0, v.z)(f.id, Q.zr),
     ex = (0, p.k)(f.id),
     ev = (0, L.Z)(),
-    ej = function(e, t) {
+    eO = function(e, t) {
       if (e.isDM() && null != t)
         if (t.type === x.pj.STRANGER_DANGER) return (0, r.jsx)(E.M, {
           channelId: e.id,
@@ -148,14 +148,14 @@ function en(e) {
         warningId: t.id,
         senderId: e.getRecipientId()
       });
-      else return (0, r.jsx)(j.Y, {
+      else return (0, r.jsx)(O.Y, {
         channelId: e.id,
         warningId: t.id,
         senderId: e.getRecipientId()
       });
       return null
     }(f, null != (n = null != e_ ? e_ : eC) ? n : ex),
-    eO = f.isForumPost() && !eg ? (0, r.jsx)(g.Z, {
+    ej = f.isForumPost() && !eg ? (0, r.jsx)(g.Z, {
       postId: f.id
     }) : null,
     eE = (0, y.Z)(f.id),
@@ -390,7 +390,7 @@ function en(e) {
     channelStreamMarkup: eI,
     newMessagesBar: i,
     jumpToPresentBar: s,
-    forumPostActionBar: eO,
-    safetyWarningBanner: ej
+    forumPostActionBar: ej,
+    safetyWarningBanner: eO
   }
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 17768 **/
+/** Chunk was on 2026 **/
 /** chunk id: 259673, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   M: () => d
@@ -15,29 +15,29 @@ let d = e => {
   var t, n;
   let {
     user: d
-  } = e, p = c.ZP.canUsePremiumProfileCustomization(d), m = (0, a.cj)([l.Z], () => l.Z.getAllPending()), {
-    pendingAvatar: g
-  } = m, f = function(e, t) {
+  } = e, m = s.ZP.canUsePremiumProfileCustomization(d), f = (0, i.cj)([o.Z], () => o.Z.getAllPending()), {
+    pendingAvatar: p
+  } = f, v = function(e, t) {
     if (null == e) return {};
-    var n, r, a = function(e, t) {
+    var n, r, i = function(e, t) {
       if (null == e) return {};
-      var n, r, a = {},
-        i = Object.keys(e);
-      for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (a[n] = e[n]);
-      return a
+      var n, r, i = {},
+        l = Object.keys(e);
+      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+      return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var i = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n])
+      var l = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
-    return a
-  }(m, ["pendingAvatar"]), _ = (0, o.SD)({
+    return i
+  }(f, ["pendingAvatar"]), b = (0, a.SD)({
     userId: d.id,
-    image: g
+    image: p
   });
   return (0, r.jsx)("div", {
     className: u.container,
-    children: (0, r.jsx)(i.Z, (t = function(e) {
+    children: (0, r.jsx)(l.Z, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -54,11 +54,11 @@ let d = e => {
         })
       }
       return e
-    }({}, f), n = n = {
-      pendingAvatar: _,
+    }({}, v), n = n = {
+      pendingAvatar: b,
       user: d,
-      pendingBadges: [(0, s.X)()],
-      canUsePremiumCustomization: p,
+      pendingBadges: [(0, c.X)()],
+      canUsePremiumCustomization: m,
       disabledInputs: true,
       hideViewFullProfileButton: true
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

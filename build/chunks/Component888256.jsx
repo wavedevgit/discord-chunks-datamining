@@ -1,5 +1,6 @@
-/** Chunk was on 66181 **/
-/** chunk id: 888256, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 888256, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   Z: () => c
 }), require("./953529.js");
@@ -16,35 +17,35 @@ function c(e) {
     className: t,
     currentUser: n,
     disabled: c,
-    handleDisableAccount: d,
-    handleDeleteAccount: u
-  } = e, m = n.isClaimed();
-  return (0, i.jsx)(s.F, {
-    setting: a.s6.ACCOUNT_DISABLE_ACCOUNT,
-    children: (0, i.jsxs)(r.hjN, {
+    handleDisableAccount: u,
+    handleDeleteAccount: d
+  } = e, f = n.isClaimed();
+  return (0, r.jsx)(a.F, {
+    setting: o.s6.ACCOUNT_DISABLE_ACCOUNT,
+    children: (0, r.jsxs)(i.hjN, {
       className: t,
-      title: l.intl.string(l.t.ZKsIkp),
-      children: [(0, i.jsx)(r.R94, {
-        className: o.description,
-        type: r.R94.Types.DESCRIPTION,
-        children: m ? l.intl.string(l.t.TIh3Ym) : l.intl.string(l.t.czsGAw)
-      }), (0, i.jsxs)(r.hE2, {
+      title: s.intl.string(s.t.ZKsIkp),
+      children: [(0, r.jsx)(i.R94, {
+        className: l.description,
+        type: i.R94.Types.DESCRIPTION,
+        children: f ? s.intl.string(s.t.TIh3Ym) : s.intl.string(s.t.czsGAw)
+      }), (0, r.jsxs)(i.hE2, {
         size: "sm",
-        className: o.buttonContainer,
-        children: [m ? (0, i.jsx)(r.zxk, {
+        className: l.buttonContainer,
+        children: [f ? (0, r.jsx)(i.zxk, {
           variant: "critical-primary",
           size: "sm",
-          text: l.intl.string(l.t.jf5GGR),
+          text: s.intl.string(s.t.jf5GGR),
           disabled: c,
-          onClick: d
-        }) : null, (0, i.jsx)(s.F, {
-          setting: a.s6.ACCOUNT_DELETE_ACCOUNT,
-          children: (0, i.jsx)(r.zxk, {
+          onClick: u
+        }) : null, (0, r.jsx)(a.F, {
+          setting: o.s6.ACCOUNT_DELETE_ACCOUNT,
+          children: (0, r.jsx)(i.zxk, {
             variant: "critical-secondary",
             size: "sm",
-            text: l.intl.string(l.t["8lQ2ra"]),
+            text: s.intl.string(s.t["8lQ2ra"]),
             disabled: c,
-            onClick: u
+            onClick: d
           })
         })]
       })]

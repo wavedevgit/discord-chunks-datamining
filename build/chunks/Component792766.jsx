@@ -27,16 +27,16 @@ let u = e => {
       variant: "heading-md/normal",
       color: "header-muted",
       className: c.alignStart,
-      children: s.intl.string(s.t.Eabu19)
+      children: a.intl.string(a.t.Eabu19)
     }), (0, r.jsxs)("div", {
       className: c.guild,
       children: [(0, r.jsx)(l.ZP, {
         mask: l.ZP.Masks.SQUIRCLE,
         width: 40,
         height: 40,
-        children: (0, r.jsx)(a.Z, {
+        children: (0, r.jsx)(s.Z, {
           guild: u,
-          size: a.Z.Sizes.MEDIUM,
+          size: s.Z.Sizes.MEDIUM,
           active: true
         })
       }), (0, r.jsxs)("div", {
@@ -50,7 +50,7 @@ let u = e => {
             className: c.dot
           }), null != n && n > 0 ? (0, r.jsx)(i.Text, {
             variant: "text-sm/normal",
-            children: s.intl.format(s.t["LC+S+v"], {
+            children: a.intl.format(a.t["LC+S+v"], {
               membersOnline: n
             })
           }) : null]

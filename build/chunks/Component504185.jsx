@@ -1,4 +1,4 @@
-/** Chunk was on 36499 **/
+/** Chunk was on 5665 **/
 /** chunk id: 504185, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => ed,
@@ -81,7 +81,7 @@ function el(e) {
 }
 let ea = "HasBeenInStageChannel",
   eo = e => {
-    (0, O.v)(g.Z.VOICE_CONTROL_TRAY, O.d.STAY_ON_TOP, e), E.hY(et.KJ3.CHANNEL_CALL_POPOUT, e)
+    (0, j.v)(g.Z.VOICE_CONTROL_TRAY, j.d.STAY_ON_TOP, e), E.hY(et.KJ3.CHANNEL_CALL_POPOUT, e)
   };
 
 function es(e) {
@@ -117,13 +117,13 @@ function es(e) {
     }) : null, m ? (0, r.jsx)(A.Z, {
       popoutOpen: l,
       onOpenPopout: () => {
-        (0, O.v)(u, O.d.POPOUT, true), (() => {
+        (0, j.v)(u, j.d.POPOUT, true), (() => {
           let e = t.getGuildId();
           null != e && null != h && (0, P.XU)(e, h), E.hP(t)
         })()
       },
       onClosePopout: () => {
-        (0, O.v)(u, O.d.POPOUT, false), p.Z.wait(() => E.xv(et.KJ3.CHANNEL_CALL_POPOUT))
+        (0, j.v)(u, j.d.POPOUT, false), p.Z.wait(() => E.xv(et.KJ3.CHANNEL_CALL_POPOUT))
       }
     }) : null, x]
   })
@@ -158,12 +158,12 @@ function eu(e) {
     {
       analyticsLocations: v
     } = (0, b.ZP)(g.Z.VOICE_CONTROL_TRAY),
-    j = (0, m.bp)(),
-    O = (0, s.e7)([U.Z], () => U.Z.getVoiceChannelId() === c.id, [c.id]),
+    O = (0, m.bp)(),
+    j = (0, s.e7)([U.Z], () => U.Z.getVoiceChannelId() === c.id, [c.id]),
     E = (0, s.e7)([L.Z], () => L.Z.can(et.Plq.CONNECT, c)),
     S = (0, G.w8)(c.id, V.pV.SPEAKER),
     P = (0, s.e7)([y.Z], () => y.Z.getSelectedParticipant(c.id)),
-    I = f && j !== et.IlC.POPOUT,
+    I = f && O !== et.IlC.POPOUT,
     [Z, A] = i.useState(0),
     {
       isOnStartStageScreen: w
@@ -174,9 +174,9 @@ function eu(e) {
   return w && (M = "0px"), l = w ? (0, r.jsx)(J.Z, {
     channel: c,
     onContinueClick: () => {
-      (0, W.Ku)(false), O || (0, H.TM)(c)
+      (0, W.Ku)(false), j || (0, H.TM)(c)
     }
-  }) : O ? (0, r.jsx)(X.Z, {
+  }) : j ? (0, r.jsx)(X.Z, {
     channel: c,
     onScroll: e => {
       let {
@@ -195,19 +195,19 @@ function eu(e) {
       height: "calc(100% - ".concat(M, ")"),
       paddingTop: M
     },
-    disableGradients: !O || 0 === Z && N.e.TOP,
-    renderBottomCenter: () => O ? (0, r.jsx)(b.Gt, {
+    disableGradients: !j || 0 === Z && N.e.TOP,
+    renderBottomCenter: () => j ? (0, r.jsx)(b.Gt, {
       value: v,
       children: (0, r.jsx)(Q.Z, {
         channel: c,
         isOnStartStageScreen: w
       })
     }) : null,
-    renderBottomRight: () => O ? (0, r.jsx)(b.Gt, {
+    renderBottomRight: () => j ? (0, r.jsx)(b.Gt, {
       value: v,
       children: (0, r.jsx)(es, {
         channel: c,
-        appContext: j,
+        appContext: O,
         popoutOpen: f,
         popoutWindow: p,
         popoutWindowAlwaysOnTop: h,
@@ -255,7 +255,7 @@ function ed(e) {
   } = (0, s.cj)([S.Z], () => ({
     popoutWindow: S.Z.getWindow(et.KJ3.CHANNEL_CALL_POPOUT),
     popoutWindowAlwaysOnTop: S.Z.getIsAlwaysOnTop(et.KJ3.CHANNEL_CALL_POPOUT)
-  })), O = null != p && !p.closed, {
+  })), j = null != p && !p.closed, {
     analyticsLocations: E
   } = (0, b.ZP)(g.Z.STAGE_CHANNEL_CALL), P = (0, m.bp)(), {
     chatOpen: I,
@@ -265,7 +265,7 @@ function ed(e) {
     participantsListOpen: y.Z.getParticipantsListOpen(t.id)
   }), [t.id]), N = (0, s.e7)([D.Z], () => D.Z.getGuild(t.guild_id), [t.guild_id]), {
     hasParticipantsPanel: A
-  } = (0, j.Z)({
+  } = (0, O.Z)({
     location: "StageChannelCall"
   });
   (0, f.ZP)(() => {
@@ -279,7 +279,7 @@ function ed(e) {
   let {
     width: w = 0,
     ref: R
-  } = (0, h.ZP)(), M = w - 550, k = !O || O && P === et.IlC.POPOUT;
+  } = (0, h.ZP)(), M = w - 550, k = !j || j && P === et.IlC.POPOUT;
   return (0, r.jsx)(b.Gt, {
     value: E,
     children: (0, r.jsxs)(C.B2, {
@@ -301,7 +301,7 @@ function ed(e) {
                 showRequestToSpeakSidebar: l,
                 popoutWindow: p,
                 popoutWindowAlwaysOnTop: _,
-                popoutOpen: O,
+                popoutOpen: j,
                 chatOpen: I,
                 idleProps: e
               })

@@ -1,5 +1,6 @@
-/** Chunk was on 66181 **/
-/** chunk id: 996746, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 996746, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   Z: () => c
 });
@@ -13,10 +14,10 @@ var Chunk951288 = require("./951288.js"),
 function c(e) {
   let {
     nameplate: t
-  } = e, n = (0, r.e7)([o.default], () => o.default.getCurrentUser()), c = (0, a.Y)({
+  } = e, n = (0, i.e7)([l.default], () => l.default.getCurrentUser()), c = (0, o.Y)({
     location: "AccountPreview"
   });
-  return (0, i.jsx)(l.m, {
+  return (0, r.jsx)(s.m, {
     selfMute: false,
     selfDeaf: false,
     serverMute: false,
@@ -24,7 +25,7 @@ function c(e) {
     suppress: false,
     speaking: false,
     streaming: false,
-    status: s.Sk.ONLINE,
+    status: a.Sk.ONLINE,
     currentUser: n,
     activities: [],
     applicationStream: true,

@@ -1,19 +1,38 @@
-/** Chunk was on 86031 **/
-/** chunk id: 128077, original params: e,t,r (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 128077, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  f: () => l
+  f: () => o
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk751648 = require("./751648.js"),
   Chunk388032 = require("./388032.jsx");
 
-function l() {
-  let [e, t] = (0, Chunk647438.useState)(""), [r, l] = (0, Chunk647438.useState)([]), [o, s] = (0, Chunk647438.useState)(null), [c, u] = (0, Chunk647438.useState)(false);
+function o() {
+  let [e, t] = (0, Chunk647438.useState)(""), [n, o] = (0, Chunk647438.useState)([]), [s, l] = (0, Chunk647438.useState)(null), [c, u] = (0, Chunk647438.useState)(false);
+
+  function d(e, t, n) {
+    let r = () => {
+        u(true), l(null)
+      },
+      a = e => {
+        o(e), u(false), null == n || n(e)
+      },
+      s = e => {
+        l(e), u(false)
+      };
+    return (0, i.df)({
+      skuId: e,
+      loadId: t,
+      onRedeemStart: r,
+      onRedeemSucceed: a,
+      onRedeemFail: s
+    })
+  }
   return (0, Chunk647438.useEffect)(() => {
-    if (null != o) return void exports(Chunk388032.intl.format(Chunk388032.t["7gHWra"], {
+    if (null != s) return void exports(Chunk388032.intl.format(Chunk388032.t["7gHWra"], {
       amount: "1 orb",
-      errorMessage: o.message
+      errorMessage: s.message
     }));
     if (null != require && require.length > 0) {
       let e = require.map(e => {
@@ -27,25 +46,11 @@ function l() {
       return
     }
     exports("")
-  }, [require, o]), {
+  }, [require, s]), {
     entitlements: require,
-    error: o,
+    error: s,
     isSubmitting: c,
     responseMessage: module,
-    redeemVirtualCurrency: function(e, t, r) {
-      return (0, a.df)({
-        skuId: e,
-        loadId: t,
-        onRedeemStart: () => {
-          u(true), s(null)
-        },
-        onRedeemSucceed: e => {
-          l(e), u(false), null == r || r(e)
-        },
-        onRedeemFail: e => {
-          s(e), u(false)
-        }
-      })
-    }
+    redeemVirtualCurrency: d
   }
 }

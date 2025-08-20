@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 810762, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 810762, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -14,35 +15,35 @@ var Chunk873546 = require("./873546.js"),
   Chunk949914 = require("./949914.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk343447 = require("./343447.js");
-let p = e => {
+let _ = e => {
   let {
     onGoBack: t
   } = e, n = (0, c.Z)(), {
-    loading: p
-  } = (0, o.sp)(n);
-  return ((0, l.Z)(r.tq ? "role-subscriptions-user-setting" : true), p) ? (0, i.jsx)(a.$jN, {}) : 0 === n.length ? null : (0, i.jsxs)("div", {
-    className: m.__invalid_container,
-    children: [(0, i.jsxs)(s.zx, {
-      look: s.zx.Looks.BLANK,
-      innerClassName: m.backButtonContents,
+    loading: _
+  } = (0, l.sp)(n);
+  return ((0, s.Z)(i.tq ? "role-subscriptions-user-setting" : true), _) ? (0, r.jsx)(o.$jN, {}) : 0 === n.length ? null : (0, r.jsxs)("div", {
+    className: f.__invalid_container,
+    children: [(0, r.jsxs)(a.zx, {
+      look: a.zx.Looks.BLANK,
+      innerClassName: f.backButtonContents,
       onClick: t,
-      children: [(0, i.jsx)(a.ZSh, {
+      children: [(0, r.jsx)(o.ZSh, {
         size: "md",
         color: "currentColor",
-        className: m.arrowIcon
-      }), u.intl.string(u.t.hqyhKS)]
-    }), (0, i.jsx)(a.LZC, {
+        className: f.arrowIcon
+      }), d.intl.string(d.t.hqyhKS)]
+    }), (0, r.jsx)(o.LZC, {
       size: 10
-    }), (0, i.jsx)(a.vwX, {
+    }), (0, r.jsx)(o.vwX, {
       tag: "h1",
-      children: u.intl.string(u.t["KzCF//"])
-    }), (0, i.jsx)(a.Text, {
+      children: d.intl.string(d.t["KzCF//"])
+    }), (0, r.jsx)(o.Text, {
       variant: "text-sm/normal",
-      className: m.pageDescription,
-      children: u.intl.string(u.t["Y+ucR0"])
-    }), (0, i.jsx)("div", {
-      className: m.subscriptionsContainer,
-      children: n.map(e => (0, i.jsx)(d.Z, {
+      className: f.pageDescription,
+      children: d.intl.string(d.t["Y+ucR0"])
+    }), (0, r.jsx)("div", {
+      className: f.subscriptionsContainer,
+      children: n.map(e => (0, r.jsx)(u.Z, {
         subscription: e
       }, e.id))
     })]

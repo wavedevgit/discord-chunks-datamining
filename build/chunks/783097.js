@@ -4,24 +4,24 @@
 require.d(exports, {
   $d: () => D,
   BQ: () => w,
-  Cb: () => F,
-  Hu: () => Z,
+  Cb: () => V,
+  Hu: () => F,
   L1: () => z,
   Ow: () => K,
   PZ: () => q,
-  WA: () => j,
+  WA: () => k,
   Wx: () => P,
   XZ: () => Y,
   Y$: () => B,
   Yn: () => H,
   dF: () => U,
-  jD: () => L,
-  lf: () => k,
+  jD: () => x,
+  lf: () => M,
   pF: () => W,
-  sl: () => V,
-  vJ: () => M,
+  sl: () => Z,
+  vJ: () => j,
   yJ: () => G,
-  ye: () => x
+  ye: () => L
 }), require("./953529.js"), require("./997841.js"), require("./804061.js"), require("./704826.js"), require("./35282.js"), require("./539854.js"), require("./388685.js");
 var Chunk912370 = require("./912370.js"),
   Chunk668781 = require("./668781.js"),
@@ -78,13 +78,13 @@ function A(e, t) {
   return n
 }
 
-function N(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function C(e, t) {
+function N(e, t) {
   if (null == e) return {};
   var n, r, i = R(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -113,26 +113,26 @@ function D(e) {
   return w(e) ? e.name : I.intl.string(I.t.UB2gGx)
 }
 
-function L(e) {
+function x(e) {
   return w(e) ? e.description : I.intl.string(I.t.X9fusr)
 }
 
-function x(e) {
+function L(e) {
   var t;
   return w(e) && (0, m.yE)(null != (t = e.flags) ? t : 0, y.udG.EMBEDDED)
 }
 
-function M(e) {
+function j(e) {
   var t;
   return w(e) && (0, m.yE)(null != (t = e.flags) ? t : 0, y.udG.PARTNER)
 }
 
-function k(e) {
+function M(e) {
   var t;
   return w(e) && (0, m.yE)(null != (t = e.flags) ? t : 0, y.udG.PROMOTED)
 }
 
-function j(e) {
+function k(e) {
   let t = G(e),
     n = null == t ? true : t.client_platform_config[(0, s.Z)((0, g.getOS)())],
     r = Date.now();
@@ -144,7 +144,7 @@ function j(e) {
 }
 
 function U(e) {
-  switch (j(e)) {
+  switch (k(e)) {
     case o.ww.NEW:
       return "New";
     case o.ww.UPDATED:
@@ -155,7 +155,7 @@ function U(e) {
 }
 
 function G(e) {
-  return w(e) && x(e) ? e instanceof p.ZP ? e.embeddedActivityConfig : e.embedded_activity_config : null
+  return w(e) && L(e) ? e instanceof p.ZP ? e.embeddedActivityConfig : e.embedded_activity_config : null
 }
 
 function B(e) {
@@ -200,14 +200,14 @@ function B(e) {
   return p()
 }
 
-function V(e) {
+function Z(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
     {
       fakeAppIconURL: n
     } = t,
-    r = C(t, ["fakeAppIconURL"]);
+    r = N(t, ["fakeAppIconURL"]);
   return w(e) ? {
-    iconURL: h.ZP.getApplicationIconURL(N(S({}, r), {
+    iconURL: h.ZP.getApplicationIconURL(C(S({}, r), {
       id: e.id,
       icon: e.icon
     })),
@@ -220,11 +220,11 @@ function V(e) {
   }
 }
 
-function F(e) {
+function V(e) {
   return !!w(e) && (e instanceof p.ZP ? e.isMonetized : e.is_monetized)
 }
 
-function Z(e) {
+function F(e) {
   let t = G(e);
   return null != t && t.displays_advertisements
 }
@@ -240,8 +240,8 @@ function Y(e) {
 function W(e) {
   let t = [];
   for (let n of e) {
-    let e = n.application_directory_collection_items.filter(e => e.type === r.C.APPLICATION && x(e.application));
-    0 !== e.length && t.push(N(S({}, n), {
+    let e = n.application_directory_collection_items.filter(e => e.type === r.C.APPLICATION && L(e.application));
+    0 !== e.length && t.push(C(S({}, n), {
       application_directory_collection_items: e
     }))
   }

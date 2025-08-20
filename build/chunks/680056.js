@@ -1,4 +1,4 @@
-/** Chunk was on 2668 **/
+/** Chunk was on 57478 **/
 /** chunk id: 680056, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => o
@@ -13,28 +13,28 @@ let o = e => {
     setExporting: n
   } = e, {
     analyticsLocations: o
-  } = (0, l.ZP)();
+  } = (0, r.ZP)();
   return {
-    onShareClick: r.useCallback(async e => {
+    onShareClick: l.useCallback(async e => {
       let {
-        clip: r,
-        cropData: l,
-        applicationAudioEnabled: s,
-        voiceAudioEnabled: c,
+        clip: l,
+        cropData: r,
+        applicationAudioEnabled: c,
+        voiceAudioEnabled: s,
         onShareComplete: u
       } = e;
-      n(r.id);
+      n(l.id);
       try {
-        var d, p, m, f, b, g, j, y, h, x;
+        var d, p, m, f, b, g, h, y, x, j;
         let e = (0, a.W)(t);
-        await (0, i.e)(r, {
+        await (0, i.e)(l, {
           channelId: e ? t : true,
           analyticsLocations: o,
           editMetadata: {
-            start: null != (g = null != (b = null == l ? true : l.start) ? b : null == (d = r.editMetadata) ? true : d.start) ? g : 0,
-            end: null != (y = null != (j = null == l ? true : l.end) ? j : null == (p = r.editMetadata) ? true : p.end) ? y : r.length / 1e3,
-            applicationAudio: null == (h = null != s ? s : null == (m = r.editMetadata) ? true : m.applicationAudio) || h,
-            voiceAudio: null == (x = null != c ? c : null == (f = r.editMetadata) ? true : f.voiceAudio) || x
+            start: null != (g = null != (b = null == r ? true : r.start) ? b : null == (d = l.editMetadata) ? true : d.start) ? g : 0,
+            end: null != (y = null != (h = null == r ? true : r.end) ? h : null == (p = l.editMetadata) ? true : p.end) ? y : l.length / 1e3,
+            applicationAudio: null == (x = null != c ? c : null == (m = l.editMetadata) ? true : m.applicationAudio) || x,
+            voiceAudio: null == (j = null != s ? s : null == (f = l.editMetadata) ? true : f.voiceAudio) || j
           }
         })
       } catch (e) {} finally {

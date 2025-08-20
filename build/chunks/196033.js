@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 196033, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 196033, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  W: () => p
+  W: () => g
 });
 var Chunk647438 = require("./647438.js"),
   Chunk115434 = require("./115434.js"),
@@ -13,11 +14,50 @@ var Chunk647438 = require("./647438.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk513767 = require("./513767.js"),
   Chunk78230 = require("./78230.js");
-let p = () => {
+
+function _(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function p(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      _(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function h(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+let g = () => {
   let e = (0, Chunk619899.zL)(Chunk281598.jE.UPSELL_BANNER),
     t = (0, Chunk619899.zL)(Chunk281598.jE.UPSELL_BANNER_POPOUT),
     n = (0, Chunk442837.e7)([Chunk874703.Z], () => Chunk874703.Z.getMarketingBySurface(Chunk115434.K.EDIT_PROFILE_SETTINGS)),
-    p = Chunk647438.useMemo(() => null != require ? require : {
+    _ = Chunk647438.useMemo(() => null != require ? require : {
       asset: Chunk78230,
       popoutAsset: Chunk513767,
       title: Chunk388032.intl.string(Chunk388032.t.QZVVBg),
@@ -25,38 +65,9 @@ let p = () => {
       version: 0,
       revertTextColor: false
     }, [require]);
-  return Chunk647438.useMemo(() => {
-    var n, i;
-    return n = function(e) {
-      for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-          i = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-          return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), i.forEach(function(t) {
-          var i;
-          i = n[t], t in e ? Object.defineProperty(e, t, {
-            value: i,
-            enumerable: true,
-            configurable: true,
-            writable: true
-          }) : e[t] = i
-        })
-      }
-      return e
-    }({}, p), i = i = {
-      type: Chunk264181.Z.BANNER,
-      asset: null != module ? module : p.asset,
-      popoutAsset: null != exports ? exports : p.popoutAsset
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(require, Object.getOwnPropertyDescriptors(Chunk647438)) : (function(e, t) {
-      var n = Object.keys(e);
-      if (Object.getOwnPropertySymbols) {
-        var i = Object.getOwnPropertySymbols(e);
-        n.push.apply(n, i)
-      }
-      return n
-    })(Object(Chunk647438)).forEach(function(e) {
-      Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
-    }), require
-  }, [module, exports, p])
+  return Chunk647438.useMemo(() => m(p({}, _), {
+    type: Chunk264181.Z.BANNER,
+    asset: null != module ? module : _.asset,
+    popoutAsset: null != exports ? exports : _.popoutAsset
+  }), [module, exports, _])
 }

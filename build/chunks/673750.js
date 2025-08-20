@@ -2,9 +2,9 @@
 /** chunk id: 673750, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $V: () => N,
+  $V: () => C,
   Bz: () => R,
-  ZP: () => L,
+  ZP: () => x,
   hc: () => P
 }), require("./539854.js"), require("./388685.js"), require("./49124.js");
 var Chunk512722 = require("./512722.js"),
@@ -82,12 +82,12 @@ function A(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-var N = function(e) {
+var C = function(e) {
   return e[e.SEND = 0] = "SEND", e[e.EDIT = 1] = "EDIT", e[e.COMMAND = 2] = "COMMAND", e[e.SEND_ANNOUNCEMENT = 3] = "SEND_ANNOUNCEMENT", e
 }({});
-let C = e => 0 === e.type || 3 === e.type,
+let N = e => 0 === e.type || 3 === e.type,
   R = e => 1 === e.type,
-  P = e => C(e) ? e.message.nonce : R(e) ? e.message.messageId : e.message.data.id,
+  P = e => N(e) ? e.message.nonce : R(e) ? e.message.messageId : e.message.data.id,
   w = [+Chunk70956.Z.Millis.MINUTE, 5 * Chunk70956.Z.Millis.MINUTE];
 class D extends Chunk651655.Z {
   isFull() {
@@ -298,4 +298,4 @@ class D extends Chunk651655.Z {
     }
   }
 }
-let L = new D
+let x = new D

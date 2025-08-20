@@ -1,7 +1,7 @@
-/** Chunk was on 17768 **/
+/** Chunk was on 2026 **/
 /** chunk id: 953405, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  a: () => g
+  a: () => p
 });
 var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
@@ -14,66 +14,66 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk551909 = require("./551909.js");
 
-function m(e) {
+function f(e) {
   var t;
   let {
     orbPrice: n,
-    isProductDisabled: l,
-    hasSufficientOrbs: c
+    isProductDisabled: o,
+    hasSufficientOrbs: s
   } = e, {
     showBetaTag: u
-  } = o.Z.useExperiment({
+  } = a.Z.useExperiment({
     location: "shop_orb_full_price_line"
-  }), m = l ? d.intl.string(d.t.wu4gyc) : d.intl.string(d.t.eFNRzc), g = l || !c;
+  }), f = o ? d.intl.string(d.t.wu4gyc) : d.intl.string(d.t.eFNRzc), p = o || !s;
   return (0, r.jsxs)("div", {
-    className: p.priceLine,
+    className: m.priceLine,
     children: [(0, r.jsxs)("div", {
-      className: p.orbText,
-      children: [(0, r.jsx)(a.Text, {
+      className: m.orbText,
+      children: [(0, r.jsx)(i.Text, {
         variant: "text-xs/normal",
-        className: g ? p.disabled : true,
-        children: m
-      }), u && (0, r.jsx)(i.Z, {})]
-    }), (0, r.jsx)(s.Z, {
+        className: p ? m.disabled : true,
+        children: f
+      }), u && (0, r.jsx)(l.Z, {})]
+    }), (0, r.jsx)(c.Z, {
       orbAmount: null != (t = null == n ? true : n.amount) ? t : 1 / 0,
-      className: g ? p.disabled : true
+      className: p ? m.disabled : true
     })]
   })
 }
 
-function g(e) {
+function p(e) {
   var t;
   let {
     prices: n,
-    isPremiumUser: a,
-    discount: i,
-    product: o,
+    isPremiumUser: i,
+    discount: l,
+    product: a,
     hasSufficientOrbs: d,
-    isProductDisabled: g,
-    discountOfferAmount: f
-  } = e, _ = null != f;
-  return 0 === n.length ? null : n[0].currency === u.pK.DISCORD_ORB ? (0, r.jsx)(m, {
+    isProductDisabled: p,
+    discountOfferAmount: v
+  } = e, b = null != v;
+  return 0 === n.length ? null : n[0].currency === u.pK.DISCORD_ORB ? (0, r.jsx)(f, {
     orbPrice: n[0],
-    isProductDisabled: g,
+    isProductDisabled: p,
     hasSufficientOrbs: d
   }) : (0, r.jsxs)("div", {
-    className: p.priceLine,
+    className: m.priceLine,
     children: [(0, r.jsxs)("div", {
-      className: p.priceTagContainer,
-      children: [(0, r.jsx)(l.Z, {
-        product: o,
-        discount: i,
-        isPremiumUser: a,
-        hideStrikethroughPrice: !a || _,
+      className: m.priceTagContainer,
+      children: [(0, r.jsx)(o.Z, {
+        product: a,
+        discount: l,
+        isPremiumUser: i,
+        hideStrikethroughPrice: !i || b,
         nitroIconType: "tooltip",
         nitroIconSize: "xs",
-        discountOfferAmount: f
-      }), a || _ ? null : (0, r.jsx)(c.Z, {
-        product: o
+        discountOfferAmount: v
+      }), i || b ? null : (0, r.jsx)(s.Z, {
+        product: a
       })]
-    }), n.length > 1 && n[1].currency === u.pK.DISCORD_ORB && (0, r.jsx)(s.Z, {
+    }), n.length > 1 && n[1].currency === u.pK.DISCORD_ORB && (0, r.jsx)(c.Z, {
       orbAmount: null != (t = n[1].amount) ? t : 1 / 0,
-      className: g || !d ? p.disabled : true
+      className: p || !d ? m.disabled : true
     })]
   })
 }

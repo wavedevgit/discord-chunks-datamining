@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 249996, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 249996, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => d
+  Z: () => u
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -14,35 +15,35 @@ function c(e) {
   let {
     redactionType: t,
     label: n
-  } = e, c = r.useMemo(() => {
+  } = e, c = i.useMemo(() => {
     switch (t) {
-      case a.Q4.BLUR:
-        return s.XBm;
-      case a.Q4.BLOCK:
-        return s.t6m;
-      case a.Q4.SHOW:
-        return s.tEF;
+      case o.Q4.BLUR:
+        return a.XBm;
+      case o.Q4.BLOCK:
+        return a.t6m;
+      case o.Q4.SHOW:
+        return a.tEF;
       default:
         return null
     }
   }, [t]);
-  return (0, i.jsxs)("div", {
-    className: o.rowContainer,
-    children: [null != c && (0, i.jsx)(c, {
+  return (0, r.jsxs)("div", {
+    className: l.rowContainer,
+    children: [null != c && (0, r.jsx)(c, {
       size: "xs",
       color: "currentColor"
-    }), (0, i.jsx)(l.Text, {
+    }), (0, r.jsx)(s.Text, {
       variant: "text-md/normal",
       color: "header-secondary",
       children: n
     })]
   })
 }
-let d = Chunk647438.memo(function(e) {
+let u = Chunk647438.memo(function(e) {
   let {
     option: t
   } = e;
-  return (0, i.jsx)(c, {
+  return (0, r.jsx)(c, {
     redactionType: t.value,
     label: t.label
   })

@@ -2,7 +2,7 @@
 /** chunk id: 430198, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => j
+  Z: () => k
 }), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -77,7 +77,7 @@ function A(e, t) {
   returnfalse
 }
 
-function N(e) {
+function C(e) {
   let t = E.Z.getGuild(e);
   if (null == t) return;
   let n = v[e] = new Set;
@@ -89,7 +89,7 @@ function N(e) {
   }
 }
 
-function C(e, t) {
+function N(e, t) {
   let n = v[e];
   if (null == n) returnfalse;
   let r = h.Z.getChannel(t);
@@ -123,18 +123,18 @@ function D(e) {
   let {
     channel: t
   } = e;
-  return null != t.guild_id && C(t.guild_id, t.id)
-}
-
-function L(e) {
-  let {
-    channels: t
-  } = e, n = false;
-  for (let e of t) null != e.guild_id && C(e.guild_id, e.id) && (n = true);
-  return n
+  return null != t.guild_id && N(t.guild_id, t.id)
 }
 
 function x(e) {
+  let {
+    channels: t
+  } = e, n = false;
+  for (let e of t) null != e.guild_id && N(e.guild_id, e.id) && (n = true);
+  return n
+}
+
+function L(e) {
   let {
     guildId: t,
     restrictions: n
@@ -142,13 +142,13 @@ function x(e) {
   (0, s.uq)(n) ? I.add(t): I.delete(t)
 }
 
-function M(e) {
+function j(e) {
   let {
     guildId: t
   } = e;
   I.add(t)
 }
-class k extends(r = Chunk442837.ZP.Store) {
+class M extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk430824.Z, Chunk485386.Z, Chunk592125.Z, Chunk160404.Z), Chunk644542.Zo.subscribe({
       location: "1"
@@ -157,7 +157,7 @@ class k extends(r = Chunk442837.ZP.Store) {
   isChannelGated(e, t) {
     if (null == e) returnfalse;
     let n = v[e];
-    return null == n && (N(e), n = v[e]), null != n && n.has(t)
+    return null == n && (C(e), n = v[e]), null != n && n.has(t)
   }
   isChannelGatedAndVisible(e, t) {
     return null != e && this.isChannelGated(e, t) && !I.has(e)
@@ -169,8 +169,8 @@ class k extends(r = Chunk442837.ZP.Store) {
     return !!(null != n && null != n.parent_id && _.Ec.has(null == n ? true : n.type)) && this.isChannelOrThreadParentGated(e, n.parent_id)
   }
 }
-O(k, "displayName", "GatedChannelStore");
-let j = new k(Chunk570140.Z, {
+O(M, "displayName", "GatedChannelStore");
+let k = new M(Chunk570140.Z, {
   CONNECTION_OPEN: R,
   OVERLAY_INITIALIZE: R,
   CACHE_LOADED_LAZY: R,
@@ -184,7 +184,7 @@ let j = new k(Chunk570140.Z, {
   IMPERSONATE_STOP: w,
   CHANNEL_CREATE: D,
   CHANNEL_DELETE: D,
-  CHANNEL_UPDATES: L,
-  GUILD_ROLE_SUBSCRIPTIONS_FETCH_RESTRICTIONS_SUCCESS: x,
-  GUILD_ROLE_SUBSCRIPTIONS_FETCH_RESTRICTIONS_FAILURE: M
+  CHANNEL_UPDATES: x,
+  GUILD_ROLE_SUBSCRIPTIONS_FETCH_RESTRICTIONS_SUCCESS: L,
+  GUILD_ROLE_SUBSCRIPTIONS_FETCH_RESTRICTIONS_FAILURE: j
 })

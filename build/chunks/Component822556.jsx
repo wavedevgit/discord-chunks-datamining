@@ -1,5 +1,6 @@
-/** Chunk was on 96750 **/
-/** chunk id: 822556, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 822556, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   Z: () => u
 });
@@ -15,15 +16,15 @@ var Chunk481060 = require("./481060.js"),
 function u(e) {
   let {
     analyticsLocations: t
-  } = (0, o.ZP)();
+  } = (0, s.ZP)();
   return (0, r.jsx)(i.sNh, {
     id: "voice-settings",
     label: c.intl.string(c.t.NiTd0d),
     action: () => {
-      l.Z.open(s.oAB.VOICE, null, {
+      a.Z.open(l.oAB.VOICE, null, {
         analyticsLocations: t,
         appContext: e
-      }), (0, a.i)(e)
+      }), (0, o.i)(e)
     },
     icon: i.ewm
   })

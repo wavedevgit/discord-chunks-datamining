@@ -1,19 +1,23 @@
-/** Chunk was on 91584 **/
-/** chunk id: 401770, original params: t,e,r (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 401770, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-module.exports = function(t) {
-  function e() {
-    return t.apply(this, arguments) || this
+
+function r(e, t) {
+  e.prototype = Object.create(t.prototype), e.prototype.constructor = e, e.__proto__ = t
+}
+module.exports = function(e) {
+  function t() {
+    return e.apply(this, arguments) || this
   }
-  e.prototype = Object.create(t.prototype), e.prototype.constructor = e, e.__proto__ = t;
-  var r = e.prototype;
-  return r.getType = function() {
+  r(t, e);
+  var n = t.prototype;
+  return n.getType = function() {
     return this.get("type")
-  }, r.getMutability = function() {
+  }, n.getMutability = function() {
     return this.get("mutability")
-  }, r.getData = function() {
+  }, n.getData = function() {
     return this.get("data")
-  }, e
+  }, t
 }((0, require("./65183.js").Record)({
   type: "TOKEN",
   mutability: "IMMUTABLE",

@@ -64,7 +64,7 @@ if (require("./738146.js")() || require("./247131.js")()) {
       T = Chunk887937("Set.prototype.iterator", true);
     var S = Chunk887937("Map.prototype.@@iterator", true) || Chunk887937("Map.prototype._es6-shim iterator_", true),
       A = Chunk887937("Set.prototype.@@iterator", true) || Chunk887937("Set.prototype._es6-shim iterator_", true),
-      N = function(e) {
+      C = function(e) {
         if (b(e)) {
           if (I) return a(I(e));
           if (S) return S(e);
@@ -87,7 +87,7 @@ if (require("./738146.js")() || require("./247131.js")()) {
         }
       };
     module.exports = function(e) {
-      return N(e) || E(e)
+      return C(e) || E(e)
     }
   } else module.exports = function(e) {
     if (null != e) return E(e, true)

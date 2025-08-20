@@ -1,4 +1,4 @@
-/** Chunk was on 36499 **/
+/** Chunk was on 5665 **/
 /** chunk id: 158969, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => E
@@ -24,7 +24,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk177119 = require("./177119.js"),
   Chunk724913 = require("./724913.js"),
   Chunk430864 = require("./430864.js");
-let O = Chunk647438.memo(function(e) {
+let j = Chunk647438.memo(function(e) {
     let {
       message: t,
       notice: n,
@@ -87,7 +87,7 @@ let O = Chunk647438.memo(function(e) {
       S.current ? null != _ && _() : S.current = true
     }, [_, u.content, m, E, f]), (0, r.jsxs)("div", {
       id: (0, g.ut)(u),
-      className: a()(l, j.markup, {
+      className: a()(l, O.markup, {
         [v.messageContent]: true,
         [v.markupRtl]: "rtl" === s()(u.content),
         [x.blockedEdit]: null == P ? true : P.isBlockedEdit,
@@ -103,7 +103,7 @@ let O = Chunk647438.memo(function(e) {
             children: ["(", C.intl.string(C.t.Z7eEx8), ")"]
           })
         })]
-      }), (0, r.jsx)(O, {
+      }), (0, r.jsx)(j, {
         notice: null != (n = null == P ? true : P.errorMessage) ? n : C.intl.string(C.t.zQ69pq),
         message: u,
         compact: o,

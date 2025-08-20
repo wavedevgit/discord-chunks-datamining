@@ -87,7 +87,7 @@ let A = {
     LARGER: "Larger",
     XLARGE: "XLarge"
   },
-  N = {
+  C = {
     [A.SMOL]: 16,
     [A.MINI]: 20,
     [A.SMALLER]: 24,
@@ -97,7 +97,7 @@ let A = {
     [A.LARGER]: 64,
     [A.XLARGE]: 100
   },
-  C = {
+  N = {
     [A.SMOL]: [10, 10, 8, 6, 6, 4],
     [A.MINI]: [12, 12, 10, 10, 8, 6, 4],
     [A.SMALLER]: [13, 13, 11, 11, 9, 7, 5],
@@ -153,23 +153,23 @@ class R extends Chunk647438.PureComponent {
         animate: v,
         tabIndex: S,
         iconSrc: A,
-        "aria-hidden": N,
+        "aria-hidden": C,
         lossless: R,
         iconSize: P
       } = require,
       w = T(require, ["guild", "className", "showBadge", "active", "size", "style", "textScale", "showTooltip", "tooltipPosition", "onClick", "to", "badgeStrokeColor", "animate", "tabIndex", "iconSrc", "aria-hidden", "lossless", "iconSize"]),
-      D = C[Chunk442837],
-      L = null != Chunk451478 ? Chunk481060.P3F : "div",
-      x = (0, Chunk601964.gM)(r);
-    return (0, Chunk951288.jsxs)(L, I(O({
+      D = N[Chunk442837],
+      x = null != Chunk451478 ? Chunk481060.P3F : "div",
+      L = (0, Chunk601964.gM)(r);
+    return (0, Chunk951288.jsxs)(x, I(O({
       className: s()(Chunk965005.icon, Chunk647438, (0, Chunk153066.l)(Chunk965005, "iconSize", Chunk442837), {
         [null != (e = (0, Chunk153066.l)(Chunk965005, "iconActive", Chunk442837)) ? module : ""]: Chunk799899,
         [Chunk965005.iconInactive]: !Chunk799899,
         [Chunk965005.noIcon]: null == r.icon
       }),
-      "aria-hidden": N,
+      "aria-hidden": C,
       style: null == r.icon ? O({
-        fontSize: (null != (t = D[x.length]) ? exports : D[D.length - 1]) * Chunk891819
+        fontSize: (null != (t = D[L.length]) ? exports : D[D.length - 1]) * Chunk891819
       }, Chunk692547) : Chunk692547,
       onClick: null != Chunk956664 || null == Chunk451478 ? true : Chunk451478,
       tabIndex: S
@@ -222,7 +222,7 @@ let P = Chunk442837.ZP.connectStores([Chunk451478.Z], e => {
     iconSize: o,
     lossless: s
   } = e;
-  return null == r && (r = t instanceof _.JO ? t.getIconURL(null != o ? o : N[a], n && m.Z.isFocused()) : (0, h.EB)(t, null != o ? o : N[a], n && m.Z.isFocused(), s)), {
+  return null == r && (r = t instanceof _.JO ? t.getIconURL(null != o ? o : C[a], n && m.Z.isFocused()) : (0, h.EB)(t, null != o ? o : C[a], n && m.Z.isFocused(), s)), {
     style: I(O({}, i), {
       backgroundImage: (0, g.rv)(r)
     })

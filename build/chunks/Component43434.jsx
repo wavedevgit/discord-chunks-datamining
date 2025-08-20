@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 43434, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 43434, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => d
+  Z: () => u
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -12,7 +13,7 @@ var Chunk526156 = require("./526156.jsx"),
   Chunk726985 = require("./726985.js"),
   Chunk981631 = require("./981631.js");
 
-function d() {
+function u() {
   return (0, Chunk951288.jsx)(Chunk526156.Z, {
     parentSetting: Chunk726985.s6.REVENUE_STORYBOOK,
     settingsSection: Chunk981631.oAB.REVENUE_STORYBOOK_PAGE,

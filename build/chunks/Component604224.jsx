@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 604224, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 604224, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => j
+  Z: () => y
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -22,7 +23,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function j() {
+function y() {
   let {
     analyticsLocations: e
   } = (0, Chunk906732.ZP)([Chunk100527.Z.USER_SETTINGS_VOICE_AND_VIDEO]), t = (0, Chunk442837.e7)([Chunk663389.Z], () => Chunk663389.Z.getSubsection()), {
@@ -31,7 +32,7 @@ function j() {
     location: "UserSettingsVoiceAndVideo"
   });
   if (!require) return (0, Chunk951288.jsx)(Chunk674116.Z, {});
-  let j = [{
+  let y = [{
       title: Chunk388032.intl.string(Chunk388032.t.K3lovL),
       component: Chunk661950.Z,
       setting: Chunk726985.s6.VOICE_AND_VIDEO_VOICE_TAB
@@ -50,7 +51,7 @@ function j() {
       component: Chunk754367.Z,
       setting: Chunk726985.s6.VOICE_AND_VIDEO_DEBUG_TAB
     }],
-    E = j.findIndex(e => null != e.subsection && e.subsection === t);
+    O = y.findIndex(e => null != e.subsection && e.subsection === t);
   return (0, Chunk951288.jsx)(Chunk906732.Gt, {
     value: module,
     children: (0, Chunk951288.jsx)(Chunk10298.N, {
@@ -58,8 +59,8 @@ function j() {
       children: (0, Chunk951288.jsx)(Chunk526156.Z, {
         parentSetting: Chunk726985.s6.VOICE_AND_VIDEO,
         settingsSection: Chunk981631.oAB.VOICE,
-        tabs: j,
-        defaultTabIndex: E > false ? E : true
+        tabs: y,
+        defaultTabIndex: O > false ? O : true
       })
     })
   })

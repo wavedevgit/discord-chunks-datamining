@@ -1,9 +1,10 @@
-/** Chunk was on 66181 **/
-/** chunk id: 960412, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 960412, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Y7: () => c,
-  oc: () => u,
-  pR: () => d
+  Y7: () => _,
+  oc: () => h,
+  pR: () => p
 });
 var Chunk990547 = require("./990547.js"),
   Chunk283693 = require("./283693.js"),
@@ -11,7 +12,46 @@ var Chunk990547 = require("./990547.js"),
   Chunk573261 = require("./573261.js"),
   Chunk930441 = require("./930441.js"),
   Chunk981631 = require("./981631.js");
-async function c() {
+
+function c(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function u(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      c(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function d(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function f(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+async function _() {
   try {
     let e = await Chunk573261.Z.get({
       url: Chunk981631.ANM.EMAIL_SETTINGS,
@@ -20,7 +60,7 @@ async function c() {
         properties: e => {
           var t;
           let n = null == e || null == (t = e.body) ? true : t.initialized;
-          return (0, r.iG)({
+          return (0, i.iG)({
             initialized: n
           })
         }
@@ -37,16 +77,16 @@ async function c() {
     })
   }
 }
-async function d(e, t) {
-  s.Z.dispatch({
+async function p(e, t) {
+  a.Z.dispatch({
     type: "EMAIL_SETTINGS_UPDATE",
     updates: {
       [e]: t
     }
   });
   try {
-    let n = await a.Z.patch({
-      url: o.ANM.EMAIL_SETTINGS,
+    let n = await o.Z.patch({
+      url: l.ANM.EMAIL_SETTINGS,
       body: {
         settings: {
           categories: {
@@ -55,7 +95,7 @@ async function d(e, t) {
         }
       },
       trackedActionData: {
-        event: i.NetworkActionNames.EMAIL_SETTINGS_UPDATE,
+        event: r.NetworkActionNames.EMAIL_SETTINGS_UPDATE,
         properties: {
           category: e,
           value: t
@@ -63,49 +103,20 @@ async function d(e, t) {
       },
       rejectWithError: true
     });
-    s.Z.dispatch({
+    a.Z.dispatch({
       type: "EMAIL_SETTINGS_UPDATE_SUCCESS",
       settings: n.body
     })
   } catch (e) {
-    s.Z.dispatch({
+    a.Z.dispatch({
       type: "EMAIL_SETTINGS_UPDATE_FAILURE"
     })
   }
 }
-async function u() {
-  let e = Chunk930441.M0.reduce((e, t) => {
-    var n, i;
-    return n = function(e) {
-      for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-          i = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-          return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), i.forEach(function(t) {
-          var i;
-          i = n[t], t in e ? Object.defineProperty(e, t, {
-            value: i,
-            enumerable: true,
-            configurable: true,
-            writable: true
-          }) : e[t] = i
-        })
-      }
-      return e
-    }({}, e), i = i = {
-      [t]: false
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
-      var n = Object.keys(e);
-      if (Object.getOwnPropertySymbols) {
-        var i = Object.getOwnPropertySymbols(e);
-        n.push.apply(n, i)
-      }
-      return n
-    })(Object(i)).forEach(function(e) {
-      Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
-    }), n
-  }, {});
+async function h() {
+  let e = Chunk930441.M0.reduce((e, t) => f(u({}, e), {
+    [t]: false
+  }), {});
   Chunk570140.Z.dispatch({
     type: "EMAIL_SETTINGS_UPDATE",
     updates: module

@@ -1,5 +1,6 @@
-/** Chunk was on 66181 **/
-/** chunk id: 28025, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 28025, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   deviceOptionCertified: "deviceOptionCertified_fe5040",
   deviceOption: "deviceOption_fe5040",

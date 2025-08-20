@@ -47,15 +47,15 @@ function v(e) {
 let I = 1e3;
 
 function T() {
-  let [e, t] = Chunk647438.useState(false), O = (0, Chunk481060.VXO)(Chunk596401.Xd), T = Chunk647438.useMemo(() => [Chunk704215.z.DESKTOP_REFRESH_ONBOARDING_MODAL], []), [S, A] = (0, Chunk243778.US)(T), N = S === Chunk704215.z.DESKTOP_REFRESH_ONBOARDING_MODAL, C = (0, Chunk442837.e7)([Chunk314897.default], () => Chunk314897.default.getId());
+  let [e, t] = Chunk647438.useState(false), O = (0, Chunk481060.VXO)(Chunk596401.Xd), T = Chunk647438.useMemo(() => [Chunk704215.z.DESKTOP_REFRESH_ONBOARDING_MODAL], []), [S, A] = (0, Chunk243778.US)(T), C = S === Chunk704215.z.DESKTOP_REFRESH_ONBOARDING_MODAL, N = (0, Chunk442837.e7)([Chunk314897.default], () => Chunk314897.default.getId());
   Chunk647438.useLayoutEffect(() => {
-    null != C && Chunk709054.default.age(C) < Chunk70956.Z.Millis.DAY && (0, Chunk266454.Q3)(Chunk704215.z.DESKTOP_REFRESH_ONBOARDING_MODAL);
+    null != N && Chunk709054.default.age(N) < Chunk70956.Z.Millis.DAY && (0, Chunk266454.Q3)(Chunk704215.z.DESKTOP_REFRESH_ONBOARDING_MODAL);
     let e = "desktop_refresh_theme_migration_key",
       t = "true" === Chunk433517.K.get(module);
-    !N || exports || Chunk210887.Z.theme !== Chunk231338.BR.DARK || null != Chunk514361.Z.gradientPreset || exports || (Chunk433517.K.set(module, "true"), (0, Chunk153867.ZI)({
+    !C || exports || Chunk210887.Z.theme !== Chunk231338.BR.DARK || null != Chunk514361.Z.gradientPreset || exports || (Chunk433517.K.set(module, "true"), (0, Chunk153867.ZI)({
       theme: Chunk231338.BR.DARKER
     }))
-  }, [N, C]), Chunk647438.useLayoutEffect(() => {
+  }, [C, N]), Chunk647438.useLayoutEffect(() => {
     function e() {
       exports(true)
     }
@@ -77,11 +77,11 @@ function T() {
     })
   }, [A]);
   Chunk647438.useEffect(() => {
-    if (N && !O && module) {
+    if (C && !O && module) {
       let e = setTimeout(() => {
         R()
       }, I);
       return () => clearTimeout(module)
     }
-  }, [module, O, N, R])
+  }, [module, O, C, R])
 }

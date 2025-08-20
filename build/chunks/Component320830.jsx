@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk954955 = require("./954955.js"),
-  a = require.n(Chunk954955),
+  s = require.n(Chunk954955),
   Chunk748780 = require("./748780.js"),
   Chunk873546 = require("./873546.js"),
   Chunk477690 = require("./477690.js"),
@@ -35,15 +35,15 @@ function m(e) {
   }
   return e
 }
-let f = (0, Chunk624138.Mg)(Chunk477690.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
-  g = {
+let g = (0, Chunk624138.Mg)(Chunk477690.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
+  f = {
     friction: 10,
     tension: 130
   },
   _ = function(e) {
     return class extends i.Component {
       componentDidMount() {
-        s.tq || (window.addEventListener("resize", this.handleResizeDebounced), this.handleResize())
+        a.tq || (window.addEventListener("resize", this.handleResizeDebounced), this.handleResize())
       }
       componentWillUnmount() {
         clearTimeout(this.timeout), window.removeEventListener("resize", this.handleResizeDebounced)
@@ -60,7 +60,7 @@ let f = (0, Chunk624138.Mg)(Chunk477690.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
       animateTo(e, t) {
         o.Z.spring(this.anim, m({
           toValue: e
-        }, g)).start(t)
+        }, f)).start(t)
       }
       getAnimatedStyle(e) {
         return this.state.shouldAnimate ? {
@@ -98,13 +98,13 @@ let f = (0, Chunk624138.Mg)(Chunk477690.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
       }
       constructor(...e) {
         super(...e), p(this, "timeout", true), p(this, "anim", new o.Z.Value(0)), p(this, "state", {
-          shouldAnimate: !s.tq
+          shouldAnimate: !a.tq
         }), p(this, "handleResize", () => {
-          let e = window.innerWidth > f;
+          let e = window.innerWidth > g;
           !this.state.shouldAnimate && e && this.anim.setValue(1), this.setState({
             shouldAnimate: e
           })
-        }), p(this, "handleResizeDebounced", a()(this.handleResize, 60))
+        }), p(this, "handleResizeDebounced", s()(this.handleResize, 60))
       }
     }
   }

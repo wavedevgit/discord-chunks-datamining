@@ -1,39 +1,40 @@
-/** Chunk was on 66181 **/
-/** chunk id: 743612, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 743612, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => o
+  Z: () => l
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk505754 = require("./505754.js");
-let o = e => {
-  var t, n, r, o;
+let l = e => {
+  var t, n, i, l;
   let {
     title: c,
-    shouldShowElement: d,
-    cardVariantStyleInfo: u,
-    description: m,
-    titleClassName: p = "",
-    subtitle: g = "",
+    shouldShowElement: u,
+    cardVariantStyleInfo: d,
+    description: f,
+    titleClassName: _ = "",
+    subtitle: p = "",
     subtitleClassName: h
   } = e;
-  return (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(a.X6q, {
+  return (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(o.X6q, {
       variant: "heading-xl/extrabold",
-      className: s()(l.cardHeading, p),
+      className: a()(s.cardHeading, _),
       children: c
-    }), "" !== g && (null == d || d(null == u ? true : u.subtitle)) && (0, i.jsxs)("div", {
+    }), "" !== p && (null == u || u(null == d ? true : d.subtitle)) && (0, r.jsxs)("div", {
       className: h,
-      children: [(0, i.jsx)(a.Text, {
-        variant: null != (r = null == u || null == (t = u.subtitle) ? true : t.textVariant) ? r : "text-sm/normal",
-        children: g
-      }), null != m && (0, i.jsx)(a.Text, {
-        variant: null != (o = null == u || null == (n = u.description) ? true : n.textVariant) ? o : "text-sm/normal",
-        children: (0, i.jsxs)(i.Fragment, {
-          children: [(0, i.jsx)("br", {}), m]
+      children: [(0, r.jsx)(o.Text, {
+        variant: null != (i = null == d || null == (t = d.subtitle) ? true : t.textVariant) ? i : "text-sm/normal",
+        children: p
+      }), null != f && (0, r.jsx)(o.Text, {
+        variant: null != (l = null == d || null == (n = d.description) ? true : n.textVariant) ? l : "text-sm/normal",
+        children: (0, r.jsxs)(r.Fragment, {
+          children: [(0, r.jsx)("br", {}), f]
         })
       })]
     })]

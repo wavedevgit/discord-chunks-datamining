@@ -61,7 +61,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk180376 = require("./180376.js");
 
-function Z(e, t, n) {
+function F(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -77,7 +77,7 @@ function H(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      Z(e, t, n[t])
+      F(e, t, n[t])
     })
   }
   return e
@@ -122,10 +122,10 @@ let q = {
     position: "top"
   },
   X = e => t => {
-    null == e || e(t), (0, M.jA)(t)
+    null == e || e(t), (0, j.jA)(t)
   },
   Q = e => t => {
-    null == e || e(t), (0, M.Zj)(t)
+    null == e || e(t), (0, j.Zj)(t)
   };
 
 function J(e) {
@@ -140,7 +140,7 @@ function J(e) {
   } = e, u = K(e, ["onVolumeChange", "onMute", "volume", "autoMute", "alt", "renderAdjacentContent", "renderOverlayContent"]);
   let d = X(t),
     f = Q(n);
-  return a = null == a ? M.FC : a, o = null == o ? M.rs : o, (0, r.jsxs)(i.Fragment, {
+  return a = null == a ? j.FC : a, o = null == o ? j.rs : o, (0, r.jsxs)(i.Fragment, {
     children: [(0, r.jsx)(I.Z, W(H({}, u), {
       alt: s,
       volume: a,
@@ -164,7 +164,7 @@ function $(e) {
   } = e, c = K(e, ["onVolumeChange", "volume", "onMute", "onVolumeShow", "onVolumeHide", "renderAdjacentContent"]);
   let u = X(t),
     d = Q(a);
-  n = null == n ? M.FC : n;
+  n = null == n ? j.FC : n;
   let f = () => false;
   return (0, r.jsxs)(i.Fragment, {
     children: [(0, r.jsx)(v.Z, W(H({}, c), {
@@ -187,7 +187,7 @@ function ee(e) {
   } = e, a = K(e, ["onVolumeChange", "volume", "onMute"]);
   let o = X(t),
     s = Q(i);
-  return n = null == n ? M.FC : n, (0, r.jsx)(R.Z, W(H({}, a), {
+  return n = null == n ? j.FC : n, (0, r.jsx)(R.Z, W(H({}, a), {
     onVolumeChange: o,
     onMute: s,
     volume: n
@@ -206,13 +206,13 @@ function et(e) {
     mediaLayoutType: f,
     imageContainerStyle: _,
     mosaicStyleAlt: h
-  } = e, m = f === j.hV.MOSAIC || true === h, g = !c && C.H1.getSetting() && null != t && "" !== t && true !== n, E = e => {
+  } = e, m = f === k.hV.MOSAIC || true === h, g = !c && N.H1.getSetting() && null != t && "" !== t && true !== n, E = e => {
     let {
       altText: t
     } = e;
     return (0, r.jsxs)(d.VqE, {
-      "aria-label": V.intl.string(V.t.fSiQ3N),
-      className: F.mediaMosaicAltTextPopout,
+      "aria-label": Z.intl.string(Z.t.fSiQ3N),
+      className: V.mediaMosaicAltTextPopout,
       onKeyDown: e => {
         e.key === G.mR.Escape && setTimeout(() => {
           var e;
@@ -220,22 +220,22 @@ function et(e) {
         }, 0)
       },
       children: [(0, r.jsx)("span", {
-        className: F.mediaMosaicAltTextPopoutTitle,
-        children: V.intl.string(V.t.fSiQ3N)
+        className: V.mediaMosaicAltTextPopoutTitle,
+        children: Z.intl.string(Z.t.fSiQ3N)
       }), (0, r.jsx)("span", {
-        className: F.mediaMosaicAltTextPopoutDescription,
+        className: V.mediaMosaicAltTextPopoutDescription,
         children: t
       })]
     })
   }, b = i.createRef();
   return (0, r.jsxs)("div", {
-    className: o()(F.imageContent, s),
+    className: o()(V.imageContent, s),
     children: [(0, r.jsxs)("div", {
-      className: o()(F.imageContainer, l),
+      className: o()(V.imageContainer, l),
       style: _,
       children: [(0, r.jsx)(p.Z, H({}, e)), null != a && a()]
     }), m && g && (0, r.jsx)("div", {
-      className: F.mediaMosaicAltTextContainer,
+      className: V.mediaMosaicAltTextContainer,
       children: (0, r.jsx)(d.yRy, {
         targetElementRef: b,
         animation: d.yRy.Animation.FADE,
@@ -247,16 +247,16 @@ function et(e) {
           children: (0, r.jsx)("button", W(H({}, e), {
             type: "button",
             ref: b,
-            "aria-label": V.intl.string(V.t.fSiQ3N),
-            className: o()(F.mediaMosaicAltText, {
-              [F.reducedSize]: u
+            "aria-label": Z.intl.string(Z.t.fSiQ3N),
+            className: o()(V.mediaMosaicAltText, {
+              [V.reducedSize]: u
             }),
-            children: V.intl.string(V.t.jCV1T0)
+            children: Z.intl.string(Z.t.jCV1T0)
           }))
         })
       })
     }), !m && g && (0, r.jsx)("span", {
-      className: F.altText,
+      className: V.altText,
       children: t
     })]
   })
@@ -285,22 +285,22 @@ var ea = function(e) {
 function eo(e) {
   switch (e) {
     case 0:
-      return V.intl.string(V.t["4EvBb2"]);
+      return Z.intl.string(Z.t["4EvBb2"]);
     case 1:
-      return V.intl.string(V.t["1J6Xq6"]);
+      return Z.intl.string(Z.t["1J6Xq6"]);
     default:
-      return (0, x.vE)(e)
+      return (0, L.vE)(e)
   }
 }
 
 function es(e) {
   switch (e) {
     case 0:
-      return V.intl.string(V.t.gpoQsL);
+      return Z.intl.string(Z.t.gpoQsL);
     case 1:
-      return V.intl.string(V.t["k3RM8/"]);
+      return Z.intl.string(Z.t["k3RM8/"]);
     default:
-      return (0, x.vE)(e)
+      return (0, L.vE)(e)
   }
 }
 let el = e => {
@@ -312,9 +312,9 @@ let el = e => {
     return (0, r.jsx)(b.G.Consumer, {
       children: e => e.disableInteractions ? null : (0, r.jsxs)("div", {
         onClick: n,
-        className: o()(F.jumpToPresentBar, i),
+        className: o()(V.jumpToPresentBar, i),
         children: [(0, r.jsx)("div", {
-          className: F.barButtonMain,
+          className: V.barButtonMain,
           children: eo(t)
         }), null != n ? (0, r.jsx)(d.tEY, {
           offset: false,
@@ -326,8 +326,8 @@ let el = e => {
           })
         }) : (0, r.jsx)(d.$jN, {
           type: d.$jN.Type.PULSING_ELLIPSIS,
-          className: F.spinner,
-          itemClassName: F.spinnerItem
+          className: V.spinner,
+          itemClassName: V.spinnerItem
         })]
       })
     })
@@ -340,7 +340,7 @@ let el = e => {
     } = e;
     return (0, r.jsx)(b.G.Consumer, {
       children: e => e.disableInteractions ? null : (0, r.jsxs)(d.P3F, {
-        className: o()(F.messagesErrorBar, i),
+        className: o()(V.messagesErrorBar, i),
         onClick: t,
         focusProps: {
           offset: {
@@ -351,15 +351,15 @@ let el = e => {
           }
         },
         children: [(0, r.jsx)("div", {
-          className: F.barButtonMain,
-          children: V.intl.string(V.t["1zUvl5"])
+          className: V.barButtonMain,
+          children: Z.intl.string(Z.t["1zUvl5"])
         }), n ? (0, r.jsx)(d.$jN, {
           type: d.$jN.Type.PULSING_ELLIPSIS,
-          className: F.spinner,
-          itemClassName: F.spinnerItem
+          className: V.spinner,
+          itemClassName: V.spinnerItem
         }) : (0, r.jsx)("div", {
-          className: F.barButtonAlt,
-          children: V.intl.string(V.t.TdQXAw)
+          className: V.barButtonAlt,
+          children: Z.intl.string(Z.t.TdQXAw)
         })]
       })
     })
@@ -378,7 +378,7 @@ function eu(e) {
       context: "Mark As Read"
     }) : f.Z.jumpToMessage({
       channelId: n,
-      messageId: k.default.castChannelIdAsMessageId(n),
+      messageId: M.default.castChannelIdAsMessageId(n),
       offset: 1,
       context: "Mark As Read"
     })
@@ -392,20 +392,20 @@ function eu(e) {
     disableInteractions: c
   } = i.useContext(b.G);
   return c ? null : (0, r.jsxs)("div", {
-    className: o()(F.newMessagesBar, {
-      [F.disableInteractions]: c
+    className: o()(V.newMessagesBar, {
+      [V.disableInteractions]: c
     }),
     children: [(0, r.jsx)(d.tEY, {
       offset: 4,
       children: (0, r.jsx)("button", {
         type: "button",
-        className: F.barButtonMain,
+        className: V.barButtonMain,
         onClick: s,
-        "aria-label": V.intl.string(V.t.z0Mkp6),
+        "aria-label": Z.intl.string(Z.t.z0Mkp6),
         "aria-describedby": a,
         children: (0, r.jsx)("span", {
           id: a,
-          className: F.span,
+          className: V.span,
           children: t
         })
       })
@@ -414,11 +414,11 @@ function eu(e) {
       children: (0, r.jsxs)("button", {
         type: "button",
         onClick: l,
-        className: F.barButtonAlt,
-        children: [V.intl.string(V.t.e6RscX), (0, r.jsx)(d.eQA, {
+        className: V.barButtonAlt,
+        children: [Z.intl.string(Z.t.e6RscX), (0, r.jsx)(d.eQA, {
           size: "md",
           color: "currentColor",
-          className: F.barButtonIcon
+          className: V.barButtonIcon
         })]
       })
     })]
@@ -433,35 +433,35 @@ function ed(e) {
     scrollManager: h
   } = e, {
     disableInteractions: E
-  } = i.useContext(b.G), [y, v] = i.useState(null), I = i.useRef(null), [T, C] = i.useState(null), R = i.useRef(null), M = (0, u.Wu)([A.Z], () => {
+  } = i.useContext(b.G), [y, v] = i.useState(null), I = i.useRef(null), [T, N] = i.useState(null), R = i.useRef(null), j = (0, u.Wu)([A.Z], () => {
     var e;
     return null != (e = A.Z.summaries(s.id)) ? e : []
-  }, [s]), j = (0, g.Z)(M);
+  }, [s]), k = (0, g.Z)(j);
   i.useEffect(() => {
-    l().isEqual(j, M) || L.default.track(U.rMx.SUMMARIES_TOPICS_PILL_VIEWED, {
-      num_summaries: M.length,
-      message_counts: M.map(e => e.count),
-      start_message_ids: M.map(e => e.startId),
-      end_message_ids: M.map(e => e.endId),
-      num_participants: M.map(e => e.people.length),
+    l().isEqual(k, j) || x.default.track(U.rMx.SUMMARIES_TOPICS_PILL_VIEWED, {
+      num_summaries: j.length,
+      message_counts: j.map(e => e.count),
+      start_message_ids: j.map(e => e.startId),
+      end_message_ids: j.map(e => e.endId),
+      num_participants: j.map(e => e.people.length),
       guild_id: s.guild_id,
       channel_id: s.id,
       channel_type: s.type
     })
-  }, [M, j, s.guild_id, s.id, s.type]);
+  }, [j, k, s.guild_id, s.id, s.type]);
   let G = (0, u.e7)([w.default], () => {
       var e;
-      return null != (e = null == M ? true : M.map(e => {
+      return null != (e = null == j ? true : j.map(e => {
         var t;
         return null == (t = e.people) ? true : t.map(e => {
           var t;
           return null != (t = w.default.getUser(e)) ? t : null
-        }).filter(x.lm)
+        }).filter(L.lm)
       })) ? e : []
-    }, [M], e_),
-    Z = null != (n = (0, u.e7)([A.Z], () => A.Z.visibleSummaryIndex())) ? n : false,
-    H = null == M || null == (t = M[Z]) ? true : t.topic;
-  null == H && null == y && (null == M ? true : M.length) >= 1 && (H = null == (a = M[0]) ? true : a.topic);
+    }, [j], e_),
+    F = null != (n = (0, u.e7)([A.Z], () => A.Z.visibleSummaryIndex())) ? n : false,
+    H = null == j || null == (t = j[F]) ? true : t.topic;
+  null == H && null == y && (null == j ? true : j.length) >= 1 && (H = null == (a = j[0]) ? true : a.topic);
   let Y = i.useMemo(() => l().debounce(e => {
       var t;
       v(null != (t = null == e ? true : e.id) ? t : null)
@@ -476,21 +476,21 @@ function ed(e) {
     }, [Y, W]),
     [z, q] = i.useState(false),
     X = i.useCallback(() => {
-      L.default.track(U.rMx.SUMMARIES_TOPICS_PILL_TOGGLED, {
+      x.default.track(U.rMx.SUMMARIES_TOPICS_PILL_TOGGLED, {
         topics_dropdown_open: !z,
-        num_summaries: M.length,
-        message_counts: M.map(e => e.count),
-        start_message_ids: M.map(e => e.startId),
-        end_message_ids: M.map(e => e.endId),
-        num_participants: M.map(e => e.people.length),
+        num_summaries: j.length,
+        message_counts: j.map(e => e.count),
+        start_message_ids: j.map(e => e.startId),
+        end_message_ids: j.map(e => e.endId),
+        num_participants: j.map(e => e.people.length),
         guild_id: s.guild_id,
         channel_id: s.id,
         channel_type: s.type
       }), q(!z)
-    }, [z, M, q, s]),
+    }, [z, j, q, s]),
     Q = i.useCallback(function(e) {
       let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : B.DZ.PILL_DROPDOWN,
-        n = M[e];
+        n = j[e];
       if (null == n) return;
       (0, S.wv)(s.id, n.id), (0, S.yK)(s.id, n.id);
       let r = () => {
@@ -498,7 +498,7 @@ function ed(e) {
           h.addAutomaticAnchorCallback(K, false)
         }, 100)
       };
-      h.removeAutomaticAnchorCallback(K), h.addScrollCompleteCallback(r), L.default.track(U.rMx.SUMMARIES_TOPIC_CLICKED, {
+      h.removeAutomaticAnchorCallback(K), h.addScrollCompleteCallback(r), x.default.track(U.rMx.SUMMARIES_TOPIC_CLICKED, {
         source: t,
         message_id: n.startId,
         guild_id: s.guild_id,
@@ -512,12 +512,12 @@ function ed(e) {
         jumpType: m.SR.ANIMATED,
         context: "Summary Jump"
       })
-    }, [M, s, K, h]),
+    }, [j, s, K, h]),
     J = i.useCallback(e => {
       var t;
       q(e);
       let n = null == (t = R.current) ? true : t.scrollTop;
-      null != n && C(n)
+      null != n && N(n)
     }, []);
   i.useEffect(() => {
     if (null != T && z) {
@@ -529,18 +529,18 @@ function ed(e) {
   }, [T, z]);
   let $ = i.useCallback(e => {
     var t;
-    (0, c.k)(e.target) && (null == (t = I.current) ? true : t.contains(e.target)) || (z && L.default.track(U.rMx.SUMMARIES_TOPICS_PILL_TOGGLED, {
+    (0, c.k)(e.target) && (null == (t = I.current) ? true : t.contains(e.target)) || (z && x.default.track(U.rMx.SUMMARIES_TOPICS_PILL_TOGGLED, {
       topics_dropdown_open: false,
-      num_summaries: M.length,
-      message_counts: M.map(e => e.count),
-      start_message_ids: M.map(e => e.startId),
-      end_message_ids: M.map(e => e.endId),
-      num_participants: M.map(e => e.people.length),
+      num_summaries: j.length,
+      message_counts: j.map(e => e.count),
+      start_message_ids: j.map(e => e.startId),
+      end_message_ids: j.map(e => e.endId),
+      num_participants: j.map(e => e.people.length),
       guild_id: s.guild_id,
       channel_id: s.id,
       channel_type: s.type
     }), J(false))
-  }, [z, M, s, J]);
+  }, [z, j, s, J]);
   i.useEffect(() => (h.addAutomaticAnchorCallback(K), () => {
     h.removeAutomaticAnchorCallback(K)
   }), [h, K]), i.useEffect(() => {
@@ -548,13 +548,13 @@ function ed(e) {
   }, [s.id]), i.useEffect(() => (document.addEventListener("mousedown", $), () => {
     document.removeEventListener("mousedown", $)
   }), [$]);
-  let ee = i.useMemo(() => (0, r.jsx)(N.Z, {
+  let ee = i.useMemo(() => (0, r.jsx)(C.Z, {
       channel: s,
-      summaries: M,
+      summaries: j,
       summariesMembers: G,
       selectTopic: Q,
       setOpen: J
-    }), [M, G, Q, J, s]),
+    }), [j, G, Q, J, s]),
     et = i.useCallback(() => {
       let e = P.ZP.ackMessageId(s.id);
       null != e ? f.Z.jumpToMessage({
@@ -564,7 +564,7 @@ function ed(e) {
         context: "Mark As Read"
       }) : f.Z.jumpToMessage({
         channelId: s.id,
-        messageId: k.default.castChannelIdAsMessageId(s.id),
+        messageId: M.default.castChannelIdAsMessageId(s.id),
         offset: 1,
         context: "Mark As Read"
       })
@@ -576,76 +576,76 @@ function ed(e) {
         objectType: U.Qqv.ACK_MANUAL
       })
     }, [s.id]),
-    er = V.intl.string(V.t["38qwgI"]);
-  return M.length > 0 && (er = "" === H || null == H ? V.intl.string(V.t.DwnFuL) : H), E ? null : (0, r.jsxs)("div", {
+    er = Z.intl.string(Z.t["38qwgI"]);
+  return j.length > 0 && (er = "" === H || null == H ? Z.intl.string(Z.t.DwnFuL) : H), E ? null : (0, r.jsxs)("div", {
     ref: I,
-    className: o()(F.newTopicsBarContainer, F.containerMarginTop),
+    className: o()(V.newTopicsBarContainer, V.containerMarginTop),
     children: [(0, r.jsx)("div", {
-      className: F.newTopicsBarTopicSection,
+      className: V.newTopicsBarTopicSection,
       children: (0, r.jsx)(d.P3F, {
-        className: F.newTopicsBarTextClickable,
-        "aria-label": V.intl.string(V.t.RT3MPz),
+        className: V.newTopicsBarTextClickable,
+        "aria-label": Z.intl.string(Z.t.RT3MPz),
         onClick: X,
         children: (0, r.jsxs)("div", {
           className: o()({
-            [F.newTopicsBarTextUnselected]: !z,
-            [F.newTopicsBarTextSelected]: z
+            [V.newTopicsBarTextUnselected]: !z,
+            [V.newTopicsBarTextSelected]: z
           }),
           children: [(0, r.jsx)(d.sVe, {
             size: "xs",
             color: "currentColor",
-            className: F.newTopicsBarIcon
+            className: V.newTopicsBarIcon
           }), (0, r.jsx)(d.Text, {
             variant: "text-sm/medium",
-            className: o()(F.newTopicsBarCompact, F.newTopicsBarText),
+            className: o()(V.newTopicsBarCompact, V.newTopicsBarText),
             children: er
           }), (0, r.jsx)(D.Z, {
             width: 16,
             height: 16,
             direction: D.Z.Directions.DOWN,
-            className: F.newTopicsBarCaret
+            className: V.newTopicsBarCaret
           })]
         })
       })
     }), (0, r.jsx)(d.P3F, {
       onClick: et,
-      className: F.newTopicsBarInitial,
+      className: V.newTopicsBarInitial,
       children: p
     }), (0, r.jsxs)(d.P3F, {
       onClick: en,
-      className: o()(F.barButtonAlt, F.flexEnd),
+      className: o()(V.barButtonAlt, V.flexEnd),
       children: [(0, r.jsx)("div", {
-        className: F.newTopicsBarCompact,
-        children: V.intl.string(V.t.e6RscX)
+        className: V.newTopicsBarCompact,
+        children: Z.intl.string(Z.t.e6RscX)
       }), (0, r.jsx)(d.eQA, {
         size: "md",
         color: "currentColor",
-        className: F.barButtonIcon
+        className: V.barButtonIcon
       })]
     }), z && (0, r.jsxs)("div", {
-      className: F.topicsDropdown,
+      className: V.topicsDropdown,
       children: [(0, r.jsxs)("div", {
-        className: F.topicsDropdownHeading,
+        className: V.topicsDropdownHeading,
         children: [(0, r.jsxs)("div", {
-          className: F.topicsDropdownHeadingText,
+          className: V.topicsDropdownHeadingText,
           children: [(0, r.jsx)(d.sVe, {
             size: "custom",
             color: "currentColor",
-            className: F.topicsPillHeadingIcon,
+            className: V.topicsPillHeadingIcon,
             width: 18,
             height: 20
           }), (0, r.jsx)(d.X6q, {
             variant: "heading-md/bold",
             color: "header-primary",
             lineClamp: 1,
-            children: V.intl.string(V.t.q21fUl)
+            children: Z.intl.string(Z.t.q21fUl)
           }), (0, r.jsx)(O.Z, {
-            className: F.summariesBetaTag
+            className: V.summariesBetaTag
           })]
         }), (0, r.jsx)(d.P3F, {
-          "aria-label": V.intl.string(V.t.cpT0Cg),
+          "aria-label": Z.intl.string(Z.t.cpT0Cg),
           onClick: X,
-          className: F.topicsDropdownClose,
+          className: V.topicsDropdownClose,
           children: (0, r.jsx)(d.Dio, {
             size: "md",
             color: "currentColor"
@@ -653,7 +653,7 @@ function ed(e) {
         })]
       }), (0, r.jsx)(d.Ttm, {
         ref: R,
-        className: F.topicsScroller,
+        className: V.topicsScroller,
         fade: true,
         children: ee
       })]
@@ -676,38 +676,38 @@ function ep(e) {
     scrollManager: _
   } = e, {
     disableInteractions: p
-  } = i.useContext(b.G), [h, E] = i.useState(null), y = i.useRef(null), [v, I] = i.useState(null), T = i.useRef(null), C = (0, u.Wu)([A.Z], () => {
+  } = i.useContext(b.G), [h, E] = i.useState(null), y = i.useRef(null), [v, I] = i.useState(null), T = i.useRef(null), N = (0, u.Wu)([A.Z], () => {
     var e;
     return null != (e = A.Z.summaries(s.id)) ? e : []
-  }, [s]), R = (0, g.Z)(C);
+  }, [s]), R = (0, g.Z)(N);
   i.useEffect(() => {
-    l().isEqual(R, C) || L.default.track(U.rMx.SUMMARIES_TOPICS_PILL_VIEWED, {
-      num_summaries: C.length,
-      message_counts: C.map(e => e.count),
-      start_message_ids: C.map(e => e.startId),
-      end_message_ids: C.map(e => e.endId),
-      num_participants: C.map(e => e.people.length),
+    l().isEqual(R, N) || x.default.track(U.rMx.SUMMARIES_TOPICS_PILL_VIEWED, {
+      num_summaries: N.length,
+      message_counts: N.map(e => e.count),
+      start_message_ids: N.map(e => e.startId),
+      end_message_ids: N.map(e => e.endId),
+      num_participants: N.map(e => e.people.length),
       guild_id: s.guild_id,
       channel_id: s.id,
       channel_type: s.type
     })
-  }, [C, R, s.guild_id, s.id, s.type]);
+  }, [N, R, s.guild_id, s.id, s.type]);
   let P = (0, u.e7)([w.default], () => {
       var e;
-      return null != (e = null == C ? true : C.map(e => {
+      return null != (e = null == N ? true : N.map(e => {
         var t;
         return null == (t = e.people) ? true : t.map(e => {
           var t;
           return null != (t = w.default.getUser(e)) ? t : null
-        }).filter(x.lm)
+        }).filter(L.lm)
       })) ? e : []
-    }, [C], e_),
-    M = null != (n = (0, u.e7)([A.Z], () => A.Z.visibleSummaryIndex())) ? n : false,
-    k = null == C || null == (t = C[M]) ? true : t.topic;
-  null == k && null == h && (null == C ? true : C.length) >= 1 && (k = null == (a = C[0]) ? true : a.topic);
-  let j = i.useMemo(() => l().get(C, M - 1), [M, C]),
-    G = i.useMemo(() => l().get(C, M + 1), [M, C]),
-    Z = i.useMemo(() => l().debounce(e => {
+    }, [N], e_),
+    j = null != (n = (0, u.e7)([A.Z], () => A.Z.visibleSummaryIndex())) ? n : false,
+    M = null == N || null == (t = N[j]) ? true : t.topic;
+  null == M && null == h && (null == N ? true : N.length) >= 1 && (M = null == (a = N[0]) ? true : a.topic);
+  let k = i.useMemo(() => l().get(N, j - 1), [j, N]),
+    G = i.useMemo(() => l().get(N, j + 1), [j, N]),
+    F = i.useMemo(() => l().debounce(e => {
       var t;
       E(null != (t = null == e ? true : e.id) ? t : null)
     }, 64), [E]),
@@ -717,25 +717,25 @@ function ep(e) {
       trailing: false
     }), []),
     Y = i.useCallback(e => {
-      H(), Z(e)
-    }, [Z, H]),
+      H(), F(e)
+    }, [F, H]),
     [W, K] = i.useState(false),
     z = i.useCallback(() => {
-      L.default.track(U.rMx.SUMMARIES_TOPICS_PILL_TOGGLED, {
+      x.default.track(U.rMx.SUMMARIES_TOPICS_PILL_TOGGLED, {
         topics_dropdown_open: !W,
-        num_summaries: C.length,
-        message_counts: C.map(e => e.count),
-        start_message_ids: C.map(e => e.startId),
-        end_message_ids: C.map(e => e.endId),
-        num_participants: C.map(e => e.people.length),
+        num_summaries: N.length,
+        message_counts: N.map(e => e.count),
+        start_message_ids: N.map(e => e.startId),
+        end_message_ids: N.map(e => e.endId),
+        num_participants: N.map(e => e.people.length),
         guild_id: s.guild_id,
         channel_id: s.id,
         channel_type: s.type
       }), K(!W)
-    }, [W, C, K, s]),
+    }, [W, N, K, s]),
     q = i.useCallback(function(e) {
       let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : B.DZ.PILL_DROPDOWN,
-        n = C[e];
+        n = N[e];
       if (null == n) return;
       (0, S.wv)(s.id, n.id), (0, S.yK)(s.id, n.id);
       let r = () => {
@@ -743,7 +743,7 @@ function ep(e) {
           _.addAutomaticAnchorCallback(Y, false)
         }, 100)
       };
-      _.removeAutomaticAnchorCallback(Y), _.addScrollCompleteCallback(r), L.default.track(U.rMx.SUMMARIES_TOPIC_CLICKED, {
+      _.removeAutomaticAnchorCallback(Y), _.addScrollCompleteCallback(r), x.default.track(U.rMx.SUMMARIES_TOPIC_CLICKED, {
         source: t,
         message_id: n.startId,
         guild_id: s.guild_id,
@@ -757,13 +757,13 @@ function ep(e) {
         jumpType: m.SR.ANIMATED,
         context: "Summary Jump"
       })
-    }, [C, s, Y, _]),
+    }, [N, s, Y, _]),
     X = i.useCallback(() => {
-      q(M - 1, B.DZ.PILL_NEXT_ARROW)
-    }, [q, M]),
+      q(j - 1, B.DZ.PILL_NEXT_ARROW)
+    }, [q, j]),
     Q = i.useCallback(() => {
-      q(M + 1, B.DZ.PILL_PREVIOUS_ARROW)
-    }, [M, q]),
+      q(j + 1, B.DZ.PILL_PREVIOUS_ARROW)
+    }, [j, q]),
     J = i.useCallback(e => {
       var t;
       K(e);
@@ -780,18 +780,18 @@ function ep(e) {
   }, [v, W]);
   let $ = i.useCallback(e => {
     var t;
-    (0, c.k)(e.target) && (null == (t = y.current) ? true : t.contains(e.target)) || (W && L.default.track(U.rMx.SUMMARIES_TOPICS_PILL_TOGGLED, {
+    (0, c.k)(e.target) && (null == (t = y.current) ? true : t.contains(e.target)) || (W && x.default.track(U.rMx.SUMMARIES_TOPICS_PILL_TOGGLED, {
       topics_dropdown_open: false,
-      num_summaries: C.length,
-      message_counts: C.map(e => e.count),
-      start_message_ids: C.map(e => e.startId),
-      end_message_ids: C.map(e => e.endId),
-      num_participants: C.map(e => e.people.length),
+      num_summaries: N.length,
+      message_counts: N.map(e => e.count),
+      start_message_ids: N.map(e => e.startId),
+      end_message_ids: N.map(e => e.endId),
+      num_participants: N.map(e => e.people.length),
       guild_id: s.guild_id,
       channel_id: s.id,
       channel_type: s.type
     }), J(false))
-  }, [W, C, s, J]);
+  }, [W, N, s, J]);
   i.useEffect(() => (_.addAutomaticAnchorCallback(Y), () => {
     _.removeAutomaticAnchorCallback(Y)
   }), [_, Y]), i.useEffect(() => {
@@ -799,51 +799,51 @@ function ep(e) {
   }, [s.id]), i.useEffect(() => (document.addEventListener("mousedown", $), () => {
     document.removeEventListener("mousedown", $)
   }), [$]);
-  let ee = i.useMemo(() => (0, r.jsx)(N.Z, {
+  let ee = i.useMemo(() => (0, r.jsx)(C.Z, {
     channel: s,
-    summaries: C,
+    summaries: N,
     summariesMembers: P,
     selectTopic: q,
     setOpen: J
-  }), [C, P, q, J, s]);
+  }), [N, P, q, J, s]);
   if (!(0, u.e7)([A.Z], () => A.Z.shouldShowTopicsBar())) return null;
-  let et = V.intl.string(V.t["38qwgI"]);
-  return C.length > 0 && (et = "" === k || null == k ? V.intl.string(V.t.DwnFuL) : k), p ? null : (0, r.jsxs)("div", {
+  let et = Z.intl.string(Z.t["38qwgI"]);
+  return N.length > 0 && (et = "" === M || null == M ? Z.intl.string(Z.t.DwnFuL) : M), p ? null : (0, r.jsxs)("div", {
     ref: y,
-    className: o()(F.topicsPillContainer, F.containerMarginTop),
+    className: o()(V.topicsPillContainer, V.containerMarginTop),
     children: [(0, r.jsxs)("div", {
-      className: F.topicsPill,
+      className: V.topicsPill,
       children: [(0, r.jsx)(d.P3F, {
-        className: F.topicsPillText,
-        "aria-label": V.intl.string(V.t.RT3MPz),
+        className: V.topicsPillText,
+        "aria-label": Z.intl.string(Z.t.RT3MPz),
         onClick: z,
         children: (0, r.jsxs)("div", {
           className: o()({
-            [F.topicsPillTextUnselected]: !W,
-            [F.topicsPillTextSelected]: W
+            [V.topicsPillTextUnselected]: !W,
+            [V.topicsPillTextSelected]: W
           }),
           children: [(0, r.jsx)(d.sVe, {
             size: "xs",
             color: "currentColor",
-            className: F.topicsPillSummaryIcon
+            className: V.topicsPillSummaryIcon
           }), (0, r.jsx)(d.Text, {
-            className: F.topicsPillTextTitle,
+            className: V.topicsPillTextTitle,
             variant: "text-sm/medium",
             children: et
           }), (0, r.jsx)(D.Z, {
             width: 16,
             height: 16,
             direction: D.Z.Directions.DOWN,
-            className: F.topicsPillDropdownCaret
+            className: V.topicsPillDropdownCaret
           })]
         })
       }), (0, r.jsxs)("div", {
-        className: F.topicsPillCarets,
+        className: V.topicsPillCarets,
         children: [(0, r.jsx)(d.P3F, {
-          "aria-label": V.intl.string(V.t["4huCnJ"]),
+          "aria-label": Z.intl.string(Z.t["4huCnJ"]),
           onClick: Q,
-          className: o()(F.topicsPillCaret, F.topicsCaretLeft, {
-            [F.topicsPillCaretDisabled]: null == G
+          className: o()(V.topicsPillCaret, V.topicsCaretLeft, {
+            [V.topicsPillCaretDisabled]: null == G
           }),
           children: (0, r.jsx)(D.Z, {
             width: 16,
@@ -851,10 +851,10 @@ function ep(e) {
             direction: D.Z.Directions.UP
           })
         }), (0, r.jsx)(d.P3F, {
-          "aria-label": V.intl.string(V.t["58KOoK"]),
+          "aria-label": Z.intl.string(Z.t["58KOoK"]),
           onClick: X,
-          className: o()(F.topicsPillCaret, F.topicsCaretRight, {
-            [F.topicsPillCaretDisabled]: null == j
+          className: o()(V.topicsPillCaret, V.topicsCaretRight, {
+            [V.topicsPillCaretDisabled]: null == k
           }),
           children: (0, r.jsx)(D.Z, {
             width: 16,
@@ -864,29 +864,29 @@ function ep(e) {
         })]
       })]
     }), W && (0, r.jsxs)("div", {
-      className: F.topicsDropdown,
+      className: V.topicsDropdown,
       children: [(0, r.jsxs)("div", {
-        className: F.topicsDropdownHeading,
+        className: V.topicsDropdownHeading,
         children: [(0, r.jsxs)("div", {
-          className: F.topicsDropdownHeadingText,
+          className: V.topicsDropdownHeadingText,
           children: [(0, r.jsx)(d.sVe, {
             size: "custom",
             color: "currentColor",
-            className: F.topicsPillHeadingIcon,
+            className: V.topicsPillHeadingIcon,
             width: 18,
             height: 20
           }), (0, r.jsx)(d.X6q, {
             variant: "heading-md/bold",
             color: "header-primary",
             lineClamp: 1,
-            children: V.intl.string(V.t.q21fUl)
+            children: Z.intl.string(Z.t.q21fUl)
           }), (0, r.jsx)(O.Z, {
-            className: F.summariesBetaTag
+            className: V.summariesBetaTag
           })]
         }), (0, r.jsx)(d.P3F, {
-          "aria-label": V.intl.string(V.t.cpT0Cg),
+          "aria-label": Z.intl.string(Z.t.cpT0Cg),
           onClick: z,
-          className: F.topicsDropdownClose,
+          className: V.topicsDropdownClose,
           children: (0, r.jsx)(d.Dio, {
             size: "md",
             color: "currentColor"
@@ -894,7 +894,7 @@ function ep(e) {
         })]
       }), (0, r.jsx)(d.Ttm, {
         ref: T,
-        className: F.topicsScroller,
+        className: V.topicsScroller,
         fade: true,
         children: ee
       })]
@@ -904,18 +904,18 @@ function ep(e) {
 let eh = function(e) {
     let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
     return (0, r.jsxs)("div", {
-      className: F.tooltip,
+      className: V.tooltip,
       children: [(0, r.jsx)(d.Text, {
         color: "none",
         variant: "text-sm/semibold",
         lineClamp: 1,
-        className: F.tooltipEmojiName,
+        className: V.tooltipEmojiName,
         children: e
       }), t && (0, r.jsx)(d.Text, {
-        className: F.clickCTA,
+        className: V.clickCTA,
         color: "text-muted",
         variant: "text-sm/normal",
-        children: V.intl.string(V.t["515vjI"])
+        children: Z.intl.string(Z.t["515vjI"])
       })]
     })
   },
@@ -925,7 +925,7 @@ let eh = function(e) {
       className: n
     } = e;
     return (0, r.jsx)("div", {
-      className: o()(F.popoutContainer, n),
+      className: o()(V.popoutContainer, n),
       children: t
     })
   },
@@ -936,9 +936,9 @@ let eh = function(e) {
     return (0, r.jsx)(em, {
       className: t,
       children: (0, r.jsx)("div", {
-        className: F.popoutLoadingBackground,
+        className: V.popoutLoadingBackground,
         children: (0, r.jsx)("div", {
-          className: F.popoutLoadingForeground
+          className: V.popoutLoadingForeground
         })
       })
     })

@@ -1,4 +1,4 @@
-/** Chunk was on 36499 **/
+/** Chunk was on 5665 **/
 /** chunk id: 486622, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   m: () => b
@@ -24,7 +24,7 @@ function b(e) {
     onAcceptSuccess: n,
     onRejectSuccess: i,
     onError: b
-  } = e, y = (0, f.Z)(), [_, C] = r.useState(false), [x, v] = r.useState(false), [j, O] = r.useState(false), [E, S] = r.useState(false), [P, I] = r.useState(false), Z = _ || x || j, T = r.useCallback(async e => {
+  } = e, y = (0, f.Z)(), [_, C] = r.useState(false), [x, v] = r.useState(false), [O, j] = r.useState(false), [E, S] = r.useState(false), [P, I] = r.useState(false), Z = _ || x || O, T = r.useCallback(async e => {
     if (!Z) {
       C(true);
       try {
@@ -64,14 +64,14 @@ function b(e) {
   }, [Z, i, b]), w = r.useCallback(async e => {
     if (Z) return;
     if (null != t && null == s.Z.getMutualGuilds(t.id)) {
-      O(true);
+      j(true);
       try {
         await (0, c.Z)(t.id, t.getAvatarURL(true, 80), {
           withMutualGuilds: true,
           withMutualFriendsCount: true
         })
       } catch (e) {} finally {
-        O(false)
+        j(false)
       }
     }
     let n = async () => {
@@ -126,7 +126,7 @@ function b(e) {
     markAsNotSpam: R,
     isAcceptLoading: _,
     isRejectLoading: x,
-    isUserProfileLoading: j,
+    isUserProfileLoading: O,
     isOptimisticAccepted: E,
     isOptimisticRejected: P
   }

@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 625205, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 625205, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => b
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -18,64 +19,64 @@ var Chunk951288 = require("./951288.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk28025 = require("./28025.js");
-let x = Chunk358085.isWindows() ? ["BTHENUM", "BTHHFENUM"] : [];
+let E = Chunk358085.isWindows() ? ["BTHENUM", "BTHHFENUM"] : [];
 
-function _() {
+function b() {
   var e, t;
-  let m = (0, Chunk442837.e7)([Chunk210887.Z], () => Chunk210887.Z.theme),
+  let f = (0, Chunk442837.e7)([Chunk210887.Z], () => Chunk210887.Z.theme),
     {
-      canSetInputDevice: _,
-      canSetOutputDevice: j
+      canSetInputDevice: b,
+      canSetOutputDevice: y
     } = (0, Chunk442837.cj)([Chunk131951.Z], () => ({
       canSetInputDevice: Chunk131951.Z.supports(Chunk65154.AN.AUDIO_INPUT_DEVICE),
       canSetOutputDevice: Chunk131951.Z.supports(Chunk65154.AN.AUDIO_OUTPUT_DEVICE)
     })),
-    E = (0, Chunk72897.p6)(Chunk65154.h7.AUDIO_INPUT),
-    C = (0, Chunk72897.p6)(Chunk65154.h7.AUDIO_OUTPUT),
-    [O, v] = (0, Chunk72897.Ls)(Chunk65154.h7.AUDIO_INPUT, {
+    O = (0, Chunk72897.p6)(Chunk65154.h7.AUDIO_INPUT),
+    v = (0, Chunk72897.p6)(Chunk65154.h7.AUDIO_OUTPUT),
+    [I, T] = (0, Chunk72897.Ls)(Chunk65154.h7.AUDIO_INPUT, {
       location: "UserSettingsDevices"
     }),
-    [S, T] = (0, Chunk72897.Ls)(Chunk65154.h7.AUDIO_OUTPUT, {
+    [S, A] = (0, Chunk72897.Ls)(Chunk65154.h7.AUDIO_OUTPUT, {
       location: "UserSettingsDevices"
     }),
-    N = O.concat(v),
-    I = S.concat(T),
-    y = Chunk647438.useMemo(() => {
-      let e = x.some(e => {
+    C = I.concat(T),
+    N = S.concat(A),
+    R = Chunk647438.useMemo(() => {
+      let e = E.some(e => {
           var t;
-          return null == E || null == (t = E.hardwareId) ? true : t.startsWith(e)
+          return null == O || null == (t = O.hardwareId) ? true : t.startsWith(e)
         }),
-        t = x.some(e => {
+        t = E.some(e => {
           var t;
-          return null == C || null == (t = C.hardwareId) ? true : t.startsWith(e)
+          return null == v || null == (t = v.hardwareId) ? true : t.startsWith(e)
         });
-      return module && exports && (null == E ? true : E.containerId) != null && E.containerId === (null == C ? true : C.containerId)
-    }, [E, C]),
-    A = N[0],
-    P = I[0],
-    R = null != (e = null == A ? true : A.disabled) ? module : !_,
-    D = null != (t = null == P ? true : P.disabled) ? exports : !j;
+      return module && exports && (null == O ? true : O.containerId) != null && O.containerId === (null == v ? true : v.containerId)
+    }, [O, v]),
+    P = C[0],
+    w = N[0],
+    D = null != (e = null == P ? true : P.disabled) ? module : !b,
+    x = null != (t = null == w ? true : w.disabled) ? exports : !y;
 
-  function Z(e) {
+  function L(e) {
     let t, {
-      label: r,
-      value: s
+      label: i,
+      value: a
     } = e;
-    if (d.Z.isCertified(s)) {
-      let e = (0, a.ap)(m) ? n(561259) : n(887695);
-      t = (0, i.jsx)("img", {
+    if (u.Z.isCertified(a)) {
+      let e = (0, o.ap)(f) ? n(561259) : n(887695);
+      t = (0, r.jsx)("img", {
         src: e,
         alt: "Certified",
-        className: b.deviceOptionCertified
+        className: g.deviceOptionCertified
       })
     }
-    return (0, i.jsxs)("span", {
-      className: b.deviceOption,
-      children: [(0, i.jsx)("span", {
-        className: b.deviceOptionLabel,
-        children: d.Z.getCertifiedDeviceName(s, r)
+    return (0, r.jsxs)("span", {
+      className: g.deviceOption,
+      children: [(0, r.jsx)("span", {
+        className: g.deviceOptionLabel,
+        children: u.Z.getCertifiedDeviceName(a, i)
       }), t]
-    }, s)
+    }, a)
   }
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk28025.devices,
@@ -89,8 +90,8 @@ function _() {
             deviceType: Chunk65154.h7.AUDIO_INPUT,
             location: "UserSettingsDevices",
             hideDeviceTypeIcon: true,
-            isDisabled: R,
-            renderOptionLabel: Z
+            isDisabled: D,
+            renderOptionLabel: L
           })
         })
       }), (0, Chunk951288.jsx)("div", {
@@ -101,12 +102,12 @@ function _() {
             deviceType: Chunk65154.h7.AUDIO_OUTPUT,
             location: "UserSettingsDevices",
             hideDeviceTypeIcon: true,
-            isDisabled: D,
-            renderOptionLabel: Z
+            isDisabled: x,
+            renderOptionLabel: L
           })
         })
       })]
-    }), y && (0, Chunk951288.jsx)(Chunk494620.Z, {
+    }), R && (0, Chunk951288.jsx)(Chunk494620.Z, {
       look: Chunk494620.z.WARNING,
       children: Chunk388032.intl.string(Chunk388032.t.Ioz3g4)
     })]

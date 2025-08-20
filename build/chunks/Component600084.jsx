@@ -1,4 +1,4 @@
-/** Chunk was on 36499 **/
+/** Chunk was on 5665 **/
 /** chunk id: 600084, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => G
@@ -73,7 +73,7 @@ function G(e) {
     showingBanner: h
   } = e, _ = (0, d.ZP)(p), {
     type: x
-  } = p, P = (0, l.e7)([j.default], () => p.isPrivate() ? j.default.getUser(p.getRecipientId()) : null), A = O.ZP.useUserTag(P), {
+  } = p, P = (0, l.e7)([O.default], () => p.isPrivate() ? O.default.getUser(p.getRecipientId()) : null), A = j.ZP.useUserTag(P), {
     canManageRoles: R,
     canReadMessageHistory: M
   } = (0, l.cj)([v.Z], () => ({

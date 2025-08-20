@@ -1,7 +1,7 @@
 /** Chunk was on 36605 **/
 /** chunk id: 645264, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => _
+  default: () => j
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk592286 = require("./592286.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk445609 = require("./445609.js");
-let v = () => (0, Chunk951288.jsx)(Chunk852860.Z, {
+let b = () => (0, Chunk951288.jsx)(Chunk852860.Z, {
     submitting: false,
     message: Chunk388032.intl.string(Chunk388032.t["8g514e"]),
     onReset: () => {
@@ -32,46 +32,46 @@ let v = () => (0, Chunk951288.jsx)(Chunk852860.Z, {
     onSaveText: Chunk388032.intl.string(Chunk388032.t["Xt+UaW"]),
     onSaveButtonColor: Chunk755721.Tt.RED
   }),
-  _ = e => {
+  j = e => {
     let {
       transitionState: t,
       guildId: n,
-      onClose: a,
-      onComplete: u,
-      inviteKey: x,
+      onClose: o,
+      onComplete: d,
+      inviteKey: p,
       isPreview: g = false
-    } = e, _ = (0, f.rb)(e => e.shouldShowWarning), {
-      verificationForm: j,
-      hasFetched: C
-    } = (0, h.ng)(n, g, x), O = (0, d.Dt)();
-    return (i.useEffect(() => {
-      C && j === m.t && a()
-    }, [C, a, j]), j === m.t) ? null : (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsxs)(s.I, {
+    } = e, j = (0, f.rb)(e => e.shouldShowWarning), {
+      verificationForm: C,
+      hasFetched: _
+    } = (0, h.ng)(n, g, p), y = (0, u.Dt)();
+    return (l.useEffect(() => {
+      _ && C === m.t && o()
+    }, [_, o, C]), C === m.t) ? null : (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsxs)(a.I, {
         transitionState: t,
-        "aria-labelledby": O,
+        "aria-labelledby": y,
         size: "xl",
-        onClose: a,
+        onClose: o,
         children: [(0, r.jsx)("div", {
-          className: b.closeButton,
-          children: (0, r.jsx)(o.P, {
-            onClick: () => a(false)
+          className: v.closeButton,
+          children: (0, r.jsx)(s.P, {
+            onClick: () => o(false)
           })
         }), (0, r.jsx)("div", {
-          className: b.container,
-          children: (0, r.jsx)(p.Z, {
-            verificationForm: j,
-            headerId: O,
+          className: v.container,
+          children: (0, r.jsx)(x.Z, {
+            verificationForm: C,
+            headerId: y,
             guildId: n,
-            onClose: a,
-            onComplete: u,
+            onClose: o,
+            onComplete: d,
             isPreview: g
           })
         })]
-      }), (0, r.jsx)(l.W, {
-        children: true === _ && (0, r.jsx)(c.oXn, {
-          className: b.notice,
-          children: (0, r.jsx)(v, {})
+      }), (0, r.jsx)(i.W, {
+        children: true === j && (0, r.jsx)(c.oXn, {
+          className: v.notice,
+          children: (0, r.jsx)(b, {})
         })
       })]
     })

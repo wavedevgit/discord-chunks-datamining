@@ -1,5 +1,6 @@
-/** Chunk was on 21046 **/
-/** chunk id: 301188, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 301188, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   heading: "heading__4169d",
   subheading: "subheading__4169d",

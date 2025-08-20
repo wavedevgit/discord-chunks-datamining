@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 280942, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 280942, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => g
+  Z: () => m
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -13,131 +14,145 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk573567 = require("./573567.js");
 
-function m(e) {
+function f(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      i = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), i.forEach(function(t) {
-      var i;
-      i = n[t], t in e ? Object.defineProperty(e, t, {
-        value: i,
-        enumerable: true,
-        configurable: true,
-        writable: true
-      }) : e[t] = i
+    }))), r.forEach(function(t) {
+      f(e, t, n[t])
     })
   }
   return e
 }
 
 function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-      var i = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, i)
-    }
-    return n
-  })(Object(t)).forEach(function(n) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function h(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function g(e) {
+function m(e) {
   let {
     guildBoostSlot: t,
-    onClose: g,
-    hasCancelableGuildBoostSlot: h,
-    premiumSubscription: f,
-    onSelect: b,
-    fractionalState: x
-  } = e, _ = {
+    onClose: f,
+    hasCancelableGuildBoostSlot: p,
+    premiumSubscription: m,
+    onSelect: g,
+    fractionalState: E
+  } = e;
+
+  function b() {
+    (0, a.ZDy)(async () => {
+      let {
+        default: e
+      } = await Promise.resolve().then(n.bind(n, 760558));
+      return n => (0, r.jsx)(e, h(_({}, n), {
+        guildBoostSlots: [t],
+        locationSection: l.jXE.SETTINGS_PREMIUM
+      }))
+    })
+  }
+
+  function y() {
+    (0, a.ZDy)(async () => {
+      let {
+        default: e
+      } = await Promise.resolve().then(n.bind(n, 401786));
+      return n => (0, r.jsx)(e, h(_({}, n), {
+        guildBoostSlot: t
+      }))
+    })
+  }
+
+  function O() {
+    (0, a.ZDy)(async () => {
+      let {
+        default: e
+      } = await Promise.resolve().then(n.bind(n, 450468));
+      return n => (0, r.jsx)(e, h(_({}, n), {
+        guildBoostSlotId: t.id
+      }))
+    })
+  }
+  let v = {
     transfer: {
-      label: null != t.premiumGuildSubscription ? d.intl.string(d.t["PR0n//"]) : d.intl.string(d.t["+fmEYG"]),
-      subtext: t.isOnCooldown() ? d.intl.string(d.t.XnB8Mz) : null,
+      label: null != t.premiumGuildSubscription ? u.intl.string(u.t["PR0n//"]) : u.intl.string(u.t["+fmEYG"]),
+      subtext: t.isOnCooldown() ? u.intl.string(u.t.XnB8Mz) : null,
       disabled: t.isOnCooldown()
     },
     cancel: {
-      label: d.intl.string(d.t.twFU3d),
-      subtext: h ? null : d.intl.string(d.t.oQ9lOj),
-      disabled: !h
+      label: u.intl.string(u.t.twFU3d),
+      subtext: p ? null : u.intl.string(u.t.oQ9lOj),
+      disabled: !p
     },
     uncancel: {
-      label: d.intl.string(d.t["2glQNj"]),
+      label: u.intl.string(u.t["2glQNj"]),
       subtext: null,
       disabled: false
     }
   };
-  switch (f.status) {
-    case o.O0b.PAST_DUE:
-      _.cancel.disabled = true, _.cancel.subtext = d.intl.string(d.t.WnL6DQ), _.uncancel.disabled = true;
+  switch (m.status) {
+    case l.O0b.PAST_DUE:
+      v.cancel.disabled = true, v.cancel.subtext = u.intl.string(u.t.WnL6DQ), v.uncancel.disabled = true;
       break;
-    case o.O0b.PAUSE_PENDING:
-    case o.O0b.PAUSED:
-      x === c.a$.NONE && (_.transfer.disabled = true, _.transfer.subtext = d.intl.string(d.t.LiLRRU), _.cancel.subtext = d.intl.string(d.t["1ywaWF"]), _.cancel.disabled = true, _.uncancel.disabled = true)
+    case l.O0b.PAUSE_PENDING:
+    case l.O0b.PAUSED:
+      E === c.a$.NONE && (v.transfer.disabled = true, v.transfer.subtext = u.intl.string(u.t.LiLRRU), v.cancel.subtext = u.intl.string(u.t["1ywaWF"]), v.cancel.disabled = true, v.uncancel.disabled = true)
   }
-  let j = r.useMemo(() => f.isPausedOrPausePending && x === c.a$.NONE ? (0, i.jsx)(s.sNh, {
+  let I = i.useMemo(() => m.isPausedOrPausePending && E === c.a$.NONE ? (0, r.jsx)(a.sNh, {
     id: "manage-subscription",
-    label: d.intl.string(d.t.obRG6e),
-    action: () => a.Z.open(o.oAB.SUBSCRIPTIONS),
-    iconLeft: s.WGR,
-    className: u.manageSubscription
-  }) : null, [x, f]);
-  return (0, i.jsxs)(s.v2r, {
-    onSelect: b,
+    label: u.intl.string(u.t.obRG6e),
+    action: () => o.Z.open(l.oAB.SUBSCRIPTIONS),
+    iconLeft: a.WGR,
+    className: d.manageSubscription
+  }) : null, [E, m]);
+  return (0, r.jsxs)(a.v2r, {
+    onSelect: g,
     navId: "subscription-context",
     variant: "fixed",
-    "aria-label": d.intl.string(d.t.ogxXGh),
-    onClose: g,
-    children: [(0, i.jsx)(s.sNh, {
+    "aria-label": u.intl.string(u.t.ogxXGh),
+    onClose: f,
+    children: [(0, r.jsx)(a.sNh, {
       id: "apply",
-      label: _.transfer.label,
-      subtext: _.transfer.subtext,
-      action: function() {
-        (0, s.ZDy)(async () => {
-          let {
-            default: e
-          } = await Promise.resolve().then(n.bind(n, 760558));
-          return n => (0, i.jsx)(e, p(m({}, n), {
-            guildBoostSlots: [t],
-            locationSection: o.jXE.SETTINGS_PREMIUM
-          }))
-        })
-      },
-      disabled: _.transfer.disabled
-    }), (0, l.tl)(t) ? (0, i.jsx)(s.sNh, {
+      label: v.transfer.label,
+      subtext: v.transfer.subtext,
+      action: b,
+      disabled: v.transfer.disabled
+    }), (0, s.tl)(t) ? (0, r.jsx)(a.sNh, {
       id: "uncancel",
-      label: _.uncancel.label,
-      subtext: _.uncancel.subtext,
-      action: function() {
-        (0, s.ZDy)(async () => {
-          let {
-            default: e
-          } = await Promise.resolve().then(n.bind(n, 450468));
-          return n => (0, i.jsx)(e, p(m({}, n), {
-            guildBoostSlotId: t.id
-          }))
-        })
-      },
-      disabled: _.uncancel.disabled
-    }) : (0, i.jsx)(s.sNh, {
+      label: v.uncancel.label,
+      subtext: v.uncancel.subtext,
+      action: O,
+      disabled: v.uncancel.disabled
+    }) : (0, r.jsx)(a.sNh, {
       id: "cancel",
-      label: _.cancel.label,
-      subtext: _.cancel.subtext,
-      action: function() {
-        (0, s.ZDy)(async () => {
-          let {
-            default: e
-          } = await Promise.resolve().then(n.bind(n, 401786));
-          return n => (0, i.jsx)(e, p(m({}, n), {
-            guildBoostSlot: t
-          }))
-        })
-      },
-      disabled: _.cancel.disabled,
+      label: v.cancel.label,
+      subtext: v.cancel.subtext,
+      action: y,
+      disabled: v.cancel.disabled,
       color: "danger"
-    }), j]
+    }), I]
   })
 }

@@ -1,5 +1,6 @@
-/** Chunk was on 99315 **/
-/** chunk id: 513825, original params: e,r,o (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 513825, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   animationContainer: "animationContainer__884d1",
   container: "container__884d1",

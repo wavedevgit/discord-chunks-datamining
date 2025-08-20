@@ -1,8 +1,9 @@
-/** Chunk was on 26434 **/
-/** chunk id: 866104, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 866104, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  C: () => T,
-  Z: () => S
+  C: () => R,
+  Z: () => N
 }), require("./388685.js"), require("./953529.js"), require("./781311.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -28,148 +29,155 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk793701 = require("./793701.js");
 
-function I(e) {
+function A(e) {
   let {
     onClick: t
   } = e;
-  return (0, r.jsxs)(s.P3F, {
+  return (0, r.jsxs)(l.P3F, {
     onClick: t,
-    className: j.showMoreButton,
-    children: [(0, r.jsx)(s.Text, {
+    className: S.showMoreButton,
+    children: [(0, r.jsx)(l.Text, {
       variant: "text-sm/medium",
       color: "header-primary",
-      children: x.intl.string(x.t.J4cw1t)
-    }), (0, r.jsx)(s.LZC, {
+      children: T.intl.string(T.t.J4cw1t)
+    }), (0, r.jsx)(l.LZC, {
       size: 4,
       horizontal: true
-    }), (0, r.jsx)(h.Z, {
-      direction: h.Z.Directions.RIGHT,
-      className: j.showMoreArrow
+    }), (0, r.jsx)(g.Z, {
+      direction: g.Z.Directions.RIGHT,
+      className: S.showMoreArrow
     })]
   })
 }
 
-function S(e) {
+function C(e) {
+  return (0, s.cj)([h.ZP, m.default], () => {
+    var t, n;
+    let r = m.default.getCurrentUser();
+    o()(null != r, "user cannot be null");
+    let i = h.ZP.getMember(e, r.id);
+    return {
+      nickname: null != (t = null == i ? true : i.nick) ? t : E.ZP.getName(r),
+      nickcolor: null != (n = null == i ? true : i.colorString) ? n : true
+    }
+  }, [e])
+}
+
+function N(e) {
   let {
     coverImageAsset: t,
     isPreview: n = false
-  } = e, i = f.QK.useSetting(), l = (0, E.n)() && i, [o, a] = (0, m.Z)(t, l), s = l ? (0, r.jsx)(d.Z, {
+  } = e, i = p.QK.useSetting(), a = (0, b.n)() && i, [o, s] = (0, _.Z)(t, a), l = a ? (0, r.jsx)(d.Z, {
     autoPlay: true,
     loop: true,
-    className: j.coverImage,
+    className: S.coverImage,
     width: 655,
     poster: (0, u.b)("server_products/storefront/default-header.png"),
     src: (0, u.b)("server_products/storefront/default-header.mov")
   }) : (0, r.jsx)("img", {
     src: (0, u.b)("server_products/storefront/default-header.png"),
     alt: "",
-    className: j.coverImage
+    className: S.coverImage
   });
   return (0, r.jsx)("div", {
     ref: o,
-    className: j.coverImageContainer,
-    children: null == a || n ? s : (0, r.jsx)("img", {
-      src: a,
+    className: S.coverImageContainer,
+    children: null == s || n ? l : (0, r.jsx)("img", {
+      src: s,
       alt: "",
-      className: j.coverImage
+      className: S.coverImage
     })
   })
 }
 
-function T(e) {
+function R(e) {
   var t, n;
   let {
-    guild: l,
-    subscriptionsSettings: d
-  } = e, m = l.id, {
-    nickname: f,
-    nickcolor: h
-  } = (0, a.cj)([g.ZP, _.default], () => {
-    var e, t;
-    let n = _.default.getCurrentUser();
-    o()(null != n, "user cannot be null");
-    let r = g.ZP.getMember(m, n.id);
-    return {
-      nickname: null != (e = null == r ? true : r.nick) ? e : b.ZP.getName(n),
-      nickcolor: null != (t = null == r ? true : r.colorString) ? t : true
-    }
-  }, [m]), {
-    isTruncated: E,
-    ExpandableTextContainer: T
-  } = (0, C.s)(), P = (null != (n = null == d || null == (t = d.description) ? true : t.trim().length) ? n : 0) > 0, [N, A] = i.useState(1), w = (0, c.Z)("(max-width: 1439px)"), {
-    selectedTab: Z,
-    isPhantomPreview: R
-  } = (0, v.m)(), D = Z === O.y.GUILD_PRODUCTS_PREVIEW ? x.intl.string(x.t["LvXy/P"]) : x.intl.string(x.t.XyqKh4), L = P ? (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(T, {
-      lineClamp: w || 2 === N ? 2 : 3,
-      children: (0, r.jsx)(s.Text, {
+    guild: a,
+    subscriptionsSettings: o
+  } = e, s = a.id, {
+    nickname: d,
+    nickcolor: _
+  } = C(s), {
+    isTruncated: p,
+    ExpandableTextContainer: h
+  } = (0, y.s)(), m = () => (0, I.Z)({
+    guildId: s
+  }), g = (null != (n = null == o || null == (t = o.description) ? true : t.trim().length) ? n : 0) > 0, [E, b] = i.useState(1), R = (0, c.Z)("(max-width: 1439px)"), {
+    selectedTab: P,
+    isPhantomPreview: w
+  } = (0, O.m)(), D = P === v.y.GUILD_PRODUCTS_PREVIEW ? T.intl.string(T.t["LvXy/P"]) : T.intl.string(T.t.XyqKh4), x = e => {
+    null != e && e.clientHeight > 30 && b(2)
+  };
+
+  function L(e, t) {
+    return (0, r.jsx)("span", {
+      style: {
+        color: _
+      },
+      children: e
+    }, t)
+  }
+  let j = g ? (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(h, {
+      lineClamp: R || 2 === E ? 2 : 3,
+      children: (0, r.jsx)(l.Text, {
         variant: "text-sm/normal",
         color: "text-default",
-        children: null == d ? true : d.description
+        children: null == o ? true : o.description
       })
-    }), E && (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(s.LZC, {
+    }), p && (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(l.LZC, {
         size: 4
-      }), (0, r.jsx)(I, {
-        onClick: () => (0, y.Z)({
-          guildId: m
-        })
+      }), (0, r.jsx)(A, {
+        onClick: m
       })]
     })]
-  }) : (0, r.jsx)(s.Text, {
+  }) : (0, r.jsx)(l.Text, {
     variant: "text-sm/normal",
     color: "text-default",
-    children: R ? D : x.intl.string(x.t["NY/FIS"])
+    children: w ? D : T.intl.string(T.t["NY/FIS"])
   });
   return (0, r.jsxs)("div", {
-    className: j.container,
+    className: S.container,
     children: [(0, r.jsxs)("div", {
-      className: j.infoContainer,
+      className: S.infoContainer,
       children: [(0, r.jsx)("div", {
-        children: (0, r.jsx)(p.Z, {
-          guild: l,
-          size: p.Z.Sizes.LARGER,
-          iconSrc: null == l.icon || R ? (0, u.b)("server_products/storefront/default-guild-icon.jpg") : true
+        children: (0, r.jsx)(f.Z, {
+          guild: a,
+          size: f.Z.Sizes.LARGER,
+          iconSrc: null == a.icon || w ? (0, u.b)("server_products/storefront/default-guild-icon.jpg") : true
         })
-      }), (0, r.jsx)(s.LZC, {
+      }), (0, r.jsx)(l.LZC, {
         size: 16,
         horizontal: true
       }), (0, r.jsxs)("div", {
         children: [(0, r.jsx)("div", {
-          ref: e => {
-            null != e && e.clientHeight > 30 && A(2)
-          },
-          children: (0, r.jsx)(s.X6q, {
+          ref: x,
+          children: (0, r.jsx)(l.X6q, {
             variant: "heading-xl/semibold",
             color: "header-primary",
             lineClamp: 2,
-            children: R ? x.intl.string(x.t.rtgp7u) : x.intl.formatToPlainString(x.t.NZeik5, {
-              guildName: l.name
+            children: w ? T.intl.string(T.t.rtgp7u) : T.intl.formatToPlainString(T.t.NZeik5, {
+              guildName: a.name
             })
           })
-        }), (0, r.jsx)(s.LZC, {
+        }), (0, r.jsx)(l.LZC, {
           size: 8
-        }), (0, r.jsx)(s.Text, {
+        }), (0, r.jsx)(l.Text, {
           variant: "text-md/normal",
           color: "text-default",
-          children: x.intl.format(x.t["7JwrlJ"], {
-            username: f,
-            usernameHook: function(e, t) {
-              return (0, r.jsx)("span", {
-                style: {
-                  color: h
-                },
-                children: e
-              }, t)
-            }
+          children: T.intl.format(T.t["7JwrlJ"], {
+            username: d,
+            usernameHook: L
           })
-        }), (0, r.jsx)(s.LZC, {
+        }), (0, r.jsx)(l.LZC, {
           size: 9
-        }), L]
+        }), j]
       })]
-    }), (0, r.jsx)(S, {
-      coverImageAsset: null == d ? true : d.cover_image_asset,
-      isPreview: R
+    }), (0, r.jsx)(N, {
+      coverImageAsset: null == o ? true : o.cover_image_asset,
+      isPreview: w
     })]
   })
 }

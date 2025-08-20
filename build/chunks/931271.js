@@ -1,5 +1,6 @@
-/** Chunk was on 26434 **/
-/** chunk id: 931271, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 931271, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   h: () => u
 });
@@ -18,13 +19,13 @@ function u(e) {
     currentUserPresenceActivity: n,
     currentUserId: u,
     message: d,
-    application: p,
-    isEmbeddedApplication: m,
-    isFrameApplication: f,
-    isGameLaunchable: g
+    application: f,
+    isEmbeddedApplication: _,
+    isFrameApplication: p,
+    isGameLaunchable: h
   } = e;
-  if (d.author.id === u || !(0, s.Z)(t, d, p.id)) returnfalse;
-  let _ = (0, o._)(t);
-  return !(!(0, a.n)(_) || (0, c.y)(_) || (0, l.g)(n, t) || (0, i.H)(d)) && (!!m && !!f || !!r.isPlatformEmbedded && !!g)
+  if (d.author.id === u || !(0, l.Z)(t, d, f.id)) returnfalse;
+  let m = (0, o._)(t);
+  return !(!(0, s.n)(m) || (0, c.y)(m) || (0, a.g)(n, t) || (0, i.H)(d)) && (!!_ && !!p || !!r.isPlatformEmbedded && !!h)
 }
 require("./981631.js")

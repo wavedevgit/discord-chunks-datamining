@@ -1,7 +1,8 @@
-/** Chunk was on 69003 **/
-/** chunk id: 291533, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 291533, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  G: () => d
+  G: () => f
 });
 var Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
@@ -11,15 +12,17 @@ var Chunk442837 = require("./442837.js"),
   Chunk819640 = require("./819640.js"),
   Chunk562511 = require("./562511.js"),
   Chunk46140 = require("./46140.js");
+let d = 18e4;
 
-function d(e) {
+function f(e) {
   let t = (0, c.A2)(e),
     n = (0, r.e7)([o.Z], () => o.Z.isOpen()),
-    d = (0, r.e7)([s.Z], () => s.Z.hasLayers()),
-    p = (0, a.Ws)({
+    f = (0, r.e7)([l.Z], () => l.Z.hasLayers()),
+    _ = (0, s.Ws)({
       location: u.dr.QUESTS_BAR
-    });
-  return (0, l.bf)(t && !n && !d && p ? i.z.GUILD_TAG_AVAILABLE_COACHMARK : null, {
-    cooldownDurationMs: 18e4
+    }),
+    p = t && !n && !f && _;
+  return (0, a.bf)(p ? i.z.GUILD_TAG_AVAILABLE_COACHMARK : null, {
+    cooldownDurationMs: d
   })
 }

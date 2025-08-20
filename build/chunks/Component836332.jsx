@@ -1,12 +1,13 @@
-/** Chunk was on 66181 **/
-/** chunk id: 836332, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 836332, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => j
+  Z: () => O
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk100527 = require("./100527.js"),
   Chunk906732 = require("./906732.jsx"),
@@ -20,56 +21,57 @@ var Chunk951288 = require("./951288.js"),
   Chunk839526 = require("./839526.js"),
   Chunk4046 = require("./4046.js"),
   Chunk423741 = require("./423741.js");
-let j = Chunk647438.forwardRef((e, t) => {
-  let {
-    className: n,
-    isFooterVisible: s,
-    isDarkMode: j,
-    isReducedMotion: E,
-    subscriptionTier: C
-  } = e, {
-    analyticsLocations: O
-  } = (0, c.ZP)(o.Z.PREMIUM_MARKETING_FOOTER_CTA), v = (0, m.Nx)(), S = (0, u.rO)(), T = r.useRef(null), [N, I] = r.useState(false);
-  return r.useEffect(() => {
-    !s || E || N || null == T.current || T.current.play()
-  }, [s, E, N]), (0, i.jsx)(c.Gt, {
-    value: O,
-    children: (0, i.jsxs)("div", {
-      ref: t,
-      className: a()(f.container, n),
-      children: [(0, i.jsx)(l.X6q, {
-        className: f.footerHeader,
-        variant: "display-md",
-        color: "header-primary",
-        children: h.intl.string(h.t.lEw32t)
-      }), (0, i.jsx)(p.PK, {
-        subscriptionTier: C,
-        inOfferExperience: v,
-        containerClassName: f.footerCTAContainer,
-        isApplicationHome: true,
-        isDarkMode: j
-      }), (0, i.jsx)("div", {
-        className: f.footerArtContainer,
-        children: (0, i.jsx)(d.Z, {
-          playsInline: true,
-          muted: true,
-          preload: "auto",
-          poster: x.Z,
-          className: f.footerArt,
-          onEnded: () => {
-            I(true)
-          },
-          ref: T,
-          children: (0, i.jsx)("source", {
-            src: S ? b.Z : _.Z,
-            type: S ? g.m.MP4 : g.m.WEBM
+let y = (e, t) => {
+    let {
+      className: n,
+      isFooterVisible: a,
+      isDarkMode: y,
+      isReducedMotion: O,
+      subscriptionTier: v
+    } = e, {
+      analyticsLocations: I
+    } = (0, c.ZP)(l.Z.PREMIUM_MARKETING_FOOTER_CTA), T = (0, f.Nx)(), S = (0, d.rO)(), A = i.useRef(null), [C, N] = i.useState(false);
+    return i.useEffect(() => {
+      !a || O || C || null == A.current || A.current.play()
+    }, [a, O, C]), (0, r.jsx)(c.Gt, {
+      value: I,
+      children: (0, r.jsxs)("div", {
+        ref: t,
+        className: o()(m.container, n),
+        children: [(0, r.jsx)(s.X6q, {
+          className: m.footerHeader,
+          variant: "display-md",
+          color: "header-primary",
+          children: h.intl.string(h.t.lEw32t)
+        }), (0, r.jsx)(_.PK, {
+          subscriptionTier: v,
+          inOfferExperience: T,
+          containerClassName: m.footerCTAContainer,
+          isApplicationHome: true,
+          isDarkMode: y
+        }), (0, r.jsx)("div", {
+          className: m.footerArtContainer,
+          children: (0, r.jsx)(u.Z, {
+            playsInline: true,
+            muted: true,
+            preload: "auto",
+            poster: E.Z,
+            className: m.footerArt,
+            onEnded: () => {
+              N(true)
+            },
+            ref: A,
+            children: (0, r.jsx)("source", {
+              src: S ? g.Z : b.Z,
+              type: S ? p.m.MP4 : p.m.WEBM
+            })
           })
-        })
-      }), (0, i.jsx)("div", {
-        className: f.leftGradient
-      }), (0, i.jsx)("div", {
-        className: f.rightGradient
-      })]
+        }), (0, r.jsx)("div", {
+          className: m.leftGradient
+        }), (0, r.jsx)("div", {
+          className: m.rightGradient
+        })]
+      })
     })
-  })
-})
+  },
+  O = Chunk647438.forwardRef(y)

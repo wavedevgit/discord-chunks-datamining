@@ -1,5 +1,6 @@
-/** Chunk was on 21046 **/
-/** chunk id: 50476, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 50476, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   Z: () => c
 });
@@ -14,10 +15,10 @@ function l(e) {
     onClick: t,
     children: n
   } = e;
-  return (0, r.jsx)(s.zx, {
+  return (0, r.jsx)(i.zx, {
     onClick: t,
-    className: i.button,
-    innerClassName: i.buttonInner,
+    className: s.button,
+    innerClassName: s.buttonInner,
     look: "blank",
     children: n
   })
@@ -28,15 +29,15 @@ let c = function(e) {
     onConsole: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: i.buttons,
+    className: s.buttons,
     children: [(0, r.jsxs)(l, {
       onClick: t,
-      children: [a.intl.string(a.t.QXc019), (0, r.jsx)(o.pzj, {
+      children: [o.intl.string(o.t.QXc019), (0, r.jsx)(a.pzj, {
         size: "sm"
       })]
     }), (0, r.jsxs)(l, {
       onClick: n,
-      children: [a.intl.string(a.t["8lAfuL"]), (0, r.jsx)(o.iWm, {
+      children: [o.intl.string(o.t["8lAfuL"]), (0, r.jsx)(a.iWm, {
         size: "sm"
       })]
     })]

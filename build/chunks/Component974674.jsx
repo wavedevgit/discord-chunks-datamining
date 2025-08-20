@@ -3,9 +3,9 @@
 "use strict";
 require.d(exports, {
   Vq: () => D,
-  Xo: () => Z,
+  Xo: () => F,
   qE: () => U,
-  qe: () => j
+  qe: () => k
 }), require("./415506.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -86,11 +86,11 @@ let A = {
   friction: 70
 };
 
-function N() {
+function C() {
   return document.hasFocus()
 }
 
-function C(e) {
+function N(e) {
   var {
     size: t,
     isMobile: n,
@@ -284,7 +284,7 @@ function D(e, t, n) {
   })
 }
 
-function L(e, t, n) {
+function x(e, t, n) {
   let {
     size: r,
     status: i,
@@ -300,7 +300,7 @@ function L(e, t, n) {
   }
 }
 
-function x(e, t, n, i) {
+function L(e, t, n, i) {
   let a = D(n, i, t, false),
     o = (0, u.lm)(i, e);
   if (!t) {
@@ -333,14 +333,14 @@ function x(e, t, n, i) {
   })
 }
 
-function M(e) {
+function j(e) {
   let {
     status: t,
     isMobile: n,
     isTyping: r,
     size: i
   } = e, a = n && !r && t === h.Skl.ONLINE, o = (0, g.UC)(i);
-  return O({}, L(o, a, r), (0, u.Dk)({
+  return O({}, x(o, a, r), (0, u.Dk)({
     status: t,
     size: o.status,
     isMobile: a,
@@ -350,7 +350,7 @@ function M(e) {
   }))
 }
 
-function k(e) {
+function M(e) {
   let {
     children: t,
     size: n,
@@ -373,18 +373,18 @@ function k(e) {
   } = e, S = {
     width: (0, g.px)(n),
     height: (0, g.px)(n)
-  }, A = null == p || h ? true : R(p, E, y), N = T.size * m.hs, C = P(E, n, y, O), w = null != v && (0, r.jsx)("svg", {
-    width: N + I,
-    height: N,
-    viewBox: "0 0 ".concat(N + I, " ").concat(N),
+  }, A = null == p || h ? true : R(p, E, y), C = T.size * m.hs, N = P(E, n, y, O), w = null != v && (0, r.jsx)("svg", {
+    width: C + I,
+    height: C,
+    viewBox: "0 0 ".concat(C + I, " ").concat(C),
     className: b.avatarDecoration,
     "aria-hidden": true,
     children: (0, r.jsx)("foreignObject", {
       x: 0,
       y: 0,
-      width: N,
-      height: N,
-      mask: null != C ? "url(#".concat(C, ")") : true,
+      width: C,
+      height: C,
+      mask: null != N ? "url(#".concat(N, ")") : true,
       children: (0, r.jsx)("div", {
         className: b.avatarStack,
         children: (0, r.jsx)("img", {
@@ -421,7 +421,7 @@ function k(e) {
     children: [t, w]
   })
 }
-let j = Chunk647438.forwardRef((e, t) => {
+let k = Chunk647438.forwardRef((e, t) => {
   let {
     src: n,
     isSpeaking: i,
@@ -458,19 +458,19 @@ function U(e) {
     "aria-hidden": T = false,
     "aria-label": S,
     imageClassName: A,
-    ref: N
-  } = e, C = n !== h.Skl.UNKNOWN ? n : null, R = (0, g.UC)(i), P = null != C ? Math.ceil((R.status * g.D6 - R.status) / 2) : 0, L = R.size + P, M = (0, u.vj)(C, a);
-  return (0, r.jsx)(k, I(O({}, e), {
+    ref: C
+  } = e, N = n !== h.Skl.UNKNOWN ? n : null, R = (0, g.UC)(i), P = null != N ? Math.ceil((R.status * g.D6 - R.status) / 2) : 0, x = R.size + P, j = (0, u.vj)(N, a);
+  return (0, r.jsx)(M, I(O({}, e), {
     ariaLabel: S,
     ariaHidden: T,
-    status: C,
+    status: N,
     specs: R,
     typingOffset: P,
     children: (0, r.jsxs)("svg", {
-      ref: N,
-      width: L,
-      height: L,
-      viewBox: "0 0 ".concat(L, " ").concat(L),
+      ref: C,
+      width: x,
+      height: x,
+      viewBox: "0 0 ".concat(x, " ").concat(x),
       className: o()(b.mask, b.svg),
       "aria-hidden": true,
       children: [(0, r.jsx)("foreignObject", {
@@ -478,23 +478,23 @@ function U(e) {
         y: 0,
         width: R.size,
         height: R.size,
-        mask: "url(#".concat(w(C, i, s, l), ")"),
-        children: (0, r.jsx)(j, {
+        mask: "url(#".concat(w(N, i, s, l), ")"),
+        children: (0, r.jsx)(k, {
           ref: _,
           src: t,
           isSpeaking: m,
           className: A
         })
-      }), null != C && null != v ? x(v, s, R, C) : null, null != C ? (0, r.jsx)(d.u, {
-        text: E ? (0, p.u5)(C) : null,
+      }), null != N && null != v ? L(v, s, R, N) : null, null != N ? (0, r.jsx)(d.u, {
+        text: E ? (0, p.u5)(N) : null,
         "aria-label": false,
         position: "top",
         spacing: 5 + 1.5 * R.stroke,
         delay: y,
         children: e => (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)("rect", I(O({}, e, D(R, C, s, l)), {
-            fill: M,
-            mask: "url(#".concat((0, u.rs)(C, s, l), ")"),
+          children: [(0, r.jsx)("rect", I(O({}, e, D(R, N, s, l)), {
+            fill: j,
+            mask: "url(#".concat((0, u.rs)(N, s, l), ")"),
             className: b.pointerEvents
           })), l ? (0, r.jsx)(c.b, {
             ref: f,
@@ -524,7 +524,7 @@ function B(e, t, n) {
   return "translate(".concat(l, ", ").concat(c, ")")
 }
 
-function V(e) {
+function Z(e) {
   let {
     fromIsMobile: t = true,
     fromStatus: n,
@@ -541,28 +541,28 @@ function V(e) {
     statusTooltipDelay: P,
     statusBackdropColor: w,
     "aria-hidden": D = false,
-    "aria-label": L,
+    "aria-label": x,
     imageClassName: U,
-    pulseStatusIcon: V
-  } = e, F = (0, u.vj)(v, S), Z = i.useId(), H = i.useId(), [Y] = i.useState(() => O({
+    pulseStatusIcon: Z
+  } = e, V = (0, u.vj)(v, S), F = i.useId(), H = i.useId(), [Y] = i.useState(() => O({
     fill: a
-  }, M({
+  }, j({
     size: E,
     status: n,
     isMobile: t,
     isTyping: false
   }))), W = i.useMemo(() => O({
-    fill: F
-  }, M({
+    fill: V
+  }, j({
     size: E,
     status: v,
     isMobile: l,
     isTyping: _
-  })), [F, E, v, l, _]), K = (0, f.q_F)({
+  })), [V, E, v, l, _]), K = (0, f.q_F)({
     config: A,
     from: Y,
     to: W
-  }, N() ? "animate-always" : "animate-never"), {
+  }, C() ? "animate-always" : "animate-never"), {
     avatarCutoutX: z,
     avatarCutoutY: q,
     avatarCutoutWidth: X,
@@ -578,16 +578,16 @@ function V(e) {
     from: {
       scale: 1
     },
-    to: V ? [{
+    to: Z ? [{
       scale: .8
     }, {
       scale: 1.1
     }, {
       scale: 1
     }] : []
-  }, N() ? "animate-always" : "animate-never", [V, v]);
-  return (0, r.jsx)(k, I(O({}, e), {
-    ariaLabel: L,
+  }, C() ? "animate-always" : "animate-never", [Z, v]);
+  return (0, r.jsx)(M, I(O({}, e), {
+    ariaLabel: x,
     ariaHidden: D,
     typingOffset: ea,
     specs: en,
@@ -598,7 +598,7 @@ function V(e) {
       className: o()(b.mask, b.svg),
       "aria-hidden": true,
       children: [(0, r.jsxs)("mask", {
-        id: Z,
+        id: F,
         width: et,
         height: et,
         children: [(0, r.jsx)("circle", {
@@ -621,13 +621,13 @@ function V(e) {
         y: 0,
         width: et,
         height: et,
-        mask: "url(#".concat(Z, ")"),
-        children: (0, r.jsx)(j, {
+        mask: "url(#".concat(F, ")"),
+        children: (0, r.jsx)(k, {
           src: y,
           isSpeaking: m,
           className: U
         })
-      }), null != w && x(w, l, en, v), (0, r.jsx)(d.u, {
+      }), null != w && L(w, l, en, v), (0, r.jsx)(d.u, {
         text: R ? (0, p.u5)(v) : null,
         "aria-label": false,
         position: "top",
@@ -652,7 +652,7 @@ function V(e) {
               y: .5 * ei,
               hide: !_
             })]
-          }), (0, r.jsx)(C, O({
+          }), (0, r.jsx)(N, O({
             size: E,
             isMobile: l,
             isTyping: _,
@@ -664,11 +664,11 @@ function V(e) {
   }))
 }
 
-function F(e, t, n, r, i) {
+function V(e, t, n, r, i) {
   return null != n && null != t && (!!e || t !== n || t === h.Skl.ONLINE && r !== i)
 }
-j.displayName = "AvatarImg";
-let Z = Chunk647438.memo(function(e) {
+k.displayName = "AvatarImg";
+let F = Chunk647438.memo(function(e) {
   var {
     statusColor: t,
     status: n
@@ -676,10 +676,10 @@ let Z = Chunk647438.memo(function(e) {
   let {
     isMobile: o = false,
     isTyping: s = false
-  } = a, l = i.useRef(n), c = i.useRef(o), d = (0, u.vj)(n, t), f = i.useRef(d), _ = i.useRef(false), p = _.current || F(s, n, l.current, o, c.current);
+  } = a, l = i.useRef(n), c = i.useRef(o), d = (0, u.vj)(n, t), f = i.useRef(d), _ = i.useRef(false), p = _.current || V(s, n, l.current, o, c.current);
   return i.useLayoutEffect(() => {
     _.current = p, l.current = n, c.current = o, f.current = d
-  }, [n, o, d, p]), null != n && null != l.current && p ? (0, r.jsx)(V, I(O({}, a), {
+  }, [n, o, d, p]), null != n && null != l.current && p ? (0, r.jsx)(Z, I(O({}, a), {
     status: n,
     statusColor: d,
     fromStatus: l.current,

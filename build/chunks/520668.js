@@ -1,5 +1,6 @@
-/** Chunk was on 92304 **/
-/** chunk id: 520668, original params: n,o,e (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 520668, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   phoneVerificationModal: "phoneVerificationModal_db41ea",
   animationContainer: "animationContainer_db41ea",

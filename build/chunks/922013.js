@@ -1,5 +1,6 @@
-/** Chunk was on 93886 **/
-/** chunk id: 922013, original params: e,t,a (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 922013, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   left: "left_caab99",
   right: "right_caab99",

@@ -1,12 +1,13 @@
-/** Chunk was on 64838 **/
-/** chunk id: 192023, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 381176, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  h: () => o
+  h: () => s
 });
 var Chunk647438 = require("./647438.js"),
   Chunk818083 = require("./818083.js");
-let s = new Date(Date.UTC(2025, 5, 16)),
-  i = (0, Chunk818083.B)({
+let a = new Date(Date.UTC(2025, 5, 16)),
+  o = (0, Chunk818083.B)({
     id: "2025-06_quest_brand_color_removal",
     kind: "user",
     label: "Quest Brand Color Removal",
@@ -22,14 +23,14 @@ let s = new Date(Date.UTC(2025, 5, 16)),
     }]
   });
 
-function o(e) {
+function s(e) {
   let {
     questConfig: t,
     location: n
-  } = e, r = l.useMemo(() => new Date(t.startsAt), [t.startsAt]) >= s;
-  return i.useExperiment({
+  } = e, i = r.useMemo(() => new Date(t.startsAt), [t.startsAt]) >= a;
+  return o.useExperiment({
     location: n
   }, {
-    autoTrackExposure: r
-  }).enabled && r
+    autoTrackExposure: i
+  }).enabled && i
 }

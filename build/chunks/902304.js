@@ -36,8 +36,8 @@ function T(e, t, n) {
 }
 let S = new Chunk710845.Z("GameConsoleManager"),
   A = 3e3,
-  N = 6e4,
-  C = 18e4;
+  C = 6e4,
+  N = 18e4;
 async function R(e) {
   let t = f.Z.getChannelId();
   i()(null == t, "Syncing to remote while in voice!"), e.selfMute !== d.Z.isSelfMute() && await s.Z.toggleSelfMute({
@@ -115,7 +115,7 @@ class w extends Chunk147913.Z {
       let e = E.Z.getRemoteSessionId();
       null != e && null == _.Z.getSessionById(e) && (0, m.s6)(), null == e && this.maybeConnect(Object.values(_.Z.getSessions()))
     }), T(this, "handleWaitForRemoteSession", () => {
-      this.awaitRemoteTimeout.start(N, () => {
+      this.awaitRemoteTimeout.start(C, () => {
         (0, m.s6)(), o.Z.show({
           title: I.intl.string(I.t.wGMxr6),
           body: I.intl.string(I.t.i5k8b2)
@@ -143,7 +143,7 @@ class w extends Chunk147913.Z {
         body: s.body,
         errorCodeMessage: s.errorCodeMessage,
         reconnectPlatformType: s.isAccountLinkError ? a.type : true
-      }), O.e8.has(i.code) && this.awaitRemoteTimeout.isStarted() ? this.awaitRemoteTimeout.start(C, () => (0, m.s6)(), true) : "failed" === r && (0, m.s6)()
+      }), O.e8.has(i.code) && this.awaitRemoteTimeout.isStarted() ? this.awaitRemoteTimeout.start(N, () => (0, m.s6)(), true) : "failed" === r && (0, m.s6)()
     }), T(this, "handleRemoteSessionDisconnect", () => {
       this.awaitRemoteTimeout.stop()
     })

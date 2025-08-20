@@ -5,7 +5,7 @@ require.d(exports, {
   B_: () => R,
   MO: () => b,
   _M: () => y,
-  k5: () => N,
+  k5: () => C,
   q5: () => O
 }), require("./35282.js"), require("./388685.js");
 var r, i, a, Chunk544891 = require("./544891.js"),
@@ -74,10 +74,10 @@ function A(e) {
   return S(e.image) || (null == (t = e.images) ? true : t.some(S)) || S(e.video)
 }
 
-function N(e) {
+function C(e) {
   return e.attachments.some(T) || e.embeds.some(A)
 }
-async function C(e) {
+async function N(e) {
   let t = await o.tn.post({
     url: c.ANM.ATTACHMENTS_REFRESH_URLS,
     body: {
@@ -90,6 +90,6 @@ async function C(e) {
 async function R(e) {
   let t = l.Z.toURLSafe(e);
   if (null == t || !I(t)) return e;
-  let n = await C(e);
+  let n = await N(e);
   return null != n ? n : e
 }

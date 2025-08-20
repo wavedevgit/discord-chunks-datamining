@@ -1,7 +1,7 @@
-/** Chunk was on 69003 **/
+/** Chunk was on 91488 **/
 /** chunk id: 791914, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => j
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -23,7 +23,7 @@ var Chunk399606 = require("./399606.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk407067 = require("./407067.js");
 
-function v(e) {
+function j(e) {
   let {
     tab: t,
     setTab: n,
@@ -34,13 +34,13 @@ function v(e) {
     inInbox: O
   } = d.Z.useExperiment({
     location: "RecentsPopout"
-  }), v = (0, f.Us)({
+  }), j = (0, f.Us)({
     location: "RecentsHeader"
   }), {
     enabled: C
   } = u.Z.useExperiment({
     location: "RecentsHeader"
-  }), E = (0, i.e7)([c.Z], () => c.Z.getUnseenInviteCount()), x = (0, i.e7)([p.Z], () => p.Z.getOverdueMessageReminderCount());
+  }), x = (0, i.e7)([c.Z], () => c.Z.getUnseenInviteCount()), E = (0, i.e7)([p.Z], () => p.Z.getOverdueMessageReminderCount());
   return (0, r.jsxs)(a.h4, {
     className: y.header,
     children: [(0, r.jsxs)("div", {
@@ -61,7 +61,7 @@ function v(e) {
           enabled: false
         },
         "aria-label": _.intl.string(_.t["8k+6QU"]),
-        children: [(0, r.jsx)(j, {
+        children: [(0, r.jsx)(v, {
           tab: t
         }), (0, r.jsx)(g.Z, {
           closePopout: m
@@ -96,7 +96,7 @@ function v(e) {
           "aria-label": "game_invites",
           id: l.X.GAME_INVITES,
           className: y.tab,
-          children: [_.intl.string(_.t.apq3cX), E > 0 ? (0, r.jsx)(o.fWl, {
+          children: [_.intl.string(_.t.apq3cX), x > 0 ? (0, r.jsx)(o.fWl, {
             color: s.Z.STATUS_DANGER,
             className: y.iconBadge
           }) : null]
@@ -104,10 +104,10 @@ function v(e) {
           "aria-label": _.intl.string(_.t["2pAkDA"]),
           id: l.X.BOOKMARKS,
           className: y.tab,
-          children: 0 === x ? _.intl.string(_.t["2pAkDA"]) : _.intl.formatToPlainString(_.t.I4fryM, {
-            count: x
+          children: 0 === E ? _.intl.string(_.t["2pAkDA"]) : _.intl.formatToPlainString(_.t.I4fryM, {
+            count: E
           })
-        }) : null, v ? (0, r.jsx)(o.njP.Item, {
+        }) : null, j ? (0, r.jsx)(o.njP.Item, {
           "aria-label": "scheduled",
           id: l.X.SCHEDULED,
           className: y.tab,
@@ -118,7 +118,7 @@ function v(e) {
   })
 }
 
-function j(e) {
+function v(e) {
   let {
     tab: t
   } = e;

@@ -112,7 +112,7 @@ function A(e) {
   return b(e.channelId, e.id)
 }
 
-function N(e) {
+function C(e) {
   let {
     threads: t,
     mostRecentMessages: n
@@ -121,7 +121,7 @@ function N(e) {
     g(e.channel_id, e)
   })
 }
-class C extends(r = Chunk442837.ZP.Store) {
+class N extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk592125.Z, Chunk594174.default)
   }
@@ -132,12 +132,12 @@ class C extends(r = Chunk442837.ZP.Store) {
     }), h[e]
   }
 }
-d(C, "displayName", "ForumPostRecentMessageStore"), new C(Chunk570140.Z, {
+d(N, "displayName", "ForumPostRecentMessageStore"), new N(Chunk570140.Z, {
   CONNECTION_OPEN: v,
   MESSAGE_CREATE: T,
   MESSAGE_UPDATE: S,
   MESSAGE_DELETE: A,
   LOAD_FORUM_POSTS: I,
-  LOAD_ARCHIVED_THREADS_SUCCESS: N,
-  LOAD_THREADS_SUCCESS: N
+  LOAD_ARCHIVED_THREADS_SUCCESS: C,
+  LOAD_THREADS_SUCCESS: C
 })

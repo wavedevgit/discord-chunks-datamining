@@ -117,13 +117,13 @@ function A() {
   g.clear()
 }
 
-function N(e) {
+function C(e) {
   let {
     guildId: t
   } = e;
   b(t)
 }
-class C extends(r = Chunk442837.ZP.Store) {
+class N extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk430824.Z, Chunk485386.Z, Chunk594174.default)
   }
@@ -135,8 +135,8 @@ class C extends(r = Chunk442837.ZP.Store) {
     return this.getCheck(e).canChat
   }
 }
-h(C, "displayName", "GuildVerificationStore");
-let R = new C(Chunk570140.Z, {
+h(N, "displayName", "GuildVerificationStore");
+let R = new N(Chunk570140.Z, {
   CONNECTION_OPEN: O,
   CONNECTION_CLOSED: v,
   CURRENT_USER_UPDATE: A,
@@ -144,5 +144,5 @@ let R = new C(Chunk570140.Z, {
   GUILD_UPDATE: I,
   GUILD_DELETE: T,
   GUILD_MEMBER_UPDATE: S,
-  GUILD_VERIFICATION_CHECK: N
+  GUILD_VERIFICATION_CHECK: C
 })

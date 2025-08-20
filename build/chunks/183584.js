@@ -1,7 +1,7 @@
-/** Chunk was on 82096 **/
+/** Chunk was on 84927 **/
 /** chunk id: 183584, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  IN: () => a,
+  IN: () => o,
   oZ: () => c
 }), require("./951288.js"), require("./647438.js");
 var Chunk570140 = require("./570140.js"),
@@ -11,7 +11,7 @@ var Chunk237997 = require("./237997.js");
 require("./998502.js"), require("./487029.jsx");
 var Chunk710111 = require("./710111.js");
 require("./981631.js"), require("./388032.jsx");
-let s = {
+let a = {
   width: Chunk710111.FW.width,
   height: Chunk710111.FW.height,
   resizable: false,
@@ -26,10 +26,10 @@ let s = {
   titleBarStyle: null
 };
 
-function a(e, t) {
+function o(e, t) {
   let n = l.ZP.isOverlayV3EnabledForPID(t),
-    o = i.default.disableClickableRegions;
-  n || o || r.Z.dispatch({
+    i = s.default.disableClickableRegions;
+  n || i || r.Z.dispatch({
     type: "OVERLAY_SET_INPUT_LOCKED",
     locked: false,
     pid: t
@@ -48,11 +48,11 @@ function c(e) {
     enabled: false
   });
   let t = l.ZP.isOverlayV3EnabledForPID(e),
-    n = i.default.disableClickableRegions;
-  i.default.isLocked(e) || t || n || r.Z.dispatch({
+    n = s.default.disableClickableRegions;
+  s.default.isLocked(e) || t || n || r.Z.dispatch({
     type: "OVERLAY_SET_INPUT_LOCKED",
     locked: true,
     pid: e
   })
 }
-Chunk710111.FW.padding, s.width, s.height
+Chunk710111.FW.padding, a.width, a.height

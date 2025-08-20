@@ -2,7 +2,7 @@
 /** chunk id: 283595, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => Z
+  Z: () => F
 }), require("./388685.js"), require("./997841.js"), require("./358797.js");
 var r, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -67,13 +67,13 @@ let y = false,
   S = {},
   A = false;
 
-function N() {
+function C() {
   Chunk433517.K.set(E, g(h({}, b()), {
     activeLaunchOptionIds: S
   }))
 }
 
-function C() {
+function N() {
   Chunk433517.K.set(E, g(h({}, b()), {
     activeLibraryApplicationBranchIds: T
   }))
@@ -104,7 +104,7 @@ function D(e) {
   R(t)
 }
 
-function L(e) {
+function x(e) {
   let {
     applicationId: t,
     branchId: n,
@@ -113,32 +113,32 @@ function L(e) {
   null != a && !a.isHidden() && u.yE(r, _.eHb.HIDDEN) && (A = true), I.add(i)
 }
 
-function x(e) {
+function L(e) {
   let {
     libraryApplication: t
   } = e, n = c.Z.createFromServer(t), r = (0, d.Tu)(n.id, n.branchId);
   O[r] = n, I.delete(r)
 }
 
-function M(e) {
+function j(e) {
   let {
     applicationId: t,
     branchId: n,
     launchOptionId: r
   } = e;
-  S[(0, d.Tu)(t, n)] = r, N()
+  S[(0, d.Tu)(t, n)] = r, C()
 }
 
-function k(e) {
+function M(e) {
   let {
     applicationId: t,
     branchId: n
   } = e;
   if (T[t] === n) returnfalse;
-  T[t] = n, C()
+  T[t] = n, N()
 }
 
-function j(e) {
+function k(e) {
   let {
     libraryApplications: t
   } = e;
@@ -150,7 +150,7 @@ function U() {
 }
 
 function G(e) {
-  let t = V();
+  let t = Z();
   return Object.keys(t).forEach(n => {
     e(t[n]) || delete t[n]
   }), t
@@ -162,23 +162,23 @@ function B(e, t) {
   return null != (n = O[r]) ? n : v[r]
 }
 
-function V() {
+function Z() {
   return h({}, v, O)
 }
-class F extends(r = Chunk442837.ZP.Store) {
+class V extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk314897.default);
     let e = Chunk433517.K.get(E);
-    null != module && (null == module.activeLaunchOptionIds ? N() : S = module.activeLaunchOptionIds, null == module.activeLibraryApplicationBranchIds ? C() : T = module.activeLibraryApplicationBranchIds)
+    null != module && (null == module.activeLaunchOptionIds ? C() : S = module.activeLaunchOptionIds, null == module.activeLibraryApplicationBranchIds ? N() : T = module.activeLibraryApplicationBranchIds)
   }
   get libraryApplications() {
     return G(e => !e.isHidden())
   }
   getAllLibraryApplications() {
-    return V()
+    return Z()
   }
   hasLibraryApplication() {
-    return Object.keys(V()).length > 0
+    return Object.keys(Z()).length > 0
   }
   hasApplication(e, t) {
     let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
@@ -199,7 +199,7 @@ class F extends(r = Chunk442837.ZP.Store) {
         a = null != (r = O[i]) ? r : v[i];
       if (null != a && (0, d.Je)(a) && (t || !a.isHidden())) return a
     }
-    let i = V();
+    let i = Z();
     for (let n in i)
       if (i[n].id === e) {
         let e = i[n];
@@ -216,7 +216,7 @@ class F extends(r = Chunk442837.ZP.Store) {
     return y
   }
   get entitledBranchIds() {
-    return a()(V()).values().filter(e => (0, d.Je)(e)).map(e => e.branchId).value()
+    return a()(Z()).values().filter(e => (0, d.Je)(e)).map(e => e.branchId).value()
   }
   get hasRemovedLibraryApplicationThisSession() {
     return A
@@ -227,16 +227,16 @@ class F extends(r = Chunk442837.ZP.Store) {
     })
   }
 }
-p(F, "displayName", "LibraryApplicationStore");
-let Z = new F(Chunk570140.Z, {
+p(V, "displayName", "LibraryApplicationStore");
+let F = new V(Chunk570140.Z, {
   LOGOUT: P,
   LIBRARY_FETCH_SUCCESS: w,
   SKU_PURCHASE_SUCCESS: D,
-  LIBRARY_APPLICATION_FLAGS_UPDATE_START: L,
-  LIBRARY_APPLICATION_FLAGS_UPDATE_SUCCESS: x,
-  LIBRARY_APPLICATION_UPDATE: x,
-  LIBRARY_APPLICATION_ACTIVE_LAUNCH_OPTION_UPDATE: M,
-  LIBRARY_APPLICATION_ACTIVE_BRANCH_UPDATE: k,
-  LIBRARY_APPLICATIONS_TEST_MODE_ENABLED: j,
+  LIBRARY_APPLICATION_FLAGS_UPDATE_START: x,
+  LIBRARY_APPLICATION_FLAGS_UPDATE_SUCCESS: L,
+  LIBRARY_APPLICATION_UPDATE: L,
+  LIBRARY_APPLICATION_ACTIVE_LAUNCH_OPTION_UPDATE: j,
+  LIBRARY_APPLICATION_ACTIVE_BRANCH_UPDATE: M,
+  LIBRARY_APPLICATIONS_TEST_MODE_ENABLED: k,
   DEVELOPER_TEST_MODE_RESET: U
 })

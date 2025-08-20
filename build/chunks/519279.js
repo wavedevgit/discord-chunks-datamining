@@ -1,5 +1,7 @@
-/** Chunk was on 66181 **/
-/** chunk id: 519279, original params: e,t,n (module,exports,require) **/
-require.r(module.exports = {
+/** Chunk was on web.js **/
+/** chunk id: 519279, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+var r = {
   box: "box_f8c98c"
-})
+};
+require.r(module.exports = r)

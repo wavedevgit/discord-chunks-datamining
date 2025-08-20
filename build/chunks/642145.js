@@ -1,9 +1,10 @@
-/** Chunk was on 27458 **/
-/** chunk id: 642145, original params: e,t,r (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 642145, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Y: () => n
+  Y: () => r
 });
-let n = {
+let r = {
   tension: 250,
   friction: 20
 }

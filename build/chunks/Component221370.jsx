@@ -31,9 +31,9 @@ function m(e) {
   }
   return e
 }
-let f = [Chunk758713.z.DESKTOP, Chunk758713.z.XBOX, Chunk758713.z.PLAYSTATION, Chunk758713.z.NINTENDO];
+let p = [Chunk758713.z.DESKTOP, Chunk758713.z.XBOX, Chunk758713.z.PLAYSTATION, Chunk758713.z.NINTENDO];
 
-function p(e) {
+function f(e) {
   var {
     platform: t
   } = e, n = function(e, t) {
@@ -99,7 +99,7 @@ function g(e) {
       }(e),
       children: t => {
         var n, i;
-        return (0, r.jsx)(p, (n = m({}, t), i = i = {
+        return (0, r.jsx)(f, (n = m({}, t), i = i = {
           platform: e
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
           var n = Object.keys(e);
@@ -123,7 +123,7 @@ function x(e) {
   } = e, l = i.useMemo(() => {
     let e = new Set(t.platforms),
       n = [...e];
-    return !e.has(s.z.DESKTOP) && (e.has(s.z.MACOS) || e.has(s.z.LINUX)) && n.push(s.z.DESKTOP), n.filter(e => f.includes(e))
+    return !e.has(s.z.DESKTOP) && (e.has(s.z.MACOS) || e.has(s.z.LINUX)) && n.push(s.z.DESKTOP), n.filter(e => p.includes(e))
   }, [t.platforms]);
   return 0 === l.length ? null : (0, r.jsx)("div", {
     className: a()(d.column, d.gapLg, n),

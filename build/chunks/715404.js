@@ -1,5 +1,6 @@
-/** Chunk was on 66181 **/
-/** chunk id: 715404, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 715404, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   boltContainer: "boltContainer__2cd1f",
   carContainer: "carContainer__2cd1f",

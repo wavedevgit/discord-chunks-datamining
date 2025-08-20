@@ -1,41 +1,44 @@
-/** Chunk was on 26434 **/
-/** chunk id: 273504, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 273504, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  I3: () => u,
+  I3: () => c,
   Ic: () => E,
-  Lg: () => b,
-  OU: () => _,
+  Lg: () => g,
+  OU: () => h,
   RH: () => s,
-  Ux: () => a,
-  VW: () => d,
-  Vg: () => h,
-  Vk: () => m,
-  _6: () => C,
-  aj: () => g,
-  dc: () => v,
+  Ux: () => o,
+  VW: () => u,
+  Vg: () => m,
+  Vk: () => f,
+  _6: () => b,
+  aj: () => p,
+  dc: () => y,
   fX: () => Chunk41381.f,
-  hu: () => p,
+  hu: () => d,
   jj: () => Chunk401653.j,
-  n4: () => c,
+  n4: () => l,
   q4: () => Chunk95930.q,
-  uE: () => f
+  uE: () => _
 });
-var r, Chunk401653 = require("./401653.js"),
+var Chunk401653 = require("./401653.js"),
   Chunk95930 = require("./95930.js"),
   Chunk41381 = require("./41381.js"),
-  a = ((r = {})[r.PROFANITY = 1] = "PROFANITY", r[r.SEXUAL_CONTENT = 2] = "SEXUAL_CONTENT", r[r.SLURS = 3] = "SLURS", r);
+  o = function(e) {
+    return e[e.PROFANITY = 1] = "PROFANITY", e[e.SEXUAL_CONTENT = 2] = "SEXUAL_CONTENT", e[e.SLURS = 3] = "SLURS", e
+  }({});
 Chunk41381.f.USER_PROFILE, Chunk41381.f.SERVER_POLICY, Chunk41381.f.MENTION_SPAM, Chunk41381.f.ML_SPAM, Chunk41381.f.DEFAULT_KEYWORD_LIST, Chunk41381.f.KEYWORD;
 let s = 1e3,
-  c = 100,
-  u = 1e3,
-  d = 10,
-  p = 60,
-  m = 1,
+  l = 100,
+  c = 1e3,
+  u = 10,
+  d = 60,
   f = 1,
-  g = 260,
-  _ = 100,
-  h = 1,
-  b = 50,
+  _ = 1,
+  p = 260,
+  h = 100,
+  m = 1,
+  g = 50,
   E = 20,
-  C = 150,
-  v = "automod-profile-quarantine-alert"
+  b = 150,
+  y = "automod-profile-quarantine-alert"

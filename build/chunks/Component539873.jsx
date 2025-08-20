@@ -91,9 +91,9 @@ function T(e) {
       labelledBy: S
     }),
     {
-      ref: N
+      ref: C
     } = A,
-    C = v(A, ["ref"]),
+    N = v(A, ["ref"]),
     R = e => {
       s.Z.dispatch({
         type: "APP_ICON_UPDATED",
@@ -102,8 +102,8 @@ function T(e) {
     };
   return (0, r.jsx)("div", {
     ref: T,
-    children: (0, r.jsx)("div", O(b({}, C), {
-      ref: N,
+    children: (0, r.jsx)("div", O(b({}, N), {
+      ref: C,
       className: m.__invalid_container,
       children: (0, r.jsxs)("div", {
         className: t,

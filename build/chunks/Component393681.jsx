@@ -1,14 +1,15 @@
-/** Chunk was on 66181 **/
-/** chunk id: 393681, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 393681, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => X
+  Z: () => J
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
-  o = require.n(Chunk512722),
+  l = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk780384 = require("./780384.js"),
   Chunk755721 = require("./755721.js"),
@@ -48,38 +49,45 @@ var Chunk951288 = require("./951288.js"),
   Chunk343396 = require("./343396.js"),
   Chunk197571 = require("./197571.js");
 
-function Y(e) {
+function K(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function z(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      i = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), i.forEach(function(t) {
-      var i;
-      i = n[t], t in e ? Object.defineProperty(e, t, {
-        value: i,
-        enumerable: true,
-        configurable: true,
-        writable: true
-      }) : e[t] = i
+    }))), r.forEach(function(t) {
+      K(e, t, n[t])
     })
   }
   return e
 }
 
-function K(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-      var i = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, i)
-    }
-    return n
-  })(Object(t)).forEach(function(n) {
+function q(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function X(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : q(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class q extends Chunk647438.PureComponent {
+class Q extends Chunk647438.PureComponent {
   componentDidMount() {
     let {
       currentUser: e
@@ -168,15 +176,15 @@ class q extends Chunk647438.PureComponent {
     let {
       backupCodes: e,
       currentUser: t,
-      theme: r
-    } = this.props, s = (0, Chunk780384.wj)(Chunk647438) ? require("./555702.js") : require("./610802.js");
+      theme: i
+    } = this.props, a = (0, Chunk780384.wj)(Chunk647438) ? require("./555702.js") : require("./610802.js");
     return (0, Chunk951288.jsxs)(Chunk481060.hjN, {
-      className: a()(Chunk343396.userSettingsSecurity, Chunk197571.marginTop40),
+      className: o()(Chunk343396.userSettingsSecurity, Chunk197571.marginTop40),
       title: Chunk388032.intl.string(Chunk388032.t.pKSjEh),
       tag: "h1",
       children: [exports.mfaEnabled ? (0, Chunk951288.jsx)(Chunk481060.hjN, {
         children: (0, Chunk951288.jsxs)(Chunk481060.vwX, {
-          className: a()(Chunk343396.isEnabled, Chunk197571.marginBottom20),
+          className: o()(Chunk343396.isEnabled, Chunk197571.marginBottom20),
           children: [(0, Chunk951288.jsx)("img", {
             alt: "",
             className: Chunk343396.lockIcon,
@@ -193,7 +201,7 @@ class q extends Chunk647438.PureComponent {
               variant: "primary",
               size: "sm",
               text: Chunk388032.intl.string(Chunk388032.t["FRep5+"]),
-              onClick: () => (0, Chunk481060.h7j)(e => (0, i.jsx)(U.default, K(Y({}, e), {
+              onClick: () => (0, Chunk481060.h7j)(e => (0, r.jsx)(B.default, X(z({}, e), {
                 onSuccess: e.onClose
               })))
             })
@@ -227,8 +235,8 @@ class q extends Chunk647438.PureComponent {
       shouldRenderOwnedGuildsModal: e,
       shouldRenderDeleteAccountConfirmModal: t,
       shouldRenderDisableAccountErrorModal: n,
-      shouldRenderOwnedTeamsModal: r,
-      disableAccountErrorMessage: s
+      shouldRenderOwnedTeamsModal: i,
+      disableAccountErrorMessage: a
     } = this.state;
     if (Chunk647438) {
       let e = () => this.setState({
@@ -339,8 +347,8 @@ class q extends Chunk647438.PureComponent {
         settingsSection: Chunk981631.oAB.ACCOUNT,
         panelClassName: Chunk343396.tabPanel,
         onTabChange: e => {
-          P.default.track(G.rMx.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
-            target_tab_name: e === V.s6.ACCOUNT_SECURITY_TAB ? "SECURITY" : "STANDING"
+          w.default.track(V.rMx.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
+            target_tab_name: e === Z.s6.ACCOUNT_SECURITY_TAB ? "SECURITY" : "STANDING"
           })
         },
         defaultTabIndex: "ACCOUNT_STANDING" === module ? 1 : true,
@@ -360,28 +368,28 @@ class q extends Chunk647438.PureComponent {
     return this.props.hide ? (0, Chunk951288.jsx)(Chunk497321.Z, {}) : this.renderUnhidden()
   }
   handleDisableAccountError(e) {
-    if (e.body.code === G.evJ.INVALID_PASSWORD) throw e;
+    if (e.body.code === V.evJ.INVALID_PASSWORD) throw e;
     this.setState({
       shouldRenderDisableAccountErrorModal: true,
       disableAccountErrorMessage: e.body.message
     })
   }
   handleSubmitDisableAccount(e, t) {
-    return (0, g.ss)(e, t).then(G.dG4, this.handleDisableAccountError)
+    return (0, p.ss)(e, t).then(V.dG4, this.handleDisableAccountError)
   }
   handleDisableAccount() {
     var e;
     let t = arguments.length > 0 && true !== arguments[0] && arguments[0],
       {
         currentUser: n,
-        userTeams: r
+        userTeams: i
       } = this.props,
-      s = Chunk430824.Z.getGuildsArray().filter(e => e.ownerId === n.id);
+      a = Chunk430824.Z.getGuildsArray().filter(e => e.ownerId === n.id);
     return (null != (e = null == Chunk647438 ? true : Chunk647438.filter(e => e.owner_user_id === n.id)) ? module : []).length > 0 ? void this.setState({
       shouldRenderOwnedTeamsModal: true
     }) : Chunk120356.length > 0 ? void this.setState({
       shouldRenderOwnedGuildsModal: true
-    }) : void(require.isClaimed() ? (0, Chunk481060.h7j)(e => (0, i.jsx)(f.Z, K(Y({}, e), {
+    }) : void(require.isClaimed() ? (0, Chunk481060.h7j)(e => (0, r.jsx)(m.Z, X(z({}, e), {
       handleSubmit: e => this.handleSubmitDisableAccount(e, t),
       title: t ? H.intl.string(H.t["8lQ2ra"]) : H.intl.string(H.t.jf5GGR),
       actionText: t ? H.intl.string(H.t["8lQ2ra"]) : H.intl.string(H.t.jf5GGR),
@@ -400,30 +408,30 @@ class q extends Chunk647438.PureComponent {
     }
   }
 }
-let X = () => {
+let J = () => {
   let e = (0, Chunk442837.e7)([Chunk594174.default], () => {
       let e = Chunk594174.default.getCurrentUser();
-      return o()(null != module, "ConnectedUserAccountSettings: currentUser cannot be undefined"), module
+      return l()(null != module, "ConnectedUserAccountSettings: currentUser cannot be undefined"), module
     }),
     t = (0, Chunk442837.e7)([Chunk325067.Z], () => Chunk325067.Z.getBackupCodes()),
     n = (0, Chunk442837.e7)([Chunk246946.Z], () => Chunk246946.Z.hidePersonalInformation),
-    r = (0, Chunk442837.e7)([Chunk210887.Z], () => Chunk210887.Z.theme),
-    s = (0, Chunk332473.b)(),
-    a = (0, Chunk442837.e7)([Chunk706454.default], () => Chunk706454.default.locale),
-    l = (0, Chunk442837.e7)([Chunk663389.Z], () => Chunk663389.Z.getSubsection()),
+    i = (0, Chunk442837.e7)([Chunk210887.Z], () => Chunk210887.Z.theme),
+    a = (0, Chunk332473.b)(),
+    o = (0, Chunk442837.e7)([Chunk706454.default], () => Chunk706454.default.locale),
+    s = (0, Chunk442837.e7)([Chunk663389.Z], () => Chunk663389.Z.getSubsection()),
     {
-      teams: d,
-      loading: u
+      teams: u,
+      loading: d
     } = (0, Chunk577275.Z)({
       refreshOnDepChange: true
     });
-  return (0, Chunk951288.jsx)(q, {
+  return (0, Chunk951288.jsx)(Q, {
     theme: Chunk647438,
     currentUser: module,
     backupCodes: exports,
     hide: require,
     shouldRenderPomeloWarning: Chunk120356,
-    locale: a,
+    locale: o,
     subsection: Chunk512722,
     userTeams: Chunk780384,
     userTeamsLoading: Chunk755721

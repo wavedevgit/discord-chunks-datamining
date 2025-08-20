@@ -1,14 +1,15 @@
-/** Chunk was on 66181 **/
-/** chunk id: 178100, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 178100, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => o
+  Z: () => l
 });
 var Chunk647438 = require("./647438.js"),
   Chunk913527 = require("./913527.js"),
-  s = require.n(Chunk913527),
+  a = require.n(Chunk913527),
   Chunk55935 = require("./55935.js");
-let l = s().duration(30, "days");
+let s = a().duration(30, "days");
 
-function o(e, t) {
-  return i.useMemo(() => (0, a.vc)(t ? null != e.outboundRedemptionEndDate ? s()(e.outboundRedemptionEndDate) : s()(e.endDate).add(l) : s()(e.endDate), "LL"), [e, t])
+function l(e, t) {
+  return r.useMemo(() => (0, o.vc)(t ? null != e.outboundRedemptionEndDate ? a()(e.outboundRedemptionEndDate) : a()(e.endDate).add(s) : a()(e.endDate), "LL"), [e, t])
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 36499 **/
+/** Chunk was on 5665 **/
 /** chunk id: 47481, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -26,8 +26,8 @@ function d(e) {
     C = null != f ? a.default.extractTimestamp(f) : null,
     x = null;
   return h.forEach(e => {
-    var i, v, j;
-    let O, E;
+    var i, v, O;
+    let j, E;
     if (null != g && g.length > 0) {
       let t = a.default.extractTimestamp(e.id);
       for (let e = 0; i = e < (null == g ? true : g.length), i; e++) {
@@ -62,14 +62,14 @@ function d(e) {
       else if ((0, s.P1)(e) && n) return u.ys_.MESSAGE_GROUP_SPAMMER;
       return null
     }(p, e, Z && m);
-    (null !== T && ([I, P] = (E = v = P, null == v || v.type !== T ? (O = {
+    (null !== T && ([I, P] = (E = v = P, null == v || v.type !== T ? (j = {
       type: T,
       content: [],
       key: e.id
-    }, y.push(O)) : E = (O = v).content[O.content.length - 1], [O, E])), f === e.id && null != C) ? (null != P && P.type === u.ys_.DIVIDER ? P.unreadId = e.id : null !== I ? (j = I, e.isFirstMessageInForumPost(p) || j.content.push({
+    }, y.push(j)) : E = (j = v).content[j.content.length - 1], [j, E])), f === e.id && null != C) ? (null != P && P.type === u.ys_.DIVIDER ? P.unreadId = e.id : null !== I ? (O = I, e.isFirstMessageInForumPost(p) || O.content.push({
       type: u.ys_.DIVIDER,
       unreadId: e.id
-    }), j.hasUnread = true) : e.isFirstMessageInForumPost(p) || y.push({
+    }), O.hasUnread = true) : e.isFirstMessageInForumPost(p) || y.push({
       type: u.ys_.DIVIDER,
       unreadId: e.id
     }), C = null) : null != C && a.default.extractTimestamp(e.id) > C && (e.isFirstMessageInForumPost(p) || y.push({

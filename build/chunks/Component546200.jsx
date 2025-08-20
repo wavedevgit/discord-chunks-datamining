@@ -1,7 +1,7 @@
-/** Chunk was on 67079 **/
+/** Chunk was on 65819 **/
 /** chunk id: 546200, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  EmojiStudioModal: () => o
+  EmojiStudioModal: () => s
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -9,7 +9,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk375727 = require("./375727.jsx"),
   Chunk867248 = require("./867248.js");
 
-function s(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -27,27 +27,27 @@ function s(e) {
   }
   return e
 }
-let o = e => {
+let s = e => {
   let {
     transitionState: t,
     guildId: n
-  } = e, o = "userImage" in e ? e.userImage : true, u = "emoji" in e ? e.emoji : true, c = s({
+  } = e, s = "userImage" in e ? e.userImage : true, u = "emoji" in e ? e.emoji : true, c = o({
     guildId: n
   }, null != u ? {
     emoji: u
-  } : null != o ? {
-    userImage: o
+  } : null != s ? {
+    userImage: s
   } : {});
   return (0, r.jsx)(l.Y0X, {
     transitionState: t,
     size: l.CgR.DYNAMIC,
     fullscreenOnMobile: false,
-    className: i.modalRoot,
+    className: a.modalRoot,
     parentComponent: "Modal",
     children: (0, r.jsx)(l.hzk, {
       scrollbarType: "none",
-      className: i.modalContent,
-      children: (0, r.jsx)(a.I, s({}, c))
+      className: a.modalContent,
+      children: (0, r.jsx)(i.I, o({}, c))
     })
   })
 }

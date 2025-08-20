@@ -1,5 +1,6 @@
-/** Chunk was on 70274 **/
-/** chunk id: 727866, original params: t,e,i (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 727866, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   Z: () => s
 });
@@ -7,31 +8,34 @@ var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx");
-let l = (t, e) => (0, n.jsxs)(r.Text, {
-    color: "text-danger",
-    style: {
+let o = (e, t) => {
+    let n = {
       display: "flex",
       gap: "4px",
       margin: "8px 0 4px 0",
       alignItems: "center"
-    },
-    variant: "text-sm/normal",
-    children: [(0, n.jsx)(r.Mgn, {
-      size: "custom",
-      color: "currentColor",
-      width: 14,
-      height: 14
-    }), t]
-  }, e),
+    };
+    return (0, r.jsxs)(i.Text, {
+      color: "text-danger",
+      style: n,
+      variant: "text-sm/normal",
+      children: [(0, r.jsx)(i.Mgn, {
+        size: "custom",
+        color: "currentColor",
+        width: 14,
+        height: 14
+      }), e]
+    }, t)
+  },
   s = {
-    getTextInVoiceSendMessageChannelPermissionText: function(t) {
-      return t ? E.intl.format(E.t.Q1rwpq, {
-        warningHook: l
-      }) : E.intl.string(E.t.WQ6zpa)
+    getTextInVoiceSendMessageChannelPermissionText: function(e) {
+      return e ? a.intl.format(a.t.Q1rwpq, {
+        warningHook: o
+      }) : a.intl.string(a.t.WQ6zpa)
     },
-    getTextInVoiceReadMessageHistoryChannelPermissionText: function(t) {
-      return t ? E.intl.format(E.t.Rx4pbG, {
-        warningHook: l
-      }) : E.intl.string(E.t.cuMfHx)
+    getTextInVoiceReadMessageHistoryChannelPermissionText: function(e) {
+      return e ? a.intl.format(a.t.Rx4pbG, {
+        warningHook: o
+      }) : a.intl.string(a.t.cuMfHx)
     }
   }

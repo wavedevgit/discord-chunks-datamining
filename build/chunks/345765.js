@@ -2,7 +2,7 @@
 /** chunk id: 345765, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => Z
+  Z: () => F
 }), require("./388685.js");
 var Chunk392711 = require("./392711.js"),
   Chunk126313 = require("./126313.js"),
@@ -36,8 +36,8 @@ let y = 4,
   T = new Map,
   S = new Set,
   A = new Map,
-  N = null,
-  C = (0, Chunk392711.debounce)(Chunk564990.yK, 3e3, {
+  C = null,
+  N = (0, Chunk392711.debounce)(Chunk564990.yK, 3e3, {
     trailing: true
   });
 
@@ -72,23 +72,23 @@ function D(e) {
   true !== t && (clearTimeout(t), T.delete(e))
 }
 
-function L() {
+function x() {
   var e;
   let t = null != (e = A.get(v)) ? module : 0;
   if (exports > 0 && exports <= y || (D(v), !w(v))) return;
   let n = Chunk146282.Z.getFeed(v);
-  if ((null == require ? true : require.refresh_stale_inbox_after_ms) != null && null == N) return;
+  if ((null == require ? true : require.refresh_stale_inbox_after_ms) != null && null == C) return;
   let r = (null == require ? true : require.expired_at) == null ? 0 : new Date(require.expired_at).getTime() - Date.now(),
-    a = Math.max(0, null == N ? 0 : new Date(N).getTime() - Date.now(), Chunk392711) + (exports > 0 ? R() : 0);
+    a = Math.max(0, null == C ? 0 : new Date(C).getTime() - Date.now(), Chunk392711) + (exports > 0 ? R() : 0);
   P(v, {
     loading: false,
     nextFetchDate: new Date(Date.now() + Chunk570140)
-  }), T.set(v, setTimeout(() => x({
+  }), T.set(v, setTimeout(() => L({
     feedId: v,
     feature: Chunk126313.L.INBOX
   }), Chunk570140))
 }
-async function x(e) {
+async function L(e) {
   let {
     feedId: t,
     feature: n,
@@ -110,13 +110,13 @@ async function x(e) {
       feed: r
     }), A.set(t, 0), S.delete(t), P(t, {
       loading: false
-    }), t === v && (N = null, L())
+    }), t === v && (C = null, x())
   } catch (o) {
     var i;
     let e = null != (i = A.get(t)) ? i : 0;
     if (e < y) {
       let i = f.Z.Millis.MINUTE * Math.pow(2, e) + R(e);
-      T.set(t, setTimeout(() => x({
+      T.set(t, setTimeout(() => L({
         feedId: t,
         feature: n,
         force: r
@@ -129,15 +129,15 @@ async function x(e) {
   }
 }
 
+function j() {
+  x()
+}
+
 function M() {
-  L()
+  j()
 }
 
 function k() {
-  M()
-}
-
-function j() {
   D(v)
 }
 
@@ -146,7 +146,7 @@ function U(e) {
     feedId: t,
     feature: n
   } = e;
-  D(t), x({
+  D(t), L({
     feedId: t,
     feature: n,
     force: true
@@ -157,7 +157,7 @@ function G(e) {
   let {
     refreshAfterMs: t
   } = e, n = m.Z.getFeed(v);
-  (null == n ? true : n.refresh_stale_inbox_after_ms) != null && (N = new Date(Date.now() + (null != t ? t : n.refresh_stale_inbox_after_ms)).toUTCString(), L())
+  (null == n ? true : n.refresh_stale_inbox_after_ms) != null && (C = new Date(Date.now() + (null != t ? t : n.refresh_stale_inbox_after_ms)).toUTCString(), x())
 }
 
 function B(e) {
@@ -166,28 +166,28 @@ function B(e) {
     connectionId: n,
     track: r
   } = e;
-  null != n && (null == (t = c.Z.getAccount(n, E.ABu.SPOTIFY)) ? true : t.showActivity) && C(n, r)
+  null != n && (null == (t = c.Z.getAccount(n, E.ABu.SPOTIFY)) ? true : t.showActivity) && N(n, r)
 }
 
-function V() {
-  x({
+function Z() {
+  L({
     feedId: Chunk206583.YN.GLOBAL_FEED,
     feature: Chunk126313.L.GAME_PROFILE
   })
 }
-class F extends Chunk147913.Z {
+class V extends Chunk147913.Z {
   constructor(...e) {
     super(...e), b(this, "actions", {
-      POST_CONNECTION_OPEN: k,
-      CONNECTION_CLOSED: j,
-      WINDOW_FOCUS: M,
-      IDLE: M,
-      CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN: M,
+      POST_CONNECTION_OPEN: M,
+      CONNECTION_CLOSED: k,
+      WINDOW_FOCUS: j,
+      IDLE: j,
+      CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN: j,
       CONTENT_INVENTORY_MANUAL_REFRESH: U,
       CONTENT_INVENTORY_INBOX_STALE: G,
       SPOTIFY_NEW_TRACK: B,
-      GAME_PROFILE_OPEN: V
+      GAME_PROFILE_OPEN: Z
     })
   }
 }
-let Z = new F
+let F = new V

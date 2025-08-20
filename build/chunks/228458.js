@@ -1,6 +1,9 @@
-/** Chunk was on 22878 **/
-/** chunk id: 228458, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 228458, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  I: () => l
+  I: () => r
 });
-var r, l = ((r = {}).CONTEXTUAL_IMAGE = "contextual_image", r)
+var r = function(e) {
+  return e.CONTEXTUAL_IMAGE = "contextual_image", e
+}({})

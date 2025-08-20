@@ -150,7 +150,7 @@ function A(e) {
   }) : e)
 }
 
-function N(e) {
+function C(e) {
   let {
     invalidPushSyncTokens: t
   } = e;
@@ -158,7 +158,7 @@ function N(e) {
     pushSyncToken: null
   }) : e)
 }
-class C extends(a = Chunk442837.ZP.PersistedStore) {
+class N extends(a = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     if (null != e) {
       var t;
@@ -207,7 +207,7 @@ class C extends(a = Chunk442837.ZP.PersistedStore) {
     return E
   }
 }
-f(C, "displayName", "MultiAccountStore"), f(C, "persistKey", "MultiAccountStore"), f(C, "migrations", [e => {
+f(N, "displayName", "MultiAccountStore"), f(N, "persistKey", "MultiAccountStore"), f(N, "migrations", [e => {
   if (null != e) {
     var t;
     return {
@@ -220,7 +220,7 @@ f(C, "displayName", "MultiAccountStore"), f(C, "persistKey", "MultiAccountStore"
     canUseMultiAccountMobile: false
   }
 }]);
-let R = new C(Chunk570140.Z, {
+let R = new N(Chunk570140.Z, {
   CONNECTION_OPEN: b,
   LOGOUT: y,
   MULTI_ACCOUNT_VALIDATE_TOKEN_REQUEST: e => I(e.userId, 1),
@@ -231,5 +231,5 @@ let R = new C(Chunk570140.Z, {
   CURRENT_USER_UPDATE: v,
   MULTI_ACCOUNT_MOBILE_EXPERIMENT_UPDATE: S,
   MULTI_ACCOUNT_UPDATE_PUSH_SYNC_TOKEN: A,
-  MULTI_ACCOUNT_INVALIDATE_PUSH_SYNC_TOKENS: N
+  MULTI_ACCOUNT_INVALIDATE_PUSH_SYNC_TOKENS: C
 })

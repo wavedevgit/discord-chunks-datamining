@@ -1,7 +1,8 @@
-/** Chunk was on 26434 **/
-/** chunk id: 438075, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 438075, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Q: () => a,
+  Q: () => s,
   Z: () => o
 });
 var Chunk951288 = require("./951288.js");
@@ -16,55 +17,55 @@ function o(e) {
       channel: n,
       compact: o = false
     },
-    hasSpoilerEmbeds: a,
-    handleContextMenu: s,
+    hasSpoilerEmbeds: s,
+    handleContextMenu: l,
     isInteracting: c,
     isAutomodBlockedMessage: u,
     isMessageSnapshot: d,
-    renderThreadAccessory: p,
-    renderSuppressEmbeds: m,
-    renderReactions: f,
-    forceAddReactions: g,
-    disableComponentInteractivity: _,
-    className: h
+    renderThreadAccessory: f,
+    renderSuppressEmbeds: _,
+    renderReactions: p,
+    forceAddReactions: h,
+    disableComponentInteractivity: m,
+    className: g
   } = e;
   return u ? null : (0, r.jsx)(i.Z, {
     message: t,
-    children: (0, r.jsx)(l.ZP, {
-      className: h,
+    children: (0, r.jsx)(a.ZP, {
+      className: g,
       isInteracting: c,
       message: t,
       channel: n,
       compact: o,
-      hasSpoilerEmbeds: a,
+      hasSpoilerEmbeds: s,
       isMessageSnapshot: d,
-      onMediaItemContextMenu: s,
-      renderThreadAccessory: p,
-      disableComponentInteractivity: _,
-      renderSuppressEmbeds: m,
-      forceAddReactions: g,
-      renderReactions: f
+      onMediaItemContextMenu: l,
+      renderThreadAccessory: f,
+      disableComponentInteractivity: m,
+      renderSuppressEmbeds: _,
+      forceAddReactions: h,
+      renderReactions: p
     })
   })
 }
 
-function a(e, t) {
+function s(e, t) {
   let {
     message: n,
     channel: i,
     compact: o = false,
-    renderThreadAccessory: a,
-    disableReactionCreates: s,
+    renderThreadAccessory: s,
+    disableReactionCreates: l,
     disableReactionUpdates: c,
     isSearchResult: u
   } = e;
-  return (0, r.jsx)(l.$p, {
+  return (0, r.jsx)(a.$p, {
     message: n,
     channel: i,
     compact: o,
     hasSpoilerEmbeds: t,
-    renderThreadAccessory: a,
-    disableReactionCreates: s,
+    renderThreadAccessory: s,
+    disableReactionCreates: l,
     disableReactionUpdates: c,
     isSearchResult: u
   })

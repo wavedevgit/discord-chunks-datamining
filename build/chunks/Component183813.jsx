@@ -1,4 +1,4 @@
-/** Chunk was on 54433 **/
+/** Chunk was on 54400 **/
 /** chunk id: 183813, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   S: () => g
@@ -29,45 +29,45 @@ function g(e) {
   } = e, {
     selectedPlan: l,
     selectedSkuId: g,
-    step: y
-  } = (0, h.JL)(), {
-    setSelectedGiftingPromotionReward: E,
-    selectedGiftingPromotionReward: S,
-    claimableRewards: v,
+    step: S
+  } = (0, _.JL)(), {
+    setSelectedGiftingPromotionReward: y,
+    selectedGiftingPromotionReward: E,
+    claimableRewards: b,
     claimableVariants: P
-  } = (0, x.wD)(), O = (0, a.e7)([u.default], () => u.default.getCurrentUser());
-  r.useEffect(() => {
-    null != v && v.length > 0 && null == S && E(v[0])
-  }, [v, S, E]), s()(null != l, "Expected plan to selected"), s()(null != g, "Expected selectedSkuId"), s()(null != y, "Step should be set");
-  let b = null == v ? true : v.map(e => (e => {
+  } = (0, x.wD)(), O = (0, a.e7)([c.default], () => c.default.getCurrentUser());
+  i.useEffect(() => {
+    null != b && b.length > 0 && null == E && y(b[0])
+  }, [b, E, y]), s()(null != l, "Expected plan to selected"), s()(null != g, "Expected selectedSkuId"), s()(null != S, "Step should be set");
+  let I = null == b ? true : b.map(e => (e => {
       let n = e.skuId;
-      return (0, i.jsx)(d.Z, {
+      return (0, r.jsx)(d.Z, {
         skuId: n,
-        price: _.intl.string(_.t.QQsaCQ),
-        isSelected: n === (null == S ? true : S.skuId),
-        onSelect: () => E(e),
-        className: L.giftSelectItem
+        price: L.intl.string(L.t.QQsaCQ),
+        isSelected: n === (null == E ? true : E.skuId),
+        onSelect: () => y(e),
+        className: m.giftSelectItem
       }, n)
     })(e)),
-    Z = null != S && null != O ? (0, i.jsx)(C.Z, {
+    v = null != E && null != O ? (0, r.jsx)(C.Z, {
       avatarDecorationOverride: {
-        asset: S.assetId
+        asset: E.assetId
       },
       user: O,
       guildId: null,
       avatarSize: o.EFr.SIZE_152
     }) : null,
-    I = (0, i.jsx)(f.O3, {
-      children: (0, i.jsx)(o.mzw, {
-        className: L.modalFooter,
-        children: (0, i.jsx)(c.y, {
+    Z = (0, r.jsx)(h.O3, {
+      children: (0, r.jsx)(o.mzw, {
+        className: m.modalFooter,
+        children: (0, r.jsx)(p.y, {
           onStepChange: e => {
-            null != O && null != S && p.default.track(m.rMx.GIFT_PROMOTION_REWARD_SELECTED, {
+            null != O && null != E && u.default.track(j.rMx.GIFT_PROMOTION_REWARD_SELECTED, {
               user_id: O.id,
-              reward_sku_id: S.skuId
+              reward_sku_id: E.skuId
             }), n(e)
           },
-          onBackClick: () => n(j.h8.PLAN_SELECT),
+          onBackClick: () => n(f.h8.PLAN_SELECT),
           shouldRenderUpdatedPaymentModal: true,
           showBackButton: true,
           planOptions: [l.id],
@@ -75,37 +75,37 @@ function g(e) {
         })
       })
     }),
-    M = (0, i.jsx)(o.X6q, {
+    M = (0, r.jsx)(o.X6q, {
       variant: "heading-lg/bold",
       color: "header-primary",
-      children: _.intl.string(_.t["Rp0+ZG"])
+      children: L.intl.string(L.t["Rp0+ZG"])
     });
-  return (0, i.jsxs)("div", {
-    className: L.container,
-    children: [(0, i.jsx)(o.xBx, {
-      children: (0, i.jsxs)(o.Kqy, {
+  return (0, r.jsxs)("div", {
+    className: m.container,
+    children: [(0, r.jsx)(o.xBx, {
+      children: (0, r.jsxs)(o.Kqy, {
         direction: "horizontal",
         justify: "space-between",
         align: "center",
-        children: [M, (0, i.jsx)(o.olH, {
+        children: [M, (0, r.jsx)(o.olH, {
           onClick: t
         })]
       })
-    }), (0, i.jsx)(o.hzk, {
-      children: (0, i.jsxs)(o.Kqy, {
+    }), (0, r.jsx)(o.hzk, {
+      children: (0, r.jsxs)(o.Kqy, {
         gap: 24,
         align: "center",
         padding: {
           top: 24
         },
-        children: [Z, (0, i.jsx)(o.Kqy, {
+        children: [v, (0, r.jsx)(o.Kqy, {
           gap: 8,
           padding: {
             top: 12
           },
-          children: b
+          children: I
         })]
       })
-    }), I]
+    }), Z]
   })
 }

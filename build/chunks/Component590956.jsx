@@ -128,7 +128,7 @@ let I = e => {
       enableClick: u = true,
       channelId: g,
       messageId: b
-    } = e, [O, I] = i.useState(String(Date.now())), [T, A] = i.useState(false), [N, C] = i.useState(false), R = i.useRef(null), P = function() {
+    } = e, [O, I] = i.useState(String(Date.now())), [T, A] = i.useState(false), [C, N] = i.useState(false), R = i.useRef(null), P = function() {
       let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
       return (0, r.jsx)(c.Z, v(y({}, e), {
         emojiName: t.name,
@@ -144,7 +144,7 @@ let I = e => {
       "aria-label": t.name
     }, p.b_), {
       position: a,
-      shouldShow: !N,
+      shouldShow: !C,
       onTooltipShow: () => {
         A(true), u && (S({
           emojiNode: t,
@@ -160,7 +160,7 @@ let I = e => {
         },
         onClick: u ? t => {
           var n;
-          A(false), C(true), null == e || null == (n = e.onClick) || n.call(e, t)
+          A(false), N(true), null == e || null == (n = e.onClick) || n.call(e, t)
         } : true,
         onMouseLeave: () => {
           T && (f.default.track(h.rMx.CLOSE_POPOUT, {
@@ -176,7 +176,7 @@ let I = e => {
       }))
     }));
     if (!u) return D();
-    let L = e => (0, r.jsx)(_.vk, v(y({}, e), {
+    let x = e => (0, r.jsx)(_.vk, v(y({}, e), {
       node: t,
       refreshPositionKey: () => I(String(Date.now())),
       nonce: w
@@ -187,12 +187,12 @@ let I = e => {
       onRequestClose: () => {
         f.default.track(h.rMx.CLOSE_POPOUT, {
           nonce: w
-        }), A(false), C(false)
+        }), A(false), N(false)
       },
       autoInvert: true,
       nudgeAlignIntoViewport: true,
       position: "right",
-      renderPopout: L,
+      renderPopout: x,
       positionKey: O,
       targetElementRef: R,
       children: D

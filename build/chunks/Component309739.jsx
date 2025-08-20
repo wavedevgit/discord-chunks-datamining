@@ -1,14 +1,15 @@
-/** Chunk was on 66181 **/
-/** chunk id: 309739, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 309739, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => M
+  Z: () => H
 }), require("./388685.js"), require("./781311.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk658722 = require("./658722.js"),
-  o = require.n(Chunk658722),
+  l = require.n(Chunk658722),
   Chunk442837 = require("./442837.js"),
   Chunk524437 = require("./524437.js"),
   Chunk780384 = require("./780384.js"),
@@ -34,59 +35,75 @@ var Chunk951288 = require("./951288.js"),
   Chunk85240 = require("./85240.js"),
   Chunk197571 = require("./197571.js");
 
-function D(e) {
-  let t = () => {
-    N.SE.updateSetting(e ? C.Z.getGuildIds() : [])
-  };
-  (0, p.h7j)(e => {
-    var n, r;
-    return (0, i.jsx)(p.ConfirmModal, (n = function(e) {
-      for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-          i = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-          return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), i.forEach(function(t) {
-          var i;
-          i = n[t], t in e ? Object.defineProperty(e, t, {
-            value: i,
-            enumerable: true,
-            configurable: true,
-            writable: true
-          }) : e[t] = i
-        })
-      }
-      return e
-    }({
-      header: A.intl.string(A.t["uUr+GR"]),
-      confirmText: A.intl.string(A.t.gm1Ven),
-      cancelText: A.intl.string(A.t.p89ACg),
-      onCancel: t,
-      confirmButtonColor: m.zx.Colors.BRAND
-    }, e), r = r = {
-      children: (0, i.jsx)(p.Text, {
-        variant: "text-md/normal",
-        children: A.intl.string(A.t.EFu2Ki)
-      })
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
-      var n = Object.keys(e);
-      if (Object.getOwnPropertySymbols) {
-        var i = Object.getOwnPropertySymbols(e);
-        n.push.apply(n, i)
-      }
-      return n
-    })(Object(r)).forEach(function(e) {
-      Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
-    }), n))
-  })
+function x(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
 }
 
-function Z() {
+function L(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      x(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function j(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function M(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+
+function k(e) {
+  let t = () => {
+    C.SE.updateSetting(e ? v.Z.getGuildIds() : [])
+  };
+  (0, _.h7j)(e => (0, r.jsx)(_.ConfirmModal, M(L({
+    header: P.intl.string(P.t["uUr+GR"]),
+    confirmText: P.intl.string(P.t.gm1Ven),
+    cancelText: P.intl.string(P.t.p89ACg),
+    onCancel: t,
+    confirmButtonColor: f.zx.Colors.BRAND
+  }, e), {
+    children: (0, r.jsx)(_.Text, {
+      variant: "text-md/normal",
+      children: P.intl.string(P.t.EFu2Ki)
+    })
+  })))
+}
+
+function U() {
   let e = Chunk695346.G6.useSetting(),
     t = Chunk695346.no.useSetting(),
     n = (0, Chunk362352.Yd)("activity privacy tab"),
-    r = Chunk358085.isPlatformEmbedded ? Chunk388032.intl.string(Chunk388032.t.MznbeH) : Chunk388032.intl.string(Chunk388032.t.oKqC4u),
-    s = [{
+    i = Chunk358085.isPlatformEmbedded ? Chunk388032.intl.string(Chunk388032.t.MznbeH) : Chunk388032.intl.string(Chunk388032.t.oKqC4u),
+    a = e => {
+      C.no.updateSetting(e ? u.GI.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS : u.GI.ACTIVITY_STATUS_OFF), k(e)
+    },
+    s = e => {
+      C.no.updateSetting(e), k(e !== u.GI.ACTIVITY_STATUS_OFF)
+    },
+    l = [{
       value: Chunk524437.GI.ACTIVITY_STATUS_ON,
       label: Chunk388032.intl.string(Chunk388032.t.UzGMHx)
     }, {
@@ -105,7 +122,7 @@ function Z() {
         children: Chunk388032.intl.string(Chunk388032.t["8ka8lp"])
       }), (0, Chunk951288.jsx)(Chunk481060.j7V, {
         value: module,
-        onChange: e => N.G6.updateSetting(e),
+        onChange: e => C.G6.updateSetting(e),
         note: Chunk647438,
         children: Chunk388032.intl.string(Chunk388032.t["4q/Ewc"])
       }), require ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
@@ -120,31 +137,26 @@ function Z() {
               helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.ACTIVITY_STATUS_SETTINGS)
             })
           }), (0, Chunk951288.jsx)(Chunk481060.q4e, {
-            options: Chunk120356,
+            options: l,
             value: exports,
-            onChange: e => {
-              N.no.updateSetting(e), D(e !== d.GI.ACTIVITY_STATUS_OFF)
-            }
+            onChange: e => s(e)
           })]
         }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
-          className: a()(Chunk197571.marginBottom20, Chunk197571.marginTop20)
+          className: o()(Chunk197571.marginBottom20, Chunk197571.marginTop20)
         })]
       }) : (0, Chunk951288.jsx)(Chunk481060.j7V, {
         value: exports === Chunk524437.GI.ACTIVITY_STATUS_OFF,
         note: Chunk388032.intl.format(Chunk388032.t["+5/xu7"], {
           helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.ACTIVITY_STATUS_SETTINGS)
         }),
-        onChange: e => {
-          var t;
-          return t = !e, void(N.no.updateSetting(t ? d.GI.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS : d.GI.ACTIVITY_STATUS_OFF), D(t))
-        },
+        onChange: e => a(!e),
         children: Chunk388032.intl.string(Chunk388032.t.D5GXTU)
       })]
     })
   })
 }
 
-function w() {
+function G() {
   let e = Chunk695346.cP.useSetting(),
     t = Chunk695346.Ou.useSetting();
   return (0, Chunk951288.jsx)(Chunk921801.F, {
@@ -158,19 +170,19 @@ function w() {
       }), (0, Chunk951288.jsx)(Chunk481060.j7V, {
         value: module,
         note: Chunk388032.intl.string(Chunk388032.t.Hdh7sb),
-        onChange: e => N.cP.updateSetting(e),
+        onChange: e => C.cP.updateSetting(e),
         children: Chunk388032.intl.string(Chunk388032.t.WEWQQk)
       }), (0, Chunk951288.jsx)(Chunk481060.j7V, {
         value: exports,
         note: Chunk388032.intl.string(Chunk388032.t.Czr3Bg),
-        onChange: e => N.Ou.updateSetting(e),
+        onChange: e => C.Ou.updateSetting(e),
         children: Chunk388032.intl.string(Chunk388032.t.UUvJVl)
       })]
     })
   })
 }
 
-function k() {
+function B() {
   return (0, Chunk951288.jsx)(Chunk921801.F, {
     setting: Chunk726985.s6.ACTIVITY_PRIVACY_TOS,
     children: (0, Chunk951288.jsx)(Chunk481060.hjN, {
@@ -185,68 +197,71 @@ function k() {
     })
   })
 }
+let Z = e => {
+  switch (e.type) {
+    case R.ABu.SPOTIFY:
+      return P.intl.format(P.t["5sYPnp"], {
+        name: e.name
+      });
+    case R.ABu.CRUNCHYROLL:
+      return P.intl.format(P.t.Ge29Z2, {
+        name: e.name
+      });
+    default:
+      return P.intl.format(P.t.nmMsys, {
+        game: e.name
+      })
+  }
+};
 
-function L(e) {
+function V(e) {
   let {
     account: t
-  } = e, [n, s] = r.useState(t.showActivity), a = (0, h.ZP)();
-  r.useEffect(() => {
-    s(t.showActivity)
+  } = e, [n, a] = i.useState(t.showActivity), o = (0, h.ZP)();
+
+  function s(e) {
+    a(e), p.Z.setShowActivity(t.type, t.id, e)
+  }
+  i.useEffect(() => {
+    a(t.showActivity)
   }, [t]);
-  let l = f.Z.get(t.type);
-  return (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(p.j7V, {
-      className: P.switchRowContainer,
+  let l = m.Z.get(t.type);
+  return (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(_.j7V, {
+      className: w.switchRowContainer,
       hideBorder: true,
       value: n,
-      onChange: function(e) {
-        s(e), g.Z.setShowActivity(t.type, t.id, e)
-      },
-      children: (0, i.jsxs)("div", {
-        className: P.activitySwitchRow,
-        children: [(0, i.jsx)("img", {
+      onChange: s,
+      children: (0, r.jsxs)("div", {
+        className: w.activitySwitchRow,
+        children: [(0, r.jsx)("img", {
           alt: l.name,
-          className: P.connectionIcon,
-          src: (0, u.wj)(a) ? l.icon.darkSVG : l.icon.lightSVG
-        }), (0, i.jsxs)("div", {
-          children: [(0, i.jsx)(p.Text, {
+          className: w.connectionIcon,
+          src: (0, d.wj)(o) ? l.icon.darkSVG : l.icon.lightSVG
+        }), (0, r.jsxs)("div", {
+          children: [(0, r.jsx)(_.Text, {
             variant: "text-md/semibold",
             children: l.name
-          }), (0, i.jsxs)(p.Text, {
+          }), (0, r.jsxs)(_.Text, {
             variant: "text-sm/normal",
             color: "text-muted",
-            children: ['"', (e => {
-              switch (e.type) {
-                case y.ABu.SPOTIFY:
-                  return A.intl.format(A.t["5sYPnp"], {
-                    name: e.name
-                  });
-                case y.ABu.CRUNCHYROLL:
-                  return A.intl.format(A.t.Ge29Z2, {
-                    name: e.name
-                  });
-                default:
-                  return A.intl.format(A.t.nmMsys, {
-                    game: e.name
-                  })
-              }
-            })(l), '"']
+            children: ['"', Z(l), '"']
           })]
         })]
       })
-    }), (0, i.jsx)("div", {
-      className: P.divider
+    }), (0, r.jsx)("div", {
+      className: w.divider
     })]
   })
 }
 
-function B() {
+function F() {
   let e = (0, Chunk442837.e7)([Chunk553795.Z], () => Chunk553795.Z.getAccounts()),
-    t = Chunk647438.useMemo(() => module.filter(e => f.Z.isSupported(e.type) && y.vbS.has(e.type)), [module]),
-    [n, s] = Chunk647438.useState(""),
-    a = Chunk647438.useMemo(() => {
+    t = Chunk647438.useMemo(() => module.filter(e => m.Z.isSupported(e.type) && R.vbS.has(e.type)), [module]),
+    [n, a] = Chunk647438.useState(""),
+    o = Chunk647438.useMemo(() => {
       let e = require.trim().toLowerCase();
-      return "" === module ? exports : exports.filter(t => o()(e, f.Z.get(t.type).name.toLowerCase()))
+      return "" === module ? exports : exports.filter(t => l()(e, m.Z.get(t.type).name.toLowerCase()))
     }, [exports, require]);
   return 0 === exports.length ? null : (0, Chunk951288.jsx)(Chunk921801.F, {
     setting: Chunk726985.s6.ACTIVITY_PRIVACY_STATUS_DISPLAY,
@@ -262,7 +277,7 @@ function B() {
           query: require,
           onChange: Chunk120356,
           placeholder: Chunk388032.intl.string(Chunk388032.t.WPrtoa)
-        }), a.map(e => (0, i.jsx)(L, {
+        }), o.map(e => (0, r.jsx)(V, {
           account: e
         }, e.id))]
       })
@@ -270,23 +285,23 @@ function B() {
   })
 }
 
-function M(e) {
+function H(e) {
   let {
     className: t,
     showHeader: n = true
   } = e, {
-    showRedesign: r
-  } = T.b.useExperiment({
+    showRedesign: i
+  } = A.b.useExperiment({
     location: "activity privacy tab"
   }), {
-    showPerGuildActivityStatusSetting: s
-  } = (0, x.c)("activity privacy tab"), {
-    showUpdatedSettingsPage: a
-  } = (0, b.D)("activity privacy tab");
-  return s || a ? (0, i.jsx)(_.Z, {}) : (0, i.jsxs)(p.hjN, {
+    showPerGuildActivityStatusSetting: a
+  } = (0, E.c)("activity privacy tab"), {
+    showUpdatedSettingsPage: o
+  } = (0, g.D)("activity privacy tab");
+  return a || o ? (0, r.jsx)(b.Z, {}) : (0, r.jsxs)(_.hjN, {
     className: t,
-    tag: p.RB0.H1,
-    title: n ? A.intl.string(A.t.Cq98yM) : null,
-    children: [(0, i.jsx)(Z, {}), (0, i.jsx)(w, {}), (0, i.jsx)(k, {}), r && (0, i.jsx)(B, {})]
+    tag: _.RB0.H1,
+    title: n ? P.intl.string(P.t.Cq98yM) : null,
+    children: [(0, r.jsx)(U, {}), (0, r.jsx)(G, {}), (0, r.jsx)(B, {}), i && (0, r.jsx)(F, {})]
   })
 }

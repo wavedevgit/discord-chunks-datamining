@@ -1,77 +1,79 @@
-/** Chunk was on 66181 **/
-/** chunk id: 212632, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 212632, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => f
+  Z: () => g
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk379249 = require("./379249.js"),
   Chunk197571 = require("./197571.js");
-let m = 0,
+let f = 0,
+  _ = () => "notification-position-selector-".concat(f++),
   p = e => {
     switch (e) {
-      case o._vf.TOP_LEFT:
+      case l._vf.TOP_LEFT:
         return c.intl.string(c.t.xlchpa);
-      case o._vf.TOP_RIGHT:
+      case l._vf.TOP_RIGHT:
         return c.intl.string(c.t["4uHRHB"]);
-      case o._vf.BOTTOM_LEFT:
+      case l._vf.BOTTOM_LEFT:
         return c.intl.string(c.t.ovWFnJ);
-      case o._vf.BOTTOM_RIGHT:
+      case l._vf.BOTTOM_RIGHT:
         return c.intl.string(c.t["M/9V7+"]);
       default:
         return c.intl.string(c.t.AlY4ZW)
     }
   },
-  g = [Chunk981631._vf.DISABLED, Chunk981631._vf.TOP_LEFT, Chunk981631._vf.TOP_RIGHT, Chunk981631._vf.BOTTOM_LEFT, Chunk981631._vf.BOTTOM_RIGHT];
+  h = [Chunk981631._vf.DISABLED, Chunk981631._vf.TOP_LEFT, Chunk981631._vf.TOP_RIGHT, Chunk981631._vf.BOTTOM_LEFT, Chunk981631._vf.BOTTOM_RIGHT];
 
-function h(e) {
+function m(e) {
   let {
     position: t,
     onChange: n
-  } = e, [s] = r.useState(() => "notification-position-selector-".concat(m++)), h = t === o._vf.DISABLED ? c.intl.string(c.t.R6LxVV) : c.intl.formatToPlainString(c.t.XXHDMz, {
+  } = e, [a] = i.useState(() => _()), f = t === l._vf.DISABLED ? c.intl.string(c.t.R6LxVV) : c.intl.formatToPlainString(c.t.XXHDMz, {
     position: p(t)
   });
-  return (0, i.jsxs)("div", {
-    children: [(0, i.jsx)(l.tEY, {
+  return (0, r.jsxs)("div", {
+    children: [(0, r.jsx)(s.tEY, {
       within: true,
       offset: false,
-      children: (0, i.jsx)("div", {
-        className: a()(d.wrapper, {
-          [d.disabledSelected]: t === o._vf.DISABLED
+      children: (0, r.jsx)("div", {
+        className: o()(u.wrapper, {
+          [u.disabledSelected]: t === l._vf.DISABLED
         }),
-        children: g.map(e => (0, i.jsxs)("label", {
-          className: a()({
-            [d.selected]: e === t,
-            [d.disabled]: e === o._vf.DISABLED,
-            [d.topRight]: e === o._vf.TOP_RIGHT,
-            [d.topLeft]: e === o._vf.TOP_LEFT,
-            [d.bottomRight]: e === o._vf.BOTTOM_RIGHT,
-            [d.bottomLeft]: e === o._vf.BOTTOM_LEFT
+        children: h.map(e => (0, r.jsxs)("label", {
+          className: o()({
+            [u.selected]: e === t,
+            [u.disabled]: e === l._vf.DISABLED,
+            [u.topRight]: e === l._vf.TOP_RIGHT,
+            [u.topLeft]: e === l._vf.TOP_LEFT,
+            [u.bottomRight]: e === l._vf.BOTTOM_RIGHT,
+            [u.bottomLeft]: e === l._vf.BOTTOM_LEFT
           }),
-          children: [p(e), e === o._vf.DISABLED ? (0, i.jsx)(l.t6m, {
+          children: [p(e), e === l._vf.DISABLED ? (0, r.jsx)(s.t6m, {
             size: "md",
             color: "currentColor",
-            className: d.disabledIcon
-          }) : null, (0, i.jsx)("input", {
+            className: u.disabledIcon
+          }) : null, (0, r.jsx)("input", {
             type: "radio",
-            name: s,
+            name: a,
             value: e,
             onChange: t => n(t, e),
-            className: d.hiddenInput
+            className: u.hiddenInput
           })]
         }, e))
       })
-    }), (0, i.jsx)(l.R94, {
-      type: l.geA.DESCRIPTION,
-      className: u.marginTop8,
-      children: h
+    }), (0, r.jsx)(s.R94, {
+      type: s.geA.DESCRIPTION,
+      className: d.marginTop8,
+      children: f
     })]
   })
 }
-h.Positions = Chunk981631._vf;
-let f = h
+m.Positions = Chunk981631._vf;
+let g = m

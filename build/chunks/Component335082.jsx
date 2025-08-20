@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 335082, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 335082, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => j
+  Z: () => y
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -21,35 +22,38 @@ function h(e) {
   let {
     label: t,
     sublabel: n,
-    id: r,
-    checked: a,
-    onChange: l
+    id: i,
+    checked: o,
+    onChange: s
   } = e;
-  return (0, i.jsxs)("div", {
-    className: g.settingSwitch,
-    children: [(0, i.jsxs)("label", {
-      className: g.settingSwitchLabel,
-      htmlFor: r,
-      children: [(0, i.jsx)(s.X6q, {
+  return (0, r.jsxs)("div", {
+    className: p.settingSwitch,
+    children: [(0, r.jsxs)("label", {
+      className: p.settingSwitchLabel,
+      htmlFor: i,
+      children: [(0, r.jsx)(a.X6q, {
         variant: "heading-md/semibold",
         children: t
-      }), (0, i.jsx)(s.Text, {
+      }), (0, r.jsx)(a.Text, {
         variant: "text-md/normal",
         color: "header-secondary",
         children: n
       })]
-    }), (0, i.jsx)(s.rsf, {
-      id: r,
-      checked: a,
-      onChange: l
+    }), (0, r.jsx)(a.rsf, {
+      id: i,
+      checked: o,
+      onChange: s
     })]
   })
 }
 
-function f() {
+function m() {
   let e = Chunk695346.G6.useSetting(),
     t = Chunk695346.no.useSetting(),
-    n = [{
+    n = e => {
+      s.no.updateSetting(e)
+    },
+    o = [{
       value: Chunk524437.GI.ACTIVITY_STATUS_ON,
       name: Chunk388032.intl.string(Chunk388032.t.UzGMHx)
     }, {
@@ -81,12 +85,9 @@ function f() {
           color: "header-primary",
           children: Chunk388032.intl.string(Chunk933554.default["/LHVbm"])
         }), (0, Chunk951288.jsx)(Chunk481060.FXm, {
-          options: require,
+          options: Chunk921801,
           value: exports,
-          onChange: e => {
-            var t;
-            return t = e.value, void l.no.updateSetting(t)
-          }
+          onChange: e => n(e.value)
         })]
       }), (0, Chunk951288.jsxs)("div", {
         className: Chunk764055.myServersContainer,
@@ -109,7 +110,7 @@ function f() {
   })
 }
 
-function b() {
+function g() {
   let e = Chunk695346.cP.useSetting(),
     t = Chunk695346.Ou.useSetting();
   return (0, Chunk951288.jsx)(Chunk921801.F, {
@@ -128,19 +129,19 @@ function b() {
         sublabel: Chunk388032.intl.string(Chunk933554.default["8EWsJy"]),
         id: "allow-friends-to-join-my-game",
         checked: module,
-        onChange: e => l.cP.updateSetting(e)
+        onChange: e => s.cP.updateSetting(e)
       }), (0, Chunk951288.jsx)(h, {
         label: Chunk388032.intl.string(Chunk933554.default.Uz5Ipq),
         sublabel: Chunk388032.intl.string(Chunk933554.default.CZI2GR),
         id: "allow-vc-join-without-request",
         checked: exports,
-        onChange: e => l.Ou.updateSetting(e)
+        onChange: e => s.Ou.updateSetting(e)
       })]
     })
   })
 }
 
-function x() {
+function E() {
   let e = Chunk695346.G6.useSetting(),
     t = Chunk358085.isPlatformEmbedded ? Chunk388032.intl.string(Chunk933554.default.UQ9RHB) : Chunk388032.intl.string(Chunk388032.t.oKqC4u);
   return (0, Chunk951288.jsx)(Chunk921801.F, {
@@ -167,7 +168,7 @@ function x() {
   })
 }
 
-function _() {
+function b() {
   return (0, Chunk951288.jsx)(Chunk921801.F, {
     setting: Chunk726985.s6.ACTIVITY_PRIVACY_TOS,
     children: (0, Chunk951288.jsx)(Chunk481060.hjN, {
@@ -181,27 +182,27 @@ function _() {
     })
   })
 }
-let j = function(e) {
+let y = function(e) {
   let {
     className: t
   } = e;
-  return (0, i.jsx)(s.hjN, {
+  return (0, r.jsx)(a.hjN, {
     className: t,
-    children: (0, i.jsxs)(s.y5t, {
+    children: (0, r.jsxs)(a.y5t, {
       forceLevel: 1,
-      component: (0, i.jsx)(s.X6q, {
-        className: g.formTitle,
+      component: (0, r.jsx)(a.X6q, {
+        className: p.formTitle,
         variant: "heading-xl/semibold",
         color: "header-primary",
-        children: p.intl.string(p.t.Cq98yM)
+        children: _.intl.string(_.t.Cq98yM)
       }),
-      children: [(0, i.jsx)(x, {}), (0, i.jsx)(s.$i$, {
-        className: g.divider
-      }), (0, i.jsx)(f, {}), (0, i.jsx)(s.$i$, {
-        className: g.divider
-      }), (0, i.jsx)(b, {}), (0, i.jsx)(s.$i$, {
-        className: g.divider
-      }), (0, i.jsx)(_, {})]
+      children: [(0, r.jsx)(E, {}), (0, r.jsx)(a.$i$, {
+        className: p.divider
+      }), (0, r.jsx)(m, {}), (0, r.jsx)(a.$i$, {
+        className: p.divider
+      }), (0, r.jsx)(g, {}), (0, r.jsx)(a.$i$, {
+        className: p.divider
+      }), (0, r.jsx)(b, {})]
     })
   })
 }

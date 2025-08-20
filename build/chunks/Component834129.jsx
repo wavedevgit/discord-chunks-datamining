@@ -1,12 +1,13 @@
-/** Chunk was on 28467 **/
-/** chunk id: 834129, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 834129, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   Z: () => u
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  r = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk318713 = require("./318713.jsx"),
   Chunk686487 = require("./686487.js");
@@ -15,40 +16,40 @@ function c(e) {
   let {
     icon: t,
     iconNode: n,
-    timestamp: a,
-    timestampFormat: l,
+    timestamp: i,
+    timestampFormat: o,
     className: c,
     children: u,
-    contentClassName: m,
-    iconClassName: d,
-    iconContainerClassName: p,
-    timestampClassName: g,
+    contentClassName: d,
+    iconClassName: f,
+    iconContainerClassName: _,
+    timestampClassName: p,
     compact: h = false
   } = e;
-  return (0, s.jsxs)("div", {
-    className: r()(c, {
-      [o.container]: true,
-      [o.compact]: h,
-      [o.cozy]: !h
+  return (0, r.jsxs)("div", {
+    className: a()(c, {
+      [l.container]: true,
+      [l.compact]: h,
+      [l.cozy]: !h
     }),
-    children: [null != n && (0, s.jsx)("div", {
-      className: r()(o.iconContainer, p),
+    children: [null != n && (0, r.jsx)("div", {
+      className: a()(l.iconContainer, _),
       children: n
-    }), null != t && (0, s.jsx)("div", {
-      className: o.iconContainer,
-      children: (0, s.jsx)("div", {
+    }), null != t && (0, r.jsx)("div", {
+      className: l.iconContainer,
+      children: (0, r.jsx)("div", {
         "data-accessibility": "desaturate",
-        className: r()(o.icon, o.iconSize, d),
+        className: a()(l.icon, l.iconSize, f),
         style: {
           backgroundImage: "url('".concat(t, "')")
         }
       })
-    }), (0, s.jsxs)("div", {
-      className: r()(m, o.content),
-      children: [u, null != a && (0, s.jsx)(i.Z, {
-        timestamp: a,
-        timestampFormat: l,
-        className: g
+    }), (0, r.jsxs)("div", {
+      className: a()(d, l.content),
+      children: [u, null != i && (0, r.jsx)(s.Z, {
+        timestamp: i,
+        timestampFormat: o,
+        className: p
       })]
     })]
   })
@@ -58,11 +59,11 @@ c.Action = e => {
     onClick: t,
     children: n
   } = e;
-  return (0, s.jsxs)("span", {
-    className: o.action,
-    children: ["—", (0, s.jsx)(l.eee, {
+  return (0, r.jsxs)("span", {
+    className: l.action,
+    children: ["—", (0, r.jsx)(o.eee, {
       onClick: t,
-      className: o.actionAnchor,
+      className: l.actionAnchor,
       children: n
     })]
   })

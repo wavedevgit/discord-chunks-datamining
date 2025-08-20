@@ -1,4 +1,4 @@
-/** Chunk was on 59650 **/
+/** Chunk was on 5749 **/
 /** chunk id: 745982, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -14,13 +14,13 @@ var Chunk353672 = require("./353672.jsx"),
 
 function d(t) {
   let {} = t, e = (0, a.Nn)();
-  return (0, r.jsx)(s.Z, {
+  return (0, i.jsx)(s.Z, {
     heroImageSrc: l,
     heroImageAlt: o.intl.string(o.t["2mJo29"]),
     header: o.intl.string(o.t.eAbVfX),
-    children: (0, r.jsx)("div", {
+    children: (0, i.jsx)("div", {
       className: c.safetyTips,
-      children: (0, r.jsx)(i.Z, {
+      children: (0, i.jsx)(r.Z, {
         tips: e,
         headerText: o.intl.string(o.t["0QSL1N"])
       })

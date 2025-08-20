@@ -1,5 +1,6 @@
-/** Chunk was on 98464 **/
-/** chunk id: 396934, original params: e,n,t (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 396934, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   container: "container_b5010b",
   eventName: "eventName_b5010b",

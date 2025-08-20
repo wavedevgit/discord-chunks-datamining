@@ -150,32 +150,32 @@ class T extends(r = Chunk647438.PureComponent) {
       barStyles: I,
       fillStyles: T,
       mini: A,
-      hideBubble: N,
-      defaultValue: C,
+      hideBubble: C,
+      defaultValue: N,
       orientation: R,
       onValueRender: P,
       renderMarker: w,
       getAriaValueText: D,
-      barClassName: L,
-      grabberClassName: x,
-      grabberStyles: M = {},
-      markerPosition: k = 0,
-      "aria-hidden": j,
+      barClassName: x,
+      grabberClassName: L,
+      grabberStyles: j = {},
+      markerPosition: M = 0,
+      "aria-hidden": k,
       "aria-label": U,
       "aria-labelledby": G,
       "aria-describedby": B
-    } = this.props, V = 0;
-    b ? null != Chunk120356 && (null != c ? V = Chunk120356[c] : null != Chunk392711 && (V = Chunk120356[Chunk392711])) : V = this.scaleValue(exports);
-    let F = "".concat(V, "%"),
-      Z = null != Chunk120356 && null != Chunk647438 ? Chunk120356.map((e, t) => {
+    } = this.props, Z = 0;
+    b ? null != Chunk120356 && (null != c ? Z = Chunk120356[c] : null != Chunk392711 && (Z = Chunk120356[Chunk392711])) : Z = this.scaleValue(exports);
+    let V = "".concat(Z, "%"),
+      F = null != Chunk120356 && null != Chunk647438 ? Chunk120356.map((e, t) => {
         let n = a[t],
-          r = null != C && C === n,
+          r = null != N && N === n,
           o = this.renderMark(n);
         return (0, i.jsx)("div", {
           className: s()(m.mark, {
             [m.defaultValue]: r,
-            [m.markAbove]: 0 === k,
-            [m.markBelow]: 1 === k
+            [m.markAbove]: 0 === M,
+            [m.markBelow]: 1 === M
           }),
           style: {
             left: "".concat(e, "%")
@@ -190,7 +190,7 @@ class T extends(r = Chunk647438.PureComponent) {
           })
         }, t)
       }) : null,
-      H = null != P ? P(exports) : "".concat(V.toFixed(0), "%"),
+      H = null != P ? P(exports) : "".concat(Z.toFixed(0), "%"),
       Y = null != (e = null == D ? true : D(exports)) ? module : true;
     return (0, Chunk951288.jsx)(S, {
       active: require,
@@ -202,7 +202,7 @@ class T extends(r = Chunk647438.PureComponent) {
           ringTarget: this.grabberRef,
           children: (0, i.jsxs)(u.animated.div, {
             className: s()(m.slider, O, {
-              [m.hasMarks]: (null != (a = null == Z ? true : Z.length) ? a : 0) > 0,
+              [m.hasMarks]: (null != (a = null == F ? true : F.length) ? a : 0) > 0,
               [m.disabled]: g,
               [m.mini]: A
             }),
@@ -212,7 +212,7 @@ class T extends(r = Chunk647438.PureComponent) {
             "aria-valuenow": t,
             "aria-disabled": g,
             "aria-orientation": R,
-            "aria-hidden": j,
+            "aria-hidden": k,
             "aria-label": U,
             "aria-labelledby": G,
             "aria-describedby": B,
@@ -232,14 +232,14 @@ class T extends(r = Chunk647438.PureComponent) {
             ref: this.containerRef,
             children: [(0, i.jsx)("div", {
               className: m.track,
-              children: Z
+              children: F
             }), (0, i.jsx)("div", {
-              className: s()(m.bar, L),
+              className: s()(m.bar, x),
               style: I,
               children: (0, i.jsx)("div", {
                 className: m.barFill,
                 style: y(E({}, T), {
-                  width: F
+                  width: V
                 })
               })
             }), v, (0, i.jsx)("div", {
@@ -247,12 +247,12 @@ class T extends(r = Chunk647438.PureComponent) {
               children: (0, i.jsx)(p.u, {
                 color: p.u.Colors.GREY,
                 hideOnClick: false,
-                text: N || b ? null : H,
+                text: C || b ? null : H,
                 forceOpen: n || r && h.Z.keyboardModeEnabled,
                 children: e => (0, i.jsx)("div", y(E({}, e), {
-                  className: s()(m.grabber, x),
-                  style: y(E({}, M), {
-                    left: F
+                  className: s()(m.grabber, L),
+                  style: y(E({}, j), {
+                    left: V
                   }),
                   onMouseDown: this.handleMouseDown,
                   ref: this.grabberRef

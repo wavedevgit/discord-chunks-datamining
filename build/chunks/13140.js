@@ -3,11 +3,11 @@
 "use strict";
 require.d(exports, {
   BB: () => U,
-  C$: () => N,
+  C$: () => C,
   H9: () => A,
-  Kd: () => j,
+  Kd: () => k,
   UR: () => v,
-  d2: () => k,
+  d2: () => M,
   dU: () => T
 }), require("./388685.js"), require("./704826.js"), require("./35282.js"), require("./415506.js"), require("./539854.js"), require("./781311.js");
 var Chunk921738 = require("./921738.js"),
@@ -107,7 +107,7 @@ function S(e) {
     case d.CgE.BROWSER: {
       let e = i()(n);
       if (null == e) return null;
-      t = C(e);
+      t = N(e);
       break
     }
     default:
@@ -123,7 +123,7 @@ function A(e) {
   return null != i ? I(i.keyCode, i.key, n) : null
 }
 
-function N(e) {
+function C(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : T(),
     n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : d.MoX.KEYBOARD_KEY,
     r = R(e, t, n);
@@ -132,7 +132,7 @@ function N(e) {
   return null != i ? i.keyCode : null
 }
 
-function C(e) {
+function N(e) {
   let t = e.replace(/^(right|left) (shift|meta|ctrl|alt)$/, "$2").replace("meta", "command");
   return "pause" === t || "break" === t ? "pause/break" : t
 }
@@ -153,7 +153,7 @@ function R(e) {
       t = "+" === e ? d.iC$.plus : d.iC$[e];
       break;
     case a && n === d.CgE.BROWSER:
-      t = i()(C(e));
+      t = i()(N(e));
       break;
     case a:
       t = m[e];
@@ -203,17 +203,17 @@ let P = [
       if (n === e.toUpperCase()) return t.toLowerCase();
     return e
   },
-  L = /shift|meta|ctrl|alt$/;
+  x = /shift|meta|ctrl|alt$/;
 
-function x(e) {
+function L(e) {
   return "meta" === e || "shift" === e || "alt" === e || "ctrl" === e
 }
 
-function M(e) {
+function j(e) {
   return e + "Key"
 }
 
-function k(e) {
+function M(e) {
   let t = {
     keyCode: 0,
     key: "",
@@ -229,19 +229,19 @@ function k(e) {
     if (null == r) return e.push(h(_({}, i), {
       combo: n
     })), e;
-    if (L.test(r) && x(r)) return t[M(r)] = true, e.map(e => (e[M(r)] = true, e));
+    if (x.test(r) && L(r)) return t[j(r)] = true, e.map(e => (e[j(r)] = true, e));
     {
-      let t = N(r, d.CgE.BROWSER);
+      let t = C(r, d.CgE.BROWSER);
       return null != t && (i.keyCode = t), e.push(i), e
     }
   }, [])
 }
 
-function j(e) {
+function k(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : T(),
     n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : d.MoX.KEYBOARD_KEY;
   return e.replace(/numpad plus/i, "").replace(/NUMPAD \+/i, "numpad plus").replace(/mod/i, s.Z.modKey).split("+").map(e => e.trim().replace("plus", "+")).reduce((e, r) => {
-    let i = N(D(r), t, n);
+    let i = C(D(r), t, n);
     return null != i && e.push([n, i, t]), e
   }, [])
 }

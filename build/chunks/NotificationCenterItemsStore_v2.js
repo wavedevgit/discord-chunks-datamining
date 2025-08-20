@@ -116,7 +116,7 @@ function A(e) {
   })
 }
 
-function N(e) {
+function C(e) {
   let {
     unknownApplicationIds: t
   } = e;
@@ -125,7 +125,7 @@ function N(e) {
   y.notifCenterLocalItems = y.notifCenterLocalItems.filter(e => null == e.applicationId || !n.has(e.applicationId))
 }
 
-function C(e) {
+function N(e) {
   v();
   let t = [],
     n = new Set;
@@ -188,41 +188,41 @@ function D(e, t) {
   }) : n).filter(O)
 }
 
-function L(e) {
+function x(e) {
   let {
     ids: t
   } = e;
   D(t, true)
 }
 
-function x(e) {
+function L(e) {
   let {
     ids: t
   } = e;
   D(t, false)
 }
 
-function M(e) {
+function j(e) {
   let {
     active: t
   } = e;
   y.notifCenterActive = t
 }
 
-function k(e) {
+function M(e) {
   let {
     focused: t
   } = e;
   y.notifCenterTabFocused = t
 }
 
-function j(e, t, n) {
+function k(e, t, n) {
   var r;
   return e.type === t && (null == (r = e.other_user) ? true : r.id) === n
 }
 
 function U(e, t, n, r) {
-  return j(e, t, n) && e.applicationId === r
+  return k(e, t, n) && e.applicationId === r
 }
 
 function G(e) {
@@ -244,19 +244,19 @@ function G(e) {
       null != e && (y.notifCenterLocalItems = [...y.notifCenterLocalItems, (0, p.mH)(e, s, l)])
     }
   }
-  r !== h.OGo.FRIEND || null == t.user || a || (y.notifCenterLocalItems = y.notifCenterLocalItems.map(e => j(e, _.O7.INCOMING_FRIEND_REQUESTS, t.user.id) ? b(g({}, e), {
+  r !== h.OGo.FRIEND || null == t.user || a || (y.notifCenterLocalItems = y.notifCenterLocalItems.map(e => k(e, _.O7.INCOMING_FRIEND_REQUESTS, t.user.id) ? b(g({}, e), {
     acked: true,
     forceUnacked: false,
     local_id: "incoming_friend_requests_accepted_".concat(o.id, "_").concat(e.id),
     type: _.O7.INCOMING_FRIEND_REQUESTS_ACCEPTED
-  }) : e)), (r === h.OGo.BLOCKED || a) && (y.notifCenterLocalItems = y.notifCenterLocalItems.filter(e => !j(e, _.O7.INCOMING_FRIEND_REQUESTS, n) && !j(e, _.O7.INCOMING_FRIEND_REQUESTS_ACCEPTED, n) && !j(e, _.O7.INCOMING_GAME_FRIEND_REQUESTS, n) && !j(e, _.O7.INCOMING_GAME_FRIEND_REQUESTS_ACCEPTED, n)))
+  }) : e)), (r === h.OGo.BLOCKED || a) && (y.notifCenterLocalItems = y.notifCenterLocalItems.filter(e => !k(e, _.O7.INCOMING_FRIEND_REQUESTS, n) && !k(e, _.O7.INCOMING_FRIEND_REQUESTS_ACCEPTED, n) && !k(e, _.O7.INCOMING_GAME_FRIEND_REQUESTS, n) && !k(e, _.O7.INCOMING_GAME_FRIEND_REQUESTS_ACCEPTED, n)))
 }
 
 function B(e) {
-  y.notifCenterLocalItems = y.notifCenterLocalItems.filter(t => !j(t, _.O7.INCOMING_FRIEND_REQUESTS, e.relationship.id) && !j(t, _.O7.INCOMING_FRIEND_REQUESTS_ACCEPTED, e.relationship.id))
+  y.notifCenterLocalItems = y.notifCenterLocalItems.filter(t => !k(t, _.O7.INCOMING_FRIEND_REQUESTS, e.relationship.id) && !k(t, _.O7.INCOMING_FRIEND_REQUESTS_ACCEPTED, e.relationship.id))
 }
 
-function V(e) {
+function Z(e) {
   let {
     gameRelationship: t
   } = e, {
@@ -280,7 +280,7 @@ function V(e) {
   }
 }
 
-function F(e) {
+function V(e) {
   let {
     userId: t,
     applicationId: n
@@ -288,7 +288,7 @@ function F(e) {
   y.notifCenterLocalItems = y.notifCenterLocalItems.filter(e => !U(e, _.O7.INCOMING_GAME_FRIEND_REQUESTS, t, n) && !U(e, _.O7.INCOMING_GAME_FRIEND_REQUESTS_ACCEPTED, t, n))
 }
 
-function Z(e) {
+function F(e) {
   let {
     item_enum: t
   } = e;
@@ -374,10 +374,10 @@ class K extends(r = Chunk442837.ZP.PersistedStore) {
 }
 m(K, "displayName", "NotificationCenterItemsStore"), m(K, "persistKey", "NotificationCenterItemsStore_v2");
 let z = new K(Chunk570140.Z, {
-  CONNECTION_OPEN: C,
+  CONNECTION_OPEN: N,
   LOGOUT: () => v(),
-  NOTIFICATION_CENTER_ITEMS_ACK: L,
-  NOTIFICATION_CENTER_ITEMS_ACK_FAILURE: x,
+  NOTIFICATION_CENTER_ITEMS_ACK: x,
+  NOTIFICATION_CENTER_ITEMS_ACK_FAILURE: L,
   GUILD_SCHEDULED_EVENT_UPDATE: H,
   NOTIFICATION_CENTER_ITEM_CREATE: P,
   NOTIFICATION_CENTER_ITEM_DELETE: w,
@@ -386,15 +386,15 @@ let z = new K(Chunk570140.Z, {
   LOAD_NOTIFICATION_CENTER_ITEMS_FAILURE: S,
   LOAD_NOTIFICATION_CENTER_ITEMS_SUCCESS: R,
   RESET_NOTIFICATION_CENTER: () => I(),
-  NOTIFICATION_CENTER_SET_ACTIVE: M,
-  NOTIFICATION_CENTER_TAB_FOCUSED: k,
+  NOTIFICATION_CENTER_SET_ACTIVE: j,
+  NOTIFICATION_CENTER_TAB_FOCUSED: M,
   RELATIONSHIP_ADD: G,
   RELATIONSHIP_UPDATE: G,
   RELATIONSHIP_REMOVE: B,
-  GAME_RELATIONSHIP_ADD: V,
-  GAME_RELATIONSHIP_REMOVE: F,
-  NOTIFICATION_CENTER_ITEM_COMPLETED: Z,
+  GAME_RELATIONSHIP_ADD: Z,
+  GAME_RELATIONSHIP_REMOVE: V,
+  NOTIFICATION_CENTER_ITEM_COMPLETED: F,
   SET_RECENT_MENTIONS_FILTER: () => I(),
   MOBILE_NATIVE_UPDATE_CHECK_FINISHED: W,
-  APPLICATIONS_FETCH_SUCCESS: N
+  APPLICATIONS_FETCH_SUCCESS: C
 })

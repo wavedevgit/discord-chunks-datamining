@@ -53,14 +53,14 @@ function P(e) {
     children: t
   } = e;
   return (0, n.jsx)(u.zJl, {
-    className: O.customPropertiesContainer,
+    className: E.customPropertiesContainer,
     children: (0, n.jsx)("dl", {
       children: t
     })
   })
 }
 
-function I(e) {
+function w(e) {
   let {
     name: t,
     children: a,
@@ -72,16 +72,16 @@ function I(e) {
       return () => clearTimeout(e)
     }
   }, [i]), (0, n.jsxs)("div", {
-    className: O.customProperty,
+    className: E.customProperty,
     children: [(0, n.jsx)("dt", {
-      className: O.customPropertiesName,
+      className: E.customPropertiesName,
       children: t
     }), (0, n.jsx)("dd", {
       children: a
     }), (0, n.jsx)(u.P3F, {
       tag: "span",
-      className: O.copyPropertyButton,
-      onClick: () => (0, v.JG)(JSON.stringify(l), () => s(true)),
+      className: E.copyPropertyButton,
+      onClick: () => (0, b.JG)(JSON.stringify(l), () => s(true)),
       children: i ? (0, n.jsx)(u.kmB, {
         color: "currentColor",
         size: "sm"
@@ -92,7 +92,7 @@ function I(e) {
     })]
   })
 }
-let w = new Set(["client_performance_cpu", "client_performance_memory"]),
+let I = new Set(["client_performance_cpu", "client_performance_memory"]),
   k = [{
     id: "details",
     name: "Details",
@@ -107,20 +107,20 @@ let w = new Set(["client_performance_cpu", "client_performance_memory"]),
         },
         onClose: s,
         filteredEvents: c
-      } = e, d = b.default.getUser(l), h = o()(r);
+      } = e, d = v.default.getUser(l), h = o()(r);
       return (0, n.jsxs)("div", {
         "data-mtctest-ignore": "true",
         children: [(0, n.jsxs)(x.ZP, {
-          className: i()(E.headerBar, O.subPanelHeaderBar),
+          className: i()(T.headerBar, E.subPanelHeaderBar),
           children: [(0, n.jsx)(x.ZP.Icon, {
             icon: u.IeX,
             tooltip: t
           }), (0, n.jsxs)(x.ZP.Title, {
-            wrapperClassName: O.headerTitle,
+            wrapperClassName: E.headerTitle,
             children: [t, (0, n.jsx)(u.P3F, {
               tag: "span",
-              className: O.copyEventButton,
-              onClick: () => (0, v.JG)(t),
+              className: E.copyEventButton,
+              onClick: () => (0, b.JG)(t),
               children: (0, n.jsx)(u.TIy, {
                 color: "currentColor",
                 size: "sm"
@@ -130,7 +130,7 @@ let w = new Set(["client_performance_cpu", "client_performance_memory"]),
             icon: u.TIy,
             tooltip: "Copy all properties",
             onClick: () => {
-              (0, v.JG)(JSON.stringify(function(e) {
+              (0, b.JG)(JSON.stringify(function(e) {
                 for (var t = 1; t < arguments.length; t++) {
                   var a = null != arguments[t] ? arguments[t] : {},
                     n = Object.keys(a);
@@ -160,7 +160,7 @@ let w = new Set(["client_performance_cpu", "client_performance_memory"]),
             onClick: s
           })]
         }), (0, n.jsxs)(_.E, {
-          className: O.commonProperties,
+          className: E.commonProperties,
           children: [(0, n.jsx)(_.Z9, {
             name: "Timestamp (local)",
             copyValue: r.toISOString(),
@@ -184,7 +184,7 @@ let w = new Set(["client_performance_cpu", "client_performance_memory"]),
           })]
         }), (0, n.jsx)(P, {
           children: Object.entries(a).map(e => {
-            let [a, r] = e, l = w.has(a) ? ((e, t, a) => {
+            let [a, r] = e, l = I.has(a) ? ((e, t, a) => {
               let n = e.filter(e => e.event === t);
               if (0 === n.length) return {
                 average: null,
@@ -202,7 +202,7 @@ let w = new Set(["client_performance_cpu", "client_performance_memory"]),
               }
             })(c, t, a) : null;
             return (0, n.jsxs)("div", {
-              children: [(0, n.jsx)(I, {
+              children: [(0, n.jsx)(w, {
                 name: "".concat(a, ":"),
                 copyValue: {
                   [a]: r || null
@@ -210,10 +210,10 @@ let w = new Set(["client_performance_cpu", "client_performance_memory"]),
                 children: null != r ? (0, n.jsx)("code", {
                   children: JSON.stringify(r)
                 }) : (0, n.jsx)("code", {
-                  className: O.emptyProperty,
+                  className: E.emptyProperty,
                   children: "null"
                 })
-              }, a), null !== l && null !== l.average && (0, n.jsx)(I, {
+              }, a), null !== l && null !== l.average && (0, n.jsx)(w, {
                 name: "".concat(a, "_avg:"),
                 copyValue: {
                   [a]: r || null
@@ -276,16 +276,16 @@ function A() {
       x(e)
     }, []);
   (0, Chunk301801.BO)(exports, Chunk120816.Z.loggedEvents, Chunk886118, Z, [Chunk120356]);
-  let b = Chunk129861.filter(e => {
+  let v = Chunk129861.filter(e => {
       for (let t of s)
         if (R[t].filter(e)) returntrue;
       returnfalse
     }),
-    [v, f] = Chunk647438.useState(true),
-    _ = Chunk594174.find(e => e.key === v),
+    [b, f] = Chunk647438.useState(true),
+    _ = Chunk594174.find(e => e.key === b),
     {
       TabBar: P,
-      renderSelectedTab: I
+      renderSelectedTab: w
     } = (0, Chunk621060.ZP)({
       tabs: k
     }, []);
@@ -314,7 +314,7 @@ function A() {
         children: Object.entries(R).map(e => {
           let [t, a] = e;
           return (0, n.jsx)(u.P3F, {
-            className: i()(O.filter, s.includes(t) && O.activeFilter),
+            className: i()(E.filter, s.includes(t) && E.activeFilter),
             onClick: () => {
               o(e => e.includes(t) ? e.filter(e => e !== t) : [...e, t])
             },
@@ -341,7 +341,7 @@ function A() {
       className: Chunk599832.subPanel,
       minHeight: 100,
       initialHeight: null != module.current ? module.current.clientHeight / 2 : 300,
-      children: [(0, Chunk951288.jsx)(P, {}), I({
+      children: [(0, Chunk951288.jsx)(P, {}), w({
         loggedEvent: Chunk257785,
         onClose: () => Chunk55935(true),
         filteredEvents: Chunk594174

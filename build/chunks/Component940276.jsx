@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 940276, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 940276, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => f
+  Z: () => m
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,40 +21,40 @@ function h(e) {
   let {
     guild: t,
     isActivityRestricted: n,
-    onToggleActivityRestrictedGuild: r
-  } = e, o = (0, s.e7)([l.Z], () => l.Z.getMemberCount(t.id));
-  return (0, i.jsx)("li", {
-    children: (0, i.jsx)(a.j7V, {
-      className: g.guildRowWrapper,
+    onToggleActivityRestrictedGuild: i
+  } = e, l = (0, a.e7)([s.Z], () => s.Z.getMemberCount(t.id));
+  return (0, r.jsx)("li", {
+    children: (0, r.jsx)(o.j7V, {
+      className: p.guildRowWrapper,
       value: !n,
-      onChange: e => r({
+      onChange: e => i({
         checked: e,
         guildId: t.id
       }),
       hideBorder: true,
-      children: (0, i.jsxs)("div", {
-        className: g.guildRow,
-        children: [(0, i.jsx)("div", {
-          children: (0, i.jsx)(c.V, {
+      children: (0, r.jsxs)("div", {
+        className: p.guildRow,
+        children: [(0, r.jsx)("div", {
+          children: (0, r.jsx)(c.V, {
             guild: t,
             size: 48
           })
-        }), (0, i.jsxs)("div", {
-          className: g.guildRowTextContainer,
-          children: [(0, i.jsx)(a.Text, {
+        }), (0, r.jsxs)("div", {
+          className: p.guildRowTextContainer,
+          children: [(0, r.jsx)(o.Text, {
             variant: "text-md/medium",
             lineClamp: 1,
             color: "text-default",
             children: t.name
-          }), (0, i.jsxs)("div", {
-            className: g.memberDetailsContainer,
-            children: [(0, i.jsx)("div", {
-              className: g.memberCountDot
-            }), (0, i.jsx)(a.Text, {
+          }), (0, r.jsxs)("div", {
+            className: p.memberDetailsContainer,
+            children: [(0, r.jsx)("div", {
+              className: p.memberCountDot
+            }), (0, r.jsx)(o.Text, {
               variant: "text-xs/normal",
               color: "text-secondary",
-              children: p.intl.format(p.t.zRl6XV, {
-                count: o
+              children: _.intl.format(_.t.zRl6XV, {
+                count: l
               })
             })]
           })]
@@ -62,20 +63,27 @@ function h(e) {
     })
   })
 }
-let f = function() {
+let m = function() {
   let {
     guilds: e,
     searchQuery: t,
     setSearchQuery: n,
-    sortOrder: s,
-    setSortOrder: l,
+    sortOrder: a,
+    setSortOrder: s,
     hasActivityRestrictedGuilds: c,
-    onToggleAllActivityRestrictedGuilds: f,
-    onToggleActivityRestrictedGuild: b,
-    isActivityRestricted: x,
-    numActivityRestrictedGuilds: _,
-    numTotalGuilds: j
-  } = (0, Chunk304432.F)(), E = (0, Chunk647438.useId)();
+    onToggleAllActivityRestrictedGuilds: m,
+    onToggleActivityRestrictedGuild: g,
+    isActivityRestricted: E,
+    numActivityRestrictedGuilds: b,
+    numTotalGuilds: y
+  } = (0, Chunk304432.F)(), O = () => {
+    Chunk626135.default.track(Chunk981631.rMx.ACTIVITY_SHARING_SETTINGS_INTERACTED, {
+      interaction: "search_cleared",
+      sort_order: Chunk442837,
+      activity_restricted_guild_count: b,
+      total_guild_count: y
+    }), require("")
+  }, v = (0, Chunk647438.useId)();
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk378976.wrapper,
     children: [(0, Chunk951288.jsxs)("div", {
@@ -83,30 +91,23 @@ let f = function() {
       children: [(0, Chunk951288.jsx)(Chunk481060.E1j, {
         query: exports,
         onChange: require,
-        onClear: () => {
-          Chunk626135.default.track(Chunk981631.rMx.ACTIVITY_SHARING_SETTINGS_INTERACTED, {
-            interaction: "search_cleared",
-            sort_order: Chunk442837,
-            activity_restricted_guild_count: _,
-            total_guild_count: j
-          }), require("")
-        },
+        onClear: O,
         onFocus: () => Chunk626135.default.track(Chunk981631.rMx.ACTIVITY_SHARING_SETTINGS_INTERACTED, {
           interaction: "search_focused",
           sort_order: Chunk442837,
-          activity_restricted_guild_count: _,
-          total_guild_count: j
+          activity_restricted_guild_count: b,
+          total_guild_count: y
         }),
         onBlur: () => Chunk626135.default.track(Chunk981631.rMx.ACTIVITY_SHARING_SETTINGS_INTERACTED, {
           interaction: "search_blurred",
           sort_order: Chunk442837,
-          activity_restricted_guild_count: _,
-          total_guild_count: j
+          activity_restricted_guild_count: b,
+          total_guild_count: y
         }),
         placeholder: Chunk388032.intl.string(Chunk388032.t["H+nRY2"]),
         "aria-label": Chunk388032.intl.string(Chunk388032.t["5h0QOD"]),
         inputProps: {
-          "aria-controls": E,
+          "aria-controls": v,
           "aria-expanded": true
         }
       }), module.length > 0 && (0, Chunk951288.jsxs)("div", {
@@ -129,18 +130,18 @@ let f = function() {
             value: Chunk304432.W.ACTIVITY_SHARING_OFF
           }],
           select: e => {
-            o.default.track(u.rMx.ACTIVITY_SHARING_SETTINGS_INTERACTED, {
+            l.default.track(d.rMx.ACTIVITY_SHARING_SETTINGS_INTERACTED, {
               interaction: "sort_order_changed",
               sort_order: e,
-              activity_restricted_guild_count: _,
-              total_guild_count: j
-            }), l(e)
+              activity_restricted_guild_count: b,
+              total_guild_count: y
+            }), s(e)
           },
-          isSelected: e => s === e,
+          isSelected: e => a === e,
           serialize: String
         }), (0, Chunk951288.jsx)(Chunk481060.Avr, {
           variant: "primary",
-          onClick: f,
+          onClick: m,
           text: Chunk797670 ? Chunk388032.intl.string(Chunk388032.t["7lxcLC"]) : Chunk388032.intl.string(Chunk388032.t.zh6UEh)
         })]
       })]
@@ -152,7 +153,7 @@ let f = function() {
       })
     }), (0, Chunk951288.jsxs)("ul", {
       className: Chunk378976.guildsList,
-      id: E,
+      id: v,
       "aria-label": Chunk388032.intl.string(Chunk388032.t["7hB4kp"]),
       children: [0 === module.length && (0, Chunk951288.jsx)("div", {
         className: Chunk378976.noResultsContainer,
@@ -161,10 +162,10 @@ let f = function() {
           variant: "text-lg/medium",
           children: Chunk388032.intl.string(Chunk388032.t["Xe+fJC"])
         })
-      }), module.map(e => (0, i.jsx)(h, {
+      }), module.map(e => (0, r.jsx)(h, {
         guild: e,
-        isActivityRestricted: x(e.id),
-        onToggleActivityRestrictedGuild: b
+        isActivityRestricted: E(e.id),
+        onToggleActivityRestrictedGuild: g
       }, e.id))]
     })]
   })

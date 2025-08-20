@@ -1,21 +1,21 @@
-/** Chunk was on 91584 **/
-/** chunk id: 946258, original params: t,e,r (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 946258, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var n = require("./207549.js").getPunctuation(),
+var r = require("./207549.js").getPunctuation(),
   i = "['‘’]",
-  o = "\\s|(?![_])" + n,
-  a = RegExp("^(?:" + o + ")*(?:" + i + "|(?!" + o + ").)*(?:(?!" + o + ").)"),
-  u = RegExp("(?:(?!" + o + ").)(?:" + i + "|(?!" + o + ").)*(?:" + o + ")*$");
+  a = "\\s|(?![_])" + r,
+  o = RegExp("^(?:" + a + ")*(?:" + i + "|(?!" + a + ").)*(?:(?!" + a + ").)"),
+  s = RegExp("(?:(?!" + a + ").)(?:" + i + "|(?!" + a + ").)*(?:" + a + ")*$");
 
-function s(t, e) {
-  var r = e ? u.exec(t) : a.exec(t);
-  return r ? r[0] : t
+function l(e, t) {
+  var n = t ? s.exec(e) : o.exec(e);
+  return n ? n[0] : e
 }
 module.exports = {
-  getBackward: function(t) {
-    return s(t, true)
+  getBackward: function(e) {
+    return l(e, true)
   },
-  getForward: function(t) {
-    return s(t, false)
+  getForward: function(e) {
+    return l(e, false)
   }
 }

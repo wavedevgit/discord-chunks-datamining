@@ -1,5 +1,6 @@
-/** Chunk was on 99315 **/
-/** chunk id: 487276, original params: e,r,o (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 487276, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   container: "container__72cd3",
   textSection: "textSection__72cd3",

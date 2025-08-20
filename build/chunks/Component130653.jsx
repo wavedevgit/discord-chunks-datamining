@@ -1,14 +1,15 @@
-/** Chunk was on 21046 **/
-/** chunk id: 130653, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 130653, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  T: () => s,
-  Z: () => o
+  T: () => i,
+  Z: () => a
 });
 var Chunk951288 = require("./951288.js");
-let s = require("./647438.js").createContext(false);
+let i = require("./647438.js").createContext(false);
 
-function o(e) {
-  return (0, r.jsx)(s.Provider, {
+function a(e) {
+  return (0, r.jsx)(i.Provider, {
     value: true,
     children: e.children
   })

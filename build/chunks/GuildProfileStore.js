@@ -2,7 +2,7 @@
 /** chunk id: 314852, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => C,
+  Z: () => N,
   a: () => f
 }), require("./388685.js"), require("./953529.js");
 var r, Chunk442837 = require("./442837.js"),
@@ -220,7 +220,7 @@ function A(e) {
     profile: o
   }))
 }
-class N extends(r = Chunk442837.ZP.Store) {
+class C extends(r = Chunk442837.ZP.Store) {
   getProfile(e) {
     var t, n;
     return null == e ? null : null != (n = null == (t = _.get(e)) ? true : t.profile) ? n : null
@@ -242,8 +242,8 @@ class N extends(r = Chunk442837.ZP.Store) {
     return null == e ? null : null != (r = null == (n = _.get(e)) || null == (t = n.error) ? true : t.code) ? r : null
   }
 }
-l(N, "displayName", "GuildProfileStore");
-let C = new N(Chunk570140.Z, {
+l(C, "displayName", "GuildProfileStore");
+let N = new C(Chunk570140.Z, {
   GUILD_PROFILE_FETCH: h,
   GUILD_PROFILE_FETCH_SUCCESS: m,
   GUILD_PROFILE_FETCH_FAILURE: g,

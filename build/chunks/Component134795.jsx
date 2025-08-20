@@ -1,12 +1,13 @@
-/** Chunk was on 66181 **/
-/** chunk id: 134795, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 134795, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => g
+  Z: () => p
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk906732 = require("./906732.jsx"),
@@ -16,50 +17,50 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk808639 = require("./808639.js");
 
-function g(e) {
+function p(e) {
   let {
     showRemoveBannerButton: t,
     errors: n,
-    onBannerChange: r,
-    guildId: g,
+    onBannerChange: i,
+    guildId: p,
     className: h,
-    disabled: f = false,
-    showPremiumIcon: b = true,
-    isTryItOutFlow: x = false,
-    forcedDivider: _,
-    withHighlight: j = false
+    disabled: m = false,
+    showPremiumIcon: g = true,
+    isTryItOutFlow: E = false,
+    forcedDivider: b,
+    withHighlight: y = false
   } = e, {
-    newestAnalyticsLocation: E
-  } = (0, o.ZP)(), C = j ? l.gtL : a.zx;
-  return (0, i.jsx)(d.Z, {
+    newestAnalyticsLocation: O
+  } = (0, l.ZP)(), v = y ? s.gtL : o.zx;
+  return (0, r.jsx)(u.Z, {
     className: h,
-    title: m.intl.string(m.t.Vgdusr),
-    showPremiumIcon: b,
+    title: f.intl.string(f.t.Vgdusr),
+    showPremiumIcon: g,
     errors: n,
-    disabled: f,
-    forcedDivider: _,
-    children: (0, i.jsxs)("div", {
-      className: p.buttonsContainer,
-      children: [(0, i.jsx)(C, {
-        className: s()({
-          [p.buttonHighlighted]: j
+    disabled: m,
+    forcedDivider: b,
+    children: (0, r.jsxs)("div", {
+      className: _.buttonsContainer,
+      children: [(0, r.jsx)(v, {
+        className: a()({
+          [_.buttonHighlighted]: y
         }),
-        size: a.zx.Sizes.SMALL,
+        size: o.zx.Sizes.SMALL,
         onClick: () => (0, c.$r)({
-          uploadType: u.pC.BANNER,
-          analyticsSource: E,
-          guildId: g,
-          isTryItOutFlow: x
+          uploadType: d.pC.BANNER,
+          analyticsSource: O,
+          guildId: p,
+          isTryItOutFlow: E
         }),
-        children: m.intl.string(m.t.N0bC3N)
-      }), t && (0, i.jsx)("div", {
+        children: f.intl.string(f.t.N0bC3N)
+      }), t && (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
-        className: p.removeButton,
-        children: (0, i.jsx)(l.zxk, {
+        className: _.removeButton,
+        children: (0, r.jsx)(s.zxk, {
           variant: "secondary",
           size: "sm",
-          text: null != g ? m.intl.string(m.t.jHlJNT) : m.intl.string(m.t.tT9n7O),
-          onClick: () => r(null)
+          text: null != p ? f.intl.string(f.t.jHlJNT) : f.intl.string(f.t.tT9n7O),
+          onClick: () => i(null)
         })
       })]
     })

@@ -1,8 +1,6 @@
-/** Chunk was on 88712 **/
-/** chunk id: 552282, original params: e,t,n (module,exports,require) **/
-require.d(exports, {
-  Z: () => r
-});
+/** Chunk was on web.js **/
+/** chunk id: 552282, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 
 function r(e) {
   var t;
@@ -11,3 +9,6 @@ function r(e) {
     name: null != (t = e.name) ? t : ""
   } : null
 }
+require.d(exports, {
+  Z: () => r
+})

@@ -55,11 +55,11 @@ function v(e) {
   } = (0, m.KZ)(), {
     analyticsLocations: S,
     newestAnalyticsLocation: A
-  } = (0, l.ZP)(s.Z.USER_PROFILE_OVERFLOW_MENU), N = c.J.useExperiment({
+  } = (0, l.ZP)(s.Z.USER_PROFILE_OVERFLOW_MENU), C = c.J.useExperiment({
     location: "UserSettingsAuthedApps"
   }, {
     autoTrackExposure: true
-  }).enabled, C = (0, a.e7)([g.Z], () => g.Z.getUserProfile(t.id)), R = null == C ? true : C.application, P = (0, f.Z)({
+  }).enabled, N = (0, a.e7)([g.Z], () => g.Z.getUserProfile(t.id)), R = null == N ? true : N.application, P = (0, f.Z)({
     user: t,
     application: null != R ? R : true,
     guildId: n,
@@ -94,7 +94,7 @@ function v(e) {
       action: "UNIGNORE",
       analyticsLocations: S
     })
-  }), L = (0, h.Z)({
+  }), x = (0, h.Z)({
     user: t,
     guildId: n,
     location: A,
@@ -103,16 +103,16 @@ function v(e) {
       action: "REPORT",
       analyticsLocations: S
     })
-  }), x = (0, d.Z)({
+  }), L = (0, d.Z)({
     id: null == R ? true : R.id,
     label: b.intl.string(b.t["+NP/b2"]),
     onSuccess: () => T({
       action: "COPY_APP_ID",
       analyticsLocations: S
     })
-  }), M = [
-    [y], N ? [P] : [],
-    [D, w, L],
+  }), j = [
+    [y], C ? [P] : [],
+    [D, w, x],
     [(0, u.Z)({
       application: R,
       label: b.intl.string(b.t.WqhZsr),
@@ -120,9 +120,9 @@ function v(e) {
         action: "COPY_APP_LINK",
         analyticsLocations: S
       })
-    }), x]
+    }), L]
   ];
-  return M.every(e => e.every(e => null == e)) ? null : (0, r.jsx)(o.yRy, {
+  return j.every(e => e.every(e => null == e)) ? null : (0, r.jsx)(o.yRy, {
     targetElementRef: I,
     renderPopout: e => {
       let {
@@ -133,7 +133,7 @@ function v(e) {
         onSelect: true,
         onClose: t,
         "aria-label": b.intl.string(b.t.AXIHpa),
-        children: M.map((e, t) => (0, r.jsx)(o.kSQ, {
+        children: j.map((e, t) => (0, r.jsx)(o.kSQ, {
           children: e.map(e => e)
         }, t))
       })

@@ -1,13 +1,14 @@
-/** Chunk was on 66181 **/
-/** chunk id: 736519, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 736519, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  L: () => g,
+  L: () => p,
   Z: () => h
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk780384 = require("./780384.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -16,43 +17,43 @@ var Chunk120356 = require("./120356.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk827154 = require("./827154.js");
-let g = e => e === u.Si.TIER_0 ? m.intl.string(m.t.rk4Uu7) : m.intl.string(m.t.Ve9Ge3),
+let p = e => e === d.Si.TIER_0 ? f.intl.string(f.t.rk4Uu7) : f.intl.string(f.t.Ve9Ge3),
   h = e => {
     let {
       className: t,
       textOptions: n,
-      color: r,
-      look: u,
-      hideIcon: m,
+      color: i,
+      look: d,
+      hideIcon: f,
       subscriptionTier: h,
-      premiumModalAnalyticsLocation: f,
-      giftMessage: b,
-      onClick: x
-    } = e, _ = (0, c.ZP)(), j = g(h);
-    return (0, i.jsx)(d.Z, {
+      premiumModalAnalyticsLocation: m,
+      giftMessage: g,
+      onClick: E
+    } = e, b = (0, c.ZP)(), y = p(h);
+    return (0, r.jsx)(u.Z, {
       isGift: true,
       subscriptionTier: h,
-      premiumModalAnalyticsLocation: f,
-      giftMessage: b,
-      onClick: x,
+      premiumModalAnalyticsLocation: m,
+      giftMessage: g,
+      onClick: E,
       children: e => {
         var c;
         let {
-          onClick: d
+          onClick: u
         } = e;
-        return (0, i.jsxs)(l.zx, {
-          innerClassName: p.innerGiftButton,
-          color: null != r ? r : (0, a.wj)(_) ? l.Tt.WHITE : l.Tt.BRAND,
-          look: null != u ? u : l.iL.OUTLINED,
-          className: s()(t, p.giftButton),
-          onClick: d,
-          children: [!m && (0, i.jsx)(o.OgN, {
+        return (0, r.jsxs)(s.zx, {
+          innerClassName: _.innerGiftButton,
+          color: null != i ? i : (0, o.wj)(b) ? s.Tt.WHITE : s.Tt.BRAND,
+          look: null != d ? d : s.iL.OUTLINED,
+          className: a()(t, _.giftButton),
+          onClick: u,
+          children: [!f && (0, r.jsx)(l.OgN, {
             size: "md",
             color: "currentColor",
-            className: p.giftIcon
-          }), (0, i.jsx)("span", {
-            className: s()(p.buttonText, null == n ? true : n.textClassName),
-            children: null != (c = null == n ? true : n.textOverride) ? c : j
+            className: _.giftIcon
+          }), (0, r.jsx)("span", {
+            className: a()(_.buttonText, null == n ? true : n.textClassName),
+            children: null != (c = null == n ? true : n.textOverride) ? c : y
           })]
         })
       }

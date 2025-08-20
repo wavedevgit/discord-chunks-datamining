@@ -130,10 +130,10 @@ class T extends(r = Chunk647438.Component) {
       rows: T,
       flex: S,
       autosize: A,
-      required: N,
-      onInvalid: C,
+      required: C,
+      onInvalid: N,
       inputRef: R
-    } = this.props, P = A ? Chunk179240.l : "textarea", w = this.hasError(), D = null != (t = this.props["aria-labelledby"]) ? exports : null == (e = this.context) ? true : module.titleId, L = this.getAriaDescribedBy();
+    } = this.props, P = A ? Chunk179240.l : "textarea", w = this.hasError(), D = null != (t = this.props["aria-labelledby"]) ? exports : null == (e = this.context) ? true : module.titleId, x = this.getAriaDescribedBy();
     return (0, Chunk951288.jsxs)("div", {
       className: s()(Chunk979712.inputWrapper, {
         [Chunk8542.flex]: S
@@ -151,7 +151,7 @@ class T extends(r = Chunk647438.Component) {
               [Chunk8542.resizeable]: b
             }),
             "aria-labelledby": D,
-            "aria-describedby": L,
+            "aria-describedby": x,
             "aria-invalid": w,
             style: {
               paddingRight: this.getPaddingRight()
@@ -164,12 +164,12 @@ class T extends(r = Chunk647438.Component) {
             minLength: Chunk772848,
             maxLength: Chunk993365 ? true : Chunk15127,
             spellCheck: E,
-            required: N,
+            required: C,
             onChange: this.onChange,
             onBlur: this.onBlur,
             onFocus: this.onFocus,
             onKeyDown: this.onKeyDown,
-            onInvalid: C,
+            onInvalid: N,
             rows: T,
             ref: R
           })

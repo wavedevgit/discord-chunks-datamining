@@ -1,5 +1,6 @@
-/** Chunk was on 88712 **/
-/** chunk id: 55311, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 55311, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   Z: () => o
 });
@@ -9,8 +10,8 @@ var Chunk846027 = require("./846027.js"),
 
 function o(e, t) {
   if (e) return void i.Z.show({
-    title: l.intl.string(l.t.QZ7WSU),
-    body: l.intl.string(l.t.Tl9JpK)
+    title: a.intl.string(a.t.QZ7WSU),
+    body: a.intl.string(a.t.Tl9JpK)
   });
   r.Z.toggleSelfDeaf({
     location: t

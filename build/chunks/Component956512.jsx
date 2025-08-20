@@ -1,7 +1,8 @@
-/** Chunk was on 26434 **/
-/** chunk id: 956512, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 956512, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => y
+  Z: () => C
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -25,97 +26,107 @@ var Chunk442837 = require("./442837.js"),
   Chunk658805 = require("./658805.js"),
   Chunk388032 = require("./388032.jsx");
 
-function y(e) {
+function I(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function T(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      I(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function S(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function A(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+
+function C(e) {
   let t, {
-      currentUserId: y,
-      message: x,
-      application: j,
-      channel: I,
-      analyticsLocations: S,
-      onView: T
+      currentUserId: I,
+      message: S,
+      application: C,
+      channel: N,
+      analyticsLocations: R,
+      onView: P
     } = e,
     {
-      staticBannerSrc: P,
-      videoBannerSrc: N,
-      bannerAspectRatio: A
-    } = (0, d.E)(j),
-    w = h.ZP.getApplicationIconURL({
-      id: j.id,
-      icon: j.icon
+      staticBannerSrc: w,
+      videoBannerSrc: D,
+      bannerAspectRatio: x
+    } = (0, d.E)(C),
+    L = g.ZP.getApplicationIconURL({
+      id: C.id,
+      icon: C.icon
     }),
-    Z = (0, i.e7)([p.ZP, g.Z], () => null != x.application ? p.ZP.getVisibleRunningGames().find(e => {
+    j = (0, i.e7)([f.ZP, h.Z], () => null != S.application ? f.ZP.getVisibleRunningGames().find(e => {
       var t;
       let {
         id: n,
         name: r
       } = e;
-      return null != x.application && (null != n ? n : null == (t = g.Z.getGameByName(r)) ? true : t.id) === x.application.id
+      return null != S.application && (null != n ? n : null == (t = h.Z.getGameByName(r)) ? true : t.id) === S.application.id
     }) : null),
-    R = (0, i.e7)([f.Z], () => f.Z.getCurrentUserActiveStream()),
-    D = (0, i.e7)([_.Z], () => _.Z.getChannelId()),
-    L = E.default.extractTimestamp(x.id) + C.e < Date.now(),
-    M = (0, r.jsx)(r.Fragment, {
-      children: (0, o._0)(x, j, I, y, false)
+    M = (0, i.e7)([p.Z], () => p.Z.getCurrentUserActiveStream()),
+    k = (0, i.e7)([m.Z], () => m.Z.getChannelId()),
+    U = b.default.extractTimestamp(S.id) + y.e < Date.now(),
+    G = (0, r.jsx)(r.Fragment, {
+      children: (0, o._0)(S, C, N, I, false)
     }),
     {
-      newestAnalyticsLocation: k
-    } = (0, s.ZP)(S, a.Z.REQUEST_TO_STREAM_INVITE_EMBED);
-  return L ? t = O.intl.string(v.default.u4QmWl) : null != R ? t = O.intl.string(v.default.P0wwmJ) : D !== I.id ? t = O.intl.string(v.default.qRXatr) : null == Z && (t = O.intl.string(v.default["43zohI"])), (0, r.jsx)(c.W, {
-    header: O.intl.string(v.default.DKHheX),
-    title: j.name,
-    staticBannerSrc: P,
-    videoBannerSrc: N,
-    bannerAspectRatio: A,
-    iconSrc: null != w ? w : true,
-    info: M,
-    actions: x.author.id === y ? [] : [{
-      label: O.intl.string(v.default["5+172d"]),
+      newestAnalyticsLocation: B
+    } = (0, l.ZP)(R, s.Z.REQUEST_TO_STREAM_INVITE_EMBED);
+  return U ? t = v.intl.string(O.default.u4QmWl) : null != M ? t = v.intl.string(O.default.P0wwmJ) : k !== N.id ? t = v.intl.string(O.default.qRXatr) : null == j && (t = v.intl.string(O.default["43zohI"])), (0, r.jsx)(c.W, {
+    header: v.intl.string(O.default.DKHheX),
+    title: C.name,
+    staticBannerSrc: w,
+    videoBannerSrc: D,
+    bannerAspectRatio: x,
+    iconSrc: null != L ? L : true,
+    info: G,
+    actions: S.author.id === I ? [] : [{
+      label: v.intl.string(O.default["5+172d"]),
       trackingArea: u.j_.STREAM,
       disabledReason: t,
       onClick: () => {
-        null != Z && ((0, b.isWindows)() ? (0, m.Z)(Z.pid) : (0, l.ZDy)(async () => {
+        null != j && ((0, E.isWindows)() ? (0, _.Z)(j.pid) : (0, a.ZDy)(async () => {
           let {
             default: e
-          } = await Promise.all([n.e("38697"), n.e("46746"), n.e("34983")]).then(n.bind(n, 60594));
-          return t => {
-            var n, i;
-            return (0, r.jsx)(e, (n = function(e) {
-              for (var t = 1; t < arguments.length; t++) {
-                var n = null != arguments[t] ? arguments[t] : {},
-                  r = Object.keys(n);
-                "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                  return Object.getOwnPropertyDescriptor(n, e).enumerable
-                }))), r.forEach(function(t) {
-                  var r;
-                  r = n[t], t in e ? Object.defineProperty(e, t, {
-                    value: r,
-                    enumerable: true,
-                    configurable: true,
-                    writable: true
-                  }) : e[t] = r
-                })
-              }
-              return e
-            }({}, t), i = i = {
-              analyticsLocation: k
-            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
-              var n = Object.keys(e);
-              if (Object.getOwnPropertySymbols) {
-                var r = Object.getOwnPropertySymbols(e);
-                n.push.apply(n, r)
-              }
-              return n
-            })(Object(i)).forEach(function(e) {
-              Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
-            }), n))
-          }
+          } = await Promise.all([n.e("38697"), n.e("46746"), n.e("79839")]).then(n.bind(n, 60594));
+          return t => (0, r.jsx)(e, A(T({}, t), {
+            analyticsLocation: B
+          }))
         }))
       }
     }],
     trackingConfig: {
-      id: j.id,
+      id: C.id,
       linkType: u.Un.REQUEST_TO_STREAM,
-      onView: T
+      onView: P
     }
   })
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 69003 **/
+/** Chunk was on 91488 **/
 /** chunk id: 831218, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => F
@@ -282,14 +282,14 @@ class V extends(r = Chunk647438.Component) {
           children: r => (0, i.jsx)(h.aVo, U({
             fade: true,
             innerRole: o,
-            innerAriaLabel: L.intl.string(L.t.YUU0RE),
+            innerAriaLabel: M.intl.string(M.t.YUU0RE),
             innerTag: "ul",
             ref: e => {
               var t;
               this._list = e, this.props.listRef.current = e, l.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
             },
             onScroll: this.handleScroll,
-            className: M.scroller,
+            className: L.scroller,
             sectionHeight: this.getSectionHeight,
             paddingTop: t,
             paddingBottom: 8,
@@ -323,7 +323,7 @@ class V extends(r = Chunk647438.Component) {
       let o = Math.round((t.offsetHeight - 44 * i) / 44),
         a = o > n.length ? n.slice(0, o + 1) : n,
         s = a.map(e => null != r[e] ? r[e].getRecipientId() : null),
-        c = n.some(e => (0, v.Z)(e)),
+        c = n.some(e => (0, j.Z)(e)),
         u = {
           num_users_visible: a.length,
           num_users_visible_with_mobile_indicator: s.filter(e => null != e && A.Z.isMobileOnline(e)).length
@@ -352,7 +352,7 @@ class V extends(r = Chunk647438.Component) {
         totalRowCount: o,
         preRenderedChildren: a
       } = this.state, s = r[n[t]];
-      return null == s ? null : (0, i.jsx)(j.W, {
+      return null == s ? null : (0, i.jsx)(v.W, {
         channel: s,
         selected: s.id === l,
         "aria-posinset": a + t + 1,
@@ -383,25 +383,25 @@ class V extends(r = Chunk647438.Component) {
         createDMCTAButtonVariant: r
       } = this.props;
       return 0 !== t && n ? (0, i.jsxs)(C.Z, {
-        className: a()(M.privateChannelsHeaderContainer, {
-          [M.tall]: "side" === r
+        className: a()(L.privateChannelsHeaderContainer, {
+          [L.tall]: "side" === r
         }),
         children: [(0, i.jsx)("span", {
-          className: M.headerText,
-          children: L.intl.string(L.t.YUU0RE)
-        }), null == r && (0, i.jsx)(P.Z, {
+          className: L.headerText,
+          children: M.intl.string(M.t.YUU0RE)
+        }), null == r && (0, i.jsx)(I.Z, {
           location: "PrivateChannelsList-CreateDMButton",
-          tooltip: L.intl.string(L.t["6Urw1t"]),
+          tooltip: M.intl.string(M.t["6Urw1t"]),
           tooltipPosition: "top",
           popoutAlign: "left",
-          className: M.privateChannelRecipientsInviteButtonIconContainer,
-          iconClassName: M.privateChannelRecipientsInviteButtonIcon,
+          className: L.privateChannelRecipientsInviteButtonIconContainer,
+          iconClassName: L.privateChannelRecipientsInviteButtonIcon,
           icon: h.BRu,
           subscribeToGlobalHotkey: true
-        }), "side" === r && (0, i.jsx)(P.l, {
+        }), "side" === r && (0, i.jsx)(I.l, {
           popoutAlign: "left",
           icon: h.kL_,
-          text: L.intl.string(L.t["6Urw1t"]),
+          text: M.intl.string(M.t["6Urw1t"]),
           size: "sm",
           subscribeToGlobalHotkey: true
         })]
@@ -437,20 +437,20 @@ let F = e => {
     showDMHeader: a,
     listScrollerRef: s,
     createDMCTAButtonVariant: c
-  } = e, f = l.Children.count(o), g = T.Z.getMutablePrivateChannels(), O = (0, N.k1)(g), y = (0, p.Wu)([R.Z, I.Z, w.Z], () => {
+  } = e, f = l.Children.count(o), g = T.Z.getMutablePrivateChannels(), O = (0, N.k1)(g), y = (0, p.Wu)([R.Z, P.Z, w.Z], () => {
     let e = R.Z.getPrivateChannelIds();
-    return (0, N.tU)(e, [I.Z, w.Z])
+    return (0, N.tU)(e, [P.Z, w.Z])
   }, []);
-  (0, S.z)(x.R);
+  (0, S.z)(E.R);
   let {
-    analyticsLocations: v
-  } = (0, _.ZP)(b.Z.CONTACTS_LIST), j = (0, Z.Ll)(), {
+    analyticsLocations: j
+  } = (0, _.ZP)(b.Z.CONTACTS_LIST), v = (0, Z.Ll)(), {
     keyboardModeEnabled: C,
-    version: P
+    version: I
   } = (0, p.cj)([m.Z, T.Z], () => ({
     keyboardModeEnabled: m.Z.keyboardModeEnabled,
     version: null != n ? "".concat(n, ":").concat(T.Z.getPrivateChannelsVersion()) : T.Z.getPrivateChannelsVersion()
-  })), A = l.useRef(null), D = null != s ? s : A, L = l.useCallback(e => {
+  })), A = l.useRef(null), D = null != s ? s : A, M = l.useCallback(e => {
     let t = D.current,
       n = document.querySelector(e);
     null != t && null != n && t.scrollIntoViewNode({
@@ -464,7 +464,7 @@ let F = e => {
         })
       }
     })
-  }, [D]), M = l.useCallback(() => new Promise(e => {
+  }, [D]), L = l.useCallback(() => new Promise(e => {
     let t = D.current;
     if (null == t) return e();
     t.scrollToTop({
@@ -478,16 +478,16 @@ let F = e => {
         requestAnimationFrame(() => setTimeout(e, 100))
       }
     })
-  }), [D]), B = (0, E.Dt)(), F = (0, d.ZP)({
+  }), [D]), B = (0, x.Dt)(), F = (0, d.ZP)({
     id: "private-channels-".concat(B),
     isEnabled: C,
-    scrollToStart: M,
+    scrollToStart: L,
     scrollToEnd: k,
     defaultFocused: (f + +!!a).toString(),
-    setFocus: L
+    setFocus: M
   });
   return (0, i.jsx)(_.Gt, {
-    value: v,
+    value: j,
     children: (0, i.jsx)(u.bG, {
       navigator: F,
       children: (0, i.jsx)(V, G(U({}, e), {
@@ -495,8 +495,8 @@ let F = e => {
         channels: O,
         privateChannelIds: y,
         listRef: D,
-        theme: null != j ? j : r,
-        version: P,
+        theme: null != v ? v : r,
+        version: I,
         createDMCTAButtonVariant: c
       }))
     })

@@ -1,4 +1,4 @@
-/** Chunk was on 36499 **/
+/** Chunk was on 5665 **/
 /** chunk id: 252032, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -24,7 +24,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk224837 = require("./224837.js"),
   Chunk360514 = require("./360514.js");
 
-function j(e) {
+function O(e) {
   let {
     value: t,
     channel: n
@@ -38,7 +38,7 @@ function j(e) {
   })
 }
 
-function O(e) {
+function j(e) {
   let {
     channel: t,
     message: n
@@ -46,7 +46,7 @@ function O(e) {
     id: c
   } = t, {
     id: u
-  } = n, m = t.getGuildId(), b = (0, l.e7)([h.Z], () => h.Z.getGuild(m), [m]), y = t.type === C.d4z.GUILD_ANNOUNCEMENT, O = null != b && b.features.has(C.oNc.NEWS), S = y && O, {
+  } = n, m = t.getGuildId(), b = (0, l.e7)([h.Z], () => h.Z.getGuild(m), [m]), y = t.type === C.d4z.GUILD_ANNOUNCEMENT, j = null != b && b.features.has(C.oNc.NEWS), S = y && j, {
     editingMessage: P,
     editingTextValue: I,
     editingRichValue: Z
@@ -115,7 +115,7 @@ function O(e) {
     onChange: a.Z.updateEditMessage,
     onConfirmDelete: o.Z.confirmDelete,
     saveMessage: N,
-    validateEdit: j,
+    validateEdit: O,
     children: A
   }) : null
 }
@@ -160,7 +160,7 @@ function S(e, t, n) {
     channel: l,
     compact: a
   } = e;
-  return n ? (0, r.jsx)(O, {
+  return n ? (0, r.jsx)(j, {
     channel: l,
     message: i
   }) : (0, r.jsx)(y.ZP, {

@@ -33,7 +33,7 @@ function h(e) {
     isEligibleForTrial: I,
     enablePremiumBrandRefresh: T,
     isDisplayingWowMomentConfirmation: S
-  } = e, A = (0, i.e7)([o.Z], () => o.Z.useReducedMotion), N = () => {
+  } = e, A = (0, i.e7)([o.Z], () => o.Z.useReducedMotion), C = () => {
     switch (t) {
       case s.h8.PLAN_SELECT:
         return m === f.p9.TIER_0 ? _.intl.string(_.t.rk4Uu7) : _.intl.string(_.t["7YWj6+"]);
@@ -51,7 +51,7 @@ function h(e) {
     "data-migration-pending": true,
     children: [(0, r.jsx)(a.X6q, {
       variant: "heading-lg/semibold",
-      children: N()
+      children: C()
     }), (0, r.jsx)(a.olH, {
       onClick: g,
       className: p.closeButton,

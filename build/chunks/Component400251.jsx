@@ -1,4 +1,4 @@
-/** Chunk was on 36499 **/
+/** Chunk was on 5665 **/
 /** chunk id: 400251, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => A,
@@ -90,7 +90,7 @@ let T = e => {
       variant: "text-sm/semibold",
       color: "header-primary",
       className: E.addServerText,
-      children: O.intl.string(O.t.H9jxS0)
+      children: j.intl.string(j.t.H9jxS0)
     })]
   })
 };
@@ -107,7 +107,7 @@ function N(e) {
     }),
     children: (0, r.jsxs)(h.ZP, {
       children: [u ? (0, r.jsx)(c.ua7, {
-        text: O.intl.string(O.t.XnuOvL),
+        text: j.intl.string(j.t.XnuOvL),
         hideOnClick: true,
         children: e => {
           var {
@@ -124,7 +124,7 @@ function N(e) {
                 }))
               })
             },
-            "aria-label": O.intl.string(O.t.XnuOvL),
+            "aria-label": j.intl.string(j.t.XnuOvL),
             children: (0, r.jsx)(c.vdY, {
               size: "xs",
               color: "currentColor",
@@ -143,7 +143,7 @@ function N(e) {
             onClick: t
           } = e, n = Z(e, ["onClick"]);
           return (0, r.jsx)(c.ua7, {
-            text: O.intl.string(O.t.UKOtz8),
+            text: j.intl.string(j.t.UKOtz8),
             hideOnClick: true,
             children: e => {
               var {
@@ -154,7 +154,7 @@ function N(e) {
                 onClick: e => {
                   null == i || i(), t(e)
                 },
-                "aria-label": O.intl.string(O.t.UKOtz8),
+                "aria-label": j.intl.string(j.t.UKOtz8),
                 children: (0, r.jsx)(c.xhG, {
                   size: "md",
                   color: "currentColor",
@@ -176,7 +176,7 @@ let A = e => {
     h(true);
     try {
       x ? (0, b.X)(l.guildId) : await d.Z.joinGuild(l.guildId, {
-        source: j.vtS.DIRECTORY_ENTRY
+        source: O.vtS.DIRECTORY_ENTRY
       })
     } finally {
       h(false)
@@ -189,8 +189,8 @@ let A = e => {
     id: l.guildId,
     icon: l.icon,
     size: 40
-  })) ? t : true, T = O.intl.string(O.t.VJlc0d);
-  return x && (T = O.intl.string(O.t.cqWE2d)), (0, r.jsxs)("div", {
+  })) ? t : true, T = j.intl.string(j.t.VJlc0d);
+  return x && (T = j.intl.string(j.t.cqWE2d)), (0, r.jsxs)("div", {
     className: E.card,
     onContextMenu: e => {
       (0, u.jW)(e, async () => {
@@ -257,7 +257,7 @@ let A = e => {
           }), (0, r.jsx)(c.Text, {
             variant: "text-xs/normal",
             color: "header-secondary",
-            children: O.intl.format(O.t["LC+S+v"], {
+            children: j.intl.format(j.t["LC+S+v"], {
               membersOnline: l.approximatePresenceCount
             })
           })]
@@ -268,7 +268,7 @@ let A = e => {
           }), (0, r.jsx)(c.Text, {
             variant: "text-xs/normal",
             color: "header-secondary",
-            children: O.intl.format(O.t.zRl6XV, {
+            children: j.intl.format(j.t.zRl6XV, {
               count: l.approximateMemberCount
             })
           })]

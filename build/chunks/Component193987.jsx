@@ -1,7 +1,7 @@
-/** Chunk was on 78650 **/
-/** chunk id: 193987, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 99534 **/
+/** chunk id: 193987, original params: t,n,i (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => o
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -10,16 +10,16 @@ var Chunk481060 = require("./481060.js"),
   Chunk665906 = require("./665906.js"),
   Chunk388032 = require("./388032.jsx");
 
-function s(e) {
-  let t = (0, a.Xb)(e),
-    n = e.isLockedThread();
-  if (!(!t || e.isModeratorReportChannel())) return n ? (0, i.jsx)(r.sNh, {
+function o(t) {
+  let n = (0, a.Xb)(t),
+    i = t.isLockedThread();
+  if (!(!n || t.isModeratorReportChannel())) return i ? (0, e.jsx)(l.sNh, {
     id: "unlock-thread",
-    label: e.isForumPost() ? o.intl.string(o.t["/OKSxs"]) : o.intl.string(o.t["jeyb/f"]),
-    action: () => l.Z.unlockThread(e)
-  }) : (0, i.jsx)(r.sNh, {
+    label: t.isForumPost() ? d.intl.string(d.t["/OKSxs"]) : d.intl.string(d.t["jeyb/f"]),
+    action: () => r.Z.unlockThread(t)
+  }) : (0, e.jsx)(l.sNh, {
     id: "lock-thread",
-    label: e.isForumPost() ? o.intl.string(o.t["Ur/0NT"]) : o.intl.string(o.t.HoCqm5),
-    action: () => l.Z.lockThread(e)
+    label: t.isForumPost() ? d.intl.string(d.t["Ur/0NT"]) : d.intl.string(d.t.HoCqm5),
+    action: () => r.Z.lockThread(t)
   })
 }

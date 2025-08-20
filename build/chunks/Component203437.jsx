@@ -1,7 +1,7 @@
 /** Chunk was on 56035 **/
-/** chunk id: 203437, original params: e,t,n (module,exports,require) **/
+/** chunk id: 203437, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => C
+  Z: () => N
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -24,99 +24,99 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk697847 = require("./697847.js");
 
-function N(e) {
+function w(e) {
   let {
-    availableSlots: t,
-    className: n
+    availableSlots: n,
+    className: t
   } = e;
-  return (0, l.jsxs)(o.Text, {
-    className: r()(w.suffixNode, n),
+  return (0, a.jsxs)(s.Text, {
+    className: r()(_.suffixNode, t),
     variant: "text-sm/medium",
     color: "text-primary",
-    children: [(0, l.jsx)(o.gj8, {
+    children: [(0, a.jsx)(s.gj8, {
       size: "md",
       color: "currentColor",
-      className: w.speakerIcon
+      className: _.speakerIcon
     }), j.intl.format(j.t["8Dyg1N"], {
-      slots: t
+      slots: n
     })]
   })
 }
 
-function C(e) {
+function N(e) {
   let {
-    value: t,
-    className: n,
+    value: n,
+    className: t,
     onChange: i
-  } = e, C = (0, s.cj)([m.ZP, f.Z, h.default, d.Z], () => {
+  } = e, N = (0, o.cj)([m.ZP, f.Z, h.default, d.Z], () => {
     let e = {};
-    for (let t of m.ZP.getFlattenedGuildIds()) {
-      let n = d.Z.getGuild(t);
-      null != n && (0, c.Gw)(n, f.Z, h.default).canCreateExpressions && (e[n.id] = n)
+    for (let n of m.ZP.getFlattenedGuildIds()) {
+      let t = d.Z.getGuild(n);
+      null != t && (0, c.Gw)(t, f.Z, h.default).canCreateExpressions && (e[t.id] = t)
     }
     return e
-  }), S = (0, s.cj)([b.Z], () => {
+  }), C = (0, o.cj)([b.Z], () => {
     let e = {};
-    for (let [n, l] of p.default.entries(C)) {
-      var t;
-      let a = (0, g.yw)(l, null != (t = b.Z.getSoundsForGuild(n)) ? t : v.Hy, l.premiumTier);
-      e[n] = a
+    for (let [t, a] of p.default.entries(N)) {
+      var n;
+      let l = (0, g.yw)(a, null != (n = b.Z.getSoundsForGuild(t)) ? n : v.Hy, a.premiumTier);
+      e[t] = l
     }
     return e
-  }, [C]);
-  a.useEffect(() => {
+  }, [N]);
+  l.useEffect(() => {
     (0, y.w)()
   }, []);
-  let O = a.useMemo(() => Object.values(C).map(e => {
+  let S = l.useMemo(() => Object.values(N).map(e => {
       let {
-        name: t,
-        id: n
+        name: n,
+        id: t
       } = e;
       return {
-        label: t,
-        value: n,
-        disabled: S[n] <= 0
+        label: n,
+        value: t,
+        disabled: C[t] <= 0
       }
-    }), [C, S]),
-    E = a.useCallback(e => null == e || "" === e.value ? null : (0, l.jsx)(u.Z, {
-      className: r()(w.guildSelectOptionIcon, {
-        [w.disabledOption]: e.disabled
+    }), [N, C]),
+    O = l.useCallback(e => null == e || "" === e.value ? null : (0, a.jsx)(u.Z, {
+      className: r()(_.guildSelectOptionIcon, {
+        [_.disabledOption]: e.disabled
       }),
-      guild: C[e.value],
+      guild: N[e.value],
       size: u.Z.Sizes.SMOL,
       active: true
-    }), [C]),
-    P = a.useCallback(e => {
-      let t = null == e ? true : e.value;
-      return null == t || "" === t ? null : (0, l.jsx)(N, {
+    }), [N]),
+    E = l.useCallback(e => {
+      let n = null == e ? true : e.value;
+      return null == n || "" === n ? null : (0, a.jsx)(w, {
         className: r()({
-          [w.disabledOption]: null == e ? true : e.disabled
+          [_.disabledOption]: null == e ? true : e.disabled
         }),
-        availableSlots: S[t]
+        availableSlots: C[n]
       })
-    }, [S]),
-    Z = a.useCallback(e => (0, l.jsx)("div", {
+    }, [C]),
+    I = l.useCallback(e => (0, a.jsx)("div", {
       className: r()({
-        [w.disabledOption]: e.disabled
+        [_.disabledOption]: e.disabled
       }),
       children: e.label
     }), []),
-    M = a.useCallback(e => {
-      S[e] <= 0 || i(e)
-    }, [S, i]),
+    P = l.useCallback(e => {
+      C[e] <= 0 || i(e)
+    }, [C, i]),
     k = (() => {
-      let e = S[null != t ? t : x.lds];
-      return null == e || e > 0 ? t : true
+      let e = C[null != n ? n : x.lds];
+      return null == e || e > 0 ? n : true
     })();
-  return (0, l.jsx)(o.VcW, {
-    className: n,
-    onChange: M,
+  return (0, a.jsx)(s.VcW, {
+    className: t,
+    onChange: P,
     value: k,
     multi: false,
-    options: O,
-    renderOptionPrefix: E,
-    renderOptionSuffix: P,
-    renderOptionLabel: Z,
-    placeholder: 0 === O.length ? j.intl.string(j.t.O3i2gY) : j.intl.string(j.t.CunCMD)
+    options: S,
+    renderOptionPrefix: O,
+    renderOptionSuffix: E,
+    renderOptionLabel: I,
+    placeholder: 0 === S.length ? j.intl.string(j.t.O3i2gY) : j.intl.string(j.t.CunCMD)
   })
 }

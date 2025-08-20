@@ -133,7 +133,7 @@ let S = [Chunk409813.h8.PAYMENT_ELEMENT],
       onChange: g
     }, u))
   }),
-  N = Chunk647438.memo(function(e) {
+  C = Chunk647438.memo(function(e) {
     var {
       options: t,
       renderWithoutElement: n,
@@ -167,7 +167,7 @@ let S = [Chunk409813.h8.PAYMENT_ELEMENT],
       children: d
     })
   }),
-  C = e => {
+  N = e => {
     let {
       step: t,
       billingAddressInfo: n,
@@ -197,7 +197,7 @@ let S = [Chunk409813.h8.PAYMENT_ELEMENT],
         }))
       }), (0, r.jsx)("div", {
         className: s()(E.addressElementContainer, m ? E.visible : E.hidden),
-        children: (0, r.jsx)(N, v(y({}, l), {
+        children: (0, r.jsx)(C, v(y({}, l), {
           renderWithoutElement: true,
           billingAddressInfo: n
         }))
@@ -225,7 +225,7 @@ let S = [Chunk409813.h8.PAYMENT_ELEMENT],
     }) : (0, r.jsx)(a.Elements, {
       stripe: c,
       options: y({}, i),
-      children: (0, r.jsx)(C, y({}, n))
+      children: (0, r.jsx)(N, y({}, n))
     })
   },
   P = ["city", "country", "line1"],

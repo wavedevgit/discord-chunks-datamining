@@ -1,7 +1,8 @@
-/** Chunk was on 69003 **/
-/** chunk id: 441729, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 441729, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => m
 });
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
@@ -15,7 +16,7 @@ function o(e, t, n) {
   }) : e[t] = n, e
 }
 
-function a(e) {
+function s(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -28,65 +29,75 @@ function a(e) {
   return e
 }
 
-function s(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
-    }
-    return n
-  })(Object(t)).forEach(function(n) {
+function l(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function c(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : l(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let c = {
+let u = {
     speechRate: 1,
     currentMessage: null
   },
-  u = c;
-class d extends(r = Chunk442837.ZP.DeviceSettingsStore) {
+  d = u;
+
+function f(e) {
+  let {
+    messageId: t,
+    channelId: n
+  } = e;
+  d = c(s({}, d), {
+    currentMessage: {
+      messageId: t,
+      channelId: n
+    }
+  })
+}
+
+function _() {
+  d = c(s({}, d), {
+    currentMessage: null
+  })
+}
+
+function p(e) {
+  d = c(s({}, d), {
+    speechRate: e.speechRate
+  })
+}
+class h extends(r = Chunk442837.ZP.DeviceSettingsStore) {
   initialize(e) {
-    u = a({}, c, null != e ? e : null)
+    d = s({}, u, null != e ? e : null)
   }
   isSpeakingMessage(e, t) {
     let {
       currentMessage: n
-    } = u;
+    } = d;
     return null !== n && n.channelId === e && n.messageId === t
   }
   get currentMessage() {
-    return u.currentMessage
+    return d.currentMessage
   }
   get speechRate() {
-    return u.speechRate
+    return d.speechRate
   }
   getUserAgnosticState() {
-    return u
+    return d
   }
 }
-o(d, "displayName", "TTSStore"), o(d, "persistKey", "TTSStore"), o(d, "migrations", []);
-let p = new d(Chunk570140.Z, __OVERLAY__ ? {} : {
-  SPEAKING_MESSAGE: function(e) {
-    let {
-      messageId: t,
-      channelId: n
-    } = e;
-    u = s(a({}, u), {
-      currentMessage: {
-        messageId: t,
-        channelId: n
-      }
-    })
-  },
-  STOP_SPEAKING: function() {
-    u = s(a({}, u), {
-      currentMessage: null
-    })
-  },
-  SET_TTS_SPEECH_RATE: function(e) {
-    u = s(a({}, u), {
-      speechRate: e.speechRate
-    })
-  }
+o(h, "displayName", "TTSStore"), o(h, "persistKey", "TTSStore"), o(h, "migrations", []);
+let m = new h(Chunk570140.Z, __OVERLAY__ ? {} : {
+  SPEAKING_MESSAGE: f,
+  STOP_SPEAKING: _,
+  SET_TTS_SPEECH_RATE: p
 })

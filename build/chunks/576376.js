@@ -1,12 +1,14 @@
-/** Chunk was on 66181 **/
-/** chunk id: 576376, original params: e,t,n (module,exports,require) **/
-function i(e) {
+/** Chunk was on web.js **/
+/** chunk id: 576376, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+
+function r(e) {
   let t, n = false;
   return function() {
-    for (var i = arguments.length, r = Array(i), s = 0; s < i; s++) r[s] = arguments[s];
-    return n || (n = true, t = e(...r)), t
+    for (var r = arguments.length, i = Array(r), a = 0; a < r; a++) i[a] = arguments[a];
+    return n || (n = true, t = e(...i)), t
   }
 }
 require.d(exports, {
-  h: () => i
+  h: () => r
 }), require("./388685.js")

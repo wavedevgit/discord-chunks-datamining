@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   J9: () => Chunk357280.J,
-  Jt: () => x,
+  Jt: () => L,
   K0: () => P,
   Pd: () => g,
   f$: () => Chunk343817.f$,
@@ -95,7 +95,7 @@ function E(e, t, n, r, o) {
     }), null == (u = t.fields) || u.forEach(e => {
       b.field(e.name, e.value)
     }), null != t.context) {
-    let e = M(t.context);
+    let e = j(t.context);
     null != e && b.set("X-Context-Properties", e)
   }
   null != t.retried && 0 !== t.retried && b.set("X-Failed-Requests", "".concat(t.retried)), null != t.timeout && 0 !== t.timeout && b.timeout(t.timeout), t.binary && b.responseType("blob"), null != t.onRequestProgress && b.on("progress", e => {
@@ -103,7 +103,7 @@ function E(e, t, n, r, o) {
     null == (n = t.onRequestProgress) || n.call(t, e)
   });
   let y = () => {
-    t.backoff = null != t.backoff ? t.backoff : new a.Z, t.retried = (null != t.retried ? t.retried : 0) + 1, t.backoff.fail(() => L(t.url).then(() => E(e, t, n, r, o)))
+    t.backoff = null != t.backoff ? t.backoff : new a.Z, t.retried = (null != t.retried ? t.retried : 0) + 1, t.backoff.fail(() => x(t.url).then(() => E(e, t, n, r, o)))
   };
   null == w || null == (d = w.prepareRequest) || d.call(w, b), b.ok(e => null != e.status), b.then(i => {
     var a, c, u;
@@ -231,14 +231,14 @@ function I(e, t, n) {
 let T = I.bind(null, "get"),
   S = I.bind(null, "post"),
   A = I.bind(null, "put"),
-  N = I.bind(null, "patch"),
-  C = I.bind(null, "del"),
+  C = I.bind(null, "patch"),
+  N = I.bind(null, "del"),
   R = {
     get: T,
     post: S,
     put: A,
-    patch: N,
-    del: C
+    patch: C,
+    del: N
   };
 if (require.g.isServerRendering) {
   let e = (e, t) => Promise.resolve({
@@ -248,7 +248,7 @@ if (require.g.isServerRendering) {
     body: null,
     text: ""
   });
-  T = module, S = module, A = module, N = module, C = module
+  T = module, S = module, A = module, C = module, N = module
 }
 
 function P() {
@@ -260,13 +260,13 @@ let w = null;
 function D(e) {
   w = e
 }
-let L = () => Promise.resolve();
+let x = () => Promise.resolve();
 
-function x(e) {
-  L = e
+function L(e) {
+  x = e
 }
 
-function M(e) {
+function j(e) {
   try {
     return u.from(JSON.stringify(e)).toString("base64")
   } catch (e) {

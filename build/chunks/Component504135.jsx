@@ -71,28 +71,28 @@ function b(e) {
     isFocused: T,
     menuItemProps: S,
     action: A,
-    onClose: N,
-    onFocus: C,
+    onClose: C,
+    onFocus: N,
     className: R,
     focusedClassName: P,
     subMenuIconClassName: w,
     dontCloseOnActionIfHoldingShiftKey: D,
-    dontCloseOnAction: L,
-    iconProps: x,
-    sparkle: M
+    dontCloseOnAction: x,
+    iconProps: L,
+    sparkle: j
   } = e, {
-    onSelect: k,
-    onInteraction: j
+    onSelect: M,
+    onInteraction: k
   } = i.useContext(c.p), U = i.useRef(null), G = i.useCallback(e => {
     var t;
-    if (null == j || j({
+    if (null == k || k({
         type: c.U.DEFAULT
       }), null == A) returnfalse;
-    e.shiftKey && D || L || N(), e.persist(), null == k || k(), (null != (t = e.nativeEvent.view) ? t : window).requestAnimationFrame(() => A(e))
-  }, [A, N, k, D, L, j]);
+    e.shiftKey && D || x || C(), e.persist(), null == M || M(), (null != (t = e.nativeEvent.view) ? t : window).requestAnimationFrame(() => A(e))
+  }, [A, C, M, D, x, k]);
   return i.useEffect(() => {
-    T && ((0, u.F)(U), null == C || C())
-  }, [T, C]), (0, r.jsxs)(s.P, E(m({
+    T && ((0, u.F)(U), null == N || N())
+  }, [T, N]), (0, r.jsxs)(s.P, E(m({
     innerRef: U,
     className: o()(p.item, p.labelContainer, _._[t], R, {
       [p.disabled]: I,
@@ -109,8 +109,8 @@ function b(e) {
       }),
       children: (0, r.jsx)(h, E(m({
         color: "currentColor"
-      }, x), {
-        className: o()(p.icon, null == x ? true : x.className)
+      }, L), {
+        className: o()(p.icon, null == L ? true : L.className)
       }))
     }), (0, r.jsxs)("div", {
       className: p.label,
@@ -129,8 +129,8 @@ function b(e) {
       className: p.iconContainer,
       children: (0, r.jsx)(a, E(m({
         color: "currentColor"
-      }, x), {
-        className: o()(p.icon, null == x ? true : x.className)
+      }, L), {
+        className: o()(p.icon, null == L ? true : L.className)
       }))
     }), v && (0, r.jsxs)("div", {
       className: p.iconContainer,
@@ -138,7 +138,7 @@ function b(e) {
         size: "md",
         color: "currentColor",
         className: o()(p.caret, w)
-      }), M && (0, r.jsx)(f.K1N, {
+      }), j && (0, r.jsx)(f.K1N, {
         className: p.sparkles
       })]
     })]

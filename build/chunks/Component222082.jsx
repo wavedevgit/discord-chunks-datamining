@@ -1,7 +1,7 @@
 /** Chunk was on 85831 **/
 /** chunk id: 222082, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  HY: () => i,
+  HY: () => a,
   nv: () => c,
   xv: () => l
 });
@@ -25,7 +25,7 @@ function c(e) {
   })
 }
 
-function i() {
+function a() {
   return (0, Chunk951288.jsx)("p", {})
 }
 require("./647438.js")

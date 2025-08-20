@@ -2,7 +2,7 @@
 /** chunk id: 455708, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => C
+  Z: () => N
 }), require("./35282.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -63,7 +63,7 @@ function S(e, t) {
   }), e
 }
 let A = e => e.stopPropagation();
-class N extends Chunk647438.PureComponent {
+class C extends Chunk647438.PureComponent {
   componentDidMount() {
     Chunk68405.gK(), document.addEventListener("keydown", this.backToFrontPage), "" !== this.props.query && this.search(this.props.query, Chunk981631.wI2.SEARCH)
   }
@@ -224,7 +224,7 @@ class N extends Chunk647438.PureComponent {
     })
   }
 }
-let C = Chunk647438.forwardRef((e, t) => {
+let N = Chunk647438.forwardRef((e, t) => {
   e.persistSearch || (0, _.ql)("");
   let {
     query: n,
@@ -248,7 +248,7 @@ let C = Chunk647438.forwardRef((e, t) => {
       var e;
       null == (e = g.current) || e.focus()
     }
-  }, [d, g]), (0, r.jsx)(N, S(I({}, e), {
+  }, [d, g]), (0, r.jsx)(C, S(I({}, e), {
     forwardedRef: t,
     query: f,
     resultQuery: a,

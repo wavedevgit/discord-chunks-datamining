@@ -15,11 +15,11 @@ function l(e) {
   } = e;
   switch (n) {
     case "ordered":
-      let i = (l + c.length - 1).toString().length;
+      let a = (l + c.length - 1).toString().length;
       return (0, r.jsx)("ol", {
         start: l,
         style: {
-          "--totalCharacters": i
+          "--totalCharacters": a
         },
         children: t
       });

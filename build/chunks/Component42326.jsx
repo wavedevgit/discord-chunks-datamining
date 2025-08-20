@@ -23,8 +23,8 @@ function g(e) {
     className: n,
     avError: i
   } = e, g = "", {
-    text: S,
-    node: v
+    text: v,
+    node: S
   } = function(e) {
     var t;
     if (null == e) return {
@@ -47,7 +47,7 @@ function g(e) {
       }) : i
     }
   }(i);
-  null != t && null != S ? g = "".concat(t, " ").concat(S) : null != t && (g = t);
+  null != t && null != v ? g = "".concat(t, " ").concat(v) : null != t && (g = t);
   let [h] = l.useState(new o.V7), [b, O] = l.useState(false);
 
   function y() {
@@ -66,11 +66,11 @@ function g(e) {
       children: (0, r.jsxs)("div", {
         onMouseEnter: _,
         onMouseLeave: y,
-        children: [t, null != v && (0, r.jsx)(u.Text, {
+        children: [t, null != S && (0, r.jsx)(u.Text, {
           variant: "text-sm/semibold",
           color: "text-muted",
           className: E.errorCodeMessage,
-          children: v
+          children: S
         })]
       })
     }),

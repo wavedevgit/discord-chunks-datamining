@@ -52,7 +52,7 @@ function B(e, t, n) {
   }) : e[t] = n, e
 }
 
-function V(e) {
+function Z(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -65,7 +65,7 @@ function V(e) {
   return e
 }
 
-function F(e, t) {
+function V(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -76,8 +76,8 @@ function F(e, t) {
   return n
 }
 
-function Z(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : F(Object(t)).forEach(function(n) {
+function F(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : V(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -117,17 +117,17 @@ function K(e) {
     decoration: p,
     onUseNow: h,
     preview: m
-  } = e, g = i.useRef(null), [b, y] = i.useState(null), O = i.useRef(new s.qA), v = (0, c.e7)([_.Z], () => _.Z.useReducedMotion), I = (0, c.e7)([T.default], () => T.default.getCurrentUser()), S = (null == (t = l.userStatus) ? true : t.claimedAt) != null, [A, C] = i.useState(true === m || S ? "claimed" : "loading");
+  } = e, g = i.useRef(null), [b, y] = i.useState(null), O = i.useRef(new s.qA), v = (0, c.e7)([_.Z], () => _.Z.useReducedMotion), I = (0, c.e7)([T.default], () => T.default.getCurrentUser()), S = (null == (t = l.userStatus) ? true : t.claimedAt) != null, [A, N] = i.useState(true === m || S ? "claimed" : "loading");
   i.useEffect(() => {
-    S || true === m || (0, N.QB)(l.id, R.y$.CROSS_PLATFORM, d).then(() => C("claimed")).catch(() => C("error"))
+    S || true === m || (0, C.QB)(l.id, R.y$.CROSS_PLATFORM, d).then(() => N("claimed")).catch(() => N("error"))
   }, [l, d, S, m]);
   let P = () => {
-      C("applying"), h().finally(a)
+      N("applying"), h().finally(a)
     },
     w = true === m && null === p && (null == f ? true : f.skuId) !== "",
     D = null == p && true !== m,
-    x = null == I || D || w || "loading" === A,
-    M = !v && !S && "claimed" === A;
+    L = null == I || D || w || "loading" === A,
+    j = !v && !S && "claimed" === A;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.O_, {
       ref: y,
@@ -140,13 +140,13 @@ function K(e) {
         transitionState: n,
         size: u.CgR.DYNAMIC,
         className: o()(G.rootContainer, {
-          [G.rootContainerLoading]: x
+          [G.rootContainerLoading]: L
         }),
         hideShadow: true,
         parentComponent: "QuestsRewardCollectibleModal",
-        children: "error" === A ? (0, r.jsx)(L.Z, {
+        children: "error" === A ? (0, r.jsx)(x.Z, {
           onClose: a
-        }) : x ? (0, r.jsx)("div", {
+        }) : L ? (0, r.jsx)("div", {
           className: G.loadingIndicatorWrapper,
           children: (0, r.jsx)(u.$jN, {
             type: u.$jN.Type.SPINNING_CIRCLE
@@ -160,11 +160,11 @@ function K(e) {
           onConfirm: P
         })
       })
-    }), M && (0, r.jsx)(E.Z, {
+    }), j && (0, r.jsx)(E.Z, {
       confettiTarget: g.current,
       confettiCanvas: b,
-      sprites: k.CA,
-      colors: k.Br
+      sprites: M.CA,
+      colors: M.Br
     })]
   })
 }
@@ -199,7 +199,7 @@ function q(e) {
     onConfirm: s
   } = e, l = (0, P.fh)(t, P.eC.REWARD).url, c = (0, A.f$)(t.config), {
     fractionalState: d
-  } = (0, m.Z)(), f = d === j.a$.FP_ONLY, _ = (0, C.Qy)(t.config), p = c && !f;
+  } = (0, m.Z)(), f = d === k.a$.FP_ONLY, _ = (0, N.Qy)(t.config), p = c && !f;
   return (0, r.jsxs)("div", {
     className: G.claimedRootContainer,
     children: [(0, r.jsxs)("div", {
@@ -249,7 +249,7 @@ function q(e) {
           text: U.intl.string(U.t.MAS7uL),
           loading: a,
           onClick: s
-        }), (0, A.zK)(t, x.S7.ADDITIONAL_REDEMPTION_INSTRUCTIONS) && (0, r.jsx)(z, {
+        }), (0, A.zK)(t, L.S7.ADDITIONAL_REDEMPTION_INSTRUCTIONS) && (0, r.jsx)(z, {
           quest: t
         }), p && (0, r.jsx)(y.p, {
           className: G.upsell,
@@ -259,7 +259,7 @@ function q(e) {
             }
           }),
           buttonAnalyticsObject: {
-            section: M.jXE.PERMADECOS_MARKETING_UPSELL
+            section: j.jXE.PERMADECOS_MARKETING_UPSELL
           }
         })]
       })
@@ -299,7 +299,7 @@ function Q(e, t, i) {
     let {
       default: a
     } = await Promise.resolve().then(n.bind(n, 920916));
-    return n => (0, r.jsx)(a, Z(V({}, n), {
+    return n => (0, r.jsx)(a, F(Z({}, n), {
       quest: e,
       location: t,
       preview: i

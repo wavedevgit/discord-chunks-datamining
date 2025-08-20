@@ -52,14 +52,14 @@ function g(e, t) {
     initialFrame: v,
     markers: I,
     onBeforeDismount: T
-  } = e, [S, A] = i.useState(null), N = i.useRef(null), C = i.useRef(null), R = i.useRef(null), P = "custom" === g ? {
+  } = e, [S, A] = i.useState(null), C = i.useRef(null), N = i.useRef(null), R = i.useRef(null), P = "custom" === g ? {
     width: E,
     height: b
   } : (0, u.m)(g), w = !(0, _.Z)("lottie_hover_multiple_loop"), D = i.useContext(c.S).reducedMotion.enabled, {
-    enabled: L
+    enabled: x
   } = d.Z.useExperiment({
     location: "LottieIcon web entry point"
-  }), x = D || !L, M = i.useRef(O);
+  }), L = D || !x, j = i.useRef(O);
   return (0, f.zq)(() => {
     var e, t;
     null == T || T({
@@ -68,8 +68,8 @@ function g(e, t) {
   }), i.useImperativeHandle(t, () => ({
     play: e => {
       if (null == R.current) return;
-      let t = null == C.current;
-      if (C.current = e, x) {
+      let t = null == N.current;
+      if (N.current = e, L) {
         let t = I[e];
         R.current.resetSegments(true), R.current.setSegment(t.start + t.duration, t.start + t.duration), R.current.stop()
       } else {
@@ -79,14 +79,14 @@ function g(e, t) {
       }
     },
     stop: () => {
-      if (null == R.current || x) return
+      if (null == R.current || L) return
     },
     stopIfPlaying: e => {
-      null == R.current || x || C.current === e && (R.current.resetSegments(true), R.current.setSegment(I[e].start, I[e].start), R.current.stop())
+      null == R.current || L || N.current === e && (R.current.resetSegments(true), R.current.setSegment(I[e].start, I[e].start), R.current.stop())
     },
     getDuration: e => null == R.current ? null : R.current.getDuration(e),
     getCurrentFrame: () => null == R.current ? null : R.current.currentFrame
-  }), [x, w, I, v]), i.useEffect(() => {
+  }), [L, w, I, v]), i.useEffect(() => {
     null == S && h().then(e => A(e.default))
   }, [S, h]), i.useEffect(() => (Promise.resolve().then(n.t.bind(n, 500923, 23)).then(e => {
     var t, n;
@@ -94,13 +94,13 @@ function g(e, t) {
         default: i
       } = e,
       a = 1 === Object.keys(I).length ? Object.values(I)[0].name : true,
-      o = null != (n = null != (t = C.current) ? t : M.current) ? n : a;
+      o = null != (n = null != (t = N.current) ? t : j.current) ? n : a;
     if (null != o && null != I[o]) {
       let e = I[o];
-      r = [x ? e.start : null != v ? v : e.start, e.start + e.duration]
+      r = [L ? e.start : null != v ? v : e.start, e.start + e.duration]
     }
-    null != N.current && (R.current = i.loadAnimation({
-      container: N.current,
+    null != C.current && (R.current = i.loadAnimation({
+      container: C.current,
       renderer: "svg",
       loop: false,
       autoplay: false,
@@ -110,13 +110,13 @@ function g(e, t) {
   }), () => {
     var e;
     null == (e = R.current) || e.destroy()
-  }), [S, I, v, x]), (0, r.jsx)("div", {
+  }), [S, I, v, L]), (0, r.jsx)("div", {
     style: m({
       "--__lottieIconColor": null != a && "string" == typeof a ? a : null == a ? true : a.css,
       display: "flex"
     }, P),
     className: o()(p.lottieIcon, s ? true : p.lottieIconColors, y),
-    ref: N
+    ref: C
   })
 }
 let E = Chunk647438.forwardRef(g)

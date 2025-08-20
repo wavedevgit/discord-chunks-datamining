@@ -1,31 +1,35 @@
-/** Chunk was on 91584 **/
-/** chunk id: 78359, original params: t,e,r (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 78359, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 var Chunk733359 = require("./733359.js"),
   Chunk102801 = require("./102801.js"),
-  o = function(t, e) {
-    return t === e
+  a = function(e, t) {
+    return e === t
   },
-  a = function(t) {
-    return !!t
+  o = function(e) {
+    return !!e
   },
-  u = [];
-module.exports = function(t) {
-  var e = t.getCharacterList().map(function(t) {
-      return t.getStyle()
+  s = [];
+
+function l(e, t, n) {
+  var s = [];
+  return i(t.map(function(e) {
+    return e.has(n)
+  }).toList(), a, o, function(t, i) {
+    var a = e.getText();
+    s.push({
+      offset: r.strlen(a.slice(0, t)),
+      length: r.strlen(a.slice(t, i)),
+      style: n
+    })
+  }), s
+}
+module.exports = function(e) {
+  var t = e.getCharacterList().map(function(e) {
+      return e.getStyle()
     }).toList(),
-    r = e.flatten().toSet().map(function(r) {
-      var u;
-      return u = [], i(e.map(function(t) {
-        return t.has(r)
-      }).toList(), o, a, function(e, i) {
-        var o = t.getText();
-        u.push({
-          offset: n.strlen(o.slice(0, e)),
-          length: n.strlen(o.slice(e, i)),
-          style: r
-        })
-      }), u
+    n = t.flatten().toSet().map(function(n) {
+      return l(e, t, n)
     });
-  return Array.prototype.concat.apply(u, r.toJS())
+  return Array.prototype.concat.apply(s, n.toJS())
 }

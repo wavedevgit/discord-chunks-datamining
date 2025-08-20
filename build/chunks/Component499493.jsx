@@ -1,7 +1,7 @@
 /** Chunk was on 89311 **/
 /** chunk id: 499493, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => v
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,28 +19,28 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk192025 = require("./192025.js"),
   Chunk226788 = require("./226788.js");
-let j = e => {
+let v = e => {
   let {
     entry: t,
     onClose: n,
     onReaction: l,
-    onRequestOpen: j,
+    onRequestOpen: v,
     disableActivityProfileLinks: O,
-    customCTA: y,
-    popoutClassname: b,
+    customCTA: b,
+    popoutClassname: y,
     popoutPosition: I = "right"
-  } = e, E = i.useRef(null), w = (0, s.e7)([u.Z, c.Z], () => c.Z.getChannel(u.Z.getChannelId())), P = (0, s.e7)([d.default], () => d.default.getUser(t.author_id)), {
+  } = e, P = i.useRef(null), w = (0, s.e7)([u.Z, c.Z], () => c.Z.getChannel(u.Z.getChannelId())), E = (0, s.e7)([d.default], () => d.default.getUser(t.author_id)), {
     nick: N,
     avatar: S
   } = i.useMemo(() => {
-    let e = null == P ? true : P.getAvatarURL(null == w ? true : w.guild_id, 48, false);
+    let e = null == E ? true : E.getAvatarURL(null == w ? true : w.guild_id, 48, false);
     return {
-      nick: m.ZP.getName(null == w ? true : w.guild_id, null == w ? true : w.id, P),
+      nick: m.ZP.getName(null == w ? true : w.guild_id, null == w ? true : w.id, E),
       avatar: e
     }
-  }, [P, w]);
-  return null == P ? null : (0, r.jsx)(o.yRy, {
-    targetElementRef: E,
+  }, [E, w]);
+  return null == E ? null : (0, r.jsx)(o.yRy, {
+    targetElementRef: P,
     position: I,
     renderPopout: e => {
       let {
@@ -48,8 +48,8 @@ let j = e => {
         updatePosition: a
       } = e;
       return (0, r.jsx)("div", {
-        className: b,
-        children: (0, r.jsx)(f.J, {
+        className: y,
+        children: (0, r.jsx)(p.J, {
           entry: t,
           closePopout: i,
           updatePopoutPosition: a,
@@ -64,7 +64,7 @@ let j = e => {
     },
     positionKey: "'content-entry-".concat(t.id),
     onRequestOpen: () => {
-      null == j || j()
+      null == v || v()
     },
     children: e => {
       var n, i;
@@ -86,9 +86,9 @@ let j = e => {
         }
         return e
       }({
-        innerRef: E
+        innerRef: P
       }, e), i = i = {
-        className: h.profileEntryCard,
+        className: j.profileEntryCard,
         children: (0, r.jsx)(o.tEY, {
           offset: {
             top: 4,
@@ -98,15 +98,15 @@ let j = e => {
           },
           children: (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)("img", {
-              className: h.avatar,
+              className: j.avatar,
               src: S,
               alt: x.intl.formatToPlainString(x.t.IzVXxc, {
                 userName: N
               })
             }), (0, r.jsx)("div", {
-              className: h.playerInfo,
+              className: j.playerInfo,
               children: (0, r.jsxs)("div", {
-                className: a()(v.column, v.gapXs),
+                className: a()(h.column, h.gapXs),
                 children: [(0, r.jsx)(o.Text, {
                   variant: "text-md/medium",
                   color: "text-primary",
@@ -114,13 +114,13 @@ let j = e => {
                   children: N
                 }), (0, r.jsx)(g.Gk, {
                   location: g.Gt.APP_LAUNCHER,
-                  children: p.W.map((e, n) => (0, r.jsx)(e, {
+                  children: f.W.map((e, n) => (0, r.jsx)(e, {
                     entry: t
                   }, n))
                 })]
               })
-            }), null != y ? y : (0, r.jsx)("div", {
-              className: h.reactions,
+            }), null != b ? b : (0, r.jsx)("div", {
+              className: j.reactions,
               children: (0, r.jsx)(o.n$P, {
                 size: "sm"
               })

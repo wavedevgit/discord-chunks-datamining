@@ -84,9 +84,9 @@ let p = Chunk647438.forwardRef(function(e, t) {
     I = i.useId(),
     T = null != y ? y : v,
     S = null != b ? null != (n = O.errorId) ? n : I : true,
-    [A, N] = i.useState(true),
-    [C, R] = i.useState(true),
-    P = true !== C;
+    [A, C] = i.useState(true),
+    [N, R] = i.useState(true),
+    P = true !== N;
   return (0, r.jsx)("div", {
     ref: t,
     className: null != _ ? _ : true,
@@ -96,8 +96,8 @@ let p = Chunk647438.forwardRef(function(e, t) {
       errorId: S,
       error: null != b ? b : true,
       isFocused: A,
-      setIsFocused: N,
-      hasValue: C,
+      setIsFocused: C,
+      hasValue: N,
       setHasValue: R,
       children: (0, r.jsxs)("div", {
         className: P ? s.fieldWrapper : true,

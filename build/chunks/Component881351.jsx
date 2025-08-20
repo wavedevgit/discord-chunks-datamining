@@ -1,7 +1,7 @@
 /** Chunk was on 69220 **/
 /** chunk id: 881351, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => I
+  default: () => _
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -29,30 +29,30 @@ var Chunk481060 = require("./481060.js"),
   Chunk332031 = require("./332031.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let I = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
+let _ = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
   let {
     user: t,
     guildId: n,
     channelId: o,
     showMediaItems: a = false,
-    mediaEngineContext: u,
-    onSelect: I,
-    onInteraction: _,
-    appContext: D = E.IlC.APP
+    mediaEngineContext: d,
+    onSelect: _,
+    onInteraction: I,
+    appContext: D = C.IlC.APP
   } = e, U = (0, P.Z)({
     userId: t.id,
     guildId: n,
     channelId: o
   }), A = (0, m.Z)(t.id, D), k = (0, v.Z)({
     user: t
-  }), L = (0, Z.Z)({
+  }), w = (0, Z.Z)({
     user: t,
     guildId: n,
     channelId: o,
     context: D
-  }), N = (0, b.Z)({
+  }), L = (0, b.Z)({
     user: t
-  }), w = (0, S.Z)(t.id), T = (0, x.Z)(t.id), M = (0, y.Z)(t.id, u), V = (0, j.Z)({
+  }), N = (0, S.Z)(t.id), T = (0, x.Z)(t.id), M = (0, y.Z)(t.id, d), V = (0, j.Z)({
     user: t
   }), R = (0, s.Z)(null, t), B = (0, f.Z)({
     user: t
@@ -64,21 +64,21 @@ let I = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
     user: t
   }), J = (0, p.Z)({
     user: t
-  }), W = (0, d.Z)({
+  }), W = (0, u.Z)({
     id: t.id,
-    label: C.intl.string(C.t["/AXYnJ"])
+    label: E.intl.string(E.t["/AXYnJ"])
   }), Q = (0, c.Z)(t), Y = t.isNonUserBot();
   return (0, i.jsxs)(l.v2r, {
     navId: "user-context",
     onClose: r.Zy,
-    "aria-label": C.intl.string(C.t.liqwPD),
-    onSelect: I,
-    onInteraction: _,
+    "aria-label": E.intl.string(E.t.liqwPD),
+    onSelect: _,
+    onInteraction: I,
     children: [!Y && (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(l.kSQ, {
         children: Q
       }), (0, i.jsxs)(l.kSQ, {
-        children: [U, A, k, L, N, w]
+        children: [U, A, k, w, L, N]
       }), a && (0, i.jsx)(l.kSQ, {
         children: T
       }), (0, i.jsx)(l.kSQ, {

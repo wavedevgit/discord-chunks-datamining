@@ -1,13 +1,14 @@
-/** Chunk was on 66181 **/
-/** chunk id: 229269, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 229269, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  f: () => v
+  f: () => A
 }), require("./388685.js"), require("./49124.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk289008 = require("./289008.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk680018 = require("./680018.jsx"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -23,39 +24,46 @@ var Chunk951288 = require("./951288.js"),
   Chunk403645 = require("./403645.js"),
   Chunk818033 = require("./818033.js");
 
-function C(e) {
+function v(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      i = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), i.forEach(function(t) {
-      var i;
-      i = n[t], t in e ? Object.defineProperty(e, t, {
-        value: i,
-        enumerable: true,
-        configurable: true,
-        writable: true
-      }) : e[t] = i
+    }))), r.forEach(function(t) {
+      v(e, t, n[t])
     })
   }
   return e
 }
 
-function O(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-      var i = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, i)
-    }
-    return n
-  })(Object(t)).forEach(function(n) {
+function T(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function S(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function v() {
+function A() {
   return (0, Chunk951288.jsx)(Chunk563132.PaymentContextProvider, {
     stepConfigs: [],
     skuIDs: [],
@@ -66,30 +74,30 @@ function v() {
         color: "text-feedback-info",
         className: Chunk403645.labelSpacing,
         children: "Payment-method-specific components and views may not appear for you unless your browser is supported for that payment method and they have been configured on your browser."
-      }), (0, Chunk951288.jsx)(S, {}), (0, Chunk951288.jsx)(A, {}), (0, Chunk951288.jsx)(L, {})]
+      }), (0, Chunk951288.jsx)(C, {}), (0, Chunk951288.jsx)(D, {}), (0, Chunk951288.jsx)(B, {})]
     })
   })
 }
 
-function S() {
+function C() {
   return (0, Chunk951288.jsxs)(Chunk450272.$0, {
     children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
       variant: "heading-xl/semibold",
       children: "Payment Request Components - Google Pay"
     }), (0, Chunk951288.jsx)(Chunk450272.E_, {
       label: "Google Pay - Default View",
-      children: (0, Chunk951288.jsx)(T, {
+      children: (0, Chunk951288.jsx)(N, {
         paymentRequestWallet: "googlePay"
       })
     }), (0, Chunk951288.jsx)(Chunk450272.E_, {
       label: "Google Pay - Connector View",
-      children: (0, Chunk951288.jsx)(T, {
+      children: (0, Chunk951288.jsx)(N, {
         paymentRequestWallet: "googlePay",
         renderConnectorView: true
       })
     }), (0, Chunk951288.jsx)(Chunk450272.E_, {
       label: "Google Pay - Add Payment Step Body Connector View",
-      children: (0, Chunk951288.jsx)(I, {
+      children: (0, Chunk951288.jsx)(P, {
         paymentRequestWallet: "googlePay"
       })
     }), (0, Chunk951288.jsx)(Chunk481060.X6q, {
@@ -97,101 +105,103 @@ function S() {
       children: "Payment Request Components - Apple Pay"
     }), (0, Chunk951288.jsx)(Chunk450272.E_, {
       label: "Apple Pay - Default View",
-      children: (0, Chunk951288.jsx)(T, {
+      children: (0, Chunk951288.jsx)(N, {
         paymentRequestWallet: "applePay"
       })
     }), (0, Chunk951288.jsx)(Chunk450272.E_, {
       label: "Apple Pay - Connector View",
-      children: (0, Chunk951288.jsx)(T, {
+      children: (0, Chunk951288.jsx)(N, {
         renderConnectorView: true,
         paymentRequestWallet: "applePay"
       })
     }), (0, Chunk951288.jsx)(Chunk450272.E_, {
       label: "Apple Pay - Add Payment Step Body Connector View",
-      children: (0, Chunk951288.jsx)(I, {
+      children: (0, Chunk951288.jsx)(P, {
         paymentRequestWallet: "applePay"
       })
     })]
   })
 }
 
-function T(e) {
-  let t = r.useRef(null),
+function N(e) {
+  let t = i.useRef(null),
     n = {
-      paymentLabel: _.intl.string(_.t.ZURqX1),
+      paymentLabel: b.intl.string(b.t.ZURqX1),
       paymentRequestRef: t,
       onStripePaymentMethodReceived: () => {},
       onPaymentRequestFailure: () => {},
       onValidPaymentRequest: () => {},
       onChooseType: () => {},
-      loadingComponent: (0, i.jsx)(d.$jN, {
+      loadingComponent: (0, r.jsx)(u.$jN, {
         style: {
           marginTop: 16
         },
-        type: d.RAz.PULSING_ELLIPSIS
+        type: u.RAz.PULSING_ELLIPSIS
       })
     };
-  return e.renderStepBody ? (0, i.jsx)(f.t, C({}, n, e)) : "applePay" === e.paymentRequestWallet ? (0, i.jsx)(m.Ch, C({}, n, e)) : (0, i.jsx)(m.Tr, C({}, n, e))
+  return e.renderStepBody ? (0, r.jsx)(m.t, I({}, n, e)) : "applePay" === e.paymentRequestWallet ? (0, r.jsx)(f.Ch, I({}, n, e)) : (0, r.jsx)(f.Tr, I({}, n, e))
 }
 
-function N(e) {
+function R(e) {
   let {
     children: t,
     footer: n,
-    className: r
+    className: i
   } = e;
-  return (0, i.jsx)("div", {
-    className: l()(E.root, E.focusLock, E.small, E.rootWithShadow, j.modal, r),
-    "aria-label": _.intl.string(_.t.eQ2bLi),
-    children: (0, i.jsxs)("form", {
-      className: j.form,
+  return (0, r.jsx)("div", {
+    className: s()(O.root, O.focusLock, O.small, O.rootWithShadow, y.modal, i),
+    "aria-label": b.intl.string(b.t.eQ2bLi),
+    children: (0, r.jsxs)("form", {
+      className: y.form,
       onSubmit: e => {
         e.preventDefault()
       },
-      children: [(0, i.jsx)(d.hzk, {
-        className: j.scrollerContent,
+      children: [(0, r.jsx)(u.hzk, {
+        className: y.scrollerContent,
         children: t
       }), n]
     })
   })
 }
 
-function I(e) {
+function P(e) {
   let {
     paymentRequestWallet: t
-  } = e, n = r.useRef(null), [s, a] = r.useState(false);
-  return (0, i.jsx)(N, {
-    footer: (0, i.jsx)(h.Z, {
+  } = e, n = i.useRef(null), [a, o] = i.useState(false), s = () => {
+    null != n.current && n.current.show()
+  };
+  return (0, r.jsx)(R, {
+    footer: (0, r.jsx)(h.Z, {
       primaryCTA: h.Z.CTAType.CONTINUE,
-      primaryText: _.intl.string("applePay" === t ? _.t.WoXvJC : _.t.wnVVr6),
-      primaryDisabled: !s,
-      onPrimary: () => void(null != n.current && n.current.show()),
+      primaryText: b.intl.string("applePay" === t ? b.t.WoXvJC : b.t.wnVVr6),
+      primaryDisabled: !a,
+      onPrimary: () => s(),
       onBack: () => {}
     }),
-    children: (0, i.jsx)(T, {
+    children: (0, r.jsx)(N, {
       renderConnectorView: true,
       renderStepBody: true,
       paymentRequestWallet: t,
       paymentRequestRef: n,
-      onValidPaymentRequest: () => a(true)
+      onValidPaymentRequest: () => o(true)
     })
   })
 }
 
-function y(e) {
+function w(e) {
   let {
     children: t
   } = e;
-  return (0, i.jsx)(N, {
-    className: j.choosePaymentTypeModal,
-    children: (0, i.jsx)("div", {
-      className: j.choosePaymentTypeContainer,
+  return (0, r.jsx)(R, {
+    className: y.choosePaymentTypeModal,
+    children: (0, r.jsx)("div", {
+      className: y.choosePaymentTypeContainer,
       children: t
     })
   })
 }
 
-function A() {
+function D() {
   let e = {
     onChooseType: () => {},
     onStripePaymentMethodReceived: e => {
@@ -205,24 +215,24 @@ function A() {
       children: "Choose Payment Source Type Component"
     }), (0, Chunk951288.jsx)(Chunk450272.E_, {
       label: "All Payment Request Wallets Enabled",
-      children: (0, Chunk951288.jsx)(y, {
-        children: (0, Chunk951288.jsx)(Chunk801937.Z, O(C({}, module), {
+      children: (0, Chunk951288.jsx)(w, {
+        children: (0, Chunk951288.jsx)(Chunk801937.Z, S(I({}, module), {
           onChooseType: () => {},
           paymentRequestWallets: ["googlePay", "applePay"]
         }))
       })
     }), (0, Chunk951288.jsx)(Chunk450272.E_, {
       label: "No Payment Wallets Enabled",
-      children: (0, Chunk951288.jsx)(y, {
-        children: (0, Chunk951288.jsx)(Chunk801937.Z, O(C({}, module), {
+      children: (0, Chunk951288.jsx)(w, {
+        children: (0, Chunk951288.jsx)(Chunk801937.Z, S(I({}, module), {
           onChooseType: () => {},
           paymentRequestWallets: []
         }))
       })
     }), (0, Chunk951288.jsx)(Chunk450272.E_, {
       label: "Is Eligible for Trial",
-      children: (0, Chunk951288.jsx)(y, {
-        children: (0, Chunk951288.jsx)(Chunk801937.Z, O(C({}, module), {
+      children: (0, Chunk951288.jsx)(w, {
+        children: (0, Chunk951288.jsx)(Chunk801937.Z, S(I({}, module), {
           isEligibleForTrial: true,
           onChooseType: () => {},
           paymentRequestWallets: []
@@ -230,8 +240,8 @@ function A() {
       })
     }), (0, Chunk951288.jsx)(Chunk450272.E_, {
       label: "Only Stripe Card Enabled",
-      children: (0, Chunk951288.jsx)(y, {
-        children: (0, Chunk951288.jsx)(Chunk801937.Z, O(C({}, module), {
+      children: (0, Chunk951288.jsx)(w, {
+        children: (0, Chunk951288.jsx)(Chunk801937.Z, S(I({}, module), {
           onChooseType: () => {},
           paymentRequestWallets: [],
           paymentSourceTypeRestrictions: [Chunk231338.He.CARD.valueOf()]
@@ -240,14 +250,14 @@ function A() {
     })]
   })
 }
-let P = {
+let x = {
     DEFAULT: "Express Checkout Element - Default (No Config)",
     GPAY_FILTERED: "Express Checkout Element - Filtered for Google Pay",
     APPLE_PAY_FILTERED: "Express Checkout Element - Filtered for Apple Pay",
     APPLE_AND_GPAY_DISABLED: "Express Checkout Element - Google Pay and Apple Pay Disabled",
     CONFIGURABLE: "Express Checkout Element - Configurable"
   },
-  R = {
+  L = {
     GPAY_FILTERED: {
       wallets: {
         googlePay: "always",
@@ -267,7 +277,7 @@ let P = {
       }
     }
   },
-  D = {
+  j = {
     appearance: {
       theme: "flat",
       variables: {
@@ -276,7 +286,7 @@ let P = {
       }
     }
   },
-  Z = {
+  M = {
     buttonType: {
       googlePay: "pay",
       applePay: "book"
@@ -287,19 +297,43 @@ let P = {
     },
     buttonHeight: 40
   },
-  w = e => true !== e ? JSON.stringify(e, null, 2) : "undefined";
+  k = e => true !== e ? JSON.stringify(e, null, 2) : "undefined",
+  U = "``";
 
-function k() {
-  let [e, t] = Chunk647438.useState(w(D)), [n, a] = Chunk647438.useState(D), [l, u] = Chunk647438.useState(w(Z)), [m, g] = Chunk647438.useState(Z), [h, f] = Chunk647438.useState(null), [x, _] = Chunk647438.useState((0, Chunk951288.jsx)(Chunk450272.DS, {
-    errorLabel: P.CONFIGURABLE,
-    elementOptions: D,
+function G() {
+  let [e, t] = Chunk647438.useState(k(j)), [n, o] = Chunk647438.useState(j), [s, d] = Chunk647438.useState(k(M)), [f, p] = Chunk647438.useState(M), [h, m] = Chunk647438.useState(null), [E, b] = Chunk647438.useState((0, Chunk951288.jsx)(Chunk450272.DS, {
+    errorLabel: x.CONFIGURABLE,
+    elementOptions: j,
     children: (0, Chunk951288.jsx)(Chunk289008.ExpressCheckoutElement, {
       onConfirm: e => {
         console.log("ExpressCheckoutElement onConfirm event: ", e)
       },
-      options: Z
+      options: M
     })
-  }));
+  })), O = () => {
+    try {
+      let t = JSON.parse(module),
+        n = JSON.parse(s);
+      Chunk388032(null), Chunk388032((0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+        children: [(0, Chunk951288.jsxs)(Chunk481060.Text, {
+          variant: "text-md/normal",
+          className: Chunk403645.labelSpacing,
+          children: ["Element updated at: ", new Date().toString()]
+        }), (0, Chunk951288.jsx)(Chunk450272.DS, {
+          errorLabel: x.CONFIGURABLE,
+          elementOptions: exports,
+          children: (0, Chunk951288.jsx)(Chunk289008.ExpressCheckoutElement, {
+            onConfirm: e => {
+              console.log("ExpressCheckoutElement onConfirm event: ", e)
+            },
+            options: require
+          })
+        })]
+      })), Chunk120356(exports), Chunk563132(require), Chunk439021(null)
+    } catch (e) {
+      console.error("ConfigurableStripeExpressCheckoutElement - error parsing JSON: ", module), Chunk439021("Error parsing JSON. Check console for more information.")
+    }
+  };
   return (0, Chunk951288.jsxs)("div", {
     children: [(0, Chunk951288.jsxs)(Chunk481060.Text, {
       variant: "text-md/normal",
@@ -333,7 +367,7 @@ function k() {
       className: Chunk403645.textarea,
       placeholder: "Stripe Express Checkout Element Options",
       showCharacterCount: true,
-      value: l,
+      value: s,
       onChange: Chunk801937
     }), null != Chunk586585 && (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-md/normal",
@@ -346,30 +380,7 @@ function k() {
         variant: "primary",
         size: "sm",
         text: "Apply Changes",
-        onClick: () => {
-          try {
-            let t = JSON.parse(module),
-              n = JSON.parse(l);
-            Chunk388032(null), Chunk388032((0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-              children: [(0, Chunk951288.jsxs)(Chunk481060.Text, {
-                variant: "text-md/normal",
-                className: Chunk403645.labelSpacing,
-                children: ["Element updated at: ", new Date().toString()]
-              }), (0, Chunk951288.jsx)(Chunk450272.DS, {
-                errorLabel: P.CONFIGURABLE,
-                elementOptions: exports,
-                children: (0, Chunk951288.jsx)(Chunk289008.ExpressCheckoutElement, {
-                  onConfirm: e => {
-                    console.log("ExpressCheckoutElement onConfirm event: ", e)
-                  },
-                  options: require
-                })
-              })]
-            })), Chunk120356(exports), Chunk563132(require), Chunk439021(null)
-          } catch (e) {
-            console.error("ConfigurableStripeExpressCheckoutElement - error parsing JSON: ", module), Chunk439021("Error parsing JSON. Check console for more information.")
-          }
-        }
+        onClick: Chunk818033
       })
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-md/normal",
@@ -377,28 +388,28 @@ function k() {
       children: "Current Element Options:"
     }), (0, Chunk951288.jsx)(Chunk241209.Z, {
       className: Chunk403645.markdown,
-      children: "".concat("``", " ").concat(w(require), " ").concat("``")
+      children: "".concat(U, " ").concat(k(require), " ").concat(U)
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-md/normal",
       className: Chunk403645.labelSpacing,
       children: "Current Express Checkout Element Options:"
     }), (0, Chunk951288.jsx)(Chunk241209.Z, {
       className: Chunk403645.markdown,
-      children: "".concat("``", " ").concat(w(Chunk502109), " ").concat("``")
+      children: "".concat(U, " ").concat(k(Chunk502109), " ").concat(U)
     }), Chunk231338]
   })
 }
 
-function L() {
+function B() {
   return (0, Chunk951288.jsxs)(Chunk450272.$0, {
     children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
       variant: "heading-xl/semibold",
       children: "Stripe Express Checkout Buttons"
     }), (0, Chunk951288.jsx)(Chunk450272.E_, {
-      label: P.DEFAULT,
+      label: x.DEFAULT,
       children: (0, Chunk951288.jsx)("div", {
         children: (0, Chunk951288.jsx)(Chunk450272.DS, {
-          errorLabel: P.DEFAULT,
+          errorLabel: x.DEFAULT,
           children: (0, Chunk951288.jsx)(Chunk289008.ExpressCheckoutElement, {
             onConfirm: e => {
               console.log("ExpressCheckoutElement onConfirm event: ", e)
@@ -408,31 +419,31 @@ function L() {
         })
       })
     }), ["GPAY_FILTERED", "APPLE_PAY_FILTERED", "APPLE_AND_GPAY_DISABLED"].map(e => {
-      let t = P[e];
-      return (0, i.jsx)(b.E_, {
+      let t = x[e];
+      return (0, r.jsx)(g.E_, {
         label: t,
-        children: (0, i.jsxs)("div", {
-          children: [(0, i.jsx)(d.Text, {
+        children: (0, r.jsxs)("div", {
+          children: [(0, r.jsx)(u.Text, {
             variant: "text-md/normal",
-            className: j.labelSpacing,
+            className: y.labelSpacing,
             children: "expressCheckoutElement.options:"
-          }), (0, i.jsx)(p.Z, {
-            className: j.markdown,
-            children: "".concat("``").concat(w(R[e]), " ").concat("``")
-          }), (0, i.jsx)(b.DS, {
+          }), (0, r.jsx)(_.Z, {
+            className: y.markdown,
+            children: "".concat(U).concat(k(L[e]), " ").concat(U)
+          }), (0, r.jsx)(g.DS, {
             errorLabel: t,
-            children: (0, i.jsx)(s.ExpressCheckoutElement, {
+            children: (0, r.jsx)(a.ExpressCheckoutElement, {
               onConfirm: e => {
                 console.log("ExpressCheckoutElement onConfirm event: ", e)
               },
-              options: R[e]
+              options: L[e]
             })
           })]
         })
       }, e)
     }), (0, Chunk951288.jsx)(Chunk450272.E_, {
-      label: P.CONFIGURABLE,
-      children: (0, Chunk951288.jsx)(k, {})
+      label: x.CONFIGURABLE,
+      children: (0, Chunk951288.jsx)(G, {})
     })]
   })
 }

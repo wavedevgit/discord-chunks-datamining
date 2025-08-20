@@ -1,8 +1,9 @@
-/** Chunk was on 26434 **/
-/** chunk id: 203143, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 203143, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => H,
-  n: () => L
+  Z: () => q,
+  n: () => Z
 }), require("./415506.js"), require("./388685.js"), require("./361932.js"), require("./187205.js"), require("./781311.js");
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
@@ -34,45 +35,89 @@ var Chunk512722 = require("./512722.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function w(e) {
+function D(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      var r;
-      r = n[t], t in e ? Object.defineProperty(e, t, {
-        value: r,
-        enumerable: true,
-        configurable: true,
-        writable: true
-      }) : e[t] = r
+      D(e, t, n[t])
     })
   }
   return e
 }
 
-function Z(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
-    }
-    return n
-  })(Object(t)).forEach(function(n) {
+function L(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function j(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function R(e, t) {
+function M(e, t) {
+  if (null == e) return {};
+  var n, r, i = k(e, t);
+  if (Object.getOwnPropertySymbols) {
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+  }
+  return i
+}
+
+function k(e, t) {
+  if (null == e) return {};
+  var n, r, i = {},
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+  return i
+}
+
+function U(e) {
+  let {
+    channelId: t,
+    messageId: n
+  } = e, r = T.Z.getMessage(t, n);
+  if (null != r) return {
+    message: r,
+    channelId: t,
+    messageId: n
+  };
+  let a = b.Z.getMessage(t, n);
+  if (null != a.message) return {
+    channelId: t,
+    messageId: n,
+    message: a.message
+  };
+  throw i()(null != r, "Tapped on a non-existent poll message"), Error()
+}
+
+function G(e, t) {
   let n = [...t],
     r = 0,
     i = 0;
   for (let t of n) {
-    var l;
-    let n = null == e || null == (l = e.find(e => e.answer_id === parseInt(t))) ? true : l.poll_media;
+    var a;
+    let n = null == e || null == (a = e.find(e => e.answer_id === parseInt(t))) ? true : a.poll_media;
     (null == n ? true : n.text) != null && (r += 1), (null == n ? true : n.emoji) != null && (i += 1)
   }
   return {
@@ -82,7 +127,7 @@ function R(e, t) {
   }
 }
 
-function D(e) {
+function B(e) {
   let {
     guildId: t,
     title: n,
@@ -91,44 +136,44 @@ function D(e) {
   d.Z.show({
     title: n,
     body: r,
-    confirmText: A.intl.string(A.t["9VLmlZ"]),
-    cancelText: A.intl.string(A.t["2m+Sqq"]),
+    confirmText: w.intl.string(w.t["9VLmlZ"]),
+    cancelText: w.intl.string(w.t["2m+Sqq"]),
     onConfirm: () => {
-      p.Z.joinGuild(t, {
-        source: N.vtS.POLL_ALERT
+      f.Z.joinGuild(t, {
+        source: P.vtS.POLL_ALERT
       })
     }
   })
 }
 
-function L(e) {
+function Z(e) {
   let {
     channelId: t,
     messageId: n,
     answerId: r
-  } = e, i = v.Z.getChannel(t);
+  } = e, i = O.Z.getChannel(t);
   if (null == i) return;
-  if (_.Z.isLurking(i.guild_id)) return void D({
+  if (m.Z.isLurking(i.guild_id)) return void B({
     guildId: i.guild_id,
-    title: A.intl.string(A.t["7LpysL"]),
-    body: A.intl.string(A.t["5sHHo6"])
+    title: w.intl.string(w.t["7LpysL"]),
+    body: w.intl.string(w.t["5sHHo6"])
   });
-  let l = x.Z.getMessage(t, n);
-  if (null == l || null == l.poll || 0 === l.poll.answers.length) return;
-  let o = null != r ? r : String(l.poll.answers[0].answer_id);
-  I.A({
-    message: l,
+  let a = T.Z.getMessage(t, n);
+  if (null == a || null == a.poll || 0 === a.poll.answers.length) return;
+  let o = null != r ? r : String(a.poll.answers[0].answer_id);
+  A.A({
+    message: a,
     initialAnswerId: o
   })
 }
 
-function M(e) {
+function V(e) {
   let {
     channelId: t,
     messageId: n,
     isEditing: r
   } = e;
-  (0, T.eu)(t, n, e => {
+  (0, N.eu)(t, n, e => {
     var n;
     return {
       channelId: t,
@@ -140,28 +185,28 @@ function M(e) {
   })
 }
 
-function k(e) {
+function F(e) {
   let {
     channelId: t,
     messageId: n
-  } = e, r = x.Z.getMessage(t, n);
+  } = e, r = T.Z.getMessage(t, n);
   return null == r ? [] : r.reactions.flatMap(e => true === e.me_vote ? e.emoji.name : [])
 }
-async function U(e) {
+async function H(e) {
   let {
     channelId: t,
     messageId: n,
     answerIds: r
-  } = e, i = k({
+  } = e, i = F({
     channelId: t,
     messageId: n
-  }), l = o().difference(i, r), a = o().difference(r, i), c = C.default.getId(), d = [...l.map(e => ({
+  }), a = o().difference(i, r), s = o().difference(r, i), c = y.default.getId(), d = [...a.map(e => ({
     type: "MESSAGE_REACTION_REMOVE",
     id: e
-  })), ...a.map(e => ({
+  })), ...s.map(e => ({
     type: "MESSAGE_REACTION_ADD",
     id: e
-  }))], p = s.ZP.Emitter.batched(() => {
+  }))], f = l.ZP.Emitter.batched(() => {
     let e;
     for (let {
         id: r,
@@ -177,74 +222,74 @@ async function U(e) {
       },
       userId: c,
       optimistic: true,
-      reactionType: b.O.VOTE
+      reactionType: E.O.VOTE
     });
     return e
   });
-  null != p && await p
+  null != f && await f
 }
-async function F(e) {
+async function Y(e) {
   let {
     channelId: t,
     messageId: n
-  } = e, r = v.Z.getChannel(t);
+  } = e, r = O.Z.getChannel(t);
   if (null == r) return;
-  if (_.Z.isLurking(r.guild_id)) return void D({
+  if (m.Z.isLurking(r.guild_id)) return void B({
     guildId: r.guild_id,
-    title: A.intl.string(A.t.Qic1FB),
-    body: A.intl.string(A.t["5sHHo6"])
+    title: w.intl.string(w.t.Qic1FB),
+    body: w.intl.string(w.t["5sHHo6"])
   });
-  if (!y.Z.canChatInGuild(r.guild_id)) return void d.Z.show({
-    title: A.intl.string(A.t.p245ws),
-    body: A.intl.string(A.t["U/uodn"])
+  if (!I.Z.canChatInGuild(r.guild_id)) return void d.Z.show({
+    title: w.intl.string(w.t.p245ws),
+    body: w.intl.string(w.t["U/uodn"])
   });
-  let l = (0, T.fU)(t, n);
-  i()(null != l, "Must not be able to vote without existing state!");
-  let o = k({
+  let a = (0, N.fU)(t, n);
+  i()(null != a, "Must not be able to vote without existing state!");
+  let o = F({
     channelId: t,
     messageId: n
   });
   try {
-    let e = [...l.selectedAnswerIds.values()];
-    (0, T.eu)(t, n, e => (i()(null != e, "Must not be able to vote without existing state!"), Z(w({}, e), {
+    let e = [...a.selectedAnswerIds.values()];
+    (0, N.eu)(t, n, e => (i()(null != e, "Must not be able to vote without existing state!"), j(x({}, e), {
       submitting: true,
       editing: false
-    }))), await U({
+    }))), await H({
       channelId: t,
       messageId: n,
       answerIds: e
-    }), await S.B({
+    }), await C.B({
       channelId: t,
       messageId: n,
       answerIds: e
-    }), (0, T.eu)(t, n, () => true), c.uv.announce(0 === e.length ? A.intl.string(A.t["xcvy+/"]) : A.intl.string(A.t.o20GSk))
+    }), (0, N.eu)(t, n, () => true), c.uv.announce(0 === e.length ? w.intl.string(w.t["xcvy+/"]) : w.intl.string(w.t.o20GSk))
   } catch (e) {
-    var a, s, u;
+    var s, l, u;
     d.Z.show({
-      title: A.intl.string(A.t.iufib2),
-      body: null != (u = null != (s = null == (a = e.getAnyErrorMessage) ? true : a.call(e)) ? s : e.message) ? u : A.intl.string(A.t.eAn6z8)
-    }), await U({
+      title: w.intl.string(w.t.iufib2),
+      body: null != (u = null != (l = null == (s = e.getAnyErrorMessage) ? true : s.call(e)) ? l : e.message) ? u : w.intl.string(w.t.eAn6z8)
+    }), await H({
       channelId: t,
       messageId: n,
       answerIds: o
-    }), (0, T.eu)(t, n, e => {
-      if (null != e) return Z(w({}, e), {
+    }), (0, N.eu)(t, n, e => {
+      if (null != e) return j(x({}, e), {
         submitting: false,
         editing: false
       })
     })
   }
 }
-async function B(e) {
+async function W(e) {
   let {
     channelId: t,
     messageId: n
-  } = e, r = v.Z.getChannel(t);
-  if (null != r) return _.Z.isLurking(r.guild_id) ? void D({
+  } = e, r = O.Z.getChannel(t);
+  if (null != r) return m.Z.isLurking(r.guild_id) ? void B({
     guildId: r.guild_id,
-    title: A.intl.string(A.t.B9QnBg),
-    body: A.intl.string(A.t.BVZCTk)
-  }) : ((0, T.eu)(t, n, e => {
+    title: w.intl.string(w.t.B9QnBg),
+    body: w.intl.string(w.t.BVZCTk)
+  }) : ((0, N.eu)(t, n, e => {
     var n;
     return {
       channelId: t,
@@ -253,12 +298,40 @@ async function B(e) {
       editing: false,
       showResults: null != (n = null == e ? true : e.showResults) && n
     }
-  }), await F({
+  }), await Y({
     channelId: t,
     messageId: n
   }))
 }
-async function G(e) {
+
+function K(e) {
+  let {
+    channelId: t,
+    messageId: n
+  } = e;
+  (0, N.eu)(t, n, e => {
+    var r, i;
+    let a = null == e || !e.showResults,
+      o = T.Z.getMessage(t, n),
+      s = null != o ? o.reactions.reduce((e, t) => {
+        var n, r;
+        return e + (null != (r = null == (n = t.count_details) ? true : n.vote) ? r : 0)
+      }, 0) : 0;
+    return h.ZP.trackWithMetadata(P.rMx.POLL_SHOW_RESULTS_CLICKED, {
+      channel_id: t,
+      message_id: n,
+      show_results: a,
+      votes_count: s
+    }), {
+      channelId: t,
+      selectedAnswerIds: new Set,
+      submitting: null != (r = null == e ? true : e.submitting) && r,
+      editing: null != (i = null == e ? true : e.submitting) && i,
+      showResults: a
+    }
+  })
+}
+async function z(e) {
   let {
     channelId: t,
     messageId: n,
@@ -266,58 +339,32 @@ async function G(e) {
   } = e;
   switch (r) {
     case "submit":
-      await F({
+      await Y({
         channelId: t,
         messageId: n
       });
       break;
     case "remove":
-      await B({
+      await W({
         channelId: t,
         messageId: n
       });
       break;
     case "cancel":
-      M({
+      V({
         channelId: t,
         messageId: n,
         isEditing: false
       });
       break;
     case "showVotes":
-      ! function(e) {
-        let {
-          channelId: t,
-          messageId: n
-        } = e;
-        (0, T.eu)(t, n, e => {
-          var r, i;
-          let l = null == e || !e.showResults,
-            o = x.Z.getMessage(t, n),
-            a = null != o ? o.reactions.reduce((e, t) => {
-              var n, r;
-              return e + (null != (r = null == (n = t.count_details) ? true : n.vote) ? r : 0)
-            }, 0) : 0;
-          return g.ZP.trackWithMetadata(N.rMx.POLL_SHOW_RESULTS_CLICKED, {
-            channel_id: t,
-            message_id: n,
-            show_results: l,
-            votes_count: a
-          }), {
-            channelId: t,
-            selectedAnswerIds: new Set,
-            submitting: null != (r = null == e ? true : e.submitting) && r,
-            editing: null != (i = null == e ? true : e.submitting) && i,
-            showResults: l
-          }
-        })
-      }({
+      K({
         channelId: t,
         messageId: n
       });
       break;
     case "showVoterDetails":
-      L({
+      Z({
         channelId: t,
         messageId: n
       });
@@ -326,125 +373,94 @@ async function G(e) {
       i()(false, "Unknown poll action type: ".concat(r))
   }
 }
-let H = {
+let q = {
   handlePollAnswerTapped: function(e) {
     var t, n, {
       answerId: r
     } = e;
     let {
-      channelId: l,
-      messageId: o,
-      message: a
-    } = function(e) {
-      let {
-        channelId: t,
-        messageId: n
-      } = e, r = x.Z.getMessage(t, n);
-      if (null != r) return {
-        message: r,
-        channelId: t,
-        messageId: n
-      };
-      let l = E.Z.getMessage(t, n);
-      if (null != l.message) return {
-        channelId: t,
-        messageId: n,
-        message: l.message
-      };
-      throw i()(null != r, "Tapped on a non-existent poll message"), Error()
-    }(function(e, t) {
-      if (null == e) return {};
-      var n, r, i = function(e, t) {
-        if (null == e) return {};
-        var n, r, i = {},
-          l = Object.keys(e);
-        for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-        return i
-      }(e, t);
-      if (Object.getOwnPropertySymbols) {
-        var l = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
-      }
-      return i
-    }(e, ["answerId"])), {
+      channelId: i,
+      messageId: a,
+      message: o
+    } = U(M(e, ["answerId"])), {
       tapShouldOpenVotersModal: s
-    } = null != (n = (0, P.Tk)(a)) ? n : {};
-    if (true === s) return void L({
-      channelId: l,
-      messageId: o,
+    } = null != (n = (0, R.Tk)(o)) ? n : {};
+    if (true === s) return void Z({
+      channelId: i,
+      messageId: a,
       answerId: r
     });
-    let c = null == (t = a.poll) ? true : t.allow_multiselect;
-    (0, T.eu)(l, o, e => {
+    let l = null == (t = o.poll) ? true : t.allow_multiselect;
+    (0, N.eu)(i, a, e => {
       var t, n;
       if (null == e) {
         let e = new Set([r]),
           {
             analyticsSelectedAnswerIds: t,
-            selectedTextAnswersCount: i,
-            selectedEmojiAnswersCount: s
-          } = R(null == (n = a.poll) ? true : n.answers, e);
-        return g.ZP.trackWithMetadata(N.rMx.POLL_VOTE_SELECTED, {
-          channel_id: l,
-          message_id: o,
+            selectedTextAnswersCount: s,
+            selectedEmojiAnswersCount: l
+          } = G(null == (n = o.poll) ? true : n.answers, e);
+        return h.ZP.trackWithMetadata(P.rMx.POLL_VOTE_SELECTED, {
+          channel_id: i,
+          message_id: a,
           selected_answer_ids: t,
-          selected_text_answers_count: i,
-          selected_emoji_answers_count: s
+          selected_text_answers_count: s,
+          selected_emoji_answers_count: l
         }), {
-          channelId: l,
+          channelId: i,
           selectedAnswerIds: e,
           submitting: false,
           editing: false,
           showResults: false
         }
       }
-      let i = w({}, e),
-        s = new Set(i.selectedAnswerIds);
-      if (i.selectedAnswerIds = s, s.has(r)) s.delete(r);
+      let s = x({}, e),
+        c = new Set(s.selectedAnswerIds);
+      if (s.selectedAnswerIds = c, c.has(r)) c.delete(r);
       else {
-        if (!c)
-          for (let e of s) s.delete(e);
-        s.add(r)
+        if (!l)
+          for (let e of c) c.delete(e);
+        c.add(r)
       }
       let {
         analyticsSelectedAnswerIds: u,
         selectedTextAnswersCount: d,
-        selectedEmojiAnswersCount: p
-      } = R(null == (t = a.poll) ? true : t.answers, s);
-      return g.ZP.trackWithMetadata(N.rMx.POLL_VOTE_SELECTED, {
-        channel_id: l,
-        message_id: o,
+        selectedEmojiAnswersCount: f
+      } = G(null == (t = o.poll) ? true : t.answers, c);
+      return h.ZP.trackWithMetadata(P.rMx.POLL_VOTE_SELECTED, {
+        channel_id: i,
+        message_id: a,
         selected_answer_ids: u,
         selected_text_answers_count: d,
-        selected_emoji_answers_count: p
-      }), i
+        selected_emoji_answers_count: f
+      }), s
     })
   },
-  handlePollSubmitVote: F,
-  handleUpdateVoteEditingState: M,
-  handlePollActionTapped: G,
+  handlePollSubmitVote: Y,
+  handleUpdateVoteEditingState: V,
+  handlePollActionTapped: z,
   createPoll: async function(e) {
     let {
       channel: t,
       question: n,
       answers: r,
       allowMultiSelect: i,
-      duration: l,
+      duration: a,
       layout: o,
-      onClose: s
-    } = e, c = j.Z.getUploads(t.id, O.d.Poll), u = r.map(e => {
+      onClose: l
+    } = e, c = S.Z.getUploads(t.id, v.d.Poll), u = r.map(e => {
       var t, n;
       let r = null == c ? true : c.findIndex(t => t.id === e.localCreationAnswerId),
         i = {
           attachment_ids: false !== r ? ["".concat(r)] : true
         };
-      o === a.C.DEFAULT && (i.text = null == (n = e.text) ? true : n.trim());
-      let l = null == (t = e.image) ? true : t.emoji;
-      return null != l && (null != l.id ? i.emoji = {
-        id: l.id,
+      o === s.C.DEFAULT && (i.text = null == (n = e.text) ? true : n.trim());
+      let a = null == (t = e.image) ? true : t.emoji;
+      return null != a && (null != a.id ? i.emoji = {
+        id: a.id,
         name: ""
-      } : null != l.optionallyDiverseSequence && (i.emoji = {
-        name: l.optionallyDiverseSequence
+      } : null != a.optionallyDiverseSequence && (i.emoji = {
+        name: a.optionallyDiverseSequence
       })), {
         poll_media: i
       }
@@ -454,14 +470,14 @@ let H = {
       },
       answers: u,
       allow_multiselect: i,
-      duration: l,
+      duration: a,
       layout_type: o
     };
     try {
-      await m.Z.sendPollMessage(t.id, d, {
+      await _.Z.sendPollMessage(t.id, d, {
         attachmentsToUpload: c,
         onAttachmentUploadError: (e, n, r) => {
-          (0, h.A)({
+          (0, g.A)({
             file: e,
             guildId: t.getGuildId(),
             analyticsLocations: [],
@@ -469,9 +485,9 @@ let H = {
             reason: r
           })
         }
-      }), null == s || s()
+      }), null == l || l()
     } catch (e) {
-      if ("poll" === (e instanceof f.Hx ? e : new f.Hx(e)).getAnyErrorMessage() && null != e.text) throw Z(w({}, e), {
+      if ("poll" === (e instanceof p.Hx ? e : new p.Hx(e)).getAnyErrorMessage() && null != e.text) throw j(x({}, e), {
         body: JSON.parse(e.text)
       });
       throw e
@@ -483,9 +499,9 @@ let H = {
       messageId: n
     } = e;
     await d.Z.confirm({
-      title: A.intl.string(A.t["+rfkTE"]),
-      body: A.intl.string(A.t.H2I1gI)
-    }) && await S.W({
+      title: w.intl.string(w.t["+rfkTE"]),
+      body: w.intl.string(w.t.H2I1gI)
+    }) && await C.W({
       channelId: t,
       messageId: n
     })

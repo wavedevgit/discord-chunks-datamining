@@ -1,9 +1,10 @@
-/** Chunk was on 76540 **/
-/** chunk id: 279837, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 279837, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => u
+  Z: () => d
 }), require("./388685.js"), require("./457542.js");
-var s, Chunk951288 = require("./951288.js"),
+var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -17,18 +18,18 @@ function c(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class h extends(s = Chunk647438.PureComponent) {
+class u extends(r = Chunk647438.PureComponent) {
   render() {
     let {
       title: e,
       actionText: t,
       children: n,
-      transitionState: s
+      transitionState: r
     } = this.props, {
       error: c,
-      isLoading: h,
-      value: u
-    } = this.state, d = Chunk647438.Children.count(require) > 0 ? (0, Chunk951288.jsx)(Chunk481060.Zbd, {
+      isLoading: u,
+      value: d
+    } = this.state, f = Chunk647438.Children.count(require) > 0 ? (0, Chunk951288.jsx)(Chunk481060.Zbd, {
       type: Chunk481060.Zbd.Types.WARNING,
       className: Chunk405289.card,
       children: (0, Chunk951288.jsx)(Chunk481060.Text, {
@@ -38,7 +39,7 @@ class h extends(s = Chunk647438.PureComponent) {
       })
     }) : null;
     return (0, Chunk951288.jsx)(Chunk481060.Y0X, {
-      transitionState: s,
+      transitionState: r,
       parentComponent: "PasswordConfirm",
       children: (0, Chunk951288.jsxs)("form", {
         onSubmit: this.handleSubmit,
@@ -49,14 +50,14 @@ class h extends(s = Chunk647438.PureComponent) {
             children: module
           })
         }), (0, Chunk951288.jsxs)(Chunk481060.hzk, {
-          children: [d, (0, Chunk951288.jsxs)(Chunk481060.xJW, {
+          children: [f, (0, Chunk951288.jsxs)(Chunk481060.xJW, {
             title: Chunk388032.intl.string(Chunk388032.t["CIGa+/"]),
             className: Chunk405289.spacing,
             children: [(0, Chunk951288.jsx)(Chunk481060.oil, {
               type: "password",
               autoComplete: "current-password",
               autoFocus: true,
-              value: u,
+              value: d,
               onChange: this.handlePasswordChange,
               required: true
             }), null != c && "" !== c ? (0, Chunk951288.jsxs)(Chunk481060.Text, {
@@ -73,7 +74,7 @@ class h extends(s = Chunk647438.PureComponent) {
               variant: "primary",
               text: null != exports ? exports : Chunk388032.intl.string(Chunk388032.t["cY+Ooa"]),
               type: "submit",
-              disabled: h || 0 === u.length
+              disabled: u || 0 === d.length
             }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
               variant: "secondary",
               text: Chunk388032.intl.string(Chunk388032.t["ETE/oK"]),
@@ -95,12 +96,12 @@ class h extends(s = Chunk647438.PureComponent) {
         value: t
       } = this.state, {
         handleSubmit: n,
-        onClose: s,
+        onClose: r,
         onError: i
       } = this.props;
       this.setState({
         isLoading: true
-      }), n(t).then(e => s(null != e ? e : true), e => {
+      }), n(t).then(e => r(null != e ? e : true), e => {
         null != e.body && (null == i || i(e.body), !this.shouldSkipErrorMsgRender(e.body) && (e.body.password ? this.setState({
           error: e.body.password,
           isLoading: false
@@ -131,5 +132,5 @@ class h extends(s = Chunk647438.PureComponent) {
     })
   }
 }
-c(h, "key", () => "password-confirm-modal");
-let u = h
+c(u, "key", () => "password-confirm-modal");
+let d = u

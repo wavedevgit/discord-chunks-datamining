@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 546997, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 546997, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => f
+  Z: () => y
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -17,105 +18,115 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk197571 = require("./197571.js");
 
-function h(e) {
-  (0, u.isMac)() && e ? (0, a.ZDy)(async () => {
+function h(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function m(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      h(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function g(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function E(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+
+function b(e) {
+  (0, d.isMac)() && e ? (0, o.ZDy)(async () => {
     let {
       ConfirmModal: t
     } = await Promise.resolve().then(n.bind(n, 878678));
-    return n => {
-      var r, c;
-      return (0, i.jsx)(t, (r = function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {},
-            i = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), i.forEach(function(t) {
-            var i;
-            i = n[t], t in e ? Object.defineProperty(e, t, {
-              value: i,
-              enumerable: true,
-              configurable: true,
-              writable: true
-            }) : e[t] = i
-          })
-        }
-        return e
-      }({}, n), c = c = {
-        onConfirm: () => {
-          l.Z.setUseSystemScreensharePicker(e), o.Z.app.relaunch()
-        },
-        confirmButtonColor: s.zx.Colors.BRAND,
-        header: p.intl.string(p.t["9jf31N"]),
-        cancelText: p.intl.string(p.t["ETE/oK"]),
-        confirmText: p.intl.string(p.t.BddRzc),
-        children: (0, i.jsx)(a.Text, {
-          variant: "text-md/normal",
-          children: p.intl.string(p.t.uBd6JS)
-        })
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(c)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-          var i = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, i)
-        }
-        return n
-      })(Object(c)).forEach(function(e) {
-        Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(c, e))
-      }), r))
-    }
-  }) : l.Z.setUseSystemScreensharePicker(e)
+    return n => (0, r.jsx)(t, E(m({}, n), {
+      onConfirm: () => {
+        s.Z.setUseSystemScreensharePicker(e), l.Z.app.relaunch()
+      },
+      confirmButtonColor: a.zx.Colors.BRAND,
+      header: _.intl.string(_.t["9jf31N"]),
+      cancelText: _.intl.string(_.t["ETE/oK"]),
+      confirmText: _.intl.string(_.t.BddRzc),
+      children: (0, r.jsx)(o.Text, {
+        variant: "text-md/normal",
+        children: _.intl.string(_.t.uBd6JS)
+      })
+    }))
+  }) : s.Z.setUseSystemScreensharePicker(e)
 }
 
-function f(e) {
+function y(e) {
   let {
     refreshStyles: t = false
   } = e, {
     videoHook: n,
-    experimentalSoundshare: s,
-    supportsExperimentalSoundshare: o,
-    supportsHookSoundshare: u,
-    useSystemScreensharePicker: f
-  } = (0, r.cj)([d.Z], () => ({
-    videoHook: d.Z.getVideoHook(),
-    experimentalSoundshare: d.Z.getExperimentalSoundshare(),
-    supportsExperimentalSoundshare: d.Z.supportsExperimentalSoundshare(),
-    supportsHookSoundshare: d.Z.supportsHookSoundshare(),
-    useSystemScreensharePicker: d.Z.getUseSystemScreensharePicker()
-  })), b = (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(c.F, {
-      setting: m.s6.VOICE_AND_VIDEO_ADVANCED_SCREENSHARE_VIDEO_HOOK,
-      children: (0, i.jsx)(a.j7V, {
+    experimentalSoundshare: a,
+    supportsExperimentalSoundshare: l,
+    supportsHookSoundshare: d,
+    useSystemScreensharePicker: h
+  } = (0, i.cj)([u.Z], () => ({
+    videoHook: u.Z.getVideoHook(),
+    experimentalSoundshare: u.Z.getExperimentalSoundshare(),
+    supportsExperimentalSoundshare: u.Z.supportsExperimentalSoundshare(),
+    supportsHookSoundshare: u.Z.supportsHookSoundshare(),
+    useSystemScreensharePicker: u.Z.getUseSystemScreensharePicker()
+  })), m = (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(c.F, {
+      setting: f.s6.VOICE_AND_VIDEO_ADVANCED_SCREENSHARE_VIDEO_HOOK,
+      children: (0, r.jsx)(o.j7V, {
         value: n,
-        onChange: e => l.Z.setVideoHook(e),
-        note: p.intl.string(p.t["Fj/xn5"]),
+        onChange: e => s.Z.setVideoHook(e),
+        note: _.intl.string(_.t["Fj/xn5"]),
         hideBorder: t,
-        children: p.intl.string(p.t.GmWk2N)
+        children: _.intl.string(_.t.GmWk2N)
       })
-    }), o && u && (0, i.jsx)(c.F, {
-      setting: m.s6.VOICE_AND_VIDEO_ADVANCED_SCREENSHARE_EXPERIMENTAL_SOUNDSHARE,
-      children: (0, i.jsx)(a.j7V, {
-        value: s,
-        onChange: e => l.Z.setExperimentalSoundshare(e),
+    }), l && d && (0, r.jsx)(c.F, {
+      setting: f.s6.VOICE_AND_VIDEO_ADVANCED_SCREENSHARE_EXPERIMENTAL_SOUNDSHARE,
+      children: (0, r.jsx)(o.j7V, {
+        value: a,
+        onChange: e => s.Z.setExperimentalSoundshare(e),
         hideBorder: t,
-        children: p.intl.string(p.t["4I0qzc"])
+        children: _.intl.string(_.t["4I0qzc"])
       })
-    }), (0, i.jsx)(c.F, {
-      setting: m.s6.VOICE_AND_VIDEO_ADVANCED_SCREENSHARE_SYSTEM_PICKER,
-      children: (0, i.jsx)(a.j7V, {
-        value: f,
-        onChange: h,
+    }), (0, r.jsx)(c.F, {
+      setting: f.s6.VOICE_AND_VIDEO_ADVANCED_SCREENSHARE_SYSTEM_PICKER,
+      children: (0, r.jsx)(o.j7V, {
+        value: h,
+        onChange: b,
         hideBorder: t,
-        children: p.intl.string(p.t.ie1mgY)
+        children: _.intl.string(_.t.ie1mgY)
       })
     })]
   });
-  return (0, i.jsx)(c.F, {
-    setting: m.s6.VOICE_AND_VIDEO_ADVANCED_SCREENSHARE,
-    children: t ? b : (0, i.jsx)(a.hjN, {
-      className: g.marginBottom20,
-      title: p.intl.string(p.t.NMCIf3),
-      children: b
+  return (0, r.jsx)(c.F, {
+    setting: f.s6.VOICE_AND_VIDEO_ADVANCED_SCREENSHARE,
+    children: t ? m : (0, r.jsx)(o.hjN, {
+      className: p.marginBottom20,
+      title: _.intl.string(_.t.NMCIf3),
+      children: m
     })
   })
 }

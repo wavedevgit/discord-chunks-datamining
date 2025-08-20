@@ -1,9 +1,10 @@
-/** Chunk was on 3940 **/
-/** chunk id: 364226, original params: t,e,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 364226, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  A: () => E
+  A: () => i
 });
-let i = (0, require("./818083.js").B)({
+let r = (0, require("./818083.js").B)({
   kind: "user",
   id: "2024-02_safety_hub_guild_violation_in_app_appeals",
   label: "Safety Hub Guild Violation In App Appeals",
@@ -19,9 +20,9 @@ let i = (0, require("./818083.js").B)({
   }]
 });
 
-function E(t) {
-  return !!i.useExperiment({
-    location: t
+function i(e) {
+  return !!r.useExperiment({
+    location: e
   }, {
     autoTrackExposure: true
   }).enabled

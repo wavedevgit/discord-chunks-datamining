@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 19869, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 19869, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  O: () => S
+  O: () => w
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -26,35 +27,93 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk905164 = require("./905164.js");
 
-function S() {
+function S(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function A(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      S(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function C(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function N(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : C(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+
+function R(e, t) {
+  if (null == e) return {};
+  var n, r, i = P(e, t);
+  if (Object.getOwnPropertySymbols) {
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+  }
+  return i
+}
+
+function P(e, t) {
+  if (null == e) return {};
+  var n, r, i = {},
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+  return i
+}
+
+function w() {
   let {
     enabled: e
   } = (0, Chunk822857.WX)({
     location: "revenue_storybook"
   });
   return (0, Chunk951288.jsxs)("div", {
-    children: [module && (0, Chunk951288.jsx)(N, {}), (0, Chunk951288.jsx)(T, {}), (0, Chunk951288.jsx)(I, {})]
+    children: [module && (0, Chunk951288.jsx)(L, {}), (0, Chunk951288.jsx)(x, {}), (0, Chunk951288.jsx)(j, {})]
   })
 }
+let D = 150;
 
-function T() {
+function x() {
   let {
     openIntroToOrbsClaimedCoachmark: e
   } = (0, Chunk511050.l)({
     location: "VirtualCurrencyComponents"
-  }), [t, n] = Chunk647438.useState(150), [p, g] = Chunk647438.useState(150), [_, j] = Chunk647438.useState(500), [S, T] = Chunk647438.useState(Chunk317257.b.DEFAULT), N = () => {
+  }), [t, n] = Chunk647438.useState(D), [_, p] = Chunk647438.useState(D), [b, y] = Chunk647438.useState(500), [S, A] = Chunk647438.useState(Chunk317257.b.DEFAULT), C = () => {
     switch (S) {
       case Chunk317257.b.DEFAULT:
-        T(Chunk317257.b.HIGHLIGHTED);
+        A(Chunk317257.b.HIGHLIGHTED);
         break;
       case Chunk317257.b.HIGHLIGHTED:
-        T(Chunk317257.b.SELECTED);
+        A(Chunk317257.b.SELECTED);
         break;
       case Chunk317257.b.SELECTED:
-        T(Chunk317257.b.DEFAULT)
+        A(Chunk317257.b.DEFAULT)
     }
   }, {
-    analyticsLocations: I
+    analyticsLocations: N
   } = (0, Chunk906732.ZP)(Chunk100527.Z.PAYMENT_FLOW_TEST_PAGE);
   return (0, Chunk951288.jsxs)(Chunk450272.$0, {
     children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
@@ -89,7 +148,7 @@ function T() {
         onClick: () => {
           (0, Chunk37234.xf)(), (0, Chunk703656.s1)().location.pathname.includes(Chunk981631.Z5c.COLLECTIBLES_SHOP) || (0, Chunk335131.mK)({
             openInLayer: false,
-            analyticsLocations: I,
+            analyticsLocations: N,
             analyticsSource: Chunk100527.Z.REVENUE_STORYBOOK_TEST_PAGE
           }), module({
             forceOpen: true,
@@ -138,7 +197,7 @@ function T() {
         children: (0, Chunk951288.jsx)(Chunk970815.A4, {
           balance: Chunk52647,
           balanceWidgetMode: S,
-          onClick: () => N()
+          onClick: () => C()
         })
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
@@ -149,7 +208,7 @@ function T() {
       }), (0, Chunk951288.jsx)(Chunk481060.FiK, {
         className: Chunk905164.numberInput,
         value: Chunk275388,
-        onChange: e => j(e)
+        onChange: e => y(e)
       }), (0, Chunk951288.jsx)(Chunk693789.zx, {
         onClick: () => {
           Chunk822857(null), setTimeout(() => {
@@ -162,7 +221,7 @@ function T() {
         children: (0, Chunk951288.jsx)(Chunk970815.A4, {
           balance: Chunk52647,
           balanceWidgetMode: S,
-          onClick: () => N()
+          onClick: () => C()
         })
       })]
     }), (0, Chunk951288.jsx)(Chunk450272.E_, {
@@ -176,7 +235,7 @@ function T() {
   })
 }
 
-function N() {
+function L() {
   let [e, t] = Chunk647438.useState("1144308439720394944");
   return (0, Chunk951288.jsxs)(Chunk450272.$0, {
     children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
@@ -218,10 +277,26 @@ function N() {
   })
 }
 
-function I() {
-  let {
-    resetOnboardingAnnouncementModal: e
-  } = (0, Chunk52647.Z)();
+function j() {
+  let e = () => {
+      (0, Chunk481060.ZDy)(async () => {
+        let {
+          AnnouncementModal: e
+        } = await require.e("86653").then(require.bind(require, 993318));
+        return t => {
+          var {
+            onClose: n
+          } = t, i = R(t, ["onClose"]);
+          return (0, r.jsx)(e, N(A({}, i), {
+            onClose: n,
+            ctaOnClick: n
+          }))
+        }
+      })
+    },
+    {
+      resetOnboardingAnnouncementModal: t
+    } = (0, Chunk52647.Z)();
   return (0, Chunk951288.jsxs)(Chunk450272.$0, {
     children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
       variant: "heading-xl/semibold",
@@ -229,63 +304,7 @@ function I() {
     }), (0, Chunk951288.jsx)(Chunk450272.E_, {
       label: "Announcement Modal",
       children: (0, Chunk951288.jsx)(Chunk693789.zx, {
-        onClick: () => {
-          (0, Chunk481060.ZDy)(async () => {
-            let {
-              AnnouncementModal: e
-            } = await require.e("86653").then(require.bind(require, 993318));
-            return t => {
-              var n, r, {
-                  onClose: s
-                } = t,
-                a = function(e, t) {
-                  if (null == e) return {};
-                  var n, i, r = function(e, t) {
-                    if (null == e) return {};
-                    var n, i, r = {},
-                      s = Object.keys(e);
-                    for (i = 0; i < s.length; i++) n = s[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
-                    return r
-                  }(e, t);
-                  if (Object.getOwnPropertySymbols) {
-                    var s = Object.getOwnPropertySymbols(e);
-                    for (i = 0; i < s.length; i++) n = s[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
-                  }
-                  return r
-                }(t, ["onClose"]);
-              return (0, i.jsx)(e, (n = function(e) {
-                for (var t = 1; t < arguments.length; t++) {
-                  var n = null != arguments[t] ? arguments[t] : {},
-                    i = Object.keys(n);
-                  "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                    return Object.getOwnPropertyDescriptor(n, e).enumerable
-                  }))), i.forEach(function(t) {
-                    var i;
-                    i = n[t], t in e ? Object.defineProperty(e, t, {
-                      value: i,
-                      enumerable: true,
-                      configurable: true,
-                      writable: true
-                    }) : e[t] = i
-                  })
-                }
-                return e
-              }({}, a), r = r = {
-                onClose: s,
-                ctaOnClick: s
-              }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
-                var n = Object.keys(e);
-                if (Object.getOwnPropertySymbols) {
-                  var i = Object.getOwnPropertySymbols(e);
-                  n.push.apply(n, i)
-                }
-                return n
-              })(Object(r)).forEach(function(e) {
-                Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
-              }), n))
-            }
-          })
-        },
+        onClick: module,
         children: "Open Announcement Modal"
       })
     }), (0, Chunk951288.jsxs)(Chunk450272.E_, {
@@ -299,7 +318,7 @@ function I() {
         },
         children: "After resetting your Announcement Modal State and exiting from user settings, you'll be able to see the Announcement Modal again."
       }), (0, Chunk951288.jsx)(Chunk693789.zx, {
-        onClick: () => module(),
+        onClick: () => exports(),
         children: "Reset Announcement Modal State"
       })]
     }), (0, Chunk951288.jsx)(Chunk450272.E_, {

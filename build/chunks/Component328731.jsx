@@ -1,7 +1,8 @@
-/** Chunk was on 30243 **/
-/** chunk id: 328731, original params: e,t,r (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 328731, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => j
+  Z: () => y
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,100 +18,107 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk817120 = require("./817120.js");
 
-function O(e) {
+function m(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
-    var r = null != arguments[t] ? arguments[t] : {},
-      n = Object.keys(r);
-    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(r, e).enumerable
-    }))), n.forEach(function(t) {
-      var n;
-      n = r[t], t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: true,
-        configurable: true,
-        writable: true
-      }) : e[t] = n
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      m(e, t, n[t])
     })
   }
   return e
 }
 
-function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var r = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-      var n = Object.getOwnPropertySymbols(e);
-      r.push.apply(r, n)
-    }
-    return r
-  })(Object(t)).forEach(function(r) {
-    Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
+function E(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function b(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function j(e) {
+function y(e) {
   let {
     entry: t,
-    channel: r,
-    className: i
-  } = e, j = l.useRef(null), g = l.useRef(null), {
-    displayParticipants: h,
-    participant1: v,
-    participant2: P,
-    numOtherParticipants: x,
-    orderedParticipants: S
-  } = (0, u.Z)(t), w = [v, P];
-  return (0, n.jsxs)("div", {
-    className: o()(m.container, i),
-    children: [h.length > 0 ? (0, n.jsxs)(n.Fragment, {
-      children: [(0, n.jsx)(f.Z, {
-        targetElementRef: j,
-        participants: S,
-        channel: r,
-        children: e => (0, n.jsx)(a.P3F, y(O({
-          innerRef: j,
-          className: m.clickable
+    channel: n,
+    className: a
+  } = e, m = i.useRef(null), E = i.useRef(null), {
+    displayParticipants: y,
+    participant1: O,
+    participant2: v,
+    numOtherParticipants: I,
+    orderedParticipants: T
+  } = (0, u.Z)(t), S = [O, v];
+  return (0, r.jsxs)("div", {
+    className: o()(h.container, a),
+    children: [y.length > 0 ? (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(_.Z, {
+        targetElementRef: m,
+        participants: T,
+        channel: n,
+        children: e => (0, r.jsx)(s.P3F, b(g({
+          innerRef: m,
+          className: h.clickable
         }, e), {
-          children: (0, n.jsx)(c.Z, {
+          children: (0, r.jsx)(l.Z, {
             maxUsers: 3,
-            users: h,
-            size: a.EFr.SIZE_20,
+            users: y,
+            size: s.EFr.SIZE_20,
             hideOverflowCount: true,
             disableUsernameTooltip: true
           })
         }))
-      }), (0, n.jsx)(a.LZC, {
+      }), (0, r.jsx)(s.LZC, {
         size: 6,
         horizontal: true
       })]
-    }) : null, (0, n.jsx)(a.X6q, {
+    }) : null, (0, r.jsx)(s.X6q, {
       variant: "text-sm/semibold",
       color: "text-secondary",
-      className: o()(m.truncatedText, m.usersHeader),
+      className: o()(h.truncatedText, h.usersHeader),
       scaleFontToUserSetting: true,
-      children: b.intl.format(b.t.rH95Gh, {
-        user0: s.ZP.getName(r.guild_id, r.id, w[0]),
-        user1: s.ZP.getName(r.guild_id, r.id, w[1]),
-        countOthers: x,
-        name0Hook: (e, t) => (0, n.jsx)(p.Z, {
+      children: p.intl.format(p.t.rH95Gh, {
+        user0: c.ZP.getName(n.guild_id, n.id, S[0]),
+        user1: c.ZP.getName(n.guild_id, n.id, S[1]),
+        countOthers: I,
+        name0Hook: (e, t) => (0, r.jsx)(f.Z, {
           text: e,
-          user: w[0],
-          channel: r
+          user: S[0],
+          channel: n
         }, t),
-        name1Hook: (e, t) => (0, n.jsx)(p.Z, {
+        name1Hook: (e, t) => (0, r.jsx)(f.Z, {
           text: e,
-          user: w[1],
-          channel: r
+          user: S[1],
+          channel: n
         }, t),
-        countOthersHook: (e, t) => (0, n.jsx)(f.Z, {
-          targetElementRef: g,
-          participants: S,
-          channel: r,
-          children: t => (0, n.jsx)(d.Z, y(O({}, t), {
+        countOthersHook: (e, t) => (0, r.jsx)(_.Z, {
+          targetElementRef: E,
+          participants: T,
+          channel: n,
+          children: t => (0, r.jsx)(d.Z, b(g({}, t), {
             tag: "span",
-            children: (0, n.jsx)(a.Text, {
-              ref: g,
+            children: (0, r.jsx)(s.Text, {
+              ref: E,
               variant: "text-sm/semibold",
               color: "text-primary",
               lineClamp: 1,

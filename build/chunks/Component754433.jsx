@@ -1,4 +1,4 @@
-/** Chunk was on 86031 **/
+/** Chunk was on 71387 **/
 /** chunk id: 754433, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk937615 = require("./937615.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -18,12 +18,12 @@ let u = e => {
       amount: t,
       currency: r
     },
-    className: a,
+    className: i,
     variant: u = "heading-md/semibold"
   } = e, d = (0, o.qr)(t, r);
   return (0, n.jsxs)(l.Text, {
     variant: u,
-    className: i()(c.striked, a),
+    className: a()(c.striked, i),
     children: [(0, n.jsx)(l.nn4, {
       children: s.intl.format(s.t["2CEGlp"], {
         price: d

@@ -1,11 +1,12 @@
-/** Chunk was on 26434 **/
-/** chunk id: 187506, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 187506, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   M: () => o
 }), require("./388685.js");
 var Chunk876215 = require("./876215.js"),
   Chunk911969 = require("./911969.js");
-let l = new Set([Chunk876215.s.TOP_ARTIST, Chunk876215.s.TOP_GAME, Chunk876215.s.PLAYED_GAME, Chunk876215.s.WATCHED_MEDIA, Chunk876215.s.LISTENED_SESSION, Chunk876215.s.LAUNCHED_ACTIVITY]);
+let a = new Set([Chunk876215.s.TOP_ARTIST, Chunk876215.s.TOP_GAME, Chunk876215.s.PLAYED_GAME, Chunk876215.s.WATCHED_MEDIA, Chunk876215.s.LISTENED_SESSION, Chunk876215.s.LAUNCHED_ACTIVITY]);
 
 function o(e) {
   var t;
@@ -14,6 +15,6 @@ function o(e) {
     let {
       contentInventoryEntry: t
     } = e;
-    return !l.has(t.content_type)
+    return !a.has(t.content_type)
   })
 }

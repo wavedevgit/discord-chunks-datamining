@@ -139,12 +139,12 @@ function A(e) {
   })
 }
 
-function N(e) {
+function C(e) {
   return h(e.code, e => {
     e.state = s.r2o.APP_NOT_OPENED
   })
 }
-class C extends(r = Chunk442837.ZP.Store) {
+class N extends(r = Chunk442837.ZP.Store) {
   getInvite(e) {
     return f.get(e)
   }
@@ -158,8 +158,8 @@ class C extends(r = Chunk442837.ZP.Store) {
     return p[e]
   }
 }
-l(C, "displayName", "InviteStore");
-let R = new C(Chunk570140.Z, {
+l(N, "displayName", "InviteStore");
+let R = new N(Chunk570140.Z, {
   INVITE_RESOLVE: m,
   INVITE_RESOLVE_SUCCESS: g,
   INVITE_RESOLVE_FAILURE: O,
@@ -172,5 +172,5 @@ let R = new C(Chunk570140.Z, {
   INVITE_ACCEPT_FAILURE: T,
   INVITE_APP_OPENING: S,
   INVITE_APP_OPENED: A,
-  INVITE_APP_NOT_OPENED: N
+  INVITE_APP_NOT_OPENED: C
 })

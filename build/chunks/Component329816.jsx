@@ -86,38 +86,38 @@ let Q = (0, Chunk663993.Un)({
     let {
       children: t,
       skipsSettingDefaultPageTitle: n
-    } = e, a = (0, B.getPlatform)(), u = l.tq || l.Em, m = (0, c.e7)([E.Z], () => E.Z.useForcedColors ? "yes" : "no"), j = i.useRef(document.body), U = "".concat(m);
-    return (0, C.G)(), (0, P.G)("AppSkeleton"), (0, r.jsx)(M.w, {
+    } = e, a = (0, B.getPlatform)(), u = l.tq || l.Em, m = (0, c.e7)([E.Z], () => E.Z.useForcedColors ? "yes" : "no"), k = i.useRef(document.body), U = "".concat(m);
+    return (0, N.G)(), (0, P.G)("AppSkeleton"), (0, r.jsx)(j.w, {
       children: (0, r.jsxs)(b.Z, {
-        children: [(0, r.jsx)(Z.Z, {
+        children: [(0, r.jsx)(F.Z, {
           skipsSettingDefaultPageTitle: n
         }), (0, r.jsx)(h.T, {
           children: (0, r.jsx)(Y.Z, {
             children: (0, r.jsxs)(d.JcV, {
-              containerRef: j,
+              containerRef: k,
               children: [(0, r.jsx)(K.Co, {}), (0, r.jsx)(W.ZP, {}), (0, r.jsx)(s.OU, {}), (0, r.jsx)(g.Wu, {
                 appContext: q.IlC.APP,
                 renderWindow: window,
                 children: (0, r.jsxs)(w.yP, {
                   children: [null != a ? (0, r.jsx)($, {}) : null, (0, r.jsxs)("div", {
                     className: o()(X.appAsidePanelWrapper, u && X.mobileAppAsidePanelWrapper),
-                    children: [(0, r.jsx)(N.K, {}), (0, r.jsx)("div", {
+                    children: [(0, r.jsx)(C.K, {}), (0, r.jsx)("div", {
                       className: X.notAppAsidePanel,
                       "data-app-not-dev-tools": true,
                       children: (0, r.jsx)(A.m, {
-                        children: (0, r.jsx)(L.OR, {
+                        children: (0, r.jsx)(x.OR, {
                           children: (0, r.jsx)(y.Z.Provider, {
                             value: O.Z,
                             children: (0, r.jsxs)(S.p, {
                               children: [(0, r.jsx)("div", {
                                 className: o()(u ? X.mobileApp : X.app),
                                 children: t
-                              }), (0, r.jsx)(f.Z, {}), (0, r.jsx)(I.Z, {}), (0, r.jsx)(_.Z, {}), (0, r.jsx)(d.nKe, {}), (0, r.jsx)(p.Z, {}), (0, r.jsx)(D.Ox, {}), (0, r.jsx)(w.Un, {}), (0, r.jsx)(L.ot, {}), (0, r.jsx)(d.Ixi, {}), (0, r.jsx)(v.Z, {}), (0, r.jsx)(x.Z, {}), (0, r.jsx)(Q, {}), (0, r.jsx)(J, {}), (0, r.jsx)(k.Z, {})]
+                              }), (0, r.jsx)(f.Z, {}), (0, r.jsx)(I.Z, {}), (0, r.jsx)(_.Z, {}), (0, r.jsx)(d.nKe, {}), (0, r.jsx)(p.Z, {}), (0, r.jsx)(D.Ox, {}), (0, r.jsx)(w.Un, {}), (0, r.jsx)(x.ot, {}), (0, r.jsx)(d.Ixi, {}), (0, r.jsx)(v.Z, {}), (0, r.jsx)(L.Z, {}), (0, r.jsx)(Q, {}), (0, r.jsx)(J, {}), (0, r.jsx)(M.Z, {})]
                             })
                           })
                         })
                       })
-                    }), (0, r.jsx)(T.Z, {}), (0, r.jsx)(H.Z, {}), (0, r.jsx)(F.Z, {}), (0, r.jsx)(R.Z, {
+                    }), (0, r.jsx)(T.Z, {}), (0, r.jsx)(H.Z, {}), (0, r.jsx)(V.Z, {}), (0, r.jsx)(R.Z, {
                       mobile: u
                     })]
                   }), false]

@@ -1,7 +1,8 @@
-/** Chunk was on 74891 **/
-/** chunk id: 533159, original params: t,e,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 533159, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => a
+  Z: () => s
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -9,22 +10,22 @@ var Chunk794295 = require("./794295.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk94209 = require("./94209.js");
 
-function a(t) {
+function s(e) {
   let {
-    termsOfServiceUrl: e,
+    termsOfServiceUrl: t,
     privacyPolicyUrl: n
-  } = t;
-  return null == e && null == n ? null : (0, i.jsxs)("span", {
+  } = e;
+  return null == t && null == n ? null : (0, r.jsxs)("span", {
     className: o.text,
-    children: [null != e && (0, i.jsx)(r.Z, {
-      href: e,
-      children: l.intl.string(l.t["8S0kcH"])
-    }), null != e && null != n && (0, i.jsx)("span", {
+    children: [null != t && (0, r.jsx)(i.Z, {
+      href: t,
+      children: a.intl.string(a.t["8S0kcH"])
+    }), null != t && null != n && (0, r.jsx)("span", {
       "aria-disabled": "true",
       children: "•"
-    }), null != n && (0, i.jsx)(r.Z, {
+    }), null != n && (0, r.jsx)(i.Z, {
       href: n,
-      children: l.intl.string(l.t.ZpyeCg)
+      children: a.intl.string(a.t.ZpyeCg)
     })]
   })
 }

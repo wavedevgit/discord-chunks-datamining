@@ -96,13 +96,13 @@ function T(e) {
     content: T,
     inlinePreview: S = false,
     viewingChannelId: A
-  } = e, N = i.useRef(null), {
-    analyticsLocations: C
+  } = e, C = i.useRef(null), {
+    analyticsLocations: N
   } = (0, c.ZP)(l.Z.USER_MENTION), R = (0, o.e7)([m.default], () => m.default.getUser(u)), P = (0, o.e7)([_.Z], () => _.Z.getChannel(b)), w = null != P ? P.getGuildId() : null, D = S || null == R || null == w || null == b ? true : e => {
     null != P && (0, s.jW)(e, async () => {
       let {
         default: e
-      } = await Promise.all([n.e("14006"), n.e("70274"), n.e("79695"), n.e("80417"), n.e("98783"), n.e("8982"), n.e("7717"), n.e("20180")]).then(n.bind(n, 757387));
+      } = await Promise.all([n.e("79695"), n.e("98783"), n.e("8982"), n.e("7717"), n.e("26070")]).then(n.bind(n, 757387));
       return t => (0, r.jsx)(e, v(y({}, t), {
         viewingChannelId: A,
         user: R,
@@ -110,32 +110,32 @@ function T(e) {
         guildId: w
       }))
     })
-  }, L = E.ZP.useName(R), x = (0, o.e7)([_.Z, p.ZP, h.Z], () => g.ZP.getNickname(w, b, R));
+  }, x = E.ZP.useName(R), L = (0, o.e7)([_.Z, p.ZP, h.Z], () => g.ZP.getNickname(w, b, R));
   if (null == R) return (0, r.jsx)(I, {
     userId: O,
     className: t,
     children: T
   });
-  let M = e => (0, r.jsx)(d.Z, v(y({
-    ref: N,
+  let j = e => (0, r.jsx)(d.Z, v(y({
+    ref: C,
     className: t,
     onContextMenu: D
   }, e), {
-    children: "@".concat(null != x ? x : L)
+    children: "@".concat(null != L ? L : x)
   }));
   return S ? (0, r.jsx)(c.Gt, {
-    value: C,
-    children: M()
+    value: N,
+    children: j()
   }) : (0, r.jsx)(c.Gt, {
-    value: C,
+    value: N,
     children: (0, r.jsx)(f.Z, {
-      targetElementRef: N,
+      targetElementRef: C,
       user: R,
       guildId: null != w ? w : true,
       channelId: b,
       position: a.tq ? "top" : "right",
       clickTrap: true,
-      children: e => M(e)
+      children: e => j(e)
     })
   })
 }

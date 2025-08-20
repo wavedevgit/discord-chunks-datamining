@@ -2,7 +2,7 @@
 /** chunk id: 580130, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => F
+  Z: () => V
 }), require("./388685.js"), require("./539854.js");
 var r, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -39,11 +39,11 @@ function A() {
   m = {}, E = {}, b = {}, y = false, O = false, v = false, I = new Set, T = new Set
 }
 
-function N(e) {
+function C(e) {
   m[e.id] = c.Z.createFromServer(e), null == E[e.sku_id] && (E[e.sku_id] = new Set), null == b[e.application_id] && (b[e.application_id] = new Set), null != e.subscription_id && (null == S[e.subscription_id] && (S[e.subscription_id] = new Set), S[e.subscription_id].add(e.id)), b[e.application_id].add(e.id), E[e.sku_id].add(e.id)
 }
 
-function C(e) {
+function N(e) {
   g[e.id] = c.Z.createFromServer(e)
 }
 
@@ -70,39 +70,39 @@ function w(e) {
     applicationId: t,
     entitlements: n
   } = e;
-  for (let e of (I.delete(t), T.add(t), n)) true !== e.consumed && N(e)
+  for (let e of (I.delete(t), T.add(t), n)) true !== e.consumed && C(e)
 }
 
 function D(e) {
   let {
     entitlements: t
   } = e;
-  g = {}, t.forEach(C)
+  g = {}, t.forEach(N)
 }
 
-function L() {}
+function x() {}
 
-function x() {
+function L() {
   y = true
-}
-
-function M(e) {
-  let {
-    entitlements: t,
-    excludeEnded: n
-  } = e;
-  for (let e of (O = true, y = false, v = !n, t)) N(e)
-}
-
-function k() {
-  O = false, y = false, v = false
 }
 
 function j(e) {
   let {
+    entitlements: t,
+    excludeEnded: n
+  } = e;
+  for (let e of (O = true, y = false, v = !n, t)) C(e)
+}
+
+function M() {
+  O = false, y = false, v = false
+}
+
+function k(e) {
+  let {
     entitlements: t
   } = e;
-  for (let e of t) N(e)
+  for (let e of t) C(e)
 }
 
 function U(e) {
@@ -111,17 +111,17 @@ function U(e) {
   } = e;
   for (let e of t)
     if (null != e.entitlements)
-      for (let t of e.entitlements) N(t)
+      for (let t of e.entitlements) C(t)
 }
 
 function G(e) {
-  return N(e.entitlement)
+  return C(e.entitlement)
 }
 
 function B(e) {
   return R(e.entitlement)
 }
-class V extends(r = Chunk442837.yh) {
+class Z extends(r = Chunk442837.yh) {
   initialize() {
     this.syncWith([Chunk283595.Z], () => true)
   }
@@ -228,20 +228,20 @@ class V extends(r = Chunk442837.yh) {
     }), exports
   }
 }
-h(V, "displayName", "EntitlementStore");
-let F = new V(Chunk570140.Z, {
+h(Z, "displayName", "EntitlementStore");
+let V = new Z(Chunk570140.Z, {
   ENTITLEMENT_FETCH_APPLICATION_START: P,
   ENTITLEMENT_FETCH_APPLICATION_SUCCESS: w,
-  ENTITLEMENT_FETCH_APPLICATION_FAIL: L,
+  ENTITLEMENT_FETCH_APPLICATION_FAIL: x,
   ENTITLEMENTS_GIFTABLE_FETCH_SUCCESS: D,
-  SKU_PURCHASE_SUCCESS: j,
-  VIRTUAL_CURRENCY_REDEEM_SUCCESS: j,
+  SKU_PURCHASE_SUCCESS: k,
+  VIRTUAL_CURRENCY_REDEEM_SUCCESS: k,
   LIBRARY_FETCH_SUCCESS: U,
   ENTITLEMENT_CREATE: G,
   ENTITLEMENT_UPDATE: G,
   ENTITLEMENT_DELETE: B,
   LOGOUT: A,
-  ENTITLEMENTS_FETCH_FOR_USER_START: x,
-  ENTITLEMENTS_FETCH_FOR_USER_SUCCESS: M,
-  ENTITLEMENTS_FETCH_FOR_USER_FAIL: k
+  ENTITLEMENTS_FETCH_FOR_USER_START: L,
+  ENTITLEMENTS_FETCH_FOR_USER_SUCCESS: j,
+  ENTITLEMENTS_FETCH_FOR_USER_FAIL: M
 })

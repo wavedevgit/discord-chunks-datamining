@@ -1,5 +1,5 @@
-/** Chunk was on 31930 **/
-/** chunk id: 788963, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 788963, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 module.exports = {
   premiumTrialBadge: "premiumTrialBadge__4c1e4",

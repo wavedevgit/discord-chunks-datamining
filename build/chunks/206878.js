@@ -1,7 +1,7 @@
 /** Chunk was on 93886 **/
 /** chunk id: 206878, original params: e,t,a (module,exports,require) **/
 require.d(exports, {
-  g: () => g
+  g: () => j
 }), require("./388685.js"), require("./35282.js");
 var Chunk647438 = require("./647438.js"),
   Chunk281598 = require("./281598.js");
@@ -86,13 +86,13 @@ let s = new Set([Chunk281598.jE.SHOP_ALL_BANNER_STATIC, Chunk281598.jE.HERO_BANN
       n = e.createReader();
     for (let e of (await new Promise(e => n.readEntries(e)))) e.isDirectory && t.includes(e.name) && a.add(e.name);
     return t.filter(e => !a.has(e))
-  }, b = e => {
+  }, v = e => {
     let {
       names: t,
       addError: a
     } = e, n = /^[a-z0-9]+(_[a-z0-9]+)*(\.[a-z0-9]+)?$/, r = t.filter(e => !n.test(e));
     r.length > 0 && a("File names must be in lowercase snake case", r)
-  }, v = (e, t, a, n) => {
+  }, b = (e, t, a, n) => {
     let r = t.size,
       l = r > 1e6 ? "".concat((r / 1e6).toFixed(2), "MB") : "".concat((r / 1e3).toFixed(2), "KB"),
       i = "".concat(t.name, " - ").concat(l);
@@ -103,8 +103,8 @@ let s = new Set([Chunk281598.jE.SHOP_ALL_BANNER_STATIC, Chunk281598.jE.HERO_BANN
   }, f = (e, t, a, n) => {
     let r = h[e];
     if (null != r)
-      for (let e of t) e.name.endsWith(".txt") || v(r, e, a, n)
-  }, g = () => {
+      for (let e of t) e.name.endsWith(".txt") || b(r, e, a, n)
+  }, j = () => {
     let [e, t] = Chunk647438.useState(false), [a, c] = Chunk647438.useState({}), [d, u] = Chunk647438.useState({}), m = Chunk647438.useCallback(function(e) {
       let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [];
       u(a => {
@@ -123,7 +123,7 @@ let s = new Set([Chunk281598.jE.SHOP_ALL_BANNER_STATIC, Chunk281598.jE.HERO_BANN
           [e]: [...r, ...t]
         })
       })
-    }, []), g = Chunk647438.useCallback(() => {
+    }, []), j = Chunk647438.useCallback(() => {
       exports(false), u({}), c({})
     }, []);
     return {
@@ -148,9 +148,9 @@ let s = new Set([Chunk281598.jE.SHOP_ALL_BANNER_STATIC, Chunk281598.jE.HERO_BANN
             for (let e of t.collectionFiles) {
               let t = (0, r.BU)(e),
                 l = null != t ? h[t] : null;
-              null != l && v(l, e, a, n)
+              null != l && b(l, e, a, n)
             }
-            b({
+            v({
               names: t.collectionFiles.map(e => e.name),
               addError: a
             });
@@ -169,12 +169,12 @@ let s = new Set([Chunk281598.jE.SHOP_ALL_BANNER_STATIC, Chunk281598.jE.HERO_BANN
               addError: a,
               addWarning: n
             } = e;
-            b({
+            v({
               names: Object.keys(t.profileEffectFilesMap),
               addError: a
             }), Object.entries(t.profileEffectFilesMap).forEach(e => {
               let [t, l] = e, i = l.map(e => e.name);
-              b({
+              v({
                 names: i.map(e => {
                   let t = e.indexOf("-");
                   return e.substring(0, t > 0 ? t : e.length)
@@ -196,7 +196,7 @@ let s = new Set([Chunk281598.jE.SHOP_ALL_BANNER_STATIC, Chunk281598.jE.HERO_BANN
               addError: a,
               addWarning: n
             } = e;
-            b({
+            v({
               names: t.avatarDecorationFiles.map(e => e.name),
               addError: a
             }), f(r.aB.AVATAR_DECORATION, t.avatarDecorationFiles, a, n)
@@ -219,6 +219,6 @@ let s = new Set([Chunk281598.jE.SHOP_ALL_BANNER_STATIC, Chunk281598.jE.HERO_BANN
           t(true)
         }
       }, [m, x]),
-      reset: g
+      reset: j
     }
   }

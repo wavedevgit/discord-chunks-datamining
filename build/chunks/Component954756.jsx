@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 954756, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 954756, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => b
+  Z: () => g
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -18,22 +19,22 @@ var Chunk951288 = require("./951288.js"),
   Chunk155433 = require("./155433.js"),
   Chunk388032 = require("./388032.jsx");
 
-function b() {
+function g() {
   let e = (0, Chunk442837.e7)([Chunk25990.Z], () => Chunk25990.Z.getIsSubmitDisabled()),
     t = (0, Chunk442837.e7)([Chunk25990.Z], () => Chunk25990.Z.getErrors()),
-    [n, b] = Chunk647438.useState(false),
-    x = Chunk647438.useMemo(() => (null == exports ? true : exports.message) != null ? null == exports ? true : exports.message : Object.keys(null != exports ? exports : {}).length > 0 ? Chunk388032.intl.string(Chunk388032.t["84MExs"]) : null, [exports]),
-    _ = Chunk647438.useCallback(async () => {
-      var e, t, n, i, r;
-      b(true);
-      let s = Chunk25990.Z.getAllPending(),
-        l = (0, Chunk164946.ED)(Chunk442837),
-        f = (0, Chunk164946.g9)(Chunk442837),
-        x = (0, Chunk164946.jE)(Chunk442837),
-        _ = true;
+    [n, g] = Chunk647438.useState(false),
+    E = Chunk647438.useMemo(() => (null == exports ? true : exports.message) != null ? null == exports ? true : exports.message : Object.keys(null != exports ? exports : {}).length > 0 ? Chunk388032.intl.string(Chunk388032.t["84MExs"]) : null, [exports]),
+    b = Chunk647438.useCallback(async () => {
+      var e, t, n, r, i;
+      g(true);
+      let a = Chunk25990.Z.getAllPending(),
+        s = (0, Chunk164946.ED)(Chunk442837),
+        m = (0, Chunk164946.g9)(Chunk442837),
+        E = (0, Chunk164946.jE)(Chunk442837),
+        b = true;
       if (Object.keys(Chunk852860).length > 0) {
-        let i = await (0, Chunk809206.Mn)(Chunk852860);
-        if (_ = _ && null != (t = null == Chunk951288 ? true : Chunk951288.ok) && exports, null == Chunk951288 ? true : Chunk951288.ok) {
+        let r = await (0, Chunk809206.Mn)(Chunk852860);
+        if (b = b && null != (t = null == Chunk951288 ? true : Chunk951288.ok) && exports, null == Chunk951288 ? true : Chunk951288.ok) {
           let e = Chunk951288.body;
           true !== Chunk442837.pendingAvatar && (0, Chunk330055.Z)({
             avatarHash: module.avatar,
@@ -44,32 +45,32 @@ function b() {
       }
       if (Object.keys(Chunk388032).length > 0) {
         let e = await (0, Chunk350327.Z)(Chunk388032);
-        _ = _ && null != (i = null == module ? true : module.ok) && Chunk951288, (null == module ? true : module.ok) ? (0, Chunk350327.pG)() : (0, Chunk647699.r)()
+        b = b && null != (r = null == module ? true : module.ok) && Chunk951288, (null == module ? true : module.ok) ? (0, Chunk350327.pG)() : (0, Chunk647699.r)()
       }
       if (true !== Chunk442837.pendingLegacyUsernameDisabled) try {
         await Chunk695346.R_.updateSetting(Chunk442837.pendingLegacyUsernameDisabled), (0, Chunk809206.iR)()
       } catch (e) {
-        (0, Chunk647699.r)(), _ = false
+        (0, Chunk647699.r)(), b = false
       }
-      if (Object.keys(x).length > 0) {
+      if (Object.keys(E).length > 0) {
         let {
           primaryGuildId: e
-        } = x;
+        } = E;
         if (true !== module) {
           let t = await (0, Chunk321114.c)(module, null !== module);
-          _ = _ && null != (r = null == exports ? true : exports.ok) && Chunk647438, (null == exports ? true : exports.ok) ? (0, Chunk809206.OU)() : (0, Chunk647699.r)()
+          b = b && null != (i = null == exports ? true : exports.ok) && Chunk647438, (null == exports ? true : exports.ok) ? (0, Chunk809206.OU)() : (0, Chunk647699.r)()
         }
       }
-      _ && (0, Chunk809206.b9)(), b(false)
+      b && (0, Chunk809206.b9)(), g(false)
     }, []),
-    j = Chunk647438.useCallback(() => {
+    y = Chunk647438.useCallback(() => {
       (0, Chunk809206.W3)()
     }, []);
   return (0, Chunk951288.jsx)(Chunk852860.Z, {
     submitting: require,
-    onSave: _,
-    onReset: j,
+    onSave: b,
+    onReset: y,
     disabled: module,
-    errorMessage: null != x ? x : true
+    errorMessage: null != E ? E : true
   })
 }

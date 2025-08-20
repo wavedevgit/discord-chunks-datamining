@@ -1,5 +1,6 @@
-/** Chunk was on 66181 **/
-/** chunk id: 198840, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 198840, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   category: "category_f06a86",
   categoryDivider: "categoryDivider_f06a86",

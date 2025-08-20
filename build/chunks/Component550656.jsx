@@ -34,13 +34,13 @@ function E(e) {
     layerContext: T,
     animationStyle: S
   } = e, A = i.useRef(null), {
-    isRichTooltip: N
-  } = (0, f.nr)(), C = i.useMemo(() => ("left" === y || "right" === y ? g : m).includes(O) ? O : "center", [y, O]);
+    isRichTooltip: C
+  } = (0, f.nr)(), N = i.useMemo(() => ("left" === y || "right" === y ? g : m).includes(O) ? O : "center", [y, O]);
   if (!n) return null;
   let R = (0, r.jsx)(c.j, {
     targetRef: a,
     position: y,
-    align: C,
+    align: N,
     spacing: v,
     autoInvert: true,
     nudgeAlignIntoViewport: true,
@@ -57,7 +57,7 @@ function E(e) {
         ref: A,
         id: E,
         className: o()(p.tooltip, {
-          [p.richTooltip]: N
+          [p.richTooltip]: C
         }),
         role: "tooltip",
         "data-position": f,

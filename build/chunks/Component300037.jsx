@@ -1,12 +1,13 @@
-/** Chunk was on 66181 **/
-/** chunk id: 300037, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 300037, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => x
+  Z: () => E
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk399606 = require("./399606.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -19,55 +20,55 @@ var Chunk120356 = require("./120356.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk651480 = require("./651480.js");
-let x = function(e) {
+let E = function(e) {
   let {
     className: t,
     guildId: n,
-    boostingVariant: r
-  } = e, x = (0, a.e7)([p.Z], () => p.Z.getGuild(n), [n]), _ = (0, m.Z)(null == x ? true : x.id).total;
-  return null == x ? (0, i.jsx)("div", {
-    className: s()(t, b.guildContainer),
-    children: (0, i.jsx)("div", {
-      className: b.guildInfoContainer,
-      children: (0, i.jsx)(o.Text, {
+    boostingVariant: i
+  } = e, E = (0, o.e7)([_.Z], () => _.Z.getGuild(n), [n]), b = (0, f.Z)(null == E ? true : E.id).total;
+  return null == E ? (0, r.jsx)("div", {
+    className: a()(t, g.guildContainer),
+    children: (0, r.jsx)("div", {
+      className: g.guildInfoContainer,
+      children: (0, r.jsx)(l.Text, {
         variant: "text-lg/bold",
-        children: f.intl.string(f.t["6Kwwur"])
+        children: m.intl.string(m.t["6Kwwur"])
       })
     })
-  }) : (0, i.jsxs)("div", {
-    className: s()(t, b.guildContainer),
-    children: [(0, i.jsx)(c.Z, {
-      className: b.__invalid_guildIcon,
-      guild: x,
+  }) : (0, r.jsxs)("div", {
+    className: a()(t, g.guildContainer),
+    children: [(0, r.jsx)(c.Z, {
+      className: g.__invalid_guildIcon,
+      guild: E,
       size: c.Z.Sizes.LARGER
-    }), (0, i.jsxs)("div", {
-      className: b.guildInfoContainer,
-      children: [(0, i.jsx)(o.Text, {
+    }), (0, r.jsxs)("div", {
+      className: g.guildInfoContainer,
+      children: [(0, r.jsx)(l.Text, {
         variant: "text-lg/bold",
-        children: x.name
-      }), (0, i.jsxs)("div", {
-        className: b.guildBoostStatsContainer,
-        children: [(0, i.jsx)(o.$Eu, {
-          color: o.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK,
-          className: b.guildBoostBadge
-        }), (0, i.jsx)(o.Text, {
+        children: E.name
+      }), (0, r.jsxs)("div", {
+        className: g.guildBoostStatsContainer,
+        children: [(0, r.jsx)(l.$Eu, {
+          color: l.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK,
+          className: g.guildBoostBadge
+        }), (0, r.jsx)(l.Text, {
           variant: "text-sm/bold",
           color: "text-muted",
-          children: f.intl.format(f.t["pob/cH"], {
-            subscriptions: _
+          children: m.intl.format(m.t["pob/cH"], {
+            subscriptions: b
           })
-        }), (0, i.jsx)("div", {
-          className: b.separator
-        }), (0, i.jsx)(o.Text, {
+        }), (0, r.jsx)("div", {
+          className: g.separator
+        }), (0, r.jsx)(l.Text, {
           variant: "text-sm/bold",
           color: "text-muted",
-          children: (0, g.nW)(x.premiumTier, {
+          children: (0, p.nW)(E.premiumTier, {
             useLevels: false
           })
         })]
       })]
-    }), r ? (0, i.jsx)(u.Z, {
-      guild: x,
+    }), i ? (0, r.jsx)(d.Z, {
+      guild: E,
       analyticsLocation: {
         page: h.ZY5.GUILD_BOOSTING_USER_SETTINGS,
         section: h.jXE.GUILD_BOOSTING_RECOMMENDED_SERVER_BOOST_THIS_SERVER_CTA,
@@ -75,15 +76,15 @@ let x = function(e) {
         objectType: h.Qqv.BUY
       },
       pauseAnimation: true,
-      size: l.zx.Sizes.MEDIUM,
-      color: l.zx.Colors.PRIMARY,
-      buttonText: f.intl.string(f.t.aBHecH)
-    }) : (0, i.jsx)(o.zxk, {
+      size: s.zx.Sizes.MEDIUM,
+      color: s.zx.Colors.PRIMARY,
+      buttonText: m.intl.string(m.t.aBHecH)
+    }) : (0, r.jsx)(l.zxk, {
       variant: "secondary",
-      text: f.intl.string(f.t.KLOhbG),
+      text: m.intl.string(m.t.KLOhbG),
       onClick: () => {
-        (0, d.f)({
-          guildId: x.id,
+        (0, u.f)({
+          guildId: E.id,
           location: {
             section: h.jXE.GUILD_BOOSTING_RECOMMENDED_SERVER_GO_TO_SERVER_CTA
           }

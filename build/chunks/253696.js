@@ -72,8 +72,8 @@ function b(e) {
   let T = (v || I) && n === p.Hz.REACTION ? a.ZP.emojiReactionFrecencyWithoutFetchingLatest.frequently.slice() : a.ZP.emojiFrecencyWithoutFetchingLatest.frequently.slice(),
     S = null != y ? a.ZP.getDisambiguatedEmojiContext(y.getGuildId()).favoriteEmojisWithoutFetchingLatest : [],
     A = (v || I) && n === p.Hz.REACTION ? a.ZP.emojiReactionFrecencyWithoutFetchingLatest.numFrequentlyItems : a.ZP.emojiFrecencyWithoutFetchingLatest.numFrequentlyItems,
-    N = T.slice(0, A),
-    C = null != O ? a.ZP.getGuildEmoji(O) : [],
+    C = T.slice(0, A),
+    N = null != O ? a.ZP.getGuildEmoji(O) : [],
     R = Object.values(null != (t = a.ZP.getDisambiguatedEmojiContext(null == y ? true : y.getGuildId()).groupedCustomEmojis) ? t : {}).reduce((e, t) => e += t.length, 0),
     {
       topEmojis: P,
@@ -84,7 +84,7 @@ function b(e) {
     }),
     {
       visibleTopEmojis: D,
-      visibleNewlyAddedEmojis: L
+      visibleNewlyAddedEmojis: x
     } = (0, d.J)({
       topEmojis: P,
       newlyAddedEmojis: w,
@@ -98,16 +98,16 @@ function b(e) {
     num_animated_expressions_favorites: S.filter(e => null == e ? true : e.animated).length,
     num_custom_expressions_favorites: S.filter(u.ZP.isCustomEmoji).length,
     num_standard_expressions_favorites: S.filter(e => null == e.id).length,
-    num_expressions_frecent: N.length,
-    num_animated_expressions_frecent: N.filter(e => null == e ? true : e.animated).length,
-    num_custom_expressions_frecent: N.filter(u.ZP.isCustomEmoji).length,
-    num_standard_expressions_frecent: N.filter(e => null == e.id).length,
-    num_current_guild_expressions: C.length,
+    num_expressions_frecent: C.length,
+    num_animated_expressions_frecent: C.filter(e => null == e ? true : e.animated).length,
+    num_custom_expressions_frecent: C.filter(u.ZP.isCustomEmoji).length,
+    num_standard_expressions_frecent: C.filter(e => null == e.id).length,
+    num_current_guild_expressions: N.length,
     num_custom_expressions_total: R,
     num_expressions_top_server: D.length,
     num_animated_expressions_top_server: D.filter(e => e.animated).length,
-    num_expressions_newly_added: L.length,
-    num_animated_expressions_newly_added: L.filter(e => e.animated).length
+    num_expressions_newly_added: x.length,
+    num_animated_expressions_newly_added: x.filter(e => e.animated).length
   }, n === p.Hz.REACTION && {
     is_burst: E
   }, null != b && {

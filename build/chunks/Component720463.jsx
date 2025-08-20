@@ -1,13 +1,14 @@
-/** Chunk was on 82081 **/
-/** chunk id: 720463, original params: e,t,r (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 720463, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   E: () => P,
-  WrappedBalanceWidgetEarnedOrbsCoachmarkModal: () => T
+  WrappedBalanceWidgetEarnedOrbsCoachmarkModal: () => D
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk607070 = require("./607070.js"),
@@ -26,7 +27,47 @@ var Chunk951288 = require("./951288.js"),
   Chunk161093 = require("./161093.js"),
   Chunk447489 = require("./447489.js"),
   Chunk484885 = require("./484885.js");
-let k = () => {
+
+function S(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function A(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      S(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function C(e, t) {
+  if (null == e) return {};
+  var n, r, i = N(e, t);
+  if (Object.getOwnPropertySymbols) {
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+  }
+  return i
+}
+
+function N(e, t) {
+  if (null == e) return {};
+  var n, r, i = {},
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+  return i
+}
+let R = () => {
     let e = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion);
     return (0, Chunk951288.jsx)("div", {
       className: Chunk161093.centerContent,
@@ -51,28 +92,28 @@ let k = () => {
   },
   P = e => {
     let {
-      descriptionText: t = j.intl.string(j.t["6If1Cw"]),
-      onClose: r = () => {}
+      descriptionText: t = y.intl.string(y.t["6If1Cw"]),
+      onClose: n = () => {}
     } = e;
-    return (0, n.jsxs)("div", {
-      className: i()(v.container, x.baseCardOutline),
-      children: [(0, n.jsx)(g.s, {
-        onClick: r
-      }), (0, n.jsx)(_.V, {
+    return (0, r.jsxs)("div", {
+      className: o()(v.container, O.baseCardOutline),
+      children: [(0, r.jsx)(g.s, {
+        onClick: n
+      }), (0, r.jsx)(E.V, {
         rightOffset: 20,
         invertTail: true,
         tailSpineClassName: v.coachmarkTailSpine,
         tailTargetInnerClassName: v.coachmarkTailTargetInner
-      }), (0, n.jsx)(k, {}), (0, n.jsx)("div", {
+      }), (0, r.jsx)(R, {}), (0, r.jsx)("div", {
         className: v.contentContainer,
-        children: (0, n.jsxs)("div", {
+        children: (0, r.jsxs)("div", {
           className: v.textContainer,
-          children: [(0, n.jsx)(s.X6q, {
+          children: [(0, r.jsx)(l.X6q, {
             variant: "heading-md/bold",
             color: "header-primary",
             className: v.coachmarkTitle,
-            children: j.intl.string(j.t["D/nzVl"])
-          }), (0, n.jsx)(s.Text, {
+            children: y.intl.string(y.t["D/nzVl"])
+          }), (0, r.jsx)(l.Text, {
             variant: "text-sm/medium",
             className: v.coachmarkDescription,
             children: t
@@ -85,36 +126,22 @@ let k = () => {
 function w(e) {
   var {
     backgroundElementRef: t,
-    onClickPill: r,
-    onClose: o,
-    onCloseCallback: i
+    onClickPill: n,
+    onClose: a,
+    onCloseCallback: o
   } = e;
-  ! function(e, t) {
-    if (null != e) {
-      var r, n, a = function(e, t) {
-        if (null == e) return {};
-        var r, n, a = {},
-          o = Object.keys(e);
-        for (n = 0; n < o.length; n++) r = o[n], t.indexOf(r) >= 0 || (a[r] = e[r]);
-        return a
-      }(e, t);
-      if (Object.getOwnPropertySymbols) {
-        var o = Object.getOwnPropertySymbols(e);
-        for (n = 0; n < o.length; n++) r = o[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r])
-      }
-    }
-  }(e, ["backgroundElementRef", "onClickPill", "onClose", "onCloseCallback"]);
+  C(e, ["backgroundElementRef", "onClickPill", "onClose", "onCloseCallback"]);
   let {
-    balance: c
-  } = (0, d.A)(), s = a.useCallback(async () => {
-    await (0, u.j2)(), await o(), i()
-  }, [o, i]), l = a.useCallback(async () => {
-    await s(), r()
-  }, [r, s]);
-  return (0, n.jsxs)(h.E9, {
+    balance: s
+  } = (0, f.A)(), l = i.useCallback(async () => {
+    await (0, d.j2)(), await a(), o()
+  }, [a, o]), c = i.useCallback(async () => {
+    await l(), n()
+  }, [n, l]);
+  return (0, r.jsxs)(m.E9, {
     className: v.coachmarkModalContainer,
     backgroundElementRef: t,
-    onGetBoundingRect: O.dG4,
+    onGetBoundingRect: b.dG4,
     getOffsetsRelativeToElement: () => ({
       top: 0,
       right: 0
@@ -126,37 +153,20 @@ function w(e) {
       top: 84,
       right: 32
     },
-    children: [(0, n.jsx)(m.A4, {
+    children: [(0, r.jsx)(p.A4, {
       isInModalOverlay: true,
-      onClick: l,
-      balance: c,
-      balanceWidgetMode: p.b.DEFAULT
-    }), (0, n.jsx)(P, {
-      onClose: s
+      onClick: c,
+      balance: s,
+      balanceWidgetMode: _.b.DEFAULT
+    }), (0, r.jsx)(P, {
+      onClose: l
     })]
   })
 }
 
-function T(e) {
-  return (0, n.jsx)(f.x, {
+function D(e) {
+  return (0, r.jsx)(h.x, {
     errorSource: "ORBS_EARNED_ORBS_COACHMARK_MODAL",
-    children: (0, n.jsx)(w, function(e) {
-      for (var t = 1; t < arguments.length; t++) {
-        var r = null != arguments[t] ? arguments[t] : {},
-          n = Object.keys(r);
-        "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-          return Object.getOwnPropertyDescriptor(r, e).enumerable
-        }))), n.forEach(function(t) {
-          var n;
-          n = r[t], t in e ? Object.defineProperty(e, t, {
-            value: n,
-            enumerable: true,
-            configurable: true,
-            writable: true
-          }) : e[t] = n
-        })
-      }
-      return e
-    }({}, e))
+    children: (0, r.jsx)(w, A({}, e))
   })
 }

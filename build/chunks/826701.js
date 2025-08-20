@@ -1,3 +1,4 @@
-/** Chunk was on 66181 **/
-/** chunk id: 826701, original params: e (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 826701, original params: e (module,exports,re quire) **/
+"use strict";
 module.exports = "/assets/a6bb84f7256073af.png"

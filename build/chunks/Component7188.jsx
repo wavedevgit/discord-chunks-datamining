@@ -64,9 +64,9 @@ function A(e, t) {
   }), e
 }
 
-function N(e, t) {
+function C(e, t) {
   if (null == e) return {};
-  var n, r, i = C(e, t);
+  var n, r, i = N(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -74,7 +74,7 @@ function N(e, t) {
   return i
 }
 
-function C(e, t) {
+function N(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -113,21 +113,21 @@ function w(e) {
     hideBadges: t = false,
     stream: n,
     location: u
-  } = e, h = N(e, ["hideBadges", "stream", "location"]);
+  } = e, h = C(e, ["hideBadges", "stream", "location"]);
   let v = i.useRef(null),
     {
       analyticsLocations: I,
       parentAnalyticsLocation: S
     } = (0, s.ZP)(),
-    C = (0, a.e7)([p.default], () => m.ZP.isPremium(p.default.getCurrentUser(), y.p9.TIER_1)),
+    N = (0, a.e7)([p.default], () => m.ZP.isPremium(p.default.getCurrentUser(), y.p9.TIER_1)),
     w = (0, a.e7)([_.Z], () => _.Z.getChannel(null == n ? true : n.channelId)),
     D = i.useMemo(() => null != n ? [n] : [], [n]),
-    L = i.useCallback(() => {
+    x = i.useCallback(() => {
       null != w && (0, f.Z)(w.getGuildId(), w.id, I)
     }, [w, I]);
   if (null == n || null == w) return null;
-  let x = R;
-  return t || C || (x = P), (0, r.jsx)(o.yRy, {
+  let L = R;
+  return t || N || (L = P), (0, r.jsx)(o.yRy, {
     targetElementRef: v,
     position: "top",
     renderPopout: e => {
@@ -141,7 +141,7 @@ function w(e) {
           activeStreams: D,
           onClose: t,
           showReportOption: true,
-          handleGoLive: L,
+          handleGoLive: x,
           onInteraction: (0, c.u)("ManageStreamsButton", null != S ? S : u, {
             entrypoint: b.A5.OTHER_BUTTON
           })
@@ -152,7 +152,7 @@ function w(e) {
     children: e => (0, r.jsx)(E.Z, T(A(T({}, e), {
       buttonRef: v,
       label: O.intl.string(O.t.tmiYpK),
-      iconComponent: x,
+      iconComponent: L,
       onClick: t => {
         (null != S || null != u) && (0, l.v)(null != S ? S : u, l.d.STREAM_SETTINGS), null == e || e.onClick(t)
       }

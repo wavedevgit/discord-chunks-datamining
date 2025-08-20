@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => R,
-  b: () => C
+  b: () => N
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -80,7 +80,7 @@ function A(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let N = e => {
+let C = e => {
   let {
     size: t,
     stroke: n
@@ -88,7 +88,7 @@ let N = e => {
   return t / 2 + n
 };
 
-function C(e) {
+function N(e) {
   var t;
   let {
     user: n,
@@ -100,29 +100,29 @@ function C(e) {
     avatarSize: T,
     avatarOffsetX: S,
     avatarOffsetY: A,
-    bannerWidth: C,
+    bannerWidth: N,
     bannerHeight: R,
     themePadding: P,
     pendingAccentColor: w,
     animateOnHover: D = false
-  } = e, L = (0, _.Dt)(), [x, M] = i.useState(false), k = (0, l.e7)([m.Z], () => m.Z.isFocused()), j = h.QK.getSetting(), {
+  } = e, x = (0, _.Dt)(), [L, j] = i.useState(false), M = (0, l.e7)([m.Z], () => m.Z.isFocused()), k = h.QK.getSetting(), {
     bannerSrc: U,
     status: G
   } = (0, E.Z)({
     displayProfile: a,
     pendingBanner: O,
-    size: C,
-    canAnimate: D || !j ? x : k
-  }), B = (0, u.dQu)(c.Z.unsafe_rawColors.PRIMARY_800).hex(), V = n.getAvatarURL(b, (0, u.pxk)(T)), F = (0, s._i)((0, d.ZP)(V, B, false)), Z = (0, f.Z)(null != (t = null != w ? w : null == a ? true : a.primaryColor) ? t : F).hex, H = N(T), Y = H + S - P, W = R - A - P;
+    size: N,
+    canAnimate: D || !k ? L : M
+  }), B = (0, u.dQu)(c.Z.unsafe_rawColors.PRIMARY_800).hex(), Z = n.getAvatarURL(b, (0, u.pxk)(T)), V = (0, s._i)((0, d.ZP)(Z, B, false)), F = (0, f.Z)(null != (t = null != w ? w : null == a ? true : a.primaryColor) ? t : V).hex, H = C(T), Y = H + S - P, W = R - A - P;
   return (0, r.jsxs)("svg", {
     className: y.mask,
-    viewBox: "0 0 ".concat(C, " ").concat(R),
+    viewBox: "0 0 ".concat(N, " ").concat(R),
     style: {
-      minWidth: C,
+      minWidth: N,
       minHeight: R
     },
     children: [(0, r.jsxs)("mask", {
-      id: L,
+      id: x,
       children: [(0, r.jsx)("rect", {
         fill: "white",
         x: "0",
@@ -141,18 +141,18 @@ function C(e) {
       width: "100%",
       height: "100%",
       overflow: "visible",
-      mask: "url(#".concat(L, ")"),
+      mask: "url(#".concat(x, ")"),
       children: [v, (0, r.jsx)("div", {
         className: o()(y.banner, I),
-        onMouseMove: () => M(true),
-        onMouseLeave: () => M(false),
+        onMouseMove: () => j(true),
+        onMouseLeave: () => j(false),
         style: {
           height: R,
           minHeight: R,
           backgroundImage: null != U ? "url(".concat(U, ")") : true,
-          backgroundColor: "COMPLETE" !== G ? c.Z.unsafe_rawColors.PRIMARY_800.css : Z
+          backgroundColor: "COMPLETE" !== G ? c.Z.unsafe_rawColors.PRIMARY_800.css : F
         },
-        children: !j && (0, g.F8)(U) && (0, r.jsx)(p.Z, {
+        children: !k && (0, g.F8)(U) && (0, r.jsx)(p.Z, {
           className: y.gifTag
         })
       })]
@@ -168,7 +168,7 @@ function R(e) {
   } = e, a = S(e, ["themeType", "displayProfile", "canUsePremiumProfileCustomization"]);
   let o = b.q[t],
     s = i || (null == n ? true : n.canUsePremiumProfileCustomization) || false;
-  return (0, r.jsx)(C, T(v({}, a, o), {
+  return (0, r.jsx)(N, T(v({}, a, o), {
     displayProfile: n,
     themePadding: s ? o.themePadding : 0
   }))

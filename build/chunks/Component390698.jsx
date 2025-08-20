@@ -1,4 +1,4 @@
-/** Chunk was on 86031 **/
+/** Chunk was on 71387 **/
 /** chunk id: 390698, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk863577 = require("./863577.js");
@@ -22,7 +22,7 @@ let c = e => {
     align: "left",
     text: o.intl.string(o.t.y1VWkZ),
     children: e => {
-      var r, a;
+      var r, i;
       return (0, n.jsxs)("div", (r = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {},
@@ -41,8 +41,8 @@ let c = e => {
         }
         return e
       }({
-        className: i()(s.partialOwnStateContainer, t)
-      }, e), a = a = {
+        className: a()(s.partialOwnStateContainer, t)
+      }, e), i = i = {
         children: [(0, n.jsx)("span", {
           className: s.iconWrapper,
           children: (0, n.jsx)(l.d3s, {
@@ -54,15 +54,15 @@ let c = e => {
           variant: "text-md/semibold",
           children: o.intl.string(o.t.BEjTio)
         })]
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var r = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e);
           r.push.apply(r, n)
         }
         return r
-      })(Object(a)).forEach(function(e) {
-        Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(a, e))
+      })(Object(i)).forEach(function(e) {
+        Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
       }), r))
     }
   }) : (0, n.jsx)(l.Text, {

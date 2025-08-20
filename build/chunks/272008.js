@@ -2,28 +2,28 @@
 /** chunk id: 272008, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  AH: () => M,
+  AH: () => j,
   Ag: () => Y,
   CS: () => P,
-  EW: () => Z,
+  EW: () => F,
   OR: () => H,
-  QB: () => k,
-  T0: () => F,
+  QB: () => M,
+  T0: () => V,
   Wf: () => B,
   cT: () => q,
-  eT: () => V,
+  eT: () => Z,
   gU: () => Q,
   gl: () => U,
   is: () => w,
   it: () => D,
   lL: () => X,
   lx: () => K,
-  m0: () => x,
+  m0: () => L,
   nE: () => G,
-  pf: () => j,
+  pf: () => k,
   qm: () => W,
   w: () => z,
-  xw: () => L
+  xw: () => x
 }), require("./415506.js");
 var Chunk990547 = require("./990547.js"),
   Chunk544891 = require("./544891.js"),
@@ -70,7 +70,7 @@ function A(e) {
   return e
 }
 
-function N(e, t) {
+function C(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -81,8 +81,8 @@ function N(e, t) {
   return n
 }
 
-function C(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : N(Object(t)).forEach(function(n) {
+function N(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : C(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -142,7 +142,7 @@ async function D() {
     rejectWithError: false
   })
 }
-async function L() {
+async function x() {
   if (!Chunk569984.Z.isFetchingCurrentQuests) {
     Chunk570140.Z.dispatch({
       type: "QUESTS_FETCH_CURRENT_QUESTS_BEGIN"
@@ -177,7 +177,7 @@ async function L() {
     }
   }
 }
-async function x(e) {
+async function L(e) {
   let {
     questId: t,
     streamKey: n,
@@ -218,7 +218,7 @@ async function x(e) {
     })
   }
 }
-async function M(e, t) {
+async function j(e, t) {
   if (null != t.questContentCTA && (0, _._3)({
       questId: e,
       questContent: t.questContent,
@@ -251,7 +251,7 @@ async function M(e, t) {
     }
   }
 }
-async function k(e, t, n) {
+async function M(e, t, n) {
   if (!g.Z.isClaimingReward(e)) {
     a.Z.dispatch({
       type: "QUESTS_CLAIM_REWARD_BEGIN",
@@ -285,7 +285,7 @@ async function k(e, t, n) {
     }
   }
 }
-async function j(e) {
+async function k(e) {
   if (!g.Z.isFetchingRewardCode(e)) {
     a.Z.dispatch({
       type: "QUESTS_FETCH_REWARD_CODE_BEGIN",
@@ -367,7 +367,7 @@ async function B(e) {
     })
   }
 }
-async function V(e) {
+async function Z(e) {
   try {
     let t = await i.tn.del({
       url: I.ANM.QUESTS_PREVIEW_STATUS(e),
@@ -386,7 +386,7 @@ async function V(e) {
     })
   }
 }
-async function F(e) {
+async function V(e) {
   try {
     a.Z.dispatch({
       type: "QUESTS_DOCK_RESET_SOFT_DISMISSAL"
@@ -409,7 +409,7 @@ async function F(e) {
   }
 }
 
-function Z(e) {
+function F(e) {
   a.Z.dispatch({
     type: "QUESTS_DELIVERY_OVERRIDE",
     questId: e
@@ -495,14 +495,14 @@ async function z(e, t) {
       }), h.Z.recordQuestRequestApiResponse("/quests/decision", {
         wasSuccessful: true
       }), null == v) return;
-    e === E.Ok.DESKTOP_ACCOUNT_PANEL_AREA && p.Z.startTracking(v.id), d.default.track(I.rMx.QUEST_DECISION_RECEIVED, C(A({}, (0, c.Z)()), {
+    e === E.Ok.DESKTOP_ACCOUNT_PANEL_AREA && p.Z.startTracking(v.id), d.default.track(I.rMx.QUEST_DECISION_RECEIVED, N(A({}, (0, c.Z)()), {
       quest_id: v.id,
       caller_source: t
     }))
   } catch (n) {
     h.Z.recordQuestRequestApiResponse("/quests/decision", {
       wasSuccessful: false
-    }), d.default.track(I.rMx.QUEST_DECISION_ROUNDTRIP_ERROR, C(A({}, (0, c.Z)()), {
+    }), d.default.track(I.rMx.QUEST_DECISION_ROUNDTRIP_ERROR, N(A({}, (0, c.Z)()), {
       reason: null != (b = null == n ? true : n.message) ? b : null,
       api_error: new o.Z(n).getAnyErrorMessage(),
       caller_source: t

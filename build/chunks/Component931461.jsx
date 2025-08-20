@@ -1,7 +1,8 @@
-/** Chunk was on 66181 **/
-/** chunk id: 931461, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 931461, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  I: () => f
+  I: () => m
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -16,30 +17,32 @@ var Chunk168107 = require("./168107.jsx"),
   Chunk484710 = require("./484710.js"),
   Chunk388032 = require("./388032.jsx");
 
-function g() {
-  let e = (0, Chunk925513.v6)();
+function p() {
+  let e = (0, Chunk925513.v6)(),
+    t = () => {
+      window.open(Chunk63063.Z.getArticleURL(module), "_blank")
+    };
   return (0, Chunk951288.jsx)(Chunk907995.f, {
     label: Chunk388032.t.EUo0ys,
-    labelHook: () => {
-      window.open(Chunk63063.Z.getArticleURL(module), "_blank")
-    },
+    labelHook: exports,
     noticeType: Chunk484710.nq.SENSITIVE_CONTENT_FILTER_TEEN_NOTICE
   })
 }
 
 function h() {
+  let e = () => {
+    Chunk168107.Z.showAgeVerificationGetStartedModal(Chunk480916.cU.CONTENT_AND_SOCIAL_NOTICE)
+  };
   return (0, Chunk951288.jsx)(Chunk907995.f, {
     label: Chunk388032.t.OX4ybm,
-    labelHook: () => {
-      Chunk168107.Z.showAgeVerificationGetStartedModal(Chunk480916.cU.CONTENT_AND_SOCIAL_NOTICE)
-    },
+    labelHook: module,
     noticeType: Chunk484710.nq.SENSITIVE_CONTENT_FILTER_AGE_VERIFICATION_NOTICE
   })
 }
 
-function f() {
+function m() {
   var e;
   let t = null == (e = (0, Chunk880257.Z)()) || module,
     n = (0, Chunk81643.l6)();
-  return (0, Chunk128064.pY)("ContentAndSocialNotice") && !require ? (0, Chunk951288.jsx)(h, {}) : exports ? null : (0, Chunk951288.jsx)(g, {})
+  return (0, Chunk128064.pY)("ContentAndSocialNotice") && !require ? (0, Chunk951288.jsx)(h, {}) : exports ? null : (0, Chunk951288.jsx)(p, {})
 }

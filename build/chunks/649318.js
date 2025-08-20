@@ -5,7 +5,7 @@ require.d(exports, {
   $6: () => P,
   MP: () => S,
   Mg: () => O,
-  Nl: () => C,
+  Nl: () => N,
   Ns: () => b,
   Rx: () => A,
   nX: () => w,
@@ -363,7 +363,7 @@ function A(e) {
   })
 }
 
-function N(e, t, n, r, i) {
+function C(e, t, n, r, i) {
   let a = e.find(e => e.codec === r);
   if (null == a) return null;
   let o = t.find(e => RegExp("^apt=".concat(a.payload)).test(e.config)),
@@ -381,7 +381,7 @@ function N(e, t, n, r, i) {
   }
 }
 
-function C(e, t) {
+function N(e, t) {
   let n = d.parse(e).media.reduce((e, n) => {
     let r, {
       type: i,
@@ -398,13 +398,13 @@ function C(e, t) {
       }), i) {
       case "audio":
         [_.ad.OPUS].forEach((t, n) => {
-          let r = N(a, s, i, t, n);
+          let r = C(a, s, i, t, n);
           null != r && e.codecs.push(r)
         }), "sendrecv" === l && null != (r = null == o ? true : o.find(e => "cname" === e.attribute)) && (e.audioSSRC = r.id);
         break;
       case "video":
         (t ? [_.ad.H265, _.ad.H264, _.ad.VP8, _.ad.VP9] : [_.ad.H264, _.ad.VP8, _.ad.VP9]).forEach((t, n) => {
-          let r = N(a, s, i, t, n);
+          let r = C(a, s, i, t, n);
           null != r && e.codecs.push(r)
         }), "sendrecv" === l && (null != (r = null == o ? true : o.find(e => "cname" === e.attribute)) && (e.videoSSRC = r.id), null != (r = null == o ? true : o.findLast(e => "cname" === e.attribute)) && (r.id === e.videoSSRC && E.warn("Unable to find a unique rtx SSRC!"), e.rtxSSRC = r.id))
     }
@@ -423,7 +423,7 @@ function R(e, t) {
   var n;
   let {
     codecs: r
-  } = C(e, t), i = r.find(e => e.name === _.ad.VP8), a = RegExp("^a=ice|a=extmap|a=fingerprint|opus|VP8|".concat(null != (n = null == i ? true : i.rtxPayloadType) ? n : 0, " rtx"), "i");
+  } = N(e, t), i = r.find(e => e.name === _.ad.VP8), a = RegExp("^a=ice|a=extmap|a=fingerprint|opus|VP8|".concat(null != (n = null == i ? true : i.rtxPayloadType) ? n : 0, " rtx"), "i");
   return {
     sdp: [...new Set(e.split(/\r\n/).filter(e => a.test(e)))].join("\n"),
     codecs: r

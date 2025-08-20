@@ -1,4 +1,4 @@
-/** Chunk was on 36499 **/
+/** Chunk was on 5665 **/
 /** chunk id: 705563, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -29,7 +29,7 @@ function y(e) {
     joinRequest: C,
     isModmin: x,
     guildId: v,
-    maxMembers: j
+    maxMembers: O
   } = (0, i.cj)([p.Z, c.Z, u.Z], () => {
     let e = p.Z.getRequest(_),
       t = c.Z.getGuild(null == e ? true : e.guildId);
@@ -39,7 +39,7 @@ function y(e) {
       guildId: null == t ? true : t.id,
       maxMembers: null == t ? true : t.maxMembers
     }
-  }), O = (0, i.e7)([s.Z], () => null != v ? s.Z.getMemberCount(v) : 0), E = null != j && (null != O ? O : 0) >= j, {
+  }), j = (0, i.e7)([s.Z], () => null != v ? s.Z.getMemberCount(v) : 0), E = null != O && (null != j ? j : 0) >= O, {
     approveRequest: S,
     rejectRequest: P,
     submitting: I

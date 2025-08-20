@@ -1,9 +1,10 @@
-/** Chunk was on 86590 **/
-/** chunk id: 93687, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 93687, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => i
+  Z: () => r
 });
-let i = (0, require("./818083.js").B)({
+let r = (0, require("./818083.js").B)({
   kind: "user",
   id: "2024-04_gdm_presence",
   label: "Group DM Presence",
