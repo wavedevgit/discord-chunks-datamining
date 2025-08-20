@@ -1,7 +1,7 @@
 /** Chunk was on 27069 **/
 /** chunk id: 623132, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => P
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -132,7 +132,7 @@ function h(e) {
   }) : null
 }
 
-function E(e) {
+function P(e) {
   let {
     user: t,
     guildId: r,
@@ -142,12 +142,12 @@ function E(e) {
     loading: s = false,
     disableInteraction: g = false
   } = e, {
-    gameName: E = b.intl.string(b.t.GIWFlJ),
-    imageSrc: P,
+    gameName: P = b.intl.string(b.t.GIWFlJ),
+    imageSrc: E,
     applicationId: w,
-    comment: _,
-    tags: S
-  } = a, I = {
+    comment: I,
+    tags: _
+  } = a, S = {
     variant: "heading-sm/semibold",
     color: "text-default"
   }, T = o.default.getCurrentUser(), N = (null == T ? true : T.id) === t.id;
@@ -169,30 +169,31 @@ function E(e) {
   }) : (0, n.jsxs)("div", {
     className: m.card,
     children: [(0, n.jsx)(u.Z, {
-      imageSrc: P,
-      gameName: E,
+      imageSrc: E,
+      gameName: P,
       applicationId: w,
       userId: t.id,
       disableInteraction: g,
       hideTooltip: true
     }), (0, n.jsxs)("div", {
       className: m.details,
-      children: [g ? (0, n.jsx)(l.X6q, y(j({}, I), {
-        children: E
+      children: [g ? (0, n.jsx)(l.X6q, y(j({}, S), {
+        children: P
       })) : (0, n.jsx)(v, j({
         applicationId: w,
         userId: t.id,
-        gameName: E
-      }, I)), null != _ && (0, n.jsx)(x, {
-        text: _,
+        gameName: P
+      }, S)), null != I && (0, n.jsx)(x, {
+        text: I,
         user: t,
         guildId: r,
         channelId: i
       }), (0, n.jsx)(d.Z, {
-        tags: S,
+        tags: _,
         isCurrentUser: N,
         widgetType: c,
-        applicationId: w
+        applicationId: w,
+        disableInteraction: g
       }), !g && (0, n.jsx)(h, {
         className: m.socialProof,
         applicationId: w,

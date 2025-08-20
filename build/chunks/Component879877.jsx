@@ -20,43 +20,53 @@ function b(e) {
     tags: t,
     isCurrentUser: r,
     widgetType: i,
-    applicationId: a
-  } = e, c = null == t ? true : t.filter(e => null != (0, d.zK)(e)), s = (0, l.useRef)(new Map), b = (0, l.useRef)(null), [y, v] = (0, l.useState)(0), [x, h] = (0, l.useState)(false), {
-    trackUserProfileAction: E
-  } = (0, o.KZ)(), P = j(b, c, s, v);
-  if ((0, l.useEffect)(() => (P(), window.addEventListener("resize", P), () => {
-      window.removeEventListener("resize", P)
-    }), [P, null == c ? true : c.join("")]), null == c || 0 === c.length) return null;
-  let w = x ? c : c.slice(0, c.length - y);
+    applicationId: a,
+    disableInteraction: c = false
+  } = e, b = null == t ? true : t.filter(e => null != (0, d.zK)(e)), y = (0, l.useRef)(new Map), v = (0, l.useRef)(null), [x, h] = (0, l.useState)(0), [P, E] = (0, l.useState)(false), {
+    trackUserProfileAction: w
+  } = (0, o.KZ)(), I = r && !c && (0, s.M8)(i), _ = j(v, b, y, h);
+  if ((0, l.useEffect)(() => (_(), window.addEventListener("resize", _), () => {
+      window.removeEventListener("resize", _)
+    }), [_, null == b ? true : b.join("")]), null == b || 0 === b.length) return I ? (0, n.jsx)("div", {
+    className: g.tagListContainer,
+    children: (0, n.jsx)(u.Z, {
+      tags: t,
+      widgetType: i,
+      applicationId: a
+    })
+  }) : null;
+  let S = P ? b : b.slice(0, b.length - x);
   return (0, n.jsxs)("div", {
     className: g.tagListContainer,
     children: [(0, n.jsx)("ul", {
       className: g.tagList,
       "aria-label": f.intl.string(f.t.EfjTi4),
-      children: w.map(e => (0, n.jsx)(p, {
+      children: S.map(e => (0, n.jsx)(p, {
         tag: e,
         isCurrentUser: r,
         applicationId: a,
         widgetType: i,
         ref: t => {
-          null != t && s.current.set(e, t)
-        }
+          null != t && y.current.set(e, t)
+        },
+        disableInteraction: c
       }, e))
-    }), y > 0 && (x ? (0, n.jsx)(m, {
+    }), x > 0 && (P ? (0, n.jsx)(m, {
       onClick: () => {
-        h(false), E({
+        E(false), w({
           action: "COLLAPSE_GAME_TAGS"
         })
       }
     }) : (0, n.jsx)(O, {
-      numHidden: y,
+      numHidden: x,
       onClick: () => {
-        h(true), E({
+        E(true), w({
           action: "EXPAND_GAME_TAGS"
         })
       },
-      ref: b
-    })), r && (0, n.jsx)(u.Z, {
+      ref: v,
+      disableInteraction: c
+    })), r && !c && (0, n.jsx)(u.Z, {
       tags: t,
       widgetType: i,
       applicationId: a
@@ -69,27 +79,28 @@ let p = e => {
       isCurrentUser: r,
       applicationId: l,
       widgetType: a,
-      ref: o
-    } = e, u = (0, d.zK)(t);
-    if (null == u) return null;
+      disableInteraction: o,
+      ref: u
+    } = e, b = (0, d.zK)(t);
+    if (null == b) return null;
     let {
-      getText: b,
-      icon: p
-    } = u, O = () => {
+      getText: p,
+      icon: O
+    } = b, m = () => {
       (0, s.RZ)(a, l, t), (0, c.pQ)({
         action: "REMOVE_GAME_TAGS"
       })
     };
     return (0, n.jsxs)("li", {
       className: g.tag,
-      ref: o,
-      children: [(0, n.jsx)(p, {
+      ref: u,
+      children: [(0, n.jsx)(O, {
         size: "xxs"
       }), (0, n.jsx)(i.Text, {
         variant: "text-xxs/medium",
         color: "text-secondary",
-        children: b()
-      }), r && (0, n.jsx)(i.ua7, {
+        children: p()
+      }), r && !o && (0, n.jsx)(i.ua7, {
         text: f.intl.string(f.t.Otv9fH),
         children: e => {
           var t, r;
@@ -111,10 +122,10 @@ let p = e => {
             }
             return e
           }({}, e), r = r = {
-            onClick: O,
+            onClick: m,
             className: g.removeButton,
             "aria-label": f.intl.formatToPlainString(f.t.GCn1nZ, {
-              tag: b()
+              tag: p()
             }),
             children: (0, n.jsx)(i.Dio, {
               size: "xxs"
@@ -137,15 +148,23 @@ let p = e => {
     let {
       numHidden: t,
       onClick: r,
-      ref: l
+      disableInteraction: l,
+      ref: a
     } = e;
-    return (0, n.jsx)(i.DY3, {
+    return l ? (0, n.jsx)("div", {
+      className: g.expandButton,
+      children: (0, n.jsx)(i.Text, {
+        variant: "text-xxs/medium",
+        color: "text-secondary",
+        children: "+".concat(t)
+      })
+    }) : (0, n.jsx)(i.DY3, {
       className: g.buttonContainer,
       text: f.intl.string(f.t.mriLXF),
       children: (0, n.jsx)(i.P3F, {
         onClick: r,
         className: g.expandButton,
-        innerRef: l,
+        innerRef: a,
         "aria-label": f.intl.string(f.t.mriLXF),
         children: (0, n.jsx)(i.Text, {
           variant: "text-xxs/medium",

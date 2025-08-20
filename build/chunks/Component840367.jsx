@@ -26,12 +26,12 @@ function p(e) {
   var t;
   let {
     userId: r,
-    headingId: u,
-    widget: d,
-    disableInteraction: p = false
-  } = e, m = (0, a.e7)([c.default], () => c.default.getId() === r), j = (0, s.kQ)(d), y = b[d.type](), v = m && d.games.length > 0 ? (t = d.type) === i.l.FAVORITE_GAMES ? f.intl.string(f.t.wiXdER) : f.intl.format(f.t["zR1+09"], {
+    headingId: i,
+    widget: u,
+    disableInteraction: d = false
+  } = e, p = (0, a.e7)([c.default], () => c.default.getId() === r), m = (0, s.kQ)(u), j = b[u.type](), y = p && u.games.length > 0 ? (t = u.type, 1 === l.k[t] ? f.intl.string(f.t.wiXdER) : f.intl.format(f.t["zR1+09"], {
     numGames: l.k[t]
-  }) : true;
+  })) : true;
   return (0, n.jsxs)("div", {
     className: g.headerRow,
     children: [(0, n.jsxs)("div", {
@@ -39,17 +39,17 @@ function p(e) {
       children: [(0, n.jsx)(o.X6q, {
         variant: "text-xs/medium",
         color: "text-default",
-        id: u,
-        children: y
-      }), null != v && (0, n.jsx)(o.Text, {
+        id: i,
+        children: j
+      }), null != y && (0, n.jsx)(o.Text, {
         variant: "text-xs/normal",
         color: "text-secondary",
-        children: v
+        children: y
       })]
     }), (0, n.jsx)(O, {
-      widget: d,
-      disabled: j,
-      disabledInteraction: p,
+      widget: u,
+      disabled: m,
+      disabledInteraction: d,
       userId: r
     })]
   })
@@ -60,16 +60,16 @@ function O(e) {
     widget: t,
     disabled: r,
     disabledInteraction: l,
-    userId: o
-  } = e, s = (0, a.e7)([c.default], () => c.default.getId() === o);
-  return !l && (s || t.type === i.l.FAVORITE_GAMES && t.games.some(e => null != e.comment)) ? (0, n.jsxs)("div", {
+    userId: i
+  } = e, o = (0, a.e7)([c.default], () => c.default.getId() === i);
+  return !l && (o || (0, s.vI)(t.type) && t.games.some(e => null != e.comment)) ? (0, n.jsxs)("div", {
     className: g.actions,
-    children: [s && (0, n.jsx)(u.Z, {
+    children: [o && (0, n.jsx)(u.Z, {
       disabled: r,
       widgetType: t.type
     }), (0, n.jsx)(d.Z, {
       widget: t,
-      userId: o
+      userId: i
     })]
   }) : null
 }

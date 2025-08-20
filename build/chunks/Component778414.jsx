@@ -1,8 +1,8 @@
 /** Chunk was on 27069 **/
 /** chunk id: 778414, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  C: () => S,
-  Z: () => P
+  C: () => _,
+  Z: () => E
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -25,7 +25,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk830202 = require("./830202.js");
 
-function E(e) {
+function P(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -44,7 +44,7 @@ function E(e) {
   return e
 }
 
-function P(e) {
+function E(e) {
   var {
     widget: t
   } = e, r = function(e, t) {
@@ -64,19 +64,19 @@ function P(e) {
   }(e, ["widget"]);
   switch (t.type) {
     case i.l.FAVORITE_GAMES:
-      return (0, n.jsx)(O.Z, E({
+      return (0, n.jsx)(O.Z, P({
         widget: t
       }, r));
     case i.l.CURRENT_GAMES:
-      return (0, n.jsx)(p.Z, E({
+      return (0, n.jsx)(p.Z, P({
         widget: t
       }, r));
     case i.l.WANT_TO_PLAY_GAMES:
-      return (0, n.jsx)(j.Z, E({
+      return (0, n.jsx)(j.Z, P({
         widget: t
       }, r));
     case i.l.PLAYED_GAMES:
-      return (0, n.jsx)(m.Z, E({
+      return (0, n.jsx)(m.Z, P({
         widget: t
       }, r));
     default:
@@ -98,7 +98,7 @@ function w() {
   })
 }
 
-function _(e) {
+function I(e) {
   let {
     user: t,
     guildId: r,
@@ -113,7 +113,7 @@ function _(e) {
     }, [e, t, r]), "GB" === e && r
   })(), x = 0 === p.length && m;
   return ((0, f.J)(m, p), x) ? (0, n.jsx)(v.Z, {}) : (0, n.jsxs)(n.Fragment, {
-    children: [j && (0, n.jsx)(w, {}), p.map(e => (0, n.jsx)(P, {
+    children: [j && (0, n.jsx)(w, {}), p.map(e => (0, n.jsx)(E, {
       widget: e,
       user: t,
       guildId: r,
@@ -123,10 +123,10 @@ function _(e) {
   })
 }
 
-function S(e) {
+function _(e) {
   return (0, n.jsx)(o.Ttm, {
     className: h.scroller,
     fade: true,
-    children: (0, n.jsx)(_, E({}, e))
+    children: (0, n.jsx)(I, P({}, e))
   })
 }
