@@ -112,6 +112,14 @@ let f = {
       guildId: "123",
       messageId: null
     }))
+  },
+  AutomodUserProfileQuarantineAlert: async () => {
+    let {
+      default: e
+    } = await require.e("40390").then(require.bind(require, 251871));
+    return t => (0, n.jsx)(e, b(v({}, t), {
+      guildId: "123"
+    }))
   }
 };
 
