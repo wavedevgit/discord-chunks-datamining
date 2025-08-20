@@ -6,7 +6,7 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk103891 = require("./103891.js"),
+  Chunk572721 = require("./572721.js"),
   Chunk995803 = require("./995803.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -161,4 +161,4 @@ function p(e) {
     }), p.current = a
   }, [a, t, n, r, d, null == t ? true : t.viewModelInstance, f, _])
 }
-Chunk995803.RuntimeLoader.setWasmUrl(Chunk103891)
+Chunk995803.RuntimeLoader.setWasmUrl(Chunk572721)

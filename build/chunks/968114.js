@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-/** chunk id: 685066, original params: e (module,exports,re quire) **/
+/** chunk id: 968114, original params: e (module,exports,re quire) **/
 ! function(t, n) {
   e.exports = n()
 }(0, () => (() => {
@@ -3055,65 +3055,69 @@
                 return
               }
               m = f && "touchend" === e.type && "touchstart" === h, h = e.type;
-              var t = e.currentTarget.getBoundingClientRect(),
-                r = i(e, f),
-                a = r.clientX,
-                s = r.clientY;
-              if (a || s) {
-                var d = a - t.left,
-                  _ = s - t.top,
-                  g = l.computeAlignment(c, u, {
-                    minX: 0,
-                    minY: 0,
-                    maxX: t.width,
-                    maxY: t.height
-                  }, n.bounds, p),
-                  E = new l.Mat2D;
-                g.invert(E);
-                var b = new l.Vec2D(d, _),
-                  y = l.mapXY(E, b),
-                  O = y.x(),
-                  v = y.y();
-                switch (y.delete(), E.delete(), b.delete(), g.delete(), e.type) {
-                  case "mouseleave":
-                  case "mouseout":
-                    for (var I = 0, T = o; I < T.length; I++) {
-                      var S = T[I];
-                      S.pointerMove(O < 0 ? O - 1e4 : O + 1e4, v < 0 ? v - 1e4 : v + 1e4)
-                    }
-                    break;
-                  case "mouseenter":
-                  case "touchmove":
-                  case "mouseover":
-                  case "mousemove":
-                    for (var A = 0, C = o; A < C.length; A++) {
-                      var S = C[A];
-                      S.pointerMove(O, v)
-                    }
-                    break;
-                  case "touchstart":
-                  case "mousedown":
-                    for (var N = 0, R = o; N < R.length; N++) {
-                      var S = R[N];
-                      S.pointerDown(O, v)
-                    }
-                    break;
-                  case "touchend":
-                  case "mouseup":
-                    for (var P = 0, w = o; P < w.length; P++) {
-                      var S = w[P];
-                      S.pointerUp(O, v)
-                    }
+              var r = t.getBoundingClientRect(),
+                a = i(e, f),
+                s = a.clientX,
+                d = a.clientY;
+              if (s || d) {
+                var _ = s - r.left,
+                  g = d - r.top;
+                if (_ >= 0 && _ <= r.width && g >= 0 && g <= r.height || ["mouseleave", "mouseout"].includes(e.type)) {
+                  var E = l.computeAlignment(c, u, {
+                      minX: 0,
+                      minY: 0,
+                      maxX: r.width,
+                      maxY: r.height
+                    }, n.bounds, p),
+                    b = new l.Mat2D;
+                  E.invert(b);
+                  var y = new l.Vec2D(_, g),
+                    O = l.mapXY(b, y),
+                    v = O.x(),
+                    I = O.y();
+                  switch (O.delete(), b.delete(), y.delete(), E.delete(), e.type) {
+                    case "mouseleave":
+                    case "mouseout":
+                      for (var T = 0, S = o; T < S.length; T++) {
+                        var A = S[T];
+                        A.pointerMove(v < 0 ? v - 1e4 : v + 1e4, I < 0 ? I - 1e4 : I + 1e4)
+                      }
+                      break;
+                    case "mouseenter":
+                    case "touchmove":
+                    case "mouseover":
+                    case "mousemove":
+                      for (var C = 0, N = o; C < N.length; C++) {
+                        var A = N[C];
+                        A.pointerMove(v, I)
+                      }
+                      break;
+                    case "touchstart":
+                    case "mousedown":
+                      for (var R = 0, P = o; R < P.length; R++) {
+                        var A = P[R];
+                        A.pointerDown(v, I)
+                      }
+                      break;
+                    case "touchend":
+                    case "mouseup":
+                      for (var w = 0, D = o; w < D.length; w++) {
+                        var A = D[w];
+                        A.pointerUp(v, I)
+                      }
+                  }
                 }
               }
             }).bind(r);
-          return t.addEventListener("mouseover", g, true), t.addEventListener("mouseenter", g, true), t.addEventListener("mouseout", g, true), t.addEventListener("mouseleave", g, true), t.addEventListener("mousemove", g, true), t.addEventListener("mousedown", g, true), t.addEventListener("mouseup", g, true), t.addEventListener("touchmove", g, {
-              passive: f
-            }), t.addEventListener("touchstart", g, {
-              passive: f
-            }), t.addEventListener("touchend", g),
+          return t.ownerDocument.body.addEventListener("mouseover", g, true), t.ownerDocument.body.addEventListener("mouseenter", g, true), t.ownerDocument.body.addEventListener("mouseout", g, true), t.ownerDocument.body.addEventListener("mouseleave", g, true), t.ownerDocument.body.addEventListener("mousemove", g, true), t.ownerDocument.body.addEventListener("mousedown", g, true), t.ownerDocument.body.addEventListener("mouseup", g, true), t.ownerDocument.body.addEventListener("touchmove", g, {
+              passive: f,
+              capture: true
+            }), t.ownerDocument.body.addEventListener("touchstart", g, {
+              passive: f,
+              capture: true
+            }), t.ownerDocument.body.addEventListener("touchend", g, true),
             function() {
-              t.removeEventListener("mouseover", g, true), t.removeEventListener("mouseenter", g, true), t.removeEventListener("mouseout", g, true), t.removeEventListener("mouseleave", g, true), t.removeEventListener("mousemove", g, true), t.removeEventListener("mousedown", g, true), t.removeEventListener("mouseup", g, true), t.removeEventListener("touchmove", g), t.removeEventListener("touchstart", g), t.removeEventListener("touchend", g)
+              t.ownerDocument.body.removeEventListener("mouseover", g, true), t.ownerDocument.body.removeEventListener("mouseenter", g, true), t.ownerDocument.body.removeEventListener("mouseout", g, true), t.ownerDocument.body.removeEventListener("mouseleave", g, true), t.ownerDocument.body.removeEventListener("mousemove", g, true), t.ownerDocument.body.removeEventListener("mousedown", g, true), t.ownerDocument.body.removeEventListener("mouseup", g, true), t.ownerDocument.body.removeEventListener("touchmove", g, true), t.ownerDocument.body.removeEventListener("touchstart", g, true), t.ownerDocument.body.removeEventListener("touchend", g, true)
             }
         }
     }, (e, t, n) => {
