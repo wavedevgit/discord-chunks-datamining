@@ -227,7 +227,7 @@ function R(e) {
         }), (0, r.jsx)("div", {
           ref: m,
           className: T.advancedModeQuestions,
-          children: (0, r.jsx)(E.Z, {
+          children: (0, r.jsx)(I.Z, {
             guildId: n.id,
             prejoinOnly: true,
             includeCount: true,
@@ -235,7 +235,7 @@ function R(e) {
           })
         })]
       })]
-    }), (0, r.jsx)(I.Z, {
+    }), (0, r.jsx)(E.Z, {
       guild: n,
       scrollToQuestions: () => {
         null != m.current && m.current.scrollIntoView({

@@ -31,7 +31,7 @@ function O(e) {
   } = (0, p.N)(), O = (0, l.e7)([m.Z], () => {
     var e;
     return null == (e = m.Z.getSubscriptionListing(n)) ? true : e.image_asset
-  }), [y, C] = h._T(n), [N, I] = h.mR(n), [E, S] = h.PK(n), [T, P] = h.d9(n, 1024), {
+  }), [y, C] = h._T(n), [N, E] = h.mR(n), [I, S] = h.PK(n), [T, P] = h.d9(n, 1024), {
     imageCTA: w,
     imageAriaLabel: R,
     setFilename: Z
@@ -82,7 +82,7 @@ function O(e) {
             isDisabled: L || null == t,
             placeholder: j.intl.string(j.t["88XZDg"]),
             value: N,
-            onChange: I,
+            onChange: E,
             maxVisibleItems: 5,
             look: s.qQH.CUSTOM,
             "aria-labelledby": M
@@ -97,7 +97,7 @@ function O(e) {
       disabled: L,
       children: (0, r.jsx)(a.iS, {
         placeholder: j.intl.string(j.t.p7Jr4O),
-        value: E,
+        value: I,
         rows: 2,
         autosize: true,
         className: v.formInput,

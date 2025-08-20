@@ -77,7 +77,7 @@ function P(e) {
         verificationLevel: n
       })
     } catch (e) {
-      (0, c.showToast)((0, c.createToast)(I.intl.string(I.t["46Rs3t"]), c.ToastType.FAILURE))
+      (0, c.showToast)((0, c.createToast)(E.intl.string(E.t["46Rs3t"]), c.ToastType.FAILURE))
     }
   }, [t]), a = i.useMemo(() => {
     let e = (0, j.IF)(null == t ? true : t.features.has(N.oNc.COMMUNITY)).map(e => T(S({}, e), {
@@ -86,20 +86,20 @@ function P(e) {
     return (0, j.LJ)(e)
   }, [t]), s = i.useMemo(() => a.find(e => e.value === (null == t ? true : t.verificationLevel)), [t, a]);
   return (0, r.jsxs)("div", {
-    className: E.setupContainer,
+    className: I.setupContainer,
     children: [(0, r.jsxs)("div", {
-      className: E.switchItemTextContent,
+      className: I.switchItemTextContent,
       children: [(0, r.jsx)(c.Text, {
         color: "header-primary",
         variant: "text-md/semibold",
-        children: I.intl.string(I.t.DpRdYG)
+        children: E.intl.string(E.t.DpRdYG)
       }), (0, r.jsx)(c.Text, {
         color: "header-secondary",
         variant: "text-sm/normal",
-        children: I.intl.format(I.t.iuRk2t, {})
+        children: E.intl.format(E.t.iuRk2t, {})
       })]
     }), (0, r.jsx)(C.Z, {
-      changeTitle: I.intl.string(I.t.TxESJC),
+      changeTitle: E.intl.string(E.t.TxESJC),
       value: null == s ? true : s.value,
       options: a,
       disabled: !n,
@@ -124,7 +124,7 @@ function w(e) {
         explicitContentFilter: n
       })
     } catch (e) {
-      (0, c.showToast)((0, c.createToast)(I.intl.string(I.t["46Rs3t"]), c.ToastType.FAILURE))
+      (0, c.showToast)((0, c.createToast)(E.intl.string(E.t["46Rs3t"]), c.ToastType.FAILURE))
     }
   }, [t.id]), u = i.useMemo(() => {
     let e = (0, j.MF)(null == t ? true : t.features.has(N.oNc.COMMUNITY)).map(e => T(S({}, e), {
@@ -134,24 +134,24 @@ function w(e) {
   }, [t]), m = i.useMemo(() => u.find(e => e.value === (null == t ? true : t.explicitContentFilter)), [t, u]);
   return (0, r.jsxs)(r.Fragment, {
     children: [l && (0, r.jsx)(c.$i$, {
-      className: E.divider
+      className: I.divider
     }), (0, r.jsxs)("div", {
-      className: a()(E.setupContainer, n),
+      className: a()(I.setupContainer, n),
       children: [(0, r.jsxs)("div", {
-        className: E.switchItemTextContent,
+        className: I.switchItemTextContent,
         children: [(0, r.jsx)(c.Text, {
           color: "header-primary",
           variant: "text-md/semibold",
-          children: I.intl.string(I.t.bPgfJy)
+          children: E.intl.string(E.t.bPgfJy)
         }), (0, r.jsx)(c.Text, {
           color: "header-secondary",
           variant: "text-sm/normal",
-          children: I.intl.format(I.t.BI4ukJ, {
+          children: E.intl.format(E.t.BI4ukJ, {
             helpdeskArticle: x.Z.getArticleURL(N.BhN.SAFE_DIRECT_MESSAGING)
           })
         })]
       }), (0, r.jsx)(C.Z, {
-        changeTitle: I.intl.string(I.t["eBd+Ul"]),
+        changeTitle: E.intl.string(E.t["eBd+Ul"]),
         value: null == m ? true : m.value,
         options: u,
         disabled: !s,
@@ -176,34 +176,34 @@ function Z(e) {
   }, [t]);
   return l || !a ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: E.setupContainer,
+      className: I.setupContainer,
       children: [(0, r.jsx)(c.j7V, {
         value: s,
         onChange: u,
-        className: E.switchItem,
+        className: I.switchItem,
         disabled: !n,
         hideBorder: true,
         children: (0, r.jsxs)("div", {
-          className: E.switchItemTextContent,
+          className: I.switchItemTextContent,
           children: [(0, r.jsxs)(c.Text, {
             color: "header-primary",
             variant: "text-md/semibold",
-            children: [I.intl.string(I.t.jDarm5), (0, r.jsx)(m.Z, {
-              className: E.betaTag
+            children: [E.intl.string(E.t.jDarm5), (0, r.jsx)(m.Z, {
+              className: I.betaTag
             })]
           }), (0, r.jsx)(c.Text, {
             color: "header-secondary",
             variant: "text-sm/normal",
-            children: I.intl.string(I.t["/ee7yM"])
+            children: E.intl.string(E.t["/ee7yM"])
           })]
         })
       }), (0, r.jsx)(c.Wn, {
         messageType: c.QYI.INFO,
         textVariant: "text-xs/normal",
-        children: I.intl.string(I.t.JxO639)
+        children: E.intl.string(E.t.JxO639)
       })]
     }), (0, r.jsx)(c.$i$, {
-      className: E.divider
+      className: I.divider
     })]
   })
 }
@@ -230,31 +230,31 @@ function D(e) {
   }, 1e3);
   return l ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.$i$, {
-      className: E.divider
+      className: I.divider
     }), (0, r.jsxs)("div", {
-      className: E.setupContainer,
+      className: I.setupContainer,
       children: [(0, r.jsx)(c.j7V, {
         value: g,
         onChange: f,
-        className: E.switchItem,
+        className: I.switchItem,
         disabled: !u,
         hideBorder: true,
         children: (0, r.jsxs)("div", {
-          className: E.switchItemTextContent,
+          className: I.switchItemTextContent,
           children: [(0, r.jsx)(c.Text, {
             color: "header-primary",
             variant: "text-md/semibold",
-            children: I.intl.string(I.t.lbBfER)
+            children: E.intl.string(E.t.lbBfER)
           }), (0, r.jsx)(c.Text, {
             color: "header-secondary",
             variant: "text-sm/normal",
-            children: I.intl.string(I.t.REr5AA)
+            children: E.intl.string(E.t.REr5AA)
           })]
         })
       }), m && (0, r.jsx)(c.Wn, {
         messageType: c.QYI.INFO,
         textVariant: "text-xs/normal",
-        children: I.intl.format(I.t.Xz1O0d, {
+        children: E.intl.format(E.t.Xz1O0d, {
           onClick: function() {
             d.Z.open(N.oAB.ACCOUNT)
           }

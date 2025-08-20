@@ -382,7 +382,7 @@ class U extends Chunk647438.PureComponent {
         value: e.value,
         selectedColor: d.lo1.Colors.BRAND,
         children: [(0, r.jsx)(d.lo1.Icon, {
-          children: (0, r.jsx)(E.mp, {
+          children: (0, r.jsx)(I.mp, {
             themeOverride: s ? T.BRd.DARK : null,
             actionType: l,
             targetType: a,
@@ -443,7 +443,7 @@ class U extends Chunk647438.PureComponent {
         moderators: s
       } = this.props;
       if (i) return null;
-      let o = I.Iv(),
+      let o = E.Iv(),
         c = null != (e = o.find(e => {
           let {
             value: t

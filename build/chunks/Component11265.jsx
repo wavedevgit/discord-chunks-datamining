@@ -28,8 +28,8 @@ let m = Chunk647438.memo(function(e) {
   } = (0, c.ZP)(), {
     ref: C,
     height: N = 0
-  } = (0, c.ZP)(), [I, E] = i.useState(g), S = (0, o.q_F)({
-    height: I ? N + y : y,
+  } = (0, c.ZP)(), [E, I] = i.useState(g), S = (0, o.q_F)({
+    height: E ? N + y : y,
     config: (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -67,7 +67,7 @@ let m = Chunk647438.memo(function(e) {
     }
   }, x || f ? "animate-never" : "respect-motion-settings");
   return i.useLayoutEffect(() => {
-    _(false), E(g)
+    _(false), I(g)
   }, [g]), i.useLayoutEffect(() => {
     let e = setTimeout(() => {
       j(false)

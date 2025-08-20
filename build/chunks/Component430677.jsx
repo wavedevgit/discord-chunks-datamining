@@ -56,8 +56,8 @@ let _ = function(e) {
   let {
     guildId: C,
     action: N,
-    actionIndex: I,
-    onChange: E,
+    actionIndex: E,
+    onChange: I,
     onDelete: S,
     onDragStart: T,
     onDragComplete: P,
@@ -77,7 +77,7 @@ let _ = function(e) {
     setIsDraggable: F
   } = (0, d.Z)({
     type: "NEW_MEMBER_ACTION",
-    index: I,
+    index: E,
     optionId: N.channelId,
     onDragStart: T,
     onDragComplete: P,
@@ -90,19 +90,19 @@ let _ = function(e) {
       return t => (0, r.jsx)(e, v(j({}, t), {
         guildId: C,
         action: N,
-        onSave: (e, t, n) => E(I, e, t, n),
-        onDelete: () => S(I)
+        onSave: (e, t, n) => I(E, e, t, n),
+        onDelete: () => S(E)
       }))
     })
-  }, [C, N, I, E, S]);
+  }, [C, N, E, I, S]);
   if (null == R || null == Z) return null;
   let z = null != (y = (0, c.KS)(R)) ? y : o.VL1;
   return (0, r.jsxs)("div", {
     className: x.actionItemContainer,
     children: [(0, r.jsxs)("div", {
       className: a()(x.actionItem, {
-        [x.dropIndicatorBefore]: null != U && I < U,
-        [x.dropIndicatorAfter]: null != U && I > U,
+        [x.dropIndicatorBefore]: null != U && E < U,
+        [x.dropIndicatorAfter]: null != U && E > U,
         [x.actionItemError]: null != M
       }),
       ref: e => {

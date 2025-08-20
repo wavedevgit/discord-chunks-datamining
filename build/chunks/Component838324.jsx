@@ -25,12 +25,12 @@ function p(e) {
     color: l.Z.unsafe_rawColors.BRAND_500.css,
     secondaryColor: l.Z.unsafe_rawColors.WHITE_100.css,
     className: g.icon
-  }), I = (0, r.jsx)(a.k$p, {
+  }), E = (0, r.jsx)(a.k$p, {
     size: "sm",
     className: g.icon,
     color: l.Z.colors.WHITE.css,
     secondaryColor: l.Z.colors.BACKGROUND_ACCENT.css
-  }), E = [Math.min(u.X, _) / u.md * 100, Math.min(u.md, v) / u.md * 100], S = !O && y ? [l.Z.colors.TEXT_FEEDBACK_POSITIVE.css, l.Z.colors.TEXT_FEEDBACK_POSITIVE.css] : [l.Z.colors.TEXT_BRAND.css, l.Z.colors.TEXT_MUTED.css];
+  }), I = [Math.min(u.X, _) / u.md * 100, Math.min(u.md, v) / u.md * 100], S = !O && y ? [l.Z.colors.TEXT_FEEDBACK_POSITIVE.css, l.Z.colors.TEXT_FEEDBACK_POSITIVE.css] : [l.Z.colors.TEXT_BRAND.css, l.Z.colors.TEXT_MUTED.css];
   return (0, r.jsxs)("div", {
     className: g.container,
     children: [(0, r.jsxs)("div", {
@@ -50,11 +50,11 @@ function p(e) {
       })]
     }), (0, r.jsx)(a.yGy, {
       foregroundColors: S,
-      percents: E,
+      percents: I,
       size: a.yGy.Sizes.XSMALL
     }), (0, r.jsxs)("div", {
       className: g.requiredItem,
-      children: [O ? I : N, (0, r.jsx)(a.Text, {
+      children: [O ? E : N, (0, r.jsx)(a.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
         children: m.intl.format(m.t.k0COZW, {
@@ -63,7 +63,7 @@ function p(e) {
       })]
     }), (0, r.jsxs)("div", {
       className: g.requiredItem,
-      children: [y ? N : I, (0, r.jsx)(a.Text, {
+      children: [y ? N : E, (0, r.jsx)(a.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
         children: m.intl.format(m.t.PwXgS0, {

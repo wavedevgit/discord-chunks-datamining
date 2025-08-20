@@ -35,33 +35,33 @@ function f(e) {
       loading: y,
       error: C,
       refresh: N,
-      eligibility: I
+      eligibility: E
     } = (0, u.Z)(null == e ? true : e.id),
     {
-      isApplicationRejected: E,
+      isApplicationRejected: I,
       requestCooldownDuration: S
-    } = (0, m.Z)(I),
+    } = (0, m.Z)(E),
     T = (null == e ? true : e.features.has(p.oNc.CREATOR_MONETIZABLE_RESTRICTED)) === true || (null == e ? true : e.features.has(p.oNc.CREATOR_MONETIZABLE_DISABLED)) === true,
     {
       isMonetizationReapplicationDisabled: P
     } = (0, l.eC)(null == e ? true : e.id),
-    w = O || (null == I ? true : I.isApplicationPending) === true,
-    R = (null == I ? true : I.canApply) === true,
+    w = O || (null == E ? true : E.isApplicationPending) === true,
+    R = (null == E ? true : E.canApply) === true,
     Z = h.intl.format(h.t.aJUdOj, {
       faqUrl: o.Z.getArticleURL(p.BhN.CREATOR_FAQ)
     });
-  E && P ? t = true === f ? h.intl.format(h.t["0o1Q+v"], {
+  I && P ? t = true === f ? h.intl.format(h.t["0o1Q+v"], {
     communityGuidelineUrl: p.EYA.GUIDELINES
   }) : h.intl.format(h.t.b6h59v, {
     communityGuidelineUrl: p.EYA.GUIDELINES
-  }) : E && null != S && (t = h.intl.format(h.t.TvX209, {
+  }) : I && null != S && (t = h.intl.format(h.t.TvX209, {
     requestCooldownDuration: S,
     creatorRevenuePolicyUrl: o.Z.getArticleURL(p.BhN.CREATOR_POLICY)
   }));
   let D = n && x && false === b,
     A = n && false === f,
     L = (0, g.f)(),
-    k = E && R && x ? h.intl.format(h.t.wbVIUF, {}) : true;
+    k = I && R && x ? h.intl.format(h.t.wbVIUF, {}) : true;
   return r.useEffect(() => {
     D && N()
   }, [N, D]), {
@@ -73,14 +73,14 @@ function f(e) {
     eligibilityLoading: y,
     eligibilityError: C,
     refreshEligibility: N,
-    eligibility: I,
+    eligibility: E,
     eligibleForMonetization: R,
     isApplicationPending: w,
-    hasPreviousApplicationRejection: E,
+    hasPreviousApplicationRejection: I,
     requestRejectedNoticeText: t,
     reapplyNoticeText: k,
     showAcceptTermsFlow: A,
-    wasRejectedInV1: A && (T || E),
+    wasRejectedInV1: A && (T || I),
     requirementsFinePrintText: Z,
     acceptTermsCheckboxText: L
   }

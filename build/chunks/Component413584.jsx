@@ -81,7 +81,7 @@ let k = "WELCOME_CHANNEL",
       O = i.useRef(null),
       y = (0, u.e7)([N.Z], () => N.Z.getChannel(o.channel_id)),
       C = (0, u.e7)([j.ZP], () => null != o.emoji_id ? j.ZP.getUsableCustomEmojiById(o.emoji_id) : null),
-      E = null != y && S.Uu(w.Plq.VIEW_CHANNEL, y),
+      I = null != y && S.Uu(w.Plq.VIEW_CHANNEL, y),
       T = null != (t = (0, x.KS)(y)) ? t : m.VL1,
       P = (0, b.ZP)(y, false),
       M = () => {
@@ -120,7 +120,7 @@ let k = "WELCOME_CHANNEL",
       });
     return i.useLayoutEffect(() => (G(U(O)), () => {
       G(null), U(null)
-    }), [G, U]), l = E ? null != C || null != o.emoji_name ? (0, r.jsx)(p.Z, {
+    }), [G, U]), l = I ? null != C || null != o.emoji_name ? (0, r.jsx)(p.Z, {
       emojiId: null == C ? true : C.id,
       emojiName: null != C ? C.name : o.emoji_name,
       animated: !!(null == C ? true : C.animated)
@@ -128,7 +128,7 @@ let k = "WELCOME_CHANNEL",
       size: "md",
       color: "currentColor",
       className: D.channelIcon
-    }) : (0, r.jsx)(I.Z, {
+    }) : (0, r.jsx)(E.Z, {
       width: 24,
       height: 24,
       className: D.warningIcon
@@ -159,7 +159,7 @@ let k = "WELCOME_CHANNEL",
           color: "header-primary",
           children: o.description
         }), (0, r.jsxs)(m.Text, {
-          className: E ? true : D.channelWarning,
+          className: I ? true : D.channelWarning,
           variant: "text-xs/normal",
           color: "header-secondary",
           children: [(0, r.jsx)(T, {
@@ -167,7 +167,7 @@ let k = "WELCOME_CHANNEL",
             size: "xxs",
             color: "currentColor"
           }), (0, r.jsx)("span", {
-            children: E ? P : Z.intl.string(Z.t.zFuCsL)
+            children: I ? P : Z.intl.string(Z.t.zFuCsL)
           })]
         })]
       }), (0, r.jsx)(m.hU, {
@@ -213,7 +213,7 @@ let k = "WELCOME_CHANNEL",
           r = false;
         null == N || N.forEach(t => {
           e.push(t.description), n.push(t.channel_id), null != t.emoji_id && (r = true)
-        }), E.default.track(w.rMx.GUILD_WELCOME_SCREEN_SETTINGS_UPDATED, {
+        }), I.default.track(w.rMx.GUILD_WELCOME_SCREEN_SETTINGS_UPDATED, {
           guild_id: null == t ? true : t.id,
           options: e,
           options_channel_ids: n,
@@ -233,7 +233,7 @@ let k = "WELCOME_CHANNEL",
         className: D.notice,
         children: (0, r.jsxs)(m.Text, {
           variant: "text-md/normal",
-          children: [(0, r.jsx)(I.Z, {
+          children: [(0, r.jsx)(E.Z, {
             className: D.noticeIcon
           }), Z.intl.format(Z.t.oj2vi4, {
             onboardingLink: e => (0, r.jsx)(O.Z, {

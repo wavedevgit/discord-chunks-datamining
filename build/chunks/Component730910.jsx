@@ -114,8 +114,8 @@ function A(e) {
       output: [V, (0, d.dQu)(s.Z.colors.STATUS_DANGER).hex()]
     });
   if (A) {
-    if (D === y.PG.DEFAULT_CHANNELS) return (0, r.jsx)(I.j, {});
-    else if (D === y.PG.CUSTOMIZATION_QUESTIONS) return (0, r.jsx)(E.Zm, {});
+    if (D === y.PG.DEFAULT_CHANNELS) return (0, r.jsx)(E.j, {});
+    else if (D === y.PG.CUSTOMIZATION_QUESTIONS) return (0, r.jsx)(I.Zm, {});
     else if (D === y.PG.HOME_SETTINGS) return (0, r.jsx)(S.Z, {})
   }
   let K = D === y.xh[y.xh.length - 1],

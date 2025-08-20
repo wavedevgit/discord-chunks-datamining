@@ -28,7 +28,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk144563 = require("./144563.js"),
   Chunk21321 = require("./21321.js");
 
-function E(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -184,7 +184,7 @@ function w(e) {
       }(l, n.id, L, k, (e, t) => (0, f.d_)(n.id, T(e, t))), function(e, t, n, i, l) {
         function a(n, r) {
           let i = [];
-          for (let t of e) i.push(E({}, t));
+          for (let t of e) i.push(I({}, t));
           if (null == n) {
             let t = e[r];
             null !== t && null == t.connectionMetadataField && null == t.operator && null == t.value ? i = i.filter(e => null == t.applicationId ? e.connectionType !== t.connectionType : e.connectionType !== t.connectionType && e.applicationId !== t.applicationId) : i.splice(r, 1)
@@ -222,7 +222,7 @@ function w(e) {
               })(Object(t)).forEach(function(n) {
                 Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
               }), e
-            }(E({}, t[0].configuration), {
+            }(I({}, t[0].configuration), {
               connectionMetadataField: true,
               operator: true,
               value: true
@@ -252,10 +252,10 @@ function w(e) {
     },
     onScroll: Z,
     children: (0, r.jsxs)("div", {
-      className: I.contentWidth,
+      className: E.contentWidth,
       children: [(0, r.jsx)("div", {
-        className: a()(I.header, I.stickyHeader, {
-          [I.stickyHeaderElevated]: !R
+        className: a()(E.header, E.stickyHeader, {
+          [E.stickyHeaderElevated]: !R
         }),
         ref: w,
         children: (0, r.jsx)(v.Z, {

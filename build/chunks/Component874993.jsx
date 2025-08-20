@@ -31,19 +31,19 @@ function C(e) {
     guildId: C,
     setPreventNavigation: N = () => {}
   } = e, {
-    editingRule: I,
-    setEditingRule: E
+    editingRule: E,
+    setEditingRule: I
   } = (0, f.V)(), {
     guild: S,
     subsection: T
-  } = (0, l.cj)([o.Z], () => o.Z.getProps()), P = null != (n = null != (t = null == S ? true : S.id) ? t : C) ? n : _.lds, w = null != I, [R] = (0, g.RD)(P), {
+  } = (0, l.cj)([o.Z], () => o.Z.getProps()), P = null != (n = null != (t = null == S ? true : S.id) ? t : C) ? n : _.lds, w = null != E, [R] = (0, g.RD)(P), {
     rulesByTriggerType: Z
   } = (0, g.pH)(P), D = {
     [p.vh.MEMBERS]: O.intl.string(O.t.sx4E5u),
     [p.vh.CONTENT]: O.intl.string(O.t.fphZb2)
   }, A = i.useMemo(() => Object.values(null != Z ? Z : {}).flat().filter(d.lm), [Z]), L = {
     isInEditMode: w,
-    setEditingRule: E
+    setEditingRule: I
   }, k = i.useRef(L);
   i.useEffect(() => {
     k.current = L
@@ -68,8 +68,8 @@ function C(e) {
     }, [A]),
     G = i.useMemo(() => {
       var e, t;
-      return M(null != (e = null == I ? true : I.id) ? e : null, null != (t = null == I ? true : I.triggerType) ? t : null)
-    }, [M, I]);
+      return M(null != (e = null == E ? true : E.id) ? e : null, null != (t = null == E ? true : E.triggerType) ? t : null)
+    }, [M, E]);
   i.useEffect(() => {
     N(w, (0, j.af)(G))
   }, [N, w, G]);

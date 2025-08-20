@@ -53,8 +53,8 @@ function w(e) {
       type: f.z.SERVER_SHOP,
       roles: t,
       initialTab: "guild_products",
-      returnToSection: E.pNK.GUILD_PRODUCTS
-    }), (0, b.uL)(E.Z5c.CHANNEL(R.id, S.oC.GUILD_SHOP))
+      returnToSection: I.pNK.GUILD_PRODUCTS
+    }), (0, b.uL)(I.Z5c.CHANNEL(R.id, S.oC.GUILD_SHOP))
   }, [R]);
   if (!w || A) return (0, r.jsx)(o.$jN, {});
   if (null == R) return null;
@@ -65,8 +65,8 @@ function w(e) {
       }), (0, r.jsx)(o.R94, {
         type: o.R94.Types.DESCRIPTION,
         children: T.intl.format(T.t.xiYuDg, {
-          monetizationPolicyLink: O.Z.getArticleURL(E.BhN.CREATOR_POLICY),
-          serverProductsSupportLink: O.Z.getCreatorSupportArticleURL(E.BhN.SERVER_PRODUCTS)
+          monetizationPolicyLink: O.Z.getArticleURL(I.BhN.CREATOR_POLICY),
+          serverProductsSupportLink: O.Z.getCreatorSupportArticleURL(I.BhN.SERVER_PRODUCTS)
         })
       })]
     }),
@@ -106,7 +106,7 @@ function w(e) {
       guildId: t
     })).with("manage_listings", () => (0, r.jsx)(N.Z, {
       guildId: t
-    })).with("payment", () => (0, r.jsx)(I.Z, {
+    })).with("payment", () => (0, r.jsx)(E.Z, {
       guildId: t
     })).exhaustive(),
     F = w ? (0, r.jsx)(o.njP.Panel, {

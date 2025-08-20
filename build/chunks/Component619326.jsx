@@ -101,13 +101,13 @@ function j(e) {
       }
       return i
     }(y, ["ref"]),
-    I = (0, o.xUy)({
+    E = (0, o.xUy)({
       isSelected: v,
       label: g.intl.formatToPlainString(g.t.ZC69mJ, {
         colorHex: m.Pbq
       })
     }),
-    E = (0, o.xUy)({
+    I = (0, o.xUy)({
       isSelected: !v,
       label: g.intl.formatToPlainString(g.t["3kiLZW"], {
         colorHex: (0, s.Rf)(t)
@@ -127,7 +127,7 @@ function j(e) {
           n(m.p6O)
         },
         "aria-disabled": l
-      }, I), {
+      }, E), {
         children: [(0, r.jsx)("div", {
           className: p.swatch,
           style: {
@@ -149,7 +149,7 @@ function j(e) {
       children: [(0, r.jsxs)(o.P3F, f(h({
         onClick: l ? true : b,
         "aria-disabled": l
-      }, E), {
+      }, I), {
         children: [(0, r.jsx)("div", {
           className: a()(p.customSwatch, {
             [p.defaultSwatch]: _ === m.p6O

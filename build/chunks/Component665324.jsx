@@ -107,7 +107,7 @@ function z(e) {
     currentTier: t,
     availableSounds: n,
     guildId: i
-  } = e, l = I.Z.getGuild(i), a = null != l ? (0, P.nL)(l) : 0;
+  } = e, l = E.Z.getGuild(i), a = null != l ? (0, P.nL)(l) : 0;
   return 0 === t ? (0, r.jsx)(r.Fragment, {
     children: k.intl.format(k.t["7E9Hd3"], {
       slots: n,
@@ -311,9 +311,9 @@ function K(e) {
     emojiName: _
   } = t, {
     analyticsLocations: O
-  } = (0, b.ZP)(), y = (0, c.e7)([E.default], () => null != h ? h : E.default.getUser(f), [f, h]), {
-    canManageGuildExpression: I
-  } = (0, j.XJ)(o), S = i.useMemo(() => I(t), [t, I]), P = null != x || null != _, [w, Z] = i.useState(false), D = (0, C.z)(t, o.id);
+  } = (0, b.ZP)(), y = (0, c.e7)([I.default], () => null != h ? h : I.default.getUser(f), [f, h]), {
+    canManageGuildExpression: E
+  } = (0, j.XJ)(o), S = i.useMemo(() => E(t), [t, E]), P = null != x || null != _, [w, Z] = i.useState(false), D = (0, C.z)(t, o.id);
   async function A() {
     if (!w) {
       Z(true);

@@ -28,7 +28,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk86477 = require("./86477.js"),
   Chunk197571 = require("./197571.js");
 
-function I(e, t, n) {
+function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -36,7 +36,7 @@ function I(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class E extends(r = Chunk442837.ZP.Store) {
+class I extends(r = Chunk442837.ZP.Store) {
   getTemplate() {
     let e = Chunk999382.Z.getProps().guild;
     if (null == module) return null;
@@ -48,26 +48,26 @@ class E extends(r = Chunk442837.ZP.Store) {
     return null != module && null != this.name && (this.name.trim() !== module.name || this.description.trim() !== module.description)
   }
   constructor(...e) {
-    super(...e), I(this, "name", ""), I(this, "description", ""), I(this, "error", null), I(this, "reset", () => {
+    super(...e), E(this, "name", ""), E(this, "description", ""), E(this, "error", null), E(this, "reset", () => {
       let e = this.getTemplate();
       if (null != e) {
         var t, n;
         this.name = null != (t = e.name) ? t : this.name, this.description = null != (n = e.description) ? n : this.description
       } else this.name = "", this.description = "";
       this.emitChange()
-    }), I(this, "setName", e => {
+    }), E(this, "setName", e => {
       this.name = e, this.emitChange()
-    }), I(this, "setDescription", e => {
+    }), E(this, "setDescription", e => {
       this.description = e, this.emitChange()
-    }), I(this, "setError", e => {
+    }), E(this, "setError", e => {
       this.error = e, this.emitChange()
-    }), I(this, "save", async () => {
+    }), E(this, "save", async () => {
       await x.Z.updateGuildTemplate(_.Z.getProps().guild.id, this.getTemplate().code, this.name, this.description), this.emitChange()
     })
   }
 }
-I(E, "displayName", "GuildSettingsTemplateMetadataStore_");
-let S = new E(Chunk570140.Z);
+E(I, "displayName", "GuildSettingsTemplateMetadataStore_");
+let S = new I(Chunk570140.Z);
 
 function T() {
   let [e, t] = Chunk647438.useState(false), n = async () => {
@@ -433,7 +433,7 @@ function U(e) {
               "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
                 return Object.getOwnPropertyDescriptor(n, e).enumerable
               }))), r.forEach(function(t) {
-                I(e, t, n[t])
+                E(e, t, n[t])
               })
             }
             return e

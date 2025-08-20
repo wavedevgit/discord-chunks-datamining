@@ -10,7 +10,7 @@ var Chunk647438 = require("./647438.js"),
   Chunk710091 = require("./710091.js"),
   Chunk496675 = require("./496675.js"),
   Chunk388032 = require("./388032.jsx");
-let o = {
+let d = {
     "server-subscriptions-onboarding": Chunk710091.Z,
     "server-subscriptions-finish-setting-up": Chunk101492.Z,
     "server-subscriptions-create-tier-from-template": Chunk172337.Z
@@ -22,12 +22,12 @@ let o = {
     createGuildDescription: () => Chunk388032.intl.string(Chunk388032.t.anOis7),
     createGuildCta: () => Chunk388032.intl.string(Chunk388032.t.B44MTk),
     canCreateGuild: true,
-    useIsGuildSupported: () => (0, Chunk442837.e7)([Chunk496675.Z], () => e => u.Z.canAccessGuildSettings(e), [], Chunk442837.pF)
+    useIsGuildSupported: () => (0, Chunk442837.e7)([Chunk496675.Z], () => e => s.Z.canAccessGuildSettings(e), [], Chunk442837.pF)
   };
 
 function p(e) {
   var t;
-  let [i] = n.useState(null == e ? true : o[e]), l = c.useIsGuildSupported(), r = null == i || null == (t = i.useIsGuildSupported) ? true : t.call(i), a = function(e) {
+  let [i] = n.useState(null == e ? true : d[e]), l = c.useIsGuildSupported(), r = null == i || null == (t = i.useIsGuildSupported) ? true : t.call(i), a = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var i = null != arguments[t] ? arguments[t] : {},
         n = Object.keys(i);

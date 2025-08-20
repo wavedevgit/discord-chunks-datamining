@@ -56,9 +56,9 @@ function N(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let I = "RULE";
+let E = "RULE";
 
-function E(e) {
+function I(e) {
   let {
     rule: t,
     rulesChannel: n,
@@ -73,11 +73,11 @@ function E(e) {
     previewEnabled: _,
     isDragEnabled: C,
     disabled: N
-  } = e, E = i.useRef(null), S = i.useRef(null), [{
+  } = e, I = i.useRef(null), S = i.useRef(null), [{
     textValue: T,
     richValue: P
   }, w] = i.useState((0, p.eK)(t.value)), [, R, Z] = (0, c.c)({
-    type: I,
+    type: E,
     item: {
       rule: t,
       index: l
@@ -86,12 +86,12 @@ function E(e) {
       null == e || t.didDrop() || f(e.rule, null, true)
     }
   }), [, D] = (0, d.L)({
-    accept: I,
+    accept: E,
     hover: (e, t) => {
       var n;
       let {
         index: r
-      } = e, i = null == (n = E.current) ? true : n.getBoundingClientRect(), a = t.getClientOffset();
+      } = e, i = null == (n = I.current) ? true : n.getBoundingClientRect(), a = t.getClientOffset();
       if (null == i || null == a) return;
       let s = (i.bottom - i.top) / 2,
         o = a.y - i.top;
@@ -101,14 +101,14 @@ function E(e) {
       f(e.rule, l, true)
     }
   });
-  if (i.useLayoutEffect(() => (R(S), Z(D(E)), () => {
+  if (i.useLayoutEffect(() => (R(S), Z(D(I)), () => {
       R(null), D(null)
     }), [R, D, Z]), i.useEffect(() => {
       "" !== t.value && "" === T && w((0, p.eK)(t.value))
     }, [t.value, T]), null == n) return null;
   let A = "" !== t.value ? t.value : t.id;
   return (0, r.jsx)("div", {
-    ref: E,
+    ref: I,
     className: a()(y.draggableInputContainer, {
       [y.dragging]: b
     }),
@@ -170,7 +170,7 @@ function S(e) {
     setRules: n,
     guild: l,
     disabled: a
-  } = e, s = l.rulesChannelId, c = l.features.has(_.oNc.PREVIEW_ENABLED), d = (0, u.e7)([f.Z], () => null != s ? f.Z.getChannel(s) : null), g = (0, u.e7)([b.ZP], () => b.ZP.getDefaultChannel(l.id)), [p, h] = i.useState(null), [I, S] = i.useState(null), T = i.useCallback(e => {
+  } = e, s = l.rulesChannelId, c = l.features.has(_.oNc.PREVIEW_ENABLED), d = (0, u.e7)([f.Z], () => null != s ? f.Z.getChannel(s) : null), g = (0, u.e7)([b.ZP], () => b.ZP.getDefaultChannel(l.id)), [p, h] = i.useState(null), [E, S] = i.useState(null), T = i.useCallback(e => {
     if (!a && t.length !== v.X2)
       if (null != e && "" === t[t.length - 1].value) {
         let r = [...t];
@@ -226,7 +226,7 @@ function S(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: y.rulesContainer,
-      children: t.map((e, i) => (0, r.jsx)(E, {
+      children: t.map((e, i) => (0, r.jsx)(I, {
         rulesChannel: null != d ? d : g,
         rule: e,
         index: i,
@@ -241,7 +241,7 @@ function S(e) {
         })(i),
         onRuleReorder: R,
         isDropHovered: i === p,
-        focused: i === I,
+        focused: i === E,
         onFocus: S,
         previewEnabled: null == c || c,
         isDragEnabled: !a && t.length > 1,

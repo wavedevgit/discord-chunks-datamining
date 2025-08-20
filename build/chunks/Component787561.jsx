@@ -105,19 +105,19 @@ let R = "dismissedCommunityFeaturesUpsell",
     }), [f, j] = i.useState(false);
     (0, g.ZP)(() => {
       o.tn.get({
-        url: I.ANM.GUILD_ADMIN_SERVER_ELIGIBILITY(l.id),
+        url: E.ANM.GUILD_ADMIN_SERVER_ELIGIBILITY(l.id),
         rejectWithError: true
       }).then(e => {
         j(e.body.eligible_for_admin_server)
       }).catch(() => j(false))
     });
     let v = (0, s.e7)([x.Z], () => x.Z.getGuild("942897714956472401")),
-      _ = l.features.has(I.oNc.COMMUNITY) && p >= 1e3 && f && null == v;
+      _ = l.features.has(E.oNc.COMMUNITY) && p >= 1e3 && f && null == v;
     if (t && n && !_) return null;
     let y = async () => {
       try {
         let e = await o.tn.post({
-          url: I.ANM.JOIN_ADMIN_SERVER(l.id),
+          url: E.ANM.JOIN_ADMIN_SERVER(l.id),
           oldFormErrors: true,
           rejectWithError: true
         });
@@ -137,14 +137,14 @@ let R = "dismissedCommunityFeaturesUpsell",
           children: [(0, r.jsx)(u.X6q, {
             variant: "heading-md/semibold",
             className: S.upsellHeader,
-            children: E.intl.string(E.t["pR/BgY"])
+            children: I.intl.string(I.t["pR/BgY"])
           }), (0, r.jsx)(u.Text, {
             variant: "text-sm/normal",
-            children: E.intl.string(E.t["V+Yo1t"])
+            children: I.intl.string(I.t["V+Yo1t"])
           })]
         })]
       }), (0, r.jsx)(d.zx, {
-        "aria-label": E.intl.string(E.t.cpT0Cg),
+        "aria-label": I.intl.string(I.t.cpT0Cg),
         look: d.zx.Looks.BLANK,
         size: d.zx.Sizes.NONE,
         className: S.upsellClose,
@@ -163,7 +163,7 @@ let R = "dismissedCommunityFeaturesUpsell",
           children: (0, r.jsx)(u.zxk, {
             variant: "primary",
             size: "sm",
-            text: E.intl.string(E.t.iF1Asr),
+            text: I.intl.string(I.t.iF1Asr),
             onClick: y
           })
         }), n ? null : (0, r.jsx)("div", {
@@ -172,9 +172,9 @@ let R = "dismissedCommunityFeaturesUpsell",
           children: (0, r.jsx)(u.zxk, {
             variant: "primary",
             size: "sm",
-            text: E.intl.string(E.t["S/DfiY"]),
+            text: I.intl.string(I.t["S/DfiY"]),
             onClick: () => {
-              O.Z.setSection(I.pNK.ONBOARDING)
+              O.Z.setSection(E.pNK.ONBOARDING)
             }
           })
         }), t ? null : (0, r.jsx)("div", {
@@ -183,9 +183,9 @@ let R = "dismissedCommunityFeaturesUpsell",
           children: (0, r.jsx)(u.zxk, {
             variant: "secondary",
             size: "sm",
-            text: E.intl.string(E.t["0kmJd3"]),
+            text: I.intl.string(I.t["0kmJd3"]),
             onClick: () => {
-              O.Z.setSection(I.pNK.ACCESS, I.KsC.ACCESS_DISCOVERABLE)
+              O.Z.setSection(E.pNK.ACCESS, E.KsC.ACCESS_DISCOVERABLE)
             }
           })
         }), (0, r.jsx)("div", {
@@ -194,9 +194,9 @@ let R = "dismissedCommunityFeaturesUpsell",
           children: (0, r.jsx)(u.zxk, {
             variant: "secondary",
             size: "sm",
-            text: E.intl.string(E.t.BQIYTU),
+            text: I.intl.string(I.t.BQIYTU),
             onClick: () => {
-              O.Z.setSection(I.pNK.ANALYTICS)
+              O.Z.setSection(E.pNK.ANALYTICS)
             }
           })
         })]
@@ -221,7 +221,7 @@ let R = "dismissedCommunityFeaturesUpsell",
       let {
         channel: t
       } = e;
-      t.type === I.d4z.GUILD_TEXT && m.push({
+      t.type === E.d4z.GUILD_TEXT && m.push({
         value: t.id,
         label: (0, p.F6)(t, _.default, v.Z, true)
       })
@@ -242,31 +242,31 @@ let R = "dismissedCommunityFeaturesUpsell",
       },
       b = () => {
         module.features.has(Chunk981631.oNc.DISCOVERABLE) && module.features.has(Chunk981631.oNc.PARTNERED) ? (0, Chunk481060.h7j)(e => (0, r.jsx)(u.ConfirmModal, w(P({}, e), {
-          header: E.intl.string(E.t.iBnVHR),
-          confirmText: E.intl.string(E.t["cY+Ooa"]),
-          cancelText: E.intl.string(E.t.oEAioK),
+          header: I.intl.string(I.t.iBnVHR),
+          confirmText: I.intl.string(I.t["cY+Ooa"]),
+          cancelText: I.intl.string(I.t.oEAioK),
           onConfirm: g,
           children: (0, r.jsx)(u.Text, {
             variant: "text-sm/normal",
-            children: E.intl.string(E.t["P+Sh8f"])
+            children: I.intl.string(I.t["P+Sh8f"])
           })
         }))) : module.features.has(Chunk981631.oNc.DISCOVERABLE) ? (0, Chunk481060.h7j)(e => (0, r.jsx)(u.ConfirmModal, w(P({}, e), {
-          header: E.intl.string(E.t.iBnVHR),
-          confirmText: E.intl.string(E.t["cY+Ooa"]),
-          cancelText: E.intl.string(E.t.oEAioK),
+          header: I.intl.string(I.t.iBnVHR),
+          confirmText: I.intl.string(I.t["cY+Ooa"]),
+          cancelText: I.intl.string(I.t.oEAioK),
           onConfirm: g,
           children: (0, r.jsx)(u.Text, {
             variant: "text-sm/normal",
-            children: E.intl.string(E.t["eMx/ub"])
+            children: I.intl.string(I.t["eMx/ub"])
           })
         }))) : module.features.has(Chunk981631.oNc.PARTNERED) ? (0, Chunk481060.h7j)(e => (0, r.jsx)(u.ConfirmModal, w(P({}, e), {
-          header: E.intl.string(E.t.iBnVHR),
-          confirmText: E.intl.string(E.t["cY+Ooa"]),
-          cancelText: E.intl.string(E.t.oEAioK),
+          header: I.intl.string(I.t.iBnVHR),
+          confirmText: I.intl.string(I.t["cY+Ooa"]),
+          cancelText: I.intl.string(I.t.oEAioK),
           onConfirm: g,
           children: (0, r.jsx)(u.Text, {
             variant: "text-sm/normal",
-            children: E.intl.string(E.t.l1wLeX)
+            children: I.intl.string(I.t.l1wLeX)
           })
         }))) : Chunk493773()
       };
@@ -423,7 +423,7 @@ let R = "dismissedCommunityFeaturesUpsell",
           children: e => (0, r.jsx)(u.zxk, P({
             variant: "critical-primary",
             size: "sm",
-            text: E.intl.string(E.t.c1BmbG),
+            text: I.intl.string(I.t.c1BmbG),
             onClick: b,
             disabled: !n
           }, e))

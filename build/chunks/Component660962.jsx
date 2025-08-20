@@ -335,7 +335,7 @@ function ee(e) {
     role: n,
     locked: i,
     setSelectedSection: l
-  } = e, s = (0, y.yH)(t.id, n), o = (0, d.e7)([T.Z], () => T.Z.getRoleStyleData(n.id)), c = !s, u = null != o && s ? o.currentStyle : T.g.SOLID, m = (0, I.fI)(n), p = i || m, h = (0, d.e7)([E.Z], () => E.Z.canImpersonateRole(t, n)), {
+  } = e, s = (0, y.yH)(t.id, n), o = (0, d.e7)([T.Z], () => T.Z.getRoleStyleData(n.id)), c = !s, u = null != o && s ? o.currentStyle : T.g.SOLID, m = (0, E.fI)(n), p = i || m, h = (0, d.e7)([I.Z], () => I.Z.canImpersonateRole(t, n)), {
     headerHeight: f,
     headerRef: b
   } = (0, w.Z)(0), {

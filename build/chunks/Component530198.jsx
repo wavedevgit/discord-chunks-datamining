@@ -1,7 +1,7 @@
 /** Chunk was on 6049 **/
 /** chunk id: 530198, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => w
+  Z: () => R
 }), require("./388685.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -177,14 +177,14 @@ function O(e) {
   }) : (0, r.jsx)("span", {
     className: b.fieldText,
     children: a
-  }), I = i.useId();
+  }), E = i.useId();
   return (0, r.jsxs)("tr", {
     className: b.ruleContainer,
     children: [(0, r.jsx)("th", {
       scope: "row",
       children: (0, r.jsx)(d.nn4, {
         children: (0, r.jsx)("label", {
-          htmlFor: I,
+          htmlFor: E,
           children: l
         })
       })
@@ -231,7 +231,7 @@ function O(e) {
       })
     }), (0, r.jsx)("td", {
       children: (0, r.jsx)(d.rsf, {
-        id: I,
+        id: E,
         checked: j,
         onChange: e => {
           var t, n;
@@ -288,6 +288,41 @@ function C(e) {
     configMetadataMap: t,
     onConfigurationChange: n,
     locked: i
+  } = e, l = g.Z.get(p.ABu.BLUESKY);
+  return (0, r.jsxs)(y, {
+    children: [(0, r.jsx)(O, {
+      titleText: f.intl.string(f.t.zdXqGx),
+      fieldTextHook: f.t.QPrntb,
+      metadataField: h.PC.CREATED_AT,
+      existingPendingConfiguration: t.get(h.PC.CREATED_AT),
+      platform: l,
+      onConfigurationChange: n,
+      locked: i
+    }), (0, r.jsx)(O, {
+      titleText: f.intl.string(f.t.IE0T3t),
+      fieldTextHook: f.t.Zwey2d,
+      metadataField: h.PC.BLUESKY_FOLLOWERS_COUNT,
+      existingPendingConfiguration: t.get(h.PC.BLUESKY_FOLLOWERS_COUNT),
+      platform: l,
+      onConfigurationChange: n,
+      locked: i
+    }), (0, r.jsx)(O, {
+      titleText: f.intl.string(f.t["LLE+Ul"]),
+      fieldTextHook: f.t["UK2/m5"],
+      metadataField: h.PC.BLUESKY_STATUSES_COUNT,
+      existingPendingConfiguration: t.get(h.PC.BLUESKY_STATUSES_COUNT),
+      platform: l,
+      onConfigurationChange: n,
+      locked: i
+    })]
+  })
+}
+
+function N(e) {
+  let {
+    configMetadataMap: t,
+    onConfigurationChange: n,
+    locked: i
   } = e, l = g.Z.get(p.ABu.STEAM);
   return (0, r.jsxs)(y, {
     children: [(0, r.jsx)(O, {
@@ -330,7 +365,7 @@ function C(e) {
   })
 }
 
-function N(e) {
+function E(e) {
   let {
     configMetadataMap: t,
     onConfigurationChange: n,
@@ -416,7 +451,7 @@ function I(e) {
   })
 }
 
-function E(e) {
+function S(e) {
   let {
     configMetadataMap: t,
     onConfigurationChange: n,
@@ -443,7 +478,7 @@ function E(e) {
   })
 }
 
-function S(e) {
+function T(e) {
   let {
     configMetadataMap: t,
     onConfigurationChange: n,
@@ -495,7 +530,7 @@ function S(e) {
   })
 }
 
-function T(e) {
+function P(e) {
   let {
     configMetadataMap: t,
     onConfigurationChange: n,
@@ -538,7 +573,7 @@ function T(e) {
   })
 }
 
-function P(e) {
+function w(e) {
   let {
     configMetadataMap: t,
     onConfigurationChange: n,
@@ -603,7 +638,7 @@ function P(e) {
   })
 }
 
-function w(e) {
+function R(e) {
   let t, {
       configurationItems: n,
       onConfigurationChange: i,
@@ -634,25 +669,28 @@ function w(e) {
     f = null;
   switch (null == d ? true : d.type) {
     case p.ABu.STEAM:
-      f = (0, r.jsx)(C, x({}, h));
+      f = (0, r.jsx)(N, x({}, h));
       break;
     case p.ABu.TWITTER:
-      f = (0, r.jsx)(N, x({}, h));
+      f = (0, r.jsx)(E, x({}, h));
       break;
     case p.ABu.REDDIT:
       f = (0, r.jsx)(I, x({}, h));
       break;
-    case p.ABu.PAYPAL:
-      f = (0, r.jsx)(E, x({}, h));
+    case p.ABu.BLUESKY:
+      f = (0, r.jsx)(C, x({}, h));
       break;
-    case p.ABu.EBAY:
+    case p.ABu.PAYPAL:
       f = (0, r.jsx)(S, x({}, h));
       break;
-    case p.ABu.TIKTOK:
+    case p.ABu.EBAY:
       f = (0, r.jsx)(T, x({}, h));
       break;
+    case p.ABu.TIKTOK:
+      f = (0, r.jsx)(P, x({}, h));
+      break;
     default:
-      f = (0, r.jsx)(P, j(x({}, h), {
+      f = (0, r.jsx)(w, j(x({}, h), {
         integration: c
       }))
   }

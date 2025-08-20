@@ -59,11 +59,11 @@ function j() {
     setCurrentTab: O
   } = (0, Chunk798680.dw)(), y = () => O(Chunk798680.ue.EMOJIS), C = (0, Chunk442837.e7)([Chunk430824.Z], () => Chunk430824.Z.getGuild(exports)), N = null != C ? (0, Chunk443106.Z)(C) : true;
 
-  function I(e) {
+  function E(e) {
     null == j ? v(new Set(e)) : v(new Set([...j, ...e]))
   }
 
-  function E(e) {
+  function I(e) {
     let t = new Set(j);
     t.delete(e), v(t)
   }
@@ -84,13 +84,13 @@ function j() {
       tierEmojiIds: j,
       guildId: exports,
       onRemoveEmoji: function(e) {
-        e.roles.filter(e => e !== (null == _ ? true : _.id)).length > 0 ? E(e.id) : (0, l.ZDy)(async () => {
+        e.roles.filter(e => e !== (null == _ ? true : _.id)).length > 0 ? I(e.id) : (0, l.ZDy)(async () => {
           let {
             default: t
           } = await n.e("59128").then(n.bind(n, 28564));
           return n => (0, r.jsx)(t, x(b({}, n), {
             onConfirmDelete: () => {
-              E(e.id), n.onClose()
+              I(e.id), n.onClose()
             }
           }))
         })
@@ -106,7 +106,7 @@ function j() {
           return n => (0, r.jsx)(e, x(b({}, n), {
             guildId: t,
             initialTierEmojiIds: j,
-            onSubmit: I,
+            onSubmit: E,
             transitionToManageEmoji: () => {
               y(), n.onClose()
             }

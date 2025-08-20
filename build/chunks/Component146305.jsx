@@ -326,7 +326,7 @@ let ev = {
               confirmText: ef.intl.string(ef.t.l3hWPz),
               cancelText: ef.intl.string(ef.t["ETE/oK"]),
               onConfirm: () => {
-                I.S.subscribeOnce(ep.CkL.LAYER_POP_COMPLETE, () => {
+                E.S.subscribeOnce(ep.CkL.LAYER_POP_COMPLETE, () => {
                   S.Z.deleteGuild(t.guild.id, i)
                 }), (0, s.xf)()
               }
@@ -388,7 +388,7 @@ let ev = {
       case ep.pNK.ROLE_SUBSCRIPTIONS_TIER_TEMPLATE_SELECTION:
         return null;
       default:
-        (0, E.vE)(e)
+        (0, I.vE)(e)
     }
   }
 }

@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk912231 = require("./912231.js");
 
-function I(e) {
+function E(e) {
   let {
     pendingState: t
   } = e, n = i.useRef(false), l = i.useCallback(async e => {
@@ -57,7 +57,7 @@ function I(e) {
   }
 }
 
-function E(e) {
+function I(e) {
   let {
     guildId: t
   } = e, {
@@ -99,7 +99,7 @@ function S(e) {
   }) || n ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: N.divider
-    }), (0, r.jsx)(E, {
+    }), (0, r.jsx)(I, {
       guildId: t
     })]
   })
@@ -131,7 +131,7 @@ function T() {
     }), (0, Chunk951288.jsx)("div", {
       className: Chunk912231.divider
     }), (0, Chunk951288.jsx)("div", {
-      children: (0, Chunk951288.jsx)(I, {
+      children: (0, Chunk951288.jsx)(E, {
         pendingState: exports
       })
     }), null != module && (0, Chunk951288.jsx)(S, {

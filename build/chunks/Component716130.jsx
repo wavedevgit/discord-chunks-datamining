@@ -127,8 +127,8 @@ function O(e) {
     id: e.id,
     data: e
   }))], {
-    handleDragStart: I,
-    handleDragReset: E,
+    handleDragStart: E,
+    handleDragReset: I,
     handleDragComplete: S
   } = (0, u.Z)(N, e => {
     let t = e.findIndex(e => "separator" === e.id),
@@ -167,8 +167,8 @@ function O(e) {
         singleColumn: a,
         promptIndex: t,
         dragIndex: t,
-        onPromptDragStart: I,
-        onPromptDragReset: E,
+        onPromptDragStart: E,
+        onPromptDragReset: I,
         onPromptDragComplete: S
       }, e.id))]
     }), (0, r.jsx)(_, {
@@ -181,8 +181,8 @@ function O(e) {
         prompt: e,
         promptIndex: t + y.length,
         dragIndex: t + y.length + 1,
-        onPromptDragStart: I,
-        onPromptDragReset: E,
+        onPromptDragStart: E,
+        onPromptDragReset: I,
         onPromptDragComplete: S
       }, e.id)), O.length < f.YW ? (0, r.jsxs)(o.P3F, {
         className: x.addPrompt,

@@ -395,13 +395,13 @@ let S = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                         i = Object.values(C.z).find(e => e.presentation === n),
                         l = null != i ? "".concat(i.baseUrl) : true;
                       return (0, r.jsxs)("div", {
-                        className: E.socialLinksContainer,
+                        className: I.socialLinksContainer,
                         onMouseOver: () => K(t, true),
                         onFocus: () => K(t, true),
                         onMouseOut: () => K(t, false),
                         onBlur: () => K(t, false),
                         children: [(0, r.jsx)(s.q4e, {
-                          className: Z.isPublished ? E.socialLinksDropdownMax : E.socialLinksDropdownMin,
+                          className: Z.isPublished ? I.socialLinksDropdownMax : I.socialLinksDropdownMin,
                           options: (e => {
                             let t = Object.entries(C.z).filter(e => !B.includes(e[1].presentation)).map(e => ({
                               label: e[1].presentation,
@@ -412,7 +412,7 @@ let S = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                               value: e
                             })
                           })(B[t]),
-                          placeholder: I.intl.string(I.t.xSALIC),
+                          placeholder: E.intl.string(E.t.xSALIC),
                           value: B[t],
                           onChange: e => ((e, t) => {
                             let n = [...Z.socialLinks],
@@ -429,14 +429,14 @@ let S = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                               i = e;
                             0 === r.length && i.length > 1 && false === RegExp("^https?:").test(i) && (i = "https://" + i), /\.(zip|exe|pdf|dmg|msi|apk|rar|7z|tar|gz|iso|docx?|xlsx?|pptx?|mp4|mp3)$/i.test(i) || (n[t] = i, (0, m.t$)(c.id, n))
                           })("".concat(l).concat(e), t),
-                          placeholder: null != l ? true : I.intl.string(I.t.Q6o4pK),
+                          placeholder: null != l ? true : E.intl.string(E.t.Q6o4pK),
                           maxLength: 150,
                           disabled: !w || null == B[t],
                           fullWidth: true,
                           leading: l,
                           trailing: w ? {
                             icon: s.XHJ,
-                            "aria-label": I.intl.string(I.t.N86XcH),
+                            "aria-label": E.intl.string(E.t.N86XcH),
                             onClick: () => (e => {
                               let t = [...G];
                               t.splice(e, 1), U(t);

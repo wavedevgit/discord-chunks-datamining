@@ -15,12 +15,12 @@ let c = {
   title: () => Chunk388032.intl.string(Chunk388032.t["KzCF//"]),
   description: () => Chunk388032.intl.string(Chunk388032.t.xMW8FB),
   canCreateGuild: false,
-  useIsGuildSupported: () => (0, Chunk442837.e7)([Chunk353926.Z], () => (e, t) => (0, s.eM)(e, t) && (0, d.X$)({
+  useIsGuildSupported: () => (0, Chunk442837.e7)([Chunk353926.Z], () => (e, t) => (0, o.eM)(e, t) && (0, u.X$)({
     guild: e,
     isOwner: true,
     canManageGuildRoleSubscriptions: true,
     isMonetizationWaitlistEnabledForGuild: (0, l.mG)(e.id),
-    isGuildEligibleForRoleSubscriptions: (0, u.kT)(e.id),
+    isGuildEligibleForRoleSubscriptions: (0, s.kT)(e.id),
     isExpeditedMonetizationOnboardingGuild: (0, l.Rw)(e),
     isUserInCreatorMonetizationEligibleCountry: (0, l.DB)(),
     shouldRestrictUpdatingRoleSubscriptionSettings: (0, r.cu)(e.id)

@@ -119,10 +119,10 @@ function N(e) {
     })]
   });
   return n ? (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(I, {
+    children: [(0, r.jsx)(E, {
       guildId: t,
       handlePreview: h
-    }), (0, r.jsx)(E, {}), (0, r.jsxs)("div", {
+    }), (0, r.jsx)(I, {}), (0, r.jsxs)("div", {
       className: O.content,
       children: [(0, r.jsx)(S, {
         guildId: t,
@@ -143,7 +143,7 @@ function N(e) {
   })
 }
 
-function I(e) {
+function E(e) {
   let {
     guildId: t,
     handlePreview: n
@@ -187,7 +187,7 @@ function I(e) {
   })
 }
 
-function E() {
+function I() {
   let e = "• ";
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk820983.notice,

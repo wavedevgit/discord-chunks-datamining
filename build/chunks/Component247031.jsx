@@ -109,10 +109,10 @@ function Z(e) {
       children: [(0, r.jsx)(c.Text, {
         className: S.reasonHeader,
         variant: "text-xs/normal",
-        children: E.intl.string(E.t["9Ki66O"])
+        children: I.intl.string(I.t["9Ki66O"])
       }), (0, r.jsx)(c.Text, {
         variant: "text-sm/normal",
-        children: null != a.reason && "" !== a.reason ? a.reason : E.intl.string(E.t["t+2Zcn"])
+        children: null != a.reason && "" !== a.reason ? a.reason : I.intl.string(I.t["t+2Zcn"])
       }), null != p ? (0, r.jsx)(c.Text, {
         className: S.error,
         color: "text-danger",
@@ -125,12 +125,12 @@ function Z(e) {
         direction: "horizontal-reverse",
         children: [(0, r.jsx)(c.zxk, {
           variant: "critical-secondary",
-          text: E.intl.string(E.t.UPcIa2),
+          text: I.intl.string(I.t.UPcIa2),
           onClick: f,
           loading: d
         }), (0, r.jsx)(c.zxk, {
           variant: "primary",
-          text: E.intl.string(E.t.i4jeWV),
+          text: I.intl.string(I.t.i4jeWV),
           onClick: o
         })]
       })
@@ -291,17 +291,17 @@ class A extends Chunk647438.PureComponent {
           width: 256,
           height: 212
         }), (0, r.jsx)(c.OZU, {
-          note: E.intl.string(E.t.zfCsAw),
+          note: I.intl.string(I.t.zfCsAw),
           style: {
             maxWidth: 300
           },
-          children: E.intl.string(E.t.ZEiY1N)
+          children: I.intl.string(I.t.ZEiY1N)
         })]
       }));
       let s = null != (e = null == i ? true : i.size) ? e : 0;
       return (0, r.jsxs)(c.hjN, {
         tag: c.RB0.H1,
-        title: E.intl.formatToPlainString(E.t["bW+JJy"], {
+        title: I.intl.formatToPlainString(I.t["bW+JJy"], {
           bans: s
         }),
         children: [(0, r.jsxs)("div", {
@@ -309,15 +309,15 @@ class A extends Chunk647438.PureComponent {
           children: [(0, r.jsx)(c.R94, {
             type: c.geA.DESCRIPTION,
             className: S.description,
-            children: E.intl.format(E.t.JcZ36u, {
+            children: I.intl.format(I.t.JcZ36u, {
               onModerationClick: this.handleModerationClick
             })
           }), null == t && (0, r.jsx)(c.E1j, {
             size: "sm",
             className: S.searchBar,
             query: null != a ? a : "",
-            placeholder: E.intl.string(E.t.rTL1RE),
-            "aria-label": E.intl.string(E.t.rTL1RE),
+            placeholder: I.intl.string(I.t.rTL1RE),
+            "aria-label": I.intl.string(I.t.rTL1RE),
             onChange: this.handleQueryChange,
             onClear: this.handleQueryClear
           })]

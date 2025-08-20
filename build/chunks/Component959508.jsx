@@ -34,8 +34,8 @@ function O(e) {
     promptIndex: b,
     dragIndex: O,
     includeCount: N,
-    singleColumn: I,
-    onPromptDragComplete: E,
+    singleColumn: E,
+    onPromptDragComplete: I,
     onPromptDragStart: S,
     onPromptDragReset: T
   } = e, P = (0, s.e7)([p.Z], () => p.Z.editedDefaultChannelIds), {
@@ -48,7 +48,7 @@ function O(e) {
     index: O,
     optionId: l.id,
     onDragStart: S,
-    onDragComplete: E,
+    onDragComplete: I,
     onDragReset: T
   }), A = (0, s.cj)([f.Z], () => {
     var e;
@@ -171,7 +171,7 @@ function O(e) {
             prompt: l,
             promptIndex: b,
             errors: A,
-            singleColumn: I
+            singleColumn: E
           }), null != U ? (0, r.jsx)(o.pdY, {
             error: U
           }) : null]

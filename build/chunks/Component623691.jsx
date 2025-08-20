@@ -1,7 +1,7 @@
 /** Chunk was on 6049 **/
 /** chunk id: 623691, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => I
 }), require("./953529.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -28,7 +28,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk297827 = require("./297827.js");
 
-function E(e) {
+function I(e) {
   let {
     guild: t,
     everyoneRole: n,
@@ -54,7 +54,7 @@ function E(e) {
       tag: d.RB0.H1,
       children: N.intl.string(N.t.LPJmLy)
     }), (0, r.jsx)(d.Text, {
-      className: I.description,
+      className: E.description,
       color: "header-secondary",
       variant: "text-sm/normal",
       children: N.intl.string(N.t["1ydhVl"])
@@ -114,7 +114,7 @@ function S(e) {
     });
   return (0, r.jsx)(h.Z, {
     look: h.z.WARNING,
-    className: I.migrationInfoBox,
+    className: E.migrationInfoBox,
     children: l
   })
 }
@@ -137,30 +137,30 @@ function T(e) {
       query: l,
       setQuery: s
     }), (0, r.jsx)(d.Text, {
-      className: I.helpText,
+      className: E.helpText,
       color: "header-secondary",
       variant: "text-sm/normal",
       children: N.intl.format(N.t.xkC3YW, {
         articleURL: x.Z.getArticleURL(O.BhN.PERMISSIONS_TUTORIAL)
       })
     }), (0, r.jsx)("div", {
-      className: I.rolesTable,
+      className: E.rolesTable,
       children: (0, r.jsxs)("div", {
-        className: I.tableHeader,
+        className: E.tableHeader,
         children: [(0, r.jsx)("div", {
-          className: I.dragSpacing
+          className: E.dragSpacing
         }), (0, r.jsx)(d.Text, {
-          className: a()(I.tableTitle, I.roleNameSpacing),
+          className: a()(E.tableTitle, E.roleNameSpacing),
           variant: "text-sm/normal",
           children: N.intl.format(N.t["38N3V1"], {
             numRoles: String(i.length)
           })
         }), (0, r.jsx)(d.Text, {
-          className: a()(I.tableTitle, I.memberSpacing),
+          className: a()(E.tableTitle, E.memberSpacing),
           variant: "text-sm/normal",
           children: N.intl.string(N.t["9Oq93t"])
         }), (0, r.jsx)("div", {
-          className: I.buttonsSpacing
+          className: E.buttonsSpacing
         })]
       })
     })]
@@ -180,9 +180,9 @@ function P(e) {
     s(true), await m.Z.createRole(t.id), s(false)
   };
   return (0, r.jsx)("div", {
-    className: I.__invalid_rolesList,
+    className: E.__invalid_rolesList,
     children: (0, r.jsxs)("div", {
-      className: I.searchContainer,
+      className: E.searchContainer,
       children: [(0, r.jsx)(d.E1j, {
         query: n,
         onChange: o,

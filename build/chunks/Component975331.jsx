@@ -28,7 +28,7 @@ function x() {
   } = (0, Chunk22902.Z)(null != (e = null == v ? true : v.active_trial) ? module : null), O = (0, Chunk518470.Z)(), y = null != require, C = Chunk647438.useCallback(e => {
     let t = _.find(e => e.isDefault);
     a()(null != t, "Missing default trial duartion option"), l(e ? t.value : null)
-  }, [Chunk512722, _]), N = (0, Chunk723047.mY)(), I = (0, Chunk313201.Dt)(), E = (0, Chunk313201.Dt)();
+  }, [Chunk512722, _]), N = (0, Chunk723047.mY)(), E = (0, Chunk313201.Dt)(), I = (0, Chunk313201.Dt)();
   return (0, Chunk951288.jsxs)(Chunk783454.Z, {
     title: Chunk388032.intl.string(Chunk388032.t["6antoq"]),
     description: Chunk388032.intl.string(Chunk388032.t.urVijY),
@@ -40,7 +40,7 @@ function x() {
       children: Chunk388032.intl.string(Chunk388032.t["+hTmdX"])
     }), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
       title: Chunk388032.intl.string(Chunk388032.t.m1KuWV),
-      titleId: I,
+      titleId: E,
       disabled: !y || N,
       children: [(0, Chunk951288.jsx)(Chunk481060.R94, {
         type: Chunk481060.R94.Types.DESCRIPTION,
@@ -50,7 +50,7 @@ function x() {
       }), (0, Chunk951288.jsx)(Chunk481060.LZC, {
         size: 8
       }), (0, Chunk951288.jsx)(Chunk481060.q4e, {
-        "aria-labelledby": I,
+        "aria-labelledby": E,
         options: _,
         className: Chunk605041.formInput,
         placeholder: Chunk388032.intl.string(Chunk388032.t.WZG1BQ),
@@ -64,7 +64,7 @@ function x() {
       size: 24
     }), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
       title: Chunk388032.intl.string(Chunk388032.t["/JD9oa"]),
-      titleId: E,
+      titleId: I,
       disabled: !y || N,
       children: [(0, Chunk951288.jsx)(Chunk481060.R94, {
         type: Chunk481060.R94.Types.DESCRIPTION,
@@ -72,7 +72,7 @@ function x() {
         disabled: !y || N,
         children: Chunk388032.intl.string(Chunk388032.t.Cg5eBg)
       }), (0, Chunk951288.jsx)(Chunk481060.q4e, {
-        "aria-labelledby": E,
+        "aria-labelledby": I,
         options: O,
         className: Chunk605041.formInput,
         value: x,

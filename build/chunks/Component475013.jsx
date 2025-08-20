@@ -1,7 +1,7 @@
 /** Chunk was on 6049 **/
 /** chunk id: 475013, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => I,
+  Z: () => E,
   _: () => N
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -47,7 +47,7 @@ let N = () => {
   })
 };
 
-function I(e) {
+function E(e) {
   let {
     refToScroller: t
   } = e, {
@@ -69,20 +69,20 @@ function I(e) {
     let e = m.Z.getMemberCount(n.id);
     null != e && e <= x.cm && o.Z.requestMembers(n.id, "", 0, false)
   });
-  let [N, I] = i.useState(O.ZI.DISPLAY);
+  let [N, E] = i.useState(O.ZI.DISPLAY);
   return (i.useEffect(() => {
-    null == p && I(O.ZI.DISPLAY)
+    null == p && E(O.ZI.DISPLAY)
   }, [p]), null != p) ? (0, r.jsx)(j.Z, {
     editRoleId: p,
     setEditRoleId: C,
     selectedSection: N,
-    setSelectedSection: I
+    setSelectedSection: E
   }) : h ? (0, r.jsx)(_.Z, {
     setEditRoleId: C,
     guild: n,
     everyoneRole: c,
     otherRoles: g,
-    setSelectedSection: I,
+    setSelectedSection: E,
     refToScroller: t
   }) : (0, r.jsx)(v.Z, {
     guild: n,

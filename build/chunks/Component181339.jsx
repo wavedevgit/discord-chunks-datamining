@@ -29,13 +29,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk824804 = require("./824804.js");
 
-function E(e) {
+function I(e) {
   let {
     guild: t,
     isExpanded: n,
     selectedChannelId: l,
     className: s
-  } = e, f = (0, g.BT)(t), x = (0, p.Z)(t), [j, v] = i.useState(x), _ = (0, o.e7)([b.Z], () => b.Z.getChannel(l), [l]), O = (0, u.ZP)(_), E = async () => {
+  } = e, f = (0, g.BT)(t), x = (0, p.Z)(t), [j, v] = i.useState(x), _ = (0, o.e7)([b.Z], () => b.Z.getChannel(l), [l]), O = (0, u.ZP)(_), I = async () => {
     v(!j);
     try {
       var e;
@@ -56,9 +56,9 @@ function E(e) {
     }
   };
   return (0, r.jsxs)("div", {
-    className: a()(I.itemWrapper, s),
+    className: a()(E.itemWrapper, s),
     children: [(0, r.jsxs)("div", {
-      className: I.itemContent,
+      className: E.itemContent,
       children: [(0, r.jsx)(c.X6q, {
         variant: "text-md/semibold",
         color: "header-primary",
@@ -70,7 +70,7 @@ function E(e) {
       }), n || null == l ? null : (0, r.jsxs)(c.Text, {
         color: "interactive-normal",
         variant: "text-xs/medium",
-        className: I.valuePill,
+        className: E.valuePill,
         children: [(0, r.jsx)(c.VL1, {
           size: "xxs",
           color: "currentColor"
@@ -78,7 +78,7 @@ function E(e) {
       })]
     }), (0, r.jsx)(y.Z, {
       checked: j,
-      onChange: E,
+      onChange: I,
       disabled: !f || null == l
     })]
   })
@@ -131,13 +131,13 @@ function S(e) {
     }
   };
   return (0, r.jsx)("div", {
-    className: a()(I.itemBodyContainer, m),
+    className: a()(E.itemBodyContainer, m),
     children: (0, r.jsxs)("div", {
-      className: I.itemBodyInner,
+      className: E.itemBodyInner,
       children: [(0, r.jsx)(c.vwX, {
         children: N.intl.string(N.t.sMkYEx)
       }), (0, r.jsx)(c.VcW, {
-        wrapperClassName: I.bringToFront,
+        wrapperClassName: E.bringToFront,
         options: f,
         onChange: b,
         value: i,
@@ -157,7 +157,7 @@ function T(e) {
     guild: l
   } = e, [a, s] = i.useState(false), o = null != (t = l.safetyAlertsChannelId) ? t : null, [c, d] = i.useState(null != o ? o : null != (n = null == l ? true : l.publicUpdatesChannelId) ? n : null);
   return (0, r.jsx)(f.Z, {
-    renderHeader: (0, r.jsx)(E, {
+    renderHeader: (0, r.jsx)(I, {
       isExpanded: a,
       guild: l,
       selectedChannelId: c
@@ -178,16 +178,16 @@ function P(e) {
     guild: l
   } = e, a = null != (t = l.safetyAlertsChannelId) ? t : null, [s, o] = i.useState(null != a ? a : null != (n = null == l ? true : l.publicUpdatesChannelId) ? n : null);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(E, {
+    children: [(0, r.jsx)(I, {
       isExpanded: true,
       guild: l,
       selectedChannelId: s,
-      className: I.noPadding
+      className: E.noPadding
     }), (0, r.jsx)(S, {
       guild: l,
       selectedChannelId: s,
       setSelectedChannelId: o,
-      className: I.noPadding
+      className: E.noPadding
     })]
   })
 }

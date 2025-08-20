@@ -153,7 +153,7 @@ function N(e) {
   })
 }
 
-function I(e) {
+function E(e) {
   return (0, m.r5)(e, m.vT.ALPHA) ? (0, r.jsx)(o.Z, {
     className: j.alphaBetaTag
   }) : (0, m.r5)(e, m.vT.BETA) ? (0, r.jsx)(c.Z, {
@@ -161,7 +161,7 @@ function I(e) {
   }) : null
 }
 
-function E(e) {
+function I(e) {
   let {
     rule: t,
     isDefaultRule: n,
@@ -180,7 +180,7 @@ function E(e) {
       let n = await m(e, []);
       null != n && (h(n), b(n.enabled))
     }
-  }, 300), E = e => {
+  }, 300), I = e => {
     y(e), s(e)
   };
   if (null == o) return null;
@@ -206,7 +206,7 @@ function E(e) {
         className: j.ruleTextHeaderContainer,
         children: [(0, r.jsxs)("div", {
           className: j.ruleTextHeader,
-          children: [S, I(t.triggerType)]
+          children: [S, E(t.triggerType)]
         }), (0, r.jsx)(a.Text, {
           className: j.ruleSubtextHeader,
           variant: "text-sm/normal",
@@ -231,7 +231,7 @@ function E(e) {
         position: "top",
         "aria-label": x.intl.string(x.t.PdRCRk),
         children: e => (0, r.jsx)(a.P3F, _(v({}, e), {
-          onClick: E,
+          onClick: I,
           className: j.menuIconButton,
           children: (0, r.jsx)(a.Huf, {
             size: "md",
@@ -271,7 +271,7 @@ function S(e) {
         color: "header-primary",
         children: (0, r.jsxs)("div", {
           className: j.ruleTextHeader,
-          children: [s, I(t)]
+          children: [s, E(t)]
         })
       }), (0, r.jsx)(a.Text, {
         className: j.ruleTextDescription,
@@ -318,7 +318,7 @@ function T(e) {
     rule: t,
     onChangeRule: u,
     onContextMenu: m
-  }) : (0, r.jsx)(E, {
+  }) : (0, r.jsx)(I, {
     rule: t,
     isDefaultRule: o,
     onContextMenu: m

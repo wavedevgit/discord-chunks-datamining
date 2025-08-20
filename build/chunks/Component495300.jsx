@@ -58,7 +58,7 @@ function P(e) {
       }) : (0, r.jsx)(N.Z, {});
       break;
     case j.PG.SAFETY_CHECK:
-      t = (0, r.jsx)(I.Z, {});
+      t = (0, r.jsx)(E.Z, {});
       break;
     case j.PG.DEFAULT_CHANNELS:
       t = (0, r.jsx)(_.Z, {
@@ -103,7 +103,7 @@ function P(e) {
         }), (0, r.jsx)(d.Text, {
           variant: "text-sm/semibold",
           color: "interactive-normal",
-          children: E.intl.string(E.t["13/7kZ"])
+          children: I.intl.string(I.t["13/7kZ"])
         })]
       })
     }), (0, r.jsx)("div", {
@@ -132,7 +132,7 @@ function w(e) {
       }), (0, r.jsx)(d.Text, {
         color: t === j.PG.SAFETY_CHECK ? "text-brand" : "text-muted",
         variant: "text-xs/medium",
-        children: E.intl.format(E.t.Me5MmZ, {
+        children: I.intl.format(I.t.Me5MmZ, {
           stepNumber: 1
         })
       })]
@@ -146,9 +146,9 @@ function w(e) {
       }), (0, r.jsx)(d.Text, {
         color: t === j.PG.DEFAULT_CHANNELS ? "text-brand" : "text-muted",
         variant: "text-xs/medium",
-        children: c ? E.intl.formatToPlainString(E.t["8mGhOz"], {
+        children: c ? I.intl.formatToPlainString(I.t["8mGhOz"], {
           stepNumber: 2
-        }) : E.intl.formatToPlainString(E.t.vxpuTU, {
+        }) : I.intl.formatToPlainString(I.t.vxpuTU, {
           stepNumber: 2
         })
       })]
@@ -162,9 +162,9 @@ function w(e) {
       }), (0, r.jsx)(d.Text, {
         color: t === j.PG.CUSTOMIZATION_QUESTIONS ? "text-brand" : "text-muted",
         variant: "text-xs/medium",
-        children: c ? E.intl.formatToPlainString(E.t.vb6J5u, {
+        children: c ? I.intl.formatToPlainString(I.t.vb6J5u, {
           stepNumber: 3
-        }) : E.intl.formatToPlainString(E.t.ZpdQqK, {
+        }) : I.intl.formatToPlainString(I.t.ZpdQqK, {
           stepNumber: 3
         })
       })]
@@ -178,7 +178,7 @@ function w(e) {
       }), (0, r.jsx)(d.Text, {
         color: t === j.PG.HOME_SETTINGS ? "text-brand" : "text-muted",
         variant: "text-xs/medium",
-        children: E.intl.format(E.t.KVOukp, {
+        children: I.intl.format(I.t.KVOukp, {
           stepNumber: 4
         })
       })]
@@ -191,7 +191,7 @@ function w(e) {
       }), (0, r.jsx)(d.Text, {
         color: t === j.PG.REVIEW ? "text-brand" : "text-muted",
         variant: "text-xs/medium",
-        children: E.intl.format(E.t.oVzkiI, {
+        children: I.intl.format(I.t.oVzkiI, {
           stepNumber: 3 + +!!i + 1
         })
       })]

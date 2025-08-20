@@ -28,8 +28,8 @@ function v(e) {
     editStateId: n,
     guildId: v
   } = (0, o.N)(), [_, O] = c.UE(n), [y, C] = c.R7(n), N = i.useMemo(() => t.filter(e => e.id !== n), [t, n]), {
-    isFullServerGating: I
-  } = (0, d.Z)(v), E = (0, a.Dt)(), S = (0, s.mY)();
+    isFullServerGating: E
+  } = (0, d.Z)(v), I = (0, a.Dt)(), S = (0, s.mY)();
   return (0, r.jsxs)(u.Z, {
     title: x.intl.string(x.t.YNw2Sk),
     description: x.intl.string(x.t.zMW5r6),
@@ -72,16 +72,16 @@ function v(e) {
       size: 24
     }), (0, r.jsxs)(l.hjN, {
       title: x.intl.string(x.t.S2kKzM),
-      titleId: E,
+      titleId: I,
       disabled: S,
       children: [(0, r.jsx)(l.R94, {
         type: l.R94.Types.DESCRIPTION,
         className: j.formDescription,
         disabled: S,
         children: x.intl.string(x.t["5a4Axc"])
-      }), I && (0, r.jsxs)(r.Fragment, {
+      }), E && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(g.Z, {
-          "aria-labelledby": E,
+          "aria-labelledby": I,
           disabled: S
         }), (0, r.jsx)(l.LZC, {
           size: 8

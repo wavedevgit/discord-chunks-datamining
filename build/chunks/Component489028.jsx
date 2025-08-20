@@ -63,7 +63,7 @@ function w(e) {
     label: e.name,
     value: e.id
   })), [n]), b = async () => {
-    await u(t, o, I.wW.GUILD_ROLE_SUBSCRIPTIONS) && (p(t.id), (0, _.B)({
+    await u(t, o, E.wW.GUILD_ROLE_SUBSCRIPTIONS) && (p(t.id), (0, _.B)({
       Icon: C.Z,
       title: S.intl.string(S.t["AP/2qa"]),
       body: S.intl.string(S.t.kHMgaG)
@@ -104,17 +104,17 @@ let R = e => {
     refreshOnDepChange: j
   }), C = i.useMemo(() => v.filter(e => {
     var t;
-    return e.payout_account_status !== E.C.BLOCKED && (0, g.Z)(null != (t = null == n ? true : n.id) ? t : N.lds, e)
-  }), [v, n]), I = C.length > 0, R = i.useCallback(async () => {
+    return e.payout_account_status !== I.C.BLOCKED && (0, g.Z)(null != (t = null == n ? true : n.id) ? t : N.lds, e)
+  }), [v, n]), E = C.length > 0, R = i.useCallback(async () => {
     x.default.track(N.rMx.GUILD_ROLE_SUBSCRIPTION_TEAM_SETUP_CLICKED, {
       is_onboarding_v2: d,
-      has_eligible_team: I,
+      has_eligible_team: E,
       guild_id: t.id,
       is_owner: a
     });
     let e = await (0, u.$)(N.E07.DEVELOPER_PORTAL_TEAMS);
     (0, o.Z)(e)
-  }, [t, a, d, I]), Z = i.useCallback(e => a ? (0, r.jsx)(m.Z, {
+  }, [t, a, d, E]), Z = i.useCallback(e => a ? (0, r.jsx)(m.Z, {
     onClick: R,
     children: e
   }) : e, [R, a]);
@@ -132,7 +132,7 @@ let R = e => {
         children: S.intl.format(S.t["5mfqpa"], {
           onCreateTeamHook: Z
         })
-      }), I ? (0, r.jsx)(w, {
+      }), E ? (0, r.jsx)(w, {
         guild: t,
         eligibleTeams: C,
         isGuildOwner: a

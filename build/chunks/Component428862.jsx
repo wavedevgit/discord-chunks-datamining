@@ -241,13 +241,13 @@ let N = e => {
       headerButton: r,
       subscriptionsRequired: i
     } = e;
-    return null !== r ? r : n ? (0, l.jsx)(I, {
+    return null !== r ? r : n ? (0, l.jsx)(E, {
       transform: t
-    }) : (0, l.jsx)(E, {
+    }) : (0, l.jsx)(I, {
       subscriptionsRequired: i
     })
   },
-  I = e => {
+  E = e => {
     let {
       transform: t
     } = e;
@@ -259,7 +259,7 @@ let N = e => {
       children: x.intl.string(x.t.dNGM0t)
     })
   },
-  E = e => {
+  I = e => {
     let {
       subscriptionsRequired: t
     } = e;

@@ -134,7 +134,7 @@ function k(e) {
     isGuildProducts: l = false
   } = e, {
     format: a
-  } = (0, I.Z)(n.id), s = (0, y.YB)(n.id), c = i.useCallback(() => {
+  } = (0, E.Z)(n.id), s = (0, y.YB)(n.id), c = i.useCallback(() => {
     var e;
     return (null == s || null == (e = s.cover_image_asset) ? true : e.application_id) == null ? null : (0, _._W)(s.cover_image_asset.application_id, s.cover_image_asset, D)
   }, [s]), [m, f] = i.useState(a), [b, O] = i.useState(null != (t = null == s ? true : s.description) ? t : ""), [A, k] = i.useState(c), [M, G] = i.useState(null == s ? true : s.store_page_guild_products_default_sort), [U, B] = i.useState(null == s ? true : s.server_shop_tab_order), {
@@ -174,7 +174,7 @@ function k(e) {
   return (0, r.jsxs)("div", {
     className: w.container,
     children: [null != H && (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(E.Z, {
+      children: [(0, r.jsx)(I.Z, {
         children: H.getAnyErrorMessage()
       }), (0, r.jsx)(p.LZC, {
         size: 16

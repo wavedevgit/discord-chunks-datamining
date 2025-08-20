@@ -1,7 +1,7 @@
 /** Chunk was on 6049 **/
 /** chunk id: 237245, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  w: () => E
+  w: () => I
 }), require("./388685.js"), require("./781311.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -57,17 +57,17 @@ function N(e, t) {
   }), e
 }
 
-function I(e) {
+function E(e) {
   var t;
   let {
     pendingState: l,
     dirtyState: f,
     originalGuild: x,
-    settingsGuild: I,
-    settingsMetadata: E,
+    settingsGuild: E,
+    settingsMetadata: I,
     settingsProfile: S
-  } = e, T = I.id, [P, w] = i.useState(false), [R, Z] = i.useState(null), D = I.features.has(_.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL), A = null != (t = (0, g.A)({
-    guildId: I.id
+  } = e, T = E.id, [P, w] = i.useState(false), [R, Z] = i.useState(null), D = E.features.has(_.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL), A = null != (t = (0, g.A)({
+    guildId: E.id
   })) ? t : 0, L = i.useCallback(() => {
     Z(null), h.Z.init(T, _.pNK.ACCESS)
   }, [T]), k = i.useCallback(async e => {
@@ -101,7 +101,7 @@ function I(e) {
     }] : [];
     await G(r, e, n)
   }, [G]), B = i.useCallback(e => {
-    if (l.isAgeRestricted !== (I.ownerConfiguredContentLevel === _.V_K.AGE_RESTRICTED) && k(async () => {
+    if (l.isAgeRestricted !== (E.ownerConfiguredContentLevel === _.V_K.AGE_RESTRICTED) && k(async () => {
         let e = l.isAgeRestricted ? _.V_K.AGE_RESTRICTED : _.V_K.DEFAULT;
         await M({
           ownerConfiguredContentLevel: e
@@ -112,8 +112,8 @@ function I(e) {
         termRules: n = []
       } = l, r = n.map(e => e.value.trim()).filter(e => "" !== e);
       k(async () => {
-        if (I.features.has(_.oNc.DISCOVERABLE)) {
-          let e = new Set(I.features);
+        if (E.features.has(_.oNc.DISCOVERABLE)) {
+          let e = new Set(E.features);
           e.delete(_.oNc.DISCOVERABLE), await M({
             features: e
           })
@@ -126,13 +126,13 @@ function I(e) {
       } = l;
       if (null == t) return;
       k(async () => {
-        if (I.features.has(_.oNc.DISCOVERABLE)) {
-          let e = new Set(I.features);
+        if (E.features.has(_.oNc.DISCOVERABLE)) {
+          let e = new Set(E.features);
           e.delete(_.oNc.DISCOVERABLE), await M({
             features: e
           })
         }
-        f.verificationDirty && await G([...t], true, e), f.profileDirty && null != S && await (0, p.pV)(I.id, {
+        f.verificationDirty && await G([...t], true, e), f.profileDirty && null != S && await (0, p.pV)(E.id, {
           visibility: S.visibility
         })
       })
@@ -143,25 +143,25 @@ function I(e) {
       } = l, r = n.map(e => e.value.trim()).filter(e => "" !== e);
       k(async () => {
         if (f.verificationDirty && await U(t, r, e), f.guildDirty) {
-          (0, b.UA)(I, x);
-          let e = new Set(I.features);
+          (0, b.UA)(E, x);
+          let e = new Set(E.features);
           e.add(_.oNc.DISCOVERABLE), e.delete(_.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL), await M({
             features: e,
-            discoverySplash: I.discoverySplash,
-            description: I.description,
-            preferredLocale: I.preferredLocale
+            discoverySplash: E.discoverySplash,
+            description: E.description,
+            preferredLocale: E.preferredLocale
           });
           try {
             await (0, c.Vv)(C({
-              guildId: I.id
-            }, E))
+              guildId: E.id
+            }, I))
           } catch (e) {
             throw Z(new o.Hx(e).getAnyErrorMessage()), e
           }
         }
       })
     }
-  }, [l, k, I, f, M, U, S, G, x, E]), F = i.useCallback(() => {
+  }, [l, k, E, f, M, U, S, G, x, I]), F = i.useCallback(() => {
     var e;
     if (l.joinType === j.A.INVITE || l.joinType === j.A.DISCOVERABLE) {
       let {
@@ -195,7 +195,7 @@ function I(e) {
       });
       e()
     })(() => B(e)))
-  }, [D, B, l, T, A]), H = l.joinType === j.A.DISCOVERABLE && l.settingsView === v.U.ELIGIBLE_DISABLED, z = null != I.description && E.primaryCategoryId !== O.o3 && E.keywords.length > 0;
+  }, [D, B, l, T, A]), H = l.joinType === j.A.DISCOVERABLE && l.settingsView === v.U.ELIGIBLE_DISABLED, z = null != E.description && I.primaryCategoryId !== O.o3 && I.keywords.length > 0;
   return (0, r.jsx)(s.Z, {
     message: H ? y.intl.string(y.t.V2G2Ym) : true,
     onSaveText: H ? y.intl.string(y.t["qjtt/v"]) : true,
@@ -207,7 +207,7 @@ function I(e) {
   })
 }
 
-function E() {
+function I() {
   let {
     pendingState: e,
     dirtyState: t
@@ -236,7 +236,7 @@ function E() {
   return null == module || null == require ? null : module.joinType === Chunk384632.A.DISCOVERABLE && module.settingsView === Chunk386885.U.INELIGIBLE ? (0, Chunk951288.jsx)(Chunk852860.Z, {
     message: Chunk388032.intl.string(Chunk388032.t.TEXwRk),
     onReset: () => Chunk434404.Z.init(require.id, Chunk981631.pNK.ACCESS)
-  }) : (0, Chunk951288.jsx)(I, {
+  }) : (0, Chunk951288.jsx)(E, {
     pendingState: module,
     dirtyState: exports,
     originalGuild: Chunk481060,

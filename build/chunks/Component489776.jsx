@@ -56,13 +56,13 @@ function f(e) {
     createNewEditingRule: _
   } = (0, d.V)(), {
     getDefaultRuleName: O
-  } = c.I6[n], y = !(0, o.Vb)(v) && (null == v ? true : v.triggerType) === n, [C, N] = i.useState(y ? v : b), I = (0, s.q_F)({
+  } = c.I6[n], y = !(0, o.Vb)(v) && (null == v ? true : v.triggerType) === n, [C, N] = i.useState(y ? v : b), E = (0, s.q_F)({
     opacity: +!y,
     pointerEvents: y ? "none" : "all",
     config: h(p({}, l.config.stiff), {
       clamp: true
     })
-  }), E = (0, s.q_F)({
+  }), I = (0, s.q_F)({
     opacity: +!!y,
     pointerEvents: y ? "all" : "none",
     config: h(p({}, l.config.stiff), {
@@ -82,14 +82,14 @@ function f(e) {
     },
     children: [(0, r.jsx)(l.animated.div, {
       className: g.animatedRuleCardContainer,
-      style: E,
+      style: I,
       children: (0, r.jsx)(u.Z, {
         rule: C,
         persistEdit: x
       })
     }), (0, r.jsx)(l.animated.div, {
       className: g.animatedNewRuleContainer,
-      style: I,
+      style: E,
       children: (0, r.jsxs)(s.P3F, {
         className: g.addAnotherRuleCardContainer,
         onClick: () => {

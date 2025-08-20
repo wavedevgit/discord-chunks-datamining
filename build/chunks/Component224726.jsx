@@ -1,7 +1,7 @@
 /** Chunk was on 6049 **/
 /** chunk id: 224726, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => I
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -27,11 +27,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk805220 = require("./805220.js");
-let E = function() {
+let I = function() {
   let {
     analyticsLocations: e
   } = (0, Chunk906732.ZP)(Chunk100527.Z.GUILD_SETTINGS_PROFILE_PAGE), t = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuild(), []), n = null == exports ? true : exports.id, {
-    fetchGuildProfile: E,
+    fetchGuildProfile: I,
     fetchStatus: S
   } = (0, Chunk65361.u)(null == exports ? true : exports.id), T = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuildProfile(), []), P = (0, Chunk442837.e7)([Chunk496675.Z], () => Chunk496675.Z.can(Chunk981631.Plq.MANAGE_GUILD, exports)), w = Chunk647438.useCallback(e => {
     null != n && (p.Z.updateGuild({
@@ -45,11 +45,11 @@ let E = function() {
     })
   }, [require]);
   Chunk647438.useEffect(() => {
-    null != require && E()
-  }, [require, E]);
+    null != require && I()
+  }, [require, I]);
   let Z = Chunk647438.useCallback(() => {
-    E(true)
-  }, [E]);
+    I(true)
+  }, [I]);
   return (Chunk647438.useEffect(() => {
     Chunk224706.Z.getDetectableGames()
   }, []), S === Chunk314852.a.FETCHED && null == T) ? (0, Chunk951288.jsx)(Chunk509798.g, {

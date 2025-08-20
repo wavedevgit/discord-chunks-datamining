@@ -92,9 +92,9 @@ function L(e) {
     {
       draggingId: j,
       handleDragStart: v,
-      handleDragReset: I,
+      handleDragReset: E,
       handleDragComplete: S
-    } = (0, E.Z)(x),
+    } = (0, I.Z)(x),
     P = i.useCallback(e => {
       var i;
       let {
@@ -109,14 +109,14 @@ function L(e) {
         currentPosition: l,
         memberCount: null != (i = null == m ? true : m[o.id]) ? i : 0,
         onDragStart: v,
-        onDragReset: I,
+        onDragReset: E,
         onDragComplete: S,
         disableHover: null != j,
         disableDrag: a.length !== b.length,
         setEditRoleId: t,
         setSelectedSection: s
       }, o.id)
-    }, [b, n, p, m, v, I, S, j, a, t, s]);
+    }, [b, n, p, m, v, E, S, j, a, t, s]);
   return (0, r.jsx)(g.Xi, {
     sections: [Math.max(b.length, 1)],
     sectionHeight: d,
@@ -156,9 +156,9 @@ function M(e) {
     onDragComplete: y,
     disableHover: C,
     disableDrag: N,
-    setEditRoleId: E,
+    setEditRoleId: I,
     setSelectedSection: T
-  } = e, L = (0, I.T)(g, h, d), k = null != L, [M, U] = i.useState(false), B = i.useMemo(() => ({
+  } = e, L = (0, E.T)(g, h, d), k = null != L, [M, U] = i.useState(false), B = i.useMemo(() => ({
     type: A,
     item: () => (_(d.id), {
       id: d.id,
@@ -210,7 +210,7 @@ function M(e) {
   });
 
   function X() {
-    E(d.id)
+    I(d.id)
   }
 
   function q() {
@@ -254,7 +254,7 @@ function M(e) {
         size: 24,
         className: w.roleIcon,
         defaultIconClassName: w.shield
-      }), null != L ? (0, r.jsx)(I.Z, {
+      }), null != L ? (0, r.jsx)(E.Z, {
         className: w.lock,
         tooltipText: L
       }) : null, (0, r.jsx)(u.Text, {

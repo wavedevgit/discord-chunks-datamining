@@ -1,7 +1,7 @@
 /** Chunk was on 6049 **/
 /** chunk id: 850864, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => I
+  Z: () => E
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -36,12 +36,12 @@ function N(e) {
   }, {
     value: "existing",
     name: j.intl.string(j.t.cmkOsb)
-  }], []), I = (0, l.e7)([o.Z], () => o.Z.theme);
+  }], []), E = (0, l.e7)([o.Z], () => o.Z.theme);
   i.useEffect(() => () => {
     let e = m.Z.getSettings();
     (0, u.oo)(t.id, e)
   }, [n, t.id]);
-  let E = i.useMemo(() => (0, a.ap)(I) ? "existing" === c ? O : C : "existing" === c ? _ : y, [c, I]);
+  let I = i.useMemo(() => (0, a.ap)(E) ? "existing" === c ? O : C : "existing" === c ? _ : y, [c, E]);
   return (0, r.jsxs)("div", {
     className: v.page,
     children: [(0, r.jsxs)("div", {
@@ -140,7 +140,7 @@ function N(e) {
         })
       }), (0, r.jsx)("img", {
         className: v.previewImage,
-        src: E,
+        src: I,
         alt: j.intl.string(j.t.ST4UOz)
       }), (0, r.jsx)(s.sY7, {
         options: N,
@@ -152,7 +152,7 @@ function N(e) {
   })
 }
 
-function I(e) {
+function E(e) {
   let {
     saveOnClose: t
   } = e, n = (0, l.e7)([d.Z, c.Z], () => {

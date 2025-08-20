@@ -44,7 +44,7 @@ function N(e) {
   }
   return e
 }
-let I = function(e, t, n) {
+let E = function(e, t, n) {
     let r = arguments.length > 3 && true !== arguments[3] && arguments[3],
       i = null;
     return null == t || Number.isNaN(t) ? (null == t || Number.isNaN(t)) && null != e && (i = y.intl.string(y.t.xO2msb)) : i = y.intl.formatToPlainString(y.t.nskeMz, {
@@ -56,7 +56,7 @@ let I = function(e, t, n) {
       isTrendingDown: t < 0
     }
   },
-  E = function(e) {
+  I = function(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
     return t || e === _.evJ.NOT_ENOUGH_GUILD_MEMBERS ? (0, r.jsx)(c.kzN, {
       icon: c.d3s,
@@ -130,15 +130,15 @@ let I = function(e, t, n) {
         children: [(0, Chunk951288.jsx)(Chunk841470.Z, N({
           title: Chunk388032.intl.string(Chunk388032.t.i0Nora),
           tooltipText: Chunk388032.intl.string(Chunk388032.t.KiRbLC)
-        }, I(Chunk640358.visitors, Chunk640358.visitorsChange, Chunk772848))), (0, Chunk951288.jsx)(Chunk841470.Z, N({
+        }, E(Chunk640358.visitors, Chunk640358.visitorsChange, Chunk772848))), (0, Chunk951288.jsx)(Chunk841470.Z, N({
           title: Chunk388032.intl.string(Chunk388032.t.DDAHdX),
           tooltipText: Chunk388032.intl.string(Chunk388032.t.HxWUkZ)
-        }, I(Chunk640358.communicators, Chunk640358.communicatorsChange, Chunk772848))), (0, Chunk951288.jsx)(Chunk841470.Z, N({
+        }, E(Chunk640358.communicators, Chunk640358.communicatorsChange, Chunk772848))), (0, Chunk951288.jsx)(Chunk841470.Z, N({
           title: Chunk388032.intl.string(Chunk388032.t.hYeOqK)
-        }, I(Chunk640358.newMembers, Chunk640358.newMembersChange, Chunk772848))), (0, Chunk951288.jsx)(Chunk841470.Z, N({
+        }, E(Chunk640358.newMembers, Chunk640358.newMembersChange, Chunk772848))), (0, Chunk951288.jsx)(Chunk841470.Z, N({
           title: Chunk388032.intl.string(Chunk388032.t.jj7OPz),
           tooltipText: Chunk388032.intl.string(Chunk388032.t.MQCsl5)
-        }, I(Chunk640358.pctRetained, Chunk640358.pctRetainedChange, Chunk772848, true)))]
+        }, E(Chunk640358.pctRetained, Chunk640358.pctRetainedChange, Chunk772848, true)))]
       })
     }) : null;
     return (0, Chunk951288.jsxs)(Chunk481060.hjN, {
@@ -147,7 +147,7 @@ let I = function(e, t, n) {
       children: [(0, Chunk951288.jsx)(Chunk481060.R94, {
         type: Chunk481060.geA.DESCRIPTION,
         children: Chunk388032.intl.format(Chunk388032.t.NIZ60d, {})
-      }), E(Chunk544891, T), (0, Chunk951288.jsxs)("div", {
+      }), I(Chunk544891, T), (0, Chunk951288.jsxs)("div", {
         className: Chunk434215.developerPortalCtaWrapper,
         children: [(0, Chunk951288.jsx)("div", {
           className: Chunk434215.placeholderImage

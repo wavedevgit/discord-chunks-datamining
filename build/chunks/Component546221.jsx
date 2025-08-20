@@ -68,7 +68,7 @@ let O = e => {
     currentPeriod: O,
     allPeriods: y,
     metrics: C
-  } = (0, d.Z)(s, o), N = (0, u.u)(s), I = (0, c.mY)();
+  } = (0, d.Z)(s, o), N = (0, u.u)(s), E = (0, c.mY)();
   return m ? (0, r.jsx)(i.$jN, {}) : (0, r.jsxs)(r.Fragment, {
     children: [N && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(l.Z, {
@@ -119,7 +119,7 @@ let O = e => {
       })
     }), (0, r.jsx)(i.hjN, {
       title: x.intl.string(x.t.O8cDAA),
-      disabled: I,
+      disabled: E,
       className: j.formSection,
       children: (0, r.jsx)(h.Z, {
         guildId: s,

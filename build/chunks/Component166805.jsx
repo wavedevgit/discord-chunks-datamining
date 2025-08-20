@@ -44,7 +44,7 @@ function _(e) {
       embedEnabled: t,
       embedChannelId: n
     }
-  }), I = i.useMemo(() => (0, b.S)(t), [t]), E = i.useMemo(() => (0, b.a)(t), [t]), [S, T] = i.useState(false), P = null != c && l.Y.VISIBLE.has(c.visibility), w = !O && !P && !C;
+  }), E = i.useMemo(() => (0, b.S)(t), [t]), I = i.useMemo(() => (0, b.a)(t), [t]), [S, T] = i.useState(false), P = null != c && l.Y.VISIBLE.has(c.visibility), w = !O && !P && !C;
   i.useEffect(() => {
     y || (0, p.R)(t)
   }, [y, t]), i.useEffect(() => {
@@ -94,7 +94,7 @@ function _(e) {
           children: [(0, r.jsx)(o.vwX, {
             children: j.intl.string(j.t.VECJcH)
           }), (0, r.jsx)(d.Z, {
-            value: I
+            value: E
           })]
         })]
       }), (0, r.jsx)("div", {
@@ -106,7 +106,7 @@ function _(e) {
           children: [(0, r.jsx)(o.vwX, {
             children: j.intl.string(j.t.XVGbn5)
           }), (0, r.jsx)(d.Z, {
-            value: E
+            value: I
           }), (0, r.jsx)(a.xv, {
             variant: "text-sm/medium",
             color: "text-secondary",

@@ -38,10 +38,10 @@ function S(e) {
     days: i,
     hours: l
   } = (0, u.Z)(t);
-  return n <= 0 ? null : 0 === i && 0 === l ? I.intl.format(I.t.kF0HER, {
+  return n <= 0 ? null : 0 === i && 0 === l ? E.intl.format(E.t.kF0HER, {
     tierName: r,
     numPremiumSubscriptions: n
-  }) : I.intl.format(I.t.neDJho, {
+  }) : E.intl.format(E.t.neDJho, {
     days: i,
     hours: l,
     tierName: r,
@@ -59,8 +59,8 @@ function T(e) {
   return (0, r.jsxs)(a.Wn, {
     messageType: a.QYI.WARNING,
     children: [(0, r.jsx)("div", {
-      className: E.guildBoostingGracePeriodTitle,
-      children: I.intl.format(I.t.LG7vvr, {})
+      className: I.guildBoostingGracePeriodTitle,
+      children: E.intl.format(E.t.LG7vvr, {})
     }), (0, r.jsx)(S, {
       endsAt: i,
       appliedGuildBoostsToMaintain: s,

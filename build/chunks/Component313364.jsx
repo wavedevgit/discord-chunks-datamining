@@ -81,7 +81,7 @@ function R(e) {
                     guild: n
                   }), A ? (0, r.jsxs)("div", {
                     className: P.mainTableContainer,
-                    children: [(0, r.jsx)(I.Z, {
+                    children: [(0, r.jsx)(E.Z, {
                       guild: n,
                       ref: M
                     }), (0, r.jsx)(C.Z, {
@@ -98,7 +98,7 @@ function R(e) {
                     children: (0, r.jsxs)("div", {
                       className: P.noResultsContainer,
                       children: [(0, r.jsx)("div", {
-                        children: (0, r.jsx)(E.Z, {})
+                        children: (0, r.jsx)(I.Z, {})
                       }), (0, r.jsx)(o.Text, {
                         variant: "text-md/normal",
                         color: "text-muted",

@@ -103,7 +103,7 @@ class R extends Chunk647438.Component {
       });
     return (0, r.jsx)(b.Z, {
       currentTier: l,
-      className: i > 0 ? E.progressWithSubscriptions : E.progress,
+      className: i > 0 ? I.progressWithSubscriptions : I.progress,
       progress: i,
       tiers: [a, ...s],
       initialAnimationDelay: 500,
@@ -214,21 +214,21 @@ class R extends Chunk647438.Component {
         children: n => (0, r.jsx)(u.qEK, P(T({}, n), {
           tabIndex: false,
           src: null != e ? e.user.getAvatarURL(this.props.guildId, 32) : null,
-          className: a()(E.avatar, t, null != t ? E.subscriberMask : null),
+          className: a()(I.avatar, t, null != t ? I.subscriberMask : null),
           size: u.EFr.SIZE_32
         }))
       }, n)
     }), S(this, "renderSubscribersPopout", () => (0, r.jsx)(u.Ttm, {
-      className: E.subscribersPopout,
+      className: I.subscribersPopout,
       children: this.props.subscribers.map(e => (0, r.jsxs)("div", {
-        className: E.subscribersPopoutUser,
+        className: I.subscribersPopoutUser,
         children: [(0, r.jsx)(u.qEK, {
           src: e.user.getAvatarURL(this.props.guildId, 32),
           "aria-label": e.user.username,
           size: u.EFr.SIZE_32,
-          className: E.avatar
+          className: I.avatar
         }), (0, r.jsx)("div", {
-          className: E.subscribersPopoutUsername,
+          className: I.subscribersPopoutUsername,
           children: (0, r.jsx)(g.Z, {
             user: e.user,
             nick: e.nick
@@ -241,7 +241,7 @@ class R extends Chunk647438.Component {
       position: "bottom",
       autoInvert: false,
       children: t => (0, r.jsx)("div", P(T({
-        className: E.moreSubscribers
+        className: I.moreSubscribers
       }, t), {
         ref: this.subscribersPopoutTargetRef,
         children: e

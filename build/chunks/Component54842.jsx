@@ -1,7 +1,7 @@
 /** Chunk was on 6049 **/
 /** chunk id: 54842, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => I
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -102,7 +102,7 @@ let C = [{
       })]
     })
   },
-  I = e => {
+  E = e => {
     let {
       iconSrc: t,
       name: n,
@@ -133,10 +133,10 @@ let C = [{
       })]
     })
   },
-  E = e => {
+  I = e => {
     let {
       guild: t
-    } = e, [n, l] = i.useState(0), [a, v] = i.useState(0), [_, O] = i.useState(), E = (0, s.e7)([m.Z], () => m.Z.can(p.Plq.ADMINISTRATOR, t)), S = null == _ ? true : _.offsetWidth, T = null == _ ? true : _.offsetHeight;
+    } = e, [n, l] = i.useState(0), [a, v] = i.useState(0), [_, O] = i.useState(), I = (0, s.e7)([m.Z], () => m.Z.can(p.Plq.ADMINISTRATOR, t)), S = null == _ ? true : _.offsetWidth, T = null == _ ? true : _.offsetHeight;
     i.useEffect(() => {
       null != S && l(S / 2), null != T && v(T / 2)
     }, [S, T, l, v]), i.useEffect(() => {
@@ -152,7 +152,7 @@ let C = [{
         ref: e => O(e),
         children: [C.map(e => {
           var t, i;
-          return (0, r.jsx)(I, (t = y({}, e), i = i = {
+          return (0, r.jsx)(E, (t = y({}, e), i = i = {
             imageCoordinates: [n, a]
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
             var n = Object.keys(e);
@@ -185,8 +185,8 @@ let C = [{
           helpdeskArticle: g.Z.getArticleURL(p.BhN.FRIEND_COMMUNITY_DISCOVERABLE_GUILD_TYPES)
         })
       }), (0, r.jsx)(c.ua7, {
-        text: E ? null : f.intl.string(f.t["pjG+T0"]),
-        "aria-label": E ? true : f.intl.string(f.t["pjG+T0"]),
+        text: I ? null : f.intl.string(f.t["pjG+T0"]),
+        "aria-label": I ? true : f.intl.string(f.t["pjG+T0"]),
         children: e => (0, r.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
           className: b.button,
@@ -194,7 +194,7 @@ let C = [{
             variant: "primary",
             text: f.intl.string(f.t.LhlgY2),
             onClick: P,
-            disabled: !E
+            disabled: !I
           }, e))
         })
       }), (0, r.jsx)("hr", {

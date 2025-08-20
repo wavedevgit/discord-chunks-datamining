@@ -64,7 +64,7 @@ let C = e => {
       children: (0, g.T4)(null != t ? t : 0, j.pKx.USD)
     })
   },
-  I = e => {
+  E = e => {
     let {
       children: t
     } = e;
@@ -73,7 +73,7 @@ let C = e => {
       children: null != t ? t : "-"
     })
   },
-  E = e => {
+  I = e => {
     let {
       children: t
     } = e;
@@ -159,7 +159,7 @@ let C = e => {
     render(e, t) {
       let {
         expandedRows: n
-      } = t, i = [(0, r.jsx)(E, {
+      } = t, i = [(0, r.jsx)(I, {
         children: e.periodStartingAt
       }, e.key)];
       if (n.has(e.key))
@@ -198,7 +198,7 @@ let C = e => {
         ppgDeferralReasons: i,
         periodEndDate: l
       } = (0, m.j0)(e);
-      return (0, r.jsx)(I, {
+      return (0, r.jsx)(E, {
         children: ((e, t, n, i) => {
           let l = null != i ? o()(i).add(15, "days").toISOString() : true,
             a = (0, h.Zo)(l, "MMM D");

@@ -37,10 +37,10 @@ function j(e) {
     originalVanityURLCode: m.Z.originalVanityURLCode,
     errorDetails: m.Z.errorDetails,
     fetched: m.Z.fetchedVanityURL
-  })), I = null == t ? true : t.id;
+  })), E = null == t ? true : t.id;
   return (i.useEffect(() => {
-    null == I || N || (0, u.U5)(I)
-  }, [N, I]), null == t) ? null : v ? (0, r.jsx)(s.Z, {}) : (0, r.jsxs)(a.hjN, {
+    null == E || N || (0, u.U5)(E)
+  }, [N, E]), null == t) ? null : v ? (0, r.jsx)(s.Z, {}) : (0, r.jsxs)(a.hjN, {
     ref: n,
     children: [(0, r.jsxs)(a.vwX, {
       className: x.title,

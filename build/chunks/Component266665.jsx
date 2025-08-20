@@ -78,8 +78,8 @@ function R(e) {
       roleStyle: C
     } = e,
     N = (0, O.T)(c, g, m),
-    E = (0, x.fI)(m),
-    R = null == N && !E,
+    I = (0, x.fI)(m),
+    R = null == N && !I,
     Z = (null == (t = m.tags) ? true : t.guild_connections) !== true,
     D = (0, b._f)(c.id, m, m.colorStrings),
     [, A] = (0, s.c)({
@@ -112,7 +112,7 @@ function R(e) {
         roleId: m.id
       })
     }),
-    M = null != (i = m.colorString) ? i : I.Pbq;
+    M = null != (i = m.colorString) ? i : E.Pbq;
   return l = Z ? (0, r.jsx)(h.Z, {
     size: 12,
     color: m.colorString,
@@ -155,7 +155,7 @@ function R(e) {
       tooltipText: N
     }) : null, (0, r.jsx)(d.Text, {
       variant: "text-sm/medium",
-      color: E ? "header-primary" : "interactive-active",
+      color: I ? "header-primary" : "interactive-active",
       lineClamp: 1,
       children: m.name
     })]
@@ -170,7 +170,7 @@ function Z(e) {
     setSelectedSection: s
   } = e, o = (0, c.e7)([_.Z], () => _.Z.roles), u = (0, c.e7)([j.Z], () => j.Z.getHighestRole(t)), h = (0, c.e7)([p.Z], () => p.Z.roleStyle), [b, x] = i.useState(o.length), {
     scrolledToTop: O,
-    handleScroll: I
+    handleScroll: E
   } = (0, C.V)(), {
     handleDragStart: w,
     handleDragReset: Z,
@@ -207,15 +207,15 @@ function Z(e) {
             className: S.titleText,
             variant: "text-md/semibold",
             color: "none",
-            children: E.intl.string(E.t["13/7kZ"])
+            children: I.intl.string(I.t["13/7kZ"])
           })]
         }), (0, r.jsx)(d.ua7, {
           position: "top",
-          "aria-label": E.intl.string(E.t.AbxKtr),
+          "aria-label": I.intl.string(I.t.AbxKtr),
           text: (0, r.jsx)(d.Text, {
             className: S.tooltip,
             variant: "text-sm/normal",
-            children: E.intl.string(E.t.AbxKtr)
+            children: I.intl.string(I.t.AbxKtr)
           }),
           children: e => (0, r.jsx)(d.P3F, P(T({
             className: S.addRole
@@ -232,7 +232,7 @@ function Z(e) {
       }), (0, r.jsx)(d.Den, {
         className: S.list,
         ref: A,
-        onScroll: I,
+        onScroll: E,
         children: (0, r.jsx)(d.njP, {
           selectedItem: n,
           onItemSelect: e => l(e),

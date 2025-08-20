@@ -445,7 +445,7 @@ let K = d().throttle(Chunk80932.OQ, 1e3),
           }
         })
       }, [Q.isV2SpeedrunExperimentEnabled, exports]),
-      ea = (e, n, r) => (0, E.G)({
+      ea = (e, n, r) => (0, I.G)({
         data: e,
         file: n,
         image: r,

@@ -51,18 +51,18 @@ function _(e) {
     guildProfile: p.Z.getGuildProfile()
   })), O = null == n ? true : n.id, y = (0, s.e7)([d.Z], () => d.Z.get(O)), {
     fetchGuildProfile: C
-  } = (0, u.u)(O), N = (null == _ ? true : _.visibility) == null || !l.Y.VISIBLE.has(null == _ ? true : _.visibility), I = (null == _ ? true : _.visibility) === l.k.PUBLIC_WITH_RECRUITMENT;
+  } = (0, u.u)(O), N = (null == _ ? true : _.visibility) == null || !l.Y.VISIBLE.has(null == _ ? true : _.visibility), E = (null == _ ? true : _.visibility) === l.k.PUBLIC_WITH_RECRUITMENT;
   i.useEffect(() => {
     null != O && C()
   }, [O, C]);
-  let E = i.useMemo(() => null == n || null == _ ? v : _, [n, _]),
+  let I = i.useMemo(() => null == n || null == _ ? v : _, [n, _]),
     S = i.useCallback(() => {
-      (null == n ? true : n.id) != null && (I ? g.Z.updateGuildProfile(n.id, {
+      (null == n ? true : n.id) != null && (E ? g.Z.updateGuildProfile(n.id, {
         visibility: l.k.PUBLIC
       }) : g.Z.updateGuildProfile(n.id, {
         visibility: l.k.PUBLIC_WITH_RECRUITMENT
       }))
-    }, [null == n ? true : n.id, I]),
+    }, [null == n ? true : n.id, E]),
     T = i.useCallback(() => {
       g.Z.setSection(b.pNK.PROFILE)
     }, []);
@@ -95,7 +95,7 @@ function _(e) {
         className: j.column,
         children: [(0, r.jsx)(c.j7V, {
           onChange: S,
-          value: I,
+          value: E,
           hideBorder: true,
           disabled: N,
           children: x.intl.string(x.t["N/0239"])
@@ -121,7 +121,7 @@ function _(e) {
             className: j.gradient
           }), (0, r.jsx)(m.ZP, {
             className: j.preview,
-            profile: E,
+            profile: I,
             CTAOverride: (0, r.jsx)(o.zx, {
               className: j.previewButton,
               size: o.zx.Sizes.SMALL,

@@ -62,8 +62,8 @@ function j(e) {
     option: y,
     hasError: C,
     onDragStart: N,
-    onDragComplete: I,
-    onDragReset: E
+    onDragComplete: E,
+    onDragReset: I
   } = e, S = null, T = s().findIndex(v.options, e => e.id === y.id), {
     drag: P,
     dragSourcePosition: w,
@@ -74,8 +74,8 @@ function j(e) {
     index: T,
     optionId: y.id,
     onDragStart: N,
-    onDragComplete: I,
-    onDragReset: E
+    onDragComplete: E,
+    onDragReset: I
   }), {
     customEmoji: D,
     unicodeEmoji: A

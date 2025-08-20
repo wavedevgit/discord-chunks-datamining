@@ -4,7 +4,7 @@ require.d(exports, {
   GW: () => _,
   Qg: () => f,
   Yn: () => O,
-  ZP: () => E,
+  ZP: () => I,
   bL: () => C,
   i$: () => v,
   nn: () => j,
@@ -158,7 +158,7 @@ function _(e) {
     renderHeader: l,
     renderContent(e) {
       let t = n(e);
-      return (0, r.jsx)(I, {
+      return (0, r.jsx)(E, {
         children: t
       })
     }
@@ -218,7 +218,7 @@ let y = e => {
       children: (0, c.T4)(null != t ? t : 0, u.pKx.USD)
     })
   },
-  I = e => {
+  E = e => {
     let {
       children: t
     } = e;
@@ -233,7 +233,7 @@ let y = e => {
     })
   };
 
-function E(e) {
+function I(e) {
   var {
     className: t,
     headerClassName: n,

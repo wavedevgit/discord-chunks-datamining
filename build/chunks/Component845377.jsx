@@ -1,7 +1,7 @@
 /** Chunk was on 6049 **/
 /** chunk id: 845377, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => I
 }), require("./953529.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -100,7 +100,7 @@ let N = e => {
   })
 };
 
-function I(e, t) {
+function E(e, t) {
   return o()(null == e ? true : e.map(e => {
     let [t, n] = e;
     return null == t ? true : t.id
@@ -109,14 +109,14 @@ function I(e, t) {
     return null == t ? true : t.id
   }))
 }
-let E = e => {
+let I = e => {
   let {
     guild: t,
     guildId: l,
     className: s,
     headerContent: o,
     failedItemsOnly: c = false
-  } = e, [m, E] = (0, u.Wu)([j.ZP], () => [j.ZP.getDiscoveryChecklist(l), j.ZP.isLoading()], [l]), {
+  } = e, [m, I] = (0, u.Wu)([j.ZP], () => [j.ZP.getDiscoveryChecklist(l), j.ZP.isLoading()], [l]), {
     nsfwProperties: S
   } = null != m ? m : {}, T = null == t ? true : t.features.has(v.oNc.PARTNERED), P = null == S ? true : S.channels_banned_keywords, w = (0, u.e7)([h.ZP], () => {
     var e, n, r;
@@ -129,8 +129,8 @@ let E = e => {
       let [t, n] = e;
       return [l[t], n]
     })
-  }, [t.id, P], I);
-  if (E || null == m) return (0, r.jsxs)("div", {
+  }, [t.id, P], E);
+  if (I || null == m) return (0, r.jsxs)("div", {
     className: a()(O.container, O.loaderContainer, s),
     children: [(0, r.jsx)(p.X6q, {
       className: O.loadingText,

@@ -1,7 +1,7 @@
 /** Chunk was on 6049 **/
 /** chunk id: 208150, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => I
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -88,7 +88,7 @@ let y = {
       })
     })]
   }),
-  I = e => {
+  E = e => {
     let t, n, i, {
         guild: l,
         guildStickers: a
@@ -117,7 +117,7 @@ let y = {
       }
     }))
   },
-  E = () => {
+  I = () => {
     let e = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuild()),
       t = (0, Chunk442837.e7)([Chunk926491.Z], () => {
         var t;
@@ -134,7 +134,7 @@ let y = {
         title: Chunk388032.intl.string(Chunk388032.t.R5nQkZ),
         tag: Chunk481060.RB0.H1,
         children: [Chunk755721 ? (0, Chunk951288.jsxs)("div", {
-          children: [(0, Chunk951288.jsx)(I, {
+          children: [(0, Chunk951288.jsx)(E, {
             guild: module,
             guildStickers: exports
           }), (0, Chunk951288.jsx)(N, {})]

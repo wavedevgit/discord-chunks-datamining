@@ -1,7 +1,7 @@
 /** Chunk was on 6049 **/
 /** chunk id: 927731, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => I
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -57,25 +57,25 @@ function C(e, t) {
 }
 let N = "guild-role-subscription-tier-template-selector";
 
-function I(e) {
+function E(e) {
   let {
     guildId: t,
     priceTiers: l,
     groupListingId: f
-  } = e, I = (0, h._k)(f), {
-    editStateIds: E,
+  } = e, E = (0, h._k)(f), {
+    editStateIds: I,
     addNewEditStateId: S,
     addNewEditStateFromTemplate: T,
     removeEditStateId: P
   } = x.B7(f, t, {
     includeSoftDeleted: true
   }), [w, R] = i.useState({}), Z = i.useMemo(() => {
-    let e = E.map(e => {
+    let e = I.map(e => {
       var t;
       return null != (t = w[e]) ? t : e
     });
     return (0, s.uniq)(e)
-  }, [E, w]), D = (0, p.ss)(t), A = (0, p.Gp)(), L = i.useCallback(() => {
+  }, [I, w]), D = (0, p.ss)(t), A = (0, p.Gp)(), L = i.useCallback(() => {
     A && g.jJ.trackExposure({
       guildId: t,
       location: "b2d9de_1"
@@ -101,7 +101,7 @@ function I(e) {
       children: [Z.map(e => (0, r.jsx)(j.Z, {
         guildId: t,
         initialEditStateId: e,
-        allSubscriptionListings: I,
+        allSubscriptionListings: E,
         priceTiers: l,
         groupListingId: f,
         onDeleteEditState: () => P(e),
@@ -140,7 +140,7 @@ function I(e) {
   })
 }
 
-function E(e) {
+function I(e) {
   let {
     guildId: t
   } = e, {
@@ -168,7 +168,7 @@ function E(e) {
       })
     }), (0, r.jsx)(d.LZC, {
       size: 16
-    }), (0, r.jsx)(I, {
+    }), (0, r.jsx)(E, {
       priceTiers: n,
       guildId: t,
       groupListingId: s[0]

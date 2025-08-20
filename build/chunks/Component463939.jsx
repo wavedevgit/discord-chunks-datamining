@@ -1,7 +1,7 @@
 /** Chunk was on 6049 **/
 /** chunk id: 463939, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => I
 });
 var r, i, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -146,7 +146,7 @@ let N = (0, Chunk755930.i$)({
     },
     getAmount: e => e.amount
   }),
-  I = (0, Chunk334820.rM)([(0, Chunk334820.Fd)({
+  E = (0, Chunk334820.rM)([(0, Chunk334820.Fd)({
     key: "PERIOD",
     cellClassName: Chunk744277.periodColumn,
     renderHeader: () => (0, Chunk951288.jsx)(Chunk755930.qN, {
@@ -202,7 +202,7 @@ let N = (0, Chunk755930.i$)({
     expandableToggleColumnKey: "DROPDOWN"
   });
 
-function E(e) {
+function I(e) {
   let {
     ListingIdLabel: t,
     payoutsByPeriod: n
@@ -222,7 +222,7 @@ function E(e) {
     ListingIdLabel: t
   }, r), [r, t]);
   return (0, l.jsx)(b.ZP, {
-    columns: I,
+    columns: E,
     data: i,
     cellProps: s
   })

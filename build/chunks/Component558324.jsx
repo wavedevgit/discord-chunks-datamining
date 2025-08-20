@@ -60,7 +60,7 @@ let m = e => {
       }
       h(e), y("")
     }
-  }, [O, x, h, f, m.length]), I = i.useCallback(e => {
+  }, [O, x, h, f, m.length]), E = i.useCallback(e => {
     switch (e.keyCode) {
       case c.yXg.BACKSPACE:
         0 === O.length && m.length > 0 && (e.preventDefault(), e.stopPropagation(), p(m.length - 1));
@@ -97,7 +97,7 @@ let m = e => {
       inputClassName: u.inputInner
     }, _), n = n = {
       value: O,
-      onKeyDown: I,
+      onKeyDown: E,
       onChange: y,
       maxLength: b,
       disabled: j,

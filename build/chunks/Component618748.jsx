@@ -73,7 +73,7 @@ function L(e) {
       completed: c
     }]
   }];
-  return (0, r.jsx)(E.Z, {
+  return (0, r.jsx)(I.Z, {
     children: u
   })
 }
@@ -137,7 +137,7 @@ function G(e) {
     } = (0, T.dw)(),
     v = (0, x.f)(),
     C = (0, i.e7)([f.default], () => f.default.getCurrentUser()),
-    E = (0, O.Z)(n.id),
+    I = (0, O.Z)(n.id),
     Z = null != n && (0, p.eM)(n, C),
     M = () => {
       let e = h.Z.getEveryoneRole(n);
@@ -155,7 +155,7 @@ function G(e) {
   if (!v) return (0, r.jsx)(l.$jN, {});
   switch (g) {
     case T.ue.BASIC_INFO:
-      t = (0, r.jsx)(I.Z, {
+      t = (0, r.jsx)(E.Z, {
         guild: n
       });
       break;
@@ -230,9 +230,9 @@ function G(e) {
                 onMouseLeave: n
               } = e;
               return (0, r.jsx)(l.zxk, {
-                disabled: E,
-                onMouseEnter: E ? t : true,
-                onMouseLeave: E ? n : true,
+                disabled: I,
+                onMouseEnter: I ? t : true,
+                onMouseLeave: I ? n : true,
                 onClick: M,
                 text: D.intl.string(D.t.vM81yc),
                 size: "sm",
