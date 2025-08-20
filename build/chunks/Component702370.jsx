@@ -738,24 +738,26 @@ let eN = e => {
               })]
             })]
           })]
-        }), null != E && (0, r.jsxs)(_.mzw, {
-          className: eA.modalFooter,
-          children: [(0, r.jsx)("img", {
-            src: "https://cdn.discordapp.com/assets/content/af456efec518d9c43ad1407844e1a8a6c60bf3bd7dc69691437801afd591d0b4.jpeg",
-            alt: "",
-            className: eA.modalFooterBackgroundImg
-          }), (0, r.jsxs)("div", {
-            className: eA.modalFooterContentContainer,
-            children: [(0, r.jsx)(_.Text, {
-              variant: "text-sm/semibold",
-              className: eA.modalFooterText,
-              children: eS.intl.format(eS.t["78ph4e"], {
-                discountOfferAmount: E
-              })
-            }), (null == k ? true : k.expiresAt) != null && (0, r.jsx)(et.R, {
-              endDate: k.expiresAt
+        }), null != E && (0, r.jsx)(r.Fragment, {
+          children: (0, r.jsxs)(_.mzw, {
+            className: eA.modalFooter,
+            children: [(0, r.jsx)("img", {
+              src: "https://cdn.discordapp.com/assets/content/af456efec518d9c43ad1407844e1a8a6c60bf3bd7dc69691437801afd591d0b4.jpeg",
+              alt: "",
+              className: eA.modalFooterBackgroundImg
+            }), (0, r.jsxs)("div", {
+              className: eA.modalFooterContentContainer,
+              children: [(0, r.jsx)(_.Text, {
+                variant: "text-sm/semibold",
+                className: eA.modalFooterText,
+                children: eS.intl.format(eS.t["78ph4e"], {
+                  discountOfferAmount: E
+                })
+              }), (null == k ? true : k.expiresAt) != null && (0, r.jsx)(et.R, {
+                endDate: k.expiresAt
+              })]
             })]
-          })]
+          })
         })]
       })
     })
