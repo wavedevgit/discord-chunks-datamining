@@ -2,9 +2,9 @@
 /** chunk id: 955132, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  GC: () => I,
-  RR: () => v,
-  Wb: () => O
+  GC: () => v,
+  RR: () => O,
+  Wb: () => y
 });
 var Chunk570140 = require("./570140.js"),
   Chunk579806 = require("./579806.js"),
@@ -17,10 +17,9 @@ var Chunk570140 = require("./570140.js"),
   Chunk548570 = require("./548570.js"),
   Chunk616810 = require("./616810.js"),
   Chunk755278 = require("./755278.js"),
-  Chunk866483 = require("./866483.js"),
-  Chunk58 = require("./58.js");
+  Chunk866483 = require("./866483.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -29,20 +28,20 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
 }
 
-function E(e, t) {
+function g(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -53,42 +52,37 @@ function E(e, t) {
   return n
 }
 
-function b(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
+function E(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let y = new Chunk710845.Z("ConnectionStore"),
-  O = new Chunk548570.Z,
-  v = new Chunk616810.Z(O),
-  I = new Chunk755278.Z(O);
-O.handleIdentify = () => {
+let b = new Chunk710845.Z("ConnectionStore"),
+  y = new Chunk548570.Z,
+  O = new Chunk616810.Z(y),
+  v = new Chunk755278.Z(y);
+y.handleIdentify = () => {
   let e = Chunk314897.default.getToken();
-  if (y.verbose("handleIdentify called", {
+  if (b.verbose("handleIdentify called", {
       hasToken: null != module
     }), null == module) return null;
-  let t = Chunk15624.Z.getState(),
-    n = Chunk58.Z.getLatestTaskRunOn(),
-    r = null != require ? (Date.now() - require) / 1e3 : null,
-    i = {
-      token: module,
-      properties: b(g({}, Chunk626135.default.getSuperProperties()), {
-        client_app_state: exports,
-        is_fast_connect: false,
-        latest_headless_tasks: Chunk58.Z.getHeadlessTasks(),
-        latest_headless_task_run_seconds_before: Chunk570140,
-        gateway_connect_reasons: Chunk866483.Pf()
-      }),
-      presence: v.getInitialState()
-    };
-  return Chunk58.Z.clear(), Chunk579806
+  let t = Chunk15624.Z.getState();
+  return {
+    token: module,
+    properties: E(m({}, Chunk626135.default.getSuperProperties()), {
+      client_app_state: exports,
+      is_fast_connect: false,
+      gateway_connect_reasons: Chunk866483.Pf()
+    }),
+    presence: O.getInitialState()
+  }
 }, (0, Chunk358085.isDesktop)() && Chunk579806.Z.remotePowerMonitor.on("resume", () => {
-  O.expeditedHeartbeat(5e3, "power monitor resumed")
+  y.expeditedHeartbeat(5e3, "power monitor resumed")
 }), Chunk931619.Z.addOfflineCallback(() => {
-  Chunk58.Z.recordStartHeadlessTask("GatewaySocket.offline"), O.networkStateChange(15e3, "network detected offline.", false)
+  y.networkStateChange(15e3, "network detected offline.", false)
 }), Chunk931619.Z.addOnlineCallback(() => {
-  Chunk58.Z.recordStartHeadlessTask("GatewaySocket.online"), O.networkStateChange(5e3, "network detected online.")
-}), O.on("disconnect", e => {
+  y.networkStateChange(5e3, "network detected online.")
+}), y.on("disconnect", e => {
   let {
     code: t,
     reason: n
@@ -98,7 +92,7 @@ O.handleIdentify = () => {
     code: t,
     reason: n
   })
-}), O.on("close", e => {
+}), y.on("close", e => {
   let {
     code: t,
     reason: n

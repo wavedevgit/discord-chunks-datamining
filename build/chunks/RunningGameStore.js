@@ -656,7 +656,7 @@ function e4() {
       type: "RUNNING_STREAMER_TOOLS_CHANGE",
       count: el
     })), ee = e, en = n, r = i, eT()
-  }), eM(), Chunk433517 && Chunk998502.ZP.setGameDetectionCallback((e, t) => {
+  }), eM(), Chunk998502.ZP.setGameDetectionCallback((e, t) => {
     if (e.length === t.length)
       for (let [i, a] of e.entries()) {
         var n, r;
@@ -665,7 +665,7 @@ function e4() {
           s = A.Z.getGameByName(e.name);
         R.default.track(U.rMx.GAME_DETECTION_COMPARISON, {
           game_platform: U.M7m.DESKTOP,
-          detection_method: "process_observer",
+          detection_method: u ? "process_observer_v2" : "process_observer_v1",
           game_v1: a.name,
           orig_game_name_v1: a.origGameName,
           game_id_v1: null == o ? true : o.id,

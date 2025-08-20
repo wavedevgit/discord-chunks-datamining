@@ -195,7 +195,8 @@ let z = {
       } catch (e) {}
     },
     setGameDetectionCallback(e) {
-      this.getDiscordUtils().setGameDetectionCallback((t, n) => e(t.map(Y), n.map(Y)))
+      var t, n;
+      null == (t = (n = this.getDiscordUtils()).setGameDetectionCallback) || t.call(n, (t, n) => e(t.map(Y), n.map(Y)))
     },
     setRobloxSubgameDetectionConfig(e, t) {
       var n, r;
