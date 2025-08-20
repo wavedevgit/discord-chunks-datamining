@@ -1,8 +1,8 @@
 /** Chunk was on 1272 **/
 /** chunk id: 710914, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
-}), require("./388685.js"), require("./290780.js"), require("./539854.js");
+  Z: () => p
+}), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
@@ -10,11 +10,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk497505 = require("./497505.js"),
   Chunk415104 = require("./415104.jsx"),
-  Chunk46140 = require("./46140.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk334525 = require("./334525.js");
 
-function f(e) {
+function p(e) {
   let {
     quests: t,
     isFetching: n
@@ -38,49 +37,41 @@ function f(e) {
         break
       }
   }, [t, l]);
-  let f = null != l,
-    [h, g] = i.useState(window.innerWidth);
+  let p = null != l,
+    [f, h] = i.useState(window.innerWidth);
   i.useEffect(() => {
     let e = () => {
-      g(window.innerWidth)
+      h(window.innerWidth)
     };
     return window.addEventListener("resize", e), () => {
       window.removeEventListener("resize", e)
     }
   }, []);
-  let m = h >= 1610 ? 3 : h >= 1340 ? 2 : 1,
-    b = i.useMemo(() => {
-      let e = [];
-      for (let r of t) {
-        var n;
-        r.id === u.V6 && (null == (n = r.userStatus) ? true : n.claimedAt) == null ? e.unshift(r) : e.push(r)
-      }
-      return e
-    }, [t]);
+  let g = f >= 1610 ? 3 : f >= 1340 ? 2 : 1;
   return n && 0 === t.length ? (0, r.jsx)(o.$jN, {
-    className: p.spinner
+    className: d.spinner
   }) : 0 === t.length ? (0, r.jsxs)("div", {
-    className: p.emptyStateContainer,
+    className: d.emptyStateContainer,
     children: [(0, r.jsx)(o.X6q, {
       variant: "heading-xl/semibold",
-      children: d.intl.string(d.t["NqFP6+"])
+      children: u.intl.string(u.t["NqFP6+"])
     }), (0, r.jsx)(o.Text, {
       variant: "text-md/normal",
       color: "text-secondary",
-      children: d.intl.string(d.t.LhD4yM)
+      children: u.intl.string(u.t.LhD4yM)
     })]
   }) : (0, r.jsx)("div", {
-    className: p.container,
-    children: b.map((e, t) => {
-      let n = Math.floor(t / m);
+    className: d.container,
+    children: t.map((e, t) => {
+      let n = Math.floor(t / g);
       return (0, r.jsx)(c.Z, {
         quest: e,
         questContent: s.jn.QUEST_HOME_DESKTOP,
         contentPosition: t,
         rowIndex: n,
-        className: a()(p.questTile, {
-          [p.selected]: f && e.id === l,
-          [p.unselected]: f && e.id !== l
+        className: a()(d.questTile, {
+          [d.selected]: p && e.id === l,
+          [d.unselected]: p && e.id !== l
         }),
         sourceQuestContent: s.jn.QUEST_HOME_DESKTOP
       }, e.id)

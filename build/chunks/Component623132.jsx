@@ -56,8 +56,8 @@ function v(e) {
   var {
     applicationId: t,
     userId: r,
-    gameName: o
-  } = e, c = function(e, t) {
+    gameName: c
+  } = e, o = function(e, t) {
     if (null == e) return {};
     var r, n, l = function(e, t) {
       if (null == e) return {};
@@ -79,13 +79,13 @@ function v(e) {
     sourceUserId: r,
     trackEntryPointImpression: true
   });
-  return null == s ? (0, n.jsx)(l.X6q, y(j({}, c), {
-    children: o
-  })) : (0, n.jsx)(l.X6q, y(j({}, c), {
+  return null == s ? (0, n.jsx)(l.X6q, y(j({}, o), {
+    children: c
+  })) : (0, n.jsx)(l.X6q, y(j({}, o), {
     children: (0, n.jsx)(l.P3F, {
       onClick: s,
       className: m.clickableText,
-      children: o
+      children: c
     })
   }))
 }
@@ -104,7 +104,7 @@ function x(e) {
       className: m.icon
     }), (0, n.jsx)(l.nn4, {
       children: b.intl.format(b.t.TM0XDQ, {
-        name: c.ZP.getName(i, a, r)
+        name: o.ZP.getName(i, a, r)
       })
     }), (0, n.jsx)(l.Text, {
       variant: "text-sm/normal",
@@ -138,7 +138,7 @@ function P(e) {
     guildId: r,
     channelId: i,
     game: a,
-    widgetType: c,
+    widgetType: o,
     loading: s = false,
     disableInteraction: g = false
   } = e, {
@@ -150,7 +150,7 @@ function P(e) {
   } = a, _ = {
     variant: "heading-sm/semibold",
     color: "text-default"
-  }, T = o.default.getCurrentUser(), N = (null == T ? true : T.id) === t.id;
+  }, T = c.default.getCurrentUser(), N = (null == T ? true : T.id) === t.id;
   return s ? (0, n.jsxs)("div", {
     className: m.card,
     children: [(0, n.jsx)("div", {
@@ -191,7 +191,7 @@ function P(e) {
       }), (0, n.jsx)(d.Z, {
         tags: S,
         isCurrentUser: N,
-        widgetType: c,
+        widgetType: o,
         applicationId: w,
         disableInteraction: g
       }), !g && (0, n.jsx)(h, {
@@ -202,7 +202,7 @@ function P(e) {
       })]
     }), !g && N && (0, n.jsx)(f.Z, {
       game: a,
-      widgetType: c,
+      widgetType: o,
       className: m.removeGameButton
     })]
   })

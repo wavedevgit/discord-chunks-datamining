@@ -19,10 +19,10 @@ var Chunk951288 = require("./951288.js"),
 function p(e) {
   let {
     widgetType: t
-  } = e, r = t === i.l.FAVORITE_GAMES ? c.LM.BALDURS_GATE_3 : c.LM.CYBERPUNK_2077, {
+  } = e, r = t === i.l.FAVORITE_GAMES ? o.LM.BALDURS_GATE_3 : o.LM.CYBERPUNK_2077, {
     coverImageUrl: l,
     localizedName: a
-  } = (0, o.$)(r);
+  } = (0, c.$)(r);
   return (0, n.jsxs)("div", {
     className: b.placeholderDetailCard,
     children: [(0, n.jsx)("div", {
@@ -48,7 +48,7 @@ function p(e) {
 function O(e) {
   let {
     widgetType: t
-  } = e, r = t === i.l.WANT_TO_PLAY_GAMES ? [c.LM.ROBLOX, c.LM.VALORANT, c.LM.LEAGUE_OF_LEGENDS] : [c.LM.ZENLESS_ZONE_ZERO, c.LM.ELDEN_RING, c.LM.RED_DEAD_REDEMPTION_2];
+  } = e, r = t === i.l.WANT_TO_PLAY_GAMES ? [o.LM.ROBLOX, o.LM.VALORANT, o.LM.LEAGUE_OF_LEGENDS] : [o.LM.ZENLESS_ZONE_ZERO, o.LM.ELDEN_RING, o.LM.RED_DEAD_REDEMPTION_2];
   return (0, n.jsx)("div", {
     className: b.placeholderCoverGrid,
     children: r.map((e, t) => (0, n.jsx)(m, {
@@ -63,7 +63,7 @@ function m(e) {
   } = e, {
     coverImageUrl: r,
     localizedName: l
-  } = (0, o.$)(t);
+  } = (0, c.$)(t);
   return (0, n.jsx)("div", {
     className: b.placeholderCoverItem,
     children: null != r && "" !== r ? (0, n.jsx)("img", {

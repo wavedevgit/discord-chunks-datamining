@@ -23,33 +23,33 @@ let d = Chunk647438.memo(function(e) {
     "aria-label": s.intl.string(s.t.r6EJOj),
     onClose: a,
     onSelect: () => {},
-    children: Object.entries(c.aE).map(e => {
-      let [a, o] = e, u = ((e, a) => {
-        let o = [];
-        return a.type === c.kd.RADIO && o.push((0, n.jsx)(i.k5B, {
+    children: Object.entries(o.aE).map(e => {
+      let [a, c] = e, u = ((e, a) => {
+        let c = [];
+        return a.type === o.kd.RADIO && c.push((0, n.jsx)(i.k5B, {
           id: "".concat(e, "-none"),
           group: e,
           label: s.intl.string(s.t.PoWNfX),
           checked: !a.tags.some(e => t.includes(e)),
           action: () => l(a.tags)
         }, "none")), a.tags.forEach(l => {
-          let s = c.XV[l];
-          null != s && (a.type === c.kd.RADIO ? o.push((0, n.jsx)(i.k5B, {
+          let s = o.XV[l];
+          null != s && (a.type === o.kd.RADIO ? c.push((0, n.jsx)(i.k5B, {
             id: l,
             group: e,
             label: s.getText(),
             checked: t.includes(l),
             action: () => r(l, true)
-          }, l)) : o.push((0, n.jsx)(i.S89, {
+          }, l)) : c.push((0, n.jsx)(i.S89, {
             id: l,
             label: s.getText(),
             checked: t.includes(l),
             action: () => r(l, false)
           }, l)))
-        }), o
-      })(a, o);
+        }), c
+      })(a, c);
       return (0, n.jsx)(i.kSQ, {
-        label: o.getLabel(),
+        label: c.getLabel(),
         children: u
       }, a)
     })
@@ -60,35 +60,36 @@ function f(e) {
   let {
     tags: t,
     widgetType: r,
-    applicationId: f
-  } = e, g = (0, l.useRef)(null), {
-    trackUserProfileAction: b
-  } = (0, a.KZ)(), p = (0, l.useMemo)(() => null != t ? t : [], [t]), O = (0, l.useCallback)(function(e) {
+    applicationId: f,
+    ref: g
+  } = e, b = (0, l.useRef)(null), {
+    trackUserProfileAction: p
+  } = (0, a.KZ)(), O = (0, l.useMemo)(() => null != t ? t : [], [t]), m = (0, l.useCallback)(function(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
-      n = new Set(p);
+      n = new Set(O);
     if (t) {
-      let t = Object.values(c.aE).find(t => t.tags.includes(e));
+      let t = Object.values(o.aE).find(t => t.tags.includes(e));
       null != t && (t.tags.forEach(e => {
         n.delete(e)
-      }), n.add(e), b({
+      }), n.add(e), p({
         action: "ADD_GAME_TAGS"
       }))
-    } else n.has(e) ? (n.delete(e), b({
+    } else n.has(e) ? (n.delete(e), p({
       action: "REMOVE_GAME_TAGS"
-    })) : (n.add(e), b({
+    })) : (n.add(e), p({
       action: "ADD_GAME_TAGS"
     }));
-    (0, o.n$)(r, f, Array.from(n))
-  }, [p, b, r, f]), m = (0, l.useCallback)(e => {
-    let t = new Set(p);
+    (0, c.n$)(r, f, Array.from(n))
+  }, [O, p, r, f]), j = (0, l.useCallback)(e => {
+    let t = new Set(O);
     e.forEach(e => {
       t.delete(e)
-    }), b({
+    }), p({
       action: "REMOVE_GAME_TAGS"
-    }), (0, o.n$)(r, f, Array.from(t))
-  }, [p, b, r, f]);
+    }), (0, c.n$)(r, f, Array.from(t))
+  }, [O, p, r, f]);
   return (0, n.jsx)(i.yRy, {
-    targetElementRef: g,
+    targetElementRef: b,
     position: "right",
     align: "top",
     renderPopout: e => {
@@ -96,16 +97,18 @@ function f(e) {
         closePopout: t
       } = e;
       return (0, n.jsx)(d, {
-        currentTags: p,
-        onTagSelect: O,
-        onNoneSelect: m,
+        currentTags: O,
+        onTagSelect: m,
+        onNoneSelect: j,
         onClose: t
       })
     },
     children: e => {
       var t, r;
       return (0, n.jsx)("div", {
-        ref: g,
+        ref: e => (null != e && (b.current = e, g.current = e), () => {
+          b.current = null, g.current = null
+        }),
         children: (0, n.jsx)(i.P3F, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var r = null != arguments[t] ? arguments[t] : {},

@@ -50,7 +50,7 @@ function g(e) {
     gameName: t,
     onClick: r,
     loading: i = true
-  } = e, o = function(e, t) {
+  } = e, c = function(e, t) {
     if (null == e) return {};
     var r, n, l = function(e, t) {
       if (null == e) return {};
@@ -65,8 +65,8 @@ function g(e) {
     }
     return l
   }(e, ["gameName", "onClick", "loading"]);
-  let g = null != t ? t : c.intl.string(c.t.GIWFlJ),
-    b = c.intl.formatToPlainString(c.t["3mb1s7"], {
+  let g = null != t ? t : o.intl.string(o.t.GIWFlJ),
+    b = o.intl.formatToPlainString(o.t["3mb1s7"], {
       game: g
     });
   return i ? (0, n.jsx)("div", {
@@ -80,7 +80,7 @@ function g(e) {
       children: [(0, n.jsx)(a.Z, f(d({
         className: u.cover,
         gameName: t
-      }, o), {
+      }, c), {
         disableInteraction: true
       })), (0, n.jsx)(l.svS, {
         size: "md",
@@ -107,7 +107,7 @@ function b(e) {
       className: u.header,
       children: [(0, n.jsx)(l.P3F, {
         className: u.dismissButton,
-        "aria-label": c.intl.string(c.t["pUR+3t"]),
+        "aria-label": o.intl.string(o.t["pUR+3t"]),
         onClick: d,
         children: (0, n.jsx)(l.Dio, {
           size: "sm",
@@ -117,9 +117,9 @@ function b(e) {
         id: b,
         variant: "text-xs/medium",
         color: "text-secondary",
-        children: c.intl.string(c.t.zMUr6e)
+        children: o.intl.string(o.t.zMUr6e)
       })]
-    }), (0, n.jsx)(o.Z, {
+    }), (0, n.jsx)(c.Z, {
       games: r,
       renderGame: e => {
         let {

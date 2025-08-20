@@ -23,7 +23,7 @@ function p(e) {
     children: i,
     disableInteraction: p,
     className: O
-  } = e, [m, j] = l.useState(false), y = (0, s.Dt)(), v = (0, c.e7)([u.default], () => u.default.getId() === t), x = (0, d.kQ)(r), h = l.useCallback(() => {
+  } = e, [m, j] = l.useState(false), y = (0, s.Dt)(), v = (0, o.e7)([u.default], () => u.default.getId() === t), x = (0, d.kQ)(r), h = l.useCallback(() => {
     j(true)
   }, []);
   return (0, n.jsxs)("section", {
@@ -34,7 +34,7 @@ function p(e) {
       headingId: y,
       widget: r,
       disableInteraction: p
-    }), (0, n.jsxs)(o.y5, {
+    }), (0, n.jsxs)(c.y5, {
       children: [i, v && !x && !p && !m && (0, n.jsx)(g.Z, {
         userId: t,
         widgetType: r.type,

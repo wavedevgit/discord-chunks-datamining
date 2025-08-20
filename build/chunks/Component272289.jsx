@@ -33,8 +33,8 @@ function u(e) {
     games: u,
     isGameFetching: d,
     onAddGame: f
-  } = (0, c.K)(t), [g] = (0, i.Wu)([a.Z], () => [a.Z.suggestedFetchIsLoading]), b = l.useCallback((e, r, n) => {
-    f(e), (0, o.ES)(t, {
+  } = (0, o.K)(t), [g] = (0, i.Wu)([a.Z], () => [a.Z.suggestedFetchIsLoading]), b = l.useCallback((e, r, n) => {
+    f(e), (0, c.ES)(t, {
       applicationId: e,
       gameName: r,
       imageSrc: n

@@ -34,10 +34,10 @@ function u(e) {
     }
     return l
   }(e, ["label", "visuallyHideLabel", "className", "size", "maxUsers"]);
-  let g = (0, o.Dt)();
+  let g = (0, c.Dt)();
   return (0, n.jsxs)("div", {
     className: i()(l, s.container),
-    children: [(0, n.jsx)(c.Z, function(e) {
+    children: [(0, n.jsx)(o.Z, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var r = null != arguments[t] ? arguments[t] : {},
           n = Object.keys(r);

@@ -21,27 +21,28 @@ function b(e) {
     isCurrentUser: r,
     widgetType: i,
     applicationId: a,
-    disableInteraction: c = false
-  } = e, b = null == t ? true : t.filter(e => null != (0, d.zK)(e)), y = (0, l.useRef)(new Map), v = (0, l.useRef)(null), [x, h] = (0, l.useState)(0), [P, E] = (0, l.useState)(false), {
-    trackUserProfileAction: w
-  } = (0, o.KZ)(), I = r && !c && (0, s.M8)(i), S = j(v, b, y, h);
-  if ((0, l.useEffect)(() => (S(), window.addEventListener("resize", S), () => {
-      window.removeEventListener("resize", S)
-    }), [S, null == b ? true : b.join("")]), null == b || 0 === b.length) return I ? (0, n.jsx)("div", {
+    disableInteraction: o = false
+  } = e, b = null == t ? true : t.filter(e => null != (0, d.zK)(e)), y = (0, l.useRef)(new Map), v = (0, l.useRef)(null), x = (0, l.useRef)(null), [h, P] = (0, l.useState)(0), [E, w] = (0, l.useState)(false), {
+    trackUserProfileAction: I
+  } = (0, c.KZ)(), S = r && !o && (0, s.M8)(i), _ = j(v, x, b, y, P);
+  if ((0, l.useEffect)(() => (_(), window.addEventListener("resize", _), () => {
+      window.removeEventListener("resize", _)
+    }), [_, null == b ? true : b.join("")]), null == b || 0 === b.length) return S ? (0, n.jsx)("div", {
     className: g.tagListContainer,
     children: (0, n.jsx)(u.Z, {
       tags: t,
       widgetType: i,
-      applicationId: a
+      applicationId: a,
+      ref: x
     })
   }) : null;
-  let _ = P ? b : b.slice(0, b.length - x);
+  let T = E ? b : b.slice(0, b.length - h);
   return (0, n.jsxs)("div", {
     className: g.tagListContainer,
     children: [(0, n.jsx)("ul", {
       className: g.tagList,
       "aria-label": f.intl.string(f.t.EfjTi4),
-      children: _.map(e => (0, n.jsx)(p, {
+      children: T.map(e => (0, n.jsx)(p, {
         tag: e,
         isCurrentUser: r,
         applicationId: a,
@@ -49,27 +50,28 @@ function b(e) {
         ref: t => {
           null != t && y.current.set(e, t)
         },
-        disableInteraction: c
+        disableInteraction: o
       }, e))
-    }), x > 0 && (P ? (0, n.jsx)(m, {
+    }), h > 0 && (E ? (0, n.jsx)(m, {
       onClick: () => {
-        E(false), w({
+        w(false), I({
           action: "COLLAPSE_GAME_TAGS"
         })
       }
     }) : (0, n.jsx)(O, {
-      numHidden: x,
+      numHidden: h,
       onClick: () => {
-        E(true), w({
+        w(true), I({
           action: "EXPAND_GAME_TAGS"
         })
       },
       ref: v,
-      disableInteraction: c
-    })), r && !c && (0, n.jsx)(u.Z, {
+      disableInteraction: o
+    })), r && !o && (0, n.jsx)(u.Z, {
       tags: t,
       widgetType: i,
-      applicationId: a
+      applicationId: a,
+      ref: x
     })]
   })
 }
@@ -79,7 +81,7 @@ let p = e => {
       isCurrentUser: r,
       applicationId: l,
       widgetType: a,
-      disableInteraction: o,
+      disableInteraction: c,
       ref: u
     } = e, b = (0, d.zK)(t);
     if (null == b) return null;
@@ -87,7 +89,7 @@ let p = e => {
       getText: p,
       icon: O
     } = b, m = () => {
-      (0, s.RZ)(a, l, t), (0, c.pQ)({
+      (0, s.RZ)(a, l, t), (0, o.pQ)({
         action: "REMOVE_GAME_TAGS"
       })
     };
@@ -100,7 +102,7 @@ let p = e => {
         variant: "text-xxs/medium",
         color: "text-secondary",
         children: p()
-      }), r && !o && (0, n.jsx)(i.ua7, {
+      }), r && !c && (0, n.jsx)(i.ua7, {
         text: f.intl.string(f.t.Otv9fH),
         children: e => {
           var t, r;
@@ -194,27 +196,29 @@ let p = e => {
       })
     })
   },
-  j = (e, t, r, n) => (0, l.useCallback)(() => {
-    var l, i;
-    if (null == t) return void n(0);
-    let a = null != (i = null == (l = e.current) ? true : l.getBoundingClientRect().width) ? i : 0,
-      o = 0,
-      c = 0,
-      s = r.current;
-    for (let e = 0; e < t.length; e++) {
-      let r = s.get(t[e]);
-      if (null != r) {
-        if ((c += r.offsetWidth + 4) > 296) break;
-        o++
+  j = (e, t, r, n, i) => (0, l.useCallback)(() => {
+    var l, a, c, o;
+    if (null == r) return void i(0);
+    let s = null != (c = null == (l = e.current) ? true : l.getBoundingClientRect().width) ? c : 0,
+      u = null != (o = null == (a = t.current) ? true : a.getBoundingClientRect().width) ? o : 0,
+      d = u > 0 ? 8 : 4,
+      f = 0,
+      g = 0,
+      b = n.current;
+    for (let e = 0; e < r.length; e++) {
+      let t = b.get(r[e]);
+      if (null != t) {
+        if ((g += t.offsetWidth + 4) > 296) break;
+        f++
       }
     }
-    c = 0;
-    for (let e = o; e < t.length; e++) {
-      let r = s.get(t[e]);
-      if (null != r) {
-        if ((c += r.offsetWidth + 4) > 296 - a) break;
-        o++
+    g = 0;
+    for (let e = f; e < r.length; e++) {
+      let t = b.get(r[e]);
+      if (null != t) {
+        if ((g += t.offsetWidth + 4) > 296 - s - u - d) break;
+        f++
       }
     }
-    n(t.length - o)
-  }, [e, null == t ? true : t.join(""), r, n])
+    i(r.length - f)
+  }, [e, t, null == r ? true : r.join(""), n, i])

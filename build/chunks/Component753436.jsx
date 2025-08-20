@@ -23,7 +23,7 @@ function f(e) {
     channelId: b,
     loading: p = false,
     disableInteraction: O = false
-  } = e, m = (0, c.Z)(t.applicationId), j = m.length > 0, y = l.default.getCurrentUser(), v = (null == y ? true : y.id) === r;
+  } = e, m = (0, o.Z)(t.applicationId), j = m.length > 0, y = l.default.getCurrentUser(), v = (null == y ? true : y.id) === r;
   return p ? (0, n.jsx)("div", {
     className: u.loadingCover
   }) : (0, n.jsxs)("div", {
@@ -35,7 +35,7 @@ function f(e) {
       userId: r,
       disableInteraction: O,
       className: j ? d.socialProofBackdrop : true
-    }), !O && v && (0, n.jsx)(o.Z, {
+    }), !O && v && (0, n.jsx)(c.Z, {
       game: t,
       widgetType: f,
       className: d.removeGameButton,

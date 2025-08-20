@@ -37,13 +37,13 @@ function f(e) {
     widgetType: r,
     widget: f
   } = e, [g] = (0, a.ynZ)(), b = l.useRef(null), p = l.useMemo(() => new Set(f.games.map(e => e.applicationId)), [f.games]), O = l.useCallback(e => {
-    (0, c.ES)(r, {
+    (0, o.ES)(r, {
       applicationId: e
     })
   }, [r]), {
     options: m,
     matchSorterOptions: j
-  } = (0, o.h)(), y = l.useCallback(e => {
+  } = (0, c.h)(), y = l.useCallback(e => {
     var t, r;
     return "" === e.trim() ? m : (0, i.Lu)(m, e, (t = d({}, j), r = r = {
       threshold: i.Lu.rankings.CONTAINS

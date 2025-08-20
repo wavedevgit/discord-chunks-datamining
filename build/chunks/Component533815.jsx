@@ -19,10 +19,10 @@ function u(e) {
     iconSize: l = "refresh_sm",
     className: u
   } = e, d = () => {
-    (0, o.$b)(r, t.applicationId)
+    (0, c.$b)(r, t.applicationId)
   };
   return (0, n.jsx)(a.ua7, {
-    text: c.intl.string(c.t.HUvyDQ),
+    text: o.intl.string(o.t.HUvyDQ),
     children: e => {
       var t, r;
       return (0, n.jsx)(a.P3F, (t = function(e) {
@@ -44,7 +44,7 @@ function u(e) {
         return e
       }({}, e), r = r = {
         onClick: d,
-        "aria-label": c.intl.string(c.t.HUvyDQ),
+        "aria-label": o.intl.string(o.t.HUvyDQ),
         className: i()(u, s.clickable),
         children: (0, n.jsx)(a.XHJ, {
           size: l,

@@ -103,13 +103,13 @@ function I(e) {
     user: t,
     guildId: r,
     channelId: i
-  } = e, o = (0, b.Z)(t.id), {
+  } = e, c = (0, b.Z)(t.id), {
     widgets: p,
     isGameFetching: O
-  } = (0, g.Z)(o), m = (0, a.e7)([u.default], () => u.default.getId() === t.id), j = (() => {
+  } = (0, g.Z)(c), m = (0, a.e7)([u.default], () => u.default.getId() === t.id), j = (() => {
     let [e, t] = (0, a.Wu)([d.Z], () => [d.Z.ipCountryCode, d.Z.ipCountryCodeRequest]), r = (0, s.U)();
     return l.useEffect(() => {
-      null == e && null == t && r && (0, c.GE)()
+      null == e && null == t && r && (0, o.GE)()
     }, [e, t, r]), "GB" === e && r
   })(), x = 0 === p.length && m;
   return ((0, f.J)(m, p), x) ? (0, n.jsx)(v.Z, {}) : (0, n.jsxs)(n.Fragment, {
@@ -124,7 +124,7 @@ function I(e) {
 }
 
 function S(e) {
-  return (0, n.jsx)(o.Ttm, {
+  return (0, n.jsx)(c.Ttm, {
     className: h.scroller,
     fade: true,
     children: (0, n.jsx)(I, P({}, e))

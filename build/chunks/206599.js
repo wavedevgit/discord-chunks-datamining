@@ -17,11 +17,11 @@ function u(e) {
   let {
     bump: l,
     bumpMultiple: a,
-    gameIds: o
-  } = (0, c.b)(), {
+    gameIds: c
+  } = (0, o.b)(), {
     remove: u,
     peekedGameIds: d
-  } = (0, c.b)(), {
+  } = (0, o.b)(), {
     gameDataMap: f,
     isGameFetching: g
   } = (0, s.F)(null != (t = d[e]) ? t : []);
@@ -34,8 +34,8 @@ function u(e) {
   }, [d, f, g, u, e]);
   let b = n.useMemo(() => {
       var t;
-      return null != (t = o[e]) ? t : []
-    }, [o, e]),
+      return null != (t = c[e]) ? t : []
+    }, [c, e]),
     p = n.useCallback(t => {
       l(t, e)
     }, [l, e]),
@@ -66,9 +66,9 @@ function u(e) {
 }
 
 function d(e, t) {
-  let [r, i, s, u] = (0, l.Wu)([o.Z], () => [o.Z.suggestedFetchAttempted, o.Z.suggestedFetchError, o.Z.suggestedGameIds, o.Z.suggestedFetchIsLoading]), {
+  let [r, i, s, u] = (0, l.Wu)([c.Z], () => [c.Z.suggestedFetchAttempted, c.Z.suggestedFetchError, c.Z.suggestedGameIds, c.Z.suggestedFetchIsLoading]), {
     onLoad: d
-  } = (0, c.b)();
+  } = (0, o.b)();
   n.useEffect(() => {
     !r && e && a.Z.fetchSuggestedGames()
   }, [r, e]);

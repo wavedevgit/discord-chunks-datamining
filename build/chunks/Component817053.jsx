@@ -49,20 +49,20 @@ function b(e) {
   let {
     imageSrc: t,
     gameName: r
-  } = e, [i, a] = l.useState(false), c = null != r ? r : u.intl.string(u.t.GIWFlJ);
+  } = e, [i, a] = l.useState(false), o = null != r ? r : u.intl.string(u.t.GIWFlJ);
   return i || null == t ? (0, n.jsx)("div", {
     role: "img",
-    "aria-label": c,
+    "aria-label": o,
     className: d.fallback,
-    children: (0, n.jsx)(o.Text, {
+    children: (0, n.jsx)(c.Text, {
       variant: "text-xxs/medium",
       lineClamp: 3,
       "aria-hidden": true,
-      children: c
+      children: o
     })
   }) : (0, n.jsx)("img", {
     src: t,
-    alt: c,
+    alt: o,
     className: d.gameCoverImage,
     onError: () => a(true),
     onLoad: () => a(false)
@@ -80,12 +80,12 @@ function p(e) {
   } = e, m = (0, s.Z)({
     location: "GameCover",
     applicationId: l,
-    source: c.m1.UserProfile,
+    source: o.m1.UserProfile,
     sourceUserId: i,
     trackEntryPointImpression: true
   }), j = null != r ? r : u.intl.string(u.t.GIWFlJ), y = u.intl.formatToPlainString(u.t["8QLQBw"], {
     gameName: j
-  }), v = e => O ? e() : (0, n.jsx)(o.ua7, {
+  }), v = e => O ? e() : (0, n.jsx)(c.ua7, {
     text: j,
     children: t => e(t)
   });
@@ -96,7 +96,7 @@ function p(e) {
       imageSrc: t,
       gameName: r
     })
-  })) : e => (0, n.jsx)(o.P3F, g(f({}, e), {
+  })) : e => (0, n.jsx)(c.P3F, g(f({}, e), {
     onClick: m,
     "aria-label": y,
     className: a()(d.clickable, p),
@@ -113,8 +113,8 @@ function O(e) {
     userId: r,
     className: l,
     disableInteraction: i = false,
-    hideTooltip: o
-  } = e, c = function(e, t) {
+    hideTooltip: c
+  } = e, o = function(e, t) {
     if (null == e) return {};
     var r, n, l = function(e, t) {
       if (null == e) return {};
@@ -132,11 +132,11 @@ function O(e) {
   let s = a()(d.coverContainer, l);
   return i ? (0, n.jsx)("div", {
     className: s,
-    children: (0, n.jsx)(b, f({}, c))
+    children: (0, n.jsx)(b, f({}, o))
   }) : (0, n.jsx)(p, f({
     className: s,
     applicationId: t,
     userId: r,
-    hideTooltip: o
-  }, c))
+    hideTooltip: c
+  }, o))
 }

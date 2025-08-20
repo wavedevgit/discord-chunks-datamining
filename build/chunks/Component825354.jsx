@@ -67,7 +67,7 @@ function O(e) {
       stackingBehavior: "stack"
     })
   }, y = () => {
-    (0, c.G1)(O, t)
+    (0, o.G1)(O, t)
   }, v = (0, i.e7)([s.default], () => s.default.getId() === O);
   return (0, n.jsx)(a.yRy, {
     targetElementRef: m,
@@ -81,7 +81,7 @@ function O(e) {
       return (0, n.jsx)(a.v2r, {
         navId: "user-profile-widget-context-menu",
         onClose: () => {
-          (0, o.Zy)(), t()
+          (0, c.Zy)(), t()
         },
         onSelect: () => {},
         "aria-label": g.intl.string(g.t.xpSHSk),
