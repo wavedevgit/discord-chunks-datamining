@@ -1,4 +1,4 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 54936, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   n: () => g
@@ -36,7 +36,7 @@ function f(e) {
   } = e, i = m[t];
   if (null == i) throw Error("Unexpected operating system: ".concat(t));
   let l = i.icon;
-  return (0, r.jsx)(a.ua7, {
+  return (0, r.jsx)(o.ua7, {
     text: i.getLabel(),
     children: e => {
       var t, i;

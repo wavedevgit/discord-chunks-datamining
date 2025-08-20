@@ -1,4 +1,4 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 406877, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -20,12 +20,12 @@ function c(e, t) {
         try {
           let {
             url: r
-          } = await a.gs({
+          } = await o.gs({
             guildId: e,
             productId: t,
             attachmentId: n
           });
-          await o.L(r)
+          await a.L(r)
         } catch (t) {
           let e = t instanceof l.Hx ? t.getAnyErrorMessage() : true;
           i.Z.show({

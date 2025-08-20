@@ -1,4 +1,4 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 504733, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -17,13 +17,13 @@ function u(e) {
     message: t,
     channel: n,
     compact: u
-  } = e, d = (0, l.ZP)(t), p = t.application, m = (0, a.l)({
+  } = e, d = (0, l.ZP)(t), p = t.application, m = (0, o.l)({
     user: t.author,
     channelId: n.id,
     guildId: n.guild_id,
     messageId: t.id
   });
-  return (0, r.jsx)(o.Z, {
+  return (0, r.jsx)(a.Z, {
     iconNode: (0, r.jsx)(i.Prq, {
       size: "md",
       color: "currentColor",

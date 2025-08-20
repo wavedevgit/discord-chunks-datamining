@@ -1,4 +1,4 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 699833, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   i: () => d
@@ -21,9 +21,9 @@ function d(e) {
     _ = null != (p = null == g ? true : g.rawValue) ? p : true,
     h = null != (m = null == (i = f.fields) ? true : i.find(e => e.rawName === s.Cg.INCIDENT_TIMESTAMP)) ? m : true,
     b = null == h || null == h.rawValue ? true : parseFloat(h.rawValue);
-  return null == _ || null == b ? null : (0, r.jsxs)(o.P3F, {
+  return null == _ || null == b ? null : (0, r.jsxs)(a.P3F, {
     onClick: () => {
-      (0, o.ZDy)(async () => {
+      (0, a.ZDy)(async () => {
         let {
           default: e
         } = await Promise.all([n.e("25183"), n.e("3940"), n.e("18831"), n.e("33587")]).then(n.bind(n, 41164));
@@ -40,16 +40,16 @@ function d(e) {
       className: u.noticeContent,
       children: [(0, r.jsxs)("div", {
         className: u.headerRow,
-        children: [(0, r.jsx)(o.aNP, {
+        children: [(0, r.jsx)(a.aNP, {
           className: u.warningIcon,
-          color: a.Z.colors.STATUS_DANGER
-        }), (0, r.jsx)(o.Text, {
+          color: o.Z.colors.STATUS_DANGER
+        }), (0, r.jsx)(a.Text, {
           variant: "text-md/semibold",
           children: c.intl.string(c.t["4CxGXl"])
         })]
       }), (0, r.jsx)("div", {
         className: u.incidentTiming,
-        children: (0, r.jsx)(o.Text, {
+        children: (0, r.jsx)(a.Text, {
           variant: "text-xs/medium",
           children: c.intl.format(c.t.eevFb2, {
             daysAgo: l()().diff(l().unix(b), "days")
@@ -57,7 +57,7 @@ function d(e) {
         })
       }), (0, r.jsx)("div", {
         className: u.noticeBody,
-        children: (0, r.jsx)(o.Text, {
+        children: (0, r.jsx)(a.Text, {
           variant: "text-md/normal",
           color: "text-muted",
           children: c.intl.string(c.t["5CLb0N"])
@@ -65,7 +65,7 @@ function d(e) {
       })]
     }), (0, r.jsx)("div", {
       className: u.footerContainer,
-      children: (0, r.jsx)(o.Avr, {
+      children: (0, r.jsx)(a.Avr, {
         text: c.intl.string(c.t.zKnzws),
         variant: "secondary"
       })

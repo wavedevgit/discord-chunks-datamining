@@ -1,16 +1,16 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 65145, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Pk: () => c,
-  dv: () => o
+  dv: () => a
 }), require("./415506.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk823379 = require("./823379.js");
-let a = Chunk647438.createContext(true);
+let o = Chunk647438.createContext(true);
 
-function o() {
-  let e = Chunk647438.useContext(a);
+function a() {
+  let e = Chunk647438.useContext(o);
   if (null == module) throw Error("No PollFocusContextProvider found");
   return module
 }
@@ -20,13 +20,13 @@ function s(e) {
     children: t,
     actionButtonRef: n,
     pollAnswerRef: l,
-    manageFocusOnAction: o
+    manageFocusOnAction: a
   } = e, s = i.useMemo(() => ({
     actionButtonRef: n,
     pollAnswerRef: l,
-    manageFocusOnAction: o
-  }), [n, l, o]);
-  return (0, r.jsx)(a.Provider, {
+    manageFocusOnAction: a
+  }), [n, l, a]);
+  return (0, r.jsx)(o.Provider, {
     value: s,
     children: t
   })
@@ -35,22 +35,22 @@ function s(e) {
 function c(e) {
   let {
     children: t
-  } = e, [n, a] = i.useState(), o = i.useRef(null), c = i.useRef(null);
+  } = e, [n, o] = i.useState(), a = i.useRef(null), c = i.useRef(null);
   return i.useEffect(() => {
     var e, t, r;
-    "POLL_ANSWERS" === n && null != c.current && (null == (t = c.current) || null == (e = t.ref) || e.focus()), "ACTION_BUTTON" === n && null != o.current && (null == (r = o.current) || r.focus())
+    "POLL_ANSWERS" === n && null != c.current && (null == (t = c.current) || null == (e = t.ref) || e.focus()), "ACTION_BUTTON" === n && null != a.current && (null == (r = a.current) || r.focus())
   }, [n]), (0, r.jsx)(s, {
     pollAnswerRef: c,
-    actionButtonRef: o,
+    actionButtonRef: a,
     manageFocusOnAction: e => {
       switch (e) {
         case "submit":
         case "cancel":
-          a("ACTION_BUTTON");
+          o("ACTION_BUTTON");
           break;
         case "remove":
         case "showVotes":
-          a("POLL_ANSWERS");
+          o("POLL_ANSWERS");
           break;
         case "showVoterDetails":
           break;

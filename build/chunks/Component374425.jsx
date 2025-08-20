@@ -1,4 +1,4 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 374425, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -59,9 +59,9 @@ let v = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
       isInteracting: l
     } = e, d = i.useRef(null), [O, y] = i.useState(true), [x, j] = i.useState(String(Date.now())), [I] = (0, p.XW)(t, l), {
       analyticsLocations: S
-    } = (0, c.ZP)(o.Z.STICKER_MESSAGE), T = (0, r.jsxs)("span", {
+    } = (0, c.ZP)(a.Z.STICKER_MESSAGE), T = (0, r.jsxs)("span", {
       className: b.stickerName,
-      children: [(0, r.jsx)(a.B7q, {
+      children: [(0, r.jsx)(o.B7q, {
         size: "xs",
         color: "currentColor",
         className: b.stickerIcon
@@ -69,9 +69,9 @@ let v = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
     });
     return (0, r.jsx)(c.Gt, {
       value: S,
-      children: (0, r.jsx)(a.yRy, {
+      children: (0, r.jsx)(o.yRy, {
         align: "center",
-        animation: a.yRy.Animation.TRANSLATE,
+        animation: o.yRy.Animation.TRANSLATE,
         positionKey: x,
         onRequestClose: () => {
           y(true)
@@ -86,7 +86,7 @@ let v = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
           let {
             onClick: n
           } = e;
-          return (0, r.jsx)(a.ua7, C(E({}, u.b_), {
+          return (0, r.jsx)(o.ua7, C(E({}, u.b_), {
             shouldShow: O,
             text: (0, u.Y)(T),
             "aria-label": false,
@@ -100,7 +100,7 @@ let v = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
                 is_custom: (0, m.z)(e.type)
               })
             },
-            children: e => (0, r.jsx)(a.P3F, C(E({}, e), {
+            children: e => (0, r.jsx)(o.P3F, C(E({}, e), {
               innerRef: d,
               className: b.clickableSticker,
               onClick: e => {

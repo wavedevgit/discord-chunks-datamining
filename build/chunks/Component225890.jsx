@@ -1,4 +1,4 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 225890, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -48,7 +48,7 @@ function b(e) {
     isMember: y,
     onAcceptInstantInvite: h.dG,
     onTransitionToInviteChannel: function() {
-      if ((0, o.n)(n)) return void(0, a.hk)(n);
+      if ((0, a.n)(n)) return void(0, o.hk)(n);
       (null == O ? true : O.isGuildStageVoice()) ? (0, s.Cq)(O) : (null == O ? true : O.isGuildVoice()) && g.Z.joinVoiceEvent(O.guild_id, O.id)
     },
     recurrenceId: E

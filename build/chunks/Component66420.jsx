@@ -1,4 +1,4 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 66420, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => s
@@ -18,7 +18,7 @@ function s(e) {
     compact: u,
     action: d
   } = e, p = n.reactions.length > 0;
-  return (0, r.jsxs)(a.Z, {
+  return (0, r.jsxs)(o.Z, {
     iconNode: t.isGroupDM() ? (0, r.jsx)(i.Dkj, {
       size: "md",
       color: "var(--premium-tier-2-purple-for-gradients-2)"
@@ -26,12 +26,12 @@ function s(e) {
       size: "md",
       color: "var(--premium-tier-2-purple-for-gradients-2)"
     }),
-    iconContainerClassName: o.iconContainer,
+    iconContainerClassName: a.iconContainer,
     compact: u,
-    contentClassName: o.content,
-    className: p ? o.withReactions : o.noReactions,
+    contentClassName: a.content,
+    className: p ? a.withReactions : a.noReactions,
     children: [(0, r.jsxs)("div", {
-      className: o.textContainer,
+      className: a.textContainer,
       children: [(0, r.jsx)(l.xv, {
         variant: "text-md/medium",
         color: "header-primary",

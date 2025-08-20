@@ -1,4 +1,4 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 602606, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -14,10 +14,10 @@ var Chunk647438 = require("./647438.js"),
   Chunk981631 = require("./981631.js");
 
 function p(e) {
-  let [t, n] = r.useState(false), [p, m] = r.useState(false), f = o.default.cast(e), {
+  let [t, n] = r.useState(false), [p, m] = r.useState(false), f = a.default.cast(e), {
     joinRequest: g,
     guild: _
-  } = (0, i.cj)([c.Z, u.Z, l.Z, a.Z], () => {
+  } = (0, i.cj)([c.Z, u.Z, l.Z, o.Z], () => {
     var e;
     let t = c.Z.getRequest(f);
     if (null == t) return {
@@ -28,7 +28,7 @@ function p(e) {
     let n = null != (e = l.Z.getGuild(t.guildId)) ? e : u.Z.getJoinRequestGuild(t.guildId);
     return {
       joinRequest: t,
-      isModmin: null != n && a.Z.can(d.Plq.KICK_MEMBERS, n),
+      isModmin: null != n && o.Z.can(d.Plq.KICK_MEMBERS, n),
       guild: n
     }
   });

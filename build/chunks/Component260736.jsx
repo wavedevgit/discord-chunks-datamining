@@ -1,4 +1,4 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 260736, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -20,12 +20,12 @@ function m(e) {
     compact: t,
     message: n,
     channel: m
-  } = e, f = (0, o.ZP)(n), g = (0, s.l)({
+  } = e, f = (0, a.ZP)(n), g = (0, s.l)({
     user: n.author,
     channelId: n.channel_id,
     guildId: m.guild_id,
     messageId: n.id
-  })(f), _ = a.Z.getArticleURL(u.BhN.HD_STREAMING_POTION);
+  })(f), _ = o.Z.getArticleURL(u.BhN.HD_STREAMING_POTION);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: p.parentContainer,
@@ -42,7 +42,7 @@ function m(e) {
       })
     }), (0, r.jsxs)(i.P3F, {
       onClick: () => {
-        window.open(a.Z.getArticleURL(u.BhN.HD_STREAMING_POTION), "_blank")
+        window.open(o.Z.getArticleURL(u.BhN.HD_STREAMING_POTION), "_blank")
       },
       className: p.embed,
       children: [(0, r.jsx)(l.Z, {}), (0, r.jsxs)("div", {

@@ -1,7 +1,7 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 86590 **/
 /** chunk id: 266076, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => c
+  Z: () => o
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -9,51 +9,51 @@ var Chunk951288 = require("./951288.js"),
   Chunk43267 = require("./43267.js"),
   Chunk93687 = require("./93687.js"),
   Chunk785232 = require("./785232.jsx");
-let c = Chunk647438.memo(function(e) {
+let o = Chunk647438.memo(function(e) {
   var {
     channel: t,
     size: n,
-    facepileSizeOverride: i,
-    experimentLocation: c,
+    facepileSizeOverride: r,
+    experimentLocation: o,
     isTyping: u,
     status: d,
-    className: p,
-    animated: m = false
-  } = e, f = function(e, t) {
+    className: f,
+    animated: E = false
+  } = e, I = function(e, t) {
     if (null == e) return {};
-    var n, r, i = function(e, t) {
+    var n, i, r = function(e, t) {
       if (null == e) return {};
-      var n, r, i = {},
-        l = Object.keys(e);
-      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-      return i
+      var n, i, r = {},
+        a = Object.keys(e);
+      for (i = 0; i < a.length; i++) n = a[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
+      return r
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var l = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+      var a = Object.getOwnPropertySymbols(e);
+      for (i = 0; i < a.length; i++) n = a[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
     }
-    return i
+    return r
   }(e, ["channel", "size", "facepileSizeOverride", "experimentLocation", "isTyping", "status", "className", "animated"]);
   let {
-    isFacepileEnabled: g
-  } = o.Z.useExperiment({
-    location: c
+    isFacepileEnabled: p
+  } = s.Z.useExperiment({
+    location: o
   }, {
     autoTrackExposure: true
   });
-  return t.recipients.length >= 2 && g && null == t.icon ? (0, r.jsx)(s.Z, {
-    "aria-label": f["aria-label"],
-    "aria-hidden": f["aria-hidden"],
-    className: p,
+  return t.recipients.length >= 2 && p && null == t.icon ? (0, i.jsx)(c.Z, {
+    "aria-label": I["aria-label"],
+    "aria-hidden": I["aria-hidden"],
+    className: f,
     recipients: t.recipients,
-    size: null != i ? i : n,
+    size: null != r ? r : n,
     isTyping: u,
     status: d
-  }) : (0, r.jsx)(l.qEK, {
-    "aria-hidden": f["aria-hidden"],
-    "aria-label": f["aria-label"],
-    className: p,
+  }) : (0, i.jsx)(a.qEK, {
+    "aria-hidden": I["aria-hidden"],
+    "aria-label": I["aria-label"],
+    className: f,
     size: n,
-    src: (0, a.x)(t, 80, m)
+    src: (0, l.x)(t, 80, E)
   })
 })

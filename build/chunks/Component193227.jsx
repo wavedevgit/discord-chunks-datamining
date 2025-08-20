@@ -59,7 +59,7 @@ function j(e) {
   })
 }
 
-function P(e) {
+function T(e) {
   let {
     category: t
   } = e, r = (0, m.l)(t.products), l = (0, f.a)()(r);
@@ -69,7 +69,7 @@ function P(e) {
   })
 }
 
-function T(e) {
+function P(e) {
   let {
     category: t,
     isFullScreen: r
@@ -84,7 +84,7 @@ function T(e) {
     }) : (0, n.jsx)(_.Z, {
       category: t,
       hideLimitedTimeBadge: false
-    }), (0, n.jsx)(P, {
+    }), (0, n.jsx)(T, {
       category: t
     })]
   })
@@ -140,7 +140,7 @@ function L(e) {
         newValue: {
           categoryPosition: t
         },
-        children: (0, n.jsx)(T, {
+        children: (0, n.jsx)(P, {
           category: e,
           isFullScreen: o
         })

@@ -1,4 +1,4 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 170140, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   J: () => b
@@ -22,8 +22,8 @@ var Chunk647438 = require("./647438.js"),
 function b(e, t) {
   let n = (0, f.p$)(),
     b = (0, _.LR)(e),
-    E = (0, i.e7)([c.ZP, o.default], () => {
-      let e = o.default.getId();
+    E = (0, i.e7)([c.ZP, a.default], () => {
+      let e = a.default.getId();
       return c.ZP.isMember(null == b ? true : b.guildId, e)
     }, [b]),
     C = (0, i.e7)([l.Z], () => null != b && (null == b ? true : b.channelId) != null && l.Z.isChannelGated(b.guildId, b.channelId), [b]),
@@ -42,14 +42,14 @@ function b(e, t) {
         r = s.Z.getChannel(null == b ? true : b.channelId),
         i = p.default.getUser(null == t ? true : t.author_id),
         l = d.Z.getGuildId(),
-        o = null != r && (0, a.YO)(r);
+        a = null != r && (0, o.YO)(r);
       return {
         rawMediaPostEmbedData: t,
         guild: n,
         parentChannel: r,
         user: i,
         selectedGuildId: l,
-        canAccess: o
+        canAccess: a
       }
     }, [b]),
     T = r.useMemo(() => {

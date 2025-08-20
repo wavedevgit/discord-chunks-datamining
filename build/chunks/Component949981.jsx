@@ -1,4 +1,4 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 949981, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => C
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
-  a = require.n(Chunk512722),
+  o = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk447543 = require("./447543.js"),
   Chunk100527 = require("./100527.js"),
@@ -31,8 +31,8 @@ function C(e) {
     } = e,
     y = C === l.author.id,
     x = n.state === h.r2o.ACCEPTING,
-    j = (0, o.e7)([m.Z], () => null != n.channel ? m.Z.getChannel(n.channel.id) : null, [n]);
-  a()(null == j || j.isPrivate(), "must be a private channel");
+    j = (0, a.e7)([m.Z], () => null != n.channel ? m.Z.getChannel(n.channel.id) : null, [n]);
+  o()(null == j || j.isPrivate(), "must be a private channel");
   let {
     analyticsLocations: I
   } = (0, u.ZP)(c.Z.INVITE_EMBED), S = null != j, T = i.useCallback(() => {

@@ -42,7 +42,7 @@ let k = e => {
     } = e, {
       noCache: p,
       includeUnpublished: b
-    } = (0, h.Z)(), [S, P] = l.useState(false), k = (0, d.sp)(), I = null != (t = null == k ? true : k.sessionId) ? t : "";
+    } = (0, h.Z)(), [S, T] = l.useState(false), k = (0, d.sp)(), I = null != (t = null == k ? true : k.sessionId) ? t : "";
     l.useEffect(() => {
       (0, f.n)({
         sessionId: I,
@@ -95,7 +95,7 @@ let k = e => {
         categories: []
       }), (0, n.jsx)(O.Z, {
         isLoading: N,
-        title: c === j.AW.ORBS ? T.intl.string(T.t.dFgeub) : T.intl.string(T.t.NSv5KS),
+        title: c === j.AW.ORBS ? P.intl.string(P.t.dFgeub) : P.intl.string(P.t.NSv5KS),
         numVisibleItems: a,
         hasSorting: c === j.AW.HOME,
         tab: c
@@ -124,7 +124,7 @@ let k = e => {
           case o.z.FEED:
             let g = e.sortedSkuIds;
             d = (0, n.jsx)(O.Z, {
-              title: c === j.AW.ORBS ? T.intl.string(T.t.dFgeub) : T.intl.string(T.t.NSv5KS),
+              title: c === j.AW.ORBS ? P.intl.string(P.t.dFgeub) : P.intl.string(P.t.NSv5KS),
               isLoading: N || s,
               numVisibleItems: a,
               sortedSkuIds: g,
@@ -158,7 +158,7 @@ let k = e => {
           case o.z.IMMERSIVE_BANNER:
             d = (0, n.jsx)(E.Z, {
               immersiveBannerBlock: e,
-              onVisibilityChange: e => P(!e)
+              onVisibilityChange: e => T(!e)
             }, l);
             break;
           default:
@@ -212,12 +212,12 @@ let k = e => {
             className: L.endOfFeed,
             children: [(0, n.jsx)(s.X6q, {
               variant: "heading-md/semibold",
-              children: T.intl.string(T.t.Yr70c3)
+              children: P.intl.string(P.t.Yr70c3)
             }), (0, n.jsx)(s.zxk, {
               variant: "primary",
-              text: T.intl.string(T.t.AfrvRE),
+              text: P.intl.string(P.t.AfrvRE),
               onClick: () => {
-                r("shop all button", true, true), u.default.track(P.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+                r("shop all button", true, true), u.default.track(T.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                   collectibles_shop_session_id: null == h ? true : h.sessionId,
                   page_type: a,
                   page_category: a === j.AW.HOME || null == h ? true : h.pageCategory,

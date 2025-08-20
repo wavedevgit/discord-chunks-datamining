@@ -1,4 +1,4 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 54817, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -60,13 +60,13 @@ function _(e) {
           }),
           username: (0, r.jsxs)("div", {
             className: g.spanCorrection,
-            children: [(0, r.jsx)(a.Text, {
+            children: [(0, r.jsx)(o.Text, {
               variant: "text-md/normal",
               color: "text-brand",
               tag: "span",
               className: g.username,
               children: f.intl.string(f.t.hG1StL)
-            }), (0, r.jsx)(o.Z, {
+            }), (0, r.jsx)(a.Z, {
               type: m.Hb.SYSTEM_DM,
               className: g.systemTag
             })]

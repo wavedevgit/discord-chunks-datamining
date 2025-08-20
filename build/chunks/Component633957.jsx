@@ -1,4 +1,4 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 633957, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => F
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk846519 = require("./846519.js"),
   Chunk481060 = require("./481060.js"),
@@ -42,7 +42,7 @@ var Chunk951288 = require("./951288.js"),
 let U = Chunk647438.memo(e => {
   let {
     start: t
-  } = e, [n, r] = i.useState(0), l = (0, Z.n)(), a = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), c = false === l || a;
+  } = e, [n, r] = i.useState(0), l = (0, Z.n)(), o = (0, a.e7)([d.Z], () => d.Z.useReducedMotion), c = false === l || o;
   return i.useEffect(() => {
     let e = new s.Xp;
     return e.start(c ? 15 * A.Z.Millis.SECOND : A.Z.Millis.SECOND, () => {
@@ -62,21 +62,21 @@ let F = Chunk647438.memo(function(e) {
       analyticsLocations: F
     } = (0, h.ZP)(_.Z.ACTIVITY_INSTANCE_EMBED),
     B = (0, u.O)(),
-    G = (0, o.e7)([I.Z], () => I.Z.getChannel(A), [A]),
+    G = (0, a.e7)([I.Z], () => I.Z.getChannel(A), [A]),
     H = (null == G || null == (t = G.isThread) ? true : t.call(G)) ? null == G ? true : G.parent_id : A,
-    V = (0, o.e7)([j.default], () => j.default.getId()),
+    V = (0, a.e7)([j.default], () => j.default.getId()),
     {
       embeddedActivity: z,
       currentEmbeddedActivity: W,
       activityLaunchState: Y
-    } = (0, o.cj)([p.ZP], () => ({
+    } = (0, a.cj)([p.ZP], () => ({
       embeddedActivity: p.ZP.getEmbeddedActivitiesForChannel(null != H ? H : "").find(e => e.applicationId === y.id),
       currentEmbeddedActivity: p.ZP.getCurrentEmbeddedActivity(),
       activityLaunchState: p.ZP.getLaunchState(y.id, null != H ? H : true)
     }), [H, y.id]),
     K = null == z ? true : z.userIds,
-    X = (0, o.Wu)([T.default], () => Array.from(null != K ? K : []).map(e => T.default.getUser(e)).filter(w.lm), [K]),
-    q = (0, o.e7)([S.Z], () => {
+    X = (0, a.Wu)([T.default], () => Array.from(null != K ? K : []).map(e => T.default.getUser(e)).filter(w.lm), [K]),
+    q = (0, a.e7)([S.Z], () => {
       if (null == K) return null;
       for (let e of K) {
         let t = S.Z.findActivity(e, e => e.application_id === y.id);
@@ -124,14 +124,14 @@ let F = Chunk647438.memo(function(e) {
         analyticsLocations: F,
         componentId: en
       })
-    }, el = et.disabled ? M.intl.string(M.t.JBnc7O) : M.intl.string(M.t.cX9uLS), ea = (0, O.G)(Q, () => {
+    }, el = et.disabled ? M.intl.string(M.t.JBnc7O) : M.intl.string(M.t.cX9uLS), eo = (0, O.G)(Q, () => {
       P.default.track(D.rMx.ACTIVITY_INSTANCE_EMBED_CLICKED, {
         application_id: y.id,
         channel_id: A,
         channel_type: null == G ? true : G.type,
         cta: "View"
       })
-    }), eo = N.ZP.getApplicationIconURL({
+    }), ea = N.ZP.getApplicationIconURL({
       id: y.id,
       icon: y.icon,
       bot: y.bot
@@ -150,7 +150,7 @@ let F = Chunk647438.memo(function(e) {
   return (0, r.jsx)(E.W, {
     header: M.intl.string(M.t.pkq6Vl),
     title: y.name,
-    iconSrc: eo,
+    iconSrc: ea,
     info: (0, r.jsx)("div", {
       className: k.infoWrapper,
       children: ee ? (0, r.jsx)(c.Text, {
@@ -176,7 +176,7 @@ let F = Chunk647438.memo(function(e) {
               })
             })]
           }), (0, r.jsxs)("div", {
-            className: a()(k.activityPresenceDetailsItemContainer, k.truncatesText),
+            className: o()(k.activityPresenceDetailsItemContainer, k.truncatesText),
             children: [(0, r.jsx)("div", {
               children: (0, r.jsx)(c.hH0, {
                 size: "xxs",
@@ -197,7 +197,7 @@ let F = Chunk647438.memo(function(e) {
       })
     }),
     actions: ed,
-    onClickContent: ea,
+    onClickContent: eo,
     trackingConfig: {
       id: y.id,
       linkType: v.Un.ACTIVITY_INSTANCE

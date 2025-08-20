@@ -1,4 +1,4 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 29887, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Cn: () => g,
@@ -20,8 +20,8 @@ let f = (e, t) => {
   let {
     joinRequest: n,
     joinRequestGuild: r
-  } = (0, p.Z)(t.id), o = (0, l.e7)([d.default], () => d.default.getUser(null == n ? true : n.userId)), m = (0, a.l)({
-    user: o,
+  } = (0, p.Z)(t.id), a = (0, l.e7)([d.default], () => d.default.getUser(null == n ? true : n.userId)), m = (0, o.l)({
+    user: a,
     channelId: t.id,
     guildId: t.guild_id,
     messageId: e.id
@@ -41,17 +41,17 @@ function g(e) {
   let {
     message: i,
     channel: l,
-    compact: a
+    compact: o
   } = e, {
     guild: s,
     joinRequest: c,
     usernameHook: u,
     guildNameClick: d
   } = f(i, l), p = null == c || null == (t = c.user) ? true : t.username, g = null == s ? true : s.name;
-  return (0, r.jsx)(o.Z, {
+  return (0, r.jsx)(a.Z, {
     icon: n(570111),
     timestamp: i.timestamp,
-    compact: a,
+    compact: o,
     children: null != p && null != g ? m.intl.format(m.t["21R6Cg"], {
       username: p,
       usernameHook: u(),
@@ -66,17 +66,17 @@ function _(e) {
   let {
     message: i,
     channel: l,
-    compact: a
+    compact: o
   } = e, {
     guild: s,
     joinRequest: c,
     usernameHook: u,
     guildNameClick: d
   } = f(i, l), p = null == c || null == (t = c.user) ? true : t.username, g = null == s ? true : s.name;
-  return (0, r.jsx)(o.Z, {
+  return (0, r.jsx)(a.Z, {
     icon: n(474019),
     timestamp: i.timestamp,
-    compact: a,
+    compact: o,
     children: null != p && null != g ? m.intl.format(m.t["Bz/QCw"], {
       username: p,
       usernameHook: u(),
@@ -91,17 +91,17 @@ function h(e) {
   let {
     message: i,
     channel: l,
-    compact: a
+    compact: o
   } = e, {
     guild: s,
     joinRequest: c,
     usernameHook: u,
     guildNameClick: d
   } = f(i, l), p = null == c || null == (t = c.user) ? true : t.username, g = null == s ? true : s.name;
-  return (0, r.jsx)(o.Z, {
+  return (0, r.jsx)(a.Z, {
     icon: n(474019),
     timestamp: i.timestamp,
-    compact: a,
+    compact: o,
     children: null != p && null != g ? m.intl.format(m.t.Kpkesr, {
       username: p,
       usernameHook: u(),

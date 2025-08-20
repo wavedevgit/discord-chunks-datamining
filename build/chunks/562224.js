@@ -1,4 +1,4 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 562224, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => C
@@ -30,7 +30,7 @@ async function C(e, t) {
   if (null == P || null == A || null == N) return [false, "no user or channel"];
   let R = null;
   if (null == (R = "number" == typeof e ? l.ZP.getGameForPID(e) : e)) return [false, "no source"];
-  if (!d.Z.getUseSystemScreensharePicker() && !await a.Z.hasPermission(E.Eu.SCREEN_RECORDING, {
+  if (!d.Z.getUseSystemScreensharePicker() && !await o.Z.hasPermission(E.Eu.SCREEN_RECORDING, {
       showAuthorizationError: false
     })) return [false, "no permission"];
   let {
@@ -38,7 +38,7 @@ async function C(e, t) {
     resolution: L,
     fps: M,
     soundshareEnabled: k
-  } = s.Z.getState(), U = null != (v = null == t ? true : t.preset) ? v : D, [F, B] = null != (O = (0, _.Z)(U, P, Z)) ? O : [], G = null != (y = null != F ? F : null == t ? true : t.resolution) ? y : L, H = null != (x = null != B ? B : null == t ? true : t.fps) ? x : M, V = null != (j = null == t ? true : t.previewDisabled) ? j : o.I0.getSetting(), z = null != (I = null == t ? true : t.soundshareEnabled) ? I : k;
+  } = s.Z.getState(), U = null != (v = null == t ? true : t.preset) ? v : D, [F, B] = null != (O = (0, _.Z)(U, P, Z)) ? O : [], G = null != (y = null != F ? F : null == t ? true : t.resolution) ? y : L, H = null != (x = null != B ? B : null == t ? true : t.fps) ? x : M, V = null != (j = null == t ? true : t.previewDisabled) ? j : a.I0.getSetting(), z = null != (I = null == t ? true : t.soundshareEnabled) ? I : k;
   return (0, g.Z)(U, G, H, P, Z, A) || (U = b.tI.PRESET_VIDEO, G = b.LY.RESOLUTION_720, H = b.ws.FPS_30), (0, i.Rc)({
     preset: U,
     resolution: G,

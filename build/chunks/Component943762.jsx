@@ -1,4 +1,4 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 943762, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   K: () => c,
@@ -16,7 +16,7 @@ function c(e) {
   let {
     activityUsers: t,
     guildId: n,
-    activityText: a
+    activityText: o
   } = e;
   return (0, r.jsxs)("div", {
     className: s.wrapper,
@@ -28,24 +28,24 @@ function c(e) {
     }), (0, r.jsxs)(i.Text, {
       variant: "text-xs/normal",
       color: "none",
-      children: [t.length, " ", a]
+      children: [t.length, " ", o]
     })]
   })
 }
 
 function u(e) {
   switch (null == e ? true : e.type) {
-    case a.IIU.STREAMING:
+    case o.IIU.STREAMING:
       return {
-        text: o.intl.string(o.t["Jpkr/v"]), Icon: i.m3e
+        text: a.intl.string(a.t["Jpkr/v"]), Icon: i.m3e
       };
-    case a.IIU.LISTENING:
+    case o.IIU.LISTENING:
       return {
-        text: o.intl.string(o.t.kUEnxM), Icon: i.RZG
+        text: a.intl.string(a.t.kUEnxM), Icon: i.RZG
       };
     default:
       return {
-        text: o.intl.string(o.t.BMTj29), Icon: i.iWm
+        text: a.intl.string(a.t.BMTj29), Icon: i.iWm
       }
   }
 }

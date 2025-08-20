@@ -1,4 +1,4 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 686380, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => L
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk913527 = require("./913527.js"),
   s = require.n(Chunk913527),
   Chunk873546 = require("./873546.js"),
@@ -166,7 +166,7 @@ class D extends Chunk647438.Component {
         analyticsLocations: []
       }),
       text: N.intl.string(N.t.Lm2nFR)
-    }), a = this.isSender ? l : i, o = "SOCIAL" === t ? (0, r.jsx)(d.Eep, {
+    }), o = this.isSender ? l : i, a = "SOCIAL" === t ? (0, r.jsx)(d.Eep, {
       src: Z.Z,
       height: 84,
       width: 144,
@@ -191,7 +191,7 @@ class D extends Chunk647438.Component {
         children: this.getSystemMessageHeader()
       }), (0, r.jsxs)("div", {
         className: A.containerDMEmbedXP,
-        children: [o, (0, r.jsxs)("div", {
+        children: [a, (0, r.jsxs)("div", {
           className: A.contentDMEmbedXP,
           children: [(0, r.jsxs)("div", {
             className: A.contentTextDMEmbedXP,
@@ -206,7 +206,7 @@ class D extends Chunk647438.Component {
             })]
           }), (0, r.jsx)("div", {
             className: A.buttonContainerDMEmbedXP,
-            children: a
+            children: o
           })]
         })]
       })]
@@ -224,7 +224,7 @@ class D extends Chunk647438.Component {
         });
       default:
         return (0, Chunk951288.jsxs)("div", {
-          className: a()(Chunk269143.tile, Chunk269143.container),
+          className: o()(Chunk269143.tile, Chunk269143.container),
           children: [(0, Chunk951288.jsx)("div", {
             className: Chunk269143.media,
             children: this.renderMedia()
@@ -256,11 +256,11 @@ function L(e) {
     compact: i
   } = e, {
     trialOffer: l,
-    isResolving: a
+    isResolving: o
   } = (0, u.cj)([y.Z], () => ({
     trialOffer: n ? y.Z.getRelevantUserTrialOffer(t) : null,
     isResolving: !!n && y.Z.isResolving(t)
-  }), [n, t]), o = h.default.getCurrentUser(), s = (0, u.e7)([h.default], () => null != l && (0, O.I5)(true !== o && l.user_id === o.id ? o : h.default.getUser(l.user_id))), d = (0, u.e7)([b.Z], () => {
+  }), [n, t]), a = h.default.getCurrentUser(), s = (0, u.e7)([h.default], () => null != l && (0, O.I5)(true !== a && l.user_id === a.id ? a : h.default.getUser(l.user_id))), d = (0, u.e7)([b.Z], () => {
     var e;
     return s ? null == (e = b.Z.getPremiumTypeSubscription()) ? true : e.trialEndsAt : null
   }), {
@@ -268,11 +268,11 @@ function L(e) {
   } = (0, f.ZP)(m.Z.SHARE_NITRO_EMBED), _ = x.ZP.useExperiment({
     location: "ConnectedReferralTrialEmbed"
   });
-  return a ? (0, r.jsx)(p.OR, {
+  return o ? (0, r.jsx)(p.OR, {
     isHorizontal: !c.tq
-  }) : n && null != l && true !== o ? (0, r.jsx)(D, {
+  }) : n && null != l && true !== a ? (0, r.jsx)(D, {
     trialOffer: l,
-    currentUser: o,
+    currentUser: a,
     recipientHasNitro: s,
     trialEndsAt: d,
     analyticsLocations: g,

@@ -1,4 +1,4 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 346013, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => M
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk772848 = require("./772848.js"),
   Chunk831209 = require("./831209.js"),
   Chunk399606 = require("./399606.js"),
@@ -84,7 +84,7 @@ function M(e) {
     return [null != (e = null == $ ? true : $.colorString) ? e : "inherit", null != (t = null == $ ? true : $.colorStrings) ? t : null, null == $ ? true : $.colorRoleId]
   }, [$]), ei = (0, C.X7)(null == $ ? true : $.guildId, null != (l = null == H ? true : H.authorId) ? l : true, en), {
     reducedMotion: el
-  } = i.useContext(u.Sfi), [ea, eo] = i.useState(false), es = i.useCallback(() => {
+  } = i.useContext(u.Sfi), [eo, ea] = i.useState(false), es = i.useCallback(() => {
     X(true)
   }, [X]), ec = i.useCallback(() => {
     X(false)
@@ -102,11 +102,11 @@ function M(e) {
   let ed = (0, j.NZ)({
       avatarDecoration: ee,
       size: (0, f.y9)(u.EFr.SIZE_40),
-      canAnimate: ea
+      canAnimate: eo
     }),
-    ep = null == (n = H.user) ? true : n.getAvatarURL(H.guildId, 40, ea),
+    ep = null == (n = H.user) ? true : n.getAvatarURL(H.guildId, 40, eo),
     em = () => {
-      el.enabled || eo(e => !e)
+      el.enabled || ea(e => !e)
     },
     ef = H.coverImage,
     eg = null != ef && (0, h.d$)(ef);
@@ -119,7 +119,7 @@ function M(e) {
       children: [!q && (true === H.shouldShowBlurredThumbnailImage ? (0, r.jsx)("img", {
         src: R,
         alt: w.intl.string(w.t.rIbh8P),
-        className: a()(Z.thumbnail, {
+        className: o()(Z.thumbnail, {
           [Z.spoiler]: H.shouldSpoiler
         }),
         onContextMenu: z,
@@ -129,7 +129,7 @@ function M(e) {
         backgroundSrc: "".concat(ef, "?format=png"),
         alt: w.intl.string(w.t.rIbh8P),
         aspectRatio: 16 / 9,
-        className: a()(Z.thumbnail, {
+        className: o()(Z.thumbnail, {
           [Z.spoiler]: H.shouldSpoiler
         }),
         imageChildClassName: Z.thumbnailImage,
@@ -163,7 +163,7 @@ function M(e) {
         }), (0, r.jsx)(u.Text, {
           variant: "text-sm/normal",
           color: "text-muted",
-          className: a()(Z.descriptionHeaderText, Z.descriptionSubtitle),
+          className: o()(Z.descriptionHeaderText, Z.descriptionSubtitle),
           children: H.subtitle
         })]
       }), (0, r.jsxs)("div", {
@@ -233,7 +233,7 @@ function M(e) {
                   colorStrings: ei,
                   className: Z.authorName
                 }))
-              }, (0, o.Z)())
+              }, (0, a.Z)())
             })
           })]
         }), H.canAccess ? (0, r.jsx)(u.zxk, {

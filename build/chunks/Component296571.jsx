@@ -1,4 +1,4 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 296571, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -22,9 +22,9 @@ function d(e) {
     onClickThread: m,
     onClickViewThreads: f,
     onContextMenuThread: g
-  } = e, _ = (0, o.ZP)(n), h = p(_), b = (0, i.e7)([a.Z], () => {
+  } = e, _ = (0, a.ZP)(n), h = p(_), b = (0, i.e7)([o.Z], () => {
     var e;
-    return a.Z.getChannel(null == (e = n.messageReference) ? true : e.channel_id)
+    return o.Z.getChannel(null == (e = n.messageReference) ? true : e.channel_id)
   }), E = c.intl.format(c.t.cZ9Uf3, {
     actorName: _.nick,
     actorHook: h,

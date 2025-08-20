@@ -13,8 +13,8 @@ var Chunk647438 = require("./647438.js"),
 function l() {
   let [e, t] = Chunk647438.useState("lg"), [n, o] = Chunk647438.useState(true), l = (0, Chunk448986.Z)(e => {
     let n = e.target,
-      s = e.contentRect.width;
-    return (o(n.scrollHeight), null == s || s > a.j2) ? t("lg") : s > a.Z0 ? t("sm") : t("xs")
+      r = e.contentRect.width;
+    return (o(n.scrollHeight), null == r || r > a.j2) ? t("lg") : r > a.Z0 ? t("sm") : t("xs")
   });
   return {
     containerRef: (0, Chunk393903.y)(l),
@@ -26,8 +26,8 @@ function l() {
 function u(e) {
   let {
     initiallyExpanded: t
-  } = e, [n, r] = s.useState(t), [i, a] = s.useState(false), l = s.useCallback(() => {
-    r(e => !e), a(true)
+  } = e, [n, s] = r.useState(t), [i, a] = r.useState(false), l = r.useCallback(() => {
+    s(e => !e), a(true)
   }, []), {
     expansionSpring: u
   } = (0, o.q_F)({

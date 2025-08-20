@@ -1,4 +1,4 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 128435, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => v
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk278074 = require("./278074.js"),
   Chunk263568 = require("./263568.js"),
   Chunk481060 = require("./481060.js"),
@@ -54,10 +54,10 @@ function b(e) {
     secondaryLabel: n,
     handleClick: i,
     isInteractive: l,
-    className: o
+    className: a
   } = e;
   return (0, r.jsxs)("div", {
-    className: a()(g.detailsText, o),
+    className: o()(g.detailsText, a),
     children: [l ? (0, r.jsx)(c.Avr, {
       text: t,
       onClick: i,
@@ -82,8 +82,8 @@ function E(e) {
     action: t,
     channelId: n,
     messageId: l,
-    isInteractive: a,
-    className: o
+    isInteractive: o,
+    className: a
   } = e, {
     actionButtonRef: s,
     manageFocusOnAction: d
@@ -111,8 +111,8 @@ function E(e) {
     buttonLabel: t.label,
     secondaryLabel: t.secondaryLabel,
     handleClick: p,
-    isInteractive: a,
-    className: o
+    isInteractive: o,
+    className: a
   })
 }
 
@@ -132,10 +132,10 @@ function C(e) {
       myAvatarUrl: t.myAvatarUrl,
       canShowVoteCounts: t.canShowVoteCounts
     };
-    return (0, o.EQ)(t.layoutType).with(s.C.DEFAULT, () => (0, r.jsx)(f.K, _({}, n))).with(s.C.IMAGE_ONLY_ANSWERS, () => (0, r.jsx)(d.Z, _({}, n))).otherwise(() => null)
+    return (0, a.EQ)(t.layoutType).with(s.C.DEFAULT, () => (0, r.jsx)(f.K, _({}, n))).with(s.C.IMAGE_ONLY_ANSWERS, () => (0, r.jsx)(d.Z, _({}, n))).otherwise(() => null)
   }(0, n);
   return null == u ? null : (0, r.jsx)("div", {
-    className: a()(g.container, l, i),
+    className: o()(g.container, l, i),
     children: (0, r.jsxs)(c.y5t, {
       children: [(0, r.jsxs)("div", {
         className: g.header,

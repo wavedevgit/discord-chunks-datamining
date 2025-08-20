@@ -1,7 +1,7 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 761538, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => o
+  Z: () => a
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -9,7 +9,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk903893 = require("./903893.js");
 
-function o(e) {
+function a(e) {
   let {
     message: t
   } = e;
@@ -42,13 +42,13 @@ function o(e) {
         }, n))
       })
     },
-    className: a.accessory,
+    className: o.accessory,
     children: [(0, r.jsx)(i.d3s, {
       size: "xs",
       color: "currentColor"
     }), (0, r.jsx)(i.Text, {
       variant: "text-xs/normal",
-      className: a.accessoryText,
+      className: o.accessoryText,
       children: l.intl.string(l.t["2aXnfX"])
     })]
   })

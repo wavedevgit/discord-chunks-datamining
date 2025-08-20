@@ -1,4 +1,4 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 115610, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   O: () => b
@@ -28,9 +28,9 @@ async function b(e, t) {
   if (null == E || null == u.Z.getGuild(E)) return;
   let C = d.default.getCurrentUser();
   if (null == C) return;
-  await (0, o.$p)();
+  await (0, a.$p)();
   let v = Array.from(s.Z.getAllStickersIterator()),
-    O = v.filter(e => e.type === c.n0.GUILD).filter(e => h(e.guild_id) && (0, a.kl)(e, C, t)).sort((e, t) => -m.default.compare(e.id, t.id));
+    O = v.filter(e => e.type === c.n0.GUILD).filter(e => h(e.guild_id) && (0, o.kl)(e, C, t)).sort((e, t) => -m.default.compare(e.id, t.id));
   if (O.length > 5) {
     let i = [O[Math.floor(Math.pow(Math.random(), 2) * O.length)].id];
     r.Z.sendStickers(t.id, i, "", {

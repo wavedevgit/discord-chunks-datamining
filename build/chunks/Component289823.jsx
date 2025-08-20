@@ -1,7 +1,7 @@
-/** Chunk was on 91173 **/
-/** chunk id: 289823, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 87337 **/
+/** chunk id: 289823, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => L
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -13,50 +13,50 @@ var Chunk951288 = require("./951288.js"),
   Chunk686546 = require("./686546.jsx"),
   Chunk3682 = require("./3682.js"),
   Chunk647718 = require("./647718.js");
-let m = {},
-  f = 1 / 4;
+let A = {},
+  E = 1 / 4;
 
-function g(e) {
+function I(t) {
   let {
-    height: t,
+    height: e,
     fillColor: n
-  } = e;
-  return (0, r.jsx)("div", {
+  } = t;
+  return (0, i.jsx)("div", {
     style: {
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
-      borderRadius: t / 2,
+      borderRadius: e / 2,
       backgroundColor: n,
-      height: t,
-      width: t * d.jR
+      height: e,
+      width: e * _.jR
     },
-    children: (0, r.jsx)(s.b, {
-      className: p.dots,
-      dotRadius: t * f
+    children: (0, i.jsx)(o.b, {
+      className: d.dots,
+      dotRadius: e * E
     })
   })
 }
 
-function _(e) {
+function f(t) {
   let {
-    isTyping: t,
+    isTyping: e,
     statusCoords: n,
-    status: i
-  } = e, l = (0, c.vjg)(c.Skl.ONLINE);
-  return t ? (0, r.jsx)("div", {
+    status: r
+  } = t, s = (0, u.vjg)(u.Skl.ONLINE);
+  return e ? (0, i.jsx)("div", {
     style: {
       position: "absolute",
       top: n.y,
       left: n.x
     },
-    children: (0, r.jsx)(g, {
+    children: (0, i.jsx)(I, {
       height: n.height,
-      fillColor: l
+      fillColor: s
     })
-  }) : null != i ? (0, r.jsx)(c.qbd, {
+  }) : null != r ? (0, i.jsx)(u.qbd, {
     size: n.height,
-    status: i,
+    status: r,
     style: {
       position: "absolute",
       top: n.y,
@@ -65,20 +65,20 @@ function _(e) {
   }) : null
 }
 
-function h(e) {
+function S(t) {
   let {
-    src: t,
+    src: e,
     size: n
-  } = e;
-  return (0, r.jsx)("img", {
-    className: p.circularImage,
-    src: t,
+  } = t;
+  return (0, i.jsx)("img", {
+    className: d.circularImage,
+    src: e,
     alt: "",
     width: n,
     height: n
   })
 }
-let b = {
+let g = {
     [Chunk481060.EFr.SIZE_16]: {
       default: Chunk686546.QS.DIAGONAL_FACEPILE_16,
       typing: Chunk686546.QS.DIAGONAL_FACEPILE_TYPING_16,
@@ -130,107 +130,107 @@ let b = {
       status: Chunk686546.QS.DIAGONAL_FACEPILE_STATUS_120
     }
   },
-  E = function(e) {
-    var t, {
+  L = function(t) {
+    var e, {
         backSrc: n,
-        frontSrc: l,
-        size: s,
-        isTyping: f,
-        status: g,
-        style: E,
-        className: C
-      } = e,
-      v = function(e, t) {
-        if (null == e) return {};
-        var n, r, i = function(e, t) {
-          if (null == e) return {};
-          var n, r, i = {},
-            l = Object.keys(e);
-          for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-          return i
-        }(e, t);
+        frontSrc: s,
+        size: o,
+        isTyping: E,
+        status: I,
+        style: L,
+        className: N
+      } = t,
+      m = function(t, e) {
+        if (null == t) return {};
+        var n, i, r = function(t, e) {
+          if (null == t) return {};
+          var n, i, r = {},
+            s = Object.keys(t);
+          for (i = 0; i < s.length; i++) n = s[i], e.indexOf(n) >= 0 || (r[n] = t[n]);
+          return r
+        }(t, e);
         if (Object.getOwnPropertySymbols) {
-          var l = Object.getOwnPropertySymbols(e);
-          for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+          var s = Object.getOwnPropertySymbols(t);
+          for (i = 0; i < s.length; i++) n = s[i], !(e.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(t, n) && (r[n] = t[n])
         }
-        return i
-      }(e, ["backSrc", "frontSrc", "size", "isTyping", "status", "style", "className"]);
+        return r
+      }(t, ["backSrc", "frontSrc", "size", "isTyping", "status", "style", "className"]);
     let {
-      size: O
-    } = c.ny6[s], {
-      statusCoords: y,
-      frontAvatarOffsetPx: x,
-      frontAvatarSizePx: j,
-      backAvatarSizePx: I
-    } = i.useMemo(() => {
-      var e;
-      let t = "".concat(O, "-").concat(f);
-      return null != (e = m[t]) ? e : function(e, t, n) {
-        let r = c.ny6[e],
-          i = r.size / (d.z3 + d.o),
-          l = i * d.z3,
-          a = i * d.o,
-          s = {
-            statusCoords: (0, o.Vq)(r, c.Skl.ONLINE, false, t),
-            frontAvatarSizePx: l,
-            backAvatarSizePx: i,
+      size: h
+    } = u.ny6[o], {
+      statusCoords: O,
+      frontAvatarOffsetPx: p,
+      frontAvatarSizePx: x,
+      backAvatarSizePx: P
+    } = r.useMemo(() => {
+      var t;
+      let e = "".concat(h, "-").concat(E);
+      return null != (t = A[e]) ? t : function(t, e, n) {
+        let i = u.ny6[t],
+          r = i.size / (_.z3 + _.o),
+          s = r * _.z3,
+          a = r * _.o,
+          o = {
+            statusCoords: (0, l.Vq)(i, u.Skl.ONLINE, false, e),
+            frontAvatarSizePx: s,
+            backAvatarSizePx: r,
             frontAvatarOffsetPx: a,
-            frontAvatarCenter: a + l / 2
+            frontAvatarCenter: a + s / 2
           };
-        return m[n] = s, s
-      }(s, f, t)
-    }, [O, f, s]), S = (t = null != g, f ? b[s].typing : t ? b[s].status : b[s].default);
-    return (0, r.jsxs)("div", {
-      style: function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-              value: r,
+        return A[n] = o, o
+      }(o, E, e)
+    }, [h, E, o]), G = (e = null != I, E ? g[o].typing : e ? g[o].status : g[o].default);
+    return (0, i.jsxs)("div", {
+      style: function(t) {
+        for (var e = 1; e < arguments.length; e++) {
+          var n = null != arguments[e] ? arguments[e] : {},
+            i = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(t) {
+            return Object.getOwnPropertyDescriptor(n, t).enumerable
+          }))), i.forEach(function(e) {
+            var i;
+            i = n[e], e in t ? Object.defineProperty(t, e, {
+              value: i,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : e[t] = r
+            }) : t[e] = i
           })
         }
-        return e
+        return t
       }({
-        width: O,
-        height: O
-      }, E),
-      "aria-label": v["aria-label"],
-      "aria-hidden": v["aria-hidden"],
-      className: a()(p.container, C),
-      children: [(0, r.jsxs)(u.ZP, {
-        mask: S,
-        height: O,
-        width: O,
-        children: [(0, r.jsx)("img", {
+        width: h,
+        height: h
+      }, L),
+      "aria-label": m["aria-label"],
+      "aria-hidden": m["aria-hidden"],
+      className: a()(d.container, N),
+      children: [(0, i.jsxs)(c.ZP, {
+        mask: G,
+        height: h,
+        width: h,
+        children: [(0, i.jsx)("img", {
           src: n,
           alt: "",
-          width: I,
-          height: I
-        }), (0, r.jsx)("div", {
+          width: P,
+          height: P
+        }), (0, i.jsx)("div", {
           style: {
             position: "absolute",
-            top: x,
-            left: x
+            top: p,
+            left: p
           },
-          children: (0, r.jsx)(h, {
-            src: l,
-            size: j,
-            isTyping: f,
-            status: g
+          children: (0, i.jsx)(S, {
+            src: s,
+            size: x,
+            isTyping: E,
+            status: I
           })
         })]
-      }), (0, r.jsx)(_, {
-        statusCoords: y,
-        status: g,
-        isTyping: f
+      }), (0, i.jsx)(f, {
+        statusCoords: O,
+        status: I,
+        isTyping: E
       })]
     })
   }

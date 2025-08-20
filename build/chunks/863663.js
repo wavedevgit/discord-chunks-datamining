@@ -1,19 +1,19 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 863663, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  NB: () => a,
+  NB: () => o,
   ar: () => u,
   fG: () => c,
-  kg: () => o,
+  kg: () => a,
   pM: () => s
 }), require("./781311.js"), require("./953529.js");
 var Chunk881052 = require("./881052.js");
 require("./496675.js");
 var Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let a = "_role";
+let o = "_role";
 
-function o(e) {
+function a(e) {
   if (!(e >= 0)) switch (-e) {
     case i.evJ.ENTITY_TOO_LARGE:
       return l.intl.string(l.t.YbdEFB);
@@ -39,7 +39,7 @@ function s(e) {
       body: {
         message: "Invalid form body",
         errors: {
-          [a]: {
+          [o]: {
             _errors: [{
               code: "",
               message: n
@@ -58,13 +58,13 @@ function c(e) {
     name: r,
     priceTier: i,
     description: l,
-    image: a,
-    imageName: o,
+    image: o,
+    imageName: a,
     isImageChanged: s,
     newRoleParams: c,
     hasUnsavedAttachmentChanges: u
   } = e, d = {};
-  (null == n ? true : n.name) !== r && "" !== r.trim() && (d.name = r), (null != (t = null == n ? true : n.description) ? t : "") !== l && (d.description = l), (null == n ? true : n.price_tier) !== i && null != i && (d.priceTier = i), null != c && "" !== c.name.trim() ? d.createNewRole = true : null === c && (d.unlinkRole = true), a.startsWith("data:") && (s || null == n && (Object.keys(d).length > 0 || u)) && (d.image = a, d.imageName = o);
+  (null == n ? true : n.name) !== r && "" !== r.trim() && (d.name = r), (null != (t = null == n ? true : n.description) ? t : "") !== l && (d.description = l), (null == n ? true : n.price_tier) !== i && null != i && (d.priceTier = i), null != c && "" !== c.name.trim() ? d.createNewRole = true : null === c && (d.unlinkRole = true), o.startsWith("data:") && (s || null == n && (Object.keys(d).length > 0 || u)) && (d.image = o, d.imageName = a);
   let p = Object.keys(d).length > 0 || u;
   return {
     changes: d,

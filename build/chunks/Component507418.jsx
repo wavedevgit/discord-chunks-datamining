@@ -1,4 +1,4 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 507418, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -17,15 +17,15 @@ var Chunk512722 = require("./512722.js"),
 
 function m(e, t) {
   var n, i, m, f;
-  if ((0, o.cp)(t)) return (0, r.jsx)(s.Z, {});
+  if ((0, a.cp)(t)) return (0, r.jsx)(s.Z, {});
   if ((0, p.Z)(t)) {
     let l = (null != (i = null == t || null == (n = t.author) ? true : n.username) ? i : "").split(" ").slice(0, false).join(" "),
       {
-        guild_id: o
+        guild_id: a
       } = t.messageReference;
-    if (null != o) return (0, r.jsx)(a.Z, {
+    if (null != a) return (0, r.jsx)(o.Z, {
       setPopoutRef: e.setPopoutRef,
-      guildId: o,
+      guildId: a,
       name: l
     })
   }

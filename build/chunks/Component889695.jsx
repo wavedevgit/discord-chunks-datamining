@@ -1,4 +1,4 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 889695, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk658722 = require("./658722.js"),
-  a = require.n(Chunk658722),
+  o = require.n(Chunk658722),
   Chunk149765 = require("./149765.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -68,10 +68,10 @@ function j(e) {
   return (N.roles.forEach(e => {
     let t = j[e];
     null != t && (L[t.id] = t)
-  }), o.e$(_.I0({
+  }), a.e$(_.I0({
     forceRoles: L,
     context: l
-  }), o.$e(v.Plq.MANAGE_GUILD, v.Plq.MANAGE_ROLES)) || (0, u.eM)(l, n)) ? (0, r.jsx)("div", {
+  }), a.$e(v.Plq.MANAGE_GUILD, v.Plq.MANAGE_ROLES)) || (0, u.eM)(l, n)) ? (0, r.jsx)("div", {
     className: y.container,
     children: (0, r.jsx)(c.hQY, {
       placeholder: O.intl.string(O.t.Sojqsr),
@@ -79,7 +79,7 @@ function j(e) {
       onChange: w,
       autoFocus: true,
       children: e => {
-        let t = D.reduce((t, n) => (a()(e.toLowerCase(), n.name.toLowerCase()) && t.push((0, r.jsxs)(c.lo1, {
+        let t = D.reduce((t, n) => (o()(e.toLowerCase(), n.name.toLowerCase()) && t.push((0, r.jsxs)(c.lo1, {
             value: n.id,
             children: [(0, r.jsx)(c.lo1.Label, {
               children: x(n)

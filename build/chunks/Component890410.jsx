@@ -1,4 +1,4 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 890410, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -58,14 +58,14 @@ function p(e) {
       }
       return i
     }(e, ["message", "channel", "content", "className", "compact", "popoutProps", "hideTimestamp", "withFooter"]);
-  let C = (0, a.ZP)(i);
+  let C = (0, o.ZP)(i);
   return (0, r.jsx)("div", {
     className: l()({
       [u.withFooter]: b
     }, u.embedCard, {
       [u.compact]: g
     }, f),
-    children: (0, r.jsx)(o.Z, (t = d({}, E), n = n = {
+    children: (0, r.jsx)(a.Z, (t = d({}, E), n = n = {
       className: l()(u.messageContainer, {
         [u.compact]: g
       }),

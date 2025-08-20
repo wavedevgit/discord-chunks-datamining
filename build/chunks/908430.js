@@ -1,0 +1,39 @@
+/** Chunk was on 45620 **/
+/** chunk id: 908430, original params: e,t,r (module,exports,require) **/
+"use strict";
+require.d(exports, {
+  f: () => o
+}), require("./388685.js"), require("./539854.js");
+var Chunk647438 = require("./647438.js"),
+  Chunk399606 = require("./399606.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk615006 = require("./615006.js");
+
+function o() {
+  let e = Chunk647438.useRef(new Map),
+    t = (0, Chunk399606.e7)([Chunk615006.Z], () => Chunk615006.Z.getUserDiscounts());
+  Chunk647438.useEffect(() => {
+    let r = module.current,
+      n = Date.now(),
+      l = [];
+    return exports.forEach(e => {
+      if (null == e.expiresAt) return;
+      let t = e.expiresAt.getTime() - n;
+      if (t <= 0) l.push(e.discountId);
+      else {
+        let n = setTimeout(() => {
+          a.Z.dispatch({
+            type: "COLLECTIBLES_USER_DISCOUNTS_EXPIRED",
+            discountIds: [e.discountId]
+          }), r.delete(e.discountId)
+        }, t);
+        r.set(e.discountId, n)
+      }
+    }), Chunk399606.length > 0 && Chunk570140.Z.dispatch({
+      type: "COLLECTIBLES_USER_DISCOUNTS_EXPIRED",
+      discountIds: Chunk399606
+    }), () => {
+      require.forEach(e => clearTimeout(e)), require.clear()
+    }
+  }, [exports])
+}

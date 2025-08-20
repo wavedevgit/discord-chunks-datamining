@@ -2,7 +2,7 @@
 /** chunk id: 548685, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => P
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -29,12 +29,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk345213 = require("./345213.js"),
   Chunk310582 = require("./310582.js");
-let T = e => {
+let P = e => {
   var t;
   let {
     isLoading: r,
     title: a,
-    sortedSkuIds: T,
+    sortedSkuIds: P,
     numVisibleItems: L,
     hasSorting: k,
     prioritizeUserDiscounts: I,
@@ -47,7 +47,7 @@ let T = e => {
     sortOptions: F,
     shuffleProducts: H,
     showRecommendationOption: W
-  } = (0, C.Z)(T, B, I), V = (0, E.St)(M), U = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), z = (0, o.e7)([p.Z], () => p.Z.isFocused()), G = !U && z, {
+  } = (0, C.Z)(P, B, I), U = (0, E.St)(M), V = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), z = (0, o.e7)([p.Z], () => p.Z.isFocused()), G = !V && z, {
     animationPhase: q,
     startAnimation: K
   } = (0, O.y)(), Y = (0, b.sp)(), X = null != (t = null == Y ? true : Y.sessionId) ? t : "", Q = l.useRef(null), J = l.useCallback(e => {
@@ -60,11 +60,11 @@ let T = e => {
     })
   }, [K, D, X]);
   return null == w ? null : (0, n.jsxs)("div", {
-    className: i()(P.popularPicksSection, P.centeredSection),
+    className: i()(T.popularPicksSection, T.centeredSection),
     children: [(0, n.jsxs)("div", {
-      className: P.blockHeader,
+      className: T.blockHeader,
       children: [(0, n.jsxs)("div", {
-        className: P.headerLeft,
+        className: T.headerLeft,
         children: [(0, n.jsx)(s.X6q, {
           variant: "heading-lg/semibold",
           children: a
@@ -93,7 +93,7 @@ let T = e => {
               return e
             }({}, e), r = r = {
               onClick: () => (0, c.Z)(f.Z.getArticleURL(S.BhN.DATA_USED_FOR_RECOMMENDED)),
-              className: P.informationIcon,
+              className: T.informationIcon,
               children: (0, n.jsx)(s.d3s, {
                 size: "sm"
               })
@@ -110,7 +110,7 @@ let T = e => {
           }
         })]
       }), k ? (0, n.jsxs)("div", {
-        className: i()(P.headerRight, {
+        className: i()(T.headerRight, {
           [j.shopTakeOver]: R
         }),
         children: [(0, n.jsx)(s.Text, {
@@ -121,7 +121,7 @@ let T = e => {
           children: (0, n.jsx)(s.PhF, {
             options: F,
             select: J,
-            className: P.sortSelect,
+            className: T.sortSelect,
             popoutClassName: i()({
               [j.shopTakeOver]: R
             }),
@@ -148,17 +148,17 @@ let T = e => {
         })]
       }) : null]
     }), (0, n.jsx)("div", {
-      className: P.feed,
+      className: T.feed,
       children: r ? (0, n.jsx)(n.Fragment, {
         children: [...Array(12)].map((e, t) => (0, n.jsx)(_.K, {}, t + 1))
-      }) : V.slice(0, L).map((e, t) => {
+      }) : U.slice(0, L).map((e, t) => {
         let r, l = h.Z.getCategoryForProduct(e.skuId);
         if (null == e || null == l) return null;
         if (G)
           if (q === O.g.SHUFFLE_OUT) return (0, n.jsx)("div", {
-            className: P.shuffleOutro
+            className: T.shuffleOutro
           }, "".concat(e.skuId, "-").concat(t));
-          else q === O.g.SORT_OUT ? r = P.sortChangedOutro : q === O.g.SHUFFLE_IN ? r = P.shuffleIntro : q === O.g.SORT_IN && (r = P.sortChangedIntro);
+          else q === O.g.SORT_OUT ? r = T.sortChangedOutro : q === O.g.SHUFFLE_IN ? r = T.shuffleIntro : q === O.g.SORT_IN && (r = T.sortChangedIntro);
         return (0, n.jsx)(b.k0, {
           newValue: {
             tilePosition: t,

@@ -1,4 +1,4 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 680668, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => v
@@ -54,11 +54,11 @@ function v(e) {
     K = i.useCallback(() => Y(false), []),
     X = i.useRef(null),
     q = i.useCallback(() => {
-      Y(true), (0, o.CB)(V, "show profile", z)
+      Y(true), (0, a.CB)(V, "show profile", z)
     }, [V, z]),
     J = i.useCallback(() => {
       let e = "noop";
-      k ? (I(), e = "transition") : (S(), e = "accept"), (0, o.r$)({
+      k ? (I(), e = "transition") : (S(), e = "accept"), (0, a.r$)({
         invite: P,
         action: e,
         inviter_id: N.author.id,
@@ -97,10 +97,10 @@ function v(e) {
         disableBoostClick: true
       })
     })]
-  }), G && (j = (0, r.jsx)(a.DY3, {
+  }), G && (j = (0, r.jsx)(o.DY3, {
     className: C.tooltipContainer,
     text: E.intl.string(E.t["/FeTKy"]),
-    children: (0, r.jsx)(a.d3s, {
+    children: (0, r.jsx)(o.d3s, {
       size: "md",
       color: "currentColor",
       className: C.infoIcon
@@ -149,11 +149,11 @@ function v(e) {
     }), T.features.has(b.oNc.HUB) && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
         className: C.separator
-      }), (0, r.jsx)(a.Text, {
+      }), (0, r.jsx)(o.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",
         children: E.intl.format(E.t["/o1IfH"], {
-          onClick: () => (0, a.ZDy)(async () => {
+          onClick: () => (0, o.ZDy)(async () => {
             let {
               default: e
             } = await Promise.all([n.e("95468"), n.e("70799")]).then(n.bind(n, 650233));

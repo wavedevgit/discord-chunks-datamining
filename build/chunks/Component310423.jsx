@@ -1,4 +1,4 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 310423, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => T
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk911969 = require("./911969.js"),
@@ -61,7 +61,7 @@ let j = {
     color: "header-secondary"
   },
   I = {
-    className: a()("mention", Chunk466002.mention)
+    className: o()("mention", Chunk466002.mention)
   };
 
 function S(e) {
@@ -71,7 +71,7 @@ function S(e) {
   }))
 }
 let T = Chunk647438.memo(function(e) {
-  var t, n, l, a, T, P;
+  var t, n, l, o, T, P;
   let N, {
       channel: A,
       messageId: w,
@@ -84,7 +84,7 @@ let T = Chunk647438.memo(function(e) {
       onCopy: D,
       copyRef: L
     } = (0, d.Z)(A, null == Z || null == (t = Z.application_command) ? true : t.id),
-    M = (0, o.e7)([h.Z], () => h.Z.getGuild(A.guild_id), [A.guild_id]);
+    M = (0, a.e7)([h.Z], () => h.Z.getGuild(A.guild_id), [A.guild_id]);
   if (i.useEffect(() => {
       (null == Z || Z.type === c.yU.CHAT && true === Z.application_command) && p.OG(A.id, w)
     }, [A.id, w, Z]), null == Z) N = (0, r.jsx)(s.$jN, {
@@ -93,9 +93,9 @@ let T = Chunk647438.memo(function(e) {
   });
   else {
     let e = [],
-      t = Object.fromEntries((null != (a = null == (n = Z.application_command) ? true : n.options) ? a : []).map(e => [e.name, e]));
+      t = Object.fromEntries((null != (o = null == (n = Z.application_command) ? true : n.options) ? o : []).map(e => [e.name, e]));
     for (let n of null != (T = Z.options) ? T : []) e = e.concat(function e(t) {
-      var n, l, a, o, u, d, p;
+      var n, l, o, a, u, d, p;
       let h, {
           option: O,
           channel: T,
@@ -112,8 +112,8 @@ let T = Chunk647438.memo(function(e) {
               children: null != (l = null == w ? true : w.name_localized) ? l : O.name
             }))]
           }, R)],
-          c = Object.fromEntries(null == (n = null != (a = null == w ? true : w.options) ? a : []) ? true : n.map(e => [e.name, e]));
-        for (let n of null != (o = O.options) ? o : []) t = t.concat(e({
+          c = Object.fromEntries(null == (n = null != (o = null == w ? true : w.options) ? o : []) ? true : n.map(e => [e.name, e]));
+        for (let n of null != (a = O.options) ? a : []) t = t.concat(e({
           option: n,
           channel: T,
           guild: P,

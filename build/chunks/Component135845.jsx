@@ -1,4 +1,4 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 135845, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
-  a = require.n(Chunk512722),
+  o = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk447543 = require("./447543.js"),
   Chunk100527 = require("./100527.js"),
@@ -33,20 +33,20 @@ function O(e) {
       onAcceptInstantInvite: S
     } = e,
     T = null == x ? true : x.id,
-    P = (0, o.e7)([f.Z], () => f.Z.getGuildId()),
-    N = (0, o.e7)([m.Z], () => null != O && null != O.target_user ? m.Z.getActiveStreamForUser(O.target_user.id, T) : null, [O, T]),
-    A = (0, o.e7)([m.Z], () => null != O && null != O.target_user ? m.Z.getStreamForUser(O.target_user.id, T) : null, [O, T]),
+    P = (0, a.e7)([f.Z], () => f.Z.getGuildId()),
+    N = (0, a.e7)([m.Z], () => null != O && null != O.target_user ? m.Z.getActiveStreamForUser(O.target_user.id, T) : null, [O, T]),
+    A = (0, a.e7)([m.Z], () => null != O && null != O.target_user ? m.Z.getStreamForUser(O.target_user.id, T) : null, [O, T]),
     {
       analyticsLocations: w
     } = (0, u.ZP)(c.Z.INVITE_EMBED),
     Z = null != O && O.target_type === E.Iq.STREAM && null != O.target_user && null != N,
     R = null != O && null != A && null != O.channel && null != O.guild && A.channelId === O.channel.id && A.guildId === O.guild.id;
-  a()(null != O, "Invite cannot be null");
+  o()(null != O, "Invite cannot be null");
   let {
     target_type: D,
     target_user: L
   } = O;
-  a()(D === E.Iq.STREAM && null != L, "invalid streaming invite");
+  o()(D === E.Iq.STREAM && null != L, "invalid streaming invite");
   let M = y === L.id,
     k = O.state === b.r2o.ACCEPTING,
     U = i.useCallback(() => {

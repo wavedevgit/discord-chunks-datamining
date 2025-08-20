@@ -1,5 +1,5 @@
-/** Chunk was on 91173 **/
-/** chunk id: 422622, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 62634 **/
+/** chunk id: 422622, original params: t,e,n (module,exports,require) **/
 module.exports = {
   closeButton: "closeButton__47998",
   art: "art__47998",

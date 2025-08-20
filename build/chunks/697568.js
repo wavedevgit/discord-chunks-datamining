@@ -1,12 +1,12 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 697568, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => a
+  Z: () => o
 });
 var Chunk544891 = require("./544891.js"),
   Chunk900849 = require("./900849.js"),
   Chunk981631 = require("./981631.js");
-let a = e => r.tn.get({
+let o = e => r.tn.get({
   url: l.ANM.STICKER_GUILD_DATA(e),
   oldFormErrors: true,
   rejectWithError: true

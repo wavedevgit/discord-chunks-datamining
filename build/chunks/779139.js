@@ -1,4 +1,4 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 779139, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   TZ: () => u,
@@ -13,11 +13,11 @@ var Chunk904245 = require("./904245.js"),
 let c = e => {
     var t;
     let n = null == (t = i.default.getCurrentUser()) ? true : t.id,
-      r = ((null != n ? a.default.extractTimestamp(n) : 0) + a.default.extractTimestamp(e)) % o.m.length;
-    return o.m[r]
+      r = ((null != n ? o.default.extractTimestamp(n) : 0) + o.default.extractTimestamp(e)) % a.m.length;
+    return a.m[r]
   },
   u = (e, t, n) => {
-    var a;
+    var o;
     r.Z.sendGreetMessage(e.id, n, r.Z.getSendMessageOptionsForReply({
       channel: e,
       message: t,
@@ -27,6 +27,6 @@ let c = e => {
       is_reply: true,
       sticker_id: n,
       target_user: t.author.id,
-      sender: null == (a = i.default.getCurrentUser()) ? true : a.id
+      sender: null == (o = i.default.getCurrentUser()) ? true : o.id
     })
   }

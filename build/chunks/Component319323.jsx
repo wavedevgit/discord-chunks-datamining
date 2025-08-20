@@ -1,4 +1,4 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 319323, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -16,7 +16,7 @@ function c(e) {
     guildId: n
   } = e, {
     data: i
-  } = (0, o.IX)(t);
+  } = (0, a.IX)(t);
   return null == i ? null : (0, r.jsx)(u, {
     app: i,
     guildId: n
@@ -26,9 +26,9 @@ function c(e) {
 function u(e) {
   let {
     app: t,
-    guildId: o
+    guildId: a
   } = e;
-  (0, a.q)(t.id);
+  (0, o.q)(t.id);
   let c = i.useCallback(() => {
     (0, l.ZDy)(async () => {
       let {
@@ -53,10 +53,10 @@ function u(e) {
         return e
       }({
         appId: t.id,
-        guildId: o
+        guildId: a
       }, n))
     })
-  }, [t, o]);
+  }, [t, a]);
   return (0, r.jsx)(l.zxk, {
     size: "sm",
     onClick: c,

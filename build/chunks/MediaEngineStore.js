@@ -332,7 +332,11 @@ function tk() {
   let i = arguments.length > 0 && true !== arguments[0] ? arguments[0] : e5,
     o = arguments.length > 1 && true !== arguments[1] ? arguments[1] : a,
     s = a;
-  if ((null == s ? true : s.desktopSource) != null && s.desktopSource.id !== (null == o || null == (e = o.desktopSource) ? true : module.id) && (null != s.desktopSource.soundshareId && (0, Chunk358085.isWindows)() && Chunk887278.pn(s.desktopSource.soundshareId), eK.setGoLiveSource(null, eJ)), (null == s ? true : s.cameraSource) != null && (s.cameraSource.videoDeviceGuid !== (null == o || null == (t = o.cameraSource) ? true : exports.videoDeviceGuid) || s.cameraSource.audioDeviceGuid !== (null == o || null == (n = o.cameraSource) ? true : require.audioDeviceGuid)) && eK.setGoLiveSource(null, eJ), (e5 || i) && (e7 = (e5 = i) ? t2(e2, tw().videoDeviceId) : Chunk65154.Av, eK.setVideoInputDevice(e7)), a = o, null != o) {
+  if ((null == s ? true : s.desktopSource) != null && s.desktopSource.id !== (null == o || null == (e = o.desktopSource) ? true : module.id) && (null != s.desktopSource.soundshareId && (0, Chunk358085.isWindows)() && Chunk887278.pn(s.desktopSource.soundshareId), eK.setGoLiveSource(null, eJ)), (null == s ? true : s.cameraSource) != null && (s.cameraSource.videoDeviceGuid !== (null == o || null == (t = o.cameraSource) ? true : exports.videoDeviceGuid) || s.cameraSource.audioDeviceGuid !== (null == o || null == (n = o.cameraSource) ? true : require.audioDeviceGuid)) && eK.setGoLiveSource(null, eJ), e5 || i) {
+    let e = tw().videoDeviceId;
+    e5 && module === Chunk65154.w5 && e7 !== Chunk65154.Av && (e = e7), e7 = (e5 = i) ? t2(e2, module) : Chunk65154.Av, eK.setVideoInputDevice(e7)
+  }
+  if (a = o, null != o) {
     let e = {
       resolution: o.quality.resolution,
       frameRate: o.quality.frameRate

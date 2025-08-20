@@ -1,4 +1,4 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 778333, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => E
@@ -33,23 +33,23 @@ function E(e) {
     return null != n.inviter && f.Z.isFriend(null == (e = n.inviter) ? true : e.id)
   }), I = i.useCallback(() => {
     let e = "noop";
-    null != n.inviter && null != m.Z.getDMFromUserId(n.inviter.id) && (e = "transition", a.Z.openPrivateChannel({
+    null != n.inviter && null != m.Z.getDMFromUserId(n.inviter.id) && (e = "transition", o.Z.openPrivateChannel({
       recipientIds: [n.inviter.id]
-    })), (0, o.r$)({
+    })), (0, a.r$)({
       invite: n,
       action: e,
       inviter_id: E.author.id,
       invite_message_id: E.id
     }, x)
   }, [n, E, x]), S = i.useCallback(() => {
-    (0, o.r$)({
+    (0, a.r$)({
       invite: n,
       action: "accept",
       inviter_id: E.author.id,
       invite_message_id: E.id
     }, x);
     let e = C("Invite Button Embed");
-    o.ZP.acceptInviteAndTransitionToInviteChannel({
+    a.ZP.acceptInviteAndTransitionToInviteChannel({
       inviteKey: n.code,
       context: e
     })

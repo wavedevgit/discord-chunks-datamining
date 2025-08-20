@@ -1,4 +1,4 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 675297, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   H: () => C
@@ -40,7 +40,7 @@ function C(e) {
     return s.Z.getRole(n, null != (e = null == t ? true : t.role_id) ? e : E.lds)
   }), A = (0, l.U)(t, 600), w = (0, g.C)(t), Z = (0, d.SO)(P), {
     shouldHideGuildPurchaseEntryPoints: R
-  } = (0, o.uP)(n), D = (0, g.k)(t);
+  } = (0, a.uP)(n), D = (0, g.k)(t);
   if (null == P || R) return null;
   let L = () => (0, h.e)({
       guildId: n,
@@ -62,7 +62,7 @@ function C(e) {
       onUnpublishProduct: () => {},
       onDeleteProduct: () => {},
       onReportProduct: () => {
-        (0, a.x)({
+        (0, o.x)({
           listing: t
         })
       },

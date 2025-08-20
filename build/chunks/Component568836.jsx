@@ -1,4 +1,4 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 568836, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   $G: () => d,
@@ -44,10 +44,10 @@ function c(e, t) {
   }), e
 }
 let u = 660,
-  d = e => (0, r.jsx)(a.Z, c(s({}, e), {
+  d = e => (0, r.jsx)(o.Z, c(s({}, e), {
     className: l()(e.className, {
-      [o.embedVertical]: !e.isHorizontal,
-      [o.embedHorizontal]: e.isHorizontal
+      [a.embedVertical]: !e.isHorizontal,
+      [a.embedHorizontal]: e.isHorizontal
     })
   })),
   p = e => {
@@ -56,19 +56,19 @@ let u = 660,
     } = e;
     return (0, r.jsx)(d, c(s({}, e), {
       media: () => (0, r.jsx)("div", {
-        className: o.loadingDescription,
+        className: a.loadingDescription,
         children: (0, r.jsx)("div", {
-          className: l()(o.loadingBackgroundWrapper, {
-            [o.loadingBackgroundWrapperHorizontal]: t
+          className: l()(a.loadingBackgroundWrapper, {
+            [a.loadingBackgroundWrapperHorizontal]: t
           }),
           children: (0, r.jsx)("div", {
-            className: o.loadingBackground
+            className: a.loadingBackground
           })
         })
       }),
       title: () => (0, r.jsx)("div", {
-        className: l()(o.loadingImage, {
-          [o.loadingImageHorizontal]: t
+        className: l()(a.loadingImage, {
+          [a.loadingImageHorizontal]: t
         })
       })
     }))

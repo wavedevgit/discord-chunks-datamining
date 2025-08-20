@@ -33,18 +33,18 @@ let _ = e => {
       handleCardVisibilityChange: x
     } = (0, g.E)(S, "home", "marketing featured block"),
     j = (0, f.YG)(O, C),
-    P = l.useRef(null),
-    T = S === o.T.NAMEPLATES_V3,
-    L = T ? "NAMEPLATES VOL.3" : null,
+    T = l.useRef(null),
+    P = S === o.T.NAMEPLATES_V3,
+    L = P ? "NAMEPLATES VOL.3" : null,
     k = null == C ? true : C.bodyText,
     I = (0, d.sp)();
   return (0, n.jsx)(s.$, {
-    innerRef: P,
+    innerRef: T,
     onChange: x,
     threshold: 0,
     children: (0, n.jsxs)(c.P3F, {
       className: h.featuredBlock,
-      innerRef: P,
+      innerRef: T,
       style: {
         backgroundImage: "url(".concat(j, ")")
       },
@@ -69,7 +69,7 @@ let _ = e => {
         children: [null != L && (0, n.jsx)(c.X6q, {
           lineClamp: 2,
           className: i()(h.featuredBlockTitleText, {
-            [h.featuredBlockTitleTextNameplate]: T
+            [h.featuredBlockTitleTextNameplate]: P
           }),
           style: {
             color: null != (a = null == C ? true : C.bannerTextColor) ? a : "white"

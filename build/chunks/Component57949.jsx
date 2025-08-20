@@ -1,4 +1,4 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 57949, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   z: () => u
@@ -72,7 +72,7 @@ function u(e) {
         is_gift: false,
         sku_id: f,
         location_stack: Array.isArray(d) ? d : [d]
-      }), (0, a.fw)(), (0, o.p)()
+      }), (0, o.fw)(), (0, a.p)()
     },
     onCloseRequest: c.dG4
   })

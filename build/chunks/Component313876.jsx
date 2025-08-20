@@ -1,4 +1,4 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 313876, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -16,7 +16,7 @@ function c(e) {
   let {
     author: c,
     inviteError: u
-  } = e, d = (0, i.e7)([a.default], () => a.default.getId()) === c.id ? s.intl.string(s.t.C89OLC) : s.intl.string(s.t["YVub5+"]), p = (0, o.l)(null == u ? true : u.code);
+  } = e, d = (0, i.e7)([o.default], () => o.default.getId()) === c.id ? s.intl.string(s.t.C89OLC) : s.intl.string(s.t["YVub5+"]), p = (0, a.l)(null == u ? true : u.code);
   return (0, r.jsxs)(l.Z, {
     children: [(0, r.jsx)(l.Z.Header, {
       text: d

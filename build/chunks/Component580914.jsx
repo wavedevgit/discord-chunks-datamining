@@ -88,7 +88,7 @@ let R = {
       onVisibilityChange: H
     } = e, W = (0, p.O)(e => {
       null == H || H(e)
-    }, .1, null != H), V = (0, u.e7)([h.default], () => h.default.getCurrentUser()), U = (0, L.Z)(), z = (0, v.sp)(), {
+    }, .1, null != H), U = (0, u.e7)([h.default], () => h.default.getCurrentUser()), V = (0, L.Z)(), z = (0, v.sp)(), {
       showBetaTag: G
     } = b.Z.useExperiment({
       location: "collectible_hero_block"
@@ -120,10 +120,10 @@ let R = {
       heroLogo: Q,
       heroBannerStatic: J,
       heroBannerAnimated: $
-    } = (0, T.hr)(q), ee = null == K ? true : K.heroBanner, et = null != (t = null == Y ? true : Y.responsive) && t, er = null == Y ? true : Y.backgroundStyle, en = l.useMemo(() => U(q.rankedSkuIds), [r, U, q.rankedSkuIds]), el = (0, y.a)()(en), ea = (0, S.l)(el).slice(0, 4), ei = (0, k.St)(ea), eo = F === N.AW.ORBS ? w.intl.string(w.t["1CdL8f"]) : w.intl.formatToPlainString(w.t.wvKYCg, {
+    } = (0, P.hr)(q), ee = null == K ? true : K.heroBanner, et = null != (t = null == Y ? true : Y.responsive) && t, er = null == Y ? true : Y.backgroundStyle, en = l.useMemo(() => V(q.rankedSkuIds), [r, V, q.rankedSkuIds]), el = (0, y.a)()(en), ea = (0, S.l)(el).slice(0, 4), ei = (0, k.St)(ea), eo = F === N.AW.ORBS ? w.intl.string(w.t["1CdL8f"]) : w.intl.formatToPlainString(w.t.wvKYCg, {
       category_name: q.name
     }), es = (0, E.FF)("CollectiblesContent");
-    return null != V && (r || q !== R) ? (0, n.jsxs)("div", {
+    return null != U && (r || q !== R) ? (0, n.jsxs)("div", {
       ref: W,
       className: B.heroBlock,
       children: [(0, n.jsxs)("div", {
@@ -212,10 +212,10 @@ let R = {
                   pageSection: "top 4",
                   categoryPosition: 0
                 },
-                children: (0, n.jsx)(P.Z, {
+                children: (0, n.jsx)(T.Z, {
                   product: e,
                   category: r,
-                  user: V,
+                  user: U,
                   tab: F,
                   _isInHeroBlock: true
                 }, e.skuId)

@@ -1,4 +1,4 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 29338, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -17,12 +17,12 @@ function u(e) {
     message: t,
     compact: n,
     usernameHook: u
-  } = e, d = (0, a.ZP)(t), p = u(d), m = s.intl.format(s.t["Rv+TSE"], {
+  } = e, d = (0, o.ZP)(t), p = u(d), m = s.intl.format(s.t["Rv+TSE"], {
     username: d.nick,
     usernameHook: p,
     topic: t.content
   });
-  return (0, r.jsx)(o.Z, {
+  return (0, r.jsx)(a.Z, {
     className: c.stageSystemMessage,
     iconNode: (0, r.jsx)(l.ewx, {
       size: "md",

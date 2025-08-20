@@ -1,4 +1,4 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 230171, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   O: () => R,
@@ -41,7 +41,7 @@ function R(e) {
     app: t,
     embedUrl: n,
     linkType: l,
-    activityCustomId: a,
+    activityCustomId: o,
     activityReferrerId: s,
     onView: _
   } = e, {
@@ -55,7 +55,7 @@ function R(e) {
     staticBannerSrc: x,
     videoBannerSrc: S,
     bannerAspectRatio: Z
-  } = (0, N.E)(t), R = (0, o.e7)([E.default], () => null != s ? s : E.default.getId(), [s]), {
+  } = (0, N.E)(t), R = (0, a.e7)([E.default], () => null != s ? s : E.default.getId(), [s]), {
     analyticsLocations: M
   } = (0, p.ZP)(d.Z.APP_MESSAGE_EMBED), {
     currentChannelId: k,
@@ -79,7 +79,7 @@ function R(e) {
           applicationId: t.id,
           isStart: null == U,
           embeddedActivitiesManager: G,
-          customId: a,
+          customId: o,
           referrerId: R,
           analyticsLocations: M
         })
@@ -93,12 +93,12 @@ function R(e) {
           appId: t.id,
           botId: C,
           analyticsLocations: M,
-          customId: a,
+          customId: o,
           referrerId: R
         })
       }
     })) : null != Y && e.push(Y), e
-  }, [z, V, U, F, k, t.id, G, a, R, M, v, Y, C]), X = v ? (0, r.jsx)(L, {
+  }, [z, V, U, F, k, t.id, G, o, R, M, v, Y, C]), X = v ? (0, r.jsx)(L, {
     app: t
   }) : (0, r.jsx)(D, {
     app: t
@@ -118,21 +118,21 @@ function R(e) {
       id: t.id,
       linkType: l,
       referrerId: R,
-      activityCustomId: a,
+      activityCustomId: o,
       onView: _
     }
   })
 }
 
 function D(e) {
-  var t, n, a;
+  var t, n, o;
   let {
     app: c
   } = e, u = (0, x.Eb)({
     customInstallUrl: c.customInstallUrl,
     installParams: c.installParams,
     integrationTypesConfig: c.integrationTypesConfig
-  }) && null != c.integrationTypesConfig && l.Y.GUILD_INSTALL in c.integrationTypesConfig, d = (0, o.e7)([b.default], () => b.default.locale, []), p = i.useMemo(() => {
+  }) && null != c.integrationTypesConfig && l.Y.GUILD_INSTALL in c.integrationTypesConfig, d = (0, a.e7)([b.default], () => b.default.locale, []), p = i.useMemo(() => {
     var e, t;
     if (!u) return null;
     let n = new Intl.NumberFormat(d, {
@@ -143,7 +143,7 @@ function D(e) {
     return 0 === r ? null : w.intl.format(w.t["6IW6Wl"], {
       guildCount: n.format(r)
     })
-  }, [null == (t = c.directoryEntry) ? true : t.guild_count, u, d]), m = null == (a = c.categories) || null == (n = a.at(0)) ? true : n.name;
+  }, [null == (t = c.directoryEntry) ? true : t.guild_count, u, d]), m = null == (o = c.categories) || null == (n = o.at(0)) ? true : n.name;
   return (0, r.jsxs)(r.Fragment, {
     children: [null != m && (0, r.jsx)(s.Text, {
       variant: "text-xs/medium",
@@ -169,10 +169,10 @@ function L(e) {
   } = e, {
     tags: n,
     maxParticipants: l = 0
-  } = t, c = (0, o.e7)([v.Z], () => {
+  } = t, c = (0, a.e7)([v.Z], () => {
     var e;
     return null != (e = v.Z.getGuildId()) ? e : true
-  }, []), u = (0, h.N)(t.id), d = (0, o.Wu)([O.default, C.Z], () => {
+  }, []), u = (0, h.N)(t.id), d = (0, a.Wu)([O.default, C.Z], () => {
     let e = [];
     for (let [t, n] of u.entries()) {
       if (t >= 5) break;
@@ -189,7 +189,7 @@ function L(e) {
         count: d.length
       })
     });
-    if (u.some(e => (0, _.ig)(e) === a.o.GLOBAL)) return (0, r.jsxs)(r.Fragment, {
+    if (u.some(e => (0, _.ig)(e) === o.o.GLOBAL)) return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(s.YqE, {
         size: "xxs",
         color: "currentColor"

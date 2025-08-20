@@ -1,4 +1,4 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 413189, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -42,7 +42,7 @@ function x(e) {
       location: "ChatWallpaperSetSystemMessage"
     }).lightMode,
     D = (0, c.ZP)(P),
-    L = (0, o.wjy)((0, s.ZP)()),
+    L = (0, a.wjy)((0, s.ZP)()),
     {
       chatWallpaper: M,
       isUpdatingChatWallpaperFlag: k,
@@ -75,7 +75,7 @@ function x(e) {
     learnMoreLink: m.Z.getArticleURL(C.BhN.DM_WALLPAPERS)
   }) : S = O.intl.string(O.t["6JSOu7"]), (null == F ? true : F.isViewable) && B && !H && (T = (0, r.jsx)("div", {
     className: y.action,
-    children: (0, r.jsx)(a.z, {
+    children: (0, r.jsx)(o.z, {
       variant: "primary",
       text: O.intl.string(z ? O.t.o6850d : O.t["/ubFp6"]),
       loading: k,
@@ -83,7 +83,7 @@ function x(e) {
         h.X(N, w, {
           shouldClear: !z,
           onError: () => {
-            (0, o.showToast)((0, o.createToast)(O.intl.string(O.t.F8FvU1), o.ToastType.FAILURE))
+            (0, a.showToast)((0, a.createToast)(O.intl.string(O.t.F8FvU1), a.ToastType.FAILURE))
           }
         })
       }

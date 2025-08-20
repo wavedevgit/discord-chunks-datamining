@@ -2,7 +2,7 @@
 /** chunk id: 838819, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.r(exports), require.d(exports, {
-  default: () => M
+  default: () => F
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -27,6 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk223143 = require("./223143.js"),
   Chunk298228 = require("./298228.js"),
   Chunk309956 = require("./309956.js"),
+  Chunk908430 = require("./908430.js"),
   Chunk501431 = require("./501431.js"),
   Chunk98535 = require("./98535.jsx"),
   Chunk426171 = require("./426171.js"),
@@ -39,7 +40,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk420212 = require("./420212.js"),
   Chunk887353 = require("./887353.js"),
   Chunk345213 = require("./345213.js");
-let D = e => {
+let M = e => {
     let {
       children: t,
       shouldAddEventListener: r,
@@ -48,36 +49,36 @@ let D = e => {
     return l.useEffect(() => {
       if (!r || a) return;
       let e = e => {
-        e.key === B.mR.Escape && n()
+        e.key === R.mR.Escape && n()
       };
       return window.addEventListener("keydown", e), () => window.removeEventListener("keydown", e)
     }, [r, a, n]), t
   },
-  M = function(e) {
+  F = function(e) {
     let {
       isFullScreen: t = true,
-      tab: r = A.AW.HOME
+      tab: r = w.AW.HOME
     } = e;
-    (0, m.z)(f.f);
+    (0, m.z)(f.f), (0, j.f)();
     let a = (0, p.Z)((0, o.Z)()),
       c = (0, s.e7)([v.default], () => v.default.getCurrentUser()),
-      B = (0, N.G)("CollectiblesShop"),
+      R = (0, A.G)("CollectiblesShop"),
       {
-        closeIntroToOrbsClaimedCoachmark: M
+        closeIntroToOrbsClaimedCoachmark: F
       } = (0, h.Z)({
         location: "CollectiblesShop"
       });
     l.useEffect(() => () => {
-      M()
-    }, [a, M]);
+      F()
+    }, [a, F]);
     let {
-      onClose: F
-    } = (0, k.Db)(), {
-      currentTab: H,
-      hasFilters: W
-    } = (0, j.S)(), V = l.useMemo(() => r === A.AW.HOME && H && W() ? H : r, [r, H, W]), {
-      categories: U,
-      refreshCategories: z
+      onClose: H
+    } = (0, I.Db)(), {
+      currentTab: W,
+      hasFilters: U
+    } = (0, T.S)(), V = l.useMemo(() => r === w.AW.HOME && W && U() ? W : r, [r, W, U]), {
+      categories: z,
+      refreshCategories: G
     } = (0, y.ZP)({
       logPerf: true
     }, {
@@ -86,86 +87,86 @@ let D = e => {
       isFullScreen: t
     });
     (0, b.D)();
-    let G = (0, S.O)(U),
-      [q, K] = l.useState(),
-      Y = (0, s.e7)([C.Z], () => {
+    let q = (0, S.O)(z),
+      [K, Y] = l.useState(),
+      X = (0, s.e7)([C.Z], () => {
         var e;
-        return null == (e = C.Z.getCategory(q)) ? true : e.name
+        return null == (e = C.Z.getCategory(K)) ? true : e.name
       }),
-      [X, Q] = l.useState();
-    (0, T.Kp)();
-    let J = l.useCallback((e, t) => {
-        Q(e), K(t)
+      [Q, J] = l.useState();
+    (0, L.Kp)();
+    let $ = l.useCallback((e, t) => {
+        J(e), Y(t)
       }, []),
       {
-        selectedTab: $,
-        transitionState: ee,
-        transitionToTab: et
+        selectedTab: ee,
+        transitionState: et,
+        transitionToTab: er
       } = (0, x.B)(V, t);
-    (0, E.q3)(a, $, Y, ee, X), (0, E.EB)($, c);
+    (0, E.q3)(a, ee, X, et, Q), (0, E.EB)(ee, c);
     let {
-      dismissShopButtonDC: er
-    } = (0, I.Z)();
+      dismissShopButtonDC: en
+    } = (0, N.Z)();
     l.useEffect(() => {
-      er()
-    }, [er]), l.useEffect(() => {
-      t || (0, d.Y)(w.Z5c.COLLECTIBLES_SHOP)
+      en()
+    }, [en]), l.useEffect(() => {
+      t || (0, d.Y)(B.Z5c.COLLECTIBLES_SHOP)
     }, [t]);
-    let en = (0, s.e7)([_.Z], () => _.Z.getLayers().includes(w.S9g.COLLECTIBLES_SHOP)),
-      el = l.useRef(null),
-      ea = l.useRef(null);
-    (0, u.Tbt)(el);
+    let el = (0, s.e7)([_.Z], () => _.Z.getLayers().includes(B.S9g.COLLECTIBLES_SHOP)),
+      ea = l.useRef(null),
+      ei = l.useRef(null);
+    (0, u.Tbt)(ea);
     let {
-      setFullScreenOpen: ei,
-      fullScreenOpen: eo
-    } = (0, j.S)();
+      setFullScreenOpen: eo,
+      fullScreenOpen: es
+    } = (0, T.S)();
     l.useEffect(() => {
-      if (t) return ei(true), () => ei(false);
+      if (t) return eo(true), () => eo(false);
       if (!t) {
         var e;
-        null == (e = ea.current) || e.focus()
+        null == (e = ei.current) || e.focus()
       }
-    }, [t, ei]);
+    }, [t, eo]);
     let {
-      analyticsLocations: es
-    } = (0, E.MV)($);
-    return eo && !t ? null : (0, n.jsx)(g.Gt, {
-      value: es,
+      analyticsLocations: ec
+    } = (0, E.MV)(ee);
+    return es && !t ? null : (0, n.jsx)(g.Gt, {
+      value: ec,
       children: (0, n.jsx)(O.k0, {
         newValue: {
           sessionId: a,
-          pageCategory: Y,
-          pageSize: A.kN
+          pageCategory: X,
+          pageSize: w.kN
         },
-        children: (0, n.jsx)(D, {
-          onClose: F,
-          shouldAddEventListener: t && !en,
+        children: (0, n.jsx)(M, {
+          onClose: H,
+          shouldAddEventListener: t && !el,
           children: (0, n.jsxs)("div", {
-            className: i()(R.shop, {
-              [Z.shopTakeOver]: B
+            className: i()(Z.shop, {
+              [D.shopTakeOver]: R
             }),
-            ref: t ? el : ea,
+            ref: t ? ea : ei,
             tabIndex: false,
-            children: [(0, n.jsx)(L.I, {
+            children: [(0, n.jsx)(k.I, {
               isFullScreen: t,
-              isLayer: en,
-              onClose: F,
-              handleTransition: et,
-              selectedTab: $
+              isLayer: el,
+              onClose: H,
+              handleTransition: er,
+              selectedTab: ee
             }), (0, n.jsx)("div", {
-              className: i()(R.shopViewWrapper, {
-                [R.visible]: ee === A.f7.VISIBLE,
-                [R.in]: ee === A.f7.IN,
-                [R.out]: ee === A.f7.OUT
+              className: i()(Z.shopViewWrapper, {
+                [Z.visible]: et === w.f7.VISIBLE,
+                [Z.in]: et === w.f7.IN,
+                [Z.out]: et === w.f7.OUT
               }),
               children: (0, n.jsx)(P.Z, {
-                tab: $,
+                tab: ee,
                 isFullScreen: t,
-                refreshCategories: z,
-                transitionToTab: et,
-                transitionState: ee,
-                sortedCategories: G,
-                updateAnalyticsState: J
+                refreshCategories: G,
+                transitionToTab: er,
+                transitionState: et,
+                sortedCategories: q,
+                updateAnalyticsState: $
               })
             })]
           })

@@ -1,22 +1,22 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 438075, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Q: () => o,
-  Z: () => a
+  Q: () => a,
+  Z: () => o
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk275344 = require("./275344.jsx"),
   Chunk938353 = require("./938353.jsx");
 
-function a(e) {
+function o(e) {
   let {
     channelMessageProps: {
       message: t,
       channel: n,
-      compact: a = false
+      compact: o = false
     },
-    hasSpoilerEmbeds: o,
+    hasSpoilerEmbeds: a,
     handleContextMenu: s,
     isInteracting: c,
     isAutomodBlockedMessage: u,
@@ -35,8 +35,8 @@ function a(e) {
       isInteracting: c,
       message: t,
       channel: n,
-      compact: a,
-      hasSpoilerEmbeds: o,
+      compact: o,
+      hasSpoilerEmbeds: a,
       isMessageSnapshot: d,
       onMediaItemContextMenu: s,
       renderThreadAccessory: p,
@@ -48,12 +48,12 @@ function a(e) {
   })
 }
 
-function o(e, t) {
+function a(e, t) {
   let {
     message: n,
     channel: i,
-    compact: a = false,
-    renderThreadAccessory: o,
+    compact: o = false,
+    renderThreadAccessory: a,
     disableReactionCreates: s,
     disableReactionUpdates: c,
     isSearchResult: u
@@ -61,9 +61,9 @@ function o(e, t) {
   return (0, r.jsx)(l.$p, {
     message: n,
     channel: i,
-    compact: a,
+    compact: o,
     hasSpoilerEmbeds: t,
-    renderThreadAccessory: o,
+    renderThreadAccessory: a,
     disableReactionCreates: s,
     disableReactionUpdates: c,
     isSearchResult: u

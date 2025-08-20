@@ -1,4 +1,4 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 576799, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -25,10 +25,10 @@ function f(e) {
   } = (0, l.cj)([d.Z], () => ({
     isBlocked: d.Z.isBlockedForMessage(t),
     isIgnored: d.Z.isIgnoredForMessage(t)
-  }), [t]), _ = (0, o.p)(), h = i.useMemo(() => ({
+  }), [t]), _ = (0, a.p)(), h = i.useMemo(() => ({
     [n.guild_id]: [t.author.id]
   }), [n.guild_id, t.author.id]);
-  (0, a.$)(h);
+  (0, o.$)(h);
   let b = i.useMemo(() => null != t.content && "" !== t.content ? (0, s.ZP)(t, {
     formatInline: true,
     shouldFilterKeywords: _
@@ -48,8 +48,8 @@ function f(e) {
       children: function(e, t, n, i) {
         let {
           contentPlaceholder: l,
-          renderedContent: a,
-          leadingIcon: o,
+          renderedContent: o,
+          leadingIcon: a,
           trailingIcon: s
         } = (0, c.f)(e, t, n, i, m.threadMessageAccessoryContent, {
           trailingIconClass: m.threadMessageAccessoryContentTrailingIcon,
@@ -57,7 +57,7 @@ function f(e) {
           iconSize: p.WW
         });
         return (0, r.jsxs)(r.Fragment, {
-          children: [o, null != a ? a : (0, r.jsx)("span", {
+          children: [a, null != o ? o : (0, r.jsx)("span", {
             className: m.threadMessageAccessoryPlaceholder,
             children: l
           }), s]

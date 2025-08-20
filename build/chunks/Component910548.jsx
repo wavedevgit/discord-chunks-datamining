@@ -1,4 +1,4 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 910548, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   ZP: () => U
@@ -6,7 +6,7 @@ require.d(exports, {
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk238651 = require("./238651.js"),
   Chunk772848 = require("./772848.js"),
   Chunk468194 = require("./468194.js"),
@@ -159,7 +159,7 @@ function k(e) {
     onAnimationComplete: t,
     onClick: n,
     position: r,
-    size: a
+    size: o
   } = e, u = l.useRef(null), [d, m] = l.useState(null), [g] = l.useState(null != r ? r : function() {
     switch (Math.floor(Math.random() * Object.keys(S).length)) {
       case 0:
@@ -212,7 +212,7 @@ function k(e) {
           x: r.left + i.x,
           y: r.top + i.y
         }
-      }(u.current, g, a);
+      }(u.current, g, o);
       _(t.x, t.y, {
         velocity: {
           type: "static-random",
@@ -227,7 +227,7 @@ function k(e) {
         }
       })
     }
-  }, [_, g, d, a]), l.useEffect(() => {
+  }, [_, g, d, o]), l.useEffect(() => {
     if (O && "leaf_fall" === d) {
       let e = A[g].leafRotationDirection;
       C.createConfetti({
@@ -287,7 +287,7 @@ function k(e) {
       spriteHeight: 45
     }), (0, i.jsx)(p.P3F, {
       onClick: n,
-      className: o()(y.easterEggAnimationClickTarget, {
+      className: a()(y.easterEggAnimationClickTarget, {
         [y.easterEggAnimationClickTargetTopLeft]: "TOP_LEFT" === g,
         [y.easterEggAnimationClickTargetTopRight]: "TOP_RIGHT" === g,
         [y.easterEggAnimationClickTargetBottomLeft]: "BOTTOM_LEFT" === g,
@@ -295,7 +295,7 @@ function k(e) {
       }),
       children: (0, i.jsx)(p.kci, {
         animationRef: k,
-        className: o()(y.easterEggAnimation, {
+        className: a()(y.easterEggAnimation, {
           [y.easterEggAnimationHideLeaf]: x
         }),
         nextScene: v,
@@ -313,8 +313,8 @@ function U(e) {
   let t, {
       message: n,
       compact: r,
-      guild: a,
-      usernameHook: o,
+      guild: o,
+      usernameHook: a,
       onClickMessage: s
     } = e,
     c = function(e) {
@@ -340,8 +340,8 @@ function U(e) {
     } = l.useContext(p.Sfi),
     P = (0, E.ZP)(n),
     N = P.nick,
-    A = o(P);
-  t = null == c || null == a ? u > 1 ? O.intl.format(O.t.yfC9dn, {
+    A = a(P);
+  t = null == c || null == o ? u > 1 ? O.intl.format(O.t.yfC9dn, {
     username: N,
     usernameHook: A,
     numSubscriptions: u
@@ -352,12 +352,12 @@ function U(e) {
     username: N,
     usernameHook: A,
     numSubscriptions: u,
-    guildName: a.name,
+    guildName: o.name,
     newTierName: (0, b.nW)(c)
   }) : O.intl.format(O.t.cUfTTE, {
     username: N,
     usernameHook: A,
-    guildName: a.name,
+    guildName: o.name,
     newTierName: (0, b.nW)(c)
   });
   let Z = l.useCallback(() => {

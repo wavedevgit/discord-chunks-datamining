@@ -1,4 +1,4 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 687755, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => s
@@ -14,10 +14,10 @@ let s = e => {
     className: t
   } = e;
   return (0, r.jsx)("div", {
-    className: l()(o.tag, t),
+    className: l()(a.tag, t),
     children: (0, r.jsx)("span", {
-      className: o.text,
-      children: a.intl.string(a.t["14lP0d"])
+      className: a.text,
+      children: o.intl.string(o.t["14lP0d"])
     })
   })
 }

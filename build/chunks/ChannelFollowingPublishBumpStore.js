@@ -1,4 +1,4 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 212342, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => E
@@ -39,8 +39,8 @@ let E = new b(Chunk570140.Z, {
     } = e;
     if (i || _.has(n)) returnfalse;
     let l = c.Z.getChannel(n),
-      a = d.default.getCurrentUser();
-    if (!(null != l && l.type === f.d4z.GUILD_ANNOUNCEMENT && (0, m.Z)(r) && (null != a && (null == (t = r.author) ? true : t.id) === a.id ? u.Z.can(f.Plq.SEND_MESSAGES, l) : u.Z.can(f.Plq.MANAGE_MESSAGES, l)) && !p.yE(Number(r.flags), f.iLy.CROSSPOSTED))) returnfalse;
+      o = d.default.getCurrentUser();
+    if (!(null != l && l.type === f.d4z.GUILD_ANNOUNCEMENT && (0, m.Z)(r) && (null != o && (null == (t = r.author) ? true : t.id) === o.id ? u.Z.can(f.Plq.SEND_MESSAGES, l) : u.Z.can(f.Plq.MANAGE_MESSAGES, l)) && !p.yE(Number(r.flags), f.iLy.CROSSPOSTED))) returnfalse;
     h.add(r.id)
   },
   MESSAGE_UPDATE: function(e) {
@@ -62,6 +62,6 @@ let E = new b(Chunk570140.Z, {
     let {
       channelId: t
     } = e;
-    _.add(t), a.K.set(g, _), h.clear()
+    _.add(t), o.K.set(g, _), h.clear()
   }
 })

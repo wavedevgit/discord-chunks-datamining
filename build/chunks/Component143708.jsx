@@ -1,4 +1,4 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 143708, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -32,7 +32,7 @@ function _(e) {
       if (null == e) returnfalse;
       if (e.isPrivate()) returntrue;
       if (e.isThread()) {
-        let t = (0, o.xl)(e),
+        let t = (0, a.xl)(e),
           n = u.Z.can(m.Plq.SEND_MESSAGES_IN_THREADS, e);
         return !t && n
       }
@@ -40,7 +40,7 @@ function _(e) {
     });
   return O ? (t = f.intl.string(f.t["F/OLvL"]), _ = f.intl.string(f.t.C89OLC)) : (_ = f.intl.string(f.t["YVub5+"]), b ? t = f.intl.string(f.t["57nBt7"]) : null != v && y ? (t = f.intl.formatToPlainString(f.t["9Akp1t"], {
     username: v
-  }), n = (0, r.jsx)(a.Z.Button, {
+  }), n = (0, r.jsx)(o.Z.Button, {
     onClick: function() {
       let {
         id: e
@@ -53,15 +53,15 @@ function _(e) {
       }), null != E && l.Z.startTyping(E)
     },
     children: f.intl.string(f.t.P8tvKC)
-  })) : t = f.intl.string(f.t["SMJr+f"])), (0, r.jsxs)(a.Z, {
-    children: [(0, r.jsx)(a.Z.Header, {
+  })) : t = f.intl.string(f.t["SMJr+f"])), (0, r.jsxs)(o.Z, {
+    children: [(0, r.jsx)(o.Z.Header, {
       text: _
-    }), (0, r.jsxs)(a.Z.Body, {
+    }), (0, r.jsxs)(o.Z.Body, {
       children: [(0, r.jsxs)("div", {
         className: g.headerLine,
-        children: [(0, r.jsx)(a.Z.Icon, {
+        children: [(0, r.jsx)(o.Z.Icon, {
           expired: true
-        }), (0, r.jsx)(a.Z.Info, {
+        }), (0, r.jsx)(o.Z.Info, {
           expired: true,
           title: f.intl.string(f.t["Jhx/ub"]),
           children: t

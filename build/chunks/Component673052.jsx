@@ -1,4 +1,4 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 673052, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -18,7 +18,7 @@ function d(e) {
     message: t,
     channel: n,
     compact: d
-  } = e, p = (0, a.ZP)(t), m = (0, o.l)({
+  } = e, p = (0, o.ZP)(t), m = (0, a.l)({
     user: t.author,
     channelId: n.id,
     guildId: n.guild_id,

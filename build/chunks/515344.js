@@ -1,4 +1,4 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 515344, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   G: () => C,
@@ -26,11 +26,11 @@ function E(e) {
     isDiscoverable: t,
     customInstallUrl: n,
     installParams: r,
-    integrationTypesConfig: a
-  } = e, o = (0, f.Eb)({
+    integrationTypesConfig: o
+  } = e, a = (0, f.Eb)({
     customInstallUrl: n,
     installParams: r,
-    integrationTypesConfig: a
+    integrationTypesConfig: o
   }), s = (0, i.e7)([p.Z], () => {
     var e;
     return null != (e = p.Z.getGuildId()) ? e : true
@@ -42,10 +42,10 @@ function E(e) {
     isDiscoverable: t,
     customInstallUrl: n,
     installParams: r,
-    integrationTypesConfig: a,
+    integrationTypesConfig: o,
     canViewApp: t || g,
     canOpenAppLauncher: g,
-    isInstallable: o,
+    isInstallable: a,
     selectedGuildId: s
   }
 }
@@ -61,8 +61,8 @@ function C(e, t) {
     selectedGuildId: p
   } = E(e);
   return r.useMemo(() => n ? () => {
-    if (null == t || t(), i) return void(0, a.X)(e.id);
-    (0, o.transitionToGlobalDiscovery)({
+    if (null == t || t(), i) return void(0, o.X)(e.id);
+    (0, a.transitionToGlobalDiscovery)({
       tab: h.GlobalDiscoveryTab.APPS,
       applicationId: e.id,
       newSessionState: {

@@ -1,4 +1,4 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 918088, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Tk: () => T,
@@ -48,13 +48,13 @@ function S(e) {
 function T(e, t) {
   var n, r, i, l;
   let {
-    formattedExpirationLabel: a
+    formattedExpirationLabel: o
   } = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {}, {
-    poll: o
+    poll: a
   } = e;
-  if (null == o) return;
+  if (null == a) return;
   let m = e.state === y.yb.SENT,
-    f = m ? null != a ? a : (0, O.H)(o.expiry) : "",
+    f = m ? null != o ? o : (0, O.H)(a.expiry) : "",
     g = null == f && m,
     {
       selectedAnswerIds: _,
@@ -79,7 +79,7 @@ function T(e, t) {
     D = (0, c.b)(Z),
     L = !b && I && !P && m && !R && !D;
   return {
-    poll: o,
+    poll: a,
     canTapAnswers: A,
     canRemoveVote: P && m && !g,
     canShowVoteCounts: N,
@@ -197,13 +197,13 @@ function P(e, t) {
           let r = e.animated;
           if (null == r && null != e.id) {
             var i, l;
-            r = null != (l = null == (i = a.ZP.getCustomEmojiById(e.id)) ? true : i.animated) && l
+            r = null != (l = null == (i = o.ZP.getCustomEmojiById(e.id)) ? true : i.animated) && l
           }
           let s = t && null != r && r;
           return {
             id: null == e.id ? null : "".concat(e.id),
             name: e.name,
-            displayName: null == e.id ? o.ZP.convertSurrogateToName(e.name) : e.name,
+            displayName: null == e.id ? a.ZP.convertSurrogateToName(e.name) : e.name,
             src: null == e.id ? g.ZP.getURL(e.name) : f.ZP.getEmojiURL({
               id: e.id,
               animated: s,

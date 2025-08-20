@@ -29,8 +29,8 @@ function h(e) {
     size: O,
     height: E
   } = (0, m.h)(), {
-    expansionSpring: N,
-    isAnimating: q,
+    expansionSpring: q,
+    isAnimating: N,
     isExpanded: S,
     toggleExpanded: T
   } = (0, m.O)({
@@ -39,15 +39,15 @@ function h(e) {
       quest: t
     })
   }), P = null != E ? E : u.U0;
-  return (0, s.jsx)(l.A, {
+  return (0, r.jsx)(l.A, {
     questOrQuests: t,
     questContent: n,
     questContentPosition: g,
     trackGuildAndChannelMetadata: n === a.jn.QUESTS_EMBED,
     sourceQuestContent: x,
-    children: e => (0, s.jsx)(r.animated.div, {
+    children: e => (0, r.jsx)(s.animated.div, {
       style: {
-        maxHeight: n === a.jn.QUESTS_EMBED ? true : N.to({
+        maxHeight: n === a.jn.QUESTS_EMBED ? true : q.to({
           range: [0, 1],
           output: [u.DJ, P]
         })
@@ -57,29 +57,29 @@ function h(e) {
       onMouseEnter: f,
       onBlur: b,
       onMouseLeave: b,
-      children: (0, s.jsxs)("div", {
+      children: (0, r.jsxs)("div", {
         ref: t => {
           e.current = t, v.current = t
         },
-        children: [(0, s.jsx)(d.Z, {
+        children: [(0, r.jsx)(d.Z, {
           isQuestExpired: y,
           location: n,
           quest: t,
           size: O,
-          expansionSpring: N,
-          isAnimating: q,
+          expansionSpring: q,
+          isAnimating: N,
           isExpanded: S,
           contentPosition: g,
           toggleExpanded: T,
           sourceQuestContent: x
-        }), (0, s.jsx)(c.Z, {
+        }), (0, r.jsx)(c.Z, {
           quest: t,
           isQuestExpired: y,
           location: n,
           size: O,
           isFocused: C,
           isExpanded: S,
-          isAnimating: q,
+          isAnimating: N,
           contentPosition: g,
           sourceQuestContent: x
         })]

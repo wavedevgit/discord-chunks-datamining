@@ -1,28 +1,29 @@
-/** Chunk was on 89035 **/
+/** Chunk was on 86031 **/
 /** chunk id: 960919, original params: e,t,r (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  Z: () => u
+  Z: () => d
 });
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk780384 = require("./780384.js"),
   Chunk410030 = require("./410030.js"),
   Chunk633459 = require("./633459.js");
 let Chunk17702 = require("./17702.js"),
   Chunk647894 = require("./647894.js"),
-  u = e => {
+  d = e => {
     let {
       customSize: t,
       shouldUseThemeColor: r = false,
       loading: a,
-      className: u
-    } = e, p = (0, i.ZP)(), m = r && (0, s.ap)(p) ? d : c;
+      className: d
+    } = e, p = (0, o.ZP)(), b = r && (0, l.ap)(p) ? u : c;
     return (0, n.jsx)("img", {
-      className: o()(l.orbIconSVG, u, {
-        [l.loading]: a
+      className: i()(s.orbIconSVG, d, {
+        [s.loading]: a
       }),
-      src: m,
+      src: b,
       alt: "",
       style: true !== t ? {
         height: t

@@ -44,18 +44,18 @@ function N(e) {
   } = e, B = (0, p.sp)(), R = null != (t = null == B ? true : B.sessionId) ? t : "", {
     noCache: Z,
     includeUnpublished: D
-  } = (0, v.Z)(), M = (0, i.e7)([u.default], () => u.default.getCurrentUser()), F = (0, i.e7)([g.Z], () => g.Z.productsWithVariantsAsGroup), [H, W] = l.useState(1), V = (0, c.Fg)(), U = (0, o.ap)(V), [z, G, q] = l.useMemo(() => {
+  } = (0, v.Z)(), M = (0, i.e7)([u.default], () => u.default.getCurrentUser()), F = (0, i.e7)([g.Z], () => g.Z.productsWithVariantsAsGroup), [H, W] = l.useState(1), U = (0, c.Fg)(), V = (0, o.ap)(U), [z, G, q] = l.useMemo(() => {
     switch (w) {
       case O.AW.AVATAR_DECORATIONS:
-        return [E.intl.string(E.t.dRZYND), U ? P.Z : j.Z, a.Z.AVATAR_DECORATION];
+        return [E.intl.string(E.t.dRZYND), V ? T.Z : j.Z, a.Z.AVATAR_DECORATION];
       case O.AW.PROFILE_EFFECTS:
-        return [E.intl.string(E.t["1cNjt7"]), U ? I.Z : k.Z, a.Z.PROFILE_EFFECT];
+        return [E.intl.string(E.t["1cNjt7"]), V ? I.Z : k.Z, a.Z.PROFILE_EFFECT];
       case O.AW.NAMEPLATES:
-        return [E.intl.string(E.t.V68Fq6), U ? L.Z : T.Z, a.Z.NAMEPLATE];
+        return [E.intl.string(E.t.V68Fq6), V ? L.Z : P.Z, a.Z.NAMEPLATE];
       case O.AW.BUNDLES:
-        return [E.intl.string(E.t.FYFppq), U ? x.Z : S.Z, a.Z.BUNDLE]
+        return [E.intl.string(E.t.FYFppq), V ? x.Z : S.Z, a.Z.BUNDLE]
     }
-  }, [w, U]), K = (0, f.a)(), Y = l.useMemo(() => K(F.filter(e => {
+  }, [w, V]), K = (0, f.a)(), Y = l.useMemo(() => K(F.filter(e => {
     var t;
     return e.type === q || e.type === a.Z.VARIANTS_GROUP && (null == (t = e.variants) ? true : t.some(e => e.type === q)) === true
   })), [F, q, K]), X = (0, m.l)(Y);

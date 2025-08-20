@@ -1,4 +1,4 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 183431, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -15,7 +15,7 @@ function u(e) {
   let {
     channelId: t
   } = e, n = (0, s.l6)(), u = (0, s.L5)(), d = i.useCallback(() => {
-    a.Z.showAgeVerificationGetStartedModal(o.cU.SYSTEM_DM_RETRY_BUTTON), (0, o.Z7)(o.io.RETRY, t)
+    o.Z.showAgeVerificationGetStartedModal(a.cU.SYSTEM_DM_RETRY_BUTTON), (0, a.Z7)(a.io.RETRY, t)
   }, [t]);
   return (0, r.jsx)(l.zxk, {
     variant: "primary",

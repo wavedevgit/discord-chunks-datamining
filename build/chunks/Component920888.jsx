@@ -1,4 +1,4 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 920888, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk215569 = require("./215569.js"),
   Chunk481060 = require("./481060.js"),
   Chunk566006 = require("./566006.js"),
@@ -88,7 +88,7 @@ class v extends Chunk647438.PureComponent {
     let A = v || N;
     return (0, Chunk951288.jsxs)(Chunk215569.W, {
       component: "div",
-      className: a()(P.reactions, C),
+      className: o()(P.reactions, C),
       transitionAppear: !T,
       role: "group",
       transitionLeave: false,
@@ -113,7 +113,7 @@ class v extends Chunk647438.PureComponent {
         onClick: t => {
           t.stopPropagation(), (0, m.op)(E, e)
         },
-        className: a()(P.reaction, O, P.remainingReactions),
+        className: o()(P.reaction, O, P.remainingReactions),
         "aria-label": Chunk388032.intl.string(Chunk388032.t.lfIHs7),
         children: (0, Chunk951288.jsxs)(Chunk481060.Text, {
           className: P.reactionInner,
@@ -127,7 +127,7 @@ class v extends Chunk647438.PureComponent {
         channel: E,
         useChatFontScaling: y,
         isHovered: this.state.isHovered,
-        className: a()({
+        className: o()({
           [P.forceShow]: A
         })
       })]
@@ -147,8 +147,8 @@ let O = e => {
     maxReactions: n,
     hoistReaction: l
   } = e, {
-    combinedReactions: a,
-    remainingReactions: o,
+    combinedReactions: o,
+    remainingReactions: a,
     visibleReactionsCount: s
   } = i.useMemo(() => {
     let e = [],
@@ -158,23 +158,23 @@ let O = e => {
         return n < 0 ? e : [e[n], ...e.slice(0, n), ...e.slice(n + 1)]
       })(t.reactions, l),
       i = null != n && n < r.length ? r.slice(0, n) : r,
-      a = r.length - i.length,
-      o = r.length;
+      o = r.length - i.length,
+      a = r.length;
     return i.forEach(t => {
       t.burst_count > 0 && e.push(E(b({}, t), {
         type: c.O.BURST
       })), t.count > 0 && e.push(E(b({}, t), {
         type: c.O.NORMAL
-      })), null != t.me_vote && --o
+      })), null != t.me_vote && --a
     }), {
       combinedReactions: e,
-      visibleReactionsCount: o,
-      remainingReactions: a
+      visibleReactionsCount: a,
+      remainingReactions: o
     }
   }, [l, n, t.reactions]);
   return (0, r.jsx)(v, E(b({}, e), {
     visibleReactionsCount: s,
-    combinedReactions: a,
-    remainingReactions: o
+    combinedReactions: o,
+    remainingReactions: a
   }))
 }

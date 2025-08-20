@@ -1,7 +1,7 @@
-/** Chunk was on 89035 **/
+/** Chunk was on 36514 **/
 /** chunk id: 475271, original params: e,t,r (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => c
+  default: () => s
 }), require("./415506.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -10,76 +10,76 @@ var Chunk481060 = require("./481060.js"),
   Chunk353250 = require("./353250.js"),
   Chunk234888 = require("./234888.js");
 
-function l(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
-      n = Object.keys(r);
-    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+      c = Object.keys(r);
+    "function" == typeof Object.getOwnPropertySymbols && (c = c.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
       return Object.getOwnPropertyDescriptor(r, e).enumerable
-    }))), n.forEach(function(t) {
-      var n;
-      n = r[t], t in e ? Object.defineProperty(e, t, {
-        value: n,
+    }))), c.forEach(function(t) {
+      var c;
+      c = r[t], t in e ? Object.defineProperty(e, t, {
+        value: c,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = n
+      }) : e[t] = c
     })
   }
   return e
 }
-let c = {
+let s = {
   showCaptcha: function(e, t) {
-    let s = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {},
+    let o = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {},
       {
-        sitekey: c,
-        captchaService: d,
-        options: u
+        sitekey: s,
+        captchaService: u,
+        options: l
       } = e;
     (0, a.ZDy)(async () => {
       let {
         default: e
       } = await r.e("12192").then(r.bind(r, 718742));
-      return r => (0, n.jsx)(e, l({
+      return r => (0, c.jsx)(e, p({
         onCaptchaVerify: (e, r) => t({
           captcha_key: e,
           captcha_rqtoken: r
         }),
-        captchaService: d,
-        sitekey: c
-      }, s, u, r))
+        captchaService: u,
+        sitekey: s
+      }, o, l, r))
     }, {
-      Layer: o.ZP,
+      Layer: n.ZP,
       modalKey: i.A
     })
   },
   showCaptchaAsync: function(e) {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
       {
-        sitekey: c,
-        captchaService: d,
-        captchaSessionId: u,
-        options: p
+        sitekey: s,
+        captchaService: u,
+        captchaSessionId: l,
+        options: h
       } = e;
-    return new Promise((e, m) => {
+    return new Promise((e, f) => {
       (0, a.ZDy)(async () => {
         let {
           default: a
         } = await r.e("12192").then(r.bind(r, 718742));
-        return r => (0, n.jsx)(a, l({
+        return r => (0, c.jsx)(a, p({
           onCaptchaVerify: (t, r) => e({
             captcha_key: t,
             captcha_rqtoken: r,
-            captcha_session_id: u
+            captcha_session_id: l
           }),
-          captchaService: d,
-          sitekey: c,
+          captchaService: u,
+          sitekey: s,
           onReject: e => {
-            e === s.CaptchaError.CANCEL ? m(new s.CaptchaCancelError) : m(Error("cancel captcha"))
+            e === o.CaptchaError.CANCEL ? f(new o.CaptchaCancelError) : f(Error("cancel captcha"))
           }
-        }, t, p, r))
+        }, t, h, r))
       }, {
-        Layer: o.ZP,
+        Layer: n.ZP,
         modalKey: i.A
       })
     })

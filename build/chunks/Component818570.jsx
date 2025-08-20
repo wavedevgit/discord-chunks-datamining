@@ -1,4 +1,4 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 818570, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -19,7 +19,7 @@ function p(e) {
     message: t,
     channel: n
   } = e, p = null != n.guild_id ? s.jXE.TEXT_IN_VOICE : s.jXE.CHANNEL_TEXT_AREA;
-  return (0, r.jsx)(o.Z, {
+  return (0, r.jsx)(a.Z, {
     contentClassName: d.messageContentContainer,
     iconContainerClassName: d.iconContainer,
     iconNode: (0, r.jsx)(l.Dkj, {
@@ -44,7 +44,7 @@ function p(e) {
         })]
       }), (0, r.jsx)("div", {
         className: d.buttonContainer,
-        children: (0, r.jsx)(a.Z, {
+        children: (0, r.jsx)(o.Z, {
           showGradient: true,
           iconClassName: d.premiumIcon,
           subscriptionTier: c.Si.TIER_2,

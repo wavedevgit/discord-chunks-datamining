@@ -1,4 +1,4 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 623488, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -20,18 +20,18 @@ function m(e) {
     hidePurchaseToUnlockBadge: t,
     showDraftBadge: n,
     className: i,
-    children: o
+    children: a
   } = e;
   return (0, r.jsxs)("div", {
     className: l()(p.productThumbnailContainer, i),
-    children: [o, !t && (0, r.jsxs)("div", {
+    children: [a, !t && (0, r.jsxs)("div", {
       className: p.purchaseToUnlockBadge,
-      children: [(0, r.jsx)(a.mBM, {
+      children: [(0, r.jsx)(o.mBM, {
         size: "xs",
         className: p.lockIcon,
         color: "currentColor",
         "aria-hidden": true
-      }), (0, r.jsx)(a.Text, {
+      }), (0, r.jsx)(o.Text, {
         variant: "text-sm/normal",
         color: "always-white",
         className: p.__invalid_unlockText,
@@ -49,11 +49,11 @@ function f(e) {
     onShowFullDescription: t,
     variant: n
   } = e, i = (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(a.Text, {
+    children: [(0, r.jsx)(o.Text, {
       variant: n,
       color: null != t ? "text-link" : "interactive-hover",
       children: d.intl.string(d.t["5fmYjY"])
-    }), (0, r.jsx)(a.ZSh, {
+    }), (0, r.jsx)(o.ZSh, {
       size: "xs",
       color: "currentColor",
       className: p.arrowIcon
@@ -62,7 +62,7 @@ function f(e) {
   return null == t ? (0, r.jsx)("div", {
     className: p.showMoreButton,
     children: i
-  }) : (0, r.jsx)(a.P3F, {
+  }) : (0, r.jsx)(o.P3F, {
     className: l()(p.showMoreButton, p.hasAction),
     onClick: e => {
       e.stopPropagation(), null != t && t()
@@ -92,7 +92,7 @@ function g(e) {
     thumbnailHeight: S = 187,
     descriptionTextVariant: T = "text-sm/normal",
     isDraft: P = false
-  } = e, N = (0, o.hQ)(), A = (0, r.jsxs)(r.Fragment, {
+  } = e, N = (0, a.hQ)(), A = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(m, {
       showDraftBadge: P,
       hidePurchaseToUnlockBadge: true,
@@ -108,13 +108,13 @@ function g(e) {
       className: p.productDetails,
       children: [(0, r.jsxs)("div", {
         className: p.productDetailContent,
-        children: [(0, r.jsx)(a.X6q, {
+        children: [(0, r.jsx)(o.X6q, {
           variant: "text-md/medium",
           color: "header-primary",
           className: p.productName,
           id: N,
           children: n
-        }), (0, r.jsx)(a.Rny, {
+        }), (0, r.jsx)(o.Rny, {
           children: (0, r.jsx)(s.Z, {
             variant: T,
             color: "text-muted",
@@ -125,7 +125,7 @@ function g(e) {
           onShowFullDescription: b,
           variant: T
         }), y || null == g || "" === g.name ? null : (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(a.LZC, {
+          children: [(0, r.jsx)(o.LZC, {
             size: 16
           }), (0, r.jsx)(u.Z, {
             role: g
@@ -134,12 +134,12 @@ function g(e) {
       }), v]
     }), (0, r.jsxs)("div", {
       className: p.purchaseDetails,
-      children: [(0, r.jsx)(a.Text, {
+      children: [(0, r.jsx)(o.Text, {
         variant: "text-md/medium",
         color: "interactive-active",
         className: p.__invalid_productPrice,
         children: null != c ? c : d.intl.string(d.t["4uLhAg"])
-      }), (0, r.jsx)(a.Text, {
+      }), (0, r.jsx)(o.Text, {
         variant: "text-xxs/normal",
         color: "text-default",
         className: p.__invalid_productType,
@@ -162,7 +162,7 @@ function g(e) {
       width: j,
       height: I
     },
-    children: (0, r.jsx)(a.kL8, {
+    children: (0, r.jsx)(o.kL8, {
       tag: "article",
       "aria-label": d.intl.formatToPlainString(d.t["e+TmJS"], {
         productName: n

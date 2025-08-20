@@ -1,4 +1,4 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 50523, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   b: () => v
@@ -38,7 +38,7 @@ function v(e) {
     botUserId: null == v || null == (n = v.bot) ? true : n.id
   }), T = null != v && (0, s.ye)(v), P = null != I && T && S, {
     analyticsLocations: N
-  } = (0, a.ZP)(l.Z.ACTIVITY_CUSTOM_LINK), A = (0, i.e7)([f.Z], () => f.Z.getChannelId()), w = (0, E.KF)(A), Z = (0, i.e7)([h.ZP], () => {
+  } = (0, o.ZP)(l.Z.ACTIVITY_CUSTOM_LINK), A = (0, i.e7)([f.Z], () => f.Z.getChannelId()), w = (0, E.KF)(A), Z = (0, i.e7)([h.ZP], () => {
     if (null == A) return;
     let e = h.ZP.getEmbeddedActivitiesForChannel(A).filter(e => e.applicationId === v.id);
     return e.length > 0 ? e[0].compositeInstanceId : true
@@ -62,7 +62,7 @@ function v(e) {
     label: C.intl.string(C.t.JeK1Wl),
     trackingArea: p.j_.PLAY,
     onClick() {
-      (0, o.W)({
+      (0, a.W)({
         appId: v.id,
         botId: I,
         analyticsLocations: N,

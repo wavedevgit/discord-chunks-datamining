@@ -20,13 +20,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk461671 = require("./461671.js");
 
 function g() {
-  let [e, t] = Chunk647438.useState(false), {
-    saveablePendingWidgets: n,
-    hasSaveablePendingChanges: a
-  } = (0, Chunk442837.cj)([Chunk224724.Z], () => ({
-    saveablePendingWidgets: Chunk224724.Z.getSaveablePendingWidgets(),
-    hasSaveablePendingChanges: Chunk224724.Z.hasSaveablePendingChanges()
-  }));
+  let [e, t] = Chunk647438.useState(false), n = (0, Chunk442837.Wu)([Chunk224724.Z], () => {
+    var e;
+    return null != (e = Chunk224724.Z.getSaveablePendingWidgets()) ? module : []
+  }), a = (0, Chunk442837.e7)([Chunk224724.Z], () => Chunk224724.Z.hasSaveablePendingChanges());
   Chunk647438.useEffect(() => {
     let e = null;
 
@@ -38,12 +35,12 @@ function g() {
     }
   }, []);
   let g = Chunk647438.useCallback(async () => {
-      if (null !== require) try {
+      if (Chunk120356) try {
         await Chunk592183.Z.savePendingWidgets(require)
       } catch (e) {
         (0, Chunk872269.L$)(Chunk228168.qb.WIDGET_SAVE_FAILURE)
       }
-    }, [require]),
+    }, [Chunk120356, require]),
     E = Chunk647438.useCallback(() => {
       Chunk592183.Z.clearPendingWidgets()
     }, []);

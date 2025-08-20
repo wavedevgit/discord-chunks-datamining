@@ -1,4 +1,4 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 533307, original params: e,t,n (module,exports,require) **/
 let r;
 require.d(exports, {
@@ -42,9 +42,9 @@ let m = function(e) {
     try {
       let r = await (0, u.bT)(e, t, n);
       if (null != r.application_id && r.application_id !== p.CL) {
-        let e = o.Z.getApplication(r.application_id);
+        let e = a.Z.getApplication(r.application_id);
         if (null == e) try {
-          await a.ZP.fetchApplication(r.application_id)
+          await o.ZP.fetchApplication(r.application_id)
         } catch (e) {}
       }
       return r.application_id === d.XAJ && await (0, c.jr)(r.sku_id), l.Z.dispatch({

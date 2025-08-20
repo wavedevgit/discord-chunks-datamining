@@ -1,10 +1,10 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 427123, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
 }), require("./388685.js"), require("./539854.js");
 var r, i, Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk433517 = require("./433517.js"),
   Chunk570140 = require("./570140.js"),
@@ -28,7 +28,7 @@ function y() {
       skuId: t,
       applicationId: n
     }
-    of a().values(v)) {
+    of o().values(v)) {
     if (O.includes(exports)) continue;
     let r = Chunk812206.Z.getApplication(require);
     if (null == r) {
@@ -53,7 +53,7 @@ class x extends(r = Chunk442837.ZP.Store) {
     this.waitFor(Chunk594190.ZP, Chunk55563.Z, Chunk580130.Z), O = null != (e = Chunk433517.K.get(E)) ? module : O
   }
   getDetectedOffPlatformPremiumPerks() {
-    return a().values(C)
+    return o().values(C)
   }
 }(i = "displayName") in x ? Object.defineProperty(x, i, {
   value: "DetectedOffPlatformPremiumPerksStore",

@@ -1,4 +1,4 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 779125, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => E
@@ -51,10 +51,10 @@ function E(e) {
             let i = p.Z.getChannel(t);
             if (null != i && (0, d.bw)(i.type)) {
               if (n) {
-                a.Z.updateChatOpen(i.id, true), (0, u.uL)(b.Z5c.CHANNEL(e, t));
+                o.Z.updateChatOpen(i.id, true), (0, u.uL)(b.Z5c.CHANNEL(e, t));
                 return
               }
-              o.default.selectVoiceChannel(i.id);
+              a.default.selectVoiceChannel(i.id);
               return
             }(0, u.uL)(b.Z5c.CHANNEL(e, t))
           }(null == t ? true : t.guild_id, null == t ? true : t.id, v))

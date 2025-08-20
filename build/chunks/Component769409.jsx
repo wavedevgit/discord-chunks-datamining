@@ -1,4 +1,4 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 769409, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   B: () => s
@@ -17,13 +17,13 @@ let s = (e, t) => {
     },
     d = () => {
       c ? l.Z.show({
-        title: o.intl.string(o.t.pvRCSk),
-        body: o.intl.string(o.t.DRi46e),
-        confirmText: o.intl.string(o.t["6GQDFh"]),
+        title: a.intl.string(a.t.pvRCSk),
+        body: a.intl.string(a.t.DRi46e),
+        confirmText: a.intl.string(a.t["6GQDFh"]),
         confirmVariant: "critical-primary",
-        cancelText: o.intl.string(o.t.DmDzZG),
+        cancelText: a.intl.string(a.t.DmDzZG),
         onConfirm: () => (0, i.Mr3)(s),
-        onCancel: a.dG
+        onCancel: o.dG
       }) : (0, i.Mr3)(s)
     };
   (0, i.ZDy)(async () => {

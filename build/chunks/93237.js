@@ -1,4 +1,4 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 93237, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   $q: () => m,
@@ -19,7 +19,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx");
 
 function p(e) {
-  let t = (e - Date.now()) / a.Z.Millis.HOUR;
+  let t = (e - Date.now()) / o.Z.Millis.HOUR;
   return t > 24 ? d.intl.formatToPlainString(d.t["g9s+dH"], {
     numDays: Math.floor(t / 24)
   }) : t >= 1 ? d.intl.formatToPlainString(d.t.k9v339, {
@@ -39,7 +39,7 @@ let m = () => (0, Chunk266454.zu)(Chunk704215.z.REFERRAL_PROGRAM_NITRO_TAB_BADGE
     if (null == t) returnfalse;
     let n = true !== t.referrer_id,
       r = true === t.redeemed_at,
-      i = new Date(o.default.extractTimestamp(t.id)),
+      i = new Date(a.default.extractTimestamp(t.id)),
       l = new Date;
     return n && r && l >= i
   },
@@ -52,6 +52,6 @@ let m = () => (0, Chunk266454.zu)(Chunk704215.z.REFERRAL_PROGRAM_NITRO_TAB_BADGE
       }),
       t = (0, Chunk533525.b)("useIsReferralProgramPopoverShowable", module.cohort === Chunk870041.xI.Control),
       n = (0, Chunk266454.zu)(Chunk704215.z.REFERRAL_PROGRAM_POPOVER),
-      a = (0, Chunk442837.e7)([Chunk276444.Z], () => Chunk276444.Z.getReferralsRemaining());
+      o = (0, Chunk442837.e7)([Chunk276444.Z], () => Chunk276444.Z.getReferralsRemaining());
     return exports && false === require && null !== Chunk70956 && Chunk70956 > 0 && module.cohort !== Chunk870041.xI.Control
   }

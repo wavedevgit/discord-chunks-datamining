@@ -1,4 +1,4 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 600397, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -37,13 +37,13 @@ function f(e) {
     gameName: b.name,
     gameIconHook: e => (0, r.jsxs)("span", {
       className: m.gameContainer,
-      children: [(0, r.jsx)(a.Z, {
+      children: [(0, r.jsx)(o.Z, {
         game: b,
-        size: a.Z.Sizes.XXSMALL,
+        size: o.Z.Sizes.XXSMALL,
         className: m.inlineIcon
       }), " ", e]
     }),
-    helpdeskArticle: o.Z.getArticleURL(d.BhN.SOCIAL_LAYER_CONNECTIONS)
+    helpdeskArticle: a.Z.getArticleURL(d.BhN.SOCIAL_LAYER_CONNECTIONS)
   });
   return (0, r.jsx)(u.Z, {
     iconNode: (0, r.jsx)(i.iWm, {

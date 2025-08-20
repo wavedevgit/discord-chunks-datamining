@@ -1,4 +1,4 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 396252, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
@@ -26,7 +26,7 @@ function h(e) {
     compact: i,
     usernameHook: h,
     channel: b
-  } = e, E = (0, a.e7)([c.Z], () => c.Z.getGuild(b.guild_id)), C = (0, u.ZP)(n), v = h(C), {
+  } = e, E = (0, o.e7)([c.Z], () => c.Z.getGuild(b.guild_id)), C = (0, u.ZP)(n), v = h(C), {
     avatarSrc: O,
     eventHandlers: {
       onMouseEnter: y,
@@ -57,7 +57,7 @@ function h(e) {
           }),
           username: (0, r.jsxs)("div", {
             className: _.spanCorrection,
-            children: [(0, r.jsx)(o.Text, {
+            children: [(0, r.jsx)(a.Text, {
               variant: "text-md/normal",
               color: "text-brand",
               tag: "span",

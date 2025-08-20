@@ -1,4 +1,4 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 866104, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   C: () => T,
@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
-  a = require.n(Chunk512722),
+  o = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk131388 = require("./131388.js"),
@@ -53,7 +53,7 @@ function S(e) {
   let {
     coverImageAsset: t,
     isPreview: n = false
-  } = e, i = f.QK.useSetting(), l = (0, E.n)() && i, [a, o] = (0, m.Z)(t, l), s = l ? (0, r.jsx)(d.Z, {
+  } = e, i = f.QK.useSetting(), l = (0, E.n)() && i, [o, a] = (0, m.Z)(t, l), s = l ? (0, r.jsx)(d.Z, {
     autoPlay: true,
     loop: true,
     className: j.coverImage,
@@ -66,10 +66,10 @@ function S(e) {
     className: j.coverImage
   });
   return (0, r.jsx)("div", {
-    ref: a,
+    ref: o,
     className: j.coverImageContainer,
-    children: null == o || n ? s : (0, r.jsx)("img", {
-      src: o,
+    children: null == a || n ? s : (0, r.jsx)("img", {
+      src: a,
       alt: "",
       className: j.coverImage
     })
@@ -84,10 +84,10 @@ function T(e) {
   } = e, m = l.id, {
     nickname: f,
     nickcolor: h
-  } = (0, o.cj)([g.ZP, _.default], () => {
+  } = (0, a.cj)([g.ZP, _.default], () => {
     var e, t;
     let n = _.default.getCurrentUser();
-    a()(null != n, "user cannot be null");
+    o()(null != n, "user cannot be null");
     let r = g.ZP.getMember(m, n.id);
     return {
       nickname: null != (e = null == r ? true : r.nick) ? e : b.ZP.getName(n),

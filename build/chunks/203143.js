@@ -1,4 +1,4 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 203143, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => H,
@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
   Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk263568 = require("./263568.js"),
   Chunk442837 = require("./442837.js"),
   Chunk780384 = require("./780384.js"),
@@ -115,10 +115,10 @@ function L(e) {
   });
   let l = x.Z.getMessage(t, n);
   if (null == l || null == l.poll || 0 === l.poll.answers.length) return;
-  let a = null != r ? r : String(l.poll.answers[0].answer_id);
+  let o = null != r ? r : String(l.poll.answers[0].answer_id);
   I.A({
     message: l,
-    initialAnswerId: a
+    initialAnswerId: o
   })
 }
 
@@ -155,10 +155,10 @@ async function U(e) {
   } = e, i = k({
     channelId: t,
     messageId: n
-  }), l = a().difference(i, r), o = a().difference(r, i), c = C.default.getId(), d = [...l.map(e => ({
+  }), l = o().difference(i, r), a = o().difference(r, i), c = C.default.getId(), d = [...l.map(e => ({
     type: "MESSAGE_REACTION_REMOVE",
     id: e
-  })), ...o.map(e => ({
+  })), ...a.map(e => ({
     type: "MESSAGE_REACTION_ADD",
     id: e
   }))], p = s.ZP.Emitter.batched(() => {
@@ -200,7 +200,7 @@ async function F(e) {
   });
   let l = (0, T.fU)(t, n);
   i()(null != l, "Must not be able to vote without existing state!");
-  let a = k({
+  let o = k({
     channelId: t,
     messageId: n
   });
@@ -219,14 +219,14 @@ async function F(e) {
       answerIds: e
     }), (0, T.eu)(t, n, () => true), c.uv.announce(0 === e.length ? A.intl.string(A.t["xcvy+/"]) : A.intl.string(A.t.o20GSk))
   } catch (e) {
-    var o, s, u;
+    var a, s, u;
     d.Z.show({
       title: A.intl.string(A.t.iufib2),
-      body: null != (u = null != (s = null == (o = e.getAnyErrorMessage) ? true : o.call(e)) ? s : e.message) ? u : A.intl.string(A.t.eAn6z8)
+      body: null != (u = null != (s = null == (a = e.getAnyErrorMessage) ? true : a.call(e)) ? s : e.message) ? u : A.intl.string(A.t.eAn6z8)
     }), await U({
       channelId: t,
       messageId: n,
-      answerIds: a
+      answerIds: o
     }), (0, T.eu)(t, n, e => {
       if (null != e) return Z(w({}, e), {
         submitting: false,
@@ -293,8 +293,8 @@ async function G(e) {
         (0, T.eu)(t, n, e => {
           var r, i;
           let l = null == e || !e.showResults,
-            a = x.Z.getMessage(t, n),
-            o = null != a ? a.reactions.reduce((e, t) => {
+            o = x.Z.getMessage(t, n),
+            a = null != o ? o.reactions.reduce((e, t) => {
               var n, r;
               return e + (null != (r = null == (n = t.count_details) ? true : n.vote) ? r : 0)
             }, 0) : 0;
@@ -302,7 +302,7 @@ async function G(e) {
             channel_id: t,
             message_id: n,
             show_results: l,
-            votes_count: o
+            votes_count: a
           }), {
             channelId: t,
             selectedAnswerIds: new Set,
@@ -333,8 +333,8 @@ let H = {
     } = e;
     let {
       channelId: l,
-      messageId: a,
-      message: o
+      messageId: o,
+      message: a
     } = function(e) {
       let {
         channelId: t,
@@ -368,14 +368,14 @@ let H = {
       return i
     }(e, ["answerId"])), {
       tapShouldOpenVotersModal: s
-    } = null != (n = (0, P.Tk)(o)) ? n : {};
+    } = null != (n = (0, P.Tk)(a)) ? n : {};
     if (true === s) return void L({
       channelId: l,
-      messageId: a,
+      messageId: o,
       answerId: r
     });
-    let c = null == (t = o.poll) ? true : t.allow_multiselect;
-    (0, T.eu)(l, a, e => {
+    let c = null == (t = a.poll) ? true : t.allow_multiselect;
+    (0, T.eu)(l, o, e => {
       var t, n;
       if (null == e) {
         let e = new Set([r]),
@@ -383,10 +383,10 @@ let H = {
             analyticsSelectedAnswerIds: t,
             selectedTextAnswersCount: i,
             selectedEmojiAnswersCount: s
-          } = R(null == (n = o.poll) ? true : n.answers, e);
+          } = R(null == (n = a.poll) ? true : n.answers, e);
         return g.ZP.trackWithMetadata(N.rMx.POLL_VOTE_SELECTED, {
           channel_id: l,
-          message_id: a,
+          message_id: o,
           selected_answer_ids: t,
           selected_text_answers_count: i,
           selected_emoji_answers_count: s
@@ -410,10 +410,10 @@ let H = {
         analyticsSelectedAnswerIds: u,
         selectedTextAnswersCount: d,
         selectedEmojiAnswersCount: p
-      } = R(null == (t = o.poll) ? true : t.answers, s);
+      } = R(null == (t = a.poll) ? true : t.answers, s);
       return g.ZP.trackWithMetadata(N.rMx.POLL_VOTE_SELECTED, {
         channel_id: l,
-        message_id: a,
+        message_id: o,
         selected_answer_ids: u,
         selected_text_answers_count: d,
         selected_emoji_answers_count: p
@@ -430,7 +430,7 @@ let H = {
       answers: r,
       allowMultiSelect: i,
       duration: l,
-      layout: a,
+      layout: o,
       onClose: s
     } = e, c = j.Z.getUploads(t.id, O.d.Poll), u = r.map(e => {
       var t, n;
@@ -438,7 +438,7 @@ let H = {
         i = {
           attachment_ids: false !== r ? ["".concat(r)] : true
         };
-      a === o.C.DEFAULT && (i.text = null == (n = e.text) ? true : n.trim());
+      o === a.C.DEFAULT && (i.text = null == (n = e.text) ? true : n.trim());
       let l = null == (t = e.image) ? true : t.emoji;
       return null != l && (null != l.id ? i.emoji = {
         id: l.id,
@@ -455,7 +455,7 @@ let H = {
       answers: u,
       allow_multiselect: i,
       duration: l,
-      layout_type: a
+      layout_type: o
     };
     try {
       await m.Z.sendPollMessage(t.id, d, {

@@ -1,4 +1,4 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 741914, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -45,9 +45,9 @@ let u = i().omit(Chunk428595.Z.RULES, ["codeBlock", "heading"]),
     parse: function(e, t, n) {
       var r;
       let i = l.Z.parse(e, t, n),
-        a = Math.min(6, (null != (r = n.initialHeaderLevel) ? r : 3) + i.level);
+        o = Math.min(6, (null != (r = n.initialHeaderLevel) ? r : 3) + i.level);
       return c(s({}, i), {
-        level: a
+        level: o
       })
     }
   }),

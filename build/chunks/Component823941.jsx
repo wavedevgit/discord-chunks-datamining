@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => k,
-  n: () => P
+  n: () => T
 }), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -29,8 +29,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk923732 = require("./923732.js");
-let P = (0, Chunk884697.IC)(90),
-  T = e => {
+let T = (0, Chunk884697.IC)(90),
+  P = e => {
     let {
       category: t
     } = e, {
@@ -110,7 +110,7 @@ function k(e) {
     }), (null == g ? true : g.addLogo) ? (0, n.jsx)("img", {
       className: j.categoryLogo,
       src: (0, _.uV)(t.logo, {
-        size: P
+        size: T
       }),
       alt: t.name,
       style: {
@@ -126,7 +126,7 @@ function k(e) {
         color: t.bannerTextColor
       } : true,
       variant: "text-md/normal",
-      children: t.skuId === o.T.DISXCORE ? (0, n.jsx)(T, {
+      children: t.skuId === o.T.DISXCORE ? (0, n.jsx)(P, {
         category: t
       }) : t.summary
     }), !l && (0, n.jsx)(C.Z, {

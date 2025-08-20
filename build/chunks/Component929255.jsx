@@ -98,8 +98,8 @@ let j = e => {
     tab: m,
     scrollerRef: x,
     sortedCategories: j,
-    setCategoryRef: P
-  } = e, T = (0, d.FF)("CollectiblesBrowse"), L = l.useRef(null), k = (0, p.S)(e => e.hasDefaultFilters()), I = (0, u.sp)(), {
+    setCategoryRef: T
+  } = e, P = (0, d.FF)("CollectiblesBrowse"), L = l.useRef(null), k = (0, p.S)(e => e.hasDefaultFilters()), I = (0, u.sp)(), {
     handlePageChange: N,
     currentPage: A
   } = (0, _.h)({
@@ -135,10 +135,10 @@ let j = e => {
     className: S.inventoryWrapper,
     children: (0, n.jsxs)("div", {
       className: i()(S.inventory, {
-        [S.inventoryFilter]: T,
+        [S.inventoryFilter]: P,
         [S.pageFullscreen]: t
       }),
-      children: [T && (0, n.jsxs)("div", {
+      children: [P && (0, n.jsxs)("div", {
         className: S.controls,
         children: [(0, n.jsx)("div", {
           className: S.controlsLeftSide,
@@ -182,7 +182,7 @@ let j = e => {
             children: (0, n.jsx)(h.Z, {})
           })
         })]
-      }), T && !k ? (0, n.jsx)(v.Z, {
+      }), P && !k ? (0, n.jsx)(v.Z, {
         isFullScreen: t,
         scrollerRef: x,
         tab: m
@@ -197,7 +197,7 @@ let j = e => {
         children: (0, n.jsx)(f.Z, {
           isFullScreen: t,
           sortedCategories: j,
-          setCategoryRef: P,
+          setCategoryRef: T,
           currentPage: A,
           handlePageChange: w
         })

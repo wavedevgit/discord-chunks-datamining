@@ -1,4 +1,4 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 987909, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => v
@@ -60,7 +60,7 @@ function C(e) {
         message: n,
         sticker: r
       } = e;
-      o.Z.sendGreetMessage(t.id, r.id, o.Z.getSendMessageOptionsForReply({
+      a.Z.sendGreetMessage(t.id, r.id, a.Z.getSendMessageOptionsForReply({
         channel: t,
         message: n,
         shouldMention: true,
@@ -112,7 +112,7 @@ function C(e) {
       eventProperties: m
     }))
   }, [n, l, g, p, m]);
-  return (0, r.jsx)(a.zx, {
+  return (0, r.jsx)(o.zx, {
     icon: {
       type: "sticker",
       asset: g,
@@ -129,8 +129,8 @@ function v(e) {
     channel: t,
     message: n,
     buttonLabels: i,
-    stickers: a,
-    event: o,
+    stickers: o,
+    event: a,
     eventProperties: s
   } = e, c = m.default.getCurrentUser(), f = function(e) {
     let {
@@ -143,10 +143,10 @@ function v(e) {
       let i = t.guild_id;
       if (null == r || null == i) returnfalse;
       let l = (0, u.xl)(t),
-        a = p.Z.can(h.Plq.SEND_MESSAGES, t),
-        o = null == (e = d.ZP.getMember(i, r.id)) ? true : e.isPending,
+        o = p.Z.can(h.Plq.SEND_MESSAGES, t),
+        a = null == (e = d.ZP.getMember(i, r.id)) ? true : e.isPending,
         s = n.author.bot;
-      return a && !l && !o && !s
+      return o && !l && !a && !s
     })
   }({
     channel: t,
@@ -160,8 +160,8 @@ function v(e) {
       channel: t,
       message: n,
       buttonLabels: i,
-      stickers: a,
-      event: o,
+      stickers: o,
+      event: a,
       eventProperties: s
     })
   }) : null

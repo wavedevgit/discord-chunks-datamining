@@ -1,5 +1,5 @@
-/** Chunk was on 91173 **/
-/** chunk id: 773276, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 57539 **/
+/** chunk id: 773276, original params: t,e,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
   default: () => m
 });
@@ -15,33 +15,33 @@ var Chunk399606 = require("./399606.js"),
   Chunk160877 = require("./160877.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function m(e) {
+function m(t) {
   let {
-    channelId: t,
+    channelId: e,
     messageId: n,
     transitionState: m,
-    onClose: f
-  } = e, g = (0, i.e7)([c.Z], () => c.Z.getFpMessageInfo(n)), _ = g.attachments.map(e => e.id), h = g.attachments.map(e => e.filename), {
-    reportFalsePositive: b,
-    isReportFalsePositiveLoading: E
+    onClose: I
+  } = t, _ = (0, a.e7)([c.Z], () => c.Z.getFpMessageInfo(n)), v = _.attachments.map(t => t.id), E = _.attachments.map(t => t.filename), {
+    reportFalsePositive: p,
+    isReportFalsePositiveLoading: x
   } = (0, u.$)({
     onSuccess: () => {
-      (0, d.s)(f), a.Z.disableFalsePositiveButton(t, n)
+      (0, d.s)(I), l.Z.disableFalsePositiveButton(e, n)
     },
     onError: () => {
-      (0, l.showToast)((0, l.createToast)(p.intl.string(p.t.R0RpRU), l.ToastType.FAILURE))
+      (0, o.showToast)((0, o.createToast)(f.intl.string(f.t.R0RpRU), o.ToastType.FAILURE))
     },
     report: () => {
-      (0, o.Eq)(t, n, _, h)
+      (0, r.Eq)(e, n, v, E)
     }
   });
-  return g.attachments.length > 0 || f(), (0, r.jsx)(d.$, {
+  return _.attachments.length > 0 || I(), (0, i.jsx)(d.$, {
     messageId: n,
-    channelId: t,
-    isReportFalsePositiveLoading: E,
+    channelId: e,
+    isReportFalsePositiveLoading: x,
     analyticsContext: s.UU.EXPLICIT_MEDIA_SENDER_FALSE_POSITIVE_FLOW,
-    onConfirmPress: b,
+    onConfirmPress: p,
     transitionState: m,
-    onClose: f
+    onClose: I
   })
 }

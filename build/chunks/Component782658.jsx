@@ -1,4 +1,4 @@
-/** Chunk was on 91173 **/
+/** Chunk was on 26434 **/
 /** chunk id: 782658, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => Z
@@ -47,7 +47,7 @@ function Z(e) {
     inviteError: C.Z.getInviteError(t)
   }), [t]), L = null == R;
   i.useEffect(() => {
-    L && a.ZP.resolveInvite(t)
+    L && o.ZP.resolveInvite(t)
   }, [t, L]);
   let M = null != R ? R : {
       state: A.r2o.RESOLVING,
@@ -64,7 +64,7 @@ function Z(e) {
       return m.ZP.getGuildScheduledEvent(null == (e = M.guild_scheduled_event) ? true : e.id)
     }, [M]),
     H = () => {
-      null != M.channel && a.ZP.transitionToInviteSync(M)
+      null != M.channel && o.ZP.transitionToInviteSync(M)
     },
     V = () => {
       if (null == F && (null == R ? true : R.guild) != null) {
@@ -79,7 +79,7 @@ function Z(e) {
           section: A.jXE.GUILD_CAP_UPSELL_MODAL
         },
         analyticsLocations: k
-      }) : a.ZP.acceptInviteAndTransitionToInviteChannel({
+      }) : o.ZP.acceptInviteAndTransitionToInviteChannel({
         inviteKey: t,
         context: Z("Invite Button Embed")
       })
@@ -167,7 +167,7 @@ function Z(e) {
           }))
       }
   }
-  return (0, r.jsx)(o.Z, {
+  return (0, r.jsx)(a.Z, {
     section: A.jXE.INVITE_LINK,
     children: z
   })
