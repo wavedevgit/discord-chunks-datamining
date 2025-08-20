@@ -7,7 +7,6 @@ module.exports = {
   innerContainer: "innerContainer_dfb989",
   glowContainer: "glowContainer_dfb989",
   emoji: "emoji_dfb989",
-  forceAnimate: "forceAnimate_dfb989",
   showEffect: "showEffect_dfb989",
   solid: "solid_dfb989",
   gradient: "gradient_dfb989",

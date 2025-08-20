@@ -138,27 +138,27 @@ function Z(e) {
     displayNameStyles: es
   } = n, el = (0, l.e7)([f.Z], () => f.Z.roleStyle), ec = "username" === el, eu = "dot" === el, ed = (0, I.X$)(), ef = (0, E.j)({
     displayNameStyles: es
-  }), e_ = (0, l.e7)([S.Z], () => null == n.guildId || null == n.colorRoleId ? null : S.Z.getRole(n.guildId, n.colorRoleId)), ep = (0, v.yH)(null != X ? X : ee, e_), eh = (0, R.Z)(a), em = i.useContext(c.d), eg = ep && (0, O.S2)(n), eE = ec && eg;
+  }), e_ = (0, l.e7)([S.Z], () => null == n.guildId || null == n.colorRoleId ? null : S.Z.getRole(n.guildId, n.colorRoleId)), ep = (0, v.yH)(null != X ? X : ee, e_), eh = (0, R.Z)(a), em = i.useContext(c.d), eg = ep && (0, O.S2)(n), eE = ec && eg, eb = (null == h ? true : h.isPrivate()) && null != es;
   i.useEffect(() => {
-    if (null == Q || !eE || null == em) return;
+    if (null == Q || !eE && !eb || null == em) return;
     let {
       setAnimate: e
     } = em;
     return C.S.subscribeKeyed(P.LPv.ANIMATE_CHAT_AVATAR, "".concat(Q, ":").concat(a.author.id), e), () => void C.S.unsubscribeKeyed(P.LPv.ANIMATE_CHAT_AVATAR, "".concat(Q, ":").concat(a.author.id), e)
-  }, [a.author.id, Q, eE, em]);
+  }, [a.author.id, Q, eE, eb, em]);
   let {
-    gradientStyle: eb,
-    gradientClassname: ey
+    gradientStyle: ey,
+    gradientClassname: eO
   } = (0, d.Icv)({
     colorStrings: ea,
     roleStyle: "username",
     includeConvenienceGlow: true,
     animateGradient: null == em ? true : em.animate
-  }), eO = () => {
+  }), ev = () => {
     if (ec) {
       if (eE && null != ea) {
         var e;
-        return M(L({}, eb), {
+        return M(L({}, ey), {
           textDecorationColor: null != (e = null == ea ? true : ea.primaryColor) ? e : true
         })
       }
@@ -166,17 +166,17 @@ function Z(e) {
         color: ei
       } : true
     }
-  }, ev = (0, u.EJ)(en + er), eI = (null == h ? true : h.isPrivate()) && null != es, eT = {
-    className: o()([D.username, eE && ey, ef]),
-    style: eO(),
+  }, eI = (0, u.EJ)(en + er), eT = {
+    className: o()([D.username, eE && eO, ef]),
+    style: ev(),
     onClick: H,
     onContextMenu: Y,
-    children: eI ? (0, r.jsx)(g.Z, {
-      userName: ev,
+    children: eb ? (0, r.jsx)(g.Z, {
+      userName: eI,
       displayNameStyles: es,
-      effectDisplayType: m.F.PLAIN,
+      effectDisplayType: (null == em ? true : em.animate) ? m.F.ANIMATED : m.F.PLAIN,
       loop: true
-    }) : ev,
+    }) : eI,
     "data-text": en + er
   }, eS = i.useMemo(() => j && !Z ? (0, r.jsx)(y.ZP, {
     primaryGuild: n.primaryGuild,

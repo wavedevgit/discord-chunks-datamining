@@ -23,7 +23,7 @@ function g() {
   let [e, t] = Chunk647438.useState(false), n = (0, Chunk442837.Wu)([Chunk224724.Z], () => {
     var e;
     return null != (e = Chunk224724.Z.getSaveablePendingWidgets()) ? module : []
-  }), a = (0, Chunk442837.e7)([Chunk224724.Z], () => Chunk224724.Z.hasSaveablePendingChanges());
+  }), a = (0, Chunk442837.e7)([Chunk224724.Z], () => Chunk224724.Z.hasSaveablePendingChanges()), g = (0, Chunk442837.e7)([Chunk224724.Z], () => Chunk224724.Z.isSubmitting);
   Chunk647438.useEffect(() => {
     let e = null;
 
@@ -34,14 +34,14 @@ function g() {
       Chunk585483.S.unsubscribe(Chunk981631.CkL.EMPHASIZE_NOTICE, require), null !== module && clearTimeout(module)
     }
   }, []);
-  let g = Chunk647438.useCallback(async () => {
+  let E = Chunk647438.useCallback(async () => {
       if (Chunk120356) try {
         await Chunk592183.Z.savePendingWidgets(require)
       } catch (e) {
         (0, Chunk872269.L$)(Chunk228168.qb.WIDGET_SAVE_FAILURE)
       }
     }, [Chunk120356, require]),
-    E = Chunk647438.useCallback(() => {
+    b = Chunk647438.useCallback(() => {
       Chunk592183.Z.clearPendingWidgets()
     }, []);
   return Chunk120356 ? (0, Chunk951288.jsx)("div", {
@@ -66,12 +66,14 @@ function g() {
           size: "sm",
           variant: "secondary",
           text: Chunk388032.intl.string(Chunk388032.t.yBZMsb),
-          onClick: E
+          onClick: b
         }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
           size: "sm",
           variant: "primary",
           text: Chunk388032.intl.string(Chunk388032.t.R3BPHx),
-          onClick: g
+          onClick: E,
+          loading: g,
+          disabled: g
         })]
       })]
     })
