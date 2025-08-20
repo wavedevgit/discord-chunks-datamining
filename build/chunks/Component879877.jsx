@@ -24,10 +24,10 @@ function b(e) {
     disableInteraction: c = false
   } = e, b = null == t ? true : t.filter(e => null != (0, d.zK)(e)), y = (0, l.useRef)(new Map), v = (0, l.useRef)(null), [x, h] = (0, l.useState)(0), [P, E] = (0, l.useState)(false), {
     trackUserProfileAction: w
-  } = (0, o.KZ)(), I = r && !c && (0, s.M8)(i), _ = j(v, b, y, h);
-  if ((0, l.useEffect)(() => (_(), window.addEventListener("resize", _), () => {
-      window.removeEventListener("resize", _)
-    }), [_, null == b ? true : b.join("")]), null == b || 0 === b.length) return I ? (0, n.jsx)("div", {
+  } = (0, o.KZ)(), I = r && !c && (0, s.M8)(i), S = j(v, b, y, h);
+  if ((0, l.useEffect)(() => (S(), window.addEventListener("resize", S), () => {
+      window.removeEventListener("resize", S)
+    }), [S, null == b ? true : b.join("")]), null == b || 0 === b.length) return I ? (0, n.jsx)("div", {
     className: g.tagListContainer,
     children: (0, n.jsx)(u.Z, {
       tags: t,
@@ -35,13 +35,13 @@ function b(e) {
       applicationId: a
     })
   }) : null;
-  let S = P ? b : b.slice(0, b.length - x);
+  let _ = P ? b : b.slice(0, b.length - x);
   return (0, n.jsxs)("div", {
     className: g.tagListContainer,
     children: [(0, n.jsx)("ul", {
       className: g.tagList,
       "aria-label": f.intl.string(f.t.EfjTi4),
-      children: S.map(e => (0, n.jsx)(p, {
+      children: _.map(e => (0, n.jsx)(p, {
         tag: e,
         isCurrentUser: r,
         applicationId: a,

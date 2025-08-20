@@ -34,17 +34,18 @@ function d(e) {
 function f(e) {
   let {
     disabled: t,
-    widgetType: r
-  } = e, [f] = (0, a.ynZ)(), g = l.useRef(null), b = l.useCallback(e => {
+    widgetType: r,
+    widget: f
+  } = e, [g] = (0, a.ynZ)(), b = l.useRef(null), p = l.useMemo(() => new Set(f.games.map(e => e.applicationId)), [f.games]), O = l.useCallback(e => {
     (0, c.ES)(r, {
       applicationId: e
     })
   }, [r]), {
-    options: p,
-    matchSorterOptions: O
-  } = (0, o.h)(), m = l.useCallback(e => {
+    options: m,
+    matchSorterOptions: j
+  } = (0, o.h)(), y = l.useCallback(e => {
     var t, r;
-    return "" === e.trim() ? p : (0, i.Lu)(p, e, (t = d({}, O), r = r = {
+    return "" === e.trim() ? m : (0, i.Lu)(m, e, (t = d({}, j), r = r = {
       threshold: i.Lu.rankings.CONTAINS
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
       var r = Object.keys(e);
@@ -56,9 +57,9 @@ function f(e) {
     })(Object(r)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
     }), t))
-  }, [p, O]);
+  }, [m, j]);
   return (0, n.jsx)(a.yRy, {
-    targetElementRef: g,
+    targetElementRef: b,
     position: "bottom",
     align: "center",
     renderPopout: e => {
@@ -69,15 +70,16 @@ function f(e) {
         className: u.gameSearchCombobox,
         placeholder: s.intl.string(s.t["5h0QOD"]),
         autoFocus: true,
-        value: f,
+        value: g,
         onChange: e => {
-          b(e), t()
+          O(e), t()
         },
         onClose: t,
         multiSelect: false,
         showScrollbar: true,
         maxVisibleItems: 7,
-        children: e => m(e).map(e => (0, n.jsx)(a.lo1, {
+        children: e => y(e).map(e => (0, n.jsx)(a.lo1, {
+          disabled: p.has(e.value),
           value: String(e.value),
           children: (0, n.jsx)(a.lo1.Label, {
             children: (0, n.jsx)(a.Text, {
@@ -90,7 +92,7 @@ function f(e) {
       })
     },
     children: e => (0, n.jsx)("div", {
-      ref: g,
+      ref: b,
       children: (0, n.jsx)(a.zxk, d({
         variant: "secondary",
         size: "sm",

@@ -1,7 +1,7 @@
 /** Chunk was on 27069 **/
 /** chunk id: 778414, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  C: () => _,
+  C: () => S,
   Z: () => E
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -123,7 +123,7 @@ function I(e) {
   })
 }
 
-function _(e) {
+function S(e) {
   return (0, n.jsx)(o.Ttm, {
     className: h.scroller,
     fade: true,

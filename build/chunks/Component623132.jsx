@@ -146,8 +146,8 @@ function P(e) {
     imageSrc: E,
     applicationId: w,
     comment: I,
-    tags: _
-  } = a, S = {
+    tags: S
+  } = a, _ = {
     variant: "heading-sm/semibold",
     color: "text-default"
   }, T = o.default.getCurrentUser(), N = (null == T ? true : T.id) === t.id;
@@ -177,19 +177,19 @@ function P(e) {
       hideTooltip: true
     }), (0, n.jsxs)("div", {
       className: m.details,
-      children: [g ? (0, n.jsx)(l.X6q, y(j({}, S), {
+      children: [g ? (0, n.jsx)(l.X6q, y(j({}, _), {
         children: P
       })) : (0, n.jsx)(v, j({
         applicationId: w,
         userId: t.id,
         gameName: P
-      }, S)), null != I && (0, n.jsx)(x, {
+      }, _)), null != I && (0, n.jsx)(x, {
         text: I,
         user: t,
         guildId: r,
         channelId: i
       }), (0, n.jsx)(d.Z, {
-        tags: _,
+        tags: S,
         isCurrentUser: N,
         widgetType: c,
         applicationId: w,

@@ -66,7 +66,8 @@ function O(e) {
     className: g.actions,
     children: [o && (0, n.jsx)(u.Z, {
       disabled: r,
-      widgetType: t.type
+      widgetType: t.type,
+      widget: t
     }), (0, n.jsx)(d.Z, {
       widget: t,
       userId: i
