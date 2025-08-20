@@ -112,6 +112,7 @@ var r = {
   leadingText: "leadingText__0f084",
   leading: "leading__0f084",
   input: "input__0f084",
-  trailing: "trailing__0f084"
+  trailing: "trailing__0f084",
+  tags: "tags__0f084"
 };
 require.r(module.exports = r)

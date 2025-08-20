@@ -2,69 +2,69 @@
 /** chunk id: 557818, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  J: () => l
+  J: () => c
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
-var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
+  Chunk120356 = require("./120356.js"),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk301133 = require("./301133.js");
-
-function l(e) {
+let c = Chunk647438.forwardRef(function(e, t) {
   let {
-    readOnly: t,
-    disabled: n,
-    fullWidth: i = false,
-    children: l,
-    validation: c,
-    className: u,
-    helperText: d,
-    characterCount: f,
-    characterCountMaxLength: _,
-    successMessage: p
-  } = e, h = null == c ? true : c.hasError, m = (0, r.jsx)("div", {}), g = null != f;
-  return null != p && "" !== p ? (g = true, m = (0, r.jsxs)("div", {
-    className: s.statusMessageContainer,
-    children: [(0, r.jsx)(o.owK, {
+    readOnly: n,
+    disabled: i,
+    fullWidth: a = false,
+    children: c,
+    validation: u,
+    className: d,
+    helperText: f,
+    characterCount: _,
+    characterCountMaxLength: p,
+    successMessage: h
+  } = e, m = null == u ? true : u.hasError, g = (0, r.jsx)("div", {}), E = null != _;
+  return null != h && "" !== h ? (E = true, g = (0, r.jsxs)("div", {
+    className: l.statusMessageContainer,
+    children: [(0, r.jsx)(s.owK, {
       size: "xs",
-      color: o.TVs.colors.TEXT_FEEDBACK_POSITIVE
-    }), (0, r.jsx)(o.Text, {
+      color: s.TVs.colors.TEXT_FEEDBACK_POSITIVE
+    }), (0, r.jsx)(s.Text, {
       variant: "text-xs/normal",
       color: "text-feedback-positive",
-      children: p
+      children: h
     })]
-  })) : h ? (g = true, m = (0, r.jsxs)("div", {
-    className: s.statusMessageContainer,
-    children: [(0, r.jsx)(o.Mgn, {
+  })) : m ? (E = true, g = (0, r.jsxs)("div", {
+    className: l.statusMessageContainer,
+    children: [(0, r.jsx)(s.Mgn, {
       size: "xs",
-      color: o.TVs.colors.TEXT_FEEDBACK_CRITICAL
-    }), (0, r.jsx)(o.Text, {
+      color: s.TVs.colors.TEXT_FEEDBACK_CRITICAL
+    }), (0, r.jsx)(s.Text, {
       variant: "text-xs/normal",
       color: "text-feedback-critical",
-      children: null == c ? true : c.errorMessage
+      children: null == u ? true : u.errorMessage
     })]
-  })) : null != d && (g = true, m = (0, r.jsx)(o.Text, {
+  })) : null != f && (E = true, g = (0, r.jsx)(s.Text, {
     variant: "text-xs/normal",
     color: "text-secondary",
-    children: d
+    children: f
   })), (0, r.jsxs)("div", {
-    className: s.container,
-    "data-full-width": i,
+    className: l.container,
+    "data-full-width": a,
     children: [(0, r.jsx)("div", {
-      className: a()(s.wrapper, u),
-      "data-error": h,
-      "data-read-only": t,
-      "data-disabled": n,
-      children: l
-    }), g && (0, r.jsxs)("div", {
-      className: s.helperTextContainer,
-      children: [m, null != f && (0, r.jsxs)(o.Text, {
+      ref: t,
+      className: o()(l.wrapper, d),
+      "data-error": m,
+      "data-read-only": n,
+      "data-disabled": i,
+      children: c
+    }), E && (0, r.jsxs)("div", {
+      className: l.helperTextContainer,
+      children: [g, null != _ && (0, r.jsxs)(s.Text, {
         variant: "text-xs/normal",
         color: "text-secondary",
         tabularNumbers: true,
-        children: [f, null != _ && " / ".concat(_)]
+        children: [_, null != p && " / ".concat(p)]
       })]
     })]
   })
-}
+})

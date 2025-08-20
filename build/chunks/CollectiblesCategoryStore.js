@@ -3,7 +3,7 @@
 "use strict";
 let r, i, a;
 require.d(exports, {
-  Z: () => W
+  Z: () => z
 }), require("./388685.js");
 var o, Chunk392711 = require("./392711.js"),
   Chunk442837 = require("./442837.js"),
@@ -70,22 +70,28 @@ let m = new Map,
     O = m, v = g, A = y, N = false, R = new Set, r = t, a = Date.now()
   },
   G = e => {
-    if (0 === e.categories.length) O = m, v = g;
-    else if (!(0, s.isEqual)([...O.values()], e.categories) && !e.noOp) {
-      let t = new Map(e.categories.map(e => [e.skuId, e])),
+    Z(e.categories, e.noOp)
+  },
+  B = e => {
+    Z(e.categories.categories, e.noOp)
+  },
+  Z = (e, t) => {
+    if (0 === e.length) O = m, v = g;
+    else if (!(0, s.isEqual)([...O.values()], e) && !t) {
+      let t = new Map(e.map(e => [e.skuId, e])),
         n = new Date;
       O.forEach((e, r) => {
         !t.has(r) && (null == e.unpublishedAt || e.unpublishedAt > n) && t.set(r, e)
       }), S = new Map([...(O = t).values()].map(e => [e.storeListingId, e])), v = new Map((0, _.Cs)(O, true).map(e => [e.skuId, e])), T = [...(I = new Map((0, _.Cs)(O, false).map(e => [e.storeListingId, e]))).values()]
     }
-    Z(e.categories, v), i = Date.now(), N = false, r = true, a = true
+    F(e, v), i = Date.now(), N = false, r = true, a = true
   },
-  B = e => {
+  V = e => {
     if (0 === e.shopHome.categories.length) return;
     let t = new Map(e.shopHome.categories.map(e => [e.skuId, e]));
     S = new Map([...(O = new Map([...O, ...t])).values()].map(e => [e.storeListingId, e])), v = new Map((0, _.Cs)(O, true).map(e => [e.skuId, e]))
   },
-  Z = (e, t) => {
+  F = (e, t) => {
     if (0 === e.length) {
       A = y;
       return
@@ -102,10 +108,10 @@ let m = new Map,
         A = y
     }
   },
-  V = () => {
+  H = () => {
     O = m, v = g, A = y, i = true, N = false, R = new Set, r = true, a = true, D = {}, x = 0
   },
-  F = () => {
+  Y = () => {
     if (!Chunk353926.Z.hasLoadedExperiments) return;
     let {
       giftRecommendationAlgorithm: e
@@ -116,12 +122,12 @@ let m = new Map,
     });
     module !== C && (i = true), C = module
   },
-  H = e => {
+  W = e => {
     x = e.skipNumCategories
   };
-class Y extends(o = Chunk442837.ZP.Store) {
+class K extends(o = Chunk442837.ZP.Store) {
   initialize() {
-    this.syncWith([Chunk706454.default], V), this.syncWith([Chunk353926.Z], F)
+    this.syncWith([Chunk706454.default], H), this.syncWith([Chunk353926.Z], Y)
   }
   get isFetchingCategories() {
     return N
@@ -182,15 +188,16 @@ class Y extends(o = Chunk442837.ZP.Store) {
     return this.getCategory(null == t ? true : t.categorySkuId)
   }
 }
-h(Y, "displayName", "CollectiblesCategoryStore");
-let W = new Y(Chunk570140.Z, {
+h(K, "displayName", "CollectiblesCategoryStore");
+let z = new K(Chunk570140.Z, {
   COLLECTIBLES_CATEGORIES_FETCH: k,
   COLLECTIBLES_CATEGORIES_FETCH_SUCCESS: G,
+  COLLECTIBLES_CATEGORIES_V2_FETCH_SUCCESS: B,
   COLLECTIBLES_CATEGORIES_FETCH_FAILURE: U,
   COLLECTIBLES_PRODUCT_FETCH: L,
   COLLECTIBLES_PRODUCT_FETCH_SUCCESS: M,
   COLLECTIBLES_PRODUCT_FETCH_FAILURE: j,
-  COLLECTIBLES_SHOP_HOME_FETCH_SUCCESS: B,
-  COLLECTIBLES_SKIP_NUM_CATEGORIES: H,
-  LOGOUT: V
+  COLLECTIBLES_SHOP_HOME_FETCH_SUCCESS: V,
+  COLLECTIBLES_SKIP_NUM_CATEGORIES: W,
+  LOGOUT: H
 })
