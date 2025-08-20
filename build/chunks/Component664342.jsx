@@ -162,9 +162,9 @@ function N(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [t.isForumPost() ? null : (0, r.jsx)(j.Z, {
       channel: t
-    }), (0, r.jsx)(v.Z, {
+    }), t.isModeratorReportChannel() ? (0, r.jsx)(v.Z, {
       channel: t
-    }), (0, r.jsx)(Z, {
+    }) : null, (0, r.jsx)(Z, {
       channel: t
     }), (0, r.jsx)(_.ZP.Icon, {
       icon: l.Dio,

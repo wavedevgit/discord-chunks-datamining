@@ -626,7 +626,7 @@ class to extends Chunk647438.PureComponent {
         case e3.d4z.ANNOUNCEMENT_THREAD:
         case e3.d4z.PRIVATE_THREAD:
         case e3.d4z.PUBLIC_THREAD:
-          o.push((0, r.jsx)(eP.Z, {
+          e.isModeratorReportChannel() && o.push((0, r.jsx)(eP.Z, {
             channel: e
           })), null == t || t.isForumLikeChannel() || o.push((0, r.jsx)(eI.Z, {
             channel: t
