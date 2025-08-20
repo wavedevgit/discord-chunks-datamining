@@ -5,7 +5,7 @@ require.d(exports, {
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  r = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk481060 = require("./481060.js"),
   Chunk845442 = require("./845442.js");
@@ -22,7 +22,7 @@ function u(e) {
     onClick: g
   } = e;
   return (0, i.jsxs)(s.P3F, {
-    className: o()(a.baseControlItem, {
+    className: r()(a.baseControlItem, {
       [a.compact]: f
     }),
     onClick: g,
@@ -33,17 +33,17 @@ function u(e) {
       className: a.baseControlItemContent,
       children: [(0, i.jsxs)("div", {
         className: a.baseControlItemTitle,
-        children: [(0, i.jsx)(r.X6, {
+        children: [(0, i.jsx)(o.X6, {
           variant: "heading-md/semibold",
           color: "text-primary",
           children: u
-        }), null != c && (0, i.jsx)(r.X6, {
+        }), null != c && (0, i.jsx)(o.X6, {
           variant: "heading-md/semibold",
           color: "text-secondary",
           className: a.secondaryTitle,
           children: c
         })]
-      }), null != d && (0, i.jsx)(r.xv, {
+      }), null != d && (0, i.jsx)(o.xv, {
         variant: "text-md/normal",
         color: "text-secondary",
         children: d

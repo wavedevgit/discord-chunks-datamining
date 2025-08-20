@@ -11,7 +11,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk131051 = require("./131051.js"),
   Chunk996733 = require("./996733.js"),
   Chunk604227 = require("./604227.jsx"),
-  Chunk92959 = require("./92959.js"),
+  Chunk708827 = require("./708827.js"),
   Chunk920952 = require("./920952.js");
 
 function f() {
@@ -22,7 +22,7 @@ function f() {
     root: exports,
     sidebarHeader: g,
     sidebarFooter: Chunk604227.Z,
-    initialPanel: Chunk92959.Z
+    initialPanel: Chunk708827.Z
   })
 }
 

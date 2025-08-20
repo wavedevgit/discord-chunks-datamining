@@ -13,7 +13,7 @@ function a(e) {
     games: t,
     widgetType: r,
     isGameFetching: a
-  } = e, c = function(e, t) {
+  } = e, o = function(e, t) {
     if (null == e) return {};
     var r, n, l = function(e, t) {
       if (null == e) return {};
@@ -52,7 +52,7 @@ function a(e) {
         game: e,
         widgetType: r,
         loading: a(e.applicationId)
-      }, c))
+      }, o))
     }, "".concat(e.applicationId, "-").concat(t)))
   })
 }

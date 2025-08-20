@@ -1,27 +1,27 @@
 /** Chunk was on 89311 **/
-/** chunk id: 426482, original params: e,t,n (module,exports,require) **/
+/** chunk id: 426482, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   C: () => m,
   Z: () => d
 }), require("./388685.js");
-var r, Chunk951288 = require("./951288.js"),
+var n, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk451697 = require("./451697.js"),
-  d = ((r = {})[r.SMALL = 0] = "SMALL", r[r.LARGE = 1] = "LARGE", r);
+  d = ((n = {})[n.SMALL = 0] = "SMALL", n[n.LARGE = 1] = "LARGE", n);
 
 function m(e) {
   var t;
   let {
-    game: n,
-    application: r,
+    game: r,
+    application: n,
     size: a,
     className: d
-  } = e, [m, p] = l.useState(false), f = null != (t = null == r ? true : r.name) ? t : n.name, g = null != n.firstReleaseDate ? new Date(n.firstReleaseDate) : null;
-  return null == n.coverImageUrl || m ? (0, i.jsxs)("div", {
+  } = e, [m, p] = l.useState(false), f = null != (t = null == n ? true : n.name) ? t : r.name, g = null != r.firstReleaseDate ? new Date(r.firstReleaseDate) : null;
+  return null == r.coverImageUrl || m ? (0, i.jsxs)("div", {
     className: s()(u.fallback, d),
     children: [(0, i.jsx)("div", {
       className: u.spacer
@@ -39,7 +39,7 @@ function m(e) {
     })]
   }) : (0, i.jsx)("img", {
     className: d,
-    src: n.coverImageUrl,
+    src: r.coverImageUrl,
     alt: c.intl.formatToPlainString(c.t["3ev90d"], {
       game: f
     }),

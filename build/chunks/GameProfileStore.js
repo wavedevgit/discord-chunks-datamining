@@ -1,9 +1,9 @@
 /** Chunk was on 89311 **/
-/** chunk id: 839392, original params: e,t,n (module,exports,require) **/
+/** chunk id: 839392, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => u
 });
-var r, i, Chunk442837 = require("./442837.js"),
+var n, i, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 let s = {},
   o = {};
@@ -14,25 +14,25 @@ class c extends(i = Chunk442837.ZP.Store) {
   getSimilarGamesError(e) {
     return o[e]
   }
-}(r = "displayName") in c ? Object.defineProperty(c, r, {
+}(n = "displayName") in c ? Object.defineProperty(c, n, {
   value: "GameProfileStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : c[r] = "GameProfileStore";
+}) : c[n] = "GameProfileStore";
 let u = new c(Chunk570140.Z, {
   GAME_PROFILE_GET_SIMILAR_GAMES_SUCCESS: function(e) {
     let {
       applicationId: t,
-      games: n
+      games: r
     } = e;
-    s[t] = n
+    s[t] = r
   },
   GAME_PROFILE_GET_SIMILAR_GAMES_ERROR: function(e) {
     let {
       applicationId: t,
-      error: n
+      error: r
     } = e;
-    o[t] = n
+    o[t] = r
   }
 })

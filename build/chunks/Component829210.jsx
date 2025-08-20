@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  r = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk803948 = require("./803948.js"),
   Chunk481060 = require("./481060.js"),
   Chunk59662 = require("./59662.js"),
@@ -18,14 +18,14 @@ function f(e) {
     node: t
   } = e, {
     currentPanel: n,
-    setCurrentPanel: o
-  } = (0, u.t)(), r = t.useTitle(), s = l.useMemo(() => t.layout.flatMap(e => e.layout), [t]), a = (null == n ? true : n.key) === t.key;
+    setCurrentPanel: r
+  } = (0, u.t)(), o = t.useTitle(), s = l.useMemo(() => t.layout.flatMap(e => e.layout), [t]), a = (null == n ? true : n.key) === t.key;
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(c.Z, {
       icon: t.icon,
-      title: r,
+      title: o,
       active: a,
-      onClick: () => o(t)
+      onClick: () => r(t)
     }), a && s.length > 1 && (0, i.jsx)(g, {
       categories: s
     })]
@@ -35,7 +35,7 @@ function f(e) {
 function g(e) {
   let {
     categories: t
-  } = e, [n, o] = l.useState(0), [u, c] = (0, a.q_F)(() => ({
+  } = e, [n, r] = l.useState(0), [u, c] = (0, a.q_F)(() => ({
     y: 0,
     config: {
       mass: .1,
@@ -70,12 +70,12 @@ function g(e) {
         } = e;
         return (0, i.jsx)(a.P3F, {
           onClick: () => {
-            o(t), c({
+            r(t), c({
               y: 40 * t
             })
           },
           tag: "li",
-          className: r()({
+          className: o()({
             [d.active]: t === n
           }),
           children: l

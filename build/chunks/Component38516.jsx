@@ -1,5 +1,5 @@
 /** Chunk was on 89311 **/
-/** chunk id: 38516, original params: e,t,n (module,exports,require) **/
+/** chunk id: 38516, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => f
 }), require("./415506.js"), require("./642613.js");
@@ -18,7 +18,7 @@ let m = [Chunk643872.p.OFFICIAL, Chunk643872.p.TWITTER, Chunk643872.p.YOUTUBE];
 function p(e) {
   let {
     website: t,
-    trackClick: n
+    trackClick: r
   } = e, {
     action: i,
     icon: l,
@@ -27,19 +27,19 @@ function p(e) {
     switch (e.category) {
       case a.p.OFFICIAL:
         return {
-          icon: (0, r.jsx)(s.enf, {
+          icon: (0, n.jsx)(s.enf, {
             colorClass: d.linkIcon
           }), action: o.as.WebsiteLink, title: c.intl.string(c.t.fOUKvr)
         };
       case a.p.TWITTER:
         return {
-          icon: (0, r.jsx)(s.TAi, {
+          icon: (0, n.jsx)(s.TAi, {
             colorClass: d.linkIcon
           }), action: o.as.XLink, title: c.intl.string(c.t["INic4+"])
         };
       case a.p.YOUTUBE:
         return {
-          action: o.as.YouTubeLink, icon: (0, r.jsx)(s.$5w, {
+          action: o.as.YouTubeLink, icon: (0, n.jsx)(s.$5w, {
             colorClass: d.linkIcon
           }), title: c.intl.string(c.t.lNmxbG)
         };
@@ -47,7 +47,7 @@ function p(e) {
         throw Error("Unknown IGDB website category")
     }
   }(t);
-  return (0, r.jsx)(s.ua7, {
+  return (0, n.jsx)(s.ua7, {
     text: t.url,
     tooltipClassName: d.tooltip,
     tooltipContentClassName: d.tooltipContent,
@@ -57,33 +57,33 @@ function p(e) {
         } = e,
         m = function(e, t) {
           if (null == e) return {};
-          var n, r, i = function(e, t) {
+          var r, n, i = function(e, t) {
             if (null == e) return {};
-            var n, r, i = {},
+            var r, n, i = {},
               l = Object.keys(e);
-            for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+            for (n = 0; n < l.length; n++) r = l[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
             return i
           }(e, t);
           if (Object.getOwnPropertySymbols) {
             var l = Object.getOwnPropertySymbols(e);
-            for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+            for (n = 0; n < l.length; n++) r = l[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
           }
           return i
         }(e, ["onClick"]);
-      return (0, r.jsx)(s.eee, (a = function(e) {
+      return (0, n.jsx)(s.eee, (a = function(e) {
         for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-              value: r,
+          var r = null != arguments[t] ? arguments[t] : {},
+            n = Object.keys(r);
+          "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(r, e).enumerable
+          }))), n.forEach(function(t) {
+            var n;
+            n = r[t], t in e ? Object.defineProperty(e, t, {
+              value: n,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : e[t] = r
+            }) : e[t] = n
           })
         }
         return e
@@ -92,17 +92,17 @@ function p(e) {
         title: u,
         href: t.url,
         onClick: () => {
-          n(i), null == c || c()
+          r(i), null == c || c()
         },
         target: "_blank",
         children: l
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
-        var n = Object.keys(e);
+        var r = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, r)
+          var n = Object.getOwnPropertySymbols(e);
+          r.push.apply(r, n)
         }
-        return n
+        return r
       })(Object(o)).forEach(function(e) {
         Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(o, e))
       }), a))
@@ -112,7 +112,7 @@ function p(e) {
 let f = function(e) {
   let {
     detectedGame: t,
-    trackClick: n
+    trackClick: r
   } = e;
   if (null == t.websites) return null;
   let i = t.websites.filter(e => {
@@ -121,17 +121,17 @@ let f = function(e) {
     } = e;
     return m.includes(t)
   }).sort((e, t) => e.category - t.category);
-  return 0 === i.length ? null : (0, r.jsxs)("div", {
-    children: [(0, r.jsx)(s.X6q, {
+  return 0 === i.length ? null : (0, n.jsxs)("div", {
+    children: [(0, n.jsx)(s.X6q, {
       className: u.sectionHeader,
       variant: "text-xs/semibold",
       color: "header-secondary",
       children: c.intl.string(c.t.Oj3o19)
-    }), (0, r.jsx)("div", {
+    }), (0, n.jsx)("div", {
       className: l()(u.row, u.gapMd),
-      children: i.map(e => (0, r.jsx)(p, {
+      children: i.map(e => (0, n.jsx)(p, {
         website: e,
-        trackClick: n
+        trackClick: r
       }, e.url))
     })]
   })

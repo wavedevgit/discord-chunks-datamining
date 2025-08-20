@@ -1,5 +1,5 @@
 /** Chunk was on 89311 **/
-/** chunk id: 252547, original params: e,t,n (module,exports,require) **/
+/** chunk id: 252547, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => p
 }), require("./388685.js");
@@ -17,43 +17,43 @@ var Chunk951288 = require("./951288.js"),
 function p(e) {
   let {
     entries: t,
-    viewId: n,
+    viewId: r,
     officialGuildId: l,
     onClose: p
-  } = e, f = t.length > 7, [g, x] = i.useState(false), j = i.useMemo(() => t.slice(0, f && !g ? 6 : true), [t, f, g]);
-  return (0, r.jsxs)("div", {
-    children: [(0, r.jsx)(s.X6, {
+  } = e, f = t.length > 7, [g, j] = i.useState(false), x = i.useMemo(() => t.slice(0, f && !g ? 6 : true), [t, f, g]);
+  return (0, n.jsxs)("div", {
+    children: [(0, n.jsx)(s.X6, {
       className: d.sectionHeader,
       variant: "text-md/semibold",
       color: "header-primary",
       children: u.intl.string(u.t.ak8OHh)
-    }), 0 === t.length ? (0, r.jsx)(s.xv, {
+    }), 0 === t.length ? (0, n.jsx)(s.xv, {
       variant: "text-xs/semibold",
       color: "text-primary",
       className: m.emptyState,
       children: u.intl.string(u.t.R5fYVF)
-    }) : (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)("div", {
+    }) : (0, n.jsxs)(n.Fragment, {
+      children: [(0, n.jsx)("div", {
         className: a()(m.friends, {
           [m.fadedEntries]: f && !g
         }),
-        children: (0, r.jsx)("div", {
+        children: (0, n.jsx)("div", {
           className: d.column,
-          children: j.map(e => (0, r.jsx)(c.Z, {
+          children: x.map(e => (0, n.jsx)(c.Z, {
             entry: e,
-            viewId: n,
+            viewId: r,
             onClose: p,
             officialGuildId: l
           }, e.id))
         })
-      }), f && !g && (0, r.jsxs)(o.P3F, {
+      }), f && !g && (0, n.jsxs)(o.P3F, {
         className: m.expandEntriesButton,
-        onClick: () => x(true),
-        children: [(0, r.jsx)(s.xv, {
+        onClick: () => j(true),
+        children: [(0, n.jsx)(s.xv, {
           variant: "text-xs/semibold",
           color: "interactive-normal",
           children: u.intl.string(u.t.yohc6O)
-        }), (0, r.jsx)(o.CJ0, {
+        }), (0, n.jsx)(o.CJ0, {
           size: "xs"
         })]
       })]

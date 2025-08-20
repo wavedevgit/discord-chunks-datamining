@@ -19,12 +19,12 @@ let a = Chunk647438.memo(function(e) {
   } = t, d = null == n ? true : n();
   return (l.useEffect(() => {
     null == c || c()
-  }, [c]), null != u) ? (0, i.jsx)(u, {}) : (0, i.jsx)(o.hjN, {
-    tag: o.RB0.H1,
+  }, [c]), null != u) ? (0, i.jsx)(u, {}) : (0, i.jsx)(r.hjN, {
+    tag: r.RB0.H1,
     className: s.category,
     title: d,
     titleClassName: s.categoryTitle,
-    children: a.map(e => (0, i.jsx)(r.Z, {
+    children: a.map(e => (0, i.jsx)(o.Z, {
       node: e
     }, e.key))
   })

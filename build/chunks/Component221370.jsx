@@ -1,7 +1,7 @@
 /** Chunk was on 89311 **/
-/** chunk id: 221370, original params: e,t,n (module,exports,require) **/
+/** chunk id: 221370, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => j
 }), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -15,18 +15,18 @@ var Chunk951288 = require("./951288.js"),
 
 function m(e) {
   for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      var r;
-      r = n[t], t in e ? Object.defineProperty(e, t, {
-        value: r,
+    var r = null != arguments[t] ? arguments[t] : {},
+      n = Object.keys(r);
+    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(r, e).enumerable
+    }))), n.forEach(function(t) {
+      var n;
+      n = r[t], t in e ? Object.defineProperty(e, t, {
+        value: n,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = r
+      }) : e[t] = n
     })
   }
   return e
@@ -36,38 +36,38 @@ let p = [Chunk758713.z.DESKTOP, Chunk758713.z.XBOX, Chunk758713.z.PLAYSTATION, C
 function f(e) {
   var {
     platform: t
-  } = e, n = function(e, t) {
+  } = e, r = function(e, t) {
     if (null == e) return {};
-    var n, r, i = function(e, t) {
+    var r, n, i = function(e, t) {
       if (null == e) return {};
-      var n, r, i = {},
+      var r, n, i = {},
         l = Object.keys(e);
-      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+      for (n = 0; n < l.length; n++) r = l[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
       return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
       var l = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+      for (n = 0; n < l.length; n++) r = l[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
     }
     return i
   }(e, ["platform"]);
   switch (t) {
     case s.z.DESKTOP:
-      return (0, r.jsx)(o.pzj, m({
+      return (0, n.jsx)(o.pzj, m({
         size: "xs"
-      }, n));
+      }, r));
     case s.z.XBOX:
-      return (0, r.jsx)(o.Mko, m({
+      return (0, n.jsx)(o.Mko, m({
         size: "xs"
-      }, n));
+      }, r));
     case s.z.PLAYSTATION:
-      return (0, r.jsx)(o.Tsp, m({
+      return (0, n.jsx)(o.Tsp, m({
         size: "xs"
-      }, n));
+      }, r));
     case s.z.NINTENDO:
-      return (0, r.jsx)(o.aPH, m({
+      return (0, n.jsx)(o.aPH, m({
         size: "xs"
-      }, n));
+      }, r));
     default:
       return null
   }
@@ -77,12 +77,12 @@ function g(e) {
   let {
     platforms: t
   } = e;
-  return (0, r.jsx)("div", {
+  return (0, n.jsx)("div", {
     className: a()(d.row, d.gapSm),
     style: {
       alignItems: "center"
     },
-    children: t.map(e => (0, r.jsx)(c.ua7, {
+    children: t.map(e => (0, n.jsx)(c.ua7, {
       text: function(e) {
         switch (e) {
           case s.z.DESKTOP:
@@ -98,36 +98,36 @@ function g(e) {
         }
       }(e),
       children: t => {
-        var n, i;
-        return (0, r.jsx)(f, (n = m({}, t), i = i = {
+        var r, i;
+        return (0, n.jsx)(f, (r = m({}, t), i = i = {
           platform: e
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
-          var n = Object.keys(e);
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+          var r = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
+            var n = Object.getOwnPropertySymbols(e);
+            r.push.apply(r, n)
           }
-          return n
+          return r
         })(Object(i)).forEach(function(e) {
-          Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
-        }), n))
+          Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
+        }), r))
       }
     }, e))
   })
 }
 
-function x(e) {
+function j(e) {
   let {
     detectedGame: t,
-    className: n
+    className: r
   } = e, l = i.useMemo(() => {
     let e = new Set(t.platforms),
-      n = [...e];
-    return !e.has(s.z.DESKTOP) && (e.has(s.z.MACOS) || e.has(s.z.LINUX)) && n.push(s.z.DESKTOP), n.filter(e => p.includes(e))
+      r = [...e];
+    return !e.has(s.z.DESKTOP) && (e.has(s.z.MACOS) || e.has(s.z.LINUX)) && r.push(s.z.DESKTOP), r.filter(e => p.includes(e))
   }, [t.platforms]);
-  return 0 === l.length ? null : (0, r.jsx)("div", {
-    className: a()(d.column, d.gapLg, n),
-    children: l.length > 0 && (0, r.jsx)(g, {
+  return 0 === l.length ? null : (0, n.jsx)("div", {
+    className: a()(d.column, d.gapLg, r),
+    children: l.length > 0 && (0, n.jsx)(g, {
       platforms: l
     })
   })

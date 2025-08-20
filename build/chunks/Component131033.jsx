@@ -1,5 +1,5 @@
 /** Chunk was on 89311 **/
-/** chunk id: 131033, original params: e,t,n (module,exports,require) **/
+/** chunk id: 131033, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => s
 });
@@ -13,13 +13,13 @@ function s(e) {
   let {
     detectedGame: t
   } = e;
-  return 0 === t.publishers.length ? null : (0, r.jsxs)("div", {
-    children: [(0, r.jsx)(i.X6, {
+  return 0 === t.publishers.length ? null : (0, n.jsxs)("div", {
+    children: [(0, n.jsx)(i.X6, {
       className: a.sectionHeader,
       variant: "text-xs/semibold",
       color: "header-secondary",
       children: l.intl.string(l.t["4Byy/P"])
-    }), (0, r.jsx)(i.xv, {
+    }), (0, n.jsx)(i.xv, {
       variant: "text-sm/normal",
       children: t.publishers.join(", ")
     })]

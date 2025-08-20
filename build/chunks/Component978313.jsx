@@ -1,7 +1,7 @@
 /** Chunk was on 89311 **/
-/** chunk id: 978313, original params: e,t,n (module,exports,require) **/
+/** chunk id: 978313, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => x
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -18,49 +18,49 @@ var Chunk951288 = require("./951288.js"),
   Chunk226788 = require("./226788.js"),
   Chunk802318 = require("./802318.js");
 
-function j(e) {
+function x(e) {
   let {
     detectedGame: t,
-    trackAction: n
-  } = e, [l, j] = i.useState((null == t ? true : t.summaryLocalized) != null), [h, v] = i.useState(true), [O, b] = i.useState(false), y = i.useRef(null), {
-    width: I,
-    height: P
+    trackAction: r
+  } = e, [l, x] = i.useState((null == t ? true : t.summaryLocalized) != null), [v, h] = i.useState(true), [O, b] = i.useState(false), y = i.useRef(null), {
+    width: P,
+    height: w
   } = (0, d.Z)();
   return (i.useEffect(() => {
     let e = y.current;
-    null != e && b(e.scrollHeight - e.clientHeight > 1 || !h)
-  }, [y, I, P, h]), null == t.summary) ? null : (0, r.jsxs)("div", {
+    null != e && b(e.scrollHeight - e.clientHeight > 1 || !v)
+  }, [y, P, w, v]), null == t.summary) ? null : (0, n.jsxs)("div", {
     className: a()(g.column, g.gapMd),
-    children: [null != t.summaryLocalized && (0, r.jsxs)("div", {
+    children: [null != t.summaryLocalized && (0, n.jsxs)("div", {
       className: a()(g.row, g.gapSm),
-      children: [(0, r.jsx)(s.SxY, {
+      children: [(0, n.jsx)(s.SxY, {
         color: c.Z.colors.HEADER_SECONDARY,
         size: "xs"
-      }), (0, r.jsx)(o.xv, {
+      }), (0, n.jsx)(o.xv, {
         variant: "text-xs/medium",
         color: "header-secondary",
         children: l ? f.intl.format(f.t.aZ2iIi, {
-          onShowOriginal: () => j(false)
+          onShowOriginal: () => x(false)
         }) : f.intl.format(f.t["/2ylFx"], {
-          onShowTranslated: () => j(true)
+          onShowTranslated: () => x(true)
         })
       })]
-    }), (0, r.jsx)(o.xv, {
+    }), (0, n.jsx)(o.xv, {
       ref: y,
-      lineClamp: h ? 8 : true,
+      lineClamp: v ? 8 : true,
       variant: "text-sm/normal",
       children: l ? t.summaryLocalized : t.summary
-    }), O && (0, r.jsx)(u.P3F, {
+    }), O && (0, n.jsx)(u.P3F, {
       className: g.clickable,
       onClick: () => {
-        n(h ? m.as.ShowMore : m.as.ShowLess), v(!h)
+        r(v ? m.as.ShowMore : m.as.ShowLess), h(!v)
       },
-      children: (0, r.jsx)(o.xv, {
+      children: (0, n.jsx)(o.xv, {
         variant: "text-sm/semibold",
-        children: h ? f.intl.string(f.t.lBeKY2) : f.intl.string(f.t["6MwJo6"])
+        children: v ? f.intl.string(f.t.lBeKY2) : f.intl.string(f.t["6MwJo6"])
       })
-    }), (0, r.jsx)(p.Z, {
-      className: x.platforms,
+    }), (0, n.jsx)(p.Z, {
+      className: j.platforms,
       detectedGame: t
     })]
   })

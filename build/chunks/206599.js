@@ -17,40 +17,40 @@ function u(e) {
   let {
     bump: l,
     bumpMultiple: a,
-    gameIds: c
-  } = (0, o.b)(), {
+    gameIds: o
+  } = (0, c.b)(), {
     remove: u,
     peekedGameIds: d
-  } = (0, o.b)(), {
+  } = (0, c.b)(), {
     gameDataMap: f,
-    isGameFetching: g
+    isGameFetching: b
   } = (0, s.F)(null != (t = d[e]) ? t : []);
   n.useEffect(() => {
     var t;
     for (let r of null != (t = d[e]) ? t : []) {
       let t = f[r];
-      (null == t ? true : t.coverImageUrl) != null || g(r) || u(r, e)
+      (null == t ? true : t.coverImageUrl) != null || b(r) || u(r, e)
     }
-  }, [d, f, g, u, e]);
-  let b = n.useMemo(() => {
+  }, [d, f, b, u, e]);
+  let g = n.useMemo(() => {
       var t;
-      return null != (t = c[e]) ? t : []
-    }, [c, e]),
+      return null != (t = o[e]) ? t : []
+    }, [o, e]),
     p = n.useCallback(t => {
       l(t, e)
     }, [l, e]),
     {
       gameDataMap: O,
       isGameFetching: m
-    } = (0, s.F)(b),
+    } = (0, s.F)(g),
     [j, y] = n.useState([]),
     v = n.useCallback(e => i.Z.noDataAvailable(e), []),
-    x = (r = b.map(e => m(e)), n.useMemo(() => r.join("\x1f"), [r]));
+    x = (r = g.map(e => m(e)), n.useMemo(() => r.join("\x1f"), [r]));
   return n.useEffect(() => {
-    let t = b.filter(e => v(e));
+    let t = g.filter(e => v(e));
     t.length > 0 && a(t, e)
-  }, [O, x, b, e, a, v]), n.useEffect(() => {
-    y(b.map(e => {
+  }, [O, x, g, e, a, v]), n.useEffect(() => {
+    y(g.map(e => {
       let t = O[e];
       return {
         applicationId: e,
@@ -58,7 +58,7 @@ function u(e) {
         imageSrc: null == t ? true : t.coverImageUrl
       }
     }))
-  }, [b, O, e]), {
+  }, [g, O, e]), {
     games: j,
     isGameFetching: m,
     onAddGame: p
@@ -66,9 +66,9 @@ function u(e) {
 }
 
 function d(e, t) {
-  let [r, i, s, u] = (0, l.Wu)([c.Z], () => [c.Z.suggestedFetchAttempted, c.Z.suggestedFetchError, c.Z.suggestedGameIds, c.Z.suggestedFetchIsLoading]), {
+  let [r, i, s, u] = (0, l.Wu)([o.Z], () => [o.Z.suggestedFetchAttempted, o.Z.suggestedFetchError, o.Z.suggestedGameIds, o.Z.suggestedFetchIsLoading]), {
     onLoad: d
-  } = (0, o.b)();
+  } = (0, c.b)();
   n.useEffect(() => {
     !r && e && a.Z.fetchSuggestedGames()
   }, [r, e]);

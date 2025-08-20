@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  r = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk873546 = require("./873546.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -60,23 +60,20 @@ let m = Chunk647438.memo(function(e) {
     onClose: t,
     setShowNavigationMobile: n,
     setting: l
-  } = e, o = null == l ? true : l.useTitle(), {
+  } = e, r = null == l ? true : l.useTitle(), {
     showNavigationMobile: a
   } = (0, c.t)();
   return (0, i.jsxs)("div", {
-    className: r()(f.content, {
+    className: o()(f.content, {
       [f.mobile]: s.tq,
       [f.mobileNavigationOpen]: a
     }),
     children: [(0, i.jsx)(v, {
-      title: o,
+      title: r,
       onClose: t,
       setShowNavigationMobile: n
-    }), (0, i.jsx)(u.w0Z, {
-      className: f.contentScroller,
-      children: null != l && (0, i.jsx)(d.Z, {
-        node: l
-      })
+    }), null != l && (0, i.jsx)(d.Z, {
+      node: l
     })]
   })
 })

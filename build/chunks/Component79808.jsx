@@ -1,48 +1,70 @@
 /** Chunk was on 36878 **/
 /** chunk id: 79808, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => m
 }), require("./388685.js"), require("./361932.js"), require("./187205.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  r = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk873546 = require("./873546.js"),
   Chunk636298 = require("./636298.jsx"),
   Chunk404975 = require("./404975.jsx"),
   Chunk178167 = require("./178167.jsx"),
+  Chunk924052 = require("./924052.jsx"),
   Chunk59662 = require("./59662.js"),
   Chunk990757 = require("./990757.js");
 
-function g(e) {
+function v(e) {
   let {
     root: t,
     initialPanel: n,
-    onClose: o,
-    sidebarHeader: g,
-    sidebarFooter: v
-  } = e, [m, b] = l.useState(true), [p, x] = l.useState(n.key), j = l.useMemo(() => ({
+    onClose: r,
+    sidebarHeader: v,
+    sidebarFooter: m
+  } = e, [b, x] = l.useState(true), [p, j] = l.useState(n.key), {
+    navigateWithValidation: y
+  } = (0, d.Cu)(), h = l.useMemo(() => ({
     currentPanel: t.layout.flatMap(e => e.layout).find(e => e.key === p),
-    setCurrentPanel: e => x(e.key),
-    showNavigationMobile: m
-  }), [p, t, m]);
-  return (0, i.jsx)(d.j.Provider, {
-    value: j,
+    setCurrentPanel: e => y(() => j(e.key)),
+    showNavigationMobile: b
+  }), [p, t, b, y]), C = () => y(r);
+  return (0, i.jsx)(f.j.Provider, {
+    value: h,
     children: (0, i.jsxs)("div", {
-      className: r()(f.container, {
-        [f.mobile]: s.tq
+      className: o()(g.container, {
+        [g.mobile]: s.tq
       }),
       children: [(0, i.jsx)(c.d, {
-        onClose: o
+        onClose: C
       }), (0, i.jsx)(u.P, {
         root: t,
-        header: g,
-        footer: v
+        header: v,
+        footer: m
       }), (0, i.jsx)(a.Z, {
-        onClose: o,
-        setShowNavigationMobile: b,
-        setting: j.currentPanel
+        onClose: C,
+        setShowNavigationMobile: x,
+        setting: h.currentPanel
       })]
+    })
+  })
+}
+
+function m(e) {
+  let {
+    root: t,
+    initialPanel: n,
+    onClose: l,
+    sidebarHeader: r,
+    sidebarFooter: o
+  } = e;
+  return (0, i.jsx)(d.Ri, {
+    children: (0, i.jsx)(v, {
+      root: t,
+      initialPanel: n,
+      onClose: l,
+      sidebarHeader: r,
+      sidebarFooter: o
     })
   })
 }

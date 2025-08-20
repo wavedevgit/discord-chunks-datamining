@@ -5,7 +5,7 @@ require.d(exports, {
 });
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  r = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk873395 = require("./873395.js");
 
@@ -16,8 +16,8 @@ function a(e) {
     onClick: l,
     active: a
   } = e;
-  return (0, i.jsxs)(r.P3F, {
-    className: o()(s.item, a && s.active),
+  return (0, i.jsxs)(o.P3F, {
+    className: r()(s.item, a && s.active),
     onClick: l,
     children: [(0, i.jsx)(t, {
       color: "currentColor",

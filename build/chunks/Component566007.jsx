@@ -1,7 +1,7 @@
 /** Chunk was on 27069 **/
 /** chunk id: 566007, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => c
+  Z: () => o
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -9,12 +9,12 @@ var Chunk750312 = require("./750312.jsx"),
   Chunk189988 = require("./189988.jsx"),
   Chunk623132 = require("./623132.jsx");
 
-function c(e) {
+function o(e) {
   var {
     user: t,
     widget: r,
-    isGameFetching: c,
-    containerClassName: o,
+    isGameFetching: o,
+    containerClassName: c,
     disableInteraction: s
   } = e, u = function(e, t) {
     if (null == e) return {};
@@ -35,7 +35,7 @@ function c(e) {
   return (0, n.jsx)(l.Z, {
     userId: t.id,
     widget: r,
-    className: o,
+    className: c,
     disableInteraction: s,
     children: null != d ? (0, n.jsx)(a.Z, function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -58,7 +58,7 @@ function c(e) {
       user: t,
       game: d,
       widgetType: r.type,
-      loading: c(d.applicationId),
+      loading: o(d.applicationId),
       disableInteraction: s
     }, u)) : (0, n.jsx)(i.Z, {
       widgetType: r.type

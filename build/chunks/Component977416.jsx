@@ -1,7 +1,7 @@
 /** Chunk was on 27069 **/
 /** chunk id: 977416, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -45,12 +45,12 @@ function f(e, t) {
   }), e
 }
 
-function g(e) {
+function b(e) {
   var {
     gameName: t,
     onClick: r,
     loading: i = true
-  } = e, c = function(e, t) {
+  } = e, o = function(e, t) {
     if (null == e) return {};
     var r, n, l = function(e, t) {
       if (null == e) return {};
@@ -65,14 +65,14 @@ function g(e) {
     }
     return l
   }(e, ["gameName", "onClick", "loading"]);
-  let g = null != t ? t : o.intl.string(o.t.GIWFlJ),
-    b = o.intl.formatToPlainString(o.t["3mb1s7"], {
-      game: g
+  let b = null != t ? t : c.intl.string(c.t.GIWFlJ),
+    g = c.intl.formatToPlainString(c.t["3mb1s7"], {
+      game: b
     });
   return i ? (0, n.jsx)("div", {
     className: s.loadingCover
   }) : (0, n.jsx)(l.ua7, {
-    text: b,
+    text: g,
     children: e => (0, n.jsxs)(l.P3F, f(d({
       className: u.addButton
     }, e), {
@@ -80,7 +80,7 @@ function g(e) {
       children: [(0, n.jsx)(a.Z, f(d({
         className: u.cover,
         gameName: t
-      }, c), {
+      }, o), {
         disableInteraction: true
       })), (0, n.jsx)(l.svS, {
         size: "md",
@@ -91,7 +91,7 @@ function g(e) {
   })
 }
 
-function b(e) {
+function g(e) {
   let {
     userId: t,
     games: r,
@@ -99,27 +99,27 @@ function b(e) {
     isSuggestedGamesLoading: s,
     onDismiss: d,
     onClick: f
-  } = e, b = (0, i.Dt)();
+  } = e, g = (0, i.Dt)();
   return (0, n.jsxs)("aside", {
     className: u.container,
-    "aria-labelledby": b,
+    "aria-labelledby": g,
     children: [(0, n.jsxs)("div", {
       className: u.header,
       children: [(0, n.jsx)(l.P3F, {
         className: u.dismissButton,
-        "aria-label": o.intl.string(o.t["pUR+3t"]),
+        "aria-label": c.intl.string(c.t["pUR+3t"]),
         onClick: d,
         children: (0, n.jsx)(l.Dio, {
           size: "sm",
           color: "currentColor"
         })
       }), (0, n.jsx)(l.X6q, {
-        id: b,
+        id: g,
         variant: "text-xs/medium",
         color: "text-secondary",
-        children: o.intl.string(o.t.zMUr6e)
+        children: c.intl.string(c.t.zMUr6e)
       })]
-    }), (0, n.jsx)(c.Z, {
+    }), (0, n.jsx)(o.Z, {
       games: r,
       renderGame: e => {
         let {
@@ -127,7 +127,7 @@ function b(e) {
           gameName: l,
           imageSrc: i
         } = e;
-        return (0, n.jsx)(g, {
+        return (0, n.jsx)(b, {
           onClick: () => f(r, l, i),
           userId: t,
           loading: s || a(r),

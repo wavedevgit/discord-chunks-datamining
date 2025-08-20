@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk657707 = require("./657707.js"),
   Chunk509613 = require("./509613.js"),
   Chunk388032 = require("./388032.jsx");
-let r = (0, Chunk509613.k4)("Voice", {
+let o = (0, Chunk509613.k4)("Voice", {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.K3lovL),
     getLayout: () => []
   }),
@@ -16,7 +16,7 @@ let r = (0, Chunk509613.k4)("Voice", {
   }),
   a = (0, Chunk509613.x1)("VoiceAndVideoPane", {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.B1fFpa),
-    getLayout: () => [r, s]
+    getLayout: () => [o, s]
   }),
   u = (0, Chunk509613.wf)("VoiceAndVideo", {
     icon: Chunk657707.S6n,

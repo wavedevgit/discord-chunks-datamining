@@ -2,7 +2,7 @@
 /** chunk id: 804919, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   LM: () => a,
-  oD: () => c
+  oD: () => o
 });
 var Chunk379405 = require("./379405.js"),
   Chunk296009 = require("./296009.js"),
@@ -26,7 +26,7 @@ let a = {
   ELDEN_RING: "1402418436809953330"
 };
 Object.values(a);
-let c = () => [{
+let o = () => [{
   id: "0",
   type: Chunk296009.l.FAVORITE_GAMES,
   games: [{

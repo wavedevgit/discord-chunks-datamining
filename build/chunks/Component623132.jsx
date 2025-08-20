@@ -56,8 +56,8 @@ function v(e) {
   var {
     applicationId: t,
     userId: r,
-    gameName: c
-  } = e, o = function(e, t) {
+    gameName: o
+  } = e, c = function(e, t) {
     if (null == e) return {};
     var r, n, l = function(e, t) {
       if (null == e) return {};
@@ -79,13 +79,13 @@ function v(e) {
     sourceUserId: r,
     trackEntryPointImpression: true
   });
-  return null == s ? (0, n.jsx)(l.X6q, y(j({}, o), {
-    children: c
-  })) : (0, n.jsx)(l.X6q, y(j({}, o), {
+  return null == s ? (0, n.jsx)(l.X6q, y(j({}, c), {
+    children: o
+  })) : (0, n.jsx)(l.X6q, y(j({}, c), {
     children: (0, n.jsx)(l.P3F, {
       onClick: s,
       className: m.clickableText,
-      children: c
+      children: o
     })
   }))
 }
@@ -103,8 +103,8 @@ function x(e) {
       color: l.TVs.colors.ICON_TERTIARY,
       className: m.icon
     }), (0, n.jsx)(l.nn4, {
-      children: b.intl.format(b.t.TM0XDQ, {
-        name: o.ZP.getName(i, a, r)
+      children: g.intl.format(g.t.TM0XDQ, {
+        name: c.ZP.getName(i, a, r)
       })
     }), (0, n.jsx)(l.Text, {
       variant: "text-sm/normal",
@@ -120,9 +120,9 @@ function h(e) {
     guildId: r,
     channelId: l,
     className: i
-  } = e, a = (0, g.Z)(t);
+  } = e, a = (0, b.Z)(t);
   return a.length > 0 ? (0, n.jsx)(s.Z, {
-    label: b.intl.formatToPlainString(b.t.ujhJdH, {
+    label: g.intl.formatToPlainString(g.t.ujhJdH, {
       numFriends: a.length
     }),
     className: i,
@@ -138,19 +138,19 @@ function P(e) {
     guildId: r,
     channelId: i,
     game: a,
-    widgetType: o,
+    widgetType: c,
     loading: s = false,
-    disableInteraction: g = false
+    disableInteraction: b = false
   } = e, {
-    gameName: P = b.intl.string(b.t.GIWFlJ),
+    gameName: P = g.intl.string(g.t.GIWFlJ),
     imageSrc: E,
     applicationId: w,
-    comment: I,
-    tags: S
+    comment: S,
+    tags: I
   } = a, _ = {
     variant: "heading-sm/semibold",
     color: "text-default"
-  }, T = c.default.getCurrentUser(), N = (null == T ? true : T.id) === t.id;
+  }, T = o.default.getCurrentUser(), N = (null == T ? true : T.id) === t.id;
   return s ? (0, n.jsxs)("div", {
     className: m.card,
     children: [(0, n.jsx)("div", {
@@ -173,36 +173,36 @@ function P(e) {
       gameName: P,
       applicationId: w,
       userId: t.id,
-      disableInteraction: g,
+      disableInteraction: b,
       hideTooltip: true
     }), (0, n.jsxs)("div", {
       className: m.details,
-      children: [g ? (0, n.jsx)(l.X6q, y(j({}, _), {
+      children: [b ? (0, n.jsx)(l.X6q, y(j({}, _), {
         children: P
       })) : (0, n.jsx)(v, j({
         applicationId: w,
         userId: t.id,
         gameName: P
-      }, _)), null != I && (0, n.jsx)(x, {
-        text: I,
+      }, _)), null != S && (0, n.jsx)(x, {
+        text: S,
         user: t,
         guildId: r,
         channelId: i
       }), (0, n.jsx)(d.Z, {
-        tags: S,
+        tags: I,
         isCurrentUser: N,
-        widgetType: o,
+        widgetType: c,
         applicationId: w,
-        disableInteraction: g
-      }), !g && (0, n.jsx)(h, {
+        disableInteraction: b
+      }), !b && (0, n.jsx)(h, {
         className: m.socialProof,
         applicationId: w,
         guildId: r,
         channelId: i
       })]
-    }), !g && N && (0, n.jsx)(f.Z, {
+    }), !b && N && (0, n.jsx)(f.Z, {
       game: a,
-      widgetType: o,
+      widgetType: c,
       className: m.removeGameButton
     })]
   })

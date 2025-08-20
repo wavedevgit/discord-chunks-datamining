@@ -36,14 +36,14 @@ function f(e) {
     disabled: t,
     widgetType: r,
     widget: f
-  } = e, [g] = (0, a.ynZ)(), b = l.useRef(null), p = l.useMemo(() => new Set(f.games.map(e => e.applicationId)), [f.games]), O = l.useCallback(e => {
-    (0, o.ES)(r, {
+  } = e, [b] = (0, a.ynZ)(), g = l.useRef(null), p = l.useMemo(() => new Set(f.games.map(e => e.applicationId)), [f.games]), O = l.useCallback(e => {
+    (0, c.ES)(r, {
       applicationId: e
     })
   }, [r]), {
     options: m,
     matchSorterOptions: j
-  } = (0, c.h)(), y = l.useCallback(e => {
+  } = (0, o.h)(), y = l.useCallback(e => {
     var t, r;
     return "" === e.trim() ? m : (0, i.Lu)(m, e, (t = d({}, j), r = r = {
       threshold: i.Lu.rankings.CONTAINS
@@ -59,7 +59,7 @@ function f(e) {
     }), t))
   }, [m, j]);
   return (0, n.jsx)(a.yRy, {
-    targetElementRef: b,
+    targetElementRef: g,
     position: "bottom",
     align: "center",
     renderPopout: e => {
@@ -70,7 +70,7 @@ function f(e) {
         className: u.gameSearchCombobox,
         placeholder: s.intl.string(s.t["5h0QOD"]),
         autoFocus: true,
-        value: g,
+        value: b,
         onChange: e => {
           O(e), t()
         },
@@ -92,7 +92,7 @@ function f(e) {
       })
     },
     children: e => (0, n.jsx)("div", {
-      ref: b,
+      ref: g,
       children: (0, n.jsx)(a.zxk, d({
         variant: "secondary",
         size: "sm",

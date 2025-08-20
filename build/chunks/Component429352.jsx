@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  n = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   l = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
@@ -48,8 +48,8 @@ let h = e => {
   return (0, t.jsx)(_.ua7, {
     text: a.name,
     children: e => {
-      var i, o;
-      return (0, t.jsx)(_.P3F, (i = y({}, e), o = o = {
+      var i, n;
+      return (0, t.jsx)(_.P3F, (i = y({}, e), n = n = {
         className: v.gameClickable,
         onClick: () => {
           (0, _.ZDy)(() => Promise.resolve(e => (0, t.jsx)(w.default, y({
@@ -63,15 +63,15 @@ let h = e => {
           className: v.coverArt,
           size: k.Z.SMALL
         })
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(o)) : (function(e, a) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(n)) : (function(e, a) {
         var r = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var t = Object.getOwnPropertySymbols(e);
           r.push.apply(r, t)
         }
         return r
-      })(Object(o)).forEach(function(e) {
-        Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(o, e))
+      })(Object(n)).forEach(function(e) {
+        Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(n, e))
       }), i))
     }
   })
@@ -81,7 +81,7 @@ function j(e) {
   let {
     applications: a,
     onClose: r,
-    transitionState: o
+    transitionState: n
   } = e;
   (0, d.Z)(a), i.useEffect(() => {
     a.length > 1 && m.Z.getDetectableGamesSupplemental(a)
@@ -91,16 +91,16 @@ function j(e) {
     p = (0, g.Wu)([f.Z], () => a.map(e => f.Z.getGame(e)).filter(e => null != e).filter(e => (0, u.z6)(e.applicationId)).slice(0, 10));
   return c && !_ ? (0, t.jsxs)("div", {
     children: [(0, t.jsx)("div", {
-      className: n()(v.loadingHeading, v.sectionHeader)
+      className: o()(v.loadingHeading, v.sectionHeader)
     }), (0, t.jsx)("div", {
-      className: n()(v.row, v.gapLg),
+      className: o()(v.row, v.gapLg),
       children: l().range(0, a.length).map(e => (0, t.jsx)("div", {
         className: v.loadingArtwork
       }, e))
     })]
   }) : !c && 0 === p.length || _ ? null : (0, t.jsx)(s.Modal, {
     title: I.intl.string(I.t["D+DkEB"]),
-    transitionState: o,
+    transitionState: n,
     onClose: r,
     actions: [],
     children: (0, t.jsx)("div", {

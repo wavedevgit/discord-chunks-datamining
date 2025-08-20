@@ -9,7 +9,7 @@ var Chunk647438 = require("./647438.js"),
   Chunk224706 = require("./224706.js"),
   Chunk669764 = require("./669764.js");
 
-function c(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -28,7 +28,7 @@ function c(e) {
   return e
 }
 
-function o(e, t) {
+function c(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -74,12 +74,12 @@ function u(e) {
     widgets: n.useMemo(() => e.map(e => {
       let r = e.games.map(e => {
         let r = t[e.applicationId];
-        return o(c({}, e), {
+        return c(o({}, e), {
           gameName: null == r ? true : r.name,
           imageSrc: null == r ? true : r.coverImageUrl
         })
       });
-      return o(c({}, e), {
+      return c(o({}, e), {
         games: r
       })
     }), [e, t]),

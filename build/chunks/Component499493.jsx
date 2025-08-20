@@ -1,7 +1,7 @@
 /** Chunk was on 89311 **/
-/** chunk id: 499493, original params: e,t,n (module,exports,require) **/
+/** chunk id: 499493, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => h
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,42 +19,42 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk192025 = require("./192025.js"),
   Chunk226788 = require("./226788.js");
-let v = e => {
+let h = e => {
   let {
     entry: t,
-    onClose: n,
+    onClose: r,
     onReaction: l,
-    onRequestOpen: v,
+    onRequestOpen: h,
     disableActivityProfileLinks: O,
     customCTA: b,
     popoutClassname: y,
-    popoutPosition: I = "right"
-  } = e, P = i.useRef(null), w = (0, s.e7)([u.Z, c.Z], () => c.Z.getChannel(u.Z.getChannelId())), E = (0, s.e7)([d.default], () => d.default.getUser(t.author_id)), {
+    popoutPosition: P = "right"
+  } = e, w = i.useRef(null), I = (0, s.e7)([u.Z, c.Z], () => c.Z.getChannel(u.Z.getChannelId())), E = (0, s.e7)([d.default], () => d.default.getUser(t.author_id)), {
     nick: N,
     avatar: S
   } = i.useMemo(() => {
-    let e = null == E ? true : E.getAvatarURL(null == w ? true : w.guild_id, 48, false);
+    let e = null == E ? true : E.getAvatarURL(null == I ? true : I.guild_id, 48, false);
     return {
-      nick: m.ZP.getName(null == w ? true : w.guild_id, null == w ? true : w.id, E),
+      nick: m.ZP.getName(null == I ? true : I.guild_id, null == I ? true : I.id, E),
       avatar: e
     }
-  }, [E, w]);
-  return null == E ? null : (0, r.jsx)(o.yRy, {
-    targetElementRef: P,
-    position: I,
+  }, [E, I]);
+  return null == E ? null : (0, n.jsx)(o.yRy, {
+    targetElementRef: w,
+    position: P,
     renderPopout: e => {
       let {
         closePopout: i,
         updatePosition: a
       } = e;
-      return (0, r.jsx)("div", {
+      return (0, n.jsx)("div", {
         className: y,
-        children: (0, r.jsx)(p.J, {
+        children: (0, n.jsx)(p.J, {
           entry: t,
           closePopout: i,
           updatePopoutPosition: a,
           onReaction: () => {
-            null == l || l(), n(), i()
+            null == l || l(), r(), i()
           },
           onUserPopoutClosed: () => i(),
           disableGameProfileLinks: true,
@@ -64,79 +64,79 @@ let v = e => {
     },
     positionKey: "'content-entry-".concat(t.id),
     onRequestOpen: () => {
-      null == v || v()
+      null == h || h()
     },
     children: e => {
-      var n, i;
-      return (0, r.jsx)(o.P3F, (n = function(e) {
+      var r, i;
+      return (0, n.jsx)(o.P3F, (r = function(e) {
         for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-              value: r,
+          var r = null != arguments[t] ? arguments[t] : {},
+            n = Object.keys(r);
+          "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(r, e).enumerable
+          }))), n.forEach(function(t) {
+            var n;
+            n = r[t], t in e ? Object.defineProperty(e, t, {
+              value: n,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : e[t] = r
+            }) : e[t] = n
           })
         }
         return e
       }({
-        innerRef: P
+        innerRef: w
       }, e), i = i = {
-        className: j.profileEntryCard,
-        children: (0, r.jsx)(o.tEY, {
+        className: x.profileEntryCard,
+        children: (0, n.jsx)(o.tEY, {
           offset: {
             top: 4,
             bottom: 4,
             left: 4,
             right: 4
           },
-          children: (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)("img", {
-              className: j.avatar,
+          children: (0, n.jsxs)(n.Fragment, {
+            children: [(0, n.jsx)("img", {
+              className: x.avatar,
               src: S,
-              alt: x.intl.formatToPlainString(x.t.IzVXxc, {
+              alt: j.intl.formatToPlainString(j.t.IzVXxc, {
                 userName: N
               })
-            }), (0, r.jsx)("div", {
-              className: j.playerInfo,
-              children: (0, r.jsxs)("div", {
-                className: a()(h.column, h.gapXs),
-                children: [(0, r.jsx)(o.Text, {
+            }), (0, n.jsx)("div", {
+              className: x.playerInfo,
+              children: (0, n.jsxs)("div", {
+                className: a()(v.column, v.gapXs),
+                children: [(0, n.jsx)(o.Text, {
                   variant: "text-md/medium",
                   color: "text-primary",
                   lineClamp: 1,
                   children: N
-                }), (0, r.jsx)(g.Gk, {
+                }), (0, n.jsx)(g.Gk, {
                   location: g.Gt.APP_LAUNCHER,
-                  children: f.W.map((e, n) => (0, r.jsx)(e, {
+                  children: f.W.map((e, r) => (0, n.jsx)(e, {
                     entry: t
-                  }, n))
+                  }, r))
                 })]
               })
-            }), null != b ? b : (0, r.jsx)("div", {
-              className: j.reactions,
-              children: (0, r.jsx)(o.n$P, {
+            }), null != b ? b : (0, n.jsx)("div", {
+              className: x.reactions,
+              children: (0, n.jsx)(o.n$P, {
                 size: "sm"
               })
             })]
           })
         })
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
-        var n = Object.keys(e);
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+        var r = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, r)
+          var n = Object.getOwnPropertySymbols(e);
+          r.push.apply(r, n)
         }
-        return n
+        return r
       })(Object(i)).forEach(function(e) {
-        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
-      }), n))
+        Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
+      }), r))
     }
   })
 }

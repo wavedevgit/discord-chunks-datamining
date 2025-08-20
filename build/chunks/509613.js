@@ -3,8 +3,8 @@
 require.d(exports, {
   $l: () => g,
   CB: () => f,
-  Em: () => p,
-  J9: () => x,
+  Em: () => x,
+  J9: () => p,
   ON: () => j,
   Ql: () => function e(t, n) {
     if ("function" == typeof(null == t ? true : t.getLayout)) {
@@ -12,24 +12,24 @@ require.d(exports, {
         {
           getLayout: i
         } = t,
-        r = o(l({}, function(e, t) {
+        o = r(l({}, function(e, t) {
           if (null == e) return {};
           var n, i, l = function(e, t) {
             if (null == e) return {};
             var n, i, l = {},
-              o = Object.keys(e);
-            for (i = 0; i < o.length; i++) n = o[i], t.indexOf(n) >= 0 || (l[n] = e[n]);
+              r = Object.keys(e);
+            for (i = 0; i < r.length; i++) n = r[i], t.indexOf(n) >= 0 || (l[n] = e[n]);
             return l
           }(e, t);
           if (Object.getOwnPropertySymbols) {
-            var o = Object.getOwnPropertySymbols(e);
-            for (i = 0; i < o.length; i++) n = o[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
+            var r = Object.getOwnPropertySymbols(e);
+            for (i = 0; i < r.length; i++) n = r[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
           }
           return l
         }(t, ["getLayout"])), {
           layout: n
         });
-      return n.forEach(e => e.parent = r), r
+      return n.forEach(e => e.parent = o), o
     }
     return t
   },
@@ -62,7 +62,7 @@ function l(e) {
   return e
 }
 
-function o(e, t) {
+function r(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -75,43 +75,43 @@ function o(e, t) {
   }), e
 }
 
-function r(e, t, n) {
-  return o(l({}, n), {
+function o(e, t, n) {
+  return r(l({}, n), {
     key: e,
     type: t
   })
 }
 
 function s(e) {
-  return r("$Root", i.J.ROOT, e)
+  return o("$Root", i.J.ROOT, e)
 }
 
 function a(e, t) {
-  return r(e, i.J.SECTION, t)
+  return o(e, i.J.SECTION, t)
 }
 
 function u(e, t) {
-  return r(e, i.J.PANEL, t)
+  return o(e, i.J.PANEL, t)
 }
 
 function c(e, t) {
-  return r(e, i.J.PANE, t)
+  return o(e, i.J.PANE, t)
 }
 
 function d(e, t) {
-  return r(e, i.J.CATEGORY, t)
+  return o(e, i.J.CATEGORY, t)
 }
 
 function f(e, t) {
-  return r(e, i.J.ACCORDION, t)
+  return o(e, i.J.ACCORDION, t)
 }
 
 function g(e, t) {
-  return r(e, i.J.LIST, t)
+  return o(e, i.J.LIST, t)
 }
 
 function v(e, t, n) {
-  return o(l({}, n), {
+  return r(l({}, n), {
     key: e,
     type: t
   })
@@ -125,11 +125,11 @@ function b(e, t) {
   return v(e, i.J.TOGGLE, t)
 }
 
-function p(e, t) {
+function x(e, t) {
   return v(e, i.J.SELECT, t)
 }
 
-function x(e, t) {
+function p(e, t) {
   return v(e, i.J.RADIO, t)
 }
 

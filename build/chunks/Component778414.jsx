@@ -1,7 +1,7 @@
 /** Chunk was on 27069 **/
 /** chunk id: 778414, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  C: () => S,
+  C: () => I,
   Z: () => E
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -98,18 +98,18 @@ function w() {
   })
 }
 
-function I(e) {
+function S(e) {
   let {
     user: t,
     guildId: r,
     channelId: i
-  } = e, c = (0, b.Z)(t.id), {
+  } = e, o = (0, g.Z)(t.id), {
     widgets: p,
     isGameFetching: O
-  } = (0, g.Z)(c), m = (0, a.e7)([u.default], () => u.default.getId() === t.id), j = (() => {
+  } = (0, b.Z)(o), m = (0, a.e7)([u.default], () => u.default.getId() === t.id), j = (() => {
     let [e, t] = (0, a.Wu)([d.Z], () => [d.Z.ipCountryCode, d.Z.ipCountryCodeRequest]), r = (0, s.U)();
     return l.useEffect(() => {
-      null == e && null == t && r && (0, o.GE)()
+      null == e && null == t && r && (0, c.GE)()
     }, [e, t, r]), "GB" === e && r
   })(), x = 0 === p.length && m;
   return ((0, f.J)(m, p), x) ? (0, n.jsx)(v.Z, {}) : (0, n.jsxs)(n.Fragment, {
@@ -123,10 +123,10 @@ function I(e) {
   })
 }
 
-function S(e) {
-  return (0, n.jsx)(c.Ttm, {
+function I(e) {
+  return (0, n.jsx)(o.Ttm, {
     className: h.scroller,
     fade: true,
-    children: (0, n.jsx)(I, P({}, e))
+    children: (0, n.jsx)(S, P({}, e))
   })
 }

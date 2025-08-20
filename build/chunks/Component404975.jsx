@@ -5,7 +5,7 @@ require.d(exports, {
 });
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  r = require.n(Chunk120356),
   Chunk873546 = require("./873546.js"),
   Chunk481060 = require("./481060.js"),
   Chunk59662 = require("./59662.js"),
@@ -21,8 +21,8 @@ function d(e) {
     showNavigationMobile: u
   } = (0, a.t)();
   return (0, i.jsxs)("div", {
-    className: o()(c.sidebar, {
-      [c.mobile]: r.tq,
+    className: r()(c.sidebar, {
+      [c.mobile]: o.tq,
       [c.mobileNavigationOpen]: u
     }),
     children: [null != n && (0, i.jsx)(n, {}), (0, i.jsx)(s.zJl, {
