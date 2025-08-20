@@ -461,6 +461,11 @@ let z = {
       var n, r;
       null == I || null == (r = I.window) || null == (n = r.setMinimumSize) || n.call(r, e, t)
     },
+    setTrafficLightPosition(e) {
+      if (h.isPlatformEmbedded && "darwin" === (0, h.getPlatformName)()) try {
+        this.send("WINDOW_SET_TRAFFIC_LIGHT_POSITION", e)
+      } catch (e) {}
+    },
     purgeMemory() {
       Chunk358085.isPlatformEmbedded && I.processUtils.purgeMemory()
     },

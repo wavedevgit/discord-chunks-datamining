@@ -2,13 +2,15 @@
 /** chunk id: 344991, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => O,
-  tE: () => y
+  ZP: () => I,
+  tE: () => v
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
+  Chunk512722 = require("./512722.js"),
+  l = require.n(Chunk512722),
   Chunk481060 = require("./481060.js"),
   Chunk911969 = require("./911969.js"),
   Chunk739754 = require("./739754.jsx"),
@@ -18,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk28517 = require("./28517.js"),
   Chunk623734 = require("./623734.js");
 
-function h(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -27,20 +29,20 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      g(e, t, n[t])
     })
   }
   return e
 }
 
-function g(e, t) {
+function b(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -51,19 +53,19 @@ function g(e, t) {
   return n
 }
 
-function E(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
+function y(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function b(e) {
+function O(e) {
   let {
     icon: t,
     iconSize: n
   } = e;
   return (0, r.jsx)("div", {
-    className: _.iconContainer,
+    className: h.iconContainer,
     style: {
       height: n,
       width: n
@@ -71,112 +73,115 @@ function b(e) {
     children: t
   })
 }
-var y = function(e) {
+var v = function(e) {
   return e[e.PILL_ICON_SIZE = 16] = "PILL_ICON_SIZE", e[e.ROW_ICON_SIZE = 24] = "ROW_ICON_SIZE", e
 }({});
 
-function O(e) {
+function I(e) {
   let {
     selectActionComponent: t,
     queryOptions: n,
     renderIcon: a,
-    renderOptionLabel: h,
+    renderOptionLabel: s,
     defaultValues: g
   } = e, {
-    type: y,
-    placeholder: O,
-    maxValues: v,
-    disabled: I
-  } = t, [T, S] = i.useState(false), [A, C] = i.useState(false), [N, R] = i.useState(new Map(null == g ? true : g.map(e => [e.value, e]))), [P, w] = i.useState(new Set(N.keys())), [D, x] = i.useState(() => (null != g ? g : []).map(e => e.value)), [L, j] = i.useState(0);
+    type: b,
+    placeholder: v,
+    maxValues: I,
+    disabled: T
+  } = t, [S, A] = i.useState(false), [C, N] = i.useState(false), [R, P] = i.useState(new Map(null == g ? true : g.map(e => [e.value, e]))), [w, D] = i.useState(new Set(R.keys())), [x, L] = i.useState(() => (null != g ? g : []).map(e => e.value)), [j, M] = i.useState(0);
   i.useEffect(() => {
     let e = (null != g ? g : []).map(e => e.value);
-    if (e.every(e => D.includes(e)) && D.every(t => e.includes(t))) return;
-    x(e);
+    if (e.every(e => x.includes(e)) && x.every(t => e.includes(t))) return;
+    L(e);
     let t = new Map(null == g ? true : g.map(e => [e.value, e]));
-    R(t), w(new Set(t.keys())), j(e => e + 1)
-  }, [g, D]);
+    P(t), D(new Set(t.keys())), M(e => e + 1)
+  }, [g, x]);
+  let k = (0, f.CJ)();
+  l()(null != k, "SearchableSelectActionComponent must be rendered inside a ComponentStateContext");
   let {
-    state: M,
-    executeStateUpdate: k,
-    visualState: U,
-    isDisabled: G,
-    error: B
-  } = (0, u.Ee)(t, {
-    type: y,
-    selectedOptions: Array.from(N.values())
-  }), Z = v > 1, V = U === d.gH.LOADING;
+    state: U,
+    executeStateUpdate: G,
+    visualState: B,
+    isDisabled: Z,
+    error: V
+  } = k.useComponentState(t, {
+    type: b,
+    selectedOptions: Array.from(R.values())
+  }), F = null != k.modal, H = I > 1, Y = B === _.gH.LOADING;
   i.useEffect(() => {
-    if ((null == M ? true : M.type) === l.re.USER_SELECT || (null == M ? true : M.type) === l.re.ROLE_SELECT || (null == M ? true : M.type) === l.re.MENTIONABLE_SELECT || (null == M ? true : M.type) === l.re.CHANNEL_SELECT) {
-      let e = new Map(M.selectedOptions.map(e => [e.value, e]));
-      R(e), w(new Set(e.keys()))
+    if ((null == U ? true : U.type) === u.re.USER_SELECT || (null == U ? true : U.type) === u.re.ROLE_SELECT || (null == U ? true : U.type) === u.re.MENTIONABLE_SELECT || (null == U ? true : U.type) === u.re.CHANNEL_SELECT) {
+      let e = new Map(U.selectedOptions.map(e => [e.value, e]));
+      P(e), D(new Set(e.keys()))
     }
-  }, [M]);
-  let F = i.useCallback(() => {
-    k({
-      type: y,
-      selectedOptions: Array.from(N.values())
-    }) && w(new Set(N.keys()))
-  }, [k, y, N]);
+  }, [U]);
+  let W = i.useCallback(() => {
+    G({
+      type: b,
+      selectedOptions: Array.from(R.values())
+    }) && D(new Set(R.keys()))
+  }, [G, b, R]);
   i.useEffect(() => {
-    !T && !A && (N.size === P.size && Array.from(N.keys()).every(e => P.has(e)) || F())
-  }, [T, A, P, N, F]);
-  let H = e => {
-      T || C(true), R(new Map(e.map(e => [e.value, e])))
+    !S && !C && (R.size === w.size && Array.from(R.keys()).every(e => w.has(e)) || W())
+  }, [S, C, w, R, W]);
+  let K = e => {
+      S || N(true), P(new Map(e.map(e => [e.value, e])))
     },
-    Y = e => R(null != e ? new Map([
+    z = e => P(null != e ? new Map([
       [e.value, e]
     ]) : new Map),
-    W = e => new Promise(t => {
+    q = e => new Promise(t => {
       t(n(e))
     }),
-    K = (e, t) => {
+    X = (e, t) => {
       let {
         inPill: n
       } = t, i = n ? 16 : 24, o = a(e, i);
-      return null != o ? (0, r.jsx)(b, {
+      return null != o ? (0, r.jsx)(O, {
         icon: o,
         iconSize: i
       }) : null
     },
-    z = 0 === N.size || T,
-    q = {
-      isProcessing: V,
-      isDisabled: I || U === d.gH.DISABLED || G,
-      wrapperClassName: _.select,
-      options: W,
-      placeholder: z ? null != O ? O : f.intl.string(f.t.Otr6W1) : true,
-      onClose: () => S(false),
-      onOpen: () => S(true),
-      onBlur: () => C(false),
+    Q = 0 === R.size || S,
+    J = {
+      isProcessing: Y,
+      isDisabled: T || B === _.gH.DISABLED || Z,
+      wrapperClassName: o()(h.select, {
+        [h.inModal]: F
+      }),
+      options: q,
+      placeholder: Q ? null != v ? v : p.intl.string(p.t.Otr6W1) : true,
+      onClose: () => A(false),
+      onOpen: () => A(true),
+      onBlur: () => N(false),
       maxVisibleItems: 5,
-      optionClassName: _.__invalid_selectOption,
-      renderOptionPrefix: K,
-      renderOptionLabel: h
+      renderOptionPrefix: X,
+      renderOptionLabel: s
     };
   return (0, r.jsxs)(i.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: _.container,
-      children: Z ? (0, r.jsx)(s.VcW, m({
-        className: _.badges,
-        value: Array.from(N.values()),
-        onChange: H,
+      className: h.container,
+      children: H ? (0, r.jsx)(c.VcW, E({
+        className: h.badges,
+        value: Array.from(R.values()),
+        onChange: K,
         multi: true,
         inputClassNames: o()({
-          [_.soloInput]: 0 === N.size,
-          [_.inlineInput]: N.size > 0,
-          [_.hidden]: !z
+          [h.soloInput]: 0 === R.size,
+          [h.inlineInput]: R.size > 0,
+          [h.hidden]: !Q
         }),
         closeOnSelect: false,
         centerCaret: true
-      }, q), L) : (0, r.jsx)(s.VcW, m({
-        className: (_.badges, _.singleSelect),
-        value: [...N.values()][0],
-        onChange: Y,
+      }, J), j) : (0, r.jsx)(c.VcW, E({
+        className: h.singleSelect,
+        value: [...R.values()][0],
+        onChange: z,
         clearable: true,
         centerCaret: true
-      }, q), L)
-    }), null != B ? (0, r.jsx)(c.st, E(m({}, (0, c.c4)(B)), {
-      className: p.error
-    })) : null]
+      }, J), j)
+    }), null == V || F ? null : (0, r.jsx)(d.st, y(E({}, (0, d.c4)(V)), {
+      className: m.error
+    }))]
   })
 }

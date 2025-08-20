@@ -4,7 +4,7 @@
 require.d(exports, {
   O5: () => K,
   V6: () => W,
-  ZP: () => ej
+  ZP: () => ek
 }), require("./35282.js"), require("./388685.js"), require("./997841.js"), require("./539854.js");
 var r, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -632,48 +632,41 @@ function eC(e) {
   })
 }
 
-function eN(e) {
-  var t;
-  let {
-    message: n,
-    guildId: r
-  } = e;
-  (null == (t = n.resolved) ? true : t.members) != null && null != r && ev({
-    id: r,
-    members: Object.entries(n.resolved.members).map(e => {
-      var t, r;
-      let [i, a] = e, o = null == (r = n.resolved) || null == (t = r.users) ? true : t[i];
-      if (null != o) return N(A({}, a), {
-        user: o
+function eN(e, t) {
+  if ((null == e ? true : e.members) == null || null == t) returnfalse;
+  ev({
+    id: t,
+    members: Object.entries(e.members).map(t => {
+      var n;
+      let [r, i] = t, a = null == e || null == (n = e.users) ? true : n[r];
+      if (null != a) return N(A({}, i), {
+        user: a
       })
     }).filter(e => null != e)
   })
 }
 
 function eR(e) {
-  var t;
-  if ((null == (t = e.resolved) ? true : t.members) == null) return;
-  let n = O.Z.getChannel(e.channel_id);
-  null == n || n.isPrivate() || ev({
-    id: n.guild_id,
-    members: Object.entries(e.resolved.members).map(t => {
-      var n, r;
-      let [i, a] = t, o = null == (r = e.resolved) || null == (n = r.users) ? true : n[i];
-      if (null != o) return N(A({}, a), {
-        user: o
-      })
-    }).filter(e => null != e)
-  })
+  let {
+    message: t,
+    guildId: n
+  } = e;
+  return eN(t.resolved, n)
 }
 
 function eP(e) {
-  let {
-    messages: t
-  } = e;
-  t.forEach(e => eR(e))
+  let t = O.Z.getChannel(e.channel_id);
+  eN(e.resolved, null == t ? true : t.guild_id)
 }
 
 function ew(e) {
+  let {
+    messages: t
+  } = e;
+  t.forEach(e => eP(e))
+}
+
+function eD(e) {
   let {
     pins: t
   } = e;
@@ -681,11 +674,11 @@ function ew(e) {
     let {
       message: t
     } = e;
-    return eR(t)
+    return eP(t)
   })
 }
 
-function eD(e) {
+function ex(e) {
   let {
     data: t
   } = e, n = [];
@@ -698,19 +691,24 @@ function eD(e) {
         n.push(e)
       })
     })
-  }), eP({
+  }), ew({
     messages: n
   })
 }
 
-function ex(e) {
+function eL(e) {
   let {
     location: t,
     participants: n
   } = e, r = (0, c.j)(t);
   return null != r && eO(r, n)
 }
-class eL extends(r = Chunk442837.ZP.Store) {
+
+function ej(e) {
+  let t = O.Z.getChannel(e.channelId);
+  return eN(e.resolved, null == t ? true : t.guild_id)
+}
+class eM extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk430824.Z, Chunk485386.Z, Chunk314897.default, Chunk160404.Z)
   }
@@ -819,8 +817,8 @@ class eL extends(r = Chunk442837.ZP.Store) {
     return k
   }
 }
-S(eL, "displayName", "GuildMemberStore");
-let ej = new eL(Chunk570140.Z, {
+S(eM, "displayName", "GuildMemberStore");
+let ek = new eM(Chunk570140.Z, {
   CONNECTION_OPEN: X,
   CONNECTION_OPEN_SUPPLEMENTAL: Q,
   OVERLAY_INITIALIZE: $,
@@ -848,14 +846,15 @@ let ej = new eL(Chunk570140.Z, {
   PASSIVE_UPDATE_V2: ec,
   CLEAR_PENDING_CHANNEL_AND_ROLE_UPDATES: eA,
   LOCAL_MESSAGES_LOADED: er,
-  MESSAGE_CREATE: eN,
-  MESSAGE_UPDATE: eN,
-  LOAD_MESSAGES_SUCCESS: eP,
-  LOAD_MESSAGES_AROUND_SUCCESS: eP,
-  LOAD_RECENT_MENTIONS_SUCCESS: eP,
-  LOAD_PINNED_MESSAGES_SUCCESS: ew,
-  SEARCH_MESSAGES_SUCCESS: eD,
-  MOD_VIEW_SEARCH_MESSAGES_SUCCESS: eD,
+  MESSAGE_CREATE: eR,
+  MESSAGE_UPDATE: eR,
+  LOAD_MESSAGES_SUCCESS: ew,
+  LOAD_MESSAGES_AROUND_SUCCESS: ew,
+  LOAD_RECENT_MENTIONS_SUCCESS: ew,
+  LOAD_PINNED_MESSAGES_SUCCESS: eD,
+  SEARCH_MESSAGES_SUCCESS: ex,
+  MOD_VIEW_SEARCH_MESSAGES_SUCCESS: ex,
   MEMBER_SAFETY_GUILD_MEMBER_SEARCH_SUCCESS: em,
-  EMBEDDED_ACTIVITY_UPDATE_V2: ex
+  EMBEDDED_ACTIVITY_UPDATE_V2: eL,
+  INTERACTION_MODAL_CREATE: ej
 })

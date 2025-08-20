@@ -1335,7 +1335,8 @@ Y(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : O.o.loadGuildIds([e.id
     application: e.application,
     title: e.title,
     components: (0, f.uZ)(e.components),
-    nonce: e.nonce
+    nonce: e.nonce,
+    resolved: e.resolved
   })
 }), H(["INTERACTION_IFRAME_MODAL_CREATE"], e => {
   z({

@@ -194,7 +194,7 @@ class Z extends Chunk861687.Z {
         }, t, n), {
           streamKey: this.streamKey
         })), e === P.hes.RTC_CONNECTED) {
-        var r, i, o, l, c, u;
+        var r, i, o, l, c, u, d;
         null == (r = this._connection) || r.on(a.Sh.ScreenshareFinish, (e, t, n, r, i, a, o, s, l, c, u, d, f, h, m, g) => {
           let E = this.getMediaSessionId(),
             b = this.getRTCConnectionId(),
@@ -297,7 +297,20 @@ class Z extends Chunk861687.Z {
                 type: "MEDIA_ENGINE_SOUNDSHARE_TRANSMITTING"
               }))
           }
-        }), null == (u = this._connection) || u.on(a.Sh.Destroy, () => {
+        }), null == (u = this._connection) || u.on(a.Sh.FirstFrame, () => {
+          if (this._firstFrameDelivered) return;
+          this._firstFrameDelivered = true;
+          let e = this.getStreamAnalyticsProperties();
+          I.default.track(P.rMx.RECEIVER_FIRST_FRAME_DELIVERED, {
+            guild_id: e.guild_id,
+            channel_id: e.channel_id,
+            rtc_connection_id: e.rtc_connection_id,
+            media_session_id: e.media_session_id,
+            parent_media_session_id: e.parent_media_session_id,
+            num_viewers: this.analyticsContext.numViewers,
+            time_connected_to_first_frame_delivered: this.getDuration()
+          })
+        }), null == (d = this._connection) || d.on(a.Sh.Destroy, () => {
           this.errorTimer.stop()
         })
       }
@@ -471,7 +484,7 @@ class Z extends Chunk861687.Z {
       streamChannelId: u,
       parentMediaSessionId: c,
       joinVoiceId: null
-    }), D(this, "analyticsContext", true), D(this, "videoStreamStats", true), D(this, "streamContext", true), D(this, "streamKey", true), D(this, "isStreamer", true), D(this, "updateVideoStreamId", true), D(this, "bandwidthSamples", []), D(this, "goliveCurrentMaxResolution", true), D(this, "soundshareFailuresReported", {}), D(this, "errorTimer", new o.V7), this.streamContext = d, this.streamKey = t, this.isStreamer = l, this.videoStreamStats = new A.Z(r, this.isOwner), this.analyticsContext = a, this.updateVideoStreamId = i().debounce((e, t) => {
+    }), D(this, "analyticsContext", true), D(this, "videoStreamStats", true), D(this, "streamContext", true), D(this, "streamKey", true), D(this, "isStreamer", true), D(this, "updateVideoStreamId", true), D(this, "bandwidthSamples", []), D(this, "goliveCurrentMaxResolution", true), D(this, "_firstFrameDelivered", false), D(this, "soundshareFailuresReported", {}), D(this, "errorTimer", new o.V7), this.streamContext = d, this.streamKey = t, this.isStreamer = l, this.videoStreamStats = new A.Z(r, this.isOwner), this.analyticsContext = a, this.updateVideoStreamId = i().debounce((e, t) => {
       let {
         guildId: n,
         channelId: r,

@@ -47,30 +47,29 @@ function I(e) {
 }
 
 function T(e) {
-  var t;
-  let n = (0, m.CJ)(),
-    v = null == n || null == (t = n.message) ? true : t.getChannelId(),
-    T = d.Z.getChannel(v),
-    S = _.Z.getGuild(null == T ? true : T.getGuildId()),
-    A = (0, u.Z)(null == S ? true : S.id, E.HI),
-    C = t => (0, E._H)(e.type, t, v),
-    N = (e, t) => {
+  let t = (0, m.CJ)(),
+    n = null == t ? true : t.channelId,
+    v = d.Z.getChannel(n),
+    T = _.Z.getGuild(null == v ? true : v.getGuildId()),
+    S = (0, u.Z)(null == T ? true : T.id, E.HI),
+    A = t => (0, E._H)(e.type, t, n),
+    C = (e, t) => {
       let n = t === b.tE.PILL_ICON_SIZE;
       if ((null == e ? true : e.type) === g.tM.USER) {
         let i = h.default.getUser(e.value);
         if (null == i) return;
         return (0, r.jsx)(a.qEK, {
           size: n ? a.EFr.SIZE_16 : a.EFr.SIZE_24,
-          src: i.getAvatarURL(null == S ? true : S.id, t),
+          src: i.getAvatarURL(null == T ? true : T.id, t),
           status: n ? null : p.Z.getStatus(i.id),
           "aria-hidden": true
         })
       }
       if ((null == e ? true : e.type) === g.tM.ROLE) {
         var i;
-        let n = null != S ? f.Z.getRole(S.id, e.value) : true;
-        if (null == n || null == S) return;
-        let o = (0, l._b)(S, n) ? (0, c.Kz)(n, t) : null;
+        let n = null != T ? f.Z.getRole(T.id, e.value) : true;
+        if (null == n || null == T) return;
+        let o = (0, l._b)(T, n) ? (0, c.Kz)(n, t) : null;
         return null != o ? (0, r.jsx)(s.Z, I({}, o)) : (0, r.jsx)(a.lZ8, {
           size: "custom",
           color: null != (i = n.colorString) ? i : y.Pbq,
@@ -79,7 +78,7 @@ function T(e) {
         })
       }
     },
-    R = e => {
+    N = e => {
       let t = null;
       if (e.type === g.tM.USER) {
         let n = h.default.getUser(e.value);
@@ -92,8 +91,8 @@ function T(e) {
           forceUsername: true
         }))
       } else if (e.type === g.tM.ROLE) {
-        let n = null != S ? f.Z.getRole(S.id, e.value) : true,
-          i = null == n ? null : null == A ? true : A[n.id];
+        let n = null != T ? f.Z.getRole(T.id, e.value) : true,
+          i = null == n ? null : null == S ? true : S[n.id];
         null != i && (t = (0, r.jsxs)("div", {
           className: O.roleCountContainer,
           children: [(0, r.jsx)(a.tBG, {
@@ -114,12 +113,12 @@ function T(e) {
         }), t]
       })
     },
-    P = i.useMemo(() => (0, E.tx)(e.defaultValues, null == S ? true : S.id), [e.defaultValues, S]);
+    R = i.useMemo(() => (0, E.tx)(e.defaultValues, null == T ? true : T.id), [e.defaultValues, T]);
   return (0, r.jsx)(b.ZP, {
     selectActionComponent: e,
-    queryOptions: C,
-    renderIcon: N,
-    renderOptionLabel: R,
-    defaultValues: P
+    queryOptions: A,
+    renderIcon: C,
+    renderOptionLabel: N,
+    defaultValues: R
   })
 }
