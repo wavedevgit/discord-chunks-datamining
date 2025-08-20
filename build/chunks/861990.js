@@ -2,14 +2,15 @@
 /** chunk id: 861990, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  B: () => l,
-  Lc: () => c,
-  hn: () => u,
-  zz: () => o
+  B: () => c,
+  Lc: () => u,
+  hn: () => d,
+  zz: () => s
 }), require("./953529.js"), require("./415506.js"), require("./35282.js");
-var Chunk830496 = require("./830496.js"),
+var Chunk476326 = require("./476326.js"),
+  Chunk830496 = require("./830496.js"),
   Chunk959517 = require("./959517.js");
-let a = [{
+let o = [{
     reName: /\.jpe?g$/i,
     name: e => "image".concat(e, ".jpg"),
     type: "image/jpeg"
@@ -58,30 +59,30 @@ let a = [{
     name: e => "video".concat(e, ".webm"),
     type: "image/webm"
   }],
-  o = 524288e3;
+  s = 524288e3;
 
-function s(e) {
+function l(e) {
   let {
     spoiler: t
   } = e;
-  return t ? i._j : ""
-}
-
-function l(e) {
-  var t;
-  let n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null,
-    i = arguments.length > 2 ? arguments[2] : true,
-    a = {
-      id: null != (t = null == n ? true : n.toString()) ? t : e.id
-    };
-  null != e.description && (a.description = e.description);
-  let o = s({
-    spoiler: e.spoiler
-  });
-  return a.filename = "".concat(o).concat(null != i ? i : e.filename), a.uploaded_filename = e.uploadedFilename, "durationSecs" in e && null != e.durationSecs && (a.duration_secs = e.durationSecs), "waveform" in e && null != e.waveform && (a.waveform = e.waveform), "isThumbnail" in e && true === e.isThumbnail && (a.is_thumbnail = e.isThumbnail), "isRemix" in e && true === e.isRemix && (a.is_remix = e.isRemix), "clip" in e && null != e.clip && (a.is_clip = true, a.title = e.clip.name, a.application_id = e.clip.applicationId, a.clip_created_at = (0, r.U)(e.clip.id), a.clip_participant_ids = (0, r.Z)(e.clip.users)), "item" in e && null != e.item && "originalContentType" in e.item && (a.original_content_type = e.item.originalContentType), a
+  return t ? a._j : ""
 }
 
 function c(e) {
+  var t;
+  let n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null,
+    a = arguments.length > 2 ? arguments[2] : true,
+    o = {
+      id: null != (t = null == n ? true : n.toString()) ? t : e.id
+    };
+  null != e.description && (o.description = e.description);
+  let s = l({
+    spoiler: e.spoiler
+  });
+  return o.filename = "".concat(s).concat(null != a ? a : e.filename), o.uploaded_filename = e.uploadedFilename, "durationSecs" in e && null != e.durationSecs && (o.duration_secs = e.durationSecs), "waveform" in e && null != e.waveform && (o.waveform = e.waveform), "isThumbnail" in e && true === e.isThumbnail && (o.is_thumbnail = e.isThumbnail), "isRemix" in e && true === e.isRemix && (o.is_remix = e.isRemix), "clip" in e && null != e.clip && (o.is_clip = true, o.title = e.clip.name, o.application_id = e.clip.applicationId, o.clip_created_at = (0, i.U)(e.clip.id), o.clip_participant_ids = (0, i.Z)(e.clip.users)), "item" in e && null != e.item && e.item.platform === r.ow.WEB && null != e.item.compressionMetadata && (o.original_content_type = e.item.compressionMetadata.originalContentType), o
+}
+
+function u(e) {
   let t = new XMLHttpRequest;
   return new Promise((n, r) => {
     t.open("GET", e, true), t.responseType = "blob", t.onabort = e => r(e), t.onerror = e => r(e), t.ontimeout = e => r(e), t.onload = () => {
@@ -91,8 +92,8 @@ function c(e) {
   })
 }
 
-function u(e) {
-  var t, n, r, i, o, s;
+function d(e) {
+  var t, n, r, i, a, s;
   let l, {
       uri: c,
       i: u,
@@ -102,8 +103,8 @@ function u(e) {
     _ = c.split("/"),
     p = _[_.length - 1];
   p = null != (r = null == (n = p.split("?")) || null == (t = n[0]) ? true : t.toLowerCase()) ? r : "";
-  let h = a.find(e => e.reName.test(p));
-  if (null == h && null != d && (h = a.find(e => e.reName.test(d))), null != h && null != d) {
+  let h = o.find(e => e.reName.test(p));
+  if (null == h && null != d && (h = o.find(e => e.reName.test(d))), null != h && null != d) {
     let e = h.name(u).split(".").pop(),
       t = d.lastIndexOf(".");
     l = false !== t ? "".concat(d.substr(0, t), ".").concat(e) : "".concat(d, ".").concat(e)
@@ -112,7 +113,7 @@ function u(e) {
     uri: c,
     filename: l,
     type: null != (i = null != f ? f : null == h ? true : h.type) ? i : "unknown",
-    isVideo: false !== (null != (o = null != f ? f : null == h ? true : h.name(u)) ? o : "").indexOf("video"),
+    isVideo: false !== (null != (a = null != f ? f : null == h ? true : h.name(u)) ? a : "").indexOf("video"),
     isImage: false !== (null != (s = null != f ? f : null == h ? true : h.name(u)) ? s : "").indexOf("image")
   }
 }

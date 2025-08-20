@@ -11,19 +11,19 @@ var Chunk512722 = require("./512722.js"),
   Chunk830496 = require("./830496.js");
 let l = {
   getUploadPayload: function(e) {
-    var t, n;
-    let r = e.item,
-      a = r.file;
-    return i()(null != a, "file data must not be empty"), {
-      filename: a.name,
-      file_size: a.size,
+    var t, n, r;
+    let a = e.item,
+      l = a.file;
+    return i()(null != l, "file data must not be empty"), {
+      filename: l.name,
+      file_size: l.size,
       id: o().uniqueId(),
       is_clip: null != e.clip,
       title: null == (t = e.clip) ? true : t.name,
       application_id: null == (n = e.clip) ? true : n.applicationId,
       clip_created_at: null != e.clip ? (0, s.U)(e.clip.id) : true,
       clip_participant_ids: null != e.clip ? (0, s.Z)(e.clip.users) : true,
-      original_content_type: r.originalContentType
+      original_content_type: null == (r = a.compressionMetadata) ? true : r.originalContentType
     }
   }
 }

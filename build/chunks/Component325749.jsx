@@ -51,19 +51,19 @@ function V(e) {
   let {
     applicationId: n,
     channelId: t
-  } = e, i = (0, a.e7)([f.Z], () => f.Z.getApplication(n)), V = (0, a.e7)([E.ZP], () => E.ZP.getSelfEmbeddedActivities().get(n)), G = (0, a.e7)([C.Z], () => C.Z.getChannel(t)), H = O.Sb.useSetting(), F = (0, a.Wu)([_.ZP], () => {
+  } = e, i = (0, a.e7)([f.Z], () => f.Z.getApplication(n)), V = (0, a.e7)([E.ZP], () => E.ZP.getSelfEmbeddedActivities().get(n)), G = (0, a.e7)([C.Z], () => C.Z.getChannel(t)), F = O.Sb.useSetting(), H = (0, a.Wu)([_.ZP], () => {
     var e;
     return null == G || null == V ? [] : Array.from(null != (e = V.userIds) ? e : []).map(e => _.ZP.getMember(G.guild_id, e))
   }, [V, G]), q = o.useMemo(() => {
     let e = new Map;
-    return F.forEach(n => {
+    return H.forEach(n => {
       null != n && true !== n && e.set(n.userId, n)
     }), e
-  }, [F]), X = o.useCallback((e, n) => {
+  }, [H]), X = o.useCallback((e, n) => {
     var t;
     if (null == e || e === D.ag) return null;
     let o = q.get(e.id),
-      i = null != (t = null == o ? true : o.nick) ? t : T.ZP.getName(e);
+      i = null != (t = null == o ? true : o.nick) ? t : w.ZP.getName(e);
     return (0, r.jsx)(u.DY3, {
       text: i,
       position: "bottom",
@@ -73,7 +73,7 @@ function V(e) {
         className: M.avatar
       }, e.id)
     }, e.id)
-  }, [q]), $ = null == V ? true : V.userIds, Q = (0, a.Wu)([w.default], () => Array.from(null != $ ? $ : []).map(e => w.default.getUser(e)).filter(e => null != e), [$]), ee = o.useCallback(() => {
+  }, [q]), $ = null == V ? true : V.userIds, Q = (0, a.Wu)([S.default], () => Array.from(null != $ ? $ : []).map(e => S.default.getUser(e)).filter(e => null != e), [$]), ee = o.useCallback(() => {
     let e = (0, k.getPID)();
     s.Z.setInputLocked(!v.ZP.isInputLocked(e), e)
   }, []), en = (0, R.P)(), {
@@ -81,18 +81,16 @@ function V(e) {
     popoutWindowAlwaysOnTop: er,
     handleStayOnTop: eo
   } = function() {
-    let e = (0, a.e7)([b.Z], () => b.Z.getIsAlwaysOnTop(W.KJ3.ACTIVITY_POPOUT)),
+    let e = (0, a.e7)([b.Z], () => b.Z.getIsAlwaysOnTop(K.KJ3.ACTIVITY_POPOUT)),
       n = o.useCallback(e => {
-        h.hY(W.KJ3.ACTIVITY_POPOUT, e)
+        h.hY(K.KJ3.ACTIVITY_POPOUT, e)
       }, []);
     return {
-      canStayOnTop: S.isPlatformEmbedded && N.ZP.supportsFeature(W.eRX.POPOUT_WINDOWS),
+      canStayOnTop: T.isPlatformEmbedded && N.ZP.supportsFeature(K.eRX.POPOUT_WINDOWS),
       popoutWindowAlwaysOnTop: e,
       handleStayOnTop: n
     }
-  }(), ei = (0, z.y)({
-    location: "Activity Popout Window Header"
-  }), {
+  }(), ei = (0, z.y)(), {
     rootNode: el,
     popoutWindow: ea,
     toggleFullScreen: ec
@@ -122,12 +120,12 @@ function V(e) {
     size: 24,
     className: M.appIcon
   });
-  return H && (es = (0, r.jsx)(u.DY3, {
+  return F && (es = (0, r.jsx)(u.DY3, {
     text: V.compositeInstanceId,
     position: "bottom",
     children: es
   })), (0, r.jsx)(u.f6W, {
-    theme: W.BRd.DARK,
+    theme: K.BRd.DARK,
     children: e => (0, r.jsxs)("div", {
       className: l()(M.container, e),
       children: [(0, r.jsxs)("div", {
@@ -159,28 +157,28 @@ function V(e) {
           className: M.fade
         }), (0, r.jsxs)("div", {
           className: M.actionButtonsContainer,
-          children: [(0, r.jsx)(y.Z, {
-            appContext: W.IlC.POPOUT,
+          children: [(0, r.jsx)(I.Z, {
+            appContext: K.IlC.POPOUT,
             applicationId: n,
             channel: G,
             shouldPrioritizeGroupPlusIcon: true,
             iconClassName: M.inviteButtonIcon,
             size: c.zx.Sizes.TINY,
             look: c.zx.Looks.FILLED,
-            buttonText: K.intl.string(K.t["6F9ivr"]),
+            buttonText: W.intl.string(W.t["6F9ivr"]),
             color: c.zx.Colors.TRANSPARENT
-          }), en ? (0, r.jsx)(x.Z, {
+          }), en ? (0, r.jsx)(P.Z, {
             onClick: ee,
             iconComponent: u.epB,
-            label: K.intl.string(K.t.mseZsL)
+            label: W.intl.string(W.t.mseZsL)
           }) : null, et ? (0, r.jsx)(Z.Z, {
             popoutWindowAlwaysOnTop: er,
             onToggleStayOnTop: eo
-          }) : null, ei ? (0, r.jsx)(I.Z, {
+          }) : null, ei ? (0, r.jsx)(y.Z, {
             popoutOpen: true,
             onOpenPopout: () => {},
             onClosePopout: () => {
-              (0, d.yw)(W.rMx.ACTIVITY_POPOUT_POP_IN_BUTTON_CLICKED), (0, L.Z)({
+              (0, d.yw)(K.rMx.ACTIVITY_POPOUT_POP_IN_BUTTON_CLICKED), (0, L.Z)({
                 onConfirm: () => {
                   U.Z.popInActivity()
                 }
@@ -210,7 +208,7 @@ function V(e) {
               let {
                 isShown: i
               } = n;
-              return (0, o.createElement)(P.Z, (t = function(e) {
+              return (0, o.createElement)(x.Z, (t = function(e) {
                 for (var n = 1; n < arguments.length; n++) {
                   var t = null != arguments[n] ? arguments[n] : {},
                     r = Object.keys(t);

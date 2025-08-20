@@ -3,7 +3,7 @@
 require.d(exports, {
   ZP: () => R,
   d7: () => U,
-  iD: () => M
+  iD: () => D
 }), require("./539854.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -56,7 +56,7 @@ function A(t) {
   return t
 }
 let N = [];
-class F extends Chunk647438.PureComponent {
+class M extends Chunk647438.PureComponent {
   componentDidMount() {
     this.timeout = setTimeout(() => {
       this.setState({
@@ -107,7 +107,7 @@ class F extends Chunk647438.PureComponent {
   }
 }
 
-function D(t) {
+function F(t) {
   let {
     activityInviteEducationActivity: e,
     isFocused: i,
@@ -115,12 +115,12 @@ function D(t) {
     className: l,
     channel: a,
     isThreadCreation: d,
-    renderDots: u,
+    renderDots: c,
     poggermodeEnabled: h,
     isComboing: p,
     isInTextChannel: g
   } = t, {
-    rateLimitPerUser: m
+    rateLimitPerUser: f
   } = a, O = r.useRef(null), b = r.useRef(null), [y, S] = r.useState(false);
   if (r.useLayoutEffect(() => {
       if (null != O.current && null != b.current && g) {
@@ -138,7 +138,7 @@ function D(t) {
           e.disconnect()
         }
       }
-    }, [g]), 0 === s.length && !(m > 0) && !p) return null != e ? (0, n.jsx)(F, {
+    }, [g]), 0 === s.length && !(f > 0) && !p) return null != e ? (0, n.jsx)(M, {
     activity: e,
     isFocused: i
   }) : null;
@@ -163,7 +163,7 @@ function D(t) {
     children: [(0, n.jsxs)("div", {
       className: x.typingDots,
       ref: O,
-      children: [s.length > 0 && false !== u && (0, n.jsx)(c.bbz, {
+      children: [s.length > 0 && false !== c && (0, n.jsx)(u.bbz, {
         className: x.ellipsis,
         dotRadius: 3.5,
         themed: true
@@ -182,7 +182,7 @@ function D(t) {
         ref: b,
         children: I
       })]
-    }), (0, n.jsx)(f.Z, {
+    }), (0, n.jsx)(m.Z, {
       channel: a,
       isThreadCreation: d
     }), h && p && (0, n.jsx)(v.Z, {
@@ -191,7 +191,7 @@ function D(t) {
   })
 }
 
-function M(t) {
+function D(t) {
   let e = (0, d.e7)([E.Z], () => E.Z.getTypingUsers(t.id)),
     i = (0, d.e7)([T.default], () => T.default.getCurrentUser());
   return a()(e).keys().filter(t => t !== (null == i ? true : i.id)).reject(t => y.Z.isBlockedOrIgnored(t)).map(t => T.default.getUser(t)).filter(Z.lm).map(e => P.ZP.getName(t.guild_id, t.id, e)).value()
@@ -222,11 +222,11 @@ function R(t) {
       }
       return r
     }(t, ["channel", "isThreadCreation"]);
-  let l = (0, d.e7)([m.ZP, b.default], () => m.ZP.getUserCombo(b.default.getId(), r.id)),
-    a = M(r),
+  let l = (0, d.e7)([f.ZP, b.default], () => f.ZP.getUserCombo(b.default.getId(), r.id)),
+    a = D(r),
     h = (e = A({}, o), i = i = {
-      baseTextColor: (0, c.dQu)(u.Z.colors.INTERACTIVE_NORMAL).hex(),
-      activeTextColor: (0, c.dQu)(u.Z.colors.INTERACTIVE_NORMAL).hex(),
+      baseTextColor: (0, u.dQu)(c.Z.colors.INTERACTIVE_NORMAL).hex(),
+      activeTextColor: (0, u.dQu)(c.Z.colors.INTERACTIVE_NORMAL).hex(),
       activityInviteEducationActivity: U(r),
       typingUsers: s ? [] : a,
       isFocused: (0, d.e7)([w.Z], () => w.Z.isFocused()),
@@ -244,5 +244,5 @@ function R(t) {
     })(Object(i)).forEach(function(t) {
       Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(i, t))
     }), e);
-  return (0, n.jsx)(D, A({}, h))
+  return (0, n.jsx)(F, A({}, h))
 }

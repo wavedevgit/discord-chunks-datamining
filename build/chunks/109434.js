@@ -36,11 +36,11 @@ function g(t) {
   }
   return t
 }
-let f = new Set,
-  m = {
+let m = new Set,
+  f = {
     layoutType: Chunk313361.X.LIST,
     sortOrder: Chunk683860.z.CREATION_DATE,
-    tagFilter: f,
+    tagFilter: m,
     scrollPosition: 0,
     tagSetting: Chunk697988.z.MATCH_SOME
   };
@@ -54,16 +54,16 @@ class v {
         channelStates: r
       }))
     }, this.getChannelState = t => {
-      if (null == t) return m;
+      if (null == t) return f;
       let {
         channelStates: e
       } = this.get(), i = e[t];
       if (null == i) {
-        let e = c.Z.getChannel(t);
+        let e = u.Z.getChannel(t);
         r()(null != e, "[Forum Channel Store] The channel should not be missing."), i = {
           layoutType: e.getDefaultLayout(),
           sortOrder: e.getDefaultSortOrder(),
-          tagFilter: f,
+          tagFilter: m,
           scrollPosition: 0,
           tagSetting: e.getDefaultTagSetting()
         }
@@ -98,6 +98,6 @@ class v {
 let O = (0, Chunk879690.U)((t, e) => new v(t, e)),
   b = t => {
     let e = O();
-    return null == (0, u.e7)([c.Z], () => c.Z.getChannel(t)) ? m : e.getChannelState(t)
+    return null == (0, c.e7)([u.Z], () => u.Z.getChannel(t)) ? f : e.getChannelState(t)
   },
   y = () => O

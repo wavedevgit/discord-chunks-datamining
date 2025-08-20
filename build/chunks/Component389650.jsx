@@ -344,7 +344,6 @@ class H extends Chunk647438.PureComponent {
           })]
         }) : (0, Chunk951288.jsx)(Chunk481060.Wn, {
           messageType: Chunk481060.QYI.INFO,
-          textVariant: "text-lg/medium",
           className: Chunk894462.browserNotice,
           children: Chunk388032.intl.format(Chunk388032.t.mPi3Fx, {
             downloadLink: Chunk981631.EYA.DOWNLOAD
