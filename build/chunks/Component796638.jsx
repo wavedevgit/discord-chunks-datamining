@@ -1,7 +1,7 @@
-/** Chunk was on 24255 **/
+/** Chunk was on 37832 **/
 /** chunk id: 796638, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  ZB: () => v,
+  ZB: () => b,
   ZP: () => S,
   cF: () => p
 }), require("./388685.js"), require("./539854.js");
@@ -25,7 +25,7 @@ function g(e) {
   return e.type === d.fO.USER && e.user.id === n && (null == (t = e.voiceState) ? true : t.selfVideo)
 }
 
-function v(e, t) {
+function b(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {
       tileWidth: m,
       tileMinWidth: 124,
@@ -41,7 +41,7 @@ function v(e, t) {
       cropSelfVideo: f,
       version: p
     } = n,
-    [v, S] = l.useState(Date.now());
+    [b, S] = l.useState(Date.now());
   l.useEffect(() => {
     let e = setTimeout(() => {
       S(Date.now())
@@ -50,9 +50,9 @@ function v(e, t) {
       clearTimeout(e)
     }
   }, [t]);
-  let h = l.useRef({}),
+  let v = l.useRef({}),
     {
-      visibleParticipants: b,
+      visibleParticipants: h,
       participantTileWidth: O
     } = l.useMemo(() => {
       let n = Date.now(),
@@ -74,20 +74,20 @@ function v(e, t) {
           }
         })(e, n)),
         [p, m] = (0, i.partition)(l, d.Io),
-        v = p.findIndex(g),
+        b = p.findIndex(g),
         S = null;
-      false !== v && (S = p[v], p.splice(v, 1));
-      let b = null == S || f ? e : e - r - u,
-        O = Math.max(0, Math.min(Math.floor((b - u) / (o + u)), c, t.length)),
-        y = Math.min((b - u) / O - u, r),
+      false !== b && (S = p[b], p.splice(b, 1));
+      let h = null == S || f ? e : e - r - u,
+        O = Math.max(0, Math.min(Math.floor((h - u) / (o + u)), c, t.length)),
+        y = Math.min((h - u) / O - u, r),
         _ = Math.max(0, O - m.length),
-        Z = m.slice(0, O),
-        j = p.slice(0, _),
+        j = m.slice(0, O),
+        Z = p.slice(0, _),
         I = Array(_);
       if (_ > 0) {
         let e = [];
-        for (let t of j) {
-          let n = h.current[t.id];
+        for (let t of Z) {
+          let n = v.current[t.id];
           null != n && n < _ ? I[n] = t : e.push(t)
         }
         for (let t = 0; t < I.length; t++) {
@@ -98,15 +98,15 @@ function v(e, t) {
         }
       }
       let w = I.filter(s.lm);
-      h.current = (0, i.keyBy)((0, i.range)(w.length), e => w[e].id);
-      let P = [...Z, ...w];
+      v.current = (0, i.keyBy)((0, i.range)(w.length), e => w[e].id);
+      let P = [...j, ...w];
       return null != S && (f && P.length >= O ? P[Math.max(0, P.length - 1)] = S : P.push(S)), {
         visibleParticipants: P,
         participantTileWidth: y
       }
-    }, [e, t, v, p, f, c, u, o, r]);
+    }, [e, t, b, p, f, c, u, o, r]);
   return {
-    visibleParticipants: b,
+    visibleParticipants: h,
     participantTileWidth: O
   }
 }

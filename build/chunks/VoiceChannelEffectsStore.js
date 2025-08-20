@@ -1,4 +1,4 @@
-/** Chunk was on 24255 **/
+/** Chunk was on 37832 **/
 /** chunk id: 456631, original params: e,t,n (module,exports,require) **/
 let r;
 require.d(exports, {
@@ -21,13 +21,13 @@ let p = [],
       userId: e
     })
   },
-  v = [],
+  b = [],
   S = 10 * Chunk70956.Z.Millis.SECOND,
-  h = (0, Chunk392711.debounce)(() => {
+  v = (0, Chunk392711.debounce)(() => {
     let e = (0, Chunk963838.cX)(E);
     Chunk780384.uv.announce(module, "polite"), E = []
   }, 500);
-class b extends(l = Chunk442837.ZP.Store) {
+class h extends(l = Chunk442837.ZP.Store) {
   get recentlyUsedEmojis() {
     return p
   }
@@ -40,13 +40,13 @@ class b extends(l = Chunk442837.ZP.Store) {
   getEffectForUserId(e) {
     return m[e]
   }
-}(i = "displayName") in b ? Object.defineProperty(b, i, {
+}(i = "displayName") in h ? Object.defineProperty(h, i, {
   value: "VoiceChannelEffectsStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : b[i] = "VoiceChannelEffectsStore";
-let O = new b(Chunk570140.Z, {
+}) : h[i] = "VoiceChannelEffectsStore";
+let O = new h(Chunk570140.Z, {
   VOICE_CHANNEL_EFFECT_CLEAR: e => {
     let {
       userId: t
@@ -72,12 +72,12 @@ let O = new b(Chunk570140.Z, {
     }, E = [...E, {
       emojiName: t.name,
       userId: n
-    }], h())
+    }], v())
   },
   VOICE_CHANNEL_EFFECT_SENT_LOCAL: () => {
     let e = new Date;
-    if ((v = [module, ...v].slice(0, 20)).length >= 20) {
-      let t = v[v.length - 1],
+    if ((b = [module, ...b].slice(0, 20)).length >= 20) {
+      let t = b[b.length - 1],
         n = module.getTime() - exports.getTime();
       require < S && (r = new Date(module.getTime() + S - require))
     }

@@ -19,13 +19,13 @@ var Chunk442837 = require("./442837.js"),
 function m(e, t, n) {
   var m;
   let Z = a.Z.getChannel(n),
-    E = (0, i.e7)([o.Z], () => o.Z.getGuild(t), [t]),
-    P = (0, i.e7)([c.ZP], () => c.ZP.getPermissionsForUser(e.id, n), [n, e.id]),
+    P = (0, i.e7)([o.Z], () => o.Z.getGuild(t), [t]),
+    E = (0, i.e7)([c.ZP], () => c.ZP.getPermissionsForUser(e.id, n), [n, e.id]),
     v = (null == (m = s.default.getCurrentUser()) ? true : m.id) === e.id,
     b = (0, i.e7)([u.Z], () => null != n && u.Z.canWithPartialContext(g.Plq.MUTE_MEMBERS, {
       channelId: n
     }), [n]);
-  return null != Z && null != E && (b || v) && P.speaker ? (0, l.jsx)(r.sNh, {
+  return null != Z && null != P && (b || v) && E.speaker ? (0, l.jsx)(r.sNh, {
     id: "audience",
     label: v ? f.intl.string(f.t["6C6PJy"]) : f.intl.string(f.t.VK3vQ0),
     action: () => {

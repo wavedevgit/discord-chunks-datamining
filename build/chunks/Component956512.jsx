@@ -84,24 +84,25 @@ function C(e) {
       icon: C.icon
     }),
     j = (0, i.e7)([f.ZP, h.Z], () => null != S.application ? f.ZP.getVisibleRunningGames().find(e => {
-      var t;
       let {
-        id: n,
-        name: r
+        id: t
       } = e;
-      return null != S.application && (null != n ? n : null == (t = h.Z.getGameByName(r)) ? true : t.id) === S.application.id
+      if (null == S.application) returnfalse;
+      if (t === S.application.id) returntrue;
+      let n = h.Z.getGameByName(S.application.name);
+      return null != n && t === n.id
     }) : null),
     M = (0, i.e7)([p.Z], () => p.Z.getCurrentUserActiveStream()),
     k = (0, i.e7)([m.Z], () => m.Z.getChannelId()),
     U = b.default.extractTimestamp(S.id) + y.e < Date.now(),
     G = (0, r.jsx)(r.Fragment, {
-      children: (0, o._0)(S, C, N, I, false)
+      children: (0, o._0)(S, N, I)
     }),
     {
       newestAnalyticsLocation: B
     } = (0, l.ZP)(R, s.Z.REQUEST_TO_STREAM_INVITE_EMBED);
   return U ? t = v.intl.string(O.default.u4QmWl) : null != M ? t = v.intl.string(O.default.P0wwmJ) : k !== N.id ? t = v.intl.string(O.default.qRXatr) : null == j && (t = v.intl.string(O.default["43zohI"])), (0, r.jsx)(c.W, {
-    header: v.intl.string(O.default.DKHheX),
+    header: v.intl.string(O.default.nAyuPj),
     title: C.name,
     staticBannerSrc: w,
     videoBannerSrc: D,

@@ -1,3 +1,0 @@
-/** Chunk was on 21990 **/
-/** chunk id: 357106, original params: e (module,exports,require) **/
-module.exports = JSON.parse('{"o/An3t":[[1,"username"]," ți-a cerut să faci streaming la ",[1,"applicationName"]],"DKHheX":"Cerere de streaming","8qq+Hx":["Cerere de streaming la ",[1,"applicationName"]],"s7bMT0":[[1,"username"]," \xeeți cere să faci streaming la ",[1,"applicationName"]],"7pndSk":["I-ai cerut cuiva să facă streaming la ",[1,"applicationName"]],"P0wwmJ":"Face deja streaming","u4QmWl":"Cerere expirată","qRXatr":"Nu este \xeen canalul de voce","43zohI":"Nu este \xeen joc","8HU1Mz":"Cerere \xeen așteptare","5+172d":"Fă streaming","jTbTAA":[[8,"$b",[[1,"username"]]]," vrea să te vadă juc\xe2nd ",[8,"$b",[[1,"game"]]],". Transmiți \xeen direct?"]}')

@@ -40,5 +40,6 @@ module.exports = {
   iconPriortySpeakerSpeaking: "iconPriortySpeakerSpeaking__07f91",
   disabled: "disabled__07f91",
   ringing: "ringing__07f91",
-  guestSuffix: "guestSuffix__07f91"
+  guestSuffix: "guestSuffix__07f91",
+  gameIcon: "gameIcon__07f91"
 }

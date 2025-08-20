@@ -1,4 +1,4 @@
-/** Chunk was on 24255 **/
+/** Chunk was on 37832 **/
 /** chunk id: 590076, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => E
@@ -25,10 +25,10 @@ function m(e) {
   a()(null != E, "user cannot be null"), (0, f.Z)(m, E, i, n);
   let {
     handleClick: g,
-    handleMouseDown: v,
+    handleMouseDown: b,
     handleMouseEnter: S,
-    handleMouseMove: h,
-    handleMouseUp: b
+    handleMouseMove: v,
+    handleMouseUp: h
   } = (0, d.Z)({
     user: E,
     channelId: n,
@@ -41,10 +41,10 @@ function m(e) {
     children: (0, r.jsx)("canvas", {
       ref: m,
       onClick: g,
-      onMouseDown: v,
+      onMouseDown: b,
       onMouseEnter: S,
-      onMouseMove: h,
-      onMouseUp: b,
+      onMouseMove: v,
+      onMouseUp: h,
       className: p.sharedCanvas
     })
   })

@@ -1,4 +1,4 @@
-/** Chunk was on 24255 **/
+/** Chunk was on 37832 **/
 /** chunk id: 352978, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   L: () => p,
@@ -24,15 +24,15 @@ let m = Chunk647438.memo(function(e) {
     fit: m = "contain",
     mirror: E = false,
     paused: g = false,
-    streamPreviewURL: v,
+    streamPreviewURL: b,
     videoSpinnerContext: S,
-    userId: h,
-    streamKey: b
+    userId: v,
+    streamKey: h
   } = e, [O, y] = i.useState(true);
   (0, c.Z)({
     location: "VideoStream",
     videoSpinnerContext: S,
-    userId: h,
+    userId: v,
     streamId: t,
     loading: O,
     paused: g
@@ -41,12 +41,12 @@ let m = Chunk647438.memo(function(e) {
     onReady: _
   } = (0, s.Z)({
     streamId: t,
-    userId: h,
+    userId: v,
     loading: O,
     videoSpinnerContext: S,
-    streamKey: b,
+    streamKey: h,
     paused: g
-  }), Z = i.useCallback(() => {
+  }), j = i.useCallback(() => {
     y(false), _()
   }, [_]);
   return (0, l.jsxs)("div", {
@@ -57,15 +57,15 @@ let m = Chunk647438.memo(function(e) {
       }, p),
       streamId: t,
       onResize: n,
-      onReady: Z,
+      onReady: j,
       paused: g
     }), g ? null : (0, l.jsx)("div", {
       className: o()(f.previewWrapper, {
         [f.loading]: O
       }),
       children: O && (0, l.jsxs)(i.Fragment, {
-        children: [null != v ? (0, l.jsx)("img", {
-          src: v,
+        children: [null != b ? (0, l.jsx)("img", {
+          src: b,
           alt: "",
           className: f.previewImage
         }) : (0, l.jsx)("div", {

@@ -1,4 +1,4 @@
-/** Chunk was on 24255 **/
+/** Chunk was on 37832 **/
 /** chunk id: 517525, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => L
@@ -67,10 +67,10 @@ let P = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
     opacity: 1,
     transform: "translate3d(0%, 0, 0)"
   },
-  x = {
+  R = {
     opacity: 0
   },
-  R = {
+  x = {
     opacity: 1
   },
   N = {
@@ -94,20 +94,20 @@ let P = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
         didTrackUpsellViewed: P,
         setDidTrackUpsellViewed: A,
         className: C,
-        premiumIndicator: x,
-        quality: R
+        premiumIndicator: R,
+        quality: x
       } = e,
       {
         analyticsLocations: N
       } = (0, m.ZP)(),
       T = null != (0, O.Z)(o);
     try {
-      t = (0, b.nG)(R)
+      t = (0, h.nG)(x)
     } catch (e) {
       t = false
     }
     try {
-      i = (0, b.tR)(R)
+      i = (0, h.tR)(x)
     } catch (e) {
       i = false
     }
@@ -115,9 +115,9 @@ let P = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
       {
         location: M
       } = (0, p.O)(),
-      L = (0, s.e7)([v.default], () => v.default.getCurrentUser()),
-      F = u && !h.ZP.isPremium(L, _.p9.TIER_1) && !h.ZP.canStreamQuality(h.ZP.StreamQuality.MID, L),
-      k = l.useCallback(() => {
+      L = (0, s.e7)([b.default], () => b.default.getCurrentUser()),
+      F = u && !v.ZP.isPremium(L, _.p9.TIER_1) && !v.ZP.canStreamQuality(v.ZP.StreamQuality.MID, L),
+      V = l.useCallback(() => {
         F && D && (0, f.ZDy)(async () => {
           let {
             default: e
@@ -134,32 +134,32 @@ let P = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
           has_premium_stream_resolution: i,
           location_stack: N
         }), A(true))
-      }, [t, i, D, P, A, N]), null == R) return null;
-    let V = (0, r.jsx)(f.ua7, {
-      text: T ? Z.intl.string(Z.t.q8TiVl) : D ? Z.intl.string(Z.t.IHgpEh) : Z.intl.string(Z.t.vLb0VV),
+      }, [t, i, D, P, A, N]), null == x) return null;
+    let k = (0, r.jsx)(f.ua7, {
+      text: T ? j.intl.string(j.t.q8TiVl) : D ? j.intl.string(j.t.IHgpEh) : j.intl.string(j.t.vLb0VV),
       position: "bottom",
       color: f.ua7.Colors.GREY,
       children: e => (0, r.jsxs)(f.P3F, w(I({}, e), {
-        onClick: k,
-        className: a()(j.qualityIndicator, g, E.eE[d], T ? j.qualityIndicatorLowQuality : j.qualityIndicatorFullQuality, {
-          [j.clickable]: F && D
+        onClick: V,
+        className: a()(Z.qualityIndicator, g, E.eE[d], T ? Z.qualityIndicatorLowQuality : Z.qualityIndicatorFullQuality, {
+          [Z.clickable]: F && D
         }),
         children: [D ? (0, r.jsx)(f.SrA, {
           size: "md",
           color: "currentColor",
-          className: j.premiumStreamIcon
+          className: Z.premiumStreamIcon
         }) : null, (0, r.jsx)("span", {
-          className: j.qualityResolution,
-          children: (0, b.ml)(R.maxResolution)
+          className: Z.qualityResolution,
+          children: (0, h.ml)(x.maxResolution)
         }), (0, r.jsx)("span", {
-          children: (0, b.bp)(R.maxFrameRate)
+          children: (0, h.bp)(x.maxFrameRate)
         })]
       }))
     });
     return (0, r.jsx)(f.IGR, {
-      text: V,
-      className: a()(C, j.qualityIndicatorBadge, {
-        [j.qualityIndicatorBadgePremium]: D && x
+      text: k,
+      className: a()(C, Z.qualityIndicatorBadge, {
+        [Z.qualityIndicatorBadgePremium]: D && R
       }),
       color: c.Z.unsafe_rawColors.PRIMARY_500.css,
       shape: E.eE[d]
@@ -173,20 +173,20 @@ let P = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
       size: u,
       className: s,
       premiumIndicator: c
-    } = e, [d, p] = l.useState(false), m = (0, b.W3)(t), {
-      reducedMotion: v
+    } = e, [d, p] = l.useState(false), m = (0, h.W3)(t), {
+      reducedMotion: b
     } = l.useContext(f.Sfi), S = n && null != m;
     l.useEffect(() => {
       (0, g.Z)(t.stream.ownerId, t.user.getAvatarURL(t.stream.guildId, 80), {
         dispatchWait: true
       })
     }, [t]);
-    let h = (0, f.Yzy)(S, {
+    let v = (0, f.Yzy)(S, {
         enter: {
-          from: v.enabled ? x : A,
-          to: v.enabled ? R : C
+          from: b.enabled ? R : A,
+          to: b.enabled ? x : C
         },
-        leave: v.enabled ? x : A,
+        leave: b.enabled ? R : A,
         config: D
       }, "animate-always"),
       O = (0, f.q_F)({
@@ -199,12 +199,12 @@ let P = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
         popoutProps: l
       } = e;
       return (0, r.jsxs)("div", w(I({
-        className: a()(j.streamQualityIndicator, n)
+        className: a()(Z.streamQualityIndicator, n)
       }, l), {
-        children: [h((e, n) => n ? (0, r.jsx)(o.animated.div, {
+        children: [v((e, n) => n ? (0, r.jsx)(o.animated.div, {
           style: e,
           children: (0, r.jsx)(M, {
-            className: j.liveQualityIndicator,
+            className: Z.liveQualityIndicator,
             participant: t,
             size: u,
             shape: f.Dv2.ROUND_LEFT,
@@ -216,7 +216,7 @@ let P = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
           })
         }) : null), (0, r.jsx)(o.animated.div, {
           style: O,
-          className: j.liveIndicator,
+          className: Z.liveIndicator,
           children: (0, r.jsx)(E.ZP, {
             look: E.jZ.RED,
             size: u,

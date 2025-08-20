@@ -74,9 +74,9 @@ function g(e) {
   }) : (0, n.jsx)(l.ua7, {
     text: b,
     children: e => (0, n.jsxs)(l.P3F, f(d({
-      className: u.addButton,
-      onClick: r
+      className: u.addButton
     }, e), {
+      onClick: r,
       children: [(0, n.jsx)(a.Z, f(d({
         className: u.cover,
         gameName: t

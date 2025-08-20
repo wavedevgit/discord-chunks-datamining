@@ -1,7 +1,7 @@
-/** Chunk was on 24255 **/
+/** Chunk was on 37832 **/
 /** chunk id: 274459, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => b
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -18,15 +18,15 @@ let p = 6 * Chunk70956.Z.Millis.SECOND,
   E = 2 * Chunk70956.Z.Millis.SECOND,
   g = e => "scale(".concat(1 - -(e / 120), ") rotate(").concat(e, "deg)");
 
-function v(e) {
+function b(e) {
   let {
     userId: t,
     voiceChannelEffect: n,
     onComplete: c
   } = e, {
-    emoji: v,
+    emoji: b,
     sentAt: S
-  } = n, h = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), [b, O] = l.useState(true), y = !h, _ = (0, o.Yzy)(b, {
+  } = n, v = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), [h, O] = l.useState(true), y = !v, _ = (0, o.Yzy)(h, {
     from: {
       rotate: false
     },
@@ -63,9 +63,9 @@ function v(e) {
       },
       children: (0, r.jsx)(u.Z, {
         className: f.voiceChannelEffectEmoji,
-        emojiId: v.id,
-        emojiName: v.name,
-        animated: null != (n = v.animated) && n
+        emojiId: b.id,
+        emojiName: b.name,
+        animated: null != (n = b.animated) && n
       })
     })
   })

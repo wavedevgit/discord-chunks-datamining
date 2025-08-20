@@ -1,7 +1,7 @@
-/** Chunk was on 24255 **/
+/** Chunk was on 37832 **/
 /** chunk id: 442168, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => h
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -37,7 +37,7 @@ function E(e) {
 let g = {
     visibility: "hidden"
   },
-  v = {
+  b = {
     precision: 1e-4,
     duration: 300
   },
@@ -47,23 +47,23 @@ let g = {
     precision: 1e-4,
     bounce: 0
   },
-  h = {
+  v = {
     duration: 1e3
   };
 
-function b(e) {
+function h(e) {
   let {
     stream: t,
     inPopout: n
   } = e, {
-    reducedMotion: b
-  } = l.useContext(o.Sf), O = (0, l.useRef)(null), y = d.n.getState().clipsButtonRef, _ = (0, f.V9)(t), Z = (0, a.e7)([s.Z], () => s.Z.getActiveAnimation()), j = (0, a.Wu)([s.Z], () => s.Z.getStreamClipAnimations(_)), I = (0, l.useRef)(true);
+    reducedMotion: h
+  } = l.useContext(o.Sf), O = (0, l.useRef)(null), y = d.n.getState().clipsButtonRef, _ = (0, f.V9)(t), j = (0, a.e7)([s.Z], () => s.Z.getActiveAnimation()), Z = (0, a.Wu)([s.Z], () => s.Z.getStreamClipAnimations(_)), I = (0, l.useRef)(true);
   l.useEffect(() => () => {
     (0, c.Gh)(_)
   }, [_]);
   let w = e => {
       let t = null == y ? true : y.getBoundingClientRect();
-      if (I.current = t, e.timestamp !== Z || null == t || n) return g;
+      if (I.current = t, e.timestamp !== j || null == t || n) return g;
       let {
         top: r,
         left: l
@@ -76,7 +76,7 @@ function b(e) {
       }
     },
     P = (0, l.useRef)(null),
-    A = (0, u.Yzy)(j, {
+    A = (0, u.Yzy)(Z, {
       keys: e => e.timestamp,
       ref: P,
       from: {
@@ -85,17 +85,17 @@ function b(e) {
       enter: {
         opacity: 0
       },
-      config: v
+      config: b
     }, "animate-always"),
     C = (0, l.useRef)(null),
-    x = (0, u.Yzy)(j, {
+    R = (0, u.Yzy)(Z, {
       ref: C,
       keys: e => e.timestamp,
       from: e => E({
         position: "fixed",
         visibility: "hidden",
         opacity: 1
-      }, b.enabled ? w(e) : (() => {
+      }, h.enabled ? w(e) : (() => {
         var e;
         let t = null == (e = O.current) ? true : e.getBoundingClientRect();
         return null == t || n ? g : {
@@ -111,7 +111,7 @@ function b(e) {
       }, w(e))],
       leave: E({
         opacity: 0
-      }, !b.enabled && E({
+      }, !h.enabled && E({
         height: 0,
         width: 0
       }, (() => {
@@ -120,9 +120,9 @@ function b(e) {
           left: I.current.left + 12
         }
       })())),
-      config: b.enabled ? h : S,
+      config: h.enabled ? v : S,
       onRest: (e, t) => {
-        null != t.item && null != j.find(e => e.timestamp === t.item.timestamp) && (0, c.Gh)(_, t.item.timestamp)
+        null != t.item && null != Z.find(e => e.timestamp === t.item.timestamp) && (0, c.Gh)(_, t.item.timestamp)
       }
     }, "animate-always");
   return (0, i.useChain)([P, C], [0, .1], 3e3), (0, r.jsxs)(r.Fragment, {
@@ -135,7 +135,7 @@ function b(e) {
     })), (0, r.jsx)(p.ZP, {
       children: (0, r.jsx)("div", {
         className: m.hidden,
-        children: x((e, t, n, l) => (null == t ? true : t.thumbnail) != null && (0, r.jsx)(i.animated.img, {
+        children: R((e, t, n, l) => (null == t ? true : t.thumbnail) != null && (0, r.jsx)(i.animated.img, {
           src: t.thumbnail,
           className: m.movingImage,
           style: e

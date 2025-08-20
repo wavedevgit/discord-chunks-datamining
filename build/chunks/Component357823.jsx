@@ -1,7 +1,7 @@
-/** Chunk was on 50568 **/
+/** Chunk was on 57937 **/
 /** chunk id: 357823, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => p
+  default: () => y
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -19,7 +19,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk933409 = require("./933409.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let p = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
+let y = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
   let {
     user: t,
     channel: n,
@@ -27,16 +27,16 @@ let p = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
     onSelect: o,
     onInteraction: u,
     context: g
-  } = e, p = n.id, y = t.isNonUserBot(), S = t.id === _.default.getId(), v = (0, s.Z)(t), A = (0, f.Z)(t, a, p), j = (0, b.Y)({
-    isOwnSettings: S,
+  } = e, y = n.id, S = t.isNonUserBot(), p = t.id === b.default.getId(), v = (0, d.Z)(t), m = (0, f.Z)(t, a, y), A = (0, _.Y)({
+    isOwnSettings: p,
     userId: t.id,
-    channelId: p,
+    channelId: y,
     guildId: a,
     context: g
-  }), [m, I] = (0, b.E)(t, p, a), P = (0, O.Z)(t, a, p), Z = (0, c.Z)({
+  }), [I, P] = (0, _.E)(t, y, a), j = (0, O.Z)(t, a, y), C = (0, c.Z)({
     id: t.id,
     label: E.intl.string(E.t["/AXYnJ"])
-  }), C = (0, d.Z)(t.id, n);
+  }), Z = (0, s.Z)(t.id, n);
   return (0, r.jsx)(i.v2r, {
     navId: "user-context",
     onClose: l.Zy,
@@ -44,19 +44,19 @@ let p = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
     onSelect: o,
     onInteraction: u,
     variant: "fixed",
-    children: !y && (0, r.jsxs)(r.Fragment, {
+    children: !S && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)(i.kSQ, {
-        children: [v, A]
-      }), C, j, !S && (0, r.jsx)(i.kSQ, {
+        children: [v, m]
+      }), Z, A, !p && (0, r.jsx)(i.kSQ, {
         children: (0, r.jsxs)(i.sNh, {
           id: "more-options",
           label: E.intl.string(E.t.PdRCRk),
-          children: [m, (0, r.jsx)(i.kSQ, {
-            children: P
-          }), I]
+          children: [I, (0, r.jsx)(i.kSQ, {
+            children: j
+          }), P]
         })
-      }), S && (0, r.jsx)(i.kSQ, {
-        children: Z
+      }), p && (0, r.jsx)(i.kSQ, {
+        children: C
       })]
     })
   })

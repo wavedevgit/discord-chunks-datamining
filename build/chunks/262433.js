@@ -1,8 +1,8 @@
-/** Chunk was on 24255 **/
+/** Chunk was on 37832 **/
 /** chunk id: 262433, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   U: () => E,
-  Z: () => v
+  Z: () => b
 }), require("./539854.js");
 var Chunk392711 = require("./392711.js"),
   l = require.n(Chunk392711),
@@ -37,26 +37,26 @@ function g(e, t) {
   l()(null != (n = E.getState().particles[e.id]) ? n : {}).forEach(t)
 }
 
-function v(e) {
+function b(e) {
   var t, n, r;
   let {
     emojiHose: a,
-    context: v,
+    context: b,
     canvasWidth: S,
-    canvasHeight: h,
-    fallbackColor: b,
+    canvasHeight: v,
+    fallbackColor: h,
     outlineColorDark: O,
     outlineColorLight: y,
     streamerId: _,
-    deadDrawables: Z
+    deadDrawables: j
   } = e;
-  v.save();
-  let j = s.Z.getEmojiImage(null != (n = null != (t = a.emojiId) ? t : a.emojiName) ? n : ""),
+  b.save();
+  let Z = s.Z.getEmojiImage(null != (n = null != (t = a.emojiId) ? t : a.emojiName) ? n : ""),
     I = (0, d.np)(a.x, S),
-    w = (0, d.np)(a.y, h),
+    w = (0, d.np)(a.y, v),
     {
       outlineColor: P
-    } = (0, d.bg)(a.userId, O, y, b);
+    } = (0, d.bg)(a.userId, O, y, h);
   g(a, e => {
       e.x += e.xSpeed * window.devicePixelRatio, e.y += e.ySpeed * window.devicePixelRatio, e.opacity -= e.opacitySpeed, e.opacity <= 0 && (0, o.j)(() => {
         E.setState(t => (delete t.particles[a.id][e.id], 0 === Object.keys(t.particles[a.id]).length && delete t.particles[a.id], t))
@@ -87,11 +87,11 @@ function v(e) {
           return r.particles[e.id] = o, r.lastSpawned[e.id] = Date.now(), r
         })
       })
-    }(a, I, w), (0, f.I)(v, I, w, P, p.q2), (0, f.T)(v, I, w, a.userId), g(a, e => (function(e, t, n) {
+    }(a, I, w), (0, f.I)(b, I, w, P, p.q2), (0, f.T)(b, I, w, a.userId), g(a, e => (function(e, t, n) {
       if (null == t) return;
       let r = n.size * window.devicePixelRatio,
         l = n.x - r / 2 * window.devicePixelRatio,
         i = n.y - 1.2 * r * window.devicePixelRatio;
       e.globalAlpha = n.opacity, e.drawImage(t, r / 2 + l, r / 2 + i, r, r)
-    })(v, j, e)), a.lastUpdatedAt + p.FO < Date.now() && (0, u.ZZ)(_, a), a.state !== c.f.STOP || Object.keys(null != (r = E.getState().particles[a.id]) ? r : {}).length > 0 || Z.push(a), v.restore()
+    })(b, Z, e)), a.lastUpdatedAt + p.FO < Date.now() && (0, u.ZZ)(_, a), a.state !== c.f.STOP || Object.keys(null != (r = E.getState().particles[a.id]) ? r : {}).length > 0 || j.push(a), b.restore()
 }

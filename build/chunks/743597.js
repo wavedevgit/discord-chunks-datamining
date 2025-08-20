@@ -1,4 +1,4 @@
-/** Chunk was on 24255 **/
+/** Chunk was on 37832 **/
 /** chunk id: 743597, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -76,7 +76,7 @@ function m(e, t, n) {
       });
       p(t, n, E), (0, u.gr)(E, e, n), i.current.start(c.FO, () => m(E))
     }, [e, t, n, m]),
-    v = r.useCallback((r, a, o) => {
+    b = r.useCallback((r, a, o) => {
       p.cancel(), (0, u.Df)(t, n, l.current), (0, u.gr)(f(d({}, r), {
         id: l.current,
         x: a,
@@ -90,7 +90,7 @@ function m(e, t, n) {
   return r.useMemo(() => ({
     handleMouseDown: E,
     handleMouseMove: g,
-    handleMouseUp: v,
+    handleMouseUp: b,
     handleMouseEnter: S
-  }), [E, S, g, v])
+  }), [E, S, g, b])
 }
