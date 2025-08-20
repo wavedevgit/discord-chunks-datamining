@@ -95,7 +95,8 @@ let N = {
               name: (0, r.jsx)(p.Z, {
                 userName: H,
                 displayNameStyles: K,
-                effectDisplayType: _.F.ANIMATED
+                effectDisplayType: _.F.ANIMATED,
+                loop: true
               }),
               innerClassName: P,
               withDisplayNameStyles: W && null != K

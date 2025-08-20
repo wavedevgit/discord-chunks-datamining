@@ -158,6 +158,7 @@ function T(e) {
           nameplateData: true === G.pendingNameplate ? t.nameplate : true,
           pendingGlobalName: G.pendingGlobalName,
           pendingDisplayNameStyles: F.displayNameStyles,
+          isHighlighted: true,
           className: k.nameplate
         })]
       })
