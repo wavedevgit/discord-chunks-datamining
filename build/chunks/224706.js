@@ -395,7 +395,8 @@ let Z = {
       embedded: s = false,
       source: c,
       locationObject: u,
-      analyticsLocations: d
+      analyticsLocations: d,
+      remotePartyId: f
     } = e;
     if (__OVERLAY__) return l.Z.dispatch({
       type: "OVERLAY_JOIN_GAME",
@@ -407,11 +408,12 @@ let Z = {
     }), Promise.resolve(true);
     l.Z.dispatch({
       type: "ACTIVITY_JOIN_LOADING",
-      applicationId: r
+      applicationId: r,
+      remotePartyId: f
     });
     try {
       let e = await N.Z.getJoinSecret(t, n, r, i, a);
-      return k({
+      return null == f && k({
         applicationId: r,
         secret: e,
         channelId: i,
