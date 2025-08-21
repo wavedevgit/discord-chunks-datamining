@@ -25,19 +25,19 @@ function m(e) {
   let {
     locked: t,
     pinned: n
-  } = e, [o, a] = r.useState(0), [m, g] = r.useState(0), [y, O] = r.useState(0), b = r.useRef(0), [v, E] = r.useState(0), {
+  } = e, [o, a] = r.useState(0), [m, g] = r.useState(0), [y, O] = r.useState(0), v = r.useRef(0), [b, E] = r.useState(0), {
     timeToLiveMs: _,
-    reappearTimeMs: x
+    reappearTimeMs: S
   } = d.ZP.useState(e => ({
     timeToLiveMs: e.timeToLiveMs,
     reappearTimeMs: e.reappearTimeMs
-  }), s()), S = {
+  }), s()), x = {
     timeToLiveMs: _,
-    reappearTimeMs: x
-  }, I = r.useRef(S);
+    reappearTimeMs: S
+  }, I = r.useRef(x);
   r.useEffect(() => {
-    I.current = S
-  }), r.useEffect(() => (b.current = setInterval(() => {
+    I.current = x
+  }), r.useEffect(() => (v.current = setInterval(() => {
     let e = Date.now();
     g(e), O(t => {
       if (0 === t) return e;
@@ -47,7 +47,7 @@ function m(e) {
       return n > i ? t + r : t
     })
   }, 100), () => {
-    clearInterval(b.current)
+    clearInterval(v.current)
   }), []);
   let j = () => {
       a(Date.now()), E(e => e + 1)
@@ -67,8 +67,8 @@ function m(e) {
     }),
     [w, Z] = r.useState(false);
   if (r.useEffect(() => {
-      v > 10 && Z(true)
-    }, [v]), w) throw Error("ClickZoneDebugWidget crashed, too many clicks");
+      b > 10 && Z(true)
+    }, [b]), w) throw Error("ClickZoneDebugWidget crashed, too many clicks");
   return t && !n ? null : (0, i.jsx)(i.Fragment, {
     children: N((e, t) => t && (0, i.jsx)(c.animated.div, {
       style: e,
@@ -81,7 +81,7 @@ function m(e) {
           children: (0, i.jsxs)(u.Text, {
             variant: "text-md/semibold",
             color: "always-white",
-            children: ["Click Me (", v, ")"]
+            children: ["Click Me (", b, ")"]
           })
         })
       })

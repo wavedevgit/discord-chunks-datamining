@@ -84,10 +84,10 @@ function k(e, t) {
 function D(e) {
   let {
     participant: t
-  } = e, n = t.user.id, o = (0, a.e7)([S.Z], () => {
+  } = e, n = t.user.id, o = (0, a.e7)([x.Z], () => {
     let e = (0, m.Z)(t.type);
-    return S.Z.isLocalMute(t.user.id, e)
-  }, [t]), l = (0, a.e7)([x.default], () => x.default.getId()), {
+    return x.Z.isLocalMute(t.user.id, e)
+  }, [t]), l = (0, a.e7)([S.default], () => S.default.getId()), {
     hasVideo: d
   } = (0, E.Z)(t, l), p = o && d, f = r.useCallback(() => {
     u.Z.toggleLocalMute(n, s.Yn.STREAM)
@@ -259,10 +259,10 @@ let M = new Set([Chunk981631.jm8.ENDED, Chunk981631.jm8.FAILED, Chunk981631.jm8.
           style: {
             transform: "scale(".concat(m, ")")
           },
-          children: (0, i.jsx)(v.Z, {
+          children: (0, i.jsx)(b.Z, {
             participant: t,
             width: n,
-            fit: null != O ? O : b.L.CONTAIN,
+            fit: null != O ? O : v.L.CONTAIN,
             inPopout: true,
             focused: !r,
             selected: false,

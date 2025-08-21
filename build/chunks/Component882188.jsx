@@ -10,10 +10,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk728345 = require("./728345.js"),
   Chunk199902 = require("./199902.js"),
   Chunk314897 = require("./314897.js"),
-  Chunk158776 = require("./158776.js"),
   Chunk763624 = require("./763624.js"),
   Chunk607361 = require("./607361.js"),
-  Chunk877912 = require("./877912.js"),
+  Chunk463421 = require("./463421.js"),
   Chunk981631 = require("./981631.js"),
   Chunk658805 = require("./658805.js"),
   Chunk388032 = require("./388032.jsx");
@@ -21,21 +20,20 @@ var Chunk951288 = require("./951288.js"),
 function E(e, t) {
   let {
     enableRequestToStream: n
-  } = c.A.useExperiment({
+  } = d.A.useExperiment({
     guildId: t.guild_id,
     location: "useRequestToStreamItem"
-  }), E = (0, i.e7)([s.default], () => s.default.getId()), v = (0, i.e7)([d.Z], () => d.Z.getActivities(e, t.getGuildId()).find(e => null != e.application_id && e.type === m.IIU.PLAYING)), b = (0, i.e7)([u.Z], () => null != u.Z.getStreamForUser(e, t.getGuildId())), p = (0, f.Z)(e), h = (0, o.IX)(null == v ? true : v.application_id).data, I = (0, g.Z)(e, t.id);
-  return E !== e && null != v && null != h && n && I && !b ? (0, l.jsx)(r.sNh, {
+  }), E = (0, i.e7)([s.default], () => s.default.getId()), P = (0, g.Z)(e, t.guild_id)[0], v = (0, i.e7)([u.Z], () => null != u.Z.getStreamForUser(e, t.getGuildId())), b = (0, o.IX)(null == P ? true : P.application_id).data, h = (0, c.Z)(e, t.id);
+  return E !== e && null != P && null != b && n && h && !v ? (0, l.jsx)(r.sNh, {
     id: "request-to-stream",
-    disabled: p,
-    label: P.intl.format(Z.default["8qq+Hx"], {
-      applicationName: h.name
+    label: Z.intl.format(m.default["8qq+Hx"], {
+      applicationName: b.name
     }),
     action: function() {
       a.Z.sendActivityInvite({
-        type: m.mFx.STREAM_REQUEST,
+        type: f.mFx.STREAM_REQUEST,
         channelId: t.id,
-        activity: v,
+        activity: P,
         content: "<@".concat(e, ">"),
         location: "request to stream item",
         targetUserId: e

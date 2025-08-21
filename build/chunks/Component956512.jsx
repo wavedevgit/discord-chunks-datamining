@@ -94,7 +94,7 @@ function C(e) {
     }) : null),
     M = (0, i.e7)([p.Z], () => p.Z.getCurrentUserActiveStream()),
     k = (0, i.e7)([m.Z], () => m.Z.getChannelId()),
-    U = b.default.extractTimestamp(S.id) + y.e < Date.now(),
+    U = b.default.extractTimestamp(S.id) + y.O < Date.now(),
     G = (0, r.jsx)(r.Fragment, {
       children: (0, o._0)(S, N, I)
     }),

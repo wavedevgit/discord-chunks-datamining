@@ -22,12 +22,12 @@ function y(e, t, n) {
   var y;
   let O = d.default.getUser(e);
   if (null == O) return null;
-  let b = u.Z.getCurrentlySelectedChannelId(),
-    v = c.Z.getChannel(b),
+  let v = u.Z.getCurrentlySelectedChannelId(),
+    b = c.Z.getChannel(v),
     E = l.Z.getApplication(t),
     _ = a.ZP.getRunningGames().find(e => e.id === t),
-    x = null != (y = null == _ ? true : _.name) ? y : null == E ? true : E.name,
-    S = (0, p.oY)(null == v ? true : v.guild_id, null == v ? true : v.id, O),
+    S = null != (y = null == _ ? true : _.name) ? y : null == E ? true : E.name,
+    x = (0, p.oY)(null == b ? true : b.guild_id, null == b ? true : b.id, O),
     I = (0, i.jsxs)("div", {
       className: g.nowPlayingNotification,
       children: [(0, i.jsx)("div", {
@@ -44,8 +44,8 @@ function y(e, t, n) {
           color: "interactive-normal",
           className: g.bodyText,
           children: m.intl.format(m.t["q7/rgo"], {
-            username: null != S ? S : O.username,
-            gameName: x,
+            username: null != x ? x : O.username,
+            gameName: S,
             gameIcon: () => null != E || null != _ ? (0, i.jsx)(s.Z, {
               game: E,
               pid: null == _ ? true : _.pid,
@@ -63,7 +63,7 @@ function y(e, t, n) {
       notif_type: h.n0.NowPlayingNotification,
       notif_user_id: O.id,
       activity_type: n.type,
-      activity_name: null != x ? x : n.name
+      activity_name: null != S ? S : n.name
     });
   return {
     body: I,

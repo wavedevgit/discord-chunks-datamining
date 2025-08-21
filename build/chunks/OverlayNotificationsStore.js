@@ -1,7 +1,7 @@
 /** Chunk was on 46290 **/
 /** chunk id: 371467, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => eb
+  Z: () => ev
 }), require("./539854.js"), require("./388685.js"), require("./642613.js"), require("./290780.js");
 var i, Chunk512722 = require("./512722.js"),
   o = require.n(Chunk512722),
@@ -59,7 +59,7 @@ function X(e, t, n) {
   }) : e[t] = n, e
 }
 
-function J(e) {
+function q(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -72,7 +72,7 @@ function J(e) {
   return e
 }
 
-function q(e, t) {
+function J(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -126,12 +126,12 @@ function ef(e) {
   let i = er[n];
   if (i.timer.stop(), er = [...er], t === Q._1z.FOCUSED) {
     let [e] = er.splice(n, 1);
-    e = q(J({}, e), {
+    e = J(q({}, e), {
       status: t
     }), er.unshift(e), eo = true;
     return
   }
-  t === Q._1z.DISMISSED ? er.splice(n, 1) : er[n] = q(J({}, i), {
+  t === Q._1z.DISMISSED ? er.splice(n, 1) : er[n] = J(q({}, i), {
     status: t
   }), ed()
 }
@@ -142,12 +142,12 @@ function eh(e) {
 }
 
 function em(e, t) {
-  let n = J(q(J({}, ei), {
+  let n = q(J(q({}, ei), {
       timestamp: Date.now()
     }), t),
     i = (0, l.Z)(),
     r = false,
-    o = J({
+    o = q({
       id: i,
       status: Q._1z.ACTIVE,
       timer: function(e) {
@@ -165,7 +165,7 @@ function em(e, t) {
           }
         }
       }(i, n.expirationExternallyManaged, n.duration),
-      props: q(J({}, e), {
+      props: J(q({}, e), {
         onNotificationShow: () => {
           var t;
           r || (r = true, null == (t = e.onNotificationShow) || t.call(e, i))
@@ -196,13 +196,13 @@ function eg() {
     if (!_.Z.isFriend(e)) returnfalse;
     let r = t.gameId;
     if (null == r) returnfalse;
-    let o = null == (n = v.Z.getNowPlaying(r)[e]) ? true : n.activity;
+    let o = null == (n = b.Z.getNowPlaying(r)[e]) ? true : n.activity;
     if (null == o || o.type !== Q.IIU.PLAYING || ! function(e) {
         var t;
         let n = (null == (t = e.timestamps) ? true : t.start) != null ? e.timestamps.start : e.created_at;
         return null != n && Date.now() - n < eu
       }(o)) returnfalse;
-    let l = x.Z.getVoiceChannelId(),
+    let l = S.Z.getVoiceChannelId(),
       a = null == (i = C.Z.getDiscoverableVoiceStateForUser(e)) ? true : i.channelId;
     if (null != l && null != a && l === a) returnfalse;
     let s = (0, M.pL)();
@@ -255,7 +255,7 @@ function ey(e) {
   if (null == r || !r.isRingable() || "GUILD_RING_START" === e.type && !m.Z.getCurrentConfig({
       guildId: e.guildId,
       location: "OverlayV3StartRinging"
-    }).enabled || S.Z.getStatus() === Q.Skl.DND || h.QZ.getSetting()) returnfalse;
+    }).enabled || x.Z.getStatus() === Q.Skl.DND || h.QZ.getSetting()) returnfalse;
   let o = er.find(e => e.type === L.kL.TEXT && e.channelId === t && e.messageType === Q.uaV.CALL);
   null != o && ef(o.id), em((0, W.Z)(r), {
     priority: L.Tu.HIGH,
@@ -273,7 +273,7 @@ class eO extends(i = Chunk442837.ZP.Store) {
   }
 }
 X(eO, "displayName", "OverlayNotificationsStore");
-let eb = new eO(Chunk570140.Z, {
+let ev = new eO(Chunk570140.Z, {
   OVERLAY_UPDATE_NOTIFICATION_STATUS: function(e) {
     let {
       notificationId: t,
@@ -332,7 +332,7 @@ let eb = new eO(Chunk570140.Z, {
             l = (0, z.Z)(e, t, n, a, r);
             break;
           case Q.mFx.JOIN_REQUEST:
-            if (null == (r = S.Z.getApplicationActivity(s)) || null == r.party || r.party.id !== t.activity.party_id) returnfalse;
+            if (null == (r = x.Z.getApplicationActivity(s)) || null == r.party || r.party.id !== t.activity.party_id) returnfalse;
             l = (0, G.Z)(e, n, a, r);
             break;
           case Q.mFx.STREAM_REQUEST:
@@ -342,20 +342,26 @@ let eb = new eO(Chunk570140.Z, {
               guildId: e.guild_id,
               location: "showActivityNotification"
             });
-            if (!c || null == (r = S.Z.getApplicationActivity(s)) || r.application_id !== s) returnfalse;
+            if (!c || null == (r = x.Z.getApplicationActivity(s)) || r.application_id !== s) returnfalse;
             l = (0, B.Z)(e, n, a, r)
         }
-        return null != l && (em(l, {
+        if (null == l) returnfalse;
+        em(l, {
           priority: L.Tu.URGENT,
           expirationExternallyManaged: true,
           channelId: e.id,
-          duration: en
-        }), true)
+          duration: en,
+          uniqueKey: "activity-".concat(t.activity.type, "-").concat(n.id, "-").concat(e.id, "-").concat(s)
+        });
+        let u = new Set;
+        return er.filter(e => null != e.uniqueKey).sort((e, t) => t.timestamp - e.timestamp).forEach(e => {
+          null != e.uniqueKey && (u.has(e.uniqueKey) ? ef(e.id, Q._1z.DISMISSED) : u.add(e.uniqueKey))
+        }), true
       }(a, l, s);
       if (false !== e) return e
     }
     if (D.Z.isNotificationDisabled(T.OverlayNotificationDisabledSetting.TEXT_CHAT) || I.Z.disableNotifications || !(0, p.eF)(l, r)) returnfalse;
-    let c = !b.Z.isSoundDisabled(N.Ay),
+    let c = !v.Z.isSoundDisabled(N.Ay),
       u = null != (i = O.Z.getMessage(r, l.id)) ? i : (0, d.e5)(l);
     em((0, H.Z)(a, u, s, c), {
       type: L.kL.TEXT,

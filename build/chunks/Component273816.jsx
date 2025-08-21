@@ -1,7 +1,7 @@
 /** Chunk was on 46290 **/
 /** chunk id: 273816, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => v
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -50,17 +50,17 @@ function O(e, t) {
   }), e
 }
 
-function b(e) {
+function v(e) {
   let {
     locked: t,
     pinned: n,
     anchorLeft: o
-  } = e, b = (0, a.e7)([d.Z], () => d.Z.getSocket()), v = (0, a.e7)([h.ZP], () => h.ZP.isGPUBoosted());
+  } = e, v = (0, a.e7)([d.Z], () => d.Z.getSocket()), b = (0, a.e7)([h.ZP], () => h.ZP.isGPUBoosted());
   (0, u.nU)();
   let E = (0, a.e7)([p.Z], () => p.Z.getWindow(m.$J)),
-    [_, x] = (0, u.m8)(b),
+    [_, S] = (0, u.m8)(v),
     {
-      currentFPS: S,
+      currentFPS: x,
       averageFrameTime: I,
       timeSinceLastDrop: j,
       onResetFrameData: C,
@@ -69,9 +69,9 @@ function b(e) {
       bufferFramecountRef: Z,
       frameCheckerEffect: P
     } = (0, u.d6)(true, _, true),
-    [T, A, k] = (0, u.ZF)(b),
+    [T, A, k] = (0, u.ZF)(v),
     [D, R] = (0, u.Y5)(T, P, E),
-    L = performance.now() - x.current < u.MC,
+    L = performance.now() - S.current < u.MC,
     M = A(I, Z.current);
   (0, c.ZP)(() => (D(), () => {
     R()
@@ -102,8 +102,8 @@ function b(e) {
         children: ["FPS:", " ", (0, i.jsx)(s.Text, {
           tag: "span",
           variant: "code",
-          color: S < 30 ? "text-danger" : S < 45 ? "text-feedback-warning" : "text-primary",
-          children: S.toFixed(2)
+          color: x < 30 ? "text-danger" : x < 45 ? "text-feedback-warning" : "text-primary",
+          children: x.toFixed(2)
         })]
       })]
     }), (W || !t) && (0, i.jsxs)("div", {
@@ -209,7 +209,7 @@ function b(e) {
           children: "(Main App Backgrounded)"
         })
       }))
-    }), v && (0, i.jsx)(s.Text, {
+    }), b && (0, i.jsx)(s.Text, {
       tag: "span",
       variant: "code",
       color: "text-feedback-positive",

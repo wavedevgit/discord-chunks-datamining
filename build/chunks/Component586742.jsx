@@ -112,7 +112,7 @@ let D = Chunk647438.memo(function(e) {
     })), [o]);
     r.useEffect(() => {
       d && (0, _.zi)(w.Odu.VIDEO, {
-        locked: v.default.isInstanceLocked(),
+        locked: b.default.isInstanceLocked(),
         shownUserIds: Array.from(h),
         liveUserIds: Array.from(h),
         contentInventoryIds: []
@@ -155,7 +155,7 @@ let D = Chunk647438.memo(function(e) {
       containerRef: h
     } = e, m = "boolean" != typeof c.meta.horizontal || c.meta.horizontal, g = n.length > 0 && null != t && null != u && (!a || c.pinned);
     r.useEffect(() => {
-      (0, x.m3)({
+      (0, S.m3)({
         locked: a,
         pinned: c.pinned,
         widget: c.type,
@@ -220,22 +220,22 @@ let D = Chunk647438.memo(function(e) {
 
 function z(e) {
   var t, n, o, l;
-  let s = (0, a.e7)([b.Z, y.Z], () => y.Z.getChannel(b.Z.getVoiceChannelId())),
+  let s = (0, a.e7)([v.Z, y.Z], () => y.Z.getChannel(v.Z.getVoiceChannelId())),
     c = 2 * e.padding + 2 * e.borderWidth,
     f = null == s ? true : s.id,
     [m, O] = (0, a.e7)([p.Z], () => null == f ? [
       [], 0
     ] : [p.Z.getVideoParticipants(f), p.Z.getParticipantsVersion(f)], [f], E.Q),
-    v = "boolean" != typeof e.widget.meta.horizontal || e.widget.meta.horizontal,
+    b = "boolean" != typeof e.widget.meta.horizontal || e.widget.meta.horizontal,
     {
       width: _ = e.width - c,
-      height: x = e.height - c,
+      height: S = e.height - c,
       ref: I
     } = (0, d.ZP)(e.locked, e.widget.pinned),
     {
       participantTileWidth: j,
       visibleParticipants: C
-    } = (0, g.ZB)(v ? _ : x, m, {
+    } = (0, g.ZB)(b ? _ : S, m, {
       tileWidth: N.vZ,
       tileMinWidth: N.mo,
       tileMargin: N.F$,
@@ -247,7 +247,7 @@ function z(e) {
     Z = {
       id: e.widget.id,
       containerSize: {
-        containerHeight: x,
+        containerHeight: S,
         containerWidth: _
       },
       sizeOffset: c,
@@ -295,7 +295,7 @@ function z(e) {
         height: c
       } = M(k(A({}, a), {
         widget: o,
-        operation: S.B.RESIZE_NORTH,
+        operation: x.B.RESIZE_NORTH,
         computedSize: {
           width: r,
           height: i
@@ -315,15 +315,15 @@ function z(e) {
       })
     }, [t])
   }({
-    horizontal: v,
+    horizontal: b,
     widget: e.widget,
     widgetLayoutSpecs: Z
   }), (0, i.jsx)(L, k(A({}, e), {
     channel: s,
     participants: C,
     participantsVersion: O,
-    width: v ? j : null != _ ? _ : e.width,
-    height: v ? null != x ? x : e.height : j,
+    width: b ? j : null != _ ? _ : e.width,
+    height: b ? null != S ? S : e.height : j,
     containerRef: I
   }))
 }

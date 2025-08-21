@@ -1,7 +1,7 @@
 /** Chunk was on 46290 **/
 /** chunk id: 444982, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => S
 });
 var Chunk951288 = require("./951288.js"),
   Chunk239091 = require("./239091.js"),
@@ -53,7 +53,7 @@ function _(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let x = {
+let S = {
   [Chunk981631.Odu.VIDEO]: {
     renderWidget(e) {
       let {
@@ -112,7 +112,7 @@ let x = {
         id: n.id,
         locked: o,
         pinned: n.pinned,
-        widget: b.Odu.VOICE_V3,
+        widget: v.Odu.VOICE_V3,
         maxDisplayedVoiceStates: null != (t = n.meta.voiceStatesMaxShown) ? t : O.At,
         isPreviewingInGame: false,
         showEmpty: l

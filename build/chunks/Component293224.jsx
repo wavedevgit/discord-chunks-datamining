@@ -115,7 +115,7 @@ function es(e) {
     onMouseLeave: g,
     onContextMenu: y,
     isTrayButton: O
-  } = e, b = function(e, t) {
+  } = e, v = function(e, t) {
     if (null == e) return {};
     var n, i, r = function(e, t) {
       if (null == e) return {};
@@ -152,7 +152,7 @@ function es(e) {
     isActive: n,
     onContextMenu: y,
     onPopoutClick: h,
-    "aria-label": b["aria-label"]
+    "aria-label": v["aria-label"]
   })
 }
 
@@ -178,8 +178,8 @@ function ec(e) {
         value: $.bk.SETTINGS_OPENED
       })
     },
-    S = null == (t = (0, et.II)()) ? true : t.id,
-    I = (0, o.e7)([ee.Z], () => ee.Z.isLimitedInteractionOverrideEnabled(S)),
+    x = null == (t = (0, et.II)()) ? true : t.id,
+    I = (0, o.e7)([ee.Z], () => ee.Z.isLimitedInteractionOverrideEnabled(x)),
     j = (0, V.Hu)({
       location: m.Z.OVERLAY,
       autoTrackExposure: true
@@ -200,7 +200,7 @@ function ec(e) {
         showOutputDevices: true,
         onSettingsButtonClick: n,
         showSearchBar: !I
-      }) : C ? (0, i.jsx)(v.Z, {
+      }) : C ? (0, i.jsx)(b.Z, {
         onClose: n,
         maybeRenderPTTCheckbox: true,
         renderInputProfiles: true,
@@ -208,7 +208,7 @@ function ec(e) {
         renderInputVolume: true,
         maybeRenderInputMeter: true,
         renderSettingsButton: true
-      }) : (0, i.jsx)(b.default, {
+      }) : (0, i.jsx)(v.default, {
         onClose: n,
         renderInputDevices: true,
         renderOutputDevices: true,
@@ -235,7 +235,7 @@ function ec(e) {
         highlightedColor: "red",
         tooltip: f,
         onClick: () => {
-          (0, x.Z)(u, s, ei.jXE.OVERLAY), (0, $.Ws)(ei.Odu.QUICK_ACTIONS, {
+          (0, S.Z)(u, s, ei.jXE.OVERLAY), (0, $.Ws)(ei.Odu.QUICK_ACTIONS, {
             type: $.Qu.MICROPHONE,
             value: p ? $.bk.ENABLED : $.bk.DISABLED,
             userId: B.default.getId()
@@ -287,7 +287,7 @@ function eu(e) {
     },
     E = ea(n),
     {
-      showRefreshedAudioContextMenu: x
+      showRefreshedAudioContextMenu: S
     } = (0, w.e)({
       location: "HeadphonesActionButton"
     });
@@ -297,13 +297,13 @@ function eu(e) {
       let {
         closePopout: t
       } = e;
-      return x ? (0, i.jsx)(v.Z, {
+      return S ? (0, i.jsx)(b.Z, {
         onClose: E(t),
         renderDeafenCheckbox: true,
         renderOutputDevices: true,
         renderOutputVolume: true,
         renderSettingsButton: true
-      }) : (0, i.jsx)(b.default, {
+      }) : (0, i.jsx)(v.default, {
         onClose: E(t),
         renderOutputDevices: true,
         renderOutputVolume: true,
@@ -356,19 +356,19 @@ function ed(e) {
       userId: B.default.getId()
     })
   }, {
-    Component: b,
-    play: v,
+    Component: v,
+    play: b,
     events: {
       onMouseEnter: _,
-      onMouseLeave: x
+      onMouseLeave: S
     }
-  } = (0, u.o)(s ? "disable" : "enable"), S = null != n ? (0, R.X)({
+  } = (0, u.o)(s ? "disable" : "enable"), x = null != n ? (0, R.X)({
     enabled: s,
     cameraUnavailable: f,
     hasPermission: m,
     channel: n
   }) : true;
-  r.useEffect(() => () => v(), [s, v]);
+  r.useEffect(() => () => b(), [s, b]);
   let I = ea(l),
     j = null == n || !m;
   return (0, i.jsx)(d.yRy, {
@@ -393,8 +393,8 @@ function ed(e) {
       } = t;
       return (0, i.jsx)(es, {
         ref: a,
-        iconComponent: b,
-        tooltip: S,
+        iconComponent: v,
+        tooltip: x,
         onClick: O,
         isActive: s,
         highlightedColor: "green",
@@ -402,7 +402,7 @@ function ed(e) {
         popoutOpen: r,
         onContextMenu: y(n),
         onMouseEnter: _,
-        onMouseLeave: x,
+        onMouseLeave: S,
         disabled: j,
         isTrayButton: true
       })
@@ -420,7 +420,7 @@ function ep(e) {
     u = (0, k.Z)(n),
     p = (0, o.cj)([Y.Z], () => (0, j.Z)(Y.Z)),
     f = (0, o.e7)([G.Z], () => G.Z.getCurrentUserActiveStream()),
-    h = (0, en.g)((0, q.getPID)()),
+    h = (0, en.g)((0, J.getPID)()),
     m = () => {
       h(), (0, $.Ws)(ei.Odu.QUICK_ACTIONS, {
         type: $.Qu.GO_LIVE,
@@ -451,15 +451,15 @@ function ep(e) {
       })
     },
     {
-      Component: b,
+      Component: v,
       events: {
-        onMouseEnter: v,
+        onMouseEnter: b,
         onMouseLeave: E
       },
       play: _
     } = (0, s.P)(g ? "disable" : "enable");
   r.useEffect(() => () => _(), [g, _]);
-  let x = ea(l);
+  let S = ea(l);
   return (0, i.jsx)(d.yRy, {
     targetElementRef: a,
     renderPopout: e => {
@@ -471,7 +471,7 @@ function ep(e) {
         currentUser: c,
         activeStreams: g ? [f] : [],
         handleGoLive: m,
-        onClose: x(t),
+        onClose: S(t),
         appContext: ei.IlC.OVERLAY,
         disableChangeWindows: true
       })
@@ -487,7 +487,7 @@ function ep(e) {
       } = n;
       return (0, i.jsx)(es, {
         ref: a,
-        iconComponent: b,
+        iconComponent: v,
         tooltip: t,
         "aria-label": er.intl.string(er.t.FeUKeH),
         isActive: g,
@@ -497,7 +497,7 @@ function ep(e) {
         popoutDisabled: !g,
         onPopoutClick: O(r),
         onContextMenu: O(r),
-        onMouseEnter: v,
+        onMouseEnter: b,
         onMouseLeave: E,
         disabled: !p || !u,
         isTrayButton: true
@@ -518,7 +518,7 @@ function ef(e) {
     analyticsLocations: O
   } = (0, g.ZP)();
 
-  function b(e) {
+  function v(e) {
     null != u && ((0, $.Ws)(ei.Odu.QUICK_ACTIONS, {
       type: $.Qu.SOUNDBOARD,
       value: $.bk.SETTINGS_OPENED
@@ -533,13 +533,13 @@ function ef(e) {
     }))
   }
   let {
-    Component: v,
+    Component: b,
     events: {
       onClick: E,
       onMouseEnter: _,
-      onMouseLeave: x
+      onMouseLeave: S
     }
-  } = (0, c.j)(), S = ea(a), I = (0, o.e7)([P.Z, B.default], () => P.Z.isUserPlayingSounds(B.default.getId()), []) ? "green" : true;
+  } = (0, c.j)(), x = ea(a), I = (0, o.e7)([P.Z, B.default], () => P.Z.isUserPlayingSounds(B.default.getId()), []) ? "green" : true;
   return (0, i.jsx)(d.yRy, {
     targetElementRef: s,
     renderPopout: e => {
@@ -549,7 +549,7 @@ function ef(e) {
       return y || null == l ? (0, i.jsx)(i.Fragment, {}) : (0, i.jsx)(T.Z, {
         guildId: u,
         channel: l,
-        onClose: S(t),
+        onClose: x(t),
         analyticsSource: "action bar button"
       })
     },
@@ -564,7 +564,7 @@ function ef(e) {
       } = t;
       return (0, i.jsx)(es, {
         ref: s,
-        iconComponent: v,
+        iconComponent: b,
         tooltip: p ? er.intl.string(er.t["Ox4/zc"]) : h ? er.intl.string(er.t["+YBKYG"]) : m ? er.intl.string(er.t.X1lQlp) : true,
         onClick: e => {
           E(), (0, $.Ws)(ei.Odu.QUICK_ACTIONS, {
@@ -575,9 +575,9 @@ function ef(e) {
         },
         highlightedColor: I,
         defaultColor: I,
-        onContextMenu: b,
+        onContextMenu: v,
         onMouseEnter: _,
-        onMouseLeave: x,
+        onMouseLeave: S,
         isActive: r,
         popoutOpen: r,
         disabled: y,
@@ -616,7 +616,7 @@ function eh(e) {
       onMouseEnter: y,
       onMouseLeave: O
     }
-  } = (0, l.K)(), b = ea(n), v = s ? g : d.Csw;
+  } = (0, l.K)(), v = ea(n), b = s ? g : d.Csw;
   return (0, i.jsx)(d.yRy, {
     targetElementRef: a,
     renderPopout: e => {
@@ -625,7 +625,7 @@ function eh(e) {
       } = e;
       return (0, i.jsx)(M.Z, {
         currentVoiceChannel: t,
-        onClose: b(n),
+        onClose: v(n),
         onSelect: u
       })
     },
@@ -640,7 +640,7 @@ function eh(e) {
       } = t;
       return (0, i.jsx)(es, {
         ref: a,
-        iconComponent: v,
+        iconComponent: b,
         tooltip: s ? er.intl.string(er.t["6vrfgo"]) : er.intl.string(er.t.S0W8Z2),
         onClick: s ? c : m(n),
         defaultColor: s ? "disconnect" : true,
@@ -691,7 +691,7 @@ function em(e) {
 function eg(e) {
   let {
     voiceChannel: t
-  } = e, n = (0, I.KS)(t), r = (0, S.ZP)(t);
+  } = e, n = (0, I.KS)(t), r = (0, x.ZP)(t);
   return (0, i.jsxs)("div", {
     className: eo.voiceChannelNameContainer,
     children: [null != n && (0, i.jsx)(d.Text, {
@@ -720,7 +720,7 @@ function ey(e) {
     quality: Q.Z.getQuality(),
     state: Q.Z.getState(),
     lastPing: Q.Z.getLastPing()
-  })), s = (0, o.e7)([J.Z], () => null != l && J.Z.hasVideo(l), [l]);
+  })), s = (0, o.e7)([q.Z], () => null != l && q.Z.hasVideo(l), [l]);
   return null != l && null != r && (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(Z.Z, (t = el({}, a), n = n = {
       channelId: l,

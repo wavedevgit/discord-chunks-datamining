@@ -58,11 +58,11 @@ let Q = !Chunk358085.isPlatformEmbedded && false,
   }) : null,
   X = null;
 
-function J(e) {
+function q(e) {
   e.preventDefault()
 }
 
-function q(e) {
+function J(e) {
   (0, u.jW)(e, async () => {
     let {
       default: e
@@ -121,7 +121,7 @@ let $ = Chunk647438.memo(function(e) {
         } = e;
         r === H.AeJ.PRIMARY && t === i && n()
       },
-      onContextMenu: q,
+      onContextMenu: J,
       children: r ? null : (0, i.jsx)(L.Z, {
         className: Y.closeContainer,
         children: (0, i.jsx)(k.Z, {
@@ -176,14 +176,14 @@ function eo(e) {
     incompatibleApp: m,
     hasZeroSizeDimension: C,
     keybind: k
-  } = (0, a.cj)([U.ZP, S.default, I.Z, _.ZP], () => {
+  } = (0, a.cj)([U.ZP, x.default, I.Z, _.ZP], () => {
     let e = I.Z.windowSize((0, Z.ZY)(n)),
       t = _.ZP.getOverlayKeybind(),
       i = (0, w.getPID)();
     return {
       locked: U.ZP.isInputLocked(i),
       focused: U.ZP.isFocused(i),
-      incompatibleApp: S.default.incompatibleApp,
+      incompatibleApp: x.default.incompatibleApp,
       hasZeroSizeDimension: 0 === e.height || 0 === e.width,
       keybind: null != t ? (0, N.BB)(t.shortcut, true) : "???"
     }
@@ -214,15 +214,15 @@ function eo(e) {
     let t = (0, V.pL)(),
       n = E.Z.getVoiceChannelId(),
       i = O.Z.getChannel(n),
-      r = null != i ? b.Z.getGuild(i.guild_id) : null,
+      r = null != i ? v.Z.getGuild(i.guild_id) : null,
       o = null != y.Z.getCurrentUserActiveStream(),
       l = null != n,
-      a = (0, g.Z)(v.Z) && !o && null != t,
+      a = (0, g.Z)(b.Z) && !o && null != t,
       s = l && null != r && null != n,
       {
         allowActivityWidget: c
       } = (0, T.Rb)("overlay"),
-      u = null != (e = x.default.getFocusedPID()) ? e : (0, w.getPID)();
+      u = null != (e = S.default.getFocusedPID()) ? e : (0, w.getPID)();
     if (M.default.hasChangedRenderMode(u)) return;
     let p = z.Z.isNotificationDisabled(P.OverlayNotificationDisabledSetting.WELCOME_GENERAL),
       f = z.Z.isNotificationDisabled(P.OverlayNotificationDisabledSetting.GO_LIVE_NUDGE),
@@ -250,17 +250,17 @@ function eo(e) {
     if (j.S.dispatch(H.CkL.OVERLAY_V3_SHOW_WIDGETS, {
         show: true
       }), o) {
-      if ((0, s.Ay)(c.u1M), n.addEventListener("contextmenu", J, false), null != X) {
+      if ((0, s.Ay)(c.u1M), n.addEventListener("contextmenu", q, false), null != X) {
         let e = Date.now() - X;
         d.Z.track(H.rMx.OVERLAY_LOCKED, {
           unlocked_duration: e
         }), X = null
       }
       return () => {
-        n.removeEventListener("contextmenu", J, false)
+        n.removeEventListener("contextmenu", q, false)
       }
     }
-    n.removeEventListener("contextmenu", J, false), null == X && (X = Date.now(), d.Z.track(H.rMx.OVERLAY_UNLOCKED))
+    n.removeEventListener("contextmenu", q, false), null == X && (X = Date.now(), d.Z.track(H.rMx.OVERLAY_UNLOCKED))
   }, [o, n]), (0, i.jsx)(h.Gt, {
     value: L,
     children: C || m ? null : (0, i.jsx)(c.f6W, {
