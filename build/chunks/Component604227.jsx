@@ -73,8 +73,8 @@ function b() {
 function y() {
   var e, t, n, i, o;
   let s = window.GLOBAL_ENV.RELEASE_CHANNEL,
-    f = "435523",
-    h = "be458a6bac991a345c3310248b5b5d367a235ac4".substring(0, 7),
+    f = "435526",
+    h = "65c60eb1e9d6b6a1d8a7e92366a51791bf37c3f2".substring(0, 7),
     g = null === Chunk579806.Z || true === Chunk579806.Z ? true : Chunk579806.Z.remoteApp.getVersion(),
     y = null === Chunk579806.Z || true === Chunk579806.Z || null == (e = (t = Chunk579806.Z.remoteApp).getBuildNumber) ? true : module.call(exports),
     O = null === Chunk579806.Z || true === Chunk579806.Z || null == (n = (i = Chunk579806.Z.remoteApp).getAppArch) ? true : require.call(Chunk120356),

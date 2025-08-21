@@ -1,15 +1,16 @@
 /** Chunk was on 27069 **/
 /** chunk id: 747101, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  F: () => s,
-  Z: () => u
+  F: () => u,
+  Z: () => d
 }), require("./539854.js"), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk224706 = require("./224706.js"),
-  Chunk669764 = require("./669764.js");
+  Chunk669764 = require("./669764.js"),
+  Chunk77498 = require("./77498.js");
 
-function o(e) {
+function c(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -28,7 +29,7 @@ function o(e) {
   return e
 }
 
-function c(e, t) {
+function s(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -41,7 +42,7 @@ function c(e, t) {
   }), e
 }
 
-function s(e) {
+function u(e) {
   n.useEffect(() => {
     if (e.length > 0) {
       let t = e.filter(e => a.Z.canFetch(e));
@@ -60,11 +61,11 @@ function s(e) {
   }
 }
 
-function u(e) {
+function d(e) {
   let {
     gameDataMap: t,
     isGameFetching: r
-  } = s(n.useMemo(() => (function(e) {
+  } = u(n.useMemo(() => (function(e) {
     let t = [];
     return e.forEach(e => {
       e.games.forEach(e => {
@@ -76,12 +77,16 @@ function u(e) {
     widgets: n.useMemo(() => e.map(e => {
       let r = e.games.map(e => {
         let r = t[e.applicationId];
-        return c(o({}, e), {
-          gameName: null == r ? true : r.name,
-          imageSrc: null == r ? true : r.coverImageUrl
+        if (null != r) return s(c({}, e), {
+          gameName: r.name,
+          imageSrc: r.coverImageUrl
+        });
+        let n = o.Z.getDetectableGame(e.applicationId);
+        return s(c({}, e), {
+          gameName: null == n ? true : n.name
         })
       });
-      return c(o({}, e), {
+      return s(c({}, e), {
         games: r
       })
     }), [e, t]),
