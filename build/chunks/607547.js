@@ -6,8 +6,9 @@ module.exports = {
   notificationSettingsContainer: "notificationSettingsContainer__9d98d",
   notificationItem: "notificationItem__9d98d",
   notificationDescriptionContainer: "notificationDescriptionContainer__9d98d",
-  mainCollapseableContainer: "mainCollapseableContainer__9d98d",
   groupContainer: "groupContainer__9d98d",
+  mainCollapseableContainer: "mainCollapseableContainer__9d98d",
+  groupWarning: "groupWarning__9d98d",
   standaloneContainer: "standaloneContainer__9d98d",
   groupCollapsedContainer: "groupCollapsedContainer__9d98d",
   groupCollapsedAction: "groupCollapsedAction__9d98d",
@@ -43,5 +44,6 @@ module.exports = {
   nuxFirstImage: "nuxFirstImage__9d98d",
   nuxUserSettingsImage: "nuxUserSettingsImage__9d98d",
   mainTitleContainer: "mainTitleContainer__9d98d",
-  nuxDivider: "nuxDivider__9d98d"
+  nuxDivider: "nuxDivider__9d98d",
+  systemServiceWarning: "systemServiceWarning__9d98d"
 }

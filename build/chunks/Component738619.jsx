@@ -143,37 +143,37 @@ function F(e) {
     isFocused: i
   }) : null;
   let [E, T, I] = s, w = "";
-  1 === s.length ? w = j.intl.format(j.t.lJ9sZW, {
+  1 === s.length ? w = x.intl.format(x.t.lJ9sZW, {
     a: E
-  }) : 2 === s.length ? w = j.intl.format(j.t.rB0CUV, {
+  }) : 2 === s.length ? w = x.intl.format(x.t.rB0CUV, {
     a: E,
     b: T
-  }) : 3 === s.length ? w = j.intl.format(j.t.StKTho, {
+  }) : 3 === s.length ? w = x.intl.format(x.t.StKTho, {
     a: E,
     b: T,
     c: I
-  }) : s.length > 3 && (w = j.intl.format(j.t.Q8lUnJ, {}));
-  let Z = S && s.length > 0 && s.length <= 3 ? j.intl.format(j.t["qD/0qa"], {}) : w;
+  }) : s.length > 3 && (w = x.intl.format(x.t.Q8lUnJ, {}));
+  let Z = S && s.length > 0 && s.length <= 3 ? x.intl.format(x.t["qD/0qa"], {}) : w;
   return (0, n.jsxs)("div", {
-    className: o()(x.typing, {
+    className: o()(j.typing, {
       "stop-animation": !i,
-      [x.isComboing]: h && p,
-      [x.inTextChannel]: g
+      [j.isComboing]: h && p,
+      [j.inTextChannel]: g
     }, l),
     children: [(0, n.jsxs)("div", {
-      className: x.typingDots,
+      className: j.typingDots,
       ref: O,
       children: [s.length > 0 && false !== c && (0, n.jsx)(u.bbz, {
-        className: x.ellipsis,
+        className: j.ellipsis,
         dotRadius: 3.5,
         themed: true
       }), (0, n.jsx)("span", {
-        className: x.text,
+        className: j.text,
         "aria-live": "polite",
         "aria-atomic": true,
         children: Z
       }), (0, n.jsx)("span", {
-        className: x.text,
+        className: j.text,
         style: {
           position: "absolute",
           visibility: "hidden"

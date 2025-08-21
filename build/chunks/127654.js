@@ -2,8 +2,8 @@
 /** chunk id: 127654, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
   G: () => C,
-  d5: () => j
-}), require("./539854.js"), require("./388685.js"), require("./415506.js");
+  d5: () => x
+}), require("./388685.js"), require("./415506.js");
 var Chunk481060 = require("./481060.js"),
   Chunk475179 = require("./475179.js"),
   Chunk904245 = require("./904245.js"),
@@ -47,31 +47,33 @@ function Z(e) {
   return e
 }
 
-function C(e, t) {
-  let i = f.default.getCurrentUser(),
-    n = e.getGuildId(),
-    r = O.dg(n),
-    s = [],
-    o = 0,
-    a = 0,
-    d = 0,
-    c = [];
-  for (let e of t) d += 1, o += e.size, s.push(e.size), e.size > a && (a = e.size), null != e.type ? c.push(e.type) : c.push("unknown");
-  if (a > r) {
+function C(e, t, i) {
+  let n = f.default.getCurrentUser(),
+    r = e.getGuildId(),
+    s = O.dg(r),
+    o = Array.from(t).map(e => e.size),
+    a = Array.from(t).map(e => null != e.type ? e.type : "unknown"),
+    d = o.reduce((e, t) => e + t, 0),
+    c = o.length > 0 ? Math.max(...o) : 0,
+    h = o.length;
+  if (c > s) {
+    let t = null == i ? true : i.reduce((e, t) => e + t, 0);
     (0, u.yw)(E.rMx.FILE_SIZE_LIMIT_EXCEEDED, {
       channel_id: e.id,
-      guild_id: n,
-      user_individual_file_size_limit: r,
-      pre_compression_file_sizes: s,
-      pre_compression_aggregate_file_size: o,
-      num_attachments: d,
+      guild_id: r,
+      user_individual_file_size_limit: s,
+      pre_compression_file_sizes: o,
+      pre_compression_aggregate_file_size: d,
+      num_attachments: h,
       error_type: T.xi.UPLOAD_ATTACHMENT_MAX_SIZE_ERROR,
-      attachment_mimetypes: c
+      attachment_mimetypes: a,
+      post_compression_file_sizes: i,
+      post_compression_aggregate_file_size: t
     }), (0, l.openUploadError)({
       title: w.intl.string(w.t["/tGlcn"]),
-      help: (0, y.BK)(i, n),
-      showPremiumUpsell: !(0, b.M5)(i, I.p9.TIER_2),
-      fileSize: a
+      help: (0, y.BK)(n, r),
+      showPremiumUpsell: !(0, b.M5)(n, I.p9.TIER_2),
+      fileSize: c
     });
     return
   }(0, l.openUploadError)({
@@ -129,7 +131,7 @@ async function P(e, t, i) {
     }
   })))
 }
-async function j(e, t, i) {
+async function x(e, t, i) {
   let {
     filesMetadata: n,
     requireConfirm: c = true,
@@ -146,8 +148,8 @@ async function j(e, t, i) {
       currentGuildId: O
     }),
     I = S.map(e => e.file),
-    j = S.map(e => e.compressionMetadata);
-  if ((0, y.Bf)(I, O)) return void C(t, b);
+    x = S.map(e => e.compressionMetadata);
+  if ((0, y.Bf)(I, O)) return void C(t, b, I.map(e => e.size));
   if (m.Z.getUploadCount(t.id, i) + I.length > E.dN1) {
     (0, l.openUploadError)({
       title: w.intl.string(w.t.wOr6hI),
@@ -162,7 +164,7 @@ async function j(e, t, i) {
   }
   if (t.type !== E.d4z.GUILD_VOICE && t.type !== E.d4z.GUILD_STAGE_VOICE || h.Z.getChatOpen(t.id) || r.Z.updateChatOpen(t.id, true), c) {
     let e = I.map((e, t) => {
-      let i = j[t];
+      let i = x[t];
       return Z({
         file: e,
         platform: d.ow.WEB,
@@ -180,7 +182,7 @@ async function j(e, t, i) {
   } else {
     let e = I.map((e, i) => {
       let r = null != n ? n[i] : {},
-        s = j[i];
+        s = x[i];
       return new a.nH(Z({
         file: e,
         platform: d.ow.WEB,

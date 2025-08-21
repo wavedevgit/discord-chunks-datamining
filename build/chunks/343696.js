@@ -9,5 +9,6 @@ module.exports = {
   positive: "positive__35859",
   warning: "warning__35859",
   info: "info__35859",
-  error: "error__35859"
+  error: "error__35859",
+  actionContainer: "actionContainer__35859"
 }
