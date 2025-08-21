@@ -32,16 +32,18 @@ function E(e) {
     spacing: v = h,
     caretConfig: I,
     layerContext: T,
-    animationStyle: S
-  } = e, A = i.useRef(null), {
-    isRichTooltip: C
-  } = (0, f.nr)(), N = i.useMemo(() => ("left" === y || "right" === y ? g : m).includes(O) ? O : "center", [y, O]);
+    animationStyle: S,
+    positionKey: A
+  } = e, C = i.useRef(null), {
+    isRichTooltip: N
+  } = (0, f.nr)(), R = i.useMemo(() => ("left" === y || "right" === y ? g : m).includes(O) ? O : "center", [y, O]);
   if (!n) return null;
-  let R = (0, r.jsx)(c.j, {
+  let P = (0, r.jsx)(c.j, {
     targetRef: a,
     position: y,
-    align: N,
+    align: R,
     spacing: v,
+    positionKey: A,
     autoInvert: true,
     nudgeAlignIntoViewport: true,
     children: e => {
@@ -54,10 +56,10 @@ function E(e) {
         align: h,
         customOffset: "custom" === h ? m : true
       }, O = (0, r.jsxs)("div", {
-        ref: A,
+        ref: C,
         id: E,
         className: o()(p.tooltip, {
-          [p.richTooltip]: C
+          [p.richTooltip]: N
         }),
         role: "tooltip",
         "data-position": f,
@@ -79,6 +81,6 @@ function E(e) {
   });
   return null != T ? (0, r.jsx)(l.mh, {
     layerContext: T,
-    children: R
-  }) : R
+    children: P
+  }) : P
 }

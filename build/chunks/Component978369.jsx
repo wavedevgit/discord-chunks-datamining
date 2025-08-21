@@ -15,10 +15,10 @@ let d = Chunk647438.memo(function(e) {
   let {
     currentTags: t,
     onTagSelect: r,
-    onNoneSelect: l,
+    onNoneSelect: i,
     onClose: a
   } = e;
-  return (0, n.jsx)(i.v2r, {
+  return (0, n.jsx)(l.v2r, {
     navId: "widget-game-tags",
     "aria-label": s.intl.string(s.t.r6EJOj),
     onClose: a,
@@ -26,29 +26,29 @@ let d = Chunk647438.memo(function(e) {
     children: Object.entries(c.aE).map(e => {
       let [a, o] = e, u = ((e, a) => {
         let o = [];
-        return a.type === c.kd.RADIO && o.push((0, n.jsx)(i.k5B, {
+        return a.type === c.kd.RADIO && o.push((0, n.jsx)(l.k5B, {
           id: "".concat(e, "-none"),
           group: e,
           label: s.intl.string(s.t.PoWNfX),
           checked: !a.tags.some(e => t.includes(e)),
-          action: () => l(a.tags)
-        }, "none")), a.tags.forEach(l => {
-          let s = c.XV[l];
-          null != s && (a.type === c.kd.RADIO ? o.push((0, n.jsx)(i.k5B, {
-            id: l,
+          action: () => i(a.tags)
+        }, "none")), a.tags.forEach(i => {
+          let s = c.XV[i];
+          null != s && (a.type === c.kd.RADIO ? o.push((0, n.jsx)(l.k5B, {
+            id: i,
             group: e,
             label: s.getText(),
-            checked: t.includes(l),
-            action: () => r(l, true)
-          }, l)) : o.push((0, n.jsx)(i.S89, {
-            id: l,
+            checked: t.includes(i),
+            action: () => r(i, true)
+          }, i)) : o.push((0, n.jsx)(l.S89, {
+            id: i,
             label: s.getText(),
-            checked: t.includes(l),
-            action: () => r(l, false)
-          }, l)))
+            checked: t.includes(i),
+            action: () => r(i, false)
+          }, i)))
         }), o
       })(a, o);
-      return (0, n.jsx)(i.kSQ, {
+      return (0, n.jsx)(l.kSQ, {
         label: o.getLabel(),
         children: u
       }, a)
@@ -61,35 +61,35 @@ function f(e) {
     tags: t,
     widgetType: r,
     applicationId: f,
-    ref: g
-  } = e, p = (0, l.useRef)(null), {
-    trackUserProfileAction: b
-  } = (0, a.KZ)(), O = (0, l.useMemo)(() => null != t ? t : [], [t]), m = (0, l.useCallback)(function(e) {
+    ref: b
+  } = e, g = (0, i.useRef)(null), {
+    trackUserProfileAction: p
+  } = (0, a.KZ)(), O = (0, i.useMemo)(() => null != t ? t : [], [t]), m = (0, i.useCallback)(function(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
       n = new Set(O);
     if (t) {
       let t = Object.values(c.aE).find(t => t.tags.includes(e));
       null != t && (t.tags.forEach(e => {
         n.delete(e)
-      }), n.add(e), b({
+      }), n.add(e), p({
         action: "ADD_GAME_TAGS"
       }))
-    } else n.has(e) ? (n.delete(e), b({
+    } else n.has(e) ? (n.delete(e), p({
       action: "REMOVE_GAME_TAGS"
-    })) : (n.add(e), b({
+    })) : (n.add(e), p({
       action: "ADD_GAME_TAGS"
     }));
     (0, o.n$)(r, f, Array.from(n))
-  }, [O, b, r, f]), j = (0, l.useCallback)(e => {
+  }, [O, p, r, f]), j = (0, i.useCallback)(e => {
     let t = new Set(O);
     e.forEach(e => {
       t.delete(e)
-    }), b({
+    }), p({
       action: "REMOVE_GAME_TAGS"
     }), (0, o.n$)(r, f, Array.from(t))
-  }, [O, b, r, f]);
-  return (0, n.jsx)(i.yRy, {
-    targetElementRef: p,
+  }, [O, p, r, f]);
+  return (0, n.jsx)(l.yRy, {
+    targetElementRef: g,
     position: "right",
     align: "top",
     renderPopout: e => {
@@ -106,10 +106,10 @@ function f(e) {
     children: e => {
       var t, r;
       return (0, n.jsx)("div", {
-        ref: e => (null != e && (p.current = e, g.current = e), () => {
-          p.current = null, g.current = null
+        ref: e => (null != e && (g.current = e, b.current = e), () => {
+          g.current = null, b.current = null
         }),
-        children: (0, n.jsx)(i.P3F, (t = function(e) {
+        children: (0, n.jsx)(l.P3F, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var r = null != arguments[t] ? arguments[t] : {},
               n = Object.keys(r);
@@ -129,7 +129,7 @@ function f(e) {
         }({}, e), r = r = {
           className: u.addButton,
           "aria-label": s.intl.string(s.t.r6EJOj),
-          children: (0, n.jsx)(i.Text, {
+          children: (0, n.jsx)(l.Text, {
             variant: "text-xxs/medium",
             color: "text-secondary",
             children: s.intl.string(s.t.fZSej4)

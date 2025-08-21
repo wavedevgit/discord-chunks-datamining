@@ -1,4 +1,4 @@
-/** Chunk was on 65330 **/
+/** Chunk was on 45410 **/
 /** chunk id: 473121, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -19,7 +19,7 @@ let d = e => {
       button: m
     },
     isModeratorReport: _
-  } = e, p = (null == m ? true : m.type) === "submit", f = i.useRef(a.Z.reactParserFor((t = function(e) {
+  } = e, p = (null == m ? true : m.type) === "submit", x = i.useRef(a.Z.reactParserFor((t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -57,7 +57,7 @@ let d = e => {
     }) : null, null != u && "" !== d ? (0, r.jsx)(l.Text, {
       variant: "text-md/normal",
       color: "header-secondary",
-      children: f.current(u)
+      children: x.current(u)
     }) : null, p && !_ && (0, r.jsx)(l.Text, {
       variant: "text-sm/normal",
       children: s.intl.format(s.t.Q0tSKS, {})

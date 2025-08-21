@@ -1,4 +1,4 @@
-/** Chunk was on 16811 **/
+/** Chunk was on 98360 **/
 /** chunk id: 993160, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -22,8 +22,8 @@ function b(e) {
     user: n,
     currentUser: t,
     guildId: b,
-    channelId: g,
-    displayProfile: x,
+    channelId: x,
+    displayProfile: g,
     relationshipType: h,
     onClose: j
   } = e, {
@@ -31,8 +31,8 @@ function b(e) {
   } = (0, i.ZP)(), _ = (0, c.Z)({
     user: n,
     guildId: b,
-    channelId: g,
-    displayProfile: x,
+    channelId: x,
+    displayProfile: g,
     onClose: j
   }), {
     gameFriends: y,
@@ -40,7 +40,7 @@ function b(e) {
     hasIncomingPendingGameFriends: O
   } = (0, m.H)({
     userId: n.id
-  }), P = y.length > 0 || I || O;
+  }), Z = y.length > 0 || I || O;
   return h === p.OGo.BLOCKED ? null : n.id === t.id ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(a.Z, {
       user: n,
@@ -102,7 +102,7 @@ function b(e) {
       viewProfileItem: _,
       themeColor: "secondary"
     })]
-  }) : h === p.OGo.NONE && P ? (0, r.jsxs)(r.Fragment, {
+  }) : h === p.OGo.NONE && Z ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.Z, {
       type: "text",
       userId: n.id,

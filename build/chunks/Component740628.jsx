@@ -1,4 +1,4 @@
-/** Chunk was on 16811 **/
+/** Chunk was on 98360 **/
 /** chunk id: 740628, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -32,23 +32,23 @@ function v(e) {
     channelId: a,
     onClose: s
   } = e;
-  return n === g.oh.ACTIVITY ? (0, r.jsx)(f.Z, {
+  return n === x.oh.ACTIVITY ? (0, r.jsx)(f.Z, {
     user: o,
     currentUser: l,
     displayProfile: i,
     guildId: c,
     onClose: s
-  }) : n === g.oh.MUTUAL_FRIENDS ? (0, r.jsx)(p.Z, {
+  }) : n === x.oh.MUTUAL_FRIENDS ? (0, r.jsx)(p.Z, {
     user: o,
     guildId: c,
     channelId: a,
     onClose: s
-  }) : n === g.oh.MUTUAL_GUILDS ? (0, r.jsx)(b.Z, {
+  }) : n === x.oh.MUTUAL_GUILDS ? (0, r.jsx)(b.Z, {
     user: o,
     onClose: s
-  }) : n === g.oh.BOT_DATA_ACCESS ? (0, r.jsx)(d.Z, {
+  }) : n === x.oh.BOT_DATA_ACCESS ? (0, r.jsx)(d.Z, {
     user: o
-  }) : n === g.oh.BOT_INFO ? (0, r.jsx)(u.Z, {
+  }) : n === x.oh.BOT_INFO ? (0, r.jsx)(u.Z, {
     user: o,
     currentUser: l,
     displayProfile: i,
@@ -72,13 +72,13 @@ function _(e) {
     displayProfile: m,
     guildId: p,
     items: b,
-    initialSection: _ = g.oh.USER_INFO,
+    initialSection: _ = x.oh.USER_INFO,
     initialSubsection: y,
     onClose: I
   } = e, {
     trackUserProfileAction: O
-  } = (0, s.KZ)(), P = (0, l.e7)([a.Z], () => a.Z.hidePersonalInformation), [{
-    section: Z,
+  } = (0, s.KZ)(), Z = (0, l.e7)([a.Z], () => a.Z.hidePersonalInformation), [{
+    section: P,
     subsection: T
   }, A] = o.useState({
     section: null != (d = null == (n = b.find(e => {
@@ -90,11 +90,11 @@ function _(e) {
     subsection: y
   });
   o.useEffect(() => {
-    null == b.find(e => e.section === Z) && A({
+    null == b.find(e => e.section === P) && A({
       section: b[0].section,
       subsection: true
     })
-  }, [b, Z]);
+  }, [b, P]);
   let N = o.useCallback(e => {
     O({
       action: "PRESS_SECTION",
@@ -104,7 +104,7 @@ function _(e) {
       subsection: true
     })
   }, [O, A]);
-  return P ? (0, r.jsx)("div", {
+  return Z ? (0, r.jsx)("div", {
     className: j.container,
     children: (0, r.jsxs)("div", {
       className: h.empty,
@@ -112,7 +112,7 @@ function _(e) {
         className: h.emptyIconStreamerMode
       }), (0, r.jsx)("div", {
         className: h.emptyText,
-        children: x.intl.string(x.t.Br1ls7)
+        children: g.intl.string(g.t.Br1ls7)
       })]
     })
   }) : (0, r.jsxs)("div", {
@@ -120,7 +120,7 @@ function _(e) {
     children: [(0, r.jsx)(i.n, {
       className: j.tabBar,
       type: "top",
-      selectedItem: Z,
+      selectedItem: P,
       onItemSelect: N,
       children: b.map(e => {
         let {
@@ -139,7 +139,7 @@ function _(e) {
       })
     }), (0, r.jsx)(v, {
       items: b,
-      section: Z,
+      section: P,
       subsection: T,
       user: u,
       currentUser: f,

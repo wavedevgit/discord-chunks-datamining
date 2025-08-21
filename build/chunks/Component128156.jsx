@@ -1,7 +1,7 @@
-/** Chunk was on 16811 **/
+/** Chunk was on 98360 **/
 /** chunk id: 128156, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => P
+  Z: () => Z
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -27,12 +27,12 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk158069 = require("./158069.js");
 
-function P(e) {
+function Z(e) {
   let {
     user: n,
     currentUser: t,
-    displayProfile: P,
-    guildId: Z,
+    displayProfile: Z,
+    guildId: P,
     channelId: T,
     subsection: A,
     onClose: N
@@ -51,7 +51,7 @@ function P(e) {
     voiceActivity: L
   } = (0, p.Z)({
     userId: n.id,
-    guildId: Z
+    guildId: P
   }), R = (0, o.e7)([c.Z], () => c.Z.isFetchingUserOutbox(n.id)), U = n.id === t.id, M = (0, o.e7)([d.Z, s.Z], () => {
     let e = U ? d.Z.getStatus() : s.Z.getStatus(n.id);
     return e === l.Skl.OFFLINE || e === l.Skl.INVISIBLE
@@ -77,7 +77,7 @@ function P(e) {
       onClose: N
     }) : (0, r.jsx)(j.P9, {
       user: n,
-      guildId: null != (Y = null == P ? true : P.guildId) ? Y : true,
+      guildId: null != (Y = null == Z ? true : Z.guildId) ? Y : true,
       channelId: T,
       onClose: N
     })
@@ -97,13 +97,13 @@ function P(e) {
             onClose: N
           })
         }), null != B && (0, r.jsx)("li", {
-          children: (0, r.jsx)(x.Z, {
+          children: (0, r.jsx)(g.Z, {
             location: "UserProfileModalV2Activity",
             user: n,
             currentUser: t,
             stream: B,
             onClose: N,
-            profileGuildId: null == P ? true : P.guildId
+            profileGuildId: null == Z ? true : Z.guildId
           })
         }), S.map((e, o) => (0, r.jsx)("li", {
           children: (0, r.jsx)(b.Z, {
@@ -111,7 +111,7 @@ function P(e) {
             currentUser: t,
             activity: e,
             onClose: N,
-            profileGuildId: null == P ? true : P.guildId
+            profileGuildId: null == Z ? true : Z.guildId
           })
         }, "live-".concat(o))), E && G && (0, r.jsx)("li", {
           children: (0, r.jsx)(h.Z, {
@@ -134,12 +134,12 @@ function P(e) {
       children: (0, r.jsx)("ul", {
         className: O.cards,
         children: w.map(e => (0, r.jsx)("li", {
-          children: (0, r.jsx)(g.Z, {
+          children: (0, r.jsx)(x.Z, {
             location: "UserProfileModalV2Activity",
             user: n,
             currentUser: t,
             entry: e,
-            profileGuildId: null == P ? true : P.guildId,
+            profileGuildId: null == Z ? true : Z.guildId,
             onClose: N
           })
         }, e.id))

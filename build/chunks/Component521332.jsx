@@ -1,4 +1,4 @@
-/** Chunk was on 65330 **/
+/** Chunk was on 45410 **/
 /** chunk id: 521332, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk769450 = require("./769450.js");
 
-function x(e) {
+function f(e) {
   let {
     title: t,
     description: n,
@@ -30,7 +30,7 @@ function x(e) {
   }), (0, r.jsx)(d.JZ, {
     title: t,
     description: n,
-    buttonText: o ? f.intl.string(f.t["h+WsPT"]) : f.intl.string(f.t.A8t4NT),
+    buttonText: o ? x.intl.string(x.t["h+WsPT"]) : x.intl.string(x.t.A8t4NT),
     buttonDisabled: o,
     onButtonPress: () => {
       l(), c(true), a(_.M4.SETTINGS_UPSELLS_APPLY_CLICKED)
@@ -52,7 +52,7 @@ function b(e) {
     children: [(0, r.jsx)(a.X6q, {
       variant: "text-sm/semibold",
       className: g.header,
-      children: f.intl.string(f.t["1yxTIC"])
+      children: x.intl.string(x.t["1yxTIC"])
     }), (0, r.jsx)("div", {
       className: g.upsellsContainer,
       children: v.map((e, n) => {
@@ -61,7 +61,7 @@ function b(e) {
           getDescription: l,
           onApply: a
         } = e;
-        return (0, r.jsx)(x, {
+        return (0, r.jsx)(f, {
           title: i(),
           description: l(),
           onButtonClick: a,
@@ -69,7 +69,7 @@ function b(e) {
         }, n)
       })
     }), (0, r.jsx)(a.Avr, {
-      text: f.intl.string(f.t.olebGx),
+      text: x.intl.string(x.t.olebGx),
       onClick: () => {
         o.Z.open(p.oAB.CONTENT_AND_SOCIAL), i(), c.ZP.trackWithMetadata(p.rMx.IAR_SETTINGS_UPSELLS_ACTION, {
           report_id: s,

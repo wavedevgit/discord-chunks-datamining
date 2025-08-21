@@ -1,4 +1,4 @@
-/** Chunk was on 16811 **/
+/** Chunk was on 98360 **/
 /** chunk id: 384816, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -31,8 +31,8 @@ function O(e) {
     user: n,
     currentUser: t,
     displayProfile: O,
-    subsection: P,
-    onClose: Z
+    subsection: Z,
+    onClose: P
   } = e, {
     trackUserProfileAction: T
   } = (0, f.KZ)(), A = (0, o.e7)([d.Z], () => d.Z.getGuildId()), N = (0, c.Y)({
@@ -48,7 +48,7 @@ function O(e) {
       user: n,
       currentUser: t,
       guildId: O.guildId,
-      scrollIntoView: P === _.Tb.ROLES
+      scrollIntoView: Z === _.Tb.ROLES
     }), n.isProvisional && (0, r.jsx)(j.Z, {
       heading: y.intl.string(y.t.Iyka0d),
       headingIcon: (0, r.jsx)(l.Mgn, {
@@ -61,7 +61,7 @@ function O(e) {
       })
     }), N.length > 0 && (0, r.jsx)(j.Z, {
       heading: y.intl.string(y.t["Uv/eT0"]),
-      children: (0, r.jsx)(x.Z, {
+      children: (0, r.jsx)(g.Z, {
         applicationIds: N
       })
     }), (0, r.jsx)(j.Z, {
@@ -73,8 +73,8 @@ function O(e) {
       })
     }), S.length > 0 && (0, r.jsx)(j.Z, {
       heading: y.intl.string(y.t["3fe7U1"]),
-      scrollIntoView: P === _.Tb.CONNECTIONS,
-      children: (0, r.jsx)(g.ZP, {
+      scrollIntoView: Z === _.Tb.CONNECTIONS,
+      children: (0, r.jsx)(x.ZP, {
         connectedAccounts: S,
         className: I.connections,
         userId: n.id,
@@ -82,24 +82,24 @@ function O(e) {
       })
     }), w.length > 0 && (0, r.jsx)(j.Z, {
       heading: y.intl.string(y.t.PHjkRE),
-      children: w.map(e => (0, r.jsx)(g.tH, {
+      children: w.map(e => (0, r.jsx)(x.tH, {
         className: I.appsConnections,
         applicationRoleConnection: e,
         locale: E,
         onApplicationClicked: () => {
           T({
             action: "PRESS_APP_CONNECTION"
-          }), Z()
+          }), P()
         },
         selectedGuildId: null != A ? A : true
       }, e.application.id))
     }), (0, r.jsx)(j.Z, {
       heading: y.intl.string(y.t["mQKv+v"]),
-      scrollIntoView: P === _.Tb.NOTE,
+      scrollIntoView: Z === _.Tb.NOTE,
       children: (0, r.jsx)(i.Z, {
         userId: n.id,
         className: I.note,
-        autoFocus: P === _.Tb.NOTE,
+        autoFocus: Z === _.Tb.NOTE,
         onUpdate: () => T({
           action: "SET_NOTE"
         })

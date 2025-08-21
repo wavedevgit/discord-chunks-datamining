@@ -16,11 +16,11 @@ function c(e) {
   } = e;
   return (0, n.jsx)("div", {
     className: o.container,
-    children: (0, n.jsx)(i.Text, {
+    children: (0, n.jsx)(l.Text, {
       variant: "text-xs/normal",
       color: "text-secondary",
       children: a.intl.format(a.t.W8K2GB, {
-        maxGames: l.k[t]
+        maxGames: i.k[t]
       })
     })
   })

@@ -1,4 +1,4 @@
-/** Chunk was on 65330 **/
+/** Chunk was on 45410 **/
 /** chunk id: 273389, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -19,14 +19,14 @@ let c = e => {
       onBackClicked: _,
       isModeratorReport: p
     } = e,
-    f = i.useRef(null),
+    x = i.useRef(null),
     g = null != n && "cancel" !== n.type,
-    x = m && (null == n ? true : n.type) !== "done",
-    b = g || x;
+    f = m && (null == n ? true : n.type) !== "done",
+    b = g || f;
   if (i.useEffect(() => {
       if ((null == n ? true : n.type) === "submit" || (null == n ? true : n.type) === "done") {
         var e;
-        null == (e = f.current) || e.focus()
+        null == (e = x.current) || e.focus()
       }
     }, [null == n ? true : n.type]), !b) return null;
   let h = o.intl.string(o.t.i4jeWV);
@@ -34,8 +34,8 @@ let c = e => {
     "data-migration-pending": true,
     direction: a.Z.Direction.HORIZONTAL,
     children: (0, r.jsxs)(l.hE2, {
-      fullWidth: x && g,
-      children: [x && (0, r.jsx)(l.zxk, {
+      fullWidth: f && g,
+      children: [f && (0, r.jsx)(l.zxk, {
         onClick: _,
         variant: "secondary",
         disabled: c,
@@ -46,7 +46,7 @@ let c = e => {
         },
         variant: t,
         disabled: c || d,
-        buttonRef: f,
+        buttonRef: x,
         text: h
       })]
     })

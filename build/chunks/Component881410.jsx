@@ -36,17 +36,17 @@ function f(e) {
     disabled: t,
     widgetType: r,
     widget: f
-  } = e, [g] = (0, a.ynZ)(), p = l.useRef(null), b = l.useMemo(() => new Set(f.games.map(e => e.applicationId)), [f.games]), O = l.useCallback(e => {
+  } = e, [b] = (0, a.ynZ)(), g = i.useRef(null), p = i.useMemo(() => new Set(f.games.map(e => e.applicationId)), [f.games]), O = i.useCallback(e => {
     (0, c.ES)(r, {
       applicationId: e
     })
   }, [r]), {
     options: m,
     matchSorterOptions: j
-  } = (0, o.h)(), y = l.useCallback(e => {
+  } = (0, o.h)(), y = i.useCallback(e => {
     var t, r;
-    return "" === e.trim() ? m : (0, i.Lu)(m, e, (t = d({}, j), r = r = {
-      threshold: i.Lu.rankings.CONTAINS
+    return "" === e.trim() ? m : (0, l.Lu)(m, e, (t = d({}, j), r = r = {
+      threshold: l.Lu.rankings.CONTAINS
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
       var r = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -59,7 +59,7 @@ function f(e) {
     }), t))
   }, [m, j]);
   return (0, n.jsx)(a.yRy, {
-    targetElementRef: p,
+    targetElementRef: g,
     position: "bottom",
     align: "center",
     renderPopout: e => {
@@ -70,7 +70,7 @@ function f(e) {
         className: u.gameSearchCombobox,
         placeholder: s.intl.string(s.t["5h0QOD"]),
         autoFocus: true,
-        value: g,
+        value: b,
         onChange: e => {
           O(e), t()
         },
@@ -79,7 +79,7 @@ function f(e) {
         showScrollbar: true,
         maxVisibleItems: 7,
         children: e => y(e).map(e => (0, n.jsx)(a.lo1, {
-          disabled: b.has(e.value),
+          disabled: p.has(e.value),
           value: String(e.value),
           children: (0, n.jsx)(a.lo1.Label, {
             children: (0, n.jsx)(a.Text, {
@@ -92,7 +92,7 @@ function f(e) {
       })
     },
     children: e => (0, n.jsx)("div", {
-      ref: p,
+      ref: g,
       children: (0, n.jsx)(a.zxk, d({
         variant: "secondary",
         size: "sm",

@@ -1,5 +1,5 @@
-/** Chunk was on 65330 **/
-/** chunk id: 776385, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 98360 **/
+/** chunk id: 776385, original params: e,n,t (module,exports,require) **/
 module.exports = {
   card: "card_e1364f",
   removeGameButton: "removeGameButton_e1364f",

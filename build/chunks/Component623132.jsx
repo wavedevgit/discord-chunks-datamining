@@ -1,7 +1,7 @@
 /** Chunk was on 27069 **/
 /** chunk id: 623132, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => P
+  Z: () => h
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -12,15 +12,14 @@ var Chunk481060 = require("./481060.js"),
   Chunk5192 = require("./5192.js"),
   Chunk971082 = require("./971082.jsx"),
   Chunk817053 = require("./817053.jsx"),
+  Chunk248554 = require("./248554.jsx"),
   Chunk879877 = require("./879877.jsx"),
   Chunk533815 = require("./533815.jsx"),
   Chunk853072 = require("./853072.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk958461 = require("./958461.js"),
-  Chunk932366 = require("./932366.js"),
   Chunk776385 = require("./776385.js");
 
-function j(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -39,7 +38,7 @@ function j(e) {
   return e
 }
 
-function y(e, t) {
+function j(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -52,61 +51,61 @@ function y(e, t) {
   }), e
 }
 
-function v(e) {
+function y(e) {
   var {
     applicationId: t,
     userId: r,
     gameName: o
   } = e, c = function(e, t) {
     if (null == e) return {};
-    var r, n, l = function(e, t) {
+    var r, n, i = function(e, t) {
       if (null == e) return {};
-      var r, n, l = {},
-        i = Object.keys(e);
-      for (n = 0; n < i.length; n++) r = i[n], t.indexOf(r) >= 0 || (l[r] = e[r]);
-      return l
+      var r, n, i = {},
+        l = Object.keys(e);
+      for (n = 0; n < l.length; n++) r = l[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
+      return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var i = Object.getOwnPropertySymbols(e);
-      for (n = 0; n < i.length; n++) r = i[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r])
+      var l = Object.getOwnPropertySymbols(e);
+      for (n = 0; n < l.length; n++) r = l[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
     }
-    return l
+    return i
   }(e, ["applicationId", "userId", "gameName"]);
   let s = (0, a.Z)({
     location: "UserProfileWidgetGameDetailsCard",
     applicationId: t,
-    source: i.m1.UserProfile,
+    source: l.m1.UserProfile,
     sourceUserId: r,
     trackEntryPointImpression: true
   });
-  return null == s ? (0, n.jsx)(l.X6q, y(j({}, c), {
+  return null == s ? (0, n.jsx)(i.X6q, j(m({}, c), {
     children: o
-  })) : (0, n.jsx)(l.X6q, y(j({}, c), {
-    children: (0, n.jsx)(l.P3F, {
+  })) : (0, n.jsx)(i.X6q, j(m({}, c), {
+    children: (0, n.jsx)(i.P3F, {
       onClick: s,
-      className: m.clickableText,
+      className: O.clickableText,
       children: o
     })
   }))
 }
 
-function x(e) {
+function v(e) {
   let {
     text: t,
     user: r,
-    guildId: i,
+    guildId: l,
     channelId: a
   } = e;
   return (0, n.jsxs)("div", {
-    children: [(0, n.jsx)(l.PEf, {
+    children: [(0, n.jsx)(i.PEf, {
       size: "xxs",
-      color: l.TVs.colors.ICON_TERTIARY,
-      className: m.icon
-    }), (0, n.jsx)(l.nn4, {
+      color: i.TVs.colors.ICON_TERTIARY,
+      className: O.icon
+    }), (0, n.jsx)(i.nn4, {
       children: p.intl.format(p.t.TM0XDQ, {
-        name: c.ZP.getName(i, a, r)
+        name: c.ZP.getName(l, a, r)
       })
-    }), (0, n.jsx)(l.Text, {
+    }), (0, n.jsx)(i.Text, {
       variant: "text-sm/normal",
       color: "text-tertiary",
       children: t
@@ -114,96 +113,81 @@ function x(e) {
   })
 }
 
-function h(e) {
+function x(e) {
   let {
     applicationId: t,
     guildId: r,
-    channelId: l,
-    className: i
+    channelId: i,
+    className: l
   } = e, a = (0, g.Z)(t);
   return a.length > 0 ? (0, n.jsx)(s.Z, {
     label: p.intl.formatToPlainString(p.t.ujhJdH, {
       numFriends: a.length
     }),
-    className: i,
+    className: l,
     users: a,
     guildId: r,
-    channelId: l
+    channelId: i
   }) : null
 }
 
-function P(e) {
+function h(e) {
   let {
     user: t,
     guildId: r,
-    channelId: i,
+    channelId: l,
     game: a,
     widgetType: c,
     loading: s = false,
     disableInteraction: g = false
   } = e, {
-    gameName: P = p.intl.string(p.t.GIWFlJ),
-    imageSrc: E,
+    gameName: h = p.intl.string(p.t.GIWFlJ),
+    imageSrc: P,
     applicationId: w,
     comment: S,
-    tags: I
-  } = a, _ = {
+    tags: E
+  } = a, I = {
     variant: "heading-sm/medium",
     color: "text-default"
-  }, T = o.default.getCurrentUser(), N = (null == T ? true : T.id) === t.id;
-  return s ? (0, n.jsxs)("div", {
-    className: m.card,
-    children: [(0, n.jsx)("div", {
-      className: O.loadingCover
-    }), (0, n.jsx)("div", {
-      className: m.details,
-      children: (0, n.jsxs)("div", {
-        className: b.placeholderText,
-        children: [(0, n.jsx)("div", {
-          className: b.placeholderBar
-        }), (0, n.jsx)("div", {
-          className: b.placeholderBar
-        })]
-      })
-    })]
-  }) : (0, n.jsxs)("div", {
-    className: m.card,
+  }, _ = o.default.getCurrentUser(), T = (null == _ ? true : _.id) === t.id;
+  return s ? (0, n.jsx)(d.i, {}) : (0, n.jsxs)("div", {
+    className: O.card,
     children: [(0, n.jsx)(u.Z, {
-      imageSrc: E,
-      gameName: P,
+      imageSrc: P,
+      gameName: h,
       applicationId: w,
       userId: t.id,
       disableInteraction: g,
       hideTooltip: true
     }), (0, n.jsxs)("div", {
-      className: m.details,
-      children: [g ? (0, n.jsx)(l.X6q, y(j({}, _), {
-        children: P
-      })) : (0, n.jsx)(v, j({
+      className: O.details,
+      children: [g ? (0, n.jsx)(i.X6q, j(m({}, I), {
+        children: h
+      })) : (0, n.jsx)(y, m({
         applicationId: w,
         userId: t.id,
-        gameName: P
-      }, _)), null != S && (0, n.jsx)(x, {
+        gameName: h
+      }, I)), null != S && (0, n.jsx)(v, {
         text: S,
         user: t,
         guildId: r,
-        channelId: i
-      }), (0, n.jsx)(d.Z, {
-        tags: I,
-        isCurrentUser: N,
+        channelId: l
+      }), (0, n.jsx)(f.Z, {
+        tags: E,
+        isCurrentUser: T,
         widgetType: c,
         applicationId: w,
         disableInteraction: g
-      }), !g && (0, n.jsx)(h, {
-        className: m.socialProof,
+      }), !g && (0, n.jsx)(x, {
+        className: O.socialProof,
         applicationId: w,
         guildId: r,
-        channelId: i
+        channelId: l
       })]
-    }), !g && N && (0, n.jsx)(f.Z, {
+    }), !g && T && (0, n.jsx)(b.Z, {
       game: a,
       widgetType: c,
-      className: m.removeGameButton
+      className: O.removeGameButton
     })]
   })
 }

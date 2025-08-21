@@ -1,4 +1,4 @@
-/** Chunk was on 65330 **/
+/** Chunk was on 45410 **/
 /** chunk id: 316617, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
 let h = e => {
   let {
     message: t
-  } = e, n = (0, s.ZP)(t), h = (0, l.e7)([f.Z], () => f.Z.getChannel(t.channel_id)), v = i.useMemo(() => (0, o.Z)(t), [t]), {
+  } = e, n = (0, s.ZP)(t), h = (0, l.e7)([x.Z], () => x.Z.getChannel(t.channel_id)), v = i.useMemo(() => (0, o.Z)(t), [t]), {
     content: j
   } = (0, _.Z)(v, {
     hideSimpleEmbedContent: false
@@ -49,7 +49,7 @@ let h = e => {
     children: [(0, r.jsx)(a.X6q, {
       className: b.header,
       variant: "heading-sm/semibold",
-      children: x.intl.string(x.t.iouM3d)
+      children: f.intl.string(f.t.iouM3d)
     }), (0, r.jsx)(a.Ttm, {
       className: b.messagePreviewContainer,
       children: (0, r.jsx)(c.Z, {

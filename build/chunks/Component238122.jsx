@@ -1,4 +1,4 @@
-/** Chunk was on 65330 **/
+/** Chunk was on 45410 **/
 /** chunk id: 238122, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -19,10 +19,10 @@ let u = e => {
         subtitle: m,
         placeholder: _,
         rows: p,
-        character_limit: f,
+        character_limit: x,
         pattern: g
       },
-      onChange: x,
+      onChange: f,
       initialText: b,
       isRequired: h
     } = e, v = i.useRef(a.Z.reactParserFor((t = function(e) {
@@ -60,14 +60,14 @@ let u = e => {
     }, [b]);
     let Z = i.useCallback(e => {
       let t = null != g ? new RegExp(g) : null;
-      null == t || t.test(e) ? null != e && (C(null), y(e), x({
+      null == t || t.test(e) ? null != e && (C(null), y(e), f({
         value: e,
         isValid: true
-      })) : (C(s.intl.string(s.t["24xrGR"])), x({
+      })) : (C(s.intl.string(s.t["24xrGR"])), f({
         value: e,
         isValid: false
       }))
-    }, [x, g]);
+    }, [f, g]);
     return (0, r.jsxs)("div", {
       className: d.marginBottom8,
       children: [null != u && (0, r.jsx)("div", {
@@ -80,7 +80,7 @@ let u = e => {
           })]
         })
       }), (0, r.jsx)(l.Kx8, {
-        maxLength: f,
+        maxLength: x,
         onChange: Z,
         value: j,
         error: O,

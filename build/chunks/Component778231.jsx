@@ -1,7 +1,7 @@
-/** Chunk was on 65330 **/
+/** Chunk was on 45410 **/
 /** chunk id: 778231, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => f
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,41 +17,41 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk719706 = require("./719706.js"),
   Chunk970952 = require("./970952.js");
-let x = e => {
+let f = e => {
   var t, n;
   let {
-    entry: x
+    entry: f
   } = e, {
     name: b
-  } = x, h = (0, l.e7)([m.Z], () => m.Z.getNewestTokenForApplication(x.id)), v = null != (n = x.getIconURL(40)) ? n : g, j = (0, d.Z)({
-    application: x
+  } = f, h = (0, l.e7)([m.Z], () => m.Z.getNewestTokenForApplication(f.id)), v = null != (n = f.getIconURL(40)) ? n : g, j = (0, d.Z)({
+    application: f
   }), y = i.useRef(false);
   i.useEffect(() => {
     y.current || (o.Z.fetch(), y.current = true)
   }, []);
   let O = null != h ? _.default.extractTimestamp(h.id) : true;
   return (0, r.jsxs)("div", {
-    className: f.container,
+    className: x.container,
     children: [(0, r.jsx)(a.X6q, {
-      className: f.header,
+      className: x.header,
       variant: "heading-sm/semibold",
       children: p.intl.string(p.t["aYfK//"])
     }), (0, r.jsx)("div", {
-      className: f.appContainer,
+      className: x.appContainer,
       children: (0, r.jsxs)("div", {
-        className: f.appInfo,
+        className: x.appInfo,
         children: [(0, r.jsx)(s.ZP, {
           mask: s.ZP.Masks.AVATAR_DEFAULT,
           width: 40,
           height: 40,
-          className: f.appIconMask,
+          className: x.appIconMask,
           children: (0, r.jsx)("img", {
             src: v,
             alt: "",
-            className: f.appIcon
+            className: x.appIcon
           })
         }), (0, r.jsxs)("div", {
-          className: f.textContainer,
+          className: x.textContainer,
           children: [(0, r.jsx)(a.Text, {
             color: "header-primary",
             variant: "text-md/medium",
@@ -62,7 +62,7 @@ let x = e => {
               variant: "text-md/normal",
               children: (0, u.Z)(j.length)
             }), (0, r.jsx)(c.Z, {
-              className: f.guildStack,
+              className: x.guildStack,
               guilds: j,
               maxGuilds: 6
             })]
@@ -70,7 +70,7 @@ let x = e => {
             children: [(0, r.jsx)(a.Text, {
               color: "text-default",
               variant: "text-md/normal",
-              children: null == (t = x.bot) ? true : t.tag
+              children: null == (t = f.bot) ? true : t.tag
             }), null != O && (0, r.jsx)(a.Text, {
               color: "text-default",
               variant: "text-md/normal",

@@ -1,4 +1,4 @@
-/** Chunk was on 16811 **/
+/** Chunk was on 98360 **/
 /** chunk id: 752342, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => E
@@ -48,8 +48,8 @@ function E(e) {
     openedAt: M,
     onClose: k,
     sourceAnalyticsLocations: G = []
-  } = e, V = E === T.ME ? true : E, F = (0, u.ZP)(n.id, V), Y = s.ZP.getName(V, S, n), W = (0, a.Dt)(), {
-    analyticsLocations: z
+  } = e, V = E === T.ME ? true : E, F = (0, u.ZP)(n.id, V), Y = s.ZP.getName(V, S, n), z = (0, a.Dt)(), {
+    analyticsLocations: W
   } = (0, c.ZP)([...G, i.Z.USER_PROFILE_MODAL]), K = (0, d.ZB)({
     layout: "MODAL",
     userId: n.id,
@@ -58,9 +58,9 @@ function E(e) {
     channelId: S,
     messageId: w,
     roleId: B
-  }), H = (0, P.Z)(n);
+  }), H = (0, Z.Z)(n);
   return (0, r.jsx)(c.Gt, {
-    value: z,
+    value: W,
     children: (0, r.jsx)(d.Mt, {
       value: K,
       openedAt: M,
@@ -72,18 +72,18 @@ function E(e) {
         transitionState: U,
         className: C.root,
         hideShadow: true,
-        "aria-labelledby": W,
+        "aria-labelledby": z,
         parentComponent: "BotUserProfileModal",
         children: (0, r.jsx)(o.y5t, {
           component: (0, r.jsx)(o.nn4, {
             children: (0, r.jsx)(o.H, {
-              id: W,
+              id: z,
               children: N.intl.format(N.t.KRe1Fh, {
                 name: Y
               })
             })
           }),
-          children: (0, r.jsxs)(g.Z, {
+          children: (0, r.jsxs)(x.Z, {
             user: n,
             displayProfile: F,
             themeType: A.l.MODAL,
@@ -135,7 +135,7 @@ function E(e) {
               })]
             }), (0, r.jsxs)("div", {
               className: C.body,
-              children: [(0, r.jsx)(x.Z, {
+              children: [(0, r.jsx)(g.Z, {
                 className: C.username,
                 user: n,
                 nickname: Y,
@@ -156,7 +156,7 @@ function E(e) {
                 displayProfile: F,
                 guildId: V,
                 items: H,
-                initialSection: null != L ? L : Z.oh.BOT_INFO,
+                initialSection: null != L ? L : P.oh.BOT_INFO,
                 initialSubsection: R,
                 onClose: k
               })]

@@ -82,35 +82,25 @@ function b(e) {
     layerContext: l,
     onAnimationRest: u,
     targetElementRef: f,
-    caretConfig: p,
-    className: h,
-    style: g,
-    color: b,
-    tooltipClassName: y,
-    tooltipContentClassName: O,
-    tooltipPointerClassName: I,
-    allowOverflow: T,
-    disableTooltipPointerEvents: S,
-    clickableOnMobile: A,
-    hideOnClick: C
-  } = e, N = m(e, ["children", "text", "position", "align", "spacing", "layerContext", "onAnimationRest", "targetElementRef", "caretConfig", "className", "style", "color", "tooltipClassName", "tooltipContentClassName", "tooltipPointerClassName", "allowOverflow", "disableTooltipPointerEvents", "clickableOnMobile", "hideOnClick"]);
-  let R = (0, d.c)(f),
-    P = i.useId(),
+    caretConfig: p
+  } = e, h = m(e, ["children", "text", "position", "align", "spacing", "layerContext", "onAnimationRest", "targetElementRef", "caretConfig"]);
+  let g = (0, d.c)(f),
+    b = i.useId(),
     {
-      isVisible: w,
-      isRendered: D,
-      triggerProps: x,
-      handleExitComplete: L
+      isVisible: y,
+      isRendered: O,
+      triggerProps: I,
+      handleExitComplete: T
     } = (0, c.l)(_({
-      targetElementRef: R.targetElementRef
-    }, N)),
-    j = i.useMemo(() => ({
-      triggerHandlers: x,
-      triggerRef: R.triggerRef,
-      targetElementRef: R.targetElementRef,
-      tooltipId: P,
-      isVisible: w,
-      isRendered: D,
+      targetElementRef: g.targetElementRef
+    }, h)),
+    S = i.useMemo(() => ({
+      triggerHandlers: I,
+      triggerRef: g.triggerRef,
+      targetElementRef: g.targetElementRef,
+      tooltipId: b,
+      isVisible: y,
+      isRendered: O,
       text: n,
       position: a,
       align: o,
@@ -118,10 +108,11 @@ function b(e) {
       caretConfig: p,
       layerContext: l,
       onAnimationRest: u,
-      handleExitComplete: L
-    }), [x, R.triggerRef, R.targetElementRef, P, w, D, n, a, o, s, p, l, u, L]);
+      handleExitComplete: T,
+      positionKey: "string" == typeof n ? n : true
+    }), [I, g.triggerRef, g.targetElementRef, b, y, O, n, a, o, s, p, l, u, T]);
   return (0, r.jsxs)(E.Provider, {
-    value: j,
+    value: S,
     children: [t, (0, r.jsx)(v, {})]
   })
 }
@@ -130,7 +121,7 @@ function y(e) {
   var t;
   let {
     strategy: n = "clone",
-    element: r = "div",
+    tag: r = "div",
     children: a
   } = e, s = i.useContext(E);
   if (null == s) throw Error("TooltipTrigger must be used within TooltipRoot");
@@ -151,7 +142,7 @@ function y(e) {
     })
   });
   return (0, l.FX)({
-    element: r,
+    tag: r,
     children: a,
     triggerHandlers: m,
     triggerRef: u
@@ -161,15 +152,16 @@ function y(e) {
 function O(e) {
   var {
     children: t,
-    asContainer: n = false
-  } = e, a = m(e, ["children", "asContainer"]);
-  return null == a.text || "" === a.text ? t : n ? (0, r.jsx)(b, h(_({}, a), {
+    asContainer: n = false,
+    tag: a = "div"
+  } = e, o = m(e, ["children", "asContainer", "tag"]);
+  return null == o.text || "" === o.text ? t : n ? (0, r.jsx)(b, h(_({}, o), {
     children: (0, r.jsx)(y, {
       strategy: "wrap",
-      element: "div",
+      tag: a,
       children: t
     })
-  })) : i.isValidElement(t) ? (0, r.jsx)(b, h(_({}, a), {
+  })) : i.isValidElement(t) ? (0, r.jsx)(b, h(_({}, o), {
     children: (0, r.jsx)(y, {
       strategy: "clone",
       children: t
@@ -193,7 +185,8 @@ function v() {
     align: m,
     spacing: g,
     caretConfig: b,
-    layerContext: y
+    layerContext: y,
+    positionKey: O
   } = exports;
   return (0, Chunk342134.Q)({
     shouldShow: require,
@@ -212,6 +205,7 @@ function v() {
     caretConfig: b,
     layerContext: null != y ? y : a.nz,
     animationStyle: e,
+    positionKey: O,
     "data-mana-component": "tooltip"
   }) : null)
 }

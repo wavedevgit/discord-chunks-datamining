@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk313201 = require("./313201.js"),
   Chunk318374 = require("./318374.jsx"),
@@ -16,27 +16,27 @@ function u(e) {
   var {
     label: t,
     visuallyHideLabel: r = false,
-    className: l,
+    className: i,
     size: u = a.EFr.SIZE_16,
     maxUsers: d = 4
   } = e, f = function(e, t) {
     if (null == e) return {};
-    var r, n, l = function(e, t) {
+    var r, n, i = function(e, t) {
       if (null == e) return {};
-      var r, n, l = {},
-        i = Object.keys(e);
-      for (n = 0; n < i.length; n++) r = i[n], t.indexOf(r) >= 0 || (l[r] = e[r]);
-      return l
+      var r, n, i = {},
+        l = Object.keys(e);
+      for (n = 0; n < l.length; n++) r = l[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
+      return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var i = Object.getOwnPropertySymbols(e);
-      for (n = 0; n < i.length; n++) r = i[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r])
+      var l = Object.getOwnPropertySymbols(e);
+      for (n = 0; n < l.length; n++) r = l[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
     }
-    return l
+    return i
   }(e, ["label", "visuallyHideLabel", "className", "size", "maxUsers"]);
-  let g = (0, o.Dt)();
+  let b = (0, o.Dt)();
   return (0, n.jsxs)("div", {
-    className: i()(l, s.container),
+    className: l()(i, s.container),
     children: [(0, n.jsx)(c.Z, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var r = null != arguments[t] ? arguments[t] : {},
@@ -55,17 +55,17 @@ function u(e) {
       }
       return e
     }({
-      "aria-labelledby": g,
+      "aria-labelledby": b,
       overflowCountClassName: s.overflowButton,
       size: u,
       maxUsers: d
     }, f)), r ? (0, n.jsx)(a.nn4, {
-      id: g,
+      id: b,
       children: t
     }) : (0, n.jsx)(a.Text, {
       variant: "text-xs/normal",
       color: "text-secondary",
-      id: g,
+      id: b,
       children: t
     })]
   })

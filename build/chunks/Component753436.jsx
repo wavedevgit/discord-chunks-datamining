@@ -19,12 +19,12 @@ function f(e) {
     game: t,
     userId: r,
     widgetType: f,
-    guildId: g,
-    channelId: p,
-    loading: b = false,
+    guildId: b,
+    channelId: g,
+    loading: p = false,
     disableInteraction: O = false
-  } = e, m = (0, c.Z)(t.applicationId), j = m.length > 0, y = l.default.getCurrentUser(), v = (null == y ? true : y.id) === r;
-  return b ? (0, n.jsx)("div", {
+  } = e, m = (0, c.Z)(t.applicationId), j = m.length > 0, y = i.default.getCurrentUser(), v = (null == y ? true : y.id) === r;
+  return p ? (0, n.jsx)("div", {
     className: u.loadingCover
   }) : (0, n.jsxs)("div", {
     className: d.container,
@@ -40,14 +40,14 @@ function f(e) {
       widgetType: f,
       className: d.removeGameButton,
       iconSize: "xs"
-    }), !O && j && (0, n.jsx)(i.Z, {
+    }), !O && j && (0, n.jsx)(l.Z, {
       label: s.intl.formatToPlainString(s.t.ujhJdH, {
         numFriends: m.length
       }),
       className: d.socialProof,
       users: m,
-      guildId: g,
-      channelId: p,
+      guildId: b,
+      channelId: g,
       visuallyHideLabel: true
     })]
   })

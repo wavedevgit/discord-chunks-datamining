@@ -21,8 +21,8 @@ function l(e) {
     overflowOnly: f = false
   } = e, _ = r.useRef(null), p = null != t ? t : _, [h, m] = r.useState(false), [g, E] = r.useState(false), b = r.useRef(null);
   r.useEffect(() => (b.current = new a.V7, () => {
-    var e;
-    null == (e = b.current) || e.stop()
+    let e = b.current;
+    null != e && e.stop()
   }), []);
   let y = null != p.current,
     O = false !== n && (h || d) && y;
@@ -33,19 +33,19 @@ function l(e) {
       E(false)
     }, []),
     I = r.useCallback(() => {
-      var e;
       if (f && null != p.current) {
         let e = p.current;
         if ((0, i.k)(e, HTMLElement) && e.offsetWidth >= e.scrollWidth) return
       }
-      let t = null != l ? l : s;
-      null == (e = b.current) || e.start(t, () => {
+      let e = null != l ? l : s,
+        t = b.current;
+      null != t && t.start(e, () => {
         m(true), null == c || c()
       }, false)
     }, [l, c, f, p]),
     T = r.useCallback(() => {
-      var e;
-      null == (e = b.current) || e.stop(), m(false), null == u || u()
+      let e = b.current;
+      null != e && e.stop(), m(false), null == u || u()
     }, [u]),
     S = r.useCallback(e => {
       null == p.current && (p.current = e.currentTarget), I()

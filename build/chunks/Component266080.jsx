@@ -1,4 +1,4 @@
-/** Chunk was on 65330 **/
+/** Chunk was on 45410 **/
 /** chunk id: 266080, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -16,10 +16,10 @@ let m = e => {
   let {
     guildId: t,
     reportId: n
-  } = e, [m, _] = i.useState(false), p = c.Z.getGuild(t), f = null != p;
+  } = e, [m, _] = i.useState(false), p = c.Z.getGuild(t), x = null != p;
   i.useEffect(() => {
-    _(!f)
-  }, [f]);
+    _(!x)
+  }, [x]);
   let g = i.useCallback(() => {
     _(true), a.ZP.trackWithMetadata(d.rMx.IAR_LEAVE_GUILD_BUTTON_CLICKED, {
       guild_id: t,

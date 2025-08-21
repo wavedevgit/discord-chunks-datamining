@@ -1,4 +1,4 @@
-/** Chunk was on 65330 **/
+/** Chunk was on 45410 **/
 /** chunk id: 805746, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -18,17 +18,17 @@ let p = e => {
   let {
     application: t,
     reportId: n
-  } = e, [p, f] = i.useState(false), g = (0, l.e7)([u.Z], () => u.Z.getNewestTokenForApplication(t.id));
+  } = e, [p, x] = i.useState(false), g = (0, l.e7)([u.Z], () => u.Z.getNewestTokenForApplication(t.id));
   i.useEffect(() => {
-    null != g && f(true)
+    null != g && x(true)
   }, [g]);
-  let x = i.useRef(false);
+  let f = i.useRef(false);
   i.useEffect(() => {
-    x.current || (a.Z.fetch(), x.current = true)
+    f.current || (a.Z.fetch(), f.current = true)
   }, []);
   let b = (0, l.e7)([o.ZP], () => o.ZP.getSelfEmbeddedActivities()),
     h = i.useCallback(() => {
-      if (f(false), c.ZP.trackWithMetadata(m.rMx.IAR_DEAUTHORIZE_APP_BUTTON_CLICKED, {
+      if (x(false), c.ZP.trackWithMetadata(m.rMx.IAR_DEAUTHORIZE_APP_BUTTON_CLICKED, {
           application_id: t.id,
           report_id: n
         }), null == g) return;

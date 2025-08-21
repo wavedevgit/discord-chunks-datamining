@@ -16,7 +16,7 @@ var Chunk624238 = require("./624238.js"),
   Chunk825354 = require("./825354.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk635318 = require("./635318.js");
-let b = {
+let p = {
   [Chunk296009.l.FAVORITE_GAMES]: () => Chunk388032.intl.string(Chunk388032.t.sUQar6),
   [Chunk296009.l.CURRENT_GAMES]: () => Chunk388032.intl.string(Chunk388032.t.SqNnur),
   [Chunk296009.l.WANT_TO_PLAY_GAMES]: () => Chunk388032.intl.string(Chunk388032.t.bWSQwc),
@@ -27,20 +27,20 @@ function O(e) {
   var t;
   let {
     userId: r,
-    headingId: i,
+    headingId: l,
     widget: u,
     disableInteraction: d = false
-  } = e, f = (0, a.e7)([c.default], () => c.default.getId() === r), O = (0, s.kQ)(u), j = b[u.type](), y = f && u.games.length > 0 ? (t = u.type, 1 === l.k[t] ? g.intl.string(g.t.wiXdER) : g.intl.format(g.t["zR1+09"], {
-    numGames: l.k[t]
+  } = e, f = (0, a.e7)([c.default], () => c.default.getId() === r), O = (0, s.kQ)(u), j = p[u.type](), y = f && u.games.length > 0 ? (t = u.type, 1 === i.k[t] ? b.intl.string(b.t.wiXdER) : b.intl.format(b.t["zR1+09"], {
+    numGames: i.k[t]
   })) : true;
   return (0, n.jsxs)("div", {
-    className: p.headerRow,
+    className: g.headerRow,
     children: [(0, n.jsxs)("div", {
-      className: p.title,
+      className: g.title,
       children: [(0, n.jsx)(o.X6q, {
         variant: "heading-sm/medium",
         color: "text-default",
-        id: i,
+        id: l,
         children: j
       }), null != y && (0, n.jsx)(o.Text, {
         variant: "text-xs/normal",
@@ -60,11 +60,11 @@ function m(e) {
   let {
     widget: t,
     disabled: r,
-    disabledInteraction: l,
-    userId: i
-  } = e, o = (0, a.e7)([c.default], () => c.default.getId() === i), g = (0, s.vI)(t.type) && t.games.some(e => null != e.comment);
-  return l ? null : o ? (0, n.jsxs)("div", {
-    className: p.actions,
+    disabledInteraction: i,
+    userId: l
+  } = e, o = (0, a.e7)([c.default], () => c.default.getId() === l), b = (0, s.vI)(t.type) && t.games.some(e => null != e.comment);
+  return i ? null : o ? (0, n.jsxs)("div", {
+    className: g.actions,
     children: [(0, n.jsx)(u.Z, {
       disabled: r,
       widgetType: t.type,
@@ -72,12 +72,12 @@ function m(e) {
     }), (0, n.jsx)(d.Z, {
       widget: t
     })]
-  }) : g ? (0, n.jsx)("div", {
-    className: p.actions,
+  }) : b ? (0, n.jsx)("div", {
+    className: g.actions,
     children: (0, n.jsx)(f.Z, {
       widget: t,
-      userId: i,
-      className: p.menuButton
+      userId: l,
+      className: g.menuButton
     })
   }) : null
 }

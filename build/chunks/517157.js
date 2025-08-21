@@ -9,15 +9,15 @@ var Chunk442837 = require("./442837.js"),
   Chunk224724 = require("./224724.js");
 
 function o(e) {
-  let t = (0, n.e7)([l.default], () => {
-      let t = l.default.getId();
+  let t = (0, n.e7)([i.default], () => {
+      let t = i.default.getId();
       return null != e && t === e
     }, [e]),
     r = (0, n.e7)([a.Z], () => a.Z.getPendingWidgets()),
-    o = (0, n.Wu)([i.Z], () => {
+    o = (0, n.Wu)([l.Z], () => {
       var t;
       if (null == e) return [];
-      let r = i.Z.getUserProfile(e);
+      let r = l.Z.getUserProfile(e);
       return null != (t = null == r ? true : r.widgets) ? t : []
     }, [e]);
   return t && null !== r ? r : o

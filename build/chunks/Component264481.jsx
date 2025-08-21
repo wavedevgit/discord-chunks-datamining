@@ -1,8 +1,8 @@
-/** Chunk was on 16811 **/
+/** Chunk was on 98360 **/
 /** chunk id: 264481, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   P9: () => I,
-  Uf: () => P,
+  Uf: () => Z,
   b0: () => y,
   s_: () => _
 }), require("./388685.js");
@@ -19,8 +19,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk839468 = require("./839468.js");
-let g = [() => Chunk388032.intl.string(Chunk388032.t.madJdH), () => Chunk388032.intl.string(Chunk388032.t.NYmfoK), () => Chunk388032.intl.string(Chunk388032.t.R2PaCg), () => Chunk388032.intl.string(Chunk388032.t.laSR8v), () => Chunk388032.intl.string(Chunk388032.t.DnsJEx)],
-  x = [() => Chunk388032.intl.string(Chunk388032.t.nFSbeH), () => Chunk388032.intl.string(Chunk388032.t.gTcxOz), () => Chunk388032.intl.string(Chunk388032.t["8T0wYm"]), () => Chunk388032.intl.string(Chunk388032.t.BIHl1t), () => Chunk388032.intl.string(Chunk388032.t.jhBm09)],
+let x = [() => Chunk388032.intl.string(Chunk388032.t.madJdH), () => Chunk388032.intl.string(Chunk388032.t.NYmfoK), () => Chunk388032.intl.string(Chunk388032.t.R2PaCg), () => Chunk388032.intl.string(Chunk388032.t.laSR8v), () => Chunk388032.intl.string(Chunk388032.t.DnsJEx)],
+  g = [() => Chunk388032.intl.string(Chunk388032.t.nFSbeH), () => Chunk388032.intl.string(Chunk388032.t.gTcxOz), () => Chunk388032.intl.string(Chunk388032.t["8T0wYm"]), () => Chunk388032.intl.string(Chunk388032.t.BIHl1t), () => Chunk388032.intl.string(Chunk388032.t.jhBm09)],
   h = [() => Chunk388032.intl.string(Chunk388032.t.AyMGXF), () => Chunk388032.intl.string(Chunk388032.t.aAFW7e), e => p.intl.formatToPlainString(p.t.h2g0cH, {
     name: e
   }), () => Chunk388032.intl.string(Chunk388032.t["rrYh5+"]), () => Chunk388032.intl.string(Chunk388032.t["HX3K+P"]), () => Chunk388032.intl.string(Chunk388032.t["/yW3aW"]), () => Chunk388032.intl.string(Chunk388032.t["PmL/v7"]), () => Chunk388032.intl.string(Chunk388032.t.IALa3t), () => Chunk388032.intl.string(Chunk388032.t.HRcTFB), () => Chunk388032.intl.string(Chunk388032.t.NuCqPj), () => Chunk388032.intl.string(Chunk388032.t["M1tw+/"]), () => Chunk388032.intl.string(Chunk388032.t.UBm1y8), () => Chunk388032.intl.string(Chunk388032.t.Cu95PT), () => Chunk388032.intl.string(Chunk388032.t["R/wFur"]), () => Chunk388032.intl.string(Chunk388032.t.HQPAVV), () => Chunk388032.intl.string(Chunk388032.t.YolGh4)],
@@ -53,7 +53,7 @@ function _() {
   let e = Chunk388032.intl.string(Chunk388032.t.RnD2yc),
     [n] = Chunk647438.useState(() => {
       var e;
-      return (null != (e = (0, Chunk392711.sample)(g)) ? module : g[0])()
+      return (null != (e = (0, Chunk392711.sample)(x)) ? module : x[0])()
     });
   return (0, Chunk951288.jsx)(v, {
     heading: module,
@@ -65,7 +65,7 @@ function y() {
   let e = Chunk388032.intl.string(Chunk388032.t.bFgqYG),
     [n] = Chunk647438.useState(() => {
       var e;
-      return (null != (e = (0, Chunk392711.sample)(x)) ? module : x[0])()
+      return (null != (e = (0, Chunk392711.sample)(g)) ? module : g[0])()
     });
   return (0, Chunk951288.jsx)(v, {
     heading: module,
@@ -81,23 +81,23 @@ function I(e) {
     onClose: s
   } = e, d = u.ZP.getName(t, a, n), m = p.intl.formatToPlainString(p.t.sjSitL, {
     name: d
-  }), [g] = o.useState(() => {
+  }), [x] = o.useState(() => {
     var e;
     return (null != (e = (0, l.sample)(h)) ? e : h[0])(d)
-  }), x = o.useCallback(() => {
+  }), g = o.useCallback(() => {
     c.Z.openPrivateChannel({
       recipientIds: n.id
     }), null == s || s()
   }, [n.id, s]);
   return (0, r.jsx)(v, {
     heading: m,
-    bodyText: g,
+    bodyText: x,
     children: (0, r.jsx)("div", {
       className: b.buttonRow,
       children: (0, r.jsx)(f.tG, {
         icon: i.kBi,
         text: p.intl.string(p.t["g33r/P"]),
-        onClick: x,
+        onClick: g,
         themeColor: "secondary"
       })
     })
@@ -121,7 +121,7 @@ function O() {
   })
 }
 
-function P(e) {
+function Z(e) {
   let {
     onClose: n
   } = e, t = o.useCallback(() => {

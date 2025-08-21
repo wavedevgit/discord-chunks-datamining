@@ -1,4 +1,4 @@
-/** Chunk was on 16811 **/
+/** Chunk was on 98360 **/
 /** chunk id: 116906, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -31,8 +31,8 @@ function O(e) {
     user: n,
     currentUser: t,
     displayProfile: O,
-    guildId: P,
-    subsection: Z,
+    guildId: Z,
+    subsection: P,
     onClose: T
   } = e, {
     voiceActivityStatusEnabled: A
@@ -49,7 +49,7 @@ function O(e) {
     voiceActivity: B
   } = (0, m.Z)({
     userId: n.id,
-    guildId: P
+    guildId: Z
   }), D = (0, o.e7)([c.Z], () => c.Z.isFetchingUserOutbox(n.id)), L = n.id === t.id, R = (0, o.e7)([s.Z, a.Z], () => {
     let e = L ? s.Z.getStatus() : a.Z.getStatus(n.id);
     return e === l.Skl.OFFLINE || e === l.Skl.INVISIBLE
@@ -69,7 +69,7 @@ function O(e) {
             onClose: T
           })
         }), null != S && (0, r.jsx)("li", {
-          children: (0, r.jsx)(x.Z, {
+          children: (0, r.jsx)(g.Z, {
             location: "UserProfileModalActivity",
             user: n,
             currentUser: t,
@@ -95,11 +95,11 @@ function O(e) {
           children: e
         }, n)
       }) : true,
-      scrollIntoView: Z === j.Tb.RECENT_ACTIVITY,
+      scrollIntoView: P === j.Tb.RECENT_ACTIVITY,
       children: (0, r.jsx)("ul", {
         className: y.activityList,
         children: E.map(e => (0, r.jsx)("li", {
-          children: (0, r.jsx)(g.Z, {
+          children: (0, r.jsx)(x.Z, {
             location: "UserProfileModalActivity",
             user: n,
             currentUser: t,

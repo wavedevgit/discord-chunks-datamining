@@ -1,4 +1,4 @@
-/** Chunk was on 16811 **/
+/** Chunk was on 98360 **/
 /** chunk id: 858970, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -48,8 +48,8 @@ function O(e) {
     user: n,
     guildId: t,
     channelId: O,
-    messageId: P,
-    roleId: Z,
+    messageId: Z,
+    roleId: P,
     transitionState: T,
     openedAt: A,
     onHide: N,
@@ -62,8 +62,8 @@ function O(e) {
     showGuildProfile: true,
     guildId: E,
     channelId: O,
-    messageId: P,
-    roleId: Z
+    messageId: Z,
+    roleId: P
   }), D = [{
     icon: i.owK,
     description: _.intl.string(_.t.kcuWvb)
@@ -87,7 +87,7 @@ function O(e) {
         className: y.root,
         "aria-label": U,
         parentComponent: "RestrictedUserProfileModalV2",
-        children: (0, r.jsxs)(g.Z, {
+        children: (0, r.jsxs)(x.Z, {
           user: n,
           displayProfile: L,
           themeType: v.l.MODAL_V2,
@@ -137,7 +137,7 @@ function O(e) {
                     analyticsLocations: w
                   }, B))
                 }
-              }), (0, r.jsx)(x.Z, {
+              }), (0, r.jsx)(g.Z, {
                 userId: n.id,
                 onClick: () => {
                   N(), (0, m.pQ)(I({

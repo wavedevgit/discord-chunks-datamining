@@ -1,4 +1,4 @@
-/** Chunk was on 16811 **/
+/** Chunk was on 98360 **/
 /** chunk id: 886794, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => E
@@ -44,7 +44,7 @@ function E(e) {
     openedAt: L,
     onClose: R,
     sourceAnalyticsLocations: U = []
-  } = e, M = t === P.ME ? true : t, k = (0, m.ZP)(n.id, M), G = u.ZP.getName(M, E, n), V = (0, s.Dt)(), {
+  } = e, M = t === Z.ME ? true : t, k = (0, m.ZP)(n.id, M), G = u.ZP.getName(M, E, n), V = (0, s.Dt)(), {
     analyticsLocations: F
   } = (0, a.ZP)([...U, c.Z.USER_PROFILE_MODAL]), Y = (0, f.ZB)({
     layout: "MODAL",
@@ -54,7 +54,7 @@ function E(e) {
     channelId: E,
     messageId: S,
     roleId: w
-  }), W = o.useRef(null), z = (0, i.Z)(W);
+  }), z = o.useRef(null), W = (0, i.Z)(z);
   return (0, r.jsx)(a.Gt, {
     value: F,
     children: (0, r.jsx)(f.Mt, {
@@ -82,17 +82,17 @@ function E(e) {
           children: (0, r.jsxs)(v.Z, {
             user: n,
             displayProfile: k,
-            themeType: Z.l.MODAL,
-            ref: (null == k ? true : k.profileEffectId) != null ? W : true,
+            themeType: P.l.MODAL,
+            ref: (null == k ? true : k.profileEffectId) != null ? z : true,
             children: [(0, r.jsx)(I.Z, {
               children: (0, r.jsx)(y.Z, {
                 user: n
               })
             }), (0, r.jsxs)("div", {
-              children: [(0, r.jsx)(g.Z, {
+              children: [(0, r.jsx)(x.Z, {
                 user: n,
                 displayProfile: k,
-                themeType: Z.l.MODAL
+                themeType: P.l.MODAL
               }), (0, r.jsx)("div", {
                 className: A.headerInner,
                 children: (0, r.jsx)(p.Z, {
@@ -100,7 +100,7 @@ function E(e) {
                   displayProfile: k,
                   guildId: M,
                   channelId: E,
-                  themeType: Z.l.MODAL
+                  themeType: P.l.MODAL
                 })
               })]
             }), (0, r.jsxs)("div", {
@@ -113,7 +113,7 @@ function E(e) {
                 nicknameVariant: "heading-xl/bold",
                 tags: (0, r.jsx)(b.Z, {
                   displayProfile: k,
-                  themeType: Z.l.MODAL,
+                  themeType: P.l.MODAL,
                   onClose: R
                 })
               }), (0, r.jsxs)("div", {
@@ -122,7 +122,7 @@ function E(e) {
                   className: C.tabBar,
                   type: "top",
                   selectedItem: O.oh.BOT_INFO,
-                  onItemSelect: P.dG4,
+                  onItemSelect: Z.dG4,
                   children: (0, r.jsx)(l.njP.Item, {
                     className: C.tabBarItem,
                     id: O.oh.BOT_INFO,
@@ -135,7 +135,7 @@ function E(e) {
                 }), (0, r.jsxs)(l.zJl, {
                   fade: true,
                   className: N.scroller,
-                  children: [(0, r.jsx)(x.Z, {
+                  children: [(0, r.jsx)(g.Z, {
                     userId: n.id,
                     userBio: null == k ? true : k.bio,
                     setLineClamp: false
@@ -153,7 +153,7 @@ function E(e) {
           })
         }), (null == k ? true : k.profileEffectId) != null && (0, r.jsx)(d.Z, {
           profileEffectId: null == k ? true : k.profileEffectId,
-          isHovering: z
+          isHovering: W
         })]
       })
     })
