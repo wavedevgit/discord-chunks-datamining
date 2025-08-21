@@ -2,16 +2,20 @@
 /** chunk id: 125186, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  lG: () => f,
-  ub: () => _
+  S8: () => o,
+  lG: () => _,
+  ub: () => p
 }), require("./410992.js"), require("./227481.js"), require("./730884.js"), require("./20464.js"), require("./341884.js"), require("./364341.js"), require("./629680.js"), require("./505025.js"), require("./918970.js"), require("./121784.js"), require("./644351.js"), require("./146733.js"), require("./415506.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js");
 var Chunk108131 = require("./108131.js"),
   i = require.n(Chunk108131);
-let a = new(require("./710845.js")).Z("WebP"),
-  o = 0,
-  s = new Uint8Array([137, 80, 78, 71, 13, 10, 26, 10]);
+let a = new(require("./710845.js")).Z("WebP");
+var o = function(e) {
+  return e.ALREADY_WEBP = "already_webp", e.UNSUPPORTED_FORMAT = "unsupported_format", e.ANIMATED_IMAGE = "animated_image", e.INSUFFICIENT_SAVINGS = "insufficient_savings", e.CONVERSION_FAILED = "conversion_failed", e.CORRUPTED_FILE = "corrupted_file", e.PIXEL_HASH_MISMATCH = "pixel_hash_mismatch", e
+}({});
+let s = 0,
+  l = new Uint8Array([137, 80, 78, 71, 13, 10, 26, 10]);
 
-function l(e) {
+function c(e) {
   if (4 !== e.length) returnfalse;
   for (let t = 0; t < 4; t++) {
     let n = e.charCodeAt(t);
@@ -19,7 +23,7 @@ function l(e) {
   }
   returntrue
 }
-async function c(e) {
+async function u(e) {
   let t = 0,
     n = async (t, n) => {
       let r = e.slice(t, t + n);
@@ -28,19 +32,19 @@ async function c(e) {
         n.onload = () => e(n.result), n.onerror = () => t(Error("Failed to read file")), n.readAsArrayBuffer(r)
       }))
     };
-  if (!(await n(0, 8)).every((e, t) => e === s[t])) returnfalse;
+  if (!(await n(0, 8)).every((e, t) => e === l[t])) returnfalse;
   for (t = 8; t < e.size && !(t + 8 > e.size);) {
     let r = await n(t, 8),
       i = new DataView(r.buffer).getUint32(0),
       o = String.fromCharCode(r[4], r[5], r[6], r[7]);
-    if (!l(o)) throw Error("Corrupted PNG: invalid chunk type detected");
+    if (!c(o)) throw Error("Corrupted PNG: invalid chunk type detected");
     if ("acTL" === o) return a.verbose("[webp] found acTL chunk - png is animated"), true;
     if ("IDAT" === o) break;
     if (i > e.size || (t += 8 + i + 4) > e.size) throw Error("Corrupted PNG: invalid chunk length detected")
   }
   returnfalse
 }
-async function u(e) {
+async function d(e) {
   if ("image/webp" === e.type) return a.verbose("[WebP] File already WebP format"), {
     should: false,
     reason: "already_webp"
@@ -50,7 +54,7 @@ async function u(e) {
     reason: "unsupported_format"
   };
   try {
-    if (await c(e)) return a.verbose("[webp] png is animated (apng) - skipping conversion"), {
+    if (await u(e)) return a.verbose("[webp] png is animated (apng) - skipping conversion"), {
       should: false,
       reason: "animated_image"
     }
@@ -69,11 +73,11 @@ async function u(e) {
   }
 }
 
-function d(e) {
+function f(e) {
   let t = new Uint8Array(e.data.buffer);
   return i()(t).toString(16)
 }
-async function f(e) {
+async function _(e) {
   let t, n;
   if (null == e) throw Error("file is null or undefined");
   a.verbose("[WebP] Starting conversion for: ".concat(e.name));
@@ -91,17 +95,17 @@ async function f(e) {
       }
     };
   try {
-    let s = await u(e);
-    if (!s.should) return a.verbose("[WebP] Conversion rejected: ".concat(s.reason)), i(s.reason);
+    let o = await d(e);
+    if (!o.should) return a.verbose("[WebP] Conversion rejected: ".concat(o.reason)), i(o.reason);
     let l = document.createElement("canvas"),
       c = l.getContext("2d");
     if (null == c) throw Error("could not get canvas context");
-    let f = new Image,
+    let u = new Image,
       _ = URL.createObjectURL(e);
     try {
       await new Promise((e, t) => {
-        f.onload = () => e(), f.onerror = () => t(Error("failed to load image")), f.src = _
-      }), l.width = f.width, l.height = f.height, c.drawImage(f, 0, 0)
+        u.onload = () => e(), u.onerror = () => t(Error("failed to load image")), u.src = _
+      }), l.width = u.width, l.height = u.height, c.drawImage(u, 0, 0)
     } finally {
       URL.revokeObjectURL(_)
     }
@@ -123,14 +127,14 @@ async function f(e) {
         URL.revokeObjectURL(s)
       }
       let u = await c.getImageData(0, 0, l.width, l.height),
-        f = d(r),
-        _ = d(u),
-        h = f === _;
-      if (t = performance.now() - n, a.verbose("[WebP] Pixel hash results: " + "fileName=".concat(e.name, " ") + "fileLength={".concat(e.size, "} ") + "width=".concat(o.width, " ") + "height=".concat(o.height, " ") + "pixelHash=".concat(f, " ") + "mezzanineFileLength={".concat(p.size, "} ") + "mezzaninePixelHash=".concat(_, " ") + "match=".concat(h, " ") + "elapsed_ms=".concat(Math.round(t))), !h) return i("pixel_hash_mismatch")
+        d = f(r),
+        _ = f(u),
+        h = d === _;
+      if (t = performance.now() - n, a.verbose("[WebP] Pixel hash results: " + "fileName=".concat(e.name, " ") + "fileLength={".concat(e.size, "} ") + "width=".concat(o.width, " ") + "height=".concat(o.height, " ") + "pixelHash=".concat(d, " ") + "mezzanineFileLength={".concat(p.size, "} ") + "mezzaninePixelHash=".concat(_, " ") + "match=".concat(h, " ") + "elapsed_ms=".concat(Math.round(t))), !h) return i("pixel_hash_mismatch")
     }
     let h = e.size > 0 ? p.size / e.size : 1,
       m = 1 - h;
-    if (m < o) return a.verbose("[WebP] Insufficient savings: ".concat(Math.round(100 * m), "% < ").concat(100 * o, "%")), i("insufficient_savings", p.size);
+    if (m < s) return a.verbose("[WebP] Insufficient savings: ".concat(Math.round(100 * m), "% < ").concat(100 * s, "%")), i("insufficient_savings", p.size);
     let g = e.name.lastIndexOf("."),
       E = false === g ? e.name : e.name.substring(0, g),
       b = new File([p], "".concat(E, ".webp"), {
@@ -152,6 +156,6 @@ async function f(e) {
   }
 }
 
-function _(e) {
+function p(e) {
   return e.success && null != e.convertedFile ? e.convertedFile : e.originalFile
 }

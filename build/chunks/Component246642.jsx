@@ -1,5 +1,5 @@
 /** Chunk was on 46653 **/
-/** chunk id: 246642, original params: t,e,i (module,exports,require) **/
+/** chunk id: 246642, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
   Z: () => c
 });
@@ -12,10 +12,10 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk617296 = require("./617296.js");
 
-function c(t) {
+function c(e) {
   let {
-    channelId: e
-  } = t, i = (0, l.Z)(e);
+    channelId: t
+  } = e, i = (0, l.Z)(t);
   if (!(null != i && (i.value > 0 || (null == i ? true : i.multiplier) > 1))) return null;
   let {
     multiplier: c
