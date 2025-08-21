@@ -22,7 +22,7 @@ function s(e, t, n) {
 
 function l(e) {
   if (!(0, i.x3)()) return;
-  if (!(0, o.vA)({
+  if (!(0, o.v)({
       location: e
     })) return void(0, i.op)();
   let t = a.Z.backDestination;
@@ -33,7 +33,7 @@ function l(e) {
 
 function c(e) {
   if (!(0, i.x3)()) return;
-  if (!(0, o.vA)({
+  if (!(0, o.v)({
       location: e
     })) return void(0, i.eH)();
   let t = a.Z.forwardDestination;

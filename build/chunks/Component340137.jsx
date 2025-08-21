@@ -58,7 +58,7 @@ function S(e) {
     isSelected: O
   }), {
     backForwardButtons: j
-  } = d.MK.useExperiment({
+  } = (0, d.t)({
     location: "AppTitleBar"
   }), A = (0, h.isDesktop)() && j, x = (0, p.A)(), Z = (0, h.isMac)() ? v[x] : A ? I[x] : C[x];
   return (0, r.jsxs)(c.Kqy, {

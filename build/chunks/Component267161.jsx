@@ -19,6 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk540059 = require("./540059.js"),
   Chunk336219 = require("./336219.js"),
   Chunk609174 = require("./609174.jsx"),
+  Chunk257966 = require("./257966.jsx"),
   Chunk916069 = require("./916069.js"),
   Chunk591472 = require("./591472.js"),
   Chunk111666 = require("./111666.jsx"),
@@ -42,7 +43,6 @@ var Chunk951288 = require("./951288.js"),
   Chunk914010 = require("./914010.js"),
   Chunk451478 = require("./451478.js"),
   Chunk768581 = require("./768581.js"),
-  Chunk358085 = require("./358085.js"),
   Chunk998502 = require("./998502.js"),
   Chunk228488 = require("./228488.js"),
   Chunk950796 = require("./950796.jsx"),
@@ -96,41 +96,41 @@ function et(e) {
       focusSectionProps: s
     } = e,
     d = (0, o.TH)(),
-    f = (0, c.e7)([M.Z], () => M.Z.getGuildId()),
-    h = (0, c.e7)([R.Z], () => R.Z.getChannel(n), [n]),
+    f = (0, c.e7)([U.Z], () => U.Z.getGuildId()),
+    h = (0, c.e7)([D.Z], () => D.Z.getChannel(n), [n]),
     g = null != f ? f : null == h ? true : h.guild_id,
-    m = (0, c.e7)([D.Z], () => D.Z.getGuild(g), [g]),
-    b = (0, _.Z)(),
-    E = (0, N.D)(),
+    m = (0, c.e7)([k.Z], () => k.Z.getGuild(g), [g]),
+    b = (0, O.Z)(),
+    _ = (0, T.D)(),
     {
-      application: v,
+      application: y,
       isFrameInFocusedMode: I
-    } = (0, c.cj)([p.Z, O.Z], () => {
-      let e = O.Z.getConnectedFrame();
+    } = (0, c.cj)([p.Z, E.Z], () => {
+      let e = E.Z.getConnectedFrame();
       return {
         application: p.Z.getApplication(null == e ? true : e.applicationId),
-        isFrameInFocusedMode: O.Z.getFrameLayoutMode() === K.U.FOCUSED
+        isFrameInFocusedMode: E.Z.getFrameLayoutMode() === K.U.FOCUSED
       }
     }),
-    C = null != v ? G.ZP.getApplicationIconURL({
-      id: v.id,
-      icon: v.icon,
-      bot: v.bot
+    C = null != y ? B.ZP.getApplicationIconURL({
+      id: y.id,
+      icon: y.icon,
+      bot: y.bot
     }) : true,
     S = null;
-  null != v && I ? (t = v.name, S = (0, r.jsx)("img", {
+  null != y && I ? (t = y.name, S = (0, r.jsx)("img", {
     className: X.appIcon,
     alt: q.intl.string(q.t.X4IxWF),
     src: C,
     "aria-hidden": true,
     draggable: false
-  })) : E ? (t = q.intl.string(q.t.HcoRu7), S = (0, r.jsx)(u.Dkj, {
+  })) : _ ? (t = q.intl.string(q.t.HcoRu7), S = (0, r.jsx)(u.Dkj, {
     size: "xs"
   })) : null != m ? (S = b ? (0, r.jsx)(u.r7p, {
     size: "xs"
-  }) : (0, r.jsx)(y.Z, {
+  }) : (0, r.jsx)(v.Z, {
     guild: m,
-    size: y.Z.Sizes.MINI,
+    size: v.Z.Sizes.MINI,
     active: true,
     className: X.guildIcon
   }), t = m.name) : null != h && (h.isDM() || h.isGroupDM()) ? (t = q.intl.string(q.t.YUU0RE), S = (0, r.jsx)(u.gw7, {
@@ -146,8 +146,8 @@ function et(e) {
   })) : d.pathname.startsWith(z.Z5c.FAMILY_CENTER) && (t = q.intl.string(Q.default.RZqaJi), S = (0, r.jsx)(u.BFJ, {
     size: "xs"
   }));
-  let T = i.useCallback(e => {
-    (0, j.ZN)("fast-travel")
+  let N = i.useCallback(e => {
+    (0, A.ZN)("fast-travel")
   }, []);
   return null == t || "" === t ? null : (0, r.jsx)(u.ua7, {
     shouldShow: l,
@@ -163,12 +163,12 @@ function et(e) {
         [X.fastTravel]: l
       })
     }, e, s), {
-      onClick: l ? T : true,
+      onClick: l ? N : true,
       children: [S, (0, r.jsx)(u.Text, {
         variant: "text-sm/medium",
         lineClamp: 1,
         children: t
-      }), l && (0, r.jsx)(u.hic, {
+      }), l && (0, r.jsx)(u.Fbu, {
         size: "xs"
       })]
     }))
@@ -180,11 +180,11 @@ function en(e) {
     selectedChannelId: t,
     withFastTravel: n,
     focusSectionProps: i
-  } = e, l = (0, c.e7)([M.Z, R.Z], () => {
-    let e = M.Z.getGuildId(),
-      n = R.Z.getChannel(t);
+  } = e, l = (0, c.e7)([U.Z, D.Z], () => {
+    let e = U.Z.getGuildId(),
+      n = D.Z.getChannel(t);
     return null != e ? e : null == n ? true : n.guild_id
-  }), a = (0, w.H)({
+  }), a = (0, L.H)({
     guildId: l,
     channelId: t
   });
@@ -192,7 +192,7 @@ function en(e) {
     selectedChannelId: t,
     withFastTravel: n,
     focusSectionProps: i
-  }) : (0, r.jsx)(Z.Z, {
+  }) : (0, r.jsx)(w.Z, {
     searchContext: a,
     focusSectionProps: i
   })
@@ -201,21 +201,24 @@ function en(e) {
 function er(e) {
   let {
     withFastTravel: t,
-    focusSectionProps: n
-  } = e, i = (0, c.e7)([k.Z], () => k.Z.getChannelId()), l = (0, x.$)({
+    quickSwitcherInsteadOfTitle: n,
+    focusSectionProps: i
+  } = e, l = (0, c.e7)([M.Z], () => M.Z.getChannelId()), a = (0, Z.$)({
     location: "TitleText"
-  }), a = (0, c.e7)([R.Z], () => {
-    let e = R.Z.getChannel(i);
+  }), o = (0, c.e7)([D.Z], () => {
+    let e = D.Z.getChannel(l);
     return null != e && !e.isDirectory() && !e.isGuildVocal()
   });
-  return l && null != i && !(0, W.AB)(i) && a ? (0, r.jsx)(en, {
-    selectedChannelId: i,
+  return a && null != l && !(0, W.AB)(l) && o ? (0, r.jsx)(en, {
+    selectedChannelId: l,
     withFastTravel: t,
-    focusSectionProps: n
+    focusSectionProps: i
+  }) : n ? (0, r.jsx)(_.R, {
+    focusSectionProps: i
   }) : (0, r.jsx)(et, {
-    selectedChannelId: i,
+    selectedChannelId: l,
     withFastTravel: t,
-    focusSectionProps: n
+    focusSectionProps: i
   })
 }
 let ei = Chunk647438.memo(function() {
@@ -232,11 +235,11 @@ let ei = Chunk647438.memo(function() {
     }),
     {
       backForwardButtons: a,
-      titlebarFastTravel: o
-    } = Chunk336219.ZP.useExperiment({
+      titlebarFastTravel: o,
+      quickSwitcherInsteadOfTitle: s
+    } = (0, Chunk336219.t)({
       location: "AppTitleBar"
     }),
-    s = (0, Chunk358085.isDesktop)() && a,
     {
       hasBugReporterAccess: p
     } = Chunk174556.Z.useExperiment({
@@ -246,13 +249,13 @@ let ei = Chunk647438.memo(function() {
     }),
     _ = !exports && module,
     O = null !== require && Chunk120356 === Chunk821020.u3.TITLE_BAR_LEFT,
-    y = null === require;
+    E = null === require;
   Chunk647438.useLayoutEffect(() => {
     Chunk998502.ZP.setMinimumSize(Chunk741764.J, Chunk741764.N)
   }, []);
-  let N = (0, Chunk984802.Ll)(),
-    j = (0, Chunk442837.e7)([Chunk451478.Z, Chunk522474.Z], () => (0, Chunk228488.rB)()),
-    x = function(e) {
+  let v = (0, Chunk984802.Ll)(),
+    T = (0, Chunk442837.e7)([Chunk451478.Z, Chunk522474.Z], () => (0, Chunk228488.rB)()),
+    A = function(e) {
       let {
         showBackForwardButtons: t,
         showCollapsedSidebarIcons: n,
@@ -262,22 +265,22 @@ let ei = Chunk647438.memo(function() {
       } = e;
       return i.useMemo(() => t ? "BACK_FORWARD_NAVIGATION" : n ? "SIDEBAR" : r ? "NOTIFICATIONS_INBOX" : l ? "TITLEBAR_FAST_TRAVEL" : a ? "RECENTS" : "HELP", [t, n, r, l, a])
     }({
-      showBackForwardButtons: Chunk879690,
-      showCollapsedSidebarIcons: Chunk916069,
-      showNotificationsInbox: Chunk591472,
+      showBackForwardButtons: a,
+      showCollapsedSidebarIcons: Chunk257966,
+      showNotificationsInbox: Chunk916069,
       titlebarFastTravel: Chunk843611,
-      showRecentsButton: Chunk565138
+      showRecentsButton: Chunk591472
     });
-  return Chunk51596 ? null : (0, Chunk951288.jsx)(Chunk481060.Wdt, {
+  return Chunk370774 ? null : (0, Chunk951288.jsx)(Chunk481060.Wdt, {
     children: e => (0, r.jsx)(u.f6W, {
-      theme: N,
+      theme: v,
       children: t => (0, r.jsx)(F.TF, {
         className: t,
         leading: (0, r.jsxs)(r.Fragment, {
-          children: [s && (0, r.jsx)(b.Z, {
-            firstElementFocusJumpSectionProps: "BACK_FORWARD_NAVIGATION" === x ? e : true
+          children: [a && (0, r.jsx)(b.Z, {
+            firstElementFocusJumpSectionProps: "BACK_FORWARD_NAVIGATION" === A ? e : true
           }), _ && (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)(u.P3F, $(J({}, "SIDEBAR" === x ? e : {}), {
+            children: [(0, r.jsx)(u.P3F, $(J({}, "SIDEBAR" === A ? e : {}), {
               className: X.button,
               onClick: () => {
                 ee.setState({
@@ -295,29 +298,30 @@ let ei = Chunk647438.memo(function() {
                 color: "currentColor"
               })
             })]
-          }), O && (0, r.jsx)(T.Z, {
-            focusSectionProps: "NOTIFICATIONS_INBOX" === x ? e : true
+          }), O && (0, r.jsx)(P.Z, {
+            focusSectionProps: "NOTIFICATIONS_INBOX" === A ? e : true
           })]
         }),
         title: (0, r.jsx)(er, {
           withFastTravel: o,
-          focusSectionProps: "TITLEBAR_FAST_TRAVEL" === x ? e : true
+          quickSwitcherInsteadOfTitle: s,
+          focusSectionProps: "TITLEBAR_FAST_TRAVEL" === A ? e : true
         }),
         trailing: (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(E.Z, {
+          children: [(0, r.jsx)(y.Z, {
             className: X.button
           }), (0, r.jsx)(h.Z, {
             canShowReminder: true,
             className: X.button
-          }), y && (0, r.jsx)(A.Z, $(J({}, "RECENTS" === x ? e : {}), {
+          }), E && (0, r.jsx)(x.Z, $(J({}, "RECENTS" === A ? e : {}), {
             className: X.button
-          })), p ? (0, r.jsx)(I.Z, {
-            focusSectionProps: "HELP" === x ? e : true,
+          })), p ? (0, r.jsx)(C.Z, {
+            focusSectionProps: "HELP" === A ? e : true,
             className: X.button
-          }) : (0, r.jsx)(v.Z, {
-            focusSectionProps: "HELP" === x ? e : true,
+          }) : (0, r.jsx)(I.Z, {
+            focusSectionProps: "HELP" === A ? e : true,
             className: X.button
-          }), (0, r.jsx)(C.Z, {
+          }), (0, r.jsx)(S.Z, {
             className: X.button
           })]
         })

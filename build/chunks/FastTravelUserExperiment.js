@@ -2,39 +2,61 @@
 /** chunk id: 336219, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  MK: () => r,
-  ZP: () => a,
-  vA: () => i
+  t: () => s,
+  v: () => l
 });
-let r = (0, require("./818083.js").B)({
+var Chunk818083 = require("./818083.js"),
+  Chunk358085 = require("./358085.js");
+let a = (0, Chunk818083.B)({
   kind: "user",
   id: "2025-03_fast_travel",
   label: "Fast Travel",
   defaultConfig: {
     backForwardButtons: false,
-    titlebarFastTravel: false
+    titlebarFastTravel: false,
+    quickSwitcherInsteadOfTitle: false
   },
   treatments: [{
     id: 1,
     label: "Back/Forward Buttons only",
     config: {
       backForwardButtons: true,
-      titlebarFastTravel: false
+      titlebarFastTravel: false,
+      quickSwitcherInsteadOfTitle: false
     }
   }, {
     id: 2,
-    label: "Back/Forward buttons and titlebar fast travel",
+    label: "back/forward buttons and quick switcher on title",
     config: {
       backForwardButtons: true,
-      titlebarFastTravel: true
+      titlebarFastTravel: true,
+      quickSwitcherInsteadOfTitle: false
+    }
+  }, {
+    id: 3,
+    label: "back/forward buttons and quick switcher INSTEAD of title",
+    config: {
+      backForwardButtons: true,
+      titlebarFastTravel: true,
+      quickSwitcherInsteadOfTitle: true
     }
   }]
 });
 
-function i(e) {
+function o() {
+  return {
+    autoTrackExposure: true,
+    disable: !(0, Chunk358085.isDesktop)()
+  }
+}
+
+function s(e) {
+  return a.useExperiment(e, o())
+}
+
+function l(e) {
   let {
     backForwardButtons: t
-  } = r.getCurrentConfig(e);
+  } = a.getCurrentConfig(e, o());
   return t
 }
-let a = r
