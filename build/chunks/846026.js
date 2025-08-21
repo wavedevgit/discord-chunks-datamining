@@ -1,0 +1,3 @@
+/** Chunk was on 57493 **/
+/** chunk id: 846026, original params: a (module,exports,require) **/
+module.exports = JSON.parse('{"o/An3t":[[1,"username"]," bad dig att streama ",[1,"applicationName"]],"DKHheX":"Beg\xe4ran om att streama","8qq+Hx":["Beg\xe4ran om att streama ",[1,"applicationName"]],"s7bMT0":[[1,"username"]," ber dig att streama ",[1,"applicationName"]],"7pndSk":["Du bad n\xe5gon att streama ",[1,"applicationName"]],"P0wwmJ":"Streamar redan","u4QmWl":"Beg\xe4ran har g\xe5tt ut","qRXatr":"Inte i r\xf6stkanal","43zohI":"K\xf6r inte spelet","8HU1Mz":"V\xe4ntande beg\xe4ran","5+172d":"Streama","jTbTAA":[[8,"$b",[[1,"username"]]]," vill titta n\xe4r du spelar ",[8,"$b",[[1,"game"]]],". Go Live?"]}')

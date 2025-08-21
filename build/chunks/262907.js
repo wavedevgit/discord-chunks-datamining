@@ -1,3 +1,3 @@
 /** Chunk was on 56194 **/
 /** chunk id: 262907, original params: n (module,exports,require) **/
-module.exports = JSON.parse('{"klSpfn":"\xc4ndra inst\xe4llningar","NzUuLC":["+",[1,"count"]," ",[6,"count",{"one":["meddelande"],"other":["meddelanden"]},0,"cardinal"]],"O+racX":"Det finns inga aviseringar.","5H2Jd3":"Visa alla","dcpdhI":"V\xe4lj ett meddelande f\xf6r att hoppa dit.","VAK+h4":"V\xe4lkommen till ditt aviseringscenter!"}')
+module.exports = JSON.parse('{"klSpfn":"\xc4ndra inst\xe4llningar","NzUuLC":["+",[1,"count"]," ",[6,"count",{"one":["meddelande"],"other":["meddelanden"]},0,"cardinal"]],"O+racX":"Det finns inga aviseringar.","5H2Jd3":"Visa alla","Ko8NGh":"Visa bokm\xe4rken","dcpdhI":"V\xe4lj ett meddelande f\xf6r att hoppa dit.","VAK+h4":"V\xe4lkommen till ditt aviseringscenter!"}')

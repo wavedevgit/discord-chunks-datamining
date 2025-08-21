@@ -76,7 +76,7 @@ let _ = new Chunk710845.Z("ImageEditor"),
     }), [z, G] = l.useState(0), [L, Z] = l.useState({
       x: 0,
       y: 0
-    }), [U, B] = l.useState(false), F = "image/gif" === t.type, H = (0, s.v)(t.type), V = H && !F, [J, Y] = l.useState(null), W = (0, d.h)(null != m ? m : x.dG, 500);
+    }), [U, B] = l.useState(false), F = "image/gif" === t.type, H = (0, s.v)(t.type), V = H && !F, [Y, J] = l.useState(null), W = (0, d.h)(null != m ? m : x.dG, 500);
     l.useEffect(() => {
       (0, g.Z)()
     }, []);
@@ -212,7 +212,7 @@ let _ = new Chunk710845.Z("ImageEditor"),
       }, [t, z, F, V, i, M, P, n]);
     l.useEffect(() => {
       en()
-    }, [en, S, z, M, U, P, J]);
+    }, [en, S, z, M, U, P, Y]);
     let er = l.useCallback(() => {
       if (null == T.current) return;
       let e = T.current.naturalWidth,
@@ -222,7 +222,7 @@ let _ = new Chunk710845.Z("ImageEditor"),
         height: t
       });
       let n = Math.min(Math.max(e, t) / Math.min(e, t), 4);
-      Y(n), A(n), D(I({
+      J(n), A(n), D(I({
         width: e,
         height: t
       }, n, H))
@@ -318,9 +318,9 @@ let _ = new Chunk710845.Z("ImageEditor"),
           children: [(0, r.jsx)(c.BlJ, {
             color: c.TVs.colors.ICON_SECONDARY,
             size: "sm"
-          }), null != J && (0, r.jsx)(c.iRW, {
+          }), null != Y && (0, r.jsx)(c.iRW, {
             className: b.slider,
-            initialValue: J,
+            initialValue: Y,
             minValue: 1,
             maxValue: 4,
             keyboardStep: .025,

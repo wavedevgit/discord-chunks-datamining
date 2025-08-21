@@ -448,12 +448,13 @@ function tF() {
       e.configureGoLiveSimulcast(t, n);
       let {
         enabled: r,
-        adjustResolution: i
+        scaleOffBitrateFloor: i,
+        adjustMaxBitrateFloor: a
       } = (0, F.k)({
         location: "setupMediaEngine",
         autoTrackExposure: true
       });
-      e.setGoLiveUsePixelCounts(r, i)
+      e.setGoLiveUsePixelCounts(r, i, a)
     }
     if ((0, es.isWindows)() ? (null == tC ? true : tC.startsWith("NVIDIA")) || (null == tC ? true : tC.startsWith("AMD")) ? e.setExperimentFlag(eS.V8.SIGNAL_AV1, true) : e.setExperimentFlag(eS.V8.SIGNAL_AV1_DECODE, true) : ((0, es.isMac)() || (0, es.isLinux)()) && e.setExperimentFlag(eS.V8.SIGNAL_AV1_DECODE, true), (0, es.isWindows)() && e.setExperimentFlag(eS.V8.SIGNAL_AV1_HARDWARE_DECODE, true), (0, es.isWeb)()) {
       let {

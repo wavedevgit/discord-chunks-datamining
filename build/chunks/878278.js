@@ -1,3 +1,3 @@
 /** Chunk was on 76000 **/
 /** chunk id: 878278, original params: i (module,exports,require) **/
-module.exports = JSON.parse('{"klSpfn":"Modifica le impostazioni","NzUuLC":["+",[1,"count"]," ",[6,"count",{"one":["messaggio"],"other":["messaggi"]},0,"cardinal"]],"O+racX":"Non ci sono notifiche.","5H2Jd3":"Mostra tutti","dcpdhI":"Seleziona un messaggio per andare l\xec.","VAK+h4":"Ti diamo il benvenuto nel centro notifiche!"}')
+module.exports = JSON.parse('{"klSpfn":"Modifica le impostazioni","NzUuLC":["+",[1,"count"]," ",[6,"count",{"one":["messaggio"],"other":["messaggi"]},0,"cardinal"]],"O+racX":"Non ci sono notifiche.","5H2Jd3":"Mostra tutti","Ko8NGh":"Mostra preferiti","dcpdhI":"Seleziona un messaggio per andare l\xec.","VAK+h4":"Ti diamo il benvenuto nel centro notifiche!"}')

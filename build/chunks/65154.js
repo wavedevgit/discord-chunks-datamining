@@ -5,13 +5,13 @@ require.d(exports, {
   $A: () => T,
   $B: () => C,
   $j: () => s,
-  AN: () => Y,
-  AS: () => W,
+  AN: () => W,
+  AS: () => K,
   Av: () => g,
-  Dg: () => q,
+  Dg: () => X,
   Er: () => w,
   Gs: () => R,
-  H3: () => et,
+  H3: () => en,
   JA: () => v,
   Jk: () => I,
   LD: () => x,
@@ -20,10 +20,10 @@ require.d(exports, {
   QP: () => l,
   Qx: () => d,
   R$: () => M,
-  Tr: () => X,
+  Tr: () => Q,
   UC: () => U,
-  Uc: () => ee,
-  V8: () => $,
+  Uc: () => et,
+  V8: () => ee,
   WA: () => y,
   XR: () => Z,
   YE: () => G,
@@ -31,30 +31,31 @@ require.d(exports, {
   Yn: () => i,
   Z: () => u,
   Zq: () => b,
-  ad: () => z,
+  ad: () => q,
   dX: () => _,
   ed: () => p,
   ef: () => L,
   fC: () => c,
   fU: () => m,
+  fm: () => F,
   h7: () => a,
-  iA: () => K,
+  iA: () => z,
   jg: () => E,
   kS: () => V,
   mC: () => A,
   mN: () => S,
-  n4: () => H,
+  n4: () => Y,
   pM: () => o,
   pk: () => k,
   ru: () => j,
   u$: () => N,
-  uA: () => Q,
-  ux: () => F,
+  uA: () => J,
+  ux: () => H,
   vA: () => Chunk268146.vA,
   w5: () => h,
   y7: () => D,
   yf: () => B,
-  ym: () => J
+  ym: () => $
 });
 var Chunk268146 = require("./268146.js"),
   i = function(e) {
@@ -131,38 +132,39 @@ let d = 100,
     },
     videoBitrateFloor: 15e4
   },
-  F = 6e4,
-  H = ">=22.0.0";
-var Y = function(e) {
+  F = .02,
+  H = 6e4,
+  Y = ">=22.0.0";
+var W = function(e) {
     return e.AUTO_ENABLE = "AUTO_ENABLE", e.ATTENUATION = "ATTENUATION", e.AUDIO_INPUT_DEVICE = "AUDIO_INPUT_DEVICE", e.AUDIO_OUTPUT_DEVICE = "AUDIO_OUTPUT_DEVICE", e.VOICE_PROCESSING = "VOICE_PROCESSING", e.QOS = "QOS", e.NATIVE_PING = "NATIVE_PING", e.LEGACY_AUDIO_SUBSYSTEM = "LEGACY_AUDIO_SUBSYSTEM", e.EXPERIMENTAL_AUDIO_SUBSYSTEM = "EXPERIMENTAL_AUDIO_SUBSYSTEM", e.AUTOMATIC_AUDIO_SUBSYSTEM = "AUTOMATIC_AUDIO_SUBSYSTEM", e.AUDIO_SUBSYSTEM_DEFERRED_SWITCH = "AUDIO_SUBSYSTEM_DEFERRED_SWITCH", e.AUDIO_BYPASS_SYSTEM_INPUT_PROCESSING = "AUDIO_BYPASS_SYSTEM_INPUT_PROCESSING", e.DEBUG_LOGGING = "DEBUG_LOGGING", e.AUTOMATIC_VAD = "AUTOMATIC_VAD", e.VOICE_PANNING = "VOICE_PANNING", e.DIAGNOSTICS = "DIAGNOSTICS", e.VIDEO = "VIDEO", e.DESKTOP_CAPTURE = "DESKTOP_CAPTURE", e.DESKTOP_CAPTURE_FORMAT = "DESKTOP_CAPTURE_FORMAT", e.DESKTOP_CAPTURE_APPLICATIONS = "DESKTOP_CAPTURE_APPLICATIONS", e.SOUNDSHARE = "SOUNDSHARE", e.LOOPBACK = "LOOPBACK", e.VIDEO_HOOK = "VIDEO_HOOK", e.EXPERIMENTAL_SOUNDSHARE = "EXPERIMENTAL_SOUNDSHARE", e.WUMPUS_VIDEO = "WUMPUS_VIDEO", e.ELEVATED_HOOK = "ELEVATED_HOOK", e.HYBRID_VIDEO = "HYBRID_VIDEO", e.OPEN_H264 = "OPEN_H264", e.EXPERIMENTAL_ENCODERS = "EXPERIMENTAL_ENCODERS", e.REMOTE_LOCUS_NETWORK_CONTROL = "REMOTE_LOCUS_NETWORK_CONTROL", e.SCREEN_PREVIEWS = "SCREEN_PREVIEWS", e.WINDOW_PREVIEWS = "WINDOW_PREVIEWS", e.AUDIO_DEBUG_STATE = "AUDIO_DEBUG_STATE", e.AEC_DUMP = "AEC_DUMP", e.DISABLE_VIDEO = "DISABLE_VIDEO", e.CONNECTION_REPLAY = "CONNECTION_REPLAY", e.SIMULCAST = "SIMULCAST", e.RTC_REGION_RANKING = "RTC_REGION_RANKING", e.ELECTRON_VIDEO = "ELECTRON_VIDEO", e.MEDIAPIPE = "MEDIAPIPE", e.FIXED_KEYFRAME_INTERVAL = "FIXED_KEYFRAME_INTERVAL", e.SAMPLE_PLAYBACK = "SAMPLE_PLAYBACK", e.FIRST_FRAME_CALLBACK = "FIRST_FRAME_CALLBACK", e.REMOTE_USER_MULTI_STREAM = "REMOTE_USER_MULTI_STREAM", e.NOISE_SUPPRESSION = "NOISE_SUPPRESSION", e.NOISE_CANCELLATION = "NOISE_CANCELLATION", e.VOICE_FILTERS = "VOICE_FILTERS", e.AUTOMATIC_GAIN_CONTROL = "AUTOMATIC_GAIN_CONTROL", e.CLIPS = "CLIPS", e.SPEED_TEST = "SPEED_TEST", e.IMAGE_QUALITY_MEASUREMENT = "IMAGE_QUALITY_MEASUREMENT", e.GO_LIVE_HARDWARE = "GO_LIVE_HARDWARE", e.SCREEN_CAPTURE_KIT = "SCREEN_CAPTURE_KIT", e.SCREEN_SOUNDSHARE = "SCREEN_SOUNDSHARE", e.NATIVE_SCREENSHARE_PICKER = "NATIVE_SCREENSHARE_PICKER", e.MLS_PAIRWISE_FINGERPRINTS = "MLS_PAIRWISE_FINGERPRINTS", e.OFFLOAD_ADM_CONTROLS = "OFFLOAD_ADM_CONTROLS", e
   }({}),
-  W = function(e) {
+  K = function(e) {
     return e.NATIVE = "NATIVE", e.WEBRTC = "WEBRTC", e.DUMMY = "DUMMY", e
   }({}),
-  K = function(e) {
+  z = function(e) {
     return e.LEGACY = "legacy", e.STANDARD = "standard", e.EXPERIMENTAL = "experimental", e.AUTOMATIC = "automatic", e
   }({}),
-  z = function(e) {
+  q = function(e) {
     return e.OPUS = "opus", e.VP8 = "VP8", e.VP9 = "VP9", e.H264 = "H264", e.H265 = "H265", e.RTX = "rtx", e.TEST = "TEST", e
   }({}),
-  q = function(e) {
+  X = function(e) {
     return e[e.NONE = 0] = "NONE", e[e.VOICE = 1] = "VOICE", e[e.SOUNDSHARE = 2] = "SOUNDSHARE", e[e.PRIORITY = 4] = "PRIORITY", e[e.HIDDEN = 8] = "HIDDEN", e
   }({}),
-  X = function(e) {
+  Q = function(e) {
     return e.AUDIO = "audio", e.VIDEO = "video", e.SCREEN = "screen", e.TEST = "test", e
   }({}),
-  Q = function(e) {
+  J = function(e) {
     return e.FIXED = "fixed", e.SOURCE = "source", e
   }({}),
-  J = function(e) {
+  $ = function(e) {
     return e.REMB = "remb", e
   }({}),
-  $ = function(e) {
+  ee = function(e) {
     return e.VIDEOTOOLBOX_RATE_CONTROL = "videotoolbox_rate_control", e.SIGNAL_AV1 = "signal_av1", e.SIGNAL_AV1_DECODE = "signal_av1_decode", e.SIGNAL_AV1_HARDWARE_DECODE = "signal_av1_hardware_decode", e.STREAMER_CLIP = "streamer_clip", e.VIEWER_CLIP = "viewer_clip", e.MUTE_BEFORE_PROCESSING = "mute_before_processing", e.PTT_BEFORE_PROCESSING = "ptt_before_processing", e.SKIP_ENCODE = "skip_encode", e.RESET_DECODER_ON_ERRORS = "reset_decoder_on_errors", e.SOFTWARE_FALLBACK_ON_ERRORS = "software_fallback_on_errors", e.SOFTWARE_FALLBACK_ON_CONSECUTIVE_ERRORS = "software_fallback_on_consecutive_errors", e.BROWSER_HEVC = "browser_hevc", e
   }({}),
-  ee = function(e) {
+  et = function(e) {
     return e[e.AUTO = 1] = "AUTO", e[e.FULL = 2] = "FULL", e
   }({}),
-  et = function(e) {
+  en = function(e) {
     return e[e.CPU_OVERUSE = 1] = "CPU_OVERUSE", e[e.FAILED = 2] = "FAILED", e[e.VAD_CPU_OVERUSE = 3] = "VAD_CPU_OVERUSE", e[e.INITIALIZED = 4] = "INITIALIZED", e
   }({})

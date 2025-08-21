@@ -14,50 +14,89 @@ let o = (0, Chunk818083.B)({
   label: "GoLive Tile Resolution Gating",
   defaultConfig: {
     enabled: false,
-    adjustResolution: false
+    scaleOffBitrateFloor: false,
+    adjustMaxBitrateFloor: false
   },
   commonTriggerPoint: Chunk987338.$P.CONNECTION_OPEN,
   treatments: [{
     id: 0,
-    label: "Non-Nitro control",
+    label: "Non-Nitro: Control",
     config: {
       enabled: false,
-      adjustResolution: false
+      scaleOffBitrateFloor: false,
+      adjustMaxBitrateFloor: false
     }
   }, {
     id: 1,
-    label: "Tile size based wants enabled only for non-nitro users",
+    label: "Non-Nitro: Adjust bitrate naively",
     config: {
       enabled: true,
-      adjustResolution: true
+      scaleOffBitrateFloor: false,
+      adjustMaxBitrateFloor: false
     }
   }, {
     id: 2,
-    label: "Nitro control",
+    label: "Non-Nitro: Scale with global bitrate floor",
     config: {
-      enabled: false,
-      adjustResolution: false
+      enabled: true,
+      scaleOffBitrateFloor: true,
+      adjustMaxBitrateFloor: false
     }
   }, {
     id: 3,
-    label: "Tile size based wants enabled only for Nitro subscribers",
+    label: "Non-Nitro: Use a resolution/fps derived floor for the max bitrate setting",
     config: {
       enabled: true,
-      adjustResolution: true
+      scaleOffBitrateFloor: false,
+      adjustMaxBitrateFloor: true
     }
   }, {
     id: 4,
-    label: "Tile size based bitrate adjustments for non-nitro users",
+    label: "Non-Nitro: Use a max bitrate floor and scale with global bitrate floor",
     config: {
       enabled: true,
-      adjustResolution: false
+      scaleOffBitrateFloor: true,
+      adjustMaxBitrateFloor: true
     }
   }, {
     id: 5,
-    label: "Tile size based bitrate adjustments for Nitro users",
+    label: "Nitro: Control",
+    config: {
+      enabled: false,
+      scaleOffBitrateFloor: false,
+      adjustMaxBitrateFloor: false
+    }
+  }, {
+    id: 6,
+    label: "Nitro: Adjust bitrate naively",
     config: {
       enabled: true,
-      adjustResolution: false
+      scaleOffBitrateFloor: false,
+      adjustMaxBitrateFloor: false
+    }
+  }, {
+    id: 7,
+    label: "Nitro: Scale with global bitrate floor",
+    config: {
+      enabled: true,
+      scaleOffBitrateFloor: true,
+      adjustMaxBitrateFloor: false
+    }
+  }, {
+    id: 8,
+    label: "Nitro: Use a resolution/fps derived floor for the max bitrate setting",
+    config: {
+      enabled: true,
+      scaleOffBitrateFloor: false,
+      adjustMaxBitrateFloor: true
+    }
+  }, {
+    id: 9,
+    label: "Nitro: Use a max bitrate floor and scale with global bitrate floor",
+    config: {
+      enabled: true,
+      scaleOffBitrateFloor: true,
+      adjustMaxBitrateFloor: true
     }
   }]
 });
