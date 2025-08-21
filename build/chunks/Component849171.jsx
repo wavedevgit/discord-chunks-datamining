@@ -86,7 +86,7 @@ function L(e) {
     channel: g,
     type: "channel"
   }), [g]), {
-    submitting: V
+    submitting: k
   } = (0, Z.Z)({
     applicationId: L,
     context: F,
@@ -130,7 +130,7 @@ function L(e) {
             componentId: D
           })
         },
-        submitting: V,
+        submitting: k,
         size: function(e) {
           switch (e) {
             case 2:

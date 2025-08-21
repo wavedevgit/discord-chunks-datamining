@@ -1,7 +1,7 @@
 /** Chunk was on 27069 **/
 /** chunk id: 879877, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => p
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -15,19 +15,19 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk44258 = require("./44258.js");
 
-function b(e) {
+function p(e) {
   let {
     tags: t,
     isCurrentUser: r,
     widgetType: i,
     applicationId: a,
     disableInteraction: c = false
-  } = e, b = null == t ? true : t.filter(e => null != (0, d.zK)(e)), y = (0, l.useRef)(new Map), v = (0, l.useRef)(null), x = (0, l.useRef)(null), [h, P] = (0, l.useState)(0), [E, w] = (0, l.useState)(false), {
+  } = e, p = null == t ? true : t.filter(e => null != (0, d.zK)(e)), y = (0, l.useRef)(new Map), v = (0, l.useRef)(null), x = (0, l.useRef)(null), [h, P] = (0, l.useState)(0), [E, w] = (0, l.useState)(false), {
     trackUserProfileAction: S
-  } = (0, o.KZ)(), I = r && !c && (0, s.M8)(i), _ = j(v, x, b, y, P);
+  } = (0, o.KZ)(), I = r && !c && (0, s.M8)(i), _ = j(v, x, p, y, P);
   if ((0, l.useEffect)(() => (_(), window.addEventListener("resize", _), () => {
       window.removeEventListener("resize", _)
-    }), [_, null == b ? true : b.join("")]), null == b || 0 === b.length) return I ? (0, n.jsx)("div", {
+    }), [_, null == p ? true : p.join("")]), null == p || 0 === p.length) return I ? (0, n.jsx)("div", {
     className: g.tagListContainer,
     children: (0, n.jsx)(u.Z, {
       tags: t,
@@ -36,13 +36,13 @@ function b(e) {
       ref: x
     })
   }) : null;
-  let T = E ? b : b.slice(0, b.length - h);
+  let T = E ? p : p.slice(0, p.length - h);
   return (0, n.jsxs)("div", {
     className: g.tagListContainer,
     children: [(0, n.jsx)("ul", {
       className: g.tagList,
       "aria-label": f.intl.string(f.t.EfjTi4),
-      children: T.map(e => (0, n.jsx)(p, {
+      children: T.map(e => (0, n.jsx)(b, {
         tag: e,
         isCurrentUser: r,
         applicationId: a,
@@ -75,7 +75,7 @@ function b(e) {
     })]
   })
 }
-let p = e => {
+let b = e => {
     let {
       tag: t,
       isCurrentUser: r,
@@ -83,12 +83,12 @@ let p = e => {
       widgetType: a,
       disableInteraction: o,
       ref: u
-    } = e, b = (0, d.zK)(t);
-    if (null == b) return null;
+    } = e, p = (0, d.zK)(t);
+    if (null == p) return null;
     let {
-      getText: p,
+      getText: b,
       icon: O
-    } = b, m = () => {
+    } = p, m = () => {
       (0, s.RZ)(a, l, t), (0, c.pQ)({
         action: "REMOVE_GAME_TAGS"
       })
@@ -101,7 +101,7 @@ let p = e => {
       }), (0, n.jsx)(i.Text, {
         variant: "text-xxs/medium",
         color: "text-secondary",
-        children: p()
+        children: b()
       }), r && !o && (0, n.jsx)(i.ua7, {
         text: f.intl.string(f.t.Otv9fH),
         children: e => {
@@ -127,7 +127,7 @@ let p = e => {
             onClick: m,
             className: g.removeButton,
             "aria-label": f.intl.formatToPlainString(f.t.GCn1nZ, {
-              tag: p()
+              tag: b()
             }),
             children: (0, n.jsx)(i.Dio, {
               size: "xxs"
@@ -204,9 +204,9 @@ let p = e => {
       d = u > 0 ? 8 : 4,
       f = 0,
       g = 0,
-      b = n.current;
+      p = n.current;
     for (let e = 0; e < r.length; e++) {
-      let t = b.get(r[e]);
+      let t = p.get(r[e]);
       if (null != t) {
         if ((g += t.offsetWidth + 4) > 296) break;
         f++
@@ -214,7 +214,7 @@ let p = e => {
     }
     g = 0;
     for (let e = f; e < r.length; e++) {
-      let t = b.get(r[e]);
+      let t = p.get(r[e]);
       if (null != t) {
         if ((g += t.offsetWidth + 4) > 296 - s - u - d) break;
         f++

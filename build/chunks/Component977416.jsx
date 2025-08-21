@@ -1,7 +1,7 @@
 /** Chunk was on 27069 **/
 /** chunk id: 977416, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => p
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -66,13 +66,13 @@ function g(e) {
     return l
   }(e, ["gameName", "onClick", "loading"]);
   let g = null != t ? t : c.intl.string(c.t.GIWFlJ),
-    b = c.intl.formatToPlainString(c.t["3mb1s7"], {
+    p = c.intl.formatToPlainString(c.t["3mb1s7"], {
       game: g
     });
   return i ? (0, n.jsx)("div", {
     className: s.loadingCover
   }) : (0, n.jsx)(l.ua7, {
-    text: b,
+    text: p,
     children: e => (0, n.jsxs)(l.P3F, f(d({
       className: u.addButton
     }, e), {
@@ -91,7 +91,7 @@ function g(e) {
   })
 }
 
-function b(e) {
+function p(e) {
   let {
     userId: t,
     games: r,
@@ -99,10 +99,10 @@ function b(e) {
     isSuggestedGamesLoading: s,
     onDismiss: d,
     onClick: f
-  } = e, b = (0, i.Dt)();
+  } = e, p = (0, i.Dt)();
   return (0, n.jsxs)("aside", {
     className: u.container,
-    "aria-labelledby": b,
+    "aria-labelledby": p,
     children: [(0, n.jsxs)("div", {
       className: u.header,
       children: [(0, n.jsx)(l.P3F, {
@@ -114,7 +114,7 @@ function b(e) {
           color: "currentColor"
         })
       }), (0, n.jsx)(l.X6q, {
-        id: b,
+        id: p,
         variant: "text-xs/medium",
         color: "text-secondary",
         children: c.intl.string(c.t.zMUr6e)

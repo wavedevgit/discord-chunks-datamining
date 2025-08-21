@@ -84,7 +84,9 @@ class p extends Chunk836560.EventEmitter {
         noiseSuppression: this.noiseSuppression,
         autoGainControl: this.automaticGainControl
       };
-    module.some(e => e.id === this.sourceId) && (exports.deviceId = this.sourceId);
+    module.some(e => e.id === this.sourceId) && (exports.deviceId = {
+      exact: this.sourceId
+    });
     try {
       let e = await _.acquire({
         audio: exports

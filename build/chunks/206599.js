@@ -32,25 +32,24 @@ function u(e) {
       (null == t ? true : t.coverImageUrl) != null || g(r) || u(r, e)
     }
   }, [d, f, g, u, e]);
-  let b = n.useMemo(() => {
+  let p = n.useMemo(() => {
       var t;
       return null != (t = o[e]) ? t : []
     }, [o, e]),
-    p = n.useCallback(t => {
+    b = n.useCallback(t => {
       l(t, e)
     }, [l, e]),
     {
       gameDataMap: O,
       isGameFetching: m
-    } = (0, s.F)(b),
+    } = (0, s.F)(p),
     [j, y] = n.useState([]),
-    v = n.useCallback(e => i.Z.noDataAvailable(e), []),
-    x = (r = b.map(e => m(e)), n.useMemo(() => r.join("\x1f"), [r]));
+    v = (r = p.map(e => m(e)), n.useMemo(() => r.join("\x1f"), [r]));
   return n.useEffect(() => {
-    let t = b.filter(e => v(e));
+    let t = p.filter(e => i.Z.noDataAvailable(e));
     t.length > 0 && a(t, e)
-  }, [O, x, b, e, a, v]), n.useEffect(() => {
-    y(b.map(e => {
+  }, [O, v, p, e, a]), n.useEffect(() => {
+    y(p.map(e => {
       let t = O[e];
       return {
         applicationId: e,
@@ -58,10 +57,10 @@ function u(e) {
         imageSrc: null == t ? true : t.coverImageUrl
       }
     }))
-  }, [b, O, e]), {
+  }, [p, O, e]), {
     games: j,
     isGameFetching: m,
-    onAddGame: p
+    onAddGame: b
   }
 }
 

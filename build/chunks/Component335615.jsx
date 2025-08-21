@@ -377,7 +377,7 @@ class eo extends Chunk647438.Component {
     })
   }
   constructor(...e) {
-    super(...e), Q(this, "_list", null), Q(this, "_areActivitiesExperimentallyHidden", false), Q(this, "lastReportedAnalyticsChannel", true), Q(this, "setList", e => {
+    super(...e), Q(this, "_list", null), Q(this, "_areActivitiesExperimentallyHidden", false), Q(this, "_firstApplicationIdOccurrences", null), Q(this, "_lastRowsVersion", true), Q(this, "lastReportedAnalyticsChannel", true), Q(this, "setList", e => {
       this._list = e, this.props.listRef.current = e
     }), Q(this, "renderSection", e => {
       let {
@@ -417,6 +417,24 @@ class eo extends Chunk647438.Component {
         index: i
       } = r;
       return null == i || "row" !== e.type ? null : n[i + 1 + e.row]
+    }), Q(this, "getFirstApplicationIdOccurrences", () => {
+      let {
+        rows: e,
+        version: t
+      } = this.props;
+      if (null != this._firstApplicationIdOccurrences && this._lastRowsVersion === t) return this._firstApplicationIdOccurrences;
+      let n = new Set,
+        r = new Set;
+      for (let t of e)
+        if (null != t && t.type === k.so.CONTENT_INVENTORY) {
+          let {
+            entry: e
+          } = t;
+          if ("application_id" in e.extra && null != e.extra.application_id) {
+            let t = e.extra.application_id;
+            n.has(t) || (n.add(t), r.add(e.id))
+          }
+        } return this._firstApplicationIdOccurrences = r, this._lastRowsVersion = t, r
     }), Q(this, "renderRow", e => {
       let {
         section: t,
@@ -460,13 +478,15 @@ class eo extends Chunk647438.Component {
         if (a.type === k.so.CONTENT_INVENTORY) {
           let e = "content-inventory-".concat(a.entry.id);
           null != a.entry.original_id && (e += "-".concat(a.entry.original_id));
-          let t = (0, r.jsx)(S.ZP, $(J({}, a), {
-            channel: this.props.channel,
-            index: i
-          }), e);
+          let t = this.getFirstApplicationIdOccurrences().has(a.entry.id),
+            n = (0, r.jsx)(S.ZP, $(J({}, a), {
+              channel: this.props.channel,
+              index: i,
+              isFirstApplicationOccurrence: t
+            }), e);
           return a.entry.content_type === p.s.LEADERBOARD ? (0, r.jsx)(w.N, {
-            children: t
-          }, e) : t
+            children: n
+          }, e) : n
         }
         if (a.type === k.so.HIDDEN_CONTENT_INVENTORY) return (0, r.jsx)(E.Z, {}, "content-inventory-hidden-entry")
       }

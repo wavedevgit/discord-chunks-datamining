@@ -1,11 +1,12 @@
 /** Chunk was on 1272 **/
 /** chunk id: 13838, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => Z
-}), require("./388685.js");
+  Z: () => w
+}), require("./388685.js"), require("./997841.js");
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
   Chunk243814 = require("./243814.js"),
+  Chunk149765 = require("./149765.js"),
   Chunk902704 = require("./902704.js"),
   Chunk622822 = require("./622822.js"),
   Chunk812206 = require("./812206.js"),
@@ -28,43 +29,43 @@ var Chunk392711 = require("./392711.js"),
   Chunk863141 = require("./863141.js"),
   Chunk186901 = require("./186901.js"),
   Chunk981631 = require("./981631.js");
-let P = e => (0, v.Z)(e).required().keys({
+let j = e => (0, I.Z)(e).required().keys({
   channel_id: e.string().required()
 });
 
-function j(e) {
+function A(e) {
   var t;
   let {
     args: {
       channel_id: n
     },
     socket: r
-  } = e, i = p.Z.getChannel(n);
-  if (null == i || !(0, E.zM)(i, r.application.id, r.authorization.scopes)) throw new O.Z({
-    errorCode: T.lTL.INVALID_CHANNEL
+  } = e, i = f.Z.getChannel(n);
+  if (null == i || !(0, y.zM)(i, r.application.id, r.authorization.scopes)) throw new E.Z({
+    errorCode: P.lTL.INVALID_CHANNEL
   }, "Invalid channel id: ".concat(n));
-  if ((0, o.aC)(i) && (null == (t = b.default.getCurrentUser()) ? true : t.nsfwAllowed) !== true) throw new O.Z({
-    errorCode: T.lTL.INVALID_CHANNEL
+  if ((0, s.aC)(i) && (null == (t = _.default.getCurrentUser()) ? true : t.nsfwAllowed) !== true) throw new E.Z({
+    errorCode: P.lTL.INVALID_CHANNEL
   }, "Invalid nsfw channel id: ".concat(i.id))
 }
-let A = e => (0, v.Z)(e).keys({
+let x = e => (0, I.Z)(e).keys({
   channel_id: e.string().allow(null)
 });
 
-function x(e) {
+function Z(e) {
   let {
     args: {
       channel_id: t
     }
   } = e;
-  if (null != t && null == p.Z.getChannel(t)) throw new O.Z({
-    errorCode: T.lTL.INVALID_CHANNEL
+  if (null != t && null == f.Z.getChannel(t)) throw new E.Z({
+    errorCode: P.lTL.INVALID_CHANNEL
   }, "Invalid channel id: ".concat(t))
 }
-let Z = {
+let w = {
   [Chunk981631.zMe.GUILD_STATUS]: {
     scope: Chunk243814.x.RPC,
-    validation: e => (0, v.Z)(e).required().keys({
+    validation: e => (0, I.Z)(e).required().keys({
       guild_id: e.string().required()
     }),
     handler(e) {
@@ -73,21 +74,21 @@ let Z = {
           guild_id: t
         }
       } = e;
-      if (null == h.Z.getGuild(t)) throw new O.Z({
-        errorCode: T.lTL.INVALID_GUILD
+      if (null == g.Z.getGuild(t)) throw new E.Z({
+        errorCode: P.lTL.INVALID_GUILD
       }, "Invalid guild id: ".concat(t));
       return e => {
         var n;
         let {
           prevState: r,
           dispatch: l
-        } = e, a = h.Z.getGuild(t);
+        } = e, a = g.Z.getGuild(t);
         if (null == a) return;
         let o = {
           guild: {
             id: a.id,
             name: a.name,
-            icon_url: null != (n = (0, u.EB)(a, 128)) ? n : null
+            icon_url: null != (n = (0, d.EB)(a, 128)) ? n : null
           },
           online: 0
         };
@@ -99,7 +100,7 @@ let Z = {
     scope: {
       [Chunk186901.Gp.ANY]: [Chunk243814.x.RPC, Chunk243814.x.RPC_VOICE_READ]
     },
-    validation: e => (0, v.Z)(e).required().keys({
+    validation: e => (0, I.Z)(e).required().keys({
       channel_id: e.string().required()
     }),
     handler(e) {
@@ -108,23 +109,23 @@ let Z = {
           channel_id: t
         }
       } = e;
-      if (null == p.Z.getChannel(t)) throw new O.Z({
-        errorCode: T.lTL.INVALID_CHANNEL
+      if (null == f.Z.getChannel(t)) throw new E.Z({
+        errorCode: P.lTL.INVALID_CHANNEL
       }, "Invalid channel id: ".concat(t));
       return e => {
         let {
           prevState: n,
           dispatch: r
-        } = e, l = p.Z.getChannel(t);
+        } = e, l = f.Z.getChannel(t);
         if (null == l) return;
         let a = l.getGuildId(),
-          o = Object.values(_.Z.getVoiceStatesForChannel(l.id));
+          o = Object.values(O.Z.getVoiceStatesForChannel(l.id));
         return n && i().differenceBy(o, n, e => {
           let {
             userId: t
           } = e;
           return t
-        }).forEach(e => r((0, E.aE)(a, l.id, e))), o
+        }).forEach(e => r((0, y.aE)(a, l.id, e))), o
       }
     }
   },
@@ -132,7 +133,7 @@ let Z = {
     scope: {
       [Chunk186901.Gp.ANY]: [Chunk243814.x.RPC, Chunk243814.x.RPC_VOICE_READ]
     },
-    validation: e => (0, v.Z)(e).required().keys({
+    validation: e => (0, I.Z)(e).required().keys({
       channel_id: e.string().required()
     }),
     handler(e) {
@@ -141,23 +142,23 @@ let Z = {
           channel_id: t
         }
       } = e;
-      if (null == p.Z.getChannel(t)) throw new O.Z({
-        errorCode: T.lTL.INVALID_CHANNEL
+      if (null == f.Z.getChannel(t)) throw new E.Z({
+        errorCode: P.lTL.INVALID_CHANNEL
       }, "Invalid channel id: ".concat(t));
       return e => {
         let {
           prevState: n,
           dispatch: r
-        } = e, l = p.Z.getChannel(t);
+        } = e, l = f.Z.getChannel(t);
         if (null == l) return;
         let a = l.getGuildId(),
-          o = Object.values(_.Z.getVoiceStatesForChannel(l.id));
+          o = Object.values(O.Z.getVoiceStatesForChannel(l.id));
         return i().differenceBy(n, o, e => {
           let {
             userId: t
           } = e;
           return t
-        }).forEach(e => r((0, E.aE)(a, l.id, e))), o
+        }).forEach(e => r((0, y.aE)(a, l.id, e))), o
       }
     }
   },
@@ -165,7 +166,7 @@ let Z = {
     scope: {
       [Chunk186901.Gp.ANY]: [Chunk243814.x.RPC, Chunk243814.x.RPC_VOICE_READ]
     },
-    validation: e => (0, v.Z)(e).required().keys({
+    validation: e => (0, I.Z)(e).required().keys({
       channel_id: e.string().required()
     }),
     handler(e) {
@@ -174,17 +175,17 @@ let Z = {
           channel_id: t
         }
       } = e;
-      if (null == p.Z.getChannel(t)) throw new O.Z({
-        errorCode: T.lTL.INVALID_CHANNEL
+      if (null == f.Z.getChannel(t)) throw new E.Z({
+        errorCode: P.lTL.INVALID_CHANNEL
       }, "Invalid channel id: ".concat(t));
       return e => {
         let {
           prevState: n,
           dispatch: r
-        } = e, l = p.Z.getChannel(t);
+        } = e, l = f.Z.getChannel(t);
         if (null == l) return;
         let a = l.getGuildId(),
-          o = Object.values(_.Z.getVoiceStatesForChannel(l.id)).map(e => (0, E.aE)(a, l.id, e));
+          o = Object.values(O.Z.getVoiceStatesForChannel(l.id)).map(e => (0, y.aE)(a, l.id, e));
         return i().differenceWith(o, n, i().isEqual).forEach(e => r(e)), o
       }
     }
@@ -198,43 +199,43 @@ let Z = {
         prevState: t,
         dispatch: n
       } = e, r = {
-        state: (0, E.zy)(m.Z.getState()),
-        hostname: m.Z.getHostname(),
-        pings: m.Z.getPings(),
-        average_ping: m.Z.getAveragePing(),
-        last_ping: m.Z.getLastPing()
+        state: (0, y.zy)(b.Z.getState()),
+        hostname: b.Z.getHostname(),
+        pings: b.Z.getPings(),
+        average_ping: b.Z.getAveragePing(),
+        last_ping: b.Z.getLastPing()
       };
       return i().isEqual(r, t) || n(r), r
     }
   },
   [Chunk981631.zMe.MESSAGE_CREATE]: {
     scope: Chunk243814.x.RPC,
-    validation: P,
-    handler: j
+    validation: j,
+    handler: A
   },
   [Chunk981631.zMe.MESSAGE_UPDATE]: {
     scope: Chunk243814.x.RPC,
-    validation: P,
-    handler: j
+    validation: j,
+    handler: A
   },
   [Chunk981631.zMe.MESSAGE_DELETE]: {
     scope: Chunk243814.x.RPC,
-    validation: P,
-    handler: j
+    validation: j,
+    handler: A
   },
   [Chunk981631.zMe.SPEAKING_START]: {
     scope: {
       [Chunk186901.Gp.ANY]: [Chunk243814.x.RPC, Chunk243814.x.RPC_VOICE_READ, Chunk186901.lH]
     },
-    validation: A,
-    handler: x
+    validation: x,
+    handler: Z
   },
   [Chunk981631.zMe.SPEAKING_STOP]: {
     scope: {
       [Chunk186901.Gp.ANY]: [Chunk243814.x.RPC, Chunk243814.x.RPC_VOICE_READ, Chunk186901.lH]
     },
-    validation: A,
-    handler: x
+    validation: x,
+    handler: Z
   },
   [Chunk981631.zMe.GUILD_CREATE]: {
     scope: Chunk243814.x.RPC,
@@ -313,7 +314,15 @@ let Z = {
   },
   [Chunk981631.zMe.RELATIONSHIP_UPDATE]: {
     scope: Chunk243814.x.RELATIONSHIPS_READ,
-    handler() {}
+    handler(e) {
+      var t;
+      let {
+        socket: n
+      } = e;
+      if (a.e$(a.vB(null != (t = n.application.flags) ? t : 0), a.vB(P.udG.DISABLE_RELATIONSHIPS_ACCESS))) throw new E.Z({
+        errorCode: P.lTL.INVALID_PERMISSIONS
+      }, "Missing Permissions")
+    }
   },
   [Chunk981631.zMe.CURRENT_USER_UPDATE]: {
     scope: {
@@ -324,9 +333,9 @@ let Z = {
         prevState: t,
         dispatch: n
       } = e, r = {
-        currentUser: b.default.getCurrentUser()
+        currentUser: _.default.getCurrentUser()
       };
-      return null == r.currentUser || null != t && (0, a.Z)(r, t) || n((0, S.Z)(r.currentUser)), r
+      return null == r.currentUser || null != t && (0, o.Z)(r, t) || n((0, N.Z)(r.currentUser)), r
     }
   },
   [Chunk981631.zMe.CURRENT_GUILD_MEMBER_UPDATE]: {
@@ -344,9 +353,9 @@ let Z = {
           prevState: n,
           dispatch: r
         } = e, i = {
-          currentGuildMember: f.ZP.getSelfMember(t)
+          currentGuildMember: h.ZP.getSelfMember(t)
         };
-        return null == i.currentGuildMember || null != n && (0, a.Z)(i, n) || r((0, C.Z)(i.currentGuildMember)), i
+        return null == i.currentGuildMember || null != n && (0, o.Z)(i, n) || r((0, S.Z)(i.currentGuildMember)), i
       }
     }
   },
@@ -371,11 +380,11 @@ let Z = {
       let {
         prevState: n,
         dispatch: r
-      } = e, l = d.Z.getStreamerActiveStreamMetadata(), a = (null == l ? true : l.pid) != null ? c.ZP.getGameForPID(l.pid) : null, o = (null == a ? true : a.id) != null ? s.Z.getApplication(a.id) : null, u = null != o ? (0, I.Z)(o) : null, p = null == l ? true : l.sourceName, f = {
+      } = e, l = p.Z.getStreamerActiveStreamMetadata(), a = (null == l ? true : l.pid) != null ? u.ZP.getGameForPID(l.pid) : null, o = (null == a ? true : a.id) != null ? c.Z.getApplication(a.id) : null, s = null != o ? (0, C.Z)(o) : null, d = null == l ? true : l.sourceName, f = {
         active: null != l,
         pid: null != (t = null == l ? true : l.pid) ? t : null,
-        application: null != u ? {
-          name: p
+        application: null != s ? {
+          name: d
         } : null
       };
       return i().isEqual(f, n) || r(f), f
@@ -390,7 +399,7 @@ let Z = {
         prevState: t,
         dispatch: n
       } = e, r = {
-        active: g.Z.isVideoEnabled()
+        active: m.Z.isVideoEnabled()
       };
       return i().isEqual(r, t) || n(r), r
     }

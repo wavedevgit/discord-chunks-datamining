@@ -118,6 +118,12 @@ class h extends(r = Chunk442837.ZP.Store) {
   noDataAvailable(e) {
     return u.has(e)
   }
+  numNoDataAvailable() {
+    return u.size
+  }
+  numSupplementalGames() {
+    return s.size
+  }
 }
 o(h, "displayName", "DetectableGameSupplementalStore");
 let m = new h(Chunk570140.Z, {

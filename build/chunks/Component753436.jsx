@@ -20,11 +20,11 @@ function f(e) {
     userId: r,
     widgetType: f,
     guildId: g,
-    channelId: b,
-    loading: p = false,
+    channelId: p,
+    loading: b = false,
     disableInteraction: O = false
   } = e, m = (0, c.Z)(t.applicationId), j = m.length > 0, y = l.default.getCurrentUser(), v = (null == y ? true : y.id) === r;
-  return p ? (0, n.jsx)("div", {
+  return b ? (0, n.jsx)("div", {
     className: u.loadingCover
   }) : (0, n.jsxs)("div", {
     className: d.container,
@@ -47,7 +47,7 @@ function f(e) {
       className: d.socialProof,
       users: m,
       guildId: g,
-      channelId: b,
+      channelId: p,
       visuallyHideLabel: true
     })]
   })

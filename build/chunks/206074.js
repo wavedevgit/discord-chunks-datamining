@@ -60,6 +60,8 @@ function g(e) {
     let e = () => {
       (0, l.Q3)(i.z.CLOUD_PLAY_NEW_BADGE, {
         dismissAction: p.L.TAKE_ACTION
+      }), (0, l.Q3)(i.z.CLOUD_PLAY_POPOVER, {
+        dismissAction: p.L.TAKE_ACTION
       })
     };
     return h(t) && null != d ? () => {

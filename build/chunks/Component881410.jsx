@@ -36,7 +36,7 @@ function f(e) {
     disabled: t,
     widgetType: r,
     widget: f
-  } = e, [g] = (0, a.ynZ)(), b = l.useRef(null), p = l.useMemo(() => new Set(f.games.map(e => e.applicationId)), [f.games]), O = l.useCallback(e => {
+  } = e, [g] = (0, a.ynZ)(), p = l.useRef(null), b = l.useMemo(() => new Set(f.games.map(e => e.applicationId)), [f.games]), O = l.useCallback(e => {
     (0, c.ES)(r, {
       applicationId: e
     })
@@ -59,7 +59,7 @@ function f(e) {
     }), t))
   }, [m, j]);
   return (0, n.jsx)(a.yRy, {
-    targetElementRef: b,
+    targetElementRef: p,
     position: "bottom",
     align: "center",
     renderPopout: e => {
@@ -79,7 +79,7 @@ function f(e) {
         showScrollbar: true,
         maxVisibleItems: 7,
         children: e => y(e).map(e => (0, n.jsx)(a.lo1, {
-          disabled: p.has(e.value),
+          disabled: b.has(e.value),
           value: String(e.value),
           children: (0, n.jsx)(a.lo1.Label, {
             children: (0, n.jsx)(a.Text, {
@@ -92,7 +92,7 @@ function f(e) {
       })
     },
     children: e => (0, n.jsx)("div", {
-      ref: b,
+      ref: p,
       children: (0, n.jsx)(a.zxk, d({
         variant: "secondary",
         size: "sm",

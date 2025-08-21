@@ -27,19 +27,20 @@ let E = [Chunk297781.OV, Chunk297781.EE, Chunk297781.Af, Chunk297781.U9, Chunk29
       entry: n,
       channel: i,
       selected: b,
-      hovered: y
+      hovered: y,
+      isFirstApplicationOccurrence: O
     } = e, {
-      largeImage: O
+      largeImage: v
     } = (0, d.rv)({
       entry: n,
       showCoverImage: false
     }), {
-      data: v
-    } = (0, l.IX)(n.extra.application_id), I = (0, s.q)(v, "MemberListGamingContent"), T = I ? [a.z.CLOUD_PLAY_NEW_BADGE] : [], [S] = (0, u.US)(T), A = I;
+      data: I
+    } = (0, l.IX)(n.extra.application_id), T = (0, s.q)(I, "MemberListGamingContent") && O, S = T ? [a.z.CLOUD_PLAY_NEW_BADGE] : [], [A] = (0, u.US)(S), C = T;
     return (0, r.jsxs)(p.Zb, {
       selected: b,
       usesCardRows: true,
-      isAutoHeight: A,
+      isAutoHeight: C,
       children: [(0, r.jsxs)(p.lS, {
         children: [(0, r.jsxs)(p.e$, {
           children: [(0, r.jsx)(p.F9, {
@@ -56,13 +57,13 @@ let E = [Chunk297781.OV, Chunk297781.EE, Chunk297781.Af, Chunk297781.U9, Chunk29
             }, t))
           })]
         }), (0, r.jsx)(f.f, {
-          alt: null != (t = null == O ? true : O.text) ? t : null == O ? true : O.alt,
-          src: null == O ? true : O.src,
+          alt: null != (t = null == v ? true : v.text) ? t : null == v ? true : v.alt,
+          src: null == v ? true : v.src,
           size: 48,
           className: g.thumbnail,
-          showTooltip: (null == O ? true : O.text) != null
+          showTooltip: (null == v ? true : v.text) != null
         })]
-      }), I && (0, r.jsxs)(r.Fragment, {
+      }), T && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(p.xx, {}), (0, r.jsxs)(p.lS, {
           className: m.cloudPlaySection,
           children: [(0, r.jsxs)("div", {
@@ -75,7 +76,7 @@ let E = [Chunk297781.OV, Chunk297781.EE, Chunk297781.Af, Chunk297781.U9, Chunk29
               color: "text-secondary",
               children: h.intl.string(h.t["5HiF2t"])
             })]
-          }), S === a.z.CLOUD_PLAY_NEW_BADGE && (0, r.jsx)(o.IGR, {
+          }), A === a.z.CLOUD_PLAY_NEW_BADGE && (0, r.jsx)(o.IGR, {
             text: h.intl.string(h.t.y2b7CA),
             color: c.Z.BG_BRAND
           })]

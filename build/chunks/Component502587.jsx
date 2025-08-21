@@ -1,7 +1,7 @@
 /** Chunk was on 27069 **/
 /** chunk id: 502587, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => p
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -45,10 +45,10 @@ function g(e, t) {
   }), e
 }
 
-function b(e) {
+function p(e) {
   let {
     widget: t
-  } = e, b = l.useRef(null), p = e => {
+  } = e, p = l.useRef(null), b = e => {
     if (e.shiftKey) {
       (0, c.y8)(t.type), (0, s.L$)(u.qb.WIDGET_REMOVED);
       return
@@ -65,7 +65,7 @@ function b(e) {
     })
   };
   return (0, n.jsx)(i.yRy, {
-    targetElementRef: b,
+    targetElementRef: p,
     align: "top",
     position: "right",
     disablePointerEvents: false,
@@ -84,7 +84,7 @@ function b(e) {
           children: (0, n.jsx)(i.sNh, {
             id: "remove-widget",
             label: d.intl.string(d.t.Mm07YW),
-            action: p,
+            action: b,
             color: "danger",
             icon: i.XHJ
           })
@@ -92,7 +92,7 @@ function b(e) {
       })
     },
     children: e => (0, n.jsx)(i.hU, g(f({}, e), {
-      buttonRef: b,
+      buttonRef: p,
       icon: i.xhG,
       variant: "secondary",
       "aria-label": d.intl.string(d.t.xpSHSk),

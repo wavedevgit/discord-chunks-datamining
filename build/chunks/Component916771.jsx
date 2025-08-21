@@ -2,60 +2,55 @@
 /** chunk id: 916771, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk46973 = require("./46973.js"),
   Chunk878001 = require("./878001.js"),
   Chunk458725 = require("./458725.js"),
-  Chunk386146 = require("./386146.js"),
   Chunk803647 = require("./803647.js"),
   Chunk63063 = require("./63063.js"),
   Chunk112560 = require("./112560.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function _(e) {
+function f(e) {
   switch (null == e ? true : e.type) {
     case o.u.SCREENSHARE_OS_ERROR:
-      return f.intl.format(f.t.e9LMur, {
+      return d.intl.format(d.t.e9LMur, {
         errorMessage: e.errorMessage
       });
     case o.u.STREAM_FAILED_TO_START:
     default:
-      return f.intl.string(f.t.rSlOen)
+      return d.intl.string(d.t.rSlOen)
   }
 }
 
-function p(e) {
+function _(e) {
   var t;
   let {
     stream: n,
-    width: p,
-    avError: h,
-    avErrorContext: m,
-    selected: g = false,
-    noArt: E = false
-  } = e, {
-    avErrorUIEnabled: b
-  } = (0, s.JN)({
-    location: "StreamWarning"
-  }), y = _(m), O = null == (t = (0, o.hp)(null != h ? h : o.u.STREAM_FAILED_TO_START)) ? true : t.errorCode;
-  return (0, r.jsx)(u.Z, {
-    header: y,
-    size: (0, u.L)(p),
-    noArt: E,
-    selected: g,
-    description: f.intl.format(f.t.sXsgsL, {
-      helpUrl: c.Z.getArticleURL(d.BhN.STREAM_FAILED)
+    width: _,
+    avError: p,
+    avErrorContext: h,
+    selected: m = false,
+    noArt: g = false
+  } = e, E = f(h), b = null == (t = (0, o.hp)(null != p ? p : o.u.STREAM_FAILED_TO_START)) ? true : t.errorCode;
+  return (0, r.jsx)(c.Z, {
+    header: E,
+    size: (0, c.L)(_),
+    noArt: g,
+    selected: m,
+    description: d.intl.format(d.t.sXsgsL, {
+      helpUrl: l.Z.getArticleURL(u.BhN.STREAM_FAILED)
     }),
-    errorCodeMessage: b ? f.intl.formatToPlainString(f.t["ejOT9/"], {
-      errorCode: O
-    }) : true,
+    errorCodeMessage: d.intl.formatToPlainString(d.t["ejOT9/"], {
+      errorCode: b
+    }),
     onCTAClick: () => {
-      (0, a.w)(i.Yn.STREAM, n.ownerId), (0, l.Z)(n)
+      (0, a.w)(i.Yn.STREAM, n.ownerId), (0, s.Z)(n)
     },
-    callToAction: f.intl.string(f.t["4EGMWF"])
+    callToAction: d.intl.string(d.t["4EGMWF"])
   })
 }
