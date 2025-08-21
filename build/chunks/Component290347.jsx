@@ -92,11 +92,12 @@ let T = [],
       }), (0, r.jsxs)("div", {
         className: C.featureCardTextGroup,
         children: [(0, r.jsx)(u.X6q, {
-          variant: "heading-md/extrabold",
+          variant: "heading-md/bold",
           className: C.featureCardTextHeader,
           children: t
         }), (0, r.jsx)(u.Text, {
-          variant: "text-sm/normal",
+          variant: "text-md/normal",
+          color: "text-secondary",
           children: n
         })]
       })]
@@ -265,8 +266,8 @@ function A(e) {
           color: "text-secondary",
           className: C.subHeader,
           children: [L, null == R ? true : R()]
-        }), null != U && (0, r.jsx)(u.X6q, {
-          variant: "heading-md/medium",
+        }), null != U && "" !== U && (0, r.jsx)(u.X6q, {
+          variant: "heading-lg/semibold",
           className: C.bodyText,
           children: U
         }), D.length > 0 && (0, r.jsx)("div", {
@@ -276,7 +277,10 @@ function A(e) {
           children: D.map((e, t) => (0, r.jsx)(j, N(S({}, e), {
             wideStyle: H
           }), "".concat(e.header, "_").concat(t)))
-        }), M()]
+        }), (0, r.jsx)("div", {
+          className: C.buttonContainer,
+          children: M()
+        })]
       })]
     })
   })

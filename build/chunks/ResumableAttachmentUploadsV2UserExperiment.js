@@ -9,21 +9,31 @@ var Chunk818083 = require("./818083.js"),
 let a = (0, Chunk818083.B)({
   id: "2025-08_resumable_attachment_uploads_v2",
   kind: "user",
-  label: "Resumable mobile attachment uploads",
+  label: "Resumable attachment uploads v2",
   defaultConfig: {
-    enableResumableUploads: false
+    enableNewRetry: false,
+    enableResumption: false
   },
   treatments: [{
     id: 0,
     label: "Control",
     config: {
-      enableResumableUploads: false
+      enableNewRetry: false,
+      enableResumption: false
     }
   }, {
     id: 1,
-    label: "Resumable Uploads Enabled",
+    label: "New Retry No Resumption",
     config: {
-      enableResumableUploads: true
+      enableNewRetry: true,
+      enableResumption: false
+    }
+  }, {
+    id: 2,
+    label: "New Retry With Resumption",
+    config: {
+      enableNewRetry: true,
+      enableResumption: true
     }
   }]
 });

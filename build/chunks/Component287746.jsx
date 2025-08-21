@@ -269,6 +269,7 @@ class ta extends Chunk647438.PureComponent {
     } = this.props, {
       contentWarningProps: x
     } = this.state, v = module.type === Chunk981631.d4z.GUILD_ANNOUNCEMENT && Chunk410030 ? (0, Chunk951288.jsx)(Chunk190210.Z, {
+      ref: this.props.refInstance,
       textValue: this.state.textValue,
       richValue: this.state.richValue,
       focused: exports,

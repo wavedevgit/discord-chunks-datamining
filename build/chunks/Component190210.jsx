@@ -170,55 +170,58 @@ let en = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
     eventEmitter: eq,
     handleEditorSelectionChanged: eK
   } = (0, G.x2)(ew, p, g), eX = i.useCallback(e => {
-    var t, n;
-    let r = [],
-      i = eS.length > 0 ? eS : e.value.length > 0 ? e.value.slice(0, 80) : K.intl.string(K.t["7Xm5QE"]);
-    if (null == eI) return (0, v.c)(L.id, {
-      title: "",
-      heroFile: null
-    }), null == (n = ew.current) || n.blur(), ed($(J({}, e), {
+    let t = e => {
+        if (e.shouldClear) {
+          var t;
+          (0, v.c)(L.id, {
+            title: "",
+            heroFile: null
+          }), null == (t = ew.current) || t.blur()
+        }
+        return e
+      },
+      n = [],
+      r = eS.length > 0 ? eS : e.value.length > 0 ? e.value.slice(0, 80) : K.intl.string(K.t["7Xm5QE"]);
+    if (null == eI) return ed($(J({}, e), {
       announcementSendOptions: {
         createThread: eY && eZ,
-        threadName: i,
+        threadName: r,
         publish: eP
       }
-    }));
-    r.push({
+    })).then(t);
+    n.push({
       type: m.re.MEDIA_GALLERY,
       items: [ee("attachment://".concat(et(eI.name)), false)],
       id: "".concat(Y.Vm)
-    }), e.value.length > 0 && r.push({
+    }), e.value.length > 0 && n.push({
       type: m.re.TEXT_DISPLAY,
       content: e.value,
       id: "".concat(Y.Kb)
     });
-    let l = R.Z.getUploads(L.id, A.d.ChannelMessage),
-      a = l.filter(e => (e.isImage || e.isVideo) && e.filename !== (null == eI ? true : eI.name)),
-      o = l.filter(e => !e.isImage && !e.isVideo && e.filename !== (null == eI ? true : eI.name)),
-      s = a.map(e => ee("attachment://".concat(et(e.filename)), false));
-    return s.length > 0 && r.push({
+    let i = R.Z.getUploads(L.id, A.d.ChannelMessage),
+      l = i.filter(e => (e.isImage || e.isVideo) && e.filename !== (null == eI ? true : eI.name)),
+      a = i.filter(e => !e.isImage && !e.isVideo && e.filename !== (null == eI ? true : eI.name)),
+      o = l.map(e => ee("attachment://".concat(et(e.filename)), false));
+    return o.length > 0 && n.push({
       type: m.re.MEDIA_GALLERY,
-      items: s,
+      items: o,
       id: "".concat(Y.m2)
-    }), o.forEach((e, t) => {
-      r.push({
+    }), a.forEach((e, t) => {
+      n.push({
         type: m.re.FILE,
         file: ee("attachment://".concat(et(e.filename)), false).media,
         id: "".concat(Y.kn + t),
         name: et(e.filename),
         size: null
       })
-    }), (0, v.c)(L.id, {
-      title: "",
-      heroFile: null
-    }), null == (t = ew.current) || t.blur(), ed($(J({}, e), {
-      components: r,
+    }), ed($(J({}, e), {
+      components: n,
       announcementSendOptions: {
         createThread: eY && eZ,
-        threadName: i,
+        threadName: r,
         publish: eP
       }
-    }))
+    })).then(t)
   }, [ed, eS, eI, L.id, eZ, eP, eY]), {
     submit: eQ,
     handleSubmit: eJ
