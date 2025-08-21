@@ -108,37 +108,20 @@ let j = function(e) {
     var e;
     return null != (e = d.Z.getSettings().newMemberActions) ? e : f
   }), a = i.useCallback((e, n) => {
-    (0, c.vR)(e);
-    let r = d.Z.getSettings();
-    if (null == r) return;
-    let {
-      channelId: i
-    } = e;
-    (0, c.oo)(t, r, true).then(() => {
-      null != n && (0, c.ad)(t, i, n, true)
-    })
+    (0, c.vR)(e), (0, c.ad)(t, e.channelId, n, true)
   }, [t]), m = i.useCallback((e, r, i, l) => {
     var a;
     let s = null == (a = n[e]) ? true : a.channelId;
-    if (null == s) return;
-    let o = d.Z.getSettings();
-    null != o && ((0, c.el)(s, r), (0, c.oo)(t, o, true).then(() => {
-      (0, c.ad)(t, s, i, l)
-    }))
+    null != s && null != d.Z.getSettings() && ((0, c.el)(s, r), (0, c.ad)(t, s, i, l))
   }, [n, t]), j = i.useCallback(e => {
-    var r;
-    let i = null == (r = n[e]) ? true : r.channelId;
-    if (null == i) return;
-    (0, c.Hr)(i);
-    let l = d.Z.getSettings();
-    (0, c.oo)(t, l, true)
-  }, [n, t]), v = n.map(e => h(p({}, e), {
+    var t;
+    let r = null == (t = n[e]) ? true : t.channelId;
+    null != r && (0, c.Hr)(r)
+  }, [n]), v = n.map(e => h(p({}, e), {
     id: e.channelId
   })), _ = i.useCallback(e => {
-    (0, c.hS)(e);
-    let n = d.Z.getSettings();
-    null != n && (0, c.oo)(t, n, true)
-  }, [t]), {
+    (0, c.hS)(e)
+  }, []), {
     handleDragStart: O,
     handleDragReset: y,
     handleDragComplete: C

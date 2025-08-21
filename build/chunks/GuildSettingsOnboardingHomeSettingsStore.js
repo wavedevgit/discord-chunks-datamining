@@ -73,7 +73,13 @@ class _ extends(r = Chunk442837.ZP.PersistedStore) {
     return null != p ? p : m
   }
   hasChanges() {
-    return null != g && !l().isEqual(l().omit(p, "newMemberActions"), l().omit(Chunk563534.Z.getSettings(g), "newMemberActions"))
+    return null != g && !l().isEqual(p, Chunk563534.Z.getSettings(g))
+  }
+  canCloseEarly() {
+    return !this.hasChanges()
+  }
+  showNotice() {
+    return this.hasChanges()
   }
   getSubmitting() {
     return h

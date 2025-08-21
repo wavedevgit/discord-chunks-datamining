@@ -516,7 +516,7 @@ let eu = Chunk647438.memo(function(e) {
       parentChannel: t,
       textValue: n
     } = e, i = new M.ZP({
-      channelId: t.id,
+      channel_id: t.id,
       content: n
     }), {
       content: a

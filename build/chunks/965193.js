@@ -1,8 +1,6 @@
-/** Chunk was on 83942 **/
-/** chunk id: 965193, original params: n,t,i (module,exports,require) **/
+/** Chunk was on 35282 **/
+/** chunk id: 965193, original params: n,t,e (module,exports,require) **/
 module.exports = {
   closeButton: "closeButton__09684",
-  content: "content__09684",
-  warningHeading: "warningHeading__09684",
-  warningIcon: "warningIcon__09684"
+  content: "content__09684"
 }

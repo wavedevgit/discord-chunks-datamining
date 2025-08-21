@@ -136,7 +136,9 @@ let R = e => {
   }), M.disabled = true), null != Y) ? (0, r.jsx)(p.Z, {
     text: Y,
     "aria-label": false,
-    children: e => (0, r.jsx)(c.gtL, A(T(A(T({}, e), {
+    children: e => (0, r.jsx)(c.gtL, A(T(A(T({
+      "data-migration-pending": true
+    }, e), {
       disabled: true,
       size: l.zx.Sizes.SMALL,
       pauseAnimation: P
@@ -144,6 +146,7 @@ let R = e => {
       children: z
     }))
   }) : (0, r.jsx)(c.gtL, A(T({
+    "data-migration-pending": true,
     size: l.zx.Sizes.SMALL
   }, M), {
     className: o()(M.className, {

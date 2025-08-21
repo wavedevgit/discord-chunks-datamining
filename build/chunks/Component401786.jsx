@@ -175,8 +175,10 @@ function j(e) {
     expirationDate: u.endsAt.toDate()
   })), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(C.Z, {
+      "data-migration-pending": true,
       onClose: O
     }), (0, r.jsxs)(c.hzk, {
+      "data-migration-pending": true,
       className: w.body,
       children: [null !== R && (0, r.jsx)(c.kzN, {
         className: w.error,
@@ -202,6 +204,7 @@ function j(e) {
         }) : null]
       })]
     }), (0, r.jsxs)(c.mzw, {
+      "data-migration-pending": true,
       align: h.Z.Align.CENTER,
       justify: h.Z.Justify.BETWEEN,
       children: [(0, r.jsx)(c.zxk, {
@@ -270,6 +273,7 @@ function k(e) {
       analyticsLocations: g
     } = (0, _.ZP)(f.Z.GUILD_BOOST_CANCELLATION_MODAL);
   if (null == l) t = (0, r.jsx)(c.hzk, {
+    "data-migration-pending": true,
     children: (0, r.jsx)(c.$jN, {})
   });
   else switch (h) {
