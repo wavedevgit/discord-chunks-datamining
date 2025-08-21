@@ -1,4 +1,4 @@
-/** Chunk was on 71387 **/
+/** Chunk was on 45620 **/
 /** chunk id: 306092, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -18,10 +18,10 @@ function s(e) {
     hasSufficientOrbs: c,
     discountOfferAmount: u
   } = e;
-  return t.currency === l.pK.DISCORD_ORB ? (0, n.jsx)(a.Z, {
+  return t.currency === i.pK.DISCORD_ORB ? (0, n.jsx)(a.Z, {
     orbAmount: t.amount,
     className: c ? true : o.disabled
-  }) : (0, n.jsx)(i.F, {
+  }) : (0, n.jsx)(l.F, {
     price: t,
     discount: s,
     nitroIconType: r ? "default" : true,
@@ -34,18 +34,18 @@ function c(e) {
   let {
     displayPrices: t,
     isPremiumUser: r,
-    discount: i,
+    discount: l,
     hasSufficientOrbs: a,
-    discountOfferAmount: l
+    discountOfferAmount: i
   } = e;
   return (0, n.jsx)("div", {
     className: o.priceLine,
     children: t.map((e, t) => (0, n.jsx)(s, {
       price: e,
       isPremiumUser: r,
-      discount: i,
+      discount: l,
       hasSufficientOrbs: a,
-      discountOfferAmount: l
+      discountOfferAmount: i
     }, t))
   })
 }

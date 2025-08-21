@@ -1,4 +1,4 @@
-/** Chunk was on 71387 **/
+/** Chunk was on 45620 **/
 /** chunk id: 813083, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -23,12 +23,12 @@ let p = e => {
   if (null == t.unpublishedAt) return null;
   let p = (0, c.OT)(t.unpublishedAt);
 
-  function v(e) {
-    return (0, i.jsx)(o.IGR, {
+  function g(e) {
+    return (0, l.jsx)(o.IGR, {
       disableColor: true,
       text: e,
       className: n,
-      style: (0, l.wj)(d) ? {
+      style: (0, i.wj)(d) ? {
         color: "var(--black-500)",
         backgroundColor: "var(--white-500)"
       } : {
@@ -37,9 +37,9 @@ let p = e => {
       }
     })
   }
-  return (0, a.EQ)([r, p > 1]).with(["card", true], () => null).with(["banner", true], () => v(u.intl.formatToPlainString(u.t["8gsP5O"], {
+  return (0, a.EQ)([r, p > 1]).with(["card", true], () => null).with(["banner", true], () => g(u.intl.formatToPlainString(u.t["8gsP5O"], {
     days: p
-  }))).with(["modal", true], () => v(u.intl.formatToPlainString(u.t.Io7ozs, {
+  }))).with(["modal", true], () => g(u.intl.formatToPlainString(u.t.Io7ozs, {
     days: p
-  }))).otherwise(() => v(u.intl.string(u.t.Bc13HB)))
+  }))).otherwise(() => g(u.intl.string(u.t.Bc13HB)))
 }

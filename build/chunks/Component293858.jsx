@@ -1,12 +1,12 @@
 /** Chunk was on 54400 **/
-/** chunk id: 293858, original params: e,n,t (module,exports,require) **/
+/** chunk id: 293858, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  b: () => S
+  b: () => g
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
-  s = require.n(Chunk512722),
+  a = require.n(Chunk512722),
   Chunk704215 = require("./704215.js"),
   Chunk605236 = require("./605236.js"),
   Chunk347896 = require("./347896.js"),
@@ -23,83 +23,83 @@ var Chunk951288 = require("./951288.js"),
   Chunk698708 = require("./698708.jsx"),
   Chunk921944 = require("./921944.js");
 
-function S(e) {
-  let n, {
-      handleClose: t,
+function g(e) {
+  let t, {
+      handleClose: n,
       planGroup: l,
-      onSubscriptionConfirmation: S,
+      onSubscriptionConfirmation: g,
       renderPurchaseConfirmation: y,
-      postSuccessGuild: E,
-      followupSKUInfo: b,
-      continueSessionToInitialStep: P
+      postSuccessGuild: S,
+      followupSKUInfo: v,
+      continueSessionToInitialStep: E
     } = e,
     {
       activeSubscription: O,
-      paymentSources: I,
-      paymentSourceId: v,
-      selectedPlan: Z,
-      selectedSkuId: M,
-      step: w,
+      paymentSources: P,
+      paymentSourceId: w,
+      selectedPlan: I,
+      selectedSkuId: Z,
+      step: M,
       updatedSubscription: A,
-      startingPremiumSubscriptionPlanIdRef: B,
+      startingPremiumSubscriptionPlanIdRef: k,
       startingFractionalPremiumEndsAtRef: T
-    } = (0, _.JL)(),
+    } = (0, f.JL)(),
     {
-      isGift: U,
-      giftRecipient: k,
-      giftCode: R,
-      hasSentMessage: H,
-      isSendingMessage: F,
-      sendGiftMessage: N,
+      isGift: B,
+      giftRecipient: R,
+      giftCode: U,
+      hasSentMessage: N,
+      isSendingMessage: H,
+      sendGiftMessage: F,
       claimableRewards: G,
       selectedGiftingPromotionReward: D
     } = (0, x.wD)(),
     {
-      confirmationFooter: W
-    } = (0, f.zb)(),
-    z = null != W,
-    Y = (0, d.id)(Z, U, G),
-    K = (0, C.Z)(),
-    V = (0, d.a5)(Z),
+      confirmationFooter: z
+    } = (0, h.zb)(),
+    W = null != z,
+    Y = (0, d.id)(I, B, G),
+    V = (0, C.Z)(),
+    K = (0, d.a5)(I),
     q = (0, d.tK)(null == D ? true : D.skuId),
-    J = (0, L.$)(I, v),
-    Q = U && null != D && V;
-  s()(null != Z, "Expected plan to selected"), s()(null != M, "Expected selectedSkuId"), s()(null != w, "Step should be set");
-  let X = i.useCallback(() => {
-    t(), null == S || S()
-  }, [t, S]);
+    X = (0, m.$)(P, w),
+    J = B && null != D && K;
+  a()(null != I, "Expected plan to selected"), a()(null != Z, "Expected selectedSkuId"), a()(null != M, "Step should be set");
+  let Q = i.useCallback(() => {
+    n(), null == g || g()
+  }, [n, g]);
   return i.useEffect(() => {
-    !U || null == k || null == R || H || F || (0, c.pO)(k) || N({
-      onSubscriptionConfirmation: S
+    !B || null == R || null == U || N || H || (0, p.pO)(R) || F({
+      onSubscriptionConfirmation: g
     })
-  }, [N, U, k, R, H, F, S]), i.useEffect(() => {
-    null != K && null != K.reminderNotice && Y && (0, o.wH)(a.z.GIFTING_PROMOTION_REMINDER, K.dismissibleContentVersion, {
-      dismissAction: g.L.INDIRECT_ACTION
+  }, [F, B, R, U, N, H, g]), i.useEffect(() => {
+    null != V && null != V.reminderNotice && Y && (0, o.wH)(s.z.GIFTING_PROMOTION_REMINDER, V.dismissibleContentVersion, {
+      dismissAction: b.L.INDIRECT_ACTION
     })
-  }, [K, Y]), n = null != y ? y(Z, X, A) : null != P ? (0, r.jsx)(p.VY, {}) : U ? (0, r.jsx)(p.TB, {
-    planId: Z.id,
-    onClose: X
-  }) : B.current === Z.id ? (0, r.jsx)(p.ZP, {
-    planId: Z.id,
-    postSuccessGuild: E,
-    onClose: X,
-    paymentSourceType: J,
-    hideClose: z,
+  }, [V, Y]), t = null != y ? y(I, Q, A) : null != E ? (0, r.jsx)(c.VY, {}) : B ? (0, r.jsx)(c.TB, {
+    planId: I.id,
+    onClose: Q
+  }) : k.current === I.id ? (0, r.jsx)(c.ZP, {
+    planId: I.id,
+    postSuccessGuild: S,
+    onClose: Q,
+    paymentSourceType: X,
+    hideClose: W,
     startingFractionalPremiumEndsAt: T.current
-  }) : (0, r.jsx)(p.ZP, {
-    followupSKUInfo: b,
-    startingPremiumSubscriptionPlanId: B.current,
-    planId: Z.id,
-    onClose: X,
-    isDowngrade: null != O && (0, u.GY)(O, Z.id, l),
-    paymentSourceType: J,
-    hideClose: z,
+  }) : (0, r.jsx)(c.ZP, {
+    followupSKUInfo: v,
+    startingPremiumSubscriptionPlanId: k.current,
+    planId: I.id,
+    onClose: Q,
+    isDowngrade: null != O && (0, u.GY)(O, I.id, l),
+    paymentSourceType: X,
+    hideClose: W,
     startingFractionalPremiumEndsAt: T.current
   }), (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsxs)(h.C3, {
-      children: [(0, r.jsx)(m.Z, {}), n]
-    }), null != W && W, Q && null != q && (0, r.jsx)(j.Z, {
-      onClose: X,
+    children: [(0, r.jsxs)(_.C3, {
+      children: [(0, r.jsx)(L.Z, {}), t]
+    }), null != z && z, J && null != q && (0, r.jsx)(j.Z, {
+      onClose: Q,
       selectedPromotionalDecoPurchaseRecord: q,
       selectedGiftingPromotionReward: D
     })]

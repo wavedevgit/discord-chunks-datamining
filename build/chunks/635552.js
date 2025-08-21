@@ -1,4 +1,4 @@
-/** Chunk was on 71387 **/
+/** Chunk was on 45620 **/
 /** chunk id: 635552, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -16,23 +16,23 @@ let u = e => {
     product: t,
     onSuccess: u,
     onError: d
-  } = e, [p, v] = n.useState(false), {
+  } = e, [p, g] = n.useState(false), {
     firstAvatarDecoration: f,
-    firstProfileEffect: b
-  } = (0, s.Rj)(t), m = (0, o.x6)(t) ? c.intl.string(c.t.tf1ZZ2) : t.type === i.Z.AVATAR_DECORATION ? c.intl.string(c.t.zOA4a2) : t.type === i.Z.NAMEPLATE ? c.intl.string(c.t.gOzMv7) : c.intl.string(c.t.SWm2am);
+    firstProfileEffect: m
+  } = (0, s.Rj)(t), b = (0, o.x6)(t) ? c.intl.string(c.t.tf1ZZ2) : t.type === l.Z.AVATAR_DECORATION ? c.intl.string(c.t.zOA4a2) : t.type === l.Z.NAMEPLATE ? c.intl.string(c.t.gOzMv7) : c.intl.string(c.t.SWm2am);
   return {
     handleUseNow: n.useCallback(async () => {
-      v(true);
+      g(true);
       try {
         if (null != f && await (0, a.Mn)({
             avatarDecoration: f
-          }), null != b) {
+          }), null != m) {
           let e = {
-            profile_effect_id: b.id
+            profile_effect_id: m.id
           };
-          await (0, l.Z)(e)
+          await (0, i.Z)(e)
         }
-        if (t.type === i.Z.NAMEPLATE) {
+        if (t.type === l.Z.NAMEPLATE) {
           let e = t.items[0];
           await (0, a.Mn)({
             nameplate: e
@@ -42,10 +42,10 @@ let u = e => {
             ToastPosition: e,
             ToastType: t,
             createToast: n,
-            popToast: i,
+            popToast: l,
             showToast: a
           } = await Promise.resolve().then(r.bind(r, 481060));
-          i(), a(n(m, t.MESSAGE, {
+          l(), a(n(b, t.MESSAGE, {
             duration: 6e3,
             position: e.TOP
           }))
@@ -54,9 +54,9 @@ let u = e => {
       } catch (e) {
         null == d || d(e)
       } finally {
-        v(false)
+        g(false)
       }
-    }, [f, b, t, u, m, d]),
+    }, [f, m, t, u, b, d]),
     isApplying: p
   }
 }

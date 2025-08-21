@@ -1,7 +1,7 @@
 /** Chunk was on 54400 **/
-/** chunk id: 400981, original params: e,n,t (module,exports,require) **/
+/** chunk id: 400981, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => _
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -19,34 +19,34 @@ var Chunk442837 = require("./442837.js"),
   Chunk215023 = require("./215023.js"),
   Chunk473936 = require("./473936.js");
 
-function h(e) {
+function _(e) {
   let {
-    onClose: n,
-    selectedPromotionalDecoPurchaseRecord: t,
-    selectedGiftingPromotionReward: h
-  } = e, j = (0, i.e7)([u.default], () => u.default.getCurrentUser()), L = (0, i.e7)([a.Z], () => a.Z.useReducedMotion), {
-    analyticsLocations: m
-  } = (0, o.ZP)(), g = s.EFr.SIZE_32, S = (0, C.Z)(null == h ? true : h.assetId, g, !L), y = (0, c.Z)(), E = null == y ? true : y.giftPurchaseConfirmation;
-  return null == t || null == E ? null : (0, r.jsx)(x.O3, {
-    children: (0, r.jsx)(s.mzw, {
-      align: p.Z.Align.CENTER,
+    onClose: t,
+    selectedPromotionalDecoPurchaseRecord: n,
+    selectedGiftingPromotionReward: _
+  } = e, j = (0, i.e7)([u.default], () => u.default.getCurrentUser()), m = (0, i.e7)([s.Z], () => s.Z.useReducedMotion), {
+    analyticsLocations: L
+  } = (0, o.ZP)(), b = a.EFr.SIZE_32, g = (0, C.Z)(null == _ ? true : _.assetId, b, !m), y = (0, p.Z)(), S = null == y ? true : y.giftPurchaseConfirmation;
+  return null == n || null == S ? null : (0, r.jsx)(x.O3, {
+    children: (0, r.jsx)(a.mzw, {
+      align: c.Z.Align.CENTER,
       "data-migration-pending": true,
       children: (0, r.jsxs)("div", {
-        className: f.promotionalFooter,
-        children: [(0, r.jsx)(s.Xo$, {
+        className: h.promotionalFooter,
+        children: [(0, r.jsx)(a.Xo$, {
           "aria-label": null == j ? true : j.username,
-          size: g,
-          src: null == j ? true : j.getAvatarURL(true, (0, s.pxk)(g), !L),
-          avatarDecoration: S
+          size: b,
+          src: null == j ? true : j.getAvatarURL(true, (0, a.pxk)(b), !m),
+          avatarDecoration: g
         }), (0, r.jsx)(l.zx, {
           variant: "primary",
-          text: E.collectRewardButtonText(),
+          text: S.collectRewardButtonText(),
           onClick: () => {
-            n(), (0, d.Z)({
-              product: t,
+            t(), (0, d.Z)({
+              product: n,
               shouldShowPromotionalExperience: true,
-              analyticsLocations: m,
-              purchaseType: _.o8.PROMOTIONAL
+              analyticsLocations: L,
+              purchaseType: f.o8.PROMOTIONAL
             })
           }
         })]

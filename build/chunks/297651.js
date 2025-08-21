@@ -1,4 +1,4 @@
-/** Chunk was on 71387 **/
+/** Chunk was on 45620 **/
 /** chunk id: 297651, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -17,19 +17,19 @@ var Chunk647438 = require("./647438.js"),
 function p(e, t) {
   let r = arguments.length > 2 && true !== arguments[2] ? arguments[2] : "product",
     p = (0, o.sp)(),
-    v = (0, i.e7)([s.Z], () => s.Z.getProduct(e)),
+    g = (0, l.e7)([s.Z], () => s.Z.getProduct(e)),
     f = (0, u.x)(),
-    b = l.ZP.canUseCollectibles(f),
-    m = n.useRef(null),
-    g = n.useCallback(() => {
-      let n = null != v ? (0, c.Vw)(v, b, false) : null,
-        i = null != v ? (0, c.eu)(v, b, false) : true;
+    m = i.ZP.canUseCollectibles(f),
+    b = n.useRef(null),
+    h = n.useCallback(() => {
+      let n = null != g ? (0, c.Vw)(g, m, false) : null,
+        l = null != g ? (0, c.eu)(g, m, false) : true;
       a.default.track(d.rMx.COLLECTIBLES_TILE_IMPRESSION, {
         collectibles_shop_session_id: null == p ? true : p.sessionId,
         sku_id: e,
         display_price: null == n ? true : n.amount,
         display_price_currency: null == n ? true : n.currency.toString(),
-        display_price_strikethrough: i,
+        display_price_strikethrough: l,
         position: null == p ? true : p.tilePosition,
         page_type: t,
         page_category: null == p ? true : p.pageCategory,
@@ -37,15 +37,15 @@ function p(e, t) {
         type: r,
         category_position: null == p ? true : p.categoryPosition
       })
-    }, [null == p ? true : p.sessionId, null == p ? true : p.categoryPosition, null == p ? true : p.pageCategory, null == p ? true : p.pageSection, null == p ? true : p.tilePosition, b, t, v, e, r]),
-    h = n.useCallback(e => {
-      e ? null === m.current && (m.current = setTimeout(() => {
-        g(), m.current = null
-      }, 1e3)) : null !== m.current && (clearTimeout(m.current), m.current = null)
-    }, [g]);
+    }, [null == p ? true : p.sessionId, null == p ? true : p.categoryPosition, null == p ? true : p.pageCategory, null == p ? true : p.pageSection, null == p ? true : p.tilePosition, m, t, g, e, r]),
+    _ = n.useCallback(e => {
+      e ? null === b.current && (b.current = setTimeout(() => {
+        h(), b.current = null
+      }, 1e3)) : null !== b.current && (clearTimeout(b.current), b.current = null)
+    }, [h]);
   return n.useEffect(() => () => {
-    null !== m.current && (clearTimeout(m.current), m.current = null)
+    null !== b.current && (clearTimeout(b.current), b.current = null)
   }, []), {
-    handleCardVisibilityChange: h
+    handleCardVisibilityChange: _
   }
 }

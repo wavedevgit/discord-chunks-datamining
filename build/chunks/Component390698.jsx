@@ -1,4 +1,4 @@
-/** Chunk was on 71387 **/
+/** Chunk was on 45620 **/
 /** chunk id: 390698, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -16,13 +16,13 @@ let c = e => {
     className: t,
     isPartiallyPurchased: r
   } = e;
-  return r ? (0, n.jsx)(l.ua7, {
+  return r ? (0, n.jsx)(i.ua7, {
     tooltipClassName: s.partiallyOwnedDisclaimer,
     position: "top",
     align: "left",
     text: o.intl.string(o.t.y1VWkZ),
     children: e => {
-      var r, i;
+      var r, l;
       return (0, n.jsxs)("div", (r = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {},
@@ -42,30 +42,30 @@ let c = e => {
         return e
       }({
         className: a()(s.partialOwnStateContainer, t)
-      }, e), i = i = {
+      }, e), l = l = {
         children: [(0, n.jsx)("span", {
           className: s.iconWrapper,
-          children: (0, n.jsx)(l.d3s, {
+          children: (0, n.jsx)(i.d3s, {
             size: "md",
             color: "currentColor",
             className: s.infoIcon
           })
-        }), (0, n.jsx)(l.Text, {
+        }), (0, n.jsx)(i.Text, {
           variant: "text-md/semibold",
           children: o.intl.string(o.t.BEjTio)
         })]
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
         var r = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e);
           r.push.apply(r, n)
         }
         return r
-      })(Object(i)).forEach(function(e) {
-        Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
+      })(Object(l)).forEach(function(e) {
+        Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(l, e))
       }), r))
     }
-  }) : (0, n.jsx)(l.Text, {
+  }) : (0, n.jsx)(i.Text, {
     variant: "text-md/semibold",
     className: t,
     children: o.intl.string(o.t["6cfuDg"])

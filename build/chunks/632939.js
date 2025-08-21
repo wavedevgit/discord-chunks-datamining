@@ -1,0 +1,12 @@
+/** Chunk was on 54400 **/
+/** chunk id: 632939, original params: e,t,n (module,exports,require) **/
+module.exports = {
+  shopCard: "shopCard_bab2bc",
+  shopCardDark: "shopCardDark_bab2bc shopCard_bab2bc",
+  shopCardHighlighted: "shopCardHighlighted_bab2bc",
+  shopCardDarkHighlighted: "shopCardDarkHighlighted_bab2bc",
+  shopCardAnimation: "shopCardAnimation_bab2bc",
+  shopCardSelected: "shopCardSelected_bab2bc",
+  preview: "preview_bab2bc",
+  productName: "productName_bab2bc"
+}

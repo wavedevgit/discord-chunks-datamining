@@ -1,8 +1,8 @@
-/** Chunk was on 71387 **/
+/** Chunk was on 45620 **/
 /** chunk id: 680942, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => _
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,23 +19,23 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx");
-let h = e => {
+let _ = e => {
   let {
     product: t,
     primary: r,
-    selectedVariantIndex: h,
-    returnRef: O,
-    onSuccess: y,
-    tooltipDelay: j
+    selectedVariantIndex: _,
+    returnRef: v,
+    onSuccess: O,
+    tooltipDelay: C
   } = e, {
-    analyticsLocations: _
-  } = (0, s.ZP)(), P = i.useRef(null), x = (0, d.sp)(), w = (0, v.Z)();
+    analyticsLocations: E
+  } = (0, s.ZP)(), y = l.useRef(null), S = (0, d.sp)(), x = (0, g.Z)();
   return (0, p.x6)(t) ? null : (0, n.jsx)(o.ua7, {
-    text: g.intl.string(g.t["JCFN//"]),
-    delay: j,
+    text: h.intl.string(h.t["JCFN//"]),
+    delay: C,
     children: e => {
-      var i, s;
-      return (0, n.jsx)(o.hU, (i = function(e) {
+      var l, s;
+      return (0, n.jsx)(o.hU, (l = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {},
             n = Object.keys(r);
@@ -53,37 +53,37 @@ let h = e => {
         }
         return e
       }({}, e), s = s = {
-        "aria-label": g.intl.string(g.t["JCFN//"]),
-        buttonRef: P,
+        "aria-label": h.intl.string(h.t["JCFN//"]),
+        buttonRef: y,
         variant: r ? "primary" : "secondary",
         icon: o.OgN,
         size: "md",
         onClick: e => {
-          e.stopPropagation(), u.default.track(b.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-            collectibles_shop_session_id: null == x ? true : x.sessionId,
+          e.stopPropagation(), u.default.track(m.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+            collectibles_shop_session_id: null == S ? true : S.sessionId,
             sku_id: t.skuId,
-            page_section: null == x ? true : x.pageSection,
-            page_category: null == x ? true : x.pageCategory,
+            page_section: null == S ? true : S.pageSection,
+            page_category: null == S ? true : S.pageCategory,
             tile_type: a.Z[t.type],
-            tile_position: String(null == x ? true : x.tilePosition),
+            tile_position: String(null == S ? true : S.tilePosition),
             cta_name: "gift button",
-            page_type: w || "home"
+            page_type: x || "home"
           }), (0, c.Z)({
             skuId: (0, f.S)({
               product: t,
-              selectedVariantIndex: h
+              selectedVariantIndex: _
             }),
             isGift: true,
-            giftingOrigin: m.Wt.SHOP_PAGE,
-            analyticsLocations: _,
-            returnRef: O,
-            variantsReturnStyle: l.v.VARIANTS_GROUP,
-            onClose: null != y ? e => {
-              e && y()
+            giftingOrigin: b.Wt.SHOP_PAGE,
+            analyticsLocations: E,
+            returnRef: v,
+            variantsReturnStyle: i.v.VARIANTS_GROUP,
+            onClose: null != O ? e => {
+              e && O()
             } : true
           })
         }
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
         var r = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e);
@@ -91,8 +91,8 @@ let h = e => {
         }
         return r
       })(Object(s)).forEach(function(e) {
-        Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(s, e))
-      }), i))
+        Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(s, e))
+      }), l))
     }
   })
 }

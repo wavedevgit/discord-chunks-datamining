@@ -1,15 +1,15 @@
-/** Chunk was on 71387 **/
+/** Chunk was on 45620 **/
 /** chunk id: 381585, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
   k0: () => o,
-  sp: () => l
+  sp: () => i
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js");
 let a = Chunk647438.createContext(null);
 
-function l() {
+function i() {
   return Chunk647438.useContext(a)
 }
 
@@ -17,7 +17,7 @@ function o(e) {
   let {
     newValue: t,
     children: r
-  } = e, o = l(), s = i.useMemo(() => (function(e) {
+  } = e, o = i(), s = l.useMemo(() => (function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {},
         n = Object.keys(r);

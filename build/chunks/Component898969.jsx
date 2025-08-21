@@ -1,5 +1,5 @@
 /** Chunk was on 54400 **/
-/** chunk id: 898969, original params: e,n,t (module,exports,require) **/
+/** chunk id: 898969, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => i
 });
@@ -7,17 +7,17 @@ var Chunk951288 = require("./951288.js");
 require("./647438.js");
 let i = e => {
   let {
-    className: n,
-    width: t = 83,
+    className: t,
+    width: n = 83,
     height: i = 45
   } = e;
   return (0, r.jsxs)("svg", {
-    width: t,
+    width: n,
     height: i,
     viewBox: "0 0 83 45",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg",
-    className: n,
+    className: t,
     children: [(0, r.jsxs)("g", {
       opacity: "0.6",
       children: [(0, r.jsx)("path", {

@@ -1,4 +1,4 @@
-/** Chunk was on 71387 **/
+/** Chunk was on 13387 **/
 /** chunk id: 612293, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -82,7 +82,7 @@ function P(e) {
   } = (0, v.Zx)(b, x), [T, D] = (0, i.useState)(() => {
     var e;
     return true !== E ? E : null != (e = null != w ? w : k) ? e : null
-  }), A = (null == T ? true : T.skuId) === (true === E ? null == k ? true : k.skuId : null == E ? true : E.skuId), [Z, R] = (0, i.useState)(() => null != T && O.some(e => e.id === T.id)), M = (0, i.useCallback)(e => {
+  }), A = (null == T ? true : T.skuId) === (true === E ? null == k ? true : k.skuId : null == E ? true : E.skuId), [Z, R] = (0, i.useState)(() => null != T && O.some(e => e.id === T.id)), L = (0, i.useCallback)(e => {
     P(), (0, u.mK)({
       analyticsLocations: _,
       analyticsSource: s.Z.EDIT_NAMEPLATE_MODAL,
@@ -111,7 +111,7 @@ function P(e) {
         onSelect: (e, t) => {
           D(e), R(null != t && t)
         },
-        onOpenShop: M,
+        onOpenShop: L,
         available: m,
         purchased: O,
         isPerGuild: null != x
@@ -133,7 +133,7 @@ function P(e) {
         }
       }) : (0, n.jsx)(l.zxk, {
         variant: "primary",
-        onClick: () => M(null == T ? true : T.skuId),
+        onClick: () => L(null == T ? true : T.skuId),
         text: y.intl.string(y.t.fYfGgI)
       }), (0, n.jsx)(l.zxk, {
         variant: "secondary",
