@@ -80,9 +80,9 @@ function L(e) {
     sourceAnalyticsLocations: C
   } = (0, p.ZP)(d.Z.GUILD_BOOSTING_PREMIUM_UPSELL), {
     theme: A
-  } = (0, u.TCT)(), k = (0, a.ap)(A) ? c.zx.Colors.PRIMARY : c.zx.Colors.WHITE, R = null == n || null == n.premiumSubscriptionType, D = f.ZP.getPrice(O.Xh.PREMIUM_MONTH_TIER_2, false, false, T), v = (0, N.T4)(D.amount, D.currency), w = (0, P.N)(), Z = null == w ? true : w.trial_id, U = (null == w || null == (t = w.subscription_trial) ? true : t.sku_id) === O.Si.TIER_2;
+  } = (0, u.TCT)(), k = (0, a.ap)(A) ? c.zx.Colors.PRIMARY : c.zx.Colors.WHITE, R = null == n || null == n.premiumSubscriptionType, D = g.ZP.getPrice(O.Xh.PREMIUM_MONTH_TIER_2, false, false, T), v = (0, f.T4)(D.amount, D.currency), w = (0, P.N)(), Z = null == w ? true : w.trial_id, U = (null == w || null == (t = w.subscription_trial) ? true : t.sku_id) === O.Si.TIER_2;
   return l.useEffect(() => {
-    y.default.track(g.rMx.PREMIUM_UPSELL_VIEWED, {
+    y.default.track(N.rMx.PREMIUM_UPSELL_VIEWED, {
       type: O.cd.GUILD_PREMIUM_UPSELL_MODAL,
       location_stack: C
     })
@@ -144,7 +144,7 @@ function L(e) {
                 }
                 return e
               }({}, I), t = t = {
-                section: g.jXE.PREMIUM_GUILD_PURCHASE_MODAL
+                section: N.jXE.PREMIUM_GUILD_PURCHASE_MODAL
               }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {

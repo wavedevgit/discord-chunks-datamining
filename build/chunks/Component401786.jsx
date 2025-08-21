@@ -289,6 +289,7 @@ function k(e) {
       break;
     case 2:
       t = (0, r.jsx)(c.Y0X, {
+        "data-migration-pending": true,
         transitionState: a,
         parentComponent: "GuildBoostSlotCancellationModal",
         children: (0, r.jsx)(j, {

@@ -121,14 +121,14 @@ function ec(e) {
       invoicePreview: ey
     } = (0, M.JL)(),
     eI = (0, d.e7)([F.Z], () => F.Z.hasFetchedSubscriptions()),
-    ef = null != e_ ? e_.paymentSourceId : null,
-    eN = (0, d.e7)([z.Z], () => null != e_ ? (0, V.oE)(e_.planId) : null),
-    eg = (0, d.e7)([z.Z], () => null == e_ || null != z.Z.get(e_.planId)),
-    eO = (0, d.e7)([z.Z], () => null == eN ? z.Z.get(er) : eN),
+    eg = null != e_ ? e_.paymentSourceId : null,
+    ef = (0, d.e7)([z.Z], () => null != e_ ? (0, V.oE)(e_.planId) : null),
+    eN = (0, d.e7)([z.Z], () => null == e_ || null != z.Z.get(e_.planId)),
+    eO = (0, d.e7)([z.Z], () => null == ef ? z.Z.get(er) : ef),
     eb = (0, d.e7)([v.Z], () => v.Z.theme),
     ex = r.useRef((0, Y.vx)(Z.Z.boostSlots)).current,
     eM = (0, d.e7)([G.Z], () => G.Z.defaultPaymentSourceId),
-    eL = (0, R.fL)(null != ef ? ef : eI ? eM : null),
+    eL = (0, R.fL)(null != eg ? eg : eI ? eM : null),
     {
       paymentSources: eT,
       setPurchaseError: ej,
@@ -145,15 +145,15 @@ function ec(e) {
     [eG, ez] = r.useState(ed - ex.length),
     [eF, eW] = r.useState(false),
     eY = (0, d.e7)([U.Z], () => U.Z.popupCallbackCalled),
-    eB = (0, g.V)(),
-    eH = r.useMemo(() => null != e_ && eg && eB ? (0, A.g)(e_, eG) : [{
+    eB = (0, N.V)(),
+    eH = r.useMemo(() => null != e_ && eN && eB ? (0, A.g)(e_, eG) : [{
       planId: J.Xh.PREMIUM_MONTH_GUILD,
       quantity: eG
-    }], [e_, eg, eG, eB]),
+    }], [e_, eN, eG, eB]),
     [eV, eX] = (0, S.Z)(() => [(0, u.Z)(), Date.now()]),
     {
       analyticsLocations: eK
-    } = (0, N.ZP)(a, f.Z.GUILD_BOOST_PURCHASE_MODAL),
+    } = (0, f.ZP)(a, g.Z.GUILD_BOOST_PURCHASE_MODAL),
     e$ = r.useMemo(() => {
       var e, t;
       return {
@@ -238,8 +238,8 @@ function ec(e) {
     i(e4 === T.A.COMPLETED)
   }, te = null != e_ && e_.isPurchasedExternally;
   r.useEffect(() => {
-    ek !== k.wr.PENDING && eq !== L.h8.CONFIRM && null != ef && (e1 !== es && e2(es), es.includes(eq) || eq === L.h8.PREMIUM_UPSELL || e0(L.h8.REVIEW)), eq === L.h8.ADD_PAYMENT_STEPS && e1 !== eo && e2(eo), te && eq !== L.h8.PLAN_SELECT && eJ(L.h8.PLAN_SELECT)
-  }, [eq, e0, te, ek, e_, ef, e1]), (0, k.bp)(eq, ek, e0, e7), (0, L.dZ)(eq, e4, e7);
+    ek !== k.wr.PENDING && eq !== L.h8.CONFIRM && null != eg && (e1 !== es && e2(es), es.includes(eq) || eq === L.h8.PREMIUM_UPSELL || e0(L.h8.REVIEW)), eq === L.h8.ADD_PAYMENT_STEPS && e1 !== eo && e2(eo), te && eq !== L.h8.PLAN_SELECT && eJ(L.h8.PLAN_SELECT)
+  }, [eq, e0, te, ek, e_, eg, e1]), (0, k.bp)(eq, ek, e0, e7), (0, L.dZ)(eq, e4, e7);
   let tt = r.useRef(null),
     [tn, ti] = (0, I.Z)(false, 500),
     [tl, tr] = r.useState(null),
@@ -280,7 +280,7 @@ function ec(e) {
   if (eh) t = (0, l.jsx)(O.Vq, {
     onClose: e9
   });
-  else if (eI && eg && eB && null != tl && "" !== tl)
+  else if (eI && eN && eB && null != tl && "" !== tl)
     if ((null == e_ ? true : e_.isPausedOrPausePending) && !e_.isPausedAllowsUpdatesButNotResume) t = (0, l.jsx)(m.hzk, {
       "data-migration-pending": true,
       children: (0, l.jsx)("p", {
@@ -309,7 +309,7 @@ function ec(e) {
       analyticsSourceLocation: el,
       onClose: e9,
       onBack: () => e0(L.h8.PLAN_SELECT),
-      onSkip: () => e0(null != ef || eU ? L.h8.REVIEW : L.h8.ADD_PAYMENT_STEPS),
+      onSkip: () => e0(null != eg || eU ? L.h8.REVIEW : L.h8.ADD_PAYMENT_STEPS),
       onSubscriptionConfirmation: eE,
       priceOptions: e
     })
@@ -348,6 +348,7 @@ function ec(e) {
             })
           }), e]
         })), i = (0, l.jsx)(E.zx, {
+          "data-migration-pending": true,
           look: E.zx.Looks.LINK,
           color: (0, p.ap)(eb) ? E.zx.Colors.PRIMARY : E.zx.Colors.WHITE,
           onClick: e9,
@@ -358,8 +359,8 @@ function ec(e) {
           type: "submit",
           disabled: e6 || 0 === eG || te,
           onClick: () => {
-            if (!ep && (null == eN || eN.premiumSubscriptionType !== J.p9.TIER_2)) return void e0(L.h8.PREMIUM_UPSELL);
-            e0(null != ef || eU ? L.h8.REVIEW : L.h8.ADD_PAYMENT_STEPS)
+            if (!ep && (null == ef || ef.premiumSubscriptionType !== J.p9.TIER_2)) return void e0(L.h8.PREMIUM_UPSELL);
+            e0(null != eg || eU ? L.h8.REVIEW : L.h8.ADD_PAYMENT_STEPS)
           }
         });
         break;
@@ -375,7 +376,7 @@ function ec(e) {
           paymentSources: eT,
           priceOptions: o,
           currentPremiumSubscription: e_,
-          premiumSubscriptionPaymentSourceId: ef,
+          premiumSubscriptionPaymentSourceId: eg,
           premiumSubscriptionPlan: eO,
           newAdditionalPlans: eH,
           onPaymentSourceChange: e => eR(null != e ? e.id : null),
@@ -406,7 +407,7 @@ function ec(e) {
                   guild_id: ec,
                   application_id: em
                 })), ta) return;
-              if (null == e_ || null == eN) {
+              if (null == e_ || null == ef) {
                 c()(null != e, "Missing paymentSource");
                 let i = await (0, P.XW)({
                   items: eH,
@@ -420,7 +421,7 @@ function ec(e) {
                 let i = {
                   items: (0, B.MY)(e_, eH)
                 };
-                i.currency = e_.currency, null == i.currency && (i.currency = o.currency), i.paymentSource = null != ef ? eT[ef] : true, null == i.paymentSource && (c()(null != e, "Missing paymentSource"), i.paymentSource = e, i.currency = o.currency);
+                i.currency = e_.currency, null == i.currency && (i.currency = o.currency), i.paymentSource = null != eg ? eT[eg] : true, null == i.paymentSource && (c()(null != e, "Missing paymentSource"), i.paymentSource = e, i.currency = o.currency);
                 let l = await (0, P.Mg)(e_, i, t, n, eK);
                 if (l.redirectConfirmation) return void tc(null != l.redirectURL)
               }
@@ -454,7 +455,7 @@ function ec(e) {
       case L.h8.CONFIRM:
         let a = w.Z.getGuild(ec),
           u = (0, j.$)(eT, eC),
-          d = (0, V.qH)(eS.current) && null != eN && !J.F$.has(eN.id);
+          d = (0, V.qH)(eS.current) && null != ef && !J.F$.has(ef.id);
         e = (0, l.jsx)(K.R7, {
           guild: a,
           guildBoostQuantity: eG + ex.length,
@@ -520,8 +521,8 @@ function eu(e) {
   let t = (0, d.e7)([F.Z], () => F.Z.getPremiumTypeSubscription()),
     {
       analyticsLocations: n
-    } = (0, N.ZP)(f.Z.GUILD_BOOST_PURCHASE_MODAL);
-  return (0, l.jsx)(N.Gt, {
+    } = (0, f.ZP)(g.Z.GUILD_BOOST_PURCHASE_MODAL);
+  return (0, l.jsx)(f.Gt, {
     value: n,
     children: (0, l.jsx)(M.PaymentContextProvider, {
       activeSubscription: t,

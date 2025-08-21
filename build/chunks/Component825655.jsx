@@ -24,7 +24,7 @@ function h(e) {
   } = e;
   return null == t || null == n ? (0, r.jsx)("div", {
     className: p.iconContainer,
-    children: (0, r.jsx)(s.aNP, {
+    children: (0, r.jsx)(s.Mgn, {
       size: "sm",
       color: s.TVs.colors.TEXT_FEEDBACK_WARNING
     })
@@ -34,10 +34,12 @@ function h(e) {
       game: n,
       pid: t.pid,
       size: c.Z.Sizes.MEDIUM
-    }), (0, r.jsx)(s.aNP, {
+    }), (0, r.jsx)("div", {
       className: p.warningCorner,
-      size: "refresh_sm",
-      color: s.TVs.colors.TEXT_FEEDBACK_WARNING
+      children: (0, r.jsx)(s.Mgn, {
+        size: "sm",
+        color: s.TVs.colors.TEXT_FEEDBACK_WARNING
+      })
     })]
   })
 }

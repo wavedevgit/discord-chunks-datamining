@@ -26,26 +26,26 @@ function _(e, t) {
 }
 
 function p(e) {
-  var t, n;
-  let r = (0, a.e7)([o.Z], () => null == e ? null : o.Z.getChannel(e.channel_id)),
-    i = null == e || null == (t = e.author) ? true : t.id,
-    _ = null == r ? true : r.guild_id,
-    p = (0, a.e7)([s.ZP], () => null == _ || null == i ? null : s.ZP.getMember(_, i)),
-    h = (0, a.e7)([d.default], () => d.default.getUser(i), [i]),
-    m = f.ZP.useName((null == e ? true : e.author.bot) ? null == e ? true : e.author : h),
-    g = (0, a.e7)([c.Z], () => c.Z.getGuild(_), [_]),
-    E = null == p ? true : p.colorRoleId,
-    y = (0, a.e7)([l.Z], () => null != _ && null != E ? l.Z.getRole(_, E) : true, [_, E]),
-    O = (0, a.e7)([u.Z], () => null != i && (null == r ? true : r.isPrivate()) ? u.Z.getNickname(i) : null);
+  var t;
+  let n = (0, a.e7)([o.Z], () => null == e ? null : o.Z.getChannel(e.channel_id)),
+    r = null == e || null == (t = e.author) ? true : t.id,
+    i = null == n ? true : n.guild_id,
+    _ = (0, a.e7)([s.ZP], () => null == i || null == r ? null : s.ZP.getMember(i, r)),
+    p = (0, a.e7)([d.default], () => d.default.getUser(r), [r]),
+    h = f.ZP.useName((null == e ? true : e.author.bot) ? null == e ? true : e.author : p),
+    m = (0, a.e7)([c.Z], () => c.Z.getGuild(i), [i]),
+    g = null == _ ? true : _.colorRoleId,
+    E = (0, a.e7)([l.Z], () => null != i && null != g ? l.Z.getRole(i, g) : true, [i, g]),
+    y = (0, a.e7)([u.Z], () => null != r && (null == n ? true : n.isPrivate()) ? u.Z.getNickname(r) : null);
   return null == e ? null : b({
     user: e.author,
-    channel: r,
-    guild: g,
-    memberColorRole: y,
-    userName: m,
-    member: p,
-    friendNickname: O,
-    displayNameStyles: null != (n = null == h ? true : h.displayNameStyles) ? n : e.author.displayNameStyles
+    channel: n,
+    guild: m,
+    memberColorRole: E,
+    userName: h,
+    member: _,
+    friendNickname: y,
+    displayNameStyles: null != p ? p.displayNameStyles : e.author.displayNameStyles
   })
 }
 
