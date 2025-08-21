@@ -1,12 +1,13 @@
 /** Chunk was on 38576 **/
 /** chunk id: 925170, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  default: () => f
+  default: () => d
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk82659 = require("./82659.jsx"),
+  Chunk481060 = require("./481060.js"),
   Chunk594174 = require("./594174.js"),
   Chunk810473 = require("./810473.js"),
   Chunk299560 = require("./299560.jsx"),
@@ -14,32 +15,39 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk32442 = require("./32442.js");
 
-function f(e) {
+function d(e) {
   var t, r, {
-      onClose: f
+      onClose: d
     } = e,
     O = function(e, t) {
       if (null == e) return {};
       var r, n, o = function(e, t) {
         if (null == e) return {};
         var r, n, o = {},
-          c = Object.keys(e);
-        for (n = 0; n < c.length; n++) r = c[n], t.indexOf(r) >= 0 || (o[r] = e[r]);
+          i = Object.keys(e);
+        for (n = 0; n < i.length; n++) r = i[n], t.indexOf(r) >= 0 || (o[r] = e[r]);
         return o
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var c = Object.getOwnPropertySymbols(e);
-        for (n = 0; n < c.length; n++) r = c[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (o[r] = e[r])
+        var i = Object.getOwnPropertySymbols(e);
+        for (n = 0; n < i.length; n++) r = i[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (o[r] = e[r])
       }
       return o
     }(e, ["onClose"]);
-  let y = (0, c.e7)([l.default], () => l.default.getCurrentUser()),
-    d = (0, s.Z)(),
-    g = o.useMemo(() => {
-      let e = new Set(d);
-      return p.rR.filter(t => e.has(t))
+  let y = (0, i.e7)([s.default], () => s.default.getCurrentUser()),
+    g = (0, u.Z)(),
+    j = o.useRef(new Set(g)),
+    m = p.rR.filter(e => j.current.has(e)),
+    h = m.length > 0,
+    [w, v] = o.useState(false),
+    P = {
+      onClick: () => d(),
+      text: f.intl.string(f.t.cpT0Cg)
+    },
+    x = o.useCallback(() => {
+      v(true), d()
     }, [d]);
-  return null == y ? null : (0, n.jsx)(i.Modal, (t = function(e) {
+  return null == y ? null : (0, n.jsx)(l.Modal, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {},
         n = Object.keys(r);
@@ -57,17 +65,23 @@ function f(e) {
     }
     return e
   }({
-    title: a.intl.string(a.t.grUgR0),
-    actions: [],
-    onClose: f
+    title: f.intl.string(f.t.grUgR0),
+    actions: h ? [] : [P],
+    size: h ? "md" : "sm",
+    onClose: d
   }, O), r = r = {
-    children: (0, n.jsx)("ul", {
-      "aria-label": a.intl.string(a.t["+EIBSE"]),
+    children: h ? (0, n.jsx)("ul", {
+      "aria-label": f.intl.string(f.t["+EIBSE"]),
       className: b.options,
-      children: g.map(e => (0, n.jsx)(u.Z, {
+      children: m.map(e => (0, n.jsx)(a.Z, {
         widgetType: e,
-        onAddWidget: f
+        onAddWidget: x,
+        loading: w
       }, e))
+    }) : (0, n.jsx)(c.Text, {
+      variant: "text-md/medium",
+      color: "text-secondary",
+      children: f.intl.string(f.t["1nkDOj"])
     })
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
     var r = Object.keys(e);

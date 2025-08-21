@@ -1,12 +1,13 @@
 /** Chunk was on 28479 **/
 /** chunk id: 78865, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  default: () => y
+  default: () => m
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk952265 = require("./952265.js"),
   Chunk174609 = require("./174609.js"),
+  Chunk47280 = require("./47280.js"),
   Chunk998076 = require("./998076.js"),
   Chunk790527 = require("./790527.jsx"),
   Chunk731502 = require("./731502.jsx"),
@@ -17,7 +18,7 @@ var Chunk952265 = require("./952265.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk880916 = require("./880916.js");
 
-function O(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -36,11 +37,11 @@ function O(e) {
   return e
 }
 
-function y(e) {
+function m(e) {
   var {
     onClose: t,
     analyticsSource: r
-  } = e, y = function(e, t) {
+  } = e, m = function(e, t) {
     if (null == e) return {};
     var r, n, o = function(e, t) {
       if (null == e) return {};
@@ -56,42 +57,46 @@ function y(e) {
     return o
   }(e, ["onClose", "analyticsSource"]);
   let g = (0, n.jsx)("img", {
-    className: p.art,
+    className: O.art,
     alt: "HD Streaming Nitro Perk",
     src: "https://cdn.discordapp.com/assets/premium/roadblocks/hd_streaming.png"
   });
 
-  function m() {
-    (0, a.Z)(), (0, o.pT)(), u.default.track(b.rMx.PREMIUM_PROMOTION_OPENED, {
-      location_section: b.jXE.STREAM_UPSELL_MODAL,
-      location_object: b.qAy.NAVIGATION_LINK
-    }), (0, s.uL)(b.Z5c.APPLICATION_STORE)
+  function h() {
+    (0, a.Z)(), (0, o.pT)(), b.default.track(f.rMx.PREMIUM_PROMOTION_OPENED, {
+      location_section: f.jXE.STREAM_UPSELL_MODAL,
+      location_object: f.qAy.NAVIGATION_LINK
+    }), (0, u.uL)(f.Z5c.APPLICATION_STORE)
   }
-  let h = d.intl.string(d.t.ewxv3N),
-    j = d.intl.string(d.t.qlsCDA);
-  return (0, c.Z)({
-    location: "StreamUpsellModal"
-  }) ? (0, n.jsx)(i.Z, O({
+  let j = p.intl.string(p.t.ewxv3N),
+    S = p.intl.string(p.t.qlsCDA),
+    v = (0, c.ZP)({
+      location: "StreamUpsellModal"
+    }),
+    P = (0, l.Z)({
+      location: "StreamUpsellModal"
+    });
+  return v || P ? (0, n.jsx)(s.Z, y({
     onClose: t,
-    handleLearnMore: m
-  }, y)) : (0, n.jsx)(l.Z, O({
-    title: h,
-    glowUp: j,
-    body: j,
+    handleLearnMore: h
+  }, m)) : (0, n.jsx)(i.Z, y({
+    title: j,
+    glowUp: S,
+    body: S,
     artElement: g,
-    artContainerClassName: p.artContainer,
-    type: f.cd.STREAM_QUALITY_UPSELL,
+    artContainerClassName: O.artContainer,
+    type: d.cd.STREAM_QUALITY_UPSELL,
     analyticsLocation: {
-      section: b.jXE.STREAM_UPSELL_MODAL,
-      object: b.qAy.BUTTON_CTA
+      section: f.jXE.STREAM_UPSELL_MODAL,
+      object: f.qAy.BUTTON_CTA
     },
     analyticsSource: r,
     onClose: t,
     onSubscribeClick: a.Z,
-    secondaryCTA: d.intl.string(d.t.ZnqyZ2),
-    onSecondaryClick: m,
+    secondaryCTA: p.intl.string(p.t.ZnqyZ2),
+    onSecondaryClick: h,
     showEnhancedUpsell: true,
     enableArtBoxShadow: false,
-    headerClassName: p.header
-  }, y))
+    headerClassName: O.header
+  }, m))
 }
