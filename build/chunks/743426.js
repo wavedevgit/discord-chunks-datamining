@@ -167,6 +167,7 @@ class v extends Chunk47770.Z {
       case h.AN.SAMPLE_PLAYBACK:
       case h.AN.NOISE_SUPPRESSION:
       case h.AN.AUTOMATIC_GAIN_CONTROL:
+      case h.AN.SIDECHAIN_COMPRESSION:
         returntrue;
       default:
         returnfalse

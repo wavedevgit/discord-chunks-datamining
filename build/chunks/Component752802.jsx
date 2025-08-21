@@ -259,10 +259,10 @@ let M = new Set([Chunk981631.jm8.ENDED, Chunk981631.jm8.FAILED, Chunk981631.jm8.
           style: {
             transform: "scale(".concat(m, ")")
           },
-          children: (0, i.jsx)(b.Z, {
+          children: (0, i.jsx)(v.Z, {
             participant: t,
             width: n,
-            fit: null != O ? O : v.L.CONTAIN,
+            fit: null != O ? O : b.L.CONTAIN,
             inPopout: true,
             focused: !r,
             selected: false,

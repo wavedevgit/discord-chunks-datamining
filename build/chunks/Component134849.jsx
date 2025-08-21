@@ -20,11 +20,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk63452 = require("./63452.js");
 let O = [];
 
-function v(e) {
+function b(e) {
   return e.notification.id
 }
 
-function b(e, t, n, r) {
+function v(e, t, n, r) {
   let {
     index: o,
     notification: l,
@@ -71,8 +71,8 @@ let _ = Chunk647438.memo(function(e) {
     value: _,
     children: (0, i.jsx)(l.W3x, {
       items: y,
-      renderItem: b,
-      getItemKey: v,
+      renderItem: v,
+      getItemKey: b,
       wrapChildren: E
     })
   }) : p ? t ? null : (0, i.jsx)(s.E, {

@@ -214,10 +214,10 @@ function eo(e) {
     let t = (0, V.pL)(),
       n = E.Z.getVoiceChannelId(),
       i = O.Z.getChannel(n),
-      r = null != i ? v.Z.getGuild(i.guild_id) : null,
+      r = null != i ? b.Z.getGuild(i.guild_id) : null,
       o = null != y.Z.getCurrentUserActiveStream(),
       l = null != n,
-      a = (0, g.Z)(b.Z) && !o && null != t,
+      a = (0, g.Z)(v.Z) && !o && null != t,
       s = l && null != r && null != n,
       {
         allowActivityWidget: c

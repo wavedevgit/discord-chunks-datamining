@@ -80,8 +80,8 @@ function N(e, t) {
   for (let r of t) switch (r.type) {
     case O.nc.WELCOME: {
       let t = (null == e ? true : e.altId) != null ? p.Z.getApplicationActivity(e.altId) : (null == e ? true : e.id) != null ? p.Z.getApplicationActivity(e.id) : null;
-      null != t && (0, s.Z)(t, v.xjy.JOIN) && (E.cancelText = _.intl.string(_.t["6F9ivr"]), E.onCancelClick = (e, n) => {
-        u("unlock"), a.Z.updateNotificationStatus(n), a.Z.setInputLocked(false, (0, f.getPID)()), (0, l.h7)(t, false, v.IlC.POPOUT)
+      null != t && (0, s.Z)(t, b.xjy.JOIN) && (E.cancelText = _.intl.string(_.t["6F9ivr"]), E.onCancelClick = (e, n) => {
+        u("unlock"), a.Z.updateNotificationStatus(n), a.Z.setInputLocked(false, (0, f.getPID)()), (0, l.h7)(t, false, b.IlC.POPOUT)
       });
       break
     }
@@ -97,10 +97,10 @@ function N(e, t) {
             sourcePID: (0, f.getPID)(),
             guildId: r.type === O.nc.GO_LIVE_VOICE ? r.voiceGuild.id : true,
             selectGuild: r.type === O.nc.GO_LIVE_NON_VOICE,
-            analyticsLocation: v.Sbl.OVERLAY_NUDGE
+            analyticsLocation: b.Sbl.OVERLAY_NUDGE
           }))
         }, {
-          contextKey: b.u1
+          contextKey: v.u1
         })
       };
       break;
@@ -110,7 +110,7 @@ function N(e, t) {
         maxUserShowCount: 5,
         className: x.container
       }), E.onNotificationShow = () => {
-        a.Z.track(v.rMx.OVERLAY_GAME_INVITE_NOTIFICATION_SHOWN, {
+        a.Z.track(b.rMx.OVERLAY_GAME_INVITE_NOTIFICATION_SHOWN, {
           user_ids: r.entries.map(e => e.author_id),
           entry_ids: r.entries.map(e => e.id)
         })

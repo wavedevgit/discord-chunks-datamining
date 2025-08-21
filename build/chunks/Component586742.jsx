@@ -112,7 +112,7 @@ let D = Chunk647438.memo(function(e) {
     })), [o]);
     r.useEffect(() => {
       d && (0, _.zi)(w.Odu.VIDEO, {
-        locked: b.default.isInstanceLocked(),
+        locked: v.default.isInstanceLocked(),
         shownUserIds: Array.from(h),
         liveUserIds: Array.from(h),
         contentInventoryIds: []
@@ -220,13 +220,13 @@ let D = Chunk647438.memo(function(e) {
 
 function z(e) {
   var t, n, o, l;
-  let s = (0, a.e7)([v.Z, y.Z], () => y.Z.getChannel(v.Z.getVoiceChannelId())),
+  let s = (0, a.e7)([b.Z, y.Z], () => y.Z.getChannel(b.Z.getVoiceChannelId())),
     c = 2 * e.padding + 2 * e.borderWidth,
     f = null == s ? true : s.id,
     [m, O] = (0, a.e7)([p.Z], () => null == f ? [
       [], 0
     ] : [p.Z.getVideoParticipants(f), p.Z.getParticipantsVersion(f)], [f], E.Q),
-    b = "boolean" != typeof e.widget.meta.horizontal || e.widget.meta.horizontal,
+    v = "boolean" != typeof e.widget.meta.horizontal || e.widget.meta.horizontal,
     {
       width: _ = e.width - c,
       height: S = e.height - c,
@@ -235,7 +235,7 @@ function z(e) {
     {
       participantTileWidth: j,
       visibleParticipants: C
-    } = (0, g.ZB)(b ? _ : S, m, {
+    } = (0, g.ZB)(v ? _ : S, m, {
       tileWidth: N.vZ,
       tileMinWidth: N.mo,
       tileMargin: N.F$,
@@ -315,15 +315,15 @@ function z(e) {
       })
     }, [t])
   }({
-    horizontal: b,
+    horizontal: v,
     widget: e.widget,
     widgetLayoutSpecs: Z
   }), (0, i.jsx)(L, k(A({}, e), {
     channel: s,
     participants: C,
     participantsVersion: O,
-    width: b ? j : null != _ ? _ : e.width,
-    height: b ? null != S ? S : e.height : j,
+    width: v ? j : null != _ ? _ : e.width,
+    height: v ? null != S ? S : e.height : j,
     containerRef: I
   }))
 }

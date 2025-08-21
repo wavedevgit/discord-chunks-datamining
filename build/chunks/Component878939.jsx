@@ -19,8 +19,8 @@ var Chunk951288 = require("./951288.js"),
 function m(e) {
   let {
     locked: t
-  } = e, n = (0, p.II)(), m = null == n ? true : n.id, g = null == n ? true : n.altId, y = (0, o.e7)([c.default], () => c.default.getCurrentUser()), O = null != g ? g : m, [v, b] = r.useState(new Set), [E, _] = r.useState(new Set), S = r.useCallback((e, t, n) => {
-    b(n => {
+  } = e, n = (0, p.II)(), m = null == n ? true : n.id, g = null == n ? true : n.altId, y = (0, o.e7)([c.default], () => c.default.getCurrentUser()), O = null != g ? g : m, [b, v] = r.useState(new Set), [E, _] = r.useState(new Set), S = r.useCallback((e, t, n) => {
+    v(n => {
       if (t) {
         if (n.has(e)) return n;
         n.add(e)
@@ -39,7 +39,7 @@ function m(e) {
       }
       return new Set(i)
     })
-  }, []), x = (0, u.ee)(() => v, [v]), I = (0, u.ee)(() => E, [E]), j = (0, l.h)(u.zi, 3e3, []);
+  }, []), x = (0, u.ee)(() => b, [b]), I = (0, u.ee)(() => E, [E]), j = (0, l.h)(u.zi, 3e3, []);
   r.useEffect(() => {
     0 === x.size || t || j(f.Odu.FRIENDS, {
       locked: t,

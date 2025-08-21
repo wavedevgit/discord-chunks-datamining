@@ -93,8 +93,8 @@ let D = e => {
     containerSpecs: l
   } = e, a = 2 * r + 2 * o, s = Math.max(1, i.width - a) / Math.max(1, i.height - a), c = (() => {
     switch (t) {
-      case b.B.RESIZE_NORTH:
-      case b.B.RESIZE_SOUTH:
+      case v.B.RESIZE_NORTH:
+      case v.B.RESIZE_SOUTH:
         return {
           height: n.height, width: Math.round((n.height - a) * s + a)
         };
@@ -123,7 +123,7 @@ function R(e) {
     width: c,
     height: u
   } = D(N({
-    operation: b.B.RESIZE_NORTH,
+    operation: v.B.RESIZE_NORTH,
     computedSize: {
       width: n.width,
       height: n.height
@@ -139,7 +139,7 @@ function R(e) {
     width: d,
     height: p
   } = D(N({
-    operation: b.B.RESIZE_NORTH,
+    operation: v.B.RESIZE_NORTH,
     computedSize: {
       width: o.width,
       height: o.height
@@ -167,7 +167,7 @@ function R(e) {
 }
 
 function L(e) {
-  var t, n, a, b, S, P;
+  var t, n, a, v, S, P;
   let {
     id: D,
     widget: L,
@@ -262,13 +262,13 @@ function L(e) {
       top: 0,
       left: 0,
       bottom: null != (a = null == eh ? true : eh.height) ? a : X,
-      right: null != (b = null == eh ? true : eh.width) ? b : K
+      right: null != (v = null == eh ? true : eh.width) ? v : K
     }
   };
   return (r.useEffect(() => {
-    s.Z.setGpuBoostRequested(v.zS.OVERLAY_VIDEO_STREAM_RENDERING, !ec)
+    s.Z.setGpuBoostRequested(b.zS.OVERLAY_VIDEO_STREAM_RENDERING, !ec)
   }, [ec]), (0, u.ZP)(() => () => {
-    s.Z.setGpuBoostRequested(v.zS.OVERLAY_VIDEO_STREAM_RENDERING, false)
+    s.Z.setGpuBoostRequested(b.zS.OVERLAY_VIDEO_STREAM_RENDERING, false)
   }), function(e) {
     let {
       streamParticipants: t,

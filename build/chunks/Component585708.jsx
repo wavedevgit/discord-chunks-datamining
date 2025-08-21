@@ -49,7 +49,7 @@ function E(e, t, n, E) {
       formatInline: true,
       hideSimpleEmbedContent: false
     }).content : I,
-    hint: (e, t) => e && !t ? null : (0, g.Q)((0, y.P)(), b.t.ykjOAA, b.intl.string(b.t.jZkzVF)),
+    hint: (e, t) => e && !t ? null : (0, g.Q)((0, y.P)(), v.t.ykjOAA, v.intl.string(v.t.jZkzVF)),
     maxBodyLines: 2,
     renderFooter: (n, r, o) => n && !o ? (0, i.jsx)(m.Z, {
       id: r,
@@ -63,10 +63,10 @@ function E(e, t, n, E) {
     onNotificationClick: () => {
       let n = (0, f.getPID)();
       (0, o.In)(e.id, {
-        section: v.jXE.OVERLAY,
-        object: v.qAy.ACK_TEXT_CHAT_NOTIFICATION,
-        objectType: v.Qqv.ACK_SEMI_AUTOMATIC
-      }, true, true, t.id), h.ZP.isInputLocked(n) ? (C("unlock"), r.Z.setInputLocked(false, n)) : (C("jump"), (0, s.uL)(v.Z5c.CHANNEL(e.guild_id, e.id, t.id)), d.isPlatformEmbedded && p.ZP.focus())
+        section: b.jXE.OVERLAY,
+        object: b.qAy.ACK_TEXT_CHAT_NOTIFICATION,
+        objectType: b.Qqv.ACK_SEMI_AUTOMATIC
+      }, true, true, t.id), h.ZP.isInputLocked(n) ? (C("unlock"), r.Z.setInputLocked(false, n)) : (C("jump"), (0, s.uL)(b.Z5c.CHANNEL(e.guild_id, e.id, t.id)), d.isPlatformEmbedded && p.ZP.focus())
     },
     onDismissClick: () => {
       C("dismiss")

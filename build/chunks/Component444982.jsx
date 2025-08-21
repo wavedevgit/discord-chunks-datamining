@@ -112,7 +112,7 @@ let S = {
         id: n.id,
         locked: o,
         pinned: n.pinned,
-        widget: v.Odu.VOICE_V3,
+        widget: b.Odu.VOICE_V3,
         maxDisplayedVoiceStates: null != (t = n.meta.voiceStatesMaxShown) ? t : O.At,
         isPreviewingInGame: false,
         showEmpty: l

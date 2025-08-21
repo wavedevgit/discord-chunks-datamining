@@ -63,8 +63,8 @@ let x = Chunk647438.memo(function(e) {
     resizeValidation: I,
     className: j,
     dragContainerClassName: C
-  } = e, N = u.Z.getWidgetConfig(t.type), w = (0, a.e7)([d.default], () => d.default.isLocked((0, h.getPID)())), Z = (0, v.Z)(), P = (0, a.e7)([p.Z], () => p.Z.windowSize((0, m.ZY)(Z))), T = r.useCallback((e, t, n, i, r) => {
-    let o = p.Z.windowSize((0, m.ZY)((0, v.i)())),
+  } = e, N = u.Z.getWidgetConfig(t.type), w = (0, a.e7)([d.default], () => d.default.isLocked((0, h.getPID)())), Z = (0, b.Z)(), P = (0, a.e7)([p.Z], () => p.Z.windowSize((0, m.ZY)(Z))), T = r.useCallback((e, t, n, i, r) => {
+    let o = p.Z.windowSize((0, m.ZY)((0, b.i)())),
       l = (0, f.jL)(n, o),
       a = (0, f.Ox)(i, o);
     (0, s.Os)(t), (0, s.nv)({
@@ -74,7 +74,7 @@ let x = Chunk647438.memo(function(e) {
     });
     let d = e === y.B.MOVE,
       h = (0, f.PY)(n, o.width, o.height, r.width, r.height);
-    c.Z.track(b.rMx.OVERLAY_LAYOUT_UPDATED, {
+    c.Z.track(v.rMx.OVERLAY_LAYOUT_UPDATED, {
       was_resized: !d,
       was_dragged: d,
       widget_type: u.Z.getWidgetType(t),

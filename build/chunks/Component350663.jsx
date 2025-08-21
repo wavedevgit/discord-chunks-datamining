@@ -3,8 +3,8 @@
 require.d(exports, {
   IV: () => E,
   ZP: () => S,
-  bt: () => v,
-  fd: () => b
+  bt: () => b,
+  fd: () => v
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -52,21 +52,21 @@ function O(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let v = 256,
-  b = 144;
+let b = 256,
+  v = 144;
 
 function E(e, t, n) {
   if (e === h.C5.VERTICAL) {
-    let e = Math.max(t, v),
-      n = Math.max(9 / 16 * e, b);
+    let e = Math.max(t, b),
+      n = Math.max(9 / 16 * e, v);
     return {
       tileWidth: e,
       tileHeight: n
     }
   }
-  let i = Math.max(n, b);
+  let i = Math.max(n, v);
   return {
-    tileWidth: Math.max(16 / 9 * i, v),
+    tileWidth: Math.max(16 / 9 * i, b),
     tileHeight: i
   }
 }
@@ -81,8 +81,8 @@ let _ = {
       widgetId: t,
       tileWidth: n,
       tileHeight: o,
-      layout: v,
-      locked: b,
+      layout: b,
+      locked: v,
       activeStreams: E,
       streamParticipants: S,
       participantsVersion: x,
@@ -94,10 +94,10 @@ let _ = {
       key: e.user.id,
       width: n,
       height: o,
-      locked: b,
+      locked: v,
       widgetId: t,
       pinned: I
-    })), w = (0, c.Z)(n), Z = (0, c.Z)(b), P = v === h.C5.VERTICAL, T = b || Z !== b || w !== n, A = 0, k = 0, D = (0, s.Yzy)(P ? N.map((e, t) => O(y({}, e), {
+    })), w = (0, c.Z)(n), Z = (0, c.Z)(v), P = b === h.C5.VERTICAL, T = v || Z !== v || w !== n, A = 0, k = 0, D = (0, s.Yzy)(P ? N.map((e, t) => O(y({}, e), {
       y: (A += e.height + (t > 0 ? j : 0)) - e.height,
       x: 0
     })) : N.map((e, t) => O(y({}, e), {

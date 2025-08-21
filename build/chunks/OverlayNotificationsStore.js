@@ -1,7 +1,7 @@
 /** Chunk was on 46290 **/
 /** chunk id: 371467, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => ev
+  Z: () => eb
 }), require("./539854.js"), require("./388685.js"), require("./642613.js"), require("./290780.js");
 var i, Chunk512722 = require("./512722.js"),
   o = require.n(Chunk512722),
@@ -196,7 +196,7 @@ function eg() {
     if (!_.Z.isFriend(e)) returnfalse;
     let r = t.gameId;
     if (null == r) returnfalse;
-    let o = null == (n = b.Z.getNowPlaying(r)[e]) ? true : n.activity;
+    let o = null == (n = v.Z.getNowPlaying(r)[e]) ? true : n.activity;
     if (null == o || o.type !== Q.IIU.PLAYING || ! function(e) {
         var t;
         let n = (null == (t = e.timestamps) ? true : t.start) != null ? e.timestamps.start : e.created_at;
@@ -273,7 +273,7 @@ class eO extends(i = Chunk442837.ZP.Store) {
   }
 }
 X(eO, "displayName", "OverlayNotificationsStore");
-let ev = new eO(Chunk570140.Z, {
+let eb = new eO(Chunk570140.Z, {
   OVERLAY_UPDATE_NOTIFICATION_STATUS: function(e) {
     let {
       notificationId: t,
@@ -361,7 +361,7 @@ let ev = new eO(Chunk570140.Z, {
       if (false !== e) return e
     }
     if (D.Z.isNotificationDisabled(T.OverlayNotificationDisabledSetting.TEXT_CHAT) || I.Z.disableNotifications || !(0, p.eF)(l, r)) returnfalse;
-    let c = !v.Z.isSoundDisabled(N.Ay),
+    let c = !b.Z.isSoundDisabled(N.Ay),
       u = null != (i = O.Z.getMessage(r, l.id)) ? i : (0, d.e5)(l);
     em((0, H.Z)(a, u, s, c), {
       type: L.kL.TEXT,
