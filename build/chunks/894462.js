@@ -14,5 +14,6 @@ module.exports = {
   defaultKeybindGroupWithDescription: "defaultKeybindGroupWithDescription__740f2",
   defaultKeybindGroupDescription: "defaultKeybindGroupDescription__740f2",
   browserNotice: "browserNotice__740f2",
-  row: "row__740f2"
+  row: "row__740f2",
+  systemServiceUpsell: "systemServiceUpsell__740f2"
 }

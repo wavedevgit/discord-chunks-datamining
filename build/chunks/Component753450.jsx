@@ -72,12 +72,13 @@ function h(e, t) {
 function m(e) {
   var {
     label: t,
-    layout: n
-  } = e, i = p(e, ["label", "layout"]);
-  return (0, r.jsx)(a.Vp, _(d({
+    layout: n,
+    isDisabled: i
+  } = e, u = p(e, ["label", "layout", "isDisabled"]);
+  return (0, r.jsx)(a.Vp, _(d({}, u), {
     className: c.tag,
-    textValue: t
-  }, i), {
+    textValue: t,
+    isDisabled: i,
     children: e => {
       let {
         allowsRemoving: i
@@ -101,28 +102,30 @@ function m(e) {
 function g(e) {
   let {
     label: t,
-    selectionMode: n = "none",
-    layout: o = "default",
-    items: s,
-    onRemove: l,
-    children: u
-  } = e, [d, f] = i.useState(() => new Set);
+    disabledKeys: n,
+    selectionMode: o = "none",
+    layout: s = "default",
+    items: l,
+    onRemove: u,
+    children: d
+  } = e, [f, _] = i.useState(() => new Set);
   return (0, r.jsxs)(a.QS, {
     "aria-label": t,
-    "data-layout": o,
+    "data-layout": s,
     className: c.tagGroup,
-    selectionMode: n,
-    selectedKeys: d,
-    onSelectionChange: f,
-    onRemove: l,
+    selectionMode: o,
+    selectedKeys: f,
+    onSelectionChange: _,
+    disabledKeys: n,
+    onRemove: u,
     children: [(0, r.jsx)(a.PS, {
-      items: s,
       className: c.tagList,
-      children: e => (0, r.jsx)(m, {
+      children: l.map(e => (0, r.jsx)(m, {
         id: e.id,
         label: e.label,
-        layout: o
-      }, e.id)
-    }), u]
+        layout: s,
+        isDisabled: e.isDisabled
+      }, e.id))
+    }), d]
   })
 }

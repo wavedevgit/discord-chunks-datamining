@@ -2,8 +2,7 @@
 /** chunk id: 373230, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  T: () => i,
-  c: () => r
+  T: () => i
 });
 let r = (0, require("./818083.js").B)({
   kind: "user",

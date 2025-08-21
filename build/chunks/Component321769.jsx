@@ -13,7 +13,8 @@ let s = [{
     label: "Strength"
   }, {
     id: "dexterity",
-    label: "Dexterity"
+    label: "Dexterity",
+    isDisabled: true
   }, {
     id: "wisdom",
     label: "Wisdom"
@@ -41,6 +42,7 @@ let s = [{
             label: "Categories",
             selectionMode: t,
             items: l,
+            disabledKeys: ["dexterity"],
             onRemove: n ? u : true,
             children: n && (0, r.jsx)(a.zxk, {
               disabled: l.length === s.length,

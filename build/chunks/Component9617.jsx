@@ -1,0 +1,42 @@
+/** Chunk was on web.js **/
+/** chunk id: 9617, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  Z: () => m
+}), require("./388685.js");
+var Chunk951288 = require("./951288.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk704215 = require("./704215.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk100527 = require("./100527.js"),
+  Chunk243778 = require("./243778.jsx"),
+  Chunk892001 = require("./892001.js"),
+  Chunk314897 = require("./314897.js"),
+  Chunk993413 = require("./993413.jsx"),
+  Chunk921944 = require("./921944.js"),
+  Chunk228168 = require("./228168.js"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk700803 = require("./700803.js");
+let m = () => {
+  let [e, t] = (0, Chunk243778.US)([Chunk704215.z.WIDGETS_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE]), n = module === Chunk704215.z.WIDGETS_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE, m = (0, Chunk442837.e7)([Chunk314897.default], () => Chunk314897.default.getId());
+  return (0, Chunk951288.jsx)(Chunk993413.Z, {
+    title: Chunk388032.intl.string(Chunk388032.t.Jzj9q6),
+    description: Chunk388032.intl.string(Chunk388032.t.lfF1Sk),
+    titleIcon: require ? (0, Chunk951288.jsx)(Chunk481060.IGR, {
+      className: Chunk700803.newBadge,
+      text: Chunk388032.intl.string(Chunk388032.t.y2b7CA)
+    }) : null,
+    children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
+      text: Chunk388032.intl.string(Chunk388032.t.Geikws),
+      onClick: () => {
+        require && exports(Chunk921944.L.TAKE_ACTION), (0, Chunk892001.openUserProfileModal)({
+          userId: m,
+          sourceAnalyticsLocations: [Chunk100527.Z.USER_SETTINGS_USER_PROFILE],
+          hideRestrictedProfile: true,
+          section: Chunk228168.oh.WIDGETS
+        })
+      },
+      size: "sm"
+    })
+  })
+}
