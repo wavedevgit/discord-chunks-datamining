@@ -918,7 +918,8 @@ class eI extends Chunk47770.Z {
       time_since_creation: (0, _.zO)() - t.creationTime,
       users_added_count: t.usersAdded,
       users_removed_count: t.usersRemoved,
-      roster_size_after: t.rosterSizeAfter
+      roster_size_after: t.rosterSizeAfter,
+      init_to_finish_duration: r(t.executeFinishedTime, t.initReceivedTime)
     })), e === eO && this._trackRemainingSecureFrameTransitions()
   }
   _trackRemainingSecureFrameTransitions() {

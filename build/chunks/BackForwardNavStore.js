@@ -2,15 +2,16 @@
 /** chunk id: 365355, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => E
-}), require("./290780.js");
+  Z: () => O
+}), require("./415506.js"), require("./388685.js"), require("./290780.js");
 var r, Chunk843611 = require("./843611.js"),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
+  Chunk710845 = require("./710845.js"),
   Chunk893607 = require("./893607.js"),
   Chunk981631 = require("./981631.js");
 
-function c(e, t, n) {
+function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -18,64 +19,74 @@ function c(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let u = 20,
-  d = [Chunk981631.Z5c.CHANNEL_THREAD_VIEW(Chunk893607.Hw.guildId(), Chunk893607.Hw.channelId({
+let d = new Chunk710845.Z("BackForwardNavStore"),
+  f = 20,
+  _ = [Chunk981631.Z5c.CHANNEL_THREAD_VIEW(Chunk893607.Hw.guildId(), Chunk893607.Hw.channelId({
     optional: true
   }), ":threadId", ":messageId?"), Chunk981631.Z5c.CHANNEL(Chunk893607.Hw.guildId(), Chunk893607.Hw.channelId({
     optional: true
   }), ":messageId?"), Chunk981631.Z5c.VOICE_CHAT_CHANNEL_PARTIAL(Chunk893607.Hw.guildId(), Chunk893607.Hw.channelId({
     optional: true
-  }), ":messageId?"), Chunk981631.Z5c.NOTIFICATIONS, Chunk981631.Z5c.FRIENDS, Chunk981631.Z5c.ME, Chunk981631.Z5c.MESSAGE_REQUESTS, Chunk981631.Z5c.GUILD_DISCOVERY, Chunk981631.Z5c.APPLICATION_STORE, Chunk981631.Z5c.COLLECTIBLES_SHOP],
-  f = [],
-  _ = 0;
+  }), ":messageId?"), Chunk981631.Z5c.NOTIFICATIONS, Chunk981631.Z5c.FRIENDS, Chunk981631.Z5c.ME, Chunk981631.Z5c.MESSAGE_REQUESTS, Chunk981631.Z5c.GUILD_DISCOVERY, Chunk981631.Z5c.APPLICATION_STORE, Chunk981631.Z5c.COLLECTIBLES_SHOP, Chunk981631.Z5c.USERS(":userId"), Chunk981631.Z5c.GUILD_DISCOVERY, Chunk981631.Z5c.GLOBAL_DISCOVERY, Chunk981631.Z5c.QUEST_HOME, Chunk981631.Z5c.GLOBAL_DISCOVERY_SERVERS, Chunk981631.Z5c.GLOBAL_DISCOVERY_APPS],
+  p = [],
+  h = 0;
 
-function p(e) {
+function m(e, t) {
+  if (t < 0 || t >= e.length) throw RangeError("index out of bounds");
+  let n = 0,
+    r = t;
+  for (; n < r;)[e[n], e[r]] = [e[r], e[n]], n++, r--;
+  return e
+}
+
+function g(e) {
   let {
     path: t
-  } = e;
-  if (f.length > 0) {
-    if (t === f[_].path) returnfalse;
-    let e = f.findIndex(e => e.path === t);
-    false !== e && f.splice(e, 1)
+  } = e, n = (0, i.LX)(t, _);
+  if (null == n) returnfalse;
+  if (n.params.guildId === c.STv && true === n.params.messageId) return d.verbose("Ignoring weird notification sidebar route lacking messageId"), false;
+  if (p.length > 0) {
+    if (t === p[h].path) returnfalse;
+    let e = p.findIndex(e => e.path === t);
+    false !== e && (h >= e && (h -= 1), p.splice(e, 1))
   }
-  _ = 0, f.length > u && (f = f.slice(0, u));
-  let n = (0, i.LX)(t, d);
-  null != n && f.unshift({
+  for (n.params.guildId !== c.STv && (h > 0 && m(p, h), h = 0); p.length > f;) p.pop();
+  p.unshift({
     path: t,
     params: n.params
   })
 }
 
-function h(e) {
-  _ < f.length - 1 && _++
+function E(e) {
+  h < p.length - 1 && h++
 }
 
-function m(e) {
-  _ > 0 && _--
+function b(e) {
+  h > 0 && h--
 }
-class g extends(r = Chunk442837.ZP.Store) {
+class y extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    f = [], _ = 0
+    p = [], h = 0
   }
-  get recentPlaces() {
-    return f.slice(1)
+  get pastPlaces() {
+    return p
   }
   get canGoBack() {
-    return _ < f.length - 1
+    return h < p.length - 1
   }
   get canGoForward() {
-    return _ > 0
+    return h > 0
   }
   get backDestination() {
-    return this.canGoBack ? f[_ + 1] : null
+    return this.canGoBack ? p[h + 1] : null
   }
   get forwardDestination() {
-    return this.canGoForward ? f[_ - 1] : null
+    return this.canGoForward ? p[h - 1] : null
   }
 }
-c(g, "displayName", "BackForwardNavStore");
-let E = new g(Chunk570140.Z, {
-  ROUTE_CHANGED: p,
-  GO_BACK: h,
-  GO_FORWARD: m
+u(y, "displayName", "BackForwardNavStore");
+let O = new y(Chunk570140.Z, {
+  ROUTE_CHANGED: g,
+  GO_BACK: E,
+  GO_FORWARD: b
 })

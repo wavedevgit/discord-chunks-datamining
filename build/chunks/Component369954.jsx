@@ -63,6 +63,7 @@ let g = e => {
         top: 24
       },
       gap: 4,
+      className: Chunk271650.container,
       children: [(0, Chunk951288.jsx)(Chunk793030.xv, {
         variant: "eyebrow",
         color: "text-secondary",
