@@ -86,16 +86,14 @@ class N extends Chunk147913.Z {
         continue
       }
     }
-    let a = Chunk937797.X.getConfig({
-      location: Chunk46140.dr.QUESTS_MANAGER
-    });
+    let a = (0, Chunk937797.C)(Chunk46140.dr.QUESTS_MANAGER);
     for (let t of Object.keys(Chunk147913)) {
       let o = Chunk147913[exports];
       for (let i of require.values()) {
         let n = Chunk147913.config.taskConfigV2.tasks[Chunk754700.X.PLAY_ON_DESKTOP];
         if (!A(Chunk147913) || null == require) continue;
         let s = [Chunk147913.config.application];
-        Chunk317381.enabled && null != require.applications && (s = require.applications), (Chunk569545.some(e => e.id === t) || C(Chunk147913, Chunk594190)) && module.add(Chunk147913.id)
+        Chunk317381 && null != require.applications && (s = require.applications), (Chunk569545.some(e => e.id === t) || C(Chunk147913, Chunk594190)) && module.add(Chunk147913.id)
       }
     }
     return S.log("~ getActivelyProgressingPlayOnDesktopQuestIds -> Actively progressing questIds: ", module), module

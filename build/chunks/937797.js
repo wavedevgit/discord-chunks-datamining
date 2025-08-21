@@ -2,8 +2,8 @@
 /** chunk id: 937797, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  D: () => i,
-  X: () => a
+  C: () => o,
+  D: () => i
 });
 var Chunk427164 = require("./427164.js");
 let i = (0, Chunk427164.le)({
@@ -35,4 +35,12 @@ let i = (0, Chunk427164.le)({
         enabled: true
       }
     }
-  })
+  }),
+  o = e => {
+    let {
+      enabled: t
+    } = a.getConfig({
+      location: e
+    });
+    return t
+  }
