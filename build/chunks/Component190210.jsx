@@ -143,7 +143,7 @@ let en = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
   s()(null != H, "chat input type must be set");
   let {
     analyticsLocations: eT
-  } = (0, y.ZP)(_.Z.CHANNEL_TEXT_AREA), eN = (0, F.qz)(t), eA = i.useRef(null), ew = i.useRef(null), eR = i.useRef(null), eM = i.useRef(null);
+  } = (0, y.ZP)(_.Z.CHANNEL_TEXT_AREA), eN = (0, G.qz)(t), eA = i.useRef(null), ew = i.useRef(null), eR = i.useRef(null), eM = i.useRef(null);
   null == ey || ey(ew.current);
   let {
     activeCommand: eD
@@ -158,18 +158,18 @@ let en = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
     isPendingMember: ek,
     disabled: eU,
     canAttachFiles: eB,
-    canEveryoneSendMessages: eG
-  } = (0, F.TE)(L, H, eD, P), eF = !N.dN.useSetting() && !(0, D.isAndroidWeb)() && null != window.ResizeObserver, eH = !eF || !(null == (n = H.commands) ? true : n.enabled) || !q || p !== W.GI, eV = (0, Z.Z)(), {
+    canEveryoneSendMessages: eF
+  } = (0, G.TE)(L, H, eD, P), eG = !N.dN.useSetting() && !(0, D.isAndroidWeb)() && null != window.ResizeObserver, eH = !eG || !(null == (n = H.commands) ? true : n.enabled) || !q || p !== W.GI, eV = (0, Z.Z)(), {
     fontSize: ez
   } = (0, d.cj)([b.Z], () => ({
     fontSize: b.Z.fontSize,
     isSubmitButtonEnabled: b.Z.isSubmitButtonEnabled
   })), eW = (0, d.e7)([w.Z], () => w.Z.isEnabled()), eY = (0, T.NE)(L);
-  (0, F.hJ)(H, eU);
+  (0, G.hJ)(H, eU);
   let {
     eventEmitter: eq,
     handleEditorSelectionChanged: eK
-  } = (0, F.x2)(ew, p, g), eX = i.useCallback(e => {
+  } = (0, G.x2)(ew, p, g), eX = i.useCallback(e => {
     var t, n;
     let r = [],
       i = eS.length > 0 ? eS : e.value.length > 0 ? e.value.slice(0, 80) : K.intl.string(K.t["7Xm5QE"]);
@@ -222,17 +222,17 @@ let en = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
   }, [ed, eS, eI, L.id, eZ, eP, eY]), {
     submit: eQ,
     handleSubmit: eJ
-  } = (0, F.bL)(eX, H, ew, eM, L.id), {
+  } = (0, G.bL)(eX, H, ew, eM, L.id), {
     autocompleteRef: e$,
     handleMaybeShowAutocomplete: e0,
     handleHideAutocomplete: e1
-  } = (0, F.jx)(), e2 = i.useCallback(() => {
+  } = (0, G.jx)(), e2 = i.useCallback(() => {
     var e;
     return null == eM || null == (e = eM.current) ? true : e.hide()
   }, []), {
     editorHeight: e8,
     handleResize: e3
-  } = (0, F.oR)(eo), {
+  } = (0, G.oR)(eo), {
     handleTab: e4,
     handleEnter: e7,
     handleMoveSelection: e6
@@ -257,7 +257,7 @@ let en = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
     shouldHideExpressionPicker: e9,
     handleAutocompleteVisibilityChange: te,
     handleOuterClick: tt
-  } = (0, F.iV)(H, eq, ew), tn = (0, F.ae)(ew), tr = (0, F.Sg)(eQ, H, ew), ti = (0, F.O1)({
+  } = (0, G.iV)(H, eq, ew), tn = (0, G.ae)(ew), tr = (0, G.Sg)(eQ, H, ew), ti = (0, G.O1)({
     editorRef: ew,
     disabled: eU,
     textValue: p,
@@ -350,14 +350,14 @@ let en = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
                     ref: ew,
                     id: S,
                     focused: q,
-                    useSlate: eF,
+                    useSlate: eG,
                     textValue: p,
                     richValue: g,
                     disabled: eU,
                     placeholder: eg,
                     required: I,
                     accessibilityLabel: M,
-                    isPreviewing: (eL || ek) && eG,
+                    isPreviewing: (eL || ek) && eF,
                     channel: L,
                     type: U.Ie.CREATE_ANNOUNCEMENT_POST,
                     canPasteFiles: eB,
@@ -404,7 +404,7 @@ let en = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
             className: X.footerPart,
             children: [(0, r.jsx)(el, {
               channel: L
-            }), (0, r.jsx)(G.Z, {
+            }), (0, r.jsx)(F.Z, {
               type: U.Ie.CREATE_ANNOUNCEMENT_POST,
               disabled: eU,
               channel: L,
@@ -466,7 +466,7 @@ let en = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
           channel: L,
           canMentionRoles: eh,
           canMentionChannels: ef,
-          useNewSlashCommands: eF,
+          useNewSlashCommands: eG,
           canOnlyUseTextCommands: false,
           canSendStickers: true,
           textValue: p,

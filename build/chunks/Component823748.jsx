@@ -646,7 +646,7 @@ class to extends Chunk647438.PureComponent {
           break;
         case e3.d4z.GUILD_ANNOUNCEMENT:
         case e3.d4z.GUILD_TEXT:
-          o.push((0, r.jsx)(F.Z, {
+          o.push((0, r.jsx)(G.Z, {
             channel: e
           }, "favorites")), o.push((0, r.jsx)(eP.Z, {
             channel: e
@@ -825,7 +825,7 @@ let ts = (0, Chunk112724.Z)(to),
       k = (0, p.e7)([eK.Z], () => null != c && c.isVocalThread() && !u().isEmpty(eK.Z.getVoiceStatesForChannel(c.id)), [c]),
       U = null != c && c.isPrivate() && !L && x,
       B = (null == c ? true : c.isGuildVocal()) || U || k,
-      F = (0, p.e7)([V.Z], () => V.Z.getFrameLayoutMode() === e5.U.FOCUSED),
+      G = (0, p.e7)([V.Z], () => V.Z.getFrameLayoutMode() === e5.U.FOCUSED),
       {
         welcomeModalChannelId: H
       } = (0, d.TH)(),
@@ -884,7 +884,7 @@ let ts = (0, Chunk112724.Z)(to),
     i.useEffect(() => {
       let e = ey && !eb,
         t = ey && eb && (null == c ? true : c.id) !== eC;
-      (e || t) && (0, G.Q3)(h.z.ACTIVITY_GDM_CALL_TOOLTIP, {
+      (e || t) && (0, F.Q3)(h.z.ACTIVITY_GDM_CALL_TOOLTIP, {
         dismissAction: e6.L.AUTO
       })
     }, [null == c ? true : c.id, eC, eb, ey]);
@@ -907,10 +907,10 @@ let ts = (0, Chunk112724.Z)(to),
       guild: y,
       showCall: !C && B,
       showActivityPanel: L,
-      showFramePanel: F,
-      nsfwAgree: (0, p.e7)([eF.Z], () => eF.Z.didAgree(null == c ? true : c.guild_id)),
+      showFramePanel: G,
+      nsfwAgree: (0, p.e7)([eG.Z], () => eG.Z.didAgree(null == c ? true : c.guild_id)),
       isMobile: (0, p.e7)([eV.Z], () => (null == c ? true : c.type) === e3.d4z.DM && eV.Z.isMobileOnline(c.getRecipientId()), [c]),
-      isUnavailable: (0, p.e7)([eG.Z], () => (null == c ? true : c.guild_id) != null && eG.Z.isUnavailable(c.guild_id), [c]),
+      isUnavailable: (0, p.e7)([eF.Z], () => (null == c ? true : c.guild_id) != null && eF.Z.isUnavailable(c.guild_id), [c]),
       showRealNameModal: J,
       showWelcomeModal: !Y && $,
       showFollowButton: (null == c ? true : c.type) === e3.d4z.GUILD_ANNOUNCEMENT && (null == y ? true : y.features.has(e3.oNc.NEWS)) || false

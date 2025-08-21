@@ -41,8 +41,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk33985 = require("./33985.js");
-let G = Chunk884338.u8.SIZE_32,
-  F = {
+let F = Chunk884338.u8.SIZE_32,
+  G = {
     [Chunk918559.MI.NO_CHAT]: Chunk33985.noChat,
     [Chunk918559.MI.RESIZABLE]: Chunk33985.resizable
   };
@@ -158,7 +158,7 @@ function H(e) {
       text: i,
       position: "bottom",
       children: (0, r.jsx)("img", {
-        src: e.getAvatarURL(null == K ? true : K.guild_id, G),
+        src: e.getAvatarURL(null == K ? true : K.guild_id, F),
         alt: i,
         className: B.avatar
       }, e.id)
@@ -167,7 +167,7 @@ function H(e) {
   return (0, r.jsx)(c.f6W, {
     theme: k.BRd.DARK,
     children: e => (0, r.jsxs)("div", {
-      className: a()(B.wrapper, F[ee], e),
+      className: a()(B.wrapper, G[ee], e),
       ref: $,
       style: eg,
       children: [null == z ? true : z(), (0, r.jsxs)("div", {
@@ -200,7 +200,7 @@ function H(e) {
           children: [(0, r.jsx)(A.ZP, {
             renderIcon: false,
             users: e_,
-            size: G,
+            size: F,
             max: 6,
             renderUser: ey
           }), (0, r.jsxs)("div", {

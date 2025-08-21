@@ -1,14 +1,14 @@
 /** Chunk was on 5665 **/
 /** chunk id: 833103, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Ek: () => A,
-  HJ: () => j,
-  LE: () => w,
-  Z2: () => P,
-  Zc: () => E,
-  fI: () => T,
-  hE: () => N,
-  ur: () => I
+  Ek: () => w,
+  HJ: () => E,
+  LE: () => R,
+  Z2: () => Z,
+  Zc: () => S,
+  fI: () => N,
+  p4: () => A,
+  ur: () => P
 }), require("./781311.js"), require("./388685.js"), require("./539854.js"), require("./290780.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -24,11 +24,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk748610 = require("./748610.js"),
   Chunk738018 = require("./738018.js"),
   Chunk607802 = require("./607802.js"),
+  Chunk247902 = require("./247902.js"),
   Chunk532428 = require("./532428.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function C(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -47,7 +48,7 @@ function C(e) {
   return e
 }
 
-function x(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -60,7 +61,7 @@ function x(e, t) {
   }), e
 }
 
-function v(e) {
+function O(e) {
   let {
     searchContext: t,
     filter: n,
@@ -69,7 +70,7 @@ function v(e) {
     let e = l.autocompletes[0];
     return null != e && e.group === n ? e.results : []
   }, [l.autocompletes, n]), o = i.useMemo(() => {
-    let e = b.ZP[n].key;
+    let e = _.ZP[n].key;
     return "".concat(e, " ").concat(r)
   }, [n, r]), s = i.useCallback(() => {
     let e = (0, g.kG)(o),
@@ -86,7 +87,7 @@ function v(e) {
   }
 }
 
-function O(e) {
+function j(e) {
   let {
     user: t,
     guildId: n,
@@ -99,7 +100,7 @@ function O(e) {
   }
 }
 
-function j(e, t) {
+function E(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [],
     r = i.useMemo(() => (0, g.s5)(e), [e]),
     l = i.useMemo(() => (0, g.AH)(e), [e]),
@@ -108,7 +109,7 @@ function j(e, t) {
     {
       filterAutocompleteResults: u,
       handleFocusFilter: d
-    } = v({
+    } = O({
       searchContext: e,
       filter: t,
       queryString: s
@@ -119,7 +120,7 @@ function j(e, t) {
         t = new Set;
       return u.length > 0 && u.forEach(n => {
         let i = n.user,
-          a = O({
+          a = j({
             user: i,
             guildId: r,
             channelId: l
@@ -129,7 +130,7 @@ function j(e, t) {
         if (t.has(n)) return;
         let i = p.default.getUser(n);
         if (null == i) return;
-        let a = O({
+        let a = j({
           user: i,
           guildId: r,
           channelId: l
@@ -142,7 +143,7 @@ function j(e, t) {
     }, []),
     m = i.useCallback(e => {
       if (0 === a.length) return null;
-      let t = b.ZP[e];
+      let t = _.ZP[e];
       return a.map(e => {
         let n = p.default.getUser(e);
         return "".concat(t.key, " ").concat(null == n ? true : n.username)
@@ -159,7 +160,7 @@ function j(e, t) {
   }
 }
 
-function E(e) {
+function S(e) {
   return {
     filter: false,
     closeOnSelect: false,
@@ -187,7 +188,7 @@ function E(e) {
   }
 }
 
-function S(e) {
+function I(e) {
   let {
     channel: t
   } = e;
@@ -198,16 +199,16 @@ function S(e) {
   }
 }
 
-function I(e) {
+function P(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [],
     [n, r] = i.useState(t),
     [l, a] = i.useState(""),
     {
       filterAutocompleteResults: o,
       handleFocusFilter: s
-    } = v({
+    } = O({
       searchContext: e,
-      filter: _.dCx.FILTER_IN,
+      filter: y.dCx.FILTER_IN,
       queryString: l
     }),
     c = i.useMemo(() => {
@@ -216,7 +217,7 @@ function I(e) {
         t = new Set;
       return o.length > 0 && o.forEach(n => {
         let r = n.channel,
-          i = S({
+          i = I({
             channel: r
           });
         t.add(r.id), e.push(i)
@@ -224,7 +225,7 @@ function I(e) {
         if (t.has(n)) return;
         let r = d.Z.getChannel(n);
         if (null == r) return;
-        let i = S({
+        let i = I({
           channel: r
         });
         t.add(n), e.unshift(i)
@@ -235,7 +236,7 @@ function I(e) {
     }, []),
     p = i.useCallback(e => {
       if (0 === n.length) return null;
-      let t = b.ZP[e];
+      let t = _.ZP[e];
       return n.map(e => {
         let n = d.Z.getChannel(e);
         if (null == n) return;
@@ -254,15 +255,15 @@ function I(e) {
   }
 }
 
-function P(e) {
+function Z(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [],
     [n, r] = i.useState(t),
     {
       filterAutocompleteResults: l,
       handleFocusFilter: a
-    } = v({
+    } = O({
       searchContext: e,
-      filter: _.dCx.FILTER_HAS,
+      filter: y.dCx.FILTER_HAS,
       queryString: ""
     }),
     o = i.useMemo(() => {
@@ -291,7 +292,7 @@ function P(e) {
     }, []),
     c = i.useCallback(e => {
       if (0 === n.length) return null;
-      let t = b.ZP[e];
+      let t = _.ZP[e];
       return n.map(e => "".concat(t.key, " ").concat(e)).join(" ")
     }, [n]);
   return {
@@ -303,7 +304,7 @@ function P(e) {
     handleFocusFilter: a
   }
 }
-let Z = () => Chunk647438.useMemo(() => {
+let T = () => Chunk647438.useMemo(() => {
   var e, t, n;
   let r = Chunk532428.ZP[Chunk981631.dCx.FILTER_BEFORE],
     i = Chunk532428.ZP[Chunk981631.dCx.FILTER_AFTER],
@@ -315,7 +316,7 @@ let Z = () => Chunk647438.useMemo(() => {
   }
 }, []);
 
-function T() {
+function N() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : [],
     [t, n] = Chunk647438.useState(module),
     r = Chunk647438.useCallback(() => (0, Chunk772848.Z)(), []),
@@ -325,7 +326,7 @@ function T() {
       beforeFilter: c,
       afterFilter: u,
       duringFilter: d
-    } = Z(),
+    } = T(),
     p = Chunk647438.useCallback(() => ({
       query: Chunk442837,
       date: o()(),
@@ -351,7 +352,7 @@ function T() {
       } = e;
       n(e => {
         let n = [...e];
-        return n[r] = x(C({}, n[r]), {
+        return n[r] = v(x({}, n[r]), {
           query: t
         }), n
       })
@@ -363,7 +364,7 @@ function T() {
       } = e;
       n(e => {
         let n = [...e];
-        return n[r] = x(C({}, n[r]), {
+        return n[r] = v(x({}, n[r]), {
           date: t
         }), n
       })
@@ -377,14 +378,14 @@ function T() {
         return n.splice(e, 1), n
       })
     }, []),
-    v = Chunk647438.useCallback(() => {
+    _ = Chunk647438.useCallback(() => {
       require([])
     }, []),
     O = Chunk647438.useCallback(() => 0 === Chunk913527.length ? null : Chunk913527.map(e => {
       let {
         query: t,
         date: n
-      } = e, r = n.format(_.b2L);
+      } = e, r = n.format(y.b2L);
       return "".concat(t, " ").concat(r)
     }).join(" "), [Chunk913527]);
   return {
@@ -394,94 +395,111 @@ function T() {
     handleDateQueryChange: Chunk748610,
     handleDateChange: Chunk738018,
     handleAddDateFilter: Chunk607802,
-    handleRemoveDateFilter: Chunk532428,
-    handleClearDateFilter: v,
+    handleRemoveDateFilter: Chunk247902,
+    handleClearDateFilter: Chunk532428,
     getDateQueryString: O
   }
 }
 
-function N(e) {
-  let {
-    beforeFilter: t,
-    afterFilter: n,
-    duringFilter: r
-  } = Z();
-  return i.useMemo(() => {
-    let i = {
-        [_.dCx.FILTER_FROM]: [],
-        [_.dCx.FILTER_MENTIONS]: [],
-        [_.dCx.FILTER_HAS]: [],
-        [_.dCx.FILTER_IN]: [],
-        [_.dCx.FILTER_ON]: [],
-        [_.dCx.FILTER_BEFORE]: [],
-        [_.dCx.FILTER_AFTER]: []
-      },
-      l = 0;
-    return e.forEach(e => {
-      if (_.KA4.test(e.type)) switch (l += 1, e.type) {
-        case _.dCx.ANSWER_USERNAME_FROM:
-          let a = i[_.dCx.FILTER_FROM],
-            c = e.getData("userId");
-          a.push(c);
-          break;
-        case _.dCx.ANSWER_USERNAME_MENTIONS:
-          let u = i[_.dCx.FILTER_MENTIONS],
-            d = e.getData("userId");
-          u.push(d);
-          break;
-        case _.dCx.ANSWER_HAS:
-          let p = i[_.dCx.FILTER_HAS],
-            h = e.getData("has");
-          p.push(h);
-          break;
-        case _.dCx.ANSWER_IN:
-          var f;
-          let m = i[_.dCx.FILTER_IN],
-            g = (null != (f = e.getData("channels")) ? f : []).map(e => e.id);
-          m.push(...g);
-          break;
-        case _.dCx.ANSWER_BEFORE:
-          let b = i[_.dCx.FILTER_BEFORE],
-            y = e.getData("end"),
-            C = o()(y);
-          b.push({
-            query: t,
-            date: C,
-            id: (0, s.Z)()
-          });
-          break;
-        case _.dCx.ANSWER_ON:
-          let x = i[_.dCx.FILTER_ON],
-            v = e.getData("start"),
-            O = o()(v);
-          x.push({
-            query: r,
-            date: O,
-            id: (0, s.Z)()
-          });
-          break;
-        case _.dCx.ANSWER_AFTER:
-          let j = i[_.dCx.FILTER_AFTER],
-            E = e.getData("start"),
-            S = o()(E);
-          j.push({
-            query: n,
-            date: S,
-            id: (0, s.Z)()
-          })
-      }
-    }), {
-      searchFilters: i,
-      totalFilters: l
-    }
-  }, [e, t, n, r])
-}
-
 function A(e, t) {
-  return e === t || (0, l.isEqual)(e, t)
+  let {
+    beforeFilter: n,
+    afterFilter: r,
+    duringFilter: l
+  } = T(), a = (0, b.N)(t);
+  return i.useMemo(() => {
+    let t = {
+        [y.dCx.FILTER_FROM]: [],
+        [y.dCx.FILTER_MENTIONS]: [],
+        [y.dCx.FILTER_HAS]: [],
+        [y.dCx.FILTER_IN]: [],
+        [y.dCx.FILTER_ON]: [],
+        [y.dCx.FILTER_BEFORE]: [],
+        [y.dCx.FILTER_AFTER]: []
+      },
+      i = [],
+      c = 0;
+    e.forEach(e => {
+      if (y.KA4.test(e.type)) switch (e.type) {
+        case y.dCx.ANSWER_USERNAME_FROM:
+          if (a.has(y.dCx.FILTER_FROM)) {
+            let n = t[y.dCx.FILTER_FROM],
+              r = e.getData("userId");
+            n.push(r), c += 1
+          }
+          break;
+        case y.dCx.ANSWER_USERNAME_MENTIONS:
+          if (a.has(y.dCx.FILTER_MENTIONS)) {
+            let n = t[y.dCx.FILTER_MENTIONS],
+              r = e.getData("userId");
+            n.push(r), c += 1
+          }
+          break;
+        case y.dCx.ANSWER_HAS:
+          let u = t[y.dCx.FILTER_HAS],
+            d = e.getData("has");
+          u.push(d), c += 1;
+          break;
+        case y.dCx.ANSWER_IN:
+          if (a.has(y.dCx.FILTER_IN)) {
+            var p;
+            let n = t[y.dCx.FILTER_IN],
+              r = (null != (p = e.getData("channels")) ? p : []).map(e => e.id);
+            n.push(...r), c += 1
+          }
+          break;
+        case y.dCx.ANSWER_BEFORE:
+          let h = t[y.dCx.FILTER_BEFORE],
+            f = e.getData("end"),
+            m = {
+              query: n,
+              date: o()(f),
+              id: (0, s.Z)()
+            };
+          h.push(m), i.push(m), c += 1;
+          break;
+        case y.dCx.ANSWER_ON:
+          let g = t[y.dCx.FILTER_ON],
+            b = e.getData("start"),
+            _ = {
+              query: l,
+              date: o()(b),
+              id: (0, s.Z)()
+            };
+          g.push(_), i.push(_), c += 1;
+          break;
+        case y.dCx.ANSWER_AFTER:
+          let C = t[y.dCx.FILTER_AFTER],
+            x = e.getData("start"),
+            v = {
+              query: r,
+              date: o()(x),
+              id: (0, s.Z)()
+            };
+          C.push(v), i.push(v), c += 1
+      }
+    });
+    let u = {
+      [y.dCx.FILTER_FROM]: t[y.dCx.FILTER_FROM],
+      [y.dCx.FILTER_MENTIONS]: t[y.dCx.FILTER_MENTIONS],
+      [y.dCx.FILTER_HAS]: t[y.dCx.FILTER_HAS],
+      [y.dCx.FILTER_IN]: t[y.dCx.FILTER_IN],
+      dateFilters: i
+    };
+    return {
+      allPrefilledSearchFilters: t,
+      totalFilters: c,
+      prefilledSearchFilters: u,
+      eligibleFilterTokens: a
+    }
+  }, [e, n, r, l, a])
 }
 
 function w(e, t) {
+  return e === t || (0, l.isEqual)(e, t)
+}
+
+function R(e, t) {
   var n, r;
   if (e.length !== t.length) returnfalse;
   let i = new Map;

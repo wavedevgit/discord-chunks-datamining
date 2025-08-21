@@ -51,7 +51,7 @@ let C = (0, Chunk112724.Z)(e => {
       speakerTileWidth: n,
       speakerTileHeight: r
     }
-  })(C, A), B = O ? C - 32 : Math.min(C - 64, 3 * k + 8), G = e => e === M.length - 1 || 0 === S && 1 === e, [F, H] = i.useState(false), [V, z] = i.useState(false);
+  })(C, A), B = O ? C - 32 : Math.min(C - 64, 3 * k + 8), F = e => e === M.length - 1 || 0 === S && 1 === e, [G, H] = i.useState(false), [V, z] = i.useState(false);
   return (0, r.jsx)(h.Z, {
     sections: L,
     renderSection: e => {
@@ -62,8 +62,8 @@ let C = (0, Chunk112724.Z)(e => {
         participantCount: E,
         label: b.intl.string(b.t.CduOk5),
         className: _.header,
-        onClick: () => H(!F),
-        collapsed: F,
+        onClick: () => H(!G),
+        collapsed: G,
         speakers: Z,
         channel: a,
         isStreamLive: T
@@ -95,7 +95,7 @@ let C = (0, Chunk112724.Z)(e => {
             })
           }, "selected-participant");
         case 1:
-          if (F) return null;
+          if (G) return null;
           return (0, r.jsx)(i.Fragment, {
             children: (0, r.jsx)(f.Z, {
               tileWidth: k,
@@ -115,16 +115,16 @@ let C = (0, Chunk112724.Z)(e => {
           return null
       }
     },
-    rowHeight: e => null == D[e][0] ? 0 : 0 === e ? B / g.Q + 8 : 1 === e ? F ? 0 : U : 98 * !V,
+    rowHeight: e => null == D[e][0] ? 0 : 0 === e ? B / g.Q + 8 : 1 === e ? G ? 0 : U : 98 * !V,
     renderFooter: e => {
       let {
         section: t
       } = e;
-      return G(t) ? (0, r.jsx)("div", {
+      return F(t) ? (0, r.jsx)("div", {
         className: _.spacer
       }, "bottom-spacer") : null
     },
-    footerHeight: e => 1 === e ? 8 : 0 === e ? 12 : 88 * !!G(e),
+    footerHeight: e => 1 === e ? 8 : 0 === e ? 12 : 88 * !!F(e),
     className: _.scroller,
     chunkSize: 60,
     onScroll: x

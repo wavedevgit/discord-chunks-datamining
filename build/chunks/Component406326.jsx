@@ -69,7 +69,7 @@ function y(e) {
     location: "SearchHeader"
   }), I = (0, h.I)(t), {
     totalFilters: P
-  } = (0, c.hE)(I), Z = i.useMemo(() => {
+  } = (0, c.p4)(I, t), Z = i.useMemo(() => {
     if (t.type === f.aib.DMS && j) {
       var e, n;
       let t = null != (n = null == (e = (0, u.$G)(I).channel_id) ? true : e.length) ? n : 0;

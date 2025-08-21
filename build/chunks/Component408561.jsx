@@ -23,9 +23,9 @@ function _(e) {
     transitionState: t,
     onClose: _,
     channel: h
-  } = e, g = (0, u.Z)(O.TL), S = (0, i.e7)([c.default], () => c.default.getUser(h.getRecipientId()));
+  } = e, g = (0, u.Z)(O.TL), S = (0, i.e7)([b.default], () => b.default.getUser(h.getRecipientId()));
   return a.useEffect(() => {
-    b.default.track(f.rMx.OPEN_MODAL, {
+    c.default.track(f.rMx.OPEN_MODAL, {
       type: "DM Mute Feedback Modal"
     })
   }, []), (0, l.jsx)(s.Z, {

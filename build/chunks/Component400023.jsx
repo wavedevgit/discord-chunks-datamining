@@ -223,13 +223,13 @@ let W = (0, Chunk803948.animated)(Chunk481060.eTT),
     return (0, r.jsxs)(s.bG, {
       navigator: Q,
       children: [null != er && er, (0, r.jsxs)("div", {
-        className: a()(F.messagesWrapper, l, "group-spacing-".concat(o)),
+        className: a()(G.messagesWrapper, l, "group-spacing-".concat(o)),
         children: [null == er && ee, (0, r.jsxs)(W, V(H({
           style: D ? ec : true,
           ref: es,
           customTheme: true,
-          className: a()(p, F.scroller),
-          contentClassName: F.scrollerContent,
+          className: a()(p, G.scroller),
+          contentClassName: G.scrollerContent,
           onResize: X.handleResize,
           onScroll: X.handleScroll,
           onMouseDown: X.handleMouseDown,
@@ -238,23 +238,23 @@ let W = (0, Chunk803948.animated)(Chunk481060.eTT),
           tabIndex: false,
           role: "group",
           children: [en, (0, r.jsxs)("ol", V(H({
-            className: a()(F.scrollerInner, {
-              [F.scrollerAllowSticky]: m.isModeratorReportChannel()
+            className: a()(G.scrollerInner, {
+              [G.scrollerAllowSticky]: m.isModeratorReportChannel()
             }),
-            "aria-label": G.intl.formatToPlainString(G.t.XarRiI, {
+            "aria-label": F.intl.formatToPlainString(F.t.XarRiI, {
               channelName: m.name
             })
           }, eo), {
             children: [(0, r.jsx)("span", {
-              className: F.navigationDescription,
+              className: G.navigationDescription,
               id: "messagesNavigationDescription",
               "aria-hidden": true,
-              children: G.intl.string(G.t.Spb3s7)
+              children: F.intl.string(F.t.Spb3s7)
             }), $, (0, r.jsx)("div", {
               className: a()({
-                [F.scrollerSpacer]: !T,
-                [F.empty]: 0 === g.length && !g.loadingMore,
-                [F.emptyForum]: 1 === g.length && !g.loadingMore && m.isForumPost() && (null == (t = g.first()) ? true : t.isFirstMessageInForumPost(m))
+                [G.scrollerSpacer]: !T,
+                [G.empty]: 0 === g.length && !g.loadingMore,
+                [G.emptyForum]: 1 === g.length && !g.loadingMore && m.isForumPost() && (null == (t = g.first()) ? true : t.isFirstMessageInForumPost(m))
               })
             })]
           }))]
@@ -324,8 +324,8 @@ let W = (0, Chunk803948.animated)(Chunk481060.eTT),
         keyboardModeEnabled: i
       }
     }(), {
-      messages: G,
-      channelStream: F,
+      messages: F,
+      channelStream: G,
       oldestUnreadMessageId: W,
       editingMessageId: q
     } = function(e) {
@@ -386,8 +386,8 @@ let W = (0, Chunk803948.animated)(Chunk481060.eTT),
           showNewMessagesBar: true,
           channel: t,
           messageDisplayCompact: !o && (a || L),
-          messages: G,
-          channelStream: F,
+          messages: F,
+          channelStream: G,
           permissionVersion: C,
           uploads: (0, c.e7)([T.Z], () => T.Z.getFiles(t.id), [t]),
           unreadCount: (0, c.e7)([Z.ZP], () => Z.ZP.getUnreadCount(t.id), [t]),

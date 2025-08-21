@@ -42,7 +42,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk669922 = require("./669922.js");
 
-function G(e, t, n) {
+function F(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -50,7 +50,7 @@ function G(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class F extends Chunk647438.Component {
+class G extends Chunk647438.Component {
   componentDidMount() {
     this.autoAnalytics()
   }
@@ -62,7 +62,7 @@ class F extends Chunk647438.Component {
   }
   constructor(...e) {
     var t;
-    super(...e), t = this, G(this, "autoAnalytics", function() {
+    super(...e), t = this, F(this, "autoAnalytics", function() {
       let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : null;
       if (null == t.props.searchRequestAnalyticsId || t.props.isSearching) return;
       let n = 0,
@@ -243,14 +243,14 @@ let W = [],
       {
         paginationTotalCount: w,
         paginationMaxIndex: k,
-        isPaginationTotalCountLimited: F
+        isPaginationTotalCountLimited: G
       } = (0, R.M)({
         totalResults: n.totalResults,
         isSearching: n.isSearching
       }),
       H = i.useCallback((e, t) => {
         let n = k + 1;
-        if (!F || e.targetPage !== n) return t;
+        if (!G || e.targetPage !== n) return t;
         {
           let e = U.intl.formatToPlainString(U.t["E+2azc"], {
             maxPages: n
@@ -273,7 +273,7 @@ let W = [],
                   "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
                     return Object.getOwnPropertyDescriptor(n, e).enumerable
                   }))), r.forEach(function(t) {
-                    G(e, t, n[t])
+                    F(e, t, n[t])
                   })
                 }
                 return e
@@ -292,7 +292,7 @@ let W = [],
             }
           })
         }
-      }, [F, k]),
+      }, [G, k]),
       Y = i.useCallback(e => {
         e === v || n.isSearching || ((0, D.zW)({
           searchContext: t,
@@ -332,7 +332,7 @@ let W = [],
         }), y(e)
       }, [y, t, a]),
       X = Math.floor(n.offset / L.vpv),
-      Q = F && X >= k,
+      Q = G && X >= k,
       J = k + 1,
       $ = (0, x.C)({
         location: "SearchResults"
@@ -393,7 +393,7 @@ let W = [],
           onClick: q,
           onScrollTo: A,
           onPageChange: K,
-          paginationTotalCount: F ? w : true,
+          paginationTotalCount: G ? w : true,
           renderPageWrapper: H,
           onBlockedResultsClick: O,
           searchRequestAnalyticsId: a,
@@ -514,7 +514,7 @@ function q(e) {
       onBlockedResultsClick: T,
       searchResultsQuery: I,
       isFavoritesSearch: Z
-    }), (0, r.jsx)(F, {
+    }), (0, r.jsx)(G, {
       searchContext: t,
       searchRequestAnalyticsId: D,
       searchResults: N,

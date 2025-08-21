@@ -163,14 +163,14 @@ function eO(e) {
           })
         }
       })
-    })(), (0, r.jsx)(G.Z, {
+    })(), (0, r.jsx)(F.Z, {
       children: (0, r.jsx)(p.yRy, {
         targetElementRef: y,
         renderPopout: e => {
           let {
             closePopout: i
           } = e;
-          return (0, r.jsx)(F.Z, {
+          return (0, r.jsx)(G.Z, {
             children: (0, r.jsx)(eu.Z, {
               channel: t,
               currentUser: n,
@@ -451,7 +451,7 @@ let eP = function(e) {
   })), M = (0, N.Z)(), D = (0, u.e7)([T.Z], () => null != T.Z.getAwaitingRemoteSessionInfo()), k = null != M, U = (0, u.e7)([en.Z], () => {
     var e;
     return (null != (e = null == M ? true : M.channelId) ? e : en.Z.getVoiceChannelId()) === n.id
-  }), G = (0, u.e7)([y.ZP], () => y.ZP.getCurrentEmbeddedActivity()), {
+  }), F = (0, u.e7)([y.ZP], () => y.ZP.getCurrentEmbeddedActivity()), {
     reachedLimit: H,
     limit: V
   } = (0, el.Z)(n), {
@@ -492,7 +492,7 @@ let eP = function(e) {
               let {
                 closePopout: t
               } = e;
-              return (0, r.jsx)(F.Z, {
+              return (0, r.jsx)(G.Z, {
                 children: (0, r.jsx)(J.R, {
                   onClose: t,
                   location: x.Z.VOICE_CONTROL_TRAY,
@@ -529,7 +529,7 @@ let eP = function(e) {
               let {
                 closePopout: t
               } = e;
-              return (0, r.jsx)(F.Z, {
+              return (0, r.jsx)(G.Z, {
                 children: (0, r.jsx)(E.Z, {
                   onClose: t,
                   minimal: true,
@@ -587,7 +587,7 @@ let eP = function(e) {
             remoteMode: k
           })]
         }), (0, r.jsx)(eE, {
-          connectedEmbeddedActivity: G,
+          connectedEmbeddedActivity: F,
           currentUser: _,
           channel: n,
           onDisconnectCall: o

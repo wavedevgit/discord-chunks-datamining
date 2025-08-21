@@ -2,7 +2,7 @@
 /** chunk id: 450369, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Q: () => k,
-  Z: () => G
+  Z: () => F
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -161,7 +161,7 @@ let k = 16 / 9,
       children: o && n.type === R.fO.USER && (0, r.jsx)(A.Z, {})
     }, m)
   },
-  G = Chunk647438.memo(function(e) {
+  F = Chunk647438.memo(function(e) {
     var t;
     let {
       participant: i,

@@ -68,7 +68,7 @@ function R(e) {
         l = c.e$(i.allow, T.Plq.VIEW_CHANNEL);
       return r || l
     }).value()
-  }, [t, D]), B = O.Z.can(T.Plq.MANAGE_CHANNELS, t) || O.Z.can(T.Plq.MANAGE_ROLES, t), G = i.useCallback(() => l(false), []);
+  }, [t, D]), B = O.Z.can(T.Plq.MANAGE_CHANNELS, t) || O.Z.can(T.Plq.MANAGE_ROLES, t), F = i.useCallback(() => l(false), []);
   return (0, r.jsxs)(P.ZP, {
     channelId: t.id,
     children: [(0, r.jsx)(P.Kq, {
@@ -179,7 +179,7 @@ function R(e) {
           }
           return e
         }({}, e), i = i = {
-          onClose: () => (G(), e.onClose()),
+          onClose: () => (F(), e.onClose()),
           channelId: t.id
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
           var n = Object.keys(e);

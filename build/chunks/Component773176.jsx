@@ -190,7 +190,7 @@ function eg(e) {
     canViewThread: w,
     canForward: R,
     isExpanded: M,
-    showMoreUtilities: F,
+    showMoreUtilities: G,
     showEmojiPicker: K,
     showMessageBookmarksActions: X,
     isMessageBookmark: el,
@@ -209,7 +209,7 @@ function eg(e) {
       isFocused: s
     } = e, {
       author: d
-    } = n, p = (0, u.e7)([V.Z], () => V.Z.getGuild(t.guild_id), [t.guild_id]), h = (0, u.e7)([G.default], () => G.default.getId()), g = (0, U.$R)(t), b = (0, U.Gu)(t), {
+    } = n, p = (0, u.e7)([V.Z], () => V.Z.getGuild(t.guild_id), [t.guild_id]), h = (0, u.e7)([F.default], () => F.default.getId()), g = (0, U.$R)(t), b = (0, U.Gu)(t), {
       firstMessage: _
     } = (0, u.e7)([x.Z], () => x.Z.getMessage(t.id), [t.id]), y = B.nc.useSetting(), C = B.Sb.useSetting(), O = (0, u.e7)([z.Z], () => null == t.guild_id || z.Z.canChatInGuild(t.guild_id), [t]), {
       canManageMessages: j,
@@ -221,7 +221,7 @@ function eg(e) {
     n.type === ea.uaV.AUTO_MODERATION_ACTION && (w = w && j), t.isModeratorReportChannel() && (w = w && n.id !== (null == _ ? true : _.id) && !(0, ee.Z)(n));
     let R = (0, Q.a4)(n),
       M = (0, $.Z)(n, t),
-      F = !t.isSystemDM() && (0, J.Z)(n, h) && g && !b,
+      G = !t.isSystemDM() && (0, J.Z)(n, h) && g && !b,
       {
         disableReactionCreates: Y
       } = (0, et.Z)({
@@ -251,7 +251,7 @@ function eg(e) {
       channel: t,
       message: n,
       canPin: M,
-      canEdit: F,
+      canEdit: G,
       canDelete: w,
       canReport: R,
       canReply: I,
@@ -273,13 +273,13 @@ function eg(e) {
       isFocused: s
     }
   }(e), eh = i.useRef(null), eg = i.useCallback(() => {
-    F || Y.default.track(ea.rMx.MESSAGE_POPOUT_MENU_OPENED_DESKTOP, {
+    G || Y.default.track(ea.rMx.MESSAGE_POPOUT_MENU_OPENED_DESKTOP, {
       message_id: n.id,
       channel: n.channel_id
     }), es({
-      moreUtilities: !F
+      moreUtilities: !G
     })
-  }, [F, es, n]), eb = i.useCallback(() => {
+  }, [G, es, n]), eb = i.useCallback(() => {
     es({
       emojiPicker: !K
     })
@@ -423,7 +423,7 @@ function eg(e) {
           updatePosition: i
         })
       },
-      shouldShow: F,
+      shouldShow: G,
       onRequestClose: eg,
       position: "left",
       align: "top",
@@ -540,7 +540,7 @@ let eC = Chunk647438.memo(function(e) {
     message: n,
     isHeader: i,
     isReply: l
-  } = e, o = (0, u.e7)([F.Z], () => F.Z.isEditing(t.id, n.id), [t.id, n.id]), s = function(e) {
+  } = e, o = (0, u.e7)([G.Z], () => G.Z.isEditing(t.id, n.id), [t.id, n.id]), s = function(e) {
     let {
       channel: t,
       message: n

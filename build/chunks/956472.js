@@ -100,15 +100,16 @@ let d = e => {
       orbPrice: r,
       fiatPrice: i,
       isOrbExclusive: a,
-      hasDiscountOffer: o = false
-    } = e, s = [];
-    null != r && null != i ? n && !o ? s.push(r, i) : s.push(i, r) : null != r ? s.push(r) : null != i && s.push(i);
-    let c = s.length > 0 && (null == (t = s[0]) ? true : t.currency) === l.pKx.DISCORD_ORB;
+      hasDiscountOffer: o = false,
+      tab: c = null
+    } = e, u = [];
+    null != r && null != i ? n && (!o || c === s.AW.ORBS) ? u.push(r, i) : u.push(i, r) : null != r ? u.push(r) : null != i && u.push(i);
+    let d = u.length > 0 && (null == (t = u[0]) ? true : t.currency) === l.pKx.DISCORD_ORB;
     return {
-      checkoutEligiblePrices: s,
+      checkoutEligiblePrices: u,
       isOrbExclusive: a,
       hasSufficientOrbs: n,
-      shouldCheckoutWithOrbs: c
+      shouldCheckoutWithOrbs: d
     }
   },
   m = e => {
@@ -156,6 +157,7 @@ function g(e) {
     fiatPrice: s,
     isOrbExclusive: l,
     hasSufficientOrbs: d,
-    hasDiscountOffer: a
+    hasDiscountOffer: a,
+    tab: i
   }))
 }

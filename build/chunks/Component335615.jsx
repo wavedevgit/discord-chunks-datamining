@@ -225,7 +225,7 @@ let et = Chunk998502.ZP.getEnableHardwareAcceleration(),
       channel: i,
       user: l,
       index: a
-    } = e, o = (0, c.JA)("".concat(a)), s = (0, h.e7)([G.Z], () => G.Z.isTyping(i.id, l.id)), u = (0, h.e7)([F.default], () => F.default.getCurrentUser()), d = (0, h.e7)([U.Z], () => {
+    } = e, o = (0, c.JA)("".concat(a)), s = (0, h.e7)([F.Z], () => F.Z.isTyping(i.id, l.id)), u = (0, h.e7)([G.default], () => G.default.getCurrentUser()), d = (0, h.e7)([U.Z], () => {
       var e;
       return null != t ? null == (e = U.Z.getRole(i.guild_id, t)) ? true : e.name : true
     }, [i, t]), p = (0, R.K)({

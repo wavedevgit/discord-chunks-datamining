@@ -176,7 +176,7 @@ class W extends Chunk647438.PureComponent {
             children: e => (0, r.jsx)(c.P3F, z(V({
               innerRef: this.upsellTargetRef
             }, e), {
-              className: F.clickableChannelTextArea,
+              className: G.clickableChannelTextArea,
               onClick: this.handleTextAreaClick,
               children: h
             }))
@@ -205,15 +205,15 @@ class W extends Chunk647438.PureComponent {
         guild: e
       } = this.props;
       null != e && (0, c.h7j)(t => (0, r.jsx)(c.ConfirmModal, z(V({
-        header: G.intl.string(G.t.aIz1oa),
-        confirmText: G.intl.string(G.t["cY+Ooa"]),
-        cancelText: G.intl.string(G.t["ETE/oK"]),
+        header: F.intl.string(F.t.aIz1oa),
+        confirmText: F.intl.string(F.t["cY+Ooa"]),
+        cancelText: F.intl.string(F.t["ETE/oK"]),
         onConfirm: () => m.Z.removeGuildJoinRequest(e.id),
         confirmButtonColor: s.zx.Colors.BRAND
       }, t), {
         children: (0, r.jsx)(c.Text, {
           variant: "text-md/normal",
-          children: G.intl.string(G.t["13tjTU"])
+          children: F.intl.string(F.t["13tjTU"])
         })
       })))
     }), H(this, "handleViewApplicationRejection", () => {
@@ -251,12 +251,12 @@ class W extends Chunk647438.PureComponent {
       u.Z.verifyResend();
       let t = null == (e = R.default.getCurrentUser()) ? true : e.email;
       null != t && (0, c.h7j)(e => (0, r.jsx)(c.ConfirmModal, z(V({}, e), {
-        header: G.intl.string(G.t.LykQYm),
-        confirmText: G.intl.string(G.t.BddRzc),
+        header: F.intl.string(F.t.LykQYm),
+        confirmText: F.intl.string(F.t.BddRzc),
         confirmButtonColor: s.zx.Colors.BRAND,
         children: (0, r.jsx)(c.Text, {
           variant: "text-md/normal",
-          children: G.intl.format(G.t.azKEPz, {
+          children: F.intl.format(F.t.azKEPz, {
             email: t
           })
         })

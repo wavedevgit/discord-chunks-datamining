@@ -84,7 +84,7 @@ function es(e) {
 let ec = Chunk647438.memo(function(e) {
   let {
     channel: t
-  } = e, n = (0, o.e7)([G.Z], () => G.Z.getVoiceChannelId() === t.id, [t.id]);
+  } = e, n = (0, o.e7)([F.Z], () => F.Z.getVoiceChannelId() === t.id, [t.id]);
   return (0, r.jsxs)("div", {
     className: eo.container,
     children: [(0, r.jsxs)("div", {
@@ -124,7 +124,7 @@ function ed(e) {
     onSelect: n
   } = e, l = (0, d.bp)(), {
     canManageGuildEvent: f
-  } = (0, E.XJ)(t), m = (0, o.e7)([K.Z], () => K.Z.getStageInstanceByChannel(t.id), [t.id]), g = (0, o.e7)([v.ZP], () => v.ZP.getGuildScheduledEvent(null == m ? true : m.guild_scheduled_event_id)), b = (0, o.e7)([G.Z], () => G.Z.getVoiceChannelId() === t.id, [t.id]), {
+  } = (0, E.XJ)(t), m = (0, o.e7)([K.Z], () => K.Z.getStageInstanceByChannel(t.id), [t.id]), g = (0, o.e7)([v.ZP], () => v.ZP.getGuildScheduledEvent(null == m ? true : m.guild_scheduled_event_id)), b = (0, o.e7)([F.Z], () => F.Z.getVoiceChannelId() === t.id, [t.id]), {
     suppress: C
   } = (0, Z.Z)(t), x = k.default.getId(), [O] = (0, er.Z)(t), j = q.ZP.isModerator(x, t.id), S = (0, W.B)(t.id), I = f(g), {
     parentAnalyticsLocation: P
@@ -269,7 +269,7 @@ let ef = Chunk647438.memo(function(e) {
   } = (0, S.Z)(), v = (0, P.Z)(t), {
     limit: O,
     reachedLimit: j
-  } = (0, I.Z)(t), E = (0, o.e7)([F.default], () => F.default.getCurrentUser()), R = (0, o.e7)([U.Z], () => (0, x.Z)(U.Z)), M = (0, o.e7)([G.Z], () => G.Z.getVoiceChannelId() === t.id, [t.id]), k = (0, o.e7)([f.Z], () => f.Z.getStreamParticipants(t.id)[0], [t.id]), B = (0, X.PK)(t.id), H = O > 0, V = j && !B || null != k && k.user.id !== (null == E ? true : E.id), z = (0, y.u)("AudioDeviceMenu", n, {
+  } = (0, I.Z)(t), E = (0, o.e7)([G.default], () => G.default.getCurrentUser()), R = (0, o.e7)([U.Z], () => (0, x.Z)(U.Z)), M = (0, o.e7)([F.Z], () => F.Z.getVoiceChannelId() === t.id, [t.id]), k = (0, o.e7)([f.Z], () => f.Z.getStreamParticipants(t.id)[0], [t.id]), B = (0, X.PK)(t.id), H = O > 0, V = j && !B || null != k && k.user.id !== (null == E ? true : E.id), z = (0, y.u)("AudioDeviceMenu", n, {
     entrypoint: el.A5.CARET
   }), Y = i.useRef(null), q = i.useRef(null);
   if (null == E) return null;

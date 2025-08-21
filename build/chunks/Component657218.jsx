@@ -195,7 +195,7 @@ function Q(e) {
     isGeneratingAI: x,
     enableAIFeatures: v,
     renderAiGenerateButton: j
-  } = (0, G.U)({
+  } = (0, F.U)({
     parentChannel: t,
     parentMessageId: n,
     updateThreadSettings: g,
@@ -215,7 +215,7 @@ function Q(e) {
       textAreaState: a,
       location: o,
       enableAIFeatures: s
-    } = e, [c, u] = i.useState(null), [d, p] = i.useState(null), [h, f] = i.useState(false), m = (0, F.Z)({
+    } = e, [c, u] = i.useState(null), [d, p] = i.useState(null), [h, f] = i.useState(false), m = (0, G.Z)({
       parentChannel: t,
       parentMessageId: n,
       threadSettings: r,

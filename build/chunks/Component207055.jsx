@@ -46,7 +46,7 @@ let L = Chunk647438.memo(e => {
     channel: S,
     sessionId: D,
     nick: L
-  } = e, k = x.id, U = (0, o.e7)([O.default], () => O.default.getId() === k, [k]), [B, G, F] = (0, o.Wu)([E.Z], () => U ? [!E.Z.isSupported() || E.Z.isSelfMute() || E.Z.isSelfMutedTemporarily(), E.Z.isSelfDeaf(), false] : [!E.Z.isSupported() || E.Z.isLocalMute(k), false, E.Z.isLocalVideoDisabled(k)], [U, k]), H = (0, o.e7)([T.Z], () => T.Z.isPrioritySpeaker(k)), V = (0, c.Z)({
+  } = e, k = x.id, U = (0, o.e7)([O.default], () => O.default.getId() === k, [k]), [B, F, G] = (0, o.Wu)([E.Z], () => U ? [!E.Z.isSupported() || E.Z.isSelfMute() || E.Z.isSelfMutedTemporarily(), E.Z.isSelfDeaf(), false] : [!E.Z.isSupported() || E.Z.isLocalMute(k), false, E.Z.isLocalVideoDisabled(k)], [U, k]), H = (0, o.e7)([T.Z], () => T.Z.isPrioritySpeaker(k)), V = (0, c.Z)({
     userId: k,
     checkSoundSharing: true
   }), z = (0, o.e7)([j.ZP], () => j.ZP.isGuestOrLurker(S.guild_id, k)), W = (0, o.e7)([h.Z], () => h.Z.getGuildRingingUsers(S.id).has(k)), Y = (0, o.e7)([u.ZP], () => u.ZP.getEmbeddedActivitiesForChannel(S.id).find(e => {
@@ -93,9 +93,9 @@ let L = Chunk647438.memo(e => {
       otherClientSessionType: null == $ || null == (t = $.clientInfo) ? true : t.os,
       voicePlatform: et,
       localMute: B && !U,
-      localVideoDisabled: F,
+      localVideoDisabled: G,
       mute: a || B,
-      deaf: s || G,
+      deaf: s || F,
       speaking: V,
       ringing: W,
       priority: H,
@@ -157,7 +157,7 @@ let k = [],
       }), Array.from(e)
     });
     (0, p.Z)(B);
-    let G = (() => {
+    let F = (() => {
       if (null == T || 0 === T.length) return null;
       let e = u && T.length > d + 1 ? T.slice(0, d) : T,
         t = h.Z.getGuildRingingUsers(l.id),
@@ -196,12 +196,12 @@ let k = [],
         numUsers: T.length - d
       })), i
     })();
-    return null == G && null == y ? null : (0, r.jsxs)(x.eJ, {
+    return null == F && null == y ? null : (0, r.jsxs)(x.eJ, {
       className: a()(_, D.list, {
         [D.collapsed]: u,
         [D.withGuildIcon]: b
       }),
       collapsed: u,
-      children: [G, y]
+      children: [F, y]
     })
   }

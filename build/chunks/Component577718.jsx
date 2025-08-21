@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 577718, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => y
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -15,12 +15,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk230421 = require("./230421.jsx"),
   Chunk782959 = require("./782959.jsx"),
   Chunk538445 = require("./538445.jsx"),
+  Chunk511342 = require("./511342.jsx"),
   Chunk933104 = require("./933104.jsx"),
   Chunk355251 = require("./355251.jsx"),
   Chunk337721 = require("./337721.jsx"),
   Chunk921944 = require("./921944.js");
 
-function O(e) {
+function E(e) {
   let {
     renderPopout: t,
     renderGuildHeaderDropdownButton: n
@@ -41,86 +42,92 @@ function O(e) {
     })
   })
 }
-let E = Chunk647438.memo(function(e) {
+let y = Chunk647438.memo(function(e) {
   let {
     contentTypes: t,
     guild: n,
     renderGuildHeaderDropdownButton: i
   } = e, {
     analyticsLocations: a
-  } = (0, o.ZP)(), [E, y] = (0, s.US)(t, _.R.GUILD_HEADER_TOOLTIPS);
+  } = (0, o.ZP)(), [y, v] = (0, s.US)(t, O.R.GUILD_HEADER_TOOLTIPS);
   return (0, r.jsx)(r.Fragment, {
     children: (() => {
-      switch (E) {
+      switch (y) {
         case l.z.BOOSTER_ENHANCED_ROLE_COLORS_COACHMARK:
-          return (0, r.jsx)(O, {
+          return (0, r.jsx)(E, {
             renderPopout: (0, r.jsx)(h.Z, {
               guild: n,
-              markAsDismissed: y
+              markAsDismissed: v
             }),
             renderGuildHeaderDropdownButton: i
           });
         case l.z.GUILD_POWERUP_PERKS_COACHMARK:
-          return (0, r.jsx)(O, {
-            renderPopout: (0, r.jsx)(g.$h, {
+          return (0, r.jsx)(E, {
+            renderPopout: (0, r.jsx)(m.$h, {
               guildId: n.id,
-              markAsDismissed: y
+              markAsDismissed: v
             }),
             renderGuildHeaderDropdownButton: i
           });
         case l.z.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_COACHMARK:
-          return (0, r.jsx)(O, {
-            renderPopout: e => (0, r.jsx)(m.Z, {
+          return (0, r.jsx)(E, {
+            renderPopout: e => (0, r.jsx)(b.Z, {
               guildId: n.id,
-              markAsDismissed: y,
+              markAsDismissed: v,
               targetElementRef: e
             }),
             renderGuildHeaderDropdownButton: i
           });
+        case l.z.GUILD_HEADER_BOOST_PROGRESS_BAR_UPSELL:
+          return (0, r.jsx)(g.Z, {
+            guild: n,
+            markAsDismissed: v,
+            renderTargetElement: i
+          });
         case l.z.GUILD_HEADER_ROLE_SUBSCRIPTION_UPSELL:
-          return (0, r.jsx)(O, {
+          return (0, r.jsx)(E, {
             renderPopout: (0, r.jsx)(c.Z, {
               guildId: n.id,
-              markAsDismissed: y
+              markAsDismissed: v
             }),
             renderGuildHeaderDropdownButton: i
           });
         case l.z.GUILD_DISCOVERY_LANDING_PAGE_SETTINGS_UPSELL:
-          return (0, r.jsx)(O, {
-            renderPopout: (0, r.jsx)(b.Z, {
+          return (0, r.jsx)(E, {
+            renderPopout: (0, r.jsx)(_.Z, {
               guild: n,
-              markAsDismissed: y
+              markAsDismissed: v
             }),
             renderGuildHeaderDropdownButton: i
           });
         case l.z.GUILD_HEADER_INVITE_SPLASH:
-          return (0, r.jsx)(O, {
+          return (0, r.jsx)(E, {
             renderPopout: e => (0, r.jsx)(p.Z, {
               elementRef: e,
               guild: n,
-              markAsDismissed: y,
+              markAsDismissed: v,
               analyticsLocations: a
             }),
             renderGuildHeaderDropdownButton: i
           });
         case l.z.STUDENT_HUB_PRIVACY_SETTINGS_TOOLTIP:
-          return (0, r.jsx)(O, {
+          return (0, r.jsx)(E, {
             renderPopout: (0, r.jsx)(d.Z, {
-              markAsDismissed: y
+              markAsDismissed: v
             }),
             renderGuildHeaderDropdownButton: i
           });
         case l.z.MEDIA_CHANNEL_UPSELL:
           return (0, r.jsx)(f.Z, {
             guildId: n.id,
-            markAsDismissed: y,
+            markAsDismissed: v,
             renderTargetElement: i
           });
         case l.z.SERVER_SUBSCRIPTION_TIER_TEMPLATE_UPSELL:
-          return (0, r.jsx)(O, {
+          return (0, r.jsx)(E, {
             renderPopout: (0, r.jsx)(u.Z, {
               guildId: n.id,
-              markAsDismissed: y
+              markAsDismissed: v
             }),
             renderGuildHeaderDropdownButton: i
           });

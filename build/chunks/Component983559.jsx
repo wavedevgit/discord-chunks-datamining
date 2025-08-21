@@ -63,8 +63,8 @@ function w(e) {
     layout: "SIDEBAR",
     userId: t.id,
     channelId: f.id
-  }), U = i.useRef(null), B = (0, s.Z)(U), G = (0, g.$m)(), F = (0, o.q_F)({
-    opacity: +(null != G.interactionType),
+  }), U = i.useRef(null), B = (0, s.Z)(U), F = (0, g.$m)(), G = (0, o.q_F)({
+    opacity: +(null != F.interactionType),
     config: {
       duration: 150
     }
@@ -83,22 +83,22 @@ function w(e) {
       fetchEndedAt: null == w ? true : w.fetchEndedAt,
       isLoaded: null == w ? true : w.isLoaded,
       children: (0, r.jsx)(g.NJ, {
-        value: G,
+        value: F,
         children: (0, r.jsxs)(x.Z, {
           ref: U,
           user: t,
           displayProfile: w,
           themeType: Z.l.SIDEBAR,
           themeOverride: M,
-          children: [null != G.interactionType && (0, r.jsx)(l.animated.div, {
-            style: F,
+          children: [null != F.interactionType && (0, r.jsx)(l.animated.div, {
+            style: G,
             className: N.backdrop
           }), (0, r.jsxs)(a.u2, {
             children: [(0, r.jsxs)(O.Z, {
               children: [(0, r.jsx)(j.Z, {
                 user: t,
                 themeType: Z.l.SIDEBAR,
-                shouldShowTooltip: null === G.interactionType
+                shouldShowTooltip: null === F.interactionType
               }), t.bot ? (0, r.jsx)(v.Z, {
                 user: t
               }) : (0, r.jsx)(E.Z, {
@@ -135,7 +135,7 @@ function w(e) {
               currentUser: n,
               displayProfile: w,
               channel: f,
-              isHovering: null == G.interactionType && B,
+              isHovering: null == F.interactionType && B,
               onOpenProfile: T ? true : H
             }), (0, r.jsx)(P.Z, {
               user: t,

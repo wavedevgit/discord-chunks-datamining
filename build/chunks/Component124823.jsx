@@ -62,7 +62,7 @@ function w(e) {
     layout: "SIDEBAR",
     userId: t.id,
     channelId: n.id
-  }), U = i.useRef(null), B = (0, o.Z)(U), G = e => {
+  }), U = i.useRef(null), B = (0, o.Z)(U), F = e => {
     (0, b.openUserProfileModal)(A({
       sourceAnalyticsLocations: L,
       hideRestrictedProfile: true
@@ -99,7 +99,7 @@ function w(e) {
               displayProfile: R,
               channelId: n.id,
               themeType: P.l.SIDEBAR,
-              onOpenProfile: w ? true : G
+              onOpenProfile: w ? true : F
             })]
           }), (0, r.jsxs)("div", {
             className: N.body,
@@ -107,7 +107,7 @@ function w(e) {
               user: t,
               nickname: h.ZP.getName(null, n.id, t),
               pronouns: null == R ? true : R.pronouns,
-              onOpenProfile: w ? true : G,
+              onOpenProfile: w ? true : F,
               tags: (0, r.jsx)(y.Z, {
                 displayProfile: R,
                 themeType: P.l.SIDEBAR
@@ -136,7 +136,7 @@ function w(e) {
           className: T.footer,
           children: (0, r.jsx)(a.P3F, {
             onClick: () => {
-              G(), (0, m.pQ)(A({
+              F(), (0, m.pQ)(A({
                 action: "PRESS_VIEW_PROFILE",
                 analyticsLocations: L
               }, k))

@@ -48,8 +48,8 @@ function j(e) {
   }), [k, U] = (0, h.cv)(L), {
     analyticsLocations: B
   } = (0, u.ZP)(), {
-    isHovered: G,
-    setIsHovered: F,
+    isHovered: F,
+    setIsHovered: G,
     onMouseEnter: H,
     onMouseLeave: V
   } = (0, f.Z)(200, 300);
@@ -103,14 +103,14 @@ function j(e) {
   let Y = i.useRef(null);
   return (0, r.jsx)(s.y, {
     targetElementRef: Y,
-    shouldShow: G && (E === v.D.SOUNDBOARD || null == E) || E === v.D.SOUNDBOARD,
+    shouldShow: F && (E === v.D.SOUNDBOARD || null == E) || E === v.D.SOUNDBOARD,
     animation: s.y.Animation.FADE,
     animationPosition: "top",
     position: "top",
     align: "center",
     spacing: 16,
     onRequestClose: () => {
-      F(false), null == S || S(true)
+      G(false), null == S || S(true)
     },
     renderPopout: e => {
       let {
@@ -148,8 +148,8 @@ function j(e) {
       onMouseLeave: () => {
         null == E && (V(), N())
       },
-      isActive: G || E === v.D.SOUNDBOARD,
-      color: G || E === v.D.SOUNDBOARD ? "primaryDark" : true
+      isActive: F || E === v.D.SOUNDBOARD,
+      color: F || E === v.D.SOUNDBOARD ? "primaryDark" : true
     })
   })
 }

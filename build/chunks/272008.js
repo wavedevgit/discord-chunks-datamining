@@ -260,10 +260,10 @@ async function M(e, t, n) {
     try {
       let r = await i.tn.post({
           url: I.ANM.QUESTS_CLAIM_REWARD(e),
-          body: {
+          body: A({
             platform: t,
             location: n
-          },
+          }, (0, m.qe)(e, n)),
           rejectWithError: false
         }),
         o = (0, m.Xh)(r.body);

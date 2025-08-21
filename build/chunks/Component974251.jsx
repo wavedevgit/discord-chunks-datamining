@@ -42,7 +42,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk90274 = require("./90274.js");
 
-function G(e) {
+function F(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -61,7 +61,7 @@ function G(e) {
   return e
 }
 
-function F(e, t) {
+function G(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -97,7 +97,7 @@ let H = Chunk647438.memo(function(e) {
       let {
         default: e
       } = await n.e("57478").then(n.bind(n, 542055));
-      return t => (0, r.jsx)(e, F(G({}, t), {
+      return t => (0, r.jsx)(e, G(F({}, t), {
         channelId: V.id
       }))
     }, {
@@ -168,12 +168,12 @@ let H = Chunk647438.memo(function(e) {
       renderPopout: e => {
         switch (es) {
           case "recentClips":
-            return (0, r.jsx)(b.Z, F(G({}, e), {
+            return (0, r.jsx)(b.Z, G(F({}, e), {
               onOpenClips: em,
               lastClipsSession: ee
             }));
           case "attachMenu":
-            return (0, r.jsx)(R.Z, F(G({}, e), {
+            return (0, r.jsx)(R.Z, G(F({}, e), {
               onClose: () => ec(null),
               options: eO,
               channel: V,
@@ -190,7 +190,7 @@ let H = Chunk647438.memo(function(e) {
             throw Error("Invalid popout type provided")
         }
       },
-      children: e => (0, r.jsx)(w.Z, F(G({
+      children: e => (0, r.jsx)(w.Z, G(F({
         ref: Q,
         className: a()(B.attachButton, H),
         childClassName: B.attachButtonInner,

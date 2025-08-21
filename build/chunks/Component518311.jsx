@@ -830,9 +830,9 @@ function e_(e) {
   var {
     channel: t
   } = e, n = eu(e, ["channel"]);
-  let r = (0, p.cj)([F.Z, G.Z, W.Z], () => {
+  let r = (0, p.cj)([G.Z, F.Z, W.Z], () => {
     let e;
-    return null != t && null != (e = G.Z.getInvite(t.id)) && e.isExpired() && (e = null), ec(es({}, F.Z.getState()), {
+    return null != t && null != (e = F.Z.getInvite(t.id)) && e.isExpired() && (e = null), ec(es({}, G.Z.getState()), {
       invite: e,
       hideDiscriminator: W.Z.hidePersonalInformation,
       hideInstantInvites: W.Z.hideInstantInvites

@@ -43,7 +43,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk963392 = require("./963392.js"),
   Chunk197571 = require("./197571.js");
 
-function F(e) {
+function G(e) {
   let {
     canManageRoles: t,
     channel: n
@@ -132,7 +132,7 @@ function H(e) {
       user: I,
       children: [null != I && !I.isProvisional && (0, r.jsx)(a.X6q, {
         variant: "heading-xl/medium",
-        className: G.marginBottom20,
+        className: F.marginBottom20,
         children: A
       }), U.intl.format(U.t["Qvg+6+"], {
         username: y
@@ -161,7 +161,7 @@ function H(e) {
       name: y
     })
   });
-  return M ? (0, r.jsx)(F, {
+  return M ? (0, r.jsx)(G, {
     channel: p,
     canManageRoles: R
   }) : (0, r.jsx)(S.ZP, {

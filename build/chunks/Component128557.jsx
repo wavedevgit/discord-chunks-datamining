@@ -118,8 +118,8 @@ function R(e) {
     guildMessaged: U,
     guildPersonalized: B
   } = (0, f.h_)(l), {
-    handleInvite: G,
-    handleMessage: F,
+    handleInvite: F,
+    handleMessage: G,
     handlePersonalize: H,
     handleDownload: V,
     handleAddApplication: z
@@ -253,7 +253,7 @@ function R(e) {
       iconUrl: u.YvY,
       header: Z.intl.string(Z.t.q9n0TU),
       completed: k,
-      onClick: G
+      onClick: F
     })
   }, "invite")), M && J.push((0, r.jsx)(o.Z.div, {
     className: T.cardWrapper,
@@ -275,7 +275,7 @@ function R(e) {
       iconUrl: u.qMX,
       header: Z.intl.string(Z.t["SoP7+v"]),
       completed: U,
-      onClick: F
+      onClick: G
     })
   }, "message")), (0, j.isWeb)() && J.push((0, r.jsx)(o.Z.div, {
     className: T.cardWrapper,

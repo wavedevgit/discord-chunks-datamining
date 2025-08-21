@@ -42,7 +42,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk39219 = require("./39219.js"),
   Chunk430864 = require("./430864.js");
 
-function G(e) {
+function F(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -61,7 +61,7 @@ function G(e) {
   return e
 }
 
-function F(e, t) {
+function G(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -187,7 +187,7 @@ function W(e) {
       delay: 500,
       position: "bottom",
       shouldShow: H,
-      children: e => (0, r.jsxs)(s.P3F, F(G({}, e), {
+      children: e => (0, r.jsxs)(s.P3F, G(F({}, e), {
         className: a()(U.channelStatusClickable, {
           [U.hoverable]: H
         }),
@@ -215,7 +215,7 @@ function W(e) {
       let {
         default: e
       } = await Promise.resolve().then(n.bind(n, 339340));
-      return n => (0, r.jsx)(e, G({
+      return n => (0, r.jsx)(e, F({
         channel: t
       }, n))
     }, {
@@ -252,7 +252,7 @@ function W(e) {
               "aria-label": N
             }) : null, y, Y && (0, r.jsx)(s.ua7, {
               text: k.intl.string(k.t.QyZ4TU),
-              children: e => (0, r.jsx)(s.tQf, F(G({}, e), {
+              children: e => (0, r.jsx)(s.tQf, G(F({}, e), {
                 size: "xs",
                 "aria-label": k.intl.string(k.t.VHXh8f),
                 color: s.TVs.colors.INTERACTIVE_NORMAL,

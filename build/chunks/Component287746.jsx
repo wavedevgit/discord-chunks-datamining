@@ -373,7 +373,7 @@ class ta extends Chunk647438.PureComponent {
           return void this.handleIncrementCombo("", 1);
         case e3.yXg.ARROW_UP:
           if (i || l) return;
-          if (e.preventDefault(), t) eL.Z.getUploadCount(r.id, eN.d.ChannelMessage) > 0 ? eF.S.dispatchToLastSubscribed(e3.CkL.FOCUS_ATTACHMENT_AREA) : eF.S.dispatchToLastSubscribed(e3.CkL.FOCUS_MESSAGES, {
+          if (e.preventDefault(), t) eL.Z.getUploadCount(r.id, eN.d.ChannelMessage) > 0 ? eG.S.dispatchToLastSubscribed(e3.CkL.FOCUS_ATTACHMENT_AREA) : eG.S.dispatchToLastSubscribed(e3.CkL.FOCUS_MESSAGES, {
             atEnd: true
           });
           else {
@@ -439,7 +439,7 @@ class ta extends Chunk647438.PureComponent {
         chatInputType: m
       } = this.props, b = false;
       if (null != l) {
-        if (l.inputType === M.iw.BUILT_IN_INTEGRATION) return eF.S.dispatch(e3.CkL.SHAKE_APP, {
+        if (l.inputType === M.iw.BUILT_IN_INTEGRATION) return eG.S.dispatch(e3.CkL.SHAKE_APP, {
           duration: 200,
           intensity: 2
         }), Promise.resolve({
@@ -512,10 +512,10 @@ class ta extends Chunk647438.PureComponent {
           failureReason: C
         } = e;
         if (!y)
-          if (C === e3.zYc.SLOWMODE_COOLDOWN) return eF.S.dispatch(e3.CkL.SHAKE_APP, {
+          if (C === e3.zYc.SLOWMODE_COOLDOWN) return eG.S.dispatch(e3.CkL.SHAKE_APP, {
             duration: 200,
             intensity: 2
-          }), eF.S.dispatch(e3.CkL.EMPHASIZE_SLOWMODE_COOLDOWN), {
+          }), eG.S.dispatch(e3.CkL.EMPHASIZE_SLOWMODE_COOLDOWN), {
             shouldClear: false,
             shouldRefocus: true
           };
@@ -604,7 +604,7 @@ class ta extends Chunk647438.PureComponent {
       editorTextContent: this.state.textValue,
       setValue: this.handleSetValue,
       canOnlyUseTextCommands: e
-    })), e9(this, "renderApplicationCommandIcon", (e, t, n) => (0, r.jsx)(F.Z, {
+    })), e9(this, "renderApplicationCommandIcon", (e, t, n) => (0, r.jsx)(G.Z, {
       className: n,
       command: e,
       section: t,
@@ -671,11 +671,11 @@ class to extends Chunk647438.PureComponent {
       } = this.state,
       B = Chunk442837 === Chunk541716.Ie.SIDEBAR;
     n = Chunk752305 && Chunk647438.type === Chunk981631.d4z.GUILD_VOICE ? Chunk388032.t.pnnyFR : Chunk752305 && Chunk647438.type === Chunk981631.d4z.GUILD_STAGE_VOICE ? Chunk388032.t.YInSkp : Chunk106351.T.THREADS.has(Chunk647438.type) ? Chunk388032.t["OkzL+f"] : Chunk388032.t.UbNmGR;
-    let G = (0, Chunk951288.jsx)("div", {
+    let F = (0, Chunk951288.jsx)("div", {
         className: Chunk97009.channelBottomBarArea,
         children: (0, Chunk951288.jsx)(Chunk685722.Z, {})
       }),
-      F = (0, Chunk951288.jsxs)("div", {
+      G = (0, Chunk951288.jsxs)("div", {
         className: Chunk97009.channelBottomBarArea,
         children: [(0, Chunk951288.jsx)(Chunk155409.Z, {
           childRef: this.containerDomRef,
@@ -855,12 +855,12 @@ class to extends Chunk647438.PureComponent {
       } = this.props;
       if (t) switch (e.which) {
         case e3.yXg.ARROW_LEFT:
-          n === U.Ie.SIDEBAR && eF.S.dispatch(e3.CkL.FOCUS_CHANNEL_TEXT_AREA, {
+          n === U.Ie.SIDEBAR && eG.S.dispatch(e3.CkL.FOCUS_CHANNEL_TEXT_AREA, {
             channelId: eD.Z.getChannelId()
           });
           return;
         case e3.yXg.ARROW_RIGHT:
-          n === U.Ie.NORMAL && eF.S.dispatch(e3.CkL.FOCUS_CHANNEL_TEXT_AREA, {
+          n === U.Ie.NORMAL && eG.S.dispatch(e3.CkL.FOCUS_CHANNEL_TEXT_AREA, {
             channelId: eZ.ZP.getCurrentSidebarChannelId(r.id)
           })
       }
@@ -971,9 +971,9 @@ let ts = Chunk647438.memo(function(e) {
     commands: U
   });
   let B = i.useRef(null),
-    G = (0, d.e7)([P.Z], () => P.Z.appDMChannelsWithFailedLoads().has(t.id)),
-    F = (0, d.e7)([eD.Z], () => eD.Z.getVoiceChannelId()),
-    H = (0, d.e7)([eT.Z], () => eT.Z.getChannel(F)),
+    F = (0, d.e7)([P.Z], () => P.Z.appDMChannelsWithFailedLoads().has(t.id)),
+    G = (0, d.e7)([eD.Z], () => eD.Z.getVoiceChannelId()),
+    H = (0, d.e7)([eT.Z], () => eT.Z.getChannel(G)),
     V = (0, d.e7)([ek.default], () => t.type !== e3.d4z.DM ? null : ek.default.getUser(t.getRecipientId())),
     z = (0, d.e7)([em.ZP, eP.default], () => em.ZP.getUserCombo(eP.default.getId(), t.id)),
     q = (0, b.iD)(t),
@@ -1006,7 +1006,7 @@ let ts = Chunk647438.memo(function(e) {
     isInitialLoading: w,
     showEntryPointAppCommandButton: null != R,
     entryPointCommandButtonRef: B,
-    isFailedAppDMLoad: G,
+    isFailedAppDMLoad: F,
     pendingScheduledMessage: I,
     recipientUser: V,
     voiceChannel: H,

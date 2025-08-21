@@ -3,11 +3,11 @@
 require.d(exports, {
   Bi: () => f,
   Ez: () => _,
-  NX: () => g,
-  Uv: () => h,
+  NX: () => m,
+  Uv: () => N,
   Z1: () => S,
   hP: () => p,
-  w9: () => m
+  w9: () => g
 }), require("./539854.js");
 var Chunk392711 = require("./392711.js"),
   l = require.n(Chunk392711),
@@ -62,7 +62,7 @@ let f = (e, t) => {
   return n
 };
 
-function h(e) {
+function N(e) {
   let {
     feedbackType: t,
     location: n
@@ -81,7 +81,7 @@ function h(e) {
   }))) : (0, i.Kw)(l)
 }
 
-function N(e) {
+function h(e) {
   return e.filter(e => {
     let {
       disabled: t
@@ -110,7 +110,7 @@ function N(e) {
 }
 
 function S() {
-  return N([{
+  return h([{
     variant: Chunk531578.$7.SELF,
     value: Chunk531578.T_.COULD_NOT_CONNECT,
     label: Chunk388032.intl.string(Chunk805388.default.gMHKDA)
@@ -137,11 +137,11 @@ function S() {
   }])
 }
 
-function m(e) {
+function g(e) {
   let {
     isMobile: t
   } = e;
-  return N([{
+  return h([{
     value: c.b9.NO_AUDIO,
     variant: c.$7.SELF,
     label: E.intl.string(o.default.GWypHx)
@@ -190,11 +190,15 @@ function m(e) {
     variant: c.$7.SELF,
     label: E.intl.string(o.default["4qlGrK"]),
     disabled: !t
+  }, {
+    value: c.b9.NO_GAME_AUDIO,
+    variant: c.$7.SELF,
+    label: E.intl.string(o.default["2IG95O"])
   }])
 }
 
-function g() {
-  return N([{
+function m() {
+  return h([{
     value: Chunk531578.ct.NO_VIDEO,
     variant: Chunk531578.$7.SELF,
     label: Chunk388032.intl.string(Chunk805388.default["Bh+02d"])
@@ -225,7 +229,7 @@ function _(e) {
   let {
     isStreamer: t
   } = e;
-  return N([{
+  return h([{
     value: c.MJ.COULD_NOT_LOAD,
     variant: c.$7.SELF,
     label: E.intl.string(o.default["w+kiDA"]),
@@ -269,6 +273,11 @@ function _(e) {
     value: c.MJ.DESYNC,
     variant: c.$7.SELF,
     label: E.intl.string(o.default.JS6akJ),
+    disabled: !t
+  }, {
+    value: c.MJ.NO_GAME_AUDIO,
+    variant: c.$7.SELF,
+    label: E.intl.string(o.default.TaIrh4),
     disabled: !t
   }, {
     value: c.MJ.COULD_NOT_LOAD,
@@ -319,7 +328,7 @@ function _(e) {
 }
 
 function p() {
-  return N([{
+  return h([{
     value: Chunk531578.s_.TOXIC_OR_INAPPROPRIATE,
     variant: Chunk531578.$7.OTHERS,
     label: Chunk388032.intl.string(Chunk805388.default.PLBRzM)
