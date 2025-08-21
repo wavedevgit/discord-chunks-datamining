@@ -391,8 +391,31 @@ let e_ = new Set(Object.values(Chunk981631.Skl)),
     return null == (t = null == e ? true : e.value) || t
   }, e => o.D5.create({
     value: e
-  })), "text", "renderReactions"),
-  ev = (0, Chunk560997.Zc)("localization", "timezoneOffset", e => {
+  })), "text", "renderReactions");
+(0, Chunk560997.KM)((0, Chunk560997.Zc)("textAndImages", "defaultReactionEmoji", e => {
+  let {
+    emojiId: t,
+    emojiName: n
+  } = null != e ? e : {};
+  return {
+    emojiId: null == t ? true : t.value,
+    emojiName: null == n ? true : n.value
+  }
+}, e => {
+  let {
+    emojiId: t,
+    emojiName: n
+  } = e;
+  return {
+    emojiId: o.wA.create({
+      value: t
+    }),
+    emojiName: o.Gm.create({
+      value: n
+    })
+  }
+}), "text", "defaultReactionEmoji");
+let ev = (0, Chunk560997.Zc)("localization", "timezoneOffset", e => {
     var t;
     return null != (t = null == e ? true : e.value) ? t : null
   }, e => o.T4.create({
