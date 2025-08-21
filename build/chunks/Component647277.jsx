@@ -120,7 +120,7 @@ let T = e => {
         children: [t.map(e => (0, r.jsx)(S, {
           user: e
         }, e.id)), (0, r.jsx)(s.Text, {
-          variant: "text-md/medium",
+          variant: "text-sm/medium",
           color: "text-primary",
           className: E.reminderAvatarText,
           children: A({
@@ -144,7 +144,9 @@ let T = e => {
       className: t
     } = e, {
       referralSentUsers: n
-    } = (0, p.G)(), i = (0, o.e7)([_.Z], () => _.Z.getRecipientStatus()).values().every(e => e === f.Fe.REDEEMED), l = () => n.length === p.Q ? true === i ? g.intl.format(g.t["1aEjsL"], {
+    } = (0, p.G)(), i = (0, o.e7)([_.Z], () => _.Z.getRecipientStatus()), l = (0, o.e7)([_.Z], () => _.Z.getHasEligibleFriends()), c = i.size === p.Q && i.values().every(e => e === f.Fe.REDEEMED), d = () => false === l ? g.intl.format(g.t["zWhX/f"], {
+      helpdeskArticle: u.Z.getArticleURL(m.BhN.REFERRAL_PROGRAM)
+    }) : n.length === p.Q ? true === c ? g.intl.format(g.t["1aEjsL"], {
       helpdeskArticle: u.Z.getArticleURL(m.BhN.REFERRAL_PROGRAM)
     }) : g.intl.format(g.t["+u3AOD"], {
       helpdeskArticle: u.Z.getArticleURL(m.BhN.REFERRAL_PROGRAM)
@@ -170,10 +172,11 @@ let T = e => {
             }), (0, r.jsx)(s.Text, {
               variant: "text-md/medium",
               color: "text-secondary",
-              children: l()
+              children: d()
             })]
           }), (0, r.jsx)(s.zxk, {
             variant: "primary",
+            disabled: false === l || true === c,
             text: g.intl.string(g.t.Lm2nFR),
             onClick: () => T({
               startingScreen: h.K.SELECT_FRIENDS,
@@ -183,7 +186,7 @@ let T = e => {
         })]
       }), n.length > 0 && (0, r.jsx)(C, {
         referralSentUsers: n,
-        allRedeemed: i
+        allRedeemed: c
       })]
     })
   }

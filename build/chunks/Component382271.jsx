@@ -125,7 +125,7 @@ let N = (e, t) => {
         let e = t.filter(e => e.status === b.Fz.SUCCESS).length;
         return 0 === e ? I.intl.string(I.t["7VBEub"]) : true === a ? I.intl.string(I.t.GP5lbm) : o > 0 ? I.intl.formatToPlainString(I.t.iWtOfH, {
           numReferrals: e
-        }) : I.intl.string(I.t.Pcb7KC)
+        }) : I.intl.string(I.t.tKCltb)
       },
       h = () => true === a ? I.intl.format(I.t["4gJJfH"], {
         helpdeskArticle: g.Z.getArticleURL(v.BhN.REFERRAL_PROGRAM)
