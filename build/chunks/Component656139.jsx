@@ -2,8 +2,8 @@
 /** chunk id: 656139, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  K: () => w,
-  default: () => D
+  K: () => P,
+  default: () => w
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,114 +20,136 @@ var Chunk951288 = require("./951288.js"),
   Chunk100527 = require("./100527.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk626135 = require("./626135.js"),
+  Chunk63063 = require("./63063.js"),
   Chunk51144 = require("./51144.js"),
   Chunk281494 = require("./281494.js"),
   Chunk276444 = require("./276444.js"),
-  Chunk687555 = require("./687555.jsx"),
   Chunk955839 = require("./955839.js"),
-  Chunk553874 = require("./553874.jsx"),
   Chunk28061 = require("./28061.jsx"),
   Chunk382271 = require("./382271.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk476034 = require("./476034.js");
-let R = e => {
+let N = e => {
     let {
       onClose: t,
       onShare: n
-    } = e, a = (0, s.e7)([y.Z], () => y.Z.getReferralsRemaining()), [d, h] = i.useState(new Map), [m, g] = i.useState(""), b = (0, _.Z)(m, 400), {
-      eligibleUsers: S,
-      fetchUsers: A,
-      hasError: R,
-      isFetching: P,
-      resendUsers: w
+    } = e, a = (0, s.e7)([O.Z], () => O.Z.getReferralsRemaining()), d = (0, s.e7)([O.Z], () => O.Z.getHasEligibleFriends()), [h, m] = i.useState(new Map), [g, y] = i.useState(""), T = (0, _.Z)(g, 400), {
+      eligibleUsers: N,
+      fetchUsers: R,
+      hasError: P,
+      isFetching: w,
+      resendUsers: D
     } = (0, v.q)({
-      searchQuery: b,
-      selectedUsers: d
-    }), [D, x] = i.useState(false), L = (0, p.O)(e => {
-      e && !P && A()
-    }), j = S.reduce((e, t) => (e.has(t.id) || e.set(t.id, t), e), new Map), M = () => (0, r.jsx)(f.Z, {
-      className: N.searchbar,
+      searchQuery: T,
+      selectedUsers: h
+    }), [x, L] = i.useState(false), j = (0, p.O)(e => {
+      e && !w && R()
+    }), M = N.reduce((e, t) => (e.has(t.id) || e.set(t.id, t), e), new Map), k = () => (0, r.jsx)(f.Z, {
+      className: C.searchbar,
       size: f.Z.Sizes.MEDIUM,
-      tags: [...d.values()].map(e => E.ZP.getName(e)),
-      placeholder: 0 === d.size ? C.intl.string(C.t.Kd5RaG) : "",
-      query: m,
+      tags: [...h.values()].map(e => b.ZP.getName(e)),
+      placeholder: 0 === h.size ? A.intl.string(A.t.Kd5RaG) : "",
+      query: g,
       onRemoveTag: e => {
-        h(t => {
+        m(t => {
           let n = [...t.values()][e],
             r = new Map(t);
           return r.delete(n.id), r
         })
       },
-      onQueryChange: g,
-      onClear: () => g("")
-    }), k = e => {
+      onQueryChange: y,
+      onClear: () => y("")
+    }), U = e => {
       let i, {
           eligibleRecipients: a
         } = e,
-        s = b.length > 0 && 0 === a.size;
-      return i = true === s ? C.intl.string(C.t.wpSqAQ) : d.size <= 1 ? C.intl.string(C.t.ItpQxs) : C.intl.format(C.t.iW2str, {
-        nTrials: d.size
+        s = T.length > 0 && 0 === a.size;
+      return i = true === s ? A.intl.string(A.t.wpSqAQ) : h.size <= 1 ? A.intl.string(A.t.ItpQxs) : A.intl.format(A.t.iW2str, {
+        nTrials: h.size
       }), (0, r.jsx)("div", {
-        className: o()(N.footer, N.footerSeparator),
+        className: o()(C.footer, C.footerSeparator),
         children: (0, r.jsx)(u.zxk, {
           variant: "primary",
-          disabled: 0 === d.size && !s || D,
+          disabled: 0 === h.size && !s || x,
           text: i,
           size: "md",
           fullWidth: true,
           onClick: async () => {
             if (s) return void t();
-            x(true), await n([...d.values()]), x(false)
+            L(true), await n([...h.values()]), L(false)
           }
         })
       })
-    }, U = e => {
+    }, G = e => {
       let {
         eligibleRecipients: t
       } = e;
-      returntrue == (b.length > 0 && 0 === t.size) ? (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(O.ih, {}), (0, r.jsx)(O.d, {})]
+      returntrue == (T.length > 0 && 0 === t.size) ? (0, r.jsxs)("div", {
+        className: C.emptySearchResultsContainer,
+        children: [(0, r.jsx)(u.X6q, {
+          variant: "heading-md/semibold",
+          color: "header-primary",
+          children: A.intl.string(A.t["8+ywHB"])
+        }), (0, r.jsx)(u.Text, {
+          variant: "text-md/medium",
+          color: "text-secondary",
+          children: A.intl.string(A.t.CgQmY2)
+        })]
       }) : (0, r.jsxs)(u.u2D, {
-        className: N.list,
-        children: [Array.from(t.values()).map(e => (0, r.jsx)(T.Z, {
-          disabled: null !== a && 0 !== a && [...d.values()].filter(e => !w.has(e.id)).length >= a && !d.has(e.id) && !w.has(e.id),
-          checked: d.has(e.id),
+        className: C.list,
+        children: [Array.from(t.values()).map(e => (0, r.jsx)(I.Z, {
+          disabled: null !== a && 0 !== a && [...h.values()].filter(e => !D.has(e.id)).length >= a && !h.has(e.id) && !D.has(e.id),
+          checked: h.has(e.id),
           user: e,
           onChange: (e, t) => {
-            h(n => {
+            m(n => {
               let r = new Map(n);
               return t ? r.set(e.id, e) : r.delete(e.id), r
             })
           }
-        }, e.id)), P && (0, r.jsx)(u.$jN, {}), (0, r.jsx)("div", {
-          ref: L
+        }, e.id)), w && (0, r.jsx)(u.$jN, {}), (0, r.jsx)("div", {
+          ref: j
         })]
       })
     };
-    return null === a ? (0, r.jsx)(u.$jN, {}) : R ? (0, r.jsx)(I.P, {
-      onClose: t
+    return null === a ? (0, r.jsx)(u.$jN, {}) : P ? (0, r.jsx)(c.Modal, {
+      transitionState: l.D.ENTERED,
+      size: "sm",
+      title: A.intl.string(A.t.lcuio6),
+      subtitle: A.intl.string(A.t["x09+CA"]),
+      onClose: t,
+      actions: []
+    }) : false === d ? (0, r.jsx)(c.Modal, {
+      transitionState: l.D.ENTERED,
+      size: "sm",
+      title: A.intl.string(A.t["2YigPj"]),
+      subtitle: A.intl.format(A.t.OOCbz8, {
+        helpdeskArticle: E.Z.getArticleURL(S.BhN.REFERRAL_PROGRAM)
+      }),
+      onClose: t,
+      actions: []
     }) : (0, r.jsx)(c.Modal, {
       size: "md",
       transitionState: l.D.ENTERED,
-      title: C.intl.string(C.t["2dVCLi"]),
-      subtitle: C.intl.string(C.t.DXgoi4),
+      title: A.intl.string(A.t["2dVCLi"]),
+      subtitle: A.intl.string(A.t.DXgoi4),
       onClose: t,
-      input: M(),
+      input: k(),
       actions: [],
-      actionBarInput: k({
-        eligibleRecipients: j
+      actionBarInput: U({
+        eligibleRecipients: M
       }),
-      children: U({
-        eligibleRecipients: j
+      children: G({
+        eligibleRecipients: M
       })
     })
   },
-  P = e => {
+  R = e => {
     let {
       onClose: t,
       onShare: n
-    } = e, a = (0, s.e7)([y.Z], () => y.Z.getRecipientStatus()), [f, _] = i.useState(new Map), [p, h] = i.useState(new Map), [m, g] = i.useState(false);
+    } = e, a = (0, s.e7)([O.Z], () => O.Z.getRecipientStatus()), [f, _] = i.useState(new Map), [p, h] = i.useState(new Map), [m, g] = i.useState(false);
     i.useEffect(() => {
       (async () => {
         let e = new Map;
@@ -140,10 +162,10 @@ let R = e => {
     }, [a]);
     let E = () => {
       let e;
-      return e = p.size <= 1 ? C.intl.string(C.t.ItpQxs) : C.intl.format(C.t.iW2str, {
+      return e = p.size <= 1 ? A.intl.string(A.t.ItpQxs) : A.intl.format(A.t.iW2str, {
         nTrials: p.size
       }), (0, r.jsx)("div", {
-        className: o()(N.footer, N.footerSeparator),
+        className: o()(C.footer, C.footerSeparator),
         children: (0, r.jsx)(u.zxk, {
           variant: "primary",
           disabled: 0 === p.size || m,
@@ -159,16 +181,16 @@ let R = e => {
     return (0, r.jsx)(c.Modal, {
       size: "md",
       transitionState: l.D.ENTERED,
-      title: C.intl.string(C.t.rKmy8P),
-      subtitle: C.intl.string(C.t.VDlF6u),
+      title: A.intl.string(A.t.rKmy8P),
+      subtitle: A.intl.string(A.t.VDlF6u),
       onClose: t,
       actions: [],
       actionBarInput: E(),
       children: (0, r.jsx)(u.u2D, {
-        className: N.list,
-        children: Array.from(f.values()).map(e => (0, r.jsx)(T.Z, {
+        className: C.list,
+        children: Array.from(f.values()).map(e => (0, r.jsx)(I.Z, {
           checked: p.has(e.id),
-          disabled: e.referralStatus === b.Fe.REDEEMED,
+          disabled: e.referralStatus === y.Fe.REDEEMED,
           user: e,
           onChange: (e, t) => {
             h(n => {
@@ -180,20 +202,20 @@ let R = e => {
       })
     })
   };
-var w = function(e) {
+var P = function(e) {
   return e[e.SELECT_FRIENDS = 1] = "SELECT_FRIENDS", e[e.CONFIRMATION = 2] = "CONFIRMATION", e[e.REMINDER = 3] = "REMINDER", e
 }({});
-let D = e => {
+let w = e => {
   let {
     onClose: t,
     startingScreen: n = 1
-  } = e, a = (0, s.e7)([y.Z], () => y.Z.getReferralsRemaining()), [o, l] = i.useState(n), [c, d] = i.useState([]), {
+  } = e, a = (0, s.e7)([O.Z], () => O.Z.getReferralsRemaining()), [o, l] = i.useState(n), [c, d] = i.useState([]), {
     analyticsLocations: f
   } = (0, m.ZP)([h.Z.PREMIUM_MARKETING_REFERALL_PROGRAM_SHARE_MODAL]), _ = async e => {
-    g.default.track(A.rMx.REFERRAL_PROGRAM_SHARE_CTA_CLICKED, {
+    g.default.track(S.rMx.REFERRAL_PROGRAM_SHARE_CTA_CLICKED, {
       location_stack: f
     });
-    let t = await (0, b.jy)(Object.values(e).map(e => e.id));
+    let t = await (0, y.jy)(Object.values(e).map(e => e.id));
     d(e.map(e => ({
       recipient: e,
       status: t.get(e.id)
@@ -202,16 +224,16 @@ let D = e => {
   if (null === a) return (0, r.jsx)(u.$jN, {});
   if (2 === o) {
     let e = 3 === n;
-    return (0, r.jsx)(S.m, {
+    return (0, r.jsx)(T.m, {
       isReminderConfirmation: e,
       results: c,
       onClose: t
     })
   }
-  return 1 === o ? (0, r.jsx)(R, {
+  return 1 === o ? (0, r.jsx)(N, {
     onClose: t,
     onShare: _
-  }) : 3 === o ? (0, r.jsx)(P, {
+  }) : 3 === o ? (0, r.jsx)(R, {
     onClose: t,
     onShare: _
   }) : true

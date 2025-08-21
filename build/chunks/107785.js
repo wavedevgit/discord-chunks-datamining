@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 107785, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 47435 **/
+/** chunk id: 107785, original params: e,t,r (module,exports,require) **/
 module.exports = {
   erroredContainer: "erroredContainer_bf2caa",
   header: "header_bf2caa",

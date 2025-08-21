@@ -1,75 +1,69 @@
-/** Chunk was on web.js **/
-/** chunk id: 529840, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 47435 **/
+/** chunk id: 529840, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => d
+  Z: () => C
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk518950 = require("./518950.js"),
   Chunk715156 = require("./715156.js");
 
-function c(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function u(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      c(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function d(e) {
+function C(e) {
   var t;
   let {
-    user: n,
+    user: r,
     checked: i,
-    onChange: c,
+    onChange: C,
     disabled: d
   } = e, {
-    avatarSrc: f,
-    eventHandlers: _
-  } = (0, s.Z)({
-    userId: null == n ? true : n.id,
-    size: o.EFr.SIZE_32
-  }), p = null != (t = n.globalName) ? t : n.username;
-  return (0, r.jsxs)("div", {
-    className: l.container,
-    children: [(0, r.jsxs)("div", {
-      className: l.user,
-      children: [(0, r.jsx)(o.qEK, u({
-        className: a()({
-          [l.muted]: d
+    avatarSrc: c,
+    eventHandlers: x
+  } = (0, l.Z)({
+    userId: null == r ? true : r.id,
+    size: n.EFr.SIZE_32
+  }), p = null != (t = r.globalName) ? t : r.username;
+  return (0, a.jsxs)("div", {
+    className: o.container,
+    children: [(0, a.jsxs)("div", {
+      className: o.user,
+      children: [(0, a.jsx)(n.qEK, function(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var r = null != arguments[t] ? arguments[t] : {},
+            a = Object.keys(r);
+          "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(r, e).enumerable
+          }))), a.forEach(function(t) {
+            var a;
+            a = r[t], t in e ? Object.defineProperty(e, t, {
+              value: a,
+              enumerable: true,
+              configurable: true,
+              writable: true
+            }) : e[t] = a
+          })
+        }
+        return e
+      }({
+        className: s()({
+          [o.muted]: d
         }),
-        src: f,
+        src: c,
         "aria-label": p,
-        size: o.EFr.SIZE_32
-      }, _)), (0, r.jsx)(o.Text, {
+        size: n.EFr.SIZE_32
+      }, x)), (0, a.jsx)(n.Text, {
         color: d ? "text-muted" : "text-default",
         variant: "text-md/semibold",
         children: p
       })]
-    }), (0, r.jsx)("div", {
-      className: l.checkbox,
-      children: (0, r.jsx)(o.XZJ, {
+    }), (0, a.jsx)("div", {
+      className: o.checkbox,
+      children: (0, a.jsx)(n.XZJ, {
         disabled: d,
         value: i,
-        onChange: (e, t) => c(n, t)
+        onChange: (e, t) => C(r, t)
       })
     })]
   })

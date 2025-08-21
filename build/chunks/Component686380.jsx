@@ -152,7 +152,41 @@ class U extends Chunk647438.Component {
   renderRefreshedDMEmbed(e) {
     let {
       emphasis: t
-    } = e, n = (0, r.jsxs)(r.Fragment, {
+    } = e, n = () => {
+      let e = g.default.getUser(this.trialOffer.user_id),
+        n = null != e ? e.username : M,
+        r = g.default.getUser(this.trialOffer.referrer_id),
+        i = null != r ? r.username : M;
+      if (this.isSender)
+        if (this.recipientHasNitro && true === this.trialOffer.redeemed_at) return {
+          headerText: P.intl.formatToPlainString(P.t.qABVhI, {
+            recipient: n
+          }),
+          bodyText: P.intl.formatToPlainString(P.t.u7hyDw, {
+            helpdeskArticle: O.Z.getArticleURL(R.BhN.REFERRAL_PROGRAM)
+          })
+        };
+        else return {
+          headerText: P.intl.string(P.t.LAGZfn),
+          bodyText: P.intl.formatToPlainString(P.t["0gnFLC"], {
+            recipient: n
+          })
+        };
+      return this.offerExpired ? {
+        headerText: P.intl.string(P.t.nYvpUl),
+        bodyText: P.intl.formatToPlainString(P.t.wJdBER, {
+          sender: i
+        })
+      } : "SOCIAL" === t ? {
+        headerText: P.intl.string(P.t.HtTvXF),
+        bodyText: P.intl.formatToPlainString(P.t.wOQByM, {
+          sender: i
+        })
+      } : {
+        headerText: P.intl.string(P.t.VkcLSk),
+        bodyText: P.intl.string(P.t.JXMz5O)
+      }
+    }, i = (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(A.Z, {
         subscriptionTier: N.Si.TIER_2,
         buttonTextOverride: P.intl.string(P.t.O0etsL),
@@ -163,7 +197,7 @@ class U extends Chunk647438.Component {
         color: "text-secondary",
         children: this.renderExpirationDate()
       })]
-    }), i = (0, r.jsx)(d.zxk, {
+    }), a = (0, r.jsx)(d.zxk, {
       variant: "primary",
       disabled: false,
       size: "md",
@@ -171,7 +205,7 @@ class U extends Chunk647438.Component {
         analyticsLocations: []
       }),
       text: P.intl.string(P.t.Lm2nFR)
-    }), a = this.isSender ? i : n, o = "SOCIAL" === t ? (0, r.jsx)(d.Eep, {
+    }), o = this.isSender ? a : i, s = "SOCIAL" === t ? (0, r.jsx)(d.Eep, {
       src: x.Z,
       height: 84,
       width: 144,
@@ -181,7 +215,10 @@ class U extends Chunk647438.Component {
       height: 137,
       width: 144,
       className: w.imgDMEmbedXP
-    });
+    }), {
+      headerText: l,
+      bodyText: c
+    } = n();
     return (0, r.jsxs)(h.Z, {
       className: w.systemMessageContainerDMEmbedXP,
       iconNode: (0, r.jsx)(d.SrA, {
@@ -196,22 +233,22 @@ class U extends Chunk647438.Component {
         children: this.getSystemMessageHeader()
       }), (0, r.jsxs)("div", {
         className: w.containerDMEmbedXP,
-        children: [o, (0, r.jsxs)("div", {
+        children: [s, (0, r.jsxs)("div", {
           className: w.contentDMEmbedXP,
           children: [(0, r.jsxs)("div", {
             className: w.contentTextDMEmbedXP,
             children: [(0, r.jsx)(d.X6q, {
               variant: "heading-md/semibold",
               color: "header-primary",
-              children: this.getTitleText()
+              children: l
             }), (0, r.jsx)(d.Text, {
               variant: "text-md/medium",
               color: "text-secondary",
-              children: this.getBodyText()
+              children: c
             })]
           }), (0, r.jsx)("div", {
             className: w.buttonContainerDMEmbedXP,
-            children: a
+            children: o
           })]
         })]
       })]
