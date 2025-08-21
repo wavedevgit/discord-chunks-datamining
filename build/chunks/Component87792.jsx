@@ -2,6 +2,7 @@
 /** chunk id: 87792, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
+  I: () => G,
   Z: () => V
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -177,17 +178,19 @@ let U = () => {
     let {
       userId: t,
       subText: n,
-      avatarSize: i = l.EFr.SIZE_40
-    } = e, a = (0, E.I)(t);
-    return true === a ? null : (0, r.jsxs)("div", {
+      avatarSize: i = l.EFr.SIZE_40,
+      hideUserTag: a = false
+    } = e, o = (0, E.I)(t);
+    return true === o ? null : (0, r.jsxs)("div", {
       className: w.accountRow,
       children: [(0, r.jsx)(T.r, {
-        user: a,
+        user: o,
         avatarSize: i
       }), (0, r.jsxs)("div", {
         className: w.headerText,
         children: [(0, r.jsx)(S.Z, {
-          user: a
+          user: o,
+          hideUserTag: a
         }), true !== n ? (0, r.jsx)(l.Text, {
           variant: "text-sm/medium",
           color: "text-muted",

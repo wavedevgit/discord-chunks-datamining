@@ -14,8 +14,9 @@ var Chunk120356 = require("./120356.js"),
 let c = e => {
   let {
     user: t,
-    fill: n
-  } = e, i = "\xa0(@".concat(s.ZP.getUserTag(t, {
+    fill: n,
+    hideUserTag: i
+  } = e, c = "\xa0(@".concat(s.ZP.getUserTag(t, {
     decoration: "never"
   }), ")");
   return (0, r.jsxs)(o.Text, {
@@ -26,9 +27,9 @@ let c = e => {
     children: [(0, r.jsx)("span", {
       className: l.username,
       children: s.ZP.getName(t)
-    }), (0, r.jsx)("span", {
+    }), i ? null : (0, r.jsx)("span", {
       className: l.discriminator,
-      children: i
+      children: c
     })]
   })
 }
