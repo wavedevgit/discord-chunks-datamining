@@ -22,29 +22,29 @@ function v(e) {
     onClose: r,
     sidebarHeader: v,
     sidebarFooter: m
-  } = e, [b, x] = l.useState(true), [p, j] = l.useState(n.key), {
+  } = e, [b, p] = l.useState(true), [x, j] = l.useState(n.key), {
     navigateWithValidation: y
-  } = (0, d.Cu)(), h = l.useMemo(() => ({
-    currentPanel: t.layout.flatMap(e => e.layout).find(e => e.key === p),
+  } = (0, d.Cu)(), C = l.useMemo(() => ({
+    currentPanel: t.layout.flatMap(e => e.layout).find(e => e.key === x),
     setCurrentPanel: e => y(() => j(e.key)),
-    showNavigationMobile: b
-  }), [p, t, b, y]), C = () => y(r);
+    showNavigationMobile: b,
+    setShowNavigationMobile: p
+  }), [x, t, b, y, p]), h = () => y(r);
   return (0, i.jsx)(f.j.Provider, {
-    value: h,
+    value: C,
     children: (0, i.jsxs)("div", {
       className: o()(g.container, {
         [g.mobile]: s.tq
       }),
       children: [(0, i.jsx)(c.d, {
-        onClose: C
+        onClose: h
       }), (0, i.jsx)(u.P, {
         root: t,
         header: v,
         footer: m
       }), (0, i.jsx)(a.Z, {
-        onClose: C,
-        setShowNavigationMobile: x,
-        setting: h.currentPanel
+        onClose: h,
+        setting: C.currentPanel
       })]
     })
   })

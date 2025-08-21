@@ -144,12 +144,12 @@ let b = [{
       useTooltip: e.useTooltip
     })
   })),
-  x = (0, Chunk509613.qs)("SelectedChannelNotifications", {
+  p = (0, Chunk509613.qs)("SelectedChannelNotifications", {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.TzjwV1),
     useValue: () => (0, Chunk442837.e7)([Chunk292959.Z], () => Chunk292959.Z.getNotifyMessagesInSelectedChannel()),
     setValue: e => s.default.setNotifyMessagesInSelectedChannel(e)
   }),
-  p = (0, Chunk509613.qs)("DisableAllNotificationSounds", {
+  x = (0, Chunk509613.qs)("DisableAllNotificationSounds", {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["2ZhCOT"]),
     useSubtitle: () => Chunk388032.intl.string(Chunk388032.t["+B0XLC"]),
     useValue: () => (0, Chunk442837.e7)([Chunk292959.Z], () => Chunk292959.Z.getDisableAllSounds()),
@@ -180,5 +180,5 @@ let b = [{
         children: t
       })
     },
-    getLayout: () => [b[0].node, x, b[1].node, p, ...b.slice(2).map(e => e.node)]
+    getLayout: () => [b[0].node, p, b[1].node, x, ...b.slice(2).map(e => e.node)]
   })
