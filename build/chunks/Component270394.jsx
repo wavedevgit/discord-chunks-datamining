@@ -267,7 +267,7 @@ function q(e) {
       data: e
     }))], [_, C, h]),
     S = () => {
-      (0, g.ZDy)(async () => e => (0, i.jsx)(I.default, z(G({}, e), {
+      (0, g.ZDy)(async () => e => (0, i.jsx)(T.default, z(G({}, e), {
         channel: u,
         guild: l,
         source: M.t4x.SETTINGS_INVITE
@@ -278,7 +278,7 @@ function q(e) {
       let e = {
         source: w.Zu.GUILD_SETTINGS
       };
-      (0, g.ZDy)(async () => t => (0, i.jsx)(T.default, z(G({}, t), {
+      (0, g.ZDy)(async () => t => (0, i.jsx)(I.default, z(G({}, t), {
         guildId: l.id,
         analyticsData: e
       })))

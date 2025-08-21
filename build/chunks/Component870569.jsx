@@ -92,8 +92,10 @@ let g = 20,
       tooltipColor: R,
       tooltipForceOpen: P,
       tooltipContentClassName: w,
-      plated: D
-    } = e, x = "function" == typeof m ? (0, r.jsx)(m, {
+      tooltipPositionKeyStemOverride: D,
+      tooltipShouldShow: x,
+      plated: L
+    } = e, j = "function" == typeof m ? (0, r.jsx)(m, {
       width: g,
       height: g,
       size: "custom",
@@ -107,6 +109,8 @@ let g = 20,
       color: R,
       tooltipContentClassName: w,
       forceOpen: P,
+      shouldShow: x,
+      positionKeyStemOverride: D,
       children: e => {
         var {
           onClick: n,
@@ -125,8 +129,8 @@ let g = 20,
             [u.orangeGlow]: v,
             [u.disabled]: _,
             [u.enabled]: !_,
-            [u.plated]: D,
-            [u.plateMuted]: O && D
+            [u.plated]: L,
+            [u.plateMuted]: O && L
           }),
           onClick: e => {
             null != n && n(), null != d && d(e)
@@ -152,8 +156,8 @@ let g = 20,
             width: g,
             height: g,
             mask: c.ZP.Masks.PANEL_BUTTON,
-            children: x
-          }) : x, i]
+            children: j
+          }) : j, i]
         }))
       }
     })

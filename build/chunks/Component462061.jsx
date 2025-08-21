@@ -1,4 +1,4 @@
-/** Chunk was on 37832 **/
+/** Chunk was on 69634 **/
 /** chunk id: 462061, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   T: () => T,
@@ -104,7 +104,7 @@ function D(e) {
     user: W,
     streamId: Y,
     speaking: z
-  } = t, G = W.id === H, B = (0, Z.ZP)(t), K = (0, o.e7)([_.Z], () => _.Z.isFocused()), q = (0, o.e7)([b.Z], () => b.Z.getWindowFocused(P.KJ3.CHANNEL_CALL_POPOUT)), J = (0, o.e7)([y.Z], () => null != W.id && y.Z.isLocalVideoDisabled(W.id, (0, f.Z)(t.type)), [W.id, t.type]), X = (0, o.e7)([O.ZP], () => O.ZP.isGuestOrLurker(n.guild_id, W.id)), Q = j.ZP.getName(n.getGuildId(), n.id, W) + (X ? " ".concat(C.intl.string(C.t["pFO/Pj"])) : ""), $ = z && (q || K), ee = u < 124 ? N : x, {
+  } = t, G = W.id === H, K = (0, Z.ZP)(t), q = (0, o.e7)([_.Z], () => _.Z.isFocused()), B = (0, o.e7)([b.Z], () => b.Z.getWindowFocused(P.KJ3.CHANNEL_CALL_POPOUT)), J = (0, o.e7)([y.Z], () => null != W.id && y.Z.isLocalVideoDisabled(W.id, (0, f.Z)(t.type)), [W.id, t.type]), X = (0, o.e7)([O.ZP], () => O.ZP.isGuestOrLurker(n.guild_id, W.id)), Q = j.ZP.getName(n.getGuildId(), n.id, W) + (X ? " ".concat(C.intl.string(C.t["pFO/Pj"])) : ""), $ = z && (B || q), ee = u < 124 ? N : x, {
     avatarSrc: et,
     avatarDecorationSrc: en
   } = (0, S.Z)({
@@ -125,8 +125,8 @@ function D(e) {
       selectedParticipant: t,
       user: n
     } = eo.current;
-    e.isGuildStageVoice() && !B && (null == t ? true : t.id) === n.id && s.Z.selectParticipant(e.id, null)
-  }, [B]), i && !J && !L && B && !v && null != U && y.Z.supports(A.AN.VIDEO)) ? null != el && null == ei ? (0, r.jsx)(I.Z, {
+    e.isGuildStageVoice() && !K && (null == t ? true : t.id) === n.id && s.Z.selectParticipant(e.id, null)
+  }, [K]), i && !J && !L && K && !v && null != U && y.Z.supports(A.AN.VIDEO)) ? null != el && null == ei ? (0, r.jsx)(I.Z, {
     avError: el,
     userId: t.id,
     width: u,

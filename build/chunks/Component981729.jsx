@@ -126,15 +126,16 @@ let D = e => {
       animationStyle: p,
       disableTooltipPointerEvents: h = false,
       allowOverflow: m = false,
-      tooltipPointerClassName: b
-    } = e, O = "".concat("string" == typeof o ? o : "", ":").concat(r);
+      tooltipPointerClassName: b,
+      positionKeyStemOverride: O
+    } = e, v = "".concat(null != O ? O : "string" == typeof o ? o : "", ":").concat(r);
     return (0, i.jsx)(g.W5, {
       disablePointerEvents: h,
       targetRef: t,
       position: r,
       autoInvert: true,
       align: n,
-      positionKey: O,
+      positionKey: v,
       spacing: _,
       nudgeAlignIntoViewport: true,
       children: e => {
@@ -286,6 +287,7 @@ class k extends(r = Chunk647438.Component) {
       onAnimationRest: Chunk374470,
       onNonAccessibleClick: Chunk607070 ? this.handleClick : true,
       allowOverflow: Chunk846519,
+      positionKeyStemOverride: this.props.positionKeyStemOverride,
       children: b
     })
   }

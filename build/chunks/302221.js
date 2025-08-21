@@ -291,7 +291,7 @@ function P(e) {
     else break;
     s = i().contrast(t, n)
   }
-  return t
+  return t.alpha(1)
 }
 
 function w(e) {

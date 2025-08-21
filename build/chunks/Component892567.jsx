@@ -52,18 +52,18 @@ let I = [Chunk342905.C.CHERRY_BOMB, Chunk342905.C.CHICLE],
       location: "useDisplayNameStylesFont"
     }), L = (0, g.Y)({
       location: "UserNameWithEffects"
-    }), j = (0, _.dQu)(_.TVs.colors.BACKGROUND_BASE_LOW).hex(), M = (0, y.R)(null != (t = null == a ? true : a.effectId) ? t : c.m.SOLID), k = (0, _.qgQ)(n), U = (0, f.EJ)(k, (null == a ? true : a.effectId) === c.m.TOON ? v.emoji : true), G = i.useMemo(() => null != a && L ? a.colors.map(e => (0, h.wh)({
+    }), j = (0, _.dQu)(_.TVs.colors.BACKGROUND_BASE_LOW).hex(), M = null != (t = null == a ? true : a.effectId) ? t : c.m.SOLID, k = (0, y.R)(M), U = (0, _.qgQ)(n), G = (0, f.EJ)(U, M === c.m.TOON ? v.emoji : true), B = i.useMemo(() => null != a && L ? a.colors.map(e => (0, h.wh)({
       foreground: o()(e),
-      background: (null == a ? true : a.effectId) === c.m.TOON ? o()("#333") : o()(j),
-      ratio: M.minContrastRatio,
+      background: M === c.m.TOON ? o()("#333") : o()(j),
+      ratio: k.minContrastRatio,
       saturationFactor: D
-    }).hex()) : [], [a, L, M.minContrastRatio, D, j]);
+    }).hex()) : [], [a, L, M, k.minContrastRatio, D, j]);
     if (!L || !u && !x || null == a) return n;
-    let B = (0, b.K)(a.effectId, G, {
+    let Z = (0, b.K)(M, B, {
         shouldWrap: C,
         fontOpacity: I.includes(a.fontId) ? N : 1
       }),
-      Z = S(a.effectId);
+      V = S(M);
     return (0, r.jsxs)("div", {
       className: l()(v.container, P, T, {
         [v.showEffect]: s !== E.F.PLAIN,
@@ -71,17 +71,17 @@ let I = [Chunk342905.C.CHERRY_BOMB, Chunk342905.C.CHICLE],
         [v.loop]: A,
         [v.inProfile]: u
       }),
-      style: B,
+      style: Z,
       children: [(0, r.jsx)("span", {
-        "data-username-with-effects": k,
-        className: l()(v.innerContainer, null == Z ? true : Z.effectClassName, {
+        "data-username-with-effects": U,
+        className: l()(v.innerContainer, null == V ? true : V.effectClassName, {
           [v.underlineOnHover]: R
         }),
-        children: U
-      }), (null == Z ? true : Z.glowClassName) != null && (0, r.jsx)("span", {
-        className: l()(v.glowContainer, v.innerContainer, Z.glowClassName),
+        children: G
+      }), (null == V ? true : V.glowClassName) != null && (0, r.jsx)("span", {
+        className: l()(v.glowContainer, v.innerContainer, V.glowClassName),
         "aria-hidden": true,
-        children: k
+        children: U
       })]
     })
   });

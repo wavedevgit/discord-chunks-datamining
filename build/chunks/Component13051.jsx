@@ -1,7 +1,7 @@
 /** Chunk was on 47463 **/
 /** chunk id: 13051, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => T
+  Z: () => I
 }), require("./388685.js"), require("./642613.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -48,13 +48,13 @@ function w(e) {
   return e
 }
 
-function T(e) {
+function I(e) {
   let t, {
       guild: n,
       integration: l,
       editedIntegration: o,
-      isExpanded: T,
-      onToggleExpand: I,
+      isExpanded: I,
+      onToggleExpand: T,
       onDisable: P,
       onEnable: E
     } = e,
@@ -182,7 +182,7 @@ function T(e) {
         grow: 0,
         children: (0, i.jsx)(v.Z, {
           className: Z.expandIcon,
-          expanded: T && !k,
+          expanded: I && !k,
           "aria-hidden": true
         })
       }) : (0, i.jsx)(b.Z.Child, {
@@ -203,7 +203,7 @@ function T(e) {
       })]
     }),
     J = null;
-  return T && !k && null != o && (J = (0, i.jsxs)(b.Z, {
+  return I && !k && null != o && (J = (0, i.jsxs)(b.Z, {
     className: Z.body,
     direction: b.Z.Direction.VERTICAL,
     children: [(0, i.jsx)(u.$i$, {
@@ -398,8 +398,8 @@ function T(e) {
       direction: b.Z.Direction.VERTICAL,
       children: [l.enabled ? (0, i.jsx)(u.P3F, {
         className: Z.expandableHeader,
-        "aria-expanded": T && !k,
-        onClick: I,
+        "aria-expanded": I && !k,
+        onClick: T,
         children: $
       }) : $, J]
     })

@@ -12,7 +12,7 @@ var Chunk688619 = require("./688619.js"),
   Chunk660662 = require("./660662.js");
 
 function s(e) {
-  let t = i()(e),
+  let t = i()(e).alpha(1),
     n = t.get("hsl.l");
   return {
     main: e,

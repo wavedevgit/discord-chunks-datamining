@@ -81,7 +81,7 @@ function w(e) {
   }, [l]);
   switch (a) {
     case p.Kw.CHANNEL:
-      return (0, i.jsx)(T, {
+      return (0, i.jsx)(I, {
         guild: t,
         id: l,
         isLocked: o,
@@ -89,7 +89,7 @@ function w(e) {
         openEntryContextMenu: m
       });
     case p.Kw.ROLE:
-      return (0, i.jsx)(I, {
+      return (0, i.jsx)(T, {
         guild: t,
         id: l,
         isLocked: o,
@@ -107,7 +107,7 @@ function w(e) {
   }
 }
 
-function T(e) {
+function I(e) {
   let {
     guild: t,
     id: n,
@@ -157,7 +157,7 @@ function T(e) {
   })
 }
 
-function I(e) {
+function T(e) {
   var t;
   let {
     guild: l,

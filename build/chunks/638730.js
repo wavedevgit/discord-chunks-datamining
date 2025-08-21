@@ -1,4 +1,4 @@
-/** Chunk was on 65819 **/
+/** Chunk was on 69634 **/
 /** chunk id: 638730, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   T: () => a,
@@ -11,10 +11,10 @@ let i = e => e,
     let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [],
       l = arguments.length > 3 ? arguments[3] : true,
       a = o(i, t, n, l),
-      s = r.useRef(e);
+      u = r.useRef(e);
     return r.useEffect(() => {
-      s.current = a(e)
-    }, [e, a]), 0 === t ? e : s.current
+      u.current = a(e)
+    }, [e, a]), 0 === t ? e : u.current
   },
   o = function(e, t) {
     let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [],

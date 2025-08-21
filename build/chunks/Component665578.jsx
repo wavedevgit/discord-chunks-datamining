@@ -1,7 +1,7 @@
 /** Chunk was on 47463 **/
 /** chunk id: 665578, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => I
+  Z: () => T
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -48,7 +48,7 @@ function w(e) {
   return e
 }
 
-function T(e, t) {
+function I(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -61,13 +61,13 @@ function T(e, t) {
   }), e
 }
 
-function I(e) {
+function T(e) {
   let {
     applicationId: t,
     commandId: l,
     guildId: j,
     inModal: v,
-    editedTargetPermissions: I,
+    editedTargetPermissions: T,
     originalApplicationPermissions: k,
     originalCommandPermissions: A,
     selectedPermissionCount: D
@@ -85,9 +85,9 @@ function I(e) {
   }, [j, R, k, A]), B = null != l ? l : t, [W, U] = r.useMemo(() => {
     let e = {},
       t = {};
-    for (let [n, i] of Object.entries(I)) i.type === d.Kw.CHANNEL ? e[n] = i : t[n] = i;
+    for (let [n, i] of Object.entries(T)) i.type === d.Kw.CHANNEL ? e[n] = i : t[n] = i;
     return [e, t]
-  }, [I]), H = r.useCallback(e => {
+  }, [T]), H = r.useCallback(e => {
     let t = g.Z.getGuild(j),
       n = m.ZP.getSelfMember(j);
     return null != t && null != n && (null != l ? (0, u.Ft)({
@@ -106,7 +106,7 @@ function I(e) {
   }, [j, R, l, k]), G = r.useCallback((e, t) => {
     let n, i = null;
     if (0 !== t.length) {
-      let e = I[t[0]];
+      let e = T[t[0]];
       if (e.type === d.Kw.USER) n = O.s.REMOVE_SELF;
       else {
         let t = e.id;
@@ -124,16 +124,16 @@ function I(e) {
         i = null != e ? e.name : "role"
       }
     }(0, O._)(n, i)
-  }, [j, I]), z = r.useCallback((e, n) => {
+  }, [j, T]), z = r.useCallback((e, n) => {
     let i = {};
-    for (let [e, t] of Object.entries(I)) i[e] = {
+    for (let [e, t] of Object.entries(T)) i[e] = {
       id: t.id,
       permission: t.permission,
       type: t.type
     };
     if (i = Object.assign(i, e), n.length > 0 && (i = a().omit(i, n)), !H(i)) return void G(e, n);
     h.W4(t, B, i)
-  }, [t, I, B, H, G]), F = r.useCallback(() => {
+  }, [t, T, B, H, G]), F = r.useCallback(() => {
     let e = Object.keys(W);
     return (0, c.ZDy)(async () => {
       let {
@@ -171,7 +171,7 @@ function I(e) {
     let {
       default: e
     } = await n.e("21897").then(n.bind(n, 303313)), t = R.defaultMemberPermissions;
-    return o.fS(t, u.BO) && (t = C.Plq.ADMINISTRATOR), n => (0, i.jsx)(e, T(w({}, n), {
+    return o.fS(t, u.BO) && (t = C.Plq.ADMINISTRATOR), n => (0, i.jsx)(e, I(w({}, n), {
       defaultMemberPermissions: t
     }))
   }), [R]), q = D - N._n, Y = q >= 0, $ = [{
@@ -215,7 +215,7 @@ function I(e) {
           tooltipClassName: S.tooltip,
           text: n,
           shouldShow: null != n,
-          children: t => (0, i.jsx)(c.zxk, T(w({}, t), {
+          children: t => (0, i.jsx)(c.zxk, I(w({}, t), {
             variant: "secondary",
             disabled: Y || !M,
             onClick: e.buttonClick,
@@ -243,8 +243,8 @@ function I(e) {
 
 function P(e) {
   let t = (0, j.w)(e);
-  return T(w({}, t), {
-    results: t.results.map(e => T(w({}, e), {
+  return I(w({}, t), {
+    results: t.results.map(e => I(w({}, e), {
       type: d.Kw.CHANNEL
     }))
   })
@@ -252,10 +252,10 @@ function P(e) {
 
 function E(e) {
   let t = (0, v.U)(e);
-  return T(w({}, t), {
-    results: t.results.roles.map(e => T(w({}, e), {
+  return I(w({}, t), {
+    results: t.results.roles.map(e => I(w({}, e), {
       type: d.Kw.ROLE
-    })).concat(t.results.members.map(e => T(w({}, e), {
+    })).concat(t.results.members.map(e => I(w({}, e), {
       type: d.Kw.USER
     })))
   })
