@@ -70,11 +70,11 @@ function y(e) {
   var t, a, l, p, y, C, N;
   let {
     subscription: O,
-    onUpdated: T
-  } = e, [E, S] = r.useState(false), [P, w] = r.useState(false), [I, R] = r.useState(false), [k, Z] = r.useState(false), [A, D] = r.useState(null), L = e => (null == e && (e = O.status), e in j) ? j[e] : "Unknown status ".concat(e), M = e => {
+    onUpdated: E
+  } = e, [T, S] = r.useState(false), [P, w] = r.useState(false), [I, k] = r.useState(false), [R, Z] = r.useState(false), [A, D] = r.useState(null), L = e => (null == e && (e = O.status), e in j) ? j[e] : "Unknown status ".concat(e), M = e => {
     let t = new Date(e);
     return u.default.fromTimestamp(t.getTime())
-  }, z = async e => {
+  }, F = async e => {
     let {
       status: t = O.status,
       premiumStreakStart: a,
@@ -107,8 +107,8 @@ function y(e) {
       url: "/debug/subscriptions/".concat(O.id),
       body: r,
       rejectWithError: false
-    }), T()
-  }, F = async () => {
+    }), E()
+  }, U = async () => {
     try {
       await s.tn.post({
         url: "/debug/subscriptions/".concat(O.id, "/transition"),
@@ -123,10 +123,10 @@ function y(e) {
     } catch (e) {
       D(e.body.message)
     }
-    T()
-  }, B = (null == (t = v.GP[O.planIdFromItems]) ? true : t.premiumType) === v.p9.TIER_0, U = null == (a = O.metadata) ? true : a.ended_at, G = null != U ? new Date(U).toISOString().substring(0, 10) : "", V = O.hasActiveTrial, H = (null == (l = O.metadata) ? true : l.active_discount_id) != null;
+    E()
+  }, z = (null == (t = v.GP[O.planIdFromItems]) ? true : t.premiumType) === v.p9.TIER_0, B = null == (a = O.metadata) ? true : a.ended_at, G = null != B ? new Date(B).toISOString().substring(0, 10) : "", V = O.hasActiveTrial, H = (null == (l = O.metadata) ? true : l.active_discount_id) != null;
   return (0, n.jsxs)("div", {
-    className: i()(b.card, B ? b.gradientWrapperTier0 : b.gradientWrapperTier2),
+    className: i()(b.card, z ? b.gradientWrapperTier0 : b.gradientWrapperTier2),
     children: [V && (0, n.jsx)(o.P3F, {
       className: f.badge,
       children: (0, n.jsx)(o.Text, {
@@ -171,7 +171,7 @@ function y(e) {
       className: f.collapsablePane,
       children: [(0, n.jsxs)(o.P3F, {
         onClick: () => {
-          R(!I)
+          k(!I)
         },
         className: f.collapsablePaneHeader,
         children: [(0, n.jsx)("div", {
@@ -206,7 +206,7 @@ function y(e) {
       className: f.collapsablePane,
       children: [(0, n.jsxs)(o.P3F, {
         onClick: () => {
-          Z(!k)
+          Z(!R)
         },
         className: f.collapsablePaneHeader,
         children: [(0, n.jsx)("div", {
@@ -215,9 +215,9 @@ function y(e) {
             children: "Active Discount Info"
           })
         }), (0, n.jsx)(c.Z, {
-          direction: k ? c.Z.Directions.UP : c.Z.Directions.DOWN
+          direction: R ? c.Z.Directions.UP : c.Z.Directions.DOWN
         })]
-      }), k && (0, n.jsxs)("ul", {
+      }), R && (0, n.jsxs)("ul", {
         className: f.collapsiblePaneList,
         children: [(0, n.jsxs)("li", {
           children: [(0, n.jsx)(o.Text, {
@@ -241,7 +241,7 @@ function y(e) {
       className: f.collapsablePane,
       children: [(0, n.jsxs)(o.P3F, {
         onClick: () => {
-          S(!E)
+          S(!T)
         },
         className: f.collapsablePaneHeader,
         children: [(0, n.jsx)("div", {
@@ -250,9 +250,9 @@ function y(e) {
             children: "Metadata"
           })
         }), (0, n.jsx)(c.Z, {
-          direction: E ? c.Z.Directions.UP : c.Z.Directions.DOWN
+          direction: T ? c.Z.Directions.UP : c.Z.Directions.DOWN
         })]
-      }), E && (0, n.jsx)("ul", {
+      }), T && (0, n.jsx)("ul", {
         className: f.collapsiblePaneList,
         children: Object.entries(O.metadata).map(e => {
           let [t, a] = e;
@@ -291,7 +291,7 @@ function y(e) {
             serialize: e => L(e),
             isSelected: e => e === O.status,
             options: _,
-            select: e => z({
+            select: e => F({
               status: e
             }),
             popoutLayerContext: m.O$
@@ -304,7 +304,7 @@ function y(e) {
             variant: "primary",
             size: "sm",
             text: "Renew Subscription",
-            onClick: e => F()
+            onClick: e => U()
           }), null !== A && (0, n.jsx)(o.kzN, {
             className: f.error,
             onDismiss: () => D(null),
@@ -317,7 +317,7 @@ function y(e) {
           children: [(0, n.jsx)("input", {
             type: "date",
             value: null == (N = O.premiumSince) ? true : N.toISOString().substring(0, 10),
-            onChange: e => z({
+            onChange: e => F({
               premiumStreakStart: e.target.value
             }),
             style: {
@@ -331,7 +331,7 @@ function y(e) {
           children: (0, n.jsx)("input", {
             type: "date",
             value: G,
-            onChange: e => z({
+            onChange: e => F({
               endedAt: e.target.value
             })
           })

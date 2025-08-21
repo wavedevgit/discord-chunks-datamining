@@ -79,7 +79,7 @@ function W(e, t) {
 }
 let K = {
     [Chunk981631.Odu.CLICK_ZONE_DEBUG]: e => W(H({
-      type: F.Odu.CLICK_ZONE_DEBUG,
+      type: U.Odu.CLICK_ZONE_DEBUG,
       id: (0, c.Z)(),
       layoutId: e,
       anchor: {
@@ -90,11 +90,11 @@ let K = {
         width: 100,
         height: 100
       }
-    }, E.Z.getWidgetDefaultSettings(F.Odu.CLICK_ZONE_DEBUG)), {
+    }, T.Z.getWidgetDefaultSettings(U.Odu.CLICK_ZONE_DEBUG)), {
       pinned: true
     }),
     [Chunk981631.Odu.PERFORMANCE_DEBUG]: e => W(H({
-      type: F.Odu.PERFORMANCE_DEBUG,
+      type: U.Odu.PERFORMANCE_DEBUG,
       id: (0, c.Z)(),
       layoutId: e,
       anchor: {
@@ -106,7 +106,7 @@ let K = {
         width: "auto",
         height: "auto"
       }
-    }, E.Z.getWidgetDefaultSettings(F.Odu.PERFORMANCE_DEBUG)), {
+    }, T.Z.getWidgetDefaultSettings(U.Odu.PERFORMANCE_DEBUG)), {
       pinned: true
     })
   },
@@ -131,7 +131,7 @@ function Y(e) {
       (0, w.JG)(t, () => l(true))
     },
     className: G.copyId,
-    children: ["Application Id: ", t, " ", a ? U.intl.string(U.t["t5VZ8/"]) : null]
+    children: ["Application Id: ", t, " ", a ? B.intl.string(B.t["t5VZ8/"]) : null]
   })
 }
 let J = Chunk647438.memo(function(e) {
@@ -300,13 +300,13 @@ let J = Chunk647438.memo(function(e) {
   });
 
 function $(e) {
-  let t, a = (t = Object.values((0, d.Wu)([E.Z], () => E.Z.getWidgetsForLayout(B.$S))), t.find(t => t.type === e));
+  let t, a = (t = Object.values((0, d.Wu)([T.Z], () => T.Z.getWidgetsForLayout(z.$S))), t.find(t => t.type === e));
   return [a, () => {
     if (null != a)(0, x.E9)(a.id);
     else {
       let t = K[e];
       if (null == t) return;
-      let a = t(B.$S);
+      let a = t(z.$S);
       (0, x.A4)(a)
     }
   }]
@@ -975,10 +975,10 @@ function eb() {
       if (a(e)) returntrue
     }
     returnfalse
-  }), [module, Chunk755721, exports]), [j, g] = Chunk647438.useState(Chunk984370), [_, y] = Chunk647438.useState(null), N = Chunk647438.useMemo(() => module.find(e => e.key === _), [module, Chunk371651]), T = Chunk647438.useCallback(e => {
+  }), [module, Chunk755721, exports]), [j, g] = Chunk647438.useState(Chunk984370), [_, y] = Chunk647438.useState(null), N = Chunk647438.useMemo(() => module.find(e => e.key === _), [module, Chunk371651]), E = Chunk647438.useCallback(e => {
     g(e)
   }, []), {
-    renderSelectedTab: E
+    renderSelectedTab: T
   } = (0, Chunk621060.ZP)({
     tabs: ep
   }, []);
@@ -995,7 +995,7 @@ function eb() {
       clearTimeout(module)
     }
   }, []);
-  let [P, I] = Chunk647438.useState(false), R = Chunk647438.useRef(null), Z = Chunk647438.useCallback(() => {
+  let [P, I] = Chunk647438.useState(false), k = Chunk647438.useRef(null), Z = Chunk647438.useCallback(() => {
     (0, Chunk572004.JG)(JSON.stringify(module)), Chunk55935(true)
   }, [module]);
   return Chunk647438.useEffect(() => {

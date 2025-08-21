@@ -26,16 +26,16 @@ function f() {
   let C = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
     N = Chunk695346.L1.useSetting(),
     O = (0, Chunk442837.e7)([Chunk210887.Z], () => Chunk210887.Z.theme),
-    T = N.backgroundGradientPresetId,
-    E = (0, Chunk442837.e7)([Chunk1870.Z], () => Chunk1870.Z.purchases),
-    S = (0, Chunk884697.Ad)(E),
-    P = (0, Chunk884697.jT)(E),
+    E = N.backgroundGradientPresetId,
+    T = (0, Chunk442837.e7)([Chunk1870.Z], () => Chunk1870.Z.purchases),
+    S = (0, Chunk884697.Ad)(T),
+    P = (0, Chunk884697.jT)(T),
     w = null == C || null == (e = C.avatarDecoration) ? true : module.skuId,
     I = null == C || null == (a = C.collectibles) || null == (t = require.nameplate) ? true : exports.skuId,
-    R = null != w && null != (j = S.find(e => e.skuId === w)) ? j : null,
-    k = null != I && null != (g = P.find(e => e.skuId === I)) ? g : null,
-    Z = (0, Chunk442837.e7)([Chunk597688.Z], () => Chunk597688.Z.getProduct(null == R ? true : R.skuId)),
-    A = (0, Chunk442837.e7)([Chunk597688.Z], () => Chunk597688.Z.getProduct(null == k ? true : k.skuId)),
+    k = null != w && null != (j = S.find(e => e.skuId === w)) ? j : null,
+    R = null != I && null != (g = P.find(e => e.skuId === I)) ? g : null,
+    Z = (0, Chunk442837.e7)([Chunk597688.Z], () => Chunk597688.Z.getProduct(null == k ? true : k.skuId)),
+    A = (0, Chunk442837.e7)([Chunk597688.Z], () => Chunk597688.Z.getProduct(null == R ? true : R.skuId)),
     D = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.fontSize),
     L = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.messageGroupSpacing),
     M = Chunk695346.YC.useSetting();
@@ -73,7 +73,7 @@ function f() {
         children: ["Theme: ", O]
       }), (0, Chunk951288.jsxs)(Chunk481060.Text, {
         variant: "text-md/normal",
-        children: ["Client Theme ID:", " ", null != T ? null == (f = Chunk469115.qt[T]) ? true : f.getName() : "None"]
+        children: ["Client Theme ID:", " ", null != E ? null == (f = Chunk469115.qt[E]) ? true : f.getName() : "None"]
       }), (0, Chunk951288.jsxs)(Chunk481060.Text, {
         variant: "text-md/normal",
         children: ["Avatar Decoration: ", null != (_ = null == Z ? true : Z.name) ? _ : "None"]

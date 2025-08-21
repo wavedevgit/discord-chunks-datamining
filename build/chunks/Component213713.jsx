@@ -32,7 +32,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk206583 = require("./206583.js"),
   Chunk680027 = require("./680027.js"),
   Chunk451429 = require("./451429.js");
-let R = [{
+let k = [{
   key: "type",
   cellClassName: i()(Chunk680027.cell, Chunk680027.cellType),
   render(e) {
@@ -65,13 +65,13 @@ let R = [{
     let {
       type: t
     } = e;
-    return (0, n.jsx)(k, {
+    return (0, n.jsx)(R, {
       type: t
     })
   }
 }];
 
-function k(e) {
+function R(e) {
   var t, a;
   let {
     type: r
@@ -112,11 +112,11 @@ function Z() {
       var e;
       return (null == (e = Chunk146282.Z.getFeedState(Chunk206583.YN.GLOBAL_FEED)) ? true : module.loading) === true
     }),
-    [k, Z] = Chunk647438.useState(""),
+    [R, Z] = Chunk647438.useState(""),
     D = (0, Chunk442837.e7)([Chunk77498.Z, Chunk812206.Z], () => {
       var e, t, a;
-      return parseInt(k) > 0 ? k : null != (a = null == (e = Chunk77498.Z.getGameByName(k)) ? true : module.id) ? require : null == (t = Chunk812206.Z.getApplicationByName(k)) ? true : exports.id
-    }, [k]),
+      return parseInt(R) > 0 ? R : null != (a = null == (e = Chunk77498.Z.getGameByName(R)) ? true : module.id) ? require : null == (t = Chunk812206.Z.getApplicationByName(R)) ? true : exports.id
+    }, [R]),
     L = (0, Chunk168524.Z)({
       applicationId: D,
       location: "DevToolsContentInventory",
@@ -129,8 +129,8 @@ function Z() {
       let [t] = e;
       return t
     }),
-    z = (0, Chunk835473.Z)(M).filter(Chunk823379.lm),
-    F = (0, Chunk442837.e7)([Chunk550532.Z], () => Chunk550532.Z.getFakeGameToShow());
+    F = (0, Chunk835473.Z)(M).filter(Chunk823379.lm),
+    U = (0, Chunk442837.e7)([Chunk550532.Z], () => Chunk550532.Z.getFakeGameToShow());
   return (0, Chunk951288.jsx)("div", {
     className: Chunk451429.panel,
     children: (0, Chunk951288.jsxs)(Chunk481060.zJl, {
@@ -139,7 +139,7 @@ function Z() {
         children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
           children: "Inventory"
         }), Chunk392711.length > 0 && (0, Chunk951288.jsx)(Chunk681619.Z, {
-          columns: R,
+          columns: k,
           data: Chunk392711
         }), (0, Chunk951288.jsx)(Chunk481060.LZC, {
           size: 8
@@ -209,12 +209,12 @@ function Z() {
           placeholder: "App ID or full name",
           onChange: e => (0 === e.length || e.length >= 18) && Z(e),
           onKeyDown: e => {
-            "Enter" === e.key && (k === e.currentTarget.value ? null == L || L(e) : Z(e.currentTarget.value))
+            "Enter" === e.key && (R === e.currentTarget.value ? null == L || L(e) : Z(e.currentTarget.value))
           },
-          error: k.length > 0 && null == L ? "No game profile for ".concat(null != D ? D : k + " - try by id", ".") : true,
+          error: R.length > 0 && null == L ? "No game profile for ".concat(null != D ? D : R + " - try by id", ".") : true,
           successMessage: null != L ? "Game profile found" : true
         }), (0, Chunk951288.jsx)("ul", {
-          children: z.map(e => (0, n.jsx)("li", {
+          children: F.map(e => (0, n.jsx)("li", {
             children: (0, n.jsx)(A, {
               application: e
             })
@@ -231,7 +231,7 @@ function Z() {
             label: e,
             value: e
           })),
-          isSelected: e => e === F,
+          isSelected: e => e === U,
           select: function(e) {
             h.Z.dispatch({
               type: "CONTENT_INVENTORY_FORCE_SHOW_GAME_SHARING",

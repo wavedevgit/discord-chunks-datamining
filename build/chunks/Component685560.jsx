@@ -27,7 +27,7 @@ let y = [Chunk704215.z.GUILD_POWERUP_PERKS_COACHMARK, Chunk704215.z.GUILD_POWERU
   N = [Chunk704215.C.ADOPT_CLAN_IDENTITY_NOTICE],
   O = [Chunk704215.z.VANITY_URL_POWERUP_ROLLBACK_NOTIFICATION, Chunk704215.z.VANITY_URL_POWERUP_ROLLBACK_MODAL, Chunk704215.z.VANITY_URL_POWERUP_EDUCATIONAL_POPOVER];
 
-function T(e) {
+function E(e) {
   switch (e) {
     case o.C.GUILD_POWERUP_LEVEL_1_COACHMARK:
       return "GUILD_POWERUP_LEVEL_1_COACHMARK";
@@ -43,7 +43,7 @@ function T(e) {
       return "ADOPT_CLAN_IDENTITY_NOTICE"
   }
 }
-async function E(e, t, a) {
+async function T(e, t, a) {
   await Promise.all(t.map(e => s.tn.patch({
     url: g.ANM.APPLIED_BOOST_MODIFY_END_DATE(e.id),
     body: a ? {} : {
@@ -117,13 +117,13 @@ function P() {
           variant: "primary",
           text: "Set Half Boosts expiring in 1 day",
           onClick: () => {
-            E(exports, Chunk544891.slice(Math.floor(Chunk544891.length / 2)), false)
+            T(exports, Chunk544891.slice(Math.floor(Chunk544891.length / 2)), false)
           }
         }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Reset End Date",
           onClick: () => {
-            E(exports, Chunk544891, true)
+            T(exports, Chunk544891, true)
           }
         })]
       })]
@@ -153,7 +153,7 @@ function P() {
         value: r.includes(e),
         children: (0, n.jsx)(c.Text, {
           variant: "text-sm/normal",
-          children: T(e)
+          children: E(e)
         })
       }, e))]
     }), (0, Chunk951288.jsxs)("div", {
@@ -169,7 +169,7 @@ function P() {
         value: r.includes(e),
         children: (0, n.jsx)(c.Text, {
           variant: "text-sm/normal",
-          children: T(e)
+          children: E(e)
         })
       }, e))]
     }), (0, Chunk951288.jsxs)("div", {

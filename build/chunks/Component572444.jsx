@@ -101,14 +101,14 @@ function g(e) {
 function _() {
   let {
     name: e
-  } = (0, Chunk72897.p6)(Chunk65154.h7.AUDIO_INPUT), [t, a] = Chunk647438.useState(false), [l, i] = Chunk647438.useState([]), j = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getKrispSuppressionLevel()), [_, y] = Chunk647438.useState(null), C = Chunk647438.useRef(null), N = Chunk647438.useRef(null), [O, T] = Chunk647438.useState(.5), {
-    krispModels: E,
+  } = (0, Chunk72897.p6)(Chunk65154.h7.AUDIO_INPUT), [t, a] = Chunk647438.useState(false), [l, i] = Chunk647438.useState([]), j = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getKrispSuppressionLevel()), [_, y] = Chunk647438.useState(null), C = Chunk647438.useRef(null), N = Chunk647438.useRef(null), [O, E] = Chunk647438.useState(.5), {
+    krispModels: T,
     krispModelOverride: S,
     inputMode: P,
     echoCancellation: w,
     autoThreshold: I,
-    vadUseKrisp: R,
-    vadKrispActivationThreshold: k,
+    vadUseKrisp: k,
+    vadKrispActivationThreshold: R,
     noiseCancellation: Z,
     noiseSuppression: A,
     noiseSuppressionSupported: D,
@@ -127,23 +127,23 @@ function _() {
     noiseSuppressionSupported: Chunk131951.Z.isNoiseSuppressionSupported(),
     noiseCancellationSupported: Chunk131951.Z.isNoiseCancellationSupported(),
     noiseCancellationEnableStats: Chunk131951.Z.getKrispEnableStats()
-  })), z = Z ? "KRISP" : A ? "STANDARD" : "NONE", F = (0, Chunk304809.N)(), B = Chunk647438.useCallback(() => {
+  })), F = Z ? "KRISP" : A ? "STANDARD" : "NONE", U = (0, Chunk304809.N)(), z = Chunk647438.useCallback(() => {
     var e;
     null == (e = C.current) || module.stop(), C.current = null, y(null)
   }, []);
 
-  function U() {
+  function B() {
     Chunk131951.Z.getMediaEngine().stopRecordingRawSamples()
   }
 
   function G(e) {
-    if (t && U(), B(), null == F) return;
-    let a = F.createBufferSource();
-    a.buffer = e.audioBuffer, N.current = F.createGain(), N.current.gain.value = O, a.connect(N.current), N.current.connect(F.destination), a.loop = true, a.start(), C.current = a, y(e)
+    if (t && B(), z(), null == U) return;
+    let a = U.createBufferSource();
+    a.buffer = e.audioBuffer, N.current = U.createGain(), N.current.gain.value = O, a.connect(N.current), N.current.connect(U.destination), a.loop = true, a.start(), C.current = a, y(e)
   }
   Chunk647438.useEffect(() => {
-    B()
-  }, [B]);
+    z()
+  }, [z]);
   let V = [];
   return L && V.push({
     label: "Krisp",
@@ -172,14 +172,14 @@ function _() {
         title: "Noise Cancellation",
         tag: Chunk481060.RB0.H3,
         children: (0, Chunk951288.jsx)(Chunk481060.q4e, {
-          value: z,
+          value: F,
           onChange: e => {
             d.Z.setNoiseCancellation("KRISP" === e), d.Z.setNoiseSuppression("STANDARD" === e)
           },
           options: V,
           popoutLayerContext: Chunk246992.O$
         })
-      }), "KRISP" === z && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+      }), "KRISP" === F && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
         children: [(0, Chunk951288.jsx)(Chunk481060.hjN, {
           title: "Krisp Suppression Level",
           tag: Chunk481060.RB0.H3,
@@ -198,7 +198,7 @@ function _() {
               Chunk846027.Z.setKrispModelOverride("")
             },
             isSelected: e => e === S,
-            options: E.map(e => ({
+            options: T.map(e => ({
               label: e,
               value: e
             })),
@@ -235,17 +235,17 @@ function _() {
             tag: Chunk481060.RB0.H3,
             children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
               hideBorder: true,
-              value: R,
+              value: k,
               onChange: e => d.Z.setMode(v.pM.VOICE_ACTIVITY, {
                 vadUseKrisp: e
               }),
               children: "Use Krisp VAD"
             })
-          }), R && (0, Chunk951288.jsx)(Chunk481060.hjN, {
+          }), k && (0, Chunk951288.jsx)(Chunk481060.hjN, {
             title: "Krisp VAD Activation Threshold",
             tag: Chunk481060.RB0.H3,
             children: (0, Chunk951288.jsx)(Chunk481060.iRW, {
-              initialValue: k,
+              initialValue: R,
               onValueChange: e => d.Z.setMode(v.pM.VOICE_ACTIVITY, {
                 vadKrispActivationThreshold: e
               }),
@@ -267,8 +267,8 @@ function _() {
         tag: Chunk481060.RB0.H3,
         children: (0, Chunk951288.jsx)(Chunk755721.zx, {
           color: exports ? Chunk755721.zx.Colors.RED : Chunk755721.zx.Colors.BRAND,
-          onClick: exports ? U : function() {
-            B(), require(true), Chunk846027.Z.setLoopback("krisp_test", true), Chunk131951.Z.getMediaEngine().startRecordingRawSamples((t, n, r) => {
+          onClick: exports ? B : function() {
+            z(), require(true), Chunk846027.Z.setLoopback("krisp_test", true), Chunk131951.Z.getMediaEngine().startRecordingRawSamples((t, n, r) => {
               a(false), d.Z.setLoopback("krisp_test", false);
               let l = new AudioBuffer({
                 length: t.length,
@@ -284,7 +284,7 @@ function _() {
                 inputName: e,
                 audioBuffer: l,
                 createdAt: Date.now(),
-                suppression: z,
+                suppression: F,
                 echoCancellation: w,
                 krispSuppressionLevel: j
               }])
@@ -298,7 +298,7 @@ function _() {
         children: (0, Chunk951288.jsx)(Chunk481060.iRW, {
           initialValue: O,
           asValueChanges: function(e) {
-            null != N.current && (N.current.gain.value = e, T(e))
+            null != N.current && (N.current.gain.value = e, E(e))
           },
           minValue: 0,
           maxValue: 1
@@ -310,7 +310,7 @@ function _() {
           recording: e,
           playing: e === _,
           onPlay: G,
-          onStop: B
+          onStop: z
         }, t))
       })]
     })

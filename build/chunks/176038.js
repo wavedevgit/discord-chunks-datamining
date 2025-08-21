@@ -1,10 +1,10 @@
 /** Chunk was on 93886 **/
 /** chunk id: 176038, original params: e,t,a (module,exports,require) **/
 require.d(exports, {
-  _Y: () => T,
+  _Y: () => E,
   aB: () => N,
   th: () => O,
-  ub: () => E
+  ub: () => T
 }), require("./388685.js"), require("./457542.js");
 var Chunk647438 = require("./647438.js"),
   Chunk524437 = require("./524437.js"),
@@ -81,7 +81,7 @@ async function O() {
   } catch (e) {}
 }
 
-function T() {
+function E() {
   try {
     let e = C(Chunk981631.yqN.FONT_SIZES);
     (0, Chunk857595.oL)(module);
@@ -92,7 +92,7 @@ function T() {
   } catch (e) {}
 }
 
-function E() {
+function T() {
   Chunk647438.useEffect(() => {
     var e, t, a, n, r;
     let b = Chunk594174.default.getCurrentUser(),
@@ -104,8 +104,8 @@ function E() {
       C = Chunk981631.backgroundGradientPresetId,
       N = null == Chunk74538 || null == (e = Chunk74538.avatarDecoration) ? true : module.skuId,
       O = null == Chunk74538 || null == (a = Chunk74538.collectibles) || null == (t = require.nameplate) ? true : exports.skuId,
-      T = null != N && null != (n = Chunk959517.find(e => e.skuId === N)) ? Chunk647438 : null,
-      E = null != O && null != (r = _.find(e => e.skuId === O)) ? Chunk524437 : null,
+      E = null != N && null != (n = Chunk959517.find(e => e.skuId === N)) ? Chunk647438 : null,
+      T = null != O && null != (r = _.find(e => e.skuId === O)) ? Chunk524437 : null,
       S = Chunk607070.Z.fontSize,
       P = Chunk607070.Z.messageGroupSpacing,
       w = Chunk695346.YC.getSetting();
@@ -115,7 +115,7 @@ function E() {
           theme: y,
           backgroundGradientPresetId: null != C ? C : true,
           customUserThemeSettings: true
-        }, Chunk675478.fy.INFREQUENT_USER_ACTION), (0, Chunk809206.cV)(T), (0, Chunk809206.Rx)(E);
+        }, Chunk675478.fy.INFREQUENT_USER_ACTION), (0, Chunk809206.cV)(E), (0, Chunk809206.Rx)(T);
         let e = Chunk25990.Z.getAllPending(),
           t = (0, Chunk164946.ED)(module);
         (0, Chunk809206.Mn)(exports).finally(Chunk809206.si), (0, Chunk857595.oL)(S), (0, Chunk857595.ZZ)(P), Chunk695346.YC.updateSetting(w)
