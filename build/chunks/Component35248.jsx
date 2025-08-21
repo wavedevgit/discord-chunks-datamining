@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
 let O = 1e3;
 
 function v(e, t, n, r, i) {
-  let s = g.ANM.BILLING_STANDALONE_CHECKOUT_PAGE(e, t, n, i),
+  let s = g.Z5c.BILLING_STANDALONE_CHECKOUT_PAGE(e, t, n, i),
     l = new URL(f.Z.makeUrl(g.Z5c.BILLING_LOGIN_HANDOFF)),
     c = (0, a.Z)();
   return l.searchParams.append("handoff_key", c), l.searchParams.append("redirect_to", s), o.tn.post({

@@ -740,6 +740,7 @@ let ek = e => {
           })]
         }), null != N && (0, r.jsx)(r.Fragment, {
           children: (0, r.jsxs)(b.mzw, {
+            "data-migration-pending": true,
             className: eI.modalFooter,
             children: [(0, r.jsx)("img", {
               src: "https://cdn.discordapp.com/assets/content/af456efec518d9c43ad1407844e1a8a6c60bf3bd7dc69691437801afd591d0b4.jpeg",
