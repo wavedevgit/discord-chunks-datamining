@@ -47,7 +47,9 @@ class u extends Chunk147913.Z {
   handleGuildDelete(e) {
     let {
       guild: t
-    } = e, n = l.Z.getAllThreadsForGuild(t.id);
+    } = e;
+    if (t.unavailable) return;
+    let n = l.Z.getAllThreadsForGuild(t.id);
     0 !== n.length && r.ZP.Emitter.batched(() => {
       for (let e of n) i.Z.dispatch({
         type: "THREAD_DELETE",
