@@ -1,4 +1,4 @@
-/** Chunk was on 45410 **/
+/** Chunk was on 54844 **/
 /** chunk id: 238122, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -17,14 +17,14 @@ let u = e => {
       data: {
         title: u,
         subtitle: m,
-        placeholder: _,
-        rows: p,
+        placeholder: p,
+        rows: g,
         character_limit: x,
-        pattern: g
+        pattern: h
       },
-      onChange: f,
-      initialText: b,
-      isRequired: h
+      onChange: b,
+      initialText: _,
+      isRequired: f
     } = e, v = i.useRef(a.Z.reactParserFor((t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -43,7 +43,7 @@ let u = e => {
       }
       return e
     }({}, a.Z.defaultRules), n = n = {
-      link: o.s
+      link: s.s
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -53,39 +53,39 @@ let u = e => {
       return n
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-    }), t))), [j, y] = i.useState(""), [O, C] = i.useState(null);
+    }), t))), [j, y] = i.useState(""), [O, Z] = i.useState(null);
     i.useEffect(() => {
       var e;
-      y(null != (e = null == b ? true : b.value) ? e : "")
-    }, [b]);
-    let Z = i.useCallback(e => {
-      let t = null != g ? new RegExp(g) : null;
-      null == t || t.test(e) ? null != e && (C(null), y(e), f({
+      y(null != (e = null == _ ? true : _.value) ? e : "")
+    }, [_]);
+    let I = i.useCallback(e => {
+      let t = null != h ? new RegExp(h) : null;
+      null == t || t.test(e) ? null != e && (Z(null), y(e), b({
         value: e,
         isValid: true
-      })) : (C(s.intl.string(s.t["24xrGR"])), f({
+      })) : (Z(o.intl.string(o.t["24xrGR"])), b({
         value: e,
         isValid: false
       }))
-    }, [f, g]);
+    }, [b, h]);
     return (0, r.jsxs)("div", {
       className: d.marginBottom8,
       children: [null != u && (0, r.jsx)("div", {
         className: d.marginBottom8,
         children: (0, r.jsxs)(l.Text, {
           variant: "text-sm/bold",
-          children: [u, h && (0, r.jsx)("span", {
+          children: [u, f && (0, r.jsx)("span", {
             className: c.required,
             children: "*"
           })]
         })
       }), (0, r.jsx)(l.Kx8, {
         maxLength: x,
-        onChange: Z,
+        onChange: I,
         value: j,
         error: O,
-        rows: p,
-        placeholder: _,
+        rows: g,
+        placeholder: p,
         autoFocus: true
       }), null != m && (0, r.jsx)("div", {
         children: (0, r.jsx)(l.Text, {

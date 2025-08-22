@@ -1,7 +1,7 @@
-/** Chunk was on 45410 **/
+/** Chunk was on 54844 **/
 /** chunk id: 157759, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => b
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,16 +17,16 @@ var Chunk951288 = require("./951288.js"),
   Chunk944486 = require("./944486.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let f = e => {
+let b = e => {
   let {
     application: t,
     reportId: n
-  } = e, [f, b] = i.useState(false), [h, v] = i.useState(false), j = (0, l.e7)([p.Z, u.Z], () => {
+  } = e, [b, _] = i.useState(false), [f, v] = i.useState(false), j = (0, l.e7)([g.Z, u.Z], () => {
     var e;
-    return null == (e = u.Z.getChannel(p.Z.getChannelId())) ? true : e.guild_id
+    return null == (e = u.Z.getChannel(g.Z.getChannelId())) ? true : e.guild_id
   }), [y, O] = i.useState(null);
   i.useEffect(() => {
-    null != y && (b(true), v(true))
+    null != y && (_(true), v(true))
   }, [y]), i.useEffect(() => {
     if (null == j) return;
     let e = false;
@@ -45,31 +45,31 @@ let f = e => {
       e = true
     }
   }, [j, t.id]);
-  let C = i.useCallback(() => {
-      v(false), o.ZP.trackWithMetadata(x.rMx.IAR_REMOVE_APP_BUTTON_CLICKED, {
+  let Z = i.useCallback(() => {
+      v(false), s.ZP.trackWithMetadata(x.rMx.IAR_REMOVE_APP_BUTTON_CLICKED, {
         guild_id: j,
         application_id: t.id,
         report_id: n
-      }), null != j && null != y && s.Z.disableIntegration(j, y.id).catch(() => {
+      }), null != j && null != y && o.Z.disableIntegration(j, y.id).catch(() => {
         a.Z.show({
-          title: g.intl.string(g.t.wYqMmJ),
-          body: g.intl.string(g.t.A4Mnsr)
+          title: h.intl.string(h.t.wYqMmJ),
+          body: h.intl.string(h.t.A4Mnsr)
         })
       })
     }, [t.id, j, y, n]),
-    Z = (0, l.e7)([_.Z, m.Z], () => {
+    I = (0, l.e7)([p.Z, m.Z], () => {
       let e = m.Z.getGuild(j);
       if (null == e) returnfalse;
-      let n = _.Z.can(x.Plq.MANAGE_GUILD, e),
-        r = null == t.bot || _.Z.canManageUser(x.Plq.MANAGE_GUILD, t.bot.id, e);
+      let n = p.Z.can(x.Plq.MANAGE_GUILD, e),
+        r = null == t.bot || p.Z.canManageUser(x.Plq.MANAGE_GUILD, t.bot.id, e);
       return n && r
     });
-  return null != t && null != j && f && Z ? (0, r.jsx)(d.JZ, {
-    title: g.intl.string(g.t["WV/CsL"]),
-    description: g.intl.string(g.t["FlcC+/"]),
-    buttonText: h ? g.intl.string(g.t.aCJlq6) : g.intl.string(g.t["6I1F3t"]),
-    buttonDisabled: !h,
-    onButtonPress: C,
-    buttonVariant: h ? "critical-primary" : "secondary"
+  return null != t && null != j && b && I ? (0, r.jsx)(d.JZ, {
+    title: h.intl.string(h.t["WV/CsL"]),
+    description: h.intl.string(h.t["FlcC+/"]),
+    buttonText: f ? h.intl.string(h.t.aCJlq6) : h.intl.string(h.t["6I1F3t"]),
+    buttonDisabled: !f,
+    onButtonPress: Z,
+    buttonVariant: f ? "critical-primary" : "secondary"
   }) : null
 }

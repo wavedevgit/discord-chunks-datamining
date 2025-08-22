@@ -1,4 +1,4 @@
-/** Chunk was on 27069 **/
+/** Chunk was on 21585 **/
 /** chunk id: 272289, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -19,13 +19,13 @@ function u(e) {
     var r, n, i = function(e, t) {
       if (null == e) return {};
       var r, n, i = {},
-        l = Object.keys(e);
-      for (n = 0; n < l.length; n++) r = l[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
+        a = Object.keys(e);
+      for (n = 0; n < a.length; n++) r = a[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
       return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var l = Object.getOwnPropertySymbols(e);
-      for (n = 0; n < l.length; n++) r = l[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
+      var a = Object.getOwnPropertySymbols(e);
+      for (n = 0; n < a.length; n++) r = a[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
     }
     return i
   }(e, ["widgetType"]);
@@ -33,7 +33,7 @@ function u(e) {
     games: u,
     isGameFetching: d,
     onAddGame: f
-  } = (0, c.K)(t), [g] = (0, l.Wu)([a.Z], () => [a.Z.suggestedFetchIsLoading]), b = i.useCallback((e, r, n) => {
+  } = (0, c.K)(t), [g] = (0, a.Wu)([l.Z], () => [l.Z.suggestedFetchIsLoading]), b = i.useCallback((e, r, n) => {
     f(e), (0, o.ES)(t, {
       applicationId: e,
       gameName: r,

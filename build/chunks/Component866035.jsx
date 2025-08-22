@@ -1,4 +1,4 @@
-/** Chunk was on 98360 **/
+/** Chunk was on 82008 **/
 /** chunk id: 866035, original params: e,n,t (module,exports,require) **/
 require.r(exports), require.d(exports, {
   default: () => d
@@ -11,7 +11,7 @@ var Chunk788111 = require("./788111.js"),
   Chunk583816 = require("./583816.jsx"),
   Chunk595145 = require("./595145.jsx");
 
-function s(e) {
+function a(e) {
   for (var n = 1; n < arguments.length; n++) {
     var t = null != arguments[n] ? arguments[n] : {},
       r = Object.keys(t);
@@ -35,23 +35,23 @@ function d(e) {
     hideRestrictedProfile: n
   } = e, t = function(e, n) {
     if (null == e) return {};
-    var t, r, o = function(e, n) {
+    var t, r, l = function(e, n) {
       if (null == e) return {};
-      var t, r, o = {},
-        l = Object.keys(e);
-      for (r = 0; r < l.length; r++) t = l[r], n.indexOf(t) >= 0 || (o[t] = e[t]);
-      return o
+      var t, r, l = {},
+        o = Object.keys(e);
+      for (r = 0; r < o.length; r++) t = o[r], n.indexOf(t) >= 0 || (l[t] = e[t]);
+      return l
     }(e, n);
     if (Object.getOwnPropertySymbols) {
-      var l = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < l.length; r++) t = l[r], !(n.indexOf(t) >= 0) && Object.prototype.propertyIsEnumerable.call(e, t) && (o[t] = e[t])
+      var o = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < o.length; r++) t = o[r], !(n.indexOf(t) >= 0) && Object.prototype.propertyIsEnumerable.call(e, t) && (l[t] = e[t])
     }
-    return o
+    return l
   }(e, ["hideRestrictedProfile"]);
   let {
     user: d
-  } = t, [u, f] = (0, o.Z)(d.id);
-  return u && !n ? (0, r.jsx)(c.Z, s({
+  } = t, [u, f] = (0, l.Z)(d.id);
+  return u && !n ? (0, r.jsx)(c.Z, a({
     onHide: f
-  }, t)) : d.isNonUserBot() ? (0, r.jsx)(i.Z, s({}, t)) : d.bot ? (0, r.jsx)(l.Z, s({}, t)) : (0, r.jsx)(a.Z, s({}, t))
+  }, t)) : d.isNonUserBot() ? (0, r.jsx)(i.Z, a({}, t)) : d.bot ? (0, r.jsx)(o.Z, a({}, t)) : (0, r.jsx)(s.Z, a({}, t))
 }

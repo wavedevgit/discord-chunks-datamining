@@ -1,7 +1,7 @@
-/** Chunk was on 45410 **/
+/** Chunk was on 54844 **/
 /** chunk id: 15682, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => o
+  Z: () => s
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -12,14 +12,14 @@ let a = e => {
       onChange: t,
       label: n,
       subtitle: a,
-      selected: o
+      selected: s
     } = e;
     return (0, r.jsx)("div", {
       className: l.checkboxRow,
       children: (0, r.jsxs)(i.XZJ, {
         type: i.XZJ.Types.INVERTED,
         onChange: () => t(),
-        value: o,
+        value: s,
         children: [(0, r.jsx)(i.Text, {
           color: "interactive-active",
           variant: "text-md/semibold",
@@ -32,7 +32,7 @@ let a = e => {
       })
     })
   },
-  o = e => {
+  s = e => {
     let {
       element: t,
       state: n,
@@ -44,12 +44,12 @@ let a = e => {
     } = t;
     return (0, r.jsx)("div", {
       children: l.map((e, t) => {
-        let [l, o, s] = e;
+        let [l, s, o] = e;
         return (0, r.jsx)(a, {
-          onChange: () => i(l, o),
+          onChange: () => i(l, s),
           selected: l in n,
-          label: o,
-          subtitle: s
+          label: s,
+          subtitle: o
         }, "".concat(t, "+button"))
       })
     })

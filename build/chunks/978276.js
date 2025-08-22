@@ -1,5 +1,5 @@
-/** Chunk was on 98360 **/
-/** chunk id: 978276, original params: e,n,t (module,exports,require) **/
+/** Chunk was on 21585 **/
+/** chunk id: 978276, original params: e,t,r (module,exports,require) **/
 module.exports = {
   container: "container__7a78a",
   sizeSmall: "sizeSmall__7a78a",

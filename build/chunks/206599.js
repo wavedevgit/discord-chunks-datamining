@@ -1,4 +1,4 @@
-/** Chunk was on 27069 **/
+/** Chunk was on 21585 **/
 /** chunk id: 206599, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   J: () => d,
@@ -16,7 +16,7 @@ function u(e) {
   var t, r;
   let {
     bump: i,
-    bumpMultiple: a,
+    bumpMultiple: l,
     gameIds: o
   } = (0, c.b)(), {
     remove: u,
@@ -40,41 +40,41 @@ function u(e) {
       i(t, e)
     }, [i, e]),
     {
-      gameDataMap: O,
-      isGameFetching: m
+      gameDataMap: m,
+      isGameFetching: O
     } = (0, s.F)(b),
     [j, y] = n.useState([]),
-    v = (r = b.map(e => m(e)), n.useMemo(() => r.join("\x1f"), [r]));
+    x = (r = b.map(e => O(e)), n.useMemo(() => r.join("\x1f"), [r]));
   return n.useEffect(() => {
-    let t = b.filter(e => l.Z.noDataAvailable(e));
-    t.length > 0 && a(t, e)
-  }, [O, v, b, e, a]), n.useEffect(() => {
+    let t = b.filter(e => a.Z.noDataAvailable(e));
+    t.length > 0 && l(t, e)
+  }, [m, x, b, e, l]), n.useEffect(() => {
     y(b.map(e => {
-      let t = O[e];
+      let t = m[e];
       return {
         applicationId: e,
         gameName: null == t ? true : t.name,
         imageSrc: null == t ? true : t.coverImageUrl
       }
     }))
-  }, [b, O, e]), {
+  }, [b, m, e]), {
     games: j,
-    isGameFetching: m,
+    isGameFetching: O,
     onAddGame: p
   }
 }
 
 function d(e, t) {
-  let [r, l, s, u] = (0, i.Wu)([o.Z], () => [o.Z.suggestedFetchAttempted, o.Z.suggestedFetchError, o.Z.suggestedGameIds, o.Z.suggestedFetchIsLoading]), {
+  let [r, a, s, u] = (0, i.Wu)([o.Z], () => [o.Z.suggestedFetchAttempted, o.Z.suggestedFetchError, o.Z.suggestedGameIds, o.Z.suggestedFetchIsLoading]), {
     onLoad: d
   } = (0, c.b)();
   n.useEffect(() => {
-    !r && e && a.Z.fetchSuggestedGames()
+    !r && e && l.Z.fetchSuggestedGames()
   }, [r, e]);
   let f = r && !u;
   n.useEffect(() => {
     if (!f) return;
     let e = t.map(e => e.games).flat();
-    d(l ? [] : s.suggestedGamesIds, l ? [] : s.suggestedWishlistGamesIds, e)
+    d(a ? [] : s.suggestedGamesIds, a ? [] : s.suggestedWishlistGamesIds, e)
   }, [f])
 }

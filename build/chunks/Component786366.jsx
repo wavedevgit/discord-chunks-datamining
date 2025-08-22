@@ -1,4 +1,4 @@
-/** Chunk was on 98360 **/
+/** Chunk was on 82008 **/
 /** chunk id: 786366, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -17,7 +17,7 @@ function u(e) {
   let {
     icon: n,
     title: t,
-    description: o
+    description: l
   } = e;
   return (0, r.jsxs)("div", {
     className: d.row,
@@ -36,7 +36,7 @@ function u(e) {
         children: t
       }), (0, r.jsx)(i.Text, {
         variant: "text-sm/normal",
-        children: o
+        children: l
       })]
     })]
   })
@@ -45,9 +45,9 @@ function u(e) {
 function f(e) {
   let {
     user: n
-  } = e, t = (0, l.e7)([a.Z], () => {
+  } = e, t = (0, o.e7)([s.Z], () => {
     var e;
-    return null == (e = a.Z.getUserProfile(n.id)) ? true : e.application
+    return null == (e = s.Z.getUserProfile(n.id)) ? true : e.application
   }), {
     hasMessageContent: f,
     hasGuildPresences: m,
@@ -55,24 +55,24 @@ function f(e) {
   } = (0, c.w)({
     flags: null == t ? true : t.flags
   });
-  return (0, r.jsxs)(o.zJ, {
+  return (0, r.jsxs)(l.zJ, {
     fade: true,
     className: d.scroller,
     children: [f && (0, r.jsx)(u, {
       icon: i.kBi,
-      title: s.intl.string(s.t["7Tmhfn"]),
-      description: s.intl.string(s.t["eu5x7+"])
+      title: a.intl.string(a.t["7Tmhfn"]),
+      description: a.intl.string(a.t["eu5x7+"])
     }), m && (0, r.jsx)(u, {
       icon: i.iWm,
-      title: s.intl.string(s.t.awYSsL),
-      description: s.intl.string(s.t.TpsXoK)
+      title: a.intl.string(a.t.awYSsL),
+      description: a.intl.string(a.t.TpsXoK)
     }), p && (0, r.jsx)(u, {
       icon: i.BFJ,
-      title: s.intl.string(s.t.WuKeSE),
-      description: s.intl.string(s.t.wOBmtb)
+      title: a.intl.string(a.t.WuKeSE),
+      description: a.intl.string(a.t.wOBmtb)
     }), (0, r.jsx)(i.Text, {
       variant: "text-xs/normal",
-      children: s.intl.format(s.t.b6nqk5, {
+      children: a.intl.format(a.t.b6nqk5, {
         helpCenterUrl: "https://support.discord.com/hc/articles/7933951485975"
       })
     })]

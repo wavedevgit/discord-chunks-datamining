@@ -1,7 +1,7 @@
-/** Chunk was on 98360 **/
+/** Chunk was on 82008 **/
 /** chunk id: 30556, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => a
+  Z: () => s
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -10,25 +10,25 @@ var Chunk481060 = require("./481060.js"),
   Chunk475413 = require("./475413.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function a(e) {
+function s(e) {
   var {
     type: n,
     userId: t,
-    onClose: a
-  } = e, s = function(e, n) {
+    onClose: s
+  } = e, a = function(e, n) {
     if (null == e) return {};
-    var t, r, o = function(e, n) {
+    var t, r, l = function(e, n) {
       if (null == e) return {};
-      var t, r, o = {},
-        l = Object.keys(e);
-      for (r = 0; r < l.length; r++) t = l[r], n.indexOf(t) >= 0 || (o[t] = e[t]);
-      return o
+      var t, r, l = {},
+        o = Object.keys(e);
+      for (r = 0; r < o.length; r++) t = o[r], n.indexOf(t) >= 0 || (l[t] = e[t]);
+      return l
     }(e, n);
     if (Object.getOwnPropertySymbols) {
-      var l = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < l.length; r++) t = l[r], !(n.indexOf(t) >= 0) && Object.prototype.propertyIsEnumerable.call(e, t) && (o[t] = e[t])
+      var o = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < o.length; r++) t = o[r], !(n.indexOf(t) >= 0) && Object.prototype.propertyIsEnumerable.call(e, t) && (l[t] = e[t])
     }
-    return o
+    return l
   }(e, ["type", "userId", "onClose"]);
   let d = n === i.j8.TEXT ? i.tG : i.ef;
   return (0, r.jsx)(d, function(e) {
@@ -50,13 +50,13 @@ function a(e) {
     return e
   }({
     action: "SEND_MESSAGE",
-    icon: o.kBi,
+    icon: l.kBi,
     text: c.intl.string(c.t.zROXER),
     tooltipText: c.intl.string(c.t.zROXER),
     onClick: () => {
-      l.Z.openPrivateChannel({
+      o.Z.openPrivateChannel({
         recipientIds: t
-      }), null == a || a()
+      }), null == s || s()
     }
-  }, s))
+  }, a))
 }

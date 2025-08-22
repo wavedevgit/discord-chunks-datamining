@@ -1,7 +1,7 @@
-/** Chunk was on 98360 **/
+/** Chunk was on 82008 **/
 /** chunk id: 116906, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => I
+  Z: () => _
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -26,11 +26,11 @@ var Chunk442837 = require("./442837.js"),
   Chunk7994 = require("./7994.js"),
   Chunk878449 = require("./878449.js");
 
-function I(e) {
+function _(e) {
   let {
     user: n,
     currentUser: t,
-    guildId: I,
+    guildId: _,
     subsection: Z,
     onClose: P
   } = e, {
@@ -41,61 +41,61 @@ function I(e) {
     location: "UserProfileModalActivity"
   }), {
     live: A,
-    recent: C,
-    stream: E
+    recent: E,
+    stream: C
   } = (0, f.Z)(n.id), {
     voiceChannel: S,
     voiceActivity: w
   } = (0, m.Z)({
     userId: n.id,
-    guildId: I
-  }), B = (0, o.e7)([c.Z], () => c.Z.isFetchingUserOutbox(n.id)), D = n.id === t.id, L = (0, o.e7)([s.Z, a.Z], () => {
-    let e = D ? s.Z.getStatus() : a.Z.getStatus(n.id);
-    return e === l.Skl.OFFLINE || e === l.Skl.INVISIBLE
-  }), R = A.length > 0 || null != E, U = T && null == E && null == w && null != S, M = !L && (R || U), k = C.length > 0;
-  return M || k || !B ? (0, r.jsxs)(l.zJl, {
-    className: y.scroller,
+    guildId: _
+  }), D = (0, l.e7)([c.Z], () => c.Z.isFetchingUserOutbox(n.id)), L = n.id === t.id, B = (0, l.e7)([a.Z, s.Z], () => {
+    let e = L ? a.Z.getStatus() : s.Z.getStatus(n.id);
+    return e === o.Skl.OFFLINE || e === o.Skl.INVISIBLE
+  }), R = A.length > 0 || null != C, U = T && null == C && null == w && null != S, M = !B && (R || U), k = E.length > 0;
+  return M || k || !D ? (0, r.jsxs)(o.zJl, {
+    className: O.scroller,
     fade: true,
     children: [M ? (0, r.jsx)(p.Z, {
-      "aria-label": _.intl.string(_.t.J6STd3),
+      "aria-label": y.intl.string(y.t.J6STd3),
       children: (0, r.jsxs)("ul", {
-        className: y.activityList,
+        className: O.activityList,
         children: [!N && U && (0, r.jsx)("li", {
-          children: (0, r.jsx)(h.Z, {
+          children: (0, r.jsx)(j.Z, {
             user: n,
             currentUser: t,
             voiceChannel: S,
             onClose: P
           })
-        }), null != E && (0, r.jsx)("li", {
-          children: (0, r.jsx)(g.Z, {
+        }), null != C && (0, r.jsx)("li", {
+          children: (0, r.jsx)(b.Z, {
             user: n,
             currentUser: t,
-            stream: E,
+            stream: C,
             onClose: P
           })
-        }), A.map((e, o) => (0, r.jsx)("li", {
-          children: (0, r.jsx)(x.Z, {
+        }), A.map((e, l) => (0, r.jsx)("li", {
+          children: (0, r.jsx)(h.Z, {
             user: n,
             currentUser: t,
             activity: e,
             onClose: P
           })
-        }, "live-".concat(o)))]
+        }, "live-".concat(l)))]
       })
     }) : null, k ? (0, r.jsx)(p.Z, {
-      heading: _.intl.string(_.t.M0zgnZ),
-      introText: D ? _.intl.format(_.t["4bk9Ag"], {
-        learnMoreHook: (e, n) => (0, r.jsx)(l.eee, {
+      heading: y.intl.string(y.t.M0zgnZ),
+      introText: L ? y.intl.format(y.t["4bk9Ag"], {
+        learnMoreHook: (e, n) => (0, r.jsx)(o.eee, {
           href: d.Z.getArticleURL(v.BhN.ACTIVITY_STATUS_SETTINGS),
           children: e
         }, n)
       }) : true,
-      scrollIntoView: Z === j.Tb.RECENT_ACTIVITY,
+      scrollIntoView: Z === g.Tb.RECENT_ACTIVITY,
       children: (0, r.jsx)("ul", {
-        className: y.activityList,
-        children: C.map(e => (0, r.jsx)("li", {
-          children: (0, r.jsx)(b.Z, {
+        className: O.activityList,
+        children: E.map(e => (0, r.jsx)("li", {
+          children: (0, r.jsx)(x.Z, {
             user: n,
             entry: e,
             onClose: P
@@ -104,7 +104,7 @@ function I(e) {
       })
     }) : null]
   }) : (0, r.jsx)("div", {
-    className: O.empty,
-    children: (0, r.jsx)(l.$jN, {})
+    className: I.empty,
+    children: (0, r.jsx)(o.$jN, {})
   })
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 27069 **/
+/** Chunk was on 21585 **/
 /** chunk id: 566007, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => o
@@ -21,13 +21,13 @@ function o(e) {
     var r, n, i = function(e, t) {
       if (null == e) return {};
       var r, n, i = {},
-        l = Object.keys(e);
-      for (n = 0; n < l.length; n++) r = l[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
+        a = Object.keys(e);
+      for (n = 0; n < a.length; n++) r = a[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
       return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var l = Object.getOwnPropertySymbols(e);
-      for (n = 0; n < l.length; n++) r = l[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
+      var a = Object.getOwnPropertySymbols(e);
+      for (n = 0; n < a.length; n++) r = a[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
     }
     return i
   }(e, ["user", "widget", "isGameFetching", "containerClassName", "disableInteraction"]);
@@ -37,7 +37,7 @@ function o(e) {
     widget: r,
     className: c,
     disableInteraction: s,
-    children: null != d ? (0, n.jsx)(a.Z, function(e) {
+    children: null != d ? (0, n.jsx)(l.Z, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var r = null != arguments[t] ? arguments[t] : {},
           n = Object.keys(r);
@@ -60,7 +60,7 @@ function o(e) {
       widgetType: r.type,
       loading: o(d.applicationId),
       disableInteraction: s
-    }, u)) : (0, n.jsx)(l.Z, {
+    }, u)) : (0, n.jsx)(a.Z, {
       widgetType: r.type
     })
   })

@@ -1,4 +1,4 @@
-/** Chunk was on 27069 **/
+/** Chunk was on 21585 **/
 /** chunk id: 299560, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk296009 = require("./296009.js"),
   Chunk481060 = require("./481060.js"),
   Chunk804919 = require("./804919.js"),
@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk247397 = require("./247397.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk229870 = require("./229870.js");
-let m = {
+let O = {
   [Chunk296009.l.FAVORITE_GAMES]: {
     placeholder: {
       variant: "details",
@@ -52,31 +52,31 @@ function j(e) {
   let {
     widgetType: t,
     onAddWidget: r,
-    size: l = "default",
+    size: a = "default",
     loading: o = false
   } = e, {
     placeholder: s,
     getAriaLabel: j
-  } = m[t], y = "small" === l, v = i.useCallback(() => {
+  } = O[t], y = "small" === a, x = i.useCallback(() => {
     o || ((0, u.qH)(t), (0, d.L$)(g.qb.WIDGET_ADDED), null == r || r())
   }, [t, r, o]);
   return (0, n.jsxs)(c.P3F, {
-    className: a()(O.addButtonContainer, y && O.sizeSmall, o && O.loading),
-    onClick: v,
+    className: l()(m.addButtonContainer, y && m.sizeSmall, o && m.loading),
+    onClick: x,
     "aria-label": j(),
     "aria-busy": o,
     children: ["details" === s.variant ? (0, n.jsx)(f.i, {
       applicationId: s.applicationId,
-      size: l
+      size: a
     }) : (0, n.jsx)(f.c, {
       applicationIds: s.applicationIds,
-      size: l
+      size: a
     }), (0, n.jsxs)("div", {
-      className: O.overlay,
+      className: m.overlay,
       children: [(0, n.jsx)(c.oFk, {
         size: "md",
         color: "currentColor",
-        className: O.addButton
+        className: m.addButton
       }), (0, n.jsx)(c.Text, {
         variant: "text-md/medium",
         color: "header-primary",

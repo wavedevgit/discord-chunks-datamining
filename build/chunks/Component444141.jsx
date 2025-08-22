@@ -1,4 +1,4 @@
-/** Chunk was on 98360 **/
+/** Chunk was on 82008 **/
 /** chunk id: 444141, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -50,43 +50,43 @@ function m(e) {
     guildId: t,
     channelId: m,
     displayProfile: p,
-    onClose: x
+    onClose: h
   } = e, {
-    analyticsLocations: b,
-    sourceAnalyticsLocations: g
-  } = (0, l.ZP)(), {
-    context: h,
-    trackUserProfileAction: j
-  } = (0, c.KZ)(), v = (0, s.ZP)(n.id, t);
-  return (null == v ? true : v.guildId) == null || null == h ? null : (null == p ? true : p.guildId) != null ? (0, r.jsx)(o.sNh, {
+    analyticsLocations: x,
+    sourceAnalyticsLocations: b
+  } = (0, o.ZP)(), {
+    context: j,
+    trackUserProfileAction: g
+  } = (0, c.KZ)(), v = (0, a.ZP)(n.id, t);
+  return (null == v ? true : v.guildId) == null || null == j ? null : (null == p ? true : p.guildId) != null ? (0, r.jsx)(l.sNh, {
     id: "view-main-profile",
     label: d.intl.string(d.t.GISTtb),
     subtext: d.intl.formatToPlainString(d.t["mn/nW1"], {
       displayName: i.ZP.getName(true, true, n)
     }),
     action: () => {
-      null == x || x(), (0, a.openUserProfileModal)(f(u({}, h), {
+      null == h || h(), (0, s.openUserProfileModal)(f(u({}, j), {
         showGuildProfile: false,
-        sourceAnalyticsLocations: g
-      })), j(u({
+        sourceAnalyticsLocations: b
+      })), g(u({
         action: "PRESS_VIEW_MAIN_PROFILE",
-        analyticsLocations: b
-      }, h))
+        analyticsLocations: x
+      }, j))
     }
-  }) : (0, r.jsx)(o.sNh, {
+  }) : (0, r.jsx)(l.sNh, {
     id: "view-server-profile",
     label: d.intl.string(d.t.DisZzM),
     subtext: d.intl.formatToPlainString(d.t["mn/nW1"], {
       displayName: i.ZP.getName(t, m, n)
     }),
     action: () => {
-      null == x || x(), (0, a.openUserProfileModal)(f(u({}, h), {
+      null == h || h(), (0, s.openUserProfileModal)(f(u({}, j), {
         showGuildProfile: true,
-        sourceAnalyticsLocations: g
-      })), j(u({
+        sourceAnalyticsLocations: b
+      })), g(u({
         action: "PRESS_VIEW_SERVER_PROFILE",
-        analyticsLocations: b
-      }, h))
+        analyticsLocations: x
+      }, j))
     }
   })
 }

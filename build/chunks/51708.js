@@ -1,5 +1,5 @@
-/** Chunk was on 98360 **/
-/** chunk id: 51708, original params: e,n,t (module,exports,require) **/
+/** Chunk was on 21585 **/
+/** chunk id: 51708, original params: e,t,r (module,exports,require) **/
 module.exports = {
   clickable: "clickable__65fc9",
   icon: "icon__65fc9"

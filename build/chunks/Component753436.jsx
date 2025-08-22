@@ -1,4 +1,4 @@
-/** Chunk was on 27069 **/
+/** Chunk was on 21585 **/
 /** chunk id: 753436, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   S: () => f
@@ -22,30 +22,30 @@ function f(e) {
     guildId: g,
     channelId: b,
     loading: p = false,
-    disableInteraction: O = false
-  } = e, m = (0, c.Z)(t.applicationId), j = m.length > 0, y = i.default.getCurrentUser(), v = (null == y ? true : y.id) === r;
+    disableInteraction: m = false
+  } = e, O = (0, c.Z)(t.applicationId), j = O.length > 0, y = i.default.getCurrentUser(), x = (null == y ? true : y.id) === r;
   return p ? (0, n.jsx)("div", {
     className: u.loadingCover
   }) : (0, n.jsxs)("div", {
     className: d.container,
-    children: [(0, n.jsx)(a.Z, {
+    children: [(0, n.jsx)(l.Z, {
       imageSrc: t.imageSrc,
       gameName: t.gameName,
       applicationId: t.applicationId,
       userId: r,
-      disableInteraction: O,
+      disableInteraction: m,
       className: j ? d.socialProofBackdrop : true
-    }), !O && v && (0, n.jsx)(o.Z, {
+    }), !m && x && (0, n.jsx)(o.Z, {
       game: t,
       widgetType: f,
       className: d.removeGameButton,
       iconSize: "xs"
-    }), !O && j && (0, n.jsx)(l.Z, {
+    }), !m && j && (0, n.jsx)(a.Z, {
       label: s.intl.formatToPlainString(s.t.ujhJdH, {
-        numFriends: m.length
+        numFriends: O.length
       }),
       className: d.socialProof,
-      users: m,
+      users: O,
       guildId: g,
       channelId: b,
       visuallyHideLabel: true

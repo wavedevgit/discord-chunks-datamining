@@ -1,4 +1,4 @@
-/** Chunk was on 27069 **/
+/** Chunk was on 21585 **/
 /** chunk id: 977416, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -49,19 +49,19 @@ function g(e) {
   var {
     gameName: t,
     onClick: r,
-    loading: l = true
+    loading: a = true
   } = e, o = function(e, t) {
     if (null == e) return {};
     var r, n, i = function(e, t) {
       if (null == e) return {};
       var r, n, i = {},
-        l = Object.keys(e);
-      for (n = 0; n < l.length; n++) r = l[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
+        a = Object.keys(e);
+      for (n = 0; n < a.length; n++) r = a[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
       return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var l = Object.getOwnPropertySymbols(e);
-      for (n = 0; n < l.length; n++) r = l[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
+      var a = Object.getOwnPropertySymbols(e);
+      for (n = 0; n < a.length; n++) r = a[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
     }
     return i
   }(e, ["gameName", "onClick", "loading"]);
@@ -69,7 +69,7 @@ function g(e) {
     b = c.intl.formatToPlainString(c.t["3mb1s7"], {
       game: g
     });
-  return l ? (0, n.jsx)("div", {
+  return a ? (0, n.jsx)("div", {
     className: s.loadingCover
   }) : (0, n.jsx)(i.ua7, {
     text: b,
@@ -77,7 +77,7 @@ function g(e) {
       className: u.addButton
     }, e), {
       onClick: r,
-      children: [(0, n.jsx)(a.Z, f(d({
+      children: [(0, n.jsx)(l.Z, f(d({
         className: u.cover,
         gameName: t
       }, o), {
@@ -95,11 +95,11 @@ function b(e) {
   let {
     userId: t,
     games: r,
-    isGameFetching: a,
+    isGameFetching: l,
     isSuggestedGamesLoading: s,
     onDismiss: d,
     onClick: f
-  } = e, b = (0, l.Dt)();
+  } = e, b = (0, a.Dt)();
   return (0, n.jsxs)("aside", {
     className: u.container,
     "aria-labelledby": b,
@@ -125,15 +125,15 @@ function b(e) {
         let {
           applicationId: r,
           gameName: i,
-          imageSrc: l
+          imageSrc: a
         } = e;
         return (0, n.jsx)(g, {
-          onClick: () => f(r, i, l),
+          onClick: () => f(r, i, a),
           userId: t,
-          loading: s || a(r),
+          loading: s || l(r),
           applicationId: r,
           gameName: i,
-          imageSrc: l
+          imageSrc: a
         })
       }
     })]

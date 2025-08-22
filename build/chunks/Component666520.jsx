@@ -1,4 +1,4 @@
-/** Chunk was on 98360 **/
+/** Chunk was on 82008 **/
 /** chunk id: 666520, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -20,25 +20,25 @@ function m(e) {
     className: t,
     userId: m,
     onUpdate: p
-  } = e, x = (0, l.e7)([s.Z], () => s.Z.hidePersonalInformation), {
-    loading: b,
-    note: g
-  } = (0, a.Z)(m), h = o.useRef(null);
-  return (o.useEffect(() => {
-    if (!n || x) return;
-    let e = h.current;
+  } = e, h = (0, o.e7)([a.Z], () => a.Z.hidePersonalInformation), {
+    loading: x,
+    note: b
+  } = (0, s.Z)(m), j = l.useRef(null);
+  return (l.useEffect(() => {
+    if (!n || h) return;
+    let e = j.current;
     (null == e ? true : e.selectionStart) != null && (e.focus(), e.setSelection(e.value.length, e.value.length))
-  }, [n, x]), x) ? null : (0, r.jsx)("div", {
+  }, [n, h]), h) ? null : (0, r.jsx)("div", {
     className: t,
     children: (0, r.jsx)(i.lcI, {
-      ref: h,
+      ref: j,
       className: f.textarea,
-      disabled: b,
-      placeholder: b ? u.intl.string(u.t["WLKx//"]) : u.intl.string(u.t.VBhOe3),
+      disabled: x,
+      placeholder: x ? u.intl.string(u.t["WLKx//"]) : u.intl.string(u.t.VBhOe3),
       "aria-label": u.intl.string(u.t.PbMNh4),
       onBlur: e => {
         let n = e.currentTarget.value;
-        (null != g ? g : "") !== n && (null == p || p(), c.Z.updateNote(m, n))
+        (null != b ? b : "") !== n && (null == p || p(), c.Z.updateNote(m, n))
       },
       onKeyPress: e => {
         if (13 === e.which)
@@ -48,7 +48,7 @@ function m(e) {
           } else e.preventDefault(), e.currentTarget.blur();
         else e.which === d.yXg.SPACE && e.stopPropagation()
       },
-      defaultValue: null != g ? g : true,
+      defaultValue: null != b ? b : true,
       maxLength: d.vuo
     })
   })

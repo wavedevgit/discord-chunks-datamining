@@ -1,8 +1,8 @@
-/** Chunk was on 27069 **/
+/** Chunk was on 21585 **/
 /** chunk id: 778414, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   C: () => I,
-  Z: () => w
+  Z: () => P
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -25,7 +25,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk830202 = require("./830202.js");
 
-function P(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -44,7 +44,7 @@ function P(e) {
   return e
 }
 
-function w(e) {
+function P(e) {
   var {
     widget: t
   } = e, r = function(e, t) {
@@ -52,31 +52,31 @@ function w(e) {
     var r, n, i = function(e, t) {
       if (null == e) return {};
       var r, n, i = {},
-        l = Object.keys(e);
-      for (n = 0; n < l.length; n++) r = l[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
+        a = Object.keys(e);
+      for (n = 0; n < a.length; n++) r = a[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
       return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var l = Object.getOwnPropertySymbols(e);
-      for (n = 0; n < l.length; n++) r = l[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
+      var a = Object.getOwnPropertySymbols(e);
+      for (n = 0; n < a.length; n++) r = a[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
     }
     return i
   }(e, ["widget"]);
   switch (t.type) {
-    case l.l.FAVORITE_GAMES:
-      return (0, n.jsx)(O.Z, P({
+    case a.l.FAVORITE_GAMES:
+      return (0, n.jsx)(m.Z, _({
         widget: t
       }, r));
-    case l.l.CURRENT_GAMES:
-      return (0, n.jsx)(p.Z, P({
+    case a.l.CURRENT_GAMES:
+      return (0, n.jsx)(p.Z, _({
         widget: t
       }, r));
-    case l.l.WANT_TO_PLAY_GAMES:
-      return (0, n.jsx)(j.Z, P({
+    case a.l.WANT_TO_PLAY_GAMES:
+      return (0, n.jsx)(j.Z, _({
         widget: t
       }, r));
-    case l.l.PLAYED_GAMES:
-      return (0, n.jsx)(m.Z, P({
+    case a.l.PLAYED_GAMES:
+      return (0, n.jsx)(O.Z, _({
         widget: t
       }, r));
     default:
@@ -84,7 +84,7 @@ function w(e) {
   }
 }
 
-function S() {
+function w() {
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk830202.ukTeenDisclaimer,
     children: [(0, Chunk951288.jsx)(Chunk481060.d3s, {
@@ -98,28 +98,28 @@ function S() {
   })
 }
 
-function E(e) {
+function S(e) {
   let {
     user: t,
     guildId: r,
-    channelId: l
+    channelId: a
   } = e, o = (0, b.Z)(t.id), {
     widgets: p,
-    isGameFetching: O
-  } = (0, g.Z)(o), m = (0, a.e7)([u.default], () => u.default.getId() === t.id), j = (() => {
-    let [e, t] = (0, a.Wu)([d.Z], () => [d.Z.ipCountryCode, d.Z.ipCountryCodeRequest]), r = (0, s.U)();
+    isGameFetching: m
+  } = (0, g.Z)(o), O = (0, l.e7)([u.default], () => u.default.getId() === t.id), j = (() => {
+    let [e, t] = (0, l.Wu)([d.Z], () => [d.Z.ipCountryCode, d.Z.ipCountryCodeRequest]), r = (0, s.U)();
     return i.useEffect(() => {
       null == e && null == t && r && (0, c.GE)()
     }, [e, t, r]), "GB" === e && r
-  })(), x = 0 === p.length && m;
-  return ((0, f.J)(m, p), x) ? (0, n.jsx)(v.Z, {}) : (0, n.jsxs)(n.Fragment, {
-    children: [j && (0, n.jsx)(S, {}), p.map(e => (0, n.jsx)(w, {
+  })(), v = 0 === p.length && O;
+  return ((0, f.J)(O, p), v) ? (0, n.jsx)(x.Z, {}) : (0, n.jsxs)(n.Fragment, {
+    children: [j && (0, n.jsx)(w, {}), p.map(e => (0, n.jsx)(P, {
       widget: e,
       user: t,
       guildId: r,
-      channelId: l,
-      isGameFetching: O
-    }, e.id)), m && (0, n.jsx)(y.Z, {})]
+      channelId: a,
+      isGameFetching: m
+    }, e.id)), O && (0, n.jsx)(y.Z, {})]
   })
 }
 
@@ -127,6 +127,6 @@ function I(e) {
   return (0, n.jsx)(o.Ttm, {
     className: h.scroller,
     fade: true,
-    children: (0, n.jsx)(E, P({}, e))
+    children: (0, n.jsx)(S, _({}, e))
   })
 }

@@ -1,7 +1,7 @@
-/** Chunk was on 45410 **/
+/** Chunk was on 54844 **/
 /** chunk id: 778231, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => b
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,31 +17,31 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk719706 = require("./719706.js"),
   Chunk970952 = require("./970952.js");
-let f = e => {
+let b = e => {
   var t, n;
   let {
-    entry: f
+    entry: b
   } = e, {
-    name: b
-  } = f, h = (0, l.e7)([m.Z], () => m.Z.getNewestTokenForApplication(f.id)), v = null != (n = f.getIconURL(40)) ? n : g, j = (0, d.Z)({
-    application: f
+    name: _
+  } = b, f = (0, l.e7)([m.Z], () => m.Z.getNewestTokenForApplication(b.id)), v = null != (n = b.getIconURL(40)) ? n : h, j = (0, d.Z)({
+    application: b
   }), y = i.useRef(false);
   i.useEffect(() => {
-    y.current || (o.Z.fetch(), y.current = true)
+    y.current || (s.Z.fetch(), y.current = true)
   }, []);
-  let O = null != h ? _.default.extractTimestamp(h.id) : true;
+  let O = null != f ? p.default.extractTimestamp(f.id) : true;
   return (0, r.jsxs)("div", {
     className: x.container,
     children: [(0, r.jsx)(a.X6q, {
       className: x.header,
       variant: "heading-sm/semibold",
-      children: p.intl.string(p.t["aYfK//"])
+      children: g.intl.string(g.t["aYfK//"])
     }), (0, r.jsx)("div", {
       className: x.appContainer,
       children: (0, r.jsxs)("div", {
         className: x.appInfo,
-        children: [(0, r.jsx)(s.ZP, {
-          mask: s.ZP.Masks.AVATAR_DEFAULT,
+        children: [(0, r.jsx)(o.ZP, {
+          mask: o.ZP.Masks.AVATAR_DEFAULT,
           width: 40,
           height: 40,
           className: x.appIconMask,
@@ -55,7 +55,7 @@ let f = e => {
           children: [(0, r.jsx)(a.Text, {
             color: "header-primary",
             variant: "text-md/medium",
-            children: b
+            children: _
           }), j.length > 0 ? (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(a.Text, {
               color: "text-default",
@@ -70,11 +70,11 @@ let f = e => {
             children: [(0, r.jsx)(a.Text, {
               color: "text-default",
               variant: "text-md/normal",
-              children: null == (t = f.bot) ? true : t.tag
+              children: null == (t = b.bot) ? true : t.tag
             }), null != O && (0, r.jsx)(a.Text, {
               color: "text-default",
               variant: "text-md/normal",
-              children: p.intl.formatToPlainString(p.t.C9rUOz, {
+              children: g.intl.formatToPlainString(g.t.C9rUOz, {
                 authorizedAt: O
               })
             })]

@@ -1,4 +1,4 @@
-/** Chunk was on 98360 **/
+/** Chunk was on 82008 **/
 /** chunk id: 128156, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => Z
@@ -37,101 +37,101 @@ function Z(e) {
     subsection: N,
     onClose: A
   } = e, {
-    voiceActivityStatusEnabled: C
+    voiceActivityStatusEnabled: E
   } = (0, i.U)({
     location: "UserProfileModalV2Activity"
-  }), E = (0, f.b)({
+  }), C = (0, f.b)({
     location: "UserProfileModalV2Activity"
   }), {
     live: S,
     recent: w,
-    stream: B
+    stream: D
   } = (0, m.Z)(n.id), {
-    voiceChannel: D,
-    voiceActivity: L
+    voiceChannel: L,
+    voiceActivity: B
   } = (0, p.Z)({
     userId: n.id,
     guildId: P
-  }), R = (0, o.e7)([c.Z], () => c.Z.isFetchingUserOutbox(n.id)), U = n.id === t.id, M = (0, o.e7)([d.Z, s.Z], () => {
-    let e = U ? d.Z.getStatus() : s.Z.getStatus(n.id);
-    return e === l.Skl.OFFLINE || e === l.Skl.INVISIBLE
-  }), k = S.length > 0 || null != B, G = C && null == B && null == L && null != D, F = !M && (k || G), V = w.length > 0;
+  }), R = (0, l.e7)([c.Z], () => c.Z.isFetchingUserOutbox(n.id)), U = n.id === t.id, M = (0, l.e7)([d.Z, a.Z], () => {
+    let e = U ? d.Z.getStatus() : a.Z.getStatus(n.id);
+    return e === o.Skl.OFFLINE || e === o.Skl.INVISIBLE
+  }), k = S.length > 0 || null != D, G = E && null == D && null == B && null != L, F = !M && (k || G), V = w.length > 0;
   if (!F && !V && R) return (0, r.jsx)("div", {
-    className: I.cards,
+    className: _.cards,
     children: Array.from({
       length: 8
     }).map((e, n) => (0, r.jsxs)("div", {
-      className: I.loadingItem,
-      children: [(0, r.jsx)(a.ZT, {
+      className: _.loadingItem,
+      children: [(0, r.jsx)(s.ZT, {
         width: 60,
         opacity: .08
-      }), (0, r.jsx)(a.ZT, {
+      }), (0, r.jsx)(s.ZT, {
         width: 135,
         opacity: .08
       })]
     }, n))
   });
   if (!F && !V && !R) {
-    var W;
-    return U ? (0, r.jsx)(j.Uf, {
+    var Y;
+    return U ? (0, r.jsx)(g.Uf, {
       onClose: A
-    }) : (0, r.jsx)(j.P9, {
+    }) : (0, r.jsx)(g.P9, {
       user: n,
-      guildId: null != (W = null == Z ? true : Z.guildId) ? W : P,
+      guildId: null != (Y = null == Z ? true : Z.guildId) ? Y : P,
       channelId: T,
       onClose: A
     })
   }
-  return (0, r.jsxs)(l.Ttm, {
-    className: I.scroller,
+  return (0, r.jsxs)(o.Ttm, {
+    className: _.scroller,
     fade: true,
     children: [F ? (0, r.jsx)(v.Z, {
-      heading: O.intl.string(O.t.J6STd3),
+      heading: I.intl.string(I.t.J6STd3),
       children: (0, r.jsxs)("ul", {
-        className: I.cards,
-        children: [!E && G && (0, r.jsx)("li", {
+        className: _.cards,
+        children: [!C && G && (0, r.jsx)("li", {
+          children: (0, r.jsx)(j.Z, {
+            user: n,
+            currentUser: t,
+            voiceChannel: L,
+            onClose: A
+          })
+        }), null != D && (0, r.jsx)("li", {
+          children: (0, r.jsx)(b.Z, {
+            user: n,
+            currentUser: t,
+            stream: D,
+            onClose: A
+          })
+        }), S.map((e, l) => (0, r.jsx)("li", {
           children: (0, r.jsx)(h.Z, {
-            user: n,
-            currentUser: t,
-            voiceChannel: D,
-            onClose: A
-          })
-        }), null != B && (0, r.jsx)("li", {
-          children: (0, r.jsx)(g.Z, {
-            user: n,
-            currentUser: t,
-            stream: B,
-            onClose: A
-          })
-        }), S.map((e, o) => (0, r.jsx)("li", {
-          children: (0, r.jsx)(x.Z, {
             user: n,
             currentUser: t,
             activity: e,
             onClose: A
           })
-        }, "live-".concat(o))), E && G && (0, r.jsx)("li", {
-          children: (0, r.jsx)(h.Z, {
+        }, "live-".concat(l))), C && G && (0, r.jsx)("li", {
+          children: (0, r.jsx)(j.Z, {
             user: n,
             currentUser: t,
-            voiceChannel: D,
+            voiceChannel: L,
             onClose: A
           })
         })]
       })
     }) : null, V ? (0, r.jsx)(v.Z, {
-      heading: O.intl.string(O.t.jzgEoK),
-      introText: U ? O.intl.format(O.t["4bk9Ag"], {
-        learnMoreHook: (e, n) => (0, r.jsx)(l.eee, {
-          href: u.Z.getArticleURL(y.BhN.ACTIVITY_STATUS_SETTINGS),
+      heading: I.intl.string(I.t.jzgEoK),
+      introText: U ? I.intl.format(I.t["4bk9Ag"], {
+        learnMoreHook: (e, n) => (0, r.jsx)(o.eee, {
+          href: u.Z.getArticleURL(O.BhN.ACTIVITY_STATUS_SETTINGS),
           children: e
         }, n)
       }) : true,
-      scrollIntoView: N === _.Tb.RECENT_ACTIVITY,
+      scrollIntoView: N === y.Tb.RECENT_ACTIVITY,
       children: (0, r.jsx)("ul", {
-        className: I.cards,
+        className: _.cards,
         children: w.map(e => (0, r.jsx)("li", {
-          children: (0, r.jsx)(b.Z, {
+          children: (0, r.jsx)(x.Z, {
             user: n,
             entry: e,
             onClose: A

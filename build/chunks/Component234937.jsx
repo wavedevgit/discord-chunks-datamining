@@ -1,4 +1,4 @@
-/** Chunk was on 45410 **/
+/** Chunk was on 54844 **/
 /** chunk id: 234937, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -14,13 +14,13 @@ var Chunk442837 = require("./442837.js"),
 let d = e => {
   let {
     event: t
-  } = e, n = (0, i.e7)([o.Z], () => o.Z.getGuild(t.guild_id));
+  } = e, n = (0, i.e7)([s.Z], () => s.Z.getGuild(t.guild_id));
   return null == n ? null : (0, r.jsxs)("div", {
     className: c.container,
     children: [(0, r.jsx)(l.X6q, {
       className: c.header,
       variant: "heading-sm/semibold",
-      children: s.intl.string(s.t.SDTOLy)
+      children: o.intl.string(o.t.SDTOLy)
     }), (0, r.jsxs)("div", {
       className: c.guildContainer,
       children: [(0, r.jsxs)("div", {

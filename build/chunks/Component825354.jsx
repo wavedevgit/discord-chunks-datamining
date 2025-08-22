@@ -1,4 +1,4 @@
-/** Chunk was on 27069 **/
+/** Chunk was on 21585 **/
 /** chunk id: 825354, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk239091 = require("./239091.js"),
   Chunk726521 = require("./726521.js"),
@@ -17,7 +17,7 @@ function f(e) {
   let {
     widget: t,
     userId: r,
-    className: l
+    className: a
   } = e, f = i.useRef(null), g = () => {
     (0, s.G1)(r, t)
   };
@@ -70,7 +70,7 @@ function f(e) {
       }({}, e), r = r = {
         innerRef: f,
         "aria-label": u.intl.string(u.t.xpSHSk),
-        className: a()(d.button, l),
+        className: l()(d.button, a),
         children: (0, n.jsx)(o.xhG, {
           size: "sm",
           color: "currentColor"

@@ -1,4 +1,4 @@
-/** Chunk was on 27069 **/
+/** Chunk was on 21585 **/
 /** chunk id: 853072, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => o
@@ -10,12 +10,12 @@ var Chunk442837 = require("./442837.js"),
 
 function o(e) {
   let t = (0, i.N)(e);
-  return (0, n.Wu)([l.default], () => {
+  return (0, n.Wu)([a.default], () => {
     let e = new Set;
     return t.forEach(t => {
       e.add(t.author_id), t.participants.forEach(t => {
         e.add(t)
       })
-    }), Array.from(e).map(e => l.default.getUser(e)).filter(a.lm)
+    }), Array.from(e).map(e => a.default.getUser(e)).filter(l.lm)
   }, [t])
 }

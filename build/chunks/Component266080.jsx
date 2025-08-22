@@ -1,4 +1,4 @@
-/** Chunk was on 45410 **/
+/** Chunk was on 54844 **/
 /** chunk id: 266080, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -16,20 +16,20 @@ let m = e => {
   let {
     guildId: t,
     reportId: n
-  } = e, [m, _] = i.useState(false), p = c.Z.getGuild(t), x = null != p;
+  } = e, [m, p] = i.useState(false), g = c.Z.getGuild(t), x = null != g;
   i.useEffect(() => {
-    _(!x)
+    p(!x)
   }, [x]);
-  let g = i.useCallback(() => {
-    _(true), a.ZP.trackWithMetadata(d.rMx.IAR_LEAVE_GUILD_BUTTON_CLICKED, {
+  let h = i.useCallback(() => {
+    p(true), a.ZP.trackWithMetadata(d.rMx.IAR_LEAVE_GUILD_BUTTON_CLICKED, {
       guild_id: t,
       report_id: n
-    }), o.Z.leaveGuild(t)
+    }), s.Z.leaveGuild(t)
   }, [t, n]);
-  return null == p ? null : (0, r.jsx)(s.JZ, {
+  return null == g ? null : (0, r.jsx)(o.JZ, {
     title: u.intl.string(u.t.cU96io),
     description: u.intl.formatToPlainString(u.t["26mR6+"], {
-      guildName: null == p ? true : p.name
+      guildName: null == g ? true : g.name
     }),
     buttonText: m ? u.intl.string(u.t["9Ak99v"]) : u.intl.string(u.t.F3qExs),
     buttonDisabled: m,
@@ -56,16 +56,16 @@ let m = e => {
           return e
         }({
           header: u.intl.formatToPlainString(u.t["1GX6Pz"], {
-            name: p.name
+            name: g.name
           }),
           confirmText: u.intl.string(u.t.J2TBi4),
           cancelText: u.intl.string(u.t["ETE/oK"]),
-          onConfirm: g
+          onConfirm: h
         }, e), n = n = {
           children: (0, r.jsx)(l.Text, {
             variant: "text-md/normal",
             children: u.intl.format(u.t.ZEXC0t, {
-              name: p.name
+              name: g.name
             })
           })
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

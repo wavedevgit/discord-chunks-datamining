@@ -1,4 +1,4 @@
-/** Chunk was on 27069 **/
+/** Chunk was on 21585 **/
 /** chunk id: 533815, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk86419 = require("./86419.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -21,11 +21,11 @@ function u(e) {
   } = e, d = () => {
     (0, o.$b)(r, t.applicationId)
   };
-  return (0, n.jsx)(a.ua7, {
+  return (0, n.jsx)(l.ua7, {
     text: c.intl.string(c.t.HUvyDQ),
     children: e => {
       var t, r;
-      return (0, n.jsx)(a.P3F, (t = function(e) {
+      return (0, n.jsx)(l.P3F, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {},
             n = Object.keys(r);
@@ -45,11 +45,11 @@ function u(e) {
       }({}, e), r = r = {
         onClick: d,
         "aria-label": c.intl.string(c.t.HUvyDQ),
-        className: l()(u, s.clickable),
-        children: (0, n.jsx)(a.XHJ, {
+        className: a()(u, s.clickable),
+        children: (0, n.jsx)(l.XHJ, {
           size: i,
           className: s.icon,
-          color: a.TVs.colors.STATUS_DANGER
+          color: l.TVs.colors.STATUS_DANGER
         })
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
         var r = Object.keys(e);

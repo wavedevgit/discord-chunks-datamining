@@ -1,7 +1,7 @@
-/** Chunk was on 98360 **/
+/** Chunk was on 82008 **/
 /** chunk id: 752342, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => C
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -33,31 +33,31 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk673517 = require("./673517.js");
 
-function E(e) {
+function C(e) {
   let {
     user: n,
     currentUser: t,
-    guildId: E,
+    guildId: C,
     channelId: S,
     messageId: w,
-    roleId: B,
-    sessionId: D,
-    initialSection: L,
+    roleId: D,
+    sessionId: L,
+    initialSection: B,
     initialSubsection: R,
     transitionState: U,
     openedAt: M,
     onClose: k,
     sourceAnalyticsLocations: G = []
-  } = e, F = E === T.ME ? true : E, V = (0, u.ZP)(n.id, F), W = s.ZP.getName(F, S, n), Y = (0, a.Dt)(), {
+  } = e, F = C === T.ME ? true : C, V = (0, u.ZP)(n.id, F), Y = a.ZP.getName(F, S, n), W = (0, s.Dt)(), {
     analyticsLocations: z
   } = (0, c.ZP)([...G, i.Z.USER_PROFILE_MODAL]), K = (0, d.ZB)({
     layout: "MODAL",
     userId: n.id,
-    sourceSessionId: D,
+    sourceSessionId: L,
     guildId: F,
     channelId: S,
     messageId: w,
-    roleId: B
+    roleId: D
   }), H = (0, Z.Z)(n);
   return (0, r.jsx)(c.Gt, {
     value: z,
@@ -67,28 +67,28 @@ function E(e) {
       fetchStartedAt: null == V ? true : V.fetchStartedAt,
       fetchEndedAt: null == V ? true : V.fetchEndedAt,
       isLoaded: null == V ? true : V.isLoaded,
-      children: (0, r.jsx)(o.Y0X, {
+      children: (0, r.jsx)(l.Y0X, {
         "data-migration-pending": true,
         transitionState: U,
-        className: C.root,
+        className: E.root,
         hideShadow: true,
-        "aria-labelledby": Y,
+        "aria-labelledby": W,
         parentComponent: "BotUserProfileModal",
-        children: (0, r.jsx)(o.y5t, {
-          component: (0, r.jsx)(o.nn4, {
-            children: (0, r.jsx)(o.H, {
-              id: Y,
+        children: (0, r.jsx)(l.y5t, {
+          component: (0, r.jsx)(l.nn4, {
+            children: (0, r.jsx)(l.H, {
+              id: W,
               children: A.intl.format(A.t.KRe1Fh, {
-                name: W
+                name: Y
               })
             })
           }),
-          children: (0, r.jsxs)(b.Z, {
+          children: (0, r.jsxs)(x.Z, {
             user: n,
             displayProfile: V,
             themeType: N.l.MODAL,
-            children: [(0, r.jsx)(_.Z, {
-              children: (0, r.jsx)(j.Z, {
+            children: [(0, r.jsx)(y.Z, {
+              children: (0, r.jsx)(g.Z, {
                 user: n,
                 guildId: F,
                 onCloseProfile: k
@@ -99,48 +99,48 @@ function E(e) {
                 displayProfile: V,
                 themeType: N.l.MODAL
               }), (0, r.jsxs)("div", {
-                className: C.headerInner,
+                className: E.headerInner,
                 children: [(0, r.jsx)(f.Z, {
                   user: n,
                   displayProfile: V,
                   guildId: F,
                   channelId: S,
                   themeType: N.l.MODAL
-                }), (0, r.jsx)(O.Z, {
+                }), (0, r.jsx)(I.Z, {
                   user: n,
                   themeType: N.l.MODAL,
-                  hasEntered: U === o.Dvm.ENTERED,
+                  hasEntered: U === l.Dvm.ENTERED,
                   onCloseProfile: k,
                   disableToolbar: true
                 }), (0, r.jsxs)("div", {
-                  className: C.headerButtons,
-                  children: [(0, r.jsx)(y.Z, {
+                  className: E.headerButtons,
+                  children: [(0, r.jsx)(O.Z, {
                     type: "text",
                     userId: n.id,
-                    onClose: l.Z.popAll,
-                    className: C.messageTextButton
-                  }), (0, r.jsx)(y.Z, {
+                    onClose: o.Z.popAll,
+                    className: E.messageTextButton
+                  }), (0, r.jsx)(O.Z, {
                     type: "icon",
                     userId: n.id,
-                    onClose: l.Z.popAll,
-                    tooltipContainerClassName: C.messageIconButton
+                    onClose: o.Z.popAll,
+                    tooltipContainerClassName: E.messageIconButton
                   }), (0, r.jsx)(v.Z, {
                     user: n,
                     guildId: F
-                  }), (0, r.jsx)(h.Z, {
+                  }), (0, r.jsx)(j.Z, {
                     user: n
                   })]
                 })]
               })]
             }), (0, r.jsxs)("div", {
-              className: C.body,
-              children: [(0, r.jsx)(g.Z, {
-                className: C.username,
+              className: E.body,
+              children: [(0, r.jsx)(b.Z, {
+                className: E.username,
                 user: n,
-                nickname: W,
+                nickname: Y,
                 pronouns: null == V ? true : V.pronouns,
                 nicknameVariant: "heading-xl/bold",
-                nicknameIcons: (0, r.jsx)(x.Z, {
+                nicknameIcons: (0, r.jsx)(h.Z, {
                   size: "sm",
                   userId: n.id
                 }),
@@ -149,13 +149,13 @@ function E(e) {
                   themeType: N.l.MODAL,
                   onClose: k
                 })
-              }), (0, r.jsx)(I.Z, {
+              }), (0, r.jsx)(_.Z, {
                 user: n,
                 currentUser: t,
                 displayProfile: V,
                 guildId: F,
                 items: H,
-                initialSection: null != L ? L : P.oh.BOT_INFO,
+                initialSection: null != B ? B : P.oh.BOT_INFO,
                 initialSubsection: R,
                 onClose: k
               })]
