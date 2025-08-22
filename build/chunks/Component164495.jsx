@@ -111,7 +111,7 @@ let P = e => {
     let {
       quest: t,
       sourceQuestContent: n
-    } = e, i = (0, f.aM)();
+    } = e, i = (0, f.aM)(), a = (0, _.Pb)(t) ? O.intl.string(O.t["93PTEh"]) : (0, _.pO)(t) ? O.intl.string(O.t.hvVgAQ) : O.intl.string(O.t.lwQdjI);
     return (0, r.jsx)(s.zx, {
       className: v.cta,
       size: s.zx.Sizes.SMALL,
@@ -121,7 +121,7 @@ let P = e => {
         impressionId: i,
         sourceQuestContent: n
       }),
-      children: (0, _.pO)(t) ? O.intl.string(O.t.hvVgAQ) : O.intl.string(O.t.lwQdjI)
+      children: a
     })
   },
   w = e => {

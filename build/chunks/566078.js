@@ -78,6 +78,10 @@ class d {
       ids: [this.quest.application.id]
     })
   }
+  get applications() {
+    var e, t;
+    return null != (t = null == (e = this.quest.taskConfigV2.tasks[Chunk754700.X.PLAY_ON_DESKTOP]) ? true : module.applications) ? exports : null
+  }
   get rewardPlatforms() {
     return this.quest.rewardsConfig.platforms
   }
