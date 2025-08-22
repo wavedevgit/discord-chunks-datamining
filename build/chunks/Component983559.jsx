@@ -53,101 +53,102 @@ function A(e) {
 }
 
 function w(e) {
+  var t;
   let {
-    user: t,
-    currentUser: n,
-    channel: f
-  } = e, T = __OVERLAY__, w = (0, m.ZP)(t.id), M = (0, c.ZP)(), D = i.useRef(Date.now()), {
-    analyticsLocations: L
-  } = (0, d.ZP)(u.Z.USER_PROFILE_SIDEBAR), k = (0, h.ZB)({
+    user: n,
+    currentUser: f,
+    channel: T
+  } = e, w = __OVERLAY__, M = (0, m.ZP)(n.id), D = (0, c.ZP)(), L = i.useRef(Date.now()), {
+    analyticsLocations: k
+  } = (0, d.ZP)(u.Z.USER_PROFILE_SIDEBAR), U = (0, h.ZB)({
     layout: "SIDEBAR",
-    userId: t.id,
-    channelId: f.id
-  }), U = i.useRef(null), B = (0, s.Z)(U), F = (0, g.$m)(), G = (0, o.q_F)({
-    opacity: +(null != F.interactionType),
+    userId: n.id,
+    channelId: T.id
+  }), B = i.useRef(null), F = (0, s.Z)(B), G = (0, g.$m)(), H = (0, o.q_F)({
+    opacity: +(null != G.interactionType),
     config: {
       duration: 150
     }
-  }), H = e => {
+  }), V = e => {
     (0, b.openUserProfileModal)(A({
-      sourceAnalyticsLocations: L,
+      sourceAnalyticsLocations: k,
       hideRestrictedProfile: true
-    }, k, e))
+    }, U, e))
   };
   return (0, r.jsx)(d.Gt, {
-    value: L,
+    value: k,
     children: (0, r.jsx)(h.Mt, {
-      value: k,
-      openedAt: D.current,
-      fetchStartedAt: null == w ? true : w.fetchStartedAt,
-      fetchEndedAt: null == w ? true : w.fetchEndedAt,
-      isLoaded: null == w ? true : w.isLoaded,
+      value: U,
+      openedAt: L.current,
+      fetchStartedAt: null == M ? true : M.fetchStartedAt,
+      fetchEndedAt: null == M ? true : M.fetchEndedAt,
+      isLoaded: null == M ? true : M.isLoaded,
       children: (0, r.jsx)(g.NJ, {
-        value: F,
+        value: G,
         children: (0, r.jsxs)(x.Z, {
-          ref: U,
-          user: t,
-          displayProfile: w,
+          ref: B,
+          user: n,
+          displayProfile: M,
           themeType: Z.l.SIDEBAR,
-          themeOverride: M,
-          children: [null != F.interactionType && (0, r.jsx)(l.animated.div, {
-            style: G,
+          themeOverride: D,
+          children: [null != G.interactionType && (0, r.jsx)(l.animated.div, {
+            style: H,
             className: N.backdrop
           }), (0, r.jsxs)(a.u2, {
             children: [(0, r.jsxs)(O.Z, {
               children: [(0, r.jsx)(j.Z, {
-                user: t,
+                user: n,
                 themeType: Z.l.SIDEBAR,
-                shouldShowTooltip: null === F.interactionType
-              }), t.bot ? (0, r.jsx)(v.Z, {
-                user: t
+                shouldShowTooltip: null === G.interactionType
+              }), n.bot ? (0, r.jsx)(v.Z, {
+                user: n
               }) : (0, r.jsx)(E.Z, {
                 type: "banner",
-                user: t
+                user: n
               })]
             }), (0, r.jsxs)("div", {
               className: N.header,
               children: [(0, r.jsx)(y.Z, {
-                user: t,
-                displayProfile: w,
+                user: n,
+                displayProfile: M,
                 themeType: Z.l.SIDEBAR,
-                animateOnHover: !B,
+                animateOnHover: !F,
                 className: N.banner
               }), (0, r.jsx)(C.Z, {
-                userId: t.id,
+                userId: n.id,
                 className: N.toast
               }), (0, r.jsx)(_.Z, {
                 location: "UserProfileSidebar",
-                user: t,
-                displayProfile: w,
-                channelId: f.id,
+                user: n,
+                displayProfile: M,
+                channelId: T.id,
                 themeType: Z.l.SIDEBAR,
-                onOpenProfile: T ? true : H
+                onOpenProfile: w ? true : V
               }), (0, r.jsx)(S.Z, {
                 location: "UserProfileSidebar",
-                user: t,
-                channelId: f.id,
+                user: n,
+                channelId: T.id,
                 themeType: Z.l.SIDEBAR,
-                disableToolbar: t.bot
+                disableToolbar: n.bot
               })]
             }), (0, r.jsx)(I.Z, {
-              user: t,
-              currentUser: n,
-              displayProfile: w,
-              channel: f,
-              isHovering: null == F.interactionType && B,
-              onOpenProfile: T ? true : H
+              user: n,
+              currentUser: f,
+              displayProfile: M,
+              channel: T,
+              isHovering: null == G.interactionType && F,
+              onOpenProfile: w ? true : V
             }), (0, r.jsx)(P.Z, {
-              user: t,
-              channelId: f.id
+              user: n,
+              channelId: T.id
             })]
-          }), !T && (0, r.jsx)(R, {
-            handleOpenProfile: H,
-            analyticsLocations: L,
-            context: k
-          }), (null == w ? true : w.profileEffectId) != null && (0, r.jsx)(p.Z, {
-            profileEffectId: null == w ? true : w.profileEffectId,
-            isHovering: B,
+          }), !w && (0, r.jsx)(R, {
+            handleOpenProfile: V,
+            analyticsLocations: k,
+            context: U
+          }), (null == M ? true : M.profileEffect) != null && (0, r.jsx)(p.Z, {
+            profileEffectId: null == M || null == (t = M.profileEffect) ? true : t.id,
+            isHovering: F,
             urlQueryString: "dmView"
           })]
         })

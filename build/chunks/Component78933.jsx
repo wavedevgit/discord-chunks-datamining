@@ -186,12 +186,11 @@ function ed(e) {
     }, 500)
   }, []);
   let eZ = e => {
-      null == n || n(), (0, A.openUserProfileModal)(eo({
-        customStatusPrompt: eU,
-        sourceAnalyticsLocations: e_
-      }, ep, e))
-    },
-    eV = (null == ef ? true : ef.profileEffectId) != null && !ek.current;
+    null == n || n(), (0, A.openUserProfileModal)(eo({
+      customStatusPrompt: eU,
+      sourceAnalyticsLocations: e_
+    }, ep, e))
+  };
   return (0, r.jsx)(_.Gt, {
     value: e_,
     children: (0, r.jsx)(I.Mt, {
@@ -392,8 +391,8 @@ function ed(e) {
                 })
               })]
             })]
-          }), eV && (0, r.jsx)(v.Z, {
-            profileEffectId: null == ef ? true : ef.profileEffectId,
+          }), (null == ef ? true : ef.profileEffect) != null && !ek.current && (0, r.jsx)(v.Z, {
+            profileEffectId: ef.profileEffect.id,
             isHovering: em
           })]
         }), (0, r.jsx)(B.Z, {})]

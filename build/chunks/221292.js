@@ -80,7 +80,7 @@ let v = e => {
       let e = (0, d.xR)(null == a ? true : a.banner);
       o.push(e ? h.cm.ANIMATED_BANNER : h.cm.BANNER)
     }
-    return (null == a ? true : a.bio) && o.push(h.cm.BIO), (null == a ? true : a.themeColors) != null && true !== a.themeColors.find(e => null !== e) && o.push(h.cm.THEME), (null == t ? true : t.avatarDecoration) != null && o.push(h.cm.AVATAR_DECORATION), (null == a ? true : a.profileEffectId) != null && o.push(h.cm.PROFILE_EFFECT), o
+    return (null == a ? true : a.bio) && o.push(h.cm.BIO), (null == a ? true : a.themeColors) != null && true !== a.themeColors.find(e => null !== e) && o.push(h.cm.THEME), (null == t ? true : t.avatarDecoration) != null && o.push(h.cm.AVATAR_DECORATION), (null == a ? true : a.profileEffect) != null && o.push(h.cm.PROFILE_EFFECT), o
   },
   I = e => {
     let t = s.Z.getStatus(e),
@@ -89,47 +89,47 @@ let v = e => {
   },
   T = e => null == e ? e : "VOICE" === e ? "VOICE" : Object.keys(m.IIU)[Object.values(m.IIU).indexOf(e)],
   S = e => {
-    var t, n;
+    var t, n, r;
     let {
-      layout: r,
-      userId: i,
-      guildId: a,
-      sessionId: l,
-      sourceSessionId: u,
-      showGuildProfile: d = true
-    } = e, f = c.default.getUser(i);
-    if (null == f) return {};
-    let _ = (0, p.Of)(null == f ? true : f.id, d ? a : true),
-      h = d && null != a ? o.ZP.getMember(a, null == f ? true : f.id) : null;
+      layout: i,
+      userId: a,
+      guildId: l,
+      sessionId: u,
+      sourceSessionId: d,
+      showGuildProfile: f = true
+    } = e, _ = c.default.getUser(a);
+    if (null == _) return {};
+    let h = (0, p.Of)(null == _ ? true : _.id, f ? l : true),
+      m = f && null != l ? o.ZP.getMember(l, null == _ ? true : _.id) : null;
     return {
-      profile_layout: r,
-      profile_session_id: l,
-      source_profile_session_id: u,
+      profile_layout: i,
+      profile_session_id: u,
+      source_profile_session_id: d,
       profile_properties: v({
-        user: f,
-        userProfile: null == _ ? true : _._userProfile
+        user: _,
+        userProfile: null == h ? true : h._userProfile
       }),
       guild_profile_properties: v({
-        guildMember: h,
-        guildMemberProfile: null == _ ? true : _._guildMemberProfile
+        guildMember: m,
+        guildMemberProfile: null == h ? true : h._guildMemberProfile
       }),
-      profile_activity_types: s.Z.getActivities(f.id).map(e => {
+      profile_activity_types: s.Z.getActivities(_.id).map(e => {
         let {
           type: t
         } = e;
         return t
       }).filter(e => true !== e),
-      profile_badges: null == _ || null == (t = _.getBadges()) ? true : t.map(e => {
+      profile_badges: null == h || null == (t = h.getBadges()) ? true : t.map(e => {
         let {
           id: t
         } = e;
         return t
       }),
-      avatar_decoration_sku_id: null == (n = f.avatarDecoration) ? true : n.skuId,
-      profile_effect_sku_id: null == _ ? true : _.profileEffectId,
-      user_status: I(f.id),
-      is_guild_profile: (null == _ ? true : _.guildId) != null,
-      is_bot_profile: f.bot
+      avatar_decoration_sku_id: null == (n = _.avatarDecoration) ? true : n.skuId,
+      profile_effect_sku_id: null == h || null == (r = h.profileEffect) ? true : r.skuId,
+      user_status: I(_.id),
+      is_guild_profile: (null == h ? true : h.guildId) != null,
+      is_bot_profile: _.bot
     }
   },
   A = e => {

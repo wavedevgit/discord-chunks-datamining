@@ -200,7 +200,7 @@ function er(e) {
                   className: et.toast
                 }), (0, r.jsxs)("div", {
                   className: et.profile,
-                  ref: (null == eT ? true : eT.profileEffectId) != null ? ev : true,
+                  ref: (null == eT ? true : eT.profileEffect) != null ? ev : true,
                   children: [(0, r.jsxs)("div", {
                     className: et.profileHeader,
                     children: [(0, r.jsx)(S.Z, {
@@ -363,8 +363,8 @@ function er(e) {
                         }, ej))
                       })
                     })]
-                  }), (null == eT ? true : eT.profileEffectId) != null && (0, r.jsx)(h.Z, {
-                    profileEffectId: null == eT ? true : eT.profileEffectId,
+                  }), (null == eT ? true : eT.profileEffect) != null && (0, r.jsx)(h.Z, {
+                    profileEffectId: null == eT ? true : eT.profileEffect.id,
                     isHovering: e_
                   })]
                 }), (0, r.jsx)(H.Z, {

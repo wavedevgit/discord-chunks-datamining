@@ -91,33 +91,35 @@ let k = false,
 
 function G(e) {
   let t = C.get(e);
-  if ((null == t ? true : t.profileEffectExpiresAt) == null) return;
-  let n = 1e3 * t.profileEffectExpiresAt + h.Cm - Date.now();
-  if (n <= 0) t.profileEffectId = true, t.profileEffectExpiresAt = true, R.delete(e), eu.emitChange();
-  else {
-    let t = R.get(e);
-    if (null == t) return;
-    t.start(Math.min(A, n), () => G(e))
+  if (null == t) return;
+  let n = t.profileEffect;
+  if ((null == n ? true : n.expiresAt) == null) return;
+  let r = 1e3 * n.expiresAt + h.Cm - Date.now();
+  if (r <= 0) {
+    t.profileEffect = true, R.delete(e), eu.emitChange();
+    return
   }
+  let i = R.get(e);
+  null != i && i.start(Math.min(A, r), () => G(e))
 }
 
 function B(e, t) {
-  let n = N.get(e);
-  if (null == n) return;
-  let r = n.get(t);
-  if ((null == r ? true : r.profileEffectExpiresAt) == null) return;
-  let i = P.get(e),
-    a = 1e3 * r.profileEffectExpiresAt + h.Cm - Date.now();
-  if (a <= 0) n.set(t, y(E({}, r), {
-    profileEffectId: true,
-    profileEffectExpiresAt: true
-  })), null != i && i.delete(t), eu.emitChange();
-  else {
-    if (null == i) return;
-    let n = i.get(t);
-    if (null == n) return;
-    n.start(Math.min(A, a), () => B(e, t))
+  var n, r;
+  let i = N.get(e);
+  if (null == i) return;
+  let a = i.get(t);
+  if (null == a) return;
+  let o = a.profileEffect;
+  if ((null == o ? true : o.expiresAt) == null) return;
+  let s = 1e3 * o.expiresAt + h.Cm - Date.now();
+  if (s <= 0) {
+    i.set(t, y(E({}, a), {
+      profileEffect: true
+    })), null == (r = P.get(e)) || r.delete(t), eu.emitChange();
+    return
   }
+  let l = null == (n = P.get(e)) ? true : n.get(t);
+  null != l && l.start(Math.min(A, s), () => B(e, t))
 }
 
 function Z() {
@@ -156,14 +158,14 @@ function Y(e) {
 }
 
 function W(e) {
-  var t, n, r, i, s, l, c, d, f, h, g, b, A, j, k, Z, V, F, Y, W, z, q, X, Q, J, $, ee, et;
+  var t, n, r, i, s, l, c, d, f, h, g, b, A, j, k, Z, V, F, Y, W, z;
   let {
-    userProfile: en,
-    fetchStartedAt: er
-  } = e, ei = null != (Z = null == (t = en.guild_member_profile) ? true : t.guild_id) ? Z : O;
-  if (null == (n = v.get(en.user.id)) || n.delete(ei), I.delete(en.user.id), null != en.mutual_guilds) {
+    userProfile: q,
+    fetchStartedAt: X
+  } = e, Q = null != (A = null == (t = q.guild_member_profile) ? true : t.guild_id) ? A : O;
+  if (null == (n = v.get(q.user.id)) || n.delete(Q), I.delete(q.user.id), null != q.mutual_guilds) {
     let e = {};
-    en.mutual_guilds.forEach(t => {
+    q.mutual_guilds.forEach(t => {
       let {
         id: n,
         nick: r
@@ -172,101 +174,109 @@ function W(e) {
         guild: i,
         nick: r
       })
-    }), x.set(en.user.id, _.ZP.getFlattenedGuildIds().filter(t => null != e[t]).map(t => ({
+    }), x.set(q.user.id, _.ZP.getFlattenedGuildIds().filter(t => null != e[t]).map(t => ({
       guild: e[t].guild,
       nick: e[t].nick
     })))
   }
-  if (null != en.mutual_friends_count) {
-    let e = en.mutual_friends_count;
-    D.set(en.user.id, e), 0 === e && w.set(en.user.id, L)
+  if (null != q.mutual_friends_count) {
+    let e = q.mutual_friends_count;
+    D.set(q.user.id, e), 0 === e && w.set(q.user.id, L)
   }
-  null != en.mutual_friends && (w.set(en.user.id, H(en.mutual_friends)), D.set(en.user.id, en.mutual_friends.length));
-  let ea = null != en.premium_since ? new Date(en.premium_since) : null,
-    eo = null != en.premium_guild_since ? new Date(en.premium_guild_since) : null,
-    es = en.application,
-    el = null != en.badges ? en.badges.map(e => {
+  null != q.mutual_friends && (w.set(q.user.id, H(q.mutual_friends)), D.set(q.user.id, q.mutual_friends.length));
+  let J = null != q.premium_since ? new Date(q.premium_since) : null,
+    $ = null != q.premium_guild_since ? new Date(q.premium_guild_since) : null,
+    ee = q.application,
+    et = null == (r = q.user_profile) ? true : r.profile_effect,
+    en = null != q.badges ? q.badges.map(e => {
       let t = (0, p.fv)(e.id);
-      if ((e.id === T || null != t) && null != ea) {
+      if ((e.id === T || null != t) && null != J) {
         let n = m.intl.formatToPlainString(m.t["8zbGNT"], {
-          date: ea
+          date: J
         });
         return null != t && (n = m.intl.formatToPlainString(m.t.Hu4jfn, {
-          date: ea
+          date: J
         })), y(E({}, e), {
           description: n
         })
       }
-      return e.id.startsWith(S) && null != eo ? y(E({}, e), {
+      return e.id.startsWith(S) && null != $ ? y(E({}, e), {
         description: m.intl.formatToPlainString(m.t.IWkAq6, {
-          date: eo
+          date: $
         })
       }) : e
     }) : [];
-  if (null != U && U.userId === en.user.id && (Date.now() > U.expiresAtMs ? U = null : K(el, U)), C.set(en.user.id, {
-      userId: en.user.id,
-      banner: null == (r = en.user_profile) ? true : r.banner,
-      accentColor: null == (i = en.user_profile) ? true : i.accent_color,
-      themeColors: null == (s = en.user_profile) ? true : s.theme_colors,
-      popoutAnimationParticleType: null == (l = en.user_profile) ? true : l.popout_animation_particle_type,
-      bio: null != (V = null == (c = en.user_profile) ? true : c.bio) ? V : "",
-      profileEffectId: null == (f = en.user_profile) || null == (d = f.profile_effect) ? true : d.id,
-      profileEffectExpiresAt: null == (g = en.user_profile) || null == (h = g.profile_effect) ? true : h.expires_at,
-      pronouns: null != (F = null == (b = en.user_profile) ? true : b.pronouns) ? F : "",
-      connectedAccounts: null != (Y = en.connected_accounts.filter(e => o.Z.isSupported(e.type))) ? Y : [],
-      applicationRoleConnections: null != (W = en.application_role_connections) ? W : [],
-      premiumSince: ea,
-      premiumType: en.premium_type,
-      premiumGuildSince: eo,
-      fetchStartedAt: er,
+  if (null != U && U.userId === q.user.id && (Date.now() > U.expiresAtMs ? U = null : K(en, U)), C.set(q.user.id, {
+      userId: q.user.id,
+      banner: null == (i = q.user_profile) ? true : i.banner,
+      accentColor: null == (s = q.user_profile) ? true : s.accent_color,
+      themeColors: null == (l = q.user_profile) ? true : l.theme_colors,
+      popoutAnimationParticleType: null == (c = q.user_profile) ? true : c.popout_animation_particle_type,
+      bio: null != (j = null == (d = q.user_profile) ? true : d.bio) ? j : "",
+      profileEffect: null != et ? {
+        id: et.id,
+        skuId: et.sku_id,
+        expiresAt: et.expires_at
+      } : true,
+      pronouns: null != (k = null == (f = q.user_profile) ? true : f.pronouns) ? k : "",
+      connectedAccounts: null != (Z = q.connected_accounts.filter(e => o.Z.isSupported(e.type))) ? Z : [],
+      applicationRoleConnections: null != (V = q.application_role_connections) ? V : [],
+      premiumSince: J,
+      premiumType: q.premium_type,
+      premiumGuildSince: $,
+      fetchStartedAt: X,
       fetchEndedAt: Date.now(),
-      legacyUsername: en.legacy_username,
-      application: null != es ? {
-        id: es.id,
-        primarySkuId: es.primary_sku_id,
-        customInstallUrl: es.custom_install_url,
-        installParams: es.install_params,
-        integrationTypesConfig: es.integration_types_config,
-        flags: es.flags,
-        popularApplicationCommandIds: es.popular_application_command_ids,
-        storefront_available: es.storefront_available,
-        name: es.name
+      legacyUsername: q.legacy_username,
+      application: null != ee ? {
+        id: ee.id,
+        primarySkuId: ee.primary_sku_id,
+        customInstallUrl: ee.custom_install_url,
+        installParams: ee.install_params,
+        integrationTypesConfig: ee.integration_types_config,
+        flags: ee.flags,
+        popularApplicationCommandIds: ee.popular_application_command_ids,
+        storefront_available: ee.storefront_available,
+        name: ee.name
       } : null,
-      badges: el,
-      widgets: null == (A = en.widgets) ? true : A.map(M)
-    }), (null == (k = en.user_profile) || null == (j = k.profile_effect) ? true : j.expires_at) != null) {
+      badges: en,
+      widgets: null == (h = q.widgets) ? true : h.map(M)
+    }), (null == (b = q.user_profile) || null == (g = b.profile_effect) ? true : g.expires_at) != null) {
     let e = new a.V7;
-    R.set(en.user.id, e), G(en.user.id)
+    R.set(q.user.id, e), G(q.user.id)
   }
-  if (null != en.guild_member_profile) {
-    let e = {
-        userId: en.user.id,
-        guildId: en.guild_member_profile.guild_id,
-        banner: en.guild_member_profile.banner,
-        accentColor: en.guild_member_profile.accent_color,
-        themeColors: null == (z = en.guild_member_profile) ? true : z.theme_colors,
-        popoutAnimationParticleType: null == (q = en.guild_member_profile) ? true : q.popout_animation_particle_type,
-        profileEffectId: null == (Q = en.guild_member_profile) || null == (X = Q.profile_effect) ? true : X.id,
-        profileEffectExpiresAt: null == ($ = en.guild_member_profile) || null == (J = $.profile_effect) ? true : J.expires_at,
-        bio: en.guild_member_profile.bio,
-        pronouns: en.guild_member_profile.pronouns,
-        badges: en.guild_badges
+  if (null != q.guild_member_profile) {
+    let e = q.guild_member_profile.profile_effect,
+      t = {
+        userId: q.user.id,
+        guildId: q.guild_member_profile.guild_id,
+        banner: q.guild_member_profile.banner,
+        accentColor: q.guild_member_profile.accent_color,
+        themeColors: null == (F = q.guild_member_profile) ? true : F.theme_colors,
+        popoutAnimationParticleType: null == (Y = q.guild_member_profile) ? true : Y.popout_animation_particle_type,
+        profileEffect: null != e ? {
+          id: e.id,
+          skuId: e.sku_id,
+          expiresAt: e.expires_at
+        } : true,
+        bio: q.guild_member_profile.bio,
+        pronouns: q.guild_member_profile.pronouns,
+        badges: q.guild_badges
       },
-      t = N.get(en.user.id);
-    if (null != t) t.set(en.guild_member_profile.guild_id, e);
+      n = N.get(q.user.id);
+    if (null != n) n.set(q.guild_member_profile.guild_id, t);
     else {
-      let t = new Map;
-      t.set(en.guild_member_profile.guild_id, e), N.set(en.user.id, t)
+      let e = new Map;
+      e.set(q.guild_member_profile.guild_id, t), N.set(q.user.id, e)
     }
-    if ((null == (et = en.guild_member_profile) || null == (ee = et.profile_effect) ? true : ee.expires_at) != null) {
+    if ((null == (z = q.guild_member_profile) || null == (W = z.profile_effect) ? true : W.expires_at) != null) {
       let e = new a.V7,
-        t = P.get(en.user.id);
-      if (null != t) t.set(en.guild_member_profile.guild_id, e);
+        t = P.get(q.user.id);
+      if (null != t) t.set(q.guild_member_profile.guild_id, e);
       else {
         let t = new Map;
-        t.set(en.guild_member_profile.guild_id, e), P.set(en.user.id, t)
+        t.set(q.guild_member_profile.guild_id, e), P.set(q.user.id, t)
       }
-      B(en.user.id, en.guild_member_profile.guild_id)
+      B(q.user.id, q.guild_member_profile.guild_id)
     }
   }
 }
@@ -330,20 +340,22 @@ function X(e) {
     pronouns: o,
     popout_animation_particle_type: s,
     theme_colors: l,
-    profileEffectId: c,
-    profileEffectExpiresAt: u
-  } = e, d = C.get(t);
-  if (null == d) returnfalse;
-  if (C.set(t, y(E({}, d), {
+    profile_effect: c
+  } = e, u = C.get(t);
+  if (null == u) returnfalse;
+  if (C.set(t, y(E({}, u), {
       accentColor: n,
       banner: r,
       bio: i,
       pronouns: o,
       popoutAnimationParticleType: s,
       themeColors: l,
-      profileEffectId: c,
-      profileEffectExpiresAt: u
-    })), null != u) {
+      profileEffect: null != c ? {
+        id: c.id,
+        skuId: c.sku_id,
+        expiresAt: c.expires_at
+      } : true
+    })), (null == c ? true : c.expires_at) != null) {
     let e = new a.V7;
     R.set(t, e), G(t)
   }
@@ -359,22 +371,24 @@ function Q(e) {
     pronouns: s,
     popout_animation_particle_type: l,
     theme_colors: c,
-    profileEffectId: u,
-    profileEffectExpiresAt: d
-  } = e, f = N.get(t);
-  if (null == n || null == f) returnfalse;
-  let _ = f.get(n);
-  if (null == _) returnfalse;
-  if (f.set(n, y(E({}, _), {
+    profile_effect: u
+  } = e, d = N.get(t);
+  if (null == n || null == d) returnfalse;
+  let f = d.get(n);
+  if (null == f) returnfalse;
+  if (d.set(n, y(E({}, f), {
       accentColor: r,
       banner: i,
       bio: o,
       pronouns: s,
       popoutAnimationParticleType: l,
       themeColors: c,
-      profileEffectId: u,
-      profileEffectExpiresAt: d
-    })), null != d) {
+      profileEffect: null != u ? {
+        id: u.id,
+        skuId: u.sku_id,
+        expiresAt: u.expires_at
+      } : true
+    })), (null == u ? true : u.expires_at) != null) {
     let e = new a.V7,
       r = P.get(t);
     if (null != r) r.set(n, e);
