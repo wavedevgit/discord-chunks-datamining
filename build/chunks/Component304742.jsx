@@ -1,24 +1,24 @@
 /** Chunk was on 45620 **/
-/** chunk id: 304742, original params: e,t,r (module,exports,require) **/
+/** chunk id: 304742, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk642909 = require("./642909.js"),
   Chunk215023 = require("./215023.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk345213 = require("./345213.js");
 
-function p(e) {
+function g(e) {
   let {
     handleTransition: t,
-    onClose: r
-  } = e, a = (0, s.G)("CollectiblesIndexPageContextMenu"), p = l.useMemo(() => [{
+    onClose: n
+  } = e, a = (0, o.G)("CollectiblesIndexPageContextMenu"), g = l.useMemo(() => [{
     label: u.intl.string(u.t.dRZYND),
     value: c.AW.AVATAR_DECORATIONS
   }, {
@@ -34,19 +34,19 @@ function p(e) {
     label: u.intl.string(u.t.xFcotb),
     value: c.AW.CATALOG
   }], []);
-  return (0, n.jsx)("div", {
-    className: i()({
+  return (0, r.jsx)("div", {
+    className: s()({
       [d.shopTakeOver]: a
     }),
-    children: (0, n.jsx)(o.v2r, {
+    children: (0, r.jsx)(i.v2r, {
       navId: "collectibles-index-page-menu",
-      className: i()({
+      className: s()({
         [d.shopTakeOver]: a
       }),
-      onClose: r,
+      onClose: n,
       "aria-label": u.intl.string(u.t.xFcotb),
       onSelect: () => {},
-      children: p.map(e => (0, n.jsx)(o.sNh, {
+      children: g.map(e => (0, r.jsx)(i.sNh, {
         id: e.value,
         label: e.label,
         action: () => {

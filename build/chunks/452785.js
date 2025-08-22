@@ -1,5 +1,5 @@
 /** Chunk was on 45620 **/
-/** chunk id: 452785, original params: e,t,r (module,exports,require) **/
+/** chunk id: 452785, original params: e,t,n (module,exports,require) **/
 "use strict";
 module.exports = {
   inventory: "inventory__1feb0",

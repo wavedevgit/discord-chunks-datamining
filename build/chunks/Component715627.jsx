@@ -1,4 +1,4 @@
-/** Chunk was on 92446 **/
+/** Chunk was on 38029 **/
 /** chunk id: 715627, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -21,22 +21,22 @@ let o = {
       colors: i,
       emojiURL: c,
       numBursts: d,
-      particlesPerBurst: p,
-      offsetXPercentageMax: f,
+      particlesPerBurst: f,
+      offsetXPercentageMax: p,
       offsetXPercentageMin: m,
       offsetYPercentageMax: h,
       offsetYPercentageMin: g,
       customConfettiCanvas: y,
-      speedValues: O = o,
-      dragCoefficientValue: b = 1.66,
-      onAnimationEnd: j
-    } = t, [P, S] = r.useState(null), {
-      confettiCanvas: v
-    } = r.useContext(s.h), x = (0, l.uR)(null != y ? y : v, P), [Z, w] = r.useState(false);
+      speedValues: b = o,
+      dragCoefficientValue: O = 1.66,
+      onAnimationEnd: P
+    } = t, [v, j] = r.useState(null), {
+      confettiCanvas: S
+    } = r.useContext(s.h), x = (0, l.uR)(null != y ? y : S, v), [w, Z] = r.useState(false);
     r.useEffect(() => {
-      Z && (null == j || j())
+      w && (null == P || P())
     });
-    let C = r.useMemo(() => {
+    let _ = r.useMemo(() => {
       if (null != c) return [{
         src: c,
         colorize: false
@@ -50,15 +50,15 @@ let o = {
           var l, s;
           let c = arguments.length > 5 && true !== arguments[5] ? arguments[5] : o,
             d = arguments.length > 6 && true !== arguments[6] ? arguments[6] : 1.66,
-            p = u(t.width, 100, i),
-            f = u(t.height, 75, r),
+            f = u(t.width, 100, i),
+            p = u(t.height, 75, r),
             m = u(t.width, 350, e),
             h = u(t.height, 75, n),
             {
               xMin: g,
               xMax: y,
-              yMin: O,
-              yMax: b
+              yMin: b,
+              yMax: O
             } = c;
           return l = function(t) {
             for (var e = 1; e < arguments.length; e++) {
@@ -81,8 +81,8 @@ let o = {
             position: {
               type: "static-random",
               minValue: {
-                x: t.left + p,
-                y: t.top + f
+                x: t.left + f,
+                y: t.top + p
               },
               maxValue: {
                 x: t.left + m,
@@ -93,11 +93,11 @@ let o = {
               type: "static-random",
               minValue: {
                 x: g,
-                y: O
+                y: b
               },
               maxValue: {
                 x: y,
-                y: b
+                y: O
               }
             },
             size: {
@@ -119,13 +119,13 @@ let o = {
           })(Object(s)).forEach(function(t) {
             Object.defineProperty(l, t, Object.getOwnPropertyDescriptor(s, t))
           }), l
-        }(e.getBoundingClientRect(), f, m, h, g, O, b), null != p ? p : 50), n === t.length - 1 && null != j && w(true)
+        }(e.getBoundingClientRect(), p, m, h, g, b, O), null != f ? f : 50), n === t.length - 1 && null != P && Z(true)
       }, 60 * n)), () => {
         for (let e of t) clearTimeout(e)
       }
-    }, [x, e, d, p, f, m, h, g, O, b, j]), (0, n.jsx)(l.Ji, {
-      ref: S,
-      sprites: null != C ? C : a.CA,
+    }, [x, e, d, f, p, m, h, g, b, O, P]), (0, n.jsx)(l.Ji, {
+      ref: j,
+      sprites: null != _ ? _ : a.CA,
       colors: null != i ? i : a.Br,
       spriteWidth: a.Ko,
       spriteHeight: a.Ko

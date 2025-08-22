@@ -1,12 +1,11 @@
-/** Chunk was on 13387 **/
-/** chunk id: 653079, original params: e,t,r (module,exports,require) **/
-"use strict";
+/** Chunk was on 8895 **/
+/** chunk id: 653079, original params: e,l,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => m
 });
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk597688 = require("./597688.js"),
@@ -15,49 +14,49 @@ var Chunk951288 = require("./951288.js"),
   Chunk25990 = require("./25990.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk763740 = require("./763740.js");
-let f = e => {
+let m = e => {
   let {
-    user: t,
-    guildId: r,
+    user: l,
+    guildId: n,
     selectedNameplate: i,
-    purchased: f
-  } = e, b = (0, l.e7)([s.Z], () => s.Z.getProduct(null == i ? true : i.skuId)), m = (0, l.e7)([d.Z], () => d.Z.getPendingGlobalName());
-  return (0, n.jsxs)("div", {
-    className: a()(v.previewBorder, {
-      [v.upsell]: !f && null != i
+    purchased: m
+  } = e, v = (0, a.e7)([o.Z], () => o.Z.getProduct(null == i ? true : i.skuId)), h = (0, a.e7)([u.Z], () => u.Z.getPendingGlobalName());
+  return (0, t.jsxs)("div", {
+    className: s()(p.previewBorder, {
+      [p.upsell]: !m && null != i
     }),
-    children: [(0, n.jsx)("div", {
-      className: v.previewBox,
-      children: (0, n.jsxs)("div", {
-        className: v.previewContents,
-        children: [(0, n.jsx)(c.d, {
+    children: [(0, t.jsx)("div", {
+      className: p.previewBox,
+      children: (0, t.jsxs)("div", {
+        className: p.previewContents,
+        children: [(0, t.jsx)(d.d, {
           width: 124,
           opacity: .9
-        }), (0, n.jsx)(c.d, {
+        }), (0, t.jsx)(d.d, {
           width: 124,
           opacity: .9
-        }), (0, n.jsx)(u.Z, {
-          user: t,
-          guildId: r,
+        }), (0, t.jsx)(c.Z, {
+          user: l,
+          guildId: n,
           nameplate: i,
-          pendingGlobalName: m,
+          pendingGlobalName: h,
           isHighlighted: true
-        }), (0, n.jsx)(c.d, {
+        }), (0, t.jsx)(d.d, {
           width: 124,
           opacity: .9
-        }), (0, n.jsx)(c.d, {
+        }), (0, t.jsx)(d.d, {
           width: 124,
           opacity: .9
         })]
       })
-    }), null != i ? (0, n.jsxs)("div", {
-      className: v.previewDescription,
-      children: [(0, n.jsx)(o.Text, {
+    }), null != i ? (0, t.jsxs)("div", {
+      className: p.previewDescription,
+      children: [(0, t.jsx)(r.Text, {
         variant: "text-sm/semibold",
-        children: null == b ? true : b.name
-      }), f ? null : (0, n.jsx)(o.Text, {
+        children: null == v ? true : v.name
+      }), m ? null : (0, t.jsx)(r.Text, {
         variant: "text-sm/normal",
-        children: p.intl.string(p.t.fEGjVV)
+        children: x.intl.string(x.t.fEGjVV)
       })]
     }) : null]
   })

@@ -1,5 +1,5 @@
-/** Chunk was on 78676 **/
-/** chunk id: 948067, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 38029 **/
+/** chunk id: 948067, original params: t,e,i (module,exports,require) **/
 module.exports = {
   avatarDecorationPreview: "avatarDecorationPreview__9baf3",
   profileEffectPreview: "profileEffectPreview__9baf3",

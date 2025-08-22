@@ -1,5 +1,5 @@
 /** Chunk was on 45620 **/
-/** chunk id: 888302, original params: e,t,r (module,exports,require) **/
+/** chunk id: 888302, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
   Z: () => u
@@ -17,9 +17,9 @@ function u() {
     itemTypeFilters: e,
     searchQuery: t
   } = (0, Chunk501431.S)(e => e), {
-    totalCount: r,
+    totalCount: n,
     isFetchingResults: u
-  } = (0, Chunk149705.a)(), d = (0, Chunk501431.S)(e => e.hasFilters()), p = Chunk647438.useCallback(() => {
+  } = (0, Chunk149705.a)(), d = (0, Chunk501431.S)(e => e.hasFilters()), g = Chunk647438.useCallback(() => {
     if (!d) return "";
     if (u) return Chunk388032.intl.string(Chunk388032.t["/FaMSE"]);
     if ("" !== exports) {
@@ -43,6 +43,6 @@ function u() {
   }, [module, require, d, exports, u]);
   return (0, Chunk951288.jsx)(Chunk481060.X6q, {
     variant: "heading-lg/semibold",
-    children: p()
+    children: g()
   })
 }

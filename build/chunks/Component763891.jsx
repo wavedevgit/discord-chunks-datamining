@@ -1,5 +1,5 @@
 /** Chunk was on 45620 **/
-/** chunk id: 763891, original params: e,t,r (module,exports,require) **/
+/** chunk id: 763891, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
   Z: () => N
@@ -37,90 +37,90 @@ var Chunk951288 = require("./951288.js"),
 function N(e) {
   var t;
   let {
-    isFetchingCategories: r,
+    isFetchingCategories: n,
     isFullScreen: N,
-    scrollerRef: A,
-    tab: w
-  } = e, B = (0, p.sp)(), R = null != (t = null == B ? true : B.sessionId) ? t : "", {
-    noCache: Z,
-    includeUnpublished: D
-  } = (0, v.Z)(), M = (0, i.e7)([u.default], () => u.default.getCurrentUser()), F = (0, i.e7)([g.Z], () => g.Z.productsWithVariantsAsGroup), [H, W] = l.useState(1), U = (0, c.Fg)(), V = (0, o.ap)(U), [z, G, q] = l.useMemo(() => {
-    switch (w) {
-      case O.AW.AVATAR_DECORATIONS:
-        return [E.intl.string(E.t.dRZYND), V ? T.Z : j.Z, a.Z.AVATAR_DECORATION];
-      case O.AW.PROFILE_EFFECTS:
-        return [E.intl.string(E.t["1cNjt7"]), V ? I.Z : k.Z, a.Z.PROFILE_EFFECT];
-      case O.AW.NAMEPLATES:
-        return [E.intl.string(E.t.V68Fq6), V ? L.Z : P.Z, a.Z.NAMEPLATE];
-      case O.AW.BUNDLES:
-        return [E.intl.string(E.t.FYFppq), V ? x.Z : S.Z, a.Z.BUNDLE]
+    scrollerRef: P,
+    tab: A
+  } = e, R = (0, g.sp)(), Z = null != (t = null == R ? true : R.sessionId) ? t : "", {
+    noCache: w,
+    includeUnpublished: F
+  } = (0, C.Z)(), D = (0, s.e7)([u.default], () => u.default.getCurrentUser()), M = (0, s.e7)([f.Z], () => f.Z.productsWithVariantsAsGroup), [H, W] = l.useState(1), U = (0, c.Fg)(), V = (0, i.ap)(U), [z, G, q] = l.useMemo(() => {
+    switch (A) {
+      case E.AW.AVATAR_DECORATIONS:
+        return [O.intl.string(O.t.dRZYND), V ? L.Z : T.Z, a.Z.AVATAR_DECORATION];
+      case E.AW.PROFILE_EFFECTS:
+        return [O.intl.string(O.t["1cNjt7"]), V ? B.Z : I.Z, a.Z.PROFILE_EFFECT];
+      case E.AW.NAMEPLATES:
+        return [O.intl.string(O.t.V68Fq6), V ? k.Z : j.Z, a.Z.NAMEPLATE];
+      case E.AW.BUNDLES:
+        return [O.intl.string(O.t.FYFppq), V ? y.Z : x.Z, a.Z.BUNDLE]
     }
-  }, [w, V]), K = (0, f.a)(), Y = l.useMemo(() => K(F.filter(e => {
+  }, [A, V]), K = (0, p.a)(), Y = l.useMemo(() => K(M.filter(e => {
     var t;
     return e.type === q || e.type === a.Z.VARIANTS_GROUP && (null == (t = e.variants) ? true : t.some(e => e.type === q)) === true
-  })), [F, q, K]), X = (0, m.l)(Y);
+  })), [M, q, K]), X = (0, m.l)(Y);
   return (l.useEffect(() => {
-    (0, b.n)({
-      sessionId: R,
-      checkpoint: b.a.SHOP_MOUNTED,
-      tab: w,
+    (0, _.n)({
+      sessionId: Z,
+      checkpoint: _.a.SHOP_MOUNTED,
+      tab: A,
       isFullScreen: N,
-      unpublishedCategoriesShown: D,
-      cacheDisabled: Z
+      unpublishedCategoriesShown: F,
+      cacheDisabled: w
     })
   }, []), l.useEffect(() => {
-    r || (0, b.n)({
-      sessionId: R,
-      checkpoint: b.a.SHOP_RENDERED,
-      tab: w,
+    n || (0, _.n)({
+      sessionId: Z,
+      checkpoint: _.a.SHOP_RENDERED,
+      tab: A,
       isFullScreen: N,
-      unpublishedCategoriesShown: D,
-      cacheDisabled: Z
+      unpublishedCategoriesShown: F,
+      cacheDisabled: w
     })
-  }, [R, N, D, Z, r, w]), r || null == M) ? (0, n.jsx)(h.Z, {}) : (0, n.jsxs)(n.Fragment, {
-    children: [(0, n.jsx)("div", {
+  }, [Z, N, F, w, n, A]), n || null == D) ? (0, r.jsx)(h.Z, {}) : (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)("div", {
       style: {
         backgroundImage: "url(".concat(G, ")")
       },
-      className: y.bannerContainer,
-      children: (0, n.jsx)(s.X6q, {
+      className: v.bannerContainer,
+      children: (0, r.jsx)(o.X6q, {
         variant: "heading-xxl/extrabold",
         children: z
       })
-    }), (0, n.jsx)("div", {
-      className: y.products,
+    }), (0, r.jsx)("div", {
+      className: v.products,
       children: X.slice(40 * (H - 1), 40 * H).map((e, t) => {
-        let r = g.Z.getCategory(e.categorySkuId);
-        return null == r ? null : (0, n.jsx)(p.k0, {
+        let n = f.Z.getCategory(e.categorySkuId);
+        return null == n ? null : (0, r.jsx)(g.k0, {
           newValue: {
             tilePosition: t
           },
-          children: (0, n.jsx)(_.Z, {
+          children: (0, r.jsx)(b.Z, {
             product: e,
-            user: M,
-            category: r,
-            tab: w
+            user: D,
+            category: n,
+            tab: A
           }, e.skuId)
         }, e.skuId)
       })
-    }), X.length > 40 && (0, n.jsx)("div", {
-      className: y.paginationContainer,
-      children: (0, n.jsx)("div", {
-        children: (0, n.jsx)(s.DsT, {
+    }), X.length > 40 && (0, r.jsx)("div", {
+      className: v.paginationContainer,
+      children: (0, r.jsx)("div", {
+        children: (0, r.jsx)(o.DsT, {
           currentPage: H,
           totalCount: X.length,
           pageSize: 40,
           onPageChange: e => {
             var t;
-            d.default.track(C.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-              collectibles_shop_session_id: null == B ? true : B.sessionId,
-              page_section: null == B ? true : B.pageSection,
-              page_category: null == B ? true : B.pageCategory,
+            d.default.track(S.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+              collectibles_shop_session_id: null == R ? true : R.sessionId,
+              page_section: null == R ? true : R.pageSection,
+              page_category: null == R ? true : R.pageCategory,
               page_index: e,
               page_size: 40,
-              cta_name: "".concat(w, " page ").concat(e),
-              page_type: w
-            }), W(e), null == A || null == (t = A.current) || t.scrollToTop({
+              cta_name: "".concat(A, " page ").concat(e),
+              page_type: A
+            }), W(e), null == P || null == (t = P.current) || t.scrollToTop({
               animate: true
             })
           },

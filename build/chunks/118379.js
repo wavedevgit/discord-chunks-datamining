@@ -4,6 +4,6 @@ require.d(exports, {
   Z: () => r
 });
 let r = (0, require("./663993.js").Un)({
-  createPromise: () => Promise.all([require.e("32104"), require.e("45620")]).then(require.bind(require, 838819)),
+  createPromise: () => require.e("45620").then(require.bind(require, 838819)),
   webpackId: 838819
 })

@@ -1,5 +1,5 @@
-/** Chunk was on 45620 **/
-/** chunk id: 492851, original params: e,t,r (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 492851, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 module.exports = {
   priceTagsContainer: "priceTagsContainer_f73e93",

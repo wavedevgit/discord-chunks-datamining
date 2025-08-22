@@ -1,33 +1,33 @@
 /** Chunk was on 45620 **/
-/** chunk id: 312030, original params: e,t,r (module,exports,require) **/
+/** chunk id: 312030, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  h: () => i
+  h: () => s
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk180650 = require("./180650.js"),
   Chunk215023 = require("./215023.js");
-let i = e => {
+let s = e => {
   let {
     scrollerRef: t,
-    sortedCategories: r
-  } = e, [i, o] = n.useState(1), s = n.useCallback(e => {
-    let t = r.findIndex(t => t.skuId === e);
+    sortedCategories: n
+  } = e, [s, i] = r.useState(1), o = r.useCallback(e => {
+    let t = n.findIndex(t => t.skuId === e);
     return false === t ? 1 : Math.floor(t / a.kN) + 1
-  }, [r]), c = n.useCallback(e => {
+  }, [n]), c = r.useCallback(e => {
     if (null != e && e !== l.T.ORB) {
-      let t = s(e);
-      t !== i && o(t)
+      let t = o(e);
+      t !== s && i(t)
     }
-  }, [s, i, o]);
+  }, [o, s, i]);
   return {
-    currentPage: i,
-    handlePageChange: n.useCallback(e => {
-      var r;
-      o(e), null == (r = t.current) || r.scrollTo({
+    currentPage: s,
+    handlePageChange: r.useCallback(e => {
+      var n;
+      i(e), null == (n = t.current) || n.scrollTo({
         to: 0
       })
-    }, [t, o]),
+    }, [t, i]),
     scrollToCategory: c
   }
 }

@@ -1,5 +1,5 @@
-/** Chunk was on 45620 **/
-/** chunk id: 306092, original params: e,t,r (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 306092, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
   e: () => c
@@ -10,21 +10,21 @@ var Chunk951288 = require("./951288.js"),
   Chunk231338 = require("./231338.js"),
   Chunk453510 = require("./453510.js");
 
-function s(e) {
+function l(e) {
   let {
     price: t,
-    isPremiumUser: r,
-    discount: s,
+    isPremiumUser: n,
+    discount: l,
     hasSufficientOrbs: c,
     discountOfferAmount: u
   } = e;
-  return t.currency === i.pK.DISCORD_ORB ? (0, n.jsx)(a.Z, {
+  return t.currency === o.pK.DISCORD_ORB ? (0, r.jsx)(a.Z, {
     orbAmount: t.amount,
-    className: c ? true : o.disabled
-  }) : (0, n.jsx)(l.F, {
+    className: c ? true : s.disabled
+  }) : (0, r.jsx)(i.F, {
     price: t,
-    discount: s,
-    nitroIconType: r ? "default" : true,
+    discount: l,
+    nitroIconType: n ? "default" : true,
     nitroIconSize: "md",
     discountOfferAmount: u
   })
@@ -33,19 +33,19 @@ function s(e) {
 function c(e) {
   let {
     displayPrices: t,
-    isPremiumUser: r,
-    discount: l,
+    isPremiumUser: n,
+    discount: i,
     hasSufficientOrbs: a,
-    discountOfferAmount: i
+    discountOfferAmount: o
   } = e;
-  return (0, n.jsx)("div", {
-    className: o.priceLine,
-    children: t.map((e, t) => (0, n.jsx)(s, {
+  return (0, r.jsx)("div", {
+    className: s.priceLine,
+    children: t.map((e, t) => (0, r.jsx)(l, {
       price: e,
-      isPremiumUser: r,
-      discount: l,
+      isPremiumUser: n,
+      discount: i,
       hasSufficientOrbs: a,
-      discountOfferAmount: i
+      discountOfferAmount: o
     }, t))
   })
 }

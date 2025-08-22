@@ -1,7 +1,7 @@
 /** Chunk was on 87624 **/
-/** chunk id: 331042, original params: e,t,l (module,exports,require) **/
+/** chunk id: 331042, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  default: () => k
+  default: () => B
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -23,6 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk587792 = require("./587792.js"),
   Chunk635552 = require("./635552.js"),
   Chunk328456 = require("./328456.js"),
+  Chunk330349 = require("./330349.js"),
   Chunk530618 = require("./530618.jsx"),
   Chunk372654 = require("./372654.js"),
   Chunk197831 = require("./197831.jsx"),
@@ -32,134 +33,148 @@ var Chunk951288 = require("./951288.js"),
   Chunk302800 = require("./302800.js"),
   Chunk215023 = require("./215023.js"),
   Chunk222311 = require("./222311.js");
-let k = e => {
+let B = t => {
   let {
-    transitionState: t,
-    product: l,
-    onClose: k,
-    analyticsLocations: w,
-    overrideTitle: D,
-    overrideDescription: b,
-    shouldShowPromotionalExperience: j,
-    purchaseType: N = g.o8.FIAT
-  } = e, U = (0, a.e7)([h.Z], () => h.Z.purchases), M = (0, A.o)(l, U), V = (0, R.W)(l, M), {
-    analyticsLocations: B
-  } = (0, p.ZP)([...w, c.Z.COLLECTIBLES_COLLECTED_MODAL]), G = (e => {
-    let t = (0, _.o)("CollectiblesCollectedModal"),
-      l = (0, a.e7)([E.default], () => {
-        var e, t;
-        return null != (t = null == (e = E.default.getCurrentUser()) ? true : e.isStaff()) && t
+    transitionState: e,
+    product: n,
+    onClose: B,
+    analyticsLocations: Z,
+    overrideTitle: x,
+    overrideDescription: M,
+    shouldShowPromotionalExperience: D,
+    purchaseType: U = v.o8.FIAT
+  } = t, F = (0, u.e7)([A.Z], () => A.Z.purchases), w = (0, O.o)(n, F), j = (0, P.W)(n, w), {
+    analyticsLocations: V
+  } = (0, p.ZP)([...Z, c.Z.COLLECTIBLES_COLLECTED_MODAL]), G = (t => {
+    let e = (0, I.o)("CollectiblesCollectedModal"),
+      n = (0, u.e7)([E.default], () => {
+        var t, e;
+        return null != (e = null == (t = E.default.getCurrentUser()) ? true : t.isStaff()) && e
       });
-    return n.useMemo(() => {
-      if (!t || e.type !== i.Z.AVATAR_DECORATION) return;
-      let r = (0, Z.R9)(e.skuId, l);
-      if (null == r) return;
-      let n = v.Z.getProduct(r);
-      return null != n ? n : true
-    }, [t, e.skuId, e.type, l])
-  })(V), {
-    hasRequiredProductItems: W
-  } = (e => {
+    return r.useMemo(() => {
+      if (!e || t.type !== a.Z.AVATAR_DECORATION) return;
+      let i = (0, S.R9)(t.skuId, n);
+      if (null == i) return;
+      let r = C.Z.getProduct(i);
+      return null != r ? r : true
+    }, [e, t.skuId, t.type, n])
+  })(j), {
+    hasRequiredProductItems: H
+  } = (t => {
     let {
-      firstProfileEffect: t,
-      firstAvatarDecoration: l
-    } = (0, L.Rj)(e), r = (0, P.x6)(e);
+      firstProfileEffect: e,
+      firstAvatarDecoration: n,
+      firstNameplate: i
+    } = (0, m.Rj)(t), r = (0, _.x6)(t);
     return {
-      firstAvatarDecoration: l,
-      firstProfileEffect: t,
+      firstAvatarDecoration: n,
+      firstProfileEffect: e,
+      firstNameplate: i,
       isBundle: r,
-      hasRequiredProductItems: r ? null != l && null != t : null != l || null != t || e.type === i.Z.NAMEPLATE
+      hasRequiredProductItems: r ? (0, g.N)(t) : null != n || null != e || null != i
     }
-  })(V), {
-    promotionalRewardCollectedText: $,
+  })(j), {
+    promotionalRewardCollectedText: W,
     openProfileSettings: X
-  } = (e => {
-    var t;
-    let l = (0, f.Z)(),
-      r = (0, C.Z)({
-        analyticsLocations: e
+  } = (t => {
+    var e;
+    let n = (0, f.Z)(),
+      i = (0, h.Z)({
+        analyticsLocations: t
       });
     return {
-      giftingPromotionConfig: l,
-      promotionalRewardCollectedText: null == l || null == (t = l.giftPurchaseConfirmation) ? true : t.rewardCollectedText(),
-      openProfileSettings: r
+      giftingPromotionConfig: n,
+      promotionalRewardCollectedText: null == n || null == (e = n.giftPurchaseConfirmation) ? true : e.rewardCollectedText(),
+      openProfileSettings: i
     }
-  })(B), {
-    environment: q,
-    modalRef: F,
-    confettiCanvas: H,
-    setConfettiCanvas: K,
+  })(V), {
+    environment: $,
+    modalRef: Q,
+    confettiCanvas: Y,
+    setConfettiCanvas: q,
     customConfettiDisplayOptions: z
-  } = (0, S.$0)(V, N);
-  (0, S.f1)(V, B);
-  let J = (0, x.kd)(V),
-    Q = (0, x.kd)(G),
+  } = (0, y.$0)(j, U);
+  (0, y.f1)(j, V);
+  let K = (0, b.kd)(j),
+    J = (0, b.kd)(G),
     {
-      handleUseNow: Y,
-      isApplying: ee
+      handleUseNow: tt,
+      isApplying: te
     } = (0, T.W)({
-      product: V,
-      onSuccess: k,
-      onError: k
+      product: j,
+      onSuccess: B,
+      onError: B
     }),
-    et = (0, S.Xw)({
-      product: V,
+    tn = (0, y.Xw)({
+      product: j,
       pairedProduct: G,
-      overrideTitle: D,
+      overrideTitle: x,
       isVariantsGroupEnabled: true,
-      shouldShowPromotionalExperience: j,
-      productName: J,
-      pairedProductName: Q
+      shouldShowPromotionalExperience: D,
+      productName: K,
+      pairedProductName: J
     }),
-    el = (0, S.ys)({
-      product: V,
+    ti = (0, y.ys)({
+      product: j,
       pairedProduct: G,
-      overrideDescription: b,
-      productName: J,
-      pairedProductName: Q,
-      shouldShowPromotionalExperience: j,
-      promotionalRewardCollectedText: $
+      overrideDescription: M,
+      productName: K,
+      pairedProductName: J,
+      shouldShowPromotionalExperience: D,
+      promotionalRewardCollectedText: W
     }),
-    er = (0, S.cf)({
-      product: V,
+    tr = (0, y.cf)({
+      product: j,
       pairedProduct: G,
-      onClose: k,
-      analyticsLocations: B,
-      hasRequiredProductItems: W,
-      handleUseNow: Y,
-      isApplying: ee,
+      onClose: B,
+      analyticsLocations: V,
+      hasRequiredProductItems: H,
+      handleUseNow: tt,
+      isApplying: te,
       variantsReturnStyle: s.v.VARIANTS_GROUP,
       openProfileSettings: X
-    });
-  return (0, r.jsx)(p.Gt, {
-    value: B,
-    children: (0, r.jsxs)("div", {
-      ref: F,
-      children: [(0, r.jsx)(o.O_, {
-        ref: K,
-        className: y.confettiCanvas,
-        environment: q
-      }), (0, r.jsx)(u.I, {
+    }),
+    tl = "6/4";
+  switch (j.type) {
+    case a.Z.NAMEPLATE:
+    case a.Z.AVATAR_DECORATION:
+      tl = "16/9";
+      break;
+    case a.Z.BUNDLE:
+    case a.Z.PROFILE_EFFECT:
+    default:
+      tl = "6/4"
+  }
+  return (0, i.jsx)(p.Gt, {
+    value: V,
+    children: (0, i.jsxs)("div", {
+      ref: Q,
+      children: [(0, i.jsx)(l.O_, {
+        ref: q,
+        className: N.confettiCanvas,
+        environment: $
+      }), (0, i.jsx)(d.I, {
         graphic: {
           type: "dynamic",
-          component: d.AX$.COLLECTIBLES_PREVIEW,
-          aspectRatio: V.type === i.Z.NAMEPLATE || V.type === i.Z.AVATAR_DECORATION ? "16/9" : "6/4",
+          component: o.AX$.COLLECTIBLES_PREVIEW,
+          aspectRatio: tl,
           props: {
-            product: V,
-            pairedProduct: G
+            product: j,
+            pairedProduct: G,
+            forCollectedModal: true
           }
         },
-        title: et,
-        subtitle: null != el ? el : true,
-        onClose: k,
-        transitionState: t,
-        actions: er
-      }), null != z ? (0, r.jsx)(O.i, {
+        title: tn,
+        subtitle: null != ti ? ti : true,
+        onClose: B,
+        transitionState: e,
+        actions: tr
+      }), null != z ? (0, i.jsx)(L.i, {
         options: z
-      }) : (0, r.jsx)(m.Z, {
-        confettiTarget: F.current,
-        confettiCanvas: H,
-        sprites: (0, I.vK)(V.categorySkuId)
+      }) : (0, i.jsx)(R.Z, {
+        confettiTarget: Q.current,
+        confettiCanvas: Y,
+        sprites: (0, k.vK)(j.categorySkuId)
       })]
     })
   })

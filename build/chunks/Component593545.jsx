@@ -268,7 +268,7 @@ function N(e) {
     formattedBytes: (0, _.IC)(g)
   }));
   let R = (null == b ? true : b.slice(0, O).join("\n")) + N,
-    P = (0, u.yx)(R),
+    P = (0, u.nM)(R),
     w = c || O < y;
   return (0, r.jsxs)("div", {
     className: o()(E, h.container),

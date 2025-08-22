@@ -20,13 +20,13 @@ function x() {
   let t = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion),
     n = (0, Chunk410030.ZP)(),
     x = (0, Chunk780384.wj)(require),
-    f = (0, Chunk347896.Z)(),
-    h = null == f ? true : f.planSelectionBanner,
+    h = (0, Chunk347896.Z)(),
+    _ = null == h ? true : h.planSelectionBanner,
     {
-      claimableRewards: _
+      claimableRewards: f
     } = (0, Chunk987209.wD)();
-  if (null == h || null == _) return null;
-  let j = null == (e = h.gradientConfig) ? true : module.call(h, {
+  if (null == _ || null == f) return null;
+  let j = null == (e = _.gradientConfig) ? true : module.call(_, {
       isDarkMode: x,
       isAndroid: false
     }),
@@ -35,13 +35,13 @@ function x() {
     className: Chunk432483.promotionalFooterBanner,
     style: m,
     children: [(0, Chunk951288.jsx)(Chunk897942.Z, {
-      claimableRewards: _,
-      maxRewardImageSrc: h.getImageUrl(x, exports),
+      claimableRewards: f,
+      maxRewardImageSrc: _.getImageUrl(x, exports),
       size: Chunk481060.EFr.SIZE_40
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-md/medium",
       className: Chunk432483.bannerText,
-      children: h.desktopBannerText(_.length)
+      children: _.desktopBannerText(f.length)
     })]
   })
 }

@@ -1,10 +1,10 @@
 /** Chunk was on 45620 **/
-/** chunk id: 456080, original params: e,t,r (module,exports,require) **/
+/** chunk id: 456080, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
   B: () => l
 });
-let n = (0, require("./427164.js").le)({
+let r = (0, require("./427164.js").le)({
     kind: "user",
     name: "2025-08-shop-catalog-banner-redesign",
     defaultConfig: {
@@ -16,6 +16,6 @@ let n = (0, require("./427164.js").le)({
       }
     }
   }),
-  l = e => n.useConfig({
+  l = e => r.useConfig({
     location: e
   }).isEnabled

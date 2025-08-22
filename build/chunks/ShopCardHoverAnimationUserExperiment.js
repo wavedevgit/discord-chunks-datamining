@@ -1,13 +1,15 @@
-/** Chunk was on 45620 **/
-/** chunk id: 664018, original params: e,t,r (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 664018, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  D: () => a,
+  D: () => i,
   E: () => o
 });
-var n, Chunk818083 = require("./818083.js"),
-  a = ((n = {})[n.CONTROL = 0] = "CONTROL", n[n.TRANSFORMATION = 1] = "TRANSFORMATION", n[n.NO_MOVEMENT = 2] = "NO_MOVEMENT", n);
-let i = (0, Chunk818083.B)({
+var Chunk818083 = require("./818083.js"),
+  i = function(e) {
+    return e[e.CONTROL = 0] = "CONTROL", e[e.TRANSFORMATION = 1] = "TRANSFORMATION", e[e.NO_MOVEMENT = 2] = "NO_MOVEMENT", e
+  }({});
+let a = (0, Chunk818083.B)({
     kind: "user",
     id: "2024-03_shop_card_hover_animation",
     label: "Shop card hover animation experiment",
@@ -28,6 +30,6 @@ let i = (0, Chunk818083.B)({
       }
     }]
   }),
-  o = e => i.useExperiment({
+  o = e => a.useExperiment({
     location: e
   })

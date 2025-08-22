@@ -1,5 +1,5 @@
-/** Chunk was on 45620 **/
-/** chunk id: 361110, original params: e,t,r (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 361110, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
   f: () => a
@@ -7,14 +7,14 @@ require.d(exports, {
 var Chunk647438 = require("./647438.js"),
   Chunk979554 = require("./979554.js");
 let a = e => {
-  let [t, r] = (0, n.useState)(null);
+  let [t, n] = (0, r.useState)(null);
   return {
     previewingVariantIndex: t,
-    handleEntering: (0, n.useCallback)(t => {
-      (null == e ? true : e.type) === l.Z.VARIANTS_GROUP && r(t)
+    handleEntering: (0, r.useCallback)(t => {
+      (null == e ? true : e.type) === i.Z.VARIANTS_GROUP && n(t)
     }, [null == e ? true : e.type]),
-    handleLeaving: (0, n.useCallback)(() => {
-      (null == e ? true : e.type) === l.Z.VARIANTS_GROUP && r(null)
+    handleLeaving: (0, r.useCallback)(() => {
+      (null == e ? true : e.type) === i.Z.VARIANTS_GROUP && n(null)
     }, [null == e ? true : e.type])
   }
 }

@@ -1,5 +1,5 @@
 /** Chunk was on 45620 **/
-/** chunk id: 638758, original params: e,t,r (module,exports,require) **/
+/** chunk id: 638758, original params: e,t,n (module,exports,require) **/
 "use strict";
 module.exports = {
   catalogBanner: "catalogBanner__3f82e",

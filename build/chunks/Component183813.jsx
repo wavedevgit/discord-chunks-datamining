@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
-  a = require.n(Chunk512722),
+  s = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk14476 = require("./14476.jsx"),
@@ -28,17 +28,17 @@ function L(e) {
   } = e, {
     selectedPlan: l,
     selectedSkuId: L,
-    step: b
+    step: g
   } = (0, x.JL)(), {
-    setSelectedGiftingPromotionReward: g,
+    setSelectedGiftingPromotionReward: b,
     selectedGiftingPromotionReward: y,
     claimableRewards: S,
-    claimableVariants: v
-  } = (0, u.wD)(), E = (0, s.e7)([c.default], () => c.default.getCurrentUser()), [O, P] = i.useState(null), w = Math.floor(2 * Math.random()), [I, Z] = i.useState(w);
+    claimableVariants: E
+  } = (0, u.wD)(), O = (0, a.e7)([p.default], () => p.default.getCurrentUser()), [P, v] = i.useState(null), w = Math.floor(2 * Math.random()), [M, I] = i.useState(w);
   i.useEffect(() => {
-    null != S && S.length > 0 && null == y && g(S[0])
-  }, [S, y, g]), a()(null != l, "Expected plan to selected"), a()(null != L, "Expected selectedSkuId"), a()(null != b, "Step should be set");
-  let M = i.useMemo(() => null == v ? null != S ? S : [] : v.flatMap(e => {
+    null != S && S.length > 0 && null == y && b(S[0])
+  }, [S, y, b]), s()(null != l, "Expected plan to selected"), s()(null != L, "Expected selectedSkuId"), s()(null != g, "Step should be set");
+  let Z = i.useMemo(() => null == E ? null != S ? S : [] : E.flatMap(e => {
       var t, n;
       return e.variants.length < 2 ? [] : (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -57,7 +57,7 @@ function L(e) {
           })
         }
         return e
-      }({}, e.variants[I]), n = n = {
+      }({}, e.variants[M]), n = n = {
         name: e.name
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);
@@ -69,30 +69,30 @@ function L(e) {
       })(Object(n)).forEach(function(e) {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
       }), t)
-    }), [v, S, I]),
+    }), [E, S, M]),
     A = e => {
-      g(M.find(t => t.skuId === e)), P(e)
+      b(Z.find(t => t.skuId === e)), v(e)
     },
-    k = M.map(e => (0, r.jsx)(C.c, {
+    k = Z.map(e => (0, r.jsx)(C.c, {
       skuId: e.skuId,
       assetId: e.assetId,
       productName: e.name,
       a11yLabel: e.a11yLabel,
-      user: E,
+      user: O,
       onSelect: A,
-      selectedSkuId: null != O ? O : true
+      selectedSkuId: null != P ? P : true
     }, e.skuId)),
-    T = (0, r.jsx)(h.O3, {
+    T = (0, r.jsx)(_.O3, {
       children: (0, r.jsx)(o.mzw, {
         className: m.modalFooter,
         children: (0, r.jsx)(d.y, {
           onStepChange: e => {
-            null != E && null != y && p.default.track(_.rMx.GIFT_PROMOTION_REWARD_SELECTED, {
-              user_id: E.id,
+            null != O && null != y && c.default.track(f.rMx.GIFT_PROMOTION_REWARD_SELECTED, {
+              user_id: O.id,
               reward_sku_id: y.skuId
             }), t(e)
           },
-          onBackClick: () => t(f.h8.PLAN_SELECT),
+          onBackClick: () => t(h.h8.PLAN_SELECT),
           shouldRenderUpdatedPaymentModal: true,
           showBackButton: true,
           planOptions: [l.id],
@@ -109,7 +109,7 @@ function L(e) {
         color: "text-secondary",
         className: m.subtitle,
         children: j.intl.format(j.t.xGzXNT, {
-          rewardCount: M.length
+          rewardCount: Z.length
         })
       })]
     });
@@ -123,7 +123,7 @@ function L(e) {
       direction: "vertical",
       justify: "center",
       align: "center",
-      children: [B, null != v && v.length > 1 && (0, r.jsx)(o.sY7, {
+      children: [B, null != E && E.length > 1 && (0, r.jsx)(o.sY7, {
         options: [{
           name: "Trick",
           value: 0
@@ -131,13 +131,13 @@ function L(e) {
           name: "Treat",
           value: 1
         }],
-        value: I,
+        value: M,
         look: "pill",
         onChange: e => {
           let {
             value: t
           } = e;
-          Z(t)
+          I(t)
         }
       })]
     }), (0, r.jsx)(o.hzk, {

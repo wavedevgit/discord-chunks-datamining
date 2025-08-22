@@ -1,13 +1,13 @@
 /** Chunk was on 45620 **/
-/** chunk id: 788822, original params: e,t,r (module,exports,require) **/
+/** chunk id: 788822, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  q: () => _
+  q: () => b
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk180650 = require("./180650.js"),
   Chunk622535 = require("./622535.js"),
   Chunk481060 = require("./481060.js"),
@@ -19,86 +19,86 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk310582 = require("./310582.js");
-let _ = e => {
-  var t, r, a, _;
-  let v, {
-    category: O,
-    subblock: C,
-    badgeText: E,
-    handleTransition: y
+let b = e => {
+  var t, n, a, b;
+  let C, {
+    category: E,
+    subblock: S,
+    badgeText: O,
+    handleTransition: v
   } = e;
-  null != C && (v = null == (t = p.Z.getCategoryByStoreListingId(null == C ? true : C.categoryStoreListingId)) ? true : t.skuId);
-  let S = null != (r = null != v ? v : null == O ? true : O.skuId) ? r : "",
+  null != S && (C = null == (t = g.Z.getCategoryByStoreListingId(null == S ? true : S.categoryStoreListingId)) ? true : t.skuId);
+  let x = null != (n = null != C ? C : null == E ? true : E.skuId) ? n : "",
     {
-      handleCardVisibilityChange: x
-    } = (0, g.E)(S, "home", "marketing featured block"),
-    j = (0, f.YG)(O, C),
-    T = l.useRef(null),
-    P = S === o.T.NAMEPLATES_V3,
-    L = P ? "NAMEPLATES VOL.3" : null,
-    k = null == C ? true : C.bodyText,
-    I = (0, d.sp)();
-  return (0, n.jsx)(s.$, {
-    innerRef: T,
-    onChange: x,
+      handleCardVisibilityChange: y
+    } = (0, f.E)(x, "home", "marketing featured block"),
+    T = (0, p.YG)(E, S),
+    L = l.useRef(null),
+    j = x === i.T.NAMEPLATES_V3,
+    k = j ? "NAMEPLATES VOL.3" : null,
+    I = null == S ? true : S.bodyText,
+    B = (0, d.sp)();
+  return (0, r.jsx)(o.$, {
+    innerRef: L,
+    onChange: y,
     threshold: 0,
-    children: (0, n.jsxs)(c.P3F, {
+    children: (0, r.jsxs)(c.P3F, {
       className: h.featuredBlock,
-      innerRef: T,
+      innerRef: L,
       style: {
-        backgroundImage: "url(".concat(j, ")")
+        backgroundImage: "url(".concat(T, ")")
       },
       onClick: () => {
-        y("shop marketing tile", S), u.default.track(m.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-          collectibles_shop_session_id: null == I ? true : I.sessionId,
-          sku_id: S,
+        v("shop marketing tile", x), u.default.track(m.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+          collectibles_shop_session_id: null == B ? true : B.sessionId,
+          sku_id: x,
           page_type: "home",
-          page_section: null == I ? true : I.pageSection,
-          page_category: null == I ? true : I.pageCategory,
+          page_section: null == B ? true : B.pageSection,
+          page_category: null == B ? true : B.pageCategory,
           tile_type: "FEATURED_BLOCK",
-          tile_position: String(null == I ? true : I.tilePosition),
+          tile_position: String(null == B ? true : B.tilePosition),
           cta_name: null
         })
       },
-      children: [null != E && (0, n.jsx)(c.IGR, {
+      children: [null != O && (0, r.jsx)(c.IGR, {
         disableColor: true,
-        text: E,
+        text: O,
         className: h.featuredBlockBadge
-      }), (0, n.jsxs)("div", {
+      }), (0, r.jsxs)("div", {
         className: h.featuredBlockTextContainer,
-        children: [null != L && (0, n.jsx)(c.X6q, {
+        children: [null != k && (0, r.jsx)(c.X6q, {
           lineClamp: 2,
-          className: i()(h.featuredBlockTitleText, {
-            [h.featuredBlockTitleTextNameplate]: P
+          className: s()(h.featuredBlockTitleText, {
+            [h.featuredBlockTitleTextNameplate]: j
           }),
           style: {
-            color: null != (a = null == C ? true : C.bannerTextColor) ? a : "white"
+            color: null != (a = null == S ? true : S.bannerTextColor) ? a : "white"
           },
           variant: "heading-xl/semibold",
-          children: L
-        }), null != k && (0, n.jsx)(c.X6q, {
-          lineClamp: null != L ? 2 : 4,
+          children: k
+        }), null != I && (0, r.jsx)(c.X6q, {
+          lineClamp: null != k ? 2 : 4,
           className: h.featuredBlockBodyText,
           style: {
-            color: null != (_ = null == C ? true : C.bannerTextColor) ? _ : "white"
+            color: null != (b = null == S ? true : S.bannerTextColor) ? b : "white"
           },
           variant: "heading-md/medium",
-          children: k
+          children: I
         })]
-      }), (0, n.jsx)("div", {
+      }), (0, r.jsx)("div", {
         className: h.featuredBlockButtonContainer,
-        children: (0, n.jsx)(c.zxk, {
+        children: (0, r.jsx)(c.zxk, {
           variant: "overlay-primary",
-          text: b.intl.string(b.t.jVcuVV),
+          text: _.intl.string(_.t.jVcuVV),
           onClick: e => {
-            y("shop marketing take me there button", S), e.stopPropagation(), u.default.track(m.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-              collectibles_shop_session_id: null == I ? true : I.sessionId,
-              sku_id: S,
+            v("shop marketing take me there button", x), e.stopPropagation(), u.default.track(m.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+              collectibles_shop_session_id: null == B ? true : B.sessionId,
+              sku_id: x,
               page_type: "home",
-              page_section: null == I ? true : I.pageSection,
-              page_category: null == I ? true : I.pageCategory,
+              page_section: null == B ? true : B.pageSection,
+              page_category: null == B ? true : B.pageCategory,
               tile_type: "FEATURED_BLOCK",
-              tile_position: String(null == I ? true : I.tilePosition),
+              tile_position: String(null == B ? true : B.tilePosition),
               cta_name: "Take me there button"
             })
           }

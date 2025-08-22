@@ -1,29 +1,29 @@
 /** Chunk was on 45620 **/
-/** chunk id: 328626, original params: e,t,r (module,exports,require) **/
+/** chunk id: 328626, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
   g: () => a,
-  y: () => i
+  y: () => s
 }), require("./388685.js");
-var n, Chunk647438 = require("./647438.js"),
-  a = ((n = {}).MOUNTED = "mounted", n.SORT_OUT = "sort-out", n.SORT_IN = "sort-in", n.SHUFFLE_OUT = "shuffle-out", n.SHUFFLE_IN = "shuffle-in", n.FINISHED = "finished", n);
-let i = () => {
-  let [e, t] = Chunk647438.useState("mounted"), [r, n] = Chunk647438.useState(false), a = Chunk647438.useRef(null);
+var r, Chunk647438 = require("./647438.js"),
+  a = ((r = {}).MOUNTED = "mounted", r.SORT_OUT = "sort-out", r.SORT_IN = "sort-in", r.SHUFFLE_OUT = "shuffle-out", r.SHUFFLE_IN = "shuffle-in", r.FINISHED = "finished", r);
+let s = () => {
+  let [e, t] = Chunk647438.useState("mounted"), [n, r] = Chunk647438.useState(false), a = Chunk647438.useRef(null);
   return Chunk647438.useEffect(() => {
-    require && "finished" === module && (null !== a.current && a.current.focus(), n(false))
+    require && "finished" === module && (null !== a.current && a.current.focus(), r(false))
   }, [module, require]), {
     animationPhase: module,
     startAnimation: Chunk647438.useCallback(e => {
       let {
-        isShuffling: r,
+        isShuffling: n,
         onOutroComplete: l,
-        returnRef: i
+        returnRef: s
       } = e;
-      (null == i ? true : i.current) != null && (a.current = i.current, n(true)), t(r ? "shuffle-out" : "sort-out"), setTimeout(() => {
-        l(), t(r ? "shuffle-in" : "sort-in"), setTimeout(() => {
+      (null == s ? true : s.current) != null && (a.current = s.current, r(true)), t(n ? "shuffle-out" : "sort-out"), setTimeout(() => {
+        l(), t(n ? "shuffle-in" : "sort-in"), setTimeout(() => {
           t("finished")
-        }, r ? 200 : 300)
-      }, r ? 250 : 300)
+        }, n ? 200 : 300)
+      }, n ? 250 : 300)
     }, [])
   }
 }

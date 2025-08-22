@@ -1,7 +1,7 @@
-/** Chunk was on 92446 **/
+/** Chunk was on 38029 **/
 /** chunk id: 551425, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  Z: () => P
+  Z: () => v
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -19,11 +19,11 @@ var Chunk979554 = require("./979554.js"),
   Chunk948067 = require("./948067.js");
 let g = Chunk481060.EFr.SIZE_152,
   y = (0, Chunk1585.y9)(g),
-  O = t => {
+  b = t => {
     var e, i;
     let {
       item: r
-    } = t, a = (0, l.e7)([p.default], () => p.default.getCurrentUser()), {
+    } = t, a = (0, l.e7)([f.default], () => f.default.getCurrentUser()), {
       avatarDecorationSrc: u,
       avatarPlaceholderSrc: c,
       eventHandlers: d
@@ -68,7 +68,7 @@ let g = Chunk481060.EFr.SIZE_152,
       }), e))
     })
   },
-  b = t => {
+  O = t => {
     let {
       item: e
     } = t;
@@ -80,7 +80,7 @@ let g = Chunk481060.EFr.SIZE_152,
       })
     })
   },
-  j = t => {
+  P = t => {
     let {
       item: e
     } = t;
@@ -95,21 +95,21 @@ let g = Chunk481060.EFr.SIZE_152,
       })
     })
   },
-  P = t => {
+  v = t => {
     let {
       giftCode: e
-    } = t, i = (0, l.e7)([f.Z], () => f.Z.getProduct(e.skuId)), s = null == i ? true : i.items[0];
+    } = t, i = (0, l.e7)([p.Z], () => p.Z.getProduct(e.skuId)), s = null == i ? true : i.items[0];
     switch (null == s ? true : s.type) {
       case r.Z.AVATAR_DECORATION:
-        return (0, n.jsx)(O, {
-          item: s
-        });
-      case r.Z.PROFILE_EFFECT:
         return (0, n.jsx)(b, {
           item: s
         });
+      case r.Z.PROFILE_EFFECT:
+        return (0, n.jsx)(O, {
+          item: s
+        });
       case r.Z.NAMEPLATE:
-        return (0, n.jsx)(j, {
+        return (0, n.jsx)(P, {
           item: s
         });
       default:

@@ -1,13 +1,13 @@
 /** Chunk was on 45620 **/
-/** chunk id: 193227, original params: e,t,r (module,exports,require) **/
+/** chunk id: 193227, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => L
+  Z: () => k
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk399606 = require("./399606.js"),
   Chunk481060 = require("./481060.js"),
   Chunk434650 = require("./434650.js"),
@@ -28,129 +28,129 @@ var Chunk951288 = require("./951288.js"),
   Chunk215023 = require("./215023.js"),
   Chunk887353 = require("./887353.js");
 
-function j(e) {
+function T(e) {
   let {
     products: t,
-    header: r,
+    header: n,
     category: l
-  } = e, a = (0, o.e7)([u.default], () => u.default.getCurrentUser()), i = (0, y.St)(t);
-  return null == a || 0 === t.length ? null : (0, n.jsxs)("div", {
-    children: [null != r ? (0, n.jsx)(s.Text, {
-      className: x.itemTypeTitle,
+  } = e, a = (0, i.e7)([u.default], () => u.default.getCurrentUser()), s = (0, v.St)(t);
+  return null == a || 0 === t.length ? null : (0, r.jsxs)("div", {
+    children: [null != n ? (0, r.jsx)(o.Text, {
+      className: y.itemTypeTitle,
       color: "header-secondary",
       variant: "text-sm/bold",
-      children: r
-    }) : (0, n.jsx)(s.LZC, {
+      children: n
+    }) : (0, r.jsx)(o.LZC, {
       size: 24
-    }), (0, n.jsx)("div", {
-      className: x.cardsContainer,
-      children: i.map((e, t) => (0, n.jsx)(d.k0, {
+    }), (0, r.jsx)("div", {
+      className: y.cardsContainer,
+      children: s.map((e, t) => (0, r.jsx)(d.k0, {
         newValue: {
           tilePosition: t
         },
-        children: (0, n.jsx)(O.Z, {
+        children: (0, r.jsx)(E.Z, {
           category: l,
           product: e,
           user: a,
-          tab: S.AW.CATALOG
+          tab: x.AW.CATALOG
         }, e.skuId)
       }, e.skuId))
     })]
   })
 }
 
-function T(e) {
+function L(e) {
   let {
     category: t
-  } = e, r = (0, m.l)(t.products), l = (0, f.a)()(r);
-  return (0, n.jsx)(j, {
+  } = e, n = (0, m.l)(t.products), l = (0, p.a)()(n);
+  return (0, r.jsx)(T, {
     products: l,
     category: t
   })
 }
 
-function P(e) {
+function j(e) {
   let {
     category: t,
-    isFullScreen: r
-  } = e, [a, i] = l.useState(false), o = (0, c.O)(e => {
-    i(e)
-  }, r ? .13 : .15), s = (0, g.B)("CollectiblesCatalogContent");
-  return (0, n.jsxs)("div", {
-    className: x.categoryWrapper,
-    ref: o,
-    children: [s && null != t.catalogBannerAsset ? (0, n.jsx)(h.Z, {
+    isFullScreen: n
+  } = e, [a, s] = l.useState(false), i = (0, c.O)(e => {
+    s(e)
+  }, n ? .13 : .15), o = (0, f.B)("CollectiblesCatalogContent");
+  return (0, r.jsxs)("div", {
+    className: y.categoryWrapper,
+    ref: i,
+    children: [o && null != t.catalogBannerAsset ? (0, r.jsx)(h.Z, {
       category: t
-    }) : (0, n.jsx)(_.Z, {
+    }) : (0, r.jsx)(b.Z, {
       category: t,
       hideLimitedTimeBadge: false
-    }), (0, n.jsx)(T, {
+    }), (0, r.jsx)(L, {
       category: t
     })]
   })
 }
 
-function L(e) {
+function k(e) {
   var t;
   let {
-    sortedCategories: r,
+    sortedCategories: n,
     setCategoryRef: a,
-    isFullScreen: o,
+    isFullScreen: i,
     currentPage: c,
     handlePageChange: u
-  } = e, g = (0, d.sp)(), f = (0, C.R)(), m = null != (t = null == g ? true : g.sessionId) ? t : "", {
+  } = e, f = (0, d.sp)(), p = (0, S.R)(), m = null != (t = null == f ? true : f.sessionId) ? t : "", {
     noCache: h,
-    includeUnpublished: _
-  } = (0, E.Z)(), O = l.useMemo(() => r.filter(e => null == e.unpublishedAt || e.unpublishedAt > new Date).filter(e => {
+    includeUnpublished: b
+  } = (0, O.Z)(), E = l.useMemo(() => n.filter(e => null == e.unpublishedAt || e.unpublishedAt > new Date).filter(e => {
     let {
       products: t
     } = e;
     return t.length > 0
-  }), [r]), y = l.useMemo(() => {
-    let e = (c - 1) * S.kN;
-    return O.slice(e, e + S.kN)
-  }, [O, c]);
+  }), [n]), v = l.useMemo(() => {
+    let e = (c - 1) * x.kN;
+    return E.slice(e, e + x.kN)
+  }, [E, c]);
   l.useEffect(() => {
-    (0, b.n)({
+    (0, _.n)({
       sessionId: m,
-      checkpoint: b.a.SHOP_MOUNTED,
-      tab: S.AW.CATALOG,
-      isFullScreen: o,
-      unpublishedCategoriesShown: _,
+      checkpoint: _.a.SHOP_MOUNTED,
+      tab: x.AW.CATALOG,
+      isFullScreen: i,
+      unpublishedCategoriesShown: b,
       cacheDisabled: h
     })
   }, []), l.useEffect(() => {
-    f || 0 === y.length || (0, b.n)({
+    p || 0 === v.length || (0, _.n)({
       sessionId: m,
-      checkpoint: b.a.SHOP_RENDERED,
-      tab: S.AW.CATALOG,
-      isFullScreen: o,
-      unpublishedCategoriesShown: _,
+      checkpoint: _.a.SHOP_RENDERED,
+      tab: x.AW.CATALOG,
+      isFullScreen: i,
+      unpublishedCategoriesShown: b,
       cacheDisabled: h
     })
-  }, [m, o, _, h, f, y.length]);
-  let j = (0, p.FF)("CollectiblesBrowse");
-  return f ? (0, n.jsx)(v.Z, {}) : (0, n.jsxs)("div", {
-    className: i()(x.categories, {
-      [x.categoriesNoFilter]: !j
+  }, [m, i, b, h, p, v.length]);
+  let T = (0, g.FF)("CollectiblesBrowse");
+  return p ? (0, r.jsx)(C.Z, {}) : (0, r.jsxs)("div", {
+    className: s()(y.categories, {
+      [y.categoriesNoFilter]: !T
     }),
-    children: [y.map((e, t) => (0, n.jsx)("div", {
+    children: [v.map((e, t) => (0, r.jsx)("div", {
       ref: t => a(e.skuId, t),
-      children: (0, n.jsx)(d.k0, {
+      children: (0, r.jsx)(d.k0, {
         newValue: {
           categoryPosition: t
         },
-        children: (0, n.jsx)(P, {
+        children: (0, r.jsx)(j, {
           category: e,
-          isFullScreen: o
+          isFullScreen: i
         })
       })
-    }, e.skuId)), (0, n.jsx)("div", {
-      className: x.paginationContainer,
-      children: (0, n.jsx)(s.DsT, {
+    }, e.skuId)), (0, r.jsx)("div", {
+      className: y.paginationContainer,
+      children: (0, r.jsx)(o.DsT, {
         currentPage: c,
-        totalCount: O.length,
-        pageSize: S.kN,
+        totalCount: E.length,
+        pageSize: x.kN,
         onPageChange: u,
         disablePaginationGap: true
       })

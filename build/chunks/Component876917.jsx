@@ -1,7 +1,8 @@
-/** Chunk was on 96887 **/
-/** chunk id: 876917, original params: e,t,r (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 876917, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => u
+  Z: () => _
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -11,47 +12,49 @@ var Chunk951288 = require("./951288.js"),
   Chunk680295 = require("./680295.jsx"),
   Chunk803580 = require("./803580.js"),
   Chunk241822 = require("./241822.js");
-let u = e => {
-  let {
-    profileEffectId: t,
-    isHovering: r,
-    forCollectedModal: i = false,
-    isPurchased: u,
-    removeSetHeight: f = false
-  } = e, v = i ? 250 : .1, [p, h] = n.useState(true);
-  return (n.useEffect(() => {
-    if (true !== i) h(false);
-    else {
-      let e = setTimeout(() => {
-        h(false)
-      }, v);
-      return () => {
-        clearTimeout(e)
+let d = .1,
+  f = 250,
+  _ = e => {
+    let {
+      profileEffectId: t,
+      isHovering: n,
+      forCollectedModal: a = false,
+      isPurchased: _,
+      removeSetHeight: p = false
+    } = e, h = a ? f : d, [m, g] = i.useState(true);
+    return (i.useEffect(() => {
+      if (true !== a) g(false);
+      else {
+        let e = setTimeout(() => {
+          g(false)
+        }, h);
+        return () => {
+          clearTimeout(e)
+        }
       }
-    }
-  }, [v, i]), null != t) ? (0, a.jsxs)("div", {
-    className: o()(c.previewContainer, {
-      [c.previewContainerAnimation]: i,
-      [c.previewContainerSetHeight]: !f
-    }),
-    children: [(0, a.jsx)("img", {
-      src: d,
-      alt: " ",
-      className: i ? c.previewForCollected : c.preview,
-      "aria-hidden": true
-    }), !p && (0, a.jsx)("div", {
-      className: u ? c.purchasedEffect : true,
-      children: (0, a.jsx)(l.Z, {
-        profileEffectId: t,
-        useThumbnail: true,
-        autoPlay: i,
-        restartMethod: s.j.FromStart,
-        resetOnHover: true,
-        isHovering: r,
-        introDelay: v,
-        useOpacityOnHover: false,
-        shopPreview: true
-      })
-    })]
-  }) : null
-}
+    }, [h, a]), null != t) ? (0, r.jsxs)("div", {
+      className: o()(c.previewContainer, {
+        [c.previewContainerAnimation]: a,
+        [c.previewContainerSetHeight]: !p
+      }),
+      children: [(0, r.jsx)("img", {
+        src: u,
+        alt: " ",
+        className: a ? c.previewForCollected : c.preview,
+        "aria-hidden": true
+      }), !m && (0, r.jsx)("div", {
+        className: _ ? c.purchasedEffect : true,
+        children: (0, r.jsx)(l.Z, {
+          profileEffectId: t,
+          useThumbnail: true,
+          autoPlay: a,
+          restartMethod: s.j.FromStart,
+          resetOnHover: true,
+          isHovering: n,
+          introDelay: h,
+          useOpacityOnHover: false,
+          shopPreview: true
+        })
+      })]
+    }) : null
+  }

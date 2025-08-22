@@ -1,9 +1,9 @@
 /** Chunk was on 45620 **/
-/** chunk id: 38900, original params: e,t,r (module,exports,require) **/
+/** chunk id: 38900, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  K: () => p,
-  Z: () => g
+  K: () => g,
+  Z: () => f
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -15,7 +15,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk300179 = require("./300179.js");
 let u = () => 4 * Math.random() + 8,
   d = [u(), u(), u()],
-  p = () => (0, Chunk951288.jsx)("div", {
+  g = () => (0, Chunk951288.jsx)("div", {
     className: a()(Chunk198501.skeleton, Chunk300179.shopCard),
     children: (0, Chunk951288.jsxs)("div", {
       className: Chunk198501.cardBody,
@@ -30,17 +30,17 @@ let u = () => 4 * Math.random() + 8,
       })]
     })
   }),
-  g = () => (0, Chunk951288.jsx)("div", {
+  f = () => (0, Chunk951288.jsx)("div", {
     className: Chunk887353.skeletons,
-    children: d.map(e => (0, n.jsxs)("div", {
-      className: i.cardsContainer,
-      children: [(0, n.jsx)("div", {
-        className: a()(s.skeleton, o.shopBanner),
-        children: (0, n.jsx)("div", {
-          className: s.bannerBody
+    children: d.map(e => (0, r.jsxs)("div", {
+      className: s.cardsContainer,
+      children: [(0, r.jsx)("div", {
+        className: a()(o.skeleton, i.shopBanner),
+        children: (0, r.jsx)("div", {
+          className: o.bannerBody
         })
       }), Array.from({
         length: e
-      }, (e, t) => t).map(e => (0, n.jsx)(p, {}, e))]
+      }, (e, t) => t).map(e => (0, r.jsx)(g, {}, e))]
     }, e))
   })

@@ -1,7 +1,7 @@
 /** Chunk was on 54400 **/
 /** chunk id: 400981, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => f
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -19,25 +19,25 @@ var Chunk442837 = require("./442837.js"),
   Chunk215023 = require("./215023.js"),
   Chunk473936 = require("./473936.js");
 
-function _(e) {
+function f(e) {
   let {
     onClose: t,
     selectedPromotionalDecoPurchaseRecord: n,
-    selectedGiftingPromotionReward: _
-  } = e, j = (0, i.e7)([u.default], () => u.default.getCurrentUser()), m = (0, i.e7)([s.Z], () => s.Z.useReducedMotion), {
+    selectedGiftingPromotionReward: f
+  } = e, j = (0, i.e7)([u.default], () => u.default.getCurrentUser()), m = (0, i.e7)([a.Z], () => a.Z.useReducedMotion), {
     analyticsLocations: L
-  } = (0, o.ZP)(), b = a.EFr.SIZE_32, g = (0, C.Z)(null == _ ? true : _.assetId, b, !m), y = (0, p.Z)(), S = null == y ? true : y.giftPurchaseConfirmation;
+  } = (0, o.ZP)(), g = s.EFr.SIZE_32, b = (0, C.Z)(null == f ? true : f.assetId, g, !m), y = (0, c.Z)(), S = null == y ? true : y.giftPurchaseConfirmation;
   return null == n || null == S ? null : (0, r.jsx)(x.O3, {
-    children: (0, r.jsx)(a.mzw, {
-      align: c.Z.Align.CENTER,
+    children: (0, r.jsx)(s.mzw, {
+      align: p.Z.Align.CENTER,
       "data-migration-pending": true,
       children: (0, r.jsxs)("div", {
-        className: h.promotionalFooter,
-        children: [(0, r.jsx)(a.Xo$, {
+        className: _.promotionalFooter,
+        children: [(0, r.jsx)(s.Xo$, {
           "aria-label": null == j ? true : j.username,
-          size: b,
-          src: null == j ? true : j.getAvatarURL(true, (0, a.pxk)(b), !m),
-          avatarDecoration: g
+          size: g,
+          src: null == j ? true : j.getAvatarURL(true, (0, s.pxk)(g), !m),
+          avatarDecoration: b
         }), (0, r.jsx)(l.zx, {
           variant: "primary",
           text: S.collectRewardButtonText(),
@@ -46,7 +46,7 @@ function _(e) {
               product: n,
               shouldShowPromotionalExperience: true,
               analyticsLocations: L,
-              purchaseType: f.o8.PROMOTIONAL
+              purchaseType: h.o8.PROMOTIONAL
             })
           }
         })]

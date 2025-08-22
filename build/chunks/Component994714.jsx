@@ -2,7 +2,7 @@
 /** chunk id: 994714, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -12,8 +12,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk715495 = require("./715495.jsx"),
   Chunk538645 = require("./538645.jsx"),
+  Chunk383036 = require("./383036.jsx"),
   Chunk646420 = require("./646420.js");
-let f = e => {
+let _ = e => {
     let {
       setTab: t
     } = e;
@@ -23,7 +24,7 @@ let f = e => {
           t(1)
         },
         children: (0, r.jsx)("div", {
-          className: o()(d.banner, d.pfxBanner),
+          className: o()(f.banner, f.pfxBanner),
           children: (0, r.jsx)(s.xv, {
             variant: "text-md/bold",
             color: "always-white",
@@ -35,25 +36,39 @@ let f = e => {
           t(2)
         },
         children: (0, r.jsx)("div", {
-          className: o()(d.banner, d.nameplateBanner),
+          className: o()(f.banner, f.nameplateBanner),
           children: (0, r.jsx)(s.xv, {
             variant: "text-md/bold",
             color: "always-white",
             children: "Nameplates"
           })
         })
+      }), (0, r.jsx)(l.P3F, {
+        onClick: () => {
+          t(3)
+        },
+        children: (0, r.jsx)("div", {
+          className: o()(f.banner, f.bundlesBanner),
+          children: (0, r.jsx)(s.xv, {
+            variant: "text-md/bold",
+            color: "always-white",
+            children: "Product Preview Tool"
+          })
+        })
       })]
     })
   },
-  _ = () => {
+  p = () => {
     let [e, t] = Chunk647438.useState(0), n = () => {
       switch (module) {
         case 1:
           return (0, Chunk951288.jsx)(Chunk538645.Z, {});
         case 2:
           return (0, Chunk951288.jsx)(Chunk715495.Z, {});
+        case 3:
+          return (0, Chunk951288.jsx)(Chunk383036.Z, {});
         default:
-          return (0, Chunk951288.jsx)(f, {
+          return (0, Chunk951288.jsx)(_, {
             setTab: exports
           })
       }
