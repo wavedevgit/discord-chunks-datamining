@@ -218,8 +218,14 @@ let w = {
       P = null != S ? S.orbPriceAmount : null;
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(h.Z, {}), (0, r.jsxs)(m.C3, {
-        children: [(0, r.jsx)(y.gY, {
-          error: T
+        children: [(0, r.jsxs)(a.Kqy, {
+          direction: "vertical",
+          gap: 8,
+          children: [(0, r.jsx)(y.gY, {
+            error: T
+          }), (0, r.jsx)(y.f4, {
+            skuId: g
+          })]
         }), (0, r.jsx)(y.A3, {
           skuId: g,
           orbPriceAmount: P,

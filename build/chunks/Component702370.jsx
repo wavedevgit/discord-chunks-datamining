@@ -273,7 +273,7 @@ let ek = e => {
       } = (0, R.WX)({
         location: "collectibles_shop_product_details_modal"
       }),
-      eb = (0, eP.I)(t),
+      eb = (0, eP.Iw)(t),
       ex = null != eb,
       {
         checkoutEligiblePrices: ej,
@@ -683,7 +683,7 @@ let ek = e => {
     }, [c, w, y.skuId, y.items, S]);
     let E = (0, Z.r9)(),
       I = t === b.Dvm.EXITING,
-      A = (0, eP.t)(l),
+      A = (0, eP.t0)(l),
       N = null == A ? true : A.amount;
     if (null == g) return null;
     let R = (0, ey.ZS)(a.skuId);

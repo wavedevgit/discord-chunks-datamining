@@ -283,7 +283,7 @@ function ev(e) {
     isApplying: V
   } = (0, L.W)({
     product: l
-  }), F = d(x.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON), U = (0, Y.I)(t), q = null != U, {
+  }), F = d(x.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON), U = (0, Y.Iw)(t), q = null != U, {
     displayPrices: K,
     checkoutEligiblePrices: X,
     isOrbExclusive: J,

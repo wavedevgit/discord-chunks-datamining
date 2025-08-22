@@ -3,7 +3,8 @@
 "use strict";
 require.d(exports, {
   hi: () => u,
-  sU: () => d
+  s2: () => d,
+  sU: () => f
 });
 var Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -25,6 +26,10 @@ function u() {
   return (0, Chunk442837.e7)([Chunk594190.ZP], () => Chunk594190.ZP.canShowAdminWarning) && !l() && c()
 }
 
-function d() {
+function d(e) {
+  return e.canShowAdminWarning && !l() && c()
+}
+
+function f() {
   (0, Chunk481060.showToast)((0, Chunk481060.createToast)(Chunk388032.intl.string(Chunk388032.t.kQnWb2), Chunk481060.ToastType.SUCCESS))
 }

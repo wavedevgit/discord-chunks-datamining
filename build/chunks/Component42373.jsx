@@ -88,7 +88,10 @@ function A(e) {
       t = y.permadecosBackground;
       break;
     case g.NA.VOICE_FILTERS:
-      t = y.voiceFiltersBackground
+      t = y.voiceFiltersBackground;
+      break;
+    case g.NA.CUSTOM_THEMES:
+      t = y.customThemesBackground
   }
   return t
 }

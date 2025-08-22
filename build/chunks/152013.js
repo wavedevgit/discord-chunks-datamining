@@ -10,5 +10,6 @@ module.exports = {
   headerContentSmall: "headerContentSmall_a7218d",
   tabBar: "tabBar_a7218d",
   tabBarItem: "tabBarItem_a7218d",
-  sectionHeader: "sectionHeader_a7218d"
+  sectionHeader: "sectionHeader_a7218d",
+  searchContainer: "searchContainer_a7218d"
 }
