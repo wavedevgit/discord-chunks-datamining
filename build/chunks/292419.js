@@ -103,19 +103,19 @@ function v(e) {
 }
 
 function I(e, t, n) {
-  var a, o, l, d, h, m, E, b, y;
+  var a, o, l, d, h, m, E, b, y, O, v, S, A;
   if (!g(e.type)) return null;
 
-  function O(e, r) {
+  function C(e, r) {
     let i = I(e, t, [...n, r]);
     return null == i ? null : i
   }
   let {
-    includeEmojiSrc: v
+    includeEmojiSrc: N
   } = t;
   switch (e.type) {
     case i.re.ACTION_ROW: {
-      let t = e.components.map((e, t) => O(e, t)).filter(c.lm);
+      let t = e.components.map((e, t) => C(e, t)).filter(c.lm);
       return {
         type: i.re.ACTION_ROW,
         id: T(n),
@@ -123,7 +123,7 @@ function I(e, t, n) {
       }
     }
     case i.re.BUTTON: {
-      let t = null != e.emoji ? p(e.emoji, v) : true;
+      let t = null != e.emoji ? p(e.emoji, N) : true;
       return {
         type: i.re.BUTTON,
         id: T(n),
@@ -144,7 +144,7 @@ function I(e, t, n) {
           value: e.value,
           default: e.default,
           description: e.description,
-          emoji: null != e.emoji ? p(e.emoji, v) : true
+          emoji: null != e.emoji ? p(e.emoji, N) : true
         })), placeholder: null != (o = e.placeholder) ? o : f.intl.string(f.t.Otr6W1), minValues: e.min_values, maxValues: e.max_values
       };
     case i.re.TEXT_INPUT:
@@ -153,23 +153,23 @@ function I(e, t, n) {
       };
     case i.re.USER_SELECT:
       return {
-        type: i.re.USER_SELECT, id: T(n), customId: e.custom_id, disabled: e.disabled, placeholder: null != (d = e.placeholder) ? d : f.intl.string(f.t.Otr6W1), minValues: e.min_values, maxValues: e.max_values, defaultValues: e.default_values
+        type: i.re.USER_SELECT, id: T(n), customId: e.custom_id, disabled: e.disabled, required: null != (d = e.required) && d, placeholder: null != (h = e.placeholder) ? h : f.intl.string(f.t.Otr6W1), minValues: e.min_values, maxValues: e.max_values, defaultValues: e.default_values
       };
     case i.re.ROLE_SELECT:
       return {
-        type: i.re.ROLE_SELECT, id: T(n), customId: e.custom_id, disabled: e.disabled, placeholder: null != (h = e.placeholder) ? h : f.intl.string(f.t.Otr6W1), minValues: e.min_values, maxValues: e.max_values, defaultValues: e.default_values
+        type: i.re.ROLE_SELECT, id: T(n), customId: e.custom_id, disabled: e.disabled, required: null != (m = e.required) && m, placeholder: null != (E = e.placeholder) ? E : f.intl.string(f.t.Otr6W1), minValues: e.min_values, maxValues: e.max_values, defaultValues: e.default_values
       };
     case i.re.MENTIONABLE_SELECT:
       return {
-        type: i.re.MENTIONABLE_SELECT, id: T(n), customId: e.custom_id, disabled: e.disabled, placeholder: null != (m = e.placeholder) ? m : f.intl.string(f.t.Otr6W1), minValues: e.min_values, maxValues: e.max_values, defaultValues: e.default_values
+        type: i.re.MENTIONABLE_SELECT, id: T(n), customId: e.custom_id, disabled: e.disabled, required: null != (b = e.required) && b, placeholder: null != (y = e.placeholder) ? y : f.intl.string(f.t.Otr6W1), minValues: e.min_values, maxValues: e.max_values, defaultValues: e.default_values
       };
     case i.re.CHANNEL_SELECT:
       return {
-        type: i.re.CHANNEL_SELECT, id: T(n), customId: e.custom_id, disabled: e.disabled, placeholder: null != (E = e.placeholder) ? E : f.intl.string(f.t.Otr6W1), minValues: e.min_values, maxValues: e.max_values, channelTypes: e.channel_types, defaultValues: e.default_values
+        type: i.re.CHANNEL_SELECT, id: T(n), customId: e.custom_id, disabled: e.disabled, required: null != (O = e.required) && O, placeholder: null != (v = e.placeholder) ? v : f.intl.string(f.t.Otr6W1), minValues: e.min_values, maxValues: e.max_values, channelTypes: e.channel_types, defaultValues: e.default_values
       };
     case i.re.SECTION: {
-      let t = e.components.map((e, t) => O(e, t)).filter(c.lm),
-        r = O(e.accessory, t.length);
+      let t = e.components.map((e, t) => C(e, t)).filter(c.lm),
+        r = C(e.accessory, t.length);
       if (0 === t.length || null == r) return null;
       return {
         type: i.re.SECTION,
@@ -200,7 +200,7 @@ function I(e, t, n) {
       };
     case i.re.SEPARATOR:
       return {
-        type: i.re.SEPARATOR, id: T(n), divider: null == (b = e.divider) || b, spacing: null != (y = e.spacing) ? y : i.US.SMALL
+        type: i.re.SEPARATOR, id: T(n), divider: null == (S = e.divider) || S, spacing: null != (A = e.spacing) ? A : i.US.SMALL
       };
     case i.re.CONTENT_INVENTORY_ENTRY:
       if (null == e.content_inventory_entry) return null;
@@ -208,7 +208,7 @@ function I(e, t, n) {
         type: i.re.CONTENT_INVENTORY_ENTRY, id: T(n), contentInventoryEntry: e.content_inventory_entry
       };
     case i.re.CONTAINER: {
-      let t = e.components.map((e, t) => O(e, t)).filter(c.lm);
+      let t = e.components.map((e, t) => C(e, t)).filter(c.lm);
       return {
         type: i.re.CONTAINER,
         id: T(n),
@@ -218,7 +218,7 @@ function I(e, t, n) {
       }
     }
     case i.re.LABEL: {
-      let t = O(e.component, 0);
+      let t = C(e.component, 0);
       if (null == t) return null;
       return {
         type: i.re.LABEL,

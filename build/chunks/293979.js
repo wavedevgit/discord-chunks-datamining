@@ -150,6 +150,10 @@ let w = (e, t) => t.map(t => {
         values: (null == n ? true : n.type) === t.type ? n.selectedOptions.map(e => e.value) : null
       }
     }
+    case c.re.TEXT_DISPLAY:
+      return {
+        type: t.type
+      };
     case c.re.LABEL:
       return {
         type: t.type, component: w(e, [t.component])[0]

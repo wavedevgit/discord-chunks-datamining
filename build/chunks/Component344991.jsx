@@ -105,10 +105,10 @@ function I(e) {
     visualState: B,
     isDisabled: Z,
     error: V
-  } = k.useComponentState(t, {
+  } = k.useComponentState(t, R.size > 0 ? {
     type: b,
     selectedOptions: Array.from(R.values())
-  }), F = null != k.modal, H = I > 1, Y = B === _.gH.LOADING;
+  } : true), F = null != k.modal, H = I > 1, Y = B === _.gH.LOADING;
   i.useEffect(() => {
     if ((null == U ? true : U.type) === u.re.USER_SELECT || (null == U ? true : U.type) === u.re.ROLE_SELECT || (null == U ? true : U.type) === u.re.MENTIONABLE_SELECT || (null == U ? true : U.type) === u.re.CHANNEL_SELECT) {
       let e = new Map(U.selectedOptions.map(e => [e.value, e]));

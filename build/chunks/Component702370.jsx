@@ -533,7 +533,8 @@ let eZ = e => {
             user: t,
             nameplate: n,
             showStatus: true,
-            isHighlighted: true
+            isHighlighted: true,
+            skipEffectDisplayName: true
           })
         }), (0, r.jsx)(eF, {
           user: i.locke,
