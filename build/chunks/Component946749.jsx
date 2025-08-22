@@ -1,0 +1,25 @@
+/** Chunk was on web.js **/
+/** chunk id: 946749, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  Z: () => l
+});
+var Chunk951288 = require("./951288.js"),
+  Chunk120356 = require("./120356.js"),
+  a = require.n(Chunk120356),
+  Chunk481060 = require("./481060.js"),
+  Chunk571372 = require("./571372.js");
+let l = e => {
+  let {
+    className: t,
+    color: n = "header-primary",
+    responsive: i = true,
+    children: l
+  } = e;
+  return (0, r.jsx)(o.X6q, {
+    className: a()(s.header, t, i && s.responsive),
+    variant: "display-md",
+    color: n,
+    children: l
+  })
+}

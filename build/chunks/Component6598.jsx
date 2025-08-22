@@ -37,11 +37,16 @@ let u = () => {
       })
     }), (0, Chunk951288.jsx)(Chunk761006.Z, {
       isMotionReduced: module,
-      boltTrinketClassName: Chunk460196.bolt,
-      carTrinketClassName: Chunk460196.car,
-      hammerTrinketClassName: Chunk460196.hammer,
-      keyTrinketClassName: Chunk460196.key,
-      starTrinketClassName: Chunk460196.star
+      boltContainerClassName: Chunk460196.boltContainer,
+      carContainerClassName: Chunk460196.carContainer,
+      hammerContainerClassName: Chunk460196.hammerContainer,
+      keyContainerClassName: Chunk460196.keyContainer,
+      starContainerClassName: Chunk460196.starContainer,
+      boltAssetClassName: Chunk460196.boltTrinket,
+      carAssetClassName: Chunk460196.carTrinket,
+      hammerAssetClassName: Chunk460196.hammerTrinket,
+      keyAssetClassName: Chunk460196.keyTrinket,
+      starAssetClassName: Chunk460196.starTrinket
     })]
   })
 }

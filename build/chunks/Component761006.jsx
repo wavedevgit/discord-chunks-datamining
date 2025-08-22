@@ -18,14 +18,19 @@ let _ = e => {
   let {
     isMotionReduced: t,
     containerVisibilityPercentage: n,
-    boltTrinketClassName: i,
-    carTrinketClassName: _,
-    hammerTrinketClassName: p,
-    keyTrinketClassName: h,
-    starTrinketClassName: m
+    boltContainerClassName: i,
+    carContainerClassName: _,
+    hammerContainerClassName: p,
+    keyContainerClassName: h,
+    starContainerClassName: m,
+    boltAssetClassName: g,
+    carAssetClassName: E,
+    hammerAssetClassName: b,
+    keyAssetClassName: y,
+    starAssetClassName: O
   } = e;
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)("div", {
+    children: [null != i && (0, r.jsx)("div", {
       className: a()(s.boltContainer, i),
       children: (0, r.jsx)(o.ZP, {
         blurAnimationData: {
@@ -53,11 +58,11 @@ let _ = e => {
         isMotionReduced: t,
         children: (0, r.jsx)("img", {
           src: l.Z,
-          className: s.boltTrinket,
+          className: g,
           alt: ""
         })
       })
-    }), (0, r.jsx)("div", {
+    }), null != _ && (0, r.jsx)("div", {
       className: a()(s.carContainer, _),
       children: (0, r.jsx)(o.ZP, {
         yAxisAnimationData: {
@@ -75,11 +80,11 @@ let _ = e => {
         isMotionReduced: t,
         children: (0, r.jsx)("img", {
           src: c.Z,
-          className: s.carTrinket,
+          className: E,
           alt: ""
         })
       })
-    }), (0, r.jsx)("div", {
+    }), null != p && (0, r.jsx)("div", {
       className: a()(s.hammerContainer, p),
       children: (0, r.jsx)(o.ZP, {
         yAxisAnimationData: {
@@ -97,11 +102,11 @@ let _ = e => {
         isMotionReduced: t,
         children: (0, r.jsx)("img", {
           src: u.Z,
-          className: s.hammerTrinket,
+          className: b,
           alt: ""
         })
       })
-    }), (0, r.jsx)("div", {
+    }), null != h && (0, r.jsx)("div", {
       className: a()(s.keyContainer, h),
       children: (0, r.jsx)(o.ZP, {
         blurAnimationData: {
@@ -129,11 +134,11 @@ let _ = e => {
         isMotionReduced: t,
         children: (0, r.jsx)("img", {
           src: d.Z,
-          className: s.keyTrinket,
+          className: y,
           alt: ""
         })
       })
-    }), (0, r.jsx)("div", {
+    }), null != m && (0, r.jsx)("div", {
       className: a()(s.starContainer, m),
       children: (0, r.jsx)(o.ZP, {
         blurAnimationData: {
@@ -161,7 +166,7 @@ let _ = e => {
         isMotionReduced: t,
         children: (0, r.jsx)("img", {
           src: f.Z,
-          className: s.starTrinket,
+          className: O,
           alt: ""
         })
       })

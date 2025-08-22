@@ -22,8 +22,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk206127 = require("./206127.js"),
   Chunk710220 = require("./710220.jsx"),
   Chunk164662 = require("./164662.js"),
-  Chunk123274 = require("./123274.jsx"),
   Chunk638631 = require("./638631.jsx"),
+  Chunk946749 = require("./946749.jsx"),
   Chunk254139 = require("./254139.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk350169 = require("./350169.js");
@@ -52,12 +52,12 @@ let A = (e, t) => {
               containerVisibilityPercentage: x
             }), C && (0, r.jsx)("div", {
               className: S.offerPillContainer,
-              children: (0, r.jsx)(v.Z, {
+              children: (0, r.jsx)(O.Z, {
                 enablePremiumBrandRefresh: true
               })
             }), (0, r.jsx)("div", {
               className: S.marketingPageTextContainer,
-              children: (0, r.jsx)(O.Z, {
+              children: (0, r.jsx)(v.Z, {
                 children: T.intl.string(T.t["EW+VIS"])
               })
             }), (0, r.jsxs)("div", {

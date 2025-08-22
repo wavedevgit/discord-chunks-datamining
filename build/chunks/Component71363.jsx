@@ -2,7 +2,7 @@
 /** chunk id: 71363, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => N
+  Z: () => C
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -10,6 +10,7 @@ var Chunk951288 = require("./951288.js"),
   o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk622535 = require("./622535.js"),
+  Chunk304789 = require("./304789.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk607070 = require("./607070.js"),
   Chunk100527 = require("./100527.js"),
@@ -17,10 +18,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk975298 = require("./975298.js"),
   Chunk626135 = require("./626135.js"),
   Chunk695349 = require("./695349.js"),
-  Chunk47280 = require("./47280.js"),
   Chunk103433 = require("./103433.jsx"),
-  Chunk909136 = require("./909136.jsx"),
-  Chunk306066 = require("./306066.jsx"),
+  Chunk982370 = require("./982370.jsx"),
   Chunk166021 = require("./166021.jsx"),
   Chunk22189 = require("./22189.jsx"),
   Chunk391110 = require("./391110.js"),
@@ -29,130 +28,127 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk677599 = require("./677599.js"),
   Chunk865215 = require("./865215.js");
-let N = e => {
+let C = e => {
   let t, n, {
       isAllPerksVisible: a,
-      setIsAllPerksVisible: N,
-      previousComponent: R
+      setIsAllPerksVisible: C,
+      previousComponent: N,
+      enablePremiumBrandRefresh: R
     } = e,
-    P = (0, m.ZP)({
-      location: "SeeAllNitroPerks"
-    }),
+    P = i.useRef(null),
     w = i.useRef(null),
-    D = i.useRef(null),
-    x = Object.entries((0, O.Z)()).reduce((e, t) => {
+    D = Object.entries((0, y.Z)()).reduce((e, t) => {
       let [n, r] = t;
       returnfalse !== r.canReveal && "upcomingDropUntimed" !== r.name && (e[n] = r), e
     }, {}),
     {
-      analyticsLocations: L
-    } = (0, f.ZP)(d.Z.PREMIUM_SUBSCRIBER_NITRO_HOME),
-    [j, M] = i.useState(false),
-    k = (0, s.e7)([u.Z], () => u.Z.useReducedMotion),
-    U = (0, I.mN)(),
+      analyticsLocations: x
+    } = (0, _.ZP)(f.Z.PREMIUM_SUBSCRIBER_NITRO_HOME),
+    [L, j] = i.useState(false),
+    M = (0, s.e7)([d.Z], () => d.Z.useReducedMotion),
+    k = (0, v.mN)(),
     {
-      fractionalState: G
-    } = (0, _.Z)(),
-    B = (0, h.W)();
-  U ? (t = S.intl.string(S.t["+vt7w8"]), n = S.intl.string(S.t.LgHbnJ)) : (t = S.intl.string(S.t.LgHbnJ), n = S.intl.string(S.t["+vt7w8"]));
-  let Z = () => {
-    N(false), p.default.track(T.rMx.NITRO_HOME_NAVIGATION, {
-      current_component: v.MQ.SEE_ALL,
-      next_component: R,
+      fractionalState: U
+    } = (0, p.Z)(),
+    G = (0, m.W)();
+  k ? (t = T.intl.string(T.t["+vt7w8"]), n = T.intl.string(T.t.LgHbnJ)) : (t = T.intl.string(T.t.LgHbnJ), n = T.intl.string(T.t["+vt7w8"]));
+  let B = () => {
+    C(false), h.default.track(I.rMx.NITRO_HOME_NAVIGATION, {
+      current_component: O.MQ.SEE_ALL,
+      next_component: N,
       interaction_component: "Back Button"
     })
   };
-  return (0, r.jsx)(c.yWw, {
-    className: o()(A.allPerksScroller, {
-      [A.open]: a,
-      [A.openCloseReduceMotion]: k
+  return (0, r.jsx)(u.yWw, {
+    className: o()(S.allPerksScroller, {
+      [S.open]: a,
+      [S.openCloseReduceMotion]: M
     }),
-    ref: w,
-    children: (0, r.jsx)("div", {
-      className: o()(A.container, A.responsiveContainer),
-      children: (0, r.jsxs)(f.Gt, {
-        value: L,
-        children: [P ? (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(b.Z, {
-            className: A.premiumBrandRefreshGradientBackground
-          }), (0, r.jsx)(E.Z, {
-            onBackClick: Z
-          })]
+    ref: P,
+    children: (0, r.jsx)(c.$, {
+      color: "nitro-pink",
+      className: o()(S.container, S.responsiveContainer, {
+        [S.hiddenGradient]: !R
+      }),
+      children: (0, r.jsxs)(_.Gt, {
+        value: x,
+        children: [R ? (0, r.jsx)(E.Z, {
+          onBackClick: B
         }) : (0, r.jsx)(g.Z, {
-          className: A.heroHeading,
-          onBackClick: Z
+          className: S.heroHeading,
+          onBackClick: B
         }), (0, r.jsxs)("div", {
-          className: o()(A.column, {
-            [A.premiumBrandRefresh]: P
+          className: o()(S.column, {
+            [S.premiumBrandRefresh]: R
           }),
-          children: [(0, r.jsx)(c.X6q, {
+          children: [(0, r.jsx)(u.X6q, {
             variant: "heading-xxl/extrabold",
             color: "header-primary",
-            className: A.heading,
+            className: S.heading,
             children: t
-          }), (0, r.jsx)(y.Z, {
-            className: A.cardCarousel,
-            cards: (0, I.ZM)({
-              perksCards: x,
-              variant: v.gM.CARD_CAROUSEL_FIRST_ROW,
-              isPremiumSubscriber: U,
+          }), (0, r.jsx)(b.Z, {
+            className: S.cardCarousel,
+            cards: (0, v.ZM)({
+              perksCards: D,
+              variant: O.gM.CARD_CAROUSEL_FIRST_ROW,
+              isPremiumSubscriber: k,
               hideCardsOnNarrowScreen: true,
-              fractionalState: G,
-              isInReverseTrial: B
+              fractionalState: U,
+              isInReverseTrial: G
             }),
-            cardType: v.gM.CARD_CAROUSEL_FIRST_ROW
-          }), (0, r.jsx)(c.X6q, {
+            cardType: O.gM.CARD_CAROUSEL_FIRST_ROW
+          }), (0, r.jsx)(u.X6q, {
             variant: "heading-xxl/extrabold",
             color: "header-primary",
-            className: A.heading,
+            className: S.heading,
             children: n
-          }), (0, r.jsx)(y.Z, {
-            className: A.cardCarousel,
-            cards: (0, I.ZM)({
-              perksCards: x,
-              variant: v.gM.CARD_CAROUSEL_SECOND_ROW,
-              isPremiumSubscriber: U,
+          }), (0, r.jsx)(b.Z, {
+            className: S.cardCarousel,
+            cards: (0, v.ZM)({
+              perksCards: D,
+              variant: O.gM.CARD_CAROUSEL_SECOND_ROW,
+              isPremiumSubscriber: k,
               hideCardsOnNarrowScreen: true,
-              fractionalState: G,
-              isInReverseTrial: B
+              fractionalState: U,
+              isInReverseTrial: G
             }),
-            cardType: v.gM.CARD_CAROUSEL_SECOND_ROW
-          }), (0, r.jsx)(c.X6q, {
+            cardType: O.gM.CARD_CAROUSEL_SECOND_ROW
+          }), (0, r.jsx)(u.X6q, {
             variant: "heading-xxl/extrabold",
             color: "header-primary",
-            className: A.heading,
-            children: S.intl.string(S.t.LTaxu7)
-          }), (0, r.jsx)(y.Z, {
-            className: A.cardCarousel,
-            cards: (0, I.ZM)({
-              perksCards: x,
-              variant: v.gM.CARD_CAROUSEL_THIRD_ROW,
-              isPremiumSubscriber: U,
+            className: S.heading,
+            children: T.intl.string(T.t.LTaxu7)
+          }), (0, r.jsx)(b.Z, {
+            className: S.cardCarousel,
+            cards: (0, v.ZM)({
+              perksCards: D,
+              variant: O.gM.CARD_CAROUSEL_THIRD_ROW,
+              isPremiumSubscriber: k,
               hideCardsOnNarrowScreen: true,
-              fractionalState: G,
-              isInReverseTrial: B
+              fractionalState: U,
+              isInReverseTrial: G
             }),
-            cardType: v.gM.CARD_CAROUSEL_THIRD_ROW
+            cardType: O.gM.CARD_CAROUSEL_THIRD_ROW
           })]
         }), (0, r.jsx)("div", {
-          className: A.footerSpacing
+          className: S.footerSpacing
         }), (0, r.jsx)(l.$, {
-          innerRef: D,
+          innerRef: w,
           onChange: e => {
-            e && !j && (p.default.track(T.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
-              location_stack: L
-            }), M(true))
+            e && !L && (h.default.track(I.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+              location_stack: x
+            }), j(true))
           },
           children: (0, r.jsx)("div", {
-            ref: D,
-            className: A.bottomOfPageVisibilitySensor
+            ref: w,
+            className: S.bottomOfPageVisibilitySensor
           })
         }), (0, r.jsx)("img", {
-          src: C,
-          className: A.bottomIllustration,
+          src: A,
+          className: S.bottomIllustration,
           width: 112,
           height: 85,
-          alt: S.intl.string(S.t.X4IxWF)
+          alt: T.intl.string(T.t.X4IxWF)
         })]
       })
     })
