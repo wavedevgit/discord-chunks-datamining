@@ -8,7 +8,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
-  Chunk803948 = require("./803948.js"),
+  Chunk202841 = require("./202841.js"),
   Chunk442837 = require("./442837.js"),
   Chunk930295 = require("./930295.jsx"),
   Chunk681803 = require("./681803.jsx"),
@@ -114,6 +114,7 @@ function I(e) {
         "data-mana-component": "popover",
         style: t,
         children: null != S ? (0, r.jsx)(d.$, {
+          offsetBottom: .4,
           color: S,
           className: h.popoverGradientWrapper,
           children: l

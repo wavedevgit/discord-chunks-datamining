@@ -65,8 +65,18 @@ let u = {
     rewardAssetIdMap: (0, Chunk717401.YV)([u, d, f, _, p, h, m, g]),
     chatGiftIcon: {
       trinketsAnimation: {
-        getAnimationData: () => require("./969666.js"),
-        getGlowAnimationData: () => require("./90801.js")
+        getAnimationData: () => require.e("2561").then(require.bind(require, 969666)).then(e => {
+          let {
+            default: t
+          } = e;
+          return fetch(t).then(e => e.json())
+        }),
+        getGlowAnimationData: () => require.e("51924").then(require.bind(require, 90801)).then(e => {
+          let {
+            default: t
+          } = e;
+          return fetch(t).then(e => e.json())
+        })
       }
     },
     dismissibleContentVersion: 4,

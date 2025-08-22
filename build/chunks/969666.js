@@ -1,11 +1,10 @@
-/** Chunk was on web.js **/
-/** chunk id: 969666, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 2561 **/
+/** chunk id: 969666, original params: c,e,t (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => i,
-  metadata: () => r
+  default: () => s,
+  metadata: () => a
 });
-let r = {
+let a = {
     fileBytes: 46974
   },
-  i = "https://cdn.discordapp.com/assets/content/75fc5dc69b0daa3f7acc7e0754f5665c78a11293bbeda1485ee40c2b8be2ae5c.lottiejson"
+  s = "https://cdn.discordapp.com/assets/content/75fc5dc69b0daa3f7acc7e0754f5665c78a11293bbeda1485ee40c2b8be2ae5c.lottiejson"

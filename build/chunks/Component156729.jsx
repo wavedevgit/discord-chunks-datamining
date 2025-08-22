@@ -140,7 +140,6 @@ class P extends(r = Chunk647438.PureComponent) {
         direction: "horizontal",
         justify: "space-between",
         children: [(0, Chunk951288.jsx)(Chunk374415.h, {
-          justify: "start",
           children: (0, Chunk951288.jsxs)("div", {
             className: Chunk719221.disabledTooltipWrapper,
             children: [require ? (0, Chunk951288.jsx)(Chunk481060.ua7, {
@@ -160,7 +159,6 @@ class P extends(r = Chunk647438.PureComponent) {
             })]
           })
         }), (0, Chunk951288.jsxs)(Chunk374415.h, {
-          justify: "end",
           children: [(0, Chunk951288.jsx)(Chunk680018.z, {
             type: "button",
             disabled: module || exports,

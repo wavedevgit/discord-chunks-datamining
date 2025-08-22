@@ -8,7 +8,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
-  Chunk803948 = require("./803948.js"),
+  Chunk202841 = require("./202841.js"),
   Chunk722770 = require("./722770.js"),
   Chunk481060 = require("./481060.js"),
   Chunk393238 = require("./393238.js"),
@@ -67,7 +67,7 @@ function P(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let w = (0, Chunk803948.animated)(Chunk481060.CJ0),
+let w = (0, Chunk202841.animated)(Chunk481060.CJ0),
   D = e => {
     var t;
     let {

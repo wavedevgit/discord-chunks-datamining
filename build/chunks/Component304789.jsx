@@ -70,10 +70,14 @@ function f(e, t) {
 function _(e) {
   var {
     color: t = "purple",
-    children: n
-  } = e, i = d(e, ["color", "children"]);
-  return (0, r.jsx)("div", u(l({}, i), {
-    className: a()(o.container, o[t], i.className),
-    children: n
+    offsetBottom: n = 0,
+    children: i
+  } = e, s = d(e, ["color", "offsetBottom", "children"]);
+  return (0, r.jsx)("div", u(l({}, s), {
+    className: a()(o.container, o[t], s.className),
+    style: u(l({}, s.style), {
+      "--custom-gradient-offset-bottom": "".concat(100 * n, "%")
+    }),
+    children: i
   }))
 }

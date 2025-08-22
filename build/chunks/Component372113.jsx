@@ -278,10 +278,7 @@ let k = e => {
       }), W ? (0, r.jsxs)(c.hE2, {
         direction: "horizontal",
         align: "center",
-        fullWidth: true,
-        className: o()({
-          [N.removeStackWidth]: "lg" === l
-        }),
+        fullWidth: "lg" !== l,
         children: [(0, r.jsx)(c.zxk, {
           variant: "secondary",
           disabled: true,
@@ -295,10 +292,7 @@ let k = e => {
         direction: "horizontal",
         align: "center",
         justify: "end",
-        fullWidth: true,
-        className: o()({
-          [N.removeStackWidth]: "lg" === l
-        }),
+        fullWidth: "lg" !== l,
         children: [(0, r.jsx)(L, {
           containerSize: l,
           onClick: K,

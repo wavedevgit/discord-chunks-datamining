@@ -52,6 +52,7 @@ class b extends(r = Chunk647438.PureComponent) {
       justify: "center",
       children: [(0, Chunk951288.jsxs)(Chunk481060.Kqy, {
         gap: 16,
+        fullWidth: false,
         className: c()(Chunk222198.container, {
           [Chunk222198.isMobile]: Chunk873546.tq
         }),

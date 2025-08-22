@@ -197,7 +197,8 @@ function N(e) {
     }));
   return en ? (0, r.jsx)("div", {
     className: o()(E.expressiveWrapper, {
-      [E.fullWidth]: Q
+      [E.fullWidth]: Q,
+      [E.hasText]: J
     }),
     children: el
   }) : el
