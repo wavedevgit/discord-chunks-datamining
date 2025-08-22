@@ -63,7 +63,7 @@ function b() {
   let {
     profileEffects: e,
     upsertConfig: t
-  } = (0, Chunk373071.n6)(), [n, a] = Chunk647438.useState(), b = Chunk647438.useRef(null), y = (0, Chunk442837.Wu)([Chunk25251.Z], () => Chunk25251.Z.profileEffects), [O, v] = Chunk647438.useState(""), I = Chunk647438.useMemo(() => "" === O ? y : y.filter(e => {
+  } = (0, Chunk373071.n6)(), [n, a] = Chunk647438.useState(), b = Chunk647438.useRef(null), y = (0, Chunk442837.Wu)([Chunk25251.Z], () => Chunk25251.Z.getAllProfileEffects()), [O, v] = Chunk647438.useState(""), I = Chunk647438.useMemo(() => "" === O ? y : y.filter(e => {
     let t = O.toLowerCase();
     return e.config.title.toLowerCase().includes(t) || e.config.description.toLowerCase().includes(t)
   }), [O, y]), T = () => {

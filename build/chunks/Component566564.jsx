@@ -44,9 +44,9 @@ let I = e => {
       includeUnpublished: _
     } = (0, h.Z)(), [x, L] = l.useState(false), I = (0, d.sp)(), B = null != (t = null == I ? true : I.sessionId) ? t : "";
     l.useEffect(() => {
-      (0, p.n)({
+      (0, f.n)({
         sessionId: B,
-        checkpoint: p.a.SHOP_MOUNTED,
+        checkpoint: f.a.SHOP_MOUNTED,
         tab: c,
         isFullScreen: u,
         unpublishedCategoriesShown: _,
@@ -58,7 +58,7 @@ let I = e => {
       fetchShopHomeError: P,
       shopBlocks: A,
       refreshShopHome: R
-    } = (0, f.E)(c, {
+    } = (0, p.E)(c, {
       noCache: g,
       includeUnpublished: _,
       includeBundles: true,
@@ -71,9 +71,9 @@ let I = e => {
       R()
     }, [R]);
     return (l.useEffect(() => {
-      null != P || N || 0 === A.length || (0, p.n)({
+      null != P || N || 0 === A.length || (0, f.n)({
         sessionId: B,
-        checkpoint: p.a.SHOP_RENDERED,
+        checkpoint: f.a.SHOP_RENDERED,
         tab: c,
         isFullScreen: u,
         unpublishedCategoriesShown: _,
@@ -122,12 +122,12 @@ let I = e => {
             }, l);
             break;
           case i.z.FEED:
-            let f = e.sortedSkuIds;
+            let p = e.sortedSkuIds;
             d = (0, r.jsx)(E.Z, {
               title: c === T.AW.ORBS ? j.intl.string(j.t.dFgeub) : j.intl.string(j.t.NSv5KS),
               isLoading: N || o,
               numVisibleItems: a,
-              sortedSkuIds: f,
+              sortedSkuIds: p,
               buttonContainerClassName: (null == t ? true : t.type) === i.z.IMMERSIVE_BANNER ? k.feedblockInteractiveBackground : true,
               hasSorting: c === T.AW.HOME,
               prioritizeUserDiscounts: c === T.AW.HOME,
@@ -180,24 +180,24 @@ let I = e => {
       tab: a,
       transitionState: s
     } = e, i = l.useRef(null), {
-      handleScroll: f
-    } = (0, c.z)(i, a), p = (0, g.R)("CollectiblesFeedShop"), m = (0, _.R)(), h = (0, d.sp)(), [b, C] = l.useState(T.IV), [E, S] = l.useState(false);
+      handleScroll: p
+    } = (0, c.z)(i, a), f = (0, g.R)("CollectiblesFeedShop"), m = (0, _.R)(), h = (0, d.sp)(), [b, C] = l.useState(T.IV), [E, S] = l.useState(false);
     return l.useEffect(() => {
       if (null != i.current) {
         let e = () => {
             if (null == i.current) return;
             let e = i.current.getDistanceFromBottom();
-            b >= p ? S(e < 20) : e <= 200 && C(e => e + T.IV)
+            b >= f ? S(e < 20) : e <= 200 && C(e => e + T.IV)
           },
           t = i.current.getScrollerNode();
         return null == t || t.addEventListener("scroll", e), () => {
           null == t || t.removeEventListener("scroll", e)
         }
       }
-    }, [i, b, p, C, S]), (0, r.jsx)(o.Den, {
+    }, [i, b, f, C, S]), (0, r.jsx)(o.Den, {
       className: k.shopScroll,
       ref: i,
-      onScroll: f,
+      onScroll: p,
       children: (0, r.jsxs)("div", {
         className: k.shop,
         children: [(0, r.jsxs)("div", {
@@ -208,7 +208,7 @@ let I = e => {
             isFetchingCategories: m,
             tab: a,
             isFullScreen: t
-          }), a !== T.AW.CATALOG && b >= p && (0, r.jsxs)("div", {
+          }), a !== T.AW.CATALOG && b >= f && (0, r.jsxs)("div", {
             className: k.endOfFeed,
             children: [(0, r.jsx)(o.X6q, {
               variant: "heading-md/semibold",

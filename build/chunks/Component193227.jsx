@@ -62,7 +62,7 @@ function T(e) {
 function L(e) {
   let {
     category: t
-  } = e, n = (0, m.l)(t.products), l = (0, p.a)()(n);
+  } = e, n = (0, m.l)(t.products), l = (0, f.a)()(n);
   return (0, r.jsx)(T, {
     products: l,
     category: t
@@ -75,7 +75,7 @@ function j(e) {
     isFullScreen: n
   } = e, [a, s] = l.useState(false), i = (0, c.O)(e => {
     s(e)
-  }, n ? .13 : .15), o = (0, f.B)("CollectiblesCatalogContent");
+  }, n ? .13 : .15), o = (0, p.B)("CollectiblesCatalogContent");
   return (0, r.jsxs)("div", {
     className: y.categoryWrapper,
     ref: i,
@@ -98,7 +98,7 @@ function k(e) {
     isFullScreen: i,
     currentPage: c,
     handlePageChange: u
-  } = e, f = (0, d.sp)(), p = (0, S.R)(), m = null != (t = null == f ? true : f.sessionId) ? t : "", {
+  } = e, p = (0, d.sp)(), f = (0, S.R)(), m = null != (t = null == p ? true : p.sessionId) ? t : "", {
     noCache: h,
     includeUnpublished: b
   } = (0, O.Z)(), E = l.useMemo(() => n.filter(e => null == e.unpublishedAt || e.unpublishedAt > new Date).filter(e => {
@@ -120,7 +120,7 @@ function k(e) {
       cacheDisabled: h
     })
   }, []), l.useEffect(() => {
-    p || 0 === v.length || (0, _.n)({
+    f || 0 === v.length || (0, _.n)({
       sessionId: m,
       checkpoint: _.a.SHOP_RENDERED,
       tab: x.AW.CATALOG,
@@ -128,9 +128,9 @@ function k(e) {
       unpublishedCategoriesShown: b,
       cacheDisabled: h
     })
-  }, [m, i, b, h, p, v.length]);
+  }, [m, i, b, h, f, v.length]);
   let T = (0, g.FF)("CollectiblesBrowse");
-  return p ? (0, r.jsx)(C.Z, {}) : (0, r.jsxs)("div", {
+  return f ? (0, r.jsx)(C.Z, {}) : (0, r.jsxs)("div", {
     className: s()(y.categories, {
       [y.categoriesNoFilter]: !T
     }),

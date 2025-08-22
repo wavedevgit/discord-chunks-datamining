@@ -46,11 +46,11 @@ function g(e, t) {
   }), e
 }
 
-function f(e, t) {
+function p(e, t) {
   let n = new Set(e);
   return n.has(t) ? n.delete(t) : n.add(t), n
 }
-let p = {
+let f = {
     sortType: Chunk792091.E.RECENCY,
     sortDirection: Chunk497598.F.DESC
   },
@@ -67,7 +67,7 @@ let p = {
     colorFilters: new Set,
     themeFilters: new Set,
     orbEligible: false,
-    sort: p,
+    sort: f,
     searchQuery: "",
     queryPageSize: 0,
     queryPageOffset: 0,
@@ -83,10 +83,10 @@ let p = {
       searchQuery: r,
       itemTypeFilters: l
     } = e;
-    return t.size > 0 || n.size > 0 || "" !== r.trim() ? _ : l.size > 0 ? m : p
+    return t.size > 0 || n.size > 0 || "" !== r.trim() ? _ : l.size > 0 ? m : f
   },
   C = (0, Chunk879690.U)((0, Chunk8058.XR)((e, t) => g(d({}, h), {
-    hasDefaultFilters: () => !t().hasFilters() && t().sort.sortType === p.sortType && t().sort.sortDirection === p.sortDirection,
+    hasDefaultFilters: () => !t().hasFilters() && t().sort.sortType === f.sortType && t().sort.sortDirection === f.sortDirection,
     hasFilters: () => {
       let {
         itemTypeFilters: e,
@@ -107,7 +107,7 @@ let p = {
     },
     onToggleItemType: t => {
       e(e => {
-        let n = f(e.itemTypeFilters, t),
+        let n = p(e.itemTypeFilters, t),
           r = g(d({}, e), {
             itemTypeFilters: n,
             queryPageOffset: 0
@@ -117,7 +117,7 @@ let p = {
     },
     onToggleColor: t => {
       e(e => {
-        let n = f(e.colorFilters, t),
+        let n = p(e.colorFilters, t),
           r = g(d({}, e), {
             colorFilters: n,
             queryPageOffset: 0
@@ -127,7 +127,7 @@ let p = {
     },
     onToggleTheme: t => {
       e(e => {
-        let n = f(e.themeFilters, t),
+        let n = p(e.themeFilters, t),
           r = g(d({}, e), {
             themeFilters: n,
             queryPageOffset: 0

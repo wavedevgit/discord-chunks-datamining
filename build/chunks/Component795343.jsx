@@ -49,7 +49,7 @@ function v(e) {
   l.useEffect(() => {
     R()
   }, [Z, R]);
-  let w = (0, f.a)(),
+  let w = (0, p.a)(),
     F = l.useMemo(() => w(A), [w, A]);
   l.useEffect(() => {
     n || (0, _.n)({
@@ -66,7 +66,7 @@ function v(e) {
       setQueryPageSize: M,
       setQueryPageOffset: H,
       queryPageSize: W
-    } = (0, p.S)(),
+    } = (0, f.S)(),
     [U, V] = l.useState(false),
     z = n || P || null == k;
   l.useEffect(() => {

@@ -1,7 +1,7 @@
 /** Chunk was on 55183 **/
 /** chunk id: 934261, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => Z
+  Z: () => w
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -28,7 +28,7 @@ var Chunk392711 = require("./392711.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk71627 = require("./71627.js");
 
-function C(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -52,32 +52,32 @@ let I = e => {
       pendingProfileEffectRecord: n,
       product: u,
       purchase: d
-    } = e, p = (0, l.e7)([P.default], () => P.default.getCurrentUser()), m = (0, l.e7)([o.Z], () => o.Z.getProduct(null == n ? true : n.skuId)), g = (0, l.e7)([x.default], () => x.default.locale), h = O.ZP.canUseCollectibles(p), b = (0, c.qS)(d), j = (0, c.G1)(u), v = !h && b, C = (null == d ? true : d.expiresAt) != null ? (0, y.TD)(Date.now(), d.expiresAt) : null, I = (0, a.ag)(d), Z = (0, a.kd)(m), w = (0, f.M)(!j || h), N = S(v, j, h, w);
+    } = e, p = (0, l.e7)([P.default], () => P.default.getCurrentUser()), m = (0, l.e7)([o.Z], () => o.Z.getProduct(null == n ? true : n.skuId)), g = (0, l.e7)([x.default], () => x.default.locale), h = O.ZP.canUseCollectibles(p), b = (0, c.qS)(d), j = (0, c.G1)(u), v = !h && b, E = (null == d ? true : d.expiresAt) != null ? (0, y.TD)(Date.now(), d.expiresAt) : null, I = (0, a.ag)(d), w = (0, a.kd)(m), N = (0, f.M)(!j || h), Z = S(v, j, h, N);
     return null != n ? (0, r.jsx)("div", {
-      className: t ? E.effectDescriptionNoGradient : E.effectDescriptionBorderWithGradient,
+      className: t ? C.effectDescriptionNoGradient : C.effectDescriptionBorderWithGradient,
       children: (0, r.jsxs)("div", {
-        className: E.effectDescriptionContainer,
+        className: C.effectDescriptionContainer,
         children: [(0, r.jsx)(s.Text, {
           color: "header-primary",
           variant: "text-sm/semibold",
-          className: E.effectName,
-          children: (0, i.isEmpty)(I) ? Z : I
+          className: C.effectName,
+          children: (0, i.isEmpty)(I) ? w : I
         }), null != d ? null : (0, r.jsx)(s.Text, {
           color: "text-default",
           variant: "text-sm/normal",
-          className: E.effectDescription,
-          children: N
-        }), null != C && (0, r.jsx)(s.Text, {
+          className: C.effectDescription,
+          children: Z
+        }), null != E && (0, r.jsx)(s.Text, {
           variant: "text-xxs/normal",
           color: "text-muted",
-          className: E.effectPurchasedAt,
+          className: C.effectPurchasedAt,
           children: _.intl.format(_.t.Io7ozs, {
-            days: C.days.toString()
+            days: E.days.toString()
           })
         }), null != d && (0, r.jsxs)(s.Text, {
           variant: "text-xxs/normal",
           color: "text-muted",
-          className: E.effectPurchasedAt,
+          className: C.effectPurchasedAt,
           children: [_.intl.format(_.t.gW9R4O, {
             date: d.purchasedAt.toLocaleDateString(g, {
               month: "long",
@@ -97,14 +97,14 @@ let I = e => {
         }), b && (0, r.jsx)(s.Text, {
           variant: "text-xxs/normal",
           color: "text-muted",
-          className: E.effectPurchasedAt,
+          className: C.effectPurchasedAt,
           children: _.intl.string(_.t.nKdAlJ)
         })]
       })
     }) : null
   },
   S = (e, t, n, r) => e ? _.intl.string(_.t["1UPza2"]) : t && n ? _.intl.string(_.t.hmyYKy) : t && !n ? r ? _.intl.string(_.t.meldu7) : _.intl.string(_.t.JtAKws) : _.intl.string(_.t.fEGjVV),
-  Z = e => {
+  w = e => {
     var t, n, i;
     let {
       user: s,
@@ -118,12 +118,12 @@ let I = e => {
       pendingNickname: y,
       pendingPronouns: _,
       pendingBio: S,
-      pendingBanner: Z,
-      pendingAvatar: w,
-      pendingAvatarDecoration: N,
-      pendingThemeColors: D,
-      pendingAccentColor: k
-    } = (0, l.cj)([u.Z, v.Z], () => C({
+      pendingBanner: w,
+      pendingAvatar: N,
+      pendingAvatarDecoration: Z,
+      pendingThemeColors: k,
+      pendingAccentColor: D
+    } = (0, l.cj)([u.Z, v.Z], () => E({
       pendingNickname: true,
       pendingGlobalName: true,
       pendingAccentColor: true
@@ -134,15 +134,15 @@ let I = e => {
       pendingNickname: y,
       pendingPronouns: _,
       pendingBio: b.dN.useSetting() && null != S ? d.ZP.parse(true, S).content : S,
-      pendingBanner: Z,
+      pendingBanner: w,
       useLargeBanner: true,
       pendingAvatar: (0, m.SD)({
         userId: s.id,
-        image: w
+        image: N
       }),
-      pendingAvatarDecoration: N,
-      pendingThemeColors: D,
-      pendingAccentColor: k,
+      pendingAvatarDecoration: Z,
+      pendingThemeColors: k,
+      pendingAccentColor: D,
       pendingProfileEffectId: null != (t = null == o ? true : o.id) ? t : null,
       hideFakeActivity: R,
       canUsePremiumCustomization: G,
@@ -150,8 +150,8 @@ let I = e => {
       onBannerChange: g.g_
     };
     return (0, r.jsxs)("div", {
-      className: E.previewContainer,
-      children: [(0, r.jsx)(p.Z, (n = C({}, B), i = i = {
+      className: C.previewContainer,
+      children: [(0, r.jsx)(p.Z, (n = E({}, B), i = i = {
         disabledInputs: true,
         hideCustomStatus: true
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {

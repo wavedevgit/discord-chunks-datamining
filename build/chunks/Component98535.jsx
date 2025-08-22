@@ -45,7 +45,7 @@ function S(e) {
     j = (0, g.FF)("CollectiblesContent"),
     {
       searchError: k
-    } = (0, f.a)();
+    } = (0, p.a)();
   return j && null != k ? (0, r.jsx)(b.Z, {}) : null != S ? (0, r.jsx)(m.Z, {
     onRetry: _,
     errorMessage: S,
@@ -55,7 +55,7 @@ function S(e) {
     handleTransition: L,
     tab: t,
     transitionState: u
-  }) : (0, r.jsx)(p.Z, {
+  }) : (0, r.jsx)(f.Z, {
     isFullScreen: n,
     tab: t,
     sortedCategories: o,

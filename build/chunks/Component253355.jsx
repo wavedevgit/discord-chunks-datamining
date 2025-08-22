@@ -20,7 +20,7 @@ function g(e) {
     category: t
   } = e, n = (0, l.e7)([a.Z], () => a.Z.useReducedMotion), o = (0, l.e7)([i.Z], () => i.Z.isFocused()), {
     catalogBannerStatic: g,
-    catalogBannerAnimated: f
+    catalogBannerAnimated: p
   } = (0, u.Oi)(t);
   return (0, r.jsxs)("div", {
     className: d.catalogBanner,
@@ -28,8 +28,8 @@ function g(e) {
       className: d.catalogBannerImage,
       src: g,
       alt: t.name
-    }), null != f && !n && o && (0, r.jsx)(s.Z, {
-      src: f,
+    }), null != p && !n && o && (0, r.jsx)(s.Z, {
+      src: p,
       className: d.animationAsset,
       autoPlay: true,
       loop: true

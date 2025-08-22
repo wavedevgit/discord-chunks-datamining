@@ -4,7 +4,7 @@
 require.d(exports, {
   H: () => s,
   Z: () => l
-});
+}), require("./953529.js");
 var Chunk979554 = require("./979554.js"),
   Chunk656698 = require("./656698.js");
 
@@ -35,6 +35,6 @@ class l extends Chunk656698.Z {
     return new l(o({}, super.fromServer(e), e))
   }
   constructor(e) {
-    super(e), this.type = r.Z.PROFILE_EFFECT
+    super(e), a(this, "title", true), a(this, "description", true), a(this, "accessibilityLabel", true), a(this, "reducedMotionSrc", true), a(this, "thumbnailPreviewSrc", true), a(this, "effects", true), a(this, "animationType", true), a(this, "staticFrameSrc", true), this.type = r.Z.PROFILE_EFFECT, this.title = e.title, this.description = e.description, this.accessibilityLabel = e.accessibilityLabel, this.reducedMotionSrc = e.reducedMotionSrc, this.thumbnailPreviewSrc = e.thumbnailPreviewSrc, this.effects = e.effects, this.animationType = e.animationType, this.staticFrameSrc = e.staticFrameSrc
   }
 }

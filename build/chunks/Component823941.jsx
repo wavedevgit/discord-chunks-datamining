@@ -35,13 +35,13 @@ let L = (0, Chunk884697.IC)(90),
       category: t
     } = e, {
       analyticsLocations: n
-    } = (0, d.ZP)(), a = l.useRef(null), s = (0, o.e7)([p.default], () => p.default.getCurrentUser());
+    } = (0, d.ZP)(), a = l.useRef(null), s = (0, o.e7)([f.default], () => f.default.getCurrentUser());
     return h.ZP.canUseCollectibles(s) ? t.summary : y.intl.format(y.t["9hafRk"], {
       getPremium: e => (0, r.jsx)(c.P3F, {
         innerRef: a,
         className: T.getPremiumHook,
         onClick: () => {
-          (0, f.Z)({
+          (0, p.Z)({
             subscriptionTier: x.Si.TIER_2,
             analyticsLocations: n,
             returnRef: a
@@ -81,12 +81,12 @@ function I(e) {
   } = e, {
     backgroundColors: a
   } = (0, C.Z)(t.styles), d = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), g = (0, o.e7)([m.Z], () => m.Z.isFocused()), {
-    bannerOverrides: f,
-    shopAllBannerStatic: p,
+    bannerOverrides: p,
+    shopAllBannerStatic: f,
     shopAllBannerAnimated: h
-  } = (0, v.t0)(t), x = !!(null == f ? true : f.showDarkBannerText);
+  } = (0, v.t0)(t), x = !!(null == p ? true : p.showDarkBannerText);
   return (0, r.jsxs)(E.Z, {
-    asset: p,
+    asset: f,
     className: s()(T.shopBanner, n),
     style: null != a ? {
       background: "".concat((0, O.nH)(a), " border-box border-box"),
@@ -94,7 +94,7 @@ function I(e) {
     } : true,
     children: [!d && null != h && g && (0, r.jsx)(k, {
       src: h
-    }), (null == f ? true : f.addAttributionLogo) ? (0, r.jsxs)("div", {
+    }), (null == p ? true : p.addAttributionLogo) ? (0, r.jsxs)("div", {
       className: T.discordLogo,
       children: [(0, r.jsx)(c.gw7, {
         size: "custom",
@@ -107,14 +107,14 @@ function I(e) {
       })]
     }) : (0, r.jsx)(c.LZC, {
       size: 28
-    }), (null == f ? true : f.addLogo) ? (0, r.jsx)("img", {
+    }), (null == p ? true : p.addLogo) ? (0, r.jsx)("img", {
       className: T.categoryLogo,
       src: (0, b.uV)(t.logo, {
         size: L
       }),
       alt: t.name,
       style: {
-        maxWidth: null == f ? true : f.logoMaxWidth
+        maxWidth: null == p ? true : p.logoMaxWidth
       }
     }) : (0, r.jsx)(c.LZC, {
       size: 90

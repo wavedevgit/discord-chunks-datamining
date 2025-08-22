@@ -58,7 +58,7 @@ function B(e) {
   } = e, [o, u] = l.useState(false), d = l.useRef(null), [g, _] = l.useState(0), h = l.useRef(false), b = e => {
     clearTimeout(g), _(setTimeout(() => {
       u(e)
-    }, 100)), e && (h.current = p.Z.keyboardModeEnabled)
+    }, 100)), e && (h.current = f.Z.keyboardModeEnabled)
   }, C = e => {
     ("Enter" === e.key || " " === e.key) && (e.preventDefault(), b(true))
   };
@@ -74,7 +74,7 @@ function B(e) {
       onRequestOpen: () => b(true),
       onRequestClose: () => {
         var e;
-        h.current && !p.Z.keyboardModeEnabled && (0, f.Qj)(), b(false), null == (e = d.current) || e.focus()
+        h.current && !f.Z.keyboardModeEnabled && (0, p.Qj)(), b(false), null == (e = d.current) || e.focus()
       },
       renderPopout: e => {
         let {
@@ -145,8 +145,8 @@ function N(e) {
     isFullScreen: t,
     isLayer: n,
     onClose: a,
-    selectedTab: f,
-    handleTransition: p
+    selectedTab: p,
+    handleTransition: f
   } = e, x = (0, g.ZP)(), N = (0, o.e7)([E.default], () => E.default.getCurrentUser()), P = (null == N ? true : N.isStaff()) || (null == N ? true : N.isStaffPersonal()) || false, {
     enabled: A
   } = (0, b.WX)({
@@ -163,7 +163,7 @@ function N(e) {
     displayText: j.intl.string(j.t.EBYkzs)
   });
   let Z = n ? O.DR : a,
-    w = f === T.AW.ORBS ? L.ZY5.SHOP_ORBS_TAB : L.ZY5.COLLECTIBLES_SHOP,
+    w = p === T.AW.ORBS ? L.ZY5.SHOP_ORBS_TAB : L.ZY5.COLLECTIBLES_SHOP,
     F = l.useCallback(() => {
       t && (Z(), (0, u.Ou)()), (0, h.Y)({
         pageType: w,
@@ -185,7 +185,7 @@ function N(e) {
       toolbar: t || !P ? null : (0, r.jsx)(l.Fragment, {}),
       children: [(0, r.jsxs)(c.P3F, {
         className: k.shopHomeLink,
-        onClick: () => p(T.AW.HOME),
+        onClick: () => f(T.AW.HOME),
         "aria-label": j.intl.string(j.t.pWG4zc) + " home",
         children: [(0, r.jsx)(S.Z, {
           className: k.discordLogo
@@ -201,21 +201,21 @@ function N(e) {
           } = e;
           return t === T.AW.CATALOG ? (0, r.jsx)(B, {
             tab: t,
-            selected: (0, T.RE)(f) || f === t,
+            selected: (0, T.RE)(p) || p === t,
             displayText: n,
-            handleTransition: p
+            handleTransition: f
           }, t) : (0, r.jsx)(I, {
             tab: t,
             displayText: n,
-            selected: f === t,
-            handleTransition: p
+            selected: p === t,
+            handleTransition: f
           }, t)
         })
       }), (A || t || D) && (0, r.jsxs)("div", {
         className: k.alignedRightContent,
         children: [D && (0, r.jsx)(y.Z, {
-          handleTransition: p,
-          selectedTab: f
+          handleTransition: f,
+          selectedTab: p
         }), A && (0, r.jsx)(C.V9, {
           anchorPillType: t ? "SHOP_FULLSCREEN" : "SHOP",
           analyticsPage: w,

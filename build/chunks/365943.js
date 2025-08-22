@@ -2,7 +2,7 @@
 /** chunk id: 365943, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  t: () => m
+  t: () => p
 });
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
@@ -34,25 +34,8 @@ function u(e) {
 }
 
 function d(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function f(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-
-function _(e, t) {
   if (null == e) return {};
-  var n, r, i = p(e, t);
+  var n, r, i = f(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -60,47 +43,44 @@ function _(e, t) {
   return i
 }
 
-function p(e, t) {
+function f(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let h = e => {
+let _ = e => {
     var {
       sku_id: t
-    } = e, n = _(e, ["sku_id"]);
-    return {
-      id: n.id,
-      skuId: t,
-      config: f(u({}, n), {
-        skuId: t
-      })
-    }
+    } = e;
+    return u({
+      skuId: t
+    }, d(e, ["sku_id"]))
   },
-  m = async function() {
+  p = async function() {
     let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
-    if (!Chunk25251.Z.isFetchingAll && (module || Chunk25251.Z.canFetch())) {
+    if (!Chunk25251.Z.isFetchingAll && (module || Chunk25251.Z.canFetchAll())) {
       Chunk570140.Z.dispatch({
         type: "PROFILE_EFFECTS_FETCH_ALL"
       });
       try {
+        var t, n;
         let {
           body: e
         } = await Chunk544891.tn.get({
           url: Chunk981631.ANM.USER_PROFILE_EFFECTS,
-          rejectWithError: false
-        }), t = (null == module ? true : module.profile_effect_configs).map(h);
+          rejectWithError: true
+        });
         Chunk570140.Z.dispatch({
           type: "PROFILE_EFFECTS_FETCH_ALL_SUCCESS",
-          presets: exports
+          configs: null != (n = null == module || null == (t = module.profile_effect_configs) ? true : exports.map(_)) ? require : []
         })
       } catch (t) {
         let e = new Chunk479531.Z(exports);
         (0, Chunk411700.G)(module), Chunk570140.Z.dispatch({
           type: "PROFILE_EFFECTS_FETCH_ALL_FAILURE",
-          error: module
+          apiError: module
         })
       }
     }

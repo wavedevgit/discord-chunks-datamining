@@ -164,7 +164,7 @@ let Z = {
                 variant: "heading-xxl/bold",
                 className: R.title,
                 color: "header-primary",
-                children: [q.title, M === N.AW.ORBS && G && (0, r.jsx)(f.Z, {})]
+                children: [q.title, M === N.AW.ORBS && G && (0, r.jsx)(p.Z, {})]
               }), "" !== q.summary && (0, r.jsx)(d.Text, {
                 variant: q.categorySkuId === i.T.ORB ? "text-lg/medium" : "text-md/normal",
                 className: q.categorySkuId === i.T.ORB ? R.orbsSubHeaderText : (null == K ? true : K.showDarkBannerText) ? R.subHeaderTextDark : R.subHeaderText,
@@ -183,7 +183,7 @@ let Z = {
                   pageType: P.ZY5.SHOP_ORBS_TAB,
                   sectionType: P.jXE.ORBS_SHOP_HERO_BLOCK,
                   ctaObject: P.qAy.CTA_TO_QUEST_HOME
-                }), (0, p.navigateToQuestHome)({
+                }), (0, f.navigateToQuestHome)({
                   fromContent: o.j.ORBS_SHOP_HERO_CTA
                 })) : (a("shop latest category hero", eo && q.categorySkuId !== i.T.ORB ? true : q.categorySkuId), b.default.track(P.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                   collectibles_shop_session_id: null == z ? true : z.sessionId,

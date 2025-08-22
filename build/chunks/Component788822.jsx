@@ -31,8 +31,8 @@ let b = e => {
   let x = null != (n = null != C ? C : null == E ? true : E.skuId) ? n : "",
     {
       handleCardVisibilityChange: y
-    } = (0, f.E)(x, "home", "marketing featured block"),
-    T = (0, p.YG)(E, S),
+    } = (0, p.E)(x, "home", "marketing featured block"),
+    T = (0, f.YG)(E, S),
     L = l.useRef(null),
     j = x === i.T.NAMEPLATES_V3,
     k = j ? "NAMEPLATES VOL.3" : null,

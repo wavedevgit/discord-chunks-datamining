@@ -32,7 +32,7 @@ function h(e, t) {
     }, [e]),
     C = h.length > 0 && l,
     [E, S] = r.useState(C ? s.m.RECOMMENDED : s.m.POPULAR),
-    O = (0, p.Z)(),
+    O = (0, f.Z)(),
     v = (0, i.e7)([c.Z], () => c.Z.productsWithVariantsAsGroup),
     x = (0, i.e7)([u.Z], () => u.Z.getUserDiscounts()),
     y = (0, g.a)(),
@@ -50,7 +50,7 @@ function h(e, t) {
   return {
     sortType: E,
     setSortType: S,
-    sortedItems: (0, f.l)(k),
+    sortedItems: (0, p.l)(k),
     sortOptions: r.useMemo(() => {
       let e = [{
         value: s.m.POPULAR,

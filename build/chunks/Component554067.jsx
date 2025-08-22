@@ -2,7 +2,7 @@
 /** chunk id: 554067, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => f
+  Z: () => p
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -15,22 +15,22 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk535333 = require("./535333.js");
 
-function f(e) {
+function p(e) {
   let {
     handleTransition: t,
     selectedTab: n
   } = e, {
-    searchQuery: f,
-    onSetSearchQuery: p
+    searchQuery: p,
+    onSetSearchQuery: f
   } = (0, o.S)(), [m, _] = l.useState(""), h = (0, i.sp)();
   return l.useEffect(() => {
     let e = setTimeout(() => {
-      p(m)
+      f(m)
     }, 250);
     return () => clearTimeout(e)
-  }, [m, p]), l.useEffect(() => {
-    _(f)
-  }, [f]), (0, r.jsx)(a.P3F, {
+  }, [m, f]), l.useEffect(() => {
+    _(p)
+  }, [p]), (0, r.jsx)(a.P3F, {
     ignoreKeyPress: true,
     onClick: () => {
       n !== c.AW.CATALOG && t(c.AW.CATALOG), s.default.track(u.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
@@ -47,7 +47,7 @@ function f(e) {
       size: "sm",
       className: g.searchBar,
       onKeyDown: e => {
-        "Enter" === e.key && p(m)
+        "Enter" === e.key && f(m)
       },
       query: m,
       onChange: _,

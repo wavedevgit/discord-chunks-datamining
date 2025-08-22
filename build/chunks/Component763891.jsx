@@ -44,7 +44,7 @@ function N(e) {
   } = e, R = (0, g.sp)(), Z = null != (t = null == R ? true : R.sessionId) ? t : "", {
     noCache: w,
     includeUnpublished: F
-  } = (0, C.Z)(), D = (0, s.e7)([u.default], () => u.default.getCurrentUser()), M = (0, s.e7)([f.Z], () => f.Z.productsWithVariantsAsGroup), [H, W] = l.useState(1), U = (0, c.Fg)(), V = (0, i.ap)(U), [z, G, q] = l.useMemo(() => {
+  } = (0, C.Z)(), D = (0, s.e7)([u.default], () => u.default.getCurrentUser()), M = (0, s.e7)([p.Z], () => p.Z.productsWithVariantsAsGroup), [H, W] = l.useState(1), U = (0, c.Fg)(), V = (0, i.ap)(U), [z, G, q] = l.useMemo(() => {
     switch (A) {
       case E.AW.AVATAR_DECORATIONS:
         return [O.intl.string(O.t.dRZYND), V ? L.Z : T.Z, a.Z.AVATAR_DECORATION];
@@ -55,7 +55,7 @@ function N(e) {
       case E.AW.BUNDLES:
         return [O.intl.string(O.t.FYFppq), V ? y.Z : x.Z, a.Z.BUNDLE]
     }
-  }, [A, V]), K = (0, p.a)(), Y = l.useMemo(() => K(M.filter(e => {
+  }, [A, V]), K = (0, f.a)(), Y = l.useMemo(() => K(M.filter(e => {
     var t;
     return e.type === q || e.type === a.Z.VARIANTS_GROUP && (null == (t = e.variants) ? true : t.some(e => e.type === q)) === true
   })), [M, q, K]), X = (0, m.l)(Y);
@@ -90,7 +90,7 @@ function N(e) {
     }), (0, r.jsx)("div", {
       className: v.products,
       children: X.slice(40 * (H - 1), 40 * H).map((e, t) => {
-        let n = f.Z.getCategory(e.categorySkuId);
+        let n = p.Z.getCategory(e.categorySkuId);
         return null == n ? null : (0, r.jsx)(g.k0, {
           newValue: {
             tilePosition: t

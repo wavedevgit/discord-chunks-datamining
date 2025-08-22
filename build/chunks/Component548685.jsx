@@ -54,7 +54,7 @@ let j = e => {
     K({
       isShuffling: false,
       onOutroComplete: () => F(e)
-    }), f.default.track(x.rMx.COLLECTIBLES_SHOP_FEED_SORT_CHANGED, {
+    }), p.default.track(x.rMx.COLLECTIBLES_SHOP_FEED_SORT_CHANGED, {
       page_session_id: X,
       sort_type: e
     })
@@ -92,7 +92,7 @@ let j = e => {
               }
               return e
             }({}, e), n = n = {
-              onClick: () => (0, c.Z)(p.Z.getArticleURL(x.BhN.DATA_USED_FOR_RECOMMENDED)),
+              onClick: () => (0, c.Z)(f.Z.getArticleURL(x.BhN.DATA_USED_FOR_RECOMMENDED)),
               className: L.informationIcon,
               children: (0, r.jsx)(o.d3s, {
                 size: "sm"
@@ -139,7 +139,7 @@ let j = e => {
                 isShuffling: true,
                 onOutroComplete: H,
                 returnRef: Q
-              }), f.default.track(x.rMx.COLLECTIBLES_SHOP_FEED_SHUFFLE_CLICKED, {
+              }), p.default.track(x.rMx.COLLECTIBLES_SHOP_FEED_SHUFFLE_CLICKED, {
                 page_session_id: X
               })
             },

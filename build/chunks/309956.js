@@ -2,7 +2,7 @@
 /** chunk id: 309956, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  B: () => f
+  B: () => p
 }), require("./388685.js"), require("./539854.js");
 var Chunk647438 = require("./647438.js"),
   Chunk843611 = require("./843611.js"),
@@ -19,14 +19,14 @@ let g = {
     [Chunk215023.AW.NAMEPLATES]: Chunk335818.G.NAMEPLATE,
     [Chunk215023.AW.BUNDLES]: Chunk335818.G.BUNDLE
   },
-  f = (e, t) => {
+  p = (e, t) => {
     let {
       enabled: n
     } = (0, s.WX)({
       location: "useShopViewTransition"
     }), a = (0, i.FF)("CollectiblesBrowse"), {
-      setItemTypeFilter: f,
-      reset: p,
+      setItemTypeFilter: p,
+      reset: f,
       setCurrentTab: m
     } = (0, o.S)(), _ = r.useMemo(() => e !== u.AW.ORBS || n ? (0, u.RE)(e) && a ? u.AW.CATALOG : e : u.AW.HOME, [e, n, a]), [h, b] = r.useState(_), [C, E] = r.useState(u.f7.VISIBLE);
     r.useEffect(() => {
@@ -37,10 +37,10 @@ let g = {
     let {
       clearError: S
     } = (0, c.a)(), O = (0, l.k6)(), v = r.useCallback(async (e, n) => {
-      if (S(), e === u.AW.CATALOG) p();
+      if (S(), e === u.AW.CATALOG) f();
       else if ((0, u.RE)(e) && e !== h) {
         let t = g[e];
-        null != t ? f(t) : p()
+        null != t ? p(t) : f()
       }
       if (h === e) return;
       if (n) {
@@ -51,7 +51,7 @@ let g = {
       b(r), n && E(u.f7.IN), t || O.push(d.Z5c.COLLECTIBLES_SHOP_WITH_TAB(r), {
         shallow: true
       }), E(u.f7.VISIBLE)
-    }, [O, t, a, f, p, h, S]);
+    }, [O, t, a, p, f, h, S]);
     return {
       selectedTab: h,
       transitionState: C,

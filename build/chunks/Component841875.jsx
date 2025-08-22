@@ -34,7 +34,7 @@ function S() {
   } = (0, Chunk822857.WX)({
     location: "Shop"
   }), c = (0, Chunk381585.sp)(), d = Chunk647438.useCallback(e => {
-    f.default.track(h.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+    p.default.track(h.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
       collectibles_shop_session_id: null == c ? true : c.sessionId,
       page_section: null == c ? true : c.pageSection,
       page_category: null == c ? true : c.pageCategory,
@@ -242,7 +242,7 @@ let O = e => {
       onToggleTheme: a
     } = (0, m.S)(), i = (0, d.ZP)() === b.BR.DARK, o = l.useCallback(e => {
       if (n.has(e) || i) return "always-white"
-    }, [n, i]), g = l.useCallback(e => n.has(e) || i ? u.TVs.colors.WHITE : u.TVs.colors.INTERACTIVE_NORMAL, [n, i]), f = l.useMemo(() => [{
+    }, [n, i]), g = l.useCallback(e => n.has(e) || i ? u.TVs.colors.WHITE : u.TVs.colors.INTERACTIVE_NORMAL, [n, i]), p = l.useMemo(() => [{
       name: C.intl.string(C.t.aVBOKi),
       icon: (0, r.jsx)(u.wGt, {
         size: "xs",
@@ -321,7 +321,7 @@ let O = e => {
         children: C.intl.string(C.t.t1Ztrq)
       }), (0, r.jsx)("div", {
         className: E.themeRow,
-        children: f.map(e => {
+        children: p.map(e => {
           let {
             name: l,
             icon: i,

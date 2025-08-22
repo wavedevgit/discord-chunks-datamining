@@ -85,8 +85,8 @@ let _ = e => {
             },
             lineClamp: 2,
             variant: L ? "text-md/medium" : "text-sm/medium",
-            children: L ? p.intl.format(p.t.SFFP7O, {
-              helpdeskArticle: c.Z.getArticleURL(f.BhN.VIRTUAL_CURRENCY_LEARN_MORE)
+            children: L ? f.intl.format(f.t.SFFP7O, {
+              helpdeskArticle: c.Z.getArticleURL(p.BhN.VIRTUAL_CURRENCY_LEARN_MORE)
             }) : _.body
           })]
         })
@@ -95,7 +95,7 @@ let _ = e => {
         children: (0, r.jsx)(o.zxk, {
           variant: "overlay-primary",
           onClick: () => h("shop wide banner", x),
-          text: p.intl.string(p.t.jVcuVV)
+          text: f.intl.string(f.t.jVcuVV)
         })
       })]
     })

@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk372654 = require("./372654.js"),
   Chunk992171 = require("./992171.js");
 
-function p(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -65,14 +65,14 @@ let _ = e => {
         filter: "blur(2px)",
         transform: "scale(1.02)"
       } : {};
-    if (1 === C) return p(m(p({}, _), {
+    if (1 === C) return f(m(f({}, _), {
       backgroundImage: (null == b ? true : b.addGradient) ? "url(".concat(e, "), linear-gradient(180deg, rgba(0, 71, 94, 0.6) 5%, rgba(9, 33, 65, 0.6) 95%)") : "url(".concat(e, ")"),
       backgroundBlendMode: "multiply",
       backgroundSize: "cover",
       backgroundPosition: "center"
     }), r);
     let l = (0, u.aD)(o.Z.unsafe_rawColors.BLACK_500.resolve().hex(), 1 - C);
-    return p(m(p({}, _), {
+    return f(m(f({}, _), {
       backgroundImage: "linear-gradient(".concat(l, ", ").concat(l, "), url(").concat(e, ")"),
       backgroundBlendMode: "saturation",
       backgroundSize: "cover",
@@ -80,7 +80,7 @@ let _ = e => {
     }), r)
   }, [t, n, C, _, null == b ? true : b.blur, null == b ? true : b.addGradient]);
   return (0, r.jsx)("div", {
-    className: s()(f.banner, a),
+    className: s()(p.banner, a),
     style: E,
     children: h
   })

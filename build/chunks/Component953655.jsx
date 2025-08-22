@@ -15,7 +15,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk310582 = require("./310582.js");
 let g = ["1366494385738354769", "1385035256125591633"],
-  f = e => {
+  p = e => {
     let {
       handleTransition: t,
       featuredBlockRecord: n
@@ -43,7 +43,7 @@ let g = ["1366494385738354769", "1385035256125591633"],
       })
     })
   },
-  p = e => {
+  f = e => {
     let {
       handleTransition: t,
       categories: n
@@ -91,11 +91,11 @@ let g = ["1366494385738354769", "1385035256125591633"],
           className: d.skeletonBody
         })
       })]
-    }) : null != s ? (0, r.jsx)(f, {
+    }) : null != s ? (0, r.jsx)(p, {
       featuredBlockRecord: s,
       handleTransition: n,
       isLoading: false
-    }) : (0, r.jsx)(p, {
+    }) : (0, r.jsx)(f, {
       categories: l,
       handleTransition: n,
       isLoading: false

@@ -1,13 +1,12 @@
 /** Chunk was on 5665 **/
 /** chunk id: 402130, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => b
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk365943 = require("./365943.js"),
   Chunk594174 = require("./594174.js"),
   Chunk5192 = require("./5192.js"),
   Chunk788111 = require("./788111.js"),
@@ -18,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk983559 = require("./983559.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function b(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,44 +36,42 @@ function b(e) {
   return e
 }
 
-function _(e) {
+function b(e) {
   let {
     channel: t
-  } = e, [n] = t.recipients, _ = (0, l.e7)([s.default], () => s.default.getUser(n)), y = (0, l.e7)([s.default], () => s.default.getCurrentUser()), C = (0, d.Z)(), [x, v] = (0, u.Z)(n);
+  } = e, [n] = t.recipients, b = (0, l.e7)([o.default], () => o.default.getUser(n)), _ = (0, l.e7)([o.default], () => o.default.getCurrentUser()), y = (0, u.Z)(), [C, x] = (0, c.Z)(n);
   if (i.useEffect(() => {
-      (0, o.t)()
-    }, []), i.useEffect(() => {
-      (0, p.Z)(null != _ ? _ : n, {
+      (0, d.Z)(null != b ? b : n, {
         type: "sidebar",
-        withMutualFriendsCount: (null == _ ? true : _.bot) !== true,
+        withMutualFriendsCount: (null == b ? true : b.bot) !== true,
         withMutualFriends: false,
         withMutualGuilds: true,
         channelId: t.id
       })
-    }, [_, n, t.id]), null == _ || null == y || !C) return null;
-  let O = "user-profile-sidebar-heading-".concat(_.id),
-    j = c.ZP.getName(null, t.id, _);
+    }, [b, n, t.id]), null == b || null == _ || !y) return null;
+  let v = "user-profile-sidebar-heading-".concat(b.id),
+    O = s.ZP.getName(null, t.id, b);
   return (0, r.jsx)("aside", {
-    "aria-labelledby": O,
+    "aria-labelledby": v,
     children: (0, r.jsx)(a.y5t, {
       component: (0, r.jsx)(a.nn4, {
         children: (0, r.jsx)(a.H, {
-          id: O,
-          children: g.intl.format(g.t.KRe1Fh, {
-            name: j
+          id: v,
+          children: m.intl.format(m.t.KRe1Fh, {
+            name: O
           })
         })
       }),
-      children: x ? (0, r.jsx)(f.Z, b({
-        user: _,
-        currentUser: y,
-        onHide: v
-      }, e)) : _.isNonUserBot() ? (0, r.jsx)(h.Z, b({
-        user: _,
-        currentUser: y
-      }, e)) : (0, r.jsx)(m.Z, b({
-        user: _,
-        currentUser: y
+      children: C ? (0, r.jsx)(h.Z, g({
+        user: b,
+        currentUser: _,
+        onHide: x
+      }, e)) : b.isNonUserBot() ? (0, r.jsx)(p.Z, g({
+        user: b,
+        currentUser: _
+      }, e)) : (0, r.jsx)(f.Z, g({
+        user: b,
+        currentUser: _
       }, e))
     })
   })
