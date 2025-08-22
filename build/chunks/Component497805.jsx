@@ -4,7 +4,7 @@
 require.d(exports, {
   Z: () => O,
   z: () => g
-});
+}), require("./388685.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk481060 = require("./481060.js"),
@@ -55,7 +55,7 @@ function h(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let m = null;
+let m = new Set;
 
 function g(e, t) {
   return "USER_PROFILE_MODAL_KEY:".concat(e, ":").concat(null == t ? "" : t)
@@ -67,40 +67,45 @@ async function E(e) {
       subsection: f,
       guildId: h,
       channelId: E,
-      showGuildProfile: y = true,
-      appContext: O,
-      customStatusPrompt: v,
-      disableActionsForPreview: I = false
+      showGuildProfile: b = true,
+      appContext: y,
+      customStatusPrompt: O,
+      disableActionsForPreview: v = false
     } = e,
-    T = p(e, ["userId", "section", "subsection", "guildId", "channelId", "showGuildProfile", "appContext", "customStatusPrompt", "disableActionsForPreview"]);
-  let S = l.default.getUser(a);
+    I = p(e, ["userId", "section", "subsection", "guildId", "channelId", "showGuildProfile", "appContext", "customStatusPrompt", "disableActionsForPreview"]);
+  let T = l.default.getUser(a);
+  if (null == T) return;
+  let S = l.default.getCurrentUser();
   if (null == S) return;
-  let A = l.default.getCurrentUser();
-  null != A && (m = await (0, i.ZDy)(async () => {
+  let A = g(a, b ? h : true);
+  m.add(await (0, i.ZDy)(async () => {
     let e = (await Promise.all([n.e("1268"), n.e("27069"), n.e("62880"), n.e("98360")]).then(n.bind(n, 866035))).default;
     return t => (0, r.jsx)(e, _({
-      user: S,
-      currentUser: A,
+      user: T,
+      currentUser: S,
       guildId: h,
       initialSection: o,
       initialSubsection: f,
       channelId: E,
-      showGuildProfile: y,
-      customStatusPrompt: v,
-      disableActionsForPreview: I
-    }, t, T))
+      showGuildProfile: b,
+      customStatusPrompt: O,
+      disableActionsForPreview: v
+    }, t, I))
   }, {
-    modalKey: g(a, y ? h : true),
-    contextKey: (0, i.VnL)(null != (t = null != O ? O : (0, s.GB)()) ? t : d.IlC.APP),
+    modalKey: A,
+    contextKey: (0, i.VnL)(null != (t = null != y ? y : (0, s.GB)()) ? t : d.IlC.APP),
     onCloseRequest: () => {
       if (u.Z.hasSaveablePendingChanges()) return void c.Z.notifyPendingWidgets();
-      b()
+      (0, i.Mr3)(A), m.delete(A), c.Z.clearPendingWidgets()
     }
   }))
 }
 
 function b() {
-  null != m && ((0, Chunk481060.Mr3)(m), Chunk592183.Z.clearPendingWidgets()), m = null
+  if (0 !== m.size) {
+    for (let e of m)(0, Chunk481060.Mr3)(module);
+    m.clear(), Chunk592183.Z.clearPendingWidgets()
+  }
 }
 class y extends Chunk317770.Z {
   _initialize() {
