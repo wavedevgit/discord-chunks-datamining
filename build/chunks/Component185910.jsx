@@ -1,5 +1,5 @@
 /** Chunk was on 93886 **/
-/** chunk id: 185910, original params: e,t,a (module,exports,require) **/
+/** chunk id: 185910, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
 }), require("./388685.js"), require("./35282.js");
@@ -23,14 +23,14 @@ let d = {
 
 function u(e) {
   let t = {};
-  for (let [a, n] of Object.entries(e)) t[a] = n;
+  for (let [n, a] of Object.entries(e)) t[n] = a;
   return t
 }
 let m = u(d),
   x = u(d);
 
 function h(e) {
-  return o.Jn9.test(e) ? (0, n.jsx)(s.ZP, {
+  return o.Jn9.test(e) ? (0, a.jsx)(s.ZP, {
     type: s.ZP.Types.TEXT,
     children: () => e
   }) : e
@@ -39,12 +39,12 @@ function h(e) {
 function p(e) {
   let {
     data: t
-  } = e, a = (0, i.ZP)();
-  return (0, n.jsx)("div", {
+  } = e, n = (0, i.ZP)();
+  return (0, a.jsx)("div", {
     className: c.inspectorWrapper,
-    children: (0, n.jsx)(r.L, {
+    children: (0, a.jsx)(r.L, {
       data: t,
-      theme: "light" === a ? x : m,
+      theme: "light" === n ? x : m,
       invertTheme: false,
       valueRenderer: h,
       shouldExpandNode: () => true

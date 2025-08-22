@@ -1,5 +1,5 @@
 /** Chunk was on 93886 **/
-/** chunk id: 596768, original params: e,t,a (module,exports,require) **/
+/** chunk id: 596768, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
 }), require("./388685.js"), require("./642613.js");
@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk599832 = require("./599832.js"),
   Chunk451429 = require("./451429.js");
-let E = [{
+let O = [{
     key: "id",
     cellClassName: Chunk599832.eventColumn,
     render(e) {
@@ -62,7 +62,7 @@ let E = [{
       let {
         loggedTrigger: {
           experimentId: t,
-          descriptor: a,
+          descriptor: n,
           exposureType: r,
           excluded: l,
           timestamp: s,
@@ -70,62 +70,62 @@ let E = [{
           previouslyTracked: c
         }
       } = e, u = d()(s);
-      return (0, n.jsxs)(n.Fragment, {
-        children: [(0, n.jsxs)(p.ZP, {
-          className: i()(O.headerBar, N.subPanelHeaderBar),
-          children: [(0, n.jsx)(p.ZP.Icon, {
+      return (0, a.jsxs)(a.Fragment, {
+        children: [(0, a.jsxs)(p.ZP, {
+          className: i()(E.headerBar, N.subPanelHeaderBar),
+          children: [(0, a.jsx)(p.ZP.Icon, {
             icon: x.IeX,
             tooltip: t
-          }), (0, n.jsx)(p.ZP.Title, {
+          }), (0, a.jsx)(p.ZP.Title, {
             children: t
           })]
-        }), (0, n.jsxs)(j.E, {
+        }), (0, a.jsxs)(j.E, {
           className: N.commonProperties,
-          children: [(0, n.jsx)(j.Z9, {
+          children: [(0, a.jsx)(j.Z9, {
             name: "Timestamp (local)",
-            children: (0, n.jsx)("time", {
+            children: (0, a.jsx)("time", {
               dateTime: s.toISOString(),
-              title: (0, v.vc)(u, "LLLL"),
-              children: (0, v.Y4)(u)
+              title: (0, f.vc)(u, "LLLL"),
+              children: (0, f.Y4)(u)
             })
-          }), "guild" === a.type && (0, n.jsx)(j.Z9, {
+          }), "guild" === n.type && (0, a.jsx)(j.Z9, {
             name: "Guild ID",
-            children: (0, n.jsx)("code", {
-              children: a.guildId
+            children: (0, a.jsx)("code", {
+              children: n.guildId
             })
-          }), (0, n.jsx)(j.Z9, {
+          }), (0, a.jsx)(j.Z9, {
             name: "Bucket",
-            children: (0, n.jsx)("code", {
-              children: a.bucket
+            children: (0, a.jsx)("code", {
+              children: n.bucket
             })
-          }), (0, n.jsx)(j.Z9, {
+          }), (0, a.jsx)(j.Z9, {
             name: "Revision",
-            children: (0, n.jsx)("code", {
-              children: a.revision
+            children: (0, a.jsx)("code", {
+              children: n.revision
             })
-          }), (0, n.jsx)(j.Z9, {
+          }), (0, a.jsx)(j.Z9, {
             name: "Override",
-            children: (0, n.jsx)(j.wl, {
-              value: a.override
+            children: (0, a.jsx)(j.wl, {
+              value: n.override
             })
-          }), (0, n.jsx)(j.Z9, {
+          }), (0, a.jsx)(j.Z9, {
             name: "Exposure type",
-            children: (0, n.jsx)("code", {
+            children: (0, a.jsx)("code", {
               children: r
             })
-          }), (0, n.jsx)(j.Z9, {
+          }), (0, a.jsx)(j.Z9, {
             name: "Excluded",
-            children: (0, n.jsx)(j.wl, {
+            children: (0, a.jsx)(j.wl, {
               value: l
             })
-          }), (0, n.jsx)(j.Z9, {
+          }), (0, a.jsx)(j.Z9, {
             name: "Previously tracked",
-            children: (0, n.jsx)(j.wl, {
+            children: (0, a.jsx)(j.wl, {
               value: c
             })
-          }), (0, n.jsx)(j.Z9, {
+          }), (0, a.jsx)(j.Z9, {
             name: "Location",
-            children: (0, n.jsx)("code", {
+            children: (0, a.jsx)("code", {
               children: o
             })
           })]
@@ -135,8 +135,8 @@ let E = [{
   }];
 
 function S() {
-  let [e, t] = Chunk647438.useState(""), a = Chunk647438.useRef(null), l = (0, Chunk442837.Wu)([Chunk120816.Z], () => Chunk120816.Z.loggedTriggers), s = Chunk647438.useMemo(() => Chunk120356.filter(t => 0 === e.length || o()(e, t.experimentId)).sort((e, t) => t.timestamp.getTime() - e.timestamp.getTime()), [Chunk120356, module]), [c, d] = Chunk647438.useState(true), p = Chunk658722.find(e => e.key === c), {
-    TabBar: v,
+  let [e, t] = Chunk647438.useState(""), n = Chunk647438.useRef(null), l = (0, Chunk442837.Wu)([Chunk120816.Z], () => Chunk120816.Z.loggedTriggers), s = Chunk647438.useMemo(() => Chunk120356.filter(t => 0 === e.length || o()(e, t.experimentId)).sort((e, t) => t.timestamp.getTime() - e.timestamp.getTime()), [Chunk120356, module]), [c, d] = Chunk647438.useState(true), p = Chunk658722.find(e => e.key === c), {
+    TabBar: f,
     renderSelectedTab: j
   } = (0, Chunk621060.ZP)({
     tabs: T
@@ -181,7 +181,7 @@ function S() {
         placeholder: "Search by experiment id"
       })]
     }), (0, Chunk951288.jsx)(Chunk681619.Z, {
-      columns: E,
+      columns: O,
       data: Chunk658722,
       selectedRowKey: Chunk913527,
       onClickRow: e => d(e.key)

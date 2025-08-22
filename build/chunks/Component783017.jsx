@@ -1,5 +1,5 @@
 /** Chunk was on 84992 **/
-/** chunk id: 783017, original params: e,t,n (module,exports,require) **/
+/** chunk id: 783017, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
 });
@@ -20,18 +20,18 @@ var Chunk951288 = require("./951288.js"),
   Chunk667325 = require("./667325.js"),
   Chunk552039 = require("./552039.js"),
   Chunk445161 = require("./445161.js");
-let x = e => {
+let x = t => {
   let {
-    type: t,
+    type: e,
     text: n,
     buttonText: i,
     hideClose: x,
-    onClose: f
-  } = e, p = (0, a.e7)([c.Z], () => c.Z.useReducedMotion), N = (0, a.e7)([o.default], () => {
-    let e = o.default.getCurrentUser();
-    return l()(null != e, "UserSettingsProfileCustomization: user cannot be undefined"), e
-  }), T = (0, L.rO)() ? m.Z : Z.Z, I = (e => {
-    switch (e) {
+    onClose: p
+  } = t, f = (0, a.e7)([c.Z], () => c.Z.useReducedMotion), N = (0, a.e7)([o.default], () => {
+    let t = o.default.getCurrentUser();
+    return l()(null != t, "UserSettingsProfileCustomization: user cannot be undefined"), t
+  }), T = (0, L.rO)() ? m.Z : Z.Z, I = (t => {
+    switch (t) {
       case H.Yk.PREMIUM_UPDATED:
         return M.intl.string(M.t["75Wt0N"]);
       case H.Yk.PREMIUM_ACTIVATED:
@@ -39,7 +39,7 @@ let x = e => {
       default:
         return M.intl.string(M.t.X79Az8)
     }
-  })(t);
+  })(e);
   return (0, s.jsxs)("div", {
     className: h.container,
     children: [(0, s.jsx)(C.X6q, {
@@ -49,7 +49,7 @@ let x = e => {
       children: I
     }), (0, s.jsxs)("div", {
       className: h.nameplatePreviewContainer,
-      children: [p ? (0, s.jsx)("img", {
+      children: [f ? (0, s.jsx)("img", {
         src: g.Z,
         alt: "",
         className: h.nameplateGlow
@@ -79,7 +79,7 @@ let x = e => {
         variant: "expressive",
         fullWidth: true,
         text: i,
-        onClick: f
+        onClick: p
       })
     })]
   })

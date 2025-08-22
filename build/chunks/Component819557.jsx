@@ -1,5 +1,5 @@
 /** Chunk was on 93886 **/
-/** chunk id: 819557, original params: e,t,a (module,exports,require) **/
+/** chunk id: 819557, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   q: () => c,
   z: () => o
@@ -15,9 +15,9 @@ function o(e) {
   let {
     children: t
   } = e;
-  return (0, n.jsx)("div", {
+  return (0, a.jsx)("div", {
     className: s.cellGroup,
-    children: (0, n.jsx)("div", {
+    children: (0, a.jsx)("div", {
       className: s.content,
       children: t
     })
@@ -27,7 +27,7 @@ function o(e) {
 function c(e) {
   let {
     icon: t,
-    title: a,
+    title: n,
     description: r,
     iconClassName: o,
     color: c,
@@ -35,40 +35,40 @@ function c(e) {
     completed: u = false,
     index: m
   } = e;
-  return (0, n.jsxs)("div", {
+  return (0, a.jsxs)("div", {
     className: s.cell,
     children: [(() => {
       if ("numbered" === d && null != m)
-        if (u) return (0, n.jsx)("div", {
+        if (u) return (0, a.jsx)("div", {
           className: s.number,
-          children: (0, n.jsx)(i.sV5, {
+          children: (0, a.jsx)(i.sV5, {
             color: "green",
             className: l()(s.icon, o)
           })
         });
-        else return (0, n.jsx)(i.X6q, {
+        else return (0, a.jsx)(i.X6q, {
           variant: "heading-md/semibold",
           color: "text-brand",
           className: s.number,
           children: m + 1
         });
-      if (null != t) return (0, n.jsx)("div", {
+      if (null != t) return (0, a.jsx)("div", {
         className: s.iconContainer,
-        children: (0, n.jsx)(t, {
+        children: (0, a.jsx)(t, {
           color: null != c ? c : "currentColor",
           className: l()(s.icon, o)
         })
       })
-    })(), (0, n.jsxs)("div", {
+    })(), (0, a.jsxs)("div", {
       className: s.textContainer,
-      children: [(0, n.jsx)(i.Text, {
+      children: [(0, a.jsx)(i.Text, {
         variant: "text-md/semibold",
         color: "header-primary",
         className: l()({
           [s.completedText]: u
         }),
-        children: a
-      }), null != r && (0, n.jsx)(i.Text, {
+        children: n
+      }), null != r && (0, a.jsx)(i.Text, {
         variant: "text-xs/medium",
         color: "text-secondary",
         className: l()({

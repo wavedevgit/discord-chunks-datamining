@@ -69,24 +69,24 @@ function b(e) {
     n(), null == b || b()
   }, [n, b]);
   return i.useEffect(() => {
-    !B || null == U || null == R || N || H || (0, c.pO)(U) || F({
+    !B || null == U || null == R || N || H || (0, p.pO)(U) || F({
       onSubscriptionConfirmation: b
     })
   }, [F, B, U, R, N, H, b]), i.useEffect(() => {
     null != V && null != V.reminderNotice && Y && (0, o.wH)(a.z.GIFTING_PROMOTION_REMINDER, V.dismissibleContentVersion, {
       dismissAction: g.L.INDIRECT_ACTION
     })
-  }, [V, Y]), t = null != y ? y(M, Q, A) : null != O ? (0, r.jsx)(p.VY, {}) : B ? (0, r.jsx)(p.TB, {
+  }, [V, Y]), t = null != y ? y(M, Q, A) : null != O ? (0, r.jsx)(c.VY, {}) : B ? (0, r.jsx)(c.TB, {
     planId: M.id,
     onClose: Q
-  }) : k.current === M.id ? (0, r.jsx)(p.ZP, {
+  }) : k.current === M.id ? (0, r.jsx)(c.ZP, {
     planId: M.id,
     postSuccessGuild: S,
     onClose: Q,
     paymentSourceType: J,
     hideClose: z,
     startingFractionalPremiumEndsAt: T.current
-  }) : (0, r.jsx)(p.ZP, {
+  }) : (0, r.jsx)(c.ZP, {
     followupSKUInfo: E,
     startingPremiumSubscriptionPlanId: k.current,
     planId: M.id,

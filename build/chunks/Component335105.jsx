@@ -1,5 +1,5 @@
 /** Chunk was on 84992 **/
-/** chunk id: 335105, original params: e,t,n (module,exports,require) **/
+/** chunk id: 335105, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
 });
@@ -11,18 +11,18 @@ var Chunk780384 = require("./780384.js"),
   Chunk210642 = require("./210642.jsx"),
   Chunk859218 = require("./859218.jsx"),
   Chunk298522 = require("./298522.js");
-let d = e => {
+let d = t => {
   let {
-    type: t,
+    type: e,
     theme: n
-  } = e;
+  } = t;
   return (0, s.jsx)("div", {
     className: c.gradientOuterBorder,
     children: (0, s.jsx)("div", {
       className: c.gradientInnerBorder,
-      children: ((e, t) => {
-        let n = (0, i.wj)(t) ? "white" : "black";
-        switch (e) {
+      children: ((t, e) => {
+        let n = (0, i.wj)(e) ? "white" : "black";
+        switch (t) {
           case l.Yk.PREMIUM_UPDATED:
             return (0, s.jsx)(C.Z, {
               color: n,
@@ -41,7 +41,7 @@ let d = e => {
           default:
             return null
         }
-      })(t, n)
+      })(e, n)
     })
   })
 }

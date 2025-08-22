@@ -1,5 +1,5 @@
 /** Chunk was on 93886 **/
-/** chunk id: 213713, original params: e,t,a (module,exports,require) **/
+/** chunk id: 213713, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => Z
 }), require("./388685.js");
@@ -32,14 +32,14 @@ var Chunk951288 = require("./951288.js"),
   Chunk206583 = require("./206583.js"),
   Chunk680027 = require("./680027.js"),
   Chunk451429 = require("./451429.js");
-let k = [{
+let I = [{
   key: "type",
   cellClassName: i()(Chunk680027.cell, Chunk680027.cellType),
   render(e) {
     let {
       type: t
     } = e;
-    return (0, n.jsx)(x.Text, {
+    return (0, a.jsx)(x.Text, {
       variant: "text-md/semibold",
       children: c.s[t]
     })
@@ -51,8 +51,8 @@ let k = [{
     let {
       entries: t
     } = e;
-    return (0, n.jsx)("div", {
-      children: (0, n.jsx)(x.Text, {
+    return (0, a.jsx)("div", {
+      children: (0, a.jsx)(x.Text, {
         variant: "text-md/normal",
         children: t.length
       })
@@ -65,18 +65,18 @@ let k = [{
     let {
       type: t
     } = e;
-    return (0, n.jsx)(R, {
+    return (0, a.jsx)(R, {
       type: t
     })
   }
 }];
 
 function R(e) {
-  var t, a;
+  var t, n;
   let {
     type: r
-  } = e, l = (0, u.e7)([O.Z], () => O.Z.getFilters()), i = null != (a = null == l || null == (t = l.types) ? true : t.has(r)) && a;
-  return (0, n.jsx)(x.XZJ, {
+  } = e, l = (0, u.e7)([E.Z], () => E.Z.getFilters()), i = null != (n = null == l || null == (t = l.types) ? true : t.has(r)) && n;
+  return (0, a.jsx)(x.XZJ, {
     value: i,
     onClick: function() {
       i ? h.Z.dispatch({
@@ -94,17 +94,17 @@ function R(e) {
 
 function Z() {
   var e, t;
-  let a = (0, Chunk442837.e7)([Chunk146282.Z], () => Chunk146282.Z.getFeed(Chunk206583.YN.GLOBAL_FEED)),
+  let n = (0, Chunk442837.e7)([Chunk146282.Z], () => Chunk146282.Z.getFeed(Chunk206583.YN.GLOBAL_FEED)),
     l = (0, Chunk442837.e7)([Chunk146282.Z], () => Chunk146282.Z.getDebugImpressionCappingDisabled()),
     i = (0, Chunk442837.e7)([Chunk71585.Z], () => Chunk71585.Z.getDebugFastImpressionCappingEnabled()),
     s = function(e) {
       let t = o().groupBy(e, e => e.content_type);
       return Object.keys(t).map(e => {
-        let a = t[e];
+        let n = t[e];
         return {
           key: "".concat(e),
-          type: a[0].content_type,
-          entries: a
+          type: n[0].content_type,
+          entries: n
         }
       })
     }(null == require || null == (e = require.entries) ? true : module.map(e => e.content)),
@@ -114,8 +114,8 @@ function Z() {
     }),
     [R, Z] = Chunk647438.useState(""),
     D = (0, Chunk442837.e7)([Chunk77498.Z, Chunk812206.Z], () => {
-      var e, t, a;
-      return parseInt(R) > 0 ? R : null != (a = null == (e = Chunk77498.Z.getGameByName(R)) ? true : module.id) ? require : null == (t = Chunk812206.Z.getApplicationByName(R)) ? true : exports.id
+      var e, t, n;
+      return parseInt(R) > 0 ? R : null != (n = null == (e = Chunk77498.Z.getGameByName(R)) ? true : module.id) ? require : null == (t = Chunk812206.Z.getApplicationByName(R)) ? true : exports.id
     }, [R]),
     L = (0, Chunk168524.Z)({
       applicationId: D,
@@ -123,8 +123,8 @@ function Z() {
       source: Chunk810568.m1.DevTools
     }),
     M = Object.entries(null != (t = Chunk433517.K.get("GameProfileModal")) ? exports : {}).filter(e => {
-      let [t, a] = e;
-      return a
+      let [t, n] = e;
+      return n
     }).map(e => {
       let [t] = e;
       return t
@@ -139,7 +139,7 @@ function Z() {
         children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
           children: "Inventory"
         }), Chunk392711.length > 0 && (0, Chunk951288.jsx)(Chunk681619.Z, {
-          columns: k,
+          columns: I,
           data: Chunk392711
         }), (0, Chunk951288.jsx)(Chunk481060.LZC, {
           size: 8
@@ -214,8 +214,8 @@ function Z() {
           error: R.length > 0 && null == L ? "No game profile for ".concat(null != D ? D : R + " - try by id", ".") : true,
           successMessage: null != L ? "Game profile found" : true
         }), (0, Chunk951288.jsx)("ul", {
-          children: F.map(e => (0, n.jsx)("li", {
-            children: (0, n.jsx)(A, {
+          children: F.map(e => (0, a.jsx)("li", {
+            children: (0, a.jsx)(A, {
               application: e
             })
           }, "follow-game-".concat(e.id)))
@@ -248,18 +248,18 @@ function Z() {
 let A = e => {
   let {
     application: t
-  } = e, a = (0, g.Z)({
+  } = e, n = (0, g.Z)({
     applicationId: t.id,
     location: "DevToolsContentInventory",
     source: j.m1.DevTools
   });
-  return (0, n.jsx)(x.P3F, {
-    onClick: a,
+  return (0, a.jsx)(x.P3F, {
+    onClick: n,
     style: {
       margin: "2px",
       cursor: "pointer"
     },
-    children: (0, n.jsx)(x.Text, {
+    children: (0, a.jsx)(x.Text, {
       variant: "text-xs/normal",
       color: "text-muted",
       children: t.name

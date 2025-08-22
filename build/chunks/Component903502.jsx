@@ -1,5 +1,5 @@
 /** Chunk was on 93886 **/
-/** chunk id: 903502, original params: e,t,a (module,exports,require) **/
+/** chunk id: 903502, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
 }), require("./388685.js");
@@ -29,7 +29,7 @@ let h = [{
 }];
 
 function p() {
-  let [e, t] = Chunk647438.useState(null), [a, p] = Chunk647438.useState(0), [v, b] = Chunk647438.useState(1e3), [f, j] = Chunk647438.useState(0), g = (0, Chunk442837.e7)([Chunk115470.Z], () => {
+  let [e, t] = Chunk647438.useState(null), [n, p] = Chunk647438.useState(0), [f, v] = Chunk647438.useState(1e3), [b, j] = Chunk647438.useState(0), g = (0, Chunk442837.e7)([Chunk115470.Z], () => {
     var t;
     return null === module ? null : null != (t = Chunk115470.Z.getFeedbackConfig(Chunk531578.nw[module])) ? exports : Chunk178635.R[Chunk531578.nw[module]]
   }), _ = Object.entries(Chunk531578.nw), y = _.slice(_.length / 2).map(e => {
@@ -38,7 +38,7 @@ function p() {
       label: t,
       value: t
     }
-  }), C = Chunk647438.useMemo(() => null != module && f >= 0 && f <= 100 && require >= 0, [module, f, require]);
+  }), C = Chunk647438.useMemo(() => null != module && b >= 0 && b <= 100 && require >= 0, [module, b, require]);
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk584314.container,
     children: [(0, Chunk951288.jsx)(Chunk481060.hjN, {
@@ -94,9 +94,9 @@ function p() {
           onChange: e => p(parseFloat(e))
         }), (0, Chunk951288.jsx)(Chunk481060.q4e, {
           options: h,
-          value: v,
+          value: f,
           onChange: e => {
-            b(e)
+            v(e)
           },
           popoutLayerContext: Chunk246992.O$
         })]
@@ -127,7 +127,7 @@ function p() {
         children: [(0, Chunk951288.jsx)(Chunk481060.oil, {
           min: 0,
           max: 100,
-          value: f.toString(),
+          value: b.toString(),
           type: "number",
           onChange: e => j(parseFloat(e))
         }), (0, Chunk951288.jsx)(Chunk481060.Text, {
@@ -143,8 +143,8 @@ function p() {
         onClick: () => void(null != g && Chunk570140.Z.dispatch({
           type: "FEEDBACK_OVERRIDE_SET",
           feedbackType: g.feedbackType,
-          cooldown: require * v,
-          chance: f / 100
+          cooldown: require * f,
+          chance: b / 100
         })),
         disabled: !C
       }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
@@ -164,7 +164,7 @@ function p() {
       variant: "text-sm/normal",
       color: "text-danger",
       children: "Error: cooldown needs to be a number greater than 0"
-    }), !(f >= 0 && f <= 100) && (0, Chunk951288.jsx)(Chunk481060.Text, {
+    }), !(b >= 0 && b <= 100) && (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-sm/normal",
       color: "text-danger",
       children: "Error: chance needs to be a number between 0 and 100"

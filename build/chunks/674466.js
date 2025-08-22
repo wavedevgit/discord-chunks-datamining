@@ -33,10 +33,10 @@ var d = function(e) {
     return e.H264 = "H264", e.H265 = "H265", e.VP8 = "VP8", e.VP9 = "VP9", e.AV1 = "AV1", e.UNKNOWN = "UNKNOWN", e
   }({}),
   f = function(e) {
-    return e.NVIDIA_CUDA = "nvidia_cuda", e.NVIDIA_DIRECT_3D = "nvidia_direct_3d", e.OPENH264 = "openh264", e.VIDEOTOOLBOX = "videotoolbox", e.AMD_DIRECT_3D = "amd_direct_3d", e.INTEL = "intel", e.INTEL_DIRECT_3D = "intel_direct_3d", e.VP8_LIBVPX = "vp8_libvpx", e.EXYNOS = "exynos", e.UNCATEGORIZED = "uncategorized", e.UNKNOWN = "unknown", e
+    return e.NVIDIA_CUDA = "nvidia_cuda", e.NVIDIA_DIRECT_3D = "nvidia_direct_3d", e.OPENH264 = "openh264", e.VIDEOTOOLBOX = "videotoolbox", e.AMD_DIRECT_3D = "amd_direct_3d", e.INTEL = "intel", e.INTEL_DIRECT_3D = "intel_direct_3d", e.VP8_LIBVPX = "vp8_libvpx", e.EXYNOS = "exynos", e.QUALCOMM = "qualcomm", e.MEDIATEK = "mediatek", e.UNCATEGORIZED = "uncategorized", e.UNKNOWN = "unknown", e
   }({}),
   _ = function(e) {
-    return e.VIDEOTOOLBOX = "videotoolbox", e.VP8_LIBVPX = "vp8_libvpx", e.ELECTRON = "electron", e.FFMPEG = "ffmpeg", e.DAV1D = "dav1d", e.WEBRTC = "WebRTC", e.EXYNOS = "exynos", e.UNCATEGORIZED = "uncategorized", e.UNKNOWN = "unknown", e
+    return e.VIDEOTOOLBOX = "videotoolbox", e.VP8_LIBVPX = "vp8_libvpx", e.ELECTRON = "electron", e.FFMPEG = "ffmpeg", e.DAV1D = "dav1d", e.WEBRTC = "WebRTC", e.EXYNOS = "exynos", e.QUALCOMM = "qualcomm", e.MEDIATEK = "mediatek", e.UNCATEGORIZED = "uncategorized", e.UNKNOWN = "unknown", e
   }({});
 let p = Object.freeze({
     "nvidia: cuda": "nvidia_cuda",
@@ -44,19 +44,29 @@ let p = Object.freeze({
     "amd: direct3d": "amd_direct_3d",
     "intel: direct3d": "intel_direct_3d",
     intel: "intel",
-    VideoToolbox: "videotoolbox",
-    OpenH264: "openh264",
+    videotoolbox: "videotoolbox",
+    openh264: "openh264",
     libvpx: "vp8_libvpx",
-    "c2.exynos": "exynos"
+    "c2.exynos": "exynos",
+    "omx.exynos": "exynos",
+    "c2.qti": "qualcomm",
+    "omx.qcom": "qualcomm",
+    "c2.mtk": "mediatek",
+    "omx.mtk": "mediatek"
   }),
   h = Object.freeze({
-    VideoToolbox: "videotoolbox",
+    videotoolbox: "videotoolbox",
     libvpx: "vp8_libvpx",
     electron: "electron",
     ffmpeg: "ffmpeg",
     dav1d: "dav1d",
-    WebRTC: "WebRTC",
-    "c2.exynos": "exynos"
+    webrtc: "WebRTC",
+    "c2.exynos": "exynos",
+    "omx.exynos": "exynos",
+    "c2.qti": "qualcomm",
+    "omx.qcom": "qualcomm",
+    "c2.mtk": "mediatek",
+    "omx.mtk": "mediatek"
   });
 var m = function(e) {
   return e[e.None = 0] = "None", e[e.ClientSideDisableVideo = 1] = "ClientSideDisableVideo", e[e.SenderStopped = 2] = "SenderStopped", e
@@ -65,14 +75,14 @@ var m = function(e) {
 function g(e) {
   if (null == e) return "unknown";
   for (let t of Object.keys(p))
-    if (e.includes(t)) return p[t];
+    if (e.toLowerCase().includes(t)) return p[t];
   return "uncategorized"
 }
 
 function E(e) {
   if (null == e) return "unknown";
   for (let t of Object.keys(h))
-    if (e.includes(t)) return h[t];
+    if (e.toLowerCase().includes(t)) return h[t];
   return "uncategorized"
 }
 

@@ -1,5 +1,5 @@
 /** Chunk was on 93886 **/
-/** chunk id: 691867, original params: e,t,a (module,exports,require) **/
+/** chunk id: 691867, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
 }), require("./388685.js");
@@ -14,10 +14,10 @@ var Chunk951288 = require("./951288.js"),
 function d() {
   let e = (0, Chunk442837.e7)([Chunk91311.Z], () => Chunk91311.Z.allWithDescriptions(), [], Chunk442837.pF),
     t = Chunk647438.useMemo(() => module.map(e => {
-      let [t, a, r] = e;
-      return (0, n.jsx)(i.xJW, {
-        children: (0, n.jsx)(i.j7V, {
-          value: a,
+      let [t, n, r] = e;
+      return (0, a.jsx)(i.xJW, {
+        children: (0, a.jsx)(i.j7V, {
+          value: n,
           note: t,
           onChange: e => (0, s.Z)(t, e),
           hideBorder: true,

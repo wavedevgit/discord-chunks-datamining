@@ -1,5 +1,5 @@
 /** Chunk was on 93886 **/
-/** chunk id: 496025, original params: e,t,a (module,exports,require) **/
+/** chunk id: 496025, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => T
 }), require("./388685.js"), require("./35282.js");
@@ -26,10 +26,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk165432 = require("./165432.js"),
   Chunk451429 = require("./451429.js");
 
-function O() {
+function E() {
   var e;
   let t = (0, Chunk442837.Wu)([Chunk55589.Z], () => Chunk55589.Z.getSortedChannels()[1]),
-    [a, l] = Chunk647438.useState(exports.length > 0 ? exports[0].channelId : true),
+    [n, l] = Chunk647438.useState(exports.length > 0 ? exports[0].channelId : true),
     {
       selectedChannel: i,
       options: d
@@ -39,7 +39,7 @@ function O() {
         let t = h.Z.getChannel(e.channelId);
         return {
           value: e.channelId,
-          label: null != t ? (0, m.F6)(t, v.default, p.Z) : e.channelId
+          label: null != t ? (0, m.F6)(t, f.default, p.Z) : e.channelId
         }
       })
     })),
@@ -65,7 +65,7 @@ function O() {
         renderOptionPrefix: e => {
           if (null == e) return null;
           let t = h.Z.getChannel(e.value);
-          return null == t ? null : (0, n.jsx)(c.qEK, {
+          return null == t ? null : (0, a.jsx)(c.qEK, {
             src: (0, u.x)(t),
             "aria-hidden": true,
             size: c.EFr.SIZE_16
@@ -83,7 +83,7 @@ function O() {
   })
 }
 
-function E() {
+function O() {
   let e = Chunk647438.useCallback(() => {
     Chunk493683.Z.openPrivateChannel({
       recipientIds: [Chunk894257.I]
@@ -99,11 +99,11 @@ function E() {
 
 function T() {
   let e = (0, Chunk442837.e7)([Chunk432877.ZP], () => Chunk432877.ZP.allByCategory(Chunk432877.zU.MESSAGING), [], Chunk442837.pF).map(e => {
-    let [t, a, {
+    let [t, n, {
       label: r
     }] = e;
-    return (0, n.jsx)(c.j7V, {
-      value: a,
+    return (0, a.jsx)(c.j7V, {
+      value: n,
       onChange: e => (0, j.Z)(t, e),
       hideBorder: true,
       className: C.switch,
@@ -114,8 +114,8 @@ function T() {
     className: i()(Chunk451429.panel, Chunk165432.panel),
     children: [module, (0, Chunk951288.jsx)("div", {
       className: Chunk165432.divider
-    }), (0, Chunk951288.jsx)(O, {}), (0, Chunk951288.jsx)("div", {
+    }), (0, Chunk951288.jsx)(E, {}), (0, Chunk951288.jsx)("div", {
       className: Chunk165432.divider
-    }), (0, Chunk951288.jsx)(E, {})]
+    }), (0, Chunk951288.jsx)(O, {})]
   })
 }

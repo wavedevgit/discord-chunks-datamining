@@ -1,7 +1,7 @@
 /** Chunk was on 54400 **/
 /** chunk id: 973007, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => c
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -84,7 +84,7 @@ function d(e) {
     })
   })
 }
-let p = function(e) {
+let c = function(e) {
   let {
     onSelectSku: t,
     isGift: n,

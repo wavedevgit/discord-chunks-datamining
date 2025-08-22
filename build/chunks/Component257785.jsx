@@ -1,5 +1,5 @@
 /** Chunk was on 93886 **/
-/** chunk id: 257785, original params: e,t,a (module,exports,require) **/
+/** chunk id: 257785, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   E: () => d,
   Z9: () => u,
@@ -16,17 +16,17 @@ var Chunk951288 = require("./951288.js"),
 function d(e) {
   let {
     className: t,
-    children: a
+    children: n
   } = e;
-  return (0, n.jsx)("dl", {
+  return (0, a.jsx)("dl", {
     className: i()(c.properties, t),
-    children: a
+    children: n
   })
 }
 let u = e => {
   let {
     name: t,
-    children: a,
+    children: n,
     copyValue: l
   } = e, [i, d] = r.useState(false);
   return r.useEffect(() => {
@@ -34,20 +34,20 @@ let u = e => {
       let e = setTimeout(() => d(false), 1e3);
       return () => clearTimeout(e)
     }
-  }, [i]), (0, n.jsxs)(n.Fragment, {
-    children: [(0, n.jsx)("dt", {
+  }, [i]), (0, a.jsxs)(a.Fragment, {
+    children: [(0, a.jsx)("dt", {
       className: c.propertyName,
       children: t
-    }), (0, n.jsxs)("dd", {
+    }), (0, a.jsxs)("dd", {
       className: c.propertyValue,
-      children: [a, null != l ? (0, n.jsx)(s.P3F, {
+      children: [n, null != l ? (0, a.jsx)(s.P3F, {
         tag: "span",
         className: c.copyPropertyButton,
         onClick: () => (0, o.JG)(l, () => d(true)),
-        children: i ? (0, n.jsx)(s.kmB, {
+        children: i ? (0, a.jsx)(s.kmB, {
           color: "currentColor",
           size: "sm"
-        }) : (0, n.jsx)(s.TIy, {
+        }) : (0, a.jsx)(s.TIy, {
           color: "currentColor",
           size: "sm"
         })
@@ -60,7 +60,7 @@ function m(e) {
   let {
     value: t
   } = e;
-  return (0, n.jsx)(s.XZJ, {
+  return (0, a.jsx)(s.XZJ, {
     size: 16,
     value: t,
     shape: s.XZJ.Shapes.SMALL_BOX,

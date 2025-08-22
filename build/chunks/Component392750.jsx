@@ -1,5 +1,5 @@
 /** Chunk was on 93886 **/
-/** chunk id: 392750, original params: e,t,a (module,exports,require) **/
+/** chunk id: 392750, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
 });
@@ -18,10 +18,10 @@ let u = [{
   render(e) {
     var t;
     let {
-      user: a,
-      key: n
+      user: n,
+      key: a
     } = e;
-    return null != (t = null == a ? true : a.username) ? t : n
+    return null != (t = null == n ? true : n.username) ? t : a
   }
 }, {
   key: "affinity",
@@ -55,13 +55,13 @@ function m() {
   let e = (0, Chunk442837.Wu)([Chunk752048.Z, Chunk594174.default], () => Chunk752048.Z.getUserAffinities().map(e => {
     let {
       otherUserId: t,
-      communicationProbability: a,
-      vcProbability: n
+      communicationProbability: n,
+      vcProbability: a
     } = e;
     return {
       user: s.default.getUser(t),
-      affinity: a,
-      vcProbability: n,
+      affinity: n,
+      vcProbability: a,
       key: t
     }
   }));

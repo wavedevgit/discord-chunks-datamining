@@ -81,7 +81,7 @@ function C() {
 }
 
 function N() {
-  let [e, t] = Chunk647438.useState("discord://".concat(location.host, "/feature/open-shop")), n = () => {
+  let [e, t] = Chunk647438.useState("discord://".concat(location.host, "/feature/apple-payment-link")), n = () => {
     console.log("Opening deep link... ", module), Chunk954824.Z.launch(module, e => {
       console.log("onDone response: ", e)
     })

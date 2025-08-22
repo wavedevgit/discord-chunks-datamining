@@ -1,5 +1,5 @@
 /** Chunk was on 93886 **/
-/** chunk id: 681619, original params: e,t,a (module,exports,require) **/
+/** chunk id: 681619, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
 });
@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
 function c(e) {
   let {
     columns: t,
-    data: a,
+    data: n,
     className: l,
     rowClassName: c,
     onClickRow: d,
@@ -21,30 +21,30 @@ function c(e) {
     rowHeight: m = 40
   } = e, x = r.useMemo(() => t.map(e => (function(e) {
     for (var t = 1; t < arguments.length; t++) {
-      var a = null != arguments[t] ? arguments[t] : {},
-        n = Object.keys(a);
-      "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(a).filter(function(e) {
-        return Object.getOwnPropertyDescriptor(a, e).enumerable
-      }))), n.forEach(function(t) {
-        var n;
-        n = a[t], t in e ? Object.defineProperty(e, t, {
-          value: n,
+      var n = null != arguments[t] ? arguments[t] : {},
+        a = Object.keys(n);
+      "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+        return Object.getOwnPropertyDescriptor(n, e).enumerable
+      }))), a.forEach(function(t) {
+        var a;
+        a = n[t], t in e ? Object.defineProperty(e, t, {
+          value: a,
           enumerable: true,
           configurable: true,
           writable: true
-        }) : e[t] = n
+        }) : e[t] = a
       })
     }
     return e
   })({
-    renderHeader: () => (0, n.jsx)(s.Text, {
+    renderHeader: () => (0, a.jsx)(s.Text, {
       variant: "text-sm/semibold",
       children: e.key
     })
-  }, e)), [t]), h = [a.length];
-  return (0, n.jsx)("div", {
+  }, e)), [t]), h = [n.length];
+  return (0, a.jsx)("div", {
     className: o.tableContainer,
-    children: (0, n.jsx)(s.Tvr, {
+    children: (0, a.jsx)(s.Tvr, {
       className: l,
       innerClassName: o.table,
       sections: h,
@@ -53,7 +53,7 @@ function c(e) {
         let {
           section: t
         } = e, r = o.tableHeader;
-        return (0, n.jsx)("div", {
+        return (0, a.jsx)("div", {
           className: r,
           children: x.map(e => {
             var r, l;
@@ -61,10 +61,10 @@ function c(e) {
               s = {
                 width: "calc(".concat(null != (l = e.cellWidth) ? l : "1fr", " - ").concat(16, "px)")
               };
-            return (0, n.jsx)("div", {
+            return (0, a.jsx)("div", {
               className: i,
               style: s,
-              children: null == (r = e.renderHeader) ? true : r.call(e, e, a)
+              children: null == (r = e.renderHeader) ? true : r.call(e, e, n)
             }, "dev-tools-th-".concat(t, "-").concat(e.key))
           })
         }, "dev-tools-header-".concat(t))
@@ -73,24 +73,24 @@ function c(e) {
       renderRow: e => {
         let {
           rowIndex: t
-        } = e, r = a[t], l = r.key, h = i()(o.tableRow, {
+        } = e, r = n[t], l = r.key, h = i()(o.tableRow, {
           [o.selectedTableRow]: l === u,
           rowClassName: c
         });
-        return (0, n.jsx)(s.P3F, {
+        return (0, a.jsx)(s.P3F, {
           className: h,
           onClick: () => null == d ? true : d(r),
           children: x.map(e => {
-            var a, l;
+            var n, l;
             let i = e.cellClassName,
               s = {
                 width: "calc(".concat(null != (l = e.cellWidth) ? l : "1fr", " - ").concat(16, "px)"),
                 height: "calc(".concat(m, "px - ").concat(16, "px)")
               };
-            return (0, n.jsx)("div", {
+            return (0, a.jsx)("div", {
               className: i,
               style: s,
-              children: null == (a = e.render) ? true : a.call(e, r, true, t)
+              children: null == (n = e.render) ? true : n.call(e, r, true, t)
             }, "dev-tools-td-".concat(t, "-").concat(e.key))
           })
         }, "dev-tools-tr-".concat(t))

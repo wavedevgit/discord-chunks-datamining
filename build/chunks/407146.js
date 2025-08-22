@@ -1,9 +1,9 @@
 /** Chunk was on 93886 **/
-/** chunk id: 407146, original params: e,t,a (module,exports,require) **/
+/** chunk id: 407146, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  b: () => n
+  b: () => a
 });
-let n = {
+let a = {
   "red.100": {
     hex: "#fef8f9"
   },

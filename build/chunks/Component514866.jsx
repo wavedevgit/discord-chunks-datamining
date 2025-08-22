@@ -1,5 +1,5 @@
 /** Chunk was on 93886 **/
-/** chunk id: 514866, original params: e,t,a (module,exports,require) **/
+/** chunk id: 514866, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
 });
@@ -19,7 +19,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk594174 = require("./594174.js"),
   Chunk517269 = require("./517269.js"),
   Chunk197571 = require("./197571.js");
-let f = () => {
+let b = () => {
   Promise.all([require.e("52030"), require.e("1286")]).then(require.bind(require, 24031)).then(e => {
     let {
       openMFAModal: t
@@ -44,7 +44,7 @@ let f = () => {
 function j() {
   let e = Chunk594174.default.getCurrentUser(),
     t = null == module ? true : module.isStaff(),
-    a = Chunk695346.Rt.useSetting();
+    n = Chunk695346.Rt.useSetting();
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsx)("div", {
       className: l()(Chunk517269.buttonsContainer, Chunk197571.marginBottom20),
@@ -56,7 +56,7 @@ function j() {
       children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
         variant: "primary",
         text: "Launch MFA",
-        onClick: f
+        onClick: b
       })
     }), (0, Chunk951288.jsx)("div", {
       className: l()(Chunk517269.buttonsContainer, Chunk197571.marginBottom20),

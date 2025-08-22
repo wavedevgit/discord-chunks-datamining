@@ -1,5 +1,5 @@
 /** Chunk was on 93886 **/
-/** chunk id: 58755, original params: e,t,a (module,exports,require) **/
+/** chunk id: 58755, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   P: () => j
 }), require("./388685.js"), require("./35282.js"), require("./49124.js");
@@ -18,42 +18,42 @@ var Chunk951288 = require("./951288.js"),
 
 function p(e) {
   for (var t = 1; t < arguments.length; t++) {
-    var a = null != arguments[t] ? arguments[t] : {},
-      n = Object.keys(a);
-    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(a).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(a, e).enumerable
-    }))), n.forEach(function(t) {
-      var n;
-      n = a[t], t in e ? Object.defineProperty(e, t, {
-        value: n,
+    var n = null != arguments[t] ? arguments[t] : {},
+      a = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), a.forEach(function(t) {
+      var a;
+      a = n[t], t in e ? Object.defineProperty(e, t, {
+        value: a,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = n
+      }) : e[t] = a
     })
   }
   return e
 }
 
-function v(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var a = Object.keys(e);
+    var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var n = Object.getOwnPropertySymbols(e);
-      a.push.apply(a, n)
+      var a = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, a)
     }
-    return a
-  })(Object(t)).forEach(function(a) {
-    Object.defineProperty(e, a, Object.getOwnPropertyDescriptor(t, a))
+    return n
+  })(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let b = Object.keys(Chunk500949.jQ).map(e => ({
+let v = Object.keys(Chunk500949.jQ).map(e => ({
     value: e,
     label: e
   })),
-  f = Array.from(Array.from(Object.keys(Chunk407146.b).reduce((e, t) => {
-    let [a] = t.split(".");
-    return e.add(a), e
+  b = Array.from(Array.from(Object.keys(Chunk407146.b).reduce((e, t) => {
+    let [n] = t.split(".");
+    return e.add(n), e
   }, new Set))).map(e => ({
     value: e,
     label: e
@@ -62,18 +62,18 @@ let b = Object.keys(Chunk500949.jQ).map(e => ({
 function j(e) {
   let {
     state: t,
-    setState: a
+    setState: n
   } = e, {
     scales: l
-  } = t, [i, s] = r.useState(null), o = (0, n.jsxs)("div", {
+  } = t, [i, s] = r.useState(null), o = (0, a.jsxs)("div", {
     className: h.section,
-    children: [(0, n.jsx)(d.VcW, {
-      options: f,
+    children: [(0, a.jsx)(d.VcW, {
+      options: b,
       placeholder: "Select a scale to edit...",
       value: true,
       onChange: e => {
-        let n = t.scales.find(t => t.name === e);
-        null == n && (n = {
+        let a = t.scales.find(t => t.name === e);
+        null == a && (a = {
           name: e,
           base: "plum" === e ? c.b["plum.10"].hex : c.b["".concat(e, ".500")].hex,
           colorSpace: x.jQ.ICTCP,
@@ -84,75 +84,75 @@ function j(e) {
           easing: x.iw.LINEAR,
           easingStrength: 1,
           steps: 26
-        }, a(v(p({}, t), {
-          scales: [...t.scales, n]
+        }, n(f(p({}, t), {
+          scales: [...t.scales, a]
         })))
       },
       popoutLayerContext: m.O$
-    }), (0, n.jsx)("ul", {
+    }), (0, a.jsx)("ul", {
       className: h.overrides,
-      children: l.map(e => (0, n.jsx)("li", {
-        children: (0, n.jsx)(d.P3F, {
+      children: l.map(e => (0, a.jsx)("li", {
+        children: (0, a.jsx)(d.P3F, {
           onClick: () => s(e.name),
           style: {
             cursor: "pointer"
           },
-          children: (0, n.jsx)(_, {
+          children: (0, a.jsx)(_, {
             scale: e,
-            onRemove: () => a(v(p({}, t), {
+            onRemove: () => n(f(p({}, t), {
               scales: t.scales.filter(t => t.name !== e.name)
             }))
           })
         })
       }, e.name))
     })]
-  }), u = l.find(e => e.name === i), b = null != u ? (0, n.jsx)(g, {
+  }), u = l.find(e => e.name === i), v = null != u ? (0, a.jsx)(g, {
     onClose: () => s(null),
     scale: u,
-    setState: a
+    setState: n
   }) : o;
-  return (0, n.jsx)("div", {
-    children: b
+  return (0, a.jsx)("div", {
+    children: v
   })
 }
 
 function g(e) {
   let {
     scale: t,
-    setState: a,
+    setState: n,
     onClose: r
   } = e, {
     name: c,
     base: p,
-    darkness: v,
-    lightness: f,
+    darkness: f,
+    lightness: b,
     showColumnarPalettePreview: j,
     colorSpace: g,
     easingStrength: _ = 1,
     useP3ColorSpace: C,
     steps: N = 26
-  } = t, O = (0, x.XM)(t), E = (0, x.W6)(O, c);
-  return (0, n.jsxs)(d.hjN, {
+  } = t, E = (0, x.XM)(t), O = (0, x.W6)(E, c);
+  return (0, a.jsxs)(d.hjN, {
     className: h.paletteSettings,
-    children: [(0, n.jsxs)("div", {
+    children: [(0, a.jsxs)("div", {
       className: h.titleWithIcon,
-      children: [(0, n.jsx)(d.P3F, {
+      children: [(0, a.jsx)(d.P3F, {
         onClick: r,
         style: {
           maxWidth: 80
         },
-        children: (0, n.jsx)(d.whL, {
+        children: (0, a.jsx)(d.whL, {
           size: "sm"
         })
-      }), (0, n.jsx)(d.Text, {
+      }), (0, a.jsx)(d.Text, {
         variant: "text-lg/bold",
         children: c
-      }), (0, n.jsx)(d.P3F, {
+      }), (0, a.jsx)(d.P3F, {
         onClick: function() {
-          let e = Object.entries(O).reduce((e, t) => {
-            let [a, n] = t;
-            return e[a] = {
-              value: (0, l.Z)((0, i.Z)(n, x.HW.sRGB), {
+          let e = Object.entries(E).reduce((e, t) => {
+            let [n, a] = t;
+            return e[n] = {
+              value: (0, l.Z)((0, i.Z)(a, x.HW.sRGB), {
                 format: "hex"
               }),
               type: "color"
@@ -163,58 +163,58 @@ function g(e) {
         style: {
           cursor: "pointer"
         },
-        children: (0, n.jsx)(y, {})
+        children: (0, a.jsx)(y, {})
       })]
-    }), (0, n.jsxs)(d.xJW, {
+    }), (0, a.jsxs)(d.xJW, {
       title: "Base Color",
       className: h.formItem,
-      children: [(0, n.jsxs)(d.Text, {
+      children: [(0, a.jsxs)(d.Text, {
         variant: "text-sm/medium",
         color: "text-secondary",
-        children: ["The base color the ", (0, n.jsx)("code", {
+        children: ["The base color the ", (0, a.jsx)("code", {
           children: c
         }), " palette is generated from."]
-      }), (0, n.jsx)("input", {
+      }), (0, a.jsx)("input", {
         type: "color",
         value: p,
-        onChange: e => (0, x.Ib)(c, e.target.value, a)
+        onChange: e => (0, x.Ib)(c, e.target.value, n)
       })]
-    }), (0, n.jsxs)(d.xJW, {
+    }), (0, a.jsxs)(d.xJW, {
       title: "Color Space",
-      children: [(0, n.jsx)(d.R94, {
+      children: [(0, a.jsx)(d.R94, {
         type: d.geA.DESCRIPTION,
         children: "The color space used to generate the palette. Different color spaces will produce different results."
-      }), (0, n.jsx)(d.q4e, {
-        options: b,
+      }), (0, a.jsx)(d.q4e, {
+        options: v,
         value: g,
-        onChange: e => (0, x.t4)(c, e, a),
+        onChange: e => (0, x.t4)(c, e, n),
         popoutLayerContext: m.O$
       })]
-    }), (0, n.jsxs)(d.hjN, {
+    }), (0, a.jsxs)(d.hjN, {
       title: "Luminance",
-      children: [(0, n.jsx)(d.xJW, {}), (0, n.jsxs)(d.xJW, {
-        title: "Lighten (".concat((100 * f).toFixed(), "%)"),
-        children: [(0, n.jsx)(d.R94, {
+      children: [(0, a.jsx)(d.xJW, {}), (0, a.jsxs)(d.xJW, {
+        title: "Lighten (".concat((100 * b).toFixed(), "%)"),
+        children: [(0, a.jsx)(d.R94, {
           type: d.geA.DESCRIPTION,
           children: "Decrease the darkness of the darkest color in the palette. Increasing this makes the darker colors in the palette lighter."
-        }), (0, n.jsx)(d.iRW, {
+        }), (0, a.jsx)(d.iRW, {
           onValueRender: () => null,
-          initialValue: f,
+          initialValue: b,
           stickToMarkers: true,
           markers: Array.from({
             length: 21
           }, (e, t) => t / 10),
           minValue: 0,
           maxValue: 2,
-          onValueChange: e => (0, x.h9)(c, e, a),
+          onValueChange: e => (0, x.h9)(c, e, n),
           onMarkerRender: () => null
         })]
-      }), (0, n.jsxs)(d.xJW, {
-        title: "Darken (".concat((100 * v).toFixed(), "%)"),
-        children: [(0, n.jsx)(d.R94, {
+      }), (0, a.jsxs)(d.xJW, {
+        title: "Darken (".concat((100 * f).toFixed(), "%)"),
+        children: [(0, a.jsx)(d.R94, {
           type: d.geA.DESCRIPTION,
           children: "Increase the darkness of the lightest color in the palette. Increasing this makes the lighter colors in the palette darker."
-        }), (0, n.jsx)(d.iRW, {
+        }), (0, a.jsx)(d.iRW, {
           onValueRender: () => null,
           initialValue: 0,
           stickToMarkers: true,
@@ -223,73 +223,73 @@ function g(e) {
           }, (e, t) => t / 10),
           minValue: 0,
           maxValue: 2,
-          onValueChange: e => (0, x.YE)(c, e, a),
+          onValueChange: e => (0, x.YE)(c, e, n),
           onMarkerRender: () => null
         })]
       })]
-    }), (0, n.jsx)(d.hjN, {
+    }), (0, a.jsx)(d.hjN, {
       title: "Easing",
-      children: (0, n.jsxs)(d.xJW, {
+      children: (0, a.jsxs)(d.xJW, {
         title: "Easing Strength (".concat(_.toFixed(2), ")"),
-        children: [(0, n.jsx)(d.R94, {
+        children: [(0, a.jsx)(d.R94, {
           type: d.geA.DESCRIPTION,
           children: "Adjust the strength of the easing function."
-        }), (0, n.jsx)(d.iRW, {
+        }), (0, a.jsx)(d.iRW, {
           onValueRender: () => null,
           initialValue: _,
           minValue: 1,
           maxValue: 5,
-          onValueChange: e => (0, x.rd)(c, e, a),
+          onValueChange: e => (0, x.rd)(c, e, n),
           onMarkerRender: () => null
         })]
       })
-    }), (0, n.jsxs)(d.hjN, {
+    }), (0, a.jsxs)(d.hjN, {
       title: "Palette",
-      children: [(0, n.jsx)(d.xJW, {
-        children: (0, n.jsx)(d.j7V, {
+      children: [(0, a.jsx)(d.xJW, {
+        children: (0, a.jsx)(d.j7V, {
           note: "Renders the palette preview in a single column, useful for comparing the luminance of each step.",
           value: j,
-          onChange: e => (0, x.KB)(c, e, a),
+          onChange: e => (0, x.KB)(c, e, n),
           children: "Show columnar palette preview"
         })
-      }), (0, n.jsx)(d.xJW, {
-        children: (0, n.jsx)(d.j7V, {
+      }), (0, a.jsx)(d.xJW, {
+        children: (0, a.jsx)(d.j7V, {
           note: "Renders the palette preview in a single column, useful for comparing the luminance of each step.",
           value: C,
           disabled: !x.S2,
-          onChange: e => (0, x.uF)(c, e, a),
+          onChange: e => (0, x.uF)(c, e, n),
           children: "Use P3 Color Space"
         })
-      }), (0, n.jsx)(d.xJW, {
+      }), (0, a.jsx)(d.xJW, {
         title: "Steps (".concat(N, ")"),
-        children: (0, n.jsx)(d.iRW, {
+        children: (0, a.jsx)(d.iRW, {
           onValueRender: () => null,
           initialValue: N,
           minValue: (0, x.A0)(c).length,
           maxValue: 100,
-          onValueChange: e => (0, x.YC)(c, Math.round(e), a),
+          onValueChange: e => (0, x.YC)(c, Math.round(e), n),
           onMarkerRender: () => null
         })
-      }), (0, n.jsx)(d.xJW, {
+      }), (0, a.jsx)(d.xJW, {
         title: "Palette Preview",
-        children: (0, n.jsx)("div", {
+        children: (0, a.jsx)("div", {
           className: h.paletteOverrides,
           "data-columnar": j,
-          children: Object.entries(O).map((e, a) => {
-            let [r, c] = e, u = (0, x.HI)(c), m = (0, s.Z)((0, o.Z)("black"), c) > 4.5 ? "black" : "white", h = E[r];
-            return (0, n.jsxs)("div", {
+          children: Object.entries(E).map((e, n) => {
+            let [r, c] = e, u = (0, x.HI)(c), m = (0, s.Z)((0, o.Z)("black"), c) > 4.5 ? "black" : "white", h = O[r];
+            return (0, a.jsxs)("div", {
               style: {
                 backgroundColor: u
               },
-              children: [(0, n.jsxs)(d.Text, {
+              children: [(0, a.jsxs)(d.Text, {
                 variant: j ? "text-sm/medium" : "text-xs/medium",
                 style: {
                   color: m
                 },
-                children: [t.name, ".", a + 1, j && null != h ? (0, n.jsx)("strong", {
+                children: [t.name, ".", n + 1, j && null != h ? (0, a.jsx)("strong", {
                   children: " - ".concat(h)
                 }) : ""]
-              }), j && (0, n.jsxs)(d.Text, {
+              }), j && (0, a.jsxs)(d.Text, {
                 variant: "text-xxs/medium",
                 style: {
                   opacity: .75,
@@ -310,34 +310,34 @@ function g(e) {
 function _(e) {
   let {
     scale: t,
-    onRemove: a
+    onRemove: n
   } = e, s = r.useMemo(() => Object.values((0, x.XM)(t)).map(e => (0, l.Z)((0, i.Z)(e, x.HW.sRGB), {
     format: "hex"
   })), [t]);
-  return (0, n.jsxs)("li", {
+  return (0, a.jsxs)("li", {
     className: h.override,
-    children: [(0, n.jsxs)("div", {
+    children: [(0, a.jsxs)("div", {
       className: h.overrideHeader,
-      children: [(0, n.jsx)("div", {
+      children: [(0, a.jsx)("div", {
         className: h.title,
-        children: (0, n.jsx)(d.Text, {
+        children: (0, a.jsx)(d.Text, {
           lineClamp: 1,
           variant: "text-md/medium",
           className: h.overrideHeading,
           tabularNumbers: true,
           children: t.name
         })
-      }), (0, n.jsx)("span", {}), (0, n.jsx)("span", {}), (0, n.jsx)(d.P3F, {
+      }), (0, a.jsx)("span", {}), (0, a.jsx)("span", {}), (0, a.jsx)(d.P3F, {
         className: h.removeOverride,
-        onClick: a,
-        children: (0, n.jsx)(d.Dio, {
+        onClick: n,
+        children: (0, a.jsx)(d.Dio, {
           size: "xs",
           color: "currentColor"
         })
       })]
-    }), (0, n.jsx)("div", {
+    }), (0, a.jsx)("div", {
       className: h.palettePreview,
-      children: s.map(e => (0, n.jsx)("span", {
+      children: s.map(e => (0, a.jsx)("span", {
         style: {
           width: 16,
           height: 16,

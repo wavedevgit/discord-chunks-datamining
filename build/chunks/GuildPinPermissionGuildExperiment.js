@@ -1,5 +1,5 @@
 /** Chunk was on 93886 **/
-/** chunk id: 190263, original params: e,t,a (module,exports,require) **/
+/** chunk id: 190263, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   D: () => c,
   o: () => d
@@ -28,12 +28,12 @@ let c = (0, Chunk818083.B)({
 
 function d(e) {
   var t;
-  let a = (0, n.e7)([s.Z], () => s.Z.can(o.Plq.ADMINISTRATOR, e)),
+  let n = (0, a.e7)([s.Z], () => s.Z.can(o.Plq.ADMINISTRATOR, e)),
     i = c.useExperiment({
       guildId: null == e ? true : e.id,
       location: "useIsPinPermissionMigrationNotificationAvailable"
     }).enabled,
     d = null == e ? true : e.features.has(o.oNc.PIN_PERMISSION_MIGRATION_COMPLETE),
     u = (0, l.OA)(r.z.GUILD_PIN_PERMISSION_MIGRATION_NOTIFICATION, null != (t = null == e ? true : e.id) ? t : o.lds);
-  return a && i && !d && !u
+  return n && i && !d && !u
 }

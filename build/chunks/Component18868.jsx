@@ -1,5 +1,5 @@
 /** Chunk was on 93886 **/
-/** chunk id: 18868, original params: e,t,a (module,exports,require) **/
+/** chunk id: 18868, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   L: () => h
 }), require("./388685.js");
@@ -17,20 +17,20 @@ let m = () => {
       let {
         default: e
       } = await Promise.resolve().then(require.bind(require, 897842));
-      return t => (0, n.jsx)(e, function(e) {
+      return t => (0, a.jsx)(e, function(e) {
         for (var t = 1; t < arguments.length; t++) {
-          var a = null != arguments[t] ? arguments[t] : {},
-            n = Object.keys(a);
-          "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(a).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(a, e).enumerable
-          }))), n.forEach(function(t) {
-            var n;
-            n = a[t], t in e ? Object.defineProperty(e, t, {
-              value: n,
+          var n = null != arguments[t] ? arguments[t] : {},
+            a = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(n, e).enumerable
+          }))), a.forEach(function(t) {
+            var a;
+            a = n[t], t in e ? Object.defineProperty(e, t, {
+              value: a,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : e[t] = n
+            }) : e[t] = a
           })
         }
         return e
@@ -48,46 +48,46 @@ let m = () => {
   h = e => {
     let {
       className: t,
-      onDrop: a
-    } = e, [l, h] = r.useState(false), p = r.useRef(null), v = r.useCallback(e => {
+      onDrop: n
+    } = e, [l, h] = r.useState(false), p = r.useRef(null), f = r.useCallback(e => {
       x(e), h(true), (0, s.Mr3)(c.A)
-    }, []), b = r.useCallback(e => {
+    }, []), v = r.useCallback(e => {
       x(e), h(false)
-    }, []), f = r.useCallback(async e => {
+    }, []), b = r.useCallback(async e => {
       x(e), h(false);
       let t = e.dataTransfer;
       if (null == t) return void m();
-      let n = await Promise.all(Array.from(t.items).map(e => {
+      let a = await Promise.all(Array.from(t.items).map(e => {
         var t;
         return null != (t = e.webkitGetAsEntry()) ? t : e.getAsEntry()
       })).then(e => e.filter(e => null != e));
-      n.length > 0 ? a(n) : m()
-    }, [a]);
-    return (0, n.jsx)("div", {
+      a.length > 0 ? n(a) : m()
+    }, [n]);
+    return (0, a.jsx)("div", {
       ref: p,
       className: i()(t, u.uploadArea),
-      onDragEnter: v,
-      onDragLeave: b,
-      onDrop: f,
-      children: (0, n.jsx)("div", {
+      onDragEnter: f,
+      onDragLeave: v,
+      onDrop: b,
+      children: (0, a.jsx)("div", {
         className: i()(u.uploadModal, {
           [u.droppable]: l
         }),
-        children: (0, n.jsxs)("div", {
+        children: (0, a.jsxs)("div", {
           className: u.inner,
-          children: [(0, n.jsx)(o.Z, {
+          children: [(0, a.jsx)(o.Z, {
             icons: d.J6
-          }), (0, n.jsx)(s.X6q, {
+          }), (0, a.jsx)(s.X6q, {
             variant: "heading-lg/bold",
             children: "Upload Shop Assets"
-          }), (0, n.jsxs)("div", {
+          }), (0, a.jsxs)("div", {
             className: u.instructions,
-            children: [(0, n.jsx)(s.Text, {
+            children: [(0, a.jsx)(s.Text, {
               variant: "text-sm/normal",
               children: "Drop file(s) into this panel to preview Shop assets!"
-            }), (0, n.jsxs)(s.Text, {
+            }), (0, a.jsxs)(s.Text, {
               variant: "text-sm/normal",
-              children: ["Click", (0, n.jsx)(s.idN, {
+              children: ["Click", (0, a.jsx)(s.idN, {
                 className: u.questionIcon,
                 size: "xs",
                 color: s.TVs.colors.TEXT_DEFAULT

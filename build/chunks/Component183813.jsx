@@ -34,7 +34,7 @@ function L(e) {
     selectedGiftingPromotionReward: y,
     claimableRewards: S,
     claimableVariants: E
-  } = (0, u.wD)(), O = (0, a.e7)([p.default], () => p.default.getCurrentUser()), [P, v] = i.useState(null), w = Math.floor(2 * Math.random()), [M, I] = i.useState(w);
+  } = (0, u.wD)(), O = (0, a.e7)([c.default], () => c.default.getCurrentUser()), [P, v] = i.useState(null), w = Math.floor(2 * Math.random()), [M, I] = i.useState(w);
   i.useEffect(() => {
     null != S && S.length > 0 && null == y && b(S[0])
   }, [S, y, b]), s()(null != l, "Expected plan to selected"), s()(null != L, "Expected selectedSkuId"), s()(null != g, "Step should be set");
@@ -87,7 +87,7 @@ function L(e) {
         className: m.modalFooter,
         children: (0, r.jsx)(d.y, {
           onStepChange: e => {
-            null != O && null != y && c.default.track(f.rMx.GIFT_PROMOTION_REWARD_SELECTED, {
+            null != O && null != y && p.default.track(f.rMx.GIFT_PROMOTION_REWARD_SELECTED, {
               user_id: O.id,
               reward_sku_id: y.skuId
             }), t(e)

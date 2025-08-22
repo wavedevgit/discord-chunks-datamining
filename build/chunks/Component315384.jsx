@@ -1,5 +1,5 @@
 /** Chunk was on 93886 **/
-/** chunk id: 315384, original params: e,t,a (module,exports,require) **/
+/** chunk id: 315384, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
 }), require("./388685.js");
@@ -18,9 +18,9 @@ let u = "/users/@me/debug/consumables/",
   };
 
 function x() {
-  let e, [t, a] = (0, Chunk647438.useState)([]),
+  let e, [t, n] = (0, Chunk647438.useState)([]),
     [x, h] = (0, Chunk647438.useState)(null),
-    [p, v] = (0, Chunk647438.useState)(false);
+    [p, f] = (0, Chunk647438.useState)(false);
   return (0, Chunk647438.useEffect)(() => ((async () => {
     try {
       let e = (await Chunk544891.tn.get(u)).body.entitlements.map(e => c.Z.createFromServer(e));
@@ -41,9 +41,9 @@ function x() {
         children: "Create Entitlements"
       }), (0, Chunk951288.jsx)(Chunk755721.zx, {
         onClick: (e = Chunk317951.D1, async () => {
-          v(true);
+          f(true);
           try {
-            let n = await Chunk544891.tn.post({
+            let a = await Chunk544891.tn.post({
                 url: u,
                 query: {
                   sku_id: module
@@ -55,7 +55,7 @@ function x() {
           } catch (e) {
             h("Failed to create entitlement")
           } finally {
-            v(false)
+            f(false)
           }
         }),
         className: Chunk625299.button,
@@ -71,17 +71,17 @@ function x() {
           children: "Existing Entitlements"
         }), (0, Chunk951288.jsx)(Chunk481060.hh5, {})]
       }), (0, Chunk951288.jsx)("ul", {
-        children: exports.map(e => (0, n.jsx)("li", {
-          children: (0, n.jsxs)("div", {
-            children: [(0, n.jsx)(s.Text, {
+        children: exports.map(e => (0, a.jsx)("li", {
+          children: (0, a.jsxs)("div", {
+            children: [(0, a.jsx)(s.Text, {
               selectable: true,
               variant: "text-md/normal",
               children: e.id
-            }), (0, n.jsxs)(s.Text, {
+            }), (0, a.jsxs)(s.Text, {
               selectable: true,
               variant: "text-md/normal",
               children: ["Type: ", m[e.skuId]]
-            }), (0, n.jsxs)(s.Text, {
+            }), (0, a.jsxs)(s.Text, {
               selectable: true,
               variant: "text-md/normal",
               children: ["Consumed? : ", e.consumed ? "Yes" : "No"]

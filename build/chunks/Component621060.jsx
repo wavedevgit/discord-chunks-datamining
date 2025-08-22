@@ -1,10 +1,10 @@
 /** Chunk was on 93886 **/
-/** chunk id: 621060, original params: e,t,a (module,exports,require) **/
+/** chunk id: 621060, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   ZP: () => g,
-  v0: () => v
+  v0: () => f
 }), require("./388685.js"), require("./539854.js"), require("./642613.js");
-var n, Chunk951288 = require("./951288.js"),
+var a, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
@@ -16,20 +16,20 @@ var n, Chunk951288 = require("./951288.js"),
   Chunk823379 = require("./823379.js"),
   Chunk246992 = require("./246992.js"),
   Chunk451429 = require("./451429.js"),
-  v = ((n = {}).NONE = "", n.EXPERIMENTS = "Experiments", n.EVENTS = "Events", n.PREMIUM = "Premium", n.BILLING = "Billing", n.USERS = "Users", n.GUILDS = "Guilds", n.UI = "UI", n.GAMES = "Games", n.AUDIO_VIDEO = "Audio / Video", n.DEVELOPMENT = "Development", n);
-let b = ["Experiments", "Events", "Premium", "Billing", "Users", "Guilds", "UI", "Games", "Audio / Video", "Development"],
-  f = Chunk647438.forwardRef(function(e, t) {
+  f = ((a = {}).NONE = "", a.EXPERIMENTS = "Experiments", a.EVENTS = "Events", a.PREMIUM = "Premium", a.BILLING = "Billing", a.USERS = "Users", a.GUILDS = "Guilds", a.UI = "UI", a.GAMES = "Games", a.AUDIO_VIDEO = "Audio / Video", a.DEVELOPMENT = "Development", a);
+let v = ["Experiments", "Events", "Premium", "Billing", "Users", "Guilds", "UI", "Games", "Audio / Video", "Development"],
+  b = Chunk647438.forwardRef(function(e, t) {
     let {
-      id: a,
-      selected: n,
+      id: n,
+      selected: a,
       onClick: l,
       children: i
     } = e;
     return (0, r.jsx)(d.P3F, {
       className: s()(p.tabItem, {
-        [p.selected]: n
+        [p.selected]: a
       }),
-      "data-tab-id": a,
+      "data-tab-id": n,
       innerRef: t,
       onClick: l,
       children: i
@@ -39,29 +39,29 @@ let b = ["Experiments", "Events", "Premium", "Billing", "Users", "Guilds", "UI",
 function j(e) {
   let {
     tabs: t,
-    selectedTabId: a,
-    onSelectTab: n
-  } = e, i = l.useRef(new Map), [s, v] = l.useState(() => new Set), {
+    selectedTabId: n,
+    onSelectTab: a
+  } = e, i = l.useRef(new Map), [s, f] = l.useState(() => new Set), {
     ref: j,
     width: g
   } = (0, u.ZP)(), _ = l.useRef(null);
   l.useEffect(() => {
-    var e, n, r, l;
+    var e, a, r, l;
     if (null == g) return;
     let s = new Set,
       o = null != g ? g : 0;
-    for (let c of (o -= null != (n = null == (e = i.current.get(a)) ? true : e.getBoundingClientRect().width) ? n : 0, t)) c.id !== a && (o -= null != (l = null == (r = i.current.get(c.id)) ? true : r.getBoundingClientRect().width) ? l : 0) < 0 && s.add(c.id);
-    v(s)
-  }, [t, g, j, a]);
+    for (let c of (o -= null != (a = null == (e = i.current.get(n)) ? true : e.getBoundingClientRect().width) ? a : 0, t)) c.id !== n && (o -= null != (l = null == (r = i.current.get(c.id)) ? true : r.getBoundingClientRect().width) ? l : 0) < 0 && s.add(c.id);
+    f(s)
+  }, [t, g, j, n]);
   let y = l.useCallback(e => {
-    var a, l;
+    var n, l;
     let {
       closePopout: i
     } = e, s = t.filter(e => null == e.group), c = {};
-    for (let e of t) null != e.group && (null != c[a = e.group] || (c[a] = []), c[e.group].push(e));
-    for (let e of b) null == (l = c[e]) || l.sort((e, t) => {
-      var a, n;
-      return (null != (a = (0, o.q)(e.name)) ? a : "").localeCompare(null != (n = (0, o.q)(t.name)) ? n : "")
+    for (let e of t) null != e.group && (null != c[n = e.group] || (c[n] = []), c[e.group].push(e));
+    for (let e of v) null == (l = c[e]) || l.sort((e, t) => {
+      var n, a;
+      return (null != (n = (0, o.q)(e.name)) ? n : "").localeCompare(null != (a = (0, o.q)(t.name)) ? a : "")
     });
     return (0, r.jsxs)(d.v2r, {
       navId: "devtools-overflow",
@@ -72,29 +72,29 @@ function j(e) {
       children: [s.map(e => {
         let {
           id: t,
-          name: a
+          name: n
         } = e;
         return (0, r.jsx)(d.sNh, {
           id: t,
-          label: a,
-          action: () => n(t)
+          label: n,
+          action: () => a(t)
         }, t)
-      }), b.map(e => (0, r.jsx)(d.kSQ, {
+      }), v.map(e => (0, r.jsx)(d.kSQ, {
         label: e,
         children: c[e].map(e => {
           let {
             id: t,
-            name: a
+            name: n
           } = e;
           return (0, r.jsx)(d.sNh, {
             id: t,
-            label: a,
-            action: () => n(t)
+            label: n,
+            action: () => a(t)
           }, t)
         })
       }, e))]
     })
-  }, [t, n]);
+  }, [t, a]);
   return (0, r.jsxs)("div", {
     className: p.tabBarContainer,
     children: [(0, r.jsxs)("div", {
@@ -105,10 +105,10 @@ function j(e) {
           id: t,
           name: l
         } = e;
-        if (!s.has(t)) return (0, r.jsx)(f, {
+        if (!s.has(t)) return (0, r.jsx)(b, {
           id: t,
-          selected: a === t,
-          onClick: a !== t ? () => n(t) : true,
+          selected: n === t,
+          onClick: n !== t ? () => a(t) : true,
           children: l
         }, t)
       }).filter(x.lm), (0, r.jsx)("div", {
@@ -118,13 +118,13 @@ function j(e) {
             id: t,
             name: l
           } = e;
-          return (0, r.jsx)(f, {
+          return (0, r.jsx)(b, {
             id: t,
-            selected: a === t,
+            selected: n === t,
             ref: e => {
               i.current.set(t, e)
             },
-            onClick: a !== t ? () => n(t) : true,
+            onClick: n !== t ? () => a(t) : true,
             children: l
           }, t)
         })
@@ -139,25 +139,25 @@ function j(e) {
         align: "right",
         spacing: 0,
         children: e => {
-          var t, a;
+          var t, n;
           return (0, r.jsx)(c.zx, (t = function(e) {
             for (var t = 1; t < arguments.length; t++) {
-              var a = null != arguments[t] ? arguments[t] : {},
-                n = Object.keys(a);
-              "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(a).filter(function(e) {
-                return Object.getOwnPropertyDescriptor(a, e).enumerable
-              }))), n.forEach(function(t) {
-                var n;
-                n = a[t], t in e ? Object.defineProperty(e, t, {
-                  value: n,
+              var n = null != arguments[t] ? arguments[t] : {},
+                a = Object.keys(n);
+              "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                return Object.getOwnPropertyDescriptor(n, e).enumerable
+              }))), a.forEach(function(t) {
+                var a;
+                a = n[t], t in e ? Object.defineProperty(e, t, {
+                  value: a,
                   enumerable: true,
                   configurable: true,
                   writable: true
-                }) : e[t] = n
+                }) : e[t] = a
               })
             }
             return e
-          }({}, e), a = a = {
+          }({}, e), n = n = {
             buttonRef: _,
             className: p.overflowChevron,
             size: c.zx.Sizes.ICON,
@@ -167,15 +167,15 @@ function j(e) {
               width: 16,
               height: 16
             })
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
-            var a = Object.keys(e);
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+            var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
-              var n = Object.getOwnPropertySymbols(e);
-              a.push.apply(a, n)
+              var a = Object.getOwnPropertySymbols(e);
+              n.push.apply(n, a)
             }
-            return a
-          })(Object(a)).forEach(function(e) {
-            Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(a, e))
+            return n
+          })(Object(n)).forEach(function(e) {
+            Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
           }), t))
         }
       })
@@ -184,12 +184,12 @@ function j(e) {
 }
 
 function g(e, t) {
-  var a, n, i;
+  var n, a, i;
   let {
     tabs: s,
     initialSelectedTabId: o,
     onChangeTab: c
-  } = e, [d, u] = l.useState(null != o ? o : null == (a = s[0]) ? true : a.id);
+  } = e, [d, u] = l.useState(null != o ? o : null == (n = s[0]) ? true : n.id);
   return {
     TabBar: l.useCallback(() => (0, r.jsx)(j, {
       tabs: s,
@@ -198,7 +198,7 @@ function g(e, t) {
         u(e), null == c || c(e)
       }
     }), [d, u, c, ...t]),
-    renderSelectedTab: null != (i = null == (n = s.find(e => e.id === d)) ? true : n.render) ? i : () => null,
+    renderSelectedTab: null != (i = null == (a = s.find(e => e.id === d)) ? true : a.render) ? i : () => null,
     selectedTabId: d
   }
 }

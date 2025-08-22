@@ -26,10 +26,10 @@ function f(e) {
     selectedGiftingPromotionReward: f
   } = e, j = (0, i.e7)([u.default], () => u.default.getCurrentUser()), m = (0, i.e7)([a.Z], () => a.Z.useReducedMotion), {
     analyticsLocations: L
-  } = (0, o.ZP)(), g = s.EFr.SIZE_32, b = (0, C.Z)(null == f ? true : f.assetId, g, !m), y = (0, c.Z)(), S = null == y ? true : y.giftPurchaseConfirmation;
+  } = (0, o.ZP)(), g = s.EFr.SIZE_32, b = (0, C.Z)(null == f ? true : f.assetId, g, !m), y = (0, p.Z)(), S = null == y ? true : y.giftPurchaseConfirmation;
   return null == n || null == S ? null : (0, r.jsx)(x.O3, {
     children: (0, r.jsx)(s.mzw, {
-      align: p.Z.Align.CENTER,
+      align: c.Z.Align.CENTER,
       "data-migration-pending": true,
       children: (0, r.jsxs)("div", {
         className: _.promotionalFooter,

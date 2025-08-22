@@ -1,7 +1,7 @@
 /** Chunk was on 93886 **/
-/** chunk id: 611565, original params: e,t,a (module,exports,require) **/
+/** chunk id: 611565, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => v
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
@@ -22,7 +22,7 @@ let p = [{
       let {
         channelName: t
       } = e;
-      return (0, n.jsx)(s.Text, {
+      return (0, a.jsx)(s.Text, {
         variant: "text-md/normal",
         children: t
       })
@@ -34,20 +34,20 @@ let p = [{
       let {
         channelId: t
       } = e;
-      return (0, n.jsx)(s.Text, {
+      return (0, a.jsx)(s.Text, {
         variant: "text-md/normal",
         children: t
       })
     }
   }],
-  v = [{
+  f = [{
     key: "channelName",
     cellClassName: l()(Chunk326588.cell, Chunk326588.channelName),
     render(e) {
       let {
         channelName: t
       } = e;
-      return (0, n.jsx)(s.Text, {
+      return (0, a.jsx)(s.Text, {
         variant: "text-md/normal",
         children: t
       })
@@ -59,7 +59,7 @@ let p = [{
       let {
         loadState: t
       } = e;
-      return (0, n.jsx)(s.Text, {
+      return (0, a.jsx)(s.Text, {
         variant: "text-md/normal",
         children: t
       })
@@ -71,23 +71,23 @@ let p = [{
       let {
         channelId: t
       } = e;
-      return (0, n.jsx)(s.Text, {
+      return (0, a.jsx)(s.Text, {
         variant: "text-md/normal",
         children: t
       })
     }
   }];
 
-function b() {
+function v() {
   let {
     unreadRecentMentionsCount: e,
     unreadChannelIds: t
   } = (0, Chunk370774.O4)(), {
-    isLoading: a,
+    isLoading: n,
     hasLoadedEver: r,
     hasPreloaded: l,
-    hasMoreToLoad: b,
-    isLoadingComplete: f
+    hasMoreToLoad: v,
+    isLoadingComplete: b
   } = (0, Chunk399606.cj)([Chunk787879.Z], () => ({
     isLoading: Chunk787879.Z.isLoading,
     hasLoadedEver: Chunk787879.Z.hasLoadedEver,
@@ -97,12 +97,12 @@ function b() {
   })), j = (0, Chunk399606.e7)([Chunk787879.Z], () => Chunk787879.Z.currentRequestAnalyticsPayload), g = (0, Chunk399606.cj)([Chunk787879.Z], () => Chunk787879.Z.getChannelInfoMap()), _ = (0, Chunk399606.cj)([Chunk592125.Z], () => {
     let e = {};
     return Object.entries(g).forEach(t => {
-      let [a] = t, n = d.Z.getChannel(a);
-      e[a] = null != n ? n : null
+      let [n] = t, a = d.Z.getChannel(n);
+      e[n] = null != a ? a : null
     }), module
   }), y = (0, Chunk399606.cj)([Chunk592125.Z], () => exports.reduce((e, t) => {
-    let a = d.Z.getChannel(t);
-    return e[t] = null != a ? a : null, e
+    let n = d.Z.getChannel(t);
+    return e[t] = null != n ? n : null, e
   }, {})), C = (0, Chunk399606.e7)([Chunk787879.Z], () => Chunk787879.Z.getInboxMessages()), N = (0, Chunk399606.e7)([Chunk787879.Z], () => Chunk787879.Z.getDevOverrides().navOnClick);
   return (0, Chunk951288.jsx)("div", {
     className: Chunk451429.panel,
@@ -152,11 +152,11 @@ function b() {
           columns: p,
           data: Object.entries(y).map(e => {
             var t;
-            let [a, n] = e;
+            let [n, a] = e;
             return {
-              key: a,
-              channelId: a,
-              channelName: null != (t = null == n ? true : n.name) ? t : ""
+              key: n,
+              channelId: n,
+              channelName: null != (t = null == a ? true : a.name) ? t : ""
             }
           })
         })]
@@ -171,9 +171,9 @@ function b() {
         }), (0, Chunk951288.jsxs)("div", {
           children: ["Has Loaded Ever: ", Chunk120356 ? "✅" : "❌"]
         }), (0, Chunk951288.jsxs)("div", {
-          children: ["Has More To Load: ", b ? "✅" : "❌"]
+          children: ["Has More To Load: ", v ? "✅" : "❌"]
         }), (0, Chunk951288.jsxs)("div", {
-          children: ["Is Loading Complete: ", f ? "✅" : "❌"]
+          children: ["Is Loading Complete: ", b ? "✅" : "❌"]
         }), (0, Chunk951288.jsxs)("div", {
           children: ["Last Loading Trigger: ", null == j ? true : j.loadingTrigger]
         })]
@@ -184,14 +184,14 @@ function b() {
         }), (0, Chunk951288.jsxs)("div", {
           children: ["Total Channels: ", Object.keys(g).length]
         }), (0, Chunk951288.jsx)(Chunk681619.Z, {
-          columns: v,
+          columns: f,
           data: Object.entries(g).map(e => {
-            var t, a;
-            let [n, r] = e;
+            var t, n;
+            let [a, r] = e;
             return {
-              key: n,
-              channelId: n,
-              channelName: null != (a = null == (t = _[n]) ? true : t.name) ? a : "",
+              key: a,
+              channelId: a,
+              channelName: null != (n = null == (t = _[a]) ? true : t.name) ? n : "",
               loadState: r.loadState
             }
           })

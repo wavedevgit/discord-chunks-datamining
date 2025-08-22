@@ -25,7 +25,7 @@ let _ = e => {
     productName: f,
     a11yLabel: j,
     selectedSkuId: m
-  } = e, L = i.useRef(null), g = (0, d.Z)(L), b = (0, u.m)(L), y = g || b, S = (0, p.ZP)(), E = (0, o.wj)(S), O = {
+  } = e, L = i.useRef(null), g = (0, d.Z)(L), b = (0, u.m)(L), y = g || b, S = (0, c.ZP)(), E = (0, o.wj)(S), O = {
     type: a.Z.AVATAR_DECORATION,
     label: j,
     asset: n
@@ -44,7 +44,7 @@ let _ = e => {
       }),
       children: [(0, r.jsx)("div", {
         className: h.preview,
-        children: (0, r.jsx)(c.R, {
+        children: (0, r.jsx)(p.R, {
           item: O,
           user: l,
           isHighlighted: y,

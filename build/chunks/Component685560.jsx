@@ -1,5 +1,5 @@
 /** Chunk was on 93886 **/
-/** chunk id: 685560, original params: e,t,a (module,exports,require) **/
+/** chunk id: 685560, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => P
 }), require("./388685.js"), require("./410992.js"), require("./227481.js"), require("./730884.js"), require("./20464.js"), require("./341884.js"), require("./364341.js"), require("./629680.js"), require("./505025.js"), require("./918970.js"), require("./121784.js"), require("./644351.js"), require("./146733.js");
@@ -25,9 +25,9 @@ var Chunk951288 = require("./951288.js"),
 let y = [Chunk704215.z.GUILD_POWERUP_PERKS_COACHMARK, Chunk704215.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK, Chunk704215.z.GUILD_POWERUP_NOTIFICATION, Chunk704215.z.GUILD_TAG_AVAILABLE_COACHMARK, Chunk704215.z.GUILD_POWERUP_NEW_PERK_AVAILABLE_COACHMARK],
   C = [Chunk704215.C.GUILD_POWERUP_LEVEL_1_COACHMARK, Chunk704215.C.GUILD_POWERUP_LEVEL_2_COACHMARK, Chunk704215.C.GUILD_POWERUP_LEVEL_3_COACHMARK, Chunk704215.C.GUILD_POWERUP_SINGLE_SKU_PURCHASE_COACHMARK, Chunk704215.C.GUILD_POWERUP_CHOICE_SKU_PURCHASE_COACHMARK],
   N = [Chunk704215.C.ADOPT_CLAN_IDENTITY_NOTICE],
-  O = [Chunk704215.z.VANITY_URL_POWERUP_ROLLBACK_NOTIFICATION, Chunk704215.z.VANITY_URL_POWERUP_ROLLBACK_MODAL, Chunk704215.z.VANITY_URL_POWERUP_EDUCATIONAL_POPOVER];
+  E = [Chunk704215.z.VANITY_URL_POWERUP_ROLLBACK_NOTIFICATION, Chunk704215.z.VANITY_URL_POWERUP_ROLLBACK_MODAL, Chunk704215.z.VANITY_URL_POWERUP_EDUCATIONAL_POPOVER];
 
-function E(e) {
+function O(e) {
   switch (e) {
     case o.C.GUILD_POWERUP_LEVEL_1_COACHMARK:
       return "GUILD_POWERUP_LEVEL_1_COACHMARK";
@@ -43,10 +43,10 @@ function E(e) {
       return "ADOPT_CLAN_IDENTITY_NOTICE"
   }
 }
-async function T(e, t, a) {
+async function T(e, t, n) {
   await Promise.all(t.map(e => s.tn.patch({
     url: g.ANM.APPLIED_BOOST_MODIFY_END_DATE(e.id),
-    body: a ? {} : {
+    body: n ? {} : {
       ends_at: l()().add(1, "day")
     },
     rejectWithError: true
@@ -62,7 +62,7 @@ async function S(e) {
 function P() {
   var e;
   let t = (0, Chunk442837.e7)([Chunk914010.Z], () => Chunk914010.Z.getGuildId()),
-    a = (0, Chunk442837.e7)([Chunk430824.Z], () => {
+    n = (0, Chunk442837.e7)([Chunk430824.Z], () => {
       var e;
       return null == (e = Chunk430824.Z.getGuild(exports)) ? true : module.name
     }),
@@ -133,7 +133,7 @@ function P() {
         variant: "eyebrow",
         className: Chunk617659.header,
         children: "Reset User Level DCs"
-      }), y.map(e => (0, n.jsx)(u.u, {
+      }), y.map(e => (0, a.jsx)(u.u, {
         className: _.formSwitch,
         contents: l,
         content: o.z[e],
@@ -145,15 +145,15 @@ function P() {
         variant: "eyebrow",
         className: Chunk617659.header,
         children: "Reset Guild Level DCs"
-      }), C.map(e => (0, n.jsx)(c.j7V, {
+      }), C.map(e => (0, a.jsx)(c.j7V, {
         className: _.formSwitch,
-        onChange: a => {
-          a ? (0, x.Qd)(e, t, false) : ((0, p.Z1)(o.z.GUILD_POWERUP_NOTIFICATION), (0, x.c7)(e, t))
+        onChange: n => {
+          n ? (0, x.Qd)(e, t, false) : ((0, p.Z1)(o.z.GUILD_POWERUP_NOTIFICATION), (0, x.c7)(e, t))
         },
         value: r.includes(e),
-        children: (0, n.jsx)(c.Text, {
+        children: (0, a.jsx)(c.Text, {
           variant: "text-sm/normal",
-          children: E(e)
+          children: O(e)
         })
       }, e))]
     }), (0, Chunk951288.jsxs)("div", {
@@ -161,15 +161,15 @@ function P() {
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "eyebrow",
         children: "Reset Server Tag Guild Level DCs"
-      }), N.map(e => (0, n.jsx)(c.j7V, {
+      }), N.map(e => (0, a.jsx)(c.j7V, {
         className: _.formSwitch,
-        onChange: a => {
-          a ? (0, x.Qd)(e, t, false) : ((0, p.Z1)(o.z.GUILD_POWERUP_NOTIFICATION), (0, x.c7)(e, t))
+        onChange: n => {
+          n ? (0, x.Qd)(e, t, false) : ((0, p.Z1)(o.z.GUILD_POWERUP_NOTIFICATION), (0, x.c7)(e, t))
         },
         value: r.includes(e),
-        children: (0, n.jsx)(c.Text, {
+        children: (0, a.jsx)(c.Text, {
           variant: "text-sm/normal",
-          children: E(e)
+          children: O(e)
         })
       }, e))]
     }), (0, Chunk951288.jsxs)("div", {
@@ -178,7 +178,7 @@ function P() {
         variant: "eyebrow",
         className: Chunk617659.header,
         children: "Reset Powerup Rollback DCs"
-      }), O.map(e => (0, n.jsx)(u.u, {
+      }), E.map(e => (0, a.jsx)(u.u, {
         className: _.formSwitch,
         contents: l,
         content: o.z[e],

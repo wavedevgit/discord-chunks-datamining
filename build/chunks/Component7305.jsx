@@ -65,7 +65,7 @@ function R(e) {
     analyticsSourceLocation: l,
     onComplete: o,
     transitionState: d,
-    initialPlanId: p,
+    initialPlanId: c,
     subscriptionTier: u,
     onClose: j,
     trialId: L,
@@ -88,7 +88,7 @@ function R(e) {
     analyticsLocations: N
   } = (0, C.ZP)();
   i.useEffect(() => {
-    c.Z.isLoadedForPremiumSKUs() || s.Z.wait(() => (0, a.Y2)())
+    p.Z.isLoadedForPremiumSKUs() || s.Z.wait(() => (0, a.Y2)())
   }, []);
   let {
     step: H
@@ -107,7 +107,7 @@ function R(e) {
       analyticsSubscriptionType: Z.NYc.PREMIUM,
       onComplete: o,
       transitionState: d,
-      initialPlanId: p,
+      initialPlanId: c,
       giftMessage: G,
       subscriptionTier: u,
       onClose: j,
@@ -147,12 +147,12 @@ function N(e) {
     selectedPlan: C
   } = (0, _.JL)(), {
     isGift: d,
-    claimableRewards: c
+    claimableRewards: p
   } = (0, h.wD)(), u = (0, I.Z)({
     isGift: d,
     skuId: o,
     referralTrialOfferId: s
-  }), x = (0, P.Fv)(u), j = (0, p.id)(C, d, c);
+  }), x = (0, P.Fv)(u), j = (0, c.id)(C, d, p);
   return (0, r.jsx)(L.J, (t = B({}, e), n = n = {
     breadcrumbSteps: U,
     onReturn: () => {
@@ -240,15 +240,16 @@ function F(e) {
     {
       confirmationFooter: s,
       defaultPlanId: a,
-      giftingOrigin: p,
-      giftMessage: c,
+      giftingOrigin: c,
+      giftMessage: p,
       giftRecipient: x,
       giftStyle: f,
       isGift: m,
       loadId: L,
       paymentModalBanner: g,
       referralCode: b,
-      subscriptionTier: y
+      subscriptionTier: y,
+      customCheckoutFlow: S
     } = e;
   if (null != y && !Object.values(A.Si).includes(y)) throw Error("subscriptionTier must be a premium subscription");
   return (0, r.jsx)(C.Gt, {
@@ -262,15 +263,16 @@ function F(e) {
       defaultPlanId: null != n ? n : a,
       referralCode: b,
       wasTier2PremiumBeforePurchase: e.wasTier2PremiumBeforePurchase,
+      customCheckoutFlow: S,
       children: (0, r.jsx)(j.c1, {
         confirmationFooter: s,
         paymentModalBanner: g,
         children: (0, r.jsx)(h.KB, {
           isGift: m,
           giftRecipient: null == x ? true : x,
-          giftMessage: c,
+          giftMessage: p,
           giftStyle: f,
-          giftingOrigin: p,
+          giftingOrigin: c,
           children: (0, r.jsx)(R, B({}, e))
         })
       })

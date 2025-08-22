@@ -1,5 +1,5 @@
 /** Chunk was on 93886 **/
-/** chunk id: 897842, original params: e,t,a (module,exports,require) **/
+/** chunk id: 897842, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => l,
   default: () => i
@@ -11,13 +11,13 @@ let l = "UPLOAD_ERROR_MODAL_KEY",
   i = e => {
     let {
       title: t,
-      help: a,
+      help: n,
       transitionState: l,
       onClose: i
     } = e;
-    return (0, n.jsx)(r.Modal, {
+    return (0, a.jsx)(r.Modal, {
       title: t,
-      subtitle: a,
+      subtitle: n,
       transitionState: l,
       actions: [{
         variant: "critical-secondary",

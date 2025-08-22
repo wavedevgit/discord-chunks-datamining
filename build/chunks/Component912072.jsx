@@ -1,5 +1,5 @@
 /** Chunk was on 93886 **/
-/** chunk id: 912072, original params: e,t,a (module,exports,require) **/
+/** chunk id: 912072, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
 }), require("./388685.js");
@@ -17,19 +17,19 @@ var Chunk951288 = require("./951288.js"),
 function x(e) {
   let {
     devSettingsCategory: t
-  } = e, a = (0, s.e7)([d.ZP], () => d.ZP.allByCategory(t), [t], s.pF), l = r.useMemo(() => a.map(e => {
-    let [t, a, {
+  } = e, n = (0, s.e7)([d.ZP], () => d.ZP.allByCategory(t), [t], s.pF), l = r.useMemo(() => n.map(e => {
+    let [t, n, {
       label: r
     }] = e;
-    return (0, n.jsx)(o.j7V, {
-      value: a,
+    return (0, a.jsx)(o.j7V, {
+      value: n,
       onChange: e => (0, c.Z)(t, e),
       hideBorder: true,
       className: u.switch,
       children: r
     }, t)
-  }), [a]);
-  return (0, n.jsx)("div", {
+  }), [n]);
+  return (0, a.jsx)("div", {
     className: i()(m.panel, u.panel),
     children: l
   })

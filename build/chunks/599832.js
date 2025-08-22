@@ -1,5 +1,5 @@
 /** Chunk was on 93886 **/
-/** chunk id: 599832, original params: e,t,a (module,exports,require) **/
+/** chunk id: 599832, original params: e,t,n (module,exports,require) **/
 module.exports = {
   panel: "panel_fb48ea",
   subPanel: "subPanel_fb48ea",
