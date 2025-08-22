@@ -401,11 +401,10 @@ let O = new Chunk710845.Z("OverlayActionCreators"),
         enabled: t
       })
     },
-    successfullyShown(e, t) {
+    successfullyShown(e) {
       i.Z.dispatch({
         type: "OVERLAY_SUCCESSFULLY_SHOWN",
-        pid: e,
-        isFromNative: t
+        pid: e
       })
     },
     setGpuBoostRequested(e, t) {
