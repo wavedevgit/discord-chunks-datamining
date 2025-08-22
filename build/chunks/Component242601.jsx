@@ -492,7 +492,7 @@ function eE(e) {
     Z = (0, c.e7)([J.default], () => J.default.getCurrentUser()),
     {
       enableStudyGroup: w
-    } = (0, x.s)(o),
+    } = (0, A.s)(o),
     U = (0, v.ZP)(e => e.currentlyShown.has(u.z.NAGBAR_NOTICE_CONNECT_PLAYSTATION)),
     [G, V] = i.useState(!U),
     W = (0, b.Z)(n),
@@ -502,7 +502,7 @@ function eE(e) {
   i.useEffect(() => {
     n !== W && V(!U)
   }, [n, W, U]);
-  let [en, er] = (0, v.ZP)(e => [es.XN.some(t => e.currentlyShown.has(t.dismissibleContentType)), e.currentlyShownGroup.has(ec.R.GUILD_HEADER_TOOLTIPS)], s.X), ei = (0, y.Z)(o), el = (0, p.s9z)(p.JQI), ea = (0, c.e7)([K.Z], () => K.Z.hasLayers()), eu = (0, c.e7)([B.Z], () => B.Z.shouldShow(eb)), ed = (0, R.cT)(n, "GuildSidebar") && g && (null == o ? true : o.premiumProgressBarEnabled) === false && !ee.s.isDisallowPopupsSet(), ep = (0, P.Z)(n), ef = (null == o ? true : o.features.has(eo.oNc.HUB)) === true, eh = g && (null == o ? true : o.features.has(eo.oNc.DISCOVERABLE)) === true, eg = (0, E.Q)(), em = (g || (null == o ? true : o.premiumTier) === eo.Eu4.NONE) && !ee.s.isDisallowPopupsSet() && !eg, e_ = (0, c.e7)([A.Z, K.Z], () => null != o && null != Z && g && !K.Z.hasLayers() && A.Z.shouldShowGuildTemplateDirtyTooltip(n)), eE = (0, c.e7)([H.Z], () => H.Z.getChannel(a)), {
+  let [en, er] = (0, v.ZP)(e => [es.XN.some(t => e.currentlyShown.has(t.dismissibleContentType)), e.currentlyShownGroup.has(ec.R.GUILD_HEADER_TOOLTIPS)], s.X), ei = (0, y.Z)(o), el = (0, p.s9z)(p.JQI), ea = (0, c.e7)([K.Z], () => K.Z.hasLayers()), eu = (0, c.e7)([B.Z], () => B.Z.shouldShow(eb)), ed = (0, R.cT)(n, "GuildSidebar") && g && (null == o ? true : o.premiumProgressBarEnabled) === false && !ee.s.isDisallowPopupsSet(), ep = (0, P.Z)(n), ef = (null == o ? true : o.features.has(eo.oNc.HUB)) === true, eh = g && (null == o ? true : o.features.has(eo.oNc.DISCOVERABLE)) === true, eg = (0, E.Q)(), em = (g || (null == o ? true : o.premiumTier) === eo.Eu4.NONE) && !ee.s.isDisallowPopupsSet() && !eg, e_ = (0, c.e7)([x.Z, K.Z], () => null != o && null != Z && g && !K.Z.hasLayers() && x.Z.shouldShowGuildTemplateDirtyTooltip(n)), eE = (0, c.e7)([H.Z], () => H.Z.getChannel(a)), {
     isPopoutOpen: ey
   } = (0, S.y)(), ev = null != (t = null == o ? true : o.features.has(eo.oNc.COMMUNITY)) && t, eI = $.ZP.isNewUser(Z), eC = G && !eI;
   (0, N.Z)(o);
@@ -511,12 +511,12 @@ function eE(e) {
     eT = (0, T.Z)(n),
     eP = (0, c.e7)([X.Z], () => X.Z.getChannelId()),
     ej = (0, c.e7)([Q.Z], () => Q.Z.desyncedVoiceStatesCount),
-    eA = M.Y.useExperiment({
+    ex = M.Y.useExperiment({
       location: "GuildSidebar"
     }, {
       autoTrackExposure: true
     }).enabled,
-    ex = (0, D.Z)(n),
+    eA = (0, D.Z)(n),
     eZ = (0, k.Z)(null == Z ? true : Z.id, n) && (null == o ? true : o.premiumProgressBarEnabled) === false;
   return (0, r.jsx)(eO, {
     guildId: n,
@@ -550,8 +550,8 @@ function eE(e) {
     headerAnalyticsLocations: et,
     isTutorialHighlightDismissed: eS,
     shouldRenderBurstCoachmark: eC,
-    shouldRenderCustomNotificationSoundsCoachmark: eA,
-    shouldRenderGuildPowerupPerkCoachmark: false === ex,
+    shouldRenderCustomNotificationSoundsCoachmark: ex,
+    shouldRenderGuildPowerupPerkCoachmark: false === eA,
     shouldRenderBoosterEnhancedRoleColorsCoachmark: eZ
   })
 }

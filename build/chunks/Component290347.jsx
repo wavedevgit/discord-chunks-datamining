@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 290347, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => A
+  Z: () => x
 }), require("./388685.js"), require("./415506.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -104,14 +104,14 @@ let T = [],
     })
   };
 
-function A(e) {
+function x(e) {
   let {
     className: t,
     renderModalProps: n,
     heroArt: l,
     heroArtClassName: P,
-    modalDismissibleContent: A,
-    modalTopExtra: x,
+    modalDismissibleContent: x,
+    modalTopExtra: A,
     header: Z,
     headerClassName: w,
     subHeader: L,
@@ -173,7 +173,7 @@ function A(e) {
       })
     }
   }, [k, l.type]), i.useEffect(() => {
-    null != A && (0, b.kk)(A);
+    null != x && (0, b.kk)(x);
     let e = Date.now();
     return O.default.track(y.rMx.CHANGE_LOG_OPENED, {
       change_log_id: k
@@ -181,11 +181,11 @@ function A(e) {
       O.default.track(y.rMx.CHANGE_LOG_CLOSED, {
         change_log_id: k,
         seconds_open: Math.round((Date.now() - e) / 1e3)
-      }), null != A && (0, m.Q3)(A, {
+      }), null != x && (0, m.Q3)(x, {
         dismissAction: v.L.DISMISS
       })
     }
-  }, [A, k]), (0, r.jsx)(u.Y0X, {
+  }, [x, k]), (0, r.jsx)(u.Y0X, {
     "data-migration-pending": true,
     className: a()(C.root, C.largeBorderRadius, t),
     transitionState: B,
@@ -199,7 +199,7 @@ function A(e) {
           "data-migration-pending": true,
           onClick: async () => await G()
         })
-      }), null == x ? true : x(), (0, r.jsxs)(u.hzk, {
+      }), null == A ? true : A(), (0, r.jsxs)(u.hzk, {
         "data-migration-pending": true,
         className: C.content,
         children: [(0, r.jsx)(u.X6q, {

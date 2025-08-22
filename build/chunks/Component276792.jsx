@@ -65,8 +65,8 @@ function E(e) {
     {
       onClose: j
     } = C,
-    A = null != (y = null == (t = I.button) ? true : t.copy) ? y : m.intl.string(m.t.YScQSE),
-    x = (null == (n = I.button) ? true : n.buttonAction) === a.Wc.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button";
+    x = null != (y = null == (t = I.button) ? true : t.copy) ? y : m.intl.string(m.t.YScQSE),
+    A = (null == (n = I.button) ? true : n.buttonAction) === a.Wc.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button";
   switch (null == (E = I.button) ? true : E.buttonAction) {
     case a.Wc.OPEN_MARKETING_PAGE:
       v = () => {
@@ -147,12 +147,12 @@ function E(e) {
         onClick: () => {
           d.default.track(g.rMx.CHANGE_LOG_CTA_CLICKED, {
             change_log_id: P,
-            cta_type: x,
+            cta_type: A,
             seconds_open: Math.round((Date.now() - e) / 1e3),
             target: P
           }), v()
         },
-        text: A,
+        text: x,
         icon: i.SrA
       })
     },

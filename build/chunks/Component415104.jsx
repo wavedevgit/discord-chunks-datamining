@@ -90,21 +90,23 @@ function T(e) {
       event: g.rMx.QUEST_HOVER,
       properties: {
         content_id: d,
-        content_name: (0, s._b)(d)
+        content_name: (0, s._b)(d),
+        content_position: _
       },
       sourceQuestContent: O
     }), N && (0, f.loadVideoQuestModal)()
-  }, [R, a.id, d, N, O]), w = i.useCallback(() => {
+  }, [R, a.id, d, N, O, _]), w = i.useCallback(() => {
     T(false), R({
       questId: a.id,
       event: g.rMx.QUEST_HOVER_OFF,
       properties: {
         content_id: d,
-        content_name: (0, s._b)(d)
+        content_name: (0, s._b)(d),
+        content_position: _
       },
       sourceQuestContent: O
     })
-  }, [R, a.id, d, O]), D = i.useContext(p.t), {
+  }, [R, a.id, d, O, _]), D = i.useContext(p.t), {
     visibilityElementRef: x,
     almostVisibleInViewport: L
   } = I(null != (n = null == D || null == (t = D.current) ? true : t.getScrollerNode()) ? n : null);

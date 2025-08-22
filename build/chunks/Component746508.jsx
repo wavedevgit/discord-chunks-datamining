@@ -241,7 +241,7 @@ function eQ(e) {
     disabled: l
   } = e, o = i.useRef(null), {
     parentAnalyticsLocation: s
-  } = (0, x.ZP)(), c = (0, eo.Z)(), d = (0, ec.Z)(t), p = (0, u.e7)([C.ZP], () => null != C.ZP.getSelfEmbeddedActivityForLocation(C.ZP.getConnectedActivityLocation())), h = (0, X.Z)(t), {
+  } = (0, A.ZP)(), c = (0, eo.Z)(), d = (0, ec.Z)(t), p = (0, u.e7)([C.ZP], () => null != C.ZP.getSelfEmbeddedActivityForLocation(C.ZP.getConnectedActivityLocation())), h = (0, X.Z)(t), {
     reachedLimit: _,
     limit: O
   } = (0, es.Z)(t), E = i.useCallback(() => {
@@ -353,7 +353,7 @@ function eX(e) {
   } = e, i = (0, I.bp)(), {
     parentAnalyticsLocation: l,
     newestAnalyticsLocation: o
-  } = (0, x.ZP)(), s = i === eR.IlC.POPOUT, c = (0, T.KF)(t.id), p = (0, T.g5)(c), {
+  } = (0, A.ZP)(), s = i === eR.IlC.POPOUT, c = (0, T.KF)(t.id), p = (0, T.g5)(c), {
     userInActivity: f
   } = (0, u.cj)([C.ZP], () => ({
     userInActivity: null != C.ZP.getSelfEmbeddedActivityForChannel(t.id)
@@ -435,7 +435,7 @@ function eJ(e) {
     {
       parentAnalyticsLocation: d,
       analyticsLocations: f
-    } = (0, x.ZP)(),
+    } = (0, A.ZP)(),
     h = (0, u.e7)([eS.default], () => eS.default.getCurrentUser()),
     b = (0, u.Wu)([em.Z], () => em.Z.getAllActiveStreams()),
     _ = (0, ec.Z)(n),
@@ -453,12 +453,12 @@ function eJ(e) {
     P = E || o || y,
     j = null != I,
     {
-      Component: A,
+      Component: x,
       events: Z,
       play: w
     } = (0, p.P)(j ? "disable" : "enable");
   i.useEffect(() => () => w(), [w, j]);
-  let L = (0, r.jsx)(A, {
+  let L = (0, r.jsx)(x, {
     size: "md",
     color: "currentColor",
     className: a()(eG.buttonIcon, {
@@ -583,7 +583,7 @@ class e$ extends Chunk647438.PureComponent {
         let {
           "aria-label": t
         } = e;
-        return (0, r.jsx)(ex.Z, {
+        return (0, r.jsx)(eA.Z, {
           "aria-label": t,
           tooltipText: null,
           disabled: true,
@@ -703,7 +703,7 @@ class e$ extends Chunk647438.PureComponent {
         guild: n,
         channel: r
       } = this.props;
-      s()(null != r, "Channel is null during navigation click"), e.stopPropagation(), O.Z.channelListScrollTo(null != (t = null == n ? true : n.id) ? t : eR.ME, r.id), (0, R.v)(A.Z.RTC_PANEL, R.d.CHANNEL_LINK)
+      s()(null != r, "Channel is null during navigation click"), e.stopPropagation(), O.Z.channelListScrollTo(null != (t = null == n ? true : n.id) ? t : eR.ME, r.id), (0, R.v)(x.Z.RTC_PANEL, R.d.CHANNEL_LINK)
     }), eV(this, "handleChannelLinkContextMenu", e => {
       let {
         channel: t,
@@ -713,11 +713,11 @@ class e$ extends Chunk647438.PureComponent {
         let {
           default: e
         } = await n.e("56944").then(n.bind(n, 600830));
-        return n => (0, r.jsx)(x.Gt, {
+        return n => (0, r.jsx)(A.Gt, {
           value: i,
           children: (0, r.jsx)(e, eF(eH({}, n), {
             channel: t,
-            onInteraction: (0, D.u)("RTCConnectionMenu", A.Z.RTC_PANEL)
+            onInteraction: (0, D.u)("RTCConnectionMenu", x.Z.RTC_PANEL)
           }))
         })
       })
@@ -752,12 +752,12 @@ function e0(e) {
     ref: a
   } = e, {
     parentAnalyticsLocation: o
-  } = (0, x.ZP)(), {
+  } = (0, A.ZP)(), {
     play: s,
     Component: c,
     events: u
   } = (0, h.P)(l ? "disable" : "enable");
-  return i.useEffect(() => () => s(), [l, s]), (0, r.jsx)(ex.Z, eF(eH({}, t), {
+  return i.useEffect(() => () => s(), [l, s]), (0, r.jsx)(eA.Z, eF(eH({}, t), {
     ref: a,
     onClick: e => {
       (0, R.v)(o, R.d.KRISP, !l), t.onClick(e)
@@ -804,7 +804,7 @@ let e1 = (0, Chunk730749.Z)(function(e) {
       noiseCancellationError: ey.Z.isNoiseCancellationError(),
       canGoLive: (0, F.Z)(ey.Z)
     })),
-    h = (0, u.e7)([ey.Z, Y.Z], () => Y.Z.hasHotspot(eM.v.VOICE_PANEL_INTRODUCTION) && (0, eA.EO)(l) && !ey.Z.isInteractionRequired() && !(null == c ? true : c.isGuildStageVoice())),
+    h = (0, u.e7)([ey.Z, Y.Z], () => Y.Z.hasHotspot(eM.v.VOICE_PANEL_INTRODUCTION) && (0, ex.EO)(l) && !ey.Z.isInteractionRequired() && !(null == c ? true : c.isGuildStageVoice())),
     b = (0, u.e7)([eN.Z], () => null != o && eN.Z.hasVideo(o), [o]),
     _ = (0, u.e7)([em.Z], () => em.Z.getCurrentUserActiveStream()),
     O = (0, u.e7)([eE.Z], () => eE.Z.hasLayers()),
@@ -834,8 +834,8 @@ let e1 = (0, Chunk730749.Z)(function(e) {
   }, [E, y, Z]);
   let {
     analyticsLocations: L
-  } = (0, x.ZP)(A.Z.RTC_PANEL), R = (0, S.Z)(null != d ? d : eR.lds, null == c ? true : c.id), D = (0, P.Z)(null == c ? true : c.id);
-  return (0, r.jsx)(x.Gt, {
+  } = (0, A.ZP)(x.Z.RTC_PANEL), R = (0, S.Z)(null != d ? d : eR.lds, null == c ? true : c.id), D = (0, P.Z)(null == c ? true : c.id);
+  return (0, r.jsx)(A.Gt, {
     value: L,
     children: (0, r.jsxs)("div", {
       className: eG.wrapper,

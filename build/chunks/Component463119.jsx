@@ -31,7 +31,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk677372 = require("./677372.js");
 
-function A(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -50,7 +50,7 @@ function A(e) {
   return e
 }
 
-function x(e, t) {
+function A(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -129,7 +129,7 @@ let w = e => {
       }, [_, E, o, v, c]),
       C = N.Z5c.COLLECTIBLES_SHOP;
     return (0, r.jsxs)(r.Fragment, {
-      children: [y && (0, r.jsx)(L, {}), (0, r.jsx)(u.Qj, x(A({
+      children: [y && (0, r.jsx)(L, {}), (0, r.jsx)(u.Qj, A(x({
         selected: t,
         route: C,
         icon: null != a ? a : s.EOn,
@@ -143,7 +143,7 @@ let w = e => {
       }))]
     })
   },
-  D = e => (0, r.jsx)(R, x(A({}, e), {
+  D = e => (0, r.jsx)(R, A(x({}, e), {
     children: (0, r.jsx)(w, {})
   })),
   k = Chunk647438.memo(function(e) {
@@ -208,7 +208,7 @@ let w = e => {
       allowOverflow: true,
       hideOnClick: false,
       "aria-label": "string" == typeof V ? V : P.intl.string(P.t.rSXaxc),
-      children: e => (0, r.jsxs)(R, x(A(x(A({
+      children: e => (0, r.jsxs)(R, A(x(A(x({
         className: null != I.entryPointClassName ? (0, _.l)(j, I.entryPointClassName) : true
       }, C), {
         icon: I.entryPointIcon
@@ -254,7 +254,7 @@ let w = e => {
       delay: 100,
       hideOnClick: false,
       "aria-label": t.title(),
-      children: e => (0, r.jsx)(R, x(A({}, n, e), {
+      children: e => (0, r.jsx)(R, A(x({}, n, e), {
         children: (0, r.jsx)(w, {
           color: t.badgeColor
         })
@@ -275,7 +275,7 @@ let w = e => {
       g = p ? null == f ? true : f.srcDarkHovered : null == f ? true : f.srcLightHovered,
       m = p ? null == h || null == (t = h.hovered) ? true : t.dark : null == h || null == (n = h.hovered) ? true : n.light;
     return (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsxs)(R, x(A({}, s), {
+      children: [(0, r.jsxs)(R, A(x({}, s), {
         onClick: () => a(T.L.TAKE_ACTION),
         listItemRef: c,
         children: [(0, r.jsx)("div", {
@@ -317,21 +317,21 @@ let w = e => {
     };
     if (null != a) switch (a.type) {
       case C.k2.TOOLTIP:
-        return (0, r.jsx)(U, x(A({}, s), {
+        return (0, r.jsx)(U, A(x({}, s), {
           displayOptions: a
         }));
       case C.k2.COACHTIP:
-        return (0, r.jsx)(M, x(A({}, s), {
+        return (0, r.jsx)(M, A(x({}, s), {
           displayOptions: a
         }));
       case C.k2.BADGE:
-        return (0, r.jsx)(D, A({}, s));
+        return (0, r.jsx)(D, x({}, s));
       case C.k2.COACHMARK:
-        return (0, r.jsx)(G, x(A({
+        return (0, r.jsx)(G, A(x({
           dismissContent: o
         }, s), {
           displayOptions: a
         }))
     }
-    return (0, r.jsx)(R, A({}, s))
+    return (0, r.jsx)(R, x({}, s))
   }

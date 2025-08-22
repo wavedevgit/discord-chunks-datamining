@@ -60,7 +60,7 @@ function S(e) {
     backForwardButtons: j
   } = (0, d.t)({
     location: "AppTitleBar"
-  }), A = (0, h.isDesktop)() && j, x = (0, p.A)(), Z = (0, h.isMac)() ? v[x] : A ? I[x] : C[x];
+  }), x = (0, h.isDesktop)() && j, A = (0, p.A)(), Z = (0, h.isMac)() ? v[A] : x ? I[A] : C[A];
   return (0, r.jsxs)(c.Kqy, {
     gap: 0,
     direction: "horizontal",

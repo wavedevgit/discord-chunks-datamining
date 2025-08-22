@@ -96,11 +96,11 @@ let V = e => {
       ei = (0, T.Ng)(),
       el = (0, v.W)(),
       ea = (0, y.Vi)(),
-      eo = (0, A.HI)({
+      eo = (0, x.HI)({
         trialOffer: er
       }),
       es = (0, R.V)(),
-      ec = (0, A.eW)(),
+      ec = (0, x.eW)(),
       eu = C.ZP.useExperiment({
         location: "NitroTabButton"
       }),
@@ -145,7 +145,7 @@ let V = e => {
         upperCase: true
       })), ea) n = (0, r.jsx)(j.Z, {}), E = 0;
     else if (eo) {
-      let e = (0, A.$q)();
+      let e = (0, x.$q)();
       n = (0, r.jsx)(Z._y, {
         isTabSelected: z,
         badgeCopy: B.intl.string(B.t.OS9KPj),
@@ -182,7 +182,7 @@ let V = e => {
       _.default.track(U.rMx.NITRO_TAB_VISITED, {
         badge_decorator: E,
         has_premium: J
-      }), (0, A.ZL)()
+      }), (0, x.ZL)()
     });
     let eS = (0, r.jsx)(c.Qj, (H = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -222,7 +222,7 @@ let V = e => {
     })(Object(F)).forEach(function(e) {
       Object.defineProperty(H, e, Object.getOwnPropertyDescriptor(F, e))
     }), H));
-    return ec && eu.cohort === C.xI.Static ? (0, r.jsx)(x.X, {
+    return ec && eu.cohort === C.xI.Static ? (0, r.jsx)(A.X, {
       children: eS
     }) : ed ? (0, r.jsx)(w.C, {
       children: eS

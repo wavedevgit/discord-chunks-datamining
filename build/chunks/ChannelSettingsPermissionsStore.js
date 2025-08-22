@@ -66,12 +66,12 @@ function j(e) {
   return null != t && null == n[t] && (n[t] = d.we(t)), n
 }
 
-function A() {
+function x() {
   if (C = Chunk388610.Z.getChannel(), S = Chunk388610.Z.getCategory(), null == C) returnfalse;
   let e = C.getGuildId();
   I = v = j(C), null == v[N] && (N = module), i = null != S, r = Chunk700785.o4(C, S), T = null, y = false, E = Chunk981631.QZA.CLOSED, O.clear()
 }
-class x extends(l = Chunk442837.ZP.Store) {
+class A extends(l = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk388610.Z, Chunk592125.Z)
   }
@@ -112,16 +112,16 @@ class x extends(l = Chunk442837.ZP.Store) {
     return P
   }
 }
-m(x, "displayName", "ChannelSettingsPermissionsStore");
-let Z = new x(Chunk570140.Z, {
+m(A, "displayName", "ChannelSettingsPermissionsStore");
+let Z = new A(Chunk570140.Z, {
   CHANNEL_SETTINGS_SET_SECTION: function(e) {
     let {
       section: t
     } = e;
     if (null != C || t !== h.CoT.PERMISSIONS) returnfalse;
-    A()
+    x()
   },
-  CHANNEL_SETTINGS_PERMISSIONS_INIT: A,
+  CHANNEL_SETTINGS_PERMISSIONS_INIT: x,
   CHANNEL_SETTINGS_PERMISSIONS_UPDATE_PERMISSION: function(e) {
     let {
       id: t,
@@ -147,7 +147,7 @@ let Z = new x(Chunk570140.Z, {
     }
   },
   CHANNEL_SETTINGS_INIT: function() {
-    Chunk388610.Z.getSection() === Chunk981631.CoT.PERMISSIONS && A()
+    Chunk388610.Z.getSection() === Chunk981631.CoT.PERMISSIONS && x()
   },
   CHANNEL_SETTINGS_CLOSE: function() {
     E = Chunk981631.QZA.CLOSED, v = null, I = null, C = null, S = null, y = false, O.clear(), N = null, T = null
@@ -178,7 +178,7 @@ let Z = new x(Chunk570140.Z, {
     let {
       silent: t
     } = e;
-    t ? E = h.QZA.OPEN : (E = h.QZA.CLOSED, A())
+    t ? E = h.QZA.OPEN : (E = h.QZA.CLOSED, x())
   },
   CHANNEL_SETTINGS_PERMISSIONS_SET_ADVANCED_MODE: function(e) {
     let {

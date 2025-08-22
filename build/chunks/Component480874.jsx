@@ -38,17 +38,17 @@ function T() {
     {
       channelId: j
     } = (0, Chunk488634._)(),
-    A = Chunk647438.useCallback(() => {
+    x = Chunk647438.useCallback(() => {
       (0, Chunk481060.showToast)((0, Chunk481060.createToast)(Chunk388032.intl.string(Chunk388032.t.EDYbS0), Chunk481060.ToastType.FAILURE))
     }, []),
     {
-      rejectAll: x
+      rejectAll: A
     } = (0, Chunk486622.m)({
-      onError: A
+      onError: x
     }),
     Z = Chunk647438.useCallback(() => {
-      x(exports.map(e => e.channel.id))
-    }, [exports, x]);
+      A(exports.map(e => e.channel.id))
+    }, [exports, A]);
   (0, Chunk493773.ZP)(() => {
     Chunk626135.default.track(Chunk981631.rMx.SPAM_MESSAGE_REQUESTS_VIEWED, {
       num_spam_message_requests: require

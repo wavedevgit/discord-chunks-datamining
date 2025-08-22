@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 270759, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => A
+  Z: () => x
 }), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js"), require("./35282.js"), require("./704826.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -39,7 +39,7 @@ function j() {
     })
   })
 }
-let A = function(e) {
+let x = function(e) {
   let {
     initialSection: t
   } = e, n = (0, o.TH)(), l = (0, o.k6)();
@@ -54,9 +54,9 @@ let A = function(e) {
     d.Y(S.Z5c.FRIENDS), (0, O.e)("friends")
   }, []);
   let b = (0, s.e7)([E.Z], () => E.Z.theme),
-    A = (0, v.If)(),
+    x = (0, v.If)(),
     {
-      section: x,
+      section: A,
       rows: Z
     } = (0, s.cj)([y.ZP], () => y.ZP.getState()),
     w = (0, s.e7)([g.Z], () => g.Z.getSuggestionCount()),
@@ -85,13 +85,13 @@ let A = function(e) {
       id: S.pJs.PENDING,
       show: Z.filter(S.pJs.PENDING).length > 0,
       content: (0, r.jsxs)(r.Fragment, {
-        children: [T.intl.string(T.t.p6IHGB), A > 0 && (0, r.jsx)(c.mAB, {
-          count: A,
+        children: [T.intl.string(T.t.p6IHGB), x > 0 && (0, r.jsx)(c.mAB, {
+          count: x,
           className: P.badge
         })]
       }),
       ariaLabel: T.intl.formatToPlainString(T.t.OAC0Z2, {
-        count: A.toString()
+        count: x.toString()
       }),
       className: P.item
     }, {
@@ -137,7 +137,7 @@ let A = function(e) {
           children: T.intl.string(T.t.TdEu5e)
         }), (0, r.jsx)(m.Z.Divider, {}), (0, r.jsx)(c.njP, {
           "aria-label": T.intl.string(T.t.TdEu5e),
-          selectedItem: x,
+          selectedItem: A,
           type: "top-pill",
           onItemSelect: R,
           className: P.tabBar,
@@ -152,10 +152,10 @@ let A = function(e) {
     }), (0, r.jsxs)("div", {
       className: P.tabBody,
       children: [(0, r.jsx)(c.njP.Panel, {
-        id: x,
+        id: A,
         className: P.peopleColumn,
         "aria-labelledby": k,
-        children: x === S.pJs.ADD_FRIEND ? (0, r.jsx)(I.Z, {}) : (0, r.jsx)(C.Z, {
+        children: A === S.pJs.ADD_FRIEND ? (0, r.jsx)(I.Z, {}) : (0, r.jsx)(C.Z, {
           titleId: k
         })
       }), (0, r.jsx)("div", {

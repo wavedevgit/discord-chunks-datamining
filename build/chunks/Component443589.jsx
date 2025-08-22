@@ -38,8 +38,8 @@ function T(e) {
     analyticsLocations: P
   } = (0, d.ZP)(), {
     isHovered: j,
-    setIsHovered: A,
-    onMouseEnter: x,
+    setIsHovered: x,
+    onMouseEnter: A,
     onMouseLeave: Z
   } = (0, h.Z)(200, 300), {
     enableEmojiCTA: w
@@ -60,8 +60,8 @@ function T(e) {
     })
   }, [t, n]);
   let L = i.useCallback(e => {
-      "focus" !== e.type && x()
-    }, [x]),
+      "focus" !== e.type && A()
+    }, [A]),
     R = e => {
       e.stopPropagation();
       let r = g.Z.getUserAffinity(t.id);
@@ -98,13 +98,13 @@ function T(e) {
     align: "top",
     spacing: 9,
     onRequestClose: () => {
-      A(false)
+      x(false)
     },
     renderPopout: e => (0, r.jsx)(y.Z, {
       giftIntentType: n,
       premiumGiftIntentCardType: y.U.COACHMARK,
       recipientUser: t,
-      onMouseEnter: x,
+      onMouseEnter: A,
       onMouseLeave: Z,
       popoutPosition: e.position,
       analyticsPage: l,

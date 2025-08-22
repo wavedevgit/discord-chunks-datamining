@@ -505,7 +505,7 @@ er.Header = en, er.Body = e => {
   } = e, d = (0, s.e7)([k.Z], () => k.Z.getChannel(a.channelId)), [p, f] = (0, j.wq)(d), h = (0, i.jsxs)(u.P3F, {
     onClick: p ? o : true,
     className: Y.applicationStreamingPreviewWrapper,
-    children: [(0, i.jsx)(A.Z, {
+    children: [(0, i.jsx)(x.Z, {
       stream: a,
       className: Y.applicationStreamingPreviewSize
     }), (0, i.jsx)(u.Text, {

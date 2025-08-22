@@ -56,7 +56,7 @@ function j(e) {
   null == d && (d = N[e.applicationId] = new s.Xp).start(I, () => j(e)), t || (S[e.applicationId] = e, o.K.set(v, S))
 }
 
-function A() {
+function x() {
   let e = !(arguments.length > 0) || true === arguments[0] || arguments[0],
     t = Chunk594190.ZP.getVisibleRunningGames(),
     n = new Set;
@@ -77,13 +77,13 @@ function A() {
   for (let t of Object.keys(S)) require.has(exports) || P(S[exports], module)
 }
 
-function x() {
+function A() {
   for (let e of Object.keys(S)) P(S[module]);
   T = false
 }
 class Z extends(i = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk594190.ZP, Chunk581883.Z, Chunk283595.Z), this.syncWith([Chunk581883.Z], A)
+    this.waitFor(Chunk594190.ZP, Chunk581883.Z, Chunk283595.Z), this.syncWith([Chunk581883.Z], x)
   }
   getActivities() {
     return S
@@ -94,19 +94,19 @@ class Z extends(i = Chunk442837.ZP.Store) {
   configurable: true,
   writable: true
 }) : Z[l] = "ActivityTrackingStore", new Z(Chunk570140.Z, {
-  RUNNING_GAMES_CHANGE: () => A(),
+  RUNNING_GAMES_CHANGE: () => x(),
   CONNECTION_OPEN: function() {
     if (T) returnfalse;
     for (let e of Object.keys(S)) j(S[module]);
-    A(false), T = true
+    x(false), T = true
   },
   CONNECTION_CLOSED: function(e) {
     let {
       code: t
     } = e;
-    4004 === t && x()
+    4004 === t && A()
   },
-  LOGOUT: x,
+  LOGOUT: A,
   ACTIVITY_UPDATE_SUCCESS: function(e) {
     let {
       applicationId: t,

@@ -32,7 +32,7 @@ class b extends Chunk147913.Z {
   _fetch(e) {
     if ((0, d.cB)({
         location: f.dr.QUESTS_MANAGER
-      }) && !s.Z.isFetchingCurrentQuests)(0, o.xw)(), c.D.getConfig({
+      }) && !s.Z.isFetchingCurrentQuests)(0, o.xw)(), c.DL.getConfig({
       location: f.dr.QUESTS_MANAGER
     }).enabled && "focused" !== i.Z.getState() || (0, o.w)(l.Ok.DESKTOP_ACCOUNT_PANEL_AREA, e)
   }

@@ -633,8 +633,8 @@ let ef = (0, Chunk730749.Z)((0, Chunk666743.Z)(Chunk442837.ZP.connectStores([Chu
     }),
     isInTestMode: null != l && c,
     matureAgree: L.Z.didMatureAgree,
-    theme: A.Z.theme,
+    theme: x.Z.theme,
     locale: j.default.locale,
-    guild: null != s ? x.Z.getGuild(s.getGuildId()) : null
+    guild: null != s ? A.Z.getGuild(s.getGuildId()) : null
   }
 })(ep)))

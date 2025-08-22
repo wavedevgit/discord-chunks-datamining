@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 226323, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => A
+  Z: () => x
 }), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -97,8 +97,8 @@ function j(e) {
     {
       channel: O,
       user: j,
-      nick: A,
-      mute: x,
+      nick: x,
+      mute: A,
       deaf: Z,
       serverMute: w,
       serverDeaf: L
@@ -110,7 +110,7 @@ function j(e) {
     }),
     k = null != (t = O.getGuildId()) ? t : true,
     M = j.getAvatarURL(O.guild_id, 24),
-    U = null != A ? A : y.ZP.getName(j),
+    U = null != x ? x : y.ZP.getName(j),
     {
       icon: G,
       colorize: B,
@@ -132,7 +132,7 @@ function j(e) {
       serverDeaf: L,
       deaf: Z,
       serverMute: w,
-      mute: x,
+      mute: A,
       localMute: R
     })) ? l : {},
     H = null != V ? I.intl.formatToPlainString(I.t["1+MVBA"], {
@@ -208,7 +208,7 @@ function j(e) {
   })
 }
 
-function A(e) {
+function x(e) {
   let {
     voiceStates: t,
     channel: n,

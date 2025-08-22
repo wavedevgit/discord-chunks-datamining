@@ -595,7 +595,7 @@ let eU = (e, t) => {
 
 function eG(e) {
   var t;
-  return (0, N.C)("QuestUtils") && (null != (t = null == e ? true : e.length) ? t : 0) > 1
+  return (0, N.CD)("QuestUtils") && (null != (t = null == e ? true : e.length) ? t : 0) > 1
 }
 
 function eB(e) {

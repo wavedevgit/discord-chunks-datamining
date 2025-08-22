@@ -32,15 +32,15 @@ var Chunk951288 = require("./951288.js"),
 function P(e) {
   let {
     guildId: t
-  } = e, n = (0, a.e7)([m.Z], () => m.Z.getGuild(t), [t]), P = (0, a.e7)([h.Z], () => h.Z.isConnected()), j = (0, p.Z)(t), A = (0, O.Z)(t), x = (0, a.e7)([b.Z], () => b.Z.isSubscriptionFetching), Z = (0, _.f)(), {
+  } = e, n = (0, a.e7)([m.Z], () => m.Z.getGuild(t), [t]), P = (0, a.e7)([h.Z], () => h.Z.isConnected()), j = (0, p.Z)(t), x = (0, O.Z)(t), A = (0, a.e7)([b.Z], () => b.Z.isSubscriptionFetching), Z = (0, _.f)(), {
     shouldHideGuildPurchaseEntryPoints: w,
     restrictionsLoading: L
-  } = (0, f.uP)(t), R = null == n || !Z || x || L;
+  } = (0, f.uP)(t), R = null == n || !Z || A || L;
   (0, u.Tt)({
     subsection: N.intl.string(N.t["KzCF//"]),
     location: null == n ? true : n.name
   }), (0, c.Z)(l.tq ? "role-subscriptions-overview" : true);
-  let D = P && (null == n || !(j || A) || w && !L);
+  let D = P && (null == n || !(j || x) || w && !L);
   if (i.useEffect(() => {
       s.jg()
     }, []), i.useEffect(() => {

@@ -114,7 +114,7 @@ let eu = e => {
       selected: t
     } = e, n = ec(e, ["selected"]);
     let l = (0, c.JA)("friends"),
-      a = (0, x.If)(),
+      a = (0, A.If)(),
       o = (0, d.e7)([R.Z], () => R.Z.canShowFriendsTabBadge()),
       u = (0, d.e7)([_.Z], () => _.Z.useReducedMotion),
       {
@@ -261,7 +261,7 @@ let eu = e => {
   em = e => {
     let {
       isParentHovered: t
-    } = e, i = (0, A.gU)();
+    } = e, i = (0, x.gU)();
     return t ? (0, r.jsx)("div", {
       className: ea.familyCenterButtonContainer,
       children: (0, r.jsx)(J.bU, {

@@ -40,8 +40,8 @@ function C() {
     P = (0, Chunk726115.lg)(N),
     j = !Chunk128449.MU.has(N),
     {
-      searchQuery: A,
-      onSearchTextChange: x,
+      searchQuery: x,
+      onSearchTextChange: A,
       onClearSearch: Z,
       onSearchSubmit: w,
       isSearchVisible: L
@@ -56,7 +56,7 @@ function C() {
       tabsClassName: U
     } = (0, Chunk88693.U)({
       isSearchBarVisible: j,
-      isSearchBarEmpty: "" === A.trim(),
+      isSearchBarEmpty: "" === x.trim(),
       searchBarState: R,
       setSearchBarState: e => h.Z.setState({
         searchBarState: e
@@ -113,9 +113,9 @@ function C() {
           query: G
         })
       }), j && (0, Chunk951288.jsx)(Chunk680180.Z, {
-        query: A,
+        query: x,
         placeholder: Chunk388032.intl.string(Chunk388032.t["5h0QOD"]),
-        onTextChange: x,
+        onTextChange: A,
         onClear: Z,
         onSubmit: w,
         onCollapsedClick: k,

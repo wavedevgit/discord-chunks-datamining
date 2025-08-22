@@ -533,7 +533,7 @@ class tc extends Chunk647438.PureComponent {
           let {
             summaryId: e
           } = (0, l.parse)(t);
-          null != e && ex.ZP.setSelectedSummary(i, e)
+          null != e && eA.ZP.setSelectedSummary(i, e)
         }
         if (null != s && f) {
           let e = eV.ZP.getCurrentSidebarChannelId(n) !== s,

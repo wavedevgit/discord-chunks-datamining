@@ -147,7 +147,7 @@ function et(e) {
     size: "xs"
   }));
   let N = i.useCallback(e => {
-    (0, A.ZN)("fast-travel")
+    (0, x.ZN)("fast-travel")
   }, []);
   return null == t || "" === t ? null : (0, r.jsx)(u.ua7, {
     shouldShow: l,
@@ -255,7 +255,7 @@ let ei = Chunk647438.memo(function() {
   }, []);
   let v = (0, Chunk984802.Ll)(),
     T = (0, Chunk442837.e7)([Chunk451478.Z, Chunk522474.Z], () => (0, Chunk228488.rB)()),
-    A = function(e) {
+    x = function(e) {
       let {
         showBackForwardButtons: t,
         showCollapsedSidebarIcons: n,
@@ -278,9 +278,9 @@ let ei = Chunk647438.memo(function() {
         className: t,
         leading: (0, r.jsxs)(r.Fragment, {
           children: [a && (0, r.jsx)(b.Z, {
-            firstElementFocusJumpSectionProps: "BACK_FORWARD_NAVIGATION" === A ? e : true
+            firstElementFocusJumpSectionProps: "BACK_FORWARD_NAVIGATION" === x ? e : true
           }), _ && (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)(u.P3F, $(J({}, "SIDEBAR" === A ? e : {}), {
+            children: [(0, r.jsx)(u.P3F, $(J({}, "SIDEBAR" === x ? e : {}), {
               className: X.button,
               onClick: () => {
                 ee.setState({
@@ -299,13 +299,13 @@ let ei = Chunk647438.memo(function() {
               })
             })]
           }), O && (0, r.jsx)(P.Z, {
-            focusSectionProps: "NOTIFICATIONS_INBOX" === A ? e : true
+            focusSectionProps: "NOTIFICATIONS_INBOX" === x ? e : true
           })]
         }),
         title: (0, r.jsx)(er, {
           withFastTravel: o,
           quickSwitcherInsteadOfTitle: s,
-          focusSectionProps: "TITLEBAR_FAST_TRAVEL" === A ? e : true
+          focusSectionProps: "TITLEBAR_FAST_TRAVEL" === x ? e : true
         }),
         trailing: (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(y.Z, {
@@ -313,13 +313,13 @@ let ei = Chunk647438.memo(function() {
           }), (0, r.jsx)(h.Z, {
             canShowReminder: true,
             className: X.button
-          }), E && (0, r.jsx)(x.Z, $(J({}, "RECENTS" === A ? e : {}), {
+          }), E && (0, r.jsx)(A.Z, $(J({}, "RECENTS" === x ? e : {}), {
             className: X.button
           })), p ? (0, r.jsx)(C.Z, {
-            focusSectionProps: "HELP" === A ? e : true,
+            focusSectionProps: "HELP" === x ? e : true,
             className: X.button
           }) : (0, r.jsx)(I.Z, {
-            focusSectionProps: "HELP" === A ? e : true,
+            focusSectionProps: "HELP" === x ? e : true,
             className: X.button
           }), (0, r.jsx)(S.Z, {
             className: X.button

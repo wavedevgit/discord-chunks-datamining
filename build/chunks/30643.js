@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 30643, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => A
+  Z: () => x
 }), require("./388685.js");
 var Chunk237997 = require("./237997.js"),
   Chunk998502 = require("./998502.js"),
@@ -48,7 +48,7 @@ function T(e) {
 }
 let P = T({}, Chunk576027.A, Chunk443952.Z, Chunk266572.Z, Chunk121826.Z, Chunk753335.Z, Chunk109815.Z, Chunk567481.Z, Chunk498164.Z, Chunk705444.Z, Chunk885381.Z, Chunk111097.Z, Chunk197941.Z, Chunk662194.Z, Chunk462414.Z, Chunk177698.Z, Chunk908711.Z),
   j = T({}, Chunk13838.Z, Chunk350085.M, Chunk943687.f, Chunk910484.n),
-  A = {
+  x = {
     server: Chunk812967.Z,
     commands: P,
     events: j,

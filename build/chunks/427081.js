@@ -86,7 +86,7 @@ class N extends Chunk147913.Z {
         continue
       }
     }
-    let a = (0, Chunk937797.C)(Chunk46140.dr.QUESTS_MANAGER);
+    let a = (0, Chunk937797.CD)(Chunk46140.dr.QUESTS_MANAGER);
     for (let t of Object.keys(Chunk147913)) {
       let o = Chunk147913[exports];
       for (let i of require.values()) {
