@@ -83,7 +83,7 @@ function m(e) {
     if (R) return;
     let e = G ? {
       x: 10,
-      y: 16
+      y: 12
     } : {
       x: 10,
       y: 10
