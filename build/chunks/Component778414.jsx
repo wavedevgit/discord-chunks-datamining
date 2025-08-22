@@ -103,10 +103,10 @@ function E(e) {
     user: t,
     guildId: r,
     channelId: l
-  } = e, o = (0, g.Z)(t.id), {
+  } = e, o = (0, b.Z)(t.id), {
     widgets: p,
     isGameFetching: O
-  } = (0, b.Z)(o), m = (0, a.e7)([u.default], () => u.default.getId() === t.id), j = (() => {
+  } = (0, g.Z)(o), m = (0, a.e7)([u.default], () => u.default.getId() === t.id), j = (() => {
     let [e, t] = (0, a.Wu)([d.Z], () => [d.Z.ipCountryCode, d.Z.ipCountryCodeRequest]), r = (0, s.U)();
     return i.useEffect(() => {
       null == e && null == t && r && (0, c.GE)()

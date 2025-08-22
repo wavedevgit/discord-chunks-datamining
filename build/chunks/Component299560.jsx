@@ -58,7 +58,7 @@ function j(e) {
     placeholder: s,
     getAriaLabel: j
   } = m[t], y = "small" === l, v = i.useCallback(() => {
-    o || ((0, u.qH)(t), (0, d.L$)(b.qb.WIDGET_ADDED), null == r || r())
+    o || ((0, u.qH)(t), (0, d.L$)(g.qb.WIDGET_ADDED), null == r || r())
   }, [t, r, o]);
   return (0, n.jsxs)(c.P3F, {
     className: a()(O.addButtonContainer, y && O.sizeSmall, o && O.loading),
@@ -80,7 +80,7 @@ function j(e) {
       }), (0, n.jsx)(c.Text, {
         variant: "text-md/medium",
         color: "header-primary",
-        children: p.intl.string(g.NP[t])
+        children: p.intl.string(b.NP[t])
       })]
     })]
   })

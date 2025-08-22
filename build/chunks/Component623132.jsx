@@ -119,7 +119,7 @@ function x(e) {
     guildId: r,
     channelId: i,
     className: l
-  } = e, a = (0, g.Z)(t);
+  } = e, a = (0, b.Z)(t);
   return a.length > 0 ? (0, n.jsx)(s.Z, {
     label: p.intl.formatToPlainString(p.t.ujhJdH, {
       numFriends: a.length
@@ -139,7 +139,7 @@ function h(e) {
     game: a,
     widgetType: c,
     loading: s = false,
-    disableInteraction: g = false
+    disableInteraction: b = false
   } = e, {
     gameName: h = p.intl.string(p.t.GIWFlJ),
     imageSrc: P,
@@ -157,11 +157,11 @@ function h(e) {
       gameName: h,
       applicationId: w,
       userId: t.id,
-      disableInteraction: g,
+      disableInteraction: b,
       hideTooltip: true
     }), (0, n.jsxs)("div", {
       className: O.details,
-      children: [g ? (0, n.jsx)(i.X6q, j(m({}, I), {
+      children: [b ? (0, n.jsx)(i.X6q, j(m({}, I), {
         children: h
       })) : (0, n.jsx)(y, m({
         applicationId: w,
@@ -177,14 +177,14 @@ function h(e) {
         isCurrentUser: T,
         widgetType: c,
         applicationId: w,
-        disableInteraction: g
-      }), !g && (0, n.jsx)(x, {
+        disableInteraction: b
+      }), !b && (0, n.jsx)(x, {
         className: O.socialProof,
         applicationId: w,
         guildId: r,
         channelId: l
       })]
-    }), !g && T && (0, n.jsx)(b.Z, {
+    }), !b && T && (0, n.jsx)(g.Z, {
       game: a,
       widgetType: c,
       className: O.removeGameButton

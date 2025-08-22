@@ -18,7 +18,7 @@ function f(e) {
     widget: t,
     userId: r,
     className: l
-  } = e, f = i.useRef(null), b = () => {
+  } = e, f = i.useRef(null), g = () => {
     (0, s.G1)(r, t)
   };
   return (0, n.jsx)(o.yRy, {
@@ -41,7 +41,7 @@ function f(e) {
           children: (0, n.jsx)(o.sNh, {
             id: "flag-widget",
             label: u.intl.string(u.t.D4GvHB),
-            action: b,
+            action: g,
             color: "danger",
             icon: o.U65
           })

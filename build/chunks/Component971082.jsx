@@ -34,7 +34,7 @@ function u(e) {
     }
     return i
   }(e, ["label", "visuallyHideLabel", "className", "size", "maxUsers"]);
-  let b = (0, o.Dt)();
+  let g = (0, o.Dt)();
   return (0, n.jsxs)("div", {
     className: l()(i, s.container),
     children: [(0, n.jsx)(c.Z, function(e) {
@@ -55,17 +55,17 @@ function u(e) {
       }
       return e
     }({
-      "aria-labelledby": b,
+      "aria-labelledby": g,
       overflowCountClassName: s.overflowButton,
       size: u,
       maxUsers: d
     }, f)), r ? (0, n.jsx)(a.nn4, {
-      id: b,
+      id: g,
       children: t
     }) : (0, n.jsx)(a.Text, {
       variant: "text-xs/normal",
       color: "text-secondary",
-      id: b,
+      id: g,
       children: t
     })]
   })

@@ -61,8 +61,8 @@ function f(e) {
     tags: t,
     widgetType: r,
     applicationId: f,
-    ref: b
-  } = e, g = (0, i.useRef)(null), {
+    ref: g
+  } = e, b = (0, i.useRef)(null), {
     trackUserProfileAction: p
   } = (0, a.KZ)(), O = (0, i.useMemo)(() => null != t ? t : [], [t]), m = (0, i.useCallback)(function(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
@@ -89,7 +89,7 @@ function f(e) {
     }), (0, o.n$)(r, f, Array.from(t))
   }, [O, p, r, f]);
   return (0, n.jsx)(l.yRy, {
-    targetElementRef: g,
+    targetElementRef: b,
     position: "right",
     align: "top",
     renderPopout: e => {
@@ -106,8 +106,8 @@ function f(e) {
     children: e => {
       var t, r;
       return (0, n.jsx)("div", {
-        ref: e => (null != e && (g.current = e, b.current = e), () => {
-          g.current = null, b.current = null
+        ref: e => (null != e && (b.current = e, g.current = e), () => {
+          b.current = null, g.current = null
         }),
         children: (0, n.jsx)(l.P3F, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
