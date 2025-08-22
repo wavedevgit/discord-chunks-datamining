@@ -646,7 +646,7 @@ class X extends(r = Chunk647438.PureComponent) {
       try {
         let {
           token: n
-        } = await y.Z.verifyPhone(t, e, false);
+        } = await O.Z.verifyPhone(t, e, false);
         await f.Z.authorizeIPAddress(n), this.handleLogin()
       } catch (e) {
         null != e.body && null != e.body.message && this.setState({
@@ -663,7 +663,7 @@ class X extends(r = Chunk647438.PureComponent) {
       try {
         let {
           token: n
-        } = await y.Z.verifyPhone(this.getFullLogin(), e, false);
+        } = await O.Z.verifyPhone(this.getFullLogin(), e, false);
         t(G.Z5c.RESET, {
           search: (0, a.stringify)({
             token: n,
@@ -716,7 +716,7 @@ class X extends(r = Chunk647438.PureComponent) {
         })
       }
     }), W(this, "handleResendCode", () => {
-      y.Z.resendCode(this.getFullLogin())
+      O.Z.resendCode(this.getFullLogin())
     }), W(this, "handleReset", e => {
       null != e && e.preventDefault(), f.Z.loginReset(), this.setState({
         password: "",

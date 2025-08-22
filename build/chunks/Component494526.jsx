@@ -40,7 +40,7 @@ function T(e) {
     let e = new Image;
     e.src = Z, e.onload = () => l(true), e.onerror = () => l(true)
   }, [Z]), i.useEffect(() => {
-    n && u.uvj.announce(y.intl.string(y.t.j2p129))
+    n && u.uvj.announce(O.intl.string(O.t.j2p129))
   }, [n]), (0, r.jsx)("div", {
     className: S.qrCodeContainer,
     children: "" !== t && n ? (0, r.jsxs)(r.Fragment, {
@@ -57,7 +57,7 @@ function T(e) {
       })]
     }) : (0, r.jsx)("div", {
       className: S.qrCodeOverlay,
-      "aria-label": y.intl.string(y.t.BUGkVF),
+      "aria-label": O.intl.string(O.t.BUGkVF),
       "aria-busy": true,
       children: (0, r.jsx)(u.$jN, {
         className: S.qrCode,
@@ -96,11 +96,11 @@ function R(e) {
           text: 1 === t.step ? "https://discord.com/ra/".concat(t.fingerprint) : ""
         }), (0, r.jsx)(g.Dx, {
           className: C.marginBottom8,
-          children: y.intl.string(y.t.UPiHaG)
+          children: O.intl.string(O.t.UPiHaG)
         }), null != i ? (0, r.jsx)(P, {
           children: i
         }) : (0, r.jsx)(g.DK, {
-          children: y.intl.format(y.t["Qq+A6u"], {})
+          children: O.intl.format(O.t["Qq+A6u"], {})
         }), (0, r.jsx)(c.zx, {
           size: c.Ph.LARGE,
           look: c.iL.LINK,
@@ -116,7 +116,7 @@ function R(e) {
               conditionalMediationAbortController: e
             }).catch(() => {})
           })(o),
-          children: y.intl.string(y.t["/kpMDg"])
+          children: O.intl.string(O.t["/kpMDg"])
         })]
       });
     case 3:
@@ -130,12 +130,12 @@ function R(e) {
           user: e,
           size: u.EFr.SIZE_120,
           isMobile: true,
-          status: O.Sk.ONLINE
+          status: y.Sk.ONLINE
         }), (0, r.jsx)(g.Dx, {
           className: C.marginBottom8,
-          children: y.intl.string(y.t.apGCUV)
+          children: O.intl.string(O.t.apGCUV)
         }), (0, r.jsx)(g.DK, {
-          children: y.intl.format(y.t.Cbl5JC, {
+          children: O.intl.format(O.t.Cbl5JC, {
             username: "".concat(j.ZP.getUserTag(e))
           })
         }), (0, r.jsx)(c.zx, {
@@ -144,7 +144,7 @@ function R(e) {
           size: c.zx.Sizes.MIN,
           onClick: n,
           className: S.startOverButton,
-          children: y.intl.string(y.t.nOOhws)
+          children: O.intl.string(O.t.nOOhws)
         })]
       })
     }

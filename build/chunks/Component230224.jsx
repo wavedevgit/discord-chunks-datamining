@@ -1,7 +1,7 @@
 /** Chunk was on 27978 **/
 /** chunk id: 230224, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  GB: () => y,
+  GB: () => O,
   JI: () => N,
   UM: () => Z,
   V6: () => S,
@@ -47,12 +47,12 @@ let x = 100,
     } = e;
     return null != t
   },
-  O = e => !N(e) && (!!j(e) || null != e.inviter && !I(e) && !(e => {
+  y = e => !N(e) && (!!j(e) || null != e.inviter && !I(e) && !(e => {
     var t;
     let n = v(e);
     return (null != (t = null == n ? true : n.memberCount) ? t : 0) > x
   })(e)),
-  y = e => {
+  O = e => {
     let {
       guild: t,
       user: n,
@@ -81,7 +81,7 @@ function S(e) {
     textClassName: i,
     className: l
   } = e, s = v(n);
-  return null == s || O(n) || (null == n || null == (t = n.guild) ? true : t.id) === g.fQ ? null : (0, r.jsx)(a.EJ, {
+  return null == s || y(n) || (null == n || null == (t = n.guild) ? true : t.id) === g.fQ ? null : (0, r.jsx)(a.EJ, {
     className: o()(_.activityCount, l),
     online: s.onlineCount,
     total: s.memberCount,
@@ -94,7 +94,7 @@ function C(e) {
   let {
     invite: t,
     showBigUserIcon: n
-  } = e, l = i.useMemo(() => n ? null : E(t) && null != t.target_user ? d.ZP.getUserAvatarURL(t.target_user) : O(t) && null != t.inviter ? d.ZP.getUserAvatarURL(t.inviter) : null, [t, n]), o = m.intl.string(m.t["3rE1Pz"]);
+  } = e, l = i.useMemo(() => n ? null : E(t) && null != t.target_user ? d.ZP.getUserAvatarURL(t.target_user) : y(t) && null != t.inviter ? d.ZP.getUserAvatarURL(t.inviter) : null, [t, n]), o = m.intl.string(m.t["3rE1Pz"]);
   if (b(t)) {
     var c, u;
     o = (null == (c = t.channel) ? true : c.name) != null && (null == (u = t.inviter) ? true : u.username) != null ? m.intl.format(m.t.Lu4h19, {
@@ -102,7 +102,7 @@ function C(e) {
     }) : m.intl.string(m.t.OsdY8P)
   } else E(t) && null != t.target_user ? o = m.intl.formatToPlainString(m.t.x2L32d, {
     username: t.target_user.username
-  }) : I(t) ? o = m.intl.string(m.t["FDsl+P"]) : O(t) && null != t.inviter && (o = m.intl.format(m.t.spU2mJ, {
+  }) : I(t) ? o = m.intl.string(m.t["FDsl+P"]) : y(t) && null != t.inviter && (o = m.intl.format(m.t.spU2mJ, {
     username: h.ZP.getFormattedName(t.inviter)
   }));
   return (0, r.jsxs)("div", {

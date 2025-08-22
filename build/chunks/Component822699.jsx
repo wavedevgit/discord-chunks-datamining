@@ -1,7 +1,7 @@
 /** Chunk was on 27978 **/
 /** chunk id: 822699, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => ey
+  default: () => eO
 }), require("./35282.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -112,7 +112,7 @@ let el = (0, Chunk320830.Z)(Chunk781428.Z),
   ej = (0, Chunk320830.Z)(Chunk881317.Z),
   eI = (0, Chunk320830.Z)(Chunk424044.Z),
   eN = (0, Chunk320830.Z)(Chunk521379.Z);
-class eO extends Chunk647438.PureComponent {
+class ey extends Chunk647438.PureComponent {
   static getDerivedStateFromProps(e, t) {
     var n;
     let {
@@ -350,7 +350,7 @@ class eO extends Chunk647438.PureComponent {
     })
   }
 }
-let ey = Chunk442837.ZP.connectStores([Chunk314897.default, Chunk701190.Z, Chunk82142.Z, Chunk353926.Z, Chunk409059.Z], e => {
+let eO = Chunk442837.ZP.connectStores([Chunk314897.default, Chunk701190.Z, Chunk82142.Z, Chunk353926.Z, Chunk409059.Z], e => {
   var t, n, r;
   let {
     match: i,
@@ -358,7 +358,7 @@ let ey = Chunk442837.ZP.connectStores([Chunk314897.default, Chunk701190.Z, Chunk
   } = e, o = null == i || null == (t = i.params) ? true : t.inviteCode, s = ee.a ? ee.Y : true, a = null != o ? (0, I.mb)(o, l.search) : s, c = null == i || null == (n = i.params) ? true : n.giftCode, u = null == i || null == (r = i.params) ? true : r.guildTemplateCode;
   return {
     inviteKey: a,
-    isAuthenticated: y.default.isAuthenticated(),
+    isAuthenticated: O.default.isAuthenticated(),
     giftCode: c,
     guildTemplateCode: u,
     gift: null != c ? S.Z.get(c) : null,
@@ -366,4 +366,4 @@ let ey = Chunk442837.ZP.connectStores([Chunk314897.default, Chunk701190.Z, Chunk
     guildTemplate: null != u ? E.Z.getGuildTemplate(u) : null,
     hasLoadedExperiments: v.Z.hasLoadedExperiments
   }
-})(eO)
+})(ey)

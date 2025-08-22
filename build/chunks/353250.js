@@ -1,16 +1,19 @@
-/** Chunk was on 61624 **/
-/** chunk id: 353250, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 353250, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.r(exports), require.d(exports, {
-  CaptchaCancelError: () => c,
-  CaptchaError: () => l,
-  emitCaptchaDistributionMetric: () => i,
-  extractCaptchaPropsFromResponse: () => s
+  CaptchaCancelError: () => l,
+  CaptchaError: () => a,
+  emitCaptchaDistributionMetric: () => s,
+  extractCaptchaPropsFromResponse: () => o
 }), require("./415506.js");
-var r, Chunk644947 = require("./644947.js"),
+var Chunk644947 = require("./644947.js"),
   Chunk234888 = require("./234888.js"),
-  l = ((r = {}).CANCEL = "cancel", r.ERROR = "error", r.EXPIRED = "expired", r);
+  a = function(e) {
+    return e.CANCEL = "cancel", e.ERROR = "error", e.EXPIRED = "expired", e
+  }({});
 
-function s(e) {
+function o(e) {
   var t;
   return {
     captchaService: e.captcha_service,
@@ -25,10 +28,10 @@ function s(e) {
   }
 }
 
-function i(e) {
-  (0, a._8)() && setTimeout(() => (0, a.Zq)(), o.i), (0, a.s$)(e)
+function s(e) {
+  (0, r._8)() && setTimeout(() => (0, r.Zq)(), i.i), (0, r.s$)(e)
 }
-class c extends Error {
+class l extends Error {
   constructor() {
     super("Captcha cancelled")
   }

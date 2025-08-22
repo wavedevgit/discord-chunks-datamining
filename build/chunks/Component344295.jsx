@@ -358,10 +358,10 @@ let W = Chunk442837.ZP.connectStores([Chunk701190.Z, Chunk896797.Z, Chunk314897.
     inviteKey: n
   } = e;
   return {
-    invite: null != (t = y.Z.getInvite(n)) ? t : {},
+    invite: null != (t = O.Z.getInvite(n)) ? t : {},
     nativeAppState: x.Z.getState(n),
     authenticated: N.default.isAuthenticated(),
-    defaultRoute: O.Z.defaultRoute,
+    defaultRoute: y.Z.defaultRoute,
     isUnderage: f.Z.isUnderageAnonymous()
   }
 })(H)

@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk271922 = require("./271922.js");
 
-function O(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -45,7 +45,7 @@ function O(e) {
   return e
 }
 
-function y(e, t) {
+function O(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -155,7 +155,7 @@ function T(e) {
   let {
     invite: t
   } = e;
-  return null != t && (0, v.JI)(t) ? (0, r.jsx)(A, y(O({
+  return null != t && (0, v.JI)(t) ? (0, r.jsx)(A, O(y({
     startAnimHeightPx: 0,
     innerStyle: () => N.guildInfoInner
   }, e), {
@@ -173,7 +173,7 @@ function P(e) {
     2: N.inviteCardInnerError,
     0: N.inviteCardInnerLoading
   };
-  return (0, r.jsx)(A, y(O({
+  return (0, r.jsx)(A, O(y({
     startAnimHeightPx: 200,
     innerStyle: e => n[e]
   }, e), {
@@ -181,11 +181,11 @@ function P(e) {
       if (null == t) return (0, r.jsx)(S, {});
       switch (n) {
         case 1:
-          return (0, r.jsx)(E.Z, y(O({}, e), {
+          return (0, r.jsx)(E.Z, O(y({}, e), {
             invite: t
           }));
         case 2:
-          return (0, r.jsx)(Z, y(O({}, e), {
+          return (0, r.jsx)(Z, O(y({}, e), {
             invite: t
           }));
         default:
@@ -214,9 +214,9 @@ function R(e) {
     className: N.splashBackground,
     style: l,
     contentClassName: N.centerAuthBoxContent,
-    children: [(0, r.jsx)(P, y(O({}, e), {
+    children: [(0, r.jsx)(P, O(y({}, e), {
       onAcceptInvite: n
-    })), (0, r.jsx)(T, O({}, e))]
+    })), (0, r.jsx)(T, y({}, e))]
   })
 }
 

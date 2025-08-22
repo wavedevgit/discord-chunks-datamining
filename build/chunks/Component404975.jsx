@@ -42,15 +42,21 @@ function d(e) {
 }
 
 function f(e) {
+  var t;
   let {
-    section: t
-  } = e;
-  return (0, i.jsx)("ul", {
+    section: n
+  } = e, l = null == (t = n.useTitle) ? true : t.call(n);
+  return (0, i.jsxs)("ul", {
     className: c.section,
-    children: t.layout.map(e => (0, i.jsx)("li", {
+    children: [null != l && (0, i.jsx)(s.X6q, {
+      className: c.label,
+      variant: "heading-sm/medium",
+      color: "text-tertiary",
+      children: l
+    }), n.layout.map(e => (0, i.jsx)("li", {
       children: (0, i.jsx)(u.Z, {
         node: e
       })
-    }, e.key))
+    }, e.key))]
   })
 }

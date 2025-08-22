@@ -4,7 +4,7 @@
 let r;
 require.d(exports, {
   Ex: () => eR,
-  ZP: () => t0
+  ZP: () => t1
 }), require("./388685.js"), require("./415506.js"), require("./539854.js"), require("./997841.js");
 var i, Chunk392711 = require("./392711.js"),
   Chunk913527 = require("./913527.js"),
@@ -14,8 +14,9 @@ var i, Chunk392711 = require("./392711.js"),
   Chunk846519 = require("./846519.js"),
   Chunk283693 = require("./283693.js"),
   Chunk570140 = require("./570140.js"),
-  Chunk317381 = require("./317381.js"),
-  Chunk358221 = require("./358221.js"),
+  Chunk317381 = require("./317381.js");
+require("./15624.js");
+var Chunk358221 = require("./358221.js"),
   Chunk702321 = require("./702321.js"),
   Chunk430198 = require("./430198.js"),
   Chunk710845 = require("./710845.js"),
@@ -847,7 +848,7 @@ function eJ(e) {
   if (null == n || !n.isForumPost() || null == n.parent_id) return;
   let r = n.parent_id,
     i = eM.get(r);
-  N.Z.hasLoaded(n.guild_id) && G.default.keys(N.Z.getThreadsForParent(n.guild_id, r)).every(e => t$.hasOpenedThread(e) || 0 > G.default.compare(e, i.ackMessageId)) && i.ack({
+  N.Z.hasLoaded(n.guild_id) && G.default.keys(N.Z.getThreadsForParent(n.guild_id, r)).every(e => t0.hasOpenedThread(e) || 0 > G.default.compare(e, i.ackMessageId)) && i.ack({
     trackAnalytics: true,
     location: {
       section: ee.jXE.CHANNEL,
@@ -1483,7 +1484,7 @@ function tH(e) {
     context: n,
     onFinished: r
   } = e;
-  tF(t.filter(e => null != e.messageId && t$.hasUnreadOrMentions(e.channelId, e.readStateType)), n, r)
+  tF(t.filter(e => null != e.messageId && t0.hasUnreadOrMentions(e.channelId, e.readStateType)), n, r)
 }
 
 function tY(e) {
@@ -1557,7 +1558,18 @@ function tQ(e) {
   if (null == r.ackMessageId) returnfalse;
   r.ackMessageId = true
 }
-class tJ extends(i = Chunk442837.ZP.Store) {
+
+function tJ(e) {
+  let {
+    state: t
+  } = e;
+  return t === ee.$7l.ACTIVE && eQ({
+    section: ee.jXE.CHANNEL,
+    object: ee.qAy.ACK_APP_FOREGROUND,
+    objectType: ee.Qqv.ACK_AUTOMATIC
+  }, X.Z.getChannelId())
+}
+class t$ extends(i = Chunk442837.ZP.Store) {
   initialize() {
     let e = [Chunk796974.Z, Chunk594174.default, Chunk430824.Z, Chunk486472.Z, Chunk592125.Z, Chunk944486.Z, Chunk375954.Z, Chunk496675.Z, Chunk358221.Z, Chunk344185.Z, Chunk569471.Z, Chunk433355.ZP, Chunk924301.ZP, Chunk353926.Z, Chunk430198.Z, Chunk9156.ZP, Chunk451478.Z, Chunk140155.Z, Chunk355298.Z, Chunk581883.Z, Chunk333984.Z];
     this.waitFor(...module), this.syncWith([Chunk433355.ZP], tT)
@@ -1696,8 +1708,8 @@ class tJ extends(i = Chunk442837.ZP.Store) {
     return ey.getAllChannelIdsForWindowId(e)
   }
 }
-eo(tJ, "displayName", "ReadStateStore");
-let t$ = new tJ(Chunk570140.Z, {
+eo(t$, "displayName", "ReadStateStore");
+let t0 = new t$(Chunk570140.Z, {
     BACKGROUND_SYNC_CHANNEL_MESSAGES: tq,
     CONNECTION_OPEN: e$,
     CONNECTION_OPEN_SUPPLEMENTAL: e4,
@@ -1752,6 +1764,7 @@ let t$ = new tJ(Chunk570140.Z, {
     CLEAR_OLDEST_UNREAD_MESSAGE: tK,
     TRY_ACK: tz,
     MESSAGE_REQUEST_ACK: tX,
-    MESSAGE_REQUEST_CLEAR_ACK: tQ
+    MESSAGE_REQUEST_CLEAR_ACK: tQ,
+    APP_STATE_UPDATE: tJ
   }),
-  t0 = t$
+  t1 = t0

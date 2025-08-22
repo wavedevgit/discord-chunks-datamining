@@ -251,13 +251,14 @@ function B(e) {
               questContentPosition: s,
               questContentRowIndex: f,
               sourceQuestContent: v
-            }), b ? ((0, T.R)(N.dr.QUEST_HOME_DESKTOP) ? await (0, g.AH)(n.id, {
+            }), b ? (0, T.R)(N.dr.QUEST_HOME_DESKTOP) ? await (0, S.enrollAndStartVideoQuestWithErrorHandling)(n, {
               questContent: o,
               questContentCTA: t,
+              sourceQuestContent: v,
+              sourceQuestContentCTA: p.jZ.ACCEPT_QUEST,
               questContentPosition: s,
-              questContentRowIndex: f,
-              sourceQuestContent: v
-            }) : (0, g.AH)(n.id, {
+              questContentRowIndex: f
+            }) : ((0, g.AH)(n.id, {
               questContent: o,
               questContentCTA: t,
               questContentPosition: s,

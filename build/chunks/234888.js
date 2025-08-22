@@ -1,8 +1,9 @@
-/** Chunk was on 61624 **/
-/** chunk id: 234888, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 234888, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  A: () => a,
+  A: () => i,
   i: () => r
 });
 let r = 3e4,
-  a = "Captcha"
+  i = "Captcha"
