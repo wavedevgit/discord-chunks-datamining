@@ -109,12 +109,10 @@ function w(e) {
     }), H ? (0, r.jsx)(E.Z, {
       user: t,
       currentUser: n,
-      displayProfile: w,
       onOpenUserProfileModal: D
     }) : (0, r.jsx)(_.Z, {
       user: t,
       currentUser: n,
-      displayProfile: w,
       className: A.card
     }), (0, r.jsxs)(S.Z.Overlay, {
       className: A.overlay,

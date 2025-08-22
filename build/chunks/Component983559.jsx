@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk687158 = require("./687158.js"),
   Chunk510659 = require("./510659.jsx"),
   Chunk892001 = require("./892001.js"),
-  Chunk113557 = require("./113557.jsx"),
+  Chunk899007 = require("./899007.jsx"),
   Chunk867176 = require("./867176.jsx"),
   Chunk451834 = require("./451834.jsx"),
   Chunk502762 = require("./502762.jsx"),
@@ -118,14 +118,12 @@ function w(e) {
                 userId: n.id,
                 className: N.toast
               }), (0, r.jsx)(_.Z, {
-                location: "UserProfileSidebar",
                 user: n,
                 displayProfile: M,
                 channelId: T.id,
                 themeType: Z.l.SIDEBAR,
                 onOpenProfile: w ? true : V
               }), (0, r.jsx)(S.Z, {
-                location: "UserProfileSidebar",
                 user: n,
                 channelId: T.id,
                 themeType: Z.l.SIDEBAR,

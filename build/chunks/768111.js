@@ -19,10 +19,10 @@ function u(e) {
   } = e, {
     mutualFriendsCount: u,
     mutualGuilds: f
-  } = (0, l.Z)(n), m = null == f ? true : f.length, p = (0, o.Z)(n), b = (0, r.k)({
+  } = (0, l.Z)(n), m = null == f ? true : f.length, p = (0, o.Z)(n), x = (0, r.k)({
     location: "useUserProfileModalV2TabBarItems"
-  }), x = (0, i.Z)(n.id), g = [], h = n.id === (null == t ? true : t.id), j = x.length > 0;
-  return b && (j || h) && g.push({
+  }), b = (0, i.Z)(n.id), g = [], h = n.id === (null == t ? true : t.id), j = b.length > 0;
+  return x && (j || h) && g.push({
     text: d.intl.string(d.t.laViw8),
     section: s.oh.WIDGETS,
     subsection: true

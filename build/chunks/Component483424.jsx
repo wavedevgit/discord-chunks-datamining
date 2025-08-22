@@ -13,7 +13,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk369566 = require("./369566.js"),
   Chunk29899 = require("./29899.js"),
   Chunk151545 = require("./151545.jsx"),
-  Chunk493043 = require("./493043.jsx"),
+  Chunk769140 = require("./769140.jsx"),
   Chunk864141 = require("./864141.jsx"),
   Chunk231338 = require("./231338.js");
 
@@ -21,46 +21,42 @@ function p(e) {
   let {
     user: t,
     currentUser: n,
-    displayProfile: p,
-    guildId: h,
-    className: m,
-    onClose: g
+    guildId: p,
+    className: h,
+    onClose: m
   } = e, {
-    live: E,
-    stream: b
-  } = (0, l.Z)(t.id), [y] = E, {
-    voiceChannel: O
+    live: g,
+    stream: E
+  } = (0, l.Z)(t.id), [b] = g, {
+    voiceChannel: y
   } = (0, c.Z)({
     userId: t.id,
-    guildId: h
-  }), v = t.id === n.id, I = (0, i.e7)([s.Z, o.Z], () => {
-    let e = v ? s.Z.getStatus() : o.Z.getStatus(t.id, h);
+    guildId: p
+  }), O = t.id === n.id, v = (0, i.e7)([s.Z, o.Z], () => {
+    let e = O ? s.Z.getStatus() : o.Z.getStatus(t.id, p);
     return e === _.Sk.OFFLINE || e === _.Sk.INVISIBLE
   }), {
-    voiceActivityStatusEnabled: T
+    voiceActivityStatusEnabled: I
   } = (0, a.U)({
     location: "UserProfileFeaturedActivity"
   });
-  return I || null == b ? I || null == y ? T && !I && null != O ? (0, r.jsx)(f.Z, {
+  return v || null == E ? v || null == b ? I && !v && null != y ? (0, r.jsx)(f.Z, {
     user: t,
     currentUser: n,
-    voiceChannel: O,
-    className: m,
-    onClose: g
+    voiceChannel: y,
+    className: h,
+    onClose: m
   }) : null : (0, r.jsx)(u.Z, {
     user: t,
     currentUser: n,
-    activity: y,
-    profileGuildId: null == p ? true : p.guildId,
-    className: m,
-    onClose: g
+    activity: b,
+    className: h,
+    onClose: m
   }) : (0, r.jsx)(d.Z, {
-    location: "UserProfileFeaturedActivity",
     user: t,
     currentUser: n,
-    stream: b,
-    profileGuildId: null == p ? true : p.guildId,
-    className: m,
-    onClose: g
+    stream: E,
+    className: h,
+    onClose: m
   })
 }

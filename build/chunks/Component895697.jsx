@@ -94,14 +94,12 @@ function R(e) {
     }), G ? (0, r.jsx)(g.Z, {
       user: t,
       currentUser: n,
-      displayProfile: R,
       guildId: null == P ? true : P.id,
       onOpenUserProfileModal: D,
       onClose: L
     }) : (0, r.jsx)(p.Z, {
       user: t,
       currentUser: n,
-      displayProfile: R,
       guildId: null == P ? true : P.id,
       onClose: L
     }), (null == M ? true : M.popularApplicationCommandIds) != null && null != k && (0, r.jsx)(f.Z, {

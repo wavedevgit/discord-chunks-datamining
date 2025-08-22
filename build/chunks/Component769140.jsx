@@ -140,7 +140,7 @@ function Z(e) {
         maxUsers: w.W,
         size: s.EFr.SIZE_16,
         onClickOverflow: e => {
-          e.stopPropagation(), null == X || X({
+          null == e || e.stopPropagation(), null == X || X({
             action: "PRESS_VOICE_CHANNEL_AVATARS"
           })
         },

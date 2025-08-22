@@ -142,7 +142,6 @@ function P(e) {
               themeType: S.l.POPOUT,
               onOpenProfile: M ? true : Y
             }), (0, r.jsx)(v.Z, {
-              location: "BotUserProfilePopout",
               user: t,
               themeType: S.l.POPOUT,
               onCloseProfile: L,

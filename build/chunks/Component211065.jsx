@@ -303,7 +303,7 @@ class D extends Chunk647438.PureComponent {
         analyticsContext: t
       }), e()
     }), w(this, "handleKeyPress", t => {
-      t.which === x.yXg.ENTER && this.handleSaveStatus()
+      t.which === C.yXg.ENTER && this.handleSaveStatus()
     }), w(this, "renderEmojiPicker", t => {
       let {
         closePopout: e

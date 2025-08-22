@@ -48,68 +48,67 @@ function E(e) {
     openedAt: M,
     onClose: k,
     sourceAnalyticsLocations: G = []
-  } = e, V = E === T.ME ? true : E, F = (0, u.ZP)(n.id, V), Y = s.ZP.getName(V, S, n), z = (0, a.Dt)(), {
-    analyticsLocations: W
+  } = e, F = E === T.ME ? true : E, V = (0, u.ZP)(n.id, F), W = s.ZP.getName(F, S, n), Y = (0, a.Dt)(), {
+    analyticsLocations: z
   } = (0, c.ZP)([...G, i.Z.USER_PROFILE_MODAL]), K = (0, d.ZB)({
     layout: "MODAL",
     userId: n.id,
     sourceSessionId: D,
-    guildId: V,
+    guildId: F,
     channelId: S,
     messageId: w,
     roleId: B
   }), H = (0, Z.Z)(n);
   return (0, r.jsx)(c.Gt, {
-    value: W,
+    value: z,
     children: (0, r.jsx)(d.Mt, {
       value: K,
       openedAt: M,
-      fetchStartedAt: null == F ? true : F.fetchStartedAt,
-      fetchEndedAt: null == F ? true : F.fetchEndedAt,
-      isLoaded: null == F ? true : F.isLoaded,
+      fetchStartedAt: null == V ? true : V.fetchStartedAt,
+      fetchEndedAt: null == V ? true : V.fetchEndedAt,
+      isLoaded: null == V ? true : V.isLoaded,
       children: (0, r.jsx)(o.Y0X, {
         "data-migration-pending": true,
         transitionState: U,
         className: C.root,
         hideShadow: true,
-        "aria-labelledby": z,
+        "aria-labelledby": Y,
         parentComponent: "BotUserProfileModal",
         children: (0, r.jsx)(o.y5t, {
           component: (0, r.jsx)(o.nn4, {
             children: (0, r.jsx)(o.H, {
-              id: z,
-              children: N.intl.format(N.t.KRe1Fh, {
-                name: Y
+              id: Y,
+              children: A.intl.format(A.t.KRe1Fh, {
+                name: W
               })
             })
           }),
-          children: (0, r.jsxs)(x.Z, {
+          children: (0, r.jsxs)(b.Z, {
             user: n,
-            displayProfile: F,
-            themeType: A.l.MODAL,
+            displayProfile: V,
+            themeType: N.l.MODAL,
             children: [(0, r.jsx)(_.Z, {
               children: (0, r.jsx)(j.Z, {
                 user: n,
-                guildId: V,
+                guildId: F,
                 onCloseProfile: k
               })
             }), (0, r.jsxs)("div", {
               children: [(0, r.jsx)(p.Z, {
                 user: n,
-                displayProfile: F,
-                themeType: A.l.MODAL
+                displayProfile: V,
+                themeType: N.l.MODAL
               }), (0, r.jsxs)("div", {
                 className: C.headerInner,
                 children: [(0, r.jsx)(f.Z, {
                   user: n,
-                  displayProfile: F,
-                  guildId: V,
+                  displayProfile: V,
+                  guildId: F,
                   channelId: S,
-                  themeType: A.l.MODAL
-                }), (0, r.jsx)(I.Z, {
-                  location: "BotUserProfileModal",
+                  themeType: N.l.MODAL
+                }), (0, r.jsx)(O.Z, {
                   user: n,
-                  themeType: A.l.MODAL,
+                  themeType: N.l.MODAL,
                   hasEntered: U === o.Dvm.ENTERED,
                   onCloseProfile: k,
                   disableToolbar: true
@@ -127,7 +126,7 @@ function E(e) {
                     tooltipContainerClassName: C.messageIconButton
                   }), (0, r.jsx)(v.Z, {
                     user: n,
-                    guildId: V
+                    guildId: F
                   }), (0, r.jsx)(h.Z, {
                     user: n
                   })]
@@ -138,23 +137,23 @@ function E(e) {
               children: [(0, r.jsx)(g.Z, {
                 className: C.username,
                 user: n,
-                nickname: Y,
-                pronouns: null == F ? true : F.pronouns,
+                nickname: W,
+                pronouns: null == V ? true : V.pronouns,
                 nicknameVariant: "heading-xl/bold",
-                nicknameIcons: (0, r.jsx)(b.Z, {
+                nicknameIcons: (0, r.jsx)(x.Z, {
                   size: "sm",
                   userId: n.id
                 }),
                 tags: (0, r.jsx)(m.Z, {
-                  displayProfile: F,
-                  themeType: A.l.MODAL,
+                  displayProfile: V,
+                  themeType: N.l.MODAL,
                   onClose: k
                 })
-              }), (0, r.jsx)(O.Z, {
+              }), (0, r.jsx)(I.Z, {
                 user: n,
                 currentUser: t,
-                displayProfile: F,
-                guildId: V,
+                displayProfile: V,
+                guildId: F,
                 items: H,
                 initialSection: null != L ? L : P.oh.BOT_INFO,
                 initialSubsection: R,

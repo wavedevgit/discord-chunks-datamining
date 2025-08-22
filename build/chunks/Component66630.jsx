@@ -49,7 +49,7 @@ function B(t) {
     sourceAnalyticsLocations: F = [],
     prompt: Y = null,
     showLabelSelectorNewTooltip: H = false
-  } = t, W = (0, C.p)({
+  } = t, W = (0, x.p)({
     location: "CustomStatusModalWithPreview"
   }), z = (0, O.P)({
     location: "CustomStatusModalWithPreview"
@@ -86,7 +86,7 @@ function B(t) {
     null == (t = tn.current) || t.focus(), null == (e = tn.current) || e.setSelection(X.length, X.length)
   });
   let th = () => {
-      tt !== M && ((0, x.Z)({
+      tt !== M && ((0, C.Z)({
         text: X,
         emojiInfo: J,
         clearAfter: tt,

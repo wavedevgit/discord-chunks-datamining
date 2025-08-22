@@ -1,7 +1,7 @@
 /** Chunk was on 98360 **/
 /** chunk id: 819602, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  E3: () => N,
+  E3: () => A,
   ZP: () => E,
   tH: () => C
 }), require("./539854.js");
@@ -50,7 +50,7 @@ function T(e) {
   return e
 }
 
-function A(e, n) {
+function N(e, n) {
   return n = null != n ? n : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(e, n) {
     var t = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -63,20 +63,20 @@ function A(e, n) {
   }), e
 }
 
-function N(e) {
+function A(e) {
   var n, t;
-  let o, s, x, {
+  let o, s, b, {
     connectedAccount: g,
     theme: h,
     locale: _,
-    userId: O,
-    className: N,
+    userId: I,
+    className: A,
     showMetadata: C,
     showInvisibleIcon: E
   } = e;
   null == C && (C = true);
   let S = null != (t = g.metadata) ? t : {},
-    w = C ? (0, m.FI)(S[I.PC.CREATED_AT], _) : null,
+    w = C ? (0, m.FI)(S[O.PC.CREATED_AT], _) : null,
     B = (0, a.dQu)(i.Z.unsafe_rawColors.TWITTER).hex(),
     D = Z.intl.string(Z.t["6H6h1t"]);
   if (C) switch (g.type) {
@@ -89,7 +89,7 @@ function N(e) {
     case y.ABu.BLUESKY:
     case y.ABu.MASTODON:
     case y.ABu.TWITTER:
-      o = (0, p.rJ)(S), "1" === S[I.PC.TWITTER_VERIFIED] && (s = B, D = Z.intl.string(Z.t.Jebrw8));
+      o = (0, p.rJ)(S), "1" === S[O.PC.TWITTER_VERIFIED] && (s = B, D = Z.intl.string(Z.t.Jebrw8));
       break;
     case y.ABu.PAYPAL:
       o = (0, p.li)(S);
@@ -102,18 +102,18 @@ function N(e) {
   }
   let L = d.Z.get((0, f.rR)(g.type)),
     R = null == L || null == (n = L.getPlatformUserUrl) ? true : n.call(L, g);
-  null != E && E ? x = (0, r.jsx)(a.kZF, {
+  null != E && E ? b = (0, r.jsx)(a.kZF, {
     size: "md",
     color: "currentColor",
     className: l()(P.__invalid_connectedAccountOpenIconContainer, P.connectedAccountHideIcon)
-  }) : null != R && (x = (0, r.jsx)(a.eee, {
+  }) : null != R && (b = (0, r.jsx)(a.eee, {
     href: R,
     "aria-label": (null == L ? true : L.name) != null ? "".concat(L.name, ", ").concat(g.name, ", ").concat(Z.intl.string(Z.t.q5jLJC)) : "".concat(g.name, ", ").concat(Z.intl.string(Z.t.q5jLJC)),
     onClick: e => {
       var n;
       n = g.type, (0, u.yw)(y.rMx.CONNECTED_ACCOUNT_VIEWED, {
         platform_type: n,
-        other_user_id: O
+        other_user_id: I
       }), (0, v.q)({
         href: R,
         trusted: (null == L ? true : L.type) !== y.ABu.DOMAIN
@@ -126,7 +126,7 @@ function N(e) {
   }));
   let U = (0, a.dQu)(i.Z.colors.INTERACTIVE_MUTED).hex(),
     M = (0, a.dQu)(i.Z.colors.INTERACTIVE_ACTIVE).hex(),
-    k = g.verified ? (0, r.jsx)(b.Z, {
+    k = g.verified ? (0, r.jsx)(x.Z, {
       className: P.connectedAccountVerifiedIcon,
       color: null != s ? s : U,
       forcedIconColor: M,
@@ -134,12 +134,12 @@ function N(e) {
       tooltipText: D
     }) : null;
   return (0, r.jsxs)("li", {
-    className: l()(P.connectedAccountContainer, null != o && o.length > 0 || null != w ? P.connectedAccountContainerWithMetadata : null, N),
+    className: l()(P.connectedAccountContainer, null != o && o.length > 0 || null != w ? P.connectedAccountContainerWithMetadata : null, A),
     children: [(0, r.jsxs)("div", {
       className: P.connectedAccount,
       children: [(0, r.jsx)(a.ua7, {
         text: null == L ? true : L.name,
-        children: e => (0, r.jsx)("img", A(T({}, e), {
+        children: e => (0, r.jsx)("img", N(T({}, e), {
           alt: Z.intl.formatToPlainString(Z.t.rtm15O, {
             name: null == L ? true : L.name
           }),
@@ -155,14 +155,14 @@ function N(e) {
             children: [(0, r.jsx)(a.ua7, {
               overflowOnly: true,
               text: g.name,
-              children: e => (0, r.jsx)(a.Text, A(T({}, e), {
+              children: e => (0, r.jsx)(a.Text, N(T({}, e), {
                 variant: "text-sm/medium",
                 color: "interactive-active",
                 className: P.connectedAccountNameText,
                 children: g.name
               }))
             }), k]
-          }), x]
+          }), b]
         }), null != w ? (0, r.jsx)(a.Text, {
           variant: "text-xs/normal",
           color: "header-secondary",
@@ -186,8 +186,8 @@ function C(e) {
     onApplicationClicked: i,
     selectedGuildId: c
   } = e, d = (0, p.rm)(n, true, o), u = () => {
-    null == i || i(), (0, x.transitionToGlobalDiscovery)({
-      tab: O.GlobalDiscoveryTab.APPS,
+    null == i || i(), (0, b.transitionToGlobalDiscovery)({
+      tab: I.GlobalDiscoveryTab.APPS,
       applicationId: n.application.id,
       newSessionState: {
         entrypoint: {
@@ -260,7 +260,7 @@ function E(e) {
     theme: c
   } = (0, _.z)();
   if (null == n || 0 === n.length) return null;
-  let a = n.map(e => (0, r.jsx)(N, {
+  let a = n.map(e => (0, r.jsx)(A, {
       connectedAccount: e,
       theme: c,
       locale: t,

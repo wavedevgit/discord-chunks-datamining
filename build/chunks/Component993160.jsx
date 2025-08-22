@@ -1,7 +1,7 @@
 /** Chunk was on 98360 **/
 /** chunk id: 993160, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => x
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -17,12 +17,12 @@ var Chunk755721 = require("./755721.js"),
   Chunk562831 = require("./562831.js"),
   Chunk981631 = require("./981631.js");
 
-function b(e) {
+function x(e) {
   let {
     user: n,
     currentUser: t,
-    guildId: b,
-    channelId: x,
+    guildId: x,
+    channelId: b,
     displayProfile: g,
     relationshipType: h,
     onClose: j
@@ -30,28 +30,28 @@ function b(e) {
     newestAnalyticsLocation: v
   } = (0, i.ZP)(), _ = (0, c.Z)({
     user: n,
-    guildId: b,
-    channelId: x,
+    guildId: x,
+    channelId: b,
     displayProfile: g,
     onClose: j
   }), {
     gameFriends: y,
-    hasOutgoingPendingGameFriends: I,
-    hasIncomingPendingGameFriends: O
+    hasOutgoingPendingGameFriends: O,
+    hasIncomingPendingGameFriends: I
   } = (0, m.H)({
     userId: n.id
-  }), Z = y.length > 0 || I || O;
+  }), Z = y.length > 0 || O || I;
   return h === p.OGo.BLOCKED ? null : n.id === t.id ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(a.Z, {
       user: n,
-      guildId: b,
+      guildId: x,
       onClose: j
     }), (0, r.jsx)(u.Z, {
       onClose: j
     }), (0, r.jsx)(d.Z, {
       type: "icon",
       user: n,
-      guildId: b,
+      guildId: x,
       viewProfileItem: _,
       themeColor: "secondary"
     })]
@@ -64,7 +64,7 @@ function b(e) {
     }), (0, r.jsx)(d.Z, {
       type: "icon",
       user: n,
-      guildId: b,
+      guildId: x,
       viewProfileItem: _,
       themeColor: "secondary"
     })]
@@ -78,7 +78,7 @@ function b(e) {
     }), (0, r.jsx)(d.Z, {
       type: "icon",
       user: n,
-      guildId: b,
+      guildId: x,
       themeColor: "secondary"
     })]
   }) : h === p.OGo.FRIEND || h === p.OGo.PENDING_OUTGOING ? (0, r.jsxs)(r.Fragment, {
@@ -98,7 +98,7 @@ function b(e) {
     }), (0, r.jsx)(d.Z, {
       type: "icon",
       user: n,
-      guildId: b,
+      guildId: x,
       viewProfileItem: _,
       themeColor: "secondary"
     })]
@@ -117,12 +117,12 @@ function b(e) {
       tooltipPosition: "top",
       tooltipAlign: "center",
       shouldShowTooltip: true,
-      hasIncomingPendingGameFriends: O,
-      hasOutgoingPendingGameFriends: I
+      hasIncomingPendingGameFriends: I,
+      hasOutgoingPendingGameFriends: O
     }), (0, r.jsx)(d.Z, {
       type: "icon",
       user: n,
-      guildId: b,
+      guildId: x,
       viewProfileItem: _,
       themeColor: "secondary"
     })]
@@ -141,7 +141,7 @@ function b(e) {
     }), (0, r.jsx)(d.Z, {
       type: "icon",
       user: n,
-      guildId: b,
+      guildId: x,
       viewProfileItem: _,
       themeColor: "secondary"
     })]

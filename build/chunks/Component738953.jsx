@@ -30,7 +30,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk687158 = require("./687158.js"),
   Chunk510659 = require("./510659.jsx"),
   Chunk892001 = require("./892001.js"),
-  Chunk113557 = require("./113557.jsx"),
+  Chunk899007 = require("./899007.jsx"),
   Chunk867176 = require("./867176.jsx"),
   Chunk451834 = require("./451834.jsx"),
   Chunk502762 = require("./502762.jsx"),
@@ -231,7 +231,6 @@ function z(e) {
                 className: V.toast,
                 onClose: J
               }), (0, r.jsx)(R.Z, {
-                location: "UserProfilePopout",
                 user: n,
                 displayProfile: ec,
                 guildId: Y,
@@ -245,7 +244,6 @@ function z(e) {
                 onTryFeature: J,
                 children: () => (0, r.jsx)(k.Z, {
                   ref: e_,
-                  location: "UserProfilePopout",
                   user: n,
                   guildId: Y,
                   channelId: z,
@@ -255,7 +253,6 @@ function z(e) {
                 })
               }) : (0, r.jsx)(k.Z, {
                 ref: ev ? e_ : true,
-                location: "UserProfilePopout",
                 user: n,
                 guildId: Y,
                 channelId: z,

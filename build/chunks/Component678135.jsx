@@ -112,7 +112,6 @@ function v(e) {
           object: E.qAy.AVATAR
         })
       }), !G && (0, r.jsx)(f.Z, {
-        location: "UserProfilePreview",
         user: t,
         themeType: b.l.POPOUT,
         disableToolbar: U

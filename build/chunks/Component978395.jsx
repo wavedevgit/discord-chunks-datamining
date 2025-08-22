@@ -134,14 +134,12 @@ function L(e) {
     }), Y ? (0, r.jsx)(y.Z, {
       user: t,
       currentUser: n,
-      displayProfile: L,
       guildId: null == j ? true : j.id,
       onOpenUserProfileModal: k,
       onClose: G
     }) : (0, r.jsx)(h.Z, {
       user: t,
       currentUser: n,
-      displayProfile: L,
       guildId: null == j ? true : j.id,
       onClose: G
     }), null != j && (0, r.jsx)(C.Z, {

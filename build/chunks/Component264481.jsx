@@ -1,7 +1,7 @@
 /** Chunk was on 98360 **/
 /** chunk id: 264481, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  P9: () => I,
+  P9: () => O,
   Uf: () => Z,
   b0: () => y,
   s_: () => _
@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk839468 = require("./839468.js");
-let x = [() => Chunk388032.intl.string(Chunk388032.t.madJdH), () => Chunk388032.intl.string(Chunk388032.t.NYmfoK), () => Chunk388032.intl.string(Chunk388032.t.R2PaCg), () => Chunk388032.intl.string(Chunk388032.t.laSR8v), () => Chunk388032.intl.string(Chunk388032.t.DnsJEx)],
+let b = [() => Chunk388032.intl.string(Chunk388032.t.madJdH), () => Chunk388032.intl.string(Chunk388032.t.NYmfoK), () => Chunk388032.intl.string(Chunk388032.t.R2PaCg), () => Chunk388032.intl.string(Chunk388032.t.laSR8v), () => Chunk388032.intl.string(Chunk388032.t.DnsJEx)],
   g = [() => Chunk388032.intl.string(Chunk388032.t.nFSbeH), () => Chunk388032.intl.string(Chunk388032.t.gTcxOz), () => Chunk388032.intl.string(Chunk388032.t["8T0wYm"]), () => Chunk388032.intl.string(Chunk388032.t.BIHl1t), () => Chunk388032.intl.string(Chunk388032.t.jhBm09)],
   h = [() => Chunk388032.intl.string(Chunk388032.t.AyMGXF), () => Chunk388032.intl.string(Chunk388032.t.aAFW7e), e => p.intl.formatToPlainString(p.t.h2g0cH, {
     name: e
@@ -33,9 +33,9 @@ function v(e) {
     children: o
   } = e;
   return (0, r.jsxs)("div", {
-    className: b.empty,
+    className: x.empty,
     children: [(0, r.jsxs)("div", {
-      className: b.textContainer,
+      className: x.textContainer,
       children: [(0, r.jsx)(i.X6q, {
         variant: "heading-md/medium",
         color: "header-primary",
@@ -53,7 +53,7 @@ function _() {
   let e = Chunk388032.intl.string(Chunk388032.t.RnD2yc),
     [n] = Chunk647438.useState(() => {
       var e;
-      return (null != (e = (0, Chunk392711.sample)(x)) ? module : x[0])()
+      return (null != (e = (0, Chunk392711.sample)(b)) ? module : b[0])()
     });
   return (0, Chunk951288.jsx)(v, {
     heading: module,
@@ -73,7 +73,7 @@ function y() {
   })
 }
 
-function I(e) {
+function O(e) {
   let {
     user: n,
     guildId: t,
@@ -81,7 +81,7 @@ function I(e) {
     onClose: s
   } = e, d = u.ZP.getName(t, a, n), m = p.intl.formatToPlainString(p.t.sjSitL, {
     name: d
-  }), [x] = o.useState(() => {
+  }), [b] = o.useState(() => {
     var e;
     return (null != (e = (0, l.sample)(h)) ? e : h[0])(d)
   }), g = o.useCallback(() => {
@@ -91,9 +91,9 @@ function I(e) {
   }, [n.id, s]);
   return (0, r.jsx)(v, {
     heading: m,
-    bodyText: x,
+    bodyText: b,
     children: (0, r.jsx)("div", {
-      className: b.buttonRow,
+      className: x.buttonRow,
       children: (0, r.jsx)(f.tG, {
         icon: i.kBi,
         text: p.intl.string(p.t["g33r/P"]),
@@ -104,7 +104,7 @@ function I(e) {
   })
 }
 
-function O() {
+function I() {
   let e = (0, Chunk410030.ZP)();
   return (0, Chunk951288.jsx)("div", {
     className: Chunk839468.connectionPlatforms,
@@ -115,7 +115,7 @@ function O() {
       return (0, r.jsx)("img", {
         src: l,
         alt: o.name,
-        className: b.connectionIcon
+        className: x.connectionIcon
       }, t)
     })
   })
@@ -132,8 +132,8 @@ function Z(e) {
   return (0, r.jsxs)(v, {
     heading: p.intl.string(p.t.VB6LWV),
     bodyText: p.intl.string(p.t.KpjsU1),
-    children: [(0, r.jsx)(O, {}), (0, r.jsxs)("div", {
-      className: b.buttonRow,
+    children: [(0, r.jsx)(I, {}), (0, r.jsxs)("div", {
+      className: x.buttonRow,
       children: [(0, r.jsx)(f.tG, {
         text: p.intl.string(p.t["/Hl24e"]),
         onClick: t,

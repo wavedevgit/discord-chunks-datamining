@@ -1,7 +1,7 @@
 /** Chunk was on 98360 **/
 /** chunk id: 858970, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => I
 }), require("./388685.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk442837 = require("./442837.js"),
@@ -24,7 +24,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk220566 = require("./220566.js");
 
-function I(e) {
+function O(e) {
   for (var n = 1; n < arguments.length; n++) {
     var t = null != arguments[n] ? arguments[n] : {},
       r = Object.keys(t);
@@ -43,16 +43,16 @@ function I(e) {
   return e
 }
 
-function O(e) {
+function I(e) {
   let {
     user: n,
     guildId: t,
-    channelId: O,
+    channelId: I,
     messageId: Z,
     roleId: P,
     transitionState: T,
-    openedAt: A,
-    onHide: N,
+    openedAt: N,
+    onHide: A,
     sourceAnalyticsLocations: C = []
   } = e, E = t === j.ME ? true : t, S = (0, o.e7)([d.Z], () => d.Z.isBlocked(n.id)), {
     analyticsLocations: w
@@ -61,7 +61,7 @@ function O(e) {
     userId: n.id,
     showGuildProfile: true,
     guildId: E,
-    channelId: O,
+    channelId: I,
     messageId: Z,
     roleId: P
   }), D = [{
@@ -70,14 +70,14 @@ function O(e) {
   }, {
     icon: i.owK,
     description: _.intl.string(S ? _.t.QxrDY2 : _.t.W6fjkZ)
-  }], L = (0, p.ZP)(n.id, E), R = u.ZP.getName(null == L ? true : L.guildId, O, n), U = _.intl.formatToPlainString(_.t.KRe1Fh, {
+  }], L = (0, p.ZP)(n.id, E), R = u.ZP.getName(null == L ? true : L.guildId, I, n), U = _.intl.formatToPlainString(_.t.KRe1Fh, {
     name: R
   });
   return (0, r.jsx)(a.Gt, {
     value: w,
     children: (0, r.jsx)(f.Mt, {
       value: B,
-      openedAt: A,
+      openedAt: N,
       fetchStartedAt: null == L ? true : L.fetchStartedAt,
       fetchEndedAt: null == L ? true : L.fetchEndedAt,
       isLoaded: null == L ? true : L.isLoaded,
@@ -87,7 +87,7 @@ function O(e) {
         className: y.root,
         "aria-label": U,
         parentComponent: "RestrictedUserProfileModalV2",
-        children: (0, r.jsxs)(x.Z, {
+        children: (0, r.jsxs)(b.Z, {
           user: n,
           displayProfile: L,
           themeType: v.l.MODAL_V2,
@@ -95,7 +95,7 @@ function O(e) {
             className: y.background
           }), (0, r.jsxs)("div", {
             className: y.content,
-            children: [(0, r.jsx)(b.Z, {
+            children: [(0, r.jsx)(x.Z, {
               user: n,
               guildId: E,
               iconColor: i.TVs.colors.TEXT_DEFAULT
@@ -132,7 +132,7 @@ function O(e) {
                 size: l.Ph.MEDIUM,
                 isBlocked: S,
                 onClick: () => {
-                  N(), (0, m.pQ)(I({
+                  A(), (0, m.pQ)(O({
                     action: S ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
                     analyticsLocations: w
                   }, B))
@@ -140,7 +140,7 @@ function O(e) {
               }), (0, r.jsx)(g.Z, {
                 userId: n.id,
                 onClick: () => {
-                  N(), (0, m.pQ)(I({
+                  A(), (0, m.pQ)(O({
                     action: "DONT_SHOW_AGAIN_IGNORED_PROFILE",
                     analyticsLocations: w
                   }, B))

@@ -45,9 +45,9 @@ function E(e) {
     openedAt: R,
     onClose: U,
     sourceAnalyticsLocations: M = []
-  } = e, k = E === Z.ME ? true : E, G = (0, m.ZP)(t.id, k), V = u.ZP.getName(k, S, t), F = (0, s.Dt)(), {
-    analyticsLocations: Y
-  } = (0, a.ZP)([...M, c.Z.USER_PROFILE_MODAL]), z = (0, f.ZB)({
+  } = e, k = E === Z.ME ? true : E, G = (0, m.ZP)(t.id, k), F = u.ZP.getName(k, S, t), V = (0, s.Dt)(), {
+    analyticsLocations: W
+  } = (0, a.ZP)([...M, c.Z.USER_PROFILE_MODAL]), Y = (0, f.ZB)({
     layout: "MODAL",
     userId: t.id,
     sourceSessionId: D,
@@ -55,11 +55,11 @@ function E(e) {
     channelId: S,
     messageId: w,
     roleId: B
-  }), W = o.useRef(null), K = (0, i.Z)(W);
+  }), z = o.useRef(null), K = (0, i.Z)(z);
   return (0, r.jsx)(a.Gt, {
-    value: Y,
+    value: W,
     children: (0, r.jsx)(f.Mt, {
-      value: z,
+      value: Y,
       openedAt: R,
       fetchStartedAt: null == G ? true : G.fetchStartedAt,
       fetchEndedAt: null == G ? true : G.fetchEndedAt,
@@ -67,16 +67,16 @@ function E(e) {
       children: (0, r.jsxs)(l.Y0X, {
         "data-migration-pending": true,
         transitionState: L,
-        className: A.root,
+        className: N.root,
         hideShadow: true,
-        "aria-labelledby": F,
+        "aria-labelledby": V,
         parentComponent: "NonUserBotProfileModal",
         children: [(0, r.jsx)(l.y5t, {
           component: (0, r.jsx)(l.nn4, {
             children: (0, r.jsx)(l.H, {
-              id: F,
+              id: V,
               children: T.intl.format(T.t.KRe1Fh, {
-                name: V
+                name: F
               })
             })
           }),
@@ -84,18 +84,18 @@ function E(e) {
             user: t,
             displayProfile: G,
             themeType: P.l.MODAL,
-            ref: (null == G ? true : G.profileEffect) != null ? W : true,
-            children: [(0, r.jsx)(I.Z, {
+            ref: (null == G ? true : G.profileEffect) != null ? z : true,
+            children: [(0, r.jsx)(O.Z, {
               children: (0, r.jsx)(y.Z, {
                 user: t
               })
             }), (0, r.jsxs)("div", {
-              children: [(0, r.jsx)(x.Z, {
+              children: [(0, r.jsx)(b.Z, {
                 user: t,
                 displayProfile: G,
                 themeType: P.l.MODAL
               }), (0, r.jsx)("div", {
-                className: A.headerInner,
+                className: N.headerInner,
                 children: (0, r.jsx)(p.Z, {
                   user: t,
                   displayProfile: G,
@@ -105,14 +105,14 @@ function E(e) {
                 })
               })]
             }), (0, r.jsxs)("div", {
-              className: A.body,
+              className: N.body,
               children: [(0, r.jsx)(_.Z, {
-                className: A.username,
+                className: N.username,
                 user: t,
-                nickname: V,
+                nickname: F,
                 pronouns: null == G ? true : G.pronouns,
                 nicknameVariant: "heading-xl/bold",
-                tags: (0, r.jsx)(b.Z, {
+                tags: (0, r.jsx)(x.Z, {
                   displayProfile: G,
                   themeType: P.l.MODAL,
                   onClose: U
@@ -122,20 +122,20 @@ function E(e) {
                 children: [(0, r.jsx)(l.njP, {
                   className: C.tabBar,
                   type: "top",
-                  selectedItem: O.oh.BOT_INFO,
+                  selectedItem: I.oh.BOT_INFO,
                   onItemSelect: Z.dG4,
                   children: (0, r.jsx)(l.njP.Item, {
                     className: C.tabBarItem,
-                    id: O.oh.BOT_INFO,
+                    id: I.oh.BOT_INFO,
                     "aria-label": T.intl.string(T.t.jGoPJS),
                     children: (0, r.jsx)(l.Text, {
                       variant: "text-sm/normal",
                       children: T.intl.string(T.t.jGoPJS)
                     })
-                  }, O.oh.BOT_INFO)
+                  }, I.oh.BOT_INFO)
                 }), (0, r.jsxs)(l.zJl, {
                   fade: true,
-                  className: N.scroller,
+                  className: A.scroller,
                   children: [(0, r.jsx)(g.Z, {
                     userId: t.id,
                     userBio: null == G ? true : G.bio,
@@ -145,7 +145,7 @@ function E(e) {
                     children: (0, r.jsx)(h.Z, {
                       userId: t.id,
                       guildId: k,
-                      tooltipDelay: O.vB
+                      tooltipDelay: I.vB
                     })
                   })]
                 })]
