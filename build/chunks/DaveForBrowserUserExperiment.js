@@ -29,21 +29,32 @@ let i = (0, Chunk818083.B)({
     label: "Allowing testing DAVE protocol for browser",
     defaultConfig: {
       loadWasmModule: false,
-      useWasmModule: false
+      useWasmModule: false,
+      preload: false
     },
     treatments: [{
       id: 1,
       label: "Load only",
       config: {
         loadWasmModule: true,
-        useWasmModule: false
+        useWasmModule: false,
+        preload: false
       }
     }, {
       id: 2,
       label: "Enable",
       config: {
         loadWasmModule: true,
-        useWasmModule: true
+        useWasmModule: true,
+        preload: false
+      }
+    }, {
+      id: 3,
+      label: "Preload",
+      config: {
+        loadWasmModule: true,
+        useWasmModule: true,
+        preload: true
       }
     }]
   })
