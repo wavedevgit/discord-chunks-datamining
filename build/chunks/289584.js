@@ -15,13 +15,13 @@ var Chunk647438 = require("./647438.js"),
 
 function g(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : null,
-    [g, f] = l.useState(false),
-    [b, m] = l.useState(null),
-    p = l.useMemo(() => u.Z.getStageInstanceByChannel(null == e ? true : e.id), [null == e ? true : e.id]),
-    h = (0, c.J)(e);
+    [g, m] = l.useState(false),
+    [f, h] = l.useState(null),
+    _ = l.useMemo(() => u.Z.getStageInstanceByChannel(null == e ? true : e.id), [null == e ? true : e.id]),
+    x = (0, c.J)(e);
   return {
     loading: g,
-    error: b,
+    error: f,
     onSave: async l => {
       let {
         topic: c,
@@ -29,12 +29,12 @@ function g(e, t) {
         sendStartNotification: g
       } = l;
       if (null != e && "" !== c && null != u) {
-        f(true), m(null), null != n && (r.Z.selectGuild(n), i.default.selectVoiceChannel(e.id));
+        m(true), h(null), null != n && (i.Z.selectGuild(n), r.default.selectVoiceChannel(e.id));
         try {
           let n;
-          null != p ? n = await s.Ef(e, c, u) : (n = await s.HO(e, c, u, null != g && g), h && o.Kw(d.v.LIVE_STAGE_NOTIFICATION_BADGE)), t(n)
+          null != _ ? n = await s.Ef(e, c, u) : (n = await s.HO(e, c, u, null != g && g), x && o.Kw(d.v.LIVE_STAGE_NOTIFICATION_BADGE)), t(n)
         } catch (e) {
-          m(new a.Hx(e)), f(false)
+          h(new a.Hx(e)), m(false)
         }
       }
     }

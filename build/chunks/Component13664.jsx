@@ -13,25 +13,25 @@ function o(e) {
   let {
     sendStartNotification: t,
     setSendStartNotification: n
-  } = e, o = t ? i.intl.string(i.t.xAT8lJ) : i.intl.string(i.t["Y+18hY"]);
+  } = e, o = t ? r.intl.string(r.t.xAT8lJ) : r.intl.string(r.t["Y+18hY"]);
   return (0, l.jsx)("div", {
     className: a.notificationToggle,
-    children: (0, l.jsx)(r.XZJ, {
-      type: r.XZJ.Types.INVERTED,
+    children: (0, l.jsx)(i.XZJ, {
+      type: i.XZJ.Types.INVERTED,
       size: 14,
       className: a.__invalid_checkbox,
       value: t,
       onChange: function() {
         n(!t)
       },
-      children: (0, l.jsx)(r.Text, {
+      children: (0, l.jsx)(i.Text, {
         color: "header-secondary",
         variant: "text-sm/normal",
-        children: (0, l.jsx)(r.ua7, {
+        children: (0, l.jsx)(i.ua7, {
           position: "bottom",
           tooltipClassName: a.tooltip,
-          text: i.intl.string(i.t["4A/xnZ"]),
-          "aria-label": i.intl.string(i.t["4A/xnZ"]),
+          text: r.intl.string(r.t["4A/xnZ"]),
+          "aria-label": r.intl.string(r.t["4A/xnZ"]),
           children: e => {
             var t, n;
             return (0, l.jsx)("span", (t = function(e) {
