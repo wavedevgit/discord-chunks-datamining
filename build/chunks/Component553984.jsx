@@ -32,10 +32,10 @@ function g(e) {
         viewId: n
       })
     },
-    _ = g === p.V5.ALL ? f.intl.string(f.t["2pAkDA"]) : f.intl.string(f.t.HcoRu7);
+    y = g === p.V5.ALL ? h.intl.string(h.t["2pAkDA"]) : h.intl.string(h.t.HcoRu7);
   return (0, r.jsx)(o.ua7, {
     position: "bottom",
-    text: _,
+    text: y,
     children: e => {
       var n, i;
       return (0, r.jsx)(o.P3F, (n = function(e) {
@@ -56,10 +56,10 @@ function g(e) {
         }
         return e
       }({}, e), i = i = {
-        className: l()(t, h.headerButton, {
-          [h.enabled]: g === p.V5.BOOKMARKS
+        className: l()(t, f.headerButton, {
+          [f.enabled]: g === p.V5.BOOKMARKS
         }),
-        "aria-label": _,
+        "aria-label": y,
         onClick: O,
         children: g === p.V5.BOOKMARKS ? (0, r.jsx)(o.plf, {
           size: "xs",

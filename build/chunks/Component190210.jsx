@@ -119,7 +119,7 @@ let en = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
     accessibilityLabel: M,
     channel: L,
     type: H,
-    focused: q,
+    focused: Y,
     onChange: en,
     onResize: eo,
     onBlur: es,
@@ -159,15 +159,15 @@ let en = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
     disabled: eU,
     canAttachFiles: eB,
     canEveryoneSendMessages: eF
-  } = (0, G.TE)(L, H, eD, P), eG = !N.dN.useSetting() && !(0, D.isAndroidWeb)() && null != window.ResizeObserver, eH = !eG || !(null == (n = H.commands) ? true : n.enabled) || !q || p !== W.GI, eV = (0, Z.Z)(), {
+  } = (0, G.TE)(L, H, eD, P), eG = !N.dN.useSetting() && !(0, D.isAndroidWeb)() && null != window.ResizeObserver, eH = !eG || !(null == (n = H.commands) ? true : n.enabled) || !Y || p !== W.GI, eV = (0, Z.Z)(), {
     fontSize: ez
   } = (0, d.cj)([b.Z], () => ({
     fontSize: b.Z.fontSize,
     isSubmitButtonEnabled: b.Z.isSubmitButtonEnabled
-  })), eW = (0, d.e7)([w.Z], () => w.Z.isEnabled()), eY = (0, T.NE)(L);
+  })), eW = (0, d.e7)([w.Z], () => w.Z.isEnabled()), eq = (0, T.NE)(L);
   (0, G.hJ)(H, eU);
   let {
-    eventEmitter: eq,
+    eventEmitter: eY,
     handleEditorSelectionChanged: eK
   } = (0, G.x2)(ew, p, g), eX = i.useCallback(e => {
     let t = e => {
@@ -184,7 +184,7 @@ let en = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
       r = eS.length > 0 ? eS : e.value.length > 0 ? e.value.slice(0, 80) : K.intl.string(K.t["7Xm5QE"]);
     if (null == eI) return ed($(J({}, e), {
       announcementSendOptions: {
-        createThread: eY && eZ,
+        createThread: eq && eZ,
         threadName: r,
         publish: eP
       }
@@ -192,11 +192,11 @@ let en = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
     n.push({
       type: m.re.MEDIA_GALLERY,
       items: [ee("attachment://".concat(et(eI.name)), false)],
-      id: "".concat(Y.Vm)
+      id: "".concat(q.Vm)
     }), e.value.length > 0 && n.push({
       type: m.re.TEXT_DISPLAY,
       content: e.value,
-      id: "".concat(Y.Kb)
+      id: "".concat(q.Kb)
     });
     let i = R.Z.getUploads(L.id, A.d.ChannelMessage),
       l = i.filter(e => (e.isImage || e.isVideo) && e.filename !== (null == eI ? true : eI.name)),
@@ -205,24 +205,24 @@ let en = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
     return o.length > 0 && n.push({
       type: m.re.MEDIA_GALLERY,
       items: o,
-      id: "".concat(Y.m2)
+      id: "".concat(q.m2)
     }), a.forEach((e, t) => {
       n.push({
         type: m.re.FILE,
         file: ee("attachment://".concat(et(e.filename)), false).media,
-        id: "".concat(Y.kn + t),
+        id: "".concat(q.kn + t),
         name: et(e.filename),
         size: null
       })
     }), ed($(J({}, e), {
       components: n,
       announcementSendOptions: {
-        createThread: eY && eZ,
+        createThread: eq && eZ,
         threadName: r,
         publish: eP
       }
     })).then(t)
-  }, [ed, eS, eI, L.id, eZ, eP, eY]), {
+  }, [ed, eS, eI, L.id, eZ, eP, eq]), {
     submit: eQ,
     handleSubmit: eJ
   } = (0, G.bL)(eX, H, ew, eM, L.id), {
@@ -260,7 +260,7 @@ let en = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
     shouldHideExpressionPicker: e9,
     handleAutocompleteVisibilityChange: te,
     handleOuterClick: tt
-  } = (0, G.iV)(H, eq, ew), tn = (0, G.ae)(ew), tr = (0, G.Sg)(eQ, H, ew), ti = (0, G.O1)({
+  } = (0, G.iV)(H, eY, ew), tn = (0, G.ae)(ew), tr = (0, G.Sg)(eQ, H, ew), ti = (0, G.O1)({
     editorRef: ew,
     disabled: eU,
     textValue: p,
@@ -268,8 +268,8 @@ let en = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
     chatInputType: H,
     submit: eX
   });
-  (0, k.S)(eq, L.guild_id, L.id);
-  let [tl, ta] = i.useState(false), to = q || tl || p.length > 0 || null != eI || eS.length > 0, {
+  (0, k.S)(eY, L.guild_id, L.id);
+  let [tl, ta] = i.useState(false), to = Y || tl || p.length > 0 || null != eI || eS.length > 0, {
     editorHeaderHeight: ts,
     paddingTop: tc
   } = (0, h.q_F)({
@@ -301,7 +301,7 @@ let en = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
     })
   }, [L.id, eI, H.drafts.type]);
   return (0, r.jsx)(O.f6, {
-    value: eq,
+    value: eY,
     children: (0, r.jsxs)(y.Gt, {
       value: eT,
       children: [(0, r.jsxs)("div", {
@@ -352,7 +352,7 @@ let en = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
                   children: (0, r.jsx)(B.Z, {
                     ref: ew,
                     id: S,
-                    focused: q,
+                    focused: Y,
                     useSlate: eG,
                     textValue: p,
                     richValue: g,
@@ -426,7 +426,7 @@ let en = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
                 targetElementRef: tu,
                 renderPopout: () => (0, r.jsx)(er, {
                   channelId: L.id,
-                  canCreateThread: eY
+                  canCreateThread: eq
                 }),
                 shouldShow: td,
                 autoInvert: true,
@@ -452,7 +452,7 @@ let en = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
                       children: [(0, r.jsx)(h.Uuj, {
                         size: "xs",
                         color: "white"
-                      }), eY && eZ ? (0, r.jsx)(h.or_, {
+                      }), eq && eZ ? (0, r.jsx)(h.or_, {
                         size: "xxs",
                         color: "white",
                         className: X.subIcon
@@ -473,7 +473,7 @@ let en = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
           canOnlyUseTextCommands: false,
           canSendStickers: true,
           textValue: p,
-          focused: q,
+          focused: Y,
           expressionPickerView: e5,
           type: H,
           editorRef: ew,
@@ -636,8 +636,8 @@ function ea(e) {
         onChange: o,
         "aria-hidden": true,
         tabIndex: false,
-        maxFileSizeBytes: q.B,
-        onFileSizeError: () => (0, I.Z)(q.B)
+        maxFileSizeBytes: Y.B,
+        onFileSizeError: () => (0, I.Z)(Y.B)
       }), (0, r.jsx)(h.FmF, {
         size: "md",
         color: s ? p.Z.colors.INTERACTIVE_ACTIVE : p.Z.colors.INTERACTIVE_NORMAL

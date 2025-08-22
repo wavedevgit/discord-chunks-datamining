@@ -1,7 +1,7 @@
 /** Chunk was on 91488 **/
 /** chunk id: 763520, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  m: () => h,
+  m: () => f,
   o: () => m
 }), require("./388685.js");
 var r, Chunk379649 = require("./379649.js"),
@@ -14,7 +14,7 @@ var r, Chunk379649 = require("./379649.js"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js");
 
-function f(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -22,7 +22,7 @@ function f(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-var h = ((r = {}).SELF_VIDEO = "self_video", r.SELF_STREAM = "self_stream", r.REMOTE_VIDEO = "remote_video", r.REMOTE_STREAM = "remote_stream", r.CHANGE_VIDEO_BACKGROUND = "change_video_background", r.REPLAY_VIDEO_STREAM = "replay_video_stream", r);
+var f = ((r = {}).SELF_VIDEO = "self_video", r.SELF_STREAM = "self_stream", r.REMOTE_VIDEO = "remote_video", r.REMOTE_STREAM = "remote_stream", r.CHANGE_VIDEO_BACKGROUND = "change_video_background", r.REPLAY_VIDEO_STREAM = "replay_video_stream", r);
 let g = new Map;
 class m {
   onSpinnerStarted() {
@@ -38,8 +38,8 @@ class m {
       l = (0, i.zO)() - this.spinnerVisibleStart;
     if (this.spinnerVisibleStart = null, l < 0) return void this.logger.warn("spinner duration is negative: ".concat(l, " ms\n        [").concat(e, ", count for stream: ").concat(r, "]"));
     this.logger.info("spinner visible for ".concat(l, " ms\n      [").concat(e, ", count for stream: ").concat(r, "]"));
-    let f = c.Z.getGuildId(),
-      h = u.Z.getUserVoiceChannelId(f, o.default.getId()),
+    let h = c.Z.getGuildId(),
+      f = u.Z.getUserVoiceChannelId(h, o.default.getId()),
       m = function(e) {
         if (null != e) {
           if (e.isGuildVoice()) return "guild_voice";
@@ -48,15 +48,15 @@ class m {
           if (e.isGroupDM()) return "group_dm"
         }
         return null
-      }(a.Z.getChannel(h));
+      }(a.Z.getChannel(f));
     d.default.track(p.rMx.VIDEO_SPINNER_SHOWN_V2, {
       video_spinner_context: e,
       duration_video_spinner_visible_ms: l,
       rtc_connection_id: c.Z.getRTCConnectionId(),
       media_session_id: c.Z.getMediaSessionId(),
       event_count_for_stream: r,
-      guild_id: f,
-      channel_id: h,
+      guild_id: h,
+      channel_id: f,
       channel_type: m,
       spinning_user_id: t,
       connection_type: s.Z.getType(),
@@ -65,6 +65,6 @@ class m {
     })
   }
   constructor(e) {
-    f(this, "logger", true), f(this, "spinnerVisibleStart", null), this.logger = new l.Z(e)
+    h(this, "logger", true), h(this, "spinnerVisibleStart", null), this.logger = new l.Z(e)
   }
 }

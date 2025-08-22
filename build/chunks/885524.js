@@ -19,19 +19,19 @@ function d(e) {
     videoSpinnerContext: s,
     streamKey: d,
     loading: p,
-    paused: f = false
-  } = e, h = r.useRef(new l.V7), g = s === o.m.SELF_STREAM || s === o.m.REMOTE_STREAM ? i.Yn.STREAM : i.Yn.DEFAULT;
+    paused: h = false
+  } = e, f = r.useRef(new l.V7), g = s === o.m.SELF_STREAM || s === o.m.REMOTE_STREAM ? i.Yn.STREAM : i.Yn.DEFAULT;
   return r.useEffect(() => {
-    if (!p || f || !a.w.isIncomingVideoEnabled()) return;
-    let e = h.current;
+    if (!p || h || !a.w.isIncomingVideoEnabled()) return;
+    let e = f.current;
     return e.start(u, () => {
       (0, c.K)(t, n, g, d)
     }), () => {
       e.stop()
     }
-  }, [f, t, p, g, d, n]), {
+  }, [h, t, p, g, d, n]), {
     onReady: r.useCallback(() => {
-      h.current.stop(), (0, c.w)(g, n)
+      f.current.stop(), (0, c.w)(g, n)
     }, [n, g])
   }
 }

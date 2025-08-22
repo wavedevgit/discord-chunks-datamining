@@ -54,7 +54,7 @@ let L = Chunk647438.memo(e => {
       userIds: t
     } = e;
     return t.has(L)
-  }), [L, I.id]), Y = (0, p.Z)(null != W ? [W.applicationId] : []), q = (0, C.Z)(L, I.guild_id)[0], K = null != (n = (0, d.IX)(null == q ? true : q.application_id).data) ? n : true, [X, Q] = (0, o.Wu)([O.Z], () => [O.Z.getStreamForUser(L, I.getGuildId()), O.Z.getActiveStreamForUser(L, I.getGuildId())], [I, L]), J = (0, o.e7)([Z.Z], () => Z.Z.getSessionById(P)), $ = A.ZP.useName(v), ee = (0, o.e7)([N.Z], () => N.Z.getVoicePlatformForChannel(I.id, L), [I.id, L]), {
+  }), [L, I.id]), q = (0, p.Z)(null != W ? [W.applicationId] : []), Y = (0, C.Z)(L, I.guild_id)[0], K = null != (n = (0, d.IX)(null == Y ? true : Y.application_id).data) ? n : true, [X, Q] = (0, o.Wu)([O.Z], () => [O.Z.getStreamForUser(L, I.getGuildId()), O.Z.getActiveStreamForUser(L, I.getGuildId())], [I, L]), J = (0, o.e7)([Z.Z], () => Z.Z.getSessionById(P)), $ = A.ZP.useName(v), ee = (0, o.e7)([N.Z], () => N.Z.getVoicePlatformForChannel(I.id, L), [I.id, L]), {
     enableHangStatus: et
   } = m.n.useExperiment({
     guildId: I.guild_id,
@@ -99,13 +99,13 @@ let L = Chunk647438.memo(e => {
       speaking: H,
       ringing: z,
       priority: G,
-      embeddedApplication: Y[0],
+      embeddedApplication: q[0],
       isStreaming: null != X && X.channelId === I.id,
       isWatching: null != Q && Q.state !== R.jm8.ENDED,
       isGuest: V,
       isSelf: k,
-      requestToStreamActivity: eo ? q : true,
-      application: ea && (null == q ? true : q.session_id) != null ? K : true,
+      requestToStreamActivity: eo ? Y : true,
+      application: ea && (null == Y ? true : Y.session_id) != null ? K : true,
       showHangStatus: en && et && (k || null != ei),
       hangStatusActivity: k ? er : ei
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {

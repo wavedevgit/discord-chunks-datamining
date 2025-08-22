@@ -222,7 +222,7 @@ function W(e) {
       modalKey: R.a
     })
   }
-  let Y = (0, E.m$)({
+  let q = (0, E.m$)({
     channelId: t.id
   });
   return (0, r.jsxs)("div", {
@@ -250,7 +250,7 @@ function W(e) {
             children: [null != S ? (0, r.jsx)(C.ZP.ChannelIcon, {
               icon: S,
               "aria-label": N
-            }) : null, y, Y && (0, r.jsx)(s.ua7, {
+            }) : null, y, q && (0, r.jsx)(s.ua7, {
               text: k.intl.string(k.t.QyZ4TU),
               children: e => (0, r.jsx)(s.tQf, G(F({}, e), {
                 size: "xs",

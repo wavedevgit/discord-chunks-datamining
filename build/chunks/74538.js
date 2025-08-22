@@ -6,8 +6,7 @@ require.d(exports, {
   Ap: () => ew,
   BK: () => q,
   CY: () => H,
-  EK: () => tD,
-  EO: () => tt,
+  EK: () => tw,
   Gf: () => er,
   I5: () => Chunk111361.I5,
   JE: () => eX,
@@ -24,17 +23,17 @@ require.d(exports, {
   Rt: () => eK,
   T4: () => K,
   U2: () => V,
-  UV: () => tF,
+  UV: () => tV,
   UX: () => X,
   Ue: () => e$,
   V7: () => e_,
   W_: () => eH,
-  Wz: () => tP,
+  Wz: () => tR,
   XK: () => e1,
   Z8: () => eO,
-  ZP: () => tH,
+  ZP: () => tF,
   Zx: () => e2,
-  _O: () => tw,
+  _O: () => tP,
   a5: () => eW,
   aS: () => Y,
   al: () => e0,
@@ -59,9 +58,9 @@ require.d(exports, {
   uZ: () => ey,
   v6: () => ex,
   v9: () => e4,
-  xG: () => tV,
+  xG: () => tZ,
   yd: () => Chunk111361.yd,
-  yg: () => tM,
+  yg: () => tj,
   zL: () => ed,
   zV: () => eB
 }), require("./415506.js"), require("./49124.js"), require("./388685.js"), require("./290780.js"), require("./539854.js");
@@ -545,7 +544,7 @@ function ec(e) {
     activeDiscountInfo: b,
     renewalInvoicePreview: y,
     hasFractionalPremiumWithSub: v
-  } = e, I = P.GP[p], T = tR(H(I.id), I.interval), S = eG(_) || null == _.paymentSourceId && !_.isPurchasedExternally && !(null == (t = h.default.getCurrentUser()) ? true : t.hasFreePremium()), A = null != m && null == _.paymentGateway, C = _.status === N.O0b.UNPAID && null !== _.latestInvoice && (null == (n = _.latestInvoice) ? true : n.status) === N.hUK.OPEN, R = S ? N.O0b.CANCELED : C ? N.O0b.UNPAID : _.status, w = null == (a = null != (i = null == y ? true : y.taxInclusive) ? i : null == (r = _.latestInvoice) ? true : r.taxInclusive) || a, x = P.cb + (g ? eE(_.additionalPlans) : 0), L = A ? w ? D.intl.format(D.t["cd+hqK"], {
+  } = e, I = P.GP[p], T = tN(H(I.id), I.interval), S = eG(_) || null == _.paymentSourceId && !_.isPurchasedExternally && !(null == (t = h.default.getCurrentUser()) ? true : t.hasFreePremium()), A = null != m && null == _.paymentGateway, C = _.status === N.O0b.UNPAID && null !== _.latestInvoice && (null == (n = _.latestInvoice) ? true : n.status) === N.hUK.OPEN, R = S ? N.O0b.CANCELED : C ? N.O0b.UNPAID : _.status, w = null == (a = null != (i = null == y ? true : y.taxInclusive) ? i : null == (r = _.latestInvoice) ? true : r.taxInclusive) || a, x = P.cb + (g ? eE(_.additionalPlans) : 0), L = A ? w ? D.intl.format(D.t["cd+hqK"], {
     price: m
   }) : D.intl.format(D.t.NUkcpK, {
     price: m
@@ -849,7 +848,7 @@ function eg(e) {
 }
 
 function eE(e) {
-  let t = E.Z.getPlanIdsForSkus([tP(P.Si.GUILD)]);
+  let t = E.Z.getPlanIdsForSkus([tR(P.Si.GUILD)]);
   i()(null != t, "Missing guildSubscriptionPlanIds");
   let n = e.find(e => {
     let {
@@ -1001,7 +1000,7 @@ function eS(e, t) {
 function eA(e, t, n, r) {
   let i = o()(r ? true : e);
   if (t.length > 0) {
-    let e = tZ(t);
+    let e = tB(t);
     i = i.add(e, "hours")
   }
   if (!r && true !== n) {
@@ -1013,7 +1012,7 @@ function eA(e, t, n, r) {
 }
 
 function eC(e) {
-  let t = tZ(e.unactivatedUnits);
+  let t = tB(e.unactivatedUnits);
   if (!(t > 0 && e.fractionalState === P.a$.NONE)) return "";
   let n = {
       days: D.t.fYmir6,
@@ -1199,7 +1198,7 @@ function eV(e, t, n, r) {
       }
     }), t
   }
-  let o = E.Z.getForSkuAndInterval(tP(P.Si.GUILD), a.interval, a.intervalCount);
+  let o = E.Z.getForSkuAndInterval(tR(P.Si.GUILD), a.interval, a.intervalCount);
   if (null == o) {
     let t = Error("Unsupported plan");
     throw (0, y.q2)(t, {
@@ -1570,174 +1569,173 @@ function te(e) {
       return R.Rj.PREMIUM_TIER_2
   }
 }
-let tt = e => null != e && Date.now() - e.createdAt.getTime() < Z;
 
-function tn(e) {
+function tt(e) {
   return (0, f.ks)(f.g_, e)
 }
 
-function tr(e) {
+function tn(e) {
   return (0, f.ks)(f.m_, e)
 }
 
-function ti(e) {
+function tr(e) {
   return (0, f.ks)(f._y, e)
 }
 
-function ta(e) {
+function ti(e) {
   return (0, f.ks)(f.tj, e)
 }
 
-function to(e) {
+function ta(e) {
   return (0, f.ks)(f.EQ, e)
 }
 
-function ts(e) {
+function to(e) {
   return (0, f.ks)(f.Pl, e)
 }
 
-function tl(e) {
+function ts(e) {
   return (0, f.ks)(f.wN, e)
 }
 
-function tc(e) {
+function tl(e) {
   return (0, f.ks)(f._G, e)
 }
 
-function tu(e, t) {
+function tc(e, t) {
   return (0, f.ks)(f.j4, e, t)
 }
 
-function td(e) {
+function tu(e) {
   return (0, f.ks)(f.lX, e)
 }
 
-function tf(e) {
+function td(e) {
   return (0, f.ks)(f.Uw, e)
 }
 
-function t_(e) {
+function tf(e) {
   return (0, f.ks)(f.zm, e)
 }
 
-function tp(e) {
+function t_(e) {
   return (0, f.ks)(f.zZ, e)
 }
 
-function th(e) {
+function tp(e) {
   return (0, f.ks)(f.do, e)
 }
 
-function tm(e) {
+function th(e) {
   return (0, f.ks)(f.ZE, e)
 }
 
-function tg(e) {
+function tm(e) {
   return (0, f.ks)(f.Ej, e)
 }
 
-function tE(e) {
+function tg(e) {
   return (0, f.ks)(f.Ct, e)
 }
 
-function tb(e) {
+function tE(e) {
   return (0, f.ks)(f.O1, e)
 }
 
-function ty(e) {
+function tb(e) {
   return (0, f.ks)(f.uw, e)
 }
 
-function tO(e, t) {
+function ty(e, t) {
   return "high" === e ? (0, f.ks)(f.O8, t) : "mid" === e && (0, f.ks)(f.g7, t)
 }
 
-function tv(e, t) {
+function tO(e, t) {
   return (0, f.ks)(f.$0, e, t)
 }
 
-function tI(e) {
+function tv(e) {
   return (0, f.ks)(f.ME, e)
 }
 
-function tT(e) {
+function tI(e) {
   return (0, f.ks)(f.AN, e)
 }
 
-function tS(e) {
+function tT(e) {
   return (0, f.ks)(f._O, e)
 }
 
-function tA(e) {
+function tS(e) {
   return (0, f.ks)(f.qH, e)
 }
 
-function tC(e) {
+function tA(e) {
   return (0, f.ks)(f.hs, e)
 }
 
-function tN(e) {
+function tC(e) {
   return (0, f.ks)(f.DU, e)
 }
 
-function tR(e, t) {
+function tN(e, t) {
   let n = (0, C.T4)(e.amount, e.currency),
     r = et(t);
   return "".concat(n, "/").concat(r)
 }
 
-function tP(e) {
+function tR(e) {
   return e
 }
 
-function tw(e) {
+function tP(e) {
   return "isNitroLocked" in e
 }
 
-function tD() {
+function tw() {
   let e = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser());
   return (0, Chunk111361.M5)(module, Chunk474936.p9.TIER_2)
 }
 
-function tx(e) {
+function tD(e) {
   return null != e && P.OT.includes(e) ? 1 : 2
 }
 
-function tL(e) {
+function tx(e) {
   return e === P.Rt ? P.NV : P.tL
 }
 
-function tj() {
+function tL() {
   return Chunk474936.tL
 }
 
-function tM(e) {
-  return tk(e) ? tL(e.trial_id) : tU(e) ? tj() : P.tL
+function tj(e) {
+  return tM(e) ? tx(e.trial_id) : tk(e) ? tL() : P.tL
 }
 
-function tk(e) {
+function tM(e) {
   return null != e && "trial_id" in e
 }
 
-function tU(e) {
+function tk(e) {
   return null != e && "discount_id" in e
 }
 
-function tG(e) {
+function tU(e) {
   if (e === P.rV.YEAR) return D.intl.string(D.t.tfqrho);
   if (e === P.rV.MONTH) return D.intl.string(D.t.FPybU1);
   throw Error("Invalid interval type: ".concat(e))
 }
 
-function tB(e) {
+function tG(e) {
   return null != e && !e.isProvisional && !e.bot
 }
 
-function tZ(e) {
-  return tV(e.map(e => e.skuId))
+function tB(e) {
+  return tZ(e.map(e => e.skuId))
 }
 
-function tV(e) {
+function tZ(e) {
   return e.reduce((e, t) => {
     let [n, r] = P.Cx[t], i = 1;
     switch (n) {
@@ -1751,7 +1749,7 @@ function tV(e) {
   }, 0)
 }
 
-function tF(e) {
+function tV(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
     n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {};
   if (e.interval !== P.rV.YEAR) return;
@@ -1761,12 +1759,12 @@ function tF(e) {
     a = Y(e.id, false, t, n);
   if (0 !== i.amount) return Math.floor(100 * (1 - a.amount / (12 * i.amount)))
 }
-let tH = Object.freeze({
-  isNewUser: tt,
+let tF = Object.freeze({
+  isNewUser: e => null != e && Date.now() - e.createdAt.getTime() < Z,
   isPremiumAtLeast: Chunk111361.yd,
   isPremium: Chunk111361.I5,
   isPremiumExactly: Chunk111361.M5,
-  isPremiumEligible: tB,
+  isPremiumEligible: tG,
   getPrice: Y,
   getDefaultPrice: H,
   getInterval: J,
@@ -1777,8 +1775,8 @@ let tH = Object.freeze({
   getDisplayPremiumType: es,
   getPremiumPlanOptions: e_,
   getUpgradeEligibilities: em,
-  getReverseTrialWeeks: tx,
-  formatInterval: tG,
+  getReverseTrialWeeks: tD,
+  formatInterval: tU,
   getPlanDescription: ec,
   isPremiumSku: ef,
   getClosestUpgrade: eg,
@@ -1807,36 +1805,36 @@ let tH = Object.freeze({
   getPremiumTypeFromSubscription: e7,
   getPremiumTypeFromSubscriptionRenewalMutations: e9,
   getPremiumGradientColor: te,
-  getUnactivatedFractionalPremiumHours: tZ,
-  castPremiumSubscriptionAsSkuId: tP,
-  calculateDiscountPercentageForYearlyPlan: tF,
-  canUseAnimatedEmojis: tn,
-  canUseEmojisEverywhere: tr,
-  canUseSoundboardEverywhere: ti,
-  canUseCustomCallSounds: ta,
-  canUploadLargeFiles: to,
-  canUseBadges: ts,
-  canUseHighVideoUploadQuality: tl,
-  canEditDiscriminator: tc,
-  hasBoostDiscount: tu,
-  canUseAnimatedAvatar: td,
-  canUseFancyVoiceChannelReactions: tf,
-  canInstallPremiumApplications: t_,
-  canUseIncreasedMessageLength: tp,
-  canUseIncreasedGuildCap: th,
-  canRedeemPremiumPerks: tm,
-  canUsePremiumProfileCustomization: tg,
-  canUsePremiumAppIcons: tE,
-  canUsePremiumGuildMemberProfile: tb,
-  canUseClientThemes: ty,
-  canStreamQuality: tO,
-  hasFreeBoosts: tv,
-  canUseCustomStickersEverywhere: tI,
-  canUseCustomBackgrounds: tT,
-  canUseCollectibles: tS,
-  canUseCustomNotificationSounds: tA,
-  canUsePremiumVoiceFilters: tC,
-  canUseChatWallpapers: tN,
-  formatPriceString: tR,
+  getUnactivatedFractionalPremiumHours: tB,
+  castPremiumSubscriptionAsSkuId: tR,
+  calculateDiscountPercentageForYearlyPlan: tV,
+  canUseAnimatedEmojis: tt,
+  canUseEmojisEverywhere: tn,
+  canUseSoundboardEverywhere: tr,
+  canUseCustomCallSounds: ti,
+  canUploadLargeFiles: ta,
+  canUseBadges: to,
+  canUseHighVideoUploadQuality: ts,
+  canEditDiscriminator: tl,
+  hasBoostDiscount: tc,
+  canUseAnimatedAvatar: tu,
+  canUseFancyVoiceChannelReactions: td,
+  canInstallPremiumApplications: tf,
+  canUseIncreasedMessageLength: t_,
+  canUseIncreasedGuildCap: tp,
+  canRedeemPremiumPerks: th,
+  canUsePremiumProfileCustomization: tm,
+  canUsePremiumAppIcons: tg,
+  canUsePremiumGuildMemberProfile: tE,
+  canUseClientThemes: tb,
+  canStreamQuality: ty,
+  hasFreeBoosts: tO,
+  canUseCustomStickersEverywhere: tv,
+  canUseCustomBackgrounds: tI,
+  canUseCollectibles: tT,
+  canUseCustomNotificationSounds: tS,
+  canUsePremiumVoiceFilters: tA,
+  canUseChatWallpapers: tC,
+  formatPriceString: tN,
   StreamQuality: V
 })

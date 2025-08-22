@@ -1,7 +1,7 @@
 /** Chunk was on 91488 **/
 /** chunk id: 367207, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => v
 }), require("./415506.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -29,7 +29,7 @@ function O(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -42,7 +42,7 @@ function _(e) {
   return e
 }
 
-function y(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -54,7 +54,7 @@ function y(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class v extends Chunk317770.Z {
+class j extends Chunk317770.Z {
   _initialize() {
     __OVERLAY__ ? Chunk570140.Z.subscribe("PREMIUM_PAYMENT_MODAL_OPEN", this._handlePremiumPaymentModalOpen) : (Chunk570140.Z.subscribe("PREMIUM_PAYMENT_MODAL_CLOSE", this._handlePremiumPaymentModalClose), Chunk570140.Z.subscribe("MESSAGE_LENGTH_UPSELL", this.handleMessageLengthUpsell), Chunk570140.Z.subscribe("POST_CONNECTION_OPEN", this._maybeFetchPremiumOffer), Chunk570140.Z.subscribe("POST_CONNECTION_OPEN", this._maybeFetchCheckoutRecovery), Chunk570140.Z.subscribe("POST_CONNECTION_OPEN", this._maybeFetchUserAffinities), Chunk570140.Z.subscribe("POST_CONNECTION_OPEN", this._trackCustomNotificationSoundsExposure))
   }
@@ -70,7 +70,7 @@ class v extends Chunk317770.Z {
       let {
         default: e
       } = await n.e("33184").then(n.bind(n, 465836));
-      return n => (0, r.jsx)(e, _({
+      return n => (0, r.jsx)(e, y({
         channel: t,
         content: l
       }, n))
@@ -79,7 +79,7 @@ class v extends Chunk317770.Z {
   openPremiumPaymentModalInApp(e) {
     if (__OVERLAY__) throw Error("Should not use this function from the overlay, use ModalAPI.openModal instead");
     return new Promise((t, n) => {
-      (0, s.Z)(y(_({}, e), {
+      (0, s.Z)(_(y({}, e), {
         onClose: e => {
           e ? t() : n()
         }
@@ -116,7 +116,7 @@ class v extends Chunk317770.Z {
       })
     }), O(this, "_maybeFetchCheckoutRecovery", async () => {
       let e = u.default.getCurrentUser();
-      null != e && e.verified && !(0, p.I5)(e) && h.Z.shouldFetchCheckoutRecovery() && await (0, f.o)()
+      null != e && e.verified && !(0, p.I5)(e) && f.Z.shouldFetchCheckoutRecovery() && await (0, h.o)()
     }), O(this, "_maybeFetchUserAffinities", () => {
       let {
         enabled: e
@@ -131,7 +131,7 @@ class v extends Chunk317770.Z {
         location: "PremiumManager"
       })
     }), O(this, "_handlePremiumPaymentModalOpen", e => {
-      (0, s.Z)(y(_({}, e), {
+      (0, s.Z)(_(y({}, e), {
         analyticsLocations: [a.Z.OVERLAY],
         onClose: e => {
           l.Z.dispatch({
@@ -148,4 +148,4 @@ class v extends Chunk317770.Z {
     })
   }
 }
-let j = new v
+let v = new j

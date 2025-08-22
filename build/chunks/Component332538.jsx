@@ -36,9 +36,9 @@ function N(e) {
     n = (0, o.e7)([O.Z], () => O.Z.getStateForGuild(e)),
     {
       trailing: m,
-      showUnread: P
+      showUnread: I
     } = function(e, t, n) {
-      let l = (0, C.Z)(e).available,
+      let l = (0, x.Z)(e).available,
         {
           shouldShow: o
         } = (0, E._)(e, "useGuildPowerupsChannelListIndicators"),
@@ -52,16 +52,16 @@ function N(e) {
         };
         let {
           unlockedPowerups: a
-        } = t, u = (0, x.h)(a), d = null != (i = null == n ? true : n.lastSeenWarningNotification) ? i : Date.now(), f = new Date(null == (e = u[u.length - 1]) ? true : e.ends_at).getTime(), h = null != (o = null == n ? true : n.lastBoostCount) ? o : 0;
-        return u.length > 0 && d < f || p ? {
+        } = t, u = (0, C.h)(a), d = null != (i = null == n ? true : n.lastSeenWarningNotification) ? i : Date.now(), h = new Date(null == (e = u[u.length - 1]) ? true : e.ends_at).getTime(), f = null != (o = null == n ? true : n.lastBoostCount) ? o : 0;
+        return u.length > 0 && d < h || p ? {
           trailing: (0, r.jsx)(s.Mgn, {
             color: s.TVs.colors.STATUS_WARNING,
             size: "sm"
           }),
           showUnread: true
-        } : l !== h && l - h > 0 ? {
+        } : l !== f && l - f > 0 ? {
           trailing: (0, r.jsx)(s.mAB, {
-            count: l - h,
+            count: l - f,
             color: c.Z.BACKGROUND_ACCENT
           }),
           showUnread: true
@@ -74,9 +74,9 @@ function N(e) {
     N = function(e, t) {
       let [n, r] = (0, d.US)(null != t ? [a.z.GUILD_POWERUP_PERKS_COACHMARK] : []), o = n === a.z.GUILD_POWERUP_PERKS_COACHMARK, {
         available: s
-      } = (0, C.Z)(e), c = function(e, t) {
-        let n = (0, v.qI)(e, "GuildPowerupsChannelRow"),
-          r = (0, y.i)(e, "GuildPowerupsChannelRow");
+      } = (0, x.Z)(e), c = function(e, t) {
+        let n = (0, j.qI)(e, "GuildPowerupsChannelRow"),
+          r = (0, _.i)(e, "GuildPowerupsChannelRow");
         return i.useMemo(() => {
           if (r && !Array.from(S.os[S.Du.GUILD_TAG_BADGE_PACKS_WAVE_ONE]).some(e => {
               var n;
@@ -107,7 +107,7 @@ function N(e) {
           let i = S.Cp[n],
             l = null != i ? t.allPowerups[i] : true;
           if (null != l) return {
-            type: _.J.LEVEL_REACHED,
+            type: y.J.LEVEL_REACHED,
             powerup: l,
             markAsDismissed: t => {
               (0, p.Qd)(r, e, true, t)
@@ -117,25 +117,25 @@ function N(e) {
         if (null != n) return n;
         let r = function(e, t, n) {
           var r, i;
-          let l = null != (i = null == (r = f.Z.getGuild(e)) ? true : r.premiumTier) ? i : I.Eu4.NONE,
+          let l = null != (i = null == (r = h.Z.getGuild(e)) ? true : r.premiumTier) ? i : P.Eu4.NONE,
             o = Array.from(S.Tg.values()).flatMap(r => r.length <= 0 || r.some(e => {
               if (null != t.unlockedPowerups[e]) returntrue;
               let n = S.Rx[e];
               return null != n && !!(l >= n)
             }) ? [] : r.map(r => {
               let i = t.allPowerups[r];
-              return null == i || n < i.cost || (0, j.e)(e, i, "maybeGetPerkPurchaseablePopoutDCF") ? null : i
-            })).filter(h.lm);
+              return null == i || n < i.cost || (0, v.e)(e, i, "maybeGetPerkPurchaseablePopoutDCF") ? null : i
+            })).filter(f.lm);
           if (0 !== o.length) {
             if (1 === o.length && !(0, p.OY)(a.C.GUILD_POWERUP_SINGLE_SKU_PURCHASE_COACHMARK, e)) return {
-              type: _.J.PERKS_PURCHASABLE,
+              type: y.J.PERKS_PURCHASABLE,
               powerups: o,
               markAsDismissed: t => {
                 (0, p.Qd)(a.C.GUILD_POWERUP_SINGLE_SKU_PURCHASE_COACHMARK, e, true, t)
               }
             };
             if (o.length > 1 && !(0, p.OY)(a.C.GUILD_POWERUP_CHOICE_SKU_PURCHASE_COACHMARK, e)) return {
-              type: _.J.PERKS_PURCHASABLE,
+              type: y.J.PERKS_PURCHASABLE,
               powerups: o,
               markAsDismissed: t => {
                 (0, p.Qd)(a.C.GUILD_POWERUP_CHOICE_SKU_PURCHASE_COACHMARK, e, true, t)
@@ -144,13 +144,13 @@ function N(e) {
           }
         }(e, t, s);
         if (null != r) return r
-      }, [e, t, o, b, s]), [x, E] = (0, d.bf)(null != O ? a.z.GUILD_POWERUP_NOTIFICATION : null, {
-        cooldownDurationMs: _.d
+      }, [e, t, o, b, s]), [C, E] = (0, d.bf)(null != O ? a.z.GUILD_POWERUP_NOTIFICATION : null, {
+        cooldownDurationMs: y.d
       });
       return i.useMemo(() => {
         if (null != t) {
           if (o) return {
-            type: _.J.PERKS_AVAILABLE,
+            type: y.J.PERKS_AVAILABLE,
             markAsDismissed: r
           };
           if (b) {
@@ -159,11 +159,11 @@ function N(e) {
             if (0 === n.length) return;
             return {
               powerups: n,
-              type: _.J.NEW_PERK_AVAILABLE,
+              type: y.J.NEW_PERK_AVAILABLE,
               markAsDismissed: m
             }
           }
-          if (x === a.z.GUILD_POWERUP_NOTIFICATION && null != O) {
+          if (C === a.z.GUILD_POWERUP_NOTIFICATION && null != O) {
             var e, n;
             return e = function(e) {
               for (var t = 1; t < arguments.length; t++) {
@@ -198,11 +198,11 @@ function N(e) {
             }), e
           }
         }
-      }, [t, o, r, O, x, E, b, m, c])
+      }, [t, o, r, O, C, E, b, m, c])
     }(e, n);
-  if (null !== n && (null != m || P || null != N)) return {
+  if (null !== n && (null != m || I || null != N)) return {
     trailing: m,
-    showUnread: P,
+    showUnread: I,
     popout: N
   }
 }
@@ -214,13 +214,13 @@ function w(e) {
     (0, m.jd)(e)
   }, [e]), i.useEffect(() => {
     var e;
-    null == n || null == (e = n.popout) || e.markAsDismissed(P.L.AUTO_DISMISS)
+    null == n || null == (e = n.popout) || e.markAsDismissed(I.L.AUTO_DISMISS)
   }, [n]), i.useEffect(() => {
     null != t && g.Oe.forEach(n => {
       let r = S.Cp[n];
       if (null == r || null == t.unlockedPowerups[r]) return;
       let i = S.Q1[n];
-      null != i && (0, p.Qd)(i, e, false, P.L.AUTO_DISMISS)
+      null != i && (0, p.Qd)(i, e, false, I.L.AUTO_DISMISS)
     })
   }, [e, t])
 }

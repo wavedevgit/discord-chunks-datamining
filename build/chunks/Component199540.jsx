@@ -22,7 +22,7 @@ function g(e) {
     animate: n
   } = e, i = (0, a.e7)([d.Z], () => d.Z.getGuild(t), [t]), l = (0, s.dQu)(s.TVs.modules.guildbar.AVATAR_SIZE);
   return null == i ? (0, r.jsx)("div", {
-    className: o()(h.folderPreviewGuildIcon, h.folderPreviewGuildIconError),
+    className: o()(f.folderPreviewGuildIcon, f.folderPreviewGuildIconError),
     children: (0, r.jsx)(s.Mgn, {
       color: "currentColor"
     })
@@ -32,7 +32,7 @@ function g(e) {
     size: u.Z.Sizes.MINI,
     iconSize: l,
     lossless: true,
-    className: h.folderPreviewGuildIcon,
+    className: f.folderPreviewGuildIcon,
     tabIndex: false
   })
 }
@@ -45,18 +45,18 @@ function m(e) {
   } = e, {
     children: l
   } = t, a = n && i, c = (0, r.jsx)("div", {
-    className: h.folderIconWrapper,
+    className: f.folderIconWrapper,
     children: (0, r.jsx)("div", {
-      className: h.folderIcon,
+      className: f.folderIcon,
       children: (0, r.jsx)(s.ROc, {
         size: "sm",
         color: "currentColor"
       })
     })
   }), u = (0, r.jsx)("div", {
-    className: h.folderPreviewWrapper,
+    className: f.folderPreviewWrapper,
     children: (0, r.jsx)("div", {
-      className: h.folderPreview,
+      className: f.folderPreview,
       children: l.slice(0, 4).map(e => (0, r.jsx)(g, {
         guildId: e.id,
         animate: n
@@ -66,8 +66,8 @@ function m(e) {
   return (0, r.jsxs)("div", {
     "aria-hidden": true,
     className: o()({
-      [h.folderDragPreview]: a,
-      [h.folderButtonContent]: !a
+      [f.folderDragPreview]: a,
+      [f.folderButtonContent]: !a
     }),
     children: [!a && c, u]
   })
@@ -84,17 +84,17 @@ function b(e) {
     isMentionLowImportance: g,
     tooltipName: b,
     folderGroupId: O,
-    folderButtonContent: _,
-    onClick: y,
-    onContextMenu: v,
-    onHoverChange: j,
-    onKeyDown: C,
+    folderButtonContent: y,
+    onClick: _,
+    onContextMenu: j,
+    onHoverChange: v,
+    onKeyDown: x,
     treeItemProps: {
-      onFocus: x
+      onFocus: C
     },
     "aria-setsize": E,
     "aria-posinset": S
-  } = e, I = function(e, t) {
+  } = e, P = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -108,11 +108,11 @@ function b(e) {
       for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
-  }(e.treeItemProps, ["onFocus"]), [P, N] = i.useState(false), w = i.useCallback(() => {
-    a || N(true), null == j || j(true)
-  }, [a, j]), Z = i.useCallback(() => {
-    a || N(false), null == j || j(false)
-  }, [a, j]), T = o || null == u ? null : (0, p.Or)(u), A = !o && d > 0 ? (0, p.Ne)(d, g ? c.Z.BACKGROUND_ACCENT : c.Z.STATUS_DANGER) : null;
+  }(e.treeItemProps, ["onFocus"]), [I, N] = i.useState(false), w = i.useCallback(() => {
+    a || N(true), null == v || v(true)
+  }, [a, v]), Z = i.useCallback(() => {
+    a || N(false), null == v || v(false)
+  }, [a, v]), T = o || null == u ? null : (0, p.Or)(u), A = !o && d > 0 ? (0, p.Ne)(d, g ? c.Z.BACKGROUND_ACCENT : c.Z.STATUS_DANGER) : null;
   return (0, r.jsx)(s.tEY, {
     children: (0, r.jsx)(s.P3F, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -132,17 +132,17 @@ function b(e) {
       }
       return e
     }({
-      className: h.folderButton,
-      onClick: y,
-      onContextMenu: v,
+      className: f.folderButton,
+      onClick: _,
+      onContextMenu: j,
       onMouseEnter: w,
       onMouseLeave: Z,
-      onKeyDown: C,
-      onFocus: x,
+      onKeyDown: x,
+      onFocus: C,
       focusProps: {
         enabled: false
       }
-    }, I), n = n = {
+    }, P), n = n = {
       role: "treeitem",
       "aria-setsize": E,
       "aria-posinset": S,
@@ -156,18 +156,18 @@ function b(e) {
           width: (0, s.OVM)(d)
         },
         children: [(0, r.jsx)(s.nn4, {
-          children: f.intl.formatToPlainString(f.t["90/DwM"], {
+          children: h.intl.formatToPlainString(h.t["90/DwM"], {
             folderName: b,
             mentions: d
           })
         }), (0, r.jsx)("div", {
-          className: h.folderButtonInner,
-          children: null != _ ? (0, r.jsx)("div", {
-            className: h.folderIconWrapper,
-            children: _
+          className: f.folderButtonInner,
+          children: null != y ? (0, r.jsx)("div", {
+            className: f.folderIconWrapper,
+            children: y
           }) : (0, r.jsx)(m, {
             folderNode: l,
-            hovered: P,
+            hovered: I,
             sorting: a
           })
         })]

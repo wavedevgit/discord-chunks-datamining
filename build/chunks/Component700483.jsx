@@ -208,7 +208,7 @@ function ec(e) {
     channelId: t
   } = e, {
     parentAnalyticsLocation: n
-  } = (0, u.ZP)(), i = (0, l.e7)([K.Z], () => K.Z.isMuted()), o = (0, q.pp)(t), s = (0, l.e7)([K.Z], () => K.Z.shouldPlay());
+  } = (0, u.ZP)(), i = (0, l.e7)([K.Z], () => K.Z.isMuted()), o = (0, Y.pp)(t), s = (0, l.e7)([K.Z], () => K.Z.shouldPlay());
   return o ? (0, r.jsx)(N.d, {
     isTrayButton: true,
     isActive: !i,
@@ -216,7 +216,7 @@ function ec(e) {
     iconComponent: i ? a.xjP : a.RZG,
     color: i ? true : "green",
     onClick: () => {
-      (0, m.v)(n, m.d.STAGE_MUSIC, i), (0, Y.v)(!i)
+      (0, m.v)(n, m.d.STAGE_MUSIC, i), (0, q.v)(!i)
     }
   }) : (0, r.jsx)(N.d, {
     isTrayButton: true,
@@ -225,7 +225,7 @@ function ec(e) {
     iconComponent: s ? a.RZG : a.xjP,
     color: s ? "green" : true,
     onClick: () => {
-      (0, m.v)(n, m.d.STAGE_MUSIC, !s), (0, Y.z)(!s)
+      (0, m.v)(n, m.d.STAGE_MUSIC, !s), (0, q.z)(!s)
     }
   })
 }
@@ -244,12 +244,12 @@ let eu = Chunk647438.memo(function(e) {
   } = (0, O.Z)(), v = (0, E.Z)(t), {
     limit: N,
     reachedLimit: A
-  } = (0, j.Z)(t), M = (0, l.e7)([U.default], () => U.default.getCurrentUser()), L = (0, l.e7)([D.Z], () => (0, _.Z)(D.Z)), B = (0, l.e7)([k.Z], () => k.Z.getVoiceChannelId() === t.id, [t.id]), F = (0, l.e7)([d.Z], () => d.Z.getStreamParticipants(t.id)[0], [t.id]), H = (0, W.PK)(t.id), V = N > 0, z = A && !H || null != F && F.user.id !== (null == M ? true : M.id), Y = (0, g.u)("AudioDeviceMenu", n, {
+  } = (0, j.Z)(t), M = (0, l.e7)([U.default], () => U.default.getCurrentUser()), L = (0, l.e7)([D.Z], () => (0, _.Z)(D.Z)), B = (0, l.e7)([k.Z], () => k.Z.getVoiceChannelId() === t.id, [t.id]), F = (0, l.e7)([d.Z], () => d.Z.getStreamParticipants(t.id)[0], [t.id]), H = (0, W.PK)(t.id), V = N > 0, z = A && !H || null != F && F.user.id !== (null == M ? true : M.id), q = (0, g.u)("AudioDeviceMenu", n, {
     entrypoint: et.A5.CARET
-  }), q = i.useRef(null), K = i.useRef(null);
+  }), Y = i.useRef(null), K = i.useRef(null);
   if (null == M) return null;
   let X = (0, r.jsx)(a.yRy, {
-    targetElementRef: q,
+    targetElementRef: Y,
     renderPopout: e => {
       let {
         closePopout: t
@@ -275,7 +275,7 @@ let eu = Chunk647438.memo(function(e) {
         isShown: i
       } = t;
       return (0, r.jsx)(R.C, {
-        ref: q,
+        ref: Y,
         centerButton: true,
         hasPermission: v,
         enabled: x,
@@ -309,7 +309,7 @@ let eu = Chunk647438.memo(function(e) {
               renderOutputVolume: true,
               renderDeafen: true,
               minimal: true,
-              onInteraction: Y
+              onInteraction: q
             })
           })
         },

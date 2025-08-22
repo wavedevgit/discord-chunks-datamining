@@ -2,7 +2,7 @@
 /** chunk id: 590965, original params: e,t,n (module,exports,require) **/
 let r;
 require.d(exports, {
-  Z: () => I
+  Z: () => P
 }), require("./388685.js"), require("./539854.js");
 var i, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -19,7 +19,7 @@ var i, Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk176505 = require("./176505.js");
 
-function _(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -28,25 +28,25 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
 }
-let v = Chunk981631.IlC.APP,
-  j = false,
-  C = false,
-  x = [];
+let j = Chunk981631.IlC.APP,
+  v = false,
+  x = false,
+  C = [];
 
 function E() {
-  j = true
+  v = true
 }
 class S extends(i = Chunk442837.ZP.Store) {
   initialize() {
@@ -54,22 +54,22 @@ class S extends(i = Chunk442837.ZP.Store) {
   }
   isOpen() {
     let e = __OVERLAY__ ? Chunk981631.IlC.OVERLAY : Chunk981631.IlC.APP;
-    return !!(j && x.length > 0 && v === module)
+    return !!(v && C.length > 0 && j === module)
   }
   getProps() {
     return {
-      invite: x.length > 0 ? x[0][0] : null,
+      invite: C.length > 0 ? C[0][0] : null,
       error: null != r && "" !== r ? r : null,
-      submitting: C
+      submitting: x
     }
   }
 }
-_(S, "displayName", "InviteModalStore");
-let I = new S(Chunk570140.Z, {
+y(S, "displayName", "InviteModalStore");
+let P = new S(Chunk570140.Z, {
   OVERLAY_INITIALIZE: E,
   CONNECTION_OPEN: E,
   CONNECTION_CLOSED: function() {
-    j = false
+    v = false
   },
   INVITE_MODAL_OPEN: function(e) {
     let t = e.invite;
@@ -92,7 +92,7 @@ let I = new S(Chunk570140.Z, {
             } = e;
             if (null != t) {
               let e = u.Z.getChannel(t.id);
-              if (f.Z.can(b.Plq.VIEW_CHANNEL, e)) return t.id
+              if (h.Z.can(b.Plq.VIEW_CHANNEL, e)) return t.id
             }
             return null
           }(t);
@@ -100,11 +100,11 @@ let I = new S(Chunk570140.Z, {
         }
       }
     }
-    if (x.some(e => {
+    if (C.some(e => {
         let [n] = e;
         return n.code === t.code
       })) returnfalse;
-    v = e.context, C = false;
+    j = e.context, x = false;
     let n = function(e) {
       let {
         approximate_member_count: t,
@@ -129,23 +129,23 @@ let I = new S(Chunk570140.Z, {
         type: s,
         is_nickname_changeable: d
       };
-      return null != c && (p.channel = y({}, c)), null != u && (p.guild = (0, g.Qs)(u)), null != e.inviter && (p.inviter = y({}, e.inviter)), p
+      return null != c && (p.channel = _({}, c)), null != u && (p.guild = (0, g.Qs)(u)), null != e.inviter && (p.inviter = _({}, e.inviter)), p
     }(t);
-    x.push([n, e.resolve])
+    C.push([n, e.resolve])
   },
   INVITE_MODAL_CLOSE: function() {
-    if (r = null, C = false, x.length > 0) {
-      let [, e] = x.shift();
+    if (r = null, x = false, C.length > 0) {
+      let [, e] = C.shift();
       null != module && module()
     }
   },
   INVITE_ACCEPT: function() {
-    C = true
+    x = true
   },
   INVITE_MODAL_ERROR: function(e) {
     let {
       message: t
     } = e;
-    r = t, C = false
+    r = t, x = false
   }
 })

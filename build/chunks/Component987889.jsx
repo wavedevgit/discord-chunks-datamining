@@ -1,7 +1,7 @@
 /** Chunk was on 91488 **/
 /** chunk id: 987889, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => I
+  Z: () => P
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk361584 = require("./361584.js");
 
-function v(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -41,7 +41,7 @@ function v(e) {
   return e
 }
 
-function j(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -53,7 +53,7 @@ function j(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let C = {
+let x = {
   [Chunk982183.ln.MENTION]: [Chunk982183.r0.SETTINGS],
   [Chunk982183.ln.REPLY]: [Chunk982183.r0.SETTINGS],
   [Chunk982183.ln.REACTION]: [Chunk982183.r0.SETTINGS],
@@ -61,24 +61,24 @@ let C = {
   [Chunk982183.ln.MESSAGE]: [Chunk982183.r0.SETTINGS]
 };
 
-function x(e) {
+function C(e) {
   let {
     label: t,
     onClick: n,
     message: l,
     Icon: a,
     interactionType: s
-  } = e, [c, u] = (0, i.useState)(false), d = (0, h.fJ)();
+  } = e, [c, u] = (0, i.useState)(false), d = (0, f.fJ)();
   return (0, r.jsx)(o.ua7, {
     text: t,
     position: "top",
     spacing: 4,
     onTooltipShow: () => u(true),
     onTooltipHide: () => u(false),
-    children: e => (0, r.jsx)(o.P3F, j(v({}, e), {
-      className: y.action,
+    children: e => (0, r.jsx)(o.P3F, v(j({}, e), {
+      className: _.action,
       onClick: e => {
-        (0, h.Qz)({
+        (0, f.Qz)({
           message: l,
           interactionType: s,
           viewId: d
@@ -86,7 +86,7 @@ function x(e) {
       },
       children: (0, r.jsx)(a, {
         size: c ? "sm" : "xs",
-        className: y.actionIcon
+        className: _.actionIcon
       })
     }))
   })
@@ -101,9 +101,9 @@ function E(e) {
     Menu: s,
     interactionType: c,
     actionType: u
-  } = e, d = (0, h.fJ)(), [p, f] = (0, i.useState)(false), [g, b] = (0, i.useState)(false), O = (0, i.useRef)(null), {
-    openMenu: _,
-    closeMenu: C
+  } = e, d = (0, f.fJ)(), [p, h] = (0, i.useState)(false), [g, b] = (0, i.useState)(false), O = (0, i.useRef)(null), {
+    openMenu: y,
+    closeMenu: x
   } = (0, m.z)();
   return (0, r.jsx)(o.yRy, {
     shouldShow: g,
@@ -113,7 +113,7 @@ function E(e) {
     autoInvert: false,
     targetElementRef: O,
     onRequestClose: () => {
-      b(false), C(n.id, u)
+      b(false), x(n.id, u)
     },
     renderPopout: e => (0, r.jsx)(o.VqE, {
       onClick: e => e.stopPropagation(),
@@ -128,24 +128,24 @@ function E(e) {
       text: l,
       position: "top",
       spacing: 4,
-      onTooltipShow: () => f(true),
-      onTooltipHide: () => f(false),
-      children: t => (0, r.jsx)(o.P3F, j(v({}, t), {
+      onTooltipShow: () => h(true),
+      onTooltipHide: () => h(false),
+      children: t => (0, r.jsx)(o.P3F, v(j({}, t), {
         innerRef: O,
-        className: y.action,
+        className: _.action,
         onClick: e => {
-          (0, h.Qz)({
+          (0, f.Qz)({
             message: n,
             interactionType: c,
             viewId: d
           }), e.stopPropagation();
           let t = !g;
-          b(t), t ? _(n.id, u) : C(n.id, u)
+          b(t), t ? y(n.id, u) : x(n.id, u)
         },
-        children: (0, r.jsx)(a, j(v({}, e), {
+        children: (0, r.jsx)(a, v(j({}, e), {
           message: n,
           "aria-label": l,
-          className: y.actionIcon,
+          className: _.actionIcon,
           size: p ? "sm" : "xs"
         }))
       }))
@@ -172,7 +172,7 @@ let S = {
   [Chunk982183.r0.BOOKMARK]: {
     type: "menu",
     label: Chunk388032.intl.string(Chunk388032.t["9p3D9v"]),
-    Icon: e => null != p.Z.getSavedMessage(e.message.channel_id, e.message.id) ? (0, r.jsx)(o.plf, v({}, e)) : (0, r.jsx)(o.gt9, v({}, e)),
+    Icon: e => null != p.Z.getSavedMessage(e.message.channel_id, e.message.id) ? (0, r.jsx)(o.plf, j({}, e)) : (0, r.jsx)(o.gt9, j({}, e)),
     interactionType: Chunk804932.s_.BOOKMARK,
     Menu: e => {
       let {
@@ -182,14 +182,14 @@ let S = {
         message: t,
         savedMessage: i
       });
-      return (0, r.jsxs)(o.v2r, j(v({}, n), {
+      return (0, r.jsxs)(o.v2r, v(j({}, n), {
         navId: "message-reminder-create",
-        "aria-label": _.intl.string(_.t.mJ3P0N),
+        "aria-label": y.intl.string(y.t.mJ3P0N),
         onClose: n.closePopout,
         onSelect: () => null,
         children: [null != i ? (0, r.jsx)(o.sNh, {
           id: "remove-from-for-later",
-          label: _.intl.string(_.t.SvXS1d),
+          label: y.intl.string(y.t.SvXS1d),
           icon: o.plf,
           action: () => (0, d.x)({
             channelId: t.channel_id,
@@ -199,7 +199,7 @@ let S = {
           })
         }) : (0, r.jsx)(o.sNh, {
           id: "create-bookmark",
-          label: _.intl.string(_.t["9p3D9v"]),
+          label: y.intl.string(y.t["9p3D9v"]),
           icon: o.gt9,
           action: () => (0, d.z)({
             channelId: t.channel_id,
@@ -220,20 +220,20 @@ let S = {
         channel: t,
         renderPopoutProps: n
       } = e;
-      return t.isThread() ? (0, r.jsx)(f.Z, j(v({}, n), {
+      return t.isThread() ? (0, r.jsx)(h.Z, v(j({}, n), {
         channel: t,
         navId: "thread-context",
-        label: _.intl.string(_.t["1NBjqa"])
-      })) : (0, r.jsx)(c.Z, j(v({}, n), {
+        label: y.intl.string(y.t["1NBjqa"])
+      })) : (0, r.jsx)(c.Z, v(j({}, n), {
         channel: t,
         navId: "channel-context",
-        label: _.intl.string(_.t.Xm41aW)
+        label: y.intl.string(y.t.Xm41aW)
       }))
     }
   }
 };
 
-function I(e) {
+function P(e) {
   let {
     message: t,
     channel: n,
@@ -243,7 +243,7 @@ function I(e) {
     return (0, i.useMemo)(() => {
       let e = b.ln.MENTION,
         r = new Set;
-      return t && r.add(b.r0.ACK), n && r.add(b.r0.BOOKMARK), C[e].forEach(e => r.add(e)), Array.from(r)
+      return t && r.add(b.r0.ACK), n && r.add(b.r0.BOOKMARK), x[e].forEach(e => r.add(e)), Array.from(r)
     }, [e, t, n])
   })(t, l);
   return (0, r.jsx)(o.Kqy, {
@@ -251,17 +251,17 @@ function I(e) {
     gap: 4,
     align: "center",
     justify: "center",
-    className: y.actions,
+    className: _.actions,
     children: a.map(e => {
       let i = S[e];
       switch (i.type) {
         case "standard":
-          return (0, r.jsx)(x, j(v({}, i), {
+          return (0, r.jsx)(C, v(j({}, i), {
             actionType: e,
             message: t
           }), e);
         case "menu":
-          return (0, r.jsx)(E, j(v({}, i), {
+          return (0, r.jsx)(E, v(j({}, i), {
             actionType: e,
             channel: n,
             message: t

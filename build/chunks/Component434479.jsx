@@ -1,7 +1,7 @@
 /** Chunk was on 91488 **/
 /** chunk id: 434479, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  m: () => h
+  m: () => f
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -33,7 +33,7 @@ function p(e) {
   return e
 }
 
-function f(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -46,20 +46,20 @@ function f(e, t) {
   }), e
 }
 
-function h(e) {
+function f(e) {
   var t, {
       id: n,
       className: i,
-      innerClassName: h,
+      innerClassName: f,
       renderIcon: g,
       text: m,
       selected: b,
       trailing: O,
-      background: _,
-      showUnread: y = false,
-      ref: v
+      background: y,
+      showUnread: _ = false,
+      ref: j
     } = e,
-    j = function(e, t) {
+    v = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -74,17 +74,17 @@ function h(e) {
       }
       return i
     }(e, ["id", "className", "innerClassName", "renderIcon", "text", "selected", "trailing", "background", "showUnread", "ref"]);
-  let C = (0, o.JA)(n),
-    x = null != (t = (0, a.qg)(m)) ? t : "";
+  let x = (0, o.JA)(n),
+    C = null != (t = (0, a.qg)(m)) ? t : "";
   return (0, r.jsx)("li", {
-    ref: v,
-    children: (0, r.jsxs)(s.kL8, f(p({}, j), {
-      buttonProps: f(p({}, C), {
+    ref: j,
+    children: (0, r.jsxs)(s.kL8, h(p({}, v), {
+      buttonProps: h(p({}, x), {
         id: n,
         role: "button"
       }),
       tag: "div",
-      "aria-label": x,
+      "aria-label": C,
       focusProps: {
         offset: {
           top: 1,
@@ -92,16 +92,16 @@ function h(e) {
           right: 4
         }
       },
-      onContextMenu: null != j.onContextMenu ? j.onContextMenu : e => {
+      onContextMenu: null != v.onContextMenu ? v.onContextMenu : e => {
         e.stopPropagation()
       },
       className: l()(u.containerDefault, d.wrapper, {
         [d.modeSelected]: b
       }, i),
-      children: [_, y ? (0, r.jsx)("div", {
+      children: [y, _ ? (0, r.jsx)("div", {
         className: l()(d.unread, d.unreadImportant)
       }) : null, (0, r.jsx)("div", {
-        className: l()([d.link, d.basicChannelRowLink, h]),
+        className: l()([d.link, d.basicChannelRowLink, f]),
         children: (0, r.jsxs)("div", {
           className: c.content,
           children: [(0, r.jsx)("div", {

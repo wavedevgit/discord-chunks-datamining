@@ -5,7 +5,7 @@ require.d(exports, {
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
-var Chunk755721 = require("./755721.js"),
+var Chunk481060 = require("./481060.js"),
   Chunk493683 = require("./493683.js"),
   Chunk726521 = require("./726521.js"),
   Chunk213010 = require("./213010.js"),
@@ -16,29 +16,27 @@ function u(e) {
   let {
     otherUserId: t,
     channel: n,
-    buttonSize: u = i.Ph.TINY,
-    className: d,
-    buttonText: p,
-    navigateAwayOnReportSuccess: h = true,
-    onReportClick: f,
-    onReportSubmit: m,
-    onMouseEnter: g,
-    onMouseLeave: b
-  } = e, _ = (0, o.Q)(t), y = (0, s.V)(n.id, t);
-  if (!_ || null == y) return null;
-  let C = () => {
-    null == m || m(), l.Z.closePrivateChannel(n.id, h)
+    buttonText: u,
+    buttonSize: d = "sm",
+    navigateAwayOnReportSuccess: p = true,
+    onReportClick: h,
+    onReportSubmit: f,
+    onMouseEnter: m,
+    onMouseLeave: g
+  } = e, b = (0, o.Q)(t), _ = (0, s.V)(n.id, t);
+  if (!b || null == _) return null;
+  let y = () => {
+    null == f || f(), l.Z.closePrivateChannel(n.id, p)
   };
-  return (0, r.jsx)(i.zx, {
-    className: d,
-    size: u,
-    color: i.zx.Colors.RED,
-    disabled: null == y,
+  return (0, r.jsx)(i.zxk, {
+    size: d,
+    variant: "critical-primary",
+    disabled: null == _,
     onClick: () => {
-      null == f || f(), (0, a.WL)(y, C)
+      null == h || h(), (0, a.WL)(_, y)
     },
-    onMouseEnter: g,
-    onMouseLeave: b,
-    children: null != p ? p : c.intl.string(c.t.HHZmDg)
+    onMouseEnter: m,
+    onMouseLeave: g,
+    text: null != u ? u : c.intl.string(c.t.HHZmDg)
   })
 }

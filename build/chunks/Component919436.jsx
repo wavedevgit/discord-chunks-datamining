@@ -87,7 +87,7 @@ class R extends(r = Chunk647438.PureComponent) {
       controller: t
     } = this.state;
     e(), t.update({
-      immediate: !v.Z.isFocused(),
+      immediate: !j.Z.isFocused(),
       height: 1,
       opacity: 1,
       scale: 1,
@@ -115,7 +115,7 @@ class R extends(r = Chunk647438.PureComponent) {
     this.setState({
       animating: true
     }, () => t.update({
-      immediate: !v.Z.isFocused(),
+      immediate: !j.Z.isFocused(),
       height: 0,
       opacity: 0,
       scale: 0,
@@ -159,9 +159,9 @@ class R extends(r = Chunk647438.PureComponent) {
       isCurrentUserInThisDMCall: u,
       unread: d,
       isGDMFacepileEnabled: p,
-      treeItemProps: f
+      treeItemProps: h
     } = this.props, {
-      hovered: h,
+      hovered: f,
       animating: m
     } = this.state, b = module.isMultiUserDM() && null == module.icon && Chunk43267, O = () => (0, Chunk951288.jsx)(Chunk481060.LYs, w({
       to: Chunk981631.Z5c.CHANNEL(Chunk981631.ME, module.id),
@@ -230,7 +230,7 @@ class R extends(r = Chunk647438.PureComponent) {
     }), N(this, "handleContextMenu", e => {
       let {
         channel: t
-      } = this.props, r = t.type === S.d4z.DM ? y.default.getUser(t.getRecipientId()) : null;
+      } = this.props, r = t.type === S.d4z.DM ? _.default.getUser(t.getRecipientId()) : null;
       null != r ? (0, u.jW)(e, async () => {
         let {
           default: e
@@ -259,36 +259,36 @@ N(R, "defaultProps", {
 });
 let D = Chunk647438.forwardRef(function(e, t) {
   let n = e.channel.id,
-    r = (0, f.ZP)(e.channel),
+    r = (0, h.ZP)(e.channel),
     l = (0, a.Ie)(n, 2),
     o = (0, s.e7)([b.Z], () => b.Z.getChannelId(), []),
     u = (0, s.e7)([d.Z], () => null != o ? d.Z.getMode(o) : S.WtW.VOICE, [o]),
     p = (0, s.e7)([m.Z], () => m.Z.getAllApplicationStreamsForChannel(n).length > 0),
-    g = (0, s.e7)([_.Z], () => _.Z.getChannelId(), []),
-    y = (0, s.e7)([O.ZP], () => O.ZP.getMentionCount(n), [n]),
+    g = (0, s.e7)([y.Z], () => y.Z.getChannelId(), []),
+    _ = (0, s.e7)([O.ZP], () => O.ZP.getMentionCount(n), [n]),
     {
-      isFacepileEnabled: v
-    } = h.Z.useExperiment({
+      isFacepileEnabled: j
+    } = f.Z.useExperiment({
       location: "unread_direct_message"
     }, {
       autoTrackExposure: false
     }),
-    j = o === n,
-    C = false,
-    x = false;
-  j && (C = u === S.WtW.VOICE, x = u === S.WtW.VIDEO);
+    v = o === n,
+    x = false,
+    C = false;
+  v && (x = u === S.WtW.VOICE, C = u === S.WtW.VIDEO);
   let E = (0, c.dQu)(c.TVs.modules.guildbar.AVATAR_SIZE);
   return (0, i.jsx)(R, Z(w({}, e), {
     ref: t,
     channelName: r,
-    unread: y > 0,
+    unread: _ > 0,
     selected: g === n,
-    badge: y,
-    audio: C,
-    video: x,
+    badge: _,
+    audio: x,
+    video: C,
     stream: p,
-    isCurrentUserInThisDMCall: j,
-    isGDMFacepileEnabled: v,
+    isCurrentUserInThisDMCall: v,
+    isGDMFacepileEnabled: j,
     size: E,
     treeItemProps: l
   }))

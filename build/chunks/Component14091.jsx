@@ -199,7 +199,7 @@ function z(e) {
   })
 }
 let W = [],
-  Y = Chunk647438.memo(function(e) {
+  q = Chunk647438.memo(function(e) {
     let {
       searchContext: t,
       search: n,
@@ -293,14 +293,14 @@ let W = [],
           })
         }
       }, [G, k]),
-      Y = i.useCallback(e => {
+      q = i.useCallback(e => {
         e === v || n.isSearching || ((0, D.zW)({
           searchContext: t,
           searchRequestAnalyticsId: a,
           mode: e
         }), _(e))
       }, [_, n.isSearching, t, v, a]),
-      q = i.useCallback((e, r) => {
+      Y = i.useCallback((e, r) => {
         let i = g.Z.getChannel(e.channel_id),
           l = null != i ? i.getGuildId() : null,
           s = (0, C.Tm)(t),
@@ -363,7 +363,7 @@ let W = [],
       children: [(0, r.jsx)(S.Z, {
         searchContext: t,
         searchMode: v,
-        onSearchModeChange: Y,
+        onSearchModeChange: q,
         totalResults: n.totalResults,
         isSearching: n.isSearching,
         isIndexing: n.isHistoricalIndexing,
@@ -390,7 +390,7 @@ let W = [],
           search: n,
           searchContext: t,
           renderEmbeds: l,
-          onClick: q,
+          onClick: Y,
           onScrollTo: A,
           onPageChange: K,
           paginationTotalCount: G ? w : true,
@@ -408,7 +408,7 @@ let W = [],
     })
   });
 
-function q(e) {
+function Y(e) {
   let {
     searchContext: t
   } = e, n = (0, v.UX)({
@@ -498,7 +498,7 @@ function q(e) {
     return M.Z.getSearchResultsQuery(e)
   }), Z = t.type === L.aib.FAVORITES, T = i.useCallback(e => _.Z.setShowBlockedResults(t, e), [t]), N = i.useDeferredValue(d), R = i.useDeferredValue(s), D = i.useDeferredValue(u);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(Y, {
+    children: [(0, r.jsx)(q, {
       searchContext: t,
       search: R,
       searchRequestAnalyticsId: D,
@@ -536,7 +536,7 @@ function K(e) {
     guildId: t,
     channelId: n
   });
-  return null == i ? null : (0, r.jsx)(q, {
+  return null == i ? null : (0, r.jsx)(Y, {
     searchContext: i
   })
 }

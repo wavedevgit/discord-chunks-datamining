@@ -198,7 +198,7 @@ class ec extends Chunk647438.PureComponent {
           children: exports.name
         })
       }),
-      f = (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+      h = (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
         children: [(0, Chunk951288.jsx)(Chunk925329.Z, {
           className: Chunk800339.gameIcon,
           game: exports,
@@ -255,7 +255,7 @@ class ec extends Chunk647438.PureComponent {
         embeddedActivity: n,
         isActivityPopoutOpen: r
       } = this.props;
-      s()(null != n, "Activity cannot be null during navigation click"), s()(null != t, "Channel cannot be null during navigation click"), f.Z.channelListScrollTo(null != (e = t.guild_id) ? e : er.ME, t.id), !r && ((0, U.vd)(t.type) && p.Z.selectParticipant(t.id, (0, C.gN)({
+      s()(null != n, "Activity cannot be null during navigation click"), s()(null != t, "Channel cannot be null during navigation click"), h.Z.channelListScrollTo(null != (e = t.guild_id) ? e : er.ME, t.id), !r && ((0, U.vd)(t.type) && p.Z.selectParticipant(t.id, (0, x.gN)({
         applicationId: n.applicationId,
         instanceId: n.compositeInstanceId
       })), (0, U.Qm)(t.type) && (0, O.tg)(ei.Ez.PANEL))
@@ -282,23 +282,23 @@ let eu = (0, Chunk730749.Z)(function(e) {
       return i
     }(e, ["guildId"]);
   let s = (0, c.e7)([B.default], () => B.default.getId()),
-    u = (0, c.e7)([P.ZP, Q.Z], () => (0, R.Z)(P.ZP, Q.Z)),
-    d = (0, c.e7)([q.Z, V.Z], () => V.Z.getChannel(q.Z.getVoiceChannelId())),
-    p = (0, c.e7)([_.ZP], () => _.ZP.getConnectedActivityChannelId()),
-    f = (0, c.e7)([V.Z], () => V.Z.getChannel(p)),
-    h = (0, c.e7)([H.Z], () => H.Z.getGuild(null == f ? true : f.guild_id)),
+    u = (0, c.e7)([I.ZP, Q.Z], () => (0, R.Z)(I.ZP, Q.Z)),
+    d = (0, c.e7)([q.Z, F.Z], () => F.Z.getChannel(q.Z.getVoiceChannelId())),
+    p = (0, c.e7)([y.ZP], () => y.ZP.getConnectedActivityChannelId()),
+    h = (0, c.e7)([F.Z], () => F.Z.getChannel(p)),
+    f = (0, c.e7)([H.Z], () => H.Z.getGuild(null == h ? true : h.guild_id)),
     [g, O] = (0, c.Wu)([G.Z], () => [G.Z.getCurrentUserActiveStream(), G.Z.getStreamerActiveStreamMetadata()]),
-    v = (0, c.e7)([m.Z], () => m.Z.useReducedMotion),
-    C = (0, c.e7)([_.ZP], () => _.ZP.getCurrentEmbeddedActivity()),
-    E = (0, c.e7)([H.Z, W.Z, F.ZP], () => null != d ? w.JL(d, H.Z, W.Z, false) : null != o && w.h_(F.ZP.getChannels(o), H.Z, W.Z).length > 0),
-    [I] = (0, j.Z)([null != (l = null != O && null != O.id ? O.id : null != u && null != u.id ? u.id : null != C ? C.applicationId : true) ? l : ""]),
+    j = (0, c.e7)([m.Z], () => m.Z.useReducedMotion),
+    x = (0, c.e7)([y.ZP], () => y.ZP.getCurrentEmbeddedActivity()),
+    E = (0, c.e7)([H.Z, W.Z, V.ZP], () => null != d ? w.JL(d, H.Z, W.Z, false) : null != o && w.h_(V.ZP.getChannels(o), H.Z, W.Z).length > 0),
+    [P] = (0, v.Z)([null != (l = null != O && null != O.id ? O.id : null != u && null != u.id ? u.id : null != x ? x.applicationId : true) ? l : ""]),
     N = (0, c.e7)([S.Z], () => S.Z.getFakeGameData()),
-    T = (0, c.e7)([_.ZP], () => _.ZP.getCurrentEmbeddedActivity()),
-    A = (0, y.Z)() && null != T && (0, b.R)(),
+    T = (0, c.e7)([y.ZP], () => y.ZP.getCurrentEmbeddedActivity()),
+    A = (0, _.Z)() && null != T && (0, b.R)(),
     D = (0, c.e7)([z.Z], () => (0, Z.Z)(z.Z) && (0, J.isWindows)()),
     k = (0, c.e7)([K.Z], () => null != s ? K.Z.findActivity(s, e => e.type === er.IIU.PLAYING) : null),
     U = null != g && g.ownerId === s && g.state !== er.jm8.ENDED,
-    $ = (0, c.e7)([X.default, Y.Z], () => null != f ? (0, x.F6)(f, X.default, Y.Z) : true),
+    $ = (0, c.e7)([X.default, Y.Z], () => null != h ? (0, C.F6)(h, X.default, Y.Z) : true),
     ee = (0, L.Z)(),
     [et, en] = i.useState(false),
     ei = (0, c.e7)([M.Z], () => M.Z.getWindowOpen(er.KJ3.ACTIVITY_POPOUT));
@@ -306,18 +306,18 @@ let eu = (0, Chunk730749.Z)(function(e) {
     guildId: o,
     canGoLive: D || A || true !== N,
     activity: k,
-    embeddedActivity: C,
+    embeddedActivity: x,
     userId: s,
     runningGame: null != N ? N : u,
-    application: I,
-    useReducedMotion: v,
+    application: P,
+    useReducedMotion: j,
     isStreaming: U,
-    channel: f,
+    channel: h,
     canStream: E,
     stream: g,
     streamMetadata: O,
     channelName: $,
-    guildForConnectedChannel: h,
+    guildForConnectedChannel: f,
     streamQualityIndicator: ee,
     isForceShowSharingPopout: et,
     setIsForceShowSharingPopout: en,

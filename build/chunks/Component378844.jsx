@@ -1,8 +1,8 @@
 /** Chunk was on 91488 **/
 /** chunk id: 378844, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  R: () => _,
-  Z: () => y
+  R: () => y,
+  Z: () => _
 });
 var r, Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -38,26 +38,26 @@ function O(e) {
   }
   return e
 }
-var _ = ((r = {})[r.VOICE = 0] = "VOICE", r);
-let y = e => {
+var y = ((r = {})[r.VOICE = 0] = "VOICE", r);
+let _ = e => {
   let {
     type: t,
     guildId: r,
-    closePopout: _
-  } = e, y = (0, u.Dt)(), {
-    notClaimed: v,
-    notEmailVerified: j,
-    notPhoneVerified: C,
-    newAccount: x,
+    closePopout: y
+  } = e, _ = (0, u.Dt)(), {
+    notClaimed: j,
+    notEmailVerified: v,
+    notPhoneVerified: x,
+    newAccount: C,
     newMember: E
-  } = (0, l.e7)([p.Z], () => p.Z.getCheck(r), [r]), S = 0 === t ? m.intl.string(m.t["6zY8BA"]) : null, I = null, P = null;
-  return (0 === t && (v ? (I = m.intl.string(m.t.IRxUlJ), P = m.intl.string(m.t.fiNVio)) : C ? (I = m.intl.string(m.t.vW8iUF), P = m.intl.string(m.t["50gfOj"])) : j ? (I = m.intl.string(m.t.vdSOp6), P = m.intl.string(m.t.lm1UKi)) : E ? (I = m.intl.formatToPlainString(m.t.v1ktYW, {
-    min: h.YeM.MEMBER_AGE
-  }), P = m.intl.string(m.t.BddRzc)) : x && (I = m.intl.formatToPlainString(m.t["sncw4+"], {
-    min: h.YeM.ACCOUNT_AGE
-  }), P = m.intl.string(m.t.BddRzc))), null == S || null == I) ? null : (0, i.jsxs)(a.VqE, {
+  } = (0, l.e7)([p.Z], () => p.Z.getCheck(r), [r]), S = 0 === t ? m.intl.string(m.t["6zY8BA"]) : null, P = null, I = null;
+  return (0 === t && (j ? (P = m.intl.string(m.t.IRxUlJ), I = m.intl.string(m.t.fiNVio)) : x ? (P = m.intl.string(m.t.vW8iUF), I = m.intl.string(m.t["50gfOj"])) : v ? (P = m.intl.string(m.t.vdSOp6), I = m.intl.string(m.t.lm1UKi)) : E ? (P = m.intl.formatToPlainString(m.t.v1ktYW, {
+    min: f.YeM.MEMBER_AGE
+  }), I = m.intl.string(m.t.BddRzc)) : C && (P = m.intl.formatToPlainString(m.t["sncw4+"], {
+    min: f.YeM.ACCOUNT_AGE
+  }), I = m.intl.string(m.t.BddRzc))), null == S || null == P) ? null : (0, i.jsxs)(a.VqE, {
     className: b.container,
-    "aria-labelledby": y,
+    "aria-labelledby": _,
     children: [(0, i.jsx)("img", {
       alt: "",
       className: b.image,
@@ -66,22 +66,22 @@ let y = e => {
       className: b.content,
       children: [(0, i.jsx)(a.X6q, {
         variant: "heading-md/semibold",
-        id: y,
+        id: _,
         children: S
       }), (0, i.jsx)(a.Text, {
         color: "header-secondary",
         variant: "text-sm/normal",
-        children: I
+        children: P
       }), (0, i.jsxs)("div", {
         className: b.buttonContainer,
-        children: [null != P ? (0, i.jsx)("div", {
+        children: [null != I ? (0, i.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
           className: b.primaryButton,
           children: (0, i.jsx)(a.zxk, {
             variant: "primary",
-            text: P,
+            text: I,
             onClick: () => {
-              v ? c.j() : C ? (0, a.ZDy)(async () => {
+              j ? c.j() : x ? (0, a.ZDy)(async () => {
                 let {
                   default: e
                 } = await Promise.resolve().then(n.bind(n, 607018));
@@ -90,7 +90,7 @@ let y = e => {
                 }, t))
               }, {
                 modalKey: g.M
-              }) : j && (s.Z.verifyResend(), (0, a.h7j)(e => {
+              }) : v && (s.Z.verifyResend(), (0, a.h7j)(e => {
                 var t, n, r;
                 return (0, i.jsx)(a.ConfirmModal, (n = O({
                   header: m.intl.string(m.t.LykQYm),
@@ -100,7 +100,7 @@ let y = e => {
                   children: (0, i.jsx)(a.Text, {
                     variant: "text-md/normal",
                     children: m.intl.format(m.t.azKEPz, {
-                      email: null == (t = f.default.getCurrentUser()) ? true : t.email
+                      email: null == (t = h.default.getCurrentUser()) ? true : t.email
                     })
                   })
                 }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
@@ -113,11 +113,11 @@ let y = e => {
                 })(Object(r)).forEach(function(e) {
                   Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
                 }), n))
-              })), _()
+              })), y()
             }
           })
-        }) : null, v || C || j ? (0, i.jsx)(o.zx, {
-          onClick: _,
+        }) : null, j || x || v ? (0, i.jsx)(o.zx, {
+          onClick: y,
           look: o.zx.Looks.BLANK,
           className: b.cancel,
           children: m.intl.string(m.t.oEAioK)

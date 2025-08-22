@@ -53,7 +53,7 @@ function H(e) {
     maxHeight: H,
     connectedLocation: V,
     renderExternalHeader: z
-  } = e, W = (0, T.Z)(), Y = (0, o.Wu)([S.ZP], () => S.ZP.getEmbeddedActivitiesForLocation(V), [V]), q = (0, Z.p)(V), K = (0, o.e7)([y.Z], () => y.Z.getChannel(q)), X = (0, I.gb)(Y), Q = (0, I.uF)(X), J = i.useCallback(() => {
+  } = e, W = (0, T.Z)(), q = (0, o.Wu)([S.ZP], () => S.ZP.getEmbeddedActivitiesForLocation(V), [V]), Y = (0, Z.p)(V), K = (0, o.e7)([y.Z], () => y.Z.getChannel(Y)), X = (0, I.gb)(q), Q = (0, I.uF)(X), J = i.useCallback(() => {
     (0, E.tg)(L.Ez.PIP)
   }, []), $ = i.useRef(null), ee = (0, o.e7)([S.ZP], () => S.ZP.getFocusedLayout()), et = ee !== L.MI.NO_CHAT, [en, er] = i.useState(null != (n = null != (t = m.ZP.activityPanelHeight) ? t : H) ? n : null), ei = i.useCallback(e => {
     u.ZP.updatedUnsyncedSettings({

@@ -110,33 +110,33 @@ function D(e) {
     loadMore: l,
     renderLoadingState: a,
     renderMessageGroup: d,
-    scrollerClassName: h,
+    scrollerClassName: f,
     className: g,
-    listName: P,
+    listName: I,
     ignoreGrouping: N = false
-  } = e, D = (0, y.fJ)(), M = i.useRef(null), L = (0, f.Z)(P, M), {
+  } = e, D = (0, _.fJ)(), M = i.useRef(null), L = (0, h.Z)(I, M), {
     entrypoint: k,
     notificationCenterVariant: U
-  } = (0, _.pN)({
+  } = (0, y.pN)({
     location: "NotificationsInboxSidebarList"
   }), {
     isLoading: G,
     isLoadingComplete: B,
-    hasLoadedEver: V
-  } = (0, u.cj)([j.Z], () => ({
-    isLoading: j.Z.isLoading,
-    isLoadingComplete: j.Z.isLoadingComplete,
-    hasLoadedEver: j.Z.hasLoadedEver
-  })), F = !V && G, {
+    hasLoadedEver: F
+  } = (0, u.cj)([v.Z], () => ({
+    isLoading: v.Z.isLoading,
+    isLoadingComplete: v.Z.isLoadingComplete,
+    hasLoadedEver: v.Z.hasLoadedEver
+  })), V = !F && G, {
     messageCategoryOpenStates: H,
     toggleOpenState: z
-  } = (0, v.Z)(), W = function() {
-    let e = (0, u.Wu)([j.Z], () => {
+  } = (0, j.Z)(), W = function() {
+    let e = (0, u.Wu)([v.Z], () => {
       var e;
-      return null != (e = j.Z.getNotifyingChannelIds()) ? e : []
+      return null != (e = v.Z.getNotifyingChannelIds()) ? e : []
     });
-    return (0, u.e7)([j.Z, m.ZP], () => {
-      let t = j.Z.getChannelInfoMap();
+    return (0, u.e7)([v.Z, m.ZP], () => {
+      let t = v.Z.getChannelInfoMap();
       for (let r of e) {
         var n;
         let e = t[r];
@@ -159,8 +159,8 @@ function D(e) {
         animate: true
       })
     }
-    return b.S.subscribe(I.CkL.SCROLL_PAGE_DOWN, t), b.S.subscribe(I.CkL.SCROLL_PAGE_UP, e), () => {
-      b.S.unsubscribe(I.CkL.SCROLL_PAGE_DOWN, t), b.S.unsubscribe(I.CkL.SCROLL_PAGE_UP, e)
+    return b.S.subscribe(P.CkL.SCROLL_PAGE_DOWN, t), b.S.subscribe(P.CkL.SCROLL_PAGE_UP, e), () => {
+      b.S.unsubscribe(P.CkL.SCROLL_PAGE_DOWN, t), b.S.unsubscribe(P.CkL.SCROLL_PAGE_UP, e)
     }
   }, []);
   let K = i.useCallback(() => {
@@ -192,7 +192,7 @@ function D(e) {
       return (t.length > 0 || n.length > 0) && (s().each(n, e => {
         e.kind === S.fL.MENTION ? r[S.KZ.UNREAD].push(e) : e.channelId in i[S.KZ.UNREAD] ? i[S.KZ.UNREAD][e.channelId].push(e) : i[S.KZ.UNREAD][e.channelId] = [e]
       }), s().each(t, e => {
-        let t = (0, C.bl)(e);
+        let t = (0, x.bl)(e);
         e.kind === S.fL.MENTION ? r[t].push(e) : e.channelId in i[t] ? i[t][e.channelId].push(e) : i[t][e.channelId] = [e]
       }), s().each(A, t => {
         [...Object.values(i[t]).map(e => e.reverse()), ...r[t].map(e => [e])].sort((e, t) => O.default.compare(t[0].id, e[0].id)).forEach(n => {
@@ -201,7 +201,7 @@ function D(e) {
       })), e
     }, [t, n]),
     q = 0 === t.length && 0 === n.length && B,
-    X = 0 === t.length && 0 === n.length && !V && G,
+    X = 0 === t.length && 0 === n.length && !F && G,
     Q = i.useMemo(() => {
       let e = [];
       return X ? e.push(a()) : q ? e.push((0, r.jsx)(R, {}, "empty-state")) : N ? (e.push(...n.map(e => d([e], true))), e.push(...t.map(e => d([e], false)))) : s().each(A, t => {
@@ -210,7 +210,7 @@ function D(e) {
           isOpen: H[t],
           toggleOpenedState: () => {
             let e = H[t];
-            z(t), (0, y.RZ)({
+            z(t), (0, _.RZ)({
               section: t,
               enabled: !e,
               viewId: D
@@ -221,7 +221,7 @@ function D(e) {
     }, [t, n, a, H, z, Y, N, d, q, X, D]),
     J = Q[Q.length - 1],
     $ = i.isValidElement(J) && J.type === T,
-    ee = (0, x.d)(e => e.setInboxReadState);
+    ee = (0, C.d)(e => e.setInboxReadState);
   i.useEffect(() => {
     X || ee(0 === Y.UNREAD.length)
   }, [Y, X, ee]);
@@ -232,13 +232,13 @@ function D(e) {
       messagesByCategory: n
     } = e, r = i.useRef(false), l = n.UNREAD.length > 0, {
       setOpenStateFromUnreads: o
-    } = (0, v.Z)();
+    } = (0, j.Z)();
     i.useEffect(() => {
       t || r.current || (o(l), r.current = true)
     }, [o, l, t])
   }({
     messagesByCategory: Y,
-    loadingInitial: F
+    loadingInitial: V
   });
   let en = i.useCallback(() => {
     var e;
@@ -256,7 +256,7 @@ function D(e) {
       size: e
     })
   }, [en]);
-  return (0, y.vU)({
+  return (0, _.vU)({
     notificationCenterVariant: U,
     entrypoint: k,
     messages: t,
@@ -312,7 +312,7 @@ function D(e) {
               var t;
               M.current = e, i.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
             },
-            className: o()(w.messagesPopout, h),
+            className: o()(w.messagesPopout, f),
             onScroll: K,
             fade: true
           }, l), n = n = {

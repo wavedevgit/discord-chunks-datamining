@@ -2,11 +2,11 @@
 /** chunk id: 19869, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  O: () => w
+  O: () => S
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk693789 = require("./693789.jsx"),
+  Chunk680018 = require("./680018.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk37234 = require("./37234.js"),
   Chunk100527 = require("./100527.js"),
@@ -27,93 +27,36 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk905164 = require("./905164.js");
 
-function S(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function A(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      S(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function C(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function N(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : C(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-
-function R(e, t) {
-  if (null == e) return {};
-  var n, r, i = P(e, t);
-  if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
-  }
-  return i
-}
-
-function P(e, t) {
-  if (null == e) return {};
-  var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-  return i
-}
-
-function w() {
+function S() {
   let {
     enabled: e
   } = (0, Chunk822857.WX)({
     location: "revenue_storybook"
   });
   return (0, Chunk951288.jsxs)("div", {
-    children: [module && (0, Chunk951288.jsx)(L, {}), (0, Chunk951288.jsx)(x, {}), (0, Chunk951288.jsx)(j, {})]
+    children: [module && (0, Chunk951288.jsx)(N, {}), (0, Chunk951288.jsx)(C, {}), (0, Chunk951288.jsx)(R, {})]
   })
 }
-let D = 150;
+let A = 150;
 
-function x() {
+function C() {
   let {
     openIntroToOrbsClaimedCoachmark: e
   } = (0, Chunk511050.l)({
     location: "VirtualCurrencyComponents"
-  }), [t, n] = Chunk647438.useState(D), [_, p] = Chunk647438.useState(D), [b, y] = Chunk647438.useState(500), [S, A] = Chunk647438.useState(Chunk317257.b.DEFAULT), C = () => {
+  }), [t, n] = Chunk647438.useState(A), [_, p] = Chunk647438.useState(A), [b, y] = Chunk647438.useState(500), [S, C] = Chunk647438.useState(Chunk317257.b.DEFAULT), N = () => {
     switch (S) {
       case Chunk317257.b.DEFAULT:
-        A(Chunk317257.b.HIGHLIGHTED);
+        C(Chunk317257.b.HIGHLIGHTED);
         break;
       case Chunk317257.b.HIGHLIGHTED:
-        A(Chunk317257.b.SELECTED);
+        C(Chunk317257.b.SELECTED);
         break;
       case Chunk317257.b.SELECTED:
-        A(Chunk317257.b.DEFAULT)
+        C(Chunk317257.b.DEFAULT)
     }
   }, {
-    analyticsLocations: N
+    analyticsLocations: R
   } = (0, Chunk906732.ZP)(Chunk100527.Z.PAYMENT_FLOW_TEST_PAGE);
   return (0, Chunk951288.jsxs)(Chunk450272.$0, {
     children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
@@ -144,18 +87,18 @@ function x() {
           },
           children: "You will be redirected to the shop page and the coachmark will appear beneath the Balance Widget Pill in the header bar after 0.5 seconds."
         })]
-      }), (0, Chunk951288.jsx)(Chunk693789.zx, {
+      }), (0, Chunk951288.jsx)(Chunk680018.z, {
         onClick: () => {
           (0, Chunk37234.xf)(), (0, Chunk703656.s1)().location.pathname.includes(Chunk981631.Z5c.COLLECTIBLES_SHOP) || (0, Chunk335131.mK)({
             openInLayer: false,
-            analyticsLocations: N,
+            analyticsLocations: R,
             analyticsSource: Chunk100527.Z.REVENUE_STORYBOOK_TEST_PAGE
           }), module({
             forceOpen: true,
             delayMS: 200
           })
         },
-        children: "Open Balance Widget Coachmark"
+        text: "Open Balance Widget Coachmark"
       })]
     }), (0, Chunk951288.jsxs)(Chunk450272.E_, {
       label: "Balance Widget Pill",
@@ -189,15 +132,15 @@ function x() {
         className: Chunk905164.numberInput,
         value: exports,
         onChange: e => n(e)
-      }), (0, Chunk951288.jsx)(Chunk693789.zx, {
+      }), (0, Chunk951288.jsx)(Chunk680018.z, {
         onClick: () => Chunk822857(exports),
-        children: "Set Balance"
+        text: "Set Balance"
       }), (0, Chunk951288.jsx)("div", {
         className: Chunk905164.interactivePillContainer,
         children: (0, Chunk951288.jsx)(Chunk970815.A4, {
           balance: Chunk52647,
           balanceWidgetMode: S,
-          onClick: () => C()
+          onClick: () => N()
         })
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
@@ -209,19 +152,19 @@ function x() {
         className: Chunk905164.numberInput,
         value: Chunk275388,
         onChange: e => y(e)
-      }), (0, Chunk951288.jsx)(Chunk693789.zx, {
+      }), (0, Chunk951288.jsx)(Chunk680018.z, {
         onClick: () => {
           Chunk822857(null), setTimeout(() => {
             Chunk822857(exports)
           }, Chunk275388)
         },
-        children: "Simulate Loading State"
+        text: "Simulate Loading State"
       }), (0, Chunk951288.jsx)("div", {
         className: Chunk905164.interactivePillContainer,
         children: (0, Chunk951288.jsx)(Chunk970815.A4, {
           balance: Chunk52647,
           balanceWidgetMode: S,
-          onClick: () => C()
+          onClick: () => N()
         })
       })]
     }), (0, Chunk951288.jsx)(Chunk450272.E_, {
@@ -235,7 +178,7 @@ function x() {
   })
 }
 
-function L() {
+function N() {
   let [e, t] = Chunk647438.useState("1144308439720394944");
   return (0, Chunk951288.jsxs)(Chunk450272.$0, {
     children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
@@ -255,7 +198,7 @@ function L() {
         variant: "text-md/normal",
         color: "text-feedback-info",
         children: "The Orb Checkout Modal will open with the orb price of the product, if it exists"
-      }), (0, Chunk951288.jsx)(Chunk693789.zx, {
+      }), (0, Chunk951288.jsx)(Chunk680018.z, {
         onClick: () => {
           (0, Chunk275388.qA)({
             skuId: module,
@@ -271,42 +214,20 @@ function L() {
             }
           })
         },
-        children: "Open Orb Checkout Integrated with Payment Modal"
+        text: "Open Orb Checkout Integrated with Payment Modal"
       })]
     })]
   })
 }
 
-function j() {
-  let e = () => {
-      (0, Chunk481060.ZDy)(async () => {
-        let {
-          AnnouncementModal: e
-        } = await require.e("86653").then(require.bind(require, 993318));
-        return t => {
-          var {
-            onClose: n
-          } = t, i = R(t, ["onClose"]);
-          return (0, r.jsx)(e, N(A({}, i), {
-            onClose: n,
-            ctaOnClick: n
-          }))
-        }
-      })
-    },
-    {
-      resetOnboardingAnnouncementModal: t
-    } = (0, Chunk52647.Z)();
+function R() {
+  let {
+    resetOnboardingExperience: e
+  } = (0, Chunk52647.Z)();
   return (0, Chunk951288.jsxs)(Chunk450272.$0, {
     children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
       variant: "heading-xl/semibold",
       children: "Onboarding Components"
-    }), (0, Chunk951288.jsx)(Chunk450272.E_, {
-      label: "Announcement Modal",
-      children: (0, Chunk951288.jsx)(Chunk693789.zx, {
-        onClick: module,
-        children: "Open Announcement Modal"
-      })
     }), (0, Chunk951288.jsxs)(Chunk450272.E_, {
       label: "Announcement Modal [Reset Dismissible Content]",
       direction: "vertical",
@@ -317,9 +238,9 @@ function j() {
           marginBottom: "8px"
         },
         children: "After resetting your Announcement Modal State and exiting from user settings, you'll be able to see the Announcement Modal again."
-      }), (0, Chunk951288.jsx)(Chunk693789.zx, {
-        onClick: () => exports(),
-        children: "Reset Announcement Modal State"
+      }), (0, Chunk951288.jsx)(Chunk680018.z, {
+        onClick: () => module(),
+        text: "Reset Announcement Modal State"
       })]
     }), (0, Chunk951288.jsx)(Chunk450272.E_, {
       label: "Balance Widget Coachmark",

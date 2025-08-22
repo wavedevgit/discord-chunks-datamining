@@ -3,8 +3,8 @@
 require.d(exports, {
   KE: () => O,
   KT: () => b,
-  ZP: () => v,
-  _C: () => _
+  ZP: () => j,
+  _C: () => y
 }), require("./388685.js"), require("./457542.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -48,7 +48,7 @@ function b(e) {
 function O(e, t) {
   (0, o.ZDy)(async () => {
     switch (t.type) {
-      case h.Us.LEVEL:
+      case f.Us.LEVEL:
         let {
           default: i
         } = await n.e("99014").then(n.bind(n, 271224));
@@ -56,7 +56,7 @@ function O(e, t) {
           guildId: e,
           powerup: t
         }, n));
-      case h.Us.PERK: {
+      case f.Us.PERK: {
         let {
           default: i
         } = await Promise.all([n.e("42926"), n.e("97844"), n.e("52549")]).then(n.bind(n, 326055));
@@ -67,29 +67,29 @@ function O(e, t) {
       }
     }
   }, {
-    modalKey: h.H2
+    modalKey: f.H2
   })
 }
 
-function _(e, t) {
+function y(e, t) {
   var p;
   let {
     analyticsLocations: b
   } = (0, a.ZP)(), {
     onToggle: O
-  } = y(e, t), _ = (0, l.e7)([f.Z], () => {
+  } = _(e, t), y = (0, l.e7)([h.Z], () => {
     var t, n;
-    return null != (n = null == (t = f.Z.getStateForGuild(e)) ? true : t.appliedBoosts) ? n : 0
-  }), v = (0, l.e7)([u.Z], () => u.Z.getGuild(e)), j = (0, l.e7)([f.Z], () => f.Z.getStateForGuild(e)), C = i.useMemo(() => null != t && t.type === h.Us.LEVEL && null != j ? function(e, t) {
-    let n = h.T1[e.skuId];
-    return null == n ? [] : Object.entries(h.Rx).filter(e => {
+    return null != (n = null == (t = h.Z.getStateForGuild(e)) ? true : t.appliedBoosts) ? n : 0
+  }), j = (0, l.e7)([u.Z], () => u.Z.getGuild(e)), v = (0, l.e7)([h.Z], () => h.Z.getStateForGuild(e)), x = i.useMemo(() => null != t && t.type === f.Us.LEVEL && null != v ? function(e, t) {
+    let n = f.T1[e.skuId];
+    return null == n ? [] : Object.entries(f.Rx).filter(e => {
       let [r, i] = e;
       return i === n && null != t.unlockedPowerups[r]
     }).map(e => {
       let [n] = e;
       return t.allPowerups[n]
     }).filter(d.lm)
-  }(t, j) : [], [t, j]), x = null == C ? true : C.reduce((e, t) => e + t.cost, 0), E = Math.max((null != (p = null == v ? true : v.premiumSubscriberCount) ? p : 0) - _ + x, 0);
+  }(t, v) : [], [t, v]), C = null == x ? true : x.reduce((e, t) => e + t.cost, 0), E = Math.max((null != (p = null == j ? true : j.premiumSubscriberCount) ? p : 0) - y + C, 0);
   return {
     onActivate: i.useCallback(function(e) {
       var i;
@@ -98,15 +98,15 @@ function _(e, t) {
       let {
         shouldCloseAllModals: a = true
       } = l;
-      if (null != v && null != t) return E < t.cost ? void(0, s.u)({
+      if (null != j && null != t) return E < t.cost ? void(0, s.u)({
         analyticsLocation: {
           page: g.ZY5.GUILD_POWERUPS_OVERVIEW,
           section: g.jXE.GUILD_POWERUPS_OVERVIEW_CARD
         },
         numberOfBoostsToAdd: t.cost - E,
         analyticsLocations: b,
-        guild: v,
-        intent: t.type === h.Us.LEVEL ? c.P.LEVEL : c.P.PERK,
+        guild: j,
+        intent: t.type === f.Us.LEVEL ? c.P.LEVEL : c.P.PERK,
         onSubscribeComplete: () => {
           var e;
           return null == (e = O(true)) ? true : e.then(() => {
@@ -115,7 +115,7 @@ function _(e, t) {
                 default: e
               } = await Promise.all([n.e("97844"), n.e("68203")]).then(n.bind(n, 666083));
               return n => (0, r.jsx)(e, m({
-                guildId: v.id,
+                guildId: j.id,
                 powerup: t
               }, n))
             })
@@ -127,16 +127,16 @@ function _(e, t) {
             default: e
           } = await Promise.all([n.e("97844"), n.e("68203")]).then(n.bind(n, 666083));
           return n => (0, r.jsx)(e, m({
-            guildId: v.id,
+            guildId: j.id,
             powerup: t
           }, n))
         })
       })
-    }, [O, t, E, b, v])
+    }, [O, t, E, b, j])
   }
 }
 
-function y(e, t) {
+function _(e, t) {
   let [n, r] = i.useState(false), [l, o] = i.useState(true);
   return {
     isLoading: n,
@@ -154,14 +154,14 @@ function y(e, t) {
   }
 }
 
-function v(e, t) {
+function j(e, t) {
   let {
     isLoading: l,
     error: a,
     onToggle: s
-  } = y(e, t), {
+  } = _(e, t), {
     onActivate: c
-  } = _(e, t), u = i.useCallback(e => (e.stopPropagation(), s(false)), [s]);
+  } = y(e, t), u = i.useCallback(e => (e.stopPropagation(), s(false)), [s]);
   return {
     isLoading: l,
     error: a,

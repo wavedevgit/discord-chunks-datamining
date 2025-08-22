@@ -223,7 +223,7 @@ function eg(e) {
       M = (0, $.Z)(n, t),
       G = !t.isSystemDM() && (0, J.Z)(n, h) && g && !b,
       {
-        disableReactionCreates: Y
+        disableReactionCreates: q
       } = (0, et.Z)({
         channel: t,
         canChat: O,
@@ -258,9 +258,9 @@ function eg(e) {
       canStartThread: P,
       canViewThread: Z,
       canForward: er,
-      canCopy: q.wS,
+      canCopy: Y.wS,
       hasDeveloperMode: C,
-      canReact: !Y && y,
+      canReact: !q && y,
       canPublish: K,
       canConfigureJoin: en,
       isExpanded: eo && !es && !r && !i && !l,
@@ -273,7 +273,7 @@ function eg(e) {
       isFocused: s
     }
   }(e), eh = i.useRef(null), eg = i.useCallback(() => {
-    G || Y.default.track(ea.rMx.MESSAGE_POPOUT_MENU_OPENED_DESKTOP, {
+    G || q.default.track(ea.rMx.MESSAGE_POPOUT_MENU_OPENED_DESKTOP, {
       message_id: n.id,
       channel: n.channel_id
     }), es({
@@ -363,7 +363,7 @@ function eg(e) {
         label: ec.intl.string(ec.t.icaJW1),
         icon: p.l22,
         onClick: () => {
-          Y.default.track(ea.rMx.CONFETTI_POTION_ENTRYPOINT_CLICKED, {
+          q.default.track(ea.rMx.CONFETTI_POTION_ENTRYPOINT_CLICKED, {
             location: Z.MG.MessageExpandingButtons
           }), (0, T.s)({
             channelId: t.id,

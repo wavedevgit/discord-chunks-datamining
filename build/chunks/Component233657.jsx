@@ -55,13 +55,13 @@ function O(e) {
     guild: t,
     selected: O
   } = e, {
-    hasUnread: _,
-    mentionCount: y
+    hasUnread: y,
+    mentionCount: _
   } = (0, i.cj)([u.ZP], () => ({
-    hasUnread: u.ZP.hasUnread(t.id, f.W.GUILD_EVENT),
-    mentionCount: u.ZP.getMentionCount(t.id, f.W.GUILD_EVENT)
-  }), [t.id]), v = (0, i.e7)([d.ZP], () => d.ZP.isMuteScheduledEventsEnabled(t.id));
-  async function j() {
+    hasUnread: u.ZP.hasUnread(t.id, h.W.GUILD_EVENT),
+    mentionCount: u.ZP.getMentionCount(t.id, h.W.GUILD_EVENT)
+  }), [t.id]), j = (0, i.e7)([d.ZP], () => d.ZP.isMuteScheduledEventsEnabled(t.id));
+  async function v() {
     await (0, o.ZDy)(async () => {
       let {
         default: e
@@ -71,10 +71,10 @@ function O(e) {
       }))
     }), (0, s.Q3)(l.z.GUILD_HEADER_EVENT_UPSELL)
   }
-  let C = (0, c.ZP)(t.id),
-    x = C.length > 0 ? h.intl.formatToPlainString(h.t.IBdqSk, {
-      number: C.length
-    }) : h.intl.string(h.t.tlopTE);
+  let x = (0, c.ZP)(t.id),
+    C = x.length > 0 ? f.intl.formatToPlainString(f.t.IBdqSk, {
+      number: x.length
+    }) : f.intl.string(f.t.tlopTE);
   return (0, r.jsx)(p.m, {
     id: "upcoming-events-".concat(t.id),
     renderIcon: e => (0, r.jsx)(o.Que, {
@@ -82,9 +82,9 @@ function O(e) {
       color: "currentColor",
       className: e
     }),
-    text: x,
+    text: C,
     selected: O,
-    onClick: j,
+    onClick: v,
     onContextMenu: e => {
       (0, a.jW)(e, async () => {
         let {
@@ -95,11 +95,11 @@ function O(e) {
         }))
       })
     },
-    showUnread: _ && !v,
-    trailing: !v && y > 0 ? (0, r.jsx)(o.mAB, {
+    showUnread: y && !j,
+    trailing: !j && _ > 0 ? (0, r.jsx)(o.mAB, {
       className: g.numberBadge,
       disableColor: true,
-      count: y
+      count: _
     }) : null
   })
 }

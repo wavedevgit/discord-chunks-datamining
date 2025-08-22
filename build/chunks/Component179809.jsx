@@ -28,7 +28,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk106663 = require("./106663.js"),
   Chunk534175 = require("./534175.js");
-let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
+let I = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
   N = (0, Chunk202841.animated)(Chunk481060.Kqy),
   w = Chunk647438.memo(function(e) {
     let {
@@ -50,13 +50,13 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
       renderChildNode: U,
       folderButtonSize: G,
       folderButtonContent: B,
-      "aria-setsize": V,
-      "aria-posinset": F
+      "aria-setsize": F,
+      "aria-posinset": V
     } = e, {
       id: H,
       name: z,
       children: W
-    } = t, [K, Y] = i.useState(false), [q, X] = i.useState(false), Q = K || q, J = (0, h.Ml)("FolderItem");
+    } = t, [K, Y] = i.useState(false), [q, X] = i.useState(false), Q = K || q, J = (0, f.Ml)("FolderItem");
     i.useEffect(() => {
       R && Y(false)
     }, [R]);
@@ -69,7 +69,7 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
         nodeId: t.id
       }),
       end() {
-        null == M || M(), (0, f.V1)(g.ZP.getCompatibleGuildFolders())
+        null == M || M(), (0, h.V1)(g.ZP.getCompatibleGuildFolders())
       },
       collect: e => ({
         dragging: e.isDragging()
@@ -94,16 +94,16 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
         height: 0
       },
       config: {
-        duration: P
+        duration: I
       }
-    }), es = i.useCallback(e => null == n ? true : n(H, e), [n, H]), ec = (0, r.jsxs)(j.H, {
+    }), es = i.useCallback(e => null == n ? true : n(H, e), [n, H]), ec = (0, r.jsxs)(v.H, {
       children: [(0, r.jsx)(O.Z, {
         disabled: $ || s,
         hovered: K,
         selected: l,
         unread: Z,
-        className: I.pill
-      }), (0, r.jsx)(C.Z, {
+        className: P.pill
+      }), (0, r.jsx)(x.Z, {
         text: er,
         disabled: R,
         selected: l,
@@ -114,12 +114,12 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
           } : true,
           className: o()(S.folderHeader, {
             [S.folderHeaderSmall]: "icon" === G || J,
-            [I.wobble]: !$ && q && !s
+            [P.wobble]: !$ && q && !s
           }),
           "data-dnd-name": er,
-          children: $ ? (0, r.jsx)(v.Z, {
+          children: $ ? (0, r.jsx)(j.Z, {
             isFolder: true
-          }) : (0, r.jsx)(_.Z, {
+          }) : (0, r.jsx)(y.Z, {
             folderNode: t,
             expanded: s,
             sorting: R,
@@ -134,16 +134,16 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
             onKeyDown: en,
             treeItemProps: ei,
             folderButtonContent: B,
-            "aria-setsize": V,
-            "aria-posinset": F
+            "aria-setsize": F,
+            "aria-posinset": V
           })
         })
-      }), A ? (0, r.jsx)(y.ZP, {
+      }), A ? (0, r.jsx)(_.ZP, {
         name: er,
         targetNode: t,
         onDragOverChanged: et
       }) : null]
-    }), eu = null != t.color ? t.color : x.Wyy, ed = eu === x.Wyy ? true : (0, u.Rf)(eu);
+    }), eu = null != t.color ? t.color : C.Wyy, ed = eu === C.Wyy ? true : (0, u.Rf)(eu);
     return (0, r.jsxs)("div", {
       ref: es,
       className: o()(S.folderGroup, {
@@ -172,7 +172,7 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
           "aria-label": t.name,
           children: W.map((t, n) => U(t, n, W.length, e.height))
         }, l)
-      }), A && s ? (0, r.jsx)(y.Zu, {
+      }), A && s ? (0, r.jsx)(_.Zu, {
         name: er,
         targetNode: t
       }) : null]

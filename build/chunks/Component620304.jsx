@@ -46,7 +46,7 @@ function S(e) {
   return e
 }
 
-function I(e, t) {
+function P(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -59,13 +59,13 @@ function I(e, t) {
   }), e
 }
 
-function P(e) {
+function I(e) {
   let {
     guild: t,
     tooltipTypes: l,
-    withMargin: P
-  } = e, N = (0, y.Z)(t, "GuildPowerupsProgressBar"), w = (0, _.Z)(t.id), Z = i.useCallback(() => {
-    (0, v.Z)(t.id, f.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY)
+    withMargin: I
+  } = e, N = (0, _.Z)(t, "GuildPowerupsProgressBar"), w = (0, y.Z)(t.id), Z = i.useCallback(() => {
+    (0, j.Z)(t.id, h.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY)
   }, [t.id]), T = (0, c.e7)([m.Z], () => {
     var e;
     return null != (e = m.Z.getCountForGuild(t.id)) ? e : 0
@@ -89,8 +89,8 @@ function P(e) {
   }, [A, D]);
   let M = T >= N,
     L = i.useRef(null),
-    [k, U] = (0, h.US)(l),
-    G = e => (0, r.jsx)(d.P3F, I(S({}, e), {
+    [k, U] = (0, f.US)(l),
+    G = e => (0, r.jsx)(d.P3F, P(S({}, e), {
       "aria-label": true,
       role: "button",
       focusProps: {
@@ -104,14 +104,14 @@ function P(e) {
         null == e || null == (t = e.onClick) || t.call(e), Z()
       },
       className: o()(E.container, {
-        [E.containerWithMargin]: P
+        [E.containerWithMargin]: I
       }),
       onContextMenu: e => {
         w && (0, p.jW)(e, async () => {
           let {
             default: e
           } = await n.e("8570").then(n.bind(n, 651138));
-          return n => (0, r.jsx)(e, I(S({}, n), {
+          return n => (0, r.jsx)(e, P(S({}, n), {
             guild: t
           }))
         })
@@ -132,7 +132,7 @@ function P(e) {
             children: [(0, r.jsx)(s.xv, {
               className: E.text,
               variant: "text-xs/semibold",
-              children: x.intl.string(C.default.NI6IhY)
+              children: C.intl.string(x.default.NI6IhY)
             }), t.premiumSubscriberCount >= N && (0, r.jsx)(s.xv, {
               className: E.text,
               variant: "text-xs/semibold",
@@ -143,9 +143,9 @@ function P(e) {
             children: [(0, r.jsx)(s.xv, {
               className: o()(E.text, E.boostCountText),
               variant: "text-xs/semibold",
-              children: M ? x.intl.formatToPlainString(C.default["Ehpq+/"], {
+              children: M ? C.intl.formatToPlainString(x.default["Ehpq+/"], {
                 appliedBoostCount: T
-              }) : x.intl.formatToPlainString(C.default["/rbPDg"], {
+              }) : C.intl.formatToPlainString(x.default["/rbPDg"], {
                 appliedBoostCount: T,
                 maxBoostCount: N
               })
@@ -169,7 +169,7 @@ function P(e) {
     align: "top",
     shouldShow: true,
     closeOnScroll: true,
-    onRequestClose: () => U(j.L.INDIRECT_ACTION),
+    onRequestClose: () => U(v.L.INDIRECT_ACTION),
     animation: d.yRy.Animation.TRANSLATE,
     children: e => (0, r.jsx)("div", {
       ref: L,
@@ -184,7 +184,7 @@ function N(e) {
     tooltipTypes: n,
     withMargin: i
   } = e;
-  return (0, r.jsx)(P, {
+  return (0, r.jsx)(I, {
     guild: t,
     tooltipTypes: n,
     withMargin: i

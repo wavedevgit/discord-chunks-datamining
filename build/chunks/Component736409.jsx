@@ -1,7 +1,7 @@
 /** Chunk was on 91488 **/
 /** chunk id: 736409, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  j: () => v
+  j: () => j
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -21,20 +21,20 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
   Chunk46140 = require("./46140.js");
-let v = e => {
+let j = e => {
   let {
     children: t,
     isForceShowSharingPopout: n,
-    setIsForceShowSharingPopout: v
-  } = e, [j, C] = (0, i.useState)(false), x = function(e) {
+    setIsForceShowSharingPopout: j
+  } = e, [v, x] = (0, i.useState)(false), C = function(e) {
     let {
       isForceShowSharingPopout: t
     } = e, {
       isEnabled: n,
       showActivitySharingIndicatorWhenSharing: r
     } = (0, m.D)("SharingPrivacyPopout"), i = (0, d.Ws)({
-      location: y.dr.CONFLICT_CHECKS
-    }), o = p.G6.useSetting(), a = (0, l.e7)([f.Z], () => f.Z.getLayers().includes(O.S9g.USER_SETTINGS)), s = (0, l.e7)([h.Z], () => h.Z.getStatus()), {
+      location: _.dr.CONFLICT_CHECKS
+    }), o = p.G6.useSetting(), a = (0, l.e7)([h.Z], () => h.Z.getLayers().includes(O.S9g.USER_SETTINGS)), s = (0, l.e7)([f.Z], () => f.Z.getStatus()), {
       isOpen: c
     } = (0, u.Z)();
     if ((i || !i && t) && !a && !c && !__OVERLAY__ && n) {
@@ -51,7 +51,7 @@ let v = e => {
     n && g.default.track(O.rMx.OPEN_POPOUT, {
       type: "SharingPrivacyPopout"
     })
-  }, [n]), null != x || j) ? (0, r.jsx)(c.ZP, {
+  }, [n]), null != C || v) ? (0, r.jsx)(c.ZP, {
     contentTypes: n ? [] : [o.z.SHARE_ACTIVITY_COACHMARK_V2],
     children: e => {
       let {
@@ -60,8 +60,8 @@ let v = e => {
       if (i === o.z.SHARE_ACTIVITY_COACHMARK_V2 || n) {
         let e = () => {
           (0, s.Q3)(o.z.SHARE_ACTIVITY_COACHMARK_V2, {
-            dismissAction: _.L.USER_DISMISS
-          }), v(false), C(false)
+            dismissAction: y.L.USER_DISMISS
+          }), j(false), x(false)
         };
         return (0, r.jsx)(a.yRy, {
           targetElementRef: E,
@@ -76,8 +76,8 @@ let v = e => {
             } = e;
             return (0, r.jsx)(b.I, {
               closePopout: t,
-              onOpen: () => C(true),
-              popoutState: x
+              onOpen: () => x(true),
+              popoutState: C
             })
           },
           children: () => (0, r.jsx)(a.P3F, {

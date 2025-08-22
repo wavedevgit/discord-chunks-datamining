@@ -200,7 +200,7 @@ class to extends Chunk647438.PureComponent {
   }
   openDMContextMenu(e, t) {
     s()(null != t, "Missing channel in Channel.openDMContextMenu");
-    let i = eq.default.getUser(t.getRecipientId());
+    let i = eY.default.getUser(t.getRecipientId());
     s()(null != i, "Missing user in Channel.openDMContextMenu"), (0, _.jW)(e, async () => {
       let {
         default: e
@@ -830,10 +830,10 @@ let ts = (0, Chunk112724.Z)(to),
         welcomeModalChannelId: H
       } = (0, d.TH)(),
       W = (0, p.e7)([em.Z], () => null != c && em.Z.isLurking(c.guild_id), [c]),
-      Y = (0, p.e7)([eD.Z], () => eD.Z.hasSeen(null == c ? true : c.guild_id, W), [c, W]),
-      q = (0, p.e7)([R.Z, I.ZP], () => null != I.ZP.getConnectedActivityLocation() && I.ZP.getActivityPanelMode() === e4.Ez.PANEL ? I.ZP.getFocusedLayout() === e4.MI.NO_CHAT ? e3.AEg.NO_CHAT : e3.AEg.NORMAL : null != o ? R.Z.getLayout(o) : e3.AEg.NORMAL, [o]),
+      q = (0, p.e7)([eD.Z], () => eD.Z.hasSeen(null == c ? true : c.guild_id, W), [c, W]),
+      Y = (0, p.e7)([R.Z, I.ZP], () => null != I.ZP.getConnectedActivityLocation() && I.ZP.getActivityPanelMode() === e4.Ez.PANEL ? I.ZP.getFocusedLayout() === e4.MI.NO_CHAT ? e3.AEg.NO_CHAT : e3.AEg.NORMAL : null != o ? R.Z.getLayout(o) : e3.AEg.NORMAL, [o]),
       K = (0, p.e7)([R.Z], () => null != c ? R.Z.getSelectedParticipant(c.id) : null),
-      X = (0, p.e7)([eq.default], () => eq.default.getCurrentUser()),
+      X = (0, p.e7)([eY.default], () => eY.default.getCurrentUser()),
       J = (0, eh.Z)(null == y ? true : y.id),
       $ = (0, eL.Z)(H, null == y ? true : y.id),
       {
@@ -845,7 +845,7 @@ let ts = (0, Chunk112724.Z)(to),
       }), [o, c]),
       en = null == y ? true : y.id,
       er = (0, p.e7)([ek.ZP], () => ek.ZP.getGuildSidebarState(en), [en]),
-      ei = (0, p.e7)([eY.Z], () => eY.Z.getGuildId()) === e3.I_8,
+      ei = (0, p.e7)([eq.Z], () => eq.Z.getGuildId()) === e3.I_8,
       el = (0, eg.D)(),
       ea = (0, eX.ZP)(c),
       eo = (0, eX.ZP)(c, true),
@@ -897,7 +897,7 @@ let ts = (0, Chunk112724.Z)(to),
       formattedChannelName: eo,
       parentChannel: _,
       voiceChannel: m,
-      layout: q,
+      layout: Y,
       needSubscriptionToAccess: C,
       isLurking: W,
       hasModalOpen: ex,
@@ -912,7 +912,7 @@ let ts = (0, Chunk112724.Z)(to),
       isMobile: (0, p.e7)([eV.Z], () => (null == c ? true : c.type) === e3.d4z.DM && eV.Z.isMobileOnline(c.getRecipientId()), [c]),
       isUnavailable: (0, p.e7)([eF.Z], () => (null == c ? true : c.guild_id) != null && eF.Z.isUnavailable(c.guild_id), [c]),
       showRealNameModal: J,
-      showWelcomeModal: !Y && $,
+      showWelcomeModal: !q && $,
       showFollowButton: (null == c ? true : c.type) === e3.d4z.GUILD_ANNOUNCEMENT && (null == y ? true : y.features.has(e3.oNc.NEWS)) || false
     }, (0, p.cj)([eK.Z], () => ({
       hasVideo: null != c && eK.Z.hasVideo(c.id)

@@ -76,49 +76,49 @@ function R() {
     })),
     G = (0, Chunk442837.e7)([Chunk944486.Z], () => Chunk944486.Z.getChannelId(Chunk981631.I_8)),
     B = (0, Chunk442837.e7)([Chunk592125.Z], () => Chunk592125.Z.getChannel(G)),
-    V = (0, Chunk905423.Z)(e => e.guildId) === Chunk981631.I_8,
+    F = (0, Chunk905423.Z)(e => e.guildId) === Chunk981631.I_8,
     {
-      badge: F,
+      badge: V,
       unread: H
     } = (0, Chunk919755.Z)(U),
     z = function(e) {
-      let t = (0, s.e7)([v.Z], () => v.Z.getVoiceChannelId()),
+      let t = (0, s.e7)([j.Z], () => j.Z.getVoiceChannelId()),
         n = null != t && null != e[t],
-        r = (0, s.e7)([_.Z], () => {
+        r = (0, s.e7)([y.Z], () => {
           if (!n) returnfalse;
-          let t = _.Z.getCurrentUserActiveStream();
+          let t = y.Z.getCurrentUserActiveStream();
           return null != t && null != e[t.channelId]
         }),
-        i = (0, s.e7)([_.Z], () => _.Z.getAllApplicationStreams().some(t => null != e[t.channelId])),
-        l = (0, s.e7)([j.Z], () => n && null != t && j.Z.hasVideo(t), [n, t]),
-        o = (0, s.Wu)([p.ZP], () => C.default.keys(e).reduce((e, t) => (e.push(...p.ZP.getEmbeddedActivitiesForChannel(t)), e), [])),
+        i = (0, s.e7)([y.Z], () => y.Z.getAllApplicationStreams().some(t => null != e[t.channelId])),
+        l = (0, s.e7)([v.Z], () => n && null != t && v.Z.hasVideo(t), [n, t]),
+        o = (0, s.Wu)([p.ZP], () => x.default.keys(e).reduce((e, t) => (e.push(...p.ZP.getEmbeddedActivitiesForChannel(t)), e), [])),
         a = (0, s.e7)([p.ZP], () => Array.from(p.ZP.getSelfEmbeddedActivities().values()).some(t => {
           let {
             location: n
-          } = t, r = (0, f.p)(n);
+          } = t, r = (0, h.p)(n);
           return null != r && null != e[r]
         })),
         c = o.length > 0,
         u = false,
         d = false,
-        h = false,
+        f = false,
         g = false;
-      return n ? (u = !l, d = l, h = r, g = a) : (h = i, g = c), (0, m.Or)({
+      return n ? (u = !l, d = l, f = r, g = a) : (f = i, g = c), (0, m.Or)({
         audio: u,
         video: d,
-        screenshare: h,
+        screenshare: f,
         liveStage: false,
         isCurrentUserConnected: n,
         activity: g
       })
     }(U),
-    W = F > 0 ? (0, Chunk593364.N)(F) : null,
+    W = V > 0 ? (0, Chunk593364.N)(V) : null,
     K = Chunk647438.useCallback(() => {
       D()
     }, [D]);
   return (0, Chunk951288.jsxs)(Chunk682662.H, {
     children: [(0, Chunk951288.jsx)(Chunk276952.Z, {
-      selected: V,
+      selected: F,
       hovered: M,
       unread: H && !k,
       className: Chunk499951.pill
@@ -132,14 +132,14 @@ function R() {
           children: (0, Chunk951288.jsx)(Chunk481060.LYs, (e = T({}, Chunk120356), t = t = {
             ariaLabel: Chunk388032.intl.formatToPlainString(Chunk388032.t["/uzRsr"], {
               guildName: Chunk388032.intl.string(Chunk388032.t.wMWycn),
-              mentions: F
+              mentions: V
             }),
-            "aria-selected": V,
+            "aria-selected": F,
             to: {
               pathname: Chunk981631.Z5c.CHANNEL(Chunk981631.I_8, G),
               state: A
             },
-            selected: V || M,
+            selected: F || M,
             onMouseEnter: () => L(true),
             onMouseLeave: () => L(false),
             onMouseDown: function() {

@@ -72,7 +72,7 @@ function b(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let y = "MMM D, YYYY";
+let y = "ll";
 
 function O(e) {
   let {

@@ -37,19 +37,19 @@ function N(e) {
   } = e, l = (null == t ? true : t.premiumProgressBarEnabled) === true ? g.DF.LEFT_TOP : g.DF.TOP_CENTER, N = l === g.DF.TOP_CENTER || l === g.DF.LEFT_TOP ? E[l] : "", {
     analyticsLocations: w
   } = (0, d.ZP)(u.Z.GUILD_BOOSTING_ENHANCED_ROLE_COLOR_COACHMARK), Z = i.useCallback(() => {
-    (0, f.u)({
+    (0, h.u)({
       analyticsLocation: {
-        section: v.jXE.BOOSTER_ENHANCED_ROLE_COLORS_COACHMARK
+        section: j.jXE.BOOSTER_ENHANCED_ROLE_COLORS_COACHMARK
       },
       numberOfBoostsToAdd: 1,
       analyticsLocations: w,
       guild: t
     })
   }, [t, w]), T = (0, s.e7)([b.default], () => b.default.getCurrentUser()), A = function(e) {
-    let t = (0, s.e7)([m.Z], () => m.Z.getSortedRoles(e).find(_.YB));
+    let t = (0, s.e7)([m.Z], () => m.Z.getSortedRoles(e).find(y.YB));
     return (null == t ? true : t.colorStrings) != null ? t.colorStrings : {
-      primaryColor: (0, a.Rf)(y.oC.primary_color),
-      secondaryColor: (0, a.Rf)(y.oC.secondary_color),
+      primaryColor: (0, a.Rf)(_.oC.primary_color),
+      secondaryColor: (0, a.Rf)(_.oC.secondary_color),
       tertiaryColor: null
     }
   }(t.id), {
@@ -66,7 +66,7 @@ function N(e) {
       className: E.imageContainer,
       children: [null != T ? (0, r.jsx)("div", {
         className: E.messageContainer,
-        children: (0, r.jsx)(h.l, {
+        children: (0, r.jsx)(f.l, {
           avatar: (0, r.jsx)(p.Z, {
             user: T,
             guildId: t.id,
@@ -78,29 +78,29 @@ function N(e) {
           username: O.ZP.getName(t.id, null, T),
           asset: (0, r.jsx)("img", {
             alt: "",
-            src: I.Z
+            src: P.Z
           })
         })
       }) : (0, r.jsx)("img", {
         alt: "",
-        src: P.Z,
+        src: I.Z,
         className: E.image
       }), (0, r.jsx)(c.olH, {
         className: E.close,
         innerClassName: E.innerClose,
-        onClick: () => null == n ? true : n(j.L.USER_DISMISS)
+        onClick: () => null == n ? true : n(v.L.USER_DISMISS)
       })]
     }),
     header: (0, r.jsx)(c.Text, {
       variant: "text-md/semibold",
-      children: x.intl.string(C.default.bw76aG)
+      children: C.intl.string(x.default.bw76aG)
     }),
     content: (0, r.jsx)(c.Text, {
       variant: "text-sm/medium",
       color: "text-muted",
-      children: x.intl.string(C.default["/DTbiY"])
+      children: C.intl.string(x.default["/DTbiY"])
     }),
-    buttonCTA: x.intl.string(x.t["oPAx7+"]),
+    buttonCTA: C.intl.string(C.t["oPAx7+"]),
     onClick: Z,
     className: o()(E.container, N),
     caretPosition: l,

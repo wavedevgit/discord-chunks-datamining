@@ -48,7 +48,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk757212 = require("./757212.js"),
   Chunk149623 = require("./149623.js");
 
-function Y(e) {
+function q(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -66,7 +66,7 @@ function Y(e) {
   }
   return e
 }
-let q = Chunk541716.Ie.THREAD_CREATION;
+let Y = Chunk541716.Ie.THREAD_CREATION;
 
 function K(e) {
   let {
@@ -155,7 +155,7 @@ function Q(e) {
       [r, l] = i.useState(n),
       a = i.useCallback(n => {
         var r, i;
-        l(e => Y({}, e, n)), u.Z.changeThreadSettings(e.id, (r = Y({}, n), i = i = {
+        l(e => q({}, e, n)), u.Z.changeThreadSettings(e.id, (r = q({}, n), i = i = {
           parentMessageId: t
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
           var n = Object.keys(e);
@@ -233,7 +233,7 @@ function Q(e) {
           shouldClear: false,
           shouldRefocus: false
         };
-        f(true), null == e && (e = a.textValue), e = e.trim(), (null == i || 0 === i.length) && (i = null == (o = S.Z.getStickerPreview(t.id, q.drafts.type)) ? true : o.map(e => e.id)), (null == l || 0 === l.length) && (l = w.Z.getUploads(t.id, T.d.FirstThreadMessage));
+        f(true), null == e && (e = a.textValue), e = e.trim(), (null == i || 0 === i.length) && (i = null == (o = S.Z.getStickerPreview(t.id, Y.drafts.type)) ? true : o.map(e => e.id)), (null == l || 0 === l.length) && (l = w.Z.getUploads(t.id, T.d.FirstThreadMessage));
         let g = null != (c = r.name) ? c : "",
           b = (s || null == n) && 0 === g.length,
           _ = "" === e && (null == i || 0 === i.length) && 0 === l.length;
@@ -248,7 +248,7 @@ function Q(e) {
             content: e,
             stickers: i,
             uploads: l,
-            type: q,
+            type: Y,
             channel: t
           });
           if (!n) return f(false), {
@@ -264,7 +264,7 @@ function Q(e) {
             shouldRefocus: true
           }
         }
-        return (0, I.qB)(t.id, q.drafts.type), f(false), {
+        return (0, I.qB)(t.id, Y.drafts.type), f(false), {
           shouldClear: true,
           shouldRefocus: false
         }
@@ -464,7 +464,7 @@ function ee(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(x.Z, {
       channelId: t.id,
-      type: q,
+      type: Y,
       canAttachFiles: y
     }), (0, r.jsx)("div", {
       className: z.starterMessageError,
@@ -472,7 +472,7 @@ function ee(e) {
         error: v
       })
     }), (0, r.jsx)(C.ZP, {
-      type: q,
+      type: Y,
       channel: t,
       placeholder: V.intl.string(V.t.taZfIC),
       textValue: n.textValue,

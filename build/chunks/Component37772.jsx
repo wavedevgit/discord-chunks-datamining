@@ -79,38 +79,38 @@ let B = Chunk647438.memo(function e(t) {
       compact: R = false,
       className: L,
       onContextMenu: B,
-      onClick: F,
+      onClick: V,
       disableInteraction: H = false,
       hasThread: z,
       treatSpam: W
     } = t,
     K = D.OBS.has(s.type) ? s.messageReference : true,
-    Y = (0, a.e7)([f.Z], () => f.Z.getMessageByReference(K)),
-    q = (0, a.e7)([g.Z], () => s.type === D.uaV.THREAD_STARTER_MESSAGE && Y.state === f.Y.LOADED ? g.Z.getChannel(Y.message.channel_id) : null),
-    X = h.x4.useSetting(),
-    Q = h.RS.useSetting(),
-    J = h.NA.useSetting(),
-    $ = h.QK.useSetting(),
+    Y = (0, a.e7)([h.Z], () => h.Z.getMessageByReference(K)),
+    q = (0, a.e7)([g.Z], () => s.type === D.uaV.THREAD_STARTER_MESSAGE && Y.state === h.Y.LOADED ? g.Z.getChannel(Y.message.channel_id) : null),
+    X = f.x4.useSetting(),
+    Q = f.RS.useSetting(),
+    J = f.NA.useSetting(),
+    $ = f.QK.useSetting(),
     ee = (0, u.A)((null != (n = s.editedTimestamp) ? n : s.timestamp).valueOf()),
     et = (0, d.Z)(null == l ? true : l.id),
     {
       disableReactionCreates: en
-    } = (0, C.Z)(l),
+    } = (0, x.Z)(l),
     {
       content: er,
       hasSpoilerEmbeds: ei
-    } = (0, I.Z)(s, {
+    } = (0, P.Z)(s, {
       hideSimpleEmbedContent: Q && J,
       allowList: ee,
       allowHeading: ee,
       allowLinks: true,
       previewLinkTarget: true
     }),
-    el = (0, j.ZP)(s),
+    el = (0, v.ZP)(s),
     eo = (0, a.e7)([g.Z], () => s.hasFlag(D.iLy.HAS_THREAD) && g.Z.getChannel(b.default.castMessageIdAsChannelId(s.id))),
-    ea = s.type === D.uaV.THREAD_STARTER_MESSAGE && Y.state === f.Y.LOADED && null != q,
+    ea = s.type === D.uaV.THREAD_STARTER_MESSAGE && Y.state === h.Y.LOADED && null != q,
     es = !ea && true === i,
-    ec = (0, P.Z)({
+    ec = (0, I.Z)({
       message: s,
       channel: l,
       enabled: es
@@ -118,20 +118,20 @@ let B = Chunk647438.memo(function e(t) {
     eu = (0, c.v)(s),
     ed = (0, O.ro)(s.id, s.channel_id),
     ep = (0, p.Z)(s),
-    ef = (0, E.iG)(s);
+    eh = (0, E.iG)(s);
   return ea ? (0, r.jsx)(e, G(U({}, t), {
     message: Y.message,
     channel: q,
     hasThread: false
-  })) : (m.Z.isBlockedForMessage(s) ? i = M.t["+FcYMz"] : m.Z.isIgnoredForMessage(s) ? i = M.t.VFWjc3 : (0, y.DQ)(s) && W && (i = M.t.xfkfTE), true !== i) ? (0, r.jsx)(V, {
+  })) : (m.Z.isBlockedForMessage(s) ? i = M.t["+FcYMz"] : m.Z.isIgnoredForMessage(s) ? i = M.t.VFWjc3 : (0, _.DQ)(s) && W && (i = M.t.xfkfTE), true !== i) ? (0, r.jsx)(F, {
     className: L,
     compact: R,
     count: 1,
     collapsedReason: i
-  }) : (0, r.jsx)(x.Z, {
+  }) : (0, r.jsx)(C.Z, {
     compact: R,
     className: o()(L, {
-      [k.ephemeral]: (0, _.Pv)(s),
+      [k.ephemeral]: (0, y.Pv)(s),
       [k.disableInteraction]: H,
       [k.groupStart]: t.isGroupStart
     }),
@@ -167,25 +167,25 @@ let B = Chunk647438.memo(function e(t) {
     childrenMessageContent: (0, N.Z)(t, er),
     childrenSystemMessage: (0, Z.Z)(t),
     onContextMenu: B,
-    onClick: F,
+    onClick: V,
     hasThread: false !== z && null != eo && s.hasFlag(D.iLy.HAS_THREAD),
     hasReply: s.type === D.uaV.REPLY,
-    isSystemMessage: (0, v.Z)(s),
+    isSystemMessage: (0, j.Z)(s),
     messageRef: ec,
     author: el,
-    "aria-labelledby": ef,
+    "aria-labelledby": eh,
     "aria-roledescription": M.intl.string(M.t.BAB0yM)
   })
 });
 
-function V(e) {
+function F(e) {
   let {
     className: t,
     count: n,
     compact: i,
     collapsedReason: l
   } = e;
-  return (0, r.jsx)(x.Z, {
+  return (0, r.jsx)(C.Z, {
     className: t,
     compact: i,
     role: "group",

@@ -76,12 +76,12 @@ let T = (0, Chunk624138.Mg)(Chunk477690.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITI
       guild: t,
       tooltipTypes: l,
       withMargin: d
-    } = e, v = (0, y.Jh)(t.id), T = (0, b.Z)(t.id), A = (0, y.FZ)(v), R = null == A, M = null != A ? A : v, L = (0, c.e7)([C.Z], () => {
+    } = e, j = (0, _.Jh)(t.id), T = (0, b.Z)(t.id), A = (0, _.FZ)(j), R = null == A, M = null != A ? A : j, L = (0, c.e7)([x.Z], () => {
       var e;
-      return null != (e = C.Z.getCountForGuild(t.id)) ? e : 0
+      return null != (e = x.Z.getCountForGuild(t.id)) ? e : 0
     }), k = (0, c.e7)([O.Z], () => O.Z.can(E.Plq.MANAGE_GUILD, t));
     i.useEffect(() => {
-      L !== T && (0, j.v)(t.id, T)
+      L !== T && (0, v.v)(t.id, T)
     }, [t.id, L, T]);
     let U = R ? "100%" : "".concat(Math.min(100, T / E.oCV[M] * 100), "%"),
       {
@@ -96,16 +96,16 @@ let T = (0, Chunk624138.Mg)(Chunk477690.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITI
         },
         config: D
       }), "respect-motion-settings", [L, T, G, U]),
-      V = t.premiumTier < M && L >= E.oCV[M],
-      F = (0, x.Z)(t, h.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY),
-      H = I.intl.formatToPlainString(I.t["2oNfMT"], {
-        levelName: (0, y.e9)(M)
+      F = t.premiumTier < M && L >= E.oCV[M],
+      V = (0, C.Z)(t, f.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY),
+      H = P.intl.formatToPlainString(P.t["2oNfMT"], {
+        levelName: (0, _.e9)(M)
       }),
-      z = I.intl.format(I.t.dhKnYm, {
+      z = P.intl.format(P.t.dhKnYm, {
         numBoosts: T,
         numTotal: E.oCV[M]
       });
-    R && (H = (0, y.e9)(M), z = I.intl.format(I.t.B2byER, {
+    R && (H = (0, _.e9)(M), z = P.intl.format(P.t.B2byER, {
       numBoosts: T
     })), H = H.toLocaleLowerCase();
     let W = (0, s.JA)("boosts-".concat(t.id)),
@@ -126,13 +126,13 @@ let T = (0, Chunk624138.Mg)(Chunk477690.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITI
         },
         onClick: () => {
           var t, n;
-          null == e || null == (t = e.onClick) || t.call(e), null == i || null == (n = i.onClick) || n.call(i), F()
+          null == e || null == (t = e.onClick) || t.call(e), null == i || null == (n = i.onClick) || n.call(i), V()
         },
         className: o()(N.container, {
           [N.containerWithMargin]: d
         }),
         onContextMenu: e => {
-          k && (0, f.jW)(e, async () => {
+          k && (0, h.jW)(e, async () => {
             let {
               default: e
             } = await n.e("8570").then(n.bind(n, 651138));
@@ -162,11 +162,11 @@ let T = (0, Chunk624138.Mg)(Chunk477690.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITI
               className: N.progressText,
               lineClamp: 1,
               children: z
-            }), (0, r.jsx)(_.Z, {
+            }), (0, r.jsx)(y.Z, {
               className: N.count,
               height: 16,
               width: 16,
-              direction: _.Z.Directions.RIGHT
+              direction: y.Z.Directions.RIGHT
             })]
           })]
         }), (0, r.jsxs)("div", {
@@ -177,7 +177,7 @@ let T = (0, Chunk624138.Mg)(Chunk477690.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITI
             className: N.progressBar,
             style: B
           }), R ? (0, r.jsx)("span", {
-            "aria-label": I.intl.string(I.t["7iL1q6"]),
+            "aria-label": P.intl.string(P.t["7iL1q6"]),
             role: "img",
             className: N.tadaIcon,
             children: "\uD83C\uDF89"
@@ -186,10 +186,10 @@ let T = (0, Chunk624138.Mg)(Chunk477690.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITI
       }));
     return (0, r.jsx)("li", {
       children: (0, r.jsx)(p.ua7, {
-        text: V ? I.intl.formatToPlainString(P.default["9CtPjo"], {
-          perk: (0, y.nW)(M)
-        }) : R ? I.intl.string(I.t["Y+V9go"]) : I.intl.formatToPlainString(I.t.UyDKl5, {
-          levelName: (0, y.nW)(M)
+        text: F ? P.intl.formatToPlainString(I.default["9CtPjo"], {
+          perk: (0, _.nW)(M)
+        }) : R ? P.intl.string(P.t["Y+V9go"]) : P.intl.formatToPlainString(P.t.UyDKl5, {
+          levelName: (0, _.nW)(M)
         }),
         position: "top",
         delay: 200,

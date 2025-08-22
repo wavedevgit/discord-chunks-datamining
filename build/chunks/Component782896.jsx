@@ -15,12 +15,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk906530 = require("./906530.js");
 
-function h(e) {
+function f(e) {
   let {
     children: t
   } = e;
   return (0, r.jsx)(a.ZP, {
-    className: f.facepileItemContainer,
+    className: h.facepileItemContainer,
     mask: a.ZP.Masks.SQUIRCLE,
     width: 25,
     height: 25,
@@ -34,16 +34,16 @@ function g(e) {
     numTruncated: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: f.guildIconList,
+    className: h.guildIconList,
     children: [t.map(e => (0, r.jsxs)("div", {
-      className: f.guildIconItem,
+      className: h.guildIconItem,
       children: [(0, r.jsx)("div", {
         children: (0, r.jsx)(u.V, {
           guild: e,
           size: 20
         })
       }), (0, r.jsx)(o.Text, {
-        className: f.guildIconItemText,
+        className: h.guildIconItemText,
         variant: "text-xs/medium",
         children: e.name
       })]
@@ -63,8 +63,8 @@ function m(e) {
   } = e, n = (0, l.e7)([c.Z], () => c.Z.getGuildId()), a = (0, l.Wu)([s.Z], () => t.map(e => s.Z.getGuild(e)), [t]), m = (0, i.useMemo)(() => a.filter(e => null != e), [a]), {
     visibleGuilds: b,
     numTruncated: O,
-    visibleGuildsTooltip: _,
-    numTruncatedTooltipGuilds: y
+    visibleGuildsTooltip: y,
+    numTruncatedTooltipGuilds: _
   } = (0, i.useMemo)(() => {
     let e = [...m];
     if (null != n) {
@@ -86,20 +86,20 @@ function m(e) {
   return (0, r.jsx)(o.DY3, {
     "aria-label": p.intl.string(d.default.TG0Qsb),
     text: (0, r.jsx)(g, {
-      guilds: _,
-      numTruncated: y
+      guilds: y,
+      numTruncated: _
     }),
     position: "top",
     children: (0, r.jsxs)("div", {
-      className: f.facepile,
-      children: [b.map(e => (0, r.jsx)(h, {
+      className: h.facepile,
+      children: [b.map(e => (0, r.jsx)(f, {
         children: (0, r.jsx)(u.V, {
           guild: e,
           size: 20
         })
-      }, e.id)), O > 0 && (0, r.jsx)(h, {
+      }, e.id)), O > 0 && (0, r.jsx)(f, {
         children: (0, r.jsxs)(o.Text, {
-          className: f.textItem,
+          className: h.textItem,
           color: "text-secondary",
           variant: "text-xxs/semibold",
           children: ["+", O]

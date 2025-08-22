@@ -1,8 +1,8 @@
 /** Chunk was on 91488 **/
 /** chunk id: 13186, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  U: () => f,
-  Z: () => h
+  U: () => h,
+  Z: () => f
 });
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -13,15 +13,15 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk213609 = require("./213609.js"),
   Chunk452956 = require("./452956.js"),
-  f = ((r = {}).TOP = "top", r.BOTTOM = "bottom", r);
-let h = Chunk647438.forwardRef(function(e, t) {
+  h = ((r = {}).TOP = "top", r.BOTTOM = "bottom", r);
+let f = Chunk647438.forwardRef(function(e, t) {
   let {
     body: n,
     header: r,
     artClassName: l,
     buttonText: o,
-    onClose: f,
-    art: h,
+    onClose: h,
+    art: f,
     align: g
   } = e;
   return (0, d.Z)({
@@ -34,7 +34,7 @@ let h = Chunk647438.forwardRef(function(e, t) {
       className: p.content,
       children: [(0, i.jsx)("div", {
         className: l,
-        children: h
+        children: f
       }), (0, i.jsxs)("div", {
         className: p.body,
         children: [(0, i.jsx)(u.X6q, {
@@ -54,7 +54,7 @@ let h = Chunk647438.forwardRef(function(e, t) {
           text: o,
           fullWidth: true,
           onClick: e => {
-            null == f || f(e)
+            null == h || h(e)
           }
         })
       }), (0, i.jsx)("div", {

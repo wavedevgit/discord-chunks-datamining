@@ -24,7 +24,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk557047 = require("./557047.js");
-let x = {
+let C = {
   left: 4,
   right: false
 };
@@ -37,7 +37,7 @@ function E(e) {
     compact: u,
     isGroupStart: d,
     treatSpam: p,
-    gotoChannel: f
+    gotoChannel: h
   } = e, g = (0, a.JA)(null != (t = s.id) ? t : ""), m = i.useCallback(e => {
     if ("ArrowLeft" === e.key) {
       var t;
@@ -45,7 +45,7 @@ function E(e) {
     }
   }, [o.id]);
   return (0, r.jsx)(c.tEY, {
-    offset: x,
+    offset: C,
     children: (0, r.jsxs)("div", (n = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -64,17 +64,17 @@ function E(e) {
       }
       return e
     }({
-      className: C.messageContainer,
+      className: x.messageContainer,
       onKeyDown: m
     }, g), l = l = {
-      children: [(0, r.jsx)(_.Z, {
-        className: C.jumpButton,
-        onJump: e => f(e, s.id)
-      }), (0, r.jsx)(h.Z, {
+      children: [(0, r.jsx)(y.Z, {
+        className: x.jumpButton,
+        onJump: e => h(e, s.id)
+      }), (0, r.jsx)(f.Z, {
         id: s.id,
         message: s,
         channel: o,
-        className: C.message,
+        className: x.message,
         compact: u,
         animateAvatar: false,
         isGroupStart: d,
@@ -101,21 +101,21 @@ function S(e) {
     channelRecord: l,
     gotoChannel: a
   } = e, {
-    enabled: h
+    enabled: f
   } = u.Z.useExperiment({
     location: "20e3b0_1"
   }, {
     autoTrackExposure: false
-  }), _ = g.jU.useSetting(), x = (0, p.P1)(l), S = false, I = 0 === i.messages.length || o()(i.messages[0].timestamp).isSame(o()(), "day"), P = null != (n = null == (t = b.default.getUser(m.default.getId())) ? true : t.hasFlag(v.xW$.SPAMMER)) && n, N = [];
+  }), y = g.jU.useSetting(), C = (0, p.P1)(l), S = false, P = 0 === i.messages.length || o()(i.messages[0].timestamp).isSame(o()(), "day"), I = null != (n = null == (t = b.default.getUser(m.default.getId())) ? true : t.hasFlag(j.xW$.SPAMMER)) && n, N = [];
   if (!i.collapsed) {
     let e = null,
       t = null,
-      n = i.messages.slice(0, y.hC);
+      n = i.messages.slice(0, _.hC);
     n.forEach(n => {
-      if (!I && (null == e || !e.isSame(n.timestamp, "day"))) {
+      if (!P && (null == e || !e.isSame(n.timestamp, "day"))) {
         let t = (0, O.vc)(n.timestamp, "LL");
-        N.push((0, r.jsx)(f.Z, {
-          className: C.divider,
+        N.push((0, r.jsx)(h.Z, {
+          className: x.divider,
           children: t
         }, t)), e = o()(n.timestamp)
       }
@@ -123,22 +123,22 @@ function S(e) {
       t = n, S = S || (0, p.DQ)(n), N.push((0, r.jsx)(E, {
         channel: l,
         message: n,
-        compact: _,
+        compact: y,
         isGroupStart: i,
-        treatSpam: !P && h && (0, p.DQ)(n) && x,
+        treatSpam: !I && f && (0, p.DQ)(n) && C,
         gotoChannel: a
       }, n.id))
-    }), i.messages.length >= y.hC && N.push((0, r.jsxs)(s.zx, {
+    }), i.messages.length >= _.hC && N.push((0, r.jsxs)(s.zx, {
       color: s.zx.Colors.LINK,
       look: s.zx.Looks.LINK,
       onClick: e => a(e, n[n.length - 1].id),
-      children: [j.intl.string(j.t["9OB9ho"]), " ›"]
+      children: [v.intl.string(v.t["9OB9ho"]), " ›"]
     }, "view-all")), 0 === N.length && (N = [(0, r.jsx)(c.$jN, {}, "spinner")])
   }
-  return S && x && u.Z.trackExposure({
+  return S && C && u.Z.trackExposure({
     location: "20e3b0_2"
   }), (0, r.jsx)("div", {
-    className: C.messages,
+    className: x.messages,
     children: N
   })
 }

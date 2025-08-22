@@ -1,7 +1,7 @@
 /** Chunk was on 91488 **/
 /** chunk id: 428127, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => y
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -29,8 +29,8 @@ function O(e) {
     jumpToVoiceChannels: l
   } = e, a = n.getCategoryFromSection(n.voiceChannelsSectionNumber), s = (0, u.Z)(n.id), p = i.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), l()
-  }, [l]), h = null != (t = null == a ? true : a.getChannelRecords()) ? t : [], b = (0, f.c4)({
-    channels: h,
+  }, [l]), f = null != (t = null == a ? true : a.getChannelRecords()) ? t : [], b = (0, h.c4)({
+    channels: f,
     selectedChannelId: null,
     selectedVoiceChannelId: null,
     voiceStates: s
@@ -61,7 +61,7 @@ function O(e) {
   })
 }
 
-function _(e) {
+function y(e) {
   let {
     position: t,
     guildChannels: n,
@@ -69,20 +69,20 @@ function _(e) {
     jumpToVoiceChannels: u,
     jumpToChannel: d
   } = e, {
-    bottomBar: f,
-    topBar: _
-  } = (0, s.cj)([h.Z], () => h.Z.getUnreadStateForGuildId(n.id)), y = (0, s.e7)([p.Z], () => p.Z.isFocused()), {
-    mode: v,
-    mentionCount: j,
-    targetChannelId: C
-  } = "bottom" === t ? f : _, x = v === h.x.HIDDEN, E = (0, c.q_F)({
+    bottomBar: h,
+    topBar: y
+  } = (0, s.cj)([f.Z], () => f.Z.getUnreadStateForGuildId(n.id)), _ = (0, s.e7)([p.Z], () => p.Z.isFocused()), {
+    mode: j,
+    mentionCount: v,
+    targetChannelId: x
+  } = "bottom" === t ? h : y, C = j === f.x.HIDDEN, E = (0, c.q_F)({
     to: {
-      transform: x ? "bottom" === t ? "translateY(180%)" : "translateY(-180%)" : "translateY(0%)"
+      transform: C ? "bottom" === t ? "translateY(180%)" : "translateY(-180%)" : "translateY(0%)"
     },
     config: b
-  }, y ? "respect-motion-settings" : "animate-never"), S = i.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), null != C && d(C)
-  }, [d, C]);
+  }, _ ? "respect-motion-settings" : "animate-never"), S = i.useCallback(e => {
+    e.preventDefault(), e.stopPropagation(), null != x && d(x)
+  }, [d, x]);
   return (0, r.jsx)("div", {
     className: o()(m.container, {
       [m.top]: "top" === t,
@@ -91,10 +91,10 @@ function _(e) {
     children: (0, r.jsx)(a.animated.div, {
       className: m.containerPadding,
       style: E,
-      "aria-hidden": x,
-      children: v === h.x.HIDDEN ? (0, r.jsx)("div", {
+      "aria-hidden": C,
+      children: j === f.x.HIDDEN ? (0, r.jsx)("div", {
         className: o()(m.bar, m.emptyBar)
-      }) : v === h.x.UNREAD ? (0, r.jsxs)(c.P3F, {
+      }) : j === f.x.UNREAD ? (0, r.jsxs)(c.P3F, {
         className: m.bar,
         onClick: S,
         children: ["bottom" === t ? (0, r.jsx)(c.CJ0, {
@@ -115,7 +115,7 @@ function _(e) {
           className: m.barText,
           children: g.intl.string(g.t.FCRiT0)
         })]
-      }) : v === h.x.MENTIONS ? (0, r.jsx)(c.P3F, {
+      }) : j === f.x.MENTIONS ? (0, r.jsx)(c.P3F, {
         className: o()(m.bar, m.mentionsBar),
         onClick: S,
         children: (0, r.jsx)(c.Text, {
@@ -123,10 +123,10 @@ function _(e) {
           color: "status-danger-text",
           className: m.barText,
           children: g.intl.format(g.t.EQcLys, {
-            count: j
+            count: v
           })
         })
-      }) : v === h.x.VOICE_CHANNELS ? (0, r.jsx)(O, {
+      }) : j === f.x.VOICE_CHANNELS ? (0, r.jsx)(O, {
         jumpToVoiceChannels: u,
         guildChannels: n,
         guildChannelsVersion: l

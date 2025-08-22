@@ -379,7 +379,6 @@ let eO = Chunk647438.memo(function(e) {
       }) : null, (0, r.jsx)(y.i, {
         selected: m === et.Z5c.COLLECTIBLES_SHOP || (null == l ? true : l.startsWith(et.Z5c.COLLECTIBLES_SHOP)),
         listItemRef: _,
-        listScrollerRef: O,
         locationState: {
           analyticsSource: {
             page: e_(l),

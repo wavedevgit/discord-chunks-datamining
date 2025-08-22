@@ -30,7 +30,7 @@ let d = () => {
       handleResetStatusClick: p
     } = (0, Chunk113434.kJ)(Chunk46140.V6);
   return {
-    resetOnboardingAnnouncementModal: _,
+    resetOnboardingExperience: _,
     resetQuestStatus: p
   }
 }

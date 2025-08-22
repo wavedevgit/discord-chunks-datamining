@@ -21,7 +21,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk87587 = require("./87587.js"),
   Chunk354810 = require("./354810.js");
-async function v(e) {
+async function j(e) {
   await d.hW.updateAsync("status", t => {
     t.status = s.Gm.create({
       value: e
@@ -29,26 +29,26 @@ async function v(e) {
   }, d.fy.INFREQUENT_USER_ACTION)
 }
 
-function j(e) {
+function v(e) {
   let {
     closePopout: t
   } = e;
   return (0, i.jsx)("div", {
     "data-button-hoisted-classname-wrapper": true,
-    className: _.goOnlineButton,
+    className: y.goOnlineButton,
     children: (0, i.jsx)(c.zxk, {
       variant: "primary",
       size: "sm",
       text: O.intl.string(b.default.Poezn5),
       onClick: () => {
-        t(), v(c.Skl.ONLINE)
+        t(), j(c.Skl.ONLINE)
       },
       fullWidth: true
     })
   })
 }
 
-function C(e) {
+function x(e) {
   let {
     showCurrentGame: t,
     shouldShowStatus: n = false,
@@ -56,17 +56,17 @@ function C(e) {
     closePopout: l
   } = e, o = (0, a.e7)([p.Z], () => p.Z.getStatus()), {
     showLinkToSettings: s
-  } = (0, h.D)("popout");
+  } = (0, f.D)("popout");
   return (0, i.jsxs)("div", {
-    className: _.toggleContainer,
+    className: y.toggleContainer,
     children: [(0, i.jsxs)("div", {
-      className: _.toggleContainerText,
+      className: y.toggleContainerText,
       children: [(0, i.jsx)(c.Text, {
         variant: "text-sm/medium",
         color: "header-primary",
         children: O.intl.string(O.t.KY0ilp)
       }), n && (0, i.jsxs)("div", {
-        className: _.toggleContainerOnlineRow,
+        className: y.toggleContainerOnlineRow,
         children: [(0, i.jsx)(c.qbd, {
           status: c.Skl.ONLINE,
           size: 8
@@ -80,14 +80,14 @@ function C(e) {
       })]
     }), (0, i.jsx)(c.rsf, {
       onChange: e => {
-        u.G6.updateSetting(e), n && v(e ? c.Skl.ONLINE : c.Skl.INVISIBLE)
+        u.G6.updateSetting(e), n && j(e ? c.Skl.ONLINE : c.Skl.INVISIBLE)
       },
       checked: t
     })]
   })
 }
 
-function x(e) {
+function C(e) {
   let {
     children: t,
     closePopout: n
@@ -96,26 +96,26 @@ function x(e) {
   let s = u.G6.useSetting(),
     d = (0, a.e7)([p.Z], () => p.Z.getStatus()) === c.Skl.INVISIBLE && s;
   return (0, i.jsxs)("div", {
-    className: _.wrapper,
+    className: y.wrapper,
     ref: r,
     children: [null != n && (0, i.jsx)("div", {
-      className: _.gradient
+      className: y.gradient
     }), (0, i.jsxs)("div", {
-      className: _.content,
+      className: y.content,
       children: [null != n && (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("img", {
           alt: "",
-          src: y.Z,
-          className: _.controllerImage
+          src: _.Z,
+          className: y.controllerImage
         }), (0, i.jsx)(o.X6, {
           variant: "heading-md/bold",
           color: "header-primary",
-          className: _.nuxTitle,
+          className: y.nuxTitle,
           children: O.intl.string(d ? b.default.MkgMBw : O.t.PRjSRk)
         })]
       }), t]
     }), null != n && (0, i.jsx)("div", {
-      className: _.closeButton,
+      className: y.closeButton,
       children: (0, i.jsx)(c.hU, {
         icon: c.Dio,
         onClick: n,
@@ -131,18 +131,18 @@ function E(e) {
   let {
     closePopout: t
   } = e, n = u.G6.useSetting();
-  return (0, i.jsxs)(x, {
+  return (0, i.jsxs)(C, {
     closePopout: t,
     children: [(0, i.jsx)(c.Text, {
       variant: "text-xs/normal",
       color: "text-secondary",
-      className: _.nuxContent,
+      className: y.nuxContent,
       children: O.intl.format(b.default.nHDuwM, {
-        learnMoreLink: f.Z.getArticleURL(m.BhN.ACTIVITY_STATUS_SETTINGS)
+        learnMoreLink: h.Z.getArticleURL(m.BhN.ACTIVITY_STATUS_SETTINGS)
       })
     }), (0, i.jsx)("div", {
-      className: _.toggleContainerWrapper,
-      children: (0, i.jsx)(C, {
+      className: y.toggleContainerWrapper,
+      children: (0, i.jsx)(x, {
         showCurrentGame: n,
         shouldShowCustomizeLink: true,
         closePopout: t
@@ -155,37 +155,37 @@ function S(e) {
   let {
     closePopout: t
   } = e;
-  return (0, i.jsxs)(x, {
+  return (0, i.jsxs)(C, {
     closePopout: t,
     children: [(0, i.jsx)(c.Text, {
       variant: "text-xs/normal",
       color: "text-secondary",
-      className: _.nuxContent,
+      className: y.nuxContent,
       children: O.intl.format(b.default["vtp/IS"], {
-        learnMoreLink: f.Z.getArticleURL(m.BhN.ACTIVITY_STATUS_SETTINGS)
+        learnMoreLink: h.Z.getArticleURL(m.BhN.ACTIVITY_STATUS_SETTINGS)
       })
-    }), (0, i.jsx)(j, {
+    }), (0, i.jsx)(v, {
       closePopout: t
     })]
   })
 }
 
-function I(e) {
+function P(e) {
   let {
     closePopout: t
   } = e, n = u.G6.useSetting();
-  return (0, i.jsxs)(x, {
+  return (0, i.jsxs)(C, {
     closePopout: t,
     children: [(0, i.jsx)(c.Text, {
       variant: "text-xs/normal",
       color: "text-secondary",
-      className: _.nuxContent,
+      className: y.nuxContent,
       children: O.intl.format(b.default.nHDuwM, {
-        learnMoreLink: f.Z.getArticleURL(m.BhN.ACTIVITY_STATUS_SETTINGS)
+        learnMoreLink: h.Z.getArticleURL(m.BhN.ACTIVITY_STATUS_SETTINGS)
       })
     }), (0, i.jsx)("div", {
-      className: _.toggleContainerWrapper,
-      children: (0, i.jsx)(C, {
+      className: y.toggleContainerWrapper,
+      children: (0, i.jsx)(x, {
         showCurrentGame: n,
         shouldShowStatus: true,
         closePopout: t
@@ -194,23 +194,23 @@ function I(e) {
   })
 }
 
-function P(e) {
+function I(e) {
   let {
     closePopout: t
   } = e, n = u.G6.useSetting(), {
     showLinkToSettings: r
-  } = (0, h.D)("popout");
-  return (0, i.jsxs)(x, {
-    children: [(0, i.jsx)(C, {
+  } = (0, f.D)("popout");
+  return (0, i.jsxs)(C, {
+    children: [(0, i.jsx)(x, {
       showCurrentGame: n,
       closePopout: t
     }), (0, i.jsx)(c.$i$, {
-      className: _.divider
+      className: y.divider
     }), (0, i.jsx)(c.Text, {
       variant: "text-xs/normal",
       color: "text-secondary",
       children: O.intl.format(b.default.nHDuwM, {
-        learnMoreLink: f.Z.getArticleURL(m.BhN.ACTIVITY_STATUS_SETTINGS)
+        learnMoreLink: h.Z.getArticleURL(m.BhN.ACTIVITY_STATUS_SETTINGS)
       })
     }), r && (0, i.jsx)(g.y, {
       onClosePopout: t
@@ -222,19 +222,19 @@ function N(e) {
   let {
     closePopout: t
   } = e;
-  return (0, i.jsxs)(x, {
+  return (0, i.jsxs)(C, {
     children: [(0, i.jsx)(o.X6, {
       variant: "heading-sm/semibold",
       color: "header-primary",
-      className: _.controlTitle,
+      className: y.controlTitle,
       children: O.intl.string(b.default.MkgMBw)
     }), (0, i.jsx)(c.Text, {
       variant: "text-xs/normal",
       color: "text-secondary",
       children: O.intl.format(b.default["vtp/IS"], {
-        learnMoreLink: f.Z.getArticleURL(m.BhN.ACTIVITY_STATUS_SETTINGS)
+        learnMoreLink: h.Z.getArticleURL(m.BhN.ACTIVITY_STATUS_SETTINGS)
       })
-    }), (0, i.jsx)(j, {
+    }), (0, i.jsx)(v, {
       closePopout: t
     })]
   })
@@ -245,19 +245,19 @@ function w(e) {
     closePopout: t
   } = e, n = u.G6.useSetting(), {
     showLinkToSettings: r
-  } = (0, h.D)("popout");
-  return (0, i.jsxs)(x, {
-    children: [(0, i.jsx)(C, {
+  } = (0, f.D)("popout");
+  return (0, i.jsxs)(C, {
+    children: [(0, i.jsx)(x, {
       showCurrentGame: n,
       shouldShowStatus: true,
       closePopout: t
     }), (0, i.jsx)(c.$i$, {
-      className: _.divider
+      className: y.divider
     }), (0, i.jsx)(c.Text, {
       variant: "text-xs/normal",
       color: "text-secondary",
       children: O.intl.format(b.default.nHDuwM, {
-        learnMoreLink: f.Z.getArticleURL(m.BhN.ACTIVITY_STATUS_SETTINGS)
+        learnMoreLink: h.Z.getArticleURL(m.BhN.ACTIVITY_STATUS_SETTINGS)
       })
     }), r && (0, i.jsx)(g.y, {
       onClosePopout: t
@@ -284,11 +284,11 @@ function T(e) {
         closePopout: n
       });
     case 2:
-      return (0, i.jsx)(I, {
+      return (0, i.jsx)(P, {
         closePopout: n
       });
     case 3:
-      return (0, i.jsx)(P, {
+      return (0, i.jsx)(I, {
         closePopout: n
       });
     case 4:

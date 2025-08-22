@@ -1,7 +1,7 @@
 /** Chunk was on 5665 **/
 /** chunk id: 400023, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => q
+  Z: () => Y
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -92,7 +92,7 @@ function z(e, t) {
   return i
 }
 let W = (0, Chunk202841.animated)(Chunk481060.eTT),
-  Y = Chunk647438.memo(function(e) {
+  q = Chunk647438.memo(function(e) {
     var t, n;
     let {
       className: l,
@@ -115,7 +115,7 @@ let W = (0, Chunk202841.animated)(Chunk481060.eTT),
       jumpBarClassName: w,
       typingGradient: R,
       isChatInputBottomAligned: D
-    } = e, [Y, q] = i.useState(null != (n = j.Z.isAtBottom(m.id)) && n), K = i.useMemo(() => y ? (0, M.aJ)({
+    } = e, [q, Y] = i.useState(null != (n = j.Z.isAtBottom(m.id)) && n), K = i.useMemo(() => y ? (0, M.aJ)({
       compact: true,
       messageGroups: 30,
       groupRange: 4,
@@ -137,8 +137,8 @@ let W = (0, Chunk202841.animated)(Chunk481060.eTT),
       focusId: E,
       placeholderHeight: K.totalHeight,
       canLoadMore: null == Z,
-      handleScrollToBottom: i.useCallback(() => q(true), [q]),
-      handleScrollFromBottom: i.useCallback(() => q(false), [q]),
+      handleScrollToBottom: i.useCallback(() => Y(true), [Y]),
+      handleScrollFromBottom: i.useCallback(() => Y(false), [Y]),
       additionalMessagePadding: 48 * !!D
     }), Q = (0, L.Z)({
       scrollerRef: X.ref,
@@ -214,12 +214,12 @@ let W = (0, Chunk202841.animated)(Chunk481060.eTT),
         X.ref.current = e, ea.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
       }),
       ec = i.useMemo(() => {
-        let e = R && !Y ? 96 : R ? 32 : 16,
-          t = R && !Y ? 24 : 24 * !!R;
+        let e = R && !q ? 96 : R ? 32 : 16,
+          t = R && !q ? 24 : 24 * !!R;
         return {
           mask: "linear-gradient(180deg, black 0%, black calc(100% - ".concat(e, "px), rgba(0,0,0,0) calc(100% - ").concat(t, "px), rgba(0,0,0,0) 100%)")
         }
-      }, [R, Y]);
+      }, [R, q]);
     return (0, r.jsxs)(s.bG, {
       navigator: Q,
       children: [null != er && er, (0, r.jsxs)("div", {
@@ -262,7 +262,7 @@ let W = (0, Chunk202841.animated)(Chunk481060.eTT),
       })]
     })
   }, (e, t) => null != e.isHidden && null != t.isHidden && e.isHidden && t.isHidden),
-  q = Chunk647438.memo(function(e) {
+  Y = Chunk647438.memo(function(e) {
     var {
       channel: t,
       showingQuarantineBanner: n,
@@ -327,7 +327,7 @@ let W = (0, Chunk202841.animated)(Chunk481060.eTT),
       messages: F,
       channelStream: G,
       oldestUnreadMessageId: W,
-      editingMessageId: q
+      editingMessageId: Y
     } = function(e) {
       var t, n;
       let r = (0, c.e7)([I.Z], () => I.Z.getMessages(e.id), [e.id]),
@@ -381,7 +381,7 @@ let W = (0, Chunk202841.animated)(Chunk481060.eTT),
     return (0, r.jsx)(b.aQ.Provider, {
       value: (0, w.Z)(k, h),
       children: (0, r.jsx)(D.v, {
-        children: (0, r.jsx)(Y, V(H({}, d), {
+        children: (0, r.jsx)(q, V(H({}, d), {
           messageGroupSpacing: A,
           showNewMessagesBar: true,
           channel: t,
@@ -393,7 +393,7 @@ let W = (0, Chunk202841.animated)(Chunk481060.eTT),
           unreadCount: (0, c.e7)([Z.ZP], () => Z.ZP.getUnreadCount(t.id), [t]),
           hasUnreads: null != W,
           canChat: j,
-          editingMessageId: q,
+          editingMessageId: Y,
           fontSize: M,
           keyboardModeEnabled: U,
           showingQuarantineBanner: n,

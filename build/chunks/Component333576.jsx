@@ -15,7 +15,7 @@ var Chunk693789 = require("./693789.jsx"),
   Chunk981631 = require("./981631.js");
 let d = function() {
   let {
-    resetOnboardingAnnouncementModal: e,
+    resetOnboardingExperience: e,
     resetQuestStatus: t
   } = (0, Chunk52647.Z)();
   return (0, Chunk951288.jsxs)(Chunk450272.$0, {

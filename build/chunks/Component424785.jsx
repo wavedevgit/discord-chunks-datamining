@@ -137,16 +137,16 @@ class K extends Chunk98597.ZP {
       connectDragPreview: u,
       canReorderChannel: d,
       canMoveMembers: p,
-      stageInstance: h,
+      stageInstance: f,
       isSubscriptionGated: g,
       needSubscriptionToAccess: m,
       unread: b,
       resolvedUnreadSetting: O,
-      mentionCount: _,
-      isFavoriteSuggestion: y
+      mentionCount: y,
+      isFavoriteSuggestion: _
     } = this.props, {
-      shouldShowGuildVerificationPopout: v
-    } = this.state, j = this.getVoiceStatesCount(), C = (0, Chunk951288.jsxs)("li", {
+      shouldShowGuildVerificationPopout: j
+    } = this.state, v = this.getVoiceStatesCount(), x = (0, Chunk951288.jsxs)("li", {
       className: o()(this.getModeClass(), {
         [Chunk55940.disabled]: this.isDisabled()
       }),
@@ -181,16 +181,16 @@ class K extends Chunk98597.ZP {
             }(l, ["onClick", "onContextMenu"]);
             return (0, r.jsxs)(L.ZP, W(z({
               ref: this.channelItemRef,
-              className: V.iconVisibility,
+              className: F.iconVisibility,
               iconClassName: o()({
-                [F.iconLive]: null != h
+                [V.iconLive]: null != f
               }),
               channel: e,
-              selected: !y && t,
+              selected: !_ && t,
               connected: n,
               unread: n ? b : true,
               resolvedUnreadSetting: O,
-              mentionCount: _,
+              mentionCount: y,
               locked: i,
               onClick: () => {
                 this.handleClick(), null == a || a()
@@ -200,23 +200,23 @@ class K extends Chunk98597.ZP {
               },
               connectDragPreview: u,
               subtitle: this.renderSubtitle(),
-              isFavoriteSuggestion: y,
-              "aria-label": (0, f.ZP)({
+              isFavoriteSuggestion: _,
+              "aria-label": (0, h.ZP)({
                 channel: e,
                 unread: b,
-                mentionCount: _,
-                userCount: j,
+                mentionCount: y,
+                userCount: v,
                 isSubscriptionGated: g,
                 needSubscriptionToAccess: m
               })
             }, c), {
-              children: [y && this.renderAcceptSuggestionButton(), y && this.renderRemoveSuggestionButton(), !y && this.renderOpenChatButton(), !y && this.renderInviteButton(), !y && this.renderEditButton(), !y && this.renderChannelInfo()]
+              children: [_ && this.renderAcceptSuggestionButton(), _ && this.renderRemoveSuggestionButton(), !_ && this.renderOpenChatButton(), !_ && this.renderInviteButton(), !_ && this.renderEditButton(), !_ && this.renderChannelInfo()]
             }))
           }
         })
       }), this.renderVoiceUsers()]
     });
-    return Chunk888651 && (C = Chunk475179(Chunk427679)), Chunk146773 && (C = Chunk120356(Chunk442837(Chunk427679))), Chunk427679
+    return Chunk888651 && (x = Chunk475179(Chunk427679)), Chunk146773 && (x = Chunk120356(Chunk442837(Chunk427679))), Chunk427679
   }
   constructor(...e) {
     super(...e), H(this, "channelItemRef", i.createRef()), H(this, "state", {
@@ -234,17 +234,17 @@ class K extends Chunk98597.ZP {
       } = this.props, i = e.getGuildId();
       null != i && (0, m.n)(i) && (0, g.hk)(i), r && this.setState({
         shouldShowGuildVerificationPopout: true
-      }), t || n || e.isRoleSubscriptionTemplatePreviewChannel() || (0, y.Cq)(e), __OVERLAY__ || (0, _.Kh)(e.id)
+      }), t || n || e.isRoleSubscriptionTemplatePreviewChannel() || (0, _.Cq)(e), __OVERLAY__ || (0, y.Kh)(e.id)
     }), H(this, "handleClickChat", () => {
       let {
         channel: e,
         locked: t
       } = this.props;
-      __OVERLAY__ || t || (0, _.Kh)(e.id)
+      __OVERLAY__ || t || (0, y.Kh)(e.id)
     }), H(this, "handleContextMenu", e => {
       let {
         channel: t
-      } = this.props, i = P.Z.getGuild(t.getGuildId());
+      } = this.props, i = I.Z.getGuild(t.getGuildId());
       null != i && (0, u.jW)(e, async () => {
         let {
           default: e
@@ -282,7 +282,7 @@ class K extends Chunk98597.ZP {
             onBlur: u
           } = t;
           return (0, r.jsx)(s.P3F, {
-            className: o()(V.iconItem, n ? V.alwaysShown : null),
+            className: o()(F.iconItem, n ? F.alwaysShown : null),
             onClick: () => {
               c.Z.updateChatOpen(e.id, true), this.handleClickChat()
             },
@@ -294,7 +294,7 @@ class K extends Chunk98597.ZP {
             children: (0, r.jsx)(s.kBi, {
               size: "xs",
               color: "currentColor",
-              className: V.actionIcon
+              className: F.actionIcon
             })
           })
         }
@@ -307,7 +307,7 @@ class K extends Chunk98597.ZP {
     }), H(this, "renderSubtitle", () => {
       var e;
       let t = null == (e = this.props.stageInstance) ? true : e.topic;
-      return null == t ? null : (0, r.jsx)(h.Z, {
+      return null == t ? null : (0, r.jsx)(f.Z, {
         children: t
       })
     })
@@ -326,8 +326,8 @@ function q(e) {
   } = e, c = (0, a.cj)([Z.ZP], () => ({
     unread: Z.ZP.hasUnread(n.id),
     mentionCount: Z.ZP.getMentionCount(n.id)
-  })), u = (0, a.e7)([T.ZP], () => T.ZP.resolveUnreadSetting(n)), d = (0, a.cj)([I.Z, N.Z, w.Z], () => {
-    let e = I.Z.getChannel(n.parent_id),
+  })), u = (0, a.e7)([T.ZP], () => T.ZP.resolveUnreadSetting(n)), d = (0, a.cj)([P.Z, N.Z, w.Z], () => {
+    let e = P.Z.getChannel(n.parent_id),
       r = N.Z.getCheck(n.guild_id);
     return {
       canManageChannel: null != t && w.Z.can(U.Plq.MANAGE_CHANNELS, n),
@@ -337,29 +337,29 @@ function q(e) {
       bypassLimit: w.Z.can(U.Plq.MOVE_MEMBERS, n),
       unverifiedAccount: !r.canChat
     }
-  }), p = (0, a.e7)([S.Z], () => S.Z.isCollapsed(n.parent_id)), f = (0, E.ZP)(n.id), h = (0, a.e7)([C.Z], () => C.Z.getStageInstanceByChannel(n.id), [n.id]), g = (0, v.Rk)(n.id, j.pV.AUDIENCE), {
+  }), p = (0, a.e7)([S.Z], () => S.Z.isCollapsed(n.parent_id)), h = (0, E.ZP)(n.id), f = (0, a.e7)([x.Z], () => x.Z.getStageInstanceByChannel(n.id), [n.id]), g = (0, j.Rk)(n.id, v.pV.AUDIENCE), {
     isSubscriptionGated: m,
     needSubscriptionToAccess: O
-  } = (0, b.Z)(n.id), _ = (0, a.e7)([T.ZP], () => T.ZP.isFavorite(t.id, n.id)), y = (0, x.xJ)(n.id), P = (0, M.Z)({
+  } = (0, b.Z)(n.id), y = (0, a.e7)([T.ZP], () => T.ZP.isFavorite(t.id, n.id)), _ = (0, C.xJ)(n.id), I = (0, M.Z)({
     channel: n,
     isChannelSelected: false,
     isChannelCollapsed: o,
     voiceStates: s,
     isSubscriptionGated: m,
     needSubscriptionToAccess: O,
-    enableConnectedUserLimit: y || n.userLimit > 0 && n.userLimit < U.xGv
-  }), A = e.connected && null == P;
+    enableConnectedUserLimit: _ || n.userLimit > 0 && n.userLimit < U.xGv
+  }), A = e.connected && null == I;
   return (0, r.jsx)(Y, W(z({
     categoryCollapsed: p,
-    connectAction: f,
+    connectAction: h,
     numAudience: g,
-    stageInstance: h,
+    stageInstance: f,
     isSubscriptionGated: m,
     needSubscriptionToAccess: O
   }, c, d, e), {
-    isFavoriteSuggestion: l && !_,
+    isFavoriteSuggestion: l && !y,
     forceShowButtons: A,
-    channelInfo: P,
+    channelInfo: I,
     resolvedUnreadSetting: u
   }))
 }

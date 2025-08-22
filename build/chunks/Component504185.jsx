@@ -186,7 +186,7 @@ function eu(e) {
         leading: true
       })()
     }
-  }) : (0, r.jsx)(q.Z, {
+  }) : (0, r.jsx)(Y.Z, {
     participants: S,
     channel: c,
     hasConnectPermission: E
@@ -307,7 +307,7 @@ function ed(e) {
               })
             })
           })
-        }), l ? (0, r.jsx)(Y.Z, {
+        }), l ? (0, r.jsx)(q.Z, {
           channel: t,
           toggleRequestToSpeakSidebar: u,
           chatOpen: P

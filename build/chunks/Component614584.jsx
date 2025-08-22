@@ -126,12 +126,12 @@ let S = Chunk647438.memo(function(e) {
       referencedUsernameProfile: false,
       referencedAvatarProfile: false
     })
-  }, [N]), Y = (0, _.Uj)(n);
+  }, [N]), q = (0, _.Uj)(n);
   return (0, r.jsx)(y.Z, {
     repliedAuthor: M,
     baseMessage: n,
     channel: I,
-    baseAuthor: Y,
+    baseAuthor: q,
     referencedMessage: S,
     content: U,
     compact: P,

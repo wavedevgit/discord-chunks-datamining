@@ -25,32 +25,32 @@ function O(e) {
     connected: n,
     hovered: l,
     subtitle: O,
-    onClick: _,
-    enableHangStatus: y,
-    allowChannelTopic: v
-  } = e, j = (0, a.e7)([u.Z], () => u.Z.getChannelStatus(t)), C = null != j && j.length > 0, x = (0, c.ZP)(t, true), E = (!y || !!v) && x, S = null != O && O.length > 0;
+    onClick: y,
+    enableHangStatus: _,
+    allowChannelTopic: j
+  } = e, v = (0, a.e7)([u.Z], () => u.Z.getChannelStatus(t)), x = null != v && v.length > 0, C = (0, c.ZP)(t, true), E = (!_ || !!j) && C, S = null != O && O.length > 0;
   if (i.useEffect(() => {
-      C && f.default.track(h.rMx.VOICE_CHANNEL_TOPIC_VIEWED, {
+      x && h.default.track(f.rMx.VOICE_CHANNEL_TOPIC_VIEWED, {
         channel_id: t.id,
         guild_id: t.guild_id
       })
-    }, [C, t.id, t.guild_id]), null == t.guild_id) return null;
-  let I = o()(m.statusDiv, n && E ? m.hoverable : null);
-  return C ? (0, r.jsx)(s.P3F, {
-    className: I,
-    onClick: E ? _ : true,
+    }, [x, t.id, t.guild_id]), null == t.guild_id) return null;
+  let P = o()(m.statusDiv, n && E ? m.hoverable : null);
+  return x ? (0, r.jsx)(s.P3F, {
+    className: P,
+    onClick: E ? y : true,
     children: (0, r.jsx)(s.Text, {
       variant: "text-xs/medium",
       className: o()(m.statusText, b.markup),
       children: (0, r.jsx)(d.Z, {
-        children: p.Z.parseVoiceChannelStatus(j, true, {
+        children: p.Z.parseVoiceChannelStatus(v, true, {
           channelId: t.id
         })
       })
     })
   }) : n && E && (!S || l) ? (0, r.jsxs)(s.P3F, {
-    className: I,
-    onClick: _,
+    className: P,
+    onClick: y,
     children: [(0, r.jsx)(s.Text, {
       variant: "text-xs/medium",
       className: m.statusText,

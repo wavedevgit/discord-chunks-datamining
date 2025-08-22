@@ -2,17 +2,17 @@
 /** chunk id: 731971, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   NQ: () => b,
-  U1: () => y,
+  U1: () => _,
   XW: () => d,
   _J: () => m,
-  aP: () => h,
+  aP: () => f,
   e7: () => g,
   h6: () => O,
-  oE: () => f,
+  oE: () => h,
   pB: () => p,
-  y: () => _,
-  yS: () => v,
-  yr: () => j
+  y: () => y,
+  yS: () => j,
+  yr: () => v
 }), require("./781311.js");
 var Chunk879690 = require("./879690.js"),
   Chunk524437 = require("./524437.js"),
@@ -114,10 +114,10 @@ let d = (0, Chunk879690.U)(e => ({
   p = (e, t, n) => {
     d.getState().initialize(e, t, n)
   },
-  f = () => {
+  h = () => {
     d.getState().reset()
   },
-  h = () => {
+  f = () => {
     let e = d.getState();
     return module.nickname !== c.nickname || module.dmsAllowed !== c.dmsAllowed || module.showActivity !== u(module.guildSize) || module.mutedServer !== c.mutedServer
   },
@@ -125,10 +125,10 @@ let d = (0, Chunk879690.U)(e => ({
   m = () => d.getState().guildId,
   b = () => d.getState().touched,
   O = () => d.getState().dmsAllowed,
-  _ = () => d.getState().nickname,
-  y = () => d.getState().showActivity,
-  v = () => d.getState().mutedServer,
-  j = () => {
+  y = () => d.getState().nickname,
+  _ = () => d.getState().showActivity,
+  j = () => d.getState().mutedServer,
+  v = () => {
     var e, t;
     let {
       nickname: n

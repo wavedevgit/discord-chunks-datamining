@@ -51,15 +51,15 @@ function R(e) {
   let {
     selected: o,
     user: p,
-    badge: f,
+    badge: h,
     link: m,
     showProgressBadge: b
-  } = e, [O, _] = i.useState(false), [y, v] = i.useState(false), [j, C] = i.useState(null), [N, R] = i.useState(0), D = (0, l.Ie)("home"), M = (0, d.oq)().activePanel === d.wh.APP_ICON, L = () => {
-    C(null), R(0), clearTimeout(j)
+  } = e, [O, y] = i.useState(false), [_, j] = i.useState(false), [v, x] = i.useState(null), [N, R] = i.useState(0), D = (0, l.Ie)("home"), M = (0, d.oq)().activePanel === d.wh.APP_ICON, L = () => {
+    x(null), R(0), clearTimeout(v)
   };
   if (null == p) return null;
   let k = Z.intl.string(Z.t.YUU0RE);
-  y && (k = a.K.get(P.wli) ? Z.intl.string(Z.t.nkq1l5) : Z.intl.string(Z.t.Be8Q5O));
+  _ && (k = a.K.get(I.wli) ? Z.intl.string(Z.t.nkq1l5) : Z.intl.string(Z.t.Be8Q5O));
   let U = null;
   !o && b && (U = (0, r.jsx)(c.Z, {
     className: T.downloadProgress,
@@ -68,10 +68,10 @@ function R(e) {
   let G = o || O || M,
     B = (0, r.jsx)(s.aRk, {
       selected: true,
-      lowerBadge: f > 0 ? (0, I.Ne)(f) : null,
+      lowerBadge: h > 0 ? (0, P.Ne)(h) : null,
       upperBadge: U,
       lowerBadgeSize: {
-        width: (0, s.OVM)(f)
+        width: (0, s.OVM)(h)
       },
       children: (0, r.jsx)(s.LYs, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -91,14 +91,14 @@ function R(e) {
         }
         return e
       }({
-        onMouseEnter: () => _(true),
-        onMouseLeave: () => _(false),
+        onMouseEnter: () => y(true),
+        onMouseLeave: () => y(false),
         onClick: () => {
-          if (!__OVERLAY__ && (null != j && clearTimeout(j), C(setTimeout(L, 500)), R(N + 1), 15 === N)) {
+          if (!__OVERLAY__ && (null != v && clearTimeout(v), x(setTimeout(L, 500)), R(N + 1), 15 === N)) {
             L();
-            let e = !a.K.get(P.wli);
-            a.K.set(P.wli, e), e && a.K.set(w.O5, true), e ? (0, h.GN)("discodo") : (0, h.GN)("user_leave"), v(true), setTimeout(() => {
-              v(false)
+            let e = !a.K.get(I.wli);
+            a.K.set(I.wli, e), e && a.K.set(w.O5, true), e ? (0, f.GN)("discodo") : (0, f.GN)("user_leave"), j(true), setTimeout(() => {
+              j(false)
             }, 1e3)
           }
         },
@@ -111,9 +111,9 @@ function R(e) {
           pathname: m,
           state: {
             analyticsSource: {
-              page: P.ZY5.GUILD_CHANNEL,
-              section: P.jXE.NAVIGATION,
-              object: P.qAy.BUTTON_HOME
+              page: I.ZY5.GUILD_CHANNEL,
+              section: I.jXE.NAVIGATION,
+              object: I.qAy.BUTTON_HOME
             }
           }
         },
@@ -136,7 +136,7 @@ function R(e) {
       tutorialId: "friends-list",
       position: "right",
       children: (0, r.jsxs)(E.H, {
-        children: [(0, r.jsx)(x.Z, {
+        children: [(0, r.jsx)(C.Z, {
           selected: o,
           hovered: O,
           className: T.pill
@@ -175,10 +175,10 @@ function D() {
     s = Chunk91192 + Chunk433517,
     u = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
     d = (0, Chunk899740.q)(),
-    h = require + Chunk481060 + Chunk550385,
+    f = require + Chunk481060 + Chunk550385,
     g = Chunk460181 === Chunk481060 && Chunk481060 > 0 && require + Chunk550385 === 0,
-    x = Chunk774343.Z.getHomeLink();
-  return Chunk155409 && (x = Chunk981631.Z5c.APPLICATION_STORE), (0, Chunk951288.jsx)(R, {
+    C = Chunk774343.Z.getHomeLink();
+  return Chunk155409 && (C = Chunk981631.Z5c.APPLICATION_STORE), (0, Chunk951288.jsx)(R, {
     selected: module,
     user: Chunk864682,
     selectedChannelId: Chunk944486.Z.getChannelId(Chunk981631.ME),
