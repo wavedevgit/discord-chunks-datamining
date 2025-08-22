@@ -2,12 +2,22 @@
 /** chunk id: 997612, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $: () => O,
-  X: () => T
+  $: () => D,
+  X: () => j
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk481060 = require("./481060.js"),
+  Chunk657707 = require("./657707.js"),
+  Chunk756715 = require("./756715.jsx"),
+  Chunk104140 = require("./104140.jsx"),
+  Chunk830447 = require("./830447.jsx"),
+  Chunk828214 = require("./828214.js"),
+  Chunk327496 = require("./327496.jsx"),
+  Chunk235874 = require("./235874.jsx"),
+  Chunk21340 = require("./21340.js"),
+  Chunk417153 = require("./417153.js"),
+  Chunk981729 = require("./981729.jsx"),
+  Chunk861066 = require("./861066.jsx"),
   Chunk972959 = require("./972959.js"),
   Chunk665149 = require("./665149.jsx"),
   Chunk606669 = require("./606669.jsx"),
@@ -16,11 +26,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk572004 = require("./572004.js"),
   Chunk561134 = require("./561134.jsx"),
   Chunk988587 = require("./988587.jsx"),
+  Chunk561466 = require("./561466.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk624315 = require("./624315.js");
 
-function g(e, t, n) {
+function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -29,20 +40,20 @@ function g(e, t, n) {
   }) : e[t] = n, e
 }
 
-function E(e) {
+function R(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      g(e, t, n[t])
+      N(e, t, n[t])
     })
   }
   return e
 }
 
-function b(e, t) {
+function P(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -53,33 +64,34 @@ function b(e, t) {
   return n
 }
 
-function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
+function w(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let O = (0, Chunk972959.H)(() => ({
-  selected: null
+let D = (0, Chunk972959.H)(() => ({
+  selectedCollection: null,
+  selectedStory: null
 }));
 
-function v() {
+function x() {
   let e = (0, Chunk53432.Z)(),
     t = (0, Chunk606669.Z)(),
     n = (0, Chunk74869.Z)();
-  return (0, Chunk951288.jsxs)(Chunk481060.v2r, {
+  return (0, Chunk951288.jsxs)(Chunk830447.v, {
     onSelect: Chunk231338.dG,
     navId: "playground-settings-menu",
     onClose: Chunk231338.dG,
     "aria-label": "Playground Settings",
-    children: [(0, Chunk951288.jsx)(Chunk481060.sNh, {
+    children: [(0, Chunk951288.jsx)(Chunk828214.sN, {
       id: "appearance",
       label: Chunk388032.intl.string(Chunk388032.t["iHH+k5"]),
       children: module.filter(e => null != e)
-    }), (0, Chunk951288.jsx)(Chunk481060.sNh, {
+    }), (0, Chunk951288.jsx)(Chunk828214.sN, {
       id: "accessibility",
       label: Chunk388032.intl.string(Chunk388032.t.G0neg4),
       children: exports.filter(e => null != e)
-    }), (0, Chunk951288.jsx)(Chunk481060.sNh, {
+    }), (0, Chunk951288.jsx)(Chunk828214.sN, {
       id: "experiments",
       label: "Experiments",
       children: require.filter(e => null != e)
@@ -87,16 +99,16 @@ function v() {
   })
 }
 
-function I() {
+function L() {
   let e = Chunk647438.useRef(null);
-  return (0, Chunk951288.jsx)(Chunk481060.yRy, {
+  return (0, Chunk951288.jsx)(Chunk235874.y, {
     targetElementRef: module,
-    renderPopout: () => (0, Chunk951288.jsx)(v, {}),
+    renderPopout: () => (0, Chunk951288.jsx)(x, {}),
     position: "bottom",
     align: "center",
-    animation: Chunk481060.yRy.Animation.SCALE,
+    animation: Chunk235874.y.Animation.SCALE,
     onRequestClose: () => {},
-    children: t => (0, r.jsx)(a.hU, y(E({
+    children: t => (0, r.jsx)(h.h, w(R({
       size: "sm",
       icon: a.ewm,
       "aria-label": "Settings",
@@ -107,93 +119,110 @@ function I() {
   })
 }
 
-function T(e) {
+function j(e) {
   var t;
   let {
     config: n
-  } = e, o = O.useField("selected"), {
-    group: l,
-    story: c
+  } = e, l = D.useField("selectedCollection"), c = D.useField("selectedStory"), {
+    collection: d,
+    group: m,
+    story: E
   } = i.useMemo(() => {
     var e;
-    let t = n.groups.find(e => e.stories.some(e => e.id === o)),
-      r = null != (e = null == t ? true : t.stories.find(e => e.id === o)) ? e : null;
+    let t = null != l ? n.collections.find(e => e.id === l) : n.collections[0];
+    if (null == t) return {
+      collection: null,
+      group: null,
+      story: null
+    };
+    let r = t.groups.find(e => e.stories.some(e => e.id === c)),
+      i = null != (e = null == r ? true : r.stories.find(e => e.id === c)) ? e : null;
     return {
-      group: t,
-      story: r
+      collection: t,
+      group: r,
+      story: i
     }
-  }, [o, n.groups]), u = e => {
-    O.setState({
-      selected: e
+  }, [l, c, n.collections]), b = e => {
+    D.setState({
+      selectedCollection: e,
+      selectedStory: null
     })
-  }, p = null != (t = null == l ? true : l.title) ? t : "Mana", h = null == c ? true : c.name, g = () => {
-    let e = "dev://mana/".concat(null == c ? true : c.id);
-    (0, d.JG)(e, () => (0, a.showToast)({
+  }, y = e => {
+    D.setState({
+      selectedStory: e
+    })
+  }, S = null != (t = null == d ? true : d.name) ? t : "Design System", A = null == E ? true : E.name, N = () => {
+    let e = "dev://mana/".concat(null == E ? true : E.id);
+    (0, O.JG)(e, () => (0, _.CF)({
       id: "playground-link-copied",
       message: "Copied playground link",
-      type: a.ToastType.SUCCESS
+      type: T.pC.SUCCESS
     }))
   };
   return (0, r.jsxs)("div", {
-    className: m.root,
+    className: C.root,
     children: [(0, r.jsx)("div", {
-      className: m.group,
-      children: (0, r.jsx)(a.aRk, {
-        children: (0, r.jsx)(a.ua7, {
+      className: C.group,
+      children: n.collections.map(e => (0, r.jsx)(s.a, {
+        children: (0, r.jsx)(p.u, {
           position: "right",
-          text: "Mana Design System",
-          children: e => (0, r.jsx)(a.LYs, y(E({}, e), {
-            name: "Mana",
-            selected: true
-          }))
+          text: "".concat(e.name, " Design System"),
+          children: t => {
+            var i;
+            return (0, r.jsx)(u.L, w(R({}, t), {
+              name: e.name,
+              selected: (null != l ? l : null == (i = n.collections[0]) ? true : i.id) === e.id,
+              onClick: () => b(e.id)
+            }))
+          }
         })
-      })
+      }, e.id))
     }), (0, r.jsxs)("div", {
-      className: m.content,
-      children: [(0, r.jsxs)(s.ZP, {
-        className: m.header,
-        children: [null != p ? (0, r.jsx)(s.ZP.Title, {
-          children: p
-        }) : null, null != h ? (0, r.jsxs)(r.Fragment, {
-          children: [null != p ? (0, r.jsx)(s.ZP.Caret, {
-            className: m.headerDivider
-          }) : null, (0, r.jsx)(s.ZP.Title, {
-            children: h
+      className: C.content,
+      children: [(0, r.jsxs)(g.ZP, {
+        className: C.header,
+        children: [null != S ? (0, r.jsx)(g.ZP.Title, {
+          children: S
+        }) : null, null != A ? (0, r.jsxs)(r.Fragment, {
+          children: [null != S ? (0, r.jsx)(g.ZP.Caret, {
+            className: C.headerDivider
+          }) : null, (0, r.jsx)(g.ZP.Title, {
+            children: A
           })]
-        }) : null, (null == c ? true : c.docs) != null ? (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(s.ZP.Divider, {
-            className: m.headerDivider
-          }), (0, r.jsx)(s.ZP.Title, {
-            children: (0, r.jsx)(a.eee, {
-              href: c.docs,
+        }) : null, (null == E ? true : E.docs) != null ? (0, r.jsxs)(r.Fragment, {
+          children: [(0, r.jsx)(g.ZP.Divider, {
+            className: C.headerDivider
+          }), (0, r.jsx)(g.ZP.Title, {
+            children: (0, r.jsx)(o.Anchor, {
+              href: E.docs,
               children: "Docs"
             })
           })]
-        }) : null, null != c ? (0, r.jsx)(a.hU, {
+        }) : null, null != E ? (0, r.jsx)(h.h, {
           size: "sm",
           "aria-label": "Copy Link",
           variant: "icon-only",
           icon: a.TIy,
-          onClick: g
+          onClick: N
         }) : null, (0, r.jsx)("div", {
-          className: m.headerRight,
-          children: (0, r.jsx)(I, {})
+          className: C.headerRight,
+          children: (0, r.jsx)(L, {})
         })]
       }), (0, r.jsxs)("div", {
-        className: m.page,
-        children: [(0, r.jsx)(a.zJl, {
+        className: C.page,
+        children: [(0, r.jsx)(f.zJ, {
           fade: true,
-          className: m.sidebar,
-          children: (0, r.jsx)(f.N, {
-            groups: n.groups,
-            selectedStory: o,
-            onStorySelect: u
-          })
+          className: C.sidebar,
+          children: null != d ? (0, r.jsx)(v.N, {
+            groups: d.groups,
+            selectedStory: c,
+            onStorySelect: y
+          }) : null
         }), (0, r.jsx)("div", {
-          className: m.content,
-          children: null != c && null != l ? (0, r.jsx)(_.b, {
-            story: c,
-            groupTitle: l.title
+          className: C.content,
+          children: null != E && null != m ? (0, r.jsx)(I.b, {
+            story: E,
+            groupTitle: m.title
           }) : null
         })]
       })]

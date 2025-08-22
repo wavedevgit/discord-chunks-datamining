@@ -2,84 +2,97 @@
 /** chunk id: 600406, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Y: () => p,
-  k: () => m
-}), require("./413496.js"), require("./433524.js"), require("./35282.js");
+  Y: () => E,
+  k: () => y
+}), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk657707 = require("./657707.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
+  Chunk756715 = require("./756715.jsx"),
+  Chunk993365 = require("./993365.js"),
+  Chunk680018 = require("./680018.jsx"),
   Chunk51251 = require("./51251.js"),
-  Chunk481060 = require("./481060.js"),
   Chunk37234 = require("./37234.js"),
   Chunk594174 = require("./594174.js"),
   Chunk997612 = require("./997612.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk567 = require("./567.js");
-let _ = RegExp("^dev://mana(/([-\\w._0-9]+))?$", "i");
+let g = RegExp("^dev://mana(/([-\\w._0-9]+))?$", "i");
 
-function p(e) {
-  return _.test(e)
+function E(e) {
+  return g.test(e)
 }
 
-function h(e) {
-  let t = e.match(_);
+function b(e) {
+  let t = e.match(g);
   return null == t || t.length < 2 ? null : t[2]
 }
 
-function m(e) {
+function y(e) {
   var t;
-  let n = (0, a.e7)([c.default], () => {
-      let e = c.default.getCurrentUser();
+  let n = (0, s.e7)([_.default], () => {
+      let e = _.default.getCurrentUser();
       return (null == e ? true : e.isStaff()) || (null == e ? true : e.isStaffPersonal())
     }),
-    _ = i.useMemo(() => {
-      var t;
-      let n = h(e.url);
-      return null == (t = o.$.groups.find(e => e.stories.some(e => e.id === n))) ? true : t.stories.find(e => e.id === n)
+    g = i.useMemo(() => {
+      let t = b(e.url);
+      for (let e of d.g.collections) {
+        let n = e.groups.find(e => e.stories.some(e => e.id === t));
+        if (null != n) return n.stories.find(e => e.id === t)
+      }
     }, [e.url]),
-    p = null != (t = null == _ ? true : _.name) ? t : "Mana Playground",
-    m = null != _ && null != _.docs ? (0, r.jsx)(s.eee, {
-      href: _.docs,
+    E = null != (t = null == g ? true : g.name) ? t : "Mana Playground",
+    y = null != g && null != g.docs ? (0, r.jsx)(l.Anchor, {
+      href: g.docs,
       children: "Documentation"
     }) : "Explore the Mana Design System",
-    g = i.useCallback(() => {
-      null != _ && u.$.setState({
-        selected: _.id
-      }), (0, l.jN)(d.S9g.MANA_PLAYGROUND)
-    }, [_]);
+    O = i.useCallback(() => {
+      if (null != g) {
+        for (let e of d.g.collections)
+          if (e.groups.some(e => e.stories.some(e => e.id === g.id))) {
+            p.$.setState({
+              selectedCollection: e.id,
+              selectedStory: g.id
+            });
+            break
+          }
+      }(0, f.jN)(h.S9g.MANA_PLAYGROUND)
+    }, [g]);
   return n ? (0, r.jsx)("div", {
-    className: f.root,
-    "data-has-story": null != _,
-    children: (0, r.jsxs)(s.Kqy, {
-      direction: null == _ ? "vertical" : "horizontal",
-      align: null == _ ? "start" : "center",
+    className: m.root,
+    "data-has-story": null != g,
+    children: (0, r.jsxs)(o.Kq, {
+      direction: null == g ? "vertical" : "horizontal",
+      align: null == g ? "start" : "center",
       gap: 12,
-      justify: null == _ ? "end" : "space-between",
+      justify: null == g ? "end" : "space-between",
       children: [(0, r.jsx)("div", {
-        className: f.header,
-        children: (0, r.jsxs)(s.Kqy, {
+        className: m.header,
+        children: (0, r.jsxs)(o.Kq, {
           direction: "horizontal",
           align: "start",
           gap: 8,
-          children: [(0, r.jsx)(s.hh5, {
+          children: [(0, r.jsx)(a.hh5, {
             size: "lg"
-          }), (0, r.jsxs)(s.Kqy, {
+          }), (0, r.jsxs)(o.Kq, {
             direction: "vertical",
             gap: 0,
-            children: [(0, r.jsx)(s.Text, {
+            children: [(0, r.jsx)(c.x, {
               variant: "text-md/semibold",
-              children: p
-            }), (0, r.jsx)(s.Text, {
+              children: E
+            }), (0, r.jsx)(c.x, {
               variant: "text-sm/normal",
-              children: m
+              children: y
             })]
           })]
         })
-      }), (0, r.jsx)(s.zxk, {
+      }), (0, r.jsx)(u.z, {
         size: "sm",
-        onClick: g,
+        onClick: O,
         text: "Open Playground",
-        fullWidth: null == _
+        fullWidth: null == g
       })]
     })
   }) : null

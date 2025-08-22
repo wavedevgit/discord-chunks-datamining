@@ -12,9 +12,9 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk512722 = require("./512722.js"),
   c = require.n(Chunk512722),
   Chunk866442 = require("./866442.js"),
+  Chunk657707 = require("./657707.js"),
   Chunk692547 = require("./692547.js"),
   Chunk84735 = require("./84735.js"),
-  Chunk481060 = require("./481060.js"),
   Chunk981631 = require("./981631.js"),
   Chunk81818 = require("./81818.js");
 
@@ -67,7 +67,7 @@ class v extends(r = Chunk647438.PureComponent) {
       size: c,
       reverse: u,
       displayOnly: d,
-      type: _,
+      type: f,
       onClick: m
     } = this.props, E = null != Chunk512722 ? (0, Chunk951288.jsx)("div", {
       className: s()(Chunk81818.label, module ? Chunk81818.labelDisabled : Chunk81818.labelClickable, Chunk866442 ? Chunk81818.labelReversed : Chunk81818.labelForward),
@@ -75,14 +75,14 @@ class v extends(r = Chunk647438.PureComponent) {
         lineHeight: "".concat(c, "px")
       },
       children: Chunk512722
-    }) : null, b = Chunk692547 ? "span" : "label", y = this.props.disabled ? Chunk81818.inputDisabled : this.props.readOnly ? Chunk81818.inputReadonly : Chunk81818.inputDefault;
+    }) : null, b = Chunk657707 ? "span" : "label", y = this.props.disabled ? Chunk81818.inputDisabled : this.props.readOnly ? Chunk81818.inputReadonly : Chunk81818.inputDefault;
     return (0, Chunk951288.jsxs)(b, {
       "data-toggleable-component": "checkbox",
       className: s()(module ? Chunk81818.checkboxWrapperDisabled : Chunk81818.checkboxWrapper, O[r], Chunk647438, {
-        [Chunk81818.row]: "row" === Chunk481060,
+        [Chunk81818.row]: "row" === Chunk692547,
         [Chunk81818.checked]: require
       }),
-      children: [Chunk866442 ? E : null, !Chunk692547 && (0, Chunk951288.jsx)(Chunk84735.t, {
+      children: [Chunk866442 ? E : null, !Chunk657707 && (0, Chunk951288.jsx)(Chunk84735.t, {
         children: (0, Chunk951288.jsx)("input", {
           className: s()(Chunk120356, y),
           type: "checkbox",
@@ -140,7 +140,7 @@ function T(e) {
     shape: o,
     checkboxColor: l,
     disabled: c
-  } = e, u = I(e), f = a.useMemo(() => n ? d.Z.colors.WHITE.css : d.Z.unsafe_rawColors.TRANSPARENT.css, [n]);
+  } = e, u = I(e), _ = a.useMemo(() => n ? f.Z.colors.WHITE.css : f.Z.unsafe_rawColors.TRANSPARENT.css, [n]);
   return (0, i.jsx)("div", {
     className: s()(h.checkbox, o, t, {
       [h.checked]: n,
@@ -151,9 +151,9 @@ function T(e) {
       height: r,
       borderColor: l
     }, u),
-    children: (0, i.jsx)(_.kSu, {
+    children: (0, i.jsx)(d.kSu, {
       size: "sm",
-      color: f,
+      color: _,
       "aria-hidden": true
     })
   })

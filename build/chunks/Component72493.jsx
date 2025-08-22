@@ -11,7 +11,7 @@ var Chunk51251 = require("./51251.js"),
 
 function i() {
   return (0, Chunk951288.jsx)(Chunk997612.X, {
-    config: Chunk51251.$
+    config: Chunk51251.g
   })
 }
 let s = i
