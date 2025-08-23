@@ -281,7 +281,7 @@ class k extends Chunk476326.ZP {
     var e, t, n, r, i;
     if ("COMPLETED" === this.status) return;
     if (this.setStatus("STARTED"), this.startTime = performance.now(), this.trackUploadStart(), "CANCELED" === this.status) return void this.handleComplete(this.id);
-    this.item.platform === Chunk476326.ow.WEB && (null == (e = this.item.compressionMetadata) ? true : module.convertedMimeType) !== "image/webp" && await this.maybeConvertToWebP();
+    this.item.platform !== Chunk476326.ow.WEB || (null == (e = this.item.compressionMetadata) ? true : module.earlyClipboardCompressionAttempted) || await this.maybeConvertToWebP();
     let a = await D.getUploadPayload(this),
       s = (0, Chunk983544.F)(this.item.target),
       c = (0, Chunk171638.G)({

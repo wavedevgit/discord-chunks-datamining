@@ -142,18 +142,18 @@ function F(e) {
     activity: t,
     isFocused: i
   }) : null;
-  let [E, T, w] = s, I = "";
-  1 === s.length ? I = j.intl.format(j.t.lJ9sZW, {
+  let [E, T, w] = s, C = "";
+  1 === s.length ? C = j.intl.format(j.t.lJ9sZW, {
     a: E
-  }) : 2 === s.length ? I = j.intl.format(j.t.rB0CUV, {
+  }) : 2 === s.length ? C = j.intl.format(j.t.rB0CUV, {
     a: E,
     b: T
-  }) : 3 === s.length ? I = j.intl.format(j.t.StKTho, {
+  }) : 3 === s.length ? C = j.intl.format(j.t.StKTho, {
     a: E,
     b: T,
     c: w
-  }) : s.length > 3 && (I = j.intl.format(j.t.Q8lUnJ, {}));
-  let Z = y && s.length > 0 && s.length <= 3 ? j.intl.format(j.t["qD/0qa"], {}) : I;
+  }) : s.length > 3 && (C = j.intl.format(j.t.Q8lUnJ, {}));
+  let I = y && s.length > 0 && s.length <= 3 ? j.intl.format(j.t["qD/0qa"], {}) : C;
   return (0, n.jsxs)("div", {
     className: o()(x.typing, {
       "stop-animation": !i,
@@ -171,7 +171,7 @@ function F(e) {
         className: x.text,
         "aria-live": "polite",
         "aria-atomic": true,
-        children: Z
+        children: I
       }), (0, n.jsx)("span", {
         className: x.text,
         style: {
@@ -180,7 +180,7 @@ function F(e) {
         },
         "aria-hidden": true,
         ref: b,
-        children: I
+        children: C
       })]
     }), (0, n.jsx)(m.Z, {
       channel: a,
@@ -194,7 +194,7 @@ function F(e) {
 function D(e) {
   let t = (0, d.e7)([E.Z], () => E.Z.getTypingUsers(e.id)),
     i = (0, d.e7)([T.default], () => T.default.getCurrentUser());
-  return a()(t).keys().filter(e => e !== (null == i ? true : i.id)).reject(e => y.Z.isBlockedOrIgnored(e)).map(e => T.default.getUser(e)).filter(Z.lm).map(t => P.ZP.getName(e.guild_id, e.id, t)).value()
+  return a()(t).keys().filter(e => e !== (null == i ? true : i.id)).reject(e => y.Z.isBlockedOrIgnored(e)).map(e => T.default.getUser(e)).filter(I.lm).map(t => Z.ZP.getName(e.guild_id, e.id, t)).value()
 }
 
 function U(e) {

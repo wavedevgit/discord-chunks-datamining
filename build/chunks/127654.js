@@ -1,8 +1,8 @@
 /** Chunk was on 46653 **/
 /** chunk id: 127654, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
-  G: () => Z,
-  d5: () => C
+  G: () => I,
+  d5: () => P
 }), require("./388685.js"), require("./415506.js");
 var Chunk481060 = require("./481060.js"),
   Chunk475179 = require("./475179.js"),
@@ -27,7 +27,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx");
 
-function I(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var i = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(i);
@@ -46,7 +46,7 @@ function I(e) {
   return e
 }
 
-function Z(e, t, i) {
+function I(e, t, i) {
   let n = f.default.getCurrentUser(),
     r = e.getGuildId(),
     s = O.dg(r),
@@ -82,7 +82,7 @@ function Z(e, t, i) {
     })
   })
 }
-async function P(e, t, i) {
+async function Z(e, t, i) {
   let {
     currentGuildId: r
   } = i, s = (0, p.U)({
@@ -92,7 +92,8 @@ async function P(e, t, i) {
     compressionMetadata: {
       originalContentType: e.type,
       compressTimeMs: 0,
-      preCompressionSize: e.size
+      preCompressionSize: e.size,
+      earlyClipboardCompressionAttempted: false
     }
   });
   if ("clipboard" !== t || !s.compressOversizedClipboard || !(0, y.Bf)(e, r)) return e.map(o);
@@ -106,6 +107,7 @@ async function P(e, t, i) {
         originalContentType: e.type,
         compressTimeMs: t.compressTimeMs,
         preCompressionSize: e.size,
+        earlyClipboardCompressionAttempted: true,
         convertedMimeType: t.success ? "image/webp" : true,
         conversionFailureReason: t.success ? true : t.reason,
         hashTimeMs: t.hashTimeMs
@@ -113,7 +115,7 @@ async function P(e, t, i) {
     }
   })))
 }
-async function C(e, t, i) {
+async function P(e, t, i) {
   let {
     filesMetadata: n,
     requireConfirm: c = true,
@@ -125,14 +127,14 @@ async function C(e, t, i) {
   if (null != n && n.length !== e.length) throw Error("Unexpected mismatch between files and file metadata");
   let O = t.getGuildId(),
     b = Array.from(e),
-    T = await P(b, f, {
+    T = await Z(b, f, {
       channel: t,
       currentGuildId: O
     }),
-    C = T.map(e => e.file),
+    P = T.map(e => e.file),
     j = T.map(e => e.compressionMetadata);
-  if ((0, y.Bf)(C, O)) return void Z(t, b, C.map(e => e.size));
-  if (m.Z.getUploadCount(t.id, i) + C.length > S.dN1) {
+  if ((0, y.Bf)(P, O)) return void I(t, b, P.map(e => e.size));
+  if (m.Z.getUploadCount(t.id, i) + P.length > S.dN1) {
     (0, l.openUploadError)({
       title: w.intl.string(w.t.wOr6hI),
       help: w.intl.formatToPlainString(w.t["qqyp/f"], {
@@ -140,14 +142,14 @@ async function C(e, t, i) {
       })
     }), v.default.track(S.rMx.UPLOAD_FILE_LIMIT_ERROR, {
       existing_count: m.Z.getUploadCount(t.id, i),
-      new_count: C.length
+      new_count: P.length
     });
     return
   }
   if (t.type !== S.d4z.GUILD_VOICE && t.type !== S.d4z.GUILD_STAGE_VOICE || h.Z.getChatOpen(t.id) || r.Z.updateChatOpen(t.id, true), c) {
-    let e = C.map((e, t) => {
+    let e = P.map((e, t) => {
       let i = j[t];
-      return I({
+      return C({
         file: e,
         platform: d.ow.WEB,
         isThumbnail: p,
@@ -162,10 +164,10 @@ async function C(e, t, i) {
       draftType: i
     })
   } else {
-    let e = C.map((e, i) => {
+    let e = P.map((e, i) => {
       let r = null != n ? n[i] : {},
         s = j[i];
-      return new a.nH(I({
+      return new a.nH(C({
         file: e,
         platform: d.ow.WEB,
         isThumbnail: p,
