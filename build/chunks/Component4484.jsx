@@ -132,34 +132,43 @@ let x = Chunk647438.forwardRef(function(e, t) {
       results: r
     }
   }, [x.guild_id, x.id, eI]), eS = i.useCallback(() => {
-    let e, t = et ? c.Z.getActiveCommand(x.id) : null;
-    if (null != t && null != t.options) {
-      let i = eT(t, false);
-      e = i.values;
-      let a = p.cu(eI).filter(e => !i.results[e].success).map(e => {
-        var n;
-        return (null != (n = t.options) ? n : []).find(t => t.name === e)
+    let e, t = b.bN.getNodesOfType(eI, ["gameMentionInput"]),
+      n = null != t ? [...t] : null,
+      r = et ? c.Z.getActiveCommand(x.id) : null,
+      i = false;
+    if (null != r && null != r.options) {
+      let t = eT(r, false);
+      e = t.values;
+      let n = p.cu(eI).filter(e => !t.results[e].success).map(e => {
+        var t;
+        return (null != (t = r.options) ? t : []).find(t => t.name === e)
       });
-      for (let e of t.options) !e.required || e.name in i.values || (E.Q.insertCommandOption(eI, e), a.push(e));
-      if (a.length > 0) {
-        var n, r;
-        let e = a[0];
-        E.Q.selectCommandOption(eI, e.name), f.S.dispatch(w.CkL.SHAKE_APP, {
-          duration: 200,
-          intensity: 2
-        }), (0, l.yw)(w.rMx.APPLICATION_COMMAND_VALIDATION_FAILED, {
-          application_id: null == t ? true : t.applicationId,
-          command_id: null == t || null == (n = t.rootCommand) ? true : n.id,
-          argument_type: s.jw[null != (r = null == e ? true : e.type) ? r : 3],
+      for (let e of r.options) !e.required || e.name in t.values || (E.Q.insertCommandOption(eI, e), n.push(e));
+      if (n.length > 0) {
+        var a, o;
+        let e = n[0];
+        E.Q.selectCommandOption(eI, e.name), i = true, (0, l.yw)(w.rMx.APPLICATION_COMMAND_VALIDATION_FAILED, {
+          application_id: null == r ? true : r.applicationId,
+          command_id: null == r || null == (a = r.rootCommand) ? true : a.id,
+          argument_type: s.jw[null != (o = null == e ? true : e.type) ? o : 3],
           is_required: null == e ? true : e.required
-        });
-        return
+        })
       }
     }
+    if (null != n)
+      for (let [e, t] of n) i = true, E.Q.setNodes(eI, {
+        error: true
+      }, {
+        at: t
+      });
+    if (i) return void f.S.dispatch(w.CkL.SHAKE_APP, {
+      duration: 200,
+      intensity: 2
+    });
     null == X || X((0, g.sk)(b.bN.richValue(eI), {
       mode: "raw",
       ignoreTrailingEmptyNodes: true
-    }), t, e)
+    }), r, e)
   }, [x.id, eI, X, eT, et]);
   (0, v.Z)(t, eI, x, eS), (0, S.Z)(eI, eh, F);
   let {

@@ -39,7 +39,7 @@ function O(e) {
   }, []);
   let b = (0, c.Z)("SlowmodeIndicator");
   if (!i) return null;
-  let S = (0, d.k)(s);
+  let y = (0, d.k)(s);
   if (!l && u > 0) {
     let e = o().duration(u);
     if (u > g.Z.Millis.HOUR) {
@@ -51,7 +51,7 @@ function O(e) {
       t = "".concat(e.minutes(), ":").concat(i)
     }
   } else t = l ? b ? f.intl.string(f.t["8+NidX"]) : f.intl.string(f.t.SSzXvb) : f.intl.string(f.t.Icu3bW);
-  let y = b ? (0, n.jsxs)(a.Text, {
+  let S = b ? (0, n.jsxs)(a.Text, {
     className: v.cooldownText,
     variant: "text-xs/medium",
     color: h ? "text-danger" : "text-muted",
@@ -73,7 +73,7 @@ function O(e) {
     })]
   });
   return (0, n.jsx)(a.ua7, {
-    text: S,
+    text: y,
     children: e => {
       var t, i;
       return (0, n.jsx)("div", (t = function(e) {
@@ -96,7 +96,7 @@ function O(e) {
       }({
         className: v.cooldownWrapper
       }, e), i = i = {
-        children: y
+        children: S
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var i = Object.keys(e);
         if (Object.getOwnPropertySymbols) {

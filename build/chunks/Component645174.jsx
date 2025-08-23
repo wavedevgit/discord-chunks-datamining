@@ -69,7 +69,8 @@ let h = e => {
     attributes: n,
     children: a
   } = e, u = (0, s.vt)(), f = (0, s.UE)(), p = (0, s._7)(), h = o()(c.inlineElement, c.optionPill, c.inlineFlex, {
-    [c.selectedPill]: f && u
+    [c.selectedPill]: f && u,
+    [c.erroredPill]: t.error
   }), m = i.useCallback(() => {
     l.bN.isVoid(p, t)
   }, [p, t]), g = (0, r.jsx)("span", {

@@ -132,7 +132,7 @@ let p = f(u({}, Chunk327432.ML, Chunk755712.F3), {
       var r;
       return null != (r = p.above(e, {
         at: t,
-        match: e => m.isElement(e) && (Array.isArray(n) ? n.includes(e.type) : e.type === n),
+        match: e => m.isElement(e) && n.includes(e.type),
         mode: "lowest"
       })) ? r : null
     },
@@ -141,6 +141,11 @@ let p = f(u({}, Chunk327432.ML, Chunk755712.F3), {
       let n = y.toPoint(e.selection);
       return null == n ? null : p.getParentOfType(e, n, t)
     },
+    getNodesOfType: (e, t) => p.nodes(e, {
+      at: l.Ql,
+      match: e => m.isElement(e) && t.includes(e.type),
+      mode: "highest"
+    }),
     getSelectedVoid(e) {
       let t;
       if (null == e.selection) return null;
