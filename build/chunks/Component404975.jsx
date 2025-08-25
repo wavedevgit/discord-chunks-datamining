@@ -45,7 +45,7 @@ function f(e) {
   var t;
   let {
     section: n
-  } = e, l = null == (t = n.useTitle) ? true : t.call(n);
+  } = e, l = null == (t = n.useLabel) ? true : t.call(n);
   return (0, i.jsxs)("ul", {
     className: c.section,
     children: [null != l && (0, i.jsx)(s.X6q, {

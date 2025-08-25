@@ -33,9 +33,9 @@ require.d(exports, {
     }
     return t
   },
-  ax: () => m,
+  ax: () => b,
   k4: () => d,
-  qs: () => b,
+  qs: () => m,
   so: () => s,
   vB: () => a,
   wf: () => u,
@@ -117,11 +117,11 @@ function v(e, t, n) {
   })
 }
 
-function m(e, t) {
+function b(e, t) {
   return v(e, i.J.BUTTON, t)
 }
 
-function b(e, t) {
+function m(e, t) {
   return v(e, i.J.TOGGLE, t)
 }
 

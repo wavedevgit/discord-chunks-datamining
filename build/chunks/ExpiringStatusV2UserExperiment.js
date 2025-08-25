@@ -21,5 +21,13 @@ let r = (0, require("./818083.js").B)({
       expiringStatusProfileFeedback: true,
       hasNewStrings: true
     }
+  }, {
+    id: 2,
+    label: "Identical to T1",
+    config: {
+      showTempStatusOptions: true,
+      expiringStatusProfileFeedback: true,
+      hasNewStrings: true
+    }
   }]
 })

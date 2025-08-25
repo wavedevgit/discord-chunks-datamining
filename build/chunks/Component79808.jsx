@@ -1,7 +1,7 @@
 /** Chunk was on 36878 **/
 /** chunk id: 79808, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => b
 }), require("./388685.js"), require("./361932.js"), require("./187205.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -21,15 +21,15 @@ function v(e) {
     initialPanel: n,
     onClose: r,
     sidebarHeader: v,
-    sidebarFooter: m
-  } = e, [b, p] = l.useState(true), [x, j] = l.useState(n.key), {
+    sidebarFooter: b
+  } = e, [m, p] = l.useState(true), [x, j] = l.useState(n.key), {
     navigateWithValidation: y
   } = (0, d.Cu)(), C = l.useMemo(() => ({
     currentPanel: t.layout.flatMap(e => e.layout).find(e => e.key === x),
     setCurrentPanel: e => y(() => j(e.key)),
-    showNavigationMobile: b,
+    showNavigationMobile: m,
     setShowNavigationMobile: p
-  }), [x, t, b, y, p]), h = () => y(r);
+  }), [x, t, m, y, p]), h = () => y(r);
   return (0, i.jsx)(f.j.Provider, {
     value: C,
     children: (0, i.jsxs)("div", {
@@ -41,7 +41,7 @@ function v(e) {
       }), (0, i.jsx)(u.P, {
         root: t,
         header: v,
-        footer: m
+        footer: b
       }), (0, i.jsx)(a.Z, {
         onClose: h,
         setting: C.currentPanel
@@ -50,7 +50,7 @@ function v(e) {
   })
 }
 
-function m(e) {
+function b(e) {
   let {
     root: t,
     initialPanel: n,
