@@ -164,7 +164,7 @@ function B(e) {
       n(t, r)
     }), true
   };
-  if (null != N && N.type === g.g.QUESTS_EMBED && (0, T.cB)({
+  if (null != N && N.type === g.g.QUESTS_EMBED && (0, T.c)({
       location: k.dr.EMBED_MOBILE
     })) return e => (null == e || e.preventDefault(), Promise.resolve().then(n.bind(n, 110560)).then(e => {
     let {

@@ -78,7 +78,7 @@ function F(e) {
   } = O.Z.useExperiment({
     location: "GoLive_Source_Select"
   }), o = b.Z.supports(D.AN.GO_LIVE_HARDWARE), [a, m] = i.useState(null), [C, y] = i.useState(null), [Z, w] = i.useState(null), T = null != Z && Z.length > 0, [E, R] = i.useState(c.vA.WINDOW), [M, G] = i.useState(false), F = i.useRef(null), H = i.useRef(new u.Xp), z = (0, d.e7)([x.ZP], () => x.ZP.getRunningGames()), V = function(e, t, n) {
-    let r = (0, j.Zy)({
+    let r = (0, j.Z)({
       location: L.dr.STREAM_SOURCE_SELECT
     });
     return i.useMemo(() => {

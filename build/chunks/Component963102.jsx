@@ -173,7 +173,7 @@ function N(e) {
         fromContent: i.j.ORBS_BALANCE_MENU
       })
     }, [Z, t, w]),
-    D = (0, v.eN)("collectibles_shop_header_bar");
+    M = (0, v.eN)("collectibles_shop_header_bar");
   return (0, r.jsx)(c.f6W, {
     theme: x,
     children: e => (0, r.jsxs)(m.Z, {
@@ -211,9 +211,9 @@ function N(e) {
             handleTransition: f
           }, t)
         })
-      }), (A || t || D) && (0, r.jsxs)("div", {
+      }), (A || t || M) && (0, r.jsxs)("div", {
         className: k.alignedRightContent,
-        children: [D && (0, r.jsx)(y.Z, {
+        children: [M && (0, r.jsx)(y.Z, {
           handleTransition: f,
           selectedTab: p
         }), A && (0, r.jsx)(C.V9, {

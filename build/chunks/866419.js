@@ -2,13 +2,14 @@
 /** chunk id: 866419, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Bv: () => h,
-  SK: () => b,
-  _m: () => _,
-  ft: () => g,
-  jJ: () => m,
-  lT: () => E,
-  zu: () => f
+  Bv: () => g,
+  SK: () => O,
+  YZ: () => v,
+  _m: () => h,
+  ft: () => b,
+  jJ: () => E,
+  lT: () => y,
+  zu: () => p
 }), require("./49124.js");
 var Chunk647438 = require("./647438.js"),
   Chunk780384 = require("./780384.js"),
@@ -17,29 +18,30 @@ var Chunk647438 = require("./647438.js"),
   Chunk695346 = require("./695346.js");
 require("./581883.js");
 var Chunk233398 = require("./233398.js"),
-  Chunk238302 = require("./238302.js");
-require("./803038.js");
-var Chunk469115 = require("./469115.js"),
+  Chunk238302 = require("./238302.js"),
+  Chunk803038 = require("./803038.js"),
+  Chunk893712 = require("./893712.js"),
+  Chunk469115 = require("./469115.js"),
   Chunk231338 = require("./231338.js");
 
-function f() {
+function p() {
   returnfalse
 }
-var _ = function(e) {
+var h = function(e) {
   return e.RESET_BUTTON = "reset_button", e.EDITOR_CLOSE = "editor_close", e
 }({});
 
-function p(e) {
-  return (0, i.wj)(e) ? d.BR.DARK : d.BR.LIGHT
+function m(e) {
+  return (0, i.wj)(e) ? _.BR.DARK : _.BR.LIGHT
 }
 
-function h(e) {
+function g(e) {
   let t = s.L1.getSetting(),
-    n = null != t.backgroundGradientPresetId && t.backgroundGradientPresetId in u.qt && u.qt[t.backgroundGradientPresetId].theme !== e;
+    n = null != t.backgroundGradientPresetId && t.backgroundGradientPresetId in f.qt && f.qt[t.backgroundGradientPresetId].theme !== e;
   (0, a.y)(e), n && (0, c.kj)()
 }
 
-function m() {
+function E() {
   let e = Chunk647438.useRef(null);
   return Chunk647438.useEffect(() => {
     module.current = Chunk210887.Z.theme
@@ -50,27 +52,37 @@ function m() {
       colors: null != (n = null == d ? true : d.colors) ? n : "reset_button" === t ? [l.Dp] : [],
       gradientAngle: null != (r = null == d ? true : d.gradientAngle) ? r : 0,
       chassisMixAmount: null != (i = null == d ? true : d.baseMix) ? i : l.BH
-    }), "reset_button" === t ? h(p(null != (u = e.current) ? u : o.Z.theme)) : (0, a.UD)();
+    }), "reset_button" === t ? g(m(null != (u = e.current) ? u : o.Z.theme)) : (0, a.UD)();
     let f = s.L1.getSetting().backgroundGradientPresetId;
     null != f && (0, c.zO)(f)
   }, [])
 }
 
-function g() {
-  let e = p(Chunk210887.Z.theme);
-  module !== Chunk210887.Z.theme && h(module)
-}
-
-function E(e, t, n) {
-  0 === e.length && n([t]), g()
-}
-
 function b() {
+  let e = m(Chunk210887.Z.theme);
+  module !== Chunk210887.Z.theme && g(module)
+}
+
+function y(e, t, n) {
+  0 === e.length && n([t]), b()
+}
+
+function O() {
   var e, t, n;
   let {
     colors: r,
     chassisMixAmount: i,
     gradientAngle: a
   } = (0, Chunk233398.Ig)(), o = Chunk695346.L1.getSetting().customUserThemeSettings, c = null != (e = null == Chunk210887 ? true : Chunk210887.colors) ? module : [Chunk233398.Dp], u = null != (t = null == Chunk210887 ? true : Chunk210887.gradientAngle) ? exports : 0, d = null != (n = null == Chunk210887 ? true : Chunk210887.baseMix) ? require : Chunk233398.BH;
-  return JSON.stringify(Chunk647438) === JSON.stringify(Chunk238302) && Chunk780384 === Chunk231338 && Chunk781391 === Chunk469115
+  return JSON.stringify(Chunk647438) === JSON.stringify(Chunk238302) && Chunk780384 === Chunk893712 && Chunk781391 === Chunk803038
+}
+
+function v() {
+  let e = Chunk893712.L.useExperiment({
+      location: "CustomThemesUtils"
+    }).enabled,
+    t = Chunk803038.Mc.useExperiment({
+      location: "CustomThemesUtils"
+    }).v2EditorEnabled;
+  return module && exports
 }

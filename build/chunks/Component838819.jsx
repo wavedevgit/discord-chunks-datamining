@@ -2,7 +2,7 @@
 /** chunk id: 838819, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.r(exports), require.d(exports, {
-  default: () => D
+  default: () => M
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -53,7 +53,7 @@ let F = e => {
       return window.addEventListener("keydown", e), () => window.removeEventListener("keydown", e)
     }, [n, a, r]), t
   },
-  D = function(e) {
+  M = function(e) {
     let {
       isFullScreen: t = true,
       tab: n = P.AW.HOME
@@ -63,15 +63,15 @@ let F = e => {
       c = (0, o.e7)([b.default], () => b.default.getCurrentUser()),
       R = (0, N.G)("CollectiblesShop"),
       {
-        closeIntroToOrbsClaimedCoachmark: D
+        closeIntroToOrbsClaimedCoachmark: M
       } = (0, _.Z)({
         location: "CollectiblesShop"
       });
     l.useEffect(() => () => {
-      D()
-    }, [a, D]);
+      M()
+    }, [a, M]);
     let {
-      onClose: M
+      onClose: D
     } = (0, I.Db)(), {
       currentTab: H,
       hasFilters: W
@@ -133,7 +133,7 @@ let F = e => {
           pageSize: P.kN
         },
         children: (0, r.jsx)(F, {
-          onClose: M,
+          onClose: D,
           shouldAddEventListener: t && !er,
           children: (0, r.jsxs)("div", {
             className: s()(Z.shop, {
@@ -144,7 +144,7 @@ let F = e => {
             children: [(0, r.jsx)(k.I, {
               isFullScreen: t,
               isLayer: er,
-              onClose: M,
+              onClose: D,
               handleTransition: et,
               selectedTab: $
             }), (0, r.jsx)("div", {

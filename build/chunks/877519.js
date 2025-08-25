@@ -30,7 +30,7 @@ let p = Chunk70956.Z.Millis.DAY,
   E = 12 * Chunk70956.Z.Millis.HOUR;
 class b extends Chunk147913.Z {
   _fetch(e) {
-    if ((0, d.cB)({
+    if ((0, d.c)({
         location: f.dr.QUESTS_MANAGER
       }) && !s.Z.isFetchingCurrentQuests)(0, o.xw)(), c.DL.getConfig({
       location: f.dr.QUESTS_MANAGER

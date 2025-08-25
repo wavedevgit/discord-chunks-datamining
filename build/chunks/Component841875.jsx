@@ -244,21 +244,21 @@ let O = e => {
       if (n.has(e) || i) return "always-white"
     }, [n, i]), g = l.useCallback(e => n.has(e) || i ? u.TVs.colors.WHITE : u.TVs.colors.INTERACTIVE_NORMAL, [n, i]), p = l.useMemo(() => [{
       name: C.intl.string(C.t.aVBOKi),
-      icon: (0, r.jsx)(u.wGt, {
+      icon: (0, r.jsx)(u.Hzt, {
         size: "xs",
         color: g(c.h.ANIME)
       }),
       enum: c.h.ANIME
     }, {
       name: C.intl.string(C.t["3WoZBQ"]),
-      icon: (0, r.jsx)(u.iWm, {
+      icon: (0, r.jsx)(u.YJV, {
         size: "xs",
         color: g(c.h.GAMING)
       }),
       enum: c.h.GAMING
     }, {
       name: C.intl.string(C.t.yuEmLi),
-      icon: (0, r.jsx)(u.h_8, {
+      icon: (0, r.jsx)(u.y3H, {
         size: "xs",
         color: g(c.h.CUTE_COZY)
       }),
@@ -272,28 +272,28 @@ let O = e => {
       enum: c.h.SCI_FI
     }, {
       name: C.intl.string(C.t.TlhOQE),
-      icon: (0, r.jsx)(u.ED8, {
+      icon: (0, r.jsx)(u.ZRV, {
         size: "xs",
         color: g(c.h.FOOD_DRINKS)
       }),
       enum: c.h.FOOD_DRINKS
     }, {
       name: C.intl.string(C.t["4IaUIC"]),
-      icon: (0, r.jsx)(u.HI3, {
+      icon: (0, r.jsx)(u.GsA, {
         size: "xs",
         color: g(c.h.FANTASY)
       }),
       enum: c.h.FANTASY
     }, {
       name: C.intl.string(C.t.w0nSGx),
-      icon: (0, r.jsx)(u.Ffc, {
+      icon: (0, r.jsx)(u.GuY, {
         size: "xs",
         color: g(c.h.ANIMALS_PETS)
       }),
       enum: c.h.ANIMALS_PETS
     }, {
       name: C.intl.string(C.t.cJng7u),
-      icon: (0, r.jsx)(u.hg2, {
+      icon: (0, r.jsx)(u.NQW, {
         size: "xs",
         color: g(c.h.NATURE)
       }),
@@ -307,7 +307,7 @@ let O = e => {
       enum: c.h.MOVIES_TV_SHOWS
     }, {
       name: C.intl.string(C.t.MB9H5e),
-      icon: (0, r.jsx)(u.Z6G, {
+      icon: (0, r.jsx)(u._Tr, {
         size: "xs",
         color: g(c.h.DARK_MOODY)
       }),
@@ -337,7 +337,7 @@ let O = e => {
             },
             children: [i, (0, r.jsx)(u.Text, {
               color: o(c),
-              variant: "text-sm/medium",
+              variant: "text-md/medium",
               children: l
             })]
           }, l)

@@ -89,7 +89,7 @@ function G() {
       isFetchingCurrentQuests: Chunk569984.Z.isFetchingCurrentQuests,
       lastFetchedCurrentQuests: Chunk569984.Z.lastFetchedCurrentQuests
     })),
-    c = (0, Chunk977156.cB)({
+    c = (0, Chunk977156.c)({
       location: Chunk46140.dr.USE_QUESTS
     }),
     u = Chunk937797.DL.useConfig({

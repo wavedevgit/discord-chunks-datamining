@@ -61,7 +61,7 @@ function G(e) {
   } = e, E = (0, T.T)({
     quest: a,
     location: D.dr.QUESTS_BAR
-  }), G = (0, I.Zy)({
+  }), G = (0, I.Z)({
     location: D.dr.QUESTS_BAR
   }), B = (0, c.e7)([b.Z], () => null != b.Z.questEnrollmentBlockedUntil), {
     isQuestBarVisible: Z,

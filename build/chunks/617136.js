@@ -27,7 +27,7 @@ var Chunk647438 = require("./647438.js"),
   Chunk509212 = require("./509212.js"),
   Chunk569984 = require("./569984.js"),
   Chunk497505 = require("./497505.js"),
-  Chunk977156 = require("./977156.js"),
+  Chunk36243 = require("./36243.js"),
   Chunk566078 = require("./566078.js"),
   Chunk46140 = require("./46140.js"),
   Chunk981631 = require("./981631.js");
@@ -112,7 +112,7 @@ function w(e) {
     shouldExtendSession: a = false,
     sourceQuestContent: o
   } = e, l = h.Z.quests.get(t);
-  if (null == l || (0, g.X7)({
+  if (null == l || (0, g.X)({
       location: b.dr.QUEST_PREVIEW_TOOL
     }) && u.Z.getLayers().includes(y.S9g.USER_SETTINGS)) return;
   let f = v({}, R(l, o, a), r);

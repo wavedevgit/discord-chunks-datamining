@@ -118,14 +118,14 @@ function R(e) {
   function N() {
     let e = 16,
       t = 16;
-    if ((i || n) && (e = 32, t = 24), a) return (0, r.jsx)(_.dz2, {
+    if ((i || n) && (e = "38%", t = "auto"), a) return (0, r.jsx)(_.dz2, {
       size: "custom",
       width: e,
       height: t,
       color: (0, h.Lq)(C ? m.Ilk.WHITE_500 : m.Ilk.BLACK_500)
     })
   }
-  return i && !a ? C = true : (i || a) && (C = (0, c.Bd)(null != A ? A : m.p6O) > .1), (0, r.jsx)(f.t, {
+  return i && !a ? C = true : (i || a) && (C = (0, c.Bd)(null != A ? A : m.p6O) > .2), (0, r.jsx)(f.t, {
     offset: false,
     children: (0, r.jsxs)("button", v(y({
       type: "button",
@@ -147,7 +147,6 @@ function R(e) {
       children: [i ? (0, r.jsx)(_.vdY, {
         size: "custom",
         className: E.colorPickerDropper,
-        colorClass: E.colorPickerDropperFg,
         width: 14,
         height: 14,
         color: (0, h.Lq)(C ? m.Ilk.WHITE_500 : m.Ilk.BLACK_500)

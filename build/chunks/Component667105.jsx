@@ -364,7 +364,7 @@ function V(e) {
   let {
     location: n,
     quest: r
-  } = e, i = (0, I.Zy)({
+  } = e, i = (0, I.Z)({
     location: n
   }), a = (0, E.tP)(r), s = (0, v.b)({
     location: n

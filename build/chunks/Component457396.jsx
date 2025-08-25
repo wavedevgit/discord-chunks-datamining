@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk515753 = require("./515753.jsx"),
   Chunk927359 = require("./927359.js"),
   Chunk975298 = require("./975298.js"),
-  Chunk803038 = require("./803038.js"),
+  Chunk866419 = require("./866419.js"),
   Chunk211644 = require("./211644.js"),
   Chunk266454 = require("./266454.js"),
   Chunk243778 = require("./243778.jsx"),
@@ -120,9 +120,7 @@ let V = e => {
         location: "NitroTabButton"
       }),
       e_ = (null == er ? true : er.trial_id) === M.a7,
-      eO = p.Mc.useExperiment({
-        location: "NitroTabButton"
-      }).v2EditorEnabled,
+      eO = (0, p.YZ)(),
       eE = [];
     (0, f.Kl)() && (ea && eE.push(o.z.BOGO_2025_NITRO_TAB_BADGE), eb && eE.push(o.z.VOICE_FILTER_EARLY_ACCESS_PREMIUM_TAB_BADGE), el && eE.push(o.z.Q2_2025_MARKETING_MOMENT_NITRO_TAB_BADGE_V2), eO && eE.push(o.z.CUSTOM_THEMES_PREMIUM_TAB_BADGE));
     let [ey, ev] = (0, g.US)(eE, true, true);

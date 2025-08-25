@@ -44,7 +44,7 @@ function N(e) {
   } = e, R = (0, g.sp)(), Z = null != (t = null == R ? true : R.sessionId) ? t : "", {
     noCache: w,
     includeUnpublished: F
-  } = (0, C.Z)(), D = (0, s.e7)([u.default], () => u.default.getCurrentUser()), M = (0, s.e7)([p.Z], () => p.Z.productsWithVariantsAsGroup), [H, W] = l.useState(1), U = (0, c.Fg)(), V = (0, i.ap)(U), [z, G, q] = l.useMemo(() => {
+  } = (0, C.Z)(), M = (0, s.e7)([u.default], () => u.default.getCurrentUser()), D = (0, s.e7)([p.Z], () => p.Z.productsWithVariantsAsGroup), [H, W] = l.useState(1), U = (0, c.Fg)(), V = (0, i.ap)(U), [z, G, q] = l.useMemo(() => {
     switch (A) {
       case E.AW.AVATAR_DECORATIONS:
         return [O.intl.string(O.t.dRZYND), V ? L.Z : T.Z, a.Z.AVATAR_DECORATION];
@@ -55,10 +55,10 @@ function N(e) {
       case E.AW.BUNDLES:
         return [O.intl.string(O.t.FYFppq), V ? y.Z : x.Z, a.Z.BUNDLE]
     }
-  }, [A, V]), K = (0, f.a)(), Y = l.useMemo(() => K(M.filter(e => {
+  }, [A, V]), K = (0, f.a)(), Y = l.useMemo(() => K(D.filter(e => {
     var t;
     return e.type === q || e.type === a.Z.VARIANTS_GROUP && (null == (t = e.variants) ? true : t.some(e => e.type === q)) === true
-  })), [M, q, K]), X = (0, m.l)(Y);
+  })), [D, q, K]), X = (0, m.l)(Y);
   return (l.useEffect(() => {
     (0, _.n)({
       sessionId: Z,
@@ -77,7 +77,7 @@ function N(e) {
       unpublishedCategoriesShown: F,
       cacheDisabled: w
     })
-  }, [Z, N, F, w, n, A]), n || null == D) ? (0, r.jsx)(h.Z, {}) : (0, r.jsxs)(r.Fragment, {
+  }, [Z, N, F, w, n, A]), n || null == M) ? (0, r.jsx)(h.Z, {}) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       style: {
         backgroundImage: "url(".concat(G, ")")
@@ -97,7 +97,7 @@ function N(e) {
           },
           children: (0, r.jsx)(b.Z, {
             product: e,
-            user: D,
+            user: M,
             category: n,
             tab: A
           }, e.skuId)

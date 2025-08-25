@@ -39,7 +39,7 @@ var Chunk990547 = require("./990547.js"),
   Chunk813732 = require("./813732.jsx"),
   Chunk398140 = require("./398140.jsx"),
   Chunk564344 = require("./564344.jsx"),
-  Chunk977156 = require("./977156.js"),
+  Chunk36243 = require("./36243.js"),
   Chunk14676 = require("./14676.jsx"),
   Chunk652380 = require("./652380.jsx"),
   Chunk145158 = require("./145158.js"),
@@ -2017,7 +2017,7 @@ let e2 = () => {
         searchableTitles: ["Quest Preview Tool"],
         label: "Quest Preview Tool",
         element: G.Z,
-        predicate: () => (0, M.X7)({
+        predicate: () => (0, M.X)({
           location: eW.dr.QUEST_PREVIEW_TOOL
         })
       },

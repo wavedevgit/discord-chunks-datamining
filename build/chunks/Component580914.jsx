@@ -83,8 +83,8 @@ let Z = {
       isLoading: n,
       handleTransition: a,
       category: F,
-      heroBlock: D,
-      tab: M,
+      heroBlock: M,
+      tab: D,
       onVisibilityChange: H
     } = e, W = (0, g.O)(e => {
       null == H || H(e)
@@ -94,7 +94,7 @@ let Z = {
       location: "collectible_hero_block"
     }), q = l.useMemo(() => {
       var e, t;
-      return null != D ? D : null == F ? Z : {
+      return null != M ? M : null == F ? Z : {
         rankedSkuIds: null != (e = F.heroRanking) ? e : [],
         name: F.name,
         unpublishedAt: F.unpublishedAt,
@@ -113,14 +113,14 @@ let Z = {
         bannerConfig: F.heroBannerConfig,
         logoConfig: F.heroLogoDisplayConfig
       }
-    }, [D, F]), {
+    }, [M, F]), {
       bannerOverrides: K,
       bannerStyleOverrides: Y,
       logoStyleOverrides: X,
       heroLogo: Q,
       heroBannerStatic: J,
       heroBannerAnimated: $
-    } = (0, j.hr)(q), ee = null == K ? true : K.heroBanner, et = null != (t = null == Y ? true : Y.responsive) && t, en = null == Y ? true : Y.backgroundStyle, er = l.useMemo(() => V(q.rankedSkuIds), [n, V, q.rankedSkuIds]), el = (0, v.a)()(er), ea = (0, x.l)(el).slice(0, 4), es = (0, I.St)(ea), ei = M === N.AW.ORBS ? A.intl.string(A.t["1CdL8f"]) : A.intl.formatToPlainString(A.t.wvKYCg, {
+    } = (0, j.hr)(q), ee = null == K ? true : K.heroBanner, et = null != (t = null == Y ? true : Y.responsive) && t, en = null == Y ? true : Y.backgroundStyle, er = l.useMemo(() => V(q.rankedSkuIds), [n, V, q.rankedSkuIds]), el = (0, v.a)()(er), ea = (0, x.l)(el).slice(0, 4), es = (0, I.St)(ea), ei = D === N.AW.ORBS ? A.intl.string(A.t["1CdL8f"]) : A.intl.formatToPlainString(A.t.wvKYCg, {
       category_name: q.name
     }), eo = (0, O.FF)("CollectiblesContent");
     return null != U && (n || q !== Z) ? (0, r.jsxs)("div", {
@@ -164,7 +164,7 @@ let Z = {
                 variant: "heading-xxl/bold",
                 className: R.title,
                 color: "header-primary",
-                children: [q.title, M === N.AW.ORBS && G && (0, r.jsx)(p.Z, {})]
+                children: [q.title, D === N.AW.ORBS && G && (0, r.jsx)(p.Z, {})]
               }), "" !== q.summary && (0, r.jsx)(d.Text, {
                 variant: q.categorySkuId === i.T.ORB ? "text-lg/medium" : "text-md/normal",
                 className: q.categorySkuId === i.T.ORB ? R.orbsSubHeaderText : (null == K ? true : K.showDarkBannerText) ? R.subHeaderTextDark : R.subHeaderText,
@@ -179,7 +179,7 @@ let Z = {
             children: (0, r.jsx)(d.zxk, {
               variant: "overlay-primary",
               onClick: () => {
-                M === N.AW.ORBS ? ((0, m.Y)({
+                D === N.AW.ORBS ? ((0, m.Y)({
                   pageType: P.ZY5.SHOP_ORBS_TAB,
                   sectionType: P.jXE.ORBS_SHOP_HERO_BLOCK,
                   ctaObject: P.qAy.CTA_TO_QUEST_HOME
@@ -188,7 +188,7 @@ let Z = {
                 })) : (a("shop latest category hero", eo && q.categorySkuId !== i.T.ORB ? true : q.categorySkuId), b.default.track(P.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                   collectibles_shop_session_id: null == z ? true : z.sessionId,
                   sku_id: q.categorySkuId,
-                  page_type: M,
+                  page_type: D,
                   page_section: null == z ? true : z.pageSection,
                   page_category: null == z ? true : z.pageCategory,
                   cta_name: "shop latest category hero button"
@@ -199,7 +199,7 @@ let Z = {
           })]
         }), (0, r.jsx)("div", {
           className: s()(R.row, R.feed, {
-            [R.feedSingleRow]: M !== N.AW.ORBS
+            [R.feedSingleRow]: D !== N.AW.ORBS
           }),
           children: n ? (0, r.jsx)(r.Fragment, {
             children: [true, true, true, true].map((e, t) => (0, r.jsx)(T.K, {}, t))
@@ -216,7 +216,7 @@ let Z = {
                   product: e,
                   category: n,
                   user: U,
-                  tab: M,
+                  tab: D,
                   _isInHeroBlock: true
                 }, e.skuId)
               }, null == e ? true : e.skuId)
