@@ -428,22 +428,19 @@ function J() {
   return null != I && Q(I)
 }
 
-function $(e) {
-  let {
-    channelId: t
-  } = e;
+function $() {
   if (null == I) returnfalse;
-  if (I.type === O.aib.DMS && (0, E.R6)(I)) {
-    let e = c.Z.getChannel(t);
-    if (null == e || !e.isPrivate()) returnfalse;
-    let n = (0, E.Tm)(I),
-      r = T.get(n);
-    if (null == r) returnfalse;
+  if ((0, Chunk607802.R6)(I)) {
+    var e;
+    let t = (0, Chunk607802.Tm)(I),
+      n = T.get(exports);
+    if (null == require) returnfalse;
     let {
-      type: i,
-      filter: a
-    } = r.mode;
-    return i === O.Sap.FILTER && a === O.dCx.FILTER_IN && Q(I)
+      type: r,
+      filter: i,
+      token: a
+    } = require.mode, o = null == a || null == (e = a.getFullMatch()) ? true : module.trim(), s = null == Chunk442837 || 0 === Chunk442837.length;
+    if (r === Chunk981631.Sap.FILTER && Chunk498607 === Chunk981631.dCx.FILTER_IN && Chunk570140) return Q(I)
   }
   returnfalse
 }
