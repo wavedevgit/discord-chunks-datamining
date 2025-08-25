@@ -286,8 +286,7 @@ function Q(e) {
       className: F.subscriptionRows,
       children: [U ? (0, r.jsx)(L.Z, {
         subscription: t,
-        currentInvoicePreview: E,
-        renewalInvoicePreview: O,
+        invoicePreview: O,
         paymentSource: i,
         discountOffer: I,
         renewalChurnDiscountInfo: w,

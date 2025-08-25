@@ -62,7 +62,7 @@ function Z(e) {
     enablePremiumBrandRefresh: u
   } = e;
   return (0, r.jsxs)("div", {
-    className: a()(null != o ? o : k.itemWithWumpus, {
+    className: a()(o, {
       [M.featureItem]: u,
       [M.featureItemApplicationHome]: u && c
     }),
@@ -96,7 +96,7 @@ function V(e) {
       return (0, r.jsx)(Z, {
         Icon: a,
         text: o(),
-        className: t && !n ? k.itemApplicationHome : true,
+        className: t && !n ? k.itemApplicationHome : k.itemWithWumpus,
         textVariant: t && !n ? "text-sm/normal" : true,
         enablePremiumBrandRefresh: n,
         isApplicationHome: t
@@ -212,9 +212,10 @@ function W(e) {
     featureSet: t = 0,
     isModal: n = false,
     isGift: i = false,
-    enablePremiumBrandRefresh: a = false,
-    isApplicationHome: s = false
-  } = e, c = (0, o.e7)([_.default], () => _.default.locale), u = (0, o.e7)([b.Z], () => b.Z.affinities), d = !a && n && !i && u.length > 0, f = 3 === t || 0 === t, p = 3 === t || 0 === t && a && s, h = (() => {
+    enablePremiumBrandRefresh: s = false,
+    isApplicationHome: c = false,
+    firstFeatureItemClassName: u
+  } = e, d = (0, o.e7)([_.default], () => _.default.locale), f = (0, o.e7)([b.Z], () => b.Z.affinities), p = !s && n && !i && f.length > 0, h = 3 === t || 0 === t, m = 3 === t || 0 === t && s && c, g = (() => {
     switch (t) {
       case 3:
         return D.CD;
@@ -227,24 +228,24 @@ function W(e) {
     }
   })();
   return (0, r.jsxs)(r.Fragment, {
-    children: [p && (0, r.jsx)(l.Text, {
+    children: [m && (0, r.jsx)(l.Text, {
       variant: "text-sm/bold",
-      className: a ? M.tier2ApplicationHomeSubheader : k.tier2ApplicationHomeSubheader,
+      className: s ? M.tier2ApplicationHomeSubheader : k.tier2ApplicationHomeSubheader,
       children: j.intl.string(j.t.AozD3d)
-    }), h.map((e, n) => {
+    }), g.map((e, n) => {
       let {
         Icon: i,
         getText: o
       } = e;
       return (0, r.jsx)(Z, {
         Icon: i,
-        text: o(c),
-        className: 3 === t ? k.itemApplicationHome : true,
+        text: o(d),
+        className: a()(3 === t ? k.itemApplicationHome : k.itemWithWumpus, 0 === n ? u : true),
         textVariant: 3 === t ? "text-sm/normal" : true,
-        isApplicationHome: s,
-        enablePremiumBrandRefresh: a
+        isApplicationHome: c,
+        enablePremiumBrandRefresh: s
       }, n)
-    }), d && f && (0, r.jsx)(w.Z, {})]
+    }), p && h && (0, r.jsx)(w.Z, {})]
   })
 }
 

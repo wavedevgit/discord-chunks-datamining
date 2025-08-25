@@ -177,7 +177,8 @@ function Z(e) {
       isModal: _,
       isGift: d,
       enablePremiumBrandRefresh: true,
-      isApplicationHome: T
+      isApplicationHome: T,
+      firstFeatureItemClassName: "inCard" === E ? D.firstFeatureItemContainer : true
     }), n, h && (0, r.jsx)(O.f, {})]
   })
 }

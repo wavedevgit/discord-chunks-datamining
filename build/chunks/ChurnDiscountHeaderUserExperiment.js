@@ -12,14 +12,23 @@ let a = (0, Chunk818083.B)({
     kind: "user",
     label: "Churn Discount Subscription Header Experiment",
     defaultConfig: {
-      enabled: false
+      enabled: false,
+      showDiscountBadge: false
     },
     commonTriggerPoint: Chunk987338.$P.CONNECTION_OPEN,
     treatments: [{
       id: 1,
-      label: "Enables a churn discount header in subscription details",
+      label: "Enables a churn discount header in subscription details with a discount badge",
       config: {
-        enabled: true
+        enabled: true,
+        showDiscountBadge: true
+      }
+    }, {
+      id: 2,
+      label: "Enables a churn discount header in subscription details with discount button copy",
+      config: {
+        enabled: true,
+        showDiscountBadge: false
       }
     }]
   }),
