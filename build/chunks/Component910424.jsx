@@ -2,7 +2,7 @@
 /** chunk id: 910424, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => v
+  Z: () => y
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -16,12 +16,10 @@ var Chunk442837 = require("./442837.js"),
   Chunk199902 = require("./199902.js"),
   Chunk592125 = require("./592125.js"),
   Chunk585483 = require("./585483.js"),
-  Chunk915863 = require("./915863.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk388032 = require("./388032.jsx"),
-  Chunk603634 = require("./603634.js");
+  Chunk388032 = require("./388032.jsx");
 
-function E(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -30,20 +28,20 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      E(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
 }
 
-function y(e, t) {
+function E(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -54,68 +52,55 @@ function y(e, t) {
   return n
 }
 
-function O(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
+function b(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function v(e) {
+function y(e) {
   let {
     isCurrentUser: t,
-    color: n,
-    look: E,
-    applicationStream: y,
-    onAction: v
+    applicationStream: n,
+    onAction: m
   } = e, {
-    activeStream: I,
-    watchingOtherStream: T
+    activeStream: E,
+    watchingOtherStream: y
   } = (0, i.cj)([d.Z], () => ({
-    activeStream: d.Z.getActiveStreamForApplicationStream(y),
-    watchingOtherStream: null != y && d.Z.getAllActiveStreamsForChannel(y.channelId).filter(e => {
+    activeStream: d.Z.getActiveStreamForApplicationStream(n),
+    watchingOtherStream: null != n && d.Z.getAllActiveStreamsForChannel(n.channelId).filter(e => {
       let {
         ownerId: t
       } = e;
-      return t !== y.ownerId
+      return t !== n.ownerId
     }).length > 0
-  })), S = (0, i.e7)([f.Z], () => f.Z.getChannel(null == y ? true : y.channelId)), [A, C] = (0, u.wq)(S), N = (0, c.Aq)(), R = null != I && null != y && I.state !== h.jm8.ENDED && I.ownerId === y.ownerId, P = e => {
-    null != y && (null == v || v(), s.default.selectVoiceChannel(y.channelId), R || (0, l.iV)(y, {
+  })), O = (0, i.e7)([f.Z], () => f.Z.getChannel(null == n ? true : n.channelId)), [v, I] = (0, u.wq)(O), T = (0, c.Aq)(), S = null != E && null != n && E.state !== p.jm8.ENDED && E.ownerId === n.ownerId, A = e => {
+    null != n && (null == m || m(), s.default.selectVoiceChannel(n.channelId), S || (0, l.iV)(n, {
       forceMultiple: e
-    }), N.dispatch(h.CkL.POPOUT_CLOSE), _.S.dispatch(h.CkL.MODAL_CLOSE), o.Z.popAll())
+    }), T.dispatch(p.CkL.POPOUT_CLOSE), _.S.dispatch(p.CkL.MODAL_CLOSE), o.Z.popAll())
   };
-  if (null == y) return null;
-  let w = (0, u.P9)(C);
-  t ? w = m.intl.string(m.t.XvBdeX) : R && (w = m.intl.string(m.t.JH1SJy));
-  let D = {
-    color: n,
-    look: E
-  };
-  return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsxs)(p.Z, O(b({
-      disabled: t || R || !A,
-      onClick: () => P(false)
-    }, D), {
-      fullWidth: true,
-      children: [(0, r.jsx)(a.hGI, {
-        size: "md",
-        color: "currentColor",
-        className: g.streamIcon
-      }), w]
-    }), "play"), T && !R ? (0, r.jsx)(a.ua7, {
-      text: m.intl.string(m.t.wCrzur),
-      children: e => (0, r.jsx)(p.Z, O(b(O(b({}, e), {
+  if (null == n) return null;
+  let C = (0, u.P9)(I);
+  return t ? C = h.intl.string(h.t.XvBdeX) : S && (C = h.intl.string(h.t.JH1SJy)), (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(a.zxk, {
+      size: "sm",
+      variant: "active",
+      icon: a.hGI,
+      text: C,
+      disabled: t || S || !v,
+      onClick: () => A(false),
+      fullWidth: true
+    }), y && !S ? (0, r.jsx)(a.ua7, {
+      text: h.intl.string(h.t.wCrzur),
+      children: e => (0, r.jsx)(a.hU, b(g({}, e), {
+        variant: "secondary",
+        size: "sm",
+        icon: a.OgY,
+        "aria-label": h.intl.string(h.t.wCrzur),
         onClick: () => {
           var t;
-          null == (t = e.onClick) || t.call(e), P(true)
+          null == (t = e.onClick) || t.call(e), A(true)
         }
-      }), D), {
-        className: g.iconButton,
-        size: g.iconButtonSize,
-        children: (0, r.jsx)(a.OgY, {
-          size: "xs",
-          color: "currentColor",
-          className: g.iconSize
-        })
       }))
     }) : null]
   })

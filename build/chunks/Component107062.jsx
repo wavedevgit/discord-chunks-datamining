@@ -2,7 +2,7 @@
 /** chunk id: 107062, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => L
+  ZP: () => P
 }), require("./804061.js"), require("./704826.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -28,51 +28,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk797342 = require("./797342.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-
-function C(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function N(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      C(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function R(e, t) {
-  if (null == e) return {};
-  var n, r, i = P(e, t);
-  if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
-  }
-  return i
-}
-
-function P(e, t) {
-  if (null == e) return {};
-  var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-  return i
-}
-let w = (e, t) => A.intl.formatToPlainString(A.t.tAwI1t, {
+let C = (e, t) => A.intl.formatToPlainString(A.t.tAwI1t, {
     username: t.username,
     activity: e.extra.activity_name
   }),
-  D = (e, t, n) => {
+  N = (e, t, n) => {
     let r = A.t["bES+y8"],
       i = m.ZP.getName(t.guild_id, t.id, n),
       a = e.extra.activity_name;
@@ -81,7 +41,7 @@ let w = (e, t) => A.intl.formatToPlainString(A.t.tAwI1t, {
       userName: i
     }).replaceAll("*", "")
   },
-  x = e => {
+  R = e => {
     let {
       entry: t,
       channel: n,
@@ -95,110 +55,106 @@ let w = (e, t) => A.intl.formatToPlainString(A.t.tAwI1t, {
       countOthers: i
     }).replaceAll("*", "")
   },
-  L = e => {
+  P = e => {
     let {
       channel: t,
       entry: n,
       onReaction: m,
-      onVoiceChannelPreview: C,
-      disableActivityProfileLinks: P
+      onVoiceChannelPreview: P,
+      disableActivityProfileLinks: w
     } = e, {
-      largeImage: L
+      largeImage: D
     } = (0, g.rv)({
       entry: n,
       showCoverImage: false
     }), {
-      user: j,
-      details: M,
-      activity: k,
-      embeddedActivity: U
+      user: x,
+      details: L,
+      activity: j,
+      embeddedActivity: M
     } = (0, T.n)(n), {
-      primaryColor: G,
-      secondaryColor: B
-    } = (0, O.Z)(null == L ? true : L.src), Z = (0, a.e7)([p.default], () => p.default.locale), {
-      displayParticipants: V,
-      participant1: F,
-      participant2: H,
-      numOtherParticipants: Y
-    } = (0, E.Z)(n, 3), W = () => {
+      primaryColor: k,
+      secondaryColor: U
+    } = (0, O.Z)(null == D ? true : D.src), G = (0, a.e7)([p.default], () => p.default.locale), {
+      displayParticipants: B,
+      participant1: Z,
+      participant2: V,
+      numOtherParticipants: F
+    } = (0, E.Z)(n, 3), H = () => {
       d.__(f._b.TEXT, _.Ie.NORMAL, {
         applicationId: n.extra.application_id
       })
-    }, K = i.useCallback(e => {
-      if ((null == L ? true : L.src) == null || null == t || null == j) return;
-      let r = Y > 0 ? x({
+    }, Y = i.useCallback(e => {
+      if ((null == D ? true : D.src) == null || null == t || null == x) return;
+      let r = F > 0 ? R({
         entry: n,
         channel: t,
-        users: [F, H],
-        countOthers: Y
-      }) : D(n, t, j);
+        users: [Z, V],
+        countOthers: F
+      }) : N(n, t, x);
       return (0, y.C4)({
         entry: n,
-        applicationImageSrc: null == L ? true : L.src,
-        avatarSrcs: V.map(e => e.getAvatarURL(t.guild_id, 128)),
+        applicationImageSrc: null == D ? true : D.src,
+        avatarSrcs: B.map(e => e.getAvatarURL(t.guild_id, 128)),
         description: r,
-        timestamp: (0, b.yh)(n, Z),
-        colors: [G, B],
+        timestamp: (0, b.yh)(n, G),
+        colors: [k, U],
         channelId: e
       })
-    }, [null == L ? true : L.src, t, V, n, Z, Y, F, H, G, B, j]), {
-      enabled: z
+    }, [null == D ? true : D.src, t, B, n, G, F, Z, V, k, U, x]), {
+      enabled: W
     } = s.c.useExperiment({
       location: "MemberListAcitivtyContentPopout"
     }, {
       autoTrackExposure: true
     });
-    if (null == j) return null;
-    let q = (0, r.jsx)(v.PZ, {
+    if (null == x) return null;
+    let K = (0, r.jsx)(v.PZ, {
         location: v.Gt.POPOUT,
         entry: n
       }),
-      X = (0, r.jsx)(I.wG, {
+      z = (0, r.jsx)(I.wG, {
         channel: t,
         userDescription: (0, b.kr)(n) ? A.t.vPg1JS : A.t.rPqqtr,
         title: n.extra.activity_name,
-        subtitle: M,
-        badges: q,
+        subtitle: L,
+        badges: K,
         entry: n,
         showCoverImage: false,
-        onClickTitle: P ? true : W,
-        onClickSubtitle: P ? true : W,
-        onClickThumbnail: P ? true : W
+        onClickTitle: w ? true : H,
+        onClickSubtitle: w ? true : H,
+        onClickThumbnail: w ? true : H
       }),
-      Q = (0, l.Z)(k, S.xjy.JOIN) || (0, c.Z)(k),
-      J = Q ? (0, r.jsx)(u.Z, {
-        embeddedActivity: U,
-        activity: k,
-        user: j,
-        ButtonComponent: e => {
-          let {
-            children: t,
-            size: n
-          } = e, i = R(e, ["children", "size"]);
-          return (0, r.jsx)(I.Ll, N({
-            icon: o.YVR,
-            text: t
-          }, i))
-        }
+      q = (0, l.Z)(j, S.xjy.JOIN) || (0, c.Z)(j),
+      X = q ? (0, r.jsx)(u.Z, {
+        embeddedActivity: M,
+        activity: j,
+        user: x,
+        variant: "primary",
+        size: "md",
+        icon: o.YVR
       }) : null,
-      $ = z ? o.iWm : o.jje,
-      ee = P ? null : (0, r.jsx)(I.Ll, {
-        onClick: W,
-        icon: $,
-        text: A.intl.string(A.t.GDWYR0)
+      Q = W ? o.iWm : o.jje,
+      J = w ? null : (0, r.jsx)(o.zxk, {
+        variant: "primary",
+        size: "md",
+        fullWidth: true,
+        onClick: H,
+        text: A.intl.string(A.t.GDWYR0),
+        icon: Q
       }),
-      et = [Q && !P ? J : ee].filter(h.lm);
+      $ = [q && !w ? X : J].filter(h.lm);
     return (0, r.jsxs)(I.yR, {
-      children: [X, (0, r.jsx)(I.St, {
+      children: [z, (0, r.jsx)(I.St, {
         children: (0, r.jsx)(I.WT, {
           onReaction: m,
-          onVoiceChannelPreview: C,
-          user: j,
+          onVoiceChannelPreview: P,
+          user: x,
           channel: t,
-          generateReactionImage: K,
-          reactionImageAltText: w(n, j),
+          generateReactionImage: Y,
+          reactionImageAltText: C(n, x),
           entry: n,
-          buttons: et
+          buttons: $
         })
       })]
     })

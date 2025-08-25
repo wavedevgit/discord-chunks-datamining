@@ -2,33 +2,73 @@
 /** chunk id: 636245, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => u
+  Z: () => _
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk442837 = require("./442837.js"),
+  Chunk481060 = require("./481060.js"),
   Chunk922482 = require("./922482.js"),
   Chunk979651 = require("./979651.js"),
-  Chunk915863 = require("./915863.jsx"),
-  Chunk388032 = require("./388032.jsx"),
-  Chunk156859 = require("./156859.js");
-let u = e => {
-  let {
+  Chunk388032 = require("./388032.jsx");
+
+function c(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function u(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      c(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function d(e, t) {
+  if (null == e) return {};
+  var n, r, i = f(e, t);
+  if (Object.getOwnPropertySymbols) {
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+  }
+  return i
+}
+
+function f(e, t) {
+  if (null == e) return {};
+  var n, r, i = {},
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+  return i
+}
+let _ = e => {
+  var {
     guildId: t,
     channelId: n,
-    color: u,
-    look: d,
-    onAction: f
-  } = e, _ = (0, i.e7)([o.Z], () => o.Z.isInChannel(n), [n]), p = () => {
-    null == f || f(), a.AC(t, n)
-  };
-  return (0, r.jsx)(s.Z, {
-    className: c.button,
-    color: u,
-    look: d,
-    disabled: _,
-    onClick: p,
-    fullWidth: true,
-    children: l.intl.string(l.t.ZYO5OD)
-  }, "stage")
+    variant: c = "active",
+    size: f = "sm",
+    onAction: _
+  } = e, p = d(e, ["guildId", "channelId", "variant", "size", "onAction"]);
+  let h = (0, i.e7)([s.Z], () => s.Z.isInChannel(n), [n]),
+    m = () => {
+      null == _ || _(), o.AC(t, n)
+    };
+  return (0, r.jsx)(a.zxk, u({
+    variant: c,
+    size: f,
+    text: l.intl.string(l.t.ZYO5OD),
+    disabled: h,
+    onClick: m,
+    fullWidth: true
+  }, p))
 }

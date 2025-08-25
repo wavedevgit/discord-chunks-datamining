@@ -27,9 +27,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk594174 = require("./594174.js"),
   Chunk979651 = require("./979651.js"),
   Chunk585483 = require("./585483.js"),
-  Chunk63063 = require("./63063.js"),
   Chunk665149 = require("./665149.jsx"),
   Chunk981631 = require("./981631.js"),
+  Chunk701488 = require("./701488.js"),
   Chunk921944 = require("./921944.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -125,7 +125,7 @@ class M extends Chunk647438.PureComponent {
                   color: "always-white",
                   children: A.intl.string(A.t.xAW71d)
                 }), (0, r.jsx)(o.eee, {
-                  href: I.Z.getArticleURL(Z.BhN.ACTIVITIES),
+                  href: Z.sI,
                   children: A.intl.string(A.t.hvVgAQ)
                 })]
               }),
@@ -194,10 +194,10 @@ function D(e) {
     notFriend: y,
     isBlocked: v
   } = (0, l.cj)([O.Z], () => ({
-    notFriend: n.type === Z.d4z.DM && null != _ && !O.Z.isFriend(_),
-    isBlocked: n.type === Z.d4z.DM && null != _ && O.Z.isBlocked(_)
-  })), S = (0, l.e7)([j.default], () => j.default.getUser(_)), I = (0, u.bp)(), P = [], T = (0, p.Z)(n.id), N = (0, l.e7)([x.Z], () => x.Z.hasLayers());
-  T && !N && P.push(a.z.ACTIVITY_GDM_CALL_TOOLTIP);
+    notFriend: n.type === P.d4z.DM && null != _ && !O.Z.isFriend(_),
+    isBlocked: n.type === P.d4z.DM && null != _ && O.Z.isBlocked(_)
+  })), S = (0, l.e7)([j.default], () => j.default.getUser(_)), I = (0, u.bp)(), Z = [], T = (0, p.Z)(n.id), N = (0, l.e7)([x.Z], () => x.Z.hasLayers());
+  T && !N && Z.push(a.z.ACTIVITY_GDM_CALL_TOOLTIP);
   let [A, w] = i.useState(false);
   return (i.useEffect(() => {
     let e = setTimeout(() => {
@@ -216,7 +216,7 @@ function D(e) {
     appContext: I,
     canShowTooltip: A,
     canShowActivityGdmTooltip: T,
-    dismissibleContentTypes: P,
+    dismissibleContentTypes: Z,
     useReducedMotion: f
   })
 }

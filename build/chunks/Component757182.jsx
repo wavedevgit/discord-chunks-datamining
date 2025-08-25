@@ -2,13 +2,13 @@
 /** chunk id: 757182, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => f
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
-var Chunk655922 = require("./655922.js"),
+var Chunk481060 = require("./481060.js"),
+  Chunk655922 = require("./655922.js"),
   Chunk420660 = require("./420660.js"),
-  Chunk915863 = require("./915863.jsx"),
   Chunk388032 = require("./388032.jsx");
 
 function l(e, t, n) {
@@ -34,25 +34,8 @@ function c(e) {
 }
 
 function u(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function d(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : u(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-
-function f(e, t) {
   if (null == e) return {};
-  var n, r, i = _(e, t);
+  var n, r, i = d(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -60,7 +43,7 @@ function f(e, t) {
   return i
 }
 
-function _(e, t) {
+function d(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -68,22 +51,24 @@ function _(e, t) {
   return i
 }
 
-function p(e) {
+function f(e) {
   var {
     activity: t,
     onAction: n,
-    ButtonComponent: l = o.Z
-  } = e, u = f(e, ["activity", "onAction", "ButtonComponent"]);
-  if (!(0, a.Z)(t)) return null;
+    variant: l = "secondary",
+    size: d = "sm"
+  } = e, f = u(e, ["activity", "onAction", "variant", "size"]);
+  if (!(0, o.Z)(t)) return null;
   let _ = () => {
     null == n || n();
-    let e = (0, i.Z)(t);
+    let e = (0, a.Z)(t);
     return window.open(null != e ? e : true)
   };
-  return (0, r.jsx)(l, d(c({
+  return (0, r.jsx)(i.zxk, c({
+    variant: l,
+    size: d,
+    text: s.intl.string(s.t["I6JG4+"]),
     onClick: _,
     fullWidth: true
-  }, u), {
-    children: s.intl.string(s.t["I6JG4+"])
-  }), "play-activity")
+  }, f))
 }

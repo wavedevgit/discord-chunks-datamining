@@ -164,7 +164,6 @@ class L extends Chunk647438.PureComponent {
             guildId: require.guildId,
             channelId: require.channelId,
             className: Chunk839021.activityActions,
-            color: Chunk839021.watchButton,
             onAction: Chunk120356
           }), !Chunk442837 && (0, Chunk951288.jsx)(Chunk576855.Z, {
             type: Chunk576855.Z.Types.INLINE,

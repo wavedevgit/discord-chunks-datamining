@@ -171,10 +171,13 @@ function L(e) {
       let e = () => {
         (0, _.Z)(K, C.kG.USER_ACTIVITY_SYNC), j()
       };
-      X.push((0, r.jsx)(I.Ll, {
-        onClick: e,
+      X.push((0, r.jsx)(l.zxk, {
+        variant: "primary",
+        size: "md",
+        fullWidth: true,
+        text: N.intl.string(N.t.eU3inJ),
         icon: l.iOO,
-        text: N.intl.string(N.t.eU3inJ)
+        onClick: e
       }, "listen-along"))
     }
   }

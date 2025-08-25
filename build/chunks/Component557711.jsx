@@ -6,58 +6,87 @@ require.d(exports, {
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
-var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
-  Chunk755721 = require("./755721.js"),
-  Chunk481060 = require("./481060.js"),
+var Chunk481060 = require("./481060.js"),
   Chunk5192 = require("./5192.js"),
-  Chunk829820 = require("./829820.js"),
-  Chunk191242 = require("./191242.js");
+  Chunk829820 = require("./829820.js");
+
+function s(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function l(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      s(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function c(e, t) {
+  if (null == e) return {};
+  var n, r, i = u(e, t);
+  if (Object.getOwnPropertySymbols) {
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+  }
+  return i
+}
+
+function u(e, t) {
+  if (null == e) return {};
+  var n, r, i = {},
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+  return i
+}
 
 function d(e) {
-  let {
+  var {
     activity: t,
     user: n,
-    channelId: i,
-    guildId: d,
-    source: f,
-    size: _,
-    look: p,
-    color: h,
-    className: m,
-    onAction: g
-  } = e, {
-    tooltip: E,
-    loading: b,
-    disabled: y,
-    onClick: O
-  } = (0, c.Fe)(t, n, f, l.ZP.getNickname(d, i, n)), v = () => {
-    null == g || g(), O()
+    channelId: s,
+    guildId: u,
+    source: d,
+    size: f = "sm",
+    variant: _ = "secondary",
+    onAction: p
+  } = e, h = c(e, ["activity", "user", "channelId", "guildId", "source", "size", "variant", "onAction"]);
+  let {
+    tooltip: m,
+    loading: g,
+    disabled: E,
+    onClick: b
+  } = (0, o.Fe)(t, n, d, a.ZP.getNickname(u, s, n)), y = () => {
+    null == p || p(), b()
   };
-  return (0, r.jsx)(s.ua7, {
-    text: E,
+  return (0, r.jsx)(i.ua7, {
+    text: m,
     children: e => {
       let {
         onMouseEnter: n,
-        onMouseLeave: i
+        onMouseLeave: a
       } = e;
-      return (0, r.jsx)(o.zx, {
-        size: _,
-        className: a()(u.syncButton, m),
-        innerClassName: u.syncButtonInner,
-        look: p,
-        color: h,
-        onClick: v,
+      return (0, r.jsx)(i.hU, l({
+        icon: i.iOO,
+        size: f,
+        variant: _,
+        onClick: y,
         onMouseEnter: n,
-        onMouseLeave: i,
-        disabled: y,
-        submitting: b,
-        "aria-label": null != E ? E : t.name,
-        children: (0, r.jsx)(s.iOO, {
-          size: "xs",
-          color: "currentColor"
-        })
-      })
+        onMouseLeave: a,
+        disabled: E,
+        loading: g,
+        "aria-label": null != m ? m : t.name
+      }, h))
     }
   })
 }

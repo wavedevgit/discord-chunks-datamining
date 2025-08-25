@@ -2,31 +2,32 @@
 /** chunk id: 701488, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $y: () => x,
-  Cr: () => b,
+  $y: () => L,
+  Cr: () => y,
   Ev: () => s,
   Fu: () => h,
-  GM: () => D,
-  Gu: () => P,
+  GM: () => x,
+  Gu: () => w,
   JT: () => p,
-  K8: () => y,
-  OF: () => w,
-  P9: () => E,
-  Pc: () => T,
-  S4: () => v,
-  Si: () => m,
-  Ws: () => O,
+  K8: () => O,
+  OF: () => D,
+  P9: () => b,
+  Pc: () => S,
+  S4: () => I,
+  Si: () => g,
+  Ws: () => v,
   Zc: () => _,
-  cE: () => A,
+  cE: () => C,
   cc: () => a,
   d: () => o,
-  eB: () => g,
+  eB: () => E,
   jT: () => f,
   qm: () => l,
-  um: () => S,
-  wP: () => R,
-  wT: () => N,
-  xK: () => I
+  sI: () => m,
+  um: () => A,
+  wP: () => P,
+  wT: () => R,
+  xK: () => T
 }), require("./388685.js");
 var Chunk911969 = require("./911969.js"),
   Chunk981631 = require("./981631.js");
@@ -41,38 +42,39 @@ let a = 160,
   _ = "755827207812677713",
   p = "1234546995360694434",
   h = "1214629548377768066",
-  m = {
+  m = "https://discord.com/blog/server-activities-games-voice-watch-together",
+  g = {
     SMALL: 64,
     LARGE: 160
   },
-  g = ["in_development", "activities_team", "employee_release"],
-  E = ["1037680572660727838", "235088799074484224", "1007373802981822582", "1067803140071620628", "1194351737264406548", "1245041113882955918", "1245040907732910201", "1245040436427489471", "1208090049871351890", "1235205910863806484", "1227719606223765687"],
-  b = ["1247266306231898122", "1257458870390099989", "1276239071764680926"];
-var y = function(e) {
+  E = ["in_development", "activities_team", "employee_release"],
+  b = ["1037680572660727838", "235088799074484224", "1007373802981822582", "1067803140071620628", "1194351737264406548", "1245041113882955918", "1245040907732910201", "1245040436427489471", "1208090049871351890", "1235205910863806484", "1227719606223765687"],
+  y = ["1247266306231898122", "1257458870390099989", "1276239071764680926"];
+var O = function(e) {
     return e.ADS = "ADS", e.FAILED_LOAD = "FAILED_LOAD", e.LAGGING = "LAGGING", e.CONFUSING = "CONFUSING", e.NOT_FUN = "NOT_FUN", e.OTHER = "OTHER", e
   }({}),
-  O = function(e) {
+  v = function(e) {
     return e[e.PLAY = 0] = "PLAY", e[e.SPECTATE = 1] = "SPECTATE", e
   }({}),
-  v = function(e) {
+  I = function(e) {
     return e.DESKTOP = "desktop", e.MOBILE = "mobile", e
   }({}),
-  I = function(e) {
+  T = function(e) {
     return e[e.UNLOCKED = 1] = "UNLOCKED", e[e.PORTRAIT = 2] = "PORTRAIT", e[e.LANDSCAPE = 3] = "LANDSCAPE", e
   }({});
-let T = new Set([c, u, d, f]),
-  S = new Set([u, d, f]);
-var A = function(e) {
+let S = new Set([c, u, d, f]),
+  A = new Set([u, d, f]);
+var C = function(e) {
   return e[e.FOCUSED = 0] = "FOCUSED", e[e.PIP = 1] = "PIP", e[e.GRID = 2] = "GRID", e
 }({});
-let C = {
+let N = {
     label_type: Chunk911969.ww.NONE,
     release_phase: "",
     label_from: null,
     label_until: null,
     omit_badge_from_surfaces: []
   },
-  N = {
+  R = {
     application_id: "",
     requires_age_gate: false,
     legacy_responsive_aspect_ratio: false,
@@ -80,17 +82,17 @@ let C = {
     tablet_default_orientation_lock_state: 1,
     supported_platforms: [Chunk911969.C3.WEB],
     client_platform_config: {
-      [Chunk911969.C3.WEB]: C,
-      [Chunk911969.C3.IOS]: C,
-      [Chunk911969.C3.ANDROID]: C
+      [Chunk911969.C3.WEB]: N,
+      [Chunk911969.C3.IOS]: N,
+      [Chunk911969.C3.ANDROID]: N
     },
     has_csp_exception: false,
     displays_advertisements: false
   },
-  R = [Chunk981631.d4z.GUILD_TEXT, Chunk981631.d4z.DM, Chunk981631.d4z.GROUP_DM],
-  P = [...R, Chunk981631.d4z.GUILD_VOICE],
-  w = "https://support-dev.discord.com/hc/en-us/articles/21692628851351-Private-Activity-Safety";
-var D = function(e) {
+  P = [Chunk981631.d4z.GUILD_TEXT, Chunk981631.d4z.DM, Chunk981631.d4z.GROUP_DM],
+  w = [...P, Chunk981631.d4z.GUILD_VOICE],
+  D = "https://support-dev.discord.com/hc/en-us/articles/21692628851351-Private-Activity-Safety";
+var x = function(e) {
   return e.NORMAL = "normal", e.FULL_SCREEN = "full-screen", e
 }({});
-let x = 216e5
+let L = 216e5
