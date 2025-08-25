@@ -149,7 +149,8 @@ function ef(e) {
       trackingConfig: {
         id: c.id,
         linkType: p.Un.RICH_PRESENCE_INVITE,
-        onView: h
+        onView: h,
+        referrerId: f.author.id
       }
     })
   } {
@@ -193,7 +194,8 @@ function ef(e) {
       trackingConfig: {
         id: c.id,
         linkType: p.Un.RICH_PRESENCE_INVITE,
-        onView: h
+        onView: h,
+        referrerId: f.author.id
       }
     })
   }
@@ -426,7 +428,8 @@ function eh(e) {
       trackingConfig: {
         id: I.id,
         linkType: p.Un.RICH_PRESENCE_INVITE,
-        onView: R
+        onView: R,
+        referrerId: N.author.id
       }
     })
   }
@@ -471,7 +474,8 @@ function eh(e) {
     trackingConfig: {
       id: I.id,
       linkType: p.Un.RICH_PRESENCE_INVITE,
-      onView: R
+      onView: R,
+      referrerId: N.author.id
     },
     footer: eS
   })

@@ -11,11 +11,12 @@ var Chunk442837 = require("./442837.js"),
 function o(e) {
   let t = (0, i.N)(e);
   return (0, n.Wu)([a.default], () => {
-    let e = new Set;
-    return t.forEach(t => {
-      e.add(t.author_id), t.participants.forEach(t => {
-        e.add(t)
+    let e = a.default.getCurrentUser(),
+      r = new Set;
+    return t.forEach(e => {
+      r.add(e.author_id), e.participants.forEach(e => {
+        r.add(e)
       })
-    }), Array.from(e).map(e => a.default.getUser(e)).filter(l.lm)
+    }), Array.from(r).filter(t => t !== (null == e ? true : e.id)).map(e => a.default.getUser(e)).filter(l.lm)
   }, [t])
 }
