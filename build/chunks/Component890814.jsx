@@ -13,7 +13,7 @@ function i(e) {
     renderGame: r
   } = e;
   return (0, n.jsx)("ul", {
-    className: a.coverList,
+    className: l.coverList,
     children: t.map((e, t) => (0, n.jsx)("li", {
       children: r(e)
     }, "".concat(e.applicationId, "-").concat(t)))

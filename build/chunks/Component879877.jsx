@@ -1,10 +1,11 @@
 /** Chunk was on 21585 **/
 /** chunk id: 879877, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => p
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk379405 = require("./379405.js"),
   Chunk481060 = require("./481060.js"),
   Chunk259580 = require("./259580.jsx"),
   Chunk785717 = require("./785717.jsx"),
@@ -15,98 +16,93 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk44258 = require("./44258.js");
 
-function b(e) {
+function p(e) {
+  var t;
   let {
-    tags: t,
-    isCurrentUser: r,
-    widgetType: i,
-    applicationId: l,
-    disableInteraction: c = false
-  } = e, b = null == t ? true : t.filter(e => null != (0, d.zK)(e)), y = (0, a.useRef)(new Map), x = (0, a.useRef)(null), v = (0, a.useRef)(null), [h, _] = (0, a.useState)(0), [P, w] = (0, a.useState)(false), {
-    trackUserProfileAction: S
-  } = (0, o.KZ)(), I = r && !c && (0, s.M8)(i), E = j(x, v, b, y, _);
-  if ((0, a.useEffect)(() => (E(), window.addEventListener("resize", E), () => {
-      window.removeEventListener("resize", E)
-    }), [E, null == b ? true : b.join("")]), null == b || 0 === b.length) return I ? (0, n.jsx)("div", {
-    className: g.tagListContainer,
-    children: (0, n.jsx)(u.Z, {
-      tags: t,
-      widgetType: i,
-      applicationId: l,
-      ref: v
-    })
-  }) : null;
-  let T = P ? b : b.slice(0, b.length - h);
+    tags: r,
+    isCurrentUser: a,
+    widgetType: o,
+    applicationId: s,
+    disableInteraction: p = false
+  } = e, v = null != (t = null == r ? true : r.filter(e => null != (0, f.zK)(e))) ? t : [], x = v.length > 0, h = Object.values(i._).length, _ = a && !p && (0, u.M8)(o) && v.length < h, {
+    trackUserProfileAction: P
+  } = (0, c.KZ)(), w = (0, l.useRef)(new Map), S = (0, l.useRef)(null), E = (0, l.useRef)(null), [I, T] = (0, l.useState)(0), [N, k] = (0, l.useState)(false), C = y(S, E, v, w, T);
+  if ((0, l.useEffect)(() => (C(), window.addEventListener("resize", C), () => {
+      window.removeEventListener("resize", C)
+    }), [C, null == v ? true : v.join("")]), !x && !_) return null;
+  let A = N ? v : v.slice(0, v.length - I);
   return (0, n.jsxs)("div", {
-    className: g.tagListContainer,
-    children: [(0, n.jsx)("ul", {
-      className: g.tagList,
-      "aria-label": f.intl.string(f.t.EfjTi4),
-      children: T.map(e => (0, n.jsx)(p, {
-        tag: e,
-        isCurrentUser: r,
-        applicationId: l,
-        widgetType: i,
-        ref: t => {
-          null != t && y.current.set(e, t)
+    className: b.tagListContainer,
+    children: [x && (0, n.jsxs)(n.Fragment, {
+      children: [(0, n.jsx)("ul", {
+        className: b.tagList,
+        "aria-label": g.intl.string(g.t.EfjTi4),
+        children: A.map(e => (0, n.jsx)(m, {
+          tag: e,
+          isCurrentUser: a,
+          applicationId: s,
+          widgetType: o,
+          ref: t => {
+            null != t && w.current.set(e, t)
+          },
+          disableInteraction: p
+        }, e))
+      }), I > 0 && (N ? (0, n.jsx)(j, {
+        onClick: () => {
+          k(false), P({
+            action: "COLLAPSE_GAME_TAGS"
+          })
+        }
+      }) : (0, n.jsx)(O, {
+        numHidden: I,
+        onClick: () => {
+          k(true), P({
+            action: "EXPAND_GAME_TAGS"
+          })
         },
-        disableInteraction: c
-      }, e))
-    }), h > 0 && (P ? (0, n.jsx)(O, {
-      onClick: () => {
-        w(false), S({
-          action: "COLLAPSE_GAME_TAGS"
-        })
-      }
-    }) : (0, n.jsx)(m, {
-      numHidden: h,
-      onClick: () => {
-        w(true), S({
-          action: "EXPAND_GAME_TAGS"
-        })
-      },
-      ref: x,
-      disableInteraction: c
-    })), r && !c && (0, n.jsx)(u.Z, {
-      tags: t,
-      widgetType: i,
-      applicationId: l,
-      ref: v
+        ref: S,
+        disableInteraction: p
+      }))]
+    }), _ && (0, n.jsx)(d.Z, {
+      tags: r,
+      widgetType: o,
+      applicationId: s,
+      ref: E
     })]
   })
 }
-let p = e => {
+let m = e => {
     let {
       tag: t,
       isCurrentUser: r,
-      applicationId: a,
-      widgetType: l,
+      applicationId: l,
+      widgetType: i,
       disableInteraction: o,
-      ref: u
-    } = e, b = (0, d.zK)(t);
-    if (null == b) return null;
+      ref: c
+    } = e, d = (0, f.zK)(t);
+    if (null == d) return null;
     let {
       getText: p,
       icon: m
-    } = b, O = () => {
-      (0, s.RZ)(l, a, t), (0, c.pQ)({
+    } = d, O = () => {
+      (0, u.RZ)(i, l, t), (0, s.pQ)({
         action: "REMOVE_GAME_TAGS"
       })
     };
     return (0, n.jsxs)("li", {
-      className: g.tag,
-      ref: u,
+      className: b.tag,
+      ref: c,
       children: [(0, n.jsx)(m, {
         size: "xxs"
-      }), (0, n.jsx)(i.Text, {
+      }), (0, n.jsx)(a.Text, {
         variant: "text-xxs/medium",
         color: "text-secondary",
         children: p()
-      }), r && !o && (0, n.jsx)(i.ua7, {
-        text: f.intl.string(f.t.Otv9fH),
+      }), r && !o && (0, n.jsx)(a.ua7, {
+        text: g.intl.string(g.t.Otv9fH),
         children: e => {
           var t, r;
-          return (0, n.jsx)(i.P3F, (t = function(e) {
+          return (0, n.jsx)(a.P3F, (t = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var r = null != arguments[t] ? arguments[t] : {},
                 n = Object.keys(r);
@@ -125,12 +121,13 @@ let p = e => {
             return e
           }({}, e), r = r = {
             onClick: O,
-            className: g.removeButton,
-            "aria-label": f.intl.formatToPlainString(f.t.GCn1nZ, {
+            className: b.removeButton,
+            "aria-label": g.intl.formatToPlainString(g.t.GCn1nZ, {
               tag: p()
             }),
-            children: (0, n.jsx)(i.Dio, {
-              size: "xxs"
+            children: (0, n.jsx)(a.Dio, {
+              size: "xxs",
+              color: "currentColor"
             })
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
             var r = Object.keys(e);
@@ -146,61 +143,61 @@ let p = e => {
       })]
     })
   },
-  m = e => {
+  O = e => {
     let {
       numHidden: t,
       onClick: r,
-      disableInteraction: a,
-      ref: l
+      disableInteraction: l,
+      ref: i
     } = e;
-    return a ? (0, n.jsx)("div", {
-      className: g.expandButton,
-      children: (0, n.jsx)(i.Text, {
+    return l ? (0, n.jsx)("div", {
+      className: b.expandButton,
+      children: (0, n.jsx)(a.Text, {
         variant: "text-xxs/medium",
-        color: "text-secondary",
+        color: "none",
         children: "+".concat(t)
       })
-    }) : (0, n.jsx)(i.DY3, {
-      className: g.buttonContainer,
-      text: f.intl.string(f.t.mriLXF),
-      children: (0, n.jsx)(i.P3F, {
+    }) : (0, n.jsx)(a.DY3, {
+      className: b.buttonContainer,
+      text: g.intl.string(g.t.mriLXF),
+      children: (0, n.jsx)(a.P3F, {
         onClick: r,
-        className: g.expandButton,
-        innerRef: l,
-        "aria-label": f.intl.string(f.t.mriLXF),
-        children: (0, n.jsx)(i.Text, {
+        className: b.expandButton,
+        innerRef: i,
+        "aria-label": g.intl.string(g.t.mriLXF),
+        children: (0, n.jsx)(a.Text, {
           variant: "text-xxs/medium",
-          color: "text-secondary",
+          color: "none",
           children: "+".concat(t)
         })
       })
     })
   },
-  O = e => {
+  j = e => {
     let {
       onClick: t
     } = e;
-    return (0, n.jsx)(i.DY3, {
-      className: g.buttonContainer,
-      text: f.intl.string(f.t.z9VPra),
-      children: (0, n.jsx)(i.P3F, {
+    return (0, n.jsx)(a.DY3, {
+      className: b.buttonContainer,
+      text: g.intl.string(g.t.z9VPra),
+      children: (0, n.jsx)(a.P3F, {
         onClick: t,
-        className: g.collapseButton,
-        "aria-label": f.intl.string(f.t.z9VPra),
-        children: (0, n.jsx)(l.Z, {
-          direction: l.Z.Directions.LEFT,
+        className: b.collapseButton,
+        "aria-label": g.intl.string(g.t.z9VPra),
+        children: (0, n.jsx)(o.Z, {
+          direction: o.Z.Directions.LEFT,
           width: 12,
           height: 12,
-          className: g.caret
+          className: b.caret
         })
       })
     })
   },
-  j = (e, t, r, n, i) => (0, a.useCallback)(() => {
-    var a, l, o, c;
+  y = (e, t, r, n, i) => (0, l.useCallback)(() => {
+    var l, a, o, c;
     if (null == r) return void i(0);
-    let s = null != (o = null == (a = e.current) ? true : a.getBoundingClientRect().width) ? o : 0,
-      u = null != (c = null == (l = t.current) ? true : l.getBoundingClientRect().width) ? c : 0,
+    let s = null != (o = null == (l = e.current) ? true : l.getBoundingClientRect().width) ? o : 0,
+      u = null != (c = null == (a = t.current) ? true : a.getBoundingClientRect().width) ? c : 0,
       d = u > 0 ? 8 : 4,
       f = 0,
       g = 0,

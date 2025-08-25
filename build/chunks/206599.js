@@ -16,8 +16,8 @@ var Chunk647438 = require("./647438.js"),
 function d(e) {
   var t, r;
   let {
-    bump: a,
-    bumpMultiple: l,
+    bump: l,
+    bumpMultiple: a,
     gameIds: o
   } = (0, s.b)(), {
     remove: c,
@@ -38,18 +38,18 @@ function d(e) {
       return null != (t = o[e]) ? t : []
     }, [o, e]),
     p = n.useCallback(t => {
-      a(t, e)
-    }, [a, e]),
+      l(t, e)
+    }, [l, e]),
     {
       gameDataMap: m,
       isGameFetching: O
     } = (0, u.F)(b),
     [j, y] = n.useState([]),
-    x = (r = b.map(e => O(e)), n.useMemo(() => r.join("\x1f"), [r]));
+    v = (r = b.map(e => O(e)), n.useMemo(() => r.join("\x1f"), [r]));
   return n.useEffect(() => {
     let t = b.filter(e => i.Z.noDataAvailable(e));
-    t.length > 0 && l(t, e)
-  }, [m, x, b, e, l]), n.useEffect(() => {
+    t.length > 0 && a(t, e)
+  }, [m, v, b, e, a]), n.useEffect(() => {
     y(b.map(e => {
       let t = m[e];
       return {
@@ -66,7 +66,7 @@ function d(e) {
 }
 
 function f(e, t) {
-  let [r, i, u, d] = (0, a.Wu)([c.Z], () => [c.Z.suggestedFetchAttempted, c.Z.suggestedFetchError, c.Z.suggestedGameIds, c.Z.suggestedFetchIsLoading]), {
+  let [r, i, u, d] = (0, l.Wu)([c.Z], () => [c.Z.suggestedFetchAttempted, c.Z.suggestedFetchError, c.Z.suggestedGameIds, c.Z.suggestedFetchIsLoading]), {
     onLoad: f
   } = (0, s.b)();
   n.useEffect(() => {
@@ -77,6 +77,6 @@ function f(e, t) {
     var e, r;
     if (!g) return;
     let n = t.map(e => e.games).flat();
-    f(i ? [] : (null != (e = u.suggestedGamesIds) ? e : []).filter(l.z6), i ? [] : (null != (r = u.suggestedWishlistGamesIds) ? r : []).filter(l.z6), n)
+    f(i ? [] : (null != (e = u.suggestedGamesIds) ? e : []).filter(a.z6), i ? [] : (null != (r = u.suggestedWishlistGamesIds) ? r : []).filter(a.z6), n)
   }, [g])
 }

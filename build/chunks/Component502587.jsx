@@ -48,7 +48,7 @@ function g(e, t) {
 function b(e) {
   let {
     widget: t
-  } = e, b = a.useRef(null), p = e => {
+  } = e, b = l.useRef(null), p = e => {
     if (e.shiftKey) {
       (0, c.y8)(t.type), (0, s.L$)(u.qb.WIDGET_REMOVED);
       return
@@ -76,7 +76,7 @@ function b(e) {
       return (0, n.jsx)(i.v2r, {
         navId: "user-profile-widget-context-menu",
         onClose: () => {
-          (0, l.Zy)(), t()
+          (0, a.Zy)(), t()
         },
         onSelect: () => {},
         "aria-label": d.intl.string(d.t.xpSHSk),

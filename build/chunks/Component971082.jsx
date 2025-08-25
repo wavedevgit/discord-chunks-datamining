@@ -16,27 +16,27 @@ function u(e) {
   var {
     label: t,
     visuallyHideLabel: r = false,
-    className: a,
-    size: u = l.EFr.SIZE_16,
+    className: l,
+    size: u = a.EFr.SIZE_16,
     maxUsers: d = 4
   } = e, f = function(e, t) {
     if (null == e) return {};
-    var r, n, a = function(e, t) {
+    var r, n, l = function(e, t) {
       if (null == e) return {};
-      var r, n, a = {},
+      var r, n, l = {},
         i = Object.keys(e);
-      for (n = 0; n < i.length; n++) r = i[n], t.indexOf(r) >= 0 || (a[r] = e[r]);
-      return a
+      for (n = 0; n < i.length; n++) r = i[n], t.indexOf(r) >= 0 || (l[r] = e[r]);
+      return l
     }(e, t);
     if (Object.getOwnPropertySymbols) {
       var i = Object.getOwnPropertySymbols(e);
-      for (n = 0; n < i.length; n++) r = i[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r])
+      for (n = 0; n < i.length; n++) r = i[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r])
     }
-    return a
+    return l
   }(e, ["label", "visuallyHideLabel", "className", "size", "maxUsers"]);
   let g = (0, o.Dt)();
   return (0, n.jsxs)("div", {
-    className: i()(a, s.container),
+    className: i()(l, s.container),
     children: [(0, n.jsx)(c.Z, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var r = null != arguments[t] ? arguments[t] : {},
@@ -59,10 +59,10 @@ function u(e) {
       overflowCountClassName: s.overflowButton,
       size: u,
       maxUsers: d
-    }, f)), r ? (0, n.jsx)(l.nn4, {
+    }, f)), r ? (0, n.jsx)(a.nn4, {
       id: g,
       children: t
-    }) : (0, n.jsx)(l.Text, {
+    }) : (0, n.jsx)(a.Text, {
       variant: "text-xs/normal",
       color: "text-secondary",
       id: g,

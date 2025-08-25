@@ -68,7 +68,7 @@ let h = e => {
     element: t,
     attributes: n,
     children: a
-  } = e, u = (0, s.vt)(), f = (0, s.UE)(), p = (0, s._7)(), h = o()(c.inlineElement, c.optionPill, c.inlineFlex, {
+  } = e, u = (0, s.vt)(), f = (0, s.UE)(), p = (0, s._7)(), h = o()(c.inlineElement, c.optionPill, c.gameMention, {
     [c.selectedPill]: f && u,
     [c.erroredPill]: t.error
   }), m = i.useCallback(() => {

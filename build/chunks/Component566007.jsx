@@ -18,26 +18,26 @@ function o(e) {
     disableInteraction: s
   } = e, u = function(e, t) {
     if (null == e) return {};
-    var r, n, a = function(e, t) {
+    var r, n, l = function(e, t) {
       if (null == e) return {};
-      var r, n, a = {},
+      var r, n, l = {},
         i = Object.keys(e);
-      for (n = 0; n < i.length; n++) r = i[n], t.indexOf(r) >= 0 || (a[r] = e[r]);
-      return a
+      for (n = 0; n < i.length; n++) r = i[n], t.indexOf(r) >= 0 || (l[r] = e[r]);
+      return l
     }(e, t);
     if (Object.getOwnPropertySymbols) {
       var i = Object.getOwnPropertySymbols(e);
-      for (n = 0; n < i.length; n++) r = i[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r])
+      for (n = 0; n < i.length; n++) r = i[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r])
     }
-    return a
+    return l
   }(e, ["user", "widget", "isGameFetching", "containerClassName", "disableInteraction"]);
   let d = r.games[0];
-  return (0, n.jsx)(a.Z, {
+  return (0, n.jsx)(l.Z, {
     userId: t.id,
     widget: r,
     className: c,
     disableInteraction: s,
-    children: null != d ? (0, n.jsx)(l.Z, function(e) {
+    children: null != d ? (0, n.jsx)(a.Z, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var r = null != arguments[t] ? arguments[t] : {},
           n = Object.keys(r);

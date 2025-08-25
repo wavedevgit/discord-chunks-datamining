@@ -96,7 +96,7 @@ let u = {
   skill_level: {
     getLabel: () => Chunk388032.intl.string(Chunk388032.t.MKqADA),
     type: "radio",
-    tags: [Chunk379405._.BETTER_THAN_YOU, Chunk379405._.NOOB, Chunk379405._.LEARNING_THE_ROPES, Chunk379405._.GETTING_GOOD, Chunk379405._.SKILLED, Chunk379405._.EXPERT, Chunk379405._.MASTER]
+    tags: [Chunk379405._.NOOB, Chunk379405._.LEARNING_THE_ROPES, Chunk379405._.GETTING_GOOD, Chunk379405._.SKILLED, Chunk379405._.EXPERT, Chunk379405._.MASTER, Chunk379405._.BETTER_THAN_YOU]
   },
   rating: {
     getLabel: () => Chunk388032.intl.string(Chunk388032.t["7/umur"]),

@@ -174,7 +174,7 @@ function D(e, t) {
   });
   let n = e,
     r = false;
-  if (null != t.call && (n = n.set("call", L(t.call, e.timestamp))), null != t.attachments && (n = n.set("attachments", x(t))), null != t.content && "" !== t.content && (n = n.set("content", t.content)), null != t.embeds && (n = n.set("embeds", j(t))), null != t.message_snapshots && (n = n.set("messageSnapshots", M(t))), t.pinned !== n.pinned && (n = n.set("pinned", t.pinned)), null != n.webhookId && null != t.author && (n = n.set("author", new f.Z(t.author))), null != t.flags && t.flags !== n.flags && (n = n.set("flags", t.flags)), null != t.components && (n = n.set("components", (0, s.uZ)(t.components, {
+  if (null != t.call && (n = n.set("call", L(t.call, e.timestamp))), null != t.attachments && (n = n.set("attachments", x(t))), null != t.application && (n = n.set("application", t.application)), null != t.activity && (n = n.set("activity", t.activity)), null != t.content && "" !== t.content && (n = n.set("content", t.content)), null != t.embeds && (n = n.set("embeds", j(t))), null != t.message_snapshots && (n = n.set("messageSnapshots", M(t))), t.pinned !== n.pinned && (n = n.set("pinned", t.pinned)), null != n.webhookId && null != t.author && (n = n.set("author", new f.Z(t.author))), null != t.flags && t.flags !== n.flags && (n = n.set("flags", t.flags)), null != t.components && (n = n.set("components", (0, s.uZ)(t.components, {
       includeEmojiSrc: false
     }))), null != t.role_subscription_data && (n = n.set("roleSubscriptionData", t.role_subscription_data)), null != t.reactions) {
     var i;

@@ -30,8 +30,8 @@ function m(e) {
     headingId: i,
     widget: u,
     disableInteraction: d = false
-  } = e, f = (0, l.e7)([c.default], () => c.default.getId() === r), m = (0, s.kQ)(u), j = p[u.type](), y = f && u.games.length > 0 ? (t = u.type, 1 === a.k[t] ? g.intl.string(g.t.wiXdER) : g.intl.format(g.t["zR1+09"], {
-    numGames: a.k[t]
+  } = e, f = (0, a.e7)([c.default], () => c.default.getId() === r), m = (0, s.kQ)(u), j = p[u.type](), y = f && u.games.length > 0 ? (t = u.type, 1 === l.k[t] ? g.intl.string(g.t.wiXdER) : g.intl.format(g.t["zR1+09"], {
+    numGames: l.k[t]
   })) : true;
   return (0, n.jsxs)("div", {
     className: b.headerRow,
@@ -60,10 +60,10 @@ function O(e) {
   let {
     widget: t,
     disabled: r,
-    disabledInteraction: a,
+    disabledInteraction: l,
     userId: i
-  } = e, o = (0, l.e7)([c.default], () => c.default.getId() === i), g = (0, s.vI)(t.type) && t.games.some(e => null != e.comment);
-  return a ? null : o ? (0, n.jsxs)("div", {
+  } = e, o = (0, a.e7)([c.default], () => c.default.getId() === i), g = (0, s.vI)(t.type) && t.games.some(e => null != e.comment);
+  return l ? null : o ? (0, n.jsxs)("div", {
     className: b.actions,
     children: [(0, n.jsx)(u.Z, {
       disabled: r,

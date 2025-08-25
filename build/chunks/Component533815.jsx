@@ -16,16 +16,16 @@ function u(e) {
   let {
     game: t,
     widgetType: r,
-    iconSize: a = "refresh_sm",
+    iconSize: l = "refresh_sm",
     className: u
   } = e, d = () => {
     (0, o.$b)(r, t.applicationId)
   };
-  return (0, n.jsx)(l.ua7, {
+  return (0, n.jsx)(a.ua7, {
     text: c.intl.string(c.t.HUvyDQ),
     children: e => {
       var t, r;
-      return (0, n.jsx)(l.P3F, (t = function(e) {
+      return (0, n.jsx)(a.P3F, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {},
             n = Object.keys(r);
@@ -46,10 +46,10 @@ function u(e) {
         onClick: d,
         "aria-label": c.intl.string(c.t.HUvyDQ),
         className: i()(u, s.clickable),
-        children: (0, n.jsx)(l.XHJ, {
-          size: a,
+        children: (0, n.jsx)(a.XHJ, {
+          size: l,
           className: s.icon,
-          color: l.TVs.colors.STATUS_DANGER
+          color: a.TVs.colors.STATUS_DANGER
         })
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
         var r = Object.keys(e);

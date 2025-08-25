@@ -1,7 +1,7 @@
 /** Chunk was on 21585 **/
 /** chunk id: 778414, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  C: () => I,
+  C: () => E,
   Z: () => P
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -49,18 +49,18 @@ function P(e) {
     widget: t
   } = e, r = function(e, t) {
     if (null == e) return {};
-    var r, n, a = function(e, t) {
+    var r, n, l = function(e, t) {
       if (null == e) return {};
-      var r, n, a = {},
+      var r, n, l = {},
         i = Object.keys(e);
-      for (n = 0; n < i.length; n++) r = i[n], t.indexOf(r) >= 0 || (a[r] = e[r]);
-      return a
+      for (n = 0; n < i.length; n++) r = i[n], t.indexOf(r) >= 0 || (l[r] = e[r]);
+      return l
     }(e, t);
     if (Object.getOwnPropertySymbols) {
       var i = Object.getOwnPropertySymbols(e);
-      for (n = 0; n < i.length; n++) r = i[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r])
+      for (n = 0; n < i.length; n++) r = i[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r])
     }
-    return a
+    return l
   }(e, ["widget"]);
   switch (t.type) {
     case i.l.FAVORITE_GAMES:
@@ -106,13 +106,13 @@ function S(e) {
   } = e, o = (0, b.Z)(t.id), {
     widgets: p,
     isGameFetching: m
-  } = (0, g.Z)(o), O = (0, l.e7)([u.default], () => u.default.getId() === t.id), j = (() => {
-    let [e, t] = (0, l.Wu)([d.Z], () => [d.Z.ipCountryCode, d.Z.ipCountryCodeRequest]), r = (0, s.U)();
-    return a.useEffect(() => {
+  } = (0, g.Z)(o), O = (0, a.e7)([u.default], () => u.default.getId() === t.id), j = (() => {
+    let [e, t] = (0, a.Wu)([d.Z], () => [d.Z.ipCountryCode, d.Z.ipCountryCodeRequest]), r = (0, s.U)();
+    return l.useEffect(() => {
       null == e && null == t && r && (0, c.GE)()
     }, [e, t, r]), "GB" === e && r
-  })(), v = 0 === p.length && O;
-  return ((0, f.J)(O, p), v) ? (0, n.jsx)(x.Z, {}) : (0, n.jsxs)(n.Fragment, {
+  })(), x = 0 === p.length && O;
+  return ((0, f.J)(O, p), x) ? (0, n.jsx)(v.Z, {}) : (0, n.jsxs)(n.Fragment, {
     children: [j && (0, n.jsx)(w, {}), p.map(e => (0, n.jsx)(P, {
       widget: e,
       user: t,
@@ -123,7 +123,7 @@ function S(e) {
   })
 }
 
-function I(e) {
+function E(e) {
   return (0, n.jsx)(o.Ttm, {
     className: h.scroller,
     fade: true,
