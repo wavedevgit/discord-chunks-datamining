@@ -206,11 +206,11 @@ function Z(e, t) {
   return null != r && "" !== r && i.push(M(r)), i
 }
 
-function V(e) {
+function F(e) {
   return Z(e).map(e => "text" === e.type ? e.text : e.emojiName).join("")
 }
 
-function F(e) {
+function V(e) {
   if (!j(e)) return null;
   let t = Z(e, true).map(e => "text" === e.type ? e.text : e.emojiName).join("");
   return t === e ? null : t
@@ -241,9 +241,9 @@ let K = {
   getByCategory: L,
   contentHasUnicodeOrEmoji: j,
   translateInlineEmojiToSurrogates: k,
-  maybeTranslateSurrogatesToInlineEmoji: F,
+  maybeTranslateSurrogatesToInlineEmoji: V,
   findInlineEmojisFromSurrogates: Z,
-  translateSurrogatesToInlineEmoji: V,
+  translateSurrogatesToInlineEmoji: F,
   convertNameToSurrogate: H,
   convertSurrogateToName: Y,
   convertShortcutToName: function e(e) {

@@ -129,12 +129,12 @@ function er(e) {
     placeholder: x,
     placeholderVersion: j,
     sourceMetadata: M
-  } = e, [U, B] = a.useState(b), Z = null != d && null == d.proxyURL, F = a.useCallback(() => B(false), [B]), H = e => {
-    e.preventDefault(), e.stopPropagation(), null == I || I(false), B(true), Z && (w.S.dispatch(G.CkL.VIDEO_EMBED_PLAYBACK_STARTED), w.S.subscribeOnce(G.CkL.VIDEO_EMBED_PLAYBACK_STARTED, F))
+  } = e, [U, B] = a.useState(b), Z = null != d && null == d.proxyURL, V = a.useCallback(() => B(false), [B]), H = e => {
+    e.preventDefault(), e.stopPropagation(), null == I || I(false), B(true), Z && (w.S.dispatch(G.CkL.VIDEO_EMBED_PLAYBACK_STARTED), w.S.subscribeOnce(G.CkL.VIDEO_EMBED_PLAYBACK_STARTED, V))
   };
   a.useEffect(() => () => {
-    Z && w.S.unsubscribe(G.CkL.VIDEO_EMBED_PLAYBACK_STARTED, F)
-  }, [Z, F]);
+    Z && w.S.unsubscribe(G.CkL.VIDEO_EMBED_PLAYBACK_STARTED, V)
+  }, [Z, V]);
   let {
     width: Y,
     height: W
@@ -149,7 +149,7 @@ function er(e) {
   Y = Math.max(K.width, Q), W = Math.max(K.height, J);
   let z = (0, R.q)(u);
   if (null != d && null != d.proxyURL) return (0, i.jsx)("div", {
-    className: s()(V.embedVideo, r),
+    className: s()(F.embedVideo, r),
     children: m({
       poster: z,
       src: d.proxyURL,
@@ -206,7 +206,7 @@ function er(e) {
       className: r,
       style: n,
       children: (0, i.jsx)("div", {
-        className: s()(V.embedVideo, o),
+        className: s()(F.embedVideo, o),
         style: a,
         children: (0, i.jsx)(k.ZP, {
           provider: f,
@@ -221,7 +221,7 @@ function er(e) {
     })
   }
   return (0, i.jsxs)("div", {
-    className: s()(V.embedVideo, r),
+    className: s()(F.embedVideo, r),
     style: p ? {
       maxWidth: Y
     } : {
@@ -235,17 +235,17 @@ function er(e) {
       maxWidth: Y,
       maxHeight: W,
       responsive: p,
-      containerClassName: V.embedVideoImageComponent,
-      imageClassName: V.embedVideoImageComponentInner,
+      containerClassName: F.embedVideoImageComponent,
+      imageClassName: F.embedVideoImageComponentInner,
       placeholder: x,
       placeholderVersion: j,
       onClick: E && null != d ? H : null,
       sourceMetadata: M,
       analyticsSource: "EmbedVideo"
     }), (0, i.jsx)("div", {
-      className: V.embedVideoActions,
+      className: F.embedVideoActions,
       children: (0, i.jsx)("div", {
-        className: V.centerContent,
+        className: F.centerContent,
         children: E ? (0, i.jsx)(v.Z, {
           onPlay: null != d ? H : null,
           externalURL: D,
@@ -278,7 +278,7 @@ function ei(e) {
     sourceMetadata: E
   } = e;
   return (0, i.jsx)(y.Z, {
-    className: s()(V.embedVideo, t),
+    className: s()(F.embedVideo, t),
     original: n,
     poster: (0, R.q)(l),
     src: (0, R.q)(c),
@@ -374,7 +374,7 @@ class ea extends(r = Chunk647438.PureComponent) {
       height: n
     } = e;
     return (0, i.jsx)(I.ZT, {
-      className: V.contentPlaceholder,
+      className: F.contentPlaceholder,
       width: t,
       height: n,
       opacity: .3
@@ -447,7 +447,7 @@ class ea extends(r = Chunk647438.PureComponent) {
           disableAnimations: l
         } = i;
         return a({
-          containerClassName: V.embedThumbnail,
+          containerClassName: F.embedThumbnail,
           src: (0, R.q)(t),
           original: t.url,
           width: t.width,
@@ -490,15 +490,15 @@ class ea extends(r = Chunk647438.PureComponent) {
         return e.map((e, r) => {
           let [a, o] = e;
           return (0, i.jsxs)("div", {
-            className: V.embedField,
+            className: F.embedField,
             style: {
               gridColumn: en(r, n)
             },
             children: [(0, i.jsx)("div", {
-              className: V.embedFieldName,
+              className: F.embedFieldName,
               children: a
             }), (0, i.jsx)("div", {
-              className: V.embedFieldValue,
+              className: F.embedFieldValue,
               children: o
             })]
           }, "".concat(t, "-").concat(r))
@@ -565,16 +565,16 @@ class ea extends(r = Chunk647438.PureComponent) {
       })
     };
     return (0, i.jsx)("div", {
-      className: s()(F.hoverButtonGroup, {
-        [F.nonMediaMosaicItem]: !r,
-        [F.forceShowHover]: this.state.showImageAppMenu
+      className: s()(V.hoverButtonGroup, {
+        [V.nonMediaMosaicItem]: !r,
+        [V.forceShowHover]: this.state.showImageAppMenu
       }),
       children: (0, i.jsx)(f.Z, {
         toggleShowMenu: o,
         showMenu: this.state.showImageAppMenu,
         channelId: a,
-        className: s()(F.hoverButton, {
-          [F.selected]: this.state.showImageAppMenu
+        className: s()(V.hoverButton, {
+          [V.selected]: this.state.showImageAppMenu
         }),
         imageUrl: n,
         mimeType: t
@@ -726,7 +726,7 @@ class ea extends(r = Chunk647438.PureComponent) {
           disableAnimations: s
         } = e;
         return (0, i.jsx)(ei, {
-          className: V.embedMedia,
+          className: F.embedMedia,
           href: r,
           thumbnail: a,
           video: o,
@@ -966,7 +966,7 @@ class ea extends(r = Chunk647438.PureComponent) {
           bottom: 4
         }
       },
-      className: V.embedSuppressButton,
+      className: F.embedSuppressButton,
       onClick: e,
       "aria-label": Z.intl.string(Z.t.GT3fNz),
       children: (0, i.jsx)(c.Dio, {
@@ -1114,11 +1114,11 @@ class ea extends(r = Chunk647438.PureComponent) {
         a = t.getMaxWidth(true);
       return (0, i.jsx)("div", {
         "aria-hidden": e,
-        className: s()(V.inlineMediaEmbed, r, {
-          [V.spoilerAttachment]: n === m.wk.SPOILER,
-          [V.hiddenExplicitAttachment]: t.shouldObscure,
-          [V.isHidden]: e,
-          [V.justifyAuto]: t.usesJustifiedAutoStyle()
+        className: s()(F.inlineMediaEmbed, r, {
+          [F.spoilerAttachment]: n === m.wk.SPOILER,
+          [F.hiddenExplicitAttachment]: t.shouldObscure,
+          [F.isHidden]: e,
+          [F.justifyAuto]: t.usesJustifiedAutoStyle()
         }),
         style: {
           maxWidth: a
@@ -1143,11 +1143,11 @@ class ea extends(r = Chunk647438.PureComponent) {
           footer: p
         } = t.renderAll();
       return (0, i.jsx)("article", {
-        className: s()(n, V.embedFull, H.markup, {
-          [V.isHidden]: e,
-          [V.spoilerEmbed]: a === m.wk.SPOILER,
-          [V.hiddenExplicitEmbed]: t.shouldObscure,
-          [V.justifyAuto]: t.usesJustifiedAutoStyle()
+        className: s()(n, F.embedFull, H.markup, {
+          [F.isHidden]: e,
+          [F.spoilerEmbed]: a === m.wk.SPOILER,
+          [F.hiddenExplicitEmbed]: t.shouldObscure,
+          [F.justifyAuto]: t.usesJustifiedAutoStyle()
         }),
         "aria-hidden": e,
         style: {
@@ -1155,11 +1155,11 @@ class ea extends(r = Chunk647438.PureComponent) {
           maxWidth: t.getMaxWidth(false)
         },
         children: (0, i.jsx)("div", {
-          className: V.gridContainer,
+          className: F.gridContainer,
           children: (0, i.jsxs)("div", {
             className: s()({
-              [V.grid]: true,
-              [V.hasThumbnail]: null != f
+              [F.grid]: true,
+              [F.hasThumbnail]: null != f
             }),
             children: [null != r ? t.renderSuppressButton(r) : null, o, l, c, u, d, _, f, p]
           })

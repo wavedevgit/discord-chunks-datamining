@@ -90,8 +90,8 @@ let N = 200,
       [G, B] = i.useState(0),
       {
         isPlaying: Z,
-        playSound: V,
-        stopSound: F,
+        playSound: F,
+        stopSound: V,
         preloadSound: H
       } = (0, d.Z)(null != U ? U[G] : null, {
         soundId: t.id
@@ -105,11 +105,11 @@ let N = 200,
       K = i.useCallback(() => {
         f.default.track(y.rMx.VOICE_FILTER_PREVIEW_PLAYED, S({
           voice_filter_id: t.id
-        }, (0, h.w)(a))), V({
+        }, (0, h.w)(a))), F({
           volume: .5,
           outputChannel: O.w.VOICE
         }), (.25 > Math.random() || G > 0) && null != U && B(e => (e + 1) % U.length)
-      }, [a, V, G, U, t.id]),
+      }, [a, F, G, U, t.id]),
       z = null != R ? v.intl.string(R.name) : "";
     return (0, r.jsxs)("div", {
       className: o()(I.filter, Y, {
@@ -208,7 +208,7 @@ let N = 200,
           className: o()([I.hoverButtonCircle, I.previewButton], {
             [I.visible]: Z
           }),
-          onClick: Z ? F : K,
+          onClick: Z ? V : K,
           "aria-label": v.intl.formatToPlainString(v.t.gDzvjY, {
             voiceFilterName: z
           }),

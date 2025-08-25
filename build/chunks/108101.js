@@ -39,8 +39,8 @@ var Chunk687249 = require("./687249.js"),
   G = "[object String]",
   B = "[object Symbol]",
   Z = "[object WeakMap]",
-  V = "[object ArrayBuffer]",
-  F = "[object DataView]",
+  F = "[object ArrayBuffer]",
+  V = "[object DataView]",
   H = "[object Float32Array]",
   Y = "[object Float64Array]",
   W = "[object Int8Array]",
@@ -80,10 +80,10 @@ function ee(e, t, n, N, R, P) {
   }) : y(e) && e.forEach(function(r, i) {
     w.set(i, ee(r, t, n, i, e, P))
   });
-  var V = M ? j ? _ : f : j ? keysIn : I,
-    F = U ? true : V(e);
-  return i(F || e, function(r, i) {
-    F && (r = e[i = r]), a(w, i, ee(r, t, n, i, e, P))
+  var F = M ? j ? _ : f : j ? keysIn : I,
+    V = U ? true : F(e);
+  return i(V || e, function(r, i) {
+    V && (r = e[i = r]), a(w, i, ee(r, t, n, i, e, P))
   }), w
 }
-$[C] = $[N] = $[V] = $[F] = $[R] = $[P] = $[H] = $[Y] = $[W] = $[K] = $[z] = $[L] = $[j] = $[k] = $[M] = $[U] = $[G] = $[B] = $[q] = $[X] = $[Q] = $[J] = true, $[w] = $[D] = $[Z] = false, module.exports = ee
+$[C] = $[N] = $[F] = $[V] = $[R] = $[P] = $[H] = $[Y] = $[W] = $[K] = $[z] = $[L] = $[j] = $[k] = $[M] = $[U] = $[G] = $[B] = $[q] = $[X] = $[Q] = $[J] = true, $[w] = $[D] = $[Z] = false, module.exports = ee

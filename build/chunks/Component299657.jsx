@@ -52,8 +52,8 @@ let M = function(e) {
     G = (0, s.e7)([I.Z], () => I.Z.hasFetchedPaymentSources),
     B = (0, s.e7)([v.default], () => v.default.getCurrentUser()),
     Z = null == B ? true : B.id,
-    V = (0, w.N)(),
-    F = (0, P.Ng)(),
+    F = (0, w.N)(),
+    V = (0, P.Ng)(),
     H = (0, g.V)(L.nS),
     [Y, W] = i.useState(true),
     K = i.useRef(0),
@@ -75,8 +75,8 @@ let M = function(e) {
       load_duration_ms: K.current
     })
   }, [a, Y]), i.useEffect(() => {
-    n && (null != V || null != F) && (0, N.ab)(V, F)
-  }, [n, V, F]);
+    n && (null != F || null != V) && (0, N.ab)(F, V)
+  }, [n, F, V]);
   let Q = (0, s.e7)([O.Z], () => O.Z.enabled),
     J = t === L.EZ.ApplicationStoreHome,
     $ = Q ? (0, r.jsx)(f.Z, {}) : n ? (0, r.jsx)(E.c8, {}) : J && z ? (0, r.jsx)(h.Gt, {

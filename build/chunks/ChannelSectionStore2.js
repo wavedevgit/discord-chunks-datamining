@@ -174,7 +174,7 @@ function Z(e) {
   return n
 }
 
-function V(e) {
+function F(e) {
   let {
     channel: t
   } = e, n = R[t.parent_id];
@@ -182,7 +182,7 @@ function V(e) {
   delete R[t.parent_id]
 }
 
-function F(e) {
+function V(e) {
   var t;
   let {
     channel: n
@@ -280,6 +280,6 @@ let q = new z(Chunk570140.Z, {
   SIDEBAR_CLOSE_GUILD: U,
   CHANNEL_DELETE: Z,
   CHANNEL_SELECT: K,
-  THREAD_CREATE: F,
-  THREAD_DELETE: V
+  THREAD_CREATE: V,
+  THREAD_DELETE: F
 })

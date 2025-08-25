@@ -94,12 +94,12 @@ let R = new Chunk710845.Z("OverlayRenderStore"),
   B = false,
   Z = [];
 
-function V(e, t, n) {
+function F(e, t, n) {
   let r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : h.l6.Info;
   h.JC.addModuleBreadcrumb(t, null != n ? n : {}, h.C7.Renderer, e, r)
 }
 
-function F() {
+function V() {
   return w
 }
 
@@ -108,7 +108,7 @@ function H() {
 }
 
 function Y() {
-  return H() || F()
+  return H() || V()
 }
 
 function W(e) {
@@ -240,12 +240,12 @@ function et(e, t) {
   };
   if (!(0, E.NW)("determineOverlayMethod", false)) {
     let e = (0, y.qT)(i),
-      t = e.enabledLegacy && F();
+      t = e.enabledLegacy && V();
     return A(T({}, e), {
       overlayMethod: t ? e.overlayMethod : g.gl.Disabled
     })
   }
-  if (!H() && F()) {
+  if (!H() && V()) {
     let e = (0, y.qT)(i);
     return A(T({}, e), {
       overlayMethod: e.enabledLegacy ? e.overlayMethod : g.gl.Disabled
@@ -254,7 +254,7 @@ function et(e, t) {
   if (!(0, p.supportsOutOfProcess)()) return A(T({}, (0, y.qT)(i)), {
     source: g.d0.NO_OUT_OF_PROCESS_SUPPORT
   });
-  if (!a.enabledOOP && a.enabledLegacy) return F() ? A(T({}, (0, y.qT)(i)), {
+  if (!a.enabledOOP && a.enabledLegacy) return V() ? A(T({}, (0, y.qT)(i)), {
     source: g.d0.LEGACY_ENABLED
   }) : A(T({}, a), {
     overlayMethod: g.gl.Disabled,
@@ -268,7 +268,7 @@ function et(e, t) {
     case l.Jx.MAXIMIZED:
     case l.Jx.BORDERLESS_FULLSCREEN: {
       let e = a.enabledOOP && H(),
-        t = a.enabledLegacy && F(),
+        t = a.enabledLegacy && V(),
         n = s ? g.gl.OutOfProcessLimitedInteraction : g.gl.OutOfProcess;
       return A(T({}, a), {
         overlayMethod: e ? n : t ? (0, y.qT)(i).overlayMethod : g.gl.Disabled
@@ -276,7 +276,7 @@ function et(e, t) {
     }
     case l.Jx.FULLSCREEN: {
       let e = (0, y.qT)(i),
-        t = e.enabledLegacy && F();
+        t = e.enabledLegacy && V();
       return A(T({}, e), {
         overlayMethod: t ? e.overlayMethod : g.gl.Disabled
       })
@@ -299,7 +299,7 @@ async function en(e) {
   if (!Y()) return void R.verbose("Skipping track for pid ".concat(e, " - overlay is disabled"));
   let t = await ee(e);
   if (null == t) return void R.error("Failed to track game ".concat(e));
-  V(e, "game_tracking_starting", {
+  F(e, "game_tracking_starting", {
     game_name: t.gameName,
     fullscreen_type: t.fullscreenType
   }), Q(e, "state", g.mM.WAITING_FOR_SCREEN_TYPE_RESOLUTION), eL.emitChange(), R.verbose("Determining initial overlay method for pid ".concat(e));
@@ -395,7 +395,7 @@ async function el(e) {
       shouldSwitchToOutOfProcess: s,
       isForcedInProcess: o,
       isForcedOutOfProcess: a,
-      legacyEnabled: F(),
+      legacyEnabled: V(),
       overlayEnabled: H()
     }), i.overlayMethod) {
     case g.gl.OutOfProcess:
@@ -403,7 +403,7 @@ async function el(e) {
       (s && !o || a) && await eu(e, i);
       break;
     case g.gl.Hook:
-      (l && !a || o || F()) && await ec(e, i);
+      (l && !a || o || V()) && await ec(e, i);
       break;
     case g.gl.Disabled:
       await er(e)
@@ -423,7 +423,7 @@ function eu(e, t) {
 async function ed(e) {
   let t = false;
   for (let n of e) t = await el(n) || t, await (0, a._v)(16);
-  t && (R.info("determineFullscreenOverlayMethodSwaps has changes"), eL.emitChange(), V(null, "fullscreen_overlay_method_swap_changes", {
+  t && (R.info("determineFullscreenOverlayMethodSwaps has changes"), eL.emitChange(), F(null, "fullscreen_overlay_method_swap_changes", {
     tracked_game_pids: Array.from(e)
   }))
 }
@@ -500,7 +500,7 @@ function eE(e) {
     let e = W(t);
     (null == e ? true : e.legacyEnabled) !== n && Q(t, "legacyEnabled", n), (null == e ? true : e.oopEnabled) !== r && Q(t, "oopEnabled", null != r && r)
   }
-  let i = n && F(),
+  let i = n && V(),
     a = null != r && r && H();
   return i || a ? (R.verbose("handleGameToggleOverlay: game enabled changed", {
     pid: t,
@@ -559,7 +559,7 @@ function eN(e) {
 }
 
 function eR(e) {
-  X(e.pid) && Q(e.pid, "successfullyShown", true), V(e.pid, "overlay_successfully_shown", {
+  X(e.pid) && Q(e.pid, "successfullyShown", true), F(e.pid, "overlay_successfully_shown", {
     pid: e.pid
   });
   let t = W(e.pid);
@@ -621,11 +621,11 @@ class ex extends(r = Chunk442837.ZP.Store) {
   getGlobalEnabledStatus() {
     return {
       oopEnabled: H(),
-      legacyEnabled: F()
+      legacyEnabled: V()
     }
   }
   getAnyGlobalEnabledOverlay() {
-    return H() || F()
+    return H() || V()
   }
   getPerGameEnabledStatus(e) {
     if (null == e) return {

@@ -490,7 +490,7 @@ function Z(e) {
   t.setLocked(e.locked)
 }
 
-function V(e) {
+function F(e) {
   var t;
   if (x.verbose("OVERLAY_NOTIFICATION_EVENT", e), null == e.gameName && null == e.gameId) return;
   let n = G.getByName(null != (t = e.gameName) ? t : e.gameId);
@@ -498,7 +498,7 @@ function V(e) {
   n.notificationAnalytics.increment(e.notificationType, e.action)
 }
 
-function F(e) {
+function V(e) {
   var t;
   if (x.verbose("OVERLAY_WIDGET_CHANGED", e), null == e.gameName && null == e.gameId) return;
   let n = G.getByName(null != (t = e.gameName) ? t : e.gameId);
@@ -626,9 +626,9 @@ class et extends Chunk147913.Z {
       MESSAGE_CREATE: ee.handleMessageCreate
     } : {
       OVERLAY_FOCUSED: H,
-      OVERLAY_NOTIFICATION_EVENT: V,
+      OVERLAY_NOTIFICATION_EVENT: F,
       OVERLAY_SET_INPUT_LOCKED: Z,
-      OVERLAY_WIDGET_CHANGED: F,
+      OVERLAY_WIDGET_CHANGED: V,
       OVERLAY_MESSAGE_EVENT_ACTION: W,
       RUNNING_GAMES_CHANGE: B,
       SOUNDBOARD_SET_OVERLAY_ENABLED: Y,

@@ -162,7 +162,7 @@ function P(e) {
     isBurstReaction: U,
     rowPosition: G,
     inNitroLockedSection: B
-  } = e, [Z, V] = i.useState(""), F = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), H = (0, s.e7)([d.ZP], () => d.ZP.getDisambiguatedEmojiContext(p), [p]), Y = i.useRef(null), {
+  } = e, [Z, F] = i.useState(""), V = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), H = (0, s.e7)([d.ZP], () => d.ZP.getDisambiguatedEmojiContext(p), [p]), Y = i.useRef(null), {
     emoji: W,
     size: K,
     isDisabled: z,
@@ -211,10 +211,10 @@ function P(e) {
       onMouseEnter: t,
       onMouseLeave: n,
       onClick: e => {
-        if (null != Y.current && null != G && null != M && !e.shiftKey && null != W.name && U && !F && j) {
+        if (null != Y.current && null != G && null != M && !e.shiftKey && null != W.name && U && !V && j) {
           let e = null == W.id ? _.ZP.convertNameToSurrogate(W.name) : W.name,
             t = Y.current.getBoundingClientRect();
-          t.x = G.x + (q + 1) * K, V(N(q, f)), (0, m.U)(M, e, W.id, t)
+          t.x = G.x + (q + 1) * K, F(N(q, f)), (0, m.U)(M, e, W.id, t)
         }
         X(e)
       },

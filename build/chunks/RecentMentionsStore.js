@@ -119,7 +119,7 @@ function Z(e) {
   }
 }
 
-function V(e) {
+function F(e) {
   let {
     hasMoreAfter: t,
     messages: n,
@@ -132,7 +132,7 @@ function V(e) {
   }), w = false, D = t, j = (0, l.zO)(), L = true
 }
 
-function F() {
+function V() {
   w = false
 }
 
@@ -337,8 +337,8 @@ class ea extends(r = Chunk442837.ZP.Store) {
 S(ea, "displayName", "RecentMentionsStore");
 let eo = new ea(Chunk570140.Z, {
   LOAD_RECENT_MENTIONS: G,
-  LOAD_RECENT_MENTIONS_SUCCESS: V,
-  LOAD_RECENT_MENTIONS_FAILURE: F,
+  LOAD_RECENT_MENTIONS_SUCCESS: F,
+  LOAD_RECENT_MENTIONS_FAILURE: V,
   SET_RECENT_MENTIONS_FILTER: X,
   CLEAR_MENTIONS: en,
   TRUNCATE_MENTIONS: er,

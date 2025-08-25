@@ -96,7 +96,7 @@ function ea(e) {
 }
 
 function eo(e) {
-  let t = V.ZP.getSelfEmbeddedActivityForLocation(e);
+  let t = F.ZP.getSelfEmbeddedActivityForLocation(e);
   null != t && ed({
     location: t.location,
     applicationId: t.applicationId,
@@ -142,7 +142,7 @@ async function es(e) {
           customId: E,
           referrerId: g
         }
-      }), (0, F.g)()) {
+      }), (0, V.g)()) {
       let e = await eI(a, null != r ? r : true);
       s.Z.dispatch({
         type: "EMBEDDED_ACTIVITY_LAUNCH_SET_PROXY_TICKET",
@@ -269,7 +269,7 @@ async function ec(e) {
   };
   if (f) {
     let e, n = E.Z.getApplication(t),
-      r = V.ZP.getCurrentEmbeddedActivity();
+      r = F.ZP.getCurrentEmbeddedActivity();
     (null == r ? true : r.applicationId) != null && (e = E.Z.getApplication(null == r ? true : r.applicationId));
     let i = j.default.getCurrentUser();
     if (null != i && !await (0, H.p)({
@@ -374,7 +374,7 @@ async function eu(e) {
       reason: e
     }
   }
-  let h = V.ZP.getCurrentEmbeddedActivity();
+  let h = F.ZP.getCurrentEmbeddedActivity();
   if ((null == h ? true : h.applicationId) != null && (t = E.Z.getApplication(null == h ? true : h.applicationId)), !(!o || await (0, H.p)({
       applicationId: n,
       application: f,
@@ -435,7 +435,7 @@ function ed(e) {
     location: t,
     applicationId: n,
     showFeedback: r = true
-  } = e, i = V.ZP.getSelfEmbeddedActivityForLocation(t);
+  } = e, i = F.ZP.getSelfEmbeddedActivityForLocation(t);
   s.Z.dispatch({
     type: "EMBEDDED_ACTIVITY_CLOSE",
     applicationId: n,
@@ -448,7 +448,7 @@ function ed(e) {
     var o;
     let e = O.Z.getSelectedParticipantId(a),
       t = null == (o = j.default.getCurrentUser()) ? true : o.id,
-      r = V.ZP.getEmbeddedActivitiesForChannel(a).find(e => e.applicationId === n);
+      r = F.ZP.getEmbeddedActivitiesForChannel(a).find(e => e.applicationId === n);
     if (null == r || null == t || "" === t) return;
     e === (0, y.gN)({
       applicationId: n,
@@ -523,9 +523,9 @@ async function eh(e) {
   let {
     guildId: o,
     force: l = false
-  } = e, c = V.ZP.getShelfActivities(o), u = c.map(e => E.Z.getApplication(e.application_id)).filter(G.lm);
-  if (!l && !V.ZP.shouldFetchShelf(o)) {
-    if (null == (t = V.ZP.getShelfFetchStatus(o)) ? true : t.isFetching) {
+  } = e, c = F.ZP.getShelfActivities(o), u = c.map(e => E.Z.getApplication(e.application_id)).filter(G.lm);
+  if (!l && !F.ZP.shouldFetchShelf(o)) {
+    if (null == (t = F.ZP.getShelfFetchStatus(o)) ? true : t.isFetching) {
       let e, t, n = new Promise(t => {
           e = ep.bind(null, o, t), s.Z.subscribe("EMBEDDED_ACTIVITY_FETCH_SHELF_SUCCESS", e)
         }),

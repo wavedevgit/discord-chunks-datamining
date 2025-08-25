@@ -2,7 +2,7 @@
 /** chunk id: 165583, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => V,
+  ZP: () => F,
   dz: () => U,
   eQ: () => j
 }), require("./388685.js");
@@ -238,7 +238,7 @@ function Z(e) {
   })
 }
 
-function V(e) {
+function F(e) {
   let {
     headingText: t,
     context: i,

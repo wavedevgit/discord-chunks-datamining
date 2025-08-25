@@ -176,12 +176,12 @@ function T(e) {
   i.useEffect(() => {
     !L && (k.size === U.size && Array.from(U).every(e => k.has(e)) || Z())
   }, [L, k, U, Z]);
-  let V = c.UNb;
-  D ? V = c.gzz : 0 === g && (V = c.s6k);
-  let F = (0, c.cYr)({
+  let F = c.UNb;
+  D ? F = c.gzz : 0 === g && (F = c.s6k);
+  let V = (0, c.cYr)({
     value: k,
     onChange: e => M(e),
-    onSelectInteraction: V
+    onSelectInteraction: F
   });
   return (0, r.jsxs)(i.Fragment, {
     children: [(0, r.jsx)("div", {
@@ -208,7 +208,7 @@ function T(e) {
         renderOptionValue: e => D ? (0, r.jsx)(I, {
           options: e
         }) : (0, r.jsx)(v, E({}, e[0]))
-      }, F))
+      }, V))
     }), null == P || w ? null : (0, r.jsx)(f.st, y(E({}, (0, f.c4)(P)), {
       className: m.error
     }))]

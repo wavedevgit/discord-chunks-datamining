@@ -42,12 +42,12 @@ let A = 10,
   G = /dev:\/\/[\w-.~:\/?#\[\]@!$&'()*+,;=%]+/i,
   B = q(window.GLOBAL_ENV.INVITE_HOST),
   Z = q(window.GLOBAL_ENV.GUILD_TEMPLATE_HOST),
-  V = q(null != (o = window.GLOBAL_ENV.WEBAPP_ENDPOINT) ? o : "//canary.".concat(Chunk981631.$R1)),
-  F = q("//canary.".concat(Chunk981631.$R1)),
+  F = q(null != (o = window.GLOBAL_ENV.WEBAPP_ENDPOINT) ? o : "//canary.".concat(Chunk981631.$R1)),
+  V = q("//canary.".concat(Chunk981631.$R1)),
   H = q("//ptb.".concat(Chunk981631.$R1)),
   Y = q("discordapp.com"),
   W = q("discord.com"),
-  K = [Chunk226951.Z.escape(null != (s = B.host) ? s : ""), Chunk226951.Z.escape(null != (l = Z.host) ? l : ""), Chunk226951.Z.escape(null != (c = V.host) ? c : ""), Chunk226951.Z.escape(null != (u = Y.host) ? u : ""), Chunk226951.Z.escape(null != (d = W.host) ? d : "")].filter(Boolean),
+  K = [Chunk226951.Z.escape(null != (s = B.host) ? s : ""), Chunk226951.Z.escape(null != (l = Z.host) ? l : ""), Chunk226951.Z.escape(null != (c = F.host) ? c : ""), Chunk226951.Z.escape(null != (u = Y.host) ? u : ""), Chunk226951.Z.escape(null != (d = W.host) ? d : "")].filter(Boolean),
   z = RegExp("((https?://[^ ]*)|^|[^/][^/.])(".concat(K.join("|"), ")"), "g");
 
 function q(e) {
@@ -89,7 +89,7 @@ function ee(e, t) {
 
 function et(e) {
   var t, n, r, i;
-  return null != (i = null != (r = null != (n = null != (t = ee(V, e)) ? t : ee(F, e)) ? n : ee(H, e)) ? r : ee(Y, e)) ? i : ee(W, e)
+  return null != (i = null != (r = null != (n = null != (t = ee(F, e)) ? t : ee(V, e)) ? n : ee(H, e)) ? r : ee(Y, e)) ? i : ee(W, e)
 }
 
 function en(e) {
@@ -113,7 +113,7 @@ function er(e) {
   };
   let o = ee(B, a),
     s = ee(Z, a),
-    l = null != (i = null != (r = null != (n = null != (t = ee(V, a)) ? t : ee(F, a)) ? n : ee(H, a)) ? r : ee(Y, a)) ? i : ee(W, a);
+    l = null != (i = null != (r = null != (n = null != (t = ee(F, a)) ? t : ee(V, a)) ? n : ee(H, a)) ? r : ee(Y, a)) ? i : ee(W, a);
   return {
     url: a,
     inviteHostRemainingPath: o,
@@ -127,7 +127,7 @@ function ei(e) {
     let r = es(e);
     if (null == r) returnfalse;
     if ($(B, r)) returntrue;
-    if ([V, F, H, Y, W].some(e => $(e, r))) {
+    if ([F, V, H, Y, W].some(e => $(e, r))) {
       var t, n;
       return null != (n = null == (t = r.pathname) ? true : t.toUpperCase().includes(T.g.INVITE)) && n
     }

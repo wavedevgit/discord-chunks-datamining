@@ -40,8 +40,8 @@
     G = "Sony",
     B = "Xiaomi",
     Z = "Zebra",
-    V = "Facebook",
-    F = "Chromium OS",
+    F = "Facebook",
+    V = "Chromium OS",
     H = "Mac OS",
     Y = " Browser",
     W = function(e, t) {
@@ -176,7 +176,7 @@
         [h, f],
         [/((?:fban\/fbios|fb_iab\/fb4a)(?!.+fbav)|;fbav\/([\w\.]+);)/i],
         [
-          [f, V], h
+          [f, F], h
         ],
         [/(Klarna)\/([\w\.]+)/i, /(kakao(?:talk|story))[\/ ]([\w\.]+)/i, /(naver)\(.*?(\d+\.[\w\.]+).*\)/i, /safari (line)\/([\w\.]+)/i, /\b(line)\/([\w\.]+)\/iab/i, /(alipay)client\/([\w\.]+)/i, /(twitter)(?:and| f.+e\/([\w\.]+))/i, /(chromium|instagram|snapchat)[\/ ]([-\w\.]+)/i],
         [f, h],
@@ -650,7 +650,7 @@
         [/(pico) (4|neo3(?: link|pro)?)/i],
         [p, d, [_, O]],
         [/; (quest( \d| pro)?)/i],
-        [d, [p, V],
+        [d, [p, F],
           [_, O]
         ],
         [/(tesla)(?: qtcarbrowser|\/[-\w\.]+)/i],
@@ -724,7 +724,7 @@
         [h, [f, R + "cast"]],
         [/(cros) [\w]+(?:\)| ([\w\.]+)\b)/i],
         [
-          [f, F], h
+          [f, V], h
         ],
         [/panasonic;(viera)/i, /(netrange)mmh/i, /(nettv)\/(\d+\.[\w\.]+)/i, /(nintendo|playstation) ([wids345portablevuch]+)/i, /(xbox); +xbox ([^\);]+)/i, /\b(joli|palm)\b ?(?:os)?\/?([\w\.]*)/i, /(mint)[\/\(\) ]?(\w*)/i, /(mageia|vectorlinux)[; ]/i, /([kxln]?ubuntu|debian|suse|opensuse|gentoo|arch(?= linux)|slackware|fedora|mandriva|centos|pclinuxos|red ?hat|zenwalk|linpus|raspbian|plan 9|minix|risc os|contiki|deepin|manjaro|elementary os|sabayon|linspire)(?: gnu\/linux)?(?: enterprise)?(?:[- ]linux)?(?:-gnu)?[-\/ ]?(?!chrom|package)([-\w\.]*)/i, /(hurd|linux) ?([\w\.]*)/i, /(gnu) ?([\w\.]*)/i, /\b([-frentopcghs]{0,5}bsd|dragonfly)[\/ ]?(?!amd|[ix346]{1,2}86)([\w\.]*)/i, /(haiku) (\w+)/i],
         [f, h],
@@ -757,7 +757,7 @@
         return e[f] = r, e[h] = r, J.call(e, g, O.engine), e
       }, this.getOS = function() {
         var e = {};
-        return e[f] = r, e[h] = r, J.call(e, g, O.os), v && !e[f] && y && y.platform && "Unknown" != y.platform && (e[f] = y.platform.replace(/chrome os/i, F).replace(/macos/i, H)), e
+        return e[f] = r, e[h] = r, J.call(e, g, O.os), v && !e[f] && y && y.platform && "Unknown" != y.platform && (e[f] = y.platform.replace(/chrome os/i, V).replace(/macos/i, H)), e
       }, this.getResult = function() {
         return {
           ua: this.getUA(),

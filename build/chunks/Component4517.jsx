@@ -2,7 +2,7 @@
 /** chunk id: 4517, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => V
+  Z: () => F
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -196,8 +196,8 @@ let U = Chunk647438.forwardRef(function(e, t) {
       G = (L && (null == _ || null != p) ? N._v : N.hT) + k + U,
       B = N.YF + k + U,
       Z = i.useRef(null),
-      V = i.useRef(null),
       F = i.useRef(null),
+      V = i.useRef(null),
       H = i.useRef(G),
       Y = i.useRef(B),
       W = i.useRef(null),
@@ -219,9 +219,9 @@ let U = Chunk647438.forwardRef(function(e, t) {
       }
     }));
     i.useLayoutEffect(() => {
-      if (q(true), null == V.current || null == F.current || !ee) return;
-      let e = V.current.getBoundingClientRect().height,
-        t = F.current.getBoundingClientRect().height;
+      if (q(true), null == F.current || null == V.current || !ee) return;
+      let e = F.current.getBoundingClientRect().height,
+        t = V.current.getBoundingClientRect().height;
       $(t > e), H.current = e, Y.current = t, ei({
         maxHeight: "".concat(Math.min(X ? H.current : Y.current, X ? G : B), "px")
       })
@@ -267,12 +267,12 @@ let U = Chunk647438.forwardRef(function(e, t) {
       }),
       eu = null == el || "" === p ? ec : el,
       ed = (0, r.jsxs)("div", {
-        ref: V,
+        ref: F,
         className: o()(P.content, L && P.singleLineTextClamp),
         children: [eo, es, eu]
       }),
       ef = (0, r.jsxs)("div", {
-        ref: F,
+        ref: V,
         className: o()(P.content, P.unclamped),
         children: [eo, es, eu]
       }),
@@ -432,7 +432,7 @@ function Z(e) {
     }))
   })
 }
-let V = Chunk647438.forwardRef(function(e, t) {
+let F = Chunk647438.forwardRef(function(e, t) {
   var n, i;
   let {
     user: a,

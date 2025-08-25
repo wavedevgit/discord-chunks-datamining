@@ -279,7 +279,7 @@ let I = /\b\B/,
     begin: S,
     relevance: 0
   };
-var V = Object.freeze({
+var F = Object.freeze({
   __proto__: null,
   APOS_STRING_MODE: D,
   BACKSLASH_ESCAPE: w,
@@ -331,7 +331,7 @@ var V = Object.freeze({
   UNDERSCORE_TITLE_MODE: Z
 });
 
-function F(e, t) {
+function V(e, t) {
   "." === e.input[e.index - 1] && t.ignoreMatch()
 }
 
@@ -340,7 +340,7 @@ function H(e, t) {
 }
 
 function Y(e, t) {
-  t && e.beginKeywords && (e.begin = "\\b(" + e.beginKeywords.split(" ").join("|") + ")(?!\\.)(?=\\b|\\s)", e.__beforeBegin = F, e.keywords = e.keywords || e.beginKeywords, delete e.beginKeywords, true === e.relevance && (e.relevance = 0))
+  t && e.beginKeywords && (e.begin = "\\b(" + e.beginKeywords.split(" ").join("|") + ")(?!\\.)(?=\\b|\\s)", e.__beforeBegin = V, e.keywords = e.keywords || e.beginKeywords, delete e.beginKeywords, true === e.relevance && (e.relevance = 0))
 }
 
 function W(e, t) {
@@ -984,8 +984,8 @@ let em = r,
         either: E,
         optional: h,
         anyNumberOfTimes: p
-      }, V) "object" == typeof V[n] && t(V[n]);
-    return Object.assign(e, V), e
+      }, F) "object" == typeof F[n] && t(F[n]);
+    return Object.assign(e, F), e
   },
   eO = ey({});
 eO.newInstance = () => ey({}), module.exports = eO, eO.HighlightJS = eO, eO.default = eO

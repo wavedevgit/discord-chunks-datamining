@@ -27,8 +27,8 @@ module.exports = function(e, t, n, p, h, m, g, E) {
     G = null,
     B = 0,
     Z = new r.Buf16(i + 1),
-    V = new r.Buf16(i + 1),
-    F = null,
+    F = new r.Buf16(i + 1),
+    V = null,
     H = 0;
   for (R = 0; R <= i; R++) Z[R] = 0;
   for (P = 0; P < p; P++) Z[t[n + P]]++;
@@ -38,11 +38,11 @@ module.exports = function(e, t, n, p, h, m, g, E) {
   for (x < w && (x = w), k = 1, R = 1; R <= i; R++)
     if (k <<= 1, (k -= Z[R]) < 0) return false;
   if (k > 0 && (e === s || 1 !== D)) return false;
-  for (R = 1, V[1] = 0; R < i; R++) V[R + 1] = V[R] + Z[R];
-  for (P = 0; P < p; P++) 0 !== t[n + P] && (g[V[t[n + P]]++] = P);
-  if (e === s ? (G = F = g, T = 19) : e === l ? (G = u, B -= 257, F = d, H -= 257, T = 256) : (G = f, F = _, T = false), U = 0, P = 0, R = w, I = m, L = x, j = 0, O = false, v = (M = 1 << x) - 1, e === l && M > a || e === c && M > o) return 1;
+  for (R = 1, F[1] = 0; R < i; R++) F[R + 1] = F[R] + Z[R];
+  for (P = 0; P < p; P++) 0 !== t[n + P] && (g[F[t[n + P]]++] = P);
+  if (e === s ? (G = V = g, T = 19) : e === l ? (G = u, B -= 257, V = d, H -= 257, T = 256) : (G = f, V = _, T = false), U = 0, P = 0, R = w, I = m, L = x, j = 0, O = false, v = (M = 1 << x) - 1, e === l && M > a || e === c && M > o) return 1;
   for (;;) {
-    S = R - j, g[P] < T ? (A = 0, C = g[P]) : g[P] > T ? (A = F[H + g[P]], C = G[B + g[P]]) : (A = 96, C = 0), b = 1 << R - j, w = y = 1 << L;
+    S = R - j, g[P] < T ? (A = 0, C = g[P]) : g[P] > T ? (A = V[H + g[P]], C = G[B + g[P]]) : (A = 96, C = 0), b = 1 << R - j, w = y = 1 << L;
     do h[I + (U >> j) + (y -= b)] = S << 24 | A << 16 | C; while (0 !== y);
     for (b = 1 << R - 1; U & b;) b >>= 1;
     if (0 !== b ? (U &= b - 1, U += b) : U = 0, P++, 0 == --Z[R]) {

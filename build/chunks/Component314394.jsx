@@ -13,8 +13,6 @@ var Chunk603963 = require("./603963.jsx"),
 function s() {
   return (0, Chunk951288.jsx)(Chunk603963.Z, {
     webSetting: Chunk726985.s6.VOICE_AND_VIDEO_SOUNDS,
-    children: (0, Chunk951288.jsx)(Chunk894939.Z, {
-      refreshStyles: true
-    })
+    children: (0, Chunk951288.jsx)(Chunk894939.Z, {})
   })
 }

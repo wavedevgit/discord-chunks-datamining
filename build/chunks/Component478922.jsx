@@ -109,8 +109,8 @@ function g(e, t, n) {
         onItemVisibilityChange: B
       } = n,
       Z = h(n, ["onScroll", "dir", "sections", "columns", "getItemKey", "getItemHeight", "getSectionHeight", "chunkSize", "renderSection", "renderItem", "getSectionProps", "itemGutter", "removeEdgeItemGutters", "sectionGutter", "padding", "paddingVertical", "paddingHorizontal", "fade", "className", "style", "maxContentWidth", "renderAccessory", "onItemVisibilityChange"]);
-    let V = i.useRef(null),
-      F = i.useRef(null),
+    let F = i.useRef(null),
+      V = i.useRef(null),
       H = i.useRef({}),
       [Y, W] = i.useState(false),
       {
@@ -174,8 +174,8 @@ function g(e, t, n) {
       getScrollerState: q
     }, (0, c.Ue)(K, q, ei)), [K, q, ea, ei, eo]);
     let el = (0, i.useCallback)(e => {
-      er(1), null == V.current ? W(true) : clearTimeout(V.current), V.current = setTimeout(() => {
-        V.current = null, W(false)
+      er(1), null == F.current ? W(true) : clearTimeout(F.current), F.current = setTimeout(() => {
+        F.current = null, W(false)
       }, 200), null != E && E(e)
     }, [E, er]);
     return i.useLayoutEffect(() => {
@@ -191,13 +191,13 @@ function g(e, t, n) {
       style: (0, c.uT)(M)
     }, Z), {
       children: [null != (g = null == G ? true : G(ee)) ? g : null, (0, i.useMemo)(() => (0, r.jsx)(l.J, {
-        containerRef: F,
+        containerRef: V,
         children: (0, r.jsx)("div", {
           style: {
             height: ee
           },
           className: u.content,
-          ref: F,
+          ref: V,
           children: Object.keys($).map(e => {
             var t;
             let n = (0, c.t$)(e),

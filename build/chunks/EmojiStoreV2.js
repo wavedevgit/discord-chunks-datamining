@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   De: () => ep,
-  ZP: () => eF
+  ZP: () => eV
 }), require("./388685.js"), require("./825670.js"), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./539854.js"), require("./642613.js"), require("./804061.js"), require("./704826.js");
 var r, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -186,7 +186,7 @@ function e_(e) {
       return null != (t = M.ZP.getByName(e)) ? t : ec(e)
     },
     afterCompute: () => {
-      e(), er = [...q], a().some(ei, e => e.usableEmojis.length > 0) || er.splice(q.indexOf(V.UX.CUSTOM), 1)
+      e(), er = [...q], a().some(ei, e => e.usableEmojis.length > 0) || er.splice(q.indexOf(F.UX.CUSTOM), 1)
     },
     numFrequentlyItems: J
   })
@@ -461,9 +461,9 @@ function ew(e, t) {
   });
   if (k.Xb.trackExposure({
       location: "populateInitialFrecencyData"
-    }), a().isEmpty(e) && a().isEmpty(X.pendingUsages) && v.Z.hasLoaded(F.yP.FRECENCY_AND_FAVORITES_SETTINGS))
+    }), a().isEmpty(e) && a().isEmpty(X.pendingUsages) && v.Z.hasLoaded(V.yP.FRECENCY_AND_FAVORITES_SETTINGS))
     for (let e of ["thumbsup", "thumbsup", "eyes", "eyes", "laughing", "laughing", "watermelon", "fork_and_knife", "yum", "weary", "tired_face", "poop", "100"]) eh.track(e);
-  if ((n || r) && a().isEmpty(t) && a().isEmpty(X.emojiReactionPendingUsages) && v.Z.hasLoaded(F.yP.FRECENCY_AND_FAVORITES_SETTINGS))
+  if ((n || r) && a().isEmpty(t) && a().isEmpty(X.emojiReactionPendingUsages) && v.Z.hasLoaded(V.yP.FRECENCY_AND_FAVORITES_SETTINGS))
     for (let e of ["100", "100", "thumbsup", "thumbsup", "thumbsdown", "thumbsdown", "heart", "point_up", "eyes", "weary", "laughing", "white_check_mark", "x"]) em.track(e)
 }
 
@@ -488,7 +488,7 @@ function ex(e) {
     },
     wasSaved: n
   } = e;
-  if (h.Z.setEmojiLocale(O.default.locale), t !== F.yP.FRECENCY_AND_FAVORITES_SETTINGS || !n) returnfalse;
+  if (h.Z.setEmojiLocale(O.default.locale), t !== V.yP.FRECENCY_AND_FAVORITES_SETTINGS || !n) returnfalse;
   X.pendingUsages = [], X.emojiReactionPendingUsages = []
 }
 
@@ -579,7 +579,7 @@ function eZ(e) {
   } = e;
   eo = t
 }
-class eV extends(r = Chunk442837.ZP.PersistedStore) {
+class eF extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     this.waitFor(f.Z, T.Z, I.ZP, A.Z, O.default, b.Z, U.Z, N.default, m.Z, S.Z), null != e && (null != e.pendingUsages && (X.pendingUsages = e.pendingUsages), null != e.emojiReactionPendingUsages && (X.emojiReactionPendingUsages = e.emojiReactionPendingUsages), null != e.expandedSectionsByGuildIds && (X.expandedSectionsByGuildIds = new Set(e.expandedSectionsByGuildIds))), this.syncWith([v.Z], eD), this.syncWith([m.Z], eL)
   }
@@ -732,8 +732,8 @@ class eV extends(r = Chunk442837.ZP.PersistedStore) {
     return null != t && t.favoriteEmojisWithoutFetchingLatest.length > 0
   }
 }
-H(eV, "displayName", "EmojiStore"), H(eV, "persistKey", "EmojiStoreV2"), H(eV, "migrations", [e => Y({}, e)]);
-let eF = new eV(Chunk570140.Z, {
+H(eF, "displayName", "EmojiStore"), H(eF, "persistKey", "EmojiStoreV2"), H(eF, "migrations", [e => Y({}, e)]);
+let eV = new eF(Chunk570140.Z, {
   LOGOUT: eI,
   BACKGROUND_SYNC: eT,
   CONNECTION_OPEN: eO,

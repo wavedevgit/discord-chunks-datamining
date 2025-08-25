@@ -73,13 +73,13 @@ function R(e, t) {
     G = x,
     B = null;
   if (null != D && null != x) {
-    var Z, V, F;
+    var Z, F, V;
     let e = v.Z.getMessage(x, D),
       t = E.Z.getBasicChannel(x);
-    k = null != (F = null == t ? true : t.guild_id) ? F : null;
+    k = null != (V = null == t ? true : t.guild_id) ? V : null;
     let n = b.Z.getGuild(k),
       r = (null == e || null == (Z = e.messageReference) ? true : Z.guild_id) != null && (null == e ? true : e.webhookId) != null && (null == e ? true : e.hasFlag(A.iLy.IS_CROSSPOST)) && null != k;
-    r && (null == e || null == (V = e.messageReference) ? true : V.guild_id) != null ? (U = e.messageReference.message_id, G = e.messageReference.channel_id, B = e.messageReference.guild_id) : B = k;
+    r && (null == e || null == (F = e.messageReference) ? true : F.guild_id) != null ? (U = e.messageReference.message_id, G = e.messageReference.channel_id, B = e.messageReference.guild_id) : B = k;
     let i = (null == t ? true : t.type) === A.d4z.GUILD_ANNOUNCEMENT && (null == n ? true : n.features.has(A.oNc.COMMUNITY)) === true,
       a = (null == e ? true : e.hasFlag(A.iLy.EPHEMERAL)) === true;
     M = null != e && !a && (r || i)

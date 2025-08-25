@@ -59,7 +59,7 @@ function f(e) {
 }
 
 function _(e) {
-  return V && e instanceof Set
+  return F && e instanceof Set
 }
 
 function p(e) {
@@ -262,8 +262,8 @@ require.d(exports, {
 });
 var U, G, B = "undefined" != typeof Symbol && "symbol" == typeof Symbol("x"),
   Z = "undefined" != typeof Map,
-  V = "undefined" != typeof Set,
-  F = "undefined" != typeof Proxy && true !== Proxy.revocable && "undefined" != typeof Reflect,
+  F = "undefined" != typeof Set,
+  V = "undefined" != typeof Proxy && true !== Proxy.revocable && "undefined" != typeof Reflect,
   H = B ? Symbol.for("immer-nothing") : ((U = {})["immer-nothing"] = true, U),
   Y = B ? Symbol.for("immer-draftable") : "__$immer_draftable",
   W = B ? Symbol.for("immer-state") : "__$immer_state",
@@ -344,7 +344,7 @@ o(J, function(e, t) {
 var ee = new(function() {
     function e(e) {
       var t = this;
-      this.O = F, this.D = true, this.produce = function(e, n, i) {
+      this.O = V, this.D = true, this.produce = function(e, n, i) {
         if ("function" == typeof e && "function" != typeof n) {
           var o, s = n;
           n = e;
@@ -410,7 +410,7 @@ var ee = new(function() {
     }, exports.setAutoFreeze = function(e) {
       this.D = e
     }, exports.setUseProxies = function(e) {
-      e && !F && r(20), this.O = e
+      e && !V && r(20), this.O = e
     }, exports.applyPatches = function(e, t) {
       for (n = t.length - 1; n >= 0; n--) {
         var n, r = t[n];

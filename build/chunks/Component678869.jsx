@@ -116,37 +116,37 @@ function L(e) {
       activity: G,
       currentEntry: B,
       artist: Z,
-      title: V,
-      user: F
+      title: F,
+      user: V
     } = (0, v.pi)(L),
     {
       primaryColor: H,
       secondaryColor: Y
     } = (0, O.Z)(null == U ? true : U.src),
     W = (0, y.Z)(A.ABu.SPOTIFY),
-    K = (0, o.e7)([u.Z, p.default], () => (null == G ? true : G.type) === A.IIU.LISTENING && null != F ? (0, f.Z)(u.Z, p.default, F, G) : true, [G, F], s.Z),
+    K = (0, o.e7)([u.Z, p.default], () => (null == G ? true : G.type) === A.IIU.LISTENING && null != V ? (0, f.Z)(u.Z, p.default, V, G) : true, [G, V], s.Z),
     z = i.useCallback(() => {
       var e;
-      if (null == R || null == F) return;
+      if (null == R || null == V) return;
       let t = null == (e = G.timestamps) ? true : e.start,
         n = (0, E.T_)(null != t ? {
           start: t
         } : L, Date.now());
       return (0, b.CR)({
-        user: F,
+        user: V,
         channel: R,
         mediaImageSrc: null == U ? true : U.src,
         artist: Z,
         description: D({
           artist: Z,
-          media: V
-        }, R, F),
+          media: F
+        }, R, V),
         colors: [H, Y],
         badges: (0, b.jE)({
           timestamp: n
         })
       })
-    }, [G, Z, R, L, null == U ? true : U.src, H, Y, V, F]);
+    }, [G, Z, R, L, null == U ? true : U.src, H, Y, F, V]);
   if (null == G || null == B) return null;
   let q = Z,
     X = [];
@@ -154,13 +154,13 @@ function L(e) {
     m = () => {
       (0, c.aG)(G)
     }, T = () => {
-      (0, c.Z5)(G, F.id)
+      (0, c.Z5)(G, V.id)
     }, n = () => {
       var e;
       null != (e = null == W ? true : W()) || (0, c.aG)(G)
     };
     let e = e => {
-      (0, c.d$)(G, F.id, e)
+      (0, c.d$)(G, V.id, e)
     };
     if (q = (0, r.jsx)(d.Z, {
         artists: Z,
@@ -191,7 +191,7 @@ function L(e) {
       Icon: h.Z
     }) : null,
     userDescription: (0, E.kr)(L) ? N.t.Tzx5Dw : N.t.CcVI1d,
-    title: V,
+    title: F,
     onClickTitle: m,
     subtitle: q,
     badges: null,
@@ -204,10 +204,10 @@ function L(e) {
       children: (0, r.jsx)(I.WT, {
         onReaction: k,
         onVoiceChannelPreview: M,
-        user: F,
+        user: V,
         channel: R,
         generateReactionImage: z,
-        reactionImageAltText: w(Z, F),
+        reactionImageAltText: w(Z, V),
         entry: L,
         buttons: X
       })

@@ -6,7 +6,7 @@ require.d(exports, {
   B5: () => R,
   Do: () => w,
   GX: () => k,
-  HR: () => V,
+  HR: () => F,
   Hr: () => N,
   Je: () => A,
   Js: () => b,
@@ -393,7 +393,7 @@ function Z() {
   })
 }
 
-function V(e) {
+function F(e) {
   let {
     guildId: t,
     channelId: n

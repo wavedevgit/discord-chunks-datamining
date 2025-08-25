@@ -160,7 +160,7 @@ function e_(e) {
     isGuestInvite: f,
     isApplicationBypassInvite: _
   } = null != i ? i : {};
-  if (!f && !_ && !(null == i ? true : i.forceTransition) && s && V.Z.getGuildId() !== t) return;
+  if (!f && !_ && !(null == i ? true : i.forceTransition) && s && F.Z.getGuildId() !== t) return;
   let {
     type: p
   } = r, g = k.Z.getChannel(r.id), b = ed(t, r, i), I = p === J.d4z.GUILD_STAGE_VOICE, T = J.Z5c.CHANNEL(t, b);
@@ -186,7 +186,7 @@ function e_(e) {
           commandOrigin: E.bB.CHAT
         }))
       };
-      !f && (0, v.n)(t, [G.Z, F.default, U.ZP]) ? (0, O.hk)(t, o) : o()
+      !f && (0, v.n)(t, [G.Z, V.default, U.ZP]) ? (0, O.hk)(t, o) : o()
     })
   }) : (0, h.l5)(g) && c === et.Iq.EMBEDDED_APPLICATION && null != u && ((0, D.uL)(J.Z5c.CHANNEL(null != t ? t : J.ME, b)), (0, m.Z)({
     channelId: b,
@@ -240,7 +240,7 @@ let em = function(e, t) {
     k.Z.addConditionalChangeListener(() => {
       var r;
       let i = k.Z.getChannel(e),
-        a = F.default.getCurrentUser();
+        a = V.default.getCurrentUser();
       return null == i || null == a || !(i.nsfw && !a.nsfwAllowed || i.isGuildVocal() && (0, g.RW)(e)) && ((null == t ? true : t.guildScheduledEvent) != null ? ep(t) : e_({
         guildId: null != (r = i.getGuildId()) ? r : J.ME,
         channel: i,
@@ -431,7 +431,7 @@ let ey = {
       context: i,
       callback: a,
       skipOnboarding: o
-    } = e, s = (0, N.fU)(r), l = s.baseCode, c = j.default.getSessionId(), d = eu(i, s), _ = F.default.getCurrentUser();
+    } = e, s = (0, N.fU)(r), l = s.baseCode, c = j.default.getSessionId(), d = eu(i, s), _ = V.default.getCurrentUser();
     return null != (t = null == _ ? true : _.hasFlag(J.xW$.QUARANTINED)) && t ? ((0, P.default)(), new Promise((e, t) => t(Error()))) : (f.Z.dispatch({
       type: "INVITE_ACCEPT",
       code: l

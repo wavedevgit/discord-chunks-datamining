@@ -58,13 +58,13 @@ module.exports = function(e, t) {
       G = null != U ? U.getMutability() : null,
       B = "MUTABLE" === G,
       Z = B ? "spellcheck-change" : "apply-entity",
-      V = r.replaceText(P, k, y, w.getInlineStyleAt(N), B ? w.getEntityAt(N) : null);
+      F = r.replaceText(P, k, y, w.getInlineStyleAt(N), B ? w.getEntityAt(N) : null);
     if (d) n = h.anchorOffset, p = (c = N + Math.min(n, o = h.focusOffset)) + Math.abs(n - o), n = c, o = p;
     else {
-      var F = y.length - D.length;
-      c = j.getStartOffset(), p = j.getEndOffset(), n = g ? p + F : c, o = p + F
+      var V = y.length - D.length;
+      c = j.getStartOffset(), p = j.getEndOffset(), n = g ? p + V : c, o = p + V
     }
-    var H = V.merge({
+    var H = F.merge({
       selectionBefore: P.getSelectionAfter(),
       selectionAfter: j.merge({
         anchorOffset: n,

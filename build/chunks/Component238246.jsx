@@ -46,7 +46,7 @@ var Chunk587061 = require("./587061.js"),
   Chunk501787 = require("./501787.js"),
   Chunk413943 = require("./413943.js");
 
-function F(e, t, n) {
+function V(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -62,7 +62,7 @@ function H(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      F(e, t, n[t])
+      V(e, t, n[t])
     })
   }
   return e
@@ -201,7 +201,7 @@ class z extends(r = Chunk647438.Component) {
     })
   }
   constructor(...e) {
-    super(...e), F(this, "rootRef", a.createRef()), F(this, "_cleanupWindowActionCreators", true), F(this, "_combokeys", null), F(this, "beforeUnload", e => {
+    super(...e), V(this, "rootRef", a.createRef()), V(this, "_cleanupWindowActionCreators", true), V(this, "_combokeys", null), V(this, "beforeUnload", e => {
       let {
         onBeforeUnload: t
       } = this.props, n = () => {
@@ -211,13 +211,13 @@ class z extends(r = Chunk647438.Component) {
         e,
         unmountWindow: n
       }) : n()
-    }), F(this, "handleBlur", () => {
+    }), V(this, "handleBlur", () => {
       var e, t;
       null == (e = (t = this.props).onBlur) || e.call(t)
     })
   }
 }
-F(z, "defaultProps", {
+V(z, "defaultProps", {
   withTitleBar: true
 });
 let q = Chunk647438.forwardRef(function(e, t) {

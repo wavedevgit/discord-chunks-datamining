@@ -102,8 +102,8 @@ function R(e) {
       inputRef: B
     } = e,
     Z = v(e, ["value", "placeholder", "autoFocus", "autosize", "minLength", "maxLength", "error", "defaultDirty", "showCharacterCount", "showRemainingCharacterCount", "aria-labelledby", "rows", "disabled", "helperText", "successMessage", "inputRef"]);
-  let V = (0, _.U)("UserSettingsDesignSystems"),
-    F = V ? false !== x : x,
+  let F = (0, _.U)("UserSettingsDesignSystems"),
+    V = F ? false !== x : x,
     H = (0, f.m)({
       validateOn: "change",
       error: R,
@@ -120,11 +120,11 @@ function R(e) {
       return null != t && e.push(t), null != R ? e.push(T) : (null != I && e.push(A), null != y && e.push(S)), e.length > 0 ? e.join(" ") : true
     }, [R, null == Y ? true : Y.errorId, I, y]),
     z = i.useMemo(() => {
-      if (V) return;
+      if (F) return;
       if (null == I) return C;
       let e = "".concat(I).length;
       return N * (e += "".concat(I, " / ").length) + C
-    }, [V, I]),
+    }, [F, I]),
     q = e => {
       let {
         onChange: t
@@ -137,8 +137,8 @@ function R(e) {
     disabled: M,
     helperText: U,
     successMessage: G,
-    characterCount: V && F ? null != (t = null == n ? true : n.length) ? t : 0 : true,
-    characterCountMaxLength: V && null != I ? I : true,
+    characterCount: F && V ? null != (t = null == n ? true : n.length) ? t : 0 : true,
+    characterCountMaxLength: F && null != I ? I : true,
     children: [(0, r.jsx)(l.t, {
       children: (0, r.jsx)(X, O(b({
         className: o()(m.textArea, g.scrollbarDefault),
@@ -169,11 +169,11 @@ function R(e) {
       children: h.intl.format(h.t["+DFxLS"], {
         maxLength: I
       })
-    }), !V && F ? (0, r.jsx)(P, {
+    }), !F && V ? (0, r.jsx)(P, {
       value: n,
       maxLength: I,
       hasError: H.hasError
-    }) : null, V || F || false === L ? null : (0, r.jsx)(w, {
+    }) : null, F || V || false === L ? null : (0, r.jsx)(w, {
       value: n,
       maxLength: I
     })]

@@ -92,12 +92,12 @@ function x(e) {
     activity: a,
     entry: k,
     analyticsLocations: B
-  }), V = (0, g.Z)({
+  }), F = (0, g.Z)({
     userId: t.id,
     onAction: Z
   });
   if (!(0, l.Z)(a)) return null;
-  let F = () => {
+  let V = () => {
       var e, n;
       let l = null != (n = null == (e = a.state) ? true : e.split(";")) ? n : [];
       return 0 === l.length ? null : null == a.sync_id ? (0, r.jsx)(I.Z, {
@@ -143,7 +143,7 @@ function x(e) {
   return (0, r.jsx)(u.Gt, {
     value: B,
     children: (0, r.jsxs)(O.Z, {
-      ref: V,
+      ref: F,
       className: o()(N.card, R),
       onAction: Z,
       onClose: w,
@@ -183,7 +183,7 @@ function x(e) {
                   }), (0, h.aG)(a)
                 },
                 id: x
-              }), F()]
+              }), V()]
             }), (0, r.jsx)(y.Z, {
               user: t,
               activity: a,

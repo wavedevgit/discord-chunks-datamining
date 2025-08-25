@@ -160,8 +160,8 @@ class eI extends Chunk47770.Z {
   }
   shouldSendSpeaking(e, t) {
     if ((0, H.isWeb)()) returntrue;
-    let n = (0, V.yE)(e, el.Dg.PRIORITY),
-      r = (0, V.yE)(this._lastSentSpeakingStatus, el.Dg.PRIORITY);
+    let n = (0, F.yE)(e, el.Dg.PRIORITY),
+      r = (0, F.yE)(this._lastSentSpeakingStatus, el.Dg.PRIORITY);
     return (this._lastSentSSRC !== t || n !== r) && (true !== this._lastSentSSRC || e !== el.Dg.NONE) && (this._lastSentSSRC === t || e !== el.Dg.NONE) && (this._lastSentSpeakingStatus = e, this._lastSentSSRC = t, true)
   }
   sendSpeaking(e, t) {
@@ -1259,7 +1259,7 @@ class eI extends Chunk47770.Z {
         this.logger.info("Go Live Media sink wants: ".concat(JSON.stringify(e))), this._socket.mediaSinkWants(e), null == (t = this._connection) || t.setLocalVideoSinkWants(e)
       }
     }));
-    this._remoteVideoSinkWants = J.Yy, eo.w.on(eo.e.IncomingVideoEnabledChanged, this.incomingVideoEnabledChanged), eo.w.on(eo.e.WindowVisibilityChanged, this.windowVisibilityChanged), M.ZP.shouldRecordNextConnection() ? (this._recordingEnabled = true, g.TC(false)) : this._recordingEnabled = false, this._soundshareStats = new $.Z, F.Z.addOnlineCallback(this._handleNetworkOnline), F.Z.addOfflineCallback(this._handleNetworkOffline), (0, H.isDesktop)() && (this.powerMonitorListener = K.Z.remotePowerMonitor.on("resume", this._handlePowerResume)), this._supportedBandwidthEstimationExperiments = [], this._bandwidthEstimationExperiment = null, j.Z.getMediaEngine().getSupportedBandwidthEstimationExperiments(e => {
+    this._remoteVideoSinkWants = J.Yy, eo.w.on(eo.e.IncomingVideoEnabledChanged, this.incomingVideoEnabledChanged), eo.w.on(eo.e.WindowVisibilityChanged, this.windowVisibilityChanged), M.ZP.shouldRecordNextConnection() ? (this._recordingEnabled = true, g.TC(false)) : this._recordingEnabled = false, this._soundshareStats = new $.Z, V.Z.addOnlineCallback(this._handleNetworkOnline), V.Z.addOfflineCallback(this._handleNetworkOffline), (0, H.isDesktop)() && (this.powerMonitorListener = K.Z.remotePowerMonitor.on("resume", this._handlePowerResume)), this._supportedBandwidthEstimationExperiments = [], this._bandwidthEstimationExperiment = null, j.Z.getMediaEngine().getSupportedBandwidthEstimationExperiments(e => {
       this._supportedBandwidthEstimationExperiments = e
     })
   }

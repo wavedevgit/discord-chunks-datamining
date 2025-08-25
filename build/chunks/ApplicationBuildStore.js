@@ -134,14 +134,14 @@ function Z(e) {
   S[t] = n
 }
 
-function V(e) {
+function F(e) {
   let {
     buildId: t
   } = e;
   null == S[t] && delete S[t]
 }
 
-function F(e) {
+function V(e) {
   let {
     branches: t
   } = e, n = {};
@@ -215,8 +215,8 @@ let z = new K(Chunk570140.Z, {
   APPLICATION_BUILD_NOT_FOUND: G,
   APPLICATION_BUILD_SIZE_FETCH_START: B,
   APPLICATION_BUILD_SIZE_FETCH_SUCCESS: Z,
-  APPLICATION_BUILD_SIZE_FETCH_FAIL: V,
-  APPLICATION_BRANCHES_FETCH_SUCCESS: F,
+  APPLICATION_BUILD_SIZE_FETCH_FAIL: F,
+  APPLICATION_BRANCHES_FETCH_SUCCESS: V,
   APPLICATION_BRANCHES_FETCH_FAIL: H,
   CONNECTION_CLOSED: Y,
   LOGOUT: Y,

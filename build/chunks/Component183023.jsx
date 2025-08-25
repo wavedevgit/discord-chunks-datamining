@@ -150,7 +150,7 @@ let Q = 32,
       size: c,
       canAnimate: true
     }), f = (n = null == n || n) || t.isDiscoverable(), _ = () => {
-      t.isDiscoverable() ? (0, U.Ub)(a, {}) : n && (0, D.uL)(V.Z5c.CHANNEL(a, x.Z.getChannelId(a)))
+      t.isDiscoverable() ? (0, U.Ub)(a, {}) : n && (0, D.uL)(F.Z5c.CHANNEL(a, x.Z.getChannelId(a)))
     }, p = () => null != u && f ? (0, r.jsxs)(d.P3F, {
       "aria-label": l,
       onClick: _,
@@ -322,7 +322,7 @@ let Q = 32,
         isDiscoverable: J,
         shouldHideRoleSubscriptionCTA: eo,
         onOpenPremiumSettings: () => {
-          R(), k.default.track(V.rMx.PREMIUM_PROMOTION_OPENED, {
+          R(), k.default.track(F.rMx.PREMIUM_PROMOTION_OPENED, {
             location_page: ee.page,
             location_section: ee.section
           }), (0, P.z)()
@@ -351,7 +351,7 @@ let Q = 32,
         }, t = () => {
           R(), (null == S ? true : S.id) != null && f.Z.transitionToGuildSync(S.id, {
             sourceLocationStack: [p.Z.GUILD_ROLE_SUBSCRIPTION_EMOJI_TEXT_POPOVER_UPSELL]
-          }, F.oC.ROLE_SUBSCRIPTIONS)
+          }, V.oC.ROLE_SUBSCRIPTIONS)
         }, n = !Q && J, i = () => ep ? (0, r.jsx)(w.Z, {
           className: W.ctaButton,
           subscriptionTier: H.Si.TIER_2,
@@ -411,7 +411,7 @@ let Q = 32,
         var e, t;
         let n = null != T && !Q && J && (null != (t = null == T || null == (e = T.emojis) ? true : e.length) ? t : 0) > 1,
           i = () => {
-            n && (null == D || D(), em || M || k.default.track(V.rMx.EMOJI_UPSELL_POPOUT_MORE_EMOJIS_OPENED, ef), eg(!em))
+            n && (null == D || D(), em || M || k.default.track(F.rMx.EMOJI_UPSELL_POPOUT_MORE_EMOJIS_OPENED, ef), eg(!em))
           },
           a = () => {
             let e = Y.intl.string(Y.t.pnsAS0);

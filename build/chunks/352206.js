@@ -348,8 +348,8 @@ var m = {
       titleAttributes: {}
     }))
   },
-  V = Chunk647438.createContext({}),
-  F = a().shape({
+  F = Chunk647438.createContext({}),
+  V = a().shape({
     setHelmet: a().func,
     helmetInstances: a().shape({
       get: a().func,
@@ -364,7 +364,7 @@ var m = {
       return (r = e.call(this, n) || this).helmetData = new Z(r.props.context, t.canUseDOM), r
     }
     return _(t, e), t.prototype.render = function() {
-      return r.createElement(V.Provider, {
+      return r.createElement(F.Provider, {
         value: this.helmetData.value
       }, this.props.children)
     }, t
@@ -492,7 +492,7 @@ var W = function(e, t) {
     }, t
   }(Chunk647438.Component);
 X.propTypes = {
-  context: F.isRequired
+  context: V.isRequired
 }, X.displayName = "HelmetDispatcher";
 var Q = ["children"],
   J = ["children"],
@@ -601,7 +601,7 @@ var Q = ["children"],
       return t && (i = this.mapChildrenToProps(t, i)), !a || a instanceof Z || (a = new Z(a.context, a.instances)), a ? r.createElement(X, f({}, i, {
         context: a.value,
         helmetData: true
-      })) : r.createElement(V.Consumer, null, function(e) {
+      })) : r.createElement(F.Consumer, null, function(e) {
         return r.createElement(X, f({}, i, {
           context: e
         }))

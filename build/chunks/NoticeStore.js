@@ -171,8 +171,8 @@ let ek = {
     [Chunk981631.kVF.SYSTEM_SERVICE_WARNING]: "hideSystemServiceWarningNotice"
   },
   eZ = new Set([Chunk981631.kVF.NO_INPUT_DETECTED, Chunk981631.kVF.NO_INPUT_DEVICES_DETECTED, Chunk981631.kVF.STREAMER_MODE, Chunk981631.kVF.VIDEO_UNSUPPORTED_BROWSER, Chunk981631.kVF.SPOTIFY_AUTO_PAUSED, Chunk981631.kVF.DISPATCH_ERROR, Chunk981631.kVF.DISPATCH_ERROR, Chunk981631.kVF.DISPATCH_INSTALL_SCRIPT_PROGRESS, Chunk981631.kVF.BLOCKED_BY_PROXY]),
-  eV = {},
   eF = {},
+  eV = {},
   eH = Object.freeze({
     id: null,
     message: null,
@@ -202,7 +202,7 @@ function eq(e) {
 function eX(e, t, n) {
   if (null == e) return;
   let r = eB[e];
-  null == r || t || c.K.set(r, true), eZ.has(e) && (eV[e] = true), null != n && null != r ? ez(e, n) : eq(e)
+  null == r || t || c.K.set(r, true), eZ.has(e) && (eF[e] = true), null != n && null != r ? ez(e, n) : eq(e)
 }
 
 function eQ(e) {
@@ -222,7 +222,7 @@ function eQ(e) {
     let t = eK(e);
     if (null != t) return null == t ? true : t.isAfter(a()())
   }
-  let o = eV[e];
+  let o = eF[e];
   return !!o || (null != i && "" !== i ? c.K.get(i) : !!eZ.has(e) && o)
 }
 let eJ = [Chunk981631.kVF.QUARANTINED, Chunk981631.kVF.AUTOMOD_QUARANTINED_USER_PROFILE, Chunk981631.kVF.VIEWING_ROLES, Chunk981631.kVF.INVITED_TO_SPEAK, Chunk981631.kVF.LURKING_GUILD, Chunk981631.kVF.VOICE_DISABLED, Chunk981631.kVF.NO_INPUT_DEVICES_DETECTED, Chunk981631.kVF.NO_INPUT_DETECTED, Chunk981631.kVF.HARDWARE_MUTE, Chunk981631.kVF.H264_DISABLED, Chunk981631.kVF.DISPATCH_ERROR, Chunk981631.kVF.DISPATCH_INSTALL_SCRIPT_PROGRESS, Chunk981631.kVF.SPOTIFY_AUTO_PAUSED, Chunk981631.kVF.WIN32_DEPRECATED_MESSAGE, Chunk981631.kVF.WIN7_8_DEPRECATED_MESSAGE, Chunk981631.kVF.MACOS_19_DEPRECATED_MESSAGE, Chunk981631.kVF.BLOCKED_BY_PROXY, Chunk981631.kVF.VOICE_CONNECTED_LAST_SESSION, Chunk981631.kVF.SYSTEM_SERVICE_WARNING, Chunk981631.kVF.AUTO_MODERATION_MENTION_RAID_DETECTION, Chunk981631.kVF.GUILD_RAID_NOTIFICATION, Chunk981631.kVF.GIFTING_PROMOTION_REMINDER, Chunk981631.kVF.QUESTS_PROGRESS_INTERRUPTION, Chunk981631.kVF.UNCLAIMED_ACCOUNT, Chunk981631.kVF.POMELO_ELIGIBLE, Chunk981631.kVF.PENDING_MEMBER, Chunk981631.kVF.CHECKOUT_RECOVERY_NAGBAR, Chunk981631.kVF.OUTBOUND_PROMOTION, Chunk981631.kVF.CORRUPT_INSTALLATION, Chunk981631.kVF.VIDEO_UNSUPPORTED_BROWSER, Chunk981631.kVF.DETECTED_OFF_PLATFORM_PREMIUM_PERK, Chunk981631.kVF.DETECTED_OFF_PLATFORM_PREMIUM_PERK_UPSELL, Chunk981631.kVF.STREAMER_MODE, Chunk981631.kVF.SCHEDULED_MAINTENANCE, Chunk981631.kVF.BOUNCED_EMAIL_DETECTED, Chunk981631.kVF.UNVERIFIED_ACCOUNT, Chunk981631.kVF.PREMIUM_TIER_2_TRIAL_ENDING, Chunk981631.kVF.PREMIUM_TIER_2_DISCOUNT_ENDING, Chunk981631.kVF.PREMIUM_TIER_0_TRIAL_ENDING, Chunk981631.kVF.PREMIUM_UNCANCEL, Chunk981631.kVF.PREMIUM_MISSING_PAYMENT, Chunk981631.kVF.PREMIUM_PAST_DUE_INVALID_PAYMENT, Chunk981631.kVF.PREMIUM_PAST_DUE_MISSING_PAYMENT, Chunk981631.kVF.PREMIUM_PAST_DUE_ONE_TIME_PAYMENT, Chunk981631.kVF.PREMIUM_REACTIVATE, Chunk981631.kVF.ACTIVATE_SERVER_SUBSCRIPTION, Chunk981631.kVF.MFA_SMS_BACKUP, Chunk981631.kVF.APPLICATION_TEST_MODE, Chunk981631.kVF.DOWNLOAD_NAG, Chunk981631.kVF.CONNECT_SPOTIFY, Chunk981631.kVF.CONNECT_PLAYSTATION, Chunk981631.kVF.SURVEY, Chunk981631.kVF.SAFETY_USER_SENTIMENT_NAGBAR, Chunk981631.kVF.BLOCK_USER_FEEDBACK_NAGBAR, Chunk981631.kVF.IGNORE_USER_FEEDBACK_NAGBAR, Chunk981631.kVF.REPORT_TO_MOD_SURVEY],
@@ -630,7 +630,7 @@ let eJ = [Chunk981631.kVF.QUARANTINED, Chunk981631.kVF.AUTOMOD_QUARANTINED_USER_
         let {
           currentUser: t
         } = e;
-        return V.SI(t)
+        return F.SI(t)
       }
     },
     [Chunk981631.kVF.QUESTS_PROGRESS_INTERRUPTION]: {
@@ -720,8 +720,8 @@ function e1() {
       });
       break
     } if (null != eY) {
-    (null == (n = eY.metadata) ? true : require.sampleRate) != null && null == eF[eY.type] && (eF[eY.type] = Math.random() <= eY.metadata.sampleRate);
-    let e = false === eF[eY.type];
+    (null == (n = eY.metadata) ? true : require.sampleRate) != null && null == eV[eY.type] && (eV[eY.type] = Math.random() <= eY.metadata.sampleRate);
+    let e = false === eV[eY.type];
     (eQ(eY.type) || module) && (eY = null)
   }
 }
@@ -754,15 +754,15 @@ function e8(e) {
 }
 
 function e6() {
-  return Chunk246946.Z.enabled || delete eV[Chunk981631.kVF.STREAMER_MODE], e1()
+  return Chunk246946.Z.enabled || delete eF[Chunk981631.kVF.STREAMER_MODE], e1()
 }
 
 function e5() {
-  return delete eV[Chunk981631.kVF.DISPATCH_ERROR], e1()
+  return delete eF[Chunk981631.kVF.DISPATCH_ERROR], e1()
 }
 
 function e7() {
-  return delete eV[Chunk981631.kVF.DISPATCH_INSTALL_SCRIPT_PROGRESS], e1()
+  return delete eF[Chunk981631.kVF.DISPATCH_INSTALL_SCRIPT_PROGRESS], e1()
 }
 
 function e9() {
@@ -778,7 +778,7 @@ function tt(e) {
 }
 
 function tn() {
-  eV = {}, eF = {}, eY = null
+  eF = {}, eV = {}, eY = null
 }
 class tr extends(r = Chunk442837.ZP.Store) {
   initialize() {

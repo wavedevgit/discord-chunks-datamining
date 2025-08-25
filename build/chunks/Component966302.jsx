@@ -162,8 +162,8 @@ function eo(e) {
         } = e;
         return (0, r.jsx)(B.Z, {
           onClose: t,
-          onInteraction: (0, V.u)("VideoDeviceMenu", s, {
-            entrypoint: F.A5.CARET
+          onInteraction: (0, F.u)("VideoDeviceMenu", s, {
+            entrypoint: V.A5.CARET
           })
         })
       },
@@ -240,14 +240,14 @@ function es(e) {
     };
     return window.addEventListener("keydown", e), () => window.removeEventListener("keydown", e)
   }, [h]);
-  let V = k === H.WtW.VIDEO && C && N > 0,
+  let F = k === H.WtW.VIDEO && C && N > 0,
     {
-      enabled: F
+      enabled: V
     } = P.Z.useExperiment({
       guildId: null == h ? true : h.guild_id,
       location: "IncomingCallModal"
     }),
-    X = k === H.WtW.VOICE || F && h.type === H.d4z.GUILD_VOICE ? W.intl.string(W.t.Js8cKy) : W.intl.string(W.t.KcnWCA),
+    X = k === H.WtW.VOICE || V && h.type === H.d4z.GUILD_VOICE ? W.intl.string(W.t.Js8cKy) : W.intl.string(W.t.KcnWCA),
     J = (0, r.jsxs)(r.Fragment, {
       children: [null != I && null == T ? (0, r.jsx)("div", {
         className: o()(z.icon, K.wrapper, K.ringingIncoming),
@@ -285,7 +285,7 @@ function es(e) {
         })]
       })]
     }),
-    es = V ? ee : et,
+    es = F ? ee : et,
     el = (0, l.e7)([j.Z], () => j.Z.windowSize());
   return (0, r.jsx)(m.Gt, {
     value: y,
@@ -317,10 +317,10 @@ function es(e) {
             className: z.mainChannelInfo,
             children: J
           }), (0, r.jsx)(eo, {
-            canVideo: V,
+            canVideo: F,
             channel: h,
             numVideoDevices: N
-          }), V && !O ? (0, r.jsx)("div", {
+          }), F && !O ? (0, r.jsx)("div", {
             "data-button-hoisted-classname-wrapper": true,
             className: z.previewButton,
             children: (0, r.jsx)(c.zxk, {

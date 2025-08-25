@@ -101,7 +101,7 @@ function eu(e) {
 }
 
 function ed(e, t, n, r) {
-  return !(null == e || !(0, J.Z)(e, n, r.id) || !(0, Q.Z)(e, ei.xjy.SYNC) || !V.isPlatformEmbedded || (0, q.g)(t, e))
+  return !(null == e || !(0, J.Z)(e, n, r.id) || !(0, Q.Z)(e, ei.xjy.SYNC) || !F.isPlatformEmbedded || (0, q.g)(t, e))
 }
 
 function ef(e) {
@@ -210,7 +210,7 @@ function e_(e, t) {
       trackEntryPointImpression: true,
       sourceUserId: t
     }),
-    isGameLaunchable: (0, s.e7)([x.Z, T.Z, G.Z, P.Z], () => (0, F.t)({
+    isGameLaunchable: (0, s.e7)([x.Z, T.Z, G.Z, P.Z], () => (0, V.t)({
       LibraryApplicationStore: x.Z,
       LaunchableGameStore: T.Z,
       DispatchApplicationStore: G.Z,
@@ -298,7 +298,7 @@ function eh(e) {
     staticBannerSrc: M,
     videoBannerSrc: G,
     bannerAspectRatio: Z
-  } = (0, m.E)(I), V = !(0, J.Z)(w, N, I.id), F = (0, z.H)(N), K = (0, s.e7)([D.Z], () => D.Z.getGameByName(I.name), [I.name]), {
+  } = (0, m.E)(I), F = !(0, J.Z)(w, N, I.id), V = (0, z.H)(N), K = (0, s.e7)([D.Z], () => D.Z.getGameByName(I.name), [I.name]), {
     openGameProfileModal: X,
     isGameLaunchable: ee
   } = e_(I.id, N.author.id), {
@@ -397,8 +397,8 @@ function eh(e) {
     }
   } : null != el ? el : true, [I.id, ee, er, null == K ? true : K.id, el]), ey = (0, g.G)(I), eO = i.useMemo(() => null != X ? X : null != en ? en : null != ey && L ? ey : true, [L, X, en, ey]), ev = i.useMemo(() => {
     let e = [];
-    return V || null == eE ? V && null != eb && e.push(eb) : e.push(eE), e
-  }, [eb, V, eE]), eI = (0, H.dQ)(I.name, null == (t = N.activity) ? true : t.type), eT = (0, v.N)(I.id).some(e => (0, b.ig)(e) === a.o.GLOBAL) ? (0, r.jsxs)(r.Fragment, {
+    return F || null == eE ? F && null != eb && e.push(eb) : e.push(eE), e
+  }, [eb, F, eE]), eI = (0, H.dQ)(I.name, null == (t = N.activity) ? true : t.type), eT = (0, v.N)(I.id).some(e => (0, b.ig)(e) === a.o.GLOBAL) ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.YqE, {
       size: "xxs",
       color: "currentColor"
@@ -406,7 +406,7 @@ function eh(e) {
   }) : null, eS = (0, r.jsx)(ep, {
     presenceActivity: w
   });
-  if (V) {
+  if (F) {
     let e = (0, r.jsx)(l.Text, {
       variant: "text-xs/medium",
       className: es.description,
@@ -454,11 +454,11 @@ function eh(e) {
       className: es.tagline,
       color: "none",
       lineClamp: 2,
-      children: [F ? (0, H.$v)(N, I, T, S, V) : eC, F ? null : eT]
+      children: [V ? (0, H.$v)(N, I, T, S, F) : eC, V ? null : eT]
     }),
     eR = (0, r.jsxs)("div", {
       className: es.info,
-      children: [eN, C || F ? null : P]
+      children: [eN, C || V ? null : P]
     });
   return (0, r.jsx)(_.W, {
     header: eI,

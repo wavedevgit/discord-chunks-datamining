@@ -66,8 +66,8 @@ function I(e) {
     G = null != R,
     B = null != U,
     Z = null != U && U.isGuildVocal(),
-    V = null != U && U.isGuildStageVoice(),
-    F = (0, p.yE)(null != (t = P.flags) ? t : 0, a.$.IS_GUEST_INVITE),
+    F = null != U && U.isGuildStageVoice(),
+    V = (0, p.yE)(null != (t = P.flags) ? t : 0, a.$.IS_GUEST_INVITE),
     H = null != (O = null == R ? true : R.features.has(E.oNc.HUB)) && O,
     Y = null == R ? true : R.id,
     {
@@ -95,9 +95,9 @@ function I(e) {
   let $ = (0, m.e)({
     isVoiceChannel: Z,
     isOwnInvite: x,
-    isGuest: F,
+    isGuest: V,
     isHubGuild: H,
-    isStage: V,
+    isStage: F,
     isStream: false
   });
   return S = (0, r.jsxs)("span", {
@@ -120,7 +120,7 @@ function I(e) {
         disableBoostClick: true
       })
     })]
-  }), F && (A = (0, r.jsx)(o.DY3, {
+  }), V && (A = (0, r.jsx)(o.DY3, {
     className: y.tooltipContainer,
     text: b.intl.string(b.t["/FeTKy"]),
     children: (0, r.jsx)(o.d3s, {
@@ -167,7 +167,7 @@ function I(e) {
         onClick: J,
         submitting: M,
         color: f.Z.Button.Colors.GREEN,
-        children: Z ? V ? b.intl.string(b.t["7vb2cX"]) : b.intl.string(b.t.gpqgam) : G ? b.intl.string(b.t.cEnaW1) : b.intl.string(b.t.XpeFYm)
+        children: Z ? F ? b.intl.string(b.t["7vb2cX"]) : b.intl.string(b.t.gpqgam) : G ? b.intl.string(b.t.cEnaW1) : b.intl.string(b.t.XpeFYm)
       })]
     }), R.features.has(E.oNc.HUB) && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {

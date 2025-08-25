@@ -243,7 +243,7 @@ function Z(e) {
   return t.forEach(e => D(e, true)), false
 }
 
-function V(e) {
+function F(e) {
   let {
     pins: t
   } = e;
@@ -255,7 +255,7 @@ function V(e) {
   }), false
 }
 
-function F(e) {
+function V(e) {
   let {
     mostRecentMessages: t
   } = e;
@@ -729,8 +729,8 @@ class eL extends Chunk750041.Z {
       LOAD_MESSAGES_SUCCESS: Z,
       LOAD_MESSAGES_AROUND_SUCCESS: Z,
       LOAD_RECENT_MENTIONS_SUCCESS: Z,
-      LOAD_PINNED_MESSAGES_SUCCESS: V,
-      THREAD_LIST_SYNC: F,
+      LOAD_PINNED_MESSAGES_SUCCESS: F,
+      THREAD_LIST_SYNC: V,
       MESSAGE_CREATE: Q,
       MESSAGE_UPDATE: Q,
       GUILD_SETTINGS_LOADED_BANS: en,

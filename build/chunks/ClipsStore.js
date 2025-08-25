@@ -177,14 +177,14 @@ function Z(e) {
   }), I = [r, ...I], x.hasClips = true
 }
 
-function V(e) {
+function F(e) {
   let {
     clip: t
   } = e;
   T = [t, ...T]
 }
 
-function F(e) {
+function V(e) {
   let {
     clipId: t
   } = e;
@@ -452,8 +452,8 @@ g(er, "displayName", "ClipsStore"), g(er, "persistKey", "ClipsStore"), g(er, "mi
 let ei = new er(Chunk570140.Z, {
     CLIPS_SETTINGS_UPDATE: M,
     CLIPS_SAVE_CLIP: Z,
-    CLIPS_SAVE_CLIP_PLACEHOLDER: V,
-    CLIPS_SAVE_CLIP_PLACEHOLDER_ERROR: F,
+    CLIPS_SAVE_CLIP_PLACEHOLDER: F,
+    CLIPS_SAVE_CLIP_PLACEHOLDER_ERROR: V,
     CLIPS_SAVE_CLIP_START: U,
     CLIPS_SAVE_CLIP_ERROR: B,
     CLIPS_SAVE_ANIMATION_END: G,

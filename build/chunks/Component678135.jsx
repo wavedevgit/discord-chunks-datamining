@@ -50,8 +50,8 @@ function v(e) {
     hideCustomStatus: G = false,
     hideBioSection: B = false,
     hideMessageInput: Z = true,
-    pendingBadges: V,
-    shouldOpenBadgeTooltip: F,
+    pendingBadges: F,
+    shouldOpenBadgeTooltip: V,
     hideViewFullProfileButton: H = false,
     interactive: Y = true
   } = e, W = (0, l.ZP)(t.id, null == n ? true : n.id), {
@@ -129,8 +129,8 @@ function v(e) {
       pendingDisplayNameStyles: L,
       isTryItOutFlow: M,
       hideBioSection: B,
-      pendingBadges: V,
-      shouldOpenBadgeTooltip: F
+      pendingBadges: F,
+      shouldOpenBadgeTooltip: V
     }), (0, r.jsx)(g.Z, {
       user: t,
       hideMessageInput: Z,

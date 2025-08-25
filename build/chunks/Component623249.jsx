@@ -80,8 +80,8 @@ function P(e) {
     useReducedMotion: k,
     className: T.colorTransition
   }), U = P.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), G = (0, m.Bz)(n), B = (0, s.e7)([_.Z], () => _.Z.getState().theme), Z = (0, l.wj)(B) ? v.BRd.DARK : v.BRd.LIGHT, {
-    startConsoleQuest: V,
-    startingConsoleQuest: F
+    startConsoleQuest: F,
+    startingConsoleQuest: V
   } = (0, g.GI)({
     questId: n.id,
     beforeRequest: () => {
@@ -164,9 +164,9 @@ function P(e) {
           children: I.intl.string(I.t["+/hZMz"])
         }), (0, r.jsxs)(u.P3F, {
           className: o()(T.refreshWrapper, {
-            [T.disabled]: F
+            [T.disabled]: V
           }),
-          onClick: V,
+          onClick: F,
           children: [M.render(), (0, r.jsx)(u.Text, {
             variant: "text-sm/medium",
             color: "currentColor",

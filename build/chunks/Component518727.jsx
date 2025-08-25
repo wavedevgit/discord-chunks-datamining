@@ -57,19 +57,19 @@ let I = 1e3,
       } = (0, E.Z)(!a && j && x),
       U = (0, i.useRef)(null),
       [G, B] = (0, i.useState)(false),
-      [Z, V] = (0, i.useState)(false),
-      [F, H] = (0, i.useState)("none"),
+      [Z, F] = (0, i.useState)(false),
+      [V, H] = (0, i.useState)("none"),
       [Y, W] = (0, i.useState)(false);
     if ((0, i.useEffect)(() => {
         let e;
-        j && n && !Y && "none" === F && (a || !M ? (H("static"), a || (W(true), _.default.track(b.rMx.PREMIUM_BRAND_REFRESH_WOW_MOMENT_ASSETS_NOT_LOADED_ON_CONFIRMATION)), e = false) : (H("animated"), V(true), e = true), c.Z.dispatch({
+        j && n && !Y && "none" === V && (a || !M ? (H("static"), a || (W(true), _.default.track(b.rMx.PREMIUM_BRAND_REFRESH_WOW_MOMENT_ASSETS_NOT_LOADED_ON_CONFIRMATION)), e = false) : (H("animated"), F(true), e = true), c.Z.dispatch({
           type: "WOW_MOMENT_CONFIRMATION_SET_IS_DISPLAYING_WOW_MOMENT_CONFIRMATION",
           value: true,
           isAnimated: e
         }), _.default.track(b.rMx.PREMIUM_BRAND_REFRESH_WOW_MOMENT_VIEWED, {
           wow_moment_type: e ? "animated" : "static"
         }))
-      }, [a, j, n, M, Y, F]), (0, i.useEffect)(() => {
+      }, [a, j, n, M, Y, V]), (0, i.useEffect)(() => {
         function e() {
           B(true), N()
         }
@@ -82,7 +82,7 @@ let I = 1e3,
           value: false,
           isAnimated: false
         })
-      }, []), "animated" === F) return (0, r.jsxs)("div", {
+      }, []), "animated" === V) return (0, r.jsxs)("div", {
       children: [(0, r.jsxs)("div", {
         className: y.videoContainer,
         children: [(0, r.jsx)("div", {
@@ -131,7 +131,7 @@ let I = 1e3,
       })]
     });
     let K = !G;
-    return "static" === F ? (0, r.jsxs)(r.Fragment, {
+    return "static" === V ? (0, r.jsxs)(r.Fragment, {
       children: [K && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("img", {
           src: O.Z,

@@ -52,18 +52,18 @@ function G(e) {
       analyticsLocations: G
     } = (0, g.ZP)(m.Z.ACTIVITY_INSTANCE_EMBED),
     Z = (0, u.O)(),
-    V = (0, s.e7)([A.Z], () => A.Z.getChannel(w), [w]),
-    F = (null == V || null == (t = V.isThread) ? true : t.call(V)) ? null == V ? true : V.parent_id : w,
+    F = (0, s.e7)([A.Z], () => A.Z.getChannel(w), [w]),
+    V = (null == F || null == (t = F.isThread) ? true : t.call(F)) ? null == F ? true : F.parent_id : w,
     H = (0, s.e7)([S.default], () => S.default.getId()),
     {
       embeddedActivity: Y,
       currentEmbeddedActivity: W,
       activityLaunchState: K
     } = (0, s.cj)([f.ZP], () => ({
-      embeddedActivity: f.ZP.getEmbeddedActivitiesForChannel(null != F ? F : "").find(e => e.applicationId === I.id),
+      embeddedActivity: f.ZP.getEmbeddedActivitiesForChannel(null != V ? V : "").find(e => e.applicationId === I.id),
       currentEmbeddedActivity: f.ZP.getCurrentEmbeddedActivity(),
-      activityLaunchState: f.ZP.getLaunchState(I.id, null != F ? F : true)
-    }), [F, I.id]),
+      activityLaunchState: f.ZP.getLaunchState(I.id, null != V ? V : true)
+    }), [V, I.id]),
     z = null == Y ? true : Y.userIds,
     q = (0, s.Wu)([N.default], () => Array.from(null != z ? z : []).map(e => N.default.getUser(e)).filter(D.lm), [z]),
     X = (0, s.e7)([C.Z], () => {
@@ -89,7 +89,7 @@ function G(e) {
       embeddedActivity: Y,
       joinability: $,
       currentEmbeddedActivity: W,
-      channel: V
+      channel: F
     }),
     en = i.useId(),
     er = null != K && K.isLaunching && K.componentId === en,
@@ -97,7 +97,7 @@ function G(e) {
       R.default.track(j.rMx.ACTIVITY_INSTANCE_EMBED_CLICKED, {
         application_id: I.id,
         channel_id: w,
-        channel_type: null == V ? true : V.type,
+        channel_type: null == F ? true : F.type,
         is_activity_start: ee,
         cta: "Play"
       }), ee ? await (0, p.Z)({
@@ -118,7 +118,7 @@ function G(e) {
       R.default.track(j.rMx.ACTIVITY_INSTANCE_EMBED_CLICKED, {
         application_id: I.id,
         channel_id: w,
-        channel_type: null == V ? true : V.type,
+        channel_type: null == F ? true : F.type,
         cta: "View"
       })
     }), es = P.ZP.getApplicationIconURL({

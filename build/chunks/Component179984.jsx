@@ -85,7 +85,7 @@ let Z = () => {
       colorOptions: Chunk382791.VE.PREMIUM_TIER_2_NEW_GRADIENT_FILL
     })
   },
-  V = () => (0, Chunk951288.jsx)("div", {
+  F = () => (0, Chunk951288.jsx)("div", {
     className: Chunk17355.mostPopularPill,
     children: (0, Chunk951288.jsx)(Chunk481060.X6q, {
       className: Chunk17355.mostPopularText,
@@ -93,7 +93,7 @@ let Z = () => {
       children: Chunk388032.intl.string(Chunk388032.t["o/oRJC"])
     })
   }),
-  F = e => {
+  V = e => {
     let t, {
         premiumType: n
       } = e,
@@ -211,10 +211,10 @@ let Z = () => {
           variant: "heading-lg/extrabold",
           children: eu
         }),
-        column1: (0, r.jsx)(F, {
+        column1: (0, r.jsx)(V, {
           premiumType: P.p9.TIER_0
         }),
-        column2: (0, r.jsx)(F, {
+        column2: (0, r.jsx)(V, {
           premiumType: P.p9.TIER_2
         })
       };
@@ -268,7 +268,7 @@ let Z = () => {
       text: null != J ? w.intl.string(w.t.IBYG5e) : w.intl.string(w.t.ce1v3d),
       className: D.freeTrialPillWithSparkles,
       colorOptions: J === P.Si.TIER_0 ? z ? N.VE.PREMIUM_TIER_0_GRADIENT_FILL : N.VE.PREMIUM_TIER_0_WHITE_FILL : z ? X ? N.VE.PREMIUM_TIER_2_OLD_GRADIENT_FILL : N.VE.PREMIUM_TIER_2_NEW_GRADIENT_FILL : N.VE.PREMIUM_TIER_2_WHITE_FILL
-    }) : el ? (0, r.jsx)(Z, {}) : (0, r.jsx)(V, {});
+    }) : el ? (0, r.jsx)(Z, {}) : (0, r.jsx)(F, {});
     let ef = J === P.Si.TIER_0 || $ === P.p9.TIER_0 || k === P.p9.TIER_0;
     return (0, r.jsx)(_.Gt, {
       value: M,

@@ -126,14 +126,14 @@ function Z() {
   v.clear(), I.clear(), C.clear(), N.clear(), w.clear(), D.clear(), x.clear(), M = false
 }
 
-function V(e) {
+function F(e) {
   let {
     userId: t
   } = e;
   I.add(t)
 }
 
-function F(e) {
+function V(e) {
   let {
     userId: t
   } = e;
@@ -158,7 +158,7 @@ function Y(e) {
 }
 
 function W(e) {
-  var t, n, r, i, s, l, c, d, f, h, g, b, A, j, M, Z, V, F, Y, W, z;
+  var t, n, r, i, s, l, c, d, f, h, g, b, A, j, M, Z, F, V, Y, W, z;
   let {
     userProfile: q,
     fetchStartedAt: X
@@ -220,7 +220,7 @@ function W(e) {
       } : true,
       pronouns: null != (M = null == (f = q.user_profile) ? true : f.pronouns) ? M : "",
       connectedAccounts: null != (Z = q.connected_accounts.filter(e => o.Z.isSupported(e.type))) ? Z : [],
-      applicationRoleConnections: null != (V = q.application_role_connections) ? V : [],
+      applicationRoleConnections: null != (F = q.application_role_connections) ? F : [],
       premiumSince: J,
       premiumType: q.premium_type,
       premiumGuildSince: $,
@@ -251,7 +251,7 @@ function W(e) {
         guildId: q.guild_member_profile.guild_id,
         banner: q.guild_member_profile.banner,
         accentColor: q.guild_member_profile.accent_color,
-        themeColors: null == (F = q.guild_member_profile) ? true : F.theme_colors,
+        themeColors: null == (V = q.guild_member_profile) ? true : V.theme_colors,
         popoutAnimationParticleType: null == (Y = q.guild_member_profile) ? true : Y.popout_animation_particle_type,
         profileEffect: null != e ? {
           id: e.id,
@@ -531,9 +531,9 @@ class ec extends Chunk750041.Z {
       USER_PROFILE_UPDATE_FAILURE: ee,
       WIDGET_PENDING_SAVE_SUCCESS: et,
       USER_PROFILE_PIN_BADGES_ON_CLIENT: en,
-      MUTUAL_FRIENDS_FETCH_START: V,
+      MUTUAL_FRIENDS_FETCH_START: F,
       MUTUAL_FRIENDS_FETCH_SUCCESS: Y,
-      MUTUAL_FRIENDS_FETCH_FAILURE: F,
+      MUTUAL_FRIENDS_FETCH_FAILURE: V,
       USER_UPDATE: er,
       GUILD_MEMBER_UPDATE: er,
       GUILD_JOIN: ei,

@@ -77,8 +77,8 @@ function w(e) {
       modalContentClassName: G,
       artContainerClassName: B,
       artClassName: Z,
-      headerClassName: V,
-      bodyClassName: F,
+      headerClassName: F,
+      bodyClassName: V,
       transitionState: H,
       onClose: Y,
       onSubscribeClick: W,
@@ -224,7 +224,7 @@ function w(e) {
           children: [(0, r.jsxs)(c.X6q, {
             className: o()(A.header, {
               [A.enhancedHeader]: ea
-            }, V),
+            }, F),
             variant: "heading-xl/bold",
             children: [R, $ ? (0, r.jsx)(_.Z, {
               className: A.betaTag
@@ -233,7 +233,7 @@ function w(e) {
             affinities: ev
           }) : true, ec, (0, r.jsx)(c.Text, {
             variant: ef ? "text-sm/normal" : "text-md/normal",
-            className: o()(F, A.subHeader),
+            className: o()(V, A.subHeader),
             children: j
           })]
         })]

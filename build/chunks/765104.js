@@ -3,7 +3,7 @@
 "use strict";
 let r, i, a, o;
 require.d(exports, {
-  Z: () => F
+  Z: () => V
 }), require("./472816.js"), require("./794429.js"), require("./642613.js"), require("./388685.js"), require("./539854.js"), require("./583741.js");
 var s, Chunk392711 = require("./392711.js"),
   c = require.n(Chunk392711),
@@ -165,12 +165,12 @@ class Z extends(s = Chunk442837.ZP.PersistedStore) {
   }
 }
 
-function V(e, t, n, r) {
+function F(e, t, n, r) {
   let i = null == t || t < n;
   return !(null == e || e > r) && !i
 }
 A(Z, "persistKey", "SummaryStore");
-let F = new Z(Chunk570140.Z, {
+let V = new Z(Chunk570140.Z, {
   CONNECTION_OPEN: () => false,
   CHANNEL_SELECT(e) {
     let {
@@ -264,7 +264,7 @@ let F = new Z(Chunk570140.Z, {
         a = null == e ? true : e.findIndex(e => e.id === (null == i ? true : i.summaryId))
       } else {
         var n;
-        a = null == (n = P[t]) ? true : n.findIndex(t => V(e.topVisibleMessage, e.bottomVisibleMessage, t.startId, t.endId))
+        a = null == (n = P[t]) ? true : n.findIndex(t => F(e.topVisibleMessage, e.bottomVisibleMessage, t.startId, t.endId))
       }
   },
   SET_SELECTED_SUMMARY(e) {

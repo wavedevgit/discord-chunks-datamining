@@ -17,7 +17,7 @@ require.d(exports, {
   X$: () => J,
   X3: () => X,
   b7: () => A,
-  cl: () => V,
+  cl: () => F,
   g9: () => M,
   i3: () => B,
   jW: () => x,
@@ -350,17 +350,17 @@ function Z(e) {
   return e.reduce((e, t) => null == t ? e : t.results.length + e, 0)
 }
 
-function V(e) {
+function F(e) {
   return null == e ? "" : e.map(e => e.getFullMatch()).join("")
 }
-let F = new Chunk349033.ZP;
+let V = new Chunk349033.ZP;
 
 function H(e) {
-  return F.tokenize(e)
+  return V.tokenize(e)
 }
 
 function Y() {
-  return F.clearCache()
+  return V.clearCache()
 }
 
 function W(e) {
@@ -373,7 +373,7 @@ function K(e, t) {
 }
 
 function z() {
-  (0, Chunk532428.WK)(), F.reset(), i()(Chunk532428.ZP).forOwn((e, t) => F.addRule(I({
+  (0, Chunk532428.WK)(), V.reset(), i()(Chunk532428.ZP).forOwn((e, t) => V.addRule(I({
     type: t
   }, e))), Chunk748610.Z.markSearchTokensRefreshed()
 }

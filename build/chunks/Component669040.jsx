@@ -80,7 +80,7 @@ let W = 0,
       channelId: D,
       messageId: x,
       isBurstReaction: L,
-      listHeaderClassName: F,
+      listHeaderClassName: V,
       activeSectionIndex: W,
       upsellGlowOpacity: et,
       emojiListRef: ei
@@ -99,7 +99,7 @@ let W = 0,
         i = t.has(e);
       i ? r.delete(e) : r.add(e), null != n && w.default.track(Z.rMx.EXPRESSION_PICKER_CATEGORY_COLLAPSE_TOGGLED, {
         location: ea.location,
-        tab: V.X1.EMOJI,
+        tab: F.X1.EMOJI,
         collapsed: !i,
         guild_id: n.id
       }), e === B.UX.SOUNDMOJI && w.default.track(Z.rMx.SOUNDMOJI_EMOJI_PICKER_SECTION_TOGGLED, {
@@ -179,12 +179,12 @@ let W = 0,
           g = s === B.En.SOUNDMOJI ? (0, r.jsx)(_.P3F, {
             className: Y.soundmojiViewMore,
             onClick: () => {
-              (0, b.hr)(V.X1.SOUNDBOARD), w.default.track(Z.rMx.SOUNDMOJI_EMOJI_PICKER_VIEW_ALL_CLICK)
+              (0, b.hr)(F.X1.SOUNDBOARD), w.default.track(Z.rMx.SOUNDMOJI_EMOJI_PICKER_VIEW_ALL_CLICK)
             },
             children: H.intl.string(H.t.rUEjBQ)
           }) : true;
         return (0, r.jsx)(I.Z, {
-          className: o()(Y.header, F, {
+          className: o()(Y.header, V, {
             [Y.inactiveNitroHeader]: p,
             [Y.activeNitroHeader]: h
           }),
@@ -194,7 +194,7 @@ let W = 0,
           trailing: g,
           children: u
         }, l)
-      }), [m, t, eu, F, W]),
+      }), [m, t, eu, V, W]),
       eh = (0, S.B4)(),
       em = i.useCallback((e, n) => {
         let i = m[e],
@@ -253,7 +253,7 @@ let W = 0,
       messageId: k,
       isBurstReaction: M,
       listHeaderClassName: G
-    } = e, B = i.useRef(false), V = E.kJ.useStore(e => e.activeCategoryIndex), K = (0, b.Iu)(e => e.searchQuery), z = R.Yk.useSetting(), q = (0, u.e7)([P.default], () => P.default.getCurrentUser()), X = (0, D.I5)(q), {
+    } = e, B = i.useRef(false), F = E.kJ.useStore(e => e.activeCategoryIndex), K = (0, b.Iu)(e => e.searchQuery), z = R.Yk.useSetting(), q = (0, u.e7)([P.default], () => P.default.getCurrentUser()), X = (0, D.I5)(q), {
       location: Q
     } = (0, h.O)(), {
       analyticsLocations: J
@@ -297,7 +297,7 @@ let W = 0,
       nitroLockedSectionStates: f,
       setUpsellGlowOpacity: eo
     }), eE = (0, v.Qs)({
-      activeCategoryIndex: V,
+      activeCategoryIndex: F,
       isScrolling: B,
       listRef: a,
       onActiveCategoryIndexChange: em,
@@ -307,7 +307,7 @@ let W = 0,
     });
     (0, v.Xs)({
       searchQuery: K,
-      activeCategoryIndex: V,
+      activeCategoryIndex: F,
       listRef: a
     });
     let eb = i.useCallback(e => {
@@ -322,7 +322,7 @@ let W = 0,
       ey = f.length > 0;
 
     function eO() {
-      let e = (0, x.Px)(F.p9.TIER_2);
+      let e = (0, x.Px)(V.p9.TIER_2);
       return H.intl.format(H.t.gMVjeX, {
         nitroTierName: e,
         onClick: () => {
@@ -341,7 +341,7 @@ let W = 0,
     }
     return i.useEffect(() => {
       et && w.default.track(Z.rMx.PREMIUM_UPSELL_VIEWED, {
-        type: F.cd.EMOJI_PICKER_FLOATING_UPSELL,
+        type: V.cd.EMOJI_PICKER_FLOATING_UPSELL,
         location: Q,
         location_stack: J
       })

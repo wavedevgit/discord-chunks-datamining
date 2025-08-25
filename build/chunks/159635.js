@@ -813,7 +813,7 @@
           return e[n.type][t](n, r, i)
         }
     },
-    V = function(e) {
+    F = function(e) {
       var t = function(n, r) {
         if (r = r || {}, !Array.isArray(n)) return e(n, t, r);
         for (var i = r.key, a = [], o = null, s = 0; s < n.length; s++) {
@@ -825,7 +825,7 @@
       };
       return t
     },
-    F = function(e) {
+    V = function(e) {
       var t = function(n, r) {
         return (r = r || {}, Array.isArray(n)) ? n.map(function(e) {
           return t(e, r)
@@ -893,8 +893,8 @@
     reactElement: u,
     defaultRawParse: Y,
     ruleOutput: Z,
-    reactFor: V,
-    htmlFor: F,
+    reactFor: F,
+    htmlFor: V,
     defaultParse: function() {
       return "undefined" != typeof console && console.warn("defaultParse is deprecated, please use `defaultImplicitParse`"), z.apply(null, arguments)
     },

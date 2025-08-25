@@ -137,8 +137,8 @@ let T = {
       }))
     }
     let Z = !L && P.fractionalState === h.a$.NONE,
-      V = Z ? s.P3F : "div",
-      F = Z ? {
+      F = Z ? s.P3F : "div",
+      V = Z ? {
         onClick: B
       } : {};
     return (0, r.jsx)(s.ua7, {
@@ -158,7 +158,7 @@ let T = {
         })
       }),
       shouldShow: A !== p.Eu4.NONE,
-      children: e => (0, r.jsxs)(V, v(y({
+      children: e => (0, r.jsxs)(F, v(y({
         className: a()(E.progressBarMarker, {
           [E.progressBarMarkerUnlocked]: L,
           [E.progressBarMarkerLocked]: Z,
@@ -168,7 +168,7 @@ let T = {
         style: {
           left: "".concat(100 * T[A], "%")
         }
-      }, e, F), {
+      }, e, V), {
         children: [!L && (0, r.jsx)("div", {
           className: E.boostedTierIconBackground
         }), L && A === p.Eu4.TIER_3 ? (0, r.jsx)(_.m, {

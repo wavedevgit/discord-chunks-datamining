@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => J,
-  x: () => F
+  x: () => V
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -81,7 +81,7 @@ function B(e, t) {
 
 function Z(e, t) {
   if (null == e) return {};
-  var n, r, i = V(e, t);
+  var n, r, i = F(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -89,14 +89,14 @@ function Z(e, t) {
   return i
 }
 
-function V(e, t) {
+function F(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
+let V = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
   H = 3,
   Y = Chunk647438.memo(function(e) {
     let {
@@ -297,8 +297,8 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       premiumSince: j,
       channel: M,
       guildId: G,
-      className: V,
-      nameplate: F,
+      className: F,
+      nameplate: V,
       hideClanTag: Y = false,
       hideSubtext: W = false,
       hideTooltip: K = false,
@@ -356,7 +356,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       eZ = i.useCallback(e => {
         eO(e)
       }, []),
-      eV = i.useCallback(e => (0, r.jsx)(C.Z, B(U({
+      eF = i.useCallback(e => (0, r.jsx)(C.Z, B(U({
         name: null != b ? b : ef,
         quest: ej,
         memberListItemRef: eh,
@@ -370,7 +370,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       className: k.placeholder
     }) : (0, r.jsx)(c.yRy, {
       targetElementRef: eh,
-      renderPopout: eV,
+      renderPopout: eF,
       position: "bottom",
       shouldShow: ek,
       nudgeAlignIntoViewport: false,
@@ -380,7 +380,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       children: () => (0, r.jsx)(g.Z, U({
         ref: eh,
         selected: n,
-        className: o()(k.member, V, {
+        className: o()(k.member, F, {
           [k.offline]: P === D.Skl.OFFLINE && !n,
           [k.flatBottom]: ek
         }),
@@ -435,7 +435,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
           typingRef: ey,
           currentUser: O
         }),
-        nameplate: F,
+        nameplate: V,
         subText: (0, r.jsx)(Q, {
           hideSubtext: W,
           activities: v,

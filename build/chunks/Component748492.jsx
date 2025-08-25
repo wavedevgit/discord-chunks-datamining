@@ -67,14 +67,14 @@ function j(e) {
     idle: L,
     selectedParticipant: j,
     embeddedActivity: k
-  } = e, M = (0, c.bp)() === R.IlC.POPOUT, U = (0, o.e7)([S.Z], () => S.Z.isVideoEnabled()), G = (0, o.e7)([S.Z], () => Object.values(S.Z.getVideoDevices())[0]), B = false === (null == (t = null == G ? true : G.disabled) || t), Z = (0, d.Z)([s])[0], V = (0, m.Z)(a), {
-    parentAnalyticsLocation: F
+  } = e, M = (0, c.bp)() === R.IlC.POPOUT, U = (0, o.e7)([S.Z], () => S.Z.isVideoEnabled()), G = (0, o.e7)([S.Z], () => Object.values(S.Z.getVideoDevices())[0]), B = false === (null == (t = null == G ? true : G.disabled) || t), Z = (0, d.Z)([s])[0], F = (0, m.Z)(a), {
+    parentAnalyticsLocation: V
   } = (0, u.ZP)(), H = e => {
-    (0, _.v)(F, _.d.CAMERA, e), l.Z.setVideoEnabled(e)
+    (0, _.v)(V, _.d.CAMERA, e), l.Z.setVideoEnabled(e)
   }, Y = () => {
     B ? H(true) : (0, g.Z)()
   }, W = () => {
-    (0, _.v)(F, _.d.POPOUT, true), null != a && (0, N.Z)({
+    (0, _.v)(V, _.d.POPOUT, true), null != a && (0, N.Z)({
       onConfirm: () => h.hP(a)
     })
   };
@@ -102,7 +102,7 @@ function j(e) {
           className: D.leftPipIcon,
           enabled: U,
           cameraUnavailable: !B,
-          hasPermission: V,
+          hasPermission: F,
           onChange: H,
           onCameraUnavailable: Y
         }), null != a && (0, r.jsx)(E.Z, {

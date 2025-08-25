@@ -197,7 +197,7 @@ function Z(e) {
   return C(t.id), true
 }
 
-function V(e) {
+function F(e) {
   let {
     eventException: t
   } = e, n = y.get(t.event_id);
@@ -209,7 +209,7 @@ function V(e) {
   })), true
 }
 
-function F(e) {
+function V(e) {
   let {
     eventException: t
   } = e, n = y.get(t.event_id);
@@ -382,9 +382,9 @@ let en = new et(Chunk570140.Z, {
   GUILD_SCHEDULED_EVENT_USERS_FETCH_SUCCESS: W,
   GUILD_SCHEDULED_EVENT_USER_COUNTS_FETCH_SUCCESS: q,
   INVITE_RESOLVE_SUCCESS: Q,
-  GUILD_SCHEDULED_EVENT_EXCEPTION_CREATE: V,
-  GUILD_SCHEDULED_EVENT_EXCEPTION_UPDATE: V,
-  GUILD_SCHEDULED_EVENT_EXCEPTION_DELETE: F,
+  GUILD_SCHEDULED_EVENT_EXCEPTION_CREATE: F,
+  GUILD_SCHEDULED_EVENT_EXCEPTION_UPDATE: F,
+  GUILD_SCHEDULED_EVENT_EXCEPTION_DELETE: V,
   GUILD_SCHEDULED_EVENT_EXCEPTIONS_DELETE: H,
   LOGOUT: X
 })

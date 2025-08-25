@@ -311,7 +311,7 @@ function Z(e) {
   })
 }
 
-function V(e) {
+function F(e) {
   let {
     isUpdate: t,
     currentInvoice: n,
@@ -356,7 +356,7 @@ function V(e) {
   })
 }
 
-function F(e) {
+function V(e) {
   var t;
   let {
     proratedInvoice: n,
@@ -417,7 +417,7 @@ function H(e) {
   }, c), [y] = (0, b.ED)(E), [O, I] = i.useState(false);
   return (0, r.jsxs)(r.Fragment, {
     children: [d ? null : (0, r.jsx)(v.P7, {
-      children: (0, r.jsx)(F, {
+      children: (0, r.jsx)(V, {
         proratedInvoice: n,
         renewalInvoice: a,
         isTrial: l,
@@ -433,7 +433,7 @@ function H(e) {
           direction: O ? h.Z.Directions.UP : h.Z.Directions.DOWN,
           className: C.subscriptionDetailsToggleCaret
         })]
-      }), O ? (0, r.jsx)(V, {
+      }), O ? (0, r.jsx)(F, {
         isUpdate: s,
         currentInvoice: y,
         newInvoice: a,

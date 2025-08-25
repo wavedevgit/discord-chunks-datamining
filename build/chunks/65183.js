@@ -100,17 +100,17 @@
   }
 
   function B(e, t) {
-    return V(e, t, 0)
+    return F(e, t, 0)
   }
 
   function Z(e, t) {
-    return V(e, t, t)
+    return F(e, t, t)
   }
 
-  function V(e, t, n) {
+  function F(e, t, n) {
     return true === e ? n : e < 0 ? Math.max(0, t + e) : true === t ? e : Math.min(t, e)
   }
-  var F = 0,
+  var V = 0,
     H = 1,
     Y = 2,
     W = "function" == typeof Symbol && Symbol.iterator,
@@ -175,7 +175,7 @@
   }
   q.prototype.toString = function() {
     return "[Iterator]"
-  }, q.KEYS = F, q.VALUES = H, q.ENTRIES = Y, q.prototype.inspect = q.prototype.toSource = function() {
+  }, q.KEYS = V, q.VALUES = H, q.ENTRIES = Y, q.prototype.inspect = q.prototype.toSource = function() {
     return this.toString()
   }, q.prototype[z] = function() {
     return this
@@ -540,8 +540,8 @@
 
   function eU(e) {
     var t;
-    if (eV && true !== (t = r.get(e)) || true !== (t = e[eH]) || !eB && (true !== (t = e.propertyIsEnumerable && e.propertyIsEnumerable[eH]) || true !== (t = eZ(e)))) return t;
-    if (t = ++eF, 0x40000000 & eF && (eF = 0), eV) r.set(e, t);
+    if (eF && true !== (t = r.get(e)) || true !== (t = e[eH]) || !eB && (true !== (t = e.propertyIsEnumerable && e.propertyIsEnumerable[eH]) || true !== (t = eZ(e)))) return t;
+    if (t = ++eV, 0x40000000 & eV && (eV = 0), eF) r.set(e, t);
     else if (true !== eG && false === eG(e)) throw Error("Non-extensible objects are not allowed as keys.");
     else if (eB) Object.defineProperty(e, eH, {
       enumerable: false,
@@ -573,9 +573,9 @@
         return e.documentElement && e.documentElement.uniqueID
     }
   }
-  var eV = "function" == typeof WeakMap;
-  eV && (r = new WeakMap);
-  var eF = 0,
+  var eF = "function" == typeof WeakMap;
+  eF && (r = new WeakMap);
+  var eV = 0,
     eH = "__immutablehash__";
   "function" == typeof Symbol && (eH = Symbol(eH));
   var eY = 16,
@@ -1254,11 +1254,11 @@
     this._iter = e, this.size = e.size
   }
 
-  function tV(e) {
+  function tF(e) {
     this._iter = e, this.size = e.size
   }
 
-  function tF(e) {
+  function tV(e) {
     this._iter = e, this.size = e.size
   }
 
@@ -1292,7 +1292,7 @@
           return e
         })
       }
-      return e.__iterator(t === H ? F : H, n)
+      return e.__iterator(t === H ? V : H, n)
     }, t
   }
 
@@ -1428,7 +1428,7 @@
         for (; s++ < o;) a.next();
         if (++l > i) return Q();
         var e = a.next();
-        return r || t === H ? e : t === F ? X(t, l - 1, true, e) : X(t, l - 1, e.value[1], e)
+        return r || t === H ? e : t === V ? X(t, l - 1, true, e) : X(t, l - 1, e.value[1], e)
       })
     }, c
   }
@@ -1480,7 +1480,7 @@
         do {
           if ((e = s.next()).done)
             if (r || i === H) return e;
-            else if (i === F) return X(i, c++, true, e);
+            else if (i === V) return X(i, c++, true, e);
           else return X(i, c++, e.value[1], e);
           var d = e.value;
           a = d[0], u = d[1], l && (l = t.call(n, u, a, o))
@@ -1753,22 +1753,22 @@
       var t = n.next();
       return t.done ? t : X(e, r++, t.value, t)
     })
-  }, d(tV, eo), tV.prototype.has = function(e) {
+  }, d(tF, eo), tF.prototype.has = function(e) {
     return this._iter.includes(e)
-  }, tV.prototype.__iterate = function(e, t) {
+  }, tF.prototype.__iterate = function(e, t) {
     var n = this;
     return this._iter.__iterate(function(t) {
       return e(t, t, n)
     }, t)
-  }, tV.prototype.__iterator = function(e, t) {
+  }, tF.prototype.__iterator = function(e, t) {
     var n = this._iter.__iterator(H, t);
     return new q(function() {
       var t = n.next();
       return t.done ? t : X(e, t.value, t.value, t)
     })
-  }, d(tF, ei), tF.prototype.entrySeq = function() {
+  }, d(tV, ei), tV.prototype.entrySeq = function() {
     return this._iter.toSeq()
-  }, tF.prototype.__iterate = function(e, t) {
+  }, tV.prototype.__iterate = function(e, t) {
     var n = this;
     return this._iter.__iterate(function(t) {
       if (t) {
@@ -1777,7 +1777,7 @@
         return e(r ? t.get(1) : t[1], r ? t.get(0) : t[0], n)
       }
     }, t)
-  }, tF.prototype.__iterator = function(e, t) {
+  }, tV.prototype.__iterator = function(e, t) {
     var n = this._iter.__iterator(H, t);
     return new q(function() {
       for (;;) {
@@ -1791,7 +1791,7 @@
         }
       }
     })
-  }, tZ.prototype.cacheResult = tB.prototype.cacheResult = tV.prototype.cacheResult = tF.prototype.cacheResult = nn, d(na, eP), na.prototype.toString = function() {
+  }, tZ.prototype.cacheResult = tB.prototype.cacheResult = tF.prototype.cacheResult = tV.prototype.cacheResult = nn, d(na, eP), na.prototype.toString = function() {
     return this.__toString(nl(this) + " {", "}")
   }, na.prototype.has = function(e) {
     return this._defaultValues.hasOwnProperty(e)
@@ -2121,7 +2121,7 @@
       return nd(g(this) ? this.valueSeq() : this)
     },
     toSetSeq: function() {
-      return new tV(this)
+      return new tF(this)
     },
     toSeq: function() {
       return E(this) ? this.toIndexedSeq() : g(this) ? this.toKeyedSeq() : this.toSetSeq()
@@ -2185,7 +2185,7 @@
       }), t
     },
     keys: function() {
-      return this.__iterator(F)
+      return this.__iterator(V)
     },
     map: function(e, t) {
       return t5(this, tY(this, e, t))
@@ -2256,7 +2256,7 @@
       return t5(this, t0(this, e, true))
     },
     fromEntrySeq: function() {
-      return new tF(this)
+      return new tV(this)
     },
     get: function(e, t) {
       return this.find(function(t, n) {

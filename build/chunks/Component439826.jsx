@@ -178,7 +178,7 @@ function G(e) {
     onCtxMenuOpen: x,
     onCtxMenuSelect: j,
     sourceQuestContent: G
-  } = e, B = (0, p.PB)(f), Z = (0, d.ZP)(), V = ((0, l.wj)(Z) ? P.BRd.DARK : P.BRd.LIGHT) === P.BRd.DARK, F = (0, m.tP)(f), H = (null == (t = f.userStatus) ? true : t.claimedAt) != null, Y = (0, m.B6)(f.config.expiresAt, {
+  } = e, B = (0, p.PB)(f), Z = (0, d.ZP)(), F = ((0, l.wj)(Z) ? P.BRd.DARK : P.BRd.LIGHT) === P.BRd.DARK, V = (0, m.tP)(f), H = (null == (t = f.userStatus) ? true : t.claimedAt) != null, Y = (0, m.B6)(f.config.expiresAt, {
     month: "numeric",
     day: "numeric"
   }), W = (null == (n = f.userStatus) ? true : n.enrolledAt) != null, K = (null == (a = f.userStatus) ? true : a.completedAt) != null, {
@@ -216,8 +216,8 @@ function G(e) {
       })
     }), (0, r.jsx)("div", {
       className: o()(D.overlay, {
-        [D.darkThemeGradient]: V,
-        [D.lightThemeGradient]: !V
+        [D.darkThemeGradient]: F,
+        [D.lightThemeGradient]: !F
       })
     }), (0, r.jsxs)("div", {
       className: D.positionContentOverBackground,
@@ -281,13 +281,13 @@ function G(e) {
           className: D.bottomRow,
           children: [(0, r.jsx)(c.Text, {
             variant: "text-sm/medium",
-            color: V ? "text-muted" : "always-white",
+            color: F ? "text-muted" : "always-white",
             children: w.intl.format(w.t.buEvBw, {
               brandName: null != (u = null == (s = f.config.cosponsorMetadata) ? true : s.name) ? u : f.config.messages.gamePublisher
             })
-          }), F || H ? null : (0, r.jsx)(c.Text, {
+          }), V || H ? null : (0, r.jsx)(c.Text, {
             variant: "text-sm/medium",
-            color: V ? "text-muted" : "always-white",
+            color: F ? "text-muted" : "always-white",
             children: w.intl.format(w.t["7D8r4O"], {
               expiryDate: Y
             })
@@ -297,7 +297,7 @@ function G(e) {
         quest: f,
         errorHints: y,
         warningHints: O,
-        isDarkTheme: V,
+        isDarkTheme: F,
         sourceQuestContent: G
       })]
     })]

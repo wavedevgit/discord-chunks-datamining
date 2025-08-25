@@ -131,7 +131,7 @@ function C(e) {
       size: "xs",
       color: "currentColor"
     })
-  }) : null, V = null != P ? (0, r.jsx)(c.eee, {
+  }) : null, F = null != P ? (0, r.jsx)(c.eee, {
     "aria-label": E.intl.string(E.t.wuRE8P),
     className: b.linkIcon,
     href: P,
@@ -139,7 +139,7 @@ function C(e) {
       size: "xs",
       color: c.TVs.colors.APP_MESSAGE_EMBED_SECONDARY_TEXT.css
     })
-  }) : null, F = null != y, H = null != T && false === U, Y = F || H, W = 0 === C ? b.bannerAspectRatioBot : b.bannerAspectRatioActivity, K = i.useRef(null), z = i.useCallback(() => {
+  }) : null, V = null != y, H = null != T && false === U, Y = V || H, W = 0 === C ? b.bannerAspectRatioBot : b.bannerAspectRatioActivity, K = i.useRef(null), z = i.useCallback(() => {
     let e = K.current;
     null != e && ("hidden" === getComputedStyle(e).visibility ? e.pause() : e.play())
   }, []), q = i.useMemo(() => !!H && new URL(T).pathname.endsWith(".gif"), [H, T]), X = i.useMemo(() => {
@@ -171,7 +171,7 @@ function C(e) {
         loop: true,
         muted: true,
         className: b.videoBanner
-      })), F && (0, r.jsx)("div", {
+      })), V && (0, r.jsx)("div", {
         className: b.staticBanner,
         style: {
           backgroundImage: "url(".concat(y, ")")
@@ -190,7 +190,7 @@ function C(e) {
             variant: "text-sm/semibold",
             color: "none",
             children: n
-          }), null != Z ? Z : V]
+          }), null != Z ? Z : F]
         }), (0, r.jsxs)("div", {
           className: b.contentAndCopyButtonWrapper,
           children: [(0, r.jsxs)(A, {
@@ -216,7 +216,7 @@ function C(e) {
                 children: p
               })]
             })]
-          }), null == n && (null != Z ? Z : V)]
+          }), null == n && (null != Z ? Z : F)]
         }), w.length > 0 && (0, r.jsx)("div", {
           className: b.actionWrapper,
           children: w.map((e, t) => {

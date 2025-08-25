@@ -40,8 +40,8 @@ var r, Chunk98405 = require("./98405.js"),
   G = Chunk46015("".replace),
   B = Chunk46015([].shift),
   Z = Chunk46015("".split),
-  V = Chunk46015("".slice),
-  F = Chunk46015("".toLowerCase),
+  F = Chunk46015("".slice),
+  V = Chunk46015("".toLowerCase),
   H = Chunk46015([].unshift),
   Y = "Invalid authority",
   W = "Invalid scheme",
@@ -64,7 +64,7 @@ var r, Chunk98405 = require("./98405.js"),
     if (l.length && "" === l[l.length - 1] && l.length--, (t = l.length) > 4) return e;
     for (r = 0, n = []; r < t; r++) {
       if ("" === (i = l[r])) return e;
-      if (a = 10, i.length > 1 && "0" === x(i, 0) && (a = L(J, i) ? 16 : 8, i = V(i, 8 === a ? 1 : 2)), "" === i) o = 0;
+      if (a = 10, i.length > 1 && "0" === x(i, 0) && (a = L(J, i) ? 16 : 8, i = F(i, 8 === a ? 1 : 2)), "" === i) o = 0;
       else {
         if (!L(10 === a ? ee : 8 === a ? $ : et, i)) return e;
         o = P(i, a)
@@ -189,13 +189,13 @@ var r, Chunk98405 = require("./98405.js"),
   },
   eE = function(e) {
     var t;
-    return e.length > 1 && eg(V(e, 0, 2)) && (2 === e.length || "/" === (t = x(e, 2)) || "\\" === t || "?" === t || "#" === t)
+    return e.length > 1 && eg(F(e, 0, 2)) && (2 === e.length || "/" === (t = x(e, 2)) || "\\" === t || "?" === t || "#" === t)
   },
   eb = function(e) {
-    return "." === e || "%2e" === F(e)
+    return "." === e || "%2e" === V(e)
   },
   ey = function(e) {
-    return ".." === (e = F(e)) || "%2e." === e || ".%2e" === e || "%2e%2e" === e
+    return ".." === (e = V(e)) || "%2e." === e || ".%2e" === e || "%2e%2e" === e
   },
   eO = {},
   ev = {},
@@ -218,17 +218,17 @@ var r, Chunk98405 = require("./98405.js"),
   eG = {},
   eB = {},
   eZ = {},
-  eV = function(e, t, n) {
+  eF = function(e, t, n) {
     var r, i, a, o = b(e);
     if (t) {
       if (i = this.parse(o)) throw new R(i);
       this.searchParams = null
     } else {
-      if (true !== n && (r = new eV(n, true)), i = this.parse(o, null, r)) throw new R(i);
+      if (true !== n && (r = new eF(n, true)), i = this.parse(o, null, r)) throw new R(i);
       (a = C(new A)).bindURL(this), this.searchParams = a
     }
   };
-eV.prototype = {
+eF.prototype = {
   type: "URL",
   parse: function(e, t, n) {
     var i, a, o, s, l = this,
@@ -241,7 +241,7 @@ eV.prototype = {
     for (e = b(e), t || (l.scheme = "", l.username = "", l.password = "", l.host = null, l.port = null, l.path = [], l.query = null, l.fragment = null, l.cannotBeABaseURL = false, e = G(e, ei, ""), e = G(e, ea, "$1")), i = h(e = G(e, eo, "")); u <= i.length;) {
       switch (a = i[u], c) {
         case eO:
-          if (a && L(q, a)) d += F(a), c = ev;
+          if (a && L(q, a)) d += V(a), c = ev;
           else {
             if (t) return W;
             c = eI;
@@ -249,7 +249,7 @@ eV.prototype = {
           }
           break;
         case ev:
-          if (a && (L(X, a) || "+" === a || "-" === a || "." === a)) d += F(a);
+          if (a && (L(X, a) || "+" === a || "-" === a || "." === a)) d += V(a);
           else if (":" === a) {
             if (t && (l.isSpecial() !== _(em, d) || "file" === d && (l.includesCredentials() || null !== l.port) || "file" === l.scheme && !l.host)) return;
             if (l.scheme = d, t) {
@@ -438,7 +438,7 @@ eV.prototype = {
   parseHost: function(e) {
     var t, n, r;
     if ("[" === x(e, 0)) {
-      if ("]" !== x(e, e.length - 1) || !(t = el(V(e, 1, false)))) return K;
+      if ("]" !== x(e, e.length - 1) || !(t = el(F(e, 1, false)))) return K;
       this.host = t
     } else if (this.isSpecial()) {
       if (L(en, e = E(e)) || null === (t = es(e))) return K;
@@ -485,7 +485,7 @@ eV.prototype = {
     var e = this.scheme,
       t = this.port;
     if ("blob" === module) try {
-      return new eF(module.path[0]).origin
+      return new eV(module.path[0]).origin
     } catch (e) {
       return "null"
     }
@@ -551,7 +551,7 @@ eV.prototype = {
     return module ? "?" + module : ""
   },
   setSearch: function(e) {
-    "" === (e = b(e)) ? this.query = null: ("?" === x(e, 0) && (e = V(e, 1)), this.query = "", this.parse(e, eB)), this.searchParams.update()
+    "" === (e = b(e)) ? this.query = null: ("?" === x(e, 0) && (e = F(e, 1)), this.query = "", this.parse(e, eB)), this.searchParams.update()
   },
   getSearchParams: function() {
     return this.searchParams.facade
@@ -565,19 +565,19 @@ eV.prototype = {
       this.fragment = null;
       return
     }
-    "#" === x(e, 0) && (e = V(e, 1)), this.fragment = "", this.parse(e, eZ)
+    "#" === x(e, 0) && (e = F(e, 1)), this.fragment = "", this.parse(e, eZ)
   },
   update: function() {
     this.query = this.searchParams.serialize() || null
   }
 };
-var eF = function(e) {
+var eV = function(e) {
     var t = f(this, eH),
       n = O(arguments.length, 1) > 1 ? arguments[1] : true,
-      r = T(t, new eV(e, false, n));
+      r = T(t, new eF(e, false, n));
     a || (t.href = r.serialize(), t.origin = r.getOrigin(), t.protocol = r.getProtocol(), t.username = r.getUsername(), t.password = r.getPassword(), t.host = r.getHost(), t.hostname = r.getHostname(), t.port = r.getPort(), t.pathname = r.getPathname(), t.search = r.getSearch(), t.searchParams = r.getSearchParams(), t.hash = r.getHash())
   },
-  eH = eF.prototype,
+  eH = eV.prototype,
   eY = function(e, t) {
     return {
       get: function() {
@@ -601,13 +601,13 @@ if (Chunk507604 && (Chunk573078(eH, "href", eY("serialize", "setHref")), Chunk57
   }), N) {
   var eW = N.createObjectURL,
     eK = N.revokeObjectURL;
-  eW && Chunk556585(eF, "createObjectURL", Chunk48657(eW, N)), eK && Chunk556585(eF, "revokeObjectURL", Chunk48657(eK, N))
+  eW && Chunk556585(eV, "createObjectURL", Chunk48657(eW, N)), eK && Chunk556585(eV, "revokeObjectURL", Chunk48657(eK, N))
 }
-Chunk25124(eF, "URL"), Chunk98405({
+Chunk25124(eV, "URL"), Chunk98405({
   global: true,
   constructor: true,
   forced: !Chunk394227,
   sham: !Chunk507604
 }, {
-  URL: eF
+  URL: eV
 })

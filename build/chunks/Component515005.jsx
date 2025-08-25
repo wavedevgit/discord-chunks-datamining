@@ -102,8 +102,8 @@ let R = (0, Chunk468194.Mg)(Chunk940992.__invalid_stickerPickerPreviewDimensions
       stickerPadding: G = P,
       stickerSize: B = R,
       ownedStickerPacks: Z,
-      enlargeOnInteraction: V = false,
-      channel: F,
+      enlargeOnInteraction: F = false,
+      channel: V,
       currentUser: H,
       checkSendability: Y = true
     } = e, {
@@ -125,7 +125,7 @@ let R = (0, Chunk468194.Mg)(Chunk940992.__invalid_stickerPickerPreviewDimensions
       children: U.map(e => {
         var d;
         let f = e.visibleRowIndex === (null == N ? true : N.rowIndex) && e.columnIndex === (null == N ? true : N.columnIndex),
-          I = e.type === m.al.STICKER && V && f,
+          I = e.type === m.al.STICKER && F && f,
           S = t => {
             if ((null == D ? true : D.current) === true || (null == x ? true : x.current) === true) return;
             let n = t.altKey;
@@ -168,7 +168,7 @@ let R = (0, Chunk468194.Mg)(Chunk940992.__invalid_stickerPickerPreviewDimensions
                 onMouseMove: R,
                 onClick: P,
                 style: q,
-                children: [!V && (0, r.jsx)("div", {
+                children: [!F && (0, r.jsx)("div", {
                   className: v.inspectedIndicator
                 }), (0, r.jsx)("div", {
                   className: v.iconWrapper,
@@ -214,16 +214,16 @@ let R = (0, Chunk468194.Mg)(Chunk940992.__invalid_stickerPickerPreviewDimensions
                 children: (0, E.C)(e.sticker)
               }), (0, r.jsxs)("div", {
                 "aria-hidden": true,
-                children: [!V && (0, r.jsx)("div", {
+                children: [!F && (0, r.jsx)("div", {
                   className: v.inspectedIndicator
                 }), (0, r.jsx)(E.Z, {
                   className: o()(v.stickerNode, {
-                    [v.stickerNodeDimmed]: V && !f && null != N && false !== N.rowIndex && false !== N.columnIndex,
+                    [v.stickerNodeDimmed]: F && !f && null != N && false !== N.rowIndex && false !== N.columnIndex,
                     [v.stickerNodeHidden]: I,
-                    [v.stickerUnsendable]: Y && !(0, h.kl)(e.sticker, H, F)
+                    [v.stickerUnsendable]: Y && !(0, h.kl)(e.sticker, H, V)
                   }),
                   disableAnimation: !f && !a,
-                  enlargeOnInteraction: V,
+                  enlargeOnInteraction: F,
                   isInteracting: f,
                   maskAsset: f,
                   sticker: e.sticker,

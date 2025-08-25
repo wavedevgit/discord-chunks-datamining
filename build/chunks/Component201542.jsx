@@ -96,8 +96,8 @@ let N = Chunk647438.memo(function(e) {
     k = (0, s.e7)([d.ZP], () => d.ZP.getPlaybackRate(d.Ir.VOICE_MESSAGE)),
     [M, U] = i.useState(j > 0),
     [G, B] = i.useState(j),
-    [Z, V] = i.useState(y),
-    [F, H] = i.useState(false),
+    [Z, F] = i.useState(y),
+    [V, H] = i.useState(false),
     [Y, W] = i.useState(false),
     [K, z] = i.useState(false),
     [q, X] = i.useState(false),
@@ -112,7 +112,7 @@ let N = Chunk647438.memo(function(e) {
     }, []),
     ei = i.useCallback(e => {
       let t = e.currentTarget.duration;
-      isNaN(t) || V(t)
+      isNaN(t) || F(t)
     }, []),
     ea = i.useCallback(e => {
       null != y && null != x && (0, u.U)(x, e, y)
@@ -140,8 +140,8 @@ let N = Chunk647438.memo(function(e) {
       H(0 === t), ee(t), null == _ || _(t)
     }, [_]),
     ed = i.useCallback(() => {
-      H(!F), null == h || h(!F)
-    }, [F, h]),
+      H(!V), null == h || h(!V)
+    }, [V, h]),
     ef = i.useCallback(() => {
       z(true)
     }, []),
@@ -209,7 +209,7 @@ let N = Chunk647438.memo(function(e) {
       onEnded: es,
       onLoadedMetadata: ei,
       onError: ec,
-      muted: F,
+      muted: V,
       volume: $,
       playbackRate: k
     })
@@ -221,7 +221,7 @@ let N = Chunk647438.memo(function(e) {
     onEnded: es,
     onLoadedMetadata: ei,
     onError: ec,
-    muted: F,
+    muted: V,
     volume: $,
     playbackRate: k,
     playing: Y && !K,
@@ -279,7 +279,7 @@ let N = Chunk647438.memo(function(e) {
       iconClassName: v.volumeButtonIcon,
       iconColor: "currentColor",
       sliderWrapperClassName: v.volumeSlider,
-      muted: F,
+      muted: V,
       value: (0, g.P)($, 1),
       minValue: 0,
       maxValue: 1,

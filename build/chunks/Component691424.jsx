@@ -74,13 +74,13 @@ function Z(e, t) {
   return n
 }
 
-function V(e, t) {
+function F(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : Z(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function F(e) {
+function V(e) {
   let {
     emojiTooltipPosition: t = "top",
     enableEmojiClick: n = true
@@ -121,7 +121,7 @@ function H(e) {
       } = a, d = _.ZP.getDisambiguatedEmojiContext(s).getById(e.emojiId);
       if (null != d) {
         let t = d.require_colons;
-        e = V(B({}, e), {
+        e = F(B({}, e), {
           name: t ? ":".concat(d.name, ":") : d.name
         })
       }
@@ -380,10 +380,10 @@ let K = {
 };
 
 function z(e) {
-  return V(B({}, K), {
+  return F(B({}, K), {
     link: (0, x.Z)(e),
     devLink: (0, w.Z)(e),
-    emoji: F(e),
+    emoji: V(e),
     customEmoji: H(e),
     channelMention: (0, R.Z)(e),
     commandMention: (0, P.ZP)(e),

@@ -74,12 +74,12 @@ function Z(e, t) {
   return n
 }
 
-function V(e, t) {
+function F(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : Z(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let F = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
+let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
   H = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKERS_LIST_PADDING_LEFT),
   Y = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKERS_LIST_PADDING_RIGHT),
   W = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_PREVIEW_MARGIN),
@@ -132,7 +132,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
       eO = i.useCallback(e => {
         "" === ea ? (0, S.On)(e) : (0, S.Yk)(e, ea, ey), v(e.sticker, N.V0.STICKER_PICKER)
       }, [v, ea, ey]),
-      ev = null != eu && eu > F,
+      ev = null != eu && eu > V,
       {
         rowCount: eI,
         rowCountBySection: eT,
@@ -231,7 +231,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
         className: U.emptyState,
         onClose: G
       }) : (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)("div", V(B({
+        children: [(0, r.jsx)("div", F(B({
           ref: X,
           className: U.listWrapper,
           id: k.Vr
@@ -268,7 +268,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
     role: "tabpanel",
     children: e.isLoading ? (0, r.jsx)(u.$jN, {
       className: U.loadingIndicator
-    }) : (0, r.jsx)(er, V(B({}, e), {
+    }) : (0, r.jsx)(er, F(B({}, e), {
       ref: t
     }))
   })),

@@ -90,14 +90,14 @@ function Z() {
   })
 }
 
-function V(e) {
+function F(e) {
   if (null != e) {
     let t = v.ZP.getDefaultChannel(e);
     if (null != t) return t.id
   }
 }
 
-function F(e, t) {
+function V(e, t) {
   if (null == e || null == t || U[e] === t) returnfalse;
   let n = O.Z.getChannel(t),
     r = null != n && (0, E.zi)(n.type),
@@ -120,7 +120,7 @@ function Y() {
     null != t && (O.Z.hasChannel(t) || G.has(t)) || (delete U[n], e = true)
   }), exports.forEach(e => {
     let t = k[e.id];
-    null == U[e.id] && F(e.id, t)
+    null == U[e.id] && V(e.id, t)
   }), null != l && Date.now() - l >= L && (s = null, e = true), module
 }
 
@@ -133,7 +133,7 @@ function W(e) {
 }
 
 function K(e) {
-  r = e.sessionId, s = e.selectedVoiceChannelId, k = {}, M = {}, a = e.selectedChannelId, k[e.selectedGuildId] = e.selectedChannelId, F(e.selectedGuildId, a), Y()
+  r = e.sessionId, s = e.selectedVoiceChannelId, k = {}, M = {}, a = e.selectedChannelId, k[e.selectedGuildId] = e.selectedChannelId, V(e.selectedGuildId, a), Y()
 }
 
 function z() {
@@ -146,7 +146,7 @@ function q(e) {
     channelId: n
   } = e;
   if (true === t) returnfalse;
-  null == n && (n = V(t)), null != a && n !== a && (i = a), a = n, F(t, n), k[B(t)] !== n && (M[B(t)] = k[B(t)], k[B(t)] = a), Z()
+  null == n && (n = F(t)), null != a && n !== a && (i = a), a = n, V(t, n), k[B(t)] !== n && (M[B(t)] = k[B(t)], k[B(t)] = a), Z()
 }
 
 function X(e) {
@@ -156,7 +156,7 @@ function X(e) {
   if (null == t) {
     let e = O.Z.getChannel(s),
       t = null == e ? true : e.guild_id;
-    null != t && t !== A.Z.getGuildId() && k[t] === s && (k[t] = V(t))
+    null != t && t !== A.Z.getGuildId() && k[t] === s && (k[t] = F(t))
   }
   s = t, Z()
 }
@@ -169,7 +169,7 @@ function Q(e, t, n) {
   }
   let i = null != I.Z.getGuild(t) ? t : null,
     a = false;
-  s === e && (s = null, a = true), k[B(i)] === e && (k[B(i)] = r && null != n ? n : V(B(i)), A.Z.getGuildId() === i && (0, g.dL)(C.Z5c.CHANNEL(t, k[B(i)])), a = true), null != i && U[i] === e && (delete U[i], a = true), a && Z()
+  s === e && (s = null, a = true), k[B(i)] === e && (k[B(i)] = r && null != n ? n : F(B(i)), A.Z.getGuildId() === i && (0, g.dL)(C.Z5c.CHANNEL(t, k[B(i)])), a = true), null != i && U[i] === e && (delete U[i], a = true), a && Z()
 }
 
 function J(e) {
@@ -196,8 +196,8 @@ function ee(e) {
     guild: t
   } = e;
   if (null == k[t.id]) {
-    let e = V(t.id);
-    k[t.id] = e, F(t.id, e), Z()
+    let e = F(t.id);
+    k[t.id] = e, V(t.id, e), Z()
   }
 }
 
@@ -258,7 +258,7 @@ function ea(e) {
     case C.d4z.GUILD_ANNOUNCEMENT:
     case C.d4z.GUILD_TEXT:
       let n = t.guild_id;
-      if (null != n && null == U[n] && (U[n] = t.id), null != n && null == k[n]) return k[n] = V(n), true
+      if (null != n && null == U[n] && (U[n] = t.id), null != n && null == k[n]) return k[n] = F(n), true
   }
   returnfalse
 }
@@ -284,7 +284,7 @@ class eo extends(u = Chunk442837.ZP.Store) {
     var t, n;
     let r = !(arguments.length > 1) || true === arguments[1] || arguments[1],
       i = B(e === C.ME ? null : null != (t = null != e ? e : A.Z.getGuildId()) ? t : null);
-    return r ? null != (n = k[i]) ? n : V(i) : k[i]
+    return r ? null != (n = k[i]) ? n : F(i) : k[i]
   }
   getVoiceChannelId() {
     return Chunk131951.Z.isSupported() ? s : null

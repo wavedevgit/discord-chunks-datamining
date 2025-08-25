@@ -153,13 +153,13 @@ function B(e) {
     [C.gameHasSubgame]: null != h && h.length > 0
   });
 
-  function V() {
+  function F() {
     d.Z.deleteEntry(I), null == h || h.forEach(e => {
       d.Z.deleteEntry(e)
     })
   }
 
-  function F() {
+  function V() {
     I.name !== U && d.Z.editName(I, U)
   }
 
@@ -235,7 +235,7 @@ function B(e) {
       type: "text",
       maxLength: 128,
       value: U,
-      onBlur: F,
+      onBlur: V,
       onKeyDown: H,
       onChange: e => G(e.target.value)
     })
@@ -367,7 +367,7 @@ function B(e) {
   function $() {
     return (0, r.jsx)(f.Z, {
       className: C.removeGame,
-      onClick: V
+      onClick: F
     })
   }
   let ee = null != P && (0, p.rH)(I) === (0, p.rH)(P),
@@ -411,7 +411,7 @@ function Z() {
   })
 }
 
-function V(e) {
+function F(e) {
   let {
     children: t
   } = e;
@@ -425,7 +425,7 @@ function V(e) {
     }), t]
   })
 }
-let F = (0, Chunk251625.oH)(function() {
+let V = (0, Chunk251625.oH)(function() {
     for (var e = arguments.length, t = Array(module), n = 0; require < module; require++) exports[require] = arguments[require];
     return new Set(exports.map(e => e.exePath))
   }),
@@ -438,7 +438,7 @@ let F = (0, Chunk251625.oH)(function() {
       overrideExePaths: d
     } = (0, s.cj)([p.ZP], () => ({
       runningGame: p.ZP.getVisibleGame(),
-      overrideExePaths: F(...p.ZP.getOverrides())
+      overrideExePaths: V(...p.ZP.getOverrides())
     })), {
       gameHistory: f,
       robloxSubgameHistory: _
@@ -448,7 +448,7 @@ let F = (0, Chunk251625.oH)(function() {
     }), [a]), m = i.useRef(null);
 
     function b() {
-      return 0 === f.length ? (0, r.jsx)(V, {
+      return 0 === f.length ? (0, r.jsx)(F, {
         children: (0, r.jsx)(u.OZU, {
           children: A.intl.string(A.t["1yiJws"])
         })

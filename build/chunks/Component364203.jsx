@@ -74,12 +74,12 @@ function Z(e, t) {
   return n
 }
 
-function V(e, t) {
+function F(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : Z(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let F = 88,
+let V = 88,
   H = "remove-wallpaper",
   Y = .5,
   W = 250;
@@ -207,7 +207,7 @@ function q(e) {
     children: e => (0, r.jsx)("div", {
       ref: h,
       className: o()(d, t && U.wallpaperSelected),
-      children: (0, r.jsx)(_.P3F, V(B({}, e, p), {
+      children: (0, r.jsx)(_.P3F, F(B({}, e, p), {
         className: U.wallpaperSelectionClickableContainer,
         tabIndex: p.tabIndex,
         onClick: t ? L.dG4 : () => n(a),
@@ -253,8 +253,8 @@ function X(e) {
     }), (0, r.jsx)("img", {
       src: (0, E.I)(o.icon),
       alt: s,
-      width: F,
-      height: F,
+      width: V,
+      height: V,
       draggable: false,
       className: U.wallpaperImage
     })]
@@ -374,11 +374,11 @@ let ee = function(e) {
   let G = (0, u.e7)([C.Z], () => C.Z.isFetchingWallpapers),
     B = (0, u.e7)([C.Z], () => C.Z.failedToFetchWallpapers),
     Z = (0, u.e7)([C.Z], () => C.Z.getWallpaperById(null == g ? true : g.wallpaperId)),
-    V = i.useRef(null),
-    F = i.useRef(null);
-  (0, _.Tbt)(F), i.useEffect(() => {
-    F.current = V.current
-  }, [V]), i.useEffect(() => {
+    F = i.useRef(null),
+    V = i.useRef(null);
+  (0, _.Tbt)(V), i.useEffect(() => {
+    V.current = F.current
+  }, [F]), i.useEffect(() => {
     null != Z && y(Z.isBlurred && E)
   }, [Z, E]);
   let H = i.useCallback(() => {
@@ -432,12 +432,12 @@ let ee = function(e) {
   i.useEffect(() => {
     let e = e => {
       var t;
-      F.current = (null == (t = V.current) ? true : t.contains(e.target)) ? V.current : null
+      V.current = (null == (t = F.current) ? true : t.contains(e.target)) ? F.current : null
     };
     return document.addEventListener("mousedown", e), () => {
       document.removeEventListener("mousedown", e)
     }
-  }, [V]);
+  }, [F]);
   let ei = null == c && (null == s ? true : s.pickerType) !== A.j.COACHMARK,
     ea = null;
   return ea = B || ei ? (0, r.jsxs)("div", {
@@ -488,7 +488,7 @@ let ee = function(e) {
       topOffset: 88,
       children: (0, r.jsxs)("div", {
         className: U.container,
-        ref: V,
+        ref: F,
         onKeyDown: er,
         children: [(null == s ? true : s.pickerType) === A.j.COACHMARK ? (0, r.jsx)(K, {
           handleClose: q,
@@ -499,7 +499,7 @@ let ee = function(e) {
         }), (0, r.jsx)("div", {
           className: U.divider
         }), (0, r.jsx)(_.JcV, {
-          containerRef: V,
+          containerRef: F,
           children: ea
         })]
       })

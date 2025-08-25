@@ -7,7 +7,7 @@ require.d(exports, {
   F3: () => ey,
   UE: () => tk,
   _7: () => ex,
-  mH: () => tV,
+  mH: () => tF,
   vt: () => eY
 });
 var Chunk653603 = require("./653603.js"),
@@ -77,8 +77,8 @@ var y = new WeakMap,
   G = new WeakMap,
   B = new WeakMap,
   Z = Symbol("placeholder"),
-  V = Symbol("mark-placeholder"),
-  F = globalThis.Text,
+  F = Symbol("mark-placeholder"),
+  V = globalThis.Text,
   H = e => e && e.ownerDocument && e.ownerDocument.defaultView || null,
   Y = e => K(e) && 8 === e.nodeType,
   W = e => K(e) && 1 === e.nodeType,
@@ -278,7 +278,7 @@ var y = new WeakMap,
           } = c.textContent, f = l.getAttribute("data-slate-length"), _ = null == f ? u : parseInt(f, 10), p = o + _, h = a[s + 1];
           if (t.offset === p && null != h && h.hasAttribute("data-slate-mark-placeholder")) {
             var m, g, E = h.childNodes[0];
-            m = [E instanceof F ? E : h, null != (g = h.textContent) && g.startsWith("\uFEFF") ? 1 : 0];
+            m = [E instanceof V ? E : h, null != (g = h.textContent) && g.startsWith("\uFEFF") ? 1 : 0];
             break
           }
           if (t.offset <= p) {
@@ -491,7 +491,7 @@ var y = new WeakMap,
       leaf: n,
       parent: r,
       text: i
-    } = e, a = ex(), o = ey.findPath(a, i), s = d.y$.parent(o), l = true === n[V];
+    } = e, a = ex(), o = ey.findPath(a, i), s = d.y$.parent(o), l = true === n[F];
     return a.isVoid(r) ? c.createElement(ew, {
       length: d.NB.string(r).length
     }) : "" !== n.text || r.children[r.children.length - 1] !== i || a.isInline(r) || "" !== d.ML.string(a, s) ? "" === n.text ? c.createElement(ew, {
@@ -706,8 +706,8 @@ var y = new WeakMap,
       }
     }), n)
   },
-  eV = (0, Chunk647438.createContext)(() => []),
-  eF = () => (0, Chunk647438.useContext)(eV),
+  eF = (0, Chunk647438.createContext)(() => []),
+  eV = () => (0, Chunk647438.useContext)(eF),
   eH = (0, Chunk647438.createContext)(false),
   eY = () => (0, Chunk647438.useContext)(eH),
   eW = e => {
@@ -718,7 +718,7 @@ var y = new WeakMap,
         renderPlaceholder: i,
         renderLeaf: a,
         selection: o
-      } = e, s = eF(), l = ex(), u = ey.findPath(l, n), f = [], _ = d.W_.isElement(n) && !l.isInline(n) && d.ML.hasInlines(l, n), p = 0; p < n.children.length; p++) {
+      } = e, s = eV(), l = ex(), u = ey.findPath(l, n), f = [], _ = d.W_.isElement(n) && !l.isInline(n) && d.ML.hasInlines(l, n), p = 0; p < n.children.length; p++) {
       var h = u.concat(p),
         m = n.children[p],
         g = ey.findKey(l, m),
@@ -1645,7 +1645,7 @@ var tN = e => c.createElement(c.Fragment, null, eW(e)),
       U = (0, c.useRef)([]),
       {
         onUserInput: G,
-        receivedUserInput: F
+        receivedUserInput: V
       } = tI(),
       [, Y] = (0, c.useReducer)(e => e + 1, 0);
     B.set(N, Y), R.set(N, _);
@@ -1900,7 +1900,7 @@ var tN = e => c.createElement(c.Fragment, null, eW(e)),
         z.hasMarkPlaceholder = true;
         var ed = Object.fromEntries(Object.keys(es).map(e => [e, null]));
         et.push(tC(tC(tC({
-          [V]: true
+          [F]: true
         }, ed), er), {}, {
           anchor: ei,
           focus: ei
@@ -1925,11 +1925,11 @@ var tN = e => c.createElement(c.Fragment, null, eW(e)),
     var e_ = null == (t = T.get(N)) || null == (n = t.getBoundingClientRect()) ? true : n.height;
     return c.createElement(eK.Provider, {
       value: _
-    }, c.createElement(eV.Provider, {
+    }, c.createElement(eF.Provider, {
       value: s
     }, c.createElement(e6, {
       node: M,
-      receivedUserInput: F
+      receivedUserInput: V
     }, c.createElement(y, Object.assign({
       role: _ ? true : "textbox",
       "aria-multiline": !_ || true
@@ -2335,7 +2335,7 @@ function tB(e) {
   }
 }
 var tZ = ["editor", "children", "onChange", "value"],
-  tV = e => {
+  tF = e => {
     var {
       editor: t,
       children: n,
@@ -2380,14 +2380,14 @@ var tZ = ["editor", "children", "onChange", "value"],
       value: p
     }, n))))
   },
-  tF = (e, t) => {
+  tV = (e, t) => {
     var n = (t.top + t.bottom) / 2;
     return e.top <= n && e.bottom >= n
   },
   tH = (e, t, n) => {
     var r = ey.toDOMRange(e, t).getBoundingClientRect(),
       i = ey.toDOMRange(e, n).getBoundingClientRect();
-    return tF(r, i) && tF(i, r)
+    return tV(r, i) && tV(i, r)
   },
   tY = (e, t) => {
     var n = d.ML.range(e, d.e6.end(t)),

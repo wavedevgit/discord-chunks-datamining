@@ -180,8 +180,8 @@ function v(e, t, n, a) {
       getAnchorId: G,
       paddingTop: B,
       paddingBottom: Z,
-      fade: V = false,
-      customTheme: F = false,
+      fade: F = false,
+      customTheme: V = false,
       chunkSize: H,
       style: Y,
       innerId: W,
@@ -283,8 +283,8 @@ function v(e, t, n, a) {
       onScroll: eO,
       className: o()(g, {
         [e]: true,
-        [t]: V,
-        [n]: F,
+        [t]: F,
+        [n]: V,
         [d.scrolling]: en
       }),
       style: (0, u.uT)(Y)

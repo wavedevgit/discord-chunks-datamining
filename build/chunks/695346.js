@@ -19,7 +19,7 @@ require.d(exports, {
   OW: () => eu,
   Ok: () => eg,
   Ou: () => Y,
-  Pe: () => F,
+  Pe: () => V,
   QK: () => eN,
   QZ: () => R,
   Qq: () => C,
@@ -29,11 +29,11 @@ require.d(exports, {
   Rt: () => eK,
   SE: () => eD,
   Sb: () => eA,
-  Sh: () => eV,
+  Sh: () => eF,
   T4: () => L,
   UP: () => ed,
   Wp: () => eP,
-  Xc: () => V,
+  Xc: () => F,
   Xk: () => k,
   Xr: () => ef,
   YC: () => ez,
@@ -62,7 +62,7 @@ require.d(exports, {
   hg: () => eY,
   iG: () => X,
   iH: () => ej,
-  j7: () => eF,
+  j7: () => eV,
   jU: () => en,
   kJ: () => q,
   kU: () => er,
@@ -191,13 +191,13 @@ let A = (0, Chunk560997.Zc)("notifications", "gameActivityNotifications", e => n
   })),
   B = "0",
   Z = (0, Chunk560997.Zc)("notifications", "notificationCenterAckedBeforeId", e => null != e ? e : B, e => e),
-  V = (0, Chunk560997.Zc)("gameLibrary", "installShortcutDesktop", e => {
+  F = (0, Chunk560997.Zc)("gameLibrary", "installShortcutDesktop", e => {
     var t;
     return null != (t = null == e ? true : e.value) && t
   }, e => o.D5.create({
     value: e
   })),
-  F = (0, Chunk560997.Zc)("gameLibrary", "installShortcutStartMenu", e => {
+  V = (0, Chunk560997.Zc)("gameLibrary", "installShortcutStartMenu", e => {
     var t;
     return null == (t = null == e ? true : e.value) || t
   }, e => o.D5.create({
@@ -544,7 +544,7 @@ let ek = (0, Chunk560997.TG)({
   })),
   eB = (0, Chunk560997.Zc)("privacy", "slayerSdkReceiveDmsInGame", e => null != e ? e : a.O_.SLAYER_SDK_RECEIVE_IN_GAME_DMS_UNSET, e => e),
   eZ = (0, Chunk560997.Zc)("ads", "alwaysDeliver", e => null != e && e, e => e),
-  eV = (0, Chunk560997.Zc)("textAndImages", "explicitContentSettings", e => {
+  eF = (0, Chunk560997.Zc)("textAndImages", "explicitContentSettings", e => {
     let {
       explicitContentGuilds: t,
       explicitContentFriendDm: n,
@@ -567,7 +567,7 @@ let ek = (0, Chunk560997.TG)({
       explicitContentNonFriendDm: null != r ? r : true
     }
   }),
-  eF = (0, Chunk560997.Zc)("textAndImages", "goreContentSettings", e => {
+  eV = (0, Chunk560997.Zc)("textAndImages", "goreContentSettings", e => {
     let {
       goreContentGuilds: t,
       goreContentFriendDm: n,

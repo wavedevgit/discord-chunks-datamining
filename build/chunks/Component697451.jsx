@@ -95,7 +95,7 @@ function Z(e, t) {
   return i
 }
 
-function V(e) {
+function F(e) {
   let {
     width: t = 6,
     height: n = 10,
@@ -118,7 +118,7 @@ function V(e) {
   })
 }
 
-function F(e) {
+function V(e) {
   let {
     user: t,
     guildId: n,
@@ -161,7 +161,7 @@ function H(e, t, n, i, a, o) {
   if (d && 1 === n) return null;
   if (d && null == u.activityInstance || p || h) return (0, r.jsx)("div", {
     className: j.replyBadge,
-    children: (0, r.jsx)(V, {
+    children: (0, r.jsx)(F, {
       className: j.commandIcon
     })
   });
@@ -170,7 +170,7 @@ function H(e, t, n, i, a, o) {
       userId: t.id,
       guildId: null != (l = null == _ ? true : _.guild_id) ? l : ""
     })) ? c : true,
-    T = () => F({
+    T = () => V({
       user: t,
       guildId: _.guild_id,
       guildAvatar: I,
@@ -329,8 +329,8 @@ function q(e) {
     U = (null == k ? true : k.type) === _.B8.APPLICATION_COMMAND && null != k.target_user ? new T.Z(k.target_user) : null,
     B = (null == k ? true : k.type) === _.B8.APPLICATION_COMMAND && null != a.messageReference && null != e.renderTargetMessage,
     Z = (0, R.Sw)(null == (t = a.interaction) ? true : t.user, s),
-    V = (0, R.Sw)(U, s),
-    F = i.useMemo(() => e.compact ? (0, D.Z)((0, N.vc)(u()(), "LT")) : null, [e.compact]),
+    F = (0, R.Sw)(U, s),
+    V = i.useMemo(() => e.compact ? (0, D.Z)((0, N.vc)(u()(), "LT")) : null, [e.compact]),
     z = (0, h.NX)(s.id),
     q = a.interaction;
   if (null == q || null == Z) return null;
@@ -343,8 +343,8 @@ function q(e) {
     },
     Q = () => {
       if (null == U) return null;
-      let t = H(e, U, 1, V, e => P(e, U, [g.Z.AVATAR]), A),
-        n = Y(e, U, 1, V, e => P(e, U));
+      let t = H(e, U, 1, F, e => P(e, U, [g.Z.AVATAR]), A),
+        n = Y(e, U, 1, F, e => P(e, U));
       return (0, r.jsxs)(i.Fragment, {
         children: [t, n]
       }, "target")
@@ -397,7 +397,7 @@ function q(e) {
   return (0, r.jsx)(E.Gt, {
     value: c,
     children: (0, r.jsx)("div", {
-      className: o()(j.repliedMessage, j.messageSpine, j.executedCommand, F),
+      className: o()(j.repliedMessage, j.messageSpine, j.executedCommand, V),
       "aria-hidden": !e.compact,
       children: n
     })

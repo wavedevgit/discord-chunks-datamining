@@ -2,7 +2,7 @@
 /** chunk id: 74538, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Af: () => F,
+  Af: () => V,
   Ap: () => ew,
   BK: () => q,
   CY: () => H,
@@ -22,8 +22,8 @@ require.d(exports, {
   Rd: () => en,
   Rt: () => eK,
   T4: () => K,
-  U2: () => V,
-  UV: () => tV,
+  U2: () => F,
+  UV: () => tF,
   UX: () => X,
   Ue: () => e$,
   V7: () => e_,
@@ -31,7 +31,7 @@ require.d(exports, {
   Wz: () => tR,
   XK: () => e1,
   Z8: () => eO,
-  ZP: () => tF,
+  ZP: () => tV,
   Zx: () => e2,
   _O: () => tP,
   a5: () => eW,
@@ -156,11 +156,11 @@ let M = {
     ALL: [Chunk474936.Xh.NONE_MONTH, Chunk474936.Xh.NONE_YEAR, Chunk474936.Xh.PREMIUM_YEAR_TIER_2, Chunk474936.Xh.PREMIUM_MONTH_TIER_2, Chunk474936.Xh.PREMIUM_YEAR_TIER_1, Chunk474936.Xh.PREMIUM_MONTH_TIER_1, Chunk474936.Xh.PREMIUM_YEAR_TIER_0, Chunk474936.Xh.PREMIUM_MONTH_TIER_0]
   },
   Z = 2592e6;
-var V = function(e) {
+var F = function(e) {
   return e.MID = "mid", e.HIGH = "high", e
 }({});
 
-function F(e) {
+function V(e) {
   return e.items.find(e => P.dJ.has(e.planId))
 }
 
@@ -1069,7 +1069,7 @@ function eL(e) {
   } = a, f = E.Z.get(u);
   i()(null != f, "Missing plan");
   let _ = eE(d),
-    p = eV(a.planId, a.paymentSourceId, a.currency, o).amount * _;
+    p = eF(a.planId, a.paymentSourceId, a.currency, o).amount * _;
   if (null != l) {
     let e = l.invoiceItems.find(e => P.Z1.has(e.subscriptionPlanId));
     null != e && (p = e.amount)
@@ -1181,7 +1181,7 @@ function eZ(e, t, n) {
   return (0, C.og)((0, C.T4)(i, e.currency), n.interval, n.intervalCount)
 }
 
-function eV(e, t, n, r) {
+function eF(e, t, n, r) {
   let i = null != t ? {
       paymentSourceId: t,
       currency: n
@@ -1210,7 +1210,7 @@ function eV(e, t, n, r) {
   return Y(o.id, (0, A.I5)(r), false, i)
 }
 
-function eF(e) {
+function eV(e) {
   return null != e && 0 !== e.size && Array.from(e).some(e => {
     let {
       subscriptionPlanId: t,
@@ -1537,24 +1537,24 @@ function e8(e) {
 }
 
 function e6(e) {
-  return null != e && null == F(e) && null != e8(e)
+  return null != e && null == V(e) && null != e8(e)
 }
 
 function e5(e) {
-  let t = null != e ? F(e) : null;
+  let t = null != e ? V(e) : null;
   return null != t ? ep(t.planId) : null
 }
 
 function e7(e) {
   if (null != e) {
-    let t = F(e);
+    let t = V(e);
     if (null != t) return en(t.planId)
   }
 }
 
 function e9(e) {
   if (null != e && null != e.renewalMutations) {
-    let t = F(e.renewalMutations);
+    let t = V(e.renewalMutations);
     if (null != t) return en(t.planId)
   }
 }
@@ -1749,7 +1749,7 @@ function tZ(e) {
   }, 0)
 }
 
-function tV(e) {
+function tF(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
     n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {};
   if (e.interval !== P.rV.YEAR) return;
@@ -1759,7 +1759,7 @@ function tV(e) {
     a = Y(e.id, false, t, n);
   if (0 !== i.amount) return Math.floor(100 * (1 - a.amount / (12 * i.amount)))
 }
-let tF = Object.freeze({
+let tV = Object.freeze({
   isNewUser: e => null != e && Date.now() - e.createdAt.getTime() < Z,
   isPremiumAtLeast: Chunk111361.yd,
   isPremium: Chunk111361.I5,
@@ -1794,11 +1794,11 @@ let tF = Object.freeze({
   getPlanIdFromInvoice: eM,
   getStatusFromInvoice: eU,
   isBaseSubscriptionCanceled: eG,
-  getPremiumGuildIntervalPrice: eV,
-  hasAccountCredit: eF,
+  getPremiumGuildIntervalPrice: eF,
+  hasAccountCredit: eV,
   getBillingReviewSubheader: eH,
   getIntervalForInvoice: eY,
-  getPremiumPlanItem: F,
+  getPremiumPlanItem: V,
   getGuildBoostPlanItem: e8,
   isBoostOnlySubscription: e6,
   getPremiumSkuIdForSubscription: e5,
@@ -1807,7 +1807,7 @@ let tF = Object.freeze({
   getPremiumGradientColor: te,
   getUnactivatedFractionalPremiumHours: tB,
   castPremiumSubscriptionAsSkuId: tR,
-  calculateDiscountPercentageForYearlyPlan: tV,
+  calculateDiscountPercentageForYearlyPlan: tF,
   canUseAnimatedEmojis: tt,
   canUseEmojisEverywhere: tn,
   canUseSoundboardEverywhere: tr,
@@ -1836,5 +1836,5 @@ let tF = Object.freeze({
   canUsePremiumVoiceFilters: tA,
   canUseChatWallpapers: tC,
   formatPriceString: tN,
-  StreamQuality: V
+  StreamQuality: F
 })

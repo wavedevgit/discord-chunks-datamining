@@ -77,8 +77,8 @@ let D = new Chunk710845.Z("ChannelRTCStore"),
   G = {},
   B = {},
   Z = {},
-  V = {},
   F = {},
+  V = {},
   H = {},
   Y = {};
 
@@ -199,7 +199,7 @@ function eo(e) {
     channelId: t,
     currentVoiceChannelId: n
   } = e;
-  return null != t ? delete M[t] : null != n && (delete V[n], delete H[n], $(n)), ea()
+  return null != t ? delete M[t] : null != n && (delete F[n], delete H[n], $(n)), ea()
 }
 
 function es(e) {
@@ -207,7 +207,7 @@ function es(e) {
     channelId: t,
     messageId: n
   } = e, r = ea(), i = E.Z.getChannel(t);
-  return null == t || null == n || (null == i ? true : i.type) !== C.d4z.GUILD_VOICE && (null == i ? true : i.type) !== C.d4z.GUILD_STAGE_VOICE || V[t] ? r : (F[t] = false, V[t] = true, true)
+  return null == t || null == n || (null == i ? true : i.type) !== C.d4z.GUILD_VOICE && (null == i ? true : i.type) !== C.d4z.GUILD_STAGE_VOICE || F[t] ? r : (V[t] = false, F[t] = true, true)
 }
 
 function el(e) {
@@ -326,7 +326,7 @@ function eO(e) {
     channelId: t,
     chatOpen: n
   } = e;
-  V[t] = n, n && (F[t] = false)
+  F[t] = n, n && (V[t] = false)
 }
 
 function ev(e) {
@@ -334,7 +334,7 @@ function ev(e) {
     channelId: t,
     participantsListOpen: n
   } = e;
-  F[t] = n, n && (V[t] = false)
+  V[t] = n, n && (F[t] = false)
 }
 
 function eI(e) {
@@ -381,7 +381,7 @@ function eS(e) {
       id: t
     }
   } = e;
-  return delete V[t], delete F[t], delete H[t], ei(t)
+  return delete F[t], delete V[t], delete H[t], ei(t)
 }
 
 function eA(e) {
@@ -562,14 +562,14 @@ class ek extends(r = Chunk442837.ZP.PersistedStore) {
   }
   getChatOpen(e) {
     var t;
-    return null != (t = V[e]) && t
+    return null != (t = F[e]) && t
   }
   getAllChatOpen() {
-    return V
+    return F
   }
   getParticipantsListOpen(e) {
     var t;
-    return null != (t = F[e]) && t
+    return null != (t = V[e]) && t
   }
   isFullscreenInContext() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk981631.IlC.APP;

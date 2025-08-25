@@ -50,7 +50,7 @@ let C = {
       nameplatePreviewSize: M = "default",
       isPurchased: U = false,
       skipEffectDisplayName: G = false
-    } = e, B = (0, s.e7)([b.Z], () => (0, l.wj)(b.Z.theme)), Z = null != a ? (0, v.EU)(a) : N, V = (0, s.e7)([O.Z], () => null != t ? O.Z.getStatus(t.id) : c.Skl.ONLINE), F = B ? "#706F74" : "#aaaab2", H = i.useRef(null), Y = (0, s.e7)([y.ZP], () => null != n && null != t ? y.ZP.getMember(n, t.id) : null), W = null != t ? (0, E.Ly)({
+    } = e, B = (0, s.e7)([b.Z], () => (0, l.wj)(b.Z.theme)), Z = null != a ? (0, v.EU)(a) : N, F = (0, s.e7)([O.Z], () => null != t ? O.Z.getStatus(t.id) : c.Skl.ONLINE), V = B ? "#706F74" : "#aaaab2", H = i.useRef(null), Y = (0, s.e7)([y.ZP], () => null != n && null != t ? y.ZP.getMember(n, t.id) : null), W = null != t ? (0, E.Ly)({
       pendingNickname: true,
       pendingGlobalName: L,
       user: t,
@@ -86,7 +86,7 @@ let C = {
                 user: t,
                 guildId: n,
                 avatarSize: K,
-                status: D ? V : true,
+                status: D ? F : true,
                 "aria-hidden": true,
                 avatarDecorationOverride: null != k ? {
                   asset: k.asset
@@ -113,7 +113,7 @@ let C = {
               size: K,
               "aria-hidden": true,
               status: c.Skl.ONLINE,
-              statusColor: F,
+              statusColor: V,
               className: T.avatar
             }), (0, r.jsx)("div", {
               className: T.placeholderUsername

@@ -100,7 +100,7 @@ function x(e) {
   let {
     guild: t
   } = e;
-  t.id === v.Z.getGuildId() && F()
+  t.id === v.Z.getGuildId() && V()
 }
 
 function L(e) {
@@ -168,7 +168,7 @@ function Z(e) {
   return C(t, n)
 }
 
-function V(e) {
+function F(e) {
   let {
     guildId: t,
     channelId: n
@@ -176,7 +176,7 @@ function V(e) {
   return !m.Z.isUnavailable(t) && C(t, n)
 }
 
-function F() {
+function V() {
   return C(Chunk914010.Z.getGuildId(), Chunk944486.Z.getChannelId())
 }
 
@@ -222,7 +222,7 @@ function K(e) {
 }
 class z extends(i = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk592125.Z, Chunk430824.Z, Chunk914010.Z, Chunk944486.Z, Chunk19780.Z, Chunk314897.default, Chunk433355.ZP, Chunk353926.Z), this.syncWith([Chunk768419.Z], W), this.syncWith([Chunk433355.ZP], F)
+    this.waitFor(Chunk592125.Z, Chunk430824.Z, Chunk914010.Z, Chunk944486.Z, Chunk19780.Z, Chunk314897.default, Chunk433355.ZP, Chunk353926.Z), this.syncWith([Chunk768419.Z], W), this.syncWith([Chunk433355.ZP], V)
   }
   getSubscribedThreadIds() {
     return S.getSubscribedThreadIds()
@@ -248,8 +248,8 @@ let q = new z(Chunk570140.Z, {
   CONNECTION_CLOSED: P,
   IDLE: w,
   LOGOUT: D,
-  VOICE_CHANNEL_SELECT: V,
-  CHANNEL_SELECT: V,
+  VOICE_CHANNEL_SELECT: F,
+  CHANNEL_SELECT: F,
   GUILD_CREATE: x,
   GUILD_DELETE: L,
   GUILD_SUBSCRIPTIONS_MEMBERS_ADD: j,
@@ -262,5 +262,5 @@ let q = new z(Chunk570140.Z, {
   INBOX_OPEN: K,
   THREAD_UPDATE: H,
   THREAD_DELETE: Y,
-  THREAD_LIST_SYNC: F
+  THREAD_LIST_SYNC: V
 })

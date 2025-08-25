@@ -3,7 +3,7 @@
 "use strict";
 let r;
 require.r(exports), require.d(exports, {
-  OverlayPIDStatus: () => F,
+  OverlayPIDStatus: () => V,
   default: () => e$,
   getOverlayURL: () => ev
 }), require("./388685.js"), require("./410992.js"), require("./227481.js"), require("./730884.js"), require("./20464.js"), require("./341884.js"), require("./364341.js"), require("./629680.js"), require("./505025.js"), require("./918970.js"), require("./121784.js"), require("./644351.js"), require("./146733.js"), require("./853839.js"), require("./570086.js"), require("./479048.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./358797.js"), require("./415506.js"), require("./49124.js");
@@ -75,12 +75,12 @@ function Z(e, t) {
   return n
 }
 
-function V(e, t) {
+function F(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : Z(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var F = function(e) {
+var V = function(e) {
   return e.ATTACHING = "ATTACHING", e.CONNECTING = "CONNECTING", e.CONNECTED = "CONNECTED", e.READY = "READY", e.CRASHED = "CRASHED", e.CONNECT_FAILED = "CONNECT_FAILED", e.HOOK_FAILED = "HOOK_FAILED", e.DISCONNECTING = "DISCONNECTING", e
 }({});
 let H = {},
@@ -113,7 +113,7 @@ class et {
       }), this.actionsToFlush.clear()), this.waitingActionsToFlush.size > 0 && this.enqueueWaitingActions()
     }), G(this, "dispatchPayloads", e => {
       this.isDispatching = true, e.forEach(e => l.Z.dispatch(e)), this.isDispatching = false
-    }), G(this, "queueDispatch", e => !(!K() || er.has(e.type)) && (this.isDispatching ? this.waitingActionsToFlush.add(e) : ("USER_SETTINGS_PROTO_UPDATE" === e.type && (e = V(B({}, e), {
+    }), G(this, "queueDispatch", e => !(!K() || er.has(e.type)) && (this.isDispatching ? this.waitingActionsToFlush.add(e) : ("USER_SETTINGS_PROTO_UPDATE" === e.type && (e = F(B({}, e), {
       settings: {
         type: e.settings.type,
         proto: (0, C.cv)(e.settings.type, e.settings.proto)
@@ -173,7 +173,7 @@ let ed = "none",
       let n = "overlayLock: lastMutexCall ".concat(ed, "}");
       eo.error(n);
       let r = el((0, j.getPID)());
-      ec((0, j.getPID)(), V(B({}, r), {
+      ec((0, j.getPID)(), F(B({}, r), {
         error_description: n,
         success: false
       })), w.default.track(M.rMx.OVERLAY_HOOK_RESULT, el((0, j.getPID)()))
@@ -418,7 +418,7 @@ function eN(e) {
           payloads: [n]
         }), eh(i, "READY"), (0, j.setPID)(i), f.Z.overlayReady(i);
         let o = el(i);
-        ec(i, V(B({}, o), {
+        ec(i, F(B({}, o), {
           total_mount_time_ms: null != o.mounting_started_at ? new Date().getTime() - o.mounting_started_at : true
         }))
       });
@@ -480,7 +480,7 @@ function ej(e) {
   } = e;
   $ = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
   let n = new URLSearchParams;
-  n.append("build_id", "f551fa175fd9e3eadb42c5c255a57c67bb4f80dc"), n.append("rpc", String(t)), n.append("rpc_auth_token", $), r = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+  n.append("build_id", "aa3b374f4aaba8cfc8082208fd0ef49825b6f327"), n.append("rpc", String(t)), n.append("rpc_auth_token", $), r = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
 }
 
 function ek(e) {
@@ -527,14 +527,14 @@ function eZ() {
   returntrue
 }
 
-function eV(e) {
+function eF(e) {
   let {
     legacyEnabled: t
   } = e;
   return eI(t), false
 }
 
-function eF(e) {
+function eV(e) {
   let {
     userId: t,
     sessionId: n,
@@ -666,14 +666,14 @@ let eJ = new eQ(Chunk570140.Z, __OVERLAY__ ? {
     EXPERIMENT_OVERRIDE_BUCKET: eZ,
     RUNNING_GAME_TOGGLE_OVERLAY: eW,
     RUNNING_GAMES_CHANGE: eY,
-    OVERLAY_SET_ENABLED: eV,
+    OVERLAY_SET_ENABLED: eF,
     OVERLAY_FOCUSED: eM,
     OVERLAY_SET_INPUT_LOCKED: eD,
     OVERLAY_ACTIVATE_REGION: ex,
     OVERLAY_DEACTIVATE_ALL_REGIONS: eL,
     RPC_SERVER_READY: ej,
     OVERLAY_CALL_PRIVATE_CHANNEL: ek,
-    OVERLAY_JOIN_GAME: eF,
+    OVERLAY_JOIN_GAME: eV,
     OVERLAY_CRASHED: eU,
     OVERLAY_UPDATE_OVERLAY_METHOD: eK
   }),

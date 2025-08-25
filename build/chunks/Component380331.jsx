@@ -78,9 +78,9 @@ let L = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_GUILD_CATEGORY_
   G = (0, Chunk624138.Mg)(Chunk911166.__invalid_unicodeCategoryShortcutHeight),
   B = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_CATEGORY_SEPARATOR_SIZE),
   Z = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_CATEGORY_SEPARATOR_MARGIN_VERTICAL),
-  V = k + j + 2 * U,
-  F = L + j,
-  H = F + (B + 2 * Z),
+  F = k + j + 2 * U,
+  V = L + j,
+  H = V + (B + 2 * Z),
   Y = k + M + 2 * U,
   W = 7;
 
@@ -160,10 +160,10 @@ let z = e => {
     }, t)
   }), [b, v, A, y, P, w]), x = i.useMemo(() => [8, 8, 0, 8], []), L = i.useCallback((e, t) => {
     let n = A[t];
-    if (n.type === S.En.RECENT) return V;
+    if (n.type === S.En.RECENT) return F;
     if (n.type === S.En.GUILD) {
       let e = A[t + 1];
-      return null != e && e.type !== S.En.GUILD ? H : F
+      return null != e && e.type !== S.En.GUILD ? H : V
     }
     return Y
   }, [A]), {
@@ -179,7 +179,7 @@ let z = e => {
     A.forEach(i => {
       i.type === S.En.GUILD ? (t += 1, n += 1) : i.type === S.En.UNICODE ? r += 1 : (e += 1, t += 1)
     });
-    let i = V + t * F + H;
+    let i = F + t * V + H;
     return {
       nonUnicodeCategoryCount: t,
       firstUnicodeCategoryIndex: t,

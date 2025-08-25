@@ -77,8 +77,8 @@ function B(e, t) {
   }), e
 }
 let Z = 3e3,
-  V = 1e3,
-  F = "-:--",
+  F = 1e3,
+  V = "-:--",
   H = {
     friction: 14,
     tension: 200
@@ -118,7 +118,7 @@ let q = e => {
   let {
     current: t,
     duration: n
-  } = e, r = null != t ? K(t) : F, i = null != n ? K(n) : F;
+  } = e, r = null != t ? K(t) : V, i = null != n ? K(n) : V;
   return r = r.padStart(i.length, "0"), (0, a.jsxs)("div", {
     className: j.durationTimeWrapper,
     children: [(0, a.jsx)("span", {
@@ -647,7 +647,7 @@ class et extends(i = Chunk647438.PureComponent) {
     let {
       dragging: e,
       fullscreen: t
-    } = this.state, n = exports ? V : Z, r = Math.max(0, Date.now() - this._lastMove) > require;
+    } = this.state, n = exports ? F : Z, r = Math.max(0, Date.now() - this._lastMove) > require;
     r !== this.state.hideControls && null == module && this.setState({
       hideControls: r
     })

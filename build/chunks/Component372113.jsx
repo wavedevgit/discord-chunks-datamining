@@ -199,7 +199,7 @@ let M = e => {
     year: "numeric",
     month: "long",
     day: "numeric"
-  }), M = R >= m.OH.ACCEPTED, U = R >= m.OH.COMPLETED, G = (0, h.Xv)(n.config), B = _ || I, Z = (0, m.t5)(n, S.dr.QUESTS_CARD, a, A), V = (0, p.O5)(), F = i.useMemo(() => y.r.build(n.config), [n.config]), H = (0, m.Rf)(n), Y = (0, b.DD)({
+  }), M = R >= m.OH.ACCEPTED, U = R >= m.OH.COMPLETED, G = (0, h.Xv)(n.config), B = _ || I, Z = (0, m.t5)(n, S.dr.QUESTS_CARD, a, A), F = (0, p.O5)(), V = i.useMemo(() => y.r.build(n.config), [n.config]), H = (0, m.Rf)(n), Y = (0, b.DD)({
     quest: n,
     taskDetails: H,
     location: S.dr.QUESTS_CARD,
@@ -209,7 +209,7 @@ let M = e => {
     (0, v.navigateToQuestHome)({
       fromContent: a,
       questId: n.id
-    }), V({
+    }), F({
       questId: n.id,
       questContent: a,
       questContentPosition: T,
@@ -270,7 +270,7 @@ let M = e => {
             quest: n,
             locale: z,
             isQuestExpired: f,
-            sharedQuestFields: F,
+            sharedQuestFields: V,
             collectibleQuestRewardDescription: Y,
             formattedCompletionDate: w
           })

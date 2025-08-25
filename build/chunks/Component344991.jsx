@@ -104,11 +104,11 @@ function I(e) {
     executeStateUpdate: G,
     visualState: B,
     isDisabled: Z,
-    error: V
+    error: F
   } = M.useComponentState(t, R.size > 0 ? {
     type: b,
     selectedOptions: Array.from(R.values())
-  } : true), F = null != M.modal, H = I > 1, Y = B === _.gH.LOADING;
+  } : true), V = null != M.modal, H = I > 1, Y = B === _.gH.LOADING;
   i.useEffect(() => {
     if ((null == U ? true : U.type) === u.re.USER_SELECT || (null == U ? true : U.type) === u.re.ROLE_SELECT || (null == U ? true : U.type) === u.re.MENTIONABLE_SELECT || (null == U ? true : U.type) === u.re.CHANNEL_SELECT) {
       let e = new Map(U.selectedOptions.map(e => [e.value, e]));
@@ -147,7 +147,7 @@ function I(e) {
       isProcessing: Y,
       isDisabled: T || B === _.gH.DISABLED || Z,
       wrapperClassName: o()(h.select, {
-        [h.inModal]: F
+        [h.inModal]: V
       }),
       options: q,
       placeholder: Q ? null != v ? v : p.intl.string(p.t.Otr6W1) : true,
@@ -180,7 +180,7 @@ function I(e) {
         clearable: true,
         centerCaret: true
       }, J), j)
-    }), null == V || F ? null : (0, r.jsx)(d.st, y(E({}, (0, d.c4)(V)), {
+    }), null == F || V ? null : (0, r.jsx)(d.st, y(E({}, (0, d.c4)(F)), {
       className: m.error
     }))]
   })

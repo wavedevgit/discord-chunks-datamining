@@ -84,9 +84,9 @@ let w = (0, Chunk202841.animated)(Chunk481060.CJ0),
     } = e, {
       ref: U,
       height: G
-    } = (0, u.ZP)(), [B, Z] = i.useState(null), [V, F] = i.useState(null), H = (0, f.Z)(e => {
+    } = (0, u.ZP)(), [B, Z] = i.useState(null), [F, V] = i.useState(null), H = (0, f.Z)(e => {
       let t = e.target;
-      Z(t.offsetWidth), F(t.scrollWidth)
+      Z(t.offsetWidth), V(t.scrollWidth)
     }), Y = (0, d.y)(H), W = (0, v.uq)(C), K = C === h.jn.QUESTS_EMBED, z = (0, p.t5)(a, I.dr.QUESTS_CARD, C, M), q = (null == (t = a.userStatus) ? true : t.completedAt) != null, X = (0, _.O5)(), Q = (0, p.B6)(a.config.expiresAt), J = (0, p.B6)(m.r.build(a.config).rewardsExpireAt), $ = i.useMemo(() => null != a.config.cosponsorMetadata, [a]), ee = e => {
       e.stopPropagation(), e.currentTarget.blur(), k(), X({
         questId: a.id,
@@ -95,7 +95,7 @@ let w = (0, Chunk202841.animated)(Chunk481060.CJ0),
         questContentPosition: j,
         sourceQuestContent: M
       })
-    }, et = () => null != B && null != V && B < V, en = (0, r.jsx)(g.ZP, {
+    }, et = () => null != B && null != F && B < F, en = (0, r.jsx)(g.ZP, {
       className: A.partnerBranding,
       logotypeClassName: $ ? A.partnerBrandingLogotypes : true,
       gameTileSize: g.fF.MEDIUM,

@@ -47,7 +47,7 @@ let g = 280,
       dismissIcon: G,
       onDismissIconClick: B,
       tryItButtonColor: Z
-    } = e, V = N ? s.zx.Sizes.LARGE : s.zx.Sizes.MAX, [F, H] = i.useState(false), {
+    } = e, F = N ? s.zx.Sizes.LARGE : s.zx.Sizes.MAX, [V, H] = i.useState(false), {
       ref: Y,
       width: W
     } = (0, c.ZP)();
@@ -71,8 +71,8 @@ let g = 280,
     return i.useEffect(() => {
       var e, t;
       let n = (null != (t = null == (e = Y.current) ? true : e.scrollWidth) ? t : 0) + 64;
-      !F && n > j && H(true)
-    }, [F, W, Y, j]), i.useEffect(() => {
+      !V && n > j && H(true)
+    }, [V, W, Y, j]), i.useEffect(() => {
       (0, f.kk)(P)
     }, [P]), (0, r.jsx)("div", {
       className: S,
@@ -117,11 +117,11 @@ let g = 280,
           }), z()]
         }), (0, r.jsx)("div", {
           ref: Y,
-          className: F || !N ? m.buttonContainerVertical : m.buttonContainerHorizontal,
+          className: V || !N ? m.buttonContainerVertical : m.buttonContainerHorizontal,
           children: null != I ? (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(s.zx, {
               className: m.button,
-              size: V,
+              size: F,
               onClick: e => {
                 null == T || T(e), I(e), K(p.L.PRIMARY)
               },
@@ -129,7 +129,7 @@ let g = 280,
               children: null != O ? O : h.intl.string(h.t.IHf1RE)
             }), !k && (0, r.jsx)(s.zx, {
               className: m.button,
-              size: V,
+              size: F,
               onClick: e => {
                 null == T || T(e), K(p.L.DISMISS)
               },

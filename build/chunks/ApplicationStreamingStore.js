@@ -102,7 +102,7 @@ function Z(e) {
   i = t.streamsByUserAndGuild, r = new Map(t.activeStreams), a = t.rtcStreams, o = t.streamerActiveStreamMetadatas
 }
 
-function V(e) {
+function F(e) {
   let {
     voiceStates: t
   } = e;
@@ -129,7 +129,7 @@ function V(e) {
   }, false)
 }
 
-function F(e) {
+function V(e) {
   let {
     streamKey: t
   } = e, n = (0, p.my)(t);
@@ -466,8 +466,8 @@ let eo = new ea(Chunk570140.Z, {
   MEDIA_ENGINE_SET_GO_LIVE_SOURCE: W,
   NATIVE_SCREEN_SHARE_PICKER_UPDATE: K,
   OVERLAY_INITIALIZE: Z,
-  VOICE_STATE_UPDATES: V,
-  STREAM_WATCH: F,
+  VOICE_STATE_UPDATES: F,
+  STREAM_WATCH: V,
   STREAM_START: H,
   STREAM_STOP: z,
   STREAM_CREATE: q,

@@ -246,7 +246,7 @@ class en extends Chunk647438.Component {
           message: t,
           compact: e,
           isGroupStart: n % 2 == 0,
-          className: 0 === n ? V.firstMessage : true,
+          className: 0 === n ? F.firstMessage : true,
           hideSimpleEmbedContent: i
         }, t.id))
       })

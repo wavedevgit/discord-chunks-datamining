@@ -542,7 +542,7 @@ function Z(e, t, n) {
   }), i
 }
 
-function V(e, t, n, r, i) {
+function F(e, t, n, r, i) {
   var a = e[t];
   if (true !== a) {
     if (a = "boolean" === n ? !!a : "string" === n ? String(a) : a, true !== r && false === d.call(r, a)) throw RangeError("'" + a + "' is not an allowed value for `" + t + "`");
@@ -551,7 +551,7 @@ function V(e, t, n, r, i) {
   return i
 }
 
-function F(e, t, n, r, i) {
+function V(e, t, n, r, i) {
   var a = e[t];
   if (true !== a) {
     if (isNaN(a = Number(a)) || a < n || a > r) throw RangeError("Value is not a number or outside accepted range");
@@ -578,34 +578,34 @@ function Y(e, t, n) {
   var a = L(t);
   n = true === n ? {} : eE(n);
   var o = new ep,
-    s = V(n, "localeMatcher", "string", new eh("lookup", "best fit"), "best fit");
+    s = F(n, "localeMatcher", "string", new eh("lookup", "best fit"), "best fit");
   o["[[localeMatcher]]"] = s;
   var c = b.NumberFormat["[[localeData]]"],
     d = U(b.NumberFormat["[[availableLocales]]"], a, o, b.NumberFormat["[[relevantExtensionKeys]]"], c);
   r["[[locale]]"] = d["[[locale]]"], r["[[numberingSystem]]"] = d["[[nu]]"], r["[[dataLocale]]"] = d["[[dataLocale]]"];
   var f = d["[[dataLocale]]"],
-    _ = V(n, "style", "string", new eh("decimal", "percent", "currency"), "decimal");
+    _ = F(n, "style", "string", new eh("decimal", "percent", "currency"), "decimal");
   r["[[style]]"] = _;
-  var p = V(n, "currency", "string");
+  var p = F(n, "currency", "string");
   if (true !== p && !x(p)) throw RangeError("'" + p + "' is not a valid currency code");
   if ("currency" === _ && true === p) throw TypeError("Currency code is required when style is currency");
   if ("currency" === _) {
     p = p.toUpperCase(), r["[[currency]]"] = p;
     var h = W(p)
   }
-  var m = V(n, "currencyDisplay", "string", new eh("code", "symbol", "name"), "symbol");
+  var m = F(n, "currencyDisplay", "string", new eh("code", "symbol", "name"), "symbol");
   "currency" === _ && (r["[[currencyDisplay]]"] = m);
-  var g = F(n, "minimumIntegerDigits", 1, 21, 1);
+  var g = V(n, "minimumIntegerDigits", 1, 21, 1);
   r["[[minimumIntegerDigits]]"] = g;
-  var E = F(n, "minimumFractionDigits", 0, 20, "currency" === _ ? h : 0);
+  var E = V(n, "minimumFractionDigits", 0, 20, "currency" === _ ? h : 0);
   r["[[minimumFractionDigits]]"] = E;
   var O = "currency" === _ ? Math.max(E, h) : "percent" === _ ? Math.max(E, 0) : Math.max(E, 3),
-    v = F(n, "maximumFractionDigits", E, 20, O);
+    v = V(n, "maximumFractionDigits", E, 20, O);
   r["[[maximumFractionDigits]]"] = v;
   var I = n.minimumSignificantDigits,
     T = n.maximumSignificantDigits;
-  (true !== I || true !== T) && (I = F(n, "minimumSignificantDigits", 1, 21, 1), T = F(n, "maximumSignificantDigits", I, 21, 21), r["[[minimumSignificantDigits]]"] = I, r["[[maximumSignificantDigits]]"] = T);
-  var S = V(n, "useGrouping", "boolean", true, true);
+  (true !== I || true !== T) && (I = V(n, "minimumSignificantDigits", 1, 21, 1), T = V(n, "maximumSignificantDigits", I, 21, 21), r["[[minimumSignificantDigits]]"] = I, r["[[maximumSignificantDigits]]"] = T);
+  var S = F(n, "useGrouping", "boolean", true, true);
   r["[[useGrouping]]"] = S;
   var A = c[f].patterns[_];
   return r["[[positivePattern]]"] = A.positivePattern, r["[[negativePattern]]"] = A.negativePattern, r["[[boundFormat]]"] = true, r["[[initializedNumberFormat]]"] = true, l && (e.format = K.call(e)), i.exp.test(i.input), e
@@ -755,7 +755,7 @@ function $(e, t, n) {
   var a = L(t),
     n = en(n, "any", "date"),
     o = new ep;
-  v = V(n, "localeMatcher", "string", new eh("lookup", "best fit"), "best fit"), o["[[localeMatcher]]"] = v;
+  v = F(n, "localeMatcher", "string", new eh("lookup", "best fit"), "best fit"), o["[[localeMatcher]]"] = v;
   var s = b.DateTimeFormat,
     d = s["[[localeData]]"],
     f = U(s["[[availableLocales]]"], a, o, s["[[relevantExtensionKeys]]"], d);
@@ -765,16 +765,16 @@ function $(e, t, n) {
   if (true !== p && "UTC" !== (p = eg(p))) throw RangeError("timeZone is not supported.");
   for (var h in r["[[timeZone]]"] = p, o = new ep, ee)
     if (c.call(ee, h)) {
-      var m = V(n, h, "string", ee[h]);
+      var m = F(n, h, "string", ee[h]);
       o["[[" + h + "]]"] = m
     } var g, E = d[_],
     O = et(E.formats),
-    v = V(n, "formatMatcher", "string", new eh("basic", "best fit"), "best fit");
+    v = F(n, "formatMatcher", "string", new eh("basic", "best fit"), "best fit");
   for (var h in E.formats = O, g = "basic" === v ? er(o, O) : ea(o, O), ee)
     if (c.call(ee, h) && c.call(g, h)) {
       var I = g[h];
       r["[[" + h + "]]"] = I
-    } var T, S = V(n, "hour12", "boolean");
+    } var T, S = F(n, "hour12", "boolean");
   if (r["[[hour]]"])
     if (S = true === S ? E.hour12 : S, r["[[hour12]]"] = S, true === S) {
       var A = E.hourNo0;

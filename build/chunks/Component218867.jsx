@@ -66,8 +66,8 @@ let d = Chunk647438.memo(Chunk647438.forwardRef((e, t) => {
       let t = "function" == typeof y ? y(e) : y;
       return null == t ? 0 : t
     }, [y]),
-    V = i.useRef([]),
     F = i.useRef([]),
+    V = i.useRef([]),
     {
       totalHeight: H,
       rowDescriptors: Y,
@@ -109,7 +109,7 @@ let d = Chunk647438.memo(Chunk647438.forwardRef((e, t) => {
         sectionDescriptors: a
       }
     }, [U, B, G, Z, d, g, E, M]);
-  V.current = W, F.current = Y;
+  F.current = W, V.current = Y;
   let K = i.useCallback(() => {
     var e;
     let t = null == (e = L.current) ? true : e.getScrollerNode();
@@ -163,7 +163,7 @@ let d = Chunk647438.memo(Chunk647438.forwardRef((e, t) => {
           animate: n = false,
           offset: r = 0
         } = t,
-        i = F.current[e],
+        i = V.current[e],
         a = u(L);
       null != i && null != a && a.requestAnimationFrame(() => {
         var t, a;
@@ -196,7 +196,7 @@ let d = Chunk647438.memo(Chunk647438.forwardRef((e, t) => {
           animate: n = false,
           offset: r = 0
         } = t,
-        i = V.current[e],
+        i = F.current[e],
         a = u(L);
       null != i && null != a && a.requestAnimationFrame(() => {
         var t;
@@ -210,8 +210,8 @@ let d = Chunk647438.memo(Chunk647438.forwardRef((e, t) => {
       height: D,
       totalHeight: H
     }),
-    getSectionDescriptors: () => V.current,
-    getRowDescriptors: () => F.current,
+    getSectionDescriptors: () => F.current,
+    getRowDescriptors: () => V.current,
     getScrollerNode: () => {
       var e;
       return null == (e = L.current) ? true : e.getScrollerNode()

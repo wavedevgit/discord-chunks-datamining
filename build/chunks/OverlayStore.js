@@ -559,20 +559,20 @@ function Z(e) {
   }), t
 }
 
-function V(e) {
+function F(e) {
   let t = {};
   return s().forEach(e, (e, n) => {
     t[n] = new _.Z(e)
   }), t
 }
 
-function F(e) {
+function V(e) {
   let t = T[e];
   if (null != t) return t.defaultSettings
 }
 class H extends(a = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    null != e && null != e.layouts && null != e.widgets ? (r = Z(e.layouts), i = V(e.widgets)) : (r = {}, i = {});
+    null != e && null != e.layouts && null != e.widgets ? (r = Z(e.layouts), i = F(e.widgets)) : (r = {}, i = {});
     let t = false,
       n = [];
     s().forEach(T, (e, t) => {
@@ -585,7 +585,7 @@ class H extends(a = Chunk442837.ZP.PersistedStore) {
         if (null != n || T[r].version !== e.version) continue;
         s = t = true;
         let c = (0, l.Z)(),
-          u = F(r);
+          u = V(r);
         if (null == u) return;
         n = new _.Z(y(E({}, u), {
           type: r,
@@ -650,7 +650,7 @@ class H extends(a = Chunk442837.ZP.PersistedStore) {
     return T[e]
   }
   getWidgetDefaultSettings(e) {
-    return F(e)
+    return V(e)
   }
   getWidgetType(e) {
     let t = i[e];
@@ -668,7 +668,7 @@ class H extends(a = Chunk442837.ZP.PersistedStore) {
         case "OPTIONAL_DEFAULT":
           var a;
           if ((null != (a = r.version) ? a : 0) === t) {
-            let t = F(i);
+            let t = V(i);
             if (null == t) return;
             n.push(y(E({}, t), {
               type: i,
@@ -749,7 +749,7 @@ g(H, "displayName", "LayoutStore"), g(H, "persistKey", "LayoutStore"), g(H, "mig
       }), r || null == a) return;
     let o = (0, l.Z)();
     n.widgets = [a, o];
-    let s = F(h.Odu.GUILDS_TEXT);
+    let s = V(h.Odu.GUILDS_TEXT);
     null != s && i.push([o, y(E({}, s), {
       type: h.Odu.GUILDS_TEXT,
       id: o,

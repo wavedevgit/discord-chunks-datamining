@@ -211,7 +211,7 @@ function Z(e) {
   }
 }
 
-function V(e, t) {
+function F(e, t) {
   var n, r, i, a, o, l, c, u, d, f;
   let p = new Map;
   for (let e in t.framesEncodedByEncoder) {
@@ -248,7 +248,7 @@ function V(e, t) {
     saved_at: t.savedAt
   })
 }
-async function F(e) {
+async function V(e) {
   let t = O.Z.getSettings().storageLocation,
     n = (0, I.Z)(e),
     r = "".concat((0, v.Z)(n.applicationName.substring(0, 20)), "_").concat(n.id, ".mp4"),
@@ -268,7 +268,7 @@ async function F(e) {
     let {
       duration: e,
       clipStats: t
-    } = await (null != u ? s.saveClipForUser(u, i, l) : s.saveClip(i, l)), r = V(d, t);
+    } = await (null != u ? s.saveClipForUser(u, i, l) : s.saveClip(i, l)), r = F(d, t);
     r.clip_save_time_ms = t.clipSaveTimeMs, r.clip_size_bytes = t.clipSizeBytes, null != t.viewerDecodeFps && (r.decode_fps_during_clip = t.viewerDecodeFps, r.encode_fps_during_clip = t.viewerEncodeFps, r.target_fps = null), b.default.track(N.rMx.CLIP_SAVED, r);
     let a = await (0, A.R)(o.Z.clips.getClipProtocolURLFromPath(i), 0);
     return n.thumbnail = a, n.length = e, C.jF.info("Clip save succeeded with ".concat(e, "ms and thumbnail ").concat(null != (f = null == a ? true : a.length) ? f : 0, " bytes thumbnail.")), await s.updateClipMetadata(i, JSON.stringify(n)), D(P({}, n), {
@@ -280,7 +280,7 @@ async function F(e) {
         clipId: n.id
       }), !("errorMessage" in i)) throw b.default.track(N.rMx.CLIP_SAVE_FAILURE, d), i;
     let t = i,
-      r = V(d, t);
+      r = F(d, t);
     throw r.error_at = t.errorAt, r.error_message = t.errorMessage, b.default.track(N.rMx.CLIP_SAVE_FAILURE, r), t.errorMessage
   }
 }
@@ -329,7 +329,7 @@ async function H(e) {
   let T = (0, d.GN)("clip_save", .5),
     S = performance.now();
   try {
-    let e = await F(y);
+    let e = await V(y);
     a.Z.dispatch({
       type: "CLIPS_SAVE_CLIP",
       clip: e

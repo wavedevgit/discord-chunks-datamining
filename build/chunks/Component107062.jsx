@@ -78,19 +78,19 @@ let C = (e, t) => A.intl.formatToPlainString(A.t.tAwI1t, {
     } = (0, O.Z)(null == D ? true : D.src), G = (0, a.e7)([p.default], () => p.default.locale), {
       displayParticipants: B,
       participant1: Z,
-      participant2: V,
-      numOtherParticipants: F
+      participant2: F,
+      numOtherParticipants: V
     } = (0, E.Z)(n, 3), H = () => {
       d.__(f._b.TEXT, _.Ie.NORMAL, {
         applicationId: n.extra.application_id
       })
     }, Y = i.useCallback(e => {
       if ((null == D ? true : D.src) == null || null == t || null == x) return;
-      let r = F > 0 ? R({
+      let r = V > 0 ? R({
         entry: n,
         channel: t,
-        users: [Z, V],
-        countOthers: F
+        users: [Z, F],
+        countOthers: V
       }) : N(n, t, x);
       return (0, y.C4)({
         entry: n,
@@ -101,7 +101,7 @@ let C = (e, t) => A.intl.formatToPlainString(A.t.tAwI1t, {
         colors: [M, U],
         channelId: e
       })
-    }, [null == D ? true : D.src, t, B, n, G, F, Z, V, M, U, x]), {
+    }, [null == D ? true : D.src, t, B, n, G, V, Z, F, M, U, x]), {
       enabled: W
     } = s.c.useExperiment({
       location: "MemberListAcitivtyContentPopout"

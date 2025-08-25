@@ -103,8 +103,8 @@ function N(e) {
     trialId: G,
     postSuccessGuild: B,
     openInvoiceId: Z,
-    applicationId: V,
-    referralTrialOfferId: F,
+    applicationId: F,
+    referralTrialOfferId: V,
     giftRecipient: H,
     returnRef: Y,
     subscription: W,
@@ -156,8 +156,8 @@ function N(e) {
         postSuccessGuild: B,
         planGroup: O.Y1,
         openInvoiceId: Z,
-        applicationId: V,
-        referralTrialOfferId: F,
+        applicationId: F,
+        referralTrialOfferId: V,
         returnRef: Y,
         subscription: W,
         skipConfirm: !!K,
@@ -181,7 +181,7 @@ function N(e) {
         is_gift: L,
         sku_id: $,
         eligible_for_trial: null != G,
-        application_id: V,
+        application_id: F,
         location_stack: N
       }), (0, u.fw)(), (0, c.fw)(), (0, d.p)(), null == v || v(z), z && (null == C || C())
     }

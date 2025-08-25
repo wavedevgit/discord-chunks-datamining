@@ -120,11 +120,11 @@ let C = Chunk647438.memo(function(e) {
     Z = i.useCallback(() => {
       j(true)
     }, []),
-    V = i.useCallback(() => {
+    F = i.useCallback(() => {
       j(false)
     }, []);
 
-  function F() {
+  function V() {
     return (0, r.jsx)(_.Z, {
       className: b.dismissButton,
       onDismiss: U,
@@ -212,14 +212,14 @@ let C = Chunk647438.memo(function(e) {
         innerRef: w,
         ignoreKeyPress: true,
         onMouseOver: Z,
-        onMouseLeave: V,
+        onMouseLeave: F,
         onClick: y,
         className: o()(b.container, {
           [b.clickable]: null != y
         }, D),
         children: K()
       })
-    }), F()]
+    }), V()]
   })
 });
 
@@ -303,12 +303,12 @@ function P(e) {
     },
     status: U
   } = t, G = T(t.props, ["onNotificationShow", "onDismissClick", "renderFooter", "onNotificationClick", "onConfirmClick", "onCancelClick", "disableClickableRegions"]), B = !o && a, Z = 0 === n && !M && !B, {
-    ref: V,
-    springs: F
+    ref: F,
+    springs: V
   } = (0, m.X4)(t.id, s, l);
   return (0, r.jsx)(N, {
     transitionState: s,
-    springs: F,
+    springs: V,
     index: n,
     locked: a,
     animationWrapperClassName: E,
@@ -316,7 +316,7 @@ function P(e) {
       observe: Z,
       children: (0, r.jsx)(C, I(O({}, G), {
         title: "function" == typeof G.title ? G.title(y) : G.title,
-        containerRef: V,
+        containerRef: F,
         notificationId: t.id,
         onNotificationShow: 0 === n ? b : true,
         onDismissClick: y,
@@ -328,7 +328,7 @@ function P(e) {
         index: n,
         locked: a,
         status: U,
-        contentOpacity: F.contentOpacity
+        contentOpacity: V.contentOpacity
       }))
     })
   })

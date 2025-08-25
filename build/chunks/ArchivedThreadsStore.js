@@ -4,7 +4,7 @@
 let r;
 require.d(exports, {
   I: () => y,
-  Z: () => F
+  Z: () => V
 }), require("./388685.js"), require("./642613.js"), require("./583741.js");
 var i, Chunk392711 = require("./392711.js"),
   o = require.n(Chunk392711),
@@ -123,7 +123,7 @@ function B(e) {
   return S === t.parent_id && !!(0, f.yv)(t.id) && void U(t.id)
 }
 let Z = [];
-class V extends(i = Chunk442837.ZP.Store) {
+class F extends(i = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk592125.Z, Chunk569471.Z, Chunk306680.ZP)
   }
@@ -143,8 +143,8 @@ class V extends(i = Chunk442837.ZP.Store) {
     return S === e && A === t && (0, c.O)(r, n) && R === i ? C : Z
   }
 }
-b(V, "displayName", "ArchivedThreadsStore");
-let F = new V(Chunk570140.Z, {
+b(F, "displayName", "ArchivedThreadsStore");
+let V = new F(Chunk570140.Z, {
   CONNECTION_OPEN: P,
   THREAD_DELETE: G,
   THREAD_UPDATE: B,

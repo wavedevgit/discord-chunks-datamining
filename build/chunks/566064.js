@@ -153,7 +153,7 @@ function f(e) {
       onFocus: U,
       onBlur: G
     }), [n.length, B, T, E, t, M, U, G]),
-    V = r.useCallback((e, n) => {
+    F = r.useCallback((e, n) => {
       let r = {
         role: "gridcell",
         "aria-rowindex": n + 1,
@@ -164,16 +164,16 @@ function f(e) {
       };
       return e === f && n === _ && (r.ref = k), r
     }, [t, E, f, _, P, k]),
-    F = r.useCallback(e => ({
+    V = r.useCallback(e => ({
       role: "row",
       "aria-rowindex": e + 1
     }), []);
   return r.useMemo(() => ({
     dispatch: g,
     getContainerProps: Z,
-    getItemProps: V,
-    getRowProps: F
-  }), [g, Z, V, F])
+    getItemProps: F,
+    getRowProps: V
+  }), [g, Z, F, V])
 }
 
 function _(e) {

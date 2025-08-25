@@ -3,7 +3,7 @@
 "use strict";
 let r, i, a, o, s, l, c, u, d, f, _;
 require.d(exports, {
-  Z: () => V
+  Z: () => F
 });
 var p, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -192,7 +192,7 @@ class Z extends(p = Chunk442837.ZP.Store) {
   }
 }
 E(Z, "displayName", "GuildIdentitySettingsStore");
-let V = new Z(Chunk570140.Z, {
+let F = new Z(Chunk570140.Z, {
   GUILD_IDENTITY_SETTINGS_INIT: O,
   GUILD_IDENTITY_SETTINGS_RESET_AND_CLOSE_FORM: B,
   GUILD_IDENTITY_SETTINGS_SET_GUILD: T,

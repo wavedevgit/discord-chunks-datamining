@@ -45,7 +45,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk116649 = require("./116649.js");
 
-function F(e, t, n) {
+function V(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -61,7 +61,7 @@ function H(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      F(e, t, n[t])
+      V(e, t, n[t])
     })
   }
   return e
@@ -89,7 +89,7 @@ function z(e) {
   var t;
   let {
     user: n,
-    currentUser: F,
+    currentUser: V,
     guildId: Y,
     channelId: z,
     messageId: q,
@@ -144,7 +144,7 @@ function z(e) {
   let eE = (0, h.Z)({
       location: "UserProfilePopout"
     }),
-    eb = n.id === F.id,
+    eb = n.id === V.id,
     [ey, eO] = (0, b.US)(eE && eb ? [s.z.CUSTOM_STATUS_PROMPTS_COACHMARK] : []),
     ev = ey === s.z.CUSTOM_STATUS_PROMPTS_COACHMARK,
     eI = (0, m.p)({
@@ -199,7 +199,7 @@ function z(e) {
             themeType: B.l.POPOUT,
             children: [null != ed.interactionType && (0, r.jsx)(a.animated.div, {
               style: ef,
-              className: V.backdrop
+              className: F.backdrop
             }), (0, r.jsxs)(x.Z, {
               children: [(0, r.jsx)(j.Z, {
                 shouldShowTooltip: null === ed.interactionType,
@@ -220,7 +220,7 @@ function z(e) {
                 appContext: en
               })]
             }), (0, r.jsxs)("div", {
-              className: V.header,
+              className: F.header,
               children: [(0, r.jsx)(P.Z, {
                 user: n,
                 displayProfile: ec,
@@ -228,7 +228,7 @@ function z(e) {
                 themeType: B.l.POPOUT
               }), (0, r.jsx)(w.Z, {
                 userId: n.id,
-                className: V.toast,
+                className: F.toast,
                 onClose: J
               }), (0, r.jsx)(R.Z, {
                 user: n,
@@ -262,7 +262,7 @@ function z(e) {
               })]
             }), (0, r.jsx)(U.Z, {
               user: n,
-              currentUser: F,
+              currentUser: V,
               displayProfile: ec,
               guild: eo,
               isHovering: null == ed.interactionType && eu,

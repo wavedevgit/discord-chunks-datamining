@@ -38,27 +38,27 @@ function y(e) {
   } = (0, d.Rt)(x), {
     analyticsLocations: k
   } = (0, c.ZP)(), M = (0, m.Ev)(C, null != i ? i : true), U = null == M ? true : M.subscription, G = null == M ? true : M.subscriptionPlan, B = (0, m.cr)(C, null != i ? i : true), Z = null == B ? true : B.subscriptionPlan, {
-    entitlementsLoaded: V
+    entitlementsLoaded: F
   } = (0, m.LM)({
     guildId: i
   });
-  null == i && (V = true);
-  let F = (0, f.Z)(),
+  null == i && (F = true);
+  let V = (0, f.Z)(),
     H = null != U && (0, E.Jf)(U, T),
     Y = r.useMemo(() => {
-      if (!V || null == j || null == O) return u.rf.LOADING;
+      if (!F || null == j || null == O) return u.rf.LOADING;
       if (!L) return u.rf.UNAVAILABLE;
       if (!w) {
         if ((null == G ? true : G.skuId) === O) return u.rf.SUBSCRIBED;
         if ((null == Z ? true : Z.skuId) === O && false === H) return u.rf.UPCOMING_PLAN
       }
       return u.rf.AVAILABLE
-    }, [null == G ? true : G.skuId, L, j, V, H, w, null == Z ? true : Z.skuId, O]);
+    }, [null == G ? true : G.skuId, L, j, F, H, w, null == Z ? true : Z.skuId, O]);
   return r.useEffect(() => {
-    L && null != O && F && (_.Z.isFetchingForSKU(O) || _.Z.isLoadedForSKU(O) || s.Z.wait(() => {
+    L && null != O && V && (_.Z.isFetchingForSKU(O) || _.Z.isLoadedForSKU(O) || s.Z.wait(() => {
       (0, l.GZ)(O)
     }))
-  }, [L, O, F]), {
+  }, [L, O, V]), {
     openModal: r.useCallback(() => {
       a()(null != j, "No application"), a()(null != O, "No SKU ID"), a()(L, "Cannot purchase this unpublished plan"), (0, b.H)({
         subscriptionPlanId: A,

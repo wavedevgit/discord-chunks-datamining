@@ -65,7 +65,7 @@ function B(e) {
 
 function Z(e, t) {
   if (null == e) return {};
-  var n, r, i = V(e, t);
+  var n, r, i = F(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -73,7 +73,7 @@ function Z(e, t) {
   return i
 }
 
-function V(e, t) {
+function F(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -81,12 +81,12 @@ function V(e, t) {
   return i
 }
 
-function F(e) {
+function V(e) {
   var t, n, a;
   let {
     channel: _,
     isLoading: p
-  } = e, [C, G] = i.useState(false), B = (0, s.e7)([S.ZP], () => S.ZP.getCurrentEmbeddedActivity()), Z = (0, s.e7)([S.ZP], () => S.ZP.getActivityPanelMode()), V = (0, h.q)(null == B ? true : B.applicationId), F = null == B ? true : B.launchId, H = (0, s.e7)([v.Z], () => v.Z.getChannelId() === (null == _ ? true : _.id)), {
+  } = e, [C, G] = i.useState(false), B = (0, s.e7)([S.ZP], () => S.ZP.getCurrentEmbeddedActivity()), Z = (0, s.e7)([S.ZP], () => S.ZP.getActivityPanelMode()), F = (0, h.q)(null == B ? true : B.applicationId), V = null == B ? true : B.launchId, H = (0, s.e7)([v.Z], () => v.Z.getChannelId() === (null == _ ? true : _.id)), {
     dockedRect: Y,
     isHidden: W
   } = (0, s.cj)([O.Z], () => {
@@ -189,7 +189,7 @@ function F(e) {
           applicationId: B.applicationId
         })
       }
-    }, [null == B ? true : B.applicationId, en]), null == B || null == F || (0, R.Z)(null == _ ? true : _.id) && null == z || null == V) return null;
+    }, [null == B ? true : B.applicationId, en]), null == B || null == V || (0, R.Z)(null == _ ? true : _.id) && null == z || null == F) return null;
   let es = Array.from(B.userIds).map(e => I.default.getUser(e)).filter(e => null != e),
     el = {
       instance_id: null != (a = null != (n = B.compositeInstanceId) ? n : B.launchId) ? a : "",
@@ -233,7 +233,7 @@ function F(e) {
             [k.pipModeTall]: en && C
           })
         }) : (0, r.jsx)(P.J, {
-          allowPopups: (0, N.h)(V),
+          allowPopups: (0, N.h)(F),
           referrerPolicy: D.um.has(B.applicationId) ? "no-referrer" : "origin",
           url: B.url,
           queryParams: el,
@@ -265,7 +265,7 @@ let H = e => {
   } = (0, p.ZP)(_.Z.ACTIVITY_PIP), o = null == i;
   return (0, r.jsx)(p.Gt, {
     value: a,
-    children: (0, r.jsx)(F, B({
+    children: (0, r.jsx)(V, B({
       channel: t,
       isLoading: o
     }, n))

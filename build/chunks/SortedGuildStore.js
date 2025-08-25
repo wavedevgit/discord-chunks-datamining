@@ -217,8 +217,8 @@ let G = (0, Chunk251625.oH)((e, t) => e.sortedGuildNodes().map(e => e.id)),
     }
     return r(e.root), n
   }),
-  V = (0, Chunk251625.oH)((e, t) => e.root.children.map(A));
-class F extends Chunk750041.Z {
+  F = (0, Chunk251625.oH)((e, t) => e.root.children.map(A));
+class V extends Chunk750041.Z {
   initialize() {
     this.waitFor(Chunk430824.Z, Chunk9156.ZP, Chunk581883.Z, Chunk486472.Z, Chunk41776.Z, Chunk664915.Z, Chunk937111.Z)
   }
@@ -238,14 +238,14 @@ class F extends Chunk750041.Z {
     return Z(T, T.version)
   }
   getCompatibleGuildFolders() {
-    return V(T, T.version)
+    return F(T, T.version)
   }
   getFastListGuildFolders() {
     return T.getRoots()
   }
   takeSnapshot() {
     return {
-      version: F.LATEST_SNAPSHOT_VERSION,
+      version: V.LATEST_SNAPSHOT_VERSION,
       data: {
         tree: T.getSnapshot()
       }
@@ -268,12 +268,12 @@ class F extends Chunk750041.Z {
       SET_GUILD_FOLDER_EXPANDED: k,
       GUILD_FOLDER_COLLAPSE: M
     }), O(this, "loadCache", () => {
-      let e = this.readSnapshot(F.LATEST_SNAPSHOT_VERSION),
+      let e = this.readSnapshot(V.LATEST_SNAPSHOT_VERSION),
         t = null == module ? true : module.tree;
       if (null != exports)
         for (let e of ((T = new Chunk727258.g8).loadSnapshot(exports), T.allNodes())) module.type === Chunk727258.eD.FOLDER && (module.expanded = Chunk664915.Z.isFolderExpanded(module.id))
     })
   }
 }
-O(F, "displayName", "SortedGuildStore"), O(F, "LATEST_SNAPSHOT_VERSION", 2);
-let H = new F
+O(V, "displayName", "SortedGuildStore"), O(V, "LATEST_SNAPSHOT_VERSION", 2);
+let H = new V

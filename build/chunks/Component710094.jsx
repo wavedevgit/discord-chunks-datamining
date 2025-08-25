@@ -47,8 +47,8 @@ function k(e) {
       reviewWarningMessage: G,
       planGroup: B,
       openInvoiceId: Z,
-      analyticsData: V,
-      analyticsLocation: F,
+      analyticsData: F,
+      analyticsLocation: V,
       referralTrialOfferId: H,
       initialPlanId: Y,
       subscriptionTier: W,
@@ -124,8 +124,8 @@ function k(e) {
     [eU, eG] = i.useState(null),
     eB = !eO && null != ew && null != ea && w.nG[ew.trial_id].skus.includes(ea),
     eZ = null == eD || null == (t = eD.discount) ? true : t.plan_ids,
-    eV = !eO && null != eD && null != eZ && null != ei && eZ.includes(ei.id),
-    eF = eO && (0, m.pO)(eI),
+    eF = !eO && null != eD && null != eZ && null != ei && eZ.includes(ei.id),
+    eV = eO && (0, m.pO)(eI),
     eH = null == Y && null == W && ep === D.GZ.SUBSCRIPTION,
     eY = (0, S.Kp)({
       isTrial: eB,
@@ -164,7 +164,7 @@ function k(e) {
     purchaseState: ed,
     referralTrialOfferId: H,
     isTrial: eB || null != M && null != U,
-    isDiscount: eV,
+    isDiscount: eF,
     handleClose: K
   })) : (o()(null != ei, "Expected plan to be selected"), a = (0, r.jsx)(p.Z, {
     premiumSubscription: z,
@@ -188,7 +188,7 @@ function k(e) {
   }))), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(O.P, {
       giftMessage: ev
-    }), !eF && (0, r.jsx)(N.Z, {
+    }), !eV && (0, r.jsx)(N.Z, {
       isEligibleForTrial: eB
     }), (0, r.jsxs)(P.C3, {
       children: [ey && eY && (0, r.jsx)("div", {
@@ -209,8 +209,8 @@ function k(e) {
         flashLegalTerms: () => eN(true),
         invoiceError: eU,
         planError: ek,
-        analyticsLocation: F,
-        baseAnalyticsData: V,
+        analyticsLocation: V,
+        baseAnalyticsData: F,
         flowStartTime: X.startTime,
         trialId: eP,
         planGroup: B,

@@ -185,8 +185,8 @@ function w(e, t) {
     isInteractive: G,
     reactions: B,
     selectedAnswerIds: Z,
-    submitting: V,
-    tapShouldOpenVotersModal: F,
+    submitting: F,
+    tapShouldOpenVotersModal: V,
     showResults: H
   } = S, Y = (0, E.cZ)(B), W = T.intl.formatToPlainString(T.t.XRkuoa, {
     count: Y.toLocaleString()
@@ -225,7 +225,7 @@ function w(e, t) {
       isVictor: U && f,
       didSelfVote: _,
       style: h,
-      shouldAnimateTransition: V && !p,
+      shouldAnimateTransition: F && !p,
       votesPercentage: Math.round(100 * u),
       votes: (0, r.EQ)(I).with(i.C.IMAGE_ONLY_ANSWERS, () => "(".concat(c.toLocaleString(), ")")).otherwise(() => T.intl.formatToPlainString(T.t.XRkuoa, {
         count: c.toLocaleString()
@@ -316,7 +316,7 @@ function w(e, t) {
     promptLabel: ee,
     answers: z,
     answersInteraction: (0, r.EQ)({
-      tapShouldOpenVotersModal: F,
+      tapShouldOpenVotersModal: V,
       canTapAnswers: R,
       canSelectMultipleAnswers: $
     }).with({
@@ -328,7 +328,7 @@ function w(e, t) {
     }, () => b.Y7.RADIO_BUTTONS).with({
       canSelectMultipleAnswers: true
     }, () => b.Y7.CHECKBOXES).exhaustive(),
-    answerTapAccessibilityLabel: F ? X : true,
+    answerTapAccessibilityLabel: V ? X : true,
     layoutType: I,
     resources: (0, O.Z)({
       theme: l,

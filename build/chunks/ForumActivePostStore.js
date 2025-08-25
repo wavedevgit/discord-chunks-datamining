@@ -81,7 +81,7 @@ function B() {
   var e;
   let t = Chunk944486.Z.getChannelId();
   if (null == exports || !(null == (e = Chunk592125.Z.getChannel(exports)) ? true : module.isForumLikeChannel())) return G(), false;
-  V({
+  F({
     refreshThreadIds: true
   })
 }
@@ -96,7 +96,7 @@ function Z(e) {
   }).sort(M(S))
 }
 
-function V(e) {
+function F(e) {
   let t = h.Z.getChannel(I);
   if (null == t) return;
   (null == e ? true : e.refreshThreadIds) && (P = Object.values(f.Z.getThreadsForParent(t.guild_id, t.id)).map(e => {
@@ -110,13 +110,13 @@ function V(e) {
   r = null == i ? null : i
 }
 
-function F(e) {
+function V(e) {
   var t;
   let {
     guildId: n
   } = e;
   if (null == I || n !== (null == (t = h.Z.getChannel(I)) ? true : t.guild_id)) returnfalse;
-  V({
+  F({
     refreshThreadIds: true
   })
 }
@@ -128,12 +128,12 @@ function H(e) {
   if (null == t.parent_id || t.parent_id !== I) returnfalse;
   let n = (0, b.yv)(t.id),
     r = L.has(t.id);
-  if (n && !r) L.add(t.id), V({
+  if (n && !r) L.add(t.id), F({
     sortThreadIds: true
   });
   else {
     if (n || !r) returnfalse;
-    L.delete(t.id), V({
+    L.delete(t.id), F({
       sortThreadIds: true
     })
   }
@@ -153,7 +153,7 @@ function W(e) {
     channel: t
   } = e;
   if (null == t.parent_id || t.parent_id !== I) returnfalse;
-  x.add(t.id), V({
+  x.add(t.id), F({
     sortThreadIds: true
   })
 }
@@ -171,7 +171,7 @@ function z(e) {
     channelId: t
   } = e;
   if (null == t || t !== I) returnfalse;
-  V({
+  F({
     refreshThreadIds: true
   })
 }
@@ -198,11 +198,11 @@ class X extends(i = Chunk442837.ZP.Store) {
       a = !(0, c.O)(n, T),
       o = t !== S,
       s = r !== A;
-    return I = e, T = n, S = t, A = r, i ? V({
+    return I = e, T = n, S = t, A = r, i ? F({
       refreshThreadIds: true
-    }) : o ? V({
+    }) : o ? F({
       sortThreadIds: true
-    }) : (a || s) && V(), N
+    }) : (a || s) && F(), N
   }
   getCurrentThreadIds() {
     return N
@@ -222,7 +222,7 @@ let Q = new X(Chunk570140.Z, {
   GUILD_CREATE: B,
   CHANNEL_SELECT: B,
   CHANNEL_DELETE: K,
-  THREAD_LIST_SYNC: F,
+  THREAD_LIST_SYNC: V,
   THREAD_CREATE: Y,
   THREAD_UPDATE: H,
   THREAD_DELETE: W,

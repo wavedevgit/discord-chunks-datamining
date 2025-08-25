@@ -166,14 +166,14 @@ function Z(e) {
     return console.error("Unknown config version '".concat(null == e || null == (t = e.config) ? true : t.config_version, "'"), n), false
   }
 }
-let V = e => e.application_id === x.Ev || e.platform === D.M7m.XBOX,
-  F = e => e.platform === D.M7m.PS4 || e.platform === D.M7m.PS5;
+let F = e => e.application_id === x.Ev || e.platform === D.M7m.XBOX,
+  V = e => e.platform === D.M7m.PS4 || e.platform === D.M7m.PS5;
 
 function H(e, t) {
   if (null == e) returnfalse;
   let n = e.name.toLowerCase(),
     r = R.r.build(t.config).application.name.toLowerCase();
-  return V(e) || F(e) ? n === r : null != e.application_id && W(e.application_id, t)
+  return F(e) || V(e) ? n === r : null != e.application_id && W(e.application_id, t)
 }
 
 function Y(e, t) {
@@ -602,11 +602,11 @@ function eB(e) {
   return (null == e ? true : e.type) === o.X.PLAY_ON_DESKTOP
 }
 let eZ = (e, t) => e > 0 ? (0, i.floor)(Math.min(t / e, 1), 4) : 0,
-  eV = e => tt(e) || S.Z.isProgressingOnDesktop(e.id),
-  eF = (e, t) => {
+  eF = e => tt(e) || S.Z.isProgressingOnDesktop(e.id),
+  eV = (e, t) => {
     var n, r, a, o;
     let s = null == (o = e.userStatus) || null == (a = o.progress) || null == (r = a[t.type]) || null == (n = r.heartbeat) ? true : n.lastBeatAt;
-    if (null == s || !eV(e)) return 0;
+    if (null == s || !eF(e)) return 0;
     let l = Date.now() - new Date(s).valueOf();
     return (0, i.floor)(l / b.Z.Millis.SECOND, 2)
   },
@@ -618,7 +618,7 @@ let eZ = (e, t) => e > 0 ? (0, i.floor)(Math.min(t / e, 1), 4) : 0,
       let n = S.Z.getOptimisticProgress(e.id, t.type);
       return null == n || n < l ? l : n
     }
-    return l + eF(e, t)
+    return l + eV(e, t)
   },
   eY = .99,
   eW = (e, t) => {

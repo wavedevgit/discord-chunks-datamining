@@ -4,8 +4,8 @@
 require.d(exports, {
   $d: () => D,
   BQ: () => w,
-  Cb: () => V,
-  Hu: () => F,
+  Cb: () => F,
+  Hu: () => V,
   L1: () => z,
   Ow: () => K,
   PZ: () => q,
@@ -220,11 +220,11 @@ function Z(e) {
   }
 }
 
-function V(e) {
+function F(e) {
   return !!w(e) && (e instanceof p.ZP ? e.isMonetized : e.is_monetized)
 }
 
-function F(e) {
+function V(e) {
   let t = G(e);
   return null != t && t.displays_advertisements
 }

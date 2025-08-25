@@ -133,7 +133,7 @@ function eE(e, t, a, o, s) {
     if (l) return;
     c(true);
     let y = null != (E = null == (g = L.Z.getStickerPreview(s, t.drafts.type)) ? true : g.map(e => e.id)) ? E : [],
-      O = null != (b = F.Z.getUploads(s, t.drafts.type)) ? b : [],
+      O = null != (b = V.Z.getUploads(s, t.drafts.type)) ? b : [],
       v = (0, x.q5)(s);
     if (null == d && !_ && !m && (0, R.CB)(O, s)) {
       c(false), (0, p.ZDy)(async () => {
@@ -403,7 +403,7 @@ function eD(e, t) {
     focused: G,
     error: B,
     renderAttachButton: Z,
-    renderApplicationCommandIcon: F,
+    renderApplicationCommandIcon: V,
     renderAppLauncherButton: H,
     pendingReply: Y,
     onChange: W,
@@ -427,8 +427,8 @@ function eD(e, t) {
     children: eG,
     disableThemedBackground: eB = false,
     emojiPickerCloseOnModalOuterClick: eZ,
-    parentModalKey: eV,
-    onCommandSentinelTyped: eF,
+    parentModalKey: eF,
+    onCommandSentinelTyped: eV,
     pendingScheduledMessage: eH
   } = e;
   c()(null != M, "chat input type must be set");
@@ -464,12 +464,12 @@ function eD(e, t) {
     fontSize: tn
   } = (0, _.cj)([g.Z], () => ({
     fontSize: g.Z.fontSize
-  })), tr = (0, _.e7)([V.Z], () => V.Z.isEnabled()), ti = i.useRef(f);
+  })), tr = (0, _.e7)([F.Z], () => F.Z.isEnabled()), ti = i.useRef(f);
   ti.current = f;
   let ta = i.useCallback((e, t, n) => {
     var r;
-    t === el.GI && "" === ti.current && (null == (r = M.commands) ? true : r.enabled) && (null == eF || eF()), null == W || W(e, t, n)
-  }, [W, eF, null == (a = M.commands) ? true : a.enabled]);
+    t === el.GI && "" === ti.current && (null == (r = M.commands) ? true : r.enabled) && (null == eV || eV()), null == W || W(e, t, n)
+  }, [W, eV, null == (a = M.commands) ? true : a.enabled]);
   eI(M, e4);
   let {
     eventEmitter: to,
@@ -509,7 +509,7 @@ function eD(e, t) {
   let tR = null != Y,
     tP = e4 && !((e2 || e3) && e5) || tl && (null == (s = M.submit) ? true : s.useDisabledStylesOnSubmit),
     tw = null;
-  null != e0 ? tw = null == F ? true : F(e0, e1, eu.attachButton) : (!e4 || e6) && (tw = null == Z ? true : Z(tR, eu.attachButton));
+  null != e0 ? tw = null == V ? true : V(e0, e1, eu.attachButton) : (!e4 || e6) && (tw = null == Z ? true : Z(tR, eu.attachButton));
   let tD = e9 && null != h && !e4 && M.showCharacterCount && null == e0,
     tx = e9 && !__OVERLAY__ && null != h && null == e0 && M.toolbarType !== X.OW.NONE,
     tL = (0, ee.c)({
@@ -679,7 +679,7 @@ function eD(e, t) {
         onSelectSound: tg,
         channel: k,
         closeOnModalOuterClick: eZ,
-        parentModalKey: eV,
+        parentModalKey: eF,
         position: "top",
         align: "right",
         positionLayerClassName: eu.expressionPickerPositionLayer

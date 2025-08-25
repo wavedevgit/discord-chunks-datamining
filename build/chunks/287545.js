@@ -52,8 +52,8 @@ function B(e, t, n) {
   }) : e[t] = n, e
 }
 let Z = 2e3,
-  V = {},
   F = {},
+  V = {},
   H = {};
 
 function Y(e) {
@@ -70,7 +70,7 @@ function W(e) {
     locations: r,
     source: i
   } = e;
-  return (null != r || null != i) && (F[t] = {
+  return (null != r || null != i) && (V[t] = {
     nonce: n,
     locations: r,
     source: i
@@ -78,8 +78,8 @@ function W(e) {
 }
 
 function K(e, t) {
-  let n = F[e];
-  if (null != n && n.nonce === t) return delete F[e], n
+  let n = V[e];
+  if (null != n && n.nonce === t) return delete V[e], n
 }
 
 function z(e, t) {
@@ -115,7 +115,7 @@ async function X(e) {
     retries: 2,
     rejectWithError: false
   });
-  let l = V[n],
+  let l = F[n],
     c = (0, L.p)(r),
     u = (0, L.j)(r),
     d = g.Z.getChannel(c),
@@ -155,7 +155,7 @@ async function X(e) {
     raw_thermal_state: b,
     duration_ms: o,
     embedded_activity_location_kind: r.kind
-  }), delete V[n]
+  }), delete F[n]
 }
 
 function Q(e) {
@@ -197,8 +197,8 @@ function Q(e) {
       mediaSessionIds: W,
       activitiesInfraVersion: x
     };
-  V[r] = K;
-  let z = F[r];
+  F[r] = K;
+  let z = V[r];
   (0, T.Ew)(b.nonce) || b.nonce === (null == z ? true : z.nonce) || (z = true), O.default.track(U.rMx.ACTIVITY_SESSION_JOINED, {
     channel_id: v,
     guild_id: I,
@@ -239,7 +239,7 @@ function Q(e) {
 }
 
 function J(e) {
-  return V[e]
+  return F[e]
 }
 class $ extends Chunk317770.Z {
   _initialize() {
@@ -429,7 +429,7 @@ class $ extends Chunk317770.Z {
         nonce: t,
         data: n
       } = e;
-      if (null == F[n.applicationId]) {
+      if (null == V[n.applicationId]) {
         let e;
         n.interactionType === l.B8.APPLICATION_COMMAND ? e = [u.Z.INTERACTION_APPLICATION_COMMAND] : n.interactionType === l.B8.MESSAGE_COMPONENT ? e = [u.Z.INTERACTION_MESSAGE_COMPONENT] : n.interactionType === l.B8.MODAL_SUBMIT && (e = [u.Z.INTERACTION_MODAL_SUBMIT]), W({
           applicationId: n.applicationId,
@@ -445,7 +445,7 @@ class $ extends Chunk317770.Z {
       if (null == t) return;
       let r = H[t];
       if (null == r) return;
-      let i = F[r];
+      let i = V[r];
       null != i && (i.interactionId = n)
     }), B(this, "handleInteractionSuccess", e => {
       let {

@@ -226,7 +226,7 @@ function Z(e, t) {
   })
 }
 
-function V() {
+function F() {
   let e = Chunk944486.Z.getChannelId(),
     t = Chunk914010.Z.getGuildId();
   if (null == exports || null == module) return;
@@ -234,7 +234,7 @@ function V() {
   (null == require ? true : require.type) !== Chunk897473.tI.VIEW_CHANNEL && Z(exports, module)
 }
 
-function F(e) {
+function V(e) {
   let {
     guildId: t,
     channelId: n,
@@ -331,7 +331,7 @@ class X extends Chunk147913.Z {
     Chunk570140.Z.unsubscribe("CONNECTION_OPEN", k)
   }
   constructor(...e) {
-    super(...e), R(this, "fetchMessages", w), R(this, "loadSelectedChannelIfNecessary", M), R(this, "stores", new Map().set(E.ZP, V)), R(this, "actions", {
+    super(...e), R(this, "fetchMessages", w), R(this, "loadSelectedChannelIfNecessary", M), R(this, "stores", new Map().set(E.ZP, F)), R(this, "actions", {
       APP_STATE_UPDATE: q,
       OVERLAY_INITIALIZE: k,
       CHANNEL_SELECT: U,
@@ -339,7 +339,7 @@ class X extends Chunk147913.Z {
       THREAD_CREATE: H,
       THREAD_LIST_SYNC: () => M(),
       CHANNEL_CREATE: H,
-      CHANNEL_PRELOAD: F,
+      CHANNEL_PRELOAD: V,
       GUILD_CREATE: () => M(),
       MESSAGE_END_EDIT: Y,
       LOAD_MESSAGES_SUCCESS: K,

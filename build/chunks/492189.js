@@ -40,8 +40,8 @@ var Chunk98405 = require("./98405.js"),
   G = Chunk117895.f,
   B = Chunk840991.f,
   Z = Chunk127849.RangeError,
-  V = Chunk391246.ArrayBuffer,
-  F = V.prototype,
+  F = Chunk391246.ArrayBuffer,
+  V = F.prototype,
   H = Chunk391246.DataView,
   Y = Chunk840475.NATIVE_ARRAY_BUFFER_VIEWS,
   W = Chunk840475.TYPED_ARRAY_TAG,
@@ -60,7 +60,7 @@ var Chunk98405 = require("./98405.js"),
   },
   $ = function(e) {
     var t;
-    return T(F, e) || "ArrayBuffer" === (t = y(e)) || "SharedArrayBuffer" === t
+    return T(V, e) || "ArrayBuffer" === (t = y(e)) || "SharedArrayBuffer" === t
   },
   ee = function(e, t) {
     return q(e) && !v(t) && t in e && _(+t) && t >= 0
@@ -126,7 +126,7 @@ Chunk507604 ? (Y || (Chunk840991.f = et, Chunk117895.f = en, J(z, "buffer"), J(z
         l = s / o
       } else if (q(t)) return x(E, t);
     else return a(C, E, t);
-    else i = new V(s = (l = h(t)) * o);
+    else i = new F(s = (l = h(t)) * o);
     for (M(e, {
         buffer: i,
         byteOffset: d,

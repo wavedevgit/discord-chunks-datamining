@@ -155,14 +155,14 @@ function Z(e) {
   } else n === m.yP.PRELOADED_USER_SETTINGS && B(r)
 }
 
-function V(e) {
+function F(e) {
   let {
     userId: t
   } = e;
   y.has(t) ? y.delete(t) : y.add(t)
 }
 
-function F(e) {
+function V(e) {
   let {
     soundboardStoreState: t
   } = e;
@@ -247,6 +247,6 @@ let Y = new H(Chunk570140.Z, {
   SOUNDBOARD_FETCH_DEFAULT_SOUNDS_SUCCESS: j,
   SOUNDBOARD_SOUNDS_RECEIVED: R,
   GUILD_DELETE: P,
-  AUDIO_TOGGLE_LOCAL_SOUNDBOARD_MUTE: V,
-  OVERLAY_INITIALIZE: F
+  AUDIO_TOGGLE_LOCAL_SOUNDBOARD_MUTE: F,
+  OVERLAY_INITIALIZE: V
 })

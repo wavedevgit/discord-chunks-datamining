@@ -273,14 +273,14 @@ function Z(e) {
   })
 }
 
-function V(e) {
+function F(e) {
   let {
     guild: t
   } = e;
   U.delete(t.id)
 }
 
-function F(e) {
+function V(e) {
   let {
     guildId: t
   } = e;
@@ -335,8 +335,8 @@ let X = new q(Chunk570140.Z, {
   OVERLAY_INITIALIZE: B,
   GUILD_MEMBER_LIST_UPDATE: G,
   GUILD_UPDATE: Z,
-  GUILD_DELETE: V,
-  GUILD_ROLE_UPDATE: F,
+  GUILD_DELETE: F,
+  GUILD_ROLE_UPDATE: V,
   GUILD_MEMBER_UPDATE: H,
   CHANNEL_UPDATES: z
 })

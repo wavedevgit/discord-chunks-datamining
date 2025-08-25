@@ -118,8 +118,8 @@ let A = Chunk647438.forwardRef((e, t) => {
     onClick: G,
     tabIndex: B,
     dataSafeSrc: Z,
-    useFullWidth: V = false,
-    srcIsAnimated: F
+    useFullWidth: F = false,
+    srcIsAnimated: V
   } = e, H = T(e, ["className", "imageClassName", "readyState", "src", "placeholder", "placeholderVersion", "alt", "width", "height", "maxWidth", "maxHeight", "minWidth", "minHeight", "mediaLayoutType", "limitResponsiveWidth", "accessory", "zoomable", "original", "children", "renderAccessory", "onClick", "tabIndex", "dataSafeSrc", "useFullWidth", "srcIsAnimated"]);
   let Y = i.useRef(null),
     W = i.useRef(null);
@@ -162,7 +162,7 @@ let A = Chunk647438.forwardRef((e, t) => {
         [g.imageWrapperBackground]: c !== p.zo9.READY,
         [g.clickable]: null != G
       }, a),
-      style: N(K, x, V, D)
+      style: N(K, x, F, D)
     }, H), {
       children: [null != k && (0, r.jsx)("a", {
         tabIndex: false,

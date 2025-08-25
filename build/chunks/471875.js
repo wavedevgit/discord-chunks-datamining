@@ -236,9 +236,9 @@ function c(e) {
         begin: /\(\)/
       }, D]
     },
-    V = "(\\([^()]*(\\([^()]*(\\([^()]*\\)[^()]*)*\\)[^()]*)*\\)|" + e.UNDERSCORE_IDENT_RE + ")\\s*=>",
-    F = {
-      match: [/const|var|let/, /\s+/, d, /\s*/, /=\s*/, /(async\s*)?/, c.lookahead(V)],
+    F = "(\\([^()]*(\\([^()]*(\\([^()]*\\)[^()]*)*\\)[^()]*)*\\)|" + e.UNDERSCORE_IDENT_RE + ")\\s*=>",
+    V = {
+      match: [/const|var|let/, /\s+/, d, /\s*/, /=\s*/, /(async\s*)?/, c.lookahead(F)],
       keywords: "async",
       className: {
         1: "keyword",
@@ -265,13 +265,13 @@ function c(e) {
       scope: "attr",
       match: d + c.lookahead(":"),
       relevance: 0
-    }, F, {
+    }, V, {
       begin: "(" + e.RE_STARTERS_RE + "|\\b(case|return|throw)\\b)\\s*",
       keywords: "return throw case",
       relevance: 0,
       contains: [N, e.REGEXP_MODE, {
         className: "function",
-        begin: V,
+        begin: F,
         returnBegin: true,
         end: "\\s*=>",
         contains: [{

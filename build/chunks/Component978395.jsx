@@ -48,11 +48,11 @@ function L(e) {
     onClose: G
   } = e, B = u.ZP.useName(null == j ? true : j.id, U, t), {
     relationshipType: Z,
-    originApplicationId: V
+    originApplicationId: F
   } = (0, i.cj)([l.Z], () => ({
     relationshipType: l.Z.getRelationshipType(t.id),
     originApplicationId: l.Z.getOriginApplicationId(t.id)
-  })), F = (0, o.vh)(t.id), H = (0, i.e7)([c.Z], () => c.Z.hidePersonalInformation), Y = (0, f.b)({
+  })), V = (0, o.vh)(t.id), H = (0, i.e7)([c.Z], () => c.Z.hidePersonalInformation), Y = (0, f.b)({
     location: "UserProfilePopoutBody"
   }), W = t.id === n.id, K = (null == L ? true : L.widgets) != null && L.widgets.length > 0, z = (0, d.I5)(n);
   return (0, r.jsxs)(a.Ttm, {
@@ -87,9 +87,9 @@ function L(e) {
         user: t,
         guildId: null == j ? true : j.id,
         channelId: U,
-        applicationId: V
+        applicationId: F
       })
-    }), F.map(e => (0, r.jsx)(O.Z.Overlay, {
+    }), V.map(e => (0, r.jsx)(O.Z.Overlay, {
       children: (0, r.jsx)(g.Z, {
         user: t,
         isGameRelationship: true,

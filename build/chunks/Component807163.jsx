@@ -143,12 +143,12 @@ function ed(e) {
     renderVisual: i
   } = e, a = eb();
   return (0, r.jsxs)("div", {
-    className: o()(F.whatYouLoseItem, {
-      [F.premiumRebrand]: a
+    className: o()(V.whatYouLoseItem, {
+      [V.premiumRebrand]: a
     }),
     children: [(0, r.jsxs)("div", {
-      className: o()(F.whatYouLoseItemLeftColumn, {
-        [F.premiumRebrand]: a
+      className: o()(V.whatYouLoseItemLeftColumn, {
+        [V.premiumRebrand]: a
       }),
       children: [(0, r.jsx)(p.Text, {
         variant: "text-md/normal",
@@ -158,13 +158,13 @@ function ed(e) {
         look: _.zx.Looks.LINK,
         color: _.zx.Colors.LINK,
         size: _.zx.Sizes.NONE,
-        className: F.whatYouLoseItemLearnMore,
+        className: V.whatYouLoseItemLearnMore,
         onClick: n,
-        children: V.intl.string(V.t.hvVgAQ)
+        children: F.intl.string(F.t.hvVgAQ)
       })]
     }), (0, r.jsx)("div", {
-      className: o()(F.whatYouLoseItemRightColumn, {
-        [F.premiumRebrand]: a
+      className: o()(V.whatYouLoseItemRightColumn, {
+        [V.premiumRebrand]: a
       }),
       children: i()
     })]
@@ -202,7 +202,7 @@ function e_(e) {
     displayProfile: o,
     forceShowPremium: true,
     themeType: null,
-    className: F.profileCard,
+    className: V.profileCard,
     children: [(0, r.jsx)(N.b, {
       user: n,
       displayProfile: o,
@@ -213,41 +213,41 @@ function e_(e) {
       bannerHeight: 60,
       themePadding: 4
     }), (0, r.jsx)(es, {
-      className: F.profileAvatar,
+      className: V.profileAvatar,
       src: n.getAvatarURL(true, (0, p.pxk)(p.EFr.SIZE_56), !s),
       size: p.EFr.SIZE_56,
       "aria-label": n.username
     }), (0, r.jsxs)("div", {
-      className: F.profileUserInfo,
+      className: V.profileUserInfo,
       children: [(0, r.jsx)(C.Z, {
-        className: F.profileNameTag,
-        usernameClass: F.profileNameTagUsername,
+        className: V.profileNameTag,
+        usernameClass: V.profileNameTagUsername,
         name: n.toString()
       }), (0, r.jsx)(ef, {
-        className: F.profilePremiumIcon
+        className: V.profilePremiumIcon
       })]
     })]
   }) : (0, r.jsxs)("div", {
-    className: F.profileCardTier1,
+    className: V.profileCardTier1,
     children: [(0, r.jsx)(es, {
-      className: F.profileAvatarTier1,
+      className: V.profileAvatarTier1,
       src: n.getAvatarURL(true, (0, p.pxk)(p.EFr.SIZE_56), !s),
       size: p.EFr.SIZE_56,
       "aria-label": n.username
     }), (0, r.jsxs)("div", {
-      className: F.profileUserInfoTier1,
+      className: V.profileUserInfoTier1,
       children: [(0, r.jsx)(C.Z, {
-        className: F.profileNameTag,
-        usernameClass: F.profileNameTagUsername,
+        className: V.profileNameTag,
+        usernameClass: V.profileNameTagUsername,
         name: n.toString()
       }), (0, r.jsx)(p.SrA, {
         size: "md",
         color: "currentColor",
-        className: F.profilePremiumIcon
+        className: V.profilePremiumIcon
       })]
     })]
   }), (0, r.jsx)(ed, {
-    description: l ? V.intl.format(V.t.xCaYwM, {}) : V.intl.format(V.t["gpqr+v"], {}),
+    description: l ? F.intl.format(F.t.xCaYwM, {}) : F.intl.format(F.t["gpqr+v"], {}),
     onLearnMore: c,
     renderVisual: () => t
   }, "profile-item")
@@ -262,16 +262,16 @@ function ep(e) {
     })
   };
   return (0, r.jsx)(ed, {
-    description: l ? V.intl.format(V.t.couiKC, {}) : V.intl.format(V.t["0hUHi4"], {}),
+    description: l ? F.intl.format(F.t.couiKC, {}) : F.intl.format(F.t["0hUHi4"], {}),
     onLearnMore: c,
     renderVisual: () => null != a && a.length > 0 || !l && null != o && o.length > 0 ? (0, r.jsxs)("div", {
-      className: F.emojiStickersPersonalizedContainer,
+      className: V.emojiStickersPersonalizedContainer,
       children: [a.map(e => null == e.id ? e.url : j.ZP.getEmojiURL({
         id: e.id,
         animated: !i && e.animated,
         size: 58
       })).map(e => null != e ? (0, r.jsx)("img", {
-        className: F.personalizedEmoji,
+        className: V.personalizedEmoji,
         alt: "",
         src: e
       }) : null), l ? null : o.map(e => (0, r.jsx)(T.Z, {
@@ -281,7 +281,7 @@ function ep(e) {
         withLoadingIndicator: false
       }, e.id))]
     }) : (0, r.jsx)("img", {
-      className: F.nonPersonalizedGraphic,
+      className: V.nonPersonalizedGraphic,
       alt: "",
       src: s
     })
@@ -317,32 +317,32 @@ function eh(e) {
       })
     };
   return (0, r.jsx)(ed, {
-    description: t === B.p9.TIER_1 ? V.intl.format(V.t["K4Hv6+"], {}) : V.intl.format(V.t.wRxEDQ, {}),
+    description: t === B.p9.TIER_1 ? F.intl.format(F.t["K4Hv6+"], {}) : F.intl.format(F.t.wRxEDQ, {}),
     onLearnMore: _,
     renderVisual: () => c ? (0, r.jsx)("div", {
-      className: F.boostCardContainer,
+      className: V.boostCardContainer,
       children: (0, r.jsxs)("div", {
-        className: F.boostCard,
+        className: V.boostCard,
         children: [(0, r.jsx)(v.Z, {
           guild: s,
           size: v.Z.Sizes.MEDIUM,
           animate: !a,
-          className: F.boostCardIcon
+          className: V.boostCardIcon
         }), (0, r.jsxs)("div", {
-          className: F.boostCardInfo,
+          className: V.boostCardInfo,
           children: [(0, r.jsx)(p.Text, {
             variant: "text-md/normal",
-            className: o()(F.textSingleLineEllipsis, F.boostCardTitle),
+            className: o()(V.textSingleLineEllipsis, V.boostCardTitle),
             children: s.name
           }), (0, r.jsxs)("div", {
-            className: F.boostCardSubtitle,
+            className: V.boostCardSubtitle,
             children: [(0, r.jsx)(p.$Eu, {
               color: p.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK,
-              className: F.boostCardGem
+              className: V.boostCardGem
             }), (0, r.jsx)(p.Text, {
               variant: "text-xs/normal",
-              className: o()(F.textSingleLineEllipsis, F.boostCardCount),
-              children: V.intl.format(V.t["Ou/g/P"], {
+              className: o()(V.textSingleLineEllipsis, V.boostCardCount),
+              children: F.intl.format(F.t["Ou/g/P"], {
                 boostCount: l
               })
             })]
@@ -381,7 +381,7 @@ function eg(e) {
     })
   };
   return (0, r.jsx)(ed, {
-    description: t === B.p9.TIER_2 ? V.intl.format(V.t.GsOFRE, {}) : V.intl.format(V.t.wFWO6O, {}),
+    description: t === B.p9.TIER_2 ? F.intl.format(F.t.GsOFRE, {}) : F.intl.format(F.t.wFWO6O, {}),
     onLearnMore: i,
     renderVisual: () => (0, r.jsx)("img", {
       alt: "",
@@ -460,9 +460,9 @@ function ey(e) {
       isPremiumRebrand: l
     },
     children: (0, r.jsx)("div", {
-      className: o()(F.whatYouLoseItemContainer, {
-        [F.premiumRebrand]: l,
-        [F.noMargin]: l && c.length <= 2
+      className: o()(V.whatYouLoseItemContainer, {
+        [V.premiumRebrand]: l,
+        [V.noMargin]: l && c.length <= 2
       }),
       children: c
     })
@@ -502,9 +502,9 @@ let eO = function(e) {
       onClose: s
     }), (0, r.jsx)(p.hzk, {
       "data-migration-pending": true,
-      className: F.body,
+      className: V.body,
       children: (0, r.jsx)(p.$jN, {
-        className: F.spinner
+        className: V.spinner
       })
     })]
   }) : (0, r.jsxs)(r.Fragment, {
@@ -513,11 +513,11 @@ let eO = function(e) {
       onClose: s
     }), (0, r.jsxs)(p.hzk, {
       "data-migration-pending": true,
-      className: F.body,
+      className: V.body,
       children: [(0, r.jsx)(p.X6q, {
         variant: "heading-xl/semibold",
         color: "header-primary",
-        className: F.title,
+        className: V.title,
         children: n
       }), (0, r.jsxs)("div", {
         className: E,

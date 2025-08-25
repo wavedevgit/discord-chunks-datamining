@@ -45,7 +45,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk545869 = require("./545869.js");
 
-function F(e, t, n) {
+function V(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -61,7 +61,7 @@ function H(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      F(e, t, n[t])
+      V(e, t, n[t])
     })
   }
   return e
@@ -146,8 +146,8 @@ function Q(e) {
     compact: i
   } = e;
   return (0, r.jsx)("div", {
-    className: o()(V.footerContainer, n, {
-      [V.compact]: i
+    className: o()(F.footerContainer, n, {
+      [F.compact]: i
     }),
     children: t
   })
@@ -159,7 +159,7 @@ function J(e) {
     className: n
   } = e;
   return (0, r.jsx)("div", {
-    className: o()(V.annotationRow, n),
+    className: o()(F.annotationRow, n),
     children: t
   })
 }
@@ -170,19 +170,19 @@ function $(e, t) {
       return (0, r.jsx)(f.XHJ, H({
         size: "xs",
         color: "currentColor",
-        className: V.alertActionIcon
+        className: F.alertActionIcon
       }, t));
     case m.d.SET_COMPLETED:
       return (0, r.jsx)(f.dz2, H({
         size: "xs",
         color: "currentColor",
-        className: o()(V.alertActionIcon, V.alertActionSetCompletedIcon)
+        className: o()(F.alertActionIcon, F.alertActionSetCompletedIcon)
       }, t));
     case m.d.SUBMIT_FEEDBACK:
       return (0, r.jsx)(f.U65, H({
         size: "xs",
         color: "currentColor",
-        className: V.alertActionIcon
+        className: F.alertActionIcon
       }, t));
     default:
       return null
@@ -243,7 +243,7 @@ function en(e) {
     guildId: n
   } = e, i = Object.values(t.actions).sort((e, t) => e.actionType < t.actionType ? 1 : false);
   return (0, r.jsx)("div", {
-    className: V.alertActionsIconContainer,
+    className: F.alertActionsIconContainer,
     children: i.map(e => (0, r.jsx)(et, {
       alertAction: e,
       guildId: n
@@ -284,10 +284,10 @@ let er = Chunk647438.memo(function(e) {
     t = () => r
   }
   let E = () => (0, r.jsx)("div", {
-    className: V.channelNameContainer,
+    className: F.channelNameContainer,
     children: (0, r.jsx)(R.Z, {
       channel: a,
-      className: V.channelName,
+      className: F.channelName,
       openChatWithoutConnecting: true
     })
   });
@@ -295,7 +295,7 @@ let er = Chunk647438.memo(function(e) {
     variant: "text-md/normal",
     color: "header-primary",
     tag: "span",
-    className: V.spanCorrection,
+    className: F.spanCorrection,
     children: (0, g.Mq)(n, a, E, _, t)
   })
 });
@@ -319,7 +319,7 @@ function ei(e) {
     isFocused: D,
     handleFocus: L,
     handleBlur: M
-  } = (0, x.bb)(N), F = (0, d.e7)([p.Z], () => p.Z.keyboardModeEnabled), Y = (0, d.e7)([I.Z], () => I.Z.can(U.Plq.MANAGE_MESSAGES, l), [l]), {
+  } = (0, x.bb)(N), V = (0, d.e7)([p.Z], () => p.Z.keyboardModeEnabled), Y = (0, d.e7)([I.Z], () => I.Z.can(U.Plq.MANAGE_MESSAGES, l), [l]), {
     ruleName: z,
     embedChannel: X,
     decisionId: $,
@@ -334,7 +334,7 @@ function ei(e) {
     interactionUserId: eu
   } = (0, g.ZP)(s), ed = i.useMemo(() => (0, C.k$)(ei, ee, l.id), [ei, ee, l]), ef = q(s, l), {
     selected: e_
-  } = ef, ep = K(ef, ["selected"]), eh = e_ || F && D, em = e => {
+  } = ef, ep = K(ef, ["selected"]), eh = e_ || V && D, em = e => {
     var t;
     null == (t = ep.onContextMenuModerateUser) || t.call(ep, e)
   }, eg = i.useCallback(() => {
@@ -354,35 +354,35 @@ function ei(e) {
     onMouseEnter: T,
     onMouseLeave: S,
     children: (0, r.jsx)(k.Z, {
-      className: o()(V.mainContainer, {
-        [V.compact]: a
+      className: o()(F.mainContainer, {
+        [F.compact]: a
       }),
       iconNode: a ? null : (0, r.jsx)(j.S, {
         src: v
       }),
-      iconContainerClassName: V.iconContainer,
+      iconContainerClassName: F.iconContainer,
       compact: a,
       children: (0, r.jsxs)("div", {
-        className: o()(V.content, {
-          [V.compact]: a
+        className: o()(F.content, {
+          [F.compact]: a
         }),
         children: [(0, r.jsx)(w.nD, {
           message: s,
-          messageClassname: V.spanCorrection,
-          className: o()(V.usernameContainer, V.spanCorrection, {
-            [V.compact]: a
+          messageClassname: F.spanCorrection,
+          className: o()(F.usernameContainer, F.spanCorrection, {
+            [F.compact]: a
           }),
           username: (0, r.jsxs)("div", {
-            className: V.spanCorrection,
+            className: F.spanCorrection,
             children: [(0, r.jsx)(f.Text, {
               variant: "text-md/normal",
               color: "text-brand",
               tag: "span",
-              className: V.username,
+              className: F.username,
               children: Z.intl.string(Z.t.hG1StL)
             }), (0, r.jsx)(h.Z, {
               type: G.Hb.SYSTEM_DM,
-              className: V.systemTag
+              className: F.systemTag
             }), (0, r.jsx)(er, {
               message: s,
               channel: l,
@@ -394,8 +394,8 @@ function ei(e) {
           compact: a,
           showTimestamp: true
         }), (0, r.jsx)("div", {
-          className: o()(V.messageContent, {
-            [V.compact]: a
+          className: o()(F.messageContent, {
+            [F.compact]: a
           }),
           children: (0, r.jsx)(P.Z, W(H({}, R), {
             message: s,
@@ -404,14 +404,14 @@ function ei(e) {
             compact: a,
             withFooter: true,
             hideTimestamp: true,
-            className: o()(V.embedCard, {
-              [V.compact]: a,
-              [V.selected]: eh,
-              [V.isClickable]: null != ea && null != X
+            className: o()(F.embedCard, {
+              [F.compact]: a,
+              [F.selected]: eh,
+              [F.isClickable]: null != ea && null != X
             }),
             childrenAccessories: (0, r.jsxs)(r.Fragment, {
               children: [(0, r.jsxs)("div", {
-                className: V.centeredRowContainer,
+                className: F.centeredRowContainer,
                 children: [null != et && (0, r.jsxs)(r.Fragment, {
                   children: [(0, r.jsx)(f.Text, {
                     variant: "text-xs/medium",
@@ -421,7 +421,7 @@ function ei(e) {
                       keyword: et
                     })
                   }), (0, r.jsx)("div", {
-                    className: o()(V.dot, V.dotMargin)
+                    className: o()(F.dot, F.dotMargin)
                   })]
                 }), null != z && (0, r.jsx)(f.Text, {
                   variant: "text-xs/medium",
@@ -432,24 +432,24 @@ function ei(e) {
                   })
                 }), null != eO && (0, r.jsxs)(r.Fragment, {
                   children: [(0, r.jsx)("div", {
-                    className: o()(V.dot, V.dotMargin)
+                    className: o()(F.dot, F.dotMargin)
                   }), (0, r.jsx)(f.Text, {
                     variant: "text-xs/medium",
                     color: "text-muted",
                     tag: "span",
-                    className: V.__invalid_footerText,
+                    className: F.__invalid_footerText,
                     children: Z.intl.format(Z.t["3LYql5"], {
                       duration: eO
                     })
                   })]
                 }), null != ec && (0, r.jsxs)(r.Fragment, {
                   children: [(0, r.jsx)("div", {
-                    className: o()(V.dot, V.dotMargin)
+                    className: o()(F.dot, F.dotMargin)
                   }), (0, r.jsx)(f.Text, {
                     variant: "text-xs/medium",
                     color: "text-muted",
                     tag: "span",
-                    className: V.titleCase,
+                    className: F.titleCase,
                     children: Z.intl.format(Z.t["26bB2N"], {
                       reason: (0, g.hU)(ec)
                     })
@@ -473,15 +473,15 @@ function ei(e) {
         }), (0, r.jsx)(Q, {
           compact: a,
           children: (0, r.jsxs)("div", {
-            className: o()(V.centeredRowContainer, V.buttonContainer, {
-              [V.compact]: a
+            className: o()(F.centeredRowContainer, F.buttonContainer, {
+              [F.compact]: a
             }),
             children: [(0, r.jsxs)("div", {
-              className: V.footerAction,
+              className: F.footerAction,
               children: [(0, r.jsx)(f.b7C, {
                 size: "xs",
                 color: u.Z.BRAND,
-                className: V.footerIcon
+                className: F.footerIcon
               }), (0, r.jsx)(f.Avr, {
                 variant: "primary",
                 size: "sm",
@@ -491,9 +491,9 @@ function ei(e) {
               })]
             }), eS ? (0, r.jsxs)(r.Fragment, {
               children: [(0, r.jsx)("div", {
-                className: V.dot
+                className: F.dot
               }), (0, r.jsx)("div", {
-                className: V.footerAction,
+                className: F.footerAction,
                 children: (0, r.jsx)(f.Avr, {
                   onClick: () => eb(eT),
                   variant: "primary",
@@ -503,9 +503,9 @@ function ei(e) {
                 })
               })]
             }) : null, (0, r.jsx)("div", {
-              className: V.dot
+              className: F.dot
             }), (0, r.jsx)("div", {
-              className: V.footerAction,
+              className: F.footerAction,
               children: (0, r.jsx)(f.Avr, {
                 onClick: eg,
                 variant: "primary",
@@ -515,9 +515,9 @@ function ei(e) {
               })
             }), eI ? (0, r.jsxs)(r.Fragment, {
               children: [(0, r.jsx)("div", {
-                className: V.dot
+                className: F.dot
               }), (0, r.jsx)("div", {
-                className: V.footerAction,
+                className: F.footerAction,
                 children: (0, r.jsx)(f.Avr, {
                   onClick: ey,
                   variant: "primary",

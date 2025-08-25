@@ -2,50 +2,45 @@
 /** chunk id: 674343, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => d
+  Z: () => c
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
-var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
-  Chunk481060 = require("./481060.js"),
+var Chunk481060 = require("./481060.js"),
   Chunk313201 = require("./313201.js"),
   Chunk36703 = require("./36703.js"),
   Chunk684554 = require("./684554.js");
-let u = (0, Chunk313201.hQ)();
+let l = (0, Chunk313201.hQ)();
 
-function d(e) {
+function c(e) {
   let {
     volume: t,
     title: n,
-    description: i,
-    label: s,
-    onVolumeChange: d,
-    refreshStyles: f = false
+    description: a,
+    label: c,
+    onVolumeChange: u
   } = e;
   return (0, r.jsxs)("div", {
-    className: a()(c.soundboardRow, {
-      [c.refresh]: f
-    }),
+    className: s.soundboardRow,
     children: [(0, r.jsx)("div", {
-      className: c.soundboardColumn,
-      children: (0, r.jsx)(o.xJW, {
+      className: s.soundboardColumn,
+      children: (0, r.jsx)(i.xJW, {
         title: n,
-        children: (0, r.jsx)(o.R94, {
-          children: i
+        children: (0, r.jsx)(i.R94, {
+          children: a
         })
       })
     }), (0, r.jsx)("div", {
-      className: c.soundboardColumn,
-      children: (0, r.jsx)(o.xJW, {
-        title: s,
-        titleId: u,
-        children: (0, r.jsx)(o.iRW, {
-          initialValue: (0, l.P)(t),
+      className: s.soundboardColumn,
+      children: (0, r.jsx)(i.xJW, {
+        title: c,
+        titleId: l,
+        children: (0, r.jsx)(i.iRW, {
+          initialValue: (0, o.P)(t),
           maxValue: 100,
           onValueRender: e => "".concat(e.toFixed(0), "%"),
-          onValueChange: d,
-          "aria-labelledby": u
+          onValueChange: u,
+          "aria-labelledby": l
         })
       })
     })]

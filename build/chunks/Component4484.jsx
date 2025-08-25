@@ -47,8 +47,8 @@ let x = Chunk647438.forwardRef(function(e, t) {
     required: G,
     textAreaPaddingClassName: B,
     onChange: Z,
-    onPaste: V,
-    onResize: F,
+    onPaste: F,
+    onResize: V,
     onFocus: H,
     onBlur: Y,
     onKeyDown: W,
@@ -170,7 +170,7 @@ let x = Chunk647438.forwardRef(function(e, t) {
       ignoreTrailingEmptyNodes: true
     }), r, e)
   }, [x.id, eI, X, eT, et]);
-  (0, v.Z)(t, eI, x, eS), (0, S.Z)(eI, eh, F);
+  (0, v.Z)(t, eI, x, eS), (0, S.Z)(eI, eh, V);
   let {
     handleKeyDown: eA,
     handleKeyUp: eC
@@ -189,7 +189,7 @@ let x = Chunk647438.forwardRef(function(e, t) {
   }), {
     handlePaste: eN,
     handleGlobalPaste: eR
-  } = (0, T.Z)(eI, eb, V), eP = i.useCallback(e => {
+  } = (0, T.Z)(eI, eb, F), eP = i.useCallback(e => {
     null == Q || Q()
   }, [Q]), ew = i.useCallback(e => {
     e !== em.current ? eE.current && (null == Z || Z(null, (0, g.sk)(e, {

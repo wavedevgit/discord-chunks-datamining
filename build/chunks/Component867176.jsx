@@ -113,7 +113,7 @@ function N(e) {
     pendingBanner: O,
     size: N,
     canAnimate: D || !M ? L : k
-  }), B = (0, u.dQu)(c.Z.unsafe_rawColors.PRIMARY_800).hex(), Z = n.getAvatarURL(b, (0, u.pxk)(T)), V = (0, s._i)((0, d.ZP)(Z, B, false)), F = (0, f.Z)(null != (t = null != w ? w : null == a ? true : a.primaryColor) ? t : V).hex, H = C(T), Y = H + S - P, W = R - A - P;
+  }), B = (0, u.dQu)(c.Z.unsafe_rawColors.PRIMARY_800).hex(), Z = n.getAvatarURL(b, (0, u.pxk)(T)), F = (0, s._i)((0, d.ZP)(Z, B, false)), V = (0, f.Z)(null != (t = null != w ? w : null == a ? true : a.primaryColor) ? t : F).hex, H = C(T), Y = H + S - P, W = R - A - P;
   return (0, r.jsxs)("svg", {
     className: y.mask,
     viewBox: "0 0 ".concat(N, " ").concat(R),
@@ -150,7 +150,7 @@ function N(e) {
           height: R,
           minHeight: R,
           backgroundImage: null != U ? "url(".concat(U, ")") : true,
-          backgroundColor: "COMPLETE" !== G ? c.Z.unsafe_rawColors.PRIMARY_800.css : F
+          backgroundColor: "COMPLETE" !== G ? c.Z.unsafe_rawColors.PRIMARY_800.css : V
         },
         children: !M && (0, g.F8)(U) && (0, r.jsx)(p.Z, {
           className: y.gifTag

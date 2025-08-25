@@ -145,11 +145,11 @@ function Z(e) {
   return !!n && (P += 1, n)
 }
 
-function V() {
+function F() {
   returntrue
 }
 
-function F(e) {
+function V(e) {
   var t;
   return (null == (t = I.default.getCurrentUser()) ? true : t.id) === e.userId && (L(e.guildId), true)
 }
@@ -342,16 +342,16 @@ let ee = new J(Chunk570140.Z, {
   GUILD_MEMBER_UPDATE: G,
   CURRENT_USER_UPDATE: G,
   CHANNEL_CREATE: B,
-  THREAD_CREATE: V,
-  THREAD_UPDATE: V,
-  THREAD_LIST_SYNC: V,
-  LOAD_THREADS_SUCCESS: V,
-  LOAD_ARCHIVED_THREADS_SUCCESS: V,
+  THREAD_CREATE: F,
+  THREAD_UPDATE: F,
+  THREAD_LIST_SYNC: F,
+  LOAD_THREADS_SUCCESS: F,
+  LOAD_ARCHIVED_THREADS_SUCCESS: F,
   CHANNEL_UPDATES: Z,
   LOAD_MESSAGES_SUCCESS: Y,
   SEARCH_MESSAGES_SUCCESS: W,
   MOD_VIEW_SEARCH_MESSAGES_SUCCESS: W,
-  THREAD_MEMBER_UPDATE: F,
+  THREAD_MEMBER_UPDATE: V,
   THREAD_MEMBERS_UPDATE: H,
   CHANNEL_DELETE: K,
   GUILD_ROLE_CREATE: z,

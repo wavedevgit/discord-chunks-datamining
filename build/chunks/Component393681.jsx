@@ -347,7 +347,7 @@ class Q extends Chunk647438.PureComponent {
         settingsSection: Chunk981631.oAB.ACCOUNT,
         panelClassName: Chunk343396.tabPanel,
         onTabChange: e => {
-          w.default.track(V.rMx.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
+          w.default.track(F.rMx.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
             target_tab_name: e === Z.s6.ACCOUNT_SECURITY_TAB ? "SECURITY" : "STANDING"
           })
         },
@@ -368,14 +368,14 @@ class Q extends Chunk647438.PureComponent {
     return this.props.hide ? (0, Chunk951288.jsx)(Chunk497321.Z, {}) : this.renderUnhidden()
   }
   handleDisableAccountError(e) {
-    if (e.body.code === V.evJ.INVALID_PASSWORD) throw e;
+    if (e.body.code === F.evJ.INVALID_PASSWORD) throw e;
     this.setState({
       shouldRenderDisableAccountErrorModal: true,
       disableAccountErrorMessage: e.body.message
     })
   }
   handleSubmitDisableAccount(e, t) {
-    return (0, p.ss)(e, t).then(V.dG4, this.handleDisableAccountError)
+    return (0, p.ss)(e, t).then(F.dG4, this.handleDisableAccountError)
   }
   handleDisableAccount() {
     var e;

@@ -65,11 +65,11 @@ function G(e) {
     location: D.dr.QUESTS_BAR
   }), B = (0, c.e7)([b.Z], () => null != b.Z.questEnrollmentBlockedUntil), {
     isQuestBarVisible: Z,
-    reason: V
+    reason: F
   } = (0, N.qN)({
     quest: a,
     location: D.dr.QUESTS_BAR
-  }), F = (0, c.e7)([f.Z], () => f.Z.useReducedMotion), H = (0, c.e7)([p.Z], () => p.Z.hasLayers()), Y = i.useRef(null), W = i.useMemo(() => (0, g.q8)(a), [a]), K = (null == (t = a.userStatus) ? true : t.enrolledAt) != null, z = (0, d.Z)(K), q = (null == (n = a.userStatus) ? true : n.completedAt) != null, {
+  }), V = (0, c.e7)([f.Z], () => f.Z.useReducedMotion), H = (0, c.e7)([p.Z], () => p.Z.hasLayers()), Y = i.useRef(null), W = i.useMemo(() => (0, g.q8)(a), [a]), K = (null == (t = a.userStatus) ? true : t.enrolledAt) != null, z = (0, d.Z)(K), q = (null == (n = a.userStatus) ? true : n.completedAt) != null, {
     hasError: X,
     isLoading: Q
   } = (0, C.d7)(), J = i.useContext(P.T) || G && Z && !Q && !B, $ = i.useRef(J), ee = i.useRef(false), et = i.useRef(false), en = v.H.useConfig({
@@ -148,9 +148,9 @@ function G(e) {
   i.useEffect(() => {
     eT({
       expansionSpring: +!!ea,
-      immediate: F
+      immediate: V
     })
-  }, [ea, eT, F]);
+  }, [ea, eT, V]);
   let {
     visibilitySpring: eS
   } = (0, u.q_F)({
@@ -216,13 +216,13 @@ function G(e) {
         properties: {
           content_id: y.jn.QUEST_BAR,
           content_name: (0, h._b)(y.jn.QUEST_BAR),
-          reason: V,
+          reason: F,
           impression_id: null == (e = Y.current) ? true : e.getId()
         },
         sourceQuestContent: y.jn.QUEST_BAR_V2
       })
     }
-  }, [J, ec, Q, a.id, V]), i.useEffect(() => {
+  }, [J, ec, Q, a.id, F]), i.useEffect(() => {
     (!Z || B) && m.Z.clearTracking(), J && ec && !Q && !X && G && m.Z.stopTracking(a.id)
   }, [Z, B, J, ec, Q, X, G, a.id]);
   let eA = (0, O.h)({
@@ -280,7 +280,7 @@ function G(e) {
               onCtxMenuOpened: ep,
               onCtxMenuSelection: em,
               quest: a,
-              useReducedMotion: F,
+              useReducedMotion: V,
               collapsedHeight: eC,
               shouldShowRewardsCTAWhenCollapsed: en
             })

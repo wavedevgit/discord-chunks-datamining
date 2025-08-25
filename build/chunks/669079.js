@@ -9,8 +9,8 @@ require.d(exports, {
   JT: () => $,
   L2: () => z,
   MY: () => k,
-  Nz: () => F,
-  Q_: () => V,
+  Nz: () => V,
+  Q_: () => F,
   TO: () => W,
   Z0: () => G,
   bT: () => H,
@@ -102,7 +102,7 @@ let Z = e => {
     var t;
     return (null == e ? true : e.type) === h.uaV.CUSTOM_GIFT && (null == e || null == (t = e.embeds) ? true : t.length) === 1 && (null == e ? true : e.embeds[0].type) === h.hBH.GIFT
   },
-  V = e => {
+  F = e => {
     let t;
     if (null == e) return [];
     let n = new Set;
@@ -111,7 +111,7 @@ let Z = e => {
     return Array.from(n)
   };
 
-function F() {
+function V() {
   let e, t = arguments.length > 0 && true !== arguments[0] ? arguments[0] : "",
     n = window.GLOBAL_ENV.GIFT_CODE_HOST;
   return null != require ? e = "/".concat(exports) : (n = location.host, e = "/gifts/".concat(exports)), "".concat(location.protocol, "//").concat(require).concat(module)

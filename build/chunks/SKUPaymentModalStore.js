@@ -146,14 +146,14 @@ function Z(e) {
   A = e.isGift
 }
 
-function V(e) {
+function F(e) {
   let {
     locked: t
   } = e;
   if (!t || null == C) returnfalse;
   S = false, C = null, R()
 }
-class F extends(a = Chunk442837.ZP.Store) {
+class V extends(a = Chunk442837.ZP.Store) {
   getPricesForSku(e) {
     return b[e]
   }
@@ -195,8 +195,8 @@ class F extends(a = Chunk442837.ZP.Store) {
     return N.has(e)
   }
 }
-c(F, "displayName", "SKUPaymentModalStore");
-let H = new F(Chunk570140.Z, {
+c(V, "displayName", "SKUPaymentModalStore");
+let H = new V(Chunk570140.Z, {
   SKU_PURCHASE_MODAL_OPEN: P,
   SKU_PURCHASE_MODAL_CLOSE: w,
   SKU_PURCHASE_PREVIEW_FETCH: D,
@@ -208,6 +208,6 @@ let H = new F(Chunk570140.Z, {
   SKU_PURCHASE_SHOW_CONFIRMATION_STEP: G,
   SKU_PURCHASE_CLEAR_ERROR: B,
   SKU_PURCHASE_UPDATE_IS_GIFT: Z,
-  OVERLAY_SET_INPUT_LOCKED: V,
+  OVERLAY_SET_INPUT_LOCKED: F,
   GIFT_CODE_CREATE: M
 })

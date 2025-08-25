@@ -50,8 +50,8 @@ let L = "seenQSTutorial",
   G = false,
   B = false,
   Z = null,
-  V = [],
-  F = null,
+  F = [],
+  V = null,
   H = 0,
   Y = [],
   W = [];
@@ -153,28 +153,28 @@ function Q(e, t) {
       let t = v.Z.getGuild(A.Z.getGuildId());
       e.unshift((0, u.o6)(null != t ? D.intl.formatToPlainString(D.t.FREzQk, {
         name: t.name
-      }) : D.intl.string(D.t.XFYW1t))), V = e;
+      }) : D.intl.string(D.t.XFYW1t))), F = e;
       break
     }
     case u.h8.TEXT_CHANNEL:
-      e.unshift((0, u.o6)(D.intl.string(D.t.W26k4e))), V = e;
+      e.unshift((0, u.o6)(D.intl.string(D.t.W26k4e))), F = e;
       break;
     case u.h8.VOICE_CHANNEL:
-      e.unshift((0, u.o6)(D.intl.string(D.t.zUoI5O))), V = e;
+      e.unshift((0, u.o6)(D.intl.string(D.t.zUoI5O))), F = e;
       break;
     case u.h8.GUILD:
-      e.unshift((0, u.o6)(D.intl.string(D.t.olADPj))), V = e;
+      e.unshift((0, u.o6)(D.intl.string(D.t.olADPj))), F = e;
       break;
     case u.h8.APPLICATION:
-      e.unshift((0, u.o6)(D.intl.string(D.t.VwK1lZ))), V = e;
+      e.unshift((0, u.o6)(D.intl.string(D.t.VwK1lZ))), F = e;
       break;
     default:
-      V = e
+      F = e
   }
-  if (t !== F) F = t, H = Math.max(t.length, H), U = (0, u.gJ)(u.a8.DOWN, false, V);
+  if (t !== V) V = t, H = Math.max(t.length, H), U = (0, u.gJ)(u.a8.DOWN, false, F);
   else {
-    let e = V[U];
-    null != e && e.type === u.h8.HEADER && (U = (0, u.gJ)(u.a8.DOWN, U, V))
+    let e = F[U];
+    null != e && e.type === u.h8.HEADER && (U = (0, u.gJ)(u.a8.DOWN, U, F))
   }
   es.emitChange()
 }
@@ -188,7 +188,7 @@ function J(e) {
   null != a && o.add("guild:".concat(a)), r = null != r ? r : new u.ZP(et, M, null != i ? k : j, {
     frecencyBoosters: true,
     blacklist: o
-  }), F = null, H = n.length, Z = i, r.search(n)
+  }), V = null, H = n.length, Z = i, r.search(n)
 }
 
 function $(e) {
@@ -214,7 +214,7 @@ function et(e, t) {
 }
 
 function en() {
-  F = null, H = 0, Y = [], null != r && (r.destroy(), r = null)
+  V = null, H = 0, Y = [], null != r && (r.destroy(), r = null)
 }
 
 function er(e) {
@@ -310,7 +310,7 @@ class eo extends(i = Chunk442837.ZP.PersistedStore) {
       theme: Chunk210887.Z.theme,
       query: null != r ? r.query : "",
       queryMode: Z,
-      results: V,
+      results: F,
       selectedIndex: U,
       seenTutorial: G,
       maxQueryLength: H

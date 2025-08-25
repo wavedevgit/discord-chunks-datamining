@@ -84,8 +84,8 @@ function U() {
     }),
     Z = (0, Chunk442837.e7)([Chunk621853.Z], () => Chunk621853.Z.getUserProfile(B.id)),
     {
-      pendingAvatar: V,
-      pendingGlobalName: F,
+      pendingAvatar: F,
+      pendingGlobalName: V,
       pendingBanner: H,
       pendingBio: Y,
       pendingPronouns: W,
@@ -103,11 +103,11 @@ function U() {
     }),
     J = (0, Chunk643879.SD)({
       userId: B.id,
-      image: V
+      image: F
     }),
     $ = (0, Chunk295474.gS)(),
     ee = Chunk74538.ZP.canUsePremiumProfileCustomization(B),
-    et = (0, Chunk150039.gd)(V, B.avatar),
+    et = (0, Chunk150039.gd)(F, B.avatar),
     en = (0, Chunk150039.f$)(H, null == Z ? true : Z.banner),
     er = (0, Chunk687158.ZP)(B.id),
     ei = null == er ? true : er.getLegacyUsername(),
@@ -142,7 +142,7 @@ function U() {
       placeholder: B.username,
       errors: ea,
       currentGlobalName: B.globalName,
-      pendingGlobalName: F,
+      pendingGlobalName: V,
       onGlobalNameChange: Chunk809206.W0,
       user: B
     }), (0, Chunk951288.jsx)(Chunk906364.Z, {

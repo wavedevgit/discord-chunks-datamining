@@ -4,8 +4,8 @@
 require.d(exports, {
   $e: () => k,
   $w: () => Z,
-  Og: () => F,
-  ZY: () => V,
+  Og: () => V,
+  ZY: () => F,
   sc: () => G,
   zs: () => H
 }), require("./314940.js"), require("./953529.js");
@@ -337,7 +337,7 @@ function Z(e) {
   })) : true !== o ? o : null
 }
 
-function V(e) {
+function F(e) {
   let {
     isVictor: t,
     isExpired: n,
@@ -376,7 +376,7 @@ function V(e) {
   })
 }
 
-function F(e) {
+function V(e) {
   let {
     isSelected: t,
     size: n,

@@ -131,9 +131,9 @@ function L(e) {
     }
     L(n.length === R.length ? R : n), k(r), Z.current++
   }, [d, R, M]);
-  let V = i.useMemo(() => "roles-".concat((0, a.Z)()), []),
-    F = (0, o.ZP)({
-      id: V,
+  let F = i.useMemo(() => "roles-".concat((0, a.Z)()), []),
+    V = (0, o.ZP)({
+      id: F,
       isEnabled: true,
       scrollToStart: O.Cyb,
       scrollToEnd: O.Cyb,
@@ -171,7 +171,7 @@ function L(e) {
       })
     }, [K]);
   return (0, r.jsx)(s.bG, {
-    navigator: F,
+    navigator: V,
     children: (0, r.jsx)(s.SJ, {
       children: e => {
         var {

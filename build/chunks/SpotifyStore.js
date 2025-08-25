@@ -75,8 +75,8 @@ let k = Chunk726542.Z.get(Chunk981631.ABu.SPOTIFY),
   G = 30 * Chunk70956.Z.Millis.SECOND,
   B = 30 * Chunk70956.Z.Millis.SECOND,
   Z = 100,
-  V = 5 * Chunk70956.Z.Millis.MINUTE,
-  F = 5 * Chunk70956.Z.Millis.SECOND,
+  F = 5 * Chunk70956.Z.Millis.MINUTE,
+  V = 5 * Chunk70956.Z.Millis.SECOND,
   H = 1.5 * Chunk70956.Z.Millis.SECOND,
   Y = "Computer",
   W = 5,
@@ -353,7 +353,7 @@ function eT(e) {
     E = null != c && null != i && 0 === s && !n;
   E || (es[t] = g);
   let O = r;
-  if (r = l().values(es).find(e => null != e), eD(b.default.getId()), null == o || E ? er.stop() : er.start(o.duration - s + F, () => ef(p.id)), null != i && (!n && s > 0 || null == c || null != g && i.trackId !== g.track.id) ? ($.info("Listen along active but playback stopped or track changed. Stopping listen along in ".concat(F, "ms")), ei.start(F, () => {
+  if (r = l().values(es).find(e => null != e), eD(b.default.getId()), null == o || E ? er.stop() : er.start(o.duration - s + V, () => ef(p.id)), null != i && (!n && s > 0 || null == c || null != g && i.trackId !== g.track.id) ? ($.info("Listen along active but playback stopped or track changed. Stopping listen along in ".concat(V, "ms")), ei.start(V, () => {
       $.info("Stopping listening along"), (0, m.Z)(), ef(p.id)
     })) : ei.isStarted() && ($.info("Listen along stop cancelled as playback of track resumed"), ei.stop()), O === r || null == h && null == g || null != h && null != g && h.track.id === g.track.id && h.startTime === g.startTime) return f;
   null != o && (_.Z.dispatch({
@@ -429,7 +429,7 @@ function eP() {
   let {
     userId: e
   } = i, t = e_(module);
-  if (null == exports) return en.start(V, () => {
+  if (null == exports) return en.start(F, () => {
     null != i && i.userId === module && (0, Chunk524331.Z)()
   }), false;
   en.stop();

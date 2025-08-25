@@ -53,8 +53,8 @@ function Z(e, t, n) {
   }) : e[t] = n, e
 }
 require("./571654.js");
-let V = 512,
-  F = (0, Chunk313201.hQ)(),
+let F = 512,
+  V = (0, Chunk313201.hQ)(),
   H = c()(Chunk611004.Z.fetchMessages, 500);
 class Y extends Chunk647438.PureComponent {
   componentDidMount() {
@@ -118,7 +118,7 @@ class Y extends Chunk647438.PureComponent {
       onChange: this.setEditorState,
       role: "combobox",
       ariaExpanded: e,
-      ariaControls: e ? F : true,
+      ariaControls: e ? V : true,
       ariaLabel: G.intl.string(G.t["5h0QOD"]),
       ariaAutoComplete: "list"
     })
@@ -191,14 +191,14 @@ class Y extends Chunk647438.PureComponent {
       } = e, {
         editorState: o
       } = this.props, s = y.Sq(o);
-      " " !== t.charAt(t.length - 1) && (t += " "), null != n && 0 !== n && " " !== s.charAt(n - 1) && " " !== t.charAt(0) && (t = " " + t), a ? (o = y.c2(t, o), n = 0) : o = y.x0(t, o, n, r), o = y.Hl(o, V), o = this.tokenize(o);
+      " " !== t.charAt(t.length - 1) && (t += " "), null != n && 0 !== n && " " !== s.charAt(n - 1) && " " !== t.charAt(0) && (t = " " + t), a ? (o = y.c2(t, o), n = 0) : o = y.x0(t, o, n, r), o = y.Hl(o, F), o = this.tokenize(o);
       let l = Number(n) + t.length;
       o = y.iK(l, o), this.setEditorState(o), i && this.search({
         queryString: y.Sq(o)
       })
     }), Z(this, "handleSelectedIndexChanged", e => {
       var t, n;
-      null == (n = this._editorRef) || null == (t = n.editor) || t.setAttribute("aria-activedescendant", null != e ? "".concat(F, "-").concat(e) : true), this.setState({
+      null == (n = this._editorRef) || null == (t = n.editor) || t.setAttribute("aria-activedescendant", null != e ? "".concat(V, "-").concat(e) : true), this.setState({
         selectedIndex: e
       })
     }), Z(this, "renderPopout", () => {
@@ -208,13 +208,13 @@ class Y extends Chunk647438.PureComponent {
       return e ? (0, r.jsx)(w.Z, {
         ref: this._searchFiltersRedesignPopoutRef,
         searchContext: this.props.searchContext,
-        navId: F,
+        navId: V,
         onSelectedIndexChanged: this.handleSelectedIndexChanged,
         className: this.props.searchPopoutClassName
       }) : (0, r.jsx)(x.ZP, {
         ref: this._searchPopoutRef,
         searchContext: this.props.searchContext,
-        navId: F,
+        navId: V,
         onSelectedIndexChanged: this.handleSelectedIndexChanged,
         className: this.props.searchPopoutClassName
       })
@@ -341,7 +341,7 @@ class Y extends Chunk647438.PureComponent {
       } = this.props, {
         focused: n
       } = this.state;
-      return y.Sq(t).length >= V || (t = y.x0(e, t), t = y.Hl(t, V), t = this.tokenize(t), this.setEditorState(t), n || this.setState({
+      return y.Sq(t).length >= F || (t = y.x0(e, t), t = y.Hl(t, F), t = this.tokenize(t), this.setEditorState(t), n || this.setState({
         focused: true
       })), "handled"
     }), Z(this, "handleKeyCommand", e => {
@@ -376,7 +376,7 @@ class Y extends Chunk647438.PureComponent {
       } = this.props, {
         focused: n
       } = this.state;
-      return e = null != e ? e.replace(/\n/g, "") : "", t = y.x0(e, t), t = y.Hl(t, V), t = this.tokenize(t), n || this.setState({
+      return e = null != e ? e.replace(/\n/g, "") : "", t = y.x0(e, t), t = y.Hl(t, F), t = this.tokenize(t), n || this.setState({
         focused: true
       }), this.setEditorState(t), "handled"
     }), Z(this, "setEditorState", e => {
@@ -508,13 +508,13 @@ function W(e) {
       isXDMSearch: t.type === U.aib.DMS,
       location: "Search"
     }),
-    V = M || Z,
-    F = (0, A.$)({
+    F = M || Z,
+    V = (0, A.$)({
       location: "Search"
     }),
-    W = i.useMemo(() => t.type === U.aib.DMS ? G.intl.string(G.t.m7OrlZ) : F ? G.intl.formatToPlainString(G.t.LDZtFB, {
+    W = i.useMemo(() => t.type === U.aib.DMS ? G.intl.string(G.t.m7OrlZ) : V ? G.intl.formatToPlainString(G.t.LDZtFB, {
       name: L
-    }) : V ? (0, r.jsxs)(r.Fragment, {
+    }) : F ? (0, r.jsxs)(r.Fragment, {
       children: [G.intl.formatToPlainString(G.t.LDZtFB, {
         name: L
       }), (0, r.jsx)("span", {
@@ -524,7 +524,7 @@ function W(e) {
           className: B.shortcut
         })
       })]
-    }) : G.intl.string(G.t["5h0QOD"]), [t.type, V, L, F]);
+    }) : G.intl.string(G.t["5h0QOD"]), [t.type, F, L, V]);
   return (0, r.jsx)(Y, {
     className: n,
     searchPopoutClassName: s,
@@ -539,7 +539,7 @@ function W(e) {
     isSearchActive: S,
     placeholder: W,
     popoutAlignment: l,
-    isSearchFiltersRedesignEnabled: V
+    isSearchFiltersRedesignEnabled: F
   })
 }
 

@@ -38,8 +38,8 @@ var r, i, Chunk754793 = require("./754793.js"),
   G = 16,
   B = 17,
   Z = 18,
-  V = 19,
-  F = 20,
+  F = 19,
+  V = 20,
   H = 21,
   Y = 22,
   W = 23,
@@ -238,7 +238,7 @@ function ep(e, t) {
           n.mode = M;
           break;
         case 1:
-          if (ef(n), n.mode = F, t === h) {
+          if (ef(n), n.mode = V, t === h) {
             eo >>>= 2, es -= 2;
             break i
           }
@@ -296,8 +296,8 @@ function ep(e, t) {
         e.msg = "invalid code lengths set", n.mode = $;
         break
       }
-      n.have = 0, n.mode = V;
-    case V:
+      n.have = 0, n.mode = F;
+    case F:
       for (; n.have < n.nlen + n.ndist;) {
         for (; eh = (eS = n.lencode[eo & (1 << n.lenbits) - 1]) >>> 24, em = eS >>> 16 & 255, eg = 65535 & eS, !(eh <= es);) {
           if (0 === er) break i;
@@ -352,8 +352,8 @@ function ep(e, t) {
         e.msg = "invalid distances set", n.mode = $;
         break
       }
-      if (n.mode = F, t === h) break i;
-    case F:
+      if (n.mode = V, t === h) break i;
+    case V:
       n.mode = H;
     case H:
       if (er >= 6 && ea >= 258) {
@@ -477,7 +477,7 @@ function ep(e, t) {
     default:
       return b
   }
-  return (e.next_out = en, e.avail_out = ea, e.next_in = et, e.avail_in = er, n.hold = eo, n.bits = es, (n.wsize || ec !== e.avail_out && n.mode < $ && (n.mode < X || t !== _)) && e_(e, e.output, e.next_out, ec - e.avail_out)) ? (n.mode = ee, O) : (el -= e.avail_in, ec -= e.avail_out, e.total_in += el, e.total_out += ec, n.total += ec, n.wrap && ec && (e.adler = n.check = n.flags ? s(n.check, i, ec, e.next_out - ec) : o(n.check, i, ec, e.next_out - ec)), e.data_type = n.bits + 64 * !!n.last + 128 * (n.mode === j) + 256 * (n.mode === F || n.mode === U), (0 === el && 0 === ec || t === _) && ev === m && (ev = v), ev)
+  return (e.next_out = en, e.avail_out = ea, e.next_in = et, e.avail_in = er, n.hold = eo, n.bits = es, (n.wsize || ec !== e.avail_out && n.mode < $ && (n.mode < X || t !== _)) && e_(e, e.output, e.next_out, ec - e.avail_out)) ? (n.mode = ee, O) : (el -= e.avail_in, ec -= e.avail_out, e.total_in += el, e.total_out += ec, n.total += ec, n.wrap && ec && (e.adler = n.check = n.flags ? s(n.check, i, ec, e.next_out - ec) : o(n.check, i, ec, e.next_out - ec)), e.data_type = n.bits + 64 * !!n.last + 128 * (n.mode === j) + 256 * (n.mode === V || n.mode === U), (0 === el && 0 === ec || t === _) && ev === m && (ev = v), ev)
 }
 
 function eh(e) {

@@ -81,7 +81,7 @@ function B(e, t) {
 
 function Z(e, t) {
   if (null == e) return {};
-  var n, r, i = V(e, t);
+  var n, r, i = F(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -89,14 +89,14 @@ function Z(e, t) {
   return i
 }
 
-function V(e, t) {
+function F(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let F = {
+let V = {
   offset: {
     left: 4,
     right: false
@@ -244,7 +244,7 @@ function z(e) {
       className: k.message,
       compact: O.jU.getSetting(),
       animateAvatar: false,
-      focusProps: F,
+      focusProps: V,
       trackAnnouncementViews: true
     }, t.message.id), (0, r.jsx)(y.ZP, {
       className: k.hoverBar,

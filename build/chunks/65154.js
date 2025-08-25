@@ -37,11 +37,11 @@ require.d(exports, {
   ef: () => L,
   fC: () => c,
   fU: () => m,
-  fm: () => F,
+  fm: () => V,
   h7: () => a,
   iA: () => z,
   jg: () => E,
-  kS: () => V,
+  kS: () => F,
   mC: () => A,
   mN: () => S,
   n4: () => Y,
@@ -110,7 +110,7 @@ let d = 100,
   G = 35e5,
   B = 9e6,
   Z = ["remoteSinkWantsPixelCount", "remoteSinkWantsMaxFramerate", "encodingVideoMinBitRate", "encodingVideoMaxBitRate", "encodingVideoBitRate", "streamParameters"],
-  V = {
+  F = {
     videoBudget: {
       width: 1280,
       height: 720,
@@ -132,7 +132,7 @@ let d = 100,
     },
     videoBitrateFloor: 15e4
   },
-  F = .02,
+  V = .02,
   H = 6e4,
   Y = ">=22.0.0";
 var W = function(e) {

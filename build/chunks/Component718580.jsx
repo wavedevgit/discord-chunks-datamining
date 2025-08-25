@@ -166,8 +166,8 @@ function S(e) {
     }
   }, null == N ? "animate-never" : "respect-motion-settings"), B = (0, p.Z)(R), {
     width: Z,
-    centered: V = true
-  } = T, F = s.tq ? "100%" : U.width.to(e => "string" == typeof e ? e : Math.round(e)), H = s.tq ? "100%" : U.height.to(e => Math.round(e)), Y = s.tq ? {} : V ? {
+    centered: F = true
+  } = T, V = s.tq ? "100%" : U.width.to(e => "string" == typeof e ? e : Math.round(e)), H = s.tq ? "100%" : U.height.to(e => Math.round(e)), Y = s.tq ? {} : F ? {
     transform: "translate3d(0, -50%, 0) scale(1.0, 1.0)",
     top: "50%"
   } : {
@@ -178,7 +178,7 @@ function S(e) {
   return (0, r.jsx)(a.animated.div, {
     style: m({
       position: "relative",
-      minWidth: F,
+      minWidth: V,
       minHeight: H
     }, W),
     children: G((e, t, n) => {

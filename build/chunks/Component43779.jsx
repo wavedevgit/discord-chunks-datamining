@@ -80,8 +80,8 @@ function D(e) {
     isVisibleInViewport: k,
     onReceiveErrorHints: M,
     sourceQuestContent: U
-  } = e, G = i.useMemo(() => h.r.build(S.config), [S.config]), B = G.defaultRewardName, Z = G.defaultRewardNameWithArticle, V = (null == (t = S.userStatus) ? true : t.enrolledAt) != null, {
-    ref: F,
+  } = e, G = i.useMemo(() => h.r.build(S.config), [S.config]), B = G.defaultRewardName, Z = G.defaultRewardNameWithArticle, F = (null == (t = S.userStatus) ? true : t.enrolledAt) != null, {
+    ref: V,
     scrollHeight: H
   } = (0, u.kE)(), Y = (null != H ? H : 0) + P, W = H !== R, {
     onAssetLoadComplete: K
@@ -142,7 +142,7 @@ function D(e) {
           className: T.assetWrapper,
           children: [!X && q && (0, r.jsx)("div", {
             className: T.completionAnimation
-          }), V && !X ? (0, r.jsxs)("div", {
+          }), F && !X ? (0, r.jsxs)("div", {
             className: T.progressWrapper,
             children: [q && (0, r.jsx)(c.Fmz, {
               importData: w,
@@ -181,7 +181,7 @@ function D(e) {
           })]
         })
       }), (0, r.jsxs)("div", {
-        ref: F,
+        ref: V,
         className: o()(T.textContainer, {
           [T.justifyCenter]: !W
         }),

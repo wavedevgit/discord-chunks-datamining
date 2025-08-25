@@ -64,7 +64,7 @@ function Z(e) {
   return e
 }
 
-function V(e, t) {
+function F(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -75,8 +75,8 @@ function V(e, t) {
   return n
 }
 
-function F(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : V(Object(t)).forEach(function(n) {
+function V(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : F(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -142,7 +142,7 @@ class W extends Chunk647438.Component {
         location: e
       }
     } = this.props;
-    return F(Z({}, module), {
+    return V(Z({}, module), {
       section: Chunk981631.jXE.GIFT_CODE_EMBED
     })
   }
@@ -188,7 +188,7 @@ class W extends Chunk647438.Component {
       onClick: this.handleAccept,
       color: u.zx.Colors.BRAND
     }, o = !e.isSubscription && null != t || !e.isSelfRedeemable && i || e.isExistingPremiumSubscriptionDisallowed && (0, D.I5)(n);
-    return (e.redeemed || o || e.isClaimed || !n.verified) && (a.color = u.zx.Colors.BRAND, a.disabled = true), (0, r.jsx)(u.zx, F(Z({}, a), {
+    return (e.redeemed || o || e.isClaimed || !n.verified) && (a.color = u.zx.Colors.BRAND, a.disabled = true), (0, r.jsx)(u.zx, V(Z({}, a), {
       className: (0, g.mO)(e) ? G.collectiblesAcceptButton : null,
       size: u.zx.Sizes.SMALL,
       children: e.redeemed ? U.intl.string(U.t.BTihoq) : null != e.giftStyle ? U.intl.string(U.t.TiZFqa) : U.intl.string(U.t.bUvv1d)
@@ -352,7 +352,7 @@ class W extends Chunk647438.Component {
       } = this.props;
       e.preventDefault(), e.stopPropagation(), P.default.track(k.rMx.OPEN_MODAL, {
         type: "gift_accept",
-        location: F(Z({}, this.analyticsLocation), {
+        location: V(Z({}, this.analyticsLocation), {
           object: k.qAy.BUTTON_CTA
         })
       });

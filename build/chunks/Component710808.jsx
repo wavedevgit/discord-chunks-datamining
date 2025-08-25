@@ -135,108 +135,99 @@ function x(e) {
   })))
 }
 
-function L(e) {
-  let {
-    refreshStyles: t = false
-  } = e, [n, o] = i.useState(false), {
-    debugLogging: d,
-    aecDumpEnabled: p
-  } = (0, a.cj)([g.Z], () => ({
-    aecDumpSupported: g.Z.isAecDumpSupported(),
-    debugLogging: g.Z.getDebugLogging(),
-    aecDumpEnabled: g.Z.getAecDump(),
-    supportsConnectionReplay: g.Z.supports(I.AN.CONNECTION_REPLAY)
-  })), A = (0, a.e7)([m.default], () => m.default.isStreamInfoOverlayEnabled), C = (0, a.e7)([E.ZP], () => E.ZP.shouldRecordNextConnection());
-  async function N() {
-    o(true);
+function L() {
+  let [e, t] = Chunk647438.useState(false), {
+    debugLogging: n,
+    aecDumpEnabled: o
+  } = (0, Chunk442837.cj)([Chunk131951.Z], () => ({
+    aecDumpSupported: Chunk131951.Z.isAecDumpSupported(),
+    debugLogging: Chunk131951.Z.getDebugLogging(),
+    aecDumpEnabled: Chunk131951.Z.getAecDump(),
+    supportsConnectionReplay: Chunk131951.Z.supports(Chunk65154.AN.CONNECTION_REPLAY)
+  })), d = (0, Chunk442837.e7)([Chunk857192.default], () => Chunk857192.default.isStreamInfoOverlayEnabled), p = (0, Chunk442837.e7)([Chunk226961.ZP], () => Chunk226961.ZP.shouldRecordNextConnection());
+  async function A() {
+    exports(true);
     try {
-      await g.Z.getMediaEngine().writeAudioDebugState(), await b.Z.submitLiveCrashReport({
+      await Chunk131951.Z.getMediaEngine().writeAudioDebugState(), await Chunk12647.Z.submitLiveCrashReport({
         message: {
           message: "User Live Dump"
         }
-      }), await (0, _.E)(v.GU0.RTC), w()
+      }), await (0, Chunk729345.E)(Chunk981631.GU0.RTC), w()
     } catch (e) {
-      D(e.displayMessage)
+      D(module.displayMessage)
     }
   }
-  let R = (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(h.F, {
-      setting: O.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING_STREAM_INFO_OVERLAY,
-      children: (0, r.jsx)(s.j7V, {
-        value: A,
+  return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+    children: [(0, Chunk951288.jsx)(Chunk921801.F, {
+      setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING_STREAM_INFO_OVERLAY,
+      children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
+        value: Chunk579806,
         onChange: e => {
-          (0, y.Z)("stream_info_overlay_enabled", e, A), (0, c.y)({
+          (0, y.Z)("stream_info_overlay_enabled", e, d), (0, c.y)({
             isStreamInfoOverlayEnabled: e
           })
         },
-        note: T.intl.string(T.t.kBXuW1),
-        hideBorder: t,
-        children: T.intl.string(T.t["0CEP6e"])
-      })
-    }), (0, r.jsx)(h.F, {
-      setting: O.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING_AEC_DUMP,
-      children: (0, r.jsx)(s.j7V, {
-        value: p,
-        onChange: e => l.Z.setAecDump(e),
-        note: T.intl.string(T.t["xl9+Iy"]),
-        hideBorder: t,
-        children: T.intl.string(T.t["r6K+TE"])
-      })
-    }), (0, r.jsxs)(h.F, {
-      setting: O.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING_CONNECTION_REPLAY,
-      children: [(0, r.jsx)(s.j7V, {
+        note: Chunk388032.intl.string(Chunk388032.t.kBXuW1),
         hideBorder: true,
-        value: C,
+        children: Chunk388032.intl.string(Chunk388032.t["0CEP6e"])
+      })
+    }), (0, Chunk951288.jsx)(Chunk921801.F, {
+      setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING_AEC_DUMP,
+      children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
+        value: Chunk755721,
+        onChange: e => l.Z.setAecDump(e),
+        note: Chunk388032.intl.string(Chunk388032.t["xl9+Iy"]),
+        hideBorder: true,
+        children: Chunk388032.intl.string(Chunk388032.t["r6K+TE"])
+      })
+    }), (0, Chunk951288.jsxs)(Chunk921801.F, {
+      setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING_CONNECTION_REPLAY,
+      children: [(0, Chunk951288.jsx)(Chunk481060.j7V, {
+        hideBorder: true,
+        value: Chunk458725,
         onChange: e => u.TC(e),
-        note: T.intl.string(T.t.Lm72RU),
-        children: T.intl.string(T.t.U4FgFB)
-      }), (0, r.jsx)(s.xJW, {
-        children: (0, r.jsx)(f.Z, {
-          className: S.marginBottom20,
-          children: (0, r.jsx)(f.Z.Child, {
+        note: Chunk388032.intl.string(Chunk388032.t.Lm72RU),
+        children: Chunk388032.intl.string(Chunk388032.t.U4FgFB)
+      }), (0, Chunk951288.jsx)(Chunk481060.xJW, {
+        children: (0, Chunk951288.jsx)(Chunk600164.Z, {
+          className: Chunk197571.marginBottom20,
+          children: (0, Chunk951288.jsx)(Chunk600164.Z.Child, {
             grow: 0,
             shrink: 0,
-            children: (0, r.jsx)(s.zxk, {
+            children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
               variant: "primary",
               size: "sm",
-              text: T.intl.string(T.t.nJnOHB),
-              onClick: () => u.z4()
+              text: Chunk388032.intl.string(Chunk388032.t.nJnOHB),
+              onClick: () => Chunk304680.z4()
             })
           })
         })
-      }), t ? null : (0, r.jsx)(s.$i$, {
-        className: S.marginBottom20
       })]
-    }), (0, r.jsx)(h.F, {
-      setting: O.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING_LOGGING,
-      children: (0, r.jsxs)("div", {
-        children: [(0, r.jsx)(s.j7V, {
+    }), (0, Chunk951288.jsx)(Chunk921801.F, {
+      setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING_LOGGING,
+      children: (0, Chunk951288.jsxs)("div", {
+        children: [(0, Chunk951288.jsx)(Chunk481060.j7V, {
           hideBorder: true,
-          value: d,
+          value: require,
           onChange: x,
-          note: T.intl.string(T.t["/7ak9f"]),
-          children: T.intl.string(T.t["726JHB"])
-        }), (0, r.jsx)(s.xJW, {
-          children: (0, r.jsxs)(s.hE2, {
+          note: Chunk388032.intl.string(Chunk388032.t["/7ak9f"]),
+          children: Chunk388032.intl.string(Chunk388032.t["726JHB"])
+        }), (0, Chunk951288.jsx)(Chunk481060.xJW, {
+          children: (0, Chunk951288.jsxs)(Chunk481060.hE2, {
             size: "sm",
-            children: [(0, r.jsx)(s.zxk, {
+            children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
               variant: "primary",
-              text: T.intl.string(T.t["3UB9aW"]),
-              disabled: n,
-              onClick: N
-            }), (0, r.jsx)(s.zxk, {
+              text: Chunk388032.intl.string(Chunk388032.t["3UB9aW"]),
+              disabled: module,
+              onClick: A
+            }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
               variant: "primary",
-              text: T.intl.string(T.t.nuPtYm),
+              text: Chunk388032.intl.string(Chunk388032.t.nuPtYm),
               onClick: P
             })]
           })
         })]
       })
     })]
-  });
-  return t ? R : (0, r.jsx)(s.hjN, {
-    className: S.marginBottom40,
-    title: T.intl.string(T.t.OFpL3d),
-    children: R
   })
 }

@@ -180,9 +180,9 @@ function B(e) {
     hostname: M,
     pathname: B,
     search: Z,
-    hash: V
-  } = null != (t = x.Z.toURLSafe(e)) ? t : {}, F = x.Z.isDiscordHostname(null != M ? M : null) || x.Z.isDiscordLocalhost(null != w ? w : null, null != M ? M : null);
-  if (F && ((null == B ? true : B.startsWith("/application-directory")) || (null == B ? true : B.startsWith("/discovery/applications")))) {
+    hash: F
+  } = null != (t = x.Z.toURLSafe(e)) ? t : {}, V = x.Z.isDiscordHostname(null != M ? M : null) || x.Z.isDiscordLocalhost(null != w ? w : null, null != M ? M : null);
+  if (V && ((null == B ? true : B.startsWith("/application-directory")) || (null == B ? true : B.startsWith("/discovery/applications")))) {
     let e = B.split("/"),
       t = null == B ? true : B.startsWith("/discovery/applications"),
       r = e[t ? 3 : 2],
@@ -210,14 +210,14 @@ function B(e) {
       }), true
     }
   }
-  if (null != B && F && x.Z.isAppRoute(B)) {
+  if (null != B && V && x.Z.isAppRoute(B)) {
     let e = {
       navigationReplace: false,
       openChannel: true
     };
-    return null != Z && (e.search = Z), null != V && (e.hash = V), t => (null == t || t.preventDefault(), (0, I.Z)(B, e), true)
+    return null != Z && (e.search = Z), null != F && (e.hash = F), t => (null == t || t.preventDefault(), (0, I.Z)(B, e), true)
   }
-  if (null != B && F) {
+  if (null != B && V) {
     let {
       getOAuth2AuthorizeProps: t,
       openOAuth2ModalWithCreateGuildModal: r
@@ -227,7 +227,7 @@ function B(e) {
     }), r(i), true)
   }
   let H = (0, v.Ao)(B);
-  if (null != B && F && null != H) return e => {
+  if (null != B && V && null != H) return e => {
     null == e || e.preventDefault();
     let t = P.Z.getGuildId();
     null != H.guildId && "" !== H.guildId && H.guildId !== t && (0, I.Z)(j.Z5c.CHANNEL(H.guildId));
@@ -236,7 +236,7 @@ function B(e) {
       eventId: n.id
     }), true
   };
-  if (F && (null == B ? true : B.startsWith("/settings/"))) {
+  if (V && (null == B ? true : B.startsWith("/settings/"))) {
     let {
       default: e
     } = n(722589), t = e(B);
@@ -246,9 +246,9 @@ function B(e) {
       analyticsLocations: s
     }), true)
   }
-  return F && (null == B ? true : B.startsWith("/discovery/quests")) ? e => (null == e || e.preventDefault(), (0, S.navigateToQuestHome)({
+  return V && (null == B ? true : B.startsWith("/discovery/quests")) ? e => (null == e || e.preventDefault(), (0, S.navigateToQuestHome)({
     fromContent: i.j.QUEST_BADGE
-  }), true) : F && (null == B ? true : B.startsWith("/discovery/servers")) ? e => (null == e || e.preventDefault(), Promise.resolve().then(n.bind(n, 749681)).then(e => {
+  }), true) : V && (null == B ? true : B.startsWith("/discovery/servers")) ? e => (null == e || e.preventDefault(), Promise.resolve().then(n.bind(n, 749681)).then(e => {
     let {
       transitionToGlobalDiscovery: t
     } = e, {

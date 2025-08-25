@@ -70,8 +70,8 @@ function S(e) {
     location: "RootThemeContextProvider"
   }, {
     autoTrackExposure: true
-  }).enabled, V = (0, p.Z)(R, __OVERLAY__ || N), F = 0;
-  1 !== x && (F = (0, l.OdO)(F, l.bgu.REDUCE_SATURATION_ENABLED));
+  }).enabled, F = (0, p.Z)(R, __OVERLAY__ || N), V = 0;
+  1 !== x && (V = (0, l.OdO)(V, l.bgu.REDUCE_SATURATION_ENABLED));
   let H = (0, I.A)(),
     Y = (0, h.Ml)("RootThemeContextProvider"),
     W = (0, h.CL)("RootThemeContextProvider"),
@@ -89,7 +89,7 @@ function S(e) {
     });
   return (0, r.jsx)(l.wMY, {
     theme: C,
-    flags: F,
+    flags: V,
     saturation: x,
     density: H,
     children: (0, r.jsx)(T.cE, {
@@ -100,7 +100,7 @@ function S(e) {
       fontScale: P,
       fontScaleClass: w,
       keyboardModeEnabled: D,
-      mouseMode: V,
+      mouseMode: F,
       saturation: x,
       desaturateUserColors: L,
       useForcedColors: j,

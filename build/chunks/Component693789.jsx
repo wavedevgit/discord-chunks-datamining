@@ -158,19 +158,19 @@ function T(e) {
     focusProps: G,
     "aria-label": B,
     submittingStartedLabel: Z,
-    submittingFinishedLabel: V
-  } = e, F = g(e, ["look", "color", "size", "fullWidth", "grow", "disabled", "submitting", "type", "style", "wrapperClassName", "className", "innerClassName", "onClick", "onDoubleClick", "onMouseDown", "onMouseUp", "onMouseEnter", "onMouseLeave", "onKeyDown", "children", "rel", "buttonRef", "focusProps", "aria-label", "submittingStartedLabel", "submittingFinishedLabel"]);
+    submittingFinishedLabel: F
+  } = e, V = g(e, ["look", "color", "size", "fullWidth", "grow", "disabled", "submitting", "type", "style", "wrapperClassName", "className", "innerClassName", "onClick", "onDoubleClick", "onMouseDown", "onMouseUp", "onMouseEnter", "onMouseLeave", "onKeyDown", "children", "rel", "buttonRef", "focusProps", "aria-label", "submittingStartedLabel", "submittingFinishedLabel"]);
   let H = h || E,
     Y = H && (null != x || null != L),
     W = Y ? null : A,
     K = v(G, t),
     z = i.useRef(false);
   i.useEffect(() => {
-    true === E && (z.current = true, l.u.announce(null != Z ? Z : d.intl.string(d.t.pfChQk))), false === E && true === z.current && l.u.announce(null != V ? V : d.intl.string(d.t.SVPara))
-  }, [E, Z, V]);
+    true === E && (z.current = true, l.u.announce(null != Z ? Z : d.intl.string(d.t.pfChQk))), false === E && true === z.current && l.u.announce(null != F ? F : d.intl.string(d.t.SVPara))
+  }, [E, Z, F]);
   let q = (0, r.jsx)(c.t, m(p({}, G), {
     offset: K,
-    children: (0, r.jsxs)("button", m(p({}, H ? null : F), {
+    children: (0, r.jsxs)("button", m(p({}, H ? null : V), {
       "aria-label": B,
       "aria-busy": !!E || true,
       ref: U,

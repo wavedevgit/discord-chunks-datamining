@@ -126,28 +126,28 @@ let U = new Chunk710845.Z("ConnectionStore"),
     type: "GUILD_MEMBERS_CHUNK_BATCH",
     chunks: []
   }).chunks.push(t), e), e => "GUILD_MEMBERS_CHUNK" !== e),
-  V = new Chunk483012.Z(Chunk955132.Wb, (e, t) => ((e = null == e ? {
+  F = new Chunk483012.Z(Chunk955132.Wb, (e, t) => ((e = null == e ? {
     type: "PRESENCE_UPDATES",
     updates: []
   } : e).updates.push(t), e), e => "PRESENCE_UPDATE" !== e && "GUILD_MEMBERS_CHUNK" !== e),
-  F = {};
+  V = {};
 
 function H(e, t) {
-  for (let n of e) F[n] = {
+  for (let n of e) V[n] = {
     preload: () => null,
     dispatch: t
   }
 }
 
 function Y(e, t, n) {
-  for (let r of e) F[r] = {
+  for (let r of e) V[r] = {
     preload: t,
     dispatch: n
   }
 }
 
 function W(e) {
-  return F[e]
+  return V[e]
 }
 
 function K(e) {
@@ -259,7 +259,7 @@ function J(e) {
     clientStatus: o,
     processedAtTimestamp: s
   } = e;
-  V.add({
+  F.add({
     guildId: t,
     user: n,
     status: r,

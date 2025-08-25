@@ -154,10 +154,10 @@ function P(e) {
       }), (0, p.GN)(e.questContent) && ((0, h.gl)(e.quest.id, e.questContent), T && (0, b.maybeShowSurveyForQuest)(e.quest))
     },
     Z = e => (0, o.showToast)((0, o.createToast)(new l.Z(e, e.status).message, o.ToastType.FAILURE)),
-    V = () => (0, h.CS)(e.quest.id, true).catch(Z),
-    F = () => (0, h.is)(e.quest.id).catch(Z),
+    F = () => (0, h.CS)(e.quest.id, true).catch(Z),
+    V = () => (0, h.is)(e.quest.id).catch(Z),
     H = () => {
-      D(), F()
+      D(), V()
     },
     Y = false,
     W = i.useMemo(() => (0, r.jsx)(o.S89, {
@@ -229,11 +229,11 @@ function P(e) {
         }), (0, r.jsx)(o.sNh, {
           id: "start",
           label: "Start heartbeat (cheatmode)",
-          action: V
+          action: F
         }), (0, r.jsx)(o.sNh, {
           id: "stop",
           label: "Stop heartbeat",
-          action: F
+          action: V
         })]
       }), (0, r.jsx)(o.sNh, {
         id: "copy-quest-id",

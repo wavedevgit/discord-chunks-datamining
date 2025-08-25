@@ -379,7 +379,7 @@ function Z(e) {
   })
 }
 
-function V(e) {
+function F(e) {
   let {
     onChangePage: t
   } = e, n = () => t(1);
@@ -415,7 +415,7 @@ function V(e) {
     })]
   })
 }
-let F = () => require.e("68170").then(require.t.bind(require, 205663, 19)).then(e => {
+let V = () => require.e("68170").then(require.t.bind(require, 205663, 19)).then(e => {
   let {
     default: t
   } = e;
@@ -475,7 +475,7 @@ function H(e) {
     }), (0, r.jsx)(M, {
       settings: a,
       updateSettings: h
-    }), (0, r.jsx)(V, {
+    }), (0, r.jsx)(F, {
       onChangePage: t
     }), (0, r.jsx)(G, {
       settings: a,
@@ -531,7 +531,7 @@ function z() {
       className: Chunk585483 ? Chunk749714.enableAnimationOverlayVisible : Chunk749714.enableAnimationOverlayHidden,
       children: (0, Chunk951288.jsx)(Chunk481060.Fmz, {
         className: Chunk749714.enableAnimation,
-        importData: F,
+        importData: V,
         shouldAnimate: Chunk585483,
         autoplay: false,
         resetOnPlay: true,

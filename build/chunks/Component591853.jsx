@@ -208,7 +208,7 @@ function eO(e) {
         let e = await _.Z.getOrEnsurePrivateChannel(n.id);
         r = null != (o = U.Z.getChannel(e)) ? o : null
       }
-      return l()(null != r, "Send channel must be defined"), F({
+      return l()(null != r, "Send channel must be defined"), V({
         reply: ":".concat(i.name, ":"),
         sendToChannel: r,
         onComplete: (e, t) => {
@@ -220,7 +220,7 @@ function eO(e) {
         requiresChannelReadiness: false
       })
     }
-  }, V = async e => {
+  }, F = async e => {
     let r;
     if ((0, I.Q3)(u.z.CONTENT_INVENTORY_ONE_CLICK_REPLY_COACHTIP), m) l()(null != t, "shareToChannelMode should only be true if a valid channel is passed"), r = t;
     else {
@@ -231,14 +231,14 @@ function eO(e) {
       l()(null != t, "DM channel must be defined"), r = t
     }
     let i = r.type === el.d4z.DM ? es.xP.DM_REACTION_MESSAGE_SENT : es.xP.CHANNEL_REACTION_MESSAGE_SENT;
-    return F({
+    return V({
       reply: e,
       sendToChannel: r,
       interactionType: i,
       onComplete: a,
       requiresChannelReadiness: true
     })
-  }, F = async e => {
+  }, V = async e => {
     let {
       reply: t,
       sendToChannel: n,
@@ -281,7 +281,7 @@ function eO(e) {
       className: L ? ed.inputContainerShareToChannel : ed.hiddenButRenderedInputField,
       children: [(0, r.jsx)(y.A7, {
         placeholder: M,
-        onEnter: V,
+        onEnter: F,
         setEditorRef: e => b(e),
         channel: m ? t : true,
         showEmojiButton: null != H,
@@ -388,7 +388,7 @@ function eI(e) {
     participant1: d,
     participant2: _,
     numOtherParticipants: p
-  } = (0, et.Z)(i, 3), h = (0, c.e7)([F.default], () => F.default.getUser(i.author_id)), {
+  } = (0, et.Z)(i, 3), h = (0, c.e7)([V.default], () => V.default.getUser(i.author_id)), {
     streamPreviewUrl: m
   } = (0, en.Z)(i), g = null != m, E = [d, _];
   return (0, r.jsxs)("div", {
@@ -661,9 +661,9 @@ function eA(e) {
 function eC(e) {
   let t = (0, c.e7)([G.Z], () => G.Z.getGuild((0, E.j)(null == e ? true : e.location))),
     n = (0, c.e7)([U.Z], () => U.Z.getChannel((0, E.p)(null == e ? true : e.location))),
-    i = (0, c.Wu)([F.default], () => {
+    i = (0, c.Wu)([V.default], () => {
       var t, n;
-      return null != (n = null == e || null == (t = e.participants) ? true : t.map(e => F.default.getUser(e.userId))) ? n : []
+      return null != (n = null == e || null == (t = e.participants) ? true : t.map(e => V.default.getUser(e.userId))) ? n : []
     });
   return null != e && null != t && null != n && M.sR.has(n.type) ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
@@ -727,7 +727,7 @@ function eN(e) {
   } = (0, x.Z)(null == t ? true : t.id), u = (0, c.e7)([G.Z], () => null != s ? G.Z.getGuild(s.guild_id) : true), _ = (0, c.Wu)([Y.ZP], () => null != s ? Y.ZP.getVoiceStatesForChannel(s) : [], [s]), h = (0, c.e7)([H.Z], () => H.Z.isInChannel(null == s ? true : s.id)), m = i.useMemo(() => {
     for (let e of _) {
       let t = U.Z.getDMFromUserId(e.user.id),
-        n = null != t && V.ZP.isChannelMuted(null, t),
+        n = null != t && F.ZP.isChannelMuted(null, t),
         r = Z.Z.isBlockedOrIgnored(e.user.id);
       if (n || r) returntrue
     }

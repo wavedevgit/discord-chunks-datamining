@@ -28,7 +28,7 @@
       a = null,
       l = false,
       c = false;
-    return "string" == typeof e && (e = K(e)), "object" == typeof e && (W(e.r) && W(e.g) && W(e.b) ? (t = d(e.r, e.g, e.b), l = true, c = "%" === String(e.r).substr(false) ? "prgb" : "rgb") : W(e.h) && W(e.s) && W(e.v) ? (r = V(e.s), i = V(e.v), t = h(e.h, r, i), l = true, c = "hsv") : W(e.h) && W(e.s) && W(e.l) && (r = V(e.s), a = V(e.l), t = _(e.h, r, a), l = true, c = "hsl"), e.hasOwnProperty("a") && (n = e.a)), n = j(n), {
+    return "string" == typeof e && (e = K(e)), "object" == typeof e && (W(e.r) && W(e.g) && W(e.b) ? (t = d(e.r, e.g, e.b), l = true, c = "%" === String(e.r).substr(false) ? "prgb" : "rgb") : W(e.h) && W(e.s) && W(e.v) ? (r = F(e.s), i = F(e.v), t = h(e.h, r, i), l = true, c = "hsv") : W(e.h) && W(e.s) && W(e.l) && (r = F(e.s), a = F(e.l), t = _(e.h, r, a), l = true, c = "hsl"), e.hasOwnProperty("a") && (n = e.a)), n = j(n), {
       ok: l,
       format: e.format || c,
       r: o(255, s(t.r, 0)),
@@ -140,12 +140,12 @@
   }
 
   function g(e, t, n, r, i) {
-    var o = [Z(a(e).toString(16)), Z(a(t).toString(16)), Z(a(n).toString(16)), Z(F(r))];
+    var o = [Z(a(e).toString(16)), Z(a(t).toString(16)), Z(a(n).toString(16)), Z(V(r))];
     return i && o[0].charAt(0) == o[0].charAt(1) && o[1].charAt(0) == o[1].charAt(1) && o[2].charAt(0) == o[2].charAt(1) && o[3].charAt(0) == o[3].charAt(1) ? o[0].charAt(0) + o[1].charAt(0) + o[2].charAt(0) + o[3].charAt(0) : o.join("")
   }
 
   function E(e, t, n, r) {
-    return [Z(F(r)), Z(a(e).toString(16)), Z(a(t).toString(16)), Z(a(n).toString(16))].join("")
+    return [Z(V(r)), Z(a(e).toString(16)), Z(a(t).toString(16)), Z(a(n).toString(16))].join("")
   }
 
   function b(e, t) {
@@ -425,7 +425,7 @@
   }, c.fromRatio = function(e, t) {
     if ("object" == typeof e) {
       var n = {};
-      for (var r in e) e.hasOwnProperty(r) && ("a" === r ? n[r] = e[r] : n[r] = V(e[r]));
+      for (var r in e) e.hasOwnProperty(r) && ("a" === r ? n[r] = e[r] : n[r] = F(e[r]));
       e = n
     }
     return c(e, t)
@@ -665,11 +665,11 @@
     return 1 == e.length ? "0" + e : "" + e
   }
 
-  function V(e) {
+  function F(e) {
     return e <= 1 && (e = 100 * e + "%"), e
   }
 
-  function F(e) {
+  function V(e) {
     return t.round(255 * parseFloat(e)).toString(16)
   }
 

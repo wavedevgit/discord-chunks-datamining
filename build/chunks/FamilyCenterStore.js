@@ -194,14 +194,14 @@ function Z(e) {
   P(t, true)
 }
 
-function V(e) {
+function F(e) {
   let {
     linkCode: t
   } = e;
   y = t
 }
 
-function F(e) {
+function V(e) {
   let {
     tab: t
   } = e;
@@ -332,8 +332,8 @@ class X extends Chunk750041.Z {
       FAMILY_CENTER_REQUEST_LINK_SUCCESS: M,
       FAMILY_CENTER_REQUEST_LINK_UPDATE_SUCCESS: B,
       FAMILY_CENTER_REQUEST_LINK_REMOVE_SUCCESS: Z,
-      FAMILY_CENTER_LINK_CODE_FETCH_SUCCESS: V,
-      FAMILY_CENTER_HANDLE_TAB_SELECT: F,
+      FAMILY_CENTER_LINK_CODE_FETCH_SUCCESS: F,
+      FAMILY_CENTER_HANDLE_TAB_SELECT: V,
       SET_LOCATION_METADATA: Y,
       LOGOUT: q
     })

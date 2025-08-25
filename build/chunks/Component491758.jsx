@@ -133,7 +133,7 @@ function L() {
       value: Chunk37113.LY.RESOLUTION_SOURCE,
       label: Chunk388032.intl.string(Chunk388032.t.XjXqzs)
     }], [G]),
-    V = Chunk647438.useMemo(() => [{
+    F = Chunk647438.useMemo(() => [{
       value: Chunk37113.ws.FPS_15,
       label: Chunk388032.intl.formatToPlainString(Chunk388032.t.Qb44XF, {
         fps: Chunk37113.ws.FPS_15
@@ -149,7 +149,7 @@ function L() {
         fps: Chunk37113.ws.FPS_60
       })
     }], [G]),
-    F = Chunk647438.useCallback(e => {
+    V = Chunk647438.useCallback(e => {
       c.Z.setKeybind(x(w({}, j), {
         shortcut: e
       }))
@@ -241,7 +241,7 @@ function L() {
         title: Chunk388032.intl.string(Chunk388032.t["2wScLy"]),
         note: Chunk388032.intl.string(Chunk388032.t["Rf9+f3"]),
         value: D.frameRate,
-        options: V
+        options: F
       }), (0, Chunk951288.jsx)(Chunk442334.O, {
         className: Chunk749799.formItem,
         title: Chunk388032.intl.string(Chunk388032.t.pf54ER),
@@ -250,7 +250,7 @@ function L() {
           className: Chunk556865.keyRecorder,
           children: (0, Chunk951288.jsx)(Chunk825209.Z, {
             defaultValue: j.shortcut,
-            onChange: F
+            onChange: V
           })
         })
       })]

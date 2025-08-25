@@ -1023,7 +1023,7 @@ class G extends Chunk495852.C {
       let [t, i] = e.tag();
       switch (t) {
         case 1:
-          a.ranges.push(V.internalBinaryRead(e, e.uint32(), n));
+          a.ranges.push(F.internalBinaryRead(e, e.uint32(), n));
           break;
         case 2:
           a.workAroundPyotoBug = e.bool();
@@ -1038,7 +1038,7 @@ class G extends Chunk495852.C {
     return a
   }
   internalBinaryWrite(e, t, n) {
-    for (let i = 0; i < e.ranges.length; i++) V.internalBinaryWrite(e.ranges[i], t.tag(1, r.TD.LengthDelimited).fork(), n).join();
+    for (let i = 0; i < e.ranges.length; i++) F.internalBinaryWrite(e.ranges[i], t.tag(1, r.TD.LengthDelimited).fork(), n).join();
     false !== e.workAroundPyotoBug && t.tag(2, r.TD.Varint).bool(e.workAroundPyotoBug);
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.z.onWrite : i)(this.typeName, e, t), t
@@ -1049,7 +1049,7 @@ class G extends Chunk495852.C {
       name: "ranges",
       kind: "message",
       repeat: 1,
-      T: () => V
+      T: () => F
     }, {
       no: 2,
       name: "work_around_pyoto_bug",
@@ -1107,8 +1107,8 @@ class Z extends Chunk495852.C {
     }])
   }
 }
-let V = new Z;
-class F extends Chunk495852.C {
+let F = new Z;
+class V extends Chunk495852.C {
   create(e) {
     let t = {
       inclusive: false
@@ -1158,7 +1158,7 @@ class F extends Chunk495852.C {
     }])
   }
 }
-let H = new F;
+let H = new V;
 class Y extends Chunk495852.C {
   create(e) {
     let t = {

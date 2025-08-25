@@ -389,7 +389,7 @@ function Z(e, t, n, r, a) {
     case "paragraph":
     case "text":
     case "emoticon":
-      return F(e, t, o || "", r, a);
+      return V(e, t, o || "", r, a);
     case "emoji":
     case "customEmoji": {
       let i = t.substring(r);
@@ -489,7 +489,7 @@ function Z(e, t, n, r, a) {
         attributes: [s],
         data: n
       });
-      return F(e, t, l[0], r, a);
+      return V(e, t, l[0], r, a);
     case "em":
     case "autolink":
     case "mailto":
@@ -509,15 +509,15 @@ function Z(e, t, n, r, a) {
       let {
         before: n,
         after: i
-      } = V(t, s, r, l);
-      return r = H(e, t, n, r, "syntaxBefore"), a.push(s), r = F(e, t, null != o ? o : "", r, a), a.pop(), r = H(e, t, i, r, "syntaxAfter"), W(t, r)
+      } = F(t, s, r, l);
+      return r = H(e, t, n, r, "syntaxBefore"), a.push(s), r = V(e, t, null != o ? o : "", r, a), a.pop(), r = H(e, t, i, r, "syntaxAfter"), W(t, r)
     }
     default:
       throw Error("Slate: Unknown rule type: ".concat(s))
   }
 }
 
-function V(e, t, n, r) {
+function F(e, t, n, r) {
   if ("inlineCode" === t) return {
     before: r[1],
     after: r[1]
@@ -535,7 +535,7 @@ function V(e, t, n, r) {
   throw Error("Slate: rule must be an inlineStyle")
 }
 
-function F(e, t, n, r, i) {
+function V(e, t, n, r, i) {
   return "string" == typeof n ? r = Y({
     result: e,
     sourceText: t,

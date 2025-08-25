@@ -223,7 +223,7 @@ function Z(e) {
   }), n
 }
 
-function V(e) {
+function F(e) {
   let {
     guildId: t,
     members: n
@@ -236,7 +236,7 @@ function V(e) {
   return i.length > 0 && r.updateClientMembers(i)
 }
 
-function F(e) {
+function V(e) {
   let {
     members: t,
     guildId: n
@@ -401,9 +401,9 @@ g(Q, "displayName", "MemberSafetyStore");
 let J = new Q(Chunk570140.Z, {
   CONNECTION_OPEN: G,
   CONNECTION_OPEN_SUPPLEMENTAL: B,
-  LOCAL_MESSAGES_LOADED: V,
+  LOCAL_MESSAGES_LOADED: F,
   CACHE_LOADED: Z,
-  PASSIVE_UPDATE_V2: F,
+  PASSIVE_UPDATE_V2: V,
   GUILD_CREATE: I,
   GUILD_DELETE: T,
   GUILD_MEMBERS_CHUNK_BATCH: C,

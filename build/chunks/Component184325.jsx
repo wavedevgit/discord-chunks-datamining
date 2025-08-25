@@ -103,7 +103,7 @@ function U(e) {
   } = (0, c.ZP)(l.Z.BADGE), {
     context: B,
     trackUserProfileAction: Z
-  } = (0, v.KZ)(), V = E.default.getCurrentUser(), F = (0, y.yd)(null == V ? true : V.premiumType, R.p9.TIER_2), H = (0, S.Of)(null != (t = null == V ? true : V.id) ? t : null), Y = (0, T.Z)(H).some(e => e.id === m.l.ORB_PROFILE_BADGE);
+  } = (0, v.KZ)(), F = E.default.getCurrentUser(), V = (0, y.yd)(null == F ? true : F.premiumType, R.p9.TIER_2), H = (0, S.Of)(null != (t = null == F ? true : F.id) ? t : null), Y = (0, T.Z)(H).some(e => e.id === m.l.ORB_PROFILE_BADGE);
   return (0, r.jsx)("div", {
     className: a()(D.container, i),
     "aria-label": w.intl.string(w.t.VWV0y8),
@@ -128,16 +128,16 @@ function U(e) {
           if (E) {
             if (t.preventDefault(), b.default.track(C.rMx.TIERED_TENURE_BADGE_CLICKED, {
                 badge: e.id,
-                premium_type: F,
+                premium_type: V,
                 viewed_user_id: null == g ? true : g.userId
-              }), F) {
-              (null == g ? true : g.userId) === (null == V ? true : V.id) ? (0, h.uL)(C.Z5c.NITRO_HOME) : (0, f.k)({
+              }), V) {
+              (null == g ? true : g.userId) === (null == F ? true : F.id) ? (0, h.uL)(C.Z5c.NITRO_HOME) : (0, f.k)({
                 analyticsLocations: G,
                 displayProfile: g
               }), null == x || x();
               return
             }
-            if ((null == g ? true : g.userId) === (null == V ? true : V.id)) {
+            if ((null == g ? true : g.userId) === (null == F ? true : F.id)) {
               let n = null != e.link ? (0, s.default)(e.link, {
                 analyticsLocations: G
               }) : null;

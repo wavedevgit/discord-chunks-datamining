@@ -46,8 +46,8 @@ function G(e) {
   let G, {
       activity: B,
       embeddedActivity: Z,
-      user: V,
-      onGameJoin: F,
+      user: F,
+      onGameJoin: V,
       onClose: H,
       location: Y
     } = e,
@@ -58,10 +58,10 @@ function G(e) {
     q = null != (t = null == Z ? true : Z.applicationId) ? t : null == B ? true : B.application_id,
     X = null != Z || (0, m.Z)(B),
     Q = (0, i.e7)([P.default], () => P.default.getCurrentUser()),
-    J = V.id === (null == Q ? true : Q.id),
+    J = F.id === (null == Q ? true : Q.id),
     $ = (0, _.Z)({
       channelId: (0, f.p)(null == Z ? true : Z.location),
-      userId: V.id,
+      userId: F.id,
       activity: B
     }),
     ee = (0, i.e7)([A.Z, O.Z, x.Z, I.Z], () => X || null != q && (0, j.t)({
@@ -82,13 +82,13 @@ function G(e) {
     er = (0, b.q)(q),
     ei = (0, y.A)(er),
     ea = (0, p.s5)({
-      userId: V.id,
+      userId: F.id,
       activity: B,
       channelId: $,
       application: er
     }),
     eo = (0, i.e7)([v.Z, S.Z, T.Z, N.Z, R.Z, w.Z, C.Z], () => null != Z ? ea === p.Fw.CAN_JOIN : (0, d.Z)({
-      user: V,
+      user: F,
       activity: B,
       application: er,
       channelId: $,
@@ -152,7 +152,7 @@ function G(e) {
         let e;
         z(true), null != B && (e = await a.Z.sendActivityInviteUser({
           type: k.mFx.JOIN_REQUEST,
-          userId: V.id,
+          userId: F.id,
           activity: B,
           location: k.Sbl.USER_ACTIVITY_ACTIONS
         })), null != e && s.default.selectPrivateChannel(e.id)
@@ -172,7 +172,7 @@ function G(e) {
       }
       if (!e) {
         if (eo) {
-          null == F || F(), e_(V, B), null == H || H();
+          null == V || V(), e_(F, B), null == H || H();
           return
         }
         await t()

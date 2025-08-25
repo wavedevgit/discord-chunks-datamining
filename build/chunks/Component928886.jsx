@@ -47,7 +47,7 @@ function I(e) {
     isGift: D,
     selectedGiftStyle: x,
     giftRecipient: L
-  } = (0, h.wD)(), j = D && (0, p.pO)(L) && S === g.h8.CONFIRM && null != x && (null == R ? true : R.productLine) !== E.POd.COLLECTIBLES, k = null != n && null != S, M = [g.h8.SKU_SELECT, g.h8.SELECT_FREE_SKU], U = null != S && !M.includes(S) && null != T, G = (0, u.N)(a), B = !D && null != G && null != T && b.nG[G.trial_id].skus.includes(T), Z = (0, c.Ng)(), V = null == Z || null == (t = Z.discount) ? true : t.plan_ids.some(e => b.GP[e].skuId === T), F = !D && null != Z && null != T && V;
+  } = (0, h.wD)(), j = D && (0, p.pO)(L) && S === g.h8.CONFIRM && null != x && (null == R ? true : R.productLine) !== E.POd.COLLECTIBLES, k = null != n && null != S, M = [g.h8.SKU_SELECT, g.h8.SELECT_FREE_SKU], U = null != S && !M.includes(S) && null != T, G = (0, u.N)(a), B = !D && null != G && null != T && b.nG[G.trial_id].skus.includes(T), Z = (0, c.Ng)(), F = null == Z || null == (t = Z.discount) ? true : t.plan_ids.some(e => b.GP[e].skuId === T), V = !D && null != Z && null != T && F;
   return i.useMemo(() => {
     if (null == S) return;
     let e = null;
@@ -71,12 +71,12 @@ function I(e) {
       premiumType: b.y7[T],
       onClose: I,
       showTrialBadge: B,
-      showDiscountBadge: F,
+      showDiscountBadge: V,
       isGift: D,
       giftRecipient: L,
       isEligibleForTrial: B,
       enablePremiumBrandRefresh: P,
       isDisplayingWowMomentConfirmation: w
     })), e
-  }, [x, I, C, n, A, T, S, B, F, j, U, k, N, D, L, P, w])
+  }, [x, I, C, n, A, T, S, B, V, j, U, k, N, D, L, P, w])
 }

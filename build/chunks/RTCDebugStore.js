@@ -248,7 +248,7 @@ function Z(e) {
   T = t
 }
 
-function V(e) {
+function F(e) {
   let {
     userId: t,
     context: n,
@@ -257,7 +257,7 @@ function V(e) {
   g.set(O(t, n), r)
 }
 N();
-class F extends(r = Chunk442837.ZP.Store) {
+class V extends(r = Chunk442837.ZP.Store) {
   getSection() {
     return h
   }
@@ -298,8 +298,8 @@ class F extends(r = Chunk442837.ZP.Store) {
     return g.has(n) ? g.get(n) : d.Z.NO_OVERRIDE
   }
 }
-f(F, "displayName", "RTCDebugStore");
-let H = new F(Chunk570140.Z, {
+f(V, "displayName", "RTCDebugStore");
+let H = new V(Chunk570140.Z, {
   RTC_DEBUG_MODAL_OPEN: P,
   RTC_DEBUG_MODAL_CLOSE: w,
   RTC_DEBUG_MODAL_SET_SECTION: L,
@@ -307,7 +307,7 @@ let H = new F(Chunk570140.Z, {
   RTC_DEBUG_MODAL_OPEN_REPLAY_AT_PATH: G,
   RTC_DEBUG_MODAL_UPDATE_VIDEO_OUTPUT: B,
   RTC_DEBUG_SET_RECORDING_FLAG: Z,
-  RTC_DEBUG_SET_SIMULCAST_OVERRIDE: V,
+  RTC_DEBUG_SET_SIMULCAST_OVERRIDE: F,
   VOICE_CHANNEL_SELECT: D,
   RTC_CONNECTION_VIDEO: x,
   MEDIA_ENGINE_CONNECTION_STATS: k

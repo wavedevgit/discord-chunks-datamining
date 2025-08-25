@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   ZP: () => q,
-  jK: () => F,
+  jK: () => V,
   tS: () => H,
   xG: () => W
 }), require("./388685.js"), require("./35282.js"), require("./704826.js"), require("./415506.js"), require("./49124.js"), require("./539854.js");
@@ -96,10 +96,10 @@ async function Z(e) {
   return l()(null != r, "Data is null"), r
 }
 
-function V(e) {
+function F(e) {
   return Z(e)
 }
-var F = function(e) {
+var V = function(e) {
     return e[e.Camera = 0] = "Camera", e[e.Microphone = 1] = "Microphone", e[e.Photo = 2] = "Photo", e[e.InputMonitoring = 3] = "InputMonitoring", e[e.ScreenRecording = 4] = "ScreenRecording", e
   }({}),
   H = function(e) {
@@ -313,7 +313,7 @@ let z = {
     },
     async copyImage(e, t) {
       l()(h.isPlatformEmbedded, "Copy image method called outside native app"), l()("function" == typeof I.clipboard.copyImage, "Copy image not supported");
-      let n = await V(e),
+      let n = await F(e),
         r = W(e, t),
         i = null != r && T.has(r) ? "image.".concat(r) : e;
       I.clipboard.copyImage(E.from(n), i)
@@ -346,7 +346,7 @@ let z = {
         s = "".concat(s, ".").concat(r)
       }
       let u = f.K.get(L),
-        d = await V(e),
+        d = await F(e),
         _ = E.from(d),
         p = await I.fileManager.saveWithDialog(_, s, null != u ? u : true);
       null != p && f.K.set(L, p)

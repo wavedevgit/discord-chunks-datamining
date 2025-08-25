@@ -54,7 +54,7 @@ function Z(e) {
   return e
 }
 
-function V(e, t) {
+function F(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -65,8 +65,8 @@ function V(e, t) {
   return n
 }
 
-function F(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : V(Object(t)).forEach(function(n) {
+function V(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : F(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -224,7 +224,7 @@ function eR(e) {
   W.forEach(t => {
     if (null != c && e.hasOwnProperty(t)) {
       let n = e[t];
-      true !== n && (c = F(Z({}, c), {
+      true !== n && (c = V(Z({}, c), {
         [t]: n
       }))
     }
@@ -257,7 +257,7 @@ function eD(e) {
 }
 
 function ex(e) {
-  ep = F(Z({}, ep), {
+  ep = V(Z({}, ep), {
     [e.invite.code]: eP(e.invite)
   })
 }
@@ -337,14 +337,14 @@ function eZ(e) {
   if (!em(t)) returnfalse
 }
 
-function eV(e) {
+function eF(e) {
   let {
     guildId: t
   } = e;
   if (!em(t)) returnfalse
 }
 
-function eF(e) {
+function eV(e) {
   let {
     guildId: t,
     roleId: n
@@ -436,9 +436,9 @@ function e1(e) {
     guildId: t,
     categoryId: n
   } = e;
-  null != s && t === s.id && (eu = F(Z({}, eu), {
+  null != s && t === s.id && (eu = V(Z({}, eu), {
     secondaryCategoryIds: [...eu.secondaryCategoryIds, n]
-  }), ec = F(Z({}, ec), {
+  }), ec = V(Z({}, ec), {
     secondaryCategoryIds: [...ec.secondaryCategoryIds, n]
   }))
 }
@@ -450,9 +450,9 @@ function e2(e) {
   } = e;
   if (null == s || n !== s.id) return;
   let i = eu.secondaryCategoryIds.indexOf(r);
-  false !== i && ((t = [...eu.secondaryCategoryIds]).splice(i, 1), eu = F(Z({}, eu), {
+  false !== i && ((t = [...eu.secondaryCategoryIds]).splice(i, 1), eu = V(Z({}, eu), {
     secondaryCategoryIds: t
-  })), false !== (i = ec.secondaryCategoryIds.indexOf(r)) && ((t = [...ec.secondaryCategoryIds]).splice(i, 1), ec = F(Z({}, ec), {
+  })), false !== (i = ec.secondaryCategoryIds.indexOf(r)) && ((t = [...ec.secondaryCategoryIds]).splice(i, 1), ec = V(Z({}, ec), {
     secondaryCategoryIds: t
   }))
 }
@@ -476,7 +476,7 @@ function e4(e) {
     socialLinks: l,
     about: c
   } = e;
-  null != s && t === s.id && (eu = F(Z({}, eu), {
+  null != s && t === s.id && (eu = V(Z({}, eu), {
     primaryCategoryId: null != n ? n : eu.primaryCategoryId,
     keywords: null != r ? r : eu.keywords,
     emojiDiscoverabilityEnabled: null != i ? i : eu.emojiDiscoverabilityEnabled,
@@ -657,8 +657,8 @@ let tn = new tt(Chunk570140.Z, __OVERLAY__ ? {} : {
   GUILD_BAN_ADD: ek,
   GUILD_BAN_REMOVE: eM,
   GUILD_ROLE_CREATE: eZ,
-  GUILD_ROLE_UPDATE: eV,
-  GUILD_ROLE_DELETE: eF,
+  GUILD_ROLE_UPDATE: eF,
+  GUILD_ROLE_DELETE: eV,
   GUILD_UPDATE: eU,
   GUILD_DELETE: eG,
   GUILD_PROFILE_FETCH_SUCCESS: e6,

@@ -118,8 +118,8 @@ function Z(e) {
     withMentionPrefix: U = false,
     showPopout: G = false,
     hideGuildTag: Z = false,
-    hideSystemTag: V = false,
-    className: F,
+    hideSystemTag: F = false,
+    className: V,
     onClick: H,
     onContextMenu: Y,
     onPopoutRequestClose: W,
@@ -209,18 +209,18 @@ function Z(e) {
           tag: "span",
           innerRef: J
         }, n, eS), {
-          className: o()(eS.className, D.clickable, F)
+          className: o()(eS.className, D.clickable, V)
         })), eA]
       })
     }
   }) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(d.P3F, k(L({}, eS), {
-      className: o()(eS.className, F)
+      className: o()(eS.className, V)
     })), eA]
   }), eR = null != q ? q[0] : null, eP = null != q ? q[1] : null;
   return (0, r.jsxs)(p.Gt, {
     value: et,
-    children: [null != eR && !V && j ? (0, r.jsxs)(r.Fragment, {
+    children: [null != eR && !F && j ? (0, r.jsxs)(r.Fragment, {
       children: [" ", eR, " "]
     }) : null, eu ? (0, r.jsx)(d.FhE, {
       color: ei,
@@ -233,6 +233,6 @@ function Z(e) {
       userId: a.author.id,
       contextGuildId: ee,
       className: D.clanTagChiplet
-    }), null != eP ? eP : null, null == eR || V || j ? null : eR, null != a && (0, N.f)(a) && ed && z ? (0, r.jsx)(B, {}) : null]
+    }), null != eP ? eP : null, null == eR || F || j ? null : eR, null != a && (0, N.f)(a) && ed && z ? (0, r.jsx)(B, {}) : null]
   })
 }

@@ -155,9 +155,9 @@ function T(e) {
       })]
     })
   }
-  let V = null != (t = T.renderOptionLabel) ? t : Z;
+  let F = null != (t = T.renderOptionLabel) ? t : Z;
 
-  function F() {
+  function V() {
     let e = e => {
         let {
           id: t,
@@ -185,14 +185,14 @@ function T(e) {
     children: [(0, r.jsx)(o.q4e, b({
       value: M,
       onChange: B,
-      options: F(),
+      options: V(),
       isDisabled: !U,
       className: m.selector,
       popoutPosition: "bottom",
-      renderOptionLabel: V,
+      renderOptionLabel: F,
       renderOptionValue: e => {
         let [t] = e;
-        return V(t)
+        return F(t)
       }
     }, T)), !U && G]
   })

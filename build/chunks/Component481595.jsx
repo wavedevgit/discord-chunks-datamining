@@ -68,8 +68,8 @@ function U(e) {
     purchaseState: G,
     paymentSources: B,
     paymentSourceId: Z,
-    setHasAcceptedTerms: V,
-    skusById: F,
+    setHasAcceptedTerms: F,
+    skusById: V,
     skuPricePreviewsById: H,
     selectedSkuId: Y,
     isEmbeddedIAP: W,
@@ -89,7 +89,7 @@ function U(e) {
     hasFetchedPaymentSources: v.Z.hasFetchedPaymentSources
   }));
   o()(null != Y, "Expected selectedSkuId");
-  let er = F[Y],
+  let er = V[Y],
     ei = null == er ? true : er.eligiblePaymentGateways,
     ea = H[Y],
     eo = null != Z ? Z : I.c,
@@ -164,7 +164,7 @@ function U(e) {
       isActive: t,
       ref: n,
       children: (0, r.jsx)(p.Z, {
-        onChange: V,
+        onChange: F,
         forceShow: true,
         showWithdrawalWaiver: eu,
         disabled: ed,

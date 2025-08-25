@@ -99,11 +99,11 @@ function y(e) {
     })
   }, Z = null != E ? E : B;
   i()(I, "Step should be set here");
-  let V = (0, a.Z)(() => Date.now(), [I]),
-    F = (0, a.Z)(() => null != y && null == x.current ? j && y === f.h8.CREDIT_CARD_INFORMATION ? f.h8.PAYMENT_ELEMENT : y : f.h8.PAYMENT_TYPE, [y, x.current, j]);
+  let F = (0, a.Z)(() => Date.now(), [I]),
+    V = (0, a.Z)(() => null != y && null == x.current ? j && y === f.h8.CREDIT_CARD_INFORMATION ? f.h8.PAYMENT_ELEMENT : y : f.h8.PAYMENT_TYPE, [y, x.current, j]);
   return (0, s.vP)({
     paymentModalArgs: M,
-    initialStep: F,
+    initialStep: V,
     prependSteps: [f.h8.PROMOTION_INFO],
     appendSteps: [f.h8.REVIEW, f.h8.CONFIRM],
     breadcrumpSteps: r,
@@ -126,7 +126,7 @@ function y(e) {
       l.default.track(p.rMx.PAYMENT_FLOW_STEP, b(g({}, t), {
         from_step: n,
         to_step: r,
-        step_duration_ms: i - V,
+        step_duration_ms: i - F,
         flow_duration_ms: i - v.startTime
       }))
     },

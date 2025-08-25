@@ -82,10 +82,10 @@ function p(e) {
     gridNotice: k,
     renderHeader: M,
     renderUpsell: U
-  } = e, G = i.useRef(null), B = i.useRef(null), Z = i.useRef(null), V = 0 === t.length, F = (0, a.Iu)(e => e.searchQuery), H = f.useStore(e => e.inspectedExpressionPosition), Y = (0, o.ep)({
+  } = e, G = i.useRef(null), B = i.useRef(null), Z = i.useRef(null), F = 0 === t.length, V = (0, a.Iu)(e => e.searchQuery), H = f.useStore(e => e.inspectedExpressionPosition), Y = (0, o.ep)({
     gridWrapperRef: G,
     containerWidth: u,
-    showingEmptyState: V
+    showingEmptyState: F
   }), {
     expressionsGrid: W,
     rowCount: K,
@@ -123,8 +123,8 @@ function p(e) {
     return null == T ? true : T(null == W || null == (e = W[H.rowIndex]) ? true : e[H.columnIndex])
   }, [W, H.columnIndex, H.rowIndex, T]);
   i.useEffect(() => {
-    h(F)
-  }, [h, F]), i.useEffect(() => {
+    h(V)
+  }, [h, V]), i.useEffect(() => {
     var e, t;
     f.setBottomPosition(null != (t = null == (e = G.current) ? true : e.getBoundingClientRect().bottom) ? t : null)
   }), i.useEffect(() => f.resetStoreState, [f.resetStoreState]), i.useLayoutEffect(() => {
@@ -147,7 +147,7 @@ function p(e) {
     children: [null != M ? M(es) : (0, r.jsxs)("div", {
       className: c.header,
       children: [" ", es, " "]
-    }), V && null != b ? b(c.emptyState) : (0, r.jsxs)(r.Fragment, {
+    }), F && null != b ? b(c.emptyState) : (0, r.jsxs)(r.Fragment, {
       children: [A(B), null != k && (0, r.jsx)("div", {
         className: c.gridNoticeWrapper,
         children: k

@@ -50,9 +50,9 @@ function Z(e) {
     currentUser: n,
     stream: i,
     className: Z,
-    onClose: V
+    onClose: F
   } = e, {
-    themeType: F,
+    themeType: V,
     theme: H
   } = (0, C.z)(), Y = (0, o.e7)([O.Z], () => O.Z.getGuild(null == i ? true : i.guildId)), W = (0, o.e7)([y.Z], () => y.Z.getChannel(null == i ? true : i.channelId)), K = (0, o.Wu)([T.ZP], () => null != W ? T.ZP.getVoiceStatesForChannel(W).map(e => {
     let {
@@ -79,7 +79,7 @@ function Z(e) {
       let e = e => {
         e.stopPropagation(), ee && (X({
           action: "PRESS_IMAGE"
-        }), l.default.selectVoiceChannel(i.channelId), (0, c.iV)(i), null == V || V())
+        }), l.default.selectVoiceChannel(i.channelId), (0, c.iV)(i), null == F || F())
       };
       return null == ea && $ ? (0, r.jsx)("div", {
         className: U.preview,
@@ -92,7 +92,7 @@ function Z(e) {
         children: [(0, r.jsx)("img", {
           alt: "",
           src: H === L.BRd.LIGHT ? B : G
-        }), F !== j.l.MODAL && F !== j.l.MODAL_V2 && (0, r.jsxs)(r.Fragment, {
+        }), V !== j.l.MODAL && V !== j.l.MODAL_V2 && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(s.Text, {
             className: U.overlayText,
             variant: "text-sm/medium",
@@ -112,7 +112,7 @@ function Z(e) {
           alt: "",
           src: ea,
           className: U.image
-        }), F !== j.l.MODAL && F !== j.l.MODAL_V2 && (0, r.jsxs)(r.Fragment, {
+        }), V !== j.l.MODAL && V !== j.l.MODAL_V2 && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(s.Text, {
             className: U.overlayText,
             variant: "text-sm/medium",
@@ -126,13 +126,13 @@ function Z(e) {
         })]
       })
     },
-    es = () => F !== j.l.MODAL && F !== j.l.MODAL_V2 ? null : (0, r.jsxs)("div", {
+    es = () => V !== j.l.MODAL && V !== j.l.MODAL_V2 ? null : (0, r.jsxs)("div", {
       className: M.details,
       children: [(0, r.jsx)(P.Z, {
         channel: W,
         guild: Y,
         onAction: X,
-        onClose: V
+        onClose: F
       }), (0, r.jsx)(g.Z, {
         users: K,
         guildId: Y.id,
@@ -148,21 +148,21 @@ function Z(e) {
         disableUserPopout: e => e === t.id,
         overflowCountColor: "text-muted",
         "aria-label": k.intl.string(k.t.jNqDh4)
-      }), F === j.l.MODAL_V2 && ec()]
+      }), V === j.l.MODAL_V2 && ec()]
     }),
-    el = () => F === j.l.MODAL || F === j.l.MODAL_V2 ? null : (0, r.jsx)(w.Z, {
+    el = () => V === j.l.MODAL || V === j.l.MODAL_V2 ? null : (0, r.jsx)(w.Z, {
       user: t,
       guild: Y,
       channel: W,
       onAction: X,
-      onClose: V
+      onClose: F
     }),
     ec = () => t.id === n.id ? null : (0, r.jsx)("div", {
       className: M.actions,
       children: (0, r.jsx)(D.Z, {
         channel: W,
         onAction: X,
-        onClose: V
+        onClose: F
       })
     }),
     eu = null != z ? k.intl.formatToPlainString(k.t["4CQq9f"], {
@@ -174,7 +174,7 @@ function Z(e) {
       ref: Q,
       className: Z,
       onAction: X,
-      onClose: V,
+      onClose: F,
       "aria-label": eu,
       children: [(0, r.jsx)(R.Z, {
         text: eu,
@@ -184,15 +184,15 @@ function Z(e) {
         contextMenu: (0, r.jsx)(x.Z, {
           display: "live",
           user: t,
-          onClose: V
+          onClose: F
         })
       }), (0, r.jsxs)("div", {
         className: M.body,
         children: [(0, r.jsxs)("div", {
           className: M.content,
-          children: [eo(), es(), F === j.l.MODAL && ec()]
+          children: [eo(), es(), V === j.l.MODAL && ec()]
         }), el()]
-      }), F !== j.l.MODAL && F !== j.l.MODAL_V2 && ec()]
+      }), V !== j.l.MODAL && V !== j.l.MODAL_V2 && ec()]
     })
   })
 }

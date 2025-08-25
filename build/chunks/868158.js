@@ -247,7 +247,7 @@ function B(e) {
       items: e.stickers
     },
     threads: null != (i = null == (r = e.threads) ? true : r.map(t => (0, m.q_)(t, e.id))) ? i : [],
-    threadMessages: V(e.threads),
+    threadMessages: F(e.threads),
     channels: {
       op: "full_sync",
       items: e.channels.map(t => (t.guild_id = e.id, (0, m.q_)(t, e.id)))
@@ -278,7 +278,7 @@ function B(e) {
     stickers: G(c.stickers, e.partial_updates.stickers, e.partial_updates.deleted_sticker_ids),
     unableToSyncDeletes: e.unable_to_sync_deletes,
     threads: null != (l = null == (n = e.threads) ? true : n.map(t => (0, m.q_)(t, e.id))) ? l : [],
-    threadMessages: V(e.threads),
+    threadMessages: F(e.threads),
     version: e.version,
     hasThreadsSubscription: e.has_threads_subscription
   }
@@ -298,7 +298,7 @@ function Z(e, t) {
     roles: e.roles,
     stage_instances: e.stage_instances,
     threads: null != (a = null == (i = e.threads) ? true : i.map(t => (0, m.q_)(t, e.id))) ? a : [],
-    threadMessages: V(e.threads),
+    threadMessages: F(e.threads),
     presences: e.presences,
     activity_instances: e.activity_instances,
     voice_states: e.voice_states,
@@ -341,14 +341,14 @@ function Z(e, t) {
     stickers: G(t.stickers, e.partial_updates.stickers, e.partial_updates.deleted_sticker_ids),
     unableToSyncDeletes: e.unable_to_sync_deletes,
     threads: null != (c = null == (r = e.threads) ? true : r.map(t => (0, m.q_)(t, e.id))) ? c : [],
-    threadMessages: V(e.threads),
+    threadMessages: F(e.threads),
     voice_states: e.voice_states,
     version: e.version,
     hasThreadsSubscription: e.has_threads_subscription
   }
 }
 
-function V(e) {
+function F(e) {
   let t = [];
   if (null != e)
     for (let n of e) null != n.most_recent_message && t.push(n.most_recent_message);

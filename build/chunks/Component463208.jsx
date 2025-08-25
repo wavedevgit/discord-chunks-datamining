@@ -189,7 +189,7 @@ function T(e) {
     defaultDirty: N
   }), {
     setShouldValidate: Z
-  } = B, V = "object" == typeof R && "type" in R && "tags" === R.type, F = e => {
+  } = B, F = "object" == typeof R && "type" in R && "tags" === R.type, V = e => {
     var t, n;
     let r = e.currentTarget.value;
     null == (t = U.onChange) || t.call(U, r, _), Z(true), null == (n = G.setHasValue) || n.call(G, "" !== r)
@@ -232,7 +232,7 @@ function T(e) {
     className: o()(p.container, p[D], {
       [p.hasLeading]: null != X,
       [p.hasTrailing]: null != q,
-      [p.hasTags]: V
+      [p.hasTags]: F
     }),
     children: [X, (0, r.jsx)(s.t, E(m({
       ringTarget: K
@@ -250,7 +250,7 @@ function T(e) {
         defaultValue: S
       }, U), {
         "aria-labelledby": null != (n = U["aria-labelledby"]) ? n : G.titleId,
-        onChange: F,
+        onChange: V,
         onBlur: Y,
         onFocus: H,
         ref: c

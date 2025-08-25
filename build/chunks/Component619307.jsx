@@ -184,8 +184,8 @@ function x(e) {
     clear: G,
     hideIcon: B = false,
     isProcessing: Z = false,
-    "aria-label": V,
-    "aria-labelledby": F
+    "aria-label": F,
+    "aria-labelledby": V
   } = e, [H, Y] = i.useState(false), {
     ref: W,
     width: K,
@@ -283,8 +283,8 @@ function x(e) {
         }),
         "aria-haspopup": "listbox",
         "aria-expanded": d,
-        "aria-label": V,
-        "aria-labelledby": F,
+        "aria-label": F,
+        "aria-labelledby": V,
         children: [ee.length > 0 ? (0, r.jsx)(_.Text, {
           className: b.value,
           variant: "text-md/medium",

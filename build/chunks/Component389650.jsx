@@ -79,13 +79,13 @@ function Z(e, t) {
   }), e
 }
 
-function V(e) {
+function F(e) {
   let {
     children: t
   } = e;
   return t([g.Q2.MESSAGE, g.Q2.NAVIGATION, g.Q2.DND, g.Q2.CHAT, g.Q2.VOICE_AND_VIDEO, g.Q2.MISCELLANEOUS])
 }
-let F = l()((0, Chunk612226.Rv)()).filter(e => e.description !== L.intl.string(L.t.HnNtEB)).groupBy(e => e.group).value();
+let V = l()((0, Chunk612226.Rv)()).filter(e => e.description !== L.intl.string(L.t.HnNtEB)).groupBy(e => e.group).value();
 class H extends Chunk647438.PureComponent {
   renderMessage() {
     let {
@@ -369,12 +369,12 @@ class Y extends Chunk647438.PureComponent {
               className: Chunk894462.__invalid_defaultKeybindShortcut
             })
           })]
-        }), (0, Chunk951288.jsx)(Chunk481060.$i$, {}), (0, Chunk951288.jsx)(V, {
+        }), (0, Chunk951288.jsx)(Chunk481060.$i$, {}), (0, Chunk951288.jsx)(F, {
           children: e => (0, r.jsx)(r.Fragment, {
             children: e.map((e, t) => {
               let n = (0, g.UD)(e),
                 a = (0, g.U6)(e),
-                s = F[e];
+                s = V[e];
               return (0, r.jsxs)("div", {
                 className: j.defaultKeybindGroup,
                 children: [(0, r.jsx)(f.X6q, {

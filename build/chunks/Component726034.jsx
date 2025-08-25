@@ -64,7 +64,7 @@ function Z(e) {
   return e
 }
 
-function V(e, t) {
+function F(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -75,8 +75,8 @@ function V(e, t) {
   return n
 }
 
-function F(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : V(Object(t)).forEach(function(n) {
+function V(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : F(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -232,7 +232,7 @@ function Q(e) {
   }, []);
   return (0, r.jsx)(p.ua7, {
     text: U.intl.string(M.default.c9MBEB),
-    children: e => "with-text" === t ? (0, r.jsx)(c.z, F(Z({}, e), {
+    children: e => "with-text" === t ? (0, r.jsx)(c.z, V(Z({}, e), {
       variant: "secondary",
       onClick: n,
       icon: p.T$Z,
@@ -240,7 +240,7 @@ function Q(e) {
       fullWidth: true
     })) : (0, r.jsx)("div", {
       className: G.surpriseMeButton,
-      children: (0, r.jsx)(d.h, F(Z({}, e), {
+      children: (0, r.jsx)(d.h, V(Z({}, e), {
         variant: "icon-only",
         size: "md",
         onClick: n,
@@ -260,7 +260,7 @@ function J(e) {
   return (0, r.jsx)(p.ua7, {
     text: U.intl.string(M.default.SFyHIC),
     shouldShow: n,
-    children: e => (0, r.jsx)(c.z, F(Z({}, e), {
+    children: e => (0, r.jsx)(c.z, V(Z({}, e), {
       variant: "primary",
       onClick: t,
       disabled: n,
@@ -352,7 +352,7 @@ function et(e) {
     setGradientAngle: N
   } = (0, C.Ig)(), [L, k] = i.useState(null != (t = _[0]) ? t : C.Dp), M = (0, s.e7)([A.Z], () => A.Z.theme), B = (0, O.Nj)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), {
     analyticsLocations: Z
-  } = (0, b.ZP)(E.Z.CUSTOM_THEMES_EDITOR), V = async () => {
+  } = (0, b.ZP)(E.Z.CUSTOM_THEMES_EDITOR), F = async () => {
     f.current = true, await (0, h.ZI)({
       theme: M,
       customUserThemeSettings: {
@@ -362,7 +362,7 @@ function et(e) {
         baseMix: m
       }
     }), (0, w.u7)(_, m, v, M, Z), null == a || a(j.L.TAKE_ACTION), B || (0, O.Q3)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), (0, y.Ll)(), (0, S.UD)()
-  }, F = () => {
+  }, V = () => {
     d(R._m.RESET_BUTTON), (0, w.uf)()
   }, H = _.length > 0;
   return (i.useEffect(() => () => {
@@ -397,17 +397,17 @@ function et(e) {
             }
           }), (0, r.jsx)(c.z, {
             variant: "secondary",
-            onClick: F,
+            onClick: V,
             icon: p.Oe7,
             text: U.intl.string(U.t.yBZMsb),
             fullWidth: true
           })]
         })
       }), o ? (0, r.jsx)($, {
-        onSaveTheme: V,
+        onSaveTheme: F,
         canApply: H
       }) : (0, r.jsx)(ee, {
-        onSaveTheme: V,
+        onSaveTheme: F,
         canApply: H,
         metadata: n
       })]

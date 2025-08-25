@@ -2,7 +2,7 @@
 /** chunk id: 553393, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => F
+  Z: () => V
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -67,14 +67,14 @@ function Z(e, t) {
   return null != e && null != t && (0, g.p9)(t, v.Z, y.Z, O.Z, m.Z)[0]
 }
 
-function V(e) {
+function F(e) {
   var t, m, g, y, O;
   let {
     quest: v,
     memberListItemRef: C,
     applicationStream: k,
-    position: V,
-    closePopout: F,
+    position: F,
+    closePopout: V,
     updatePosition: H,
     impressionRef: Y,
     name: W
@@ -91,10 +91,10 @@ function V(e) {
   } = (0, _.ZP)(), [ei, ea] = i.useState(et), eo = (0, p.Aq)(), es = (0, o.eg)();
   i.useEffect(() => {
     let e = es.current;
-    return null == e || e.addEventListener("scroll", F), () => {
-      null == e || e.removeEventListener("scroll", F)
+    return null == e || e.addEventListener("scroll", V), () => {
+      null == e || e.removeEventListener("scroll", V)
     }
-  }, [F, es]), i.useEffect(() => {
+  }, [V, es]), i.useEffect(() => {
     let e = es.current,
       t = C.current;
     if (null == e || null == t) return;
@@ -130,7 +130,7 @@ function V(e) {
     eu = () => {
       eo.dispatch(D.CkL.POPOUT_CLOSE)
     },
-    ed = "top" === V ? "".concat(U, " ").concat(U, " 0 0") : "0 0 ".concat(U, " ").concat(U);
+    ed = "top" === F ? "".concat(U, " ").concat(U, " 0 0") : "0 0 ".concat(U, " ").concat(U);
   if (null == v || q || X && !Z(k, K)) return null;
   let ef = () => {
       (0, I._3)({
@@ -288,13 +288,13 @@ function V(e) {
   })
 }
 
-function F(e) {
+function V(e) {
   return null == e.quest || e.isQuestEnrollmentBlocked ? null : (0, r.jsx)(C.A, {
     questOrQuests: e.quest,
     questContent: S.jn.MEMBERS_LIST,
     trackGuildAndChannelMetadata: true,
     sourceQuestContent: S.jn.MEMBERS_LIST,
-    children: t => (0, r.jsx)(V, M({
+    children: t => (0, r.jsx)(F, M({
       impressionRef: t
     }, e))
   })

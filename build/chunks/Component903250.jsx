@@ -42,9 +42,9 @@ let w = (e, t) => {
       videoRef: x
     } = e, {
       analyticsLocations: L
-    } = (0, f.ZP)(d.Z.PREMIUM_MARKETING_HERO_CTA), j = (0, g._O)(), k = (0, m.Nx)(), M = (0, s.e7)([h.Z], () => h.Z.affinities), U = (0, b.Z)(), G = null != U, B = w ? l.Tt.WHITE : l.Tt.BRAND, Z = M.length > 0, V = (0, E.ZP)({
+    } = (0, f.ZP)(d.Z.PREMIUM_MARKETING_HERO_CTA), j = (0, g._O)(), k = (0, m.Nx)(), M = (0, s.e7)([h.Z], () => h.Z.affinities), U = (0, b.Z)(), G = null != U, B = w ? l.Tt.WHITE : l.Tt.BRAND, Z = M.length > 0, F = (0, E.ZP)({
       location: "HeroHeading"
-    }) ? A.intl.string(A.t["EW+VIS"]) : A.intl.string(A.t.YCZldH), F = (0, p.rO)(), H = (0, s.e7)([u.Z], () => u.Z.useReducedMotion);
+    }) ? A.intl.string(A.t["EW+VIS"]) : A.intl.string(A.t.YCZldH), V = (0, p.rO)(), H = (0, s.e7)([u.Z], () => u.Z.useReducedMotion);
     return (0, r.jsx)(f.Gt, {
       value: L,
       children: (0, r.jsxs)("div", {
@@ -59,7 +59,7 @@ let w = (e, t) => {
               className: C.marketingPageHeading,
               variant: "display-sm",
               color: "header-primary",
-              children: V
+              children: F
             }), G ? (0, r.jsx)(v.Z, {
               referrer: U
             }) : Z && (0, r.jsx)("div", {
@@ -104,8 +104,8 @@ let w = (e, t) => {
             className: C.heroHeadingV2Art,
             ref: x,
             children: (0, r.jsx)("source", {
-              src: F ? N.Z : P.Z,
-              type: F ? S.m.MP4 : S.m.WEBM
+              src: V ? N.Z : P.Z,
+              type: V ? S.m.MP4 : S.m.WEBM
             })
           })
         })]

@@ -123,7 +123,7 @@ function B(e) {
 
 function Z(e, t) {}
 
-function V(e, t, n) {
+function F(e, t, n) {
   return B(t), t.lowImportanceMentionCount = 0, t.highImportanceMentionCount = 0, d.default.forEach(t.mentionCounts, e => {
     let {
       count: n,
@@ -133,7 +133,7 @@ function V(e, t, n) {
   }), (t.unread !== n.unread || t.lowImportanceMentionCount !== n.lowImportanceMentionCount || t.highImportanceMentionCount !== n.highImportanceMentionCount) && (C[null != e ? e : A] = t, null != e && (t.unread ? N.add(e) : N.delete(e)), R++, D(null != e ? e : A), Z(t, n), true)
 }
 
-function F(e, t) {
+function V(e, t) {
   let n = M(e),
     r = w(n),
     i = G(n, r),
@@ -152,14 +152,14 @@ function F(e, t) {
     if (!(null != e && !t.includes(e.id) && g.ZP.hasUnread(e.id) && L(e))) return Y(n);
     null != n && N.add(n), i.unreadByType[I.W.CHANNEL] = true
   }
-  return V(n, i, r)
+  return F(n, i, r)
 }
 
 function H(e, t) {
   if (null == e) return;
   let n = w(e),
     r = G(e, n);
-  return r.unreadByType[I.W.GUILD_EVENT] = U(e, t), V(e, r, n)
+  return r.unreadByType[I.W.GUILD_EVENT] = U(e, t), F(e, r, n)
 }
 
 function Y(e, t) {
@@ -272,12 +272,12 @@ function Q(e) {
       guild_id: n
     }
   } = e;
-  return F(n, [t])
+  return V(n, [t])
 }
 
 function J() {
   let e = Chunk592125.Z.getChannel(Chunk944486.Z.getChannelId());
-  return null != module && F(module.getGuildId(), [module.id])
+  return null != module && V(module.getGuildId(), [module.id])
 }
 
 function $(e) {
@@ -292,7 +292,7 @@ function ee(e) {
   let {
     channelId: t
   } = e, n = _.Z.getChannel(t);
-  return null != n && F(n.getGuildId(), [n.id])
+  return null != n && V(n.getGuildId(), [n.id])
 }
 
 function et(e) {
@@ -304,7 +304,7 @@ function et(e) {
     let e = w(n.guild_id);
     if (((n.isThread() ? !l.Z.hasJoined(n.id) || l.Z.isMuted(n.id) : b.ZP.isGuildOrCategoryOrChannelMuted(n.guild_id, n.id)) || e.unreadByType[I.W.CHANNEL]) && 0 === g.ZP.getMentionCount(t)) returnfalse
   }
-  return F(n.getGuildId(), [n.id])
+  return V(n.getGuildId(), [n.id])
 }
 
 function en(e) {
@@ -312,21 +312,21 @@ function en(e) {
     channelId: t,
     guildId: n
   } = e;
-  return n !== O.I_8 && null != t && F(n, [t])
+  return n !== O.I_8 && null != t && V(n, [t])
 }
 
 function er(e) {
   let {
     channel: t
   } = e;
-  return F(t.getGuildId(), [t.id])
+  return V(t.getGuildId(), [t.id])
 }
 
 function ei(e) {
   let {
     channels: t
   } = e;
-  return i()(t).groupBy(e => e.getGuildId()).reduce((e, t, n) => F(n, t.map(e => e.id)) || e, false)
+  return i()(t).groupBy(e => e.getGuildId()).reduce((e, t, n) => V(n, t.map(e => e.id)) || e, false)
 }
 
 function ea(e) {
@@ -341,14 +341,14 @@ function ea(e) {
   }).filter(e => null != _.Z.getChannel(e)).groupBy(e => {
     var t;
     return null == (t = _.Z.getChannel(e)) ? true : t.getGuildId()
-  }).reduce((e, t, n) => F(n, t) || e, false)
+  }).reduce((e, t, n) => V(n, t) || e, false)
 }
 
 function eo(e) {
   let {
     channel: t
   } = e;
-  return F(t.getGuildId(), [t.id, t.parent_id])
+  return V(t.getGuildId(), [t.id, t.parent_id])
 }
 
 function es(e) {
@@ -378,11 +378,11 @@ function eu(e) {
     id: t,
     guildId: n
   } = e;
-  return F(n, [t])
+  return V(n, [t])
 }
 
 function ed(e) {
-  return (0, c.s)(e) && F(e.guildId, [e.id])
+  return (0, c.s)(e) && V(e.guildId, [e.id])
 }
 
 function ef(e) {
@@ -390,11 +390,11 @@ function ef(e) {
     threads: t,
     guildId: n
   } = e;
-  return F(n, t.filter(e => l.Z.hasJoined(e.id)).map(e => e.id))
+  return V(n, t.filter(e => l.Z.hasJoined(e.id)).map(e => e.id))
 }
 
 function e_(e) {
-  return e.channels.length > 0 && F(e.guildId, e.channels.map(e => e.id))
+  return e.channels.length > 0 && V(e.guildId, e.channels.map(e => e.id))
 }
 
 function ep(e) {
@@ -438,7 +438,7 @@ function eb(e) {
   } = e;
   new Set(t.map(e => e.channel_id)).forEach(e => {
     let t = _.Z.getChannel(e);
-    null != t && F(t.getGuildId(), [e])
+    null != t && V(t.getGuildId(), [e])
   })
 }
 class ey extends Chunk750041.Z {

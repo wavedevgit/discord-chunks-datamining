@@ -50,8 +50,8 @@ let w = {},
   G = Chunk709054.default.fromTimestamp(Date.now()),
   B = true,
   Z = null,
-  V = null,
-  F = true;
+  F = null,
+  V = true;
 
 function H() {
   let e = Chunk771845.ZP.getFlattenedGuildIds().flatMap(e => g.ZP.getSelectableChannelIds(e)),
@@ -128,7 +128,7 @@ function K() {
 }
 
 function z() {
-  w = {}, D = null, x = [], L = new Chunk810457.Z, j = false, k = false, M = false, G = Chunk709054.default.fromTimestamp(Date.now()), B = true, U = false, V = null, Z = null
+  w = {}, D = null, x = [], L = new Chunk810457.Z, j = false, k = false, M = false, G = Chunk709054.default.fromTimestamp(Date.now()), B = true, U = false, F = null, Z = null
 }
 
 function q() {
@@ -243,7 +243,7 @@ function ea(e) {
     hasMoreToLoad: n,
     analyticsPayload: r
   } = e;
-  j = false, t ? U = true : (null != n && (B = n), M = true), V = null != r ? r : null
+  j = false, t ? U = true : (null != n && (B = n), M = true), F = null != r ? r : null
 }
 
 function eo(e) {
@@ -258,7 +258,7 @@ function eo(e) {
 }
 
 function es() {
-  j = false, V = null, k = true
+  j = false, F = null, k = true
 }
 
 function el(e) {
@@ -346,7 +346,7 @@ function eg(e) {
   let {
     navOnClick: t
   } = e;
-  F = null == t || t
+  V = null == t || t
 }
 class eE extends(r = Chunk442837.ZP.Store) {
   initialize() {
@@ -391,11 +391,11 @@ class eE extends(r = Chunk442837.ZP.Store) {
     return Z
   }
   get currentRequestAnalyticsPayload() {
-    return V
+    return F
   }
   getDevOverrides() {
     return {
-      navOnClick: F
+      navOnClick: V
     }
   }
 }

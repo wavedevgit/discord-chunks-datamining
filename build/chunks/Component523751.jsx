@@ -233,8 +233,8 @@ function j(e) {
   let {
     IconComponent: B,
     backgroundDarkColor: Z,
-    backgroundLightColor: V,
-    foregroundDarkColor: F,
+    backgroundLightColor: F,
+    foregroundDarkColor: V,
     foregroundLightColor: H,
     premiumBackgroundColor: Y,
     premiumForegroundColor: W,
@@ -242,8 +242,8 @@ function j(e) {
   } = D[M];
   if (null == B) return null;
   k.premium && (t = W, n = Y);
-  let z = (0, c.wj)(j) ? F : H,
-    q = (0, c.wj)(j) ? Z : V;
+  let z = (0, c.wj)(j) ? V : H,
+    q = (0, c.wj)(j) ? Z : F;
   t = null != t ? t : z, n = null != n ? n : q;
   let X = Math.floor(.75 * w) - (null != K ? K : 0);
   return (0, r.jsx)(u.ua7, {

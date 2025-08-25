@@ -2,64 +2,51 @@
 /** chunk id: 167540, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => E
-}), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
-  Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
-  Chunk442837 = require("./442837.js"),
-  Chunk481060 = require("./481060.js"),
-  Chunk921801 = require("./921801.js"),
+  Z: () => y
+});
+var Chunk951288 = require("./951288.js");
+require("./647438.js");
+var Chunk100527 = require("./100527.js"),
+  Chunk906732 = require("./906732.jsx"),
   Chunk131951 = require("./131951.js"),
-  Chunk962100 = require("./962100.jsx"),
-  Chunk445817 = require("./445817.jsx"),
+  Chunk603963 = require("./603963.jsx"),
+  Chunk738486 = require("./738486.jsx"),
+  Chunk359138 = require("./359138.jsx"),
+  Chunk417420 = require("./417420.jsx"),
+  Chunk973465 = require("./973465.jsx"),
+  Chunk546997 = require("./546997.jsx"),
+  Chunk186934 = require("./186934.jsx"),
+  Chunk520384 = require("./520384.jsx"),
+  Chunk154784 = require("./154784.jsx"),
+  Chunk267006 = require("./267006.jsx"),
   Chunk726985 = require("./726985.js"),
   Chunk65154 = require("./65154.js"),
-  Chunk388032 = require("./388032.jsx"),
-  Chunk197571 = require("./197571.js");
+  Chunk388032 = require("./388032.jsx");
 
-function g() {
-  return (0, Chunk951288.jsx)(Chunk481060.ToO, {
-    type: Chunk481060.sje.PRIMARY,
-    title: Chunk388032.intl.string(Chunk388032.t.XLw6FB),
-    body: Chunk388032.intl.string(Chunk388032.t.wVjKGh),
-    button: (0, Chunk951288.jsx)("div", {
-      "data-button-hoisted-classname-wrapper": true,
-      className: Chunk197571.marginTop20,
-      children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
-        variant: "primary",
-        size: "sm",
-        text: Chunk388032.intl.string(Chunk388032.t.BK8LKy),
-        onClick: () => (0, Chunk962100.y)("Video unsupported browser")
+function y() {
+  let e = Chunk131951.Z.supports(Chunk65154.AN.SIDECHAIN_COMPRESSION),
+    {
+      analyticsLocations: t
+    } = (0, Chunk906732.ZP)([Chunk100527.Z.USER_SETTINGS_VIDEO_TAB]);
+  return (0, Chunk951288.jsxs)(Chunk906732.Gt, {
+    value: exports,
+    children: [(0, Chunk951288.jsxs)(Chunk603963.Z, {
+      webSetting: Chunk726985.s6.VOICE_AND_VIDEO_VIDEO,
+      children: [(0, Chunk951288.jsxs)(Chunk738486.Z, {
+        children: [(0, Chunk951288.jsx)(Chunk359138.Z, {}), (0, Chunk951288.jsx)(Chunk417420.Z, {}), (0, Chunk951288.jsx)(Chunk973465.Z, {})]
+      }), (0, Chunk951288.jsx)(Chunk154784.Z, {})]
+    }), (0, Chunk951288.jsx)(Chunk603963.Z, {
+      title: Chunk388032.intl.string(Chunk388032.t.KDdjoq),
+      webSetting: Chunk726985.s6.VOICE_AND_VIDEO_VIDEO_STREAMING,
+      children: (0, Chunk951288.jsxs)(Chunk738486.Z, {
+        children: [(0, Chunk951288.jsx)(Chunk520384.Z, {}), module && (0, Chunk951288.jsx)(Chunk186934.Z, {}), (0, Chunk951288.jsx)(Chunk546997.Z, {})]
       })
-    })
-  })
-}
-
-function E(e) {
-  let {
-    refreshStyles: t = false
-  } = e, n = (0, s.e7)([u.Z], () => u.Z.supports(p.AN.VIDEO)), [a, d] = i.useState(false), E = (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(c.F, {
-      setting: _.s6.VOICE_AND_VIDEO_VIDEO_CAMERA,
-      children: (0, r.jsx)(f.Z, {
-        previewEnabled: a,
-        onEnablePreview: () => d(true),
-        onCancelPreview: () => d(false)
+    }), (0, Chunk951288.jsx)(Chunk603963.Z, {
+      title: Chunk388032.intl.string(Chunk388032.t["8/udY2"]),
+      webSetting: Chunk726985.s6.VOICE_AND_VIDEO_VIDEO_ADVANCED,
+      children: (0, Chunk951288.jsx)(Chunk738486.Z, {
+        children: (0, Chunk951288.jsx)(Chunk267006.Z, {})
       })
-    }), !n && (0, r.jsx)(g, {})]
-  });
-  return t ? E : (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(l.y5t, {
-      component: (0, r.jsx)(l.vwX, {
-        tag: l.RB0.H1,
-        className: m.marginBottom20,
-        children: h.intl.string(h.t.LKzQSE)
-      }),
-      children: E
-    }), (0, r.jsx)(l.$i$, {
-      className: o()(m.marginBottom40, m.marginTop40)
     })]
   })
 }

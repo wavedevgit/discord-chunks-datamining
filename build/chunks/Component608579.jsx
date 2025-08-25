@@ -86,9 +86,9 @@ function j(e) {
     giftMessage: G,
     giftingOrigin: B,
     analyticsLocations: Z,
-    returnRef: V
+    returnRef: F
   } = e, {
-    analyticsLocations: F
+    analyticsLocations: V
   } = (0, d.ZP)([...Z, u.Z.COLLECTIBLES_PAYMENT_MODAL]), H = i.useRef(new s.qA), [Y, W] = i.useState(null), [K, z] = i.useState(false), q = i.useMemo(() => (0, C.UY)({
     purchaseType: N.o8.FIAT,
     skuId: k
@@ -110,16 +110,16 @@ function j(e) {
     key: g.h8.CONFIRM,
     renderStep: e => (0, r.jsx)(I.x, L(D({}, e), {
       confettiCanvas: Y,
-      analyticsLocations: F,
+      analyticsLocations: V,
       hideConfetti: null != q
     })),
     options: {
       bodyClassName: P.modalOverrideBody,
       sliderBodyClassName: P.modalOverrideSliderBody
     }
-  }], [F, Y, q, M]);
+  }], [V, Y, q, M]);
   return (0, r.jsxs)(d.Gt, {
-    value: F,
+    value: V,
     children: [(0, r.jsx)(s.O_, {
       ref: W,
       className: P.confettiCanvas,
@@ -150,10 +150,10 @@ function j(e) {
             applicationId: A.XAJ,
             skuId: J,
             initialPlanId: null,
-            analyticsLocations: F,
+            analyticsLocations: V,
             transitionState: x,
             renderHeader: en,
-            returnRef: V,
+            returnRef: F,
             onStepChange: w,
             skipConfirm: $,
             hideShadow: true

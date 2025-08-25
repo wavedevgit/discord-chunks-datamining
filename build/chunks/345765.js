@@ -2,7 +2,7 @@
 /** chunk id: 345765, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => F
+  Z: () => V
 }), require("./388685.js");
 var Chunk392711 = require("./392711.js"),
   Chunk126313 = require("./126313.js"),
@@ -175,7 +175,7 @@ function Z() {
     feature: Chunk126313.L.GAME_PROFILE
   })
 }
-class V extends Chunk147913.Z {
+class F extends Chunk147913.Z {
   constructor(...e) {
     super(...e), b(this, "actions", {
       POST_CONNECTION_OPEN: k,
@@ -190,4 +190,4 @@ class V extends Chunk147913.Z {
     })
   }
 }
-let F = new V
+let V = new F

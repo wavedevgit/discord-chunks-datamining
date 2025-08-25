@@ -213,18 +213,18 @@ function Z(e) {
       })
     }, [o, s, M, u]),
     Z = o.state === w.r2o.ACCEPTING,
-    F = null != O;
+    V = null != O;
   if (null == O) {
     if (null == o.guild) return (0, r.jsx)(P.Z, {});
     O = (0, R.Qs)(o.guild)
   }
-  let H = F && !k || F && N;
-  return (F && N && (a = x.intl.string(x.t.wJNK8P)), k || (a = x.intl.string(x.t.hHGrW1)), null == o.code || "" === o.code || null == v) ? null : (0, r.jsx)(p.Gt, {
+  let H = V && !k || V && N;
+  return (V && N && (a = x.intl.string(x.t.wJNK8P)), k || (a = x.intl.string(x.t.hHGrW1)), null == o.code || "" === o.code || null == v) ? null : (0, r.jsx)(p.Gt, {
     value: M,
-    children: (0, r.jsx)(V, {
+    children: (0, r.jsx)(F, {
       app: v,
       activityUsers: G,
-      isMember: F,
+      isMember: V,
       channel: j,
       guild: O,
       members: h,
@@ -239,7 +239,7 @@ function Z(e) {
   })
 }
 
-function V(e) {
+function F(e) {
   let {
     app: t,
     activityUsers: n,

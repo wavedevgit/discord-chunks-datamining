@@ -340,7 +340,7 @@ class em extends(r = Chunk647438.PureComponent) {
     }), ea(this, "hideTooltip", () => {
       this.setState({
         shouldShowTooltip: false
-      }), this.hasShownTooltip && V.default.track(J.rMx.CLOSE_POPOUT, {
+      }), this.hasShownTooltip && F.default.track(J.rMx.CLOSE_POPOUT, {
         nonce: this.nonce
       })
     }), ea(this, "isMe", () => {
@@ -407,7 +407,7 @@ class em extends(r = Chunk647438.PureComponent) {
         let e = B.default.getCurrentUser();
         return r ? (0, i.jsxs)("div", {
           className: s()(ei.burstReactionTooltipPrompt, ei.burstReactionTooltipSpacer),
-          children: [(0, F.I5)(e) && (0, i.jsx)(h.SrA, {
+          children: [(0, V.I5)(e) && (0, i.jsx)(h.SrA, {
             size: "md",
             className: ei.burstReactionTooltipNitroIcon,
             color: O.JX.PREMIUM_TIER_2
@@ -508,7 +508,7 @@ class em extends(r = Chunk647438.PureComponent) {
         emoji: e,
         message: t,
         type: n
-      } = this.props, r = B.default.getCurrentUser(), i = k.Z.getChannel(t.getChannelId()), a = n === Y.O.BURST, o = (0, F.I5)(r), s = a ? $.cd.EMOJI_IN_BURST_REACTION_HOVER : $.cd.EMOJI_IN_REACTION_HOVER;
+      } = this.props, r = B.default.getCurrentUser(), i = k.Z.getChannel(t.getChannelId()), a = n === Y.O.BURST, o = (0, V.I5)(r), s = a ? $.cd.EMOJI_IN_BURST_REACTION_HOVER : $.cd.EMOJI_IN_REACTION_HOVER;
       !a || this.userCanBurstReact() || o || (s = $.cd.EMOJI_IN_BURST_REACTION_HOVER_UPSELL), y.ZP.trackWithMetadata(J.rMx.EXPRESSION_TOOLTIP_VIEWED, {
         type: s,
         expression_id: e.id,
@@ -516,7 +516,7 @@ class em extends(r = Chunk647438.PureComponent) {
         is_animated: e.animated,
         is_custom: null != e.id,
         nonce: this.nonce
-      }), !a || null == i || o || this.userCanBurstReact() || V.default.track(J.rMx.PREMIUM_UPSELL_VIEWED, {
+      }), !a || null == i || o || this.userCanBurstReact() || F.default.track(J.rMx.PREMIUM_UPSELL_VIEWED, {
         type: $.cd.BURST_REACTION_UPSELL,
         location: {
           page: (null == i ? true : i.getGuildId()) != null ? J.ZY5.GUILD_CHANNEL : J.ZY5.DM_CHANNEL,
@@ -536,7 +536,7 @@ let eg = Chunk647438.memo(e => {
       burst_colors: n,
       message: r,
       emoji: a
-    } = e, o = t === Y.O.BURST, s = (0, S.v)(o && null != n ? n : []), l = (0, _.e7)([H.Z], () => true !== H.Z.getEffectForEmojiId(r.getChannelId(), r.id, a)), c = (0, _.e7)([E.Z], () => E.Z.useReducedMotion), u = j.Yk.useSetting(), d = B.default.getCurrentUser(), f = (0, F.I5)(d), p = (0, _.e7)([H.Z], () => H.Z.getReactionPickerAnimation(r.id, a.name, a.id)), h = o && (l || null != p);
+    } = e, o = t === Y.O.BURST, s = (0, S.v)(o && null != n ? n : []), l = (0, _.e7)([H.Z], () => true !== H.Z.getEffectForEmojiId(r.getChannelId(), r.id, a)), c = (0, _.e7)([E.Z], () => E.Z.useReducedMotion), u = j.Yk.useSetting(), d = B.default.getCurrentUser(), f = (0, V.I5)(d), p = (0, _.e7)([H.Z], () => H.Z.getReactionPickerAnimation(r.id, a.name, a.id)), h = o && (l || null != p);
     return (0, i.jsx)(em, el(eo({}, e), {
       colors: s,
       isBurstReaction: o,
@@ -608,7 +608,7 @@ let eg = Chunk647438.memo(e => {
     }), [u, d] = a.useState(true), [f, p] = a.useState(true), [m, g] = a.useState(null), [E, b] = a.useState(false), [y, O] = a.useState(false), [v, S] = a.useState(false), C = null != c, N = null != (t = null == u ? true : u.isDiscoverable()) && t, R = G.Z.getGuildId(), P = null != R && (R === (null == u ? true : u.id) || R === (null == c ? true : c.id)), w = B.default.getCurrentUser(), D = (0, W.a)({
       sourceType: m,
       expressionSourceApplication: null != f ? f : null,
-      isPremium: F.ZP.isPremium(w),
+      isPremium: V.ZP.isPremium(w),
       hasJoinedEmojiSourceGuild: C,
       isDiscoverable: N,
       emojiComesFromCurrentGuild: P,

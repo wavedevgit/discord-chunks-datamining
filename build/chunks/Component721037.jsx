@@ -117,18 +117,18 @@ let G = Chunk442837.ZP.connectStores([Chunk928518.Z, Chunk317381.ZP, Chunk451478
     G = k && U === P.Ez.PANEL,
     B = null != L && null != j && (null == (t = f.Z.getSelectedParticipant(j)) ? true : t.type) === w.fO.ACTIVITY,
     Z = p.Z.getConnectedFrame(),
-    V = p.Z.getFrameLayoutMode() === D.U.FOCUSED,
-    F = null != m,
-    H = F ? b.Z.getWindow(m) : null,
-    Y = !!F && b.Z.isWindowFullScreen(m),
+    F = p.Z.getFrameLayoutMode() === D.U.FOCUSED,
+    V = null != m,
+    H = V ? b.Z.getWindow(m) : null,
+    Y = !!V && b.Z.isWindowFullScreen(m),
     W = C.Z.windowSize();
-  F && (W = null == H ? W : {
+  V && (W = null == H ? W : {
     width: H.innerWidth,
     height: H.innerHeight
   });
-  let K = F ? R.IlC.POPOUT : R.IlC.APP,
+  let K = V ? R.IlC.POPOUT : R.IlC.APP,
     z = e => {
-      if (F && (0, E.Y)({
+      if (V && (0, E.Y)({
           withTitleBar: g,
           isFullScreen: Y
         })) {
@@ -136,13 +136,13 @@ let G = Chunk442837.ZP.connectStores([Chunk928518.Z, Chunk317381.ZP, Chunk451478
           location: "PictureInPicture"
         });
         return e - (0, _.Y7)({
-          isPopoutWindow: F,
+          isPopoutWindow: V,
           isSearchDesktopTopLevelEnabled: t
         })
       }
       return e
     };
-  h = null != L && x || F && k ? null : F || !I || k ? null != L && G ? null != (n = S.Z.pipActivityWindow) ? n : S.Z.pipVideoWindow : null != Z && V ? null != (i = null != (r = S.Z.pipFrameWindow) ? r : S.Z.pipVideoWindow) ? i : S.Z.pipActivityWindow : null != (o = null != (a = S.Z.pipVideoWindow) ? a : S.Z.pipActivityWindow) ? o : S.Z.pipFrameWindow : null;
+  h = null != L && x || V && k ? null : V || !I || k ? null != L && G ? null != (n = S.Z.pipActivityWindow) ? n : S.Z.pipVideoWindow : null != Z && F ? null != (i = null != (r = S.Z.pipFrameWindow) ? r : S.Z.pipVideoWindow) ? i : S.Z.pipActivityWindow : null != (o = null != (a = S.Z.pipVideoWindow) ? a : S.Z.pipActivityWindow) ? o : S.Z.pipFrameWindow : null;
   let q = Array.from(S.Z.pipWindows.values()),
     X = S.Z.pipWidth(w.cL.VIDEO),
     Q = q.find(e => e.component === R.NYg.VIDEO),
@@ -167,7 +167,7 @@ let G = Chunk442837.ZP.connectStores([Chunk928518.Z, Chunk317381.ZP, Chunk451478
     appContext: K,
     roundCorners: !ea,
     windowSize: W,
-    inPopoutWindow: F,
+    inPopoutWindow: V,
     activityPIPWindow: J,
     chatOpen: er,
     callChatSidebarWidth: ee

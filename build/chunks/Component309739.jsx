@@ -214,7 +214,7 @@ let Z = e => {
   }
 };
 
-function V(e) {
+function F(e) {
   let {
     account: t
   } = e, [n, a] = i.useState(t.showActivity), o = (0, h.ZP)();
@@ -255,7 +255,7 @@ function V(e) {
   })
 }
 
-function F() {
+function V() {
   let e = (0, Chunk442837.e7)([Chunk553795.Z], () => Chunk553795.Z.getAccounts()),
     t = Chunk647438.useMemo(() => module.filter(e => m.Z.isSupported(e.type) && R.vbS.has(e.type)), [module]),
     [n, a] = Chunk647438.useState(""),
@@ -277,7 +277,7 @@ function F() {
           query: require,
           onChange: Chunk120356,
           placeholder: Chunk388032.intl.string(Chunk388032.t.WPrtoa)
-        }), o.map(e => (0, r.jsx)(V, {
+        }), o.map(e => (0, r.jsx)(F, {
           account: e
         }, e.id))]
       })
@@ -302,6 +302,6 @@ function H(e) {
     className: t,
     tag: _.RB0.H1,
     title: n ? P.intl.string(P.t.Cq98yM) : null,
-    children: [(0, r.jsx)(U, {}), (0, r.jsx)(G, {}), (0, r.jsx)(B, {}), i && (0, r.jsx)(F, {})]
+    children: [(0, r.jsx)(U, {}), (0, r.jsx)(G, {}), (0, r.jsx)(B, {}), i && (0, r.jsx)(V, {})]
   })
 }

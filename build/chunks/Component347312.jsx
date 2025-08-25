@@ -159,15 +159,15 @@ function G(e) {
     currentTime: a,
     duration: s,
     played: l
-  }, V = i.useRef(Z);
+  }, F = i.useRef(Z);
   i.useEffect(() => {
-    V.current = Z
+    F.current = Z
   }), i.useEffect(() => {
     let {
       currentTime: e,
       duration: t,
       played: n
-    } = V.current, r = x({
+    } = F.current, r = x({
       showAll: !n,
       currentTime: e,
       duration: t,
@@ -236,14 +236,14 @@ function G(e) {
       null != e && cancelAnimationFrame(e)
     }
   }, [g, N, O, E, a, s, l, d, R, w, D, k, G, B]);
-  let [, F] = (0, u.Z)({
+  let [, V] = (0, u.Z)({
     ref: g,
     onDrag: f,
     onDragStart: p,
     onDragEnd: m
   });
   return (0, r.jsx)("canvas", {
-    onMouseDown: F,
+    onMouseDown: V,
     className: o()(h.canvas, t),
     style: {
       width: b

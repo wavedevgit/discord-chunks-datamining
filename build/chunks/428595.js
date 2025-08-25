@@ -78,9 +78,9 @@ let U = /^( *>>> +([\s\S]*))|^( *>(?!>>) +[^\n]*(\n *>(?!>>) +[^\n]*)*\n?)/,
   G = /^$|\n *$/,
   B = /^ *>>> ?/,
   Z = /^ *> ?/gm,
-  V = /^((?:https?|steam):\/\/[^\s<]+[^<.,:;"'\]\s])/;
+  F = /^((?:https?|steam):\/\/[^\s<]+[^<.,:;"'\]\s])/;
 
-function F(e) {
+function V(e) {
   let t = (0, v.yw)(e[1]);
   if (null == t) return {
     type: "text",
@@ -144,7 +144,7 @@ let H = e => {
     }),
     link: Chunk772096.ZP,
     autolink: M(j({}, o().defaultRules.autolink), {
-      parse: F
+      parse: V
     }),
     mailto: M(j({}, o().defaultRules.mailto), {
       match: o().inlineRegex(/^<([^\s<>@]+@[^\s<>@]+\.[^\s<>@]+)>/),
@@ -170,7 +170,7 @@ let H = e => {
       requiredFirstCharacters: ["h", "s"],
       match(e, t) {
         if (!t.inline) return null;
-        let n = V.exec(e);
+        let n = F.exec(e);
         if (null != n) {
           let e = 0,
             t = n[0];
@@ -186,7 +186,7 @@ let H = e => {
         }
         return n
       },
-      parse: F
+      parse: V
     }),
     strong: o().defaultRules.strong,
     em: o().defaultRules.em,

@@ -82,11 +82,11 @@ function Z() {
   P.verbose("connection closed dispatched"), D = Date.now()
 }
 
-function V() {
+function F() {
   k = null
 }
 
-function F(e) {
+function V(e) {
   return e.resetSocket && (I.Wb.close(), I.Wb.dispatcher.clear(), I.Wb.connect()), false
 }
 
@@ -330,11 +330,11 @@ let eb = new eE(Chunk570140.Z, {
   START_SESSION: M,
   LOGIN_SUCCESS: G,
   LOGOUT: U,
-  CLEAR_CACHES: F,
+  CLEAR_CACHES: V,
   CONNECTION_OPEN: e => {
     B(e)
   },
-  CONNECTION_RESUMED: V,
+  CONNECTION_RESUMED: F,
   CONNECTION_CLOSED: Z,
   RTC_CONNECTION_STATE: Q,
   VOICE_CHANNEL_SELECT: H,

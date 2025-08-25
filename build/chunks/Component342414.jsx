@@ -116,20 +116,20 @@ let X = e => {
         visibilityPercentage: j
       } = (0, L.E)(!w);
     return (0, r.jsx)("div", {
-      className: a()(F.container, i),
+      className: a()(V.container, i),
       "data-testid": "subscriber-nitro-home-hero-header",
       children: (0, r.jsxs)("div", {
-        className: F.content,
+        className: V.content,
         ref: D,
         children: [p && f, (0, r.jsxs)("div", {
-          className: F.headerContainer,
+          className: V.headerContainer,
           children: [(0, r.jsx)(k.Z, {
             containerVisibilityPercentage: j
           }), (0, r.jsx)(x.Z, {
             children: d
           })]
         }), (0, r.jsxs)("div", {
-          className: N ? F.twoButtonContainer : true,
+          className: N ? V.twoButtonContainer : true,
           children: [N && (0, r.jsx)(P.Z, {
             size: "md",
             hasActivePromotion: !!s,
@@ -152,34 +152,34 @@ let X = e => {
       headingTop: u
     } = et(), d = (0, o.e7)([h.Z], () => h.Z.getPremiumTypeSubscription()), f = (0, I.N)(), p = (0, v.Ng)(), m = (0, v.Wp)(p, G.Si.TIER_2) ? G.Si.TIER_2 : true, g = null != d && d.status !== B.O0b.ACCOUNT_HOLD && d.hasAnyPremiumNitro, E = (0, _.Z)().isFractionalPremiumActive && !g;
     return (0, r.jsxs)("div", {
-      className: a()(V.container, i),
+      className: a()(F.container, i),
       "data-testid": "subscriber-nitro-home-hero-header",
       children: [(0, r.jsx)("img", {
         src: H,
         alt: "",
-        className: V.headerArt
+        className: F.headerArt
       }), (0, r.jsxs)("div", {
-        className: V.content,
+        className: F.content,
         children: [u, (0, r.jsx)(l.X6q, {
           variant: "display-lg",
           color: "always-white",
-          className: V.header,
+          className: F.header,
           children: c
         }), (0, r.jsxs)("div", {
-          className: V.heroHeadingOriginalButtonContainer,
+          className: F.heroHeadingOriginalButtonContainer,
           children: [E && (0, r.jsx)(N.Z, {
             color: s.Tt.BRAND,
-            className: a()(V.button, V.subscribeButton),
+            className: a()(F.button, F.subscribeButton),
             subscriptionTier: null != (n = null == f || null == (t = f.subscription_trial) ? true : t.sku_id) ? n : m
           }), (0, r.jsx)("div", {
-            className: V.premiumSubscribeButton,
+            className: F.premiumSubscribeButton,
             children: (0, r.jsx)(C.Z, {
               look: s.iL.FILLED,
               color: s.Tt.BRAND,
               textOptions: {
                 textOverride: Z.intl.string(Z.t["3KomGR"])
               },
-              className: V.button
+              className: F.button
             })
           })]
         })]
@@ -250,27 +250,27 @@ let X = e => {
       children: [(0, r.jsx)("img", {
         src: Y,
         alt: "",
-        className: V.headerArtV2
+        className: F.headerArtV2
       }), (0, r.jsxs)("div", {
-        className: V.reverseContainer,
+        className: F.reverseContainer,
         "data-testid": "subscriber-nitro-home-hero-header",
         children: [(0, r.jsxs)("div", {
-          className: V.reverseTrialHomeHeader,
+          className: F.reverseTrialHomeHeader,
           children: [i, (0, r.jsx)(l.X6q, {
             variant: "display-lg",
             color: "always-white",
-            className: V.header,
+            className: F.header,
             children: n
           })]
         }), (0, r.jsx)("div", {
-          className: V.premiumSubscribeButton,
+          className: F.premiumSubscribeButton,
           children: (0, r.jsx)(C.Z, {
             look: s.iL.FILLED,
             color: s.Tt.BRAND,
             textOptions: {
               textOverride: Z.intl.string(Z.t["3KomGR"])
             },
-            className: V.button
+            className: F.button
           })
         }), !t && (0, r.jsx)(M.Z, {}), t && (0, r.jsx)(T.Z, {
           variant: T.C.SUBSCRIBER_HOME
@@ -300,8 +300,8 @@ let X = e => {
       enablePremiumBrandRefresh: true,
       text: m
     }) : (0, r.jsx)(D.Cy, {
-      className: a()(V.trialPill, {
-        [V.hidden]: !h
+      className: a()(F.trialPill, {
+        [F.hidden]: !h
       }),
       text: m,
       colorOptions: D.VE.PREMIUM_TIER_2_WHITE_FILL
@@ -309,7 +309,7 @@ let X = e => {
     else {
       h = true;
       let e = (0, r.jsx)("div", {
-          className: V.pillIcon,
+          className: F.pillIcon,
           children: (0, r.jsx)(l.d3s, {
             size: "xxs",
             color: "var(--premium-tier-2-purple-for-gradients)"
@@ -321,18 +321,18 @@ let X = e => {
       N = (0, r.jsx)(p.Z, {
         text: t,
         "aria-label": t.toString(),
-        tooltipClassName: V.tooltip,
+        tooltipClassName: F.tooltip,
         position: "right",
         children: t => (0, r.jsx)("div", q(K({}, t), {
-          className: V.pillContainer,
+          className: F.pillContainer,
           children: (0, r.jsx)("div", {
-            className: V.flexCentered,
+            className: F.flexCentered,
             children: i ? (0, r.jsx)(j.Z, {
               enablePremiumBrandRefresh: true,
               text: C
             }) : (0, r.jsx)(D.mn, {
-              className: a()(V.trialPill, {
-                [V.hidden]: !h
+              className: a()(F.trialPill, {
+                [F.hidden]: !h
               }),
               text: C,
               colorOptions: D.VE.PREMIUM_TIER_2_WHITE_FILL,

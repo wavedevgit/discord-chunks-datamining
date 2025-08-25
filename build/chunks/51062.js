@@ -85,13 +85,13 @@ function v(e, t, n) {
     scrollerRef: n,
     state: D,
     onFocus: e => Y.setSelectedIndex(e)
-  }), Z = null == (E = e.editorRef.current) ? true : E.getCurrentWord(), V = null == (y = e.editorRef.current) ? true : y.getSlateEditor(), F = null;
-  null != V && (F = null != (A = null == (S = c.bN.getSelectedParentOfType(V, p.un)) ? true : S[0]) ? A : null);
+  }), Z = null == (E = e.editorRef.current) ? true : E.getCurrentWord(), F = null == (y = e.editorRef.current) ? true : y.getSlateEditor(), V = null;
+  null != F && (V = null != (A = null == (S = c.bN.getSelectedParentOfType(F, p.un)) ? true : S[0]) ? A : null);
   let H = O(b({}, e), {
       navigator: B,
       activeCommand: U,
       activeCommandOption: G,
-      activeInlineAutocompleteInput: F,
+      activeInlineAutocompleteInput: V,
       canMentionUsers: null != (C = null == (v = w.users) ? true : v.allowMentioning) && C,
       canMentionEveryone: k,
       hidePersonalInformation: M,

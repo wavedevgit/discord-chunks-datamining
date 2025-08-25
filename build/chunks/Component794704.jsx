@@ -367,8 +367,8 @@ function ej(e) {
     },
     G = C && N,
     Z = !D && !L,
-    V = !g && !D && y && !C,
-    F = !y && !L && g && !N,
+    F = !g && !D && y && !C,
+    V = !y && !L && g && !N,
     H = (null == u ? true : u.overlayMethod) === x.gl.Disabled,
     W = (null == u ? true : u.state) === x.mM.OVERLAY_RENDERING && !H,
     K = (null == u ? true : u.state) != null && ex.has(u.state) && !H,
@@ -444,8 +444,8 @@ function ej(e) {
           return [ed.intl.string(ed.t["9DUS5u"]), null];
         case ee:
           return [ed.intl.string(ed.t.nQ9EdH), null];
-        case V:
         case F:
+        case V:
           return [ed.intl.string(ed.t.VWUn0d), null];
         case K:
           if (z) return [ed.intl.string(ed.t["s8+CFh"]), null];
@@ -814,7 +814,7 @@ let eZ = (e, t) => [{
   disabledSetting: D.OverlayNotificationDisabledSetting.NOW_PLAYING
 }].filter(e => false !== e).filter(Boolean);
 
-function eV() {
+function eF() {
   let {
     allowActivityWidget: e,
     allowNowPlaying: t
@@ -849,7 +849,7 @@ function eV() {
   })
 }
 
-function eF(e) {
+function eV(e) {
   let t = eH(e.username);
   return t.user = e, t
 }
@@ -921,7 +921,7 @@ function eW() {
     if (null == module) return null;
     let t = Chunk355863.Z.getWidget(module.id);
     return null != exports && (0, Chunk340101.Aw)(exports) ? exports : null
-  }), d = null != (t = null == u || null == (e = u.meta) ? true : module.voiceStatesMaxShown) ? exports : Chunk501787.At, f = [null != l ? eF(l) : null, ...Chunk512722].filter(Chunk823379.lm), p = [new Map(f.map(e => [e.user.id, e])), f.map(e => e.user.id)];
+  }), d = null != (t = null == u || null == (e = u.meta) ? true : module.voiceStatesMaxShown) ? exports : Chunk501787.At, f = [null != l ? eV(l) : null, ...Chunk512722].filter(Chunk823379.lm), p = [new Map(f.map(e => [e.user.id, e])), f.map(e => e.user.id)];
 
   function m(e) {
     null != u && (e < eT ? (0, E.zG)(u.id, {
@@ -972,7 +972,7 @@ function eW() {
           className: o()(ef.widgetContainer, e),
           children: [(0, r.jsx)("div", {
             className: ef.voiceWidgetContainer,
-            children: (0, r.jsx)(V.kI, {
+            children: (0, r.jsx)(F.kI, {
               id: "voice-widget",
               title: ed.intl.string(ed.t.KNJ6Vl),
               channel: eY(),
@@ -994,9 +994,9 @@ function eW() {
             })
           }), (0, r.jsxs)("div", {
             className: ef.widgetHeaderContainer,
-            children: [(0, r.jsx)(F.PI, {
+            children: [(0, r.jsx)(V.PI, {
               children: ed.intl.string(ed.t.KNJ6Vl)
-            }), (0, r.jsx)(F.ls, {}), (0, r.jsx)(F.RT, {
+            }), (0, r.jsx)(V.ls, {}), (0, r.jsx)(V.RT, {
               id: null != (t = null == u ? true : u.id) ? t : "voice-widget",
               pinned: null != (i = null == u ? true : u.pinned) && i
             })]
@@ -1195,7 +1195,7 @@ function eq(e) {
         className: ef.settingsDivider
       })]
     }), (0, r.jsx)(h.hjN, {
-      children: (0, r.jsx)(eV, {})
+      children: (0, r.jsx)(eF, {})
     })]
   })
 }

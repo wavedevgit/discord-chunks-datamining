@@ -265,7 +265,7 @@ function Z(e) {
   }
 }
 
-function V(e, t) {
+function F(e, t) {
   let n = (null != e ? e.getFullMatch() : "").trim(),
     r = N(t),
     i = (0, y.Ej)(n).filter(e => null != e.token && true === r.get(e.token));
@@ -275,7 +275,7 @@ function V(e, t) {
   }
 }
 
-function F(e, t, n) {
+function V(e, t, n) {
   var r;
   let i = e.token,
     a = null == i || null == (r = i.getFullMatch()) ? true : r.trim(),
@@ -295,7 +295,7 @@ function F(e, t, n) {
     let e = H(i, t);
     null != e && o.push(e)
   }
-  return 5 > (0, E.BU)(o) && o.push(V(i, t)), o
+  return 5 > (0, E.BU)(o) && o.push(F(i, t)), o
 }
 
 function H(e, t) {
@@ -352,10 +352,10 @@ function W(e, t, n) {
       });
       return null != r ? [r] : [];
     case O.Sap.FILTER_ALL:
-      return F(t, e, n);
+      return V(t, e, n);
     case O.Sap.EMPTY:
       let i = [];
-      i.push(V(t.token, e));
+      i.push(F(t.token, e));
       {
         let t = Y(e);
         null != t && i.push(t)

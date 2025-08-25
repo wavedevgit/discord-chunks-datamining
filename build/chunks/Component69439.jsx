@@ -93,12 +93,12 @@ function A(e) {
   }), {
     isClaiming: B,
     isEnrolling: Z,
-    isQuestEnrollmentBlocked: V
+    isQuestEnrollmentBlocked: F
   } = (0, a.cj)([h.Z], () => ({
     isClaiming: h.Z.isClaimingReward(N.id) || h.Z.isFetchingRewardCode(N.id),
     isEnrolling: h.Z.isEnrolling(N.id),
     isQuestEnrollmentBlocked: null != h.Z.questEnrollmentBlockedUntil
-  })), F = (null == (t = N.userStatus) ? true : t.enrolledAt) != null, H = (null == (n = N.userStatus) ? true : n.completedAt) != null, Y = H && (null == (A = N.userStatus) ? true : A.claimedAt) == null, W = (0, _.iQ)(N), K = !(0, _.zi)(N), z = (0, p._Q)(N), q = (0, _.Xv)(N.config), X = (0, _.PB)(N), Q = (0, _.HJ)(N), J = (0, _.Vl)(N), $ = (0, p.Rf)(N), [ee, et, en] = (0, p.me)(N, $), er = K && z === p.OH.ACCEPTED, ei = er && ee === m.LI.SELECT, ea = er && !ei && et.length > 1, eo = i.useCallback(e => {
+  })), V = (null == (t = N.userStatus) ? true : t.enrolledAt) != null, H = (null == (n = N.userStatus) ? true : n.completedAt) != null, Y = H && (null == (A = N.userStatus) ? true : A.claimedAt) == null, W = (0, _.iQ)(N), K = !(0, _.zi)(N), z = (0, p._Q)(N), q = (0, _.Xv)(N.config), X = (0, _.PB)(N), Q = (0, _.HJ)(N), J = (0, _.Vl)(N), $ = (0, p.Rf)(N), [ee, et, en] = (0, p.me)(N, $), er = K && z === p.OH.ACCEPTED, ei = er && ee === m.LI.SELECT, ea = er && !ei && et.length > 1, eo = i.useCallback(e => {
     en(e), e === y.cd.DESKTOP && P([])
   }, [en, P]), {
     text: es,
@@ -135,7 +135,7 @@ function A(e) {
   }), ed = (0, g.f)({
     location: y.dr.QUEST_HOME_DESKTOP,
     questFeatures: N.config.features
-  }), ef = (null == (C = N.userStatus) ? true : C.claimedAt) != null, e_ = F && !ef, ep = null;
+  }), ef = (null == (C = N.userStatus) ? true : C.claimedAt) != null, e_ = V && !ef, ep = null;
   return (W && Y ? ep = (0, r.jsx)("div", {
     className: v.button,
     children: (0, r.jsx)(o.z, {
@@ -252,7 +252,7 @@ function A(e) {
       text: O.intl.string(O.t["9KoPyM"]),
       fullWidth: true
     })
-  }) : K && !F && (ep = V ? (0, r.jsxs)(s.h, {
+  }) : K && !V && (ep = F ? (0, r.jsxs)(s.h, {
     direction: "horizontal",
     fullWidth: true,
     children: [(0, r.jsx)(o.z, {

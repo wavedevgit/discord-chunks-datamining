@@ -331,12 +331,12 @@
   var B = ["on", "session"],
     Z = t.createContext(null);
   Z.displayName = "CheckoutSdkContext";
-  var V = function(e, t) {
+  var F = function(e, t) {
       if (!e) throw Error("Could not find CheckoutProvider context; You need to wrap the part of your app that ".concat(t, " in an <CheckoutProvider> provider."));
       return e
     },
-    F = t.createContext(null);
-  F.displayName = "CheckoutContext";
+    V = t.createContext(null);
+  V.displayName = "CheckoutContext";
   var H = function(e, t) {
       if (!e) return null;
       e.on, e.session;
@@ -406,7 +406,7 @@
       }, [d.checkoutSdk, s]);
       return d.checkoutSdk ? t.createElement(Z.Provider, {
         value: d
-      }, t.createElement(F.Provider, {
+      }, t.createElement(V.Provider, {
         value: E
       }, i)) : null
     };
@@ -418,17 +418,17 @@
     }).isRequired
   };
   var K = function(e) {
-      return V(t.useContext(Z), e)
+      return F(t.useContext(Z), e)
     },
     z = function(e) {
       var n = t.useContext(Z),
         r = t.useContext(L);
       if (n && r) throw Error("You cannot wrap the part of your app that ".concat(e, " in both <CheckoutProvider> and <Elements> providers."));
-      return n ? V(n, e) : j(r, e)
+      return n ? F(n, e) : j(r, e)
     },
     q = function() {
       K("calls useCheckout()");
-      var e = t.useContext(F);
+      var e = t.useContext(V);
       if (!e) throw Error("Could not find Checkout Context; You need to wrap the part of your app that calls useCheckout() in an <CheckoutProvider> provider.");
       return e
     },

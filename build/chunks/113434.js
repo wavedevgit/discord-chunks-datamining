@@ -121,14 +121,14 @@ function Z(e, t) {
   return X(e.config.startsAt, t.config.startsAt, 0)
 }
 
-function V(e, t) {
+function F(e, t) {
   var n, r;
   let i = null == (n = e.userStatus) ? true : n.enrolledAt,
     a = null == (r = t.userStatus) ? true : r.enrolledAt;
   return null == i && null == a ? X(e.config.expiresAt, t.config.expiresAt, 0) : null != i && null == a ? M : null == i && null != a ? U : X(i, a, 0)
 }
 
-function F(e, t) {
+function V(e, t) {
   return X(e.config.expiresAt, t.config.expiresAt, 1)
 }
 
@@ -144,9 +144,9 @@ function Y(e) {
     case x._v.MOST_RECENT:
       return Z;
     case x._v.RECENTLY_ENROLLED:
-      return V;
-    case x._v.EXPIRING_SOON:
       return F;
+    case x._v.EXPIRING_SOON:
+      return V;
     case x._v.SUGGESTED:
     default:
       return B

@@ -68,7 +68,7 @@ function K(e) {
   } = e, i = (0, D.gU)(), a = (0, w.Z)();
   return t === U.dG.CONTENT_AND_SOCIAL || t === U.dG.DATA_AND_PRIVACY ? null : (0, r.jsxs)(d.njP, {
     className: H.settingsTabBar,
-    "aria-label": F.intl.string(V.default.RZqaJi),
+    "aria-label": V.intl.string(F.default.RZqaJi),
     selectedItem: t,
     type: "top",
     look: "brand",
@@ -76,19 +76,19 @@ function K(e) {
     children: [(0, r.jsx)(d.njP.Item, {
       className: H.settingsTabBarItem,
       id: U.dG.ACTIVITY,
-      children: F.intl.string(V.default.bdBmq6)
+      children: V.intl.string(F.default.bdBmq6)
     }), (0, r.jsxs)(d.njP.Item, {
       className: H.settingsTabBarItem,
       id: U.dG.REQUESTS,
-      "aria-label": F.intl.string(V.default["gVWG+/"]),
-      children: [F.intl.string(V.default["gVWG+/"]), i > 0 ? (0, r.jsx)(d.mAB, {
+      "aria-label": V.intl.string(F.default["gVWG+/"]),
+      children: [V.intl.string(F.default["gVWG+/"]), i > 0 ? (0, r.jsx)(d.mAB, {
         className: H.badge,
         count: i
       }) : null]
     }), a ? (0, r.jsx)(d.njP.Item, {
       className: H.settingsTabBarItem,
       id: U.dG.SETTINGS,
-      children: F.intl.string(F.t["3D5yo6"])
+      children: V.intl.string(V.t["3D5yo6"])
     }) : null]
   })
 }
@@ -112,9 +112,9 @@ function z(e) {
         "aria-hidden": true
       }), (0, r.jsx)(y.Z.Title, {
         id: a,
-        children: F.intl.string(V.default.RZqaJi)
+        children: V.intl.string(F.default.RZqaJi)
       }), (0, r.jsx)(y.Z.Divider, {}), (0, r.jsxs)(d.njP, {
-        "aria-label": F.intl.string(V.default.RZqaJi),
+        "aria-label": V.intl.string(F.default.RZqaJi),
         selectedItem: n,
         type: "top-pill",
         onItemSelect: i,
@@ -122,12 +122,12 @@ function z(e) {
         children: [(0, r.jsx)(d.njP.Item, {
           id: U.dG.ACTIVITY,
           className: H.item,
-          children: F.intl.string(V.default.bdBmq6)
+          children: V.intl.string(F.default.bdBmq6)
         }), (0, r.jsxs)(d.njP.Item, {
           id: U.dG.REQUESTS,
           className: H.item,
-          "aria-label": F.intl.string(V.default["gVWG+/"]),
-          children: [F.intl.string(V.default["gVWG+/"]), l > 0 ? (0, r.jsx)(d.mAB, {
+          "aria-label": V.intl.string(F.default["gVWG+/"]),
+          children: [V.intl.string(F.default["gVWG+/"]), l > 0 ? (0, r.jsx)(d.mAB, {
             className: H.badge,
             count: l
           }) : null]

@@ -164,12 +164,12 @@ let ec = e => {
       application: t,
       isVisible: n
     } = e, i = () => {
-      null != t.terms_of_service_url && (0, F.q)({
+      null != t.terms_of_service_url && (0, V.q)({
         href: t.terms_of_service_url,
         shouldConfirm: true
       })
     }, a = () => {
-      null != t.privacy_policy_url && (0, F.q)({
+      null != t.privacy_policy_url && (0, V.q)({
         href: t.privacy_policy_url,
         shouldConfirm: true
       })
@@ -218,7 +218,7 @@ let ec = e => {
       disclosures: d,
       locale: p,
       id: g
-    } = e, b = a.id, I = i.useMemo(() => j.ZP.createFromServer(a), [a]), T = (0, V.yE)(I.flags, $.udG.EMBEDDED), S = (0, _.e7)([q.Z], () => {
+    } = e, b = a.id, I = i.useMemo(() => j.ZP.createFromServer(a), [a]), T = (0, F.yE)(I.flags, $.udG.EMBEDDED), S = (0, _.e7)([q.Z], () => {
       var e, t, n, r;
       return null == (r = q.Z.settings.applications) || null == (n = r.appSettings) || null == (t = n[b]) || null == (e = t.appDmSettings) ? true : e.allowMobilePush
     }, [b]), A = N.w.useExperiment({
@@ -232,7 +232,7 @@ let ec = e => {
     } : {
       appDMChannelMuteConfig: B.ZP.getChannelMuteConfig(null, k),
       dmChannelMuted: B.ZP.isChannelMuted(null, k)
-    }), [F, W] = i.useState(false), [K, Q] = i.useState(false), ea = () => {
+    }), [V, W] = i.useState(false), [K, Q] = i.useState(false), ea = () => {
       let e = [];
       for (let n of t) e.push(...(0, L.CI)(n, t)), n === f.x.APPLICATIONS_COMMANDS && e.push(et.intl.string(et.t.Ls2XRk));
       if (e.length > 0 || null != d && d.length > 0) return (0, r.jsx)(E.zF9, {
@@ -303,12 +303,12 @@ let ec = e => {
         t = null != a.terms_of_service_url || null != a.privacy_policy_url;
       return e || t ? (0, r.jsx)(E.zF9, {
         className: en.appDetailsSection,
-        isExpanded: F,
+        isExpanded: V,
         collapsibleContent: (0, r.jsxs)("div", {
           className: en.appDetailsContent,
           children: [e && es, t && (0, r.jsx)(ed, {
             application: a,
-            isVisible: F
+            isVisible: V
           })]
         }),
         children: e => {
@@ -318,13 +318,13 @@ let ec = e => {
           return (0, r.jsxs)(m.P, {
             className: en.appDetailsSectionHeader,
             onClick: e => {
-              W(!F), t(e)
+              W(!V), t(e)
             },
             children: [(0, r.jsx)(E.X6q, {
               variant: "heading-sm/medium",
               color: "header-primary",
               children: et.intl.string(et.t.fcYgiY)
-            }), F ? (0, r.jsx)(E.CJ0, {
+            }), V ? (0, r.jsx)(E.CJ0, {
               size: "md",
               color: E.TVs.colors.INTERACTIVE_NORMAL
             }) : (0, r.jsx)(E.Fbu, {

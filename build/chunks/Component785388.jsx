@@ -160,7 +160,7 @@ let en = e => {
       setSelected: s,
       reactionType: l,
       colors: u
-    } = e, d = i.useMemo(() => ee(t), [t]), _ = i.useMemo(() => et(t, J, H.emoji, o()(H.emoji, H.emojiText)), [t]), p = l === v.O.BURST, h = p ? F.t.VmiNjY : F.t.cNfs19, m = F.intl.formatToPlainString(h, {
+    } = e, d = i.useMemo(() => ee(t), [t]), _ = i.useMemo(() => et(t, J, H.emoji, o()(H.emoji, H.emojiText)), [t]), p = l === v.O.BURST, h = p ? V.t.VmiNjY : V.t.cNfs19, m = V.intl.formatToPlainString(h, {
       name: d,
       n: n
     }), g = i.useMemo(() => {
@@ -227,7 +227,7 @@ function ei(e) {
     reactionType: s,
     onRemoveReactor: l,
     disableManage: c = false
-  } = e, d = (0, u.e7)([R.default], () => R.default.getId()), _ = (0, u.e7)([k.default], () => k.default.getUser(n.id), [n]), m = (0, C.$R)(a), E = (0, u.e7)([L.Z], () => L.Z.can(V.Plq.MANAGE_MESSAGES, a) && m) || d === n.id, b = (0, u.e7)([w.ZP, P.Z, j.Z], () => G.ZP.getName(o, a.id, n));
+  } = e, d = (0, u.e7)([R.default], () => R.default.getId()), _ = (0, u.e7)([k.default], () => k.default.getUser(n.id), [n]), m = (0, C.$R)(a), E = (0, u.e7)([L.Z], () => L.Z.can(F.Plq.MANAGE_MESSAGES, a) && m) || d === n.id, b = (0, u.e7)([w.ZP, P.Z, j.Z], () => G.ZP.getName(o, a.id, n));
 
   function y() {
     S.WO({
@@ -401,7 +401,7 @@ let eo = Chunk442837.ZP.connectStores([Chunk542578.Z], e => {
     message: t,
     reaction: n,
     reactionType: r
-  } = e, i = D.Z.getReactions(t.getChannelId(), t.id, n.emoji, V.pTL, r);
+  } = e, i = D.Z.getReactions(t.getChannelId(), t.id, n.emoji, F.pTL, r);
   if (null == i) return {
     reactors: [],
     hasMore: false
@@ -450,7 +450,7 @@ function ec(e) {
     disableTabs: o = false,
     onClose: s,
     transitionState: l,
-    "aria-label": c = F.intl.string(F.t.gHp0Cw)
+    "aria-label": c = V.intl.string(V.t.gHp0Cw)
   } = e, _ = (0, u.e7)([P.Z], () => P.Z.getChannel(t.getChannelId())), p = null == _ ? true : _.getGuildId(), h = (0, u.e7)([x.Z, y.Z], () => {
     var e, n;
     let r = null != (n = x.Z.getMessage(t.getChannelId(), t.id)) ? n : null == (e = y.Z.getMessage(B.default.castMessageIdAsChannelId(t.id))) ? true : e.firstMessage;

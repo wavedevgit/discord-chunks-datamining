@@ -130,7 +130,7 @@ let Z = d().debounce(() => {
   x.every(n => e[n] === t[n]) && o !== a && (o = a, $.emitChange())
 }, 500);
 
-function V(e) {
+function F(e) {
   let {
     name: t,
     channelType: n,
@@ -166,7 +166,7 @@ function V(e) {
   }))), null != p && (o = o.set("defaultAutoArchiveDuration", p)), null != h && (o = o.set("template", h)), null != n && (o = o.set("type", n)), true !== g && (o = o.set("rtcRegion", g)), null != E && (o = o.set("videoQualityMode", E)), true !== m && (o = o.set("defaultReactionEmoji", m)), null != b && (o = o.set("availableTags", b)), null != y && (o = o.set("defaultSortOrder", y)), null != v && (o = o.set("defaultTagSetting", v)), null != O && (o = o.set("defaultForumLayout", O)), true !== I && (o = o.set("iconEmoji", I)), null != S && (o = o.set("themeColor", S)), Z()
 }
 
-function F(e) {
+function V(e) {
   return new E.Z({
     code: e.code,
     temporary: e.temporary,
@@ -184,7 +184,7 @@ function F(e) {
 
 function H(e) {
   R = {}, e.invites.forEach(e => {
-    R[e.code] = F(e)
+    R[e.code] = V(e)
   })
 }
 
@@ -194,7 +194,7 @@ function Y(e) {
 
 function W(e) {
   R = A(T({}, R), {
-    [e.invite.code]: F(e.invite)
+    [e.invite.code]: V(e.invite)
   })
 }
 
@@ -290,7 +290,7 @@ let $ = new J(Chunk570140.Z, {
     CHANNEL_PERMISSIONS_PUT_OVERWRITE_SUCCESS: q,
     CHANNEL_PERMISSIONS_DELETE_OVERWRITE_SUCCESS: q,
     CHANNEL_SETTINGS_OVERWRITE_SELECT: Q,
-    CHANNEL_SETTINGS_UPDATE: V,
+    CHANNEL_SETTINGS_UPDATE: F,
     CHANNEL_SETTINGS_SET_SECTION: k,
     CHANNEL_SETTINGS_LOADED_INVITES: H,
     CHANNEL_UPDATES: z,

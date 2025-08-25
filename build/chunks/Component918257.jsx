@@ -15,24 +15,22 @@ var Chunk906732 = require("./906732.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function f(e) {
-  let {
-    refreshStyles: t = false
-  } = e, n = (0, o.pI)(), {
-    analyticsLocations: f
-  } = (0, i.ZP)();
+function f() {
+  let e = (0, Chunk242291.pI)(),
+    {
+      analyticsLocations: t
+    } = (0, Chunk906732.ZP)();
 
-  function _(e) {
-    n = (0, l.A)(e), (0, a.xz)(n, f)
+  function n(n) {
+    e = (0, l.A)(n), (0, a.xz)(e, t)
   }
-  return (0, r.jsx)(c.Z, {
-    title: d.intl.string(d.t.xbMc8v),
-    description: d.intl.format(d.t.BPbGq6, {
-      helpCenterArticle: s.Z.getArticleURL(u.BhN.SOUNDBOARD)
+  return (0, Chunk951288.jsx)(Chunk674343.Z, {
+    title: Chunk388032.intl.string(Chunk388032.t.xbMc8v),
+    description: Chunk388032.intl.format(Chunk388032.t.BPbGq6, {
+      helpCenterArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.SOUNDBOARD)
     }),
-    label: d.intl.string(d.t.kbFsAA),
-    volume: n,
-    onVolumeChange: _,
-    refreshStyles: t
+    label: Chunk388032.intl.string(Chunk388032.t.kbFsAA),
+    volume: module,
+    onVolumeChange: require
   })
 }

@@ -63,8 +63,8 @@ let k = {
       entry: n
     }), {
       user: Z,
-      details: V,
-      appName: F,
+      details: F,
+      appName: V,
       activity: H,
       embeddedActivity: Y
     } = (0, x.n)(n), {
@@ -113,8 +113,8 @@ let k = {
           "aria-label": j.intl.string(j.t.YR4cHB)
         }),
         userDescription: (0, T.kr)(n) ? j.t.vPg1JS : j.t.rPqqtr,
-        title: F,
-        subtitle: V,
+        title: V,
+        subtitle: F,
         badges: ec,
         entry: n,
         disableGameProfileLinks: E,
@@ -123,7 +123,7 @@ let k = {
       }) : (0, r.jsx)(w.jL, {
         channel: t,
         title: n.extra.game_name,
-        subtitle: V,
+        subtitle: F,
         badges: ec,
         userDescription: j.t["6oWFUF"],
         entry: n,

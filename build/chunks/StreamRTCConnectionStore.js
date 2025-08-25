@@ -159,13 +159,13 @@ function Z(e) {
   }) && u.ownerId === y.default.getId() && (0, f.zf)(i, null == (r = N[i]) ? true : r.id)
 }
 
-function V(e) {
+function F(e) {
   let t = L[e.streamKey];
   if (null == t) returnfalse;
   t.connect(e.endpoint, e.token)
 }
 
-function F(e) {
+function V(e) {
   let {
     connectionStats: t
   } = e;
@@ -346,10 +346,10 @@ let ee = new $(Chunk570140.Z, !Chunk131951.Z.isSupported() || __OVERLAY__ ? {} :
   STREAM_START: G,
   STREAM_STOP: B,
   STREAM_CREATE: Z,
-  STREAM_SERVER_UPDATE: V,
+  STREAM_SERVER_UPDATE: F,
   STREAM_UPDATE: H,
   STREAM_DELETE: Y,
-  MEDIA_ENGINE_CONNECTION_STATS: F,
+  MEDIA_ENGINE_CONNECTION_STATS: V,
   STREAM_LAYOUT_UPDATE: W,
   RTC_DEBUG_SET_SIMULCAST_OVERRIDE: X,
   VIDEO_SIZE_UPDATE: Q

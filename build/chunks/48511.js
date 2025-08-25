@@ -70,36 +70,36 @@ function Z(e) {
   return b.call(String(e), /"/g, "&quot;")
 }
 
-function V(e) {
+function F(e) {
   return !w || !("object" == typeof e && (w in e || true !== e[w]))
 }
 
-function F(e) {
-  return "[object Array]" === ee(e) && V(e)
+function V(e) {
+  return "[object Array]" === ee(e) && F(e)
 }
 
 function H(e) {
-  return "[object Date]" === ee(e) && V(e)
+  return "[object Date]" === ee(e) && F(e)
 }
 
 function Y(e) {
-  return "[object RegExp]" === ee(e) && V(e)
+  return "[object RegExp]" === ee(e) && F(e)
 }
 
 function W(e) {
-  return "[object Error]" === ee(e) && V(e)
+  return "[object Error]" === ee(e) && F(e)
 }
 
 function K(e) {
-  return "[object String]" === ee(e) && V(e)
+  return "[object String]" === ee(e) && F(e)
 }
 
 function z(e) {
-  return "[object Number]" === ee(e) && V(e)
+  return "[object Number]" === ee(e) && F(e)
 }
 
 function q(e) {
-  return "[object Boolean]" === ee(e) && V(e)
+  return "[object Boolean]" === ee(e) && F(e)
 }
 
 function X(e) {
@@ -142,7 +142,7 @@ module.exports = function e(t, r, i, s) {
     return f ? L(t, h) : h
   }
   var m = true === l.depth ? 5 : l.depth;
-  if (true === i && (i = 0), i >= m && m > 0 && "object" == typeof t) return F(t) ? "[Array]" : "[Object]";
+  if (true === i && (i = 0), i >= m && m > 0 && "object" == typeof t) return V(t) ? "[Array]" : "[Object]";
   var g = eh(l, i);
   if (true === s) s = [];
   else if (en(s, t) >= 0) return "[Circular]";
@@ -166,10 +166,10 @@ module.exports = function e(t, r, i, s) {
     return "object" != typeof t || P ? N : ed(N)
   }
   if (el(t)) {
-    for (var k = "<" + O.call(String(t.nodeName)), G = t.attributes || [], V = 0; V < G.length; V++) k += " " + G[V].name + "=" + B(Z(G[V].value), "double", l);
+    for (var k = "<" + O.call(String(t.nodeName)), G = t.attributes || [], F = 0; F < G.length; F++) k += " " + G[F].name + "=" + B(Z(G[F].value), "double", l);
     return k += ">", t.childNodes && t.childNodes.length && (k += "..."), k += "</" + O.call(String(t.nodeName)) + ">"
   }
-  if (F(t)) {
+  if (V(t)) {
     if (0 === t.length) return "[]";
     var J = eg(t, y);
     return g && !ep(J) ? "[" + em(J, g) + "]" : "[ " + T.call(J, ", ") + " ]"
@@ -368,7 +368,7 @@ function em(e, t) {
 }
 
 function eg(e, t) {
-  var n, r = F(e),
+  var n, r = V(e),
     i = [];
   if (r) {
     i.length = e.length;

@@ -117,14 +117,14 @@ function k(e) {
   } = (0, b.Z)({
     userId: t.id,
     guildId: a
-  }), Z = t.id === n.id, V = (0, s.e7)([h.Z, p.Z], () => {
+  }), Z = t.id === n.id, F = (0, s.e7)([h.Z, p.Z], () => {
     let e = Z ? h.Z.getStatus() : p.Z.getStatus(t.id, a);
     return e === S.Sk.OFFLINE || e === S.Sk.INVISIBLE
   }), {
-    voiceActivityStatusEnabled: F
+    voiceActivityStatusEnabled: V
   } = (0, d.U)({
     location: "UserProfileStackedActivity"
-  }), H = F && null == U && null == B && null != G, Y = (0, y.yi)(), W = (null == Y ? true : Y.interactionSource) === T.n_.ACTIVITY, K = i.useRef(null), z = i.useRef(null), q = i.useRef(null), X = i.useRef(null), [Q, J] = i.useReducer(L, j), {
+  }), H = V && null == U && null == B && null != G, Y = (0, y.yi)(), W = (null == Y ? true : Y.interactionSource) === T.n_.ACTIVITY, K = i.useRef(null), z = i.useRef(null), q = i.useRef(null), X = i.useRef(null), [Q, J] = i.useReducer(L, j), {
     height: $,
     animationPhase: ee
   } = Q, et = "awaitingInput" !== ee, en = "animating" === ee || "done" === ee, er = [], ei = {
@@ -186,7 +186,7 @@ function k(e) {
   }, [w, k]);
   return ((0, u.zq)(() => {
     null != X.current && window.clearTimeout(X.current)
-  }), V || 0 === er.length) ? null : (0, r.jsxs)("section", {
+  }), F || 0 === er.length) ? null : (0, r.jsxs)("section", {
     "aria-labelledby": P,
     children: [(0, r.jsx)(c.nn4, {
       children: (0, r.jsx)(c.H, {

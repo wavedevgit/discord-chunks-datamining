@@ -263,7 +263,7 @@ function eg(e) {
     userId: null == f ? true : f.id,
     size: h.EFr.SIZE_32,
     animateOnHover: !(s || $ || ea || em)
-  }), eT = t.isMultiUserDM(), eS = t.isSystemDM(), eA = (0, F.Q)(), eC = !eT && !eS && t.type === ee.d4z.DM, eN = eC && (null == f ? true : f.primaryGuild) != null, eR = (0, p.e7)([X.ZP], () => X.ZP.isChannelMuted(t.getGuildId(), t.id)), {
+  }), eT = t.isMultiUserDM(), eS = t.isSystemDM(), eA = (0, V.Q)(), eC = !eT && !eS && t.type === ee.d4z.DM, eN = eC && (null == f ? true : f.primaryGuild) != null, eR = (0, p.e7)([X.ZP], () => X.ZP.isChannelMuted(t.getGuildId(), t.id)), {
     ignored: eP,
     blocked: ew
   } = (0, p.cj)([z.Z], () => ({
@@ -276,9 +276,9 @@ function eg(e) {
     location: "private_channel"
   }, {
     autoTrackExposure: true
-  }), eB = i.useRef(null), eZ = null != W && (s || $ || em), eV = () => {
+  }), eB = i.useRef(null), eZ = null != W && (s || $ || em), eF = () => {
     er(true)
-  }, eF = () => {
+  }, eV = () => {
     er(false)
   }, eH = () => {
     el(true)
@@ -431,8 +431,8 @@ function eg(e) {
           ringTarget: ey
         }),
         ref: ey,
-        onMouseEnter: eV,
-        onMouseLeave: eF,
+        onMouseEnter: eF,
+        onMouseLeave: eV,
         onMouseDown: eK,
         onFocus: eH,
         onBlur: eY,
@@ -452,7 +452,7 @@ function eg(e) {
           onClick: eq,
           muted: eL,
           selected: s,
-          children: [(0, r.jsx)(V.Z, {
+          children: [(0, r.jsx)(F.Z, {
             nameplate: eZ ? W : true,
             selected: s,
             hovered: $,

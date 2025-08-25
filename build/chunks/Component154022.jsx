@@ -112,7 +112,7 @@ function er(e) {
     }).enabled;
   return (0, r.jsxs)(d.hjN, {
     tag: d.RB0.H1,
-    title: F.intl.string(F.t.G0neg4),
+    title: V.intl.string(V.t.G0neg4),
     children: [(0, r.jsx)("div", {
       className: W.marginBottom20,
       children: (0, r.jsx)(ei, {})
@@ -156,7 +156,7 @@ function er(e) {
       }), (0, r.jsx)(d.Text, {
         className: W.marginTop20,
         variant: "text-md/normal",
-        children: F.intl.format(F.t.DHpTjY, {
+        children: V.intl.format(V.t.DHpTjY, {
           onAppearanceClick() {
             f.Z.open(B.oAB.APPEARANCE)
           }
@@ -194,7 +194,7 @@ function ei() {
         }), (0, Chunk951288.jsx)("div", {
           className: Chunk953752.previewAvatars,
           children: [Chunk981631.Skl.ONLINE, Chunk981631.Skl.DND, Chunk981631.Skl.IDLE].map(e => (0, r.jsx)(d.Xo$, {
-            "aria-label": F.intl.string(F.t.lqaIxM),
+            "aria-label": V.intl.string(V.t.lqaIxM),
             src: K,
             size: d.EFr.SIZE_32,
             status: e
@@ -236,7 +236,7 @@ function ea() {
               visibleContent: t
             } = e;
             return t === u.z.ACCESSIBILITY_HIGH_CONTRAST_MODE_NEW_BADGE ? (0, r.jsx)(d.IGR, {
-              text: F.intl.string(F.t.y2b7CA),
+              text: V.intl.string(V.t.y2b7CA),
               color: y.Z.BG_BRAND
             }) : null
           }
@@ -636,10 +636,10 @@ function em() {
           onValueRender: e => "x".concat(e.toFixed(2)),
           onMarkerRender: e => 0 === e ? (0, r.jsx)("span", {
             className: Y.ttsSliderMarker,
-            children: F.intl.string(F.t["493lwc"])
+            children: V.intl.string(V.t["493lwc"])
           }) : 10 === e ? (0, r.jsx)("span", {
             className: Y.ttsSliderMarker,
-            children: F.intl.string(F.t.ZSZEdX)
+            children: V.intl.string(V.t.ZSZEdX)
           }) : 1 === e ? (0, r.jsx)("span", {
             children: "x1.0"
           }) : e % 1 == 0 ? "" : true,

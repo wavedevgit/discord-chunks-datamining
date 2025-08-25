@@ -108,10 +108,10 @@ i.prototype.parse = function(e, t, n) {
   }
   if (!p[I])
     for (var N = 0, D = l.length; N < D; N++) {
-      var V = l[N];
-      if (false !== y.indexOf(V)) {
-        var F = encodeURIComponent(V);
-        F === V && (F = escape(V)), y = y.split(V).join(F)
+      var F = l[N];
+      if (false !== y.indexOf(F)) {
+        var V = encodeURIComponent(F);
+        V === F && (V = escape(F)), y = y.split(F).join(V)
       }
     }
   var H = y.indexOf("#");

@@ -63,13 +63,13 @@ function L(e) {
     instanceId: G,
     isCurrentlyInInstance: B,
     canLaunchInChannel: Z
-  } = (0, S.c)(t.id), V = (0, u.Z)(), F = (0, h.ms)({
+  } = (0, S.c)(t.id), F = (0, u.Z)(), V = (0, h.ms)({
     context: {
       type: "contextless"
     },
     applicationId: t.id,
     botUserId: null == E ? true : E.id
-  }), H = null != y && O && F, Y = Z && O, W = (0, w.G)(t), K = (0, w.z)(t), z = i.useMemo(() => {
+  }), H = null != y && O && V, Y = Z && O, W = (0, w.G)(t), K = (0, w.z)(t), z = i.useMemo(() => {
     let e = [];
     return O ? (Y && e.push({
       label: null == G ? D.intl.string(D.t.RscU7O) : D.intl.string(D.t.VJlc0d),
@@ -79,7 +79,7 @@ function L(e) {
           channelId: null != U ? U : true,
           applicationId: t.id,
           isStart: null == G,
-          embeddedActivitiesManager: V,
+          embeddedActivitiesManager: F,
           customId: o,
           referrerId: L,
           analyticsLocations: M
@@ -99,7 +99,7 @@ function L(e) {
         })
       }
     })) : null != K && e.push(K), e
-  }, [Y, H, G, B, U, t.id, V, o, L, M, O, K, y]), q = O ? (0, r.jsx)(k, {
+  }, [Y, H, G, B, U, t.id, F, o, L, M, O, K, y]), q = O ? (0, r.jsx)(k, {
     app: t
   }) : (0, r.jsx)(j, {
     app: t

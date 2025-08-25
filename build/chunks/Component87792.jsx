@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   I: () => G,
-  Z: () => V
+  Z: () => F
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -240,7 +240,7 @@ let U = () => {
       subText: o
     })
   },
-  V = e => {
+  F = e => {
     let {
       user: t
     } = e, n = (0, _.PO)("family_center_activity_card"), i = (0, f._p)(n), a = (0, g.kE)(), o = (0, f.t3)(), s = (0, y.Rd)(o);

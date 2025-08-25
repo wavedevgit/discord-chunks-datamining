@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   PH: () => R,
-  ZP: () => V,
+  ZP: () => F,
   sQ: () => C
 }), require("./388685.js");
 var r, Chunk392711 = require("./392711.js"),
@@ -301,7 +301,7 @@ class Z extends(r = Chunk442837.ZP.Store) {
   }
 }
 E(Z, "displayName", "SortedVoiceStateStore");
-let V = new Z(Chunk570140.Z, {
+let F = new Z(Chunk570140.Z, {
   CONNECTION_OPEN: w,
   OVERLAY_INITIALIZE: D,
   VOICE_CHANNEL_SELECT: j,

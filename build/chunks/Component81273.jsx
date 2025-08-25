@@ -45,16 +45,16 @@ let D = "MMM DD, YYYY",
       B = null == M ? true : M.sku_id,
       Z = (0, c.e7)([y.Z], () => null != U ? y.Z.get(U) : null),
       {
-        activeSubscription: V,
-        activeSubscriptionPlanFromStore: F
+        activeSubscription: F,
+        activeSubscriptionPlanFromStore: V
       } = (0, S.Z)(n),
-      H = null == V || null != F,
+      H = null == F || null != V,
       Y = (0, I._k)(n, {
         includeSoftDeleted: true
       }).map(e => e.subscription_plans[0].id),
-      W = (0, T.V)(V),
+      W = (0, T.V)(F),
       K = null != W,
-      z = !!(null == V ? true : V.hasActiveTrial),
+      z = !!(null == F ? true : F.hasActiveTrial),
       {
         loading: q,
         getTrialPurchaseEligibility: X
@@ -63,10 +63,10 @@ let D = "MMM DD, YYYY",
       {
         analyticsLocations: J
       } = (0, _.ZP)(),
-      $ = (null == V ? true : V.paymentGateway) === P.gg$.APPLE_PARTNER,
+      $ = (null == F ? true : F.paymentGateway) === P.gg$.APPLE_PARTNER,
       ee = !x && null != Z && H && !k && !K && !z && !$;
     k || x && !L ? s = w.intl.string(w.t.pQK5ho) : W === U ? s = w.intl.formatToPlainString(w.t.UlBRTk, {
-      changeDate: null != V ? l()(V.currentPeriodEnd).format(D) : ""
+      changeDate: null != F ? l()(F.currentPeriodEnd).format(D) : ""
     }) : K ? s = w.intl.string(w.t.ePFYOT) : z ? s = w.intl.string(w.t["0lPoT0"]) : $ && (s = w.intl.string(w.t.cEMaCg));
     let et = (0, f.Z)(R.iP);
     i.useEffect(() => {
@@ -83,7 +83,7 @@ let D = "MMM DD, YYYY",
             n = null == Q || null == (s = Q.active_trial) ? true : s.id
           } else i = w.intl.string(w.t.vuvsKy)
         }(0, b.Z)({
-          activeSubscription: V,
+          activeSubscription: F,
           analyticsSubscriptionType: P.NYc.GUILD,
           trialId: n,
           trialFooterMessageOverride: (null == Q ? true : Q.active_trial) != null ? w.intl.format(w.t.zyGyNj, {
@@ -118,7 +118,7 @@ let D = "MMM DD, YYYY",
           }),
           reviewWarningMessage: i
         })
-      }, [G, e, M, V, Y, t, J, a, X, Q, et]),
+      }, [G, e, M, F, Y, t, J, a, X, Q, et]),
       er = i.useCallback(() => {
         (0, p.hk)(t)
       }, [t]);

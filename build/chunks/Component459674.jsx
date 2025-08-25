@@ -16,27 +16,25 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk197571 = require("./197571.js");
 
-function _(e) {
-  let {
-    refreshStyles: t = false
-  } = e, n = (0, i.e7)([l.ZP], () => l.ZP.disableVoiceChannelChangeAlert);
-  return (0, r.jsx)(s.F, {
-    setting: u.s6.VOICE_AND_VIDEO_SWITCH_CHANNEL_ALERT,
-    children: (0, r.jsx)(a.j7V, {
-      className: f.marginBottom20,
-      note: d.intl.string(d.t.YCCMkJ),
-      onChange: e => {
-        (0, c.Z)("switch_channel_warning_enabled", e, !n), o.ZP.updatedUnsyncedSettings({
-          disableVoiceChannelChangeAlert: !e
+function _() {
+  let e = (0, Chunk442837.e7)([Chunk740492.ZP], () => Chunk740492.ZP.disableVoiceChannelChangeAlert);
+  return (0, Chunk951288.jsx)(Chunk921801.F, {
+    setting: Chunk726985.s6.VOICE_AND_VIDEO_SWITCH_CHANNEL_ALERT,
+    children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
+      className: Chunk197571.marginBottom20,
+      note: Chunk388032.intl.string(Chunk388032.t.YCCMkJ),
+      onChange: t => {
+        (0, c.Z)("switch_channel_warning_enabled", t, !e), o.ZP.updatedUnsyncedSettings({
+          disableVoiceChannelChangeAlert: !t
         })
       },
-      value: !n,
-      hideBorder: t,
-      children: (0, r.jsx)(a.X6q, {
+      value: !module,
+      hideBorder: true,
+      children: (0, Chunk951288.jsx)(Chunk481060.X6q, {
         variant: "text-md/medium",
         color: "header-primary",
-        className: f.marginBottom8,
-        children: d.intl.string(d.t.e7LIiY)
+        className: Chunk197571.marginBottom8,
+        children: Chunk388032.intl.string(Chunk388032.t.e7LIiY)
       })
     })
   })

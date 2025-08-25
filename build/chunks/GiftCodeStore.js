@@ -191,7 +191,7 @@ function Z(e) {
   return A(t, true)
 }
 
-function V(e) {
+function F(e) {
   let {
     channelId: t,
     messages: n
@@ -199,7 +199,7 @@ function V(e) {
   I.add(t), n.forEach(e => A(e, true))
 }
 
-function F(e) {
+function V(e) {
   let {
     messages: t
   } = e;
@@ -304,10 +304,10 @@ let q = new z(Chunk570140.Z, {
     GIFT_CODES_FETCH_FAILURE: M,
     MESSAGE_CREATE: Z,
     MESSAGE_UPDATE: Z,
-    LOCAL_MESSAGES_LOADED: V,
-    LOAD_MESSAGES_SUCCESS: V,
-    LOAD_MESSAGES_AROUND_SUCCESS: V,
-    LOAD_RECENT_MENTIONS_SUCCESS: F,
+    LOCAL_MESSAGES_LOADED: F,
+    LOAD_MESSAGES_SUCCESS: F,
+    LOAD_MESSAGES_AROUND_SUCCESS: F,
+    LOAD_RECENT_MENTIONS_SUCCESS: V,
     LOAD_PINNED_MESSAGES_SUCCESS: H,
     SEARCH_MESSAGES_SUCCESS: Y,
     GIFT_CODE_UPDATE: j,

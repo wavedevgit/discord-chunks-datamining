@@ -44,7 +44,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk704543 = require("./704543.js");
 
-function V(e, t, n) {
+function F(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -53,14 +53,14 @@ function V(e, t, n) {
   }) : e[t] = n, e
 }
 
-function F(e) {
+function V(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      V(e, t, n[t])
+      F(e, t, n[t])
     })
   }
   return e
@@ -88,7 +88,7 @@ function W(e) {
     user: t,
     currentUser: n,
     activity: i,
-    application: V,
+    application: F,
     voiceGuild: H,
     voiceChannel: W,
     className: K,
@@ -113,12 +113,12 @@ function W(e) {
   }), er = (0, T.Z)(i), ei = null != er.text && "" !== er.text, {
     largeImage: ea,
     smallImage: eo
-  } = (0, _.FO)(i, V), es = (0, k.Z)({
+  } = (0, _.FO)(i, F), es = (0, k.Z)({
     location: "UserProfileActivityCard",
     user: t,
     currentUser: n,
     activity: i,
-    application: V,
+    application: F,
     entry: ee,
     onClose: z
   }), el = () => {
@@ -246,7 +246,7 @@ function W(e) {
         variant: "text-xs/normal",
         text: B.intl.formatToPlainString(B.t["u//9Bw"], {
           count: "0",
-          max: null != (a = null == V ? true : V.getMaxParticipants()) ? a : 0
+          max: null != (a = null == F ? true : F.getMaxParticipants()) ? a : 0
         })
       })]
     }) : (0, l.Z)(i) && (null == (t = i.party) ? true : t.size) != null && (null == (n = i.party) ? true : n.size.length) >= 2 ? (0, r.jsxs)("div", {
@@ -306,7 +306,7 @@ function W(e) {
       user: t,
       onAction: et,
       onClose: z,
-      application: V
+      application: F
     })
   });
   return (0, r.jsx)(f.Gt, {
@@ -317,7 +317,7 @@ function W(e) {
       onAction: et,
       onClose: z,
       "aria-labelledby": ei ? "".concat(Q, " ").concat(X) : X,
-      children: [(0, r.jsx)(w.Z, Y(F({
+      children: [(0, r.jsx)(w.Z, Y(V({
         textId: Q
       }, er), {
         contextMenu: (0, r.jsx)(j.Z, {
@@ -342,7 +342,7 @@ function W(e) {
           }), $ === G.l.MODAL && em()]
         }), eh()]
       }), $ !== G.l.MODAL && $ !== G.l.MODAL_V2 && em(), (0, r.jsx)(R.Z, {
-        applicationId: null == V ? true : V.id,
+        applicationId: null == F ? true : F.id,
         onAction: et,
         onClose: z
       })]

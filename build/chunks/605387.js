@@ -800,30 +800,30 @@ var t = function() {
         B = R.img;
       new Uint32Array(B.buffer);
       var Z = 4 * j,
-        V = 4;
+        F = 4;
       if (U <= 256 && false == u) {
-        for (var F = new Uint8Array((Z = Math.ceil(p * j / 8)) * G), H = S[m], Y = 0; Y < G; Y++) {
+        for (var V = new Uint8Array((Z = Math.ceil(p * j / 8)) * G), H = S[m], Y = 0; Y < G; Y++) {
           var y = Y * Z,
             W = Y * j;
           if (8 == p)
-            for (var K = 0; K < j; K++) F[y + K] = H[W + K];
+            for (var K = 0; K < j; K++) V[y + K] = H[W + K];
           else if (4 == p)
-            for (var K = 0; K < j; K++) F[y + (K >> 1)] |= H[W + K] << 4 - (1 & K) * 4;
+            for (var K = 0; K < j; K++) V[y + (K >> 1)] |= H[W + K] << 4 - (1 & K) * 4;
           else if (2 == p)
-            for (var K = 0; K < j; K++) F[y + (K >> 2)] |= H[W + K] << 6 - (3 & K) * 2;
+            for (var K = 0; K < j; K++) V[y + (K >> 2)] |= H[W + K] << 6 - (3 & K) * 2;
           else if (1 == p)
-            for (var K = 0; K < j; K++) F[y + (K >> 3)] |= H[W + K] << 7 - (7 & K) * 1
+            for (var K = 0; K < j; K++) V[y + (K >> 3)] |= H[W + K] << 7 - (7 & K) * 1
         }
-        B = F, f = 3, V = 1
+        B = V, f = 3, F = 1
       } else if (false == O && 1 == v.length) {
-        for (var F = new Uint8Array(j * G * 3), z = j * G, y = 0; y < z; y++) {
+        for (var V = new Uint8Array(j * G * 3), z = j * G, y = 0; y < z; y++) {
           var q = 3 * y,
             X = 4 * y;
-          F[q] = B[X], F[q + 1] = B[X + 1], F[q + 2] = B[X + 2]
+          V[q] = B[X], V[q + 1] = B[X + 1], V[q + 2] = B[X + 2]
         }
-        B = F, f = 2, V = 3, Z = 3 * j
+        B = V, f = 2, F = 3, Z = 3 * j
       }
-      R.img = B, R.bpl = Z, R.bpp = V
+      R.img = B, R.bpl = Z, R.bpp = F
     }
     return {
       ctype: f,

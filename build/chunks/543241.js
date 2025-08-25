@@ -4,7 +4,7 @@
 require.d(exports, {
   A3: () => D,
   C1: () => W,
-  DV: () => V,
+  DV: () => F,
   Gn: () => M,
   IP: () => z,
   J1: () => G,
@@ -20,7 +20,7 @@ require.d(exports, {
   nV: () => q,
   q5: () => H,
   to: () => k,
-  wC: () => F,
+  wC: () => V,
   y$: () => j
 }), require("./290780.js"), require("./539854.js"), require("./388685.js"), require("./314940.js"), require("./704826.js"), require("./35282.js");
 var Chunk647438 = require("./647438.js"),
@@ -55,7 +55,7 @@ let P = function(e, t) {
       i = arguments.length > 3 && true !== arguments[3] && arguments[3];
     (0, f.O)(n);
     let a = (0, A.Gt)(e),
-      s = F(n),
+      s = V(n),
       d = H(n),
       {
         canSplitFrecencyList: p
@@ -383,7 +383,7 @@ let B = (e, t) => e.type !== T.En.GUILD ? e.id : null != t ? t.name : "",
     }
   };
 
-function V(e, t, n, i) {
+function F(e, t, n, i) {
   r.useEffect(() => {
     p.DZ.loadIfNecessary()
   }, []);
@@ -401,7 +401,7 @@ function V(e, t, n, i) {
   }, [e, t, n, a, i], o.pF)
 }
 
-function F(e) {
+function V(e) {
   return r.useEffect(() => {
     p.DZ.loadIfNecessary()
   }, []), (0, o.Wu)([l.ZP], () => l.ZP.getDisambiguatedEmojiContext(e).getFrequentlyUsedEmojisWithoutFetchingLatest())

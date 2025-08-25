@@ -2,7 +2,7 @@
 /** chunk id: 724145, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => F
+  Z: () => V
 }), require("./388685.js"), require("./314940.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -117,7 +117,7 @@ let G = () => (0, Chunk951288.jsx)("div", {
       onSubscribeModalClose: y
     })
   },
-  V = e => {
+  F = e => {
     let {
       markAsDismissed: t,
       isCoachmark: n
@@ -163,7 +163,7 @@ let G = () => (0, Chunk951288.jsx)("div", {
     })
   };
 
-function F(e) {
+function V(e) {
   let {
     markAsDismissed: t,
     showClientThemesCoachmark: n
@@ -210,7 +210,7 @@ function F(e) {
               isCoachmark: n
             })]
           })
-        }), (0, r.jsx)(V, {
+        }), (0, r.jsx)(F, {
           markAsDismissed: t,
           isCoachmark: n
         })]

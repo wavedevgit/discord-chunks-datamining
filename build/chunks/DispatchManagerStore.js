@@ -106,7 +106,7 @@ function M(e) {
 }
 
 function U(e) {
-  Z(e), F(e)
+  Z(e), V(e)
 }
 
 function G(e) {
@@ -134,7 +134,7 @@ function Z(e) {
   k(t, n)
 }
 
-function V(e) {
+function F(e) {
   let {
     applicationId: t,
     branchId: n
@@ -143,7 +143,7 @@ function V(e) {
   v.splice(0, 0, v.splice(r, 1)[0]), x(), T && p.Z.resume(), w()
 }
 
-function F(e) {
+function V(e) {
   let {
     applicationId: t,
     branchId: n
@@ -270,8 +270,8 @@ let J = new Q(Chunk570140.Z, {
   DISPATCH_APPLICATION_UNINSTALL: U,
   DISPATCH_APPLICATION_CANCEL: Z,
   DISPATCH_APPLICATION_REPAIR: G,
-  DISPATCH_APPLICATION_MOVE_UP: V,
-  DISPATCH_APPLICATION_REMOVE_FINISHED: F,
+  DISPATCH_APPLICATION_MOVE_UP: F,
+  DISPATCH_APPLICATION_REMOVE_FINISHED: V,
   DISPATCH_APPLICATION_STATE_UPDATE: H,
   DISPATCH_APPLICATION_ERROR: W,
   CONNECTION_OPEN: z,

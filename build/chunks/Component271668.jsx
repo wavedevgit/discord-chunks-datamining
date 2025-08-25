@@ -48,7 +48,7 @@ let D = 512,
     let {
       channel: n,
       canOnlyUseTextCommands: a
-    } = e, s = i.useRef(false), l = i.useRef(0), [Z, F] = i.useState(0), H = i.useRef(null), [Y, W] = i.useState(false), K = m.Xn.useStore(e => e.activeCategoryIndex);
+    } = e, s = i.useRef(false), l = i.useRef(0), [Z, V] = i.useState(0), H = i.useRef(null), [Y, W] = i.useState(false), K = m.Xn.useStore(e => e.activeCategoryIndex);
     i.useEffect(() => {
       (0, d.yw)(N.rMx.APPLICATION_COMMAND_BROWSER_OPENED)
     }, []);
@@ -126,7 +126,7 @@ let D = 512,
       }, [n.id]);
     i.useImperativeHandle(t, () => ({
       onTabOrEnter: e => {
-        if (null == Z) return !e && (F(0), true);
+        if (null == Z) return !e && (V(0), true);
         if (null == Z) returnfalse;
         let t = 0,
           n = 0;
@@ -143,7 +143,7 @@ let D = 512,
         let t = Q ? x : 0,
           n = J.length + t,
           r = null == Z ? 0 : Z + e;
-        return r >= n ? r = n - 1 : r < 0 && (r = 0), F(r), W(true), true
+        return r >= n ? r = n - 1 : r < 0 && (r = 0), V(r), W(true), true
       }
     }), [J.length, X, Q, z, el, Z]);
     let ec = i.useCallback(e => {
@@ -201,7 +201,7 @@ let D = 512,
           section: l,
           onClick: () => el(o, l, (0, I.tI)(a.section)),
           onHover: () => {
-            F(null), W(false)
+            V(null), W(false)
           }
         }, s)
       }, [n, X, el, z, Z]),
@@ -212,7 +212,7 @@ let D = 512,
       id: ef,
       className: P.outerWrapper,
       innerClassName: P.wrapper,
-      onMouseDown: V,
+      onMouseDown: F,
       children: [(0, r.jsx)(T.Z, {
         className: P.rail,
         channel: n,
@@ -240,6 +240,6 @@ let D = 512,
     })
   });
 
-function V(e) {
+function F(e) {
   e.preventDefault()
 }

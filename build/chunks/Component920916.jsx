@@ -65,7 +65,7 @@ function Z(e) {
   return e
 }
 
-function V(e, t) {
+function F(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -76,8 +76,8 @@ function V(e, t) {
   return n
 }
 
-function F(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : V(Object(t)).forEach(function(n) {
+function V(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : F(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -299,7 +299,7 @@ function Q(e, t, i) {
     let {
       default: a
     } = await Promise.resolve().then(n.bind(n, 920916));
-    return n => (0, r.jsx)(a, F(Z({}, n), {
+    return n => (0, r.jsx)(a, V(Z({}, n), {
       quest: e,
       location: t,
       preview: i

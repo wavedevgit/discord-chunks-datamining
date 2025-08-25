@@ -45,7 +45,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk391371 = require("./391371.js");
 
-function F(e, t, n) {
+function V(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -61,7 +61,7 @@ function H(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      F(e, t, n[t])
+      V(e, t, n[t])
     })
   }
   return e
@@ -140,7 +140,7 @@ function Q() {
       image: Chunk704215
     }),
     B = (0, Chunk442837.e7)([Chunk25990.Z], () => Chunk25990.Z.showNotice()),
-    F = Chunk695346.dN.useSetting() && null != Chunk512722 ? Chunk957730.ZP.parse(true, Chunk512722).content : Chunk512722,
+    V = Chunk695346.dN.useSetting() && null != Chunk512722 ? Chunk957730.ZP.parse(true, Chunk512722).content : Chunk512722,
     Y = Chunk74538.ZP.canUsePremiumProfileCustomization(module),
     {
       analyticsLocations: z,
@@ -159,7 +159,7 @@ function Q() {
         user: module,
         canUsePremiumCustomization: Y,
         onUpsellClick: Chunk265159.Z,
-        pendingBio: F
+        pendingBio: V
       }, Chunk243778), {
         pendingAvatar: Chunk373230
       })),

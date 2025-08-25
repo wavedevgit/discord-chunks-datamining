@@ -59,11 +59,11 @@ let I = [Chunk342905.C.CHERRY_BOMB, Chunk342905.C.CHICLE],
       saturationFactor: x
     }).hex()) : [], [a, j, M, U.minContrastRatio, x, k]);
     if (!j || !T && !L || null == a) return n;
-    let V = (0, b.K)(M, Z, {
+    let F = (0, b.K)(M, Z, {
         shouldWrap: N,
         fontOpacity: I.includes(a.fontId) ? R : 1
       }),
-      F = S(M);
+      V = S(M);
     return (0, r.jsxs)("div", {
       className: l()(v.container, w, A, {
         [v.showEffect]: s !== E.F.PLAIN,
@@ -71,16 +71,16 @@ let I = [Chunk342905.C.CHERRY_BOMB, Chunk342905.C.CHICLE],
         [v.loop]: C,
         [v.inProfile]: T
       }),
-      style: V,
+      style: F,
       children: [(0, r.jsx)("span", {
         "data-username-with-effects": G,
-        className: l()(v.innerContainer, null == F ? true : F.effectClassName, {
+        className: l()(v.innerContainer, null == V ? true : V.effectClassName, {
           [v.underlineOnHover]: P,
           [v.chicle]: a.fontId === u.C.CHICLE
         }),
         children: B
-      }), (null == F ? true : F.glowClassName) != null && (0, r.jsx)("span", {
-        className: l()(v.glowContainer, v.innerContainer, F.glowClassName, {
+      }), (null == V ? true : V.glowClassName) != null && (0, r.jsx)("span", {
+        className: l()(v.glowContainer, v.innerContainer, V.glowClassName, {
           [v.chicle]: a.fontId === u.C.CHICLE
         }),
         "aria-hidden": true,

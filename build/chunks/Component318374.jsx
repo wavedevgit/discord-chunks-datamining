@@ -103,7 +103,7 @@ function v(e) {
     "aria-label": x,
     "aria-labelledby": L,
     "aria-hidden": j
-  } = e, [k, M] = i.useState(false), U = y(v), G = i.useRef(null), B = t.length - a, Z = B + 1, V = B > 0 && !A && !j, F = () => (0, r.jsx)(c.VqE, {
+  } = e, [k, M] = i.useState(false), U = y(v), G = i.useRef(null), B = t.length - a, Z = B + 1, F = B > 0 && !A && !j, V = () => (0, r.jsx)(c.VqE, {
     className: h.popoutWrapper,
     "aria-label": x,
     "aria-labelledby": L,
@@ -134,12 +134,12 @@ function v(e) {
       }, e.id))
     })
   }), H = () => {
-    let e = V ? a - 1 : Math.min(t.length, a),
+    let e = F ? a - 1 : Math.min(t.length, a),
       n = e - 1,
       i = l()(t).take(e).map((e, t) => {
         let i = f.ZP.getNickname(s, m, e),
           a = null != i ? i : _.ZP.getName(e),
-          l = t === n && !V,
+          l = t === n && !F,
           u = o()(h.avatar, U, l && h.isLast),
           d = (0, r.jsx)(c.qEK, {
             src: e.getAvatarURL(s, 24),
@@ -168,11 +168,11 @@ function v(e) {
       children: i
     })
   }, Y = () => {
-    if (!V) return null;
+    if (!F) return null;
     let e = null != I ? I : O(v);
     return (0, r.jsx)(c.yRy, {
       targetElementRef: G,
-      renderPopout: F,
+      renderPopout: V,
       shouldShow: k,
       position: "bottom",
       onRequestClose: () => M(false),

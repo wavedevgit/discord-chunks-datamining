@@ -87,8 +87,8 @@ let U = new Map,
   G = new Map,
   B = new Map,
   Z = new Map,
-  V = new Map,
   F = new Map,
+  V = new Map,
   H = new Map,
   Y = 216e5,
   W = new Map,
@@ -124,7 +124,7 @@ function Q(e) {
     G = D.get(d),
     B = U.get(M(null != y ? y : null, d)),
     Z = null == B ? true : B.launchParams,
-    V = {
+    F = {
       applicationId: d,
       location: u,
       launchId: f,
@@ -136,11 +136,11 @@ function Q(e) {
       customId: null != (a = null == G ? true : G.customId) ? a : null == Z ? true : Z.customId,
       proxyTicket: h
     };
-  P && null != G && D.set(G.applicationId, C(S({}, G, V), {
-    proxyTicket: null != (o = V.proxyTicket) ? o : G.proxyTicket
+  P && null != G && D.set(G.applicationId, C(S({}, G, F), {
+    proxyTicket: null != (o = F.proxyTicket) ? o : G.proxyTicket
   }));
-  let F = !j;
-  null != G && u.id === G.location.id && d === G.applicationId && (!P && Array.from(G.userIds).some(e => e === N) || F) ? $(G) : P && (null == G || G.applicationId !== d || G.location.id !== u.id) && (w === c.default.getSessionId() && ei({
+  let V = !j;
+  null != G && u.id === G.location.id && d === G.applicationId && (!P && Array.from(G.userIds).some(e => e === N) || V) ? $(G) : P && (null == G || G.applicationId !== d || G.location.id !== u.id) && (w === c.default.getSessionId() && ei({
     applicationId: d,
     launchId: f,
     compositeInstanceId: _,
@@ -148,20 +148,20 @@ function Q(e) {
     participants: p,
     isFirstActivityInChannel: v,
     isStart: null == T,
-    referrerId: V.referrerId,
-    customId: V.customId,
+    referrerId: F.referrerId,
+    customId: F.customId,
     inviterUserId: null == B ? true : B.inviterUserId,
-    proxyTicket: V.proxyTicket
+    proxyTicket: F.proxyTicket
   }), eg({
     channelId: null != y ? y : null,
     applicationId: d
   }));
   let H = I.filter(e => e.applicationId !== d);
-  if (A.length > 0 && H.push(V), k.set(u.id, H), null != y) {
+  if (A.length > 0 && H.push(F), k.set(u.id, H), null != y) {
     let e = (null != (s = L.get(y)) ? s : []).filter(e => e.applicationId !== d),
       t = X((0, E.j)(u)),
       n = (null != (l = x.get(t)) ? l : []).filter(e => e.applicationId !== d || e.location.id !== u.id);
-    A.length > 0 && (e.push(V), n.push(V)), L.set(y, e), x.set(t, n)
+    A.length > 0 && (e.push(F), n.push(F)), L.set(y, e), x.set(t, n)
   }
 }
 
@@ -446,7 +446,7 @@ function eE(e) {
     pictureInPictureLockState: r,
     gridLockState: i
   } = e;
-  null == n ? Z.delete(t) : Z.set(t, n), null === r ? V.delete(t) : true !== r && V.set(t, r), null === i ? F.delete(t) : true !== i && F.set(t, i)
+  null == n ? Z.delete(t) : Z.set(t, n), null === r ? F.delete(t) : true !== r && F.set(t, r), null === i ? V.delete(t) : true !== i && V.set(t, i)
 }
 
 function eb(e) {
@@ -561,11 +561,11 @@ class eS extends(i = Chunk442837.ZP.PersistedStore) {
   }
   getPipOrientationLockStateForApp(e) {
     var t;
-    return null != (t = V.get(e)) ? t : this.getOrientationLockStateForApp(e)
+    return null != (t = F.get(e)) ? t : this.getOrientationLockStateForApp(e)
   }
   getGridOrientationLockStateForApp(e) {
     var t, n;
-    return null != (n = null != (t = F.get(e)) ? t : V.get(e)) ? n : this.getOrientationLockStateForApp(e)
+    return null != (n = null != (t = V.get(e)) ? t : F.get(e)) ? n : this.getOrientationLockStateForApp(e)
   }
   getLayoutModeForApp(e) {
     return H.get(e)

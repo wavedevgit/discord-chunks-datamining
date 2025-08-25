@@ -252,7 +252,7 @@ function Z() {
   })
 }
 
-function V(e) {
+function F(e) {
   let {
     onClick: t,
     tooltipText: n,
@@ -296,7 +296,7 @@ function V(e) {
   })
 }
 
-function F(e) {
+function V(e) {
   let {
     onClick: t
   } = e, n = (0, u.O)(), {
@@ -308,7 +308,7 @@ function F(e) {
       location: n.location,
       location_stack: i
     })
-  }), (0, r.jsx)(V, {
+  }), (0, r.jsx)(F, {
     onClick: t,
     tooltipText: C.intl.string(C.t.IqE0T0)
   })
@@ -348,7 +348,7 @@ function H(e) {
       contextKey: a
     })
   }
-  return (0, r.jsx)(V, {
+  return (0, r.jsx)(F, {
     disabled: i,
     onClick: c,
     tooltipText: o
@@ -388,7 +388,7 @@ function Y(e) {
       }), t ? (0, r.jsx)(H, {
         onAddBackgroundImage: c,
         disabled: p
-      }) : (0, r.jsx)(F, {
+      }) : (0, r.jsx)(V, {
         onClick: s
       }), d.map(e => (0, r.jsx)(l.ua7, {
         text: (0, r.jsx)(Z, {}),

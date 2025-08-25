@@ -129,7 +129,7 @@ function Z(e) {
   return null == L[j(e)]
 }
 
-function V(e, t) {
+function F(e, t) {
   let {
     forceBatchScan: n = false,
     jitter: r = false
@@ -151,7 +151,7 @@ function V(e, t) {
   }, Math.random() * x) : B(i, a)
 }
 
-function F(e) {
+function V(e) {
   let t = {},
     n = {};
   return e.forEach(e => {
@@ -213,7 +213,7 @@ function H(e) {
   r.length > 0 && (n = [...n, ...r]);
   let i = o()(n, (e, t) => e.id === t.id && e.channel_id === t.channel_id),
     a = i.filter(e => (0, A.MD)(e)),
-    s = F(i);
+    s = V(i);
   return {
     messagesPendingScan: a,
     attributesByMessageId: s.messageLookup,
@@ -235,7 +235,7 @@ function Y(e) {
   r.length > 0 && (n = [...n, ...r]);
   let i = o()(n, (e, t) => e.id === t.id && e.channel_id === t.channel_id),
     a = i.filter(e => (0, A.MD)(e)),
-    s = F(i);
+    s = V(i);
   return {
     messagesPendingScan: a,
     attributesByChannelId: s.channelLookup,
@@ -270,7 +270,7 @@ function W(e, t) {
       numOfGoreEmbeds: n.numOfGoreEmbeds,
       numOfExplicitEmbeds: n.numOfExplicitEmbeds
     })
-  }), n.length > 0 && (V(n, t), true)
+  }), n.length > 0 && (F(n, t), true)
 }
 
 function K(e) {
@@ -300,7 +300,7 @@ function K(e) {
       numOfGoreEmbeds: n.numOfGoreEmbeds,
       numOfExplicitEmbeds: n.numOfExplicitEmbeds
     })
-  }), t.length > 0 && (V(t), true)
+  }), t.length > 0 && (F(t), true)
 }
 
 function z(e) {

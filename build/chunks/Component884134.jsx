@@ -78,9 +78,9 @@ function B(e, t) {
   }), e
 }
 let Z = 0,
-  V = 5e3;
+  F = 5e3;
 
-function F(e) {
+function V(e) {
   let [t, n] = i.useState(0), [r, a] = i.useState(false), o = i.useRef(e);
   return i.useEffect(() => {
     e === o.current || r || n(e => e + 1), o.current = e, a(false)
@@ -170,7 +170,7 @@ function z(e) {
   } = e, {
     key: a,
     handleInternalChange: s
-  } = F(t), [l, c] = i.useState("".concat(Math.round(t), "\xb0"));
+  } = V(t), [l, c] = i.useState("".concat(Math.round(t), "\xb0"));
   i.useEffect(() => {
     c("".concat(Math.round(t), "\xb0"))
   }, [t]);
@@ -217,7 +217,7 @@ function q(e) {
   } = e, {
     key: a,
     handleInternalChange: o
-  } = F(t), [s, l] = i.useState("".concat(Math.round(t), "%"));
+  } = V(t), [s, l] = i.useState("".concat(Math.round(t), "%"));
   i.useEffect(() => {
     l("".concat(Math.round(t), "%"))
   }, [t]);
@@ -273,7 +273,7 @@ function X(e) {
   i.useEffect(() => {
     if (t) return o.current = false, u.current = setTimeout(() => {
       o.current || a(true)
-    }, V), () => {
+    }, F), () => {
       null != u.current && clearTimeout(u.current)
     }
   }, [t]);
@@ -412,8 +412,8 @@ function ee(e) {
     setColors: x,
     setChassisMixAmount: M,
     setGradientAngle: U
-  } = (0, T.Ig)(), [G, B] = i.useState(null != (t = O[0]) ? t : T.Dp), Z = (0, s.e7)([I.Z], () => I.Z.theme), V = (0, b.Nj)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), {
-    analyticsLocations: F
+  } = (0, T.Ig)(), [G, B] = i.useState(null != (t = O[0]) ? t : T.Dp), Z = (0, s.e7)([I.Z], () => I.Z.theme), F = (0, b.Nj)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), {
+    analyticsLocations: V
   } = (0, g.ZP)(m.Z.CUSTOM_THEMES_EDITOR), H = async () => {
     y.current = true, await (0, _.ZI)({
       theme: Z,
@@ -423,7 +423,7 @@ function ee(e) {
         gradientAngle: w,
         baseMix: S
       }
-    }), (0, N.u7)(O, S, w, Z, F), null == a || a(D.L.TAKE_ACTION), V || (0, b.Q3)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), (0, E.Ll)(), (0, v.UD)()
+    }), (0, N.u7)(O, S, w, Z, V), null == a || a(D.L.TAKE_ACTION), F || (0, b.Q3)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), (0, E.Ll)(), (0, v.UD)()
   }, Y = () => {
     d(A._m.RESET_BUTTON), (0, N.uf)()
   }, K = O.length > 0;

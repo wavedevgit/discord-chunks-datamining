@@ -66,8 +66,8 @@ function S(e) {
     G = (0, a.e7)([g.Z], () => g.Z.getActiveInputProfile()),
     B = (0, h.Z)(j),
     Z = (0, _.Z)(j),
-    V = (0, p.Z)(j),
-    F = (0, m.Z)(j),
+    F = (0, p.Z)(j),
+    V = (0, m.Z)(j),
     H = o.Yn.DEFAULT,
     Y = g.Z.isSelfDeaf(H),
     W = (0, a.e7)([g.Z], () => g.Z.getMode()),
@@ -85,7 +85,7 @@ function S(e) {
         label: I.intl.string(I.t["pS+K2N"]),
         children: Z
       }) : null, (0, r.jsxs)(s.kSQ, {
-        children: [N ? V : null, R ? F : null, w ? (0, r.jsx)(s.Clw, {}) : null, w && P ? (0, r.jsx)(s.S89, {
+        children: [N ? F : null, R ? V : null, w ? (0, r.jsx)(s.Clw, {}) : null, w && P ? (0, r.jsx)(s.S89, {
           id: "deafen",
           label: I.intl.string(I.t.wjcRFR),
           action: () => l.Z.toggleSelfDeaf({

@@ -97,7 +97,7 @@ function J(e) {
     analyticsLocation: a,
     analyticsObject: l,
     analyticsSourceLocation: d,
-    analyticsSubscriptionType: p = V.NYc.PREMIUM,
+    analyticsSubscriptionType: p = F.NYc.PREMIUM,
     onComplete: m,
     transitionState: C,
     initialPlanId: k,
@@ -106,7 +106,7 @@ function J(e) {
     trialId: W,
     trialFooterMessageOverride: z,
     reviewWarningMessage: Q,
-    planGroup: $ = F.Y1,
+    planGroup: $ = V.Y1,
     openInvoiceId: ee,
     onSubscriptionConfirmation: et,
     renderPurchaseConfirmation: en,
@@ -150,8 +150,8 @@ function J(e) {
     premiumBrandRefreshBackgroundClassName: eG
   } = (0, D.JL)(), eB = (0, j.Z)(), {
     isGift: eZ,
-    giftRecipient: eV,
-    customGiftMessage: eF,
+    giftRecipient: eF,
+    customGiftMessage: eV,
     emojiConfetti: eH,
     soundEffect: eY
   } = (0, w.wD)(), eW = c.CgR.SMALL;
@@ -160,7 +160,7 @@ function J(e) {
     ez = null != M && !eZ && (0, v.Wp)(eK, M),
     [eq, eX] = i.useState(K({
       load_id: eP.loadId,
-      payment_type: V.Zuq[eM],
+      payment_type: F.Zuq[eM],
       location: null != a ? a : l,
       source: d,
       subscription_type: p,
@@ -200,10 +200,10 @@ function J(e) {
     }
   }, [eT, eI, ev, k, ec, eU, eg]);
   let eJ = i.useCallback(() => {
-      let e = (0, R.MY)(eV) === R.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD,
+      let e = (0, R.MY)(eF) === R.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD,
         t = Date.now();
-      N.default.track(V.rMx.PAYMENT_FLOW_SUCCEEDED, q(K({}, eq), {
-        is_custom_message_edited: eZ && e && null != eF ? eF !== H.intl.string(H.t.ZkOo1d) : true,
+      N.default.track(F.rMx.PAYMENT_FLOW_SUCCEEDED, q(K({}, eq), {
+        is_custom_message_edited: eZ && e && null != eV ? eV !== H.intl.string(H.t.ZkOo1d) : true,
         is_custom_emoji_sound_available: eZ && e,
         emoji_name: eZ && e && (null == eH ? true : eH.id) == null ? null == eH ? true : eH.surrogates : true,
         sound_id: eZ && e ? null == eY ? true : eY.soundId : true,
@@ -217,8 +217,8 @@ function J(e) {
       }, {
         autoTrackExposure: false
       });
-      eZ && null != eV && null != a && n && (0, O.n)(a) && (0, y.Ni)(eV.id)
-    }, [eq, eH, eF, eV, eZ, eY, eP.startTime, eQ, a]),
+      eZ && null != eF && null != a && n && (0, O.n)(a) && (0, y.Ni)(eF.id)
+    }, [eq, eH, eV, eF, eZ, eY, eP.startTime, eQ, a]),
     e$ = i.useMemo(() => () => null == B ? true : B(eb === L.A.COMPLETED, eO), [B, eb, eO]),
     e0 = (0, s.Z)(() => Date.now(), [eR]),
     e1 = i.useCallback(function(e) {
@@ -233,12 +233,12 @@ function J(e) {
       if (e === x.h8.CONFIRM && (eJ(), null == m || m(i), em)) return void e$();
       eA(e), null == eu || eu(e), eC(null), eS(null), e === x.h8.ADD_PAYMENT_STEPS && (u.Z.wait(f.fw), u.Z.wait(_.pB));
       let s = null != n ? n : eR;
-      if (null === s || a) return void N.default.track(V.rMx.PAYMENT_FLOW_LOADED, q(K({}, eq), {
+      if (null === s || a) return void N.default.track(F.rMx.PAYMENT_FLOW_LOADED, q(K({}, eq), {
         initial_step: null != s ? s : e,
         continue_session_initial_step: eg,
         has_saved_payment_source: eL
       }));
-      N.default.track(V.rMx.PAYMENT_FLOW_STEP, q(K({}, eq, r), {
+      N.default.track(F.rMx.PAYMENT_FLOW_STEP, q(K({}, eq, r), {
         from_step: s,
         to_step: e === x.h8.ADD_PAYMENT_STEPS ? x.h8.PAYMENT_TYPE : e,
         step_duration_ms: o - e0,
@@ -319,7 +319,7 @@ function $(e) {
     isGift: v,
     skuId: E,
     referralTrialOfferId: o
-  }), [S, A] = i.useState(true), N = (0, l.e7)([C.Z], () => C.Z.applicationIdsFetched.has(F.CL));
+  }), [S, A] = i.useState(true), N = (0, l.e7)([C.Z], () => C.Z.applicationIdsFetched.has(V.CL));
   return (i.useEffect(() => {
     A(!_ || !h || g)
   }, [g, h, _]), (0, p.Z)("Payment Modal", S, 5, {
@@ -331,7 +331,7 @@ function $(e) {
       app_context: Q
     }
   }), i.useEffect(() => {
-    if (N || (0, d.yD)(F.CL), S || f) return;
+    if (N || (0, d.yD)(V.CL), S || f) return;
     let e = (0, k.Kp)({
       isTrial: T,
       isGift: v,

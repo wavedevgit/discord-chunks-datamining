@@ -2,7 +2,7 @@
 /** chunk id: 345953, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => F
+  Z: () => V
 }), require("./388685.js"), require("./642613.js");
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
@@ -203,7 +203,7 @@ function Z(e) {
   } = e;
   n !== f.default.getId() && k(t, n, d.Z.isLocalSoundboardMuted(n))
 }
-class V extends Chunk147913.Z {
+class F extends Chunk147913.Z {
   constructor(...e) {
     super(...e), b(this, "actions", {
       POST_CONNECTION_OPEN: D,
@@ -213,4 +213,4 @@ class V extends Chunk147913.Z {
     })
   }
 }
-let F = new V
+let V = new F

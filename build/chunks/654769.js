@@ -99,21 +99,21 @@ function Z(e) {
   } catch (e) {}
   return null
 }
-async function V() {
+async function F() {
   let e = await G();
   return (null == module ? true : module.authorizationStatus) === "authorized" && (null == module ? true : module.sound) === true
 }
 
-function F(e, t) {
+function V(e, t) {
   var n;
   return null != (n = (0, g.Z)(null != t ? t : m.Z.getSoundpack())[e]) ? n : e
 }
 async function H(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 1,
     n = arguments.length > 2 ? arguments[2] : true;
-  if (await V()) try {
+  if (await F()) try {
     await N.ZP.invoke("NOTIFICATIONS_SEND_NOTIFICATION", {
-      sound: F(e, n)
+      sound: V(e, n)
     });
     return
   } catch (e) {
@@ -224,7 +224,7 @@ async function $(e, t, n, r, i) {
     j = P,
     B = v.Z.disableNotifications && null == i.overrideStreamerMode,
     Z = !C.isPlatformEmbedded || (0, C.isMac)() && j || N.ZP.shouldDisplayNotifications(),
-    V = !B && D && Z,
+    F = !B && D && Z,
     H = x(w({}, r), {
       action: true,
       ping: true,
@@ -233,7 +233,7 @@ async function $(e, t, n, r, i) {
     }),
     Y = H,
     W = H;
-  if (r.banner = await (0, _.K)(), !V) {
+  if (r.banner = await (0, _.K)(), !F) {
     null != i.sound && false !== i.playSoundIfDisabled && (J(i.sound, null != (a = i.volume) ? a : 1, i.soundpack), r.ping = true, i.omitViewTracking || T.default.track(R.rMx.NOTIFICATION_ACTION, w({
       action: "VIEW"
     }, r)));
@@ -253,7 +253,7 @@ async function $(e, t, n, r, i) {
       title: t,
       body: n
     };
-    null != e && (a.icon = e), (null == i ? true : i.sound) != null && (a.sound = F(i.sound, i.soundpack)), (null == i ? true : i.tag) != null && (a.identifier = i.tag), (null == i ? true : i.fallbackDeepLink) != null && (a.fallbackDeepLink = i.fallbackDeepLink), Array.isArray(i.actions) && (a.actions = i.actions);
+    null != e && (a.icon = e), (null == i ? true : i.sound) != null && (a.sound = V(i.sound, i.soundpack)), (null == i ? true : i.tag) != null && (a.identifier = i.tag), (null == i ? true : i.fallbackDeepLink) != null && (a.fallbackDeepLink = i.fallbackDeepLink), Array.isArray(i.actions) && (a.actions = i.actions);
     let o = f.Z.getCurrentConfig({
       location: "showNotification"
     }, {

@@ -85,14 +85,14 @@ let S = {
     }), [D]), Z = e => {
       let t = e.currentTarget.files;
       return null == t ? null : t[0]
-    }, V = (e, t) => {
+    }, F = (e, t) => {
       let n = Z(t);
       null != n && (0, m.i0)(n, t => {
         j(r => T(v({}, r), {
           [e]: (0, m.z)(t, n)
         }))
       })
-    }, F = e => {
+    }, V = e => {
       let t = Z(e);
       null != t && (0, m.i0)(t, async e => {
         let n = await (0, m.Xv)(e, t, D.length);
@@ -233,7 +233,7 @@ let S = {
               color: l.Tt.GREEN,
               children: ["Upload Animated Layer", (0, r.jsx)(d.Z, {
                 ref: C,
-                onChange: F,
+                onChange: V,
                 multiple: false
               })]
             }), (0, r.jsx)(c.Text, {
@@ -246,21 +246,21 @@ let S = {
               color: l.Tt.GREEN,
               children: ["Upload thumbnail.png", (0, r.jsx)(d.Z, {
                 ref: C,
-                onChange: e => V(m.cq.THUMBNAIL, e),
+                onChange: e => F(m.cq.THUMBNAIL, e),
                 multiple: false
               })]
             }), (0, r.jsxs)(l.zx, {
               color: l.Tt.GREEN,
               children: ["Upload static.png", (0, r.jsx)(d.Z, {
                 ref: C,
-                onChange: e => V(m.cq.STATIC, e),
+                onChange: e => F(m.cq.STATIC, e),
                 multiple: false
               })]
             }), (0, r.jsxs)(l.zx, {
               color: l.Tt.GREEN,
               children: ["Upload reduced_motion.png", (0, r.jsx)(d.Z, {
                 ref: C,
-                onChange: e => V(m.cq.REDUCED_MOTION, e),
+                onChange: e => F(m.cq.REDUCED_MOTION, e),
                 multiple: false
               })]
             })]

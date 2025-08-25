@@ -40,8 +40,8 @@ var Chunk127849 = require("./127849.js"),
   G = Chunk127849[R],
   B = G && G[P],
   Z = Object.prototype,
-  V = Chunk127849.Array,
-  F = Chunk127849.RangeError,
+  F = Chunk127849.Array,
+  V = Chunk127849.RangeError,
   H = Chunk46015(Chunk760751),
   Y = Chunk46015([].reverse),
   W = Chunk125328.pack,
@@ -76,7 +76,7 @@ var Chunk127849 = require("./127849.js"),
     var i = L(e),
       a = h(n),
       o = !!r;
-    if (a + t > i.byteLength) throw new F(D);
+    if (a + t > i.byteLength) throw new V(D);
     var s = i.bytes,
       l = a + i.byteOffset,
       c = O(s, l, l + t);
@@ -87,7 +87,7 @@ var Chunk127849 = require("./127849.js"),
       s = h(n),
       l = r(+i),
       c = !!a;
-    if (s + t > o.byteLength) throw new F(D);
+    if (s + t > o.byteLength) throw new V(D);
     for (var u = o.bytes, d = s + o.byteOffset, f = 0; f < t; f++) u[d + f] = l[c ? f : t - f - 1]
   };
 if (Chunk848120) {
@@ -118,7 +118,7 @@ if (Chunk848120) {
   var t = h(e);
   j(this, {
     type: N,
-    bytes: H(V(t), 0),
+    bytes: H(F(t), 0),
     byteLength: t
   }), a || (this.byteLength = t, this.detached = false)
 })[P], B = (G = function(e, t, n) {
@@ -126,8 +126,8 @@ if (Chunk848120) {
   var r = x(e),
     i = r.byteLength,
     o = _(t);
-  if (o < 0 || o > i) throw new F("Wrong offset");
-  if (n = true === n ? i - o : p(n), o + n > i) throw new F(w);
+  if (o < 0 || o > i) throw new V("Wrong offset");
+  if (n = true === n ? i - o : p(n), o + n > i) throw new V(w);
   j(this, {
     type: R,
     buffer: e,

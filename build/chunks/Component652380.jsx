@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => ee,
-  b: () => V
+  b: () => F
 }), require("./388685.js"), require("./314940.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -80,7 +80,7 @@ let U = 10,
   B = [...G, "jpg", "jpeg"],
   Z = Array.from(new Set([...B, "gif", "mp4", "webm"]));
 
-function V(e) {
+function F(e) {
   var t, n;
   return {
     code: "PREVIEW-MODE-CODE",
@@ -92,7 +92,7 @@ function V(e) {
   }
 }
 
-function F(e) {
+function V(e) {
   return (0, s.EQ)(e).with({
     configVersion: 2
   }, e => e.rewardsConfig.rewards).exhaustive()
@@ -241,11 +241,11 @@ let X = "1193992107035983872",
 
 function J() {
   var e, t, a, s, u, d, L;
-  let [k, V] = Chunk647438.useState(Q), X = Chunk647438.useCallback(e => {
-    V(M(j({}, e), {
+  let [k, F] = Chunk647438.useState(Q), X = Chunk647438.useCallback(e => {
+    F(M(j({}, e), {
       preview: true
     }))
-  }, []), [J, $] = Chunk647438.useState(Chunk899457.a.UNENROLLED), [ee, et] = Chunk647438.useState(false), [en, er] = Chunk647438.useState(false), [ei, ea] = Chunk647438.useState(null), eo = "123", es = F(k.config);
+  }, []), [J, $] = Chunk647438.useState(Chunk899457.a.UNENROLLED), [ee, et] = Chunk647438.useState(false), [en, er] = Chunk647438.useState(false), [ei, ea] = Chunk647438.useState(null), eo = "123", es = V(k.config);
 
   function el(e) {
     switch ($(e), e) {

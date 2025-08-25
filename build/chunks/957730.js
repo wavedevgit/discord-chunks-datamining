@@ -155,8 +155,8 @@ function B(e) {
   }
 }
 let Z = Chunk428595.Z.RULES,
-  V = Chunk594199.ZP,
-  F = /^<@!?(\d+)>/,
+  F = Chunk594199.ZP,
+  V = /^<@!?(\d+)>/,
   H = /^<@&(\d+)>/,
   Y = /^<@\$(\d+)>/,
   W = /^<#(\d+)>/,
@@ -168,7 +168,7 @@ let Z = Chunk428595.Z.RULES,
     url: G(o().defaultRules.url),
     inlineCode: G(Z.inlineCode),
     codeBlock: G(Z.codeBlock),
-    rawUserMention: B(F),
+    rawUserMention: B(V),
     rawRoleMention: B(H),
     rawChannelMention: B(W),
     rawEmoji: B(K),
@@ -256,15 +256,15 @@ let Z = Chunk428595.Z.RULES,
         }
       }
     },
-    text: k(L({}, V), {
-      match: (e, t) => "string" == typeof t.textExclusions && "" !== t.textExclusions ? (0, f.T9)(t.textExclusions).exec(e) : null != V.match ? V.match(e, t, "") : null
+    text: k(L({}, F), {
+      match: (e, t) => "string" == typeof t.textExclusions && "" !== t.textExclusions ? (0, f.T9)(t.textExclusions).exec(e) : null != F.match ? F.match(e, t, "") : null
     })
   },
   X = {
     inlineCode: G(Z.inlineCode),
     codeBlock: G(Z.codeBlock),
     mention: {
-      match: o().anyScopeRegex(F),
+      match: o().anyScopeRegex(V),
       parse(e, t, n) {
         let {
           isNotification: r,
@@ -389,7 +389,7 @@ let Z = Chunk428595.Z.RULES,
         }
       }
     }),
-    text: L({}, V)
+    text: L({}, F)
   };
 [q, X].forEach(e => {
   Object.keys(e).forEach((t, n) => {

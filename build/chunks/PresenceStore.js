@@ -233,11 +233,11 @@ function Z(e) {
   for (let t of h.default.keys(O)) B(e, t)
 }
 
-function V() {
+function F() {
   returntrue
 }
 
-function F(e) {
+function V(e) {
   let {
     guilds: t,
     presences: n
@@ -520,8 +520,8 @@ class ee extends(r = Chunk442837.ZP.Store) {
 }
 b(ee, "displayName", "PresenceStore");
 let et = new ee(Chunk570140.Z, {
-  CONNECTION_OPEN: V,
-  CONNECTION_OPEN_SUPPLEMENTAL: F,
+  CONNECTION_OPEN: F,
+  CONNECTION_OPEN_SUPPLEMENTAL: V,
   OVERLAY_INITIALIZE: H,
   GUILD_CREATE: W,
   GUILD_DELETE: K,

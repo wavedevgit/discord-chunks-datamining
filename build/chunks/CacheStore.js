@@ -61,11 +61,11 @@ function Z() {
   k = true
 }
 
-function V() {
+function F() {
   k = true, L = "cache-loaded"
 }
 
-function F() {
+function V() {
   L = "no-cache"
 }
 
@@ -347,8 +347,8 @@ P(en, "displayName", "CacheStore"), new en(Chunk570140.Z, D ? {
   LOGOUT: H,
   CONNECTION_CLOSED: B,
   CACHE_LOADED: Z,
-  CACHE_LOADED_LAZY: V,
-  CACHE_LOADED_LAZY_NO_CACHE: F,
+  CACHE_LOADED_LAZY: F,
+  CACHE_LOADED_LAZY_NO_CACHE: V,
   CLEAR_CACHES: H,
   WRITE_CACHES: Y
 } : {})

@@ -257,7 +257,7 @@ function eZ(e) {
   })
 }
 
-function eV(e) {
+function eF(e) {
   let {
     message: t,
     channel: a,
@@ -306,7 +306,7 @@ function eV(e) {
   })
 }
 
-function eF(e) {
+function eV(e) {
   let {
     message: t,
     channel: n,
@@ -434,7 +434,7 @@ function eK(e) {
       id: l
     },
     messageReference: c
-  } = t, d = t.getChannelId(), f = (0, a.e7)([F.Z], () => F.Z.findActivity(l, e => e.type === eR.IIU.PLAYING), [l]), _ = (0, a.e7)([B.Z], () => null != c ? B.Z.getChannel(c.channel_id) : null, [c]), p = null == c ? true : c.guild_id, h = (0, en.l)({
+  } = t, d = t.getChannelId(), f = (0, a.e7)([V.Z], () => V.Z.findActivity(l, e => e.type === eR.IIU.PLAYING), [l]), _ = (0, a.e7)([B.Z], () => null != c ? B.Z.getChannel(c.channel_id) : null, [c]), p = null == c ? true : c.guild_id, h = (0, en.l)({
     user: s,
     channelId: d,
     guildId: o.guild_id,
@@ -627,7 +627,7 @@ function e3(e) {
     channelId: s.id,
     guildId: s.guild_id,
     messageId: i.id
-  }), d = (0, a.e7)([V.Z], () => V.Z.can(eR.Plq.MUTE_MEMBERS, s)), f = () => {
+  }), d = (0, a.e7)([F.Z], () => F.Z.can(eR.Plq.MUTE_MEMBERS, s)), f = () => {
     (0, D.DT)(s, i.author.id, false), l.Z.deleteMessage(s.id, i.id, true)
   }, _ = (0, a.e7)([x.Z], () => x.Z.getParticipant(s.id, i.author.id)), p = new Date(X.default.extractTimestamp(i.id)).toISOString() === new Date(null != (n = null == _ || null == (t = _.voiceState) ? true : t.requestToSpeakTimestamp) ? n : 0).toISOString(), h = d && (null == _ ? true : _.rtsState) === L.xO.REQUESTED_TO_SPEAK && p;
   return (0, r.jsxs)(r.Fragment, {
@@ -810,7 +810,7 @@ let to = Object.freeze({
   [Chunk981631.uaV.CHAT_INPUT_COMMAND]: true,
   [Chunk981631.uaV.CONTEXT_MENU_COMMAND]: true,
   [Chunk981631.uaV.RECIPIENT_ADD]: eZ,
-  [Chunk981631.uaV.RECIPIENT_REMOVE]: eF,
+  [Chunk981631.uaV.RECIPIENT_REMOVE]: eV,
   [Chunk981631.uaV.CALL]: eM,
   [Chunk981631.uaV.CHANNEL_NAME_CHANGE]: eU,
   [Chunk981631.uaV.CHANNEL_ICON_CHANGE]: eG,
@@ -826,7 +826,7 @@ let to = Object.freeze({
   [Chunk981631.uaV.GUILD_DISCOVERY_REQUALIFIED]: Chunk502115.xe,
   [Chunk981631.uaV.GUILD_DISCOVERY_GRACE_PERIOD_INITIAL_WARNING]: Chunk502115.HL,
   [Chunk981631.uaV.GUILD_DISCOVERY_GRACE_PERIOD_FINAL_WARNING]: Chunk502115.Yc,
-  [Chunk981631.uaV.THREAD_CREATED]: eV,
+  [Chunk981631.uaV.THREAD_CREATED]: eF,
   [Chunk981631.uaV.THREAD_STARTER_MESSAGE]: Chunk328749.Z,
   [Chunk981631.uaV.GUILD_INVITE_REMINDER]: true,
   [Chunk981631.uaV.AUTO_MODERATION_ACTION]: eq,

@@ -160,14 +160,14 @@ function B(e) {
 }
 let Z = {};
 
-function V(e) {
+function F(e) {
   let {
     guildId: t,
     applicationTab: n
   } = e;
   n !== Z[t] && (Z[t] = n)
 }
-let F = {};
+let V = {};
 
 function H(e) {
   var t;
@@ -175,8 +175,8 @@ function H(e) {
     guildId: n,
     sortOrder: r
   } = e;
-  if (r === F[n]) return;
-  F[n] = r;
+  if (r === V[n]) return;
+  V[n] = r;
   let i = null != (t = Z[n]) ? t : f.wB.SUBMITTED;
   "REVIEW_APPLICATION" !== i && ((0, d.bk)(i) && L.clear(), (0, d.Nd)(i) && x.clear())
 }
@@ -217,7 +217,7 @@ class q extends(r = Chunk442837.ZP.Store) {
   }
   getSelectedSortOrder(e) {
     var t;
-    return null != (t = F[e]) ? t : f.Nw.TIMESTAMP_DESC
+    return null != (t = V[e]) ? t : f.Nw.TIMESTAMP_DESC
   }
   getSelectedGuildJoinRequest(e) {
     let t = Y[e];
@@ -234,7 +234,7 @@ let X = new q(Chunk570140.Z, {
   GUILD_JOIN_REQUEST_CREATE: U,
   GUILD_JOIN_REQUEST_UPDATE: U,
   GUILD_JOIN_REQUEST_DELETE: G,
-  GUILD_JOIN_REQUESTS_SET_APPLICATION_TAB: V,
+  GUILD_JOIN_REQUESTS_SET_APPLICATION_TAB: F,
   GUILD_JOIN_REQUESTS_SET_SORT_ORDER: H,
   GUILD_JOIN_REQUESTS_SET_SELECTED: W
 })

@@ -102,7 +102,7 @@ function Z() {
   return module
 }
 
-function V(e) {
+function F(e) {
   if (e === v.I_8) return Z();
   let t = {},
     n = m.Z.getMutableGuildChannelsForGuild(e);
@@ -113,10 +113,10 @@ function V(e) {
   return t
 }
 
-function F(e) {
+function V(e) {
   let {
     id: t
-  } = e, n = V(t);
+  } = e, n = F(t);
   return a().forEach(n, n => {
     let r = n.channel;
     if (e.count += 1, _.zS.has(r.type) && !b.Z.can(v.Plq.VIEW_CHANNEL, r) && !c.Z.isChannelGated(r.guild_id, r.id) && r.id !== P) return;
@@ -131,7 +131,7 @@ function H() {
 
 function Y(e) {
   let t = k(e);
-  return C[e] = t, w[e] = [], F(t), G(t), W(t), en(e), t
+  return C[e] = t, w[e] = [], V(t), G(t), W(t), en(e), t
 }
 
 function W(e) {

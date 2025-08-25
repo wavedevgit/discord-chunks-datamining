@@ -905,7 +905,7 @@ let eG = {
           allowedMentions: O,
           flags: 0 !== D ? D : true,
           nonce: et,
-          poll: (0, F.x9)(I)
+          poll: (0, V.x9)(I)
         });
       if (false !== n.eagerDispatch && ((0, Z.EL)(e, er.id), null != E && (er.sticker_items = E.map(e => $.Z.getStickerById(e)).filter(e => null != e)), eB.receiveMessage(e, er, true, n)), !eD && null != f && f.length > 0) {
         eD = true;
@@ -943,7 +943,7 @@ let eG = {
           null != n.party && null != n.party.id && (t.party_id = n.party.id), ea.message.application_id = n.application_id, ea.message.activity = t
         }
       }
-      if (null != I && (ea.message.poll = I), null != E && (ea.message.sticker_ids = E), V.Z.isEnabled() && (ea.message.has_poggermode_enabled = true), null != T && (ea.message.content_inventory_entry = T), null != b && (ea.message.confetti_potion = (0, K.vY)(b), b.callback()), null != S && S.length > 0 && (ea.message.attachments = S), null != R && R.length > 0) try {
+      if (null != I && (ea.message.poll = I), null != E && (ea.message.sticker_ids = E), F.Z.isEnabled() && (ea.message.has_poggermode_enabled = true), null != T && (ea.message.content_inventory_entry = T), null != b && (ea.message.confetti_potion = (0, K.vY)(b), b.callback()), null != S && S.length > 0 && (ea.message.attachments = S), null != R && R.length > 0) try {
         let t = await (0, x.c)({
           channelId: e,
           nonce: et,

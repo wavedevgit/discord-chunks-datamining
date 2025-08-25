@@ -68,7 +68,7 @@ function Z(e) {
   return e
 }
 
-function V(e, t) {
+function F(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -79,8 +79,8 @@ function V(e, t) {
   return n
 }
 
-function F(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : V(Object(t)).forEach(function(n) {
+function V(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : F(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -373,7 +373,7 @@ function eD() {
 }
 
 function ex(e, t, n, r) {
-  let i = F(Z({}, e), {
+  let i = V(Z({}, e), {
     played: null != e.lastFocused && 0 !== e.lastFocused ? l()(new Date(e.lastFocused * P.Z.Millis.SECOND)).fromNow() : " ",
     overlay: eR(e),
     verified: n.isGameInDatabase(e),
@@ -474,11 +474,11 @@ function eZ() {
   et = (ee = ee.map(e => e.distributor === U.GQo.ROBLOX ? (0, T.ON)(e, S.Z.getCurrentSubgameInfo()) : e)).length > 0 ? ee[0] : null, eU(ee)
 }
 
-function eV(e) {
+function eF(e) {
   eU(ee)
 }
 
-function eF(e) {
+function eV(e) {
   $ = e.games
 }
 
@@ -512,7 +512,7 @@ function ez(e) {
     if (null == e) return;
     (r = Z({}, e)).hidden = false, ee.push(r), t = eS(r)
   } else t = eS(r), r.hidden && (ei[t] = true), r.hidden = false;
-  (null == r.lastFocused || 0 === r.lastFocused) && (r.lastFocused = Math.floor(Date.now() / 1e3)), ea.gameOverrides[t] = F(Z({}, r), {
+  (null == r.lastFocused || 0 === r.lastFocused) && (r.lastFocused = Math.floor(Date.now() / 1e3)), ea.gameOverrides[t] = V(Z({}, r), {
     add: true
   }), eU(ee), ek(), eD(), eT()
 }
@@ -813,8 +813,8 @@ B(e8, "displayName", "RunningGameStore");
 let e6 = new e8(Chunk570140.Z, {
     ROBLOX_SUBGAME_UPDATE: eZ,
     ROBLOX_SUBGAME_APPLICATION_FETCH_SUCCESS: eZ,
-    RUNNING_GAMES_CHANGE: eV,
-    CANDIDATE_GAMES_CHANGE: eF,
+    RUNNING_GAMES_CHANGE: eF,
+    CANDIDATE_GAMES_CHANGE: eV,
     PERMISSION_CLEAR_PTT_ADMIN_WARNING: eH,
     PERMISSION_REQUEST_ELEVATED_PROCESS: eY,
     PERMISSION_CLEAR_ELEVATED_PROCESS: eK,

@@ -2,7 +2,7 @@
 /** chunk id: 283595, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => F
+  Z: () => V
 }), require("./388685.js"), require("./997841.js"), require("./358797.js");
 var r, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -165,7 +165,7 @@ function B(e, t) {
 function Z() {
   return h({}, v, O)
 }
-class V extends(r = Chunk442837.ZP.Store) {
+class F extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk314897.default);
     let e = Chunk433517.K.get(E);
@@ -227,8 +227,8 @@ class V extends(r = Chunk442837.ZP.Store) {
     })
   }
 }
-p(V, "displayName", "LibraryApplicationStore");
-let F = new V(Chunk570140.Z, {
+p(F, "displayName", "LibraryApplicationStore");
+let V = new F(Chunk570140.Z, {
   LOGOUT: P,
   LIBRARY_FETCH_SUCCESS: w,
   SKU_PURCHASE_SUCCESS: D,

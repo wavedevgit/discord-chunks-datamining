@@ -102,7 +102,7 @@ let A = {},
   B = {},
   Z = {};
 
-function V(e, t) {
+function F(e, t) {
   var n;
   let r = A[e],
     i = null != (n = null == r ? true : r.channel_overrides) ? n : {},
@@ -112,7 +112,7 @@ function V(e, t) {
     });
   w.clearTimer(e), a().forEach(i, e => {
     D.clearTimer(e.channel_id)
-  }), F(e, s), A[e] = s, j[e] = ef(A[e]);
+  }), V(e, s), A[e] = s, j[e] = ef(A[e]);
   let l = a().filter(s.channel_overrides, e => {
     var t;
     return _.yE(null != (t = e.flags) ? t : 0, O.ic.OPT_IN_ENABLED)
@@ -120,7 +120,7 @@ function V(e, t) {
   k[e] = new Set(l.map(e => e.channel_id)), H(e), delete C[e]
 }
 
-function F(e, t) {
+function V(e, t) {
   true === t.muted && w.setTimer(e, t.mute_config, () => {
     Y(e, {
       muted: false
@@ -156,7 +156,7 @@ function H(e) {
 function Y(e, t) {
   var n;
   let r = A[e];
-  V(e, I({
+  F(e, I({
     channel_overrides: null != (n = null == r ? true : r.channel_overrides) ? n : {}
   }, t))
 }
@@ -185,7 +185,7 @@ function z(e, t) {
   var n;
   let r = A[e],
     i = null != (n = null == r ? true : r.channel_overrides) ? n : {};
-  V(e, {
+  F(e, {
     channel_overrides: null == r ? t : I({}, i, t)
   })
 }
@@ -234,8 +234,8 @@ function ee(e) {
   let t = new Set;
   for (let n in e.userGuildSettings.entries.forEach(e => {
       let n = e;
-      "channel_overrides" in n || (n.channel_overrides = {}), V(e.guild_id, n), null != e.guild_id && t.add(e.guild_id)
-    }), A) t.has(n) || F(n, A[n])
+      "channel_overrides" in n || (n.channel_overrides = {}), F(e.guild_id, n), null != e.guild_id && t.add(e.guild_id)
+    }), A) t.has(n) || V(n, A[n])
 }
 
 function et(e) {
@@ -269,7 +269,7 @@ function ei(e) {
     userGuildSettings: t
   } = e;
   t.forEach(e => {
-    V(e.guild_id, I({
+    F(e.guild_id, I({
       channel_overrides: {}
     }, e))
   })

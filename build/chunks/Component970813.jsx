@@ -11,21 +11,18 @@ var Chunk722932 = require("./722932.js"),
   Chunk674343 = require("./674343.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function l(e) {
+function l() {
   let {
-    refreshStyles: t = false
-  } = e, {
-    volume: n,
-    onVolumeChange: l
-  } = (0, a.Z)();
-  return (0, i.X0)({
+    volume: e,
+    onVolumeChange: t
+  } = (0, Chunk824690.Z)();
+  return (0, Chunk722932.X0)({
     location: "UserSettingsSoundmojiVolume"
-  }) ? (0, r.jsx)(o.Z, {
-    title: s.intl.string(s.t.w9Hq8P),
-    description: s.intl.string(s.t.INenzc),
-    label: s.intl.string(s.t["2JbvKy"]),
-    volume: n,
-    onVolumeChange: l,
-    refreshStyles: t
+  }) ? (0, Chunk951288.jsx)(Chunk674343.Z, {
+    title: Chunk388032.intl.string(Chunk388032.t.w9Hq8P),
+    description: Chunk388032.intl.string(Chunk388032.t.INenzc),
+    label: Chunk388032.intl.string(Chunk388032.t["2JbvKy"]),
+    volume: module,
+    onVolumeChange: exports
   }) : null
 }

@@ -179,7 +179,7 @@ function Z(e) {
       return 0
     }, [E, R, s]),
     j = (0, i.useMemo)(() => 0 === L ? 1 : u ? 2 : 3 * (null == _), [u, _, L]);
-  return (0, r.jsx)(V, {
+  return (0, r.jsx)(F, {
     channel: t,
     buttonPurchaseState: L,
     buttonDisabledState: j,
@@ -190,7 +190,7 @@ function Z(e) {
     isReaction: l
   })
 }
-let V = e => {
+let F = e => {
     let {
       channel: t,
       buttonPurchaseState: n,
@@ -223,7 +223,7 @@ let V = e => {
       children: [(0, r.jsx)("div", {
         className: P.modal,
         ref: d,
-        children: (0, r.jsx)(F, {
+        children: (0, r.jsx)(V, {
           channel: t,
           selectedEmoji: c,
           isReaction: u
@@ -236,7 +236,7 @@ let V = e => {
       })]
     })
   },
-  F = e => {
+  V = e => {
     let {
       channel: t,
       selectedEmoji: n,

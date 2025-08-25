@@ -107,9 +107,9 @@ let C = function(e) {
         n = e.id === u.h8.ADD_PAYMENT_STEPS && !U.current;
       return !v || v && (t || n)
     })).find(e => e.id === k),
-    V = null != (i = null == Z || null == (n = Z.sectionHeaderText) ? true : n.call(Z)) ? i : null == Z ? true : Z.label,
-    F = null != V && null != k,
-    H = w && F && k === u.h8.REVIEW,
+    F = null != (i = null == Z || null == (n = Z.sectionHeaderText) ? true : n.call(Z)) ? i : null == Z ? true : Z.label,
+    V = null != F && null != k,
+    H = w && V && k === u.h8.REVIEW,
     Y = P ? "nitro-pink" : "nitro-green";
   return G ? (0, r.jsx)("div", {
     className: E.container,
@@ -122,7 +122,7 @@ let C = function(e) {
     children: [(0, r.jsxs)(o.$, {
       color: Y,
       className: a()(E.headerContainer, {
-        [E.containerBottomPadding]: !F
+        [E.containerBottomPadding]: !V
       }),
       children: [(0, r.jsx)(A, {
         isTier2: P
@@ -144,9 +144,9 @@ let C = function(e) {
       })]
     }), (C || N) && (0, r.jsx)(m.Z, {
       discountAmount: x
-    }), F && (0, r.jsx)(S, {
+    }), V && (0, r.jsx)(S, {
       isOneStepCheckout: w,
-      headerText: V,
+      headerText: F,
       step: k,
       filteredBreadcrumbs: B
     }), H && (0, r.jsx)("div", {

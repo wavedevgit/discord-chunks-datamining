@@ -112,9 +112,9 @@ function P(e) {
     G = null == e ? true : e.gift_info,
     B = e.gifting_prompt,
     Z = null != e.interaction ? u.Z.createFromServer(e.interaction) : null,
-    V = e.type === O.uaV.THREAD_STARTER_MESSAGE ? null == (r = e.referenced_message) || null == (n = r.author) ? true : n.id : true,
-    F = e.content;
-  return new d.ZP((e.type === O.uaV.PREMIUM_REFERRAL ? (h = E.default.isProbablyAValidSnowflake(e.content) ? e.content : true, F = "") : e.type === O.uaV.CHAT_WALLPAPER_SET && (m = (0, a.Z)(e.content), F = ""), N(e)) ? S(I({}, U), {
+    F = e.type === O.uaV.THREAD_STARTER_MESSAGE ? null == (r = e.referenced_message) || null == (n = r.author) ? true : n.id : true,
+    V = e.content;
+  return new d.ZP((e.type === O.uaV.PREMIUM_REFERRAL ? (h = E.default.isProbablyAValidSnowflake(e.content) ? e.content : true, V = "") : e.type === O.uaV.CHAT_WALLPAPER_SET && (m = (0, a.Z)(e.content), V = ""), N(e)) ? S(I({}, U), {
     id: e.id,
     channel_id: e.channel_id,
     type: O.uaV.DEFAULT,
@@ -124,8 +124,8 @@ function P(e) {
   }) : S(I({}, e, U, T.toJS()), {
     author: j,
     webhookId: e.webhook_id,
-    blocked: p.Z.isBlockedForMessage(e) || null != V && p.Z.isBlocked(V),
-    ignored: p.Z.isIgnoredForMessage(e) || null != V && p.Z.isIgnored(V),
+    blocked: p.Z.isBlockedForMessage(e) || null != F && p.Z.isBlocked(F),
+    ignored: p.Z.isIgnoredForMessage(e) || null != F && p.Z.isIgnored(F),
     mentionEveryone: e.mention_everyone,
     mentions: A,
     mentionRoles: P,
@@ -141,7 +141,7 @@ function P(e) {
       mentionGames: D.map(e => e.id)
     }),
     giftCodes: (0, g.Fp)(e) ? (0, g.Q_)(null == e ? true : e.embeds[0].url) : (0, g.Q_)(e.content),
-    content: F,
+    content: V,
     referralTrialOfferId: h,
     call: L(e.call, T.timestamp),
     messageSnapshots: M(e),

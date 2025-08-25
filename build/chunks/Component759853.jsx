@@ -133,10 +133,10 @@ let C = e => {
       } = t.getBoundingClientRect();
       B.createMultipleConfetti(A(n - i, r - a, e.clientHeight, e.clientWidth), I)
     }
-  }, [b, D, B, w]), V = (0, d.Z)(y);
+  }, [b, D, B, w]), F = (0, d.Z)(y);
   return (i.useEffect(() => {
-    R && y && !V && (N(), Z())
-  }, [y, R, N, Z, V]), i.useEffect(() => {
+    R && y && !F && (N(), Z())
+  }, [y, R, N, Z, F]), i.useEffect(() => {
     R && !x && L && setTimeout(() => {
       N(), Z()
     }, 200)

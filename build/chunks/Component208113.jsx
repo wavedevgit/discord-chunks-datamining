@@ -34,39 +34,31 @@ function p(e, t, n) {
   }), r
 }
 
-function h(e) {
+function h() {
   let {
-    refreshStyles: t = false
-  } = e, {
-    audioSubsystem: n,
-    legacyAudioSubsystemSupported: h,
-    experimentalAudioSubsystemSupported: m,
-    automaticAudioSubsystemSupported: g
-  } = (0, i.cj)([l.Z], () => ({
-    audioSubsystem: l.Z.getAudioSubsystem(),
-    legacyAudioSubsystemSupported: l.Z.supports(d.AN.LEGACY_AUDIO_SUBSYSTEM),
-    experimentalAudioSubsystemSupported: l.Z.supports(d.AN.EXPERIMENTAL_AUDIO_SUBSYSTEM),
-    automaticAudioSubsystemSupported: l.Z.supports(d.AN.AUTOMATIC_AUDIO_SUBSYSTEM)
-  })), E = (0, r.jsx)(a.q4e, {
-    className: _.marginBottom20,
-    value: n,
-    options: p(h, m, g),
-    onChange: e => {
-      let t = () => o.Z.setAudioSubsystem(e);
-      (0, c.Z)(f.intl.string(f.t.uY7AcX), f.intl.string(f.t.gBqik5), t)
-    }
-  });
-  return (0, r.jsx)(s.F, {
-    setting: u.s6.VOICE_AND_VIDEO_ADVANCED_SUBSYSTEM,
-    children: t ? (0, r.jsx)(a.xJW, {
-      title: f.intl.string(f.t.wVBHr6),
-      children: E
-    }) : (0, r.jsxs)(a.hjN, {
-      className: _.marginBottom20,
-      title: f.intl.string(f.t.wVBHr6),
-      children: [E, (0, r.jsx)(a.$i$, {
-        className: _.marginBottom20
-      })]
+    audioSubsystem: e,
+    legacyAudioSubsystemSupported: t,
+    experimentalAudioSubsystemSupported: n,
+    automaticAudioSubsystemSupported: h
+  } = (0, Chunk442837.cj)([Chunk131951.Z], () => ({
+    audioSubsystem: Chunk131951.Z.getAudioSubsystem(),
+    legacyAudioSubsystemSupported: Chunk131951.Z.supports(Chunk65154.AN.LEGACY_AUDIO_SUBSYSTEM),
+    experimentalAudioSubsystemSupported: Chunk131951.Z.supports(Chunk65154.AN.EXPERIMENTAL_AUDIO_SUBSYSTEM),
+    automaticAudioSubsystemSupported: Chunk131951.Z.supports(Chunk65154.AN.AUTOMATIC_AUDIO_SUBSYSTEM)
+  }));
+  return (0, Chunk951288.jsx)(Chunk921801.F, {
+    setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_SUBSYSTEM,
+    children: (0, Chunk951288.jsx)(Chunk481060.xJW, {
+      title: Chunk388032.intl.string(Chunk388032.t.wVBHr6),
+      children: (0, Chunk951288.jsx)(Chunk481060.q4e, {
+        className: Chunk197571.marginBottom20,
+        value: module,
+        options: p(exports, require, h),
+        onChange: e => {
+          let t = () => o.Z.setAudioSubsystem(e);
+          (0, c.Z)(f.intl.string(f.t.uY7AcX), f.intl.string(f.t.gBqik5), t)
+        }
+      })
     })
   })
 }

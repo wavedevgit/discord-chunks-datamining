@@ -118,7 +118,7 @@ function Z(e) {
   })
 }
 
-function V(e) {
+function F(e) {
   var t;
   let {
     channelId: n
@@ -126,7 +126,7 @@ function V(e) {
   return w.clearGuildId(null == (t = g.Z.getChannel(n)) ? true : t.guild_id)
 }
 
-function F(e) {
+function V(e) {
   let {
     channelId: t
   } = e;
@@ -313,7 +313,7 @@ let eu = new ec(Chunk570140.Z, {
   CATEGORY_EXPAND_ALL: B,
   CATEGORY_EXPAND: ee,
   CHANNEL_ACK: Y,
-  CHANNEL_COLLAPSE: V,
+  CHANNEL_COLLAPSE: F,
   CHANNEL_CREATE: L,
   CHANNEL_DELETE: L,
   CHANNEL_LOCAL_ACK: Y,
@@ -357,7 +357,7 @@ let eu = new ec(Chunk570140.Z, {
   LOAD_CHANNELS: Z,
   LOAD_MESSAGES_SUCCESS: Y,
   MESSAGE_ACK: Y,
-  MESSAGE_CREATE: F,
+  MESSAGE_CREATE: V,
   MESSAGE_DELETE_BULK: Y,
   MESSAGE_DELETE: Y,
   NOTIFICATION_SETTINGS_UPDATE: D,

@@ -118,8 +118,8 @@ function B(e) {
   })), {
     source: B,
     pendingAvatar: Z,
-    pendingNameplate: V
-  } = U, F = M(U, ["source", "pendingAvatar", "pendingNameplate"]), H = (0, b.SD)({
+    pendingNameplate: F
+  } = U, V = M(U, ["source", "pendingAvatar", "pendingNameplate"]), H = (0, b.SD)({
     userId: a.id,
     image: Z
   }), Y = (0, m.K)({
@@ -159,7 +159,7 @@ function B(e) {
             guildName: null == t ? true : t.name
           })
         }),
-        profilePreview: (0, r.jsx)(E.Z, k(L({}, F), {
+        profilePreview: (0, r.jsx)(E.Z, k(L({}, V), {
           pendingAvatar: H,
           user: a,
           guild: t,
@@ -169,8 +169,8 @@ function B(e) {
         nameplatePreview: W ? (0, r.jsx)(p.Z, {
           user: a,
           guildId: null == t ? true : t.id,
-          nameplate: V,
-          nameplateData: null == V ? Y : true,
+          nameplate: F,
+          nameplateData: null == F ? Y : true,
           isHighlighted: true
         }) : null,
         children: (0, r.jsx)(N.Z, {

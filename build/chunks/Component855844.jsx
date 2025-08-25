@@ -66,8 +66,8 @@ function C(e) {
       analyticsLocations: U,
       asSubmenu: true
     }),
-    V = (0, a.e7)([g.Z], () => g.Z.getActiveInputProfile()),
-    F = (0, h.Z)(U),
+    F = (0, a.e7)([g.Z], () => g.Z.getActiveInputProfile()),
+    V = (0, h.Z)(U),
     H = (0, p.Z)(U),
     Y = (0, m.Z)(U),
     W = o.Yn.DEFAULT,
@@ -92,7 +92,7 @@ function C(e) {
       "aria-label": S.intl.string(S.t.ZR1Ss7),
       className: A.menu,
       children: [(0, r.jsxs)(s.kSQ, {
-        children: [L && B, w && F, D && Z]
+        children: [L && B, w && V, D && Z]
       }), (0, r.jsxs)(s.kSQ, {
         children: [j && H, k && Q && (0, r.jsx)(s.II_, {
           id: "input-device-meter",
@@ -113,7 +113,7 @@ function C(e) {
           action: () => l.Z.setMode(q, true, true, {
             analyticsLocations: U
           }),
-          disabled: V === I._.STUDIO
+          disabled: F === I._.STUDIO
         }) : null, P && (0, r.jsx)(s.S89, {
           id: "deafen",
           label: S.intl.string(S.t.wjcRFR),

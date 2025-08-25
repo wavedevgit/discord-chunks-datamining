@@ -158,9 +158,9 @@ let P = ["TOP_LEFT", "TOP_RIGHT"],
       }
     })
   }),
-  V = "falling-leaf";
+  F = "falling-leaf";
 
-function F(e) {
+function V(e) {
   switch (e.type) {
     case y.uaV.GUILD_BOOST_TIER_1:
       return y.Eu4.TIER_1;
@@ -282,7 +282,7 @@ function ee(e) {
     if (I && "leaf_fall" === f) {
       let e = Z[h].leafRotationDirection;
       y.createConfetti({
-        id: "".concat(V, "-").concat((0, l.Z)()),
+        id: "".concat(F, "-").concat((0, l.Z)()),
         position: {
           type: "static",
           value: $(u.current, h)
@@ -357,7 +357,7 @@ function et(e) {
       usernameHook: s,
       onClickMessage: l
     } = e,
-    c = F(n),
+    c = V(n),
     u = (0, m.Z)(n),
     {
       createMultipleConfettiAt: I,
@@ -408,7 +408,7 @@ function et(e) {
       }), f.Z.open(y.oAB.POGGERMODE), A(false)
     }, []),
     k = i.useCallback((e, t) => {
-      (null == t ? true : t.id.startsWith(V)) && j()
+      (null == t ? true : t.id.startsWith(F)) && j()
     }, [j]);
   i.useEffect(() => T(k));
   let M = (0, r.jsx)(d.P3F, {

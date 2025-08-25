@@ -44,7 +44,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk640292 = require("./640292.js");
 
-function V(e, t, n) {
+function F(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -53,14 +53,14 @@ function V(e, t, n) {
   }) : e[t] = n, e
 }
 
-function F(e) {
+function V(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      V(e, t, n[t])
+      F(e, t, n[t])
     })
   }
   return e
@@ -93,7 +93,7 @@ function Q(e) {
     onSettingsButtonClick: t,
     wide: n,
     showOutputDevices: a = false,
-    showSearchBar: V = true
+    showSearchBar: F = true
   } = e, [H, Q] = i.useState(""), {
     analyticsLocations: J,
     newestAnalyticsLocation: $
@@ -181,7 +181,7 @@ function Q(e) {
         children: (0, r.jsx)("div", {
           className: Z.resizePill
         })
-      }), V && (0, r.jsx)(c.E1j, {
+      }), F && (0, r.jsx)(c.E1j, {
         placeholder: B.intl.string(B.t.hHCZJS),
         className: Z.voiceFiltersHeader,
         autoFocus: true,
@@ -194,7 +194,7 @@ function Q(e) {
         handleScroll: ep,
         voiceListRef: e_
       }), !en && (0, r.jsxs)(s.animated.div, {
-        style: Y(F({}, ef), {
+        style: Y(V({}, ef), {
           display: ef.opacity.to(e => 0 === e ? "none" : "block")
         }),
         className: Z.upsellCountdownContainer,
@@ -264,7 +264,7 @@ function Q(e) {
             }),
             minimal: true
           }),
-          children: e => (0, r.jsx)(c.hU, Y(F({
+          children: e => (0, r.jsx)(c.hU, Y(V({
             variant: "secondary"
           }, e), {
             buttonRef: em,

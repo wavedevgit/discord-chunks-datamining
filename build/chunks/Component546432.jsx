@@ -185,7 +185,7 @@ let Z = e => {
   })
 };
 
-function V(e) {
+function F(e) {
   let {
     message: t,
     item: n,
@@ -210,8 +210,8 @@ function V(e) {
     mediaLayoutType: U,
     maxWidth: G,
     maxHeight: B,
-    hasFooter: V,
-    useFullWidth: F,
+    hasFooter: F,
+    useFullWidth: V,
     isVisualMediaType: H,
     onVideoControlsShow: Y,
     onVideoControlsHide: W,
@@ -236,7 +236,7 @@ function V(e) {
       maxWidth: null != G ? G : A.mT,
       maxHeight: null != B ? B : A.Jj
     });
-    !F && (e * (null != q ? q : 0) < A.OF || e * (null != X ? X : 0) < A.OF) && (eu = true)
+    !V && (e * (null != q ? q : 0) < A.OF || e * (null != X ? X : 0) < A.OF) && (eu = true)
   }
   let ed = i.useCallback(() => {
       f(n)
@@ -296,7 +296,7 @@ function V(e) {
     maxWidth: G,
     maxHeight: B,
     mediaLayoutType: U,
-    useFullWidth: F,
+    useFullWidth: V,
     zoomable: false
   });
   switch (J) {
@@ -322,7 +322,7 @@ function V(e) {
           mediaLayoutType: U,
           maxWidth: G,
           maxHeight: B,
-          useFullWidth: F,
+          useFullWidth: V,
           handlePreloadImage: p,
           onMouseEnter: () => ef(true),
           onMouseLeave: () => ef(false)
@@ -341,19 +341,19 @@ function V(e) {
         naturalWidth: q,
         naturalHeight: X,
         className: o()(x, {
-          [R.hasFooter]: V
+          [R.hasFooter]: F
         }),
         playable: k,
         responsive: true,
         mediaLayoutType: U,
         maxWidth: G,
         maxHeight: B,
-        useFullWidth: F,
+        useFullWidth: V,
         mimeType: el,
         onControlsShow: Y,
         onControlsHide: W,
         downloadable: !eo,
-        mediaPlayerClassName: V ? R.hasFooter : true
+        mediaPlayerClassName: F ? R.hasFooter : true
       });
     case "VISUAL_PLACEHOLDER":
       if (null == D) return null;
@@ -365,7 +365,7 @@ function V(e) {
         maxWidth: G,
         maxHeight: B,
         mediaLayoutType: U,
-        useFullWidth: F
+        useFullWidth: V
       });
     case "AUDIO":
       return (0, r.jsx)(S, {
@@ -402,7 +402,7 @@ function V(e) {
   }
 }
 
-function F(e, t, n) {
+function V(e, t, n) {
   if (!t) return;
   let r = e.width;
   if (true !== e.width && true !== e.height) {
@@ -446,7 +446,7 @@ let H = function(e) {
     B(false)
   }, Y = function() {
     let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
-    return (0, r.jsx)(V, L(D({}, p), {
+    return (0, r.jsx)(F, L(D({}, p), {
       item: n,
       message: a,
       getObscureReason: s,
@@ -486,7 +486,7 @@ let H = function(e) {
       reason: O,
       isSingleMosaicItem: u,
       obscured: v,
-      containerStyles: F(n, P, c),
+      containerStyles: V(n, P, c),
       obscurityControlClassName: o()({
         [R.obscureVideoSpacing]: "VIDEO" === y && u && !v && k
       }),

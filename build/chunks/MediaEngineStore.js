@@ -128,8 +128,8 @@ let eR = new Chunk710845.Z("MediaEngineStore"),
   eG = 5 * Chunk70956.Z.Millis.SECOND,
   eB = false,
   eZ = 100,
-  eV = 2 * Chunk70956.Z.Millis.SECOND,
-  eF = 0;
+  eF = 2 * Chunk70956.Z.Millis.SECOND,
+  eV = 0;
 
 function eH() {
   return {
@@ -344,7 +344,7 @@ function tk() {
     if (null != o.desktopSource) {
       let t = tR(),
         n = tw().videoHook,
-        i = tF(),
+        i = tV(),
         a = i ? tH() && (0, Chunk787517.R)("MediaEngineStore_updateVideo").enabled ? Chunk70722.zj : Chunk70722.ZM : 0;
       eW.setGoLiveSource({
         desktopDescription: {
@@ -418,7 +418,7 @@ function tZ(e) {
   }
 }
 
-function tV() {
+function tF() {
   eW.on(Chunk46973.aB.Connection, e => {
     var t;
     tD(e), tL(e), tZ(e);
@@ -443,13 +443,13 @@ function tV() {
       let {
         simulcastEnabled: t,
         lqStreamBitrate: n
-      } = V.Z.getConfig();
+      } = F.Z.getConfig();
       e.configureGoLiveSimulcast(t, n);
       let {
         enabled: r,
         scaleOffBitrateFloor: i,
         adjustMaxBitrateFloor: a
-      } = (0, F.k)({
+      } = (0, V.k)({
         location: "setupMediaEngine",
         autoTrackExposure: true
       });
@@ -490,7 +490,7 @@ function tV() {
         speakingFlags: n
       })
     }), e.context === eI.Yn.DEFAULT && (e9 = false, te = false, e.on(b.Sh.SpeakingWhileMuted, () => {
-      e9 = true, te = true, r.emitChange(), tt.stop(), tt.start(eV, () => {
+      e9 = true, te = true, r.emitChange(), tt.stop(), tt.start(eF, () => {
         te = false, r.emitChange()
       })
     })), e.on(b.Sh.DesktopSourceEnd, (t, n) => {
@@ -687,7 +687,7 @@ function tV() {
         return {
           stats: t,
           mediaEngineConnectionId: n.mediaEngineConnectionId,
-          version: eF++,
+          version: eV++,
           context: n.context
         }
       })
@@ -707,7 +707,7 @@ function tV() {
   })
 }
 
-function tF() {
+function tV() {
   return (0, Chunk358085.isWindows)() && m().satisfies(null === Chunk579806.Z || true === Chunk579806.Z ? true : Chunk579806.Z.os.release, Chunk70722.c5)
 }
 
@@ -1380,11 +1380,11 @@ function nZ(e) {
   }), tz.update()
 }
 
-function nV(e) {
+function nF(e) {
   eW.setDebugLogging(e.enabled)
 }
 
-function nF(e) {
+function nV(e) {
   let {
     level: t
   } = e;
@@ -1658,7 +1658,7 @@ function rs(e) {
       id: o.desktopSource.id,
       soundshareId: o.desktopSource.soundshareId,
       useVideoHook: _,
-      useGraphicsCapture: tF(),
+      useGraphicsCapture: tV(),
       useLoopback: r.getExperimentalSoundshare(),
       useQuartzCapturer: true,
       allowScreenCaptureKit: tY(),
@@ -1818,7 +1818,7 @@ function rv(e) {
 }
 class rI extends(u = Chunk442837.ZP.Store) {
   initialize() {
-    tV(), tq(), n2(), n_(), tS = {
+    tF(), tq(), n2(), n_(), tS = {
       [Chunk65154.AN.VIDEO]: eW.supports(Chunk65154.AN.VIDEO),
       [Chunk65154.AN.DESKTOP_CAPTURE]: eW.supports(Chunk65154.AN.DESKTOP_CAPTURE),
       [Chunk65154.AN.HYBRID_VIDEO]: eW.supports(Chunk65154.AN.HYBRID_VIDEO)
@@ -2322,8 +2322,8 @@ let rS = r = new rI(Chunk570140.Z, {
   AUDIO_SET_NOISE_CANCELLATION: nk,
   AUDIO_SET_KRISP_MODEL_OVERRIDE: nM,
   AUDIO_SET_DISPLAY_SILENCE_WARNING: nZ,
-  AUDIO_SET_DEBUG_LOGGING: nV,
-  AUDIO_SET_KRISP_SUPPRESSION_LEVEL: nF,
+  AUDIO_SET_DEBUG_LOGGING: nF,
+  AUDIO_SET_KRISP_SUPPRESSION_LEVEL: nV,
   AUDIO_SET_NOISE_CANCELLATION_ENABLE_STATS: nU,
   MEDIA_ENGINE_SET_VIDEO_HOOK: nH,
   MEDIA_ENGINE_SET_EXPERIMENTAL_SOUNDSHARE: nY,

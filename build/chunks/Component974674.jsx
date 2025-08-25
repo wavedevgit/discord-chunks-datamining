@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Vq: () => D,
-  Xo: () => F,
+  Xo: () => V,
   qE: () => U,
   qe: () => M
 }), require("./415506.js"), require("./388685.js");
@@ -544,7 +544,7 @@ function Z(e) {
     "aria-label": x,
     imageClassName: U,
     pulseStatusIcon: Z
-  } = e, V = (0, d.vj)(v, S), F = i.useId(), H = i.useId(), [Y] = i.useState(() => O({
+  } = e, F = (0, d.vj)(v, S), V = i.useId(), H = i.useId(), [Y] = i.useState(() => O({
     fill: a
   }, j({
     size: E,
@@ -552,13 +552,13 @@ function Z(e) {
     isMobile: t,
     isTyping: false
   }))), W = i.useMemo(() => O({
-    fill: V
+    fill: F
   }, j({
     size: E,
     status: v,
     isMobile: c,
     isTyping: _
-  })), [V, E, v, c, _]), K = (0, l.q)({
+  })), [F, E, v, c, _]), K = (0, l.q)({
     config: A,
     from: Y,
     to: W
@@ -598,7 +598,7 @@ function Z(e) {
       className: o()(b.mask, b.svg),
       "aria-hidden": true,
       children: [(0, r.jsxs)("mask", {
-        id: F,
+        id: V,
         width: et,
         height: et,
         children: [(0, r.jsx)("circle", {
@@ -621,7 +621,7 @@ function Z(e) {
         y: 0,
         width: et,
         height: et,
-        mask: "url(#".concat(F, ")"),
+        mask: "url(#".concat(V, ")"),
         children: (0, r.jsx)(M, {
           src: y,
           isSpeaking: m,
@@ -664,11 +664,11 @@ function Z(e) {
   }))
 }
 
-function V(e, t, n, r, i) {
+function F(e, t, n, r, i) {
   return null != n && null != t && (!!e || t !== n || t === h.Skl.ONLINE && r !== i)
 }
 M.displayName = "AvatarImg";
-let F = Chunk647438.memo(function(e) {
+let V = Chunk647438.memo(function(e) {
   var {
     statusColor: t,
     status: n
@@ -676,7 +676,7 @@ let F = Chunk647438.memo(function(e) {
   let {
     isMobile: o = false,
     isTyping: s = false
-  } = a, l = i.useRef(n), c = i.useRef(o), u = (0, d.vj)(n, t), f = i.useRef(u), _ = i.useRef(false), p = _.current || V(s, n, l.current, o, c.current);
+  } = a, l = i.useRef(n), c = i.useRef(o), u = (0, d.vj)(n, t), f = i.useRef(u), _ = i.useRef(false), p = _.current || F(s, n, l.current, o, c.current);
   return i.useLayoutEffect(() => {
     _.current = p, l.current = n, c.current = o, f.current = u
   }, [n, o, u, p]), null != n && null != l.current && p ? (0, r.jsx)(Z, I(O({}, a), {

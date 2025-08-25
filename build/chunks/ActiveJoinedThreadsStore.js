@@ -189,12 +189,12 @@ function Z(e) {
   return null != t.guild_id && null != t.parent_id && (t.guild_id in I && t.parent_id in I[t.guild_id] && (delete I[t.guild_id][t.parent_id], n = true), t.guild_id in T && t.parent_id in T[t.guild_id] && (delete T[t.guild_id][t.parent_id], n = true), t.guild_id in C && t.parent_id in C[t.guild_id] && (p.default.keys(C[t.guild_id][t.parent_id]).forEach($), delete C[t.guild_id][t.parent_id], n = true), t.guild_id in S && t.parent_id in S[t.guild_id] && (delete S[t.guild_id][t.parent_id], n = true), t.guild_id in A && t.parent_id in A[t.guild_id] && (delete A[t.guild_id][t.parent_id], n = true), n && k(t.guild_id, t.parent_id)), n
 }
 
-function V(e) {
+function F(e) {
   let t = u.Z.getChannel(e.id);
   return null != t && !!h.Z.isActive(e.guildId, t.parent_id, e.id) && M(t.guild_id, t.parent_id, t.id)
 }
 
-function F(e) {
+function V(e) {
   let t = u.Z.getChannel(e.channelId);
   if (null == t) H();
   else {
@@ -270,7 +270,7 @@ function K(e) {
 }
 
 function z(e) {
-  F(e), q()
+  V(e), q()
 }
 
 function q() {
@@ -427,15 +427,15 @@ let eu = new ec(Chunk570140.Z, {
   THREAD_DELETE: U,
   CHANNEL_UPDATES: G,
   CHANNEL_DELETE: Z,
-  THREAD_MEMBER_UPDATE: V,
-  THREAD_MEMBERS_UPDATE: V,
-  LOAD_MESSAGES_SUCCESS: F,
-  MESSAGE_CREATE: F,
-  MESSAGE_DELETE: F,
-  MESSAGE_DELETE_BULK: F,
-  MESSAGE_ACK: F,
-  CHANNEL_ACK: F,
-  CHANNEL_LOCAL_ACK: F,
+  THREAD_MEMBER_UPDATE: F,
+  THREAD_MEMBERS_UPDATE: F,
+  LOAD_MESSAGES_SUCCESS: V,
+  MESSAGE_CREATE: V,
+  MESSAGE_DELETE: V,
+  MESSAGE_DELETE_BULK: V,
+  MESSAGE_ACK: V,
+  CHANNEL_ACK: V,
+  CHANNEL_LOCAL_ACK: V,
   CHANNEL_SELECT: z,
   PASSIVE_UPDATE_V2: Y,
   WINDOW_FOCUS: H,

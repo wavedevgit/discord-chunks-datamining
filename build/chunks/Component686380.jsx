@@ -2,7 +2,7 @@
 /** chunk id: 686380, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => F
+  Z: () => V
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -93,7 +93,7 @@ let B = "???",
       }))
     })
   };
-class V extends Chunk647438.Component {
+class F extends Chunk647438.Component {
   getSystemMessageHeader() {
     let e = Chunk594174.default.getUser(this.trialOffer.user_id);
     if (this.isSender) return Chunk388032.intl.format(Chunk388032.t["4/EMxs"], {
@@ -314,7 +314,7 @@ class V extends Chunk647438.Component {
   }
 }
 
-function F(e) {
+function V(e) {
   let {
     userTrialOfferId: t,
     canRenderReferralEmbed: n,
@@ -337,7 +337,7 @@ function F(e) {
   });
   return o ? (0, r.jsx)(f.OR, {
     isHorizontal: !c.tq
-  }) : n && null != a && true !== l ? (0, r.jsx)(V, {
+  }) : n && null != a && true !== l ? (0, r.jsx)(F, {
     trialOffer: a,
     referralsSent: s,
     currentUser: l,

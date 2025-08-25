@@ -169,14 +169,14 @@ function Z() {
   T = true
 }
 
-function V(e) {
+function F(e) {
   let {
     key: t
   } = e;
   v.hiddenSurveys[t] = true, A = null, S = null != S ? S : {}, delete S[t]
 }
 
-function F() {
+function V() {
   v.hiddenSurveys = {}
 }
 
@@ -235,10 +235,10 @@ let q = new z(Chunk570140.Z, {
   CONNECTION_OPEN: x,
   CONNECTION_RESUMED: x,
   SURVEY_FETCHED: U,
-  SURVEY_HIDE: V,
+  SURVEY_HIDE: F,
   SURVEY_OVERRIDE: G,
   PUSH_NOTIFICATION_CLICK: B,
   DISPLAYED_INVITE_SHOW: Z,
-  LOGOUT: F,
+  LOGOUT: V,
   SURVEY_SEEN: K
 })

@@ -87,12 +87,12 @@ var a, Chunk76466 = require("./76466.js"),
     var t = e;
     return !!(t.href && ("http:" === t.protocol || "https:" === t.protocol || "mailto:" === t.protocol))
   },
-  V = function(e) {
+  F = function(e) {
     if (!I(e)) returnfalse;
     var t = e;
     return !!(t.attributes.getNamedItem("src") && t.attributes.getNamedItem("src").value)
   },
-  F = function(e, t) {
+  V = function(e, t) {
     if (!v(e)) return t;
     var n = e,
       r = n.style.fontWeight,
@@ -172,7 +172,7 @@ var a, Chunk76466 = require("./76466.js"),
           this._addBreakNode(i, t);
           continue
         }
-        if (V(i)) {
+        if (F(i)) {
           this._addImgNode(i, t);
           continue
         }
@@ -181,7 +181,7 @@ var a, Chunk76466 = require("./76466.js"),
           continue
         }
         var h = t;
-        U.has(a) && (h = h.add(U.get(a))), h = F(i, h), n.push.apply(n, this._toBlockConfigs(Array.from(i.childNodes), h))
+        U.has(a) && (h = h.add(U.get(a))), h = V(i, h), n.push.apply(n, this._toBlockConfigs(Array.from(i.childNodes), h))
       }
       return n
     }, exports._appendText = function(e, t) {

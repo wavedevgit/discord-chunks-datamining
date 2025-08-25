@@ -52,7 +52,7 @@ function Z(e, t, n) {
   }) : e[t] = n, e
 }
 
-function V(e) {
+function F(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -65,7 +65,7 @@ function V(e) {
   return e
 }
 
-function F(e, t) {
+function V(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -77,7 +77,7 @@ function F(e, t) {
 }
 
 function H(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : F(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : V(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -86,7 +86,7 @@ function Y(e) {
   var t, n;
   let {
     user: Z,
-    isVisible: F,
+    isVisible: V,
     shouldShow: Y
   } = e, W = C.ZP.isPremium(Z), {
     pendingAvatar: K,
@@ -99,7 +99,7 @@ function Y(e) {
   } = (0, a.cj)([S.Z], () => {
     let e = S.Z.getAllPending(),
       t = S.Z.getErrors();
-    return H(V({}, e, S.Z.getAllTryItOut()), {
+    return H(F({}, e, S.Z.getAllTryItOut()), {
       errors: t
     })
   }), ee = (0, p.Z)(J), {
@@ -123,14 +123,14 @@ function Y(e) {
     }
   };
   i.useEffect(() => {
-    F && A.default.track(k.rMx.PREMIUM_UPSELL_VIEWED, {
+    V && A.default.track(k.rMx.PREMIUM_UPSELL_VIEWED, {
       type: M.cd.PREMIUM_PROFILE_TRY_IT_OUT,
       location: {
         page: k.ZY5.USER_SETTINGS
       },
       location_stack: eo
     })
-  }, [eo, Z, F]);
+  }, [eo, Z, V]);
   let el = (null == (n = (0, m.N)()) || null == (t = n.subscription_trial) ? true : t.sku_id) === M.Si.TIER_2,
     ec = (0, h.Ng)(),
     eu = (0, h.Wp)(ec, M.Si.TIER_2),

@@ -928,7 +928,7 @@ function ef() {
       children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
         value: Chunk692547,
         note: "Make user targetable for all active ads",
-        onChange: e => F.zY.updateSetting(e),
+        onChange: e => V.zY.updateSetting(e),
         children: "Ads auto-targeting"
       })
     }), (0, Chunk951288.jsx)(Chunk921801.F, {

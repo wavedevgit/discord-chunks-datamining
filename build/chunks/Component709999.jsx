@@ -305,8 +305,8 @@ function ev(e) {
   } = (0, I.WX)({
     location: "collectibles_shop_tall_card"
   }), {
-    handleUseNow: V,
-    isApplying: F
+    handleUseNow: F,
+    isApplying: V
   } = (0, L.W)({
     product: i
   }), Y = c(g.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON), W = (0, Q.Iw)(t), K = null != W, {
@@ -515,9 +515,9 @@ function ev(e) {
     em = () => (0, r.jsx)(p.zxk, {
       variant: "primary",
       onClick: e => {
-        e.stopPropagation(), V()
+        e.stopPropagation(), F()
       },
-      loading: F,
+      loading: V,
       text: es.intl.string(es.t.MAS7uL),
       fullWidth: true
     }),
@@ -617,7 +617,7 @@ let eI = Chunk647438.memo(function(e) {
         tile_type: u.Z[t.type],
         tile_position: String(null == w ? true : w.tilePosition),
         cta_name: null
-      }), (0, V.T)({
+      }), (0, F.T)({
         product: t,
         category: a,
         shouldCheckoutWithOrbs: r,
@@ -729,7 +729,7 @@ let eI = Chunk647438.memo(function(e) {
             if (null == e) return null;
             let [n] = e.items;
             return eh(n, ep, ee, ed)
-          }).with(u.Z.EXTERNAL_SKU, () => (0, r.jsx)(F.b, {
+          }).with(u.Z.EXTERNAL_SKU, () => (0, r.jsx)(V.b, {
             product: t,
             animationState: ep ? "on" : "off",
             className: eo || ee && !ep ? el.externalProductDimmed : true

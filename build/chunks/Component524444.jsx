@@ -61,7 +61,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk180376 = require("./180376.js");
 
-function F(e, t, n) {
+function V(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -77,7 +77,7 @@ function H(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      F(e, t, n[t])
+      V(e, t, n[t])
     })
   }
   return e
@@ -212,7 +212,7 @@ function et(e) {
     } = e;
     return (0, r.jsxs)(d.VqE, {
       "aria-label": Z.intl.string(Z.t.fSiQ3N),
-      className: V.mediaMosaicAltTextPopout,
+      className: F.mediaMosaicAltTextPopout,
       onKeyDown: e => {
         e.key === G.mR.Escape && setTimeout(() => {
           var e;
@@ -220,22 +220,22 @@ function et(e) {
         }, 0)
       },
       children: [(0, r.jsx)("span", {
-        className: V.mediaMosaicAltTextPopoutTitle,
+        className: F.mediaMosaicAltTextPopoutTitle,
         children: Z.intl.string(Z.t.fSiQ3N)
       }), (0, r.jsx)("span", {
-        className: V.mediaMosaicAltTextPopoutDescription,
+        className: F.mediaMosaicAltTextPopoutDescription,
         children: t
       })]
     })
   }, b = i.createRef();
   return (0, r.jsxs)("div", {
-    className: o()(V.imageContent, s),
+    className: o()(F.imageContent, s),
     children: [(0, r.jsxs)("div", {
-      className: o()(V.imageContainer, l),
+      className: o()(F.imageContainer, l),
       style: _,
       children: [(0, r.jsx)(p.Z, H({}, e)), null != a && a()]
     }), m && g && (0, r.jsx)("div", {
-      className: V.mediaMosaicAltTextContainer,
+      className: F.mediaMosaicAltTextContainer,
       children: (0, r.jsx)(d.yRy, {
         targetElementRef: b,
         animation: d.yRy.Animation.FADE,
@@ -248,15 +248,15 @@ function et(e) {
             type: "button",
             ref: b,
             "aria-label": Z.intl.string(Z.t.fSiQ3N),
-            className: o()(V.mediaMosaicAltText, {
-              [V.reducedSize]: u
+            className: o()(F.mediaMosaicAltText, {
+              [F.reducedSize]: u
             }),
             children: Z.intl.string(Z.t.jCV1T0)
           }))
         })
       })
     }), !m && g && (0, r.jsx)("span", {
-      className: V.altText,
+      className: F.altText,
       children: t
     })]
   })
@@ -312,9 +312,9 @@ let el = e => {
     return (0, r.jsx)(b.G.Consumer, {
       children: e => e.disableInteractions ? null : (0, r.jsxs)("div", {
         onClick: n,
-        className: o()(V.jumpToPresentBar, i),
+        className: o()(F.jumpToPresentBar, i),
         children: [(0, r.jsx)("div", {
-          className: V.barButtonMain,
+          className: F.barButtonMain,
           children: eo(t)
         }), null != n ? (0, r.jsx)(d.tEY, {
           offset: false,
@@ -326,8 +326,8 @@ let el = e => {
           })
         }) : (0, r.jsx)(d.$jN, {
           type: d.$jN.Type.PULSING_ELLIPSIS,
-          className: V.spinner,
-          itemClassName: V.spinnerItem
+          className: F.spinner,
+          itemClassName: F.spinnerItem
         })]
       })
     })
@@ -340,7 +340,7 @@ let el = e => {
     } = e;
     return (0, r.jsx)(b.G.Consumer, {
       children: e => e.disableInteractions ? null : (0, r.jsxs)(d.P3F, {
-        className: o()(V.messagesErrorBar, i),
+        className: o()(F.messagesErrorBar, i),
         onClick: t,
         focusProps: {
           offset: {
@@ -351,14 +351,14 @@ let el = e => {
           }
         },
         children: [(0, r.jsx)("div", {
-          className: V.barButtonMain,
+          className: F.barButtonMain,
           children: Z.intl.string(Z.t["1zUvl5"])
         }), n ? (0, r.jsx)(d.$jN, {
           type: d.$jN.Type.PULSING_ELLIPSIS,
-          className: V.spinner,
-          itemClassName: V.spinnerItem
+          className: F.spinner,
+          itemClassName: F.spinnerItem
         }) : (0, r.jsx)("div", {
-          className: V.barButtonAlt,
+          className: F.barButtonAlt,
           children: Z.intl.string(Z.t.TdQXAw)
         })]
       })
@@ -392,20 +392,20 @@ function eu(e) {
     disableInteractions: c
   } = i.useContext(b.G);
   return c ? null : (0, r.jsxs)("div", {
-    className: o()(V.newMessagesBar, {
-      [V.disableInteractions]: c
+    className: o()(F.newMessagesBar, {
+      [F.disableInteractions]: c
     }),
     children: [(0, r.jsx)(d.tEY, {
       offset: 4,
       children: (0, r.jsx)("button", {
         type: "button",
-        className: V.barButtonMain,
+        className: F.barButtonMain,
         onClick: s,
         "aria-label": Z.intl.string(Z.t.z0Mkp6),
         "aria-describedby": a,
         children: (0, r.jsx)("span", {
           id: a,
-          className: V.span,
+          className: F.span,
           children: t
         })
       })
@@ -414,11 +414,11 @@ function eu(e) {
       children: (0, r.jsxs)("button", {
         type: "button",
         onClick: l,
-        className: V.barButtonAlt,
+        className: F.barButtonAlt,
         children: [Z.intl.string(Z.t.e6RscX), (0, r.jsx)(d.eQA, {
           size: "md",
           color: "currentColor",
-          className: V.barButtonIcon
+          className: F.barButtonIcon
         })]
       })
     })]
@@ -459,8 +459,8 @@ function ed(e) {
         }).filter(L.lm)
       })) ? e : []
     }, [j], e_),
-    F = null != (n = (0, u.e7)([A.Z], () => A.Z.visibleSummaryIndex())) ? n : false,
-    H = null == j || null == (t = j[F]) ? true : t.topic;
+    V = null != (n = (0, u.e7)([A.Z], () => A.Z.visibleSummaryIndex())) ? n : false,
+    H = null == j || null == (t = j[V]) ? true : t.topic;
   null == H && null == y && (null == j ? true : j.length) >= 1 && (H = null == (a = j[0]) ? true : a.topic);
   let Y = i.useMemo(() => l().debounce(e => {
       var t;
@@ -579,59 +579,59 @@ function ed(e) {
     er = Z.intl.string(Z.t["38qwgI"]);
   return j.length > 0 && (er = "" === H || null == H ? Z.intl.string(Z.t.DwnFuL) : H), E ? null : (0, r.jsxs)("div", {
     ref: I,
-    className: o()(V.newTopicsBarContainer, V.containerMarginTop),
+    className: o()(F.newTopicsBarContainer, F.containerMarginTop),
     children: [(0, r.jsx)("div", {
-      className: V.newTopicsBarTopicSection,
+      className: F.newTopicsBarTopicSection,
       children: (0, r.jsx)(d.P3F, {
-        className: V.newTopicsBarTextClickable,
+        className: F.newTopicsBarTextClickable,
         "aria-label": Z.intl.string(Z.t.RT3MPz),
         onClick: X,
         children: (0, r.jsxs)("div", {
           className: o()({
-            [V.newTopicsBarTextUnselected]: !z,
-            [V.newTopicsBarTextSelected]: z
+            [F.newTopicsBarTextUnselected]: !z,
+            [F.newTopicsBarTextSelected]: z
           }),
           children: [(0, r.jsx)(d.sVe, {
             size: "xs",
             color: "currentColor",
-            className: V.newTopicsBarIcon
+            className: F.newTopicsBarIcon
           }), (0, r.jsx)(d.Text, {
             variant: "text-sm/medium",
-            className: o()(V.newTopicsBarCompact, V.newTopicsBarText),
+            className: o()(F.newTopicsBarCompact, F.newTopicsBarText),
             children: er
           }), (0, r.jsx)(D.Z, {
             width: 16,
             height: 16,
             direction: D.Z.Directions.DOWN,
-            className: V.newTopicsBarCaret
+            className: F.newTopicsBarCaret
           })]
         })
       })
     }), (0, r.jsx)(d.P3F, {
       onClick: et,
-      className: V.newTopicsBarInitial,
+      className: F.newTopicsBarInitial,
       children: p
     }), (0, r.jsxs)(d.P3F, {
       onClick: en,
-      className: o()(V.barButtonAlt, V.flexEnd),
+      className: o()(F.barButtonAlt, F.flexEnd),
       children: [(0, r.jsx)("div", {
-        className: V.newTopicsBarCompact,
+        className: F.newTopicsBarCompact,
         children: Z.intl.string(Z.t.e6RscX)
       }), (0, r.jsx)(d.eQA, {
         size: "md",
         color: "currentColor",
-        className: V.barButtonIcon
+        className: F.barButtonIcon
       })]
     }), z && (0, r.jsxs)("div", {
-      className: V.topicsDropdown,
+      className: F.topicsDropdown,
       children: [(0, r.jsxs)("div", {
-        className: V.topicsDropdownHeading,
+        className: F.topicsDropdownHeading,
         children: [(0, r.jsxs)("div", {
-          className: V.topicsDropdownHeadingText,
+          className: F.topicsDropdownHeadingText,
           children: [(0, r.jsx)(d.sVe, {
             size: "custom",
             color: "currentColor",
-            className: V.topicsPillHeadingIcon,
+            className: F.topicsPillHeadingIcon,
             width: 18,
             height: 20
           }), (0, r.jsx)(d.X6q, {
@@ -640,12 +640,12 @@ function ed(e) {
             lineClamp: 1,
             children: Z.intl.string(Z.t.q21fUl)
           }), (0, r.jsx)(O.Z, {
-            className: V.summariesBetaTag
+            className: F.summariesBetaTag
           })]
         }), (0, r.jsx)(d.P3F, {
           "aria-label": Z.intl.string(Z.t.cpT0Cg),
           onClick: X,
-          className: V.topicsDropdownClose,
+          className: F.topicsDropdownClose,
           children: (0, r.jsx)(d.Dio, {
             size: "md",
             color: "currentColor"
@@ -653,7 +653,7 @@ function ed(e) {
         })]
       }), (0, r.jsx)(d.Ttm, {
         ref: R,
-        className: V.topicsScroller,
+        className: F.topicsScroller,
         fade: true,
         children: ee
       })]
@@ -707,7 +707,7 @@ function ep(e) {
   null == k && null == h && (null == N ? true : N.length) >= 1 && (k = null == (a = N[0]) ? true : a.topic);
   let M = i.useMemo(() => l().get(N, j - 1), [j, N]),
     G = i.useMemo(() => l().get(N, j + 1), [j, N]),
-    F = i.useMemo(() => l().debounce(e => {
+    V = i.useMemo(() => l().debounce(e => {
       var t;
       E(null != (t = null == e ? true : e.id) ? t : null)
     }, 64), [E]),
@@ -717,8 +717,8 @@ function ep(e) {
       trailing: false
     }), []),
     Y = i.useCallback(e => {
-      H(), F(e)
-    }, [F, H]),
+      H(), V(e)
+    }, [V, H]),
     [W, K] = i.useState(false),
     z = i.useCallback(() => {
       x.default.track(U.rMx.SUMMARIES_TOPICS_PILL_TOGGLED, {
@@ -810,40 +810,40 @@ function ep(e) {
   let et = Z.intl.string(Z.t["38qwgI"]);
   return N.length > 0 && (et = "" === k || null == k ? Z.intl.string(Z.t.DwnFuL) : k), p ? null : (0, r.jsxs)("div", {
     ref: y,
-    className: o()(V.topicsPillContainer, V.containerMarginTop),
+    className: o()(F.topicsPillContainer, F.containerMarginTop),
     children: [(0, r.jsxs)("div", {
-      className: V.topicsPill,
+      className: F.topicsPill,
       children: [(0, r.jsx)(d.P3F, {
-        className: V.topicsPillText,
+        className: F.topicsPillText,
         "aria-label": Z.intl.string(Z.t.RT3MPz),
         onClick: z,
         children: (0, r.jsxs)("div", {
           className: o()({
-            [V.topicsPillTextUnselected]: !W,
-            [V.topicsPillTextSelected]: W
+            [F.topicsPillTextUnselected]: !W,
+            [F.topicsPillTextSelected]: W
           }),
           children: [(0, r.jsx)(d.sVe, {
             size: "xs",
             color: "currentColor",
-            className: V.topicsPillSummaryIcon
+            className: F.topicsPillSummaryIcon
           }), (0, r.jsx)(d.Text, {
-            className: V.topicsPillTextTitle,
+            className: F.topicsPillTextTitle,
             variant: "text-sm/medium",
             children: et
           }), (0, r.jsx)(D.Z, {
             width: 16,
             height: 16,
             direction: D.Z.Directions.DOWN,
-            className: V.topicsPillDropdownCaret
+            className: F.topicsPillDropdownCaret
           })]
         })
       }), (0, r.jsxs)("div", {
-        className: V.topicsPillCarets,
+        className: F.topicsPillCarets,
         children: [(0, r.jsx)(d.P3F, {
           "aria-label": Z.intl.string(Z.t["4huCnJ"]),
           onClick: Q,
-          className: o()(V.topicsPillCaret, V.topicsCaretLeft, {
-            [V.topicsPillCaretDisabled]: null == G
+          className: o()(F.topicsPillCaret, F.topicsCaretLeft, {
+            [F.topicsPillCaretDisabled]: null == G
           }),
           children: (0, r.jsx)(D.Z, {
             width: 16,
@@ -853,8 +853,8 @@ function ep(e) {
         }), (0, r.jsx)(d.P3F, {
           "aria-label": Z.intl.string(Z.t["58KOoK"]),
           onClick: X,
-          className: o()(V.topicsPillCaret, V.topicsCaretRight, {
-            [V.topicsPillCaretDisabled]: null == M
+          className: o()(F.topicsPillCaret, F.topicsCaretRight, {
+            [F.topicsPillCaretDisabled]: null == M
           }),
           children: (0, r.jsx)(D.Z, {
             width: 16,
@@ -864,15 +864,15 @@ function ep(e) {
         })]
       })]
     }), W && (0, r.jsxs)("div", {
-      className: V.topicsDropdown,
+      className: F.topicsDropdown,
       children: [(0, r.jsxs)("div", {
-        className: V.topicsDropdownHeading,
+        className: F.topicsDropdownHeading,
         children: [(0, r.jsxs)("div", {
-          className: V.topicsDropdownHeadingText,
+          className: F.topicsDropdownHeadingText,
           children: [(0, r.jsx)(d.sVe, {
             size: "custom",
             color: "currentColor",
-            className: V.topicsPillHeadingIcon,
+            className: F.topicsPillHeadingIcon,
             width: 18,
             height: 20
           }), (0, r.jsx)(d.X6q, {
@@ -881,12 +881,12 @@ function ep(e) {
             lineClamp: 1,
             children: Z.intl.string(Z.t.q21fUl)
           }), (0, r.jsx)(O.Z, {
-            className: V.summariesBetaTag
+            className: F.summariesBetaTag
           })]
         }), (0, r.jsx)(d.P3F, {
           "aria-label": Z.intl.string(Z.t.cpT0Cg),
           onClick: z,
-          className: V.topicsDropdownClose,
+          className: F.topicsDropdownClose,
           children: (0, r.jsx)(d.Dio, {
             size: "md",
             color: "currentColor"
@@ -894,7 +894,7 @@ function ep(e) {
         })]
       }), (0, r.jsx)(d.Ttm, {
         ref: T,
-        className: V.topicsScroller,
+        className: F.topicsScroller,
         fade: true,
         children: ee
       })]
@@ -904,15 +904,15 @@ function ep(e) {
 let eh = function(e) {
     let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
     return (0, r.jsxs)("div", {
-      className: V.tooltip,
+      className: F.tooltip,
       children: [(0, r.jsx)(d.Text, {
         color: "none",
         variant: "text-sm/semibold",
         lineClamp: 1,
-        className: V.tooltipEmojiName,
+        className: F.tooltipEmojiName,
         children: e
       }), t && (0, r.jsx)(d.Text, {
-        className: V.clickCTA,
+        className: F.clickCTA,
         color: "text-muted",
         variant: "text-sm/normal",
         children: Z.intl.string(Z.t["515vjI"])
@@ -925,7 +925,7 @@ let eh = function(e) {
       className: n
     } = e;
     return (0, r.jsx)("div", {
-      className: o()(V.popoutContainer, n),
+      className: o()(F.popoutContainer, n),
       children: t
     })
   },
@@ -936,9 +936,9 @@ let eh = function(e) {
     return (0, r.jsx)(em, {
       className: t,
       children: (0, r.jsx)("div", {
-        className: V.popoutLoadingBackground,
+        className: F.popoutLoadingBackground,
         children: (0, r.jsx)("div", {
-          className: V.popoutLoadingForeground
+          className: F.popoutLoadingForeground
         })
       })
     })

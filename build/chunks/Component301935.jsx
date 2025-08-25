@@ -154,7 +154,7 @@ function U(e) {
         })]
       }), (0, r.jsx)("div", {
         className: w.headerButtons,
-        children: null != z && null != j && null != Y && false === en && (0, r.jsx)(V, {
+        children: null != z && null != j && null != Y && false === en && (0, r.jsx)(F, {
           subscription: p,
           app: z,
           sku: Y,
@@ -228,7 +228,7 @@ function U(e) {
       loadingState: b,
       isDeleted: X,
       isCancelled: W
-    }), null != z && (null == j ? true : j.benefits) != null && j.benefits.length > 0 && (0, r.jsx)(F, {
+    }), null != z && (null == j ? true : j.benefits) != null && j.benefits.length > 0 && (0, r.jsx)(V, {
       appId: z.id,
       listingBenefits: j.benefits
     })]
@@ -298,7 +298,7 @@ function Z(e) {
   })
 }
 
-function V(e) {
+function F(e) {
   let {
     app: t,
     storeListing: a,
@@ -373,7 +373,7 @@ function V(e) {
   })
 }
 
-function F(e) {
+function V(e) {
   let {
     appId: t,
     listingBenefits: n

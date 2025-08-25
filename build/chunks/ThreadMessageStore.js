@@ -205,7 +205,7 @@ function Z(e) {
   delete v[t.id]
 }
 
-function V(e) {
+function F(e) {
   let {
     message: t,
     optimistic: n,
@@ -214,13 +214,13 @@ function V(e) {
   } = e;
   if (n || r || null != i) returnfalse;
   let a = f.Z.getChannel(t.channel_id);
-  if (null == a || !c.Ec.has(a.type) || !F(a, t)) returnfalse;
+  if (null == a || !c.Ec.has(a.type) || !V(a, t)) returnfalse;
   A(a, e => {
     e.count = Math.min(e.count + 1, h.M3), e.mostRecentRawMessage = t, e.mostRecentMessage = null
   })
 }
 
-function F(e, t) {
+function V(e, t) {
   return !(t.type === m.uaV.THREAD_STARTER_MESSAGE || e.isForumPost() && t.id === p.default.castChannelIdAsMessageId(e.id))
 }
 
@@ -332,7 +332,7 @@ let X = new q(Chunk570140.Z, {
   MOD_VIEW_SEARCH_MESSAGES_SUCCESS: G,
   THREAD_DELETE: Z,
   CHANNEL_DELETE: B,
-  MESSAGE_CREATE: V,
+  MESSAGE_CREATE: F,
   MESSAGE_UPDATE: H,
   MESSAGE_DELETE: Y,
   MESSAGE_DELETE_BULK: W,

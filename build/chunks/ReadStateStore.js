@@ -153,7 +153,7 @@ function eN(e) {
 }
 
 function eR(e, t) {
-  let n = V.Z.getChannel(e.channel_id);
+  let n = F.Z.getChannel(e.channel_id);
   return !(null == n || q.Z.isBlockedOrIgnoredForMessage(e)) && !!((0, T.ZP)({
     message: e,
     userId: t.id,
@@ -195,7 +195,7 @@ function eL(e, t) {}
 
 function ej(e) {
   if (eL(e, "shouldAutomaticallyAck called"), e.type !== ei.W.CHANNEL) return eL(e, "not channel read state"), false;
-  let t = V.Z.getChannel(e.channelId),
+  let t = F.Z.getChannel(e.channelId),
     n = null != t && t.isForumPost();
   if (null != _.ZP.getConnectedActivityLocation() && _.ZP.getActivityPanelMode() === et.Ez.PANEL && _.ZP.getFocusedLayout() === et.MI.NO_CHAT) return eL(e, "In activity"), false;
   if (W.Z.isIdle()) return eL(e, "Is idle"), false;
@@ -208,7 +208,7 @@ function ej(e) {
   if (n && !e._persisted) return eL(e, "unpersisted forum post"), true;
   if (!e.hasUnreadOrMentions()) return eL(e, "No unread or mentions"), false;
   if ((null == t ? true : t.isForumLikeChannel()) === true) return eL(e, "Forum-like channel"), false;
-  if (!(n && !e._isJoinedThread) && !F.Z.isAtBottom(e.channelId)) return eL(e, "Not at bottom"), false;
+  if (!(n && !e._isJoinedThread) && !V.Z.isAtBottom(e.channelId)) return eL(e, "Not at bottom"), false;
   let i = p.Z.getLayout(e.channelId),
     a = p.Z.getChatOpen(e.channelId);
   if (!a && (i === ee.AEg.NO_CHAT || i === ee.AEg.FULL_SCREEN)) return eL(e, "Fullscreen video"), false;
@@ -568,7 +568,7 @@ class ek {
   }
   _shouldAck(e, t, n) {
     var r;
-    return !!e || !!n || !!t || !this.isManualAck && (this.type !== ei.W.CHANNEL || !!this.loadedMessages || !!(null == (r = V.Z.getChannel(this.channelId)) ? true : r.isForumLikeChannel()))
+    return !!e || !!n || !!t || !this.isManualAck && (this.type !== ei.W.CHANNEL || !!this.loadedMessages || !!(null == (r = F.Z.getChannel(this.channelId)) ? true : r.isForumLikeChannel()))
   }
   _ack(e, t) {
     let {
@@ -662,7 +662,7 @@ class ek {
   shouldDeleteReadState(e) {
     if (0 !== H.Z.totalUnavailableGuilds) returnfalse;
     if (null != this.type && this.type !== ei.W.CHANNEL) return !eX(this);
-    let t = V.Z.getBasicChannel(this.channelId);
+    let t = F.Z.getBasicChannel(this.channelId);
     if (null == t)
       if (eq(this, e)) returntrue;
       else returnfalse;
@@ -727,7 +727,7 @@ function eU(e) {
 }
 
 function eG(e) {
-  eF(e), eH(e), eV(e), eY(e)
+  eV(e), eH(e), eF(e), eY(e)
 }
 
 function eB(e) {
@@ -745,12 +745,12 @@ function eZ(e) {
   })
 }
 
-function eV(e) {
+function eF(e) {
   let t = 24;
   ek.get(e.id, ei.W.GUILD_HOME).lastMessageId = G.default.fromTimestamp(s()(Date.now()).subtract(t, "h").valueOf())
 }
 
-function eF(e) {
+function eV(e) {
   var t;
   null == (t = e.threads) || t.forEach(t => {
     if (!x.AW.has(t.type)) return;
@@ -783,7 +783,7 @@ function eY(e) {
 
 function eW(e, t) {
   var n, r, i;
-  let a = V.Z.getChannel(t),
+  let a = F.Z.getChannel(t),
     o = Y.Z.getGuild(null != e ? e : null == a ? true : a.guild_id),
     s = (null == a ? true : a.isForumPost()) ? 0 : eK(o),
     l = (null != (i = null == (n = R.Z.joinTimestamp(t)) ? true : n.getTime()) ? i : 0) - 5e3;
@@ -844,7 +844,7 @@ function eJ(e) {
   if (null == e) return;
   let t = ek.get(e);
   if (t.type !== ei.W.CHANNEL) return;
-  let n = V.Z.getChannel(t.channelId);
+  let n = F.Z.getChannel(t.channelId);
   if (null == n || !n.isForumPost() || null == n.parent_id) return;
   let r = n.parent_id,
     i = ek.get(r);
@@ -872,7 +872,7 @@ function e$(e) {
     r !== ei.W.CHANNEL && (e = eN(e));
     let i = ek.get(e.id, r);
     i._persisted = true, i._mentionCount = null != (n = e.mention_count) ? n : 0, i.flags = e.flags, i.lastViewed = e.last_viewed;
-    let a = V.Z.getBasicChannel(e.id);
+    let a = F.Z.getBasicChannel(e.id);
     null != a && (0, x.Q5)(a.type) && (null == e.last_message_id || 0 === e.last_message_id) ? i.ackMessageId = G.default.fromTimestamp(eW(a.guild_id, a.id)) : i.ackedWhileCached ? false === G.default.compare(i.ackMessageId, e.last_message_id) && (i.ackMessageId = e.last_message_id) : i.ackMessageId = e.last_message_id, i.ackedWhileCached = true, i.ackPinTimestamp = eC(e.last_pin_timestamp), ek._mentionChannels.delete(i.channelId), i._mentionCount > 0 && i.canHaveMentions() && ek._mentionChannels.add(i.channelId)
   }), ek.resetGuildSentinels();
   let o = null == (t = J.default.getCurrentUser()) ? true : t.id;
@@ -961,7 +961,7 @@ function e9(e) {
     c = null != s.lastMessageId && s.lastMessageId >= a.id;
   s.lastMessageId = a.id;
   let u = J.default.getCurrentUser(),
-    d = V.Z.getBasicChannel(i);
+    d = F.Z.getBasicChannel(i);
   if (null != a.author && null != u && a.author.id === u.id && !ee.V$x.SELF_MENTIONABLE_SYSTEM.has(a.type)) return null != s.outgoingAck && s.clearOutgoingAck(), tx({
     channelId: i,
     messageId: a.id,
@@ -1015,7 +1015,7 @@ function te(e, t, n) {
     shouldMention: true,
     isMentionLowImportance: false
   };
-  let r = V.Z.getChannel(e.channel_id);
+  let r = F.Z.getChannel(e.channel_id);
   if (eP(r)) return {
     shouldMention: true,
     isMentionLowImportance: false
@@ -1244,7 +1244,7 @@ function tv(e) {
 function tI(e) {
   let {
     channelId: t
-  } = e, n = Z.ZP.getCurrentSidebarChannelId(t), r = V.Z.getChannel(t);
+  } = e, n = Z.ZP.getCurrentSidebarChannelId(t), r = F.Z.getChannel(t);
   if (null != r) {
     var i;
     let e = ek.get(r.id);
@@ -1449,14 +1449,14 @@ function tZ(e) {
   })
 }
 
-function tV(e) {
+function tF(e) {
   let {
     channelId: t,
     chatOpen: n
   } = e
 }
 
-function tF(e, t, n) {
+function tV(e, t, n) {
   e.forEach(e => {
     let {
       channelId: t,
@@ -1484,7 +1484,7 @@ function tH(e) {
     context: n,
     onFinished: r
   } = e;
-  tF(t.filter(e => null != e.messageId && t0.hasUnreadOrMentions(e.channelId, e.readStateType)), n, r)
+  tV(t.filter(e => null != e.messageId && t0.hasUnreadOrMentions(e.channelId, e.readStateType)), n, r)
 }
 
 function tY(e) {
@@ -1753,7 +1753,7 @@ let t0 = new t$(Chunk570140.Z, {
     GUILD_DELETE: ty,
     GUILD_UPDATE: tO,
     RESORT_THREADS: tu,
-    CHANNEL_RTC_UPDATE_CHAT_OPEN: tV,
+    CHANNEL_RTC_UPDATE_CHAT_OPEN: tF,
     DECAY_READ_STATES: eA,
     NOTIFICATION_CENTER_ITEM_CREATE: tE,
     RELATIONSHIP_ADD: tm,

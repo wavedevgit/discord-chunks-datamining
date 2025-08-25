@@ -428,19 +428,19 @@ let eL = Chunk647438.memo(function() {
     case Chunk981631.kVF.HARDWARE_MUTE:
       if (null == Chunk100527.metadata) return null;
       let {
-        vendor: eV, model: eF
+        vendor: eF, model: eV
       } = Chunk100527.metadata;
       return (0, Chunk951288.jsxs)(Chunk481060.qXd, {
         color: Chunk481060.DM8.DANGER,
         children: [Chunk388032.intl.format(Chunk388032.t.qoDex8, {
-          vendorName: eV.name,
-          modelName: eF.name
+          vendorName: eF.name,
+          modelName: eV.name
         }), (0, Chunk951288.jsx)(Chunk481060.RyX, {
           onClick: () => {
             Chunk846027.Z.setEnableHardwareMuteNotice(false), eD()
           }
         }), (0, Chunk951288.jsx)(Chunk481060.u3T, {
-          href: eF.url,
+          href: eV.url,
           target: "_blank",
           rel: "noreferrer noopener",
           children: Chunk388032.intl.string(Chunk388032.t["Yl/Rio"])

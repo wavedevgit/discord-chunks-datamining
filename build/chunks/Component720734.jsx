@@ -239,7 +239,7 @@ function tI(e) {
   } = e, p = i.useRef(null), h = null != t ? t : p, g = (0, P.Z)(null == s ? true : s.avatarDecoration), E = (0, eW.NZ)({
     avatarDecoration: g,
     size: (0, w.y9)(m.EFr.SIZE_32)
-  }), y = (0, m.dQu)(m.TVs.modules.guildbar.AVATAR_SIZE), O = (0, F.Z)("Account") ? 32 : y, {
+  }), y = (0, m.dQu)(m.TVs.modules.guildbar.AVATAR_SIZE), O = (0, V.Z)("Account") ? 32 : y, {
     updateOpenPopoutRef: v,
     highlightBadge: I,
     setHighlightBadge: T
@@ -562,10 +562,10 @@ class tA extends Chunk647438.PureComponent {
           user: t,
           premiumSubscription: this.props.premiumSubscription,
           webBuildOverride: this.props.webBuildOverride,
-          onInteraction: (0, V.u)("UserSettingsCogContextMenu", N.Z.ACCOUNT)
+          onInteraction: (0, F.u)("UserSettingsCogContextMenu", N.Z.ACCOUNT)
         }))
       })
-    }), ta(this, "audioOnInteractionHandler", (0, V.u)("AudioDeviceMenu", N.Z.ACCOUNT)), ta(this, "handleInputAudioContextMenu", (e, t) => {
+    }), ta(this, "audioOnInteractionHandler", (0, F.u)("AudioDeviceMenu", N.Z.ACCOUNT)), ta(this, "handleInputAudioContextMenu", (e, t) => {
       this.dismissTooltips(), (0, g.jW)(e, async () => {
         let {
           default: e
@@ -872,11 +872,11 @@ function tR() {
       location: "Account"
     }),
     [B, Z] = (0, Chunk291533.G)(null != Chunk628581 ? Chunk628581 : null),
-    V = Chunk594928.J.useExperiment({
+    F = Chunk594928.J.useExperiment({
       location: "Account"
     }).enabled,
     {
-      analyticsLocations: F
+      analyticsLocations: V
     } = (0, Chunk906732.ZP)(Chunk100527.Z.ACCOUNT),
     H = (0, Chunk850020.K)({
       user: exports
@@ -890,7 +890,7 @@ function tR() {
         r = [];
       if (null != exports ? e = exports.partyId : null != require && null != require.party && null != require.party.id && (e = require.party.id), null != module) {
         var i;
-        r = l()(Array.from(null != (i = Chunk831506.Z.getParty(module)) ? Chunk647438 : [])).map(e => eF.default.getUser(e)).filter(Chunk823379.lm).value()
+        r = l()(Array.from(null != (i = Chunk831506.Z.getParty(module)) ? Chunk647438 : [])).map(e => eV.default.getUser(e)).filter(Chunk823379.lm).value()
       }
       return Chunk951288.length > 1
     }),
@@ -1060,7 +1060,7 @@ function tw(e) {
     {
       Component: B,
       events: Z,
-      play: F
+      play: V
     } = C,
     H = a || s ? m.v0G : B,
     Y = (0, k.Z)(n, a, s, l),
@@ -1086,7 +1086,7 @@ function tw(e) {
     location: N.Z.AUDIO_INPUT_BUTTON,
     autoTrackExposure: true
   });
-  i.useEffect(() => () => F(), [T, F]);
+  i.useEffect(() => () => V(), [T, V]);
   let Q = i.useCallback(e => {
       E(e, z)
     }, [E, z]),
@@ -1143,7 +1143,7 @@ function tw(e) {
         return I(), (0, r.jsx)(R.Gt, {
           value: z,
           children: eu ? (0, r.jsx)(U.Z, {
-            onInteraction: (0, V.u)("AudioDeviceMenu", N.Z.ACCOUNT),
+            onInteraction: (0, F.u)("AudioDeviceMenu", N.Z.ACCOUNT),
             onClose: t,
             maybeRenderPTTCheckbox: true,
             renderInputProfiles: ed.length > 0,
@@ -1152,7 +1152,7 @@ function tw(e) {
             renderInputVolume: true,
             renderSettingsButton: true
           }) : (0, r.jsx)(M.default, {
-            onInteraction: (0, V.u)("AudioDeviceMenu", N.Z.ACCOUNT),
+            onInteraction: (0, F.u)("AudioDeviceMenu", N.Z.ACCOUNT),
             onClose: t,
             renderInputDevices: true,
             renderInputProfiles: ed.length > 0,
@@ -1421,7 +1421,7 @@ function tD(e) {
         return f(), (0, r.jsx)(R.Gt, {
           value: T,
           children: (0, r.jsx)(U.Z, {
-            onInteraction: (0, V.u)("AudioDeviceMenu", N.Z.ACCOUNT),
+            onInteraction: (0, F.u)("AudioDeviceMenu", N.Z.ACCOUNT),
             onClose: t,
             renderOutputDevices: true,
             renderOutputVolume: true,

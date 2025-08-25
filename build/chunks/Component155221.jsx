@@ -108,12 +108,12 @@ let j = (0, Chunk663993.Un)({
     webpackId: 832462,
     name: "LinkConnectedAccount"
   }),
-  V = (0, Chunk663993.Un)({
+  F = (0, Chunk663993.Un)({
     createPromise: () => require.e("46455").then(require.bind(require, 924339)),
     webpackId: 924339,
     name: "LinkAuthorize"
   }),
-  F = (0, Chunk663993.Un)({
+  V = (0, Chunk663993.Un)({
     createPromise: () => Promise.all([require.e("7784"), require.e("69773")]).then(require.bind(require, 197528)),
     webpackId: 197528,
     name: "ActivateDevice"
@@ -274,13 +274,13 @@ class ei extends Chunk647438.Component {
         component: Z
       }), (0, Chunk951288.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.CONNECTION_LINK_AUTHORIZE(":type"),
-        component: V
+        component: F
       }), (0, Chunk951288.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.ACTIVATE,
-        component: F
+        component: V
       }), (0, Chunk951288.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.ACTIVATE_HANDOFF,
-        component: F
+        component: V
       }), (0, Chunk951288.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.CONNECTIONS_AUTHORIZE_CONTINUE(":type"),
         component: J

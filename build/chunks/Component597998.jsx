@@ -81,9 +81,9 @@ function Z(e, t) {
   }), e
 }
 
-function V(e, t) {
+function F(e, t) {
   if (null == e) return {};
-  var n, r, i = F(e, t);
+  var n, r, i = V(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -91,7 +91,7 @@ function V(e, t) {
   return i
 }
 
-function F(e, t) {
+function V(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -168,8 +168,8 @@ function W(e) {
     autoTrackExposure: true
   });
   if (_ || m) return null;
-  let V = [],
-    F = (0, r.jsx)(X, {
+  let F = [],
+    V = (0, r.jsx)(X, {
       iconClassName: b,
       mute: n,
       localMute: i,
@@ -177,7 +177,7 @@ function W(e) {
       deaf: c,
       serverDeaf: u
     });
-  p && (a ? V.push((0, r.jsx)(l.DY3, {
+  p && (a ? F.push((0, r.jsx)(l.DY3, {
     className: M.iconSpacing,
     text: k.intl.string(k.t["PXMZ//"]),
     children: (0, r.jsx)(l.Amn, {
@@ -186,7 +186,7 @@ function W(e) {
       className: o()(M.icon, b),
       colorClass: M.strikethrough
     })
-  }, "video")) : V.push((0, r.jsx)(l.DY3, {
+  }, "video")) : F.push((0, r.jsx)(l.DY3, {
     className: M.iconSpacing,
     text: k.intl.string(k.t.FlNoSU),
     children: (0, r.jsx)(l.Odl, {
@@ -194,7 +194,7 @@ function W(e) {
       color: "currentColor",
       className: o()(M.icon, b)
     })
-  }, "video"))), C && V.push((0, r.jsx)(l.DY3, {
+  }, "video"))), C && F.push((0, r.jsx)(l.DY3, {
     className: M.iconSpacing,
     text: k.intl.string(k.t.HFwRpq),
     children: (0, r.jsx)(l.Mgn, {
@@ -203,7 +203,7 @@ function W(e) {
     })
   }, "disconnected"));
   let Y = Z ? l.iWm : l.nG3;
-  null != y && V.push((0, r.jsx)(l.DY3, {
+  null != y && F.push((0, r.jsx)(l.DY3, {
     text: (0, f.Z)(y.name),
     className: M.iconSpacing,
     children: (0, r.jsx)(Y, {
@@ -211,17 +211,17 @@ function W(e) {
       color: "currentColor",
       className: o()(M.icon, b)
     })
-  }, "activity")), O === j.YE.XBOX || v === L.wR.XBOX ? V.push((0, r.jsx)("div", {
+  }, "activity")), O === j.YE.XBOX || v === L.wR.XBOX ? F.push((0, r.jsx)("div", {
     className: M.iconSpacing,
     children: (0, r.jsx)(R.Z, {
       className: o()(M.icon, b)
     })
-  }, "xbox")) : (O === j.YE.PLAYSTATION || v === L.wR.PLAYSTATION) && V.push((0, r.jsx)("div", {
+  }, "xbox")) : (O === j.YE.PLAYSTATION || v === L.wR.PLAYSTATION) && F.push((0, r.jsx)("div", {
     className: M.iconSpacing,
     children: (0, r.jsx)(N.Z, {
       className: o()(M.icon, b)
     })
-  }, "playstation")), E && V.push((0, r.jsx)(l.DY3, {
+  }, "playstation")), E && F.push((0, r.jsx)(l.DY3, {
     className: M.iconSpacing,
     text: k.intl.string(k.t.JH1SJy),
     children: (0, r.jsx)(l.tEF, {
@@ -229,7 +229,7 @@ function W(e) {
       color: "currentColor",
       className: o()(M.icon, b)
     })
-  }, "watch")), h && V.push((0, r.jsx)("div", {
+  }, "watch")), h && F.push((0, r.jsx)("div", {
     className: o()(M.iconSpacing, M.liveIconSpacing),
     children: (0, r.jsx)(g.ZP, {
       size: g.ZP.Sizes.SMALL
@@ -237,13 +237,13 @@ function W(e) {
   }, "stream"));
   let W = null != I && !(0, P.yE)(I.flags, x.udG.EMBEDDED),
     K = null == w && W;
-  return 0 !== V.length || null != F || D || K ? (0, r.jsxs)("div", {
+  return 0 !== F.length || null != V || D || K ? (0, r.jsxs)("div", {
     className: o()(M.icons, t),
     children: [(0, r.jsxs)("div", {
       className: M.iconGroup,
       onMouseEnter: () => null == B ? true : B(true),
       onMouseLeave: () => null == B ? true : B(false),
-      children: [F, V]
+      children: [V, F]
     }), D || K ? (0, r.jsx)("div", {
       className: M.iconGroup,
       onMouseEnter: () => null == G ? true : G(true),
@@ -272,7 +272,7 @@ function K(e, t) {
       disabled: _ = false,
       isOverlay: g = false
     } = e,
-    b = V(e, ["avatarContainerClass", "userNameClassName", "size", "selected", "disabled", "isOverlay"]);
+    b = F(e, ["avatarContainerClass", "userNameClassName", "size", "selected", "disabled", "isOverlay"]);
   let {
     onClick: O,
     onKeyDown: v,
@@ -282,7 +282,7 @@ function K(e, t) {
     onMouseDown: j,
     priority: U,
     speaking: B,
-    collapsed: F,
+    collapsed: V,
     mute: H,
     serverMute: Y,
     guildId: K,
@@ -328,7 +328,7 @@ function K(e, t) {
     };
 
   function em() {
-    return U && !F ? (0, r.jsx)(l.ua7, {
+    return U && !V ? (0, r.jsx)(l.ua7, {
       text: k.intl.string(k.t.BVK71t),
       children: e => (0, r.jsx)("div", G({
         className: o()(M.iconPriortySpeaker, {
@@ -372,7 +372,7 @@ function K(e, t) {
           source: g ? x.jXE.OVERLAY : x.Sbl.VOICE_PANEL
         }
       };
-    return !F || g ? (0, r.jsx)(y.Z, Z(G({}, t), {
+    return !V || g ? (0, r.jsx)(y.Z, Z(G({}, t), {
       children: e
     })) : null
   }
@@ -398,7 +398,7 @@ function K(e, t) {
   }
 
   function eO() {
-    return F || !eo || es ? null : (0, r.jsx)(l.DY3, {
+    return V || !eo || es ? null : (0, r.jsx)(l.DY3, {
       text: k.intl.string(k.t["+1H47u"]),
       className: o()(M.optionsButtonContainer, {
         [M.optionsContainerActive]: ec

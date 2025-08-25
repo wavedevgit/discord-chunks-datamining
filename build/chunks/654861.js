@@ -524,7 +524,7 @@ var r = function(e) {
     return Math.abs(e) <= t
   }
 
-  function V(e, t, n) {
+  function F(e, t, n) {
     t = ea(t);
     for (var i = e.isNegative(), a = t.isNegative(), o = i ? e.not() : e, s = a ? t.not() : t, l = 0, c = 0, u = null, d = null, f = []; !o.isZero() || !s.isZero();) l = (u = L(o, B))[1].toJSNumber(), i && (l = B - 1 - l), c = (d = L(s, B))[1].toJSNumber(), a && (c = B - 1 - c), o = u[0], s = d[0], f.push(n(l, c));
     for (var _ = 0 !== n(+!!i, +!!a) ? r(false) : r(0), p = f.length - 1; p >= 0; p -= 1) _ = _.multiply(B).add(r(f[p]));
@@ -550,24 +550,24 @@ var r = function(e) {
   }, d.prototype.shiftRight = u.prototype.shiftRight = c.prototype.shiftRight, c.prototype.not = function() {
     return this.negate().prev()
   }, d.prototype.not = u.prototype.not = c.prototype.not, c.prototype.and = function(e) {
-    return V(this, e, function(e, t) {
+    return F(this, e, function(e, t) {
       return e & t
     })
   }, d.prototype.and = u.prototype.and = c.prototype.and, c.prototype.or = function(e) {
-    return V(this, e, function(e, t) {
+    return F(this, e, function(e, t) {
       return e | t
     })
   }, d.prototype.or = u.prototype.or = c.prototype.or, c.prototype.xor = function(e) {
-    return V(this, e, function(e, t) {
+    return F(this, e, function(e, t) {
       return e ^ t
     })
   }, d.prototype.xor = u.prototype.xor = c.prototype.xor;
-  var F = 0x40000000,
+  var V = 0x40000000,
     H = (t & -t) * (t & -t) | 0x40000000;
 
   function Y(e) {
     var n = e.value,
-      r = "number" == typeof n ? n | F : "bigint" == typeof n ? n | BigInt(F) : n[0] + n[1] * t | H;
+      r = "number" == typeof n ? n | V : "bigint" == typeof n ? n | BigInt(V) : n[0] + n[1] * t | H;
     return r & -r
   }
 

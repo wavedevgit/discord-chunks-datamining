@@ -55,26 +55,26 @@ function T(e) {
     })),
     B = (0, E.Z)(P.id),
     Z = G === R.id,
-    V = (0, a.e7)([f.default], () => f.default.getCurrentUser()),
-    F = (null == V ? true : V.id) === R.author.id,
+    F = (0, a.e7)([f.default], () => f.default.getCurrentUser()),
+    V = (null == F ? true : F.id) === R.author.id,
     H = (0, u.m)(O.p9.TIER_2),
     Y = m.t(P);
   return (i.useEffect(() => {
     null == M && h.Z.shouldFetchWallpapers && g.k9()
-  }, [M]), null == D) ? null : (A = F ? v.intl.format(v.t.z847Tk, {
+  }, [M]), null == D) ? null : (A = V ? v.intl.format(v.t.z847Tk, {
     wallpaper_name: null != (n = null == M ? true : M.label) ? n : v.intl.string(v.t["UQMV/P"])
   }) : v.intl.format(v.t["+lKndX"], {
     username: null == j ? true : j.nick,
     wallpaper_name: null != (T = null == M ? true : M.label) ? T : v.intl.string(v.t["UQMV/P"])
   }), x ? k || L ? Y && Z ? C = v.intl.formatToPlainString(v.t.PzTpVV, {
     wallpaperName: null != (S = null == M ? true : M.label) ? S : v.intl.string(v.t["UQMV/P"])
-  }) : F || H || !Z || (C = v.intl.format(v.t.JwUhHh, {
+  }) : V || H || !Z || (C = v.intl.format(v.t.JwUhHh, {
     onClickNitro: () => {
       (0, d.uL)(y.Z5c.NITRO_HOME)
     }
   })) : C = v.intl.format(v.t.dBxFsL, {
     learnMoreLink: _.Z.getArticleURL(y.BhN.DM_WALLPAPERS)
-  }) : C = v.intl.string(v.t["6JSOu7"]), (null == B ? true : B.isViewable) && Z && !F && (N = (0, r.jsx)("div", {
+  }) : C = v.intl.string(v.t["6JSOu7"]), (null == B ? true : B.isViewable) && Z && !V && (N = (0, r.jsx)("div", {
     className: I.action,
     children: (0, r.jsx)(o.z, {
       variant: "primary",

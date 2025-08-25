@@ -49,11 +49,11 @@ function Z(e, t, n, r, i) {
   this.static_tree = e, this.extra_bits = t, this.extra_base = n, this.elems = r, this.max_length = i, this.has_stree = e && e.length
 }
 
-function V(e, t) {
+function F(e, t) {
   this.dyn_tree = e, this.max_code = 0, this.stat_desc = t
 }
 
-function F(e) {
+function V(e) {
   return e < 256 ? M[e] : M[256 + (e >>> 7)]
 }
 
@@ -157,7 +157,7 @@ function en(e, t, n) {
 function er(e, t, n) {
   var r, i, a, o, s = 0;
   if (0 !== e.last_lit)
-    do r = e.pending_buf[e.d_buf + 2 * s] << 8 | e.pending_buf[e.d_buf + 2 * s + 1], i = e.pending_buf[e.l_buf + s], s++, 0 === r ? W(e, i, t) : (W(e, (a = U[i]) + E + 1, t), 0 !== (o = P[a]) && Y(e, i -= G[a], o), W(e, a = F(--r), n), 0 !== (o = w[a]) && Y(e, r -= B[a], o)); while (s < e.last_lit);
+    do r = e.pending_buf[e.d_buf + 2 * s] << 8 | e.pending_buf[e.d_buf + 2 * s + 1], i = e.pending_buf[e.l_buf + s], s++, 0 === r ? W(e, i, t) : (W(e, (a = U[i]) + E + 1, t), 0 !== (o = P[a]) && Y(e, i -= G[a], o), W(e, a = V(--r), n), 0 !== (o = w[a]) && Y(e, r -= B[a], o)); while (s < e.last_lit);
   W(e, A, t)
 }
 
@@ -237,8 +237,8 @@ function e_(e, t, n, r) {
 }
 
 function ep(e, t, n) {
-  return e.pending_buf[e.d_buf + 2 * e.last_lit] = t >>> 8 & 255, e.pending_buf[e.d_buf + 2 * e.last_lit + 1] = 255 & t, e.pending_buf[e.l_buf + e.last_lit] = 255 & n, e.last_lit++, 0 === t ? e.dyn_ltree[2 * n]++ : (e.matches++, t--, e.dyn_ltree[(U[n] + E + 1) * 2]++, e.dyn_dtree[2 * F(t)]++), e.last_lit === e.lit_bufsize - 1
+  return e.pending_buf[e.d_buf + 2 * e.last_lit] = t >>> 8 & 255, e.pending_buf[e.d_buf + 2 * e.last_lit + 1] = 255 & t, e.pending_buf[e.l_buf + e.last_lit] = 255 & n, e.last_lit++, 0 === t ? e.dyn_ltree[2 * n]++ : (e.matches++, t--, e.dyn_ltree[(U[n] + E + 1) * 2]++, e.dyn_dtree[2 * V(t)]++), e.last_lit === e.lit_bufsize - 1
 }
 exports._tr_init = function(e) {
-  eu || (Q(), eu = true), e.l_desc = new V(e.dyn_ltree, r), e.d_desc = new V(e.dyn_dtree, i), e.bl_desc = new V(e.bl_tree, a), e.bi_buf = 0, e.bi_valid = 0, J(e)
+  eu || (Q(), eu = true), e.l_desc = new F(e.dyn_ltree, r), e.d_desc = new F(e.dyn_dtree, i), e.bl_desc = new F(e.bl_tree, a), e.bi_buf = 0, e.bi_valid = 0, J(e)
 }, exports._tr_stored_block = ed, exports._tr_flush_block = e_, exports._tr_tally = ep, exports._tr_align = ef

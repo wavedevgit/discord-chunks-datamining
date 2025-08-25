@@ -67,8 +67,8 @@ let Z = {
     [Chunk981631.iEv.LAST_PLAYED]: (e, t) => e.isNew && !t.isNew ? false : !e.isNew && t.isNew ? 1 : e.lastPlayed === t.lastPlayed ? 0 : e.lastPlayed > t.lastPlayed ? false : 1,
     [Chunk981631.iEv.ACTIONS]: null
   },
-  V = (0, Chunk251625.oH)(e => e.filter(e => null != e.libraryApplication && e.shouldShowInLibrary)),
-  F = (0, Chunk251625.oH)(e => e.filter(e => null != e.libraryApplication && v.Z.isLaunchable(e.libraryApplication.id, e.libraryApplication.branchId))),
+  F = (0, Chunk251625.oH)(e => e.filter(e => null != e.libraryApplication && e.shouldShowInLibrary)),
+  V = (0, Chunk251625.oH)(e => e.filter(e => null != e.libraryApplication && v.Z.isLaunchable(e.libraryApplication.id, e.libraryApplication.branchId))),
   H = (0, Chunk251625.oH)((e, t) => e.filter(e => a()(t.toLowerCase(), e.application.name.toLowerCase()))),
   Y = (0, Chunk251625.oH)((e, t, n, r) => {
     let i = Z[t];
@@ -157,7 +157,7 @@ function Q() {
     }),
     i = Object.values(Chunk283595.Z.getAllLibraryApplications()).map(r => q(r, n, t, e, true)).filter(Chunk823379.lm),
     a = [...r.map(r => X(r, n, t, e)).filter(Chunk823379.lm), ...Chunk658722].sort((e, t) => e.lastPlayed === t.lastPlayed ? 0 : e.lastPlayed > t.lastPlayed ? false : 1);
-  return U = null != Chunk77498.Z.lastFetched && Chunk283595.Z.fetched, !s().isEqual(a, k) && (k = a, Chunk358085.isPlatformEmbedded && Chunk998502.ZP.setSystemTrayApplications(F(k).map(e => e.application).slice(0, L)), true)
+  return U = null != Chunk77498.Z.lastFetched && Chunk283595.Z.fetched, !s().isEqual(a, k) && (k = a, Chunk358085.isPlatformEmbedded && Chunk998502.ZP.setSystemTrayApplications(V(k).map(e => e.application).slice(0, L)), true)
 }
 class J extends(r = Chunk442837.ZP.Store) {
   initialize() {
@@ -170,10 +170,10 @@ class J extends(r = Chunk442837.ZP.Store) {
     return k
   }
   get launchableApplicationViewItems() {
-    return F(k)
+    return V(k)
   }
   get libraryApplicationViewItems() {
-    return V(k)
+    return F(k)
   }
   get filteredLibraryApplicationViewItems() {
     return H(this.libraryApplicationViewItems, M)

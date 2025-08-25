@@ -90,8 +90,8 @@ let P = e => {
         }
     }
     let Z = (0, a.e7)([g.Z], () => null !== t && t.type === u.B.GUILD ? g.Z.getGuild(t.guildId) : null, [t]),
-      V = (0, a.e7)([E.Z], () => E.Z.isFocused()),
-      F = (0, a.e7)([l.Z], () => l.Z.useReducedMotion, []),
+      F = (0, a.e7)([E.Z], () => E.Z.isFocused()),
+      V = (0, a.e7)([l.Z], () => l.Z.useReducedMotion, []),
       H = m.Yk.useSetting(),
       Y = (0, O.C1)(j, R(t) ? t : null),
       W = (0, a.e7)([c.ZP], () => c.ZP.expandedSectionsByGuildIds),
@@ -151,7 +151,7 @@ let P = e => {
     let Q = null != Z ? (0, r.jsx)(I.Z, {
       className: C.__invalid_guildIcon,
       guild: Z,
-      shouldAnimate: !F && V
+      shouldAnimate: !V && F
     }) : null;
     D = U && "CREATE_EMOJI" === t.type ? A.intl.string(A.t.XCmLfH) : "EXPAND_OR_COLLAPSE_EMOJI" === t.type ? W.has(t.guildId) ? A.intl.string(A.t["/K2RDA"]) : A.intl.string(A.t.NZI2Zm) : t.allNamesString;
     let J = U && "CREATE_EMOJI" === t.type ? A.intl.string(A.t["Z/r7IS"]) : P({

@@ -104,7 +104,7 @@ e = require.nmd(module), (function() {
       L = null,
       j = e == s,
       k = j && P && "function" == typeof P.version && P.version(),
-      M = V([{
+      M = F([{
         label: "EdgeHTML",
         pattern: "Edge"
       }, "Trident", {
@@ -194,7 +194,7 @@ e = require.nmd(module), (function() {
         label: "Xbox 360",
         pattern: "Xbox"
       }, "Xoom"]),
-      B = F({
+      B = V({
         Apple: {
           iPad: 1,
           iPhone: 1,
@@ -264,13 +264,13 @@ e = require.nmd(module), (function() {
         pattern: "DragonFly"
       }, "Fedora", "FreeBSD", "Gentoo", "Haiku", "Kubuntu", "Linux Mint", "OpenBSD", "Red Hat", "SuSE", "Ubuntu", "Xubuntu", "Cygwin", "Symbian OS", "hpwOS", "webOS ", "webOS", "Tablet OS", "Tizen", "Linux", "Mac OS X", "Macintosh", "Mac", "Windows 98;", "Windows "]);
 
-    function V(t) {
+    function F(t) {
       return O(t, function(t, n) {
         return t || RegExp("\\b" + (n.pattern || y(n)) + "\\b", "i").exec(e) && (n.label || n)
       })
     }
 
-    function F(t) {
+    function V(t) {
       return O(t, function(t, n, r) {
         return t || (n[G] || n[/^[a-z]+(?: +[a-z]+\b)*/i.exec(G)] || RegExp("\\b" + y(r) + "(?:\\b|\\w*\\d)", "i").exec(e)) && r
       })

@@ -50,8 +50,8 @@ function L(e) {
     baseAnalyticsData: G,
     flowStartTime: B,
     trialId: Z,
-    planGroup: V,
-    analyticsLocation: F,
+    planGroup: F,
+    analyticsLocation: V,
     purchaseTokenAuthState: H,
     openInvoiceId: Y,
     metadata: W,
@@ -121,11 +121,11 @@ function L(e) {
         setHasRedirectURL: eR,
         isGift: ef,
         baseAnalyticsData: G,
-        analyticsLocation: F,
+        analyticsLocation: V,
         analyticsLocations: eT,
         flowStartTime: B,
         subscriptionPlan: Q,
-        planGroup: V,
+        planGroup: F,
         trialId: Z,
         priceOptions: J,
         paymentSource: eS,
@@ -153,17 +153,17 @@ function L(e) {
       paymentSourceId: en,
       purchaseTokenAuthState: H,
       setPurchaseState: n
-    }, eV = i.useRef(eZ);
+    }, eF = i.useRef(eZ);
   i.useEffect(() => {
-    eV.current = eZ
+    eF.current = eZ
   }), i.useEffect(() => {
     let {
       makePurchase: e
-    } = eV.current;
+    } = eF.current;
     eI && !ef && null == t && e()
   }, [eI, ef, t]);
-  let eF = null != Y || et === P.GZQ.ONE_TIME && !ef,
-    eH = K && !eF;
+  let eV = null != Y || et === P.GZQ.ONE_TIME && !ef,
+    eH = K && !eV;
   return eI ? null : (0, r.jsxs)(u.mzw, {
     "data-migration-pending": true,
     align: p.Z.Align.CENTER,
@@ -183,7 +183,7 @@ function L(e) {
       isSubmitting: eA,
       premiumSubscription: t,
       isGift: ef,
-      planGroup: V,
+      planGroup: F,
       isPrepaid: ew,
       isTrial: q,
       makePurchase: eB,

@@ -185,10 +185,10 @@ function Z(e) {
     null != T && T.delete(e.id), I.delete(e.id)
   }), N.delete(n.id), N = new Map(N)
 }
-let V = () => {
+let F = () => {
     O = 0, S = [], I.clear(), v.clear(), T = null, N.clear(), N = new Map(N), C = false, A = null
   },
-  F = () => {
+  V = () => {
     C = true
   },
   H = e => {
@@ -292,8 +292,8 @@ let Q = new X(Chunk570140.Z, {
   CONNECTION_OPEN: M,
   GUILD_CREATE: B,
   GUILD_DELETE: Z,
-  LOGOUT: V,
-  STICKER_PACKS_FETCH_START: F,
+  LOGOUT: F,
+  STICKER_PACKS_FETCH_START: V,
   STICKER_PACKS_FETCH_SUCCESS: H,
   STICKER_PACK_FETCH_SUCCESS: Y,
   GUILD_STICKERS_FETCH_SUCCESS: W,

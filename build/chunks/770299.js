@@ -143,12 +143,12 @@ module.exports = function(e) {
       relevance: 0,
       contains: [e.BACKSLASH_ESCAPE]
     }],
-    V = {
+    F = {
       begin: /\/[^\s](?=[^/\n]*\/)/,
       end: /\//,
       contains: Z
     },
-    F = e => {
+    V = e => {
       let t = r(e, /\//),
         n = r(/\//, e);
       return {
@@ -163,7 +163,7 @@ module.exports = function(e) {
     },
     H = {
       scope: "regexp",
-      variants: [F("###"), F("##"), F("#"), V]
+      variants: [V("###"), V("##"), V("#"), F]
     },
     Y = {
       match: r(/`/, y, /`/)

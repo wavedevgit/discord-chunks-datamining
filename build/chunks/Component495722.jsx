@@ -45,7 +45,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk475832 = require("./475832.js");
 
-function F(e) {
+function V(e) {
   var t, n;
   let {
     quest: a,
@@ -66,14 +66,14 @@ function F(e) {
     T = (null == (t = a.userStatus) ? true : t.completedAt) != null && I === v.iw.COMPLETED,
     S = !T && (!l || f);
   return (0, r.jsxs)(_.P3F, {
-    className: V.videoQuestPreviewCont,
+    className: F.videoQuestPreviewCont,
     onClick: s,
     onMouseEnter: y,
     onMouseLeave: O,
     children: [null != E && (0, r.jsx)("img", {
       alt: "",
       src: E.url,
-      className: V.assetBodyVideoPreviewMedia
+      className: F.assetBodyVideoPreviewMedia
     }), null != g ? (0, r.jsx)(h.Z, {
       ref: m,
       autoPlay: false,
@@ -81,8 +81,8 @@ function F(e) {
       loop: true,
       muted: true,
       playsInline: true,
-      className: o()(V.assetBodyVideoPreviewVideo, {
-        [V.assetBodyVideoPreviewVisible]: S
+      className: o()(F.assetBodyVideoPreviewVideo, {
+        [F.assetBodyVideoPreviewVisible]: S
       }),
       controls: false,
       children: (0, r.jsx)("source", {
@@ -90,13 +90,13 @@ function F(e) {
         type: null != (n = g.mimetype) ? n : true
       })
     }) : null, (0, r.jsx)("div", {
-      className: V.previewPlayButtonCont,
+      className: F.previewPlayButtonCont,
       children: T ? (0, r.jsx)(_.Oe7, {
         color: d.Z.colors.WHITE,
-        className: V.previewPlayButton
+        className: F.previewPlayButton
       }) : (0, r.jsx)(_.o1U, {
         color: d.Z.colors.WHITE,
-        className: V.previewPlayButton
+        className: F.previewPlayButton
       })
     })]
   })
@@ -107,7 +107,7 @@ function H(e) {
     quest: t
   } = e;
   return (0, r.jsx)(N.Z, {
-    className: o()(V.rewardTile, V.hiddenRewardTile),
+    className: o()(F.rewardTile, F.hiddenRewardTile),
     learnMoreStyle: "text",
     quest: t,
     questContent: O.jn.QUEST_BAR_V2,
@@ -118,7 +118,7 @@ function H(e) {
 
 function Y(e) {
   return (0, r.jsx)(_.Text, {
-    className: V.description,
+    className: F.description,
     variant: "text-xs/normal",
     children: (0, S.DD)({
       quest: e.quest,
@@ -151,14 +151,14 @@ function W(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       children: (0, r.jsxs)("div", {
-        className: V.questPromoContent,
+        className: F.questPromoContent,
         ref: d,
         children: [(0, r.jsxs)("div", {
-          className: V.details,
+          className: F.details,
           children: [(0, r.jsx)(H, {
             quest: t
           }), (0, r.jsx)(_.X6q, {
-            className: V.title,
+            className: F.title,
             color: "header-primary",
             variant: "heading-md/medium",
             children: Z.intl.format(Z.t.EQa7oq, {
@@ -169,7 +169,7 @@ function W(e) {
             taskDetails: n
           })]
         }), (0, r.jsx)("div", {
-          className: V.cta,
+          className: F.cta,
           children: (0, r.jsx)(_.zxk, {
             variant: "primary",
             onClick: l ? m : true,
@@ -181,28 +181,28 @@ function W(e) {
         })]
       })
     }), O && null != v && (0, r.jsx)(s.animated.div, {
-      className: V.contentCollapsedBackgroundWrapper,
+      className: F.contentCollapsedBackgroundWrapper,
       style: {
         opacity: a.to([0, 1], [1, 0])
       },
       children: (0, r.jsx)("div", {
-        className: V.contentCollapsedBackground,
+        className: F.contentCollapsedBackground,
         style: T
       })
     }), (0, r.jsxs)(s.animated.div, {
-      className: V.heroAssetWrapper,
+      className: F.heroAssetWrapper,
       style: {
         backdropFilter: a.to([0, 1], [5, 0]).to(e => "blur(".concat(e, "px)")),
         filter: a.to([0, 1], [.8, 1]).to(e => "brightness(".concat(e, ")"))
       },
       children: [!O && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(s.animated.div, {
-          className: V.heroAssetDarken,
+          className: F.heroAssetDarken,
           style: {
             opacity: a.to([0, 1], [1, 0])
           }
         }), (0, r.jsx)(s.animated.div, {
-          className: V.heroAssetTint,
+          className: F.heroAssetTint,
           style: {
             backgroundColor: t.config.colors.primary,
             opacity: a.to([0, 1], [1, 0])
@@ -221,12 +221,12 @@ function W(e) {
         children: e => (0, r.jsx)("img", {
           ref: e,
           alt: "",
-          className: V.heroAsset,
+          className: F.heroAsset,
           src: E.url
         })
       }), (0, r.jsx)("div", {
-        className: o()(V.legibilityGradient, {
-          [V.legibilityGradientDark]: N
+        className: o()(F.legibilityGradient, {
+          [F.legibilityGradientDark]: N
         })
       })]
     })]
@@ -251,7 +251,7 @@ let K = Chunk647438.forwardRef(function(e, t) {
     loop: true,
     muted: true,
     playsInline: true,
-    className: V.heroAsset,
+    className: F.heroAsset,
     controls: false,
     children: (0, r.jsx)("source", {
       src: a.url,
@@ -285,7 +285,7 @@ function z(e) {
   }, [n]), Y = null != Z ? Z.percentComplete : a.percentComplete;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.animated.div, {
-      className: o()(V.postEnrollmentBackground, V.postEnrollmentBackgroundCollapsed),
+      className: o()(F.postEnrollmentBackground, F.postEnrollmentBackgroundCollapsed),
       style: {
         backgroundImage: "linear-gradient(90deg, ".concat(B.aY, ", ").concat(B.v6, ")"),
         opacity: c.to({
@@ -294,7 +294,7 @@ function z(e) {
         })
       }
     }), (0, r.jsxs)("div", {
-      className: V.questAcceptedContent,
+      className: F.questAcceptedContent,
       ref: _,
       children: [(0, r.jsx)(M.Z, {
         quest: n,
@@ -302,7 +302,7 @@ function z(e) {
         onCtxMenuClose: h,
         onCtxMenuSelect: E
       }), (0, r.jsx)("div", {
-        className: V.divider
+        className: F.divider
       }), (0, r.jsx)(x.Z, {
         expansionSpring: c,
         overlayRef: u,
@@ -329,7 +329,7 @@ function z(e) {
           taskDetails: a
         })).exhaustive()
       }), (0, r.jsxs)(w.n, {
-        children: [P && (0, r.jsx)(F, {
+        children: [P && (0, r.jsx)(V, {
           isExpanded: d,
           quest: n,
           onClick: H,
@@ -350,7 +350,7 @@ function z(e) {
         })]
       })]
     }), (0, r.jsx)("div", {
-      className: o()(V.postEnrollmentBackground, V.postEnrollmentBackgroundExpanded),
+      className: o()(F.postEnrollmentBackground, F.postEnrollmentBackgroundExpanded),
       style: {
         backgroundImage: "linear-gradient(90deg, ".concat(B.aY, ", ").concat(B.v6, ")")
       }
@@ -401,9 +401,9 @@ let X = Chunk647438.forwardRef(function(e, t) {
   }, [y, T, S]), C = (null == (n = y.userStatus) ? true : n.enrolledAt) != null, N = u && d;
   return (0, r.jsxs)(s.animated.div, {
     "aria-hidden": !N,
-    className: o()(l, V.contentExpanded, {
-      [V.contentInteractable]: N,
-      [V.contentExpandedAccepted]: C
+    className: o()(l, F.contentExpanded, {
+      [F.contentInteractable]: N,
+      [F.contentExpandedAccepted]: C
     }),
     style: {
       transform: (0, s.to)([f.to({

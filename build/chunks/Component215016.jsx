@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   PY: () => Z,
-  ZP: () => V,
+  ZP: () => F,
   iR: () => G
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -453,7 +453,7 @@ function Z() {
     videoPool: Chunk951288
   }
 }
-let V = function(e) {
+let F = function(e) {
   let t = Z();
   return (0, r.jsx)(B, A({}, e, t))
 }

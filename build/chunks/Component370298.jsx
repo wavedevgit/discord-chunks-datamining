@@ -163,7 +163,7 @@ function U(e) {
       command_ids: n
     })
   }, [M, o, U]);
-  let V = i.useCallback(async e => {
+  let F = i.useCallback(async e => {
       let t = await fetch(I),
         n = await t.arrayBuffer(),
         r = x.join("/"),
@@ -184,13 +184,13 @@ function U(e) {
         draftType: T.d.SlashCommand
       })
     }, [I, o.id, x]),
-    F = i.useCallback(async (e, t, n, r) => {
+    V = i.useCallback(async (e, t, n, r) => {
       var i, a;
       if (!G) return;
       let s = e.applicationId,
         l = (null == (i = B.result) ? true : i.sections[s]) != null,
         u = (null == (a = Z.result) ? true : a.sections[s]) != null;
-      await V(r), null != p.Z.getActiveCommand(o.id) && f.Po({
+      await F(r), null != p.Z.getActiveCommand(o.id) && f.Po({
         channelId: o.id,
         command: null,
         section: null
@@ -215,7 +215,7 @@ function U(e) {
       }), C.S.dispatch(P.CkL.FOCUS_CHANNEL_TEXT_AREA, {
         channelId: o.id
       })
-    }, [o.id, V, G, B, Z]),
+    }, [o.id, F, G, B, Z]),
     H = i.useCallback(async (e, t, n) => {
       var r, i;
       let a = e.applicationId,
@@ -238,7 +238,7 @@ function U(e) {
         command: e,
         location: t,
         source: d._b.TEXT
-      }), c && (await V(n), await (0, g.Z)({
+      }), c && (await F(n), await (0, g.Z)({
         command: L({}, e),
         optionValues: {
           [n]: [{
@@ -252,7 +252,7 @@ function U(e) {
         },
         commandOrigin: t === h.Vh.IMAGE_RECS_SUBMENU ? h.bB.IMAGE_RECS_SUBMENU : h.bB.IMAGE_RECS_MENU
       }))
-    }, [o, j, B, Z, V]);
+    }, [o, j, B, Z, F]);
   return (0, r.jsxs)(s.v2r, {
     onSelect: t,
     navId: "image-context-commands-popout",
@@ -283,7 +283,7 @@ function U(e) {
         return null == l ? null : (0, r.jsx)(s.sNh, {
           id: e.command.id,
           action: () => {
-            a ? F(e.command, e.section, h.Vh.IMAGE_RECS_MENU, l) : H(i ? t : e.command, h.Vh.IMAGE_RECS_MENU, i ? n.imageOption : l)
+            a ? V(e.command, e.section, h.Vh.IMAGE_RECS_MENU, l) : H(i ? t : e.command, h.Vh.IMAGE_RECS_MENU, i ? n.imageOption : l)
           },
           label: e.command.displayName,
           subtext: e.command.displayDescription,
@@ -312,7 +312,7 @@ function U(e) {
               label: w.intl.string(w.t["wTaN+P"]),
               subtext: w.intl.string(w.t.bIB3bm),
               action: () => {
-                F(e.command, e.section, h.Vh.IMAGE_RECS_SUBMENU, l)
+                V(e.command, e.section, h.Vh.IMAGE_RECS_SUBMENU, l)
               },
               icon: s.vdY,
               disabled: !G

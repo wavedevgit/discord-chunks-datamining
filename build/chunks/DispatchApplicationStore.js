@@ -197,11 +197,11 @@ function Z(e) {
   return e.type === b.vxO.INSTALLING || e.type === b.vxO.UPDATING || e.type === b.vxO.REPAIRING ? e.networkProgress : null
 }
 
-function V(e) {
+function F(e) {
   return e.type === b.vxO.INSTALLING || e.type === b.vxO.UPDATING || e.type === b.vxO.REPAIRING ? e.diskProgress : null
 }
 
-function F(e) {
+function V(e) {
   return e.type === b.vxO.INSTALLING || e.type === b.vxO.UPDATING || e.type === b.vxO.REPAIRING ? e.readerProgress : null
 }
 
@@ -257,9 +257,9 @@ function Q(e) {
       if (n[o] = B(r[e][t]), null != C[o]) {
         let e = X(n, o, Z);
         e > 0 && K(w += e);
-        let r = X(n, o, V);
+        let r = X(n, o, F);
         r > 0 && q(D += r);
-        let s = X(n, o, F);
+        let s = X(n, o, V);
         if (s > 0 && z(x += s), i === t) {
           let e = n[o];
           if (true !== e.paused && (e.type === b.vxO.UNINSTALLING || e.type === b.vxO.INSTALLING || e.type === b.vxO.UPDATING)) switch (e.stage) {

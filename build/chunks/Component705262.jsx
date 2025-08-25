@@ -76,13 +76,13 @@ function Z(e, t) {
   return n
 }
 
-function V(e, t) {
+function F(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : Z(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function F(e, t) {
+function V(e, t) {
   if (null == e) return {};
   var n, r, i = H(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -401,13 +401,13 @@ let W = Object.freeze({
       labelledBy: a
     }), {
       ref: s
-    } = o, l = F(o, ["ref"]), c = i.useMemo(() => ({
+    } = o, l = V(o, ["ref"]), c = i.useMemo(() => ({
       type: t,
       delay: W[t]
     }), [t]);
     return (0, r.jsx)(K.Provider, {
       value: c,
-      children: (0, r.jsx)("div", V(B({
+      children: (0, r.jsx)("div", F(B({
         ref: s
       }, l), {
         className: U.__invalid_container,

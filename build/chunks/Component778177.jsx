@@ -64,7 +64,7 @@ function Z(e) {
   return e
 }
 
-function V(e, t) {
+function F(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -75,8 +75,8 @@ function V(e, t) {
   return n
 }
 
-function F(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : V(Object(t)).forEach(function(n) {
+function V(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : F(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -203,11 +203,11 @@ let q = (e, t, n) => {
       })]
     })
   },
-  J = e => (0, r.jsx)(Q, F(Z({}, e), {
+  J = e => (0, r.jsx)(Q, V(Z({}, e), {
     className: G.user,
     renderResult: q
   })),
-  $ = e => (0, r.jsx)(Q, F(Z({}, e), {
+  $ = e => (0, r.jsx)(Q, V(Z({}, e), {
     renderResult: X
   }));
 
@@ -241,7 +241,7 @@ function et(e) {
         children: t
       }, e.type + t)
     });
-  return (0, r.jsxs)(p.P3F, F(Z({
+  return (0, r.jsxs)(p.P3F, V(Z({
     className: G.option,
     onClick: t,
     onFocus: n
@@ -314,7 +314,7 @@ let en = {
     groupTip: () => (0, Chunk951288.jsx)(Chunk481060.ua7, {
       text: Chunk388032.intl.string(Chunk388032.t.hvVgAQ),
       position: "left",
-      children: e => (0, r.jsx)("div", F(Z({
+      children: e => (0, r.jsx)("div", V(Z({
         className: G.searchLearnMore
       }, e), {
         children: (0, r.jsx)(p.eee, {
@@ -341,7 +341,7 @@ let en = {
         h = d === _.z.SEARCH_AUTHOR_TYPE_FILTER_NEW_BADGE,
         m = (0, g.Sl)(M.Ilk.BRAND_500).hex,
         b = (0, P.Ko)(null != (t = n.token) ? t : "");
-      return (0, r.jsxs)(p.P3F, F(Z({
+      return (0, r.jsxs)(p.P3F, V(Z({
         className: o()(G.option, G.searchOption),
         onClick: i,
         onFocus: a

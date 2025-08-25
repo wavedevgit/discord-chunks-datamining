@@ -34,8 +34,8 @@ function b(e, t, n) {
   if (!U.formatLong) throw RangeError("locale must contain formatLong property");
   var Z = (0, a.default)(e);
   if (!(0, r.default)(Z)) throw RangeError("Invalid time value");
-  var V = (0, l.Z)(Z),
-    F = (0, i.Z)(Z, V),
+  var F = (0, l.Z)(Z),
+    V = (0, i.Z)(Z, F),
     H = {
       firstWeekContainsDate: G,
       weekStartsOn: B,
@@ -50,7 +50,7 @@ function b(e, t, n) {
     var i = r[0];
     if ("'" === i) return y(r);
     var a = o.Z[i];
-    if (a) return !(null != n && n.useAdditionalWeekYearTokens) && (0, c.Do)(r) && (0, c.qp)(r, t, String(e)), !(null != n && n.useAdditionalDayOfYearTokens) && (0, c.Iu)(r) && (0, c.qp)(r, t, String(e)), a(F, r, U.localize, H);
+    if (a) return !(null != n && n.useAdditionalWeekYearTokens) && (0, c.Do)(r) && (0, c.qp)(r, t, String(e)), !(null != n && n.useAdditionalDayOfYearTokens) && (0, c.Iu)(r) && (0, c.qp)(r, t, String(e)), a(V, r, U.localize, H);
     if (i.match(E)) throw RangeError("Format string contains an unescaped latin alphabet character `" + i + "`");
     return r
   }).join("")

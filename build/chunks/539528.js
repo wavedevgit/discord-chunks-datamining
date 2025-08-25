@@ -203,7 +203,7 @@ function A(e) {
     var r = U.indexOf(e.key);
     false === r && (r = 0);
     var i = n - r;
-    i && (L = true, V(i))
+    i && (L = true, F(i))
   }
   var M = N(S()),
     U = [M.key];
@@ -263,16 +263,16 @@ function A(e) {
     })
   }
 
-  function V(e) {
+  function F(e) {
     t.go(e)
   }
 
-  function F() {
-    V(false)
+  function V() {
+    F(false)
   }
 
   function H() {
-    V(1)
+    F(1)
   }
   var Y = 0;
 
@@ -304,8 +304,8 @@ function A(e) {
     createHref: G,
     push: B,
     replace: Z,
-    go: V,
-    goBack: F,
+    go: F,
+    goBack: V,
     goForward: H,
     block: z,
     listen: q
@@ -427,7 +427,7 @@ function x(e) {
     return t && t.getAttribute("href") && (n = R(window.location.href)), n + "#" + b(f + _(e))
   }
 
-  function V(e, t) {
+  function F(e, t) {
     var n = "PUSH",
       r = p(e, true, true, J.location);
     I.confirmTransitionTo(r, n, a, function(e) {
@@ -448,7 +448,7 @@ function x(e) {
     })
   }
 
-  function F(e, t) {
+  function V(e, t) {
     var n = "REPLACE",
       r = p(e, true, true, J.location);
     I.confirmTransitionTo(r, n, a, function(e) {
@@ -505,8 +505,8 @@ function x(e) {
     action: "POP",
     location: G,
     createHref: Z,
-    push: V,
-    replace: F,
+    push: F,
+    replace: V,
     go: H,
     goBack: Y,
     goForward: W,

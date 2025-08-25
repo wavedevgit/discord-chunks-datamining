@@ -98,8 +98,8 @@ let B = () => require.e("43841").then(require.t.bind(require, 737848, 19)).then(
     return t
   }),
   Z = 1e4,
-  V = 2600,
-  F = 16,
+  F = 2600,
+  V = 16,
   H = {
     entering: {
       config: {
@@ -141,13 +141,13 @@ function W(e, t) {
   return (0, m.ZP)(() => {
     n && !t && (l(false), setTimeout(() => {
       o(true)
-    }, F))
+    }, V))
   }), (0, m.ZP)(() => {
     let e = setTimeout(() => {
       r(false), setTimeout(() => {
         o(false)
-      }, F)
-    }, V);
+      }, V)
+    }, F);
     return () => clearTimeout(e)
   }), i.useMemo(() => ({
     showConnectedAnimation: a,
@@ -270,8 +270,8 @@ let K = Chunk647438.memo(function(e) {
       connectedOn: M,
       ref: B
     } = e, Z = (0, l.e7)([T.default], () => T.default.getId() === s.id, [s.id]), {
-      ref: V,
-      width: F
+      ref: F,
+      width: V
     } = (0, p.ZP)(), {
       showConnectedAnimation: H
     } = W(M, R), Y = null == D ? true : D.sessionId, X = t.id, Q = s.id, [J] = (0, l.e7)([C.Z], () => {
@@ -316,7 +316,7 @@ let K = Chunk647438.memo(function(e) {
       onMouseEnter: ed,
       onMouseLeave: el,
       children: [ef && (d === w.wC$.NEVER || !ea && d === w.wC$.ONLY_WHILE_SPEAKING) ? null : (0, r.jsx)(c.yRy, {
-        targetElementRef: V,
+        targetElementRef: F,
         position: "left",
         renderPopout: ec,
         shouldShow: L,
@@ -324,7 +324,7 @@ let K = Chunk647438.memo(function(e) {
         spacing: 0,
         children: () => (0, r.jsxs)("div", {
           className: x.username,
-          ref: V,
+          ref: F,
           children: [(0, r.jsx)(v.nm, {
             guildId: S,
             user: s,
@@ -363,7 +363,7 @@ let K = Chunk647438.memo(function(e) {
         nick: u,
         connectedOn: M,
         isSettingsPreview: R,
-        voiceBackgroundWidth: F,
+        voiceBackgroundWidth: V,
         rightAlign: true
       }), (0, r.jsx)(q, {
         className: x.avatar,
@@ -397,9 +397,9 @@ let K = Chunk647438.memo(function(e) {
         nick: u,
         connectedOn: M,
         isSettingsPreview: R,
-        voiceBackgroundWidth: F
+        voiceBackgroundWidth: V
       }), ef && (d === w.wC$.NEVER || !ea && d === w.wC$.ONLY_WHILE_SPEAKING) ? null : (0, r.jsx)(c.yRy, {
-        targetElementRef: V,
+        targetElementRef: F,
         position: "right",
         renderPopout: ec,
         shouldShow: L,
@@ -409,7 +409,7 @@ let K = Chunk647438.memo(function(e) {
           className: o()(x.username, {
             [x.streaming]: es
           }),
-          ref: V,
+          ref: F,
           children: [(0, r.jsx)(c.Text, {
             variant: "text-xs/medium",
             color: "text-default",

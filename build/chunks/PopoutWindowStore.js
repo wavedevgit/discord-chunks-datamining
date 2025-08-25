@@ -134,7 +134,7 @@ function Z(e, t) {
   for (let e of document.querySelectorAll('link[rel="stylesheet"]')) B(t, e.href, e.integrity)
 }
 
-function V(e) {
+function F(e) {
   let t = R[e],
     n = w[e];
   if (null == t) return void A.warn("Failed to open window", e);
@@ -144,7 +144,7 @@ function V(e) {
   a()(null != i, "No render target for popout!"), P[e] = i, i.render(n(e))
 }
 
-function F(e) {
+function V(e) {
   let {
     key: t,
     features: n,
@@ -202,7 +202,7 @@ function F(e) {
 }
 
 function H(e) {
-  D.has(e) && (V(e), D.delete(e), $.emitChange())
+  D.has(e) && (F(e), D.delete(e), $.emitChange())
 }
 
 function Y(e) {
@@ -310,7 +310,7 @@ class J extends(r = Chunk442837.ZP.PersistedStore) {
 }
 y(J, "displayName", "PopoutWindowStore"), y(J, "persistKey", "PopoutWindowStore");
 let $ = new J(Chunk570140.Z, {
-    POPOUT_WINDOW_OPEN: F,
+    POPOUT_WINDOW_OPEN: V,
     POPOUT_WINDOW_ADD_STYLESHEET: Q,
     POPOUT_WINDOW_CLOSE: z,
     POPOUT_WINDOW_SET_ALWAYS_ON_TOP: X,

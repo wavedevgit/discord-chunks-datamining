@@ -105,7 +105,7 @@ function Z(e, t) {
   }
 }
 
-function V(e) {
+function F(e) {
   let {
     mergedMessageRecord: t,
     content: n,
@@ -155,7 +155,7 @@ function V(e) {
   })
 }
 
-function F(e) {
+function V(e) {
   var t, n, a;
   let {
     message: s,
@@ -196,7 +196,7 @@ function F(e) {
     className: G.container,
     children: (0, r.jsxs)("div", {
       className: G.content,
-      children: [(0, r.jsx)(V, {
+      children: [(0, r.jsx)(F, {
         mergedMessageRecord: h,
         content: O,
         channel: S,
@@ -227,7 +227,7 @@ function H(e) {
     message: t
   } = e;
   return (0, r.jsx)(r.Fragment, {
-    children: t.messageSnapshots.map((e, n) => (0, r.jsx)(F, {
+    children: t.messageSnapshots.map((e, n) => (0, r.jsx)(V, {
       message: t,
       snapshot: e,
       index: n

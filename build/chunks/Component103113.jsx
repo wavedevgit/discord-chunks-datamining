@@ -75,10 +75,10 @@ function P(e) {
     channelId: P,
     messageId: w,
     roleId: D
-  }), V = i.useRef(null), F = (0, o.Z)(V);
+  }), F = i.useRef(null), V = (0, o.Z)(F);
   i.useEffect(() => {
-    null == L || L(null == V ? true : V.current)
-  }, [V, L]);
+    null == L || L(null == F ? true : F.current)
+  }, [F, L]);
   let H = () => {
       null == j || j(), (0, m.openUserProfileModal)(R({
         sourceAnalyticsLocations: B,
@@ -108,7 +108,7 @@ function P(e) {
       fetchEndedAt: null == G ? true : G.fetchEndedAt,
       isLoaded: null == G ? true : G.isLoaded,
       children: (0, r.jsxs)(K, {
-        ref: V,
+        ref: F,
         "aria-labelledby": z,
         children: [(0, r.jsx)(a.nn4, {
           children: (0, r.jsx)(a.H, {
@@ -164,7 +164,7 @@ function P(e) {
           })]
         }), (null == G ? true : G.profileEffect) != null && (0, r.jsx)(d.Z, {
           profileEffectId: null == G || null == (t = G.profileEffect) ? true : t.id,
-          isHovering: F
+          isHovering: V
         })]
       })
     })

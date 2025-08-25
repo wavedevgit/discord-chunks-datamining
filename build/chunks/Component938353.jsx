@@ -483,9 +483,9 @@ class tr extends(r = Chunk647438.Component) {
     return 0 !== e.embeds.length && t ? e.embeds.map((t, n) => {
       if (eq.b.has(t.type) || (0, eO.l3)(t) || (0, B.b)(t) && !(0, Z.M)(e) || (0, eO.jz)(t)) return null;
       let r = {
-        renderImageComponent: eV.Yi,
-        renderVideoComponent: eV.lV,
-        renderLinkComponent: eV.iT
+        renderImageComponent: eF.Yi,
+        renderVideoComponent: eF.lV,
+        renderLinkComponent: eF.iT
       };
       if (t.type === eX.hBH.ARTICLE && null != t.url && /^https?:\/\/(?:canary|ptb|www)?\.discord(?:app)?\.com\/store\/skus\/(?:[0-9]+)/.test(t.url) && null != t.provider && "Discord" === t.provider.name) {
         let a = eT.Z.safeParseWithQuery(t.url);
@@ -517,7 +517,7 @@ class tr extends(r = Chunk647438.Component) {
       },
       shouldHideMediaOptions: r,
       enabledContentHarmTypeFlags: n,
-      children: (0, i.jsx)(V.ZP, {
+      children: (0, i.jsx)(F.ZP, {
         message: e,
         shouldDisableInteractiveComponents: a
       })
@@ -637,7 +637,7 @@ class tr extends(r = Chunk647438.Component) {
   }
   renderInteractionPremiumUpsell(e) {
     let t = e.applicationId;
-    return e.type !== l.u.INTERACTION_PREMIUM_UPSELL || null == t ? null : (0, i.jsx)(eF.Z, {
+    return e.type !== l.u.INTERACTION_PREMIUM_UPSELL || null == t ? null : (0, i.jsx)(eV.Z, {
       applicationId: t,
       guildId: this.props.channel.guild_id
     })
@@ -803,7 +803,7 @@ function ti(e) {
     message: r,
     renderSuppressEmbeds: a,
     isMessageSnapshot: o
-  } = e, s = (0, c.e7)([e_.default], () => e_.default.getId()), l = ed.x4.useSetting(), u = ed.RS.useSetting(), d = ed.NA.useSetting() && !(0, ew.Z)(e.message), f = ed.nc.useSetting() && false !== e.renderReactions, _ = ed.QK.useSetting(), p = (0, c.e7)([eh.Z], () => null == n.guild_id || eh.Z.canChatInGuild(n.guild_id), [n]), h = (0, c.e7)([F.Z], () => null != n.guild_id && F.Z.isLurking(n.guild_id), [n]), m = (0, c.e7)([ep.ZP], () => ep.ZP.isCurrentUserGuest(n.guild_id), [n]), g = (0, c.e7)([ep.ZP, eg.default], () => {
+  } = e, s = (0, c.e7)([e_.default], () => e_.default.getId()), l = ed.x4.useSetting(), u = ed.RS.useSetting(), d = ed.NA.useSetting() && !(0, ew.Z)(e.message), f = ed.nc.useSetting() && false !== e.renderReactions, _ = ed.QK.useSetting(), p = (0, c.e7)([eh.Z], () => null == n.guild_id || eh.Z.canChatInGuild(n.guild_id), [n]), h = (0, c.e7)([V.Z], () => null != n.guild_id && V.Z.isLurking(n.guild_id), [n]), m = (0, c.e7)([ep.ZP], () => ep.ZP.isCurrentUserGuest(n.guild_id), [n]), g = (0, c.e7)([ep.ZP, eg.default], () => {
     var e, t;
     let r = eg.default.getCurrentUser();
     return null != (t = null != n.guild_id && null != r ? null == (e = ep.ZP.getMember(n.guild_id, r.id)) ? true : e.isPending : null) && t

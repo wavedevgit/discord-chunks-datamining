@@ -277,7 +277,7 @@ function ed(e) {
   i.useEffect(() => {
     L.default.isAuthenticated() && !eR && E.Z.getExperiments()
   }, [eR]);
-  let [eP, ew] = i.useState(null), [eD, ex] = i.useState(null), [eL, ej] = i.useState(null), [ek, eM] = i.useState(false), [eU, eG] = i.useState(false), eB = null == eP ? true : eP.guilds, [eZ, eV] = i.useState(null != e_ ? e_ : null), [eF, eH] = i.useState(null != ep ? ep : null), [eY, eW] = i.useState(k.Hn), [eK, ez] = i.useState(false), eq = i.useMemo(() => (null == eP ? true : eP.user) != null ? new x.Z(eP.user) : null, [null == eP ? true : eP.user]), eX = (0, A.Z)(null != (t = null == eP ? true : eP.application) ? t : null), eQ = i.useMemo(() => null == eB ? true : eB.find(e => e.id === eZ), [eB, eZ]), [eJ, e$] = i.useState(null), e0 = i.useMemo(() => {
+  let [eP, ew] = i.useState(null), [eD, ex] = i.useState(null), [eL, ej] = i.useState(null), [ek, eM] = i.useState(false), [eU, eG] = i.useState(false), eB = null == eP ? true : eP.guilds, [eZ, eF] = i.useState(null != e_ ? e_ : null), [eV, eH] = i.useState(null != ep ? ep : null), [eY, eW] = i.useState(k.Hn), [eK, ez] = i.useState(false), eq = i.useMemo(() => (null == eP ? true : eP.user) != null ? new x.Z(eP.user) : null, [null == eP ? true : eP.user]), eX = (0, A.Z)(null != (t = null == eP ? true : eP.application) ? t : null), eQ = i.useMemo(() => null == eB ? true : eB.find(e => e.id === eZ), [eB, eZ]), [eJ, e$] = i.useState(null), e0 = i.useMemo(() => {
     var e;
     return null == eC && null == eh && (null != (e = null == ed ? true : ed.length) ? e : 0) === 0 && null == et
   }, [eC, null == ed ? true : ed.length, et, eh]), [e1, e2] = i.useState(null);
@@ -297,7 +297,7 @@ function ed(e) {
     } = i.useMemo(() => {
       let e = e0 ? null == e3 ? true : e3.scopes : ed,
         t = (0, U.K)(null != e ? e : []),
-        n = V.Qe.filter(e => t.includes(e));
+        n = F.Qe.filter(e => t.includes(e));
       return {
         requestedScopes: t,
         accountScopes: n
@@ -365,7 +365,7 @@ function ed(e) {
           integrationType: eJ,
           permissions: d.Od(e5, eY),
           guildId: eJ === c.Y.GUILD_INSTALL && null != eZ ? eZ : true,
-          channelId: eJ === c.Y.GUILD_INSTALL && null != eF ? eF : true,
+          channelId: eJ === c.Y.GUILD_INSTALL && null != eV ? eV : true,
           dmSettings: {
             allowMobilePush: eK
           }
@@ -391,7 +391,7 @@ function ed(e) {
         let e = t.body;
         (null == e ? true : e.message) != null && "" !== e.message ? ej(Error(e.message)) : ej(e), ex("AUTHORIZE_SCOPES"), eM(false)
       }
-    }, [ev, eE, eO, null == eP ? true : eP.application, eQ, eI, P, e8, Q, et, ei, ea, eo, es, e5, eY, eZ, eJ, eF, e9, eK]),
+    }, [ev, eE, eO, null == eP ? true : eP.application, eQ, eI, P, e8, Q, et, ei, ea, eo, es, e5, eY, eZ, eJ, eV, e9, eK]),
     ti = i.useRef(false),
     ta = i.useCallback(async () => {
       if (!L.default.isAuthenticated()) return void(0, G.c$)(eN, "oauth2_error_not_authenticated");
@@ -409,7 +409,7 @@ function ed(e) {
             nonce: es,
             integrationType: null != eJ ? eJ : true
           });
-          ew((0, B.d)(e)), el === F.s.NONE && e.authorized && !tt && tr(true), (0, O.yw)(ee.rMx.OAUTH2_AUTHORIZE_VIEWED, {
+          ew((0, B.d)(e)), el === V.s.NONE && e.authorized && !tt && tr(true), (0, O.yw)(ee.rMx.OAUTH2_AUTHORIZE_VIEWED, {
             application_id: e.application.id,
             mobile_push_notification_default_setting: false
           })
@@ -453,8 +453,8 @@ function ed(e) {
       } else to.length > 1 ? ex("SELECT_INSTALL_TYPE") : (1 === to.length ? e$(to[0]) : null != eh ? e$(eh) : e$(c.Y.GUILD_INSTALL), ex("AUTHORIZE_SCOPES"))
   }, [eC, to, e1, e0, eh, eD, eR]), i.useEffect(() => {
     if (null == eJ || null != eP || null != eL) return;
-    eJ === c.Y.USER_INSTALL && (eV(null), eH(null));
-    let e = e8.filter(e => !V.ak.includes(e));
+    eJ === c.Y.USER_INSTALL && (eF(null), eH(null));
+    let e = e8.filter(e => !F.ak.includes(e));
     0 === e8.length ? ej(Error("No scopes were provided.")) : e.length > 0 ? ej(Error("Invalid scope: ".concat(e[0]))) : (0, Z._$)(e5) ? ej(Error("Invalid permission(s) provided.")) : ta()
   }, [tt, ta, e8, e5, eJ, eP, eL]);
   let tl = i.useCallback(e => {
@@ -555,16 +555,16 @@ function ed(e) {
         }), tO ? (0, r.jsx)(z.Z, {
           error: (null != (o = null != (a = tE[u.x.BOT]) ? a : tE[u.x.APPLICATIONS_COMMANDS]) ? o : [])[0],
           selectedGuildId: eZ,
-          onGuildChange: eV,
+          onGuildChange: eF,
           guilds: null != tb ? tb : [],
           disabled: "" !== eZ && null != eZ && true === em
         }) : null, ty ? (0, r.jsx)($.Z, {
           error: (null != (l = tE[u.x.WEBHOOK_INCOMING]) ? l : [])[0],
-          selectedChannelId: eF,
+          selectedChannelId: eV,
           selectedGuildId: eZ,
           onChannelChange: eH
         }) : null]
-      }), e8.includes(u.x.BOT) && !d.fS(e5, k.Hn) && (v = "AUTHORIZE_BOT_PERMISSIONS"), to.length > 1 && (m = "SELECT_INSTALL_TYPE"), t_ = tO && null == eQ || ty && null == eF, tf = true;
+      }), e8.includes(u.x.BOT) && !d.fS(e5, k.Hn) && (v = "AUTHORIZE_BOT_PERMISSIONS"), to.length > 1 && (m = "SELECT_INSTALL_TYPE"), t_ = tO && null == eQ || ty && null == eV, tf = true;
       break;
     case "AUTHORIZE_BOT_PERMISSIONS":
       if (null == eP) return {

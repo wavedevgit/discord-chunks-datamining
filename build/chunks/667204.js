@@ -2,7 +2,7 @@
 /** chunk id: 667204, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => V,
+  Z: () => F,
   d: () => H
 }), require("./781311.js"), require("./539854.js"), require("./415506.js"), require("./388685.js"), require("./361932.js"), require("./187205.js"), require("./804061.js"), require("./704826.js"), require("./35282.js");
 var Chunk512722 = require("./512722.js"),
@@ -79,7 +79,7 @@ function Z(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-async function V(e) {
+async function F(e) {
   var t, n, r, o, l, u, d, p, h, m, g, E, b, v, T, S, A;
   let {
     command: C,
@@ -90,10 +90,10 @@ async function V(e) {
     commandOrigin: G = x.bB.CHAT,
     sectionName: B,
     interactionLifecycleOptionsFactory: Z = K,
-    source: V
+    source: F
   } = e;
   if (null == k.channel) return;
-  let H = null != (r = D.Z.getSource(k.channel.id)) ? r : V,
+  let H = null != (r = D.Z.getSource(k.channel.id)) ? r : F,
     W = null != (o = D.Z.getCommandOrigin(k.channel.id)) ? o : G;
   null == k.autocomplete && a.Z.dispatch({
     type: "APPLICATION_COMMAND_USED",
@@ -234,7 +234,7 @@ async function V(e) {
       application_command: C.rootCommand
     },
     $ = () => {
-      F(w)
+      V(w)
     };
   null != M && (J.target_id = M), null != k.autocomplete ? (0, N.GV)(C, k, J) : (s.Z.clearAll(k.channel.id, Q), Y({
     applicationId: C.applicationId,
@@ -249,7 +249,7 @@ async function V(e) {
     interactionLifecycleOptions: await Z(C, k, J)
   }))
 }
-let F = e => {
+let V = e => {
     let t = Object.values(e).flatMap(e => e.map(e => "emoji" === e.type ? new h.dy({
       names: [e.name.replaceAll(":", "")],
       surrogates: "",

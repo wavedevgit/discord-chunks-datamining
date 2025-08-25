@@ -170,26 +170,26 @@ function v(e) {
     Z = e => {
       e.currentTarget.contains(e.relatedTarget) || n.setFocused(false)
     },
-    V = (0, E.useRef)(false);
+    F = (0, E.useRef)(false);
   (0, l.z)(I, u.N, w ? e => {
     let {
       detail: t
     } = e;
-    e.stopPropagation(), n.setFocused(true), (null == t ? true : t.focusStrategy) === "first" && (V.current = true)
+    e.stopPropagation(), n.setFocused(true), (null == t ? true : t.focusStrategy) === "first" && (F.current = true)
   } : true);
-  let F = (0, d.i)(() => {
+  let V = (0, d.i)(() => {
     var e, t;
     let r = null != (t = null == (e = v.getFirstKey) ? true : e.call(v)) ? t : null;
     if (null == r) {
       let e = (0, f.vY)();
-      (0, m.q6)(I.current), (0, m.Jv)(e, null), n.collection.size > 0 && (V.current = false)
-    } else n.setFocusedKey(r), V.current = false
+      (0, m.q6)(I.current), (0, m.Jv)(e, null), n.collection.size > 0 && (F.current = false)
+    } else n.setFocusedKey(r), F.current = false
   });
   (0, _.i)(() => {
-    V.current && F()
-  }, [n.collection, F]);
+    F.current && V()
+  }, [n.collection, V]);
   let H = (0, d.i)(() => {
-    n.collection.size > 0 && (V.current = false)
+    n.collection.size > 0 && (F.current = false)
   });
   (0, _.i)(() => {
     H()

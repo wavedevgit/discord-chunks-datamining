@@ -188,7 +188,7 @@ var j = function(e, t) {
     return G(t, n, e)
   },
   Z = ["pause", "cancel", "config", "immediate", "onDelayEnd", "onProps", "onStart", "onChange", "onRest"],
-  V = {
+  F = {
     config: 1,
     from: 1,
     to: 1,
@@ -221,16 +221,16 @@ var j = function(e, t) {
     parentId: 1
   };
 
-function F(e) {
+function V(e) {
   var t = {},
     n = 0;
   if (a.each(e, function(e, r) {
-      !V[r] && (t[r] = e, n++)
+      !F[r] && (t[r] = e, n++)
     }), n) return t
 }
 
 function H(e) {
-  var t = F(e);
+  var t = V(e);
   if (t) {
     var n = {
       to: t
@@ -792,18 +792,18 @@ var er = function(e) {
         G = !!v,
         Z = false;
       if (!G) {
-        var V = P || this.is(es) && y;
-        (O || V) && (G = !(Z = a.isEqual(Y(w), D))), a.isEqual(S.decay, C) && a.isEqual(S.velocity, N) || (G = true)
+        var F = P || this.is(es) && y;
+        (O || F) && (G = !(Z = a.isEqual(Y(w), D))), a.isEqual(S.decay, C) && a.isEqual(S.velocity, N) || (G = true)
       }
       if (Z && this.is(ec) && (i.changed && !P ? G = true : G || this._stop()), !T) {
         (G || a.getFluidConfig(d)) && (i.values = R.getPayload(), i.toValues = v ? null : U == f.AnimatedString ? [1] : a.toArray(D)), i.immediate = k, i.onStart = ep(c("onStart"), r), i.onChange = ep(c("onChange"), r);
-        var F = i.onRest,
-          H = P && !t.onRest ? F[0] || a.noop : eh(ep(c("onRest"), r), this);
+        var V = i.onRest,
+          H = P && !t.onRest ? V[0] || a.noop : eh(ep(c("onRest"), r), this);
         if (G) {
           i.onRest = [H, eh(n, this)];
           var W = +!P;
-          W < F.length && _.batchedUpdates(function() {
-            for (; W < F.length; W++) F[W]()
+          W < V.length && _.batchedUpdates(function() {
+            for (; W < V.length; W++) V[W]()
           })
         } else(P || t.onRest) && (i.onRest[0] = H)
       }
@@ -1317,7 +1317,7 @@ function eZ(e, t, n) {
     _ = true === f || f,
     p = a.toArray(e),
     h = [],
-    m = eV(p, t),
+    m = eF(p, t),
     g = s.useRef(null),
     E = l ? null : g.current;
   i.useLayoutEffect(function() {
@@ -1460,14 +1460,14 @@ function eZ(e, t, n) {
   return 3 == arguments.length ? [C, A.start, A.stop] : C
 }
 
-function eV(e, t) {
+function eF(e, t) {
   var n = t.key,
     r = t.keys,
     i = true === r ? n : r;
   return a.is.und(i) ? e : a.is.fun(i) ? e.map(i) : a.toArray(i)
 }
 
-function eF(e) {
+function eV(e) {
   return (0, e.children)(ej(g(e, ["children"])))
 }
 
@@ -1573,4 +1573,4 @@ Object.keys(Chunk467568).forEach(function(e) {
   get: function() {
     return Chunk698091.createInterpolator
   }
-}), exports.BailSignal = er, exports.Controller = ev, exports.FrameValue = eo, exports.Interpolation = eW, exports.Spring = eF, exports.SpringContext = ew, exports.SpringHandle = ex, exports.SpringValue = ef, exports.Trail = eH, exports.Transition = eY, exports.config = v, exports.inferTo = H, exports.interpolate = ez, exports.to = eK, exports.update = eq, exports.useChain = O, exports.useSpring = ej, exports.useSprings = eL, exports.useTrail = ek, exports.useTransition = eZ
+}), exports.BailSignal = er, exports.Controller = ev, exports.FrameValue = eo, exports.Interpolation = eW, exports.Spring = eV, exports.SpringContext = ew, exports.SpringHandle = ex, exports.SpringValue = ef, exports.Trail = eH, exports.Transition = eY, exports.config = v, exports.inferTo = H, exports.interpolate = ez, exports.to = eK, exports.update = eq, exports.useChain = O, exports.useSpring = ej, exports.useSprings = eL, exports.useTrail = ek, exports.useTransition = eZ

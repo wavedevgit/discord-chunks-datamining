@@ -2,7 +2,7 @@
 /** chunk id: 232388, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => f
+  Z: () => d
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -12,25 +12,18 @@ var Chunk442837 = require("./442837.js"),
   Chunk921801 = require("./921801.js"),
   Chunk131951 = require("./131951.js"),
   Chunk726985 = require("./726985.js"),
-  Chunk388032 = require("./388032.jsx"),
-  Chunk197571 = require("./197571.js");
+  Chunk388032 = require("./388032.jsx");
 
-function f(e) {
-  let {
-    refreshStyles: t = false
-  } = e, n = (0, i.e7)([l.Z], () => l.Z.getQoS()), f = (0, r.jsx)(a.j7V, {
-    value: n,
-    onChange: e => o.Z.setQoS(e),
-    note: u.intl.string(u.t.I1Eoqq),
-    hideBorder: t,
-    children: u.intl.string(u.t["3CqDxs"])
-  });
-  return (0, r.jsx)(s.F, {
-    setting: c.s6.VOICE_AND_VIDEO_ADVANCED_QOS,
-    children: t ? f : (0, r.jsx)(a.hjN, {
-      className: d.marginBottom20,
-      title: u.intl.string(u.t.uancuL),
-      children: f
+function d() {
+  let e = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getQoS());
+  return (0, Chunk951288.jsx)(Chunk921801.F, {
+    setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_QOS,
+    children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
+      value: module,
+      onChange: e => o.Z.setQoS(e),
+      note: Chunk388032.intl.string(Chunk388032.t.I1Eoqq),
+      hideBorder: true,
+      children: Chunk388032.intl.string(Chunk388032.t["3CqDxs"])
     })
   })
 }

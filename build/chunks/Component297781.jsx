@@ -18,8 +18,8 @@ require.d(exports, {
   f: () => H,
   m7: () => j,
   n8: () => K,
-  pQ: () => V,
-  v1: () => F,
+  pQ: () => F,
+  v1: () => V,
   wO: () => Z
 });
 var Chunk951288 = require("./951288.js"),
@@ -103,10 +103,10 @@ function P(e, t) {
 }
 let w = {
   [Chunk876215.s.TOP_ARTIST]: [W],
-  [Chunk876215.s.PLAYED_GAME]: [U, G, M, z, Z, H, K, F, V],
+  [Chunk876215.s.PLAYED_GAME]: [U, G, M, z, Z, H, K, V, F],
   [Chunk876215.s.TOP_GAME]: [Y],
   [Chunk876215.s.WATCHED_MEDIA]: [q, X],
-  [Chunk876215.s.LAUNCHED_ACTIVITY]: [U, G, M, z, K, V]
+  [Chunk876215.s.LAUNCHED_ACTIVITY]: [U, G, M, z, K, F]
 };
 var D = function(e) {
   return e[e.CARD = 0] = "CARD", e[e.POPOUT = 1] = "POPOUT", e[e.STREAMING_POPOUT = 2] = "STREAMING_POPOUT", e[e.GAME_PROFILE = 3] = "GAME_PROFILE", e[e.USER_PROFILE = 4] = "USER_PROFILE", e[e.EMBED = 5] = "EMBED", e[e.LEADERBOARD_POPOUT = 6] = "LEADERBOARD_POPOUT", e[e.OVERLAY = 7] = "OVERLAY", e[e.FRIENDS_POPOUT = 8] = "FRIENDS_POPOUT", e[e.APP_LAUNCHER = 9] = "APP_LAUNCHER", e
@@ -262,7 +262,7 @@ function Z(e) {
   }) : null
 }
 
-function V(e) {
+function F(e) {
   let {
     entry: t
   } = e, {
@@ -283,7 +283,7 @@ function V(e) {
   })
 }
 
-function F(e) {
+function V(e) {
   let {
     entry: t
   } = e, {

@@ -159,7 +159,7 @@ function eu(e) {
     priceOptions: N
   } = e, {
     setInvoicePreview: R
-  } = (0, O.JL)(), w = (0, C.Z)(), x = s.interval, L = s.intervalCount, U = (0, u.e7)([V.Z], () => V.Z.getForSkuAndInterval((0, K.Wz)(Q.Si.GUILD), x, L)), B = (0, u.e7)([G.default], () => G.default.getCurrentUser()), Z = (0, u.e7)([M.Z], () => M.Z.getGuild(a), [a]), et = (0, b.Z)({
+  } = (0, O.JL)(), w = (0, C.Z)(), x = s.interval, L = s.intervalCount, U = (0, u.e7)([F.Z], () => F.Z.getForSkuAndInterval((0, K.Wz)(Q.Si.GUILD), x, L)), B = (0, u.e7)([G.default], () => G.default.getCurrentUser()), Z = (0, u.e7)([M.Z], () => M.Z.getGuild(a), [a]), et = (0, b.Z)({
     forceFetch: false
   });
   l()(null != U, "Missing guildBoostingSubscriptionPlan"), l()(null != Z, "Unknown guild: ".concat(a));
@@ -203,7 +203,7 @@ function eu(e) {
       currency: N.currency
     } : K.ZP.getPrice(U.id, eb, false, N),
     ev = c * eO.amount,
-    eI = (0, u.e7)([F.Z], () => F.Z.inReverseTrial() && K.ZP.hasBoostDiscount(B, et.fractionalState) && null != m),
+    eI = (0, u.e7)([V.Z], () => V.Z.inReverseTrial() && K.ZP.hasBoostDiscount(B, et.fractionalState) && null != m),
     eT = K.ZP.hasBoostDiscount(B, et.fractionalState) && null != m && K.ZP.getPremiumType(m.planId) === Q.p9.TIER_2 ? $.intl.format($.t.hf6YOT, {
       planName: K.ZP.getDisplayPremiumType(m.planId)
     }) : $.intl.format(eE ? $.t["ba1L7+"] : $.t.fkffDQ, {
@@ -318,7 +318,7 @@ function ed(e) {
     proratedInvoicePreview: i,
     renewalInvoicePreview: a,
     priceOptions: o
-  } = e, s = n.interval, c = n.intervalCount, d = (0, u.e7)([V.Z], () => V.Z.getForSkuAndInterval((0, K.Wz)(Q.Si.GUILD), s, c));
+  } = e, s = n.interval, c = n.intervalCount, d = (0, u.e7)([F.Z], () => F.Z.getForSkuAndInterval((0, K.Wz)(Q.Si.GUILD), s, c));
   l()(null != d, "Missing guildBoostingSubscriptionPlan");
   let f = e => (0, T.j)(i.invoiceItems).find(t => Q.Z1.has(t.subscriptionPlanId) && e(t)),
     _ = f(e => e.amount >= 0);
@@ -339,7 +339,7 @@ function ed(e) {
       })
     }),
     A = (0, K.Ap)(o.paymentSourceId),
-    C = (0, u.e7)([F.Z], () => F.Z.inReverseTrial());
+    C = (0, u.e7)([V.Z], () => V.Z.inReverseTrial());
   return (0, r.jsxs)(r.Fragment, {
     children: [A ? null : C && null != t ? (0, r.jsx)(ec, {
       endDate: t.currentPeriodEnd,

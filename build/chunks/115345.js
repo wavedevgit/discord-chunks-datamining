@@ -7,7 +7,7 @@ require.d(exports, {
   cG: () => G,
   ly: () => B,
   oL: () => X,
-  vo: () => F
+  vo: () => V
 }), require("./388685.js"), require("./997841.js"), require("./415506.js");
 var Chunk647438 = require("./647438.js"),
   Chunk392711 = require("./392711.js"),
@@ -98,7 +98,7 @@ function U(e, t) {
       }))
     }, []),
     setThresholds: i,
-    getDebug: () => V(Object.values(u), t)
+    getDebug: () => F(Object.values(u), t)
   }
 }
 
@@ -140,7 +140,7 @@ function Z(e, t, n, r, i) {
   }
 }
 
-function V(e, t) {
+function F(e, t) {
   let n = t.reduce((e, t) => {
       var n;
       return e + Number(null != (n = t.num_year_opens) ? n : 0)
@@ -174,7 +174,7 @@ function V(e, t) {
   return "\n# Basic Stats\n- Total channel visits (yr): ".concat(n, "\n- Total channel visits (month): ").concat(r, "\n\n").concat(s.join("\n\n"))
 }
 
-function F(e) {
+function V(e) {
   let [t, n] = r.useState(false), [i, a] = r.useState(false), o = r.useCallback(async t => {
     if (i) throw Error("Already submitted notifications migration");
     n(true);

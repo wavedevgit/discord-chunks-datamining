@@ -63,7 +63,7 @@ function Z(e) {
   return e
 }
 
-function V(e, t) {
+function F(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -74,8 +74,8 @@ function V(e, t) {
   return n
 }
 
-function F(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : V(Object(t)).forEach(function(n) {
+function V(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : F(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -102,7 +102,7 @@ function er(e) {
 }
 
 function ei(e) {
-  return null == J[e] && (J = F(Z({}, J), {
+  return null == J[e] && (J = V(Z({}, J), {
     [e]: new A.Z({
       name: e
     })
@@ -110,7 +110,7 @@ function ei(e) {
 }
 
 function ea(e) {
-  return null == $[e] && ($ = F(Z({}, $), {
+  return null == $[e] && ($ = V(Z({}, $), {
     [e]: new S.Z({
       url: e
     })
@@ -224,15 +224,15 @@ function e_(e, t, n) {
     })
   }
   let Z = 1 === S.length,
-    V = [],
-    F = new Set,
+    F = [],
+    V = new Set,
     H = new Set;
   for (let e of g) {
     let t = ec(e.id),
       n = N.Z.getChannel(t),
       r = null != n ? n.getGuildId() : null,
       i = D.Z.getGuild(r);
-    if (H.has(r) && F.has(t) || null == n || null == i || n.id === i.afkChannelId) null == n && (f = null, Z = true);
+    if (H.has(r) && V.has(t) || null == n || null == i || n.id === i.afkChannelId) null == n && (f = null, Z = true);
     else {
       let e = M.Z.getVoiceStatesForChannel(n.id),
         o = (0, v.HG)("NowPlayingViewStore - voiceMembers"),
@@ -248,7 +248,7 @@ function e_(e, t, n) {
         } = e;
         return k.default.getUser(t)
       }).filter(U.lm).orderBy([s], ["desc"]).value();
-      l.filter(e => !E.includes(e.id)).forEach(e => g.push(e)), Z ? H.has(r) || (f = null) : (f = i, Z = true), H.add(r), F.add(t), V.push({
+      l.filter(e => !E.includes(e.id)).forEach(e => g.push(e)), Z ? H.has(r) || (f = null) : (f = i, Z = true), H.add(r), V.add(t), F.push({
         channel: n,
         guild: i,
         members: l,
@@ -258,7 +258,7 @@ function e_(e, t, n) {
   }
   return {
     id: n,
-    voiceChannels: V,
+    voiceChannels: F,
     isSpotifyActivity: G,
     priorityMembers: S.map(e => ({
       user: e,

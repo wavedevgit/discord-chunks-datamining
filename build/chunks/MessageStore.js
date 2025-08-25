@@ -93,7 +93,7 @@ function Z(e) {
   j.log("Clearing messages for ".concat(t)), c.Z.clear(t), L.clear()
 }
 
-function V(e) {
+function F(e) {
   let {
     channelId: t,
     jump: n,
@@ -106,7 +106,7 @@ function V(e) {
   (null == n ? true : n.present) ? l = l.jumpToPresent(o): (null == r ? true : r.messageId) != null ? l = l.focusOnMessage(r.messageId) : (null == n ? true : n.messageId) != null ? l = l.jumpToMessage(n.messageId, n.flash, n.offset, n.returnMessageId, n.jumpType) : (null != i || null != a) && (l = l.loadFromCache(null != i, o)), null != s && (null != i || null != a) && (null == i || null == a) && (l = l.truncate(null != i, null != a)), c.Z.commit(l)
 }
 
-function F(e) {
+function V(e) {
   let {
     channelId: t,
     isBefore: n,
@@ -445,9 +445,9 @@ let em = new eh(Chunk570140.Z, {
   OVERLAY_INITIALIZE: M,
   CACHE_LOADED: ef,
   LOAD_MESSAGES: G,
-  LOAD_MESSAGES_SUCCESS: F,
+  LOAD_MESSAGES_SUCCESS: V,
   LOAD_MESSAGES_FAILURE: H,
-  LOAD_MESSAGES_SUCCESS_CACHED: V,
+  LOAD_MESSAGES_SUCCESS_CACHED: F,
   LOCAL_MESSAGES_LOADED: e_,
   LOAD_MESSAGE_INTERACTION_DATA_SUCCESS: $,
   TRUNCATE_MESSAGES: B,

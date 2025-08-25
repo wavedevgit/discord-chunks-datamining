@@ -35,7 +35,7 @@ require.d(exports, {
   sR: () => U,
   tx: () => w,
   uC: () => Y,
-  vc: () => F,
+  vc: () => V,
   vd: () => Z,
   vg: () => en,
   xL: () => ee,
@@ -141,10 +141,10 @@ let B = new Set([Chunk981631.d4z.DM, Chunk981631.d4z.GROUP_DM, Chunk981631.d4z.G
 function Z(e) {
   return B.has(e)
 }
-let V = new Set([Chunk981631.d4z.GUILD_TEXT, Chunk981631.d4z.GUILD_ANNOUNCEMENT, Chunk981631.d4z.ANNOUNCEMENT_THREAD, Chunk981631.d4z.PUBLIC_THREAD, Chunk981631.d4z.PRIVATE_THREAD, Chunk981631.d4z.GUILD_DIRECTORY, Chunk981631.d4z.GUILD_FORUM, Chunk981631.d4z.GUILD_MEDIA, Chunk981631.d4z.DM, Chunk981631.d4z.GROUP_DM]);
+let F = new Set([Chunk981631.d4z.GUILD_TEXT, Chunk981631.d4z.GUILD_ANNOUNCEMENT, Chunk981631.d4z.ANNOUNCEMENT_THREAD, Chunk981631.d4z.PUBLIC_THREAD, Chunk981631.d4z.PRIVATE_THREAD, Chunk981631.d4z.GUILD_DIRECTORY, Chunk981631.d4z.GUILD_FORUM, Chunk981631.d4z.GUILD_MEDIA, Chunk981631.d4z.DM, Chunk981631.d4z.GROUP_DM]);
 
-function F(e) {
-  return V.has(e)
+function V(e) {
+  return F.has(e)
 }
 let H = new Set([Chunk981631.d4z.ANNOUNCEMENT_THREAD, Chunk981631.d4z.PUBLIC_THREAD, Chunk981631.d4z.PRIVATE_THREAD]),
   Y = new Set([Chunk981631.d4z.GUILD_TEXT, Chunk981631.d4z.GUILD_ANNOUNCEMENT, Chunk981631.d4z.GUILD_FORUM, Chunk981631.d4z.GUILD_MEDIA]);

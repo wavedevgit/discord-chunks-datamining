@@ -134,7 +134,7 @@ function j(e) {
     trinketsAnimation: w
   } = null != (t = null == n ? true : n.chatGiftIcon) ? t : {}, j = null != n.firstTimeNotice && !s && C && R >= L, [k, M] = (0, f.XR)(j ? o.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK : null, (0, d.t)(o.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK)), U = null != k, G = v || U, B = (0, y.Ft)(l), Z = (0, p.IH)();
   if (s) return null;
-  let V = () => {
+  let F = () => {
       (0, _.Z)({
         isGift: true,
         giftRecipient: null == B ? true : B,
@@ -148,17 +148,17 @@ function j(e) {
         }
       })
     },
-    F = () => {
-      S(false), M(T.L.TAKE_ACTION), V()
+    V = () => {
+      S(false), M(T.L.TAKE_ACTION), F()
     },
     H = true !== P ? (0, r.jsx)(D, {
       config: P,
       hovered: G,
-      onClick: F
+      onClick: V
     }) : true !== w && Z ? (0, r.jsx)(x, {
       config: w,
       hovered: G,
-      onClick: F
+      onClick: V
     }) : (0, r.jsx)(O.Z, {
       disabled: s,
       channel: l
@@ -173,7 +173,7 @@ function j(e) {
     },
     children: true !== n.firstTimeNotice && U ? (0, r.jsx)(h.Z, {
       onComplete: () => S(false),
-      onCheckItOutClick: V,
+      onCheckItOutClick: F,
       markAsDismissed: M,
       config: n.firstTimeNotice,
       children: H

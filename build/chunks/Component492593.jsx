@@ -108,10 +108,10 @@ let O = function(e) {
     Z = i.useCallback(e => {
       B(true), null == L || L(e)
     }, [L]),
-    V = i.useCallback(e => {
+    F = i.useCallback(e => {
       B(false), null == j || j(e)
     }, [j]),
-    F = (0, u.Y)({
+    V = (0, u.Y)({
       location: "BaseMessage"
     }),
     H = (0, r.jsx)(l.d.Provider, {
@@ -123,7 +123,7 @@ let O = function(e) {
         children: (0, r.jsxs)("div", E(m({
           className: o()(t, {
             [p.gradient]: U,
-            [p.withDisplayNameStyles]: F && (null == x ? true : x.displayNameStyles) != null && (null == x ? true : x.guildId) == null,
+            [p.withDisplayNameStyles]: V && (null == x ? true : x.displayNameStyles) != null && (null == x ? true : x.guildId) == null,
             [p.wrapper]: true,
             [p.contentOnly]: a,
             [p.compact]: n,
@@ -138,7 +138,7 @@ let O = function(e) {
         }, k), {
           role: "article",
           onMouseEnter: Z,
-          onMouseLeave: V,
+          onMouseLeave: F,
           children: [O, v, (0, r.jsxs)("div", {
             className: p.contents,
             children: [T, I, null == T && A]

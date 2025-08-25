@@ -75,10 +75,10 @@ function P(e) {
     channelId: P,
     messageId: w,
     roleId: D
-  }), Z = (0, h.ZP)(t.id, N), V = (0, a.e7)([d.Z], () => null != N ? d.Z.getGuild(N) : null), F = i.useRef(null), H = (0, s.Z)(F);
+  }), Z = (0, h.ZP)(t.id, N), F = (0, a.e7)([d.Z], () => null != N ? d.Z.getGuild(N) : null), V = i.useRef(null), H = (0, s.Z)(V);
   i.useEffect(() => {
-    null == j || j(null == F ? true : F.current)
-  }, [F, j]);
+    null == j || j(null == V ? true : V.current)
+  }, [V, j]);
   let Y = e => {
       null == L || L(), (0, m.openUserProfileModal)(R({
         sourceAnalyticsLocations: G,
@@ -107,7 +107,7 @@ function P(e) {
       fetchEndedAt: null == Z ? true : Z.fetchEndedAt,
       isLoaded: null == Z ? true : Z.isLoaded,
       children: (0, r.jsxs)(K, {
-        ref: F,
+        ref: V,
         "aria-labelledby": z,
         children: [(0, r.jsx)(o.nn4, {
           children: (0, r.jsx)(o.H, {
@@ -151,7 +151,7 @@ function P(e) {
             user: t,
             currentUser: n,
             displayProfile: Z,
-            guild: V,
+            guild: F,
             isHovering: H,
             onOpenProfile: k ? true : Y,
             channelId: P,

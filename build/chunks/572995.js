@@ -145,7 +145,7 @@ let es = (e, t) => ei({
     },
     noLimits: {
       thumbnail: E,
-      assetUrl: e ? V.ZP : F.ZP
+      assetUrl: e ? F.ZP : V.ZP
     }
   }),
   el = () => {

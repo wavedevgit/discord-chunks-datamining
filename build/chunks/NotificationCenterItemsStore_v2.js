@@ -280,7 +280,7 @@ function Z(e) {
   }
 }
 
-function V(e) {
+function F(e) {
   let {
     userId: t,
     applicationId: n
@@ -288,7 +288,7 @@ function V(e) {
   y.notifCenterLocalItems = y.notifCenterLocalItems.filter(e => !U(e, _.O7.INCOMING_GAME_FRIEND_REQUESTS, t, n) && !U(e, _.O7.INCOMING_GAME_FRIEND_REQUESTS_ACCEPTED, t, n))
 }
 
-function F(e) {
+function V(e) {
   let {
     item_enum: t
   } = e;
@@ -392,8 +392,8 @@ let z = new K(Chunk570140.Z, {
   RELATIONSHIP_UPDATE: G,
   RELATIONSHIP_REMOVE: B,
   GAME_RELATIONSHIP_ADD: Z,
-  GAME_RELATIONSHIP_REMOVE: V,
-  NOTIFICATION_CENTER_ITEM_COMPLETED: F,
+  GAME_RELATIONSHIP_REMOVE: F,
+  NOTIFICATION_CENTER_ITEM_COMPLETED: V,
   SET_RECENT_MENTIONS_FILTER: () => I(),
   MOBILE_NATIVE_UPDATE_CHECK_FINISHED: W,
   APPLICATIONS_FETCH_SUCCESS: C

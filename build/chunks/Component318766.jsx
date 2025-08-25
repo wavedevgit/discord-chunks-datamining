@@ -111,7 +111,7 @@ let P = function(e) {
     D(true), L(e), (0, _.x)(g.qR.EmojiButtonMouseEntered)
   }, [j, D, L]), G = i.useCallback(() => {
     D(false)
-  }, [D]), B = i.useCallback(() => (0, _.x)(g.qR.EmojiButtonFocused), []), Z = (0, p.B4)(), [V, F] = (0, f.US)(Z ? [c.z.TRIAL_NUX_EMOJI_BUTTON] : [], true, true), H = V === c.z.TRIAL_NUX_EMOJI_BUTTON, Y = !y && H, W = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), K = i.useRef(null), z = null != P ? P : K;
+  }, [D]), B = i.useCallback(() => (0, _.x)(g.qR.EmojiButtonFocused), []), Z = (0, p.B4)(), [F, V] = (0, f.US)(Z ? [c.z.TRIAL_NUX_EMOJI_BUTTON] : [], true, true), H = F === c.z.TRIAL_NUX_EMOJI_BUTTON, Y = !y && H, W = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), K = i.useRef(null), z = null != P ? P : K;
   return (0, r.jsx)(u.ua7, {
     targetElementRef: z,
     text: () => (0, r.jsx)(N, {}),
@@ -131,7 +131,7 @@ let P = function(e) {
       onMouseOver: U,
       onMouseLeave: () => {
         var t;
-        G(), null == (t = e.onMouseLeave) || t.call(e), H && F(m.L.USER_DISMISS)
+        G(), null == (t = e.onMouseLeave) || t.call(e), H && V(m.L.USER_DISMISS)
       },
       onFocus: B,
       onClick: t => {

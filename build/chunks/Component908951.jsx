@@ -82,11 +82,11 @@ function L(e) {
     disabled: L = false
   } = e, k = (0, c.e7)([b.Z], () => b.Z.hidePersonalInformation), [M, U] = (0, c.Wu)([y.Z], () => [y.Z.paymentSources, y.Z.hasFetchedPaymentSources]), G = (0, E.V)((0, T.yb)(t)), {
     analyticsLocations: B
-  } = (0, g.ZP)(), Z = i.useMemo(() => Object.values(M).filter(e => !e.invalid), [M]), [V, F] = i.useState(false), [H, Y] = i.useState(t.currency), W = async (e, n, r) => {
+  } = (0, g.ZP)(), Z = i.useMemo(() => Object.values(M).filter(e => !e.invalid), [M]), [F, V] = i.useState(false), [H, Y] = i.useState(t.currency), W = async (e, n, r) => {
     if (null == t) throw Error("missing subscription and paymentSource");
-    null == e ? await _.fG(t, n, r, B, P) : await _.tq(t, e, n, r, B, P), F(false), Y(n)
+    null == e ? await _.fG(t, n, r, B, P) : await _.tq(t, e, n, r, B, P), V(false), Y(n)
   }, K = async (e, n, r) => {
-    F(true);
+    V(true);
     let i = await (0, S.hz)({
         subscriptionId: t.id,
         paymentSourceId: null == e ? true : e.id,
@@ -102,7 +102,7 @@ function L(e) {
     D.currency !== i.currency || D.currency === i.currency && D.total !== i.total ? await j(i, () => {
       r(e, n, a)
     }, () => {
-      F(false)
+      V(false)
     }) : r(e, n, a)
   }, z = e => {
     let n = O.Z.get(t.planIdForCurrencies);
@@ -138,7 +138,7 @@ function L(e) {
       selectedPaymentSourceId: e,
       onChange: q,
       onPaymentSourceAdd: Q,
-      dropdownLoading: V,
+      dropdownLoading: F,
       disabled: L,
       paymentGatewayRestrictions: t.eligiblePaymentGateways
     })

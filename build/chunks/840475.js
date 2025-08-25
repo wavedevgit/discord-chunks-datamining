@@ -60,13 +60,13 @@ var r, i, a, Chunk848120 = require("./848120.js"),
       return n && d(n, j) ? n[j] : Z(t)
     }
   },
-  V = function(e) {
+  F = function(e) {
     if (!u(e)) returnfalse;
     var t = f(e);
     return d(U, t) || d(G, t)
   },
-  F = function(e) {
-    if (V(e)) return e;
+  V = function(e) {
+    if (F(e)) return e;
     throw new D("Target is not a typed array")
   },
   H = function(e) {
@@ -124,13 +124,13 @@ if (k && Chunk961050(N) !== P && Chunk769827(N, P), Chunk507604 && !Chunk77025(P
 module.exports = {
   NATIVE_ARRAY_BUFFER_VIEWS: k,
   TYPED_ARRAY_TAG: M && L,
-  aTypedArray: F,
+  aTypedArray: V,
   aTypedArrayConstructor: H,
   exportTypedArrayMethod: Y,
   exportTypedArrayStaticMethod: W,
   getTypedArrayConstructor: Z,
   isView: B,
-  isTypedArray: V,
+  isTypedArray: F,
   TypedArray: R,
   TypedArrayPrototype: P
 }

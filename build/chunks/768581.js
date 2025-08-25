@@ -304,11 +304,11 @@ function Z(e) {
   return (null != a ? "https://".concat(a, "/discovery-splashes/").concat(n, "/").concat(r, ".jpg") : location.protocol + window.GLOBAL_ENV.API_ENDPOINT + f.ANM.GUILD_DISCOVERY_SPLASH(n, r)) + "?size=".concat(i)
 }
 
-function V(e) {
+function F(e) {
   return ee(Z(e))
 }
 
-function F(e) {
+function V(e) {
   let {
     id: t,
     icon: n,
@@ -482,11 +482,11 @@ let et = {
   },
   isAnimatedIconHash: X,
   getUserAvatarSource: (e, t, n) => ee(P(e, t, n)),
-  getGuildIconURL: F,
+  getGuildIconURL: V,
   getGuildSplashURL: M,
   getGuildSplashSource: U,
   getGuildDiscoverySplashURL: Z,
-  getGuildDiscoverySplashSource: V,
+  getGuildDiscoverySplashSource: F,
   getGuildBannerURL: G,
   getGuildHomeHeaderURL: B,
   getResourceChannelIconURL: function e(e) {
@@ -526,7 +526,7 @@ let et = {
   getGameAssetURL: W,
   getVideoFilterAssetURL: K,
   getGameAssetSource: e => ee(W(e)),
-  getGuildIconSource: e => ee(F(e)),
+  getGuildIconSource: e => ee(V(e)),
   getGuildTemplateIconSource: e => ee(H(e)),
   getGuildBannerSource(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1];

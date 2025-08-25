@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Ir: () => H,
-  J: () => F,
+  J: () => V,
   YN: () => M,
   ZP: () => W,
   iZ: () => G
@@ -144,11 +144,11 @@ let B = e => {
       isFirstApplicationOccurrence: null != (t = a.isFirstApplicationOccurrence) && t
     }) : null
   },
-  V = e => {
+  F = e => {
     var {
       closePopout: t
     } = e, n = j(e, ["closePopout"]);
-    return (0, r.jsx)(F, D({
+    return (0, r.jsx)(V, D({
       onReaction: (e, r) => {
         n.trackRankingItemInteraction(e, {
           destinationChannelId: r.id,
@@ -164,7 +164,7 @@ let B = e => {
       }
     }, n))
   },
-  F = e => {
+  V = e => {
     var {
       entry: t
     } = e, n = j(e, ["entry"]);
@@ -243,7 +243,7 @@ let B = e => {
       G = i.useCallback(() => {
         E(String(Date.now()))
       }, []),
-      F = i.useCallback(function(e) {
+      V = i.useCallback(function(e) {
         let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
         (0, h.L)(e, D({}, S, t))
       }, [S]),
@@ -277,10 +277,10 @@ let B = e => {
             } = e;
             return (0, r.jsx)(H.Provider, {
               value: W,
-              children: (0, r.jsx)(V, D({
+              children: (0, r.jsx)(F, D({
                 closePopout: t,
                 updatePopoutPosition: G,
-                trackRankingItemInteraction: F
+                trackRankingItemInteraction: V
               }, _))
             })
           },

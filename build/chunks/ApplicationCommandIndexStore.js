@@ -90,7 +90,7 @@ let M = new Chunk710845.Z("ApplicationCommandIndexStore"),
     sectionedCommands: [],
     loading: true
   }),
-  V = Object.freeze({
+  F = Object.freeze({
     serverVersion: B,
     fetchState: {
       fetching: false
@@ -101,7 +101,7 @@ let M = new Chunk710845.Z("ApplicationCommandIndexStore"),
       version: B
     }
   }),
-  F = Object.freeze({
+  V = Object.freeze({
     serverVersion: G,
     fetchState: {
       fetching: false
@@ -166,20 +166,20 @@ function ee(e) {
   let {
     target: n
   } = e, r = z(n);
-  eN(null != (t = ep.indices[r]) ? t : F) && en(n)
+  eN(null != (t = ep.indices[r]) ? t : V) && en(n)
 }
 async function et(e) {
   var t, n, r;
   let i = z(e),
-    a = null != (t = ep.indices[i]) ? t : F;
+    a = null != (t = ep.indices[i]) ? t : V;
   if (!eN(a)) {
     if (a.fetchState.fetching) {
       let e = a.fetchState.promise;
-      return await e, null != (n = ep.indices[i]) ? n : F
+      return await e, null != (n = ep.indices[i]) ? n : V
     }
     return a
   }
-  return await en(e), null != (r = ep.indices[i]) ? r : F
+  return await en(e), null != (r = ep.indices[i]) ? r : V
 }
 async function en(e) {
   let t = new AbortController,
@@ -383,7 +383,7 @@ class e_ extends(r = Chunk442837.ZP.Store) {
   }
   getContextState(e) {
     var t, n;
-    return "contextless" !== e.type && eC(e.channel) ? null != (n = this.indices[null != (t = e.channel.guild_id) ? t : e.channel.id]) ? n : F : V
+    return "contextless" !== e.type && eC(e.channel) ? null != (n = this.indices[null != (t = e.channel.guild_id) ? t : e.channel.id]) ? n : V : F
   }
   hasContextStateApplication(e) {
     var t, n;
@@ -396,11 +396,11 @@ class e_ extends(r = Chunk442837.ZP.Store) {
   }
   getGuildState(e) {
     var t;
-    return null == e ? V : null != (t = this.indices[e]) ? t : F
+    return null == e ? F : null != (t = this.indices[e]) ? t : V
   }
   getUserState() {
     var e;
-    return null != (e = this.indices[U]) ? module : F
+    return null != (e = this.indices[U]) ? module : V
   }
   hasUserStateApplication(e) {
     var t, n;
@@ -409,7 +409,7 @@ class e_ extends(r = Chunk442837.ZP.Store) {
   }
   getApplicationState(e) {
     var t;
-    return null == e ? V : null != (t = this.indices[e]) ? t : F
+    return null == e ? F : null != (t = this.indices[e]) ? t : V
   }
   getApplicationStates() {
     return this.applicationIndices
@@ -523,7 +523,7 @@ function em(e, t, n) {
 function eg(e, t) {
   let [n, r] = i.useState(true), a = (0, s.cj)([ep], () => {
     var t;
-    return null != (t = ep.indices[e]) ? t : F
+    return null != (t = ep.indices[e]) ? t : V
   });
   return i.useEffect(() => {
     n && null != e && (t && (y.default.track(D.rMx.APPLICATION_COMMAND_CACHE_FETCH, {

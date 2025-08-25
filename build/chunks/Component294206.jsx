@@ -95,8 +95,8 @@ function G(e, t) {
 }
 let B = "1",
   Z = .01,
-  V = .1,
-  F = .01,
+  F = .1,
+  V = .01,
   H = 1e3;
 
 function Y(e) {
@@ -244,7 +244,7 @@ let q = Chunk647438.forwardRef(function(e, t) {
   }
 
   function eM(e) {
-    if (eS && !ev && (eI.current = Math.min(eI.current + F, V), Math.random() < eI.current && eb(eO.x, eO.y, true, true, {
+    if (eS && !ev && (eI.current = Math.min(eI.current + V, F), Math.random() < eI.current && eb(eO.x, eO.y, true, true, {
         sprite: P.vv
       })), null != J) return void J(e);
     ek()
@@ -297,7 +297,7 @@ let q = Chunk647438.forwardRef(function(e, t) {
       })]
     });
 
-  function eV() {
+  function eF() {
     switch (ee) {
       case S.Pb.ADD:
         return (0, r.jsxs)("div", {
@@ -331,10 +331,10 @@ let q = Chunk647438.forwardRef(function(e, t) {
   i.useEffect(() => {
     let e = eT.current;
     return eS && e.start(H, () => {
-      eI.current = Math.max(eI.current - F, Z)
+      eI.current = Math.max(eI.current - V, Z)
     }), () => e.stop()
   }, [eS]);
-  let eF = (0, E.a)(ey.current);
+  let eV = (0, E.a)(ey.current);
   return (0, r.jsxs)("li", {
     ref: t,
     className: o()(x.soundButtonWrapper, R),
@@ -394,7 +394,7 @@ let q = Chunk647438.forwardRef(function(e, t) {
             }),
             children: ed
           })]
-        }), eV()]
+        }), eF()]
       }))
     }), !I.available && (0, r.jsx)(d.ua7, {
       text: D.intl.string(D.t.MDOXJS),
@@ -403,7 +403,7 @@ let q = Chunk647438.forwardRef(function(e, t) {
       }, e))
     }), true === ea && (0, r.jsx)(E.Z, {
       sound: I,
-      containerDimensions: eF,
+      containerDimensions: eV,
       ref: eo
     })]
   })

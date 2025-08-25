@@ -143,7 +143,7 @@ function e_(e) {
     isOpen: false
   })), []);
   let eb = (0, o.e7)([H.Z], () => H.Z.getStatus(t.id)),
-    ey = V.Cr.useSetting(),
+    ey = F.Cr.useSetting(),
     eO = (0, $.F)(ey),
     {
       expiringStatusProfileFeedback: ev
@@ -154,7 +154,7 @@ function e_(e) {
     }),
     eI = (0, o.e7)([Y.Z], () => Y.Z.hidePersonalInformation),
     eT = (0, y.p)(),
-    eS = V.Sb.useSetting(),
+    eS = F.Sb.useSetting(),
     eA = (0, $.I)(eb),
     eC = (0, X.g)(n),
     eN = (0, O.Z)({
@@ -172,7 +172,7 @@ function e_(e) {
     }),
     ex = i.useRef(null),
     [eL, ej] = i.useState(String(Date.now()));
-  (0, F.fu)({
+  (0, V.fu)({
     targetElementRef: ex,
     onGetElementDimensionsAndBoundingRect: e => {
       let {
@@ -181,13 +181,13 @@ function e_(e) {
       t && ej(String(Date.now()))
     }
   });
-  let [ek, eM] = (0, E.US)(eD ? [s.z.CUSTOM_STATUS_PROMPTS_COACHMARK] : []), eU = ek === s.z.CUSTOM_STATUS_PROMPTS_COACHMARK, eG = i.useRef((0, q.Z)(e => e.shouldRenderTenureLevelUp)), eB = i.useMemo(() => (0, m.Z)(), []), [eZ, eV] = i.useState(true);
+  let [ek, eM] = (0, E.US)(eD ? [s.z.CUSTOM_STATUS_PROMPTS_COACHMARK] : []), eU = ek === s.z.CUSTOM_STATUS_PROMPTS_COACHMARK, eG = i.useRef((0, q.Z)(e => e.shouldRenderTenureLevelUp)), eB = i.useMemo(() => (0, m.Z)(), []), [eZ, eF] = i.useState(true);
   i.useEffect(() => {
     setTimeout(() => {
-      eV(false)
+      eF(false)
     }, 500)
   }, []);
-  let eF = e => {
+  let eV = e => {
       null == n || n(), (0, A.openUserProfileModal)(el({
         customStatusPrompt: eB,
         sourceAnalyticsLocations: eh
@@ -220,7 +220,7 @@ function e_(e) {
               user: t,
               displayProfile: ep,
               themeType: er.l.POPOUT,
-              onOpenProfile: e_ ? true : eF
+              onOpenProfile: e_ ? true : eV
             }), eU ? (0, r.jsx)(g.Z, {
               positionKey: eL,
               onTryFeature: n,
@@ -248,7 +248,7 @@ function e_(e) {
               user: t,
               className: ea.username,
               nickname: K.ZP.getName(null, null, t),
-              onOpenProfile: e_ ? true : eF,
+              onOpenProfile: e_ ? true : eV,
               pronouns: null == ep ? true : ep.pronouns,
               tags: (0, r.jsx)(N.Z, {
                 displayProfile: ep,
@@ -273,7 +273,7 @@ function e_(e) {
             }), eH && (0, r.jsx)(G.Z, {
               widgets: ep.widgets,
               onClick: () => {
-                n(), eF({
+                n(), eV({
                   section: en.oh.WIDGETS
                 })
               }
@@ -283,7 +283,7 @@ function e_(e) {
             }), ew ? (0, r.jsx)(L.Z, {
               user: t,
               currentUser: t,
-              onOpenUserProfileModal: eF,
+              onOpenUserProfileModal: eV,
               onClose: n
             }) : (0, r.jsx)(D.Z, {
               user: t,

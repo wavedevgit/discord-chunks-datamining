@@ -123,7 +123,7 @@ function P(e) {
     location: "HeaderBar"
   });
 
-  function V() {
+  function F() {
     if (null == S) return null;
     let e = null != s && !D && !Z;
     return i.tq ? A : (0, r.jsxs)(r.Fragment, {
@@ -142,7 +142,7 @@ function P(e) {
   return (0, r.jsx)(b.ZP, {
     className: n,
     innerClassName: E,
-    toolbar: V(),
+    toolbar: F(),
     transparent: I,
     showToolbar: T,
     onDoubleClick: () => R(L),

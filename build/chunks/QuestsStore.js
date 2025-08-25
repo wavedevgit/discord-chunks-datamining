@@ -58,11 +58,11 @@ let G = new Map,
   B = null,
   Z = 1e3;
 
-function V() {
+function F() {
   r = false, i = false, a = false, o = new Map, s = new Map, l = new Map, c = 0, u = 0, d = new Set, f = new Set, _ = new Set, p = new Set, G = new Map, m = new Map, g = new Map, E = new Map, b = null, y = new Map, h = new Set, O = new Map, v = new Map, eD(), I = null
 }
 
-function F(e, t) {
+function V(e, t) {
   var n, r, i, a;
   if (null != t.userStatus)
     for (let o of Object.values(null != (r = null == (n = t.userStatus) ? true : n.progress) ? r : {})) !(0, S.isNil)(o) && A.T.DESKTOP.has(o.eventName) && ((null == (i = o.heartbeat) ? true : i.lastBeatAt) != null ? h.add(e) : (null == (a = o.heartbeat) ? true : a.lastBeatAt) == null && h.delete(e))
@@ -72,7 +72,7 @@ function H(e, t) {
   let n = (o = new Map(o)).get(e);
   if (null != n) {
     let r = k({}, n, t);
-    F(e, t), o.set(e, r)
+    V(e, t), o.set(e, r)
   }
 }
 
@@ -124,7 +124,7 @@ function q(e) {
 }
 
 function X() {
-  eD(), V()
+  eD(), F()
 }
 
 function Q() {
@@ -418,7 +418,7 @@ function ex(e) {
   } = e;
   I = null != t ? new Date(t) : null
 }
-V();
+F();
 class eL extends(T = Chunk442837.ZP.Store) {
   get quests() {
     return o

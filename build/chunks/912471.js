@@ -72,10 +72,10 @@ function U() {
   }), P = {
     type: "timeout",
     id: setTimeout(() => {
-      V(), P = {
+      F(), P = {
         type: "interval",
         id: setInterval(() => {
-          V()
+          F()
         }, S)
       }
     }, module)
@@ -115,7 +115,7 @@ function Z() {
     is_system_locked: Chunk517100.Z.getSystemLocked()
   }
 }
-async function V() {
+async function F() {
   let e = Date.now(),
     t = await eo(),
     n = Date.now();
@@ -134,7 +134,7 @@ async function V() {
   Chunk626135.default.track(Chunk981631.rMx.CLIENT_HEARTBEAT, Chunk772848), x = performance.now(), (0, Chunk188471.Z)()
 }
 
-function F() {
+function V() {
   if (!(null != M && (0, Chunk733879.y)()) || performance.now() - x <= S) return;
   let e = {
     client_heartbeat_version: T
@@ -164,7 +164,7 @@ function K() {
 function z() {
   null == w && (w = {
     id: setInterval(() => {
-      F()
+      V()
     }, S),
     type: "interval"
   })

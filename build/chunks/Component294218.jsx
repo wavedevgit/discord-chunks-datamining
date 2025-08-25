@@ -102,13 +102,13 @@ function L(e) {
     subscribeToComponentDispatch: U,
     renderThreadAccessory: G,
     trackAnnouncementViews: B = false
-  } = e, Z = D(e, ["message", "compact", "className", "onContextMenu", "onClick", "hideSimpleEmbedContent", "channel", "isGroupStart", "animateAvatar", "subscribeToComponentDispatch", "renderThreadAccessory", "trackAnnouncementViews"]), V = i.type === A.uaV.POLL_RESULT || null != (t = e.disableInteraction) && t, F = i.isFirstMessageInForumPost(j), H = (0, u.A)((null != (n = i.editedTimestamp) ? n : i.timestamp).valueOf()), {
+  } = e, Z = D(e, ["message", "compact", "className", "onContextMenu", "onClick", "hideSimpleEmbedContent", "channel", "isGroupStart", "animateAvatar", "subscribeToComponentDispatch", "renderThreadAccessory", "trackAnnouncementViews"]), F = i.type === A.uaV.POLL_RESULT || null != (t = e.disableInteraction) && t, V = i.isFirstMessageInForumPost(j), H = (0, u.A)((null != (n = i.editedTimestamp) ? n : i.timestamp).valueOf()), {
     content: Y,
     hasSpoilerEmbeds: W
   } = (0, E.Z)(i, {
     hideSimpleEmbedContent: L,
-    allowList: F || H,
-    allowHeading: F || H,
+    allowList: V || H,
+    allowHeading: V || H,
     allowLinks: true,
     previewLinkTarget: true
   }), K = i.type === A.uaV.REPLY ? i.messageReference : true, z = (0, l.e7)([d.Z], () => d.Z.getMessageByReference(K)), q = (0, s.JA)(i.id), X = (0, h.ZP)(i), Q = (0, l.e7)([f.Z], () => i.hasFlag(A.iLy.HAS_THREAD) && f.Z.getChannel(_.default.castMessageIdAsChannelId(i.id))), J = (0, c.p9)({
@@ -123,9 +123,9 @@ function L(e) {
     compact: a,
     className: o()(N, {
       [C.ephemeral]: (0, p.Pv)(i),
-      [C.disableInteraction]: V
+      [C.disableInteraction]: F
     }),
-    disableInteraction: V,
+    disableInteraction: F,
     childrenRepliedMessage: (0, S.Z)(i, j, K, z, a),
     childrenExecutedCommand: (0, T.Z)(i, j, a),
     childrenHeader: (0, v.Z)(w(R({}, e), {
@@ -136,7 +136,7 @@ function L(e) {
     childrenAccessories: e.hideAccessories ? true : (0, y.Q)(e, W),
     childrenMessageContent: (0, O.Z)(e, Y),
     childrenSystemMessage: (0, I.Z)(w(R({}, e), {
-      disableInteraction: V
+      disableInteraction: F
     })),
     onContextMenu: P,
     onClick: x,

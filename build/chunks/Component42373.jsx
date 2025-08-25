@@ -154,7 +154,7 @@ let C = e => {
       },
       Z = x ? O : y;
     t = x ? D === g.y$.LARGE ? "heading-xxl/bold" : "heading-xl/bold" : D === g.y$.SMALL ? "heading-xl/extrabold" : "heading-xxl/extrabold";
-    let V = () => (0, r.jsxs)("div", {
+    let F = () => (0, r.jsxs)("div", {
         className: o()(Z.textBox, Z["".concat(D)]),
         children: [(0, r.jsxs)("div", {
           children: [null != w && (0, r.jsx)("div", {
@@ -182,7 +182,7 @@ let C = e => {
           enablePremiumBrandRefreshDesign: x
         })]
       }),
-      F = () => (0, r.jsx)("div", {
+      V = () => (0, r.jsx)("div", {
         className: o()(Z.boxArtContainer, Z["".concat(D)]),
         children: (0, r.jsx)(p.Z, {
           playsInline: true,
@@ -202,9 +202,9 @@ let C = e => {
       }),
       H = T % 2 != 0,
       Y = () => H ? (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(V, {}), (0, r.jsx)(F, {})]
-      }) : (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(F, {}), (0, r.jsx)(V, {})]
+      }) : (0, r.jsxs)(r.Fragment, {
+        children: [(0, r.jsx)(V, {}), (0, r.jsx)(F, {})]
       }),
       W = {
         className: o()(x ? O.backgroundColor : M, Z.boxContainer, Z["".concat(D)], x && O.gradientBackground),

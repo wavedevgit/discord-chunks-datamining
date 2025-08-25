@@ -71,7 +71,7 @@ function C(e) {
       analyticsSource: s.Z.EDIT_AVATAR_DECORATION_MODAL,
       initialProductSkuId: e
     })
-  }, [l, f]), V = (0, p.M)(), F = V && (0, u.G1)(x), H = () => null != L && (!(0, u.qS)(L) || j) || null === w ? (0, r.jsx)(o.zxk, {
+  }, [l, f]), F = (0, p.M)(), V = F && (0, u.G1)(x), H = () => null != L && (!(0, u.qS)(L) || j) || null === w ? (0, r.jsx)(o.zxk, {
     variant: "primary",
     text: S.intl.string(S.t.Jh8fJy),
     onClick: B,
@@ -82,9 +82,9 @@ function C(e) {
     text: S.intl.string(S.t.fYfGgI)
   }) : (0, r.jsx)(m.Z, {
     subscriptionTier: T.Si.TIER_2,
-    showGradient: V,
+    showGradient: F,
     textOptions: {
-      textOverride: y.ZP.isPremium(t) ? S.intl.string(S.t.KXLX7u) : V ? S.intl.string(S.t.pj0XBA) : S.intl.string(S.t.mr4K7O)
+      textOverride: y.ZP.isPremium(t) ? S.intl.string(S.t.KXLX7u) : F ? S.intl.string(S.t.pj0XBA) : S.intl.string(S.t.mr4K7O)
     }
   });
   return (0, r.jsxs)(r.Fragment, {
@@ -120,7 +120,7 @@ function C(e) {
     }), (0, r.jsxs)(o.mzw, {
       "data-migration-pending": true,
       className: A.modalFooter,
-      children: [H(), F ? (0, r.jsx)(h.Z, {
+      children: [H(), V ? (0, r.jsx)(h.Z, {
         product: x,
         onSecondaryClick: f
       }) : (0, r.jsx)(o.zxk, {

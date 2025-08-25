@@ -83,23 +83,23 @@ let R = new Chunk710845.Z("GuildMemberStore"),
   };
 
 function Z(e, t) {
-  if (null == t.communicationDisabledUntil || !(0, _.b)(t)) return V(e, t.userId);
+  if (null == t.communicationDisabledUntil || !(0, _.b)(t)) return F(e, t.userId);
   let n = Y(e, t.userId);
-  L[n] !== t.communicationDisabledUntil && (0, _.b)(t) && (L[n] = t.communicationDisabledUntil, F(n))
+  L[n] !== t.communicationDisabledUntil && (0, _.b)(t) && (L[n] = t.communicationDisabledUntil, V(n))
 }
 
-function V(e, t) {
+function F(e, t) {
   if (null != t) {
     let n = Y(e, t);
-    null != L[n] && F(n), H(Y(e, t))
+    null != L[n] && V(n), H(Y(e, t))
   } else
     for (let t in L) {
       let n = t;
-      K(n) === e && (F(t), H(n))
+      K(n) === e && (V(t), H(n))
     }
 }
 
-function F(e) {
+function V(e) {
   k += 1, U[e] = k
 }
 
@@ -479,7 +479,7 @@ function eE(e) {
 function eb(e, t) {
   let n = P[e];
   if (null == n || null == n[t]) returnfalse;
-  delete n[t], V(e, t), M++
+  delete n[t], F(e, t), M++
 }
 
 function ey(e) {
@@ -532,7 +532,7 @@ function eI(e) {
   let {
     guild: t
   } = e;
-  delete P[t.id], delete w[t.id], V(t.id)
+  delete P[t.id], delete w[t.id], F(t.id)
 }
 
 function eT(e) {

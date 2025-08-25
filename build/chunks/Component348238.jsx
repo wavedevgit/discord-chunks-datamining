@@ -8,7 +8,7 @@ require.d(exports, {
   NU: () => B,
   Nk: () => j,
   R9: () => U,
-  RN: () => F,
+  RN: () => V,
   Wl: () => L,
   XO: () => x,
   Xn: () => q,
@@ -17,7 +17,7 @@ require.d(exports, {
   rY: () => G,
   sR: () => H,
   tn: () => W,
-  wq: () => V
+  wq: () => F
 }), require("./997841.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -184,7 +184,7 @@ function Z(e, t, o, s) {
   }, [f, c, u, o, _, s])
 }
 
-function V(e, t) {
+function F(e, t) {
   return i.useCallback(n => {
     let r = g.default.getUser(e),
       i = p.Z.getChannel(t);
@@ -192,7 +192,7 @@ function V(e, t) {
   }, [e, t])
 }
 
-function F(e, t, n) {
+function V(e, t, n) {
   return i.useCallback(r => {
     let i = g.default.getUser(e),
       a = p.Z.getChannel(t);

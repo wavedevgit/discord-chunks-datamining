@@ -74,13 +74,13 @@ function Z(e, t) {
   return n
 }
 
-function V(e, t) {
+function F(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : Z(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function F(e, t, n) {
+function V(e, t, n) {
   for (let o of e) {
     var r, i, a;
     if (o.type === k.fO.STREAM) {
@@ -113,7 +113,7 @@ function Y(e) {
     quest: A,
     previewQuest: k,
     isParticipatingOverride: G
-  } = e, Z = (0, g.O5)(), [F, Y] = i.useState(false), W = i.useCallback(() => Y(true), []), K = i.useCallback(() => Y(false), []), z = (0, s.e7)([m.default], () => m.default.getCurrentUser()), q = (0, s.e7)([_.Z], () => _.Z.getState().theme), X = (0, l.wj)(q) ? j.BRd.DARK : j.BRd.LIGHT, Q = (0, s.e7)([u.Z], () => u.Z.getParticipants(e.channelId), [e.channelId]), J = (0, s.e7)([O.Z], () => (0, E.PM)(O.Z.quests, O.Z.questToDeliverForPlacement, v.Ok.DESKTOP_ACCOUNT_PANEL_AREA), []), {
+  } = e, Z = (0, g.O5)(), [V, Y] = i.useState(false), W = i.useCallback(() => Y(true), []), K = i.useCallback(() => Y(false), []), z = (0, s.e7)([m.default], () => m.default.getCurrentUser()), q = (0, s.e7)([_.Z], () => _.Z.getState().theme), X = (0, l.wj)(q) ? j.BRd.DARK : j.BRd.LIGHT, Q = (0, s.e7)([u.Z], () => u.Z.getParticipants(e.channelId), [e.channelId]), J = (0, s.e7)([O.Z], () => (0, E.PM)(O.Z.quests, O.Z.questToDeliverForPlacement, v.Ok.DESKTOP_ACCOUNT_PANEL_AREA), []), {
     isCurrentUserStreamingQuestApplication: $,
     isQuestInQuestBar: ee
   } = (0, s.cj)([h.Z], () => ({
@@ -169,7 +169,7 @@ function Y(e) {
   let eO = (0, E.il)(A),
     ev = (0, r.jsx)(R.Z, {
       className: U.rewardTile,
-      autoplay: F,
+      autoplay: V,
       quest: A,
       questContent: v.jn.QUEST_LIVE_STREAM,
       location: L.dr.QUEST_CHANNEL_CALL_HEADER,
@@ -216,7 +216,7 @@ function Y(e) {
               quest: A,
               preventIdle: true,
               shouldShowDisclosure: (null == (f = A.userStatus) ? true : f.enrolledAt) == null,
-              children: e => (0, r.jsx)(c.P3F, V(B({}, e), {
+              children: e => (0, r.jsx)(c.P3F, F(B({}, e), {
                 className: U.submenuWrapper,
                 "aria-label": M.intl.string(M.t.DEoVWV),
                 children: (0, r.jsx)(c.xhG, {
@@ -237,7 +237,7 @@ function Y(e) {
           })]
         })]
       }), eh && !em && !ei && (0, r.jsx)(x.Z, {
-        autoplay: F,
+        autoplay: V,
         quest: A,
         questContent: v.jn.QUEST_LIVE_STREAM,
         taskDetails: eO,
@@ -285,13 +285,13 @@ function W(e) {
     a = (0, s.e7)([O.Z], () => O.Z.quests),
     o = i.useMemo(() => (0, E.MM)(a, L.Lv), [a]),
     l = (0, s.e7)([u.Z], () => u.Z.getParticipants(e.channelId), [e.channelId]),
-    c = (0, s.e7)([h.Z], () => null != e.previewQuest ? e.previewQuest : F(l, o, h.Z), [l, o, e.previewQuest]);
+    c = (0, s.e7)([h.Z], () => null != e.previewQuest ? e.previewQuest : V(l, o, h.Z), [l, o, e.previewQuest]);
   return null == c || n ? null : (0, r.jsx)(A.A, {
     questOrQuests: c,
     overrideVisibility: !t,
     questContent: v.jn.QUEST_LIVE_STREAM,
     sourceQuestContent: v.jn.QUEST_LIVE_STREAM,
-    children: () => (0, r.jsx)(Y, V(B({}, e), {
+    children: () => (0, r.jsx)(Y, F(B({}, e), {
       quest: c
     }))
   })

@@ -87,8 +87,8 @@ function j(e) {
     pendingBanner: G,
     pendingBio: B,
     pendingPronouns: Z,
-    pendingThemeColors: V,
-    errors: F,
+    pendingThemeColors: F,
+    errors: V,
     guild: H
   } = (0, o.cj)([S.Z], () => {
     let {
@@ -120,7 +120,7 @@ function j(e) {
     X = v.ZP.canUsePremiumProfileCustomization(k),
     Q = (0, c.gd)(M, null == z ? true : z.avatar),
     J = (0, c.f$)(G, null == q ? true : q.banner),
-    $ = (0, A.p)(V, null == q ? true : q.themeColors),
+    $ = (0, A.p)(F, null == q ? true : q.themeColors),
     ee = null != (t = null == q ? true : q.bio) ? t : "",
     et = null != (n = null == q ? true : q.pronouns) ? n : "",
     en = (e, t, n) => {
@@ -132,14 +132,14 @@ function j(e) {
   return (0, r.jsxs)("div", {
     className: P.sectionsContainer,
     children: [(0, r.jsx)(C.Z, {
-      errors: null != (i = null == F ? true : F.nick) ? i : null == K ? true : K.nick,
+      errors: null != (i = null == V ? true : V.nick) ? i : null == K ? true : K.nick,
       username: I.ZP.getName(k),
       pendingNick: U,
       currentNick: null == z ? true : z.nick,
       guild: W
     }, "nick"), (0, r.jsx)(g.Z, {
       sectionTitle: R.intl.string(R.t["+T3RIy"]),
-      errors: null == F ? true : F.pronouns,
+      errors: null == V ? true : V.pronouns,
       onPronounsChange: e => {
         (0, A.xs)(e, et)
       },
@@ -162,7 +162,7 @@ function j(e) {
         }),
         showRemoveAvatarButton: Q,
         onAvatarChange: ei,
-        errors: null == F ? true : F.avatar,
+        errors: null == V ? true : V.avatar,
         guildId: W.id,
         disabled: !X
       }, "avatar"), (0, r.jsx)(d.Z, {
@@ -207,14 +207,14 @@ function j(e) {
         guild: W
       }, "effect"), (0, r.jsx)(p.Z, {
         showRemoveBannerButton: J,
-        errors: null == F ? true : F.banner,
+        errors: null == V ? true : V.banner,
         onBannerChange: er,
         guildId: null == W ? true : W.id,
         disabled: !X
       }, "banner"), (0, r.jsx)(m.Z, {
         user: k,
         pendingAvatarSrc: Y,
-        pendingColors: V,
+        pendingColors: F,
         onThemeColorsChange: e => {
           (0, A.ce)(e, null == q ? true : q.themeColors)
         },
@@ -234,7 +234,7 @@ function j(e) {
           })]
         }),
         onBioChange: e => (0, A.qN)(e, ee),
-        errors: null != (w = null == F ? true : F.bio) ? w : null == K ? true : K.bio,
+        errors: null != (w = null == V ? true : V.bio) ? w : null == K ? true : K.bio,
         pendingBio: B,
         currentBio: ee,
         disabled: !X

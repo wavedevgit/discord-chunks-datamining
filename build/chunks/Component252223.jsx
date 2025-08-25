@@ -162,8 +162,8 @@ function Z(e) {
       let i = null != (t = null == (e = r.state) ? true : e.trim()) ? t : null;
       return null == ("" === i ? null : i) && null == r.emoji ? null : r
     }, [n]),
-    V = (0, c.e7)([b.default], () => b.default.getId() === (null == t ? true : t.id)),
-    F = (0, c.e7)([E.Z], () => V ? E.Z.getHangStatusActivity() : null != n ? n.find(e => e.type === R.IIU.HANG_STATUS) : null),
+    F = (0, c.e7)([b.default], () => b.default.getId() === (null == t ? true : t.id)),
+    V = (0, c.e7)([E.Z], () => F ? E.Z.getHangStatusActivity() : null != n ? n.find(e => e.type === R.IIU.HANG_STATUS) : null),
     H = i.useMemo(() => {
       var e;
       return (0, s.uniqWith)(null != (e = null == n ? true : n.filter(e => {
@@ -271,7 +271,7 @@ function Z(e) {
       [w.textXs]: "xs" === O,
       [w.textSm]: "sm" === O
     }),
-    es = () => null == Z && null == F ? null : (0, r.jsx)(S.Z, {
+    es = () => null == Z && null == V ? null : (0, r.jsx)(S.Z, {
       customStatusActivity: Z,
       textSize: O,
       animateEmoji: v,
@@ -281,7 +281,7 @@ function Z(e) {
       iconClassName: m,
       tooltipClassName: eo,
       voiceChannel: l,
-      hangStatus: F
+      hangStatus: V
     });
   return (0, r.jsxs)("div", {
     className: eo,

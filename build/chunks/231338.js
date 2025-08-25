@@ -11,7 +11,7 @@ require.d(exports, {
   BR: () => Chunk290926.Z,
   BZ: () => z,
   Cw: () => w,
-  Cy: () => V,
+  Cy: () => F,
   EK: () => eE,
   ET: () => ey,
   Et: () => q,
@@ -67,7 +67,7 @@ require.d(exports, {
   xr: () => d,
   yA: () => er,
   yX: () => ei,
-  yY: () => F,
+  yY: () => V,
   zM: () => X
 }), require("./388685.js");
 var Chunk290926 = require("./290926.js"),
@@ -254,9 +254,9 @@ let G = Object.freeze({
     for (var e = arguments.length, t = Array(module), n = 0; require < module; require++) exports[require] = arguments[require]
   },
   Z = () => null,
-  V = () => Promise.resolve(),
-  F = [G.KICK_MEMBERS, G.BAN_MEMBERS, G.ADMINISTRATOR, G.MANAGE_CHANNELS, G.MANAGE_GUILD, G.MANAGE_ROLES, G.MANAGE_MESSAGES, G.MANAGE_THREADS, G.MODERATE_MEMBERS],
-  H = Chunk149765.$e(...F),
+  F = () => Promise.resolve(),
+  V = [G.KICK_MEMBERS, G.BAN_MEMBERS, G.ADMINISTRATOR, G.MANAGE_CHANNELS, G.MANAGE_GUILD, G.MANAGE_ROLES, G.MANAGE_MESSAGES, G.MANAGE_THREADS, G.MODERATE_MEMBERS],
+  H = Chunk149765.$e(...V),
   Y = 1,
   W = 6463,
   K = 10,

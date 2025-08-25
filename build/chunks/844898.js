@@ -97,8 +97,8 @@ function p(e) {
     })), G)
     for (let e of ["onPressStart", "onPressEnd", "onPressChange", "onPress", "onPressUp", "onClick"]) G[e] && (Z[e] = (0, l.t)(Z[e], G[e]));
   let {
-    pressProps: V,
-    isPressed: F
+    pressProps: F,
+    isPressed: V
   } = (0, u.r)(Z), H = x ? e => {
     "mouse" === j.current && (e.stopPropagation(), e.preventDefault(), B(e))
   } : true, {
@@ -114,7 +114,7 @@ function p(e) {
     i.nG.isOpening || e.preventDefault()
   } : true;
   return {
-    itemProps: (0, s.d)(C, P || D || b && !O ? V : {}, k ? Y : {}, {
+    itemProps: (0, s.d)(C, P || D || b && !O ? F : {}, k ? Y : {}, {
       onDoubleClick: H,
       onDragStartCapture: W,
       onClick: K,
@@ -122,7 +122,7 @@ function p(e) {
     }, b ? {
       onMouseDown: e => e.preventDefault()
     } : true),
-    isPressed: F,
+    isPressed: V,
     isSelected: n.isSelected(p),
     isFocused: n.isFocused && n.focusedKey === p,
     isDisabled: O,

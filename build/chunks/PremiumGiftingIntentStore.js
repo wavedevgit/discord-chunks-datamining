@@ -148,14 +148,14 @@ function Z(e) {
   null == T.messageGiftIntentLastShownMap[e] && (T.messageGiftIntentLastShownMap[e] = Date.now())
 }
 
-function V() {
+function F() {
   for (let e in T.messageGiftIntentLastShownMap) {
     let t = T.messageGiftIntentLastShownMap[module];
     Date.now() - exports > v && delete T.messageGiftIntentLastShownMap[module]
   }
 }
 
-function F() {
+function V() {
   T.lastShownFriendsListGiftIntents = []
 }
 
@@ -202,7 +202,7 @@ function K(e) {
 }
 class z extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    T = I(), null != e && (T.friendsTabBadgeLastDismissedTime = e.friendsTabBadgeLastDismissedTime, T.lastShownFriendsListGiftIntents = Array.from(e.lastShownFriendsListGiftIntents), T.messageGiftIntentLastShownMap = g({}, e.messageGiftIntentLastShownMap)), this.syncWith([_.Z, d.Z, f.Z, u.Z], w), V()
+    T = I(), null != e && (T.friendsTabBadgeLastDismissedTime = e.friendsTabBadgeLastDismissedTime, T.lastShownFriendsListGiftIntents = Array.from(e.lastShownFriendsListGiftIntents), T.messageGiftIntentLastShownMap = g({}, e.messageGiftIntentLastShownMap)), this.syncWith([_.Z, d.Z, f.Z, u.Z], w), F()
   }
   getState() {
     return T
@@ -253,7 +253,7 @@ let q = new z(Chunk570140.Z, {
   FRIENDS_LIST_GIFT_INTENTS_SHOWN: M,
   FRIENDS_TAB_BADGE_DISMISS: G,
   GIFT_INTENT_FLOW_PURCHASED_GIFT: B,
-  DEV_TOOLS_FRIENDS_LIST_GIFT_INTENTS_SHOWN_RESET: F,
+  DEV_TOOLS_FRIENDS_LIST_GIFT_INTENTS_SHOWN_RESET: V,
   DEV_TOOLS_GIFT_MESSAGE_COOLDOWN_RESET: H,
   DEV_TOOLS_FRIENDS_TAB_BADGE_COOLDOWN_RESET: Y,
   DEV_TOOLS_SET_FRIEND_ANNIVERSARY_COUNT: W

@@ -93,23 +93,23 @@ function U(e) {
       analyticsLocations: u,
       guild: e
     })
-  }, [t, u]), V = i.useCallback(() => {
+  }, [t, u]), F = i.useCallback(() => {
     a(), (0, C.Z)(t, p.Z.GUILD_POWERUPS_MARKETING, n.skuId)
-  }, [t, n.skuId, a]), F = {
+  }, [t, n.skuId, a]), V = {
     tension: 400,
     friction: 30
   }, H = (0, f.q_F)({
     transform: B ? "translateX(-50%) translateY(16px) scale(1)" : "translateX(-50%) translateY(24px) scale(1.40)",
     borderRadius: "0px",
     transformOrigin: "center 0%",
-    config: F
+    config: V
   }), Y = (0, f.q_F)({
     y: B ? false : 0,
-    config: F
+    config: V
   }), W = (0, f.q_F)({
     opacity: +!!B,
     transform: B ? "translateY(0)" : "translateY(20px)",
-    config: F
+    config: V
   }), K = i.useCallback(e => {
     e && k(true)
   }, []), z = (0, _.O)(K), q = (0, I.Z)(n, U);
@@ -153,7 +153,7 @@ function U(e) {
           children: w.intl.string(w.t["oPAx7+"])
         }), S && (0, r.jsx)(d.zx, {
           grow: true,
-          onClick: V,
+          onClick: F,
           color: d.zx.Colors.PRIMARY,
           className: x.button,
           children: w.intl.string(w.t.GoCQxc)

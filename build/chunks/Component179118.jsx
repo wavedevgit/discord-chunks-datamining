@@ -52,9 +52,9 @@ function k(e) {
     isSendingMessage: y
   } = e, [O, I] = i.useState(f.kO8.Modes.DEFAULT), S = (0, c.e7)([T.Z], () => T.Z.enabled), k = _ || null != l && null != p, U = (null == a ? true : a.productLine) === w.POd.COLLECTIBLES, G = (0, E.Z)(), {
     selectedGiftingPromotionReward: B
-  } = (0, P.wD)(), Z = null == G ? true : G.giftPurchaseConfirmation, V = (0, b.tK)(null == B ? true : B.skuId), F = (0, b.a5)(s) && null != V && null != Z, H = () => null != s ? s.skuId : null != a ? a.id : null, Y = () => {
+  } = (0, P.wD)(), Z = null == G ? true : G.giftPurchaseConfirmation, F = (0, b.tK)(null == B ? true : B.skuId), V = (0, b.a5)(s) && null != F && null != Z, H = () => null != s ? s.skuId : null != a ? a.id : null, Y = () => {
     let e;
-    return null != g ? x.intl.string(x.t.qB8ayc) : null == s ? null : (e = s.interval === D.rV.MONTH ? k ? F ? Z.monthGiftText : x.t["4ZJ+7e"] : x.t["P+z55e"] : k ? F ? Z.yearGiftText : x.t.p0pZXF : x.t.bXqk3t, x.intl.format(e, {
+    return null != g ? x.intl.string(x.t.qB8ayc) : null == s ? null : (e = s.interval === D.rV.MONTH ? k ? V ? Z.monthGiftText : x.t["4ZJ+7e"] : x.t["P+z55e"] : k ? V ? Z.yearGiftText : x.t.p0pZXF : x.t.bXqk3t, x.intl.format(e, {
       skuName: (0, N.aq)(s.id),
       intervalCount: s.intervalCount
     }))
@@ -136,7 +136,7 @@ function k(e) {
     })]
   }) : (0, r.jsxs)("div", {
     className: o()(L.confirmation, {
-      [L.seasonalConfirmationPadding]: F
+      [L.seasonalConfirmationPadding]: V
     }),
     children: [null != n ? (0, r.jsx)(m.Z, {
       game: n,

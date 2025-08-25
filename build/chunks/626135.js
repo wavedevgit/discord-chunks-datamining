@@ -10,7 +10,7 @@ require.r(exports), require.d(exports, {
   debugLogEvent: () => q,
   default: () => el,
   expandEventProperties: () => z,
-  expandLocation: () => V,
+  expandLocation: () => F,
   getAnalyticsEventsRecording: () => ee,
   getNewAnalyticsLoadId: () => es,
   isGameApplicationType: () => ea,
@@ -340,7 +340,7 @@ let Z = {
   }
 };
 
-function V(e) {
+function F(e) {
   return "string" == typeof e ? {
     location: e
   } : {
@@ -352,7 +352,7 @@ function V(e) {
   }
 }
 
-function F(e) {
+function V(e) {
   return "string" == typeof e ? {
     source: e
   } : {
@@ -385,13 +385,13 @@ function z(e) {
     let {
       location: e
     } = a;
-    a = O({}, T(a, ["location"]), V(e))
+    a = O({}, T(a, ["location"]), F(e))
   }
   if (null != a.source) {
     let {
       source: e
     } = a;
-    a = O({}, T(a, ["source"]), F(e))
+    a = O({}, T(a, ["source"]), V(e))
   }
   a.client_performance_cpu = p.Z.getCurrentCPUUsagePercent(), a.client_performance_memory = p.Z.getCurrentMemoryUsageKB(), a.cpu_core_count = p.Z.getCPUCoreCount(), a.accessibility_features = H(), a.rendered_locale = b.intl.currentLocale, a.uptime_app = Math.floor((performance.now() - M) / 1e3);
   let o = p.Z.getProcessUptime();

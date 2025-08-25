@@ -2,7 +2,7 @@
 /** chunk id: 68405, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  PF: () => V,
+  PF: () => F,
   R7: () => k,
   Tg: () => U,
   UU: () => G,
@@ -312,7 +312,7 @@ function Z(e) {
   }, b.fy.INFREQUENT_USER_ACTION)
 }
 
-function V(e) {
+function F(e) {
   f.DZ.updateAsync("favoriteGifs", t => {
     e in t.gifs ? delete t.gifs[e] : delete t.gifs[B(e)], p.default.track(E.rMx.GIF_UNFAVORITED, {
       total_num_favorited: i().size(t.gifs)

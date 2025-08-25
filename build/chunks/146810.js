@@ -97,7 +97,7 @@ function C(e) {
       a(n), i = n.shouldStopPropagation
     }
     return n && n(true), r.isTriggeringEvent = false, r.didFirePressStart = true, M(true), i
-  }), V = (0, f.i)((e, r, i = true) => {
+  }), F = (0, f.i)((e, r, i = true) => {
     let a = U.current;
     if (!a.didFirePressStart) returnfalse;
     a.didFirePressStart = false, a.isTriggeringEvent = true;
@@ -111,7 +111,7 @@ function C(e) {
       t(n), s && (s = n.shouldStopPropagation)
     }
     return a.isTriggeringEvent = false, s
-  }), F = (0, f.i)((e, t) => {
+  }), V = (0, f.i)((e, t) => {
     let n = U.current;
     if (u) returnfalse;
     if (s) {
@@ -123,7 +123,7 @@ function C(e) {
   }), H = (0, f.i)(e => {
     let t = U.current;
     if (t.isPressed && t.target) {
-      for (let n of (t.didFirePressStart && null != t.pointerType && V(P(t.target, e), t.pointerType, false), t.isPressed = false, t.isOverTarget = false, t.activePointerId = null, t.pointerType = null, B(), x || (0, i.A)(t.target), t.disposables)) n();
+      for (let n of (t.didFirePressStart && null != t.pointerType && F(P(t.target, e), t.pointerType, false), t.isPressed = false, t.isOverTarget = false, t.activePointerId = null, t.pointerType = null, B(), x || (0, i.A)(t.target), t.disposables)) n();
       t.disposables = []
     }
   }), Y = (0, f.i)(e => {
@@ -147,7 +147,7 @@ function C(e) {
               e.target = t.currentTarget, e.isPressed = true, e.pointerType = "keyboard", i = Z(t, "keyboard");
               let r = t.currentTarget,
                 a = t => {
-                  R(t, r) && !t.repeat && (0, _.bE)(r, (0, _.NI)(t)) && e.target && F(P(e.target, t), "keyboard")
+                  R(t, r) && !t.repeat && (0, _.bE)(r, (0, _.NI)(t)) && e.target && V(P(e.target, t), "keyboard")
                 };
               G((0, p.r3)(t.currentTarget), "keyup", (0, h.t)(a, n), true)
             }
@@ -159,13 +159,13 @@ function C(e) {
             let n = true;
             if (u && t.preventDefault(), !e.ignoreEmulatedMouseEvents && !e.isPressed && ("virtual" === e.pointerType || (0, E.Z)(t.nativeEvent))) {
               let e = Z(t, "virtual"),
-                r = F(t, "virtual"),
-                i = V(t, "virtual");
+                r = V(t, "virtual"),
+                i = F(t, "virtual");
               W(t), n = e && r && i
             } else if (e.isPressed && "keyboard" !== e.pointerType) {
               let r = e.pointerType || t.nativeEvent.pointerType || "virtual",
-                i = F(P(t.currentTarget, t), r),
-                a = V(P(t.currentTarget, t), r, true);
+                i = V(P(t.currentTarget, t), r),
+                a = F(P(t.currentTarget, t), r, true);
               n = i && a, e.isOverTarget = false, W(t), H(t)
             }
             e.ignoreEmulatedMouseEvents = false, n && t.stopPropagation()
@@ -178,7 +178,7 @@ function C(e) {
           D((0, _.NI)(t), t.key) && t.preventDefault();
           let n = (0, _.NI)(t),
             i = (0, _.bE)(e.target, (0, _.NI)(t));
-          V(P(e.target, t), "keyboard", i), i && K(t, e.target), B(), "Enter" !== t.key && N(e.target) && (0, _.bE)(e.target, n) && !t[T] && (t[T] = true, (0, g.nG)(e.target, t, false)), e.isPressed = false, null == (r = e.metaKeyEvents) || r.delete(t.key)
+          F(P(e.target, t), "keyboard", i), i && K(t, e.target), B(), "Enter" !== t.key && N(e.target) && (0, _.bE)(e.target, n) && !t[T] && (t[T] = true, (0, g.nG)(e.target, t, false)), e.isPressed = false, null == (r = e.metaKeyEvents) || r.delete(t.key)
         } else if ("Meta" === t.key && (null == (n = e.metaKeyEvents) ? true : n.size)) {
           let t = e.metaKeyEvents;
           for (let n of (e.metaKeyEvents = true, t.values())) null == (i = e.target) || i.dispatchEvent(new KeyboardEvent("keyup", n))
@@ -208,11 +208,11 @@ function C(e) {
           t.stopPropagation()
         }
       }, t.onPointerUp = t => {
-        (0, _.bE)(t.currentTarget, (0, _.NI)(t.nativeEvent)) && "virtual" !== e.pointerType && (0 !== t.button || e.isPressed || F(t, e.pointerType || t.pointerType))
+        (0, _.bE)(t.currentTarget, (0, _.NI)(t.nativeEvent)) && "virtual" !== e.pointerType && (0 !== t.button || e.isPressed || V(t, e.pointerType || t.pointerType))
       }, t.onPointerEnter = t => {
         t.pointerId === e.activePointerId && e.target && !e.isOverTarget && null != e.pointerType && (e.isOverTarget = true, Z(P(e.target, t), e.pointerType))
       }, t.onPointerLeave = t => {
-        t.pointerId === e.activePointerId && e.target && e.isOverTarget && null != e.pointerType && (e.isOverTarget = false, V(P(e.target, t), e.pointerType, false), Y(t))
+        t.pointerId === e.activePointerId && e.target && e.isOverTarget && null != e.pointerType && (e.isOverTarget = false, F(P(e.target, t), e.pointerType, false), Y(t))
       };
       let n = t => {
           if (t.pointerId === e.activePointerId && e.isPressed && 0 === t.button && e.target) {
@@ -234,7 +234,7 @@ function C(e) {
       }
     }
     return t
-  }, [G, u, C, B, x, H, Y, V, Z, F, W, K]);
+  }, [G, u, C, B, x, H, Y, F, Z, V, W, K]);
   return (0, y.useEffect)(() => {
     if (!L) return;
     let e = (0, p.r3)(L.current);

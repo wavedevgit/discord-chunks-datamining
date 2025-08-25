@@ -59,85 +59,70 @@ function O(e, t) {
   }), e
 }
 
-function v(e) {
-  let {
-    refreshStyles: t = false
-  } = e, n = (0, s.e7)([d.Z], () => d.Z.getExperimentalEncoders());
-  return (0, r.jsx)(u.F, {
-    setting: h.s6.VOICE_AND_VIDEO_ADVANCED_CODECS_VIDEO_EXPERIMENTAL_ENCODERS,
-    children: (0, r.jsx)(l.j7V, {
-      className: o()(g.marginTop8, g.marginBottom20),
-      value: n,
-      onChange: c.Z.setExperimentalEncoders,
-      hideBorder: t,
-      children: m.intl.string(m.t.AxnPm5)
+function v() {
+  let e = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getExperimentalEncoders());
+  return (0, Chunk951288.jsx)(Chunk921801.F, {
+    setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_CODECS_VIDEO_EXPERIMENTAL_ENCODERS,
+    children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
+      className: o()(Chunk197571.marginTop8, Chunk197571.marginBottom20),
+      value: module,
+      onChange: Chunk846027.Z.setExperimentalEncoders,
+      hideBorder: true,
+      children: Chunk388032.intl.string(Chunk388032.t.AxnPm5)
     })
   })
 }
 
-function I(e) {
+function I() {
   let {
-    refreshStyles: t = false
-  } = e, {
-    openH264: n,
-    hardwareEncoding: a
-  } = (0, s.cj)([d.Z], () => ({
-    openH264: d.Z.getOpenH264(),
-    hardwareEncoding: d.Z.getHardwareEncodingSetting()
-  })), E = i.useRef(null);
-  (0, f.Z)(E, p.KQ.VoiceAndVideoScrollPositions.HARDWARE_ACCELERATION);
-  let y = i.useCallback(e => {
-      e ? c.Z.setHardwareEncoding(true) : (0, l.h7j)(e => (0, r.jsx)(l.ConfirmModal, O(b({
-        header: m.intl.string(m.t.mly1DA),
-        confirmText: m.intl.string(m.t.BddRzc),
-        cancelText: m.intl.string(m.t["ETE/oK"]),
-        onConfirm: () => c.Z.setHardwareEncoding(false)
-      }, e), {
-        children: (0, r.jsx)(l.Text, {
-          variant: "text-sm/normal",
-          children: m.intl.format(m.t.aPStAQ, {})
-        })
-      })))
-    }, []),
-    I = (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(u.F, {
-        setting: h.s6.VOICE_AND_VIDEO_ADVANCED_CODECS_VIDEO_OPENH264,
-        children: (0, r.jsx)(l.j7V, {
-          className: t ? null : o()(g.marginTop8, g.marginBottom20),
-          value: n,
-          onChange: c.Z.setOpenH264,
-          hideBorder: t,
-          children: m.intl.string(m.t["71Ve19"])
-        })
-      }), (0, r.jsx)(u.F, {
-        setting: h.s6.VOICE_AND_VIDEO_ADVANCED_CODECS_VIDEO_HARDWARE_ACCELERATION,
-        children: (0, r.jsxs)("div", {
-          children: [(0, r.jsx)(l.j7V, {
-            style: {
-              scrollMarginTop: "48px"
-            },
-            containerRef: E,
-            className: t ? null : o()(g.marginTop8, g.marginBottom20),
-            value: a,
-            onChange: y,
-            note: m.intl.string(m.t.P1UKqq),
-            hideBorder: t,
-            children: m.intl.string(m.t.Sln58f)
-          }), !a && (0, r.jsx)(_.Z, {
-            look: _.z.WARNING,
-            children: m.intl.string(m.t["Uz6L6+"])
-          })]
-        })
-      }), (0, r.jsx)(v, {
-        refreshStyles: t
-      })]
-    });
-  return (0, r.jsx)(u.F, {
-    setting: h.s6.VOICE_AND_VIDEO_ADVANCED_CODECS_VIDEO,
-    children: t ? I : (0, r.jsx)(l.hjN, {
-      className: g.marginBottom20,
-      title: m.intl.string(m.t.Tceiq6),
-      children: I
-    })
+    openH264: e,
+    hardwareEncoding: t
+  } = (0, Chunk442837.cj)([Chunk131951.Z], () => ({
+    openH264: Chunk131951.Z.getOpenH264(),
+    hardwareEncoding: Chunk131951.Z.getHardwareEncodingSetting()
+  })), n = Chunk647438.useRef(null);
+  (0, Chunk996073.Z)(require, Chunk526761.KQ.VoiceAndVideoScrollPositions.HARDWARE_ACCELERATION);
+  let a = Chunk647438.useCallback(e => {
+    e ? c.Z.setHardwareEncoding(true) : (0, l.h7j)(e => (0, r.jsx)(l.ConfirmModal, O(b({
+      header: m.intl.string(m.t.mly1DA),
+      confirmText: m.intl.string(m.t.BddRzc),
+      cancelText: m.intl.string(m.t["ETE/oK"]),
+      onConfirm: () => c.Z.setHardwareEncoding(false)
+    }, e), {
+      children: (0, r.jsx)(l.Text, {
+        variant: "text-sm/normal",
+        children: m.intl.format(m.t.aPStAQ, {})
+      })
+    })))
+  }, []);
+  return (0, Chunk951288.jsxs)(Chunk921801.F, {
+    setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_CODECS_VIDEO,
+    children: [(0, Chunk951288.jsx)(Chunk921801.F, {
+      setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_CODECS_VIDEO_OPENH264,
+      children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
+        value: module,
+        onChange: Chunk846027.Z.setOpenH264,
+        hideBorder: true,
+        children: Chunk388032.intl.string(Chunk388032.t["71Ve19"])
+      })
+    }), (0, Chunk951288.jsx)(Chunk921801.F, {
+      setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_CODECS_VIDEO_HARDWARE_ACCELERATION,
+      children: (0, Chunk951288.jsxs)("div", {
+        children: [(0, Chunk951288.jsx)(Chunk481060.j7V, {
+          style: {
+            scrollMarginTop: "48px"
+          },
+          containerRef: require,
+          value: exports,
+          onChange: Chunk120356,
+          note: Chunk388032.intl.string(Chunk388032.t.P1UKqq),
+          hideBorder: true,
+          children: Chunk388032.intl.string(Chunk388032.t.Sln58f)
+        }), !exports && (0, Chunk951288.jsx)(Chunk494620.Z, {
+          look: Chunk494620.z.WARNING,
+          children: Chunk388032.intl.string(Chunk388032.t["Uz6L6+"])
+        })]
+      })
+    }), (0, Chunk951288.jsx)(v, {})]
   })
 }

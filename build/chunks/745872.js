@@ -208,13 +208,13 @@ var j = function e(t) {
   G = Chunk390976.call(Chunk947599, Array.prototype.concat),
   B = Chunk390976.call(Chunk365088, Array.prototype.splice),
   Z = Chunk390976.call(Chunk947599, String.prototype.replace),
-  V = Chunk390976.call(Chunk947599, String.prototype.slice),
-  F = Chunk390976.call(Chunk947599, RegExp.prototype.exec),
+  F = Chunk390976.call(Chunk947599, String.prototype.slice),
+  V = Chunk390976.call(Chunk947599, RegExp.prototype.exec),
   H = /[^%.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|%$))/g,
   Y = /\\(\\)?/g,
   W = function(e) {
-    var t = V(e, 0, 1),
-      n = V(e, false);
+    var t = F(e, 0, 1),
+      n = F(e, false);
     if ("%" === t && "%" !== n) throw new c("invalid intrinsic syntax, expected closing `%`");
     if ("%" === n && "%" !== t) throw new c("invalid intrinsic syntax, expected opening `%`");
     var r = [];
@@ -238,7 +238,7 @@ var j = function e(t) {
 module.exports = function(e, t) {
   if ("string" != typeof e || 0 === e.length) throw new u("intrinsic name must be a non-empty string");
   if (arguments.length > 1 && "boolean" != typeof t) throw new u('"allowMissing" argument must be a boolean');
-  if (null === F(/^%?[^%]*%?$/, e)) throw new c("`%` may not be present anywhere but at the beginning and end of the intrinsic name");
+  if (null === V(/^%?[^%]*%?$/, e)) throw new c("`%` may not be present anywhere but at the beginning and end of the intrinsic name");
   var n = W(e),
     r = n.length > 0 ? n[0] : "",
     i = K("%" + r + "%", t),
@@ -249,8 +249,8 @@ module.exports = function(e, t) {
   l && (r = l[0], B(n, G([0, 1], l)));
   for (var d = 1, f = true; d < n.length; d += 1) {
     var _ = n[d],
-      p = V(_, 0, 1),
-      h = V(_, false);
+      p = F(_, 0, 1),
+      h = F(_, false);
     if (('"' === p || "'" === p || "`" === p || '"' === h || "'" === h || "`" === h) && p !== h) throw new c("property names with quotes must have matching quotes");
     if ("constructor" !== _ && f || (s = true), r += "." + _, U(x, a = "%" + r + "%")) o = x[a];
     else if (null != o) {

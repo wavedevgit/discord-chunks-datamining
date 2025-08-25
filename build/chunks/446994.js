@@ -593,12 +593,12 @@
                       }
                     };
                   Z.flush(0), Z.setTempo(a);
-                  var V = function(e, t, n) {
+                  var F = function(e, t, n) {
                       var r = Math.floor(n),
                         i = r % 2 == 1 ? false : 1;
                       return Math.atan2(i * (t[r] - t[r + 1]), i * (e[r] - e[r + 1]))
                     },
-                    F = function(e, t, n, r, i) {
+                    V = function(e, t, n, r, i) {
                       var a = 2 * Math.PI / s * .5 * (r + t) * f;
                       return (function(e) {
                         return e - 2 * Math.PI * Math.round(e / (2 * Math.PI))
@@ -631,10 +631,10 @@
                           O > 0 && B - f[O - 1] < f[O] - B && (v = O - 1);
                           var I = B * o;
                           if (Math.abs(f[v] - B) < I && u[Math.round(f[v])] > .1 * h[Math.round(B)]) {
-                            var w = V(t, n, B),
-                              D = _[v] + p[v] + F(w, B, _[v], f[v], a) - w;
+                            var w = F(t, n, B),
+                              D = _[v] + p[v] + V(w, B, _[v], f[v], a) - w;
                             b[G] = w, y[G] = D, R[G] = Math.cos(D), P[G] = Math.sin(D)
-                          } else b[G] = V(t, n, B), y[G] = 0, R[G] = 1, P[G] = 0
+                          } else b[G] = F(t, n, B), y[G] = 0, R[G] = 1, P[G] = 0
                         }
                         g[E] = 2 * s;
                         var x = g[v = 0],
@@ -650,7 +650,7 @@
                       } else
                         for (var G = 0; G < E; G++) {
                           var B = g[G];
-                          _[G] = p[G] = V(t, n, B)
+                          _[G] = p[G] = F(t, n, B)
                         }
                     },
                     Y = function() {

@@ -95,14 +95,14 @@ let P = 490,
       editorHeight: G,
       onVisibilityChange: B,
       editorScrollerRef: Z,
-      barsHeight: V
-    } = e, F = (0, h.Dt)(), H = (0, l.e7)([E.Z], () => {
+      barsHeight: F
+    } = e, V = (0, h.Dt)(), H = (0, l.e7)([E.Z], () => {
       var e;
       return null != (e = E.Z.getGuild(M.guild_id)) ? e : null
     }, [M.guild_id]), Y = i.useRef(null), [W, K, z] = (0, O.Z)(C(S({}, e), {
       guild: H
     }), t, Y), q = (null == (n = U.autocomplete) ? true : n.forceChatLayer) ? g.ZP : m.ZP, X = (0, _.DJ)(W.selectedIndex);
-    (0, p.KR)(F, W.isVisible, X);
+    (0, p.KR)(V, W.isVisible, X);
     let Q = (0, y.Z)({
         editorHeight: G,
         type: U,
@@ -138,9 +138,9 @@ let P = 490,
     null != Q && (en = (null == (A = U.autocomplete) ? true : A.small) ? x : (null == (R = W.query) ? true : R.type) === b.eq.EMOJIS_AND_STICKERS ? w : D);
     let er = Math.max(G, null != (j = null == Z || null == (a = Z.current) ? true : a.clientHeight) ? j : 0),
       ei = Math.min(.5 * window.innerHeight, er);
-    en = Math.min(window.innerHeight - L - ei - (null != V ? V : 0), en);
+    en = Math.min(window.innerHeight - L - ei - (null != F ? F : 0), en);
     let ea = (0, r.jsx)(_.ZP, {
-      id: F,
+      id: V,
       className: o()(I.autocomplete, et),
       innerClassName: I.autocompleteInner,
       onMouseDown: e => e.preventDefault(),
@@ -152,7 +152,7 @@ let P = 490,
               ref: t
             } = e, n = N(e, ["ref"]);
             return (0, r.jsx)(c.h21, C(S({
-              id: F,
+              id: V,
               ref: e => {
                 var n;
                 t.current = null != (n = null == e ? true : e.getScrollerNode()) ? n : null, Y.current = e
@@ -163,7 +163,7 @@ let P = 490,
                 maxHeight: en
               },
               role: "listbox",
-              "aria-labelledby": (0, _.rp)(F),
+              "aria-labelledby": (0, _.rp)(V),
               children: ee
             }))
           }

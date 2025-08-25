@@ -50,8 +50,8 @@ let C = new Chunk710845.Z("AuthenticationStore"),
   G = [],
   B = "",
   Z = false,
-  V = null,
-  F = false,
+  F = null,
+  V = false,
   H = false,
   Y = null,
   W = null,
@@ -142,7 +142,7 @@ function ei(e) {
   let {
     isMultiAccount: t
   } = e;
-  M = T.u34.NONE, B = "", Z = false, V = null, r = null, t || (eu(), en(), Q(false))
+  M = T.u34.NONE, B = "", Z = false, F = null, r = null, t || (eu(), en(), Q(false))
 }
 
 function ea() {
@@ -153,14 +153,14 @@ function eo(e) {
   let {
     token: t
   } = e;
-  M = T.u34.NONE, ee(t), $(), B = "", Z = false, V = null, eu(), K = false
+  M = T.u34.NONE, ee(t), $(), B = "", Z = false, F = null, eu(), K = false
 }
 
 function es(e) {
   let {
     error: t
   } = e;
-  B = "", Z = false, V = null, eu(), M = null != (0, _.p)(t).date_of_birth ? T.u34.LOGIN_AGE_GATE : T.u34.NONE
+  B = "", Z = false, F = null, eu(), M = null != (0, _.p)(t).date_of_birth ? T.u34.LOGIN_AGE_GATE : T.u34.NONE
 }
 
 function el() {
@@ -171,15 +171,15 @@ function ec(e) {
   let {
     error: t
   } = e;
-  B = "", Z = false, V = null, K = false, M = null != (0, _.F)(t).date_of_birth ? T.u34.LOGIN_AGE_GATE : T.u34.NONE
+  B = "", Z = false, F = null, K = false, M = null != (0, _.F)(t).date_of_birth ? T.u34.LOGIN_AGE_GATE : T.u34.NONE
 }
 
 function eu() {
   let e = [];
-  null != V && module.push({
+  null != F && module.push({
     type: "webauthn",
-    challenge: V
-  }), F && module.push({
+    challenge: F
+  }), V && module.push({
     type: "totp",
     backup_codes_allowed: H
   }), H && module.push({
@@ -197,7 +197,7 @@ function ed(e) {
     backup: i,
     totp: a
   } = e;
-  null != t && (B = t, Z = n, V = null != r ? r : null, H = i, F = a, eu()), M = T.u34.MFA_STEP
+  null != t && (B = t, Z = n, F = null != r ? r : null, H = i, V = a, eu()), M = T.u34.MFA_STEP
 }
 
 function ef() {
@@ -304,7 +304,7 @@ function eS(e) {
   null != (t = null == e ? true : e.isSwitchingAccount) && t || (n && $(), Q()), s.ZP.PersistedStore.clearAll({
     omit: ["InstallationManagerStore", "AgeGateStore", "NativePermissionsStore", "MultiAccountStore", "DraftStore", "OverlayStoreV2", "StreamerModeStore", "LoginRequiredActionStore", "LayoutStore", "OverlaySettingsStore", "ApexExperimentStore"],
     type: (null == e ? true : e.isSwitchingAccount) ? "user-data-only" : "all"
-  }), I.Z.clearAll(), h.ZH(), O.Z.clearUser(), c.K.remove(R), P = null, w = null, M = (null == e ? true : e.isSwitchingAccount) ? T.u34.LOGGING_IN : T.u34.NONE, B = "", V = null, Z = false, K = false, z = false, eu()
+  }), I.Z.clearAll(), h.ZH(), O.Z.clearUser(), c.K.remove(R), P = null, w = null, M = (null == e ? true : e.isSwitchingAccount) ? T.u34.LOGGING_IN : T.u34.NONE, B = "", F = null, Z = false, K = false, z = false, eu()
 }
 
 function eA() {

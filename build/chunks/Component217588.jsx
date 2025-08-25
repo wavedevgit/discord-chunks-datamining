@@ -94,8 +94,8 @@ function B(e, t) {
   return i
 }
 let Z = 80,
-  V = 48,
-  F = 32,
+  F = 48,
+  V = 32,
   H = 2,
   Y = 3,
   W = 12,
@@ -127,7 +127,7 @@ function X(e) {
   return (0, r.jsxs)(_.Z, {
     children: [(0, r.jsx)(N.Z, {
       sticker: t,
-      size: V,
+      size: F,
       isInteracting: true
     }), (0, r.jsxs)(_.Z, {
       direction: _.Z.Direction.VERTICAL,
@@ -228,7 +228,7 @@ let Q = e => {
       M = T.ZP.canUseCustomStickersEverywhere(j),
       B = (0, s.e7)([O.Z], () => O.Z.getGuild(n.guild_id)),
       Z = null != B,
-      [V, Y] = i.useState(false),
+      [F, Y] = i.useState(false),
       [K, z] = i.useState(null),
       Q = i.useMemo(() => ({
         page: null != a.guild_id ? P.ZY5.GUILD_CHANNEL : P.ZY5.DM_CHANNEL,
@@ -320,7 +320,7 @@ let Q = e => {
           if (!en && !Z) return;
           let t = (null != (e = null == S ? true : S.stickers) ? e : []).slice(0, W + 1).filter(e => e.id !== n.id).slice(0, W),
             i = () => {
-              b(), Y(!V)
+              b(), Y(!F)
             },
             a = null != S ? h.JO.createFromDiscoverableGuild(S) : h.JO.createFromGuildRecord(B);
           return (0, r.jsxs)("div", {
@@ -346,11 +346,11 @@ let Q = e => {
                     size: "md",
                     color: "currentColor",
                     className: o()(L.showMoreEmojisArrow, {
-                      [L.showMoreEmojisArrowCollapsed]: !V
+                      [L.showMoreEmojisArrowCollapsed]: !F
                     })
                   })]
                 })
-              }), V && (0, r.jsx)(_.Z, {
+              }), F && (0, r.jsx)(_.Z, {
                 wrap: _.Z.Wrap.WRAP,
                 align: _.Z.Align.START,
                 justify: _.Z.Justify.START,
@@ -375,7 +375,7 @@ let Q = e => {
                       }
                     }, a), {
                       children: (0, r.jsx)(N.Z, {
-                        size: F,
+                        size: V,
                         enlargeOnInteraction: true,
                         enlargeWithName: false,
                         enlargeScaleFactor: H,

@@ -100,11 +100,11 @@ let R = e => {
     analyticsLocations: M
   } = (0, f.ZP)(), U = (0, d.bp)() === b.IlC.POPOUT, [G, B] = i.useState(false), {
     fractionalState: Z
-  } = (0, _.Z)(), V = (0, s.e7)([h.Z], () => h.Z.hasFetched);
+  } = (0, _.Z)(), F = (0, s.e7)([h.Z], () => h.Z.hasFetched);
   i.useEffect(() => {
-    V || (0, u.X8)()
-  }, [V]);
-  let F = (0, g.vx)(h.Z.boostSlots),
+    F || (0, u.X8)()
+  }, [F]);
+  let V = (0, g.vx)(h.Z.boostSlots),
     H = null != S ? Math.max((0, g.KK)(a, S), 1) : 1,
     Y = (0, g.aq)({
       fractionalState: Z
@@ -127,7 +127,7 @@ let R = e => {
       className: v.button,
       children: [L, null != I ? I : O.intl.string(O.t.gKmQ1N)]
     }), q = false;
-  return ((q = null !== K && !(F.length > 0) && (null == K ? true : K.isPausedOrPausePending) && Z === y.a$.NONE) && (z = (0, r.jsxs)("div", {
+  return ((q = null !== K && !(V.length > 0) && (null == K ? true : K.isPausedOrPausePending) && Z === y.a$.NONE) && (z = (0, r.jsxs)("div", {
     className: v.button,
     children: [(0, r.jsx)(c.mBM, {
       size: "xs",

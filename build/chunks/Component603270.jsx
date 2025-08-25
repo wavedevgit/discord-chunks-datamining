@@ -231,14 +231,14 @@ function j(e) {
       }), " ", R.intl.string(R.t.NRC3am)]
     }) : null == E || null == (t = E.description) ? true : t.trim();
   "" === Z && (Z = true);
-  let V = () => {
+  let F = () => {
       U(), O.default.track(C.rMx.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
         application_id: b.id,
         sku_id: _.id,
         area: "app_icon"
       })
     },
-    F = () => {
+    V = () => {
       G(), O.default.track(C.rMx.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
         application_id: b.id,
         sku_id: _.id,
@@ -262,12 +262,12 @@ function j(e) {
     link: "".concat(location.protocol, "//").concat(location.host).concat(C.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(b.id, N.GlobalDiscoveryAppsSections.STORE)),
     onLinkCopy: Y,
     iconSrc: v,
-    onIconClick: V,
+    onIconClick: F,
     children: (0, r.jsxs)("div", {
       className: P.skuPurchaseButtons,
       children: [(0, r.jsx)(l.zxk, {
         variant: "secondary",
-        onClick: F,
+        onClick: V,
         text: R.intl.string(R.t.DXYfjI)
       }), j ? null != g ? (0, r.jsx)(A.pV, {
         onClick: D,

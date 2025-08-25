@@ -108,17 +108,17 @@ function Z(e) {
         compact: n
       });
     case u.p.INTERACTION_BLOCKED:
-      return (0, r.jsx)(F, {
+      return (0, r.jsx)(V, {
         compact: n
       });
     default:
-      return (0, r.jsx)(V, {
+      return (0, r.jsx)(F, {
         compact: n
       })
   }
 }
 
-function V(e) {
+function F(e) {
   let {
     compact: t
   } = e;
@@ -142,7 +142,7 @@ function V(e) {
   })
 }
 
-function F(e) {
+function V(e) {
   let {
     compact: t
   } = e;

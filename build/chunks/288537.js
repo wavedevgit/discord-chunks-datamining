@@ -39,8 +39,8 @@ var r, Chunk754793 = require("./754793.js"),
   G = 42,
   B = 69,
   Z = 73,
-  V = 91,
-  F = 103,
+  F = 91,
+  V = 103,
   H = 113,
   Y = 666,
   W = 1,
@@ -246,9 +246,9 @@ function eE(e, t) {
         }
         l = i.gzindex < i.gzhead.name.length ? 255 & i.gzhead.name.charCodeAt(i.gzindex++) : 0, en(i, l)
       } while (0 !== l);
-      i.gzhead.hcrc && i.pending > o && (e.adler = s(e.adler, i.pending_buf, i.pending - o, o)), 0 === l && (i.gzindex = 0, i.status = V)
-    } else i.status = V;
-  if (i.status === V)
+      i.gzhead.hcrc && i.pending > o && (e.adler = s(e.adler, i.pending_buf, i.pending - o, o)), 0 === l && (i.gzindex = 0, i.status = F)
+    } else i.status = F;
+  if (i.status === F)
     if (i.gzhead.comment) {
       o = i.pending;
       do {
@@ -258,9 +258,9 @@ function eE(e, t) {
         }
         l = i.gzindex < i.gzhead.comment.length ? 255 & i.gzhead.comment.charCodeAt(i.gzindex++) : 0, en(i, l)
       } while (0 !== l);
-      i.gzhead.hcrc && i.pending > o && (e.adler = s(e.adler, i.pending_buf, i.pending - o, o)), 0 === l && (i.status = F)
-    } else i.status = F;
-  if (i.status === F && (i.gzhead.hcrc ? (i.pending + 2 > i.pending_buf_size && ee(e), i.pending + 2 <= i.pending_buf_size && (en(i, 255 & e.adler), en(i, e.adler >> 8 & 255), e.adler = 0, i.status = H)) : i.status = H), 0 !== i.pending) {
+      i.gzhead.hcrc && i.pending > o && (e.adler = s(e.adler, i.pending_buf, i.pending - o, o)), 0 === l && (i.status = V)
+    } else i.status = V;
+  if (i.status === V && (i.gzhead.hcrc ? (i.pending + 2 > i.pending_buf_size && ee(e), i.pending + 2 <= i.pending_buf_size && (en(i, 255 & e.adler), en(i, e.adler >> 8 & 255), e.adler = 0, i.status = H)) : i.status = H), 0 !== i.pending) {
     if (ee(e), 0 === e.avail_out) return i.last_flush = false, p
   } else if (0 === e.avail_in && J(t) <= J(n) && t !== f) return Q(e, E);
   if (i.status === Y && 0 !== e.avail_in) return Q(e, E);
@@ -274,7 +274,7 @@ function eE(e, t) {
 
 function eb(e) {
   var t;
-  return e && e.state ? (t = e.state.status) !== G && t !== B && t !== Z && t !== V && t !== F && t !== H && t !== Y ? Q(e, m) : (e.state = null, t === H ? Q(e, g) : p) : m
+  return e && e.state ? (t = e.state.status) !== G && t !== B && t !== Z && t !== F && t !== V && t !== H && t !== Y ? Q(e, m) : (e.state = null, t === H ? Q(e, g) : p) : m
 }
 
 function ey(e, t) {

@@ -7,7 +7,7 @@ require.d(exports, {
   ZP: () => e6,
   gF: () => eg,
   k1: () => eY,
-  mB: () => eF
+  mB: () => eV
 }), require("./388685.js"), require("./35282.js"), require("./413496.js"), require("./433524.js"), require("./539854.js"), require("./642613.js"), require("./290780.js"), require("./704826.js"), require("./583741.js");
 var Chunk658722 = require("./658722.js"),
   a = require.n(Chunk658722),
@@ -143,9 +143,9 @@ let eE = new Chunk710845.Z("AutocompleteUtils"),
   eG = (r = require("./786074.js").Z).MENTION_EVERYONE,
   eB = r.MENTION_HERE,
   eZ = r.MENTION_GAME,
-  eV = r.LAUNCHABLE_APPLICATIONS;
+  eF = r.LAUNCHABLE_APPLICATIONS;
 
-function eF() {
+function eV() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : 0,
     t = arguments.length > 1 ? arguments[1] : true;
   return eD * module * (null != exports ? exports : 1)
@@ -249,19 +249,19 @@ function eq(e) {
       o && t === r.id || n.substring(0, u.length) === u || i.substring(0, u.length) === u || (null == e ? true : e.substring(0, u.length)) === u || (null == c ? true : c.substring(0, u.length)) === u || (null == h ? true : h.substring(0, u.length)) === u || (null == m ? true : m.substring(0, u.length)) === u ? _.push({
         type: el.h8.USER,
         record: r,
-        score: eF(eb, null == s ? true : s[r.id]),
+        score: eV(eb, null == s ? true : s[r.id]),
         comparator: null != (O = null != h ? h : e) ? O : n,
         sortable: null != (v = null != m ? m : c) ? v : i
       }) : l.substring(0, d.length) === d || (null == f ? true : f.substring(0, d.length)) === d || (null == E ? true : E.substring(0, d.length)) === d ? _.push({
         type: el.h8.USER,
         record: r,
-        score: eF(eI, null == s ? true : s[r.id]),
+        score: eV(eI, null == s ? true : s[r.id]),
         comparator: null != (I = null != h ? h : e) ? I : n,
         sortable: null != (T = null != m ? m : c) ? T : i
       }) : g < ej && (a()(u, i) || a()(d, l) || null != c && a()(u, c) || null != f && a()(d, f) || null != m && a()(u, m) || null != E && a()(d, E)) && (p.push({
         type: el.h8.USER,
         record: r,
-        score: eF(eI, null == s ? true : s[r.id]),
+        score: eV(eI, null == s ? true : s[r.id]),
         comparator: null != (S = null != h ? h : e) ? S : n,
         sortable: null != (A = null != m ? m : c) ? A : i
       }), g += 1)
@@ -337,7 +337,7 @@ function e2(e, t) {
   let n = t[e.guild_id];
   if (null == n) {
     var r;
-    n = t[e.guild_id] = null == (r = V.Z.getGuild(e.guild_id)) ? true : r.name.toLocaleLowerCase()
+    n = t[e.guild_id] = null == (r = F.Z.getGuild(e.guild_id)) ? true : r.name.toLocaleLowerCase()
   }
   return n
 }
@@ -354,7 +354,7 @@ function e3(e, t) {
 
 function e4(e, t) {
   let n = k.Z.getChannel(e);
-  return null == e || null == n ? [] : s()(F.Z.getMessages(e).toArray()).reverse().uniqBy(e => e.author.id).map(e => q.default.getUser(e.author.id)).filter(e => {
+  return null == e || null == n ? [] : s()(V.Z.getMessages(e).toArray()).reverse().uniqBy(e => e.author.id).map(e => q.default.getUser(e.author.id)).filter(e => {
     if (null == e || e.isNonUserBot()) returnfalse;
     let t = n.getGuildId();
     return null == t || ez(B.ZP.getMember(t, e.id))
@@ -473,7 +473,7 @@ let e8 = (0, Chunk251625.oH)((e, t, n) => {
         filter: o,
         allowSnowflake: s
       } = e;
-      if (null == V.Z.getGuild(t)) return [];
+      if (null == F.Z.getGuild(t)) return [];
       if (0 === n.length && a) {
         let e = e4(K.Z.getChannelId(t), r);
         if (e.length > 0) return e
@@ -559,7 +559,7 @@ let e8 = (0, Chunk251625.oH)((e, t, n) => {
           0 !== c && !(t.length > 1) && (1 !== t.length || t[0].isFullMatch || s) && (e$(l, e.type) && (c = Math.max(c - eT, eI / 2)), e.isThread() && (e.isActiveThread() || (c -= eS), w.Z.hasJoined(e.id) || (c -= eA)), c = Math.min(c + Math.min(null != (O = M.Z.getScoreWithoutFetchingLatest(e.id)) ? O : 0 / y, 1) * eC, c >= ey ? eb : ey), b.push({
             type: (0, x.bw)(e.type) ? el.h8.VOICE_CHANNEL : el.h8.TEXT_CHANNEL,
             record: e,
-            score: eF(c, d[e.id]),
+            score: eV(c, d[e.id]),
             comparator: (0, _.F6)(e, q.default, W.Z),
             sortable: i
           }))
@@ -579,14 +579,14 @@ let e8 = (0, Chunk251625.oH)((e, t, n) => {
         containQuery: RegExp(er.Z.escape(o), "i"),
         queryLower: o
       }, l = [];
-      for (let e of V.Z.getGuildsArray()) {
+      for (let e of F.Z.getGuildsArray()) {
         if (!i(e)) continue;
         let t = e.name.toLocaleLowerCase(),
           n = eK(t, s, r);
         n > 0 && l.push({
           type: el.h8.GUILD,
           record: e,
-          score: eF(n, a[e.id]),
+          score: eV(n, a[e.id]),
           comparator: e.name,
           sortable: t
         })
@@ -643,7 +643,7 @@ let e8 = (0, Chunk251625.oH)((e, t, n) => {
         o > 0 && u.push({
           type: el.h8.GROUP_DM,
           record: e,
-          score: eF(o, a[e.id]),
+          score: eV(o, a[e.id]),
           comparator: (0, _.F6)(e, q.default, W.Z),
           sortable: n
         })
@@ -660,7 +660,7 @@ let e8 = (0, Chunk251625.oH)((e, t, n) => {
         exactQuery: RegExp("^".concat(er.Z.escape(a)), "i"),
         containQuery: RegExp(er.Z.escape(a), "i"),
         queryLower: a
-      }, s = eV(), l = [];
+      }, s = eF(), l = [];
       for (let {
           application: e
         }
@@ -703,7 +703,7 @@ let e8 = (0, Chunk251625.oH)((e, t, n) => {
             i > 0 && l.push({
               type: el.h8.IN_APP_NAVIGATION,
               record: d.FL.fromType(t),
-              score: eF(i),
+              score: eV(i),
               comparator: n,
               sortable: n
             })
@@ -712,7 +712,7 @@ let e8 = (0, Chunk251625.oH)((e, t, n) => {
       return em.getState().options.forEach(e => {
         var t;
         let n = [e.title].concat(e.searchableTitles),
-          i = null != (t = (0, o.max)(n.map(e => eF(eK(e.toLocaleLowerCase(), a, r))))) ? t : 0;
+          i = null != (t = (0, o.max)(n.map(e => eV(eK(e.toLocaleLowerCase(), a, r))))) ? t : 0;
         i > 0 && l.push({
           type: el.h8.IN_APP_NAVIGATION,
           record: d.FL.fromType(d.Ky.SETTINGS, e.path, e.title),
@@ -790,7 +790,7 @@ let e8 = (0, Chunk251625.oH)((e, t, n) => {
       }) : [], g = m.length, b = t.toLowerCase(), y = [];
       if (g < _ && c) {
         let e = n.getGuildId(),
-          i = V.Z.getGuild(e);
+          i = F.Z.getGuild(e);
         if (null != i) {
           let n = s()(Z.Z.getSortedRoles(i.id)).filter(t => {
             let {
@@ -834,7 +834,7 @@ let e8 = (0, Chunk251625.oH)((e, t, n) => {
         status: Y.Z.getStatus(e.record.id)
       })) : [], u = c.length, d = t.toLowerCase(), f = [];
       if (u < es.rnv && o) {
-        let e = V.Z.getGuild(n);
+        let e = F.Z.getGuild(n);
         null != e && (s()(Z.Z.getSortedRoles(e.id)).filter(e => (e.mentionable || r || l) && a()(d, e.name.toLowerCase()) && !(0, L.fI)(e)).take(es.rnv - u).forEach(e => {
           f.push(e)
         }), u += f.length)
@@ -1057,7 +1057,7 @@ let e8 = (0, Chunk251625.oH)((e, t, n) => {
     matchSentinel: (e, t, n) => !eM.test(t) && e === n,
     hasSameRoleAsUsername(e, t) {
       if (!t.hasUniqueUsername()) returnfalse;
-      let n = V.Z.getGuild(e.getGuildId());
+      let n = F.Z.getGuild(e.getGuildId());
       for (let {
           name: e
         }

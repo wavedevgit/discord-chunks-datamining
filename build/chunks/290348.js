@@ -6,7 +6,7 @@ require.d(exports, {
   Ek: () => Z,
   F2: () => Q,
   GM: () => en,
-  GP: () => V,
+  GP: () => F,
   H9: () => ee,
   Lo: () => $,
   PK: () => M,
@@ -182,14 +182,14 @@ function Z(e, t) {
   }, [n]))
 }
 
-function V(e, t) {
+function F(e, t) {
   let n = (0, v.Z)(t, e);
   return x(e, "channelAccessFormat", r.useMemo(() => null == n ? S.I.SOME_CHANNELS_ACCESS : (0, y.yt)(n) ? S.I.ALL_CHANNELS_ACCESS : S.I.SOME_CHANNELS_ACCESS, [n]))
 }
-let F = [];
+let V = [];
 
 function H(e) {
-  let t = L(e, e => null == e ? F : e.role_benefits.benefits.filter(m.rC));
+  let t = L(e, e => null == e ? V : e.role_benefits.benefits.filter(m.rC));
   return x(e, "channelBenefits", t)
 }
 let Y = [];

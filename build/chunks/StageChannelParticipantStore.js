@@ -106,20 +106,20 @@ function Z() {
   N.clear(), C.clear(), R = {}
 }
 
-function V(e, t, n) {
+function F(e, t, n) {
   if (null == n || e.has(n)) return;
   let r = p.Z.getChannel(n);
   (null == r ? true : r.isGuildStageVoice()) && (t.add(n), null == R[n] && e.add(n))
 }
 
-function F(e) {
+function V(e) {
   let {
     voiceStates: t
   } = e, n = new Set;
   return t.reduce((e, t) => {
     if (null == t.guildId || !N.has(t.guildId)) return e;
     let r = new Set;
-    return (V(n, r, t.oldChannelId), V(n, r, t.channelId), 0 === r.size) ? e : U(t.userId, Array.from(r)) || e
+    return (F(n, r, t.oldChannelId), F(n, r, t.channelId), 0 === r.size) ? e : U(t.userId, Array.from(r)) || e
   }, false)
 }
 
@@ -245,7 +245,7 @@ S(et, "displayName", "StageChannelParticipantStore");
 let en = new et(Chunk570140.Z, {
   CONNECTION_OPEN: Z,
   OVERLAY_INITIALIZE: Z,
-  VOICE_STATE_UPDATES: F,
+  VOICE_STATE_UPDATES: V,
   CHANNEL_DELETE: Q,
   GUILD_MEMBERS_CHUNK_BATCH: H,
   USER_UPDATE: W,

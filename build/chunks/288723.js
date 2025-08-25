@@ -51,17 +51,17 @@ let d = {
           B = M ? k ? l.F2 : l.t$ : k ? l.I : l.we;
         N[U] > R[U] && (B = (0, r.Z)(B));
         var Z = (0, r.Z)(B),
-          V = [];
-        if (f && V.push(G[j] <= 0), p && V.push(G[B] <= 0, G[Z] <= 0), V.every(function(e) {
+          F = [];
+        if (f && F.push(G[j] <= 0), p && F.push(G[B] <= 0, G[Z] <= 0), F.every(function(e) {
             return e
           })) {
           D = L, w = false;
           break
         }
-        P.set(L, V)
+        P.set(L, F)
       }
       if (w)
-        for (var F = O ? 3 : 1, H = function(e) {
+        for (var V = O ? 3 : 1, H = function(e) {
             var t = C.find(function(t) {
               var n = P.get(t);
               if (n) return n.slice(0, e).every(function(e) {
@@ -69,7 +69,7 @@ let d = {
               })
             });
             if (t) return D = t, "break"
-          }, Y = F; Y > 0 && "break" !== H(Y); Y--);
+          }, Y = V; Y > 0 && "break" !== H(Y); Y--);
       t.placement !== D && (t.modifiersData[a]._skip = true, t.placement = D, t.reset = true)
     }
   },

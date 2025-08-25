@@ -131,17 +131,17 @@ function E(e, t, n) {
       (0, _.E)() || t.selectionManager.setFocusedKey(S.key);
       return
     }
-  }, V = e => {
+  }, F = e => {
     if (e.currentTarget.contains(e.target) && n.current && document.activeElement && "Tab" === e.key && "tab" === P) {
       let t = (0, d.QL)(n.current, {
         tabbable: true
       });
       t.currentNode = document.activeElement, (e.shiftKey ? t.previousNode() : t.nextNode()) && e.stopPropagation()
     }
-  }, F = (0, l.fU)(S.props), H = G.hasAction ? F : {}, Y = (0, c.d)(U, H, {
+  }, V = (0, l.fU)(S.props), H = G.hasAction ? V : {}, Y = (0, c.d)(U, H, {
     role: "row",
     onKeyDownCapture: B,
-    onKeyDown: V,
+    onKeyDown: F,
     onFocus: Z,
     "aria-label": S.textValue || true,
     "aria-selected": t.selectionManager.canSelectItem(S.key) ? t.selectionManager.isSelected(S.key) : true,

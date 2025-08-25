@@ -136,7 +136,7 @@ let B = e => {
       })]
     })
   };
-class V extends Chunk647438.PureComponent {
+class F extends Chunk647438.PureComponent {
   renderJumpButton() {
     let {
       jumping: e
@@ -197,14 +197,14 @@ class V extends Chunk647438.PureComponent {
     })
   }
 }
-let F = Chunk442837.ZP.connectStores([Chunk496675.Z], e => {
+let V = Chunk442837.ZP.connectStores([Chunk496675.Z], e => {
   let {
     channel: t
   } = e;
   return {
     canManageMessages: null != t && O.Z.can(A.Plq.MANAGE_MESSAGES, t)
   }
-})(V);
+})(F);
 
 function H(e) {
   let {
@@ -243,20 +243,20 @@ function H(e) {
       S.S.unsubscribe(A.CkL.SCROLL_PAGE_DOWN, t), S.S.unsubscribe(A.CkL.SCROLL_PAGE_UP, e)
     }
   }, []);
-  let V = i.useCallback(() => {
+  let F = i.useCallback(() => {
       var e;
       let t = null == (e = w.current) ? true : e.getScrollerState();
       null != t && t.scrollHeight - t.scrollTop - t.offsetHeight < U && a && !s && (null == _ || _())
     }, [a, _, s]),
-    F = [],
+    V = [],
     H = true;
-  null == n || s && 0 === n.length ? F = [(0, r.jsx)("div", {
+  null == n || s && 0 === n.length ? V = [(0, r.jsx)("div", {
     className: o()(N.emptyPlaceholder, N.loadingPlaceholder),
     children: (0, r.jsx)(f.$jN, {})
-  }, "spinner")] : 0 === n.length ? F.push((0, r.jsx)(i.Fragment, {
+  }, "spinner")] : 0 === n.length ? V.push((0, r.jsx)(i.Fragment, {
     children: g()
-  }, "empty-state")) : (H = false, F = [], l().each(n, e => {
-    F.push(...E(e))
+  }, "empty-state")) : (H = false, V = [], l().each(n, e => {
+    V.push(...E(e))
   }));
   let Y = null;
   null != n && n.length > 0 && null != _ && (Y = s ? (0, r.jsx)("div", {
@@ -302,7 +302,7 @@ function H(e) {
       component: m(),
       children: [(0, r.jsxs)(f.Den, {
         className: o()(N.messagesPopout, y),
-        onScroll: q ? V : true,
+        onScroll: q ? F : true,
         ref: w,
         children: [(0, r.jsx)(c.bG, {
           navigator: L,
@@ -314,7 +314,7 @@ function H(e) {
               return (0, r.jsx)("div", D(P({
                 ref: t
               }, n), {
-                children: F
+                children: V
               }))
             }
           })
@@ -372,7 +372,7 @@ function Y(e) {
         className: N.messageGroupCozy,
         message: t,
         channel: n
-      }), (0, r.jsx)(F, {
+      }), (0, r.jsx)(V, {
         channel: a,
         message: t,
         jumping: R,

@@ -114,34 +114,34 @@ let C = Chunk647438.forwardRef(function(e, t) {
       })
     }, [R.id]),
     Z = (0, d.dQu)(u.Z.unsafe_rawColors.PRIMARY_300).hsl(),
-    V = null != (O = R.colorString) ? O : Z,
-    F = null != (I = (0, l.wK)(V, .6)) ? I : true,
+    F = null != (O = R.colorString) ? O : Z,
+    V = null != (I = (0, l.wK)(F, .6)) ? I : true,
     H = u.Z.unsafe_rawColors.WHITE_500.css,
-    Y = (0, l._i)(V);
+    Y = (0, l._i)(F);
   null != Y && .3 > (0, l.Bd)(Y) && (H = u.Z.unsafe_rawColors.PRIMARY_630.css);
   let W = (0, E._f)(w, R, R.colorStrings);
   A = G ? (0, r.jsx)(p.Z, {
     className: y.roleFlowerStar,
     iconClassName: C ? y.roleVerifiedIcon : true,
-    color: V,
+    color: F,
     size: 14
   }) : "dot" === U ? (0, r.jsx)(d.FhE, {
     className: y.roleDot,
-    color: V,
+    color: F,
     background: false,
     colors: W,
     tooltip: false
   }) : (0, r.jsx)(d.xko, {
-    color: V,
+    color: F,
     colors: W,
     className: y.roleCircle
   });
   let K = i.useMemo(() => {
       var t;
       return v({
-        borderColor: D ? true : F
+        borderColor: D ? true : V
       }, null != (t = e.style) ? t : {})
-    }, [F, D, e.style]),
+    }, [V, D, e.style]),
     z = () => C ? (0, r.jsx)(d.DY3, {
       text: b.intl.string(b.t.u3RVsL),
       children: (0, r.jsxs)(d.P3F, {

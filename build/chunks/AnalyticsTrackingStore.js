@@ -85,8 +85,8 @@ function Z(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 1;
   return e + t
 }
-let V = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e()),
-  F = new Chunk761609.R,
+let F = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e()),
+  V = new Chunk761609.R,
   H = {
     handleConnectionOpen: () => {},
     handleConnectionClosed: () => {},
@@ -108,7 +108,7 @@ let V = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
       TRACKING_URL: b,
       drainTimeoutOverride: y,
       waitFor: O,
-      scheduleWhenIdle: z = V,
+      scheduleWhenIdle: z = F,
       getLaunchSignature: q = () => null
     } = e;
 
@@ -274,7 +274,7 @@ let V = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
           }, n),
           resolve: a
         }, l = X(s);
-        if (null != l && (s.properties.client_uuid = F.generate(l)), Y.push(s), Y.length > E) {
+        if (null != l && (s.properties.client_uuid = V.generate(l)), Y.push(s), Y.length > E) {
           let e = Y.length - E;
           C = Z(C, e), Y = Y.slice(-E)
         }
