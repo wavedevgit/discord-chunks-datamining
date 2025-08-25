@@ -21,7 +21,7 @@ function v(e) {
     label: n,
     onClick: i
   } = e;
-  return (0, l.jsx)(u.h, {
+  return (0, l.jsx)(o.h, {
     onClick: i,
     icon: t,
     size: "sm",
@@ -41,7 +41,7 @@ function m(e) {
     className: g.contentHeader,
     children: [(0, l.jsxs)("div", {
       className: g.contentHeaderLeft,
-      children: [o.tq && (0, l.jsx)(v, {
+      children: [u.tq && (0, l.jsx)(v, {
         icon: a.yFM,
         onClick: () => i(true),
         label: f.intl.string(f.t["13/7kZ"])
@@ -66,7 +66,7 @@ let j = Chunk647438.memo(function(e) {
   } = (0, c.t)();
   return (0, l.jsxs)("div", {
     className: s()(g.content, {
-      [g.mobile]: o.tq,
+      [g.mobile]: u.tq,
       [g.mobileNavigationOpen]: r
     }),
     children: [(0, l.jsx)(m, {

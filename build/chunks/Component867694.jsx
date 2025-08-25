@@ -13,15 +13,15 @@ function s(e) {
     node: n
   } = e, {
     useValue: s,
-    setValue: o,
-    useTitle: u,
+    setValue: u,
+    useTitle: o,
     useSubtitle: a,
     useDisabled: c,
     useTooltip: d
-  } = n, f = u(), g = null == a ? true : a(), v = s(), m = null != (t = null == c ? true : c()) && t, j = null == d ? true : d();
+  } = n, f = o(), g = null == a ? true : a(), v = s(), m = null != (t = null == c ? true : c()) && t, j = null == d ? true : d();
   return (0, l.jsx)(i.j, {
     value: v,
-    onChange: e => o(e),
+    onChange: e => u(e),
     className: r.toggle,
     note: g,
     disabled: m,

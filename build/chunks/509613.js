@@ -36,8 +36,8 @@ require.d(exports, {
   ax: () => m,
   k4: () => d,
   qs: () => j,
-  so: () => o,
-  vB: () => u,
+  so: () => u,
+  vB: () => o,
   wf: () => a,
   x1: () => c
 }), require("./388685.js"), require("./415506.js");
@@ -82,11 +82,11 @@ function s(e, t, n) {
   })
 }
 
-function o(e) {
+function u(e) {
   return s("$Root", l.J.ROOT, e)
 }
 
-function u(e, t) {
+function o(e, t) {
   return s(e, l.J.SECTION, t)
 }
 

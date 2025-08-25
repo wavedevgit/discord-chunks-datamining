@@ -20,19 +20,19 @@ function a(e) {
     children: d
   } = e;
   return (0, l.jsxs)(l.Fragment, {
-    children: [(0, l.jsx)(o.x, {
+    children: [(0, l.jsx)(u.x, {
       title: t,
       description: i ? true : n,
       secondaryTrailingElement: (0, l.jsx)(s.sXD, {
-        className: r()(u.icon, {
-          [u.iconClosed]: !i
+        className: r()(o.icon, {
+          [o.iconClosed]: !i
         })
       }),
       onClick: () => a(!i),
       compact: c
     }), (0, l.jsx)("div", {
       className: r()({
-        [u.hidden]: !i
+        [o.hidden]: !i
       }),
       children: d
     })]

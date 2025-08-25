@@ -13,10 +13,10 @@ function s(e) {
   } = e, {
     useValue: n,
     setValue: s,
-    useTitle: o,
-    useSubtitle: u,
+    useTitle: u,
+    useSubtitle: o,
     useOptions: a
-  } = t, c = o(), d = null == u ? true : u(), f = n(), g = a();
+  } = t, c = u(), d = null == o ? true : o(), f = n(), g = a();
   return (0, l.jsx)(i.xJW, {
     title: c,
     className: r.radioContainer,

@@ -10,7 +10,7 @@ var Chunk509613 = require("./509613.js"),
   Chunk986985 = require("./986985.js"),
   Chunk388032 = require("./388032.jsx");
 let a = (0, Chunk509613.CB)("NotificationsAdvancedAccordion", {
-    useTitle: e => e ? u.intl.string(u.t.RyimDg) : u.intl.string(u.t.CUICbG),
+    useTitle: e => e ? o.intl.string(o.t.RyimDg) : o.intl.string(o.t.CUICbG),
     useSubtitle: () => Chunk388032.intl.string(Chunk388032.t.SwKADQ),
     getLayout: () => [Chunk381426.Z, Chunk304550.Z, Chunk248893.Z, Chunk986985.Z]
   }),

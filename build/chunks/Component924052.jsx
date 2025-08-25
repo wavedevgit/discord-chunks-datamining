@@ -9,7 +9,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk503089 = require("./503089.jsx"),
   Chunk585483 = require("./585483.js"),
   Chunk981631 = require("./981631.js");
-let u = Chunk647438.createContext(true);
+let o = Chunk647438.createContext(true);
 
 function a(e) {
   let {
@@ -22,10 +22,10 @@ function a(e) {
     })) && t), n.current = r.$x
   }, []), f = i.useCallback(e => {
     if (a) {
-      s.S.dispatch(o.CkL.SHAKE_APP, {
+      s.S.dispatch(u.CkL.SHAKE_APP, {
         duration: 300,
         intensity: n.current
-      }), n.current = Math.min(n.current + r.d7, r.w6), s.S.dispatch(o.CkL.EMPHASIZE_NOTICE);
+      }), n.current = Math.min(n.current + r.d7, r.w6), s.S.dispatch(u.CkL.EMPHASIZE_NOTICE);
       return
     }
     e()
@@ -34,14 +34,14 @@ function a(e) {
     showNotice: a,
     handleStoreUpdate: d
   }), [f, a, d]);
-  return (0, l.jsx)(u.Provider, {
+  return (0, l.jsx)(o.Provider, {
     value: g,
     children: t
   })
 }
 
 function c() {
-  let e = Chunk647438.useContext(u);
+  let e = Chunk647438.useContext(o);
   if (null == module) throw Error("useNoticeContext must be used within a NoticeProvider");
   return module
 }

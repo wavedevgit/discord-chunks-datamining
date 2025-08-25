@@ -8,7 +8,7 @@ var Chunk657707 = require("./657707.js"),
   Chunk393681 = require("./393681.jsx"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx");
-let u = (0, Chunk509613.x1)("AccountPane", {
+let o = (0, Chunk509613.x1)("AccountPane", {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["JAIM/v"]),
     getLayout: () => [],
     render: Chunk393681.Z
@@ -17,5 +17,5 @@ let u = (0, Chunk509613.x1)("AccountPane", {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["JAIM/v"]),
     icon: Chunk657707.tBG,
     legacySearchKey: Chunk726985.s6.ACCOUNT,
-    getLayout: () => [u]
+    getLayout: () => [o]
   })

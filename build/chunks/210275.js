@@ -13,5 +13,5 @@ let a = (0, Chunk509613.qs)("DesktopNotifications", {
   useTitle: () => Chunk388032.intl.string(Chunk388032.t["/0WClp"]),
   useSubtitle: () => Chunk388032.intl.string(Chunk388032.t.wF9ih4),
   useValue: () => (0, Chunk442837.e7)([Chunk292959.Z], () => Chunk292959.Z.getDesktopType()) !== Chunk981631.qrD.NEVER,
-  setValue: e => i.default.setDesktopType(e ? o.qrD.ALL : o.qrD.NEVER)
+  setValue: e => i.default.setDesktopType(e ? u.qrD.ALL : u.qrD.NEVER)
 })
