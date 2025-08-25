@@ -2,21 +2,34 @@
 /** chunk id: 607270, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => f
+  Z: () => h
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
-var Chunk680018 = require("./680018.jsx"),
+var Chunk990547 = require("./990547.js"),
+  Chunk680018 = require("./680018.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk37234 = require("./37234.js"),
+  Chunk906732 = require("./906732.jsx"),
+  Chunk213609 = require("./213609.js"),
   Chunk550385 = require("./550385.js"),
   Chunk119475 = require("./119475.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk640744 = require("./640744.js"),
   Chunk758335 = require("./758335.js");
 
-function f() {
-  let e = () => {
+function h() {
+  let {
+    analyticsLocations: e
+  } = (0, Chunk906732.ZP)();
+  (0, Chunk213609.Z)({
+    name: Chunk990547.ImpressionNames.CUSTOM_THEMES_APPEARANCE_SETTINGS_BANNER,
+    type: Chunk990547.ImpressionTypes.VIEW,
+    properties: {
+      location_stack: module
+    }
+  });
+  let t = () => {
     (0, Chunk550385.XO)(Chunk550385.wh.CUSTOM_THEME, {
       from: Chunk550385.tE.SETTING
     }), (0, Chunk37234.xf)()
@@ -45,7 +58,7 @@ function f() {
       children: (0, Chunk951288.jsx)(Chunk680018.z, {
         variant: "primary",
         text: Chunk388032.intl.string(Chunk388032.t.uw9zIy),
-        onClick: module
+        onClick: exports
       })
     })]
   })

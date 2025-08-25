@@ -2,6 +2,5 @@
 /** chunk id: 526265, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 module.exports = {
-  section: "section__25879",
-  newBadge: "newBadge__25879"
+  section: "section__25879"
 }

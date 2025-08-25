@@ -2,7 +2,7 @@
 /** chunk id: 216045, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => J
+  Z: () => Q
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -116,20 +116,13 @@ function q() {
 }
 
 function X() {
-  let [e, t] = (0, Chunk243778.US)([Chunk704215.z.NAMEPLATE_USER_SETTINGS_MENU_NEW_BADGE]), n = module === Chunk704215.z.NAMEPLATE_USER_SETTINGS_MENU_NEW_BADGE;
-  Chunk647438.useEffect(() => {
-    require && exports(Chunk921944.L.TAKE_ACTION)
-  }, [require, exports])
-}
-
-function Q() {
   let [e, t] = (0, Chunk243778.US)([Chunk704215.z.DISPLAY_NAME_STYLES_NEW_BADGE]), n = module === Chunk704215.z.DISPLAY_NAME_STYLES_NEW_BADGE;
   Chunk647438.useEffect(() => {
     require && exports(Chunk921944.L.TAKE_ACTION)
   }, [require, exports])
 }
 
-function J() {
+function Q() {
   let e = (0, Chunk442837.e7)([Chunk594174.default], () => {
       let e = Chunk594174.default.getCurrentUser();
       return o()(null != module, "UserSettingsProfileCustomization: user cannot be undefined"), module
@@ -151,14 +144,14 @@ function J() {
     Y = Chunk74538.ZP.canUsePremiumProfileCustomization(module),
     {
       analyticsLocations: z,
-      newestAnalyticsLocation: J
+      newestAnalyticsLocation: Q
     } = (0, Chunk906732.ZP)(Chunk100527.Z.USER_SETTINGS_USER_PROFILE);
-  q(), X(), Q(), Chunk647438.useEffect(() => () => Chunk570140.Z.wait(Chunk809206.W3), []);
-  let [$, ee] = Chunk647438.useState(false), {
-    showRedesign: et
+  q(), X(), Chunk647438.useEffect(() => () => Chunk570140.Z.wait(Chunk809206.W3), []);
+  let [J, $] = Chunk647438.useState(false), {
+    showRedesign: ee
   } = Chunk413182.b.useExperiment({
     location: "profile customization"
-  }), en = !Y, er = Chunk647438.useRef(null);
+  }), et = !Y, en = Chunk647438.useRef(null);
   return exports ? (0, Chunk951288.jsx)(Chunk497321.Z, {}) : (0, Chunk951288.jsxs)(Chunk906732.Gt, {
     value: z,
     children: [(0, Chunk951288.jsx)(Chunk475977.Z, {}), (0, Chunk951288.jsx)(Chunk296810.Z, {
@@ -179,25 +172,25 @@ function J() {
         isHighlighted: true
       })),
       children: (0, Chunk951288.jsx)(Chunk532495.Z, {})
-    }), et && (0, Chunk951288.jsx)(Chunk610794.Z, {}), (0, Chunk951288.jsx)(Chunk622535.$, {
-      innerRef: er,
-      onChange: e => ee(e),
+    }), ee && (0, Chunk951288.jsx)(Chunk610794.Z, {}), (0, Chunk951288.jsx)(Chunk622535.$, {
+      innerRef: en,
+      onChange: e => $(e),
       threshold: .25,
-      active: en,
+      active: et,
       children: (0, Chunk951288.jsx)("div", {
-        ref: er,
+        ref: en,
         children: (0, Chunk951288.jsx)(Chunk935147.Z, {
           user: module,
-          shouldShow: en,
-          isVisible: $
+          shouldShow: et,
+          isVisible: J
         })
       })
-    }), en && !Chunk921944 && (0, Chunk951288.jsx)(Chunk53691.p, {
+    }), et && !Chunk921944 && (0, Chunk951288.jsx)(Chunk53691.p, {
       className: Chunk391371.floatingNitroUpsell,
-      showUpsell: en && !$,
+      showUpsell: et && !J,
       text: Chunk388032.intl.format(Chunk388032.t.TmfgIy, {
         onClick: () => (0, Chunk267717.y)({
-          analyticsSource: J
+          analyticsSource: Q
         })
       }),
       textVariant: "heading-md/medium",
@@ -208,7 +201,7 @@ function J() {
           var e;
           Chunk626135.default.track(Chunk981631.rMx.TRY_IT_OUT_PRESET_CLICKED, {
             cta_variant: "floating_action_button"
-          }), null == er || null == (e = er.current) || module.scrollIntoView({
+          }), null == en || null == (e = en.current) || module.scrollIntoView({
             behavior: "smooth"
           })
         },
