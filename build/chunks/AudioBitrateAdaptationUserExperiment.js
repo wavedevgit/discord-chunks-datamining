@@ -2,11 +2,11 @@
 /** chunk id: 815644, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  f: () => o
+  f: () => a
 });
 var Chunk818083 = require("./818083.js"),
   Chunk984134 = require("./984134.js");
-let a = (0, Chunk818083.B)({
+let o = (0, Chunk818083.B)({
   kind: "user",
   id: "2025-06_audio_bitrate_adaptation",
   label: "Audio Bitrate Adaptation",
@@ -22,7 +22,7 @@ let a = (0, Chunk818083.B)({
   }]
 });
 
-function o(e) {
+function a(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
     {
       isInHoldout: n
@@ -31,7 +31,7 @@ function o(e) {
     }, {
       autoTrackExposure: t
     });
-  return a.getCurrentConfig({
+  return o.getCurrentConfig({
     location: e
   }, {
     disable: n,

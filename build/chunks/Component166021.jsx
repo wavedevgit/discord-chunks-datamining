@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk202841 = require("./202841.js"),
   Chunk481060 = require("./481060.js"),
   Chunk51636 = require("./51636.jsx"),
@@ -57,7 +57,7 @@ let h = 910,
     let {
       cards: t,
       className: n,
-      cardType: a
+      cardType: o
     } = e, d = () => window.innerWidth < h ? 1 : window.innerWidth < m ? 2 : 3, [_, g] = i.useState(0), [E, b] = i.useState(d()), y = t.length;
     i.useEffect(() => {
       let e = () => {
@@ -88,7 +88,7 @@ let h = 910,
         className: u.cardContainer,
         children: [y > E && (0, r.jsx)(l.P3F, {
           onClick: O ? v : true,
-          className: o()({
+          className: a()({
             [u.leftArrow]: O,
             [u.inactiveArrow]: !O
           }),
@@ -108,7 +108,7 @@ let h = 910,
                 transform: null == i ? true : i.to(e => "translate3d(".concat(e, "%,0,0)"))
               },
               children: (0, r.jsx)(c.Z, p(f({}, t[n]), {
-                cardType: a
+                cardType: o
               }), "".concat(t[n].name, "_").concat(n, "_perks_card"))
             }, "".concat(t[n].name, "_").concat(n, "_animated_div"))
           })

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk239091 = require("./239091.js"),
   Chunk555573 = require("./555573.js"),
@@ -115,8 +115,8 @@ class v extends Chunk647438.PureComponent {
       let t = this._ref;
       if (null == t) return;
       let i = t.value.slice(0, t.selectionStart - r.length),
-        a = t.value.slice(t.selectionEnd);
-      this._insertText(e, i, a, n)
+        o = t.value.slice(t.selectionEnd);
+      this._insertText(e, i, o, n)
     }
   }
   insertInlineAutocompleteInput(e) {}
@@ -126,20 +126,20 @@ class v extends Chunk647438.PureComponent {
       r = this._ref;
     if (null == r) return;
     let i = r.value.slice(0, r.selectionStart),
-      a = r.value.slice(r.selectionEnd);
-    this._insertText(e, i, a, n)
+      o = r.value.slice(r.selectionEnd);
+    this._insertText(e, i, o, n)
   }
   _insertText(e, t, n, r) {
     if (null == this._ref) return;
     r && (e += " ");
     let i = t + e + n,
       {
-        onChange: a
+        onChange: o
       } = this.props;
-    null == a || a(null, i, (0, p.JM)(i));
-    let o = t.length + e.length;
+    null == o || o(null, i, (0, p.JM)(i));
+    let a = t.length + e.length;
     this.setState({
-      nextSelection: o
+      nextSelection: a
     }, () => {
       this.props.maybeShowAutocomplete()
     })
@@ -156,7 +156,7 @@ class v extends Chunk647438.PureComponent {
       disabled: t,
       placeholder: n,
       required: i,
-      onResize: a,
+      onResize: o,
       className: l,
       id: c,
       submitting: u,
@@ -172,7 +172,7 @@ class v extends Chunk647438.PureComponent {
         handler: this.handleGlobalPaste
       }), (0, Chunk951288.jsx)(Chunk481060.lcI, {
         ref: this.handleSetRef,
-        className: o()(Chunk239091, Chunk358085),
+        className: a()(Chunk239091, Chunk358085),
         id: Chunk555573,
         rows: 1,
         fontWidthEstimate: 6,

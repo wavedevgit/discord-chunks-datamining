@@ -10,10 +10,10 @@ var r = require("./745872.js")("%Symbol.species%", true),
   Chunk540032 = require("./540032.js"),
   Chunk951575 = require("./951575.js");
 module.exports = function(e, t) {
-  if (!a(t) || t < 0) throw new i("Assertion failed: length must be an integer >= 0");
-  if (!l(e)) return o(t);
+  if (!o(t) || t < 0) throw new i("Assertion failed: length must be an integer >= 0");
+  if (!l(e)) return a(t);
   var n = s(e, "constructor");
-  if (r && u(n) && null === (n = s(n, r)) && (n = true), true === n) return o(t);
+  if (r && u(n) && null === (n = s(n, r)) && (n = true), true === n) return a(t);
   if (!c(n)) throw new i("C must be a constructor");
   return new n(t)
 }

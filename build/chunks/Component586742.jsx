@@ -35,7 +35,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk59122 = require("./59122.js");
 
-function A(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -54,7 +54,7 @@ function A(e) {
   return e
 }
 
-function k(e, t) {
+function A(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -73,7 +73,7 @@ let D = Chunk647438.memo(function(e) {
       channel: r,
       context: o
     } = e, l = null == (t = n.user) ? true : t.id;
-    return (0, a.e7)([O.Z], () => null != n.user && null != o && null != r && O.Z.isLocalVideoDisabled(l, o), [l, n.user, o, r]) ? null : (0, i.jsx)(m.ZP, A({}, e))
+    return (0, a.e7)([O.Z], () => null != n.user && null != o && null != r && O.Z.isLocalVideoDisabled(l, o), [l, n.user, o, r]) ? null : (0, i.jsx)(m.ZP, k({}, e))
   }),
   R = Chunk647438.memo(function(e) {
     let {
@@ -94,7 +94,7 @@ let D = Chunk647438.memo(function(e) {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("6524")]).then(n.bind(n, 27900));
-        return n => (0, i.jsx)(e, k(A({}, n), {
+        return n => (0, i.jsx)(e, A(k({}, n), {
           user: o,
           mediaEngineContext: t,
           onWatchStream: () => {
@@ -293,7 +293,7 @@ function z(e) {
       let {
         width: s,
         height: c
-      } = M(k(A({}, a), {
+      } = M(A(k({}, a), {
         widget: o,
         operation: x.B.RESIZE_NORTH,
         computedSize: {
@@ -318,7 +318,7 @@ function z(e) {
     horizontal: v,
     widget: e.widget,
     widgetLayoutSpecs: Z
-  }), (0, i.jsx)(L, k(A({}, e), {
+  }), (0, i.jsx)(L, A(k({}, e), {
     channel: s,
     participants: C,
     participantsVersion: O,

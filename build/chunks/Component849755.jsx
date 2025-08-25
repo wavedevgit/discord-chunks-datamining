@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk906732 = require("./906732.jsx"),
@@ -28,7 +28,7 @@ function v(e) {
   let {
     voiceChannel: t,
     onAction: n,
-    onClose: a
+    onClose: o
   } = e, {
     themeType: v
   } = (0, m.z)(), {
@@ -46,7 +46,7 @@ function v(e) {
   let N = e => {
     e.stopPropagation(), n({
       action: "PRESS_VOICE_CHANNEL_STATUS"
-    }), v === b.l.POPOUT && (null == a || a()), (0, d.Z)({
+    }), v === b.l.POPOUT && (null == o || o()), (0, d.Z)({
       channel: t,
       sourceAnalyticsLocations: I
     })
@@ -62,7 +62,7 @@ function v(e) {
     }), (0, r.jsx)(l.vdY, {
       color: "currentColor",
       size: "xxs",
-      className: o()(O.pencilIcon, null != C ? O.hidden : true),
+      className: a()(O.pencilIcon, null != C ? O.hidden : true),
       "aria-label": y.intl.string(y.t.bt75u7)
     })]
   }) : null != C ? (0, r.jsx)(g.Z, {

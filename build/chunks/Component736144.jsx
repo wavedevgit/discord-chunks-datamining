@@ -38,7 +38,7 @@ function f(e) {
   let {
     confettiSpawnRef: t,
     shouldFire: n
-  } = e, r = (0, a.e7)([o.Z], () => o.Z.isFocused()), s = (0, c.Z)(), u = (0, l.Z)(t);
+  } = e, r = (0, o.e7)([a.Z], () => a.Z.isFocused()), s = (0, c.Z)(), u = (0, l.Z)(t);
   return i.useEffect(() => {
     r && n && null != u && s.fire(u.x, u.y)
   }, [s, r, u, n]), null

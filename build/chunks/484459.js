@@ -41,10 +41,10 @@ function _(e, t) {
     x = null == w && E,
     L = null == R && g || D || x,
     j = null == v ? null == A : null == N,
-    k = !j && (C || L);
-  if (!j && !k) return Promise.resolve();
-  (0, s.t)(), null != t && (0, a.vM)(t);
-  let M = {
+    M = !j && (C || L);
+  if (!j && !M) return Promise.resolve();
+  (0, s.t)(), null != t && (0, o.vM)(t);
+  let k = {
     type: m,
     withMutualGuilds: g,
     withMutualFriends: b,
@@ -52,12 +52,12 @@ function _(e, t) {
     guildId: v,
     joinRequestId: T,
     abortSignal: S,
-    connectionsRoleId: null == v || null == (p = (0, o.Ur)({
+    connectionsRoleId: null == v || null == (p = (0, a.Ur)({
       guildMember: c.ZP.getMember(v, e),
       channel: l.Z.getChannel(I)
     })) ? true : p.id
   };
-  if (y) return r.Z.wait(() => (0, i.In)(e, M, d.Z)), Promise.resolve();
-  let U = (0, i.In)(e, M, d.Z);
-  return k && !O ? Promise.resolve() : U
+  if (y) return r.Z.wait(() => (0, i.In)(e, k, d.Z)), Promise.resolve();
+  let U = (0, i.In)(e, k, d.Z);
+  return M && !O ? Promise.resolve() : U
 }

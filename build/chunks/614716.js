@@ -21,7 +21,7 @@ function _(e) {
     onClose: n
   } = e, {
     newestAnalyticsLocation: _
-  } = (0, a.ZP)(), p = (0, r.e7)([u.Z, d.Z], () => u.Z.getChannel(d.Z.getChannelId())), h = (0, i.bp)() === f.IlC.POPOUT;
+  } = (0, o.ZP)(), p = (0, r.e7)([u.Z, d.Z], () => u.Z.getChannel(d.Z.getChannelId())), h = (0, i.bp)() === f.IlC.POPOUT;
   return () => {
     null == n || n(), null == p || (null == p ? true : p.isVocal()) ? (0, l.Z)({
       context: null != p ? {
@@ -35,7 +35,7 @@ function _(e) {
       initialState: {
         applicationId: t
       }
-    }) : (0, o.__)(s._b.TEXT, c.Ie.NORMAL, {
+    }) : (0, a.__)(s._b.TEXT, c.Ie.NORMAL, {
       applicationId: t
     })
   }

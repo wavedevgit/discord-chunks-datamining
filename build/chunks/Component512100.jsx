@@ -26,7 +26,7 @@ function u(e) {
   } : true, h = null != n && "" !== n;
   return (0, r.jsx)("div", {
     className: l.container,
-    children: (0, r.jsx)(o.Z, {
+    children: (0, r.jsx)(a.Z, {
       className: l.scroller,
       children: (0, r.jsxs)("div", {
         className: l.scrollContent,
@@ -57,7 +57,7 @@ function u(e) {
               color: "header-primary",
               variant: "heading-xl/semibold",
               children: d
-            }), h && (0, r.jsx)(a.x, {
+            }), h && (0, r.jsx)(o.x, {
               color: "text-default",
               variant: "text-md/normal",
               className: l.description,
@@ -65,7 +65,7 @@ function u(e) {
             })]
           }), null != t && (0, r.jsxs)("div", {
             className: l.benefits,
-            children: [(0, r.jsx)(a.x, {
+            children: [(0, r.jsx)(o.x, {
               color: "header-secondary",
               variant: "eyebrow",
               children: s.Z.Messages.STOREFRONT_BENEFITS_TITLE

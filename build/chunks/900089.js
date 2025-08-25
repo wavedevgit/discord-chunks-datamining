@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   Fw: () => i,
-  RC: () => a,
-  gs: () => o
+  RC: () => o,
+  gs: () => a
 });
 var Chunk692547 = require("./692547.js");
 
@@ -12,10 +12,10 @@ function i(e) {
   return r.Z.unsafe_rawColors[e].css
 }
 
-function a() {
+function o() {
   return Chunk692547.Z.themes
 }
 
-function o() {
+function a() {
   return Chunk692547.Z.radii
 }

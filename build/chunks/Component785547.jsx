@@ -2,7 +2,7 @@
 /** chunk id: 785547, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => k
+  Z: () => M
 }), require("./415506.js"), require("./388685.js");
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -134,8 +134,8 @@ class j extends(r = Chunk647438.Component) {
       fullWidth: t,
       size: n,
       color: r,
-      customDisabledColor: a,
-      isPlayShiny: o,
+      customDisabledColor: o,
+      isPlayShiny: a,
       onDropdownOpen: s,
       onDropdownClose: l,
       analyticsListSort: c,
@@ -159,8 +159,8 @@ class j extends(r = Chunk647438.Component) {
     let {
       className: n,
       fullWidth: r,
-      size: a,
-      customDisabledColor: o,
+      size: o,
+      customDisabledColor: a,
       tooltipPosition: s
     } = this.props;
     return (0, i.jsxs)("div", {
@@ -168,8 +168,8 @@ class j extends(r = Chunk647438.Component) {
       children: [(0, i.jsxs)(l.zx, {
         className: n,
         fullWidth: r,
-        size: a,
-        color: null != o ? o : A.disabledButtonColor,
+        size: o,
+        color: null != a ? a : A.disabledButtonColor,
         disabled: true,
         children: [this.getText(e), this.renderProgressBar()]
       }), (0, i.jsx)(c.ua7, {
@@ -202,15 +202,15 @@ class j extends(r = Chunk647438.Component) {
     let {
       className: n,
       fullWidth: r,
-      size: a,
-      color: o,
+      size: o,
+      color: a,
       isCloudSyncing: s
     } = this.props;
     return (0, i.jsxs)(l.zx, {
       className: n,
       fullWidth: r,
-      size: a,
-      color: null != o ? o : l.zx.Colors.GREEN,
+      size: o,
+      color: null != a ? a : l.zx.Colors.GREEN,
       submitting: "uninstalling" === e || s,
       onClick: e => this.handleClick(e, t),
       children: [this.getText(e), this.renderProgressBar()]
@@ -264,14 +264,14 @@ class j extends(r = Chunk647438.Component) {
   }
 }
 
-function k(e) {
+function M(e) {
   let {
     libraryApplication: t
-  } = e, n = (0, d.O)(), [r, a] = (0, o.Wu)([g.Z, E.Z], () => [(0, h.i)(t, g.Z, E.Z), g.Z.getState(t.id, t.branchId)], [t]), s = (0, o.e7)([m.Z], () => m.Z.isSyncing(t.id, t.branchId), [t]), l = (0, o.e7)([p.Z], () => p.Z.hasNoBuild(t.id, t.branchId), [t]);
+  } = e, n = (0, d.O)(), [r, o] = (0, a.Wu)([g.Z, E.Z], () => [(0, h.i)(t, g.Z, E.Z), g.Z.getState(t.id, t.branchId)], [t]), s = (0, a.e7)([m.Z], () => m.Z.isSyncing(t.id, t.branchId), [t]), l = (0, a.e7)([p.Z], () => p.Z.hasNoBuild(t.id, t.branchId), [t]);
   return (0, i.jsx)(j, P(N({}, e), {
     analyticsContext: n,
     actionState: r,
-    dispatchState: a,
+    dispatchState: o,
     isCloudSyncing: s,
     hasNoBuild: l
   }))

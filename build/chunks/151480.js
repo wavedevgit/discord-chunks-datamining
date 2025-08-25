@@ -42,7 +42,7 @@ async function p(e, t, n) {
     shouldClear: i,
     onError: d
   } = n;
-  a.Z.dispatch({
+  o.Z.dispatch({
     type: "UPDATE_CHAT_WALLPAPER_FLAG_START",
     channelId: e.id
   });
@@ -56,10 +56,10 @@ async function p(e, t, n) {
     let n = (0, u.mB)(null != (_ = e.recipientFlags) ? _ : 0, r.V.DISMISSED_CURRENT_CHAT_WALLPAPER, i);
     (await l.Z.updatePrivateChannelRecipientFlags(e.id, n)).ok || null == d || d()
   } catch (t) {
-    let e = new o.Hx(t);
+    let e = new a.Hx(t);
     (0, s.G)(e), null == d || d()
   } finally {
-    a.Z.dispatch({
+    o.Z.dispatch({
       type: "UPDATE_CHAT_WALLPAPER_FLAG_COMPLETE",
       channelId: e.id
     })
@@ -67,7 +67,7 @@ async function p(e, t, n) {
 }
 
 function h(e, t) {
-  a.Z.dispatch({
+  o.Z.dispatch({
     type: "UPDATE_CHAT_WALLPAPER_OVERRIDES",
     wallpaperId: e,
     overrides: t

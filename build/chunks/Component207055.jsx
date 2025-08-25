@@ -65,6 +65,8 @@ let L = Chunk647438.memo(e => {
   } = _.A.useExperiment({
     guildId: I.guild_id,
     location: "VoiceUsers"
+  }, {
+    autoTrackExposure: (null == Y ? true : Y.session_id) != null
   });
   return (0, r.jsx)(y.Z, {
     shakeLocation: M.oZ.VOICE_USER,

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk404759 = require("./404759.js"),
   l = require.n(Chunk404759),
   Chunk91192 = require("./91192.jsx"),
@@ -63,8 +63,8 @@ function v(e, t) {
   if (null == e) return {};
   var n, r, i = I(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -72,8 +72,8 @@ function v(e, t) {
 function I(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let T = l()(e => {
@@ -88,7 +88,7 @@ let T = l()(e => {
     let {
       variantGroupProduct: t,
       variant: n,
-      variantIndex: a,
+      variantIndex: o,
       totalVariants: s,
       selectedVariantIndex: l,
       onEnter: d,
@@ -96,11 +96,11 @@ let T = l()(e => {
       minimal: E
     } = e, {
       isPurchased: y
-    } = (0, h.L)(n), I = (0, c.JA)("shop-variants-group-".concat(t.storeListingId, "-").concat(a)), {
+    } = (0, h.L)(n), I = (0, c.JA)("shop-variants-group-".concat(t.storeListingId, "-").concat(o)), {
       onFocus: S
     } = I, A = v(I, ["onFocus"]), C = i.useCallback(e => {
-      e.preventDefault(), e.stopPropagation(), (0, p.$)(t, a), S()
-    }, [S, t, a]);
+      e.preventDefault(), e.stopPropagation(), (0, p.$)(t, o), S()
+    }, [S, t, o]);
     return (0, r.jsx)(f.ua7, {
       text: m.intl.string(m.t["6cfuDg"]),
       "aria-label": false,
@@ -129,13 +129,13 @@ let T = l()(e => {
         },
         className: g.colorVariant,
         children: (0, r.jsx)("div", {
-          className: o()(g.colorSwatch, {
+          className: a()(g.colorSwatch, {
             [g.open]: !E,
-            [g.selected]: a === l
+            [g.selected]: o === l
           }),
           style: {
             backgroundColor: n.variantValue,
-            zIndex: s - a
+            zIndex: s - o
           },
           children: y ? (0, r.jsx)(f.kSu, {
             className: g.purchasedIndicator,
@@ -149,7 +149,7 @@ let T = l()(e => {
     var t, n;
     let {
       variantGroupProduct: i,
-      className: a,
+      className: o,
       previewingVariantIndexProps: s,
       setIsHoveringOnSwitch: l,
       minimal: d,
@@ -169,7 +169,7 @@ let T = l()(e => {
           return (0, r.jsxs)("div", O(b({
             ref: n
           }, c), {
-            className: o()(g.variantsPanel, a, {
+            className: a()(g.variantsPanel, o, {
               [g.minimalState]: d,
               [g.alternativeColor]: h
             }),
@@ -178,13 +178,13 @@ let T = l()(e => {
             children: [(0, r.jsx)("ol", {
               className: g.variantsList,
               children: null == (t = i.variants) ? true : t.map((e, t) => {
-                var n, a;
+                var n, o;
                 return (0, r.jsx)(S, {
                   variantGroupProduct: i,
                   variant: e,
                   variantIndex: t,
                   selectedVariantIndex: p,
-                  totalVariants: null != (a = null == (n = i.variants) ? true : n.length) ? a : 0,
+                  totalVariants: null != (o = null == (n = i.variants) ? true : n.length) ? o : 0,
                   onEnter: () => s.handleEntering(t),
                   onLeave: s.handleLeaving,
                   minimal: d

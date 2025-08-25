@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk202841 = require("./202841.js"),
   Chunk748780 = require("./748780.js"),
   Chunk481060 = require("./481060.js"),
@@ -22,7 +22,7 @@ function m(e) {
   let {
     children: t,
     className: n,
-    onFlashEnd: a,
+    onFlashEnd: o,
     animationDelay: u = 500
   } = e, f = c.TVs.colors.TEXT_LINK, m = (0, c.dQu)(f).spring({
     opacity: 0
@@ -33,7 +33,7 @@ function m(e) {
   }), b = (0, c.dQu)(f).spring({
     opacity: 1
   }), y = e => {
-    e.finished && (null == a || a())
+    e.finished && (null == o || o())
   }, [O, v] = (0, c.q_F)(() => ({
     from: {
       backgroundColor: m,
@@ -56,10 +56,10 @@ function m(e) {
       endColor: n,
       targetBorderColor: r,
       targetColor: i,
-      animationDelay: a
+      animationDelay: o
     } = T.current, {
-      useReducedMotion: o
-    } = d.Z, s = o ? 0 : p, c = a + p + h;
+      useReducedMotion: a
+    } = d.Z, s = a ? 0 : p, c = o + p + h;
     v({
       reset: true,
       immediate: false,
@@ -72,8 +72,8 @@ function m(e) {
         easing: l.Z.Easing.ease
       }
     }), v({
-      delay: a,
-      immediate: o,
+      delay: o,
+      immediate: a,
       to: [{
         backgroundColor: i,
         borderColor: r
@@ -84,7 +84,7 @@ function m(e) {
       }
     }), v({
       delay: c,
-      immediate: o,
+      immediate: a,
       to: [{
         backgroundColor: n,
         borderColor: n
@@ -97,7 +97,7 @@ function m(e) {
     })
   }, [v]), (0, r.jsx)(s.animated.div, {
     style: O,
-    className: o()(_.settingsItemHighlight, n),
+    className: a()(_.settingsItemHighlight, n),
     children: t
   })
 }
@@ -106,12 +106,12 @@ function g(e) {
   let {
     children: t,
     scrollPosition: n,
-    animationDelay: a
-  } = e, o = (0, u.e7)([f.Z], () => f.Z.getScrollPosition() === n), [s, l] = i.useState(false);
+    animationDelay: o
+  } = e, a = (0, u.e7)([f.Z], () => f.Z.getScrollPosition() === n), [s, l] = i.useState(false);
   return (i.useEffect(() => {
-    o && l(true)
-  }, [o]), s) ? (0, r.jsx)(m, {
-    animationDelay: a,
+    a && l(true)
+  }, [a]), s) ? (0, r.jsx)(m, {
+    animationDelay: o,
     onFlashEnd: () => l(false),
     children: t
   }) : t

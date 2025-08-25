@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk385499 = require("./385499.jsx"),
   Chunk739566 = require("./739566.js"),
@@ -34,7 +34,7 @@ function h(e) {
     onMouseEnter: E,
     onMouseLeave: b,
     children: (0, r.jsx)(d.Z, {
-      className: a()(p.mainContainer, {
+      className: o()(p.mainContainer, {
         [p.compact]: n
       }),
       iconNode: n ? null : (0, r.jsx)(u.S, {
@@ -43,18 +43,18 @@ function h(e) {
       iconContainerClassName: p.iconContainer,
       compact: n,
       children: (0, r.jsxs)("div", {
-        className: a()(p.content, {
+        className: o()(p.content, {
           [p.compact]: n
         }),
         children: [(0, r.jsx)(c.nD, {
           message: t,
           messageClassname: p.spanCorrection,
-          className: a()(p.usernameContainer, p.spanCorrection, {
+          className: o()(p.usernameContainer, p.spanCorrection, {
             [p.compact]: n
           }),
           username: (0, r.jsxs)("div", {
             className: p.spanCorrection,
-            children: [(0, r.jsx)(o.Text, {
+            children: [(0, r.jsx)(a.Text, {
               variant: "text-md/normal",
               color: "text-brand",
               tag: "span",
@@ -68,7 +68,7 @@ function h(e) {
           compact: n,
           showTimestamp: true
         }), (0, r.jsx)("div", {
-          className: a()(p.__invalid_messageContent, {
+          className: o()(p.__invalid_messageContent, {
             [p.compact]: n
           }),
           children: _.intl.format(_.t.qntXNT, {

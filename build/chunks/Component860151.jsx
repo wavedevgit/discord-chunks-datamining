@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk381176 = require("./381176.js"),
   Chunk373370 = require("./373370.js"),
@@ -33,7 +33,7 @@ let d = function(e) {
     questConfig: i.config
   });
   return (0, r.jsxs)("div", {
-    className: a()(u.wrapper, t),
+    className: o()(u.wrapper, t),
     style: m ? true : {
       color: i.config.colors.primary
     },
@@ -46,7 +46,7 @@ let d = function(e) {
       sourceQuestContent: p
     }), (0, r.jsx)("div", {
       className: u.copy,
-      children: (0, r.jsx)(o.Text, {
+      children: (0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
         color: "text-default",
         children: h

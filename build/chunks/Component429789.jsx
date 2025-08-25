@@ -37,7 +37,7 @@ function p() {
     }), (0, Chunk951288.jsx)(Chunk481060.iRW, {
       initialValue: module,
       onValueChange: e => {
-        o.Z.setAttenuation(e, t, n)
+        a.Z.setAttenuation(e, t, n)
       },
       "aria-labelledby": _
     }), (0, Chunk951288.jsx)(Chunk481060.R94, {
@@ -45,12 +45,12 @@ function p() {
       children: Chunk388032.intl.string(Chunk388032.t["0A/8Rk"])
     }), (0, Chunk951288.jsx)(Chunk481060.j7V, {
       value: exports,
-      onChange: t => o.Z.setAttenuation(e, t, n),
+      onChange: t => a.Z.setAttenuation(e, t, n),
       hideBorder: true,
       children: Chunk388032.intl.string(Chunk388032.t["9dHxRU"])
     }), (0, Chunk951288.jsx)(Chunk481060.j7V, {
       value: require,
-      onChange: n => o.Z.setAttenuation(e, t, n),
+      onChange: n => a.Z.setAttenuation(e, t, n),
       hideBorder: true,
       children: Chunk388032.intl.string(Chunk388032.t.SMt0Gh)
     })]

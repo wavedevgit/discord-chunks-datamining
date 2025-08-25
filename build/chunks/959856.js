@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
   Chunk264344 = require("./264344.js"),
-  o = require.n(Chunk264344),
+  a = require.n(Chunk264344),
   Chunk47770 = require("./47770.js"),
   Chunk174498 = require("./174498.js"),
   c = require.n(Chunk174498),
@@ -45,7 +45,7 @@ class N extends Chunk47770.Z {
     this.interacted || (document.createElement("audio").play(), this.interacted = true), this.eachConnection(e => e.interact())
   }
   static supported() {
-    return !__OVERLAY__ && (Chunk436620.fi && null != window.AudioContext && null != window.RTCPeerConnection ? (require("./266370.js"), true) : (C.info("WebRTC is not supported on", o().name, o().version), false))
+    return !__OVERLAY__ && (Chunk436620.fi && null != window.AudioContext && null != window.RTCPeerConnection ? (require("./266370.js"), true) : (C.info("WebRTC is not supported on", a().name, a().version), false))
   }
   supported() {
     returntrue
@@ -62,7 +62,7 @@ class N extends Chunk47770.Z {
         var t;
         return (null == (t = navigator.mediaDevices) ? true : t.getDisplayMedia) != null;
       case T.AN.VOICE_PROCESSING:
-        return "Chrome" === o().name;
+        return "Chrome" === a().name;
       case T.AN.NATIVE_PING:
       case T.AN.DIAGNOSTICS:
         return S.Fo;
@@ -70,7 +70,7 @@ class N extends Chunk47770.Z {
       case T.AN.LOOPBACK:
       case T.AN.NOISE_SUPPRESSION:
       case T.AN.AUTOMATIC_GAIN_CONTROL:
-        return "Safari" !== o().name;
+        return "Safari" !== a().name;
       case T.AN.NOISE_CANCELLATION:
         return c()();
       case T.AN.QOS:
@@ -102,8 +102,8 @@ class N extends Chunk47770.Z {
     let {
       ssrc: r,
       address: i,
-      port: a,
-      modes: o,
+      port: o,
+      modes: a,
       streamUserId: s,
       streamParameters: l
     } = n, c = {
@@ -136,7 +136,7 @@ class N extends Chunk47770.Z {
     module.on("permission", this.handleAudioPermission);
     try {
       var t;
-      await module.enable(), "Firefox" === o().name && await this.handleDeviceChange(), this.enabled = true, this.eachConnection(e => e.input.enableAudioInput(), Chunk65154.Yn.DEFAULT), null == (t = this.voiceActivityInput) || exports.enable()
+      await module.enable(), "Firefox" === a().name && await this.handleDeviceChange(), this.enabled = true, this.eachConnection(e => e.input.enableAudioInput(), Chunk65154.Yn.DEFAULT), null == (t = this.voiceActivityInput) || exports.enable()
     } finally {
       module.destroy()
     }

@@ -73,9 +73,9 @@ class y extends(r = Chunk647438.Component) {
       animate: n,
       currentIndex: r,
       items: i,
-      width: a
-    } = this.props, o = b(r, i.length), s = b(e.currentIndex, i.length);
-    (o !== s || i.length !== e.items.length) && this.updateAnimatedIndex(o, s), a !== e.width ? this.animatedAlignmentOffset.setValue(this.getAlignmentOffset(t)) : n && (t !== e.align || o !== s) && l.Z.spring(this.animatedAlignmentOffset, p(f({}, h), {
+      width: o
+    } = this.props, a = b(r, i.length), s = b(e.currentIndex, i.length);
+    (a !== s || i.length !== e.items.length) && this.updateAnimatedIndex(a, s), o !== e.width ? this.animatedAlignmentOffset.setValue(this.getAlignmentOffset(t)) : n && (t !== e.align || a !== s) && l.Z.spring(this.animatedAlignmentOffset, p(f({}, h), {
       toValue: this.getAlignmentOffset(t)
     })).start()
   }
@@ -85,9 +85,9 @@ class y extends(r = Chunk647438.Component) {
       itemSize: n,
       currentIndex: r,
       gutter: i,
-      items: a
-    } = this.props, o = i * b(r, a.length) * 2;
-    return e === g ? (t - n.width) / 2 + o : e === E ? t - n.width - i + o : i + o
+      items: o
+    } = this.props, a = i * b(r, o.length) * 2;
+    return e === g ? (t - n.width) / 2 + a : e === E ? t - n.width - i + a : i + a
   }
   getCarouselTranslate() {
     let {
@@ -152,8 +152,8 @@ class y extends(r = Chunk647438.Component) {
         animatedOpacity: r
       } = this,
       {
-        renderItem: a,
-        items: o,
+        renderItem: o,
+        items: a,
         itemSize: s,
         edgeItems: c,
         gutter: d
@@ -167,7 +167,7 @@ class y extends(r = Chunk647438.Component) {
       m = (e = Chunk112724 > 0 ? [...Chunk120356.slice(-Chunk112724), ...Chunk120356, ...Chunk120356.slice(0, Chunk112724)] : Chunk120356).map((e, t) => (0, i.jsx)("div", {
         style: h,
         className: u.item,
-        children: a(e, t - c, this.interpolateValueForItem(t - c))
+        children: o(e, t - c, this.interpolateValueForItem(t - c))
       }, t));
     return (0, Chunk951288.jsx)(Chunk748780.Z.div, {
       className: Chunk582235.carousel,

@@ -20,12 +20,12 @@ function _(e, t) {
     _ = (0, s.sp)(),
     p = (0, i.e7)([l.Z], () => l.Z.getProduct(e)),
     h = (0, u.x)(),
-    m = o.ZP.canUseCollectibles(h),
+    m = a.ZP.canUseCollectibles(h),
     g = r.useRef(null),
     E = r.useCallback(() => {
       let r = null != p ? (0, c.Vw)(p, m, false) : null,
         i = null != p ? (0, c.eu)(p, m, false) : true;
-      a.default.track(d.rMx.COLLECTIBLES_TILE_IMPRESSION, {
+      o.default.track(d.rMx.COLLECTIBLES_TILE_IMPRESSION, {
         collectibles_shop_session_id: null == _ ? true : _.sessionId,
         sku_id: e,
         display_price: null == r ? true : r.amount,

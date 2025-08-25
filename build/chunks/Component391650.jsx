@@ -40,8 +40,8 @@ function c(e) {
     } = await Promise.all([n.e("71172"), n.e("1337"), n.e("75816")]).then(n.bind(n, 298237));
     return t => (0, r.jsx)(e, l({}, t))
   }, {
-    modalKey: a.$$,
-    onCloseRequest: o.dG,
+    modalKey: o.$$,
+    onCloseRequest: a.dG,
     onCloseCallback: e
   })
 }

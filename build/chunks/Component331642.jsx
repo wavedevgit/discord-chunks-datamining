@@ -62,16 +62,16 @@ function O(e, t) {
 function v(e) {
   let {
     onSelect: t
-  } = e, [n, o] = i.useState(false), l = (0, a.e7)([c.default], () => c.default.getCurrentUser()), d = u.ZP.canUseCustomCallSounds(l), f = i.useRef(null);
+  } = e, [n, a] = i.useState(false), l = (0, o.e7)([c.default], () => c.default.getCurrentUser()), d = u.ZP.canUseCustomCallSounds(l), f = i.useRef(null);
 
   function E(e) {
-    d && (o(false), null == t || t(e))
+    d && (a(false), null == t || t(e))
   }
   return (0, r.jsx)(s.yRy, {
     targetElementRef: f,
     shouldShow: n,
     position: "left",
-    onRequestClose: () => o(false),
+    onRequestClose: () => a(false),
     renderPopout: e => {
       let {
         closePopout: t
@@ -92,7 +92,7 @@ function v(e) {
     children: e => (0, r.jsx)(h.hU, O(b({}, e), {
       ref: f,
       onClick: () => {
-        o(!n)
+        a(!n)
       },
       text: m.intl.string(m.t.uOe0Aw),
       children: (0, r.jsx)(s.vdY, {
@@ -129,7 +129,7 @@ function T(e) {
     sound: t,
     isGlobal: n,
     onSelect: i
-  } = e, a = null != t, c = null == t ? true : t.emojiId, u = null == t ? true : t.emojiName, d = a && (null != u || null != c), f = e => (0, r.jsx)(s.Text, {
+  } = e, o = null != t, c = null == t ? true : t.emojiId, u = null == t ? true : t.emojiName, d = o && (null != u || null != c), f = e => (0, r.jsx)(s.Text, {
     variant: "text-xs/medium",
     color: "header-secondary",
     tag: "span",
@@ -155,7 +155,7 @@ function T(e) {
         color: "header-primary",
         className: g.soundText,
         children: _()
-      }), a ? (0, r.jsx)(I, {
+      }), o ? (0, r.jsx)(I, {
         sound: t
       }) : (0, r.jsx)(s.gj8, {
         size: "md",
@@ -166,12 +166,12 @@ function T(e) {
       className: g.container,
       children: [(0, r.jsx)(v, {
         onSelect: i
-      }), a && !n && (0, r.jsx)(h.hU, {
+      }), o && !n && (0, r.jsx)(h.hU, {
         onClick: () => i(null),
         text: m.intl.string(m.t.jmtcGB),
         children: (0, r.jsx)(s.XHJ, {
           size: "md",
-          color: o.Z.unsafe_rawColors.RED_400.css,
+          color: a.Z.unsafe_rawColors.RED_400.css,
           className: g.secondaryIcon
         })
       })]

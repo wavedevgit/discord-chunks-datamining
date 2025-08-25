@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk592125 = require("./592125.js"),
   Chunk944486 = require("./944486.js"),
@@ -28,23 +28,23 @@ function h(e) {
   var t, n;
   let {
     channelId: i
-  } = e, o = null != (t = (0, d._d)(i)) ? t : 0, s = null != (n = (0, d.K3)(i)) ? n : 0;
-  return o > 0 && s > 0 ? (0, r.jsx)("div", {
+  } = e, a = null != (t = (0, d._d)(i)) ? t : 0, s = null != (n = (0, d.K3)(i)) ? n : 0;
+  return a > 0 && s > 0 ? (0, r.jsx)("div", {
     className: _.blocked,
     children: (0, r.jsx)("div", {
-      className: a()(_.blockedText, _.noIcon),
+      className: o()(_.blockedText, _.noIcon),
       children: f.intl.string(f.t.xlJRfn)
     })
-  }) : o > 0 ? (0, r.jsx)("div", {
+  }) : a > 0 ? (0, r.jsx)("div", {
     className: _.blocked,
     children: (0, r.jsx)("div", {
-      className: a()(_.blockedText, _.noIcon),
+      className: o()(_.blockedText, _.noIcon),
       children: f.intl.string(f.t.WYad9f)
     })
   }) : s > 0 ? (0, r.jsx)("div", {
     className: _.blocked,
     children: (0, r.jsx)("div", {
-      className: a()(_.blockedText, _.noIcon),
+      className: o()(_.blockedText, _.noIcon),
       children: f.intl.string(f.t.eHq2OD)
     })
   }) : null

@@ -16,7 +16,7 @@ function c(e) {
   let {
     volume: t,
     title: n,
-    description: a,
+    description: o,
     label: c,
     onVolumeChange: u
   } = e;
@@ -27,7 +27,7 @@ function c(e) {
       children: (0, r.jsx)(i.xJW, {
         title: n,
         children: (0, r.jsx)(i.R94, {
-          children: a
+          children: o
         })
       })
     }), (0, r.jsx)("div", {
@@ -36,7 +36,7 @@ function c(e) {
         title: c,
         titleId: l,
         children: (0, r.jsx)(i.iRW, {
-          initialValue: (0, o.P)(t),
+          initialValue: (0, a.P)(t),
           maxValue: 100,
           onValueRender: e => "".concat(e.toFixed(0), "%"),
           onValueChange: u,

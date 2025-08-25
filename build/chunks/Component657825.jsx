@@ -18,19 +18,19 @@ let d = e => {
     userId: t,
     timestamp: n,
     timestampFormatter: d
-  } = e, f = (0, i.e7)([o.default], () => o.default.getUser(t));
+  } = e, f = (0, i.e7)([a.default], () => a.default.getUser(t));
   return true === f ? null : (0, r.jsxs)("div", {
     className: u.container,
     children: [(0, r.jsx)(c.r, {
       user: f,
-      avatarSize: a.EFr.SIZE_40
+      avatarSize: o.EFr.SIZE_40
     }), (0, r.jsx)("div", {
       children: (0, r.jsxs)("div", {
         className: u.descriptors,
-        children: [(0, r.jsx)(a.Text, {
+        children: [(0, r.jsx)(o.Text, {
           variant: "text-md/semibold",
           children: s.ZP.getName(f)
-        }), (0, r.jsx)(a.Text, {
+        }), (0, r.jsx)(o.Text, {
           variant: "text-xs/medium",
           color: "text-muted",
           children: (0, l.LI)(new Date(n).getTime(), d)

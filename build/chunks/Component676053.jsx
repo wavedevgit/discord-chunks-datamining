@@ -63,8 +63,8 @@ function v(e, t) {
   if (null == e) return {};
   var n, r, i = I(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -72,8 +72,8 @@ function v(e, t) {
 function I(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -111,7 +111,7 @@ function T(e) {
     j = i.useCallback(() => {
       null !== w.current && w.current.pause(), null == N || N()
     }, [N]),
-    k = i.useCallback(() => {
+    M = i.useCallback(() => {
       null !== w.current && w.current.pause();
       let e = x();
       (0, c.K)({
@@ -121,7 +121,7 @@ function T(e) {
         shouldHideMediaOptions: true
       }), null == N || N(), null == C || C()
     }, [x, C, N]),
-    M = D ? (0, r.jsx)(o.z, {
+    k = D ? (0, r.jsx)(a.z, {
       type: "image",
       src: y
     }) : (0, r.jsxs)(r.Fragment, {
@@ -138,11 +138,11 @@ function T(e) {
         preload: "metadata"
       }), (0, r.jsx)("div", {
         className: g.playButton,
-        children: (0, r.jsx)(a.J, {
+        children: (0, r.jsx)(o.J, {
           playing: false,
           size: "sm",
           "aria-label": m.intl.string(h.default.YpT3kp),
-          onClick: k
+          onClick: M
         })
       })]
     });
@@ -157,7 +157,7 @@ function T(e) {
         caretConfig: T
       }), (0, r.jsx)("div", {
         className: g.assetContainer,
-        children: M
+        children: k
       }), (0, r.jsx)(_.Y, {
         title: t,
         body: n,

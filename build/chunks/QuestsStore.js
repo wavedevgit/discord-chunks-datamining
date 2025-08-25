@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 /** chunk id: 569984, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-let r, i, a, o, s, l, c, u, d, f, _, p, h, m, g, E, b, y, O, v, I;
+let r, i, o, a, s, l, c, u, d, f, _, p, h, m, g, E, b, y, O, v, I;
 require.d(exports, {
-  Z: () => ek
+  Z: () => eM
 }), require("./388685.js");
 var T, Chunk392711 = require("./392711.js"),
   Chunk754700 = require("./754700.js"),
@@ -25,7 +25,7 @@ function j(e, t, n) {
   }) : e[t] = n, e
 }
 
-function k(e) {
+function M(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -38,7 +38,7 @@ function k(e) {
   return e
 }
 
-function M(e, t) {
+function k(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -50,7 +50,7 @@ function M(e, t) {
 }
 
 function U(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -59,20 +59,20 @@ let G = new Map,
   Z = 1e3;
 
 function F() {
-  r = false, i = false, a = false, o = new Map, s = new Map, l = new Map, c = 0, u = 0, d = new Set, f = new Set, _ = new Set, p = new Set, G = new Map, m = new Map, g = new Map, E = new Map, b = null, y = new Map, h = new Set, O = new Map, v = new Map, eD(), I = null
+  r = false, i = false, o = false, a = new Map, s = new Map, l = new Map, c = 0, u = 0, d = new Set, f = new Set, _ = new Set, p = new Set, G = new Map, m = new Map, g = new Map, E = new Map, b = null, y = new Map, h = new Set, O = new Map, v = new Map, eD(), I = null
 }
 
 function V(e, t) {
-  var n, r, i, a;
+  var n, r, i, o;
   if (null != t.userStatus)
-    for (let o of Object.values(null != (r = null == (n = t.userStatus) ? true : n.progress) ? r : {})) !(0, S.isNil)(o) && A.T.DESKTOP.has(o.eventName) && ((null == (i = o.heartbeat) ? true : i.lastBeatAt) != null ? h.add(e) : (null == (a = o.heartbeat) ? true : a.lastBeatAt) == null && h.delete(e))
+    for (let a of Object.values(null != (r = null == (n = t.userStatus) ? true : n.progress) ? r : {})) !(0, S.isNil)(a) && A.T.DESKTOP.has(a.eventName) && ((null == (i = a.heartbeat) ? true : i.lastBeatAt) != null ? h.add(e) : (null == (o = a.heartbeat) ? true : o.lastBeatAt) == null && h.delete(e))
 }
 
 function H(e, t) {
-  let n = (o = new Map(o)).get(e);
+  let n = (a = new Map(a)).get(e);
   if (null != n) {
-    let r = k({}, n, t);
-    V(e, t), o.set(e, r)
+    let r = M({}, n, t);
+    V(e, t), a.set(e, r)
   }
 }
 
@@ -83,10 +83,10 @@ function Y(e, t) {
 
 function W(e, t) {
   Y(e, t);
-  let n = o.get(e),
+  let n = a.get(e),
     r = null == n ? true : n.userStatus;
   null != r && null == r.claimedAt && H(e, {
-    userStatus: U(k({}, r), {
+    userStatus: U(M({}, r), {
       claimedAt: t.claimedAt
     })
   })
@@ -103,17 +103,17 @@ function K(e) {
 function z(e, t) {
   let n = new Map(g);
   n.set(e, t.items), g = n;
-  let r = o.get(e),
+  let r = a.get(e),
     i = null == r ? true : r.userStatus;
   if (null != i && null == i.claimedAt) {
-    var a;
+    var o;
     let n = K({
       entitlements: t
     });
     null != n && Y(e, n), H(e, {
-      userStatus: U(k({}, i), {
+      userStatus: U(M({}, i), {
         claimedAt: t.claimedAt,
-        claimedTier: null != (a = null == n ? true : n.tier) ? a : null
+        claimedTier: null != (o = null == n ? true : n.tier) ? o : null
       })
     })
   }
@@ -137,12 +137,12 @@ function J(e) {
     excludedQuests: n,
     questEnrollmentBlockedUntil: i
   } = e;
-  c = Date.now(), r = false, o = new Map;
-  let a = new Map;
-  for (let e of t) o.set(e.id, e), a.set(e.id, (0, P.zi)(e)), e.targetedContent.includes(w.jn.QUEST_BAR) && (0, x.T)({
+  c = Date.now(), r = false, a = new Map;
+  let o = new Map;
+  for (let e of t) a.set(e.id, e), o.set(e.id, (0, P.zi)(e)), e.targetedContent.includes(w.jn.QUEST_BAR) && (0, x.T)({
     location: L.dr.QUESTS_STORE
   }).log("Delivered ".concat(e.config.messages.questName, " (").concat(e.id, ")"));
-  for (let e of (v = a, s = new Map, n)) s.set(e.id, e);
+  for (let e of (v = o, s = new Map, n)) s.set(e.id, e);
   ew(), I = null != i ? new Date(i) : null
 }
 
@@ -155,18 +155,18 @@ function ee() {
 }
 
 function et() {
-  a = true
+  o = true
 }
 
 function en(e) {
   let {
     quests: t
   } = e;
-  for (let e of (a = false, l = new Map, t)) l.set(e.id, e)
+  for (let e of (o = false, l = new Map, t)) l.set(e.id, e)
 }
 
 function er() {
-  a = false
+  o = false
 }
 
 function ei(e) {
@@ -180,7 +180,7 @@ function ei(e) {
   }), null != n && q(n)
 }
 
-function ea(e) {
+function eo(e) {
   let {
     questId: t,
     streamKey: n
@@ -192,7 +192,7 @@ function ea(e) {
   })
 }
 
-function eo(e) {
+function ea(e) {
   let {
     streamKey: t
   } = e;
@@ -317,7 +317,7 @@ function ev(e) {
   H(t.quest_id, {
     userStatus: r
   });
-  let i = o.get(t.quest_id);
+  let i = a.get(t.quest_id);
   if (null != i) {
     let e = (0, P.zi)(i);
     v.get(t.quest_id) !== e && (v = new Map(v).set(t.quest_id, e))
@@ -332,7 +332,7 @@ function eI(e) {
   H(t.questId, {
     userStatus: t
   }), null == t.claimedAt && (m = new Map(m)).delete(t.questId), null == t.enrolledAt && ((y = new Map(y)).delete(t.questId), D.ZP.getState().resetQuest(t.questId));
-  let n = o.get(t.questId);
+  let n = a.get(t.questId);
   if (null != n) {
     let e = (0, P.zi)(n);
     v.get(t.questId) !== e && (v = new Map(v).set(t.questId, e))
@@ -360,8 +360,8 @@ function eA(e) {
     questId: n,
     taskEventName: r,
     progress: i
-  } = e, a = null != (t = G.get(n)) ? t : new Map;
-  a.set(r, i), G.set(n, a)
+  } = e, o = null != (t = G.get(n)) ? t : new Map;
+  o.set(r, i), G.set(n, o)
 }
 
 function eC(e) {
@@ -376,14 +376,14 @@ function eN(e) {
     quest: t,
     placement: n,
     adDecisionData: r,
-    adContext: a,
-    metadataRaw: o
+    adContext: o,
+    metadataRaw: a
   } = e;
   u = Date.now(), i = false, null == t ? O.delete(n) : O.set(n, {
     quest: t,
     adDecisionData: r,
-    adContext: a,
-    metadataRaw: o
+    adContext: o,
+    metadataRaw: a
   })
 }
 
@@ -397,7 +397,7 @@ function eR(e) {
 function eP() {
   let e = false,
     t = new Map(v);
-  o.forEach((n, r) => {
+  a.forEach((n, r) => {
     true !== t.get(r) && ((0, P.zi)(n) ? (t.set(r, true), e = true) : t.has(r) || t.set(r, false))
   }), module && (v = exports, ej.emitChange())
 }
@@ -421,7 +421,7 @@ function ex(e) {
 F();
 class eL extends(T = Chunk442837.ZP.Store) {
   get quests() {
-    return o
+    return a
   }
   get excludedQuests() {
     return s
@@ -433,7 +433,7 @@ class eL extends(T = Chunk442837.ZP.Store) {
     return r
   }
   get isFetchingClaimedQuests() {
-    return a
+    return o
   }
   get lastFetchedCurrentQuests() {
     return c
@@ -445,7 +445,7 @@ class eL extends(T = Chunk442837.ZP.Store) {
     return i
   }
   get questDeliveryOverride() {
-    return o.get(null != b ? b : "")
+    return a.get(null != b ? b : "")
   }
   get questToDeliverForPlacement() {
     return O
@@ -475,7 +475,7 @@ class eL extends(T = Chunk442837.ZP.Store) {
     return E.get(e)
   }
   getQuest(e) {
-    return o.get(e)
+    return a.get(e)
   }
   isProgressingOnDesktop(e) {
     return h.has(e)
@@ -509,7 +509,7 @@ let ej = new eL(Chunk570140.Z, {
     QUESTS_FETCH_QUEST_TO_DELIVER_SUCCESS: eN,
     QUESTS_FETCH_QUEST_TO_DELIVER_FAILURE: eR,
     QUESTS_SEND_HEARTBEAT_SUCCESS: ei,
-    QUESTS_SEND_HEARTBEAT_FAILURE: ea,
+    QUESTS_SEND_HEARTBEAT_FAILURE: eo,
     QUESTS_ENROLL_BEGIN: el,
     QUESTS_ENROLL_SUCCESS: ec,
     QUESTS_ENROLL_FAILURE: eu,
@@ -523,7 +523,7 @@ let ej = new eL(Chunk570140.Z, {
     QUESTS_DISMISS_CONTENT_SUCCESS: eb,
     QUESTS_DISMISS_CONTENT_FAILURE: ey,
     QUESTS_USER_STATUS_UPDATE: ev,
-    STREAM_CLOSE: eo,
+    STREAM_CLOSE: ea,
     QUESTS_DISMISS_PROGRESS_TRACKING_FAILURE_NOTICE: eO,
     QUESTS_PREVIEW_UPDATE_SUCCESS: eI,
     QUESTS_DELIVERY_OVERRIDE: eT,
@@ -532,4 +532,4 @@ let ej = new eL(Chunk570140.Z, {
     QUESTS_RESET_OPTIMISTIC_PROGRESS: eC,
     QUESTS_USER_COMPLETION_UPDATE: ex
   }),
-  ek = ej
+  eM = ej

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk81825 = require("./81825.js"),
   Chunk598077 = require("./598077.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -16,14 +16,14 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e) {
+function a(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      a(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -47,12 +47,12 @@ function l(e, t) {
 }
 class c extends Chunk81825.Z {
   static createFromServer(e) {
-    return new c(l(o({}, e), {
+    return new c(l(a({}, e), {
       user: new i.Z(e.user)
     }))
   }
   constructor(e) {
     var t;
-    super(), a(this, "id", true), a(this, "name", true), a(this, "type", true), a(this, "user", true), a(this, "displayName", true), this.id = e.id, this.name = e.name, this.type = e.type, this.user = e.user, this.displayName = null != (t = e.name_localized) ? t : e.name
+    super(), o(this, "id", true), o(this, "name", true), o(this, "type", true), o(this, "user", true), o(this, "displayName", true), this.id = e.id, this.name = e.name, this.type = e.type, this.user = e.user, this.displayName = null != (t = e.name_localized) ? t : e.name
   }
 }

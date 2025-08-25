@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk622535 = require("./622535.js"),
   Chunk304789 = require("./304789.jsx"),
@@ -41,20 +41,20 @@ let P = e => {
     })
   }, [t]), (0, h.z)(p.X);
   let n = i.useRef(null),
-    a = i.useRef(null),
+    o = i.useRef(null),
     [P, w] = i.useState(false),
     {
       analyticsLocations: D
     } = (0, _.ZP)(f.Z.PREMIUM_SUBSCRIBER_NITRO_HOME),
     [x, L] = i.useState(false),
     j = (0, s.e7)([m.Z], () => null != t ? m.Z.getUserProfile(t) : null),
-    k = "true" === new URLSearchParams(window.location.search).get("autoScroll");
+    M = "true" === new URLSearchParams(window.location.search).get("autoScroll");
   window.history.replaceState({}, "", window.location.pathname);
-  let M = (0, b.ZP)({
+  let k = (0, b.ZP)({
     location: "SubscriberNitroHome"
   });
   return null == j ? (0, r.jsx)("div", {
-    className: o()(N.container, N.loading),
+    className: a()(N.container, N.loading),
     children: (0, r.jsx)(u.$jN, {})
   }) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(u.yWw, {
@@ -62,21 +62,21 @@ let P = e => {
       ref: n,
       children: (0, r.jsx)(c.$, {
         color: "nitro-pink",
-        className: o()(N.container, N.responsiveContainer, {
-          [N.hiddenGradient]: !M
+        className: a()(N.container, N.responsiveContainer, {
+          [N.hiddenGradient]: !k
         }),
         children: (0, r.jsxs)(_.Gt, {
           value: D,
           children: [(0, r.jsx)(v.Z, {
             className: N.heroHeading,
             location: I.MQ.HOME,
-            enablePremiumBrandRefresh: M
+            enablePremiumBrandRefresh: k
           }), (0, r.jsx)(y.Z, {
             variant: I.gM.WHATS_NEW,
             className: N.whatsNew,
             noBackground: true,
             leftAlignHeaders: true,
-            shouldAutoScroll: k
+            shouldAutoScroll: M
           }), (0, r.jsx)(y.Z, {
             className: N.perksDiscoverability,
             variant: I.gM.PERKS_DISCOVERABILITY,
@@ -96,14 +96,14 @@ let P = e => {
           }), (0, r.jsx)("div", {
             className: N.footerSpacing
           }), (0, r.jsx)(l.$, {
-            innerRef: a,
+            innerRef: o,
             onChange: e => {
               e && !x && (E.default.track(A.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
                 location_stack: D
               }), L(true))
             },
             children: (0, r.jsx)("div", {
-              ref: a,
+              ref: o,
               className: N.bottomOfPageVisibilitySensor
             })
           }), (0, r.jsx)("img", {
@@ -119,7 +119,7 @@ let P = e => {
       isAllPerksVisible: P,
       setIsAllPerksVisible: w,
       previousComponent: I.MQ.HOME,
-      enablePremiumBrandRefresh: M
+      enablePremiumBrandRefresh: k
     })]
   })
 }

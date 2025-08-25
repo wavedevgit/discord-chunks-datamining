@@ -21,23 +21,23 @@ let _ = e => {
   } = e, n = (0, c.Z)(), {
     loading: _
   } = (0, l.sp)(n);
-  return ((0, s.Z)(i.tq ? "role-subscriptions-user-setting" : true), _) ? (0, r.jsx)(o.$jN, {}) : 0 === n.length ? null : (0, r.jsxs)("div", {
+  return ((0, s.Z)(i.tq ? "role-subscriptions-user-setting" : true), _) ? (0, r.jsx)(a.$jN, {}) : 0 === n.length ? null : (0, r.jsxs)("div", {
     className: f.__invalid_container,
-    children: [(0, r.jsxs)(a.zx, {
-      look: a.zx.Looks.BLANK,
+    children: [(0, r.jsxs)(o.zx, {
+      look: o.zx.Looks.BLANK,
       innerClassName: f.backButtonContents,
       onClick: t,
-      children: [(0, r.jsx)(o.ZSh, {
+      children: [(0, r.jsx)(a.ZSh, {
         size: "md",
         color: "currentColor",
         className: f.arrowIcon
       }), d.intl.string(d.t.hqyhKS)]
-    }), (0, r.jsx)(o.LZC, {
+    }), (0, r.jsx)(a.LZC, {
       size: 10
-    }), (0, r.jsx)(o.vwX, {
+    }), (0, r.jsx)(a.vwX, {
       tag: "h1",
       children: d.intl.string(d.t["KzCF//"])
-    }), (0, r.jsx)(o.Text, {
+    }), (0, r.jsx)(a.Text, {
       variant: "text-sm/normal",
       className: f.pageDescription,
       children: d.intl.string(d.t["Y+ucR0"])

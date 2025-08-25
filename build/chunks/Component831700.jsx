@@ -473,6 +473,8 @@ function ei(e) {
   } = w.A.useExperiment({
     guildId: n.guild_id,
     location: "VoiceChannel"
+  }, {
+    autoTrackExposure: false
   }), F = (0, H.Z)({
     channel: n,
     isChannelSelected: o,

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 /** chunk id: 703656, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-let r, i, a;
+let r, i, o;
 require.d(exports, {
   At: () => T,
   DB: () => N,
@@ -65,7 +65,7 @@ function b(e, t) {
   _.log("transitionTo - Transitioning to ".concat(e));
   let n = null == t ? true : t.source;
   null == t || delete t.source;
-  let o = null == t ? true : t.sourceLocationStack;
+  let a = null == t ? true : t.sourceLocationStack;
   if (null == t || delete t.sourceLocationStack, null == t) r.push(e);
   else {
     let n = new URL(e, "https:".concat(window.GLOBAL_ENV.WEBAPP_ENDPOINT));
@@ -75,7 +75,7 @@ function b(e, t) {
       hash: n.hash
     }, t))
   }
-  i = n, a = o
+  i = n, o = a
 }
 
 function y(e, t, n, r) {
@@ -103,7 +103,7 @@ function T() {
 }
 
 function S() {
-  return a
+  return o
 }
 
 function A(e) {

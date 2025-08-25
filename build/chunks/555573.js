@@ -25,7 +25,7 @@ function _(e) {
     channelId: t,
     command: n,
     section: r,
-    location: a,
+    location: o,
     initialValues: s,
     triggerSection: l,
     queryLength: c,
@@ -35,13 +35,13 @@ function _(e) {
     source: p,
     commandOrigin: h
   } = e;
-  null != n && i()(n.inputType !== d.iw.PLACEHOLDER, "command should not be placeholder"), o.Z.dispatch({
+  null != n && i()(n.inputType !== d.iw.PLACEHOLDER, "command should not be placeholder"), a.Z.dispatch({
     type: "APPLICATION_COMMAND_SET_ACTIVE_COMMAND",
     channelId: t,
     command: n,
     section: r,
     initialValues: s,
-    location: a,
+    location: o,
     triggerSection: l,
     queryLength: c,
     sectionName: u,
@@ -53,7 +53,7 @@ function _(e) {
 }
 
 function p(e, t) {
-  o.Z.dispatch({
+  a.Z.dispatch({
     type: "APPLICATION_COMMAND_SET_PREFERRED_COMMAND",
     channelId: e,
     commandId: t
@@ -61,7 +61,7 @@ function p(e, t) {
 }
 
 function h(e, t) {
-  o.Z.dispatch({
+  a.Z.dispatch({
     type: "APPLICATION_COMMAND_UPDATE_OPTIONS",
     channelId: e,
     changedOptionStates: t
@@ -78,7 +78,7 @@ function m(e, t) {
 }
 
 function g(e, t, n, r) {
-  return a.tn.put({
+  return o.tn.put({
     body: {
       permissions: r
     },
@@ -94,13 +94,13 @@ function E(e, t, n) {
     query: d,
     name: _
   } = t.autocomplete, p = c.default.fromTimestamp(Date.now());
-  null != t.channel && (o.Z.dispatch({
+  null != t.channel && (a.Z.dispatch({
     type: "APPLICATION_COMMAND_AUTOCOMPLETE_REQUEST",
     nonce: p,
     channelId: t.channel.id,
     query: d,
     name: _
-  }), null == u.Z.getAutocompleteChoices(t.channel.id, _, d) && a.tn.post({
+  }), null == u.Z.getAutocompleteChoices(t.channel.id, _, d) && o.tn.post({
     url: f.ANM.INTERACTIONS,
     body: {
       type: s.B8.APPLICATION_COMMAND_AUTOCOMPLETE,
@@ -114,7 +114,7 @@ function E(e, t, n) {
     timeout: 3e3,
     rejectWithError: true
   }).catch(() => {
-    o.Z.dispatch({
+    a.Z.dispatch({
       type: "INTERACTION_FAILURE",
       nonce: p
     })

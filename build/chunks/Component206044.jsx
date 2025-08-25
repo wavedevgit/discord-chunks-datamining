@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk202841 = require("./202841.js"),
   Chunk722770 = require("./722770.js"),
   Chunk481060 = require("./481060.js"),
@@ -72,40 +72,40 @@ let w = (0, Chunk202841.animated)(Chunk481060.CJ0),
     var t;
     let {
       isQuestExpired: n,
-      quest: a,
+      quest: o,
       location: C,
       size: R,
       expansionSpring: D,
       isAnimating: x,
       isExpanded: L,
       contentPosition: j,
-      toggleExpanded: k,
-      sourceQuestContent: M
+      toggleExpanded: M,
+      sourceQuestContent: k
     } = e, {
       ref: U,
       height: G
     } = (0, u.ZP)(), [B, Z] = i.useState(null), [F, V] = i.useState(null), H = (0, f.Z)(e => {
       let t = e.target;
       Z(t.offsetWidth), V(t.scrollWidth)
-    }), Y = (0, d.y)(H), W = (0, v.uq)(C), K = C === h.jn.QUESTS_EMBED, z = (0, p.t5)(a, I.dr.QUESTS_CARD, C, M), q = (null == (t = a.userStatus) ? true : t.completedAt) != null, X = (0, _.O5)(), Q = (0, p.B6)(a.config.expiresAt), J = (0, p.B6)(m.r.build(a.config).rewardsExpireAt), $ = i.useMemo(() => null != a.config.cosponsorMetadata, [a]), ee = e => {
-      e.stopPropagation(), e.currentTarget.blur(), k(), X({
-        questId: a.id,
+    }), Y = (0, d.y)(H), W = (0, v.uq)(C), K = C === h.jn.QUESTS_EMBED, z = (0, p.t5)(o, I.dr.QUESTS_CARD, C, k), q = (null == (t = o.userStatus) ? true : t.completedAt) != null, X = (0, _.O5)(), Q = (0, p.B6)(o.config.expiresAt), J = (0, p.B6)(m.r.build(o.config).rewardsExpireAt), $ = i.useMemo(() => null != o.config.cosponsorMetadata, [o]), ee = e => {
+      e.stopPropagation(), e.currentTarget.blur(), M(), X({
+        questId: o.id,
         questContent: C,
         questContentCTA: L ? _.jZ.COLLAPSE : _.jZ.EXPAND,
         questContentPosition: j,
-        sourceQuestContent: M
+        sourceQuestContent: k
       })
     }, et = () => null != B && null != F && B < F, en = (0, r.jsx)(g.ZP, {
       className: A.partnerBranding,
       logotypeClassName: $ ? A.partnerBrandingLogotypes : true,
       gameTileSize: g.fF.MEDIUM,
-      quest: a,
+      quest: o,
       separatorSpacing: g.US.MEDIUM,
       theme: T.BR.DARK,
-      withGameTile: !K || null == a.config.cosponsorMetadata
+      withGameTile: !K || null == o.config.cosponsorMetadata
     });
     return (0, r.jsxs)("div", {
-      className: o()(A.outerContainer, {
+      className: a()(A.outerContainer, {
         [A.outerContainerGiftInventory]: W,
         [A.outerContainerEmbed]: K,
         [A.outerContainerXs]: "xs" === R
@@ -115,7 +115,7 @@ let w = (0, Chunk202841.animated)(Chunk481060.CJ0),
         height: W ? G : true
       },
       children: [(0, r.jsx)(y.Z, {
-        quest: a,
+        quest: o,
         dimensions: {
           width: 660,
           height: 185
@@ -125,7 +125,7 @@ let w = (0, Chunk202841.animated)(Chunk481060.CJ0),
         className: A.header,
         "aria-expanded": L,
         children: [(0, r.jsxs)(s.animated.div, {
-          className: o()(A.headerContent, {
+          className: a()(A.headerContent, {
             [A.headerContentEmbed]: K
           }),
           style: {
@@ -151,11 +151,11 @@ let w = (0, Chunk202841.animated)(Chunk481060.CJ0),
               children: [(0, r.jsx)("div", {
                 className: A.headerCollapsedContentRewardWrapper,
                 children: (0, r.jsx)(b.Z, {
-                  quest: a,
+                  quest: o,
                   questContent: C,
                   className: A.headerCollapsedRewardTile,
                   location: I.dr.QUESTS_CARD,
-                  sourceQuestContent: M
+                  sourceQuestContent: k
                 })
               }), (0, r.jsxs)("div", {
                 className: A.headerCollapsedContentCopyWrapper,
@@ -174,7 +174,7 @@ let w = (0, Chunk202841.animated)(Chunk481060.CJ0),
             ref: e => {
               U.current = e
             },
-            className: o()(A.headerExpandedContent, {
+            className: a()(A.headerExpandedContent, {
               [A.outerContainerGiftInventory]: W,
               [A.outerContainerEmbed]: K
             }),
@@ -196,7 +196,7 @@ let w = (0, Chunk202841.animated)(Chunk481060.CJ0),
               }), (0, r.jsxs)("div", {
                 className: A.questInfo,
                 children: [(0, r.jsx)(c.ua7, {
-                  text: a.config.messages.questName,
+                  text: o.config.messages.questName,
                   shouldShow: et(),
                   children: e => (0, r.jsx)(c.X6q, P(N({
                     ref: Y,
@@ -205,7 +205,7 @@ let w = (0, Chunk202841.animated)(Chunk481060.CJ0),
                     color: "always-white"
                   }, e), {
                     children: S.intl.format(S.t.EAYZAg, {
-                      questName: a.config.messages.questName
+                      questName: o.config.messages.questName
                     })
                   }))
                 }), (0, r.jsx)(c.Text, {
@@ -232,12 +232,12 @@ let w = (0, Chunk202841.animated)(Chunk481060.CJ0),
           },
           children: [(0, r.jsx)(O.r, {
             questContent: C,
-            quest: a,
+            quest: o,
             questContentPosition: j,
             shouldShowDisclosure: true,
             hideLearnMore: W,
             showShareLink: !n && K,
-            sourceQuestContent: M,
+            sourceQuestContent: k,
             children: e => (0, r.jsx)(s.animated.div, {
               style: {
                 opacity: D,

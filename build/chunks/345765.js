@@ -47,7 +47,7 @@ function R() {
 }
 
 function P(e, t) {
-  a.Z.dispatch({
+  o.Z.dispatch({
     type: "CONTENT_INVENTORY_SET_FEED_STATE",
     feedId: e,
     state: t
@@ -79,7 +79,7 @@ function x() {
   let n = Chunk146282.Z.getFeed(v);
   if ((null == require ? true : require.refresh_stale_inbox_after_ms) != null && null == C) return;
   let r = (null == require ? true : require.expired_at) == null ? 0 : new Date(require.expired_at).getTime() - Date.now(),
-    a = Math.max(0, null == C ? 0 : new Date(C).getTime() - Date.now(), Chunk392711) + (exports > 0 ? R() : 0);
+    o = Math.max(0, null == C ? 0 : new Date(C).getTime() - Date.now(), Chunk392711) + (exports > 0 ? R() : 0);
   P(v, {
     loading: false,
     nextFetchDate: new Date(Date.now() + Chunk570140)
@@ -104,14 +104,14 @@ async function L(e) {
       feedId: t,
       feature: n
     });
-    a.Z.dispatch({
+    o.Z.dispatch({
       type: "CONTENT_INVENTORY_SET_FEED",
       feedId: t,
       feed: r
     }), A.set(t, 0), S.delete(t), P(t, {
       loading: false
     }), t === v && (C = null, x())
-  } catch (o) {
+  } catch (a) {
     var i;
     let e = null != (i = A.get(t)) ? i : 0;
     if (e < y) {
@@ -121,7 +121,7 @@ async function L(e) {
         feature: n,
         force: r
       }), i)), A.set(t, e + 1)
-    } else a.Z.dispatch({
+    } else o.Z.dispatch({
       type: "CONTENT_INVENTORY_CLEAR_FEED",
       feedId: t
     });
@@ -133,11 +133,11 @@ function j() {
   x()
 }
 
-function k() {
+function M() {
   j()
 }
 
-function M() {
+function k() {
   D(v)
 }
 
@@ -178,8 +178,8 @@ function Z() {
 class F extends Chunk147913.Z {
   constructor(...e) {
     super(...e), b(this, "actions", {
-      POST_CONNECTION_OPEN: k,
-      CONNECTION_CLOSED: M,
+      POST_CONNECTION_OPEN: M,
+      CONNECTION_CLOSED: k,
       WINDOW_FOCUS: j,
       IDLE: j,
       CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN: j,

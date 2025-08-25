@@ -18,7 +18,7 @@ function i(e, t) {
   e.push(t)
 }
 
-function a(e) {
+function o(e) {
   let t = null;
   for (let n = 0; n < e.length; n++) {
     let r = e[n];
@@ -30,20 +30,20 @@ function a(e) {
   }
 }
 
-function o(e, t) {
+function a(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : null;
   if (Array.isArray(t)) {
     let r = t.length,
       s = [];
-    for (let a = 0; a < r; a++) i(s, o(e, t[a], n));
-    return e.isSlate || a(s), s
+    for (let o = 0; o < r; o++) i(s, a(e, t[o], n));
+    return e.isSlate || o(s), s
   }
-  return (null != t.content && (t.content = o(e, t.content, t)), "inlineCode" === t.type && delete t.validationChildContent, "list" === t.type && (t.items = t.items.map(t => Array.isArray(t) ? o(e, t, null) : t)), null != n && t.type === n.type) ? t.content : t
+  return (null != t.content && (t.content = a(e, t.content, t)), "inlineCode" === t.type && delete t.validationChildContent, "list" === t.type && (t.items = t.items.map(t => Array.isArray(t) ? a(e, t, null) : t)), null != n && t.type === n.type) ? t.content : t
 }
 require.d(exports, {
   RA: () => l,
   Rp: () => c,
-  ge: () => o
+  ge: () => a
 }), require("./539854.js");
 let s = {};
 

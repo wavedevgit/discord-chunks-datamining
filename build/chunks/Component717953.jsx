@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk657707 = require("./657707.js"),
   Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
@@ -59,7 +59,7 @@ function O() {
 function v(e) {
   var t, n;
   let {
-    isDisabled: a,
+    isDisabled: o,
     onSelect: v
   } = e, I = (0, l.e7)([p.Z], () => {
     var e, t;
@@ -86,11 +86,11 @@ function v(e) {
   return (0, r.jsxs)("div", {
     className: y.badgeContainer,
     children: [(0, r.jsxs)(h.S4, {
-      onSelect: a ? true : j,
+      onSelect: o ? true : j,
       isSelected: false,
       showSelectionCircle: N,
       name: b.intl.string(E.default.KSBBpK),
-      className: o()(y.container, N && R, a && y.disabled),
+      className: a()(y.container, N && R, o && y.disabled),
       showBadge: false,
       showLockedBadge: false,
       style: w,

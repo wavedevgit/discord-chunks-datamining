@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk40966 = require("./40966.jsx"),
   Chunk580552 = require("./580552.js"),
@@ -21,7 +21,7 @@ function h(e) {
   let {
     userBio: t,
     className: n,
-    animateOnHover: a = false,
+    animateOnHover: o = false,
     isHovering: h = false,
     lineClamp: m = 6,
     setLineClamp: g = true,
@@ -29,7 +29,7 @@ function h(e) {
     userId: b
   } = e, y = (0, d.Dt)(), O = i.useMemo(() => (0, c.Z)(b) ? (0, r.jsx)(l.Z, {}) : null == t || "" === t ? null : (0, f.parseBioReact)(t), [b, t]);
   return null == O ? null : (0, r.jsxs)("section", {
-    className: o()(n, p.markup),
+    className: a()(n, p.markup),
     "aria-labelledby": y,
     children: [(0, r.jsx)(s.nn4, {
       children: (0, r.jsx)(s.H, {
@@ -42,7 +42,7 @@ function h(e) {
       color: true !== E ? E : true,
       children: (0, r.jsx)(u.G.Provider, {
         value: {
-          disableAnimations: a && !h,
+          disableAnimations: o && !h,
           disableInteractions: false
         },
         children: O

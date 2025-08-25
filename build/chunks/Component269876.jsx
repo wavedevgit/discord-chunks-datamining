@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk46973 = require("./46973.js"),
   Chunk846519 = require("./846519.js"),
@@ -25,7 +25,7 @@ var Chunk951288 = require("./951288.js"),
 let O = (0, Chunk313201.hQ)();
 
 function v() {
-  let [e, t] = Chunk647438.useState(false), [n, a] = Chunk647438.useState(false), {
+  let [e, t] = Chunk647438.useState(false), [n, o] = Chunk647438.useState(false), {
     threshold: v,
     autoThreshold: I
   } = (0, Chunk442837.cj)([Chunk131951.Z], () => ({
@@ -42,7 +42,7 @@ function v() {
   }));
 
   function C(e, n) {
-    t(e), a((n & h.Dg.VOICE) === h.Dg.VOICE)
+    t(e), o((n & h.Dg.VOICE) === h.Dg.VOICE)
   }
 
   function N(e, t) {
@@ -60,7 +60,7 @@ function v() {
     }
   }, []);
   let R = (0, Chunk951288.jsx)("section", {
-    className: o()(Chunk192294.inputSensitivityToggle, Chunk192294.manual),
+    className: a()(Chunk192294.inputSensitivityToggle, Chunk192294.manual),
     children: (0, Chunk951288.jsx)(Chunk481060.iRW, {
       initialValue: v + 100,
       onValueRender: e => "".concat((-((100 - e) * 1)).toFixed(0), "dB"),
@@ -73,9 +73,9 @@ function v() {
       },
       "aria-labelledby": O,
       children: (0, Chunk951288.jsxs)("div", {
-        className: o()(Chunk192294.sliderBar, Chunk192294.microphone, Chunk192294.inputSensitivityBar, Chunk89079.bar),
+        className: a()(Chunk192294.sliderBar, Chunk192294.microphone, Chunk192294.inputSensitivityBar, Chunk89079.bar),
         children: [(0, Chunk951288.jsx)("div", {
-          className: o()(Chunk192294.fill, Chunk192294.inputSensitivityBarFill),
+          className: a()(Chunk192294.fill, Chunk192294.inputSensitivityBarFill),
           style: {
             width: module + 100 + "%"
           }
@@ -90,7 +90,7 @@ function v() {
     children: [(0, Chunk951288.jsx)("div", {
       className: Chunk192294.inputSensitivitySlider,
       children: (0, Chunk951288.jsx)("div", {
-        className: o()(Chunk192294.inputSensitivityBar, Chunk192294.sliderBar, {
+        className: a()(Chunk192294.inputSensitivityBar, Chunk192294.sliderBar, {
           [Chunk192294.speaking]: require
         })
       })
@@ -105,7 +105,7 @@ function v() {
     className: Chunk192294.sensitivity,
     children: [S && (0, Chunk951288.jsx)(Chunk313201.FG, {
       children: e => (0, r.jsxs)("div", {
-        className: o()(b.horizontal, y.marginBottom4),
+        className: a()(b.horizontal, y.marginBottom4),
         children: [(0, r.jsx)(d.vwX, {
           tag: d.RB0.H3,
           className: y.marginReset,
@@ -121,7 +121,7 @@ function v() {
       })
     }), R, !A && (0, Chunk951288.jsx)(Chunk481060.R94, {
       type: Chunk481060.R94.Types.DESCRIPTION,
-      className: o()(Chunk192294.inputDisabledWarning, Chunk197571.marginBottom8),
+      className: a()(Chunk192294.inputDisabledWarning, Chunk197571.marginBottom8),
       children: Chunk388032.intl.format(Chunk388032.t["O13I+P"], {
         onEnableClick: () => Chunk846027.Z.enable(true)
       })

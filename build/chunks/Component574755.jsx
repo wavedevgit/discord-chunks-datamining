@@ -40,9 +40,9 @@ function T(e) {
     analyticsLocations: A
   } = (0, l.ZP)(), C = (0, _.Go)(), {
     viewerClipsEnabled: N
-  } = (0, a.cj)([p.Z], () => p.Z.getSettings()), R = (0, h.Z)(f.Z);
+  } = (0, o.cj)([p.Z], () => p.Z.getSettings()), R = (0, h.Z)(f.Z);
   return i.useEffect(() => {
-    (0, c.Q3)(o.z.CLIPS_SETTINGS_BETA_TAG)
+    (0, c.Q3)(a.z.CLIPS_SETTINGS_BETA_TAG)
   }), (0, r.jsxs)(l.Gt, {
     value: A,
     children: [(C || n) && (0, r.jsx)(s.hjN, {

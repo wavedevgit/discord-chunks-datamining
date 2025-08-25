@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk916616 = require("./916616.jsx"),
   Chunk981729 = require("./981729.jsx"),
   Chunk911969 = require("./911969.js"),
@@ -64,7 +64,7 @@ function E(e) {
     align: "center",
     targetElementRef: t,
     children: n => (0, r.jsx)("div", g(h({}, n), {
-      className: o()(e.className, _.notFoundPlaceholder, {
+      className: a()(e.className, _.notFoundPlaceholder, {
         [_.hiddenSpoilers]: e.hiddenSpoilers
       }),
       style: {
@@ -78,12 +78,12 @@ function E(e) {
       })
     }))
   });
-  let a = n.loadingState === c.f.LOADING ? d.zo9.LOADING : d.zo9.ERROR;
+  let o = n.loadingState === c.f.LOADING ? d.zo9.LOADING : d.zo9.ERROR;
   return (0, r.jsx)(s.E, {
-    className: o()(e.className, {
+    className: a()(e.className, {
       [_.hiddenSpoilers]: e.hiddenSpoilers
     }),
-    readyState: a,
+    readyState: o,
     src: "",
     width: e.placeholderWidth,
     height: e.placeholderHeight,

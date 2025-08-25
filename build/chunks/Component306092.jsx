@@ -18,7 +18,7 @@ function l(e) {
     hasSufficientOrbs: c,
     discountOfferAmount: u
   } = e;
-  return t.currency === o.pK.DISCORD_ORB ? (0, r.jsx)(a.Z, {
+  return t.currency === a.pK.DISCORD_ORB ? (0, r.jsx)(o.Z, {
     orbAmount: t.amount,
     className: c ? true : s.disabled
   }) : (0, r.jsx)(i.F, {
@@ -35,8 +35,8 @@ function c(e) {
     displayPrices: t,
     isPremiumUser: n,
     discount: i,
-    hasSufficientOrbs: a,
-    discountOfferAmount: o
+    hasSufficientOrbs: o,
+    discountOfferAmount: a
   } = e;
   return (0, r.jsx)("div", {
     className: s.priceLine,
@@ -44,8 +44,8 @@ function c(e) {
       price: e,
       isPremiumUser: n,
       discount: i,
-      hasSufficientOrbs: a,
-      discountOfferAmount: o
+      hasSufficientOrbs: o,
+      discountOfferAmount: a
     }, t))
   })
 }

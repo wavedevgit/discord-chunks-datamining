@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk317257 = require("./317257.js"),
   Chunk583478 = require("./583478.jsx"),
@@ -46,7 +46,7 @@ let p = () => (0, Chunk951288.jsx)("img", {
   g = (0, Chunk647438.forwardRef)(function(e, t) {
     let {
       id: n,
-      balance: a,
+      balance: o,
       balanceWidgetMode: f = l.b.DEFAULT,
       showNotificationBadge: g,
       onClick: E,
@@ -54,7 +54,7 @@ let p = () => (0, Chunk951288.jsx)("img", {
       disabled: y,
       isInModalOverlay: O,
       className: v
-    } = e, [I, T] = (0, i.useState)(false), S = (0, i.useMemo)(() => m(f, I), [f, I]), [A, C] = (0, i.useState)(false), [N, R] = (0, i.useState)(false), [P, w] = (0, i.useState)(.9 * u.D2), D = null === a;
+    } = e, [I, T] = (0, i.useState)(false), S = (0, i.useMemo)(() => m(f, I), [f, I]), [A, C] = (0, i.useState)(false), [N, R] = (0, i.useState)(false), [P, w] = (0, i.useState)(.9 * u.D2), D = null === o;
     (0, i.useEffect)(() => {
       D && !A && (C(true), setTimeout(() => {
         R(true)
@@ -63,24 +63,24 @@ let p = () => (0, Chunk951288.jsx)("img", {
       N && !D && C(false)
     }, [D, N]);
     let x = D || A,
-      L = A ? null : a,
-      [j, k] = (0, i.useState)(null),
-      M = (0, i.useRef)(null),
+      L = A ? null : o,
+      [j, M] = (0, i.useState)(null),
+      k = (0, i.useRef)(null),
       U = (0, i.useCallback)(() => {
-        M.current = null, k(null)
+        k.current = null, M(null)
       }, []),
       G = (0, i.useCallback)(e => {
-        let t = j === M.current;
-        e > 0 && ("earn" !== j || !t) && k("earn")
-      }, [k, j]),
+        let t = j === k.current;
+        e > 0 && ("earn" !== j || !t) && M("earn")
+      }, [M, j]),
       B = {
         currentAnimationType: j,
-        animationTypeRef: M,
+        animationTypeRef: k,
         onSetAnimationDurationMS: w
       };
     return (0, r.jsx)(s.P3F, {
       onClick: x ? true : E,
-      className: o()(d.clickable, {
+      className: a()(d.clickable, {
         [d.disabled]: y
       }),
       id: null != n ? n : h,
@@ -89,13 +89,13 @@ let p = () => (0, Chunk951288.jsx)("img", {
         onMouseEnter: y ? true : () => T(true),
         onMouseLeave: y ? true : () => T(false),
         ref: t,
-        className: o()(d.container, S, v, {
+        className: a()(d.container, S, v, {
           [d.containerLoading]: x,
           [d.inModalOverlay]: O,
           [d.disabled]: y
         }),
         children: [(0, r.jsx)("div", {
-          className: o()(d.orbsLottieContainer, x ? d.orbIconloading : true),
+          className: a()(d.orbsLottieContainer, x ? d.orbIconloading : true),
           children: (0, r.jsx)(u.ZP, _({}, B))
         }), (0, r.jsx)(c.Z, {
           value: L,

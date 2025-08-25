@@ -50,13 +50,13 @@ class m extends(r = Chunk442837.ZP.PersistedStore) {
     let {
       suggestedChannels: r,
       dismissedSuggestions: i,
-      channelOpensByChannelId: a
+      channelOpensByChannelId: o
     } = e;
     if (null != r)
       for (let e in r) t = new Set(r[e]), d[e] = true !== t ? t : new Set;
     if (null != i)
       for (let e in i) n = new Set(i[e]), f[e] = true !== n ? n : new Set;
-    _ = null != a ? a : {}
+    _ = null != o ? o : {}
   }
   getSuggestedChannelId(e) {
     return null

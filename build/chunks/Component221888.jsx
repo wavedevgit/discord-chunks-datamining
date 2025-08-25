@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   l = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
@@ -86,10 +86,10 @@ function P(e) {
     users: t,
     disableInteraction: n,
     guildId: i,
-    participantType: a,
+    participantType: o,
     channelId: s,
     handleUserContextMenu: l
-  } = e, c = R(a, t.length);
+  } = e, c = R(o, t.length);
   return (0, r.jsx)(d.VqE, {
     "aria-label": c,
     className: I.popoutWrapper,
@@ -105,7 +105,7 @@ function P(e) {
           guildId: null != i ? i : true,
           channelId: s,
           nick: b.ZP.getNickname(i, s, e),
-          className: o()(I.memberListItem, {
+          className: a()(I.memberListItem, {
             [I.popoutDisabled]: n
           }),
           textClassName: I.memberListItemText,
@@ -122,10 +122,10 @@ function w(e) {
     users: t,
     guildId: n,
     channelId: i,
-    maxVisibleUsers: a = 3,
+    maxVisibleUsers: o = 3,
     className: s,
     participantType: l
-  } = e, c = R(l, t.length), u = t.length < a ? t.map(e => (0, r.jsx)("div", {
+  } = e, c = R(l, t.length), u = t.length < o ? t.map(e => (0, r.jsx)("div", {
     className: I.viewersTooltipItem,
     children: b.ZP.getName(n, i, e)
   }, e.id)) : c;
@@ -133,7 +133,7 @@ function w(e) {
     text: u,
     "aria-label": c,
     children: (0, r.jsxs)("div", {
-      className: o()(I.viewers, s),
+      className: a()(I.viewers, s),
       children: [(0, r.jsx)(d.tEF, {
         size: "xs",
         color: "currentColor",
@@ -150,13 +150,13 @@ let D = [];
 function x(e) {
   let {
     channelId: t,
-    guildId: a,
+    guildId: o,
     participant: s,
     className: h,
     compact: b = false,
     disableInteraction: v = false,
     maxVisibleUsers: T = 3
-  } = e, A = i.useRef(null), R = (0, p.Z)(), [x, L] = i.useState(false), j = i.useRef(new u.sW(N, () => L(false))), k = (0, c.Wu)([m.Z, g.default], () => {
+  } = e, A = i.useRef(null), R = (0, p.Z)(), [x, L] = i.useState(false), j = i.useRef(new u.sW(N, () => L(false))), M = (0, c.Wu)([m.Z, g.default], () => {
     if (s.type === y.fO.STREAM) {
       let e = m.Z.getViewerIds(s.id);
       return e.length > 0 ? e.map(e => g.default.getUser(e)).filter(E.lm) : D
@@ -166,14 +166,14 @@ function x(e) {
   i.useEffect(() => {
     R && (j.current.cancel(), L(false))
   }, [R]);
-  let M = i.useCallback(() => {
+  let k = i.useCallback(() => {
       j.current.cancel(), L(true)
     }, []),
     U = i.useCallback(() => {
       j.current.delay()
     }, []),
     G = i.useCallback((e, t) => {
-      M(), (0, f.jW)(e, async () => {
+      k(), (0, f.jW)(e, async () => {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("69220")]).then(n.bind(n, 881351));
@@ -183,45 +183,45 @@ function x(e) {
       }, {
         onClose: U
       })
-    }, [U, M]);
-  if (0 === k.length) return null;
+    }, [U, k]);
+  if (0 === M.length) return null;
   if (b) return (0, r.jsx)(w, {
     maxVisibleUsers: T,
-    users: k,
-    guildId: a,
+    users: M,
+    guildId: o,
     channelId: t,
     className: h,
     participantType: s.type
   });
-  let B = l()(k).take(T).map(e => (0, r.jsx)(d.qEK, {
-    src: e.getAvatarURL(a, 24),
+  let B = l()(M).take(T).map(e => (0, r.jsx)(d.qEK, {
+    src: e.getAvatarURL(o, 24),
     "aria-label": e.username,
     size: d.EFr.SIZE_24,
     className: I.viewer
   }, e.id)).value();
-  return k.length > T && (B[B.length - 1] = (0, r.jsxs)("div", {
+  return M.length > T && (B[B.length - 1] = (0, r.jsxs)("div", {
     className: I.overflow,
-    children: ["+", k.length - T + 1]
+    children: ["+", M.length - T + 1]
   }, "overflow")), (0, r.jsx)(_.Z, {
     section: O.jXE.STREAM_VIEWER_POPOUT,
     children: (0, r.jsx)("div", {
-      onMouseEnter: M,
+      onMouseEnter: k,
       onMouseLeave: U,
       children: (0, r.jsx)(d.yRy, {
         targetElementRef: A,
         renderPopout: () => (0, r.jsx)(P, {
           participantType: s.type,
           handleUserContextMenu: G,
-          guildId: a,
+          guildId: o,
           channelId: t,
-          users: k,
+          users: M,
           disableInteraction: v
         }),
         shouldShow: x && !R,
         position: "top",
         children: () => (0, r.jsx)("div", {
           ref: A,
-          className: o()(I.viewers, h),
+          className: a()(I.viewers, h),
           children: B
         })
       })

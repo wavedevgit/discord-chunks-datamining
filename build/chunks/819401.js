@@ -8,9 +8,9 @@ try {
 } catch (e) {
   if (!module || "object" != typeof module || !("code" in module) || "ERR_PROTO_ACCESS" !== module.code) throw module
 }
-var o = !!r && Chunk566817 && Chunk566817(Object.prototype, "__proto__"),
+var a = !!r && Chunk566817 && Chunk566817(Object.prototype, "__proto__"),
   s = Object,
   l = s.getPrototypeOf;
-module.exports = o && "function" == typeof o.get ? Chunk992555([o.get]) : "function" == typeof l && function(e) {
+module.exports = a && "function" == typeof a.get ? Chunk992555([a.get]) : "function" == typeof l && function(e) {
   return l(null == e ? e : s(e))
 }

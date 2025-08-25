@@ -149,7 +149,7 @@ var j = function e(t) {
     }
     return x[t] = n, n
   },
-  k = {
+  M = {
     __proto__: null,
     "%ArrayBufferPrototype%": ["ArrayBuffer", "prototype"],
     "%ArrayPrototype%": ["Array", "prototype"],
@@ -224,7 +224,7 @@ var j = function e(t) {
   },
   K = function(e, t) {
     var n, r = e;
-    if (U(k, r) && (r = "%" + (n = k[r])[0] + "%"), U(x, r)) {
+    if (U(M, r) && (r = "%" + (n = M[r])[0] + "%"), U(x, r)) {
       var i = x[r];
       if (i === w && (i = j(r)), true === i && !t) throw new u("intrinsic " + e + " exists, but is not available. Please file an issue!");
       return {
@@ -242,8 +242,8 @@ module.exports = function(e, t) {
   var n = W(e),
     r = n.length > 0 ? n[0] : "",
     i = K("%" + r + "%", t),
-    a = i.name,
-    o = i.value,
+    o = i.name,
+    a = i.value,
     s = false,
     l = i.alias;
   l && (r = l[0], B(n, G([0, 1], l)));
@@ -252,18 +252,18 @@ module.exports = function(e, t) {
       p = F(_, 0, 1),
       h = F(_, false);
     if (('"' === p || "'" === p || "`" === p || '"' === h || "'" === h || "`" === h) && p !== h) throw new c("property names with quotes must have matching quotes");
-    if ("constructor" !== _ && f || (s = true), r += "." + _, U(x, a = "%" + r + "%")) o = x[a];
-    else if (null != o) {
-      if (!(_ in o)) {
+    if ("constructor" !== _ && f || (s = true), r += "." + _, U(x, o = "%" + r + "%")) a = x[o];
+    else if (null != a) {
+      if (!(_ in a)) {
         if (!t) throw new u("base intrinsic for " + e + " exists, but the property is not available.");
         return
       }
       if (O && d + 1 >= n.length) {
-        var m = O(o, _);
-        o = (f = !!m) && "get" in m && !("originalValue" in m.get) ? m.get : o[_]
-      } else f = U(o, _), o = o[_];
-      f && !s && (x[a] = o)
+        var m = O(a, _);
+        a = (f = !!m) && "get" in m && !("originalValue" in m.get) ? m.get : a[_]
+      } else f = U(a, _), a = a[_];
+      f && !s && (x[o] = a)
     }
   }
-  return o
+  return a
 }

@@ -35,7 +35,7 @@ class p extends(r = Chunk647438.PureComponent) {
       max: t,
       renderUser: n = this.defaultRenderUser,
       renderMoreUsers: r
-    } = this.props, i = [], a = module.length === exports ? module.length : exports - 1, o = 0;
+    } = this.props, i = [], o = module.length === exports ? module.length : exports - 1, a = 0;
     for (; Chunk120356 < Chunk647438 && Chunk120356 < module.length;) {
       let t = Chunk120356 === module.length - 1;
       Chunk951288.push(require(module[Chunk120356] || null, exports ? null : Chunk322991.avatarMasked, "user-".concat(Chunk120356), exports)), Chunk120356++
@@ -72,19 +72,19 @@ class p extends(r = Chunk647438.PureComponent) {
   constructor(...e) {
     super(...e), f(this, "_ref", true), f(this, "defaultRenderUser", (e, t, n, r) => {
       let {
-        onClick: a,
-        size: o,
+        onClick: o,
+        size: a,
         guildId: f
       } = this.props, _ = e instanceof c.Z ? e : null != e ? e.user : null;
       return null == _ ? (0, i.jsx)("div", {
         className: s()(u.emptyUser, t)
       }, n) : (0, i.jsx)(l.qEK, {
         tabIndex: 0,
-        src: _.getAvatarURL(f, (0, l.pxk)(o)),
-        size: o,
+        src: _.getAvatarURL(f, (0, l.pxk)(a)),
+        size: a,
         "aria-label": _.username,
         className: s()(t, d.cursorPointer, u.avatarSize),
-        onClick: e => null != a ? a(e, _, this._ref) : null
+        onClick: e => null != o ? o(e, _, this._ref) : null
       }, _.id)
     })
   }

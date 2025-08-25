@@ -21,7 +21,7 @@ function d() {
     children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
       note: Chunk388032.intl.string(Chunk388032.t.WNbX4O),
       onChange: e => {
-        s.qF.updateSetting(e), o.default.track(c.rMx.UPDATE_USER_SETTINGS_LOCAL, {
+        s.qF.updateSetting(e), a.default.track(c.rMx.UPDATE_USER_SETTINGS_LOCAL, {
           always_preview_video: e
         })
       },

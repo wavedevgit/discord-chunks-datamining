@@ -6,14 +6,14 @@ require.d(exports, {
 });
 var Chunk647438 = require("./647438.js"),
   Chunk820282 = require("./820282.js"),
-  a = require.n(Chunk820282),
+  o = require.n(Chunk820282),
   Chunk525938 = require("./525938.js"),
   Chunk755976 = require("./755976.js");
 
 function l(e) {
   var t = e.children,
     n = e.innerRef,
-    i = r.useContext(o.mq),
+    i = r.useContext(a.mq),
     l = r.useCallback(function(e) {
       (0, s.k$)(n, e), (0, s.DL)(i, e)
     }, [n, i]);
@@ -22,7 +22,7 @@ function l(e) {
       return (0, s.k$)(n, null)
     }
   }, []), r.useEffect(function() {
-    a()(!!i, "`Reference` should not be used outside of a `Manager` component.")
+    o()(!!i, "`Reference` should not be used outside of a `Manager` component.")
   }, [i]), (0, s.$p)(t)({
     ref: l
   })

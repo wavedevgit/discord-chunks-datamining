@@ -22,8 +22,8 @@ async function c(e) {
   });
   try {
     let e;
-    (0, o.g)() && (e = await (0, i.a_)(t));
-    let n = a.ZP.getCurrentEmbeddedActivity();
+    (0, a.g)() && (e = await (0, i.a_)(t));
+    let n = o.ZP.getCurrentEmbeddedActivity();
     null != n && (0, i.mW)({
       location: n.location,
       applicationId: n.applicationId,

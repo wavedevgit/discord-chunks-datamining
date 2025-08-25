@@ -43,7 +43,7 @@ function u() {
             id: Number(t),
             label: "Variant ".concat(t),
             shortLabel: "Variant ".concat(t),
-            type: a.qK.UNSPECIFIED
+            type: o.qK.UNSPECIFIED
           }
         })
       });

@@ -6,7 +6,7 @@ require.d(exports, {
   AB: () => B,
   JS: () => U,
   ZP: () => W,
-  hH: () => k,
+  hH: () => M,
   kO: () => H,
   oG: () => Y,
   v_: () => G,
@@ -71,17 +71,17 @@ function j(e) {
   return t
 }
 
-function k(e) {
+function M(e) {
   var t;
   if (null == e) return null;
   let n = m.Z.getGuild(e);
   if (null == n) return null;
   let r = h.Z.getNumRoles(n.id),
     i = u.default.getId(),
-    a = p.ZP.getMember(e, i),
-    o = f.ZP.getChannels(e),
-    s = o[f.sH].length,
-    l = o[f.Zb].length,
+    o = p.ZP.getMember(e, i),
+    a = f.ZP.getChannels(e),
+    s = a[f.sH].length,
+    l = a[f.Zb].length,
     c = A.Z.getVoiceStates(e);
   return {
     guild_id: n.id,
@@ -90,15 +90,15 @@ function k(e) {
     guild_num_text_channels: s,
     guild_num_voice_channels: l,
     guild_num_roles: r,
-    guild_member_num_roles: null != a ? a.roles.length : 0,
+    guild_member_num_roles: null != o ? o.roles.length : 0,
     guild_member_perms: String(null != (t = E.Z.getGuildPermissions(n)) ? t : R.Hn),
     guild_is_vip: n.features.has(w.oNc.VIP_REGIONS),
-    is_member: null != a,
+    is_member: null != o,
     num_voice_channels_active: j(c)
   }
 }
 
-function M(e, t) {
+function k(e, t) {
   return {
     channel_static_route: t,
     channel_hidden: false
@@ -120,7 +120,7 @@ function G(e) {
     let t = e => {
       if (null == e) returnfalse;
       let t = e.permissionOverwrites[r];
-      return null != t && a.e$(t.deny, w.Plq.VIEW_CHANNEL)
+      return null != t && o.e$(t.deny, w.Plq.VIEW_CHANNEL)
     };
     n = t(c.Ec.has(e.type) && null != e.parent_id ? d.Z.getChannel(e.parent_id) : e)
   }
@@ -158,9 +158,9 @@ function F(e) {
   if (C.default.isThrottled(e)) return;
   let r = !("location" in t) || t.location !== w.Sbl.GUILD_CREATE_INVITE_SUGGESTION,
     i = "guild_id" in t ? t.guild_id : r ? I.Z.getGuildId() : null,
-    a = "channel_id" in t ? t.channel_id : r ? v.Z.getChannelId(i) : null,
-    o = d.Z.getChannel(a),
-    s = L({}, t, k(Z(o, i)), null != i && null != a && (0, D.AB)(a) ? M(i, a) : G(o));
+    o = "channel_id" in t ? t.channel_id : r ? v.Z.getChannelId(i) : null,
+    a = d.Z.getChannel(o),
+    s = L({}, t, M(Z(a, i)), null != i && null != o && (0, D.AB)(o) ? k(i, o) : G(a));
   C.default.track(e, s, {
     flush: n
   })
@@ -192,7 +192,7 @@ function V(e) {
     channel_was_unread: r.unread,
     channel_mention_count: r.mentionCount,
     channel_is_muted: T.ZP.isChannelMuted(t.guild_id, t.id),
-    channel_is_nsfw: (0, o.aC)(t),
+    channel_is_nsfw: (0, a.aC)(t),
     channel_resolved_unread_setting: T.ZP.resolveUnreadSetting(t),
     channel_preset: (0, l.gs)(T.ZP.resolveUnreadSetting(t), T.ZP.resolvedMessageNotifications(t)),
     guild_id: t.guild_id,

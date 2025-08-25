@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk202841 = require("./202841.js"),
   Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
@@ -73,7 +73,7 @@ let T = 20,
     return (0, Chunk951288.jsxs)("div", {
       className: Chunk345857.premiumTooltipContainer,
       children: [(0, Chunk951288.jsx)(Chunk481060.Fmz, {
-        className: o()(Chunk345857.premiumUnlockAnimation, {
+        className: a()(Chunk345857.premiumUnlockAnimation, {
           [Chunk345857.reducedMotion]: module
         }),
         loop: false,
@@ -99,13 +99,13 @@ let P = function(e) {
   let {
     tabIndex: t,
     className: n,
-    renderButtonContents: a,
+    renderButtonContents: o,
     active: y,
     onClick: v,
     "aria-controls": T,
     focusProps: S,
     ref: P
-  } = e, [w, D] = i.useState(false), [x, L] = i.useState(50), j = w || y, k = (0, h.l)(b, "emojiButton", j ? "Hovered" : "Normal"), M = R(x), U = i.useCallback(() => {
+  } = e, [w, D] = i.useState(false), [x, L] = i.useState(50), j = w || y, M = (0, h.l)(b, "emojiButton", j ? "Hovered" : "Normal"), k = R(x), U = i.useCallback(() => {
     if (j) return;
     let e = Math.floor(Math.random() * A);
     D(true), L(e), (0, _.x)(g.qR.EmojiButtonMouseEntered)
@@ -123,7 +123,7 @@ let P = function(e) {
     children: e => (0, r.jsx)(u.P3F, {
       innerRef: z,
       tabIndex: t,
-      className: o()(k, n),
+      className: a()(M, n),
       onMouseEnter: () => {
         var t;
         U(), null == (t = e.onMouseEnter) || t.call(e)
@@ -144,7 +144,7 @@ let P = function(e) {
       "aria-haspopup": "dialog",
       focusProps: S,
       onContextMenu: e.onContextMenu,
-      children: null != a ? a() : (0, r.jsx)(u.AMe, {
+      children: null != o ? o() : (0, r.jsx)(u.AMe, {
         config: C,
         to: {
           value: +!!j
@@ -155,13 +155,13 @@ let P = function(e) {
           } = e;
           return (0, r.jsxs)(s.animated.div, {
             className: b.spriteContainer,
-            style: I(O({}, M), {
+            style: I(O({}, k), {
               transform: t.to([0, 1], [1, 1.14]).to(e => "scale(".concat(e, ")"))
             }),
             children: [(0, r.jsx)("div", {
-              className: o()(b.sprite, b.spriteColored, j ? b.active : b.inactive)
+              className: a()(b.sprite, b.spriteColored, j ? b.active : b.inactive)
             }), (0, r.jsx)("div", {
-              className: o()(b.sprite, H ? b.spritePremiumColored : b.spriteGreyscale, j ? b.inactive : b.active, {
+              className: a()(b.sprite, H ? b.spritePremiumColored : b.spriteGreyscale, j ? b.inactive : b.active, {
                 [b.reducedMotion]: W
               })
             })]

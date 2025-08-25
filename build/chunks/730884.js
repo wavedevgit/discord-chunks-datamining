@@ -13,7 +13,7 @@ var Chunk840475 = require("./840475.js"),
   f = Chunk46015("".slice);
 d("fill", function(e) {
   var t = arguments.length;
-  return u(this), s(i, this, "Big" === f(o(this), 0, 3) ? a(e) : +e, t > 1 ? arguments[1] : true, t > 2 ? arguments[2] : true)
+  return u(this), s(i, this, "Big" === f(a(this), 0, 3) ? o(e) : +e, t > 1 ? arguments[1] : true, t > 2 ? arguments[2] : true)
 }, Chunk621523(function() {
   var e = 0;
   return new Int8Array(2).fill({

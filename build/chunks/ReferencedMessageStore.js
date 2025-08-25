@@ -6,7 +6,7 @@ require.d(exports, {
   Z: () => U
 }), require("./388685.js"), require("./539854.js");
 var r, Chunk31775 = require("./31775.js"),
-  a = require.n(Chunk31775),
+  o = require.n(Chunk31775),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk247206 = require("./247206.js"),
@@ -47,7 +47,7 @@ class g {
     return this._cachedMessageIds
   }
   constructor() {
-    _(this, "_cachedMessages", new(a())({
+    _(this, "_cachedMessages", new(o())({
       max: 100,
       dispose: (e, t) => this.handleCacheDisposed(e, t)
     })), _(this, "_cachedMessageIds", new Set)
@@ -240,7 +240,7 @@ function j(e) {
   return null != t && O(t, e => y(e))
 }
 
-function k(e) {
+function M(e) {
   let {
     threads: t
   } = e;
@@ -251,7 +251,7 @@ function k(e) {
     return null != t && y(t)
   })
 }
-class M extends(r = Chunk442837.ZP.Store) {
+class k extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk375954.Z, Chunk592125.Z)
   }
@@ -268,8 +268,8 @@ class M extends(r = Chunk442837.ZP.Store) {
     return null != e && (t = b.getCachedMessageIdsForChannel(e)), null != t ? t : m
   }
 }
-_(M, "displayName", "ReferencedMessageStore");
-let U = new M(Chunk570140.Z, {
+_(k, "displayName", "ReferencedMessageStore");
+let U = new k(Chunk570140.Z, {
   CACHE_LOADED: I,
   LOCAL_MESSAGES_LOADED: v,
   LOAD_MESSAGES_SUCCESS: v,
@@ -279,7 +279,7 @@ let U = new M(Chunk570140.Z, {
   LOAD_THREADS_SUCCESS: j,
   LOAD_ARCHIVED_THREADS_SUCCESS: j,
   MESSAGE_EXPLICIT_CONTENT_SCAN_TIMEOUT: A,
-  LOAD_FORUM_POSTS: k,
+  LOAD_FORUM_POSTS: M,
   MESSAGE_CREATE: S,
   MESSAGE_UPDATE: C,
   MESSAGE_DELETE: w,

@@ -13,7 +13,7 @@ let s = {
     let {
       location: t
     } = e;
-    (0, a.nZ)(t) && r.Z.dispatch({
+    (0, o.nZ)(t) && r.Z.dispatch({
       type: "BLOCK_USER_SHOW_FEEDBACK"
     })
   },
@@ -22,7 +22,7 @@ let s = {
       location: t,
       visibleContent: n
     } = e;
-    (0, i.pZ)(t) && null != n && o.os.includes(n) && r.Z.dispatch({
+    (0, i.pZ)(t) && null != n && a.os.includes(n) && r.Z.dispatch({
       type: "AGE_VERIFICATION_SHOW_FEEDBACK",
       dismissibleContent: n
     })

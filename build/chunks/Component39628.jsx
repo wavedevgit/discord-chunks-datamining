@@ -48,8 +48,8 @@ function p(e) {
   let {
     time: t,
     padLargestUnit: n
-  } = e, r = Math.floor(t) % 60, i = Math.floor(t / 60) % 60, a = Math.floor(t / 3600);
-  return 0 === a ? n ? "".concat(_(i), ":").concat(_(r)) : "".concat(i, ":").concat(_(r)) : n ? "".concat(_(a), ":").concat(_(i), ":").concat(_(r)) : "".concat(a, ":").concat(_(i), ":").concat(_(r))
+  } = e, r = Math.floor(t) % 60, i = Math.floor(t / 60) % 60, o = Math.floor(t / 3600);
+  return 0 === o ? n ? "".concat(_(i), ":").concat(_(r)) : "".concat(i, ":").concat(_(r)) : n ? "".concat(_(o), ":").concat(_(i), ":").concat(_(r)) : "".concat(o, ":").concat(_(i), ":").concat(_(r))
 }
 class h extends(r = Chunk647438.PureComponent) {
   componentDidMount() {
@@ -68,9 +68,9 @@ class h extends(r = Chunk647438.PureComponent) {
       end: t,
       className: n,
       themed: r,
-      singleLine: a = false
+      singleLine: o = false
     } = this.props, {
-      now: o
+      now: a
     } = this.state, l = (exports - module) / 1e3, d = Math.max(Math.min((Chunk120356 - module) / 1e3, Chunk846519), 0);
     return Chunk647438 ? (0, Chunk951288.jsxs)("div", {
       className: s()(require, {

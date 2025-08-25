@@ -2,8 +2,8 @@
 /** chunk id: 436952, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  FN: () => a,
-  ld: () => o,
+  FN: () => o,
+  ld: () => a,
   qM: () => u,
   rr: () => l,
   sQ: () => c,
@@ -11,10 +11,10 @@ require.d(exports, {
 });
 var Chunk818083 = require("./818083.js"),
   Chunk987338 = require("./987338.js"),
-  a = function(e) {
+  o = function(e) {
     return e.CONTEXT_MENU = "context_menu", e.TOOLBAR = "toolbar", e
   }({});
-let o = (0, Chunk818083.B)({
+let a = (0, Chunk818083.B)({
   id: "2025-03_dm_chat_wallpapers_setter",
   kind: "user",
   label: "DM Chat Wallpapers",
@@ -43,7 +43,7 @@ function s(e) {
   let {
     location: t
   } = e;
-  return o.useExperiment({
+  return a.useExperiment({
     location: t
   })
 }

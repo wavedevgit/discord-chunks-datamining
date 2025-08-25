@@ -29,20 +29,20 @@ function _(e) {
   let {
     levelUpData: t
   } = e, n = i.useRef(null), s = i.useCallback(() => {
-    o.Z.setState({
+    a.Z.setState({
       shouldRenderTenureLevelUp: false
     })
   }, []);
-  return i.useEffect(() => s, [s]), (0, r.jsx)(a.EqS, {
+  return i.useEffect(() => s, [s]), (0, r.jsx)(o.EqS, {
     containerRef: n,
     children: (0, r.jsxs)("div", {
       className: u.wrapper,
-      children: [(0, r.jsx)(a.M0o, {
+      children: [(0, r.jsx)(o.M0o, {
         className: u.closeButton,
         tooltip: c.intl.string(c.t.cpT0Cg),
-        color: a.YX$.SECONDARY,
-        size: a.tT7.SIZE_24,
-        icon: (0, r.jsx)(a.Dio, {
+        color: o.YX$.SECONDARY,
+        size: o.tT7.SIZE_24,
+        icon: (0, r.jsx)(o.Dio, {
           size: "xs",
           color: "currentColor"
         }),

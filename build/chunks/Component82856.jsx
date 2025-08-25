@@ -59,8 +59,8 @@ function g(e, t) {
   if (null == e) return {};
   var n, r, i = E(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -68,8 +68,8 @@ function g(e, t) {
 function E(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -91,7 +91,7 @@ function y(e) {
   } = e, s = g(e, ["pillRef", "anchorPillType"]);
   let {
     balancePillOverlay: c
-  } = (0, a.cj)([u.Z], () => ({
+  } = (0, o.cj)([u.Z], () => ({
     balancePillOverlay: u.Z.balancePillOverlay
   })), _ = (0, r.jsx)(d.A4, p({
     ref: t
@@ -101,14 +101,14 @@ function y(e) {
   })), {
     isAnyLayerOpen: E,
     isLastLayerShopFullScreen: b
-  } = (0, a.cj)([l.Z], () => {
+  } = (0, o.cj)([l.Z], () => {
     let e = l.Z.getLayers();
     return {
       isLastLayerShopFullScreen: e.length > 0 && e[e.length - 1] === f.S9g.COLLECTIBLES_SHOP,
       isAnyLayerOpen: l.Z.hasLayers()
     }
   }), y = i.useMemo(() => !!c && (!E || b && "SHOP_FULLSCREEN" === n), [c, E, b, n]), O = null != t.current ? t.current.offsetHeight : 36;
-  return (0, r.jsx)(o.yRy, {
+  return (0, r.jsx)(a.yRy, {
     fixed: true,
     autoInvert: false,
     renderPopout: () => h,
@@ -116,7 +116,7 @@ function y(e) {
     align: "right",
     shouldShow: y,
     spacing: -O,
-    animation: o.yRy.Animation.NONE,
+    animation: a.yRy.Animation.NONE,
     targetElementRef: t,
     positionKey: "".concat(s.balance, "-").concat(c),
     children: () => _

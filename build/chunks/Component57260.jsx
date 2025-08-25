@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk202841 = require("./202841.js"),
   Chunk481060 = require("./481060.js"),
   Chunk393238 = require("./393238.js"),
@@ -18,7 +18,7 @@ function f(e) {
   let {
     children: t,
     className: n,
-    collapsibleContent: a,
+    collapsibleContent: o,
     isExpanded: f
   } = e, [_, p] = i.useState(false), [h, m] = i.useState(true), [g, E] = i.useState(false), b = null != f ? f : _, {
     ref: y,
@@ -39,17 +39,17 @@ function f(e) {
     }, d);
     return () => clearTimeout(e)
   }, []), (0, r.jsx)("div", {
-    className: o()(u.collapseable, {
+    className: a()(u.collapseable, {
       [u.toggled]: b
     }, n),
     children: (0, r.jsxs)(s.animated.div, {
-      className: o()(u.contentExpandContainer, {
+      className: a()(u.contentExpandContainer, {
         [u.showOverflow]: b && g
       }),
       style: T,
       children: [(0, r.jsx)("div", {
         ref: v,
-        className: o()(u.header, {
+        className: a()(u.header, {
           [u.toggled]: b
         }),
         children: t({
@@ -57,7 +57,7 @@ function f(e) {
         })
       }), (0, r.jsx)("div", {
         ref: y,
-        children: a
+        children: o
       })]
     })
   })

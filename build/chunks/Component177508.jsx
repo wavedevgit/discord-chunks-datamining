@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   Chunk971809 = require("./971809.js"),
   Chunk442837 = require("./442837.js"),
@@ -94,8 +94,8 @@ function $(e, t) {
   if (null == e) return {};
   var n, r, i = ee(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -103,8 +103,8 @@ function $(e, t) {
 function ee(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -150,8 +150,8 @@ function er() {
   })
 }
 let ei = ["neutral", "blue_new", "blurple", "green_new", "red_new", "teal_new", "yellow_new", "orange_new", "pink", "purple"],
-  ea = ["background-surface-highest", "background-surface-higher", "background-surface-high", "background-base-low", "background-base-lower", "background-base-lowest"],
-  eo = ["background-gradient-lowest", "background-gradient-lower", "background-gradient-low", "background-gradient-high", "background-gradient-higher", "background-gradient-highest"],
+  eo = ["background-surface-highest", "background-surface-higher", "background-surface-high", "background-base-low", "background-base-lower", "background-base-lowest"],
+  ea = ["background-gradient-lowest", "background-gradient-lower", "background-gradient-low", "background-gradient-high", "background-gradient-higher", "background-gradient-highest"],
   es = ["", "background-mod-subtle", "background-mod-normal", "background-mod-strong"],
   el = ["critical", "warning", "positive", "info"],
   ec = ["text-default", "text-primary", "text-secondary", "text-tertiary", "text-feedback-critical", "text-feedback-warning", "text-feedback-positive", "text-feedback-info", "premium-nitro-pink-text"];
@@ -163,7 +163,7 @@ function eu() {
       variant: "heading-xl/semibold",
       className: Chunk726927.heading,
       children: "Background Colors"
-    }), ea.map(e => (0, r.jsxs)("div", {
+    }), eo.map(e => (0, r.jsxs)("div", {
       className: F.palette,
       style: {
         backgroundColor: "var(--".concat(e, ")"),
@@ -247,7 +247,7 @@ function eu() {
           gridTemplateColumns: "repeat(6, 1fr)",
           transform: "translateZ(0)"
         },
-        children: eo.map(e => (0, r.jsx)("div", {
+        children: ea.map(e => (0, r.jsx)("div", {
           className: F.palette,
           style: {
             background: "var(--".concat(e, ")"),
@@ -333,20 +333,20 @@ function ef(e) {
   var {
     component: t,
     showLoadingAnimation: n
-  } = e, a = $(e, ["component", "showLoadingAnimation"]);
-  let [o, s] = i.useState(false), l = i.useRef(false);
-  return i.useEffect(() => (o && n && (l.current = setTimeout(() => {
+  } = e, o = $(e, ["component", "showLoadingAnimation"]);
+  let [a, s] = i.useState(false), l = i.useRef(false);
+  return i.useEffect(() => (a && n && (l.current = setTimeout(() => {
     s(false)
   }, 3e3)), () => {
     l.current >= 0 && clearTimeout(l.current)
-  }), [o, n]), (0, r.jsx)(t, J(X({}, a), {
-    loading: n ? o : true,
-    onClick: () => s(!o)
+  }), [a, n]), (0, r.jsx)(t, J(X({}, o), {
+    loading: n ? a : true,
+    onClick: () => s(!a)
   }))
 }
 
 function e_() {
-  let [e, t] = Chunk647438.useState("md"), [n, a] = Chunk647438.useState("start"), [o, l] = Chunk647438.useState(true), c = ["primary", "secondary", "critical-primary", "critical-secondary", "active", "overlay-primary", "overlay-secondary"], u = [...Chunk442837, "expressive"].map(t => (0, r.jsxs)(r.Fragment, {
+  let [e, t] = Chunk647438.useState("md"), [n, o] = Chunk647438.useState("start"), [a, l] = Chunk647438.useState(true), c = ["primary", "secondary", "critical-primary", "critical-secondary", "active", "overlay-primary", "overlay-secondary"], u = [...Chunk442837, "expressive"].map(t => (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(ef, {
       component: d.z,
       variant: t,
@@ -354,7 +354,7 @@ function e_() {
       size: e,
       icon: "none" !== n ? C.gw7 : true,
       iconPosition: n,
-      showLoadingAnimation: o
+      showLoadingAnimation: a
     }, t + e), (0, r.jsx)(ef, {
       component: d.z,
       variant: t,
@@ -362,7 +362,7 @@ function e_() {
       size: e,
       icon: "none" !== n ? C.gw7 : true,
       iconPosition: n,
-      showLoadingAnimation: o,
+      showLoadingAnimation: a,
       disabled: true
     }, t + e + "disabled")]
   })), p = [...Chunk442837, "icon-only"].map(t => (0, r.jsx)(ef, {
@@ -371,7 +371,7 @@ function e_() {
     icon: C.gw7,
     size: e,
     "aria-label": "".concat(t, " ").concat(e),
-    showLoadingAnimation: o
+    showLoadingAnimation: a
   }, t + e)), m = ["primary", "secondary", "always-white", "critical"].map(e => (0, r.jsx)(i.Fragment, {
     children: (0, r.jsx)(h.A, {
       variant: e,
@@ -410,7 +410,7 @@ function e_() {
             let {
               value: t
             } = e;
-            return a(t)
+            return o(t)
           },
           options: [{
             value: "none",
@@ -440,7 +440,7 @@ function e_() {
             value: "on",
             name: "On"
           }],
-          value: o ? "on" : "off"
+          value: a ? "on" : "off"
         })
       })]
     }), (0, Chunk951288.jsxs)("div", {
@@ -472,12 +472,12 @@ function e_() {
               component: Chunk680018.z,
               variant: "secondary",
               text: "Cancel",
-              showLoadingAnimation: o
+              showLoadingAnimation: a
             }), (0, Chunk951288.jsx)(ef, {
               component: Chunk680018.z,
               variant: "primary",
               text: "Submit",
-              showLoadingAnimation: o
+              showLoadingAnimation: a
             })]
           }), (0, Chunk951288.jsxs)(Chunk374415.h, {
             size: module,
@@ -485,13 +485,13 @@ function e_() {
               component: Chunk680018.z,
               variant: "primary",
               text: "Submit",
-              showLoadingAnimation: o
+              showLoadingAnimation: a
             }), (0, Chunk951288.jsx)(ef, {
               component: Chunk861066.h,
               variant: "secondary",
               icon: Chunk481060.gw7,
               "aria-label": "Clyde",
-              showLoadingAnimation: o
+              showLoadingAnimation: a
             })]
           })]
         }), (0, Chunk951288.jsx)(Chunk481060.Kqy, {
@@ -503,12 +503,12 @@ function e_() {
               component: Chunk680018.z,
               variant: "secondary",
               text: "Cancel",
-              showLoadingAnimation: o
+              showLoadingAnimation: a
             }), (0, Chunk951288.jsx)(ef, {
               component: Chunk680018.z,
               variant: "primary",
               text: "Submit",
-              showLoadingAnimation: o
+              showLoadingAnimation: a
             })]
           })
         })]
@@ -527,12 +527,12 @@ function e_() {
               component: Chunk680018.z,
               variant: "secondary",
               text: "Cancel",
-              showLoadingAnimation: o
+              showLoadingAnimation: a
             }), (0, Chunk951288.jsx)(ef, {
               component: Chunk680018.z,
               variant: "primary",
               text: "Submit",
-              showLoadingAnimation: o
+              showLoadingAnimation: a
             })]
           })
         }), (0, Chunk951288.jsx)(Chunk481060.Kqy, {
@@ -545,12 +545,12 @@ function e_() {
               component: Chunk680018.z,
               variant: "secondary",
               text: "Cancel",
-              showLoadingAnimation: o
+              showLoadingAnimation: a
             }), (0, Chunk951288.jsx)(ef, {
               component: Chunk680018.z,
               variant: "primary",
               text: "Submit",
-              showLoadingAnimation: o
+              showLoadingAnimation: a
             })]
           })
         })]
@@ -564,7 +564,7 @@ function e_() {
 function ep(e) {
   let {
     buttonSize: t
-  } = e, [n, a] = i.useState(false);
+  } = e, [n, o] = i.useState(false);
   return (0, r.jsxs)(C.Kqy, {
     gap: 16,
     children: [(0, r.jsx)(C.X6q, {
@@ -579,7 +579,7 @@ function ep(e) {
         children: (0, r.jsx)(p.J, {
           size: t,
           playing: n,
-          onClick: () => a(!n)
+          onClick: () => o(!n)
         })
       }, e))
     })]
@@ -590,7 +590,7 @@ function eh(e) {
   let {
     children: t,
     title: n
-  } = e, [a, s] = i.useState(false);
+  } = e, [o, s] = i.useState(false);
   return (0, r.jsxs)(C.Kqy, {
     direction: "vertical",
     gap: 0,
@@ -605,15 +605,15 @@ function eh(e) {
         variant: "heading-lg/semibold",
         children: n
       }), (0, r.jsx)(m.Q, {
-        icon: a ? C.hic : C.sXD,
-        onClick: () => s(!a),
-        pressed: a,
+        icon: o ? C.hic : C.sXD,
+        onClick: () => s(!o),
+        pressed: o,
         "aria-label": "Show controls"
       })]
     }), (0, r.jsx)(C.Kqy, {
       gap: 16,
-      className: o()(F.floatingControlsContent, {
-        [F.floatingControlsContentHidden]: !a
+      className: a()(F.floatingControlsContent, {
+        [F.floatingControlsContentHidden]: !o
       }),
       children: t
     })]
@@ -651,7 +651,7 @@ function em() {
 }
 
 function eg() {
-  let [e, t] = Chunk647438.useState(1), [n, a] = Chunk647438.useState(false), [o, s] = Chunk647438.useState(5), [l, c] = Chunk647438.useState(false), u = Chunk647438.useRef(null);
+  let [e, t] = Chunk647438.useState(1), [n, o] = Chunk647438.useState(false), [a, s] = Chunk647438.useState(5), [l, c] = Chunk647438.useState(false), u = Chunk647438.useRef(null);
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk726927.section,
     children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
@@ -719,7 +719,7 @@ function eg() {
               label: "Slider",
               control: (e, t) => (0, r.jsx)(C._wy, {
                 ref: t,
-                value: o,
+                value: a,
                 minValue: 0,
                 maxValue: 100,
                 onChange: e => s(e),
@@ -1065,7 +1065,7 @@ function eE() {
 }
 
 function eb() {
-  let [e, t] = Chunk647438.useState(false), [n, a] = Chunk647438.useState(false), [o, s] = Chunk647438.useState(false), [l, c] = Chunk647438.useState(false), [u, d] = Chunk647438.useState(false), [f, _] = Chunk647438.useState(false), [p, h] = Chunk647438.useState(false), [m, g] = Chunk647438.useState(false), [E, b] = Chunk647438.useState(false), [y, O] = Chunk647438.useState(false), [v, I] = Chunk647438.useState(false), [A, N] = Chunk647438.useState(false), [R, P] = Chunk647438.useState(false), [w, D] = Chunk647438.useState(false), [x, L] = Chunk647438.useState(false), [j, k] = Chunk647438.useState(false), [M, U] = Chunk647438.useState(false), [G, B] = Chunk647438.useState(false), [Z, V] = Chunk647438.useState(false), [H, Y] = Chunk647438.useState(false), [q, X] = Chunk647438.useState(false), Q = Chunk647438.useRef(null), J = Chunk647438.useRef(null), $ = Chunk647438.useRef(null), ee = Chunk647438.useRef(null), et = Chunk647438.useRef(null), en = Chunk647438.useRef(null), er = Chunk647438.useRef(null), ei = Chunk647438.useRef(null), ea = Chunk647438.useRef(null), eo = Chunk647438.useRef(null), es = Chunk647438.useRef(null), el = Chunk647438.useRef(null), ec = Chunk647438.useRef(null), eu = Chunk647438.useRef(null), ed = Chunk647438.useRef(null), ef = Chunk647438.useRef(null), e_ = Chunk647438.useRef(null), ep = Chunk647438.useRef(null), eh = Chunk647438.useRef(null), em = Chunk647438.useRef(null), eg = Chunk647438.useRef(null), eE = Chunk647438.useCallback(() => {
+  let [e, t] = Chunk647438.useState(false), [n, o] = Chunk647438.useState(false), [a, s] = Chunk647438.useState(false), [l, c] = Chunk647438.useState(false), [u, d] = Chunk647438.useState(false), [f, _] = Chunk647438.useState(false), [p, h] = Chunk647438.useState(false), [m, g] = Chunk647438.useState(false), [E, b] = Chunk647438.useState(false), [y, O] = Chunk647438.useState(false), [v, I] = Chunk647438.useState(false), [A, N] = Chunk647438.useState(false), [R, P] = Chunk647438.useState(false), [w, D] = Chunk647438.useState(false), [x, L] = Chunk647438.useState(false), [j, M] = Chunk647438.useState(false), [k, U] = Chunk647438.useState(false), [G, B] = Chunk647438.useState(false), [Z, V] = Chunk647438.useState(false), [H, Y] = Chunk647438.useState(false), [q, X] = Chunk647438.useState(false), Q = Chunk647438.useRef(null), J = Chunk647438.useRef(null), $ = Chunk647438.useRef(null), ee = Chunk647438.useRef(null), et = Chunk647438.useRef(null), en = Chunk647438.useRef(null), er = Chunk647438.useRef(null), ei = Chunk647438.useRef(null), eo = Chunk647438.useRef(null), ea = Chunk647438.useRef(null), es = Chunk647438.useRef(null), el = Chunk647438.useRef(null), ec = Chunk647438.useRef(null), eu = Chunk647438.useRef(null), ed = Chunk647438.useRef(null), ef = Chunk647438.useRef(null), e_ = Chunk647438.useRef(null), ep = Chunk647438.useRef(null), eh = Chunk647438.useRef(null), em = Chunk647438.useRef(null), eg = Chunk647438.useRef(null), eE = Chunk647438.useCallback(() => {
     exports(false), Chunk120356(false), Chunk392711(false), Chunk442837(false), Chunk680018(false), Chunk861066(false), Chunk179538(false), Chunk257465(false), Chunk82659(false), Chunk103866(false), Chunk37148(false), Chunk240872(false), Chunk705262(false), Chunk581612(false), Chunk594174(false), Chunk799071(false), Chunk706705(false), Chunk981631(false), Chunk177475(false), Chunk691739(false), X(false)
   }, []);
   return (0, Chunk951288.jsxs)("div", {
@@ -1114,7 +1114,7 @@ function eb() {
       }]
     }), (0, Chunk951288.jsx)(Chunk907862.J2, {
       targetElementRef: $,
-      shouldShow: o,
+      shouldShow: a,
       onRequestClose: eE,
       caretConfig: {
         position: "bottom",
@@ -1228,7 +1228,7 @@ function eb() {
         onClick: eE
       }]
     }), (0, Chunk951288.jsx)(Chunk907862.J2, {
-      targetElementRef: ea,
+      targetElementRef: eo,
       shouldShow: Chunk667202,
       onRequestClose: eE,
       caretConfig: {
@@ -1248,7 +1248,7 @@ function eb() {
         onClick: eE
       }]
     }), (0, Chunk951288.jsx)(Chunk907862.J2, {
-      targetElementRef: eo,
+      targetElementRef: ea,
       shouldShow: Chunk369585,
       onRequestClose: eE,
       position: "right",
@@ -1640,14 +1640,14 @@ function eb() {
         }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Custom Offset",
-          buttonRef: ea,
+          buttonRef: eo,
           onClick: () => {
             eE(), Chunk82659(true)
           }
         }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Left Center",
-          buttonRef: eo,
+          buttonRef: ea,
           onClick: () => {
             eE(), Chunk103866(true)
           }
@@ -1799,7 +1799,7 @@ function eb() {
 }
 
 function ey() {
-  let [e, t] = Chunk647438.useState(false), [n, a] = Chunk647438.useState(false), [o, s] = Chunk647438.useState("auto");
+  let [e, t] = Chunk647438.useState(false), [n, o] = Chunk647438.useState(false), [a, s] = Chunk647438.useState("auto");
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsxs)("div", {
       className: Chunk726927.section,
@@ -1846,7 +1846,7 @@ function ey() {
       }), (0, Chunk951288.jsx)(Chunk481060.j7V, {
         hideBorder: true,
         value: require,
-        onChange: e => a(e),
+        onChange: e => o(e),
         children: "FormSwitch with a label"
       })]
     }), (0, Chunk951288.jsxs)("div", {
@@ -1872,7 +1872,7 @@ function ey() {
             value: "1080p",
             name: "1080p"
           }],
-          value: o
+          value: a
         })
       })]
     }), (0, Chunk951288.jsxs)("div", {
@@ -1955,7 +1955,7 @@ function ey() {
 }
 
 function eO() {
-  let [e, t] = Chunk647438.useState(null), [n, a] = Chunk647438.useState(null), [o, s] = Chunk647438.useState([]), [c, u] = Chunk647438.useState([]), [d, f] = Chunk647438.useState([]);
+  let [e, t] = Chunk647438.useState(null), [n, o] = Chunk647438.useState(null), [a, s] = Chunk647438.useState([]), [c, u] = Chunk647438.useState([]), [d, f] = Chunk647438.useState([]);
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk726927.section,
     children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
@@ -1970,12 +1970,12 @@ function eO() {
       placeholder: "Single select (clearable)",
       clearable: true,
       value: require,
-      onChange: e => a(e),
+      onChange: e => o(e),
       options: Chunk971809.G
     }), (0, Chunk951288.jsx)(Chunk481060.VcW, {
       placeholder: "Multi select",
       multi: true,
-      value: o,
+      value: a,
       onChange: e => s(e),
       options: Chunk971809.G
     }), (0, Chunk951288.jsx)(Chunk481060.VcW, {
@@ -2009,7 +2009,7 @@ function eO() {
 }
 
 function ev() {
-  let [e, t] = Chunk647438.useState(""), [n, a] = Chunk647438.useState(""), [o, s] = Chunk647438.useState(""), l = (0, Chunk377089.U)("UserSettingsDesignSystems");
+  let [e, t] = Chunk647438.useState(""), [n, o] = Chunk647438.useState(""), [a, s] = Chunk647438.useState(""), l = (0, Chunk377089.U)("UserSettingsDesignSystems");
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk726927.section,
     children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
@@ -2022,13 +2022,13 @@ function ev() {
         children: [(0, Chunk951288.jsx)(Chunk481060.E1j, {
           placeholder: "Search...",
           onChange: e => s(e),
-          query: o,
+          query: a,
           onClear: () => Chunk392711("")
         }), (0, Chunk951288.jsx)(Chunk481060.E1j, {
           size: "sm",
           placeholder: "Search...",
           onChange: e => s(e),
-          query: o,
+          query: a,
           onClear: () => Chunk392711("")
         })]
       })
@@ -2108,10 +2108,10 @@ function ev() {
 function eI(e) {
   let {
     transitionState: t
-  } = e, [n, a] = i.useState(false), [o, s] = i.useState(C.CgR.SMALL), [l, c] = i.useState(false), u = n ? F.modalOutlines : "";
+  } = e, [n, o] = i.useState(false), [a, s] = i.useState(C.CgR.SMALL), [l, c] = i.useState(false), u = n ? F.modalOutlines : "";
   return (0, r.jsxs)(C.Y0X, {
     transitionState: t,
-    size: o,
+    size: a,
     parentComponent: "UserSettingsDesignSystem",
     children: [(0, r.jsx)(C.xBx, {
       className: u,
@@ -2126,7 +2126,7 @@ function eI(e) {
         children: [(0, r.jsx)(C.xJW, {
           title: "Modal Size",
           children: (0, r.jsx)(C.q4e, {
-            value: o,
+            value: a,
             onChange: s,
             options: Object.entries(C.CgR).map(e => {
               let [t, n] = e;
@@ -2142,7 +2142,7 @@ function eI(e) {
             gap: 16,
             children: [(0, r.jsx)(C.XZJ, {
               value: n,
-              onChange: (e, t) => a(t),
+              onChange: (e, t) => o(t),
               children: (0, r.jsx)(C.Text, {
                 variant: "text-md/medium",
                 children: "Show Section Outlines"
@@ -2180,18 +2180,18 @@ function eT(e) {
   let {
     transitionState: t,
     onClose: n,
-    modalCount: a = 1
-  } = e, [o, s] = i.useState("replace"), l = () => {
-    let e = a + 1;
+    modalCount: o = 1
+  } = e, [a, s] = i.useState("replace"), l = () => {
+    let e = o + 1;
     (0, C.h7j)(t => (0, r.jsx)(eT, J(X({}, t), {
       modalCount: e
     })), {
-      stackingBehavior: o
+      stackingBehavior: a
     })
-  }, c = a < 3;
+  }, c = o < 3;
   return (0, r.jsxs)(C.Y0X, {
     transitionState: t,
-    size: 1 === a ? C.CgR.LARGE : 2 === a ? C.CgR.MEDIUM : C.CgR.SMALL,
+    size: 1 === o ? C.CgR.LARGE : 2 === o ? C.CgR.MEDIUM : C.CgR.SMALL,
     parentComponent: "UserSettingsDesignSystem",
     children: [(0, r.jsx)(C.xBx, {
       children: (0, r.jsx)(C.X6q, {
@@ -2203,11 +2203,11 @@ function eT(e) {
         gap: 16,
         children: [(0, r.jsxs)(C.Text, {
           variant: "text-md/medium",
-          children: ["This is modal level ", a, "."]
+          children: ["This is modal level ", o, "."]
         }), c && (0, r.jsx)(C.xJW, {
           title: "Stacking Behavior",
           children: (0, r.jsx)(C.q4e, {
-            value: o,
+            value: a,
             onChange: s,
             options: [{
               label: "Replace (default)",
@@ -2332,11 +2332,11 @@ function eA(e) {
   let {
     transitionState: t,
     onClose: n
-  } = e, [a, o] = i.useState("md"), [s, l] = i.useState("Demo Modal"), [c, u] = i.useState("Header body copy"), [d, f] = i.useState(false), [_, p] = i.useState(false), [h, m] = i.useState(false), [E, b] = i.useState(false), [T, S] = i.useState(false);
+  } = e, [o, a] = i.useState("md"), [s, l] = i.useState("Demo Modal"), [c, u] = i.useState("Header body copy"), [d, f] = i.useState(false), [_, p] = i.useState(false), [h, m] = i.useState(false), [E, b] = i.useState(false), [T, S] = i.useState(false);
   return (0, r.jsxs)(g.I, {
     transitionState: t,
     onClose: n,
-    size: a,
+    size: o,
     children: [(0, r.jsx)(I.x, {
       title: s,
       subtitle: c,
@@ -2352,8 +2352,8 @@ function eA(e) {
         children: [(0, r.jsx)(C.xJW, {
           title: "Modal Size",
           children: (0, r.jsx)(C.q4e, {
-            value: a,
-            onChange: o,
+            value: o,
+            onChange: a,
             options: [{
               label: "Small",
               value: "sm"
@@ -2457,17 +2457,17 @@ function eC(e) {
     onClose: n
   } = e;
 
-  function a(e) {
+  function o(e) {
     let {
       text: t
-    } = e, [n, a] = i.useState(false);
+    } = e, [n, o] = i.useState(false);
     return (0, r.jsx)("div", {
       style: {
         padding: "8px 0"
       },
       children: (0, r.jsx)(C.XZJ, {
         value: n,
-        onChange: (e, t) => a(t),
+        onChange: (e, t) => o(t),
         children: (0, r.jsx)(C.Text, {
           variant: "text-md/medium",
           children: t
@@ -2506,37 +2506,37 @@ function eC(e) {
       iconPosition: "end",
       onClick: n
     }],
-    children: [(0, r.jsx)(a, {
+    children: [(0, r.jsx)(o, {
       text: "John Doe"
-    }), (0, r.jsx)(a, {
+    }), (0, r.jsx)(o, {
       text: "Mark"
-    }), (0, r.jsx)(a, {
+    }), (0, r.jsx)(o, {
       text: "KawaiiHermit"
-    }), (0, r.jsx)(a, {
+    }), (0, r.jsx)(o, {
       text: "YurBruhGio"
-    }), (0, r.jsx)(a, {
+    }), (0, r.jsx)(o, {
       text: "John Doe"
-    }), (0, r.jsx)(a, {
+    }), (0, r.jsx)(o, {
       text: "Mark"
-    }), (0, r.jsx)(a, {
+    }), (0, r.jsx)(o, {
       text: "KawaiiHermit"
-    }), (0, r.jsx)(a, {
+    }), (0, r.jsx)(o, {
       text: "YurBruhGio"
-    }), (0, r.jsx)(a, {
+    }), (0, r.jsx)(o, {
       text: "John Doe"
-    }), (0, r.jsx)(a, {
+    }), (0, r.jsx)(o, {
       text: "Mark"
-    }), (0, r.jsx)(a, {
+    }), (0, r.jsx)(o, {
       text: "KawaiiHermit"
-    }), (0, r.jsx)(a, {
+    }), (0, r.jsx)(o, {
       text: "YurBruhGio"
-    }), (0, r.jsx)(a, {
+    }), (0, r.jsx)(o, {
       text: "John Doe"
-    }), (0, r.jsx)(a, {
+    }), (0, r.jsx)(o, {
       text: "Mark"
-    }), (0, r.jsx)(a, {
+    }), (0, r.jsx)(o, {
       text: "KawaiiHermit"
-    }), (0, r.jsx)(a, {
+    }), (0, r.jsx)(o, {
       text: "YurBruhGio"
     })]
   })
@@ -2567,8 +2567,8 @@ function eN(e) {
 function eR(e) {
   let {
     transitionState: t,
-    onClose: a
-  } = e, [o, s] = i.useState(0), [l, c] = i.useState(false), d = [{
+    onClose: o
+  } = e, [a, s] = i.useState(0), [l, c] = i.useState(false), d = [{
     label: "Image",
     value: 0
   }, {
@@ -2583,32 +2583,32 @@ function eR(e) {
   }, {
     label: "Dynamic Content",
     value: 4
-  }], f = i.useMemo(() => 0 === o ? {
+  }], f = i.useMemo(() => 0 === a ? {
     type: "image",
     src: V
-  } : 1 === o ? {
+  } : 1 === a ? {
     type: "lottie",
     lottie: () => n.e("94792").then(n.t.bind(n, 972951, 19)),
     aspectRatio: "6/4"
-  } : 2 === o ? {
+  } : 2 === a ? {
     type: "rive",
     rive: u.PerfTestRive
-  } : 3 === o ? {
+  } : 3 === a ? {
     type: "video",
     src: Y.Z,
     fallbackImageSrc: V,
     loop: true,
     loopAt: 2.5
-  } : 4 === o ? {
+  } : 4 === a ? {
     type: "dynamic",
     component: C.AX$.DEMO,
     props: {
       text: "Dynamic Content"
     }
-  } : true, [o]);
+  } : true, [a]);
   return (0, r.jsxs)(E.I, {
     transitionState: t,
-    onClose: a,
+    onClose: o,
     gradientColor: "nitro-pink",
     graphic: f,
     badge: l ? "beta" : true,
@@ -2617,16 +2617,16 @@ function eR(e) {
     actions: [{
       variant: "secondary",
       text: "Cancel",
-      onClick: a
+      onClick: o
     }, {
       variant: "primary",
       text: "Submit",
-      onClick: a
+      onClick: o
     }],
     children: [(0, r.jsx)(C.xJW, {
       title: "Graphic Type",
       children: (0, r.jsx)(C.q4e, {
-        value: o,
+        value: a,
         onChange: s,
         options: d
       })
@@ -2650,21 +2650,21 @@ function eP(e) {
   let {
     transitionState: t,
     onClose: n,
-    modalCount: a = 1
-  } = e, [o, s] = i.useState("replace"), l = () => {
-    let e = a + 1;
+    modalCount: o = 1
+  } = e, [a, s] = i.useState("replace"), l = () => {
+    let e = o + 1;
     (0, C.h7j)(t => (0, r.jsx)(eP, J(X({}, t), {
       modalCount: e
     })), {
-      stackingBehavior: o
+      stackingBehavior: a
     })
-  }, c = a < 3;
+  }, c = o < 3;
   return (0, r.jsx)(b.Modal, {
     transitionState: t,
     onClose: n,
-    size: 1 === a ? "md" : "sm",
+    size: 1 === o ? "md" : "sm",
     title: "Mana Modal Stacking Demo",
-    subtitle: "This is modal level ".concat(a, "."),
+    subtitle: "This is modal level ".concat(o, "."),
     actions: [{
       variant: "secondary",
       text: "Close",
@@ -2679,7 +2679,7 @@ function eP(e) {
       children: [c && (0, r.jsx)(C.xJW, {
         title: "Stacking Behavior",
         children: (0, r.jsx)(C.q4e, {
-          value: o,
+          value: a,
           onChange: s,
           options: [{
             label: "Replace (default)",
@@ -2731,10 +2731,10 @@ function ew() {
     i = () => {
       (0, Chunk481060.h7j)(e => (0, r.jsx)(eA, X({}, e)))
     },
-    a = () => {
+    o = () => {
       (0, Chunk481060.h7j)(e => (0, r.jsx)(eC, X({}, e)))
     },
-    o = () => {
+    a = () => {
       (0, Chunk481060.h7j)(e => (0, r.jsx)(eN, X({}, e)))
     },
     s = () => {
@@ -2790,7 +2790,7 @@ function ew() {
       }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
         variant: "primary",
         text: "Open sample alert modal",
-        onClick: o
+        onClick: a
       }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
         variant: "primary",
         text: "Open expressive modal",
@@ -2876,7 +2876,7 @@ function eL() {
     theme: Chunk231338.BR.DARKER,
     disableAdaptiveTheme: true,
     children: t => (0, r.jsxs)("div", {
-      className: o()(t, F.section),
+      className: a()(t, F.section),
       children: [(0, r.jsx)(C.zxk, {
         variant: "secondary",
         text: "Button",
@@ -2884,7 +2884,7 @@ function eL() {
       }), (0, r.jsx)(C.f6W, {
         theme: Z.BR.LIGHT,
         children: t => (0, r.jsxs)("div", {
-          className: o()(t, F.section),
+          className: a()(t, F.section),
           children: [(0, r.jsx)(C.zxk, {
             variant: "secondary",
             text: "Button",
@@ -2892,7 +2892,7 @@ function eL() {
           }), (0, r.jsx)(C.f6W, {
             theme: Z.BR.DARKER,
             children: e => (0, r.jsx)("div", {
-              className: o()(e, F.section),
+              className: a()(e, F.section),
               children: (0, r.jsx)(C.zxk, {
                 variant: "secondary",
                 text: "Button",
@@ -2902,7 +2902,7 @@ function eL() {
           }), (0, r.jsx)(C.f6W, {
             gradient: e,
             children: e => (0, r.jsx)("div", {
-              className: o()(e, F.section),
+              className: a()(e, F.section),
               children: (0, r.jsx)(C.zxk, {
                 variant: "secondary",
                 text: "Button",

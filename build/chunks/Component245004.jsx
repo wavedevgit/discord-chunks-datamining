@@ -38,8 +38,8 @@ function c(e, t) {
   if (null == e) return {};
   var n, r, i = u(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -47,8 +47,8 @@ function c(e, t) {
 function u(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -61,17 +61,17 @@ function d(e) {
   } = e;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(i.X6q, {
-      className: o.topPerksCardHeading,
+      className: a.topPerksCardHeading,
       variant: "heading-lg/extrabold",
       children: t
     }), (0, r.jsx)(i.Text, {
-      className: o.topPerksCardDescription,
+      className: a.topPerksCardDescription,
       variant: "text-sm/normal",
       children: n
     }), (0, r.jsxs)("div", {
-      className: o.labelsContainer,
+      className: a.labelsContainer,
       children: [null != s && (0, r.jsxs)("div", {
-        className: o.topPerksCardLabelContainer,
+        className: a.topPerksCardLabelContainer,
         children: [(0, r.jsx)(i.$Eu, {
           size: "sm",
           color: i.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK
@@ -80,7 +80,7 @@ function d(e) {
           children: s
         })]
       }), l && (0, r.jsxs)("div", {
-        className: o.topPerksCardLabelContainer,
+        className: a.topPerksCardLabelContainer,
         children: [(0, r.jsx)(i.owK, {
           size: "custom",
           height: 14,
@@ -89,7 +89,7 @@ function d(e) {
         }), (0, r.jsx)(i.Text, {
           variant: "text-sm/semibold",
           color: "currentColor",
-          children: a.intl.string(a.t.pCMkDQ)
+          children: o.intl.string(o.t.pCMkDQ)
         })]
       })]
     })]

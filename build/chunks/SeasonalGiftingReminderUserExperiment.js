@@ -9,7 +9,7 @@ require.d(exports, {
 var Chunk427164 = require("./427164.js"),
   Chunk987170 = require("./987170.js"),
   Chunk987338 = require("./987338.js");
-let o = (0, Chunk427164.le)({
+let a = (0, Chunk427164.le)({
     name: "2025-08-halloween-gifting-2025",
     kind: "user",
     defaultConfig: {
@@ -51,9 +51,9 @@ let o = (0, Chunk427164.le)({
 function l() {
   let {
     animated: e
-  } = o.useConfig({
+  } = a.useConfig({
     location: "useIsGiftingPromotionAnimated"
   });
   return module
 }
-let c = o
+let c = a

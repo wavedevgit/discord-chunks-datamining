@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk202841 = require("./202841.js"),
   Chunk481060 = require("./481060.js"),
   Chunk110924 = require("./110924.js"),
@@ -43,8 +43,8 @@ function g(e, t) {
   if (null == e) return {};
   var n, r, i = E(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -52,8 +52,8 @@ function g(e, t) {
 function E(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let b = new Chunk710845.Z("BalanceCounter"),
@@ -72,25 +72,25 @@ let b = new Chunk710845.Z("BalanceCounter"),
   T = e => {
     var t, n;
     let {
-      value: a,
-      onSetDigitCount: o,
+      value: o,
+      onSetDigitCount: a,
       onValueChange: c,
       onValueReached: u,
       targetTotalCounterTime: d = 3e3
     } = e, [f, _] = (0, i.useState)(0), p = (0, i.useRef)(null), h = (0, i.useRef)(null);
     (0, i.useEffect)(() => {
-      if (null === a) return;
+      if (null === o) return;
       if (null === p.current) {
-        p.current = a;
+        p.current = o;
         return
       }
-      let e = null !== p.current ? a - p.current : a;
+      let e = null !== p.current ? o - p.current : o;
       0 !== e && null !== p.current && c(e), h.current = {
         lastChangedAt: Date.now(),
         totalDelta: Math.abs(e)
       }
-    }, [a, c]);
-    let m = null != a ? a : 0,
+    }, [o, c]);
+    let m = null != o ? o : 0,
       g = null != (t = p.current) ? t : m,
       {
         duration: E,
@@ -111,7 +111,7 @@ let b = new Chunk710845.Z("BalanceCounter"),
         },
         delay: I,
         onStart: () => {
-          o(O(g))
+          a(O(g))
         },
         onRest: () => {
           if (_(f + 1), u(), !y && null !== h.current && null !== p.current) {
@@ -121,10 +121,10 @@ let b = new Chunk710845.Z("BalanceCounter"),
               delta: m - p.current
             })
           }
-          o(O(m)), p.current = m
+          a(O(m)), p.current = m
         }
       }),
-      S = O(Math.max(null != a ? a : 0, T.get()));
+      S = O(Math.max(null != o ? o : 0, T.get()));
     return (0, r.jsx)(s.animated.div, {
       style: {
         width: "calc(".concat(S, "ch)")
@@ -135,7 +135,7 @@ let b = new Chunk710845.Z("BalanceCounter"),
   S = e => {
     var t, {
         value: n,
-        className: a
+        className: o
       } = e,
       s = g(e, ["value", "className"]);
     let u = null === n,
@@ -146,7 +146,7 @@ let b = new Chunk710845.Z("BalanceCounter"),
       b = "".concat(u ? 0 : E, "ch");
     return (0, r.jsx)(l.Text, {
       variant: "text-md/semibold",
-      className: o()(p.balanceCounterText, u ? true : p.balanceCounterMargin, a),
+      className: a()(p.balanceCounterText, u ? true : p.balanceCounterMargin, o),
       style: {
         width: b,
         opacity: u ? "0" : 1

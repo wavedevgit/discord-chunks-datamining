@@ -66,15 +66,15 @@ function I(e) {
     message: n,
     currentUser: r
   } = e;
-  return (0, a.e7)([f.Z, d.ZP], () => {
+  return (0, o.e7)([f.Z, d.ZP], () => {
     var e;
     let i = t.guild_id;
     if (null == r || null == i) returnfalse;
-    let a = (0, u.xl)(t),
-      o = f.Z.can(g.Plq.SEND_MESSAGES, t),
+    let o = (0, u.xl)(t),
+      a = f.Z.can(g.Plq.SEND_MESSAGES, t),
       s = null == (e = d.ZP.getMember(i, r.id)) ? true : e.isPending,
       l = n.author.bot;
-    return o && !a && !s && !l
+    return a && !o && !s && !l
   })
 }
 
@@ -116,7 +116,7 @@ function C(e) {
   let {
     currentUser: t,
     channel: n,
-    message: a,
+    message: o,
     buttonLabels: s,
     stickers: u,
     event: d,
@@ -124,12 +124,12 @@ function C(e) {
   } = e, _ = i.useMemo(() => T({
     assets: u,
     currentUser: t,
-    message: a
-  }), [u, t, a]), p = i.useMemo(() => T({
+    message: o
+  }), [u, t, o]), p = i.useMemo(() => T({
     assets: s,
     currentUser: t,
-    message: a
-  }), [s, t, a]), h = i.useCallback(async () => {
+    message: o
+  }), [s, t, o]), h = i.useCallback(async () => {
     let {
       valid: e
     } = await (0, m.v)({
@@ -139,15 +139,15 @@ function C(e) {
     });
     e && (S({
       channel: n,
-      message: a,
+      message: o,
       sticker: _
     }), A({
       sticker: _,
       event: d,
       eventProperties: f
     }))
-  }, [n, a, _, d, f]);
-  return (0, r.jsx)(o.zx, {
+  }, [n, o, _, d, f]);
+  return (0, r.jsx)(a.zx, {
     icon: {
       type: "sticker",
       asset: _,
@@ -164,8 +164,8 @@ function N(e) {
     channel: t,
     message: n,
     buttonLabels: i,
-    stickers: a,
-    event: o,
+    stickers: o,
+    event: a,
     eventProperties: s
   } = e, l = _.default.getCurrentUser(), c = I({
     channel: t,
@@ -179,8 +179,8 @@ function N(e) {
       channel: t,
       message: n,
       buttonLabels: i,
-      stickers: a,
-      event: o,
+      stickers: o,
+      event: a,
       eventProperties: s
     })
   }) : null

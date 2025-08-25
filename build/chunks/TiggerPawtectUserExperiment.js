@@ -2,12 +2,12 @@
 /** chunk id: 974814, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  H1: () => o,
+  H1: () => a,
   s8: () => s
 });
 var Chunk818083 = require("./818083.js"),
   Chunk128064 = require("./128064.js");
-let a = (0, Chunk818083.B)({
+let o = (0, Chunk818083.B)({
   kind: "user",
   id: "2025-02_tigger_pawtect",
   label: "Tigger pawtect",
@@ -23,11 +23,11 @@ let a = (0, Chunk818083.B)({
   }]
 });
 
-function o(e) {
+function a(e) {
   let {
     location: t
   } = e;
-  return a.getCurrentConfig({
+  return o.getCurrentConfig({
     location: t
   }, {
     autoTrackExposure: true
@@ -37,7 +37,7 @@ function o(e) {
 function s(e) {
   let {
     location: t
-  } = e, n = a.getCurrentConfig({
+  } = e, n = o.getCurrentConfig({
     location: t
   }, {
     autoTrackExposure: true

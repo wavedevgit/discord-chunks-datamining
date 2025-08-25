@@ -27,13 +27,13 @@ function u(e) {
       }
     }), (0, r.jsx)("div", {
       className: c.avatarContainer,
-      children: (0, r.jsx)(a.ZP, {
-        mask: a.QS.CLAN_ICON,
+      children: (0, r.jsx)(o.ZP, {
+        mask: o.QS.CLAN_ICON,
         width: 70,
         height: 70,
         children: (0, r.jsx)("div", {
           className: c.avatarWrapper,
-          children: (0, r.jsx)(o.Ft, {
+          children: (0, r.jsx)(a.Ft, {
             guildId: t,
             guildName: null != n ? n : "?",
             guildIcon: null,

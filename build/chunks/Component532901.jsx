@@ -23,7 +23,7 @@ function f(e) {
         }, t.target)
       }, f.key);
       let _ = n(t.content, f),
-        p = "string" == typeof t.title && 0 !== t.title.length ? t.title : (0, a.Rp)(t.content),
+        p = "string" == typeof t.title && 0 !== t.title.length ? t.title : (0, o.Rp)(t.content),
         h = () => (0, u.r)(t),
         m = (null == e ? true : e.mustConfirmExternalLink) ? e => (null == e || e.stopPropagation(), null == e || e.preventDefault(), (0, c.q)({
           href: t.target,
@@ -38,7 +38,7 @@ function f(e) {
       return f.noStyleAndInteraction ? (0, r.jsx)("span", {
         title: p,
         children: _
-      }, f.key) : (0, r.jsx)(o.Z, {
+      }, f.key) : (0, r.jsx)(a.Z, {
         title: p,
         href: t.target,
         trusted: h,

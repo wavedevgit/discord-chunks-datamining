@@ -15,7 +15,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk202841 = require("./202841.js"),
   Chunk780384 = require("./780384.js");
 require("./481060.js");
@@ -112,9 +112,9 @@ function T(e) {
     status: n,
     isMobile: r,
     isTyping: i,
-    topOffset: a = 0,
-    leftOffset: o = 0
-  } = e, s = a / g * t, l = o / g * t;
+    topOffset: o = 0,
+    leftOffset: a = 0
+  } = e, s = o / g * t, l = a / g * t;
   if (i) return {
     bgRadius: .5 * t,
     bgY: .25 * t + s,
@@ -183,7 +183,7 @@ function S(e) {
 function A(e, t, n) {
   let {
     bgRadius: i,
-    bgY: a,
+    bgY: o,
     bgX: s,
     bgHeight: l,
     bgWidth: c,
@@ -200,15 +200,15 @@ function A(e, t, n) {
   } = e;
   return (0, r.jsxs)("mask", {
     id: n,
-    children: [(0, r.jsx)(o.animated.rect, {
+    children: [(0, r.jsx)(a.animated.rect, {
       x: s,
-      y: a,
+      y: o,
       width: c,
       height: l,
       rx: i,
       ry: i,
       fill: "white"
-    }), (0, r.jsx)(o.animated.rect, {
+    }), (0, r.jsx)(a.animated.rect, {
       x: u,
       y: d,
       width: f,
@@ -216,14 +216,14 @@ function A(e, t, n) {
       rx: p,
       ry: p,
       fill: "black"
-    }), (0, r.jsx)(o.animated.polygon, {
+    }), (0, r.jsx)(a.animated.polygon, {
       points: S(t),
       fill: "black",
       transform: h,
       style: {
         transformOrigin: m
       }
-    }), (0, r.jsx)(o.animated.circle, {
+    }), (0, r.jsx)(a.animated.circle, {
       fill: "black",
       cx: E,
       cy: g,
@@ -269,13 +269,13 @@ function R(e) {
     status: t,
     isMobile: n = false,
     size: i = g,
-    className: o,
+    className: a,
     style: s,
     color: l
   } = e, d = t === u.Skl.ONLINE && n, _ = b(t, l);
   return (0, r.jsx)(c.ZP, m(p({
     mask: C(t, d),
-    className: a()(f.mask, o),
+    className: o()(f.mask, a),
     style: s
   }, N(i, t, d)), {
     children: (0, r.jsx)("div", {

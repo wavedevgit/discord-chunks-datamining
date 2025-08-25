@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk688619 = require("./688619.js"),
-  o = require.n(Chunk688619),
+  a = require.n(Chunk688619),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk608787 = require("./608787.jsx"),
@@ -86,8 +86,8 @@ function w(e) {
   let {
     colors: t,
     selectedIndex: n,
-    onColorSelect: a
-  } = e, [o, s] = i.useMemo(() => {
+    onColorSelect: o
+  } = e, [a, s] = i.useMemo(() => {
     let e = t.map((e, n) => P(t, n)),
       n = t.map((t, n) => "".concat(t, " ").concat(e[n], "%")).join(", ");
     return [e, {
@@ -98,7 +98,7 @@ function w(e) {
     className: O.gradientBar,
     style: s,
     children: t.map((e, t) => {
-      let s = o[t],
+      let s = a[t],
         c = t === n;
       return (0, r.jsxs)(i.Fragment, {
         children: [(0, r.jsx)(p.P3F, {
@@ -109,7 +109,7 @@ function w(e) {
             left: "".concat(s, "%"),
             backgroundColor: e
           },
-          onClick: () => a(t),
+          onClick: () => o(t),
           children: (0, r.jsx)("div", {
             className: O.colorSquareInner
           })
@@ -139,7 +139,7 @@ function D(e) {
 
 function x(e) {
   if (!(0, u.FX)(e)) return e;
-  let t = o()(e);
+  let t = a()(e);
   return t.set("hsl.h", (t.get("hsl.h") + 15) % 360).hex()
 }
 
@@ -147,38 +147,38 @@ function L(e) {
   let {
     value: t,
     onChange: n,
-    className: a,
-    colors: o,
+    className: o,
+    colors: a,
     setColors: s
   } = e, c = (0, h.Z)(), [v, T] = i.useState(0), [A, R] = i.useState(t);
   i.useEffect(() => {
-    if (o.length > 0 && v < o.length) {
-      let e = o[v];
+    if (a.length > 0 && v < a.length) {
+      let e = a[v];
       (0, u.FX)(e) && (R(e), n(e))
     }
-    v >= o.length && T(0)
-  }, [v, o, n]);
+    v >= a.length && T(0)
+  }, [v, a, n]);
   let P = e => {
       let t = e.trim();
       return t.startsWith("#") ? t : t.length > 0 ? "#".concat(t) : t
     },
     L = e => {
       let t = P(e);
-      if (R(t), (0, u.FX)(t) && ((0, E.zW)(), n(t), o.length > 0)) {
-        let e = [...o];
+      if (R(t), (0, u.FX)(t) && ((0, E.zW)(), n(t), a.length > 0)) {
+        let e = [...a];
         e[v] = t, s(e)
       }
     },
     j = i.useCallback(e => {
       R(e.hex)
     }, []),
-    k = e => {
-      if ((0, E.P0)(), n(e.hex), o.length > 0) {
-        let t = [...o];
+    M = e => {
+      if ((0, E.P0)(), n(e.hex), a.length > 0) {
+        let t = [...a];
         t[v] = e.hex, s(t)
       }
     },
-    M = async () => {
+    k = async () => {
       if (null != c) try {
         let {
           sRGBHex: e
@@ -186,30 +186,30 @@ function L(e) {
         (0, E.J4)(), L(e)
       } catch (e) {}
     }, U = () => {
-      if (o.length === N) return;
-      0 === o.length && (0, g.ft)(), (0, E.gG)();
-      let e = o.length > 0 ? o[o.length - 1] : A,
-        t = o.length > 0 ? x(e) : e,
-        n = [...o, t];
+      if (a.length === N) return;
+      0 === a.length && (0, g.ft)(), (0, E.gG)();
+      let e = a.length > 0 ? a[a.length - 1] : A,
+        t = a.length > 0 ? x(e) : e,
+        n = [...a, t];
       s(n), T(n.length - 1)
     }, G = e => {
-      if (o.length > 1) {
+      if (a.length > 1) {
         (0, E.JL)();
-        let t = o.filter((t, n) => n !== e);
+        let t = a.filter((t, n) => n !== e);
         s(t), v >= t.length ? T(t.length - 1) : v > e && T(v - 1)
       }
     }, B = e => {
       T(e), (0, E.w8)()
-    }, Z = o.length > 1;
+    }, Z = a.length > 1;
   return (0, r.jsxs)("div", {
-    className: l()(O.container, a),
+    className: l()(O.container, o),
     children: [Z && (0, r.jsx)(w, {
-      colors: o,
+      colors: a,
       selectedIndex: v,
       onColorSelect: B
     }), (0, r.jsx)(C, {
       onChange: j,
-      onChangeComplete: k,
+      onChangeComplete: M,
       color: A
     }), (0, r.jsxs)("div", {
       className: O.hexInputContainer,
@@ -231,7 +231,7 @@ function L(e) {
             variant: "icon-only",
             size: "sm"
           }, e), {
-            onClick: M,
+            onClick: k,
             icon: d.i,
             "aria-label": y.intl.string(b.default["NCFz+P"])
           }))
@@ -246,7 +246,7 @@ function L(e) {
           }))
         })]
       })]
-    }), o.length < N && (0, r.jsx)(f.z, {
+    }), a.length < N && (0, r.jsx)(f.z, {
       variant: "secondary",
       size: "md",
       onClick: U,

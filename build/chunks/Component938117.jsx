@@ -70,27 +70,27 @@ function S(e) {
     currentDeviceId: S,
     smallerBackgroundOptions: A,
     className: C
-  } = e, N = (0, a.e7)([l.default], () => l.default.getCurrentUser()), [R, P] = i.useState(null), w = (0, p.Z)(), D = c.ZP.canUseCustomBackgrounds(N);
+  } = e, N = (0, o.e7)([l.default], () => l.default.getCurrentUser()), [R, P] = i.useState(null), w = (0, p.Z)(), D = c.ZP.canUseCustomBackgrounds(N);
   i.useEffect(() => {
     (0, u.XV)()
   }, []);
-  let x = (0, a.cj)([d.Z], () => D ? d.Z.videoFilterAssets : {}),
+  let x = (0, o.cj)([d.Z], () => D ? d.Z.videoFilterAssets : {}),
     L = i.useMemo(() => Object.values(x).filter(e => e.type === m.xV.BACKGROUND), [x]),
     j = (0, s.O)(),
-    k = {
+    M = {
       isVideoBackgroundSupported: w,
       onSelectBackgroundOption: I,
       selectedBackgroundOption: O
     },
-    M = i.useRef(k);
+    k = i.useRef(M);
   i.useEffect(() => {
-    M.current = k
+    k.current = M
   }), i.useEffect(() => {
     let {
       isVideoBackgroundSupported: e,
       onSelectBackgroundOption: t,
       selectedBackgroundOption: n
-    } = M.current;
+    } = k.current;
     e ? (0, _.FU)(n, S, {
       track: false
     }).catch(() => t(null)) : null != n && t(null)
@@ -117,7 +117,7 @@ function S(e) {
       })
     },
     B = () => {
-      (0, o.ZDy)(async () => {
+      (0, a.ZDy)(async () => {
         let {
           default: e
         } = await n.e("87200").then(n.bind(n, 592163));
@@ -129,10 +129,10 @@ function S(e) {
         }))
       })
     };
-  return w ? (0, r.jsxs)(o.xJW, {
+  return w ? (0, r.jsxs)(a.xJW, {
     title: b.intl.string(b.t.lZTUPj),
     className: C,
-    children: [null != R ? (0, r.jsx)(o.kzN, {
+    children: [null != R ? (0, r.jsx)(a.kzN, {
       className: y.videoBackgroundError,
       children: R
     }) : null, (0, r.jsx)(h.Z, {

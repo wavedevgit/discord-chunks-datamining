@@ -5,9 +5,9 @@ require("./980754.js"), require("./388685.js"), require("./368063.js");
 var Chunk328865 = require("./328865.js");
 require("./2831.js");
 var Chunk264344 = require("./264344.js"),
-  a = require.n(Chunk264344);
+  o = require.n(Chunk264344);
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -15,7 +15,7 @@ function o(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-window.platform = a(), null == window.ResizeObserver && (window.ResizeObserver = Chunk328865.d), "object" != typeof globalThis && (window.globalThis = window), Map.prototype.toJSON = function() {
+window.platform = o(), null == window.ResizeObserver && (window.ResizeObserver = Chunk328865.d), "object" != typeof globalThis && (window.globalThis = window), Map.prototype.toJSON = function() {
   return Array.from(this)
 }, Set.prototype.toJSON = function() {
   return Array.from(this)
@@ -37,7 +37,7 @@ window.platform = a(), null == window.ResizeObserver && (window.ResizeObserver =
       }
     }
     constructor(e = 0, t = 0, n = 0, r = 1) {
-      o(this, "x", true), o(this, "y", true), o(this, "z", true), o(this, "w", true), this.x = e, this.y = t, this.z = n, this.w = r
+      a(this, "x", true), a(this, "y", true), a(this, "z", true), a(this, "w", true), this.x = e, this.y = t, this.z = n, this.w = r
     }
   }
   null == window.DOMPoint && (window.DOMPoint = module)
@@ -71,7 +71,7 @@ window.platform = a(), null == window.ResizeObserver && (window.ResizeObserver =
       }
     }
     constructor(e = 0, t = 0, n = 0, r = 0) {
-      o(this, "x", true), o(this, "y", true), o(this, "width", true), o(this, "height", true), this.x = e, this.y = t, this.width = n, this.height = r
+      a(this, "x", true), a(this, "y", true), a(this, "width", true), a(this, "height", true), this.x = e, this.y = t, this.width = n, this.height = r
     }
   }
   null == window.DOMRect && (window.DOMRect = module)

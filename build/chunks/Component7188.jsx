@@ -68,8 +68,8 @@ function C(e, t) {
   if (null == e) return {};
   var n, r, i = N(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -77,8 +77,8 @@ function C(e, t) {
 function N(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -86,7 +86,7 @@ function R(e) {
   let {
     className: t
   } = e;
-  return (0, r.jsx)(o.ewm, {
+  return (0, r.jsx)(a.ewm, {
     size: "md",
     color: "currentColor",
     className: t
@@ -119,15 +119,15 @@ function w(e) {
       analyticsLocations: I,
       parentAnalyticsLocation: S
     } = (0, s.ZP)(),
-    N = (0, a.e7)([p.default], () => m.ZP.isPremium(p.default.getCurrentUser(), y.p9.TIER_1)),
-    w = (0, a.e7)([_.Z], () => _.Z.getChannel(null == n ? true : n.channelId)),
+    N = (0, o.e7)([p.default], () => m.ZP.isPremium(p.default.getCurrentUser(), y.p9.TIER_1)),
+    w = (0, o.e7)([_.Z], () => _.Z.getChannel(null == n ? true : n.channelId)),
     D = i.useMemo(() => null != n ? [n] : [], [n]),
     x = i.useCallback(() => {
       null != w && (0, f.Z)(w.getGuildId(), w.id, I)
     }, [w, I]);
   if (null == n || null == w) return null;
   let L = R;
-  return t || N || (L = P), (0, r.jsx)(o.yRy, {
+  return t || N || (L = P), (0, r.jsx)(a.yRy, {
     targetElementRef: v,
     position: "top",
     renderPopout: e => {
@@ -148,7 +148,7 @@ function w(e) {
         })
       })
     },
-    animation: o.yRy.Animation.FADE,
+    animation: a.yRy.Animation.FADE,
     children: e => (0, r.jsx)(E.Z, T(A(T({}, e), {
       buttonRef: v,
       label: O.intl.string(O.t.tmiYpK),

@@ -43,7 +43,7 @@ function f() {
 }
 
 function _() {
-  u = (0, Chunk481060.h7j)(e => (0, r.jsx)(o.default, c({
+  u = (0, Chunk481060.h7j)(e => (0, r.jsx)(a.default, c({
     title: s.intl.string(s.t["zQ1+Jy"]),
     body: s.intl.string(s.t.K1gWXl),
     secondaryConfirmText: s.intl.string(s.t.XAiAgI),

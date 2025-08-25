@@ -1,1 +1,0 @@
-{"id":"742139","type":"experiment","data":{"kind":"user","id":"2025-06_skill_trees_progress_bar","commonTriggerPoint":"Chunk987338.$P.CONNECTION_OPEN","label":"Skill Trees New Progress Bar","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"enabled","config":{"enabled":true}}]},"fromModule":{"id":"91488"}}

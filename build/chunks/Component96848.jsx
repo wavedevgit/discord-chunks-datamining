@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk692547 = require("./692547.js"),
   Chunk481060 = require("./481060.js"),
   Chunk907040 = require("./907040.jsx"),
@@ -26,9 +26,9 @@ function g(e) {
   let {
     setEmojiConfetti: t,
     emojiConfetti: n
-  } = e, [a, d] = i.useState(false), f = i.useRef(null), g = (0, u.ZP)({
+  } = e, [o, d] = i.useState(false), f = i.useRef(null), g = (0, u.ZP)({
     location: "GiftEmoji"
-  }), E = o()(p.text, g && p.refresh), b = e => (0, r.jsxs)("div", {
+  }), E = a()(p.text, g && p.refresh), b = e => (0, r.jsxs)("div", {
     className: p.customGiftContent,
     children: [(0, r.jsxs)("div", {
       className: p.customGiftHeader,
@@ -48,7 +48,7 @@ function g(e) {
   };
   return (0, r.jsx)(l.yRy, {
     targetElementRef: f,
-    shouldShow: a,
+    shouldShow: o,
     position: "bottom",
     align: "left",
     onRequestClose: () => d(false),
@@ -75,7 +75,7 @@ function g(e) {
       })
     },
     children: () => (0, r.jsx)(l.P3F, {
-      className: o()(p.container, g && p.refresh),
+      className: a()(p.container, g && p.refresh),
       onClick: () => d(true),
       innerRef: f,
       children: (null == n ? true : n.name) == null ? (0, r.jsxs)("div", {

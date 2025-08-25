@@ -2,24 +2,24 @@
 /** chunk id: 962293, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  B: () => o
+  B: () => a
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk481060 = require("./481060.js"),
   Chunk231631 = require("./231631.js");
 
-function o(e) {
+function a(e) {
   let {
     onClick: t
   } = e;
   return (0, r.jsx)(i.P3F, {
-    className: a.closeButton,
+    className: o.closeButton,
     onClick: t,
     children: (0, r.jsx)(i.k$p, {
       size: "md",
       color: "currentColor",
-      className: a.closeIcon
+      className: o.closeIcon
     })
   })
 }

@@ -82,7 +82,7 @@ function C(e) {
 function N(e) {
   let {
     guildId: t
-  } = e, n = o.default.getId();
+  } = e, n = a.default.getId();
   return y(t).updateMembersByMemberIds([n])
 }
 
@@ -160,17 +160,17 @@ function j(e) {
   } = e, r = Object.values(n);
   if (0 === r.length) returnfalse;
   let i = y(t),
-    a = r.reduce((e, t) => {
+    o = r.reduce((e, t) => {
       if (null != t.owner) {
         let n = t.owner.user.id;
         e.push(n)
       }
       return e
     }, []);
-  return i.updateMembersByMemberIds(a)
+  return i.updateMembersByMemberIds(o)
 }
 
-function k(e) {
+function M(e) {
   let {
     guildId: t,
     guildMember: n
@@ -178,7 +178,7 @@ function k(e) {
   return y(t).updateMembersByMemberIds([n.user.id])
 }
 
-function M(e) {
+function k(e) {
   let t = false;
   return e.guilds.forEach(e => {
     let {
@@ -195,18 +195,18 @@ function U(e) {
     let {
       id: n,
       activity_instances: r
-    } = e, i = y(n), a = [];
+    } = e, i = y(n), o = [];
     null == r || r.forEach(e => {
       var t;
       null == (t = e.participants) || t.forEach(e => {
-        (0, u.lm)(e.member) && a.push(e.member)
+        (0, u.lm)(e.member) && o.push(e.member)
       })
-    }), t = i.updateServerMembers(a) || t
+    }), t = i.updateServerMembers(o) || t
   }), t
 }
 
 function G(e) {
-  return E ? E = false : v(true), M(e)
+  return E ? E = false : v(true), k(e)
 }
 
 function B(e) {
@@ -291,7 +291,7 @@ function q(e) {
 }
 
 function X(e) {
-  var t, n, r, i, a, o;
+  var t, n, r, i, o, a;
   let s, l, {
       guildId: c,
       members: u,
@@ -306,16 +306,16 @@ function X(e) {
         member: n,
         source_invite_code: r,
         join_source_type: i,
-        join_source_application_id: a,
-        join_source_channel_id: o,
+        join_source_application_id: o,
+        join_source_channel_id: a,
         inviter_id: s
       } = t, l = n.user;
       return e.memberIds.push(l.id), e.memberSupplementals.push({
         userId: l.id,
         sourceInviteCode: r,
         joinSourceType: i,
-        joinSourceApplicationId: a,
-        joinSourceChannelId: o,
+        joinSourceApplicationId: o,
+        joinSourceChannelId: a,
         inviterId: s
       }), e
     }, {
@@ -331,11 +331,11 @@ function X(e) {
     elasticSearchCursor: {
       before: (0, _.si)({
         joinedAt: null == s || null == (t = s.member) ? true : t.joined_at,
-        userId: null != (a = null == s || null == (n = s.member) ? true : n.user.id) ? a : m.lds
+        userId: null != (o = null == s || null == (n = s.member) ? true : n.user.id) ? o : m.lds
       }),
       after: (0, _.si)({
         joinedAt: null == l || null == (r = l.member) ? true : r.joined_at,
-        userId: null != (o = null == l || null == (i = l.member) ? true : i.user.id) ? o : m.lds
+        userId: null != (a = null == l || null == (i = l.member) ? true : i.user.id) ? a : m.lds
       })
     }
   }, false);
@@ -413,7 +413,7 @@ let J = new Q(Chunk570140.Z, {
   GUILD_MEMBER_REMOVE: R,
   GUILD_ROLE_UPDATE: P,
   GUILD_ROLE_DELETE: P,
-  GUILD_MEMBER_PROFILE_UPDATE: k,
+  GUILD_MEMBER_PROFILE_UPDATE: M,
   GUILD_ROLE_MEMBER_REMOVE: w,
   GUILD_ROLE_MEMBER_ADD: w,
   THREAD_MEMBER_LIST_UPDATE: D,

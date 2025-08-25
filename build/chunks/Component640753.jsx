@@ -27,11 +27,11 @@ function m(e) {
     color: E,
     count: b,
     emojiSize: y
-  } = e, O = (0, a.e7)([u.Z], () => u.Z.getEffectForEmojiId(t, n, m)), v = g ? h : p, I = i.useMemo(() => (0, _.Zn)(m, E, t, {
+  } = e, O = (0, o.e7)([u.Z], () => u.Z.getEffectForEmojiId(t, n, m)), v = g ? h : p, I = i.useMemo(() => (0, _.Zn)(m, E, t, {
     key: O,
     messageId: n
-  }), [E, O, m, t, n]), [T, S] = i.useState(false), A = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), C = c.Yk.useSetting(), N = i.useCallback(() => {
-    o.Z.dispatch({
+  }), [E, O, m, t, n]), [T, S] = i.useState(false), A = (0, o.e7)([s.Z], () => s.Z.useReducedMotion), C = c.Yk.useSetting(), N = i.useCallback(() => {
+    a.Z.dispatch({
       type: "BURST_REACTION_EFFECT_CLEAR",
       channelId: t,
       messageId: n,

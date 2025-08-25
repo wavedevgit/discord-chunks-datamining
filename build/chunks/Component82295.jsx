@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk357742 = require("./357742.js");
 let l = e => {
@@ -17,8 +17,8 @@ let l = e => {
     "aria-label": i,
     id: l
   } = e;
-  return (0, r.jsx)(o.H, {
-    className: a()(t, s.container, s.header),
+  return (0, r.jsx)(a.H, {
+    className: o()(t, s.container, s.header),
     "aria-label": i,
     id: l,
     children: n

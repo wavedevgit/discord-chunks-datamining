@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk658722 = require("./658722.js"),
   l = require.n(Chunk658722),
   Chunk442837 = require("./442837.js"),
@@ -68,17 +68,17 @@ function j(e, t) {
   return n
 }
 
-function k(e, t) {
+function M(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function M(e) {
+function k(e) {
   let t = () => {
     C.SE.updateSetting(e ? v.Z.getGuildIds() : [])
   };
-  (0, _.h7j)(e => (0, r.jsx)(_.ConfirmModal, k(L({
+  (0, _.h7j)(e => (0, r.jsx)(_.ConfirmModal, M(L({
     header: P.intl.string(P.t["uUr+GR"]),
     confirmText: P.intl.string(P.t.gm1Ven),
     cancelText: P.intl.string(P.t.p89ACg),
@@ -97,11 +97,11 @@ function U() {
     t = Chunk695346.no.useSetting(),
     n = (0, Chunk362352.Yd)("activity privacy tab"),
     i = Chunk358085.isPlatformEmbedded ? Chunk388032.intl.string(Chunk388032.t.MznbeH) : Chunk388032.intl.string(Chunk388032.t.oKqC4u),
-    a = e => {
-      C.no.updateSetting(e ? u.GI.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS : u.GI.ACTIVITY_STATUS_OFF), M(e)
+    o = e => {
+      C.no.updateSetting(e ? u.GI.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS : u.GI.ACTIVITY_STATUS_OFF), k(e)
     },
     s = e => {
-      C.no.updateSetting(e), M(e !== u.GI.ACTIVITY_STATUS_OFF)
+      C.no.updateSetting(e), k(e !== u.GI.ACTIVITY_STATUS_OFF)
     },
     l = [{
       value: Chunk524437.GI.ACTIVITY_STATUS_ON,
@@ -142,14 +142,14 @@ function U() {
             onChange: e => s(e)
           })]
         }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
-          className: o()(Chunk197571.marginBottom20, Chunk197571.marginTop20)
+          className: a()(Chunk197571.marginBottom20, Chunk197571.marginTop20)
         })]
       }) : (0, Chunk951288.jsx)(Chunk481060.j7V, {
         value: exports === Chunk524437.GI.ACTIVITY_STATUS_OFF,
         note: Chunk388032.intl.format(Chunk388032.t["+5/xu7"], {
           helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.ACTIVITY_STATUS_SETTINGS)
         }),
-        onChange: e => a(!e),
+        onChange: e => o(!e),
         children: Chunk388032.intl.string(Chunk388032.t.D5GXTU)
       })]
     })
@@ -217,13 +217,13 @@ let Z = e => {
 function F(e) {
   let {
     account: t
-  } = e, [n, a] = i.useState(t.showActivity), o = (0, h.ZP)();
+  } = e, [n, o] = i.useState(t.showActivity), a = (0, h.ZP)();
 
   function s(e) {
-    a(e), p.Z.setShowActivity(t.type, t.id, e)
+    o(e), p.Z.setShowActivity(t.type, t.id, e)
   }
   i.useEffect(() => {
-    a(t.showActivity)
+    o(t.showActivity)
   }, [t]);
   let l = m.Z.get(t.type);
   return (0, r.jsxs)(r.Fragment, {
@@ -237,7 +237,7 @@ function F(e) {
         children: [(0, r.jsx)("img", {
           alt: l.name,
           className: w.connectionIcon,
-          src: (0, d.wj)(o) ? l.icon.darkSVG : l.icon.lightSVG
+          src: (0, d.wj)(a) ? l.icon.darkSVG : l.icon.lightSVG
         }), (0, r.jsxs)("div", {
           children: [(0, r.jsx)(_.Text, {
             variant: "text-md/semibold",
@@ -258,8 +258,8 @@ function F(e) {
 function V() {
   let e = (0, Chunk442837.e7)([Chunk553795.Z], () => Chunk553795.Z.getAccounts()),
     t = Chunk647438.useMemo(() => module.filter(e => m.Z.isSupported(e.type) && R.vbS.has(e.type)), [module]),
-    [n, a] = Chunk647438.useState(""),
-    o = Chunk647438.useMemo(() => {
+    [n, o] = Chunk647438.useState(""),
+    a = Chunk647438.useMemo(() => {
       let e = require.trim().toLowerCase();
       return "" === module ? exports : exports.filter(t => l()(e, m.Z.get(t.type).name.toLowerCase()))
     }, [exports, require]);
@@ -277,7 +277,7 @@ function V() {
           query: require,
           onChange: Chunk120356,
           placeholder: Chunk388032.intl.string(Chunk388032.t.WPrtoa)
-        }), o.map(e => (0, r.jsx)(F, {
+        }), a.map(e => (0, r.jsx)(F, {
           account: e
         }, e.id))]
       })
@@ -294,11 +294,11 @@ function H(e) {
   } = A.b.useExperiment({
     location: "activity privacy tab"
   }), {
-    showPerGuildActivityStatusSetting: a
+    showPerGuildActivityStatusSetting: o
   } = (0, E.c)("activity privacy tab"), {
-    showUpdatedSettingsPage: o
+    showUpdatedSettingsPage: a
   } = (0, g.D)("activity privacy tab");
-  return a || o ? (0, r.jsx)(b.Z, {}) : (0, r.jsxs)(_.hjN, {
+  return o || a ? (0, r.jsx)(b.Z, {}) : (0, r.jsxs)(_.hjN, {
     className: t,
     tag: _.RB0.H1,
     title: n ? P.intl.string(P.t.Cq98yM) : null,

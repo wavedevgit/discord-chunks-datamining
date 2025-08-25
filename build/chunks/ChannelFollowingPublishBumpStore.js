@@ -35,9 +35,9 @@ function E(e) {
     optimistic: i
   } = e;
   if (i || m.has(n)) returnfalse;
-  let a = l.Z.getChannel(n),
-    o = u.default.getCurrentUser();
-  if (!(null != a && a.type === _.d4z.GUILD_ANNOUNCEMENT && (0, f.Z)(r) && (null != o && (null == (t = r.author) ? true : t.id) === o.id ? c.Z.can(_.Plq.SEND_MESSAGES, a) : c.Z.can(_.Plq.MANAGE_MESSAGES, a)) && !d.yE(Number(r.flags), _.iLy.CROSSPOSTED))) returnfalse;
+  let o = l.Z.getChannel(n),
+    a = u.default.getCurrentUser();
+  if (!(null != o && o.type === _.d4z.GUILD_ANNOUNCEMENT && (0, f.Z)(r) && (null != a && (null == (t = r.author) ? true : t.id) === a.id ? c.Z.can(_.Plq.SEND_MESSAGES, o) : c.Z.can(_.Plq.MANAGE_MESSAGES, o)) && !d.yE(Number(r.flags), _.iLy.CROSSPOSTED))) returnfalse;
   g.add(r.id)
 }
 
@@ -59,7 +59,7 @@ function O(e) {
   let {
     channelId: t
   } = e;
-  m.add(t), a.K.set(h, m), g.clear()
+  m.add(t), o.K.set(h, m), g.clear()
 }
 
 function v(e) {

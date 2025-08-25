@@ -32,12 +32,12 @@ let c = function(e) {
     className: s.buttons,
     children: [(0, r.jsxs)(l, {
       onClick: t,
-      children: [o.intl.string(o.t.QXc019), (0, r.jsx)(a.pzj, {
+      children: [a.intl.string(a.t.QXc019), (0, r.jsx)(o.pzj, {
         size: "sm"
       })]
     }), (0, r.jsxs)(l, {
       onClick: n,
-      children: [o.intl.string(o.t["8lAfuL"]), (0, r.jsx)(a.iWm, {
+      children: [a.intl.string(a.t["8lAfuL"]), (0, r.jsx)(o.iWm, {
         size: "sm"
       })]
     })]

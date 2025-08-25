@@ -45,7 +45,7 @@ let _ = () => {
   function d() {
     Chunk846027.Z.interact()
   }
-  return Chunk647438.useEffect(() => (module ? exports.current = (0, Chunk481060.h7j)(e => (0, r.jsx)(o.Modal, f({
+  return Chunk647438.useEffect(() => (module ? exports.current = (0, Chunk481060.h7j)(e => (0, r.jsx)(a.Modal, f({
     title: u.intl.string(u.t.dLLxCw),
     subtitle: u.intl.string(u.t["64lmt7"]),
     actions: [{

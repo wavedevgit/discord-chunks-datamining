@@ -27,12 +27,12 @@ module.exports = function(e, t, n) {
       return m && f(m, "normal", e), new p(true, e)
     },
     P = function(e) {
-      return T ? (a(e), C ? N(e[0], e[1], R) : N(e[0], e[1])) : C ? N(e, R) : N(e)
+      return T ? (o(e), C ? N(e[0], e[1], R) : N(e[0], e[1])) : C ? N(e, R) : N(e)
     };
   if (S) m = e.iterator;
   else if (A) m = e;
   else {
-    if (!(g = d(e))) throw new _(o(e) + " is not iterable");
+    if (!(g = d(e))) throw new _(a(e) + " is not iterable");
     if (s(g)) {
       for (E = 0, b = l(e); b > E; E++)
         if ((y = P(e[E])) && c(h, y)) return y;

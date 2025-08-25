@@ -36,7 +36,7 @@ async function y(e) {
     case b.oC.GUILD_SHOP:
       return (0, i.r)(y, O);
     case b.oC.MEMBER_APPLICATIONS:
-      return (0, a.v)(t);
+      return (0, o.v)(t);
     case b.oC.GUILD_HOME:
       return (0, l.s)(t);
     case b.oC.CHANNEL_BROWSER:
@@ -46,7 +46,7 @@ async function y(e) {
     case b.oC.CUSTOMIZE_COMMUNITY:
       return null != y && y.features.has(E.oNc.COMMUNITY);
     case b.oC.MEMBER_SAFETY:
-      return (0, o.lv)(t);
+      return (0, a.lv)(t);
     case b.oC.GUILD_BOOSTS:
       returntrue;
     case b.oC.REPORT_TO_MOD:

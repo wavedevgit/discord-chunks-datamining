@@ -16,16 +16,16 @@ function s(e) {
     privacyPolicyUrl: n
   } = e;
   return null == t && null == n ? null : (0, r.jsxs)("span", {
-    className: o.text,
+    className: a.text,
     children: [null != t && (0, r.jsx)(i.Z, {
       href: t,
-      children: a.intl.string(a.t["8S0kcH"])
+      children: o.intl.string(o.t["8S0kcH"])
     }), null != t && null != n && (0, r.jsx)("span", {
       "aria-disabled": "true",
       children: "•"
     }), null != n && (0, r.jsx)(i.Z, {
       href: n,
-      children: a.intl.string(a.t.ZpyeCg)
+      children: o.intl.string(o.t.ZpyeCg)
     })]
   })
 }

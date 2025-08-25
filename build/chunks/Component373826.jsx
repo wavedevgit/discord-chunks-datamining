@@ -56,8 +56,8 @@ function _(e, t) {
   if (null == e) return {};
   var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -65,8 +65,8 @@ function _(e, t) {
 function p(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -78,7 +78,7 @@ function h(e) {
   } = e, d = _(e, ["text", "onClick", "component"]);
   let {
     themeType: p
-  } = (0, o.z)(), h = "string" == typeof t ? t.trim() : t;
+  } = (0, a.z)(), h = "string" == typeof t ? t.trim() : t;
   if (null == h || "" === h) return null;
   let m = () => p === s.l.MODAL || p === s.l.MODAL_V2 ? (0, r.jsx)(c, f(u({
     color: "text-default"
@@ -87,7 +87,7 @@ function h(e) {
   })) : (0, r.jsx)(c, f(u({
     color: "text-default"
   }, d), {
-    children: (0, r.jsx)(a.Z, {
+    children: (0, r.jsx)(o.Z, {
       children: h
     })
   }));

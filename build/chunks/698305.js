@@ -24,7 +24,7 @@ let d = async e => {
     valid: h,
     failureReason: m
   } = await (0, c.v)({
-    type: a.Ie.NORMAL,
+    type: o.Ie.NORMAL,
     content: n,
     channel: null
   });
@@ -35,7 +35,7 @@ let d = async e => {
     }) : await r.Z.getOrEnsurePrivateChannel(t),
     E = l.Z.getChannel(g);
   if (null == E) throw Error("Failed to open private channel");
-  if (null != p)(0, o.p)({
+  if (null != p)(0, a.p)({
     channel: E,
     content: n,
     entry: p,

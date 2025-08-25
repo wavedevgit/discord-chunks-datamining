@@ -9,10 +9,10 @@ var Chunk580983 = require("./580983.js"),
   l = TypeError;
 module.exports = function(e, t) {
   var n = e.exec;
-  if (a(n)) {
+  if (o(n)) {
     var c = r(n, e, t);
     return null !== c && i(c), c
   }
-  if ("RegExp" === o(e)) return r(s, e, t);
+  if ("RegExp" === a(e)) return r(s, e, t);
   throw new l("RegExp#exec called on incompatible receiver")
 }

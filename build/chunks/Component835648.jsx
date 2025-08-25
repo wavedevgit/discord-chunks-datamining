@@ -2,12 +2,12 @@
 /** chunk id: 835648, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => M
+  Z: () => k
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk91192 = require("./91192.jsx"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -69,8 +69,8 @@ function N(e, t) {
   if (null == e) return {};
   var n, r, i = R(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -78,8 +78,8 @@ function N(e, t) {
 function R(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let P = [8, 8, 8, 8],
@@ -90,11 +90,11 @@ function D(e) {
     icon: t,
     isSelected: n,
     onClick: i,
-    listItemProps: a
+    listItemProps: o
   } = e, s = N(e, ["icon", "isSelected", "onClick", "listItemProps"]);
-  return (0, r.jsx)(c.P3F, C(S({}, a, s), {
+  return (0, r.jsx)(c.P3F, C(S({}, o, s), {
     onClick: i,
-    className: o()(I.categoryIcon, {
+    className: a()(I.categoryIcon, {
       [I.selected]: n
     }),
     children: (0, r.jsx)(t, {
@@ -104,37 +104,37 @@ function D(e) {
   }))
 }
 
-function x(e, t, n, i, a, o) {
+function x(e, t, n, i, o, a) {
   switch (e.categoryInfo.type) {
     case g.bg.FAVORITES:
       return (0, r.jsx)(D, C(S({}, i), {
         icon: c.r7p,
         onClick: t,
         isSelected: n,
-        listItemProps: a
+        listItemProps: o
       }), e.key);
     case g.bg.RECENTLY_HEARD:
       return (0, r.jsx)(D, C(S({}, i), {
         icon: c.T39,
         onClick: t,
         isSelected: n,
-        listItemProps: a
+        listItemProps: o
       }), e.key);
     case g.bg.FREQUENTLY_USED:
       return (0, r.jsx)(D, C(S({}, i), {
         icon: c.IeX,
         onClick: t,
         isSelected: n,
-        listItemProps: a
+        listItemProps: o
       }), e.key);
     case g.bg.GUILD:
-      return (0, r.jsx)(c.P3F, C(S({}, a, i), {
+      return (0, r.jsx)(c.P3F, C(S({}, o, i), {
         className: I.category,
         onClick: t,
         children: (0, r.jsx)(u.Z, {
           guild: e.categoryInfo.guild,
           isSelected: n,
-          isLocked: o
+          isLocked: a
         })
       }), e.key);
     case g.bg.DEFAULTS:
@@ -142,7 +142,7 @@ function x(e, t, n, i, a, o) {
         icon: c.gw7,
         onClick: t,
         isSelected: n,
-        listItemProps: a
+        listItemProps: o
       }), e.key);
     default:
       return null
@@ -182,32 +182,32 @@ function j(e) {
   }
 }
 
-function k(e) {
+function M(e) {
   let {
     category: t,
     categoryIndex: n,
     onClick: i,
-    isSelected: a,
-    isNitroLocked: o
+    isSelected: o,
+    isNitroLocked: a
   } = e, l = (0, s.JA)("soundboard_guild_".concat(n));
   return (0, r.jsx)(c.ua7, {
     text: L(t),
     "aria-label": j(t),
     position: "right",
-    children: e => x(t, i, a, e, l, o)
+    children: e => x(t, i, o, e, l, a)
   })
 }
 
-function M(e) {
+function k(e) {
   let {
     soundboardListRef: t,
     categories: n,
-    shouldUpsellLockedCategories: a,
-    listPadding: o = P,
+    shouldUpsellLockedCategories: o,
+    listPadding: a = P,
     guildId: s,
     inExpressionPicker: c
   } = e, u = i.useRef(null), _ = (0, l.e7)([p.default], () => p.default.getCurrentUser()), g = (0, m.I5)(_, O.p9.TIER_2), v = i.useCallback((e, t, n, i) => {
-    let o = a && (0, E.O)(e.categoryInfo, g, s),
+    let a = o && (0, E.O)(e.categoryInfo, g, s),
       l = () => {
         h.default.track(b.rMx.EXPRESSION_PICKER_CATEGORY_SELECTED, {
           location: {
@@ -220,21 +220,21 @@ function M(e) {
           pack_id: null
         }), n()
       };
-    return (0, r.jsx)(k, {
+    return (0, r.jsx)(M, {
       category: e,
       categoryIndex: t,
       onClick: l,
       isSelected: i,
-      isNitroLocked: o
+      isNitroLocked: a
     })
-  }, [s, a, g]);
+  }, [s, o, g]);
   return (0, r.jsx)(f.Z, {
     className: c ? I.expressionPickerCategoryList : I.categoryList,
     categoryListRef: u,
     expressionsListRef: t,
     store: d.Wq,
     categories: n,
-    listPadding: o,
+    listPadding: a,
     renderCategoryListItem: v,
     rowCount: n.length,
     categoryHeight: w

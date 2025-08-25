@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
-  o = require.n(Chunk512722),
+  a = require.n(Chunk512722),
   Chunk278074 = require("./278074.js"),
   Chunk979554 = require("./979554.js"),
   Chunk442837 = require("./442837.js"),
@@ -50,8 +50,8 @@ let T = e => {
       avatarDecoration: t,
       fallbackLabel: n
     } = e, i = (0, c.e7)([m.default], () => m.default.getCurrentUser()), {
-      avatarDecorationSrc: a,
-      eventHandlers: o
+      avatarDecorationSrc: o,
+      eventHandlers: a
     } = (0, f.Z)({
       user: i,
       onlyAnimateOnHover: true,
@@ -59,28 +59,28 @@ let T = e => {
       size: (0, d.y9)(u.EFr.SIZE_40)
     });
     return null == t ? n : (0, r.jsx)("img", I({
-      src: a,
+      src: o,
       alt: t.label,
       className: y.avatarDecoration
-    }, o))
+    }, a))
   },
   S = e => {
     var t;
     let {
       profileEffect: n,
       fallbackLabel: i
-    } = e, a = (0, h.V)(null == n ? true : n.id);
-    if (null == a) return i;
+    } = e, o = (0, h.V)(null == n ? true : n.id);
+    if (null == o) return i;
     let {
-      accessibilityLabel: o,
+      accessibilityLabel: a,
       thumbnailPreviewSrc: s,
       title: l
-    } = null != (t = null == a ? true : a.config) ? t : {};
+    } = null != (t = null == o ? true : o.config) ? t : {};
     return (0, r.jsxs)("div", {
       className: y.profileEffectContainer,
       children: [(0, r.jsx)("img", {
         src: O,
-        alt: o,
+        alt: a,
         className: y.profileEffectBackground
       }), (0, r.jsx)("img", {
         className: y.profileEffect,
@@ -93,14 +93,14 @@ let T = e => {
     let {
       nameplate: t,
       fallbackLabel: n
-    } = e, [a, o] = i.useState(false), s = i.useCallback(() => o(true), []), l = i.useCallback(() => o(false), []);
+    } = e, [o, a] = i.useState(false), s = i.useCallback(() => a(true), []), l = i.useCallback(() => a(false), []);
     return null == t ? n : (0, r.jsx)("div", {
       className: y.nameplateContainer,
       onMouseEnter: s,
       onMouseLeave: l,
       children: (0, r.jsx)(p.Z, {
         nameplate: (0, E.EU)(t),
-        hovered: a,
+        hovered: o,
         placement: _.i.MINI_PREVIEW
       })
     })
@@ -110,19 +110,19 @@ let T = e => {
     let {
       product: n,
       sku: i,
-      fallbackLabel: a
+      fallbackLabel: o
     } = e, u = null == i ? true : i.id, d = (0, c.e7)([g.Z], () => g.Z.getProduct(null == i ? true : i.id)), f = null != n ? n : d, [_] = null != (t = null == f ? true : f.items) ? t : [];
     return true !== u && u in b.K ? b.K[u].render({
       animationState: "on_hover",
       className: y.externalProductAsset
-    }) : (0, s.EQ)(null == _ ? true : _.type).with(l.Z.AVATAR_DECORATION, () => (o()(_.type === l.Z.AVATAR_DECORATION, "ts-match checked the type"), (0, r.jsx)(T, {
+    }) : (0, s.EQ)(null == _ ? true : _.type).with(l.Z.AVATAR_DECORATION, () => (a()(_.type === l.Z.AVATAR_DECORATION, "ts-match checked the type"), (0, r.jsx)(T, {
       avatarDecoration: _,
-      fallbackLabel: a
-    }))).with(l.Z.PROFILE_EFFECT, () => (o()(_.type === l.Z.PROFILE_EFFECT, "ts-match checked the type"), (0, r.jsx)(S, {
+      fallbackLabel: o
+    }))).with(l.Z.PROFILE_EFFECT, () => (a()(_.type === l.Z.PROFILE_EFFECT, "ts-match checked the type"), (0, r.jsx)(S, {
       profileEffect: _,
-      fallbackLabel: a
-    }))).with(l.Z.NAMEPLATE, () => (o()(_.type === l.Z.NAMEPLATE, "ts-match checked the type"), (0, r.jsx)(A, {
+      fallbackLabel: o
+    }))).with(l.Z.NAMEPLATE, () => (a()(_.type === l.Z.NAMEPLATE, "ts-match checked the type"), (0, r.jsx)(A, {
       nameplate: _,
-      fallbackLabel: a
-    }))).otherwise(() => a)
+      fallbackLabel: o
+    }))).otherwise(() => o)
   }

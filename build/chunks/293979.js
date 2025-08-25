@@ -8,7 +8,7 @@ require.d(exports, {
 }), require("./388685.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js");
 var Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
-  a = require.n(Chunk512722),
+  o = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
@@ -65,8 +65,8 @@ function R(e, t) {
   let {
     application: n,
     customId: i,
-    components: a
-  } = e, s = (0, d.Z)(), [c, f] = r.useState(null), [_, p] = r.useState(null), [h, m] = r.useState({}), g = (0, o.e7)([v.Z], () => v.Z.getModalState(_), [_]), E = (0, u.Z)(() => new Set), b = r.useCallback(() => {
+    components: o
+  } = e, s = (0, d.Z)(), [c, f] = r.useState(null), [_, p] = r.useState(null), [h, m] = r.useState({}), g = (0, a.e7)([v.Z], () => v.Z.getModalState(_), [_]), E = (0, u.Z)(() => new Set), b = r.useCallback(() => {
     f(null), p(null), A(E) && p(D(e, s))
   }, [s, e, E]);
   r.useEffect(() => {
@@ -80,7 +80,7 @@ function R(e, t) {
     applicationName: O
   } = N(n);
   return {
-    components: a,
+    components: o,
     applicationIconURL: y,
     applicationName: O,
     submissionState: g,
@@ -99,20 +99,20 @@ function P(e) {
   } = e, {
     applicationIconURL: r,
     applicationName: i,
-    applicationBaseUrl: o
+    applicationBaseUrl: a
   } = N(t), s = h.Z.getChannel(e.channelId);
-  a()(null != s, "channel should not be null");
+  o()(null != s, "channel should not be null");
   let l = {
     instance_id: "".concat(e.channelId, ":").concat(t.id, ":").concat(n),
     custom_id: n,
     channel_id: e.channelId
   };
   null != s.guild_id && "" !== s.guild_id && (l.guild_id = s.guild_id);
-  let c = new URL(null != o ? o : "");
+  let c = new URL(null != a ? a : "");
   return c.pathname = e.iframePath, {
     applicationIconURL: r,
     applicationName: i,
-    applicationBaseUrl: o,
+    applicationBaseUrl: a,
     queryParams: l,
     iframeUrl: c.toString()
   }
@@ -159,7 +159,7 @@ let w = (e, t) => t.map(t => {
         type: t.type, component: w(e, [t.component])[0]
       };
     default:
-      a()(false, "unreachable")
+      o()(false, "unreachable")
   }
 });
 
@@ -167,8 +167,8 @@ function D(e, t) {
   let n = y.default.fromTimestamp(Date.now()),
     r = e.channelId,
     i = h.Z.getChannel(r);
-  a()(null != i, "expected channel");
-  let o = w(e.customId, e.components);
+  o()(null != i, "expected channel");
+  let a = w(e.customId, e.components);
   (0, _.kz)(n, {
     data: {
       interactionType: c.B8.MODAL_SUBMIT,
@@ -186,7 +186,7 @@ function D(e, t) {
         data: {
           id: e.id,
           custom_id: e.customId,
-          components: o
+          components: a
         },
         session_id: p.default.getSessionId(),
         nonce: n

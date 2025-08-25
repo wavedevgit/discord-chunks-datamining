@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk100527 = require("./100527.js"),
@@ -57,7 +57,7 @@ function O(e) {
   let {
     className: t,
     iconOnly: n
-  } = e, a = (0, s.e7)([_.Z, f.Z], () => {
+  } = e, o = (0, s.e7)([_.Z, f.Z], () => {
     let e = f.Z.getChannel(_.Z.getChannelId());
     return (null == e ? true : e.isPrivate()) ? h.ZY5.DM_CHANNEL : h.ZY5.GUILD_CHANNEL
   }), {
@@ -67,14 +67,14 @@ function O(e) {
     p.default.track(h.rMx.PREMIUM_UPSELL_VIEWED, {
       type: "longer messages inline",
       location: {
-        location_page: a,
+        location_page: o,
         location_section: h.jXE.CHANNEL_TEXT_AREA
       },
       location_stack: E
     })
-  }, [a, E]);
+  }, [o, E]);
   let O = () => (0, r.jsxs)("div", {
-      className: o()(g.root, t),
+      className: a()(g.root, t),
       children: [(0, r.jsx)(l.SrA, {
         size: "md",
         className: g.premium,

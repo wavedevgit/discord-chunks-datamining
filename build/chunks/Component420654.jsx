@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk785717 = require("./785717.jsx"),
@@ -59,7 +59,7 @@ let E = 57.75,
     let {
       user: t,
       onClose: n,
-      bio: a,
+      bio: o,
       hidePersonalInformation: p,
       viewFullBioDisabled: m = false
     } = e, {
@@ -76,13 +76,13 @@ let E = 57.75,
     }, N = e => {
       null == S.current || S.current.contains(e.relatedTarget) || (S.current.scrollTop = 0)
     };
-    return p || null == a || "" === a ? null : (0, r.jsxs)("div", {
+    return p || null == o || "" === o ? null : (0, r.jsxs)("div", {
       children: [(0, r.jsx)("div", {
         ref: A,
-        className: o()(_.descriptionClamp, I && _.maxBioHeight),
+        className: a()(_.descriptionClamp, I && _.maxBioHeight),
         onBlur: N,
         children: (0, r.jsx)(d.Z, {
-          userBio: a,
+          userBio: o,
           setLineClamp: false,
           textColor: "header-primary"
         })

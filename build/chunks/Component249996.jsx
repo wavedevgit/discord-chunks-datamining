@@ -17,12 +17,12 @@ function c(e) {
     label: n
   } = e, c = i.useMemo(() => {
     switch (t) {
-      case o.Q4.BLUR:
-        return a.XBm;
-      case o.Q4.BLOCK:
-        return a.t6m;
-      case o.Q4.SHOW:
-        return a.tEF;
+      case a.Q4.BLUR:
+        return o.XBm;
+      case a.Q4.BLOCK:
+        return o.t6m;
+      case a.Q4.SHOW:
+        return o.tEF;
       default:
         return null
     }

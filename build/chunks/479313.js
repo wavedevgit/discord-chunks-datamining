@@ -13,7 +13,7 @@ require.d(exports, {
 }), require("./35282.js");
 var Chunk647438 = require("./647438.js"),
   Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk399606 = require("./399606.js"),
   Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
@@ -60,11 +60,11 @@ async function O(e) {
   var t, n;
   let r, i;
   if (!p.Z.shouldFetch(e)) return;
-  let o = Date.now();
+  let a = Date.now();
   l.Z.dispatch({
     type: "REQUEST_CHANNEL_SUMMARIES",
     channelId: e,
-    requestedAt: o
+    requestedAt: a
   });
   try {
     i = await s.tn.get({
@@ -75,12 +75,12 @@ async function O(e) {
     r = new c.Hx(e)
   }
   let u = (null == i || null == (t = i.body) ? true : t.summaries) instanceof Array ? i.body.summaries : null != (n = null == i ? true : i.body) ? n : [];
-  u = a().takeRight(u, m), l.Z.dispatch({
+  u = o().takeRight(u, m), l.Z.dispatch({
     type: "RECEIVE_CHANNEL_SUMMARIES",
     channelId: e,
     summaries: u,
     error: null != r ? r : true,
-    requestedAt: o,
+    requestedAt: a,
     receivedAt: Date.now()
   })
 }
@@ -154,7 +154,7 @@ async function N(e) {
     useChannelAffinities: i = true
   } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
   e = null != e ? e : [];
-  let a = Date.now();
+  let o = Date.now();
   if (0 === (e = e.concat(p.Z.defaultChannelIds({
       withQuickSwitcher: r,
       withChannelAffinities: i
@@ -171,7 +171,7 @@ async function N(e) {
   l.Z.dispatch({
     type: "REQUEST_CHANNEL_SUMMARIES_BULK",
     channelIds: e,
-    requestedAt: a
+    requestedAt: o
   });
   try {
     n = await s.tn.post({
@@ -184,12 +184,12 @@ async function N(e) {
   } catch (e) {
     t = new c.Hx(e)
   }
-  let o = null == n ? true : n.body.summaries;
+  let a = null == n ? true : n.body.summaries;
   l.Z.dispatch({
     type: "RECEIVE_CHANNEL_SUMMARIES_BULK",
-    requestedAt: a,
+    requestedAt: o,
     receivedAt: Date.now(),
-    summaries: o,
+    summaries: a,
     requestArgs: {
       channelIds: e
     },
@@ -235,7 +235,7 @@ let w = {
     let {
       channelIds: t = []
     } = e;
-    return R(t), (0, o.Wu)([p.Z], () => p.Z.topSummaries(), [])
+    return R(t), (0, a.Wu)([p.Z], () => p.Z.topSummaries(), [])
   },
   deleteSummary: P
 }

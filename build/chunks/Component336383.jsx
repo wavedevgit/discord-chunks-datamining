@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk785717 = require("./785717.jsx"),
@@ -62,8 +62,8 @@ function O(e, t) {
   if (null == e) return {};
   var n, r, i = v(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -71,15 +71,15 @@ function O(e, t) {
 function v(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let I = Chunk647438.forwardRef(function(e, t) {
   var {
     children: n,
     className: i,
-    subsection: a,
+    subsection: o,
     onAction: g,
     onClose: b,
     "aria-label": v,
@@ -97,7 +97,7 @@ let I = Chunk647438.forwardRef(function(e, t) {
     "aria-labelledby": I,
     children: (0, r.jsx)(d.Z.Overlay, y(E({
       ref: t,
-      className: o()(m.card, i)
+      className: a()(m.card, i)
     }, T), {
       children: n
     }))
@@ -115,12 +115,12 @@ let I = Chunk647438.forwardRef(function(e, t) {
         }), (0, u.openUserProfileModal)(E({
           section: _.oh.ACTIVITY,
           sourceAnalyticsLocations: A,
-          subsection: a
+          subsection: o
         }, C)), null == b || b()
       },
       children: (0, r.jsx)(d.Z.Overlay, y(E({
         ref: t,
-        className: o()(m.card, i)
+        className: a()(m.card, i)
       }, T), {
         children: n
       }))

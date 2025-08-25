@@ -32,29 +32,29 @@ let f = {
       var t;
       let n = null == e || null == (t = e.textAndImages) ? true : t.explicitContentSettings;
       return {
-        [a.n.GUILD]: null == n ? true : n.explicitContentGuilds,
-        [a.n.FRIEND_DM]: null == n ? true : n.explicitContentFriendDm,
-        [a.n.NON_FRIEND_DM]: null == n ? true : n.explicitContentNonFriendDm
+        [o.n.GUILD]: null == n ? true : n.explicitContentGuilds,
+        [o.n.FRIEND_DM]: null == n ? true : n.explicitContentFriendDm,
+        [o.n.NON_FRIEND_DM]: null == n ? true : n.explicitContentNonFriendDm
       }
     },
     getUserSettingsWithDefaults: e => {
       var t, n, r;
-      let o = null != e ? e : {
-        [a.n.GUILD]: null == (t = i.Sh.getSetting()) ? true : t.explicitContentGuilds,
-        [a.n.FRIEND_DM]: null == (n = i.Sh.getSetting()) ? true : n.explicitContentFriendDm,
-        [a.n.NON_FRIEND_DM]: null == (r = i.Sh.getSetting()) ? true : r.explicitContentNonFriendDm
+      let a = null != e ? e : {
+        [o.n.GUILD]: null == (t = i.Sh.getSetting()) ? true : t.explicitContentGuilds,
+        [o.n.FRIEND_DM]: null == (n = i.Sh.getSetting()) ? true : n.explicitContentFriendDm,
+        [o.n.NON_FRIEND_DM]: null == (r = i.Sh.getSetting()) ? true : r.explicitContentNonFriendDm
       };
       return {
-        [a.n.GUILD]: (0, s.ec)({
-          setting: null == o ? true : o[a.n.GUILD]
+        [o.n.GUILD]: (0, s.ec)({
+          setting: null == a ? true : a[o.n.GUILD]
         }),
-        [a.n.FRIEND_DM]: (0, s.ec)({
-          setting: null == o ? true : o[a.n.FRIEND_DM],
+        [o.n.FRIEND_DM]: (0, s.ec)({
+          setting: null == a ? true : a[o.n.FRIEND_DM],
           isDm: true,
           isFriend: true
         }),
-        [a.n.NON_FRIEND_DM]: (0, s.ec)({
-          setting: null == o ? true : o[a.n.NON_FRIEND_DM],
+        [o.n.NON_FRIEND_DM]: (0, s.ec)({
+          setting: null == a ? true : a[o.n.NON_FRIEND_DM],
           isDm: true
         })
       }
@@ -72,29 +72,29 @@ let f = {
       var t;
       let n = null == e || null == (t = e.textAndImages) ? true : t.goreContentSettings;
       return {
-        [a.n.GUILD]: null == n ? true : n.goreContentGuilds,
-        [a.n.FRIEND_DM]: null == n ? true : n.goreContentFriendDm,
-        [a.n.NON_FRIEND_DM]: null == n ? true : n.goreContentNonFriendDm
+        [o.n.GUILD]: null == n ? true : n.goreContentGuilds,
+        [o.n.FRIEND_DM]: null == n ? true : n.goreContentFriendDm,
+        [o.n.NON_FRIEND_DM]: null == n ? true : n.goreContentNonFriendDm
       }
     },
     getUserSettingsWithDefaults: e => {
       var t, n, r;
-      let o = null != e ? e : {
-        [a.n.GUILD]: null == (t = i.j7.getSetting()) ? true : t.goreContentGuilds,
-        [a.n.FRIEND_DM]: null == (n = i.j7.getSetting()) ? true : n.goreContentFriendDm,
-        [a.n.NON_FRIEND_DM]: null == (r = i.j7.getSetting()) ? true : r.goreContentNonFriendDm
+      let a = null != e ? e : {
+        [o.n.GUILD]: null == (t = i.j7.getSetting()) ? true : t.goreContentGuilds,
+        [o.n.FRIEND_DM]: null == (n = i.j7.getSetting()) ? true : n.goreContentFriendDm,
+        [o.n.NON_FRIEND_DM]: null == (r = i.j7.getSetting()) ? true : r.goreContentNonFriendDm
       };
       return {
-        [a.n.GUILD]: (0, l._i)({
-          setting: null == o ? true : o[a.n.GUILD]
+        [o.n.GUILD]: (0, l._i)({
+          setting: null == a ? true : a[o.n.GUILD]
         }),
-        [a.n.FRIEND_DM]: (0, l._i)({
-          setting: null == o ? true : o[a.n.FRIEND_DM],
+        [o.n.FRIEND_DM]: (0, l._i)({
+          setting: null == a ? true : a[o.n.FRIEND_DM],
           isDm: true,
           isFriend: true
         }),
-        [a.n.NON_FRIEND_DM]: (0, l._i)({
-          setting: null == o ? true : o[a.n.NON_FRIEND_DM],
+        [o.n.NON_FRIEND_DM]: (0, l._i)({
+          setting: null == a ? true : a[o.n.NON_FRIEND_DM],
           isDm: true
         })
       }

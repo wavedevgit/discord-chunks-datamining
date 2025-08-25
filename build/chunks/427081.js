@@ -86,9 +86,9 @@ class N extends Chunk147913.Z {
         continue
       }
     }
-    let a = (0, Chunk937797.CD)(Chunk46140.dr.QUESTS_MANAGER);
+    let o = (0, Chunk937797.CD)(Chunk46140.dr.QUESTS_MANAGER);
     for (let t of Object.keys(Chunk147913)) {
-      let o = Chunk147913[exports];
+      let a = Chunk147913[exports];
       for (let i of require.values()) {
         let n = Chunk147913.config.taskConfigV2.tasks[Chunk754700.X.PLAY_ON_DESKTOP];
         if (!A(Chunk147913) || null == require) continue;
@@ -134,8 +134,8 @@ class N extends Chunk147913.Z {
       let {
         progressSeconds: n,
         targetSeconds: i
-      } = (0, h.il)(t, r.T.DESKTOP), a = Math.max(0, (i - n) * _.Z.Millis.SECOND);
-      return a <= v ? a + T : v
+      } = (0, h.il)(t, r.T.DESKTOP), o = Math.max(0, (i - n) * _.Z.Millis.SECOND);
+      return o <= v ? o + T : v
     }), O(this, "initiateHeartbeat", (e, t) => {
       let n = this.heartbeats[t];
       if (n.has(e)) return void S.log("~ initiateHeartbeat -> Heartbeat already initiated for questId: ".concat(e));
@@ -155,9 +155,9 @@ class N extends Chunk147913.Z {
           } else S.log("~ initiateHeartbeat -> Sending heartbeat for questId: ".concat(e)), (0, m.m0)({
             questId: e
           });
-          let a = this.calculateHeartbeatDurationMs(e),
-            o = window.setTimeout(i, a);
-          n.set(e, o)
+          let o = this.calculateHeartbeatDurationMs(e),
+            a = window.setTimeout(i, o);
+          n.set(e, a)
         } else S.log("~ initiateHeartbeat -> Quest ".concat(e, " is no longer actively progressing, terminating heartbeat")), this.terminateHeartbeat(e, t)
       };
       S.log("~ initiateHeartbeat -> Initiating heartbeat for Quest ".concat(e)), i()

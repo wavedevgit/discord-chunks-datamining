@@ -8,20 +8,20 @@ require.d(exports, {
 });
 var Chunk798681 = require("./798681.js"),
   Chunk450109 = require("./450109.js");
-let a = 10 * require("./70956.js").Z.Millis.SECOND,
-  o = 15;
+let o = 10 * require("./70956.js").Z.Millis.SECOND,
+  a = 15;
 
 function s() {
-  return Chunk798681.w.isIncomingVideoEnabled() && performance.now() - Chunk798681.w.lastIncomingVideoEnabledChangeTime() > a
+  return Chunk798681.w.isIncomingVideoEnabled() && performance.now() - Chunk798681.w.lastIncomingVideoEnabledChangeTime() > o
 }
 
 function l(e, t) {
-  let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : o,
+  let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : a,
     r = i.Z.getAccumulatedPerformanceStats(e, t, "short"),
-    a = i.Z.getAccumulatedPerformanceStats(e, t, "long");
-  return null == r || null == a || r.numDatapoints < n || a.numDatapoints < n ? null : {
+    o = i.Z.getAccumulatedPerformanceStats(e, t, "long");
+  return null == r || null == o || r.numDatapoints < n || o.numDatapoints < n ? null : {
     short: r,
-    long: a
+    long: o
   }
 }
 let c = 30,

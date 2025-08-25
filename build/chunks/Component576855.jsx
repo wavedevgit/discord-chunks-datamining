@@ -31,7 +31,7 @@ class _ extends(r = Chunk647438.PureComponent) {
       className: t,
       textClassName: n,
       type: r = f.BLOCK,
-      style: a
+      style: o
     } = this.props;
     return (0, Chunk951288.jsxs)("div", {
       className: s()(exports, r),

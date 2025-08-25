@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk692547 = require("./692547.js"),
   Chunk481060 = require("./481060.js"),
   Chunk47280 = require("./47280.js"),
@@ -21,9 +21,9 @@ function h(e) {
   let {
     onSelect: t,
     sound: n
-  } = e, [a, h] = i.useState(false), m = i.useRef(null), g = (0, c.ZP)({
+  } = e, [o, h] = i.useState(false), m = i.useRef(null), g = (0, c.ZP)({
     location: "GiftSoundboard"
-  }), E = o()(_.text, g && _.refresh);
+  }), E = a()(_.text, g && _.refresh);
 
   function b(e) {
     h(false), null == t || t(e)
@@ -46,7 +46,7 @@ function h(e) {
   });
   return (0, r.jsx)(l.yRy, {
     targetElementRef: m,
-    shouldShow: a,
+    shouldShow: o,
     position: "bottom",
     align: "left",
     onRequestClose: () => h(false),
@@ -71,7 +71,7 @@ function h(e) {
       })
     },
     children: () => (0, r.jsx)(l.P3F, {
-      className: o()(_.container, g && _.refresh),
+      className: a()(_.container, g && _.refresh),
       onClick: () => h(true),
       innerRef: m,
       children: null == n ? (0, r.jsxs)("div", {

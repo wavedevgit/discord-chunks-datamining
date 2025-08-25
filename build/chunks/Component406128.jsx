@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk600164 = require("./600164.jsx"),
   Chunk848673 = require("./848673.js");
@@ -20,7 +20,7 @@ class u extends Chunk647438.PureComponent {
       className: i
     } = this.props;
     return (0, Chunk951288.jsx)("div", {
-      className: o()(Chunk848673.wrapper, Chunk647438),
+      className: a()(Chunk848673.wrapper, Chunk647438),
       children: (0, Chunk951288.jsxs)(Chunk600164.Z, {
         className: Chunk848673.flexWrapper,
         direction: Chunk600164.Z.Direction.VERTICAL,

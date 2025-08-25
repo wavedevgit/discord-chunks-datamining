@@ -8,7 +8,7 @@ var Chunk87290 = require("./87290.js"),
   Chunk685816 = require("./685816.js"),
   Chunk565669 = require("./565669.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -21,6 +21,6 @@ class s {
     return new s(e)
   }
   constructor(e) {
-    o(this, "subblocks", true), this.type = i.z.FEATURED, this.subblocks = e.subblocks.map(e => e.type === r.O.CATEGORY ? a.H.fromServer(e) : e)
+    a(this, "subblocks", true), this.type = i.z.FEATURED, this.subblocks = e.subblocks.map(e => e.type === r.O.CATEGORY ? o.H.fromServer(e) : e)
   }
 }

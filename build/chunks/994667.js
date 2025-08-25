@@ -14,7 +14,7 @@ var Chunk647438 = require("./647438.js"),
 function c(e) {
   let t = r.useRef([]);
   return r.useEffect(() => {
-    (0, a.E)(t.current, e) || ((0, o.v)(e), t.current = e)
+    (0, o.E)(t.current, e) || ((0, a.v)(e), t.current = e)
   }, [e]), (0, i.Wu)([l.Z], () => e.map(e => null != e ? l.Z.getSupplementalData(e) : true))
 }
 

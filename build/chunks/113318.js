@@ -22,12 +22,12 @@ function d(e, t) {
   let f = n.isGuildVocal();
   return {
     navigateToChannel: () => {
-      f ? a.Z.handleVoiceConnect({
+      f ? o.Z.handleVoiceConnect({
         channel: n,
         connected: l.Z.isInChannel(n.id),
         needSubscriptionToAccess: false,
         routeDirectlyToChannel: true
-      }) : (0, o.uL)(u.Z5c.CHANNEL(e, n.id))
+      }) : (0, a.uL)(u.Z5c.CHANNEL(e, n.id))
     },
     ariaLabel: (0, i.ZP)({
       channel: n

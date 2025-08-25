@@ -11,19 +11,19 @@ function i(e) {
     children: t,
     items: n,
     idScope: i,
-    addIdAndValue: a,
-    dependencies: o = []
-  } = e, s = (0, r.useMemo)(() => new WeakMap, o);
+    addIdAndValue: o,
+    dependencies: a = []
+  } = e, s = (0, r.useMemo)(() => new WeakMap, a);
   return (0, r.useMemo)(() => {
     if (n && "function" == typeof t) {
       let l = [];
       for (let c of n) {
         let n = s.get(c);
         if (!n) {
-          var e, o;
-          let l = null != (o = null != (e = (n = t(c)).props.id) ? e : c.key) ? o : c.id;
+          var e, a;
+          let l = null != (a = null != (e = (n = t(c)).props.id) ? e : c.key) ? a : c.id;
           if (null == l) throw Error("Could not determine key for item");
-          i && (l = i + ":" + l), n = (0, r.cloneElement)(n, a ? {
+          i && (l = i + ":" + l), n = (0, r.cloneElement)(n, o ? {
             key: l,
             id: l,
             value: c
@@ -36,5 +36,5 @@ function i(e) {
       return l
     }
     if ("function" != typeof t) return t
-  }, [t, n, s, i, a])
+  }, [t, n, s, i, o])
 }

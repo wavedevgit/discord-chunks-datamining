@@ -9,11 +9,11 @@ var t = t || function(e) {
       },
       r = t.createElementNS("http://www.w3.org/1999/xhtml", "a"),
       i = "download" in r,
-      a = function(e) {
+      o = function(e) {
         var t = new MouseEvent("click");
         e.dispatchEvent(t)
       },
-      o = /Version\/[\d\.]+.*Safari/.test(navigator.userAgent),
+      a = /Version\/[\d\.]+.*Safari/.test(navigator.userAgent),
       s = e.webkitRequestFileSystem,
       l = e.requestFileSystem || s || e.mozRequestFileSystem,
       c = function(t) {
@@ -53,14 +53,14 @@ var t = t || function(e) {
             p(E, "writestart progress write writeend".split(" "))
           },
           v = function() {
-            if (g && o && "undefined" != typeof FileReader) {
+            if (g && a && "undefined" != typeof FileReader) {
               var r = new FileReader;
               r.onloadend = function() {
                 var e = r.result;
                 g.location.href = "data:attachment/file" + e.slice(e.search(/[,;]/)), E.readyState = E.DONE, O()
               }, r.readAsDataURL(t), E.readyState = E.INIT;
               return
-            }(y || !m) && (m = n().createObjectURL(t)), g ? g.location.href = m : true === e.open(m, "_blank") && o && (e.location.href = m), E.readyState = E.DONE, O(), _(m)
+            }(y || !m) && (m = n().createObjectURL(t)), g ? g.location.href = m : true === e.open(m, "_blank") && a && (e.location.href = m), E.readyState = E.DONE, O(), _(m)
           },
           I = function(e) {
             return function() {
@@ -73,7 +73,7 @@ var t = t || function(e) {
           };
         if (E.readyState = E.INIT, c || (c = "download"), i) {
           m = n().createObjectURL(t), setTimeout(function() {
-            r.href = m, r.download = c, a(r), O(), _(m), E.readyState = E.DONE
+            r.href = m, r.download = c, o(r), O(), _(m), E.readyState = E.DONE
           });
           return
         }

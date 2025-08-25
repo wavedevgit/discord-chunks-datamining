@@ -18,26 +18,26 @@ let d = e => {
     isPremiumSection: n,
     canUsePremiumCollectibles: d,
     skuId: f
-  } = e, _ = (0, l.Yq)(f), p = (0, a.e7)([s.Z], () => {
+  } = e, _ = (0, l.Yq)(f), p = (0, o.e7)([s.Z], () => {
     let e = s.Z.getProduct(f);
     return (0, l.G1)(e)
   });
-  return t || n && d ? null : _ ? (0, r.jsx)(o.lBU, {
+  return t || n && d ? null : _ ? (0, r.jsx)(a.lBU, {
     className: u.newBadge,
     text: (0, r.jsxs)("div", {
       className: u.newBadgeText,
-      children: [(0, r.jsx)(o.mBM, {
+      children: [(0, r.jsx)(a.mBM, {
         size: "xxs",
         color: "currentColor"
       }), c.intl.string(c.t.y2b7CA)]
     })
-  }) : (0, r.jsx)(o.G2e, {
-    icon: p ? () => (0, r.jsx)(o.SrA, {
+  }) : (0, r.jsx)(a.G2e, {
+    icon: p ? () => (0, r.jsx)(a.SrA, {
       size: "custom",
       color: "currentColor",
       width: 14,
       height: 14
-    }) : () => (0, r.jsx)(o.mBM, {
+    }) : () => (0, r.jsx)(a.mBM, {
       size: "xxs",
       color: "currentColor"
     }),

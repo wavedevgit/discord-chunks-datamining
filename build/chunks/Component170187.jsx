@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk111028 = require("./111028.jsx"),
   Chunk556638 = require("./556638.js"),
@@ -56,8 +56,8 @@ function p(e, t) {
   if (null == e) return {};
   var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -65,8 +65,8 @@ function p(e, t) {
 function h(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -78,10 +78,10 @@ function m(e) {
     hideTooltip: u = false,
     canTruncate: f = true
   } = e, h = p(e, ["children", "className", "variant", "hideTooltip", "canTruncate"]);
-  return (0, r.jsx)(o.xv, _(d({
+  return (0, r.jsx)(a.xv, _(d({
     variant: i,
     color: "none",
-    className: a()(f && c.truncated, n)
+    className: o()(f && c.truncated, n)
   }, h), {
     children: f && !u ? (0, r.jsx)(s.Z, {
       delay: l.X,

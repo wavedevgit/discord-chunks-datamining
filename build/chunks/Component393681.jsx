@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
   l = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
@@ -177,14 +177,14 @@ class Q extends Chunk647438.PureComponent {
       backupCodes: e,
       currentUser: t,
       theme: i
-    } = this.props, a = (0, Chunk780384.wj)(Chunk647438) ? require("./555702.js") : require("./610802.js");
+    } = this.props, o = (0, Chunk780384.wj)(Chunk647438) ? require("./555702.js") : require("./610802.js");
     return (0, Chunk951288.jsxs)(Chunk481060.hjN, {
-      className: o()(Chunk343396.userSettingsSecurity, Chunk197571.marginTop40),
+      className: a()(Chunk343396.userSettingsSecurity, Chunk197571.marginTop40),
       title: Chunk388032.intl.string(Chunk388032.t.pKSjEh),
       tag: "h1",
       children: [exports.mfaEnabled ? (0, Chunk951288.jsx)(Chunk481060.hjN, {
         children: (0, Chunk951288.jsxs)(Chunk481060.vwX, {
-          className: o()(Chunk343396.isEnabled, Chunk197571.marginBottom20),
+          className: a()(Chunk343396.isEnabled, Chunk197571.marginBottom20),
           children: [(0, Chunk951288.jsx)("img", {
             alt: "",
             className: Chunk343396.lockIcon,
@@ -236,7 +236,7 @@ class Q extends Chunk647438.PureComponent {
       shouldRenderDeleteAccountConfirmModal: t,
       shouldRenderDisableAccountErrorModal: n,
       shouldRenderOwnedTeamsModal: i,
-      disableAccountErrorMessage: a
+      disableAccountErrorMessage: o
     } = this.state;
     if (Chunk647438) {
       let e = () => this.setState({
@@ -384,7 +384,7 @@ class Q extends Chunk647438.PureComponent {
         currentUser: n,
         userTeams: i
       } = this.props,
-      a = Chunk430824.Z.getGuildsArray().filter(e => e.ownerId === n.id);
+      o = Chunk430824.Z.getGuildsArray().filter(e => e.ownerId === n.id);
     return (null != (e = null == Chunk647438 ? true : Chunk647438.filter(e => e.owner_user_id === n.id)) ? module : []).length > 0 ? void this.setState({
       shouldRenderOwnedTeamsModal: true
     }) : Chunk120356.length > 0 ? void this.setState({
@@ -416,8 +416,8 @@ let J = () => {
     t = (0, Chunk442837.e7)([Chunk325067.Z], () => Chunk325067.Z.getBackupCodes()),
     n = (0, Chunk442837.e7)([Chunk246946.Z], () => Chunk246946.Z.hidePersonalInformation),
     i = (0, Chunk442837.e7)([Chunk210887.Z], () => Chunk210887.Z.theme),
-    a = (0, Chunk332473.b)(),
-    o = (0, Chunk442837.e7)([Chunk706454.default], () => Chunk706454.default.locale),
+    o = (0, Chunk332473.b)(),
+    a = (0, Chunk442837.e7)([Chunk706454.default], () => Chunk706454.default.locale),
     s = (0, Chunk442837.e7)([Chunk663389.Z], () => Chunk663389.Z.getSubsection()),
     {
       teams: u,
@@ -431,7 +431,7 @@ let J = () => {
     backupCodes: exports,
     hide: require,
     shouldRenderPomeloWarning: Chunk120356,
-    locale: o,
+    locale: a,
     subsection: Chunk512722,
     userTeams: Chunk780384,
     userTeamsLoading: Chunk755721

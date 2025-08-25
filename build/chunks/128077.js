@@ -2,21 +2,21 @@
 /** chunk id: 128077, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  f: () => o
+  f: () => a
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk751648 = require("./751648.js"),
   Chunk388032 = require("./388032.jsx");
 
-function o() {
-  let [e, t] = (0, Chunk647438.useState)(""), [n, o] = (0, Chunk647438.useState)([]), [s, l] = (0, Chunk647438.useState)(null), [c, u] = (0, Chunk647438.useState)(false);
+function a() {
+  let [e, t] = (0, Chunk647438.useState)(""), [n, a] = (0, Chunk647438.useState)([]), [s, l] = (0, Chunk647438.useState)(null), [c, u] = (0, Chunk647438.useState)(false);
 
   function d(e, t, n) {
     let r = () => {
         u(true), l(null)
       },
-      a = e => {
-        o(e), u(false), null == n || n(e)
+      o = e => {
+        a(e), u(false), null == n || n(e)
       },
       s = e => {
         l(e), u(false)
@@ -25,7 +25,7 @@ function o() {
       skuId: e,
       loadId: t,
       onRedeemStart: r,
-      onRedeemSucceed: a,
+      onRedeemSucceed: o,
       onRedeemFail: s
     })
   }

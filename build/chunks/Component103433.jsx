@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk38249 = require("./38249.js"),
@@ -18,7 +18,7 @@ let u = e => {
     onBackClick: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: a()(l.container, t),
+    className: o()(l.container, t),
     "data-testid": "all-perks-hero-header",
     children: [(0, r.jsx)("img", {
       src: c,
@@ -28,10 +28,10 @@ let u = e => {
       className: l.containerInner,
       children: [(0, r.jsx)("div", {
         className: l.backButtonContainer,
-        children: (0, r.jsxs)(o.P3F, {
+        children: (0, r.jsxs)(a.P3F, {
           onClick: n,
           className: l.backButton,
-          children: [(0, r.jsx)(o.V7D, {
+          children: [(0, r.jsx)(a.V7D, {
             color: "currentColor"
           }), s.intl.string(s.t["13/7kZ"])]
         })
@@ -39,7 +39,7 @@ let u = e => {
         className: l.__invalid_contentContainer,
         children: (0, r.jsx)("div", {
           className: l.content,
-          children: (0, r.jsx)(o.X6q, {
+          children: (0, r.jsx)(a.X6q, {
             variant: "display-lg",
             color: "always-white",
             children: s.intl.string(s.t.hqjDX1)

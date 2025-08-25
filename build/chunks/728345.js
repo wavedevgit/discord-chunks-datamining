@@ -59,8 +59,8 @@ function h(e, t) {
   if (null == e) return {};
   var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -68,14 +68,14 @@ function h(e, t) {
 function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 async function g(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
     n = arguments.length > 2 ? arguments[2] : true;
-  a.Z.dispatch({
+  o.Z.dispatch({
     type: "APPLICATION_FETCH",
     applicationId: e
   });
@@ -89,12 +89,12 @@ async function g(e) {
       signal: n,
       rejectWithError: false
     });
-    return a.Z.dispatch({
+    return o.Z.dispatch({
       type: "APPLICATION_FETCH_SUCCESS",
       application: r.body
     }), r.body
   } catch (t) {
-    throw a.Z.dispatch({
+    throw o.Z.dispatch({
       type: "APPLICATION_FETCH_FAIL",
       applicationId: e
     }), t
@@ -106,18 +106,18 @@ let E = {
         name: t,
         guildId: n,
         type: r,
-        teamId: o
+        teamId: a
       } = e, s = (await i.tn.post({
         url: u.ANM.APPLICATIONS,
         body: {
           name: t,
           type: r,
           guild_id: n,
-          team_id: o
+          team_id: a
         },
         rejectWithError: false
       })).body;
-      return null != n && null != r && a.Z.dispatch({
+      return null != n && null != r && o.Z.dispatch({
         type: "APPLICATION_FETCH_SUCCESS",
         application: s
       }), s
@@ -127,17 +127,17 @@ let E = {
       var {
         includeTeam: n
       } = t, r = h(t, ["includeTeam"]);
-      let o = (await i.tn.get({
+      let a = (await i.tn.get({
         url: u.ANM.GUILD_APPLICATIONS(e),
         query: p(f({}, r), {
           include_team: n
         }),
         rejectWithError: false
       })).body;
-      return a.Z.dispatch({
+      return o.Z.dispatch({
         type: "APPLICATIONS_FETCH_SUCCESS",
-        applications: o
-      }), o
+        applications: a
+      }), a
     },
     async transferApplication(e) {
       let {
@@ -150,7 +150,7 @@ let E = {
         },
         rejectWithError: false
       })).body;
-      return a.Z.dispatch({
+      return o.Z.dispatch({
         type: "APPLICATION_FETCH_SUCCESS",
         application: r
       }), r
@@ -169,7 +169,7 @@ let E = {
       }
       if (n.length > 0) {
         let e;
-        a.Z.dispatch({
+        o.Z.dispatch({
           type: "APPLICATIONS_FETCH",
           applicationIds: n
         });
@@ -181,14 +181,14 @@ let E = {
             rejectWithError: false
           })
         } catch (e) {
-          throw 429 !== e.status && a.Z.dispatch({
+          throw 429 !== e.status && o.Z.dispatch({
             type: "APPLICATIONS_FETCH_FAIL",
             applicationIds: n
           }), e
         }
         let t = new Set(e.body.map(e => e.id)),
           r = n.filter(e => !t.has(e));
-        a.Z.dispatch({
+        o.Z.dispatch({
           type: "APPLICATIONS_FETCH_SUCCESS",
           applications: e.body,
           unknownApplicationIds: r
@@ -211,9 +211,9 @@ function y(e) {
     error: i
   } = b(e);
   return {
-    app: (0, r.e7)([o.Z], () => {
+    app: (0, r.e7)([a.Z], () => {
       if (null == t) {
-        let t = o.Z.getApplication(e);
+        let t = a.Z.getApplication(e);
         if (null != t) return s.ZP.createFromServer(t)
       }
       return t

@@ -62,7 +62,7 @@ function v(e, t) {
 
 function I() {
   var e;
-  let [t, n] = (0, Chunk647438.useState)(false), [a, s] = (0, Chunk647438.useState)(false), [u, p] = (0, Chunk647438.useState)(null), [m, b] = (0, Chunk647438.useState)(320), O = (0, Chunk647438.useRef)(null), I = (0, Chunk647438.useRef)(null), P = (0, Chunk647438.useRef)(null), w = (0, Chunk396821.ZP)(e => e.toolsCache), {
+  let [t, n] = (0, Chunk647438.useState)(false), [o, s] = (0, Chunk647438.useState)(false), [u, p] = (0, Chunk647438.useState)(null), [m, b] = (0, Chunk647438.useState)(320), O = (0, Chunk647438.useRef)(null), I = (0, Chunk647438.useRef)(null), P = (0, Chunk647438.useRef)(null), w = (0, Chunk396821.ZP)(e => e.toolsCache), {
     setToolsCache: D,
     removeToolsCache: x
   } = (0, Chunk396821.L3)(), {
@@ -81,12 +81,12 @@ function I() {
       src: e,
       preview: true
     }))
-  }, [w]), k = (0, Chunk647438.useCallback)(e => {
+  }, [w]), M = (0, Chunk647438.useCallback)(e => {
     p(t => null == t ? null : v(y({}, t), {
       palette: e,
       preview: true
     }))
-  }, []), M = (0, Chunk647438.useCallback)(e => {
+  }, []), k = (0, Chunk647438.useCallback)(e => {
     x(e)
   }, [x]), U = (0, Chunk647438.useCallback)(e => {
     if (null != O.current) {
@@ -130,7 +130,7 @@ function I() {
         children: [exports && (0, Chunk951288.jsx)(Chunk329013.i, {}), Chunk442837 && (0, Chunk951288.jsx)(Chunk711325.Z, {
           selected: null == Chunk594174 || null == (e = Chunk594174.palette) ? true : module.name,
           onSelect: e => {
-            (null == u ? true : u.src) != null && D(u.src, u.src, e), k(e)
+            (null == u ? true : u.src) != null && D(u.src, u.src, e), M(e)
           }
         })]
       })]
@@ -185,12 +185,12 @@ function I() {
             return (0, r.jsx)(T, {
               src: t,
               onSetStatic: j,
-              removeAsset: M
+              removeAsset: k
             }, t)
           })
         }), (0, Chunk951288.jsx)(A, {
           label: "gradient override",
-          onChange: e => k({
+          onChange: e => M({
             name: f._j,
             darkBackground: e,
             lightBackground: e
@@ -212,10 +212,10 @@ function T(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: E.uploaded,
-    children: [(0, r.jsx)(o.P3F, {
+    children: [(0, r.jsx)(a.P3F, {
       onClick: () => i(t),
       className: E.xicon,
-      children: (0, r.jsx)(o.Dio, {
+      children: (0, r.jsx)(a.Dio, {
         size: "custom",
         width: 16,
         height: 16,
@@ -227,7 +227,7 @@ function T(e) {
       alt: ""
     }), (0, r.jsx)("div", {
       className: E.uploadedControls,
-      children: (0, r.jsx)(o.zxk, {
+      children: (0, r.jsx)(a.zxk, {
         onClick: () => n(t),
         size: "sm",
         variant: "secondary",
@@ -244,10 +244,10 @@ function S(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: E.flex,
-    children: [(0, r.jsx)(o.Text, {
+    children: [(0, r.jsx)(a.Text, {
       variant: "text-sm/normal",
       children: "coming soon"
-    }), (0, r.jsx)(o.zxk, {
+    }), (0, r.jsx)(a.zxk, {
       variant: "secondary",
       size: "sm",
       text: t,
@@ -264,7 +264,7 @@ function A(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: E.hexInput,
-    children: [(0, r.jsx)(o.Text, {
+    children: [(0, r.jsx)(a.Text, {
       variant: "text-sm/normal",
       children: t
     }), (0, r.jsx)("input", {
@@ -280,12 +280,12 @@ function A(e) {
 function C(e) {
   let {
     nameplate: t
-  } = e, n = (0, a.e7)([u.default], () => u.default.getCurrentUser());
+  } = e, n = (0, o.e7)([u.default], () => u.default.getCurrentUser());
   return (0, r.jsx)("div", {
     className: E.preview,
     children: (0, r.jsxs)("div", {
       className: E.simArea,
-      children: [(0, r.jsx)(o.Text, {
+      children: [(0, r.jsx)(a.Text, {
         className: E.label,
         variant: "text-sm/semibold",
         children: "DEFAULT"
@@ -293,7 +293,7 @@ function C(e) {
         nameplate: t,
         user: n,
         currentUser: n
-      }), (0, r.jsx)(o.Text, {
+      }), (0, r.jsx)(a.Text, {
         className: E.label,
         variant: "text-sm/semibold",
         children: "FOCUSED"
@@ -321,13 +321,13 @@ function N(e) {
     className: E.preview,
     children: (0, r.jsxs)("div", {
       className: E.simArea,
-      children: [(0, r.jsx)(o.Text, {
+      children: [(0, r.jsx)(a.Text, {
         className: E.label,
         variant: "text-sm/semibold",
         children: "DEFAULT"
       }), (0, r.jsx)(m.Z, {
         nameplate: t
-      }), (0, r.jsx)(o.Text, {
+      }), (0, r.jsx)(a.Text, {
         className: E.label,
         variant: "text-sm/semibold",
         children: "FOCUSED"

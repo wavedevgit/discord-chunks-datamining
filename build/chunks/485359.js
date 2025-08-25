@@ -36,7 +36,7 @@ class f extends Chunk317770.Z {
       } = e, r = "Firefox" === i().name ? c.BhN.ENABLE_MIC_FIREFOX : c.BhN.ENABLE_MIC_CHROME;
       if (!n) {
         let e = "audio" !== t;
-        o.Z.show({
+        a.Z.show({
           title: e ? u.intl.string(u.t.OqloHx) : u.intl.string(u.t["kI+OOT"]),
           body: e ? u.intl.string(u.t.l3P7Ky) : u.intl.string(u.t.l3jwOT),
           onConfirm: () => window.open(l.Z.getArticleURL(r), "_blank"),

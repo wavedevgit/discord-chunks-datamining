@@ -42,11 +42,11 @@ async function O(e) {
     R = i.Z.getChannel(l),
     P = null == R ? true : R.getGuildId(),
     w = null == P || "" === P,
-    D = o.default.getCurrentUser();
+    D = a.default.getCurrentUser();
   if (null == D) returnfalse;
   if (null == R || w && !R.isPrivate() || null == l) return Promise.resolve(false);
   let x = u.ZP.getCurrentEmbeddedActivity();
-  if ((null == x ? true : x.applicationId) != null && (t = r.Z.getApplication(null == x ? true : x.applicationId)), a.Z.getVoiceChannelId() === l && null != x && x.applicationId === n && (0, _.p)(x.location) === a.Z.getVoiceChannelId()) return (0, E.Z)(P, x.location), Promise.resolve(true);
+  if ((null == x ? true : x.applicationId) != null && (t = r.Z.getApplication(null == x ? true : x.applicationId)), o.Z.getVoiceChannelId() === l && null != x && x.applicationId === n && (0, _.p)(x.location) === o.Z.getVoiceChannelId()) return (0, E.Z)(P, x.location), Promise.resolve(true);
   let L = await (0, p.Z)(n, l);
   if (!await (0, f.p)({
       applicationId: n,

@@ -42,30 +42,30 @@ function f(e) {
     title: u,
     body: d,
     onClose: f
-  } = e, _ = (0, o.Dt)();
-  return (0, r.jsxs)(a.Y0X, {
+  } = e, _ = (0, a.Dt)();
+  return (0, r.jsxs)(o.Y0X, {
     className: c.container,
     transitionState: t,
     "aria-labelledby": _,
     parentComponent: "ActionCompletedSuccessModal",
-    children: [(0, r.jsxs)(a.hzk, {
+    children: [(0, r.jsxs)(o.hzk, {
       children: [(0, r.jsx)(s.Z, {
         Icon: n
-      }), (0, r.jsx)(a.LZC, {
+      }), (0, r.jsx)(o.LZC, {
         size: 24
-      }), (0, r.jsx)(a.X6q, {
+      }), (0, r.jsx)(o.X6q, {
         id: _,
         className: c.__invalid_title,
         variant: "heading-xl/semibold",
         children: u
-      }), (0, r.jsx)(a.LZC, {
+      }), (0, r.jsx)(o.LZC, {
         size: 8
-      }), (0, r.jsx)(a.Text, {
+      }), (0, r.jsx)(o.Text, {
         className: c.body,
         variant: "text-sm/normal",
         children: d
       })]
-    }), (0, r.jsx)(a.LZC, {
+    }), (0, r.jsx)(o.LZC, {
       size: 24
     }), (0, r.jsx)(i.zx, {
       size: i.zx.Sizes.MEDIUM,
@@ -77,5 +77,5 @@ function f(e) {
 }
 
 function _(e) {
-  (0, a.h7j)(t => (0, r.jsx)(f, d({}, t, e)))
+  (0, o.h7j)(t => (0, r.jsx)(f, d({}, t, e)))
 }

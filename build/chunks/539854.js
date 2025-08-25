@@ -28,10 +28,10 @@ Chunk98405({
 }, {
   push: function(e) {
     var t = i(this),
-      n = a(t),
+      n = o(t),
       r = arguments.length;
     s(n + r);
     for (var l = 0; l < r; l++) t[n] = arguments[l], n++;
-    return o(t, n), n
+    return a(t, n), n
   }
 })

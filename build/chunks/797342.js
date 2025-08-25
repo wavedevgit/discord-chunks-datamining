@@ -15,10 +15,10 @@ function s(e) {
     {
       activity: d,
       embeddedActivity: f
-    } = (0, o.Z)(e);
+    } = (0, a.Z)(e);
   if (null == d) return {
     isRich: false,
-    appName: (0, a.dX)(e) ? e.extra.game_name : true,
+    appName: (0, o.dX)(e) ? e.extra.game_name : true,
     user: u,
     activity: true,
     embeddedActivity: true,

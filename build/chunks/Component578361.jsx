@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk748780 = require("./748780.js"),
   Chunk215569 = require("./215569.js"),
   Chunk278397 = require("./278397.js");
@@ -86,13 +86,13 @@ let h = e => {
     children: t,
     step: n,
     direction: i,
-    className: a,
+    className: o,
     springSettings: s = _,
     fadeInOut: u = false
   } = e;
   return (0, r.jsx)(l.W, {
     component: "div",
-    className: o()(c.animator, a),
+    className: a()(c.animator, o),
     children: (0, r.jsx)(p, {
       direction: i,
       springSettings: s,

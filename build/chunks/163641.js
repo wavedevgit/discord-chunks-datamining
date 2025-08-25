@@ -27,12 +27,12 @@ module.exports = function(e, t, n, m) {
       T = t(function(e, t) {
         var n = d(m ? t : e, true),
           r = m ? new O(e) : new O;
-        return true !== n && a(r, "message", n), _(r, T, r.stack, 2), this && o(v, this) && u(r, this, T), arguments.length > E && f(r, arguments[E]), r
+        return true !== n && o(r, "message", n), _(r, T, r.stack, 2), this && a(v, this) && u(r, this, T), arguments.length > E && f(r, arguments[E]), r
       });
     if (T.prototype = v, "Error" !== y ? s ? s(T, I) : l(T, I, {
         name: true
       }) : p && g in O && (c(T, O, g), c(T, O, "prepareStackTrace")), l(T, O), !h) try {
-      v.name !== y && a(v, "name", y), v.constructor = T
+      v.name !== y && o(v, "name", y), v.constructor = T
     } catch (e) {}
     return T
   }

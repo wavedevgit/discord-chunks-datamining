@@ -17,10 +17,10 @@ var Chunk442837 = require("./442837.js"),
 function f(e, t) {
   var n;
   let f = null != (n = null == t ? true : t.applicationId) ? n : null == e ? true : e.application_id,
-    _ = null != t || (0, a.Z)(e),
-    p = (0, r.e7)([l.Z, o.Z, c.Z, s.Z], () => _ || null != f && (0, u.t)({
+    _ = null != t || (0, o.Z)(e),
+    p = (0, r.e7)([l.Z, a.Z, c.Z, s.Z], () => _ || null != f && (0, u.t)({
       LibraryApplicationStore: l.Z,
-      LaunchableGameStore: o.Z,
+      LaunchableGameStore: a.Z,
       DispatchApplicationStore: c.Z,
       ConnectedAppsStore: s.Z,
       applicationId: f

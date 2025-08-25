@@ -1,0 +1,23 @@
+/** Chunk was on web.js **/
+/** chunk id: 170053, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  Z: () => i
+});
+var Chunk463424 = require("./463424.js");
+let i = {
+    isGifFile: s,
+    findOffsets: l
+  },
+  o = 6,
+  a = ["GIF87a", "GIF89a"];
+
+function s(e) {
+  return !!e && a.includes((0, r.oH)(e, 0, o))
+}
+
+function l() {
+  return {
+    gifHeaderOffset: 0
+  }
+}

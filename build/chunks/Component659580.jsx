@@ -52,8 +52,8 @@ function S(e) {
       location_stack: j
     }
   });
-  let k = (0, b.Z)(x),
-    M = (0, f.M)({
+  let M = (0, b.Z)(x),
+    k = (0, f.M)({
       deviceType: v.h7.AUDIO_INPUT,
       analyticsLocations: j,
       asSubmenu: w
@@ -63,14 +63,14 @@ function S(e) {
       analyticsLocations: j,
       asSubmenu: w
     }),
-    G = (0, a.e7)([g.Z], () => g.Z.getActiveInputProfile()),
+    G = (0, o.e7)([g.Z], () => g.Z.getActiveInputProfile()),
     B = (0, h.Z)(j),
     Z = (0, _.Z)(j),
     F = (0, p.Z)(j),
     V = (0, m.Z)(j),
-    H = o.Yn.DEFAULT,
+    H = a.Yn.DEFAULT,
     Y = g.Z.isSelfDeaf(H),
-    W = (0, a.e7)([g.Z], () => g.Z.getMode()),
+    W = (0, o.e7)([g.Z], () => g.Z.getMode()),
     K = W === y.pM4.VOICE_ACTIVITY ? y.pM4.PUSH_TO_TALK : y.pM4.VOICE_ACTIVITY;
   return (0, r.jsx)(c.Z, {
     object: y.qAy.CONTEXT_MENU,
@@ -81,7 +81,7 @@ function S(e) {
       onClose: t,
       navId: "audio-device-context",
       "aria-label": I.intl.string(I.t.ZR1Ss7),
-      children: [S && M, n && U, A && B, !w && C && G !== O._.STUDIO ? (0, r.jsx)(s.kSQ, {
+      children: [S && k, n && U, A && B, !w && C && G !== O._.STUDIO ? (0, r.jsx)(s.kSQ, {
         label: I.intl.string(I.t["pS+K2N"]),
         children: Z
       }) : null, (0, r.jsxs)(s.kSQ, {
@@ -101,7 +101,7 @@ function S(e) {
             analyticsLocations: j
           }),
           disabled: G === O._.STUDIO
-        }) : null, k]
+        }) : null, M]
       })]
     })
   })

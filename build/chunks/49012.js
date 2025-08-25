@@ -51,7 +51,7 @@ function R(e, t) {
     } = e,
     L = i().sanitizeUrl(e.href);
   if (null == L) {
-    null != t && t.preventDefault(), a.Z.show({
+    null != t && t.preventDefault(), o.Z.show({
       title: C.intl.string(C.t.x87gam),
       body: C.intl.format(C.t["9rqRws"], {
         url: e.href
@@ -67,8 +67,8 @@ function R(e, t) {
   } catch (e) {
     j = encodeURI(L)
   }
-  let k = null,
-    M = false,
+  let M = null,
+    k = false,
     U = D,
     G = x,
     B = null;
@@ -76,13 +76,13 @@ function R(e, t) {
     var Z, F, V;
     let e = v.Z.getMessage(x, D),
       t = E.Z.getBasicChannel(x);
-    k = null != (V = null == t ? true : t.guild_id) ? V : null;
-    let n = b.Z.getGuild(k),
-      r = (null == e || null == (Z = e.messageReference) ? true : Z.guild_id) != null && (null == e ? true : e.webhookId) != null && (null == e ? true : e.hasFlag(A.iLy.IS_CROSSPOST)) && null != k;
-    r && (null == e || null == (F = e.messageReference) ? true : F.guild_id) != null ? (U = e.messageReference.message_id, G = e.messageReference.channel_id, B = e.messageReference.guild_id) : B = k;
+    M = null != (V = null == t ? true : t.guild_id) ? V : null;
+    let n = b.Z.getGuild(M),
+      r = (null == e || null == (Z = e.messageReference) ? true : Z.guild_id) != null && (null == e ? true : e.webhookId) != null && (null == e ? true : e.hasFlag(A.iLy.IS_CROSSPOST)) && null != M;
+    r && (null == e || null == (F = e.messageReference) ? true : F.guild_id) != null ? (U = e.messageReference.message_id, G = e.messageReference.channel_id, B = e.messageReference.guild_id) : B = M;
     let i = (null == t ? true : t.type) === A.d4z.GUILD_ANNOUNCEMENT && (null == n ? true : n.features.has(A.oNc.COMMUNITY)) === true,
-      a = (null == e ? true : e.hasFlag(A.iLy.EPHEMERAL)) === true;
-    M = null != e && !a && (r || i)
+      o = (null == e ? true : e.hasFlag(A.iLy.EPHEMERAL)) === true;
+    k = null != e && !o && (r || i)
   }
   if (null != x) {
     let e = E.Z.getChannel(x),
@@ -108,10 +108,10 @@ function R(e, t) {
     if (null != i && i(t)) return
   }
   let H = () => {
-      if (M && _.Z.trackAnnouncementMessageLinkClicked({
+      if (k && _.Z.trackAnnouncementMessageLinkClicked({
           messageId: U,
           channelId: x,
-          guildId: k,
+          guildId: M,
           sourceChannelId: G,
           sourceGuildId: B
         }), null != R) return void R();
@@ -133,16 +133,16 @@ function R(e, t) {
   let W = "function" == typeof T ? T() : T,
     K = (0, O.E)(j),
     z = "http:" !== K && "https:" !== K;
-  if (!z && (W || y.Z.isTrustedDomain(j)) || z && y.Z.isTrustedProtocol(j)) return void(null == t || null != w && w ? H() : M && _.Z.trackAnnouncementMessageLinkClicked({
+  if (!z && (W || y.Z.isTrustedDomain(j)) || z && y.Z.isTrustedProtocol(j)) return void(null == t || null != w && w ? H() : k && _.Z.trackAnnouncementMessageLinkClicked({
     messageId: U,
     channelId: x,
-    guildId: k,
+    guildId: M,
     sourceChannelId: G,
     sourceGuildId: B
   }));
   if (null != t && t.preventDefault(), z) h.Z.show({
     url: j,
-    trustUrl: o.u,
+    trustUrl: a.u,
     onConfirm: H,
     onCancel: Y,
     isProtocol: true,
@@ -153,7 +153,7 @@ function R(e, t) {
       t = null != e ? e.displayTarget : j;
     h.Z.show({
       url: t,
-      trustUrl: o.o,
+      trustUrl: a.o,
       onConfirm: H,
       onCancel: Y,
       isProtocol: false,

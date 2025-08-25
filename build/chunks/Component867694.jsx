@@ -1,31 +1,31 @@
-/** Chunk was on 36878 **/
+/** Chunk was on 76210 **/
 /** chunk id: 867694, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  I: () => o
+  I: () => s
 });
 var Chunk951288 = require("./951288.js"),
   Chunk471141 = require("./471141.jsx"),
   Chunk2644 = require("./2644.js");
 
-function o(e) {
+function s(e) {
   var t;
   let {
     node: n
   } = e, {
-    useValue: o,
-    setValue: s,
-    useTitle: a,
-    useSubtitle: u,
+    useValue: s,
+    setValue: o,
+    useTitle: u,
+    useSubtitle: a,
     useDisabled: c,
     useTooltip: d
-  } = n, f = a(), g = null == u ? true : u(), v = o(), b = null != (t = null == c ? true : c()) && t, m = null == d ? true : d();
-  return (0, i.jsx)(l.j, {
+  } = n, f = u(), g = null == a ? true : a(), v = s(), m = null != (t = null == c ? true : c()) && t, j = null == d ? true : d();
+  return (0, l.jsx)(i.j, {
     value: v,
-    onChange: e => s(e),
+    onChange: e => o(e),
     className: r.toggle,
     note: g,
-    disabled: b,
-    tooltipNote: m,
+    disabled: m,
+    tooltipNote: j,
     hideBorder: true,
     children: f
   })

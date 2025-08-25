@@ -42,12 +42,12 @@ class p {
         case r.z.SHELF:
           return d.O.fromServer(e);
         case r.z.COUNTDOWN_TIMER:
-          return o.G.fromServer(e);
+          return a.G.fromServer(e);
         case r.z.IMMERSIVE_BANNER:
           return u.k.fromServer(e);
         default:
           return
       }
-    }).filter(e => true !== e), this.categories = e.categories.map(e => i.Z.fromServer(e)), this.userDiscounts = null == (t = e.user_discounts) ? true : t.map(e => a.h.fromServer(e))
+    }).filter(e => true !== e), this.categories = e.categories.map(e => i.Z.fromServer(e)), this.userDiscounts = null == (t = e.user_discounts) ? true : t.map(e => o.h.fromServer(e))
   }
 }

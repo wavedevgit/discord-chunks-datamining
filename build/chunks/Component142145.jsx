@@ -23,14 +23,14 @@ let s = e => {
     loopEnd: g,
     bannerAdjustment: E
   } = e, b = true;
-  if (d || (b = false), f < c.start && (b = false), !c.loop && f > c.duration + c.start && (b = false), u === a.Q.PERSISTENT && !_ && null != m && f >= g && p(true), c.loop && true !== c.loopDelay && c.loopDelay > 0) {
+  if (d || (b = false), f < c.start && (b = false), !c.loop && f > c.duration + c.start && (b = false), u === o.Q.PERSISTENT && !_ && null != m && f >= g && p(true), c.loop && true !== c.loopDelay && c.loopDelay > 0) {
     let e = c.duration + c.loopDelay,
       t = Math.floor((f - c.start) / e);
-    f - c.start - t * e > c.duration && (u === a.Q.INTERMITTENT && !_ && null != m && t >= m && p(true), b = false)
+    f - c.start - t * e > c.duration && (u === o.Q.INTERMITTENT && !_ && null != m && t >= m && p(true), b = false)
   }
   return b ? (0, r.jsx)("img", {
     src: null != h ? "".concat(c.src, "?query=").concat(h) : c.src,
-    className: o.effect,
+    className: a.effect,
     style: {
       top: (null != (s = null == (t = c.position) ? true : t.y) ? s : 0) - E,
       left: null != (l = null == (n = c.position) ? true : n.x) ? l : 0

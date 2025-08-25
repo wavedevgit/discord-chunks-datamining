@@ -8,7 +8,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk687476 = require("./687476.js"),
   Chunk293810 = require("./293810.js");
 
-function o() {
+function a() {
   let [e] = arguments.length > 0 && true !== arguments[0] ? arguments[0] : [Chunk687476.Z], t = module.getGuildIdsWithPurchasableRoles(), n = false;
   return (exports.forEach(t => {
     e.getUserSubscriptionRoles(t).size > 0 && (n = true)
@@ -16,5 +16,5 @@ function o() {
 }
 
 function s() {
-  return (0, Chunk442837.e7)([Chunk687476.Z], () => o([Chunk687476.Z]))
+  return (0, Chunk442837.e7)([Chunk687476.Z], () => a([Chunk687476.Z]))
 }

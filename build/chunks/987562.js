@@ -89,29 +89,29 @@ var p = function(e) {
 function h(e) {
   let t = [{
     value: "pid_concern",
-    label: o.intl.string(a.default.ZsnNg4)
+    label: a.intl.string(o.default.ZsnNg4)
   }, {
     value: "too_much_time",
-    label: o.intl.string(a.default.kkKhVF)
+    label: a.intl.string(o.default.kkKhVF)
   }, {
     value: "confusion",
-    label: o.intl.string(a.default.bC0QVV)
+    label: a.intl.string(o.default.bC0QVV)
   }, {
     value: "something_else",
-    label: o.intl.string(o.t.WAYoT0)
+    label: a.intl.string(a.t.WAYoT0)
   }];
   return e === r.z.AGE_VERIFICATION_SURVEY_MODAL_CLOSE ? [...t, {
     value: "need_documents",
-    label: o.intl.string(a.default["Dl4A+f"])
+    label: a.intl.string(o.default["Dl4A+f"])
   }, {
     value: "didnt_work",
-    label: o.intl.string(a.default["8JFGXV"])
+    label: a.intl.string(o.default["8JFGXV"])
   }] : [...t, {
     value: "changed_mind",
-    label: o.intl.string(a.default.eSP1Fx)
+    label: a.intl.string(o.default.eSP1Fx)
   }, {
     value: "unnecessary",
-    label: o.intl.string(a.default.maxf2d)
+    label: a.intl.string(o.default.maxf2d)
   }]
 }
 var m = function(e) {

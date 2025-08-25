@@ -77,17 +77,17 @@ function v(e) {
   let {
     searchContext: t,
     navId: n,
-    index: a,
+    index: o,
     selected: l
-  } = e, c = (0, i.e7)([s.Z, o.Z], () => {
+  } = e, c = (0, i.e7)([s.Z, a.Z], () => {
     let e = s.Z.getChannelId();
-    return o.Z.getChannel(e)
+    return a.Z.getChannel(e)
   });
   return null == c ? null : (0, r.jsx)(I, {
     searchContext: t,
     selectedChannel: c,
     navId: n,
-    index: a,
+    index: o,
     selected: l
   }, c.id)
 }
@@ -97,14 +97,14 @@ function I(e) {
     searchContext: t,
     selectedChannel: n,
     navId: i,
-    index: o,
+    index: a,
     selected: s
   } = e, g = (0, c.nl)(n), b = (0, r.jsxs)("div", {
     className: m.channelNameContainer,
     children: [(0, r.jsx)(d.MC, {
       channel: n,
       className: m.channelNameIcon
-    }), (0, r.jsx)(a.Text, {
+    }), (0, r.jsx)(o.Text, {
       variant: "text-sm/semibold",
       color: "text-primary",
       className: m.channelName,
@@ -118,28 +118,28 @@ function I(e) {
     });
     let r = p.dCx.FILTER_IN,
       i = u.ZP[r],
-      a = (0, c.X3)(n),
-      o = "".concat(null != (e = null == i ? true : i.key) ? e : r.toString(), " ").concat(a);
+      o = (0, c.X3)(n),
+      a = "".concat(null != (e = null == i ? true : i.key) ? e : r.toString(), " ").concat(o);
     l.S.dispatch(p.CkL.SET_SEARCH_QUERY, {
-      query: o,
+      query: a,
       anchor: 0,
       focus: 0,
       performSearch: false,
       replace: false
     })
   };
-  return (0, r.jsxs)(a.P3F, y(E({
+  return (0, r.jsxs)(o.P3F, y(E({
     className: m.item,
     onClick: v
   }, O({
     navId: i,
-    index: o,
+    index: a,
     selected: s
   })), {
     children: [(0, r.jsx)(d.MC, {
       channel: n,
       className: m.itemIcon
-    }), (0, r.jsx)(a.Text, {
+    }), (0, r.jsx)(o.Text, {
       variant: "text-sm/medium",
       color: "text-primary",
       className: m.itemText,

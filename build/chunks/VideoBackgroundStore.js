@@ -98,7 +98,7 @@ function S(e) {
   let {
     settings: t
   } = e;
-  a.TO.CAMERA_BACKGROUND_LIVE in t && (m = true)
+  o.TO.CAMERA_BACKGROUND_LIVE in t && (m = true)
 }
 
 function A() {

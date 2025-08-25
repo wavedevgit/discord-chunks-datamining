@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk592125 = require("./592125.js"),
@@ -22,21 +22,21 @@ function h(e) {
     isLoading: t,
     noText: n,
     noImage: i,
-    previewText: a,
+    previewText: o,
     className: s
   } = e;
   return (0, r.jsx)("div", {
-    className: o()(p.emptyPreviewContainer, s),
+    className: a()(p.emptyPreviewContainer, s),
     children: t ? (0, r.jsx)(l.$jN, {}) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
-        className: o()(p.emptyPreviewImage, {
+        className: a()(p.emptyPreviewImage, {
           [p.noImage]: i
         })
       }), n ? null : (0, r.jsx)(l.Text, {
         variant: "text-sm/normal",
         color: "none",
         className: p.emptyPreviewText,
-        children: null != a ? a : _.intl.string(_.t.uQZTBQ)
+        children: null != o ? o : _.intl.string(_.t.uQZTBQ)
       })]
     })
   })
@@ -46,8 +46,8 @@ function m(e) {
   let {
     stream: t,
     className: n,
-    noText: a = false,
-    noImage: o = false
+    noText: o = false,
+    noImage: a = false
   } = e, l = (0, s.e7)([c.Z], () => c.Z.getBasicChannel(t.channelId)), m = (0, s.e7)([u.Z], () => null != l && u.Z.canBasicChannel(f.S7T.CONNECT, l)), {
     previewUrl: g,
     isLoading: E
@@ -59,8 +59,8 @@ function m(e) {
   return null == y ? (0, r.jsx)(h, {
     className: n,
     isLoading: E,
-    noText: a,
-    noImage: o,
+    noText: o,
+    noImage: a,
     previewText: m ? true : _.intl.string(_.t.pgUTZG)
   }) : (0, r.jsx)("div", {
     className: n,

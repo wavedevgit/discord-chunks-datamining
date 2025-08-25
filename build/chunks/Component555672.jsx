@@ -28,8 +28,8 @@ let h = e => {
       channel: n,
       selected: i
     } = e, {
-      largeImage: a
-    } = (0, o.rv)({
+      largeImage: o
+    } = (0, a.rv)({
       entry: t,
       showCoverImage: false
     }), _ = (0, l.Nq)(t);
@@ -49,10 +49,10 @@ let h = e => {
           }, n))
         })]
       }), (0, r.jsx)(s.f, {
-        src: null == a ? true : a.src,
+        src: null == o ? true : o.src,
         size: 48,
         className: d.thumbnail,
-        alt: null == a ? true : a.alt
+        alt: null == o ? true : o.alt
       })]
     }) : null
   },

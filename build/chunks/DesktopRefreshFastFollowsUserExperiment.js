@@ -2,8 +2,8 @@
 /** chunk id: 591146, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  CL: () => o,
-  Ml: () => a,
+  CL: () => a,
+  Ml: () => o,
   VM: () => s
 });
 var Chunk338390 = require("./338390.js");
@@ -59,14 +59,14 @@ let i = (0, require("./818083.js").B)({
   }]
 });
 
-function a(e) {
+function o(e) {
   let t = (0, r.Z)(e);
   return i.useExperiment({
     location: e
   }).largerGuildIcons && !t
 }
 
-function o(e) {
+function a(e) {
   return i.useExperiment({
     location: e
   }).darkerGuildListBackground

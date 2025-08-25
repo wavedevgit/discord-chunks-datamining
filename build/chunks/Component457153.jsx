@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk202841 = require("./202841.js"),
   Chunk113434 = require("./113434.js"),
   Chunk497505 = require("./497505.js"),
@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
 let m = Chunk647438.forwardRef(function(e, t) {
   var n;
   let {
-    className: a,
+    className: o,
     expansionSpring: m,
     isExpanded: g,
     isExpansionAnimationComplete: E,
@@ -45,7 +45,7 @@ let m = Chunk647438.forwardRef(function(e, t) {
     }), (0, r.jsx)(s.animated.div, {
       ref: t,
       "aria-hidden": g && E,
-      className: o()(a, h.contentCollapsed, {
+      className: a()(o, h.contentCollapsed, {
         [h.contentCollapsedExpanded]: g,
         [h.contentCollapsedAccepted]: R
       }),

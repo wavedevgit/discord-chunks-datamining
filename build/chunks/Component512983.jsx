@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk788877 = require("./788877.js");
 
@@ -55,8 +55,8 @@ function f(e, t) {
   if (null == e) return {};
   var n, r, i = _(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -64,8 +64,8 @@ function f(e, t) {
 function _(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 var p = function(e) {
@@ -90,10 +90,10 @@ function h(e) {
       t = n;
       break;
     default:
-      t = o.H
+      t = a.H
   }
   return (0, r.jsxs)(t, d(c({
-    className: a()(s[n], "h5" !== n ? s.defaultColor : null, l, {
+    className: o()(s[n], "h5" !== n ? s.defaultColor : null, l, {
       [s["defaultMargin".concat(n)]]: null == l,
       [s.faded]: u,
       [s.disabled]: _,

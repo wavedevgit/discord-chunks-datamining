@@ -56,8 +56,8 @@ function p(e, t) {
   if (null == e) return {};
   var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -65,8 +65,8 @@ function p(e, t) {
 function h(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -78,8 +78,8 @@ function m(e) {
   } = e, f = p(e, ["location", "applicationId", "centerButton"]);
   let {
     parentAnalyticsLocation: h
-  } = (0, o.ZP)(), m = u ? l.d : l.Z, g = () => {
-    (0, s.v)(h, s.d.LEAVE_ACTIVITY), a.Z.leaveActivity({
+  } = (0, a.ZP)(), m = u ? l.d : l.Z, g = () => {
+    (0, s.v)(h, s.d.LEAVE_ACTIVITY), o.Z.leaveActivity({
       location: t,
       applicationId: n,
       showFeedback: true

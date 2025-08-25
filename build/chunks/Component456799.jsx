@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk301188 = require("./301188.js");
 let l = function(e) {
@@ -20,9 +20,9 @@ let l = function(e) {
   function l(e) {
     e.stopPropagation()
   }
-  return (0, r.jsx)(o.Rny, {
-    children: (0, r.jsx)(o.Zbd, {
-      className: a()(s.componentPreviewWrapper, {
+  return (0, r.jsx)(a.Rny, {
+    children: (0, r.jsx)(a.Zbd, {
+      className: o()(s.componentPreviewWrapper, {
         [s.componentPreviewWrapperBordered]: i
       }),
       outline: i,

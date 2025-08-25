@@ -40,8 +40,8 @@ function f(e) {
   let {
     channelId: t,
     location: n
-  } = e, r = l.Z.getChannel(t), a = (0, s.zu)(i.z.USER_DM_MUTE_FEEDBACK);
-  null != r && r.isDM() && !a && (0, c.Xs)(n) && o.Z.dispatch({
+  } = e, r = l.Z.getChannel(t), o = (0, s.zu)(i.z.USER_DM_MUTE_FEEDBACK);
+  null != r && r.isDM() && !o && (0, c.Xs)(n) && a.Z.dispatch({
     type: "USER_DM_MUTE_SHOW_FEEDBACK",
     channel: r
   })

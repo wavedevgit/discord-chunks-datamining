@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk202841 = require("./202841.js"),
   Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
@@ -31,22 +31,22 @@ function y(e) {
     tooltipText: t,
     headingText: n,
     textColor: i
-  } = e, a = null != n;
+  } = e, o = null != n;
   return (0, r.jsxs)("span", {
-    className: a ? true : g.tooltipContainer,
+    className: o ? true : g.tooltipContainer,
     children: [(0, r.jsxs)("span", {
       className: g.tooltipContainer,
       children: [(0, r.jsx)(u.SrA, {
         size: "md",
         color: "currentColor",
         className: g.nitroWheel
-      }), a ? (0, r.jsx)(u.X6q, {
+      }), o ? (0, r.jsx)(u.X6q, {
         color: null != i ? i : "text-default",
         variant: "heading-sm/semibold",
         children: n
       }) : null]
     }), (0, r.jsx)(u.Text, {
-      variant: a ? "text-xs/normal" : "text-sm/medium",
+      variant: o ? "text-xs/normal" : "text-sm/medium",
       color: null != i ? i : "text-default",
       children: t
     })]
@@ -61,7 +61,7 @@ function v(e) {
   let {
     checked: t,
     onClick: n,
-    id: a = "burst-reaction-toggle-button"
+    id: o = "burst-reaction-toggle-button"
   } = e, v = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), I = _.default.getCurrentUser(), T = null == I || (0, p.I5)(I) ? [c.z.SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP] : [], [S, A] = (0, f.US)(T), [C, N] = i.useState(false), [R, P] = (0, u.q_F)(() => ({})), w = (0, s.animated)(u.Pt5);
 
   function D() {
@@ -96,11 +96,11 @@ function v(e) {
       className: g.visuallyHidden,
       checked: t,
       onChange: D,
-      id: a,
+      id: o,
       type: "checkbox"
     }), (0, r.jsxs)("label", {
-      htmlFor: a,
-      className: o()(g.label, {
+      htmlFor: o,
+      className: a()(g.label, {
         [g.labelChecked]: t
       }),
       children: [(0, r.jsx)(w, {

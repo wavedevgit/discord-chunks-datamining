@@ -36,14 +36,14 @@ var u = function() {
         },
         i = n.handlerIds;
       (0, r.k)("function" == typeof e, "listener must be a function."), (0, r.k)(true === i || Array.isArray(i), "handlerIds, when specified, must be an array of strings.");
-      var a = this.store.getState().stateId,
+      var o = this.store.getState().stateId,
         s = function() {
           var n = t.store.getState(),
             r = n.stateId;
           try {
-            r !== a && (r !== a + 1 || (0, o.co)(n.dirtyHandlerIds, i)) && e()
+            r !== o && (r !== o + 1 || (0, a.co)(n.dirtyHandlerIds, i)) && e()
           } finally {
-            a = r
+            o = r
           }
         };
       return this.store.subscribe(s)
@@ -74,8 +74,8 @@ var u = function() {
       var t = this.registry.getTarget(e);
       if ((0, r.k)(t, "Expected to find a valid target. targetId=".concat(e)), !this.isDragging() || this.didDrop()) returnfalse;
       var n = this.registry.getTargetType(e),
-        a = this.getItemType();
-      return (0, i.s)(n, a) && t.canDrop(this, e)
+        o = this.getItemType();
+      return (0, i.s)(n, o) && t.canDrop(this, e)
     }
   }, {
     key: "isDragging",
@@ -99,12 +99,12 @@ var u = function() {
       var n = t.shallow;
       if (!this.isDragging()) returnfalse;
       var r = this.registry.getTargetType(e),
-        a = this.getItemType();
-      if (a && !(0, i.s)(r, a)) returnfalse;
-      var o = this.getTargetIds();
-      if (!o.length) returnfalse;
-      var s = o.indexOf(e);
-      return n ? s === o.length - 1 : s > false
+        o = this.getItemType();
+      if (o && !(0, i.s)(r, o)) returnfalse;
+      var a = this.getTargetIds();
+      if (!a.length) returnfalse;
+      var s = a.indexOf(e);
+      return n ? s === a.length - 1 : s > false
     }
   }, {
     key: "getItemType",

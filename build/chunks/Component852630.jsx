@@ -14,7 +14,7 @@ function l(e) {
   let {
     selected: t,
     nameplate: n
-  } = e, l = (0, a.x)(), c = new o.mn({
+  } = e, l = (0, o.x)(), c = new a.mn({
     id: "0",
     type: s.d4z.DM,
     name: "self",

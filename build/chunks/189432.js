@@ -69,9 +69,9 @@ function y(e, t, n) {
     S = null != T ? l.Z.getChannel(T) : null;
   if (n !== h.oC.MEMBER_SAFETY && (null == S || S.getGuildId() !== e)) {
     let t = c.ZP.getDefaultChannel(e);
-    null == t || (0, r.aC)(t) || (0, a.uL)(p.Z5c.CHANNEL(e, t.id))
+    null == t || (0, r.aC)(t) || (0, o.uL)(p.Z5c.CHANNEL(e, t.id))
   }
-  return (0, d.q)(e, t, v, I), o.Z.openGuildSidebar({
+  return (0, d.q)(e, t, v, I), a.Z.openGuildSidebar({
     guildId: e,
     baseChannelId: n,
     sidebarType: s.jL.GUILD_MEMBER_MOD_VIEW,

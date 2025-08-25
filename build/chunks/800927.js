@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
   Chunk159635 = require("./159635.js"),
-  o = require.n(Chunk159635);
+  a = require.n(Chunk159635);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -60,7 +60,7 @@ let d = /\n{2,}$/,
   O = 1,
   v = 1e9,
   I = e => e.map(e => ("text" === e.type && null != e.content && (e.content = e.content.replace(/\n+\s*$/, "")), e)),
-  T = u(l({}, o().defaultRules.list), {
+  T = u(l({}, a().defaultRules.list), {
     requiredFirstCharacters: " *-0123456789".split(""),
     match: (e, t) => {
       if (!t.allowList || t._listLevel >= y + 1) return null;
@@ -70,8 +70,8 @@ let d = /\n{2,}$/,
     },
     parse: (e, t, n) => {
       let r = e[2],
-        a = r.length > 1,
-        o = a ? Math.min(v, Math.max(O, +r)) : true,
+        o = r.length > 1,
+        a = o ? Math.min(v, Math.max(O, +r)) : true,
         s = e[0].replace(d, "\n"),
         c = h.exec(s),
         f = null != c ? c[0].length : 0,
@@ -83,17 +83,17 @@ let d = /\n{2,}$/,
       i()(null != y, "markup list items can not be parsed.");
       let T = false;
       return {
-        ordered: a,
-        start: o,
+        ordered: o,
+        start: a,
         items: y.map((e, r) => {
-          let i, a = e.replace(h, "").replace(b, ""),
-            o = r === y.length - 1,
-            s = false !== a.indexOf("\n\n") || o && T;
+          let i, o = e.replace(h, "").replace(b, ""),
+            a = r === y.length - 1,
+            s = false !== o.indexOf("\n\n") || a && T;
           T = s;
           let c = n.inline,
             d = n._list,
             f = n._listLevel;
-          n._list = true, n._listLevel = (null != f ? f : 0) + 1, s ? (n.inline = false, i = a.replace(g, "\n\n")) : (n.inline = true, i = a.replace(g, ""));
+          n._list = true, n._listLevel = (null != f ? f : 0) + 1, s ? (n.inline = false, i = o.replace(g, "\n\n")) : (n.inline = true, i = o.replace(g, ""));
           let _ = I(t(i, u(l({}, n), {
             allowHeading: false
           })));

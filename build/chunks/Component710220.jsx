@@ -42,9 +42,9 @@ function f(e) {
   } = e, {
     avatarSrc: c,
     eventHandlers: f
-  } = (0, a.Z)({
+  } = (0, o.Z)({
     userId: null == t ? true : t.id,
-    size: n ? o.EF.SIZE_24 : o.EF.SIZE_32,
+    size: n ? a.EF.SIZE_24 : a.EF.SIZE_32,
     animateOnHover: true
   });
   return (0, r.jsx)("div", {
@@ -57,7 +57,7 @@ function f(e) {
           className: l.icon,
           src: c,
           "aria-label": t.username,
-          size: o.EF.SIZE_32
+          size: a.EF.SIZE_32
         }, f))
       }), (0, r.jsx)(i.X6q, {
         variant: "heading-sm/normal",

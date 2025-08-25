@@ -59,7 +59,7 @@ function v(e) {
     location: "UserSettingsAuthedApps"
   }, {
     autoTrackExposure: true
-  }).enabled, N = (0, a.e7)([g.Z], () => g.Z.getUserProfile(t.id)), R = null == N ? true : N.application, P = (0, f.Z)({
+  }).enabled, N = (0, o.e7)([g.Z], () => g.Z.getUserProfile(t.id)), R = null == N ? true : N.application, P = (0, f.Z)({
     user: t,
     application: null != R ? R : true,
     guildId: n,
@@ -122,18 +122,18 @@ function v(e) {
       })
     }), L]
   ];
-  return j.every(e => e.every(e => null == e)) ? null : (0, r.jsx)(o.yRy, {
+  return j.every(e => e.every(e => null == e)) ? null : (0, r.jsx)(a.yRy, {
     targetElementRef: I,
     renderPopout: e => {
       let {
         closePopout: t
       } = e;
-      return (0, r.jsx)(o.v2r, {
+      return (0, r.jsx)(a.v2r, {
         navId: "user-bot-profile-overflow-menu",
         onSelect: true,
         onClose: t,
         "aria-label": b.intl.string(b.t.AXIHpa),
-        children: j.map((e, t) => (0, r.jsx)(o.kSQ, {
+        children: j.map((e, t) => (0, r.jsx)(a.kSQ, {
           children: e.map(e => e)
         }, t))
       })
@@ -141,7 +141,7 @@ function v(e) {
     children: e => (0, r.jsx)(E.oY, O({
       ref: I,
       action: "PRESS_OPTIONS",
-      icon: o.xhG,
+      icon: a.xhG,
       tooltipText: b.intl.string(b.t.UKOtz8)
     }, e))
   })

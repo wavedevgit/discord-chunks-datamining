@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -33,7 +33,7 @@ function f(e) {
     }), (0, r.jsx)(s.LZC, {
       size: 24
     }), (0, r.jsxs)("div", {
-      className: a()(u.guildBoostingSubscriptionRow, c.card),
+      className: o()(u.guildBoostingSubscriptionRow, c.card),
       children: [(0, r.jsx)("img", {
         src: d,
         alt: "",
@@ -51,9 +51,9 @@ function f(e) {
             numSubscriptions: n
           })
         })]
-      }), (0, r.jsx)(o.zx, {
-        color: o.zx.Colors.CUSTOM,
-        size: o.zx.Sizes.SMALL,
+      }), (0, r.jsx)(a.zx, {
+        color: a.zx.Colors.CUSTOM,
+        size: a.zx.Sizes.SMALL,
         className: c.manageSubscriptionsButton,
         onClick: t,
         children: l.intl.string(l.t["3a8Xxs"])

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk780384 = require("./780384.js"),
   Chunk755721 = require("./755721.js"),
@@ -39,7 +39,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk314907 = require("./314907.js"),
   Chunk826701 = require("./826701.js");
 
-function M(e, t, n) {
+function k(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -55,7 +55,7 @@ function U(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      M(e, t, n[t])
+      k(e, t, n[t])
     })
   }
   return e
@@ -98,12 +98,12 @@ let Z = () => {
         premiumType: n
       } = e,
       i = (0, d.ZP)();
-    t = n === P.p9.TIER_0 ? (0, l.wj)(i) ? x : L : (0, l.wj)(i) ? j : k;
-    let a = (0, E.Px)(n);
+    t = n === P.p9.TIER_0 ? (0, l.wj)(i) ? x : L : (0, l.wj)(i) ? j : M;
+    let o = (0, E.Px)(n);
     return (0, r.jsx)("img", {
       src: t,
       className: D.logo,
-      alt: a
+      alt: o
     })
   },
   H = e => {
@@ -113,7 +113,7 @@ let Z = () => {
       column2: i
     } = e;
     return (0, r.jsxs)("tr", {
-      className: o()(D.headerRow, D.rowBottomBorder, D.topBorderRadius),
+      className: a()(D.headerRow, D.rowBottomBorder, D.topBorderRadius),
       children: [(0, r.jsx)("th", {
         scope: "col",
         className: D.headerLabelCell,
@@ -124,7 +124,7 @@ let Z = () => {
         children: n
       }), (0, r.jsx)("th", {
         scope: "col",
-        className: o()(D.headerCell, D.topBorderRadius),
+        className: a()(D.headerCell, D.topBorderRadius),
         children: i
       })]
     })
@@ -134,18 +134,18 @@ let Z = () => {
       label: t,
       column1: n,
       column2: i,
-      withBottomBorder: a = true,
+      withBottomBorder: o = true,
       withTopBorderRadius: s = false,
       withBottomBorderRadius: l = false,
       buttonsRow: c = false,
       shortRow: u = false
     } = e;
     return (0, r.jsxs)("tr", {
-      className: o()(D.row, {
+      className: a()(D.row, {
         [D.wideRow]: c,
         [D.topBorderRadius]: s,
         [D.bottomBorderRadius]: l,
-        [D.rowBottomBorder]: a,
+        [D.rowBottomBorder]: o,
         [D.shortRow]: u
       }),
       children: [(0, r.jsx)("th", {
@@ -153,12 +153,12 @@ let Z = () => {
         className: D.labelCell,
         children: t
       }), (0, r.jsx)("td", {
-        className: o()(D.cell, {
+        className: a()(D.cell, {
           [D.buttonsCell]: c
         }),
         children: n
       }), (0, r.jsx)("td", {
-        className: o()(D.cell, {
+        className: a()(D.cell, {
           [D.topBorderRadius]: s,
           [D.bottomBorderRadius]: l,
           [D.buttonsCell]: c
@@ -170,15 +170,15 @@ let Z = () => {
   W = e => {
     var t;
     let n, {
-        className: a,
+        className: o,
         hideCTAs: C = false,
         headingOverride: x,
         hidePill: L = false,
         selectedPlanColumnClassName: j,
-        selectedPlanTier: k = P.p9.TIER_2
+        selectedPlanTier: M = P.p9.TIER_2
       } = e,
       {
-        analyticsLocations: M
+        analyticsLocations: k
       } = (0, _.ZP)(f.Z.PREMIUM_MARKETING_PLAN_COMPARISON),
       G = (0, s.e7)([g.Z], () => g.Z.hasFetchedSubscriptions()),
       W = (0, h.V)(P.nS),
@@ -194,9 +194,9 @@ let Z = () => {
       en = (0, A.A)(P.Xh.PREMIUM_MONTH_TIER_2),
       er = "".concat(en, "/").concat((0, E.eP)(P.rV.MONTH)),
       ei = (0, E.CY)(P.Xh.PREMIUM_MONTH_TIER_0),
-      ea = (0, E.CY)(P.Xh.PREMIUM_MONTH_TIER_2),
-      eo = (0, p.Z)(),
-      es = (0, R.n)(ei, ea, et, er, eo.fractionalState),
+      eo = (0, E.CY)(P.Xh.PREMIUM_MONTH_TIER_2),
+      ea = (0, p.Z)(),
+      es = (0, R.n)(ei, eo, et, er, ea.fractionalState),
       el = (0, b.Vi)(),
       {
         enabled: ec
@@ -269,20 +269,20 @@ let Z = () => {
       className: D.freeTrialPillWithSparkles,
       colorOptions: J === P.Si.TIER_0 ? z ? N.VE.PREMIUM_TIER_0_GRADIENT_FILL : N.VE.PREMIUM_TIER_0_WHITE_FILL : z ? X ? N.VE.PREMIUM_TIER_2_OLD_GRADIENT_FILL : N.VE.PREMIUM_TIER_2_NEW_GRADIENT_FILL : N.VE.PREMIUM_TIER_2_WHITE_FILL
     }) : el ? (0, r.jsx)(Z, {}) : (0, r.jsx)(F, {});
-    let ef = J === P.Si.TIER_0 || $ === P.p9.TIER_0 || k === P.p9.TIER_0;
+    let ef = J === P.Si.TIER_0 || $ === P.p9.TIER_0 || M === P.p9.TIER_0;
     return (0, r.jsx)(_.Gt, {
-      value: M,
+      value: k,
       children: (0, r.jsxs)("div", {
-        className: o()(D.root, a),
+        className: a()(D.root, o),
         "data-testid": "v2-marketing-page-comparison-table",
         children: [(0, r.jsx)(u.X6q, {
-          className: o()(D.titleText, D.__invalid_textColor),
+          className: a()(D.titleText, D.__invalid_textColor),
           variant: "heading-xxl/extrabold",
           children: null != x ? x : w.intl.string(w.t.FIbMh4)
         }), (0, r.jsxs)("div", {
           className: D.tableWrapper,
           children: [(0, r.jsx)("div", {
-            className: o()(j, {
+            className: a()(j, {
               [D.tier0ColumnOuter]: ef,
               [D.tier2ColumnOuter]: !ef
             }),

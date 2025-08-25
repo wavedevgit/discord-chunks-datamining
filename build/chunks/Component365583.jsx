@@ -58,7 +58,7 @@ function v(e) {
   let {
     user: t,
     activity: n,
-    entry: o,
+    entry: a,
     onAction: l,
     onClose: c,
     appContext: u
@@ -71,10 +71,10 @@ function v(e) {
     })) return null;
   let f = O({
     activity: n,
-    entry: o,
+    entry: a,
     onOpenGameSettings: d
   });
-  return null == f ? null : (0, r.jsx)(a.sNh, {
+  return null == f ? null : (0, r.jsx)(o.sNh, {
     id: "manage-privacy",
     label: g.intl.string(g.t.anfNPT),
     action: () => {

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk729594 = require("./729594.js"),
   Chunk442837 = require("./442837.js"),
   Chunk780384 = require("./780384.js"),
@@ -29,7 +29,7 @@ function _(e) {
     m = null,
     g = null;
   try {
-    let e = o.parse(_, true);
+    let e = a.parse(_, true);
     h = e.host, m = e.pathname, g = null != (n = e.query.i) ? n : null, Array.isArray(g) && (g = g[0])
   } catch (e) {
     return null
@@ -42,7 +42,7 @@ function _(e) {
   "song" === b ? y = 175 : "music-video" === b && (y = 371), m = m.substr(1);
   let O = p ? "dark" : "light";
   return (0, r.jsx)("iframe", {
-    className: a()(f.embedAppleMusic, i),
+    className: o()(f.embedAppleMusic, i),
     src: d.P.EMBED(m, O, g),
     style: {
       maxWidth: 660,

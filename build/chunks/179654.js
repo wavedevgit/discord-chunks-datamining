@@ -8,7 +8,7 @@ var Chunk934458 = require("./934458.js"),
   Chunk848479 = require("./848479.js"),
   Chunk909766 = require("./909766.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -86,6 +86,6 @@ class s {
     }
   }
   constructor() {
-    o(this, "cpuHistogram", new Chunk909766.b), o(this, "memoryHistogram", new Chunk909766.b), o(this, "startCPU", Chunk848479.Z.getCumulativeCPUUsage()), o(this, "lastCPU", this.startCPU), o(this, "lastBattery", null)
+    a(this, "cpuHistogram", new Chunk909766.b), a(this, "memoryHistogram", new Chunk909766.b), a(this, "startCPU", Chunk848479.Z.getCumulativeCPUUsage()), a(this, "lastCPU", this.startCPU), a(this, "lastBattery", null)
   }
 }

@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   J: () => l,
-  Nw: () => o,
-  QJ: () => a,
+  Nw: () => a,
+  QJ: () => o,
   YG: () => c,
   hW: () => i,
   it: () => u,
@@ -13,10 +13,10 @@ require.d(exports, {
 });
 let r = 25,
   i = 4;
-var a = function(e) {
+var o = function(e) {
     return e.TERMS = "TERMS", e.TEXT_INPUT = "TEXT_INPUT", e.PARAGRAPH = "PARAGRAPH", e.MULTIPLE_CHOICE = "MULTIPLE_CHOICE", e.VERIFICATION = "VERIFICATION", e
   }({}),
-  o = function(e) {
+  a = function(e) {
     return e.TIMESTAMP_DESC = "NEWEST", e.TIMESTAMP_ASC = "OLDEST", e
   }({}),
   s = function(e) {

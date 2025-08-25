@@ -27,7 +27,7 @@ var Chunk442837 = require("./442837.js"),
 function O(e) {
   let t = (0, i.e7)([d.default], () => d.default.getCurrentUser()),
     n = (0, i.e7)([u.Z], () => u.Z.hidePersonalInformation),
-    O = (0, i.e7)([l.Z], () => (0, a.wj)(l.Z.theme)),
+    O = (0, i.e7)([l.Z], () => (0, o.wj)(l.Z.theme)),
     {
       multiAccountUsers: v
     } = (0, m.L)(),
@@ -39,12 +39,12 @@ function O(e) {
       }), p.yD(e))
     },
     T = v.map(i => {
-      let a = new c.Z(i),
-        l = a.id === (null == t ? true : t.id),
+      let o = new c.Z(i),
+        l = o.id === (null == t ? true : t.id),
         u = i.tokenStatus === h.q.INVALID,
-        d = n ? null : "#".concat(a.discriminator);
-      return (0, r.jsx)(o.sNh, {
-        id: a.id,
+        d = n ? null : "#".concat(o.discriminator);
+      return (0, r.jsx)(a.sNh, {
+        id: o.id,
         focusedClassName: y.focused,
         label: e => {
           let {
@@ -52,30 +52,30 @@ function O(e) {
           } = e;
           return (0, r.jsxs)("div", {
             className: y.userMenuItem,
-            children: [(0, r.jsx)(o.qEK, {
-              src: a.getAvatarURL(true, 40),
-              size: o.EFr.SIZE_24,
+            children: [(0, r.jsx)(a.qEK, {
+              src: o.getAvatarURL(true, 40),
+              size: a.EFr.SIZE_24,
               "aria-label": i.username
             }), (0, r.jsxs)("div", {
               className: y.userMenuUsername,
-              children: [(0, r.jsx)(o.Text, {
+              children: [(0, r.jsx)(a.Text, {
                 className: y.userMenuText,
                 variant: "text-sm/normal",
-                children: _.ZP.getUserTag(a, {
+                children: _.ZP.getUserTag(o, {
                   mode: "username",
                   identifiable: n ? "never" : "always"
                 })
-              }), !a.hasUniqueUsername() && (0, r.jsx)(o.Text, {
+              }), !o.hasUniqueUsername() && (0, r.jsx)(a.Text, {
                 className: y.userMenuDiscriminator,
                 variant: "text-sm/normal",
                 children: d
               })]
-            }), l && (0, r.jsx)(o.owK, {
+            }), l && (0, r.jsx)(a.owK, {
               size: "sm",
               color: (0, s.Lq)(t ? E.Ilk.WHITE_500 : E.Ilk.BRAND_500),
               secondaryColor: (0, s.Lq)(t && O || t && !O ? E.Ilk.BRAND_500 : E.Ilk.WHITE_500),
               className: y.activeIcon
-            }), u && (0, r.jsx)(o.Mgn, {
+            }), u && (0, r.jsx)(a.Mgn, {
               color: (0, s.Lq)(E.Ilk.RED_400),
               secondaryColor: (0, s.Lq)(t && O || t && !O ? E.Ilk.BRAND_500 : E.Ilk.WHITE_500),
               size: "xs",
@@ -84,12 +84,12 @@ function O(e) {
           })
         },
         action: () => {
-          null == e || e(), u ? (0, g.Z)() : I(a.id)
+          null == e || e(), u ? (0, g.Z)() : I(o.id)
         }
-      }, a.id)
+      }, o.id)
     });
   return T.push((0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(o.Clw, {}), (0, r.jsx)(o.sNh, {
+    children: [(0, r.jsx)(a.Clw, {}), (0, r.jsx)(a.sNh, {
       id: "manage-accounts",
       label: b.intl.string(b.t.WbFpq6),
       action: () => {

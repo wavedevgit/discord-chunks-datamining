@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk374470 = require("./374470.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
 let I = function(e) {
   let t, {
       className: n,
-      quest: a,
+      quest: o,
       autoplay: I = true,
       learnMoreStyle: T = null,
       sourceQuestContent: S,
@@ -36,24 +36,24 @@ let I = function(e) {
     C = (0, _.O5)(),
     N = (0, l.e7)([f.Z], () => f.Z.isFocused()),
     R = (0, l.e7)([u.Z], () => u.Z.useReducedMotion),
-    P = i.useMemo(() => (0, h.fh)(a, h.eC.REWARD), [a]),
-    w = i.useMemo(() => (0, h.fh)(a, h.eC.REWARD_IMAGE), [a]),
+    P = i.useMemo(() => (0, h.fh)(o, h.eC.REWARD), [o]),
+    w = i.useMemo(() => (0, h.fh)(o, h.eC.REWARD_IMAGE), [o]),
     D = i.useCallback(t => {
       var n;
       (0, s.k)(t.currentTarget, HTMLElement) && t.currentTarget.blur(), C({
-        questId: a.id,
+        questId: o.id,
         questContent: e.questContent,
         questContentPosition: e.questContentPosition,
         questContentCTA: _.jZ.REWARD_LEARN_MORE,
         sourceQuestContent: S
       }), (0, b.navigateToQuestHome)({
         fromContent: e.questContent,
-        questId: a.id
+        questId: o.id
       }), null == (n = e.onClick) || n.call(e, t)
-    }, [C, a.id, e, S]),
+    }, [C, o.id, e, S]),
     x = i.useRef(null),
     L = i.useRef(I),
-    j = (0, p.Bg)(a.config);
+    j = (0, p.Bg)(o.config);
   return i.useEffect(() => {
     if (null != x.current) {
       if (!P.isAnimated || R) {
@@ -78,7 +78,7 @@ let I = function(e) {
     videoAsset: {
       asset: P,
       assetId: "QuestRewardTile_rewardTileAnimated",
-      className: o()(v.questRewardTileAsset, v.questRewardTileAssetLazyVideo)
+      className: a()(v.questRewardTileAsset, v.questRewardTileAssetLazyVideo)
     },
     videoActive: I,
     onLoadComplete: e.onLoadComplete
@@ -107,16 +107,16 @@ let I = function(e) {
     id: "QuestRewardTile_rewardTileStatic",
     children: t => (0, r.jsx)("img", {
       ref: t,
-      alt: m.r.build(a.config).defaultRewardName,
-      className: o()(v.questRewardTileAsset, v.questRewardTileAssetStatic),
+      alt: m.r.build(o.config).defaultRewardName,
+      className: a()(v.questRewardTileAsset, v.questRewardTileAssetStatic),
       src: P.url,
       onLoad: e.onLoadComplete
     })
   }), null == T ? (0, r.jsx)("div", {
-    className: o()(v.questRewardTile, n),
+    className: a()(v.questRewardTile, n),
     children: t
   }) : (0, r.jsxs)(c.P3F, {
-    className: o()(v.questRewardTileInteractive, v.questRewardTile, v.rewardHighlight, n),
+    className: a()(v.questRewardTileInteractive, v.questRewardTile, v.rewardHighlight, n),
     onClick: D,
     children: [t, (0, r.jsx)(c.ZX5, {
       className: v.shine,

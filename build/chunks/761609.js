@@ -8,7 +8,7 @@ var Chunk654861 = require("./654861.js"),
   i = require.n(Chunk654861),
   Chunk413135 = require("./413135.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -28,10 +28,10 @@ class c {
   generate(e) {
     let t = i()(e),
       n = 0 | this._sequenceNumber++,
-      r = new a.Buffer(24);
+      r = new o.Buffer(24);
     return r.writeInt32LE(s(t), 0, true), r.writeInt32LE(l(t), 4, true), r.writeInt32LE(this._randomPrefix, 8, true), r.writeInt32LE(s(this._creationTime), 12, true), r.writeInt32LE(l(this._creationTime), 16, true), r.writeInt32LE(n, 20, true), r.toString("base64")
   }
   constructor() {
-    o(this, "_randomPrefix", 0 | Math.floor(0x100000000 * Math.random())), o(this, "_creationTime", i()(Date.now())), o(this, "_sequenceNumber", 0)
+    a(this, "_randomPrefix", 0 | Math.floor(0x100000000 * Math.random())), a(this, "_creationTime", i()(Date.now())), a(this, "_sequenceNumber", 0)
   }
 }

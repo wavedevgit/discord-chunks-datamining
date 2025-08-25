@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk818083 = require("./818083.js"),
   Chunk497505 = require("./497505.js"),
   Chunk46140 = require("./46140.js");
-let o = (0, Chunk818083.B)({
+let a = (0, Chunk818083.B)({
     id: "2025-07_quest_brand_safety_context",
     kind: "user",
     label: "Quest brand safety context",
@@ -23,8 +23,8 @@ let o = (0, Chunk818083.B)({
     }]
   }),
   s = e => {
-    let t = e === i.jn.QUEST_BAR_MOBILE ? a.dr.QUESTS_BAR_MOBILE : a.dr.QUESTS_BAR;
-    return o.getCurrentConfig({
+    let t = e === i.jn.QUEST_BAR_MOBILE ? o.dr.QUESTS_BAR_MOBILE : o.dr.QUESTS_BAR;
+    return a.getCurrentConfig({
       location: t
     }, {
       autoTrackExposure: false

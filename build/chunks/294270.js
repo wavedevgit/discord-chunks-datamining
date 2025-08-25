@@ -43,10 +43,10 @@ function S(e) {
     emoji: t,
     channelId: n,
     userId: r
-  } = e, a = l.default.getId(), o = d.Z.getEnabled();
+  } = e, o = l.default.getId(), a = d.Z.getEnabled();
   if (null != t) {
-    if (o && (0, f.Z)(t.name)) return C(t.name, r, n);
-    r === a && (O = [...O, t.name].slice(false * E), i().isEqual(O, g) ? (I.play(), y.stop(), O = [], (0, u.ME)(!o)) : y.start(p, () => O = []))
+    if (a && (0, f.Z)(t.name)) return C(t.name, r, n);
+    r === o && (O = [...O, t.name].slice(false * E), i().isEqual(O, g) ? (I.play(), y.stop(), O = [], (0, u.ME)(!a)) : y.start(p, () => O = []))
   }
 }
 
@@ -56,7 +56,7 @@ function A(e) {
     waitingUserId: n,
     channelId: r
   } = e, i = b("".concat(t).concat(n), r, true);
-  v[i] = new a.sW(m, () => {
+  v[i] = new o.sW(m, () => {
     delete v[i], (0, u.hu)(t, n, r)
   }), v[i].delay()
 }
@@ -65,14 +65,14 @@ function C(e, t, n) {
   var r;
   let i = b(t, n);
   if (null != d.Z.getWaitingHighFive(n, t)) return;
-  let [o, s] = null != (r = Object.entries(v).find(e => {
+  let [a, s] = null != (r = Object.entries(v).find(e => {
     let [t] = e;
     return t !== i
   })) ? r : [];
-  if (null != o && null != s) s.cancel(), T.play(), delete v[o], (0, u.Ym)(o.split(":")[0], t, n, e);
+  if (null != a && null != s) s.cancel(), T.play(), delete v[a], (0, u.Ym)(a.split(":")[0], t, n, e);
   else {
     (0, u._g)(e, t, n), I.play();
-    let r = new a.sW(h, () => {
+    let r = new o.sW(h, () => {
       delete v[t], (0, u.Gd)(t, n)
     });
     v[t] = r, r.delay()

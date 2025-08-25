@@ -3,7 +3,7 @@
 var Chunk903425 = require("./903425.js"),
   Chunk720815 = require("./720815.js"),
   Chunk533206 = require("./533206.js"),
-  o = "[object Arguments]",
+  a = "[object Arguments]",
   s = "[object Array]",
   l = "[object Boolean]",
   c = "[object Date]",
@@ -27,6 +27,6 @@ var Chunk903425 = require("./903425.js"),
   C = "[object Uint16Array]",
   N = "[object Uint32Array]",
   R = {};
-R["[object Float32Array]"] = R[O] = R[v] = R[I] = R[T] = R[S] = R[A] = R[C] = R[N] = true, R[o] = R[s] = R[b] = R[l] = R[y] = R[c] = R[u] = R[d] = R[f] = R[_] = R[p] = R[h] = R[m] = R[g] = R[E] = false, module.exports = function(e) {
-  return a(e) && i(e.length) && !!R[r(e)]
+R["[object Float32Array]"] = R[O] = R[v] = R[I] = R[T] = R[S] = R[A] = R[C] = R[N] = true, R[a] = R[s] = R[b] = R[l] = R[y] = R[c] = R[u] = R[d] = R[f] = R[_] = R[p] = R[h] = R[m] = R[g] = R[E] = false, module.exports = function(e) {
+  return o(e) && i(e.length) && !!R[r(e)]
 }

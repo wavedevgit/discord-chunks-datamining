@@ -82,8 +82,8 @@ function I(e) {
   null == h.get(n) && (g = Date.now()), h.set(n, e);
   let r = e.saveData.messageId,
     i = e.saveData.channelId,
-    a = null != (t = y.get(i)) ? t : new Set;
-  a.add(r), y.set(i, a), null == e.message && b.add(r), null != e.saveData.dueAt && new Date > e.saveData.dueAt ? E.add(r) : E.delete(r)
+    o = null != (t = y.get(i)) ? t : new Set;
+  o.add(r), y.set(i, o), null == e.message && b.add(r), null != e.saveData.dueAt && new Date > e.saveData.dueAt ? E.add(r) : E.delete(r)
 }
 
 function T(e) {
@@ -134,8 +134,8 @@ function P(e) {
     channelId: n
   }), i = h.get(r);
   if ((null == i ? true : i.message) == null) returnfalse;
-  let a = d({}, i);
-  return a.message = null, h.set(r, a), true
+  let o = d({}, i);
+  return o.message = null, h.set(r, o), true
 }
 
 function w(e) {
@@ -188,7 +188,7 @@ function j(e) {
   m = true
 }
 
-function k(e) {
+function M(e) {
   let {
     channels: t
   } = e;
@@ -198,7 +198,7 @@ function k(e) {
   return n
 }
 
-function M(e) {
+function k(e) {
   let {
     channel: t
   } = e;
@@ -282,8 +282,8 @@ let Z = new B(Chunk570140.Z, {
   GUILD_UPDATE: L,
   GUILD_DELETE: L,
   CHANNEL_CREATE: j,
-  CHANNEL_UPDATES: k,
-  CHANNEL_DELETE: M,
+  CHANNEL_UPDATES: M,
+  CHANNEL_DELETE: k,
   GUILD_MEMBER_UPDATE: U,
   GUILD_ROLE_CREATE: L,
   GUILD_ROLE_UPDATE: L,

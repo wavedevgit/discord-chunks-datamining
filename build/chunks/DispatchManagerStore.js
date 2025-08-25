@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => J
 }), require("./388685.js"), require("./415506.js"), require("./539854.js"), require("./290780.js");
 var r, Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk433517 = require("./433517.js"),
   Chunk570140 = require("./570140.js"),
@@ -79,17 +79,17 @@ function L(e, t) {
 
 function j(e, t, n, r) {
   let i = (0, _.Tu)(e, t),
-    a = {
+    o = {
       comboId: i,
       action: r
     },
-    o = I.indexOf(i);
-  false !== o && I.splice(o, 1);
+    a = I.indexOf(i);
+  false !== a && I.splice(a, 1);
   let s = L(e, t);
-  0 !== s && (n ? false === s && (v.push(a), x()) : (s > 0 && v.splice(s, 1), v.unshift(a), x())), !n && T && p.Z.resume(), w()
+  0 !== s && (n ? false === s && (v.push(o), x()) : (s > 0 && v.splice(s, 1), v.unshift(o), x())), !n && T && p.Z.resume(), w()
 }
 
-function k(e, t) {
+function M(e, t) {
   let n = (0, _.Tu)(e, t),
     r = I.indexOf(n);
   false !== r && I.splice(r, 1);
@@ -97,7 +97,7 @@ function k(e, t) {
   false !== i && (v.splice(i, 1), w()), x()
 }
 
-function M(e) {
+function k(e) {
   let {
     applicationId: t,
     branchId: n
@@ -131,7 +131,7 @@ function Z(e) {
     applicationId: t,
     branchId: n
   } = e;
-  k(t, n)
+  M(t, n)
 }
 
 function F(e) {
@@ -165,15 +165,15 @@ function H(e) {
     } = e, {
       applicationId: n,
       branchId: i
-    } = (0, _.CP)(t), o = m.Z.getState(n, i), s = f.Z.getTargetBuildId(n, i), l = f.Z.getTargetManifests(n, i);
-    if (null != o && o.type === g.vxO.UP_TO_DATE && o.buildId === o.targetBuildId && o.buildId === s && a().isEqual(o.manifestIds, o.targetManifestIds) && a().isEqual(o.manifestIds, l)) {
+    } = (0, _.CP)(t), a = m.Z.getState(n, i), s = f.Z.getTargetBuildId(n, i), l = f.Z.getTargetManifests(n, i);
+    if (null != a && a.type === g.vxO.UP_TO_DATE && a.buildId === a.targetBuildId && a.buildId === s && o().isEqual(a.manifestIds, a.targetManifestIds) && o().isEqual(a.manifestIds, l)) {
       if (I.push(t), N.has(t)) {
         switch (N.get(t)) {
           case "Install":
-            c.XT(n, o);
+            c.XT(n, a);
             break;
           case "Repair":
-            c.Wx(n, o)
+            c.Wx(n, a)
         }
         N.delete(t)
       }
@@ -206,7 +206,7 @@ function W(e) {
           application_id: t,
           branch_id: n
         } = e;
-        k(t, n)
+        M(t, n)
       }
     }
   }
@@ -265,7 +265,7 @@ class Q extends(r = Chunk442837.ZP.Store) {
 }
 b(Q, "displayName", "DispatchManagerStore");
 let J = new Q(Chunk570140.Z, {
-  DISPATCH_APPLICATION_INSTALL: M,
+  DISPATCH_APPLICATION_INSTALL: k,
   DISPATCH_APPLICATION_UPDATE: B,
   DISPATCH_APPLICATION_UNINSTALL: U,
   DISPATCH_APPLICATION_CANCEL: Z,

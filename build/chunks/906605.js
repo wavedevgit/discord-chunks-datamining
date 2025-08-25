@@ -26,8 +26,8 @@ function d(e, t) {
   }), l.default.track(u.rMx.SET_HANG_STATUS, {
     status_type: e,
     channel_id: s.Z.getVoiceChannelId(),
-    guild_id: null == (n = a.Z.getChannel(s.Z.getVoiceChannelId())) ? true : n.guild_id,
-    media_session_id: o.Z.getMediaSessionId()
+    guild_id: null == (n = o.Z.getChannel(s.Z.getVoiceChannelId())) ? true : n.guild_id,
+    media_session_id: a.Z.getMediaSessionId()
   })
 }
 
@@ -42,8 +42,8 @@ function f(e, t, n) {
   }), l.default.track(u.rMx.SET_HANG_STATUS, {
     status_type: e,
     channel_id: s.Z.getVoiceChannelId(),
-    guild_id: null == (i = a.Z.getChannel(s.Z.getVoiceChannelId())) ? true : i.guild_id,
-    media_session_id: o.Z.getMediaSessionId()
+    guild_id: null == (i = o.Z.getChannel(s.Z.getVoiceChannelId())) ? true : i.guild_id,
+    media_session_id: a.Z.getMediaSessionId()
   })
 }
 
@@ -54,8 +54,8 @@ function _(e) {
     saveAsDefault: e
   }), l.default.track(u.rMx.CLEAR_HANG_STATUS, {
     channel_id: s.Z.getVoiceChannelId(),
-    guild_id: null == (t = a.Z.getChannel(s.Z.getVoiceChannelId())) ? true : t.guild_id,
-    media_session_id: o.Z.getMediaSessionId()
+    guild_id: null == (t = o.Z.getChannel(s.Z.getVoiceChannelId())) ? true : t.guild_id,
+    media_session_id: a.Z.getMediaSessionId()
   })
 }
 

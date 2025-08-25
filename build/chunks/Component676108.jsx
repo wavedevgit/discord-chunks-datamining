@@ -100,17 +100,17 @@ function m(e) {
         iconClassName: d.staticIcon,
         dividerClassName: d.staticDivider
       })
-    }), (0, r.jsx)(a.yRy, {
+    }), (0, r.jsx)(o.yRy, {
       targetElementRef: g,
       renderPopout: b,
       position: "bottom",
-      animation: a.yRy.Animation.NONE,
+      animation: o.yRy.Animation.NONE,
       align: "left",
       children: (e, t) => {
         let {
           isShown: n
         } = t;
-        return (0, r.jsx)(o.Z, h(_({}, e), {
+        return (0, r.jsx)(a.Z, h(_({}, e), {
           ref: g,
           active: n,
           className: d.emojiButton,

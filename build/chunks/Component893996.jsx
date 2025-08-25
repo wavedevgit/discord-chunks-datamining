@@ -17,12 +17,12 @@ function s(e) {
     description: s,
     webSetting: l
   } = e;
-  return (0, r.jsx)(a.F, {
+  return (0, r.jsx)(o.F, {
     setting: l,
     children: (0, r.jsxs)("div", {
-      className: o.category,
+      className: a.category,
       children: [(0, r.jsxs)("div", {
-        className: o.categoryHeader,
+        className: a.categoryHeader,
         children: [(0, r.jsx)(i.X6q, {
           variant: "heading-lg/semibold",
           color: "header-primary",
@@ -33,10 +33,10 @@ function s(e) {
           children: s
         }) : null]
       }), (0, r.jsx)("div", {
-        className: o.categoryContent,
+        className: a.categoryContent,
         children: t
       }), (0, r.jsx)(i.$i$, {
-        className: o.categoryDivider
+        className: a.categoryDivider
       })]
     })
   })

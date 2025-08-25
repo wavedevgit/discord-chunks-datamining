@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk40330 = require("./40330.jsx"),
   Chunk95398 = require("./95398.jsx"),
@@ -21,7 +21,7 @@ function h(e) {
   let {
     file: t,
     name: n,
-    size: a,
+    size: o,
     spoiler: h
   } = e, m = (0, s.e7)([f.Z], () => f.Z.getChannelId()), g = i.useMemo(() => null != t.contentType && false !== t.contentType.indexOf("/") ? t.contentType.split("/") : ["unknown", "unknown"], [t.contentType]), [E, b] = i.useState(h), y = i.useMemo(() => () => (0, r.jsx)(d.mz, {
     mimeType: g,
@@ -31,12 +31,12 @@ function h(e) {
     isVisualMediaType: false,
     channelId: m
   }), [t, g, m]), O = e => (0, r.jsx)(l.Z, {
-    className: o()({
+    className: a()({
       [p.fileHidden]: e
     }),
     url: t.url,
     fileName: null != n ? n : _.intl.string(_.t.GnuJ5u),
-    fileSize: null != a ? a : 0,
+    fileSize: null != o ? o : 0,
     renderAdjacentContent: y
   });
   return (0, r.jsx)("div", {

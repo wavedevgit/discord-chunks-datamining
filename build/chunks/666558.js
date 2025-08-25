@@ -19,9 +19,9 @@ module.exports = function(e, t) {
   if (i.isCollapsed()) return void t.preventDefault();
   if (l(u)) {
     var d = u;
-    n = s(a.getScrollParent(d))
+    n = s(o.getScrollParent(d))
   }
-  var f = o(r);
+  var f = a(r);
   e.setClipboard(f), e.setMode("cut"), setTimeout(function() {
     e.restoreEditorDOM(n), e.exitCurrentMode(), e.update(c(r))
   }, 0)

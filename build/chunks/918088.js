@@ -75,8 +75,8 @@ function N(e) {
   if (null == e) return;
   let r = e.animated;
   if (null == r && null != e.id) {
-    var i, a;
-    r = null != (a = null == (i = o.ZP.getCustomEmojiById(e.id)) ? true : i.animated) && a
+    var i, o;
+    r = null != (o = null == (i = a.ZP.getCustomEmojiById(e.id)) ? true : i.animated) && o
   }
   let l = t && null != r && r;
   return {
@@ -97,15 +97,15 @@ function R(e) {
 }
 
 function P(e, t) {
-  var n, r, i, a;
+  var n, r, i, o;
   let {
-    formattedExpirationLabel: o
+    formattedExpirationLabel: a
   } = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {}, {
     poll: s
   } = e;
   if (null == s) return;
   let _ = e.state === I.yb.SENT,
-    p = _ ? null != o ? o : (0, v.H)(s.expiry) : "",
+    p = _ ? null != a ? a : (0, v.H)(s.expiry) : "",
     h = null == p && _,
     {
       selectedAnswerIds: m,
@@ -117,7 +117,7 @@ function P(e, t) {
     T = true;
   if (!R(e)) {
     let t = f.Z.getMessage(e.channel_id, e.id);
-    T = !e.isSearchHit && null != t, O = null != (a = null == t ? true : t.reactions) ? a : O
+    T = !e.isSearchHit && null != t, O = null != (o = null == t ? true : t.reactions) ? o : O
   }
   let A = m.size > 0,
     C = O.some(e => true === e.me_vote),
@@ -128,13 +128,13 @@ function P(e, t) {
     x = null != D ? d.ZP.getSelfMember(D) : null,
     L = (0, l.EY)(x),
     j = (0, c.b)(x),
-    k = !E && A && !N && _ && !L && !j;
+    M = !E && A && !N && _ && !L && !j;
   return {
     poll: s,
     canTapAnswers: w,
     canRemoveVote: N && _ && !h,
     canShowVoteCounts: P,
-    canSubmitVote: k,
+    canSubmitVote: M,
     expirationLabel: p,
     hasSelectedAnswer: A,
     hasVoted: N,
@@ -152,7 +152,7 @@ function P(e, t) {
 }
 
 function w(e, t) {
-  var n, o;
+  var n, a;
   let {
     animateEmoji: s = false,
     theme: l = "dark",
@@ -163,8 +163,8 @@ function w(e, t) {
   if (null == d) return;
   let f = _.default.getCurrentUser();
   if (null == f) return;
-  let p = a.Z.useReducedMotion,
-    h = null == (o = u.Z.getChannel(e.getChannelId())) || null == (n = o.getGuildId) ? true : n.call(o),
+  let p = o.Z.useReducedMotion,
+    h = null == (a = u.Z.getChannel(e.getChannelId())) || null == (n = a.getGuildId) ? true : n.call(a),
     g = (0, y.E)(f, h),
     v = d.answers,
     I = d.layout_type,
@@ -179,8 +179,8 @@ function w(e, t) {
     canSubmitVote: x,
     expirationLabel: L = T.intl.string(T.t["e+J3JS"]),
     hasSelectedAnswer: j,
-    hasVoted: k,
-    isEditingVote: M,
+    hasVoted: M,
+    isEditingVote: k,
     isExpired: U,
     isInteractive: G,
     reactions: B,
@@ -195,24 +195,24 @@ function w(e, t) {
     let r = A(B, "".concat(e.answer_id));
     return null != (n = null == r || null == (t = r.count_details) ? true : t.vote) ? n : 0
   })), z = v.map(e => {
-    var t, n, a;
-    let o = "".concat(e.answer_id),
-      l = A(B, o),
+    var t, n, o;
+    let a = "".concat(e.answer_id),
+      l = A(B, a),
       c = null != (n = null == l || null == (t = l.count_details) ? true : t.vote) ? n : 0,
       u = 0 === Y ? 0 : c / Y,
-      d = Z.has(o),
+      d = Z.has(a),
       f = c >= K && 0 !== c,
-      _ = k && null != (a = null == l ? true : l.me_vote) && a,
+      _ = M && null != (o = null == l ? true : l.me_vote) && o,
       h = C({
         didSelfVote: _,
-        hasVoted: k,
+        hasVoted: M,
         isExpired: U,
         isSelected: d,
         isLeader: f,
         showResults: H
       });
     return {
-      answerId: o,
+      answerId: a,
       pollMedia: {
         text: e.poll_media.text,
         emoji: N(e.poll_media.emoji, {
@@ -234,8 +234,8 @@ function w(e, t) {
   }), q = (0, r.EQ)({
     isExpired: U,
     canSubmitVote: x,
-    hasVoted: k,
-    isEditingVote: M,
+    hasVoted: M,
+    isEditingVote: k,
     canRemoveVote: w,
     isInteractive: G,
     showResults: H
@@ -273,7 +273,7 @@ function w(e, t) {
   })), X = (0, m.isIOS)() ? T.intl.string(T.t.PVATMz) : T.intl.string(T.t.cHfFqq), Q = (0, r.EQ)({
     isExpired: U,
     isInteractive: G,
-    isEditingVote: M
+    isEditingVote: k
   }).with({
     isInteractive: false,
     isExpired: false
@@ -295,7 +295,7 @@ function w(e, t) {
     presentation: "text",
     enabled: true,
     type: "showVoterDetails"
-  })), J = !G || U || k || H ? true : {
+  })), J = !G || U || M || H ? true : {
     label: T.intl.string(T.t["/KHAUF"]),
     presentation: "textButton",
     enabled: true,
@@ -341,7 +341,7 @@ function w(e, t) {
     canSelectMultipleAnswers: $,
     hasSelectedAnswer: j,
     canShowVoteCounts: D,
-    hasVoted: k,
+    hasVoted: M,
     isExpired: U,
     myAvatarUrl: g,
     secondaryAction: Q,

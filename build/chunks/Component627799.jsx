@@ -18,52 +18,52 @@ var Chunk243814 = require("./243814.js"),
 function f(e) {
   let t, {
       application: n,
-      accountScopes: a
+      accountScopes: o
     } = e,
     f = [],
     p = (0, s.Z)(n);
-  return (a.includes(i.x.SDK_SOCIAL_LAYER) ? (t = p ? u.intl.format(u.t.GxjwZG, {
+  return (o.includes(i.x.SDK_SOCIAL_LAYER) ? (t = p ? u.intl.format(u.t.GxjwZG, {
     applicationName: n.name,
     learnMoreURL: l.Z.getArticleURL(c.BhN.SOCIAL_LAYER_CONNECTIONS)
   }) : u.intl.format(u.t.DfBeUl, {
     learnMoreURL: l.Z.getArticleURL(c.BhN.SOCIAL_LAYER_CONNECTIONS)
   }), f.push({
-    icon: o.iFz,
+    icon: a.iFz,
     text: p ? u.intl.formatToPlainString(u.t.z9peam, {
       maxFriends: c.L4X
     }) : u.intl.formatToPlainString(u.t.WNKzo6, {
       maxFriends: c.L4X
     })
   }, {
-    icon: o.mrm,
+    icon: a.mrm,
     text: p ? u.intl.string(u.t.daY6xs) : u.intl.string(u.t.j7peBg)
   }, {
-    icon: o.iWm,
+    icon: a.iWm,
     text: p ? u.intl.string(u.t["/bdaND"]) : u.intl.string(u.t["feD3+v"])
   }, {
-    icon: o.ewm,
+    icon: a.ewm,
     text: p ? u.intl.string(u.t.mSqazM) : u.intl.string(u.t.YFFVMz)
-  })) : a.includes(i.x.SDK_SOCIAL_LAYER_PRESENCE) && (t = p ? u.intl.format(u.t.GxjwZG, {
+  })) : o.includes(i.x.SDK_SOCIAL_LAYER_PRESENCE) && (t = p ? u.intl.format(u.t.GxjwZG, {
     applicationName: n.name,
     learnMoreURL: l.Z.getArticleURL(c.BhN.SOCIAL_LAYER_CONNECTIONS)
   }) : u.intl.format(u.t.DfBeUl, {
     learnMoreURL: l.Z.getArticleURL(c.BhN.SOCIAL_LAYER_CONNECTIONS)
   }), f.push({
-    icon: o.iFz,
+    icon: a.iFz,
     text: p ? u.intl.formatToPlainString(u.t.z9peam, {
       maxFriends: c.L4X
     }) : u.intl.formatToPlainString(u.t.WNKzo6, {
       maxFriends: c.L4X
     })
   }, {
-    icon: o.iWm,
+    icon: a.iWm,
     text: p ? u.intl.string(u.t["/bdaND"]) : u.intl.string(u.t["feD3+v"])
   }, {
-    icon: o.ewm,
+    icon: a.ewm,
     text: p ? u.intl.string(u.t.mSqazM) : u.intl.string(u.t.YFFVMz)
   })), 0 === f.length) ? null : (0, r.jsxs)("div", {
     className: d.applicationEducation,
-    children: [null != t ? (0, r.jsx)(o.X6q, {
+    children: [null != t ? (0, r.jsx)(a.X6q, {
       variant: "heading-sm/normal",
       className: d.sectionLabel,
       children: t
@@ -90,7 +90,7 @@ function _(e) {
     children: [(0, r.jsx)(t, {
       className: d.entryIcon,
       color: "currentColor"
-    }), (0, r.jsx)(a.x, {
+    }), (0, r.jsx)(o.x, {
       variant: "text-md/normal",
       className: d.entryText,
       children: n

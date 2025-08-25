@@ -22,11 +22,11 @@ let f = e => {
     isExpanded: _,
     percentComplete: p,
     activeScreen: h
-  } = e, m = (0, a.eQ)(n), g = (0, a.vf)({
+  } = e, m = (0, o.eQ)(n), g = (0, o.vf)({
     quest: n,
     isExpanded: _,
     activeScreen: h,
-    sourceQuestContent: o.jn.QUEST_BAR_V2
+    sourceQuestContent: a.jn.QUEST_BAR_V2
   });
   return (0, r.jsxs)("div", {
     className: d.questProgressWrapper,
@@ -43,10 +43,10 @@ let f = e => {
         children: (0, r.jsx)(s.Z, {
           className: d.questProgressRewardTile,
           quest: n,
-          questContent: o.jn.QUEST_BAR_V2,
+          questContent: a.jn.QUEST_BAR_V2,
           autoplay: false,
           location: u.dr.QUESTS_BAR,
-          sourceQuestContent: o.jn.QUEST_BAR_V2
+          sourceQuestContent: a.jn.QUEST_BAR_V2
         })
       })
     }), (0, r.jsxs)("div", {

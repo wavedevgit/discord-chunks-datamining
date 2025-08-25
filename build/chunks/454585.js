@@ -96,7 +96,7 @@ let h = {
     astParserFor: Chunk25209._p,
     reactParserFor: Chunk25209.w4,
     parse: Chunk25209.w4(m),
-    parseTopic: (e, t, n, r) => a.w4(E)(e, t, u({
+    parseTopic: (e, t, n, r) => o.w4(E)(e, t, u({
       allowLinks: true
     }, n), r),
     parseVoiceChannelStatus: Chunk25209.w4(b),

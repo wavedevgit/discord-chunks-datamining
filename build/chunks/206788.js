@@ -2,12 +2,12 @@
 /** chunk id: 206788, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  C: () => o
+  C: () => a
 });
 var Chunk549616 = require("./549616.js"),
   Chunk863611 = require("./863611.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -15,12 +15,12 @@ function a(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class o {
+class a {
   static fromServer(e) {
-    return new o(e)
+    return new a(e)
   }
   constructor(e) {
     var t;
-    a(this, "categories", true), a(this, "userDiscounts", true), this.categories = e.categories.map(e => r.Z.fromServer(e)), this.userDiscounts = null == (t = e.user_discounts) ? true : t.map(e => i.h.fromServer(e))
+    o(this, "categories", true), o(this, "userDiscounts", true), this.categories = e.categories.map(e => r.Z.fromServer(e)), this.userDiscounts = null == (t = e.user_discounts) ? true : t.map(e => i.h.fromServer(e))
   }
 }

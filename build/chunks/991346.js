@@ -88,14 +88,14 @@ function F(e) {
     shouldMergeGameSettings: t,
     showRedesignedThirdPartyAccessSettings: n
   } = e, r = I.Z.isDeveloper, i = [{
-    header: M.intl.string(M.t.cduTBA),
+    header: k.intl.string(k.t.cduTBA),
     settings: n ? [j.s6.ACCOUNT, j.s6.GAMES, j.s6.PROFILE_CUSTOMIZATION, j.s6.CONTENT_SOCIAL, j.s6.DATA_PRIVACY, j.s6.PRIVACY_FAMILY_CENTER, j.s6.THIRD_PARTY_ACCESS, j.s6.SESSIONS, j.s6.CLIPS] : [j.s6.ACCOUNT, j.s6.GAMES, j.s6.PROFILE_CUSTOMIZATION, j.s6.CONTENT_SOCIAL, j.s6.DATA_PRIVACY, j.s6.PRIVACY_FAMILY_CENTER, j.s6.AUTHORIZED_APPS, j.s6.SESSIONS, j.s6.CONNECTIONS, j.s6.CLIPS]
   }, {
-    header: M.intl.string(M.t["4uOdGh"]),
+    header: k.intl.string(k.t["4uOdGh"]),
     divider: true,
     settings: [j.s6.PREMIUM, j.s6.GUILD_BOOSTING, j.s6.SUBSCRIPTIONS, j.s6.GIFT_INVENTORY, j.s6.BILLING]
   }, {
-    header: M.intl.string(M.t.f2n1TE),
+    header: k.intl.string(k.t.f2n1TE),
     divider: true,
     settings: [j.s6.APPEARANCE, j.s6.ACCESSIBILITY, j.s6.VOICE_AND_VIDEO, j.s6.POGGERMODE, j.s6.CHAT, j.s6.NOTIFICATIONS, j.s6.KEYBINDS, j.s6.LANGUAGE, j.s6.WINDOW_SETTINGS, j.s6.LINUX_SETTINGS, j.s6.STREAMER_MODE, j.s6.SETTINGS_ADVANCED]
   }, {
@@ -111,12 +111,12 @@ function F(e) {
   }, {
     divider: true,
     settings: [j.s6.SOCIAL_LINKS, j.s6.CLIENT_DEBUG_INFO]
-  }], a = {
-    header: M.intl.string(M.t.SmHCFR),
+  }], o = {
+    header: k.intl.string(k.t.SmHCFR),
     divider: true,
     settings: [j.s6.ACTIVITY_PRIVACY, j.s6.REGISTERED_GAMES, j.s6.OVERLAY]
   };
-  return t ? i : i.toSpliced(3, 0, a)
+  return t ? i : i.toSpliced(3, 0, o)
 }
 
 function V() {
@@ -144,12 +144,12 @@ function V() {
 }
 
 function H() {
-  var e, t, n, o;
+  var e, t, n, a;
   let I = (0, Chunk725727.YO)().length,
     P = (0, Chunk160913.U)(),
     L = (0, Chunk442837.e7)([Chunk663389.Z], () => Chunk663389.Z.getProps().impressionSource),
     j = (0, Chunk631885.gU)(),
-    M = (0, Chunk168308.bC)(),
+    k = (0, Chunk168308.bC)(),
     U = (0, Chunk924557.Go)(),
     [G] = (0, Chunk706140.cv)(U ? [Chunk704215.z.CLIPS_SETTINGS_BETA_TAG] : []),
     {
@@ -180,7 +180,7 @@ function H() {
     } = Chunk319828.Z.useExperiment({
       location: "settings"
     }),
-    J = null == (o = (0, Chunk880257.Z)()) || Chunk493544,
+    J = null == (a = (0, Chunk880257.Z)()) || Chunk493544,
     $ = (null == (t = (0, Chunk921157.s)()) ? true : exports.length) > 0,
     {
       hasBlockedUsers: ee,
@@ -193,7 +193,7 @@ function H() {
     {
       inputMode: er,
       activeInputProfile: ei,
-      isInputProfileCustom: ea
+      isInputProfileCustom: eo
     } = (0, Chunk442837.cj)([Chunk131951.Z], () => ({
       activeInputProfile: Chunk131951.Z.getActiveInputProfile(),
       inputMode: Chunk131951.Z.getMode(),
@@ -225,8 +225,8 @@ function H() {
     isEligibleForSensitiveContentDefaults: en,
     inputMode: er,
     activeInputProfile: ei,
-    isInputProfileCustom: ea
-  }), [q, G, ee, et, K, $, z, Q, Chunk839469, J, W, H, V, Z, Chunk388032, F, X, Chunk726985, Y, B, Chunk413182, Chunk906467, en, er, ei, ea])
+    isInputProfileCustom: eo
+  }), [q, G, ee, et, K, $, z, Q, Chunk839469, J, W, H, V, Z, Chunk388032, F, X, Chunk726985, Y, B, Chunk413182, Chunk906467, en, er, ei, eo])
 }
 
 function Y(e) {
@@ -235,7 +235,7 @@ function Y(e) {
   } = (0, L.E)(), n = H(), r = n[e], i = Object.fromEntries(Object.entries(n).filter(e => {
     let [t, n] = e;
     return n.section === r.section
-  })), a = Object.fromEntries(Object.entries(i).filter(e => {
+  })), o = Object.fromEntries(Object.entries(i).filter(e => {
     let [t, {
       parent: n,
       section: i
@@ -246,14 +246,14 @@ function Y(e) {
       parent: n
     }] = e;
     return [t, n]
-  })), o = new Set, s = e => {
+  })), a = new Set, s = e => {
     let t = i[e];
     if (null == t) return;
-    o.add(e);
+    a.add(e);
     let n = t.parent;
     null != n && s(n)
   }, l = e => {
-    for (let t of (o.add(e), Object.entries(a).filter(t => {
+    for (let t of (a.add(e), Object.entries(o).filter(t => {
         let [n, r] = t;
         return r === e
       }).map(e => {
@@ -262,13 +262,13 @@ function Y(e) {
       }))) l(t)
   };
   for (let e of t.filter(e => e in i))
-    if (!o.has(e)) {
+    if (!a.has(e)) {
       if (null != i[e].element && null == i[e].parent) {
-        o.clear();
+        a.clear();
         break
       }
-      Object.values(a).includes(e) && l(e), s(e)
-    } return o
+      Object.values(o).includes(e) && l(e), s(e)
+    } return a
 }
 
 function W(e, t, n) {
@@ -278,16 +278,16 @@ function W(e, t, n) {
 function K(e, t, n) {
   let r = [],
     i = Q(t),
-    a = z(t, new Set(Array.from(null != n ? n : []).filter(e => i.has(e))));
+    o = z(t, new Set(Array.from(null != n ? n : []).filter(e => i.has(e))));
   return e.forEach(e => {
     0 !== e.settings.length && (true === e.divider && r.push({
-      section: o.ID.DIVIDER
+      section: a.ID.DIVIDER
     }), null != e.header && r.push({
-      section: o.ID.HEADER,
+      section: a.ID.HEADER,
       label: e.header
     }), e.settings.forEach(e => {
       r.push(Z(G({}, t[e]), {
-        tabPredicate: () => null == n || W(e, n, a)
+        tabPredicate: () => null == n || W(e, n, o)
       }))
     }))
   }), r
@@ -334,7 +334,7 @@ function X(e) {
 function Q(e) {
   return new Map(Object.entries(e).filter(e => {
     let [t, n] = e;
-    return n.section !== o.ID.CUSTOM && null != n.searchableTitles && (null == n.predicate || n.predicate())
+    return n.section !== a.ID.CUSTOM && null != n.searchableTitles && (null == n.predicate || n.predicate())
   }))
 }
 

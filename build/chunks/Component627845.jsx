@@ -79,7 +79,7 @@ let S = {
     })
   },
   handleSystemPrefersReducedMotionChanged(e) {
-    a.Z.wait(() => {
+    o.Z.wait(() => {
       u.Nc(e.matches ? "reduce" : "no-preference")
     })
   },

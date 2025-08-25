@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk777207 = require("./777207.jsx"),
   Chunk962293 = require("./962293.jsx"),
   Chunk45251 = require("./45251.js"),
@@ -31,9 +31,9 @@ function d(e) {
       className: u.container,
       children: (0, r.jsxs)("div", {
         className: u.scheduledMessageBar,
-        children: [(0, r.jsx)(o.x, {
+        children: [(0, r.jsx)(a.x, {
           color: "header-secondary",
-          className: a()(u.text, u.scheduledMessageBarLabel),
+          className: o()(u.text, u.scheduledMessageBarLabel),
           variant: "text-sm/normal",
           children: c.intl.formatToPlainString(c.t.MQcRX1, {
             timestamp: new Date(i).valueOf()

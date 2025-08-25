@@ -18,13 +18,13 @@ function s(e) {
     actorUsernameHook: c,
     targetUsernameHook: u,
     compact: d
-  } = e, f = (0, i.ZP)(t), _ = (0, i.Sw)(l, s), p = c(f), h = u(null != _ ? _ : true), m = o.intl.format(o.t["32QI5+"], {
+  } = e, f = (0, i.ZP)(t), _ = (0, i.Sw)(l, s), p = c(f), h = u(null != _ ? _ : true), m = a.intl.format(a.t["32QI5+"], {
     actorName: f.nick,
     actorHook: p,
     targetName: null == _ ? true : _.nick,
     targetHook: h
   });
-  return (0, r.jsx)(a.Z, {
+  return (0, r.jsx)(o.Z, {
     icon: n(474019),
     timestamp: t.timestamp,
     compact: d,

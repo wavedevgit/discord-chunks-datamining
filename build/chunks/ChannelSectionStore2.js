@@ -97,11 +97,11 @@ function j() {
   S && (S = x(S)), A = x(A)
 }
 
-function k() {
+function M() {
   C || Chunk585483.S.dispatch(Chunk981631.CkL.SEARCH_RESULTS_CLOSE), C = x(C)
 }
 
-function M(e) {
+function k(e) {
   let {
     sidebarType: t,
     guildId: n,
@@ -109,10 +109,10 @@ function M(e) {
     details: i
   } = e;
   N = false;
-  let a = w(r);
-  return null != a && (P[n] = {
+  let o = w(r);
+  return null != o && (P[n] = {
     type: t,
-    baseChannelId: a,
+    baseChannelId: o,
     guildId: n,
     details: i
   }, true)
@@ -133,16 +133,16 @@ function G(e) {
     details: i
   } = e;
   N = false;
-  let a = w(n);
-  if (null == a) returnfalse;
-  let o = {
+  let o = w(n);
+  if (null == o) returnfalse;
+  let a = {
     type: t,
     channelId: r,
     details: i
   };
-  return t === c.tI.VIEW_MOD_REPORT && (o = I(O({}, o), {
+  return t === c.tI.VIEW_MOD_REPORT && (a = I(O({}, a), {
     baseChannelId: n
-  })), R[a] = o, true
+  })), R[o] = a, true
 }
 
 function B(e) {
@@ -228,8 +228,8 @@ function K() {
 class z extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     if (null != e) {
-      var t, n, r, i, a;
-      S = null != (t = e.isMembersOpen) && t, A = null != (n = e.isSummariesOpen) && n, C = null == (r = e.isProfileOpen) || r, R = null != (i = e.sidebars) ? i : {}, P = null != (a = e.guildSidebars) ? a : {}
+      var t, n, r, i, o;
+      S = null != (t = e.isMembersOpen) && t, A = null != (n = e.isSummariesOpen) && n, C = null == (r = e.isProfileOpen) || r, R = null != (i = e.sidebars) ? i : {}, P = null != (o = e.guildSidebars) ? o : {}
     }
     this.syncWith([s.Z, l.Z], W), this.syncWith([_.Z], H), this.waitFor(l.Z, s.Z)
   }
@@ -271,10 +271,10 @@ class z extends(r = Chunk442837.ZP.PersistedStore) {
 y(z, "displayName", "ChannelSectionStore"), y(z, "persistKey", "ChannelSectionStore2");
 let q = new z(Chunk570140.Z, {
   CHANNEL_TOGGLE_MEMBERS_SECTION: L,
-  USER_PROFILE_SIDEBAR_TOGGLE_SECTION: k,
+  USER_PROFILE_SIDEBAR_TOGGLE_SECTION: M,
   CHANNEL_TOGGLE_SUMMARIES_SECTION: j,
   SIDEBAR_VIEW_CHANNEL: G,
-  SIDEBAR_VIEW_GUILD: M,
+  SIDEBAR_VIEW_GUILD: k,
   SIDEBAR_CREATE_THREAD: B,
   SIDEBAR_CLOSE: Y,
   SIDEBAR_CLOSE_GUILD: U,

@@ -14,7 +14,7 @@ var Chunk442837 = require("./442837.js"),
 
 function u(e, t) {
   let n = (0, r.e7)([s.default], () => s.default.getId() === e),
-    u = (0, r.e7)([a.Z], () => null != t && a.Z.isLurking(t)),
-    d = o.h2.useSetting();
-  return (0, r.e7)([c.Z, l.ZP, i.Z], () => !n && !u && (c.Z.isFriend(e) || null != l.ZP.memberOf(e).find(e => !d.includes(e))) || i.Z.getGameFriendsForUser(e).length > 0 && o._j.getSetting())
+    u = (0, r.e7)([o.Z], () => null != t && o.Z.isLurking(t)),
+    d = a.h2.useSetting();
+  return (0, r.e7)([c.Z, l.ZP, i.Z], () => !n && !u && (c.Z.isFriend(e) || null != l.ZP.memberOf(e).find(e => !d.includes(e))) || i.Z.getGameFriendsForUser(e).length > 0 && a._j.getSetting())
 }

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk168179 = require("./168179.jsx"),
   Chunk805508 = require("./805508.js");
 let l = 12,
@@ -28,10 +28,10 @@ function u(e) {
   } = t, d = "custom" === l && true !== u ? {
     "--custom-caret-offset-x": ["top", "bottom"].includes(i) ? "".concat(c(u), "px") : "0px",
     "--custom-caret-offset-y": ["left", "right"].includes(i) ? "".concat(c(u), "px") : "0px"
-  } : true, f = a()(s.caret, s["caret--".concat(i)], s["caret--".concat(l)], n);
+  } : true, f = o()(s.caret, s["caret--".concat(i)], s["caret--".concat(l)], n);
   return (0, r.jsx)("div", {
     className: f,
     style: d,
-    children: (0, r.jsx)(o.v, {})
+    children: (0, r.jsx)(a.v, {})
   })
 }

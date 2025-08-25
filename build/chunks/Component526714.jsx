@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk670596 = require("./670596.js"),
   Chunk743236 = require("./743236.js"),
   Chunk939350 = require("./939350.js"),
@@ -56,7 +56,7 @@ function h(e) {
   let {
     color: t = "default",
     label: n,
-    control: a,
+    control: o,
     disabled: d,
     isFocused: _,
     showDefaultFocus: h = false,
@@ -73,7 +73,7 @@ function h(e) {
       var e, t;
       (null == (t = y.current) || null == (e = t.activate) ? true : e.call(t)) && g()
     }, [g]),
-    v = a({
+    v = o({
       onClose: g,
       disabled: d,
       isFocused: _,
@@ -85,7 +85,7 @@ function h(e) {
     }, y);
   return (0, r.jsxs)("div", p(f({
     onClick: O,
-    className: o()(u.item, c._[t], {
+    className: a()(u.item, c._[t], {
       [u.disabled]: d,
       [u.focused]: h && _,
       [u.hideInteraction]: !h

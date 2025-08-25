@@ -20,12 +20,12 @@ function c(e) {
     return s.bN.toDOMNode(e, e)
   } catch (t) {
     let e = Error("Unable to find Slate EditorDOMNode: ".concat(t.message));
-    return e.stack = t.stack, o.Z.captureException(e), null
+    return e.stack = t.stack, a.Z.captureException(e), null
   }
 }
 
 function u(e, t, n) {
-  let o = r.useRef(null),
+  let a = r.useRef(null),
     s = r.useRef(null),
     u = r.useRef(null);
   r.useLayoutEffect(() => {
@@ -42,12 +42,12 @@ function u(e, t, n) {
     let e = s.current;
     if (null == e) return;
     let r = e.offsetHeight;
-    o.current !== r && (null != t.current && (t.current.style.height = "".concat(r, "px")), o.current = r, null == n || n(r))
+    a.current !== r && (null != t.current && (t.current.style.height = "".concat(r, "px")), a.current = r, null == n || n(r))
   }, [t, n]);
-  (0, a.s)(s, d, [d, e, n], l), r.useLayoutEffect(() => {
+  (0, o.s)(s, d, [d, e, n], l), r.useLayoutEffect(() => {
     let t = i.F3.findDocumentOrShadowRoot(e).defaultView;
     if ((null == t ? true : t.ResizeObserver) == null) return;
     let r = c(e);
-    null != r && (o.current = r.offsetHeight, null == n || n(o.current))
+    null != r && (a.current = r.offsetHeight, null == n || n(a.current))
   }, [t, e, n])
 }

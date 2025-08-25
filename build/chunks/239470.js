@@ -7,17 +7,17 @@ require.d(exports, {
 var Chunk647162 = require("./647162.js");
 
 function i(e, t, n, i) {
-  var a, o, s;
+  var o, a, s;
   let l = e.hasConnectedAccount(),
     c = (0, r.PY)(e),
     u = e.getTrack(),
     d = e.getSyncingWith(),
     f = e.getActivity(),
-    _ = null != (s = null != (o = null == u ? true : u.id) ? o : null == f ? true : f.sync_id) ? s : e.getLastPlayedTrackId(),
+    _ = null != (s = null != (a = null == u ? true : u.id) ? a : null == f ? true : f.sync_id) ? s : e.getLastPlayedTrackId(),
     p = n.id === t.getId(),
     h = l && !c,
     m = null != _ && _ === (null == i ? true : i.sync_id),
-    g = (null == f ? true : f.party) != null && (null == i || null == (a = i.party) ? true : a.id) === f.party.id,
+    g = (null == f ? true : f.party) != null && (null == i || null == (o = i.party) ? true : o.id) === f.party.id,
     E = (null == d ? true : d.userId) != null && (null == d ? true : d.userId) === n.id,
     b = p || h || m,
     y = p || E || g;

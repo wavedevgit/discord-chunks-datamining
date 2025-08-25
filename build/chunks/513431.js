@@ -7,9 +7,9 @@ function r(e, t) {
   if (null == e) returnfalse;
   let i = null == e || null == (n = e.ownerDocument) ? true : n.defaultView;
   if (null == i) return console.warn("Unable to determine render window for element", e), false;
-  let a = null != (r = null == t ? true : t.name) ? r : "Element",
-    o = i[a];
-  return null == o ? (console.warn('Unable to find element constructor "'.concat(a, '" in'), i), false) : e instanceof o
+  let o = null != (r = null == t ? true : t.name) ? r : "Element",
+    a = i[o];
+  return null == a ? (console.warn('Unable to find element constructor "'.concat(o, '" in'), i), false) : e instanceof a
 }
 
 function i(e) {

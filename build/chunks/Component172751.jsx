@@ -9,7 +9,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk857395 = require("./857395.jsx"),
@@ -46,16 +46,16 @@ let E = Chunk647438.memo(function(e) {
       src: t,
       tag: n,
       className: i,
-      size: a = _.Gg.SIZE_16
+      size: o = _.Gg.SIZE_16
     } = e;
     return null == t ? null : (0, r.jsx)("img", {
       src: t,
       alt: p.intl.formatToPlainString(p.t.uPLDZG, {
         tag: n
       }),
-      className: o()(h.badge, i),
-      width: a,
-      height: a
+      className: a()(h.badge, i),
+      width: o,
+      height: o
     })
   }),
   b = Chunk647438.memo(function(e) {
@@ -63,7 +63,7 @@ let E = Chunk647438.memo(function(e) {
       guildId: t,
       guildTag: n,
       guildBadge: i,
-      className: a,
+      className: o,
       textClassName: s,
       badgeClassName: c,
       onClick: u,
@@ -78,13 +78,13 @@ let E = Chunk647438.memo(function(e) {
       tabIndex: null == u ? false : true,
       onClick: u,
       onMouseEnter: d,
-      className: o()(h.chipletContainerInner, b && h.chipletContainerInline, null != u && h.clickable, a),
+      className: a()(h.chipletContainerInner, b && h.chipletContainerInline, null != u && h.clickable, o),
       children: (0, r.jsxs)(l.Text, {
         variant: p,
         lineClamp: 1,
         color: m,
         tag: "span",
-        className: o()(h.text, s),
+        className: a()(h.text, s),
         children: [null != i && "string" == typeof i ? (0, r.jsx)(E, {
           src: (0, f.Ic)(t, i, g),
           tag: null == n ? true : n.toString(),
@@ -101,7 +101,7 @@ let E = Chunk647438.memo(function(e) {
     var t;
     let {
       primaryGuild: n,
-      userId: a,
+      userId: o,
       contextGuildId: _,
       className: p,
       containerClassName: m,
@@ -112,16 +112,16 @@ let E = Chunk647438.memo(function(e) {
       inline: I = true,
       onShowProfile: T,
       onClose: S
-    } = e, A = i.useRef(null), C = (0, s.e7)([d.default], () => d.default.getUser(a), [a]), N = (0, s.e7)([u.Z], () => u.Z.theme), R = null != (t = null == C ? true : C.primaryGuild) ? t : n, {
+    } = e, A = i.useRef(null), C = (0, s.e7)([d.default], () => d.default.getUser(o), [o]), N = (0, s.e7)([u.Z], () => u.Z.theme), R = null != (t = null == C ? true : C.primaryGuild) ? t : n, {
       tag: P,
       badge: w,
       guildId: D
     } = (0, f.Pb)(R);
-    return (0, f.yF)(a, _) && null != D ? v ? (0, r.jsx)(b, {
+    return (0, f.yF)(o, _) && null != D ? v ? (0, r.jsx)(b, {
       guildId: D,
       guildTag: P,
       guildBadge: w,
-      className: o()(h.noTooltip, p),
+      className: a()(h.noTooltip, p),
       textVariant: E,
       textColor: y,
       badgeSize: O,

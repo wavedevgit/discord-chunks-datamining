@@ -44,12 +44,12 @@ let G = (e, t, n) => (0, i.wj)(e) ? t : n,
   B = e => {
     let {
       styles: t
-    } = e, n = (0, o.ZP)(), i = (0, r.e7)([s.default], () => {
+    } = e, n = (0, a.ZP)(), i = (0, r.e7)([s.default], () => {
       let e = s.default.getCurrentUser();
       return c.ZP.canUsePremiumProfileCustomization(e)
     }), B = e => {
       let t = () => {
-        a.Z.open(d.oAB.PROFILE_CUSTOMIZATION, null, {
+        o.Z.open(d.oAB.PROFILE_CUSTOMIZATION, null, {
           scrollPosition: f.Y_.TRY_IT_OUT,
           analyticsLocations: e
         })
@@ -134,25 +134,25 @@ let G = (e, t, n) => (0, i.wj)(e) ? t : n,
       stickers: {
         title: _.intl.string(_.t["1c+xwc"]),
         description: _.intl.string(_.t.hJG8ZG),
-        imageSource: G(n, S, k),
+        imageSource: G(n, S, M),
         imageClassName: t.stickersImage
       },
       stickersBurst: {
         title: _.intl.string(_.t.tzdIwM),
         description: _.intl.string(_.t.hJG8ZG),
-        imageSource: G(n, S, k),
+        imageSource: G(n, S, M),
         imageClassName: t.stickersImage
       },
       stickersPremiumPerk: {
         title: _.intl.string(_.t.tzdIwM),
         description: _.intl.string(_.t.FXlU29),
-        imageSource: G(n, S, k),
+        imageSource: G(n, S, M),
         imageClassName: t.stickersImage
       },
       streaming: {
         title: _.intl.string(_.t.RSXQYG),
         description: _.intl.string(_.t.ymCPxs),
-        imageSource: M,
+        imageSource: k,
         imageClassName: t.streamingImage
       },
       superReactions: {

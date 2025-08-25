@@ -7,8 +7,8 @@ require.d(exports, {
 });
 var Chunk176984 = require("./176984.js"),
   Chunk899517 = require("./899517.js");
-let a = "Sentry Logger ",
-  o = ["debug", "info", "warn", "error", "log", "assert", "trace"],
+let o = "Sentry Logger ",
+  a = ["debug", "info", "warn", "error", "log", "assert", "trace"],
   s = {};
 
 function l(e) {
@@ -39,13 +39,13 @@ let c = function() {
       },
       isEnabled: () => module
     };
-  return Chunk176984.X ? o.forEach(n => {
+  return Chunk176984.X ? a.forEach(n => {
     t[n] = (...t) => {
       e && l(() => {
-        i.n.console[n](`${a}[${n}]:`, ...t)
+        i.n.console[n](`${o}[${n}]:`, ...t)
       })
     }
-  }) : o.forEach(e => {
+  }) : a.forEach(e => {
     t[e] = () => true
   }), exports
 }()

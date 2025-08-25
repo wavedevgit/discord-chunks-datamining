@@ -8,7 +8,7 @@ var Chunk579092 = require("./579092.js"),
   Chunk46973 = require("./46973.js"),
   Chunk65154 = require("./65154.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -28,8 +28,8 @@ class l {
         return
       }
       this.framerateReductionTimeout = setTimeout(() => {
-        this.connection.destroyed || (s.info("BaseConnection.userSpeakingChange: Reduced framerate after ".concat(a.u$, " ms.")), this.framerateReductionTimeout = true, this.sinkWants.isMuted = true, this.updateRemoteWantsFramerate())
-      }, a.u$)
+        this.connection.destroyed || (s.info("BaseConnection.userSpeakingChange: Reduced framerate after ".concat(o.u$, " ms.")), this.framerateReductionTimeout = true, this.sinkWants.isMuted = true, this.updateRemoteWantsFramerate())
+      }, o.u$)
     }
   }
   destroyFramerateScaleFactorTimers() {
@@ -42,8 +42,8 @@ class l {
     this.destroyFramerateScaleFactorTimers()
   }
   constructor(e, t) {
-    o(this, "connection", true), o(this, "sinkWants", true), o(this, "framerateReductionTimeout", true), o(this, "handleSpeaking", true), o(this, "handleSelfMute", true), this.connection = e, this.sinkWants = t, this.handleSpeaking = (e, t) => {
-      e === this.connection.userId && this.userSpeakingChange(t === a.Dg.NONE)
+    a(this, "connection", true), a(this, "sinkWants", true), a(this, "framerateReductionTimeout", true), a(this, "handleSpeaking", true), a(this, "handleSelfMute", true), this.connection = e, this.sinkWants = t, this.handleSpeaking = (e, t) => {
+      e === this.connection.userId && this.userSpeakingChange(t === o.Dg.NONE)
     }, this.handleSelfMute = e => {
       this.connection.hasDesktopSource() || (this.destroyFramerateScaleFactorTimers(), this.sinkWants.isMuted = e, this.updateRemoteWantsFramerate())
     }, s.enableNativeLogger(true), e.on(i.Sh.Speaking, this.handleSpeaking), e.on(i.Sh.Mute, this.handleSelfMute), this.initialize()

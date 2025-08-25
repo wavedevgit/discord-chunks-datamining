@@ -36,7 +36,7 @@ let f = function(e) {
           className: c.churnFooterIcon
         }), (0, r.jsxs)("div", {
           className: c.churnFooterContentBodyInner,
-          children: [(0, r.jsx)(o.Text, {
+          children: [(0, r.jsx)(a.Text, {
             variant: "text-md/medium",
             className: c.churnFooterCopy,
             children: l.intl.format(l.t["2gem09"], {
@@ -45,23 +45,23 @@ let f = function(e) {
             })
           }), (0, r.jsxs)("div", {
             className: c.churnFooterCTAs,
-            children: [(0, r.jsxs)(o.gtL, {
+            children: [(0, r.jsxs)(a.gtL, {
               "data-migration-pending": true,
               className: c.churnFooterClaimCTA,
               innerClassName: c.churnFooterClaimCTAInner,
-              look: a.iL.OUTLINED,
-              color: a.Tt.CUSTOM,
+              look: o.iL.OUTLINED,
+              color: o.Tt.CUSTOM,
               onClick: () => null == n ? true : n(),
-              children: [(0, r.jsx)(o.SrA, {
+              children: [(0, r.jsx)(a.SrA, {
                 size: "xs",
                 color: "currentColor",
                 className: c.churnFooterClaimIcon
-              }), (0, r.jsx)(o.Text, {
+              }), (0, r.jsx)(a.Text, {
                 variant: "text-sm/semibold",
                 className: c.churnFooterClaimCopy,
                 children: l.intl.string(l.t.zrCzVF)
               })]
-            }), (0, r.jsx)(o.zxk, {
+            }), (0, r.jsx)(a.zxk, {
               variant: "primary",
               text: l.intl.string(l.t["3PatS0"]),
               onClick: () => null == f ? true : f()

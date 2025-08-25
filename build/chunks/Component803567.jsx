@@ -110,7 +110,7 @@ function C() {
     inputMode: e,
     inputDeviceId: t,
     echoCancellation: n,
-    automaticGainControl: a,
+    automaticGainControl: o,
     vadAutoThreshold: l,
     vadUseKrisp: c,
     bypassSystemInputProcessing: _

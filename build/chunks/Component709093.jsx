@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk304789 = require("./304789.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk410030 = require("./410030.js"),
@@ -33,7 +33,7 @@ function S(e) {
     isOneStepCheckout: t,
     headerText: n,
     step: i,
-    filteredBreadcrumbs: a
+    filteredBreadcrumbs: o
   } = e;
   if (t) return (0, r.jsx)("div", {
     className: E.oneStepCheckoutTextWrapper,
@@ -42,15 +42,15 @@ function S(e) {
       children: n
     })
   });
-  let o = a.length > 1;
+  let a = o.length > 1;
   return (0, r.jsxs)("div", {
     className: E.headerTextWrapper,
     children: [(0, r.jsx)(s.Text, {
       variant: "text-lg/semibold",
       children: n
-    }), o && (0, r.jsx)(f.Z, {
+    }), a && (0, r.jsx)(f.Z, {
       activeId: i,
-      breadcrumbs: a
+      breadcrumbs: o
     })]
   })
 }
@@ -86,13 +86,13 @@ let C = function(e) {
     showTrialBadge: C = false,
     showDiscountBadge: N = false
   } = e, R = (0, s.apv)((0, l.ZP)()), P = O === g.p9.TIER_2, w = (0, d.Fv)(v), D = (0, h.Ng)(), x = null == D || null == (t = D.discount) ? true : t.amount, L = P ? T : I, j = P ? p.Z : _.Z, {
-    step: k,
-    breadcrumbs: M,
+    step: M,
+    breadcrumbs: k,
     startedPaymentFlowWithPaymentSourcesRef: U,
     isDisplayingWowMomentConfirmation: G
   } = (0, c.JL)();
-  if (null == M || 0 === M.length) return null;
-  let B = M.flatMap(e => {
+  if (null == k || 0 === k.length) return null;
+  let B = k.flatMap(e => {
     let t = e.useBreadcrumbLabel(v),
       n = e.sectionHeaderText;
     return null != t ? {
@@ -106,22 +106,22 @@ let C = function(e) {
       let t = e.id !== u.h8.ADD_PAYMENT_STEPS,
         n = e.id === u.h8.ADD_PAYMENT_STEPS && !U.current;
       return !v || v && (t || n)
-    })).find(e => e.id === k),
+    })).find(e => e.id === M),
     F = null != (i = null == Z || null == (n = Z.sectionHeaderText) ? true : n.call(Z)) ? i : null == Z ? true : Z.label,
-    V = null != F && null != k,
-    H = w && V && k === u.h8.REVIEW,
+    V = null != F && null != M,
+    H = w && V && M === u.h8.REVIEW,
     Y = P ? "nitro-pink" : "nitro-green";
   return G ? (0, r.jsx)("div", {
     className: E.container,
-    children: (0, r.jsx)(o.$, {
+    children: (0, r.jsx)(a.$, {
       color: Y,
       className: E.headerContainer
     })
   }) : (0, r.jsxs)("div", {
     className: E.container,
-    children: [(0, r.jsxs)(o.$, {
+    children: [(0, r.jsxs)(a.$, {
       color: Y,
-      className: a()(E.headerContainer, {
+      className: o()(E.headerContainer, {
         [E.containerBottomPadding]: !V
       }),
       children: [(0, r.jsx)(A, {
@@ -147,7 +147,7 @@ let C = function(e) {
     }), V && (0, r.jsx)(S, {
       isOneStepCheckout: w,
       headerText: F,
-      step: k,
+      step: M,
       filteredBreadcrumbs: B
     }), H && (0, r.jsx)("div", {
       className: E.bodyGradientContainer,

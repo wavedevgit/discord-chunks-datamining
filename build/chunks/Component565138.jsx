@@ -64,8 +64,8 @@ function T(e, t) {
   if (null == e) return {};
   var n, r, i = S(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -73,8 +73,8 @@ function T(e, t) {
 function S(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let A = {
@@ -124,7 +124,7 @@ class R extends Chunk647438.PureComponent {
       guild: t,
       badgeStrokeColor: n,
       badgeTooltipColor: r,
-      badgeTooltipDelay: a
+      badgeTooltipDelay: o
     } = this.props;
     return module ? (0, Chunk951288.jsx)(Chunk372769.Z, {
       className: Chunk965005.guildIconBadge,
@@ -139,8 +139,8 @@ class R extends Chunk647438.PureComponent {
     let n = this.props,
       {
         guild: r,
-        className: a,
-        showBadge: o,
+        className: o,
+        showBadge: a,
         active: l,
         size: c,
         style: u = {},
@@ -187,7 +187,7 @@ class R extends Chunk647438.PureComponent {
       text: module.name,
       position: require,
       "aria-label": false,
-      children: e => a.cloneElement(a.Children.only(this.renderIcon()), O({}, e))
+      children: e => o.cloneElement(o.Children.only(this.renderIcon()), O({}, e))
     }) : this.renderIcon()
   }
   render() {
@@ -196,7 +196,7 @@ class R extends Chunk647438.PureComponent {
       guild: t,
       source: n,
       tabIndex: r,
-      "aria-hidden": a
+      "aria-hidden": o
     } = this.props;
     return null != module ? (0, Chunk951288.jsx)(Chunk799899.rU, {
       "aria-hidden": Chunk647438,
@@ -218,11 +218,11 @@ let P = Chunk442837.ZP.connectStores([Chunk451478.Z], e => {
     animate: n,
     iconSrc: r,
     style: i,
-    size: a,
-    iconSize: o,
+    size: o,
+    iconSize: a,
     lossless: s
   } = e;
-  return null == r && (r = t instanceof _.JO ? t.getIconURL(null != o ? o : C[a], n && m.Z.isFocused()) : (0, h.EB)(t, null != o ? o : C[a], n && m.Z.isFocused(), s)), {
+  return null == r && (r = t instanceof _.JO ? t.getIconURL(null != a ? a : C[o], n && m.Z.isFocused()) : (0, h.EB)(t, null != a ? a : C[o], n && m.Z.isFocused(), s)), {
     style: I(O({}, i), {
       backgroundImage: (0, g.rv)(r)
     })

@@ -58,16 +58,16 @@ let p = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk
       user: t,
       avatarSize: n = i.EFr.SIZE_48
     } = e, {
-      avatarSrc: o,
+      avatarSrc: a,
       avatarDecorationSrc: c,
       eventHandlers: u
-    } = (0, a.Z)({
+    } = (0, o.Z)({
       userId: null == t ? true : t.id,
       size: n
     });
     return (0, r.jsx)("div", _(d({}, u), {
       children: (0, r.jsx)(p, {
-        src: o,
+        src: a,
         avatarDecoration: c,
         size: n,
         "aria-label": l.intl.formatToPlainString(s.default.kFj4h4, {

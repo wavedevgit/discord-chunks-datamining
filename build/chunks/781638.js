@@ -15,13 +15,13 @@ var Chunk127849 = require("./127849.js"),
   }();
 module.exports = function(e, t) {
   var n = t ? 2 : 1;
-  return d ? function(r, o) {
+  return d ? function(r, a) {
     var s = c(arguments.length, 1) > n,
-      d = a(r) ? r : u(r),
+      d = o(r) ? r : u(r),
       f = s ? l(arguments, n) : [],
       _ = s ? function() {
         i(d, this, f)
       } : d;
-    return t ? e(_, o) : e(_)
+    return t ? e(_, a) : e(_)
   } : e
 }

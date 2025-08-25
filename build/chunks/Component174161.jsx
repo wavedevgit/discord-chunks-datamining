@@ -62,8 +62,8 @@ function O(e, t) {
   if (null == e) return {};
   var n, r, i = v(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -71,8 +71,8 @@ function O(e, t) {
 function v(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -82,22 +82,22 @@ function I(e) {
     disableGuildNameClick: n
   } = e, s = O(e, ["profile", "disableGuildNameClick"]);
   let c = t.id,
-    f = (0, a.e7)([d.ZP, u.default], () => {
+    f = (0, o.e7)([d.ZP, u.default], () => {
       var e;
       return (null == (e = d.ZP.getMember(c, u.default.getId())) ? true : e.joinedAt) != null
     }, [c]),
     _ = i.useCallback(e => {
       f && (e.stopPropagation(), (0, l.X)(t.id))
     }, [f, t.id]);
-  return !f || n ? (0, r.jsx)(o.X6q, y(E({}, s), {
+  return !f || n ? (0, r.jsx)(a.X6q, y(E({}, s), {
     className: m.guildName,
     variant: "heading-md/semibold",
     color: "header-primary",
     children: t.name
-  })) : (0, r.jsx)(o.P3F, y(E({}, s), {
+  })) : (0, r.jsx)(a.P3F, y(E({}, s), {
     className: m.guildNameContainer,
     onClick: _,
-    children: (0, r.jsx)(o.X6q, {
+    children: (0, r.jsx)(a.X6q, {
       className: m.guildName,
       variant: "heading-md/semibold",
       color: "header-primary",
@@ -110,7 +110,7 @@ function T(e) {
   let {
     profile: t,
     disableGuildNameClick: n
-  } = e, l = (0, a.e7)([c.default], () => c.default.locale), u = (0, p.M)(_.default.extractTimestamp(t.id), l), d = i.useMemo(() => {
+  } = e, l = (0, o.e7)([c.default], () => c.default.locale), u = (0, p.M)(_.default.extractTimestamp(t.id), l), d = i.useMemo(() => {
     let e = (0, f.$5)(t);
     return (0, r.jsx)(s.Z, {
       guild: e,
@@ -121,7 +121,7 @@ function T(e) {
     className: m.header,
     children: [(0, r.jsxs)("div", {
       className: m.nameContainer,
-      children: [(0, r.jsx)(o.ua7, {
+      children: [(0, r.jsx)(a.ua7, {
         text: t.name,
         overflowOnly: true,
         children: e => (0, r.jsx)(I, y(E({}, e), {
@@ -135,7 +135,7 @@ function T(e) {
         className: m.memberCount,
         children: [(0, r.jsx)("div", {
           className: m.dotOnline
-        }), (0, r.jsx)(o.Text, {
+        }), (0, r.jsx)(a.Text, {
           variant: "text-sm/normal",
           color: "text-secondary",
           children: h.intl.format(h.t["LC+S+v"], {
@@ -146,7 +146,7 @@ function T(e) {
         className: m.memberCount,
         children: [(0, r.jsx)("div", {
           className: m.dot
-        }), (0, r.jsx)(o.Text, {
+        }), (0, r.jsx)(a.Text, {
           variant: "text-sm/normal",
           color: "text-secondary",
           children: h.intl.format(h.t.zRl6XV, {
@@ -156,7 +156,7 @@ function T(e) {
       })]
     }), (0, r.jsx)("div", {
       className: m.established,
-      children: (0, r.jsx)(o.Text, {
+      children: (0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
         color: "text-secondary",
         children: h.intl.format(h.t["zb2Q5+"], {

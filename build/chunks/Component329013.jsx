@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   g: () => U,
-  i: () => k
+  i: () => M
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -43,11 +43,11 @@ let j = () => {
       forceTrack: true
     }), (0, Chunk550385.XO)(Chunk550385.wh.CLIENT_THEMES), (0, Chunk37234.xf)()
   },
-  k = () => {
+  M = () => {
     var e, t;
     let {
       analyticsLocations: n
-    } = (0, Chunk906732.ZP)(Chunk100527.Z.USER_SETTINGS), o = (0, Chunk442837.e7)([Chunk514361.Z], () => Chunk514361.Z.isPreview), s = (null == (t = (0, Chunk639119.N)()) || null == (e = exports.subscription_trial) ? true : module.sku_id) === Chunk474936.Si.TIER_2, u = (0, Chunk104494.Ng)(), d = (0, Chunk104494.Wp)(Chunk37234, Chunk474936.Si.TIER_2), {
+    } = (0, Chunk906732.ZP)(Chunk100527.Z.USER_SETTINGS), a = (0, Chunk442837.e7)([Chunk514361.Z], () => Chunk514361.Z.isPreview), s = (null == (t = (0, Chunk639119.N)()) || null == (e = exports.subscription_trial) ? true : module.sku_id) === Chunk474936.Si.TIER_2, u = (0, Chunk104494.Ng)(), d = (0, Chunk104494.Wp)(Chunk37234, Chunk474936.Si.TIER_2), {
       v2EditorEnabled: f
     } = Chunk803038.Mc.useExperiment({
       location: "UserSettingsAppearanceClientThemes"
@@ -128,14 +128,14 @@ let j = () => {
         type: Chunk705262.yH.SETTINGS,
         children: [(0, Chunk951288.jsx)(Chunk705262.ZP.Basic, {
           className: Chunk505575.basicThemeSelectors
-        }), (0, Chunk951288.jsx)(M, {}), Chunk607070 && (0, Chunk951288.jsx)(Chunk607270.Z, {}), Chunk984802]
+        }), (0, Chunk951288.jsx)(k, {}), Chunk607070 && (0, Chunk951288.jsx)(Chunk607270.Z, {}), Chunk984802]
       }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
         className: Chunk505575.divider
       })]
     })
   };
 
-function M() {
+function k() {
   let e = (0, Chunk984802.A6)(),
     {
       theme: t,

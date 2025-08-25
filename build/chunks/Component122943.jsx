@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk201895 = require("./201895.js"),
@@ -65,7 +65,7 @@ function T(e) {
   let {
     channel: t,
     textVariant: n,
-    textClassName: a,
+    textClassName: o,
     iconClassName: f,
     hideText: m = false,
     hideTooltip: y = false,
@@ -87,7 +87,7 @@ function T(e) {
     size: "custom",
     color: S,
     channel: t,
-    className: o()(b.icon, f)
+    className: a()(b.icon, f)
   }) : (0, r.jsx)(s.ua7, {
     text: A,
     "aria-label": (0, c.ZP)({
@@ -99,13 +99,13 @@ function T(e) {
       size: "custom",
       color: S,
       channel: t,
-      className: o()(b.icon, f)
+      className: a()(b.icon, f)
     }))
   }), x = () => N ? A : C ? E.intl.string(E.t["9FaEzs"]) : t.isGuildStageVoice() ? E.intl.string(E.t.QygGCA) : E.intl.string(E.t.msxteH);
   return (0, r.jsxs)(r.Fragment, {
     children: [D(), !m && (0, r.jsxs)(h.Z, {
       variant: n,
-      className: a,
+      className: o,
       canTruncate: v,
       hideTooltip: y,
       children: [x(), R && null != A && " (".concat(A, ")")]
@@ -118,7 +118,7 @@ function S(e) {
     channel: t,
     textVariant: n,
     textClassName: i,
-    iconClassName: a,
+    iconClassName: o,
     hideText: l = false,
     hideTooltip: c = false,
     canTruncate: f = true,
@@ -133,7 +133,7 @@ function S(e) {
       size: "custom",
       color: h,
       channel: t,
-      className: o()(b.icon, a)
+      className: a()(b.icon, o)
     }),
     text: T,
     tooltipText: c ? true : I,

@@ -9,7 +9,7 @@ require.d(exports, {
 var Chunk879690 = require("./879690.js"),
   Chunk731965 = require("./731965.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -18,14 +18,14 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e) {
+function a(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      a(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -54,7 +54,7 @@ let c = (0, Chunk879690.U)(() => ({
 
 function u(e) {
   (0, i.j)(() => {
-    c.setState(t => null != t.currentToast ? l(o({}, t), {
+    c.setState(t => null != t.currentToast ? l(a({}, t), {
       queuedToasts: [...t.queuedToasts, e]
     }) : {
       currentToast: e,

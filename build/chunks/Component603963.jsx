@@ -15,26 +15,26 @@ function s(e) {
   let {
     children: t,
     title: n,
-    description: a
+    description: o
   } = e;
   return (0, r.jsxs)("div", {
-    className: o.category,
-    children: [(null != n || null != a) && (0, r.jsxs)("div", {
-      className: o.categoryHeader,
+    className: a.category,
+    children: [(null != n || null != o) && (0, r.jsxs)("div", {
+      className: a.categoryHeader,
       children: [null != n && (0, r.jsx)(i.X6q, {
         variant: "heading-lg/semibold",
         color: "header-primary",
         children: n
-      }), null != a && (0, r.jsx)(i.Text, {
+      }), null != o && (0, r.jsx)(i.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",
-        children: a
+        children: o
       })]
     }), (0, r.jsx)("div", {
-      className: o.categoryContent,
+      className: a.categoryContent,
       children: t
     }), (0, r.jsx)(i.$i$, {
-      className: o.categoryDivider
+      className: a.categoryDivider
     })]
   })
 }
@@ -44,10 +44,10 @@ function l(e) {
     children: t,
     title: n,
     description: i,
-    webSetting: o
+    webSetting: a
   } = e;
-  return (0, r.jsx)(a.F, {
-    setting: o,
+  return (0, r.jsx)(o.F, {
+    setting: a,
     children: (0, r.jsx)(s, {
       title: n,
       description: i,

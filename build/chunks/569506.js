@@ -11,5 +11,5 @@ var Chunk867996 = require("./867996.js"),
   d = c.hasOwnProperty,
   f = RegExp("^" + u.call(d).replace(s, "\\$&").replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g, "$1.*?") + "$");
 module.exports = function(e) {
-  return !(!a(e) || i(e)) && (r(e) ? f : l).test(o(e))
+  return !(!o(e) || i(e)) && (r(e) ? f : l).test(a(e))
 }

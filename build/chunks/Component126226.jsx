@@ -75,23 +75,23 @@ let P = {
   queryResults(e, t, n, r, i) {
     if (0 === n.length && r.commands !== y.L8.OLD_BUILT_INS) return C;
     if (r.commands === y.L8.OLD_BUILT_INS) {
-      let r = (0, l.Kh)([o.yU.CHAT], false, false),
+      let r = (0, l.Kh)([a.yU.CHAT], false, false),
         i = RegExp("^".concat(E.Z.escape(n)), "i"),
-        a = (0, p.Dd)(r, i, {
+        o = (0, p.Dd)(r, i, {
           channel: e,
           guild: t
         }, y.AQ),
         s = l.Tm[v.bi.BUILT_IN];
-      return 0 === a.length ? C : {
+      return 0 === o.length ? C : {
         results: {
-          entries: a.map(e => ({
+          entries: o.map(e => ({
             command: e,
             section: s
           }))
         }
       }
     }
-    let a = (0, h.hV)(e, n),
+    let o = (0, h.hV)(e, n),
       {
         commands: s,
         sections: c
@@ -99,8 +99,8 @@ let P = {
         channel: e,
         type: "channel"
       }, {
-        commandTypes: [o.yU.CHAT],
-        text: a.text
+        commandTypes: [a.yU.CHAT],
+        text: o.text
       }, {
         limit: y.AQ,
         placeholderCount: y.YP,
@@ -109,8 +109,8 @@ let P = {
       });
     if (null == s) return C;
     let f = s;
-    if (a.hasSpaceTerminator) {
-      let e = a.text.trim(),
+    if (o.hasSpaceTerminator) {
+      let e = o.text.trim(),
         t = e + " ";
       f = f.filter(n => n.displayName === e || n.displayName.startsWith(t))
     }
@@ -129,12 +129,12 @@ let P = {
         entries: t
       },
       selectedIndex: n,
-      channel: a,
-      query: o,
+      channel: o,
+      query: a,
       options: s,
       onHover: l,
       onClick: c
-    } = e, u = (0, h.hV)(a, o), d = s.commands === y.L8.OLD_BUILT_INS;
+    } = e, u = (0, h.hV)(o, a), d = s.commands === y.L8.OLD_BUILT_INS;
     return (0, b.HI)({
       query: u.text,
       selectedIndex: n,
@@ -153,8 +153,8 @@ let P = {
         return {
           key: t.id,
           command: t,
-          channel: a,
-          guildId: a.guild_id,
+          channel: o,
+          guildId: o.guild_id,
           showImage: true,
           section: n
         }
@@ -179,8 +179,8 @@ let P = {
       index: n,
       queryText: r,
       options: i,
-      channel: a,
-      location: o,
+      channel: o,
+      location: a,
       tabOrEnter: l
     } = e, {
       command: c,
@@ -189,9 +189,9 @@ let P = {
     if (c.inputType === _.iw.PLACEHOLDER) return null;
     if (i.commands === y.L8.OLD_BUILT_INS) i.insertText(R(c));
     else {
-      let e = o;
+      let e = a;
       null == e && (e = l ? _.Vh.QUERY : _.Vh.DISCOVERY), s.Po({
-        channelId: a.id,
+        channelId: o.id,
         command: c,
         section: null != u ? u : null,
         location: e,

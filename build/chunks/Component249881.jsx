@@ -16,7 +16,7 @@ let d = e => {
     let {
       markAsDismissed: t
     } = e;
-    return i.useEffect(() => t(l.L.UNKNOWN), [t]), (0, r.jsx)(o.IGR, {
+    return i.useEffect(() => t(l.L.UNKNOWN), [t]), (0, r.jsx)(a.IGR, {
       className: u.newBadge,
       text: c.intl.string(c.t.y2b7CA)
     })
@@ -46,16 +46,16 @@ let d = e => {
                 markAsDismissed: n
               }) : null
             }
-          }), (0, r.jsx)(o.Text, {
+          }), (0, r.jsx)(a.Text, {
             variant: "text-md/semibold",
             children: t
           })]
-        }), (0, r.jsx)(o.Text, {
+        }), (0, r.jsx)(a.Text, {
           variant: "text-xs/normal",
           children: n
         })]
-      }), (0, r.jsx)(a.zx, {
-        size: a.Ph.MEDIUM,
+      }), (0, r.jsx)(o.zx, {
+        size: o.Ph.MEDIUM,
         onClick: f,
         className: u.reconnectButton,
         children: c.intl.string(c.t.vD60Pj)

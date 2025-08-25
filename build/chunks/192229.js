@@ -32,12 +32,12 @@ class _ extends Chunk147913.Z {
       if (null == e.channelId || true !== e.selfStream) continue;
       let t = l.Z.getPendingRequestForUser(e.userId);
       if (null == t) continue;
-      let f = o.Z.getMessage(e.channelId, t);
+      let f = a.Z.getMessage(e.channelId, t);
       if ((null == f || null == (n = f.activity) ? true : n.type) !== d.mFx.STREAM_REQUEST || (null == (i = f.application) ? true : i.id) == null || s.default.extractTimestamp(t) < Date.now() - u.O || null == (0, c._)(e.userId, e.guildId).find(e => {
           var t;
           return (null == (t = f.application) ? true : t.id) != null && e.application_id === f.application.id
         })) continue;
-      let _ = a.Z.getStreamForUser(e.userId, e.guildId);
+      let _ = o.Z.getStreamForUser(e.userId, e.guildId);
       null != _ && r.rn(_, {
         forceMultiple: true,
         noFocus: true

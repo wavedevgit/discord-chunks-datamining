@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk755721 = require("./755721.js"),
   Chunk53281 = require("./53281.jsx"),
   Chunk557441 = require("./557441.js");
@@ -16,7 +16,7 @@ function u(e) {
   let {
     filename: t,
     className: n,
-    filters: a,
+    filters: o,
     buttonText: u,
     placeholder: d,
     onFileSelect: f
@@ -25,7 +25,7 @@ function u(e) {
     f(null == (t = e.currentTarget.files) ? true : t[0])
   };
   return (0, r.jsxs)("div", {
-    className: o()(n, c.fileUpload),
+    className: a()(n, c.fileUpload),
     children: [(0, r.jsx)("input", {
       className: c.fileUploadInput,
       tabIndex: false,
@@ -41,7 +41,7 @@ function u(e) {
         tabIndex: false,
         onChange: p,
         multiple: false,
-        filters: a
+        filters: o
       })]
     })]
   })

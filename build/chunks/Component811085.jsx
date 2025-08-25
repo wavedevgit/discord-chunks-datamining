@@ -127,15 +127,15 @@ function g() {
         children: [(0, Chunk951288.jsx)("div", {
           className: Chunk498714.line
         }), Object.entries(y).map((t, n) => {
-          let [i, a] = t, o = parseInt(i) === e.state;
+          let [i, o] = t, a = parseInt(i) === e.state;
           return (0, r.jsxs)("div", {
             className: h.statusOption,
             ref: e => {
               E.current[parseInt(i)] = e
             },
-            children: [o ? (0, r.jsx)(T, {
+            children: [a ? (0, r.jsx)(T, {
               className: h.marker,
-              color: a.color
+              color: o.color
             }) : (0, r.jsx)("div", {
               className: h.marker,
               style: {
@@ -145,7 +145,7 @@ function g() {
               children: (0, r.jsx)("div", {
                 className: h.empty
               })
-            }), p.intl.format(a.status, {
+            }), p.intl.format(o.status, {
               hook: e => (0, r.jsx)(l.Text, {
                 color: "text-default",
                 variant: "text-sm/normal",

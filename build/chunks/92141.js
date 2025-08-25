@@ -2,15 +2,15 @@
 /** chunk id: 92141, original params: e,t,n (module,exports,re quire) **/
 var Chunk821164 = require("./821164.js"),
   i = 1,
-  a = Object.prototype.hasOwnProperty;
-module.exports = function(e, t, n, o, s, l) {
+  o = Object.prototype.hasOwnProperty;
+module.exports = function(e, t, n, a, s, l) {
   var c = n & i,
     u = r(e),
     d = u.length;
   if (d != r(t).length && !c) returnfalse;
   for (var f = d; f--;) {
     var _ = u[f];
-    if (!(c ? _ in t : a.call(t, _))) returnfalse
+    if (!(c ? _ in t : o.call(t, _))) returnfalse
   }
   var p = l.get(e);
   if (p && l.get(t)) return p == t;
@@ -19,8 +19,8 @@ module.exports = function(e, t, n, o, s, l) {
   for (var m = c; ++f < d;) {
     var g = e[_ = u[f]],
       E = t[_];
-    if (o) var b = c ? o(E, g, _, t, e, l) : o(g, E, _, e, t, l);
-    if (!(true === b ? g === E || s(g, E, n, o, l) : b)) {
+    if (a) var b = c ? a(E, g, _, t, e, l) : a(g, E, _, e, t, l);
+    if (!(true === b ? g === E || s(g, E, n, a, l) : b)) {
       h = false;
       break
     }

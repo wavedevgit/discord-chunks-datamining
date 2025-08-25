@@ -2,7 +2,7 @@
 /** chunk id: 209747, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => o
+  Z: () => a
 });
 var Chunk81825 = require("./81825.js");
 
@@ -14,9 +14,9 @@ function i(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class a extends Chunk81825.Z {
+class o extends Chunk81825.Z {
   static createFromServer(e, t) {
-    return new a({
+    return new o({
       id: e.id,
       subscriptionId: e.subscription_id,
       premiumGuildSubscription: null != e.premium_guild_subscription ? {
@@ -38,4 +38,4 @@ class a extends Chunk81825.Z {
     super(), i(this, "id", true), i(this, "subscriptionId", true), i(this, "premiumGuildSubscription", true), i(this, "canceled", true), i(this, "cooldownEndsAt", true), i(this, "subscription", true), this.id = e.id, this.subscriptionId = e.subscriptionId, this.premiumGuildSubscription = e.premiumGuildSubscription, this.canceled = e.canceled, this.cooldownEndsAt = e.cooldownEndsAt, this.subscription = e.subscription
   }
 }
-let o = a
+let a = o

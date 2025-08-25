@@ -13,8 +13,8 @@ let s = function(e) {
     {
       enabled: n,
       eligibleToFetch: s
-    } = (0, a.N)(e);
-  (0, o.B)(e, !s || t);
+    } = (0, o.N)(e);
+  (0, a.B)(e, !s || t);
   let l = (0, r.e7)([i.Z], () => i.Z.getIsEligibleToSendReferrals());
   return n && l
 }

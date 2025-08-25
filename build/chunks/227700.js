@@ -2,7 +2,7 @@
 /** chunk id: 227700, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  u: () => a
+  u: () => o
 });
 var r = {
     ceil: Math.ceil,
@@ -14,6 +14,6 @@ var r = {
   },
   i = "trunc";
 
-function a(e) {
+function o(e) {
   return e ? r[e] : r[i]
 }

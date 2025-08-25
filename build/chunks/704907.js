@@ -9,7 +9,7 @@ require.d(exports, {
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
   Chunk913527 = require("./913527.js"),
-  o = require.n(Chunk913527);
+  a = require.n(Chunk913527);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -120,11 +120,11 @@ class g {
     })), this.markDirty()
   }
   compute() {
-    let e = o()(),
+    let e = a()(),
       t = this.calculateMaxTotalUse ? i().maxBy(Object.values(this.usageHistory), e => e.totalUses) : null;
     i().forEach(this.usageHistory, (n, r) => {
       let {
-        totalUses: a,
+        totalUses: o,
         recentUses: s,
         frecency: l
       } = n;
@@ -132,9 +132,9 @@ class g {
       let c = this.computeBonus(r) / 100;
       n.score = 0, i().forEach(s, (t, r) => {
         if (r >= this.maxSamples) returnfalse;
-        let i = this.computeWeight(e.diff(o()(t), "days"));
+        let i = this.computeWeight(e.diff(a()(t), "days"));
         n.score += c * i
-      }), n.score > 0 ? (n.recentUses.length > 0 && (n.frecency = this.computeFrecency(a, n.score, {
+      }), n.score > 0 ? (n.recentUses.length > 0 && (n.frecency = this.computeFrecency(o, n.score, {
         numOfRecentUses: s.length,
         maxTotalUse: null == t ? true : t.totalUses
       })), this.usageHistory[r] = n) : delete this.usageHistory[r]
@@ -161,10 +161,10 @@ class g {
     computeFrecency: n = p,
     lookupKey: r,
     afterCompute: i,
-    numFrequentlyItems: a = _,
-    maxSamples: o = d
+    numFrequentlyItems: o = _,
+    maxSamples: a = d
   }) {
-    s(this, "dirty", true), s(this, "_frequently", true), s(this, "numFrequentlyItems", true), s(this, "maxSamples", true), s(this, "computeBonus", true), s(this, "computeWeight", true), s(this, "computeFrecency", true), s(this, "lookupKey", true), s(this, "usageHistory", true), s(this, "afterCompute", true), s(this, "calculateMaxTotalUse", true), this.computeBonus = e, this.computeWeight = t, this.computeFrecency = n, this.afterCompute = i, this.lookupKey = r, this.usageHistory = {}, this.frequently = [], this.maxSamples = o, this.numFrequentlyItems = a, this.calculateMaxTotalUse = false, this.dirty = false
+    s(this, "dirty", true), s(this, "_frequently", true), s(this, "numFrequentlyItems", true), s(this, "maxSamples", true), s(this, "computeBonus", true), s(this, "computeWeight", true), s(this, "computeFrecency", true), s(this, "lookupKey", true), s(this, "usageHistory", true), s(this, "afterCompute", true), s(this, "calculateMaxTotalUse", true), this.computeBonus = e, this.computeWeight = t, this.computeFrecency = n, this.afterCompute = i, this.lookupKey = r, this.usageHistory = {}, this.frequently = [], this.maxSamples = a, this.numFrequentlyItems = o, this.calculateMaxTotalUse = false, this.dirty = false
   }
 }
 let E = g

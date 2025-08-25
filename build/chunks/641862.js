@@ -29,9 +29,9 @@ var Chunk175730 = require("./175730.js"),
   }),
   m = function(e, t) {
     if (true === t && (t = false), c.has(e) && !t) return c.get(e);
-    if ((0, o.xj)(e)) return c.set(e, h), h;
+    if ((0, a.xj)(e)) return c.set(e, h), h;
     var n = getComputedStyle(e),
-      r = (0, o.zd)(e) && e.ownerSVGElement && e.getBBox(),
+      r = (0, a.zd)(e) && e.ownerSVGElement && e.getBBox(),
       i = !f && "border-box" === n.boxSizing,
       l = d.test(n.writingMode || ""),
       m = !r && u.test(n.overflowY || ""),
@@ -54,27 +54,27 @@ var Chunk175730 = require("./175730.js"),
       x = i ? C + R : 0,
       L = r ? r.width : _(n.width) - D - w,
       j = r ? r.height : _(n.height) - x - P,
-      k = L + A + w + N,
-      M = j + C + P + R,
+      M = L + A + w + N,
+      k = j + C + P + R,
       U = (0, s.v)({
         devicePixelContentBoxSize: p(Math.round(L * devicePixelRatio), Math.round(j * devicePixelRatio), l),
-        borderBoxSize: p(k, M, l),
+        borderBoxSize: p(M, k, l),
         contentBoxSize: p(L, j, l),
-        contentRect: new a.N(O, E, L, j)
+        contentRect: new o.N(O, E, L, j)
       });
     return c.set(e, U), U
   },
   g = function(e, t, n) {
     var i = m(e, n),
-      a = i.borderBoxSize,
-      o = i.contentBoxSize,
+      o = i.borderBoxSize,
+      a = i.contentBoxSize,
       s = i.devicePixelContentBoxSize;
     switch (t) {
       case r.z.DEVICE_PIXEL_CONTENT_BOX:
         return s;
       case r.z.BORDER_BOX:
-        return a;
+        return o;
       default:
-        return o
+        return a
     }
   }

@@ -60,7 +60,7 @@ function f(e, t) {
 }
 
 function _(e, t) {
-  var n, a, s, l, c;
+  var n, o, s, l, c;
   return p({
     id: t.id,
     name: t.name,
@@ -71,9 +71,9 @@ function _(e, t) {
     color: t.color,
     colorString: 0 !== t.color ? (0, i.Rf)(t.color) : null,
     colors: null != (n = t.colors) ? n : null,
-    colorStrings: null != t.colors ? (0, o.DX)(t.colors) : null,
+    colorStrings: null != t.colors ? (0, a.DX)(t.colors) : null,
     hoist: t.hoist,
-    managed: null != (a = t.managed) && a,
+    managed: null != (o = t.managed) && o,
     tags: null != (s = t.tags) ? s : {},
     icon: t.icon,
     unicodeEmoji: t.unicode_emoji,
@@ -84,11 +84,11 @@ function _(e, t) {
 }
 
 function p(e) {
-  return (0, a.bk)(s.X4, e)
+  return (0, o.bk)(s.X4, e)
 }
 
 function h(e, t) {
-  var n, a, s, l, c, u;
+  var n, o, s, l, c, u;
   return p({
     id: t.id,
     name: t.name,
@@ -98,8 +98,8 @@ function h(e, t) {
     position: null != (n = t.originalPosition) ? n : t.position,
     color: t.color,
     colorString: null != t.color && 0 !== t.color ? (0, i.Rf)(t.color) : null,
-    colors: null != (a = t.colors) ? a : null,
-    colorStrings: null != t.colors ? (0, o.DX)(t.colors) : null,
+    colors: null != (o = t.colors) ? o : null,
+    colorStrings: null != t.colors ? (0, a.DX)(t.colors) : null,
     hoist: t.hoist,
     managed: null != (s = t.managed) && s,
     tags: null != (l = t.tags) ? l : {},

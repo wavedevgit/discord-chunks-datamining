@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk153867 = require("./153867.js"),
@@ -46,7 +46,7 @@ let b = [{
 function y() {
   let [e, t] = Chunk647438.useState(Math.round(window.outerWidth / window.innerWidth * 100)), {
     platformZoom: n,
-    theme: a
+    theme: o
   } = (0, Chunk442837.cj)([Chunk210887.Z, Chunk607070.Z], () => ({
     theme: Chunk210887.Z.theme,
     platformZoom: Chunk607070.Z.zoom
@@ -190,7 +190,7 @@ function y() {
               className: E.textSample,
               children: (0, r.jsxs)("div", {
                 title: "".concat(e, "px at ").concat(t),
-                className: o()(E.text, {
+                className: a()(E.text, {
                   [E.breakAnywhere]: !i.includes(" ")
                 }),
                 style: {

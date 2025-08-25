@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk561537 = require("./561537.jsx"),
   Chunk269210 = require("./269210.jsx"),
   Chunk481060 = require("./481060.js"),
@@ -23,7 +23,7 @@ function g(e) {
   let {
     cta: t,
     storeListing: n,
-    className: a
+    className: o
   } = e, {
     applicationId: g,
     benefits: E,
@@ -36,7 +36,7 @@ function g(e) {
     return (0, f.xg)(e)
   }, [O]);
   return null == v ? null : (0, r.jsxs)(s.l, {
-    className: o()(m.wrapper, a),
+    className: a()(m.wrapper, o),
     header: (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
         className: m.headerTitle,
@@ -69,11 +69,11 @@ function g(e) {
           id: t,
           name: n,
           description: i,
-          icon: a
+          icon: o
         } = e;
         return (0, r.jsx)(l.Gm, {
           header: n,
-          icon: (0, d.n)(g, a),
+          icon: (0, d.n)(g, o),
           description: i
         }, t)
       })

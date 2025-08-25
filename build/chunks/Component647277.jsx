@@ -6,7 +6,7 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk518950 = require("./518950.js"),
@@ -144,7 +144,7 @@ let T = e => {
       className: t
     } = e, {
       referralSentUsers: n
-    } = (0, p.G)(), i = (0, o.e7)([_.Z], () => _.Z.getRecipientStatus()), l = (0, o.e7)([_.Z], () => _.Z.getHasEligibleFriends()), c = i.size === p.Q && i.values().every(e => e === f.Fe.REDEEMED), d = i.size === p.Q, y = () => false === l ? g.intl.format(g.t["zWhX/f"], {
+    } = (0, p.G)(), i = (0, a.e7)([_.Z], () => _.Z.getRecipientStatus()), l = (0, a.e7)([_.Z], () => _.Z.getHasEligibleFriends()), c = i.size === p.Q && i.values().every(e => e === f.Fe.REDEEMED), d = i.size === p.Q, y = () => false === l ? g.intl.format(g.t["zWhX/f"], {
       helpdeskArticle: u.Z.getArticleURL(m.BhN.REFERRAL_PROGRAM)
     }) : n.length === p.Q ? true === c ? g.intl.format(g.t["1aEjsL"], {
       helpdeskArticle: u.Z.getArticleURL(m.BhN.REFERRAL_PROGRAM)
@@ -154,7 +154,7 @@ let T = e => {
       helpdeskArticle: u.Z.getArticleURL(m.BhN.REFERRAL_PROGRAM)
     });
     return (0, r.jsxs)("div", {
-      className: a()(E.container, t),
+      className: o()(E.container, t),
       children: [(0, r.jsxs)("div", {
         className: E.bannerContainer,
         children: [(0, r.jsx)(s.Eep, {

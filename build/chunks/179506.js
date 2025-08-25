@@ -10,17 +10,17 @@ let i = {
     prefix: String(Math.round(1e10 * Math.random())),
     current: 0
   },
-  a = Chunk647438.createContext(i),
-  o = Chunk647438.createContext(false);
+  o = Chunk647438.createContext(i),
+  a = Chunk647438.createContext(false);
 "undefined" != typeof window && window.document && window.document.createElement;
 let s = new WeakMap;
 
 function l(e = false) {
-  let t = (0, r.useContext)(a),
+  let t = (0, r.useContext)(o),
     n = (0, r.useRef)(null);
   if (null === n.current && !e) {
-    var i, o;
-    let e = null == (o = r.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED) || null == (i = o.ReactCurrentOwner) ? true : i.current;
+    var i, a;
+    let e = null == (a = r.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED) || null == (i = a.ReactCurrentOwner) ? true : i.current;
     if (e) {
       let n = s.get(e);
       null == n ? s.set(e, {
@@ -34,7 +34,7 @@ function l(e = false) {
 }
 
 function c(e) {
-  let t = (0, r.useContext)(a),
+  let t = (0, r.useContext)(o),
     n = l(!!e),
     i = `react-aria${t.prefix}`;
   return e || `${i}-${n}`
@@ -43,8 +43,8 @@ function c(e) {
 function u(e) {
   let t = r.useId(),
     [n] = (0, r.useState)(h()),
-    a = n ? "react-aria" : `react-aria${i.prefix}`;
-  return e || `${a}-${t}`
+    o = n ? "react-aria" : `react-aria${i.prefix}`;
+  return e || `${o}-${t}`
 }
 let d = "function" == typeof Chunk647438.useId ? u : c;
 
@@ -61,5 +61,5 @@ function p(e) {
 }
 
 function h() {
-  return "function" == typeof Chunk647438.useSyncExternalStore ? Chunk647438.useSyncExternalStore(p, f, _) : (0, Chunk647438.useContext)(o)
+  return "function" == typeof Chunk647438.useSyncExternalStore ? Chunk647438.useSyncExternalStore(p, f, _) : (0, Chunk647438.useContext)(a)
 }

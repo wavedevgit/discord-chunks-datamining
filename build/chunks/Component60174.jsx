@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk954955 = require("./954955.js"),
   l = require.n(Chunk954955),
   Chunk507274 = require("./507274.jsx"),
@@ -75,7 +75,7 @@ class D extends Chunk647438.Component {
       message: t,
       className: n,
       children: i,
-      useChatFontScaling: a,
+      useChatFontScaling: o,
       tabIndex: s = 0
     } = this.props, {
       isReactionPickerActive: l
@@ -95,7 +95,7 @@ class D extends Chunk647438.Component {
       };
     return exports.type === Chunk981631.uaV.EMOJI_ADDED && 0 === exports.reactions.length ? (0, Chunk951288.jsx)(Chunk387188.e, {
       message: exports,
-      className: o()(Chunk474936.reactionBtn, require)
+      className: a()(Chunk474936.reactionBtn, require)
     }) : (0, Chunk951288.jsx)(Chunk481060.yRy, {
       targetElementRef: this.ref,
       shouldShow: l,
@@ -104,7 +104,7 @@ class D extends Chunk647438.Component {
       position: "right",
       children: (e, t) => {
         let {
-          isShown: a
+          isShown: o
         } = t;
         return (0, r.jsx)(u.DY3, {
           text: g,
@@ -119,8 +119,8 @@ class D extends Chunk647438.Component {
             },
             onMouseEnter: () => (0, d.x)(I.qR.AddReactionPopoutMouseEntered),
             onFocus: () => (0, d.x)(I.qR.AddReactionPopoutFocused),
-            className: o()(T.reactionBtn, {
-              [T.active]: a
+            className: a()(T.reactionBtn, {
+              [T.active]: o
             }, n),
             children: [p ? (0, r.jsx)(u.Pt5, R({}, N)) : (0, r.jsx)(u.EO4, R({}, N)), i]
           }))
@@ -166,8 +166,8 @@ class D extends Chunk647438.Component {
       } = e, {
         type: n,
         channel: i,
-        message: a
-      } = this.props, o = R({
+        message: o
+      } = this.props, a = R({
         openPopoutType: "message_reaction_emoji_picker"
       }, n === O.O.BURST && {
         openPopoutType: "message_super_reaction_emoji_picker",
@@ -185,8 +185,8 @@ class D extends Chunk647438.Component {
           } = e;
           this.onAddReaction(n, i), r && (i ? l()(t, 150)() : t())
         },
-        analyticsOverride: o,
-        messageId: a.id
+        analyticsOverride: a,
+        messageId: o.id
       });
       return (0, r.jsx)(c.M.Consumer, {
         children: e => {

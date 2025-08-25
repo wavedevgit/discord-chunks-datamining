@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk297700 = require("./297700.jsx"),
   Chunk665786 = require("./665786.jsx"),
@@ -79,7 +79,7 @@ class b extends Chunk647438.PureComponent {
   renderBadge(e, t, n) {
     let {
       className: i,
-      badgeStrokeColor: a,
+      badgeStrokeColor: o,
       tooltipColor: c = s.ua7.Colors.BRAND,
       tooltipPosition: u,
       tooltipDelay: d,
@@ -95,14 +95,14 @@ class b extends Chunk647438.PureComponent {
       text: y,
       children: s => {
         if (5 !== e && 4 !== e) return (0, r.jsx)(l.Z, g(h({}, s), {
-          className: o()(n, i),
+          className: a()(n, i),
           flowerStarClassName: b,
           color: p,
-          stroke: a,
+          stroke: o,
           size: f,
           children: (0, r.jsx)(t, {
             size: "xxs",
-            className: o()(_.icon, m),
+            className: a()(_.icon, m),
             color: "currentColor"
           })
         }));
@@ -112,10 +112,10 @@ class b extends Chunk647438.PureComponent {
             height: f
           };
           return (0, r.jsx)("div", g(h({}, s), {
-            className: o()(n, i),
+            className: a()(n, i),
             style: e,
             children: (0, r.jsx)(t, {
-              className: o()(_.icon, m),
+              className: a()(_.icon, m),
               color: "currentColor"
             })
           }))

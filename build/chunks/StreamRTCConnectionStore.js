@@ -6,7 +6,7 @@ require.d(exports, {
   Z: () => ee
 }), require("./388685.js");
 var i, Chunk512722 = require("./512722.js"),
-  o = require.n(Chunk512722),
+  a = require.n(Chunk512722),
   Chunk392711 = require("./392711.js"),
   l = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
@@ -45,7 +45,7 @@ let C = {},
   L = {};
 
 function j(e, t, n, i) {
-  return o()(null != r, "Creating RTCConnection without session."), new h.Z({
+  return a()(null != r, "Creating RTCConnection without session."), new h.Z({
     sessionId: r,
     streamKey: e,
     serverId: t,
@@ -57,18 +57,18 @@ function j(e, t, n, i) {
   })
 }
 
-function k() {
+function M() {
   l().forEach(L, (e, t) => {
     e.destroy(e.isOwner ? "sender-disconnect" : "receiver-disconnect"), delete L[t], delete D[t]
   })
 }
 
-function M(e) {
-  r = e.sessionId, k()
+function k(e) {
+  r = e.sessionId, M()
 }
 
 function U() {
-  r = null, k()
+  r = null, M()
 }
 
 function G(e) {
@@ -77,8 +77,8 @@ function G(e) {
     guildId: n,
     channelId: r,
     appContext: i,
-    pid: a,
-    sourceId: o,
+    pid: o,
+    sourceId: a,
     nativePickerStyleUsed: s,
     goLiveModalDurationMs: c,
     analyticsLocations: u
@@ -97,8 +97,8 @@ function G(e) {
         isOwner: n
       } = e;
       t.setActionContext(i), t.setNativePickerStyleUsed(s), n && t.trackStart()
-    }), P[d] = o, R[d] = a, null != a) {
-    let e = _.ZP.getGameForPID(a);
+    }), P[d] = a, R[d] = o, null != o) {
+    let e = _.ZP.getGameForPID(o);
     null != e && (N[d] = {
       name: e.name,
       id: e.id,
@@ -132,12 +132,12 @@ function Z(e) {
   var t, n, r;
   let {
     streamKey: i,
-    rtcServerId: a,
-    rtcChannelId: o,
+    rtcServerId: o,
+    rtcChannelId: a,
     region: s,
     viewerIds: l
   } = e, c = L[i], u = (0, m.my)(i);
-  if (null == c && null != a) {
+  if (null == c && null != o) {
     null == R[i] && (N[i] = null), null == N[i] && null == P[i] && (N[i] = (0, g.L2)(u, v.Z));
     let e = new h.A({
       streamRegion: s,
@@ -148,7 +148,7 @@ function Z(e) {
       goLiveModalDurationMs: w[i],
       analyticsLocations: null == (n = C[i]) ? true : n.analyticsLocations
     });
-    c = j(i, a, o, e), L[i] = c
+    c = j(i, o, a, e), L[i] = c
   }
   delete D[i], d.Z.dispatch({
     type: "MEDIA_ENGINE_CONNECTION_STATS_HISTORY_RESET",
@@ -212,18 +212,18 @@ function z(e) {
     wants: n,
     userId: r,
     guildId: i,
-    channelId: a
-  } = e, o = (0, m.V9)({
+    channelId: o
+  } = e, a = (0, m.V9)({
     streamType: null == i ? S.lo.CALL : S.lo.GUILD,
     guildId: i,
-    channelId: a,
+    channelId: o,
     ownerId: r
   });
-  if (t !== u.Yn.STREAM || null == L[o] || !Object.entries(n).some(e => {
+  if (t !== u.Yn.STREAM || null == L[a] || !Object.entries(n).some(e => {
       let [t, n] = e;
       return "any" !== t && 0 !== n
     })) returnfalse;
-  D[o] = performance.now()
+  D[a] = performance.now()
 }
 
 function q(e) {
@@ -335,7 +335,7 @@ class $ extends(i = Chunk442837.ZP.Store) {
 }
 A($, "displayName", "StreamRTCConnectionStore");
 let ee = new $(Chunk570140.Z, !Chunk131951.Z.isSupported() || __OVERLAY__ ? {} : {
-  CONNECTION_OPEN: M,
+  CONNECTION_OPEN: k,
   CONNECTION_CLOSED: U,
   RTC_CONNECTION_STATE: K,
   RTC_CONNECTION_PING: K,

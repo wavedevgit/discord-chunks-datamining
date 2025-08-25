@@ -7,5 +7,5 @@ var Chunk794399 = require("./794399.js"),
 module.exports = Chunk956656(function(e, t) {
   if (null == e) return [];
   var n = t.length;
-  return n > 1 && o(e, t[0], t[1]) ? t = [] : n > 2 && o(t[0], t[1], t[2]) && (t = [t[0]]), i(e, r(t, 1), [])
+  return n > 1 && a(e, t[0], t[1]) ? t = [] : n > 2 && a(t[0], t[1], t[2]) && (t = [t[0]]), i(e, r(t, 1), [])
 })

@@ -52,16 +52,16 @@ function u(e) {
     return (0, r.jsx)(e, l({}, s))
   };
   return (0, r.jsxs)("div", {
-    className: o.main,
+    className: a.main,
     children: [(0, r.jsx)("div", {
-      className: o.canvas,
+      className: a.canvas,
       children: (0, r.jsx)("div", {
-        className: o.storyContent,
+        className: a.storyContent,
         children: d()
       })
     }), null != t.controls && (0, r.jsx)("div", {
-      className: o.controls,
-      children: (0, r.jsx)(a.a, {
+      className: a.controls,
+      children: (0, r.jsx)(o.a, {
         controls: t.controls,
         props: s,
         onPropsChange: u

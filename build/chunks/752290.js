@@ -28,8 +28,8 @@ let l = 100,
 function h(e, t) {
   let n = Math.round(100 * e),
     r = Math.round(100 * _),
-    a = Math.round(100 * f);
-  n > 0 && a >= r || n < 0 && a <= r ? (clearInterval(p), 0 === r && null != t && t()) : (a += n, f = a / 100, d.volume = i()(f, 0, c))
+    o = Math.round(100 * f);
+  n > 0 && o >= r || n < 0 && o <= r ? (clearInterval(p), 0 === r && null != t && t()) : (o += n, f = o / 100, d.volume = i()(f, 0, c))
 }
 
 function m(e) {

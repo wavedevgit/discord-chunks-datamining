@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk993413 = require("./993413.jsx"),
   Chunk388032 = require("./388032.jsx"),
@@ -43,10 +43,10 @@ function u(e) {
   });
   return (0, r.jsx)("div", {
     className: n,
-    children: (0, r.jsx)(o.hjN, {
+    children: (0, r.jsx)(a.hjN, {
       className: c.profileCustomizationSection,
       children: (0, r.jsxs)("div", {
-        className: a()(c.baseLayout, i),
+        className: o()(c.baseLayout, i),
         children: [t, _()]
       })
     })

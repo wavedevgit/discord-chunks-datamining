@@ -18,11 +18,11 @@ require.d(exports, {
   X3: () => X,
   b7: () => A,
   cl: () => F,
-  g9: () => M,
+  g9: () => k,
   i3: () => B,
   jW: () => x,
   kG: () => H,
-  nI: () => k,
+  nI: () => M,
   nl: () => Q,
   qc: () => U,
   s5: () => S,
@@ -201,30 +201,30 @@ function L(e) {
           r && (t.min_id = _.default.fromTimestamp(r)), i && (t.max_id = _.default.fromTimestamp(i));
           return
       }
-      let a = D(n);
-      null == t[a] && (t[a] = new Set);
-      let o = t[a];
+      let o = D(n);
+      null == t[o] && (t[o] = new Set);
+      let a = t[o];
       switch (n) {
         case y.dCx.ANSWER_USERNAME_FROM:
         case y.dCx.ANSWER_USERNAME_MENTIONS:
-          o.add(e.getData("userId"));
+          a.add(e.getData("userId"));
           break;
         case y.dCx.ANSWER_FILE_TYPE:
         case y.dCx.ANSWER_FILE_NAME:
-          o.add(e.getMatch(1));
+          a.add(e.getMatch(1));
           break;
         case y.dCx.ANSWER_IN:
           var s;
-          for (let t of null != (s = e.getData("channels")) ? s : []) o.add(t.id);
+          for (let t of null != (s = e.getData("channels")) ? s : []) a.add(t.id);
           break;
         case y.dCx.ANSWER_HAS:
-          o.add(e.getData("has"));
+          a.add(e.getData("has"));
           break;
         case y.dCx.ANSWER_PINNED:
-          o.add(e.getData("pinned"));
+          a.add(e.getData("pinned"));
           break;
         default:
-          o.add(e.getFullMatch().trim())
+          a.add(e.getFullMatch().trim())
       }
     }), Object.entries(t))) r instanceof Set && (t[n] = Array.from(r));
   if (t.content) {
@@ -241,9 +241,9 @@ function L(e) {
           for (let r of t) {
             let t = e.brackets && r.startsWith("[") && r.endsWith("]"),
               i = e.quotes && r.startsWith('"') && r.endsWith('"'),
-              a = r.includes("://"),
-              o = t || i || a ? 0 : 2;
-            n.push("".concat(o, "|").concat(r))
+              o = r.includes("://"),
+              a = t || i || o ? 0 : 2;
+            n.push("".concat(a, "|").concat(r))
           }
       }
       n.length > 0 && (t.contents = n), delete t.content
@@ -257,15 +257,15 @@ function j(e) {
   return (null == e ? true : e.contents) != null && e.contents.length > 0 ? null == e || null == (t = e.contents) ? true : t.map(e => e.split("|").slice(1).join("|")).join(" ") : null == e ? true : e.content
 }
 
-function k(e) {
-  return e.map(e => e.type === a.ZP.NON_TOKEN_TYPE ? e.getFullMatch() : "").join(" ").trim()
+function M(e) {
+  return e.map(e => e.type === o.ZP.NON_TOKEN_TYPE ? e.getFullMatch() : "").join(" ").trim()
 }
 
-function M(e, t, n) {
-  let r, i, a = e.find((a, o) => t >= a.start && t <= a.end && n >= a.start && n <= a.end ? (null != e[o + 1] && (i = e[o + 1]), true) : (r = a, false));
-  return null == a ? null : {
+function k(e, t, n) {
+  let r, i, o = e.find((o, a) => t >= o.start && t <= o.end && n >= o.start && n <= o.end ? (null != e[a + 1] && (i = e[a + 1]), true) : (r = o, false));
+  return null == o ? null : {
     previousToken: r,
-    currentToken: a,
+    currentToken: o,
     nextToken: i,
     focusOffset: t,
     anchorOffset: n
@@ -276,7 +276,7 @@ function U(e, t) {
   let n, {
     currentToken: r,
     nextToken: i,
-    previousToken: o
+    previousToken: a
   } = e = null != e ? e : {};
   if (0 === t.length) return {
     type: y.Sap.EMPTY,
@@ -289,7 +289,7 @@ function U(e, t) {
     token: null
   };
   if ((0, b._m)(r.type)) {
-    if (null == i || i.type === a.ZP.NON_TOKEN_TYPE) return {
+    if (null == i || i.type === o.ZP.NON_TOKEN_TYPE) return {
       type: y.Sap.FILTER,
       filter: r.type,
       token: i
@@ -300,11 +300,11 @@ function U(e, t) {
       token: null
     }
   }
-  return r.type === a.ZP.NON_TOKEN_TYPE && null != o && (0, b._m)(o.type) ? {
+  return r.type === o.ZP.NON_TOKEN_TYPE && null != a && (0, b._m)(a.type) ? {
     type: y.Sap.FILTER,
-    filter: o.type,
+    filter: a.type,
     token: r
-  } : (r.type === a.ZP.NON_TOKEN_TYPE && (n = r), {
+  } : (r.type === o.ZP.NON_TOKEN_TYPE && (n = r), {
     type: y.Sap.FILTER_ALL,
     filter: null,
     token: n
@@ -327,8 +327,8 @@ function B(e, t) {
     n = n.concat(e.results.map(n => {
       let i = n.text;
       if (null != n.channel && (i = G(i)), t.type === y.Sap.FILTER_ALL) {
-        var a;
-        r = null != (a = n.group) ? a : r;
+        var o;
+        r = null != (o = n.group) ? o : r;
         let e = b.ZP[r];
         (null == e ? true : e.key) != null && (null == e ? true : e.key) !== "" && (i = "".concat(e.key, " ").concat(i))
       }
@@ -395,7 +395,7 @@ function q(e) {
 function X(e) {
   let t = e.name,
     n = false;
-  if (e.isGroupDM()) t = (0, o.F6)(e, f.default, u.Z);
+  if (e.isGroupDM()) t = (0, a.F6)(e, f.default, u.Z);
   else if (e.isDM()) {
     let n = e.getRecipientId(),
       r = f.default.getUser(n),
@@ -412,7 +412,7 @@ function X(e) {
 
 function Q(e) {
   var t;
-  if (e.isGroupDM()) return (0, o.F6)(e, f.default, u.Z);
+  if (e.isGroupDM()) return (0, a.F6)(e, f.default, u.Z);
   if (e.isDM()) {
     let t = e.getRecipientId(),
       n = f.default.getUser(t);

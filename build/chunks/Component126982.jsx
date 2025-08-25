@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk873546 = require("./873546.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -54,10 +54,10 @@ function v(e) {
   let {
     step: t,
     onClose: n,
-    isOrbCheckout: a
+    isOrbCheckout: o
   } = e, l = (0, u.Z)(m.X), {
     footerNode: d
-  } = (0, p.JL)(), f = (0, _.G6)() && !s.tq, b = null != d ? d.offsetWidth : true, y = i.useMemo(() => f && null != b && (t === h.h8.ADD_PAYMENT_STEPS || a) ? b : true, [f, b, t, a]);
+  } = (0, p.JL)(), f = (0, _.G6)() && !s.tq, b = null != d ? d.offsetWidth : true, y = i.useMemo(() => f && null != b && (t === h.h8.ADD_PAYMENT_STEPS || o) ? b : true, [f, b, t, o]);
   if (t === h.h8.BENEFITS || t === h.h8.CONFIRM) return null;
   let v = null != y ? {
       width: y + 2
@@ -73,8 +73,8 @@ function v(e) {
       "aria-hidden": "true",
       "data-accessibility": "desaturate",
       style: I,
-      children: a ? (0, r.jsx)(O, {
-        className: o()(g.headerImage, g.orbCheckoutHeaderVideo)
+      children: o ? (0, r.jsx)(O, {
+        className: a()(g.headerImage, g.orbCheckoutHeaderVideo)
       }) : (0, r.jsx)("img", {
         src: E,
         alt: "",

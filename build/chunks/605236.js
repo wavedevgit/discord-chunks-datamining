@@ -9,7 +9,7 @@ require.d(exports, {
   H4: () => R,
   J0: () => N,
   JO: () => B,
-  ME: () => M,
+  ME: () => k,
   OA: () => x,
   Ow: () => Z,
   UJ: () => w,
@@ -20,7 +20,7 @@ require.d(exports, {
   kk: () => j,
   oK: () => L,
   po: () => T,
-  u9: () => k,
+  u9: () => M,
   wH: () => G,
   wx: () => y,
   z2: () => I
@@ -53,7 +53,7 @@ function O(e) {
 }
 
 function v(e, t) {
-  return (0, o.Cd)(e, {
+  return (0, a.Cd)(e, {
     lastDismissedVersion: t,
     lastDismissedAtMs: Date.now().toString(),
     lastDismissedObjectId: "0"
@@ -61,7 +61,7 @@ function v(e, t) {
 }
 
 function I(e) {
-  return (0, o.Cd)(e, {
+  return (0, a.Cd)(e, {
     lastDismissedVersion: 0,
     lastDismissedAtMs: Date.now().toString(),
     lastDismissedObjectId: "0"
@@ -69,7 +69,7 @@ function I(e) {
 }
 
 function T(e, t) {
-  return (0, o.Cd)(e, {
+  return (0, a.Cd)(e, {
     lastDismissedVersion: 0,
     lastDismissedAtMs: Date.now().toString(),
     lastDismissedObjectId: t
@@ -77,7 +77,7 @@ function T(e, t) {
 }
 
 function S(e, t) {
-  return (0, o.m9)(e, t, {
+  return (0, a.m9)(e, t, {
     dismissed: true,
     lastDismissedVersion: 0,
     lastDismissedAtMs: Date.now().toString(),
@@ -86,7 +86,7 @@ function S(e, t) {
 }
 
 function A(e, t) {
-  return (0, o.m9)(e, t, {
+  return (0, a.m9)(e, t, {
     dismissed: false,
     lastDismissedVersion: 0,
     lastDismissedAtMs: Date.now().toString(),
@@ -95,7 +95,7 @@ function A(e, t) {
 }
 
 function C(e, t) {
-  return (0, o.m9)(e, t, {
+  return (0, a.m9)(e, t, {
     dismissed: false,
     lastDismissedVersion: 0,
     lastDismissedAtMs: Date.now().toString(),
@@ -104,7 +104,7 @@ function C(e, t) {
 }
 
 function N(e, t) {
-  return (0, o.m9)(e, t, {
+  return (0, a.m9)(e, t, {
     dismissed: false,
     lastDismissedVersion: 0,
     lastDismissedAtMs: "0",
@@ -119,9 +119,9 @@ function R(e, t) {
     lastDismissedVersion: null
   };
   let i = null == (r = s.Z.settings.userContent) || null == (n = r.recurringDismissibleContentStates[e]) ? true : n.lastDismissedVersion,
-    a = null != t ? t : (0, g.t)(e);
+    o = null != t ? t : (0, g.t)(e);
   return {
-    isDismissed: null != i && i >= a,
+    isDismissed: null != i && i >= o,
     lastDismissedVersion: i
   }
 }
@@ -133,29 +133,29 @@ function P(e, t) {
     lastDismissedAtMs: null
   };
   let i = null == (r = s.Z.settings.userContent) || null == (n = r.recurringDismissibleContentStates[e]) ? true : n.lastDismissedAtMs,
-    a = null != i && "0" !== i ? Number.isNaN(Number(i)) ? true : Number(i) : true;
-  if (true === a) return {
+    o = null != i && "0" !== i ? Number.isNaN(Number(i)) ? true : Number(i) : true;
+  if (true === o) return {
     isDismissed: false,
     lastDismissedAtMs: true
   };
-  let o = true;
+  let a = true;
   if (null != t) {
-    let e = a + t.cooldownDurationMs,
+    let e = o + t.cooldownDurationMs,
       n = Date.now(),
-      r = null == t.showAfterTimestamp || n >= t.showAfterTimestamp && a <= t.showAfterTimestamp;
-    o = n < e || !r
+      r = null == t.showAfterTimestamp || n >= t.showAfterTimestamp && o <= t.showAfterTimestamp;
+    a = n < e || !r
   }
   return {
-    isDismissed: o,
-    lastDismissedAtMs: a
+    isDismissed: a,
+    lastDismissedAtMs: o
   }
 }
 
 function w(e, t, n) {
-  var r, i, a, o;
+  var r, i, o, a;
   if ((0, m.Bh)(e)) returntrue;
   let l = null == (i = s.Z.settings.userContent) || null == (r = i.recurringDismissibleContentStates[e]) ? true : r.lastDismissedObjectId,
-    u = null == (o = s.Z.settings.userContent) || null == (a = o.recurringDismissibleContentStates[e]) ? true : a.lastDismissedAtMs,
+    u = null == (a = s.Z.settings.userContent) || null == (o = a.recurringDismissibleContentStates[e]) ? true : o.lastDismissedAtMs,
     d = null != u && "0" !== u ? Number.isNaN(Number(u)) ? true : Number(u) : true,
     f = false;
   if (null != n && null != d) {
@@ -185,7 +185,7 @@ function L(e, t) {
 }
 
 function j(e, t, n) {
-  !((0, p.cI)(e) || _.Z.hasUserHitDCCap(e, null == t ? true : t.guildId)) && (n || (a.Z.dispatch({
+  !((0, p.cI)(e) || _.Z.hasUserHitDCCap(e, null == t ? true : t.guildId)) && (n || (o.Z.dispatch({
     type: "DCF_EVENT_LOGGED",
     eventType: u.D.DC_SHOW_REQUEST,
     dismissibleContent: e
@@ -194,11 +194,11 @@ function j(e, t, n) {
     groupName: null == t ? true : t.groupName,
     onAdded: () => {
       var n;
-      let [r, a] = (0, p.Aq)();
+      let [r, o] = (0, p.Aq)();
       (0, f.cm)(e, null == t ? true : t.guildId), l.default.track(b.rMx.DISMISSIBLE_CONTENT_SHOWN, {
         type: i.z[e],
         content_count: r,
-        fatigable_content_count: a,
+        fatigable_content_count: o,
         group_name: null == t ? true : t.groupName,
         bypass_fatigue: d.O.has(e),
         guild_id: null == t ? true : t.guildId,
@@ -208,12 +208,12 @@ function j(e, t, n) {
   })))
 }
 
-function k(e) {
+function M(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
   ((0, p.cI)(e) || t.forceTrack) && F(e, t), (0, f.Vr)(e)
 }
 
-function M(e) {
+function k(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
     n = !_.Z.hasUserHitDCCap();
   (0, p.gE)({
@@ -228,19 +228,19 @@ async function U(e) {
 }
 async function G(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {};
-  k(e, n), await v(e, t), M(e, n)
+  M(e, n), await v(e, t), k(e, n)
 }
 async function B(e, t, n) {
-  k(e, n), await T(e, t), M(e, n)
+  M(e, n), await T(e, t), k(e, n)
 }
 async function Z(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
-  k(e, t), await I(e), M(e, t)
+  M(e, t), await I(e), k(e, t)
 }
 
 function F(e, t) {
   var n;
-  let [r] = (0, p.Aq)(), a = _.Z.getRenderedAtTimestamp(e), o = new Date, s = null == a ? null : o.getTime() - a;
+  let [r] = (0, p.Aq)(), o = _.Z.getRenderedAtTimestamp(e), a = new Date, s = null == o ? null : a.getTime() - o;
   l.default.track(b.rMx.DISMISSIBLE_CONTENT_DISMISSED, {
     type: i.z[e],
     action: null != (n = null == t ? true : t.dismissAction) ? n : E.L.UNKNOWN,

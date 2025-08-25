@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk658722 = require("./658722.js"),
-  a = require.n(Chunk658722),
+  o = require.n(Chunk658722),
   Chunk392711 = require("./392711.js"),
   s = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
@@ -22,10 +22,10 @@ let h = function(e) {
     className: t,
     guild: n,
     roleStyle: i,
-    roleFilter: o,
+    roleFilter: a,
     onSelect: h,
     onClose: m
-  } = e, g = (0, l.e7)([d.Z], () => d.Z.getSortedRoles(n.id)), E = (0, u.ZP)(n.id, null), b = e => s()(g).filter(o).filter(t => a()(e.toLowerCase(), t.name.toLowerCase())).value();
+  } = e, g = (0, l.e7)([d.Z], () => d.Z.getSortedRoles(n.id)), E = (0, u.ZP)(n.id, null), b = e => s()(g).filter(a).filter(t => o()(e.toLowerCase(), t.name.toLowerCase())).value();
   return (0, r.jsx)(c.DBG, {
     className: t,
     value: new Set,

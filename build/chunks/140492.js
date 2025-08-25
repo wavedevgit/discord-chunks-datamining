@@ -44,20 +44,20 @@ function O(e) {
     channelId: t,
     path: n,
     basePath: r
-  } = s.Z.getState(), i = d.Z.getPrivateChannelIds(), a = __OVERLAY__ ? i : [...m(), ...i], o = (null == t ? E(null != n ? n : r) : null != t ? a.indexOf(t) : 0) + e;
-  o >= a.length ? o = 0 : o < 0 && (o = a.length - 1);
-  let l = a[o];
+  } = s.Z.getState(), i = d.Z.getPrivateChannelIds(), o = __OVERLAY__ ? i : [...m(), ...i], a = (null == t ? E(null != n ? n : r) : null != t ? o.indexOf(t) : 0) + e;
+  a >= o.length ? a = 0 : a < 0 && (a = o.length - 1);
+  let l = o[a];
   m().includes(l) ? y(l) : b(p.ME, l)
 }
 
 function v(e, t) {
   let n = s.Z.getState().channelId,
-    a = (0, r.Z)(t, {
+    o = (0, r.Z)(t, {
       withCurrentVoiceChannel: true
     }).map(e => e.id);
-  (0, i.s)(t) && a.unshift(h.oC.GUILD_HOME);
-  let o = g((null != n ? a.indexOf(n) : false) + e, a.length);
-  b(t, a[o])
+  (0, i.s)(t) && o.unshift(h.oC.GUILD_HOME);
+  let a = g((null != n ? o.indexOf(n) : false) + e, o.length);
+  b(t, o[a])
 }
 
 function I() {

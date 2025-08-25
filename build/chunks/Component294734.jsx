@@ -51,7 +51,7 @@ function R(e) {
     message: t,
     snapshot: n,
     index: d
-  } = e, f = i.useMemo(() => new v.r(t, n, d), [t, n, d]), _ = (0, o.e7)([m.Z, O.default, y.Z, b.Z, E.Z, u.Z], () => f.getForwardInfo(m.Z, O.default, y.Z, b.Z, E.Z, u.Z).footerInfo, [f], s.Z), p = i.useCallback(() => {
+  } = e, f = i.useMemo(() => new v.r(t, n, d), [t, n, d]), _ = (0, a.e7)([m.Z, O.default, y.Z, b.Z, E.Z, u.Z], () => f.getForwardInfo(m.Z, O.default, y.Z, b.Z, E.Z, u.Z).footerInfo, [f], s.Z), p = i.useCallback(() => {
     (0, I.Z)(t)
   }, [t]);
   return null == _ ? null : (0, r.jsxs)(c.P3F, {
@@ -61,7 +61,7 @@ function R(e) {
       className: C.originIcon,
       src: _.originIconUrl,
       alt: ""
-    }) : null, (0, r.jsx)(a.xv, {
+    }) : null, (0, r.jsx)(o.xv, {
       className: C.footerText,
       variant: "text-sm/medium",
       color: "none",
@@ -77,9 +77,9 @@ function P(e) {
   var t;
   let {
     message: n,
-    snapshot: a,
+    snapshot: o,
     index: s
-  } = e, l = i.useMemo(() => (0, T.Z)(n, a), [n, a]), c = h.RS.useSetting(), u = h.NA.useSetting(), E = c && u, b = (0, o.e7)([g.Z], () => g.Z.isDeveloper), y = (0, d.A)((null != (t = l.editedTimestamp) ? t : l.timestamp).valueOf()), {
+  } = e, l = i.useMemo(() => (0, T.Z)(n, o), [n, o]), c = h.RS.useSetting(), u = h.NA.useSetting(), E = c && u, b = (0, a.e7)([g.Z], () => g.Z.isDeveloper), y = (0, d.A)((null != (t = l.editedTimestamp) ? t : l.timestamp).valueOf()), {
     content: O,
     hasSpoilerEmbeds: v
   } = (0, _.Z)(l, {
@@ -91,7 +91,7 @@ function P(e) {
     allowLinks: true,
     allowDevLinks: b,
     previewLinkTarget: true
-  }), I = (0, o.e7)([m.Z], () => m.Z.getChannel(n.channel_id)), S = h.jU.useSetting();
+  }), I = (0, a.e7)([m.Z], () => m.Z.getChannel(n.channel_id)), S = h.jU.useSetting();
   return null == I ? null : (0, r.jsxs)("div", {
     className: C.container,
     children: [(0, r.jsx)("div", {
@@ -114,7 +114,7 @@ function P(e) {
         renderThreadAccessory: false
       }), (0, r.jsx)(R, {
         message: n,
-        snapshot: a,
+        snapshot: o,
         index: s
       })]
     })]

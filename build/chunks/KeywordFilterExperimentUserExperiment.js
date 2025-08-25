@@ -2,12 +2,12 @@
 /** chunk id: 592204, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Xo: () => o,
+  Xo: () => a,
   pB: () => s
 });
 var Chunk818083 = require("./818083.js"),
   Chunk517858 = require("./517858.js");
-let a = (0, Chunk818083.B)({
+let o = (0, Chunk818083.B)({
   kind: "user",
   id: "2024-04_keyword_filter_experiment",
   label: "Replace registered keywords with asterisks",
@@ -23,13 +23,13 @@ let a = (0, Chunk818083.B)({
   }]
 });
 
-function o(e) {
+function a(e) {
   let {
     location: t
   } = e, n = (0, i.C3)({
     location: t
   });
-  return a.useExperiment({
+  return o.useExperiment({
     location: t
   }, {
     autoTrackExposure: true
@@ -42,7 +42,7 @@ function s(e) {
   } = e, n = (0, i.GW)({
     location: t
   });
-  return a.getCurrentConfig({
+  return o.getCurrentConfig({
     location: t
   }).enabled || n
 }

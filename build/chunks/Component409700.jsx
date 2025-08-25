@@ -10,7 +10,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk831209 = require("./831209.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -91,8 +91,8 @@ function A(e) {
     forceShowBetaLabel: n = false
   } = e, i = (0, p.V2)({
     location: "SoundmojiBanner"
-  }), a = (0, l.e7)([d.default], () => _.ZP.canUseSoundboardEverywhere(d.default.getCurrentUser())), o = (0, l.e7)([u.Z], () => u.Z.getGuildId());
-  return n || a || t.guildId === g.X8 || t.guildId === o || !i ? (0, r.jsx)(c.IGR, {
+  }), o = (0, l.e7)([d.default], () => _.ZP.canUseSoundboardEverywhere(d.default.getCurrentUser())), a = (0, l.e7)([u.Z], () => u.Z.getGuildId());
+  return n || o || t.guildId === g.X8 || t.guildId === a || !i ? (0, r.jsx)(c.IGR, {
     text: "BETA",
     color: s.Z.BG_BRAND,
     className: b.betaBadge
@@ -125,7 +125,7 @@ function C(e) {
     sound: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: o()(b.infoContainer, b.infoTooltip),
+    className: a()(b.infoContainer, b.infoTooltip),
     children: [(0, r.jsx)(A, {
       sound: t
     }), (0, r.jsxs)("div", {
@@ -155,8 +155,8 @@ function N(e) {
   let {
     renderPopout: t,
     position: n,
-    tooltipText: a,
-    children: o,
+    tooltipText: o,
+    children: a,
     setTooltipShowing: s,
     clickableClassName: l
   } = e, [u, d] = i.useState(false), [f, _] = i.useState(String(Date.now())), p = i.useCallback(e => {
@@ -193,16 +193,16 @@ function N(e) {
       onTooltipShow: () => {
         g && (null == s || s(true))
       },
-      text: a,
+      text: o,
       position: "top",
       shouldShow: g,
       children: t => (0, r.jsx)(c.P3F, T(v({
         innerRef: m
       }, t, e), {
-        "aria-label": a,
+        "aria-label": o,
         onClick: p,
         className: l,
-        children: o
+        children: a
       }))
     })
   })

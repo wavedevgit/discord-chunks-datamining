@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk68240 = require("./68240.js"),
   Chunk583140 = require("./583140.js");
@@ -17,10 +17,10 @@ function c(e) {
     text: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: a()(l.toast, s.toast),
-    children: [(0, r.jsx)(o.b7C, {
-      color: o.TVs.colors.TEXT_BRAND
-    }), (0, r.jsx)(o.Text, {
+    className: o()(l.toast, s.toast),
+    children: [(0, r.jsx)(a.b7C, {
+      color: a.TVs.colors.TEXT_BRAND
+    }), (0, r.jsx)(a.Text, {
       className: l.__invalid_content,
       color: "header-primary",
       variant: "text-md/normal",

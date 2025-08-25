@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk358085 = require("./358085.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk964549 = require("./964549.js");
@@ -20,7 +20,7 @@ function c(e) {
     width: "10",
     height: "10",
     xmlns: "http://www.w3.org/2000/svg",
-    className: a()(l.bindArrow, l[t]),
+    className: o()(l.bindArrow, l[t]),
     children: (0, r.jsx)("g", {
       fill: "#FFFFFF",
       children: (0, r.jsx)("polygon", {
@@ -36,9 +36,9 @@ function u(e) {
     children: t,
     text: n,
     macText: i,
-    label: a,
+    label: o,
     macLabel: s
-  } = e, c = (0, o.isMac)() || (0, o.isMacWeb)(), u = c && null != i ? l.systemFont : true, d = c && null != s ? s : a, f = c && null != i ? i : null != t ? t : n;
+  } = e, c = (0, a.isMac)() || (0, a.isMacWeb)(), u = c && null != i ? l.systemFont : true, d = c && null != s ? s : o, f = c && null != i ? i : null != t ? t : n;
   return (0, r.jsx)("span", {
     className: u,
     role: null != d ? "img" : true,
@@ -139,14 +139,14 @@ function f(e) {
     shortcut: t,
     dim: n = false,
     className: i,
-    keyClassName: o
+    keyClassName: a
   } = e, s = Array.isArray(t) ? t : t.split("+");
   return (0, r.jsx)("div", {
-    className: a()(l.combo, i, {
+    className: o()(l.combo, i, {
       [l.dim]: n
     }),
     children: s.map(e => null != d[e] ? d[e]() : e).map((e, t) => (0, r.jsx)("span", {
-      className: a()(l.key, o),
+      className: o()(l.key, a),
       children: e
     }, t))
   })

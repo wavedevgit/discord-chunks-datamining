@@ -55,18 +55,18 @@ function y(e) {
         src: b(E)
       }), (0, r.jsxs)("div", {
         className: m.upsellTextContainer,
-        children: [(0, r.jsx)(o.Text, {
+        children: [(0, r.jsx)(a.Text, {
           variant: "text-lg/semibold",
           color: "always-white",
           children: h.intl.string(h.t.dMaDFR)
-        }), (0, r.jsx)(o.Text, {
+        }), (0, r.jsx)(a.Text, {
           variant: "text-sm/normal",
           color: "always-white",
           children: h.intl.string(h.t.F7sgFB)
         })]
       }), (0, r.jsx)(u.Z, {
-        size: a.zx.Sizes.LARGE,
-        color: a.zx.Colors.GREEN,
+        size: o.zx.Sizes.LARGE,
+        color: o.zx.Colors.GREEN,
         textOptions: {
           textOverride: f.ZP.isPremium(t) ? h.intl.string(h.t.AfRWIy) : h.intl.string(h.t.nkdUys)
         },

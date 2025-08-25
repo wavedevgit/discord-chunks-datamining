@@ -58,7 +58,7 @@ async function h(e, t, n) {
   });
   if (p.has(i)) return p.get(i);
   let {
-    users: o,
+    users: a,
     next_index: l
   } = (await r.tn.post({
     url: s.ANM.GET_REFERRAL_ELIGIBLE_USERS,
@@ -70,7 +70,7 @@ async function h(e, t, n) {
     oldFormErrors: true,
     rejectWithError: false
   })).body, u = {
-    users: o.map(e => new a.Z(e)),
+    users: a.map(e => new o.Z(e)),
     nextIndex: l
   };
   return p.set(i, u), u
@@ -106,15 +106,15 @@ async function g(e) {
   let t = [],
     n = new Map;
   for (let i of e) try {
-    var a;
-    let e = null != (a = (await r.tn.post({
+    var o;
+    let e = null != (o = (await r.tn.post({
       url: s.ANM.CREATE_REFERRAL(i),
       oldFormErrors: true,
       rejectWithError: true
-    })).body) ? a : null;
+    })).body) ? o : null;
     null != e && t.push(e), n.set(i, 1)
   } catch (e) {
-    o.Z.captureException(e), n.set(i, 2)
+    a.Z.captureException(e), n.set(i, 2)
   }
   return i.Z.dispatch({
     type: "CREATE_REFERRALS_SUCCESS",

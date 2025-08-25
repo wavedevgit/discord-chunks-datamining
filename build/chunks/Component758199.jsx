@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -83,7 +83,7 @@ function A(e) {
   } = e;
   return null != t ? (0, r.jsx)(c.P3F, {
     onClick: t,
-    className: o()({
+    className: a()({
       [b.cursorPointer]: null != t
     }, i),
     children: n
@@ -97,7 +97,7 @@ function C(e) {
   let {
     title: t,
     header: n,
-    footer: a,
+    footer: o,
     info: p,
     staticBannerSrc: y,
     videoBannerSrc: T,
@@ -113,8 +113,8 @@ function C(e) {
   D = S(D);
   let {
     primaryColor: j,
-    secondaryColor: k
-  } = (0, f.Z)(null != N ? N : y), M = "linear-gradient(45deg, ".concat(j, ", ").concat(k, ")"), U = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), G = i.useRef(false), B = (0, u.O)(e => {
+    secondaryColor: M
+  } = (0, f.Z)(null != N ? N : y), k = "linear-gradient(45deg, ".concat(j, ", ").concat(M, ")"), U = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), G = i.useRef(false), B = (0, u.O)(e => {
     if (false === G.current && e) {
       var t;
       null == D || null == (t = D.onView) || t.call(D), (0, m.GF)(D.id, D.linkType, D.referrerId, D.activityCustomId), G.current = true
@@ -156,7 +156,7 @@ function C(e) {
     className: b.embed,
     children: [Y && (0, r.jsxs)(A, {
       onClick: Q,
-      className: o()(b.bannerWrapper, W, {
+      className: a()(b.bannerWrapper, W, {
         [b.showVideoOnFocus]: H
       }),
       children: [H && (q ? (0, r.jsx)("div", {
@@ -180,7 +180,7 @@ function C(e) {
       })]
     }), (0, r.jsxs)("div", {
       style: {
-        background: M
+        background: k
       },
       children: [(0, r.jsxs)("div", {
         className: b.contentContainer,
@@ -195,7 +195,7 @@ function C(e) {
           className: b.contentAndCopyButtonWrapper,
           children: [(0, r.jsxs)(A, {
             onClick: X,
-            className: o()(b.contentWrapper, {
+            className: a()(b.contentWrapper, {
               [b.contentWrapperClickable]: null != X
             }),
             children: [null != N && (0, r.jsx)("div", {
@@ -223,11 +223,11 @@ function C(e) {
             let {
               label: n,
               icon: i,
-              onClick: a,
-              disabledReason: o,
+              onClick: o,
+              disabledReason: a,
               submitting: s,
               trackingArea: u
-            } = e, d = null != o, f = 0 === t, _ = null != i ? (0, r.jsxs)(r.Fragment, {
+            } = e, d = null != a, f = 0 === t, _ = null != i ? (0, r.jsxs)(r.Fragment, {
               children: [i, (0, r.jsx)("span", {
                 children: n
               })]
@@ -238,11 +238,11 @@ function C(e) {
               submitting: s,
               children: _,
               onClick(e) {
-                a(e), (0, m.KX)(D.id, D.linkType, u, D.referrerId, D.activityCustomId)
+                o(e), (0, m.KX)(D.id, D.linkType, u, D.referrerId, D.activityCustomId)
               }
             };
             return d ? (0, r.jsx)(c.ua7, {
-              text: o,
+              text: a,
               children: e => {
                 var t = O({}, v(e));
                 return (0, r.jsx)(l.zx, I({}, p, t))
@@ -250,7 +250,7 @@ function C(e) {
             }, n) : (0, r.jsx)(l.zx, I({}, p), n)
           })
         })]
-      }), null != a && a]
+      }), null != o && o]
     })]
   })
 }

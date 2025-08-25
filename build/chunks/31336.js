@@ -2,22 +2,22 @@
 /** chunk id: 31336, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Qh: () => a,
-  SO: () => o,
+  Qh: () => o,
+  SO: () => a,
   Zw: () => s
 });
 var Chunk570140 = require("./570140.js"),
   Chunk19759 = require("./19759.js");
 
-function a(e) {
+function o(e) {
   r.Z.dispatch({
     type: "DEV_TOOLS_SETTINGS_UPDATE",
     settings: e
   })
 }
 
-function o() {
-  a({
+function a() {
+  o({
     displayTools: !Chunk19759.Z.displayTools
   })
 }

@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk780384 = require("./780384.js"),
   Chunk755721 = require("./755721.js"),
@@ -72,12 +72,12 @@ function P(e) {
   var t;
   let {
     quest: n,
-    errorHints: a,
+    errorHints: o,
     transitionState: y,
     onClose: A,
     sourceQuestContent: N
-  } = e, [P, D] = (0, i.useState)(a), x = (0, g.KX)(), L = (0, p.O5)(), j = null == (t = (0, h.WD)()) ? true : t.getId(), k = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), M = (0, O.g2)({
-    useReducedMotion: k,
+  } = e, [P, D] = (0, i.useState)(o), x = (0, g.KX)(), L = (0, p.O5)(), j = null == (t = (0, h.WD)()) ? true : t.getId(), M = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), k = (0, O.g2)({
+    useReducedMotion: M,
     className: T.colorTransition
   }), U = P.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), G = (0, m.Bz)(n), B = (0, s.e7)([_.Z], () => _.Z.getState().theme), Z = (0, l.wj)(B) ? v.BRd.DARK : v.BRd.LIGHT, {
     startConsoleQuest: F,
@@ -85,7 +85,7 @@ function P(e) {
   } = (0, g.GI)({
     questId: n.id,
     beforeRequest: () => {
-      M.startAnimation(), L({
+      k.startAnimation(), L({
         questId: n.id,
         questContent: E.jn.CONNECTIONS_MODAL,
         questContentCTA: p.jZ.DEFIBRILLATOR,
@@ -93,7 +93,7 @@ function P(e) {
       })
     },
     afterRequest: e => {
-      M.stopAnimation(), D(e)
+      k.stopAnimation(), D(e)
     }
   }), H = () => {
     A(), (0, m.V$)({
@@ -163,11 +163,11 @@ function P(e) {
           color: "header-secondary",
           children: I.intl.string(I.t["+/hZMz"])
         }), (0, r.jsxs)(u.P3F, {
-          className: o()(T.refreshWrapper, {
+          className: a()(T.refreshWrapper, {
             [T.disabled]: V
           }),
           onClick: F,
-          children: [M.render(), (0, r.jsx)(u.Text, {
+          children: [k.render(), (0, r.jsx)(u.Text, {
             variant: "text-sm/medium",
             color: "currentColor",
             className: T.colorTransition,
@@ -211,12 +211,12 @@ function w(e) {
     icon: t,
     text: n,
     errors: i = [],
-    gameTile: a
+    gameTile: o
   } = e, s = i.length > 0, l = s ? u._3e : u.B_b;
   return (0, r.jsxs)("div", {
     className: T.connectionRow,
     children: [(0, r.jsxs)("div", {
-      className: o()(T.connectionRowHeader, {
+      className: a()(T.connectionRowHeader, {
         [T.connectionRowHeaderError]: s
       }),
       children: [(0, r.jsxs)("div", {
@@ -228,10 +228,10 @@ function w(e) {
         })]
       }), (0, r.jsxs)("div", {
         className: T.connectionRowHeaderContent,
-        children: [a, (0, r.jsx)(l, {
+        children: [o, (0, r.jsx)(l, {
           color: "currentColor",
           size: "sm",
-          className: o()({
+          className: a()({
             [T.success]: !s,
             [T.error]: s
           })

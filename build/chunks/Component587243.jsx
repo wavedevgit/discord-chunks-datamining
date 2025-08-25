@@ -51,17 +51,17 @@ function b(e) {
     description: i
   } = e, {
     showTempStatusOptions: s
-  } = o.Y.useExperiment({
+  } = a.Y.useExperiment({
     location: "UserProfileAccountPopout"
   }), l = s && t !== _.Skl.ONLINE, c = (0, r.jsx)(r.Fragment, {
     children: m.map(e => {
       let {
         duration: i,
-        label: o
+        label: a
       } = e;
-      return (0, r.jsx)(a.sNh, {
+      return (0, r.jsx)(o.sNh, {
         id: "".concat(t, "-").concat(i),
-        label: o(),
+        label: a(),
         action: () => (0, f.Z)({
           nextStatus: t,
           prevStatus: n,
@@ -71,7 +71,7 @@ function b(e) {
       }, null != i ? i : g)
     })
   });
-  return (0, r.jsx)(a.sNh, {
+  return (0, r.jsx)(o.sNh, {
     id: t,
     className: h.expiringStatusMenuItem,
     keepItemStyles: true,
@@ -82,7 +82,7 @@ function b(e) {
       } = e;
       return (0, r.jsxs)("div", {
         className: h.statusItem,
-        children: [(0, r.jsx)(a.qbd, {
+        children: [(0, r.jsx)(o.qbd, {
           status: t,
           className: h.icon,
           size: 10,
@@ -133,7 +133,7 @@ function y(e) {
 function O(e) {
   let {
     hasNewStrings: t
-  } = o.Y.useExperiment({
+  } = a.Y.useExperiment({
     location: "UserProfileAccountPopout"
   }), n = c.Cr.useSetting(), u = (0, s.p)(), d = l.e.useExperiment({
     location: "UserProfileAccountPopout"
@@ -154,7 +154,7 @@ function O(e) {
         duration: n,
         label: i
       } = t;
-      return (0, r.jsx)(a.sNh, {
+      return (0, r.jsx)(o.sNh, {
         id: "".concat(e, "-").concat(n),
         label: i(),
         action: () => {
@@ -180,8 +180,8 @@ function O(e) {
     description: O(_.Skl.INVISIBLE)
   });
   return (0, r.jsxs)(r.Fragment, {
-    children: [I, (0, r.jsx)(a.Clw, {}, "menu-separator-statuses"), T, S, A, d || u ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(a.Clw, {}, "menu-separator-statuses"), (0, r.jsx)(a.sNh, {
+    children: [I, (0, r.jsx)(o.Clw, {}, "menu-separator-statuses"), T, S, A, d || u ? (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(o.Clw, {}, "menu-separator-statuses"), (0, r.jsx)(o.sNh, {
         id: "quiet-mode",
         "aria-label": "focus mode",
         className: h.expiringStatusMenuItem,
@@ -189,12 +189,12 @@ function O(e) {
         hasSubmenu: true,
         label: () => (0, r.jsxs)("div", {
           className: h.statusItem,
-          children: [(0, r.jsx)(a.owu, {
+          children: [(0, r.jsx)(o.owu, {
             size: "xxs",
             className: h.icon
           }), (0, r.jsxs)("div", {
             className: h.focusModeTitle,
-            children: [p.intl.string(p.t.gJRnwM), (0, r.jsx)(a.IGR, {
+            children: [p.intl.string(p.t.gJRnwM), (0, r.jsx)(o.IGR, {
               text: u ? p.intl.string(p.t.ApAu9f) : E ? p.intl.string(p.t.gH3Fra) : p.intl.string(p.t["64pl8/"]),
               color: u ? i.Z.BRAND_500 : E ? i.Z.RED_400 : i.Z.PRIMARY_500
             })]

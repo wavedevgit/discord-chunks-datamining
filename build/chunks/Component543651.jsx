@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk913527 = require("./913527.js"),
   s = require.n(Chunk913527),
   Chunk442837 = require("./442837.js"),
@@ -24,7 +24,7 @@ let g = function(e) {
     createdAt: t,
     participantIds: n,
     applicationId: i,
-    title: o,
+    title: a,
     guildId: g,
     className: E
   } = e, b = (0, u.q)(i), y = (0, l.Wu)([_.default], () => {
@@ -32,15 +32,15 @@ let g = function(e) {
     return null != (e = n.map(e => _.default.getUser(e)).filter(p.lm)) ? e : []
   }), O = null == b ? true : b.name, v = s()(t).fromNow();
   return null == t ? null : (0, r.jsxs)("div", {
-    className: a()(E, m.container),
+    className: o()(E, m.container),
     children: [(0, r.jsx)(f.Z, {
       game: b
     }), (0, r.jsxs)("div", {
       className: m.textSection,
-      children: [null != o && "" !== o ? (0, r.jsx)(c.Text, {
+      children: [null != a && "" !== a ? (0, r.jsx)(c.Text, {
         variant: "text-md/semibold",
         color: "interactive-active",
-        children: o
+        children: a
       }) : (0, r.jsx)(c.Text, {
         variant: "text-md/semibold",
         color: "text-muted",

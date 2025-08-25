@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk202841 = require("./202841.js"),
   Chunk481060 = require("./481060.js"),
   Chunk617136 = require("./617136.js"),
@@ -63,7 +63,7 @@ let I = e => {
   let {
     quest: t,
     expansionSpring: n,
-    onCtxMenuSelect: a,
+    onCtxMenuSelect: o,
     onCtxMenuOpen: b,
     onCtxMenuClose: O,
     useReducedMotion: I,
@@ -84,7 +84,7 @@ let I = e => {
     })
   }, [A, t]), R = T && S, P = (0, r.jsx)(l.P3F, {
     onClick: N,
-    className: o()(E.clickable, {
+    className: a()(E.clickable, {
       [E.logo]: R
     }),
     children: (0, r.jsx)(_.ZP, {
@@ -94,7 +94,7 @@ let I = e => {
     })
   });
   return (0, r.jsxs)(s.animated.div, {
-    className: o()(E.wrapper, E.rewardHighlightWrapper, {
+    className: a()(E.wrapper, E.rewardHighlightWrapper, {
       [E.interactable]: R
     }),
     style: {
@@ -139,7 +139,7 @@ let I = e => {
       }), (0, r.jsx)(h.r, {
         onOpen: b,
         onClose: O,
-        onSelect: a,
+        onSelect: o,
         questContent: f.jn.QUEST_BAR_V2,
         quest: t,
         shouldShowDisclosure: true,
@@ -151,7 +151,7 @@ let I = e => {
           children: (0, r.jsx)(l.xhG, {
             size: "md",
             color: "currentColor",
-            className: o()(E.submenuIcon, E.white)
+            className: a()(E.submenuIcon, E.white)
           })
         }))
       })]

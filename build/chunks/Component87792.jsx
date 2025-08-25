@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
-  o = require.n(Chunk512722),
+  a = require.n(Chunk512722),
   Chunk399606 = require("./399606.js"),
   Chunk481060 = require("./481060.js"),
   Chunk626135 = require("./626135.js"),
@@ -59,7 +59,7 @@ function L(e) {
 }
 let j = 65;
 
-function k() {
+function M() {
   let e = Chunk647438.useCallback(() => {
     (0, Chunk481060.ZDy)(async () => {
       let {
@@ -81,22 +81,22 @@ function k() {
   })
 }
 
-function M(e) {
+function k(e) {
   let {
     displayType: t
-  } = e, n = (0, _.PO)("family_center_activity_card"), a = i.useCallback(() => {
+  } = e, n = (0, _.PO)("family_center_activity_card"), o = i.useCallback(() => {
     (0, l.showToast)((0, l.createToast)(P.intl.string(R.default.Wu8BKy), l.ToastType.FAILURE))
   }, []), s = (0, b.Z)(), c = (0, g.ws)(t), d = (0, g.C7)(t), {
     loadMore: h,
     isMoreLoading: E
   } = (0, m.G)({
-    onError: a
+    onError: o
   }), y = (0, f.E2)(n).get(t), [O, T] = i.useState(C.iB), S = (0, p.Xi)({
     location: "family_center_activity_section_web"
   }), A = i.useCallback(() => {
     T(e => e + C.iB), h(t)
   }, [t, h]);
-  o()(y, "No text for action type: ".concat(t));
+  a()(y, "No text for action type: ".concat(t));
   let N = y.sectionHeader(d),
     D = i.useCallback(e => {
       let {
@@ -159,7 +159,7 @@ let U = () => {
         activeLinks: exports.length
       }), Chunk388032.intl.string(Chunk345909.default["Q/D/0d"])),
       i = (0, Chunk546791.Qr)(!!module),
-      a = (0, Chunk631885.Rd)(Chunk647438);
+      o = (0, Chunk631885.Rd)(Chunk647438);
     return module && exports.length > 1 ? (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "eyebrow",
       children: Chunk512722
@@ -179,18 +179,18 @@ let U = () => {
       userId: t,
       subText: n,
       avatarSize: i = l.EFr.SIZE_40,
-      hideUserTag: a = false
-    } = e, o = (0, E.I)(t);
-    return true === o ? null : (0, r.jsxs)("div", {
+      hideUserTag: o = false
+    } = e, a = (0, E.I)(t);
+    return true === a ? null : (0, r.jsxs)("div", {
       className: w.accountRow,
       children: [(0, r.jsx)(T.r, {
-        user: o,
+        user: a,
         avatarSize: i
       }), (0, r.jsxs)("div", {
         className: w.headerText,
         children: [(0, r.jsx)(S.Z, {
-          user: o,
-          hideUserTag: a
+          user: a,
+          hideUserTag: o
         }), true !== n ? (0, r.jsx)(l.Text, {
           variant: "text-sm/medium",
           color: "text-muted",
@@ -205,12 +205,12 @@ let U = () => {
       {
         selectTeenUser: n
       } = (0, Chunk985002.G)({}),
-      a = e => {
+      o = e => {
         n(e), c.default.track(N.rMx.FAMILY_CENTER_ACTION, {
           action: C.YC.SelectTeen
         })
       },
-      o = module.map(e => ({
+      a = module.map(e => ({
         label: e.id,
         value: e.id
       })),
@@ -228,27 +228,27 @@ let U = () => {
       serialize: e => e,
       select: Chunk512722,
       isSelected: e => e === t,
-      options: o
+      options: a
     })
   },
   Z = e => {
     let {
       userId: t
-    } = e, n = (0, b.Z)(), i = (0, y.mq)(C.ne.ACTIVE), a = (0, f.Qr)(!!n), o = (0, y.Rd)(a);
+    } = e, n = (0, b.Z)(), i = (0, y.mq)(C.ne.ACTIVE), o = (0, f.Qr)(!!n), a = (0, y.Rd)(o);
     return n && 1 !== i.length ? (0, r.jsx)(B, {}) : (0, r.jsx)(G, {
       userId: t,
-      subText: o
+      subText: a
     })
   },
   F = e => {
     let {
       user: t
-    } = e, n = (0, _.PO)("family_center_activity_card"), i = (0, f._p)(n), a = (0, g.kE)(), o = (0, f.t3)(), s = (0, y.Rd)(o);
+    } = e, n = (0, _.PO)("family_center_activity_card"), i = (0, f._p)(n), o = (0, g.kE)(), a = (0, f.t3)(), s = (0, y.Rd)(a);
     return (0, r.jsxs)("div", {
       className: n ? w.containerV2 : w.container,
       children: [(0, r.jsxs)("div", {
         className: w.connectedCounter,
-        children: [(0, r.jsx)(U, {}), (0, r.jsx)(k, {})]
+        children: [(0, r.jsx)(U, {}), (0, r.jsx)(M, {})]
       }), (0, r.jsxs)("div", {
         className: D.box,
         children: [(0, r.jsx)("div", {
@@ -269,9 +269,9 @@ let U = () => {
             })
           }), (0, r.jsx)("div", {
             className: w.activityOverview,
-            children: a ? i.map(e => {
+            children: o ? i.map(e => {
               let [t] = e;
-              return (0, r.jsx)(M, {
+              return (0, r.jsx)(k, {
                 displayType: t
               }, "".concat(t, "-list"))
             }) : (0, r.jsx)(A.Z, {

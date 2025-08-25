@@ -9,7 +9,7 @@ require.d(exports, {
 });
 var Chunk818083 = require("./818083.js"),
   Chunk128064 = require("./128064.js");
-let a = (0, Chunk818083.B)({
+let o = (0, Chunk818083.B)({
     kind: "user",
     id: "2025-01_sensitive_content_defaults",
     label: "Sensitive Content Defaults",
@@ -36,7 +36,7 @@ let a = (0, Chunk818083.B)({
       }
     }]
   }),
-  o = (0, Chunk818083.B)({
+  a = (0, Chunk818083.B)({
     kind: "user",
     id: "2025-01_sensitive_content_defaults_new_users",
     label: "Sensitive Content Defaults - New Users",
@@ -67,13 +67,13 @@ let a = (0, Chunk818083.B)({
 function s(e) {
   let {
     enabled: t
-  } = a.getCurrentConfig({
+  } = o.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: false
   }), {
     enabled: n
-  } = o.getCurrentConfig({
+  } = a.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: false
@@ -84,13 +84,13 @@ function s(e) {
 function l(e) {
   let {
     enabled: t
-  } = a.useExperiment({
+  } = o.useExperiment({
     location: e
   }, {
     autoTrackExposure: false
   }), {
     enabled: n
-  } = o.useExperiment({
+  } = a.useExperiment({
     location: e
   }, {
     autoTrackExposure: false
@@ -101,7 +101,7 @@ function l(e) {
 function c(e) {
   let {
     allBlur: t
-  } = a.getCurrentConfig({
+  } = o.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: false
@@ -112,7 +112,7 @@ function c(e) {
 function u(e) {
   let {
     mixed: t
-  } = a.getCurrentConfig({
+  } = o.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: false

@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
   l = require.n(Chunk512722),
   Chunk392711 = require("./392711.js"),
@@ -95,7 +95,7 @@ function ei(e) {
   return e
 }
 
-function ea(e, t) {
+function eo(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -106,8 +106,8 @@ function ea(e, t) {
   return n
 }
 
-function eo(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ea(Object(t)).forEach(function(n) {
+function ea(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : eo(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -141,14 +141,14 @@ function ed(e) {
     description: t,
     onLearnMore: n,
     renderVisual: i
-  } = e, a = eb();
+  } = e, o = eb();
   return (0, r.jsxs)("div", {
-    className: o()(V.whatYouLoseItem, {
-      [V.premiumRebrand]: a
+    className: a()(V.whatYouLoseItem, {
+      [V.premiumRebrand]: o
     }),
     children: [(0, r.jsxs)("div", {
-      className: o()(V.whatYouLoseItemLeftColumn, {
-        [V.premiumRebrand]: a
+      className: a()(V.whatYouLoseItemLeftColumn, {
+        [V.premiumRebrand]: o
       }),
       children: [(0, r.jsx)(p.Text, {
         variant: "text-md/normal",
@@ -163,8 +163,8 @@ function ed(e) {
         children: F.intl.string(F.t.hvVgAQ)
       })]
     }), (0, r.jsx)("div", {
-      className: o()(V.whatYouLoseItemRightColumn, {
-        [V.premiumRebrand]: a
+      className: a()(V.whatYouLoseItemRightColumn, {
+        [V.premiumRebrand]: o
       }),
       children: i()
     })]
@@ -176,7 +176,7 @@ function ef(e) {
   let {
     theme: n
   } = (0, P.z)(), i = (0, p.dQu)(p.TVs.colors.INTERACTIVE_ACTIVE, n).hex();
-  return (0, r.jsx)(p.SrA, eo(ei({
+  return (0, r.jsx)(p.SrA, ea(ei({
     size: "md"
   }, t), {
     color: i
@@ -187,25 +187,25 @@ function e_(e) {
   let t, {
       currentUser: n,
       premiumType: i,
-      onClose: a
+      onClose: o
     } = e,
-    o = (0, S.ZP)(n.id),
+    a = (0, S.ZP)(n.id),
     s = (0, d.e7)([b.Z], () => b.Z.useReducedMotion),
     l = i === B.p9.TIER_1,
     c = () => {
-      a(), g.Z.open(Z.oAB.PROFILE_CUSTOMIZATION), L.default.track(Z.rMx.PREMIUM_UNCANCEL_WINBACK_CTA_CLICKED, {
+      o(), g.Z.open(Z.oAB.PROFILE_CUSTOMIZATION), L.default.track(Z.rMx.PREMIUM_UNCANCEL_WINBACK_CTA_CLICKED, {
         action: "user_profile_customization"
       })
     };
-  return t = (null == o ? true : o.premiumType) === B.p9.TIER_2 ? (0, r.jsxs)(R.Z, {
+  return t = (null == a ? true : a.premiumType) === B.p9.TIER_2 ? (0, r.jsxs)(R.Z, {
     user: n,
-    displayProfile: o,
+    displayProfile: a,
     forceShowPremium: true,
     themeType: null,
     className: V.profileCard,
     children: [(0, r.jsx)(N.b, {
       user: n,
-      displayProfile: o,
+      displayProfile: a,
       avatarSize: p.EFr.SIZE_56,
       avatarOffsetX: 8,
       avatarOffsetY: 2,
@@ -256,17 +256,17 @@ function e_(e) {
 function ep(e) {
   let {
     premiumType: t
-  } = e, n = 3, i = (0, d.e7)([b.Z], () => b.Z.useReducedMotion), a = (0, y.wC)(null).filter(e => e.type === O.B.GUILD && (e.animated || null != e.guildId)).slice(0, n), o = (0, d.Wu)([I.Z], () => I.Z.stickerFrecencyWithoutFetchingLatest.frequently.slice(0, n - a.length)), s = eu().emojiStickersVisual, l = t === B.p9.TIER_1, c = () => {
-    window.open(k.Z.getArticleURL(Z.BhN.PREMIUM_DETAILS)), L.default.track(Z.rMx.PREMIUM_UNCANCEL_WINBACK_CTA_CLICKED, {
+  } = e, n = 3, i = (0, d.e7)([b.Z], () => b.Z.useReducedMotion), o = (0, y.wC)(null).filter(e => e.type === O.B.GUILD && (e.animated || null != e.guildId)).slice(0, n), a = (0, d.Wu)([I.Z], () => I.Z.stickerFrecencyWithoutFetchingLatest.frequently.slice(0, n - o.length)), s = eu().emojiStickersVisual, l = t === B.p9.TIER_1, c = () => {
+    window.open(M.Z.getArticleURL(Z.BhN.PREMIUM_DETAILS)), L.default.track(Z.rMx.PREMIUM_UNCANCEL_WINBACK_CTA_CLICKED, {
       action: "emojis_stickers"
     })
   };
   return (0, r.jsx)(ed, {
     description: l ? F.intl.format(F.t.couiKC, {}) : F.intl.format(F.t["0hUHi4"], {}),
     onLearnMore: c,
-    renderVisual: () => null != a && a.length > 0 || !l && null != o && o.length > 0 ? (0, r.jsxs)("div", {
+    renderVisual: () => null != o && o.length > 0 || !l && null != a && a.length > 0 ? (0, r.jsxs)("div", {
       className: V.emojiStickersPersonalizedContainer,
-      children: [a.map(e => null == e.id ? e.url : j.ZP.getEmojiURL({
+      children: [o.map(e => null == e.id ? e.url : j.ZP.getEmojiURL({
         id: e.id,
         animated: !i && e.animated,
         size: 58
@@ -274,7 +274,7 @@ function ep(e) {
         className: V.personalizedEmoji,
         alt: "",
         src: e
-      }) : null), l ? null : o.map(e => (0, r.jsx)(T.Z, {
+      }) : null), l ? null : a.map(e => (0, r.jsx)(T.Z, {
         disableAnimation: i,
         sticker: e,
         size: 58,
@@ -294,7 +294,7 @@ function eh(e) {
     onClose: n
   } = e;
   i.useEffect(() => h.Z.wait(() => (0, m.X8)()), []);
-  let a = (0, d.e7)([b.Z], () => b.Z.useReducedMotion),
+  let o = (0, d.e7)([b.Z], () => b.Z.useReducedMotion),
     [s, l] = (0, d.Wu)([x.Z, w.Z], () => {
       let e = x.Z.boostSlots,
         t = new Map;
@@ -326,13 +326,13 @@ function eh(e) {
         children: [(0, r.jsx)(v.Z, {
           guild: s,
           size: v.Z.Sizes.MEDIUM,
-          animate: !a,
+          animate: !o,
           className: V.boostCardIcon
         }), (0, r.jsxs)("div", {
           className: V.boostCardInfo,
           children: [(0, r.jsx)(p.Text, {
             variant: "text-md/normal",
-            className: o()(V.textSingleLineEllipsis, V.boostCardTitle),
+            className: a()(V.textSingleLineEllipsis, V.boostCardTitle),
             children: s.name
           }), (0, r.jsxs)("div", {
             className: V.boostCardSubtitle,
@@ -341,7 +341,7 @@ function eh(e) {
               className: V.boostCardGem
             }), (0, r.jsx)(p.Text, {
               variant: "text-xs/normal",
-              className: o()(V.textSingleLineEllipsis, V.boostCardCount),
+              className: a()(V.textSingleLineEllipsis, V.boostCardCount),
               children: F.intl.format(F.t["Ou/g/P"], {
                 boostCount: l
               })
@@ -376,7 +376,7 @@ function eg(e) {
   let {
     premiumType: t
   } = e, n = eu().uploadsMessagesItemVisual, i = () => {
-    window.open(k.Z.getArticleURL(Z.BhN.PREMIUM_DETAILS)), L.default.track(Z.rMx.PREMIUM_UNCANCEL_WINBACK_CTA_CLICKED, {
+    window.open(M.Z.getArticleURL(Z.BhN.PREMIUM_DETAILS)), L.default.track(Z.rMx.PREMIUM_UNCANCEL_WINBACK_CTA_CLICKED, {
       action: "msgs_uploads"
     })
   };
@@ -398,7 +398,7 @@ function ey(e) {
   let {
     currentUser: t,
     premiumType: n,
-    onClose: a,
+    onClose: o,
     isDowngrade: s = false,
     isPremiumRebrand: l = false
   } = e, c = i.useMemo(() => {
@@ -415,52 +415,52 @@ function ey(e) {
         s ? e.push((0, r.jsx)(e_, {
           currentUser: t,
           premiumType: n,
-          onClose: a
+          onClose: o
         }), (0, r.jsx)(em, {}), (0, r.jsx)(eh, {
           premiumType: n,
-          onClose: a
+          onClose: o
         })) : e.push((0, r.jsx)(e_, {
           currentUser: t,
           premiumType: n,
-          onClose: a
+          onClose: o
         }), (0, r.jsx)(ep, {
           premiumType: n
         }), (0, r.jsx)(em, {}), (0, r.jsx)(eg, {
           premiumType: n
         }), (0, r.jsx)(eh, {
           premiumType: n,
-          onClose: a
+          onClose: o
         }));
         break;
       case B.p9.TIER_2:
         s ? e.push((0, r.jsx)(e_, {
           currentUser: t,
           premiumType: n,
-          onClose: a
+          onClose: o
         }), (0, r.jsx)(eh, {
           premiumType: n,
-          onClose: a
+          onClose: o
         }), (0, r.jsx)(em, {})) : e.push((0, r.jsx)(e_, {
           currentUser: t,
           premiumType: n,
-          onClose: a
+          onClose: o
         }), (0, r.jsx)(ep, {
           premiumType: n
         }), (0, r.jsx)(eh, {
           premiumType: n,
-          onClose: a
+          onClose: o
         }), (0, r.jsx)(em, {}), (0, r.jsx)(eg, {
           premiumType: n
         }))
     }
     return e
-  }, [n, t, a, s]);
+  }, [n, t, o, s]);
   return (0, r.jsx)(eE.Provider, {
     value: {
       isPremiumRebrand: l
     },
     children: (0, r.jsx)("div", {
-      className: o()(V.whatYouLoseItemContainer, {
+      className: a()(V.whatYouLoseItemContainer, {
         [V.premiumRebrand]: l,
         [V.noMargin]: l && c.length <= 2
       }),
@@ -472,8 +472,8 @@ let eO = function(e) {
   let {
     premiumType: t,
     titleText: n,
-    subtitleText: a,
-    footer: o,
+    subtitleText: o,
+    footer: a,
     onClose: s,
     onDiscountClaim: c,
     onContinue: u,
@@ -523,7 +523,7 @@ let eO = function(e) {
         className: E,
         children: [g, (0, r.jsx)(p.Text, {
           variant: "text-md/normal",
-          children: a
+          children: o
         })]
       }), (0, r.jsx)(ey, {
         currentUser: b,
@@ -533,7 +533,7 @@ let eO = function(e) {
       })]
     }), !y && (0, r.jsx)(p.mzw, {
       "data-migration-pending": true,
-      children: o
+      children: a
     }), y && (0, r.jsx)(U.Z, {
       churnUserDiscountOffer: h,
       onDiscountClaim: c,

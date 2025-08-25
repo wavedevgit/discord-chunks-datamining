@@ -14,12 +14,12 @@ var Chunk951288 = require("./951288.js"),
 let u = Chunk647438.forwardRef(function(e, t) {
     let {
       searchContext: n,
-      navId: a
-    } = e, o = false, s = e => {
+      navId: o
+    } = e, a = false, s = e => {
       e.stopPropagation(), e.preventDefault()
     };
     return i.useImperativeHandle(t, () => ({
-      selectedIndex: o,
+      selectedIndex: a,
       focusNextOption: () => {},
       focusPreviousOption: () => {},
       selectOption: () => false,
@@ -28,13 +28,13 @@ let u = Chunk647438.forwardRef(function(e, t) {
     })), (0, r.jsx)("div", {
       onMouseDown: s,
       role: "listbox",
-      id: a,
+      id: o,
       tabIndex: false,
-      "aria-activedescendant": "".concat(a, "-").concat(o),
+      "aria-activedescendant": "".concat(o, "-").concat(a),
       className: c.container,
       children: (0, r.jsx)(l.c, {
         searchContext: n,
-        navId: a,
+        navId: o,
         index: 0,
         selected: false
       })
@@ -45,8 +45,8 @@ let u = Chunk647438.forwardRef(function(e, t) {
       searchContext: n,
       navId: i,
       onSelectedIndexChanged: l
-    } = e, [c, d] = (0, a.Wu)([o.Z], () => {
-      let e = o.Z.getState(n),
+    } = e, [c, d] = (0, o.Wu)([a.Z], () => {
+      let e = a.Z.getState(n),
         t = (0, s.BU)(e.autocompletes);
       return [e, t]
     });

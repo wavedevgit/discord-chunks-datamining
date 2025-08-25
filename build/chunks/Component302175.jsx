@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk202841 = require("./202841.js"),
   Chunk831209 = require("./831209.js"),
   Chunk494497 = require("./494497.js"),
@@ -58,7 +58,7 @@ function j(e) {
   return e
 }
 
-function k(e, t) {
+function M(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -69,8 +69,8 @@ function k(e, t) {
   return n
 }
 
-function M(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
+function k(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -79,10 +79,10 @@ function U(e) {
   let {
     guildId: t,
     powerup: n,
-    onClose: a
+    onClose: o
   } = e, {
     analyticsLocations: u
-  } = (0, h.ZP)(), b = (0, v.g1)(t, "GuildPowerupMarketingPowerupCard"), y = n.skuId === c.A$, O = (0, A.ZP)(t, n).type !== N.A3.INACTIVE, S = (0, T.Z)(t), [L, k] = i.useState(false), [U, G] = i.useState(false), B = U, Z = i.useCallback(() => {
+  } = (0, h.ZP)(), b = (0, v.g1)(t, "GuildPowerupMarketingPowerupCard"), y = n.skuId === c.A$, O = (0, A.ZP)(t, n).type !== N.A3.INACTIVE, S = (0, T.Z)(t), [L, M] = i.useState(false), [U, G] = i.useState(false), B = U, Z = i.useCallback(() => {
     let e = E.Z.getGuild(t);
     null != e && (0, m.u)({
       analyticsLocation: {
@@ -94,8 +94,8 @@ function U(e) {
       guild: e
     })
   }, [t, u]), F = i.useCallback(() => {
-    a(), (0, C.Z)(t, p.Z.GUILD_POWERUPS_MARKETING, n.skuId)
-  }, [t, n.skuId, a]), V = {
+    o(), (0, C.Z)(t, p.Z.GUILD_POWERUPS_MARKETING, n.skuId)
+  }, [t, n.skuId, o]), V = {
     tension: 400,
     friction: 30
   }, H = (0, f.q_F)({
@@ -111,10 +111,10 @@ function U(e) {
     transform: B ? "translateY(0)" : "translateY(20px)",
     config: V
   }), K = i.useCallback(e => {
-    e && k(true)
+    e && M(true)
   }, []), z = (0, _.O)(K), q = (0, I.Z)(n, U);
   return (0, r.jsxs)("div", {
-    className: o()(x.topPerksCard, x.animatedTopPerksCard, D.powerupCard, {
+    className: a()(x.topPerksCard, x.animatedTopPerksCard, D.powerupCard, {
       [x.animate]: L
     }),
     onMouseEnter: () => G(true),
@@ -125,16 +125,16 @@ function U(e) {
     }), (0, r.jsx)("div", {
       className: x.topPerksCardImageWrapper,
       children: (0, r.jsx)(s.animated.img, {
-        className: o()(x.topPerksCardImage, D.image),
+        className: a()(x.topPerksCardImage, D.image),
         src: q,
         alt: "",
         style: H
       })
     }), (0, r.jsxs)(s.animated.div, {
-      style: M(j({}, Y), {
+      style: k(j({}, Y), {
         transform: Y.y.to(e => "translateY(".concat(e, "px)"))
       }),
-      className: o()(x.contentContainer, D.contentContainer),
+      className: a()(x.contentContainer, D.contentContainer),
       children: [(0, r.jsx)(g.xm, {
         heading: n.title,
         description: n.description,
@@ -175,13 +175,13 @@ let G = 3,
   B = Chunk647438.forwardRef((e, t) => {
     let {
       guild: n,
-      onClose: a
+      onClose: o
     } = e;
     i.useEffect(() => {
       O.Z.shouldFetchCatalogForGuild(n.id) && (0, y.Sn)(n.id), O.Z.shouldFetchPowerupsForGuild(n.id) && (0, y.Fm)(n.id)
     }, [n.id]);
-    let o = (0, S.Z)(n.id),
-      s = (null != o ? o : []).slice(0, G);
+    let a = (0, S.Z)(n.id),
+      s = (null != a ? a : []).slice(0, G);
     return 0 === s.length ? null : (0, r.jsxs)("div", {
       ref: t,
       className: D.container,
@@ -198,7 +198,7 @@ let G = 3,
         children: s.map(e => (0, r.jsx)(U, {
           guildId: n.id,
           powerup: e,
-          onClose: a
+          onClose: o
         }, "guild-powerup-marketing-".concat(e.skuId)))
       })]
     })

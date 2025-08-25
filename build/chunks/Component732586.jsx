@@ -73,15 +73,15 @@ function f(e) {
     autoFocus: I
   };
   switch (u) {
-    case o.PT.SMALL:
-      t = (0, r.jsx)(a.oil, d({}, T));
+    case a.PT.SMALL:
+      t = (0, r.jsx)(o.oil, d({}, T));
       break;
-    case o.PT.PARAGRAPH:
-      t = (0, r.jsx)(a.Kx8, d({
+    case a.PT.PARAGRAPH:
+      t = (0, r.jsx)(o.Kx8, d({
         autosize: true
       }, T))
   }
-  return null != f ? (0, r.jsx)(a.xJW, {
+  return null != f ? (0, r.jsx)(o.xJW, {
     title: f,
     required: m,
     className: c.formItem,

@@ -56,8 +56,8 @@ function m(e, t) {
   if (null == e) return {};
   var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -65,8 +65,8 @@ function m(e, t) {
 function g(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let E = "\n  visibility:hidden;\n  overflow:hidden;\n  position:absolute;\n  z-index:-1000;\n  top:0;\n  right:0;\n",
@@ -92,13 +92,13 @@ class y extends(i = Chunk647438.PureComponent) {
     let {
       fontWidthEstimate: n,
       rows: i
-    } = this.props, a = null != (e = this.props.value) ? module : exports.value;
+    } = this.props, o = null != (e = this.props.value) ? module : exports.value;
     if (null != require && false === Chunk951288.indexOf("\n") && Chunk951288.length * require < .8 * exports.offsetWidth) return void this.setState({
       height: true
     });
     null == r && null != document.body && (r = document.createElement("textarea"), document.body.appendChild(r));
     let {
-      paddingSize: o,
+      paddingSize: a,
       borderSize: s,
       boxSizing: l,
       sizingStyle: c
@@ -160,7 +160,7 @@ class y extends(i = Chunk647438.PureComponent) {
       } = module,
       i = m(module, ["style", "className", "onResize"]);
     delete i.fontWidthEstimate;
-    let o = _({}, this.state, exports);
+    let a = _({}, this.state, exports);
     return (0, Chunk951288.jsx)(Chunk84735.t, {
       children: (0, Chunk951288.jsx)("textarea", h(_({}, i), {
         className: l()(require, Chunk154257.scrollbarGhostHairline),

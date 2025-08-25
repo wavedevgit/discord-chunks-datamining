@@ -193,8 +193,8 @@ let e2 = () => {
       isEligibleForQuests: tn,
       isStricterMessageRequestsEnabled: tr,
       hasLibraryApplication: ti,
-      hasTOTPEnabled: ta,
-      developerMode: to,
+      hasTOTPEnabled: to,
+      developerMode: ta,
       isAdultUser: ts,
       hasSecureFramesVerifiedUserIds: tl,
       hypeSquadRemoved: tc,
@@ -278,13 +278,13 @@ let e2 = () => {
         searchableTitles: [ez.intl.string(ez.t.cDgKtb)],
         section: eY.oAB.ACCOUNT,
         parent: eV.s6.ACCOUNT_MULTI_FACTOR_AUTHENTICATION,
-        predicate: () => !ta
+        predicate: () => !to
       },
       [eV.s6.ACCOUNT_REMOVE_2FA]: {
         searchableTitles: [ez.intl.string(ez.t["D+aE7u"])],
         section: eY.oAB.ACCOUNT,
         parent: eV.s6.ACCOUNT_MULTI_FACTOR_AUTHENTICATION,
-        predicate: () => ta
+        predicate: () => to
       },
       [eV.s6.ACCOUNT_VIEW_BACKUP_CODES]: {
         searchableTitles: [ez.intl.string(ez.t.fZSi1N)],
@@ -321,7 +321,7 @@ let e2 = () => {
         searchableTitles: [ez.intl.string(ez.t.URyqtL)],
         label: ez.intl.string(ez.t.URyqtL),
         ariaLabel: ez.intl.string(ez.t.URyqtL),
-        element: eM.Z,
+        element: ek.Z,
         predicate: () => e0
       },
       [eV.s6.GAMES_MY_GAMES]: {
@@ -350,7 +350,7 @@ let e2 = () => {
         searchableTitles: [ez.intl.string(ez.t["vi7f+v"])],
         label: ez.intl.string(ez.t["vi7f+v"]),
         ariaLabel: ez.intl.string(ez.t["vi7f+v"]),
-        element: k.Z,
+        element: M.Z,
         newIndicator: (0, r.jsx)(e8, {}),
         newIndicatorDismissibleContentTypes: [...e4()],
         notice: {
@@ -583,7 +583,7 @@ let e2 = () => {
           text: ez.intl.string(ez.t.y2b7CA),
           color: T.Z.BG_BRAND
         }),
-        newIndicatorDismissibleContentTypes: [a.z.FAMILY_CENTER_NEW_BADGE],
+        newIndicatorDismissibleContentTypes: [o.z.FAMILY_CENTER_NEW_BADGE],
         url: eY.Z5c.SETTINGS("family-center")
       },
       [eV.s6.PRIVACY_AND_SAFETY_RECEIVE_DISCORD_DATA_CATEGORY]: {
@@ -604,7 +604,7 @@ let e2 = () => {
         label: ez.intl.string(ez.t["+1h0k5"]),
         ariaLabel: ez.intl.string(ez.t["+1h0k5"]),
         element: eN.Z,
-        newIndicatorDismissibleContentTypes: [a.z.AUTH_SESSIONS_NEW],
+        newIndicatorDismissibleContentTypes: [o.z.AUTH_SESSIONS_NEW],
         impressionName: i.ImpressionNames.USER_SETTINGS_SESSIONS,
         impressionProperties: {
           source: A
@@ -620,7 +620,7 @@ let e2 = () => {
         impressionProperties: {
           source: A
         },
-        newIndicatorDismissibleContentTypes: [a.z.NEW_CRUNCHYROLL_CONNECTION],
+        newIndicatorDismissibleContentTypes: [o.z.NEW_CRUNCHYROLL_CONNECTION],
         url: eY.Z5c.SETTINGS("connections")
       },
       [eV.s6.THIRD_PARTY_ACCESS]: {
@@ -691,7 +691,7 @@ let e2 = () => {
         element: L.Z,
         icon: b ? (0, r.jsx)(s.Mgn, {
           size: "xs",
-          color: o.Z.unsafe_rawColors.YELLOW_300.css
+          color: a.Z.unsafe_rawColors.YELLOW_300.css
         }) : null
       },
       [eV.s6.SUBSCRIPTIONS_CREDITS]: {
@@ -807,7 +807,7 @@ let e2 = () => {
         searchableTitles: [ez.intl.string(ez.t.G0neg4)],
         label: ez.intl.string(ez.t.G0neg4),
         ariaLabel: ez.intl.string(ez.t.G0neg4),
-        element: eo.Z,
+        element: ea.Z,
         url: eY.Z5c.SETTINGS("accessibility")
       },
       [eV.s6.ACCESSIBILITY_HIGH_CONTRAST]: {
@@ -1568,7 +1568,7 @@ let e2 = () => {
         section: eY.oAB.ADVANCED,
         searchableTitles: [ez.intl.string(ez.t.erOqlp)],
         parent: eV.s6.SETTINGS_ADVANCED,
-        predicate: () => to
+        predicate: () => ta
       },
       [eV.s6.SETTINGS_ADVANCED_SHOW_PLAY_AGAIN]: {
         section: eY.oAB.ADVANCED,
@@ -1619,7 +1619,7 @@ let e2 = () => {
         searchableTitles: [ez.intl.string(ez.t.AVDyEh)],
         label: ez.intl.string(ez.t.AVDyEh),
         element: eb.Z,
-        predicate: () => !e0 && (0, ek.Jw)()
+        predicate: () => !e0 && (0, eM.Jw)()
       },
       [eV.s6.OVERLAY]: {
         section: eY.oAB.OVERLAY,
@@ -1982,7 +1982,7 @@ let e2 = () => {
         section: eY.oAB.TEXT_COMPONENT,
         searchableTitles: ["Text Components"],
         label: "Text Components",
-        element: ea.Z,
+        element: eo.Z,
         predicate: () => V.Z.isDeveloper
       },
       [eV.s6.INTL_TESTING]: {
@@ -2004,7 +2004,7 @@ let e2 = () => {
         searchableTitles: ["Quest Preview Tool"],
         label: "Quest Preview Tool",
         element: G.Z,
-        predicate: () => (0, M.X)({
+        predicate: () => (0, k.X)({
           location: eW.dr.QUEST_PREVIEW_TOOL
         })
       },

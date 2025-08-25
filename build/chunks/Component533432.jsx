@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk524825 = require("./524825.js"),
   Chunk260866 = require("./260866.js"),
   Chunk481060 = require("./481060.js"),
@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
 let m = Chunk647438.forwardRef(function(e, t) {
     let {
       emojiListRef: n,
-      gridNavigatorId: a,
+      gridNavigatorId: o,
       isFullRow: m,
       onKeyDown: g,
       onFocus: E,
@@ -56,15 +56,15 @@ let m = Chunk647438.forwardRef(function(e, t) {
       onKeyDown: N,
       onFocus: E,
       onChange: A,
-      className: o()(y, {
+      className: a()(y, {
         [h.searchBarFullRow]: m
       }),
       inputProps: {
         "aria-label": p.intl.string(p.t.tCauZW),
         "aria-haspopup": "grid",
-        "aria-controls": a,
+        "aria-controls": o,
         "aria-expanded": true,
-        "aria-activedescendant": (0, l.NE)(a, T.columnIndex, T.rowIndex)
+        "aria-activedescendant": (0, l.NE)(o, T.columnIndex, T.rowIndex)
       }
     })
   }),

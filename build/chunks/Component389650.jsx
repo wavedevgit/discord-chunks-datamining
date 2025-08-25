@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   l = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
@@ -120,7 +120,7 @@ class H extends Chunk647438.PureComponent {
     } = this.props.keybind;
     return (0, Chunk951288.jsxs)(Chunk600164.Z, {
       direction: Chunk600164.Z.Direction.VERTICAL,
-      className: o()(Chunk894462.keybindGroup, Chunk620842.card),
+      className: a()(Chunk894462.keybindGroup, Chunk620842.card),
       children: [!module && (0, Chunk951288.jsx)(Chunk225433.Z, {
         "aria-label": Chunk388032.intl.string(Chunk388032.t.qEHmmJ),
         className: Chunk894462.removeKeybind,
@@ -220,7 +220,7 @@ class Y extends Chunk647438.PureComponent {
     }).separateKeybind ? [{
       value: Chunk981631.kg4.VAD_PRIORITY,
       label: Chunk388032.intl.string(Chunk388032.t["49d6NT"])
-    }] : [], a = [{
+    }] : [], o = [{
       value: Chunk981631.kg4.UNASSIGNED,
       label: Chunk388032.intl.string(Chunk388032.t["0Uh57+"])
     }, {
@@ -373,21 +373,21 @@ class Y extends Chunk647438.PureComponent {
           children: e => (0, r.jsx)(r.Fragment, {
             children: e.map((e, t) => {
               let n = (0, g.UD)(e),
-                a = (0, g.U6)(e),
+                o = (0, g.U6)(e),
                 s = V[e];
               return (0, r.jsxs)("div", {
                 className: j.defaultKeybindGroup,
                 children: [(0, r.jsx)(f.X6q, {
                   variant: "heading-deprecated-12/semibold",
-                  className: o()(j.defaultKeybindGroupHeader, {
-                    [j.defaultKeybindGroupWithDescription]: null != a
+                  className: a()(j.defaultKeybindGroupHeader, {
+                    [j.defaultKeybindGroupWithDescription]: null != o
                   }),
                   children: n
-                }), null != a && (0, r.jsx)(f.Text, {
+                }), null != o && (0, r.jsx)(f.Text, {
                   color: "header-secondary",
                   className: j.defaultKeybindGroupDescription,
                   variant: "text-sm/normal",
-                  children: a
+                  children: o
                 }), (0, r.jsx)(f.$i$, {}), s.map(e => (0, r.jsxs)(i.Fragment, {
                   children: [(0, r.jsxs)("div", {
                     className: j.defaultKeybind,

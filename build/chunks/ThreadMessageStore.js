@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => X
 }), require("./388685.js");
 var r, Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk786761 = require("./786761.js"),
@@ -61,14 +61,14 @@ let O = new Set,
   I = {};
 
 function T(e) {
-  v = a().omitBy(v, t => {
+  v = o().omitBy(v, t => {
     let n = t.guildId === e;
     return n && delete I[t.parentId], n
   })
 }
 
 function S(e) {
-  v = a().omitBy(v, t => t.parentId === e), delete I[e]
+  v = o().omitBy(v, t => t.parentId === e), delete I[e]
 }
 
 function A(e, t) {
@@ -147,14 +147,14 @@ function j(e) {
   T(t.id)
 }
 
-function k(e) {
+function M(e) {
   let {
     channel: t
   } = e;
   P(t)
 }
 
-function M(e) {
+function k(e) {
   let {
     threads: t,
     mostRecentMessages: n
@@ -213,9 +213,9 @@ function F(e) {
     sendMessageOptions: i
   } = e;
   if (n || r || null != i) returnfalse;
-  let a = f.Z.getChannel(t.channel_id);
-  if (null == a || !c.Ec.has(a.type) || !V(a, t)) returnfalse;
-  A(a, e => {
+  let o = f.Z.getChannel(t.channel_id);
+  if (null == o || !c.Ec.has(o.type) || !V(o, t)) returnfalse;
+  A(o, e => {
     e.count = Math.min(e.count + 1, h.M3), e.mostRecentRawMessage = t, e.mostRecentMessage = null
   })
 }
@@ -242,11 +242,11 @@ function Y(e) {
   } = e, r = v[n];
   if (null == r) returnfalse;
   let i = p.default.castChannelIdAsMessageId(n) !== t,
-    a = !O.has(t);
+    o = !O.has(t);
   C(r, e => {
     var n;
     let r = null != (n = e.mostRecentRawMessage) ? n : e.mostRecentMessage;
-    null != r && r.id === t && (e.mostRecentMessage = null, e.mostRecentRawMessage = null), e.count = i && a ? Math.max(e.count - 1, 0) : e.count, O.add(t)
+    null != r && r.id === t && (e.mostRecentMessage = null, e.mostRecentRawMessage = null), e.count = i && o ? Math.max(e.count - 1, 0) : e.count, O.add(t)
   })
 }
 
@@ -320,9 +320,9 @@ let X = new q(Chunk570140.Z, {
   OVERLAY_INITIALIZE: x,
   GUILD_CREATE: L,
   GUILD_DELETE: j,
-  THREAD_CREATE: k,
-  THREAD_UPDATE: k,
-  THREAD_LIST_SYNC: M,
+  THREAD_CREATE: M,
+  THREAD_UPDATE: M,
+  THREAD_LIST_SYNC: k,
   LOAD_THREADS_SUCCESS: U,
   LOAD_ARCHIVED_THREADS_SUCCESS: U,
   RELATIONSHIP_ADD: z,

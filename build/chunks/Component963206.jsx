@@ -17,12 +17,12 @@ let s = (e, t, n) => () => {
     width: u,
     height: d
   } = s;
-  return (0, r.jsx)(a.Z, {
+  return (0, r.jsx)(o.Z, {
     width: u,
     height: d,
     src: null != c && "" !== c ? c : l,
     url: null != e && "" !== e ? e : null != c && "" !== c ? c : l,
     format: null != n ? i.EO.VIDEO : i.EO.IMAGE,
-    className: o.gifFavoriteButton
+    className: a.gifFavoriteButton
   })
 }

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk689079 = require("./689079.js"),
   Chunk964149 = require("./964149.js");
@@ -38,8 +38,8 @@ function d(e, t) {
   if (null == e) return {};
   var n, r, i = f(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -47,16 +47,16 @@ function d(e, t) {
 function f(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let _ = e => {
   switch (e.id) {
     case s.bi.BUILT_IN:
-      return o.SsZ;
+      return a.SsZ;
     case s.bi.FRECENCY:
-      return o.T39;
+      return a.T39;
     default:
       return
   }
@@ -67,20 +67,20 @@ function p(e) {
     section: t,
     className: n,
     width: i,
-    height: o,
+    height: a,
     padding: s,
     isSelected: c,
     selectable: f = false
   } = e, p = d(e, ["section", "className", "width", "height", "padding", "isSelected", "selectable"]);
   let h = _(t);
   return (0, r.jsx)("div", {
-    className: a()(l.wrapper, n, {
+    className: o()(l.wrapper, n, {
       [l.selectable]: f,
       [l.selected]: f && c
     }),
     style: {
       width: i,
-      height: o,
+      height: a,
       padding: null != s ? s : 0
     },
     children: null != h ? (0, r.jsx)(h, u({
@@ -88,7 +88,7 @@ function p(e) {
       color: "currentColor",
       size: "custom",
       width: i,
-      height: o
+      height: a
     }, p)) : null
   })
 }

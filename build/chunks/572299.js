@@ -7,15 +7,15 @@ require.d(exports, {
 var Chunk101284 = require("./101284.js"),
   Chunk622916 = require("./622916.js"),
   Chunk263449 = require("./263449.js");
-let o = 100;
+let a = 100;
 
 function s(e, t) {
-  let n = (0, a.s3)(),
-    s = (0, a.aF)();
+  let n = (0, o.s3)(),
+    s = (0, o.aF)();
   if (!n) return;
   let {
     beforeBreadcrumb: l = null,
-    maxBreadcrumbs: c = o
+    maxBreadcrumbs: c = a
   } = n.getOptions();
   if (c <= 0) return;
   let u = {

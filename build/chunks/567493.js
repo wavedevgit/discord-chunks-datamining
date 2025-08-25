@@ -21,10 +21,10 @@ let _ = (e, t) => {
     r = t.filter(e => null != e.activity.application_id && f.yh.includes(e.activity.application_id));
   if (n.length !== r.length) returnfalse;
   let i = new Set(n.map(e => "".concat(e.userId, "-").concat(e.activity.session_id, "-").concat(e.activity.application_id))),
-    a = new Set(r.map(e => "".concat(e.userId, "-").concat(e.activity.session_id, "-").concat(e.activity.application_id)));
-  if (i.size !== a.size) returnfalse;
+    o = new Set(r.map(e => "".concat(e.userId, "-").concat(e.activity.session_id, "-").concat(e.activity.application_id)));
+  if (i.size !== o.size) returnfalse;
   for (let e of i)
-    if (!a.has(e)) returnfalse;
+    if (!o.has(e)) returnfalse;
   returntrue
 };
 
@@ -45,14 +45,14 @@ function h(e, t) {
         id: u.default.fromTimestamp(f),
         author_id: d,
         author_type: i.i.USER,
-        content_type: a.s.PLAYED_GAME,
+        content_type: o.s.PLAYED_GAME,
         participants: [d],
         expires_at: new Date(Date.now() + 3e5).toISOString(),
         traits: [{
-          type: o.N.IS_LIVE,
+          type: a.N.IS_LIVE,
           is_live: true
         }, {
-          type: o.N.DURATION_SECONDS,
+          type: a.N.DURATION_SECONDS,
           duration_seconds: Math.floor((Date.now() - f) / 1e3)
         }],
         extra: {

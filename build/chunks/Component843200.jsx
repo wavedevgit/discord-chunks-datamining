@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
   s = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
@@ -44,7 +44,7 @@ function g(e) {
   let {
     unclaimedNotice: t,
     unverifiedNotice: i,
-    className: o
+    className: a
   } = e, {
     isClaimed: h,
     isVerified: g,
@@ -112,7 +112,7 @@ function g(e) {
     })
   }
   return h && g ? null : (0, r.jsx)(c.Zbd, {
-    className: a()(p.wrapper, o),
+    className: o()(p.wrapper, a),
     children: (0, r.jsxs)(u.Z, {
       align: u.Z.Align.CENTER,
       children: [(0, r.jsx)(u.Z.Child, {

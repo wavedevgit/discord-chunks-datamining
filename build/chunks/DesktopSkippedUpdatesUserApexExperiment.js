@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk818083 = require("./818083.js"),
   Chunk427164 = require("./427164.js"),
   Chunk846573 = require("./846573.js");
-let o = (0, Chunk818083.B)({
+let a = (0, Chunk818083.B)({
     kind: "user",
     id: "2025-07_desktop_skipped_updates",
     label: "Optional desktop updates at startup",
@@ -40,14 +40,14 @@ function l(e) {
     location: t
   } = e, {
     isInHoldout: n
-  } = a.X.getCurrentConfig({
+  } = o.X.getCurrentConfig({
     location: t
   }, {
     autoTrackExposure: true
   });
   return n || s.getConfig({
     location: t
-  }), o.getCurrentConfig({
+  }), a.getCurrentConfig({
     location: t
   }, {
     disable: n,

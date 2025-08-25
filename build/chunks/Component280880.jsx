@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk357156 = require("./357156.js"),
   Chunk343747 = require("./343747.jsx"),
@@ -58,8 +58,8 @@ function m(e, t) {
   if (null == e) return {};
   var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -67,8 +67,8 @@ function m(e, t) {
 function g(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -81,25 +81,25 @@ function E(e) {
   let {
     canCreateExpressions: p
   } = (0, s.XJ)(t);
-  return (0, r.jsx)(o.ua7, {
+  return (0, r.jsx)(a.ua7, {
     text: c.intl.string(c.t["fHo+z8"]),
     shouldShow: !p,
     children: e => (0, r.jsx)("li", h(_({
       className: u.soundButtonWrapper
     }, e), {
-      children: (0, r.jsxs)(o.kL8, h(_({}, f), {
+      children: (0, r.jsxs)(a.kL8, h(_({}, f), {
         "aria-label": c.intl.formatToPlainString(c.t.c1qVYm, {
           guildName: t.name
         }),
-        className: a()(d.soundAddButton, {
+        className: o()(d.soundAddButton, {
           [d.focused]: n,
           [d.disabled]: !p
         }),
         onClick: () => null != i ? i() : (0, l.Z)(t.id),
-        children: [(0, r.jsx)(o.qJs, {
+        children: [(0, r.jsx)(a.qJs, {
           size: "sm",
           color: "currentColor"
-        }), (0, r.jsx)(o.Text, {
+        }), (0, r.jsx)(a.Text, {
           variant: "text-xs/semibold",
           color: p ? "currentColor" : "text-muted",
           children: c.intl.string(c.t["8Fu/S0"])

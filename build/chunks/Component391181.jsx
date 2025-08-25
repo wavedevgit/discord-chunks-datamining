@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk239091 = require("./239091.js"),
   Chunk166081 = require("./166081.js"),
@@ -64,8 +64,8 @@ function O(e) {
     showEditProduct: t,
     showUnpublishProduct: n,
     showCopyLink: i,
-    showTestDownload: a,
-    showDeleteProduct: o,
+    showTestDownload: o,
+    showDeleteProduct: a,
     showReportProduct: l,
     onEditProduct: c,
     onUnpublishProduct: u,
@@ -93,7 +93,7 @@ function O(e) {
           label: p.intl.string(p.t.XR26ur),
           icon: s.xPt,
           action: f
-        }), a && (0, r.jsx)(s.sNh, {
+        }), o && (0, r.jsx)(s.sNh, {
           id: "guild-product-test-download",
           label: p.intl.string(p.t.aXoI6e),
           icon: s._8t,
@@ -104,7 +104,7 @@ function O(e) {
           id: "guild-product-unpublish",
           label: p.intl.string(p.t.QrkMlJ),
           action: u
-        }), o && (0, r.jsx)(s.sNh, {
+        }), a && (0, r.jsx)(s.sNh, {
           id: "guild-product-delete",
           label: p.intl.string(p.t.zWjqvL),
           color: "danger",
@@ -126,8 +126,8 @@ function v(e) {
   let {
     product: t,
     guildId: n,
-    showEditProduct: a,
-    showUnpublishProduct: o,
+    showEditProduct: o,
+    showUnpublishProduct: a,
     showTestDownload: l,
     showCopyLink: c,
     showDeleteProduct: u,
@@ -152,8 +152,8 @@ function v(e) {
       renderPopout: e => (0, r.jsx)(O, b(g({}, e), {
         guildId: n,
         productId: t.id,
-        showEditProduct: a,
-        showUnpublishProduct: o,
+        showEditProduct: o,
+        showUnpublishProduct: a,
         showCopyLink: c,
         showTestDownload: l,
         showReportProduct: d,
@@ -194,7 +194,7 @@ function I(e) {
     product: t,
     guildId: n,
     onEditProduct: i,
-    onUnpublishProduct: a,
+    onUnpublishProduct: o,
     onDeleteProduct: m,
     onCopyProductLink: E,
     onTestDownload: I,
@@ -213,7 +213,7 @@ function I(e) {
       showDeleteProduct: true,
       showReportProduct: false,
       onEditProduct: i,
-      onUnpublishProduct: a,
+      onUnpublishProduct: o,
       onDeleteProduct: m,
       onCopyLink: E,
       onTestDownload: I,
@@ -222,7 +222,7 @@ function I(e) {
   }
   return (0, r.jsxs)(s.kL8, {
     tag: "article",
-    className: o()(h.productCardClickable, h.productCard, {
+    className: a()(h.productCardClickable, h.productCard, {
       [h.disabled]: T
     }),
     onClick: T ? true : i,
@@ -273,7 +273,7 @@ function I(e) {
         showDeleteProduct: true,
         showReportProduct: false,
         onEditProduct: i,
-        onUnpublishProduct: a,
+        onUnpublishProduct: o,
         onDeleteProduct: m,
         onCopyProductLink: E,
         onTestDownload: I,

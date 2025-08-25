@@ -62,7 +62,7 @@ function v(e, t) {
 let I = 300,
   T = 2e3,
   S = e => "AudioContextSettingsMigrated:".concat(e),
-  A = e => e === E.Yn.STREAM ? a.h.STREAM : a.h.USER;
+  A = e => e === E.Yn.STREAM ? o.h.STREAM : o.h.USER;
 
 function C(e, t, n) {
   return e[t].volume !== A(n) || e[t].muted || e[t].soundboardMuted || delete e[t], e
@@ -76,9 +76,9 @@ function N(e) {
       let [n, {
         modifiedAt: r
       }] = e, [i, {
-        modifiedAt: a
+        modifiedAt: o
       }] = t;
-      return Number(r) - Number(a)
+      return Number(r) - Number(o)
     }),
     i = n - I;
   for (let t = 0; t < i; t++) {
@@ -88,7 +88,7 @@ function N(e) {
 }
 
 function R(e) {
-  return o.JY.create({
+  return a.JY.create({
     muted: false,
     volume: A(e)
   })
@@ -100,25 +100,25 @@ function P() {
     for (let [n, r] of Object.entries(_.Z.getState().settingsByContext)) {
       let i = (0, m.z)(n);
       if (null == i) continue;
-      let a = e[i],
-        o = String(Date.now()),
+      let o = e[i],
+        a = String(Date.now()),
         s = {};
       for (let [e, t] of Object.entries(r.localMutes)) s[e] = {
         muted: t,
         volume: A(n),
-        modifiedAt: o,
+        modifiedAt: a,
         soundboardMuted: false
       };
       for (let [e, t] of Object.entries(r.localVolumes)) s[e] = v(y({
         muted: false,
-        modifiedAt: o
+        modifiedAt: a
       }, s[e]), {
         volume: (0, m.r)(t, n)
       });
-      let l = Object.keys(a).length;
+      let l = Object.keys(o).length;
       for (let [e, [n, r]] of Object.entries(s).entries()) {
         if (I - l - (e + 1) <= 0) break;
-        null == a[n] && (t = true, a[n] = r)
+        null == o[n] && (t = true, o[n] = r)
       }
     }
     return s.K.set(S(f.default.getId()), true), t
@@ -127,11 +127,11 @@ function P() {
 
 function w(e, t, n, r) {
   var i;
-  let a = !(arguments.length > 4) || true === arguments[4] || arguments[4],
-    o = (0, m.z)(n);
-  if (null == o) returnfalse;
-  let s = e[o];
-  return s[t] = null != (i = s[t]) ? i : R(n), r(s[t]), s[t].modifiedAt = String(Date.now()), a && C(s, t, n), N(s), true
+  let o = !(arguments.length > 4) || true === arguments[4] || arguments[4],
+    a = (0, m.z)(n);
+  if (null == a) returnfalse;
+  let s = e[a];
+  return s[t] = null != (i = s[t]) ? i : R(n), r(s[t]), s[t].modifiedAt = String(Date.now()), o && C(s, t, n), N(s), true
 }
 
 function D() {
@@ -153,12 +153,12 @@ function j(e, t, n) {
   }), x.cancel(), U()
 }
 
-function k(e, t, n) {
+function M(e, t, n) {
   (0, h.RF)(e, t, {
     soundboardMuted: n
   }), x.cancel(), U()
 }
-let M = i().debounce(Chunk254238.On, 500, {
+let k = i().debounce(Chunk254238.On, 500, {
   maxWait: 500
 });
 
@@ -166,10 +166,10 @@ function U() {
   Chunk675478.hW.updateAsync("audioContextSettings", e => {
     let t = false;
     return (0, h.$E)((n, r, i) => {
-      let a = w(e, r, n, e => {
+      let o = w(e, r, n, e => {
         Object.assign(e, i)
       });
-      t = t || a
+      t = t || o
     }), t
   }, Chunk675478.fy.INFREQUENT_USER_ACTION)
 }
@@ -182,7 +182,7 @@ function G(e) {
   } = e;
   if (n === f.default.getId()) return;
   let i = u.Z.getRemoteSessionId();
-  null != i && M(i, n, t, {
+  null != i && k(i, n, t, {
     muted: _.Z.isLocalMute(n, t),
     volume: r
   }), L(t, n, r)
@@ -201,7 +201,7 @@ function Z(e) {
     context: t,
     userId: n
   } = e;
-  n !== f.default.getId() && k(t, n, d.Z.isLocalSoundboardMuted(n))
+  n !== f.default.getId() && M(t, n, d.Z.isLocalSoundboardMuted(n))
 }
 class F extends Chunk147913.Z {
   constructor(...e) {

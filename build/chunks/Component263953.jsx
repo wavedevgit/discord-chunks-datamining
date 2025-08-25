@@ -164,8 +164,8 @@ class g extends(r = Chunk647438.PureComponent) {
     } = this.props, {
       animationProgress: r,
       animationState: i,
-      baseHeight: a,
-      targetHeight: o
+      baseHeight: o,
+      targetHeight: a
     } = this.state, s = null != (e = this.props.sideMargin) ? module : 0, l = null != (t = this.props.verticalMargin) ? exports : 0, u = 1 === i, d = 0 === i;
     return m(p({}, {
       overflow: Chunk186325 || Chunk215569 ? "hidden" : "visible",
@@ -224,7 +224,7 @@ class g extends(r = Chunk647438.PureComponent) {
       targetHeight: 0,
       baseHeight: 0,
       animationState: null
-    }), _(this, "direction", this.props.getDirection()), _(this, "_measureRef", o.createRef())
+    }), _(this, "direction", this.props.getDirection()), _(this, "_measureRef", a.createRef())
   }
 }
 _(g, "contextType", Chunk186325.S), _(g, "defaultProps", {
@@ -251,7 +251,7 @@ class E extends(i = Chunk647438.Component) {
       className: n,
       innerClassName: r,
       animatedNodeClassName: i,
-      staticClassName: o,
+      staticClassName: a,
       sideMargin: s,
       verticalMargin: c,
       children: d,

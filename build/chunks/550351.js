@@ -22,7 +22,7 @@ function p(e) {
     let {
       ownerId: t
     } = i.my(e);
-    if (t !== o.default.getId()) {
+    if (t !== a.default.getId()) {
       let e = s.Z.getActivities(t).find(e => e.type === f.IIU.PLAYING);
       return {
         sourceName: null == e ? true : e.name,
@@ -30,7 +30,7 @@ function p(e) {
       }
     }
   }
-  let l = a.Z.getStreamerActiveStreamMetadata(),
+  let l = o.Z.getStreamerActiveStreamMetadata(),
     c = null == l ? true : l.pid,
     u = null != l ? null != c ? r.ZP.getGameForPID(c) : null : r.ZP.getVisibleGame();
   return {
@@ -43,7 +43,7 @@ function h(e) {
   let {
     sourceName: t,
     sourceApplicationId: n
-  } = p(e), r = l.Z.getChannelId(), i = [o.default.getId()];
+  } = p(e), r = l.Z.getChannelId(), i = [a.default.getId()];
   return null != r && (i = Object.keys(c.Z.getVoiceStatesForChannel(r))), {
     id: u.default.fromTimestamp(Date.now()),
     version: d.Bg,

@@ -9,7 +9,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk657707 = require("./657707.js"),
   Chunk481060 = require("./481060.js"),
   Chunk596454 = require("./596454.jsx"),
@@ -67,8 +67,8 @@ function T(e, t) {
   if (null == e) return {};
   var n, r, i = S(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -76,8 +76,8 @@ function T(e, t) {
 function S(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -101,7 +101,7 @@ function C(e) {
   let {
     message: t,
     className: n
-  } = e, [a, s] = i.useState(false), u = t.getChannelId(), d = (0, m.xE)(t.content), f = i.useCallback(() => {
+  } = e, [o, s] = i.useState(false), u = t.getChannelId(), d = (0, m.xE)(t.content), f = i.useCallback(() => {
     null != d && (0, _.rU)(u, t.id, {
       id: d.id,
       name: d.name
@@ -124,7 +124,7 @@ function C(e) {
         onMouseLeave: _
       } = e, p = T(e, ["onMouseEnter", "onMouseLeave"]);
       return (0, r.jsx)(l.P3F, I(O({}, p), {
-        className: o()(n, b.ctaReactionButton),
+        className: a()(n, b.ctaReactionButton),
         onClick: f,
         onMouseEnter: () => {
           s(true), null == i || i()
@@ -142,7 +142,7 @@ function C(e) {
               size: "default",
               emojiId: d.id,
               animated: d.animated,
-              isInteracting: a,
+              isInteracting: o,
               channelId: u,
               messageId: t.id,
               className: b.ctaEmoji
@@ -158,9 +158,9 @@ function N(e) {
   var t;
   let {
     message: n,
-    compact: a,
-    usernameHook: o
-  } = e, c = n.content, [_, y] = i.useState(false), O = (0, u.ZP)(n), v = o(O), I = (0, m.xE)(c), T = i.useCallback(() => {
+    compact: o,
+    usernameHook: a
+  } = e, c = n.content, [_, y] = i.useState(false), O = (0, u.ZP)(n), v = a(O), I = (0, m.xE)(c), T = i.useCallback(() => {
     null != I && h.S.dispatchToLastSubscribed(g.CkL.INSERT_TEXT, {
       plainText: ":".concat(I.name, ":"),
       rawText: c,
@@ -186,7 +186,7 @@ function N(e) {
     }),
     iconContainerClassName: b.iconContainer,
     timestamp: n.timestamp,
-    compact: a,
+    compact: o,
     contentClassName: b.content,
     children: (0, r.jsx)("span", {
       children: null == I || null == S ? E.intl.format(E.t.k6Jc9f, {

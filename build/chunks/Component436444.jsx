@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk202841 = require("./202841.js"),
   Chunk481060 = require("./481060.js"),
   Chunk906732 = require("./906732.jsx"),
@@ -93,7 +93,7 @@ let T = {
       totalAvailableBoostsCount: N
     } = e, {
       analyticsLocations: R
-    } = (0, l.ZP)(), P = (0, c.Z)(), w = p.oCV[A], D = w - N, x = A <= C || b, L = x && A <= i.premiumTier, j = x && A < i.premiumTier, k = x && A === i.premiumTier, M = i.premiumTier < A && N >= w, {
+    } = (0, l.ZP)(), P = (0, c.Z)(), w = p.oCV[A], D = w - N, x = A <= C || b, L = x && A <= i.premiumTier, j = x && A < i.premiumTier, M = x && A === i.premiumTier, k = i.premiumTier < A && N >= w, {
       scaleFactor: U
     } = (0, s.q_F)({
       from: {
@@ -107,13 +107,13 @@ let T = {
         friction: 12
       }
     }), G = (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(o.animated.div, {
+      children: [(0, r.jsx)(a.animated.div, {
         className: E.progressBarMarkerIndicator,
         style: {
           transform: U.to(e => "translate(-50%, -50%) scale(".concat(e, ")"))
         }
-      }), A !== p.Eu4.NONE ? M ? (0, r.jsx)(s.mTd, {
-        className: a()(E.boostedTierIcon, E.disabledIndicator),
+      }), A !== p.Eu4.NONE ? k ? (0, r.jsx)(s.mTd, {
+        className: o()(E.boostedTierIcon, E.disabledIndicator),
         size: "xxs",
         color: "currentColor"
       }) : (0, r.jsx)(u.Z, {
@@ -124,7 +124,7 @@ let T = {
     });
 
     function B() {
-      x && (M || (0, f.u)({
+      x && (k || (0, f.u)({
         analyticsLocations: R,
         analyticsLocation: {
           page: p.ZY5.PREMIUM_GUILD_USER_MODAL,
@@ -147,7 +147,7 @@ let T = {
         tierName: (0, d.nW)(A, {
           useLevels: false
         })
-      }) : M ? m.intl.formatToPlainString(g.default["9CtPjo"], {
+      }) : k ? m.intl.formatToPlainString(g.default["9CtPjo"], {
         perk: (0, d.nW)(A, {
           useLevels: false
         })
@@ -159,11 +159,11 @@ let T = {
       }),
       shouldShow: A !== p.Eu4.NONE,
       children: e => (0, r.jsxs)(F, v(y({
-        className: a()(E.progressBarMarker, {
+        className: o()(E.progressBarMarker, {
           [E.progressBarMarkerUnlocked]: L,
           [E.progressBarMarkerLocked]: Z,
           [E.progressBarMarkerLower]: j,
-          [E.progressBarMarkerCurrent]: k
+          [E.progressBarMarkerCurrent]: M
         }),
         style: {
           left: "".concat(100 * T[A], "%")

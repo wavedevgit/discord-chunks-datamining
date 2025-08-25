@@ -59,8 +59,8 @@ function E(e, t) {
   if (null == e) return {};
   var n, r, i = b(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -68,8 +68,8 @@ function E(e, t) {
 function b(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let y = Chunk647438.createContext(null);
@@ -78,7 +78,7 @@ function O(e) {
   var {
     children: t,
     title: n,
-    body: o,
+    body: a,
     asset: s,
     targetElementRef: l,
     onAnimationRest: c,
@@ -97,15 +97,15 @@ function O(e) {
         children: s
       }), (0, r.jsxs)("div", {
         className: _.textContent,
-        children: [(0, r.jsx)(a.Text, {
+        children: [(0, r.jsx)(o.Text, {
           variant: "text-sm/bold",
           children: n
-        }), (0, r.jsx)(a.Text, {
+        }), (0, r.jsx)(o.Text, {
           variant: "text-sm/medium",
-          children: o
+          children: a
         })]
       })]
-    }), [s, n, o]),
+    }), [s, n, a]),
     {
       isVisible: C,
       isRendered: N,
@@ -132,8 +132,8 @@ function O(e) {
       layerContext: O,
       onAnimationRest: c,
       handleExitComplete: P,
-      positionKey: "".concat(n, "|").concat(o)
-    }), [R, I.triggerRef, I.targetElementRef, S, C, N, A, d, p, m, b, O, c, P, n, o]);
+      positionKey: "".concat(n, "|").concat(a)
+    }), [R, I.triggerRef, I.targetElementRef, S, C, N, A, d, p, m, b, O, c, P, n, a]);
   return (0, r.jsxs)(y.Provider, {
     value: w,
     children: [t, (0, r.jsx)(T, {})]
@@ -145,19 +145,19 @@ function v(e) {
     strategy: t = "clone",
     tag: n = "div",
     children: r
-  } = e, a = i.useContext(y);
-  if (null == a) throw Error("RichTooltipTrigger must be used within RichTooltipRoot");
+  } = e, o = i.useContext(y);
+  if (null == o) throw Error("RichTooltipTrigger must be used within RichTooltipRoot");
   if ("clone" === t) {
     if (!i.isValidElement(r)) return null;
     let e = r;
-    return (0, c.C9)(e, a.triggerProps, a.tooltipId, a.triggerRef)
+    return (0, c.C9)(e, o.triggerProps, o.tooltipId, o.triggerRef)
   }
-  let o = g(h({}, a.triggerProps), {
-    onFocus: (0, c.tS)(a.triggerProps.onFocus, e => {
+  let a = g(h({}, o.triggerProps), {
+    onFocus: (0, c.tS)(o.triggerProps.onFocus, e => {
       let t = e.target;
       if (null != t) {
         var n;
-        let e = (0, c.QV)(null != (n = t.getAttribute("aria-describedby")) ? n : true, a.tooltipId);
+        let e = (0, c.QV)(null != (n = t.getAttribute("aria-describedby")) ? n : true, o.tooltipId);
         t.setAttribute("aria-describedby", e)
       }
     })
@@ -165,8 +165,8 @@ function v(e) {
   return (0, c.FX)({
     tag: n,
     children: r,
-    triggerHandlers: o,
-    triggerRef: a.triggerRef
+    triggerHandlers: a,
+    triggerRef: o.triggerRef
   })
 }
 
@@ -174,15 +174,15 @@ function I(e) {
   var {
     children: t,
     asContainer: n = false,
-    element: a = "div"
-  } = e, o = E(e, ["children", "asContainer", "element"]);
-  return n ? (0, r.jsx)(O, g(h({}, o), {
+    element: o = "div"
+  } = e, a = E(e, ["children", "asContainer", "element"]);
+  return n ? (0, r.jsx)(O, g(h({}, a), {
     children: (0, r.jsx)(v, {
       strategy: "wrap",
-      tag: a,
+      tag: o,
       children: t
     })
-  })) : i.isValidElement(t) ? (0, r.jsx)(O, g(h({}, o), {
+  })) : i.isValidElement(t) ? (0, r.jsx)(O, g(h({}, a), {
     children: (0, r.jsx)(v, {
       strategy: "clone",
       children: t
@@ -196,7 +196,7 @@ function T() {
   if (null == exports) throw Error("RichTooltipContent must be used within RichTooltipRoot");
   let {
     isVisible: n,
-    isRendered: a,
+    isRendered: o,
     handleExitComplete: u,
     onAnimationRest: f,
     tooltipId: _,
@@ -218,7 +218,7 @@ function T() {
     isRichTooltip: true,
     children: (0, r.jsx)(s.N, {
       isVisible: n,
-      isRendered: a,
+      isRendered: o,
       targetElementRef: p,
       id: _,
       content: h,
@@ -226,7 +226,7 @@ function T() {
       align: g,
       spacing: E,
       caretConfig: b,
-      layerContext: null != O ? O : o.nz,
+      layerContext: null != O ? O : a.nz,
       animationStyle: e,
       positionKey: v,
       "data-mana-component": "rich-tooltip"

@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk572995 = require("./572995.js"),
   Chunk42373 = require("./42373.jsx"),
@@ -60,14 +60,14 @@ function g(e) {
     className: t,
     boxLayout: n,
     title: i,
-    shouldLoadVideo: a,
+    shouldLoadVideo: o,
     isReducedMotion: u,
     includeSideGradient: _ = false,
     startLeftAligned: h = false,
     enablePremiumBrandRefreshDesign: g
   } = e, E = g ? f : d;
   return (0, r.jsxs)("div", {
-    className: o()(E.boxBackdrop, t),
+    className: a()(E.boxBackdrop, t),
     children: [(0, r.jsx)(s.X6q, {
       className: E.bentoSectionHeader,
       variant: "display-md",
@@ -92,7 +92,7 @@ function g(e) {
             index: t + +!!h
           }, e), {
             size: n,
-            shouldLoadVideo: a,
+            shouldLoadVideo: o,
             isReducedMotion: u,
             enablePremiumBrandRefreshDesign: g
           }), e.name))

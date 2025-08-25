@@ -2,22 +2,22 @@
 /** chunk id: 410030, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Fg: () => a,
+  Fg: () => o,
   ZP: () => l,
-  i6: () => o
+  i6: () => a
 });
 var Chunk780384 = require("./780384.js"),
   Chunk981631 = require("./981631.js");
 
-function a() {
+function o() {
   let {
     theme: e
   } = (0, Chunk780384.TC)();
   return module
 }
 
-function o() {
-  return s(a())
+function a() {
+  return s(o())
 }
 
 function s(e) {
@@ -28,4 +28,4 @@ function s(e) {
       return 1
   }
 }
-let l = a
+let l = o

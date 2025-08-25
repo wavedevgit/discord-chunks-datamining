@@ -25,8 +25,8 @@ function u(e) {
   let {
     guild: i
   } = e.invite, c = null != (n = e.invite.flags) ? n : 0;
-  if (null != i && (null == i || null == (t = i.features) ? true : t.includes(l.oNc.HUB))) return void a.Z.onOpenHubInvite(e.invite);
-  !((0, o.yE)(c, r.$.IS_GUEST_INVITE) || (0, o.yE)(c, r.$.IS_APPLICATION_BYPASS)) && null != i && (0, s.u)(i) && (0, s._)(i.id)
+  if (null != i && (null == i || null == (t = i.features) ? true : t.includes(l.oNc.HUB))) return void o.Z.onOpenHubInvite(e.invite);
+  !((0, a.yE)(c, r.$.IS_GUEST_INVITE) || (0, a.yE)(c, r.$.IS_APPLICATION_BYPASS)) && null != i && (0, s.u)(i) && (0, s._)(i.id)
 }
 class d extends Chunk147913.Z {
   constructor(...e) {

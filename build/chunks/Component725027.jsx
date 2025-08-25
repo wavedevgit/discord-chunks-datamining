@@ -7,24 +7,24 @@ require.d(exports, {
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js");
-let a = {
+let o = {
     isRichTooltip: false
   },
-  o = Chunk647438.createContext(a);
+  a = Chunk647438.createContext(o);
 
 function s(e) {
   let {
     children: t,
     isRichTooltip: n = false
-  } = e, a = i.useMemo(() => ({
+  } = e, o = i.useMemo(() => ({
     isRichTooltip: n
   }), [n]);
-  return (0, r.jsx)(o.Provider, {
-    value: a,
+  return (0, r.jsx)(a.Provider, {
+    value: o,
     children: t
   })
 }
 
 function l() {
-  return Chunk647438.useContext(o)
+  return Chunk647438.useContext(a)
 }

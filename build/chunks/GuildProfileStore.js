@@ -177,7 +177,7 @@ function I(e) {
   } = t;
   if (null == n) return;
   let r = _.get(n.id),
-    i = (0, o.xo)(n);
+    i = (0, a.xo)(n);
   null == r ? _.set(n.id, d(c({}, p), {
     profile: i,
     lastSyncTimestamp: Date.now(),
@@ -208,16 +208,16 @@ function A(e) {
   var t, n, r;
   let {
     guild: i
-  } = e, a = _.get(i.id);
-  if (null == a || null == a.profile) returnfalse;
-  let o = d(c({}, a.profile), {
+  } = e, o = _.get(i.id);
+  if (null == o || null == o.profile) returnfalse;
+  let a = d(c({}, o.profile), {
     name: i.name,
     icon: null != (t = i.icon) ? t : null,
     description: null != (n = i.description) ? n : "",
     customBanner: null != (r = i.discovery_splash) ? r : null
   });
-  _.set(i.id, d(c({}, a), {
-    profile: o
+  _.set(i.id, d(c({}, o), {
+    profile: a
   }))
 }
 class C extends(r = Chunk442837.ZP.Store) {

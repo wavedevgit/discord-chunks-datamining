@@ -25,7 +25,7 @@ function _(e) {
   } = e;
   if (i) return {
     flavor: d.intl.format(d.t.doslJi, {
-      onClick: () => a.Z.open(c.oAB.SUBSCRIPTIONS)
+      onClick: () => o.Z.open(c.oAB.SUBSCRIPTIONS)
     })
   };
   if (!r) return {
@@ -34,7 +34,7 @@ function _(e) {
   if (t) return {
     subtitle: d.intl.string(d.t.W5rDjY),
     flavor: d.intl.format(d.t.cUHcaW, {
-      helpdeskArticle: o.Z.getArticleURL(c.BhN.GUILD_SUBSCRIPTIONS)
+      helpdeskArticle: a.Z.getArticleURL(c.BhN.GUILD_SUBSCRIPTIONS)
     })
   };
   let f = u.GP[u.Xh.PREMIUM_MONTH_GUILD],
@@ -51,16 +51,16 @@ let p = function(e) {
   let {
     hasAppliedGuildBoosts: t,
     hasBoostPerk: n,
-    hasGuildAffinitiesOrInGuild: a,
-    subscriptionIsPausedOrPausePending: o
+    hasGuildAffinitiesOrInGuild: o,
+    subscriptionIsPausedOrPausePending: a
   } = e, {
     subtitle: s,
     flavor: l
   } = _({
     hasAppliedGuildBoosts: t,
     hasBoostPerk: n,
-    hasGuildAffinitiesOrInGuild: a,
-    subscriptionIsPausedOrPausePending: o
+    hasGuildAffinitiesOrInGuild: o,
+    subscriptionIsPausedOrPausePending: a
   });
   return (0, r.jsxs)("div", {
     className: f.wrapper,

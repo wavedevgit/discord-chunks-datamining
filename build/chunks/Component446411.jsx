@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   BC: () => er,
-  ZP: () => ea
+  ZP: () => eo
 }), require("./388685.js"), require("./539854.js"), require("./953529.js"), require("./35282.js");
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -103,7 +103,7 @@ function er(e) {
   var t, n;
   let {
     className: r,
-    iframeWrapperClassName: o,
+    iframeWrapperClassName: a,
     maxWidth: l,
     maxHeight: c,
     thumbnail: u,
@@ -128,11 +128,11 @@ function er(e) {
     href: D,
     placeholder: x,
     placeholderVersion: j,
-    sourceMetadata: M
-  } = e, [U, B] = a.useState(b), Z = null != d && null == d.proxyURL, V = a.useCallback(() => B(false), [B]), H = e => {
+    sourceMetadata: k
+  } = e, [U, B] = o.useState(b), Z = null != d && null == d.proxyURL, V = o.useCallback(() => B(false), [B]), H = e => {
     e.preventDefault(), e.stopPropagation(), null == I || I(false), B(true), Z && (w.S.dispatch(G.CkL.VIDEO_EMBED_PLAYBACK_STARTED), w.S.subscribeOnce(G.CkL.VIDEO_EMBED_PLAYBACK_STARTED, V))
   };
-  a.useEffect(() => () => {
+  o.useEffect(() => () => {
     Z && w.S.unsubscribe(G.CkL.VIDEO_EMBED_PLAYBACK_STARTED, V)
   }, [Z, V]);
   let {
@@ -171,7 +171,7 @@ function er(e) {
       onMute: P,
       onControlsHide: A,
       onControlsShow: C,
-      sourceMetadata: M
+      sourceMetadata: k
     })
   });
   if (U && null != d) {
@@ -180,7 +180,7 @@ function er(e) {
         width: Y,
         height: W
       },
-      a = {
+      o = {
         width: Y,
         height: W
       };
@@ -191,7 +191,7 @@ function er(e) {
         maxHeight: c,
         width: true,
         height: true
-      }, a = {
+      }, o = {
         paddingBottom: "".concat(100 * t, "%"),
         maxWidth: Y
       }, e = {
@@ -206,9 +206,9 @@ function er(e) {
       className: r,
       style: n,
       children: (0, i.jsx)("div", {
-        className: s()(F.embedVideo, o),
-        style: a,
-        children: (0, i.jsx)(k.ZP, {
+        className: s()(F.embedVideo, a),
+        style: o,
+        children: (0, i.jsx)(M.ZP, {
           provider: f,
           src: d.url,
           style: e,
@@ -240,7 +240,7 @@ function er(e) {
       placeholder: x,
       placeholderVersion: j,
       onClick: E && null != d ? H : null,
-      sourceMetadata: M,
+      sourceMetadata: k,
       analyticsSource: "EmbedVideo"
     }), (0, i.jsx)("div", {
       className: F.embedVideoActions,
@@ -250,8 +250,8 @@ function er(e) {
           onPlay: null != d ? H : null,
           externalURL: D,
           renderLinkComponent: g,
-          messageId: null == M || null == (t = M.message) ? true : t.id,
-          channelId: null == M || null == (n = M.message) ? true : n.channel_id
+          messageId: null == k || null == (t = k.message) ? true : t.id,
+          channelId: null == k || null == (n = k.message) ? true : n.channel_id
         }) : null
       })
     })]
@@ -263,8 +263,8 @@ function ei(e) {
     className: t,
     href: n,
     autoPlay: r,
-    maxWidth: a,
-    maxHeight: o,
+    maxWidth: o,
+    maxHeight: a,
     thumbnail: l,
     video: c,
     renderImageComponent: u,
@@ -287,8 +287,8 @@ function ei(e) {
     height: l.height,
     naturalHeight: c.height,
     naturalWidth: c.width,
-    maxWidth: a,
-    maxHeight: o,
+    maxWidth: o,
+    maxHeight: a,
     responsive: d,
     autoPlay: r,
     playable: p,
@@ -300,7 +300,7 @@ function ei(e) {
     sourceMetadata: E
   })
 }
-class ea extends(r = Chunk647438.PureComponent) {
+class eo extends(r = Chunk647438.PureComponent) {
   renderProvider() {
     let e = !(arguments.length > 0) || true === arguments[0] || arguments[0],
       {
@@ -386,10 +386,10 @@ class ea extends(r = Chunk647438.PureComponent) {
         embed: t,
         renderLinkComponent: n,
         renderTitle: r,
-        message: a
+        message: o
       } = this.props,
       {
-        rawTitle: o,
+        rawTitle: a,
         url: l
       } = exports;
     return null == Chunk120356 ? null : this.shouldShowStaticPlaceholder ? (0, Chunk951288.jsx)("div", {
@@ -435,8 +435,8 @@ class ea extends(r = Chunk647438.PureComponent) {
         },
         maxThumbnailWidth: n,
         maxThumbnailHeight: r,
-        renderImageComponent: a,
-        autoPlayGif: o
+        renderImageComponent: o,
+        autoPlayGif: a
       } = this.props,
       {
         sourceMetadata: s
@@ -446,7 +446,7 @@ class ea extends(r = Chunk647438.PureComponent) {
         let {
           disableAnimations: l
         } = i;
-        return a({
+        return o({
           containerClassName: F.embedThumbnail,
           src: (0, R.q)(t),
           original: t.url,
@@ -455,7 +455,7 @@ class ea extends(r = Chunk647438.PureComponent) {
           maxWidth: n,
           maxHeight: r,
           shouldLink: e,
-          autoPlay: o && !l,
+          autoPlay: a && !l,
           srcIsAnimated: t.srcIsAnimated,
           placeholder: t.placeholder,
           placeholderVersion: t.placeholderVersion,
@@ -477,10 +477,10 @@ class ea extends(r = Chunk647438.PureComponent) {
     return exports.forEach(t => {
       let {
         rawName: i,
-        rawValue: a,
-        inline: o
+        rawValue: o,
+        inline: a
       } = t;
-      o || null == r || (n.push(r), r = null), null == r && (r = []), r.push([this.props.renderTitle(e, i), this.props.renderDescription(e, a, true)]), 3 !== r.length && o || (n.push(r), r = null)
+      a || null == r || (n.push(r), r = null), null == r && (r = []), r.push([this.props.renderTitle(e, i), this.props.renderDescription(e, o, true)]), 3 !== r.length && a || (n.push(r), r = null)
     }), null != r && require.push(r), (0, Chunk951288.jsx)("div", {
       className: Chunk781452.embedFields,
       children: require.map((e, t) => {
@@ -488,7 +488,7 @@ class ea extends(r = Chunk647438.PureComponent) {
           length: n
         } = e;
         return e.map((e, r) => {
-          let [a, o] = e;
+          let [o, a] = e;
           return (0, i.jsxs)("div", {
             className: F.embedField,
             style: {
@@ -496,10 +496,10 @@ class ea extends(r = Chunk647438.PureComponent) {
             },
             children: [(0, i.jsx)("div", {
               className: F.embedFieldName,
-              children: a
+              children: o
             }), (0, i.jsx)("div", {
               className: F.embedFieldValue,
-              children: o
+              children: a
             })]
           }, "".concat(t, "-").concat(r))
         })
@@ -509,8 +509,8 @@ class ea extends(r = Chunk647438.PureComponent) {
   renderImages() {
     var e, t, n, r;
     let {
-      hiddenSpoiler: a = false,
-      isVisible: o = true
+      hiddenSpoiler: o = false,
+      isVisible: a = true
     } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, {
       embed: s
     } = this.props, {
@@ -518,8 +518,8 @@ class ea extends(r = Chunk647438.PureComponent) {
     } = this.state;
     if (null == s.images) return null;
     let [c, u, d, f] = s.images.map(e => this.renderImage({
-      hiddenSpoiler: a,
-      isVisible: o,
+      hiddenSpoiler: o,
+      isVisible: a,
       image: e,
       isGalleryImage: true,
       allImages: s.images
@@ -558,8 +558,8 @@ class ea extends(r = Chunk647438.PureComponent) {
       mimeType: t,
       downloadURL: n,
       isVisualMediaType: r,
-      channelId: a
-    } = e, o = () => {
+      channelId: o
+    } = e, a = () => {
       this.setState({
         showImageAppMenu: !this.state.showImageAppMenu
       })
@@ -570,9 +570,9 @@ class ea extends(r = Chunk647438.PureComponent) {
         [V.forceShowHover]: this.state.showImageAppMenu
       }),
       children: (0, i.jsx)(f.Z, {
-        toggleShowMenu: o,
+        toggleShowMenu: a,
         showMenu: this.state.showImageAppMenu,
-        channelId: a,
+        channelId: o,
         className: s()(V.hoverButton, {
           [V.selected]: this.state.showImageAppMenu
         }),
@@ -605,8 +605,8 @@ class ea extends(r = Chunk647438.PureComponent) {
   renderImage() {
     var e, t, n, r;
     let {
-      hiddenSpoiler: a = false,
-      isVisible: o = true,
+      hiddenSpoiler: o = false,
+      isVisible: a = true,
       image: l,
       isGalleryImage: c = false,
       alt: u = Chunk388032.intl.string(Chunk388032.t.X4IxWF),
@@ -666,7 +666,7 @@ class ea extends(r = Chunk647438.PureComponent) {
       C = null != (r = null == (e = Chunk228458.url.split(".").pop()) ? true : module.split("?")[0]) ? r : "";
     "jpg" === Chunk400266 && (C = "jpeg");
     let N = null != Chunk228458 && !Chunk124347.uo.test(null == Chunk228458 ? true : Chunk228458.url) && !(Chunk228458.srcIsAnimated && Chunk124347.YG.test(null == Chunk228458 ? true : Chunk228458.url)) && !(Chunk228458.srcIsAnimated && Chunk124347.FH.test(null == Chunk228458 ? true : Chunk228458.url)),
-      P = true !== this.props.isSearchResult && Chunk120356 && (null == (t = this.props.message) ? true : exports.channel_id) != null && (null == (n = this.props.message) ? true : require.channel_id) !== true && Chunk592125 && !eo(Chunk228458) && null != Chunk400266;
+      P = true !== this.props.isSearchResult && Chunk120356 && (null == (t = this.props.message) ? true : exports.channel_id) != null && (null == (n = this.props.message) ? true : require.channel_id) !== true && Chunk592125 && !ea(Chunk228458) && null != Chunk400266;
     return (0, Chunk951288.jsx)(Chunk947849.h.Consumer, {
       children: e => (0, i.jsx)(U.G.Consumer, {
         children: t => {
@@ -674,7 +674,7 @@ class ea extends(r = Chunk647438.PureComponent) {
             disableAnimations: n
           } = t;
           return f(z(W({}, A), {
-            autoPlay: p && !n && !a,
+            autoPlay: p && !n && !o,
             renderAccessory: T ? e : null,
             handlePreloadImage: I[y],
             onClick: v[y],
@@ -704,8 +704,8 @@ class ea extends(r = Chunk647438.PureComponent) {
     } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, {
       embed: {
         url: r,
-        thumbnail: a,
-        video: o,
+        thumbnail: o,
+        video: a,
         provider: s
       },
       renderVideoComponent: l,
@@ -728,8 +728,8 @@ class ea extends(r = Chunk647438.PureComponent) {
         return (0, i.jsx)(ei, {
           className: F.embedMedia,
           href: r,
-          thumbnail: a,
-          video: o,
+          thumbnail: o,
+          video: a,
           maxWidth: p,
           maxHeight: h,
           responsive: true,
@@ -738,8 +738,8 @@ class ea extends(r = Chunk647438.PureComponent) {
           playable: t,
           hiddenSpoilers: n,
           disableAltTextDisplay: null != _,
-          placeholder: o.placeholder,
-          placeholderVersion: o.placeholderVersion,
+          placeholder: a.placeholder,
+          placeholderVersion: a.placeholderVersion,
           sourceMetadata: m
         })
       }
@@ -812,8 +812,8 @@ class ea extends(r = Chunk647438.PureComponent) {
       embed: n
     } = this.props, {
       maxMediaWidth: r,
-      maxMediaHeight: a
-    } = this.state, o = null != (e = require.image) ? module : require.video;
+      maxMediaHeight: o
+    } = this.state, a = null != (e = require.image) ? module : require.video;
     if (null == Chunk120356) return null;
     let {
       width: s,
@@ -880,8 +880,8 @@ class ea extends(r = Chunk647438.PureComponent) {
       {
         isVisible: i
       } = this.state,
-      a = this.renderProvider(Chunk951288),
-      o = this.renderAuthor(Chunk951288),
+      o = this.renderProvider(Chunk951288),
+      a = this.renderAuthor(Chunk951288),
       s = this.renderTitle(Chunk951288);
     switch (require.type) {
       case Chunk981631.hBH.IMAGE:
@@ -913,10 +913,10 @@ class ea extends(r = Chunk647438.PureComponent) {
         images: n,
         video: r,
         type: i,
-        thumbnail: a
+        thumbnail: o
       }
     } = this.props, {
-      maxMediaWidth: o,
+      maxMediaWidth: a,
       maxMediaHeight: s
     } = this.state, l = null != t ? t : r;
     if (null == l) return;
@@ -925,7 +925,7 @@ class ea extends(r = Chunk647438.PureComponent) {
     } = (0, L.Tj)({
       width: l.width,
       height: l.height,
-      maxWidth: o,
+      maxWidth: a,
       maxHeight: s
     });
     if (!e && (i === G.hBH.VIDEO || c >= 300)) return c + q;
@@ -935,9 +935,9 @@ class ea extends(r = Chunk647438.PureComponent) {
       let {
         width: e
       } = (0, L.Tj)({
-        width: null != (d = null != (u = null == r ? true : r.width) ? u : null == a ? true : a.width) ? d : 0,
-        height: null != (_ = null != (f = null == r ? true : r.height) ? f : null == a ? true : a.height) ? _ : 0,
-        maxWidth: o,
+        width: null != (d = null != (u = null == r ? true : r.width) ? u : null == o ? true : o.width) ? d : 0,
+        height: null != (_ = null != (f = null == r ? true : r.height) ? f : null == o ? true : o.height) ? _ : 0,
+        maxWidth: a,
         maxHeight: s
       });
       return e
@@ -993,8 +993,8 @@ class ea extends(r = Chunk647438.PureComponent) {
       embed: {
         image: r,
         images: i,
-        video: a,
-        type: o,
+        video: o,
+        type: a,
         rawDescription: s
       }
     } = this.props, {
@@ -1003,8 +1003,8 @@ class ea extends(r = Chunk647438.PureComponent) {
     } = this.state;
     if (!this.usesJustifiedAutoStyle()) return;
     let d = e ? true : this.getMaxWidth(false);
-    if (true === d && true === i && o !== G.hBH.RICH) {
-      let e = null != r ? r : a;
+    if (true === d && true === i && a !== G.hBH.RICH) {
+      let e = null != r ? r : o;
       if (true !== e) {
         let {
           minWidth: n,
@@ -1111,7 +1111,7 @@ class ea extends(r = Chunk647438.PureComponent) {
           obscureReason: n,
           className: r
         } = t.props,
-        a = t.getMaxWidth(true);
+        o = t.getMaxWidth(true);
       return (0, i.jsx)("div", {
         "aria-hidden": e,
         className: s()(F.inlineMediaEmbed, r, {
@@ -1121,7 +1121,7 @@ class ea extends(r = Chunk647438.PureComponent) {
           [F.justifyAuto]: t.usesJustifiedAutoStyle()
         }),
         style: {
-          maxWidth: a
+          maxWidth: o
         },
         children: t.renderMedia(e)
       })
@@ -1130,10 +1130,10 @@ class ea extends(r = Chunk647438.PureComponent) {
         {
           className: n,
           onSuppressEmbed: r,
-          obscureReason: a
+          obscureReason: o
         } = t.props,
         {
-          provider: o,
+          provider: a,
           author: l,
           title: c,
           description: u,
@@ -1145,7 +1145,7 @@ class ea extends(r = Chunk647438.PureComponent) {
       return (0, i.jsx)("article", {
         className: s()(n, F.embedFull, H.markup, {
           [F.isHidden]: e,
-          [F.spoilerEmbed]: a === m.wk.SPOILER,
+          [F.spoilerEmbed]: o === m.wk.SPOILER,
           [F.hiddenExplicitEmbed]: t.shouldObscure,
           [F.justifyAuto]: t.usesJustifiedAutoStyle()
         }),
@@ -1161,7 +1161,7 @@ class ea extends(r = Chunk647438.PureComponent) {
               [F.grid]: true,
               [F.hasThumbnail]: null != f
             }),
-            children: [null != r ? t.renderSuppressButton(r) : null, o, l, c, u, d, _, f, p]
+            children: [null != r ? t.renderSuppressButton(r) : null, a, l, c, u, d, _, f, p]
           })
         })
       })
@@ -1169,10 +1169,10 @@ class ea extends(r = Chunk647438.PureComponent) {
   }
 }
 
-function eo(e) {
+function ea(e) {
   return null != e && (e.width <= B.OF || e.height <= B.OF)
 }
-Y(ea, "defaultProps", {
+Y(eo, "defaultProps", {
   hideMedia: false,
   allowFullScreen: true,
   maxThumbnailWidth: 80,

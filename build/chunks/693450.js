@@ -2,7 +2,7 @@
 /** chunk id: 693450, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.r(exports), require.d(exports, {
-  default: () => o,
+  default: () => a,
   messagesLoader: () => i
 });
 letChunk631562 = require("./631562.js"), i = r({
@@ -37,4 +37,4 @@ letChunk631562 = require("./631562.js"), i = r({
   "zh-CN": () => require.e("29991").then(require.t.bind(require, 994336, 19)),
   "zh-TW": () => require.e("33469").then(require.t.bind(require, 367150, 19)),
   "en-US": () => require.e("27610").then(require.bind(require, 746446))
-}, "en-US"), Chunk631562 = require("./631562.js"), o = a(i)
+}, "en-US"), Chunk631562 = require("./631562.js"), a = o(i)

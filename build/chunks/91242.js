@@ -6,13 +6,13 @@ var Chunk102736 = require("./102736.js"),
   Chunk780661 = require("./780661.js"),
   Chunk398448 = require("./398448.js");
 module.exports = function(e) {
-  var t = o(e, function(e) {
+  var t = a(e, function(e) {
     var t = e.getSelection(),
       n = e.getCurrentContent(),
       r = t.getAnchorKey(),
-      o = t.getAnchorOffset(),
-      s = n.getBlockForKey(r).getText()[o];
-    return a(e, s ? i.getUTF16Length(s, 0) : 1)
+      a = t.getAnchorOffset(),
+      s = n.getBlockForKey(r).getText()[a];
+    return o(e, s ? i.getUTF16Length(s, 0) : 1)
   }, "forward");
   if (t === e.getCurrentContent()) return e;
   var n = e.getSelection();

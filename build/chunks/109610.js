@@ -31,7 +31,7 @@ class m extends Chunk147913.Z {
       if (null == e.joinedAt || Date.now() - e.joinedAt.getTime() > h || s.ZP.getMessageNotifications(e.id) === f.bL.ALL_MESSAGES) return;
       for (let t of Object.values(s.ZP.getChannelOverrides(e.id)))
         if (null != t.message_notifications && t.message_notifications !== f.bL.NULL || null != t.flags && (0, c.EB)(t.flags, _.ic.UNREADS_ALL_MESSAGES | _.ic.UNREADS_ONLY_MENTIONS)) return;
-      let t = Object.values(a.Z.getMutableBasicGuildChannelsForGuild(e.id)).filter(e => e.type === f.d4z.GUILD_ANNOUNCEMENT);
+      let t = Object.values(o.Z.getMutableBasicGuildChannelsForGuild(e.id)).filter(e => e.type === f.d4z.GUILD_ANNOUNCEMENT);
       if (0 === t.length) return;
       let n = {};
       for (let r of t) n[r.id] = {

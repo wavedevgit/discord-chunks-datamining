@@ -61,9 +61,9 @@ async function E() {
   let n = await exports(),
     {
       didCrashReporterSeeCrash: r,
-      didCrashOrUncleanExit: a
+      didCrashOrUncleanExit: o
     } = b(Chunk433517.K.get(h, {}), require),
-    o = O(Chunk268146, Chunk131951, require);
+    a = O(Chunk268146, Chunk131951, require);
   Chunk626135.default.track(Chunk981631.rMx.APP_NATIVE_CRASH, Chunk594174), Chunk433517.K.set(h, {
     lastId: null == require ? true : require.id
   }), Chunk131951 && setTimeout(async () => await y(), 1e4)
@@ -73,10 +73,10 @@ function b(e, t) {
   var n;
   let r = (null == e ? true : e.lastId) !== (null == t ? true : t.id) && (null == t ? true : t.id) != null,
     i = null != (n = null == t ? true : t.rendererCrashExitCode) ? n : null,
-    a = r || null != i && 0 !== i;
+    o = r || null != i && 0 !== i;
   return {
     didCrashReporterSeeCrash: r,
-    didCrashOrUncleanExit: a
+    didCrashOrUncleanExit: o
   }
 }
 async function y() {
@@ -89,7 +89,7 @@ async function y() {
 }
 
 function O(e, t, n) {
-  var i, a, o, s, l, c, u, d, f, p, h, m, g, E, b, y, O, v, I;
+  var i, o, a, s, l, c, u, d, f, p, h, m, g, E, b, y, O, v, I;
 
   function T(e) {
     return (null == n ? true : n.storedInformation) != null && 1 === n.storedInformation[e]
@@ -113,8 +113,8 @@ function O(e, t, n) {
     video_media_session_id: S(r.X4.VideoMediaSessionId),
     stream_media_session_id: S(r.X4.StreamMediaSessionId),
     last_memory_usage_kb: null != (f = null == n || null == (i = n.lastMemoryInformation) ? true : i.memoryUsageKB) ? f : null,
-    last_used_js_heap_size_kb: null != (p = null == n || null == (a = n.lastMemoryInformation) ? true : a.usedJSHeapSizeKB) ? p : null,
-    last_memory_usage_uptime: null != (h = null == n || null == (o = n.lastMemoryInformation) ? true : o.uptimeSeconds) ? h : null,
+    last_used_js_heap_size_kb: null != (p = null == n || null == (o = n.lastMemoryInformation) ? true : o.usedJSHeapSizeKB) ? p : null,
+    last_memory_usage_uptime: null != (h = null == n || null == (a = n.lastMemoryInformation) ? true : a.uptimeSeconds) ? h : null,
     highest_memory_usage_kb: null != (m = null == n || null == (s = n.highestMemoryInformation) ? true : s.memoryUsageKB) ? m : null,
     highest_used_js_heap_size_kb: null != (g = null == n || null == (l = n.highestMemoryInformation) ? true : l.usedJSHeapSizeKB) ? g : null,
     highest_memory_usage_uptime: null != (E = null == n || null == (c = n.highestMemoryInformation) ? true : c.uptimeSeconds) ? E : null

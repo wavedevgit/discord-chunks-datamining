@@ -13,5 +13,5 @@ module.exports = function(e, t, n) {
     if (!(d = null != e && n(e, f))) break;
     e = e[f]
   }
-  return d || ++c != u ? d : !!(u = null == e ? 0 : e.length) && s(u) && o(f, u) && (a(e) || i(e))
+  return d || ++c != u ? d : !!(u = null == e ? 0 : e.length) && s(u) && a(f, u) && (o(e) || i(e))
 }

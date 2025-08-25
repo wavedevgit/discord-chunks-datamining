@@ -23,7 +23,7 @@ let l = new Set([Chunk480916.cU.NSFW_GUILD]),
     title: s.intl.string(s.t.aVwLfn),
     description: s.intl.format(s.t.n5vd1N, {
       handleOnHelpUrlHook: () => {
-        i.Z.openUrl(r.Z.getArticleURL(o.BhN.TIGGER_PAWTECT_SYSTEM_DMS)), (0, a.x3)(e, a.d_.PRIMARY, a.sU.SYSTEM_DMS_LEARN_MORE)
+        i.Z.openUrl(r.Z.getArticleURL(a.BhN.TIGGER_PAWTECT_SYSTEM_DMS)), (0, o.x3)(e, o.d_.PRIMARY, o.sU.SYSTEM_DMS_LEARN_MORE)
       }
     })
   }],

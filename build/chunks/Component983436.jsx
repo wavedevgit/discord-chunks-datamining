@@ -31,7 +31,7 @@ function h(e) {
       link_channel_type: n.type,
       guild_id: m,
       channel_id: g
-    }), (0, o.K)(t.id, n.id), a.default.selectVoiceChannel(n.id)
+    }), (0, a.K)(t.id, n.id), o.default.selectVoiceChannel(n.id)
   }, [h, t, n, m, g]), b = (0, r.jsx)(l.Z.Channel, {
     channel: n
   });

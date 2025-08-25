@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk879443 = require("./879443.js"),
   l = require.n(Chunk879443),
   Chunk392711 = require("./392711.js"),
@@ -60,7 +60,7 @@ class b extends Chunk647438.PureComponent {
         value: n,
         disabled: i
       } = this.props,
-      a = (0, Chunk13140.BB)(require, true);
+      o = (0, Chunk13140.BB)(require, true);
     return e = "RECORDING" === exports ? Chunk388032.intl.string(Chunk388032.t.bmOri4) : 0 === require.length ? Chunk388032.intl.string(Chunk388032.t.co3wt7) : Chunk388032.intl.string(Chunk388032.t.idFMvL), (0, Chunk951288.jsx)(Chunk481060.tEY, {
       focusTarget: this._inputRef,
       ringTarget: this._containerRef,
@@ -68,7 +68,7 @@ class b extends Chunk647438.PureComponent {
         onClick: this.handleClick,
         onMouseDown: this.handleMouseDown,
         ref: this._containerRef,
-        className: o()(Chunk151028.recorderContainer, E[exports], {
+        className: a()(Chunk151028.recorderContainer, E[exports], {
           [Chunk151028.containerDisabled]: Chunk647438
         }),
         children: (0, Chunk951288.jsxs)(Chunk600164.Z, {

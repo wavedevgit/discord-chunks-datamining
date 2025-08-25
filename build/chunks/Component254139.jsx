@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
 let u = e => {
   let {
     containerVisibilityPercentage: t
-  } = e, n = (0, i.e7)([a.Z], () => a.Z.useReducedMotion), u = (0, o.rO)();
+  } = e, n = (0, i.e7)([o.Z], () => o.Z.useReducedMotion), u = (0, a.rO)();
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.Z, {
       supportHEVCAlpha: u,

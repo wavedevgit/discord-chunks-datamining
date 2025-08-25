@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => ew
 }), require("./388685.js"), require("./539854.js");
 var r, Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk790920 = require("./790920.js"),
@@ -109,7 +109,7 @@ function ei(e) {
   })), J[e]
 }
 
-function ea(e) {
+function eo(e) {
   return null == $[e] && ($ = V(Z({}, $), {
     [e]: new S.Z({
       url: e
@@ -117,7 +117,7 @@ function ea(e) {
   })), $[e]
 }
 
-function eo(e) {
+function ea(e) {
   et.has(e) || ee.add(e)
 }
 
@@ -125,7 +125,7 @@ function es(e) {
   if ((0, d.Z)(e)) return T.r9;
   if ((0, f.Z)(e)) return ei(e.name);
   let t = null != e.application_id ? m.Z.getApplication(e.application_id) : null;
-  return null != t ? t : (0, _.Z)(e) && null != e.url ? ea(e.url) : (null != e.application_id && eo(e.application_id), t)
+  return null != t ? t : (0, _.Z)(e) && null != e.url ? eo(e.url) : (null != e.application_id && ea(e.application_id), t)
 }
 
 function el(e) {
@@ -134,18 +134,18 @@ function el(e) {
     tags: {
       source: "ACTIVITIES"
     }
-  }), null) : e === T.XB ? T.r9 : e.startsWith(A.H) ? ei(e.slice(A.H.length)) : e.startsWith(S._) ? ea(e.slice(S._.length)) : (eo(e), null)
+  }), null) : e === T.XB ? T.r9 : e.startsWith(A.H) ? ei(e.slice(A.H.length)) : e.startsWith(S._) ? eo(e.slice(S._.length)) : (ea(e), null)
 }
 
 function ec(e) {
-  let t = M.Z.getVoiceStateForUser(e);
+  let t = k.Z.getVoiceStateForUser(e);
   return (null == t ? true : t.channelId) != null && x.Z.canWithPartialContext(G.Plq.VIEW_CHANNEL, {
     channelId: t.channelId
   }) ? t.channelId : null
 }
 
 function eu(e) {
-  return a()(e).groupBy(e => {
+  return o()(e).groupBy(e => {
     var t;
     let n = ec(e.id),
       r = er(e.id);
@@ -155,7 +155,7 @@ function eu(e) {
 
 function ed(e, t) {
   let n = e => e.game.name;
-  return a()(e).orderBy([t, n], ["desc", "asc"])
+  return o()(e).orderBy([t, n], ["desc", "asc"])
 }
 
 function ef(e) {
@@ -163,8 +163,8 @@ function ef(e) {
 }
 
 function e_(e, t, n) {
-  var r, i, o, s, d;
-  let f, _ = k.default.getCurrentUser(),
+  var r, i, a, s, d;
+  let f, _ = M.default.getCurrentUser(),
     h = null != (r = null == _ ? true : _.nsfwAllowed) && r,
     m = O.Z.getUserAffinitiesMap(),
     g = (0, I.C)(t, m, "NowPlayingViewStore - partiedMembers"),
@@ -195,11 +195,11 @@ function e_(e, t, n) {
           activity: r,
           userId: e.id,
           application: m,
-          channelId: null == (o = M.Z.getVoiceStateForUser(e.id)) ? true : o.channelId,
+          channelId: null == (a = k.Z.getVoiceStateForUser(e.id)) ? true : a.channelId,
           currentUser: _,
           isActivitiesEnabledForCurrentPlatform: t,
           ChannelStore: N.Z,
-          VoiceStateStore: M.Z,
+          VoiceStateStore: k.Z,
           PermissionStore: x.Z,
           GuildStore: D.Z
         }) !== c.Fw.CAN_JOIN) continue
@@ -209,13 +209,13 @@ function e_(e, t, n) {
     (null == E || E.id !== m.id) && (r = null);
     let O = [];
     O = null != r && null != r.party && null != r.party.id ? Array.from(null != (s = P.Z.getParty(r.party.id)) ? s : []).reduce((e, t) => {
-      let n = k.default.getUser(t);
+      let n = M.default.getUser(t);
       return null != n && e.push(n), e
     }, []) : g.filter(e => {
       let t = er(e.id),
         n = null != t ? es(t) : null;
       return null != n && n.id === m.id
-    }), (O = a().orderBy(O, [ef], ["desc"])).length !== g.length && (A = true), j.add(m.id), R.push({
+    }), (O = o().orderBy(O, [ef], ["desc"])).length !== g.length && (A = true), j.add(m.id), R.push({
       game: m,
       activity: r,
       activityUser: e,
@@ -234,19 +234,19 @@ function e_(e, t, n) {
       i = D.Z.getGuild(r);
     if (H.has(r) && V.has(t) || null == n || null == i || n.id === i.afkChannelId) null == n && (f = null, Z = true);
     else {
-      let e = M.Z.getVoiceStatesForChannel(n.id),
-        o = (0, v.HG)("NowPlayingViewStore - voiceMembers"),
+      let e = k.Z.getVoiceStatesForChannel(n.id),
+        a = (0, v.HG)("NowPlayingViewStore - voiceMembers"),
         s = ef;
-      null != o && (s = e => {
+      null != a && (s = e => {
         var t, n;
         let r = O.Z.getUserAffinity(e.id);
-        return "vc_probability" === o ? null != (t = null == r ? true : r.vcProbability) ? t : 0 : null != (n = null == r ? true : r.communicationProbability) ? n : 0
+        return "vc_probability" === a ? null != (t = null == r ? true : r.vcProbability) ? t : 0 : null != (n = null == r ? true : r.communicationProbability) ? n : 0
       });
-      let l = a()(e).map(e => {
+      let l = o()(e).map(e => {
         let {
           userId: t
         } = e;
-        return k.default.getUser(t)
+        return M.default.getUser(t)
       }).filter(U.lm).orderBy([s], ["desc"]).value();
       l.filter(e => !E.includes(e.id)).forEach(e => g.push(e)), Z ? H.has(r) || (f = null) : (f = i, Z = true), H.add(r), V.add(t), F.push({
         channel: n,
@@ -278,7 +278,7 @@ function e_(e, t, n) {
 function ep(e) {
   let t = en(),
     n = e_.bind(null, t);
-  return a()(e).mapValues(n)
+  return o()(e).mapValues(n)
 }
 
 function eh(e) {
@@ -286,9 +286,9 @@ function eh(e) {
     n = e => e.currentActivities.length > 0,
     r = e => e.voiceChannels.length > 0,
     i = e => e.applicationStreams.length > 0,
-    a = e => e.partiedMembers.length > 1,
-    o = e => e.isSpotifyActivity;
-  return e.values().orderBy([em, a, i, r, n, o, t], ["asc", "desc", "desc", "desc", "desc", "asc", "asc"]).value()
+    o = e => e.partiedMembers.length > 1,
+    a = e => e.isSpotifyActivity;
+  return e.values().orderBy([em, o, i, r, n, a, t], ["asc", "desc", "desc", "desc", "desc", "asc", "asc"]).value()
 }
 
 function em(e) {
@@ -342,11 +342,11 @@ function ev() {
 function eI() {
   if (!ev()) returnfalse;
   ee.clear(), Q = ey(X = eb(eh(ep(eu(Array.from(en()).reduce((e, t) => {
-    let n = k.default.getUser(t);
+    let n = M.default.getUser(t);
     return null == n || n.bot || e.push(n), e
   }, [])))))), eO(), q = true
 }
-let eT = a().throttle(() => {
+let eT = o().throttle(() => {
   eI(), eP.emitChange()
 }, K);
 

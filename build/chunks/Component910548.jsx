@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk238651 = require("./238651.js"),
   Chunk772848 = require("./772848.js"),
   Chunk468194 = require("./468194.js"),
@@ -101,8 +101,8 @@ let P = ["TOP_LEFT", "TOP_RIGHT"],
     leafRotationDirection: 1
   },
   j = 10,
-  k = 80,
   M = 80,
+  k = 80,
   U = 180,
   G = 8,
   B = 12,
@@ -247,9 +247,9 @@ function ee(e) {
   let {
     onAnimationComplete: t,
     onClick: n,
-    position: a,
+    position: o,
     size: c
-  } = e, u = i.useRef(null), [f, p] = i.useState(null), [h] = i.useState(null != a ? a : H()), {
+  } = e, u = i.useRef(null), [f, p] = i.useState(null), [h] = i.useState(null != o ? o : H()), {
     createMultipleConfettiAt: m,
     confettiCanvas: g
   } = i.useContext(_.h), [E, b] = i.useState(null), y = (0, s.uR)(g, E), O = Q(f, h), I = P.includes(h), T = I && "exit" === f, S = i.useCallback(e => {
@@ -269,10 +269,10 @@ function ee(e) {
           type: "static-random",
           minValue: {
             x: j * e.x,
-            y: M * e.y
+            y: k * e.y
           },
           maxValue: {
-            x: k * e.x,
+            x: M * e.x,
             y: U * e.y
           }
         }
@@ -327,7 +327,7 @@ function ee(e) {
       spriteHeight: Y
     }), (0, r.jsx)(d.P3F, {
       onClick: n,
-      className: o()(v.easterEggAnimationClickTarget, {
+      className: a()(v.easterEggAnimationClickTarget, {
         [v.easterEggAnimationClickTargetTopLeft]: "TOP_LEFT" === h,
         [v.easterEggAnimationClickTargetTopRight]: "TOP_RIGHT" === h,
         [v.easterEggAnimationClickTargetBottomLeft]: "BOTTOM_LEFT" === h,
@@ -335,7 +335,7 @@ function ee(e) {
       }),
       children: (0, r.jsx)(d.kci, {
         animationRef: C,
-        className: o()(v.easterEggAnimation, {
+        className: a()(v.easterEggAnimation, {
           [v.easterEggAnimationHideLeaf]: T
         }),
         nextScene: O,
@@ -352,8 +352,8 @@ function ee(e) {
 function et(e) {
   let t, {
       message: n,
-      compact: a,
-      guild: o,
+      compact: o,
+      guild: a,
       usernameHook: s,
       onClickMessage: l
     } = e,
@@ -371,7 +371,7 @@ function et(e) {
     P = (0, E.ZP)(n),
     w = P.nick,
     D = s(P);
-  t = null == c || null == o ? u > 1 ? O.intl.format(O.t.yfC9dn, {
+  t = null == c || null == a ? u > 1 ? O.intl.format(O.t.yfC9dn, {
     username: w,
     usernameHook: D,
     numSubscriptions: u
@@ -382,12 +382,12 @@ function et(e) {
     username: w,
     usernameHook: D,
     numSubscriptions: u,
-    guildName: o.name,
+    guildName: a.name,
     newTierName: (0, g.nW)(c)
   }) : O.intl.format(O.t.cUfTTE, {
     username: w,
     usernameHook: D,
-    guildName: o.name,
+    guildName: a.name,
     newTierName: (0, g.nW)(c)
   });
   let x = i.useCallback(() => {
@@ -407,11 +407,11 @@ function et(e) {
         settingsVisible: true
       }), f.Z.open(y.oAB.POGGERMODE), A(false)
     }, []),
-    k = i.useCallback((e, t) => {
+    M = i.useCallback((e, t) => {
       (null == t ? true : t.id.startsWith(F)) && j()
     }, [j]);
-  i.useEffect(() => T(k));
-  let M = (0, r.jsx)(d.P3F, {
+  i.useEffect(() => T(M));
+  let k = (0, r.jsx)(d.P3F, {
     className: v.iconWrapper,
     innerRef: N,
     onClick: l,
@@ -422,9 +422,9 @@ function et(e) {
     })
   });
   return (0, r.jsxs)(b.Z, {
-    iconNode: M,
+    iconNode: k,
     timestamp: n.timestamp,
-    compact: a,
+    compact: o,
     children: [(0, r.jsx)("div", {
       onClick: l,
       className: v.message,

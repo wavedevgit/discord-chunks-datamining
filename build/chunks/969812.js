@@ -10,17 +10,17 @@ var Chunk544891 = require("./544891.js"),
   Chunk388032 = require("./388032.jsx");
 let s = {
   changeNickname: (e, t, n, s) => r.tn.patch({
-    url: a.ANM.GUILD_MEMBER_NICK(e, n),
+    url: o.ANM.GUILD_MEMBER_NICK(e, n),
     body: {
       nick: s
     },
     oldFormErrors: true,
     rejectWithError: false
   }).then(e => {
-    s = e.body.nick, i.Z.sendBotMessage(t, null != s && "" !== s ? o.intl.formatToMarkdownString(o.t["gz+HRk"], {
+    s = e.body.nick, i.Z.sendBotMessage(t, null != s && "" !== s ? a.intl.formatToMarkdownString(a.t["gz+HRk"], {
       nick: s
-    }) : o.intl.string(o.t.Vhpd9P))
+    }) : a.intl.string(a.t.Vhpd9P))
   }, e => {
-    403 === e.status ? i.Z.sendBotMessage(t, o.intl.formatToMarkdownString(o.t.Izf9jI, {})) : i.Z.sendBotMessage(t, o.intl.string(o.t["5LO/Sk"]))
+    403 === e.status ? i.Z.sendBotMessage(t, a.intl.formatToMarkdownString(a.t.Izf9jI, {})) : i.Z.sendBotMessage(t, a.intl.string(a.t["5LO/Sk"]))
   })
 }

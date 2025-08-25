@@ -49,14 +49,14 @@ function u(e, t) {
 }
 
 function d(e) {
-  return (0, r.jsx)(a.w0Z, {
-    className: o.variants,
-    children: Object.values(i.O).map(t => (0, r.jsxs)(a.Zbd, {
-      className: o.card,
-      children: [(0, r.jsx)(a.Text, u(l({}, e), {
+  return (0, r.jsx)(o.w0Z, {
+    className: a.variants,
+    children: Object.values(i.O).map(t => (0, r.jsxs)(o.Zbd, {
+      className: a.card,
+      children: [(0, r.jsx)(o.Text, u(l({}, e), {
         variant: t,
         children: e.children
-      })), (0, r.jsx)(a.Text, {
+      })), (0, r.jsx)(o.Text, {
         variant: "text-xs/normal",
         color: "text-secondary",
         children: t

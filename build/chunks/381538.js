@@ -27,12 +27,12 @@ module.exports = ! function() {
   } catch (e) {
     returnfalse
   }
-}() ? function(e, a) {
-  for (var o, s, l = i(e), c = 1; c < arguments.length; c++) {
-    for (var u in o = Object(arguments[c])) n.call(o, u) && (l[u] = o[u]);
+}() ? function(e, o) {
+  for (var a, s, l = i(e), c = 1; c < arguments.length; c++) {
+    for (var u in a = Object(arguments[c])) n.call(a, u) && (l[u] = a[u]);
     if (t) {
-      s = t(o);
-      for (var d = 0; d < s.length; d++) r.call(o, s[d]) && (l[s[d]] = o[s[d]])
+      s = t(a);
+      for (var d = 0; d < s.length; d++) r.call(a, s[d]) && (l[s[d]] = a[s[d]])
     }
   }
   return l

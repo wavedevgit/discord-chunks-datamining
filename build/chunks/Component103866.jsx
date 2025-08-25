@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   Chunk793030 = require("./793030.js"),
   Chunk742746 = require("./742746.js"),
@@ -70,10 +70,10 @@ function b(e) {
     listProps: i
   } = e;
   if (null == n && null == t && null == i) return null;
-  let a = E(n);
+  let o = E(n);
   return (0, r.jsx)(y, {
     controls: t,
-    children: a,
+    children: o,
     listProps: i
   })
 }
@@ -81,12 +81,12 @@ function b(e) {
 function y(e) {
   var t, n;
   let {
-    controls: a,
+    controls: o,
     children: d,
     listProps: p
   } = e, [m, E] = i.useState(false), [b, y] = i.useState(null != p), O = i.useRef(null), v = (0, f.Z)(O, null == p ? true : p.ref), I = i.useRef(null), T = (0, s.throttle)(() => {
     var e;
-    (null == O ? true : O.current) != null && null != a && E((null == (e = O.current) ? true : e.getDistanceFromTop()) > 12)
+    (null == O ? true : O.current) != null && null != o && E((null == (e = O.current) ? true : e.getDistanceFromTop()) > 12)
   }, 200), S = null != p;
   return i.useLayoutEffect(() => {
     var e, t;
@@ -102,14 +102,14 @@ function y(e) {
     return null != r && n.observe(r), (null == I ? true : I.current) != null && n.observe(I.current), () => n.disconnect()
   }, [S]), (0, r.jsxs)(l.y5, {
     children: [(0, r.jsx)("div", {
-      className: o()(_.bodySpacerTop, {
-        [_.bodySpacerTopBorder]: b && null == a
+      className: a()(_.bodySpacerTop, {
+        [_.bodySpacerTopBorder]: b && null == o
       })
-    }), null != a && (0, r.jsx)("header", {
-      className: o()(_.bodyControls, {
+    }), null != o && (0, r.jsx)("header", {
+      className: a()(_.bodyControls, {
         [_.bodyControlsWithFade]: m
       }),
-      children: a
+      children: o
     }), null != p ? (0, r.jsx)(c._2, g(h({}, p), {
       className: _.bodyList,
       innerAriaOrientation: null != (t = p.innerAriaOrientation) ? t : "vertical",
@@ -125,13 +125,13 @@ function y(e) {
       onScroll: T,
       children: (0, r.jsx)("main", {
         ref: I,
-        className: o()(_.bodyInner, {
+        className: a()(_.bodyInner, {
           [_.bodyInnerShouldScroll]: b
         }),
         children: d
       })
     }), (0, r.jsx)("div", {
-      className: o()(_.bodySpacerBottom, {
+      className: a()(_.bodySpacerBottom, {
         [_.bodySpacerBottomBorder]: b
       })
     })]

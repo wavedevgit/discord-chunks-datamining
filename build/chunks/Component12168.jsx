@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   Chunk202841 = require("./202841.js"),
   Chunk481060 = require("./481060.js"),
@@ -72,13 +72,13 @@ function P(e) {
   let {
     emoji: t,
     isDisabled: n = false,
-    onClick: a,
+    onClick: o,
     className: s
   } = e, f = i.useRef(null), _ = (0, d.Z)(f);
   return (0, r.jsx)("span", {
     ref: f,
     children: (0, r.jsx)(c.P3F, {
-      onClick: a,
+      onClick: o,
       focusProps: {
         enabled: !n
       },
@@ -99,7 +99,7 @@ function P(e) {
               transform: i.to([0, 1], [1, 1.14]).to(e => "scale(".concat(e, ")"))
             },
             children: (0, r.jsx)(u.Z, {
-              className: o()(I.emoji, s, {
+              className: a()(I.emoji, s, {
                 [I.emojiItemDisabled]: n
               }),
               emojiId: t.id,
@@ -118,18 +118,18 @@ function w(e) {
     otherAccessories: t,
     isEmojiPickerExpanded: n,
     onSetExpanded: i,
-    onFocus: a
+    onFocus: o
   } = e;
   return (0, r.jsxs)(r.Fragment, {
     children: [t, (0, r.jsx)(c.P3F, {
       className: I.dropDownContainer,
       onClick: () => {
-        i(!n), a()
+        i(!n), o()
       },
       children: (0, r.jsx)(c.CJ0, {
         size: "md",
         color: "currentColor",
-        className: o()(I.dropDown, {
+        className: a()(I.dropDown, {
           [I.dropDownOpen]: n
         })
       })
@@ -141,7 +141,7 @@ function D(e) {
   let {
     channel: t,
     title: n,
-    closePopout: a,
+    closePopout: o,
     onFocus: l,
     onSelectEmoji: u,
     onSelectDisabledEmoji: d,
@@ -150,13 +150,13 @@ function D(e) {
     recentlyUsedEmojis: b,
     analyticsOverride: T,
     ref: A
-  } = e, D = (0, f.Dt)(), [x, L] = i.useState(false), j = (0, _.wC)(t.guild_id), k = (0, s.uniqBy)([...j, ...R], "name").filter(e => !E.ZP.isEmojiFilteredOrLocked({
+  } = e, D = (0, f.Dt)(), [x, L] = i.useState(false), j = (0, _.wC)(t.guild_id), M = (0, s.uniqBy)([...j, ...R], "name").filter(e => !E.ZP.isEmojiFilteredOrLocked({
     emoji: e,
     channel: t,
     intention: N
   })).slice(0, y.e5);
-  null != b && b.length > 0 && k.splice(k.length - 1, 1, b[0]);
-  let M = e => {
+  null != b && b.length > 0 && M.splice(M.length - 1, 1, b[0]);
+  let k = e => {
       L(e), null == p || p(e)
     },
     U = e => {
@@ -164,11 +164,11 @@ function D(e) {
         emoji: t,
         willClose: n
       } = e;
-      if (null == t && n) return void a();
-      null != t && u(t), M(!n), n && g.kJ.setSearchPlaceholder(null)
+      if (null == t && n) return void o();
+      null != t && u(t), k(!n), n && g.kJ.setSearchPlaceholder(null)
     },
     G = e => {
-      null != e && e.key !== v.vn.TAB && (e.key !== v.vn.ENTER || e.shiftKey ? M(true) : M(!x))
+      null != e && e.key !== v.vn.TAB && (e.key !== v.vn.ENTER || e.shiftKey ? k(true) : k(!x))
     };
   return (0, r.jsxs)(c.VqE, {
     "aria-labelledby": D,
@@ -186,13 +186,13 @@ function D(e) {
       children: [(0, r.jsx)(h.Z, {
         analyticsOverride: T,
         channel: t,
-        className: o()(I.animatedPicker, {
+        className: a()(I.animatedPicker, {
           [I.animatedPickerTall]: x
         }),
-        headerClassName: o()(I.emojiPickerHeader, {
+        headerClassName: a()(I.emojiPickerHeader, {
           [I.emojiPickerHeaderExpanded]: x
         }),
-        closePopout: a,
+        closePopout: o,
         onSelectEmoji: x ? U : () => {},
         shouldHidePickerActions: !x,
         wrapper: "div",
@@ -201,7 +201,7 @@ function D(e) {
           accessory: (0, r.jsx)(w, {
             otherAccessories: null == m ? true : m.accessory,
             isEmojiPickerExpanded: x,
-            onSetExpanded: M,
+            onSetExpanded: k,
             onFocus: l
           }),
           onKeyDown: G
@@ -209,8 +209,8 @@ function D(e) {
       }), (0, r.jsx)("div", {
         className: I.slotsContainer,
         children: (0, r.jsx)("div", {
-          className: o()(I.slots, I.slotsWide),
-          children: k.map(e => {
+          className: a()(I.slots, I.slotsWide),
+          children: M.map(e => {
             let n = E.ZP.isEmojiDisabled({
               emoji: e,
               channel: t,

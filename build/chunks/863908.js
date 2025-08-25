@@ -10,27 +10,27 @@ var Chunk458725 = require("./458725.js"),
   Chunk388032 = require("./388032.jsx");
 
 function s(e, t, n, s) {
-  if (e.state === a.jm8.RECONNECTING) {
+  if (e.state === o.jm8.RECONNECTING) {
     var l;
     let e = null == (l = (0, r.hp)(r.u.STREAM_RECONNECTING)) ? true : l.errorCode;
     return {
-      mainText: o.intl.string(o.t.pdFFKy),
-      supportingText: o.intl.string(o.t["+PuO2N"]),
-      errorCodeText: o.intl.formatToPlainString(o.t["ejOT9/"], {
+      mainText: a.intl.string(a.t.pdFFKy),
+      supportingText: a.intl.string(a.t["+PuO2N"]),
+      errorCodeText: a.intl.formatToPlainString(a.t["ejOT9/"], {
         errorCode: e
       })
     }
   }
-  return e.state === a.jm8.PAUSED ? n ? {
-    mainText: o.intl.string(o.t["5q17w8"]),
-    supportingText: o.intl.string(o.t.LV1NSE)
+  return e.state === o.jm8.PAUSED ? n ? {
+    mainText: a.intl.string(a.t["5q17w8"]),
+    supportingText: a.intl.string(a.t.LV1NSE)
   } : {
-    mainText: o.intl.string(o.t["5q17w8"]),
-    supportingText: o.intl.formatToPlainString(o.t.meVVlZ, {
+    mainText: a.intl.string(a.t["5q17w8"]),
+    supportingText: a.intl.formatToPlainString(a.t.meVVlZ, {
       username: i.ZP.getName(e.guildId, e.channelId, t)
     })
   } : s ? {
-    mainText: o.intl.string(o.t.JmaKtL),
-    supportingText: o.intl.string(o.t["hC3+BA"])
+    mainText: a.intl.string(a.t.JmaKtL),
+    supportingText: a.intl.string(a.t["hC3+BA"])
   } : null
 }

@@ -17,7 +17,7 @@ function l(e) {
   } = e, l = r.useRef([]);
   return r.useEffect(() => {
     (0, i.E)(l.current, t.participants) || (l.current = t.participants, t.participants.filter(e => null == s.default.getUser(e)).forEach(e => {
-      null == n.guild_id ? (0, a.PR)(e) : o.Z.requestMember(n.guild_id, e)
+      null == n.guild_id ? (0, o.PR)(e) : a.Z.requestMember(n.guild_id, e)
     }))
   }, [t, n.guild_id]), {}
 }

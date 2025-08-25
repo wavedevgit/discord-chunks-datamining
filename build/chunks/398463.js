@@ -11,18 +11,18 @@ function r(e, t, n) {
   }) : e[t] = n, e
 }
 require.d(exports, {
-  HO: () => o,
+  HO: () => a,
   Hb: () => l,
   II: () => s,
   Lj: () => d,
   Ls: () => u,
   Lu: () => i,
   OT: () => c,
-  TC: () => a
+  TC: () => o
 });
 let i = 1e3 / 60 * 3,
-  a = 1e3 / 60 * 3,
-  o = 1e3 / 60 / 8,
+  o = 1e3 / 60 * 3,
+  a = 1e3 / 60 / 8,
   s = 1e3 / 60 * 12,
   l = 1e3,
   c = 2,
@@ -40,12 +40,12 @@ class d {
   }
   generateDeadlineMetrics() {
     return {
-      isDeadlineNotIdeal: this._browserDeadlineMs < o,
+      isDeadlineNotIdeal: this._browserDeadlineMs < a,
       deadlineMs: this._deadlineMs.toFixed(2),
       timeSinceStartMs: (performance.now() - this._startMs).toFixed(2)
     }
   }
   constructor(e, t = false) {
-    r(this, "_browserDeadlineMs", true), r(this, "_deadlineMs", true), r(this, "_startMs", true), r(this, "_firedDueToMaxTimeout", true), this._deadlineMs = Math.max(o, e), this._browserDeadlineMs = e, this._firedDueToMaxTimeout = t, this._startMs = performance.now()
+    r(this, "_browserDeadlineMs", true), r(this, "_deadlineMs", true), r(this, "_startMs", true), r(this, "_firedDueToMaxTimeout", true), this._deadlineMs = Math.max(a, e), this._browserDeadlineMs = e, this._firedDueToMaxTimeout = t, this._startMs = performance.now()
   }
 }

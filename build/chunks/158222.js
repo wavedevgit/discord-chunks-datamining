@@ -24,7 +24,7 @@ async function l(e) {
   });
   try {
     let t = (await r.tn.get({
-      url: o.ANM.MEDIA_POST_RESHARE_GET_PREVIEW(e),
+      url: a.ANM.MEDIA_POST_RESHARE_GET_PREVIEW(e),
       rejectWithError: true
     })).body;
     i.Z.dispatch({
@@ -42,13 +42,13 @@ async function l(e) {
 async function c(e) {
   try {
     return (await r.tn.post({
-      url: o.ANM.UNFURL_EMBED_URLS,
+      url: a.ANM.UNFURL_EMBED_URLS,
       body: {
         urls: e
       },
       rejectWithError: false
     })).body
   } catch (e) {
-    throw new a.Hx(e)
+    throw new o.Hx(e)
   }
 }

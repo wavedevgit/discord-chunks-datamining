@@ -4,10 +4,10 @@
 let r;
 require.d(exports, {
   Rp: () => Chunk840498.Rp,
-  _p: () => o,
-  w4: () => a
+  _p: () => a,
+  w4: () => o
 });
 var Chunk840498 = require("./840498.js");
 require("./411226.js");
-let a = (r = require("./842091.js").Z).reactParserFor,
-  o = r.astParserFor
+let o = (r = require("./842091.js").Z).reactParserFor,
+  a = r.astParserFor

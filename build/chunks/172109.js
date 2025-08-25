@@ -14,8 +14,8 @@ function l(e) {
   let {
     id: t,
     isDiscoverable: n
-  } = e, [l, c, u] = (0, i.Wu)([o.Z], () => [o.Z.getApplication(t), o.Z.isInvalidApplication(t), o.Z.getApplicationFetchState(t)], [t]);
+  } = e, [l, c, u] = (0, i.Wu)([a.Z], () => [a.Z.getApplication(t), a.Z.isInvalidApplication(t), a.Z.getApplicationFetchState(t)], [t]);
   return r.useEffect(() => {
-    false === n || c || u === o.M.FETCHED || u === o.M.FETCHING || (0, a.gZ)(t)
+    false === n || c || u === a.M.FETCHED || u === a.M.FETCHING || (0, o.gZ)(t)
   }, [t, u, n, c]), r.useMemo(() => null != l ? e.mergeFromApplicationUpdate(s.ZP.createFromServer(l)) : e, [e, l])
 }

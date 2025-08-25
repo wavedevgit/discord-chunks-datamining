@@ -12,18 +12,18 @@ var Chunk647438 = require("./647438.js"),
 
 function l(e, t) {
   let n = (0, i.e7)([s.Z], () => s.Z.currentOrderId),
-    l = o.Z.useExperiment({
+    l = a.Z.useExperiment({
       location: "payment_modal"
     }).enabled;
   (0, r.useEffect)(() => {
-    l && null != n && (0, a.C)({
+    l && null != n && (0, o.C)({
       orderId: n,
       updates: {
         paymentSourceId: t
       }
     })
   }, [e, t, l]), (0, r.useEffect)(() => {
-    l && null == n && null != e && null != t && (0, a.L)({
+    l && null == n && null != e && null != t && (0, o.L)({
       skuId: e,
       paymentSourceId: t
     })

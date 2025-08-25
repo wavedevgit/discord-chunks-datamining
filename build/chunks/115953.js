@@ -14,14 +14,14 @@ function i(e, t) {
   });
   if ("object" == typeof e || "object" == typeof t) {
     var n = r(e),
-      a = r(t);
-    return n !== e || a !== t ? i(n, a) : Object.keys(Object.assign({}, e, t)).every(function(n) {
+      o = r(t);
+    return n !== e || o !== t ? i(n, o) : Object.keys(Object.assign({}, e, t)).every(function(n) {
       return i(e[n], t[n])
     })
   }
   returnfalse
 }
 require.d(exports, {
-  Z: () => a
+  Z: () => o
 });
-let a = i
+let o = i

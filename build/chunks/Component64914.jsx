@@ -76,11 +76,11 @@ function R() {
 }
 
 function P(e) {
-  (0, f.Y)("DesktopNativeUtils") ? (o.K.set(N, e), h.ZP.setEnableHardwareAcceleration(true)) : h.ZP.setEnableHardwareAcceleration(e)
+  (0, f.Y)("DesktopNativeUtils") ? (a.K.set(N, e), h.ZP.setEnableHardwareAcceleration(true)) : h.ZP.setEnableHardwareAcceleration(e)
 }
 
 function w() {
-  let [e] = Chunk647438.useState(() => R()), t = Chunk695346.bm.useSetting(), n = Chunk695346.Sb.useSetting(), o = (0, Chunk442837.e7)([Chunk695103.Z], () => Chunk695103.Z.testModeApplicationId), f = (0, Chunk442837.e7)([Chunk740492.ZP], () => Chunk740492.ZP.showPlayAgain), h = Chunk647438.useCallback(e => {
+  let [e] = Chunk647438.useState(() => R()), t = Chunk695346.bm.useSetting(), n = Chunk695346.Sb.useSetting(), a = (0, Chunk442837.e7)([Chunk695103.Z], () => Chunk695103.Z.testModeApplicationId), f = (0, Chunk442837.e7)([Chunk740492.ZP], () => Chunk740492.ZP.showPlayAgain), h = Chunk647438.useCallback(e => {
     g.bm.updateSetting(!e)
   }, []), T = Chunk647438.useCallback(e => {
     e ? (0, s.h7j)(e => (0, r.jsx)(b.Z, S({}, e))) : l.mc()

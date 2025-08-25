@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk399606 = require("./399606.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -25,9 +25,9 @@ let E = function(e) {
     className: t,
     guildId: n,
     boostingVariant: i
-  } = e, E = (0, o.e7)([_.Z], () => _.Z.getGuild(n), [n]), b = (0, f.Z)(null == E ? true : E.id).total;
+  } = e, E = (0, a.e7)([_.Z], () => _.Z.getGuild(n), [n]), b = (0, f.Z)(null == E ? true : E.id).total;
   return null == E ? (0, r.jsx)("div", {
-    className: a()(t, g.guildContainer),
+    className: o()(t, g.guildContainer),
     children: (0, r.jsx)("div", {
       className: g.guildInfoContainer,
       children: (0, r.jsx)(l.Text, {
@@ -36,7 +36,7 @@ let E = function(e) {
       })
     })
   }) : (0, r.jsxs)("div", {
-    className: a()(t, g.guildContainer),
+    className: o()(t, g.guildContainer),
     children: [(0, r.jsx)(c.Z, {
       className: g.__invalid_guildIcon,
       guild: E,

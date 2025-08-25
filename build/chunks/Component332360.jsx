@@ -31,7 +31,7 @@ let h = () => {
       })),
       _ = Chunk647438.useCallback(e => (0, r.jsx)(u.I, {
         userId: e.value,
-        avatarSize: a.EFr.SIZE_24,
+        avatarSize: o.EFr.SIZE_24,
         hideUserTag: true
       }), []);
     return 0 === module.length ? null : 1 === module.length ? (0, Chunk951288.jsx)(Chunk87792.I, {

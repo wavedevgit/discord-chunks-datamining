@@ -12,12 +12,12 @@ module.exports = function(e) {
       relevance: 0,
       begin: /=/
     },
-    a = {
+    o = {
       className: "punctuation",
       relevance: 0,
       begin: /,/
     },
-    o = {
+    a = {
       className: "number",
       variants: [{
         begin: /[su]?0[xX][KMLHR]?[a-fA-F0-9]+/
@@ -73,6 +73,6 @@ module.exports = function(e) {
         className: "char.escape",
         match: /\\\d\d/
       }]
-    }, c, a, i, l, s, o]
+    }, c, o, i, l, s, a]
   }
 }

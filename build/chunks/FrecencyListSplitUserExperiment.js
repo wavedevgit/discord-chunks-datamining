@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   S: () => i,
-  Z: () => a
+  Z: () => o
 });
 let r = (0, require("./818083.js").B)({
   kind: "user",
@@ -36,4 +36,4 @@ function i(e) {
     canSplitFrecencyList: i
   }
 }
-let a = r
+let o = r

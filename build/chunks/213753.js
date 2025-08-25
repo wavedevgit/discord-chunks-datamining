@@ -2,19 +2,19 @@
 /** chunk id: 213753, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  V: () => o
+  V: () => a
 });
 var Chunk846903 = require("./846903.js");
 let i = new(require("./710845.js")).Z("codedLinkQueue"),
-  a = new Chunk846903.default({
+  o = new Chunk846903.default({
     concurrency: 5,
     intervalCap: 10,
     interval: 2e3
   });
 
-function o(e) {
-  a.add(e)
+function a(e) {
+  o.add(e)
 }
-a.on("add", () => {
-  a.size > 0 && i.warn("Message link fetch queue backlog:", a.size)
+o.on("add", () => {
+  o.size > 0 && i.warn("Message link fetch queue backlog:", o.size)
 })

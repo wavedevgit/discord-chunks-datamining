@@ -31,7 +31,7 @@ function g(e, t) {
     allowDevLinks: T = false,
     previewLinkTarget: S = false,
     viewingChannelId: A
-  } = t, C = (0, o.p)(), N = a.d.useExperiment({
+  } = t, C = (0, a.p)(), N = o.d.useExperiment({
     location: "useMessageRenderedContent"
   }).enabled, R = (0, f.o)({
     location: "useMessageRenderedContent"

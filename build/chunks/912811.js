@@ -7,12 +7,12 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk995803 = require("./995803.js"),
   Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711);
+  o = require.n(Chunk392711);
 
-function o(e) {
+function a(e) {
   let t = {};
-  for (let n of Object.keys(e)) t[a().kebabCase(n)] = e[n];
+  for (let n of Object.keys(e)) t[o().kebabCase(n)] = e[n];
   return t
 }
-let s = o(Chunk995803.Fit),
-  l = o(Chunk995803.Alignment)
+let s = a(Chunk995803.Fit),
+  l = a(Chunk995803.Alignment)

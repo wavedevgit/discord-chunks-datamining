@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
@@ -48,18 +48,18 @@ let y = () => {
     let {
       ctaText: t,
       ctaOnClick: n,
-      analyticsPage: a,
+      analyticsPage: o,
       linkPreText: s = h.intl.string(h.t["5qZv9P"]),
       linkText: u = h.intl.string(h.t.XRdyj4)
     } = e, d = i.useCallback(() => {
-      null != a && (0, _.Y)({
-        pageType: a,
+      null != o && (0, _.Y)({
+        pageType: o,
         sectionType: p.jXE.ORBS_BALANCE_MENU,
         ctaObject: p.qAy.ORBS_LEARN_MORE_LINK
       })
-    }, [a]);
+    }, [o]);
     return (0, r.jsxs)("div", {
-      className: o()(m.container, g.baseCardOutline),
+      className: a()(m.container, g.baseCardOutline),
       children: [(0, r.jsx)(y, {}), (0, r.jsx)(l.zx, {
         text: t,
         variant: "primary",

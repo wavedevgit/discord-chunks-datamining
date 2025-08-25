@@ -42,7 +42,7 @@ function h(e) {
   let {
     transitionState: t,
     onClose: n
-  } = e, _ = (0, a.e7)([l.default], () => {
+  } = e, _ = (0, o.e7)([l.default], () => {
     var e;
     return null == (e = l.default.getCurrentUser()) ? true : e.email
   }), [p, h] = i.useState({
@@ -63,15 +63,15 @@ function h(e) {
       })
     })
   }, []);
-  let m = () => (0, r.jsx)(o.mzw, {
+  let m = () => (0, r.jsx)(a.mzw, {
     className: d.modalFooter,
-    children: (0, r.jsx)(o.zxk, {
+    children: (0, r.jsx)(a.zxk, {
       variant: "primary",
       text: u.intl.string(u.t.cpT0Cg),
       onClick: n
     })
   });
-  return (0, r.jsxs)(o.Y0X, {
+  return (0, r.jsxs)(a.Y0X, {
     transitionState: t,
     disableTrack: true,
     parentComponent: "QuestsRewardModalUnverified",
@@ -79,47 +79,47 @@ function h(e) {
       alt: "",
       className: d.headerImage,
       src: f
-    }), (0, r.jsxs)(o.xBx, {
+    }), (0, r.jsxs)(a.xBx, {
       separator: false,
       className: d.header,
-      children: [(0, r.jsx)(o.X6q, {
+      children: [(0, r.jsx)(a.X6q, {
         className: d.title,
         variant: "heading-xl/bold",
         children: u.intl.string(u.t.c8eASE)
-      }), (0, r.jsx)(o.olH, {
+      }), (0, r.jsx)(a.olH, {
         onClick: n,
         className: d.modalCloseButton
       })]
-    }), "loading" === p.status && (0, r.jsx)(o.hzk, {
+    }), "loading" === p.status && (0, r.jsx)(a.hzk, {
       className: d.content,
-      children: (0, r.jsx)(o.$jN, {})
+      children: (0, r.jsx)(a.$jN, {})
     }), "error" === p.status && (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(o.hzk, {
+      children: [(0, r.jsx)(a.hzk, {
         className: d.content,
-        children: (0, r.jsx)(o.Text, {
+        children: (0, r.jsx)(a.Text, {
           variant: "text-md/normal",
           children: u.intl.string(u.t.vjyinp)
         })
       }), m()]
     }), "success" === p.status && (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(o.hzk, {
+      children: [(0, r.jsx)(a.hzk, {
         className: d.content,
-        children: (0, r.jsx)(o.Text, {
+        children: (0, r.jsx)(a.Text, {
           variant: "text-md/normal",
           children: u.intl.format(u.t.qP5xYW, {
             emailAddress: _,
             emailAddressLink: "mailto:".concat(_)
           })
         })
-      }), (0, r.jsx)(o.hzk, {
+      }), (0, r.jsx)(a.hzk, {
         className: d.content,
         children: (0, r.jsxs)("div", {
           className: d.tooltip,
-          children: [(0, r.jsx)(o.d3s, {
+          children: [(0, r.jsx)(a.d3s, {
             size: "xs",
             color: "currentColor",
             className: d.infoFilledIcon
-          }), (0, r.jsx)(o.Text, {
+          }), (0, r.jsx)(a.Text, {
             className: d.tooltipText,
             variant: "text-sm/normal",
             children: u.intl.string(u.t.yb7itb)

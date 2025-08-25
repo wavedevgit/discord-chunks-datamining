@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   i: () => L,
-  y: () => k
+  y: () => M
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -69,8 +69,8 @@ function C(e, t) {
   if (null == e) return {};
   var n, r, i = N(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -78,8 +78,8 @@ function C(e, t) {
 function N(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -88,7 +88,7 @@ function R(e) {
     quest: t,
     sourceQuestContent: n,
     taskDetails: i
-  } = e, o = () => {
+  } = e, a = () => {
     var e;
     let r = (null == (e = t.userStatus) ? true : e.enrolledAt) == null ? u.jZ.ACCEPT_QUEST : u.jZ.WATCH_VIDEO;
     (0, g.openVideoQuestModal)({
@@ -98,10 +98,10 @@ function R(e) {
       sourceQuestContentCTA: r
     })
   };
-  return (0, r.jsx)(a.z, {
+  return (0, r.jsx)(o.z, {
     variant: "primary",
     fullWidth: true,
-    onClick: o,
+    onClick: a,
     size: "sm",
     text: (0, f.F9)(i)
   })
@@ -110,8 +110,8 @@ let P = e => {
     let {
       quest: t,
       sourceQuestContent: n
-    } = e, i = (0, d.aM)(), o = (0, f.pO)(t) ? O.intl.string(O.t.hvVgAQ) : O.intl.string(O.t.lwQdjI);
-    return (0, r.jsx)(a.z, {
+    } = e, i = (0, d.aM)(), a = (0, f.pO)(t) ? O.intl.string(O.t.hvVgAQ) : O.intl.string(O.t.lwQdjI);
+    return (0, r.jsx)(o.z, {
       size: "sm",
       fullWidth: true,
       onClick: () => (0, f.nc)(t, {
@@ -120,7 +120,7 @@ let P = e => {
         impressionId: i,
         sourceQuestContent: n
       }),
-      text: o
+      text: a
     })
   },
   w = e => {
@@ -128,15 +128,15 @@ let P = e => {
     let {
       quest: n,
       sourceQuestContent: i
-    } = e, o = null == (t = (0, d.WD)()) ? true : t.getId();
-    return (0, r.jsx)(a.z, {
+    } = e, a = null == (t = (0, d.WD)()) ? true : t.getId();
+    return (0, r.jsx)(o.z, {
       fullWidth: true,
       onClick: () => (0, f.gI)({
         quest: n
       }, {
         content: p.jn.QUEST_BAR_V2,
         ctaContent: u.jZ.CONNECT_CONSOLE,
-        impressionId: o,
+        impressionId: a,
         sourceQuestContent: i
       }),
       size: "sm",
@@ -146,17 +146,17 @@ let P = e => {
   D = e => {
     let {
       quest: t
-    } = e, n = (0, f.Vl)(t), i = t.config.features.includes(b.S7.START_QUEST_CTA), o = (0, m.CR)({
+    } = e, n = (0, f.Vl)(t), i = t.config.features.includes(b.S7.START_QUEST_CTA), a = (0, m.CR)({
       quest: t
     }), {
       launchInGameActivity: s
     } = (0, _.zB)(t);
-    return n && i ? (0, r.jsx)(a.z, {
+    return n && i ? (0, r.jsx)(o.z, {
       fullWidth: true,
       variant: "primary",
       onClick: s,
       size: "sm",
-      text: o
+      text: a
     }) : null
   },
   x = e => {
@@ -164,20 +164,20 @@ let P = e => {
       taskDetails: t
     } = e, {
       applications: n
-    } = t, o = i.useCallback(() => {
+    } = t, a = i.useCallback(() => {
       (0, h.v)(n)
     }, [n]);
-    return (0, r.jsx)(a.z, {
+    return (0, r.jsx)(o.z, {
       fullWidth: true,
       size: "sm",
-      onClick: o,
+      onClick: a,
       text: O.intl.string(O.t["93PTEh"])
     })
   },
   L = e => {
     var t, {
         quest: n,
-        useReducedMotion: a,
+        useReducedMotion: o,
         isExpanded: u,
         className: d,
         ctaLabel: _,
@@ -203,9 +203,9 @@ let P = e => {
       }, [h, n.config, null == (t = n.userStatus) ? true : t.claimedAt, S]);
     return (0, r.jsx)(s.gtL, A(T({
       fullWidth: true,
-      size: o.zx.Sizes.SMALL,
+      size: a.zx.Sizes.SMALL,
       onClick: N,
-      pauseAnimation: a || !u && !b,
+      pauseAnimation: o || !u && !b,
       className: d,
       buttonShineClassName: v.shine
     }, I), {
@@ -217,8 +217,8 @@ let P = e => {
     let {
       quest: n,
       sourceQuestContent: i,
-      useReducedMotion: a,
-      isExpanded: o,
+      useReducedMotion: o,
+      isExpanded: a,
       awaitingConsoleConnections: s,
       hasMadeProgress: l,
       isProgressing: c,
@@ -229,8 +229,8 @@ let P = e => {
     if (h) return (0, r.jsx)(L, {
       quest: n,
       sourceQuestContent: i,
-      useReducedMotion: a,
-      isExpanded: o,
+      useReducedMotion: o,
+      isExpanded: a,
       shouldShowRewardsCTAWhenCollapsed: _
     });
     if (m) return (0, r.jsx)(R, {
@@ -255,10 +255,10 @@ let P = e => {
     return null
   };
 
-function k(e) {
+function M(e) {
   return (0, r.jsxs)("div", {
     className: v.ctaButtons,
-    children: [e.showBackButton && (0, r.jsx)(o.zx, {
+    children: [e.showBackButton && (0, r.jsx)(a.zx, {
       className: v.backButton,
       innerClassName: v.backButtonInner,
       look: "blank",

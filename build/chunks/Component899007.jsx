@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk420660 = require("./420660.js"),
@@ -71,7 +71,7 @@ function P(e) {
   let {
     user: t,
     displayProfile: n,
-    guildId: a,
+    guildId: o,
     channelId: h,
     themeType: S,
     animateOnHover: C,
@@ -84,7 +84,7 @@ function P(e) {
     analyticsLocations: L
   } = (0, d.ZP)(u.Z.AVATAR), {
     trackUserProfileAction: j
-  } = (0, m.KZ)(), k = p.ZP.isPremiumAtLeast(null == n ? true : n.premiumType, v.p9.TIER_2), M = i.useMemo(() => t.isNonUserBot() || (0, f.W)(t, h), [t, h]), {
+  } = (0, m.KZ)(), M = p.ZP.isPremiumAtLeast(null == n ? true : n.premiumType, v.p9.TIER_2), k = i.useMemo(() => t.isNonUserBot() || (0, f.W)(t, h), [t, h]), {
     live: U
   } = (0, g.Z)(t.id), [G] = U, {
     status: B,
@@ -92,13 +92,13 @@ function P(e) {
   } = (0, s.cj)([_.Z], () => ({
     status: (0, c.Z)(G) ? O.Skl.STREAMING : _.Z.getStatus(t.id),
     isMobileOnline: _.Z.isMobileOnline(t.id)
-  })), F = true !== D ? D : B, V = [I.l.MODAL, I.l.MODAL_V2].includes(S) ? l.EFr.SIZE_120 : l.EFr.SIZE_80, H = o()(T.avatar, w), {
+  })), F = true !== D ? D : B, V = [I.l.MODAL, I.l.MODAL_V2].includes(S) ? l.EFr.SIZE_120 : l.EFr.SIZE_80, H = a()(T.avatar, w), {
     avatarDecorationSrc: Y,
     avatarSrc: W,
     eventHandlers: K
   } = (0, E.Z)({
     userId: t.id,
-    guildId: null != n ? n.guildId : a,
+    guildId: null != n ? n.guildId : o,
     size: V,
     animateOnHover: C
   }), z = (0, r.jsx)(R, {
@@ -107,8 +107,8 @@ function P(e) {
     size: V,
     "aria-label": t.username,
     imageClassName: null != P ? T.overlay : true,
-    status: M ? O.Skl.UNKNOWN : F,
-    statusBackdropColor: k && !M ? (0, l.QFD)(x) : true,
+    status: k ? O.Skl.UNKNOWN : F,
+    statusBackdropColor: M && !k ? (0, l.QFD)(x) : true,
     isMobile: Z,
     statusTooltip: true,
     statusTooltipDelay: y.vB
@@ -117,7 +117,7 @@ function P(e) {
     className: H,
     children: z
   })) : (0, r.jsx)(l.P3F, N(A({}, K), {
-    className: o()(H, T.clickable),
+    className: a()(H, T.clickable),
     focusProps: {
       ringClassName: T.focusRing
     },

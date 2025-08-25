@@ -26,11 +26,11 @@ function u(e) {
     iconNode: (0, r.jsx)(i.Dkj, {
       colorClass: c.icon
     }),
-    children: (0, r.jsx)(a.Z, {
+    children: (0, r.jsx)(o.Z, {
       giftIntentType: t,
-      premiumGiftIntentCardType: a.U.SYSTEM_MESSAGE,
+      premiumGiftIntentCardType: o.U.SYSTEM_MESSAGE,
       recipientUser: n,
-      analyticsPage: (0, o.mE)(d),
+      analyticsPage: (0, a.mE)(d),
       analyticsSection: l.jXE.CHANNEL,
       giftIntentSecondaryAction: u
     })

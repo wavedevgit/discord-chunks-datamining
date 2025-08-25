@@ -9,7 +9,7 @@ require("./647438.js");
 var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,7 +25,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      a(e, t, n[t])
     })
   }
   return e
@@ -49,12 +49,12 @@ function c(e, t) {
 }
 
 function u(e, t, n) {
-  (0, i.h7j)(o => (0, r.jsx)(i.ConfirmModal, c(s({
+  (0, i.h7j)(a => (0, r.jsx)(i.ConfirmModal, c(s({
     header: e,
-    confirmText: a.intl.string(a.t.BddRzc),
-    cancelText: a.intl.string(a.t["ETE/oK"]),
+    confirmText: o.intl.string(o.t.BddRzc),
+    cancelText: o.intl.string(o.t["ETE/oK"]),
     onConfirm: n
-  }, o), {
+  }, a), {
     children: (0, r.jsx)(i.Text, {
       variant: "text-md/normal",
       children: t

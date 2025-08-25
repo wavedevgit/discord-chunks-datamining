@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   DB: () => i,
-  V9: () => o,
-  my: () => a
+  V9: () => a,
+  my: () => o
 }), require("./35282.js"), require("./388685.js"), require("./415506.js");
 var Chunk70722 = require("./70722.js");
 
@@ -12,7 +12,7 @@ function i(e) {
   return null != e && (e.startsWith(r.lo.GUILD) || e.startsWith(r.lo.CALL))
 }
 
-function a(e) {
+function o(e) {
   let t = e.split(":"),
     n = t[0];
   switch (n) {
@@ -38,18 +38,18 @@ function a(e) {
   }
 }
 
-function o(e) {
+function a(e) {
   let {
     streamType: t,
     guildId: n,
     channelId: i,
-    ownerId: a
+    ownerId: o
   } = e;
   switch (t) {
     case r.lo.GUILD:
-      return [t, n, i, a].join(":");
+      return [t, n, i, o].join(":");
     case r.lo.CALL:
-      return [t, i, a].join(":");
+      return [t, i, o].join(":");
     default:
       throw Error("Unknown stream type ".concat(t))
   }

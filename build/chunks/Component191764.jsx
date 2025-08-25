@@ -25,7 +25,7 @@ function p(e) {
     onClose: h
   } = e, {
     newestAnalyticsLocation: m
-  } = (0, o.ZP)(), g = (0, i.e7)([c.Z, s.Z], () => {
+  } = (0, a.ZP)(), g = (0, i.e7)([c.Z, s.Z], () => {
     var e;
     return s.Z.getChannel(null == (e = c.Z.getVoiceStateForUser(t.id)) ? true : e.channelId)
   }), E = (0, i.e7)([l.Z], () => l.Z.getChannelId() === (null == g ? true : g.id));
@@ -36,7 +36,7 @@ function p(e) {
     onClick: e => {
       e.stopPropagation(), null == p || p({
         action: "PRESS_HANG_STATUS_BUTTON"
-      }), a.default.selectVoiceChannel(g.id), u.default.track(f.rMx.HANG_STATUS_CTA_CLICKED, {
+      }), o.default.selectVoiceChannel(g.id), u.default.track(f.rMx.HANG_STATUS_CTA_CLICKED, {
         channel_id: g.id,
         guild_id: g.guild_id,
         source: m

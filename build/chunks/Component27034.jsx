@@ -9,7 +9,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
   l = require.n(Chunk512722),
   Chunk603113 = require("./603113.js"),
@@ -23,8 +23,8 @@ function h(e, t) {
   if (null == e) return {};
   var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -32,8 +32,8 @@ function h(e, t) {
 function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -50,7 +50,7 @@ function g(e) {
 }
 
 function E(e) {
-  var t, n, a, s, c, h;
+  var t, n, o, s, c, h;
   let m, {
       header: E,
       isLargeModal: b,
@@ -75,7 +75,7 @@ function E(e) {
   }, [O, S]), l()(null != D, "Unknown step for current payment flow.");
   let x = null != (c = null == D || null == (t = D.options) ? true : t.hideSlider) && c,
     L = null == D || null == (n = D.options) ? true : n.bodyClassName,
-    j = null == D || null == (a = D.options) ? true : a.sliderBodyClassName;
+    j = null == D || null == (o = D.options) ? true : o.sliderBodyClassName;
   switch (true !== b && b && (j = p.sliderBodyLarge), O) {
     case f.h8.ADD_PAYMENT_STEPS:
       m = 408;
@@ -90,7 +90,7 @@ function E(e) {
     children: [null == (h = null == D || null == (s = D.options) ? true : s.renderHeader) || h ? E : null, D.renderStep(y), null == O || x ? null : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(u.hzk, {
         "data-migration-pending": true,
-        className: o()(L, p.body, C, {
+        className: a()(L, p.body, C, {
           [p.reviewStep]: O === f.h8.REVIEW,
           [p.addPaymentStepForPremium]: O === f.h8.ADD_PAYMENT_STEPS && w
         }),
@@ -103,7 +103,7 @@ function E(e) {
           children: v.filter(e => null != e.key).map(e => (0, r.jsx)(u.Mi4, {
             id: e.key,
             children: (0, r.jsx)("form", {
-              className: o()(p.sliderBody, j),
+              className: a()(p.sliderBody, j),
               ref: e => {
                 I(e)
               },

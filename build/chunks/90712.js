@@ -13,10 +13,10 @@ var Chunk726542 = require("./726542.js"),
 let c = new Set([Chunk981631.ABu.LEAGUE_OF_LEGENDS, Chunk981631.ABu.ROBLOX, Chunk981631.ABu.TWITCH, Chunk981631.ABu.YOUTUBE]);
 
 function u(e) {
-  if ((0, a.Z)(e)) return r.Z.get(l.ABu.SPOTIFY);
+  if ((0, o.Z)(e)) return r.Z.get(l.ABu.SPOTIFY);
   if ((0, i.Z)(e)) return r.Z.get(l.ABu.CRUNCHYROLL);
   if ((0, s.Z)(e)) return r.Z.get(l.ABu.XBOX);
-  if ((0, o.Z)(e)) return r.Z.get(l.ABu.PLAYSTATION);
+  if ((0, a.Z)(e)) return r.Z.get(l.ABu.PLAYSTATION);
   let t = r.Z.find(t => {
     let {
       name: n

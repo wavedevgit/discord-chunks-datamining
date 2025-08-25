@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
   Chunk159635 = require("./159635.js"),
-  o = require.n(Chunk159635),
+  a = require.n(Chunk159635),
   Chunk933557 = require("./933557.js"),
   Chunk339085 = require("./339085.js"),
   Chunk633302 = require("./633302.js"),
@@ -68,13 +68,13 @@ function j(e, t) {
   return n
 }
 
-function k(e, t) {
+function M(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function M(e, t, n) {
+function k(e, t, n) {
   let r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : null;
   if (t[0] !== e) return null;
   let i = t.substr(e.length);
@@ -105,7 +105,7 @@ function M(e, t, n) {
 function U(e, t, n) {
   let r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : null;
   if (t[0] !== e) return null;
-  if ('"' !== t[1]) return M(e, t, n, r);
+  if ('"' !== t[1]) return k(e, t, n, r);
   let i = 2;
   for (; i < t.length; i++) {
     if ("\\" === t[i]) {
@@ -114,8 +114,8 @@ function U(e, t, n) {
     }
     if ('"' === t[i]) break
   }
-  let a = t.substring(0, i + 1),
-    o = (0, s.mA)(t.substring(2, i));
+  let o = t.substring(0, i + 1),
+    a = (0, s.mA)(t.substring(2, i));
   return n.sortBy(e => {
     let {
       text: t
@@ -125,12 +125,12 @@ function U(e, t, n) {
     let {
       text: t
     } = e;
-    return o === t
+    return a === t
   }).map(e => {
     let {
       id: t
     } = e;
-    return [a, t, r]
+    return [o, t, r]
   }).first()
 }
 
@@ -147,7 +147,7 @@ function G(e) {
 
 function B(e) {
   return {
-    match: o().anyScopeRegex(e),
+    match: a().anyScopeRegex(e),
     parse: e => ({
       type: "text",
       content: e[0]
@@ -163,9 +163,9 @@ let Z = Chunk428595.Z.RULES,
   K = /^<a?:(\w+):(\d+)>/,
   z = /(@everyone|@here|@Clyde)\b/,
   q = {
-    link: G(o().defaultRules.link),
-    autolink: G(o().defaultRules.autolink),
-    url: G(o().defaultRules.url),
+    link: G(a().defaultRules.link),
+    autolink: G(a().defaultRules.autolink),
+    url: G(a().defaultRules.url),
     inlineCode: G(Z.inlineCode),
     codeBlock: G(Z.codeBlock),
     rawUserMention: B(V),
@@ -176,13 +176,13 @@ let Z = Chunk428595.Z.RULES,
       match(e, t, n) {
         let r = n.split(" ").pop() + e;
         if (/^[^ ]+@[^ ]+\.[^ .]+/.test(r)) return null;
-        let i = M("@", e, t.users, "mention");
-        if (i || (i = M("@", e, t.mentionableRoles, "roleMention"))) return i;
-        if (!(i = M("@", e, t.users.map(e => k(L({}, e), {
+        let i = k("@", e, t.users, "mention");
+        if (i || (i = k("@", e, t.mentionableRoles, "roleMention"))) return i;
+        if (!(i = k("@", e, t.users.map(e => M(L({}, e), {
             text: e.text.split("#")[0]
           })), "mention"))) return null;
-        let a = z.exec(e);
-        if (null != a && i[0].length <= a[0].length) return null;
+        let o = z.exec(e);
+        if (null != o && i[0].length <= o[0].length) return null;
         if ("" === n) {
           let t = p.v.exec(e);
           if (null != t && i[0].length <= t[0].length) return null
@@ -221,14 +221,14 @@ let Z = Chunk428595.Z.RULES,
       match: e => c.ZP.EMOJI_NAME_RE.exec(e),
       parse(e, t, n) {
         let [r, i] = e, {
-          customEmoji: a
-        } = n, o = Object.prototype.hasOwnProperty.call(a, i) ? a[i] : null;
-        if (null != o) {
+          customEmoji: o
+        } = n, a = Object.prototype.hasOwnProperty.call(o, i) ? o[i] : null;
+        if (null != a) {
           var s;
           return {
             type: "customEmoticon",
-            content: "<".concat(true === o.animated ? "a" : "", ":").concat(null != (s = o.originalName) ? s : o.name, ":").concat(o.id, ">"),
-            emoji: o
+            content: "<".concat(true === a.animated ? "a" : "", ":").concat(null != (s = a.originalName) ? s : a.name, ":").concat(a.id, ">"),
+            emoji: a
           }
         }
         return {
@@ -244,19 +244,19 @@ let Z = Chunk428595.Z.RULES,
       },
       parse(e, t, n) {
         let [r, i] = e, {
-          emojiContext: a
-        } = n, o = a.getEmoticonByName(i);
-        return null != o ? {
+          emojiContext: o
+        } = n, a = o.getEmoticonByName(i);
+        return null != a ? {
           type: "customEmoticon",
-          content: "<".concat(true === o.animated ? "a" : "", ":").concat(o.name, ":").concat(o.id, ">"),
-          emoji: o
+          content: "<".concat(true === a.animated ? "a" : "", ":").concat(a.name, ":").concat(a.id, ">"),
+          emoji: a
         } : {
           type: "text",
           content: r
         }
       }
     },
-    text: k(L({}, F), {
+    text: M(L({}, F), {
       match: (e, t) => "string" == typeof t.textExclusions && "" !== t.textExclusions ? (0, f.T9)(t.textExclusions).exec(e) : null != F.match ? F.match(e, t, "") : null
     })
   },
@@ -264,31 +264,31 @@ let Z = Chunk428595.Z.RULES,
     inlineCode: G(Z.inlineCode),
     codeBlock: G(Z.codeBlock),
     mention: {
-      match: o().anyScopeRegex(V),
+      match: a().anyScopeRegex(V),
       parse(e, t, n) {
         let {
           isNotification: r,
-          guild: a
-        } = n, o = A.default.getUser(e[1]);
-        if (null == o) return {
+          guild: o
+        } = n, a = A.default.getUser(e[1]);
+        if (null == a) return {
           content: e[0]
         };
-        let s = R.ZP.getUserTag(o, {
+        let s = R.ZP.getUserTag(a, {
           identifiable: r && S.Z.enabled ? "never" : "always"
         });
         if (r) {
-          let e = R.ZP.getGlobalName(o);
+          let e = R.ZP.getGlobalName(a);
           return {
             content: null != e ? "@".concat(e) : "@".concat(s)
           }
         } {
-          if (o.bot) return {
+          if (a.bot) return {
             content: "@".concat(s)
           };
           let e = "";
-          if ((null == a ? true : a.id) != null) {
+          if ((null == o ? true : o.id) != null) {
             let t = s.toLowerCase();
-            e = i().some(O.Z.getUnsafeMutableRoles(a.id), e => t.startsWith(e.name.toLowerCase())) ? "#".concat("".concat(o.discriminator).padStart(4, "0")) : ""
+            e = i().some(O.Z.getUnsafeMutableRoles(o.id), e => t.startsWith(e.name.toLowerCase())) ? "#".concat("".concat(a.discriminator).padStart(4, "0")) : ""
           }
           return {
             content: "@".concat(s).concat(e)
@@ -297,7 +297,7 @@ let Z = Chunk428595.Z.RULES,
       }
     },
     roleMention: {
-      match: o().anyScopeRegex(H),
+      match: a().anyScopeRegex(H),
       parse(e, t, n) {
         let {
           guild: r
@@ -314,7 +314,7 @@ let Z = Chunk428595.Z.RULES,
       }
     },
     gameMention: {
-      match: o().anyScopeRegex(Y),
+      match: a().anyScopeRegex(Y),
       parse(e, t, n) {
         let {
           guild: r
@@ -338,7 +338,7 @@ let Z = Chunk428595.Z.RULES,
       }
     },
     channel: {
-      match: o().anyScopeRegex(W),
+      match: a().anyScopeRegex(W),
       parse(e) {
         let t = g.Z.getChannel(e[1]);
         return {
@@ -347,18 +347,18 @@ let Z = Chunk428595.Z.RULES,
       }
     },
     emoji: {
-      match: o().anyScopeRegex(K),
+      match: a().anyScopeRegex(K),
       parse(e, t, n) {
-        let [r, i, a] = e, {
-          guild: o
-        } = n, s = l.ZP.getDisambiguatedEmojiContext(o ? o.id : null).getById(a), c = null != s ? s.name : i;
+        let [r, i, o] = e, {
+          guild: a
+        } = n, s = l.ZP.getDisambiguatedEmojiContext(a ? a.id : null).getById(o), c = null != s ? s.name : i;
         return {
           content: ":".concat(c, ":")
         }
       }
     },
     soundboard: {
-      match: o().anyScopeRegex(Chunk11637.hf),
+      match: a().anyScopeRegex(Chunk11637.hf),
       parse(e) {
         let [t, n, r] = e;
         return {
@@ -367,18 +367,18 @@ let Z = Chunk428595.Z.RULES,
       }
     },
     spoiler: {
-      match: o().anyScopeRegex(Chunk981631.$92),
+      match: a().anyScopeRegex(Chunk981631.$92),
       parse: () => ({
         content: "<".concat(Chunk388032.intl.string(Chunk388032.t["F+x38P"]).toLowerCase(), ">")
       })
     },
     staticRouteLink: {
-      match: o().anyScopeRegex(Chunk981631.PEY),
+      match: a().anyScopeRegex(Chunk981631.PEY),
       parse: e => ({
         content: "<id:".concat(e[1], ">")
       })
     },
-    timestamp: k(L({}, Z.timestamp), {
+    timestamp: M(L({}, Z.timestamp), {
       parse() {
         for (var e = arguments.length, t = Array(module), n = 0; require < module; require++) exports[require] = arguments[require];
         let r = Z.timestamp.parse(...exports);
@@ -396,7 +396,7 @@ let Z = Chunk428595.Z.RULES,
     e[t].order = n
   })
 });
-let Q = o().parserFor(q),
+let Q = a().parserFor(q),
   J = /(?:<a?:\w+:(\d+)>)|:(?:([^\s:]+?)(?:::skin-tone-\d)?:)/g;
 
 function $(e, t, n) {
@@ -434,7 +434,7 @@ function et(e, t, n) {
 function en(e) {
   let t, n = null == e ? true : e.getGuildId(),
     r = null != n ? v.Z.getGuild(n) : null,
-    a = I.Z.can(P.Plq.MENTION_EVERYONE, e);
+    o = I.Z.can(P.Plq.MENTION_EVERYONE, e);
   t = (null == e ? true : e.isPrivate()) ? e.recipients.map(e => ({
     userId: e,
     nick: null
@@ -448,7 +448,7 @@ function en(e) {
       nick: n
     }
   }) : [];
-  let o = i()(t.reduce((e, t) => {
+  let a = i()(t.reduce((e, t) => {
       let {
         userId: n
       } = t, r = A.default.getUser(n);
@@ -461,7 +461,7 @@ function en(e) {
       let {
         mentionable: t
       } = e;
-      return a || t
+      return o || t
     }).map(e => {
       let {
         id: t,
@@ -498,7 +498,7 @@ function en(e) {
     inline: true,
     mentionableRoles: s,
     guild: r,
-    users: o,
+    users: a,
     channels: c.concat(u).concat(d),
     emojiContext: f,
     customEmoticonsRegex: m,
@@ -532,11 +532,11 @@ let ei = {
   parsePreprocessor: (e, t) => Q(t, en(e)),
   unparse(e, t, n) {
     let r = g.Z.getChannel(t),
-      a = null != r ? r.getGuildId() : null,
-      s = null != a ? v.Z.getGuild(a) : null,
+      o = null != r ? r.getGuildId() : null,
+      s = null != o ? v.Z.getGuild(o) : null,
       l = n ? X : i().omit(X, ["spoiler", "timestamp"]),
       u = n ? er : c.ZP.translateSurrogatesToInlineEmoji,
-      d = o().parserFor(l),
+      d = a().parserFor(l),
       f = {
         inline: true,
         guild: s,

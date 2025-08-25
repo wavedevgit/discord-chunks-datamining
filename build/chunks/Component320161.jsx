@@ -58,8 +58,8 @@ function g(e, t) {
   if (null == e) return {};
   var n, r, i = E(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -67,8 +67,8 @@ function g(e, t) {
 function E(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let b = Chunk70956.Z.Millis.SECOND,
@@ -84,7 +84,7 @@ function I(e) {
     onCopy: f,
     "aria-label": _,
     delay: h = O
-  } = e, [E, I] = i.useState(0), [T, S] = i.useState(false), [A, C] = i.useState(false), [N] = i.useState(() => new o.V7), [R] = i.useState(() => new o.V7);
+  } = e, [E, I] = i.useState(0), [T, S] = i.useState(false), [A, C] = i.useState(false), [N] = i.useState(() => new a.V7), [R] = i.useState(() => new a.V7);
   if (i.useEffect(() => () => {
       N.stop(), R.stop()
     }, [N, R]), !c.wS) return (0, r.jsx)(r.Fragment, {
@@ -96,7 +96,7 @@ function I(e) {
     x = () => {
       var e;
       if (!T) return t;
-      let n = (0, a.clamp)(E - 1, 0, v.length - 1),
+      let n = (0, o.clamp)(E - 1, 0, v.length - 1),
         i = null != (e = v[n]) ? e : v[0];
       return (0, r.jsx)(s.UkV, {
         isShaking: P,

@@ -19,11 +19,11 @@ let _ = e => {
     let {
       text: t,
       badge: n,
-      variant: a
+      variant: o
     } = e;
     return (0, r.jsxs)(i.Text, {
       color: "text-default",
-      variant: null != a ? a : "text-sm/normal",
+      variant: null != o ? o : "text-sm/normal",
       children: [t, " ", n]
     })
   },
@@ -69,10 +69,10 @@ let _ = e => {
             text: d.intl.string(d.t["09yRKy"])
           }),
           column1: (0, r.jsx)(p, {
-            text: o.ZP.formatPriceString(e, c.rV.MONTH)
+            text: a.ZP.formatPriceString(e, c.rV.MONTH)
           }),
           column2: (0, r.jsx)(p, {
-            text: n ? m : o.ZP.formatPriceString(t, c.rV.MONTH)
+            text: n ? m : a.ZP.formatPriceString(t, c.rV.MONTH)
           }),
           withBottomBorder: true
         },
@@ -125,10 +125,10 @@ let _ = e => {
             text: d.intl.string(d.t.ufhQCw)
           }),
           column1: (0, r.jsx)(p, {
-            text: (0, o.v9)(c.p9.TIER_0)
+            text: (0, a.v9)(c.p9.TIER_0)
           }),
           column2: (0, r.jsx)(p, {
-            text: (0, o.v9)(c.p9.TIER_2)
+            text: (0, a.v9)(c.p9.TIER_2)
           })
         },
         6: {
@@ -146,7 +146,7 @@ let _ = e => {
           label: (0, r.jsx)(_, {
             text: d.intl.formatToPlainString(d.t.nyhDp6, {
               numBoosts: c.cb,
-              percentageOff: (0, s.T3)(a.default.locale, c.Rr / 100)
+              percentageOff: (0, s.T3)(o.default.locale, c.Rr / 100)
             })
           }),
           column1: (0, r.jsx)(h, {

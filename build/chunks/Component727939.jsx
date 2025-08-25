@@ -20,8 +20,8 @@ let c = 48,
       defaultPosition: n = l.VD2.BOTTOM_RIGHT,
       children: _,
       topOffset: p
-    } = e, [h, m] = i.useState(n), g = (0, a.e7)([s.Z], () => s.Z.windowSize());
-    return (0, r.jsx)(o._, {
+    } = e, [h, m] = i.useState(n), g = (0, o.e7)([s.Z], () => s.Z.windowSize());
+    return (0, r.jsx)(a._, {
       className: t,
       position: h,
       id: 0,

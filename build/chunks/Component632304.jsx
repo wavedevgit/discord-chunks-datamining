@@ -55,14 +55,14 @@ function p(e, t) {
 
 function h(e) {
   let t = (0, i.e7)([s.Z], () => (0, l.P)(s.Z.getOutputVolume()));
-  return (0, r.jsx)(a.II_, {
+  return (0, r.jsx)(o.II_, {
     id: "output",
     label: u.intl.string(u.t.eATD2N),
-    control: (n, i) => (0, r.jsx)(a._wy, p(f({}, n), {
+    control: (n, i) => (0, r.jsx)(o._wy, p(f({}, n), {
       ref: i,
       value: t,
       maxValue: c.isPlatformEmbedded ? 200 : 100,
-      onChange: t => o.Z.setOutputVolume((0, l.A)(t), {
+      onChange: t => a.Z.setOutputVolume((0, l.A)(t), {
         analyticsLocations: e
       }),
       "aria-label": u.intl.string(u.t.eATD2N)

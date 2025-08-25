@@ -3,14 +3,14 @@
 "use strict";
 var Chunk46015 = require("./46015.js"),
   i = Error,
-  a = Chunk46015("".replace),
-  o = function(e) {
+  o = Chunk46015("".replace),
+  a = function(e) {
     return String(new i(e).stack)
   }("zxcasd"),
   s = /\n\s*at [^:]*:[^\n]*/,
-  l = s.test(o);
+  l = s.test(a);
 module.exports = function(e, t) {
   if (l && "string" == typeof e && !i.prepareStackTrace)
-    for (; t--;) e = a(e, s, "");
+    for (; t--;) e = o(e, s, "");
   return e
 }

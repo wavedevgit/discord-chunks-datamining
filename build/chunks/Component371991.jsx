@@ -9,7 +9,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk846519 = require("./846519.js"),
   Chunk481060 = require("./481060.js"),
@@ -22,22 +22,22 @@ var Chunk951288 = require("./951288.js"),
   Chunk284635 = require("./284635.js");
 
 function g(e) {
-  let [t, n] = i.useState(Date.now()), r = (0, _.n)(), a = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), o = !r || a && !e;
+  let [t, n] = i.useState(Date.now()), r = (0, _.n)(), o = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), a = !r || o && !e;
   return i.useEffect(() => {
     let e = new l.Xp;
-    return e.start(o ? 15 * f.Z.Millis.SECOND : f.Z.Millis.SECOND, () => {
+    return e.start(a ? 15 * f.Z.Millis.SECOND : f.Z.Millis.SECOND, () => {
       n(Date.now())
     }), () => e.stop()
-  }, [o]), {
+  }, [a]), {
     now: t,
-    slowTickMode: o
+    slowTickMode: a
   }
 }
 let E = e => {
     let {
       entry: t,
       inline: n = false,
-      textColor: a,
+      textColor: o,
       textTabularNumbers: s = true,
       textFontCode: l = true,
       hovered: u = false,
@@ -51,14 +51,14 @@ let E = e => {
     }), i.useEffect(() => {
       E.current = b.current
     }, [t]), (0, r.jsx)(c.Text, {
-      className: o()({
+      className: a()({
         [m.fontCode]: l,
         [m.bold]: d,
         [m.inlineTimestamp]: n
       }),
       variant: "text-xs/medium",
       tabularNumbers: s,
-      color: a,
+      color: o,
       scaleFontToUserSetting: f,
       "aria-label": E.current,
       children: p
@@ -68,8 +68,8 @@ let E = e => {
     var t, n;
     let {
       entry: i,
-      textColor: a,
-      hovered: o = false,
+      textColor: o,
+      hovered: a = false,
       bold: l = false,
       scaleFontToUserSetting: u = false
     } = e, f = (0, h.Jg)(i), _ = (0, s.e7)([d.default], () => d.default.locale), m = (0, s.e7)([p.Z], () => p.Z.getMatchingActivity(i)), g = null != (n = null == m || null == (t = m.timestamps) ? true : t.start) ? n : null == m ? true : m.created_at;
@@ -77,19 +77,19 @@ let E = e => {
       entry: {
         start: g
       },
-      textColor: a,
-      hovered: o,
+      textColor: o,
+      hovered: a,
       bold: l,
       scaleFontToUserSetting: u
     }) : f ? (0, r.jsx)(E, {
       entry: i,
-      textColor: a,
-      hovered: o,
+      textColor: o,
+      hovered: a,
       bold: l,
       scaleFontToUserSetting: u
     }) : (0, r.jsx)(c.Text, {
       variant: "text-xs/normal",
-      color: a,
+      color: o,
       lineClamp: 1,
       scaleFontToUserSetting: u,
       children: (0, h.GL)(i, _)

@@ -48,14 +48,14 @@ function p(e) {
   return (0, r.jsxs)("div", {
     className: _.body,
     inert: true,
-    children: [(0, r.jsx)(o.Z, {
+    children: [(0, r.jsx)(a.Z, {
       user: n,
       usernameIcon: D(),
       nickname: w,
       displayNameStyles: true !== I ? I : n.displayNameStyles,
       pronouns: P,
       isTryItOut: T,
-      tags: (0, r.jsx)(a.Z, {
+      tags: (0, r.jsx)(o.Z, {
         displayProfile: p,
         themeType: f.l.POPOUT,
         pendingLegacyUsernameDisabled: O,

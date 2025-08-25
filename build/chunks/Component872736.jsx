@@ -15,12 +15,12 @@ function l(e) {
   let {
     legacyUsername: t,
     pendingLegacyUsernameDisabled: n
-  } = e, l = o.R_.useSetting(), c = true !== n ? n : l;
+  } = e, l = a.R_.useSetting(), c = true !== n ? n : l;
   return (0, r.jsx)(i.j7V, {
     hideBorder: true,
     value: !c,
     onChange: e => {
-      !e === l ? (0, a.iR)() : (0, a.e1)(!e)
+      !e === l ? (0, o.iR)() : (0, o.e1)(!e)
     },
     note: c ? null : s.intl.formatToPlainString(s.t.aYhclZ, {
       username: t

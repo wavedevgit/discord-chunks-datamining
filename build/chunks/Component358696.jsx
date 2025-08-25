@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk686546 = require("./686546.jsx"),
   Chunk442550 = require("./442550.jsx"),
@@ -57,7 +57,7 @@ function h(e, t) {
 let m = {
   none: true,
   default: Chunk255332.aspectRatio,
-  crunchyroll: a()(Chunk255332.aspectRatio, Chunk255332.crunchyroll)
+  crunchyroll: o()(Chunk255332.aspectRatio, Chunk255332.crunchyroll)
 };
 var g = function(e) {
   return e.SIZE_60 = "size-60", e.SIZE_72 = "size-72", e.SIZE_100 = "size-100", e
@@ -85,7 +85,7 @@ function b(e) {
     children: t,
     onClick: n
   } = e;
-  return null == n ? t : (0, r.jsx)(o.P3F, {
+  return null == n ? t : (0, r.jsx)(a.P3F, {
     onClick: n,
     className: d.clickable,
     children: t
@@ -110,19 +110,19 @@ function y(e) {
     src: true,
     alt: u.intl.string(u.t["2B/phI"]),
     size: v,
-    className: a()(d.contentImage, m[null != p ? p : "default"], O),
+    className: o()(d.contentImage, m[null != p ? p : "default"], O),
     constrain: "width"
   });
   let S = (0, r.jsx)(l.f, {
     src: i.src,
     alt: null != (n = null != (t = i.alt) ? t : i.text) ? n : u.intl.string(u.t["2B/phI"]),
     size: v,
-    className: a()(d.contentImage, m[null != p ? p : "default"]),
+    className: o()(d.contentImage, m[null != p ? p : "default"]),
     constrain: "width"
   });
   return (0, r.jsxs)("div", {
-    className: a()(d.imagePosition, O),
-    children: [(0, r.jsx)(o.ua7, {
+    className: o()(d.imagePosition, O),
+    children: [(0, r.jsx)(a.ua7, {
       text: i.text,
       children: e => (0, r.jsx)(b, {
         onClick: g,
@@ -140,7 +140,7 @@ function y(e) {
           }))
         })
       })
-    }), null != f && (0, r.jsx)(o.ua7, {
+    }), null != f && (0, r.jsx)(a.ua7, {
       text: f.text,
       children: e => {
         var t;

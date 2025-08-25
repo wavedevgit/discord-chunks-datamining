@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -36,26 +36,26 @@ let w = (e, t) => {
     let {
       className: n,
       buttonClassName: i,
-      subscriptionTier: a,
+      subscriptionTier: o,
       isDarkMode: w,
       isEligibleForBogoPromotion: D,
       videoRef: x
     } = e, {
       analyticsLocations: L
-    } = (0, f.ZP)(d.Z.PREMIUM_MARKETING_HERO_CTA), j = (0, g._O)(), k = (0, m.Nx)(), M = (0, s.e7)([h.Z], () => h.Z.affinities), U = (0, b.Z)(), G = null != U, B = w ? l.Tt.WHITE : l.Tt.BRAND, Z = M.length > 0, F = (0, E.ZP)({
+    } = (0, f.ZP)(d.Z.PREMIUM_MARKETING_HERO_CTA), j = (0, g._O)(), M = (0, m.Nx)(), k = (0, s.e7)([h.Z], () => h.Z.affinities), U = (0, b.Z)(), G = null != U, B = w ? l.Tt.WHITE : l.Tt.BRAND, Z = k.length > 0, F = (0, E.ZP)({
       location: "HeroHeading"
     }) ? A.intl.string(A.t["EW+VIS"]) : A.intl.string(A.t.YCZldH), V = (0, p.rO)(), H = (0, s.e7)([u.Z], () => u.Z.useReducedMotion);
     return (0, r.jsx)(f.Gt, {
       value: L,
       children: (0, r.jsxs)("div", {
-        className: o()(C.container, C.heroHeadingContainer, n),
+        className: a()(C.container, C.heroHeadingContainer, n),
         ref: t,
         "data-testid": "marketing-page-hero-header",
         children: [(0, r.jsx)("div", {
           className: C.container,
           children: (0, r.jsxs)("div", {
             className: C.marketingPageTextContainer,
-            children: [k && (0, r.jsx)(T.Z, {}), (0, r.jsx)(c.X6q, {
+            children: [M && (0, r.jsx)(T.Z, {}), (0, r.jsx)(c.X6q, {
               className: C.marketingPageHeading,
               variant: "display-sm",
               color: "header-primary",
@@ -70,17 +70,17 @@ let w = (e, t) => {
                 isApplicationHome: true
               })
             }), j ? (0, r.jsx)("div", {
-              className: o()(C.buttonContainer, C.marketingPageCTAContainer, {
+              className: a()(C.buttonContainer, C.marketingPageCTAContainer, {
                 [C.marketingPageCTAMargin]: !(Z || G)
               }),
               children: (0, r.jsx)(y.Z, {
-                className: o()(C.button, i),
+                className: a()(C.button, i),
                 color: B
               })
             }) : (0, r.jsx)(I.PK, {
-              subscriptionTier: a,
-              inOfferExperience: k,
-              containerClassName: o()(C.marketingPageCTAContainer, {
+              subscriptionTier: o,
+              inOfferExperience: M,
+              containerClassName: a()(C.marketingPageCTAContainer, {
                 [C.marketingPageCTAMargin]: !(Z || G)
               }),
               buttonClassName: i,

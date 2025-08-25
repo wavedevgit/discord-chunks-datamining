@@ -75,7 +75,7 @@ let I = () => {
   T = e => {
     if (!I() || null == e) returnfalse;
     let t = l.Z.getGuild(e);
-    return null != t && (0, o.Y2)(t) && (0, a.Tz)({
+    return null != t && (0, a.Y2)(t) && (0, o.Tz)({
       guildId: e,
       location: "age-gate-utils"
     })
@@ -97,7 +97,7 @@ function R(e) {
   if (null == e) returnfalse;
   let t = e.guild_id,
     n = l.Z.getGuild(t);
-  return e.isNSFW() || null != n && (0, o.Y2)(n)
+  return e.isNSFW() || null != n && (0, a.Y2)(n)
 }
 
 function P(e) {

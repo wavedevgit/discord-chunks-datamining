@@ -85,18 +85,18 @@ let g = {
       searchQuery: v
     });
     let S = n.map(e => h(e));
-    return a.Z.dispatch({
+    return o.Z.dispatch({
       type: "SEARCH_MESSAGES_START",
       ids: S
     }), T.fetch(e => {
       let {
         body: n
       } = e, r = Object.entries(n.tabs);
-      a.Z.dispatch({
+      o.Z.dispatch({
         type: "SEARCH_MESSAGES_SUCCESS",
         guildId: p(I),
         data: r.map(e => {
-          var t, r, a;
+          var t, r, o;
           let [s, l] = e, c = h(s), u = l.cursor;
           return {
             id: c,
@@ -106,7 +106,7 @@ let g = {
             messages: l.messages,
             channels: null != (t = l.channels) ? t : [],
             threads: null != (r = l.threads) ? r : [],
-            members: (null != (a = l.members) ? a : []).map(e => (0, o.Z)(e)),
+            members: (null != (o = l.members) ? o : []).map(e => (0, a.Z)(e)),
             doingHistoricalIndex: n.doing_deep_historical_index,
             documentsIndexed: n.documents_indexed
           }
@@ -116,12 +116,12 @@ let g = {
         tabEntries: r
       })
     }, () => {
-      a.Z.dispatch({
+      o.Z.dispatch({
         type: "SEARCH_MESSAGES_INDEXING",
         ids: S
       })
     }, e => {
-      a.Z.dispatch({
+      o.Z.dispatch({
         type: "SEARCH_MESSAGES_FAILURE",
         ids: S,
         error: e
@@ -141,12 +141,12 @@ let g = {
         searchType: t.type,
         searchQuery: n
       });
-    a.Z.dispatch({
+    o.Z.dispatch({
       type: "SEARCH_MESSAGES_START",
       ids: [c]
     }), u.fetch(e => {
       var t, n, r;
-      a.Z.dispatch({
+      o.Z.dispatch({
         type: "SEARCH_MESSAGES_SUCCESS",
         guildId: p(i),
         data: [{
@@ -155,7 +155,7 @@ let g = {
           totalResults: e.body.total_results,
           messages: e.body.messages,
           threads: null != (t = e.body.threads) ? t : [],
-          members: (null != (n = e.body.members) ? n : []).map(e => (0, o.Z)(e)),
+          members: (null != (n = e.body.members) ? n : []).map(e => (0, a.Z)(e)),
           doingHistoricalIndex: e.body.doing_deep_historical_index,
           documentsIndexed: e.body.documents_indexed,
           channels: null != (r = e.body.channels) ? r : [],
@@ -163,12 +163,12 @@ let g = {
         }]
       })
     }, () => {
-      a.Z.dispatch({
+      o.Z.dispatch({
         type: "SEARCH_MESSAGES_INDEXING",
         ids: [c]
       })
     }, e => {
-      a.Z.dispatch({
+      o.Z.dispatch({
         type: "SEARCH_MESSAGES_FAILURE",
         ids: [c],
         error: e
@@ -186,7 +186,7 @@ let g = {
     })
   },
   clearSearchMessages: function(e) {
-    a.Z.dispatch({
+    o.Z.dispatch({
       type: "SEARCH_MESSAGES_CLEAR",
       id: e
     })
@@ -194,7 +194,7 @@ let g = {
   addNativeSearchHistoryItem: function(e, t) {
     if (!h() || e.type !== u.aib.DMS && e.type !== u.aib.GUILD) return;
     let n = (0, s.Tm)(e);
-    a.Z.dispatch({
+    o.Z.dispatch({
       type: "SEARCH_HISTORY_NATIVE_ADD_ITEM",
       id: n,
       item: t
@@ -203,7 +203,7 @@ let g = {
   removeNativeSearchHistoryItem: function(e, t) {
     if (!h()) return;
     let n = (0, s.Tm)(e);
-    a.Z.dispatch({
+    o.Z.dispatch({
       type: "SEARCH_HISTORY_NATIVE_REMOVE_ITEM",
       id: n,
       item: t
@@ -212,7 +212,7 @@ let g = {
   clearNativeSearchHistory: function(e) {
     if (!h()) return;
     let t = (0, s.Tm)(e);
-    a.Z.dispatch({
+    o.Z.dispatch({
       type: "SEARCH_HISTORY_NATIVE_CLEAR_ITEMS",
       id: t
     })
@@ -220,7 +220,7 @@ let g = {
   addWebSearchHistoryItem: function(e, t) {
     if (!m()) return;
     let n = (0, s.Tm)(e);
-    a.Z.dispatch({
+    o.Z.dispatch({
       type: "SEARCH_HISTORY_WEB_ADD_ITEM",
       id: n,
       query: t
@@ -229,7 +229,7 @@ let g = {
   removeWebSearchHistoryItem: function(e, t) {
     if (!m()) return;
     let n = (0, s.Tm)(e);
-    a.Z.dispatch({
+    o.Z.dispatch({
       type: "SEARCH_HISTORY_WEB_REMOVE_ITEM",
       id: n,
       query: t
@@ -238,13 +238,13 @@ let g = {
   clearWebSearchHistory: function(e) {
     if (!m()) return;
     let t = (0, s.Tm)(e);
-    a.Z.dispatch({
+    o.Z.dispatch({
       type: "SEARCH_HISTORY_WEB_CLEAR_ITEMS",
       id: t
     })
   },
   openSearchScreen: function(e) {
-    a.Z.dispatch({
+    o.Z.dispatch({
       type: "SEARCH_SCREEN_OPEN",
       searchContext: e,
       id: (0, s.Tm)(e)
@@ -252,7 +252,7 @@ let g = {
   },
   setShowBlockedResults: function(e, t) {
     let n = (0, s.Tm)(e);
-    a.Z.dispatch({
+    o.Z.dispatch({
       type: "SEARCH_SET_SHOW_BLOCKED_RESULTS",
       id: n,
       showBlocked: t
@@ -260,14 +260,14 @@ let g = {
   },
   setShowNoResultsAlt: function(e) {
     let t = (0, s.Tm)(e);
-    a.Z.dispatch({
+    o.Z.dispatch({
       type: "SEARCH_SET_SHOW_NO_RESULTS_ALT",
       id: t
     })
   },
   updateSearchResultsQuery: function(e, t, n, r) {
     let i = (0, s.Tm)(e);
-    a.Z.dispatch({
+    o.Z.dispatch({
       type: "SEARCH_RESULTS_QUERY_UPDATE",
       id: i,
       queryString: t,
@@ -277,14 +277,14 @@ let g = {
   },
   ensureSearchState: function(e) {
     let t = (0, s.Tm)(e);
-    a.Z.wait(() => a.Z.dispatch({
+    o.Z.wait(() => o.Z.dispatch({
       type: "SEARCH_ENSURE_SEARCH_STATE",
       id: t
     }))
   },
   setSearchState: function(e, t) {
     let n = (0, s.Tm)(e);
-    a.Z.dispatch({
+    o.Z.dispatch({
       type: "SEARCH_EDITOR_STATE_CHANGE",
       id: n,
       editorState: t
@@ -292,13 +292,13 @@ let g = {
   },
   clearSearchState: function(e) {
     let t = (0, s.Tm)(e);
-    a.Z.wait(() => a.Z.dispatch({
+    o.Z.wait(() => o.Z.dispatch({
       type: "SEARCH_EDITOR_STATE_CLEAR",
       id: t
     }))
   },
   updateAutocompleteQuery: function(e, t, n) {
-    a.Z.dispatch({
+    o.Z.dispatch({
       type: "SEARCH_AUTOCOMPLETE_QUERY_UPDATE",
       searchContext: e,
       tokens: t,

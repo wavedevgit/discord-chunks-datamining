@@ -10,7 +10,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk959591 = require("./959591.js");
 let l = () => (0, Chunk951288.jsx)("hr", {
@@ -24,12 +24,12 @@ let l = () => (0, Chunk951288.jsx)("hr", {
       className: c
     } = e;
     return (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(l, {}), (0, r.jsx)(o.Text, {
+      children: [(0, r.jsx)(l, {}), (0, r.jsx)(a.Text, {
         variant: "text-md/semibold",
         className: s.labelSpacing,
         children: t
       }), (0, r.jsx)("div", {
-        className: a()(s.container, c, {
+        className: o()(s.container, c, {
           [s.verticalContainer]: "vertical" === i
         }),
         children: n

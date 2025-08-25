@@ -56,8 +56,8 @@ function h(e, t) {
   if (null == e) return {};
   var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -65,8 +65,8 @@ function h(e, t) {
 function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let g = {
@@ -87,13 +87,13 @@ function b(e) {
       type: n,
       "aria-label": i
     } = e,
-    a = h(e, ["type", "aria-label"]);
-  let o = g[n];
-  if (null == o) return null;
+    o = h(e, ["type", "aria-label"]);
+  let a = g[n];
+  if (null == a) return null;
   let s = null != i ? i : null == (t = E[n]) ? true : t.call(E);
   return (0, r.jsx)(l.Z, p(f({
-    Icon: o
-  }, a), {
+    Icon: a
+  }, o), {
     "aria-label": s
   }))
 }

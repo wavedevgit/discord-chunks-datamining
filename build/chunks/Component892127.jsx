@@ -85,10 +85,10 @@ let x = Chunk647438.memo(function(e) {
       widget_left: h.left,
       widget_top: h.top
     })
-  }, []), A = r.useCallback(e => {
+  }, []), k = r.useCallback(e => {
     (0, s.Os)(e)
   }, []), {
-    id: k,
+    id: A,
     pinned: D,
     zIndex: R,
     size: L,
@@ -121,7 +121,7 @@ let x = Chunk647438.memo(function(e) {
       [E.debugUnpinned]: K && !D,
       [E.debugPinned]: K && D
     }, C),
-    id: k,
+    id: A,
     size: U,
     anchor: V,
     container: H,
@@ -139,7 +139,7 @@ let x = Chunk647438.memo(function(e) {
     dragAnywhere: null != G && G,
     active: !w,
     onUpdate: P,
-    onClick: A,
+    onClick: k,
     targetWindow: Z,
     renderExtras: Q,
     resizeValidation: X,

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
-  o = require.n(Chunk512722),
+  a = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk447543 = require("./447543.js"),
   Chunk100527 = require("./100527.js"),
@@ -25,7 +25,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk105341 = require("./105341.js");
 
 function v(e) {
-  let t, n, a, {
+  let t, n, o, {
       invite: v,
       currentUserId: I,
       guild: T,
@@ -42,13 +42,13 @@ function v(e) {
     } = (0, u.ZP)(c.Z.INVITE_EMBED),
     x = null != v && v.target_type === b.Iq.STREAM && null != v.target_user && null != P,
     L = null != v && null != w && null != v.channel && null != v.guild && w.channelId === v.channel.id && w.guildId === v.guild.id;
-  o()(null != v, "Invite cannot be null");
+  a()(null != v, "Invite cannot be null");
   let {
     target_type: j,
-    target_user: k
+    target_user: M
   } = v;
-  o()(j === b.Iq.STREAM && null != k, "invalid streaming invite");
-  let M = I === k.id,
+  a()(j === b.Iq.STREAM && null != M, "invalid streaming invite");
+  let k = I === M.id,
     U = v.state === E.r2o.ACCEPTING,
     G = i.useCallback(() => {
       let e = "noop";
@@ -65,10 +65,10 @@ function v(e) {
     T = (0, h.Qs)(v.guild)
   }
   let Z = null != v.channel ? (0, f.jD)(v.channel) : null,
-    F = m.ZP.getName(k);
-  B && !L ? a = M ? y.intl.string(y.t.oBLoZG) : y.intl.formatToPlainString(y.t["0QJmAw"], {
+    F = m.ZP.getName(M);
+  B && !L ? o = k ? y.intl.string(y.t.oBLoZG) : y.intl.formatToPlainString(y.t["0QJmAw"], {
     name: F
-  }) : (t = y.intl.string(y.t["I6JG4+"]), n = d.Z.Button.Colors.GREEN, x && (t = y.intl.string(y.t["Q1W99/"]), n = d.Z.Button.Colors.PRIMARY), a = M ? y.intl.string(y.t["4hyaHh"]) : y.intl.formatToPlainString(y.t.QmlLEh, {
+  }) : (t = y.intl.string(y.t["I6JG4+"]), n = d.Z.Button.Colors.GREEN, x && (t = y.intl.string(y.t["Q1W99/"]), n = d.Z.Button.Colors.PRIMARY), o = k ? y.intl.string(y.t["4hyaHh"]) : y.intl.formatToPlainString(y.t.QmlLEh, {
     name: F
   }));
   let V = R === T.id && null != Z ? (0, r.jsx)(d.Z.Channel, {
@@ -86,7 +86,7 @@ function v(e) {
           guild: T,
           onClick: B && L ? G : true
         }), (0, r.jsx)(d.Z.Info, {
-          title: a,
+          title: o,
           onClick: B && L ? G : true,
           children: V
         })]

@@ -30,10 +30,10 @@ var Chunk430901 = require("./430901.js"),
   }),
   p = function(e, t) {
     if (true === t && (t = false), s.has(e) && !t) return s.get(e);
-    if ((0, a.xj)(e)) return s.set(e, _), _;
+    if ((0, o.xj)(e)) return s.set(e, _), _;
     var n = getComputedStyle(e),
-      r = (0, a.zd)(e) && e.ownerSVGElement && e.getBBox(),
-      o = !u && "border-box" === n.boxSizing,
+      r = (0, o.zd)(e) && e.ownerSVGElement && e.getBBox(),
+      a = !u && "border-box" === n.boxSizing,
       p = c.test(n.writingMode || ""),
       h = !r && l.test(n.overflowY || ""),
       m = !r && l.test(n.overflowX || ""),
@@ -51,31 +51,31 @@ var Chunk430901 = require("./430901.js"),
       N = O + I,
       R = m ? e.offsetHeight - N - e.clientHeight : 0,
       P = h ? e.offsetWidth - C - e.clientWidth : 0,
-      w = o ? S + C : 0,
-      D = o ? A + N : 0,
+      w = a ? S + C : 0,
+      D = a ? A + N : 0,
       x = r ? r.width : d(n.width) - w - P,
       L = r ? r.height : d(n.height) - D - R,
       j = x + S + P + C,
-      k = L + A + R + N,
-      M = Object.freeze({
+      M = L + A + R + N,
+      k = Object.freeze({
         devicePixelContentBoxSize: f(Math.round(x * devicePixelRatio), Math.round(L * devicePixelRatio), p),
-        borderBoxSize: f(j, k, p),
+        borderBoxSize: f(j, M, p),
         contentBoxSize: f(x, L, p),
         contentRect: new i.N(y, g, x, L)
       });
-    return s.set(e, M), M
+    return s.set(e, k), k
   },
   h = function(e, t, n) {
     var i = p(e, n),
-      a = i.borderBoxSize,
-      o = i.contentBoxSize,
+      o = i.borderBoxSize,
+      a = i.contentBoxSize,
       s = i.devicePixelContentBoxSize;
     switch (t) {
       case r.z.DEVICE_PIXEL_CONTENT_BOX:
         return s;
       case r.z.BORDER_BOX:
-        return a;
+        return o;
       default:
-        return o
+        return a
     }
   }

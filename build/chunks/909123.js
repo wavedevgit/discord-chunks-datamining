@@ -51,7 +51,7 @@ class m extends Chunk147913.Z {
     this.refreshGuildPowerups(t)
   }
   refreshGuildPowerups(e) {
-    true === (0, f.D)(o.Z, a.Z.getGuild(e)) && ((0, l.Fm)(e), (0, r.C0)(e))
+    true === (0, f.D)(a.Z, o.Z.getGuild(e)) && ((0, l.Fm)(e), (0, r.C0)(e))
   }
   constructor(...e) {
     super(...e), h(this, "stores", new Map().set(s.Z, this.handleSelectedGuildChange)), h(this, "actions", {

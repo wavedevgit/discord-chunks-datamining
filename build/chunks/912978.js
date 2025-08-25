@@ -6,7 +6,7 @@ require.d(exports, {
 }), require("./539854.js"), require("./415506.js"), require("./388685.js");
 var Chunk836560 = require("./836560.js"),
   Chunk264344 = require("./264344.js"),
-  a = require.n(Chunk264344),
+  o = require.n(Chunk264344),
   Chunk649318 = require("./649318.js");
 
 function s(e, t, n) {
@@ -73,7 +73,7 @@ class d extends Chunk836560.EventEmitter {
     return this._sdp
   }
   set sdp(e) {
-    if (!(0, o.$6)(e)) throw Error("Incorrect SDP received from rtc-worker: ".concat(e));
+    if (!(0, a.$6)(e)) throw Error("Incorrect SDP received from rtc-worker: ".concat(e));
     this._sdp = e, this.createAnswer(), this.connected = true, this._negotiationNeeded && this.negotiationNeeded()
   }
   negotiationNeeded() {
@@ -95,17 +95,17 @@ class d extends Chunk836560.EventEmitter {
         cname: n,
         ssrc: r,
         type: i
-      } = e, a = this.activeAudioSSRCs[n], s = this.activeVideoSSRCs[n], l = "".concat(i, "_inbound_").concat(t);
-      return [r, n, i, a === r || s === r ? this.direction : o.Ns.INACTIVE, l]
+      } = e, o = this.activeAudioSSRCs[n], s = this.activeVideoSSRCs[n], l = "".concat(i, "_inbound_").concat(t);
+      return [r, n, i, o === r || s === r ? this.direction : a.Ns.INACTIVE, l]
     });
-    if ("Firefox" !== a().name) return this.connected ? t : [];
-    let n = this.outboundStreams.map((e, t) => [0, "outbound", e.type, (0, o.Mg)(e.direction), "".concat(e.type, "_outbound_").concat(t)]);
+    if ("Firefox" !== o().name) return this.connected ? t : [];
+    let n = this.outboundStreams.map((e, t) => [0, "outbound", e.type, (0, a.Mg)(e.direction), "".concat(e.type, "_outbound_").concat(t)]);
     if ("answer" !== e) return n.concat(t);
     {
       let e = n.length - t.length;
       return n.slice(0, e).concat(t).slice(0, n.length).map((e, t) => {
-        let [n, r, i, a, s] = e;
-        return [n, r, i, (0, o.Mg)(this.outboundStreams[t].direction), this.outboundStreams[t].mid]
+        let [n, r, i, o, s] = e;
+        return [n, r, i, (0, a.Mg)(this.outboundStreams[t].direction), this.outboundStreams[t].mid]
       })
     }
   }
@@ -114,10 +114,10 @@ class d extends Chunk836560.EventEmitter {
       n = this.audioPayloadType,
       r = this.videoCodec,
       i = this.videoPayloadType,
-      a = this.rtxPayloadType,
+      o = this.rtxPayloadType,
       s = this.sdp;
-    if (null == t || null == n || null == r || null == i || null == a || null == s || null == this.direction) throw Error("Invalid payload: audioCodec: ".concat(t, ", audioPayloadType: ").concat(null == n ? "null" : n, ", videoCodec: ").concat(r, ", videoCodecPayloadType: ").concat(null == i ? "null" : i, ", rtxPayloadType: ").concat(null == a ? "null" : a, ", sdp: ").concat(s));
-    let l = (0, o.MP)({
+    if (null == t || null == n || null == r || null == i || null == o || null == s || null == this.direction) throw Error("Invalid payload: audioCodec: ".concat(t, ", audioPayloadType: ").concat(null == n ? "null" : n, ", videoCodec: ").concat(r, ", videoCodecPayloadType: ").concat(null == i ? "null" : i, ", rtxPayloadType: ").concat(null == o ? "null" : o, ", sdp: ").concat(s));
+    let l = (0, a.MP)({
       type: e,
       baseSDP: s,
       direction: this.direction,
@@ -127,7 +127,7 @@ class d extends Chunk836560.EventEmitter {
       videoCodec: r,
       videoPayloadType: i,
       videoBitRate: 2500,
-      rtxPayloadType: a,
+      rtxPayloadType: o,
       ssrcs: this.getSSRCs(e),
       extensions: this.extensions
     });

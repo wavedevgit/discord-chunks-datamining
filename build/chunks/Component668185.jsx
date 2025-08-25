@@ -21,20 +21,20 @@ function f(e) {
     deniedPermissions: f,
     onPermissionsChange: _,
     guild: p
-  } = e, h = i.useMemo(() => a.U_(p.permissions), [p.permissions]);
+  } = e, h = i.useMemo(() => o.U_(p.permissions), [p.permissions]);
   i.useEffect(() => {
-    _(false, a.hX(n, h))
+    _(false, o.hX(n, h))
   }, [h, _, n]);
-  let m = c.VY.filter(e => a.e$(n, e)),
-    g = m.filter(e => !a.e$(h, e)).map(e => {
+  let m = c.VY.filter(e => o.e$(n, e)),
+    g = m.filter(e => !o.e$(h, e)).map(e => {
       let t = (0, c.wt)(e),
-        n = !a.e$(f, e);
+        n = !o.e$(f, e);
       return (0, r.jsx)("li", {
         className: d.permission,
-        children: (0, r.jsx)(o.X, {
+        children: (0, r.jsx)(a.X, {
           value: n,
           onChange: (t, n) => _(n, e),
-          type: o.X.Types.INVERTED,
+          type: a.X.Types.INVERTED,
           children: (0, r.jsx)(s.x, {
             variant: "text-md/normal",
             children: t
@@ -42,7 +42,7 @@ function f(e) {
         })
       }, String(e))
     }),
-    E = m.filter(e => a.e$(h, e)).map(e => {
+    E = m.filter(e => o.e$(h, e)).map(e => {
       let t = (0, c.wt)(e);
       return (0, r.jsxs)("li", {
         className: d.permission,

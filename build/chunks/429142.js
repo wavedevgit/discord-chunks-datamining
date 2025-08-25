@@ -4,10 +4,10 @@
 require.d(exports, {
   OR: () => s,
   ZP: () => l,
-  ot: () => o
+  ot: () => a
 });
 let {
   Layer: r,
   LayerContainer: i,
-  LayerProvider: a
-} = (0, require("./302901.jsx").Xv)("Verification"), o = i, s = a, l = r
+  LayerProvider: o
+} = (0, require("./302901.jsx").Xv)("Verification"), a = i, s = o, l = r

@@ -127,12 +127,12 @@ class z extends(r = Chunk647438.Component) {
       guestWindow: t
     } = this.props, n = exports.document, r = false, i = require.head;
     u()(null != Chunk951288, "Window document ".concat(r ? "body" : "head", " was null"));
-    let a = Chunk951288.querySelector("style[".concat(Chunk168551.PQ, "]"));
+    let o = Chunk951288.querySelector("style[".concat(Chunk168551.PQ, "]"));
     if (null != Chunk647438) {
       Chunk647438.textContent = module;
       return
     }
-    let o = require.createElement("style");
+    let a = require.createElement("style");
     Chunk120356.setAttribute(Chunk168551.PQ, "true"), Chunk120356.textContent = module, Chunk951288.appendChild(Chunk120356)
   }
   registerPopoutGlobalKeybinds() {
@@ -153,8 +153,8 @@ class z extends(r = Chunk647438.Component) {
       forcedColors: t,
       children: n,
       windowKey: r,
-      isFullScreen: a,
-      withTitleBar: o,
+      isFullScreen: o,
+      withTitleBar: a,
       guestWindow: c,
       clientThemesClassName: u,
       contentClassName: f,
@@ -201,11 +201,11 @@ class z extends(r = Chunk647438.Component) {
     })
   }
   constructor(...e) {
-    super(...e), V(this, "rootRef", a.createRef()), V(this, "_cleanupWindowActionCreators", true), V(this, "_combokeys", null), V(this, "beforeUnload", e => {
+    super(...e), V(this, "rootRef", o.createRef()), V(this, "_cleanupWindowActionCreators", true), V(this, "_combokeys", null), V(this, "beforeUnload", e => {
       let {
         onBeforeUnload: t
       } = this.props, n = () => {
-        G.Z.unmountWindow(this.props.windowKey), j.isPlatformEmbedded && M.ZP.close(this.props.windowKey)
+        G.Z.unmountWindow(this.props.windowKey), j.isPlatformEmbedded && k.ZP.close(this.props.windowKey)
       };
       null != t ? t({
         e,
@@ -224,30 +224,30 @@ let q = Chunk647438.forwardRef(function(e, t) {
     let {
       guestWindow: n,
       className: r,
-      children: o
+      children: a
     } = e, {
       lang: l,
       style: c,
       className: d
     } = (0, L.vP)();
-    return a.useEffect(() => {
+    return o.useEffect(() => {
       let e = n.document.documentElement;
       u()(null != e, "Window document element was null"), e.setAttribute("style", c)
-    }, [n, c]), a.useEffect(() => {
+    }, [n, c]), o.useEffect(() => {
       let e = n.document.documentElement;
       u()(null != e, "Window document element was null"), e.setAttribute("lang", l)
     }, [n, l]), (0, i.jsx)("div", {
       "data-popout-root": true,
       ref: t,
       className: s()(d, r),
-      children: o
+      children: a
     })
   }),
   X = Chunk647438.forwardRef(function(e, t) {
     let {
       guestWindow: n,
       focused: r,
-      isFullScreen: a
+      isFullScreen: o
     } = (0, _.cj)([G.Z], () => ({
       guestWindow: G.Z.getWindow(e.windowKey),
       focused: G.Z.getWindowFocused(e.windowKey),
@@ -255,7 +255,7 @@ let q = Chunk647438.forwardRef(function(e, t) {
     }));
     u()(null != n, "Missing guestWindow reference");
     let {
-      forcedColors: o,
+      forcedColors: a,
       connectedEmbeddedActivity: s
     } = (0, _.cj)([b.Z, O.ZP], () => ({
       forcedColors: b.Z.useForcedColors ? "yes" : "no",
@@ -276,8 +276,8 @@ let q = Chunk647438.forwardRef(function(e, t) {
         }, e), {
           guestWindow: n,
           focused: r,
-          isFullScreen: a,
-          forcedColors: o,
+          isFullScreen: o,
+          forcedColors: a,
           connectedEmbeddedActivity: s,
           clientThemesClassName: c,
           clientThemesCSS: d

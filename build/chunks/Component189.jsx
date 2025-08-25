@@ -12,7 +12,7 @@ let s = e => 1 === e ? false : Math.floor(Math.random() * e),
   l = e => {
     let {
       config: t
-    } = e, n = i.useMemo(() => (0, a.cloneDeep)(t), [t]), l = i.useMemo(() => t.effects.some(e => null != e.randomizedSources && e.randomizedSources.length > 0), [t]), c = i.useMemo(() => {
+    } = e, n = i.useMemo(() => (0, o.cloneDeep)(t), [t]), l = i.useMemo(() => t.effects.some(e => null != e.randomizedSources && e.randomizedSources.length > 0), [t]), c = i.useMemo(() => {
       if (l) {
         let e = s(n.effects.reduce((e, t) => {
           var n;
@@ -26,7 +26,7 @@ let s = e => 1 === e ? false : Math.floor(Math.random() * e),
       }
       return n
     }, [t.effects, n, l]);
-    return (0, r.jsx)(o.n, {
+    return (0, r.jsx)(a.n, {
       profileEffectConfig: c,
       profileEffectId: "debug"
     })

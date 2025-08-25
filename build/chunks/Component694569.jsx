@@ -32,14 +32,14 @@ function p() {
       children: (0, Chunk951288.jsx)(Chunk51331.Z, {
         title: Chunk388032.intl.string(Chunk388032.t.NfeuZ2),
         value: exports.all || exports.mutualFriends,
-        onChange: t => s.xq.updateSetting(t ? a.pj(e, f.SOq.MUTUAL_FRIENDS) : a.M1(e, f.SOq.MUTUAL_FRIENDS, f.SOq.NO_RELATION))
+        onChange: t => s.xq.updateSetting(t ? o.pj(e, f.SOq.MUTUAL_FRIENDS) : o.M1(e, f.SOq.MUTUAL_FRIENDS, f.SOq.NO_RELATION))
       })
     }), (0, Chunk951288.jsx)(Chunk838436.U, {
       setting: Chunk726985.s6.PRIVACY_AND_SAFETY_FRIEND_REQUESTS,
       children: (0, Chunk951288.jsx)(Chunk51331.Z, {
         title: Chunk388032.intl.string(Chunk388032.t.qsMfsL),
         value: exports.all || exports.mutualGuilds,
-        onChange: t => s.xq.updateSetting(t ? a.pj(e, f.SOq.MUTUAL_GUILDS) : a.M1(e, f.SOq.MUTUAL_GUILDS, f.SOq.NO_RELATION))
+        onChange: t => s.xq.updateSetting(t ? o.pj(e, f.SOq.MUTUAL_GUILDS) : o.M1(e, f.SOq.MUTUAL_GUILDS, f.SOq.NO_RELATION))
       })
     })]
   })

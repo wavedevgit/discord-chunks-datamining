@@ -264,7 +264,7 @@ function eu(e) {
   } = e, o = r.useRef(null), {
     selfDeaf: l,
     deaf: s
-  } = (0, A.Z)(t), c = l || s, {
+  } = (0, k.Z)(t), c = l || s, {
     Component: u,
     play: p,
     events: {
@@ -344,7 +344,7 @@ function ed(e) {
   let {
     voiceChannel: n,
     locked: l
-  } = e, a = r.useRef(null), s = (0, o.e7)([Y.Z], () => Y.Z.isVideoEnabled()), c = (0, o.e7)([Y.Z], () => Object.values(Y.Z.getVideoDevices())[0]), f = null == (t = null == c ? true : c.disabled) || t, h = false === f, m = (0, k.Z)(n), g = e => {
+  } = e, a = r.useRef(null), s = (0, o.e7)([Y.Z], () => Y.Z.isVideoEnabled()), c = (0, o.e7)([Y.Z], () => Object.values(Y.Z.getVideoDevices())[0]), f = null == (t = null == c ? true : c.disabled) || t, h = false === f, m = (0, A.Z)(n), g = e => {
     p.Z.setVideoEnabled(e)
   }, y = e => t => {
     e(t), (0, $.Ws)(ei.Odu.QUICK_ACTIONS, {
@@ -420,7 +420,7 @@ function ep(e) {
     } = e,
     a = r.useRef(null),
     c = (0, o.e7)([X.default], () => X.default.getCurrentUser()),
-    u = (0, k.Z)(n),
+    u = (0, A.Z)(n),
     p = (0, o.cj)([Y.Z], () => (0, j.Z)(Y.Z)),
     f = (0, o.e7)([G.Z], () => G.Z.getCurrentUserActiveStream()),
     h = (0, en.g)((0, J.getPID)()),

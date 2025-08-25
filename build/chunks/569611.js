@@ -8,26 +8,26 @@ require.d(exports, {
 }), require("./539854.js"), require("./415506.js"), require("./49124.js"), require("./388685.js"), require("./583741.js");
 var Chunk427786 = require("./427786.js"),
   i = require.n(Chunk427786);
-let a = 5e3,
-  o = new(i())(a);
+let o = 5e3,
+  a = new(i())(o);
 
 function s(e) {
   for (var t = arguments.length, n = Array(t > 1 ? t - 1 : 0), r = 1; r < t; r++) n[r - 1] = arguments[r];
   let i = c(n);
-  for ("string" == typeof e ? o.push({
+  for ("string" == typeof e ? a.push({
       time: Date.now(),
       category: e,
       message: i
-    }) : o.push({
+    }) : a.push({
       time: Date.now(),
       category: e.name,
       timing: e.timing,
       message: i
-    }); o.length > a;) o.shift()
+    }); a.length > o;) a.shift()
 }
 
 function l() {
-  o.clear()
+  a.clear()
 }
 
 function c(e) {
@@ -40,7 +40,7 @@ function c(e) {
 }
 
 function u(e) {
-  return o.toArray().filter(t => null == e || e.includes(t.category)).map(e => {
+  return a.toArray().filter(t => null == e || e.includes(t.category)).map(e => {
     let t = [];
     return t.push(new Date(e.time).toISOString()), null != e.timing && t.push(e.timing), t.push(e.category, e.message), t.join(" -> ")
   }).join("\n")

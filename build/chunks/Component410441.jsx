@@ -9,7 +9,7 @@ require("./647438.js");
 var Chunk481060 = require("./481060.js"),
   Chunk643303 = require("./643303.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,7 +25,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      a(e, t, n[t])
     })
   }
   return e
@@ -52,7 +52,7 @@ function u(e) {
   let {
     onClick: t,
     Icon: n,
-    "aria-label": o
+    "aria-label": a
   } = e, l = (0, i.dQu)(i.TVs.colors.CONTENT_INVENTORY_OVERLAY_TEXT_PRIMARY), u = (0, r.jsx)(n, {
     color: l.hex(),
     size: "custom",
@@ -60,13 +60,13 @@ function u(e) {
     height: 16
   });
   return null == t ? (0, r.jsx)("div", {
-    className: a.container,
-    "aria-label": o,
+    className: o.container,
+    "aria-label": a,
     children: u
   }) : (0, r.jsx)(i.ua7, {
-    text: o,
+    text: a,
     children: e => (0, r.jsx)(i.P3F, c(s({
-      className: a.container
+      className: o.container
     }, e), {
       onClick: t,
       children: u

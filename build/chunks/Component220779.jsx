@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk410030 = require("./410030.js"),
   Chunk541716 = require("./541716.js"),
@@ -69,7 +69,7 @@ function T(e) {
   let {
     placeholder: t,
     onEnter: n,
-    setEditorRef: a,
+    setEditorRef: o,
     showEmojiButton: s = false,
     renderAttachButton: l,
     autoFocus: f = true,
@@ -88,7 +88,7 @@ function T(e) {
     ref: C,
     placeholder: t,
     editorClassName: m,
-    className: o()(E.replyInput, m),
+    className: a()(E.replyInput, m),
     showRemainingCharsAfterCount: false,
     allowNewLines: false,
     maxCharacterCount: h.z,
@@ -115,7 +115,7 @@ function T(e) {
         shouldRefocus: false
       }))
     },
-    setEditorRef: a,
+    setEditorRef: o,
     focused: f,
     onFocus: _,
     disableThemedBackground: true,
@@ -143,15 +143,15 @@ let S = (e, t) => {
     let {
       onSelectEmoji: t,
       onClick: n
-    } = e, a = (0, l.ZP)(), [o, c] = i.useState(false), u = i.useRef(null), d = i.useRef(null);
+    } = e, o = (0, l.ZP)(), [a, c] = i.useState(false), u = i.useRef(null), d = i.useRef(null);
     return S(() => c(false), u), (0, r.jsx)(s.yRy, {
       targetElementRef: d,
       align: "right",
       position: "top",
-      shouldShow: o,
+      shouldShow: a,
       disablePointerEvents: false,
       renderPopout: () => (0, r.jsx)(s.f6W, {
-        theme: a,
+        theme: o,
         children: e => (0, r.jsx)("div", {
           className: e,
           ref: u,

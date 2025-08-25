@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk773195 = require("./773195.js"),
   Chunk149715 = require("./149715.js");
 
@@ -54,8 +54,8 @@ function _(e, t) {
   if (null == e) return {};
   var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -63,8 +63,8 @@ function _(e, t) {
 function p(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let h = {
@@ -96,7 +96,7 @@ let h = {
       children: t,
       className: n,
       direction: i = h.HORIZONTAL,
-      justify: a = m.START,
+      justify: o = m.START,
       align: l = g.STRETCH,
       wrap: c = E.NO_WRAP,
       shrink: d = 1,
@@ -110,7 +110,7 @@ let h = {
         flexGrow: p,
         flexBasis: b
       }, y),
-      className: o()(s.flex, i, a, l, c, n)
+      className: a()(s.flex, i, o, l, c, n)
     }, O), {
       children: t
     }))
@@ -119,7 +119,7 @@ b.Child = e => {
   var {
     children: t,
     className: n,
-    shrink: a = 1,
+    shrink: o = 1,
     grow: l = 1,
     basis: c = "auto",
     style: d,
@@ -129,13 +129,13 @@ b.Child = e => {
     className: n = null != n ? n : s.flexChild,
     style: u({
       flexGrow: l,
-      flexShrink: a,
+      flexShrink: o,
       flexBasis: c
     }, d)
   }, h);
   if (!p && "string" != typeof t && 1 === i.Children.count(t)) {
     let e = i.Children.only(t);
-    return m.style = u({}, m.style, e.props.style), m.className = o()(e.props.className, n), i.cloneElement(e, m)
+    return m.style = u({}, m.style, e.props.style), m.className = a()(e.props.className, n), i.cloneElement(e, m)
   }
   return (0, r.jsx)("div", f(u({}, m), {
     children: t

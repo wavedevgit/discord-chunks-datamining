@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk518950 = require("./518950.js"),
@@ -43,7 +43,7 @@ function m(e) {
   let {
     smallerText: t,
     className: n,
-    textColor: a,
+    textColor: o,
     isApplicationHome: c,
     enablePremiumBrandRefresh: p
   } = e, h = (0, s.e7)([u.Z], () => u.Z.affinities.slice(0, 3).reverse()), m = h.map((e, t) => (0, r.jsx)(g, {
@@ -63,20 +63,20 @@ function m(e) {
   function y() {
     return p ? (0, r.jsx)(l.Text, {
       variant: "text-sm/medium",
-      color: a,
+      color: o,
       children: b
     }) : t || c ? (0, r.jsx)(l.Text, {
       variant: c ? "text-sm/normal" : "text-lg/medium",
-      color: a,
+      color: o,
       children: b
     }) : (0, r.jsx)(l.X6q, {
       variant: "heading-xl/medium",
-      color: a,
+      color: o,
       children: b
     })
   }
   return (0, r.jsxs)("div", {
-    className: o()(p ? _.premiumBrandRefreshContainer : _.container, n, {
+    className: a()(p ? _.premiumBrandRefreshContainer : _.container, n, {
       [_.v2Container]: !p && c
     }),
     children: [(0, r.jsx)("div", {
@@ -95,7 +95,7 @@ function g(e) {
     applyMask: n,
     size: i
   } = e, {
-    avatarSrc: a,
+    avatarSrc: o,
     eventHandlers: s
   } = (0, c.Z)({
     userId: null == t ? true : t.id,
@@ -103,10 +103,10 @@ function g(e) {
     animateOnHover: true
   });
   return (0, r.jsx)(l.qEK, h({
-    className: o()(_.icon, {
+    className: a()(_.icon, {
       [_.mask]: n
     }),
-    src: a,
+    src: o,
     "aria-label": t.username,
     size: i
   }, s))

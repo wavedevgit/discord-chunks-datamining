@@ -8,7 +8,7 @@ var Chunk846519 = require("./846519.js"),
   Chunk570140 = require("./570140.js"),
   Chunk147913 = require("./147913.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -22,9 +22,9 @@ class l extends Chunk147913.Z {
     this.clearErrorTimeout.stop()
   }
   constructor(...e) {
-    super(...e), o(this, "clearErrorTimeout", new r.V7), o(this, "actions", {
+    super(...e), a(this, "clearErrorTimeout", new r.V7), a(this, "actions", {
       MEDIA_ENGINE_NOISE_CANCELLATION_ERROR: () => this.handleNoiseCancellationError()
-    }), o(this, "handleNoiseCancellationError", () => {
+    }), a(this, "handleNoiseCancellationError", () => {
       this.clearErrorTimeout.start(s, () => i.Z.dispatch({
         type: "MEDIA_ENGINE_NOISE_CANCELLATION_ERROR_RESET"
       }))

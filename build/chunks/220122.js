@@ -38,16 +38,16 @@ class m extends Chunk474639.Z {
       let {
         frameRate: t,
         resolution: r
-      } = n.clipsQuality, a = r <= 480 ? r / 3 * 4 : r / 9 * 16, o = r;
-      i.setClipsQualitySettings(a, o, t) || null == e || this.fireClipsInitEvent()
+      } = n.clipsQuality, o = r <= 480 ? r / 3 * 4 : r / 9 * 16, a = r;
+      i.setClipsQualitySettings(o, a, t) || null == e || this.fireClipsInitEvent()
     }
   }
   handleClipsInitOnToggleDetection(e) {
-    let t = a.ZP.getVisibleGame();
+    let t = o.ZP.getVisibleGame();
     null != t && t.id === e.game.id && this.fireClipsInitEvent()
   }
   handleClipsInitOnGamesChange(e) {
-    let t = a.ZP.getVisibleGame();
+    let t = o.ZP.getVisibleGame();
     null != t && (e.added.find(e => e.pid === t.pid) ? setTimeout(() => this.fireClipsInitEvent(), _.jp) : this.fireClipsInitEvent())
   }
   fireClipsInitEvent() {

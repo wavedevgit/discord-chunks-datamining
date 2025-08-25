@@ -51,7 +51,7 @@ let E = e => e.map(e => "#".concat(e)),
   O = (e, t) => e.split(" ").map((e, n) => "__USERNAME__" !== e ? (0, r.jsxs)(i.Fragment, {
     children: [e, " "]
   }, n) : (0, r.jsxs)(i.Fragment, {
-    children: [(0, r.jsx)(o.qE, {
+    children: [(0, r.jsx)(a.qE, {
       "aria-label": t.username,
       src: t.getAvatarURL(null, 20),
       size: l.EFr.SIZE_20
@@ -61,7 +61,7 @@ let E = e => e.map(e => "#".concat(e)),
     let {
       sharedClientTheme: t,
       from: n
-    } = e, o = i.useMemo(() => {
+    } = e, a = i.useMemo(() => {
       var e;
       return (0, d.yz)(E(t.colors), null != (e = t.gradient_angle) ? e : 0)
     }, [t.colors, t.gradient_angle]);
@@ -70,14 +70,14 @@ let E = e => e.map(e => "#".concat(e)),
       children: [(0, r.jsx)("div", {
         className: g.colorPreview,
         style: {
-          background: "".concat(o)
+          background: "".concat(a)
         }
       }), (0, r.jsxs)("div", {
         className: g.sharedByContainer,
         children: [(0, r.jsxs)(l.X6q, {
           variant: "heading-md/semibold",
           className: g.sharedTitle,
-          children: [m.intl.string(h.default.KSBBpK), " ", (0, r.jsx)(a.SrA, {})]
+          children: [m.intl.string(h.default.KSBBpK), " ", (0, r.jsx)(o.SrA, {})]
         }), (0, r.jsx)(l.Text, {
           variant: "text-sm/medium",
           color: "text-secondary",

@@ -94,7 +94,7 @@ class m extends(r = Chunk647438.PureComponent) {
   constructor(e) {
     super(e), d(this, "_timeout", true), this.state = {
       mode: l.kO8.Modes.DEFAULT
-    }, this._timeout = new o.V7, this.handleCopy = this.handleCopy.bind(this)
+    }, this._timeout = new a.V7, this.handleCopy = this.handleCopy.bind(this)
   }
 }
 d(m, "defaultProps", {

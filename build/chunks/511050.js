@@ -23,19 +23,19 @@ let _ = new Chunk710845.Z("VirtualCurrency"),
       enabled: n
     } = (0, u.WX)({
       location: t
-    }), a = (0, i.e7)([s.Z], () => {
+    }), o = (0, i.e7)([s.Z], () => {
       if (!n) return null;
       let e = s.Z.getQuest(f.V6);
-      return null == e ? null : (0, o.LM)(e.config)
+      return null == e ? null : (0, a.LM)(e.config)
     }, [n]), p = (0, r.useCallback)(e => {
       let {
         forceOpen: t,
         delayMS: n = 500
       } = e;
-      if (null == a && !t) return void _.warn("Could not open Intro to Orbs Claimed Coachmark. Reward orb quantity not found or quest does not exist with ID ".concat(f.V6));
+      if (null == o && !t) return void _.warn("Could not open Intro to Orbs Claimed Coachmark. Reward orb quantity not found or quest does not exist with ID ".concat(f.V6));
       if (!(0, c.wH)()) {
         let e = () => (0, l.hF)({
-          earnedOrbsQuantity: null != a ? a : 200,
+          earnedOrbsQuantity: null != o ? o : 200,
           dedupeKey: t ? true : f.V6
         });
         if (true === n || 0 === n) return void e();
@@ -43,11 +43,11 @@ let _ = new Chunk710845.Z("VirtualCurrency"),
           e()
         }, n)
       }
-    }, [a]), h = (0, r.useCallback)(() => {
+    }, [o]), h = (0, r.useCallback)(() => {
       (0, c.wH)() && (0, c.jj)()
     }, []);
     return n ? {
-      rewardOrbQuantity: a,
+      rewardOrbQuantity: o,
       openIntroToOrbsClaimedCoachmark: p,
       closeIntroToOrbsClaimedCoachmark: h
     } : {

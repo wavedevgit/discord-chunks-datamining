@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk866442 = require("./866442.js"),
   Chunk481060 = require("./481060.js"),
   Chunk779699 = require("./779699.jsx"),
@@ -56,8 +56,8 @@ function h(e, t) {
   if (null == e) return {};
   var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -65,15 +65,15 @@ function h(e, t) {
 function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let g = e => {
   var {
     ref: t,
     children: n,
-    className: a,
+    className: o,
     color: d,
     roleColors: _,
     iconType: m,
@@ -98,7 +98,7 @@ let g = e => {
   }), (0, r.jsx)(l.P3F, p(f({}, b), {
     innerRef: t,
     tag: "span",
-    className: o()(a, {
+    className: a()(o, {
       [u.wrapper]: true,
       interactive: b.onClick
     }),

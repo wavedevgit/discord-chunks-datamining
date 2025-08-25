@@ -13,5 +13,5 @@ function s(e) {
     var e;
     return null != (r = null == (e = i.kU.getSetting()) ? true : e.volume) ? r : 100
   })();
-  return Math.min(e * ((0, o.P)(t) / 100) * Math.min(a.Z.getOutputVolume() / 100, 1), 1)
+  return Math.min(e * ((0, a.P)(t) / 100) * Math.min(o.Z.getOutputVolume() / 100, 1), 1)
 }

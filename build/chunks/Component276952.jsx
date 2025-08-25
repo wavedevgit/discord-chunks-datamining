@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk202841 = require("./202841.js"),
   Chunk481060 = require("./481060.js"),
   Chunk82364 = require("./82364.js");
@@ -45,9 +45,9 @@ function d(e) {
       update: _
     }, n || document.hasFocus() ? "animate-always" : "animate-never");
   return (0, r.jsx)("div", {
-    className: a()(f, l.wrapper),
+    className: o()(f, l.wrapper),
     "aria-hidden": true,
-    children: p((e, t) => t && (0, r.jsx)(o.animated.span, {
+    children: p((e, t) => t && (0, r.jsx)(a.animated.span, {
       className: l.item,
       style: e
     }))

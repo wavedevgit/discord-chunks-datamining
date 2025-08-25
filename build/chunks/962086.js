@@ -98,10 +98,10 @@ function T(e) {
 
 function S(e) {
   let t = d.Z.getChannelId(e),
-    n = o.Z.getChannel(t);
+    n = a.Z.getChannel(t);
   if (!(null != t && (0, g.AB)(t)) && !u.Z.can(m.Plq.VIEW_CHANNEL, n)) {
     let t = s.ZP.getDefaultChannel(e);
-    null != t && (0, a.uL)(m.Z5c.CHANNEL(e, t.id))
+    null != t && (0, o.uL)(m.Z5c.CHANNEL(e, t.id))
   }
 }
 

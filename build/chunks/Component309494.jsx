@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk320161 = require("./320161.jsx"),
   Chunk572004 = require("./572004.js"),
@@ -73,12 +73,12 @@ function g(e) {
     onCopy: () => i({
       action: "COPY_USERNAME"
     }),
-    children: e => (0, r.jsx)(o.P3F, m(p({}, e), {
-      className: a()(f.copyButton, {
+    children: e => (0, r.jsx)(a.P3F, m(p({}, e), {
+      className: o()(f.copyButton, {
         [f.visible]: n
       }),
       "aria-label": d.intl.string(d.t.y5MwJy),
-      children: (0, r.jsx)(o.TIy, {
+      children: (0, r.jsx)(a.TIy, {
         size: "xs",
         color: "currentColor"
       })

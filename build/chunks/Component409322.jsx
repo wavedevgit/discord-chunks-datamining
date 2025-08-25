@@ -1,7 +1,7 @@
-/** Chunk was on 36878 **/
+/** Chunk was on 76210 **/
 /** chunk id: 409322, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  Z: () => a
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -10,44 +10,44 @@ var Chunk951288 = require("./951288.js"),
   Chunk530171 = require("./530171.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function u(e) {
+function a(e) {
   var t;
   let n, {
-      node: u
+      node: a
     } = e,
-    [c, d] = l.useState(false),
+    [c, d] = i.useState(false),
     {
       layout: f,
       collapseAfter: g,
       ContextProvider: v,
-      useCollapsibleTitle: b
-    } = u,
-    m = f.filter(e => {
+      useCollapsibleTitle: m
+    } = a,
+    j = f.filter(e => {
       var t, n;
       return null == (n = null == (t = e.usePredicate) ? true : t.call(e)) || n
     }),
-    p = null != g ? m.slice(0, g) : m,
-    x = null != g ? m.slice(g) : [],
-    j = null != v ? v : l.Fragment,
-    y = null != (t = null == b ? true : b(c, x.length)) ? t : (n = x.length, c ? a.intl.formatToPlainString(a.t["3SHL+f"], {
+    b = null != g ? j.slice(0, g) : j,
+    y = null != g ? j.slice(g) : [],
+    x = null != v ? v : i.Fragment,
+    p = null != (t = null == m ? true : m(c, y.length)) ? t : (n = y.length, c ? u.intl.formatToPlainString(u.t["3SHL+f"], {
       count: n
-    }) : a.intl.formatToPlainString(a.t["8JRFyc"], {
+    }) : u.intl.formatToPlainString(u.t["8JRFyc"], {
       count: n
     }));
-  return (0, i.jsxs)(j, {
-    children: [p.map((e, t) => (0, i.jsxs)(l.Fragment, {
-      children: [(0, i.jsx)(o.Z, {
+  return (0, l.jsxs)(x, {
+    children: [b.map((e, t) => (0, l.jsxs)(i.Fragment, {
+      children: [(0, l.jsx)(s.Z, {
         node: e
-      }), (t !== p.length - 1 || x.length > 0) && (0, i.jsx)(r.$i$, {})]
-    }, e.key)), x.length > 0 && (0, i.jsx)(s.I, {
-      title: y,
+      }), (t !== b.length - 1 || y.length > 0) && (0, l.jsx)(r.$i$, {})]
+    }, e.key)), y.length > 0 && (0, l.jsx)(o.I, {
+      title: p,
       isOpen: c,
       setIsOpen: d,
       compact: true,
-      children: x.map((e, t) => (0, i.jsxs)(l.Fragment, {
-        children: [(0, i.jsx)(o.Z, {
+      children: y.map((e, t) => (0, l.jsxs)(i.Fragment, {
+        children: [(0, l.jsx)(s.Z, {
           node: e
-        }), t !== x.length - 1 && (0, i.jsx)(r.$i$, {})]
+        }), t !== y.length - 1 && (0, l.jsx)(r.$i$, {})]
       }, e.key))
     })]
   })

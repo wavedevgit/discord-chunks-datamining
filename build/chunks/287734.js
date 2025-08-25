@@ -27,8 +27,8 @@ let b = {
       guildId: t,
       channelId: n,
       messageId: i,
-      jumpType: a,
-      preserveDrawerState: o,
+      jumpType: o,
+      preserveDrawerState: a,
       source: s,
       isInitialSetup: l
     } = e;
@@ -37,8 +37,8 @@ let b = {
       guildId: t === E.ME ? null : t,
       channelId: n,
       messageId: i,
-      jumpType: a,
-      preserveDrawerState: o,
+      jumpType: o,
+      preserveDrawerState: a,
       source: s,
       isInitialSetup: l
     })
@@ -50,11 +50,11 @@ let b = {
     var t;
     let n = arguments.length > 1 && true !== arguments[1] && arguments[1],
       r = arguments.length > 2 && true !== arguments[2] && arguments[2],
-      a = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {},
-      o = u.Z.getChannel(e),
-      s = null == o ? true : o.getGuildId();
-    if ((null == o ? true : o.isGuildVocal()) && (0, i.aC)(o) && (!(null == (t = h.default.getCurrentUser()) ? true : t.nsfwAllowed) || !d.Z.didAgree(s))) return void(0, l.uL)(E.Z5c.CHANNEL(s, e));
-    f.Z.isSupported() && (null != e && f.Z.getMediaEngine().interact(), (0, g.h)(e, s, n, r, a))
+      o = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {},
+      a = u.Z.getChannel(e),
+      s = null == a ? true : a.getGuildId();
+    if ((null == a ? true : a.isGuildVocal()) && (0, i.aC)(a) && (!(null == (t = h.default.getCurrentUser()) ? true : t.nsfwAllowed) || !d.Z.didAgree(s))) return void(0, l.uL)(E.Z5c.CHANNEL(s, e));
+    f.Z.isSupported() && (null != e && f.Z.getMediaEngine().interact(), (0, g.h)(e, s, n, r, o))
   },
   disconnect() {
     let e = Chunk258609.Z.getRemoteSessionId();

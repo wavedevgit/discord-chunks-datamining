@@ -20,12 +20,12 @@ var Chunk951288 = require("./951288.js"),
 function h() {
   let e = (0, Chunk442837.e7)([Chunk480294.Z], () => Chunk480294.Z.hasConsented(Chunk981631.pjP.USAGE_STATISTICS)),
     t = Chunk647438.useCallback(e => {
-      e ? (0, o.g)([_.pjP.USAGE_STATISTICS], []).catch(d.S) : (0, d.V)({
+      e ? (0, a.g)([_.pjP.USAGE_STATISTICS], []).catch(d.S) : (0, d.V)({
         header: p.intl.string(p.t.OdPCbG),
         body: p.intl.string(p.t.MGWabG),
         confirmText: p.intl.string(p.t["D3+rU1"]),
         cancelText: p.intl.string(p.t.kYpG0t),
-        onConfirm: () => (0, o.g)([], [_.pjP.USAGE_STATISTICS]).catch(d.S)
+        onConfirm: () => (0, a.g)([], [_.pjP.USAGE_STATISTICS]).catch(d.S)
       })
     }, []);
   return (0, Chunk951288.jsx)(Chunk838436.U, {

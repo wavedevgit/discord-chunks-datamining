@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
   s = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
@@ -39,31 +39,31 @@ let D = (0, Chunk730749.Z)(e => {
     activity: t,
     embeddedActivity: n,
     user: i,
-    applicationStream: o,
+    applicationStream: a,
     className: u,
     guildId: D,
     channelId: x,
     source: L,
     buttonVariant: j,
-    type: k,
-    onAction: M
+    type: M,
+    onAction: k
   } = e, U = (0, l.e7)([h.default], () => {
     let e = h.default.getCurrentUser();
     return s()(null != e, "UserActivityActions: currentUser cannot be undefined"), e
-  }), G = k === b.Y.STREAM_PREVIEW || null != o, B = (0, g.Z)(t), Z = B || G ? f.Z.Direction.HORIZONTAL : f.Z.Direction.VERTICAL, F = (null == t ? true : t.type) === P.IIU.HANG_STATUS, V = (0, l.e7)([m.Z, p.Z], () => {
+  }), G = M === b.Y.STREAM_PREVIEW || null != a, B = (0, g.Z)(t), Z = B || G ? f.Z.Direction.HORIZONTAL : f.Z.Direction.VERTICAL, F = (null == t ? true : t.type) === P.IIU.HANG_STATUS, V = (0, l.e7)([m.Z, p.Z], () => {
     var e;
     return F ? p.Z.getChannel(null == (e = m.Z.getVoiceStateForUser(i.id)) ? true : e.channelId) : null
   }), H = () => {
     if ((0, E.Z)(t)) return (0, r.jsx)(y.Z, {
       platform: d.Z.get(P.ABu.XBOX),
       variant: j,
-      onAction: M,
+      onAction: k,
       icon: c.Mko
     });
     if ((null == t ? true : t.platform) === P.M7m.PS4 || (null == t ? true : t.platform) === P.M7m.PS5) return (0, r.jsx)(y.Z, {
       variant: j,
       platform: d.Z.get(P.ABu.PLAYSTATION),
-      onAction: M,
+      onAction: k,
       icon: c.Tsp
     });
     if (B) {
@@ -73,13 +73,13 @@ let D = (0, Chunk730749.Z)(e => {
           guildId: D,
           channelId: x,
           source: L,
-          onAction: M
+          onAction: k
         }),
         n = (0, r.jsx)(A.Z, {
           activity: t,
           user: i,
           source: L,
-          onAction: M
+          onAction: k
         });
       return (0, r.jsxs)(c.hE2, {
         size: "sm",
@@ -93,38 +93,38 @@ let D = (0, Chunk730749.Z)(e => {
         guildId: e.guildId,
         channelId: e.channelId,
         variant: j,
-        onAction: M
+        onAction: k
       })
     }
     return G ? (0, r.jsx)(R.Z, {
       isCurrentUser: U.id === i.id,
-      applicationStream: o,
-      onAction: M
+      applicationStream: a,
+      onAction: k
     }) : F && null != V ? (0, r.jsx)(I.Z, {
       variant: j,
       hangStatusChannel: V,
-      onAction: M
+      onAction: k
     }) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(N.Z, {
         activity: t,
         variant: j,
-        onAction: M
+        onAction: k
       }), (0, r.jsx)(v.Z, {
         activity: t,
         embeddedActivity: n,
         user: i,
         variant: j,
-        onAction: M
+        onAction: k
       }), (0, r.jsx)(S.Z, {
         activity: t,
         user: i,
         variant: j,
-        onAction: M
+        onAction: k
       }), (0, r.jsx)(O.Z, {
         user: i,
         activity: t,
         variant: j,
-        onAction: M
+        onAction: k
       })]
     })
   }, Y = Z === f.Z.Direction.VERTICAL;
@@ -133,7 +133,7 @@ let D = (0, Chunk730749.Z)(e => {
     align: f.Z.Align.STRETCH,
     direction: Z,
     wrap: Y ? f.Z.Wrap.WRAP : f.Z.Wrap.NO_WRAP,
-    className: a()(u, w.buttonsWrapper, Y ? w.vertical : w.horizontal),
+    className: o()(u, w.buttonsWrapper, Y ? w.vertical : w.horizontal),
     children: H()
   })
 })

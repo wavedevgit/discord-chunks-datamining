@@ -15,9 +15,9 @@ function l(e) {
   return r.useEffect(() => {
     let t = () => {
       if (null == e || !("expiresAt" in e) || null == e.expiresAt) return void n(false);
-      let r = (0, a.fO)(e);
+      let r = (0, o.fO)(e);
       n(r);
-      let c = 1e3 * e.expiresAt + o.Cm - Date.now();
+      let c = 1e3 * e.expiresAt + a.Cm - Date.now();
       if (!r && c > 0) {
         let e = new i.V7;
         e.start(Math.min(s, c), () => t()), l.current = e

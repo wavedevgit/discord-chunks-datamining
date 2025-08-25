@@ -85,7 +85,7 @@ function y(e) {
     trackEntryPointImpression: true,
     sourceUserId: y.author_id
   });
-  return (0, r.jsx)(a.yRy, {
+  return (0, r.jsx)(o.yRy, {
     targetElementRef: I,
     align: "top",
     position: "right",
@@ -94,36 +94,36 @@ function y(e) {
       let {
         closePopout: t
       } = e;
-      return (0, r.jsx)(a.v2r, {
+      return (0, r.jsx)(o.v2r, {
         navId: b,
         onClose: () => {
-          (0, o.Zy)(), t()
+          (0, a.Zy)(), t()
         },
         "aria-label": _.intl.string(_.t.liqwPD),
         onSelect: O,
         children: (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsxs)(a.kSQ, {
-            children: [S, null != P && (0, r.jsx)(a.sNh, {
+          children: [(0, r.jsxs)(o.kSQ, {
+            children: [S, null != P && (0, r.jsx)(o.sNh, {
               id: "game-profile",
               label: _.intl.string(_.t.f7aVGh),
               action: e => {
                 P(e), null == T || T()
               }
             })]
-          }), (0, r.jsxs)(a.kSQ, {
+          }), (0, r.jsxs)(o.kSQ, {
             children: [A, N]
           })]
         })
       })
     },
-    children: e => (0, r.jsx)(a.ua7, {
+    children: e => (0, r.jsx)(o.ua7, {
       text: _.intl.string(_.t.UKOtz8),
-      children: t => (0, r.jsx)(a.P3F, E(m(E(m({
+      children: t => (0, r.jsx)(o.P3F, E(m(E(m({
         innerRef: I
       }, t), {
         className: p.menuIcon
       }), e), {
-        children: (0, r.jsx)(a.xhG, {
+        children: (0, r.jsx)(o.xhG, {
           color: "currentColor",
           size: "custom",
           width: 16,

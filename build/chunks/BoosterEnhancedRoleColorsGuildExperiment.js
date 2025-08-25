@@ -2,7 +2,7 @@
 /** chunk id: 232062, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Tq: () => a,
+  Tq: () => o,
   W: () => i
 });
 let r = (0, require("./818083.js").B)({
@@ -30,7 +30,7 @@ function i(e, t) {
   }).enabled
 }
 
-function a(e, t) {
+function o(e, t) {
   return r.getCurrentConfig({
     guildId: e,
     location: t

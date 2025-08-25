@@ -22,7 +22,7 @@ let h = 3,
       emojis: t
     } = e, {
       analyticsLocations: n
-    } = (0, a.ZP)();
+    } = (0, o.ZP)();
     i.useEffect(() => {
       l.default.track(u.rMx.PREMIUM_UPSELL_VIEWED, {
         type: f.cd.EMOJI_AUTOCOMPLETE_INLINE,
@@ -53,15 +53,15 @@ let h = 3,
         }, e.id)
       })
     });
-    return (0, r.jsxs)(o.RX, {
+    return (0, r.jsxs)(a.RX, {
       className: p.upsell,
-      children: [(0, r.jsx)(o.z5, {
-        children: (0, r.jsx)(o.BR, {
+      children: [(0, r.jsx)(a.z5, {
+        children: (0, r.jsx)(a.BR, {
           children: _.intl.format(_.t["uEky4+"], {
             count: t.length
           })
         })
-      }), (0, r.jsx)(o.dY, {
+      }), (0, r.jsx)(a.dY, {
         children: m
       })]
     })

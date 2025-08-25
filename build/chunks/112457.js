@@ -16,19 +16,19 @@ function i(e, t) {
   }
 }
 
-function a(e) {
+function o(e) {
   var t = e.clientOffset,
     n = e.initialClientOffset,
-    a = e.initialSourceClientOffset;
-  return t && n && a ? i(r(t, a), n) : null
+    o = e.initialSourceClientOffset;
+  return t && n && o ? i(r(t, o), n) : null
 }
 
-function o(e) {
+function a(e) {
   var t = e.clientOffset,
     n = e.initialClientOffset;
   return t && n ? i(t, n) : null
 }
 require.d(exports, {
-  YY: () => a,
-  ar: () => o
+  YY: () => o,
+  ar: () => a
 })

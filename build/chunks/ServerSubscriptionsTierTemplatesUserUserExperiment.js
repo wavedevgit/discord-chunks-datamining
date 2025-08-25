@@ -3,14 +3,14 @@
 "use strict";
 require.d(exports, {
   $i: () => c,
-  Xv: () => a,
-  Zo: () => o,
+  Xv: () => o,
+  Zo: () => a,
   ai: () => s,
   jJ: () => l
 });
 var Chunk818083 = require("./818083.js"),
   Chunk293810 = require("./293810.js");
-let a = (0, Chunk818083.B)({
+let o = (0, Chunk818083.B)({
     kind: "guild",
     id: "2021-06_guild_role_subscriptions",
     label: "Guild Role Subscriptions",
@@ -25,7 +25,7 @@ let a = (0, Chunk818083.B)({
       }
     }]
   }),
-  o = (0, Chunk818083.B)({
+  a = (0, Chunk818083.B)({
     kind: "user",
     id: "2021-08_guild_role_subscription_users",
     label: "Guild Role Subscription Users",

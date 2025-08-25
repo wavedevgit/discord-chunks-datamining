@@ -78,9 +78,9 @@ function m() {
 function g(e) {
   let [t, n] = i.useState(false), {
     id: r,
-    setFocus: o
-  } = m(), l = i.useCallback(() => o(e), [e, o]);
-  return i.useLayoutEffect(() => (0, a.N)(r, (t, r) => {
+    setFocus: a
+  } = m(), l = i.useCallback(() => a(e), [e, a]);
+  return i.useLayoutEffect(() => (0, o.N)(r, (t, r) => {
     n(r && t === e ? 0 : false)
   }), [e, r]), {
     role: "listitem",
@@ -134,7 +134,7 @@ function v(e) {
       ref: r,
       tabIndex: i
     },
-    orientation: a
+    orientation: o
   } = e;
   return {
     role: "list",
@@ -157,8 +157,8 @@ function T(e) {
     children: t,
     navigator: n
   } = e, {
-    id: a,
-    setFocus: o,
+    id: o,
+    setFocus: a,
     containerProps: {
       onKeyDown: s,
       ref: l,
@@ -166,15 +166,15 @@ function T(e) {
     },
     orientation: u
   } = n, d = i.useMemo(() => ({
-    id: a,
-    setFocus: o
-  }), [a, o]), f = i.useMemo(() => ({
+    id: o,
+    setFocus: a
+  }), [o, a]), f = i.useMemo(() => ({
     onKeyDown: s,
     orientation: u,
     ref: l,
-    id: a,
+    id: o,
     tabIndex: c
-  }), [s, u, l, a, c]);
+  }), [s, u, l, o, c]);
   return (0, r.jsxs)(h.Provider, {
     value: f,
     children: [(0, r.jsx)(p.Provider, {

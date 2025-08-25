@@ -2,12 +2,12 @@
 /** chunk id: 138976, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  O: () => o
+  O: () => a
 });
 var Chunk904245 = require("./904245.js"),
   Chunk306680 = require("./306680.js"),
   Chunk944486 = require("./944486.js");
-let o = {
+let a = {
   binds: ["shift+pageup"],
   comboKeysBindGlobal: true,
   action() {

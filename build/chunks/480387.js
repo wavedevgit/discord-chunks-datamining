@@ -20,16 +20,16 @@ function f() {
   let e = Chunk314897.default.getId();
   Chunk726745.Z.getUsers().forEach(async t => {
     let n, {
-        id: o
+        id: a
       } = t,
-      s = r.getToken(o);
-    if (null == s || "" === s) return void a.Z.dispatch({
+      s = r.getToken(a);
+    if (null == s || "" === s) return void o.Z.dispatch({
       type: "MULTI_ACCOUNT_VALIDATE_TOKEN_FAILURE",
-      userId: o
+      userId: a
     });
-    a.Z.dispatch({
+    o.Z.dispatch({
       type: "MULTI_ACCOUNT_VALIDATE_TOKEN_REQUEST",
-      userId: o
+      userId: a
     });
     try {
       n = await i.tn.get({
@@ -42,18 +42,18 @@ function f() {
       })
     } catch (t) {
       let e = (null == t ? true : t.status) === 401 || (null == t ? true : t.status) === 403;
-      a.Z.dispatch({
+      o.Z.dispatch({
         type: e ? "MULTI_ACCOUNT_VALIDATE_TOKEN_FAILURE" : "MULTI_ACCOUNT_VALIDATE_TOKEN_SUCCESS",
-        userId: o
+        userId: a
       });
       return
     }
-    a.Z.dispatch({
-      type: e === o ? "CURRENT_USER_UPDATE" : "USER_UPDATE",
+    o.Z.dispatch({
+      type: e === a ? "CURRENT_USER_UPDATE" : "USER_UPDATE",
       user: n.body
-    }), a.Z.dispatch({
+    }), o.Z.dispatch({
       type: "MULTI_ACCOUNT_VALIDATE_TOKEN_SUCCESS",
-      userId: o
+      userId: a
     })
   })
 }
@@ -63,14 +63,14 @@ function _(e, t) {
     switchSynchronously: t
   });
   let n = r.getToken(e);
-  return null == n ? (d.log("Switching accounts failed because there was no token"), a.Z.dispatch({
+  return null == n ? (d.log("Switching accounts failed because there was no token"), o.Z.dispatch({
     type: "MULTI_ACCOUNT_VALIDATE_TOKEN_FAILURE",
     userId: e
-  }), Promise.resolve()) : o.Z.switchAccountToken(n, t)
+  }), Promise.resolve()) : a.Z.switchAccountToken(n, t)
 }
 
 function p(e) {
-  a.Z.dispatch({
+  o.Z.dispatch({
     type: "MULTI_ACCOUNT_REMOVE_ACCOUNT",
     userId: e
   })

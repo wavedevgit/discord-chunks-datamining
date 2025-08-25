@@ -38,7 +38,7 @@ function b(e) {
     authorizedApplicationId: u,
     authorizationError: b,
     authorizing: y
-  } = (0, a.cj)([_.Z], () => ({
+  } = (0, o.cj)([_.Z], () => ({
     authorizedApplicationId: _.Z.testModeApplicationId,
     authorizationError: _.Z.error,
     authorizing: _.Z.isFetchingAuthorization
@@ -83,7 +83,7 @@ function b(e) {
   }
   i.useEffect(() => () => l.Z.wait(() => c.q$()), []);
   let j = null != u && u === O,
-    k = j ? P : R;
+    M = j ? P : R;
   return (0, r.jsxs)(s.Y0X, {
     "aria-labelledby": C,
     transitionState: n,
@@ -107,7 +107,7 @@ function b(e) {
         children: p.intl.string(p.t.a6Vilp)
       }), x(), (0, r.jsx)("form", {
         onSubmit: e => {
-          e.preventDefault(), k()
+          e.preventDefault(), M()
         },
         children: (0, r.jsxs)(d.Z, {
           direction: d.Z.Direction.VERTICAL,
@@ -141,11 +141,11 @@ function b(e) {
               onChange: D,
               placeholder: "URL Origin Type"
             })
-          }), L(), (0, r.jsx)(o.zx, {
+          }), L(), (0, r.jsx)(a.zx, {
             submitting: y,
             type: "submit",
             disabled: !N || 0 === O.length || "localhost" === S && 0 === I.length,
-            color: j ? o.zx.Colors.RED : o.zx.Colors.GREEN,
+            color: j ? a.zx.Colors.RED : a.zx.Colors.GREEN,
             children: j ? p.intl.string(p.t.d6TR3N) : p.intl.string(p.t.qwuK5O)
           })]
         })

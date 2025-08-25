@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk913527 = require("./913527.js"),
-  o = require.n(Chunk913527),
+  a = require.n(Chunk913527),
   Chunk442837 = require("./442837.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -60,7 +60,7 @@ class v extends Chunk647438.PureComponent {
           children: g.intl.string(g.t.gflHOz)
         }), (0, r.jsx)("div", {
           className: E.timestamp,
-          children: o()(t).calendar()
+          children: a()(t).calendar()
         })]
       })]
     })
@@ -206,14 +206,14 @@ async function T(e, t, n) {
   let i = f.Z.getApplication(e);
   if (null == i) return;
   let {
-    cloudSync: a = true,
-    cloudSyncForceHash: o = null,
+    cloudSync: o = true,
+    cloudSyncForceHash: a = null,
     analyticsParams: s
   } = n;
-  if (a && null != t) {
+  if (o && null != t) {
     let e = t.branchId;
     try {
-      await u.Z(t.id, e, o)
+      await u.Z(t.id, e, a)
     } catch (n) {
       (0, c.h7j)(n => (0, r.jsx)(I, O({
         libraryApplication: t,

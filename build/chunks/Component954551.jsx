@@ -62,10 +62,10 @@ function _(e) {
     onClose: n,
     popoutPosition: "bottom",
     popoutAlign: "right",
-    children: (e, t, n, s, d) => (0, r.jsx)(o.U, {
+    children: (e, t, n, s, d) => (0, r.jsx)(a.U, {
       location: "bookmarks-button",
       targetElementRef: d,
-      children: (0, r.jsx)(a.JO, f(u({}, n), {
+      children: (0, r.jsx)(o.JO, f(u({}, n), {
         ref: d,
         className: c,
         onClick: e,

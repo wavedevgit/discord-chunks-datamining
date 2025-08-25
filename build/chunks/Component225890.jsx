@@ -28,21 +28,21 @@ function E(e) {
     guild: O,
     channel: v,
     isMember: I
-  } = (0, a.cj)([p.ZP, d.Z, c.Z, u.ZP, f.default], () => {
+  } = (0, o.cj)([p.ZP, d.Z, c.Z, u.ZP, f.default], () => {
     var e, t;
     let r = null != (t = p.ZP.getGuildScheduledEvent(E)) ? t : true,
       i = d.Z.getGuild(n),
-      a = c.Z.getChannel(null == r ? true : r.channel_id);
+      o = c.Z.getChannel(null == r ? true : r.channel_id);
     return {
       guildScheduledEvent: r,
       guild: i,
-      channel: a,
+      channel: o,
       isMember: u.ZP.isMember(n, null == (e = f.default.getCurrentUser()) ? true : e.id)
     }
   }, [n, E]);
 
   function T() {
-    if ((0, s.n)(n)) return void(0, o.hk)(n);
+    if ((0, s.n)(n)) return void(0, a.hk)(n);
     (null == v ? true : v.isGuildStageVoice()) ? (0, l.Cq)(v) : (null == v ? true : v.isGuildVoice()) && h.Z.joinVoiceEvent(v.guild_id, v.id)
   }
   return i.useEffect(() => {

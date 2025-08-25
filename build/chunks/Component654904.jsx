@@ -51,7 +51,7 @@ function h(e) {
     filters: l,
     isTryItOutFlow: _ = false
   } = e;
-  (0, a.ZDy)(async () => {
+  (0, o.ZDy)(async () => {
     let {
       default: e
     } = await Promise.all([n.e("91689"), n.e("89289"), n.e("53488")]).then(n.bind(n, 28130));
@@ -63,12 +63,12 @@ function h(e) {
         let {
           assetOrigin: n,
           imageUri: r,
-          file: a,
+          file: o,
           originalAsset: l
-        } = e, u = a.name.replace(/\.[^/.]+$/, ""), d = (0, o.Z1)({
+        } = e, u = o.name.replace(/\.[^/.]+$/, ""), d = (0, a.Z1)({
           filename: u,
           assetOrigin: n
-        }), f = (0, o.cN)({
+        }), f = (0, a.cN)({
           assetOrigin: n,
           imageUri: r,
           description: d,
@@ -76,7 +76,7 @@ function h(e) {
         });
         (0, c.j)({
           image: f,
-          file: a,
+          file: o,
           uploadType: t,
           guildId: i,
           analyticsSource: s,
@@ -94,9 +94,9 @@ function m(e, t, n) {
   if (null != e) return e;
   let {
     size: i = 80,
-    canAnimate: a = true
-  } = r, o = null === e;
-  return o && null == t ? s.ZP.getDefaultAvatarURL(n.id, n.discriminator) : o || (null == t ? true : t.avatar) == null ? n.getAvatarURL(true, i, a) : n.getAvatarURL(null == t ? true : t.guildId, i, a)
+    canAnimate: o = true
+  } = r, a = null === e;
+  return a && null == t ? s.ZP.getDefaultAvatarURL(n.id, n.discriminator) : a || (null == t ? true : t.avatar) == null ? n.getAvatarURL(true, i, o) : n.getAvatarURL(null == t ? true : t.guildId, i, o)
 }
 
 function g(e) {
@@ -105,9 +105,9 @@ function g(e) {
     pendingNickname: n,
     pendingGlobalName: r,
     user: i,
-    guildMember: a
-  } = e, o = "" === n ? null : null != n ? n : null == a ? true : a.nick, s = "" === r ? i.username : r;
-  return null != (t = null != o ? o : s) ? t : l.ZP.getName(i)
+    guildMember: o
+  } = e, a = "" === n ? null : null != n ? n : null == o ? true : o.nick, s = "" === r ? i.username : r;
+  return null != (t = null != a ? a : s) ? t : l.ZP.getName(i)
 }
 
 function E(e) {

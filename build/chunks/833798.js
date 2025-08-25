@@ -28,9 +28,9 @@ class u {
         type: i.Z.COACHTIP
       }, e => l.Z.fromServer(e)).with({
         type: i.Z.BADGE
-      }, e => a.E.fromServer(e)).with({
+      }, e => o.E.fromServer(e)).with({
         type: i.Z.BANNER
-      }, e => o.I.fromServer(e)).with({
+      }, e => a.I.fromServer(e)).with({
         type: i.Z.COACHMARK
       }, e => s.F.fromServer(e)).otherwise(() => true)]
     })))

@@ -25,8 +25,8 @@ function E(e) {
     ingress: t,
     guildId: n
   } = e, l = s.SE.useSetting().includes(n), f = i.useCallback(e => {
-    let r = (0, o._o)();
-    e ? r.delete(n) : r.add(n), s.SE.updateSetting([...r]), a.default.track(h.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
+    let r = (0, a._o)();
+    e ? r.delete(n) : r.add(n), s.SE.updateSetting([...r]), o.default.track(h.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
       action: d.Y.RESTRICT_GUILD_ACTIVITY_STATUS_TOGGLE,
       ingress: t,
       guild_id: n

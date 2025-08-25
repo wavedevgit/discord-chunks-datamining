@@ -97,10 +97,10 @@ function g() {
     children: (0, Chunk951288.jsx)(Chunk481060.II_, {
       id: "input",
       label: Chunk388032.intl.string(Chunk388032.t["5PWWCQ"]),
-      control: (t, n) => (0, r.jsx)(a._wy, m(p({}, t), {
+      control: (t, n) => (0, r.jsx)(o._wy, m(p({}, t), {
         ref: n,
         value: 100 * e,
-        onChange: e => (0, o.o2)(e / 100),
+        onChange: e => (0, a.o2)(e / 100),
         "aria-label": d.intl.string(d.t["5PWWCQ"])
       }))
     })
@@ -113,12 +113,12 @@ function g() {
           name: t,
           value: i
         } = e;
-        return (0, r.jsx)(a.k5B, {
+        return (0, r.jsx)(o.k5B, {
           id: i,
           group: "role-colors",
           checked: i === n,
           label: t,
-          action: () => (0, o.u1)(i)
+          action: () => (0, a.u1)(i)
         }, i)
       })
     })

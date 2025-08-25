@@ -88,11 +88,11 @@ class h extends(r = Chunk647438.Component) {
     if (null == n) return 0;
     let {
       left: i,
-      width: a,
-      bottom: o,
+      width: o,
+      bottom: a,
       height: s
     } = n.getBoundingClientRect();
-    return Math.min(1, Math.max(0, r === _.VOLUME ? (o - t) / s : (e - i) / a))
+    return Math.min(1, Math.max(0, r === _.VOLUME ? (a - t) / s : (e - i) / o))
   }
   render() {
     let {
@@ -101,8 +101,8 @@ class h extends(r = Chunk647438.Component) {
       className: n,
       sliderClassName: r
     } = this.props, {
-      dragging: a,
-      previewWidth: o,
+      dragging: o,
+      previewWidth: a,
       animatedProgress: u
     } = this.state, d = Chunk647438 ? u : Chunk120356;
     return (0, Chunk951288.jsx)("div", {
@@ -216,8 +216,8 @@ class h extends(r = Chunk647438.Component) {
         type: r,
         currentWindow: i
       } = this.props, {
-        clientX: a,
-        clientY: o
+        clientX: o,
+        clientY: a
       } = e;
       if (e.preventDefault(), null == this.wrapper) return;
       let {
@@ -229,7 +229,7 @@ class h extends(r = Chunk647438.Component) {
         offsetLeft: s,
         offsetWidth: l
       }, () => {
-        t(r), n(this.calculatePercentage(a, o), r), i.removeEventListener("mouseup", this.handleDragEnd, false), i.removeEventListener("mousemove", this.handleDragMove, false), i.addEventListener("mouseup", this.handleDragEnd, false), i.addEventListener("mousemove", this.handleDragMove, false)
+        t(r), n(this.calculatePercentage(o, a), r), i.removeEventListener("mouseup", this.handleDragEnd, false), i.removeEventListener("mousemove", this.handleDragMove, false), i.addEventListener("mouseup", this.handleDragEnd, false), i.addEventListener("mousemove", this.handleDragMove, false)
       })
     }), u(this, "handleDragEnd", () => {
       let {

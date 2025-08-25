@@ -8,7 +8,7 @@ require.d(exports, {
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -67,7 +67,7 @@ class h extends(r = Chunk442837.ZP.Store) {
     return c
   }
 }
-o(h, "displayName", "DCFEventStore");
+a(h, "displayName", "DCFEventStore");
 let m = new h(Chunk570140.Z, {
   LOGOUT: u,
   DCF_EVENT_LOGGED: f,

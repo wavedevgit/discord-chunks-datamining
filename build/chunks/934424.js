@@ -2,11 +2,11 @@
 /** chunk id: 934424, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  q: () => a
+  q: () => o
 });
 var Chunk268685 = require("./268685.js"),
   Chunk671955 = require("./671955.js");
-let a = {
+let o = {
   [Chunk671955.l.POPOUT]: {
     avatarSize: Chunk268685.EF.SIZE_80,
     avatarOffsetX: 10,

@@ -6,8 +6,8 @@ require.d(exports, {
 });
 var Chunk647438 = require("./647438.js"),
   Chunk818083 = require("./818083.js");
-let a = new Date(Date.UTC(2025, 5, 16)),
-  o = (0, Chunk818083.B)({
+let o = new Date(Date.UTC(2025, 5, 16)),
+  a = (0, Chunk818083.B)({
     id: "2025-06_quest_brand_color_removal",
     kind: "user",
     label: "Quest Brand Color Removal",
@@ -27,8 +27,8 @@ function s(e) {
   let {
     questConfig: t,
     location: n
-  } = e, i = r.useMemo(() => new Date(t.startsAt), [t.startsAt]) >= a;
-  return o.useExperiment({
+  } = e, i = r.useMemo(() => new Date(t.startsAt), [t.startsAt]) >= o;
+  return a.useExperiment({
     location: n
   }, {
     autoTrackExposure: i

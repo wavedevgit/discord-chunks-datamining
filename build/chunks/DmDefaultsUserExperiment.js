@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk81643 = require("./81643.js"),
   Chunk818083 = require("./818083.js"),
   Chunk128064 = require("./128064.js");
-let o = (0, Chunk818083.B)({
+let a = (0, Chunk818083.B)({
     kind: "user",
     id: "2025-02_dm_defaults_new_users",
     label: "Default DM Settings - New Users",
@@ -68,7 +68,7 @@ let o = (0, Chunk818083.B)({
       }, {
         autoTrackExposure: false
       }),
-      n = o.useExperiment({
+      n = a.useExperiment({
         location: e
       }, {
         autoTrackExposure: false
@@ -81,11 +81,11 @@ let o = (0, Chunk818083.B)({
       }, {
         autoTrackExposure: false
       }),
-      n = o.getCurrentConfig({
+      n = a.getCurrentConfig({
         location: e
       }, {
         autoTrackExposure: false
       });
-    return t.messageRequestOnByDefault || n.messageRequestOnByDefault || (0, a.c_)(e)
+    return t.messageRequestOnByDefault || n.messageRequestOnByDefault || (0, o.c_)(e)
   },
   u = () => (0, Chunk81643.sf)() && c("shouldAgeVerifyForDMDefaultOff")

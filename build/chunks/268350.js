@@ -76,7 +76,7 @@ let I = async (e, t) => {
     url: m.ANM.STICKER_PACK(e),
     rejectWithError: false
   });
-  return o.Z.dispatch({
+  return a.Z.dispatch({
     type: "STICKER_PACK_FETCH_SUCCESS",
     packId: e,
     pack: n,
@@ -110,22 +110,22 @@ let I = async (e, t) => {
 }, S = async e => {
   let {
     body: t
-  } = await a.tn.get({
+  } = await o.tn.get({
     url: m.ANM.STICKER(e),
     rejectWithError: false
   });
-  o.Z.dispatch({
+  a.Z.dispatch({
     type: "STICKER_FETCH_SUCCESS",
     sticker: t
   })
 }, A = async e => {
   let {
     body: t
-  } = await a.tn.get({
+  } = await o.tn.get({
     url: m.ANM.GUILD_STICKER_PACKS(e),
     rejectWithError: false
   });
-  o.Z.dispatch({
+  a.Z.dispatch({
     type: "GUILD_STICKERS_FETCH_SUCCESS",
     guildId: e,
     stickers: t.map(e => null != e.user ? v(y({}, e), {
@@ -133,14 +133,14 @@ let I = async (e, t) => {
     }) : e)
   })
 }, C = async e => {
-  await a.tn.del({
+  await o.tn.del({
     url: m.ANM.GUILD_STICKER(e.guild_id, e.id),
     rejectWithError: false
   })
 }, N = async e => {
   let {
     guildId: t
-  } = e, n = await a.tn.post({
+  } = e, n = await o.tn.post({
     url: m.ANM.GUILD_STICKER_PACKS(t),
     body: "web" === e.platform ? e.body : true,
     fields: "mobile" === e.platform ? [{
@@ -163,21 +163,21 @@ let I = async (e, t) => {
     }] : true,
     rejectWithError: false
   });
-  return o.Z.dispatch({
+  return a.Z.dispatch({
     type: "GUILD_STICKERS_CREATE_SUCCESS",
     guildId: t,
     sticker: v(y({}, n.body), {
       user: _.default.getCurrentUser()
     })
   }), n.body
-}, R = async (e, t, n) => (await a.tn.patch({
+}, R = async (e, t, n) => (await o.tn.patch({
   url: m.ANM.GUILD_STICKER(e, t),
   body: n,
   rejectWithError: false
 })).body;
 
 function P(e, t, n) {
-  o.Z.dispatch({
+  a.Z.dispatch({
     type: "ADD_STICKER_PREVIEW",
     channelId: e,
     sticker: t,
@@ -186,7 +186,7 @@ function P(e, t, n) {
 }
 
 function w(e, t) {
-  o.Z.dispatch({
+  a.Z.dispatch({
     type: "CLEAR_STICKER_PREVIEW",
     channelId: e,
     draftType: t

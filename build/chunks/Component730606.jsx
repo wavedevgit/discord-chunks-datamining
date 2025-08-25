@@ -9,7 +9,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk95398 = require("./95398.jsx"),
   Chunk991621 = require("./991621.js"),
@@ -37,9 +37,9 @@ function C(e) {
     width: n,
     height: r,
     hasMultiple: i = false,
-    options: a
+    options: o
   } = e, {
-    width: o,
+    width: a,
     height: s
   } = (0, b.p)(i, {
     width: n,
@@ -48,12 +48,12 @@ function C(e) {
   _.ZP.preloadImage({
     src: t,
     dimensions: {
-      maxWidth: o,
+      maxWidth: a,
       maxHeight: s,
       imageWidth: n,
       imageHeight: r
     },
-    options: a
+    options: o
   })
 }
 
@@ -65,7 +65,7 @@ function R(e) {
   let {
     children: t,
     isObscured: n,
-    src: a
+    src: o
   } = e, [s, c] = i.useState(false), d = i.useCallback(() => {
     c(e => !e)
   }, []);
@@ -78,12 +78,12 @@ function R(e) {
       isSingleMosaicItem: true,
       onToggleObscurity: d,
       children: e => (0, r.jsx)("div", {
-        className: o()(A.obscureWrapper, {
+        className: a()(A.obscureWrapper, {
           [A.obscure]: e
         }),
         children: t(e)
       })
-    }, a)
+    }, o)
   }) : (0, r.jsx)(r.Fragment, {
     children: t(false)
   })
@@ -109,10 +109,10 @@ function w(e) {
   let {
     items: t,
     onIndexChange: n,
-    startIndex: a = 0,
+    startIndex: o = 0,
     enabledContentHarmTypeFlags: l = 0,
     shouldHideMediaOptions: u = false
-  } = e, [f, _] = i.useState(a), p = i.useRef(a), {
+  } = e, [f, _] = i.useState(o), p = i.useRef(o), {
     zoomed: m,
     setZoomed: C
   } = (0, E.Y)(), P = i.useCallback(e => {
@@ -143,14 +143,14 @@ function w(e) {
           },
           icon: s.j9r,
           tooltip: S.intl.string(S.t.vgfxaG),
-          className: o()(A.navPrev, e)
+          className: a()(A.navPrev, e)
         }), (0, r.jsx)(v.Z, {
           onClick: e => {
             e.stopPropagation(), h.S.dispatch(T.CkL.MODAL_CAROUSEL_NEXT)
           },
           icon: s.d4D,
           tooltip: S.intl.string(S.t.XiOHRU),
-          className: o()(A.navNext, e)
+          className: a()(A.navNext, e)
         })]
       }) : true
     }), (0, r.jsx)(b.Z, {

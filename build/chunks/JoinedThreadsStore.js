@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => j
 }), require("./388685.js"), require("./997841.js");
 var r, Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk798140 = require("./798140.js"),
@@ -55,7 +55,7 @@ let h = {},
   g = new Set;
 
 function E(e) {
-  h = a()(h).reject(t => t.guildId === e).keyBy("threadId").value()
+  h = o()(h).reject(t => t.guildId === e).keyBy("threadId").value()
 }
 
 function b(e) {
@@ -91,7 +91,7 @@ function I(e) {
   let {
     joinedThreads: t
   } = e;
-  h = a()(t).map(e => p(f({}, e), {
+  h = o()(t).map(e => p(f({}, e), {
     joinTimestamp: new Date(e.joinTimestamp)
   })).keyBy("threadId").value()
 }

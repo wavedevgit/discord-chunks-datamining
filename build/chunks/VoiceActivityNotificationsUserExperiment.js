@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Az: () => i,
-  JN: () => a
+  JN: () => o
 });
 let r = (0, require("./818083.js").B)({
   kind: "user",
@@ -47,7 +47,7 @@ function i(e) {
   })
 }
 
-function a(e) {
+function o(e) {
   return r.getCurrentConfig({
     location: e
   }).enabled

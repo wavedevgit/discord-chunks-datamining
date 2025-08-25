@@ -3,9 +3,9 @@
 "use strict";
 require.d(exports, {
   BT: () => u,
-  IS: () => o,
+  IS: () => a,
   Rd: () => i,
-  SG: () => a,
+  SG: () => o,
   fu: () => r,
   j1: () => s,
   jn: () => l,
@@ -13,8 +13,8 @@ require.d(exports, {
 });
 var r = "dnd-core/ADD_SOURCE",
   i = "dnd-core/ADD_TARGET",
-  a = "dnd-core/REMOVE_SOURCE",
-  o = "dnd-core/REMOVE_TARGET";
+  o = "dnd-core/REMOVE_SOURCE",
+  a = "dnd-core/REMOVE_TARGET";
 
 function s(e) {
   return {
@@ -36,7 +36,7 @@ function l(e) {
 
 function c(e) {
   return {
-    type: a,
+    type: o,
     payload: {
       sourceId: e
     }
@@ -45,7 +45,7 @@ function c(e) {
 
 function u(e) {
   return {
-    type: o,
+    type: a,
     payload: {
       targetId: e
     }

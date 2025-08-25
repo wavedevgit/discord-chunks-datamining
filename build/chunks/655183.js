@@ -42,13 +42,13 @@ var E = {
     if (!h) {
       var t = f(m).stopAndFlushMutations();
       m = null, p = true;
-      var n = o.set(e._latestEditorState, {
+      var n = a.set(e._latestEditorState, {
         inCompositionMode: false
       });
       if (e.exitCurrentMode(), !t.size) return void e.update(n);
       var r = n.getCurrentContent();
       t.forEach(function(e, t) {
-        var s = a.decode(t),
+        var s = o.decode(t),
           l = s.blockKey,
           c = s.decoratorKey,
           u = s.leafKey,
@@ -64,15 +64,15 @@ var E = {
           }),
           m = d(r, h),
           g = r.getBlockForKey(l).getInlineStyleAt(_);
-        r = i.replaceText(r, h, e, g, m), n = o.set(n, {
+        r = i.replaceText(r, h, e, g, m), n = a.set(n, {
           currentContent: r
         })
       });
       var s = u(n, c(e)),
         l = s.selectionState;
       e.restoreEditorDOM();
-      var _ = o.acceptSelection(n, l);
-      e.update(o.push(_, r, "insert-characters"))
+      var _ = a.acceptSelection(n, l);
+      e.update(a.push(_, r, "insert-characters"))
     }
   }
 };

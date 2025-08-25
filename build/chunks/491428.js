@@ -16,14 +16,14 @@ var Chunk990547 = require("./990547.js"),
   Chunk981631 = require("./981631.js");
 
 function u(e) {
-  a.Z.dispatch({
+  o.Z.dispatch({
     type: "SURVEY_OVERRIDE",
     id: e
   })
 }
 
 function d(e, t) {
-  a.Z.dispatch({
+  o.Z.dispatch({
     type: "SURVEY_HIDE",
     key: e
   }), t ? s.default.track(c.rMx.APP_NOTICE_CLOSED, {
@@ -53,12 +53,12 @@ function f(e, t) {
     rejectWithError: false
   }).then(e => {
     var t;
-    a.Z.dispatch({
+    o.Z.dispatch({
       type: "SURVEY_FETCHED",
       survey: null == e || null == (t = e.body) ? true : t.survey
     })
   }, () => {
-    a.Z.dispatch({
+    o.Z.dispatch({
       type: "SURVEY_FETCHED",
       survey: null
     })
@@ -66,8 +66,8 @@ function f(e, t) {
 }
 
 function _(e) {
-  let t = o.Z.getLastSeenTimestamp();
-  if (null === t || null != t && Date.now() - t >= o.J) return a.Z.dispatch({
+  let t = a.Z.getLastSeenTimestamp();
+  if (null === t || null != t && Date.now() - t >= a.J) return o.Z.dispatch({
     type: "SURVEY_SEEN",
     key: e
   }), l.Z.post({

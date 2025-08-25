@@ -20,9 +20,9 @@ let s = {
       } = e;
       return (0, r.jsx)(i.Kq, {
         gap: 16,
-        children: Object.values(o.Q).map(e => (0, r.jsx)(a.x, {
+        children: Object.values(a.Q).map(e => (0, r.jsx)(o.x, {
           title: e,
-          children: (0, r.jsx)(o.W, {
+          children: (0, r.jsx)(a.W, {
             messageType: e,
             children: t
           }, e)

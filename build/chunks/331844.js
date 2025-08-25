@@ -7,29 +7,29 @@ require.d(exports, {
 var Chunk278769 = require("./278769.js");
 let i = "undefined" != typeof Element && "checkVisibility" in Element.prototype;
 
-function a(e) {
+function o(e) {
   let t = (0, r.kR)(e);
   if (!(e instanceof t.HTMLElement) && !(e instanceof t.SVGElement)) returnfalse;
   let {
     display: n,
     visibility: i
-  } = e.style, a = "none" !== n && "hidden" !== i && "collapse" !== i;
-  if (a) {
+  } = e.style, o = "none" !== n && "hidden" !== i && "collapse" !== i;
+  if (o) {
     let {
       getComputedStyle: t
     } = e.ownerDocument.defaultView, {
       display: n,
       visibility: r
     } = t(e);
-    a = "none" !== n && "hidden" !== r && "collapse" !== r
+    o = "none" !== n && "hidden" !== r && "collapse" !== r
   }
-  return a
+  return o
 }
 
-function o(e, t) {
+function a(e, t) {
   return !e.hasAttribute("hidden") && !e.hasAttribute("data-react-aria-prevent-focus") && ("DETAILS" !== e.nodeName || !t || "SUMMARY" === t.nodeName || e.hasAttribute("open"))
 }
 
 function s(e, t) {
-  return i ? e.checkVisibility() : "#comment" !== e.nodeName && a(e) && o(e, t) && (!e.parentElement || s(e.parentElement, e))
+  return i ? e.checkVisibility() : "#comment" !== e.nodeName && o(e) && a(e, t) && (!e.parentElement || s(e.parentElement, e))
 }

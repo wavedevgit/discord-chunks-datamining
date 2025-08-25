@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk906732 = require("./906732.jsx"),
@@ -25,7 +25,7 @@ function m(e) {
   let {
     showRemoveAvatarButton: t,
     errors: n,
-    onAvatarChange: a,
+    onAvatarChange: o,
     sectionTitle: m,
     changeAvatarButtonText: g,
     guildId: E,
@@ -54,7 +54,7 @@ function m(e) {
     children: (0, r.jsxs)("div", {
       className: p.buttonsContainer,
       children: [(0, r.jsx)(S, {
-        className: o()({
+        className: a()({
           [p.buttonHighlighted]: I
         }),
         size: s.zx.Sizes.SMALL,
@@ -67,7 +67,7 @@ function m(e) {
           variant: "secondary",
           size: "sm",
           text: null != E ? _.intl.string(_.t.TDjKDg) : _.intl.string(_.t.twB3f3),
-          onClick: () => a(null)
+          onClick: () => o(null)
         })
       })]
     })

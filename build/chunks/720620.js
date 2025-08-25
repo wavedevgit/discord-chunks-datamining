@@ -3,13 +3,13 @@
 "use strict";
 var Chunk654530 = require("./654530.js"),
   Chunk467159 = require("./467159.js");
-module.exports = function(e, t, n, a, o) {
+module.exports = function(e, t, n, o, a) {
   var s = i(e.getSelection()),
     l = r.decode(t),
     c = l.blockKey,
     u = e.getBlockTree(c),
     d = u && u.getIn([l.decoratorKey, "leaves", l.leafKey]),
-    f = r.decode(a),
+    f = r.decode(o),
     _ = f.blockKey,
     p = e.getBlockTree(_),
     h = p && p.getIn([f.decoratorKey, "leaves", f.leafKey]);
@@ -17,13 +17,13 @@ module.exports = function(e, t, n, a, o) {
   var m = d.get("start"),
     g = h.get("start"),
     E = d ? m + n : null,
-    b = h ? g + o : null;
+    b = h ? g + a : null;
   if (s.getAnchorKey() === c && s.getAnchorOffset() === E && s.getFocusKey() === _ && s.getFocusOffset() === b) return s;
   var y = false;
   if (c === _) {
     var O = d.get("end"),
       v = h.get("end");
-    y = g === m && v === O ? o < n : g < m
+    y = g === m && v === O ? a < n : g < m
   } else y = e.getCurrentContent().getBlockMap().keySeq().skipUntil(function(e) {
     return e === c || e === _
   }).first() === _;

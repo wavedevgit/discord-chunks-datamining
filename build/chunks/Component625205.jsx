@@ -60,10 +60,10 @@ function b() {
   function L(e) {
     let t, {
       label: i,
-      value: a
+      value: o
     } = e;
-    if (u.Z.isCertified(a)) {
-      let e = (0, o.ap)(f) ? n(561259) : n(887695);
+    if (u.Z.isCertified(o)) {
+      let e = (0, a.ap)(f) ? n(561259) : n(887695);
       t = (0, r.jsx)("img", {
         src: e,
         alt: "Certified",
@@ -74,9 +74,9 @@ function b() {
       className: g.deviceOption,
       children: [(0, r.jsx)("span", {
         className: g.deviceOptionLabel,
-        children: u.Z.getCertifiedDeviceName(a, i)
+        children: u.Z.getCertifiedDeviceName(o, i)
       }), t]
-    }, a)
+    }, o)
   }
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk28025.devices,

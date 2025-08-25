@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => X
 }), require("./388685.js"), require("./539854.js");
 var r, Chunk913527 = require("./913527.js"),
-  a = require.n(Chunk913527),
+  o = require.n(Chunk913527),
   Chunk442837 = require("./442837.js"),
   Chunk759174 = require("./759174.js"),
   Chunk570140 = require("./570140.js"),
@@ -62,7 +62,7 @@ function O(e) {
 }
 
 function v(e, t) {
-  y[e] = t, b.set(e, a()())
+  y[e] = t, b.set(e, o()())
 }
 
 function I(e, t, n) {
@@ -82,7 +82,7 @@ function T(e) {
   let {
     joinRequest: t
   } = e;
-  M(t)
+  k(t)
 }
 let S = false;
 
@@ -98,7 +98,7 @@ function C(e) {
     guildId: i
   } = e;
   S = false, t === f.wB.SUBMITTED && v(i, r), n.forEach(e => {
-    M(e)
+    k(e)
   })
 }
 
@@ -120,11 +120,11 @@ function j(e) {
   return D.get(e)
 }
 
-function k(e) {
+function M(e) {
   delete K[e], D.delete(e), x.delete(e), L.delete(e)
 }
 
-function M(e) {
+function k(e) {
   K[e.joinRequestId] = e, D.set(e.joinRequestId, e), (0, d.Nd)(e.applicationStatus) && (L.delete(e.joinRequestId), x.set(e.joinRequestId, e)), (0, d.bk)(e.applicationStatus) && (x.delete(e.joinRequestId), L.set(e.joinRequestId, e))
 }
 
@@ -133,10 +133,10 @@ function U(e) {
   let {
     guildId: n,
     request: r
-  } = e, i = (0, _.j)(r), a = c.default.getCurrentUser();
-  if (null == a || i.userId === a.id) returnfalse;
-  let o = null == (t = j(i.joinRequestId)) ? true : t.applicationStatus;
-  return I(n, i.applicationStatus, o), M(i), true
+  } = e, i = (0, _.j)(r), o = c.default.getCurrentUser();
+  if (null == o || i.userId === o.id) returnfalse;
+  let a = null == (t = j(i.joinRequestId)) ? true : t.applicationStatus;
+  return I(n, i.applicationStatus, a), k(i), true
 }
 
 function G(e) {
@@ -144,7 +144,7 @@ function G(e) {
     id: t,
     guildId: n
   } = e, r = j(t);
-  null != r && (I(n, E, r.applicationStatus), k(t))
+  null != r && (I(n, E, r.applicationStatus), M(t))
 }
 
 function B(e) {
@@ -153,7 +153,7 @@ function B(e) {
     action: n
   } = e;
   D.values(P(t, f.wB.SUBMITTED)).forEach(e => {
-    M(g(h({}, e), {
+    k(g(h({}, e), {
       applicationStatus: n
     }))
   }), v(t, 0)
@@ -208,7 +208,7 @@ class q extends(r = Chunk442837.ZP.Store) {
   hasFetched(e) {
     if (!b.has(e)) returnfalse;
     let t = b.get(e);
-    return null != t && a()().diff(t, "seconds") < z
+    return null != t && o()().diff(t, "seconds") < z
   }
   getSelectedApplicationTab(e) {
     var t;

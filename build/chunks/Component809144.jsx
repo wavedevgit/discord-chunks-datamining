@@ -20,11 +20,11 @@ function u(e) {
     isGift: n,
     giftRecipient: u
   } = (0, s.wD)();
-  return !n || (0, o.pO)(u) ? null : (0, r.jsx)(a.Z, {
+  return !n || (0, a.pO)(u) ? null : (0, r.jsx)(o.Z, {
     className: c.paymentNote,
-    iconSize: a.Z.Sizes.SMALL,
+    iconSize: o.Z.Sizes.SMALL,
     icon: i.OgN,
-    color: null == t ? a.Z.Colors.PRIMARY : a.Z.Colors.SECONDARY,
+    color: null == t ? o.Z.Colors.PRIMARY : o.Z.Colors.SECONDARY,
     children: t
   })
 }

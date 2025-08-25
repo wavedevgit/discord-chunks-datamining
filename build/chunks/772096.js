@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
   Chunk31775 = require("./31775.js"),
-  o = require.n(Chunk31775);
+  a = require.n(Chunk31775);
 require("./711739.js");
 var Chunk159635 = require("./159635.js"),
   l = require.n(Chunk159635),
@@ -56,7 +56,7 @@ function g(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let E = new(o())({
+let E = new(a())({
   max: 50
 });
 
@@ -66,11 +66,11 @@ function b(e) {
   if (null != n) return n;
   let r = (0, _.yx)(e),
     i = (0, _.zq)(r),
-    a = {
+    o = {
       whitespaceSanitized: r,
       fullySanitized: i
     };
-  return E.set(t, a), a
+  return E.set(t, o), o
 }
 let y = ["http:", "https:", "discord:", "tel:", "sms:", "mailto:"],
   O = [Chunk172244.b.TEXT, Chunk172244.b.UNDERLINE, Chunk172244.b.STRONG, Chunk172244.b.ITALICS, Chunk172244.b.STRIKETHROUGH, Chunk172244.b.INLINE_CODE, Chunk172244.b.SPOILER, Chunk172244.b.LINE_BREAK, Chunk172244.b.TIMESTAMP],
@@ -149,10 +149,10 @@ function R(e) {
     if (("http:" === r || "https:" === r) && (null == n.hostname || 0 === n.hostname.length)) throw Error("no hostname");
     let i = (0, _.MO)(n);
     n.username = "", n.password = "";
-    let a = (0, _.MO)(n);
+    let o = (0, _.MO)(n);
     return {
       target: i,
-      displayTarget: a
+      displayTarget: o
     }
   } catch (e) {
     return null
@@ -161,32 +161,32 @@ function R(e) {
 let P = g(h({}, l().defaultRules.link), {
   match: (e, t, n) => t.allowLinks ? l().defaultRules.link.match(e, t, n) : null,
   parse(e, t, n) {
-    let [r, a, o, s] = e, u = () => ({
+    let [r, o, a, s] = e, u = () => ({
       type: f.b.TEXT,
       content: r
     });
-    if (N(o)) return u();
-    let d = b(o),
-      _ = b(a),
+    if (N(a)) return u();
+    let d = b(a),
+      _ = b(o),
       p = b(null != s ? s : ""),
       m = d.whitespaceSanitized,
       E = _.fullySanitized,
       y = p.fullySanitized,
       P = E.trim();
     if (0 === m.trim().length || 0 === P.length) return u();
-    let w = R(l().unescapeUrl(o)),
+    let w = R(l().unescapeUrl(a)),
       D = null == w,
-      x = (0, c.ZP)(a).length > 0 || (0, c.ZP)(s).length > 0;
+      x = (0, c.ZP)(o).length > 0 || (0, c.ZP)(s).length > 0;
     if (D || x) return u();
     let L = g(h({}, n), {
         allowEscape: false,
         parseInlineCodeChildContent: true
       }),
       j = n.allowEmojiLinks ? v : O,
-      k = [...j, ...I],
-      M = [...T, ...S],
-      U = A(t(E, L), k, [f.b.EMOJI]),
-      G = A(t(y, L), M);
+      M = [...j, ...I],
+      k = [...T, ...S],
+      U = A(t(E, L), M, [f.b.EMOJI]),
+      G = A(t(y, L), k);
     if (null == U || null == G || 0 === C(U).trim().length) return u();
     let B = i().pick(t.rules, j),
       Z = l().parserFor(B)(_.whitespaceSanitized, L),

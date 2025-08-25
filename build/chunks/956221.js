@@ -14,10 +14,10 @@ function l(e) {
   let {
     userId: t,
     guildId: n
-  } = e, l = (0, r.e7)([o.Z], () => null != n && null != t ? o.Z.getDiscoverableVoiceState(n, t) : null != t ? o.Z.getDiscoverableVoiceStateForUser(t) : true), c = null == l ? true : l.channelId, u = (0, r.e7)([i.Z], () => {
+  } = e, l = (0, r.e7)([a.Z], () => null != n && null != t ? a.Z.getDiscoverableVoiceState(n, t) : null != t ? a.Z.getDiscoverableVoiceStateForUser(t) : true), c = null == l ? true : l.channelId, u = (0, r.e7)([i.Z], () => {
     if (null != c) return i.Z.getChannel(c)
   });
-  return (0, r.e7)([a.Z], () => (null == u ? true : u.isPrivate()) || a.Z.can(s.Pl.VIEW_CHANNEL, u)) ? {
+  return (0, r.e7)([o.Z], () => (null == u ? true : u.isPrivate()) || o.Z.can(s.Pl.VIEW_CHANNEL, u)) ? {
     voiceState: l,
     voiceChannel: u
   } : {}

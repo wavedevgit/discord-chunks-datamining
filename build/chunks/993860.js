@@ -30,13 +30,13 @@ function E(e, t) {
   let {
     id: n,
     features: m
-  } = e, g = (0, a.e7)([l.default], () => l.default.getId()), E = (0, a.e7)([u.Z], () => u.Z.getGuild(n)), b = (0, a.e7)([f.default], () => f.default.getUser(g), [g]), y = (0, a.e7)([c.ZP], () => {
+  } = e, g = (0, o.e7)([l.default], () => l.default.getId()), E = (0, o.e7)([u.Z], () => u.Z.getGuild(n)), b = (0, o.e7)([f.default], () => f.default.getUser(g), [g]), y = (0, o.e7)([c.ZP], () => {
     var e;
     return (null == (e = null != n ? c.ZP.getMember(n, g) : null) ? true : e.joinedAt) != null
   }, [n, g]), {
     validInviteKey: O,
     isBypassInvite: v
-  } = (0, a.cj)([d.Z], () => {
+  } = (0, o.cj)([d.Z], () => {
     var e;
     let t = d.Z.getInviteKeyForGuildId(n),
       r = null != t ? d.Z.getInvite(t) : null;
@@ -51,7 +51,7 @@ function E(e, t) {
     if (y) {
       let r = null == b ? true : b.primaryGuild,
         i = (null == r ? true : r.identityGuildId) === n && (null == r ? true : r.identityEnabled) === true;
-      return "INVITE" !== t && null != e.tag && !i && null != E && (0, o.up)(E) ? 1 : 0
+      return "INVITE" !== t && null != e.tag && !i && null != E && (0, a.up)(E) ? 1 : 0
     }
     return I.includes(n) ? 2 : (null == m ? true : m.includes(h.oNc.MEMBER_VERIFICATION_GATE_ENABLED)) && (null == m ? true : m.includes(h.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL)) && (null != O || e.visibility === p.k.PUBLIC_WITH_RECRUITMENT) && !v ? 3 : null != O ? 5 : (null == m ? true : m.includes(h.oNc.DISCOVERABLE)) ? 4 : null
   }, [y, I, n, m, O, e.visibility, e.tag, v, null == b ? true : b.primaryGuild, t, E]);

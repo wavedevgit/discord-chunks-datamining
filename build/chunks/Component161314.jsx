@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk990547 = require("./990547.js"),
   Chunk831209 = require("./831209.js"),
   Chunk442837 = require("./442837.js"),
@@ -54,7 +54,7 @@ function N(e) {
   var t;
   let {
     guildId: n
-  } = e, a = (0, c.e7)([E.Z], () => E.Z.getGuild(n)), {
+  } = e, o = (0, c.e7)([E.Z], () => E.Z.getGuild(n)), {
     loading: A,
     subscriptionsSettings: N
   } = (0, y.H)(n), {
@@ -68,13 +68,13 @@ function N(e) {
     type: s.ImpressionTypes.VIEW,
     name: s.ImpressionNames.GUILD_SHOP_EMBED
   }, {
-    disableTrack: null == a
+    disableTrack: null == o
   });
   let D = P.length > 0 ? new Date(Math.min(...P.map(e => Date.parse(e.published_at)))) : true;
   return A || !R ? (0, r.jsx)("div", {
-    className: o()(S.guildShopEmbed, S.spinnerContainer),
+    className: a()(S.guildShopEmbed, S.spinnerContainer),
     children: (0, r.jsx)(d.$jN, {})
-  }) : null == a || null == N ? null : (0, r.jsxs)("div", {
+  }) : null == o || null == N ? null : (0, r.jsxs)("div", {
     className: S.guildShopEmbed,
     children: [(0, r.jsx)(O.Z, {
       coverImageAsset: null != (t = N.cover_image_asset) ? t : null
@@ -98,7 +98,7 @@ function N(e) {
       variant: "heading-md/semibold",
       color: "text-default",
       children: T.intl.format(T.t.NZeik5, {
-        guildName: a.name
+        guildName: o.name
       })
     }), (0, r.jsx)(d.LZC, {
       size: 4
@@ -114,7 +114,7 @@ function N(e) {
     }), (0, r.jsxs)("div", {
       className: S.guildShopEmbedFooter,
       children: [(0, r.jsx)(p.Z, {
-        guild: a
+        guild: o
       }), (0, r.jsxs)("ul", {
         className: S.guildShopSummary,
         children: [(0, r.jsx)("li", {

@@ -5,15 +5,15 @@ require.d(exports, {
   BB: () => U,
   C$: () => C,
   H9: () => A,
-  Kd: () => M,
+  Kd: () => k,
   UR: () => v,
-  d2: () => k,
+  d2: () => M,
   dU: () => T
 }), require("./388685.js"), require("./704826.js"), require("./35282.js"), require("./415506.js"), require("./539854.js"), require("./781311.js");
 var Chunk921738 = require("./921738.js"),
   i = require.n(Chunk921738),
   Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  a = require.n(Chunk392711),
   Chunk714338 = require("./714338.js"),
   Chunk823379 = require("./823379.js"),
   Chunk358085 = require("./358085.js"),
@@ -59,12 +59,12 @@ function h(e, t) {
   }), e
 }
 let m = __OVERLAY__ ? Chunk981631.iC$ : (0, Chunk358085.isLinux)() ? Chunk981631.HsE : (0, Chunk358085.isMac)() ? Chunk981631.REU : (0, Chunk358085.isWindows)() ? Chunk981631.iC$ : {},
-  g = o().invert(Chunk981631.HsE);
+  g = a().invert(Chunk981631.HsE);
 g["223"] = "`", Object.freeze(g);
-let E = Object.freeze(o().invert(Chunk981631.REU)),
-  b = o().invert(Chunk981631.iC$);
+let E = Object.freeze(a().invert(Chunk981631.REU)),
+  b = a().invert(Chunk981631.iC$);
 b["223"] = "`", Object.freeze(b);
-let y = o().invert(null != m ? m : {});
+let y = a().invert(null != m ? m : {});
 
 function O(e) {
   return "+" === e ? "plus" : e
@@ -84,8 +84,8 @@ function I(e, t, n) {
       code: "Backquote",
       keyCode: e
     },
-    a = (0, u.jd)(i);
-  return "\\" === t && "`" === r ? t : null == a ? O(null != r ? r : t) : O(a.key)
+    o = (0, u.jd)(i);
+  return "\\" === t && "`" === r ? t : null == o ? O(null != r ? r : t) : O(o.key)
 }
 
 function T() {
@@ -141,21 +141,21 @@ function R(e) {
   let t, n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : T(),
     r = arguments.length > 2 && true !== arguments[2] ? arguments[2] : d.MoX.KEYBOARD_KEY;
   if (null == e) return null;
-  let a = r === d.MoX.KEYBOARD_KEY || r === d.MoX.KEYBOARD_MODIFIER_KEY;
+  let o = r === d.MoX.KEYBOARD_KEY || r === d.MoX.KEYBOARD_MODIFIER_KEY;
   switch (true) {
-    case a && n === d.CgE.LINUX:
+    case o && n === d.CgE.LINUX:
       t = d.HsE[e];
       break;
-    case a && n === d.CgE.MACOS:
+    case o && n === d.CgE.MACOS:
       t = d.REU[e];
       break;
-    case a && n === d.CgE.WINDOWS:
+    case o && n === d.CgE.WINDOWS:
       t = "+" === e ? d.iC$.plus : d.iC$[e];
       break;
-    case a && n === d.CgE.BROWSER:
+    case o && n === d.CgE.BROWSER:
       t = i()(N(e));
       break;
-    case a:
+    case o:
       t = m[e];
       break;
     case r === d.MoX.MOUSE_BUTTON:
@@ -213,7 +213,7 @@ function j(e) {
   return e + "Key"
 }
 
-function k(e) {
+function M(e) {
   let t = {
     keyCode: 0,
     key: "",
@@ -237,7 +237,7 @@ function k(e) {
   }, [])
 }
 
-function M(e) {
+function k(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : T(),
     n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : d.MoX.KEYBOARD_KEY;
   return e.replace(/numpad plus/i, "").replace(/NUMPAD \+/i, "numpad plus").replace(/mod/i, s.Z.modKey).split("+").map(e => e.trim().replace("plus", "+")).reduce((e, r) => {
@@ -251,8 +251,8 @@ function U(e) {
     r = e.map(e => {
       let [t, n, r] = e, i = "number" == typeof r ? r : T();
       if (t === d.MoX.KEYBOARD_KEY || t === d.MoX.KEYBOARD_MODIFIER_KEY) {
-        var a;
-        return null != (a = A(null != i ? [t, n, i] : [t, n])) ? a : "UNK".concat(n)
+        var o;
+        return null != (o = A(null != i ? [t, n, i] : [t, n])) ? o : "UNK".concat(n)
       }
       return t === d.MoX.MOUSE_BUTTON ? "mouse".concat(n) : t === d.MoX.GAMEPAD_BUTTON ? "gamepad".concat(n) : "dev".concat(t, ",").concat(n)
     }).filter(l.lm);

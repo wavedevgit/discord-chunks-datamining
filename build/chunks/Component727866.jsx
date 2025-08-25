@@ -8,7 +8,7 @@ var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx");
-let o = (e, t) => {
+let a = (e, t) => {
     let n = {
       display: "flex",
       gap: "4px",
@@ -29,13 +29,13 @@ let o = (e, t) => {
   },
   s = {
     getTextInVoiceSendMessageChannelPermissionText: function(e) {
-      return e ? a.intl.format(a.t.Q1rwpq, {
-        warningHook: o
-      }) : a.intl.string(a.t.WQ6zpa)
+      return e ? o.intl.format(o.t.Q1rwpq, {
+        warningHook: a
+      }) : o.intl.string(o.t.WQ6zpa)
     },
     getTextInVoiceReadMessageHistoryChannelPermissionText: function(e) {
-      return e ? a.intl.format(a.t.Rx4pbG, {
-        warningHook: o
-      }) : a.intl.string(a.t.cuMfHx)
+      return e ? o.intl.format(o.t.Rx4pbG, {
+        warningHook: a
+      }) : o.intl.string(o.t.cuMfHx)
     }
   }

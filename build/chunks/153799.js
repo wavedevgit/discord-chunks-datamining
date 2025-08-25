@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk147913 = require("./147913.js"),
   Chunk839606 = require("./839606.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -16,7 +16,7 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e) {
+function a(e) {
   let {
     channelId: t
   } = e, {
@@ -27,8 +27,8 @@ function o(e) {
 }
 class s extends Chunk147913.Z {
   constructor(...e) {
-    super(...e), a(this, "actions", {
-      CHANNEL_SELECT: o
+    super(...e), o(this, "actions", {
+      CHANNEL_SELECT: a
     })
   }
 }

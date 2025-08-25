@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk607070 = require("./607070.js"),
   Chunk619899 = require("./619899.js"),
@@ -48,7 +48,7 @@ let v = e => {
     let {
       bannerAdjustment: t = 0,
       maxLoops: n,
-      resetOnHover: a = false,
+      resetOnHover: o = false,
       isHovering: s = false,
       useOpacityOnHover: l = true,
       autoPlay: c = true,
@@ -80,12 +80,12 @@ let v = e => {
         r > e && (e = r), n.loop && n.start < t && (t = n.start)
       }), A(t), N(e)
     }, [N, I]);
-    let [k, M] = i.useState(false);
+    let [M, k] = i.useState(false);
     return i.useEffect(() => {
-      true === c || s || (D(), w(0)), !s && k && L.current && (D(), w(0)), a && s && !L.current && (x(), g.animationType === f.Q.PERSISTENT ? w(u === f.j.FromStart ? 0 : S) : w(0))
-    }, [s, k, S, a, D, x, L, g.animationType, c, u]), (0, r.jsx)("div", {
+      true === c || s || (D(), w(0)), !s && M && L.current && (D(), w(0)), o && s && !L.current && (x(), g.animationType === f.Q.PERSISTENT ? w(u === f.j.FromStart ? 0 : S) : w(0))
+    }, [s, M, S, o, D, x, L, g.animationType, c, u]), (0, r.jsx)("div", {
       ref: v,
-      className: o()(b.profileEffects, {
+      className: a()(b.profileEffects, {
         [b.hovered]: s && l
       }),
       "aria-label": R,
@@ -94,15 +94,15 @@ let v = e => {
         className: y ? b.innerNoRadius : b.inner,
         children: I.map((e, i) => {
           if (!L.current && g.animationType === f.Q.PERSISTENT && null != g.staticFrameSrc && 0 === i && true === c) {
-            var a, o, s, l;
+            var o, a, s, l;
             let {
               staticFrameSrc: n
             } = g;
             return (0, r.jsx)("img", {
               className: b.effect,
               style: {
-                top: null != (s = null == (a = e.position) ? true : a.y) ? s : 0 - t,
-                left: null != (l = null == (o = e.position) ? true : o.x) ? l : 0
+                top: null != (s = null == (o = e.position) ? true : o.y) ? s : 0 - t,
+                left: null != (l = null == (a = e.position) ? true : a.x) ? l : 0
               },
               src: n,
               alt: "",
@@ -114,8 +114,8 @@ let v = e => {
             animationType: g.animationType,
             ticking: L.current,
             time: P,
-            hasPlayedThrough: k,
-            setHasPlayedThrough: M,
+            hasPlayedThrough: M,
+            setHasPlayedThrough: k,
             urlQueryString: p,
             maxLoops: n,
             loopEnd: C,
@@ -130,7 +130,7 @@ let v = e => {
       config: t,
       useThumbnail: n,
       bannerAdjustment: i = 0,
-      noBorderRadius: a,
+      noBorderRadius: o,
       isHovering: s = false,
       useOpacityOnHover: l = true
     } = e, {
@@ -139,13 +139,13 @@ let v = e => {
       accessibilityLabel: d
     } = t;
     return (0, r.jsx)("div", {
-      className: o()(b.profileEffects, {
+      className: a()(b.profileEffects, {
         [b.hovered]: s && l
       }),
       "aria-label": d,
       role: "img",
       children: (0, r.jsx)("div", {
-        className: a ? b.innerNoRadius : b.inner,
+        className: o ? b.innerNoRadius : b.inner,
         children: (0, r.jsx)("img", {
           src: n && !s ? u : c,
           className: b.effect,
@@ -161,7 +161,7 @@ let v = e => {
   T = e => {
     let t = (0, s.e7)([u.Z], () => u.Z.isFocused()),
       n = (0, s.e7)([l.Z], () => l.Z.useReducedMotion),
-      [a, o] = i.useState(false),
+      [o, a] = i.useState(false),
       d = (0, p.V)(e.profileEffectId),
       _ = (0, c.ex)(null == d ? true : d.config),
       m = (0, h.C)(null == d ? true : d.config),
@@ -173,12 +173,12 @@ let v = e => {
       noBorderRadius: e.noBorderRadius,
       isHovering: e.isHovering,
       useOpacityOnHover: e.useOpacityOnHover
-    }) : a ? (0, r.jsx)(v, O({
+    }) : o ? (0, r.jsx)(v, O({
       profileEffectConfig: E
     }, e)) : (0, r.jsx)(g.Z, {
       profileEffectConfig: E,
       onReady: () => {
-        o(true)
+        a(true)
       }
     }) : null
   }

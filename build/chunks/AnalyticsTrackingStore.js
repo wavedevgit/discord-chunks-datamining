@@ -6,7 +6,7 @@ require.d(exports, {
   X: () => H,
   l: () => z
 }), require("./358797.js"), require("./290780.js"), require("./388685.js"), require("./539854.js");
-var a, Chunk772848 = require("./772848.js");
+var o, Chunk772848 = require("./772848.js");
 require("./17089.js");
 var Chunk756647 = require("./756647.js"),
   Chunk442837 = require("./442837.js"),
@@ -72,8 +72,8 @@ let m = "x-science-test",
   x = Number.MAX_SAFE_INTEGER,
   L = 0,
   j = 0,
-  k = null,
-  M = false,
+  M = null,
+  k = false,
   U = null,
   G = null;
 
@@ -85,7 +85,7 @@ function Z(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 1;
   return e + t
 }
-let F = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e()),
+let F = null != (o = window.requestIdleCallback) ? o : e => setImmediate(() => e()),
   V = new Chunk761609.R,
   H = {
     handleConnectionOpen: () => {},
@@ -102,7 +102,7 @@ let F = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
     var t;
     let {
       dispatcher: n,
-      actionHandler: a,
+      actionHandler: o,
       getFingerprint: u,
       getSessionId: p = K,
       TRACKING_URL: b,
@@ -161,10 +161,10 @@ let F = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
             client_send_timestamp: n
           })
         })),
-        a = {};
-      return M || (G = (0, o.Z)(), a[m] = G, M = true), c.tn.post({
+        o = {};
+      return k || (G = (0, a.Z)(), o[m] = G, k = true), c.tn.post({
         url: t,
-        headers: a,
+        headers: o,
         body: {
           token: r,
           events: i
@@ -172,7 +172,7 @@ let F = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
         retries: 3,
         rejectWithError: false
       }).then(e => {
-        if (a[m]) {
+        if (o[m]) {
           var t, n;
           U = null != (n = null == e || null == (t = e.headers) ? true : t[m]) ? n : null
         }
@@ -205,32 +205,32 @@ let F = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
     }
 
     function en() {
-      if (null == k) returnfalse;
-      switch (k.type) {
+      if (null == M) returnfalse;
+      switch (M.type) {
         case "timeout":
-          clearTimeout(k.id);
+          clearTimeout(M.id);
           break;
         case "interval":
-          clearInterval(k.id);
+          clearInterval(M.id);
           break;
         default:
-          k.type
+          M.type
       }
-      return k = null, true
+      return M = null, true
     }
 
     function er() {
-      if (null != k) return;
+      if (null != M) return;
       let e = () => {
         let t = .1 * v;
-        k = {
+        M = {
           type: "timeout",
           id: setTimeout(() => {
             et(), e()
           }, Math.max(v + (Math.floor(Math.random() * t * 2) - t), I))
         }
       };
-      k = {
+      M = {
         type: "timeout",
         id: setTimeout(() => {
           et(), e()
@@ -259,20 +259,20 @@ let F = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
         properties: n,
         flush: r,
         fingerprint: i,
-        resolve: a
+        resolve: o
       } = e;
       return p().then(e => {
         let {
-          sessionId: o
+          sessionId: a
         } = e, s = {
           type: t,
           fingerprint: i,
           properties: _({
             client_track_timestamp: Date.now(),
-            client_heartbeat_session_id: o,
+            client_heartbeat_session_id: a,
             event_sequence_number: ++A
           }, n),
-          resolve: a
+          resolve: o
         }, l = X(s);
         if (null != l && (s.properties.client_uuid = V.generate(l)), Y.push(s), Y.length > E) {
           let e = Y.length - E;
@@ -285,7 +285,7 @@ let F = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
         })
       }), false
     };
-    class ea extends(t = l.ZP.Store) {
+    class eo extends(t = l.ZP.Store) {
       initialize() {
         null != O && this.waitFor(...O)
       }
@@ -293,5 +293,5 @@ let F = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
         super(...e), f(this, "submitEventsImmediately", ee)
       }
     }
-    return f(ea, "displayName", "AnalyticsTrackingStore"), new ea(n, a)
+    return f(eo, "displayName", "AnalyticsTrackingStore"), new eo(n, o)
   }

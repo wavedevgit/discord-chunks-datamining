@@ -7,15 +7,15 @@ require.d(exports, {
 });
 var Chunk818083 = require("./818083.js"),
   Chunk154579 = require("./154579.js");
-let a = {
+let o = {
     isNoTopFiltersRedesignEnabled: false,
     isSuggestTopFiltersRedesignEnabled: false
   },
-  o = (0, Chunk818083.B)({
+  a = (0, Chunk818083.B)({
     kind: "user",
     id: "2025-07_search_filters_redesign",
     label: "Search Filters Redesign",
-    defaultConfig: a,
+    defaultConfig: o,
     treatments: [{
       id: 1,
       label: "No top filters",
@@ -38,16 +38,16 @@ function s(e) {
     isXDMSearch: t,
     location: n,
     autoTrackExposure: r = true
-  } = e, a = (0, i.nd)({
+  } = e, o = (0, i.nd)({
     location: n,
     autoTrackExposure: r
   }), {
     isNoTopFiltersRedesignEnabled: s
-  } = o.useExperiment({
+  } = a.useExperiment({
     location: n
   }, {
     autoTrackExposure: r,
-    disable: a || t
+    disable: o || t
   });
   return s
 }
@@ -57,16 +57,16 @@ function l(e) {
     isXDMSearch: t,
     location: n,
     autoTrackExposure: r = true
-  } = e, a = (0, i.nd)({
+  } = e, o = (0, i.nd)({
     location: n,
     autoTrackExposure: r
   }), {
     isSuggestTopFiltersRedesignEnabled: s
-  } = o.useExperiment({
+  } = a.useExperiment({
     location: n
   }, {
     autoTrackExposure: r,
-    disable: a || t
+    disable: o || t
   });
   return s
 }

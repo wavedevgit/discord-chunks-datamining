@@ -2,15 +2,15 @@
 /** chunk id: 839606, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  B: () => o,
-  j: () => a
+  B: () => a,
+  j: () => o
 });
 var Chunk879690 = require("./879690.js"),
   Chunk731965 = require("./731965.js"),
-  a = function(e) {
+  o = function(e) {
     return e[e.DEFAULT = 0] = "DEFAULT", e[e.COACHMARK = 1] = "COACHMARK", e
   }({});
-let o = (0, Chunk879690.U)(e => ({
+let a = (0, Chunk879690.U)(e => ({
   activePickerChannelId: true,
   previewWallpaperId: true,
   lastShownChatWallpaperPickerType: true,

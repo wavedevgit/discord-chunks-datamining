@@ -64,8 +64,8 @@ function O(e, t) {
   if (null == e) return {};
   var n, r, i = v(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -73,16 +73,16 @@ function O(e, t) {
 function v(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
 function I(e, t) {
   return y(E({}, e), {
-    type: (0, a.hg)(e),
+    type: (0, o.hg)(e),
     original: e.url,
-    srcIsAnimated: (0, d.yE)(e.flags, a.hR.IS_ANIMATED),
+    srcIsAnimated: (0, d.yE)(e.flags, o.hR.IS_ANIMATED),
     sourceMetadata: {
       message: t
     }
@@ -98,7 +98,7 @@ function S(e) {
   let t, {
       media: n,
       obscured: i = false,
-      maxWidth: a,
+      maxWidth: o,
       maxHeight: l,
       onContextMenu: u
     } = e,
@@ -127,7 +127,7 @@ function S(e) {
       src: P,
       width: d,
       height: _,
-      maxWidth: a,
+      maxWidth: o,
       maxHeight: l,
       poster: e,
       naturalWidth: d,
@@ -143,11 +143,11 @@ function S(e) {
       disableArrowKeySeek: true
     }))
   }
-  return "IMAGE" === I && (t = w ? (0, r.jsx)(o.ZP, y(E({}, N), {
+  return "IMAGE" === I && (t = w ? (0, r.jsx)(a.ZP, y(E({}, N), {
     src: P,
     width: d,
     height: _,
-    maxWidth: a,
+    maxWidth: o,
     maxHeight: l,
     useFullWidth: true,
     shouldLink: false,
@@ -162,7 +162,7 @@ function S(e) {
     onContextMenu: u,
     className: m.dimensionlessImage,
     style: {
-      maxWidth: a,
+      maxWidth: o,
       maxHeight: l
     }
   })), null != t ? (0, r.jsx)(h.Z, {

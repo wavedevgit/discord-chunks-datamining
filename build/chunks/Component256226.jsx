@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk91192 = require("./91192.jsx"),
   Chunk866442 = require("./866442.js"),
   Chunk442837 = require("./442837.js"),
@@ -66,8 +66,8 @@ function S(e, t) {
   if (null == e) return {};
   var n, r, i = A(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -75,12 +75,12 @@ function S(e, t) {
 function A(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let C = Chunk647438.forwardRef(function(e, t) {
-  var a, O, I;
+  var o, O, I;
   let A, {
       canRemove: C,
       className: N,
@@ -94,14 +94,14 @@ let C = Chunk647438.forwardRef(function(e, t) {
     {
       tabIndex: j
     } = L,
-    k = S(L, ["tabIndex"]),
-    M = (0, g.p9)({
+    M = S(L, ["tabIndex"]),
+    k = (0, g.p9)({
       roleId: R.id,
       size: 16,
       guildId: w
     }),
     U = (0, c.e7)([_.Z], () => _.Z.roleStyle),
-    G = (null == (a = R.tags) ? true : a.guild_connections) === null,
+    G = (null == (o = R.tags) ? true : o.guild_connections) === null,
     B = i.useCallback(e => {
       (0, f.jW)(e, async () => {
         let {
@@ -145,7 +145,7 @@ let C = Chunk647438.forwardRef(function(e, t) {
     z = () => C ? (0, r.jsx)(d.DY3, {
       text: b.intl.string(b.t.u3RVsL),
       children: (0, r.jsxs)(d.P3F, {
-        className: o()(y.roleRemoveButtonCanRemove, y.roleRemoveButton),
+        className: a()(y.roleRemoveButtonCanRemove, y.roleRemoveButton),
         onClick: P,
         tabIndex: j,
         focusProps: {
@@ -177,16 +177,16 @@ let C = Chunk647438.forwardRef(function(e, t) {
   return (0, r.jsx)(d.tEY, {
     children: (0, r.jsxs)("div", T(v({
       ref: t,
-      className: o()(y.role, N),
+      className: a()(y.role, N),
       style: K,
       onContextMenu: B,
       onMouseDown: x,
       "aria-label": R.name,
       tabIndex: j
-    }, k), {
-      children: [z(), null != M ? (0, r.jsx)(m.Z, T(v({
+    }, M), {
+      children: [z(), null != k ? (0, r.jsx)(m.Z, T(v({
         className: y.roleIcon
-      }, M), {
+      }, k), {
         enableTooltip: false
       })) : null, (0, r.jsx)("div", {
         "aria-hidden": true,

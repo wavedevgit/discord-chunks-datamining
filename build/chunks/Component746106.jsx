@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk607070 = require("./607070.js"),
@@ -31,7 +31,7 @@ function S(e) {
   let {
     windowKey: t,
     children: n
-  } = e, a = null != t, [S] = i.useState(() => v.ZP.getEnableHardwareAcceleration()), {
+  } = e, o = null != t, [S] = i.useState(() => v.ZP.getEnableHardwareAcceleration()), {
     locale: A,
     theme: C,
     focused: N,
@@ -42,8 +42,8 @@ function S(e) {
     saturation: x,
     desaturateUserColors: L,
     useForcedColors: j,
-    systemForcedColors: k,
-    useReducedMotion: M,
+    systemForcedColors: M,
+    useReducedMotion: k,
     alwaysShowLinkDecorations: U,
     confettiMode: G,
     highContrastMode: B
@@ -52,8 +52,8 @@ function S(e) {
     return {
       locale: b.default.locale,
       theme: y.Z.theme,
-      focused: a ? m.Z.getWindowFocused(t) : O.Z.isFocused(),
-      currentWindow: a && null != (e = m.Z.getWindow(t)) ? e : window,
+      focused: o ? m.Z.getWindowFocused(t) : O.Z.isFocused(),
+      currentWindow: o && null != (e = m.Z.getWindow(t)) ? e : window,
       fontScale: c.Z.fontScale,
       fontScaleClass: c.Z.fontScaleClass,
       keyboardModeEnabled: c.Z.keyboardModeEnabled,
@@ -84,7 +84,7 @@ function S(e) {
       location: "RootThemeContextProvider"
     }),
     Q = (0, _.On)({
-      isPopoutWindow: a,
+      isPopoutWindow: o,
       isSearchDesktopTopLevelEnabled: X
     });
   return (0, r.jsx)(l.wMY, {
@@ -104,13 +104,13 @@ function S(e) {
       saturation: x,
       desaturateUserColors: L,
       useForcedColors: j,
-      systemForcedColors: k,
-      useReducedMotion: M,
+      systemForcedColors: M,
+      useReducedMotion: k,
       alwaysShowLinkDecorations: U,
       hardwareAccelerationEnabled: S,
       highContrastMode: Z && B,
-      isPopoutWindow: a,
-      rootClassName: o()(Q, {
+      isPopoutWindow: o,
+      rootClassName: a()(Q, {
         "confetti-mode": G,
         "refresh-fast-follow-avatars": Y && !q,
         "refresh-fast-follow-guild-bg": W,

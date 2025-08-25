@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk410030 = require("./410030.js"),
@@ -31,7 +31,7 @@ var Chunk120356 = require("./120356.js"),
 let I = function(e) {
   let {
     variant: t
-  } = e, n = (0, f.Vi)(), i = (0, l.ZP)(), v = (0, s.wjy)(i) ? o.Tt.BRAND_INVERTED : o.Tt.BRAND;
+  } = e, n = (0, f.Vi)(), i = (0, l.ZP)(), v = (0, s.wjy)(i) ? a.Tt.BRAND_INVERTED : a.Tt.BRAND;
   if (!n) return null;
   let I = () => (0, r.jsxs)("div", {
       className: g.subBanner,
@@ -119,7 +119,7 @@ let I = function(e) {
             className: g.backgroundGradient
           })
         }), (0, r.jsx)("div", {
-          className: a()(g.premiumTrialBadge, g.badgeGradient),
+          className: o()(g.premiumTrialBadge, g.badgeGradient),
           children: (0, r.jsx)(s.Text, {
             variant: "eyebrow",
             color: "always-white",

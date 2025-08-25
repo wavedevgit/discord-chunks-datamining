@@ -3,19 +3,19 @@
 "use strict";
 require.d(exports, {
   Q: () => s,
-  Z: () => o
+  Z: () => a
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk275344 = require("./275344.jsx"),
   Chunk938353 = require("./938353.jsx");
 
-function o(e) {
+function a(e) {
   let {
     channelMessageProps: {
       message: t,
       channel: n,
-      compact: o = false
+      compact: a = false
     },
     hasSpoilerEmbeds: s,
     handleContextMenu: l,
@@ -31,12 +31,12 @@ function o(e) {
   } = e;
   return u ? null : (0, r.jsx)(i.Z, {
     message: t,
-    children: (0, r.jsx)(a.ZP, {
+    children: (0, r.jsx)(o.ZP, {
       className: g,
       isInteracting: c,
       message: t,
       channel: n,
-      compact: o,
+      compact: a,
       hasSpoilerEmbeds: s,
       isMessageSnapshot: d,
       onMediaItemContextMenu: l,
@@ -53,16 +53,16 @@ function s(e, t) {
   let {
     message: n,
     channel: i,
-    compact: o = false,
+    compact: a = false,
     renderThreadAccessory: s,
     disableReactionCreates: l,
     disableReactionUpdates: c,
     isSearchResult: u
   } = e;
-  return (0, r.jsx)(a.$p, {
+  return (0, r.jsx)(o.$p, {
     message: n,
     channel: i,
-    compact: o,
+    compact: a,
     hasSpoilerEmbeds: t,
     renderThreadAccessory: s,
     disableReactionCreates: l,

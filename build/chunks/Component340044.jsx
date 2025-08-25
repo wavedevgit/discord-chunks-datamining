@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk393903 = require("./393903.js"),
   Chunk448986 = require("./448986.js"),
   Chunk731722 = require("./731722.js"),
@@ -57,8 +57,8 @@ function m(e, t) {
   if (null == e) return {};
   var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -66,36 +66,36 @@ function m(e, t) {
 function g(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let E = Chunk647438.memo(function(e) {
   var {
     children: t,
     isOverlay: n,
-    contextGuildId: a
+    contextGuildId: o
   } = e, f = m(e, ["children", "isOverlay", "contextGuildId"]);
   let [p, g] = i.useState({
     maskImage: "none"
   }), E = i.useRef(null), b = (0, l.Z)(() => {
     var e, t, r, i;
-    let a = null != (r = null == (e = y.current) ? true : e.getBoundingClientRect()) ? r : null,
-      o = null != (i = null == (t = E.current) ? true : t.getBoundingClientRect()) ? i : null;
-    if (n || null == a || null == o) return void g({
+    let o = null != (r = null == (e = y.current) ? true : e.getBoundingClientRect()) ? r : null,
+      a = null != (i = null == (t = E.current) ? true : t.getBoundingClientRect()) ? i : null;
+    if (n || null == o || null == a) return void g({
       maskImage: "none"
     });
-    let s = o.right - a.right,
-      l = o.width - s;
-    if (l > o.width) return void g({
+    let s = a.right - o.right,
+      l = a.width - s;
+    if (l > a.width) return void g({
       maskImage: "none"
     });
     g({
       maskImage: "linear-gradient(to right, rgba(0, 0, 0, 1) 0, rgba(0, 0, 0, 0) ".concat(l, "px)")
     })
-  }), y = (0, s.y)(b), O = (0, c.yF)(f.userId, a);
+  }), y = (0, s.y)(b), O = (0, c.yF)(f.userId, o);
   return (0, r.jsxs)("div", {
-    className: o()(d.container, n && d.isOverlayContainer),
+    className: a()(d.container, n && d.isOverlayContainer),
     ref: y,
     children: [(0, r.jsx)("div", {
       className: d.usernameContainer,
@@ -103,12 +103,12 @@ let E = Chunk647438.memo(function(e) {
     }), (0, r.jsx)("div", {
       className: d.chipletParent,
       children: (0, r.jsx)("span", {
-        className: o()(d.chipletContainer, !O && n && d.noPadding),
+        className: a()(d.chipletContainer, !O && n && d.noPadding),
         ref: E,
         style: p,
         children: (0, r.jsx)(u.ZP, h(_({}, f), {
-          contextGuildId: a,
-          className: o()(f.className, n && d.isOverlayTag),
+          contextGuildId: o,
+          className: a()(f.className, n && d.isOverlayTag),
           disableGuildProfile: true
         }))
       })

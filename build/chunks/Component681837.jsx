@@ -24,13 +24,13 @@ function _(e) {
     var e;
     return null == (e = c.Z.getUserProfile(t)) ? true : e.fetchError
   });
-  return _.length > 0 || p.length > 0 || null == h ? null : (0, r.jsx)(o.DY, {
+  return _.length > 0 || p.length > 0 || null == h ? null : (0, r.jsx)(a.DY, {
     className: f.container,
     text: d.intl.string(d.t.p3Q9Y2),
     delay: u.vB,
     children: (0, r.jsx)(s.Mgn, {
       size: n,
-      color: a.Z.colors.STATUS_WARNING.css
+      color: o.Z.colors.STATUS_WARNING.css
     })
   })
 }

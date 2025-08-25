@@ -52,7 +52,7 @@ function E(e) {
     let {
       userId: t
     } = e;
-    return t === o.default.getId() && g()
+    return t === a.default.getId() && g()
   })
 }
 

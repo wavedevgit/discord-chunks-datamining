@@ -29,7 +29,7 @@ function d() {
 }
 
 function f() {
-  Chunk894276.Re.forEach(e => e.setExperiment((0, o.B)({
+  Chunk894276.Re.forEach(e => e.setExperiment((0, a.B)({
     kind: "user",
     id: e.id,
     label: e.getLabel(),

@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk238651 = require("./238651.js"),
   Chunk979554 = require("./979554.js"),
   Chunk442837 = require("./442837.js"),
@@ -100,17 +100,17 @@ function W(e) {
     if (null == t || n) return null;
     let e = t.items.find(e => e.type === l.Z.AVATAR_DECORATION);
     return null == e ? null : e
-  }, [t, n]), a = () => null == r ? (S.Z.addBreadcrumb({
+  }, [t, n]), o = () => null == r ? (S.Z.addBreadcrumb({
     message: "Error saving avatar decoration; it is null"
   }), Promise.reject()) : ((0, d.cV)(r), H());
-  return [r, a]
+  return [r, o]
 }
 
 function K(e) {
   var t;
   let {
     transitionState: n,
-    onClose: a,
+    onClose: o,
     quest: l,
     location: d,
     reward: f,
@@ -122,7 +122,7 @@ function K(e) {
     S || true === m || (0, C.QB)(l.id, R.y$.CROSS_PLATFORM, d).then(() => N("claimed")).catch(() => N("error"))
   }, [l, d, S, m]);
   let P = () => {
-      N("applying"), h().finally(a)
+      N("applying"), h().finally(o)
     },
     w = true === m && null === p && (null == f ? true : f.skuId) !== "",
     D = null == p && true !== m,
@@ -139,13 +139,13 @@ function K(e) {
         "data-migration-pending": true,
         transitionState: n,
         size: u.CgR.DYNAMIC,
-        className: o()(G.rootContainer, {
+        className: a()(G.rootContainer, {
           [G.rootContainerLoading]: L
         }),
         hideShadow: true,
         parentComponent: "QuestsRewardCollectibleModal",
         children: "error" === A ? (0, r.jsx)(x.Z, {
-          onClose: a
+          onClose: o
         }) : L ? (0, r.jsx)("div", {
           className: G.loadingIndicatorWrapper,
           children: (0, r.jsx)(u.$jN, {
@@ -156,15 +156,15 @@ function K(e) {
           user: I,
           decoration: p,
           isSaving: "applying" === A,
-          onClose: a,
+          onClose: o,
           onConfirm: P
         })
       })
     }), j && (0, r.jsx)(E.Z, {
       confettiTarget: g.current,
       confettiCanvas: b,
-      sprites: k.CA,
-      colors: k.Br
+      sprites: M.CA,
+      colors: M.Br
     })]
   })
 }
@@ -172,7 +172,7 @@ function K(e) {
 function z(e) {
   let {
     quest: t
-  } = e, n = i.useMemo(() => (0, P.fh)(t, P.eC.LOGO_TYPE, "dark"), [t]), a = w.r.build(t.config).defaultRewardRedemptionInstructionsByPlatform[R.y$.CROSS_PLATFORM];
+  } = e, n = i.useMemo(() => (0, P.fh)(t, P.eC.LOGO_TYPE, "dark"), [t]), o = w.r.build(t.config).defaultRewardRedemptionInstructionsByPlatform[R.y$.CROSS_PLATFORM];
   return (0, r.jsxs)("div", {
     className: G.additionalRedemptionInstructions,
     children: [(0, r.jsx)("img", {
@@ -182,7 +182,7 @@ function z(e) {
     }), (0, r.jsx)(u.Text, {
       variant: "text-sm/normal",
       color: "always-white",
-      children: b.Z.parse(a, false, {
+      children: b.Z.parse(o, false, {
         allowLinks: true
       })
     })]
@@ -194,12 +194,12 @@ function q(e) {
     quest: t,
     user: n,
     decoration: i,
-    isSaving: a,
-    onClose: o,
+    isSaving: o,
+    onClose: a,
     onConfirm: s
   } = e, l = (0, P.fh)(t, P.eC.REWARD).url, c = (0, A.f$)(t.config), {
     fractionalState: d
-  } = (0, m.Z)(), f = d === M.a$.FP_ONLY, _ = (0, N.Qy)(t.config), p = c && !f;
+  } = (0, m.Z)(), f = d === k.a$.FP_ONLY, _ = (0, N.Qy)(t.config), p = c && !f;
   return (0, r.jsxs)("div", {
     className: G.claimedRootContainer,
     children: [(0, r.jsxs)("div", {
@@ -217,7 +217,7 @@ function q(e) {
           "data-migration-pending": true,
           className: G.close,
           withCircleBackground: true,
-          onClick: o
+          onClick: a
         })
       })]
     }), (0, r.jsx)(u.mzw, {
@@ -247,7 +247,7 @@ function q(e) {
         }), (0, r.jsx)(u.zxk, {
           variant: "primary",
           text: U.intl.string(U.t.MAS7uL),
-          loading: a,
+          loading: o,
           onClick: s
         }), (0, A.zK)(t, L.S7.ADDITIONAL_REDEMPTION_INSTRUCTIONS) && (0, r.jsx)(z, {
           quest: t
@@ -255,7 +255,7 @@ function q(e) {
           className: G.upsell,
           upsellText: U.intl.format(U.t.VHXn7O, {
             onNitroClick: () => {
-              Y(), o()
+              Y(), a()
             }
           }),
           buttonAnalyticsObject: {
@@ -270,13 +270,13 @@ function q(e) {
 function X(e) {
   var t, n;
   let {
-    quest: a,
-    location: o,
+    quest: o,
+    location: a,
     onClose: s,
     transitionState: l,
     preview: c
-  } = e, u = i.useMemo(() => (0, A.xn)(a.config), [a]), [d, f] = W(null != (n = null == u ? true : u.skuId) ? n : null);
-  return null == u ? null : (null == (t = a.userStatus) ? true : t.claimedAt) != null ? (0, r.jsx)(p.default, {
+  } = e, u = i.useMemo(() => (0, A.xn)(o.config), [o]), [d, f] = W(null != (n = null == u ? true : u.skuId) ? n : null);
+  return null == u ? null : (null == (t = o.userStatus) ? true : t.claimedAt) != null ? (0, r.jsx)(p.default, {
     transitionState: l,
     onCloseModal: H,
     onClose: s,
@@ -285,8 +285,8 @@ function X(e) {
   }) : (0, r.jsx)(K, {
     onClose: s,
     transitionState: l,
-    quest: a,
-    location: o,
+    quest: o,
+    location: a,
     reward: u,
     decoration: d,
     onUseNow: f,
@@ -297,9 +297,9 @@ function X(e) {
 function Q(e, t, i) {
   (0, u.ZDy)(async () => {
     let {
-      default: a
+      default: o
     } = await Promise.resolve().then(n.bind(n, 920916));
-    return n => (0, r.jsx)(a, V(Z({}, n), {
+    return n => (0, r.jsx)(o, V(Z({}, n), {
       quest: e,
       location: t,
       preview: i

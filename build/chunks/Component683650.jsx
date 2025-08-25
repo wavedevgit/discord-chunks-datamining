@@ -20,9 +20,9 @@ function c(e) {
     questId: t,
     reason: n = "not_found"
   } = e;
-  return (0, r.jsx)(a.w, {
+  return (0, r.jsx)(o.w, {
     questId: t,
-    fallbackReason: o.V_.UNKNOWN_QUEST,
+    fallbackReason: a.V_.UNKNOWN_QUEST,
     bodyText: s.intl.string("mobile_only" === n ? s.t.Pag1gY : s.t.CTn0yc),
     questContent: i.jn.INVALID_QUEST_EMBED
   })

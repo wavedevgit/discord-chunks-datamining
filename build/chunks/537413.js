@@ -2,13 +2,13 @@
 /** chunk id: 537413, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => a
+  Z: () => o
 }), require("./388685.js");
 var Chunk451467 = require("./451467.js"),
   Chunk37113 = require("./37113.js");
 
-function a(e, t, n) {
-  for (let a of i.no[e])
-    if ((0, r.Z)(e, a.resolution, a.fps, t, n)) return [a.resolution, a.fps];
+function o(e, t, n) {
+  for (let o of i.no[e])
+    if ((0, r.Z)(e, o.resolution, o.fps, t, n)) return [o.resolution, o.fps];
   return null
 }

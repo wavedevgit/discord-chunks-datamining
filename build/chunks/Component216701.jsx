@@ -20,13 +20,13 @@ function l(e) {
   let {
     emojiId: t,
     emojiName: n,
-    defaultComponent: o,
+    defaultComponent: a,
     size: l = s.MEDIUM
   } = e, {
     customEmoji: c,
     unicodeEmoji: u
-  } = (0, a.Z)(t, n);
-  return null == c && null == u ? o : (0, r.jsx)(i.Z, {
+  } = (0, o.Z)(t, n);
+  return null == c && null == u ? a : (0, r.jsx)(i.Z, {
     emojiName: null != c ? null == c ? true : c.name : n,
     animated: null != c && c.animated,
     emojiId: null == c ? true : c.id,

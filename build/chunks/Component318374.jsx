@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   l = require.n(Chunk392711),
   Chunk481060 = require("./481060.js"),
@@ -85,7 +85,7 @@ function O() {
 function v(e) {
   let {
     users: t,
-    maxUsers: a,
+    maxUsers: o,
     guildId: s,
     channelId: m,
     className: E,
@@ -103,7 +103,7 @@ function v(e) {
     "aria-label": x,
     "aria-labelledby": L,
     "aria-hidden": j
-  } = e, [k, M] = i.useState(false), U = y(v), G = i.useRef(null), B = t.length - a, Z = B + 1, F = B > 0 && !A && !j, V = () => (0, r.jsx)(c.VqE, {
+  } = e, [M, k] = i.useState(false), U = y(v), G = i.useRef(null), B = t.length - o, Z = B + 1, F = B > 0 && !A && !j, V = () => (0, r.jsx)(c.VqE, {
     className: h.popoutWrapper,
     "aria-label": x,
     "aria-labelledby": L,
@@ -117,7 +117,7 @@ function v(e) {
         disablePopout: "function" == typeof N ? N(e.id) : N,
         onClick: w,
         onPopoutRequestClose: () => {
-          M(false), null == D || D()
+          k(false), null == D || D()
         },
         onContextMenu: t => (0, u.jW)(t, async () => {
           let {
@@ -129,18 +129,18 @@ function v(e) {
             channelId: m
           }))
         }, {
-          onClose: () => M(false)
+          onClose: () => k(false)
         })
       }, e.id))
     })
   }), H = () => {
-    let e = F ? a - 1 : Math.min(t.length, a),
+    let e = F ? o - 1 : Math.min(t.length, o),
       n = e - 1,
       i = l()(t).take(e).map((e, t) => {
         let i = f.ZP.getNickname(s, m, e),
-          a = null != i ? i : _.ZP.getName(e),
+          o = null != i ? i : _.ZP.getName(e),
           l = t === n && !F,
-          u = o()(h.avatar, U, l && h.isLast),
+          u = a()(h.avatar, U, l && h.isLast),
           d = (0, r.jsx)(c.qEK, {
             src: e.getAvatarURL(s, 24),
             size: v,
@@ -150,14 +150,14 @@ function v(e) {
           className: u,
           children: C ? (0, r.jsx)("span", {
             role: "img",
-            "aria-label": a,
+            "aria-label": o,
             children: d
           }) : (0, r.jsx)(c.ua7, {
-            text: a,
+            text: o,
             "aria-label": false,
             children: e => (0, r.jsx)("span", b(g({}, e), {
               role: "img",
-              "aria-label": a,
+              "aria-label": o,
               children: d
             }))
           })
@@ -173,15 +173,15 @@ function v(e) {
     return (0, r.jsx)(c.yRy, {
       targetElementRef: G,
       renderPopout: V,
-      shouldShow: k,
+      shouldShow: M,
       position: "bottom",
-      onRequestClose: () => M(false),
+      onRequestClose: () => k(false),
       children: t => (0, r.jsx)(c.P3F, b(g({}, t), {
         innerRef: G,
-        className: o()(h.overflow, U, S),
+        className: a()(h.overflow, U, S),
         onFocus: P,
         onClick: e => {
-          null == R || R(e), M(true)
+          null == R || R(e), k(true)
         },
         "aria-label": p.intl.formatToPlainString(p.t.R8Z8Qk, {
           count: Z
@@ -198,7 +198,7 @@ function v(e) {
     role: "group",
     "aria-label": x,
     "aria-labelledby": L,
-    className: o()(E, h.avatars),
+    className: a()(E, h.avatars),
     "aria-hidden": j,
     children: [H(), Y()]
   })

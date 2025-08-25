@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk278074 = require("./278074.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -38,7 +38,7 @@ let O = [{
   v = e => {
     let {
       purchase: t
-    } = e, n = (0, l.e7)([p.default], () => p.default.locale), i = (0, u.qS)(t), a = null != t.expiresAt ? (0, m.TD)(Date.now(), t.expiresAt) : null, o = (0, f.ag)(t), s = t.purchasedAt.toLocaleDateString(n, {
+    } = e, n = (0, l.e7)([p.default], () => p.default.locale), i = (0, u.qS)(t), o = null != t.expiresAt ? (0, m.TD)(Date.now(), t.expiresAt) : null, a = (0, f.ag)(t), s = t.purchasedAt.toLocaleDateString(n, {
       month: "long",
       year: "numeric"
     });
@@ -47,12 +47,12 @@ let O = [{
       children: [(0, r.jsx)(c.Text, {
         variant: "text-sm/semibold",
         color: "header-primary",
-        children: o
-      }), null != a && (0, r.jsx)(c.Text, {
+        children: a
+      }), null != o && (0, r.jsx)(c.Text, {
         variant: "text-xxs/normal",
         color: "text-muted",
         children: b.intl.format(b.t.Io7ozs, {
-          days: a.days.toString()
+          days: o.days.toString()
         })
       }), (0, r.jsxs)(c.Text, {
         variant: "text-xxs/normal",
@@ -83,20 +83,20 @@ let O = [{
     let {
       user: t,
       guildId: n,
-      avatarDecorationOverride: a,
+      avatarDecorationOverride: o,
       className: p
     } = e, m = (0, l.e7)([h.Z], () => h.Z.getStatus(t.id)), {
       product: I,
       purchase: T
-    } = (0, d.Z)(null == a ? true : a.skuId), S = g.ZP.canUseCollectibles(t), A = (0, u.qS)(T), C = (0, u.G1)(I), N = !S && A, R = (0, _.M)(!C || S), P = (0, f.kd)(I), w = i.useMemo(() => N ? b.intl.string(b.t["7vkeu7"]) : (0, s.EQ)([C, S, R]).with([true, true, false], () => b.intl.string(b.t.hmyYKy)).with([true, false, true], () => b.intl.string(b.t.q0PlFh)).with([true, false, false], () => b.intl.string(b.t["0xs2sL"])).otherwise(() => b.intl.string(b.t.fEGjVV)), [N, C, S, R]);
+    } = (0, d.Z)(null == o ? true : o.skuId), S = g.ZP.canUseCollectibles(t), A = (0, u.qS)(T), C = (0, u.G1)(I), N = !S && A, R = (0, _.M)(!C || S), P = (0, f.kd)(I), w = i.useMemo(() => N ? b.intl.string(b.t["7vkeu7"]) : (0, s.EQ)([C, S, R]).with([true, true, false], () => b.intl.string(b.t.hmyYKy)).with([true, false, true], () => b.intl.string(b.t.q0PlFh)).with([true, false, false], () => b.intl.string(b.t["0xs2sL"])).otherwise(() => b.intl.string(b.t.fEGjVV)), [N, C, S, R]);
     return null != I && (null == T || N) ? (0, r.jsxs)("div", {
-      className: o()(y.modalPreview, y.shopPreviewContainer, p),
+      className: a()(y.modalPreview, y.shopPreviewContainer, p),
       children: [(0, r.jsx)("div", {
         className: y.shopPreviewBanner,
         children: (0, r.jsx)(E.Z, {
           user: t,
           guildId: n,
-          avatarDecorationOverride: a
+          avatarDecorationOverride: o
         })
       }), (0, r.jsxs)("div", {
         className: y.shopPreviewTextContainer,
@@ -109,7 +109,7 @@ let O = [{
         })]
       })]
     }) : (0, r.jsxs)("div", {
-      className: o()(y.modalPreview, p),
+      className: a()(y.modalPreview, p),
       children: [(0, r.jsxs)("div", {
         className: y.previewSections,
         children: [(0, r.jsx)("div", {
@@ -117,14 +117,14 @@ let O = [{
           children: (0, r.jsx)(E.Z, {
             user: t,
             guildId: n,
-            avatarDecorationOverride: a
+            avatarDecorationOverride: o
           })
         }), (0, r.jsx)("div", {
           className: y.smallDecorationPreviewsContainer,
           children: O.map(e => {
             let {
               avatarSize: i,
-              showStatus: o
+              showStatus: a
             } = e;
             return (0, r.jsx)("div", {
               className: y.smallDecorationPreview,
@@ -132,11 +132,11 @@ let O = [{
                 user: t,
                 guildId: n,
                 avatarSize: i,
-                avatarDecorationOverride: a,
-                status: o ? m : true,
+                avatarDecorationOverride: o,
+                status: a ? m : true,
                 "aria-hidden": true
               })
-            }, "".concat(i).concat(o))
+            }, "".concat(i).concat(a))
           })
         })]
       }), null != T && (0, r.jsx)(v, {

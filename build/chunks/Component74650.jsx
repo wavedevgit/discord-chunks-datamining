@@ -27,10 +27,10 @@ function h(e) {
     className: _.popup,
     children: (0, r.jsxs)("div", {
       className: _.content,
-      children: [(0, r.jsx)(o.P3F, {
+      children: [(0, r.jsx)(a.P3F, {
         className: _.closeIcon,
         onClick: () => t(u.L.USER_DISMISS),
-        children: (0, r.jsx)(o.Dio, {
+        children: (0, r.jsx)(a.Dio, {
           size: "xs"
         })
       }), (0, r.jsx)("img", {
@@ -38,17 +38,17 @@ function h(e) {
         alt: "",
         className: _.asset
       }), (0, r.jsxs)("div", {
-        children: [(0, r.jsx)(o.X6q, {
+        children: [(0, r.jsx)(a.X6q, {
           variant: "heading-md/semibold",
           color: "text-primary",
           className: _.title,
           children: f.intl.string(f.t["PRXV4+"])
-        }), (0, r.jsx)(o.Text, {
+        }), (0, r.jsx)(a.Text, {
           variant: "text-sm/medium",
           color: "text-secondary",
           children: f.intl.string(f.t.RSHtFx)
         })]
-      }), m ? (0, r.jsx)(o.zxk, {
+      }), m ? (0, r.jsx)(a.zxk, {
         text: f.intl.string(f.t.LhcHi4),
         fullWidth: true,
         onClick: () => {
@@ -60,8 +60,8 @@ function h(e) {
         },
         showGradient: true,
         subscriptionTier: d.Si.TIER_2,
-        size: a.zx.Sizes.LARGE,
-        color: a.zx.Colors.CUSTOM,
+        size: o.zx.Sizes.LARGE,
+        color: o.zx.Colors.CUSTOM,
         textOptions: {
           textOverride: f.intl.string(f.t.pj0XBA)
         },

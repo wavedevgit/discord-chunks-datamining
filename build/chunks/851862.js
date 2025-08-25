@@ -22,10 +22,10 @@ class c extends Chunk147913.Z {
   constructor(...e) {
     super(...e), l(this, "handlePostConnectionOpen", () => {
       if (!(0, i.isWeb)())
-        if ((0, o.Y)("NegativeHardwareAccelerationExperimentManager")) a.ZP.setSetting("enableHardwareAcceleration", true);
+        if ((0, a.Y)("NegativeHardwareAccelerationExperimentManager")) o.ZP.setSetting("enableHardwareAcceleration", true);
         else {
           let e = (0, s.fD)();
-          a.ZP.setSetting("enableHardwareAcceleration", e)
+          o.ZP.setSetting("enableHardwareAcceleration", e)
         }
     }), l(this, "actions", {
       POST_CONNECTION_OPEN: this.handlePostConnectionOpen

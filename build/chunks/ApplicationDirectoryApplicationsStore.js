@@ -95,7 +95,7 @@ class b extends(r = Chunk442837.ZP.Store) {
   getApplicationRecord(e) {
     if (null == e) return;
     let t = f[e];
-    if (null != t) return o.ZP.createFromServer(t)
+    if (null != t) return a.ZP.createFromServer(t)
   }
   getApplications() {
     return f

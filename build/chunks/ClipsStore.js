@@ -2,7 +2,7 @@
 /** chunk id: 435064, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => ea
+  Z: () => eo
 }), require("./388685.js"), require("./997841.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -109,7 +109,7 @@ function j(e) {
   x.hardwareClassificationForDecoupled = t, x.hardwareClassificationForDecoupled === _.x.MEETS_AUTO_ENABLE && r !== _.x.MEETS_AUTO_ENABLE && x.clipsSettings.clipsEnabled && (x.clipsSettings.decoupledClipsEnabled = true)
 }
 
-function k(e) {
+function M(e) {
   let {
     clip: t
   } = e;
@@ -120,7 +120,7 @@ function k(e) {
     }
 }
 
-function M(e) {
+function k(e) {
   let {
     settings: t
   } = e;
@@ -450,7 +450,7 @@ g(er, "displayName", "ClipsStore"), g(er, "persistKey", "ClipsStore"), g(er, "mi
   }
 })]);
 let ei = new er(Chunk570140.Z, {
-    CLIPS_SETTINGS_UPDATE: M,
+    CLIPS_SETTINGS_UPDATE: k,
     CLIPS_SAVE_CLIP: Z,
     CLIPS_SAVE_CLIP_PLACEHOLDER: F,
     CLIPS_SAVE_CLIP_PLACEHOLDER_ERROR: V,
@@ -463,7 +463,7 @@ let ei = new er(Chunk570140.Z, {
     CLIPS_CLEAR_NEW_CLIP_IDS: $,
     CLIPS_LOAD_DIRECTORY_SUCCESS: X,
     CLIPS_DELETE_CLIP: Q,
-    CLIPS_UPDATE_METADATA: k,
+    CLIPS_UPDATE_METADATA: M,
     RTC_CONNECTION_FLAGS: ee,
     CLIPS_SHOW_CALL_WARNING: H,
     VOICE_CHANNEL_SELECT: Y,
@@ -473,4 +473,4 @@ let ei = new er(Chunk570140.Z, {
     CLIPS_DISMISS_EDUCATION: en,
     RUNNING_GAMES_CHANGE: et
   }),
-  ea = ei
+  eo = ei

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk866442 = require("./866442.js"),
   Chunk596454 = require("./596454.jsx"),
   Chunk434650 = require("./434650.js"),
@@ -61,8 +61,8 @@ function y(e, t) {
   if (null == e) return {};
   var n, r, i = O(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -70,14 +70,14 @@ function y(e, t) {
 function O(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let v = Chunk647438.memo(function(e) {
   let t, n, {
       useChatFontScaling: i,
-      hideEmoji: a,
+      hideEmoji: o,
       emoji: c,
       className: m,
       count: g,
@@ -105,23 +105,23 @@ let v = Chunk647438.memo(function(e) {
       accentColor: e,
       backgroundColor: r,
       opacity: i
-    } = P, a = null != (j = (0, s.wK)(null != r ? r : "", i)) ? j : "";
-    R && (L.borderColor = r), L.background = a, t = e, n = e
+    } = P, o = null != (j = (0, s.wK)(null != r ? r : "", i)) ? j : "";
+    R && (L.borderColor = r), L.background = o, t = e, n = e
   }
-  let k = {
+  let M = {
     minWidth: x,
     color: t,
     borderColor: n
   };
   return (0, r.jsxs)("div", {
-    className: o()(w.reaction, w.reactionInner, m, {
+    className: a()(w.reaction, w.reactionInner, m, {
       [w.reactionMe]: R,
       [w.reactionReadOnly]: v && !I && !S && !T
     }),
     style: L,
     children: [(0, r.jsx)(l.Z, {
-      className: o()({
-        [w.hideEmoji]: a
+      className: a()({
+        [w.hideEmoji]: o
       }),
       emojiId: c.id,
       emojiName: c.name,
@@ -129,7 +129,7 @@ let v = Chunk647438.memo(function(e) {
       animated: N && c.animated
     }), (0, r.jsx)("div", {
       className: w.reactionCount,
-      style: k,
+      style: M,
       children: D
     })]
   })
@@ -143,16 +143,16 @@ let T = Chunk647438.memo(function(e) {
   var {
     showImmediate: t,
     reactions: n
-  } = e, a = y(e, ["showImmediate", "reactions"]);
-  let [o, s] = i.useState(false), [l, u] = i.useTransition(), d = i.useCallback(e => {
-    !e || o || l || u(() => {
+  } = e, o = y(e, ["showImmediate", "reactions"]);
+  let [a, s] = i.useState(false), [l, u] = i.useTransition(), d = i.useCallback(e => {
+    !e || a || l || u(() => {
       s(true)
     })
-  }, [o, l]), f = (0, c.O)(d), p = o && !l || t ? _.le : v;
+  }, [a, l]), f = (0, c.O)(d), p = a && !l || t ? _.le : v;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       ref: f
-    }), n.map(e => (0, r.jsx)(p, b(g({}, a, e), {
+    }), n.map(e => (0, r.jsx)(p, b(g({}, o, e), {
       emojiSize: "reaction"
     }), I(e)))]
   })

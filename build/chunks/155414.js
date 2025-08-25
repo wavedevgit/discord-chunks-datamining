@@ -2,15 +2,15 @@
 /** chunk id: 155414, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  X: () => o
+  X: () => a
 });
 var Chunk544891 = require("./544891.js"),
   Chunk881052 = require("./881052.js"),
   Chunk981631 = require("./981631.js");
-let o = async (e, t) => {
+let a = async (e, t) => {
   try {
     return (await r.tn.get({
-      url: a.ANM.PRICE_TIERS,
+      url: o.ANM.PRICE_TIERS,
       query: {
         price_tier_type: t,
         guild_id: e

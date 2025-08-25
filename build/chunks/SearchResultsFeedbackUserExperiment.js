@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   f: () => i,
-  j: () => a
+  j: () => o
 });
 let r = (0, require("./818083.js").B)({
   kind: "user",
@@ -36,7 +36,7 @@ function i(e) {
     autoTrackExposure: n = true
   } = e, {
     enabled: i,
-    force: a
+    force: o
   } = r.getCurrentConfig({
     location: t
   }, {
@@ -44,11 +44,11 @@ function i(e) {
   });
   return {
     enabled: i,
-    force: a
+    force: o
   }
 }
 
-function a(e) {
+function o(e) {
   let {
     location: t,
     autoTrackExposure: n = true

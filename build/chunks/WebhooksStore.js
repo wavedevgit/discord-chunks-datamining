@@ -6,7 +6,7 @@ require.d(exports, {
   Z: () => y
 }), require("./388685.js");
 var i, Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  a = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk308063 = require("./308063.js");
@@ -35,12 +35,12 @@ function h(e) {
     guildId: t,
     channelId: n,
     webhooks: i,
-    error: a
+    error: o
   } = e;
-  if (null == i) return void(null != a ? (r = a, delete f[_(t, n)]) : null != n && null != d[t] && (r = null, c.Z.fetchForChannel(t, n)));
+  if (null == i) return void(null != o ? (r = o, delete f[_(t, n)]) : null != n && null != d[t] && (r = null, c.Z.fetchForChannel(t, n)));
   r = null;
   let s = [];
-  null != n && (s = o()(p(t)).values().filter(e => e.channel_id !== n).value());
+  null != n && (s = a()(p(t)).values().filter(e => e.channel_id !== n).value());
   let l = d[t] = {};
   s.concat(i).forEach(e => l[e.id] = e), delete f[_(t, n)]
 }
@@ -73,10 +73,10 @@ class b extends(i = Chunk442837.ZP.Store) {
     return null != f[_(e, t)]
   }
   getWebhooksForGuild(e) {
-    return o().values(p(e))
+    return a().values(p(e))
   }
   getWebhooksForChannel(e, t) {
-    return o()(p(e)).values().filter(e => e.channel_id === t).value()
+    return a()(p(e)).values().filter(e => e.channel_id === t).value()
   }
   get error() {
     return r

@@ -98,18 +98,18 @@ class i {
     for (let r of this)
       if ("section" === r.type && r.hasChildNodes) {
         let i = r.clone(),
-          o = null;
+          a = null;
         for (let n of this.getChildren(r.key))
-          if (a(n, e, this, t)) {
+          if (o(n, e, this, t)) {
             let e = n.clone();
-            null == o && (i.firstChildKey = e.key), null == t.firstKey && (t.firstKey = i.key), o && o.parentKey === e.parentKey ? (o.nextKey = e.key, e.prevKey = o.key) : e.prevKey = null, e.nextKey = null, t.addNode(e), o = e
-          } o && ("header" !== o.type ? (i.lastChildKey = o.key, null == n ? i.prevKey = null : ("section" === n.type || "separator" === n.type) && (n.nextKey = i.key, i.prevKey = n.key), i.nextKey = null, n = i, t.addNode(i)) : (t.firstKey === i.key && (t.firstKey = null), t.removeNode(o.key)))
+            null == a && (i.firstChildKey = e.key), null == t.firstKey && (t.firstKey = i.key), a && a.parentKey === e.parentKey ? (a.nextKey = e.key, e.prevKey = a.key) : e.prevKey = null, e.nextKey = null, t.addNode(e), a = e
+          } a && ("header" !== a.type ? (i.lastChildKey = a.key, null == n ? i.prevKey = null : ("section" === n.type || "separator" === n.type) && (n.nextKey = i.key, i.prevKey = n.key), i.nextKey = null, n = i, t.addNode(i)) : (t.firstKey === i.key && (t.firstKey = null), t.removeNode(a.key)))
       } else if ("separator" === r.type) {
       let e = r.clone();
       e.nextKey = null, (null == n ? true : n.type) === "section" && (n.nextKey = e.key, e.prevKey = n.key, n = e, t.addNode(e))
     } else {
       let i = r.clone();
-      a(i, e, this, t) && (null == t.firstKey && (t.firstKey = i.key), null != n && "section" !== n.type && "separator" !== n.type && n.parentKey === i.parentKey ? (n.nextKey = i.key, i.prevKey = n.key) : i.prevKey = null, i.nextKey = null, t.addNode(i), n = i)
+      o(i, e, this, t) && (null == t.firstKey && (t.firstKey = i.key), null != n && "section" !== n.type && "separator" !== n.type && n.parentKey === i.parentKey ? (n.nextKey = i.key, i.prevKey = n.key) : i.prevKey = null, i.nextKey = null, t.addNode(i), n = i)
     }
     if ((null == n ? true : n.type) === "separator" && null === n.nextKey) {
       let e;
@@ -122,7 +122,7 @@ class i {
   }
 }
 
-function a(e, t, n, r) {
+function o(e, t, n, r) {
   if ("subdialogtrigger" === e.type || "submenutrigger" === e.type) {
     let i = [...n.getChildren(e.key)][0];
     if (!(i && t(i.textValue))) returnfalse;

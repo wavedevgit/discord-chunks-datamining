@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk686546 = require("./686546.jsx"),
@@ -56,7 +56,7 @@ function p(e) {
     onClick: O,
     onContextMenu: v,
     className: I
-  } = e, T = (0, o.e7)([c.Z], () => null != t && c.Z.isLocalMute(t)), S = () => {
+  } = e, T = (0, a.e7)([c.Z], () => null != t && c.Z.isLocalMute(t)), S = () => {
     let e = T ? s.v0G : _ ? s.wE8 : s.nRN;
     return d || _ || T ? (0, r.jsx)("div", {
       className: u.statusContainer,
@@ -66,7 +66,7 @@ function p(e) {
       }, "status")
     }) : null
   }, A = () => (0, r.jsx)("div", {
-    className: a()(u.border, {
+    className: o()(u.border, {
       [u.speaking]: i
     })
   }, "border"), C = () => d && i ? (0, r.jsxs)(r.Fragment, {
@@ -80,7 +80,7 @@ function p(e) {
       t = (0, r.jsx)("img", {
         src: p,
         alt: " ",
-        className: a()(u.voiceAvatar, E, {
+        className: o()(u.voiceAvatar, E, {
           [u.ringingOutgoing]: m && 0 === g
         })
       });
@@ -96,7 +96,7 @@ function p(e) {
         children: [null == b ? true : b(), t]
       }), C()]
     })
-  }, R = a()(u.wrapper, {
+  }, R = o()(u.wrapper, {
     [u.clickable]: null != O,
     [u.ringingOutgoing]: m && 0 === g,
     [u.ringingIncoming]: m && 1 === g

@@ -29,7 +29,7 @@ function h(e) {
 }
 
 function m(e, t, n, r, i) {
-  var a, o, s, l, c, u, d, f, _, p, m, g, E, b, y, O;
+  var o, a, s, l, c, u, d, f, _, p, m, g, E, b, y, O;
   let v = r.find(e => "video" === e.type);
   if (null == n && (n = {
       packetsSentOrReceived: 0,
@@ -42,10 +42,10 @@ function m(e, t, n, r, i) {
       resolutionAggregated: 0,
       minVersion: e
     }), null == v) return n;
-  let I = h(v) ? null != (o = v.packetsSent) ? o : 0 : null != (s = v.packetsReceived) ? s : 0,
+  let I = h(v) ? null != (a = v.packetsSent) ? a : 0 : null != (s = v.packetsReceived) ? s : 0,
     T = h(v) ? null != (l = v.packetsLost) ? l : 0 : null != (c = v.packetsLost) ? c : 0,
     S = h(v) ? null != (u = v.frameRateEncode) ? u : 0 : null != (d = v.frameRateDecode) ? d : 0,
-    A = null != (f = null == (a = v.resolution) ? true : a.height) ? f : 0;
+    A = null != (f = null == (o = v.resolution) ? true : o.height) ? f : 0;
   n.numDatapoints += 1, n.frameRateAggregated += S, n.resolutionAggregated += A;
   let C = null == i ? true : i.find(e => "video" === e.type);
   if (null != C && t >= n.minVersion) {
@@ -60,10 +60,10 @@ function m(e, t, n, r, i) {
 }
 
 function g(e, t, n, r) {
-  var i, a;
+  var i, o;
   null == e[t] && (e[t] = {});
-  let o = s.default.getId();
-  for (let s of (e[t][o] = m(n.version, null != (i = null == r ? true : r.version) ? i : 0, e[t][o], n.stats.rtp.outbound, null == r ? true : r.stats.rtp.outbound), Object.keys(n.stats.rtp.inbound))) e[t][s] = m(n.version, null != (a = null == r ? true : r.version) ? a : 0, e[t][s], n.stats.rtp.inbound[s], null == r ? true : r.stats.rtp.inbound[s])
+  let a = s.default.getId();
+  for (let s of (e[t][a] = m(n.version, null != (i = null == r ? true : r.version) ? i : 0, e[t][a], n.stats.rtp.outbound, null == r ? true : r.stats.rtp.outbound), Object.keys(n.stats.rtp.inbound))) e[t][s] = m(n.version, null != (o = null == r ? true : r.version) ? o : 0, e[t][s], n.stats.rtp.inbound[s], null == r ? true : r.stats.rtp.inbound[s])
 }
 
 function E(e) {
@@ -109,7 +109,7 @@ function v(e) {
   if (r) returnfalse;
   let i = null == (t = l.Z.getRTCConnection(n)) ? true : t.getMediaEngineConnectionId();
   if (null == i) returnfalse;
-  b(i, (0, o.my)(n).ownerId)
+  b(i, (0, a.my)(n).ownerId)
 }
 
 function I(e, t) {

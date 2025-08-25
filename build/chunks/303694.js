@@ -2,12 +2,12 @@
 /** chunk id: 303694, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  W: () => o,
-  l: () => a
+  W: () => a,
+  l: () => o
 });
 var Chunk485386 = require("./485386.js"),
   Chunk388032 = require("./388032.jsx");
-let a = e => {
+let o = e => {
     switch (e) {
       case "home":
       case "guide":
@@ -21,7 +21,7 @@ let a = e => {
     }
     return null
   },
-  o = (e, t, n) => {
+  a = (e, t, n) => {
     if ("linked-roles" === e) {
       var i;
       if (null == n) return null;

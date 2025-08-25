@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk512722 = require("./512722.js"),
-  a = require.n(Chunk512722),
+  o = require.n(Chunk512722),
   Chunk680018 = require("./680018.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk987209 = require("./987209.jsx"),
@@ -30,9 +30,9 @@ function h(e) {
     isGift: g,
     giftRecipient: E
   } = (0, l.wD)();
-  a()(null != h, "Expected selectedSkuId"), a()(null != m, "Expected application");
+  o()(null != h, "Expected selectedSkuId"), o()(null != m, "Expected application");
   let b = i[h];
-  a()(null != b, "Expected sku");
+  o()(null != b, "Expected sku");
   let y = g ? _.intl.formatToPlainString(_.t["2VjPT0"], {
     itemName: b.name,
     giftRecipient: null != (t = null == E ? true : E.username) ? t : "your recipient"
@@ -52,7 +52,7 @@ function h(e) {
         children: y
       }), (0, r.jsx)("div", {
         className: p.divider
-      }), (0, r.jsx)(o.z, {
+      }), (0, r.jsx)(a.z, {
         onClick: n,
         text: _.intl.string(_.t.cpT0Cg),
         fullWidth: true

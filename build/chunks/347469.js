@@ -3,12 +3,12 @@
 "use strict";
 require.d(exports, {
   Z: () => l,
-  y: () => o
+  y: () => a
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk392711 = require("./392711.js");
-let a = 300;
-var o = function(e) {
+let o = 300;
+var a = function(e) {
   return e[e.VERTICAL_TOP = 0] = "VERTICAL_TOP", e[e.VERTICAL_BOTTOM = 1] = "VERTICAL_BOTTOM", e[e.HORIZONTAL_LEFT = 2] = "HORIZONTAL_LEFT", e[e.HORIZONTAL_RIGHT = 3] = "HORIZONTAL_RIGHT", e
 }({});
 
@@ -19,12 +19,12 @@ let l = e => {
   let {
     initialElementDimension: t,
     resizableDomNodeRef: n,
-    maxDimension: o,
+    maxDimension: a,
     minDimension: l,
     onElementResize: c,
     onElementResizeStart: u,
     onElementResizeEnd: d,
-    throttleDuration: f = a,
+    throttleDuration: f = o,
     orientation: _,
     usePointerEvents: p = false,
     getClampedValue: h = i.clamp
@@ -40,15 +40,15 @@ let l = e => {
     }
 
     function t(e) {
-      return h(e, null != l ? l : 0, null != o ? o : e)
+      return h(e, null != l ? l : 0, null != a ? a : e)
     }
     let r = (0, i.throttle)(c, f),
-      a = i => {
+      o = i => {
         if (null == n.current) return null;
-        let a = e(i),
-          o = t(a),
+        let o = e(i),
+          a = t(o),
           l = 1 === s(_) ? "width" : "height";
-        n.current.style[l] = "".concat(o, "px"), b.current || (b.current = true, null == u || u(o)), r(o, a)
+        n.current.style[l] = "".concat(a, "px"), b.current || (b.current = true, null == u || u(a)), r(a, o)
       },
       O = n => {
         g(false);
@@ -59,10 +59,10 @@ let l = e => {
       v = p ? "pointerup" : "mouseup",
       I = p ? "pointermove" : "mousemove",
       T = n.current.ownerDocument;
-    return T.addEventListener(v, O), T.addEventListener(I, a), () => {
-      T.removeEventListener(v, O), T.removeEventListener(I, a), r.cancel()
+    return T.addEventListener(v, O), T.addEventListener(I, o), () => {
+      T.removeEventListener(v, O), T.removeEventListener(I, o), r.cancel()
     }
-  }, [m, c, l, o, _, n, f, d, p, h, u]), r.useCallback(e => {
+  }, [m, c, l, a, _, n, f, d, p, h, u]), r.useCallback(e => {
     let t = 1 === s(_);
     null != n.current && (y.current = t ? n.current.offsetWidth : n.current.offsetHeight), E.current = t ? e.screenX : e.screenY, g(true)
   }, [_, n])

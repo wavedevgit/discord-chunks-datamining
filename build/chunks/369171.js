@@ -7,7 +7,7 @@ require.d(exports, {
 });
 var Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk607070 = require("./607070.js"),
   Chunk212459 = require("./212459.js"),
@@ -22,8 +22,8 @@ function d(e) {
     mode: n = "DEFAULT"
   } = e, {
     zoomed: r
-  } = (0, l.Y)(), i = (0, o.e7)([s.Z], () => s.Z.keyboardModeEnabled);
-  return t(a()(c.base, {
+  } = (0, l.Y)(), i = (0, a.e7)([s.Z], () => s.Z.keyboardModeEnabled);
+  return t(o()(c.base, {
     [c.hidden]: r && !i && "PINNED" !== n,
     [c.focusSensitive]: "FOCUS_SENSITIVE" === n
   }))

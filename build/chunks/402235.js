@@ -17,8 +17,8 @@ function l(e, t) {
       let t = i.Z.getGuild(e);
       return null != t && t.features.has(s.oNc.ENHANCED_ROLE_COLORS)
     }),
-    a = (0, o.ZP)(null != e ? e : true, null != t ? t : true);
-  return n || a
+    o = (0, a.ZP)(null != e ? e : true, null != t ? t : true);
+  return n || o
 }
 
 function c(e, t) {
@@ -26,13 +26,13 @@ function c(e, t) {
       let t = i.Z.getGuild(e);
       return null != t && t.features.has(s.oNc.ENHANCED_ROLE_COLORS)
     }),
-    l = (0, a.W)(e, "useHasEnhancedRoleColorsForRole") && null != t && (0, o.YB)(t);
+    l = (0, o.W)(e, "useHasEnhancedRoleColorsForRole") && null != t && (0, a.YB)(t);
   return n || l
 }
 
 function u(e, t) {
   let n = i.Z.getGuild(e),
     r = null != n && n.features.has(s.oNc.ENHANCED_ROLE_COLORS),
-    l = (0, a.Tq)(e, "getHasEnhancedRoleColorsForRole") && (0, o.YB)(t);
+    l = (0, o.Tq)(e, "getHasEnhancedRoleColorsForRole") && (0, a.YB)(t);
   return r || l
 }

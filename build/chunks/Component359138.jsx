@@ -74,7 +74,7 @@ function g() {
     className: Chunk745343.cameraWrapper,
     children: (0, Chunk951288.jsx)(Chunk481060.ua7, {
       text: _ ? null : Chunk388032.intl.string(Chunk388032.t["8jSzSU"]),
-      children: e => (0, r.jsx)(o.zxk, p(f({
+      children: e => (0, r.jsx)(a.zxk, p(f({
         variant: "primary",
         text: c.intl.string(c.t.JIf4v7)
       }, e), {

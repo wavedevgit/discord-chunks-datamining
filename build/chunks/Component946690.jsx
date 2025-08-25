@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk519279 = require("./519279.js"),
   Chunk575140 = require("./575140.js");
@@ -19,24 +19,24 @@ let c = e => {
     description: c
   } = e;
   return (0, r.jsxs)("div", {
-    className: a()(l.container, s.box),
+    className: o()(l.container, s.box),
     children: [(0, r.jsx)("div", {
       className: l.circle,
       children: (0, r.jsx)(t, {
-        className: a()(l.icon, n),
+        className: o()(l.icon, n),
         size: "custom",
         width: 20,
         height: 20,
         color: "currentColor"
       })
     }), (0, r.jsxs)("div", {
-      children: [(0, r.jsx)(o.X6q, {
+      children: [(0, r.jsx)(a.X6q, {
         variant: "heading-md/bold",
         className: l.header,
-        children: (0, r.jsx)(o.y5t, {
+        children: (0, r.jsx)(a.y5t, {
           children: i
         })
-      }), (0, r.jsx)(o.Text, {
+      }), (0, r.jsx)(a.Text, {
         variant: "text-sm/medium",
         color: "text-muted",
         children: c

@@ -30,7 +30,7 @@ function p(e) {
     channelId: n.id,
     guildId: true,
     messageId: true
-  })(), E = (0, a.q)(t.applicationId);
+  })(), E = (0, o.q)(t.applicationId);
   if (null == E) return null;
   let b = f.intl.format(f.t.m7Lwam, {
     username: m,
@@ -38,9 +38,9 @@ function p(e) {
     gameName: E.name,
     gameIconHook: e => (0, r.jsxs)("span", {
       className: _.gameContainer,
-      children: [(0, r.jsx)(o.Z, {
+      children: [(0, r.jsx)(a.Z, {
         game: E,
-        size: o.Z.Sizes.XXSMALL,
+        size: a.Z.Sizes.XXSMALL,
         className: _.inlineIcon
       }), " ", e]
     }),

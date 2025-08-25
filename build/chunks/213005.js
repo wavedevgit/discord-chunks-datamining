@@ -34,7 +34,7 @@ class d extends Chunk836560.EventEmitter {
     0 === t ? this.combo = this.combo.filter(t => {
       let [r, i] = t;
       return r !== e || i !== n
-    }) : (this.combo.push([e, n, (0, o.dU)()]), this.emit("change", this))
+    }) : (this.combo.push([e, n, (0, a.dU)()]), this.emit("change", this))
   }
   constructor() {
     super(), l(this, "combo", []), c.push(this), 1 === c.length && Chunk998502.ZP.setOnInputEventCallback(u)

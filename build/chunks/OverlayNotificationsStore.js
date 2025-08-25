@@ -288,7 +288,7 @@ let eb = new eO(Chunk570140.Z, {
     } = e;
     ep(0);
     let i = null != (t = R.ZP.getFocusedPID()) ? t : T.UNSET_PID;
-    if (k.default.hasChangedRenderMode(i)) return;
+    if (A.default.hasChangedRenderMode(i)) return;
     let r = (0, Y.Z)((0, M.pL)(), n);
     null != r && em(r, {
       priority: L.Tu.URGENT,
@@ -341,6 +341,8 @@ let eb = new eO(Chunk570140.Z, {
             } = f.A.getCurrentConfig({
               guildId: e.guild_id,
               location: "showActivityNotification"
+            }, {
+              autoTrackExposure: false
             });
             if (!c || null == (r = x.Z.getApplicationActivity(s)) || r.application_id !== s) returnfalse;
             l = (0, B.Z)(e, n, a, r)

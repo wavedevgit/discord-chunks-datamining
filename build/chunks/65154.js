@@ -19,7 +19,7 @@ require.d(exports, {
   QO: () => O,
   QP: () => l,
   Qx: () => d,
-  R$: () => k,
+  R$: () => M,
   Tr: () => Q,
   UC: () => U,
   Uc: () => et,
@@ -38,15 +38,15 @@ require.d(exports, {
   fC: () => c,
   fU: () => m,
   fm: () => V,
-  h7: () => a,
+  h7: () => o,
   iA: () => z,
   jg: () => E,
   kS: () => F,
   mC: () => A,
   mN: () => S,
   n4: () => Y,
-  pM: () => o,
-  pk: () => M,
+  pM: () => a,
+  pk: () => k,
   ru: () => j,
   u$: () => N,
   uA: () => J,
@@ -61,10 +61,10 @@ var Chunk268146 = require("./268146.js"),
   i = function(e) {
     return e.DEFAULT = "default", e.STREAM = "stream", e
   }({}),
-  a = function(e) {
+  o = function(e) {
     return e.AUDIO_INPUT = "audioinput", e.AUDIO_OUTPUT = "audiooutput", e.VIDEO_INPUT = "videoinput", e
   }({}),
-  o = function(e) {
+  a = function(e) {
     return e.PUSH_TO_TALK = "PUSH_TO_TALK", e.VOICE_ACTIVITY = "VOICE_ACTIVITY", e
   }({}),
   s = function(e) {
@@ -104,8 +104,8 @@ let d = 100,
   x = 50,
   L = 1280,
   j = 720,
-  k = 30,
-  M = 15e5,
+  M = 30,
+  k = 15e5,
   U = 5e5,
   G = 35e5,
   B = 9e6,

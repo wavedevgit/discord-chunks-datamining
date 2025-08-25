@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk75735 = require("./75735.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk40851 = require("./40851.jsx"),
@@ -60,8 +60,8 @@ function E(e, t) {
   if (null == e) return {};
   var n, r, i = b(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -69,8 +69,8 @@ function E(e, t) {
 function b(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -78,8 +78,8 @@ function y(e) {
   let t = (0, u.X)(e),
     {
       enabled: n,
-      cameraUnavailable: a,
-      onChange: o,
+      cameraUnavailable: o,
+      onChange: a,
       onCameraUnavailable: d,
       hasPermission: _,
       children: p,
@@ -87,7 +87,7 @@ function y(e) {
       join: m
     } = e,
     g = (0, c.bp)(),
-    E = a ? () => d() : () => o(!e.enabled, g),
+    E = o ? () => d() : () => a(!e.enabled, g),
     {
       Component: b,
       play: y,
@@ -103,7 +103,7 @@ function y(e) {
       iconComponent: v,
       iconColor: "currentColor",
       label: t,
-      unavailable: a,
+      unavailable: o,
       onMouseEnter: m ? true : O.onMouseEnter,
       onMouseLeave: m ? true : O.onMouseLeave
     })
@@ -115,7 +115,7 @@ function O(e) {
     enabled: t,
     join: n,
     channel: i,
-    onChange: a,
+    onChange: o,
     onCameraUnavailable: s,
     cameraUnavailable: l,
     hasPermission: c,
@@ -132,7 +132,7 @@ function O(e) {
     enabled: t,
     join: n,
     channel: i,
-    onChange: a,
+    onChange: o,
     onCameraUnavailable: s,
     cameraUnavailable: l,
     hasPermission: c,
@@ -142,7 +142,7 @@ function O(e) {
       var {
         unavailable: t,
         onMouseEnter: i,
-        onMouseLeave: a,
+        onMouseLeave: o,
         isActive: s
       } = e, l = E(e, ["unavailable", "onMouseEnter", "onMouseLeave", "isActive"]);
       return (0, r.jsx)(v, g(h({}, l, O), {
@@ -155,9 +155,9 @@ function O(e) {
         },
         onMouseLeave: e => {
           var t;
-          null == (t = O.onMouseLeave) || t.call(O, e), null == a || a()
+          null == (t = O.onMouseLeave) || t.call(O, e), null == o || o()
         },
-        className: o()(u, {
+        className: a()(u, {
           [_.fauxDisabled]: t
         }),
         onPopoutClick: b,

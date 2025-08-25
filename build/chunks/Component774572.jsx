@@ -37,10 +37,10 @@ let c = e => {
     children: n,
     elementOptions: s
   } = e, c = Date.now();
-  return (0, r.jsx)(o.k, {
+  return (0, r.jsx)(a.k, {
     label: t,
     children: (0, r.jsx)(i.Elements, {
-      stripe: (0, a.d2)(),
+      stripe: (0, o.d2)(),
       options: l({
         mode: "setup",
         currency: "usd",

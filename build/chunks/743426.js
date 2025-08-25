@@ -276,7 +276,7 @@ class v extends Chunk47770.Z {
     let {
       frameRate: r,
       resolution: i
-    } = e.quality, a = i <= 480 ? i / 3 * 4 : i / 9 * 16, o = i, {
+    } = e.quality, o = i <= 480 ? i / 3 * 4 : i / 9 * 16, a = i, {
       id: l,
       soundshareId: c,
       useLoopback: u,
@@ -296,8 +296,8 @@ class v extends Chunk47770.Z {
       hdrCaptureMode: g,
       soundshareLoopback: u,
       frameRate: r,
-      width: a,
-      height: o
+      width: o,
+      height: a
     });
     let [E, b] = null != l ? l.split(":") : ["", ""];
     n.setClipsSource({
@@ -341,11 +341,11 @@ class v extends Chunk47770.Z {
   }
   saveClipForUser(e, t, n) {
     let r = (0, d.zS)();
-    return null == r.saveClipForUser ? Promise.reject("unsupported") : new Promise((i, a) => {
+    return null == r.saveClipForUser ? Promise.reject("unsupported") : new Promise((i, o) => {
       r.saveClipForUser(e, t, n, (e, t, n) => i({
         duration: e,
         clipStats: JSON.parse(n)
-      }), e => a(JSON.parse(e)))
+      }), e => o(JSON.parse(e)))
     })
   }
   updateClipMetadata(e, t) {
@@ -538,10 +538,10 @@ class v extends Chunk47770.Z {
     var t, n;
     let r = 100 - e,
       i = O(r, p.Zq, p.WA),
-      a = O(r, p.QO, p.JA);
+      o = O(r, p.QO, p.JA);
     null == (t = (n = (0, d.zS)()).applySidechainCompressionSettings) || t.call(n, {
       threshold: i,
-      ratio: a
+      ratio: o
     })
   }
   setNativeDesktopVideoSourcePickerActive(e) {
@@ -571,7 +571,7 @@ class v extends Chunk47770.Z {
     return 0 === this.connections.size
   }
   constructor() {
-    var e, t, n, r, i, a, c, p;
+    var e, t, n, r, i, o, c, p;
     super(), e = this, m(this, "Video", Chunk650886.Z), m(this, "Camera", Chunk656795.Z), m(this, "videoInputDeviceId", Chunk149396.Av), m(this, "connections", new Set), m(this, "lastVoiceActivity", false), m(this, "audioSubsystem", "standard"), m(this, "audioLayer", ""), m(this, "deviceChangeGeneration", 0), m(this, "consecutiveWatchdogFailures", 0), m(this, "codecSurvey", null), m(this, "logger", new Chunk579092.Yd("MediaEngineNative")), m(this, "handleDeviceChange", function() {
       let t = arguments.length > 0 && true !== arguments[0] ? arguments[0] : [],
         n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [],
@@ -617,7 +617,7 @@ class v extends Chunk47770.Z {
     g.setDeviceChangeCallback(this.handleDeviceChange), g.setVolumeChangeCallback(this.handleVolumeChange), g.setOnVoiceCallback(this.handleVoiceActivity), null == (t = g.setVideoInputInitializationCallback) || exports.call(g, this.handleVideoInputInitialization), null == (n = g.setAudioInputInitializationCallback) || require.call(g, this.handleAudioInputInitialization), g.setTransportOptions({
       idleJitterBufferFlush: true,
       ducking: false
-    }), null == (r = g.setNativeScreenSharePickerCallbacks) || Chunk264344.call(g, this.handleNativeScreenSharePickerUpdate, this.handleNativeScreenSharePickerCancel, this.handleNativeScreenSharePickerError), null == (i = g.setAudioDeviceModuleErrorCallback) || i.call(g, this.handleAudioDeviceModuleErrorCallback), null == (a = g.setVideoCodecErrorCallback) || Chunk47770.call(g, this.handleVideoCodecErrorCallback), this.on("removeListener", this.handleRemoveListener), this.on("newListener", this.handleNewListener), null != (0, Chunk992774.zS)().getAudioSubsystem ? (0, Chunk992774.zS)().getAudioSubsystem((e, t) => {
+    }), null == (r = g.setNativeScreenSharePickerCallbacks) || Chunk264344.call(g, this.handleNativeScreenSharePickerUpdate, this.handleNativeScreenSharePickerCancel, this.handleNativeScreenSharePickerError), null == (i = g.setAudioDeviceModuleErrorCallback) || i.call(g, this.handleAudioDeviceModuleErrorCallback), null == (o = g.setVideoCodecErrorCallback) || Chunk47770.call(g, this.handleVideoCodecErrorCallback), this.on("removeListener", this.handleRemoveListener), this.on("newListener", this.handleNewListener), null != (0, Chunk992774.zS)().getAudioSubsystem ? (0, Chunk992774.zS)().getAudioSubsystem((e, t) => {
       this.audioSubsystem = e, this.audioLayer = t
     }) : null != (0, Chunk992774.zS)().getUseLegacyAudioDevice && (this.audioSubsystem = (0, Chunk992774.zS)().getUseLegacyAudioDevice() ? Chunk149396.iA.LEGACY : Chunk149396.iA.STANDARD), null != g.pingVoiceThread && "undefined" != typeof window && "canary" === window.GLOBAL_ENV.RELEASE_CHANNEL && this.watchdogTick(), null != g.setActiveSinksChangeCallback && g.setActiveSinksChangeCallback(this.handleActiveSinksChange), null == (c = g.setLoopbackPlaybackGainMultiplier) || Chunk997545.call(g, Chunk149396.Jk), null == (p = g.setVoiceFiltersFailedCallback) || Chunk65154.call(g, e => this.emit(s.aB.VoiceFiltersFailed, e)), (0, Chunk734298.Z)(this), I(this)
   }
@@ -630,13 +630,13 @@ function I(e) {
   let r = async () => {
     if (n) return;
     let i = (0, d.zS)(),
-      a = await new Promise(e => {
+      o = await new Promise(e => {
         var t;
         null == (t = i.pollQueueMetrics) || t.call(i, t => {
           e(t)
         })
       });
-    a.periodMs = t, e.emit(s.aB.VoiceQueueMetrics, a), setTimeout(r, t)
+    o.periodMs = t, e.emit(s.aB.VoiceQueueMetrics, o), setTimeout(r, t)
   };
   setTimeout(r, t)
 }

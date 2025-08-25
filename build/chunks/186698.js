@@ -17,7 +17,7 @@
   }
 
   function i(e, t, n, r) {
-    var i = a(e);
+    var i = o(e);
     switch (n) {
       case "ss":
         return i + " lup";
@@ -34,12 +34,12 @@
     }
   }
 
-  function a(e) {
+  function o(e) {
     var n = Math.floor(e % 1e3 / 100),
       r = Math.floor(e % 100 / 10),
       i = e % 10,
-      a = "";
-    return n > 0 && (a += t[n] + "vatlh"), r > 0 && (a += ("" !== a ? " " : "") + t[r] + "maH"), i > 0 && (a += ("" !== a ? " " : "") + t[i]), "" === a ? "pagh" : a
+      o = "";
+    return n > 0 && (o += t[n] + "vatlh"), r > 0 && (o += ("" !== o ? " " : "") + t[r] + "maH"), i > 0 && (o += ("" !== o ? " " : "") + t[i]), "" === o ? "pagh" : o
   }
   return e.defineLocale("tlh", {
     months: "tera’ jar wa’_tera’ jar cha’_tera’ jar wej_tera’ jar loS_tera’ jar vagh_tera’ jar jav_tera’ jar Soch_tera’ jar chorgh_tera’ jar Hut_tera’ jar wa’maH_tera’ jar wa’maH wa’_tera’ jar wa’maH cha’".split("_"),

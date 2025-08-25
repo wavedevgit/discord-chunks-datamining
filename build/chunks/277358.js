@@ -60,7 +60,7 @@ class E extends Chunk147913.Z {
         subgameInfo: t
       }))
     }), p(this, "handlePostConnectionOpen", () => {
-      !__OVERLAY__ && ((0, o.isWindows)() || (0, o.isMac)()) && s.ZP.setRobloxSubgameDetectionConfig(g, this.handleGetRobloxSubgameInfo)
+      !__OVERLAY__ && ((0, a.isWindows)() || (0, a.isMac)()) && s.ZP.setRobloxSubgameDetectionConfig(g, this.handleGetRobloxSubgameInfo)
     }), p(this, "handleRunningGamesChange", e => {
       if (__OVERLAY__) return;
       let t = e.games.some(e => e.distributor === _.GQo.ROBLOX);

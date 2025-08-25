@@ -18,7 +18,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js");
 let p = 2592e5;
 async function h(e) {
-  let t = o.default.getCurrentUser(),
+  let t = a.default.getCurrentUser(),
     n = (0, u.I5)(t);
   null == t || n || c.Z.fetchedEndedEntitlements || await (0, i.p0)({
     entitlementType: _.qc2.FRACTIONAL_REDEMPTION,

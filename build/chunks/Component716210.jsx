@@ -20,7 +20,7 @@ function d() {
     setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_SILENCE_WARNING,
     children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
       value: module,
-      onChange: e => o.Z.setSilenceWarning(e),
+      onChange: e => a.Z.setSilenceWarning(e),
       hideBorder: true,
       children: Chunk388032.intl.string(Chunk388032.t.jtiiCw)
     })

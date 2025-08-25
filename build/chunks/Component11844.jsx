@@ -65,7 +65,7 @@ let b = function() {
     } = (0, Chunk975298.Z)();
 
   function g(n) {
-    null != e.current && (0, o.Mr3)(e.current), (0, u.u)({
+    null != e.current && (0, a.Mr3)(e.current), (0, u.u)({
       analyticsLocation: {
         page: f.ZY5.GUILD_BOOSTING_USER_SETTINGS,
         section: f.jXE.GUILD_BOOSTING_BOOST_ANY_GUILD_CTA,
@@ -105,10 +105,10 @@ let b = function() {
       children: Chunk388032.intl.format(Chunk388032.t.kqC5vr, {
         boostAnyGuildHook: (e, t) => {
           let n = null != y,
-            i = (0, o.qgQ)(e),
+            i = (0, a.qgQ)(e),
             s = (0, r.jsx)("div", {
               className: p.cta,
-              children: (0, r.jsx)(a.A, {
+              children: (0, r.jsx)(o.A, {
                 variant: "primary",
                 onClick: n ? true : b,
                 text: i,

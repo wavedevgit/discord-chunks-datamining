@@ -9,7 +9,7 @@ var Chunk271383 = require("./271383.js");
 function i(e, t) {
   var n;
   let i = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [r.ZP],
-    [a] = i,
-    o = null != t ? a.getMember(t, e.id) : null;
-  return null != (n = null == o ? true : o.avatarDecoration) ? n : e.avatarDecoration
+    [o] = i,
+    a = null != t ? o.getMember(t, e.id) : null;
+  return null != (n = null == a ? true : a.avatarDecoration) ? n : e.avatarDecoration
 }

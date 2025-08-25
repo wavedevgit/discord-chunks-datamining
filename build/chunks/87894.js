@@ -4,10 +4,10 @@
 require.d(exports, {
   DJ: () => s,
   U0: () => u,
-  W_: () => a,
+  W_: () => o,
   Z$: () => c,
   Z0: () => f,
-  iM: () => o,
+  iM: () => a,
   j2: () => d,
   jc: () => l,
   uq: () => i
@@ -18,18 +18,18 @@ function i(e) {
   return [r.jn.GIFT_INVENTORY_FOR_YOU, r.jn.GIFT_INVENTORY_OTHER].includes(e)
 }
 
-function a(e) {
+function o(e) {
   return e === r.jn.GIFT_INVENTORY_FOR_YOU || !i(e)
 }
 
-function o(e) {
+function a(e) {
   let {
     quest: t,
     location: n
   } = e, {
     userStatus: r
   } = t;
-  return (null == r ? true : r.enrolledAt) != null && null == r.completedAt || a(n)
+  return (null == r ? true : r.enrolledAt) != null && null == r.completedAt || o(n)
 }
 let s = 100,
   l = 20,

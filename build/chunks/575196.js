@@ -27,13 +27,13 @@ let l = "custom-theme-background",
   y = .05;
 
 function O(e, t, n, r) {
-  let a = e.slice();
-  1 === e.length && a.push(e[0]);
+  let o = e.slice();
+  1 === e.length && o.push(e[0]);
   let O = e.map(e => i()(e).luminance()),
     v = i()(e[O.indexOf(Math.min(...O))]),
     I = i()(e[O.indexOf(Math.max(...O))]),
-    T = "linear-gradient(".concat(t, "deg, ").concat(a.join(", "), ")"),
-    S = (0, o.wj)(r),
+    T = "linear-gradient(".concat(t, "deg, ").concat(o.join(", "), ")"),
+    S = (0, a.wj)(r),
     A = {
       light: i()(I).set("hsl.s", 1).set("hsl.l", u),
       dark: i()(v).set("hsl.s", 1).set("hsl.l", c)
@@ -47,13 +47,13 @@ function O(e, t, n, r) {
 }
 
 function v(e, t) {
-  let n = a.b[e.colors[0].token].hex,
-    r = a.b[e.colors[e.colors.length - 1].token].hex,
+  let n = o.b[e.colors[0].token].hex,
+    r = o.b[e.colors[e.colors.length - 1].token].hex,
     i = (0, s.W4)({
       enabled: true,
       primaryColor: n,
       secondaryColor: r,
-      isDarkTheme: (0, o.wj)(e.theme)
+      isDarkTheme: (0, a.wj)(e.theme)
     }),
     c = "\n      ".concat(Object.entries(i).map(e => {
       let [t, n] = e;

@@ -41,7 +41,7 @@ class u extends Chunk147913.Z {
       EXPERIMENTS_FETCH_SUCCESS: this.onPostConnectionOpen.bind(this)
     }), c(this, "maybeFetchBogoPromotion", async () => {
       let e = i.default.getCurrentUser();
-      a.ZP.isPremiumExactly(e, l.p9.TIER_2)
+      o.ZP.isPremiumExactly(e, l.p9.TIER_2)
     })
   }
 }

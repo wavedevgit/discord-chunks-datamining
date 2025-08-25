@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
-  o = require.n(Chunk512722),
+  a = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk660216 = require("./660216.js"),
@@ -76,14 +76,14 @@ function L() {
     {
       clipsEnabled: t,
       remindersEnabled: n,
-      decoupledClipsEnabled: a,
+      decoupledClipsEnabled: o,
       clipsLength: P,
       clipsQuality: D
     } = (0, Chunk442837.cj)([Chunk435064.Z], () => Chunk435064.Z.getSettings()),
     L = (0, Chunk442837.e7)([Chunk435064.Z], () => Chunk435064.Z.getHardwareClassification()),
     j = (0, Chunk442837.e7)([Chunk556296.ZP], () => Chunk556296.ZP.getKeybindForAction(Chunk981631.kg4.SAVE_CLIP, true)),
-    k = Chunk435064.Z.isDecoupledGameClippingEnabled(),
-    M = (0, Chunk779618.Z)(Chunk131951.Z),
+    M = Chunk435064.Z.isDecoupledGameClippingEnabled(),
+    k = (0, Chunk779618.Z)(Chunk131951.Z),
     {
       showClipsHeaderEntrypoint: U
     } = Chunk924557.NV.useExperiment({
@@ -91,7 +91,7 @@ function L() {
     }, {
       autoTrackExposure: false
     });
-  o()(null != j, "Save clip keybind unset");
+  a()(null != j, "Save clip keybind unset");
   let G = (0, Chunk442837.e7)([Chunk706454.default], () => Chunk706454.default.locale),
     B = Chunk647438.useMemo(() => [{
       value: Chunk356659.OT.SECONDS_30,
@@ -184,7 +184,7 @@ function L() {
         className: Chunk749799.formItem,
         children: Chunk388032.intl.string(Chunk388032.t["Z+Mfqa"])
       })]
-    }), k && M && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+    }), M && k && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [(0, Chunk951288.jsx)(Chunk481060.$i$, {}), (0, Chunk951288.jsx)(Chunk481060.hjN, {
         className: Chunk197571.marginTop20,
         disabled: !module,

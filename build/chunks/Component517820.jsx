@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk913527 = require("./913527.js"),
   l = require.n(Chunk913527),
   Chunk722770 = require("./722770.js"),
@@ -38,7 +38,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk682392 = require("./682392.js");
 
-function k(e, t, n) {
+function M(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -47,14 +47,14 @@ function k(e, t, n) {
   }) : e[t] = n, e
 }
 
-function M(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      k(e, t, n[t])
+      M(e, t, n[t])
     })
   }
   return e
@@ -170,18 +170,18 @@ function H(e) {
   var t;
   let {
     message: n,
-    compact: a
-  } = e, o = C.default.getUser((0, b.Sw)(n)), s = null == (t = S.Z.getBasicChannel(n.channel_id)) ? true : t.guild_id, c = null != s && null != o ? A.ZP.getMember(s, o.id) : null, {
+    compact: o
+  } = e, a = C.default.getUser((0, b.Sw)(n)), s = null == (t = S.Z.getBasicChannel(n.channel_id)) ? true : t.guild_id, c = null != s && null != a ? A.ZP.getMember(s, a.id) : null, {
     avatarSrc: u,
     avatarDecorationSrc: d,
     eventHandlers: f
   } = (0, I.Z)({
-    userId: null == o ? true : o.id,
+    userId: null == a ? true : a.id,
     guildId: s,
     size: 12
   }), h = i.useRef(null);
   return (0, r.jsx)(K, {
-    compact: a,
+    compact: o,
     header: (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)(p.bgT, {
         size: "xs",
@@ -196,22 +196,22 @@ function H(e) {
       className: j.dotSeparatedRow,
       children: [(0, r.jsx)("div", {
         className: j.alertsEnabledSubHeader,
-        children: null != c && null != o && (0, r.jsxs)(i.Fragment, {
+        children: null != c && null != a && (0, r.jsxs)(i.Fragment, {
           children: [(0, r.jsx)(p.Text, {
             variant: "text-xs/medium",
             color: "text-default",
             children: L.intl.string(L.t.qlFrXV)
           }), (0, r.jsx)(T.Z, {
             targetElementRef: h,
-            user: o,
+            user: a,
             guildId: s,
             channelId: n.channel_id,
             messageId: n.id,
-            children: e => (0, r.jsxs)(p.P3F, G(M({
+            children: e => (0, r.jsxs)(p.P3F, G(k({
               innerRef: h,
               className: j.alertsEnabledSubHeaderAvatarUsername
             }, e), {
-              children: [(0, r.jsx)("div", G(M({}, f), {
+              children: [(0, r.jsx)("div", G(k({}, f), {
                 children: (0, r.jsx)(p.qEK, {
                   src: u,
                   avatarDecoration: d,
@@ -223,7 +223,7 @@ function H(e) {
                 style: {
                   color: null != c.colorString ? c.colorString : _.Z.colors.TEXT_DEFAULT.css
                 },
-                children: [" ", "@", o.username]
+                children: [" ", "@", a.username]
               })]
             }))
           })]
@@ -246,9 +246,9 @@ function Y(e) {
   var t;
   let {
     message: n,
-    compact: a
+    compact: o
   } = e, {
-    joinAttempts: o,
+    joinAttempts: a,
     raidDatetime: s,
     dmsSent: u,
     raidType: h,
@@ -262,7 +262,7 @@ function Y(e) {
     null != e && (0, y.kW)(n.id, e)
   }, [n.id, O]), N = h === d.$.DM_RAID, P = N ? p.Mgn : p.b6m;
   return (0, r.jsx)(K, {
-    compact: a,
+    compact: o,
     header: (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)(P, {
         size: "xs",
@@ -275,11 +275,11 @@ function Y(e) {
     }),
     subheader: (0, r.jsxs)("div", {
       className: j.dotSeparatedRow,
-      children: [null != o && (0, r.jsx)(p.Text, {
+      children: [null != a && (0, r.jsx)(p.Text, {
         variant: "text-xs/medium",
         color: "text-default",
         children: L.intl.format(L.t["4ylIio"], {
-          joinCount: o
+          joinCount: a
         })
       }), null != u && (0, r.jsx)(p.Text, {
         variant: "text-xs/medium",
@@ -335,24 +335,24 @@ function W(e) {
   var t;
   let {
     message: n,
-    compact: a
-  } = e, o = null == (t = S.Z.getBasicChannel(n.channel_id)) ? true : t.guild_id, {
+    compact: o
+  } = e, a = null == (t = S.Z.getBasicChannel(n.channel_id)) ? true : t.guild_id, {
     raidDatetime: s,
     decisionId: c,
     suspiciousMentionActivityUntil: u
   } = (0, b.FL)(n);
 
   function d() {
-    null != o && null != c && (0, O.UE)(o, c, () => {
-      (0, h.c)(u), (0, O.T9)(o)
+    null != a && null != c && (0, O.UE)(a, c, () => {
+      (0, h.c)(u), (0, O.T9)(a)
     })
   }
 
   function f() {
-    null != o && v.Z.open(o, D.pNK.GUILD_AUTOMOD, true, D.KsC.AUTOMOD_MENTION_SPAM)
+    null != a && v.Z.open(a, D.pNK.GUILD_AUTOMOD, true, D.KsC.AUTOMOD_MENTION_SPAM)
   }
   return (0, r.jsx)(K, {
-    compact: a,
+    compact: o,
     header: (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)(p.Mgn, {
         size: "xs",
@@ -406,11 +406,11 @@ function K(e) {
     compact: t,
     header: n,
     subheader: i,
-    content: a,
+    content: o,
     footerButtons: s
   } = e;
   return (0, r.jsxs)("div", {
-    className: o()(j.embedCard, {
+    className: a()(j.embedCard, {
       [j.compact]: t
     }),
     children: [(0, r.jsxs)("div", {
@@ -424,9 +424,9 @@ function K(e) {
           className: j.subheader,
           children: i
         })]
-      }), a]
+      }), o]
     }), null != s && (0, r.jsx)("div", {
-      className: o()(j.centeredRowContainer, j.cardFooter, {
+      className: a()(j.centeredRowContainer, j.cardFooter, {
         [j.compact]: t
       }),
       children: s
@@ -439,7 +439,7 @@ function z(e) {
     id: t,
     compact: n,
     message: i,
-    channel: a
+    channel: o
   } = e, {
     avatarSrc: s,
     eventHandlers: {
@@ -453,7 +453,7 @@ function z(e) {
     onMouseEnter: l,
     onMouseLeave: c,
     children: (0, r.jsx)(w.Z, {
-      className: o()(j.mainContainer, {
+      className: a()(j.mainContainer, {
         [j.compact]: n
       }),
       iconNode: n ? null : (0, r.jsx)(P.S, {
@@ -462,13 +462,13 @@ function z(e) {
       iconContainerClassName: j.iconContainer,
       compact: n,
       children: (0, r.jsxs)("div", {
-        className: o()(j.content, {
+        className: a()(j.content, {
           [j.compact]: n
         }),
         children: [(0, r.jsx)(N.nD, {
           message: i,
           messageClassname: j.spanCorrection,
-          className: o()(j.usernameContainer, j.spanCorrection, {
+          className: a()(j.usernameContainer, j.spanCorrection, {
             [j.compact]: n
           }),
           username: (0, r.jsxs)("div", {

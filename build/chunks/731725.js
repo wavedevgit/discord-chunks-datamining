@@ -8,7 +8,7 @@ var Chunk666572 = require("./666572.js"),
   Chunk81063 = require("./81063.js"),
   Chunk649256 = require("./649256.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -23,7 +23,7 @@ class l {
   }
   constructor(e) {
     var t;
-    o(this, "type", true), o(this, "applicationId", true), o(this, "linkId", true), o(this, "assetId", true), o(this, "assetPath", true), o(this, "title", true), o(this, "description", true), o(this, "customId", true);
+    a(this, "type", true), a(this, "applicationId", true), a(this, "linkId", true), a(this, "assetId", true), a(this, "assetPath", true), a(this, "title", true), a(this, "description", true), a(this, "customId", true);
     let n = (0, r._)(e.link_id);
     this.type = null != (t = null == n ? true : n.type) ? t : null, this.applicationId = e.application_id, this.linkId = e.link_id, this.assetId = "asset_id" in e ? e.asset_id : true, this.assetPath = "asset_path" in e ? e.asset_path : true, this.title = e.title, this.description = e.description, this.customId = e.custom_id
   }

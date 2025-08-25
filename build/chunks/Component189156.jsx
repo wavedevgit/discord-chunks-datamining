@@ -56,8 +56,8 @@ function _(e, t) {
   if (null == e) return {};
   var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -65,13 +65,13 @@ function _(e, t) {
 function p(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
 function h(e) {
-  return (0, r.jsx)(a.Z, {
+  return (0, r.jsx)(o.Z, {
     application: e
   }, e.id)
 }
@@ -80,15 +80,15 @@ function m(e) {
   var {
     userId: t,
     variant: n = "text-xs/normal",
-    color: a = "text-default"
+    color: o = "text-default"
   } = e, s = _(e, ["userId", "variant", "color"]);
-  let l = (0, o.e)({
+  let l = (0, a.e)({
     userId: t,
     renderApplicationName: h
   });
   return (0, r.jsx)(i.Text, f(u({
     variant: n,
-    color: a
+    color: o
   }, s), {
     children: l
   }))

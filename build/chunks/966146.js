@@ -2,7 +2,7 @@
 /** chunk id: 966146, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  x: () => o
+  x: () => a
 }), require("./415506.js"), require("./388685.js"), require("./539854.js"), require("./642613.js");
 var Chunk65154 = require("./65154.js");
 
@@ -15,7 +15,7 @@ function i(e, t, n) {
   }) : e[t] = n, e
 }
 
-function a(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -27,7 +27,7 @@ function a(e) {
   }
   return e
 }
-class o {
+class a {
   getMaxSinkValue(e) {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 0;
     if (e < 0) throw Error("getMaxSinkValue: Requested " + e);
@@ -76,7 +76,7 @@ class o {
       }
     }
     let i = {},
-      a = 0,
+      o = 0,
       s = 100;
     for (let t = 1; t <= 25; ++t) {
       let l = 0,
@@ -86,15 +86,15 @@ class o {
         if (r.pixelCount * t > e) break;
         l = r.width, c = r.height, u = r.budgetPortion
       }
-      if (a !== l) {
-        let e = o.getMutedFramerate(s);
+      if (o !== l) {
+        let e = a.getMutedFramerate(s);
         i[s] = {
           width: l,
           height: c,
           budgetPortion: u,
           mutedFramerate: e,
           framerate: r.Gs
-        }, s -= 10, a = l
+        }, s -= 10, o = l
       }
     }
     return i
@@ -107,7 +107,7 @@ class o {
     for (let n of Object.keys(e).map(e => Number(e)).sort((e, t) => e - t)) {
       if (0 === n) continue;
       let r = e[n];
-      t.push(a({
+      t.push(o({
         pixelCount: r.width * r.height,
         wantValue: n
       }, r))
@@ -121,6 +121,6 @@ class o {
       height: n
     } = e.videoBudget;
     if (t <= 0 || n <= 0) throw Error("Invalid argument");
-    this.pixelBudget = t * n, this.ladder = o.calculateLadder(this.pixelBudget), this.orderedLadder = o.calculateOrderedLadder(this.ladder)
+    this.pixelBudget = t * n, this.ladder = a.calculateLadder(this.pixelBudget), this.orderedLadder = a.calculateOrderedLadder(this.ladder)
   }
 }

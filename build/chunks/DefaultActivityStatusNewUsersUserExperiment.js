@@ -7,7 +7,7 @@ require.d(exports, {
 });
 var Chunk818083 = require("./818083.js"),
   Chunk128064 = require("./128064.js");
-let a = (0, Chunk818083.B)({
+let o = (0, Chunk818083.B)({
     kind: "user",
     id: "2025-01_default_activity_status",
     label: "Guild activity status defaults",
@@ -22,7 +22,7 @@ let a = (0, Chunk818083.B)({
       }
     }]
   }),
-  o = (0, Chunk818083.B)({
+  a = (0, Chunk818083.B)({
     kind: "user",
     id: "2025-01_default_activity_status_new_users",
     label: "Guild activity status defaults",
@@ -37,22 +37,22 @@ let a = (0, Chunk818083.B)({
       }
     }]
   }),
-  s = e => a.getCurrentConfig({
+  s = e => o.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: false
-  }).enabled || o.getCurrentConfig({
+  }).enabled || a.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: false
   }).enabled || (0, i.c_)("DefaultGuildActivityExperiment"),
   l = e => {
-    let t = a.useExperiment({
+    let t = o.useExperiment({
         location: e
       }, {
         autoTrackExposure: false
       }).enabled,
-      n = o.useExperiment({
+      n = a.useExperiment({
         location: e
       }, {
         autoTrackExposure: false

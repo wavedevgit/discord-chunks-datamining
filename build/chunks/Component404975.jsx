@@ -1,4 +1,4 @@
-/** Chunk was on 36878 **/
+/** Chunk was on 76210 **/
 /** chunk id: 404975, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   P: () => d
@@ -16,27 +16,27 @@ function d(e) {
   let {
     root: t,
     header: n,
-    footer: l
+    footer: i
   } = e, {
-    showNavigationMobile: u
-  } = (0, a.t)();
-  return (0, i.jsxs)("div", {
+    showNavigationMobile: a
+  } = (0, u.t)();
+  return (0, l.jsxs)("div", {
     className: r()(c.sidebar, {
-      [c.mobile]: o.tq,
-      [c.mobileNavigationOpen]: u
+      [c.mobile]: s.tq,
+      [c.mobileNavigationOpen]: a
     }),
-    children: [null != n && (0, i.jsx)(n, {}), (0, i.jsx)(s.zJl, {
+    children: [null != n && (0, l.jsx)(n, {}), (0, l.jsx)(o.zJl, {
       className: c.navScroller,
       fade: true,
-      children: (0, i.jsx)("nav", {
+      children: (0, l.jsx)("nav", {
         className: c.nav,
-        children: t.layout.map(e => (0, i.jsx)(f, {
+        children: t.layout.map(e => (0, l.jsx)(f, {
           section: e
         }, e.key))
       })
-    }), null != l && (0, i.jsx)("footer", {
+    }), null != i && (0, l.jsx)("footer", {
       className: c.footer,
-      children: (0, i.jsx)(l, {})
+      children: (0, l.jsx)(i, {})
     })]
   })
 }
@@ -45,16 +45,16 @@ function f(e) {
   var t;
   let {
     section: n
-  } = e, l = null == (t = n.useLabel) ? true : t.call(n);
-  return (0, i.jsxs)("ul", {
+  } = e, i = null == (t = n.useLabel) ? true : t.call(n);
+  return (0, l.jsxs)("ul", {
     className: c.section,
-    children: [null != l && (0, i.jsx)(s.X6q, {
+    children: [null != i && (0, l.jsx)(o.X6q, {
       className: c.label,
       variant: "heading-sm/medium",
       color: "text-tertiary",
-      children: l
-    }), n.layout.map(e => (0, i.jsx)("li", {
-      children: (0, i.jsx)(u.Z, {
+      children: i
+    }), n.layout.map(e => (0, l.jsx)("li", {
+      children: (0, l.jsx)(a.Z, {
         node: e
       })
     }, e.key))]

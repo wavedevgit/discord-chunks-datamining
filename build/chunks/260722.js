@@ -86,12 +86,12 @@ async function f() {
 }
 let _ = {
   async initialPageLoad() {
-    var e, t, n, a;
+    var e, t, n, o;
     Chunk570140.Z.dispatch({
       type: "FAMILY_CENTER_FETCH_START"
     });
     let {
-      body: o
+      body: a
     } = await Chunk544891.tn.get({
       url: Chunk981631.ANM.FAMILY_CENTER_TEEN_ACTIVITY_ME,
       rejectWithError: false
@@ -105,7 +105,7 @@ let _ = {
       totals: null != (e = null == l ? true : l.totals) ? module : {},
       actions: null != (t = null == l ? true : l.actions) ? exports : [],
       users: null != (n = null == l ? true : l.users) ? require : [],
-      guilds: null != (a = null == l ? true : l.guilds) ? Chunk626135 : []
+      guilds: null != (o = null == l ? true : l.guilds) ? Chunk626135 : []
     };
     return Chunk570140.Z.dispatch({
       type: "FAMILY_CENTER_INITIAL_LOAD",
@@ -138,13 +138,13 @@ let _ = {
         code: t
       },
       rejectWithError: false
-    }), a = {
+    }), o = {
       linkedUsers: n.linked_users,
       users: n.users
     };
     return i.Z.dispatch(c({
       type: "FAMILY_CENTER_REQUEST_LINK_SUCCESS"
-    }, a)), a
+    }, o)), o
   },
   async fetchTeenActivity(e) {
     i.Z.dispatch({
@@ -157,19 +157,19 @@ let _ = {
         url: t,
         rejectWithError: false
       }),
-      a = n.teen_audit_log,
-      o = {
-        teenId: a.teen_user_id,
-        rangeStartId: a.range_start_id,
-        totals: a.totals,
-        actions: a.actions,
-        users: a.users,
-        guilds: a.guilds
+      o = n.teen_audit_log,
+      a = {
+        teenId: o.teen_user_id,
+        rangeStartId: o.range_start_id,
+        totals: o.totals,
+        actions: o.actions,
+        users: o.users,
+        guilds: o.guilds
       };
     return i.Z.dispatch({
       type: "FAMILY_CENTER_TEEN_ACTIVITY_FETCH_SUCCESS",
-      familyCenterTeenActivity: o
-    }), o
+      familyCenterTeenActivity: a
+    }), a
   },
   async fetchMoreTeenActivity(e, t, n, l) {
     let {
@@ -186,8 +186,8 @@ let _ = {
       users: u.users,
       guilds: u.guilds
     };
-    return a.default.track(s.rMx.FAMILY_CENTER_ACTION, {
-      action: o.YC.LoadMore,
+    return o.default.track(s.rMx.FAMILY_CENTER_ACTION, {
+      action: a.YC.LoadMore,
       selected_teen_id: e,
       action_display_type: t
     }), i.Z.dispatch({

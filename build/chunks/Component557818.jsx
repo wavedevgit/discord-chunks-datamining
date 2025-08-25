@@ -7,14 +7,14 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk301133 = require("./301133.js");
 let c = Chunk647438.forwardRef(function(e, t) {
   let {
     readOnly: n,
     disabled: i,
-    fullWidth: a = false,
+    fullWidth: o = false,
     children: c,
     validation: u,
     className: d,
@@ -49,10 +49,10 @@ let c = Chunk647438.forwardRef(function(e, t) {
     children: f
   })), (0, r.jsxs)("div", {
     className: l.container,
-    "data-full-width": a,
+    "data-full-width": o,
     children: [(0, r.jsx)("div", {
       ref: t,
-      className: o()(l.wrapper, d),
+      className: a()(l.wrapper, d),
       "data-error": m,
       "data-read-only": n,
       "data-disabled": i,

@@ -31,8 +31,8 @@ function f(e) {
     canJoin: false,
     isRemoteJoin: false
   };
-  let b = (0, o._)(n);
-  return !(0, s.n)(b) || (0, u.y)(b) || (0, a.g)(f, n) || (0, i.H)(p) ? {
+  let b = (0, a._)(n);
+  return !(0, s.n)(b) || (0, u.y)(b) || (0, o.g)(f, n) || (0, i.H)(p) ? {
     canJoin: false,
     isRemoteJoin: false
   } : m && g ? {

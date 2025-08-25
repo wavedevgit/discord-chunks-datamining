@@ -11,10 +11,10 @@ var Chunk873546 = require("./873546.js"),
   Chunk981631 = require("./981631.js");
 
 function l(e, t) {
-  o.default.track(s.rMx.APP_DIRECTORY_PROFILE_EMBED_SENT, {
+  a.default.track(s.rMx.APP_DIRECTORY_PROFILE_EMBED_SENT, {
     application_id: e,
     device_platform: r.tq ? "mobile_web" : "desktop_web",
-    guild_id: a.Z.getGuildId(),
+    guild_id: o.Z.getGuildId(),
     channel_id: i.Z.getChannelId(),
     section: t
   })

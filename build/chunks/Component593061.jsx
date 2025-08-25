@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk982710 = require("./982710.js");
 async function f(e) {
   try {
-    return (await a.tn.get({
+    return (await o.tn.get({
       url: l.ANM.BILLING_INVOICE_BREAKDOWN,
       query: {
         payment_id: e
@@ -31,10 +31,10 @@ async function f(e) {
 function _(e) {
   let {
     payment: t
-  } = e, [n, a] = i.useState(null), [l, _] = i.useState(null), p = async e => {
+  } = e, [n, o] = i.useState(null), [l, _] = i.useState(null), p = async e => {
     try {
       let n = await f(t.id);
-      a(n);
+      o(n);
       let r = e ? n.refundInvoiceLinks[0] : n.invoiceLink;
       window.open(r, "_blank"), _(null)
     } catch (e) {
@@ -51,31 +51,31 @@ function _(e) {
     E = null == n ? true : n.refundInvoiceLinks;
   return t.hasInvoiceURL && null == n ? (0, r.jsxs)("div", {
     className: d.downloadInvoice,
-    children: [(0, r.jsx)(o.eee, {
+    children: [(0, r.jsx)(a.eee, {
       onClick: () => p(false),
       children: u.intl.formatToPlainString(u.t.R0xzCA, {})
-    }), t.hasRefundInvoiceURLs ? (0, r.jsx)(o.eee, {
+    }), t.hasRefundInvoiceURLs ? (0, r.jsx)(a.eee, {
       className: d.downloadRefundInvoice,
       onClick: () => p(true),
       children: u.intl.formatToPlainString(u.t["3x6NGx"], {})
-    }) : null, null != l && "" !== l && (0, r.jsx)(o.kzN, {
+    }) : null, null != l && "" !== l && (0, r.jsx)(a.kzN, {
       children: l
     })]
   }) : t.hasInvoiceURL && null != n ? (0, r.jsxs)("div", {
     className: d.downloadInvoice,
-    children: [(0, r.jsx)(o.eee, {
+    children: [(0, r.jsx)(a.eee, {
       href: g,
       children: u.intl.formatToPlainString(u.t.R0xzCA, {})
-    }), null != E ? E.map((e, t) => (0, r.jsx)(o.eee, {
+    }), null != E ? E.map((e, t) => (0, r.jsx)(a.eee, {
       className: d.downloadRefundInvoice,
       href: e,
       children: u.intl.formatToPlainString(u.t["3x6NGx"], {})
-    }, t)) : null, null != l && "" !== l && (0, r.jsx)(o.kzN, {
+    }, t)) : null, null != l && "" !== l && (0, r.jsx)(a.kzN, {
       children: l
     })]
   }) : m ? (0, r.jsx)("div", {
     className: d.downloadInvoice,
-    children: (0, r.jsx)(o.eee, {
+    children: (0, r.jsx)(a.eee, {
       onClick: () => {
         h(t, t.paymentSource)
       },

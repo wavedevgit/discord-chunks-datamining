@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => Y
 }), require("./388685.js"), require("./539854.js"), require("./467055.js"), require("./472816.js"), require("./794429.js");
 var r, Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk695346 = require("./695346.js"),
@@ -101,24 +101,24 @@ function j(e) {
   E.set(p.X8, t), O = 2
 }
 
-function k(e) {
+function M(e) {
   var t, n, r;
   let {
     soundId: i,
-    userId: a
-  } = e, o = (null != (n = b.get(i)) ? n : 0) + 1, s = (null != (r = T.get(a)) ? r : 0) + 1;
-  b.set(i, o), T.set(a, s), a !== (null == (t = u.default.getCurrentUser()) ? true : t.id) && (S = true)
+    userId: o
+  } = e, a = (null != (n = b.get(i)) ? n : 0) + 1, s = (null != (r = T.get(o)) ? r : 0) + 1;
+  b.set(i, a), T.set(o, s), o !== (null == (t = u.default.getCurrentUser()) ? true : t.id) && (S = true)
 }
 
-function M(e) {
+function k(e) {
   var t, n;
   let {
     soundId: r,
     userId: i
-  } = e, a = (null != (t = b.get(r)) ? t : 0) - 1, o = (null != (n = T.get(i)) ? n : 0) - 1;
-  a <= 0 ? b.delete(r) : b.set(r, a), o <= 0 ? T.delete(i) : T.set(i, o)
+  } = e, o = (null != (t = b.get(r)) ? t : 0) - 1, a = (null != (n = T.get(i)) ? n : 0) - 1;
+  o <= 0 ? b.delete(r) : b.set(r, o), a <= 0 ? T.delete(i) : T.set(i, a)
 }
-let U = a().debounce((e, t) => {
+let U = o().debounce((e, t) => {
   d.default.track(h.rMx.UPDATE_SOUNDBOARD_SETTINGS, {
     volume: Math.round((0, f.P)(e)),
     location_stack: t
@@ -150,8 +150,8 @@ function Z(e) {
     proto: r
   } = t;
   if (n === m.yP.FRECENCY_AND_FAVORITES_SETTINGS) {
-    var i, a;
-    I = new Set(null != (a = null == r || null == (i = r.favoriteSoundboardSounds) ? true : i.soundIds) ? a : [])
+    var i, o;
+    I = new Set(null != (o = null == r || null == (i = r.favoriteSoundboardSounds) ? true : i.soundIds) ? o : [])
   } else n === m.yP.PRELOADED_USER_SETTINGS && B(r)
 }
 
@@ -237,8 +237,8 @@ let Y = new H(Chunk570140.Z, {
   GUILD_SOUNDBOARD_SOUND_CREATE: w,
   GUILD_SOUNDBOARD_SOUND_UPDATE: w,
   GUILD_SOUNDBOARD_SOUND_DELETE: x,
-  GUILD_SOUNDBOARD_SOUND_PLAY_START: k,
-  GUILD_SOUNDBOARD_SOUND_PLAY_END: M,
+  GUILD_SOUNDBOARD_SOUND_PLAY_START: M,
+  GUILD_SOUNDBOARD_SOUND_PLAY_END: k,
   GUILD_SOUNDBOARD_SOUNDS_UPDATE: D,
   USER_SOUNDBOARD_SET_VOLUME: G,
   VOICE_CHANNEL_SELECT: C,

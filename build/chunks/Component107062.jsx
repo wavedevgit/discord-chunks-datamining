@@ -35,9 +35,9 @@ let C = (e, t) => A.intl.formatToPlainString(A.t.tAwI1t, {
   N = (e, t, n) => {
     let r = A.t["bES+y8"],
       i = m.ZP.getName(t.guild_id, t.id, n),
-      a = e.extra.activity_name;
+      o = e.extra.activity_name;
     return A.intl.formatToMarkdownString(r, {
-      gameName: a,
+      gameName: o,
       userName: i
     }).replaceAll("*", "")
   },
@@ -47,8 +47,8 @@ let C = (e, t) => A.intl.formatToPlainString(A.t.tAwI1t, {
       channel: n,
       users: r,
       countOthers: i
-    } = e, a = A.t["7j/5mp"];
-    return A.intl.formatToMarkdownString(a, {
+    } = e, o = A.t["7j/5mp"];
+    return A.intl.formatToMarkdownString(o, {
       gameName: t.extra.activity_name,
       user1: m.ZP.getName(null == n ? true : n.guild_id, null == n ? true : n.id, r[0]),
       user2: m.ZP.getName(null == n ? true : n.guild_id, null == n ? true : n.id, r[1]),
@@ -71,11 +71,11 @@ let C = (e, t) => A.intl.formatToPlainString(A.t.tAwI1t, {
       user: x,
       details: L,
       activity: j,
-      embeddedActivity: k
+      embeddedActivity: M
     } = (0, T.n)(n), {
-      primaryColor: M,
+      primaryColor: k,
       secondaryColor: U
-    } = (0, O.Z)(null == D ? true : D.src), G = (0, a.e7)([p.default], () => p.default.locale), {
+    } = (0, O.Z)(null == D ? true : D.src), G = (0, o.e7)([p.default], () => p.default.locale), {
       displayParticipants: B,
       participant1: Z,
       participant2: F,
@@ -98,10 +98,10 @@ let C = (e, t) => A.intl.formatToPlainString(A.t.tAwI1t, {
         avatarSrcs: B.map(e => e.getAvatarURL(t.guild_id, 128)),
         description: r,
         timestamp: (0, b.yh)(n, G),
-        colors: [M, U],
+        colors: [k, U],
         channelId: e
       })
-    }, [null == D ? true : D.src, t, B, n, G, V, Z, F, M, U, x]), {
+    }, [null == D ? true : D.src, t, B, n, G, V, Z, F, k, U, x]), {
       enabled: W
     } = s.c.useExperiment({
       location: "MemberListAcitivtyContentPopout"
@@ -127,15 +127,15 @@ let C = (e, t) => A.intl.formatToPlainString(A.t.tAwI1t, {
       }),
       q = (0, l.Z)(j, S.xjy.JOIN) || (0, c.Z)(j),
       X = q ? (0, r.jsx)(u.Z, {
-        embeddedActivity: k,
+        embeddedActivity: M,
         activity: j,
         user: x,
         variant: "primary",
         size: "md",
-        icon: o.YVR
+        icon: a.YVR
       }) : null,
-      Q = W ? o.iWm : o.jje,
-      J = w ? null : (0, r.jsx)(o.zxk, {
+      Q = W ? a.iWm : a.jje,
+      J = w ? null : (0, r.jsx)(a.zxk, {
         variant: "primary",
         size: "md",
         fullWidth: true,

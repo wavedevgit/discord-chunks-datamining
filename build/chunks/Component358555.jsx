@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk666188 = require("./666188.js"),
@@ -67,7 +67,7 @@ function T(e) {
     guild: t,
     isBannerVisible: n,
     disableBoostClick: i
-  } = e, a = (0, o.e7)([h.default, p.ZP], () => {
+  } = e, o = (0, a.e7)([h.default, p.ZP], () => {
     let e = h.default.getCurrentUser();
     return p.ZP.isMember(t.id, null == e ? true : e.id)
   }), {
@@ -76,7 +76,7 @@ function T(e) {
   } = t;
   if (0 === c && l === g.Eu4.NONE) return null;
   let u = e => {
-      e.stopPropagation(), e.preventDefault(), a && !i && (0, d.f)({
+      e.stopPropagation(), e.preventDefault(), o && !i && (0, d.f)({
         guildId: t.id,
         location: {
           section: g.jXE.GUILD_HEADER,
@@ -120,13 +120,13 @@ function S(e) {
     guild: t,
     disableColor: n,
     disableBoostClick: i
-  } = e, o = (0, l.Z)(t), {
+  } = e, a = (0, l.Z)(t), {
     entrypoints: d
   } = (0, _._k)({
     location: "guild_status_badge"
   });
-  return o ? (0, r.jsx)("div", {
-    className: a()(b.guildIconV2Container, {
+  return a ? (0, r.jsx)("div", {
+    className: o()(b.guildIconV2Container, {
       [b.invitesRefresh]: d
     }),
     children: (0, r.jsx)(u.Z, {
@@ -134,13 +134,13 @@ function S(e) {
       size: 18,
       tooltipPosition: "bottom",
       tooltipColor: s.ua7.Colors.PRIMARY,
-      className: a()(b.guildBadge, {
+      className: o()(b.guildBadge, {
         [b.disableColor]: n
       }),
       disableBoostClick: i
     })
   }) : (0, r.jsx)("div", {
-    className: a()(b.guildIconContainer, {
+    className: o()(b.guildIconContainer, {
       [b.invitesRefresh]: d
     }),
     children: (0, r.jsx)(c.Z, {
@@ -148,7 +148,7 @@ function S(e) {
       size: 18,
       tooltipPosition: "bottom",
       tooltipColor: s.ua7.Colors.PRIMARY,
-      className: a()(b.guildBadge, {
+      className: o()(b.guildBadge, {
         [b.disableColor]: n
       })
     })

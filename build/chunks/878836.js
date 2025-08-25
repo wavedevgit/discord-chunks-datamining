@@ -50,11 +50,11 @@ let p = e => {
       let e = await (0, c.V)(r);
       f(e)
     } catch (e) {
-      h(e), null != t && t(e), (0, a.SQ)(e)
+      h(e), null != t && t(e), (0, o.SQ)(e)
     }
     g(false)
   }, [t]);
-  (0, o.ZP)(() => {
+  (0, a.ZP)(() => {
     y()
   });
   let O = (0, i.dQu)(i.TVs.colors.MODAL_BACKGROUND),

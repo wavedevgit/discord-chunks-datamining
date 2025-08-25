@@ -67,7 +67,7 @@ let S = {
     let t = new Set,
       n = [];
     for (let r of v(e)) t.has(r) && n.push(r), t.add(r);
-    n.length > 0 && new o.Z("Keybinds").warn("Duplicate keyboard shortcuts defined:", n)
+    n.length > 0 && new a.Z("Keybinds").warn("Duplicate keyboard shortcuts defined:", n)
   },
   setLayout(e) {
     d = e

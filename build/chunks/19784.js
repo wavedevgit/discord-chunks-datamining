@@ -2,18 +2,18 @@
 /** chunk id: 19784, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  V: () => a
+  V: () => o
 });
 var Chunk239189 = require("./239189.js"),
   i = (require("./444675.js"), function(e) {
     return (0, r.requestAnimationFrame)(e)
   }),
-  a = function() {
+  o = function() {
     return function(e) {
       true === e && (e = i);
       var t = true,
         n = false,
-        a = 0,
+        o = 0,
         s = [],
         l = 0,
         c = new Set,
@@ -33,7 +33,7 @@ var Chunk239189 = require("./239189.js"),
           }
         },
         p = function() {
-          t && (t = false, 0 == a && (a = r.now(), e(_)))
+          t && (t = false, 0 == o && (o = r.now(), e(_)))
         },
         h = [];
       this.setTimeout = function(e, t) {
@@ -44,7 +44,7 @@ var Chunk239189 = require("./239189.js"),
             });
             e >= 0 && h.splice(e, 1)
           },
-          a = o(h, function(e) {
+          o = a(h, function(e) {
             return e.time > n
           }),
           s = {
@@ -52,20 +52,20 @@ var Chunk239189 = require("./239189.js"),
             handler: e,
             cancel: i
           };
-        return h.splice(a, 0, s), p(), s
+        return h.splice(o, 0, s), p(), s
       };
       var m = this.advance = function() {
         var e = r.now();
         if (c.size && (c.forEach(f), c.clear()), h.length && r.batchedUpdates(function() {
-            var t = o(h, function(t) {
+            var t = a(h, function(t) {
               return t.time > e
             });
             h.splice(0, t).forEach(function(e) {
               return e.handler()
             })
-          }), e > a) {
-          var t = Math.min(64, e - a);
-          a = e, r.batchedUpdates(function() {
+          }), e > o) {
+          var t = Math.min(64, e - o);
+          o = e, r.batchedUpdates(function() {
             s.length && (r.willAdvance(s), s = s.filter(function(e) {
               return l = e.priority, e.idle || e.advance(t), !e.idle
             }), l = 0), u.size && (u.forEach(function(t) {
@@ -81,12 +81,12 @@ var Chunk239189 = require("./239189.js"),
       }, this.onFrame = function(e) {
         u.add(e), p()
       }, this.onWrite = function(e) {
-        n ? e(a) : d.add(e)
+        n ? e(o) : d.add(e)
       }
     }
   }();
 
-function o(e, t) {
+function a(e, t) {
   var n = e.findIndex(t);
   return n < 0 ? e.length : n
 }

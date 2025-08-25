@@ -2,11 +2,11 @@
 /** chunk id: 361110, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  f: () => a
+  f: () => o
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk979554 = require("./979554.js");
-let a = e => {
+let o = e => {
   let [t, n] = (0, r.useState)(null);
   return {
     previewingVariantIndex: t,

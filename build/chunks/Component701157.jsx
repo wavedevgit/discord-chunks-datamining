@@ -19,7 +19,7 @@ let _ = 3,
     let {
       canAddBoosts: t,
       canApplyBoosts: n
-    } = e, p = (0, a.e7)([s.Z], () => s.Z.affinities), h = (0, a.e7)([l.ZP], () => l.ZP.getFlattenedGuildIds()), m = i.useMemo(() => {
+    } = e, p = (0, o.e7)([s.Z], () => s.Z.affinities), h = (0, o.e7)([l.ZP], () => l.ZP.getFlattenedGuildIds()), m = i.useMemo(() => {
       let e = p.slice(0, _).map(e => e.guildId);
       for (let t = 0; t < h.length && !(e.length >= 3); t++) {
         let n = h[t];
@@ -29,7 +29,7 @@ let _ = 3,
     }, [p, h]);
     return 0 === m.length ? null : (0, r.jsxs)("div", {
       className: f.wrapper,
-      children: [t && (0, r.jsx)(o.X6q, {
+      children: [t && (0, r.jsx)(a.X6q, {
         variant: "heading-lg/semibold",
         className: f.header,
         children: d.intl.string(d.t.r90Wgo)

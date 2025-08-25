@@ -10,7 +10,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk846519 = require("./846519.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,7 +26,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      a(e, t, n[t])
     })
   }
   return e
@@ -43,8 +43,8 @@ function u(e) {
   let {
     children: t,
     timeout: n
-  } = e, [o, u] = i.useState(false), d = i.useRef(new Set), f = i.useRef(null);
-  i.useEffect(() => (f.current = new a.sW(n, () => u(true)), f.current.delay(), () => {
+  } = e, [a, u] = i.useState(false), d = i.useRef(new Set), f = i.useRef(null);
+  i.useEffect(() => (f.current = new o.sW(n, () => u(true)), f.current.delay(), () => {
     var e;
     null == (e = f.current) || e.cancel(), f.current = null
   }), [n]);
@@ -75,11 +75,11 @@ function u(e) {
       onForceIdle: m
     }), [p, _, h, m]);
   return (0, r.jsx)(c.Provider, {
-    value: o,
+    value: a,
     children: (0, r.jsx)(l.Provider, {
       value: g,
       children: t(s({
-        idle: o
+        idle: a
       }, g))
     })
   })

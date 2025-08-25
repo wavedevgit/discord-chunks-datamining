@@ -9,8 +9,8 @@ require.d(exports, {
   Dd: () => N,
   Ft: () => D,
   TK: () => B,
-  X0: () => k,
-  XA: () => M,
+  X0: () => M,
+  XA: () => k,
   Z8: () => v,
   bD: () => P,
   nG: () => A,
@@ -21,7 +21,7 @@ require.d(exports, {
 var Chunk654861 = require("./654861.js"),
   i = require.n(Chunk654861),
   Chunk512722 = require("./512722.js"),
-  o = require.n(Chunk512722),
+  a = require.n(Chunk512722),
   Chunk392711 = require("./392711.js"),
   l = require.n(Chunk392711),
   Chunk149765 = require("./149765.js"),
@@ -77,40 +77,40 @@ function O(e, t) {
 function v(e) {
   var t, n, r;
   let i, {
-    rootCommand: a,
-    command: o,
+    rootCommand: o,
+    command: a,
     applicationId: s,
     subCommandPath: l,
     useKeyedPermissions: d
   } = e;
-  null != a.permissions && a.permissions.length > 0 && (d ? i = (0, f.tk)(a.permissions) : (i = {}, a.permissions.forEach(e => {
+  null != o.permissions && o.permissions.length > 0 && (d ? i = (0, f.tk)(o.permissions) : (i = {}, o.permissions.forEach(e => {
     i[e.id] = e
   })));
   let _ = (null != l ? l : []).map(e => e.name),
     m = (null != l ? l : []).map(e => e.displayName);
   return {
-    version: a.version,
-    guildId: a.guild_id,
-    id: [a.id, ..._].join(h.oQ),
-    untranslatedName: [a.name, ..._].join(" "),
-    serverLocalizedName: o.name_localized,
+    version: o.version,
+    guildId: o.guild_id,
+    id: [o.id, ..._].join(h.oQ),
+    untranslatedName: [o.name, ..._].join(" "),
+    serverLocalizedName: a.name_localized,
     applicationId: s,
-    type: null != (t = a.type) ? t : u.yU.CHAT,
+    type: null != (t = o.type) ? t : u.yU.CHAT,
     inputType: p.iw.BOT,
-    untranslatedDescription: o.description,
-    options: I(o.options),
-    rootCommand: a,
+    untranslatedDescription: a.description,
+    options: I(a.options),
+    rootCommand: o,
     subCommandPath: l,
-    defaultMemberPermissions: null == a.default_member_permissions ? true : c.vB(a.default_member_permissions),
-    dmPermission: a.dm_permission,
+    defaultMemberPermissions: null == o.default_member_permissions ? true : c.vB(o.default_member_permissions),
+    dmPermission: o.dm_permission,
     permissions: i,
-    displayName: [null != (n = a.name_localized) ? n : a.name, ...m].join(" "),
-    displayDescription: null != (r = o.description_localized) ? r : o.description,
-    nsfw: a.nsfw,
-    contexts: a.contexts,
-    integration_types: a.integration_types,
-    global_popularity_rank: a.global_popularity_rank,
-    handler: a.handler
+    displayName: [null != (n = o.name_localized) ? n : o.name, ...m].join(" "),
+    displayDescription: null != (r = a.description_localized) ? r : a.description,
+    nsfw: o.nsfw,
+    contexts: o.contexts,
+    integration_types: o.integration_types,
+    global_popularity_rank: o.global_popularity_rank,
+    handler: o.handler
   }
 }
 
@@ -150,23 +150,23 @@ function S(e) {
   let {
     rootCommand: r,
     command: i,
-    applicationId: a,
-    subCommandPath: o,
+    applicationId: o,
+    subCommandPath: a,
     useKeyedPermissions: s
   } = e;
   if (i.hasOwnProperty("id")) {
     if (null == i.options || 0 === i.options.length) return [v({
       rootCommand: r,
       command: i,
-      applicationId: a,
-      subCommandPath: o,
+      applicationId: o,
+      subCommandPath: a,
       useKeyedPermissions: s
     })]
   } else if (i.type !== u.jw.SUB_COMMAND && i.type !== u.jw.SUB_COMMAND_GROUP && (null == i.options || 0 === i.options.length)) return [v({
     rootCommand: r,
     command: i,
-    applicationId: a,
-    subCommandPath: o,
+    applicationId: o,
+    subCommandPath: a,
     useKeyedPermissions: s
   })];
   let l = [];
@@ -175,8 +175,8 @@ function S(e) {
   for (let e = 0; e < c.length; e++) l.push(...S({
     rootCommand: r,
     command: c[e],
-    applicationId: a,
-    subCommandPath: (null != o ? o : []).concat([{
+    applicationId: o,
+    subCommandPath: (null != a ? a : []).concat([{
       name: c[e].name,
       type: u.jw.SUB_COMMAND_GROUP,
       displayName: null != (t = c[e].name_localized) ? t : c[e].name
@@ -187,8 +187,8 @@ function S(e) {
   for (let e = 0; e < d.length; e++) l.push(v({
     rootCommand: r,
     command: d[e],
-    applicationId: a,
-    subCommandPath: (null != o ? o : []).concat([{
+    applicationId: o,
+    subCommandPath: (null != a ? a : []).concat([{
       name: d[e].name,
       type: u.jw.SUB_COMMAND,
       displayName: null != (n = d[e].name_localized) ? n : d[e].name
@@ -198,14 +198,14 @@ function S(e) {
   return 0 === c.length && 0 === d.length && l.push(v({
     rootCommand: r,
     command: i,
-    applicationId: a,
-    subCommandPath: o,
+    applicationId: o,
+    subCommandPath: a,
     useKeyedPermissions: s
   })), l
 }
 
 function A(e, t) {
-  return l().flatMap(e, e => (o()(null != e.id, "Missing command id"), S({
+  return l().flatMap(e, e => (a()(null != e.id, "Missing command id"), S({
     rootCommand: e,
     command: e,
     applicationId: e.application_id,
@@ -252,17 +252,17 @@ function D(e) {
     guild: n,
     selfMember: r,
     applicationLevelPermissions: i,
-    commandLevelPermissions: a,
-    defaultMemberPermissions: o
+    commandLevelPermissions: o,
+    defaultMemberPermissions: a
   } = e;
   if (n.ownerId === r.userId || t.can(g.Pl.ADMINISTRATOR, n)) returntrue;
   let s = n.id;
-  if (null != a) {
-    let e = x(r, s, a);
+  if (null != o) {
+    let e = x(r, s, o);
     if ("boolean" == typeof e) return e
   }
   let l = x(r, s, i);
-  return ("boolean" != typeof l || !!l) && (null == o || !c.fS(o, w) && t.can(o, n))
+  return ("boolean" != typeof l || !!l) && (null == a || !c.fS(a, w) && t.can(a, n))
 }
 
 function x(e, t, n) {
@@ -274,8 +274,8 @@ function x(e, t, n) {
     if (null != e && (i = true, e.permission)) returntrue
   }
   if (i) returnfalse;
-  let a = n[(0, f.rE)(t, p.Kw.ROLE)];
-  return null != a ? a.permission : null
+  let o = n[(0, f.rE)(t, p.Kw.ROLE)];
+  return null != o ? o.permission : null
 }
 
 function L(e) {
@@ -308,7 +308,7 @@ function j(e) {
   else return p.ub.APP
 }
 
-function k(e, t) {
+function M(e, t) {
   var n, r;
   return {
     type: p.Qi.APPLICATION,
@@ -320,7 +320,7 @@ function k(e, t) {
   }
 }
 
-function M(e) {
+function k(e) {
   let t = e.id,
     n = e.options,
     r = null == n ? true : n.find(e => e.type === u.jw.SUB_COMMAND_GROUP);
@@ -337,8 +337,8 @@ function U(e) {
   let {
     command: r,
     location: i,
-    triggerSection: a,
-    queryLength: o,
+    triggerSection: o,
+    queryLength: a,
     sectionName: s,
     query: l,
     searchResultsPosition: c,
@@ -348,8 +348,8 @@ function U(e) {
     command_id: null != (n = null == (t = r.rootCommand) ? true : t.id) ? n : r.id,
     application_id: r.applicationId,
     location: i,
-    section: a,
-    query_length: o,
+    section: o,
+    query_length: a,
     command_text_length: r.displayName.length,
     section_name: s,
     query: l,

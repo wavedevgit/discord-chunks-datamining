@@ -17,9 +17,9 @@ function l(e) {
     location: l = ""
   } = e, {
     enabled: c
-  } = o.Z.useConfig({
+  } = a.Z.useConfig({
     location: l
-  }), u = (0, i.e7)([a.ZP], () => null != n && null != t ? a.ZP.getMember(n, t.id) : null);
+  }), u = (0, i.e7)([o.ZP], () => null != n && null != t ? o.ZP.getMember(n, t.id) : null);
   return (0, r.useMemo)(() => {
     var e;
     if (null == t) return;

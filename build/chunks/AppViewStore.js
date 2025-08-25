@@ -4,7 +4,7 @@
 require.d(exports, {
   Z: () => T
 });
-var r, i, a, o, Chunk442837 = require("./442837.js"),
+var r, i, o, a, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk592125 = require("./592125.js"),
   Chunk896797 = require("./896797.js"),
@@ -21,7 +21,7 @@ function h(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let m = (null != (a = null == (i = window) || null == (r = i.location) ? true : r.pathname) ? a : "").startsWith(Chunk981631.Z5c.ACTIVITIES) ? Chunk981631.Z5c.ACTIVITIES : null;
+let m = (null != (o = null == (i = window) || null == (r = i.location) ? true : r.pathname) ? o : "").startsWith(Chunk981631.Z5c.ACTIVITIES) ? Chunk981631.Z5c.ACTIVITIES : null;
 
 function g() {
   let e = Chunk55589.Z.getPrivateChannelIds(),
@@ -70,7 +70,7 @@ function v(e) {
   } = e;
   null == t.guild_id && null != t.id && null != m && m === p.Z5c.CHANNEL(p.ME, t.id) && (m = null)
 }
-class I extends(o = Chunk442837.ZP.Store) {
+class I extends(a = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk896797.Z, Chunk55589.Z, Chunk944486.Z, Chunk430824.Z, Chunk592125.Z)
   }

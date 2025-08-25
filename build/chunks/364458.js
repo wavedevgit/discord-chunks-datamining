@@ -24,12 +24,12 @@ function i(e) {
   return e
 }
 
-function a(e) {
+function o(e) {
   let t = {};
   for (let n of e)
     for (let e in n) e in t ? t[e] = i({}, t[e], n[e]) : t[e] = i({}, n[e]);
   return t
 }
 require.d(exports, {
-  Z: () => a
+  Z: () => o
 }), require("./388685.js")

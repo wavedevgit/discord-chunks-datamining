@@ -41,11 +41,11 @@ function E(e, t, n) {
   } = r.Co.get(t), D = (0, i.mp)(), x = (0, f.useRef)(null), L = () => {
     var e;
     null === n.current || (null == x.current || S.key === x.current) && (null == (e = n.current) ? true : e.contains(document.activeElement)) || (0, u.e)(n.current)
-  }, j = {}, k = e.hasChildItems, M = t.selectionManager.isLink(S.key);
+  }, j = {}, M = e.hasChildItems, k = t.selectionManager.isLink(S.key);
   if (null != S && "expandedKeys" in t) {
     let e = null == (O = (v = t.collection).getChildren) ? true : O.call(v, S.key);
-    k = k || [...null != e ? e : []].length > 1, null == N && !M && "none" === t.selectionManager.selectionMode && k && (N = () => t.toggleKey(S.key));
-    let n = k ? t.expandedKeys.has(S.key) : true,
+    M = M || [...null != e ? e : []].length > 1, null == N && !k && "none" === t.selectionManager.selectionMode && M && (N = () => t.toggleKey(S.key));
+    let n = M ? t.expandedKeys.has(S.key) : true,
       r = 1;
     if (S.level > 0 && (null == S ? true : S.parentKey) != null) {
       let e = t.collection.getItem(S.parentKey);
@@ -67,17 +67,17 @@ function E(e, t, n) {
     ref: n,
     isVirtualized: A,
     shouldSelectOnPressUp: e.shouldSelectOnPressUp || w,
-    onAction: N || (null == (E = S.props) ? true : E.onAction) ? (0, a.t)(null == (y = S.props) ? true : y.onAction, N ? () => N(S.key) : true) : true,
+    onAction: N || (null == (E = S.props) ? true : E.onAction) ? (0, o.t)(null == (y = S.props) ? true : y.onAction, N ? () => N(S.key) : true) : true,
     focus: L,
     linkBehavior: R
   }), B = e => {
     if (!e.currentTarget.contains(e.target) || !n.current || !document.activeElement) return;
     let r = (0, d.QL)(n.current);
     if (r.currentNode = document.activeElement, "expandedKeys" in t && document.activeElement === n.current) {
-      if (e.key === m[C] && t.selectionManager.focusedKey === S.key && k && !t.expandedKeys.has(S.key)) {
+      if (e.key === m[C] && t.selectionManager.focusedKey === S.key && M && !t.expandedKeys.has(S.key)) {
         t.toggleKey(S.key), e.stopPropagation();
         return
-      } else if (e.key === g[C] && t.selectionManager.focusedKey === S.key && k && t.expandedKeys.has(S.key)) {
+      } else if (e.key === g[C] && t.selectionManager.focusedKey === S.key && M && t.expandedKeys.has(S.key)) {
         t.toggleKey(S.key), e.stopPropagation();
         return
       }
@@ -86,16 +86,16 @@ function E(e, t, n) {
       case "ArrowLeft":
         if ("arrow" === P) {
           let t = "rtl" === C ? r.nextNode() : r.previousNode();
-          if (t) e.preventDefault(), e.stopPropagation(), (0, u.e)(t), (0, o.G)(t, {
+          if (t) e.preventDefault(), e.stopPropagation(), (0, u.e)(t), (0, a.G)(t, {
             containingElement: (0, s.r)(n.current)
           });
-          else if (e.preventDefault(), e.stopPropagation(), "rtl" === C)(0, u.e)(n.current), (0, o.G)(n.current, {
+          else if (e.preventDefault(), e.stopPropagation(), "rtl" === C)(0, u.e)(n.current), (0, a.G)(n.current, {
             containingElement: (0, s.r)(n.current)
           });
           else {
             r.currentNode = n.current;
             let e = b(r);
-            e && ((0, u.e)(e), (0, o.G)(e, {
+            e && ((0, u.e)(e), (0, a.G)(e, {
               containingElement: (0, s.r)(n.current)
             }))
           }
@@ -104,16 +104,16 @@ function E(e, t, n) {
       case "ArrowRight":
         if ("arrow" === P) {
           let t = "rtl" === C ? r.previousNode() : r.nextNode();
-          if (t) e.preventDefault(), e.stopPropagation(), (0, u.e)(t), (0, o.G)(t, {
+          if (t) e.preventDefault(), e.stopPropagation(), (0, u.e)(t), (0, a.G)(t, {
             containingElement: (0, s.r)(n.current)
           });
-          else if (e.preventDefault(), e.stopPropagation(), "ltr" === C)(0, u.e)(n.current), (0, o.G)(n.current, {
+          else if (e.preventDefault(), e.stopPropagation(), "ltr" === C)(0, u.e)(n.current), (0, a.G)(n.current, {
             containingElement: (0, s.r)(n.current)
           });
           else {
             r.currentNode = n.current;
             let e = b(r);
-            e && ((0, u.e)(e), (0, o.G)(e, {
+            e && ((0, u.e)(e), (0, a.G)(e, {
               containingElement: (0, s.r)(n.current)
             }))
           }

@@ -15,18 +15,18 @@ function l(e) {
   var t;
   if (!(0, i.BQ)(e)) returnfalse;
   let n = null != (t = e.flags) ? t : 0,
-    r = (0, a.yE)(n, s.udG.EMBEDDED),
-    o = (0, a.yE)(n, s.udG.CONTEXTLESS_ACTIVITY);
-  return r && o
+    r = (0, o.yE)(n, s.udG.EMBEDDED),
+    a = (0, o.yE)(n, s.udG.CONTEXTLESS_ACTIVITY);
+  return r && a
 }
 
 function c(e) {
-  return !!l(e) && (0, o.QK)("canLaunchFrame").enabled
+  return !!l(e) && (0, a.QK)("canLaunchFrame").enabled
 }
 
 function u(e) {
   let {
     enabled: t
-  } = (0, o.u$)("canLaunchFrame");
+  } = (0, a.u$)("canLaunchFrame");
   return r.useMemo(() => null != e && l(e) && t, [e, t])
 }

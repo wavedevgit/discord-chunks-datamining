@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk338390 = require("./338390.js"),
   Chunk859148 = require("./859148.js");
@@ -17,9 +17,9 @@ function c(e) {
     children: t,
     className: n
   } = e, i = (0, s.Z)("PanelTitle");
-  return (0, r.jsx)(o.Text, {
+  return (0, r.jsx)(a.Text, {
     color: "none",
-    className: a()(l.title, n),
+    className: o()(l.title, n),
     variant: i ? "text-md/medium" : "text-sm/medium",
     children: t
   })

@@ -55,8 +55,8 @@ function p(e, t) {
   if (null == e) return {};
   var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -64,8 +64,8 @@ function p(e, t) {
 function h(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let m = {
@@ -85,7 +85,7 @@ let m = {
       } = e, m = p(e, ["showAsset", "showActions", "showTextLink", "caretPosition", "caretAlign", "size"]);
       let [g, E] = i.useState(false), b = i.useRef(null);
       return (0, r.jsxs)("div", {
-        children: [(0, r.jsx)(o.J2, _(d({}, m), {
+        children: [(0, r.jsx)(a.J2, _(d({}, m), {
           size: h,
           targetElementRef: b,
           shouldShow: g,
@@ -107,7 +107,7 @@ let m = {
             link: "https://discord.com",
             external: true
           } : true
-        })), (0, r.jsx)(a.zxk, {
+        })), (0, r.jsx)(o.zxk, {
           variant: "primary",
           text: "Toggle Popover",
           buttonRef: b,
@@ -230,7 +230,7 @@ let m = {
     component: function(e) {
       let [t, n] = i.useState(false), s = i.useRef(null);
       return (0, r.jsxs)("div", {
-        children: [(0, r.jsx)(o.Mb, _(d({}, e), {
+        children: [(0, r.jsx)(a.Mb, _(d({}, e), {
           targetElementRef: s,
           shouldShow: t,
           onRequestClose: () => n(false),
@@ -242,7 +242,7 @@ let m = {
             text: "Learn More",
             onClick: () => n(false)
           }
-        })), (0, r.jsx)(a.zxk, {
+        })), (0, r.jsx)(o.zxk, {
           variant: "primary",
           text: "Show Video Popover",
           buttonRef: s,
@@ -300,7 +300,7 @@ let m = {
         }
       }];
       return (0, r.jsxs)("div", {
-        children: [(0, r.jsx)(o.e4, {
+        children: [(0, r.jsx)(a.e4, {
           targetElementRef: u,
           shouldShow: n,
           onRequestClose: () => l(false),
@@ -310,7 +310,7 @@ let m = {
             align: "center"
           },
           onStepChange: () => {}
-        }), (0, r.jsx)(a.zxk, {
+        }), (0, r.jsx)(o.zxk, {
           variant: "primary",
           text: "Show Multi-Step",
           buttonRef: u,

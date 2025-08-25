@@ -28,7 +28,7 @@ function O(e) {
   let {
     steps: t,
     currentStep: n,
-    body: o,
+    body: a,
     overrideKey: O,
     paymentError: v,
     header: I,
@@ -45,26 +45,26 @@ function O(e) {
     hasCurrencies: L = false
   } = e, j = null;
   null != v && null == (0, p.ly)(v) ? j = v : null != R ? j = R : null != w && (j = w);
-  let k = null != j ? j.message : "";
-  null != j && j instanceof d.HF && (j.code === f.SM.CARD_DECLINED && L && (k += " ".concat(E.intl.string(E.t.iWvwQU))), j.code === f.SM.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED && (k = E.intl.string(E.t.ypuSd3)), j.code === g.evJ.BILLING_NON_REFUNDABLE_PAYMENT_SOURCE && (k = E.intl.string(E.t.mXMmWF)));
+  let M = null != j ? j.message : "";
+  null != j && j instanceof d.HF && (j.code === f.SM.CARD_DECLINED && L && (M += " ".concat(E.intl.string(E.t.iWvwQU))), j.code === f.SM.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED && (M = E.intl.string(E.t.ypuSd3)), j.code === g.evJ.BILLING_NON_REFUNDABLE_PAYMENT_SOURCE && (M = E.intl.string(E.t.mXMmWF)));
   let {
-    stripe: M
+    stripe: k
   } = (0, _.JL)();
-  N = N || null == M;
+  N = N || null == k;
   let U = i.useRef(new l.V7);
   i.useEffect(() => {
     let e = U.current;
-    return null != M || e.isStarted() ? null != M && e.stop() : e.start(10 * m.Z.Millis.SECOND, () => {
+    return null != k || e.isStarted() ? null != k && e.stop() : e.start(10 * m.Z.Millis.SECOND, () => {
       let e = Error("Stripe took too long to load");
       (0, h.q2)(e)
     }), () => {
       e.stop()
     }
-  }, [M]);
+  }, [k]);
   let G = t.includes(p.h8.PAYMENT_TYPE) ? p.h8.PAYMENT_TYPE : p.h8.ADD_PAYMENT_STEPS;
-  return (0, r.jsxs)(a.Elements, {
+  return (0, r.jsxs)(o.Elements, {
     options: g.OBo,
-    stripe: M,
+    stripe: k,
     children: [I, (0, r.jsxs)("div", {
       className: s()("paymentModalContent", b.content),
       children: [S && n !== p.h8.CONFIRM ? (0, r.jsx)(u.Z, {
@@ -88,7 +88,7 @@ function O(e) {
           className: b.errorBlockWrapper,
           children: (0, r.jsx)(c.kzN, {
             ref: P,
-            children: k
+            children: M
           })
         }), N ? (0, r.jsx)(c.$jN, {
           className: b.loadingBlock
@@ -104,7 +104,7 @@ function O(e) {
           children: (0, r.jsx)(c.h21, {
             onScroll: D,
             className: s()(b.scroller, x),
-            children: o
+            children: a
           })
         })]
       })]

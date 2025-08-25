@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk239091 = require("./239091.js"),
@@ -63,8 +63,8 @@ function I(e, t) {
 let T = function(e) {
   let {
     gameId: t,
-    channelId: a
-  } = e, y = i.useRef(null), v = (0, s.e7)([p.Z], () => p.Z.getDetectableGame(t)), T = (0, s.e7)([_.Z], () => _.Z.getChannel(a)), S = null != T ? T.getGuildId() : null, A = null != v ? e => {
+    channelId: o
+  } = e, y = i.useRef(null), v = (0, s.e7)([p.Z], () => p.Z.getDetectableGame(t)), T = (0, s.e7)([_.Z], () => _.Z.getChannel(o)), S = null != T ? T.getGuildId() : null, A = null != v ? e => {
     (0, c.jW)(e, async () => {
       let {
         default: e
@@ -76,7 +76,7 @@ let T = function(e) {
     })
   } : true, C = null != v ? (0, r.jsx)("img", {
     alt: "",
-    className: o()(b.icon, b.imageIcon),
+    className: a()(b.icon, b.imageIcon),
     src: h.ZP.getApplicationIconURL({
       id: v.id,
       icon: v.icon,

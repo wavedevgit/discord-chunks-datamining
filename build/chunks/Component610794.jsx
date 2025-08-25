@@ -28,9 +28,9 @@ function v(e) {
   var t;
   let {
     account: n,
-    refreshed: o,
+    refreshed: a,
     handleRefresh: c
-  } = e, [u, d] = i.useState(false), _ = null != (t = n.metadata) ? t : {}, m = (0, a.e7)([h.default], () => h.default.locale), v = i.useCallback(async () => {
+  } = e, [u, d] = i.useState(false), _ = null != (t = n.metadata) ? t : {}, m = (0, o.e7)([h.default], () => h.default.locale), v = i.useCallback(async () => {
     d(true);
     try {
       await c(n)
@@ -66,7 +66,7 @@ function v(e) {
     children: y.intl.format(y.t.Up2ni4, {
       helpdeskUrl: g.Z.getArticleURL(E.BhN.CONNECTION_DETAILS)
     })
-  }, "label"), A = y.intl.string(y.t["LVh3//"])), o && (A = y.intl.string(y.t.i4jeWV)), (0, r.jsxs)("div", {
+  }, "label"), A = y.intl.string(y.t["LVh3//"])), a && (A = y.intl.string(y.t.i4jeWV)), (0, r.jsxs)("div", {
     className: O.metadataContainer,
     children: [S, null == I ? true : I.map((e, t) => (0, r.jsxs)(r.Fragment, {
       children: [e, t < I.length - 1 ? (0, r.jsx)("span", {
@@ -83,12 +83,12 @@ function v(e) {
     }, "member-since") : null, (0, r.jsx)(s.zx, {
       className: O.metadataRefreshButton,
       look: s.zx.Looks.OUTLINED,
-      color: o ? s.zx.Colors.GREEN : s.zx.Colors.PRIMARY,
+      color: a ? s.zx.Colors.GREEN : s.zx.Colors.PRIMARY,
       size: s.zx.Sizes.MIN,
       submitting: u,
-      disabled: o,
+      disabled: a,
       "aria-label": y.intl.string(y.t.sCkLYG),
-      onClick: o ? true : v,
+      onClick: a ? true : v,
       children: A
     }, "refresh-button")]
   })
@@ -98,7 +98,7 @@ function I(e) {
   let {
     account: t,
     handleRefresh: n,
-    refreshedAccountIds: a
+    refreshedAccountIds: o
   } = e, [s, f] = i.useState(t.visibility), [p, h] = i.useState(t.metadataVisibility), m = (0, u.ZP)();
 
   function g(e) {
@@ -139,7 +139,7 @@ function I(e) {
       children: [(0, r.jsx)("img", {
         alt: b.name,
         className: O.connectionIcon,
-        src: (0, o.wj)(m) ? b.icon.darkSVG : b.icon.lightSVG
+        src: (0, a.wj)(m) ? b.icon.darkSVG : b.icon.lightSVG
       }), (0, r.jsxs)("div", {
         className: O.activitySettings,
         children: [(0, r.jsxs)(l.j7V, {
@@ -153,7 +153,7 @@ function I(e) {
             children: b.name
           }), I && (0, r.jsx)(v, {
             account: t,
-            refreshed: a.includes(t.id),
+            refreshed: o.includes(t.id),
             handleRefresh: n
           })]
         }), I && (0, r.jsx)(l.j7V, {
@@ -178,9 +178,9 @@ function I(e) {
 function T() {
   let e = (0, Chunk442837.e7)([Chunk553795.Z], () => Chunk553795.Z.getAccounts()),
     t = Chunk647438.useMemo(() => module.filter(e => d.Z.isSupported(e.type)), [module]),
-    [n, o] = Chunk647438.useState([]),
+    [n, a] = Chunk647438.useState([]),
     s = Chunk647438.useCallback(e => c.Z.refresh(e.type, e.id).finally(() => {
-      o(t => [...t, e.id])
+      a(t => [...t, e.id])
     }), []);
   return 0 === exports.length ? null : (0, Chunk951288.jsxs)(Chunk481060.hjN, {
     className: Chunk673449.container,

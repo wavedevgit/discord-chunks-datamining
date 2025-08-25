@@ -50,7 +50,7 @@ function u(e, t) {
 }
 
 function d(e) {
-  a.Z.open(e, o.pNK.SOUNDBOARD), (0, i.ZDy)(async () => {
+  o.Z.open(e, a.pNK.SOUNDBOARD), (0, i.ZDy)(async () => {
     let {
       default: t
     } = await n.e("56035").then(n.bind(n, 758961));

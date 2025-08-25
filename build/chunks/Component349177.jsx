@@ -15,7 +15,7 @@ var Chunk481060 = require("./481060.js"),
 
 function u(e) {
   var t, n;
-  return (0, r.jsxs)(a.Z, {
+  return (0, r.jsxs)(o.Z, {
     errors: e.errors,
     disabled: e.disabled,
     title: l.intl.string(l.t["9AjdkJ"]),
@@ -26,7 +26,7 @@ function u(e) {
         onChange: e.onGlobalNameChange,
         value: null != (n = null != (t = e.pendingGlobalName) ? t : e.currentGlobalName) ? n : ""
       })
-    }), (0, r.jsx)(o.Z, {
+    }), (0, r.jsx)(a.Z, {
       user: e.user,
       className: c.displayNameStylesSection
     })]

@@ -74,8 +74,8 @@ module.exports = function(e) {
   }, n.getNextSiblingKey = function() {
     return this.get("nextSibling")
   }, n.findStyleRanges = function(e, t) {
-    a(this.getCharacterList(), p, e, t)
+    o(this.getCharacterList(), p, e, t)
   }, n.findEntityRanges = function(e, t) {
-    a(this.getCharacterList(), h, e, t)
+    o(this.getCharacterList(), h, e, t)
   }, t
 }(u(_))

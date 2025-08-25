@@ -4,8 +4,8 @@
 var Chunk179122 = require("./179122.js"),
   Chunk385903 = require("./385903.js"),
   Chunk655152 = require("./655152.js"),
-  o = require("./751736.js")("species");
+  a = require("./751736.js")("species");
 module.exports = function(e, t) {
   var n, s = r(e).constructor;
-  return true === s || a(n = r(s)[o]) ? t : i(n)
+  return true === s || o(n = r(s)[a]) ? t : i(n)
 }

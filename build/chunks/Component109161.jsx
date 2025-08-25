@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk981729 = require("./981729.jsx"),
   Chunk865672 = require("./865672.jsx"),
   Chunk218634 = require("./218634.js");
@@ -56,18 +56,18 @@ function p(e) {
   var t;
   let {
     color: n,
-    colors: a,
+    colors: o,
     className: s,
     background: u = true,
     hoverOverride: d
-  } = e, [f, _] = i.useState(false), p = null != (t = null == a ? true : a.primaryColor) ? t : n, {
+  } = e, [f, _] = i.useState(false), p = null != (t = null == o ? true : o.primaryColor) ? t : n, {
     hasGradient: h,
     stops: m,
     gradientId: g,
     animatedGradientId: E
-  } = (0, l.De)(p, null == a ? true : a.secondaryColor, null == a ? true : a.tertiaryColor);
+  } = (0, l.De)(p, null == o ? true : o.secondaryColor, null == o ? true : o.tertiaryColor);
   return null == p ? null : (0, r.jsxs)("svg", {
-    className: o()(c.svg, s),
+    className: a()(c.svg, s),
     viewBox: "0 0 20 20",
     fill: "none",
     onMouseEnter: () => {
@@ -135,9 +135,9 @@ function h(e) {
     color: t,
     colors: n,
     name: i,
-    tooltip: a = true
+    tooltip: o = true
   } = e;
-  return null == t && null == n ? null : a ? (0, r.jsx)(s.u, {
+  return null == t && null == n ? null : o ? (0, r.jsx)(s.u, {
     text: i,
     children: t => (0, r.jsx)("span", _(d({}, t), {
       "aria-hidden": true,
@@ -152,7 +152,7 @@ function m(e) {
     colors: n,
     className: i
   } = e, {
-    gradientStyle: a,
+    gradientStyle: o,
     gradientClassname: s
   } = (0, l.Ic)({
     colorStrings: n,
@@ -160,11 +160,11 @@ function m(e) {
   });
   if (null == t && null == n) return null;
   let u = null != n && null != n.primaryColor && null != n.secondaryColor,
-    f = d({}, u ? a : {
+    f = d({}, u ? o : {
       backgroundColor: null != t ? t : true
     });
   return (0, r.jsx)("span", {
-    className: o()(c.roleCircle, i, {
+    className: a()(c.roleCircle, i, {
       [s]: u
     }),
     style: f

@@ -25,7 +25,7 @@ function d() {
       })
     }), module.map(e => (0, r.jsx)("div", {
       className: u.item,
-      children: (0, r.jsx)(o.q, {
+      children: (0, r.jsx)(a.q, {
         userId: e
       })
     }, e))]

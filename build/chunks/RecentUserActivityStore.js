@@ -22,7 +22,7 @@ function c(e) {
   let {
     userActivities: t
   } = e;
-  (0, o.uw)("RecentUserActivityStore") && null != t && (l = new Set(t.map(e => e.application_id)))
+  (0, a.uw)("RecentUserActivityStore") && null != t && (l = new Set(t.map(e => e.application_id)))
 }
 class u extends(r = Chunk442837.ZP.Store) {
   get currentUserApplicationIds() {

@@ -33,8 +33,8 @@ function g(e) {
     allowCommandFetch: r,
     includeAuthorizedAppsAndFetch: i
   } = e, {
-    sectionDescriptors: a,
-    loading: o
+    sectionDescriptors: o,
+    loading: a
   } = l.wi({
     context: t,
     filters: h,
@@ -42,9 +42,9 @@ function g(e) {
     allowFetch: r
   });
   return {
-    loading: o,
+    loading: a,
     frecentApps: E({
-      sectionDescriptors: a,
+      sectionDescriptors: o,
       context: t,
       onlyActivityApps: n,
       includeAuthorizedAppsAndFetch: i
@@ -58,11 +58,11 @@ function E(e) {
     context: n,
     onlyActivityApps: s,
     includeAuthorizedAppsAndFetch: l
-  } = e, h = (0, a.e7)([d.Z], () => d.Z.getFetchState());
+  } = e, h = (0, o.e7)([d.Z], () => d.Z.getFetchState());
   r.useEffect(() => {
-    l && h === d.M.NOT_FETCHED && o.Z.fetch()
+    l && h === d.M.NOT_FETCHED && a.Z.fetch()
   }, [l, h]);
-  let m = (0, a.Wu)([d.Z], () => l ? d.Z.getNewestTokens().filter(e => e.scopes.includes(i.x.APPLICATIONS_COMMANDS)) : []),
+  let m = (0, o.Wu)([d.Z], () => l ? d.Z.getNewestTokens().filter(e => e.scopes.includes(i.x.APPLICATIONS_COMMANDS)) : []),
     g = t.filter(e => e.id !== p.bi.FRECENCY && e.id !== p.bi.BUILT_IN),
     E = "contextless" === n.type,
     b = r.useMemo(() => {

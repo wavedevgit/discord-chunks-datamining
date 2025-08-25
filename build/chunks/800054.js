@@ -7,5 +7,5 @@ var Chunk214027 = require("./214027.js"),
   Chunk933121 = require("./933121.js"),
   s = require("./751736.js")("iterator");
 module.exports = function(e) {
-  if (!a(e)) return i(e, s) || i(e, "@@iterator") || o[r(e)]
+  if (!o(e)) return i(e, s) || i(e, "@@iterator") || a[r(e)]
 }

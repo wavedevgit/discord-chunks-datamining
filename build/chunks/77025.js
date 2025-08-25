@@ -3,7 +3,7 @@
 "use strict";
 var Chunk46015 = require("./46015.js"),
   Chunk527160 = require("./527160.js"),
-  a = Chunk46015({}.hasOwnProperty);
+  o = Chunk46015({}.hasOwnProperty);
 module.exports = Object.hasOwn || function(e, t) {
-  return a(i(e), t)
+  return o(i(e), t)
 }

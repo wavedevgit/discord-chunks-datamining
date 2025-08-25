@@ -20,9 +20,9 @@ var Chunk992774 = require("./992774.js"),
     }
     returnfalse
   },
-  supportsFeature: e => o.ZP.supportsFeature(e),
+  supportsFeature: e => a.ZP.supportsFeature(e),
   setProcessPriority(e) {
-    o.ZP.getDiscordUtils().setProcessPriority(e)
+    a.ZP.getDiscordUtils().setProcessPriority(e)
   },
   getVoiceEngine: () => Chunk998502.ZP.getVoiceEngine(),
   getVoiceFilters: () => Chunk998502.ZP.getVoiceFilters()

@@ -21,7 +21,7 @@ let d = Chunk647438.forwardRef(function(e, t) {
     expressionsListRef: p,
     defaultSearchPlaceholder: h,
     emptySearchPlaceholder: m
-  } = e, g = i.useRef(null), [E, b] = (0, c.Iu)(e => [e.searchQuery, e.isSearchSuggestion], a.X), y = n.useStore(e => e.searchPlaceholder), O = n.useStore(e => e.inspectedExpressionPosition, a.X), v = i.useCallback(e => {
+  } = e, g = i.useRef(null), [E, b] = (0, c.Iu)(e => [e.searchQuery, e.isSearchSuggestion], o.X), y = n.useStore(e => e.searchPlaceholder), O = n.useStore(e => e.inspectedExpressionPosition, o.X), v = i.useCallback(e => {
     var t;
     n.setActiveCategoryIndex("" === e ? 0 : l.c), n.setInspectedExpressionPosition(0, 0), n.setSearchPlaceholder(null), (0, c.ql)(e), null == (t = p.current) || t.scrollTo(0)
   }, [p, n]), I = i.useCallback(() => {
@@ -55,7 +55,7 @@ let d = Chunk647438.forwardRef(function(e, t) {
         "aria-haspopup": "grid",
         "aria-controls": _,
         "aria-expanded": true,
-        "aria-activedescendant": (0, o.NE)(_, O.columnIndex, O.rowIndex)
+        "aria-activedescendant": (0, a.NE)(_, O.columnIndex, O.rowIndex)
       }
     })
   })

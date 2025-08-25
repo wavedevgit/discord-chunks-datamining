@@ -35,17 +35,17 @@ function g(e) {
   let S = e => {
     e.stopPropagation(), null == n || n({
       action: "PRESS_STAGE_CHANNEL_LISTEN_BUTTON"
-    }), s.AC(O, y), (0, o.Kh)(y), null == g || g()
+    }), s.AC(O, y), (0, a.Kh)(y), null == g || g()
   };
   return E === h.l.MODAL_V2 ? (0, r.jsx)(p.tG, {
     text: m.intl.string(m.t.ZYO5OD),
-    size: a.Ph.TINY,
+    size: o.Ph.TINY,
     themeColor: "secondary",
     disabled: v,
     onClick: S
   }) : (0, r.jsx)(p.tG, {
     text: m.intl.string(m.t.ZYO5OD),
-    size: a.Ph.SMALL,
+    size: o.Ph.SMALL,
     themeColor: "secondary",
     fullWidth: true,
     disabled: v,

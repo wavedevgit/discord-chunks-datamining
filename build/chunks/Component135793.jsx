@@ -73,15 +73,15 @@ function j(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let k = 190,
-  M = 178,
+let M = 190,
+  k = 178,
   U = "MESSAGE_CONFETTI_POTION_MODAL_KEY",
   G = e => {
     let {
       channelId: t,
       message: i,
-      onRedeem: a,
-      onClose: o,
+      onRedeem: o,
+      onClose: a,
       buttonUseState: l = "activate",
       source: u
     } = e, d = m.Z.getChannel(t);
@@ -94,8 +94,8 @@ let k = 190,
       return t => (0, r.jsx)(e, j(x({}, t), {
         channel: d,
         message: i,
-        onRedeem: a,
-        onUnmount: o,
+        onRedeem: o,
+        onUnmount: a,
         source: u,
         buttonUseState: l
       }))
@@ -108,7 +108,7 @@ function B(e) {
   let {
     transitionState: t,
     channel: n,
-    message: o,
+    message: a,
     onRedeem: s,
     onUnmount: u,
     buttonUseState: d,
@@ -121,7 +121,7 @@ function B(e) {
     onClose: _,
     trackingProps: {
       impression: {
-        impressionName: a.ImpressionNames.CONFETTI_POTION_MODAL,
+        impressionName: o.ImpressionNames.CONFETTI_POTION_MODAL,
         impressionProperties: {
           source: f
         }
@@ -129,7 +129,7 @@ function B(e) {
     },
     children: (0, r.jsx)(Z, {
       channel: n,
-      message: o,
+      message: a,
       onRedeem: s,
       buttonUseState: d
     })
@@ -140,7 +140,7 @@ function Z(e) {
   let {
     channel: t,
     message: n,
-    onRedeem: a,
+    onRedeem: o,
     buttonUseState: s
   } = e, l = null != n, u = l && (0, T.Uw)(n), _ = (0, y.Qj)(t.id, l), {
     price: p,
@@ -157,8 +157,8 @@ function Z(e) {
     S && (0, b.SN)(v.D1)
   }, [S, l]);
   let w = (0, i.useCallback)(() => {
-      null != _ && ((0, c.pTH)(), a(_))
-    }, [_, a]),
+      null != _ && ((0, c.pTH)(), o(_))
+    }, [_, o]),
     D = (0, i.useCallback)(() => {
       (0, h.Z)({
         skuId: v.D1,
@@ -166,7 +166,7 @@ function Z(e) {
         onComplete: () => {
           w(), (0, b.gA)(v.D1)
         },
-        variantsReturnStyle: o.v.INDIVIDUAL_PRODUCTS
+        variantsReturnStyle: a.v.INDIVIDUAL_PRODUCTS
       })
     }, [w, N]),
     x = (0, i.useCallback)(() => R ? w() : D(), [w, D, R]),
@@ -194,8 +194,8 @@ let F = e => {
     let {
       channel: t,
       buttonPurchaseState: n,
-      buttonDisabledState: a,
-      price: o,
+      buttonDisabledState: o,
+      price: a,
       onActionClick: s,
       loading: l,
       selectedEmoji: c,
@@ -210,16 +210,16 @@ let F = e => {
         {
           x: r,
           y: i,
-          width: a,
-          height: o
+          width: o,
+          height: a
         } = t;
       (0, I.I)(n, {
         x: r,
         y: i,
-        w: a,
-        h: o
+        w: o,
+        h: a
       }, true, O.LL.ConfettiPreview)
-    }, [c]), l) ? (0, r.jsx)(q, {}) : null == o ? (0, r.jsx)(z, {}) : (0, r.jsxs)(r.Fragment, {
+    }, [c]), l) ? (0, r.jsx)(q, {}) : null == a ? (0, r.jsx)(z, {}) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
         className: P.modal,
         ref: d,
@@ -230,8 +230,8 @@ let F = e => {
         })
       }), (0, r.jsx)(Y, {
         buttonPurchaseState: n,
-        buttonDisabledState: a,
-        price: o,
+        buttonDisabledState: o,
+        price: a,
         onActionClick: s
       })]
     })
@@ -281,10 +281,10 @@ let F = e => {
     let {
       channel: t,
       selectedEmoji: n,
-      isReaction: a
-    } = e, [o, s] = (0, i.useState)(false), l = (0, i.useCallback)(() => {
+      isReaction: o
+    } = e, [a, s] = (0, i.useState)(false), l = (0, i.useCallback)(() => {
       s(false)
-    }, []), d = (0, i.useCallback)(e => (0, y.t0)(e, t.id, a), [a, t.id]), {
+    }, []), d = (0, i.useCallback)(e => (0, y.t0)(e, t.id, o), [o, t.id]), {
       emojiName: f,
       selectionText: _
     } = (0, i.useMemo)(() => null == n ? {
@@ -296,14 +296,14 @@ let F = e => {
     }, [n]), p = (0, i.useRef)(null);
     return (0, r.jsx)(S.Z, {
       channel: t,
-      shouldShow: o,
+      shouldShow: a,
       onRequestClose: l,
       setEmojiConfetti: d,
       positionRef: p,
       position: "left",
       align: "top",
       children: () => (0, r.jsx)(c.P3F, {
-        onClick: () => s(!o),
+        onClick: () => s(!a),
         className: P.emojiSelect,
         children: (0, r.jsxs)("div", {
           className: P.emojiContent,
@@ -326,7 +326,7 @@ let F = e => {
               variant: "text-sm/normal",
               children: _
             })]
-          }), o ? (0, r.jsx)(c.u04, {
+          }), a ? (0, r.jsx)(c.u04, {
             color: "currentColor",
             size: "custom",
             className: P.chevron
@@ -344,7 +344,7 @@ let F = e => {
       buttonPurchaseState: t,
       buttonDisabledState: n,
       price: i,
-      onActionClick: a
+      onActionClick: o
     } = e;
     return (0, r.jsxs)("div", {
       className: P.footer,
@@ -360,7 +360,7 @@ let F = e => {
           buttonPurchaseState: t,
           buttonDisabledState: n,
           price: i,
-          onActionClick: a
+          onActionClick: o
         })]
       })]
     })
@@ -390,8 +390,8 @@ let F = e => {
     let {
       buttonPurchaseState: t,
       buttonDisabledState: n,
-      price: a,
-      onActionClick: o
+      price: o,
+      onActionClick: a
     } = e, {
       isDisabled: s,
       copy: l,
@@ -400,7 +400,7 @@ let F = e => {
       let e = {
           0: R.intl.formatToPlainString(R.t.POGRmp, {
             amount: v.pe,
-            price: (0, E.T4)(a.amount, a.currency)
+            price: (0, E.T4)(o.amount, o.currency)
           }),
           1: R.intl.string(R.t.RrKeDw),
           2: R.intl.string(R.t.WOXaWF),
@@ -417,13 +417,13 @@ let F = e => {
         copy: e[t],
         tooltipCopy: i ? r[n] : ""
       }
-    }, [n, t, a.amount, a.currency]);
+    }, [n, t, o.amount, o.currency]);
     return (0, r.jsx)(c.ua7, {
       tooltipContentClassName: P.tooltip,
       text: u,
       shouldShow: !!s,
       children: e => (0, r.jsx)(c.zxk, j(x({}, e), {
-        onClick: o,
+        onClick: a,
         disabled: s,
         text: l
       }))
@@ -435,8 +435,8 @@ let F = e => {
       className: Chunk393919.error,
       children: [(0, Chunk951288.jsx)(Chunk481060.Eep, {
         src: Chunk99713,
-        width: M,
-        height: k
+        width: k,
+        height: M
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         children: Chunk388032.intl.string(Chunk388032.t.oKJdSk)

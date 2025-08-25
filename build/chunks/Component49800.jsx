@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk886472 = require("./886472.js");
 
 function l(e, t, n) {
@@ -54,8 +54,8 @@ function f(e, t) {
   if (null == e) return {};
   var n, r, i = _(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -63,8 +63,8 @@ function f(e, t) {
 function _(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let p = {
@@ -79,14 +79,14 @@ let p = {
     let n;
     var {
       children: i,
-      editable: a = false,
+      editable: o = false,
       type: l = p.PRIMARY,
       className: u,
       outline: _ = false
     } = e, h = f(e, ["children", "editable", "type", "className", "outline"]);
-    return _ ? n = s.outline : l === p.PRIMARY && a && (n = s.editable), (0, r.jsx)("div", d(c({
+    return _ ? n = s.outline : l === p.PRIMARY && o && (n = s.editable), (0, r.jsx)("div", d(c({
       ref: t,
-      className: o()(u, l, n)
+      className: a()(u, l, n)
     }, h), {
       children: i
     }))

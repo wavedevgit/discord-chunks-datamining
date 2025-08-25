@@ -11,7 +11,7 @@ var Chunk751767 = require("./751767.js"),
   Chunk960048 = require("./960048.js"),
   Chunk231338 = require("./231338.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -27,7 +27,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      a(e, t, n[t])
     })
   }
   return e
@@ -58,7 +58,7 @@ function u(e, t) {
 }
 async function d(e) {
   let t = null;
-  if (null != e && e.paymentGateway === a.gg.BRAINTREE) {
+  if (null != e && e.paymentGateway === o.gg.BRAINTREE) {
     let e = await (0, r.A)();
     null != e && (t = {
       braintree_device_data: e

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk512722 = require("./512722.js"),
-  a = require.n(Chunk512722),
+  o = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk346951 = require("./346951.jsx"),
@@ -26,7 +26,7 @@ function m() {
     isVerified: n
   } = (0, Chunk442837.cj)([Chunk594174.default, Chunk674985.Z], () => {
     let e = Chunk594174.default.getCurrentUser();
-    return a()(null != module, "UserSettingsHypeSquad: currentUser cannot be undefined"), {
+    return o()(null != module, "UserSettingsHypeSquad: currentUser cannot be undefined"), {
       houseMembership: Chunk674985.Z.getHouseMembership(),
       isClaimed: module.isClaimed(),
       isVerified: module.verified

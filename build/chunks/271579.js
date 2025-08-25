@@ -15,8 +15,8 @@ function s(e, t) {
   if (null == e) return {};
   var n, r, i = l(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -24,8 +24,8 @@ function s(e, t) {
 function l(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let c = "https://discordapp.page.link",
@@ -36,8 +36,8 @@ function f() {
   var e, t;
   let n = ["WebView", "(iPhone|iPod|iPad)(?!.*Safari/)"],
     r = RegExp("(".concat(require.join("|"), ")"), "ig"),
-    a = (null === i() || true === i() || null == (e = i().ua) ? true : module.match(Chunk264344)) != null,
-    o = (null === i() || true === i() ? true : i().name) === "Safari" && !Chunk772848;
+    o = (null === i() || true === i() || null == (e = i().ua) ? true : module.match(Chunk264344)) != null,
+    a = (null === i() || true === i() ? true : i().name) === "Safari" && !Chunk772848;
   return (null === i() || true === i() || null == (t = i().os) ? true : exports.family) !== "iOS" || Chunk511266
 }
 
@@ -54,12 +54,12 @@ function p(e) {
       r = n ? t.get("link") : t.get("deep_link_value");
     if (null == r) return null;
     let i = decodeURIComponent(r),
-      a = new URL(i).searchParams,
-      o = n ? t.get("utm_source") : t.get("pid"),
+      o = new URL(i).searchParams,
+      a = n ? t.get("utm_source") : t.get("pid"),
       s = {
-        utmSource: null != o ? o : true
+        utmSource: null != a ? a : true
       };
-    for (let [e, t] of a.entries()) s[e] = t;
+    for (let [e, t] of o.entries()) s[e] = t;
     return s
   } catch (e) {
     return null
@@ -71,14 +71,14 @@ function h(e, t) {
     utmSource: n,
     androidFallbackLink: r,
     iosFallbackLink: i
-  } = t, a = s(t, ["utmSource", "androidFallbackLink", "iosFallbackLink"]), l = new URL(e);
-  for (let e in a) {
-    let t = a[e];
+  } = t, o = s(t, ["utmSource", "androidFallbackLink", "iosFallbackLink"]), l = new URL(e);
+  for (let e in o) {
+    let t = o[e];
     null != t && l.searchParams.set(e, t)
   }
   let c = encodeURIComponent(l.toString()),
     _ = encodeURIComponent("discord://app/open#".concat(l.toString())),
-    p = encodeURIComponent((0, o.Z)()),
+    p = encodeURIComponent((0, a.Z)()),
     h = f() ? "true" : "false",
     m = null != r ? encodeURIComponent(r) : null,
     g = null != i ? encodeURIComponent(i) : null,

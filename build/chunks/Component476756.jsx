@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk512722 = require("./512722.js"),
-  a = require.n(Chunk512722),
+  o = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk716364 = require("./716364.js"),
@@ -19,7 +19,7 @@ var Chunk512722 = require("./512722.js"),
 function _() {
   let e = (0, Chunk442837.e7)([Chunk474873.Z], () => Chunk474873.Z.getSoundpack()),
     t = Chunk197344.Z.useHolidaySoundpack();
-  a()(null != exports, "should not render this without a holiday soundpack");
+  o()(null != exports, "should not render this without a holiday soundpack");
   let n = [{
     value: Chunk871465.YC.CLASSIC,
     label: Chunk388032.intl.string(Chunk388032.t.p3Hg5e)

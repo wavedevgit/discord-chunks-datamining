@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk34415 = require("./34415.js"),
   Chunk873546 = require("./873546.js"),
   Chunk442837 = require("./442837.js"),
@@ -76,7 +76,7 @@ let Q = (0, Chunk663993.Un)({
       t = (0, Chunk526665.wy)("AppSkeleton"),
       n = (0, Chunk442837.e7)([Chunk819640.Z], () => Chunk819640.Z.getLayers().includes(Chunk981631.S9g.USER_SETTINGS)),
       i = (0, Chunk481060.s9z)(Chunk481060.$sL),
-      a = (0, Chunk442837.e7)([Chunk314897.default], () => Chunk314897.default.isAuthenticated());
+      o = (0, Chunk442837.e7)([Chunk314897.default], () => Chunk314897.default.isAuthenticated());
     if (!require || !exports) return (0, Chunk951288.jsx)(Chunk950796.Dg, {
       fixed: true,
       show: module || Chunk647438 || !Chunk120356
@@ -86,7 +86,7 @@ let Q = (0, Chunk663993.Un)({
     let {
       children: t,
       skipsSettingDefaultPageTitle: n
-    } = e, a = (0, B.getPlatform)(), u = l.tq || l.Em, m = (0, c.e7)([E.Z], () => E.Z.useForcedColors ? "yes" : "no"), M = i.useRef(document.body), U = "".concat(m);
+    } = e, o = (0, B.getPlatform)(), u = l.tq || l.Em, m = (0, c.e7)([E.Z], () => E.Z.useForcedColors ? "yes" : "no"), k = i.useRef(document.body), U = "".concat(m);
     return (0, N.G)(), (0, P.G)("AppSkeleton"), (0, r.jsx)(j.w, {
       children: (0, r.jsxs)(b.Z, {
         children: [(0, r.jsx)(V.Z, {
@@ -94,13 +94,13 @@ let Q = (0, Chunk663993.Un)({
         }), (0, r.jsx)(h.T, {
           children: (0, r.jsx)(Y.Z, {
             children: (0, r.jsxs)(d.JcV, {
-              containerRef: M,
+              containerRef: k,
               children: [(0, r.jsx)(K.Co, {}), (0, r.jsx)(W.ZP, {}), (0, r.jsx)(s.OU, {}), (0, r.jsx)(g.Wu, {
                 appContext: q.IlC.APP,
                 renderWindow: window,
                 children: (0, r.jsxs)(w.yP, {
-                  children: [null != a ? (0, r.jsx)($, {}) : null, (0, r.jsxs)("div", {
-                    className: o()(X.appAsidePanelWrapper, u && X.mobileAppAsidePanelWrapper),
+                  children: [null != o ? (0, r.jsx)($, {}) : null, (0, r.jsxs)("div", {
+                    className: a()(X.appAsidePanelWrapper, u && X.mobileAppAsidePanelWrapper),
                     children: [(0, r.jsx)(C.K, {}), (0, r.jsx)("div", {
                       className: X.notAppAsidePanel,
                       "data-app-not-dev-tools": true,
@@ -110,9 +110,9 @@ let Q = (0, Chunk663993.Un)({
                             value: O.Z,
                             children: (0, r.jsxs)(S.p, {
                               children: [(0, r.jsx)("div", {
-                                className: o()(u ? X.mobileApp : X.app),
+                                className: a()(u ? X.mobileApp : X.app),
                                 children: t
-                              }), (0, r.jsx)(f.Z, {}), (0, r.jsx)(I.Z, {}), (0, r.jsx)(_.Z, {}), (0, r.jsx)(d.nKe, {}), (0, r.jsx)(p.Z, {}), (0, r.jsx)(D.Ox, {}), (0, r.jsx)(w.Un, {}), (0, r.jsx)(x.ot, {}), (0, r.jsx)(d.Ixi, {}), (0, r.jsx)(v.Z, {}), (0, r.jsx)(L.Z, {}), (0, r.jsx)(Q, {}), (0, r.jsx)(J, {}), (0, r.jsx)(k.Z, {})]
+                              }), (0, r.jsx)(f.Z, {}), (0, r.jsx)(I.Z, {}), (0, r.jsx)(_.Z, {}), (0, r.jsx)(d.nKe, {}), (0, r.jsx)(p.Z, {}), (0, r.jsx)(D.Ox, {}), (0, r.jsx)(w.Un, {}), (0, r.jsx)(x.ot, {}), (0, r.jsx)(d.Ixi, {}), (0, r.jsx)(v.Z, {}), (0, r.jsx)(L.Z, {}), (0, r.jsx)(Q, {}), (0, r.jsx)(J, {}), (0, r.jsx)(M.Z, {})]
                             })
                           })
                         })

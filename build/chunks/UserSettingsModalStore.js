@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => G
 });
 var r, Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk594174 = require("./594174.js"),
@@ -53,7 +53,7 @@ function C(e) {
 }
 
 function N(e) {
-  var t, n, r, i, a, o;
+  var t, n, r, i, o, a;
   let s = l.default.getCurrentUser();
   if (null == s) return R();
   p = null != (t = e.section) ? t : p, S = null != (n = e.section) ? n : p, null != e.subsection && null != p && (h[p] = e.subsection), null != e.scrollPosition && null != p && (m[p] = e.scrollPosition), O = !!e.openWithoutBackstack, f = c.QZA.OPEN, g = {}, b = d({}, E = {
@@ -67,7 +67,7 @@ function N(e) {
       newPassword: null,
       claimed: s.isClaimed()
     }
-  }), v = null != (r = e.onClose) ? r : null, I = null != (i = e.analyticsLocation) ? i : null, T = null != (a = e.analyticsLocations) ? a : [], A = null != (o = e.impressionSource) ? o : null
+  }), v = null != (r = e.onClose) ? r : null, I = null != (i = e.analyticsLocation) ? i : null, T = null != (o = e.analyticsLocations) ? o : [], A = null != (a = e.impressionSource) ? a : null
 }
 
 function R() {
@@ -108,7 +108,7 @@ function L() {
 
 function j() {
   let e = Chunk594174.default.getCurrentUser();
-  k(), null != module && (b = d({}, E = {
+  M(), null != module && (b = d({}, E = {
     [Chunk981631.oAB.ACCOUNT]: {
       userId: module.id,
       username: module.username,
@@ -122,11 +122,11 @@ function j() {
   }))
 }
 
-function k() {
+function M() {
   f = Chunk981631.QZA.OPEN, g = {}
 }
 
-function M(e) {
+function k(e) {
   var t;
   if (f !== c.QZA.SUBMITTING) returnfalse;
   f = c.QZA.OPEN, p = c.oAB.ACCOUNT, g = null != (t = e.errors) ? t : {}
@@ -136,7 +136,7 @@ class U extends(r = Chunk442837.ZP.Store) {
     this.waitFor(Chunk594174.default)
   }
   hasChanges() {
-    return null != b && null != E && !!this.isOpen() && !a().isEqual(b, E)
+    return null != b && null != E && !!this.isOpen() && !o().isEqual(b, E)
   }
   isOpen() {
     return y
@@ -183,11 +183,11 @@ let G = new U(Chunk570140.Z, {
   USER_SETTINGS_MODAL_CLOSE: R,
   LOGOUT: R,
   USER_SETTINGS_MODAL_SUBMIT: L,
-  USER_SETTINGS_MODAL_SUBMIT_FAILURE: M,
+  USER_SETTINGS_MODAL_SUBMIT_FAILURE: k,
   USER_SETTINGS_MODAL_SET_SECTION: P,
   USER_SETTINGS_MODAL_CLEAR_SUBSECTION: w,
   USER_SETTINGS_MODAL_CLEAR_SCROLL_POSITION: D,
   USER_SETTINGS_MODAL_UPDATE_ACCOUNT: x,
-  USER_SETTINGS_MODAL_SUBMIT_COMPLETE: k,
+  USER_SETTINGS_MODAL_SUBMIT_COMPLETE: M,
   USER_SETTINGS_MODAL_RESET: j
 })

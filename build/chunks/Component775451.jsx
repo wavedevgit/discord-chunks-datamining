@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk351773 = require("./351773.js"),
   Chunk507808 = require("./507808.js"),
   Chunk23547 = require("./23547.jsx"),
@@ -27,7 +27,7 @@ let g = {
     let {
       showNotificationBadge: t,
       ctaText: n,
-      ctaOnClick: a,
+      ctaOnClick: o,
       anchorPillType: E,
       analyticsPage: b,
       isCoachmarkEnabled: y = true,
@@ -59,16 +59,16 @@ let g = {
         C && x()
       }, [C, x]),
       j = (0, s.Z)(null, L),
-      k = i.useMemo(() => (0, r.jsx)(f.L, {
+      M = i.useMemo(() => (0, r.jsx)(f.L, {
         analyticsPage: b,
         ctaText: n,
         ctaOnClick: () => {
-          x(), a()
+          x(), o()
         },
         linkText: O
-      }), [b, n, O, x, a]);
+      }), [b, n, O, x, o]);
     return (0, r.jsxs)("div", {
-      className: o()(m.container, I, {
+      className: a()(m.container, I, {
         [m.hidden]: R,
         [m.visible]: !R
       }),
@@ -83,12 +83,12 @@ let g = {
         onClick: x,
         showNotificationBadge: t
       }), C && (0, r.jsx)("div", {
-        className: o()(m.cardContainer, v, {
+        className: a()(m.cardContainer, v, {
           [m.hidden]: R,
           [m.visible]: !R
         }),
         ref: j,
-        children: k
+        children: M
       })]
     })
   };

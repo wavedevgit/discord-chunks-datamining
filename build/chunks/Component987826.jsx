@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk946281 = require("./946281.js");
 
@@ -21,15 +21,15 @@ function l(e) {
     onClick: u
   } = e, d = n + (c ? ":" : ""), f = null;
   (null == l ? true : l.isActive) && !c ? f = s.active : (null == l || null == (t = l.lastValidationResult) ? true : t.success) === false ? f = s.error : (null == l ? true : l.hasValue) && !c && (f = s.set);
-  let _ = (0, r.jsx)(o.Text, {
+  let _ = (0, r.jsx)(a.Text, {
     variant: c ? "text-md/normal" : "text-sm/normal",
     color: "text-primary",
-    className: a()(s.option, {
+    className: o()(s.option, {
       [s.inline]: c
     }, f, i),
     children: d
   });
-  return null == u ? _ : (0, r.jsx)(o.P3F, {
+  return null == u ? _ : (0, r.jsx)(a.P3F, {
     className: s.clickable,
     onClick: () => u(n),
     children: _

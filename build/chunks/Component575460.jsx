@@ -20,7 +20,7 @@ function u(e) {
     onClick: u
   } = e, d = (0, l.Z)(n, t.ref_id), f = () => {
     null == d || d.navigateToChannel(), u()
-  }, _ = (0, r.jsx)(o.Z, {
+  }, _ = (0, r.jsx)(a.Z, {
     guildId: n,
     emojiId: t.emoji_id,
     emojiName: t.emoji_name
@@ -45,8 +45,8 @@ function u(e) {
         variant: "text-sm/normal",
         children: t.description
       })]
-    }), (0, r.jsx)(a.Z, {
-      direction: a.Z.Directions.RIGHT,
+    }), (0, r.jsx)(o.Z, {
+      direction: o.Z.Directions.RIGHT,
       className: c.caret
     })]
   })

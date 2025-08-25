@@ -69,15 +69,15 @@ function L(e) {
     onStepChange: t,
     onBackClick: n,
     showBackButton: i = false,
-    disabled: o = false,
+    disabled: a = false,
     loading: s = false
   } = e, {
     hasPaymentSources: l
   } = (0, I.JL)(), c = l ? T.h8.REVIEW : T.h8.ADD_PAYMENT_STEPS;
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(a.zxk, {
+    children: [(0, r.jsx)(o.zxk, {
       onClick: () => t(c),
-      disabled: o,
+      disabled: a,
       loading: s,
       text: N.intl.string(N.t.XiOHRU)
     }), i ? (0, r.jsx)(m.Z, {
@@ -99,7 +99,7 @@ function j(e) {
     giftRecipient: D,
     recommendedGiftSkuIds: x,
     giftingOrigin: j,
-    setValidatingGiftRecipient: M
+    setValidatingGiftRecipient: k
   } = (0, v.wD)(), {
     selectedSkuId: U,
     setSelectedSkuId: G,
@@ -114,9 +114,9 @@ function j(e) {
   }, {
     autoTrackExposure: false
   }), W = H && j === C.Wt.DM_CHANNEL, K = Y === _.u.POPULAR ? N.intl.string(N.t.Kwgrrq) : N.intl.string(N.t.r1huYW), z = async (e, t) => {
-    M(true), null != m && T(), await (0, c.B1)(e.id, t) || T(N.intl.string(N.t["4kgVqa"])), M(false)
+    k(true), null != m && T(), await (0, c.B1)(e.id, t) || T(N.intl.string(N.t["4kgVqa"])), k(false)
   };
-  (0, o.ZP)(() => {
+  (0, a.ZP)(() => {
     null != U && null != D && (y.default.track(A.rMx.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
       sku_id: U
     }), z(D, U))
@@ -134,10 +134,10 @@ function j(e) {
         n = null != Z && null != (i = t[Z]) ? i : t[b.c]
       }
       if (null == n) return;
-      let a = (0, O.T4)(n.amount, n.currency);
+      let o = (0, O.T4)(n.amount, n.currency);
       return (0, r.jsx)(u.Z, {
         skuId: e,
-        price: a,
+        price: o,
         isSelected: e === U,
         onSelect: e => q(e),
         className: R.recommendedGiftPreview
@@ -154,12 +154,12 @@ function j(e) {
     }),
     J = () => W ? (0, r.jsxs)("div", {
       className: R.bodyColumnLeft,
-      children: [(0, r.jsx)(a.Text, {
+      children: [(0, r.jsx)(o.Text, {
         variant: "text-xs/bold",
         color: "header-secondary",
         className: R.selectGiftTitle,
         children: K.toLocaleUpperCase()
-      }), x.map(e => X(e)), (0, r.jsx)(k, {
+      }), x.map(e => X(e)), (0, r.jsx)(M, {
         handleClose: n
       })]
     }) : (0, r.jsx)("div", {
@@ -202,7 +202,7 @@ function j(e) {
         children: [J(), $()]
       })
     }), (0, r.jsx)(S.O3, {
-      children: (0, r.jsx)(a.mzw, {
+      children: (0, r.jsx)(o.mzw, {
         justify: f.Z.Justify.BETWEEN,
         align: f.Z.Align.CENTER,
         children: (0, r.jsx)(L, {
@@ -216,7 +216,7 @@ function j(e) {
   })
 }
 
-function k(e) {
+function M(e) {
   let {
     handleClose: t
   } = e, {
@@ -224,13 +224,13 @@ function k(e) {
   } = (0, l.ZP)(s.Z.COLLECTIBLES_GIFT_CUSTOMIZATION_MODAL);
 
   function i() {
-    t(), (0, a.pTH)(), (0, c.mK)({
+    t(), (0, o.pTH)(), (0, c.mK)({
       openInLayer: false,
       analyticsLocations: n,
       analyticsSource: s.Z.COLLECTIBLES_GIFT_CUSTOMIZATION_MODAL
     })
   }
-  return (0, r.jsx)(a.P3F, {
+  return (0, r.jsx)(o.P3F, {
     onClick: i,
     children: (0, r.jsxs)("div", {
       className: R.navigateToShopButton,
@@ -238,7 +238,7 @@ function k(e) {
         className: R.navigateToShopBody,
         children: [(0, r.jsx)("div", {
           className: R.shopIcon,
-          children: (0, r.jsx)(a.EOn, {
+          children: (0, r.jsx)(o.EOn, {
             size: "custom",
             width: 18,
             height: 18,
@@ -246,18 +246,18 @@ function k(e) {
           })
         }), (0, r.jsxs)("div", {
           className: R.navigateToShopTextWrapper,
-          children: [(0, r.jsx)(a.Text, {
+          children: [(0, r.jsx)(o.Text, {
             color: "header-primary",
             variant: "text-md/semibold",
             children: N.intl.string(N.t["1+Co8P"])
-          }), (0, r.jsx)(a.X6q, {
+          }), (0, r.jsx)(o.X6q, {
             color: "header-secondary",
             variant: "heading-sm/medium",
             children: N.intl.string(N.t.nYn52N)
           })]
         })]
       }), (0, r.jsx)("div", {
-        children: (0, r.jsx)(a.d4D, {
+        children: (0, r.jsx)(o.d4D, {
           size: "custom",
           width: 20,
           height: 20,

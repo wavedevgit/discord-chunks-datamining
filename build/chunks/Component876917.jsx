@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk802433 = require("./802433.js"),
   Chunk680295 = require("./680295.jsx"),
   Chunk803580 = require("./803580.js"),
@@ -18,12 +18,12 @@ let d = .1,
     let {
       profileEffectId: t,
       isHovering: n,
-      forCollectedModal: a = false,
+      forCollectedModal: o = false,
       isPurchased: _,
       removeSetHeight: p = false
-    } = e, h = a ? f : d, [m, g] = i.useState(true);
+    } = e, h = o ? f : d, [m, g] = i.useState(true);
     return (i.useEffect(() => {
-      if (true !== a) g(false);
+      if (true !== o) g(false);
       else {
         let e = setTimeout(() => {
           g(false)
@@ -32,22 +32,22 @@ let d = .1,
           clearTimeout(e)
         }
       }
-    }, [h, a]), null != t) ? (0, r.jsxs)("div", {
-      className: o()(c.previewContainer, {
-        [c.previewContainerAnimation]: a,
+    }, [h, o]), null != t) ? (0, r.jsxs)("div", {
+      className: a()(c.previewContainer, {
+        [c.previewContainerAnimation]: o,
         [c.previewContainerSetHeight]: !p
       }),
       children: [(0, r.jsx)("img", {
         src: u,
         alt: " ",
-        className: a ? c.previewForCollected : c.preview,
+        className: o ? c.previewForCollected : c.preview,
         "aria-hidden": true
       }), !m && (0, r.jsx)("div", {
         className: _ ? c.purchasedEffect : true,
         children: (0, r.jsx)(l.Z, {
           profileEffectId: t,
           useThumbnail: true,
-          autoPlay: a,
+          autoPlay: o,
           restartMethod: s.j.FromStart,
           resetOnHover: true,
           isHovering: n,

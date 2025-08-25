@@ -8,8 +8,8 @@ var Chunk979554 = require("./979554.js");
 let i = e => {
   var t, n, i;
   let {
-    product: a,
-    selectedVariantIndex: o
+    product: o,
+    selectedVariantIndex: a
   } = e;
-  return a.type === r.Z.VARIANTS_GROUP && null != o && null != (i = null == (n = a.variants) || null == (t = n[o]) ? true : t.skuId) ? i : a.skuId
+  return o.type === r.Z.VARIANTS_GROUP && null != a && null != (i = null == (n = o.variants) || null == (t = n[a]) ? true : t.skuId) ? i : o.skuId
 }

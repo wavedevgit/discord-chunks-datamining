@@ -6,7 +6,7 @@ require.d(exports, {
 });
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk755419 = require("./755419.jsx"),
   Chunk200192 = require("./200192.js");
 let l = e => {
@@ -14,9 +14,9 @@ let l = e => {
     product: t,
     animationState: n,
     className: i
-  } = e, l = o.K[t.skuId];
+  } = e, l = a.K[t.skuId];
   return null != l ? (0, r.jsx)("div", {
-    className: a()(s.externalProductWrapper, i),
+    className: o()(s.externalProductWrapper, i),
     children: null != l.render && l.render({
       animationState: n,
       alt: t.name

@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk952265 = require("./952265.js"),
   Chunk466377 = require("./466377.jsx"),
   Chunk313201 = require("./313201.js"),
@@ -51,7 +51,7 @@ function v(e) {
     title: t,
     help: n,
     showPremiumUpsell: i,
-    transitionState: o,
+    transitionState: a,
     icons: y,
     fileSize: O,
     onClose: v
@@ -66,21 +66,21 @@ function v(e) {
     }), (0, p.uL)(E.Z5c.APPLICATION_STORE)
   };
   return i ? C ? (0, r.jsx)(_.Z, {
-    transitionState: o,
+    transitionState: a,
     onClose: v,
     handleLearnMore: N
   }) : (0, r.jsx)(f.Z, {
-    transitionState: o,
+    transitionState: a,
     onClose: v,
     handleLearnMore: N,
     fileSize: O
   }) : (0, r.jsx)(s.Y0, {
     size: s.Cg.DYNAMIC,
     "aria-labelledby": I,
-    transitionState: o,
+    transitionState: a,
     parentComponent: "UploadError",
     children: (0, r.jsx)("div", {
-      className: a()(b.uploadDropModal, b.error),
+      className: o()(b.uploadDropModal, b.error),
       children: (0, r.jsxs)("div", {
         className: b.inner,
         children: [(0, r.jsx)(m.Z, {
@@ -100,7 +100,7 @@ function v(e) {
 let I = "UPLOAD_ERROR_MODAL_KEY";
 
 function T(e) {
-  (0, o.h7)(t => (0, r.jsx)(v, O({}, t, e)), {
+  (0, a.h7)(t => (0, r.jsx)(v, O({}, t, e)), {
     modalKey: I
   })
 }

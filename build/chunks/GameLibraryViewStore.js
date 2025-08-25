@@ -6,7 +6,7 @@ require.d(exports, {
   Z: () => v
 });
 var i, Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  a = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk433517 = require("./433517.js"),
   Chunk570140 = require("./570140.js"),
@@ -25,7 +25,7 @@ let f = "GameLibraryViewStore",
   p = Chunk981631.sHY.ASCENDING,
   h = Chunk981631.iEv.LAST_PLAYED,
   m = false,
-  g = o().debounce(() => {
+  g = a().debounce(() => {
     m = false, O.emitChange()
   }, _);
 

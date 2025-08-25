@@ -11,8 +11,8 @@ function i(e) {
   let {
     activities: n,
     status: i,
-    applicationStream: a,
-    voiceChannel: o
+    applicationStream: o,
+    voiceChannel: a
   } = e;
-  return i !== r.Sk.OFFLINE && i !== r.Sk.INVISIBLE && (null != a || null != o || (null != (t = null == n ? true : n.length) ? t : 0) > 0)
+  return i !== r.Sk.OFFLINE && i !== r.Sk.INVISIBLE && (null != o || null != a || (null != (t = null == n ? true : n.length) ? t : 0) > 0)
 }

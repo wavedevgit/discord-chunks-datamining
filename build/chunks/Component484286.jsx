@@ -65,20 +65,20 @@ class d extends(r = Chunk647438.PureComponent) {
     let {
       children: n,
       mirror: r,
-      paused: o,
+      paused: a,
       component: s
     } = this.props;
     if (null == e) {
       if (null == n) return null;
-      let e = a.Children.only(n);
-      return a.cloneElement(e, u({
+      let e = o.Children.only(n);
+      return o.cloneElement(e, u({
         style: {
           display: t && !r ? true : "none"
         }
       }, e.props))
     }
     return (0, i.jsx)(s, {
-      paused: o,
+      paused: a,
       className: l.media,
       streamId: e,
       onReady: t ? null : this.handleReady

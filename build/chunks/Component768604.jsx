@@ -30,7 +30,7 @@ function g() {
     } = (0, Chunk294602.K)(),
     b = e => {
       let t = Object.values(e);
-      if ((0, l.Ks)() && t.includes(i.Q4.SHOW)) return void o.Z.showAgeVerificationGetStartedModal(s.cU.SENSITIVE_MEDIA_FILTER_SETTINGS);
+      if ((0, l.Ks)() && t.includes(i.Q4.SHOW)) return void a.Z.showAgeVerificationGetStartedModal(s.cU.SENSITIVE_MEDIA_FILTER_SETTINGS);
       (0, c.Jr)(e)
     },
     y = [{

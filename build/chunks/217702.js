@@ -2,8 +2,8 @@
 /** chunk id: 217702, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Jj: () => a,
-  OF: () => o,
+  Jj: () => o,
+  OF: () => a,
   WW: () => l,
   Y9: () => i,
   hV: () => s,
@@ -11,8 +11,8 @@ require.d(exports, {
 });
 let r = 550,
   i = 600,
-  a = 350,
-  o = 40;
+  o = 350,
+  a = 40;
 var s = function(e) {
   return e.STATIC = "STATIC", e.RESPONSIVE = "RESPONSIVE", e.MOSAIC = "MOSAIC", e
 }({});

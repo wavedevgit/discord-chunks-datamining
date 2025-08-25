@@ -8,7 +8,7 @@ var Chunk772848 = require("./772848.js"),
   Chunk710845 = require("./710845.js"),
   Chunk607802 = require("./607802.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,7 +24,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      a(e, t, n[t])
     })
   }
   return e
@@ -42,20 +42,20 @@ function l(e, t) {
 new Chunk710845.Z("SearchSessionAnalyticsManager");
 class c {
   upsertState(e, t) {
-    let n = (0, a.Tm)(e),
+    let n = (0, o.Tm)(e),
       r = this.sessions.get(n),
       i = null != r ? r : l();
     this.sessions.set(n, s({}, i, t))
   }
   getState(e) {
-    let t = (0, a.Tm)(e);
+    let t = (0, o.Tm)(e);
     return this.sessions.get(t)
   }
   incrementSearchCount(e, t) {
     var n, r;
     let i = this.getState(e),
-      a = {};
-    a.searchCount = (null != (n = null == i ? true : i.searchCount) ? n : 0) + 1, t && (a.searchWithFiltersCount = (null != (r = null == i ? true : i.searchWithFiltersCount) ? r : 0) + 1), this.upsertState(e, a)
+      o = {};
+    o.searchCount = (null != (n = null == i ? true : i.searchCount) ? n : 0) + 1, t && (o.searchWithFiltersCount = (null != (r = null == i ? true : i.searchWithFiltersCount) ? r : 0) + 1), this.upsertState(e, o)
   }
   getSearchCount(e) {
     var t, n;
@@ -82,11 +82,11 @@ class c {
     return null == (t = this.getState(e)) ? true : t.searchLocation
   }
   refreshSearchQueryAnalyticsId(e) {
-    let t = (0, a.Tm)(e);
+    let t = (0, o.Tm)(e);
     this.searchQueryIds.set(t, (0, r.Z)())
   }
   getQueryId(e) {
-    let t = (0, a.Tm)(e);
+    let t = (0, o.Tm)(e);
     return this.searchQueryIds.get(t)
   }
   getSelectedSearchTab(e) {
@@ -98,20 +98,20 @@ class c {
       searchContext: t,
       initialTab: n,
       initializeSearchQueryId: i,
-      searchLocation: o
-    } = e, s = (0, a.Tm)(t);
-    this.sessions.has(s) || this.sessions.set(s, l(n, o)), i && !this.searchQueryIds.has(s) && this.searchQueryIds.set(s, (0, r.Z)())
+      searchLocation: a
+    } = e, s = (0, o.Tm)(t);
+    this.sessions.has(s) || this.sessions.set(s, l(n, a)), i && !this.searchQueryIds.has(s) && this.searchQueryIds.set(s, (0, r.Z)())
   }
   terminate(e) {
-    let t = (0, a.Tm)(e);
+    let t = (0, o.Tm)(e);
     this.sessions.delete(t), this.searchQueryIds.delete(t)
   }
   hasSession(e) {
-    let t = (0, a.Tm)(e);
+    let t = (0, o.Tm)(e);
     return this.sessions.has(t)
   }
   constructor() {
-    o(this, "sessions", new Map), o(this, "searchQueryIds", new Map)
+    a(this, "sessions", new Map), a(this, "searchQueryIds", new Map)
   }
 }
 let u = new c

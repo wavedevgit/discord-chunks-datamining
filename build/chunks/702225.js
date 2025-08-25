@@ -15,18 +15,18 @@ function i(e, t, n) {
   }) : e[t] = n, e
 }
 
-function a(e) {
+function o(e) {
   return {
     channelId: e,
     sessionId: (0, r.Z)()
   }
 }
-class o {
+class a {
   getForumChannelSessionId(e) {
-    return null == this.session && (this.session = a(e)), this.session.channelId !== e && (this.session = a(e)), this.session.sessionId
+    return null == this.session && (this.session = o(e)), this.session.channelId !== e && (this.session = o(e)), this.session.sessionId
   }
   constructor() {
     i(this, "session", true)
   }
 }
-let s = new o
+let s = new a

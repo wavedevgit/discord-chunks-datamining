@@ -81,20 +81,20 @@ function j(e, t) {
   return n
 }
 
-function k(e, t) {
+function M(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let M = "in-app",
+let k = "in-app",
   U = "Discord Widget";
 
 function G(e) {
   let {
     questId: t,
     questContent: i,
-    questContentPosition: a,
-    preview: o = false,
+    questContentPosition: o,
+    preview: a = false,
     previewQuest: l = null,
     sourceQuestContent: c
   } = e;
@@ -102,11 +102,11 @@ function G(e) {
     let {
       default: e
     } = await n.e("61624").then(n.bind(n, 985866));
-    return n => (0, r.jsx)(e, k(L({}, n), {
+    return n => (0, r.jsx)(e, M(L({}, n), {
       questId: t,
-      questContentPosition: a,
+      questContentPosition: o,
       questContent: i,
-      preview: o,
+      preview: a,
       previewQuest: l,
       sourceQuestContent: c
     }))
@@ -119,7 +119,7 @@ function B(e, t) {
     let {
       default: i
     } = await n.e("838").then(n.bind(n, 824393));
-    return n => (0, r.jsx)(i, k(L({}, n), {
+    return n => (0, r.jsx)(i, M(L({}, n), {
       quest: e,
       location: t
     }))
@@ -129,9 +129,9 @@ function B(e, t) {
 function Z(e, t, i) {
   (0, s.ZDy)(async () => {
     let {
-      default: a
+      default: o
     } = await n.e("88938").then(n.bind(n, 390238));
-    return n => (0, r.jsx)(a, k(L({}, n), {
+    return n => (0, r.jsx)(o, M(L({}, n), {
       quest: e,
       location: t,
       sourceQuestContent: i
@@ -144,7 +144,7 @@ function F(e, t) {
     let {
       default: i
     } = await n.e("20565").then(n.bind(n, 383294));
-    return n => (0, r.jsx)(i, k(L({}, n), {
+    return n => (0, r.jsx)(i, M(L({}, n), {
       quest: e,
       location: t
     }))
@@ -154,9 +154,9 @@ function F(e, t) {
 function V(e, t, i) {
   (0, s.ZDy)(async () => {
     let {
-      default: a
+      default: o
     } = await n.e("58641").then(n.bind(n, 828664));
-    return n => (0, r.jsx)(a, k(L({}, n), {
+    return n => (0, r.jsx)(o, M(L({}, n), {
       quest: e,
       location: t,
       sourceQuestContent: i
@@ -176,7 +176,7 @@ function H(e, t) {
     let {
       default: i
     } = await n.e("4266").then(n.bind(n, 316210));
-    return n => (0, r.jsx)(i, k(L({}, n), {
+    return n => (0, r.jsx)(i, M(L({}, n), {
       questContent: t.content,
       quest: e
     }))
@@ -190,7 +190,7 @@ function Y() {
   } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
   (0, Chunk150560.Z.getState().setUtmCurrentContext)({
     utmSourceCurrent: U,
-    utmMediumCurrent: M,
+    utmMediumCurrent: k,
     utmCampaignCurrent: exports,
     utmContentCurrent: Object.keys(Chunk497505.jn).find(t => y.jn[t] === e)
   });
@@ -225,8 +225,8 @@ function z(e) {
   var t;
   let {
     quest: n,
-    questContent: a,
-    sourceQuestContent: o,
+    questContent: o,
+    sourceQuestContent: a,
     sourceQuestContentCTA: l,
     autoplay: c = true,
     skipEnrollmentCheck: u = false
@@ -245,14 +245,14 @@ function z(e) {
   let d = (0, i.Z)();
   if ((0, I.D)(R.dr.VIDEO_MODAL) && !u && (null == (t = n.userStatus) ? true : t.enrolledAt) == null && !(0, g.zi)(n)) {
     b.Z.isEnrolling(n.id) || (0, E.AH)(n.id, {
-      questContent: a,
+      questContent: o,
       questContentCTA: m.jZ.ACCEPT_QUEST,
-      sourceQuestContent: o
+      sourceQuestContent: a
     });
     let e = O.ZP.getState().getVideoProgress(n.id);
     null != e && e.timestampSec > 1 && ((0, E.lx)(n.id), p.default.track(P.rMx.QUEST_VIDEO_ENROLLMENT_RETRY_ATTEMPTED, {
       quest_id: n.id,
-      source_quest_content: (0, m._b)(o),
+      source_quest_content: (0, m._b)(a),
       source_quest_content_cta: l,
       video_session_id: d
     }))
@@ -260,19 +260,19 @@ function z(e) {
     let {
       default: e
     } = await K();
-    return t => (0, r.jsx)(e, k(L({}, t), {
+    return t => (0, r.jsx)(e, M(L({}, t), {
       openStartClockTime: performance.now(),
       questId: n.id,
       autoplay: c,
       videoSessionId: d,
-      sourceQuestContent: o
+      sourceQuestContent: a
     }))
   }, {
     modalKey: (0, g.u7)(n.id),
     backdropStyle: s.fCB.IMMERSIVE,
     onCloseCallback: () => (0, g.Mo)({
       questId: n.id,
-      sourceQuestContent: o,
+      sourceQuestContent: a,
       videoSessionId: d
     })
   })
@@ -284,9 +284,9 @@ function q(e) {
     r = "quest";
   if ("Android" === n || "iOS" === n) {
     let t = _.default.getFingerprint(),
-      n = (0, a.WS)(),
+      n = (0, o.WS)(),
       i = "".concat(location.protocol, "//").concat(window.GLOBAL_ENV.WEBAPP_ENDPOINT, "/quests/").concat(e);
-    return (0, a.ZP)(i, {
+    return (0, o.ZP)(i, {
       utmSource: r,
       fingerprint: t,
       attemptId: n
@@ -297,9 +297,9 @@ function q(e) {
 
 function X(e) {
   let t = q(e),
-    n = (0, a.zS)(t);
+    n = (0, o.zS)(t);
   null != n && p.default.track(P.rMx.DEEP_LINK_CLICKED, {
-    fingerprint: (0, o.K)(n.fingerprint),
+    fingerprint: (0, a.K)(n.fingerprint),
     attempt_id: n.attemptId,
     source: n.utmSource
   }), h.Z.launch(t, t => {
@@ -315,7 +315,7 @@ function Q(e) {
     let {
       default: t
     } = await Promise.all([n.e("7784"), n.e("33628")]).then(n.bind(n, 570387));
-    return n => (0, r.jsx)(t, k(L({}, n), {
+    return n => (0, r.jsx)(t, M(L({}, n), {
       questId: e.id,
       questName: e.config.messages.questName
     }))

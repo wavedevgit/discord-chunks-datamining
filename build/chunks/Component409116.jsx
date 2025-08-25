@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk937615 = require("./937615.js"),
   Chunk884697 = require("./884697.js"),
@@ -81,7 +81,7 @@ let g = 5,
       discount: b = l.f_,
       variant: y = "heading-md/semibold"
     } = e, O = null != E, v = (0, s.qr)(t, n), I = b !== l.f_ && b.discountPercentage >= g && !O ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(o.nn4, {
+      children: [(0, r.jsx)(a.nn4, {
         children: c.intl.format(c.t.niC6DA, {
           price: v,
           discountPercentage: b.discountPercentage
@@ -89,7 +89,7 @@ let g = 5,
       }), (0, r.jsx)("span", {
         "aria-hidden": true,
         children: v
-      }), (0, r.jsxs)(o.Text, {
+      }), (0, r.jsxs)(a.Text, {
         variant: y,
         color: "text-feedback-positive",
         className: u.discount,
@@ -97,43 +97,43 @@ let g = 5,
         children: ["(-", b.discountPercentage, "%)"]
       })]
     }) : (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(o.nn4, {
+      children: [(0, r.jsx)(a.nn4, {
         children: c.intl.format(c.t["6C36MD"], {
           price: v
         })
       }), (0, r.jsx)("span", {
         "aria-hidden": true,
-        className: a()({
+        className: o()({
           [u.priceStrikethrough]: O
         }, h),
         children: v
       })]
     });
-    return (0, r.jsxs)(o.Text, {
+    return (0, r.jsxs)(a.Text, {
       variant: y,
-      className: a()({
+      className: o()({
         [u.discountBackgroundColor]: O
       }, u.container, h),
-      children: ["tooltip" === i ? (0, r.jsx)(o.ua7, {
+      children: ["tooltip" === i ? (0, r.jsx)(a.ua7, {
         text: c.intl.string(c.t.MPFyJy),
         "aria-label": c.intl.string(c.t.X3Ekj4),
         children: e => {
           var t = f({}, _(e));
-          return (0, r.jsx)(o.SrA, m(p({
+          return (0, r.jsx)(a.SrA, m(p({
             size: d,
             color: "currentColor"
           }, t), {
             className: u.nitroIcon
           }))
         }
-      }) : "default" === i ? (0, r.jsx)(o.SrA, {
+      }) : "default" === i ? (0, r.jsx)(a.SrA, {
         size: d,
         color: "currentColor",
         className: u.nitroIcon
-      }) : null, I, O && (0, r.jsxs)(o.X6q, {
+      }) : null, I, O && (0, r.jsxs)(a.X6q, {
         variant: "heading-md/semibold",
         className: u.discountPill,
-        children: [(0, r.jsx)(o.nn4, {
+        children: [(0, r.jsx)(a.nn4, {
           children: c.intl.format(c.t.rItDb2, {
             discountOfferAmount: E
           })

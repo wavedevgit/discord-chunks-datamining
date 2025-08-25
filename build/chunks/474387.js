@@ -25,7 +25,7 @@ class u extends Chunk147913.Z {
       channel: t
     } = e;
     if (t.isForumPost()) {
-      let e = t.ownerId === a.default.getId();
+      let e = t.ownerId === o.default.getId();
       this.readStateSnapshots[t.id] = {
         isNew: !e,
         hasUnreads: !e
@@ -41,7 +41,7 @@ class u extends Chunk147913.Z {
         channelId: t
       } = e;
       if (null == t) return;
-      let n = o.Z.getChannel(t);
+      let n = a.Z.getChannel(t);
       null != n && n.isForumLikeChannel() && (this.readStateSnapshots = {}, this.processForumChannel(n.guild_id, t))
     }), c(this, "processForumChannel", (e, t) => {
       let n = i.Z.getThreadsForParent(e, t);

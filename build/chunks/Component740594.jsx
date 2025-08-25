@@ -52,8 +52,8 @@ function d(e, t) {
   if (null == e) return {};
   var n, r, i = f(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -61,8 +61,8 @@ function d(e, t) {
 function f(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let _ = function(e) {
@@ -92,14 +92,14 @@ let _ = function(e) {
     },
     {
       subscribeButtonProps: v
-    } = (0, o.F)({
+    } = (0, a.F)({
       subscriptionTier: t,
       buttonTextOverride: m,
       defaultTextOverride: g,
       iconOverride: E,
       variantOverride: b
     });
-  return (0, r.jsx)(a.Z, u(l({}, O), {
+  return (0, r.jsx)(o.Z, u(l({}, O), {
     children: e => {
       let {
         onClick: t

@@ -17,19 +17,19 @@ function c(e) {
   } = e;
   i.useEffect(() => {
     let e = setTimeout(() => {
-      t(o.L.AUTO_DISMISS)
+      t(a.L.AUTO_DISMISS)
     }, 8e3);
     return () => {
       clearTimeout(e)
     }
   }, [t]);
   let n = () => {
-    t(o.L.USER_DISMISS)
+    t(a.L.USER_DISMISS)
   };
-  return (0, r.jsxs)(a.P3F, {
+  return (0, r.jsxs)(o.P3F, {
     className: l.container,
     onClick: n,
-    children: [(0, r.jsx)(a.Text, {
+    children: [(0, r.jsx)(o.Text, {
       variant: "text-sm/medium",
       color: "always-white",
       children: s.intl.string(s.t.fJNqJi)
@@ -43,7 +43,7 @@ function u(e) {
   let {
     children: t,
     markAsDismissed: n,
-    targetElementRef: o
+    targetElementRef: a
   } = e, [s, l] = i.useState(false);
   return i.useEffect(() => {
     let e = setTimeout(() => {
@@ -52,8 +52,8 @@ function u(e) {
     return () => {
       clearTimeout(e)
     }
-  }, [l]), (0, r.jsx)(a.yRy, {
-    targetElementRef: o,
+  }, [l]), (0, r.jsx)(o.yRy, {
+    targetElementRef: a,
     position: "top",
     align: "left",
     shouldShow: s,

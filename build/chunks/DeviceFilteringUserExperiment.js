@@ -2,11 +2,11 @@
 /** chunk id: 996897, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  w: () => o
+  w: () => a
 });
 var Chunk818083 = require("./818083.js"),
   Chunk984134 = require("./984134.js");
-let a = (0, Chunk818083.B)({
+let o = (0, Chunk818083.B)({
   kind: "user",
   id: "2025-07_device_filtering",
   label: "Device filtering experiment",
@@ -22,7 +22,7 @@ let a = (0, Chunk818083.B)({
   }]
 });
 
-function o(e) {
+function a(e) {
   let {
     location: t,
     autoTrackExposure: n = true
@@ -33,7 +33,7 @@ function o(e) {
   }, {
     autoTrackExposure: n
   });
-  return a.useExperiment({
+  return o.useExperiment({
     location: t
   }, {
     disable: r,

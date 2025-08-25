@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk159635 = require("./159635.js"),
   Chunk481060 = require("./481060.js"),
   Chunk570140 = require("./570140.js"),
@@ -86,21 +86,21 @@ function V(e) {
     enableEmojiClick: n = true
   } = e;
   return {
-    react(e, i, a) {
+    react(e, i, o) {
       let {
-        key: o,
+        key: a,
         channelId: s,
         messageId: l
-      } = a;
+      } = o;
       return e.src ? (0, r.jsx)(y.c, {
         node: e,
         tooltipPosition: t,
         enableClick: n,
         channelId: s,
         messageId: l
-      }, o) : (0, r.jsx)("span", {
+      }, a) : (0, r.jsx)("span", {
         children: e.surrogate
-      }, o)
+      }, a)
     }
   }
 }
@@ -111,14 +111,14 @@ function H(e) {
     enableEmojiClick: n = true
   } = e;
   return {
-    react(e, i, a) {
+    react(e, i, o) {
       let {
-        key: o,
+        key: a,
         guildId: s,
         channelId: l,
         messageId: c,
         isInteracting: u
-      } = a, d = _.ZP.getDisambiguatedEmojiContext(s).getById(e.emojiId);
+      } = o, d = _.ZP.getDisambiguatedEmojiContext(s).getById(e.emojiId);
       if (null != d) {
         let t = d.require_colons;
         e = F(B({}, e), {
@@ -132,7 +132,7 @@ function H(e) {
         enableClick: n,
         channelId: l,
         messageId: c
-      }, o)
+      }, a)
     }
   }
 }
@@ -146,13 +146,13 @@ function Y(e, t, n) {
   switch (t) {
     case "home":
     case "guide":
-      i(k.oC.GUILD_HOME);
+      i(M.oC.GUILD_HOME);
       break;
     case "browse":
-      i(k.oC.CHANNEL_BROWSER);
+      i(M.oC.CHANNEL_BROWSER);
       break;
     case "customize":
-      i(k.oC.CUSTOMIZE_COMMUNITY);
+      i(M.oC.CUSTOMIZE_COMMUNITY);
       break;
     case "linked-roles":
       if (null != n) {
@@ -177,11 +177,11 @@ function Y(e, t, n) {
 function W(e) {
   let {
     text: t
-  } = e, [n, a] = i.useState(false), o = () => {
-    (0, S.JG)(t, () => a(true), () => a(false))
+  } = e, [n, o] = i.useState(false), a = () => {
+    (0, S.JG)(t, () => o(true), () => o(false))
   };
   return (0, r.jsx)(l.P3F, {
-    onClick: o,
+    onClick: a,
     children: n ? (0, r.jsx)(l.dz2, {
       size: "xs",
       color: "currentColor"
@@ -195,9 +195,9 @@ require("./324509.js");
 let K = {
   blockQuote: {
     react: (e, t, n) => (0, r.jsxs)("div", {
-      className: M.blockquoteContainer,
+      className: k.blockquoteContainer,
       children: [(0, r.jsx)("div", {
-        className: M.blockquoteDivider
+        className: k.blockquoteDivider
       }), (0, r.jsx)("blockquote", {
         children: t(e.content, n)
       })]
@@ -227,28 +227,28 @@ let K = {
   },
   codeBlock: {
     react(e, t, i) {
-      let a = () => (0, r.jsx)("code", {
-        className: o()(U.scrollbarGhostHairline, "hljs"),
+      let o = () => (0, r.jsx)("code", {
+        className: a()(U.scrollbarGhostHairline, "hljs"),
         children: (0, A.S)(e, t, i)
       });
       return (0, r.jsx)("pre", {
         children: (0, r.jsxs)("div", {
-          className: M.codeContainer,
+          className: k.codeContainer,
           children: [S.wS ? (0, r.jsx)("div", {
-            className: M.codeActions,
+            className: k.codeActions,
             children: (0, r.jsx)(W, {
               text: e.content
             })
           }) : null, (0, r.jsx)(d.GI, {
             createPromise: () => Promise.resolve().then(n.bind(n, 364964)),
             webpackId: 364964,
-            renderFallback: a,
+            renderFallback: o,
             render: t => {
-              if (!(e.lang && t.hasLanguage(e.lang))) return a();
+              if (!(e.lang && t.hasLanguage(e.lang))) return o();
               {
                 let n = t.highlight(e.lang, e.content, true);
-                return null == n ? a() : (0, r.jsx)("code", {
-                  className: o()(U.scrollbarGhostHairline, "hljs", n.language),
+                return null == n ? o() : (0, r.jsx)("code", {
+                  className: a()(U.scrollbarGhostHairline, "hljs", n.language),
                   dangerouslySetInnerHTML: {
                     __html: n.value
                   }
@@ -308,19 +308,19 @@ let K = {
   list: {
     react: (e, t, n) => {
       let i = e.ordered ? "ol" : "ul",
-        a = null == e.start ? true : (e.start + (e.items.length - 1)).toString().length;
+        o = null == e.start ? true : (e.start + (e.items.length - 1)).toString().length;
       return (0, s.reactElement)(i, "".concat(n.key), {
         start: e.start,
-        className: n.formatInline ? M.inlineFormat : null,
+        className: n.formatInline ? k.inlineFormat : null,
         style: {
-          "--totalCharacters": a
+          "--totalCharacters": o
         },
         children: e.items.map((e, i) => {
-          let a = (0, s.reactElement)("span", "".concat(n.key, "-").concat(i, "-innerSpan"), {
+          let o = (0, s.reactElement)("span", "".concat(n.key, "-").concat(i, "-innerSpan"), {
             children: t(e, n)
           });
           return (0, s.reactElement)("li", "".concat(n.key, "-").concat(i) + i, {
-            children: [a, (0, r.jsx)(l.nn4, {
+            children: [o, (0, r.jsx)(l.nn4, {
               children: ","
             }, "screen-reader-pause")]
           })
@@ -337,7 +337,7 @@ let K = {
         children: [i, (0, r.jsx)(l.nn4, {
           children: ","
         }, "screen-reader-pause")],
-        className: n.formatInline ? M.inlineFormat : null
+        className: n.formatInline ? k.inlineFormat : null
       })
     }
   },
@@ -366,7 +366,7 @@ let K = {
       });
       return (0, s.reactElement)("small", (null == n ? true : n.key) != null ? "".concat(n.key) : null, {
         children: r,
-        className: n.formatInline ? M.inlineFormat : null
+        className: n.formatInline ? k.inlineFormat : null
       })
     }
   },

@@ -91,19 +91,19 @@ class g extends Chunk928801.Z {
       guildId: n,
       channelId: r,
       selfMute: i,
-      selfDeaf: a,
-      selfVideo: o,
+      selfDeaf: o,
+      selfVideo: a,
       preferredRegion: s,
       preferredRegions: l,
       videoStreamParameters: c,
       flags: u = 0
     } = e;
-    o && (null == (t = d.Z.getChannel(r)) ? true : t.type) === h.d4z.GUILD_STAGE_VOICE ? this.socket.voiceStateUpdate({
+    a && (null == (t = d.Z.getChannel(r)) ? true : t.type) === h.d4z.GUILD_STAGE_VOICE ? this.socket.voiceStateUpdate({
       guildId: n,
       channelId: r,
       selfMute: i,
-      selfDeaf: a,
-      selfVideo: o,
+      selfDeaf: o,
+      selfVideo: a,
       preferredRegion: s,
       preferredRegions: l,
       videoStreamParameters: c,
@@ -112,8 +112,8 @@ class g extends Chunk928801.Z {
       guildId: n,
       channelId: r,
       selfMute: i,
-      selfDeaf: a,
-      selfVideo: o,
+      selfDeaf: o,
+      selfVideo: a,
       preferredRegion: s,
       preferredRegions: l,
       flags: u

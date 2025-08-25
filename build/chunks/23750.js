@@ -58,8 +58,8 @@ class p extends Chunk81825.Z {
     return (0, l.yE)(this.flags, e)
   }
   constructor(e) {
-    var t, n, r, i, a, o, s, l, d, f, _, p, h;
-    super(), u(this, "type", true), u(this, "content", true), u(this, "attachments", true), u(this, "embeds", true), u(this, "timestamp", true), u(this, "editedTimestamp", true), u(this, "flags", true), u(this, "components", true), u(this, "codedLinks", true), u(this, "stickers", true), u(this, "stickerItems", true), u(this, "soundboardSounds", true), this.type = null != (t = e.type) ? t : c.uaV.DEFAULT, this.content = null != (n = e.content) ? n : "", this.attachments = null != (r = e.attachments) ? r : [], this.embeds = null != (i = e.embeds) ? i : [], this.timestamp = null != (a = e.timestamp) ? a : new Date, this.editedTimestamp = null != (o = e.editedTimestamp) ? o : null, this.flags = null != (s = e.flags) ? s : 0, this.components = null != (l = e.components) ? l : [], this.codedLinks = null != (d = e.codedLinks) ? d : [], this.stickers = null != (f = e.stickers) ? f : [], this.stickerItems = null != (p = null != (_ = e.sticker_items) ? _ : e.stickerItems) ? p : [], this.soundboardSounds = null != (h = e.soundboard_sounds) ? h : e.soundboardSounds
+    var t, n, r, i, o, a, s, l, d, f, _, p, h;
+    super(), u(this, "type", true), u(this, "content", true), u(this, "attachments", true), u(this, "embeds", true), u(this, "timestamp", true), u(this, "editedTimestamp", true), u(this, "flags", true), u(this, "components", true), u(this, "codedLinks", true), u(this, "stickers", true), u(this, "stickerItems", true), u(this, "soundboardSounds", true), this.type = null != (t = e.type) ? t : c.uaV.DEFAULT, this.content = null != (n = e.content) ? n : "", this.attachments = null != (r = e.attachments) ? r : [], this.embeds = null != (i = e.embeds) ? i : [], this.timestamp = null != (o = e.timestamp) ? o : new Date, this.editedTimestamp = null != (a = e.editedTimestamp) ? a : null, this.flags = null != (s = e.flags) ? s : 0, this.components = null != (l = e.components) ? l : [], this.codedLinks = null != (d = e.codedLinks) ? d : [], this.stickers = null != (f = e.stickers) ? f : [], this.stickerItems = null != (p = null != (_ = e.sticker_items) ? _ : e.stickerItems) ? p : [], this.soundboardSounds = null != (h = e.soundboard_sounds) ? h : e.soundboardSounds
   }
 }
 class h extends Chunk81825.Z {
@@ -89,46 +89,46 @@ class m extends p {
   addReaction(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
       n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [],
-      r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : o.O.NORMAL,
+      r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : a.O.NORMAL,
       i = false,
-      a = this.reactions.map((a, l) => {
-        if ((0, s.ir)(a.emoji, e))
-          if (i = l, r === o.O.BURST) {
-            if (t && a.me) return a;
-            let e = t && a.me_burst ? a.burst_count : a.burst_count + 1,
-              r = null != a.burst_colors && a.burst_colors.length > 0 ? a.burst_colors : n;
-            a = _(d({}, a), {
-              me_burst: !!t || a.me_burst,
+      o = this.reactions.map((o, l) => {
+        if ((0, s.ir)(o.emoji, e))
+          if (i = l, r === a.O.BURST) {
+            if (t && o.me) return o;
+            let e = t && o.me_burst ? o.burst_count : o.burst_count + 1,
+              r = null != o.burst_colors && o.burst_colors.length > 0 ? o.burst_colors : n;
+            o = _(d({}, o), {
+              me_burst: !!t || o.me_burst,
               burst_count: e,
-              count_details: _(d({}, a.count_details), {
+              count_details: _(d({}, o.count_details), {
                 burst: e
               }),
               burst_colors: r
             })
-          } else if (r === o.O.VOTE) {
+          } else if (r === a.O.VOTE) {
           var c, u;
-          let e = null != (u = null == (c = a.count_details) ? true : c.vote) ? u : 0,
-            n = t && a.me_vote ? e : e + 1;
-          a = _(d({}, a), {
-            count_details: _(d({}, a.count_details), {
+          let e = null != (u = null == (c = o.count_details) ? true : c.vote) ? u : 0,
+            n = t && o.me_vote ? e : e + 1;
+          o = _(d({}, o), {
+            count_details: _(d({}, o.count_details), {
               vote: n
             }),
-            me_vote: !!t || a.me_vote
+            me_vote: !!t || o.me_vote
           })
         } else {
-          if (t && a.me_burst) return a;
-          let e = t && a.me ? a.count : a.count + 1;
-          a = _(d({}, a), {
+          if (t && o.me_burst) return o;
+          let e = t && o.me ? o.count : o.count + 1;
+          o = _(d({}, o), {
             count: e,
-            count_details: _(d({}, a.count_details), {
+            count_details: _(d({}, o.count_details), {
               normal: e
             }),
-            me: !!t || a.me
+            me: !!t || o.me
           })
         }
-        return a
+        return o
       });
-    return false === i && (r === o.O.BURST ? a.push({
+    return false === i && (r === a.O.BURST ? o.push({
       emoji: e,
       me: false,
       me_burst: t,
@@ -139,7 +139,7 @@ class m extends p {
       },
       burst_count: 1,
       burst_colors: n
-    }) : r === o.O.VOTE ? a.push({
+    }) : r === a.O.VOTE ? o.push({
       emoji: e,
       me: false,
       me_burst: false,
@@ -152,7 +152,7 @@ class m extends p {
       },
       burst_count: 0,
       burst_colors: []
-    }) : a.push({
+    }) : o.push({
       emoji: e,
       me: t,
       me_burst: false,
@@ -163,49 +163,49 @@ class m extends p {
       },
       burst_count: 0,
       burst_colors: []
-    })), this.set("reactions", a)
+    })), this.set("reactions", o)
   }
   addReactionBatch(e, t) {
     return e.reduce((e, n) => {
       let {
         users: r,
         emoji: i,
-        reactionType: a
+        reactionType: o
       } = n;
-      return r.reduce((e, n) => e.addReaction(i, n === t, [], a), e)
+      return r.reduce((e, n) => e.addReaction(i, n === t, [], o), e)
     }, this)
   }
   removeReaction(e) {
     var t, n, r, i;
-    let a = arguments.length > 1 && true !== arguments[1] && arguments[1],
-      l = arguments.length > 2 && true !== arguments[2] ? arguments[2] : o.O.NORMAL,
+    let o = arguments.length > 1 && true !== arguments[1] && arguments[1],
+      l = arguments.length > 2 && true !== arguments[2] ? arguments[2] : a.O.NORMAL,
       c = false,
       u = this.reactions.map((t, n) => {
         if ((0, s.ir)(t.emoji, e)) {
-          if (l === o.O.BURST) {
-            let e = a && !t.me_burst ? t.burst_count : t.burst_count - 1;
+          if (l === a.O.BURST) {
+            let e = o && !t.me_burst ? t.burst_count : t.burst_count - 1;
             t = _(d({}, t), {
               burst_count: e,
-              me_burst: !a && t.me_burst,
+              me_burst: !o && t.me_burst,
               count_details: _(d({}, t.count_details), {
                 burst: e
               })
             })
-          } else if (l === o.O.VOTE) {
+          } else if (l === a.O.VOTE) {
             var r, i;
             let e = null != (i = null == (r = t.count_details) ? true : r.vote) ? i : 0,
-              n = a && !t.me_vote ? e : e - 1;
+              n = o && !t.me_vote ? e : e - 1;
             t = _(d({}, t), {
               count_details: _(d({}, t.count_details), {
                 vote: n
               }),
-              me_vote: !a && t.me_vote
+              me_vote: !o && t.me_vote
             })
           } else {
-            let e = a && !t.me ? t.count : t.count - 1;
+            let e = o && !t.me ? t.count : t.count - 1;
             t = _(d({}, t), {
               count: e,
-              me: !a && t.me,
+              me: !o && t.me,
               count_details: _(d({}, t.count_details), {
                 normal: e
               })
@@ -247,8 +247,8 @@ class m extends p {
   canDeleteOwnMessage(e) {
     var t, n, i;
     if (this.author.id === e) returntrue;
-    let a = null != (i = null == (t = this.interactionMetadata) ? true : t.authorizing_integration_owners) ? i : {};
-    return (null == (n = this.interactionMetadata) ? true : n.user.id) === e && 1 === Object.keys(a).length && r.Y.USER_INSTALL in a
+    let o = null != (i = null == (t = this.interactionMetadata) ? true : t.authorizing_integration_owners) ? i : {};
+    return (null == (n = this.interactionMetadata) ? true : n.user.id) === e && 1 === Object.keys(o).length && r.Y.USER_INSTALL in o
   }
   toJS() {
     return _(d({}, this), {

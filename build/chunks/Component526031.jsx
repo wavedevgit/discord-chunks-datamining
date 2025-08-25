@@ -77,13 +77,13 @@ function b(e) {
   };
   return (0, r.jsx)(u.Z, {
     hideDismissButton: true,
-    dismissibleContent: a.z.CUSTOM_STATUS_PROMPTS_COACHMARK,
+    dismissibleContent: o.z.CUSTOM_STATUS_PROMPTS_COACHMARK,
     tryItText: (0, r.jsx)(s.Text, {
       variant: "text-xs/semibold",
       color: "always-white",
       children: _.intl.string(_.t.RzWDqa)
     }),
-    tryItButtonColor: o.Tt.BRAND,
+    tryItButtonColor: a.Tt.BRAND,
     onTryFeature: b,
     header: (0, r.jsx)(s.X6q, {
       variant: "heading-sm/bold",
@@ -114,8 +114,8 @@ function y(e) {
     children: t,
     markAsDismissed: n,
     targetElementRef: i,
-    onTryFeature: a,
-    positionKey: o
+    onTryFeature: o,
+    positionKey: a
   } = e;
   return (0, r.jsx)(s.yRy, {
     targetElementRef: i,
@@ -124,10 +124,10 @@ function y(e) {
     align: "center",
     shouldShow: true,
     animation: s.yRy.Animation.TRANSLATE,
-    positionKey: o,
+    positionKey: a,
     renderPopout: () => (0, r.jsx)(b, {
       markAsDismissed: n,
-      onTryFeature: a
+      onTryFeature: o
     }),
     children: t
   })

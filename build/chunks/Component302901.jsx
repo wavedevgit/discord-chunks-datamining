@@ -9,7 +9,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
   l = require.n(Chunk512722),
   Chunk603113 = require("./603113.js"),
@@ -69,11 +69,11 @@ let g = e => {
   let {
     layerContext: t,
     className: n
-  } = e, [, a] = i.useContext(t), s = i.useCallback(e => {
-    a(e)
-  }, [a]);
+  } = e, [, o] = i.useContext(t), s = i.useCallback(e => {
+    o(e)
+  }, [o]);
   return (0, r.jsx)("div", {
-    className: o()(h, n),
+    className: a()(h, n),
     ref: s
   })
 };

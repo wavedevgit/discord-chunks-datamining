@@ -8,7 +8,7 @@ var Chunk979651 = require("./979651.js"),
   Chunk938475 = require("./938475.js"),
   Chunk65154 = require("./65154.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -18,7 +18,7 @@ function o(e, t, n) {
 }
 class s {
   updateVoiceStates(e, t) {
-    t === this.channelId ? (this.totalParticipants.add(e), this.maxVoiceStateCount = Math.max(i.ZP.countVoiceStatesForChannel(t), this.maxVoiceStateCount)) : (null == t && e in this.totalSpeakers && (this.totalSpeakers[e] = a.Dg.NONE), e === this.userId && null != t && this.setChannelId(t))
+    t === this.channelId ? (this.totalParticipants.add(e), this.maxVoiceStateCount = Math.max(i.ZP.countVoiceStatesForChannel(t), this.maxVoiceStateCount)) : (null == t && e in this.totalSpeakers && (this.totalSpeakers[e] = o.Dg.NONE), e === this.userId && null != t && this.setChannelId(t))
   }
   getStats() {
     return {
@@ -31,17 +31,17 @@ class s {
     }
   }
   setSpeaking(e, t) {
-    if (t !== a.Dg.NONE) {
+    if (t !== o.Dg.NONE) {
       let n = r.Z.getVoiceStateForChannel(this.channelId, e);
       if (null != n && !n.selfMute && !n.mute) {
         this.totalSpeakers[e] = t;
-        let n = Object.values(this.totalSpeakers).filter(e => e !== a.Dg.NONE).length;
+        let n = Object.values(this.totalSpeakers).filter(e => e !== o.Dg.NONE).length;
         this.maxSpeakerCount = Math.max(this.maxSpeakerCount, n)
       }
-    } else e in this.totalSpeakers && (this.totalSpeakers[e] = a.Dg.NONE);
+    } else e in this.totalSpeakers && (this.totalSpeakers[e] = o.Dg.NONE);
     if (this.userId === e) {
       if (t === this.speaking) return;
-      if (t !== a.Dg.NONE) {
+      if (t !== o.Dg.NONE) {
         let e = Object.values(r.Z.getVoiceStatesForChannel(this.channelId)).filter(e => !e.selfDeaf && !e.deaf);
         e.forEach(e => this.totalListeners.add(e.userId)), this.maxListenerCount = Math.max(e.length, this.maxListenerCount)
       }
@@ -52,9 +52,9 @@ class s {
     if (e === this.channelId) return;
     this.channelId = e, this.totalParticipants = new Set([this.userId]);
     let t = Object.keys(r.Z.getVoiceStatesForChannel(this.channelId));
-    t.forEach(e => this.totalParticipants.add(e)), this.maxVoiceStateCount = t.length, this.speaking = a.Dg.NONE, this.maxListenerCount = 0, this.totalListeners = new Set, this.maxSpeakerCount = 0, this.totalSpeakers = {}
+    t.forEach(e => this.totalParticipants.add(e)), this.maxVoiceStateCount = t.length, this.speaking = o.Dg.NONE, this.maxListenerCount = 0, this.totalListeners = new Set, this.maxSpeakerCount = 0, this.totalSpeakers = {}
   }
   constructor(e, t) {
-    o(this, "userId", true), o(this, "channelId", true), o(this, "maxVoiceStateCount", 1), o(this, "totalParticipants", true), o(this, "speaking", a.Dg.NONE), o(this, "maxListenerCount", 0), o(this, "totalListeners", true), o(this, "maxSpeakerCount", 0), o(this, "totalSpeakers", true), this.userId = e, this.setChannelId(t)
+    a(this, "userId", true), a(this, "channelId", true), a(this, "maxVoiceStateCount", 1), a(this, "totalParticipants", true), a(this, "speaking", o.Dg.NONE), a(this, "maxListenerCount", 0), a(this, "totalListeners", true), a(this, "maxSpeakerCount", 0), a(this, "totalSpeakers", true), this.userId = e, this.setChannelId(t)
   }
 }

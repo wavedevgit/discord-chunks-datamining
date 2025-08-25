@@ -3,7 +3,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", {
   value: true
-}), exports.markdownFormatter = true, exports.formatToMarkdownString = o;
+}), exports.markdownFormatter = true, exports.formatToMarkdownString = a;
 let Chunk14653 = require("./14653.js"),
   i = {
     $b: e => "**" + e.join("") + "**",
@@ -13,7 +13,7 @@ let Chunk14653 = require("./14653.js"),
     $link: (e, t, [n]) => "[" + e.join("") + "](" + n + ")",
     $p: e => e.join("") + "\n\n"
   };
-class a extends Chunk14653.StringBuilder {
+class o extends Chunk14653.StringBuilder {
   constructor() {
     super(...arguments), this.result = ""
   }
@@ -22,10 +22,10 @@ class a extends Chunk14653.StringBuilder {
   }
 }
 
-function o(e, t, n = a) {
+function a(e, t, n = o) {
   return "string" == typeof e ? e : this.bindFormatValues(n, e, t)[0]
 }
 exports.markdownFormatter = {
-  format: o,
-  builder: a
+  format: a,
+  builder: o
 }

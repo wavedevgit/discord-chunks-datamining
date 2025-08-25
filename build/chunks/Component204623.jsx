@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk525654 = require("./525654.js"),
-  o = require.n(Chunk525654),
+  a = require.n(Chunk525654),
   Chunk352206 = require("./352206.js"),
   Chunk442837 = require("./442837.js"),
   Chunk336317 = require("./336317.js"),
@@ -45,7 +45,7 @@ let T = Chunk442837.ZP.connectStores([Chunk451478.Z], () => ({
 class S extends Chunk647438.PureComponent {
   getPlatform() {
     var e;
-    let t = null == (e = o().os) ? true : module.family;
+    let t = null == (e = a().os) ? true : module.family;
     return null != exports && /^win/i.test(exports) ? Chunk358085.PlatformTypes.WINDOWS : null != exports && /darwin|os x/i.test(exports) ? Chunk358085.PlatformTypes.OSX : Chunk358085.PlatformTypes.LINUX
   }
   componentDidMount() {

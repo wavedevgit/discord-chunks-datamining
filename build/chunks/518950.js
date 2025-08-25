@@ -29,7 +29,7 @@ function u(e) {
   } = (0, c.Z)({
     user: m,
     guildId: n,
-    size: (0, a.pxk)(u),
+    size: (0, o.pxk)(u),
     showPending: d,
     animateOnHover: _,
     avatarOverride: h
@@ -40,7 +40,7 @@ function u(e) {
   } = (0, s.Z)({
     user: m,
     guildId: null != n ? n : true,
-    size: (0, o.y9)(u),
+    size: (0, a.y9)(u),
     showPending: d,
     onlyAnimateOnHover: _,
     avatarDecorationOverride: p,

@@ -2,7 +2,7 @@
 /** chunk id: 662896, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => o
+  Z: () => a
 }), require("./388685.js");
 var Chunk287328 = require("./287328.js");
 
@@ -14,7 +14,7 @@ function i(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class a {
+class o {
   async getAll() {
     let e = Chunk287328.Z.guildsRequiringDeletedIdsSync();
     return null == module ? new Set : new Set((await module.getMany()).map(e => e.id))
@@ -56,4 +56,4 @@ class a {
     })
   }
 }
-let o = new a
+let a = new o

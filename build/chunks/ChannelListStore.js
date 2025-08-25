@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => eu
 }), require("./388685.js");
 var r, Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk317381 = require("./317381.js"),
@@ -69,16 +69,16 @@ function j(e) {
   let {
     channels: t
   } = e, n = false;
-  return a()(t).map(e => e.guild_id).uniq().forEach(e => {
+  return o()(t).map(e => e.guild_id).uniq().forEach(e => {
     w.clearGuildId(e) && (n = true)
   }), n
 }
 
-function k(e) {
+function M(e) {
   return w.nonPositionalChannelIdUpdate(e.id)
 }
 
-function M(e) {
+function k(e) {
   return w.clearGuildId(e.guildId)
 }
 
@@ -155,7 +155,7 @@ function K(e) {
   let {
     channels: t
   } = e, n = false;
-  return a()(t).map(e => {
+  return o()(t).map(e => {
     var t;
     return null == (t = g.Z.getChannel(e.channelId)) ? true : t.guild_id
   }).filter(T.lm).uniq().forEach(e => {
@@ -192,7 +192,7 @@ function J() {
   let e = Chunk944486.Z.getChannelId(),
     t = Chunk944486.Z.getVoiceChannelId(),
     n = R !== module || P !== exports;
-  return !!require && (a()([R, P, module, exports]).uniq().forEach(e => {
+  return !!require && (o()([R, P, module, exports]).uniq().forEach(e => {
     null != e && w.nonPositionalChannelIdUpdate(e) && (n = true)
   }), R = module, P = exports, true)
 }
@@ -238,14 +238,14 @@ function ei() {
   return w.updateSubtitles()
 }
 
-function ea(e) {
+function eo(e) {
   let {
     guildId: t
   } = e;
   return w.updateSubtitles(t)
 }
 
-function eo(e) {
+function ea(e) {
   let {
     guildScheduledEvent: t
   } = e;
@@ -320,7 +320,7 @@ let eu = new ec(Chunk570140.Z, {
   CHANNEL_MUTE_EXPIRED: B,
   CHANNEL_RTC_UPDATE_CHAT_OPEN: Y,
   CHANNEL_SELECT: J,
-  CHANNEL_STATUSES: M,
+  CHANNEL_STATUSES: k,
   CHANNEL_UPDATES: j,
   CONNECTION_OPEN_SUPPLEMENTAL: ei,
   CONNECTION_OPEN: D,
@@ -333,7 +333,7 @@ let eu = new ec(Chunk570140.Z, {
   EMBEDDED_ACTIVITY_LAUNCH_START: er,
   EMBEDDED_ACTIVITY_LAUNCH_SUCCESS: ei,
   ENABLE_AUTOMATIC_ACK: Y,
-  FETCH_GUILD_EVENTS_FOR_GUILD: ea,
+  FETCH_GUILD_EVENTS_FOR_GUILD: eo,
   GAMES_DATABASE_FETCH_FAIL: ei,
   GAMES_DATABASE_FETCH: ei,
   GAMES_DATABASE_UPDATE: ei,
@@ -347,9 +347,9 @@ let eu = new ec(Chunk570140.Z, {
   GUILD_ROLE_SUBSCRIPTIONS_FETCH_RESTRICTIONS_FAILURE: B,
   GUILD_ROLE_SUBSCRIPTIONS_FETCH_RESTRICTIONS_SUCCESS: B,
   GUILD_ROLE_UPDATE: B,
-  GUILD_SCHEDULED_EVENT_CREATE: eo,
-  GUILD_SCHEDULED_EVENT_DELETE: eo,
-  GUILD_SCHEDULED_EVENT_UPDATE: eo,
+  GUILD_SCHEDULED_EVENT_CREATE: ea,
+  GUILD_SCHEDULED_EVENT_DELETE: ea,
+  GUILD_SCHEDULED_EVENT_UPDATE: ea,
   GUILD_TOGGLE_COLLAPSE_MUTED: B,
   GUILD_UPDATE: x,
   IMPERSONATE_STOP: B,
@@ -384,7 +384,7 @@ let eu = new ec(Chunk570140.Z, {
   VOICE_CATEGORY_COLLAPSE: et,
   VOICE_CATEGORY_EXPAND: et,
   VOICE_CHANNEL_SELECT: J,
-  VOICE_CHANNEL_STATUS_UPDATE: k,
+  VOICE_CHANNEL_STATUS_UPDATE: M,
   VOICE_STATE_UPDATES: $,
   WINDOW_FOCUS: W
 })

@@ -10,11 +10,11 @@ function i(e) {
   return "".concat(location.protocol, "//").concat(window.GLOBAL_ENV.GUILD_TEMPLATE_HOST, "/").concat(e)
 }
 
-function a() {
+function o() {
   return "".concat(location.protocol, "//").concat(window.GLOBAL_ENV.WEBAPP_ENDPOINT, "/channels/@me")
 }
 require.d(exports, {
-  Gk: () => a,
+  Gk: () => o,
   Oh: () => i,
   z0: () => r
 })

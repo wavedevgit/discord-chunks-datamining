@@ -47,21 +47,21 @@ function B(e) {
     message: t,
     snapshot: n,
     index: u
-  } = e, f = i.useMemo(() => new d.r(t, n, u), [t, n, u]), p = (0, o.e7)([N.Z, L.default, D.Z, w.Z, P.Z, _.Z], () => f.getForwardInfo(N.Z, L.default, D.Z, w.Z, P.Z, _.Z).footerInfo, [f], s.Z), h = i.useCallback(() => {
+  } = e, f = i.useMemo(() => new d.r(t, n, u), [t, n, u]), p = (0, a.e7)([N.Z, L.default, D.Z, w.Z, P.Z, _.Z], () => f.getForwardInfo(N.Z, L.default, D.Z, w.Z, P.Z, _.Z).footerInfo, [f], s.Z), h = i.useCallback(() => {
     var e, n;
     let r = N.Z.getChannel(t.channel_id),
       i = P.Z.getGuild(null == r ? true : r.guild_id),
-      a = null == (e = t.messageReference) ? true : e.channel_id,
-      o = x.Z.getCurrentlySelectedChannelId(),
+      o = null == (e = t.messageReference) ? true : e.channel_id,
+      a = x.Z.getCurrentlySelectedChannelId(),
       s = C.ZP.getCurrentSidebarChannelId(null == (n = t.messageReference) ? true : n.channel_id),
-      l = o === a && s === (null == r ? true : r.id);
-    null == r || null == i || l || null == a || (S.Z.openModReportAsSidebar({
+      l = a === o && s === (null == r ? true : r.id);
+    null == r || null == i || l || null == o || (S.Z.openModReportAsSidebar({
       channelId: r.id,
-      baseChannelId: a,
+      baseChannelId: o,
       guildId: r.guild_id
-    }), (0, T.Kh)(a), j.default.track(M.rMx.MODERATOR_REPORT_ORIGINAL_MESSAGE_LINK_CLICKED, {
+    }), (0, T.Kh)(o), j.default.track(k.rMx.MODERATOR_REPORT_ORIGINAL_MESSAGE_LINK_CLICKED, {
       moderator_report_id: t.channel_id,
-      destination_channel_id: a,
+      destination_channel_id: o,
       destination_message_id: t.id
     }))
   }, [t]);
@@ -72,7 +72,7 @@ function B(e) {
       className: G.originIcon,
       src: p.originIconUrl,
       alt: ""
-    }) : null, (0, r.jsx)(a.xv, {
+    }) : null, (0, r.jsx)(o.xv, {
       className: G.footerText,
       variant: "text-sm/medium",
       color: "none",
@@ -89,19 +89,19 @@ function Z(e, t) {
     popouts: n,
     setPopout: r
   } = (0, O.Z)(e.id, U.d$), {
-    usernameProfile: a,
-    avatarProfile: o
-  } = n, s = (0, y.XO)(e, t, a, r);
+    usernameProfile: o,
+    avatarProfile: a
+  } = n, s = (0, y.XO)(e, t, o, r);
   return {
     onClickUsername: s,
-    onClickAvatar: (0, y.R9)(o, r),
+    onClickAvatar: (0, y.R9)(a, r),
     onPopoutRequestClose: i.useCallback(() => r({
       usernameProfile: false,
       avatarProfile: false,
       referencedUsernameProfile: false
     }), [r]),
-    showUsernamePopout: a,
-    showAvatarPopout: o
+    showUsernamePopout: o,
+    showAvatarPopout: a
   }
 }
 
@@ -110,8 +110,8 @@ function F(e) {
     mergedMessageRecord: t,
     content: n,
     channel: i,
-    reportingUserId: a,
-    reportedTimestamp: o
+    reportingUserId: o,
+    reportedTimestamp: a
   } = e, s = (0, h.JZ)(t.author, i), {
     onClickUsername: l,
     onClickAvatar: c,
@@ -120,12 +120,12 @@ function F(e) {
     showAvatarPopout: f
   } = Z(t, i);
   return (0, r.jsx)(m.Z, {
-    childrenExecutedCommand: (0, r.jsx)(k.Z, {
-      reportingUserId: a,
+    childrenExecutedCommand: (0, r.jsx)(M.Z, {
+      reportingUserId: o,
       guildId: i.guild_id,
       channel: i,
       messageId: t.id,
-      reportedTimestamp: o,
+      reportedTimestamp: a,
       compact: false
     }),
     childrenHeader: (0, r.jsx)(E.ZP, {
@@ -156,7 +156,7 @@ function F(e) {
 }
 
 function V(e) {
-  var t, n, a;
+  var t, n, o;
   let {
     message: s,
     snapshot: l,
@@ -176,8 +176,8 @@ function V(e) {
     m = A.RS.useSetting(),
     g = A.NA.useSetting(),
     E = m && g,
-    b = (0, o.e7)([R.Z], () => R.Z.isDeveloper),
-    y = (0, p.A)((null != (a = h.editedTimestamp) ? a : h.timestamp).valueOf()),
+    b = (0, a.e7)([R.Z], () => R.Z.isDeveloper),
+    y = (0, p.A)((null != (o = h.editedTimestamp) ? o : h.timestamp).valueOf()),
     {
       content: O,
       hasSpoilerEmbeds: T
@@ -191,7 +191,7 @@ function V(e) {
       allowDevLinks: b,
       previewLinkTarget: true
     }),
-    S = (0, o.e7)([N.Z], () => N.Z.getChannel(s.channel_id));
+    S = (0, a.e7)([N.Z], () => N.Z.getChannel(s.channel_id));
   return null == S ? null : (0, r.jsx)("div", {
     className: G.container,
     children: (0, r.jsxs)("div", {

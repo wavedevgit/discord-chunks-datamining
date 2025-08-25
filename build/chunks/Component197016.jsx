@@ -54,8 +54,8 @@ function f(e, t) {
   if (null == e) return {};
   var n, r, i = _(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -63,8 +63,8 @@ function f(e, t) {
 function _(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -75,9 +75,9 @@ function p(e) {
     onMouseEnter: l,
     onMouseLeave: u
   } = e, _ = f(e, ["centerButton", "onClick", "onMouseEnter", "onMouseLeave"]);
-  let p = t ? o.d : o.Z,
+  let p = t ? a.d : a.Z,
     h = () => {
-      null == n || n(), a.default.disconnect()
+      null == n || n(), o.default.disconnect()
     },
     m = () => s.intl.string(s.t["6vrfgo"]),
     {

@@ -2,7 +2,7 @@
 /** chunk id: 819439, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $: () => o,
+  $: () => a,
   Q: () => s
 });
 var Chunk818083 = require("./818083.js");
@@ -10,7 +10,7 @@ let i = {
     enabled: false,
     inExperiment: false
   },
-  a = (0, Chunk818083.B)({
+  o = (0, Chunk818083.B)({
     kind: "user",
     id: "2025-08_desktop_top_level_search_v1",
     label: "Desktop Top Level Search v1",
@@ -32,13 +32,13 @@ let i = {
     }]
   });
 
-function o(e) {
+function a(e) {
   let {
     location: t,
     autoTrackExposure: n = true
   } = e, {
     enabled: r
-  } = a.useExperiment({
+  } = o.useExperiment({
     location: t
   }, {
     autoTrackExposure: n
@@ -52,7 +52,7 @@ function s(e) {
     autoTrackExposure: n = true
   } = e, {
     enabled: r
-  } = a.getCurrentConfig({
+  } = o.getCurrentConfig({
     location: t
   }, {
     autoTrackExposure: n

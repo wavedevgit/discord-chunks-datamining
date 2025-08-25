@@ -15,7 +15,7 @@ var Chunk244287 = require("./244287.js"),
 function u(e) {
   if ((0, i.Z)(e) === l.d7) return [];
   var t = (0, r.Z)(e);
-  return [(0, a.Z)(e), t, (0, a.Z)(t)]
+  return [(0, o.Z)(e), t, (0, o.Z)(t)]
 }
 let d = {
   name: "flip",
@@ -24,8 +24,8 @@ let d = {
   fn: function(e) {
     var t = e.state,
       n = e.options,
-      a = e.name;
-    if (!t.modifiersData[a]._skip) {
+      o = e.name;
+    if (!t.modifiersData[o]._skip) {
       for (var d = n.mainAxis, f = true === d || d, _ = n.altAxis, p = true === _ || _, h = n.fallbackPlacements, m = n.padding, g = n.boundary, E = n.rootBoundary, b = n.altBoundary, y = n.flipVariations, O = true === y || y, v = n.allowedAutoPlacements, I = t.options.placement, T = (0, i.Z)(I), S = T === I, A = h || (S || !O ? [(0, r.Z)(I)] : u(I)), C = [I].concat(A).reduce(function(e, n) {
           return e.concat((0, i.Z)(n) === l.d7 ? (0, s.Z)(t, {
             placement: n,
@@ -38,17 +38,17 @@ let d = {
         }, []), N = t.rects.reference, R = t.rects.popper, P = new Map, w = true, D = C[0], x = 0; x < C.length; x++) {
         var L = C[x],
           j = (0, i.Z)(L),
-          k = (0, c.Z)(L) === l.BL,
-          M = [l.we, l.I].indexOf(j) >= 0,
-          U = M ? "width" : "height",
-          G = (0, o.Z)(t, {
+          M = (0, c.Z)(L) === l.BL,
+          k = [l.we, l.I].indexOf(j) >= 0,
+          U = k ? "width" : "height",
+          G = (0, a.Z)(t, {
             placement: L,
             boundary: g,
             rootBoundary: E,
             altBoundary: b,
             padding: m
           }),
-          B = M ? k ? l.F2 : l.t$ : k ? l.I : l.we;
+          B = k ? M ? l.F2 : l.t$ : M ? l.I : l.we;
         N[U] > R[U] && (B = (0, r.Z)(B));
         var Z = (0, r.Z)(B),
           F = [];
@@ -70,7 +70,7 @@ let d = {
             });
             if (t) return D = t, "break"
           }, Y = V; Y > 0 && "break" !== H(Y); Y--);
-      t.placement !== D && (t.modifiersData[a]._skip = true, t.placement = D, t.reset = true)
+      t.placement !== D && (t.modifiersData[o]._skip = true, t.placement = D, t.reset = true)
     }
   },
   requiresIfExists: ["offset"],

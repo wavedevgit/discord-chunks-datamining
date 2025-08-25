@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   o: () => i,
-  u: () => a
+  u: () => o
 });
 var Chunk570140 = require("./570140.js");
 
@@ -14,7 +14,7 @@ function i(e) {
   })
 }
 
-function a(e) {
+function o(e) {
   r.Z.dispatch({
     type: "MASKED_LINK_ADD_TRUSTED_PROTOCOL",
     url: e

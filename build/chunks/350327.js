@@ -61,7 +61,7 @@ async function m(e, t) {
   let f = null == (n = l.default.getCurrentUser()) ? true : n.id;
   if (null == f) return;
   let _ = s.dN.getSetting();
-  null != e.bio && _ && (e.bio = o.ZP.parse(true, e.bio).content);
+  null != e.bio && _ && (e.bio = a.ZP.parse(true, e.bio).content);
   try {
     i.Z.dispatch({
       type: "USER_PROFILE_UPDATE_START",
@@ -82,7 +82,7 @@ async function m(e, t) {
         profileEffectExpiresAt: t
       }, n.body))
     } else {
-      let e = new a.Hx(n);
+      let e = new o.Hx(n);
       i.Z.dispatch({
         type: "USER_PROFILE_UPDATE_FAILURE",
         errors: n.body,
@@ -91,7 +91,7 @@ async function m(e, t) {
     }
     return n
   } catch (t) {
-    let e = new a.Hx(t);
+    let e = new o.Hx(t);
     return i.Z.dispatch({
       type: "USER_PROFILE_UPDATE_FAILURE",
       errors: {},

@@ -10,8 +10,8 @@ var Chunk442837 = require("./442837.js"),
   Chunk915525 = require("./915525.js");
 
 function s(e) {
-  return (0, r.e7)([o.Z, i.default], () => {
+  return (0, r.e7)([a.Z, i.default], () => {
     var t;
-    if (i.default.getId() === e) return null == (t = o.Z.getActiveErrorsOfType(a.u.CAMERA_SEND_LOW_FPS)[0]) ? true : t.type
+    if (i.default.getId() === e) return null == (t = a.Z.getActiveErrorsOfType(o.u.CAMERA_SEND_LOW_FPS)[0]) ? true : t.type
   })
 }

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk489719 = require("./489719.js");
 
@@ -59,12 +59,12 @@ function f(e) {
   } = e, u = e => {
     e.preventDefault(), e.stopPropagation(), i(e)
   };
-  return (0, r.jsx)(o.ua7, {
+  return (0, r.jsx)(a.ua7, {
     text: n,
-    children: e => (0, r.jsx)(o.P3F, d(c({}, e), {
+    children: e => (0, r.jsx)(a.P3F, d(c({}, e), {
       "aria-label": n,
       onClick: u,
-      className: a()(s.actionButton, l),
+      className: o()(s.actionButton, l),
       children: (0, r.jsx)(t, {
         className: s.icon,
         color: "currentColor"

@@ -18,7 +18,7 @@ function s(e) {
     applicationUserId: n,
     applicationStatus: i
   } = e;
-  a.default.track(o.rMx.GUILD_MEMBER_APPLICATION_VIEWED, {
+  o.default.track(a.rMx.GUILD_MEMBER_APPLICATION_VIEWED, {
     guild_id: t,
     viewing_user_id: r.default.getId(),
     application_user_id: n,
@@ -32,7 +32,7 @@ function l(e) {
     actionType: n,
     applicationUserId: i
   } = e;
-  a.default.track(o.rMx.GUILD_MEMBER_APPLICATION_ACTION, {
+  o.default.track(a.rMx.GUILD_MEMBER_APPLICATION_ACTION, {
     guild_id: t,
     action_type: n,
     application_user_id: i,
@@ -49,7 +49,7 @@ function c(e) {
     joinRequestStatus: c,
     joinRequestUserId: u
   } = e, d = r.default.getId(), f = (null == (t = i.ZP.getMember(n, d)) ? true : t.joinedAt) != null;
-  a.default.track(o.rMx.GUILD_MEMBER_APPLICATION_INTERVIEW_MESSAGE, {
+  o.default.track(a.rMx.GUILD_MEMBER_APPLICATION_INTERVIEW_MESSAGE, {
     guild_id: n,
     channel_id: l,
     message_id: s,
@@ -61,7 +61,7 @@ function c(e) {
 }
 
 function u(e) {
-  a.default.track(o.rMx.MEMBER_VERIFICATION_APPLICATION_VIEWED, {
+  o.default.track(a.rMx.MEMBER_VERIFICATION_APPLICATION_VIEWED, {
     guild_id: e
   })
 }

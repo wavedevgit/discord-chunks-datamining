@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk963614 = require("./963614.js"),
@@ -30,7 +30,7 @@ var Chunk120356 = require("./120356.js"),
 function T(e) {
   let {
     isLoading: t
-  } = e, n = (0, o.e7)([g.Z], () => g.Z.getConnectedFrame()), i = (0, o.e7)([g.Z], () => g.Z.getFrameLayoutMode()), u = (0, f.q)(null == n ? true : n.applicationId), d = (0, o.e7)([h.Z], () => h.Z.isFrameHidden()), T = i === b.U.PIP && !d, S = T && null != h.Z.pipVideoWindow && null != h.Z.pipFrameWindow;
+  } = e, n = (0, a.e7)([g.Z], () => g.Z.getConnectedFrame()), i = (0, a.e7)([g.Z], () => g.Z.getFrameLayoutMode()), u = (0, f.q)(null == n ? true : n.applicationId), d = (0, a.e7)([h.Z], () => h.Z.isFrameHidden()), T = i === b.U.PIP && !d, S = T && null != h.Z.pipVideoWindow && null != h.Z.pipFrameWindow;
   if (null == n || null == u) return null;
   let A = {
     instance_id: "example-cl-instance",
@@ -41,7 +41,7 @@ function T(e) {
     let {
       onActive: t,
       onForceIdle: i,
-      idle: a
+      idle: o
     } = e;
     return T && null != n ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
@@ -50,7 +50,7 @@ function T(e) {
         onMouseLeave: i,
         className: O.clickShield
       }), (0, r.jsx)(E.F, {
-        idle: a,
+        idle: o,
         onMouseMove: t,
         onMouseDown: t,
         onMouseLeave: i,
@@ -69,11 +69,11 @@ function T(e) {
     children: e => {
       let {
         idle: i,
-        onActive: o,
+        onActive: a,
         onForceIdle: f
       } = e;
       return (0, r.jsxs)(_.Z, {
-        className: a()(O.root, {
+        className: o()(O.root, {
           [O.pipMode]: T,
           [I.elevationHigh]: T,
           [v.idle]: i,
@@ -85,12 +85,12 @@ function T(e) {
         children: [(0, r.jsx)("div", {
           className: "theme-dark",
           children: C({
-            onActive: o,
+            onActive: a,
             onForceIdle: f,
             idle: i
           })
         }), t ? (0, r.jsx)(s.$jN, {
-          className: a()(O.iframe, {
+          className: o()(O.iframe, {
             [O.pipModeShort]: T
           })
         }) : (0, r.jsx)(c.J, {
@@ -98,7 +98,7 @@ function T(e) {
           referrerPolicy: "origin",
           url: n.url,
           queryParams: A,
-          className: a()(O.iframe, {
+          className: o()(O.iframe, {
             [O.pipModeShort]: T,
             [O.pipNonInteractive]: T
           }),

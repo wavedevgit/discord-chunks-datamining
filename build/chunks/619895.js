@@ -93,7 +93,7 @@ function m(e) {
           t[e] = r[e]
         })
       }), Object.keys(t).map(t => {
-        var n, r, i, a, l, c, u, d, _, h, m, g;
+        var n, r, i, o, l, c, u, d, _, h, m, g;
         let E, b, y = e.find(e => {
           var n;
           return null != (E = null == (n = e.commands) ? true : n.find(e => e.id === t))
@@ -121,12 +121,12 @@ function m(e) {
           command: p(f({}, v), {
             displayName: v.displayName.split(/[_ ]/).map(e => e.charAt(0).toUpperCase() + e.slice(1)).join(" ")
           }),
-          imageOption: null == (l = y.command_metadata) || null == (a = l[t]) ? true : a.imageOption,
+          imageOption: null == (l = y.command_metadata) || null == (o = l[t]) ? true : o.imageOption,
           overrideSendCommand: b,
           overrideSendCommandInfo: null == (u = y.command_metadata) || null == (c = u[t]) ? true : c.overrideSendCommandInfo,
           onlyAllowEdit: null == (_ = y.command_metadata) || null == (d = _[t]) ? true : d.onlyAllowEdit,
           section: {
-            type: o.Qi.APPLICATION,
+            type: a.Qi.APPLICATION,
             id: O.id,
             icon: O.icon,
             name: null != (g = null == O || null == (h = O.bot) ? true : h.username) ? g : O.name,
@@ -141,20 +141,20 @@ function m(e) {
 function g(e) {
   let {
     channelId: t
-  } = e, n = i.I.CONTEXTUAL_IMAGE, o = r.useMemo(() => ({
+  } = e, n = i.I.CONTEXTUAL_IMAGE, a = r.useMemo(() => ({
     channelId: t,
     location: n,
     withCommands: true
   }), [t, n]);
   r.useEffect(() => {
-    (0, c.a)(o)
-  }, [o]);
+    (0, c.a)(a)
+  }, [a]);
   let {
     fetchState: s,
     recommendationsSections: l
-  } = (0, a.cj)([u.ZP], () => ({
-    fetchState: u.ZP.getFetchState(o),
-    recommendationsSections: u.ZP.getRecommendations(o)
+  } = (0, o.cj)([u.ZP], () => ({
+    fetchState: u.ZP.getFetchState(a),
+    recommendationsSections: u.ZP.getRecommendations(a)
   }));
   return {
     fetchState: s,

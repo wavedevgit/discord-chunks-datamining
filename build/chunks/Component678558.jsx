@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -68,8 +68,8 @@ function C(e, t) {
   if (null == e) return {};
   var n, r, i = N(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -77,15 +77,15 @@ function C(e, t) {
 function N(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let R = e => {
   let {
     analyticsLocation: t,
     analyticsSourceLocation: n,
-    guild: a,
+    guild: o,
     buttonText: I,
     targetBoostedGuildTier: S,
     onClose: N = () => {},
@@ -96,8 +96,8 @@ let R = e => {
     withHighlight: x = false,
     icon: L,
     intent: j
-  } = e, k = C(e, ["analyticsLocation", "analyticsSourceLocation", "guild", "buttonText", "targetBoostedGuildTier", "onClose", "closeLayer", "pauseAnimation", "applicationId", "handleSubscribeModalClose", "withHighlight", "icon", "intent"]), {
-    analyticsLocations: M
+  } = e, M = C(e, ["analyticsLocation", "analyticsSourceLocation", "guild", "buttonText", "targetBoostedGuildTier", "onClose", "closeLayer", "pauseAnimation", "applicationId", "handleSubscribeModalClose", "withHighlight", "icon", "intent"]), {
+    analyticsLocations: k
   } = (0, f.ZP)(), U = (0, d.bp)() === b.IlC.POPOUT, [G, B] = i.useState(false), {
     fractionalState: Z
   } = (0, _.Z)(), F = (0, s.e7)([h.Z], () => h.Z.hasFetched);
@@ -105,16 +105,16 @@ let R = e => {
     F || (0, u.X8)()
   }, [F]);
   let V = (0, g.vx)(h.Z.boostSlots),
-    H = null != S ? Math.max((0, g.KK)(a, S), 1) : 1,
+    H = null != S ? Math.max((0, g.KK)(o, S), 1) : 1,
     Y = (0, g.aq)({
       fractionalState: Z
     }),
     W = async () => {
       B(true), await (0, E.u)({
-        analyticsLocations: M,
+        analyticsLocations: k,
         analyticsLocation: t,
         analyticsSourceLocation: n,
-        guild: a,
+        guild: o,
         numberOfBoostsToAdd: H,
         onClose: N,
         closeLayer: R,
@@ -133,7 +133,7 @@ let R = e => {
       size: "xs",
       className: v.buttonIcon
     }), " ", z]
-  }), k.disabled = true), null != Y) ? (0, r.jsx)(p.Z, {
+  }), M.disabled = true), null != Y) ? (0, r.jsx)(p.Z, {
     text: Y,
     "aria-label": false,
     children: e => (0, r.jsx)(c.gtL, A(T(A(T({
@@ -142,14 +142,14 @@ let R = e => {
       disabled: true,
       size: l.zx.Sizes.SMALL,
       pauseAnimation: P
-    }), k), {
+    }), M), {
       children: z
     }))
   }) : (0, r.jsx)(c.gtL, A(T({
     "data-migration-pending": true,
     size: l.zx.Sizes.SMALL
-  }, k), {
-    className: o()(k.className, {
+  }, M), {
+    className: a()(M.className, {
       [v.buttonHighlighted]: x
     }),
     submitting: G,

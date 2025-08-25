@@ -5,6 +5,6 @@ var Chunk880181 = require("./880181.js"),
   Chunk434431 = require("./434431.js"),
   Chunk769827 = require("./769827.js");
 module.exports = function(e, t, n) {
-  var o, s;
-  return a && r(o = t.constructor) && o !== n && i(s = o.prototype) && s !== n.prototype && a(e, s), e
+  var a, s;
+  return o && r(a = t.constructor) && a !== n && i(s = a.prototype) && s !== n.prototype && o(e, s), e
 }

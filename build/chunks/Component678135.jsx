@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk680295 = require("./680295.jsx"),
   Chunk687158 = require("./687158.js"),
@@ -44,8 +44,8 @@ function v(e) {
     pendingLegacyUsernameDisabled: x,
     pendingDisplayNameStyles: L,
     avatarClassName: j,
-    containerClassName: k,
-    isTryItOutFlow: M = false,
+    containerClassName: M,
+    isTryItOutFlow: k = false,
     disabledInputs: U = false,
     hideCustomStatus: G = false,
     hideBioSection: B = false,
@@ -62,7 +62,7 @@ function v(e) {
     guildId: null == n ? true : n.id,
     avatarDecorationOverride: N,
     avatarOverride: C,
-    size: o.EFr.SIZE_80,
+    size: a.EFr.SIZE_80,
     showPending: true
   }), q = (0, _.ZT)({
     pendingProfileEffectId: D,
@@ -80,7 +80,7 @@ function v(e) {
     displayProfile: W,
     themeType: b.l.POPOUT,
     pendingThemeColors: w,
-    className: a()(O.container, k),
+    className: o()(O.container, M),
     forceShowPremium: i,
     children: [(0, r.jsxs)("div", {
       className: O.header,
@@ -91,7 +91,7 @@ function v(e) {
         canUsePremiumCustomization: i,
         pendingBanner: I,
         pendingAccentColor: T,
-        isTryItOutFlow: M,
+        isTryItOutFlow: k,
         disabledInputs: U,
         onUpsellClick: () => null == v ? true : v({
           object: E.qAy.EDIT_PROFILE_BANNER
@@ -107,7 +107,7 @@ function v(e) {
         previewPrimaryColor: Q,
         className: j,
         disabledInputs: U,
-        isTryItOutFlow: M,
+        isTryItOutFlow: k,
         onUpsellClick: () => null == v ? true : v({
           object: E.qAy.AVATAR
         })
@@ -127,7 +127,7 @@ function v(e) {
       pendingPronouns: A,
       pendingLegacyUsernameDisabled: x,
       pendingDisplayNameStyles: L,
-      isTryItOutFlow: M,
+      isTryItOutFlow: k,
       hideBioSection: B,
       pendingBadges: F,
       shouldOpenBadgeTooltip: V
@@ -142,7 +142,7 @@ function v(e) {
   return Y ? J : (0, r.jsx)("div", {
     role: "img",
     "aria-label": y.intl.string(y.t.ayozFh),
-    children: (0, r.jsx)(o.Rny, {
+    children: (0, r.jsx)(a.Rny, {
       children: J
     })
   })

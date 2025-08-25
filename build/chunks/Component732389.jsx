@@ -6,7 +6,7 @@ require.d(exports, {
 });
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk657707 = require("./657707.js"),
   Chunk793030 = require("./793030.js"),
   Chunk755721 = require("./755721.js"),
@@ -28,10 +28,10 @@ let g = e => {
     onNonTier2Subscriber: h.intl.string(h.t.IJI7ys)
   });
   return E ? null : (0, r.jsxs)("div", {
-    className: a()(m.upsellContainer, n),
+    className: o()(m.upsellContainer, n),
     children: [(0, r.jsxs)("div", {
       className: m.row,
-      children: [(0, r.jsx)(o.SrA, {
+      children: [(0, r.jsx)(a.SrA, {
         size: "md",
         color: c.JX.PREMIUM_TIER_2
       }), (0, r.jsx)(s.xv, {

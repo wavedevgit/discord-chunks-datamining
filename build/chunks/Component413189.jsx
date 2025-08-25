@@ -43,31 +43,31 @@ function T(e) {
       location: "ChatWallpaperSetSystemMessage"
     }).lightMode,
     j = (0, c.ZP)(R),
-    k = (0, s.wjy)((0, l.ZP)()),
+    M = (0, s.wjy)((0, l.ZP)()),
     {
-      chatWallpaper: M,
+      chatWallpaper: k,
       isUpdatingChatWallpaperFlag: U,
       lastSetMessageId: G
-    } = (0, a.cj)([h.Z], () => ({
+    } = (0, o.cj)([h.Z], () => ({
       chatWallpaper: h.Z.getWallpaperById(D),
       isUpdatingChatWallpaperFlag: h.Z.isUpdatingChatWallpaperFlagForChannel(P.id),
       lastSetMessageId: h.Z.getLastSetWallpaperMessageIdForChannel(P.id)
     })),
     B = (0, E.Z)(P.id),
     Z = G === R.id,
-    F = (0, a.e7)([f.default], () => f.default.getCurrentUser()),
+    F = (0, o.e7)([f.default], () => f.default.getCurrentUser()),
     V = (null == F ? true : F.id) === R.author.id,
     H = (0, u.m)(O.p9.TIER_2),
     Y = m.t(P);
   return (i.useEffect(() => {
-    null == M && h.Z.shouldFetchWallpapers && g.k9()
-  }, [M]), null == D) ? null : (A = V ? v.intl.format(v.t.z847Tk, {
-    wallpaper_name: null != (n = null == M ? true : M.label) ? n : v.intl.string(v.t["UQMV/P"])
+    null == k && h.Z.shouldFetchWallpapers && g.k9()
+  }, [k]), null == D) ? null : (A = V ? v.intl.format(v.t.z847Tk, {
+    wallpaper_name: null != (n = null == k ? true : k.label) ? n : v.intl.string(v.t["UQMV/P"])
   }) : v.intl.format(v.t["+lKndX"], {
     username: null == j ? true : j.nick,
-    wallpaper_name: null != (T = null == M ? true : M.label) ? T : v.intl.string(v.t["UQMV/P"])
-  }), x ? k || L ? Y && Z ? C = v.intl.formatToPlainString(v.t.PzTpVV, {
-    wallpaperName: null != (S = null == M ? true : M.label) ? S : v.intl.string(v.t["UQMV/P"])
+    wallpaper_name: null != (T = null == k ? true : k.label) ? T : v.intl.string(v.t["UQMV/P"])
+  }), x ? M || L ? Y && Z ? C = v.intl.formatToPlainString(v.t.PzTpVV, {
+    wallpaperName: null != (S = null == k ? true : k.label) ? S : v.intl.string(v.t["UQMV/P"])
   }) : V || H || !Z || (C = v.intl.format(v.t.JwUhHh, {
     onClickNitro: () => {
       (0, d.uL)(y.Z5c.NITRO_HOME)
@@ -76,7 +76,7 @@ function T(e) {
     learnMoreLink: _.Z.getArticleURL(y.BhN.DM_WALLPAPERS)
   }) : C = v.intl.string(v.t["6JSOu7"]), (null == B ? true : B.isViewable) && Z && !V && (N = (0, r.jsx)("div", {
     className: I.action,
-    children: (0, r.jsx)(o.z, {
+    children: (0, r.jsx)(a.z, {
       variant: "primary",
       text: v.intl.string(Y ? v.t.o6850d : v.t["/ubFp6"]),
       loading: U,

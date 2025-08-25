@@ -14,12 +14,12 @@ var Chunk745872 = require("./745872.js"),
 module.exports = l ? function() {
   var e, t, n = {
     assert: function(e) {
-      if (!n.has(e)) throw new s("Side channel does not contain " + a(e))
+      if (!n.has(e)) throw new s("Side channel does not contain " + o(e))
     },
     delete: function(n) {
       if (l && n && ("object" == typeof n || "function" == typeof n)) {
         if (e) return f(e, n)
-      } else if (o && t) return t.delete(n);
+      } else if (a && t) return t.delete(n);
       returnfalse
     },
     get: function(n) {
@@ -29,7 +29,7 @@ module.exports = l ? function() {
       return l && n && ("object" == typeof n || "function" == typeof n) && e ? d(e, n) : !!t && t.has(n)
     },
     set: function(n, r) {
-      l && n && ("object" == typeof n || "function" == typeof n) ? (e || (e = new l), u(e, n, r)) : o && (t || (t = o()), t.set(n, r))
+      l && n && ("object" == typeof n || "function" == typeof n) ? (e || (e = new l), u(e, n, r)) : a && (t || (t = a()), t.set(n, r))
     }
   };
   return require

@@ -48,7 +48,7 @@ function p(e, t) {
   let p = arguments.length > 2 && true !== arguments[2] ? arguments[2] : u.O.NORMAL,
     h = arguments.length > 3 ? arguments[3] : true,
     m = s.Z.getReactions(e.getChannelId(), e.id, t, f, p),
-    g = o.Z.getChannel(e.getChannelId()),
+    g = a.Z.getChannel(e.getChannelId()),
     E = null == g || g.isPrivate() ? null : g.getGuildId(),
     b = e.getReaction(t),
     y = p === u.O.BURST,
@@ -56,7 +56,7 @@ function p(e, t) {
   if (0 === O.length) return "";
   let v = y ? _.burst : _.standard,
     I = Math.max(0, (null != (r = y ? null == b ? true : b.burst_count : null == b ? true : b.count) ? r : 0) - O.length),
-    T = (0, a.Lh)(t);
+    T = (0, o.Lh)(t);
   if (1 === O.length)
     if (!(I > 0)) return d.intl.formatToPlainString(v.reactionTooltip1, {
       a: O[0],

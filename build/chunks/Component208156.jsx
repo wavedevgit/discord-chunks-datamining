@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk74749 = require("./74749.js"),
   Chunk772848 = require("./772848.js"),
   Chunk631467 = require("./631467.js"),
@@ -63,8 +63,8 @@ function v(e) {
   let {
     url: t,
     className: n,
-    style: a,
-    onLoad: o,
+    style: o,
+    onLoad: a,
     shouldRefocus: g,
     queryParams: E,
     allowPopups: y = false,
@@ -72,11 +72,11 @@ function v(e) {
   } = e, I = (0, f.sU)({}), T = (0, s.useMemoOne)(() => (0, l.Z)(), [t]), S = i.useRef(null), A = (0, _.Z)(S, g, null == I ? window : I), C = O(b({}, E), {
     frame_id: T,
     platform: h.S4.DESKTOP
-  }), [N, R] = i.useState(false), P = u.Z.theme, w = b({}, a);
+  }), [N, R] = i.useState(false), P = u.Z.theme, w = b({}, o);
 
   function D(e) {
     var n;
-    null == o || o(e.target), S.current = e.target, A(true), null == (n = e.target.contentWindow) || n.postMessage([c.Z.HELLO, C], null != t ? t : "")
+    null == a || a(e.target), S.current = e.target, A(true), null == (n = e.target.contentWindow) || n.postMessage([c.Z.HELLO, C], null != t ? t : "")
   }
   return P === m.BRd.LIGHT ? w.colorScheme = "light" : w.colorScheme = "dark", i.useEffect(() => (d.S.dispatch(m.CkL.IFRAME_MOUNT, {
     id: T
@@ -110,15 +110,15 @@ function v(e) {
 function I(e) {
   let {
     onLoad: t
-  } = e, [n, a] = i.useState(false), s = i.useCallback(e => {
-    a(true), null == t || t(e)
+  } = e, [n, o] = i.useState(false), s = i.useCallback(e => {
+    o(true), null == t || t(e)
   }, [t]);
   return (0, r.jsxs)("div", {
     className: g.fillParent,
     children: [!n && (0, r.jsx)("div", {
-      className: o()(g.fillParent, g.iframePlaceholder)
+      className: a()(g.fillParent, g.iframePlaceholder)
     }), (0, r.jsx)("div", {
-      className: o()(g.fillParent, n ? true : g.hiddenIframeContainer),
+      className: a()(g.fillParent, n ? true : g.hiddenIframeContainer),
       children: (0, r.jsx)(v, O(b({}, e), {
         onLoad: s
       }))

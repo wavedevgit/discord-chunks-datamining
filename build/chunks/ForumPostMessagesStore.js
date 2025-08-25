@@ -81,7 +81,7 @@ function E(e) {
 }
 
 function b(e, t) {
-  let n = null == t ? null : (0, o.e5)(t);
+  let n = null == t ? null : (0, a.e5)(t);
   p[e] = {
     loaded: true,
     firstMessage: n
@@ -93,7 +93,7 @@ function y(e) {
   let t = p[c.default.castMessageIdAsChannelId(e.message.id)];
   if (null == t || null == t.firstMessage) returnfalse;
   p[c.default.castMessageIdAsChannelId(e.message.id)] = _(d({}, t), {
-    firstMessage: (0, o.wi)(t.firstMessage, e.message)
+    firstMessage: (0, a.wi)(t.firstMessage, e.message)
   })
 }
 
@@ -119,15 +119,15 @@ function I(e) {
     channelId: n,
     messageId: r,
     userId: i,
-    emoji: a,
-    optimistic: o,
+    emoji: o,
+    optimistic: a,
     reactionType: s
   } = e, c = p[n];
   if (null == c || null == c.firstMessage || r !== c.firstMessage.id) returnfalse;
   let u = l.default.getCurrentUser(),
     f = null != u && u.id === i;
-  if (o && !f) returnfalse;
-  p[n] = d({}, c), "MESSAGE_REACTION_ADD" === t ? p[n].firstMessage = c.firstMessage.addReaction(a, f, e.colors, s) : p[n].firstMessage = c.firstMessage.removeReaction(a, f, s)
+  if (a && !f) returnfalse;
+  p[n] = d({}, c), "MESSAGE_REACTION_ADD" === t ? p[n].firstMessage = c.firstMessage.addReaction(o, f, e.colors, s) : p[n].firstMessage = c.firstMessage.removeReaction(o, f, s)
 }
 
 function T(e) {
@@ -137,10 +137,10 @@ function T(e) {
     reactions: r
   } = e, i = p[t];
   if (null == i || null == i.firstMessage || n !== i.firstMessage.id) returnfalse;
-  let a = l.default.getCurrentUser(),
-    o = i.firstMessage.addReactionBatch(r, null == a ? true : a.id);
+  let o = l.default.getCurrentUser(),
+    a = i.firstMessage.addReactionBatch(r, null == o ? true : o.id);
   p[t] = _(d({}, i), {
-    firstMessage: o
+    firstMessage: a
   })
 }
 
@@ -174,7 +174,7 @@ function C(e) {
   } = e, r = n[n.length - 1];
   null != r && r.id === c.default.castChannelIdAsMessageId(t) && (p[t] = {
     loaded: true,
-    firstMessage: (0, o.e5)(r)
+    firstMessage: (0, a.e5)(r)
   })
 }
 class N extends(r = Chunk442837.ZP.Store) {

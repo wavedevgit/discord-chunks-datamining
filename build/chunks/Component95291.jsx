@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk551584 = require("./551584.js");
 
 function s(e) {
@@ -16,7 +16,7 @@ function s(e) {
     className: n
   } = e;
   return null == t ? null : (0, r.jsx)("div", {
-    className: a()(o.container, n),
+    className: o()(a.container, n),
     style: {
       backgroundImage: "url(".concat(t, ")")
     }

@@ -16,13 +16,13 @@ function u(e, t) {
   let {
     isPlaying: n,
     playSound: u
-  } = (0, o.Z)(null != e ? (0, i.Z)(e.soundId) : null);
+  } = (0, a.Z)(null != e ? (0, i.Z)(e.soundId) : null);
   return {
     isPlaying: n,
     playSound: r.useCallback(() => {
       var n;
       return !!u({
-        volume: (0, a.Z)(null != (n = null == e ? true : e.volume) ? n : 1, s.AY.getSetting())
+        volume: (0, o.Z)(null != (n = null == e ? true : e.volume) ? n : 1, s.AY.getSetting())
       }) && (l.default.track(c.rMx.SOUNDMOJI_PLAY, {
         guild_id: null == t ? true : t.guild_id,
         channel_id: null == t ? true : t.id,

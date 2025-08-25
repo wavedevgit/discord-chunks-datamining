@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk100527 = require("./100527.js"),
@@ -23,7 +23,7 @@ function g(e) {
   let {
     guildId: t,
     channel: n,
-    containerWidth: a,
+    containerWidth: o,
     onClose: g,
     onSelect: E,
     analyticsSource: b,
@@ -44,7 +44,7 @@ function g(e) {
   }, [T]), (0, r.jsx)(u.Gt, {
     value: P,
     children: (0, r.jsx)(l.VqE, {
-      className: o()(m.picker, {
+      className: a()(m.picker, {
         [m.fetching]: R,
         [m.inExpressionPicker]: T
       }),
@@ -54,7 +54,7 @@ function g(e) {
         onClose: g,
         onSelect: E,
         shouldValidateSelectedSound: O,
-        containerWidth: a,
+        containerWidth: o,
         suppressPlaySound: y,
         shouldShowUpsell: v,
         gridNotice: I,

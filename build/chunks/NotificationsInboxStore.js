@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => eb
 }), require("./361932.js"), require("./187205.js"), require("./539854.js"), require("./388685.js"), require("./642613.js"), require("./387201.js");
 var r, Chunk512722 = require("./512722.js"),
-  a = require.n(Chunk512722),
+  o = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk622822 = require("./622822.js"),
@@ -44,8 +44,8 @@ let w = {},
   x = [],
   L = new Chunk810457.Z,
   j = false,
-  k = false,
   M = false,
+  k = false,
   U = false,
   G = Chunk709054.default.fromTimestamp(Date.now()),
   B = true,
@@ -64,8 +64,8 @@ function H() {
   }
   for (let e in exports)
     for (let i in exports[module])
-      for (let a in exports[module][Chunk512722]) {
-        let e = Chunk592125.Z.getBasicChannel(a);
+      for (let o in exports[module][Chunk512722]) {
+        let e = Chunk592125.Z.getBasicChannel(o);
         null != module && require(module) && r.push(module)
       }
   return r.map(e => e.id).sort((e, t) => {
@@ -109,7 +109,7 @@ function K() {
     notifyingChannelIds: e,
     staleChannelIds: t
   } = H();
-  D = module, x = exports, a()(null != D, "notifyingChannelIds should not be null");
+  D = module, x = exports, o()(null != D, "notifyingChannelIds should not be null");
   let n = D.filter(e => null == w[e]),
     r = Object.keys(w).filter(e => !(null == D ? true : D.includes(e)));
   if (0 !== D.length && 0 === require.length && 0 === r.length) returnfalse;
@@ -121,14 +121,14 @@ function K() {
       }, Chunk375954.Z.isReady(module)) {
       let t = Y(module);
       if (null != exports) {
-        var i, o;
-        w[module].loadState = Chunk982183.a7.LOADED, w[module].mostRecentMessageId = null != (o = null == (i = exports.last()) ? true : Chunk512722.id) ? Chunk442837 : w[module].mostRecentMessageId
+        var i, a;
+        w[module].loadState = Chunk982183.a7.LOADED, w[module].mostRecentMessageId = null != (a = null == (i = exports.last()) ? true : Chunk512722.id) ? Chunk442837 : w[module].mostRecentMessageId
       }
     } L.updateChannelIds(D), W()
 }
 
 function z() {
-  w = {}, D = null, x = [], L = new Chunk810457.Z, j = false, k = false, M = false, G = Chunk709054.default.fromTimestamp(Date.now()), B = true, U = false, F = null, Z = null
+  w = {}, D = null, x = [], L = new Chunk810457.Z, j = false, M = false, k = false, G = Chunk709054.default.fromTimestamp(Date.now()), B = true, U = false, F = null, Z = null
 }
 
 function q() {
@@ -168,22 +168,22 @@ function $(e) {
   var t, n, r;
   let {
     channelId: i,
-    message: a
+    message: o
   } = e;
-  if (null == D || (null == (t = a.author) ? true : t.id) === (null == (n = v.default.getCurrentUser()) ? true : n.id)) returnfalse;
-  let o = D.includes(i);
+  if (null == D || (null == (t = o.author) ? true : t.id) === (null == (n = v.default.getCurrentUser()) ? true : n.id)) returnfalse;
+  let a = D.includes(i);
   if ((0, l.zd)(i)) returnfalse;
-  let s = J(a),
+  let s = J(o),
     c = s.mentioned;
-  if (!o && !c) {
+  if (!a && !c) {
     if (!x.includes(i)) returnfalse;
     K()
   }
-  if (!o && c && !(0, u.ln)(s)) returnfalse;
+  if (!a && c && !(0, u.ln)(s)) returnfalse;
   L.addMessage({
-    id: a.id,
-    channelId: a.channel_id,
-    guildId: null == (r = m.Z.getBasicChannel(a.channel_id)) ? true : r.guild_id,
+    id: o.id,
+    channelId: o.channel_id,
+    guildId: null == (r = m.Z.getBasicChannel(o.channel_id)) ? true : r.guild_id,
     kind: c ? C.fL.MENTION : C.fL.ALL_MESSAGES_CHANNEL,
     message: s
   })
@@ -237,16 +237,16 @@ function ei() {
   j = true
 }
 
-function ea(e) {
+function eo(e) {
   let {
     preload: t,
     hasMoreToLoad: n,
     analyticsPayload: r
   } = e;
-  j = false, t ? U = true : (null != n && (B = n), M = true), F = null != r ? r : null
+  j = false, t ? U = true : (null != n && (B = n), k = true), F = null != r ? r : null
 }
 
-function eo(e) {
+function ea(e) {
   var t;
   let {
     preload: n
@@ -254,11 +254,11 @@ function eo(e) {
   return null != (null == (t = (0, T.Ag)({
     location: "NotificationsInboxStore.canLoadMore",
     autoTrackExposure: false
-  })) ? true : t.notificationCenterVariant) && null != D && !j && !k && (!n || !U) && B
+  })) ? true : t.notificationCenterVariant) && null != D && !j && !M && (!n || !U) && B
 }
 
 function es() {
-  j = false, F = null, k = true
+  j = false, F = null, M = true
 }
 
 function el(e) {
@@ -287,7 +287,7 @@ function ec(e) {
 }
 
 function eu() {
-  k = false
+  M = false
 }
 
 function ed() {
@@ -317,13 +317,13 @@ function ep(e) {
     id: n,
     addedMembers: r,
     removedMemberIds: i
-  } = e, a = null == (t = v.default.getCurrentUser()) ? true : t.id;
-  if (null == a) returnfalse;
-  if (null == r ? true : r.some(e => e.userId === a)) {
+  } = e, o = null == (t = v.default.getCurrentUser()) ? true : t.id;
+  if (null == o) returnfalse;
+  if (null == r ? true : r.some(e => e.userId === o)) {
     let e = m.Z.getBasicChannel(n);
     return !(null == e || f.Z.isMuted(n)) && (0, _.J)(e) !== R.iN.NO_MESSAGES && void X()
   }
-  return null != i && !!i.includes(a) && void X()
+  return null != i && !!i.includes(o) && void X()
 }
 
 function eh(e) {
@@ -356,7 +356,7 @@ class eE extends(r = Chunk442837.ZP.Store) {
     let {
       preload: t
     } = e;
-    return eo({
+    return ea({
       preload: t
     })
   }
@@ -379,7 +379,7 @@ class eE extends(r = Chunk442837.ZP.Store) {
     return j
   }
   get hasLoadedEver() {
-    return M
+    return k
   }
   get hasPreloaded() {
     return U
@@ -422,7 +422,7 @@ let eb = new eE(Chunk570140.Z, {
   THREAD_MEMBERS_UPDATE: ep,
   NOTIFICATIONS_INBOX_OPEN: eu,
   NOTIFICATIONS_INBOX_LOAD_MORE_INBOX_START: ei,
-  NOTIFICATIONS_INBOX_LOAD_MORE_INBOX_SUCCESS: ea,
+  NOTIFICATIONS_INBOX_LOAD_MORE_INBOX_SUCCESS: eo,
   NOTIFICATIONS_INBOX_LOAD_MORE_INBOX_FAILURE: es,
   NOTIFICATIONS_INBOX_ITEM_CLICK: el,
   NOTIFICATIONS_INBOX_ITEM_ACK: ec,

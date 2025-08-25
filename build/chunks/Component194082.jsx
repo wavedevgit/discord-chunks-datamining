@@ -10,7 +10,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk692547 = require("./692547.js"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -39,13 +39,13 @@ function _(e) {
   } = e;
   return "RED" === u ? (0, r.jsx)(s.IGR, {
     text: l.intl.string(l.t.dI3q4u),
-    className: a()(t, c.live, _),
-    color: o.Z.unsafe_rawColors.RED_400.css,
+    className: o()(t, c.live, _),
+    color: a.Z.unsafe_rawColors.RED_400.css,
     shape: f[i],
     style: n
   }) : (0, r.jsx)(s.IGR, {
     text: l.intl.string(l.t.dI3q4u),
-    className: a()(t, c.live, _, c.grey),
+    className: o()(t, c.live, _, c.grey),
     disableColor: true,
     shape: f[i],
     style: n

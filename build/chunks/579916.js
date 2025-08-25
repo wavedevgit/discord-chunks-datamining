@@ -11,9 +11,9 @@ function r(e, t, n) {
   }) : e[t] = n, e
 }
 var i = require("./65183.js").List,
-  a = ".";
+  o = ".";
 
-function o(e, t, n) {
+function a(e, t, n) {
   for (var r = t; r < n; r++)
     if (null != e[r]) returnfalse;
   returntrue
@@ -32,14 +32,14 @@ module.exports = function() {
     return this._decorators.forEach(function(r, i) {
       var l = 0;
       (0, r.strategy)(e, function(e, t) {
-        o(n, e, t) && (s(n, e, t, i + a + l), l++)
+        a(n, e, t) && (s(n, e, t, i + o + l), l++)
       }, t)
     }), i(n)
   }, exports.getComponentForKey = function(e) {
-    var t = parseInt(e.split(a)[0], 10);
+    var t = parseInt(e.split(o)[0], 10);
     return this._decorators[t].component
   }, exports.getPropsForKey = function(e) {
-    var t = parseInt(e.split(a)[0], 10);
+    var t = parseInt(e.split(o)[0], 10);
     return this._decorators[t].props
   }, module
 }()

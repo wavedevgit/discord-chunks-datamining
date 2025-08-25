@@ -23,9 +23,9 @@ let _ = e => {
   } = (0, s.ZP)(), _ = () => {
     t(), (0, l.uL)(u.Z5c.COLLECTIBLES_SHOP), (0, c.mK)({
       openInLayer: false,
-      analyticsSource: o.Z.PREMIUM_PAYMENT_MODAL,
+      analyticsSource: a.Z.PREMIUM_PAYMENT_MODAL,
       analyticsLocations: n
-    }), (0, a.xf)()
+    }), (0, o.xf)()
   };
   return (0, r.jsxs)("div", {
     className: f.container,

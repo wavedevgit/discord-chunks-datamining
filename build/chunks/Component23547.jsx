@@ -46,7 +46,7 @@ let d = "balance-widget-menu-coachmark-modal",
   };
 
 function h(e) {
-  e.isCoachmarkEnabled && (0, o.ZDy)(async () => {
+  e.isCoachmarkEnabled && (0, a.ZDy)(async () => {
     let {
       WrappedBalanceWidgetEarnedOrbsCoachmarkModal: t
     } = await Promise.resolve().then(n.bind(n, 720463));
@@ -55,7 +55,7 @@ function h(e) {
 }
 
 function m(e) {
-  let t = (0, a.cj)([l.Z], () => l.Z.earnedOrbsCoachmark),
+  let t = (0, o.cj)([l.Z], () => l.Z.earnedOrbsCoachmark),
     {
       shouldOpen: n
     } = t;

@@ -48,9 +48,9 @@ function p() {
     className: Chunk61952.container,
     children: [require, require.length > 0 && p && (0, Chunk951288.jsx)(Chunk481060.ua7, {
       text: Chunk388032.intl.string(Chunk388032.t.L99HQk),
-      children: e => (0, r.jsx)(a.Mgn, _({
+      children: e => (0, r.jsx)(o.Mgn, _({
         size: "xs",
-        color: a.TVs.colors.STATUS_WARNING
+        color: o.TVs.colors.STATUS_WARNING
       }, e))
     })]
   })

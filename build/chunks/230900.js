@@ -3,26 +3,26 @@
 "use strict";
 require.d(exports, {
   cS: () => s,
-  nE: () => a,
+  nE: () => o,
   xC: () => c,
   xV: () => l
 });
 var Chunk592125 = require("./592125.js"),
   Chunk765305 = require("./765305.js");
 
-function a(e) {
+function o(e) {
   let t, {
     entity_type: n,
-    channel_id: a
+    channel_id: o
   } = e;
-  if (n in i.nz && null != a) {
-    var o;
-    t = null != (o = r.Z.getChannel(e.channel_id)) ? o : true
+  if (n in i.nz && null != o) {
+    var a;
+    t = null != (a = r.Z.getChannel(e.channel_id)) ? a : true
   }
   return t
 }
 
-function o(e, t) {
+function a(e, t) {
   let n = null;
   return e === i.WX.EXTERNAL && null != t && "location" in t && (n = t.location), n
 }
@@ -32,7 +32,7 @@ function s(e) {
     entity_type: t,
     entity_metadata: n
   } = e;
-  return o(t, n)
+  return a(t, n)
 }
 
 function l(e) {
@@ -40,7 +40,7 @@ function l(e) {
     entityType: t,
     entityMetadata: n
   } = e;
-  return o(t, n)
+  return a(t, n)
 }
 
 function c(e) {

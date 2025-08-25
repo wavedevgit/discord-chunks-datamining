@@ -71,8 +71,8 @@ function p(e, t) {
   if (null == e) return {};
   var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -80,8 +80,8 @@ function p(e, t) {
 function h(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let m = require("./338305.jsx").Z,
@@ -113,17 +113,17 @@ async function O(e) {
       contextKey: n = E()
     } = t,
     r = p(t, ["contextKey"]),
-    a = null != t.modalKey ? t.modalKey : i()(),
-    o = false,
+    o = null != t.modalKey ? t.modalKey : i()(),
+    a = false,
     s = setTimeout(() => {
-      o = true, v(m, _(d({}, r), {
-        modalKey: a
+      a = true, v(m, _(d({}, r), {
+        modalKey: o
       }), n)
     }, 300),
     l = await e();
-  return clearTimeout(s), o ? x(a, n) && S(a, l, r.onCloseRequest, r.onCloseCallback, n) : v(l, _(d({}, r), {
-    modalKey: a
-  }), n), a
+  return clearTimeout(s), a ? x(o, n) && S(o, l, r.onCloseRequest, r.onCloseCallback, n) : v(l, _(d({}, r), {
+    modalKey: o
+  }), n), o
 }
 
 function v(e) {
@@ -131,7 +131,7 @@ function v(e) {
     n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : E(),
     {
       modalKey: r,
-      instant: a,
+      instant: o,
       Layer: s,
       onCloseRequest: l,
       onCloseCallback: c,
@@ -139,7 +139,7 @@ function v(e) {
       stackingBehavior: f = "replace"
     } = t,
     p = null != r ? r : i()();
-  return (0, o.j)(() => {
+  return (0, a.j)(() => {
     y.setState(t => {
       let r = t[n];
       return true !== r && r.some(e => {
@@ -154,7 +154,7 @@ function v(e) {
           render: e,
           onCloseRequest: null != l ? l : () => I(p, n),
           onCloseCallback: c,
-          instant: a,
+          instant: o,
           backdropStyle: u,
           stackingBehavior: f
         }]
@@ -172,7 +172,7 @@ function I(e) {
       } = t;
       return n === e
     }) : null;
-  return (0, o.j)(() => {
+  return (0, a.j)(() => {
     y.setState(n => true === n[t] ? n : _(d({}, n), {
       [t]: n[t].filter(t => {
         let {
@@ -198,7 +198,7 @@ function T(e) {
         return n === e
       })) ? n : null
     });
-  n.some(e => null != e) && ((0, o.j)(() => {
+  n.some(e => null != e) && ((0, a.j)(() => {
     y.setState(t => {
       let n = d({}, t);
       return g.forEach(t => {
@@ -219,13 +219,13 @@ function T(e) {
 
 function S(e, t, n, r) {
   let i = arguments.length > 4 && true !== arguments[4] ? arguments[4] : E();
-  (0, o.j)(() => {
-    y.setState(a => true === a[i] ? a : _(d({}, a), {
-      [i]: a[i].map(a => a.key === e ? _(d({}, a), {
+  (0, a.j)(() => {
+    y.setState(o => true === o[i] ? o : _(d({}, o), {
+      [i]: o[i].map(o => o.key === e ? _(d({}, o), {
         render: t,
         onCloseRequest: null == n ? () => I(e, i) : n,
         onCloseCallback: r
-      }) : a)
+      }) : o)
     }))
   })
 }

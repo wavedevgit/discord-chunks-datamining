@@ -14,7 +14,7 @@ var Chunk493683 = require("./493683.js"),
   Chunk388032 = require("./388032.jsx");
 
 function u(e, t, n) {
-  a.default.showNotification(s.ZP.getUserAvatarURL(e), e.username, t, {}, {
+  o.default.showNotification(s.ZP.getUserAvatarURL(e), e.username, t, {}, {
     omitViewTracking: true,
     omitClickTracking: true,
     tag: e.id,
@@ -31,7 +31,7 @@ function d(e) {
       } = n(892001);
       t({
         userId: e.id,
-        sourceAnalyticsLocations: [o.Z.FRIEND_REQUEST_NOTIFICATION]
+        sourceAnalyticsLocations: [a.Z.FRIEND_REQUEST_NOTIFICATION]
       })
     }
     i.Z.transitionToSection(l.pJs.PENDING, {

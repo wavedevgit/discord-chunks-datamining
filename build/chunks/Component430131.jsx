@@ -27,18 +27,18 @@ function f(e) {
   function g(e) {
     (0, l.wi)(e, f)
   }
-  return (0, r.jsxs)(o.Z, {
+  return (0, r.jsxs)(a.Z, {
     title: u.intl.string(u.t.me1lRk),
     errors: t,
-    children: [(0, r.jsx)(a.oil, {
+    children: [(0, r.jsx)(o.oil, {
       value: null != h ? h : "",
       placeholder: _,
       maxLength: c.l$U,
       onChange: g,
       disabled: !m
-    }), !m && (0, r.jsx)(a.R94, {
+    }), !m && (0, r.jsx)(o.R94, {
       className: d.nicknameDisabled,
-      type: a.R94.Types.DESCRIPTION,
+      type: o.R94.Types.DESCRIPTION,
       children: u.intl.string(u.t.gzjxQk)
     })]
   })

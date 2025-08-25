@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk906732 = require("./906732.jsx"),
@@ -24,7 +24,7 @@ function E(e) {
   let {
     user: t,
     guild: n,
-    className: a,
+    className: o,
     sectionTitle: _,
     forcedDivider: E = false,
     withTutorial: b = false,
@@ -47,7 +47,7 @@ function E(e) {
   }
   let D = b ? l.gtL : s.zx;
   return (0, r.jsxs)(h.Z, {
-    className: a,
+    className: o,
     forcedDivider: E,
     hasBackground: true,
     title: _,
@@ -57,7 +57,7 @@ function E(e) {
       children: [(0, r.jsx)(D, {
         size: s.zx.Sizes.SMALL,
         onClick: R,
-        className: o()({
+        className: a()({
           [g.buttonHighlighted]: b
         }),
         children: m.intl.string(m.t.BVcYCw)

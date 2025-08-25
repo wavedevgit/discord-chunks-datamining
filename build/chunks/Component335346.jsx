@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk557766 = require("./557766.js");
 let s = e => {
   let {
@@ -18,15 +18,15 @@ let s = e => {
     tailTargetInnerClassName: l
   } = e;
   return (0, r.jsxs)("div", {
-    className: a()(o.tail, t ? o.tailPositionInverted : o.tailPositionNormal),
+    className: o()(a.tail, t ? a.tailPositionInverted : a.tailPositionNormal),
     style: {
       left: n,
       right: i
     },
     children: [(0, r.jsx)("div", {
-      className: a()(o.tailSpine, s)
+      className: o()(a.tailSpine, s)
     }), (0, r.jsx)("div", {
-      className: a()(o.tailTargetOuter, t ? o.tailTargetPositionInverted : o.tailTargetPositionNormal),
+      className: o()(a.tailTargetOuter, t ? a.tailTargetPositionInverted : a.tailTargetPositionNormal),
       children: (0, r.jsx)("svg", {
         xmlns: "http://www.w3.org/2000/svg",
         width: "8",
@@ -37,7 +37,7 @@ let s = e => {
           cx: "50%",
           cy: "50%",
           r: "3",
-          className: a()(o.tailTargetInner, l)
+          className: o()(a.tailTargetInner, l)
         })
       })
     })]

@@ -8,7 +8,7 @@ var Chunk147913 = require("./147913.js"),
   Chunk604375 = require("./604375.js"),
   Chunk268004 = require("./268004.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -22,7 +22,7 @@ class s extends Chunk147913.Z {
       guildId: t,
       channelId: n
     } = e;
-    null != n && a.M.trigger({
+    null != n && o.M.trigger({
       guildId: null != t ? t : true
     })
   }
@@ -33,7 +33,7 @@ class s extends Chunk147913.Z {
     Chunk604375.X.trigger()
   }
   constructor(...e) {
-    super(...e), o(this, "actions", {
+    super(...e), a(this, "actions", {
       VOICE_CHANNEL_SELECT: this.handleVoiceChannelSelect,
       CALL_CREATE: this.handleCallCreate,
       USER_SETTINGS_MODAL_OPEN: this.handleUserSettingsModalOpen

@@ -2,13 +2,13 @@
 /** chunk id: 586502, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => o
+  Z: () => a
 });
 var Chunk442837 = require("./442837.js"),
   Chunk607070 = require("./607070.js"),
   Chunk36927 = require("./36927.js");
 
-function o() {
+function a() {
   let e = Chunk36927.J.useExperiment({
       location: "useIsTenureBadgeAmbient"
     }),

@@ -72,7 +72,7 @@ function T(e) {
         features: []
       }))
     }))
-  })))) : o.Z.fetch()
+  })))) : a.Z.fetch()
 }
 
 function S(e) {
@@ -89,9 +89,9 @@ function C(e) {
     id: n,
     revoked: r,
     accessToken: i
-  } = e, a = m.find(e => e.id === n && e.type === t);
-  if (null == a) returnfalse;
-  null != r && (a.revoked = r), null != i && (a.accessToken = i)
+  } = e, o = m.find(e => e.id === n && e.type === t);
+  if (null == o) returnfalse;
+  null != r && (o.revoked = r), null != i && (o.accessToken = i)
 }
 
 function N(e) {
@@ -101,7 +101,7 @@ function N(e) {
     openid_params: r,
     provider: i
   } = e;
-  o.Z.callback(i, {
+  a.Z.callback(i, {
     code: t,
     state: n,
     openid_params: r

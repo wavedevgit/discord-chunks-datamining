@@ -29,7 +29,7 @@ class l extends Chunk58406.g {
   asyncify(e, t, n) {
     let r = l.requestTypeLookup[t];
     if (true === r) return Promise.resolve(true);
-    let i = () => null == e ? Promise.resolve(o.NZ.AUTHORIZED) : new Promise((t, n) => e(t, r));
+    let i = () => null == e ? Promise.resolve(a.NZ.AUTHORIZED) : new Promise((t, n) => e(t, r));
     return this.requestAuthorization(t, i, n)
   }
   openSettings(e) {
@@ -46,15 +46,15 @@ class l extends Chunk58406.g {
       title: t,
       body: n,
       onConfirm: i,
-      cancelText: a,
-      confirmText: o
+      cancelText: o,
+      confirmText: a
     } = e;
     r.Z.show({
       title: t,
       body: n,
       onConfirm: i,
-      cancelText: a,
-      confirmText: o
+      cancelText: o,
+      confirmText: a
     })
   }
   constructor(...e) {

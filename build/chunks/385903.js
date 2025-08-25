@@ -3,8 +3,8 @@
 "use strict";
 var Chunk234488 = require("./234488.js"),
   Chunk449285 = require("./449285.js"),
-  a = TypeError;
+  o = TypeError;
 module.exports = function(e) {
   if (r(e)) return e;
-  throw new a(i(e) + " is not a constructor")
+  throw new o(i(e) + " is not a constructor")
 }

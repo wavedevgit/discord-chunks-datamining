@@ -30,7 +30,7 @@ function h(e) {
   let y = () => g ? (0, r.jsxs)(i.P3F, {
       className: _.section,
       onClick: () => null == n ? true : n(d.oh.MUTUAL_FRIENDS),
-      children: [(0, r.jsx)(a.Z, {
+      children: [(0, r.jsx)(o.Z, {
         maxUsers: p,
         users: h.map(e => {
           let {
@@ -56,7 +56,7 @@ function h(e) {
     v = () => E ? (0, r.jsxs)(i.P3F, {
       className: _.section,
       onClick: () => null == n ? true : n(d.oh.MUTUAL_GUILDS),
-      children: [!g && (0, r.jsx)(o.Z, {
+      children: [!g && (0, r.jsx)(a.Z, {
         maxGuilds: p,
         guilds: m.map(e => {
           let {

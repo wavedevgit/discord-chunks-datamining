@@ -26,7 +26,7 @@ class l extends Chunk317770.Z {
   }
   constructor(...e) {
     super(...e), s(this, "handleConnectionOpen", e => {
-      ((0, o.isWindows)() || (0, o.isMac)()) && r.encryptAndStoreTokens()
+      ((0, a.isWindows)() || (0, a.isMac)()) && r.encryptAndStoreTokens()
     })
   }
 }

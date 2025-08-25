@@ -3,11 +3,11 @@
 "use strict";
 
 function r(e) {
-  if (a()) e.focus({
+  if (o()) e.focus({
     preventScroll: true
   });
   else {
-    let t = o(e);
+    let t = a(e);
     e.focus(), s(t)
   }
 }
@@ -16,7 +16,7 @@ require.d(exports, {
 });
 let i = null;
 
-function a() {
+function o() {
   if (null == i) {
     i = false;
     try {
@@ -30,7 +30,7 @@ function a() {
   return i
 }
 
-function o(e) {
+function a(e) {
   let t = e.parentNode,
     n = [],
     r = document.scrollingElement || document.documentElement;

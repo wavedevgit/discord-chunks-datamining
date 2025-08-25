@@ -8,7 +8,7 @@ var Chunk685816 = require("./685816.js"),
   Chunk194165 = require("./194165.js"),
   Chunk889577 = require("./889577.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -21,6 +21,6 @@ class s {
     return new s(e)
   }
   constructor(e) {
-    o(this, "categorySkuId", true), o(this, "name", true), o(this, "summary", true), o(this, "categoryStoreListingId", true), o(this, "fallbackBannerUrl", true), o(this, "bannerAsset", true), o(this, "logoUrl", true), o(this, "title", true), o(this, "rankedSkuIds", true), o(this, "unpublishedAt", true), o(this, "bannerTextColor", true), o(this, "bannerConfig", true), o(this, "logoConfig", true), this.type = r.z.HERO, this.categorySkuId = e.category_sku_id, this.name = e.name, this.summary = e.summary.trim(), this.categoryStoreListingId = e.category_store_listing_id, this.fallbackBannerUrl = e.fallback_banner_url, this.bannerAsset = e.banner_asset, this.logoUrl = e.logo_url, this.title = e.title, this.rankedSkuIds = e.ranked_sku_ids, this.unpublishedAt = null != e.unpublished_at ? new Date(e.unpublished_at) : null, this.bannerTextColor = e.banner_text_color, this.bannerConfig = null != e.config ? i.Z.fromServer(e.config) : true, this.logoConfig = null != e.logo_display_config ? a.X.fromServer(e.logo_display_config) : true
+    a(this, "categorySkuId", true), a(this, "name", true), a(this, "summary", true), a(this, "categoryStoreListingId", true), a(this, "fallbackBannerUrl", true), a(this, "bannerAsset", true), a(this, "logoUrl", true), a(this, "title", true), a(this, "rankedSkuIds", true), a(this, "unpublishedAt", true), a(this, "bannerTextColor", true), a(this, "bannerConfig", true), a(this, "logoConfig", true), this.type = r.z.HERO, this.categorySkuId = e.category_sku_id, this.name = e.name, this.summary = e.summary.trim(), this.categoryStoreListingId = e.category_store_listing_id, this.fallbackBannerUrl = e.fallback_banner_url, this.bannerAsset = e.banner_asset, this.logoUrl = e.logo_url, this.title = e.title, this.rankedSkuIds = e.ranked_sku_ids, this.unpublishedAt = null != e.unpublished_at ? new Date(e.unpublished_at) : null, this.bannerTextColor = e.banner_text_color, this.bannerConfig = null != e.config ? i.Z.fromServer(e.config) : true, this.logoConfig = null != e.logo_display_config ? o.X.fromServer(e.logo_display_config) : true
   }
 }

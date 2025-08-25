@@ -19,45 +19,45 @@ let f = 10 * Chunk70956.Z.Millis.MINUTE,
   h = {};
 
 function m(e, t) {
-  null == h[t] && (h[t] = new a.V7), h[t].start(f + Math.random() * _, () => {
+  null == h[t] && (h[t] = new o.V7), h[t].start(f + Math.random() * _, () => {
     null != l.Z.getLibraryApplication(e, t) && g(e, t)
   })
 }
 async function g(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
-    a = s.default.locale;
-  return o.Z.dispatch({
+    o = s.default.locale;
+  return a.Z.dispatch({
     type: "APPLICATION_BUILD_FETCH_START",
     applicationId: e,
     branchId: t,
-    locale: a
+    locale: o
   }), n && await (0, i._v)(Math.random() * p), r.tn.get({
     url: d.ANM.APPLICATION_LIVE_BUILD(e, t),
     query: {
       platform: (0, c.D)(),
-      locale: a
+      locale: o
     },
     oldFormErrors: true,
     rejectWithError: false
   }).then(n => {
     let r = n.body;
-    if (0 === r.manifests.length) return void o.Z.dispatch({
+    if (0 === r.manifests.length) return void a.Z.dispatch({
       type: "APPLICATION_BUILD_NOT_FOUND",
       applicationId: e,
       branchId: t
     });
-    o.Z.dispatch({
+    a.Z.dispatch({
       type: "APPLICATION_BUILD_FETCH_SUCCESS",
       applicationId: e,
       branchId: t,
-      locale: a,
+      locale: o,
       build: r
     })
   }, n => {
     let {
       status: r
     } = n;
-    404 === r ? o.Z.dispatch({
+    404 === r ? a.Z.dispatch({
       type: "APPLICATION_BUILD_NOT_FOUND",
       applicationId: e,
       branchId: t

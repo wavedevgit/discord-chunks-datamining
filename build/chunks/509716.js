@@ -34,12 +34,12 @@ function l(e) {
     error: s.intl.string(s.t.JZJQLy)
   } : {
     success: false,
-    error: (0, o.al)(t)
+    error: (0, a.al)(t)
   };
   let h = n.length > 1 ? {
       type: "text",
       text: f
     } : n[0],
-    m = a.Z[t.type](h, t, c, l, d);
-  return m.success || null != m.error || (m.error = (0, o.al)(t)), m
+    m = o.Z[t.type](h, t, c, l, d);
+  return m.success || null != m.error || (m.error = (0, a.al)(t)), m
 }

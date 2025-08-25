@@ -6,7 +6,7 @@ require.d(exports, {
 });
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk589518 = require("./589518.js");
 let l = e => {
@@ -16,8 +16,8 @@ let l = e => {
     responsive: i = true,
     children: l
   } = e;
-  return (0, r.jsx)(o.X6q, {
-    className: a()(s.header, t, i && s.responsive),
+  return (0, r.jsx)(a.X6q, {
+    className: o()(s.header, t, i && s.responsive),
     variant: "display-md",
     color: n,
     children: l

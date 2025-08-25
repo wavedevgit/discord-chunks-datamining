@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk209739 = require("./209739.js"),
   l = require.n(Chunk209739),
   Chunk442837 = require("./442837.js"),
@@ -60,7 +60,7 @@ function L(e) {
     hideDeviceSelector: t = false,
     hideDeviceHeader: n = false,
     hideCameraSettingsLink: i = false,
-    onLearnMore: a,
+    onLearnMore: o,
     selectedBackgroundOption: s,
     onSelectBackgroundOption: l,
     renderCamera: u,
@@ -101,7 +101,7 @@ function L(e) {
         children: [(0, r.jsx)(h.j, {
           deviceType: S.h7.VIDEO_INPUT,
           location: "CameraSettings",
-          className: o()(C.selector, {
+          className: a()(C.selector, {
             [C.selectorNoHeader]: n
           }),
           isDisabled: !x,
@@ -121,7 +121,7 @@ function L(e) {
       setting: T.s6.VOICE_AND_VIDEO_VIDEO_BACKGROUND,
       children: (0, r.jsx)(b.Z, {
         className: C.spacingTop24,
-        onLearnMore: a,
+        onLearnMore: o,
         selectedBackgroundOption: s,
         onSelectBackgroundOption: l,
         currentDeviceId: P,

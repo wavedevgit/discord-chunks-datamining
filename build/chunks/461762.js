@@ -11,17 +11,17 @@ var Chunk442837 = require("./442837.js"),
   Chunk411149 = require("./411149.js");
 
 function l(e) {
-  let t = o.qM.useExperiment({
+  let t = a.qM.useExperiment({
       location: "useChatWallpaperVariant"
     }).enabled,
-    n = (0, a.ZP)();
+    n = (0, o.ZP)();
   return (0, r.e7)([s.Z], () => {
-    var r, a, o, l;
+    var r, o, a, l;
     let c = s.Z.getWallpaperById(e);
     if (null == c) return;
     let u = c.default;
     if (t && (null == c || null == (r = c.variants) ? true : r.dark) != null) {
-      let e = (0, i.ap)(n) ? null == (a = c.variants) ? true : a.light : null == (o = c.variants) ? true : o.dark;
+      let e = (0, i.ap)(n) ? null == (o = c.variants) ? true : o.light : null == (a = c.variants) ? true : a.dark;
       u = null != e ? e : null == (l = c.variants) ? true : l.dark
     }
     return u

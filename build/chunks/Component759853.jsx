@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk238651 = require("./238651.js"),
   Chunk603113 = require("./603113.js"),
   Chunk202841 = require("./202841.js"),
@@ -107,7 +107,7 @@ let C = e => {
   var t;
   let {
     expansionSpring: n,
-    overlayRef: a,
+    overlayRef: o,
     quest: E,
     progressBarRef: b,
     isExpanded: y,
@@ -116,10 +116,10 @@ let C = e => {
   } = e, {
     completionSpring: C,
     startCompletionAnimation: N
-  } = (0, p.G)(), R = (null == (t = E.userStatus) ? true : t.completedAt) != null, P = i.useRef(false), w = (0, u.e7)([f.Z], () => f.Z.useReducedMotion), D = i.useRef(null), x = (0, u.e7)([_.Z], () => _.Z.hasLayers()), L = (0, d.Z)(x), [j, k] = i.useState(null), [M, U] = i.useState(null), G = i.useRef(new s.qA({
+  } = (0, p.G)(), R = (null == (t = E.userStatus) ? true : t.completedAt) != null, P = i.useRef(false), w = (0, u.e7)([f.Z], () => f.Z.useReducedMotion), D = i.useRef(null), x = (0, u.e7)([_.Z], () => _.Z.hasLayers()), L = (0, d.Z)(x), [j, M] = i.useState(null), [k, U] = i.useState(null), G = i.useRef(new s.qA({
     gravity: 0,
     wind: 0
-  })), B = (0, s.uR)(j, M), Z = i.useCallback(() => {
+  })), B = (0, s.uR)(j, k), Z = i.useCallback(() => {
     if (w) return;
     let e = b.current,
       t = D.current;
@@ -129,9 +129,9 @@ let C = e => {
         y: r
       } = e.getBoundingClientRect(), {
         x: i,
-        y: a
+        y: o
       } = t.getBoundingClientRect();
-      B.createMultipleConfetti(A(n - i, r - a, e.clientHeight, e.clientWidth), I)
+      B.createMultipleConfetti(A(n - i, r - o, e.clientHeight, e.clientWidth), I)
     }
   }, [b, D, B, w]), F = (0, d.Z)(y);
   return (i.useEffect(() => {
@@ -154,7 +154,7 @@ let C = e => {
         opacity: C
       }
     }), (0, r.jsx)(c.animated.div, {
-      className: o()(m.borders, m.bordersTopLeft),
+      className: a()(m.borders, m.bordersTopLeft),
       style: {
         opacity: C
       }
@@ -167,7 +167,7 @@ let C = e => {
         }).to(e => "translateY(".concat(e, "px)"))
       },
       children: [(0, r.jsx)(s.O_, {
-        ref: k,
+        ref: M,
         className: m.confetti,
         environment: G.current
       }), (0, r.jsx)(s.Ji, {
@@ -176,12 +176,12 @@ let C = e => {
         colors: v,
         spriteWidth: h.Ko,
         spriteHeight: h.Ko
-      }), null != a.current && (0, l.createPortal)((0, r.jsx)(c.animated.div, {
-        className: o()(m.borders, m.bordersBottom),
+      }), null != o.current && (0, l.createPortal)((0, r.jsx)(c.animated.div, {
+        className: a()(m.borders, m.bordersBottom),
         style: {
           opacity: C
         }
-      }), a.current)]
+      }), o.current)]
     })]
   })
 }

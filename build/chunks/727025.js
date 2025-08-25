@@ -3,8 +3,8 @@
 "use strict";
 var Chunk614767 = require("./614767.js"),
   i = String,
-  a = TypeError;
+  o = TypeError;
 module.exports = function(e) {
   if (r(e)) return e;
-  throw new a("Can't set " + i(e) + " as a prototype")
+  throw new o("Can't set " + i(e) + " as a prototype")
 }

@@ -72,7 +72,7 @@ function m(e) {
   let {
     user: t
   } = e;
-  _.premiumTypeActual = (0, o.G)(t.premium_type)
+  _.premiumTypeActual = (0, a.G)(t.premium_type)
 }
 class g extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {

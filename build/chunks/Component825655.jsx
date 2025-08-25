@@ -6,7 +6,7 @@ require.d(exports, {
 });
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk137920 = require("./137920.js"),
@@ -52,7 +52,7 @@ function g(e) {
   let {
     className: t,
     sourcePage: n
-  } = e, i = (0, o.e7)([u.Z], () => u.Z.getMode()), {
+  } = e, i = (0, a.e7)([u.Z], () => u.Z.getMode()), {
     runningGame: c,
     runningGameApplication: g
   } = (0, l.Z)();
@@ -62,7 +62,7 @@ function g(e) {
     (0, d.sU)()
   }
   return (0, r.jsxs)("div", {
-    className: a()(p.container, t),
+    className: o()(p.container, t),
     children: [(0, r.jsx)(h, {
       game: c,
       application: g

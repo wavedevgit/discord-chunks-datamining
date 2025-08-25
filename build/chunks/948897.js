@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk147913 = require("./147913.js"),
   Chunk998502 = require("./998502.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -15,13 +15,13 @@ function a(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class o extends Chunk147913.Z {
+class a extends Chunk147913.Z {
   constructor(...e) {
-    super(...e), a(this, "ownedLocks", new Set), a(this, "acquireLock", e => {
+    super(...e), o(this, "ownedLocks", new Set), o(this, "acquireLock", e => {
       if (this.ownedLocks.has(e)) returntrue;
       let t = "discord-overlay-global-owner-lock-".concat(e);
       returnfalse !== i.ZP.AcquireGlobalLock(t) && (this.ownedLocks.add(e), true)
     })
   }
 }
-let s = new o
+let s = new a

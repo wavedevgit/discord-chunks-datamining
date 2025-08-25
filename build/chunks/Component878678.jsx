@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk693789 = require("./693789.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk709692 = require("./709692.js"),
@@ -38,7 +38,7 @@ function f(e) {
 
 function _(e) {
   let t, n, {
-      header: a,
+      header: o,
       children: d,
       confirmText: f,
       cancelText: _,
@@ -92,14 +92,14 @@ function _(e) {
     transitionState: y,
     impression: T,
     parentComponent: "ConfirmModal",
-    children: [null != a ? (0, r.jsx)(c.xB, {
+    children: [null != o ? (0, r.jsx)(c.xB, {
       separator: false,
       children: (0, r.jsx)(l.X6q, {
         variant: "heading-lg/semibold",
-        children: a
+        children: o
       })
     }) : null, (0, r.jsx)(c.hz, {
-      className: o()(u.content, b),
+      className: a()(u.content, b),
       children: d
     }), (0, r.jsxs)(c.mz, {
       children: [n, t]

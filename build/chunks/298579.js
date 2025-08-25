@@ -8,7 +8,7 @@ var Chunk147913 = require("./147913.js"),
   Chunk592125 = require("./592125.js"),
   Chunk851268 = require("./851268.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,10 +24,10 @@ class s extends Chunk147913.Z {
     } = e;
     if (null == t || null == n) return;
     let r = i.Z.getChannel(t);
-    null != r && r.isGuildVoice() && a.y(t)
+    null != r && r.isGuildVoice() && o.y(t)
   }
   constructor(...e) {
-    super(...e), o(this, "actions", {
+    super(...e), a(this, "actions", {
       VOICE_CHANNEL_SELECT: this.handleVoiceChannelSelect
     })
   }

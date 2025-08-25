@@ -92,16 +92,16 @@ function C(e) {
       let n = h.Z.getGameByName(S.application.name);
       return null != n && t === n.id
     }) : null),
-    k = (0, i.e7)([p.Z], () => p.Z.getCurrentUserActiveStream()),
-    M = (0, i.e7)([m.Z], () => m.Z.getChannelId()),
+    M = (0, i.e7)([p.Z], () => p.Z.getCurrentUserActiveStream()),
+    k = (0, i.e7)([m.Z], () => m.Z.getChannelId()),
     U = b.default.extractTimestamp(S.id) + y.O < Date.now(),
     G = (0, r.jsx)(r.Fragment, {
-      children: (0, o._0)(S, N, I)
+      children: (0, a._0)(S, N, I)
     }),
     {
       newestAnalyticsLocation: B
     } = (0, l.ZP)(R, s.Z.REQUEST_TO_STREAM_INVITE_EMBED);
-  return U ? t = v.intl.string(O.default.u4QmWl) : null != k ? t = v.intl.string(O.default.P0wwmJ) : M !== N.id ? t = v.intl.string(O.default.qRXatr) : null == j && (t = v.intl.string(O.default["43zohI"])), (0, r.jsx)(c.W, {
+  return U ? t = v.intl.string(O.default.u4QmWl) : null != M ? t = v.intl.string(O.default.P0wwmJ) : k !== N.id ? t = v.intl.string(O.default.qRXatr) : null == j && (t = v.intl.string(O.default["43zohI"])), (0, r.jsx)(c.W, {
     header: v.intl.string(O.default.nAyuPj),
     title: C.name,
     staticBannerSrc: w,
@@ -114,7 +114,7 @@ function C(e) {
       trackingArea: u.j_.STREAM,
       disabledReason: t,
       onClick: () => {
-        null != j && ((0, E.isWindows)() ? (0, _.Z)(j.pid) : (0, a.ZDy)(async () => {
+        null != j && ((0, E.isWindows)() ? (0, _.Z)(j.pid) : (0, o.ZDy)(async () => {
           let {
             default: e
           } = await Promise.all([n.e("38697"), n.e("46746"), n.e("79839")]).then(n.bind(n, 60594));

@@ -4,9 +4,9 @@
 var r = require("./938373.js").PROPER,
   Chunk621523 = require("./621523.js"),
   Chunk868984 = require("./868984.js"),
-  o = "​\x85᠎";
+  a = "​\x85᠎";
 module.exports = function(e) {
   return i(function() {
-    return !!a[e]() || o[e]() !== o || r && a[e].name !== e
+    return !!o[e]() || a[e]() !== a || r && o[e].name !== e
   })
 }

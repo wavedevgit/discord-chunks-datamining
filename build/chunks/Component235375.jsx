@@ -8,7 +8,7 @@ require.r(exports), require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk159635 = require("./159635.js"),
   l = require.n(Chunk159635),
   Chunk481060 = require("./481060.js"),
@@ -77,10 +77,10 @@ let S = e => {
       level: t,
       children: n,
       className: r = null,
-      styleSheet: a = {}
+      styleSheet: o = {}
     } = e, s = (0, c.xSt)(), l = parseInt(t, 10), u = s + (isNaN(l) ? 1 : l) - 1;
     return i.createElement("h".concat(u), {
-      className: o()(...T(a, r))
+      className: a()(...T(o, r))
     }, n)
   },
   A = null != Chunk454585.Z ? Chunk454585.Z.defaultRules : null,
@@ -88,11 +88,11 @@ let S = e => {
     link: {
       parse(e, t, n) {
         let r, i = e[2],
-          a = i.startsWith("https://discordapp.com/nitro") || i.startsWith("https://discord.com/nitro"),
-          o = i.startsWith("https://discordapp.com/hypesquad") || i.startsWith("https://discord.com/hypesquad"),
+          o = i.startsWith("https://discordapp.com/nitro") || i.startsWith("https://discord.com/nitro"),
+          a = i.startsWith("https://discordapp.com/hypesquad") || i.startsWith("https://discord.com/hypesquad"),
           s = i.startsWith("/shop/fullscreen?source=1") || i.startsWith("/activities");
-        return r = a || o ? e => {
-          I(), a ? d.Z.open(h.oAB.PREMIUM) : o && d.Z.open(h.oAB.HYPESQUAD_ONLINE), n.changeLog.track(h.rMx.CHANGE_LOG_CTA_CLICKED, {
+        return r = o || a ? e => {
+          I(), o ? d.Z.open(h.oAB.PREMIUM) : a && d.Z.open(h.oAB.HYPESQUAD_ONLINE), n.changeLog.track(h.rMx.CHANGE_LOG_CTA_CLICKED, {
             cta_type: "nitro"
           }), (0, c.Mr3)(m.Xd), e.preventDefault()
         } : s ? e => {
@@ -131,10 +131,10 @@ let S = e => {
     },
     image: {
       react(e, t, i) {
-        let a = n(595173)("./".concat(e.target));
+        let o = n(595173)("./".concat(e.target));
         return (0, r.jsx)("img", {
           alt: e.alt,
-          src: a
+          src: o
         }, i.key)
       }
     },

@@ -5,7 +5,7 @@ var Chunk721653 = require("./721653.js"),
   Chunk85357 = require("./85357.js");
 module.exports = function(e) {
   var t = i(e);
-  return 1 == t.length && t[0][2] ? a(t[0][0], t[0][1]) : function(n) {
+  return 1 == t.length && t[0][2] ? o(t[0][0], t[0][1]) : function(n) {
     return n === e || r(n, e, t)
   }
 }

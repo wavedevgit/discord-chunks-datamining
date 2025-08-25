@@ -21,29 +21,29 @@ function l(e) {
   if (!t) return null;
   switch (t) {
     case "SELECT_PAYMENT_METHOD":
-      n = a.intl.string(a.t.Tdb5qa);
+      n = o.intl.string(o.t.Tdb5qa);
       break;
     case "ADD_NEW_PAYMENT_METHOD":
-      n = a.intl.string(a.t["6d44Fx"])
+      n = o.intl.string(o.t["6d44Fx"])
   }
   return (0, r.jsxs)("div", {
-    className: o.paymentRestrictionBannerContainer,
+    className: a.paymentRestrictionBannerContainer,
     children: [(0, r.jsxs)("div", {
-      className: o.appsIconContainer,
+      className: a.appsIconContainer,
       children: [(0, r.jsx)(i.jje, {
         size: "md",
         color: "white",
-        className: o.icon
+        className: a.icon
       }), (0, r.jsx)(i.jje, {
         size: "md",
         color: "currentColor",
-        className: o.iconDark
+        className: a.iconDark
       })]
     }), (0, r.jsx)(i.Text, {
       variant: "text-sm/normal",
       children: n
     }), (0, r.jsx)("div", {
-      className: o.paymentRestrictionBannerBackgroundImage
+      className: a.paymentRestrictionBannerBackgroundImage
     })]
   })
 }

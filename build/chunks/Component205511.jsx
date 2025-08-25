@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk959078 = require("./959078.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -78,7 +78,7 @@ function R(e) {
   let {
     quest: t,
     useReducedMotion: n
-  } = e, a = (0, p.n)(), l = (0, E.k3)(t.id, g.jn.QUEST_BAR_V2, g.jn.QUEST_BAR_V2), u = (0, E.g2)({
+  } = e, o = (0, p.n)(), l = (0, E.k3)(t.id, g.jn.QUEST_BAR_V2, g.jn.QUEST_BAR_V2), u = (0, E.g2)({
     useReducedMotion: n
   }), b = (0, f.O5)(), y = (0, _.aM)(), {
     errorHints: I,
@@ -102,17 +102,17 @@ function R(e) {
     let e = I.length > 0,
       n = () => (0, r.jsx)(r.Fragment, {
         children: I.map((e, n) => {
-          if (e.type === s.K.EXPIRED_CREDENTIAL && a) {
+          if (e.type === s.K.EXPIRED_CREDENTIAL && o) {
             let i = d.Z.getAccount(e.connected_account_id, e.connected_account_type),
-              a = (0, h.C9)(e),
-              o = (0, h._j)(e);
+              o = (0, h.C9)(e),
+              a = (0, h._j)(e);
             return (0, r.jsx)(N, {
-              children: O.intl.format(a, {
+              children: O.intl.format(o, {
                 account_name: null == i ? true : i.name,
                 onClick: () => {
                   (0, h.fY)({
                     quest: t,
-                    platformType: o
+                    platformType: a
                   }, {
                     content: g.jn.QUEST_BAR,
                     ctaContent: f.jZ.DEFIBRILLATOR_RECONNECT_CONSOLE,
@@ -144,7 +144,7 @@ function R(e) {
         })
       })
     }
-  }, [I, t, a, y]);
+  }, [I, t, o, y]);
 
   function P() {
     return 0 === I.length ? null : (0, r.jsx)(N, {
@@ -165,14 +165,14 @@ function R(e) {
         variant: "text-xs/medium",
         children: A
       }), (0, r.jsx)(c.P3F, {
-        className: o()(v.microphoneUnitRefreshIconWrapper, {
+        className: a()(v.microphoneUnitRefreshIconWrapper, {
           [v.disabled]: T
         }),
         onClick: () => S(),
         children: u.render()
       })]
     }), (0, r.jsxs)("div", {
-      className: o()({
+      className: a()({
         [v.opacity_50]: T
       }),
       children: [R(), P()]
@@ -183,7 +183,7 @@ let P = function(e) {
   let {
     quest: t,
     taskDetails: n
-  } = e, a = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), o = (0, m.z6)(), s = i.useMemo(() => (0, h.B3)(t).filter(e => o.xboxAndPlaystationAccounts.find(t => t.type === e)), [o.xboxAndPlaystationAccounts, t]), {
+  } = e, o = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), a = (0, m.z6)(), s = i.useMemo(() => (0, h.B3)(t).filter(e => a.xboxAndPlaystationAccounts.find(t => t.type === e)), [a.xboxAndPlaystationAccounts, t]), {
     steps: c,
     hasConnectedAccounts: d,
     isProgressingQuestForLaunchedGame: f,
@@ -191,23 +191,23 @@ let P = function(e) {
   } = i.useMemo(() => {
     var e;
     let i = s.length > 0,
-      a = i && (0, h.Bz)(t),
+      o = i && (0, h.Bz)(t),
       l = t.config.messages.gameTitle,
       c = (null == (e = t.userStatus) ? true : e.completedAt) != null;
     return {
       steps: [{
-        renderContent: () => (0, r.jsx)(b.Q, A(T({}, o), {
+        renderContent: () => (0, r.jsx)(b.Q, A(T({}, a), {
           quest: t,
           sourceQuestContent: g.jn.QUEST_BAR_V2
         })),
-        isComplete: i || a || c
+        isComplete: i || o || c
       }, {
         renderContent: () => (0, r.jsx)(y.y3, {
           children: O.intl.formatToPlainString(O.t["+8JB6e"], {
             gameTitle: l
           })
         }),
-        isComplete: a || c
+        isComplete: o || c
       }, {
         renderContent: () => (0, r.jsx)(y.y3, {
           children: O.intl.formatToPlainString(O.t.HhfrYW, {
@@ -217,15 +217,15 @@ let P = function(e) {
         isComplete: c
       }],
       hasConnectedAccounts: i,
-      isProgressingQuestForLaunchedGame: a,
+      isProgressingQuestForLaunchedGame: o,
       isQuestComplete: c
     }
-  }, [o, s.length, t, n.targetMinutes]), p = d && !f && !_;
+  }, [a, s.length, t, n.targetMinutes]), p = d && !f && !_;
   return (0, r.jsx)(y.ZP, {
     heading: O.intl.string(O.t.UPWlJi),
     steps: c,
     children: p && (0, r.jsx)(R, {
-      useReducedMotion: a,
+      useReducedMotion: o,
       quest: t
     })
   })

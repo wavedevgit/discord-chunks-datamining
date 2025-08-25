@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
@@ -73,14 +73,14 @@ function j(e, t) {
   }), e
 }
 
-function k(e) {
+function M(e) {
   let t = (null == e ? true : e.name) === "" ? null : null == e ? true : e.name;
   return null != t ? P.intl.formatToPlainString(P.t["0wJXSk"], {
     name: t
   }) : P.intl.string(P.t.eXan7O)
 }
 
-function M(e, t) {
+function k(e, t) {
   return (e.isDM() || e.isGroupDM() ? P.intl.string(P.t["9FaEzs"]) : e.isGuildStageVoice() ? P.intl.string(P.t.QygGCA) : P.intl.string(P.t.msxteH)) + (null != t ? " (".concat(t, ")") : "")
 }
 
@@ -90,20 +90,20 @@ function U(e) {
     otherActivities: n,
     voiceActivityChannel: r
   } = e, i = [], {
-    descriptiveTextEnabled: a
+    descriptiveTextEnabled: o
   } = (0, O.f)({
     location: "StackedActivityStatus"
   }), {
-    enableTopNavButton: o
+    enableTopNavButton: a
   } = (0, m.Cq)({
     location: "StackedActivityStatus"
-  }), s = (0, _.ZP)(r), l = a || o;
-  return null != t && i.push(k(t)), n.forEach(e => {
+  }), s = (0, _.ZP)(r), l = o || a;
+  return null != t && i.push(M(t)), n.forEach(e => {
     let {
       tooltip: t
     } = (0, v.Z)(e, l);
     null != t && i.push(t)
-  }), null == t && null != r && i.push(M(r, s)), i.length > 0 ? i.join(", ") : ""
+  }), null == t && null != r && i.push(k(r, s)), i.length > 0 ? i.join(", ") : ""
 }
 
 function G(e) {
@@ -111,11 +111,11 @@ function G(e) {
     textVariant: t,
     className: n,
     hasCustomStatusText: i,
-    totalActivityCount: a
-  } = e, s = a - 1;
+    totalActivityCount: o
+  } = e, s = o - 1;
   return (0, r.jsxs)(l.xv, {
     variant: t,
-    className: o()(n, w.activityCounter),
+    className: a()(n, w.activityCounter),
     color: i ? "status-positive" : "none",
     children: ["+", s]
   })
@@ -128,7 +128,7 @@ function B(e) {
   } = e;
   return (0, r.jsx)(l.xv, {
     variant: t,
-    className: o()(w.dot, n),
+    className: a()(w.dot, n),
     children: N.l
   })
 }
@@ -137,7 +137,7 @@ function Z(e) {
   let {
     user: t,
     activities: n,
-    applicationStream: a,
+    applicationStream: o,
     voiceChannel: l,
     textClassName: _,
     iconClassName: m,
@@ -148,8 +148,8 @@ function Z(e) {
     hideTooltip: L = false
   } = e;
   (0, f.Z)(null == t ? true : t.id);
-  let k = (null == a ? true : a.discoverable) !== false ? a : null,
-    M = (0, g.Cf)(k),
+  let M = (null == o ? true : o.discoverable) !== false ? o : null,
+    k = (0, g.Cf)(M),
     Z = i.useMemo(() => {
       var e, t;
       let r = null == n ? true : n.find(e => {
@@ -171,17 +171,17 @@ function Z(e) {
           type: t,
           name: n
         } = e;
-        return t !== R.IIU.CUSTOM_STATUS && t !== R.IIU.HANG_STATUS && n !== (null == M ? true : M.name)
+        return t !== R.IIU.CUSTOM_STATUS && t !== R.IIU.HANG_STATUS && n !== (null == k ? true : k.name)
       })) ? e : [], (e, t) => null != e.application_id && null != t.application_id && e.application_id === t.application_id || null != e.name && null != t.name && e.name === t.name)
-    }, [n, null == M ? true : M.name]),
-    Y = null == n ? true : n.find(e => e.name === (null == M ? true : M.name)),
+    }, [n, null == k ? true : k.name]),
+    Y = null == n ? true : n.find(e => e.name === (null == k ? true : k.name)),
     W = (null == t ? true : t.bot) === true,
     K = (0, c.e7)([y.Z], () => y.Z.isBlockedOrIgnored(null == t ? true : t.id)),
     z = (0, p.Z)({
       location: "ActivityStatus"
     }) && null != Z ? (0, h.Z)(Z) : null,
     q = (null == Z ? true : Z.state) != null || null != z,
-    X = null != k,
+    X = null != M,
     Q = !X && null != l,
     J = H.length + (X || Q ? 1 : 0),
     $ = J > 1,
@@ -195,8 +195,8 @@ function Z(e) {
   let en = function() {
       let e = arguments.length > 0 && true !== arguments[0] && arguments[0],
         t = true === e || L;
-      if (null != k) return (0, r.jsx)(T.Z, {
-        stream: k,
+      if (null != M) return (0, r.jsx)(T.Z, {
+        stream: M,
         game: Y,
         textVariant: "text-".concat(O, "/medium"),
         textClassName: _,
@@ -232,8 +232,8 @@ function Z(e) {
           hideText: false,
           canTruncate: false
         };
-      return null != k && e.push((0, r.jsx)(T.Z, j(x({
-        stream: k,
+      return null != M && e.push((0, r.jsx)(T.Z, j(x({
+        stream: M,
         game: null == n ? true : n.find(d.Z)
       }, t), {
         showChannelName: true
@@ -253,21 +253,21 @@ function Z(e) {
       hasCustomStatusText: q,
       totalActivityCount: J
     }),
-    ea = () => 0 === J ? null : $ && !W ? L ? (0, r.jsxs)("div", {
-      className: o()(w.activityContainer, ee && w.iconOnly),
+    eo = () => 0 === J ? null : $ && !W ? L ? (0, r.jsxs)("div", {
+      className: a()(w.activityContainer, ee && w.iconOnly),
       children: [en(), ei()]
     }) : (0, r.jsx)(u.ua7, {
-      tooltipContentClassName: o()(w.container, w.activitiesTooltip, w.hasMultipleActivities),
+      tooltipContentClassName: a()(w.container, w.activitiesTooltip, w.hasMultipleActivities),
       delay: N.X,
       text: er(),
       "aria-label": et,
       children: e => (0, r.jsxs)("div", j(x({
-        className: o()(w.activityContainer, ee && w.iconOnly)
+        className: a()(w.activityContainer, ee && w.iconOnly)
       }, e), {
         children: [en(true), ei()]
       }))
     }) : en(),
-    eo = o()(w.container, {
+    ea = a()(w.container, {
       [w.textXs]: "xs" === O,
       [w.textSm]: "sm" === O
     }),
@@ -279,13 +279,13 @@ function Z(e) {
       hideTooltip: L,
       textClassName: _,
       iconClassName: m,
-      tooltipClassName: eo,
+      tooltipClassName: ea,
       voiceChannel: l,
       hangStatus: V
     });
   return (0, r.jsxs)("div", {
-    className: eo,
-    children: [ea(), null != Z && J > 0 && (0, r.jsx)(B, {
+    className: ea,
+    children: [eo(), null != Z && J > 0 && (0, r.jsx)(B, {
       textVariant: "text-".concat(O, "/normal"),
       className: _
     }), es(), P && (0, r.jsx)(I.Z, {})]

@@ -6,33 +6,33 @@ require.d(exports, {
 }), require("./388685.js"), require("./539854.js");
 var Chunk887490 = require("./887490.js");
 let i = 250,
-  a = new WeakMap,
   o = new WeakMap,
+  a = new WeakMap,
   s = {
     isMerging(e) {
       var t;
-      return null == (t = o.get(e)) || t
+      return null == (t = a.get(e)) || t
     },
     isSaving(e) {
       var t;
-      return null == (t = a.get(e)) || t
+      return null == (t = o.get(e)) || t
     },
     withoutMerging(e, t) {
       let n = this.isMerging(e);
-      o.set(e, false);
-      try {
-        t()
-      } finally {
-        o.set(e, n)
-      }
-    },
-    withoutSaving(e, t) {
-      let n = this.isSaving(e);
       a.set(e, false);
       try {
         t()
       } finally {
         a.set(e, n)
+      }
+    },
+    withoutSaving(e, t) {
+      let n = this.isSaving(e);
+      o.set(e, false);
+      try {
+        t()
+      } finally {
+        o.set(e, n)
       }
     },
     withSingleEntry: (e, t) => l(e, "other", false, t),
@@ -45,9 +45,9 @@ let i = 250,
     },
     insertEntry(e, t) {
       let n = !(arguments.length > 2) || true === arguments[2] || arguments[2],
-        a = arguments.length > 3 ? arguments[3] : true,
-        o = arguments.length > 4 ? arguments[4] : true;
-      o = null != o ? o : e.selection, a = null != a ? a : r.bN.richValue(e);
+        o = arguments.length > 3 ? arguments[3] : true,
+        a = arguments.length > 4 ? arguments[4] : true;
+      a = null != a ? a : e.selection, o = null != o ? o : r.bN.richValue(e);
       let {
         history: l
       } = e, c = s.currentEntry(e);
@@ -56,8 +56,8 @@ let i = 250,
         type: t,
         mergeable: n,
         createdAt: Date.now(),
-        value: a,
-        selection: o
+        value: o,
+        selection: a
       }), l.index = l.stack.length - 1
     },
     mergeEntry(e) {
@@ -66,20 +66,20 @@ let i = 250,
           selection: n
         } = e,
         i = r.bN.richValue(e),
-        a = s.currentEntry(e);
-      null != a && (a.value = i, a.selection = n, t || (a.mergeable = false))
+        o = s.currentEntry(e);
+      null != o && (o.value = i, o.selection = n, t || (o.mergeable = false))
     }
   };
 
 function l(e, t, n, i) {
-  let o = e.children,
+  let a = e.children,
     l = e.selection,
     c = s.isSaving(e);
-  a.set(e, false);
+  o.set(e, false);
   try {
-    let a = i();
-    return c && (n ? s.mergeEntry(e) : e.children !== o ? s.insertEntry(e, t, false) : s.isMerging(e) && null != e.selection && (null == l || !r.M8.equals(e.selection, l)) && s.mergeEntry(e)), a
+    let o = i();
+    return c && (n ? s.mergeEntry(e) : e.children !== a ? s.insertEntry(e, t, false) : s.isMerging(e) && null != e.selection && (null == l || !r.M8.equals(e.selection, l)) && s.mergeEntry(e)), o
   } finally {
-    a.set(e, c)
+    o.set(e, c)
   }
 }

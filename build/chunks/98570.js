@@ -3,7 +3,7 @@
 "use strict";
 var Chunk115861 = require("./115861.js"),
   i = "​",
-  a = "᠎";
+  o = "᠎";
 module.exports = function() {
-  return String.prototype.trim && i.trim() === i && a.trim() === a && ("_" + a).trim() === "_" + a && (a + "_").trim() === a + "_" ? String.prototype.trim : Chunk115861
+  return String.prototype.trim && i.trim() === i && o.trim() === o && ("_" + o).trim() === "_" + o && (o + "_").trim() === o + "_" ? String.prototype.trim : Chunk115861
 }

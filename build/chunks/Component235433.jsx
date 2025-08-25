@@ -31,8 +31,8 @@ function y(e) {
   }).enabled, O = _.ZP.canUsePremiumProfileCustomization(t), {
     analyticsLocations: v
   } = (0, l.ZP)(), I = null != t.displayNameStyles, T = [];
-  y && T.push(a.z.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE);
-  let [S, A] = (0, c.US)(T), C = S === a.z.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE, N = (0, i.useCallback)(() => {
+  y && T.push(o.z.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE);
+  let [S, A] = (0, c.US)(T), C = S === o.z.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE, N = (0, i.useCallback)(() => {
     A(m.L.TAKE_ACTION), f.default.track(h.rMx.DISPLAY_NAME_STYLES_FROM_SETTINGS), (0, d.I)({
       analyticsLocations: v
     })
@@ -41,7 +41,7 @@ function y(e) {
   }, []);
   return y || I ? (0, r.jsx)(p.Z, {
     title: g.intl.string(E.default["86GtGB"]),
-    titleIcon: C ? (0, r.jsx)(o.IGR, {
+    titleIcon: C ? (0, r.jsx)(a.IGR, {
       text: g.intl.string(g.t.y2b7CA),
       className: b.newBadge
     }) : true,
@@ -49,12 +49,12 @@ function y(e) {
     showPremiumIcon: O,
     children: (0, r.jsxs)("div", {
       className: b.buttonsContainer,
-      children: [y && (0, r.jsx)(o.zxk, {
+      children: [y && (0, r.jsx)(a.zxk, {
         variant: "primary",
         size: "sm",
         text: g.intl.string(E.default.vJqrIi),
         onClick: N
-      }), I && (0, r.jsx)(o.zxk, {
+      }), I && (0, r.jsx)(a.zxk, {
         variant: "secondary",
         size: "sm",
         text: g.intl.string(E.default.ymq8WV),

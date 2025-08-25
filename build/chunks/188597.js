@@ -60,7 +60,7 @@ let v = async e => {
     componentType: t,
     messageId: n,
     messageFlags: i,
-    customId: a,
+    customId: o,
     componentId: s,
     applicationId: l,
     channelId: p,
@@ -71,15 +71,15 @@ let v = async e => {
   await c.Z.unarchiveThreadIfNecessary(p), (0, f.kz)(E, {
     messageId: n,
     data: {
-      interactionType: o.B8.MESSAGE_COMPONENT,
+      interactionType: a.B8.MESSAGE_COMPONENT,
       applicationId: l,
-      customId: a,
+      customId: o,
       componentId: s
     },
     onFailure: (e, t) => T(p, e, t)
   }), null != g && (0, f.B0)(n, E, g, s);
   let y = {
-    type: o.B8.MESSAGE_COMPONENT,
+    type: a.B8.MESSAGE_COMPONENT,
     nonce: E,
     guild_id: h,
     channel_id: p,
@@ -89,7 +89,7 @@ let v = async e => {
     session_id: u.default.getSessionId(),
     data: b({
       component_type: t,
-      custom_id: a
+      custom_id: o
     }, I(g))
   };
   await r.tn.post({
@@ -104,7 +104,7 @@ let v = async e => {
 
 function I(e) {
   if (null == e) return null;
-  if (e.type === o.re.STRING_SELECT || e.type === o.re.TEXT_INPUT) return e;
+  if (e.type === a.re.STRING_SELECT || e.type === a.re.TEXT_INPUT) return e;
   let t = e.selectedOptions.map(e => e.value);
   return {
     type: e.type,
@@ -112,26 +112,26 @@ function I(e) {
   }
 }
 let T = (e, t, n) => {
-    null == n && null != t && a.Z.sendClydeError(e, t)
+    null == n && null != t && o.Z.sendClydeError(e, t)
   },
-  S = (e, t, n, r, a) => {
+  S = (e, t, n, r, o) => {
     if (!t.ok) {
       if (!t.hasErr)
         if (t.status >= 400 && t.status < 500 && t.body)
           if (t.body.code !== m.evJ.INVALID_FORM_BODY || !t.body.errors) return void(0, f.yr)(e, t.body.code, t.body.message, t.status);
           else {
-            let o = (0, h.e)(t.body.errors);
-            null != o && ("INTERACTION_APPLICATION_COMMAND_INVALID_VERSION" === o.code || "INTERACTION_APPLICATION_COMMAND_INVALID" === o.code) && i.Z.dispatch({
+            let a = (0, h.e)(t.body.errors);
+            null != a && ("INTERACTION_APPLICATION_COMMAND_INVALID_VERSION" === a.code || "INTERACTION_APPLICATION_COMMAND_INVALID" === a.code) && i.Z.dispatch({
               type: "APPLICATION_COMMAND_EXECUTE_BAD_VERSION",
               applicationId: n,
               channelId: r,
-              guildId: null != a ? a : null
-            }), (0, f.yr)(e, true, null == o ? true : o.message);
+              guildId: null != o ? o : null
+            }), (0, f.yr)(e, true, null == a ? true : a.message);
             return
           }
       else {
-        var o;
-        (0, f.yr)(e, null == (o = t.body) ? true : o.code);
+        var a;
+        (0, f.yr)(e, null == (a = t.body) ? true : a.code);
         return
       }(0, f.yr)(e)
     }
@@ -143,10 +143,10 @@ let C = (e, t) => {
   let n = null == t ? true : t.state,
     r = e.state === m.yb.SENT && y(e.id) < Date.now(),
     i = e.state === m.yb.SEND_FAILED && O(e.id) < Date.now(),
-    a = (null == t ? true : t.data.interactionType) === o.B8.APPLICATION_COMMAND,
+    o = (null == t ? true : t.data.interactionType) === a.B8.APPLICATION_COMMAND,
     s = e.isCommandType();
-  if (a && n === p.F.QUEUED || s && e.state === m.yb.SENDING && null != t) return 0;
-  if (a && n === p.F.CREATED || e.hasFlag(m.iLy.LOADING) && !r) return 1;
+  if (o && n === p.F.QUEUED || s && e.state === m.yb.SENDING && null != t) return 0;
+  if (o && n === p.F.CREATED || e.hasFlag(m.iLy.LOADING) && !r) return 1;
   if (null != e.interaction && e.hasFlag(m.iLy.LOADING) && r) return 3;
   if (null != e.interaction && !e.hasFlag(m.iLy.LOADING) && i) return 3;
   if (s && e.state === m.yb.SEND_FAILED) return 2;
@@ -156,9 +156,9 @@ let C = (e, t) => {
 function N(e) {
   let t = e.options;
   for (;
-    (null == t ? true : t.length) === 1 && (t[0].type === o.jw.SUB_COMMAND_GROUP || t[0].type === o.jw.SUB_COMMAND);) t = t[0].options;
+    (null == t ? true : t.length) === 1 && (t[0].type === a.jw.SUB_COMMAND_GROUP || t[0].type === a.jw.SUB_COMMAND);) t = t[0].options;
   for (let e of null != t ? t : [])
-    if (e.type === o.jw.ATTACHMENT) returnfalse;
+    if (e.type === a.jw.ATTACHMENT) returnfalse;
   returntrue
 }
 

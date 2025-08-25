@@ -48,14 +48,14 @@ function c(e) {
   };
   return (0, r.jsxs)(i.P3F, {
     onClick: s,
-    className: o.accessory,
+    className: a.accessory,
     children: [(0, r.jsx)(i.d3s, {
       size: "xs",
       color: "currentColor"
     }), (0, r.jsx)(i.Text, {
       variant: "text-xs/normal",
-      className: o.accessoryText,
-      children: a.intl.string(a.t["2aXnfX"])
+      className: a.accessoryText,
+      children: o.intl.string(o.t["2aXnfX"])
     })]
   })
 }

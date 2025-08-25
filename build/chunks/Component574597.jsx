@@ -58,8 +58,8 @@ function T(e) {
       if ((null == e ? true : e.type) === g.tM.USER) {
         let i = h.default.getUser(e.value);
         if (null == i) return;
-        return (0, r.jsx)(a.qEK, {
-          size: n ? a.EFr.SIZE_16 : a.EFr.SIZE_24,
+        return (0, r.jsx)(o.qEK, {
+          size: n ? o.EFr.SIZE_16 : o.EFr.SIZE_24,
           src: i.getAvatarURL(null == T ? true : T.id, t),
           status: n ? null : p.Z.getStatus(i.id),
           "aria-hidden": true
@@ -69,8 +69,8 @@ function T(e) {
         var i;
         let n = null != T ? f.Z.getRole(T.id, e.value) : true;
         if (null == n || null == T) return;
-        let o = (0, l._b)(T, n) ? (0, c.Kz)(n, t) : null;
-        return null != o ? (0, r.jsx)(s.Z, I({}, o)) : (0, r.jsx)(a.lZ8, {
+        let a = (0, l._b)(T, n) ? (0, c.Kz)(n, t) : null;
+        return null != a ? (0, r.jsx)(s.Z, I({}, a)) : (0, r.jsx)(o.lZ8, {
           size: "custom",
           color: null != (i = n.colorString) ? i : y.Pbq,
           height: t,
@@ -82,7 +82,7 @@ function T(e) {
       let t = null;
       if (e.type === g.tM.USER) {
         let n = h.default.getUser(e.value);
-        null != n && (t = (0, r.jsx)(o.Z, {
+        null != n && (t = (0, r.jsx)(a.Z, {
           className: O.tag,
           usernameClass: O.username,
           discriminatorClass: O.discriminator,
@@ -95,7 +95,7 @@ function T(e) {
           i = null == n ? null : null == S ? true : S[n.id];
         null != i && (t = (0, r.jsxs)("div", {
           className: O.roleCountContainer,
-          children: [(0, r.jsx)(a.tBG, {
+          children: [(0, r.jsx)(o.tBG, {
             size: "sm",
             color: "currentColor",
             className: O.roleCountIcon

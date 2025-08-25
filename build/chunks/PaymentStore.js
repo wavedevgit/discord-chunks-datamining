@@ -23,7 +23,7 @@ function c(e) {
     payments: t
   } = e;
   for (let e of t) {
-    let t = o.Z.createFromServer(e),
+    let t = a.Z.createFromServer(e),
       n = l.findIndex(t => t.id === e.id);
     false !== n ? l[n] = t : l.push(t)
   }
@@ -33,7 +33,7 @@ function c(e) {
 function u(e) {
   let {
     payment: t
-  } = e, n = o.Z.createFromServer(t), r = l.findIndex(e => e.id === t.id);
+  } = e, n = a.Z.createFromServer(t), r = l.findIndex(e => e.id === t.id);
   false === r ? (l.push(n), l.sort((e, t) => t.createdAt.getTime() - e.createdAt.getTime())) : l[r] = n, l = [...l]
 }
 

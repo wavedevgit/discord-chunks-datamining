@@ -54,8 +54,8 @@ function _(e, t) {
   if (null == e) return {};
   var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -63,8 +63,8 @@ function _(e, t) {
 function p(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -72,7 +72,7 @@ function h(e) {
   let {
     poster: t,
     src: n,
-    width: o,
+    width: a,
     height: l,
     naturalWidth: c,
     naturalHeight: u,
@@ -88,12 +88,12 @@ function h(e) {
     null != e && (d ? e.play().catch(e => {
       if (!(e instanceof DOMException) || "NotAllowedError" !== e.name) throw e
     }) : e.pause())
-  }, [d]), c <= s.N_j && u <= s.XKF || c <= s.XKF && u <= s.N_j) ? (0, r.jsx)(a.Z, {
+  }, [d]), c <= s.N_j && u <= s.XKF || c <= s.XKF && u <= s.N_j) ? (0, r.jsx)(o.Z, {
     ref: h,
     className: f,
     poster: t,
     src: n,
-    width: o,
+    width: a,
     height: l,
     responsive: p,
     muted: true,
@@ -105,7 +105,7 @@ function h(e) {
   }) : (0, r.jsx)("img", {
     alt: "",
     src: t,
-    width: o,
+    width: a,
     height: l
   })
 }
@@ -115,7 +115,7 @@ function m(e) {
     src: t,
     poster: n,
     naturalWidth: i,
-    naturalHeight: a,
+    naturalHeight: o,
     responsive: s,
     autoPlay: c,
     className: d,
@@ -124,7 +124,7 @@ function m(e) {
     alt: g = l.intl.string(l.t.I5gL2N),
     sourceMetadata: E
   } = e, b = _(e, ["src", "poster", "naturalWidth", "naturalHeight", "responsive", "autoPlay", "className", "playable", "renderImageComponent", "alt", "sourceMetadata"]);
-  return (0, r.jsx)(o.h.Consumer, {
+  return (0, r.jsx)(a.h.Consumer, {
     children: e => m(f(u({}, b), {
       alt: g,
       src: n,
@@ -138,7 +138,7 @@ function m(e) {
       children(e) {
         let {
           src: n,
-          size: o,
+          size: a,
           animating: l,
           alt: c
         } = e;
@@ -147,10 +147,10 @@ function m(e) {
           className: d,
           poster: n,
           src: t,
-          width: o.width,
-          height: o.height,
+          width: a.width,
+          height: a.height,
           naturalWidth: i,
-          naturalHeight: a,
+          naturalHeight: o,
           responsive: s,
           play: p && l
         })

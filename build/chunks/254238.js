@@ -75,7 +75,7 @@ async function O() {
 }
 
 function v(e) {
-  o.Z.dispatch({
+  a.Z.dispatch({
     type: "REMOTE_SESSION_CONNECT",
     sessionId: e
   })
@@ -86,7 +86,7 @@ function I(e, t) {
     selfMute: n,
     selfDeaf: r
   } = t;
-  o.Z.dispatch({
+  a.Z.dispatch({
     type: "REMOTE_COMMAND",
     sessionId: e,
     payload: {
@@ -98,7 +98,7 @@ function I(e, t) {
 }
 
 function T(e) {
-  o.Z.dispatch({
+  a.Z.dispatch({
     type: "REMOTE_COMMAND",
     sessionId: e,
     payload: {
@@ -109,7 +109,7 @@ function T(e) {
 
 function S(e, t, n, r) {
   let i = (0, l.z)(n);
-  null != i && (o.Z.dispatch({
+  null != i && (a.Z.dispatch({
     type: "REMOTE_COMMAND",
     sessionId: e,
     payload: b({
@@ -139,31 +139,31 @@ async function A() {
 }
 
 function C(e) {
-  return a.tn.del({
+  return o.tn.del({
     url: m.ANM.CONNECT_REQUEST(e),
     rejectWithError: false
   })
 }
 async function N(e) {
   let t;
-  o.Z.dispatch({
+  a.Z.dispatch({
     type: "GAME_CONSOLE_FETCH_DEVICES_START",
     platform: e
   });
   try {
-    t = await a.tn.get({
+    t = await o.tn.get({
       url: m.ANM.CONSOLES_DEVICES(e),
       rejectWithError: false
     })
   } catch (t) {
-    throw o.Z.dispatch({
+    throw a.Z.dispatch({
       type: "GAME_CONSOLE_FETCH_DEVICES_FAIL",
       platform: e,
       error: t
     }), t
   }
   let n = t.body.devices;
-  return o.Z.dispatch({
+  return a.Z.dispatch({
     type: "GAME_CONSOLE_FETCH_DEVICES_SUCCESS",
     platform: e,
     devices: n
@@ -171,7 +171,7 @@ async function N(e) {
 }
 
 function R(e, t) {
-  o.Z.dispatch({
+  a.Z.dispatch({
     type: "GAME_CONSOLE_SELECT_DEVICE",
     platform: e,
     deviceId: t
@@ -179,12 +179,12 @@ function R(e, t) {
 }
 async function P(e, t, n, i) {
   let s;
-  o.Z.dispatch({
+  a.Z.dispatch({
     type: "GAME_CONSOLE_DEVICE_SEND_COMMAND_START",
     platform: e
   });
   try {
-    s = await a.tn.post({
+    s = await o.tn.post({
       url: m.ANM.CONSOLES_DEVICES_COMMANDS(e, t),
       body: {
         command: r.n.CONNECT_VOICE,
@@ -195,14 +195,14 @@ async function P(e, t, n, i) {
       rejectWithError: false
     })
   } catch (t) {
-    throw o.Z.dispatch({
+    throw a.Z.dispatch({
       type: "GAME_CONSOLE_DEVICE_SEND_COMMAND_FAIL",
       platform: e,
       error: t
     }), t
   }
   let l = s.body.id;
-  return o.Z.dispatch({
+  return a.Z.dispatch({
     type: "WAIT_FOR_REMOTE_SESSION",
     sessionType: e,
     nonce: i,
@@ -212,19 +212,19 @@ async function P(e, t, n, i) {
   }), l
 }
 async function w(e, t, n) {
-  o.Z.dispatch({
+  a.Z.dispatch({
     type: "GAME_CONSOLE_DEVICE_CANCEL_COMMAND_START",
     platform: e,
     deviceId: t,
     commandId: n
   });
   try {
-    await a.tn.del({
+    await o.tn.del({
       url: m.ANM.CONSOLES_DEVICES_COMMAND(e, t, n),
       rejectWithError: false
     })
   } catch (r) {
-    throw o.Z.dispatch({
+    throw a.Z.dispatch({
       type: "GAME_CONSOLE_DEVICE_CANCEL_COMMAND_FAIL",
       platform: e,
       deviceId: t,
@@ -232,7 +232,7 @@ async function w(e, t, n) {
       error: r
     }), r
   }
-  o.Z.dispatch({
+  a.Z.dispatch({
     type: "GAME_CONSOLE_DEVICE_CANCEL_COMMAND_SUCCESS",
     platform: e,
     deviceId: t,

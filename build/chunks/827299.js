@@ -7,11 +7,11 @@ require.d(exports, {
 var Chunk647438 = require("./647438.js"),
   Chunk399606 = require("./399606.js");
 
-function a(e, t) {
+function o(e, t) {
   if (t.has(e)) throw TypeError("Cannot initialize the same private elements twice on an object")
 }
 
-function o(e, t) {
+function a(e, t) {
   return t.get ? t.get.call(e) : t.value
 }
 
@@ -22,11 +22,11 @@ function s(e, t, n) {
 
 function l(e, t) {
   var n = s(e, t, "get");
-  return o(e, n)
+  return a(e, n)
 }
 
 function c(e, t, n) {
-  a(e, t), t.set(e, n)
+  o(e, t), t.set(e, n)
 }
 
 function u(e, t, n) {
@@ -132,8 +132,8 @@ function g(e) {
 function E(e, t) {
   let {
     dangerousAbortOnCleanup: n = false,
-    get: a,
-    load: o,
+    get: o,
+    load: a,
     maxNumFetchErrors: s = h,
     queryId: l,
     useStateHook: c
@@ -141,7 +141,7 @@ function E(e, t) {
   return function() {
     for (var t = arguments.length, u = Array(t), d = 0; d < t; d++) u[d] = arguments[d];
     let f = (0, r.useMemo)(() => l(...u), u),
-      _ = c(Array.isArray(e) ? e : [e], () => a(...u), u),
+      _ = c(Array.isArray(e) ? e : [e], () => o(...u), u),
       h = p.getState(f),
       E = h.error,
       b = (0, r.useRef)(u);
@@ -159,7 +159,7 @@ function E(e, t) {
       O = (0, r.useCallback)(() => {
         if (null == f || !y()) return;
         let e = new AbortController;
-        p.loadingStart(f, n ? e : true), o(e.signal, ...b.current).then(e => (p.loadingDone(f, true), e)).catch(t => {
+        p.loadingStart(f, n ? e : true), a(e.signal, ...b.current).then(e => (p.loadingDone(f, true), e)).catch(t => {
           if (p.loadingDone(f), e.signal.aborted) return;
           let n = g(t);
           !(h.fetchFailCounter >= s) && n instanceof m && (n.status >= 500 || 429 === n.status) || p.setError(f, n)

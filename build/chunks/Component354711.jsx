@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk710260 = require("./710260.jsx"),
   Chunk463085 = require("./463085.jsx"),
   Chunk472558 = require("./472558.js"),
@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
 function d(e) {
   var t, n;
   let {
-    theme: a,
+    theme: o,
     gradient: d,
     disableAdaptiveTheme: f,
     reduceAdaptiveTheme: _,
@@ -25,11 +25,11 @@ function d(e) {
     theme: h
   } = i.useContext(s.Ni);
   return (0, r.jsx)(l.z, {
-    theme: a,
+    theme: o,
     gradient: d,
     disableAdaptiveTheme: f,
     reduceAdaptiveTheme: _,
-    children: p(o()((0, c.Q)(null != (n = null != (t = null == d ? true : d.theme) ? t : a) ? n : h), {
+    children: p(a()((0, c.Q)(null != (n = null != (t = null == d ? true : d.theme) ? t : o) ? n : h), {
       [u.e3]: null != d,
       "disable-adaptive-theme": f,
       "reduce-adaptive-theme": _

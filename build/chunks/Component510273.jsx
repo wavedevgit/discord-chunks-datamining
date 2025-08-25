@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk955204 = require("./955204.js"),
   Chunk818765 = require("./818765.js"),
@@ -71,7 +71,7 @@ function p(e) {
     achievement: t,
     unlocked: n
   } = e, {
-    name: a,
+    name: o,
     description: p,
     rarity: h,
     hideDescriptionUntilUnlock: m,
@@ -93,7 +93,7 @@ function p(e) {
     },
     O = b ? s.P3F : "div";
   return (0, r.jsxs)(O, {
-    className: o()(d.container, b && d.actionable),
+    className: a()(d.container, b && d.actionable),
     onClick: y,
     children: [(0, r.jsx)("div", {
       className: d.iconContainer,
@@ -107,7 +107,7 @@ function p(e) {
       children: [(0, r.jsx)(s.Text, {
         variant: "text-md/semibold",
         color: "header-primary",
-        children: a()
+        children: o()
       }), (0, r.jsx)(s.Text, {
         variant: "text-xs/medium",
         color: "header-secondary",

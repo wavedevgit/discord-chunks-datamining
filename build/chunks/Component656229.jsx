@@ -29,7 +29,7 @@ function _(e) {
     onUpsellClick: b
   } = e, {
     newestAnalyticsLocation: y
-  } = (0, a.ZP)(), O = p || (null == n ? true : n.canUsePremiumProfileCustomization) || false, v = O ? i.vdY : i.SrA, I = (0, o.M)(O), T = () => {
+  } = (0, o.ZP)(), O = p || (null == n ? true : n.canUsePremiumProfileCustomization) || false, v = O ? i.vdY : i.SrA, I = (0, a.M)(O), T = () => {
     if (!O && !I) {
       null == b || b();
       return

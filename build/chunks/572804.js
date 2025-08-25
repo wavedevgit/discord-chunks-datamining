@@ -18,8 +18,8 @@ function c(e) {
   let {
     message: r,
     userId: i,
-    suppressEveryone: a = false,
-    suppressRoles: o = false
+    suppressEveryone: o = false,
+    suppressRoles: a = false
   } = e;
   return d({
     userId: i,
@@ -28,13 +28,13 @@ function c(e) {
     mentionUsers: r.mentions,
     mentionRoles: r.mentionRoles,
     mentionGames: null != (n = null == (t = r.mentionGames) ? true : t.map(e => e.id)) ? n : [],
-    suppressEveryone: a,
-    suppressRoles: o
+    suppressEveryone: o,
+    suppressRoles: a
   })
 }
 
 function u(e) {
-  var t, n, r, i, a, o;
+  var t, n, r, i, o, a;
   let {
     rawMessage: s,
     userId: l,
@@ -46,8 +46,8 @@ function u(e) {
     channelId: s.channel_id,
     mentionEveryone: null != (r = s.mention_everyone) && r,
     mentionUsers: null != (i = null == (t = s.mentions) ? true : t.map(e => e.id)) ? i : [],
-    mentionRoles: null != (a = s.mention_roles) ? a : [],
-    mentionGames: null != (o = null == (n = s.mention_games) ? true : n.map(e => e.id)) ? o : [],
+    mentionRoles: null != (o = s.mention_roles) ? o : [],
+    mentionGames: null != (a = null == (n = s.mention_games) ? true : n.map(e => e.id)) ? a : [],
     suppressEveryone: c,
     suppressRoles: u
   })
@@ -72,7 +72,7 @@ function d(e) {
   let h = i.Z.getChannel(n);
   if (null == h) returnfalse;
   let m = h.getGuildId();
-  if (null == m || null == o.Z.getGuild(m)) returnfalse;
-  let g = a.ZP.getMember(m, t);
+  if (null == m || null == a.Z.getGuild(m)) returnfalse;
+  let g = o.ZP.getMember(m, t);
   return null != g && d.some(e => g.roles.includes(e))
 }

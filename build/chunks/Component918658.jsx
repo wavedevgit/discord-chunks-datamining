@@ -3,12 +3,12 @@
 "use strict";
 require.d(exports, {
   Z: () => j,
-  d: () => k
+  d: () => M
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk692547 = require("./692547.js"),
   Chunk755721 = require("./755721.js"),
@@ -39,11 +39,11 @@ function w(e) {
     className: t,
     onClick: n,
     children: i,
-    buttonRef: a
+    buttonRef: o
   } = e;
   return (0, r.jsx)(c.zx, {
-    buttonRef: a,
-    className: o()(P.button, t),
+    buttonRef: o,
+    className: a()(P.button, t),
     innerClassName: P.buttonInner,
     look: c.zx.Looks.OUTLINED,
     color: c.zx.Colors.WHITE,
@@ -85,8 +85,8 @@ function j() {
     t = (0, Chunk442837.e7)([Chunk914010.Z], () => Chunk914010.Z.getGuildId()),
     n = (0, Chunk442837.e7)([Chunk944486.Z], () => Chunk944486.Z.getChannelId(exports)),
     {
-      viewingRoles: a,
-      backNavigationSection: o,
+      viewingRoles: o,
+      backNavigationSection: a,
       isFullServerPreview: c,
       isServerShopPreview: O
     } = (0, Chunk442837.cj)([Chunk160404.Z], () => ({
@@ -96,14 +96,14 @@ function j() {
       isServerShopPreview: null != exports && Chunk160404.Z.isViewingServerShop(exports)
     }));
   if (null == Chunk120356 || null == exports) return null;
-  let j = x(o),
-    k = L(o),
-    M = require === Chunk176505.oC.GUILD_ONBOARDING,
+  let j = x(a),
+    M = L(a),
+    k = require === Chunk176505.oC.GUILD_ONBOARDING,
     U = e => {
       let {
         backToSettings: n
       } = e;
-      null != t && (I.Z.isFullServerPreview(t) && (0, m.uL)(S.Z5c.CHANNEL(t)), f.ZP.shouldShowOnboarding(t) && (d.Z.finishOnboarding(t), (0, _.EI)(t)), (0, v.mL)(t), n && h.Z.open(t, o), o === S.pNK.ROLE_SUBSCRIPTIONS && (0, p.GN)(t))
+      null != t && (I.Z.isFullServerPreview(t) && (0, m.uL)(S.Z5c.CHANNEL(t)), f.ZP.shouldShowOnboarding(t) && (d.Z.finishOnboarding(t), (0, _.EI)(t)), (0, v.mL)(t), n && h.Z.open(t, a), a === S.pNK.ROLE_SUBSCRIPTIONS && (0, p.GN)(t))
     };
   return (0, Chunk951288.jsxs)(Chunk481060.qXd, {
     color: Chunk481060.DM8.BRAND,
@@ -119,7 +119,7 @@ function j() {
         direction: Chunk671533.Z.Directions.LEFT,
         className: Chunk829675.backArrow
       }), j]
-    }), M && Chunk755721 ? (0, Chunk951288.jsx)("div", {
+    }), k && Chunk755721 ? (0, Chunk951288.jsx)("div", {
       className: Chunk829675.noticeContents,
       children: (0, Chunk951288.jsx)("div", {
         className: Chunk829675.noticeText,
@@ -147,7 +147,7 @@ function j() {
           return (0, r.jsxs)(w, {
             onClick: n,
             buttonRef: e,
-            children: [k, (0, r.jsx)(y.Z, {
+            children: [M, (0, r.jsx)(y.Z, {
               width: 16,
               height: 16,
               direction: y.Z.Directions.DOWN,
@@ -173,7 +173,7 @@ function j() {
           color: Chunk692547.Z.unsafe_rawColors.YELLOW_300.css
         })
       })]
-    }), Chunk755721 || o === Chunk981631.pNK.ROLE_SUBSCRIPTIONS ? null : (0, Chunk951288.jsx)(D, {
+    }), Chunk755721 || a === Chunk981631.pNK.ROLE_SUBSCRIPTIONS ? null : (0, Chunk951288.jsx)(D, {
       onClick: () => U({
         backToSettings: false
       })
@@ -181,12 +181,12 @@ function j() {
   })
 }
 
-function k(e) {
+function M(e) {
   let {
     guildId: t
   } = e;
   return (0, s.e7)([I.Z], () => I.Z.isViewingRoles(t)) ? (0, r.jsx)("div", {
-    className: o()(P.settingsWrapper, {
+    className: a()(P.settingsWrapper, {
       [P.windows]: (0, O.isWindows)(),
       [P.osx]: (0, O.isMac)()
     }),

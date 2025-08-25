@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
 function E(e) {
   let {
     channel: t
-  } = e, n = i.useRef(null), [E, b] = i.useState(false), y = (0, l.ZP)(s.Z.EMOJI_PICKER), [O, v] = i.useState(false), I = (0, a.e7)([h.Z], () => h.Z.getGuild(null == t ? true : t.guild_id)), T = (0, c.qt)({
+  } = e, n = i.useRef(null), [E, b] = i.useState(false), y = (0, l.ZP)(s.Z.EMOJI_PICKER), [O, v] = i.useState(false), I = (0, o.e7)([h.Z], () => h.Z.getGuild(null == t ? true : t.guild_id)), T = (0, c.qt)({
     autoTrackExposure: false,
     location: s.Z.EMOJI_PICKER
   }), {
@@ -67,10 +67,10 @@ function E(e) {
       }
     }), v(false)
   }, [t]);
-  return (0, r.jsxs)(o.zx, {
+  return (0, r.jsxs)(a.zx, {
     tabIndex: false,
-    color: o.zx.Colors.PRIMARY,
-    size: o.zx.Sizes.MEDIUM,
+    color: a.zx.Colors.PRIMARY,
+    size: a.zx.Sizes.MEDIUM,
     onClick: N,
     disabled: C,
     submitting: E,

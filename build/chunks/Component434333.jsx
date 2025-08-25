@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk1561 = require("./1561.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk198551 = require("./198551.js");
@@ -21,17 +21,17 @@ let u = {
     let {
       role: n,
       children: i,
-      className: a,
+      className: o,
       onDismiss: d,
       backgroundColor: f = u.RED,
       icon: _ = l.Mgn,
       iconClassName: p
     } = e;
     return (0, r.jsxs)("div", {
-      className: o()(c.error, a, f),
+      className: a()(c.error, o, f),
       ref: t,
       children: [(0, r.jsx)(_, {
-        className: o()(c.icon, p),
+        className: a()(c.icon, p),
         color: "currentColor"
       }), (0, r.jsx)("div", {
         role: n,

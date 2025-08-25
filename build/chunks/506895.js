@@ -11,7 +11,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk944486 = require("./944486.js");
 
 function s(e) {
-  let t = (0, r.e7)([o.Z], () => o.Z.getChannelId()),
+  let t = (0, r.e7)([a.Z], () => a.Z.getChannelId()),
     n = (0, r.e7)([i.ZP], () => {
       if (null == t) return null;
       let n = i.ZP.getEmbeddedActivitiesForChannel(t).filter(t => t.applicationId === e);
@@ -20,7 +20,7 @@ function s(e) {
     s = null == n ? true : n.compositeInstanceId,
     l = null == n ? true : n.location,
     c = (0, r.e7)([i.ZP], () => i.ZP.getCurrentEmbeddedActivity()),
-    u = (0, a.KF)(t) === a.jy.CAN_LAUNCH;
+    u = (0, o.KF)(t) === o.jy.CAN_LAUNCH;
   return {
     currentChannelId: t,
     instanceId: s,
@@ -31,7 +31,7 @@ function s(e) {
 }
 
 function l(e, t) {
-  let n = null != t ? t : o.Z.getChannelId();
+  let n = null != t ? t : a.Z.getChannelId();
   if (null == n) return {
     currentChannelId: null,
     instanceId: null,
@@ -39,7 +39,7 @@ function l(e, t) {
     isCurrentlyInInstance: false,
     canLaunchInChannel: false
   };
-  let r = (null != n ? (0, a.Hn)(n) : a.jy.NO_CHANNEL) === a.jy.CAN_LAUNCH,
+  let r = (null != n ? (0, o.Hn)(n) : o.jy.NO_CHANNEL) === o.jy.CAN_LAUNCH,
     s = i.ZP.getEmbeddedActivitiesForChannel(n).filter(t => t.applicationId === e),
     l = s.length > 0 ? s[0] : true,
     c = null == l ? true : l.compositeInstanceId,

@@ -31,11 +31,11 @@ function _(e) {
   var m = (0, i.Z)(h, {
     months: p * _.months
   });
-  _.days = Math.abs((0, a.Z)(n, m));
+  _.days = Math.abs((0, o.Z)(n, m));
   var g = (0, i.Z)(m, {
     days: p * _.days
   });
-  _.hours = Math.abs((0, o.Z)(n, g));
+  _.hours = Math.abs((0, a.Z)(n, g));
   var E = (0, i.Z)(g, {
     hours: p * _.hours
   });

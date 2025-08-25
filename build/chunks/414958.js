@@ -2,11 +2,11 @@
 /** chunk id: 414958, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  d: () => a
+  d: () => o
 });
 var Chunk951069 = require("./951069.js"),
   Chunk839826 = require("./839826.js"),
-  a = function() {
+  o = function() {
     function e(e) {
       if (0 == arguments.length) throw TypeError("Failed to construct 'ResizeObserver': 1 argument required, but only 0 present.");
       if ("function" != typeof e) throw TypeError("Failed to construct 'ResizeObserver': The callback provided as parameter 1 is not a function.");

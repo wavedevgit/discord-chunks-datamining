@@ -36,8 +36,8 @@ function f(e, t) {
     N = e.rects.popper,
     R = e.elements[I ? C : O],
     P = (0, r.Z)((0, c.kK)(R) ? R : R.contextElement || (0, i.Z)(e.elements.popper), g, b, h),
-    w = (0, a.Z)(e.elements.reference),
-    D = (0, o.Z)({
+    w = (0, o.Z)(e.elements.reference),
+    D = (0, a.Z)({
       reference: w,
       element: N,
       strategy: "absolute",
@@ -51,13 +51,13 @@ function f(e, t) {
       left: P.left - L.left + A.left,
       right: L.right - P.right + A.right
     },
-    k = e.modifiersData.offset;
-  if (O === l.k5 && k) {
-    var M = k[_];
+    M = e.modifiersData.offset;
+  if (O === l.k5 && M) {
+    var k = M[_];
     Object.keys(j).forEach(function(e) {
       var t = [l.F2, l.I].indexOf(e) >= 0 ? 1 : false,
         n = [l.we, l.I].indexOf(e) >= 0 ? "y" : "x";
-      j[e] += M[n] * t
+      j[e] += k[n] * t
     })
   }
   return j

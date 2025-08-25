@@ -2,11 +2,11 @@
 /** chunk id: 481981, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  m: () => o
+  m: () => a
 });
 var Chunk818083 = require("./818083.js"),
   Chunk480218 = require("./480218.js");
-let a = (0, Chunk818083.B)({
+let o = (0, Chunk818083.B)({
   id: "2025-08_resumable_attachment_uploads_v2",
   kind: "user",
   label: "Resumable attachment uploads v2",
@@ -38,7 +38,7 @@ let a = (0, Chunk818083.B)({
   }]
 });
 
-function o(e) {
+function a(e) {
   let {
     location: t
   } = e, {
@@ -48,7 +48,7 @@ function o(e) {
   }, {
     autoTrackExposure: true
   });
-  return a.getCurrentConfig({
+  return o.getCurrentConfig({
     location: t
   }, {
     disable: n,

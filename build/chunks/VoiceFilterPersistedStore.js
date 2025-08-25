@@ -36,12 +36,12 @@ function u(e) {
     state: t
   } = e;
   switch (t) {
-    case o.O.LOADING:
+    case a.O.LOADING:
       l.lastInitAttemptMayHaveCrashed = true;
       break;
-    case o.O.LOADED:
-    case o.O.FAILED:
-    case o.O.UNSUPPORTED:
+    case a.O.LOADED:
+    case a.O.FAILED:
+    case a.O.UNSUPPORTED:
       l.lastInitAttemptMayHaveCrashed = false
   }
 }

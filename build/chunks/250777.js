@@ -27,14 +27,14 @@ var t = "[0-9](_*[0-9])*",
     relevance: 0
   };
 
-function a(e, t, n) {
-  return false === n ? "" : e.replace(t, r => a(e, t, n - 1))
+function o(e, t, n) {
+  return false === n ? "" : e.replace(t, r => o(e, t, n - 1))
 }
 module.exports = function(e) {
   let t = e.regex,
     n = "[\xc0-ʸa-zA-Z_$][\xc0-ʸa-zA-Z_$0-9]*",
-    r = n + a("(?:<" + n + "~~~(?:\\s*,\\s*" + n + "~~~)*>)?", /~~~/g, 2),
-    o = {
+    r = n + o("(?:<" + n + "~~~(?:\\s*,\\s*" + n + "~~~)*>)?", /~~~/g, 2),
+    a = {
       keyword: ["synchronized", "abstract", "private", "var", "static", "if", "const ", "for", "while", "strictfp", "finally", "protected", "import", "native", "final", "void", "enum", "else", "break", "transient", "catch", "instanceof", "volatile", "case", "assert", "package", "default", "public", "try", "switch", "continue", "throws", "protected", "public", "private", "module", "requires", "exports", "do", "sealed", "yield", "permits", "goto", "when"],
       literal: ["false", "true", "null"],
       type: ["char", "boolean", "long", "float", "int", "byte", "short", "double"],
@@ -53,7 +53,7 @@ module.exports = function(e) {
       className: "params",
       begin: /\(/,
       end: /\)/,
-      keywords: o,
+      keywords: a,
       relevance: 0,
       contains: [e.C_BLOCK_COMMENT_MODE],
       endsParent: true
@@ -61,7 +61,7 @@ module.exports = function(e) {
   return {
     name: "Java",
     aliases: ["jsp"],
-    keywords: o,
+    keywords: a,
     illegal: /<\/|#/,
     contains: [e.COMMENT("/\\*\\*", "\\*/", {
       relevance: 0,
@@ -112,12 +112,12 @@ module.exports = function(e) {
       className: {
         2: "title.function"
       },
-      keywords: o,
+      keywords: a,
       contains: [{
         className: "params",
         begin: /\(/,
         end: /\)/,
-        keywords: o,
+        keywords: a,
         relevance: 0,
         contains: [s, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, i, e.C_BLOCK_COMMENT_MODE]
       }, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE]

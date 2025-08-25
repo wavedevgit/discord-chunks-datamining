@@ -2,7 +2,7 @@
 /** chunk id: 675999, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  PU: () => a,
+  PU: () => o,
   _m: () => r,
   lr: () => i
 });
@@ -12,4 +12,4 @@ var r = function(e) {
   i = function(e) {
     return e.FRIENDS = "FRIENDS", e.COMMUNITY = "COMMUNITY", e.CLAN = "CLAN", e
   }({});
-let a = "create-guild"
+let o = "create-guild"

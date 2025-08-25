@@ -63,7 +63,7 @@ function p(e) {
     applicationId: t,
     viewId: u
   });
-  return null == p && null == h ? null : (0, r.jsx)(a.yRy, {
+  return null == p && null == h ? null : (0, r.jsx)(o.yRy, {
     targetElementRef: f,
     align: "top",
     position: "right",
@@ -72,31 +72,31 @@ function p(e) {
       let {
         closePopout: t
       } = e;
-      return (0, r.jsx)(a.v2r, {
+      return (0, r.jsx)(o.v2r, {
         navId: "game-profile-context",
         onClose: () => {
-          (0, o.Zy)(), t()
+          (0, a.Zy)(), t()
         },
         "aria-label": c.intl.string(c.t.PNeFgY),
         onSelect: () => {},
         children: (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(a.kSQ, {
+          children: [(0, r.jsx)(o.kSQ, {
             children: p
-          }), (0, r.jsx)(a.kSQ, {
+          }), (0, r.jsx)(o.kSQ, {
             children: h
           })]
         })
       })
     },
-    children: e => (0, r.jsx)(a.ua7, {
+    children: e => (0, r.jsx)(o.ua7, {
       text: c.intl.string(c.t.UKOtz8),
-      children: t => (0, r.jsx)(a.P3F, _(d({
+      children: t => (0, r.jsx)(o.P3F, _(d({
         innerRef: f,
         className: n
       }, t, e), {
-        children: (0, r.jsx)(a.xhG, {
+        children: (0, r.jsx)(o.xhG, {
           size: "xs",
-          color: a.TVs.colors.WHITE
+          color: o.TVs.colors.WHITE
         })
       }))
     })

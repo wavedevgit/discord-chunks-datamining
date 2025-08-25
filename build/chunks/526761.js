@@ -8,9 +8,9 @@ require.d(exports, {
   JC: () => b,
   KQ: () => h,
   NB: () => c,
-  XZ: () => o,
+  XZ: () => a,
   Y_: () => d,
-  cP: () => a,
+  cP: () => o,
   f4: () => g,
   fy: () => E,
   gP: () => l,
@@ -25,8 +25,8 @@ require.d(exports, {
 });
 let r = 250,
   i = 762880,
-  a = "ROLE_SUBSCRIPTIONS",
-  o = "APPLICATION_SUBSCRIPTION_SUBSECTION",
+  o = "ROLE_SUBSCRIPTIONS",
+  a = "APPLICATION_SUBSCRIPTION_SUBSECTION",
   s = "SOUNDBOARD_SUBSECTION",
   l = "VIDEO_SUBSECTION";
 var c = function(e) {

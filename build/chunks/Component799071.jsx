@@ -21,7 +21,7 @@ function s() {
       style: {
         margin: "10px 0"
       }
-    }), Chunk173511.O.map(t => "code" === t ? null : (0, r.jsx)(o.Text, {
+    }), Chunk173511.O.map(t => "code" === t ? null : (0, r.jsx)(a.Text, {
       variant: t,
       children: "" !== e ? "".concat(e, " (").concat(t, ")") : t
     }, t))]

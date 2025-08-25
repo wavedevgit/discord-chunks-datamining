@@ -26,10 +26,10 @@ function u(e) {
   } = e;
   if (null == t || !(0, s.mG)({
       location: "channel_select"
-    }) || !(0, o.dg)()) returnfalse;
+    }) || !(0, a.dg)()) returnfalse;
   let n = i.Z.getChannel(t);
   if (null == n || !n.isDM()) returnfalse;
-  let r = (0, o.uu)(t);
+  let r = (0, a.uu)(t);
   return null != r && ((0, l.a)({
     warningId: r.id,
     warningType: r.type,
@@ -44,12 +44,12 @@ function d(e) {
   } = e;
   if (!(0, s.mG)({
       location: "channel_updates"
-    }) || !(0, o.dg)()) returnfalse;
-  let n = a.Z.getCurrentlySelectedChannelId();
+    }) || !(0, a.dg)()) returnfalse;
+  let n = o.Z.getCurrentlySelectedChannelId();
   if (null == n) returnfalse;
   let r = t.find(e => e.id === n);
   if (null == r) returnfalse;
-  let i = (0, o.uu)(r.id);
+  let i = (0, a.uu)(r.id);
   return !!(null != i && r.isDM()) && ((0, l.a)({
     warningId: i.id,
     warningType: i.type,

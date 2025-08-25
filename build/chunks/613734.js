@@ -18,12 +18,12 @@ var Chunk647438 = require("./647438.js"),
   Chunk800530 = require("./800530.js");
 
 function f() {
-  return (0, Chunk442837.Wu)([Chunk236289.Z], () => Chunk236289.Z.getClassifications()).sort((e, t) => a.default.extractTimestamp(t.id) - a.default.extractTimestamp(e.id))
+  return (0, Chunk442837.Wu)([Chunk236289.Z], () => Chunk236289.Z.getClassifications()).sort((e, t) => o.default.extractTimestamp(t.id) - o.default.extractTimestamp(e.id))
 }
 
 function _(e) {
   let t, n = (0, i.e7)([c.Z], () => c.Z.getClassification(e)),
-    a = (0, i.e7)([c.Z], () => c.Z.getClassificationRequestState(e)),
+    o = (0, i.e7)([c.Z], () => c.Z.getClassificationRequestState(e)),
     f = (0, i.e7)([c.Z], () => c.Z.getIsDsaEligible()),
     _ = (0, i.e7)([c.Z], () => c.Z.getIsAppealEligible()),
     p = (0, s.A)("classification_detail");
@@ -32,10 +32,10 @@ function _(e) {
     t = (null == (h = n.guild_metadata) ? true : h.member_type) === l.wO.OWNER ? d.qS.GUILD_OWNER : d.qS.GUILD_MEMBER
   } else t = d.qS.USER;
   return r.useEffect(() => {
-    true === n && null == a && o.NA(e)
-  }, [e, n, a]), {
+    true === n && null == o && a.NA(e)
+  }, [e, n, o]), {
     classification: n,
-    classificationRequestState: a,
+    classificationRequestState: o,
     isDsaEligible: f,
     isAppealEligible: _ && null != n && null == n.appeal_status && (!(0, u.FB)(n) || p),
     violationType: t

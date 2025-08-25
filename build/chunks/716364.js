@@ -10,9 +10,9 @@ var Chunk570140 = require("./570140.js"),
   Chunk981631 = require("./981631.js");
 
 function s(e, t) {
-  i.default.track(o.rMx.SOUNDPACK_UPDATED, {
+  i.default.track(a.rMx.SOUNDPACK_UPDATED, {
     soundpack: e,
-    previous_soundpack: a.Z.getSoundpack()
+    previous_soundpack: o.Z.getSoundpack()
   }), r.Z.dispatch({
     type: "SET_SOUNDPACK",
     soundpack: e,

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk711703 = require("./711703.js"),
   Chunk484710 = require("./484710.js"),
@@ -18,21 +18,21 @@ function f(e) {
   let {
     label: t,
     labelHook: n,
-    dismissNotice: a,
+    dismissNotice: o,
     className: f,
     noticeType: _
-  } = e, p = null != a;
+  } = e, p = null != o;
   i.useEffect(() => {
     (0, l.l)(_, c.up.VIEWED)
   }, [_]);
   let h = i.useCallback(() => {
-      null != a && (a(), (0, l.l)(_, c.up.DISMISS))
-    }, [_, a]),
+      null != o && (o(), (0, l.l)(_, c.up.DISMISS))
+    }, [_, o]),
     m = i.useCallback(() => {
       n(), (0, l.l)(_, c.up.LEARN_MORE)
     }, [_, n]);
   return (0, r.jsxs)("div", {
-    className: o()(d.safetySettingsNotice, f),
+    className: a()(d.safetySettingsNotice, f),
     children: [(0, r.jsx)(s.d3s, {
       size: "md"
     }), (0, r.jsx)(s.Text, {

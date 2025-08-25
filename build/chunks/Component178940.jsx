@@ -61,8 +61,8 @@ class v extends(r = Chunk647438.PureComponent) {
       readOnly: t,
       value: n,
       align: r = "center",
-      className: a,
-      innerClassName: o,
+      className: o,
+      innerClassName: a,
       children: l,
       size: c,
       reverse: u,
@@ -113,23 +113,23 @@ function I(e) {
     value: n,
     type: r,
     color: i
-  } = e, a = null != (t = e.style) ? t : {};
-  if (false === n) return a;
-  if (a = g({}, a), null != i) switch (r) {
+  } = e, o = null != (t = e.style) ? t : {};
+  if (false === n) return o;
+  if (o = g({}, o), null != i) switch (r) {
     case "default":
-      a.borderColor = i;
+      o.borderColor = i;
       break;
     case "ghost":
       if (i.startsWith("var(--")) {
         let e = "".concat(i.slice(0, false), "-hsl)");
-        a.borderColor = "rgba(".concat(e, ", 0.15)"), a.backgroundColor = "rgba(".concat(e, ", 0.15)")
-      } else c()((0, u.FX)(i), "Checkbox: ".concat(i, " is not a valid hex color")), a.borderColor = (0, u.wK)(i, .15), a.backgroundColor = (0, u.wK)(i, .15);
+        o.borderColor = "rgba(".concat(e, ", 0.15)"), o.backgroundColor = "rgba(".concat(e, ", 0.15)")
+      } else c()((0, u.FX)(i), "Checkbox: ".concat(i, " is not a valid hex color")), o.borderColor = (0, u.wK)(i, .15), o.backgroundColor = (0, u.wK)(i, .15);
       break;
     case "row":
     case "inverted":
-      a.backgroundColor = i, a.borderColor = i
+      o.backgroundColor = i, o.borderColor = i
   }
-  return a
+  return o
 }
 
 function T(e) {
@@ -137,12 +137,12 @@ function T(e) {
     indicatorClassName: t,
     value: n,
     size: r,
-    shape: o,
+    shape: a,
     checkboxColor: l,
     disabled: c
-  } = e, u = I(e), _ = a.useMemo(() => n ? f.Z.colors.WHITE.css : f.Z.unsafe_rawColors.TRANSPARENT.css, [n]);
+  } = e, u = I(e), _ = o.useMemo(() => n ? f.Z.colors.WHITE.css : f.Z.unsafe_rawColors.TRANSPARENT.css, [n]);
   return (0, i.jsx)("div", {
-    className: s()(h.checkbox, o, t, {
+    className: s()(h.checkbox, a, t, {
       [h.checked]: n,
       [h.checkboxDisabled]: c
     }),

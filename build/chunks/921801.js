@@ -10,6 +10,6 @@ let i = e => {
   let {
     setting: n,
     children: i
-  } = e, a = (0, r.Pt)(), o = (0, r.Gj)(n), s = a[n];
-  return null != s.predicate && (null == (t = s.predicate) ? true : t.call(s)) !== true || o.size > 0 && !o.has(n) ? null : i
+  } = e, o = (0, r.Pt)(), a = (0, r.Gj)(n), s = o[n];
+  return null != s.predicate && (null == (t = s.predicate) ? true : t.call(s)) !== true || a.size > 0 && !a.has(n) ? null : i
 }

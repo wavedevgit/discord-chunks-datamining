@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk447543 = require("./447543.js"),
@@ -32,7 +32,7 @@ function A(e) {
   let {
     invite: t,
     isMemberOfGuild: n,
-    message: a,
+    message: o,
     onTransitionToInviteChannel: c,
     onAcceptInstantInvite: d
   } = e, f = i.useRef(null), [p, m] = i.useState(true), [A, N] = i.useState(false), R = t.state === y.r2o.ACCEPTING, P = (0, s.e7)([u.Z], () => u.Z.useReducedMotion);
@@ -55,7 +55,7 @@ function A(e) {
       } : {}
     }, [p, A, P]);
   return null == w ? (0, r.jsx)(b.Z, {}) : (0, r.jsxs)(l.P3F, {
-    className: o()(v.guildInviteContainer, {
+    className: a()(v.guildInviteContainer, {
       [v.clickable]: A && p
     }),
     onClick: D,
@@ -84,13 +84,13 @@ function A(e) {
         text: O.intl.string(O.t.xdCLeH)
       })
     }) : null, (0, r.jsxs)("div", {
-      className: o()(v.footer, {
+      className: a()(v.footer, {
         [v.floatingFooter]: A
       }),
       children: [A && p ? (0, r.jsx)("div", {
         className: v.gradient
       }) : null, (0, r.jsx)("div", {
-        className: o()(v.footerContent, {
+        className: a()(v.footerContent, {
           [v.collapsedFooterContent]: A && p
         }),
         children: (0, r.jsx)("div", {
@@ -99,7 +99,7 @@ function A(e) {
             invite: t,
             profile: w,
             isMemberOfGuild: n,
-            message: a,
+            message: o,
             submitting: R,
             onTransitionToInviteChannel: c,
             onAcceptInstantInvite: d
@@ -114,8 +114,8 @@ function C(e) {
   let {
     invite: t,
     profile: n,
-    isMemberOfGuild: a,
-    message: o,
+    isMemberOfGuild: o,
+    message: a,
     submitting: s,
     onTransitionToInviteChannel: l,
     onAcceptInstantInvite: u
@@ -125,14 +125,14 @@ function C(e) {
   } = (0, p.ZP)(n, p.F3.INVITE), {
     analyticsLocations: g
   } = (0, f.ZP)(d.Z.INVITE_EMBED), E = i.useCallback(() => {
-    let e = a ? "transition" : "accept";
+    let e = o ? "transition" : "accept";
     (0, c.r$)({
       invite: t,
       action: e,
-      inviter_id: o.author.id,
-      invite_message_id: o.id
+      inviter_id: a.author.id,
+      invite_message_id: a.id
     }, g)
-  }, [t, o, g, a]);
+  }, [t, a, g, o]);
   return null == h ? null : (0, r.jsx)(m.o, {
     guildId: _,
     ctaType: h,

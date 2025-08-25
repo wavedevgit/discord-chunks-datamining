@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk200269 = require("./200269.jsx"),
   Chunk830922 = require("./830922.js");
@@ -38,8 +38,8 @@ function f(e, t) {
   if (null == e) return {};
   var n, r, i = _(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -47,23 +47,23 @@ function f(e, t) {
 function _(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let p = Chunk647438.forwardRef(function(e, t) {
   var {
     variant: n,
     className: i
-  } = e, a = f(e, ["variant", "className"]);
+  } = e, o = f(e, ["variant", "className"]);
   let u = (0, l.x)(),
     _ = "h".concat(Math.min(u, 6));
   return (0, r.jsx)(s.xv, d({
     ref: t,
     variant: n,
     tag: _,
-    className: o()(c.defaultColor, i)
+    className: a()(c.defaultColor, i)
   }, u > 6 ? {
     "data-excessive-heading-level": u
-  } : {}, a))
+  } : {}, o))
 })

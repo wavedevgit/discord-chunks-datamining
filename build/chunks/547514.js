@@ -4,20 +4,20 @@
 var r = require("./751736.js")("iterator"),
   i = false;
 try {
-  var a = 0,
-    o = {
+  var o = 0,
+    a = {
       next: function() {
         return {
-          done: !!a++
+          done: !!o++
         }
       },
       return: function() {
         i = true
       }
     };
-  o[r] = function() {
+  a[r] = function() {
     return this
-  }, Array.from(o, function() {
+  }, Array.from(a, function() {
     throw 2
   })
 } catch (e) {}
@@ -29,8 +29,8 @@ module.exports = function(e, t) {
   }
   var n = false;
   try {
-    var a = {};
-    a[r] = function() {
+    var o = {};
+    o[r] = function() {
       return {
         next: function() {
           return {
@@ -38,7 +38,7 @@ module.exports = function(e, t) {
           }
         }
       }
-    }, e(a)
+    }, e(o)
   } catch (e) {}
   return n
 }

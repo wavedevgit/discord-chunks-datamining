@@ -2,7 +2,7 @@
 /** chunk id: 947851, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Y: () => a,
+  Y: () => o,
   m: () => i
 });
 let r = (0, require("./722733.js").Z)({
@@ -34,7 +34,7 @@ function i(e) {
   }).forceEnableVideoHardwareAcceleration
 }
 
-function a(e) {
+function o(e) {
   return r.getConfig({
     location: e
   }).forceEnableAppHardwareAcceleration

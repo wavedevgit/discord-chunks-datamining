@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk257465 = require("./257465.jsx"),
   Chunk82659 = require("./82659.jsx"),
@@ -34,7 +34,7 @@ let N = e => {
     let {
       onClose: t,
       onShare: n
-    } = e, a = (0, s.e7)([O.Z], () => O.Z.getReferralsRemaining()), d = (0, s.e7)([O.Z], () => O.Z.getHasEligibleFriends()), [h, m] = i.useState(new Map), [g, y] = i.useState(""), T = (0, _.Z)(g, 400), {
+    } = e, o = (0, s.e7)([O.Z], () => O.Z.getReferralsRemaining()), d = (0, s.e7)([O.Z], () => O.Z.getHasEligibleFriends()), [h, m] = i.useState(new Map), [g, y] = i.useState(""), T = (0, _.Z)(g, 400), {
       eligibleUsers: N,
       fetchUsers: R,
       hasError: P,
@@ -45,7 +45,7 @@ let N = e => {
       selectedUsers: h
     }), [x, L] = i.useState(false), j = (0, p.O)(e => {
       e && !w && R()
-    }), k = N.reduce((e, t) => (e.has(t.id) || e.set(t.id, t), e), new Map), M = () => (0, r.jsx)(f.Z, {
+    }), M = N.reduce((e, t) => (e.has(t.id) || e.set(t.id, t), e), new Map), k = () => (0, r.jsx)(f.Z, {
       className: C.searchbar,
       size: f.Z.Sizes.MEDIUM,
       tags: [...h.values()].map(e => b.ZP.getName(e)),
@@ -62,13 +62,13 @@ let N = e => {
       onClear: () => y("")
     }), U = e => {
       let i, {
-          eligibleRecipients: a
+          eligibleRecipients: o
         } = e,
-        s = T.length > 0 && 0 === a.size;
+        s = T.length > 0 && 0 === o.size;
       return i = true === s ? A.intl.string(A.t.wpSqAQ) : h.size <= 1 ? A.intl.string(A.t.ItpQxs) : A.intl.format(A.t.iW2str, {
         nTrials: h.size
       }), (0, r.jsx)("div", {
-        className: o()(C.footer, C.footerSeparator),
+        className: a()(C.footer, C.footerSeparator),
         children: (0, r.jsx)(u.zxk, {
           variant: "primary",
           disabled: 0 === h.size && !s || x,
@@ -99,7 +99,7 @@ let N = e => {
       }) : (0, r.jsxs)(u.u2D, {
         className: C.list,
         children: [Array.from(t.values()).map(e => (0, r.jsx)(I.Z, {
-          disabled: null !== a && 0 !== a && [...h.values()].filter(e => !D.has(e.id)).length >= a && !h.has(e.id) && !D.has(e.id),
+          disabled: null !== o && 0 !== o && [...h.values()].filter(e => !D.has(e.id)).length >= o && !h.has(e.id) && !D.has(e.id),
           checked: h.has(e.id),
           user: e,
           onChange: (e, t) => {
@@ -113,7 +113,7 @@ let N = e => {
         })]
       })
     };
-    return null === a ? (0, r.jsx)(u.$jN, {}) : P ? (0, r.jsx)(c.Modal, {
+    return null === o ? (0, r.jsx)(u.$jN, {}) : P ? (0, r.jsx)(c.Modal, {
       transitionState: l.D.ENTERED,
       size: "sm",
       title: A.intl.string(A.t.lcuio6),
@@ -135,13 +135,13 @@ let N = e => {
       title: A.intl.string(A.t["2dVCLi"]),
       subtitle: A.intl.string(A.t.DXgoi4),
       onClose: t,
-      input: M(),
+      input: k(),
       actions: [],
       actionBarInput: U({
-        eligibleRecipients: k
+        eligibleRecipients: M
       }),
       children: G({
-        eligibleRecipients: k
+        eligibleRecipients: M
       })
     })
   },
@@ -149,23 +149,23 @@ let N = e => {
     let {
       onClose: t,
       onShare: n
-    } = e, a = (0, s.e7)([O.Z], () => O.Z.getRecipientStatus()), [f, _] = i.useState(new Map), [p, h] = i.useState(new Map), [m, g] = i.useState(false);
+    } = e, o = (0, s.e7)([O.Z], () => O.Z.getRecipientStatus()), [f, _] = i.useState(new Map), [p, h] = i.useState(new Map), [m, g] = i.useState(false);
     i.useEffect(() => {
       (async () => {
         let e = new Map;
-        for (let [t, n] of a) {
+        for (let [t, n] of o) {
           let r = await (0, d.PR)(t);
           r.referralStatus = n, e.set(r.id, r)
         }
         _(e)
       })()
-    }, [a]);
+    }, [o]);
     let E = () => {
       let e;
       return e = p.size <= 1 ? A.intl.string(A.t.ItpQxs) : A.intl.format(A.t.iW2str, {
         nTrials: p.size
       }), (0, r.jsx)("div", {
-        className: o()(C.footer, C.footerSeparator),
+        className: a()(C.footer, C.footerSeparator),
         children: (0, r.jsx)(u.zxk, {
           variant: "primary",
           disabled: 0 === p.size || m,
@@ -209,7 +209,7 @@ let w = e => {
   let {
     onClose: t,
     startingScreen: n = 1
-  } = e, a = (0, s.e7)([O.Z], () => O.Z.getReferralsRemaining()), [o, l] = i.useState(n), [c, d] = i.useState([]), {
+  } = e, o = (0, s.e7)([O.Z], () => O.Z.getReferralsRemaining()), [a, l] = i.useState(n), [c, d] = i.useState([]), {
     analyticsLocations: f
   } = (0, m.ZP)([h.Z.PREMIUM_MARKETING_REFERALL_PROGRAM_SHARE_MODAL]), _ = async e => {
     g.default.track(S.rMx.REFERRAL_PROGRAM_SHARE_CTA_CLICKED, {
@@ -221,8 +221,8 @@ let w = e => {
       status: t.get(e.id)
     }))), l(2)
   };
-  if (null === a) return (0, r.jsx)(u.$jN, {});
-  if (2 === o) {
+  if (null === o) return (0, r.jsx)(u.$jN, {});
+  if (2 === a) {
     let e = 3 === n;
     return (0, r.jsx)(T.m, {
       isReminderConfirmation: e,
@@ -230,10 +230,10 @@ let w = e => {
       onClose: t
     })
   }
-  return 1 === o ? (0, r.jsx)(N, {
+  return 1 === a ? (0, r.jsx)(N, {
     onClose: t,
     onShare: _
-  }) : 3 === o ? (0, r.jsx)(R, {
+  }) : 3 === a ? (0, r.jsx)(R, {
     onClose: t,
     onShare: _
   }) : true

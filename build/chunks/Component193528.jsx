@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk772848 = require("./772848.js"),
   Chunk866442 = require("./866442.js"),
   Chunk692547 = require("./692547.js"),
@@ -62,8 +62,8 @@ function O(e, t) {
   if (null == e) return {};
   var n, r, i = v(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -71,8 +71,8 @@ function O(e, t) {
 function v(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -80,21 +80,21 @@ function I(e) {
   let {
     onChange: t,
     onClose: n,
-    color: a,
+    color: o,
     suggestedColors: g,
     disabled: b,
     label: v,
     colorPickerMiddle: I,
     colorPickerFooter: T,
     showEyeDropper: S
-  } = e, A = i.useRef(null), C = (0, u.dQu)(c.Z.colors.BACKGROUND_BASE_LOW).hex(), N = c.Z.colors.BACKGROUND_ACCENT.css, R = (0, _.DP)(a), P = (0, l.Rf)(a), w = P === C ? N : P, D = (0, f.Lq)(R ? p.Ilk.WHITE_500 : p.Ilk.PRIMARY_530), x = (0, d.Z)(I), L = (0, d.Z)(T), [j, k] = i.useState((0, s.Z)());
+  } = e, A = i.useRef(null), C = (0, u.dQu)(c.Z.colors.BACKGROUND_BASE_LOW).hex(), N = c.Z.colors.BACKGROUND_ACCENT.css, R = (0, _.DP)(o), P = (0, l.Rf)(o), w = P === C ? N : P, D = (0, f.Lq)(R ? p.Ilk.WHITE_500 : p.Ilk.PRIMARY_530), x = (0, d.Z)(I), L = (0, d.Z)(T), [j, M] = i.useState((0, s.Z)());
   return i.useEffect(() => {
-    (x !== I || L !== T) && k((0, s.Z)())
+    (x !== I || L !== T) && M((0, s.Z)())
   }, [T, I, L, x]), (0, r.jsx)(u.yRy, {
     targetElementRef: A,
     positionKey: j,
     renderPopout: e => (0, r.jsx)(u.Z$W, y(E({}, e), {
-      value: a,
+      value: o,
       onChange: t,
       suggestedColors: g,
       middle: I,
@@ -108,7 +108,7 @@ function I(e) {
       } = e, n = O(e, ["onClick"]);
       return (0, r.jsxs)("div", {
         ref: A,
-        className: o()(m.colorSwatch, {
+        className: a()(m.colorSwatch, {
           [m.disabled]: b
         }),
         children: [(0, r.jsx)(u.P3F, y(E({}, n), {

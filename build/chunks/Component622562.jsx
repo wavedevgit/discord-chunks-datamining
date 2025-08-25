@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   Chunk442837 = require("./442837.js"),
   Chunk110924 = require("./110924.js"),
@@ -41,8 +41,8 @@ function p(e, t) {
   if (null == e) return {};
   var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -50,8 +50,8 @@ function p(e, t) {
 function h(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let m = (e, t) => true !== t && t > e ? t : e,
@@ -67,8 +67,8 @@ function E(e) {
     onGetElementDimensionsAndBoundingRect: t,
     targetElementRef: n,
     shouldPollPositionOnMount: r,
-    positionControlRef: a,
-    debounceTime: o
+    positionControlRef: o,
+    debounceTime: a
   } = e, {
     hasLayers: d
   } = (0, l.cj)([u.Z], () => ({
@@ -91,7 +91,7 @@ function E(e) {
     }
   }, [n]), p = i.useCallback(() => t(_()), [t, _]), h = i.useMemo(() => (0, s.debounce)(() => {
     p()
-  }, o), [p, o]);
+  }, a), [p, a]);
   i.useEffect(() => (window.addEventListener("resize", h), () => {
     window.removeEventListener("resize", h)
   }), [h]);
@@ -112,12 +112,12 @@ function E(e) {
   }, [r, y, p]), i.useEffect(() => {
     m && !d && y()
   }, [y, d, m]), i.useEffect(() => {
-    true !== a && (a.current = {
+    true !== o && (o.current = {
       getElementDimensionsAndBoundingRect: _,
       updateElementPosition: p,
       updateElementPositionWithPolling: y
     })
-  }, [p, y, _, a]), {
+  }, [p, y, _, o]), {
     getElementDimensionsAndBoundingRect: _
   }
 }
@@ -127,8 +127,8 @@ function b(e) {
     backgroundElementRef: t,
     getOffsetsRelativeToElement: n,
     fallbackAbsoluteOffsets: r,
-    minimumOffsets: a,
-    positionControlRef: o,
+    minimumOffsets: o,
+    positionControlRef: a,
     onGetBoundingRect: l = () => {},
     debounceTime: c = 60
   } = e, [u, d] = i.useState(null);
@@ -137,17 +137,17 @@ function b(e) {
       let {
         height: t,
         width: i,
-        elementBoundingRect: o
+        elementBoundingRect: a
       } = e;
-      if (null == o) return r;
+      if (null == a) return r;
       let c = _({}, n({
         height: t,
         width: i
       }));
-      return true !== c.top && (c.top = m(o.top + c.top, null == a ? true : a.top)), true !== c.left && (c.left = m(o.left + c.left, null == a ? true : a.left)), true !== c.right && (c.right = m(window.innerWidth - o.right + c.right, null == a ? true : a.right)), true !== c.bottom && (c.bottom = m(window.innerHeight - o.bottom + c.bottom, null == a ? true : a.bottom)), l(o), (0, s.isEqual)(c, u) || d(c), c
-    }, [u, n, r, a, l]),
+      return true !== c.top && (c.top = m(a.top + c.top, null == o ? true : o.top)), true !== c.left && (c.left = m(a.left + c.left, null == o ? true : o.left)), true !== c.right && (c.right = m(window.innerWidth - a.right + c.right, null == o ? true : o.right)), true !== c.bottom && (c.bottom = m(window.innerHeight - a.bottom + c.bottom, null == o ? true : o.bottom)), l(a), (0, s.isEqual)(c, u) || d(c), c
+    }, [u, n, r, o, l]),
     targetElementRef: t,
-    positionControlRef: o,
+    positionControlRef: a,
     debounceTime: c
   }), {
     offsets: u
@@ -159,15 +159,15 @@ function y(e) {
     children: t,
     style: n,
     className: i,
-    key: a
+    key: o
   } = e;
   let {
     offsets: s
   } = b(_({}, p(e, ["children", "style", "className", "key"]))), l = _({}, s, n);
   return null === s ? null : (0, r.jsx)("div", {
     style: l,
-    className: o()(d.wrapper, i),
+    className: a()(d.wrapper, i),
     children: t
-  }, a)
+  }, o)
 }
 y.displayName = "ElementFixedOffsetContentWrapper"

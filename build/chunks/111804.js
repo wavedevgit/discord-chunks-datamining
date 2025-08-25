@@ -22,8 +22,8 @@ _.delete("a", 1), _.delete("b", true), _ + "" != "a=2" && Chunk556585(l, "delete
       key: t,
       value: e
     })
-  }), o(n, 1);
-  for (var s = a(e), l = a(r), _ = 0, p = 0, h = false, m = i.length; _ < m;) t = i[_++], h || t.key === s ? (h = true, u(this, t.key)) : p++;
+  }), a(n, 1);
+  for (var s = o(e), l = o(r), _ = 0, p = 0, h = false, m = i.length; _ < m;) t = i[_++], h || t.key === s ? (h = true, u(this, t.key)) : p++;
   for (; p < m;)((t = i[p++]).key !== s || t.value !== l) && c(this, t.key, t.value)
 }, {
   enumerable: true,

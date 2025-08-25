@@ -24,7 +24,7 @@ let l = e => {
     })
   },
   c = e => {
-    let t = (0, a.b)(e),
+    let t = (0, o.b)(e),
       n = (0, i.Nj)(r.z.REFERRAL_PROGRAM_PREMIUM_TAB_BADGE);
     return t && !n
   },
@@ -40,7 +40,7 @@ let l = e => {
       referralsStatuses: n
     } = e;
     return l({
-      hasSentAll: n.sent >= o.Q,
+      hasSentAll: n.sent >= a.Q,
       hasSentAtLeastOne: n.sent >= 1,
       helpdeskArticle: t
     })

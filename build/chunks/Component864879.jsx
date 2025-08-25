@@ -15,8 +15,8 @@ var Chunk951288 = require("./951288.js"),
 let d = Chunk647438.forwardRef((e, t) => {
   let {
     analyticsLocations: n
-  } = (0, o.ZP)(a.Z.PREMIUM_MARKETING_FOOTER_CTA);
-  return (0, r.jsx)(o.Gt, {
+  } = (0, a.ZP)(o.Z.PREMIUM_MARKETING_FOOTER_CTA);
+  return (0, r.jsx)(a.Gt, {
     value: n,
     children: (0, r.jsx)("div", {
       ref: t,

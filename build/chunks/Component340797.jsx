@@ -56,9 +56,9 @@ function p(e) {
     guild: t,
     message: n
   } = e, u = i.useRef(null);
-  return (0, o.vV)(t.id, n.author.id) ? (0, r.jsx)(a.yRy, {
+  return (0, a.vV)(t.id, n.author.id) ? (0, r.jsx)(o.yRy, {
     targetElementRef: u,
-    animation: a.yRy.Animation.TRANSLATE,
+    animation: o.yRy.Animation.TRANSLATE,
     align: "center",
     autoInvert: true,
     nudgeAlignIntoViewport: true,
@@ -77,16 +77,16 @@ function p(e) {
       let {
         onClick: t
       } = e;
-      return (0, r.jsx)(a.P3F, {
+      return (0, r.jsx)(o.P3F, {
         onClick: t,
         tag: "span",
         innerRef: u,
-        children: (0, r.jsx)(a.ua7, {
+        children: (0, r.jsx)(o.ua7, {
           text: l.intl.string(l.t["v/OYd3"]),
           children: e => (0, r.jsx)("div", _(d({
             className: c.newMemberBadge
           }, e), {
-            children: (0, r.jsx)(a.hg2, {
+            children: (0, r.jsx)(o.hg2, {
               size: "custom",
               color: "currentColor",
               width: 20,

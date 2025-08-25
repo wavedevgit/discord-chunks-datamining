@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk688619 = require("./688619.js"),
-  o = require.n(Chunk688619),
+  a = require.n(Chunk688619),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk522942 = require("./522942.js"),
@@ -29,7 +29,7 @@ let I = [Chunk342905.C.CHERRY_BOMB, Chunk342905.C.CHICLE],
     var t;
     let {
       userName: n,
-      displayNameStyles: a,
+      displayNameStyles: o,
       effectDisplayType: s = E.F.STATIC,
       inProfile: T = false,
       textClassName: A,
@@ -38,7 +38,7 @@ let I = [Chunk342905.C.CHERRY_BOMB, Chunk342905.C.CHICLE],
       boldFontOpacity: R = 1,
       shouldUnderlineOnHover: P = false
     } = e, w = (0, O.j)({
-      displayNameStyles: a,
+      displayNameStyles: o,
       inProfile: T
     }), {
       useReducedMotion: D,
@@ -52,18 +52,18 @@ let I = [Chunk342905.C.CHERRY_BOMB, Chunk342905.C.CHICLE],
       location: "useDisplayNameStylesFont"
     }), j = (0, g.Y)({
       location: "UserNameWithEffects"
-    }), k = (0, _.dQu)(_.TVs.colors.BACKGROUND_BASE_LOW).hex(), M = null != (t = null == a ? true : a.effectId) ? t : c.m.SOLID, U = (0, y.R)(M), G = (0, _.qgQ)(n), B = (0, f.EJ)(G, M === c.m.TOON ? v.emoji : true), Z = i.useMemo(() => null != a && j ? a.colors.map(e => (0, h.wh)({
-      foreground: o()(e),
-      background: M === c.m.TOON ? o()("#333") : o()(k),
+    }), M = (0, _.dQu)(_.TVs.colors.BACKGROUND_BASE_LOW).hex(), k = null != (t = null == o ? true : o.effectId) ? t : c.m.SOLID, U = (0, y.R)(k), G = (0, _.qgQ)(n), B = (0, f.EJ)(G, k === c.m.TOON ? v.emoji : true), Z = i.useMemo(() => null != o && j ? o.colors.map(e => (0, h.wh)({
+      foreground: a()(e),
+      background: k === c.m.TOON ? a()("#333") : a()(M),
       ratio: U.minContrastRatio,
       saturationFactor: x
-    }).hex()) : [], [a, j, M, U.minContrastRatio, x, k]);
-    if (!j || !T && !L || null == a) return n;
-    let F = (0, b.K)(M, Z, {
+    }).hex()) : [], [o, j, k, U.minContrastRatio, x, M]);
+    if (!j || !T && !L || null == o) return n;
+    let F = (0, b.K)(k, Z, {
         shouldWrap: N,
-        fontOpacity: I.includes(a.fontId) ? R : 1
+        fontOpacity: I.includes(o.fontId) ? R : 1
       }),
-      V = S(M);
+      V = S(k);
     return (0, r.jsxs)("div", {
       className: l()(v.container, w, A, {
         [v.showEffect]: s !== E.F.PLAIN,
@@ -76,12 +76,12 @@ let I = [Chunk342905.C.CHERRY_BOMB, Chunk342905.C.CHICLE],
         "data-username-with-effects": G,
         className: l()(v.innerContainer, null == V ? true : V.effectClassName, {
           [v.underlineOnHover]: P,
-          [v.chicle]: a.fontId === u.C.CHICLE
+          [v.chicle]: o.fontId === u.C.CHICLE
         }),
         children: B
       }), (null == V ? true : V.glowClassName) != null && (0, r.jsx)("span", {
         className: l()(v.glowContainer, v.innerContainer, V.glowClassName, {
-          [v.chicle]: a.fontId === u.C.CHICLE
+          [v.chicle]: o.fontId === u.C.CHICLE
         }),
         "aria-hidden": true,
         children: G

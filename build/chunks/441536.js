@@ -52,10 +52,10 @@ function d(e, t) {
 function f(e, t, n) {
   let l = null != n ? {
     search: (0, r.stringify)({
-      [a.am]: n
+      [o.am]: n
     })
   } : true;
-  (0, i.uL)(o.Z5c.CHANNEL(e, s.oC.GUILD_BOOSTS), d(c({}, l), {
+  (0, i.uL)(a.Z5c.CHANNEL(e, s.oC.GUILD_BOOSTS), d(c({}, l), {
     source: t
   }))
 }

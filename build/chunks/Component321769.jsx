@@ -36,15 +36,15 @@ let s = [{
         }, [l]), d = i.useCallback(() => {
           c(s)
         }, []);
-        return (0, r.jsx)(a.Kqy, {
+        return (0, r.jsx)(o.Kqy, {
           gap: 24,
-          children: (0, r.jsx)(o.Q, {
+          children: (0, r.jsx)(a.Q, {
             label: "Categories",
             selectionMode: t,
             items: l,
             disabledKeys: ["dexterity"],
             onRemove: n ? u : true,
-            children: n && (0, r.jsx)(a.zxk, {
+            children: n && (0, r.jsx)(o.zxk, {
               disabled: l.length === s.length,
               text: "Reset",
               onClick: d

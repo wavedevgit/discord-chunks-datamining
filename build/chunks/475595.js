@@ -30,11 +30,11 @@ var p = function(e) {
 function h(e, t, n) {
   let r = b(e, t, n),
     i = y(t),
-    a = null != i && _.includes(i);
+    o = null != i && _.includes(i);
   return {
     url: r,
     mimetype: i,
-    isAnimated: a
+    isAnimated: o
   }
 }
 
@@ -43,7 +43,7 @@ function m(e, t) {
 }
 
 function g(e, t, n, i) {
-  var a, l;
+  var o, l;
   let d;
   switch (t) {
     case "hero":
@@ -54,7 +54,7 @@ function g(e, t, n, i) {
       break;
     case "hero_video": {
       let t = e.config.assets.heroVideo,
-        n = "videoMetadata" in e.config ? null == (a = e.config.videoMetadata) ? true : a.assets.questHomeVideo : null,
+        n = "videoMetadata" in e.config ? null == (o = e.config.videoMetadata) ? true : o.assets.questHomeVideo : null,
         r = null != t ? t : n;
       if (null == r) return null;
       d = r;
@@ -72,7 +72,7 @@ function g(e, t, n, i) {
       break
     }
     case "reward": {
-      let t = (0, o.hF)(e);
+      let t = (0, a.hF)(e);
       if (t.type === r.w.VIRTUAL_CURRENCY) return i ? {
         url: u.Z,
         mimetype: "video/mp4",
@@ -86,7 +86,7 @@ function g(e, t, n, i) {
       break
     }
     case "reward_image": {
-      let t = (0, o.hF)(e);
+      let t = (0, a.hF)(e);
       if (t.type === r.w.VIRTUAL_CURRENCY) return null;
       d = t.asset;
       break
@@ -155,7 +155,7 @@ function O(e) {
 }
 
 function v(e, t) {
-  let n = (0, a.Z)();
+  let n = (0, o.Z)();
   return n < d ? {
     width: e,
     height: t

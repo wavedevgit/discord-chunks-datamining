@@ -19,8 +19,8 @@ function l(e) {
   } = e;
   c({
     autoOpen: n
-  }), o.Z.open(t, s.pNK.EMOJI, i);
-  let l = (0, a.Su)();
+  }), a.Z.open(t, s.pNK.EMOJI, i);
+  let l = (0, o.Su)();
   null != l && l.windowDispatch.dispatch(s.CkL.POPOUT_CLOSE), (0, r.pTH)()
 }
 

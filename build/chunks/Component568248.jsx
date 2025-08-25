@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk95398 = require("./95398.jsx"),
   Chunk936141 = require("./936141.js"),
   Chunk768494 = require("./768494.js"),
@@ -24,7 +24,7 @@ function E(e) {
   let {
     media: t,
     spoiler: n,
-    description: a
+    description: o
   } = e, E = (0, u.pU)(t), b = (0, _.yE)(t.flags, c.hR.IS_ANIMATED), {
     gifAutoPlay: y
   } = (0, d.c)(), [O, v] = i.useState(n), I = e => {
@@ -38,12 +38,12 @@ function E(e) {
       maxHeight: g,
       hiddenSpoilers: e
     }) : (0, r.jsx)(f.Yi, {
-      containerClassName: o()(m.imgContainer, {
+      containerClassName: a()(m.imgContainer, {
         [m.hiddenSpoiler]: e
       }),
       imageClassName: m.img,
       src: t.proxyUrl,
-      alt: a,
+      alt: o,
       original: t.url,
       placeholder: t.placeholder,
       placeholderVersion: t.placeholderVersion,

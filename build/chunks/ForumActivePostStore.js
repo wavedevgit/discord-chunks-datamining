@@ -7,7 +7,7 @@ require.d(exports, {
   Z: () => Q
 }), require("./388685.js"), require("./642613.js");
 var i, Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  a = require.n(Chunk392711),
   Chunk697988 = require("./697988.js"),
   Chunk683860 = require("./683860.js"),
   Chunk843991 = require("./843991.js"),
@@ -40,8 +40,8 @@ let O = [],
   N = [],
   R = false,
   P = [],
-  w = o().chain(O),
-  D = o().chain(O),
+  w = a().chain(O),
+  D = a().chain(O),
   x = new Set,
   L = new Set;
 
@@ -50,12 +50,12 @@ function j(e) {
   return null != (t = m.ZP.lastMessageId(e)) ? t : e
 }
 
-function k(e) {
+function M(e) {
   let t = _.Z.getCount(e);
   return null === t || 0 === t
 }
 
-function M(e) {
+function k(e) {
   return function(t, n) {
     return (0, b.yv)(t) ? false : (0, b.yv)(n) ? 1 : e === l.z.LATEST_ACTIVITY ? E.default.compare(j(n), j(t)) : E.default.compare(n, t)
   }
@@ -74,7 +74,7 @@ function U(e, t) {
 }
 
 function G() {
-  N = [], r = null, I = null, T = new Set, S = Chunk683860.z.LATEST_ACTIVITY, A = Chunk697988.z.MATCH_SOME, C = 0, P = [], w = o().chain(O), D = o().chain(O), L.clear(), x.clear()
+  N = [], r = null, I = null, T = new Set, S = Chunk683860.z.LATEST_ACTIVITY, A = Chunk697988.z.MATCH_SOME, C = 0, P = [], w = a().chain(O), D = a().chain(O), L.clear(), x.clear()
 }
 
 function B() {
@@ -93,7 +93,7 @@ function Z(e) {
       id: t
     } = e;
     return t
-  }).sort(M(S))
+  }).sort(k(S))
 }
 
 function F(e) {
@@ -104,9 +104,9 @@ function F(e) {
       id: t
     } = e;
     return t
-  }), C = 0, R = true), 0 !== x.size && (P = P.filter(e => !x.has(e)), x.clear()), 0 !== L.size && (P = Array.from(new Set([...P, ...L])), L.clear()), ((null == e ? true : e.refreshThreadIds) || (null == e ? true : e.sortThreadIds)) && (D = o().chain(P).sort(M(l.z.LATEST_ACTIVITY)), w = o().chain(P).sort(M(l.z.CREATION_DATE)));
+  }), C = 0, R = true), 0 !== x.size && (P = P.filter(e => !x.has(e)), x.clear()), 0 !== L.size && (P = Array.from(new Set([...P, ...L])), L.clear()), ((null == e ? true : e.refreshThreadIds) || (null == e ? true : e.sortThreadIds)) && (D = a().chain(P).sort(k(l.z.LATEST_ACTIVITY)), w = a().chain(P).sort(k(l.z.CREATION_DATE)));
   let n = (S === l.z.LATEST_ACTIVITY ? D : w).value(),
-    i = (N = 0 === T.size ? n : n.filter(U(T, A))).find(e => k(e));
+    i = (N = 0 === T.size ? n : n.filter(U(T, A))).find(e => M(e));
   r = null == i ? null : i
 }
 
@@ -195,14 +195,14 @@ class X extends(i = Chunk442837.ZP.Store) {
   }
   getThreadIds(e, t, n, r) {
     let i = e !== I,
-      a = !(0, c.O)(n, T),
-      o = t !== S,
+      o = !(0, c.O)(n, T),
+      a = t !== S,
       s = r !== A;
     return I = e, T = n, S = t, A = r, i ? F({
       refreshThreadIds: true
-    }) : o ? F({
+    }) : a ? F({
       sortThreadIds: true
-    }) : (a || s) && F(), N
+    }) : (o || s) && F(), N
   }
   getCurrentThreadIds() {
     return N

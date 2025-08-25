@@ -54,8 +54,8 @@ function _(e, t) {
   if (null == e) return {};
   var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -63,8 +63,8 @@ function _(e, t) {
 function p(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let h = [{
@@ -94,7 +94,7 @@ let h = [{
         var {
           leading: t,
           trailing: n
-        } = e, a = _(e, ["leading", "trailing"]);
+        } = e, o = _(e, ["leading", "trailing"]);
         let [c, d] = i.useState(""), p = (0, s.U)("UserSettingsDesignSystems"), [m, g] = i.useState(h), E = i.useCallback(e => {
           g(m.filter(t => !e.has(t.id)))
         }, [m]);
@@ -107,7 +107,7 @@ let h = [{
               };
             case "icon":
               return {
-                icon: o.lOy, onClick: l.dG, "aria-label": "At"
+                icon: a.lOy, onClick: l.dG, "aria-label": "At"
               };
             case "text":
               return "https://discord.gg/";
@@ -119,21 +119,21 @@ let h = [{
         function y(e) {
           if (p)
             if ("icon" === e) return {
-              icon: o.qJs,
+              icon: a.qJs,
               onClick: l.dG,
               "aria-label": "At"
             };
             else return
         }
-        return (0, r.jsxs)(o.Kqy, {
+        return (0, r.jsxs)(a.Kqy, {
           gap: 16,
-          children: [(0, r.jsx)(o.oil, f(u({}, a), {
+          children: [(0, r.jsx)(a.oil, f(u({}, o), {
             value: c,
             onChange: d,
             leading: b(t),
             trailing: y(n),
             maxLength: 500
-          })), "tags" === t ? (0, r.jsx)(o.zxk, {
+          })), "tags" === t ? (0, r.jsx)(a.zxk, {
             text: "Reset Tags",
             size: "sm",
             variant: "secondary",
@@ -236,7 +236,7 @@ let h = [{
       name: "SearchBar",
       component: function(e) {
         let [t, n] = i.useState("");
-        return (0, r.jsx)(o.E1j, f(u({}, e), {
+        return (0, r.jsx)(a.E1j, f(u({}, e), {
           query: t,
           onChange: n,
           onClear: e.clearable ? () => n("") : true
@@ -282,7 +282,7 @@ let h = [{
       id: "text-area",
       component: function(e) {
         let [t, n] = i.useState("");
-        return (0, r.jsx)(o.Kx8, f(u({}, e), {
+        return (0, r.jsx)(a.Kx8, f(u({}, e), {
           value: t,
           onChange: n
         }))
@@ -347,45 +347,45 @@ let h = [{
           showCharacterCount: m,
           successMessage: p
         };
-        return (0, r.jsxs)(o.Kqy, {
-          children: [(0, r.jsxs)(o.Kqy, {
-            children: [(0, r.jsx)(o.xJW, {
+        return (0, r.jsxs)(a.Kqy, {
+          children: [(0, r.jsxs)(a.Kqy, {
+            children: [(0, r.jsx)(a.xJW, {
               title: "Text Input",
-              children: (0, r.jsxs)(o.Kqy, {
-                children: [(0, r.jsx)(o.oil, u({}, E)), (0, r.jsx)(o.oil, f(u({}, E), {
+              children: (0, r.jsxs)(a.Kqy, {
+                children: [(0, r.jsx)(a.oil, u({}, E)), (0, r.jsx)(a.oil, f(u({}, E), {
                   clearable: true
                 })), g && (0, r.jsxs)(r.Fragment, {
-                  children: [(0, r.jsx)(o.xJW, {
+                  children: [(0, r.jsx)(a.xJW, {
                     title: "Leading Icons",
-                    children: (0, r.jsxs)(o.Kqy, {
-                      children: [(0, r.jsx)(o.oil, f(u({}, E), {
+                    children: (0, r.jsxs)(a.Kqy, {
+                      children: [(0, r.jsx)(a.oil, f(u({}, E), {
                         leading: {
-                          icon: o.lOy,
+                          icon: a.lOy,
                           onClick: l.dG,
                           "aria-label": "At"
                         }
-                      })), (0, r.jsx)(o.oil, f(u({}, E), {
-                        leading: o.lOy
-                      })), (0, r.jsx)(o.oil, f(u({}, E), {
+                      })), (0, r.jsx)(a.oil, f(u({}, E), {
+                        leading: a.lOy
+                      })), (0, r.jsx)(a.oil, f(u({}, E), {
                         leading: "https://discord.gg/"
                       }))]
                     })
-                  }), (0, r.jsx)(o.xJW, {
+                  }), (0, r.jsx)(a.xJW, {
                     title: "Trailing Icons",
-                    children: (0, r.jsxs)(o.Kqy, {
-                      children: [(0, r.jsx)(o.oil, f(u({}, E), {
+                    children: (0, r.jsxs)(a.Kqy, {
+                      children: [(0, r.jsx)(a.oil, f(u({}, E), {
                         trailing: {
-                          icon: o.lOy,
+                          icon: a.lOy,
                           onClick: l.dG,
                           "aria-label": "At"
                         }
-                      })), (0, r.jsx)(o.oil, f(u({}, E), {
-                        trailing: o.lOy
+                      })), (0, r.jsx)(a.oil, f(u({}, E), {
+                        trailing: a.lOy
                       }))]
                     })
-                  }), (0, r.jsx)(o.xJW, {
+                  }), (0, r.jsx)(a.xJW, {
                     title: "Tags",
-                    children: (0, r.jsx)(o.oil, f(u({}, E), {
+                    children: (0, r.jsx)(a.oil, f(u({}, E), {
                       leading: {
                         type: "tags",
                         label: "Tags",
@@ -395,19 +395,19 @@ let h = [{
                   })]
                 })]
               })
-            }), (0, r.jsx)(o.xJW, {
+            }), (0, r.jsx)(a.xJW, {
               title: "Text Input (Legacy)",
-              children: (0, r.jsx)(o.GSy, u({}, E))
+              children: (0, r.jsx)(a.GSy, u({}, E))
             })]
-          }), (0, r.jsx)(o.xJW, {
+          }), (0, r.jsx)(a.xJW, {
             title: "Search Bar",
-            children: (0, r.jsxs)(o.Kqy, {
-              children: [(0, r.jsx)(o.E1j, {
+            children: (0, r.jsxs)(a.Kqy, {
+              children: [(0, r.jsx)(a.E1j, {
                 query: c,
                 onChange: l.dG,
                 disabled: n,
                 placeholder: i
-              }), (0, r.jsx)(o.E1j, {
+              }), (0, r.jsx)(a.E1j, {
                 query: c,
                 onChange: l.dG,
                 size: "sm",
@@ -415,12 +415,12 @@ let h = [{
                 placeholder: i
               })]
             })
-          }), (0, r.jsx)(o.xJW, {
+          }), (0, r.jsx)(a.xJW, {
             title: "Text Area",
-            children: (0, r.jsx)(o.Kx8, u({}, E))
-          }), (0, r.jsx)(o.xJW, {
+            children: (0, r.jsx)(a.Kx8, u({}, E))
+          }), (0, r.jsx)(a.xJW, {
             title: "Text Area (Legacy)",
-            children: (0, r.jsx)(a.iS, u({}, E))
+            children: (0, r.jsx)(o.iS, u({}, E))
           })]
         })
       },

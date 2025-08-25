@@ -2,7 +2,7 @@
 /** chunk id: 587177, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => a
+  Z: () => o
 });
 var Chunk311850 = require("./311850.js");
 
@@ -14,21 +14,21 @@ function i(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class a {
+class o {
   static fromServer(e) {
     let {
       prices: t,
       type: n,
       premium_type: i,
-      name: o,
+      name: a,
       sku_id: s,
       summary: l
     } = e;
-    return new a({
+    return new o({
       prices: (0, r.l)(t),
       type: n,
       premiumType: i,
-      name: o,
+      name: a,
       skuId: s,
       summary: l
     })

@@ -18,14 +18,14 @@ let d = e => {
     setIsAllPerksVisible: t,
     previousComponent: n
   } = e;
-  return (0, r.jsx)(a.gtL, {
+  return (0, r.jsx)(o.gtL, {
     "data-migration-pending": true,
     color: i.Tt.CUSTOM,
     onlyShineOnHover: true,
-    shineSize: a.rHe.SMALL,
+    shineSize: o.rHe.SMALL,
     className: u.seeAllPerksButton,
     onClick: () => {
-      t(true), o.default.track(l.rMx.NITRO_HOME_NAVIGATION, {
+      t(true), a.default.track(l.rMx.NITRO_HOME_NAVIGATION, {
         current_component: n,
         next_component: s.MQ.SEE_ALL,
         interaction_component: "See All Button"
@@ -33,7 +33,7 @@ let d = e => {
     },
     children: (0, r.jsxs)("div", {
       className: u.seeAllPerksButtonContent,
-      children: [c.intl.string(c.t["37C26e"]), (0, r.jsx)(a.Fbu, {
+      children: [c.intl.string(c.t["37C26e"]), (0, r.jsx)(o.Fbu, {
         color: "currentColor"
       })]
     })

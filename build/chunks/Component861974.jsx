@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk657707 = require("./657707.js"),
   Chunk777207 = require("./777207.jsx"),
   Chunk343696 = require("./343696.js"),
@@ -19,15 +19,15 @@ var Chunk120356 = require("./120356.js"),
 function u(e) {
   switch (e) {
     case "warn":
-      return o.Mgn;
+      return a.Mgn;
     case "info":
-      return o.d3s;
+      return a.d3s;
     case "danger":
-      return o.k$p;
+      return a.k$p;
     case "positive":
-      return o.dz2;
+      return a.dz2;
     case "preview":
-      return o.Che
+      return a.Che
   }
 }
 
@@ -50,12 +50,12 @@ function f(e) {
     children: t,
     messageType: n,
     action: i,
-    className: o,
+    className: a,
     textColor: c = "text-default",
     textVariant: f = "text-sm/medium"
   } = e, _ = u(n), p = d(n);
   return (0, r.jsxs)("div", {
-    className: a()(l.container, p, o),
+    className: o()(l.container, p, a),
     children: [(0, r.jsx)("div", {
       className: l.iconDiv,
       children: _ && (0, r.jsx)(_, {

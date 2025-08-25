@@ -15,10 +15,10 @@ var Chunk392711 = require("./392711.js"),
   Chunk789662 = require("./789662.js");
 
 function d(e, t, n, r, i) {
-  var a, s, c, d;
-  let _ = o.Z.getMutableGuildChannelsForGuild(e.id),
+  var o, s, c, d;
+  let _ = a.Z.getMutableGuildChannelsForGuild(e.id),
     p = r.filter(e => e.channel_id in _),
-    h = null != (a = n.filter(t => t.guild_id === e.id)[0]) ? a : {},
+    h = null != (o = n.filter(t => t.guild_id === e.id)[0]) ? o : {},
     m = l.Z.getMemberCount(e.id),
     g = f("year", r, p, e => {
       var t;
@@ -53,15 +53,15 @@ function d(e, t, n, r, i) {
 }
 
 function f(e, t, n, r) {
-  let a = t.reduce((e, t) => e + r(t), 0),
-    o = n.reduce((e, t) => e + r(t), 0),
+  let o = t.reduce((e, t) => e + r(t), 0),
+    a = n.reduce((e, t) => e + r(t), 0),
     s = i().sortBy(n, r).reverse()[0],
     l = null == s ? 0 : r(s),
-    c = (l / o * 100).toFixed(1);
+    c = (l / a * 100).toFixed(1);
   return {
     label: e,
-    totalOpensAcrossAllServers: a,
-    guildOpens: o,
+    totalOpensAcrossAllServers: o,
+    guildOpens: a,
     biggestChannel: l,
     biggestChannelFormatted: c
   }
@@ -70,9 +70,9 @@ function f(e, t, n, r) {
 function _(e, t) {
   var n, r;
   let i = null != (n = t.filter(t => t.guild_id === e.id)[0]) ? n : {},
-    o = null != (r = l.Z.getMemberCount(e.id)) ? r : 0,
+    a = null != (r = l.Z.getMemberCount(e.id)) ? r : 0,
     d = Date.now() - c.Z.Millis.DAYS_30,
-    f = s.Z.getFrequentlyWithoutFetchingLatest().filter(t => t instanceof a.Sf && t.guild_id === e.id),
+    f = s.Z.getFrequentlyWithoutFetchingLatest().filter(t => t instanceof o.Sf && t.guild_id === e.id),
     _ = f.filter(e => {
       var t, n;
       let r = null != (n = null == (t = s.Z.frecencyWithoutFetchingLatest.usageHistory[e.id]) ? true : t.recentUses) ? n : [];
@@ -84,5 +84,5 @@ function _(e, t) {
       return e + (null != (r = null == (n = s.Z.frecencyWithoutFetchingLatest.usageHistory[t.id]) ? true : n.totalUses) ? r : 0)
     }, 0),
     m = "\n- **Local**:\n    - Guild Visits: ".concat(h, "\n    - Channels: ").concat(f.length, "\n    - Recent Channels: ").concat(_.length, "\n");
-  return i.messages === u.XR.High || o > 1e3 ? [u.AR.UseGreyDot, p, "SuggestGreyDot" + m] : [u.AR.KeepAsIs, p, "KeepAsIs" + m]
+  return i.messages === u.XR.High || a > 1e3 ? [u.AR.UseGreyDot, p, "SuggestGreyDot" + m] : [u.AR.KeepAsIs, p, "KeepAsIs" + m]
 }

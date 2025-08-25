@@ -5,7 +5,7 @@ let r, i;
 require.d(exports, {
   Z: () => F
 }), require("./388685.js");
-var a, Chunk392711 = require("./392711.js"),
+var o, Chunk392711 = require("./392711.js"),
   s = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -67,8 +67,8 @@ function N(e, t) {
 function R(e, t, n) {
   let r = T(m, null != e ? e : d.ME),
     i = r[t],
-    a = n(i);
-  return i === a ? [false, a, i] : (null != i && (delete r[t], null != i.channelId && (delete T(b, i.channelId)[t], delete T(y, i.channelId)[t]), null != i.sessionId && delete T(O, t)[i.sessionId], N(null != e ? e : d.ME, t)), null != a && (r[t] = a, null != a.channelId && (T(b, a.channelId)[t] = a, a.selfVideo && (T(y, a.channelId)[t] = a, C(null != e ? e : d.ME, t))), null != a.sessionId && (T(O, t)[a.sessionId] = a)), [true, a, i])
+    o = n(i);
+  return i === o ? [false, o, i] : (null != i && (delete r[t], null != i.channelId && (delete T(b, i.channelId)[t], delete T(y, i.channelId)[t]), null != i.sessionId && delete T(O, t)[i.sessionId], N(null != e ? e : d.ME, t)), null != o && (r[t] = o, null != o.channelId && (T(b, o.channelId)[t] = o, o.selfVideo && (T(y, o.channelId)[t] = o, C(null != e ? e : d.ME, t))), null != o.sessionId && (T(O, t)[o.sessionId] = o)), [true, o, i])
 }
 
 function P(e) {
@@ -76,8 +76,8 @@ function P(e) {
     voiceStates: t
   } = e;
   return t.reduce((e, t) => {
-    let [n, r, a] = x(t.guildId, t);
-    return n ? (t.sessionId === i && null != r && null != a && a.channelId !== r.channelId && (p += 1), h++, true) : e
+    let [n, r, o] = x(t.guildId, t);
+    return n ? (t.sessionId === i && null != r && null != o && o.channelId !== r.channelId && (p += 1), h++, true) : e
   }, false)
 }
 
@@ -135,23 +135,23 @@ function j(e) {
   let {
     user: t,
     sessionId: n
-  } = e, a = null != r && r !== t.id;
-  return a && (m = {}, b = {}, O = {}, y = {}, E.clear()), r = t.id, i = n, a
+  } = e, o = null != r && r !== t.id;
+  return o && (m = {}, b = {}, O = {}, y = {}, E.clear()), r = t.id, i = n, o
 }
 
-function k() {
+function M() {
   m = {}, b = {}, O = {}, y = {}, E.clear()
 }
 
-function M(e) {
+function k(e) {
   let {
     voiceStates: t,
     user: n,
-    sessionId: a
+    sessionId: o
   } = e;
   for (let [e, n] of(m = {}, b = {}, O = {}, y = {}, Object.entries(t)))
     for (let [t, r] of Object.entries(n)) R(e, t, () => new u.Z(r));
-  r = n.id, i = a
+  r = n.id, i = o
 }
 
 function U(e) {
@@ -176,7 +176,7 @@ function B(e) {
   } = e;
   S(t)
 }
-class Z extends(a = Chunk442837.ZP.Store) {
+class Z extends(o = Chunk442837.ZP.Store) {
   getAllVoiceStates() {
     return m
   }
@@ -240,9 +240,9 @@ class Z extends(a = Chunk442837.ZP.Store) {
     return Object.values(T(y, e)).length > 0
   }
   getVoicePlatformForChannel(e, t) {
-    var n, a;
-    let o = null != i && (null == (a = O[r]) || null == (n = a[i]) ? true : n.channelId);
-    return t === r && e === o ? f.wR.DESKTOP : v[I(t, e)]
+    var n, o;
+    let a = null != i && (null == (o = O[r]) || null == (n = o[i]) ? true : n.channelId);
+    return t === r && e === a ? f.wR.DESKTOP : v[I(t, e)]
   }
   get userHasBeenMovedVersion() {
     return p
@@ -251,8 +251,8 @@ class Z extends(a = Chunk442837.ZP.Store) {
 _(Z, "displayName", "VoiceStateStore");
 let F = new Z(Chunk570140.Z, {
   CONNECTION_OPEN: j,
-  CONNECTION_OPEN_SUPPLEMENTAL: k,
-  OVERLAY_INITIALIZE: M,
+  CONNECTION_OPEN_SUPPLEMENTAL: M,
+  OVERLAY_INITIALIZE: k,
   VOICE_CHANNEL_SELECT: L,
   VOICE_STATE_UPDATES: P,
   GUILD_DELETE: U,

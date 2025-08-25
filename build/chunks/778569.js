@@ -2,20 +2,20 @@
 /** chunk id: 778569, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => o
+  Z: () => a
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk81063 = require("./81063.js");
-let a = ["embedded_cover", "embedded_background"];
+let o = ["embedded_cover", "embedded_background"];
 
-function o(e) {
+function a(e) {
   let {
     applicationId: t,
     size: n,
-    names: o = a
-  } = e, [s, l] = r.useState(null), [c, u] = r.useState(true), d = (0, i.xF)(t, s, n), f = c ? "loading" : null != d ? "fetched" : "not-found", _ = r.useRef(o);
+    names: a = o
+  } = e, [s, l] = r.useState(null), [c, u] = r.useState(true), d = (0, i.xF)(t, s, n), f = c ? "loading" : null != d ? "fetched" : "not-found", _ = r.useRef(a);
   return r.useEffect(() => {
-    _.current = o
+    _.current = a
   }), r.useEffect(() => {
     let {
       current: e

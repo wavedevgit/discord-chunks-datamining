@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk257465 = require("./257465.jsx"),
   Chunk667202 = require("./667202.jsx"),
@@ -59,7 +59,7 @@ let C = (e, t) => {
       status: n,
       onClose: i
     } = e, {
-      avatarSrc: a,
+      avatarSrc: o,
       eventHandlers: s
     } = (0, p.Z)({
       userId: null == t ? true : t.id,
@@ -68,10 +68,10 @@ let C = (e, t) => {
     return (0, r.jsxs)("div", {
       className: I.trialRecipientRow,
       children: [(0, r.jsx)(d.qEK, A({
-        imageClassName: o()({
+        imageClassName: a()({
           [I.erroredAvatar]: c
         }),
-        src: a,
+        src: o,
         "aria-label": l,
         size: d.EFr.SIZE_32
       }, s)), c ? (0, r.jsxs)(r.Fragment, {
@@ -106,13 +106,13 @@ let C = (e, t) => {
     let {
       results: t,
       onClose: n,
-      isReminderConfirmation: a
-    } = e, o = (0, s.e7)([y.Z], () => y.Z.getReferralsRemaining());
+      isReminderConfirmation: o
+    } = e, a = (0, s.e7)([y.Z], () => y.Z.getReferralsRemaining());
     m.default.track(O.rMx.REFERRAL_PROGRAM_SHARE_CTA_CLICKED);
     let {
       reducedMotion: f
     } = i.useContext(u.Sf);
-    if (null === o) return (0, r.jsx)(d.$jN, {});
+    if (null === a) return (0, r.jsx)(d.$jN, {});
     let _ = () => f.enabled ? {
         src: T.Z,
         type: "image"
@@ -120,8 +120,8 @@ let C = (e, t) => {
         rive: d.p8m,
         type: "rive"
       },
-      p = () => 0 === t.filter(e => e.status === b.Fz.SUCCESS).length ? v.intl.string(v.t["7VBEub"]) : true === a ? v.intl.string(v.t.GP5lbm) : v.intl.string(v.t.tKCltb),
-      h = () => true === a ? v.intl.format(v.t["4gJJfH"], {
+      p = () => 0 === t.filter(e => e.status === b.Fz.SUCCESS).length ? v.intl.string(v.t["7VBEub"]) : true === o ? v.intl.string(v.t.GP5lbm) : v.intl.string(v.t.tKCltb),
+      h = () => true === o ? v.intl.format(v.t["4gJJfH"], {
         helpdeskArticle: g.Z.getArticleURL(O.BhN.REFERRAL_PROGRAM)
       }) : v.intl.format(v.t.AwGSWl, {
         helpdeskArticle: g.Z.getArticleURL(O.BhN.REFERRAL_PROGRAM)

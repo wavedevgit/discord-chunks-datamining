@@ -64,7 +64,7 @@ let O = e => {
   let {
     children: t,
     close: n,
-    onUnmount: o,
+    onUnmount: a,
     target: l,
     rect: f,
     position: _,
@@ -92,9 +92,9 @@ let O = e => {
       null == (e = r.ownerDocument) || e.removeEventListener("click", i, true), null == (t = r.ownerDocument) || t.removeEventListener("contextmenu", i, true)
     }
   }, []);
-  let I = i.useRef(o);
+  let I = i.useRef(a);
   i.useEffect(() => {
-    I.current = o
+    I.current = a
   }), i.useEffect(() => () => {
     var e;
     return null == (e = I.current) ? true : e.call(I)
@@ -102,7 +102,7 @@ let O = e => {
     var e;
     null == (e = b.current) || e.updatePosition()
   }), (0, u.Z)({
-    type: a.ImpressionTypes.MENU,
+    type: o.ImpressionTypes.MENU,
     name: m,
     properties: g
   });
@@ -166,8 +166,8 @@ class v extends Chunk647438.PureComponent {
     let {
       appContext: n,
       target: i,
-      isOpen: a,
-      theme: o,
+      isOpen: o,
+      theme: a,
       config: s,
       rect: l
     } = this.props, c = null != (e = this.state.render) ? module : this.props.render;
@@ -187,7 +187,7 @@ class v extends Chunk647438.PureComponent {
         } = e;
         return c({
           position: r,
-          theme: o,
+          theme: a,
           onHeightUpdate: t,
           config: s,
           target: i,
@@ -223,7 +223,7 @@ function I() {
     contextMenu: Chunk574254.Z.getContextMenu(),
     version: Chunk574254.Z.version,
     isOpen: Chunk574254.Z.isOpen()
-  })), a = (0, Chunk442837.e7)([Chunk210887.Z], () => Chunk210887.Z.theme), {
+  })), o = (0, Chunk442837.e7)([Chunk210887.Z], () => Chunk210887.Z.theme), {
     appContext: s,
     renderWindow: u
   } = Chunk647438.useContext(Chunk40851.ZP);

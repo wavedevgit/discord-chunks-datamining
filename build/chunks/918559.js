@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Ez: () => r,
-  I0: () => a,
+  I0: () => o,
   MI: () => i
 });
 var r = function(e) {
@@ -12,4 +12,4 @@ var r = function(e) {
   i = function(e) {
     return e[e.NO_CHAT = 0] = "NO_CHAT", e[e.RESIZABLE = 1] = "RESIZABLE", e
   }({});
-let a = 16 / 9
+let o = 16 / 9

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
   Chunk159635 = require("./159635.js"),
-  o = require.n(Chunk159635),
+  a = require.n(Chunk159635),
   Chunk159299 = require("./159299.js"),
   Chunk675478 = require("./675478.js"),
   Chunk709302 = require("./709302.js"),
@@ -156,15 +156,15 @@ class S {
     if (null == r || !this._include(E.h8.USER)) return;
     let {
       userFilters: i
-    } = this.options, a = T(E.h8.USER, this.options);
+    } = this.options, o = T(E.h8.USER, this.options);
     if ((null == i ? true : i.thread) != null) {
       let t = s.Z.getMemberListSections(i.thread),
         r = [];
       for (let e in t) {
         let n = t[e];
         for (let e of n.userIds) {
-          var o, l, c;
-          (null == i || !i.friends || d.Z.isFriend(e)) && (null != (c = null == (o = this._userBlacklist) ? true : o.includes(e)) && c || r.push({
+          var a, l, c;
+          (null == i || !i.friends || d.Z.isFriend(e)) && (null != (c = null == (a = this._userBlacklist) ? true : a.includes(e)) && c || r.push({
             userId: e,
             nick: null == (l = n.usersById[e]) ? true : l.displayName
           }))
@@ -174,7 +174,7 @@ class S {
         query: e,
         users: r,
         limit: n,
-        boosters: a
+        boosters: o
       });
       return
     }
@@ -182,7 +182,7 @@ class S {
       query: e,
       filters: i,
       blacklist: this._userBlacklist,
-      boosters: a
+      boosters: o
     })
   }
   queryGroupDMs(e, t) {
@@ -208,7 +208,7 @@ class S {
   queryLink(e, t) {
     let n;
     if (!this._include(E.h8.LINK)) return [];
-    let r = o().sanitizeUrl(e);
+    let r = a().sanitizeUrl(e);
     try {
       n = new URL(r)
     } catch (e) {
@@ -216,9 +216,9 @@ class S {
     }
     let {
       pathname: i,
-      hostname: a = "",
+      hostname: o = "",
       host: s
-    } = n, l = h.Z.isDiscordHostname(a) || window.location.host === s;
+    } = n, l = h.Z.isDiscordHostname(o) || window.location.host === s;
     return null !== i && l && h.Z.isAppRoute(i) ? [{
       type: E.h8.LINK,
       record: c.Z.fromPath(i),

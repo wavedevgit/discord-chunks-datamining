@@ -2,12 +2,12 @@
 /** chunk id: 501348, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => ea
+  Z: () => eo
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
   Chunk524437 = require("./524437.js"),
@@ -145,14 +145,14 @@ class en extends Chunk647438.Component {
       children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
         id: X,
         tag: Chunk481060.RB0.H5,
-        className: o()(Chunk226518.title, Chunk197571.marginBottom8),
+        className: a()(Chunk226518.title, Chunk197571.marginBottom8),
         children: Chunk388032.intl.string(Chunk388032.t.i19n5O)
       }), (0, Chunk951288.jsx)(Chunk481060.R94, {
         type: Chunk481060.geA.DESCRIPTION,
         className: Chunk226518.subtext,
         children: Chunk388032.intl.string(Chunk388032.t.ip0uSU)
       }), (0, Chunk951288.jsx)(Chunk481060.iRW, {
-        className: o()(Chunk197571.marginTop20, Chunk197571.marginBottom4),
+        className: a()(Chunk197571.marginTop20, Chunk197571.marginBottom4),
         initialValue: this.props.zoom,
         defaultValue: Chunk981631.yqN.ZOOM_DEFAULT,
         markers: Chunk981631.yqN.ZOOM_SCALES,
@@ -174,7 +174,7 @@ class en extends Chunk647438.Component {
       children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
         id: Q,
         tag: Chunk481060.RB0.H5,
-        className: o()(Chunk226518.title, Chunk197571.marginBottom8),
+        className: a()(Chunk226518.title, Chunk197571.marginBottom8),
         children: Chunk388032.intl.string(Chunk388032.t.qPOqoK)
       }), (0, Chunk951288.jsx)(Chunk481060.R94, {
         type: Chunk481060.geA.DESCRIPTION,
@@ -183,7 +183,7 @@ class en extends Chunk647438.Component {
       }), (0, Chunk951288.jsx)(Chunk600164.Z, {
         align: Chunk600164.Z.Align.CENTER,
         children: (0, Chunk951288.jsx)(Chunk481060.iRW, {
-          className: o()({
+          className: a()({
             [Chunk197571.marginTop20]: false,
             [Chunk197571.marginBottom4]: false
           }),
@@ -210,7 +210,7 @@ class en extends Chunk647438.Component {
       children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
         id: J,
         tag: Chunk481060.RB0.H5,
-        className: o()(Chunk226518.title, Chunk197571.marginBottom8),
+        className: a()(Chunk226518.title, Chunk197571.marginBottom8),
         children: Chunk388032.intl.string(Chunk388032.t.Q6lKkp)
       }), (0, Chunk951288.jsx)(Chunk481060.R94, {
         type: Chunk481060.geA.DESCRIPTION,
@@ -235,10 +235,10 @@ class en extends Chunk647438.Component {
       theme: t,
       messageGroupSpacing: n,
       hideSimpleEmbedContent: i
-    } = this.props, a = (0, Chunk780384.wj)(exports) ? this.darkMessages : this.lightMessages;
+    } = this.props, o = (0, Chunk780384.wj)(exports) ? this.darkMessages : this.lightMessages;
     return (0, Chunk951288.jsx)(Chunk481060.Rny, {
       children: (0, Chunk951288.jsx)(Chunk481060.Zbd, {
-        className: o()(Chunk226518.preview, Chunk197571.marginBottom40, module ? Chunk226518.compactPreview : true, "group-spacing-".concat(null != require ? require : module ? Chunk959517.c8 : Chunk959517.pq)),
+        className: a()(Chunk226518.preview, Chunk197571.marginBottom40, module ? Chunk226518.compactPreview : true, "group-spacing-".concat(null != require ? require : module ? Chunk959517.c8 : Chunk959517.pq)),
         outline: true,
         "aria-hidden": true,
         children: Chunk120356.map((t, n) => (0, r.jsx)(C.Z, {
@@ -257,7 +257,7 @@ class en extends Chunk647438.Component {
       useForcedColors: e
     } = this.props;
     return module ? (0, Chunk951288.jsx)(Chunk481060.xJW, {
-      className: o()(Chunk197571.marginTop8, Chunk197571.marginBottom40),
+      className: a()(Chunk197571.marginTop8, Chunk197571.marginBottom40),
       title: (0, Chunk951288.jsx)("div", {
         className: Chunk226518.themeTitle,
         children: (0, Chunk951288.jsx)("div", {
@@ -364,7 +364,7 @@ class en extends Chunk647438.Component {
     return (0, Chunk951288.jsx)(Chunk481060.xJW, {
       title: (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-lg/medium",
-        className: o()(Chunk226518.timeTitle, Chunk226518.title),
+        className: a()(Chunk226518.timeTitle, Chunk226518.title),
         children: Chunk388032.intl.string(Chunk388032.t.dyamEB)
       }),
       children: (0, Chunk951288.jsx)(Chunk481060.FXm, {
@@ -480,7 +480,7 @@ class er extends en {
     }, {
       name: Chunk388032.intl.string(Chunk388032.t["4cuYHx"]),
       value: Chunk524437.Pi.COZY
-    }], a = (0, Chunk951288.jsxs)(Chunk921801.F, {
+    }], o = (0, Chunk951288.jsxs)(Chunk921801.F, {
       setting: Chunk726985.s6.APPEARANCE_LIST_SPACING,
       children: [(0, Chunk951288.jsxs)(Chunk481060.xJW, {
         title: (0, Chunk951288.jsx)(Chunk481060.Text, {
@@ -500,7 +500,7 @@ class er extends en {
       }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
         className: Chunk226518.divider
       })]
-    }), o = (0, Chunk951288.jsxs)(Chunk921801.F, {
+    }), a = (0, Chunk951288.jsxs)(Chunk921801.F, {
       setting: Chunk726985.s6.APPEARANCE_MESSAGE_DISPLAY_COMPACT,
       children: [(0, Chunk951288.jsxs)(Chunk481060.Kqy, {
         gap: 8,
@@ -570,7 +570,7 @@ class er extends en {
     return (0, Chunk951288.jsxs)(Chunk481060.hjN, {
       tag: Chunk481060.RB0.H1,
       title: Chunk388032.intl.string(Chunk388032.t["iHH+k5"]),
-      children: [exports, require, Chunk120356, o, Chunk442837, Chunk704215, Chunk780384]
+      children: [exports, require, Chunk120356, a, Chunk442837, Chunk704215, Chunk780384]
     })
   }
 }
@@ -581,12 +581,12 @@ let ei = e => {
   })
 };
 
-function ea() {
+function eo() {
   let e = Chunk695346.jU.useSetting(),
     t = Chunk695346.RS.useSetting(),
     n = Chunk695346.NA.useSetting(),
-    a = Chunk695346.L1.useSetting(),
-    o = Chunk695346.hg.useSetting(),
+    o = Chunk695346.L1.useSetting(),
+    a = Chunk695346.hg.useSetting(),
     c = Chunk695346.YC.useSetting(),
     u = Chunk803038.Mc.useExperiment({
       location: "UserSettingsAppearance"
@@ -615,7 +615,7 @@ function ea() {
     messageDisplayCompact: module,
     hideSimpleEmbedContent: exports && require,
     clientTheme: Chunk120356,
-    timestampHourCycle: o,
+    timestampHourCycle: a,
     density: Chunk524437,
     darkSidebar: Chunk481060
   }, Chunk153867))

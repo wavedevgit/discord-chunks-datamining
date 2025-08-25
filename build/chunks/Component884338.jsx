@@ -126,8 +126,8 @@ class P extends(r = Chunk647438.PureComponent) {
       max: t,
       renderUser: n = this.defaultRenderUser,
       size: r,
-      extraDetail: a
-    } = this.props, o = [], s = module.length === exports ? module.length : exports - 1, l = this.renderMoreUsers(s), u = 0;
+      extraDetail: o
+    } = this.props, a = [], s = module.length === exports ? module.length : exports - 1, l = this.renderMoreUsers(s), u = 0;
     for (; Chunk670188 < s && Chunk670188 < module.length;) {
       var d;
       let t = null == Chunk481060 && null == Chunk647438 && Chunk670188 === module.length - 1,
@@ -150,24 +150,24 @@ class P extends(r = Chunk647438.PureComponent) {
       max: t,
       count: n,
       hideMoreUsers: r,
-      renderMoreUsers: o,
+      renderMoreUsers: a,
       users: s,
       dimEmptyUsers: l
-    } = this.props, c = Math.min(e, s.length), u = l ? C : o;
+    } = this.props, c = Math.min(e, s.length), u = l ? C : a;
     if (!r) {
       if (null != n) {
-        if (n >= t) return (0, i.jsx)(a.Fragment, {
+        if (n >= t) return (0, i.jsx)(o.Fragment, {
           children: u("".concat(t, "+"), t)
         }, "more-users");
         else if (n > s.length) {
           let e = n - s.length;
-          return (0, i.jsx)(a.Fragment, {
+          return (0, i.jsx)(o.Fragment, {
             children: u("+".concat(e), e)
           }, "more-users")
         }
       } else if (c < s.length) {
         let e = Math.min(s.length - c, 99);
-        return (0, i.jsx)(a.Fragment, {
+        return (0, i.jsx)(o.Fragment, {
           children: u("+".concat(e), e)
         }, "more-users")
       }
@@ -187,8 +187,8 @@ class P extends(r = Chunk647438.PureComponent) {
       size: t,
       users: n,
       guildId: r,
-      showUserPopout: a,
-      useFallbackUserForPopout: o
+      showUserPopout: o,
+      useFallbackUserForPopout: a
     } = this.props, {
       popoutUserId: l
     } = this.state;
@@ -220,10 +220,10 @@ class P extends(r = Chunk647438.PureComponent) {
   constructor(...e) {
     super(...e), h(this, "state", {
       popoutUserId: null
-    }), h(this, "_ref", a.createRef()), h(this, "defaultRenderUser", (e, t, n) => {
+    }), h(this, "_ref", o.createRef()), h(this, "defaultRenderUser", (e, t, n) => {
       let r, {
-        showUserPopout: a,
-        guildId: o,
+        showUserPopout: o,
+        guildId: a,
         size: c,
         dimEmptyUsers: u
       } = this.props;
@@ -250,7 +250,7 @@ class P extends(r = Chunk647438.PureComponent) {
           height: e
         })
       } else r = (0, i.jsx)("img", {
-        src: e.getAvatarURL(o, c),
+        src: e.getAvatarURL(a, c),
         alt: e.username,
         className: p.avatar
       });
@@ -258,7 +258,7 @@ class P extends(r = Chunk647438.PureComponent) {
         className: p.avatarWithBackground,
         children: r
       }, S(e, n));
-      return a && e !== T ? (0, i.jsx)(l.P3F, {
+      return o && e !== T ? (0, i.jsx)(l.P3F, {
         className: p.clickableAvatar,
         onClick: () => {
           null != this._ref.current && null != e && this.setState({

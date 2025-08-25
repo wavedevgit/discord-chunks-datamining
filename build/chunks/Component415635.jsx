@@ -25,29 +25,29 @@ function g(e) {
     guildId: n,
     userId: g,
     containerDimensions: E
-  } = e, b = (0, o.e7)([l.Z], () => l.Z.useReducedMotion), [y, O] = i.useState([]), v = y.length < m;
+  } = e, b = (0, a.e7)([l.Z], () => l.Z.useReducedMotion), [y, O] = i.useState([]), v = y.length < m;
   i.useEffect(() => {
     function e(e) {
       var r;
       let {
         channelId: i,
-        userId: o,
+        userId: a,
         emoji: s,
         animationType: l,
         animationId: _
       } = e;
-      if (null != g && g !== o || u.Z.getEnabled() && (0, d.Z)(null != (r = null == s ? true : s.name) ? r : "")) return;
+      if (null != g && g !== a || u.Z.getEnabled() && (0, d.Z)(null != (r = null == s ? true : s.name) ? r : "")) return;
       let h = null != s && null != l && null != _;
       if (i === t && !b && v && h) {
         let e = (0, f._r)(s),
           r = null != s.id && !s.animated,
           i = {
-            id: (0, a.Z)(),
+            id: (0, o.Z)(),
             animationType: l,
             animationId: _,
             shouldResize: r,
             url: e,
-            userId: o
+            userId: a
           };
         O(e => [...e, i]), c.ZP.trackWithMetadata(p.rMx.VOICE_CHANNEL_EFFECT_VIEWED, {
           channel_id: t,

@@ -48,10 +48,10 @@ function b(e) {
         richValue: n
       })
     }, []),
-    A = r.useCallback(e => {
+    k = r.useCallback(e => {
       "Escape" === e.key && l.Z.updateNotificationStatus(t, g._1z.ACTIVE)
     }, [t]),
-    k = r.useCallback(() => (j.length > E || (o.Z.sendMessage(b.id, f.ZP.parse(b, j), false, {
+    A = r.useCallback(() => (j.length > E || (o.Z.sendMessage(b.id, f.ZP.parse(b, j), false, {
       location: y.dy.OVERLAY
     }), l.Z.setInputLocked(true, (0, m.getPID)()), l.Z.updateNotificationStatus(t, g._1z.DISMISSED), null == v || v(j)), Promise.resolve({
       shouldClear: false,
@@ -72,8 +72,8 @@ function b(e) {
       onBlur: T,
       onFocus: Z,
       focused: N,
-      onSubmit: k,
-      onKeyDown: A,
+      onSubmit: A,
+      onKeyDown: k,
       autoCompletePosition: "bottom",
       disableThemedBackground: true
     })

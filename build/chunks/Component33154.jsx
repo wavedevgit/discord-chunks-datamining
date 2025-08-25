@@ -26,7 +26,7 @@ let m = e => {
     guild: h,
     closePopout: m,
     ctaRef: g
-  } = e, E = (0, c.Dt)(), [b, y] = i.useState(false), O = (0, a.e7)([d.Z], () => d.Z.isLurking(h.id), [h.id]);
+  } = e, E = (0, c.Dt)(), [b, y] = i.useState(false), O = (0, o.e7)([d.Z], () => d.Z.isLurking(h.id), [h.id]);
   i.useEffect(() => {
     b && !O && m()
   }, [b, O, m]);
@@ -78,9 +78,9 @@ let m = e => {
           buttonRef: g,
           onClick: T,
           loading: b
-        }), (0, r.jsx)(o.zx, {
+        }), (0, r.jsx)(a.zx, {
           onClick: m,
-          look: o.zx.Looks.BLANK,
+          look: a.zx.Looks.BLANK,
           className: p.cancel,
           children: _.intl.string(_.t["2m+Sqq"])
         })]

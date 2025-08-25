@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
-  o = require.n(Chunk512722),
+  a = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk816814 = require("./816814.js"),
@@ -73,22 +73,22 @@ function j(e, t) {
   }), e
 }
 
-function k(e) {
+function M(e) {
   let {
     code: {
       code: t,
       consumed: n
     }
-  } = e, a = "".concat(t.substr(0, 4), "-").concat(t.substr(4)), o = i.useRef(null), s = i.useCallback(e => {
+  } = e, o = "".concat(t.substr(0, 4), "-").concat(t.substr(4)), a = i.useRef(null), s = i.useCallback(e => {
     if ("c" === e.key && e.metaKey && v.wS) {
       var t;
-      e.preventDefault(), e.stopPropagation(), (0, v.JG)(a), null == o || null == (t = o.current) || t.focus()
+      e.preventDefault(), e.stopPropagation(), (0, v.JG)(o), null == a || null == (t = a.current) || t.focus()
     }
-  }, [a]);
+  }, [o]);
   return (0, r.jsx)("li", {
     className: w.marginBottom20,
     children: (0, r.jsx)(l.P3F, {
-      innerRef: o,
+      innerRef: a,
       className: P.backupCode,
       onKeyDown: s,
       children: (0, r.jsx)(l.XZJ, {
@@ -98,13 +98,13 @@ function k(e) {
         value: n,
         children: (0, r.jsx)("span", {
           className: P.code,
-          children: a
+          children: o
         })
       })
     })
   })
 }
-class M extends Chunk647438.PureComponent {
+class k extends Chunk647438.PureComponent {
   maskPhoneNumber(e) {
     return null == e ? "" : "".concat("*".repeat(e.length - 4)).concat(e.slice(false))
   }
@@ -114,12 +114,12 @@ class M extends Chunk647438.PureComponent {
       } = this.state,
       {
         currentUser: i,
-        togglingSMS: a,
-        hasTOTPEnabled: o
+        togglingSMS: o,
+        hasTOTPEnabled: a
       } = this.props,
       s = null != Chunk647438.phone,
       c = Chunk647438.hasFlag(Chunk981631.xW$.MFA_SMS);
-    if (o) {
+    if (a) {
       if (Chunk442837 || Chunk816814) {
         let e = require ? Chunk647438.phone : this.maskPhoneNumber(Chunk647438.phone);
         t = (0, Chunk951288.jsxs)(Chunk481060.R94, {
@@ -201,7 +201,7 @@ class M extends Chunk647438.PureComponent {
           text: Chunk388032.intl.string(Chunk388032.t.qZZUy8)
         })
       });
-      let i = e => e.map(e => (0, r.jsx)(k, {
+      let i = e => e.map(e => (0, r.jsx)(M, {
         code: e
       }, e.code));
       e = (0, Chunk951288.jsxs)(Chunk481060.hjN, {
@@ -381,12 +381,12 @@ class M extends Chunk647438.PureComponent {
 
 function U(e) {
   let t = (0, s.e7)([O.default], () => O.default.getCurrentUser());
-  o()(null != t, "TwoFactorAuth: currentUser cannot be undefined");
+  a()(null != t, "TwoFactorAuth: currentUser cannot be undefined");
   let n = (0, s.cj)([y.Z, b.default], () => ({
     togglingSMS: y.Z.togglingSMS,
     hasTOTPEnabled: b.default.hasTOTPEnabled()
   }));
-  return (0, r.jsx)(M, x({
+  return (0, r.jsx)(k, x({
     currentUser: t
   }, n, e))
 }

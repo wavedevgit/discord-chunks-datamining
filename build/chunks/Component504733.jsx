@@ -18,7 +18,7 @@ function u(e) {
     message: t,
     channel: n,
     compact: u
-  } = e, d = (0, a.ZP)(t), f = t.application, _ = (0, o.l)({
+  } = e, d = (0, o.ZP)(t), f = t.application, _ = (0, a.l)({
     user: t.author,
     channelId: n.id,
     guildId: n.guild_id,

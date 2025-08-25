@@ -6,7 +6,7 @@ require.d(exports, {
 });
 var Chunk951288 = require("./951288.js"),
   Chunk512722 = require("./512722.js"),
-  a = require.n(Chunk512722),
+  o = require.n(Chunk512722),
   Chunk481060 = require("./481060.js");
 
 function s(e, t, n) {
@@ -56,7 +56,7 @@ let d = {
       sourceUserId: c,
       appContext: d
     } = e;
-    a()(i.shouldOpenGameProfile, "Passed a false value for [gameProfileModalChecks]. Are you using the useShouldOpenGameProfile hook correctly?"), a()(i.applicationId === t, "Passed an unexpected [applicationId]. Are you passing a different one than you passed to useShouldOpenGameProfileModal?"), (0, o.ZDy)(async () => {
+    o()(i.shouldOpenGameProfile, "Passed a false value for [gameProfileModalChecks]. Are you using the useShouldOpenGameProfile hook correctly?"), o()(i.applicationId === t, "Passed an unexpected [applicationId]. Are you passing a different one than you passed to useShouldOpenGameProfileModal?"), (0, a.ZDy)(async () => {
       let {
         default: e
       } = await Promise.all([n.e("89311"), n.e("43364")]).then(n.bind(n, 644941));
@@ -68,7 +68,7 @@ let d = {
         appContext: d
       }))
     }, {
-      contextKey: null != d ? (0, o.VnL)(d) : true
+      contextKey: null != d ? (0, a.VnL)(d) : true
     })
   }
 }

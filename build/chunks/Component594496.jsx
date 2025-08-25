@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk512722 = require("./512722.js"),
-  a = require.n(Chunk512722),
+  o = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk295474 = require("./295474.js"),
@@ -78,11 +78,11 @@ function j(e) {
   let {
     guild: x,
     nameplateEnabled: j
-  } = e, k = (0, o.e7)([O.default], () => {
+  } = e, M = (0, a.e7)([O.default], () => {
     let e = O.default.getCurrentUser();
-    return a()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
+    return o()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
   }), {
-    pendingAvatar: M,
+    pendingAvatar: k,
     pendingNickname: U,
     pendingBanner: G,
     pendingBio: B,
@@ -90,14 +90,14 @@ function j(e) {
     pendingThemeColors: F,
     errors: V,
     guild: H
-  } = (0, o.cj)([S.Z], () => {
+  } = (0, a.cj)([S.Z], () => {
     let {
       pendingAvatar: e,
       pendingNickname: t,
       pendingBio: n,
       pendingPronouns: r,
       pendingBanner: i,
-      pendingThemeColors: a
+      pendingThemeColors: o
     } = S.Z.getAllPending();
     return {
       pendingAvatar: e,
@@ -105,20 +105,20 @@ function j(e) {
       pendingBanner: i,
       pendingBio: n,
       pendingPronouns: r,
-      pendingThemeColors: a,
+      pendingThemeColors: o,
       errors: S.Z.getErrors(),
       guild: S.Z.getGuild()
     }
   }), Y = (0, E.SD)({
-    userId: k.id,
-    image: M
+    userId: M.id,
+    image: k
   }), W = null != x ? x : H;
-  a()(null != W, "guild should not be null");
+  o()(null != W, "guild should not be null");
   let K = (0, l.gS)(W.id),
-    z = (0, o.e7)([y.ZP], () => null == W.id ? null : y.ZP.getMember(W.id, k.id)),
-    q = (0, o.e7)([b.Z], () => b.Z.getGuildMemberProfile(k.id, W.id)),
-    X = v.ZP.canUsePremiumProfileCustomization(k),
-    Q = (0, c.gd)(M, null == z ? true : z.avatar),
+    z = (0, a.e7)([y.ZP], () => null == W.id ? null : y.ZP.getMember(W.id, M.id)),
+    q = (0, a.e7)([b.Z], () => b.Z.getGuildMemberProfile(M.id, W.id)),
+    X = v.ZP.canUsePremiumProfileCustomization(M),
+    Q = (0, c.gd)(k, null == z ? true : z.avatar),
     J = (0, c.f$)(G, null == q ? true : q.banner),
     $ = (0, A.p)(F, null == q ? true : q.themeColors),
     ee = null != (t = null == q ? true : q.bio) ? t : "",
@@ -133,7 +133,7 @@ function j(e) {
     className: P.sectionsContainer,
     children: [(0, r.jsx)(C.Z, {
       errors: null != (i = null == V ? true : V.nick) ? i : null == K ? true : K.nick,
-      username: I.ZP.getName(k),
+      username: I.ZP.getName(M),
       pendingNick: U,
       currentNick: null == z ? true : z.nick,
       guild: W
@@ -146,7 +146,7 @@ function j(e) {
       pendingPronouns: Z,
       currentPronouns: et
     }, "pronouns"), (0, r.jsxs)(N.Z, {
-      user: k,
+      user: M,
       showOverlay: !X,
       children: [(0, r.jsx)(f.Z, {
         sectionTitle: (0, r.jsxs)(r.Fragment, {
@@ -177,10 +177,10 @@ function j(e) {
             }))
           })]
         }),
-        user: k,
+        user: M,
         guild: W
       }, "decoration"), j && (0, r.jsx)(_.Z, {
-        user: k,
+        user: M,
         guild: W,
         titleIcon: (0, r.jsx)(s.ua7, {
           text: R.intl.string(R.t["5AFxuL"]),
@@ -203,7 +203,7 @@ function j(e) {
             }))
           })]
         }),
-        user: k,
+        user: M,
         guild: W
       }, "effect"), (0, r.jsx)(p.Z, {
         showRemoveBannerButton: J,
@@ -212,7 +212,7 @@ function j(e) {
         guildId: null == W ? true : W.id,
         disabled: !X
       }, "banner"), (0, r.jsx)(m.Z, {
-        user: k,
+        user: M,
         pendingAvatarSrc: Y,
         pendingColors: F,
         onThemeColorsChange: e => {

@@ -2,13 +2,13 @@
 /** chunk id: 711459, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => o,
+  ZP: () => a,
   aQ: () => l
 }), require("./388685.js");
 var Chunk742280 = require("./742280.js"),
   Chunk818083 = require("./818083.js"),
   Chunk474936 = require("./474936.js");
-let o = (0, Chunk818083.B)({
+let a = (0, Chunk818083.B)({
     kind: "user",
     id: "2022-02_multi_month_plans",
     label: "Multi Month Plans",

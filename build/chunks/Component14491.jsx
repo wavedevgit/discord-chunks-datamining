@@ -44,8 +44,8 @@ function _(e) {
     focusedClassName: p
   } = e;
   if (__OVERLAY__ || !s.wS || null == t) return null;
-  let h = o.default.getCurrentUser(),
-    m = (0, a.Ow)(t);
+  let h = a.default.getCurrentUser(),
+    m = (0, o.Ow)(t);
 
   function g() {
     var e;

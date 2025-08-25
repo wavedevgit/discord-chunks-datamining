@@ -9,7 +9,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk338379 = require("./338379.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -38,7 +38,7 @@ function g(e) {
     icon: (0, r.jsx)(c.Mgn, {
       size: "xs",
       color: "currentColor",
-      className: o()(h.icon, h.errorIcon)
+      className: a()(h.icon, h.errorIcon)
     })
   }
 }
@@ -63,13 +63,13 @@ function b(e) {
     className: t,
     icon: n,
     text: i,
-    color: a
+    color: o
   } = e;
   return (0, r.jsxs)("div", {
-    className: o()(h.wrapper, t),
+    className: a()(h.wrapper, t),
     children: [n, (0, r.jsx)(c.Text, {
       variant: "text-md/normal",
-      color: a,
+      color: o,
       scaleFontToUserSetting: true,
       children: i
     })]
@@ -80,22 +80,22 @@ function y(e) {
   let {
     message: t,
     className: n,
-    component: a
-  } = e, o = (0, s.Z)(), c = (0, l.e7)([d.ZP], () => d.ZP.getInteraction(t), [t]);
+    component: o
+  } = e, a = (0, s.Z)(), c = (0, l.e7)([d.ZP], () => d.ZP.getInteraction(t), [t]);
   i.useEffect(() => {
     let e = null;
     if (t.hasFlag(_.iLy.LOADING) && null != c) {
       let n = (0, f.ow)(t.id) - Date.now();
-      n > 0 && (e = setTimeout(() => o(), 1e3 + n))
+      n > 0 && (e = setTimeout(() => a(), 1e3 + n))
     }
     return () => {
       clearTimeout(e)
     }
-  }, [o, c, t]);
+  }, [a, c, t]);
   let p = null;
-  if (null == a) p = E(c, t);
+  if (null == o) p = E(c, t);
   else {
-    let e = (0, u.SD)(c, t, a);
+    let e = (0, u.SD)(c, t, o);
     null != e && (p = g(e))
   }
   if (null == p) return null;

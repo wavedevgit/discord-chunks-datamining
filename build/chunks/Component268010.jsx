@@ -27,9 +27,9 @@ var Chunk951288 = require("./951288.js"),
 let I = (e, t, n) => {
     let r = v.t.LHF6Dw,
       i = u.ZP.getName(null == t ? true : t.guild_id, null == t ? true : t.id, n),
-      a = e.extra.media_title;
+      o = e.extra.media_title;
     return v.intl.formatToMarkdownString(r, {
-      mediaTitle: a,
+      mediaTitle: o,
       userName: i,
       episodeDescription: e.extra.media_subtitle
     }).replaceAll("*", "")
@@ -44,14 +44,14 @@ let I = (e, t, n) => {
       entry: n,
       onReaction: u,
       onVoiceChannelPreview: S
-    } = e, A = (0, a.e7)([l.default], () => l.default.getUser(n.author_id)), {
+    } = e, A = (0, o.e7)([l.default], () => l.default.getUser(n.author_id)), {
       largeImage: C
     } = (0, f.rv)({
       entry: n
     }), {
       primaryColor: N,
       secondaryColor: R
-    } = (0, m.Z)(null == C ? true : C.src), P = (0, a.e7)([s.default], () => s.default.locale), w = (0, h.Z)(O.ABu.CRUNCHYROLL), D = (0, _.ap)(n.extra.media_assets_large_text), x = i.useCallback(e => {
+    } = (0, m.Z)(null == C ? true : C.src), P = (0, o.e7)([s.default], () => s.default.locale), w = (0, h.Z)(O.ABu.CRUNCHYROLL), D = (0, _.ap)(n.extra.media_assets_large_text), x = i.useCallback(e => {
       if (null != A && (null == C ? true : C.src) != null) return (0, p.B)({
         entry: n,
         mediaImageSrc: null == C ? true : C.src,
@@ -79,7 +79,7 @@ let I = (e, t, n) => {
         subtitle: n.extra.media_subtitle,
         headerIcons: (0, r.jsx)(y.Z, {
           onClick: w,
-          Icon: o.omf,
+          Icon: a.omf,
           "aria-label": v.intl.string(v.t.jdJYX1)
         }),
         badges: (0, r.jsx)(E.Gk, {

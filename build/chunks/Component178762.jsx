@@ -4,14 +4,14 @@
 require.d(exports, {
   Ir: () => H,
   J: () => V,
-  YN: () => M,
+  YN: () => k,
   ZP: () => W,
   iZ: () => G
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  a = require.n(Chunk392711),
   Chunk91192 = require("./91192.jsx"),
   Chunk876215 = require("./876215.js"),
   Chunk442837 = require("./442837.js"),
@@ -78,26 +78,26 @@ function L(e, t) {
 
 function j(e, t) {
   if (null == e) return {};
-  var n, r, i = k(e, t);
+  var n, r, i = M(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
 
-function k(e, t) {
+function M(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let M = 72,
+let k = 72,
   U = 2e3;
 
 function G(e) {
-  return (null == e ? true : e.type) === _.so.CONTENT_INVENTORY ? M : 0
+  return (null == e ? true : e.type) === _.so.CONTENT_INVENTORY ? k : 0
 }
 let B = e => {
     var {
@@ -137,11 +137,11 @@ let B = e => {
         entry: n,
         targetElementRef: i
       } = e,
-      a = j(e, ["entry", "targetElementRef"]);
+      o = j(e, ["entry", "targetElementRef"]);
     return n.content_type === l.s.PLAYED_GAME ? (0, r.jsx)(y.Z, {
       entry: n,
       targetElementRef: i,
-      isFirstApplicationOccurrence: null != (t = a.isFirstApplicationOccurrence) && t
+      isFirstApplicationOccurrence: null != (t = o.isFirstApplicationOccurrence) && t
     }) : null
   },
   F = e => {
@@ -200,14 +200,14 @@ let B = e => {
   H = Chunk647438.createContext(true),
   Y = e => {
     var t, {
-        index: a,
+        index: o,
         ref: l
       } = e,
       _ = j(e, ["index", "ref"]);
     let m = i.useRef(null),
       [g, E] = i.useState("default"),
       [b, y] = i.useState(false),
-      O = (0, s.JA)("".concat(a)),
+      O = (0, s.JA)("".concat(o)),
       v = null == (t = p.default.getCurrentUser()) ? true : t.isStaff(),
       {
         isRich: I,
@@ -223,13 +223,13 @@ let B = e => {
       A = i.useRef(false),
       [C, N] = i.useState(false),
       [w, x] = i.useState(false),
-      k = (0, c.e7)([f.Z], () => f.Z.keyboardModeEnabled);
+      M = (0, c.e7)([f.Z], () => f.Z.keyboardModeEnabled);
     i.useEffect(() => {
-      C && k && x(true)
-    }, [C, k]), i.useLayoutEffect(() => {
+      C && M && x(true)
+    }, [C, M]), i.useLayoutEffect(() => {
       null != m.current && y(true)
     }, []);
-    let M = i.useCallback(e => {
+    let k = i.useCallback(e => {
         v && (0, d.jW)(e, async () => {
           let {
             default: e
@@ -247,7 +247,7 @@ let B = e => {
         let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
         (0, h.L)(e, D({}, S, t))
       }, [S]),
-      Y = i.useMemo(() => o().throttle(e => {
+      Y = i.useMemo(() => a().throttle(e => {
         (0, h.L)(P.xP.CARD_POPOUT_OPEN, e)
       }, U, {
         leading: true,
@@ -255,7 +255,7 @@ let B = e => {
       }), []),
       W = () => {
         A.current = false, setTimeout(() => {
-          A.current || (N(false), x(k))
+          A.current || (N(false), x(M))
         }, 100)
       };
     return (0, r.jsxs)(r.Fragment, {
@@ -309,7 +309,7 @@ let B = e => {
               onClick: () => {
                 C || N(true)
               },
-              onContextMenu: M,
+              onContextMenu: k,
               children: (0, r.jsx)(B, L(D({}, _), {
                 selected: n,
                 hovered: A.current

@@ -20,12 +20,12 @@ function u(e) {
   var t;
   let n = arguments.length > 1 && true !== arguments[1] && arguments[1];
   if (!n && (0, c.Bh)(e)) returntrue;
-  let r = null == (t = a.Z.settings.userContent) ? true : t.dismissedContents;
+  let r = null == (t = o.Z.settings.userContent) ? true : t.dismissedContents;
   return null != r && (0, s.jl)(r, e)
 }
 
 function d(e) {
-  return (0, r.e7)([a.Z], () => u(e))
+  return (0, r.e7)([o.Z], () => u(e))
 }
 async function f(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
@@ -38,9 +38,9 @@ function _(e, t) {
     isDismissed: true,
     lastDismissedSnowflakeId: null
   };
-  let i = null == (r = a.Z.settings.userContent) || null == (n = r.recurringDismissibleContentStates[e]) ? true : n.lastDismissedObjectId;
+  let i = null == (r = o.Z.settings.userContent) || null == (n = r.recurringDismissibleContentStates[e]) ? true : n.lastDismissedObjectId;
   return {
-    isDismissed: null != i && 1 !== o.default.compare(t, i),
+    isDismissed: null != i && 1 !== a.default.compare(t, i),
     lastDismissedSnowflakeId: i
   }
 }

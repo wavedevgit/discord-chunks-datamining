@@ -12,8 +12,8 @@ async function r(e) {
       r.onload = e => {
         var r;
         clearTimeout(i);
-        let a = null == (r = e.target) ? true : r.result;
-        a instanceof ArrayBuffer ? t(a.byteLength) : n(Error("Unexpected FileReader result type"))
+        let o = null == (r = e.target) ? true : r.result;
+        o instanceof ArrayBuffer ? t(o.byteLength) : n(Error("Unexpected FileReader result type"))
       }, r.onerror = () => {
         clearTimeout(i), n(Error("Could not read file"))
       }, r.readAsArrayBuffer(e)

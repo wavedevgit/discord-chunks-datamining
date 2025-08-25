@@ -27,7 +27,7 @@ let f = function(e) {
     useReducedMotion: b,
     collapsedHeight: y,
     shouldShowRewardsCTAWhenCollapsed: O
-  } = e, v = i.useRef(null), I = i.useRef(null), T = (null == (t = E.userStatus) ? true : t.enrolledAt) != null, S = (0, a.Rf)(E);
+  } = e, v = i.useRef(null), I = i.useRef(null), T = (null == (t = E.userStatus) ? true : t.enrolledAt) != null, S = (0, o.Rf)(E);
   return (0, r.jsxs)(s.p, {
     expandedContentRef: n,
     collapsedContentRef: v,
@@ -64,7 +64,7 @@ let f = function(e) {
         children: [(0, r.jsx)(u.Z, {
           expansionSpring: f,
           isExpanded: _
-        }), !T && (0, r.jsx)(o.Z, {
+        }), !T && (0, r.jsx)(a.Z, {
           quest: E,
           expansionSpring: f,
           useReducedMotion: b,

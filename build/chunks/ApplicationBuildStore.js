@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => z
 }), require("./388685.js"), require("./539854.js");
 var r, Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk846519 = require("./846519.js"),
   Chunk570140 = require("./570140.js"),
@@ -65,23 +65,23 @@ function j() {
       applicationId: t,
       branchId: n
     } = (0, Chunk780570.CP)(module);
-    null != Chunk812206.Z.getApplication(exports) && (A.delete(module), k(exports, require))
+    null != Chunk812206.Z.getApplication(exports) && (A.delete(module), M(exports, require))
   }
 }
 
-function k(e, t) {
+function M(e, t) {
   if (null != I[t] && g.Z.shouldBeInstalled(e, t)) {
     let n = I[t],
       r = n.manifestIds,
       i = m.Z.getState(e, t);
-    null != i && i.shouldPatch && (i.buildId !== n.id || !a().isEqual(i.manifestIds, r)) && l.Z.wait(() => {
+    null != i && i.shouldPatch && (i.buildId !== n.id || !o().isEqual(i.manifestIds, r)) && l.Z.wait(() => {
       let i = f.Z.getApplication(e);
       null != i ? (A.delete((0, b.Tu)(e, t)), (0, d.li)(i, t, n.id, r, true)) : A.add((0, b.Tu)(e, t))
     })
   }
 }
 
-function M(e) {
+function k(e) {
   let {
     branchId: t
   } = e;
@@ -96,20 +96,20 @@ function U(e) {
     build: i
   } = e;
   v.delete(n);
-  let a = i.manifests.map(e => {
+  let o = i.manifests.map(e => {
       let {
         id: t
       } = e;
       return t
     }),
-    o = i.id;
+    a = i.id;
   T.delete(n), I[n] = {
-    id: o,
+    id: a,
     applicationId: t,
     branchId: n,
     locale: r,
-    manifestIds: a
-  }, k(t, n)
+    manifestIds: o
+  }, M(t, n)
 }
 
 function G(e) {
@@ -210,7 +210,7 @@ O(K, "displayName", "ApplicationBuildStore");
 let z = new K(Chunk570140.Z, {
   CONNECTION_OPEN: x,
   GAMES_DATABASE_UPDATE: j,
-  APPLICATION_BUILD_FETCH_START: M,
+  APPLICATION_BUILD_FETCH_START: k,
   APPLICATION_BUILD_FETCH_SUCCESS: U,
   APPLICATION_BUILD_NOT_FOUND: G,
   APPLICATION_BUILD_SIZE_FETCH_START: B,

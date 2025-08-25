@@ -13,8 +13,8 @@ var Chunk933557 = require("./933557.js"),
 
 function c(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : i.Z,
-    n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : o.default,
-    c = arguments.length > 3 && true !== arguments[3] ? arguments[3] : a.Z,
+    n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : a.default,
+    c = arguments.length > 3 && true !== arguments[3] ? arguments[3] : o.Z,
     u = t.getChannel(e);
   if (null == u) return null;
   let d = (0, r.F6)(u, n, c);

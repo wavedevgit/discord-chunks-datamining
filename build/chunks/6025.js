@@ -16,17 +16,17 @@ let u = {
     let {
       channelId: t,
       messageId: n,
-      baseChannelId: a,
-      hasSingleMessageRequest: o
+      baseChannelId: o,
+      hasSingleMessageRequest: a
     } = e;
     r.Z.dispatch({
       type: "SIDEBAR_VIEW_CHANNEL",
       sidebarType: l.tI.VIEW_MESSAGE_REQUEST,
-      baseChannelId: a,
+      baseChannelId: o,
       channelId: t,
       details: {
         type: l.Ff.MESSAGE_REQUEST,
-        hasSingleMessageRequest: o
+        hasSingleMessageRequest: a
       }
     }), null != n ? i.Z.jumpToMessage({
       channelId: t,
@@ -40,7 +40,7 @@ let u = {
     let {
       guildId: t,
       channelId: n,
-      baseChannelId: o,
+      baseChannelId: a,
       flash: c = true,
       details: u
     } = e;
@@ -48,7 +48,7 @@ let u = {
       type: "SIDEBAR_VIEW_CHANNEL",
       sidebarType: l.tI.VIEW_CHANNEL,
       guildId: t,
-      baseChannelId: o,
+      baseChannelId: a,
       channelId: n,
       details: u
     });
@@ -57,7 +57,7 @@ let u = {
       channelId: n,
       messageId: d,
       flash: c,
-      jumpType: a.SR.INSTANT
+      jumpType: o.SR.INSTANT
     }) : s.Z.fetchMessages({
       guildId: t,
       channelId: n
@@ -68,7 +68,7 @@ let u = {
       guildId: t,
       channelId: n
     } = e;
-    null != t && ((0, o.C3)(t, n, false), r.Z.dispatch({
+    null != t && ((0, a.C3)(t, n, false), r.Z.dispatch({
       type: "SIDEBAR_VIEW_CHANNEL",
       sidebarType: l.tI.VIEW_CHANNEL,
       guildId: t,
@@ -80,7 +80,7 @@ let u = {
     let {
       guildId: t,
       baseChannelId: n,
-      channelId: o,
+      channelId: a,
       flash: c = true,
       details: u
     } = e;
@@ -88,23 +88,23 @@ let u = {
       type: "SIDEBAR_VIEW_CHANNEL",
       sidebarType: l.tI.VIEW_MOD_REPORT,
       baseChannelId: n,
-      channelId: o,
+      channelId: a,
       details: u
     }), (null == u ? true : u.initialMessageId) != null ? i.Z.jumpToMessage({
-      channelId: o,
+      channelId: a,
       messageId: u.initialMessageId,
       flash: c,
-      jumpType: a.SR.INSTANT
+      jumpType: o.SR.INSTANT
     }) : s.Z.fetchMessages({
       guildId: t,
-      channelId: o
+      channelId: a
     })
   },
   openThreadAsSidebar(e) {
     let {
       guildId: t,
       baseChannelId: n,
-      channelId: o,
+      channelId: a,
       flash: c = true,
       details: u
     } = e;
@@ -112,16 +112,16 @@ let u = {
       type: "SIDEBAR_VIEW_CHANNEL",
       sidebarType: l.tI.VIEW_THREAD,
       baseChannelId: n,
-      channelId: o,
+      channelId: a,
       details: u
     }), (null == u ? true : u.initialMessageId) != null ? i.Z.jumpToMessage({
-      channelId: o,
+      channelId: a,
       messageId: u.initialMessageId,
       flash: c,
-      jumpType: a.SR.INSTANT
+      jumpType: o.SR.INSTANT
     }) : s.Z.fetchMessages({
       guildId: t,
-      channelId: o
+      channelId: a
     })
   },
   closeChannelSidebar(e) {
@@ -135,14 +135,14 @@ let u = {
       guildId: t,
       baseChannelId: n,
       sidebarType: i,
-      details: a
+      details: o
     } = e;
     return r.Z.dispatch({
       type: "SIDEBAR_VIEW_GUILD",
       sidebarType: i,
       baseChannelId: n,
       guildId: t,
-      details: a
+      details: o
     })
   },
   closeGuildSidebar(e) {

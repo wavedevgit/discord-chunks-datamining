@@ -15,9 +15,9 @@ function i(e) {
   }).join(" ")
 }
 
-function a(e, t, n) {
-  let a = `.${e}:${t}`,
-    o = n.cssText ? r(n) : i(n);
-  return document.createTextNode(`${a}{${o}}`)
+function o(e, t, n) {
+  let o = `.${e}:${t}`,
+    a = n.cssText ? r(n) : i(n);
+  return document.createTextNode(`${o}{${a}}`)
 }
 require("./961742.js")

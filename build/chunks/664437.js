@@ -12,11 +12,11 @@ var Chunk544891 = require("./544891.js"),
   Chunk981631 = require("./981631.js");
 
 function s(e) {
-  (0, a.DH)(e) || (i.Z.dispatch({
+  (0, o.DH)(e) || (i.Z.dispatch({
     type: "TOP_EMOJIS_FETCH",
     guildId: e
   }), r.tn.get({
-    url: o.ANM.TOP_EMOJIS_FOR_GUILD(e),
+    url: a.ANM.TOP_EMOJIS_FOR_GUILD(e),
     oldFormErrors: true,
     rejectWithError: true
   }).then(t => i.Z.dispatch({

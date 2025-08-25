@@ -29,9 +29,9 @@ function O(e) {
     targetElementRef: n
   } = e, i = (0, p.Z)(), s = (0, _.Z)({
     location: "TenureLevelUpPopover"
-  }), d = (0, c.Z)(e => e.isOpen), f = (0, a.e7)([u.Z], () => u.Z.getLayers().includes(g.S9g.USER_SETTINGS));
+  }), d = (0, c.Z)(e => e.isOpen), f = (0, o.e7)([u.Z], () => u.Z.getLayers().includes(g.S9g.USER_SETTINGS));
   return !s || null == i || d || f ? null : (0, r.jsx)(l.Nq, {
-    contentType: o.z.NITRO_TENURE_BADGE_LEVEL_UP,
+    contentType: a.z.NITRO_TENURE_BADGE_LEVEL_UP,
     timeRecurringConfig: {
       cooldownDurationMs: y
     },
@@ -39,13 +39,13 @@ function O(e) {
     children: e => {
       let {
         visibleContent: t,
-        markAsDismissed: a
+        markAsDismissed: o
       } = e;
       return (0, r.jsx)(v, {
         recentlyLeveledTenureBadge: i,
-        markAsDismissed: a,
+        markAsDismissed: o,
         targetElementRef: n,
-        shouldShow: t === o.z.NITRO_TENURE_BADGE_LEVEL_UP
+        shouldShow: t === a.z.NITRO_TENURE_BADGE_LEVEL_UP
       })
     }
   })
@@ -55,18 +55,18 @@ function v(e) {
   var t;
   let {
     recentlyLeveledTenureBadge: n,
-    markAsDismissed: a,
-    targetElementRef: o,
+    markAsDismissed: o,
+    targetElementRef: a,
     shouldShow: l
   } = e, u = m.Qh.indexOf(n), _ = u > 0 ? u - 1 : u, p = (0, h.J)(m.Qh[_], {
     ambient: true
   }), y = (0, i.useCallback)(() => {
-    a(E.L.TAKE_ACTION), c.Z.setState({
+    o(E.L.TAKE_ACTION), c.Z.setState({
       shouldRenderTenureLevelUp: true
     }), d.S.dispatch(g.CkL.SHOW_ACCOUNT_PROFILE_POPOUT, {})
-  }, [a]), O = (0, i.useCallback)(() => {
-    a(E.L.USER_DISMISS)
-  }, [a]), v = m.vK[n], I = b.intl.formatToPlainString(b.t.ewkaVV, {
+  }, [o]), O = (0, i.useCallback)(() => {
+    o(E.L.USER_DISMISS)
+  }, [o]), v = m.vK[n], I = b.intl.formatToPlainString(b.t.ewkaVV, {
     timeMilestone: null == (t = (0, f.q)(v.id, v.tenureReqNumMonths)) ? true : t.toLocaleLowerCase()
   }), T = {
     position: "bottom",
@@ -77,7 +77,7 @@ function v(e) {
     onClick: y
   }];
   return (0, r.jsx)(s.J, {
-    targetElementRef: o,
+    targetElementRef: a,
     onRequestClose: O,
     shouldShow: l,
     caretConfig: T,

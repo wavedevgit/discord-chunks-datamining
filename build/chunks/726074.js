@@ -2,13 +2,13 @@
 /** chunk id: 726074, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  as: () => a,
+  as: () => o,
   tX: () => s
 });
 let r = "undefined" != typeof global ? global : self,
   i = r.MutationObserver || r.WebKitMutationObserver;
 
-function a(e) {
+function o(e) {
   return function() {
     let t = setTimeout(r, 0),
       n = setInterval(r, 50);
@@ -19,7 +19,7 @@ function a(e) {
   }
 }
 
-function o(e) {
+function a(e) {
   let t = 1,
     n = new i(e),
     r = document.createTextNode("");
@@ -30,4 +30,4 @@ function o(e) {
       r.data = t = -t
     }
 }
-let s = "function" == typeof i ? o : a
+let s = "function" == typeof i ? a : o

@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk202841 = require("./202841.js"),
   Chunk481060 = require("./481060.js"),
   Chunk110924 = require("./110924.js"),
@@ -58,7 +58,7 @@ let m = Chunk647438.forwardRef(function(e, t) {
   let {
     backdropStyle: n = "SUBTLE",
     backdropInstant: i = false,
-    zIndexBoost: a = 0,
+    zIndexBoost: o = 0,
     LayerComponent: d,
     isVisible: p,
     onClose: m
@@ -81,7 +81,7 @@ let m = Chunk647438.forwardRef(function(e, t) {
   }, "animate-always");
   if (null == d) {
     let e = {
-      zIndex: 1e3 + a
+      zIndex: 1e3 + o
     };
     return I((t, n) => n ? (0, r.jsx)(s.animated.div, {
       className: u.backdrop,
@@ -91,7 +91,7 @@ let m = Chunk647438.forwardRef(function(e, t) {
   }
   return (0, r.jsx)(d, {
     children: I((e, t) => t ? (0, r.jsx)(s.animated.div, {
-      className: o()(u.backdrop, u.withLayer),
+      className: a()(u.backdrop, u.withLayer),
       style: "TOP_RADIAL" === n ? {
         background: "radial-gradient(96.68% 96.68% at 50.04% 3.32%, rgba(0, 0, 0, 0.52) 0%, rgba(0, 0, 0, 0.00) 100%)"
       } : e,

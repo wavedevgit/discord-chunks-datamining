@@ -49,7 +49,7 @@ let b = function(e, t) {
     O = d.Z.getChannel(e),
     v = h.Z.getCurrentClientVoiceChannelId(null != t ? t : null) === e,
     I = null != O ? _.Z.getCheck(O.guild_id) : null;
-  if (!(null != t && (0, o.n)(t)) && (null == I || I.canChat || (0, s.jU)(O))) {
+  if (!(null != t && (0, a.n)(t)) && (null == I || I.canChat || (0, s.jU)(O))) {
     if (null != O && !v) {
       let e = (0, m.rY)(O, h.Z, f.Z);
       if (e && O.isGuildStageVoice() && (0, l.xJ)(O.id)) return void(0, i.ZD)(async () => {
@@ -72,7 +72,7 @@ let b = function(e, t) {
 
   function T() {
     let n = (0, r.Z)();
-    a.Z.dispatch({
+    o.Z.dispatch({
       type: "VOICE_CHANNEL_SELECT",
       guildId: t,
       channelId: e,

@@ -22,9 +22,9 @@ let f = e => {
       userDiscountOffer: t,
       offerState: n = "none"
     } = e, {
-      discountedPrice: a,
+      discountedPrice: o,
       premiumSubscription: d
-    } = (0, o.a)();
+    } = (0, a.a)();
     return (0, r.jsxs)("div", {
       className: c.discountOfferContainer,
       children: [(0, r.jsx)("img", {
@@ -37,7 +37,7 @@ let f = e => {
           variant: "text-md/semibold",
           children: d.status === s.O0b.CANCELED ? l.intl.format(l.t["DC+nPD"], {
             numMonths: t.discount.user_usage_limit,
-            discountedPrice: a
+            discountedPrice: o
           }) : l.intl.format(l.t.tQvNlp, {
             numMonths: t.discount.user_usage_limit
           })
@@ -56,14 +56,14 @@ let f = e => {
       discountedPrice: c,
       fullPrice: u,
       premiumSubscription: d
-    } = (0, o.a)();
+    } = (0, a.a)();
     switch (n) {
       case "applied":
         if (d.status === s.O0b.CANCELED) return (0, r.jsx)(i.xv, {
           variant: "text-md/normal",
           color: "text-secondary",
           children: l.intl.formatToPlainString(l.t.h2g1IS, {
-            billingPeriod: (0, a.JP)(t.discount.user_usage_limit_interval),
+            billingPeriod: (0, o.JP)(t.discount.user_usage_limit_interval),
             numMonths: t.discount.user_usage_limit,
             fullPrice: u
           })
@@ -82,7 +82,7 @@ let f = e => {
           variant: "text-md/normal",
           color: "text-secondary",
           children: l.intl.formatToPlainString(l.t.iDFk3t, {
-            billingPeriod: (0, a.JP)(t.discount.user_usage_limit_interval),
+            billingPeriod: (0, o.JP)(t.discount.user_usage_limit_interval),
             numMonths: t.discount.user_usage_limit,
             fullPrice: u
           })

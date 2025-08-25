@@ -31,14 +31,14 @@ class f extends Chunk147913.Z {
         let {
           enableStats: n
         } = e;
-        null == (t = a.Z.setNoiseCancellationEnableStats) || t.call(a.Z, n)
+        null == (t = o.Z.setNoiseCancellationEnableStats) || t.call(o.Z, n)
       }))
     }), d(this, "handleRtcConnectionState", e => {
       let {
         state: t,
         context: n
       } = e;
-      !(0, l.isWeb)() && n === i.Yn.DEFAULT && t !== u.hes.DISCONNECTED && t === u.hes.RTC_CONNECTED && s.Z.getKrispEnableStats() && s.Z.getNoiseCancellation() && (a.Z.setNoiseCancellation(false), a.Z.setNoiseCancellation(true))
+      !(0, l.isWeb)() && n === i.Yn.DEFAULT && t !== u.hes.DISCONNECTED && t === u.hes.RTC_CONNECTED && s.Z.getKrispEnableStats() && s.Z.getNoiseCancellation() && (o.Z.setNoiseCancellation(false), o.Z.setNoiseCancellation(true))
     }), d(this, "actions", {
       POST_CONNECTION_OPEN: this.handlePostConnectionOpen,
       RTC_CONNECTION_STATE: this.handleRtcConnectionState

@@ -30,8 +30,8 @@ function c(e) {
       isEdited: true,
       isInline: false,
       children: (0, r.jsxs)("span", {
-        className: o.edited,
-        children: ["(", a.intl.string(a.t.C8sXIC), ")"]
+        className: a.edited,
+        children: ["(", o.intl.string(o.t.C8sXIC), ")"]
       })
     })]
   }) : null

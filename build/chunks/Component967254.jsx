@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk259580 = require("./259580.jsx"),
@@ -68,7 +68,7 @@ let C = e => {
       status: t,
       onClick: n,
       opened: i,
-      count: a
+      count: o
     } = e;
     return (0, r.jsxs)(l.P3F, {
       className: v.header,
@@ -85,9 +85,9 @@ let C = e => {
           variant: "heading-md/semibold",
           color: "text-default",
           children: "active" === t ? O.intl.formatToPlainString(O.t.IeV2oa, {
-            count: a.toString()
+            count: o.toString()
           }) : O.intl.formatToPlainString(O.t.fZAHBQ, {
-            count: a.toString()
+            count: o.toString()
           })
         }), (0, r.jsx)(l.X6q, {
           variant: "text-sm/normal",
@@ -155,11 +155,11 @@ let C = e => {
     let {
       classification: t
     } = e, {
-      id: a,
+      id: o,
       description: s
-    } = t, c = f.default.extractTimestamp(a), u = (0, m.e)(t), d = i.useMemo(() => {
+    } = t, c = f.default.extractTimestamp(o), u = (0, m.e)(t), d = i.useMemo(() => {
       var e, n, i;
-      let a = {
+      let o = {
         description: s,
         descriptionHook: e => (0, r.jsx)(l.Text, {
           tag: "span",
@@ -167,27 +167,27 @@ let C = e => {
           children: e
         })
       };
-      return (0, h.FB)(t) ? (null == t || null == (e = t.guild_metadata) ? true : e.member_type) === _.wO.OWNER ? O.intl.format(O.t.Lb0HVl, A(T({}, a), {
+      return (0, h.FB)(t) ? (null == t || null == (e = t.guild_metadata) ? true : e.member_type) === _.wO.OWNER ? O.intl.format(O.t.Lb0HVl, A(T({}, o), {
         guildName: null == t || null == (n = t.guild_metadata) ? true : n.name
       })) : O.intl.format(O.t.rmpEPD, {
         guildName: null == t || null == (i = t.guild_metadata) ? true : i.name,
-        classification_type: a.description,
-        classificationHook: a.descriptionHook
-      }) : O.intl.format(O.t.QY4g5u, a)
+        classification_type: o.description,
+        classificationHook: o.descriptionHook
+      }) : O.intl.format(O.t.QY4g5u, o)
     }, [t, s]), p = () => {
       (0, l.ZDy)(async () => {
         let {
           default: e
         } = await n.e("18831").then(n.bind(n, 41164));
         return t => (0, r.jsx)(e, T({
-          classificationId: a,
+          classificationId: o,
           source: b.s.StandingTab
         }, t))
       })
     };
     return (0, r.jsx)(l.P3F, {
       onClick: p,
-      className: o()(v.itemDetail, {
+      className: a()(v.itemDetail, {
         [v.itemDetailNew]: u
       }),
       children: (0, r.jsxs)("div", {
@@ -199,15 +199,15 @@ let C = e => {
           children: d
         })]
       })
-    }, a)
+    }, o)
   },
   x = e => {
     let {
       status: t,
       classifications: n
-    } = e, [a, o] = i.useState(false), [c, u] = i.useState(3), f = (0, g.P)(), _ = (0, s.e7)([p.Z], () => p.Z.getIsDsaEligible()), h = i.useMemo(() => n.slice(0, c), [n, c]);
+    } = e, [o, a] = i.useState(false), [c, u] = i.useState(3), f = (0, g.P)(), _ = (0, s.e7)([p.Z], () => p.Z.getIsDsaEligible()), h = i.useMemo(() => n.slice(0, c), [n, c]);
     i.useEffect(() => {
-      a && d.default.track(y.rMx.SAFETY_HUB_ACTION, {
+      o && d.default.track(y.rMx.SAFETY_HUB_ACTION, {
         action: b.n0.ViewViolationsDropdown,
         account_standing: f.state,
         classification_ids: h.map(e => Number(e.id)),
@@ -215,16 +215,16 @@ let C = e => {
         is_violative_content_shown: false,
         is_dsa_eligible: _
       })
-    }, [a, f.state, h, _]);
+    }, [o, f.state, h, _]);
     let m = n.length - h.length > 3 ? 3 : n.length - h.length;
     return (0, r.jsxs)("div", {
       className: v.dropdown,
       children: [(0, r.jsx)(C, {
         status: t,
-        onClick: () => o(e => !e),
-        opened: a,
+        onClick: () => a(e => !e),
+        opened: o,
         count: n.length
-      }), a && (0, r.jsxs)("div", {
+      }), o && (0, r.jsxs)("div", {
         className: v.items,
         children: [(0, r.jsx)(l.njP.Separator, {
           style: {

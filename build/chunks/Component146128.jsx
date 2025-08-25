@@ -44,15 +44,15 @@ function E(e) {
     children: t
   } = e, {
     triggerAnimation: n,
-    untriggerAnimation: a
-  } = i.useContext(g), s = (0, o.bp)(), l = i.useMemo(() => ({
+    untriggerAnimation: o
+  } = i.useContext(g), s = (0, a.bp)(), l = i.useMemo(() => ({
     triggerAnimation: e => {
       s !== h.IlC.OVERLAY && m(e) && n(e)
     },
     untriggerAnimation: e => {
-      s !== h.IlC.OVERLAY && m(e) && a(e)
+      s !== h.IlC.OVERLAY && m(e) && o(e)
     }
-  }), [s, n, a]);
+  }), [s, n, o]);
   return (0, r.jsx)(g.Provider, {
     value: l,
     children: t
@@ -62,7 +62,7 @@ function E(e) {
 function b(e) {
   let {
     children: t
-  } = e, n = d.Z.useIsEligible(), a = i.useCallback((e, t) => {
+  } = e, n = d.Z.useIsEligible(), o = i.useCallback((e, t) => {
     switch (t) {
       case u.O.THROW_EMOJI:
         return (0, r.jsx)(p.t, {
@@ -74,7 +74,7 @@ function b(e) {
         })
     }
   }, []);
-  return n && null != u.Z.emojiAnimationType ? a((0, r.jsx)(E, {
+  return n && null != u.Z.emojiAnimationType ? o((0, r.jsx)(E, {
     children: t
   }), u.Z.emojiAnimationType) : t
 }
@@ -84,8 +84,8 @@ function y(e) {
     emojiRef: t,
     channelId: n,
     messageId: r,
-    emojiName: o
-  } = e, s = (0, a.e7)([c.Z], () => c.Z.getMessage(n, r)), {
+    emojiName: a
+  } = e, s = (0, o.e7)([c.Z], () => c.Z.getMessage(n, r)), {
     triggerAnimation: l
   } = i.useContext(g);
   return i.useEffect(() => {
@@ -94,8 +94,8 @@ function y(e) {
       top: e,
       bottom: n
     } = t.getBoundingClientRect();
-    e >= 0 && n <= window.innerHeight && (l(o), (0, f.i9)(r))
-  }, [o, t, null == s ? true : s.state, r, l]), null
+    e >= 0 && n <= window.innerHeight && (l(a), (0, f.i9)(r))
+  }, [a, t, null == s ? true : s.state, r, l]), null
 }
 
 function O(e) {
@@ -105,7 +105,7 @@ function O(e) {
     emojiName: i,
     disable: l,
     emojiRef: c
-  } = e, u = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), f = d.Z.useIsEligible(), _ = (0, o.bp)();
+  } = e, u = (0, o.e7)([s.Z], () => s.Z.useReducedMotion), f = d.Z.useIsEligible(), _ = (0, a.bp)();
   return l || _ === h.IlC.OVERLAY || !f || null == n || null == t || u || null == c || !m(i) ? null : (0, r.jsx)(y, {
     emojiRef: c,
     channelId: t,

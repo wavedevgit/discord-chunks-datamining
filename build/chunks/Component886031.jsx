@@ -226,11 +226,11 @@ let _ = {
       id: "button-group",
       docs: "https://design.discord.tools/components/web/buttons/button-group",
       component: function(e) {
-        return (0, r.jsxs)(o.h, f(u({}, e), {
-          children: [(0, r.jsx)(a.z, {
+        return (0, r.jsxs)(a.h, f(u({}, e), {
+          children: [(0, r.jsx)(o.z, {
             variant: "secondary",
             text: "Cancel"
-          }), (0, r.jsx)(a.z, {
+          }), (0, r.jsx)(o.z, {
             variant: "primary",
             text: "Submit"
           })]

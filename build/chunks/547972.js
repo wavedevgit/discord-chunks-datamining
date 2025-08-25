@@ -11,14 +11,14 @@ var Chunk230711 = require("./230711.js"),
 
 function s(e) {
   switch (e) {
-    case a.Z.MY_GAMES:
-      return o.oAB.REGISTERED_GAMES;
-    case a.Z.CLIPS:
-      return o.oAB.CLIPS;
-    case a.Z.OVERLAY:
-      return o.oAB.OVERLAY;
-    case a.Z.ACTIVITY_PRIVACY:
-      return o.oAB.ACTIVITY_PRIVACY
+    case o.Z.MY_GAMES:
+      return a.oAB.REGISTERED_GAMES;
+    case o.Z.CLIPS:
+      return a.oAB.CLIPS;
+    case o.Z.OVERLAY:
+      return a.oAB.OVERLAY;
+    case o.Z.ACTIVITY_PRIVACY:
+      return a.oAB.ACTIVITY_PRIVACY
   }
 }
 
@@ -31,5 +31,5 @@ function l(e) {
     }, {
       autoTrackExposure: false
     });
-  n ? r.Z.open(o.oAB.GAMES, e, t) : r.Z.open(s(e), null, t)
+  n ? r.Z.open(a.oAB.GAMES, e, t) : r.Z.open(s(e), null, t)
 }

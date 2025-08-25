@@ -2,9 +2,9 @@
 /** chunk id: 731994, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  J6: () => a,
+  J6: () => o,
   bd: () => i,
-  pA: () => o
+  pA: () => a
 });
 var Chunk995751 = require("./995751.js");
 let i = {
@@ -12,5 +12,5 @@ let i = {
     1: Chunk995751.document,
     2: Chunk995751.code
   },
-  a = [1, 0, 2],
-  o = [0, 0, 0]
+  o = [1, 0, 2],
+  a = [0, 0, 0]

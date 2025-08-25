@@ -19,7 +19,7 @@ async function s(e, t) {
     let {
       body: t
     } = await i.tn.get({
-      url: o.ANM.APPLICATION_MANAGED_ACTIVITY_LINK(e, n.decodedLinkId),
+      url: a.ANM.APPLICATION_MANAGED_ACTIVITY_LINK(e, n.decodedLinkId),
       rejectWithError: false
     });
     return t
@@ -28,7 +28,7 @@ async function s(e, t) {
     let {
       body: t
     } = await i.tn.get({
-      url: o.ANM.APPLICATION_QUICK_ACTIVITY_LINK(e, n.decodedLinkId),
+      url: a.ANM.APPLICATION_QUICK_ACTIVITY_LINK(e, n.decodedLinkId),
       rejectWithError: false
     });
     return t
@@ -62,7 +62,7 @@ async function u(e, t) {
   if (null == e || null == t) return Promise.reject("appId or linkId null");
   let n = await s(e, t);
   if (null == n) return Promise.reject("fetchCustomActivityLink body is null");
-  a.Z.dispatch({
+  o.Z.dispatch({
     type: "CUSTOM_ACTIVITY_LINK_FETCH_SUCCESS",
     applicationId: e,
     link: n

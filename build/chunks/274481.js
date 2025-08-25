@@ -8,7 +8,7 @@ module.exports = function(e) {
       className: "symbol",
       begin: /&[a-z]+;|&#[0-9]+;|&#x[a-f0-9]+;/
     },
-    a = {
+    o = {
       begin: /\s/,
       contains: [{
         className: "keyword",
@@ -16,7 +16,7 @@ module.exports = function(e) {
         illegal: /\n/
       }]
     },
-    o = e.inherit(a, {
+    a = e.inherit(o, {
       begin: /\(/,
       end: /\)/
     }),
@@ -64,14 +64,14 @@ module.exports = function(e) {
       begin: /<![a-z]/,
       end: />/,
       relevance: 10,
-      contains: [a, l, s, o, {
+      contains: [o, l, s, a, {
         begin: /\[/,
         end: /\]/,
         contains: [{
           className: "meta",
           begin: /<![a-z]/,
           end: />/,
-          contains: [a, o, l, s]
+          contains: [o, a, l, s]
         }]
       }]
     }, e.COMMENT(/<!--/, /-->/, {

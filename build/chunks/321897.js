@@ -26,11 +26,11 @@ function i(e) {
 require.d(exports, {
   ZP: () => l
 });
-let a = Object.freeze({
+let o = Object.freeze({
     overflowY: "scroll",
     overflowX: "hidden"
   }),
-  o = Object.freeze({
+  a = Object.freeze({
     overflowX: "scroll",
     overflowY: "hidden"
   }),
@@ -40,6 +40,6 @@ let a = Object.freeze({
 
 function l(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : "vertical",
-    n = "vertical" === t ? a : "horizontal" === t ? o : s;
+    n = "vertical" === t ? o : "horizontal" === t ? a : s;
   return null != e ? i({}, n, e) : n
 }

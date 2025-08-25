@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk373793 = require("./373793.js"),
   Chunk243814 = require("./243814.js"),
   Chunk993365 = require("./993365.js"),
@@ -28,11 +28,11 @@ function p(e) {
     children: [i ? (0, r.jsx)(c.k$p, {
       size: "md",
       color: "currentColor",
-      className: a()(_.icon, _.fakeScopeIcon)
+      className: o()(_.icon, _.fakeScopeIcon)
     }) : (0, r.jsx)(c.owK, {
       size: "md",
       color: "currentColor",
-      className: a()(_.icon, _.scopeIcon)
+      className: o()(_.icon, _.scopeIcon)
     }), (0, r.jsxs)("div", {
       className: _.scopeInner,
       children: [(0, r.jsx)(l.x, {
@@ -62,9 +62,9 @@ function h(e) {
   if (0 === i.length) return null;
   let y = b(),
     O = g ? f.t.PZpY9f : f.t["1Hz+Sk"],
-    v = h === o.Y.USER_INSTALL && l.includes(s.x.APPLICATIONS_COMMANDS);
+    v = h === a.Y.USER_INSTALL && l.includes(s.x.APPLICATIONS_COMMANDS);
   return (0, r.jsxs)("div", {
-    className: a()(_.scopes, E ? _.noDivider : true),
+    className: o()(_.scopes, E ? _.noDivider : true),
     children: [(0, r.jsx)(c.X6q, {
       variant: "heading-sm/normal",
       className: _.sectionLabel,

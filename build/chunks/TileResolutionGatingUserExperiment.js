@@ -2,11 +2,11 @@
 /** chunk id: 621012, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  m: () => a
+  m: () => o
 });
 var Chunk818083 = require("./818083.js"),
   Chunk987338 = require("./987338.js");
-let a = (0, Chunk818083.B)({
+let o = (0, Chunk818083.B)({
   kind: "user",
   id: "2024-10_tile_resolution_gating",
   label: "Tile Resolution Gating",

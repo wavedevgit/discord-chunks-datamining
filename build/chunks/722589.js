@@ -6,19 +6,19 @@ require.r(exports), require.d(exports, {
 }), require("./704826.js"), require("./35282.js"), require("./388685.js");
 var Chunk593473 = require("./593473.js"),
   Chunk981631 = require("./981631.js");
-let a = "_",
-  o = /(-|%20)/g,
+let o = "_",
+  a = /(-|%20)/g,
   s = "AND",
   l = /%26/g,
   c = {};
 
 function u(e) {
-  return null == e ? "" : e.toUpperCase().replace(o, a).replace(l, s)
+  return null == e ? "" : e.toUpperCase().replace(a, o).replace(l, s)
 }
 
 function d(e) {
   var t;
-  let [, , n, a] = e.split("/"), o = u(n), s = null != (t = c[o]) ? t : o, l = u(a);
+  let [, , n, o] = e.split("/"), a = u(n), s = null != (t = c[a]) ? t : a, l = u(o);
   if (i.oAB.hasOwnProperty(s) && (null == l || "" === l || i.oAB.hasOwnProperty(l))) {
     let {
       source: e

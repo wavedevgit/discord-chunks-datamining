@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk106351 = require("./106351.js"),
   Chunk507274 = require("./507274.jsx"),
   Chunk541716 = require("./541716.js"),
@@ -38,11 +38,11 @@ let T = (0, Chunk131704.kt)({
     } = e;
     switch (r) {
       case y.n_.ACTIVITY:
-        let a = v.intl.formatToPlainString(v.t.WmvMCg, {
+        let o = v.intl.formatToPlainString(v.t.WmvMCg, {
             username: n
           }),
-          o = "\n> ".concat(i);
-        return null != i ? "".concat(E.jd).concat(a, "*").concat(o, "\n").concat(t) : "".concat(E.jd).concat(a, "*\n").concat(t);
+          a = "\n> ".concat(i);
+        return null != i ? "".concat(E.jd).concat(o, "*").concat(a, "\n").concat(t) : "".concat(E.jd).concat(o, "*\n").concat(t);
       case y.n_.AVATAR:
         let s = v.intl.formatToPlainString(v.t.lpaBsL, {
           username: n
@@ -75,7 +75,7 @@ function C(e) {
   let {
     user: t,
     guildId: n,
-    channelId: a,
+    channelId: o,
     sourceType: s,
     sourceDetails: f,
     setPopoutRef: _,
@@ -88,7 +88,7 @@ function C(e) {
     setInteractionToast: w
   } = (0, g.Xo)(), {
     primaryColor: D
-  } = (0, b.z)(), [x, L] = i.useState(""), [j, k] = i.useState((0, u.JM)(x)), M = i.useRef(false), U = i.useRef(null), G = i.useCallback(e => {
+  } = (0, b.z)(), [x, L] = i.useState(""), [j, M] = i.useState((0, u.JM)(x)), k = i.useRef(false), U = i.useRef(null), G = i.useCallback(e => {
     e.key === O.vn.ESCAPE && (e.stopPropagation(), P())
   }, [P]);
   i.useEffect(() => {
@@ -130,7 +130,7 @@ function C(e) {
     ref: U,
     onKeyDown: G,
     children: (0, r.jsx)("div", {
-      className: o()(I.container, Z, {
+      className: a()(I.container, Z, {
         [I.customProfileTheme]: null != D
       }),
       children: (0, r.jsx)(d.ZP, {
@@ -141,17 +141,17 @@ function C(e) {
         editorClassName: I.editor,
         type: c.Ie.USER_PROFILE_REPLY,
         placeholder: v.intl.formatToPlainString(A(s), {
-          username: p.ZP.getName(n, a, t)
+          username: p.ZP.getName(n, o, t)
         }),
         channel: T,
         textValue: x,
         richValue: j,
         onChange: (e, t, n) => {
-          t !== x && (L(t), k(n))
+          t !== x && (L(t), M(n))
         },
-        focused: M.current,
+        focused: k.current,
         onFocus: () => {
-          M.current = true
+          k.current = true
         },
         onSubmit: async e => {
           let {

@@ -61,11 +61,11 @@ let u = {
       isFriend: i = false
     } = e;
     if (null != t && t !== r.Q4.UNSET_EXPLICIT_CONTENT_REDACTION) return t;
-    let s = a.default.getCurrentUser();
-    return (0, o.bc)("resolveSettingWithDefaults") ? g({
+    let s = o.default.getCurrentUser();
+    return (0, a.bc)("resolveSettingWithDefaults") ? g({
       isDm: n,
       isFriend: i
-    }) : (0, o.g2)("resolveSettingWithDefaults") ? r.Q4.BLUR : (null == s ? true : s.nsfwAllowed) === false ? m({
+    }) : (0, a.g2)("resolveSettingWithDefaults") ? r.Q4.BLUR : (null == s ? true : s.nsfwAllowed) === false ? m({
       isDm: n,
       isFriend: i
     }) : h({
@@ -79,8 +79,8 @@ let u = {
       isFriend: n = false
     } = e;
     if (!t) return r.Q4.SHOW;
-    let a = i.UP.getSetting();
-    return n ? u[a] : d[a]
+    let o = i.UP.getSetting();
+    return n ? u[o] : d[o]
   },
   m = e => {
     let {
@@ -88,8 +88,8 @@ let u = {
       isFriend: n = false
     } = e;
     if (!t) return r.Q4.BLUR;
-    let a = i.UP.getSetting();
-    return n ? f[a] : _[a]
+    let o = i.UP.getSetting();
+    return n ? f[o] : _[o]
   },
   g = e => {
     let {

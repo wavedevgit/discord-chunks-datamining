@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   L9: () => u,
-  LY: () => o,
+  LY: () => a,
   ND: () => f,
   WC: () => p,
   aW: () => s,
@@ -19,7 +19,7 @@ require.d(exports, {
 var Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  o = function(e) {
+  a = function(e) {
     return e[e.RESOLUTION_480 = 480] = "RESOLUTION_480", e[e.RESOLUTION_720 = 720] = "RESOLUTION_720", e[e.RESOLUTION_1080 = 1080] = "RESOLUTION_1080", e[e.RESOLUTION_1440 = 1440] = "RESOLUTION_1440", e[e.RESOLUTION_SOURCE = 0] = "RESOLUTION_SOURCE", e
   }({});
 
@@ -169,7 +169,7 @@ function _(e, t) {
 }
 let p = [_(720), _(1080), _(1440), _(0, () => Chunk388032.intl.string(Chunk388032.t.XjXqzs))],
   h = [_(720), _(1080), _(1440)],
-  m = e => 0 === e ? a.intl.string(a.t.XjXqzs) : a.intl.formatToPlainString(a.t.TEOC0N, {
+  m = e => 0 === e ? o.intl.string(o.t.XjXqzs) : o.intl.formatToPlainString(o.t.TEOC0N, {
     resolution: e
   }),
   g = [_(480, () => m(480)), _(720, () => m(720)), _(1080, () => m(1080)), _(1440, () => m(1440)), _(0, () => m(0))],

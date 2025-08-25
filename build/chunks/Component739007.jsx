@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  a = require.n(Chunk392711),
   Chunk670596 = require("./670596.js"),
   Chunk561779 = require("./561779.jsx"),
   Chunk224757 = require("./224757.js");
@@ -15,13 +15,13 @@ let u = e => "".concat(e.toFixed(0), "%"),
   d = Chunk647438.forwardRef(function(e, t) {
     let {
       value: n,
-      minValue: a = 0,
+      minValue: o = 0,
       maxValue: d = 100,
       onChange: f,
       onInteraction: _,
       renderValue: p = u,
       "aria-label": h
-    } = e, m = i.useRef(null), g = i.useRef(o().debounce(() => null == _ ? true : _(s.U.SLIDER), 100));
+    } = e, m = i.useRef(null), g = i.useRef(a().debounce(() => null == _ ? true : _(s.U.SLIDER), 100));
     i.useImperativeHandle(t, () => ({
       focus: () => {
         var e;
@@ -44,7 +44,7 @@ let u = e => "".concat(e.toFixed(0), "%"),
         handleSize: 16,
         className: c.slider,
         initialValue: n,
-        minValue: a,
+        minValue: o,
         maxValue: d,
         onValueChange: E,
         asValueChanges: f,

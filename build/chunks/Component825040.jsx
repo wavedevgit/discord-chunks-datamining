@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk970838 = require("./970838.js"),
   Chunk376398 = require("./376398.js");
 
@@ -37,8 +37,8 @@ function d(e, t) {
   if (null == e) return {};
   var n, r, i = f(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -46,8 +46,8 @@ function d(e, t) {
 function f(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -55,7 +55,7 @@ function _(e) {
   var {
     streamId: t,
     paused: n = false,
-    onReady: a,
+    onReady: o,
     onResize: c,
     className: f
   } = e, _ = d(e, ["streamId", "paused", "onReady", "onResize", "className"]);
@@ -79,11 +79,11 @@ function _(e) {
     var e, t, n, r;
     let {
       width: i,
-      height: a
-    } = h.current, o = null != (n = null == (e = p.current) ? true : e.videoWidth) ? n : 0, s = null != (r = null == (t = p.current) ? true : t.videoHeight) ? r : 0;
-    if (i !== o || a !== s) {
+      height: o
+    } = h.current, a = null != (n = null == (e = p.current) ? true : e.videoWidth) ? n : 0, s = null != (r = null == (t = p.current) ? true : t.videoHeight) ? r : 0;
+    if (i !== a || o !== s) {
       let e = {
-        width: o,
+        width: a,
         height: s
       };
       null == c || c(e), h.current = e
@@ -94,13 +94,13 @@ function _(e) {
     if (null != e) return e.addEventListener("resize", m), () => e.removeEventListener("resize", m)
   }, [m]);
   let g = i.useCallback(() => {
-      null == a || a()
-    }, [a]),
+      null == o || o()
+    }, [o]),
     E = i.useCallback(e => {
       n || e.currentTarget.play()
     }, [n]);
   return (0, r.jsx)("video", u({
-    className: o()("media-engine-video", f),
+    className: a()("media-engine-video", f),
     ref: p,
     autoPlay: true,
     onPause: E,

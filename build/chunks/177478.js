@@ -6,10 +6,10 @@ module.exports = function(e) {
     n = t.getAnchorKey(),
     r = e.getBlockTree(n),
     i = t.getStartOffset(),
-    a = false;
+    o = false;
   return r.some(function(e) {
-    return i === e.get("start") ? (a = true, true) : i < e.get("end") && e.get("leaves").some(function(e) {
-      return i === e.get("start") && (a = true, true)
+    return i === e.get("start") ? (o = true, true) : i < e.get("end") && e.get("leaves").some(function(e) {
+      return i === e.get("start") && (o = true, true)
     })
-  }), a
+  }), o
 }

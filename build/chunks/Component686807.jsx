@@ -20,10 +20,10 @@ function f(e) {
     channelId: t
   } = e, n = (0, l.m7)(t);
   if (null == n) return "[".concat(u.intl.string(u.t.bz1PZW), "]");
-  let s = n.isMediaChannel() ? i.XBm : (0, o.Th)(n.type);
+  let s = n.isMediaChannel() ? i.XBm : (0, a.Th)(n.type);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(i.nn4, {
-      children: (0, a.ZP)({
+      children: (0, o.ZP)({
         channel: n
       })
     }), (0, r.jsxs)("div", {

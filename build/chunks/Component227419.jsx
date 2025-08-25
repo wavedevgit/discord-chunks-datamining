@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk481060 = require("./481060.js"),
   Chunk493683 = require("./493683.js"),
   Chunk904245 = require("./904245.js"),
@@ -68,7 +68,7 @@ function O(e) {
       return ""
   }
 }
-let v = [...a()(Chunk981631.nkL).values().map(e => ({
+let v = [...o()(Chunk981631.nkL).values().map(e => ({
   id: e.commandId,
   untranslatedName: e.command,
   displayName: e.command,
@@ -129,10 +129,10 @@ let v = [...a()(Chunk981631.nkL).values().map(e => ({
   execute: (e, t) => {
     var n, i;
     let {
-      channel: a
+      channel: o
     } = t;
-    if (null == a) return;
-    let c = (0, u.F6)(a, f.default, d.Z),
+    if (null == o) return;
+    let c = (0, u.F6)(o, f.default, d.Z),
       _ = m.intl.formatToPlainString(m.t.hJ5Ap6, {
         name: c
       }),
@@ -141,23 +141,23 @@ let v = [...a()(Chunk981631.nkL).values().map(e => ({
       }),
       h = null != (i = null == (n = e.find(e => "silent" === e.name)) ? true : n.value) && i;
     async function g() {
-      if (null != a) try {
-        await s.Z.closePrivateChannel(a.id, true, h)
+      if (null != o) try {
+        await s.Z.closePrivateChannel(o.id, true, h)
       } catch (e) {
-        l.Z.sendBotMessage(a.id, m.intl.string(m.t.YOsuT0))
+        l.Z.sendBotMessage(o.id, m.intl.string(m.t.YOsuT0))
       }
     }
-    a.isManaged() && (_ = m.intl.formatToPlainString(m.t.hVGjER, {
+    o.isManaged() && (_ = m.intl.formatToPlainString(m.t.hVGjER, {
       name: c
     }), p = m.intl.format(m.t.IK1Qvr, {
       name: c
-    })), (0, o.h7j)(e => (0, r.jsx)(o.ConfirmModal, y(E({
+    })), (0, a.h7j)(e => (0, r.jsx)(a.ConfirmModal, y(E({
       header: _,
       confirmText: m.intl.string(m.t["26C4oq"]),
       cancelText: m.intl.string(m.t["ETE/oK"]),
       onConfirm: g
     }, e), {
-      children: (0, r.jsx)(o.Text, {
+      children: (0, r.jsx)(a.Text, {
         variant: "text-md/normal",
         children: p
       })

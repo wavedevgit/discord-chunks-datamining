@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk358085 = require("./358085.js"),
   Chunk998502 = require("./998502.js"),
@@ -49,13 +49,13 @@ class _ extends Chunk647438.PureComponent {
         children: Chunk388032.intl.string(Chunk388032.t.WQm4p6)
       }), (0, Chunk358085.isWindows)() ? (0, Chunk951288.jsx)(Chunk481060.j7V, {
         disabled: !module,
-        className: o()(Chunk197571.marginTop8, Chunk197571.marginBottom20),
+        className: a()(Chunk197571.marginTop8, Chunk197571.marginBottom20),
         value: !!module && exports,
         note: Chunk388032.intl.string(Chunk388032.t.o2FSjI),
         onChange: this.handleToggleStartMinimized,
         children: Chunk388032.intl.string(Chunk388032.t.n7Yjen)
       }) : null, (0, Chunk951288.jsx)(Chunk481060.vwX, {
-        className: o()(Chunk197571.marginTop20, Chunk197571.marginBottom8),
+        className: a()(Chunk197571.marginTop20, Chunk197571.marginBottom8),
         children: Chunk388032.intl.string(Chunk388032.t.h0hFx8)
       }), (0, Chunk951288.jsx)(Chunk481060.j7V, {
         className: Chunk197571.marginBottom20,

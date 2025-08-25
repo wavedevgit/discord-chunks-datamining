@@ -2,7 +2,7 @@
 /** chunk id: 559241, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => o
+  Z: () => a
 });
 var Chunk592125 = require("./592125.js");
 
@@ -14,7 +14,7 @@ function i(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class a {
+class o {
   constructor() {
     i(this, "filterTagIds", true), i(this, "sortOrder", true), i(this, "layout", true), i(this, "tagSetting", true), i(this, "setFilterTagIds", e => {
       this.filterTagIds = e
@@ -36,4 +36,4 @@ class a {
     })
   }
 }
-let o = new a
+let a = new o

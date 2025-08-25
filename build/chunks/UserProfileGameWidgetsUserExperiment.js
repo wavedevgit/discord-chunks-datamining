@@ -3,11 +3,11 @@
 "use strict";
 require.d(exports, {
   h: () => s,
-  k: () => o
+  k: () => a
 });
 var Chunk818083 = require("./818083.js"),
   Chunk438379 = require("./438379.js");
-let a = (0, Chunk818083.B)({
+let o = (0, Chunk818083.B)({
   kind: "user",
   id: "2025-07_user_profile_game_widgets",
   label: "User Profile Game Widgets",
@@ -23,7 +23,7 @@ let a = (0, Chunk818083.B)({
   }]
 });
 
-function o(e) {
+function a(e) {
   let {
     location: t,
     autoTrackExposure: n = true
@@ -31,14 +31,14 @@ function o(e) {
     location: t,
     autoTrackExposure: n
   }), {
-    enabled: o
-  } = a.useExperiment({
+    enabled: a
+  } = o.useExperiment({
     location: t
   }, {
     autoTrackExposure: n,
     disable: r
   });
-  return o
+  return a
 }
 
 function s(e) {
@@ -50,7 +50,7 @@ function s(e) {
     autoTrackExposure: false
   }), {
     enabled: n
-  } = a.getCurrentConfig({
+  } = o.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: false,

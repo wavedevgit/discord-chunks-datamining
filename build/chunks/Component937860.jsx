@@ -51,12 +51,12 @@ function d(e, t) {
 let f = e => (0, r.jsx)(i.zx, d(c({
   "data-migration-pending": true
 }, e), {
-  "aria-label": o.intl.string(o.t.cpT0Cg),
+  "aria-label": a.intl.string(a.t.cpT0Cg),
   look: i.zx.Looks.BLANK,
   size: i.zx.Sizes.NONE,
   wrapperClassName: s.closeButton,
   innerClassName: s.closeButtonInner,
-  children: (0, r.jsx)(a.Uz9, {
+  children: (0, r.jsx)(o.Uz9, {
     size: "refresh_sm",
     className: s.closeButtonIcon
   })

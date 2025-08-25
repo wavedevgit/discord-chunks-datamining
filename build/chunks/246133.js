@@ -56,11 +56,11 @@ async function _(e) {
     analyticsContext: c,
     durationMillis: d
   } = e;
-  null == n && (n = o.Z.getStatus()), await a.hW.updateAsync("status", e => {
+  null == n && (n = a.Z.getStatus()), await o.hW.updateAsync("status", e => {
     e.status = r.Gm.create({
       value: t
     }), e.statusExpiresAtMs = null != d ? "".concat(Date.now() + d) : "0"
-  }, a.fy.INFREQUENT_USER_ACTION);
+  }, o.fy.INFREQUENT_USER_ACTION);
   let _ = u({
     next_status: t,
     prev_status: n

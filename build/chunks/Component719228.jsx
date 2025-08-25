@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk658722 = require("./658722.js"),
-  o = require.n(Chunk658722),
+  a = require.n(Chunk658722),
   Chunk442837 = require("./442837.js"),
   Chunk82659 = require("./82659.jsx"),
   Chunk481060 = require("./481060.js"),
@@ -40,11 +40,11 @@ function y(e) {
     isTransfer: t = false,
     selectedSlotGuilds: n,
     onClose: i,
-    onSelectGuild: a,
+    onSelectGuild: o,
     query: l
   } = e, b = (0, s.e7)([p.ZP], () => p.ZP.getFlattenedGuildIds()), y = (0, s.Wu)([_.Z], () => b.reduce((e, t) => {
     let r = _.Z.getGuild(t);
-    return null == r || null != n && n.some(e => e.id === t) || (l.length <= 0 || o()(l.toLowerCase(), null == r ? true : r.name.toLowerCase())) && e.push(r), e
+    return null == r || null != n && n.some(e => e.id === t) || (l.length <= 0 || a()(l.toLowerCase(), null == r ? true : r.name.toLowerCase())) && e.push(r), e
   }, []));
 
   function O() {
@@ -66,7 +66,7 @@ function y(e) {
     }), y.map(e => (0, r.jsxs)(c.P3F, {
       className: E.selectGuild,
       onClick: () => {
-        a(e)
+        o(e)
       },
       children: [(0, r.jsx)(d.Z, {
         className: E.selectGuildIcon,
@@ -98,14 +98,14 @@ function O(e) {
   let {
     onClose: t,
     onSelectGuild: n,
-    transitionState: a,
-    isTransfer: o = false,
+    transitionState: o,
+    isTransfer: a = false,
     selectedSlotGuilds: s
   } = e, [c, u] = i.useState(""), d = async () => {
     await t()
-  }, f = o ? g.intl.string(g.t.IB13DQ) : g.intl.string(g.t.cQYceX);
+  }, f = a ? g.intl.string(g.t.IB13DQ) : g.intl.string(g.t.cQYceX);
   return (0, r.jsx)(l.Modal, {
-    transitionState: a,
+    transitionState: o,
     onClose: d,
     size: "md",
     title: f,
@@ -118,7 +118,7 @@ function O(e) {
       onClose: t,
       onSelectGuild: n,
       query: c,
-      isTransfer: o,
+      isTransfer: a,
       selectedSlotGuilds: s
     })
   })

@@ -67,13 +67,13 @@ function d() {
 let f = {
   setUser(e, t, n, r) {
     var i;
-    let a = {
+    let o = {
       id: e,
       username: t,
       email: n,
       staff: r
     };
-    null == (i = window.DiscordSentry) || i.getCurrentScope().setUser(a), d(a)
+    null == (i = window.DiscordSentry) || i.getCurrentScope().setUser(o), d(o)
   },
   clearUser() {
     var e;
@@ -97,10 +97,10 @@ let f = {
   },
   captureCrash(e, t) {
     var n;
-    let r, a = (0, i.v)(t);
+    let r, o = (0, i.v)(t);
     return null == (n = window.DiscordSentry) || n.withScope(t => {
       var n;
-      t.setExtras(a.extra), t.setTag("crash", "true"), t.setLevel("fatal"), t.addEventProcessor(e => {
+      t.setExtras(o.extra), t.setTag("crash", "true"), t.setLevel("fatal"), t.addEventProcessor(e => {
         var t, n;
         let r = null == (n = e.exception) || null == (t = n.values) ? true : t[0];
         return null != r && (r.mechanism = u(l({}, r.mechanism), {

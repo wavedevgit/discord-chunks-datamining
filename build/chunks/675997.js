@@ -2,7 +2,7 @@
 /** chunk id: 675997, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => a,
+  Z: () => o,
   l: () => i
 });
 let r = (0, require("./427164.js").le)({
@@ -23,4 +23,4 @@ let r = (0, require("./427164.js").le)({
   i = e => r.getConfig({
     location: e
   }).enableShopTakeOver,
-  a = r
+  o = r

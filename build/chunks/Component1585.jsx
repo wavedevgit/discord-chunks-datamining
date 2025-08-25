@@ -53,19 +53,19 @@ function d(e, t) {
 }
 
 function f(e) {
-  return "number" != typeof e ? (0, i.pxk)(e) * o.hs : e * o.hs
+  return "number" != typeof e ? (0, i.pxk)(e) * a.hs : e * a.hs
 }
 let _ = e => {
   let {
     analyticsLocations: t,
-    initialSelectedDecoration: o,
+    initialSelectedDecoration: a,
     initialSelectedDecorationId: l,
     isTryItOutFlow: u,
     guild: f,
     onClose: _
   } = e;
   (0, i.ZDy)(async () => {
-    (0, a.s1)().location.pathname === s.Z5c.COLLECTIBLES_SHOP_FULLSCREEN && (0, a.uL)(s.Z5c.APP);
+    (0, o.s1)().location.pathname === s.Z5c.COLLECTIBLES_SHOP_FULLSCREEN && (0, o.uL)(s.Z5c.APP);
     let {
       default: e
     } = await Promise.resolve().then(n.bind(n, 235400));
@@ -73,7 +73,7 @@ let _ = e => {
       onCloseModal: n.onClose,
       onClose: _,
       analyticsLocations: t,
-      initialSelectedDecoration: o,
+      initialSelectedDecoration: a,
       initialSelectedDecorationId: l,
       isTryItOutFlow: u,
       guild: f

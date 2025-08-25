@@ -37,7 +37,7 @@ function h() {
         titleId: _,
         children: (0, Chunk951288.jsx)(Chunk481060.iRW, {
           initialValue: (0, Chunk36703.P)(exports),
-          asValueChanges: t => o.Z.setInputVolume((0, u.A)(t), {
+          asValueChanges: t => a.Z.setInputVolume((0, u.A)(t), {
             analyticsLocations: e
           }),
           "aria-labelledby": _
@@ -52,7 +52,7 @@ function h() {
           initialValue: (0, Chunk36703.P)(require),
           maxValue: 200,
           onValueRender: e => "".concat(e.toFixed(0), "%"),
-          asValueChanges: t => o.Z.setOutputVolume((0, u.A)(t), {
+          asValueChanges: t => a.Z.setOutputVolume((0, u.A)(t), {
             analyticsLocations: e
           }),
           "aria-labelledby": p

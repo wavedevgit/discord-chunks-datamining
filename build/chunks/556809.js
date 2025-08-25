@@ -26,13 +26,13 @@ let _ = new Chunk710845.Z("OverlayWindowRAFManager"),
   p = window.requestAnimationFrame.bind(window),
   h = e => {
     try {
-      let t = a.Z.getWindow(d.$J);
+      let t = o.Z.getWindow(d.$J);
       if (null == t || "function" != typeof t.requestAnimationFrame || !c.default.isAnyOverlayRendering()) return p(e);
       let n = null !== u.ZP.getFocusedRunningGame(),
         r = null != t && t.document.hasFocus();
       if (n || r) return t.requestAnimationFrame(e)
     } catch (e) {
-      _.error("RAF redirect failed, falling back to original", e), (0, s.D1)(e, u.ZP.getOverlayMethod((0, o.getPID)()))
+      _.error("RAF redirect failed, falling back to original", e), (0, s.D1)(e, u.ZP.getOverlayMethod((0, a.getPID)()))
     }
     return p(e)
   };

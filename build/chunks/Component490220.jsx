@@ -44,7 +44,7 @@ function p(e) {
     containerClassName: h
   } = e, {
     reducedMotion: m
-  } = i.useContext(o.Sfi), {
+  } = i.useContext(a.Sfi), {
     pendingAvatar: g,
     pendingBanner: E,
     pendingThemeColors: b,
@@ -55,7 +55,7 @@ function p(e) {
     tryItOutBanner: T,
     tryItOutAvatarDecoration: S,
     tryItOutProfileEffectId: A
-  } = (0, a.cj)([c.Z], () => _({}, c.Z.getAllPending(), c.Z.getAllTryItOut())), C = (0, l.SD)({
+  } = (0, o.cj)([c.Z], () => _({}, c.Z.getAllPending(), c.Z.getAllTryItOut())), C = (0, l.SD)({
     userId: f.id,
     image: null != I ? I : g
   }), N = (0, s.Z)(S, false);

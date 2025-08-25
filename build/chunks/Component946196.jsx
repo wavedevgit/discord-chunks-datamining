@@ -22,7 +22,7 @@ function d() {
 let f = e => {
   let {
     error: t
-  } = e, [n, o] = (0, i.useState)(false), d = (0, s.Yzy)(!n, {
+  } = e, [n, a] = (0, i.useState)(false), d = (0, s.Yzy)(!n, {
     from: {
       opacity: 0,
       translateY: 20
@@ -45,7 +45,7 @@ let f = e => {
         return c.intl.string(c.t.F8FvU1)
     }
   })();
-  return d(e => n ? null : (0, r.jsx)(a.animated.div, {
+  return d(e => n ? null : (0, r.jsx)(o.animated.div, {
     style: e,
     className: u.floaterWrapper,
     children: (0, r.jsxs)("div", {
@@ -55,7 +55,7 @@ let f = e => {
         color: "always-white",
         children: f
       }), (0, r.jsx)(s.RyX, {
-        onClick: () => o(true)
+        onClick: () => a(true)
       })]
     })
   }))

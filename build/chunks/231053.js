@@ -76,7 +76,7 @@ let p = async e => {
 class h extends Chunk81825.Z {
   getIconURL(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
-    return o.ZP.getGuildIconURL({
+    return a.ZP.getGuildIconURL({
       id: this.id,
       size: e,
       icon: this.icon,
@@ -85,7 +85,7 @@ class h extends Chunk81825.Z {
   }
   getIconSource(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
-    return o.ZP.getAnimatableSourceWithFallback(t, t => o.ZP.getGuildIconSource({
+    return a.ZP.getAnimatableSourceWithFallback(t, t => a.ZP.getGuildIconSource({
       id: this.id,
       size: e,
       icon: this.icon,

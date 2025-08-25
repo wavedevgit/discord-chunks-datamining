@@ -88,9 +88,9 @@ function h(e) {
 function m(e) {
   var t, n;
   let i = 0;
-  (0, a.yE)(null != (t = e.flags) ? t : 0, s.J0y.CONTAINS_EXPLICIT_MEDIA) && (i |= 1);
-  let o = 0;
-  return (0, a.yE)(null != (n = e.flags) ? n : 0, s.J0y.IS_ANIMATED) && (o |= 1), {
+  (0, o.yE)(null != (t = e.flags) ? t : 0, s.J0y.CONTAINS_EXPLICIT_MEDIA) && (i |= 1);
+  let a = 0;
+  return (0, o.yE)(null != (n = e.flags) ? n : 0, s.J0y.IS_ANIMATED) && (a |= 1), {
     url: e.url,
     proxyUrl: e.proxy_url,
     height: e.height,
@@ -104,12 +104,12 @@ function m(e) {
       version: e.content_scan_version,
       flags: i
     },
-    flags: o
+    flags: a
   }
 }
 
 function g(e) {
-  return (0, i.tw)(e.contentType) ? "IMAGE" : (0, i.X2)(e.contentType) && null != e.proxyUrl && null != o.Z.toURLSafe(e.proxyUrl) ? "VIDEO" : "INVALID"
+  return (0, i.tw)(e.contentType) ? "IMAGE" : (0, i.X2)(e.contentType) && null != e.proxyUrl && null != a.Z.toURLSafe(e.proxyUrl) ? "VIDEO" : "INVALID"
 }
 
 function E(e) {

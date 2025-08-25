@@ -18,17 +18,17 @@ var Chunk392711 = require("./392711.js"),
 function f(e, t, n) {
   let {
     canShow: r,
-    isFavoritesPerk: a
+    isFavoritesPerk: o
   } = u.Z.getCurrentConfig({
     location: "isFavoritesGuildVisible"
   }, {
     autoTrackExposure: false
   });
-  if (a) returntrue;
+  if (o) returntrue;
   if (!r) returnfalse;
-  let o = e.getFavoriteChannels();
-  if (i().isEmpty(o)) returnfalse;
-  let s = l.default.keys(o).filter(e => {
+  let a = e.getFavoriteChannels();
+  if (i().isEmpty(a)) returnfalse;
+  let s = l.default.keys(a).filter(e => {
     let r = t.getChannel(e);
     return null != r && (!!r.isPrivate() || n.can(d.Pl.VIEW_CHANNEL, r))
   });

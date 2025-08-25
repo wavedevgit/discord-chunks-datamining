@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk686546 = require("./686546.jsx"),
   Chunk768581 = require("./768581.js"),
   Chunk895924 = require("./895924.js"),
@@ -57,8 +57,8 @@ function m(e, t) {
   if (null == e) return {};
   var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -66,8 +66,8 @@ function m(e, t) {
 function g(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -75,7 +75,7 @@ function E(e) {
   var {
     section: t,
     isSelected: n,
-    width: a,
+    width: o,
     height: f,
     className: p,
     selectable: g = false,
@@ -100,11 +100,11 @@ function E(e) {
       icon: t.icon,
       bot: null == (e = t.application) ? true : e.bot,
       botIconFirst: true,
-      size: a
+      size: o
     })
-  }, [t, a]);
+  }, [t, o]);
   return (0, r.jsx)("div", h(_({}, I), {
-    className: o()(u.wrapper, p, {
+    className: a()(u.wrapper, p, {
       [u.selectable]: g,
       [u.selected]: g && n
     }),
@@ -115,13 +115,13 @@ function E(e) {
     children: (0, r.jsx)(s.ZP, {
       className: u.mask,
       mask: E || g && (n || T) ? s.QS.SQUIRCLE : s.QS.AVATAR_DEFAULT,
-      width: a,
+      width: o,
       height: f,
       children: (0, r.jsx)("img", {
         alt: "",
         className: u.icon,
         style: {
-          width: a,
+          width: o,
           height: f
         },
         src: P

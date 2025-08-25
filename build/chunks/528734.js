@@ -2,7 +2,7 @@
 /** chunk id: 528734, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.r(exports), require.d(exports, {
-  default: () => a
+  default: () => o
 });
 var Chunk951516 = require("./951516.js");
 
@@ -14,7 +14,7 @@ function i(e) {
   })(e)
 }
 
-function a(e) {
+function o(e) {
   (0, r.Z)(1, arguments);
   var t = Object.prototype.toString.call(e);
   return e instanceof Date || "object" === i(e) && "[object Date]" === t ? new Date(e.getTime()) : "number" == typeof e || "[object Number]" === t ? new Date(e) : (("string" == typeof e || "[object String]" === t) && "undefined" != typeof console && (console.warn("Starting with v2.0.0-beta.1 date-fns doesn't accept strings as date arguments. Please use `parseISO` to parse strings. See: https://github.com/date-fns/date-fns/blob/master/docs/upgradeGuide.md#string-arguments"), console.warn(Error().stack)), new Date(NaN))

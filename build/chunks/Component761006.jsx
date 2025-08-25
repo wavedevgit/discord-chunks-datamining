@@ -6,7 +6,7 @@ require.d(exports, {
 });
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk55373 = require("./55373.jsx"),
   Chunk741890 = require("./741890.js"),
   Chunk307248 = require("./307248.js"),
@@ -32,25 +32,25 @@ let _ = e => {
   } = e;
   return (0, r.jsxs)(r.Fragment, {
     children: [null != i && (0, r.jsx)("div", {
-      className: a()(s.boltContainer, i),
-      children: (0, r.jsx)(o.ZP, {
+      className: o()(s.boltContainer, i),
+      children: (0, r.jsx)(a.ZP, {
         blurAnimationData: {
           startBlurRadius: 10,
           endBlurRadius: 0,
-          duration: o.SR
+          duration: a.SR
         },
         scaleAnimationData: {
           startScale: .85,
           endScale: 1,
-          duration: o.SR
+          duration: a.SR
         },
         yAxisAnimationData: {
           range: 15,
-          duration: o.vi,
-          path: o.js.COSINE
+          duration: a.vi,
+          path: a.js.COSINE
         },
         parallaxAnimationData: null != n ? {
-          pathDirection: o.eo.UP,
+          pathDirection: a.eo.UP,
           range: 125,
           containerVisibilityPercentage: n,
           changeOpacity: true
@@ -65,15 +65,15 @@ let _ = e => {
         })
       })
     }), null != _ && (0, r.jsx)("div", {
-      className: a()(s.carContainer, _),
-      children: (0, r.jsx)(o.ZP, {
+      className: o()(s.carContainer, _),
+      children: (0, r.jsx)(a.ZP, {
         yAxisAnimationData: {
           range: 15,
-          duration: o.vi,
-          path: o.js.COSINE
+          duration: a.vi,
+          path: a.js.COSINE
         },
         parallaxAnimationData: null != n ? {
-          pathDirection: o.eo.DOWN,
+          pathDirection: a.eo.DOWN,
           range: 50,
           containerVisibilityPercentage: n,
           changeOpacity: true
@@ -88,15 +88,15 @@ let _ = e => {
         })
       })
     }), null != p && (0, r.jsx)("div", {
-      className: a()(s.hammerContainer, p),
-      children: (0, r.jsx)(o.ZP, {
+      className: o()(s.hammerContainer, p),
+      children: (0, r.jsx)(a.ZP, {
         yAxisAnimationData: {
           range: 15,
-          duration: o.vi,
-          path: o.js.SINE
+          duration: a.vi,
+          path: a.js.SINE
         },
         parallaxAnimationData: null != n ? {
-          pathDirection: o.eo.DOWN,
+          pathDirection: a.eo.DOWN,
           range: 120,
           containerVisibilityPercentage: n,
           changeOpacity: true
@@ -111,25 +111,25 @@ let _ = e => {
         })
       })
     }), null != h && (0, r.jsx)("div", {
-      className: a()(s.keyContainer, h),
-      children: (0, r.jsx)(o.ZP, {
+      className: o()(s.keyContainer, h),
+      children: (0, r.jsx)(a.ZP, {
         blurAnimationData: {
           startBlurRadius: 5,
           endBlurRadius: 0,
-          duration: o.b5
+          duration: a.b5
         },
         scaleAnimationData: {
           startScale: .85,
           endScale: 1,
-          duration: o.b5
+          duration: a.b5
         },
         yAxisAnimationData: {
           range: 15,
-          duration: o.vi,
-          path: o.js.SINE
+          duration: a.vi,
+          path: a.js.SINE
         },
         parallaxAnimationData: null != n ? {
-          pathDirection: o.eo.UP,
+          pathDirection: a.eo.UP,
           range: 200,
           containerVisibilityPercentage: n,
           changeOpacity: true
@@ -144,25 +144,25 @@ let _ = e => {
         })
       })
     }), null != m && (0, r.jsx)("div", {
-      className: a()(s.starContainer, m),
-      children: (0, r.jsx)(o.ZP, {
+      className: o()(s.starContainer, m),
+      children: (0, r.jsx)(a.ZP, {
         blurAnimationData: {
           startBlurRadius: 0,
           endBlurRadius: 2,
-          duration: o.SR
+          duration: a.SR
         },
         scaleAnimationData: {
           startScale: 1,
           endScale: .85,
-          duration: o.SR
+          duration: a.SR
         },
         yAxisAnimationData: {
           range: 20,
-          duration: o.b5,
-          path: o.js.COSINE
+          duration: a.b5,
+          path: a.js.COSINE
         },
         parallaxAnimationData: null != n ? {
-          pathDirection: o.eo.UP,
+          pathDirection: a.eo.UP,
           range: 50,
           containerVisibilityPercentage: n,
           changeOpacity: true

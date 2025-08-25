@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk1561 = require("./1561.jsx"),
   Chunk743236 = require("./743236.js"),
   Chunk939350 = require("./939350.js"),
@@ -56,7 +56,7 @@ function h(e) {
   let {
     children: t,
     color: n = "default",
-    isFocused: a = false,
+    isFocused: o = false,
     disabled: d = false,
     keepItemStyles: _ = false,
     menuItemProps: h,
@@ -66,14 +66,14 @@ function h(e) {
     onClose: b
   } = e, y = i.useRef(null);
   i.useEffect(() => {
-    a && (0, l.F)(y)
-  }, [a]);
+    o && (0, l.F)(y)
+  }, [o]);
   let O = i.useCallback(e => {
       if (null == m) returnfalse;
       e.shiftKey && g || E || b(), e.persist(), requestAnimationFrame(() => m(e))
     }, [m, b, g, E]),
-    v = _ ? o()(u.item, c._[n], {
-      [u.focused]: a
+    v = _ ? a()(u.item, c._[n], {
+      [u.focused]: o
     }) : u.customItem;
   return (0, r.jsx)(s.P, p(f({
     innerRef: y,
@@ -84,7 +84,7 @@ function h(e) {
     children: t({
       color: n,
       disabled: d,
-      isFocused: a
+      isFocused: o
     })
   }))
 }

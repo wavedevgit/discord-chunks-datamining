@@ -22,7 +22,7 @@ function u(e) {
     onJoinStream: f,
     usernameHook: _,
     compact: p
-  } = e, h = (0, o.ZP)(n), m = null == (t = n.call) ? true : t.duration, g = _(h), E = l.intl.format(l.t.FKXvaG, {
+  } = e, h = (0, a.ZP)(n), m = null == (t = n.call) ? true : t.duration, g = _(h), E = l.intl.format(l.t.FKXvaG, {
     username: h.nick,
     activityName: null != d ? d.name : "unknown",
     onJoinStream: f,
@@ -39,8 +39,8 @@ function u(e) {
       color: "currentColor",
       width: c,
       height: c
-    }) : (0, r.jsx)(a.ZP, {
-      size: a.ZP.Sizes.SMALL
+    }) : (0, r.jsx)(o.ZP, {
+      size: o.ZP.Sizes.SMALL
     }),
     timestamp: n.timestamp,
     compact: p,

@@ -36,8 +36,8 @@ function d(e) {
 }
 
 function f(e) {
-  let t = (0, o.XE)("user_settings"),
+  let t = (0, a.XE)("user_settings"),
     n = (0, i.e7)([s.default], () => s.default.getForcedRenderMode()),
-    u = n === a.R5.OUT_OF_PROCESS_V3 || n === a.R5.OUT_OF_PROCESS_V3_LIMITED_INTERACTION;
+    u = n === o.R5.OUT_OF_PROCESS_V3 || n === o.R5.OUT_OF_PROCESS_V3_LIMITED_INTERACTION;
   return t || u ? (0, r.jsx)(c.Z, d({}, e)) : (0, r.jsx)(l.Z, d({}, e))
 }

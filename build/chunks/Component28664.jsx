@@ -57,8 +57,8 @@ function m(e, t) {
   if (null == e) return {};
   var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -66,8 +66,8 @@ function m(e, t) {
 function g(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let E = Chunk647438.createContext(null);
@@ -76,8 +76,8 @@ function b(e) {
   var {
     children: t,
     text: n,
-    position: a = "top",
-    align: o = "center",
+    position: o = "top",
+    align: a = "center",
     spacing: s,
     layerContext: l,
     onAnimationRest: u,
@@ -102,15 +102,15 @@ function b(e) {
       isVisible: y,
       isRendered: O,
       text: n,
-      position: a,
-      align: o,
+      position: o,
+      align: a,
       spacing: s,
       caretConfig: p,
       layerContext: l,
       onAnimationRest: u,
       handleExitComplete: T,
       positionKey: "string" == typeof n ? n : true
-    }), [I, g.triggerRef, g.targetElementRef, b, y, O, n, a, o, s, p, l, u, T]);
+    }), [I, g.triggerRef, g.targetElementRef, b, y, O, n, o, a, s, p, l, u, T]);
   return (0, r.jsxs)(E.Provider, {
     value: S,
     children: [t, (0, r.jsx)(v, {})]
@@ -122,14 +122,14 @@ function y(e) {
   let {
     strategy: n = "clone",
     tag: r = "div",
-    children: a
+    children: o
   } = e, s = i.useContext(E);
   if (null == s) throw Error("TooltipTrigger must be used within TooltipRoot");
   let {
     triggerHandlers: c,
     triggerRef: u,
     tooltipId: d
-  } = s, f = i.isValidElement(a) ? a : null, p = (0, o.Z)(null == f || null == (t = f.props) ? true : t.ref, u);
+  } = s, f = i.isValidElement(o) ? o : null, p = (0, a.Z)(null == f || null == (t = f.props) ? true : t.ref, u);
   if ("clone" === n) return null == f ? null : (0, l.C9)(f, c, d, p);
   let m = h(_({}, c), {
     onFocus: (0, l.tS)(c.onFocus, e => {
@@ -143,7 +143,7 @@ function y(e) {
   });
   return (0, l.FX)({
     tag: r,
-    children: a,
+    children: o,
     triggerHandlers: m,
     triggerRef: u
   })
@@ -153,15 +153,15 @@ function O(e) {
   var {
     children: t,
     asContainer: n = false,
-    tag: a = "div"
-  } = e, o = m(e, ["children", "asContainer", "tag"]);
-  return null == o.text || "" === o.text ? t : n ? (0, r.jsx)(b, h(_({}, o), {
+    tag: o = "div"
+  } = e, a = m(e, ["children", "asContainer", "tag"]);
+  return null == a.text || "" === a.text ? t : n ? (0, r.jsx)(b, h(_({}, a), {
     children: (0, r.jsx)(y, {
       strategy: "wrap",
-      tag: a,
+      tag: o,
       children: t
     })
-  })) : i.isValidElement(t) ? (0, r.jsx)(b, h(_({}, o), {
+  })) : i.isValidElement(t) ? (0, r.jsx)(b, h(_({}, a), {
     children: (0, r.jsx)(y, {
       strategy: "clone",
       children: t
@@ -175,7 +175,7 @@ function v() {
   if (null == exports) throw Error("TooltipContent must be used within TooltipRoot");
   let {
     isVisible: n,
-    isRendered: o,
+    isRendered: a,
     handleExitComplete: c,
     onAnimationRest: d,
     tooltipId: f,
@@ -195,7 +195,7 @@ function v() {
     onAnimationRest: Chunk966327
   })((e, t) => t ? (0, r.jsx)(s.N, {
     isVisible: n,
-    isRendered: o,
+    isRendered: a,
     targetElementRef: _,
     id: f,
     content: p,
@@ -203,7 +203,7 @@ function v() {
     align: m,
     spacing: g,
     caretConfig: b,
-    layerContext: null != y ? y : a.nz,
+    layerContext: null != y ? y : o.nz,
     animationStyle: e,
     positionKey: O,
     "data-mana-component": "tooltip"

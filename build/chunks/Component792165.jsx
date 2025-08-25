@@ -59,7 +59,7 @@ function y(e) {
         variant: "heading-sm/bold",
         children: g.intl.string(g.t.dTbAx8)
       })]
-    }), (0, r.jsx)(a.x, {
+    }), (0, r.jsx)(o.x, {
       variant: "text-sm/normal",
       children: O
     }), v ? (0, r.jsx)(s.zxk, {
@@ -75,7 +75,7 @@ function y(e) {
         section: _.jXE.SOUNDBOARD_SOUND_PICKER,
         object: _.qAy.BUTTON_CTA
       },
-      color: o.zx.Colors.GREEN,
+      color: a.zx.Colors.GREEN,
       onSubscribeModalClose: () => null == n ? true : n(p.L.PRIMARY)
     })]
   })

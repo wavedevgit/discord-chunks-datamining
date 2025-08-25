@@ -16,12 +16,12 @@ let l = function(e) {
   } = e, l = i.useRef(null);
   return (0, r.jsx)("div", {
     className: s.body,
-    children: (0, r.jsx)(a.hjN, {
-      title: o.intl.string(o.t.sN3wra),
-      children: (0, r.jsx)(a.oil, {
+    children: (0, r.jsx)(o.hjN, {
+      title: a.intl.string(a.t.sN3wra),
+      children: (0, r.jsx)(o.oil, {
         inputRef: l,
-        name: o.intl.string(o.t.sN3wra),
-        placeholder: o.intl.string(o.t.sN3wra),
+        name: a.intl.string(a.t.sN3wra),
+        placeholder: a.intl.string(a.t.sN3wra),
         onChange: e => t(e),
         value: n.name
       })

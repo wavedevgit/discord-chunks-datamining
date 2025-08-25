@@ -48,7 +48,7 @@ class v extends Chunk147913.Z {
   maybeSendGiftingPromptSystemMessageDebounced(e, t, n, i) {
     (0, r.debounce)(() => {
       let r = p.Z.getChannelId();
-      !g.Z.isGiftIntentMessageInCooldown(n) && e === r && _.Z.isReady(e) && (a.Z.sendGiftingPromptSystemMessage(e, {
+      !g.Z.isGiftIntentMessageInCooldown(n) && e === r && _.Z.isReady(e) && (o.Z.sendGiftingPromptSystemMessage(e, {
         giftIntentType: t,
         recipientUserId: n,
         giftIntentSecondaryAction: i

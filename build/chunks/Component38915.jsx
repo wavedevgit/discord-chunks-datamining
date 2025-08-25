@@ -14,30 +14,30 @@ var Chunk442837 = require("./442837.js"),
 function l(e) {
   let {
     hotspotLocation: t
-  } = e, [n, l] = (0, i.Wu)([o.qc], () => [o.qc.hasHotspot(t, true), o.qc.getHotspotOverride(t)]);
+  } = e, [n, l] = (0, i.Wu)([a.qc], () => [a.qc.hasHotspot(t, true), a.qc.getHotspotOverride(t)]);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsxs)(a.xJW, {
+    children: [(0, r.jsxs)(o.xJW, {
       title: t,
       className: s.hotspotSwitch,
-      children: [n ? (0, r.jsx)(a.DY3, {
+      children: [n ? (0, r.jsx)(o.DY3, {
         className: s.iconContainer,
         element: "span",
         text: "Active",
-        children: (0, r.jsx)(a.dz2, {
+        children: (0, r.jsx)(o.dz2, {
           size: "md",
           color: "currentColor",
           className: s.checkmark
         })
-      }) : (0, r.jsx)(a.DY3, {
+      }) : (0, r.jsx)(o.DY3, {
         className: s.iconContainer,
         element: "span",
         text: "Inactive",
-        children: (0, r.jsx)(a.Dio, {
+        children: (0, r.jsx)(o.Dio, {
           size: "md",
           color: "currentColor",
           className: s.xmark
         })
-      }), (0, r.jsx)(a.q4e, {
+      }), (0, r.jsx)(o.q4e, {
         className: s.overrideSelect,
         value: l,
         options: [{
@@ -50,9 +50,9 @@ function l(e) {
           value: false,
           label: "Force Inactive"
         }],
-        onChange: e => null != e ? (0, o.hv)(t, e) : (0, o.Po)(t)
+        onChange: e => null != e ? (0, a.hv)(t, e) : (0, a.Po)(t)
       })]
-    }), (0, r.jsx)(a.$i$, {})]
+    }), (0, r.jsx)(o.$i$, {})]
   })
 }
 
@@ -60,16 +60,16 @@ function c(e) {
   let {
     className: t
   } = e;
-  return (0, r.jsxs)(a.hjN, {
+  return (0, r.jsxs)(o.hjN, {
     title: "Hotspots",
-    tag: a.RB0.H1,
+    tag: o.RB0.H1,
     className: t,
-    children: [(0, r.jsx)(a.Text, {
+    children: [(0, r.jsx)(o.Text, {
       className: s.helpText,
       tag: "p",
       variant: "text-sm/normal",
       children: 'All the "hotspots" in app, and their current status. Use the select menu to override them on or off.'
-    }), Object.keys(o.v6).sort((e, t) => e.localeCompare(t)).map(e => (0, r.jsx)(l, {
+    }), Object.keys(a.v6).sort((e, t) => e.localeCompare(t)).map(e => (0, r.jsx)(l, {
       hotspotLocation: e
     }, e))]
   })

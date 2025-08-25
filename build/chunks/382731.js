@@ -2,19 +2,19 @@
 /** chunk id: 382731, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => o
+  Z: () => a
 });
 var Chunk647438 = require("./647438.js"),
   Chunk603113 = require("./603113.js");
-let a = Object.freeze({
+let o = Object.freeze({
   box: "border-box"
 });
 
-function o(e) {
+function a(e) {
   let {
     ref: t,
     onUpdate: n,
-    resizeObserver: o,
+    resizeObserver: a,
     listenerMap: s,
     key: l
   } = e;
@@ -27,8 +27,8 @@ function o(e) {
       {
         current: r
       } = t;
-    return null != r && (s.set(r, e), o.observe(r, a)), () => {
-      null != r && (o.unobserve(r), s.delete(r))
+    return null != r && (s.set(r, e), a.observe(r, o)), () => {
+      null != r && (a.unobserve(r), s.delete(r))
     }
-  }, [n, o, t, s, l])
+  }, [n, a, t, s, l])
 }

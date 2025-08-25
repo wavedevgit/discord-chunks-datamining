@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -43,7 +43,7 @@ class d extends(r = Chunk442837.ZP.PersistedStore) {
     return null != (t = l.lastSeenInfos[e]) ? t : null
   }
 }
-o(d, "displayName", "GuildTagChangedCoachmarkStore"), o(d, "persistKey", "GuildTagChangedCoachmarkStore");
+a(d, "displayName", "GuildTagChangedCoachmarkStore"), a(d, "persistKey", "GuildTagChangedCoachmarkStore");
 let f = new d(Chunk570140.Z, {
   GUILD_TAG_CHANGED_COACHMARK_SEEN: c,
   LOGOUT: u

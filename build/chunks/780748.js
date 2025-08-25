@@ -54,7 +54,7 @@ function c(e) {
             return
           }
           if (null != i.Z.getActiveCommand(n.id)) {
-            e.preventDefault(), e.stopPropagation(), e.shiftKey ? a.Q.selectPreviousCommandOption(t) : a.Q.selectNextCommandOption(t);
+            e.preventDefault(), e.stopPropagation(), e.shiftKey ? o.Q.selectPreviousCommandOption(t) : o.Q.selectNextCommandOption(t);
             return
           }
           break;
@@ -68,7 +68,7 @@ function c(e) {
         e.preventDefault(), e.stopPropagation();
         return
       }
-      e.which !== l.yXg.ENTER || (e.altKey || e.shiftKey || c && !e.ctrlKey || (0, o.L6)(t)) && p || (e.preventDefault(), e.stopPropagation(), h()), null == u || u(e)
+      e.which !== l.yXg.ENTER || (e.altKey || e.shiftKey || c && !e.ctrlKey || (0, a.L6)(t)) && p || (e.preventDefault(), e.stopPropagation(), h()), null == u || u(e)
     }, [p, n.id, c, t, m, g, _, u, f, h]),
     handleKeyUp: r.useCallback(e => {
       null == d || d(e)

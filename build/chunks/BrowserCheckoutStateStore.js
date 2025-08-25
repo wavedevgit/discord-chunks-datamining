@@ -8,7 +8,7 @@ require.d(exports, {
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -46,7 +46,7 @@ class p extends(r = Chunk442837.ZP.Store) {
     return d
   }
 }
-o(p, "displayName", "BrowserCheckoutStateStore");
+a(p, "displayName", "BrowserCheckoutStateStore");
 let h = new p(Chunk570140.Z, {
   USER_PAYMENT_BROWSER_CHECKOUT_STARTED: f,
   USER_PAYMENT_BROWSER_CHECKOUT_DONE: _

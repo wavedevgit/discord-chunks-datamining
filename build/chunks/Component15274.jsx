@@ -55,7 +55,7 @@ function d(e, t) {
 function f(e) {
   let {
     eventId: t,
-    recurrenceId: a
+    recurrenceId: o
   } = e;
   (0, i.ZD)(async () => {
     let {
@@ -63,7 +63,7 @@ function f(e) {
     } = await Promise.all([n.e("4096"), n.e("25046")]).then(n.bind(n, 697849));
     return n => (0, r.jsx)(e, c({
       guildScheduledEventId: t,
-      initialRecurrenceId: a
+      initialRecurrenceId: o
     }, n))
   })
 }
@@ -71,7 +71,7 @@ async function _(e, t) {
   let {
     guild_id: n
   } = e;
-  await a.Z.transitionToGuildSync(n, t), f({
+  await o.Z.transitionToGuildSync(n, t), f({
     eventId: e.id,
     event: e
   })
@@ -86,6 +86,6 @@ function p(e, t) {
       channel: e
     }))
   }, {
-    contextKey: t === o.IlC.POPOUT ? s.u1 : s.z1
+    contextKey: t === a.IlC.POPOUT ? s.u1 : s.z1
   })
 }

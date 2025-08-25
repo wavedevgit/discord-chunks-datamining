@@ -10,8 +10,8 @@ var Chunk647438 = require("./647438.js"),
   Chunk924301 = require("./924301.js");
 
 function s(e, t, n) {
-  let s = (0, i.e7)([o.ZP], () => o.ZP.getUserCount(t, n));
+  let s = (0, i.e7)([a.ZP], () => a.ZP.getUserCount(t, n));
   return (0, r.useEffect)(() => {
-    null != e && null != t && a.Z.getGuildEventUserCounts(e, t, null != n ? [n] : [])
+    null != e && null != t && o.Z.getGuildEventUserCounts(e, t, null != n ? [n] : [])
   }, [t, e, n]), s
 }

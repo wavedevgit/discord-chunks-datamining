@@ -15,7 +15,7 @@ let s = {
       secret: n
     } = e;
     return r.tn.post({
-      url: o.ANM.MFA_TOTP_ENABLE,
+      url: a.ANM.MFA_TOTP_ENABLE,
       body: {
         code: t,
         secret: n
@@ -61,7 +61,7 @@ let s = {
   disableSMS: e => (i.Z.dispatch({
     type: "MFA_SMS_TOGGLE"
   }), r.tn.post({
-    url: o.ANM.MFA_SMS_DISABLE,
+    url: a.ANM.MFA_SMS_DISABLE,
     body: {
       password: e
     },
@@ -75,7 +75,7 @@ let s = {
     }), e
   })),
   sendMFABackupCodesVerificationKeyEmail: e => r.tn.post({
-    url: o.ANM.MFA_SEND_VERIFICATION_KEY,
+    url: a.ANM.MFA_SEND_VERIFICATION_KEY,
     body: {
       password: e
     },
@@ -94,9 +94,9 @@ let s = {
     let {
       viewNonce: n,
       regenerateNonce: s
-    } = a.Z.getNonces(), l = t ? s : n;
+    } = o.Z.getNonces(), l = t ? s : n;
     return r.tn.post({
-      url: o.ANM.MFA_CODES_VERIFICATION,
+      url: a.ANM.MFA_CODES_VERIFICATION,
       body: {
         key: e,
         nonce: l,

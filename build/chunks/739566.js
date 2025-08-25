@@ -27,16 +27,16 @@ function _(e, t) {
 
 function p(e) {
   var t;
-  let n = (0, a.e7)([o.Z], () => null == e ? null : o.Z.getChannel(e.channel_id)),
+  let n = (0, o.e7)([a.Z], () => null == e ? null : a.Z.getChannel(e.channel_id)),
     r = null == e || null == (t = e.author) ? true : t.id,
     i = null == n ? true : n.guild_id,
-    _ = (0, a.e7)([s.ZP], () => null == i || null == r ? null : s.ZP.getMember(i, r)),
-    p = (0, a.e7)([d.default], () => d.default.getUser(r), [r]),
+    _ = (0, o.e7)([s.ZP], () => null == i || null == r ? null : s.ZP.getMember(i, r)),
+    p = (0, o.e7)([d.default], () => d.default.getUser(r), [r]),
     h = f.ZP.useName((null == e ? true : e.author.bot) ? null == e ? true : e.author : p),
-    m = (0, a.e7)([c.Z], () => c.Z.getGuild(i), [i]),
+    m = (0, o.e7)([c.Z], () => c.Z.getGuild(i), [i]),
     g = null == _ ? true : _.colorRoleId,
-    E = (0, a.e7)([l.Z], () => null != i && null != g ? l.Z.getRole(i, g) : true, [i, g]),
-    y = (0, a.e7)([u.Z], () => null != r && (null == n ? true : n.isPrivate()) ? u.Z.getNickname(r) : null);
+    E = (0, o.e7)([l.Z], () => null != i && null != g ? l.Z.getRole(i, g) : true, [i, g]),
+    y = (0, o.e7)([u.Z], () => null != r && (null == n ? true : n.isPrivate()) ? u.Z.getNickname(r) : null);
   return null == e ? null : b({
     user: e.author,
     channel: n,
@@ -50,7 +50,7 @@ function p(e) {
 }
 
 function h(e) {
-  let t = o.Z.getChannel(e.channel_id);
+  let t = a.Z.getChannel(e.channel_id);
   return E(e.author, t)
 }
 
@@ -62,16 +62,16 @@ function m(e, t) {
 function g(e, t) {
   let n = null == e ? true : e.id,
     r = null == t ? true : t.guild_id,
-    i = (0, a.e7)([s.ZP], () => null == r || null == n ? null : s.ZP.getMember(r, n)),
-    o = (0, a.e7)([c.Z], () => c.Z.getGuild(r), [r]),
+    i = (0, o.e7)([s.ZP], () => null == r || null == n ? null : s.ZP.getMember(r, n)),
+    a = (0, o.e7)([c.Z], () => c.Z.getGuild(r), [r]),
     d = null == i ? true : i.colorRoleId,
-    _ = (0, a.e7)([l.Z], () => null != r && null != d ? l.Z.getRole(r, d) : true, [r, d]),
-    p = (0, a.e7)([u.Z], () => null != n && (null == t ? true : t.isPrivate()) ? u.Z.getNickname(n) : null),
+    _ = (0, o.e7)([l.Z], () => null != r && null != d ? l.Z.getRole(r, d) : true, [r, d]),
+    p = (0, o.e7)([u.Z], () => null != n && (null == t ? true : t.isPrivate()) ? u.Z.getNickname(n) : null),
     h = f.ZP.useName(e);
   return b({
     user: e,
     channel: t,
-    guild: o,
+    guild: a,
     memberColorRole: _,
     member: i,
     userName: h,
@@ -84,15 +84,15 @@ function E(e, t) {
   let n = null == e ? true : e.id,
     r = null == t ? true : t.guild_id,
     i = c.Z.getGuild(r),
-    a = null == r || null == n ? null : s.ZP.getMember(r, n),
-    o = null != r && (null == a ? true : a.colorRoleId) != null ? l.Z.getRole(r, a.colorRoleId) : true,
+    o = null == r || null == n ? null : s.ZP.getMember(r, n),
+    a = null != r && (null == o ? true : o.colorRoleId) != null ? l.Z.getRole(r, o.colorRoleId) : true,
     d = null != n && null != t && t.isPrivate() ? u.Z.getNickname(n) : null;
   return b({
     user: e,
     channel: t,
     guild: i,
-    memberColorRole: o,
-    member: a,
+    memberColorRole: a,
+    member: o,
     friendNickname: d,
     displayNameStyles: null == e ? true : e.displayNameStyles
   })
@@ -103,8 +103,8 @@ function b(e) {
   let {
     user: r,
     channel: i,
-    guild: a,
-    memberColorRole: o,
+    guild: o,
+    memberColorRole: a,
     member: s,
     userName: l,
     friendNickname: c,
@@ -115,7 +115,7 @@ function b(e) {
     colorString: null,
     colorStrings: null,
     displayNameStyles: u
-  } : (null == a ? true : a.id) == null ? {
+  } : (null == o ? true : o.id) == null ? {
     nick: null != c ? c : d,
     colorString: null,
     colorStrings: null,
@@ -129,13 +129,13 @@ function b(e) {
     nick: null != (t = s.nick) ? t : d,
     colorString: s.colorString,
     colorStrings: s.colorStrings,
-    colorRoleName: null == o ? true : o.name,
-    colorRoleId: null == o ? true : o.id,
+    colorRoleName: null == a ? true : a.name,
+    colorRoleId: null == a ? true : a.id,
     iconRoleId: s.iconRoleId,
     guildMemberAvatar: s.avatar,
     guildMemberAvatarDecoration: s.avatarDecoration,
     primaryGuild: null != (n = r.primaryGuild) ? n : true,
-    guildId: a.id,
+    guildId: o.id,
     authorId: r.id,
     displayNameStyles: u
   }

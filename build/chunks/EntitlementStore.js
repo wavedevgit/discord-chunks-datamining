@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => F
 }), require("./388685.js"), require("./539854.js");
 var r, Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk314794 = require("./314794.js"),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -94,11 +94,11 @@ function j(e) {
   for (let e of (O = true, y = false, v = !n, t)) C(e)
 }
 
-function k() {
+function M() {
   O = false, y = false, v = false
 }
 
-function M(e) {
+function k(e) {
   let {
     entitlements: t
   } = e;
@@ -129,7 +129,7 @@ class Z extends(r = Chunk442837.yh) {
     return m[e]
   }
   getGiftable() {
-    return a().values(g)
+    return o().values(g)
   }
   getForApplication(e) {
     let t = b[e];
@@ -182,8 +182,8 @@ class Z extends(r = Chunk442837.yh) {
         if (null != n && n.isValid(e, f.Z, r)) returntrue
       }
     if (T.has(n)) returnfalse;
-    let a = null != r ? u.Z.getLibraryApplication(n, r) : u.Z.getActiveLibraryApplication(n);
-    return !!(null != a && a.sku.id === t && (0, d.Je)(a)) || null
+    let o = null != r ? u.Z.getLibraryApplication(n, r) : u.Z.getActiveLibraryApplication(n);
+    return !!(null != o && o.sku.id === t && (0, d.Je)(o)) || null
   }
   hasFetchedForApplicationIds(e) {
     return e.every(e => T.has(e))
@@ -206,9 +206,9 @@ class Z extends(r = Chunk442837.yh) {
       excludeReverseTrial: n = false
     } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, r = [], i = new Date;
     return null == (e = this.getForApplication(Chunk474936.CL)) || module.forEach(e => {
-      let a = null != e.endsAt && e.endsAt < i,
-        o = e.sourceType === _.kNB.REVERSE_TRIAL && n;
-      e.type !== _.qc2.FRACTIONAL_REDEMPTION || a && !t || o || r.push(e)
+      let o = null != e.endsAt && e.endsAt < i,
+        a = e.sourceType === _.kNB.REVERSE_TRIAL && n;
+      e.type !== _.qc2.FRACTIONAL_REDEMPTION || o && !t || a || r.push(e)
     }), r
   }
   isFractionalPremiumActive() {
@@ -224,7 +224,7 @@ class Z extends(r = Chunk442837.yh) {
     var e;
     let t = [];
     return null == (e = this.getForApplication(Chunk474936.CL)) || module.forEach(e => {
-      o.k.ACTIVE_FRACTIONAL_PREMIUM_SKUS.has(e.skuId) && !e.consumed && t.push(e)
+      a.k.ACTIVE_FRACTIONAL_PREMIUM_SKUS.has(e.skuId) && !e.consumed && t.push(e)
     }), exports
   }
 }
@@ -234,8 +234,8 @@ let F = new Z(Chunk570140.Z, {
   ENTITLEMENT_FETCH_APPLICATION_SUCCESS: w,
   ENTITLEMENT_FETCH_APPLICATION_FAIL: x,
   ENTITLEMENTS_GIFTABLE_FETCH_SUCCESS: D,
-  SKU_PURCHASE_SUCCESS: M,
-  VIRTUAL_CURRENCY_REDEEM_SUCCESS: M,
+  SKU_PURCHASE_SUCCESS: k,
+  VIRTUAL_CURRENCY_REDEEM_SUCCESS: k,
   LIBRARY_FETCH_SUCCESS: U,
   ENTITLEMENT_CREATE: G,
   ENTITLEMENT_UPDATE: G,
@@ -243,5 +243,5 @@ let F = new Z(Chunk570140.Z, {
   LOGOUT: A,
   ENTITLEMENTS_FETCH_FOR_USER_START: L,
   ENTITLEMENTS_FETCH_FOR_USER_SUCCESS: j,
-  ENTITLEMENTS_FETCH_FOR_USER_FAIL: k
+  ENTITLEMENTS_FETCH_FOR_USER_FAIL: M
 })

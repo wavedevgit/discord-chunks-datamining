@@ -33,8 +33,8 @@ var Chunk620014 = require("./620014.js"),
   x = "[object Function]",
   L = "[object GeneratorFunction]",
   j = "[object Map]",
-  k = "[object Number]",
-  M = "[object Object]",
+  M = "[object Number]",
+  k = "[object Object]",
   U = "[object RegExp]",
   G = "[object Set]",
   B = "[object String]",
@@ -55,7 +55,7 @@ var Chunk620014 = require("./620014.js"),
 
 function et(e, t, n, R, P, w) {
   var D, j = t & S,
-    k = t & A,
+    M = t & A,
     U = t & C;
   if (n && (D = P ? n(e, R, P, w) : n(e)), true !== D) return D;
   if (!O(e)) return e;
@@ -66,8 +66,8 @@ function et(e, t, n, R, P, w) {
     var B = p(e),
       Z = B == x || B == L;
     if (b(e)) return l(e, j);
-    if (B == M || B == N || Z && !P) {
-      if (D = k || Z ? {} : g(e), !j) return k ? d(e, s(D, e)) : u(e, o(D, e))
+    if (B == k || B == N || Z && !P) {
+      if (D = M || Z ? {} : g(e), !j) return M ? d(e, s(D, e)) : u(e, a(D, e))
     } else {
       if (!ee[B]) return P ? e : {};
       D = m(e, B, j)
@@ -81,10 +81,10 @@ function et(e, t, n, R, P, w) {
   }) : y(e) && e.forEach(function(r, i) {
     D.set(i, et(r, t, n, i, e, w))
   });
-  var V = U ? k ? _ : f : k ? T : I,
+  var V = U ? M ? _ : f : M ? T : I,
     H = G ? true : V(e);
   return i(H || e, function(r, i) {
-    H && (r = e[i = r]), a(D, i, et(r, t, n, i, e, w))
+    H && (r = e[i = r]), o(D, i, et(r, t, n, i, e, w))
   }), D
 }
-ee[N] = ee[R] = ee[V] = ee[H] = ee[P] = ee[w] = ee[Y] = ee[W] = ee[K] = ee[z] = ee[q] = ee[j] = ee[k] = ee[M] = ee[U] = ee[G] = ee[B] = ee[Z] = ee[X] = ee[Q] = ee[J] = ee[$] = true, ee[D] = ee[x] = ee[F] = false, module.exports = et
+ee[N] = ee[R] = ee[V] = ee[H] = ee[P] = ee[w] = ee[Y] = ee[W] = ee[K] = ee[z] = ee[q] = ee[j] = ee[M] = ee[k] = ee[U] = ee[G] = ee[B] = ee[Z] = ee[X] = ee[Q] = ee[J] = ee[$] = true, ee[D] = ee[x] = ee[F] = false, module.exports = et

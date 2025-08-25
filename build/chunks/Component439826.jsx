@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk202841 = require("./202841.js"),
   Chunk780384 = require("./780384.js"),
   Chunk481060 = require("./481060.js"),
@@ -68,39 +68,39 @@ function j(e, t) {
   return n
 }
 
-function k(e, t) {
+function M(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function M(e) {
+function k(e) {
   var t;
   let {
     quest: n,
-    errorHints: a,
-    warningHints: o,
+    errorHints: o,
+    warningHints: a,
     isDarkTheme: l,
     sourceQuestContent: d
   } = e, {
     ref: _,
     height: p = 0
-  } = (0, u.ZP)([a]), h = (null == (t = n.userStatus) ? true : t.completedAt) != null, g = (0, m.z)(n), {
+  } = (0, u.ZP)([o]), h = (null == (t = n.userStatus) ? true : t.completedAt) != null, g = (0, m.z)(n), {
     type: E,
     hints: b
   } = i.useMemo(() => h || g ? {
     type: 2,
     hints: []
-  } : a.length > 0 ? {
-    type: 0,
-    hints: a.map(e => e.message)
   } : o.length > 0 ? {
+    type: 0,
+    hints: o.map(e => e.message)
+  } : a.length > 0 ? {
     type: 1,
-    hints: o
+    hints: a
   } : {
     type: 2,
     hints: []
-  }, [a, h, g, o]), y = 2 !== E, O = (0, c.q_F)({
+  }, [o, h, g, a]), y = 2 !== E, O = (0, c.q_F)({
     opacity: +!!y,
     height: y ? p : 0,
     config: R.Y
@@ -124,7 +124,7 @@ function M(e) {
         text: w.intl.string(w.t["yKJi+/"]),
         onClick: () => (0, v.y)({
           quest: n,
-          errorHints: a,
+          errorHints: o,
           sourceQuestContent: d
         }),
         variant: "always-white",
@@ -138,15 +138,15 @@ function U(e) {
   let {
     quest: t,
     isHovering: n,
-    showAssets: a
-  } = e, o = i.useMemo(() => (0, y.fh)(t, y.eC.HERO_IMAGE), [t]), s = i.useMemo(() => (0, y.fh)(t, y.eC.HERO_VIDEO), [t]), l = (0, E.h)(t, N.dr.QUEST_HOME_DESKTOP), {
+    showAssets: o
+  } = e, a = i.useMemo(() => (0, y.fh)(t, y.eC.HERO_IMAGE), [t]), s = i.useMemo(() => (0, y.fh)(t, y.eC.HERO_VIDEO), [t]), l = (0, E.h)(t, N.dr.QUEST_HOME_DESKTOP), {
     onAssetLoadComplete: c
   } = i.useContext(A.k), u = !l && n;
   return (0, r.jsx)("div", {
     className: D.heroAssetCont,
-    children: a && (0, r.jsx)(O.K, {
-      imageAsset: null != o ? {
-        asset: o,
+    children: o && (0, r.jsx)(O.K, {
+      imageAsset: null != a ? {
+        asset: a,
         assetId: "QuestTileBanner",
         alt: w.intl.string(w.t.jnijW1),
         className: D.heroAsset
@@ -167,7 +167,7 @@ function U(e) {
 }
 
 function G(e) {
-  var t, n, a, s, u;
+  var t, n, o, s, u;
   let {
     quest: f,
     isHovering: E,
@@ -181,7 +181,7 @@ function G(e) {
   } = e, B = (0, p.PB)(f), Z = (0, d.ZP)(), F = ((0, l.wj)(Z) ? P.BRd.DARK : P.BRd.LIGHT) === P.BRd.DARK, V = (0, m.tP)(f), H = (null == (t = f.userStatus) ? true : t.claimedAt) != null, Y = (0, m.B6)(f.config.expiresAt, {
     month: "numeric",
     day: "numeric"
-  }), W = (null == (n = f.userStatus) ? true : n.enrolledAt) != null, K = (null == (a = f.userStatus) ? true : a.completedAt) != null, {
+  }), W = (null == (n = f.userStatus) ? true : n.enrolledAt) != null, K = (null == (o = f.userStatus) ? true : o.completedAt) != null, {
     onAssetLoadComplete: z
   } = i.useContext(A.k), q = i.useCallback(async () => {
     B && ((0, p.zi)(f) || W ? (0, T.openVideoQuestModal)({
@@ -215,7 +215,7 @@ function G(e) {
         showAssets: v
       })
     }), (0, r.jsx)("div", {
-      className: o()(D.overlay, {
+      className: a()(D.overlay, {
         [D.darkThemeGradient]: F,
         [D.lightThemeGradient]: !F
       })
@@ -235,7 +235,7 @@ function G(e) {
             })
           }), B && (0, r.jsx)(c.ua7, {
             text: K ? w.intl.string(w.t.YsCuyM) : W ? w.intl.string(w.t["74Kqra"]) : (0, p.zi)(f) ? w.intl.string(w.t["I6JG4+"]) : w.intl.string(w.t.umdNio),
-            children: e => (0, r.jsx)(c.P3F, k(L({}, e), {
+            children: e => (0, r.jsx)(c.P3F, M(L({}, e), {
               className: D.utilButtonWrapper,
               "aria-label": w.intl.string(w.t.RscU7O),
               onClick: q,
@@ -254,7 +254,7 @@ function G(e) {
             shouldShowDisclosure: true,
             showShareLink: true,
             sourceQuestContent: G,
-            children: e => (0, r.jsx)(c.P3F, k(L({}, e), {
+            children: e => (0, r.jsx)(c.P3F, M(L({}, e), {
               className: D.utilButtonWrapper,
               "aria-label": w.intl.string(w.t.DEoVWV),
               children: (0, r.jsx)(c.xhG, {
@@ -293,7 +293,7 @@ function G(e) {
             })
           })]
         })]
-      }), (0, r.jsx)(M, {
+      }), (0, r.jsx)(k, {
         quest: f,
         errorHints: y,
         warningHints: O,

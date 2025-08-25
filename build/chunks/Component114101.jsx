@@ -8,7 +8,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk709014 = require("./709014.jsx");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,7 +24,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      a(e, t, n[t])
     })
   }
   return e
@@ -63,20 +63,20 @@ let u = {
       t = Chunk647438.useCallback(() => {
         null != module.current && module.current.play("click")
       }, []),
-      o = Chunk647438.useCallback(() => {
+      a = Chunk647438.useCallback(() => {
         null != module.current && module.current.play("hover")
       }, []),
       l = Chunk647438.useCallback(() => {
         null != module.current && module.current.stopIfPlaying("hover")
       }, []),
-      d = Chunk647438.useCallback(t => (0, r.jsx)(a.L, c(s({}, t), {
+      d = Chunk647438.useCallback(t => (0, r.jsx)(o.L, c(s({}, t), {
         src: () => n.e("37655").then(n.t.bind(n, 119493, 19)),
         ref: e,
         markers: u
       })), []);
     return {
       events: {
-        onMouseEnter: o,
+        onMouseEnter: a,
         onMouseLeave: l
       },
       play: exports,

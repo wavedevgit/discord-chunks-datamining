@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk426633 = require("./426633.js");
@@ -19,12 +19,12 @@ let u = Chunk647438.createContext({
 function d(e) {
   let {
     children: t
-  } = e, [n, a] = i.useReducer(e => !e, false), o = i.useMemo(() => ({
+  } = e, [n, o] = i.useReducer(e => !e, false), a = i.useMemo(() => ({
     isOpen: n,
-    toggleOpen: a
+    toggleOpen: o
   }), [n]);
   return (0, r.jsx)(u.Provider, {
-    value: o,
+    value: a,
     children: t(n)
   })
 }
@@ -33,11 +33,11 @@ d.Toggle = function(e) {
     className: t,
     text: n
   } = e, {
-    isOpen: a,
+    isOpen: o,
     toggleOpen: d
-  } = i.useContext(u), f = a ? s.u04 : s.CJ0, _ = null != n ? n : a ? l.intl.string(l.t.fgq1go) : l.intl.string(l.t.XJuakJ);
+  } = i.useContext(u), f = o ? s.u04 : s.CJ0, _ = null != n ? n : o ? l.intl.string(l.t.fgq1go) : l.intl.string(l.t.XJuakJ);
   return (0, r.jsxs)(s.P3F, {
-    className: o()(c.toggle, t),
+    className: a()(c.toggle, t),
     onClick: d,
     children: [(0, r.jsx)(s.Text, {
       variant: "heading-sm/semibold",

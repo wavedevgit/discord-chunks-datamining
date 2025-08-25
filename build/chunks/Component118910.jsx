@@ -22,12 +22,12 @@ function l(e) {
       location: "takeover-modal"
     })) return;
   let d = () => {
-    (0, a.T)(t, [l]), (0, o.qc)({
+    (0, o.T)(t, [l]), (0, a.qc)({
       channelId: t,
       senderId: c,
       warningId: l,
       warningType: u,
-      cta: o.NM.USER_TAKEOVER_MODAL_DISMISS,
+      cta: a.NM.USER_TAKEOVER_MODAL_DISMISS,
       isNudgeWarning: false
     })
   };

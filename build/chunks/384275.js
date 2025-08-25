@@ -2,12 +2,12 @@
 /** chunk id: 384275, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => o
+  Z: () => a
 });
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
   Chunk981631 = require("./981631.js");
-let o = {
+let a = {
   fetch() {
     Chunk570140.Z.dispatch({
       type: "USER_AUTHORIZED_APPS_REQUEST"
@@ -25,7 +25,7 @@ let o = {
   },
   delete(e) {
     r.tn.del({
-      url: a.ANM.OAUTH2_TOKEN(e),
+      url: o.ANM.OAUTH2_TOKEN(e),
       oldFormErrors: true,
       rejectWithError: true
     }).then(() => {

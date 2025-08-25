@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk393238 = require("./393238.js"),
@@ -22,7 +22,7 @@ let g = 280,
   E = Chunk647438.forwardRef(function(e, t) {
     let {
       body: n,
-      header: a,
+      header: o,
       artClassName: E,
       headerClassName: b,
       contentClassName: y,
@@ -41,8 +41,8 @@ let g = 280,
       art: x,
       isPremiumEarlyAccess: L = false,
       maxWidth: j = g,
-      hideDismissButton: k = false,
-      pointerClassName: M,
+      hideDismissButton: M = false,
+      pointerClassName: k,
       dismissIconClassName: U,
       dismissIcon: G,
       onDismissIconClick: B,
@@ -78,7 +78,7 @@ let g = 280,
       className: S,
       ref: t,
       children: (0, r.jsxs)("div", {
-        className: o()(m.content, y, {
+        className: a()(m.content, y, {
           [m.contentNoArt]: null == E || A,
           [m.contentPremium]: C || L
         }),
@@ -87,14 +87,14 @@ let g = 280,
           className: U,
           children: G
         }), (0, r.jsxs)("div", {
-          className: o()(E, A ? m.artInline : m.artAbsolute),
+          className: a()(E, A ? m.artInline : m.artAbsolute),
           children: [R && (0, r.jsx)(_.Z, {
             className: m.gifTag
           }), x]
         }), (0, r.jsxs)("div", {
           className: m.body,
           children: [(0, r.jsxs)(l.X6q, {
-            className: o()(C ? m.headerWithPremiumIcon : m.header, b),
+            className: a()(C ? m.headerWithPremiumIcon : m.header, b),
             variant: "heading-md/bold",
             color: "always-white",
             children: [C && !L ? (0, r.jsx)(l.SrA, {
@@ -113,7 +113,7 @@ let g = 280,
                 className: m.earlyAccessText,
                 children: h.intl.string(h.t.phHyIS)
               })]
-            }) : null, a]
+            }) : null, o]
           }), z()]
         }), (0, r.jsx)("div", {
           ref: Y,
@@ -127,7 +127,7 @@ let g = 280,
               },
               color: null != Z ? Z : C || L ? s.zx.Colors.BRAND_INVERTED : s.zx.Colors.WHITE,
               children: null != O ? O : h.intl.string(h.t.IHf1RE)
-            }), !k && (0, r.jsx)(s.zx, {
+            }), !M && (0, r.jsx)(s.zx, {
               className: m.button,
               size: F,
               onClick: e => {
@@ -147,7 +147,7 @@ let g = 280,
             children: h.intl.string(h.t.HU2IR0)
           })
         }), (0, r.jsx)("div", {
-          className: o()(m.pointer, M, {
+          className: a()(m.pointer, k, {
             [m.bottomPointer]: "top" === w,
             [m.centerLeftPointer]: "right" === w && "center" === D,
             [m.topLeftPointer]: "right" === w && "top" === D,

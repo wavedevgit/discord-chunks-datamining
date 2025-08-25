@@ -27,7 +27,7 @@ function u(e) {
     hash: n,
     containerWidth: i = parseFloat(r.Z.APPLICATION_DIRECTORY_CONTENT_MAX_WIDTH)
   } = e;
-  return (0, a.$)({
+  return (0, o.$)({
     itemId: t,
     hash: n,
     containerWidth: i
@@ -45,12 +45,12 @@ function f(e) {
       var t;
       let n = null != (t = e.proxy_url) ? t : e.url;
       return {
-        type: o.s9s.IMG, width: 0, height: 0, src: n
+        type: a.s9s.IMG, width: 0, height: 0, src: n
       };
     case i.ee.YOUTUBE:
       let r = d(e.url);
       if (null != r) return {
-        type: o.s9s.YOUTUBE_VIDEO,
+        type: a.s9s.YOUTUBE_VIDEO,
         youtubeVideoId: r
       }
   }

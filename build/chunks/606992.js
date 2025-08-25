@@ -2,23 +2,23 @@
 /** chunk id: 606992, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => o
+  Z: () => a
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk40851 = require("./40851.jsx"),
   Chunk590921 = require("./590921.js");
 
-function o(e) {
+function a(e) {
   let {
     editorHeight: t,
     type: n,
-    state: o
-  } = e, [s, l] = r.useState(true), c = null == o ? true : o.query, u = null == o ? true : o.isVisible, {
+    state: a
+  } = e, [s, l] = r.useState(true), c = null == a ? true : a.query, u = null == a ? true : a.isVisible, {
     renderWindow: d
   } = r.useContext(i.ZP), f = r.useCallback(() => {
     var e, t, r, i;
-    if (null != o && (null == c || !u)) return void l(true);
-    if ((null == c ? true : c.type) === a.eq.GIFS || null != n && !(null == (e = n.autocomplete) ? true : e.alwaysUseLayer)) return void l(null);
+    if (null != a && (null == c || !u)) return void l(true);
+    if ((null == c ? true : c.type) === o.eq.GIFS || null != n && !(null == (e = n.autocomplete) ? true : e.alwaysUseLayer)) return void l(null);
     let s = d.document.getSelection(),
       f = null != s && s.rangeCount > 0 ? s.getRangeAt(0) : null;
     if (null == f) return;
@@ -38,7 +38,7 @@ function o(e) {
     h.setStart(_, p), h.setEnd(_, p);
     let m = h.getBoundingClientRect();
     (null == m ? true : m.height) !== 0 && l(null != m ? m : null)
-  }, [d.document, o, u, c, n]);
+  }, [d.document, a, u, c, n]);
   return r.useEffect(() => (d.document.addEventListener("selectionchange", f), () => d.document.removeEventListener("selectionchange", f)), [d.document, f]), r.useEffect(() => {
     f()
   }, [f, t]), s

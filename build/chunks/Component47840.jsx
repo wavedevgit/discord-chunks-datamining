@@ -19,7 +19,7 @@ let u = 120,
       isVisible: t,
       subscriptionTier: n,
       isEligibleForBogoPromotion: f
-    } = e, _ = (0, a.q_F)({
+    } = e, _ = (0, o.q_F)({
       transform: t ? "translateY(-100%)" : "translateY(0%)",
       opacity: +!!t,
       config: {
@@ -41,7 +41,7 @@ let u = 120,
           hasActivePromotion: !!f,
           isPersistentCTA: true,
           premiumModalAnalyticsLocation: p
-        }), (0, r.jsx)(o.Z, {
+        }), (0, r.jsx)(a.Z, {
           variant: "secondary",
           size: "md"
         })]

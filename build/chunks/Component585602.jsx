@@ -14,8 +14,8 @@ function s(e) {
   let {
     invoice: t
   } = e;
-  return t.taxInclusive || t.tax <= 0 ? null : (0, r.jsx)(a.B1, {
-    label: o.intl.string(o.t.jiRvCw),
+  return t.taxInclusive || t.tax <= 0 ? null : (0, r.jsx)(o.B1, {
+    label: a.intl.string(a.t.jiRvCw),
     value: (0, i.T4)(t.tax, t.currency)
   })
 }

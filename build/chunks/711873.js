@@ -20,13 +20,13 @@ var t = {
     arity: true
   },
   r = "function" == typeof Object.getOwnPropertySymbols;
-module.exports = function(e, i, a) {
+module.exports = function(e, i, o) {
   if ("string" != typeof i) {
-    var o = Object.getOwnPropertyNames(i);
-    r && (o = o.concat(Object.getOwnPropertySymbols(i)));
-    for (var s = 0; s < o.length; ++s)
-      if (!t[o[s]] && !n[o[s]] && (!a || !a[o[s]])) try {
-        e[o[s]] = i[o[s]]
+    var a = Object.getOwnPropertyNames(i);
+    r && (a = a.concat(Object.getOwnPropertySymbols(i)));
+    for (var s = 0; s < a.length; ++s)
+      if (!t[a[s]] && !n[a[s]] && (!o || !o[a[s]])) try {
+        e[a[s]] = i[a[s]]
       } catch (e) {}
   }
   return e

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk743236 = require("./743236.js"),
   Chunk939350 = require("./939350.js"),
   Chunk334405 = require("./334405.js");
@@ -55,23 +55,23 @@ function p(e) {
   let {
     color: t = "default",
     disabled: n,
-    isFocused: a,
+    isFocused: o,
     showDefaultFocus: u = false,
     menuItemProps: f,
     children: p
   } = e, h = i.useRef(null);
   return i.useLayoutEffect(() => {
-    if (!a) return;
+    if (!o) return;
     let e = h.current;
     if (null == e) return;
     (0, s.F)(h);
     let t = e.querySelector('[tabindex="0"]');
     null == t || t.focus()
-  }, [a]), (0, r.jsx)("div", _(d({
+  }, [o]), (0, r.jsx)("div", _(d({
     ref: h,
-    className: o()(c.item, l._[t], {
+    className: a()(c.item, l._[t], {
       [c.disabled]: n,
-      [c.focused]: u && a,
+      [c.focused]: u && o,
       [c.hideInteraction]: !u
     }),
     "aria-disabled": n

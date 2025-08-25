@@ -4,8 +4,8 @@
 var n = "function" == typeof Symbol && Symbol.for,
   r = n ? Symbol.for("react.element") : 60103,
   i = n ? Symbol.for("react.portal") : 60106,
-  a = n ? Symbol.for("react.fragment") : 60107,
-  o = n ? Symbol.for("react.strict_mode") : 60108,
+  o = n ? Symbol.for("react.fragment") : 60107,
+  a = n ? Symbol.for("react.strict_mode") : 60108,
   s = n ? Symbol.for("react.profiler") : 60114,
   l = n ? Symbol.for("react.provider") : 60109,
   c = n ? Symbol.for("react.context") : 60110,
@@ -29,9 +29,9 @@ function O(e) {
         switch (e = e.type) {
           case u:
           case d:
-          case a:
-          case s:
           case o:
+          case s:
+          case a:
           case _:
             return e;
           default:
@@ -55,7 +55,7 @@ function O(e) {
 function v(e) {
   return O(e) === d
 }
-exports.AsyncMode = u, exports.ConcurrentMode = d, exports.ContextConsumer = c, exports.ContextProvider = l, exports.Element = r, exports.ForwardRef = f, exports.Fragment = a, exports.Lazy = m, exports.Memo = h, exports.Portal = i, exports.Profiler = s, exports.StrictMode = o, exports.Suspense = _, exports.isAsyncMode = function(e) {
+exports.AsyncMode = u, exports.ConcurrentMode = d, exports.ContextConsumer = c, exports.ContextProvider = l, exports.Element = r, exports.ForwardRef = f, exports.Fragment = o, exports.Lazy = m, exports.Memo = h, exports.Portal = i, exports.Profiler = s, exports.StrictMode = a, exports.Suspense = _, exports.isAsyncMode = function(e) {
   return v(e) || O(e) === u
 }, exports.isConcurrentMode = v, exports.isContextConsumer = function(e) {
   return O(e) === c
@@ -66,7 +66,7 @@ exports.AsyncMode = u, exports.ConcurrentMode = d, exports.ContextConsumer = c, 
 }, exports.isForwardRef = function(e) {
   return O(e) === f
 }, exports.isFragment = function(e) {
-  return O(e) === a
+  return O(e) === o
 }, exports.isLazy = function(e) {
   return O(e) === m
 }, exports.isMemo = function(e) {
@@ -76,9 +76,9 @@ exports.AsyncMode = u, exports.ConcurrentMode = d, exports.ContextConsumer = c, 
 }, exports.isProfiler = function(e) {
   return O(e) === s
 }, exports.isStrictMode = function(e) {
-  return O(e) === o
+  return O(e) === a
 }, exports.isSuspense = function(e) {
   return O(e) === _
 }, exports.isValidElementType = function(e) {
-  return "string" == typeof e || "function" == typeof e || e === a || e === d || e === s || e === o || e === _ || e === p || "object" == typeof e && null !== e && (e.$$typeof === m || e.$$typeof === h || e.$$typeof === l || e.$$typeof === c || e.$$typeof === f || e.$$typeof === E || e.$$typeof === b || e.$$typeof === y || e.$$typeof === g)
+  return "string" == typeof e || "function" == typeof e || e === o || e === d || e === s || e === a || e === _ || e === p || "object" == typeof e && null !== e && (e.$$typeof === m || e.$$typeof === h || e.$$typeof === l || e.$$typeof === c || e.$$typeof === f || e.$$typeof === E || e.$$typeof === b || e.$$typeof === y || e.$$typeof === g)
 }, exports.typeOf = O

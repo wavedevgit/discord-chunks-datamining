@@ -8,7 +8,7 @@ require.d(exports, {
   HL: () => en,
   JT: () => $,
   L2: () => z,
-  MY: () => k,
+  MY: () => M,
   Nz: () => V,
   Q_: () => F,
   TO: () => W,
@@ -18,7 +18,7 @@ require.d(exports, {
   dQ: () => K,
   e$: () => Q,
   iM: () => X,
-  pO: () => M,
+  pO: () => k,
   xr: () => j,
   z2: () => J
 }), require("./388685.js"), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./704826.js"), require("./314940.js"), require("./781311.js");
@@ -77,8 +77,8 @@ let y = ["discordapp.com/gifts", "discord.com/gifts"],
 var j = function(e) {
   return e[e.DEFAULT = 0] = "DEFAULT", e[e.CUSTOM_STYLE = 1] = "CUSTOM_STYLE", e[e.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD = 2] = "CUSTOM_MESSAGE_EMOJI_SOUNDBOARD", e
 }({});
-let k = (e, t) => i.tq || i.Em ? 0 : null != e || t ? 2 : 1,
-  M = e => 0 !== k(e);
+let M = (e, t) => i.tq || i.Em ? 0 : null != e || t ? 2 : 1,
+  k = e => 0 !== M(e);
 
 function U(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null,
@@ -144,7 +144,7 @@ async function H(e) {
     throw u.default.track(h.rMx.GIFT_CODE_RESOLVED, {
       resolved: false,
       gift_code: e
-    }), new o.Z(t)
+    }), new a.Z(t)
   }
 }
 
@@ -156,12 +156,12 @@ function W(e, t, n) {
   let {
     error: r,
     accepted: i,
-    accepting: a,
-    opened: o,
+    accepting: o,
+    opened: a,
     isCustomGift: s,
     isPremiumAppGift: l
   } = n;
-  return null == r && (i || a || null == e) ? !s || o || i || a ? i && (t.isSubscription || null != e || l) ? h.wZ8.SUCCESS : h.wZ8.CONFIRM : h.wZ8.OPEN : h.wZ8.ERROR
+  return null == r && (i || o || null == e) ? !s || a || i || o ? i && (t.isSubscription || null != e || l) ? h.wZ8.SUCCESS : h.wZ8.CONFIRM : h.wZ8.OPEN : h.wZ8.ERROR
 }
 
 function K(e, t, n) {
@@ -233,14 +233,14 @@ function X(e) {
     sku: n,
     libraryApplication: r,
     error: i,
-    accepted: a,
-    accepting: o,
+    accepted: o,
+    accepting: a,
     onGoToLibrary: s,
     subscriptionPlan: l = null
   } = e;
   switch (t) {
     case h.wZ8.ERROR:
-      return Q(r, i, a, o, s);
+      return Q(r, i, o, a, s);
     case h.wZ8.SUCCESS:
       if (null != l) return q(l);
       return g.intl.formatToPlainString(g.t["3CPsbm"], {
@@ -262,18 +262,18 @@ function X(e) {
 }
 
 function Q(e, t, n, r, i) {
-  let a = n || r ? true : e,
-    o = g.intl.format(g.t["5zyz9/"], {
+  let o = n || r ? true : e,
+    a = g.intl.format(g.t["5zyz9/"], {
       onGoToLibrary: i
     });
-  return null != a ? o : null == t ? null : et(t, c.default.getCurrentUser())
+  return null != o ? a : null == t ? null : et(t, c.default.getCurrentUser())
 }
 
 function J(e, t, n) {
   let r = t.applicationId,
     i = e.length > 0 ? e : [r],
-    a = i.map(e => n.getLibraryApplication(r, e, true)).filter(d.lm);
-  return a.length === i.length ? a[0] : null
+    o = i.map(e => n.getLibraryApplication(r, e, true)).filter(d.lm);
+  return o.length === i.length ? o[0] : null
 }
 
 function $(e) {
@@ -282,7 +282,7 @@ function $(e) {
   let [n, r, i] = t;
   return null == i ? null : i.replace(RegExp(L, "g"), "")
 }
-let ee = (e, t) => (0, a.e7)([l.Z], () => {
+let ee = (e, t) => (0, o.e7)([l.Z], () => {
   if (null == e || !t) return null;
   let n = l.Z.getGiftCode(e);
   return null == n || "" === n ? null : n

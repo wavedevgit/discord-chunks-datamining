@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk399606 = require("./399606.js"),
   Chunk339085 = require("./339085.js"),
   Chunk185923 = require("./185923.js");
-let o = [];
+let a = [];
 
 function s(e) {
   let {
@@ -17,8 +17,8 @@ function s(e) {
     pickerIntention: r
   } = e;
   return {
-    topEmojis: r !== a.Hz.REACTION ? t.getTopEmoji(n) : o,
-    newlyAddedEmojis: r !== a.Hz.REACTION ? t.getNewlyAddedEmoji(n) : o
+    topEmojis: r !== o.Hz.REACTION ? t.getTopEmoji(n) : a,
+    newlyAddedEmojis: r !== o.Hz.REACTION ? t.getNewlyAddedEmoji(n) : a
   }
 }
 

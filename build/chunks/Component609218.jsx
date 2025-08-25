@@ -3,12 +3,12 @@
 "use strict";
 require.d(exports, {
   Z: () => U,
-  p: () => M
+  p: () => k
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk446673 = require("./446673.jsx"),
   Chunk304789 = require("./304789.jsx"),
@@ -39,7 +39,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk42948 = require("./42948.js"),
   Chunk109194 = require("./109194.js"),
   Chunk352812 = require("./352812.js"),
-  M = function(e) {
+  k = function(e) {
     return e[e.NONE = 0] = "NONE", e[e.PARENT_CONTAINER = 1] = "PARENT_CONTAINER", e[e.TAB_PARENT_CONTAINER = 2] = "TAB_PARENT_CONTAINER", e
   }({});
 
@@ -47,8 +47,8 @@ function U(e) {
   let {
     containerContext: t,
     image: n,
-    title: a,
-    description: M,
+    title: o,
+    description: k,
     enableSocialProof: U,
     analyticsLocationSection: G,
     upsellViewedTrackingData: B,
@@ -85,7 +85,7 @@ function U(e) {
     et = (0, S.Z)(C.Si.TIER_2);
   if (ee) {
     let e;
-    e = H ? (0, g.rO)() ? x.Z : L.Z : (0, g.rO)() ? j.Z : k.Z;
+    e = H ? (0, g.rO)() ? x.Z : L.Z : (0, g.rO)() ? j.Z : M.Z;
     let t = H ? "nitro-pink" : "green";
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(d.ZMr, {
@@ -115,17 +115,17 @@ function U(e) {
                 text: et
               }
             }), (0, r.jsx)(d.X6q, {
-              className: o()(P.title, {
+              className: a()(P.title, {
                 [P.withBadge]: null != et
               }),
               variant: "heading-xl/bold",
               color: "header-primary",
-              children: a
+              children: o
             }), (0, r.jsx)(d.Text, {
               variant: "text-md/medium",
               color: "text-secondary",
               className: P.body,
-              children: M
+              children: k
             })]
           })]
         }), (0, r.jsx)("div", {
@@ -159,7 +159,7 @@ function U(e) {
       onClick: Z,
       isVisible: true
     }), (0, r.jsxs)("div", {
-      className: o()(w.container, z()),
+      className: a()(w.container, z()),
       children: [(0, r.jsx)(d.olH, {
         "data-migration-pending": true,
         onClick: Z,
@@ -173,17 +173,17 @@ function U(e) {
           src: n.url,
           alt: "Nitro Perk"
         }), (0, r.jsx)(d.X6q, {
-          className: o()(w.title, {
+          className: a()(w.title, {
             [w.titleNoSocialProof]: !K
           }),
           variant: "heading-xl/bold",
-          children: a
+          children: o
         }), K && (0, r.jsx)(A.Z, {
           affinities: Y
         }), (0, r.jsx)(d.Text, {
           variant: "text-sm/medium",
           className: w.body,
-          children: M
+          children: k
         })]
       }), (0, r.jsxs)("div", {
         className: w.ctaContainer,

@@ -11,7 +11,7 @@ var Chunk299021 = require("./299021.js"),
   Chunk626135 = require("./626135.js");
 class l extends Chunk299021.Z {
   initialize(e) {
-    this.waitFor(o.default), this.loadStoredState(e, (0, a._S)())
+    this.waitFor(a.default), this.loadStoredState(e, (0, o._S)())
   }
   constructor() {
     super(Chunk570140.Z, {

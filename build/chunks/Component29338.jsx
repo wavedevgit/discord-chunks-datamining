@@ -18,14 +18,14 @@ function u(e) {
     message: t,
     compact: n,
     usernameHook: u
-  } = e, d = (0, o.ZP)(t), f = u(d), _ = l.intl.format(l.t["Rv+TSE"], {
+  } = e, d = (0, a.ZP)(t), f = u(d), _ = l.intl.format(l.t["Rv+TSE"], {
     username: d.nick,
     usernameHook: f,
     topic: t.content
   });
   return (0, r.jsx)(s.Z, {
     className: c.stageSystemMessage,
-    iconNode: (0, r.jsx)(a.ewx, {
+    iconNode: (0, r.jsx)(o.ewx, {
       size: "md",
       color: i.Z.unsafe_rawColors.GREEN_360.css
     }),

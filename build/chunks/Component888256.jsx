@@ -20,8 +20,8 @@ function c(e) {
     handleDisableAccount: u,
     handleDeleteAccount: d
   } = e, f = n.isClaimed();
-  return (0, r.jsx)(a.F, {
-    setting: o.s6.ACCOUNT_DISABLE_ACCOUNT,
+  return (0, r.jsx)(o.F, {
+    setting: a.s6.ACCOUNT_DISABLE_ACCOUNT,
     children: (0, r.jsxs)(i.hjN, {
       className: t,
       title: s.intl.string(s.t.ZKsIkp),
@@ -38,8 +38,8 @@ function c(e) {
           text: s.intl.string(s.t.jf5GGR),
           disabled: c,
           onClick: u
-        }) : null, (0, r.jsx)(a.F, {
-          setting: o.s6.ACCOUNT_DELETE_ACCOUNT,
+        }) : null, (0, r.jsx)(o.F, {
+          setting: a.s6.ACCOUNT_DELETE_ACCOUNT,
           children: (0, r.jsx)(i.zxk, {
             variant: "critical-secondary",
             size: "sm",

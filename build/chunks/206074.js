@@ -30,20 +30,20 @@ function m(e, t) {
   }, {
     autoTrackExposure: false
   }), r = null != e ? (0, f.Z)(e) : null, i = null == r ? true : r.id, {
-    data: a
+    data: o
   } = (0, s.IX)(i), {
     bot: l
-  } = null != a ? a : {
+  } = null != o ? o : {
     bot: null
   };
-  return !!n && null != e && (!!h(e) || null != i && null != l && null != a && !!(0, o.ye)(a))
+  return !!n && null != e && (!!h(e) || null != i && null != l && null != o && !!(0, a.ye)(o))
 }
 
 function g(e) {
   let {
     application: t,
     location: n,
-    analyticsLocations: o
+    analyticsLocations: a
   } = e, u = m(t, n), {
     bot: d
   } = null != t ? t : {
@@ -68,22 +68,22 @@ function g(e) {
       e(), c.default.track(_.rMx.CLOUD_PLAY_CTA_CLICKED, {
         source_application_id: t.id,
         launching_application_id: t.id,
-        location_stack: null != o ? o : []
-      }), (0, a.W)({
+        location_stack: null != a ? a : []
+      }), (0, o.W)({
         appId: t.id,
         botId: d.id,
-        analyticsLocations: null != o ? o : []
+        analyticsLocations: null != a ? a : []
       })
     } : null != E && null != y ? () => {
       e(), c.default.track(_.rMx.CLOUD_PLAY_CTA_CLICKED, {
         source_application_id: t.id,
         launching_application_id: E,
-        location_stack: null != o ? o : []
-      }), (0, a.W)({
+        location_stack: null != a ? a : []
+      }), (0, o.W)({
         appId: E,
         botId: y.id,
-        analyticsLocations: null != o ? o : []
+        analyticsLocations: null != a ? a : []
       })
     } : true
-  }, [u, t, d, E, y, o])
+  }, [u, t, d, E, y, a])
 }

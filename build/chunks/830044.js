@@ -8,17 +8,17 @@ require.d(exports, {
 var Chunk88058 = require("./88058.js"),
   Chunk278769 = require("./278769.js"),
   Chunk362562 = require("./362562.js");
-let o = "default",
+let a = "default",
   s = "",
   l = new WeakMap;
 
 function c(e) {
   if ((0, r.gn)()) {
-    if ("default" === o) {
+    if ("default" === a) {
       let t = (0, i.r3)(e);
       s = t.documentElement.style.webkitUserSelect, t.documentElement.style.webkitUserSelect = "none"
     }
-    o = "disabled"
+    a = "disabled"
   } else if (e instanceof HTMLElement || e instanceof SVGElement) {
     let t = "userSelect" in e.style ? "userSelect" : "webkitUserSelect";
     l.set(e, e.style[t]), e.style[t] = "none"
@@ -26,11 +26,11 @@ function c(e) {
 }
 
 function u(e) {
-  if ((0, r.gn)()) "disabled" === o && (o = "restoring", setTimeout(() => {
-    (0, a.Q)(() => {
-      if ("restoring" === o) {
+  if ((0, r.gn)()) "disabled" === a && (a = "restoring", setTimeout(() => {
+    (0, o.Q)(() => {
+      if ("restoring" === a) {
         let t = (0, i.r3)(e);
-        "none" === t.documentElement.style.webkitUserSelect && (t.documentElement.style.webkitUserSelect = s || ""), s = "", o = "default"
+        "none" === t.documentElement.style.webkitUserSelect && (t.documentElement.style.webkitUserSelect = s || ""), s = "", a = "default"
       }
     })
   }, 300));

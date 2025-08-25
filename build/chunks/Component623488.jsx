@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk313201 = require("./313201.js"),
   Chunk240657 = require("./240657.jsx"),
@@ -24,15 +24,15 @@ function _(e) {
     children: s
   } = e;
   return (0, r.jsxs)("div", {
-    className: a()(f.productThumbnailContainer, i),
+    className: o()(f.productThumbnailContainer, i),
     children: [s, !t && (0, r.jsxs)("div", {
       className: f.purchaseToUnlockBadge,
-      children: [(0, r.jsx)(o.mBM, {
+      children: [(0, r.jsx)(a.mBM, {
         size: "xs",
         className: f.lockIcon,
         color: "currentColor",
         "aria-hidden": true
-      }), (0, r.jsx)(o.Text, {
+      }), (0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
         color: "always-white",
         className: f.__invalid_unlockText,
@@ -50,11 +50,11 @@ function p(e) {
     onShowFullDescription: t,
     variant: n
   } = e, i = (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(o.Text, {
+    children: [(0, r.jsx)(a.Text, {
       variant: n,
       color: null != t ? "text-link" : "interactive-hover",
       children: d.intl.string(d.t["5fmYjY"])
-    }), (0, r.jsx)(o.ZSh, {
+    }), (0, r.jsx)(a.ZSh, {
       size: "xs",
       color: "currentColor",
       className: f.arrowIcon
@@ -65,8 +65,8 @@ function p(e) {
   return null == t ? (0, r.jsx)("div", {
     className: f.showMoreButton,
     children: i
-  }) : (0, r.jsx)(o.P3F, {
-    className: a()(f.showMoreButton, f.hasAction),
+  }) : (0, r.jsx)(a.P3F, {
+    className: o()(f.showMoreButton, f.hasAction),
     onClick: s,
     children: i
   })
@@ -111,13 +111,13 @@ function h(e) {
       className: f.productDetails,
       children: [(0, r.jsxs)("div", {
         className: f.productDetailContent,
-        children: [(0, r.jsx)(o.X6q, {
+        children: [(0, r.jsx)(a.X6q, {
           variant: "text-md/medium",
           color: "header-primary",
           className: f.productName,
           id: P,
           children: n
-        }), (0, r.jsx)(o.Rny, {
+        }), (0, r.jsx)(a.Rny, {
           children: (0, r.jsx)(l.Z, {
             variant: N,
             color: "text-muted",
@@ -128,7 +128,7 @@ function h(e) {
           onShowFullDescription: E,
           variant: N
         }), I || null == h || "" === h.name ? null : (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(o.LZC, {
+          children: [(0, r.jsx)(a.LZC, {
             size: 16
           }), (0, r.jsx)(u.Z, {
             role: h
@@ -137,12 +137,12 @@ function h(e) {
       }), O]
     }), (0, r.jsxs)("div", {
       className: f.purchaseDetails,
-      children: [(0, r.jsx)(o.Text, {
+      children: [(0, r.jsx)(a.Text, {
         variant: "text-md/medium",
         color: "interactive-active",
         className: f.__invalid_productPrice,
         children: null != c ? c : d.intl.string(d.t["4uLhAg"])
-      }), (0, r.jsx)(o.Text, {
+      }), (0, r.jsx)(a.Text, {
         variant: "text-xxs/normal",
         color: "text-default",
         className: f.__invalid_productType,
@@ -155,7 +155,7 @@ function h(e) {
     })]
   });
   return null == y ? (0, r.jsx)("article", {
-    className: a()(f.productCard, v ? f.opaqueBackground : f.solidBackground),
+    className: o()(f.productCard, v ? f.opaqueBackground : f.solidBackground),
     "aria-labelledby": P,
     children: D
   }) : (0, r.jsx)("div", {
@@ -163,12 +163,12 @@ function h(e) {
       width: S,
       height: A
     },
-    children: (0, r.jsx)(o.kL8, {
+    children: (0, r.jsx)(a.kL8, {
       tag: "article",
       "aria-label": d.intl.formatToPlainString(d.t["e+TmJS"], {
         productName: n
       }),
-      className: a()(f.productCard, v ? f.opaqueBackground : f.solidBackground, f.cardClickableContainer),
+      className: o()(f.productCard, v ? f.opaqueBackground : f.solidBackground, f.cardClickableContainer),
       onClick: y,
       children: D
     })

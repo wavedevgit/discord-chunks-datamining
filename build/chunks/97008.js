@@ -21,19 +21,19 @@ class s {
       quality: l = 1,
       fileName: c
     } = t;
-    if (n === o.kH.Base64) return this.toDataUrl(e, s, l);
-    if (n === o.kH.Blob) {
+    if (n === a.kH.Base64) return this.toDataUrl(e, s, l);
+    if (n === a.kH.Blob) {
       let t = this.toDataUrl(e, s, l);
-      return (0, a.kD)(t)
+      return (0, o.kD)(t)
     }
-    if (n === o.kH.File) {
+    if (n === a.kH.File) {
       let t = this.toDataUrl(e, s, l);
-      return await (0, a.Bo)(t, c, "image/png")
+      return await (0, o.Bo)(t, c, "image/png")
     }
-    if (n === o.kH.CloudUpload) {
+    if (n === a.kH.CloudUpload) {
       let {
         channelId: n
-      } = t, o = this.toDataUrl(e, s, l), u = await (0, a.Bo)(o, c, "image/png");
+      } = t, a = this.toDataUrl(e, s, l), u = await (0, o.Bo)(a, c, "image/png");
       return new r.nH({
         file: u,
         platform: i.ow.WEB,

@@ -40,8 +40,8 @@ function v(e) {
     guildIds: n,
     allSounds: r,
     potentialSoundIdsForSection: i,
-    sectionType: a,
-    sortById: o
+    sectionType: o,
+    sortById: a
   } = e, s = {};
   for (let e of [...n, b.X8]) {
     var l;
@@ -52,11 +52,11 @@ function v(e) {
     let t = s[e];
     null != t && c.push(t)
   }
-  let u = O(c, o);
+  let u = O(c, a);
   u.length > 0 && t.push({
-    key: a,
+    key: o,
     categoryInfo: {
-      type: a
+      type: o
     },
     items: u
   })
@@ -68,17 +68,17 @@ function I(e) {
     guilds: n,
     currentGuildId: r,
     allSounds: i,
-    hasNitro: a
+    hasNitro: o
   } = e;
   for (let e of n) {
-    var o;
+    var a;
     if (e.id === r) continue;
-    let n = O(null != (o = i.get(e.id)) ? o : []);
+    let n = O(null != (a = i.get(e.id)) ? a : []);
     n.length > 0 && t.push({
       categoryInfo: {
         type: g.bg.GUILD,
         guild: e,
-        isNitroLocked: !a
+        isNitroLocked: !o
       },
       key: e.id,
       items: n
@@ -90,13 +90,13 @@ function T(e, t, n) {
   var r;
   let {
     currentGuildHasAddPermissions: i,
-    allSounds: a,
-    filterOutEmptyCurrentGuild: o
-  } = n, s = null != (r = a.get(t.id)) ? r : [], l = O(s), c = s.length < (0, u.nL)(t) && i, d = 0 === l.length;
-  (c || d) && !o && l.push({
+    allSounds: o,
+    filterOutEmptyCurrentGuild: a
+  } = n, s = null != (r = o.get(t.id)) ? r : [], l = O(s), c = s.length < (0, u.nL)(t) && i, d = 0 === l.length;
+  (c || d) && !a && l.push({
     type: g.vB.ADD_SOUND,
     guild: t
-  }), o && d || e.push({
+  }), a && d || e.push({
     categoryInfo: {
       type: g.bg.GUILD,
       guild: t,
@@ -122,16 +122,16 @@ function S(e, t) {
 function A(e) {
   let {
     filterOutEmptyCurrentGuild: t = false
-  } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {}, n = arguments.length > 2 && true !== arguments[2] && arguments[2], o = (0, i.e7)([c.default], () => c.default.getCurrentUser()), u = d.ZP.isPremium(o, y.p9.TIER_2), [f, b, O] = (0, i.Wu)([m.Z], () => [m.Z.getSounds(), m.Z.getFavorites(), m.Z.isFetching()]), A = (0, E.h)(e, false), C = (0, i.Wu)([s.Z], () => {
+  } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {}, n = arguments.length > 2 && true !== arguments[2] && arguments[2], a = (0, i.e7)([c.default], () => c.default.getCurrentUser()), u = d.ZP.isPremium(a, y.p9.TIER_2), [f, b, O] = (0, i.Wu)([m.Z], () => [m.Z.getSounds(), m.Z.getFavorites(), m.Z.isFetching()]), A = (0, E.h)(e, false), C = (0, i.Wu)([s.Z], () => {
     let e = [];
     return A.forEach(t => {
       let n = s.Z.getGuild(t);
       null != n && e.push(n)
     }), e
-  }), R = d.ZP.canUseSoundboardEverywhere(o), P = (0, i.e7)([s.Z], () => s.Z.getGuild(null == e ? true : e.guild_id)), w = (0, i.e7)([l.Z], () => {
+  }), R = d.ZP.canUseSoundboardEverywhere(a), P = (0, i.e7)([s.Z], () => s.Z.getGuild(null == e ? true : e.guild_id)), w = (0, i.e7)([l.Z], () => {
     let {
       canCreateExpressions: e
-    } = (0, a.Gw)(P);
+    } = (0, o.Gw)(P);
     return e
   }, [P]), {
     canSeeRecentlyHeard: D,
@@ -139,7 +139,7 @@ function A(e) {
   } = (0, _.k)({
     location: "soundboard-useSoundGrid",
     autoTrackExposure: true
-  }), L = N(), j = (0, i.Wu)([h.Z], () => h.Z.recentlyHeardSoundIds), k = p.C.useExperiment({
+  }), L = N(), j = (0, i.Wu)([h.Z], () => h.Z.recentlyHeardSoundIds), M = p.C.useExperiment({
     location: "useSoundGrid"
   });
   return r.useMemo(() => {
@@ -182,14 +182,14 @@ function A(e) {
       allSounds: f,
       filterOutEmptyCurrentGuild: t
     });
-    let a = R || k.moveDefaultToBottom;
-    return a || S(i, f), I({
+    let o = R || M.moveDefaultToBottom;
+    return o || S(i, f), I({
       sections: i,
       guilds: C,
       currentGuildId: null == P ? true : P.id,
       allSounds: f,
       hasNitro: u
-    }), a && S(i, f), i.forEach(t => {
+    }), o && S(i, f), i.forEach(t => {
       t.categoryInfo.type === g.bg.GUILD && (t.categoryInfo.isNitroLocked ? r += t.items.length : e += t.items.length)
     }), {
       categories: i,
@@ -201,7 +201,7 @@ function A(e) {
         lockedCustomSoundCount: r
       }
     }
-  }, [A, f, b, j, L, x, D, P, w, t, R, C, n, O, u, k.moveDefaultToBottom])
+  }, [A, f, b, j, L, x, D, P, w, t, R, C, n, O, u, M.moveDefaultToBottom])
 }
 
 function C(e, t, n) {

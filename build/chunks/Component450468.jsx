@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
-  o = require.n(Chunk512722),
+  a = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk82659 = require("./82659.jsx"),
   Chunk481060 = require("./481060.js"),
@@ -62,7 +62,7 @@ function T(e) {
   let {
     guildBoostSlotId: t,
     transitionState: n,
-    onClose: a
+    onClose: o
   } = e, {
     analyticsLocations: d
   } = (0, h.ZP)(p.Z.GUILD_BOOST_UNCANCELLATION_MODAL);
@@ -77,7 +77,7 @@ function T(e) {
       if (null != y) try {
         C(true), R(null);
         let e = (0, m.g)(y, 1);
-        o()((0, E.uV)(e) <= (0, E.uV)(y.additionalPlans), "Uncanceling should not increase the number of guild subscriptions"), await O(y, e, t, d), S(2)
+        a()((0, E.uV)(e) <= (0, E.uV)(y.additionalPlans), "Uncanceling should not increase the number of guild subscriptions"), await O(y, e, t, d), S(2)
       } catch (t) {
         let e = t instanceof f.HF ? t : new f.HF(t, t.code);
         R(b.intl.string(e.code === _.SM.BILLING_PAUSE_INVALID_UPDATE ? b.t.dq4vq6 : b.t["5mlOCQ"])), C(false)
@@ -100,7 +100,7 @@ function T(e) {
             variant: "secondary",
             text: b.intl.string(b.t.oEAioK),
             disabled: A,
-            onClick: a
+            onClick: o
           }, {
             variant: "primary",
             text: b.intl.string(b.t.etZP4O),
@@ -111,7 +111,7 @@ function T(e) {
           return [{
             variant: "primary",
             text: b.intl.string(b.t.BddRzc),
-            onClick: a
+            onClick: o
           }];
         default:
           return []
@@ -134,7 +134,7 @@ function T(e) {
     value: d,
     children: (0, r.jsx)(l.Modal, {
       transitionState: n,
-      onClose: async () => await a(),
+      onClose: async () => await o(),
       size: "sm",
       title: w(),
       actions: D(),

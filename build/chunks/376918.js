@@ -52,7 +52,7 @@ function u(e, t) {
 
 function d(e, t, n) {
   var i, s, c;
-  a.default.track(o.rMx.CHANNEL_AUTOCOMPLETE_OPEN, u(l({}, (0, r.v_)(t), (0, r.hH)(t.guild_id)), {
+  o.default.track(a.rMx.CHANNEL_AUTOCOMPLETE_OPEN, u(l({}, (0, r.v_)(t), (0, r.hH)(t.guild_id)), {
     autocomplete_type: e,
     num_emoji_results: null != (i = null == n ? true : n.numEmojiResults) ? i : 0,
     num_locked_emoji_results: null != (s = null == n ? true : n.numLockedEmojiResults) ? s : 0,
@@ -62,7 +62,7 @@ function d(e, t, n) {
 
 function f(e, t, n, i) {
   var s, c, d, f, _;
-  a.default.track(o.rMx.CHANNEL_AUTOCOMPLETE_SELECTED, u(l({}, (0, r.v_)(n), (0, r.hH)(n.guild_id)), {
+  o.default.track(a.rMx.CHANNEL_AUTOCOMPLETE_SELECTED, u(l({}, (0, r.v_)(n), (0, r.hH)(n.guild_id)), {
     autocomplete_type: e,
     selection_type: t,
     emoji_id: null == i ? true : i.emojiId,
@@ -95,7 +95,7 @@ function p(e) {
     isReplacement: r,
     analyticsLocations: i
   } = e;
-  a.default.track(o.rMx.STICKER_ATTACHED, {
+  o.default.track(a.rMx.STICKER_ATTACHED, {
     replaced: r,
     source: _(n),
     sticker_id: t.id,

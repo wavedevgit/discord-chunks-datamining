@@ -16,9 +16,9 @@ function s(e, t, n) {
     loadId: c,
     paymentMethodType: u,
     deepLinkType: d
-  } = e, f = o.Z5c.BILLING_STANDALONE_CHECKOUT_PAGE(s, l, c, u, d), _ = new URL(a.Z.makeUrl(o.Z5c.BILLING_LOGIN_HANDOFF, false)), p = (0, r.Z)();
+  } = e, f = a.Z5c.BILLING_STANDALONE_CHECKOUT_PAGE(s, l, c, u, d), _ = new URL(o.Z.makeUrl(a.Z5c.BILLING_LOGIN_HANDOFF, false)), p = (0, r.Z)();
   return _.searchParams.append("handoff_key", p), _.searchParams.append("redirect_to", f), i.tn.post({
-    url: o.ANM.HANDOFF,
+    url: a.ANM.HANDOFF,
     body: {
       key: p
     },

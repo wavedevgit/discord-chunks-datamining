@@ -8,7 +8,7 @@ var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk481060 = require("./481060.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -17,14 +17,14 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e) {
+function a(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      a(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -49,16 +49,16 @@ function l(e, t) {
 let c = e => {
   let {
     analyticsLocations: t,
-    initialSelectedEffectId: a,
+    initialSelectedEffectId: o,
     guild: s
   } = e;
   (0, i.ZDy)(async () => {
     let {
       default: e
     } = await n.e("55183").then(n.bind(n, 191564));
-    return n => (0, r.jsx)(e, l(o({}, n), {
+    return n => (0, r.jsx)(e, l(a({}, n), {
       guild: s,
-      initialSelectedEffectId: a,
+      initialSelectedEffectId: o,
       analyticsLocations: t
     }))
   }, {})

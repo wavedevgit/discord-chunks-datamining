@@ -34,7 +34,7 @@ let _ = e => {
     isMotionReduced: _ = false,
     animationSpeedScale: p = 1,
     children: h
-  } = e, m = (0, o.q_F)(null != u ? {
+  } = e, m = (0, a.q_F)(null != u ? {
     from: {
       y: 0
     },
@@ -47,7 +47,7 @@ let _ = e => {
     loop: true
   } : {
     y: 0
-  }), g = (null == u ? true : u.path) === "sine" ? Math.sin : Math.cos, [E, b] = (0, i.useState)(1), y = (0, o.q_F)(null != c ? {
+  }), g = (null == u ? true : u.path) === "sine" ? Math.sin : Math.cos, [E, b] = (0, i.useState)(1), y = (0, a.q_F)(null != c ? {
     from: {
       scale: E > 0 ? c.startScale : c.endScale
     },
@@ -60,7 +60,7 @@ let _ = e => {
     onRest: () => b(e => false * e)
   } : {
     scale: 1
-  }), [O, v] = (0, i.useState)(1), I = (0, o.q_F)(null != l ? {
+  }), [O, v] = (0, i.useState)(1), I = (0, a.q_F)(null != l ? {
     from: {
       blur: O > 0 ? l.startBlurRadius : l.endBlurRadius
     },
@@ -73,7 +73,7 @@ let _ = e => {
     onRest: () => v(e => false * e)
   } : {
     blur: 0
-  }), T = (0, i.useMemo)(() => Math.round((750 + (200 * Math.random() - 100)) * p), [p]), S = 5, [A, C] = (0, i.useState)(0), [N, R] = (0, i.useState)(1), P = (0, o.q_F)({
+  }), T = (0, i.useMemo)(() => Math.round((750 + (200 * Math.random() - 100)) * p), [p]), S = 5, [A, C] = (0, i.useState)(0), [N, R] = (0, i.useState)(1), P = (0, a.q_F)({
     xOffset: A,
     config: {
       tension: 10,
@@ -83,7 +83,7 @@ let _ = e => {
   });
   return ((0, s.Z)(() => {
     C(N * (.5 * Math.random() * S + S / 2)), R(e => false * e)
-  }, T), _) ? h : (0, r.jsx)(a.animated.div, {
+  }, T), _) ? h : (0, r.jsx)(o.animated.div, {
     style: {
       transform: null == (t = m.y) ? true : t.to(e => {
         if (null == u) return "translateY(0px)";

@@ -32,7 +32,7 @@ class f extends Chunk147913.Z {
         if (null != e && "string" == typeof e && s.default.isAuthenticated()) {
           let {
             invite: t
-          } = await a.ZP.resolveInvite(e, "Desktop Modal");
+          } = await o.ZP.resolveInvite(e, "Desktop Modal");
           null != t && (i.Z.dispatch({
             type: "INVITE_MODAL_OPEN",
             invite: t,

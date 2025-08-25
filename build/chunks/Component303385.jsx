@@ -42,10 +42,10 @@ let d = 48,
         children: (0, r.jsx)(s.Z, {
           learnMoreStyle: "text",
           quest: t,
-          questContent: o.jn.QUEST_BAR_V2,
+          questContent: a.jn.QUEST_BAR_V2,
           location: l.dr.QUESTS_BAR,
           autoplay: f && !p,
-          sourceQuestContent: o.jn.QUEST_BAR_V2
+          sourceQuestContent: a.jn.QUEST_BAR_V2
         })
       }), (0, r.jsxs)(i.animated.div, {
         className: u.rewardHighlightLogoCTA,
@@ -69,7 +69,7 @@ let d = 48,
               output: [.7, 0]
             })
           },
-          children: (0, r.jsx)(a.Text, {
+          children: (0, r.jsx)(o.Text, {
             color: "always-white",
             variant: "text-xs/medium",
             children: c.intl.string(c.t["1Wvve3"])

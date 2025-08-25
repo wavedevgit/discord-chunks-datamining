@@ -2,12 +2,12 @@
 /** chunk id: 170401, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => o
+  Z: () => a
 }), require("./388685.js"), require("./539854.js");
 var Chunk658722 = require("./658722.js"),
   i = require.n(Chunk658722);
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -15,7 +15,7 @@ function a(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class o {
+class a {
   search(e) {
     return new Promise(t => {
       t(this.getMatchingSettings(e))
@@ -27,8 +27,8 @@ class o {
     {
       let t = [];
       return this.terms.forEach(n => {
-        let [r, a] = n;
-        for (let n of a)
+        let [r, o] = n;
+        for (let n of o)
           if (i()(e.toLowerCase(), n.toLowerCase())) {
             t.push(r);
             break
@@ -37,6 +37,6 @@ class o {
     }
   }
   constructor(e) {
-    a(this, "terms", true), a(this, "cache", true), this.terms = e, this.cache = {}
+    o(this, "terms", true), o(this, "cache", true), this.terms = e, this.cache = {}
   }
 }

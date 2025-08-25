@@ -8,7 +8,7 @@ var Chunk710845 = require("./710845.js"),
   Chunk287328 = require("./287328.js"),
   Chunk870078 = require("./870078.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -19,8 +19,8 @@ function o(e, t, n) {
 let s = new Chunk710845.Z("KvCacheVersion");
 class l {
   async okAsync(e) {
-    let t = await i.Z.cache(e).get(a.aQ);
-    return null == t ? null : t === a.Wj
+    let t = await i.Z.cache(e).get(o.aQ);
+    return null == t ? null : t === o.Wj
   }
   canUseGuildVersions() {
     return this.hasSuccessfullyConnected ? Promise.resolve(true) : this.doesDatabaseVersionMatchJsConstants()
@@ -39,15 +39,15 @@ class l {
     this.hasSuccessfullyConnected = true
   }
   handleWrite(e) {
-    this.hasSuccessfullyConnected = true, i.Z.cacheTransaction(e).put(a.DQ, "\uD83D\uDC4B"), i.Z.cacheTransaction(e).put(a.aQ, a.Wj), i.Z.forceResyncVersionTransaction(e).put(a.LH, {
-      version: a.pL
+    this.hasSuccessfullyConnected = true, i.Z.cacheTransaction(e).put(o.DQ, "\uD83D\uDC4B"), i.Z.cacheTransaction(e).put(o.aQ, o.Wj), i.Z.forceResyncVersionTransaction(e).put(o.LH, {
+      version: o.pL
     })
   }
   resetInMemoryState() {
     this.hasSuccessfullyConnected = false
   }
   constructor() {
-    o(this, "hasSuccessfullyConnected", false), o(this, "actions", {
+    a(this, "hasSuccessfullyConnected", false), a(this, "actions", {
       BACKGROUND_SYNC: (e, t) => this.handleWrite(t),
       CONNECTION_OPEN: () => this.handleConnectionOpen(),
       WRITE_CACHES: (e, t) => this.handleWrite(t)

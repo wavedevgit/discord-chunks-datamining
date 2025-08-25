@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk573385 = require("./573385.js"),
   Chunk481060 = require("./481060.js"),
@@ -60,8 +60,8 @@ function b(e, t) {
   if (null == e) return {};
   var n, r, i = y(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -69,15 +69,15 @@ function b(e, t) {
 function y(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let O = function(e) {
   var {
     className: t,
     compact: n = false,
-    contentOnly: a = false,
+    contentOnly: o = false,
     zalgo: h = true,
     preview: g = false,
     disableInteraction: y = false,
@@ -101,9 +101,9 @@ let O = function(e) {
     author: x,
     onMouseEnter: L,
     onMouseLeave: j
-  } = e, k = b(e, ["className", "compact", "contentOnly", "zalgo", "preview", "disableInteraction", "childrenRepliedMessage", "childrenExecutedCommand", "childrenHeader", "childrenSystemMessage", "childrenButtons", "childrenMessageContent", "childrenAccessories", "messageRef", "focusProps", "hasThread", "isSystemMessage", "hasReply", "author", "onMouseEnter", "onMouseLeave"]);
-  let M = (0, s.e7)([_.Z], () => (null == x ? true : x.guildId) == null || (null == x ? true : x.colorRoleId) == null ? null : _.Z.getRole(x.guildId, x.colorRoleId)),
-    U = (0, f.yH)(null == x ? true : x.guildId, M) && (0, d.S2)(x),
+  } = e, M = b(e, ["className", "compact", "contentOnly", "zalgo", "preview", "disableInteraction", "childrenRepliedMessage", "childrenExecutedCommand", "childrenHeader", "childrenSystemMessage", "childrenButtons", "childrenMessageContent", "childrenAccessories", "messageRef", "focusProps", "hasThread", "isSystemMessage", "hasReply", "author", "onMouseEnter", "onMouseLeave"]);
+  let k = (0, s.e7)([_.Z], () => (null == x ? true : x.guildId) == null || (null == x ? true : x.colorRoleId) == null ? null : _.Z.getRole(x.guildId, x.colorRoleId)),
+    U = (0, f.yH)(null == x ? true : x.guildId, k) && (0, d.S2)(x),
     [G, B] = i.useState(false),
     Z = i.useCallback(e => {
       B(true), null == L || L(e)
@@ -121,11 +121,11 @@ let O = function(e) {
       },
       children: (0, r.jsx)(c.tEY, E(m({}, R), {
         children: (0, r.jsxs)("div", E(m({
-          className: o()(t, {
+          className: a()(t, {
             [p.gradient]: U,
             [p.withDisplayNameStyles]: V && (null == x ? true : x.displayNameStyles) != null && (null == x ? true : x.guildId) == null,
             [p.wrapper]: true,
-            [p.contentOnly]: a,
+            [p.contentOnly]: o,
             [p.compact]: n,
             [p.preview]: g,
             [p.cozy]: !n,
@@ -135,7 +135,7 @@ let O = function(e) {
             [p.hasReply]: D
           }),
           ref: N
-        }, k), {
+        }, M), {
           role: "article",
           onMouseEnter: Z,
           onMouseLeave: F,

@@ -65,14 +65,14 @@ let T = O(b({}, u().defaultRules), {
     heading: O(b({}, u().defaultRules.heading), {
       react(e, t, n) {
         let r = "h".concat(e.level);
-        return (0, a.jsx)(f.Z, {
+        return (0, o.jsx)(f.Z, {
           tag: r,
           children: t(e.content, n)
         }, n.key)
       }
     }),
     paragraph: O(b({}, u().defaultRules.paragraph), {
-      react: (e, t, n) => (0, a.jsx)("div", {
+      react: (e, t, n) => (0, o.jsx)("div", {
         className: m.paragraph,
         children: t(e.content, n)
       }, n.key)
@@ -95,7 +95,7 @@ let T = O(b({}, u().defaultRules), {
       order: 6
     }),
     blockQuote: O(b({}, u().defaultRules.blockQuote), {
-      react: (e, t, n) => (0, a.jsx)("blockquote", {
+      react: (e, t, n) => (0, o.jsx)("blockquote", {
         className: m.blockquote,
         children: I(e)
       }, n.key)
@@ -115,20 +115,20 @@ let T = O(b({}, u().defaultRules), {
     }),
     inlineCode: O(b({}, Chunk428595.Z.RULES.inlineCode), {
       order: 6,
-      react: (e, t, n) => (0, a.jsx)("code", {
+      react: (e, t, n) => (0, o.jsx)("code", {
         className: m.codeInline,
         children: I(e)
       }, n.key)
     }),
     codeBlock: O(b({}, u().defaultRules.codeBlock), {
       react(e, t, r) {
-        let i = () => (0, a.jsx)("pre", {
-          children: (0, a.jsx)("code", {
+        let i = () => (0, o.jsx)("pre", {
+          children: (0, o.jsx)("code", {
             className: l()(g.scrollbarGhostHairline, "hljs"),
             children: I(e)
           })
         }, r.key);
-        return (0, a.jsx)(d.GI, {
+        return (0, o.jsx)(d.GI, {
           createPromise: () => Promise.resolve().then(n.bind(n, 364964)),
           webpackId: 364964,
           renderFallback: i,
@@ -136,8 +136,8 @@ let T = O(b({}, u().defaultRules), {
             if (!(e.lang && t.hasLanguage(e.lang)) || "string" != typeof e.content) return i();
             {
               let n = t.highlight(e.lang, e.content, true);
-              return null == n ? i() : (0, a.jsx)("pre", {
-                children: (0, a.jsx)("code", {
+              return null == n ? i() : (0, o.jsx)("pre", {
+                children: (0, o.jsx)("code", {
                   className: l()(g.scrollbarGhostHairline, "hljs", n.language),
                   dangerouslySetInnerHTML: {
                     __html: n.value
@@ -160,7 +160,7 @@ class C extends(i = Chunk647438.PureComponent) {
       state: n,
       parser: r,
       output: i
-    } = this.props, o = i(r("".concat(exports, "\n\n"), b({
+    } = this.props, a = i(r("".concat(exports, "\n\n"), b({
       inline: false
     }, require)));
     return (0, Chunk951288.jsx)("div", {

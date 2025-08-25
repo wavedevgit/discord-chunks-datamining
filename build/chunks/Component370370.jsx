@@ -21,7 +21,7 @@ let u = [Chunk297781.OV, Chunk297781.EE, Chunk297781.Af, Chunk297781.U9, Chunk29
       hovered: d
     } = e, {
       largeImage: f
-    } = (0, a.rv)({
+    } = (0, o.rv)({
       entry: t,
       showCoverImage: false
     });
@@ -41,7 +41,7 @@ let u = [Chunk297781.OV, Chunk297781.EE, Chunk297781.Af, Chunk297781.U9, Chunk29
             hovered: d
           }, n))
         })]
-      }), (0, r.jsx)(o.f, {
+      }), (0, r.jsx)(a.f, {
         alt: null == f ? true : f.alt,
         src: null == f ? true : f.src,
         size: 48,

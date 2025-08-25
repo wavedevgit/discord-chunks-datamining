@@ -68,7 +68,7 @@ function E(e) {
       channel: m,
       textValue: O,
       richValue: I,
-      type: o.Ie.PROFILE_BIO_INPUT,
+      type: a.Ie.PROFILE_BIO_INPUT,
       onBlur: () => {
         S.current = false
       },
@@ -77,7 +77,7 @@ function E(e) {
       },
       focused: S.current,
       onSubmit: C
-    }), (0, r.jsx)(a.nn4, {
+    }), (0, r.jsx)(o.nn4, {
       id: g,
       children: _.intl.format(_.t["+DFxLS"], {
         maxLength: f.tPV

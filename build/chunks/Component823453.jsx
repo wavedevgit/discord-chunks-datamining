@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk352206 = require("./352206.js"),
   Chunk843611 = require("./843611.js"),
   Chunk442837 = require("./442837.js"),
@@ -26,14 +26,14 @@ function b(e) {
   let {
     lang: t,
     style: n,
-    className: a
+    className: o
   } = (0, p.vP)(), s = (0, l.TH)(), u = i.useMemo(() => E.has(s.pathname), [s.pathname]);
   (0, m.Z)(window, u);
   let d = (0, c.e7)([f.Z, _.Z], () => _.Z.getWindowOpen(g.KJ3.DEVTOOLS_POPOUT) ? 0 : f.Z.sidebarWidth);
   return (0, r.jsx)("html", {
     lang: t,
     style: "".concat(n, " --devtools-sidebar-width: ").concat(d, "px;"),
-    className: o()(a, e, {
+    className: a()(o, e, {
       overlay: __OVERLAY__
     })
   })
@@ -68,13 +68,13 @@ function O(e) {
     skipsSettingDefaultPageTitle: n
   });
   let {
-    clientThemesClassName: a,
-    clientThemesCSS: o
+    clientThemesClassName: o,
+    clientThemesCSS: a
   } = (0, d.ZP)(), l = i.createElement("style", {
     [d.PQ]: true
-  }, o);
+  }, a);
   return (0, r.jsxs)(s.ql, {
-    children: [b(a), y(), l, t]
+    children: [b(o), y(), l, t]
   })
 }
 let v = Chunk647438.memo(O)

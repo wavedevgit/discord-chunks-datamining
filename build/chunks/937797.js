@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   $d: () => s,
-  CD: () => o,
+  CD: () => a,
   DL: () => i
 });
 var Chunk427164 = require("./427164.js");
@@ -22,7 +22,7 @@ let i = (0, Chunk427164.le)({
       }
     }
   }),
-  a = (0, Chunk427164.le)({
+  o = (0, Chunk427164.le)({
     name: "2025-08-sponsored-quest",
     kind: "user",
     defaultConfig: {
@@ -37,10 +37,10 @@ let i = (0, Chunk427164.le)({
       }
     }
   }),
-  o = e => {
+  a = e => {
     let {
       enabled: t
-    } = a.getConfig({
+    } = o.getConfig({
       location: e
     });
     return t

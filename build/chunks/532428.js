@@ -13,7 +13,7 @@ require.d(exports, {
 var Chunk658722 = require("./658722.js"),
   i = require.n(Chunk658722),
   Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  a = require.n(Chunk392711),
   Chunk913527 = require("./913527.js"),
   l = require.n(Chunk913527),
   Chunk212819 = require("./212819.js"),
@@ -86,29 +86,29 @@ function L() {
 
 function j() {
   let e = new Date().getFullYear();
-  return new Set(o().range(2015, module + 1).map(e => e.toString()))
+  return new Set(a().range(2015, module + 1).map(e => e.toString()))
 }
 
-function k(e, t) {
+function M(e, t) {
   return [e, e.clone().add(1, t)]
 }
 
-function M(e) {
+function k(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 0;
-  return k(l()().startOf(e).add(t, e), e)
+  return M(l()().startOf(e).add(t, e), e)
 }
 
 function U(e, t, n) {
-  return k(l()(e, t).local(), n)
+  return M(l()(e, t).local(), n)
 }
 
 function G() {
   return {
-    [Chunk388032.intl.string(Chunk388032.t.HYiVER)]: () => M("day"),
-    [Chunk388032.intl.string(Chunk388032.t.cu86KC)]: () => M("day", false),
-    [Chunk388032.intl.string(Chunk388032.t["FvBj//"])]: () => M("week"),
-    [Chunk388032.intl.string(Chunk388032.t["20uWCw"])]: () => M("month"),
-    [Chunk388032.intl.string(Chunk388032.t["dXC/ho"])]: () => M("year")
+    [Chunk388032.intl.string(Chunk388032.t.HYiVER)]: () => k("day"),
+    [Chunk388032.intl.string(Chunk388032.t.cu86KC)]: () => k("day", false),
+    [Chunk388032.intl.string(Chunk388032.t["FvBj//"])]: () => k("week"),
+    [Chunk388032.intl.string(Chunk388032.t["20uWCw"])]: () => k("month"),
+    [Chunk388032.intl.string(Chunk388032.t["dXC/ho"])]: () => k("year")
   }
 }
 let B = "([0-9]{4})-([0-9]{1,2})-([0-9]{1,2})",
@@ -134,22 +134,22 @@ function z(e) {
 
 function q(e, t) {
   let n, r, i = e.getFullMatch().trim().toLowerCase(),
-    a = G()[i];
-  return null != a ? [n, r] = a() : x().has(i) ? [n, r] = U(i, "MMMM", "month") : L().has(i) ? [n, r] = U(i, "dddd", "day") : j().has(i) ? [n, r] = U(i, "YYYY", "year") : [n, r] = U(i, C.b2L, "day"), !!(n.isValid() && r.isValid()) && ("before" === t ? (r = n, n = null) : "after" === t && (n = r, r = null), e.setData("start", n), e.setData("end", r), true)
+    o = G()[i];
+  return null != o ? [n, r] = o() : x().has(i) ? [n, r] = U(i, "MMMM", "month") : L().has(i) ? [n, r] = U(i, "dddd", "day") : j().has(i) ? [n, r] = U(i, "YYYY", "year") : [n, r] = U(i, C.b2L, "day"), !!(n.isValid() && r.isValid()) && ("before" === t ? (r = n, n = null) : "after" === t && (n = r, r = null), e.setData("start", n), e.setData("end", r), true)
 }
 
 function X(e, t, n) {
   let r = f.ZP.getChannels(n)[f.sH].concat(f.ZP.getChannels(n)[f.Zb]),
     i = f.ZP.getTextChannelNameDisambiguations(n),
-    a = v.Z.getCurrentConfig({
+    o = v.Z.getCurrentConfig({
       location: "guildChannelValidator"
     }).enabled,
-    s = o().chain(r).map(e => {
+    s = a().chain(r).map(e => {
       let {
         channel: t
       } = e;
       return t
-    }).concat(a && null != n ? d.Z.getAllThreadsForGuild(n) : []).filter(e => {
+    }).concat(o && null != n ? d.Z.getAllThreadsForGuild(n) : []).filter(e => {
       var n, r;
       return t === (null != (r = null == (n = i[e.id]) ? true : n.name) ? r : e.name)
     }).value();
@@ -180,8 +180,8 @@ function J(e) {
     i = (0, S.J)({
       location: "channelValidator"
     }),
-    a = r || i;
-  return n.type === C.aib.DMS && !!a && Q(e, t)
+    o = r || i;
+  return n.type === C.aib.DMS && !!o && Q(e, t)
 }
 
 function $(e) {
@@ -213,7 +213,7 @@ function et() {
 }
 
 function en() {
-  return o().sample(et())
+  return a().sample(et())
 }
 
 function er(e, t, n) {
@@ -225,12 +225,12 @@ function er(e, t, n) {
 
 function ei(e, t, n) {
   let r = e.toLocaleLowerCase();
-  return o()(n).filter(e => i()(r, e.toLocaleLowerCase())).take(t).map(e => ({
+  return a()(n).filter(e => i()(r, e.toLocaleLowerCase())).take(t).map(e => ({
     text: e
   })).value()
 }
 
-function ea(e) {
+function eo(e) {
   if (null == e) return [];
   let t = new Set,
     n = [];
@@ -254,14 +254,14 @@ function ea(e) {
   }), i
 }
 
-function eo(e) {
+function ea(e) {
   let t, {
       query: n,
       searchContext: r,
       maxResults: i = 10,
-      tokens: a
+      tokens: o
     } = e,
-    o = {
+    a = {
       query: n = n.split("#")[0],
       limit: i,
       request: false
@@ -270,24 +270,24 @@ function eo(e) {
     case C.aib.GUILD:
     case C.aib.GUILD_CHANNEL:
     case C.aib.THREAD:
-      t = g.ZP.queryGuildUsers(D(P({}, o), {
+      t = g.ZP.queryGuildUsers(D(P({}, a), {
         guildId: r.guildId
       }));
       break;
     case C.aib.CHANNEL:
-      t = g.ZP.queryChannelUsers(D(P({}, o), {
+      t = g.ZP.queryChannelUsers(D(P({}, a), {
         channelId: r.channelId
       }));
       break;
     case C.aib.DMS:
-      let s = ea(null != a ? a : []);
+      let s = eo(null != o ? o : []);
       if (null != s && s.length > 0) {
         let e = m.default.getCurrentUser();
-        null != e && s.push(e), t = g.ZP.queryUsers(D(P({}, o), {
+        null != e && s.push(e), t = g.ZP.queryUsers(D(P({}, a), {
           users: s,
           boosters: (0, g.Cq)(c.h8.USER)
         }))
-      } else t = g.ZP.queryAllUsers(D(P({}, o), {
+      } else t = g.ZP.queryAllUsers(D(P({}, a), {
         boosters: (0, g.Cq)(c.h8.USER)
       }));
       break;
@@ -333,7 +333,7 @@ function el(e, t, n) {
       limit: t,
       boosters: (0, g.Cq)(c.h8.USER)
     }),
-    a = o()(r.concat(i)).sort(c.qU).map(e => {
+    o = a()(r.concat(i)).sort(c.qU).map(e => {
       let {
         record: t,
         comparator: n
@@ -348,18 +348,18 @@ function el(e, t, n) {
     let e = p.Z.getChannelId(),
       t = d.Z.getChannel(e);
     if (null != t && t.isPrivate()) {
-      let n = a.findIndex(t => {
+      let n = o.findIndex(t => {
         let {
           channel: n
         } = t;
         return n.id === e
       });
       if (false !== n) {
-        let e = a[n];
-        a.splice(n, 1), a.unshift(e)
+        let e = o[n];
+        o.splice(n, 1), o.unshift(e)
       } else if (t.isGroupDM()) {
         let e = (0, u.F6)(t, m.default, _.Z);
-        a.unshift({
+        o.unshift({
           text: e,
           channel: t,
           key: t.id
@@ -369,7 +369,7 @@ function el(e, t, n) {
           n = m.default.getUser(e);
         if (null != n) {
           let e = b.ZP.getUserTag(n);
-          a.unshift({
+          o.unshift({
             text: e,
             channel: t,
             key: t.id
@@ -378,7 +378,7 @@ function el(e, t, n) {
       }
     }
   }
-  return a.slice(0, t)
+  return o.slice(0, t)
 }
 
 function ec(e, t, n) {
@@ -409,11 +409,11 @@ function ec(e, t, n) {
       n = i.find(t => t.id === e);
     null != n && (i.splice(i.indexOf(n), 1), i.unshift(n))
   }
-  let a = f.ZP.getTextChannelNameDisambiguations(t);
-  return o()(i).take(n).map(e => {
+  let o = f.ZP.getTextChannelNameDisambiguations(t);
+  return a()(i).take(n).map(e => {
     var t, n;
     return {
-      text: "".concat(null != (n = null == (t = a[e.id]) ? true : t.name) ? n : e.name),
+      text: "".concat(null != (n = null == (t = o[e.id]) ? true : t.name) ? n : e.name),
       channel: e,
       key: e.id
     }
@@ -428,8 +428,8 @@ function eu(e, t, n) {
     i = (0, S.J)({
       location: "getInFilterAutocompletions"
     }),
-    a = r || i;
-  return t.type === C.aib.DMS && a ? el(e, n, true) : []
+    o = r || i;
+  return t.type === C.aib.DMS && o ? el(e, n, true) : []
 }
 let ed = /^(?:\s*(\d{17,20}|@me|([^@#:]+)#([0-9]{4})|([a-z0-9_.]{2,32})))/i;
 var ef = function(e) {
@@ -446,7 +446,7 @@ function e_() {
       key: W(Chunk388032.intl.string(Chunk388032.t["1TUdFh"])),
       plainText: Chunk388032.intl.string(Chunk388032.t["1TUdFh"]),
       validator: es,
-      getAutocompletions: eo
+      getAutocompletions: ea
     },
     [Chunk981631.dCx.ANSWER_USERNAME_FROM]: {
       follows: [Chunk981631.dCx.FILTER_FROM],
@@ -462,7 +462,7 @@ function e_() {
       key: W(Chunk388032.intl.string(Chunk388032.t.i96lOz)),
       plainText: Chunk388032.intl.string(Chunk388032.t.i96lOz),
       validator: es,
-      getAutocompletions: eo
+      getAutocompletions: ea
     },
     [Chunk981631.dCx.ANSWER_USERNAME_MENTIONS]: {
       follows: [Chunk981631.dCx.FILTER_MENTIONS],
@@ -665,10 +665,10 @@ function eg(e) {
     n = [];
   for (let r of Object.keys(ep)) {
     if (n.length >= t) break;
-    let a = ep[r].key;
-    em(r) && null != a && i()(e.toLowerCase(), a) && n.push({
+    let o = ep[r].key;
+    em(r) && null != o && i()(e.toLowerCase(), o) && n.push({
       token: r,
-      text: a
+      text: o
     })
   }
   return n

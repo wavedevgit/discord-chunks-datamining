@@ -59,15 +59,15 @@ function I(e) {
     {
       channel: L,
       approximate_member_count: j,
-      approximate_presence_count: k
+      approximate_presence_count: M
     } = P,
-    M = P.state === E.r2o.ACCEPTING,
+    k = P.state === E.r2o.ACCEPTING,
     U = null != L ? (0, _.jD)(L) : null,
     G = null != R,
     B = null != U,
     Z = null != U && U.isGuildVocal(),
     F = null != U && U.isGuildStageVoice(),
-    V = (0, p.yE)(null != (t = P.flags) ? t : 0, a.$.IS_GUEST_INVITE),
+    V = (0, p.yE)(null != (t = P.flags) ? t : 0, o.$.IS_GUEST_INVITE),
     H = null != (O = null == R ? true : R.features.has(E.oNc.HUB)) && O,
     Y = null == R ? true : R.id,
     {
@@ -120,10 +120,10 @@ function I(e) {
         disableBoostClick: true
       })
     })]
-  }), V && (A = (0, r.jsx)(o.DY3, {
+  }), V && (A = (0, r.jsx)(a.DY3, {
     className: y.tooltipContainer,
     text: b.intl.string(b.t["/FeTKy"]),
-    children: (0, r.jsx)(o.d3s, {
+    children: (0, r.jsx)(a.d3s, {
       size: "md",
       color: "currentColor",
       className: y.infoIcon
@@ -141,9 +141,9 @@ function I(e) {
         isBannerVisible: false
       })
     })]
-  })) : null != j && j >= 5 || null != k && k > 0 ? T = (0, r.jsx)(f.Z.Data, {
+  })) : null != j && j >= 5 || null != M && M > 0 ? T = (0, r.jsx)(f.Z.Data, {
     members: j,
-    membersOnline: k
+    membersOnline: M
   }) : B && (T = (0, r.jsx)(f.Z.Channel, {
     channel: U,
     guild: R
@@ -165,18 +165,18 @@ function I(e) {
         })]
       }), (0, r.jsx)(f.Z.Button, {
         onClick: J,
-        submitting: M,
+        submitting: k,
         color: f.Z.Button.Colors.GREEN,
         children: Z ? F ? b.intl.string(b.t["7vb2cX"]) : b.intl.string(b.t.gpqgam) : G ? b.intl.string(b.t.cEnaW1) : b.intl.string(b.t.XpeFYm)
       })]
     }), R.features.has(E.oNc.HUB) && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
         className: y.separator
-      }), (0, r.jsx)(o.Text, {
+      }), (0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",
         children: b.intl.format(b.t["/o1IfH"], {
-          onClick: () => (0, o.ZDy)(async () => {
+          onClick: () => (0, a.ZDy)(async () => {
             let {
               default: e
             } = await Promise.all([n.e("95468"), n.e("70799")]).then(n.bind(n, 650233));

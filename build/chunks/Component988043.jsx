@@ -48,7 +48,7 @@ function v(e) {
     },
     N = e => {
       let t = () => {
-          u.gR.updateSetting(e), u.h2.updateSetting(e ? o.Z.getGuildIds() : []), A(e, true)
+          u.gR.updateSetting(e), u.h2.updateSetting(e ? a.Z.getGuildIds() : []), A(e, true)
         },
         n = () => {
           u.gR.updateSetting(e), A(e, false)
@@ -58,7 +58,7 @@ function v(e) {
         body: O.intl.string(O.t.hjGJBg),
         confirmText: O.intl.string(O.t.gm1Ven),
         cancelText: O.intl.string(O.t.p89ACg),
-        confirmButtonColor: a.zx.Colors.BRAND,
+        confirmButtonColor: o.zx.Colors.BRAND,
         onConfirm: n,
         onCancel: t
       })

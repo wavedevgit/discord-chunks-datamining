@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => eb
 });
 var r, Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk287734 = require("./287734.js"),
@@ -45,9 +45,9 @@ let P = new Chunk710845.Z("ConnectionStore"),
   x = null,
   L = true,
   j = null,
-  k = null;
+  M = null;
 
-function M() {
+function k() {
   return Chunk955132.Wb.isClosed() ? (P.verbose("Socket is reconnecting because of starting new session"), Chunk955132.Wb.connect()) : (P.verbose("Socket is not reconnecting during a new session because it is not closed"), false)
 }
 
@@ -65,8 +65,8 @@ async function B(e) {
   let t = {},
     n = E.Z.getVoiceChannelId();
   if (null != n) {
-    var r, i, a, o, s, c, u, d;
-    if ((null == (s = window) || null == (o = s.performance) || null == (a = o.getEntriesByType) || null == (i = a.call(o, "navigation")) || null == (r = i[0]) ? true : r.type) !== "reload" && (null == (c = await (null == R || null == (d = R.processUtils) || null == (u = d.getLastCrash) ? true : u.call(d))) ? true : c.rendererCrashReason) == null && L) m.Z.setLastSessionVoiceChannelId(null != n ? n : null), l.default.selectVoiceChannel(null);
+    var r, i, o, a, s, c, u, d;
+    if ((null == (s = window) || null == (a = s.performance) || null == (o = a.getEntriesByType) || null == (i = o.call(a, "navigation")) || null == (r = i[0]) ? true : r.type) !== "reload" && (null == (c = await (null == R || null == (d = R.processUtils) || null == (u = d.getLastCrash) ? true : u.call(d))) ? true : c.rendererCrashReason) == null && L) m.Z.setLastSessionVoiceChannelId(null != n ? n : null), l.default.selectVoiceChannel(null);
     else {
       let e = p.Z.getChannel(n);
       null != e && (t = {
@@ -75,7 +75,7 @@ async function B(e) {
       })
     }
   }
-  I.GC.update(t, true), L = false, k = null
+  I.GC.update(t, true), L = false, M = null
 }
 
 function Z() {
@@ -83,7 +83,7 @@ function Z() {
 }
 
 function F() {
-  k = null
+  M = null
 }
 
 function V(e) {
@@ -94,7 +94,7 @@ function H(e) {
   return I.GC.update({
     guildId: e.guildId,
     channelId: e.channelId
-  }), k = e.lockVoiceStateForResume && null != e.channelId ? e.channelId : null, (0, O.isIOS)() && j === A.$7l.BACKGROUND && (null == e.channelId ? I.Wb.close(true) : I.Wb.isClosed() && (T.Y(false), I.Wb.connect())), false
+  }), M = e.lockVoiceStateForResume && null != e.channelId ? e.channelId : null, (0, O.isIOS)() && j === A.$7l.BACKGROUND && (null == e.channelId ? I.Wb.close(true) : I.Wb.isClosed() && (T.Y(false), I.Wb.connect())), false
 }
 
 function Y() {
@@ -113,7 +113,7 @@ function K(e) {
   return t.reduce((e, t) => {
     if (f.default.getId() !== t.userId) return e;
     if (t.sessionId === x) {
-      if (null != k) return P.verbose("Ignoring voice state for own session due to VSU lock on channel:", k), e;
+      if (null != M) return P.verbose("Ignoring voice state for own session due to VSU lock on channel:", M), e;
       I.GC.setState({
         guildId: t.guildId,
         channelId: t.channelId
@@ -141,7 +141,7 @@ function q(e) {
     channelId: t
   } = e;
   if (t === I.GC.channelId) {
-    if (k === t) returnfalse;
+    if (M === t) returnfalse;
     I.GC.setState({
       guildId: null,
       channelId: null
@@ -177,7 +177,7 @@ function ee() {
 }
 
 function et(e) {
-  return I.Wb.isSessionEstablished() && ("userIds" in e ? a()(e.userIds).chunk(w).forEach(t => {
+  return I.Wb.isSessionEstablished() && ("userIds" in e ? o()(e.userIds).chunk(w).forEach(t => {
     I.Wb.requestGuildMembers(e.guildIds, {
       userIds: t,
       presences: !!e.presences
@@ -215,7 +215,7 @@ function ei(e) {
   return I.Wb.isSessionEstablished() && I.Wb.callConnect(t), false
 }
 
-function ea(e) {
+function eo(e) {
   let {
     channelIds: t
   } = e;
@@ -224,7 +224,7 @@ function ea(e) {
   }), false
 }
 
-function eo(e) {
+function ea(e) {
   let {
     sessionId: t,
     payload: n
@@ -252,8 +252,8 @@ function eu(e) {
     channelId: r
   } = e;
   if (I.Wb.isSessionEstablished()) {
-    var i, a;
-    let e = null != n ? null == (i = p.Z.getChannel(r)) ? true : i.rtcRegion : null == (a = _.Z.getCall(r)) ? true : a.region;
+    var i, o;
+    let e = null != n ? null == (i = p.Z.getChannel(r)) ? true : i.rtcRegion : null == (o = _.Z.getCall(r)) ? true : o.region;
     I.Wb.streamCreate(t, n, r, null != e ? e : g.Z.getPreferredRegion())
   }
   returnfalse
@@ -327,7 +327,7 @@ class eE extends(r = Chunk442837.ZP.Store) {
 }
 N(eE, "displayName", "GatewayConnectionStore");
 let eb = new eE(Chunk570140.Z, {
-  START_SESSION: M,
+  START_SESSION: k,
   LOGIN_SUCCESS: G,
   LOGOUT: U,
   CLEAR_CACHES: V,
@@ -347,7 +347,7 @@ let eb = new eE(Chunk570140.Z, {
   GUILD_SEARCH_RECENT_MEMBERS: en,
   GUILD_SUBSCRIPTIONS_FLUSH: er,
   CALL_CONNECT: ei,
-  CALL_CONNECT_MULTIPLE: ea,
+  CALL_CONNECT_MULTIPLE: eo,
   STREAM_CREATE: Y,
   STREAM_START: eu,
   STREAM_WATCH: ef,
@@ -356,7 +356,7 @@ let eb = new eE(Chunk570140.Z, {
   PUSH_NOTIFICATION_CLICK: ep,
   REQUEST_FORUM_UNREADS: eh,
   REQUEST_SOUNDBOARD_SOUNDS: eg,
-  REMOTE_COMMAND: eo,
+  REMOTE_COMMAND: ea,
   RESET_SOCKET: em,
   CLIPS_SETTINGS_UPDATE: Y,
   RUNNING_GAMES_CHANGE: Y,

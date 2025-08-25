@@ -3,9 +3,9 @@
 "use strict";
 let r, i;
 require.d(exports, {
-  Z: () => M
+  Z: () => k
 }), require("./388685.js");
-var a, Chunk442837 = require("./442837.js"),
+var o, Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
   Chunk570140 = require("./570140.js"),
   Chunk266454 = require("./266454.js"),
@@ -99,7 +99,7 @@ let x = () => {
       n = (null == r ? true : r.id) === (null == exports ? true : exports.id);
     null == exports || require || (r = exports)
   };
-class k extends(a = Chunk442837.ZP.PersistedStore) {
+class M extends(o = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     null != e && (r = (null == e ? true : e.gradientPresetId) != null ? I.qt[e.gradientPresetId] : true), this.waitFor(E.default, f.Z, g.Z, u.Z, h.Z), this.syncWith([E.default], x), this.syncWith([u.Z], L)
   }
@@ -132,8 +132,8 @@ class k extends(a = Chunk442837.ZP.PersistedStore) {
     }])
   }
 }
-S(k, "displayName", "ClientThemesBackgroundStore"), S(k, "persistKey", "ClientThemesBackgroundStore");
-let M = new k(Chunk570140.Z, {
+S(M, "displayName", "ClientThemesBackgroundStore"), S(M, "persistKey", "ClientThemesBackgroundStore");
+let k = new M(Chunk570140.Z, {
   UPDATE_BACKGROUND_GRADIENT_PRESET: N,
   UPDATE_MOBILE_PENDING_THEME_INDEX: R,
   RESET_PREVIEW_CLIENT_THEME: P,

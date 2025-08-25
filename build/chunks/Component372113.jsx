@@ -2,12 +2,12 @@
 /** chunk id: 372113, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => M
+  Z: () => k
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -76,10 +76,10 @@ function L(e) {
     containerSize: t,
     onClick: n,
     text: i,
-    tabIndex: a
+    tabIndex: o
   } = e;
   return "xs" === t ? (0, r.jsx)(c.P3F, {
-    tabIndex: a,
+    tabIndex: o,
     className: N.learnMoreLink,
     tag: "span",
     onClick: n,
@@ -90,7 +90,7 @@ function L(e) {
     })
   }) : (0, r.jsx)(c.zxk, {
     fullWidth: true,
-    tabIndex: a,
+    tabIndex: o,
     variant: "secondary",
     onClick: n,
     text: i
@@ -98,21 +98,21 @@ function L(e) {
 }
 
 function j(e) {
-  var t, n, r, i, a;
+  var t, n, r, i, o;
   let {
-    quest: o,
+    quest: a,
     locale: s,
     isQuestExpired: l,
     sharedQuestFields: c,
     collectibleQuestRewardDescription: u,
     formattedCompletionDate: d
-  } = e, p = (null == (t = o.userStatus) ? true : t.completedAt) != null, m = p && (null == (n = o.userStatus) ? true : n.claimedAt) != null, g = (0, h.oo)({
-    quest: o
+  } = e, p = (null == (t = a.userStatus) ? true : t.completedAt) != null, m = p && (null == (n = a.userStatus) ? true : n.claimedAt) != null, g = (0, h.oo)({
+    quest: a
   }), E = c.defaultRewardNameWithArticle;
   if (m) {
     let e = g ? (0, h.o9)({
-        quest: o,
-        idx: null == (r = o.userStatus) ? true : r.claimedTier
+        quest: a,
+        idx: null == (r = a.userStatus) ? true : r.claimedTier
       }) : null,
       t = null != (i = null == e ? true : e.messages.nameWithArticle) ? i : null;
     return null != t ? C.intl.formatToPlainString(C.t.RrxtPT, {
@@ -130,11 +130,11 @@ function j(e) {
     date: d
   });
   let b = g ? (0, h.o9)({
-    quest: o,
+    quest: a,
     idx: 0
   }) : null;
   return l ? C.intl.formatToPlainString(C.t.DT3aub, {
-    reward: null != (a = null == b ? true : b.messages.nameWithArticle) ? a : E
+    reward: null != (o = null == b ? true : b.messages.nameWithArticle) ? o : E
   }) : null != b && null != b.approximateCount ? C.intl.format(C.t["4bMK19"], {
     maxReward: b.messages.nameWithArticle,
     maxRewardCount: (0, _.Bs)(b.approximateCount, s),
@@ -142,20 +142,20 @@ function j(e) {
   }) : u
 }
 
-function k(e) {
+function M(e) {
   let {
     quest: t,
     progressState: n,
     isCollectibleQuest: i,
-    questContent: a,
-    questContentPosition: o,
+    questContent: o,
+    questContentPosition: a,
     sourceQuestContent: d
   } = e, f = n >= m.OH.COMPLETED, _ = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), p = (0, s.e7)([g.Z], () => g.Z.isEnrolling(t.id)), E = (0, h.q8)(t), b = (0, h.Vl)(t), y = (0, I.Ks)({
     progressState: n,
     quest: t,
-    questContent: a,
+    questContent: o,
     isCollectibleQuest: i,
-    questContentPosition: o,
+    questContentPosition: a,
     inGiftInventory: false,
     isVideoQuest: E,
     inGameQuest: b,
@@ -183,11 +183,11 @@ function k(e) {
     }
   }, y.tooltipText)
 }
-let M = e => {
+let k = e => {
   var t;
   let {
     quest: n,
-    location: a,
+    location: o,
     size: l,
     isFocused: u,
     isQuestExpired: f,
@@ -199,7 +199,7 @@ let M = e => {
     year: "numeric",
     month: "long",
     day: "numeric"
-  }), M = R >= m.OH.ACCEPTED, U = R >= m.OH.COMPLETED, G = (0, h.Xv)(n.config), B = _ || I, Z = (0, m.t5)(n, S.dr.QUESTS_CARD, a, A), F = (0, p.O5)(), V = i.useMemo(() => y.r.build(n.config), [n.config]), H = (0, m.Rf)(n), Y = (0, b.DD)({
+  }), k = R >= m.OH.ACCEPTED, U = R >= m.OH.COMPLETED, G = (0, h.Xv)(n.config), B = _ || I, Z = (0, m.t5)(n, S.dr.QUESTS_CARD, o, A), F = (0, p.O5)(), V = i.useMemo(() => y.r.build(n.config), [n.config]), H = (0, m.Rf)(n), Y = (0, b.DD)({
     quest: n,
     taskDetails: H,
     location: S.dr.QUESTS_CARD,
@@ -207,11 +207,11 @@ let M = e => {
     sourceQuestContent: A
   }), W = (0, s.e7)([g.Z], () => null != g.Z.questEnrollmentBlockedUntil, []), K = () => {
     (0, v.navigateToQuestHome)({
-      fromContent: a,
+      fromContent: o,
       questId: n.id
     }), F({
       questId: n.id,
-      questContent: a,
+      questContent: o,
       questContentPosition: T,
       questContentCTA: p.jZ.LEARN_MORE,
       sourceQuestContent: A
@@ -220,7 +220,7 @@ let M = e => {
   return (0, r.jsx)("div", {
     className: N.root,
     children: (0, r.jsxs)("div", {
-      className: o()(N.outerContainer, {
+      className: a()(N.outerContainer, {
         [N.outerContainerSm]: "sm" === l,
         [N.outerContainerXs]: "xs" === l
       }),
@@ -242,7 +242,7 @@ let M = e => {
             })
           }), (0, r.jsx)(O.Z, {
             autoplay: u,
-            className: o()({
+            className: a()({
               [N.questRewardEmbed]: "lg" === l,
               [N.questRewardEmbedSm]: "sm" === l,
               [N.questRewardEmbedXs]: "xs" === l
@@ -250,7 +250,7 @@ let M = e => {
             learnMoreStyle: "text",
             location: S.dr.QUESTS_CARD,
             quest: n,
-            questContent: a,
+            questContent: o,
             questContentPosition: T,
             sourceQuestContent: A
           })]
@@ -258,7 +258,7 @@ let M = e => {
       }), (0, r.jsxs)("div", {
         className: N.taskDetails,
         children: [(0, r.jsx)(c.Text, {
-          variant: x(a, l, M),
+          variant: x(o, l, k),
           className: N.taskInstructions,
           children: f ? C.intl.formatToPlainString(C.t["ge+AJi"], {
             questName: n.config.messages.questName
@@ -285,7 +285,7 @@ let M = e => {
           text: C.intl.string(C.t.V293qq)
         }), (0, r.jsx)(c.zxk, {
           variant: "primary",
-          onClick: () => (0, v.openQuestMinorEnrollmentBlockModal)(n, a, A),
+          onClick: () => (0, v.openQuestMinorEnrollmentBlockModal)(n, o, A),
           text: C.intl.string(C.t.vY9GgI)
         })]
       }) : (0, r.jsxs)(c.hE2, {
@@ -297,11 +297,11 @@ let M = e => {
           containerSize: l,
           onClick: K,
           text: C.intl.string(C.t.LLLLPD)
-        }), !q && (0, r.jsx)(k, {
+        }), !q && (0, r.jsx)(M, {
           quest: n,
           progressState: R,
           isCollectibleQuest: G,
-          questContent: a,
+          questContent: o,
           sourceQuestContent: A
         })]
       })]

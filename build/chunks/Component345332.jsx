@@ -74,16 +74,16 @@ function f(e, t) {
     {
       position: r = c.si.position,
       component: i = c.si.component,
-      duration: o = c.si.duration
+      duration: a = c.si.duration
     } = n;
   return {
     message: e,
-    id: (0, a.Z)(),
+    id: (0, o.Z)(),
     type: t,
     options: {
       position: r,
       component: i,
-      duration: o
+      duration: a
     }
   }
 }
@@ -93,14 +93,14 @@ let _ = Chunk647438.memo(function(e) {
     type: n,
     id: i,
     options: {
-      component: a = c.si.component
+      component: o = c.si.component
     } = c.si
   } = e;
-  return null != a ? a : (0, r.jsxs)("div", {
+  return null != o ? o : (0, r.jsxs)("div", {
     id: i,
     className: u.toast,
     "data-type": n,
-    children: [d(n), (0, r.jsx)(o.x, {
+    children: [d(n), (0, r.jsx)(a.x, {
       className: u.content,
       variant: "text-md/normal",
       children: t

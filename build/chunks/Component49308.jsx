@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
-  o = require.n(Chunk512722),
+  a = require.n(Chunk512722),
   Chunk399606 = require("./399606.js"),
   Chunk607070 = require("./607070.js"),
   Chunk597688 = require("./597688.js"),
@@ -50,7 +50,7 @@ function I(e) {
     handleClose: t,
     analyticsLocations: n
   } = e, {
-    skusById: a,
+    skusById: o,
     selectedSkuId: l,
     application: u,
     paymentError: d,
@@ -58,9 +58,9 @@ function I(e) {
     purchasePreviewError: p,
     appliedUserDiscounts: m
   } = (0, h.JL)(), O = (0, s.e7)([c.Z], () => c.Z.getProduct(l)), v = i.useRef(false);
-  o()(null != l, "Expected selectedSkuId"), o()(null != u, "Expected application");
-  let I = a[l];
-  o()(null != I, "Expected sku");
+  a()(null != l, "Expected selectedSkuId"), a()(null != u, "Expected application");
+  let I = o[l];
+  a()(null != I, "Expected sku");
   let T = null != d || null != f || null != p,
     S = m.length > 0 ? y.intl.formatToPlainString(y.t.VuV3TU, {
       discountOfferAmount: m[0].discount.amount
@@ -82,8 +82,8 @@ function T(e) {
   let {
     isGift: t,
     giftCode: n,
-    selectedGiftStyle: a,
-    hasSentMessage: o,
+    selectedGiftStyle: o,
+    hasSentMessage: a,
     giftRecipient: _,
     giftMessageError: g,
     isSendingMessage: E
@@ -97,8 +97,8 @@ function T(e) {
     children: [(0, r.jsx)(m.Z, {
       giftCode: n,
       onClose: e.handleClose,
-      selectedGiftStyle: a,
-      hasSentMessage: o,
+      selectedGiftStyle: o,
+      hasSentMessage: a,
       giftRecipient: _,
       giftMessageError: g,
       isSendingMessage: E

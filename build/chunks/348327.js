@@ -3,7 +3,7 @@
 var r = Array.prototype.slice,
   Chunk775569 = require("./775569.js"),
   Chunk35262 = require("./35262.js"),
-  o = module.exports = function(e, t, n) {
+  a = module.exports = function(e, t, n) {
     return n || (n = {}), e === t || (e instanceof Date && t instanceof Date ? e.getTime() === t.getTime() : e && t && ("object" == typeof e || "object" == typeof t) ? c(e, t, n) : n.strict ? e === t : e == t)
   };
 
@@ -18,7 +18,7 @@ function l(e) {
 function c(e, t, n) {
   var c, u;
   if (s(e) || s(t) || e.prototype !== t.prototype) returnfalse;
-  if (a(e)) return !!a(t) && o(e = r.call(e), t = r.call(t), n);
+  if (o(e)) return !!o(t) && a(e = r.call(e), t = r.call(t), n);
   if (l(e)) {
     if (!l(t) || e.length !== t.length) returnfalse;
     for (c = 0; c < e.length; c++)
@@ -35,6 +35,6 @@ function c(e, t, n) {
   for (d.sort(), f.sort(), c = d.length - 1; c >= 0; c--)
     if (d[c] != f[c]) returnfalse;
   for (c = d.length - 1; c >= 0; c--)
-    if (!o(e[u = d[c]], t[u], n)) returnfalse;
+    if (!a(e[u = d[c]], t[u], n)) returnfalse;
   return typeof e == typeof t
 }

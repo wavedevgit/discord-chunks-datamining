@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => ee
 }), require("./388685.js");
 var r, Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk149765 = require("./149765.js"),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -61,9 +61,9 @@ function D(e) {
   if (null == r) return b.Hn;
   let i = y.Z.getChannel(e);
   if (null == i) return b.Hn;
-  let o = i.getGuildId(),
-    s = null != o && (u.Z.isLurking(o) || (null == (t = O.ZP.getMember(o, r.id)) ? true : t.isPending));
-  return !i.isScheduledForDeletion() && !s && a().isEmpty(i.permissionOverwrites) && null != o ? w(o) : b.uB({
+  let a = i.getGuildId(),
+    s = null != a && (u.Z.isLurking(a) || (null == (t = O.ZP.getMember(a, r.id)) ? true : t.isPending));
+  return !i.isScheduledForDeletion() && !s && o().isEmpty(i.permissionOverwrites) && null != a ? w(a) : b.uB({
     user: r,
     context: i,
     checkElevated: n
@@ -88,11 +88,11 @@ function j() {
   P += 1
 }
 
-function k() {
+function M() {
   j()
 }
 
-function M() {
+function k() {
   $()
 }
 
@@ -191,7 +191,7 @@ function z(e) {
   } = e;
   delete C[t];
   let n = y.Z.getMutableBasicGuildChannelsForGuild(t);
-  a().forEach(n, e => {
+  o().forEach(n, e => {
     delete N[e.id]
   }), P += 1, L(t)
 }
@@ -216,7 +216,7 @@ function X(e) {
   } = e;
   delete C[t];
   let n = y.Z.getMutableBasicGuildChannelsForGuild(t);
-  a().forEach(n, e => {
+  o().forEach(n, e => {
     delete N[e.id]
   }), P += 1, L(t)
 }
@@ -270,20 +270,20 @@ class J extends(r = Chunk442837.ZP.Store) {
     }
   }
   canAccessMemberSafetyPage(e) {
-    return o.Db(w(e.id), S.N)
+    return a.Db(w(e.id), S.N)
   }
   canAccessGuildSettings(e) {
-    return o.Db(w(e.id), b.ym)
+    return a.Db(w(e.id), b.ym)
   }
   canWithPartialContext(e, t) {
     return "channelId" in t && "string" == typeof t.channelId ? this.can(e, y.Z.getChannel(t.channelId)) : "guildId" in t && "string" == typeof t.guildId && this.can(e, v.Z.getGuild(t.guildId))
   }
   can(e, t, n, r, i) {
-    let a = Q(t, n, r, i);
-    return o.e$(a, e)
+    let o = Q(t, n, r, i);
+    return a.e$(o, e)
   }
   canBasicChannel(e, t, n, r, i) {
-    return "basicPermissions" in t ? g.Z.has(t.basicPermissions, e) : o.e$(Q(t, n, r, i), g.Z.asBigFlag(e))
+    return "basicPermissions" in t ? g.Z.has(t.basicPermissions, e) : a.e$(Q(t, n, r, i), g.Z.asBigFlag(e))
   }
   computePermissions(e, t, n, r) {
     return Q(e, t, n, r)
@@ -296,9 +296,9 @@ class J extends(r = Chunk442837.ZP.Store) {
     if ((0, h.eM)(n, r)) returnfalse;
     let i = I.default.getCurrentUser();
     if (!this.can(e, n)) returnfalse;
-    let a = null != i ? b.e9(n, i.id) : true,
-      o = b.e9(n, r);
-    return null != i && b.r6(n, i.id, a, o)
+    let o = null != i ? b.e9(n, i.id) : true,
+      a = b.e9(n, r);
+    return null != i && b.r6(n, i.id, o, a)
   }
   getHighestRole(e) {
     let t = I.default.getCurrentUser();
@@ -329,12 +329,12 @@ function $() {
 }
 A(J, "displayName", "PermissionStore");
 let ee = new J(Chunk570140.Z, {
-  BACKGROUND_SYNC: k,
-  CONNECTION_OPEN: k,
-  OVERLAY_INITIALIZE: k,
-  CACHE_LOADED: k,
-  CACHE_LOADED_LAZY: k,
-  CONNECTION_CLOSED: M,
+  BACKGROUND_SYNC: M,
+  CONNECTION_OPEN: M,
+  OVERLAY_INITIALIZE: M,
+  CACHE_LOADED: M,
+  CACHE_LOADED_LAZY: M,
+  CONNECTION_CLOSED: k,
   GUILD_CREATE: U,
   GUILD_UPDATE: U,
   GUILD_DELETE: U,

@@ -36,14 +36,14 @@ function O(e) {
   if (null == n || null == t) returnfalse;
   let r = new Set,
     i = new Set,
-    a = new Set;
-  if (b.set(e, (0, o.eM)(n, t)), n.features.has(_.oNc.ROLE_SUBSCRIPTIONS_ENABLED)) {
+    o = new Set;
+  if (b.set(e, (0, a.eM)(n, t)), n.features.has(_.oNc.ROLE_SUBSCRIPTIONS_ENABLED)) {
     var p;
-    let o = l.ZP.getMember(e, t.id),
-      u = new Set(null != (p = null == o ? true : o.roles) ? p : []);
-    for (let t of c.Z.getSortedRoles(n.id))(0, f.Z)(t) && (r.add(t.id), (0, f.h)(t) && (i.add(t.id), u.has(t.id) && a.add(t.id))), u.has(t.id) && (0, s.Fs)(t, _.Plq.ADMINISTRATOR) && b.set(e, true)
+    let a = l.ZP.getMember(e, t.id),
+      u = new Set(null != (p = null == a ? true : a.roles) ? p : []);
+    for (let t of c.Z.getSortedRoles(n.id))(0, f.Z)(t) && (r.add(t.id), (0, f.h)(t) && (i.add(t.id), u.has(t.id) && o.add(t.id))), u.has(t.id) && (0, s.Fs)(t, _.Plq.ADMINISTRATOR) && b.set(e, true)
   }
-  return m.set(e, r), E.set(e, a), g.set(e, i), true
+  return m.set(e, r), E.set(e, o), g.set(e, i), true
 }
 
 function v() {

@@ -34,9 +34,9 @@ var Chunk127849 = require("./127849.js"),
   x = Chunk199838.getterFor(N),
   L = Chunk199838.getterFor(R),
   j = Chunk199838.set,
-  k = Chunk127849[N],
-  M = k,
-  U = M && M[P],
+  M = Chunk127849[N],
+  k = M,
+  U = k && k[P],
   G = Chunk127849[R],
   B = G && G[P],
   Z = Object.prototype,
@@ -74,68 +74,68 @@ var Chunk127849 = require("./127849.js"),
   },
   et = function(e, t, n, r) {
     var i = L(e),
-      a = h(n),
-      o = !!r;
-    if (a + t > i.byteLength) throw new V(D);
+      o = h(n),
+      a = !!r;
+    if (o + t > i.byteLength) throw new V(D);
     var s = i.bytes,
-      l = a + i.byteOffset,
+      l = o + i.byteOffset,
       c = O(s, l, l + t);
-    return o ? c : Y(c)
+    return a ? c : Y(c)
   },
-  en = function(e, t, n, r, i, a) {
-    var o = L(e),
+  en = function(e, t, n, r, i, o) {
+    var a = L(e),
       s = h(n),
       l = r(+i),
-      c = !!a;
-    if (s + t > o.byteLength) throw new V(D);
-    for (var u = o.bytes, d = s + o.byteOffset, f = 0; f < t; f++) u[d + f] = l[c ? f : t - f - 1]
+      c = !!o;
+    if (s + t > a.byteLength) throw new V(D);
+    for (var u = a.bytes, d = s + a.byteOffset, f = 0; f < t; f++) u[d + f] = l[c ? f : t - f - 1]
   };
 if (Chunk848120) {
-  var er = A && k.name !== N;
+  var er = A && M.name !== N;
   !Chunk621523(function() {
-    k(1)
+    M(1)
   }) || !Chunk621523(function() {
-    new k(false)
+    new M(false)
   }) || Chunk621523(function() {
-    return new k, new k(1.5), new k(NaN), 1 !== k.length || er && !C
-  }) ? ((M = function(e) {
-    return f(this, U), v(new k(h(e)), this, M)
-  })[P] = U, U.constructor = M, Chunk190289(M, k)) : er && C && Chunk436207(k, "name", N), Chunk769827 && Chunk961050(B) !== Z && Chunk769827(B, Z);
-  var ei = new G(new M(2)),
-    ea = Chunk46015(B.setInt8);
+    return new M, new M(1.5), new M(NaN), 1 !== M.length || er && !C
+  }) ? ((k = function(e) {
+    return f(this, U), v(new M(h(e)), this, k)
+  })[P] = U, U.constructor = k, Chunk190289(k, M)) : er && C && Chunk436207(M, "name", N), Chunk769827 && Chunk961050(B) !== Z && Chunk769827(B, Z);
+  var ei = new G(new k(2)),
+    eo = Chunk46015(B.setInt8);
   ei.setInt8(0, 0x80000000), ei.setInt8(1, 0x80000001), (ei.getInt8(0) || !ei.getInt8(1)) && Chunk477732(B, {
     setInt8: function(e, t) {
-      ea(this, e, t << 24 >> 24)
+      eo(this, e, t << 24 >> 24)
     },
     setUint8: function(e, t) {
-      ea(this, e, t << 24 >> 24)
+      eo(this, e, t << 24 >> 24)
     }
   }, {
     unsafe: true
   })
-} else U = (M = function(e) {
+} else U = (k = function(e) {
   f(this, U);
   var t = h(e);
   j(this, {
     type: N,
     bytes: H(F(t), 0),
     byteLength: t
-  }), a || (this.byteLength = t, this.detached = false)
+  }), o || (this.byteLength = t, this.detached = false)
 })[P], B = (G = function(e, t, n) {
   f(this, B), f(e, U);
   var r = x(e),
     i = r.byteLength,
-    o = _(t);
-  if (o < 0 || o > i) throw new V("Wrong offset");
-  if (n = true === n ? i - o : p(n), o + n > i) throw new V(w);
+    a = _(t);
+  if (a < 0 || a > i) throw new V("Wrong offset");
+  if (n = true === n ? i - a : p(n), a + n > i) throw new V(w);
   j(this, {
     type: R,
     buffer: e,
     byteLength: n,
-    byteOffset: o,
+    byteOffset: a,
     bytes: r.bytes
-  }), a || (this.buffer = e, this.byteLength = n, this.byteOffset = o)
-})[P], Chunk507604 && (ee(M, "byteLength", x), ee(G, "buffer", L), ee(G, "byteLength", L), ee(G, "byteOffset", L)), Chunk477732(B, {
+  }), o || (this.buffer = e, this.byteLength = n, this.byteOffset = a)
+})[P], Chunk507604 && (ee(k, "byteLength", x), ee(G, "buffer", L), ee(G, "byteLength", L), ee(G, "byteOffset", L)), Chunk477732(B, {
   getInt8: function(e) {
     return et(this, 1, e)[0] << 24 >> 24
   },
@@ -187,7 +187,7 @@ if (Chunk848120) {
     en(this, 8, e, $, t, arguments.length > 2 && arguments[2])
   }
 });
-Chunk25124(M, N), Chunk25124(G, R), module.exports = {
-  ArrayBuffer: M,
+Chunk25124(k, N), Chunk25124(G, R), module.exports = {
+  ArrayBuffer: k,
   DataView: G
 }

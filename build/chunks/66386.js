@@ -20,7 +20,7 @@ module.exports = function(e) {
     return
   }
   var n = e.props.editorState,
-    s = o(n, a(e)),
+    s = a(n, o(e)),
     l = s.selectionState;
   l !== n.getSelection() && (n = s.needsRecovery ? i.forceSelection(n, l) : i.acceptSelection(n, l), e.update(n))
 }

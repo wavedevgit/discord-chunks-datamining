@@ -2,19 +2,19 @@
 /** chunk id: 919570, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  GR: () => a,
+  GR: () => o,
   HQ: () => s,
-  gK: () => o,
+  gK: () => a,
   wu: () => r
 });
 let r = ["click", "mousedown", "mouseup", "keydown", "keyup", "keypress", "contextmenu"],
   i = null;
 
-function a() {
+function o() {
   return i
 }
 
-function o(e) {
+function a(e) {
   i = e
 }
 

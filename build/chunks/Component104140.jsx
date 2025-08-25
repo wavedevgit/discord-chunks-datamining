@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk722770 = require("./722770.js"),
   Chunk481060 = require("./481060.js"),
   Chunk591146 = require("./591146.js"),
@@ -56,8 +56,8 @@ function h(e, t) {
   if (null == e) return {};
   var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -65,8 +65,8 @@ function h(e, t) {
 function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let g = 16,
@@ -106,17 +106,17 @@ function O(e) {
       height: g
     },
     highlight: i = false,
-    rounded: a = false
-  } = e, o = h(e, ["selected", "lowerBadgeSize", "highlight", "rounded"]);
-  let s = !!o.isFolder,
+    rounded: o = false
+  } = e, a = h(e, ["selected", "lowerBadgeSize", "highlight", "rounded"]);
+  let s = !!a.isFolder,
     u = (0, c.Ml)("BlobMask"),
     d = (0, l.dQu)(l.TVs.modules.guildbar.AVATAR_SIZE),
     _ = (0, l.dQu)(l.TVs.modules.guildbar.FOLDER_SIZE),
     m = !u && s ? _ : d,
     E = m / 2;
-  return (0, r.jsx)(v, p(f({}, o), {
+  return (0, r.jsx)(v, p(f({}, a), {
     selected: t,
-    rounded: a,
+    rounded: o,
     baseViewBoxSize: m,
     viewBoxSize: m,
     style: {
@@ -134,7 +134,7 @@ function v(e) {
   let {
     children: t,
     viewBoxSize: n,
-    className: a,
+    className: o,
     style: l,
     innerClassName: c,
     isFolder: d,
@@ -149,22 +149,22 @@ function v(e) {
     T(true)
   }, A = () => {
     T(false)
-  }, C = null != m, N = null != O, R = i.useId(), P = "".concat(R, "-upper_badge_masks"), w = "".concat(R, "-lower_badge_masks"), D = "".concat(R, "-blob_mask"), x = "".concat(R, "-stroke_mask"), L = "".concat(R, "-highlight_mask"), j = (null == f ? true : f.width) != null ? f.width : g, k = (null == f ? true : f.height) != null ? f.height : g, M = {
+  }, C = null != m, N = null != O, R = i.useId(), P = "".concat(R, "-upper_badge_masks"), w = "".concat(R, "-lower_badge_masks"), D = "".concat(R, "-blob_mask"), x = "".concat(R, "-stroke_mask"), L = "".concat(R, "-highlight_mask"), j = (null == f ? true : f.width) != null ? f.width : g, M = (null == f ? true : f.height) != null ? f.height : g, k = {
     width: d ? n : n + 8,
     height: d ? n : n + 8,
     x: d ? 0 : false,
     y: d ? 0 : false
   }, U = d ? 20 : h, G = v ? y(n) : b(n);
   return (0, r.jsxs)("div", {
-    className: o()(a, u.wrapper),
+    className: a()(o, u.wrapper),
     style: l,
     onFocus: S,
     onBlur: A,
     children: [(0, r.jsxs)("svg", {
-      width: M.width,
-      height: M.height,
-      viewBox: "".concat(M.x, " ").concat(M.y, " ").concat(M.width, " ").concat(M.height),
-      className: o()(u.svg, {
+      width: k.width,
+      height: k.height,
+      viewBox: "".concat(k.x, " ").concat(k.y, " ").concat(k.width, " ").concat(k.height),
+      className: a()(u.svg, {
         [u.noContain]: _,
         [u.shiftSVG]: !d
       }),
@@ -188,9 +188,9 @@ function v(e) {
         }) : null, null != O ? (0, r.jsx)("rect", {
           id: w,
           x: n - (j + 2 * p) + p,
-          y: n - (k + 2 * p) + p,
+          y: n - (M + 2 * p) + p,
           width: j + 2 * p,
-          height: k + 2 * p,
+          height: M + 2 * p,
           rx: h / 2,
           ry: h / 2
         }) : null]
@@ -207,7 +207,7 @@ function v(e) {
         }), (0, r.jsx)("use", {
           href: "#".concat(D),
           fill: "white",
-          className: o()({
+          className: a()({
             [u.isHighlighted]: _
           })
         }), C ? (0, r.jsx)("use", {

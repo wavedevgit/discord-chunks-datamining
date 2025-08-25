@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk215569 = require("./215569.js"),
   Chunk257465 = require("./257465.jsx"),
@@ -26,17 +26,17 @@ function b(e) {
     imageClass: t,
     children: n,
     error: i,
-    onDismissError: a
+    onDismissError: o
   } = e;
   return (0, r.jsxs)("div", {
     className: E.content,
     children: [(0, r.jsx)("div", {
-      className: o()(E.image, t)
+      className: a()(E.image, t)
     }), n, (0, r.jsx)(l.W, {
       children: null != i ? (0, r.jsx)(_.oXn, {
         className: E.error,
         children: (0, r.jsx)(_.kzN, {
-          onDismiss: a,
+          onDismiss: o,
           children: i.message
         })
       }) : null
@@ -71,15 +71,15 @@ function O(e) {
     imageClass: t,
     blurb: n,
     guild: i,
-    warning: a,
-    error: o,
+    warning: o,
+    error: a,
     onDismissError: s,
     slotCount: l = 1,
     canceledCount: c = 0
   } = e;
   return (0, r.jsxs)(b, {
     imageClass: t,
-    error: o,
+    error: a,
     onDismissError: s,
     children: [(0, r.jsx)(_.Text, {
       variant: "text-md/normal",
@@ -90,7 +90,7 @@ function O(e) {
       subscriptionChange: l
     }), (0, r.jsx)(_.Text, {
       variant: "text-md/normal",
-      children: a
+      children: o
     }), c > 0 ? (0, r.jsx)(y, {
       canceledCount: c
     }) : null]
@@ -100,8 +100,8 @@ function O(e) {
 function v(e) {
   var t, n;
   let {
-    imageClass: a,
-    blurb: o,
+    imageClass: o,
+    blurb: a,
     fromGuilds: s,
     toGuild: l,
     error: c,
@@ -110,12 +110,12 @@ function v(e) {
     canceledCount: f = 0
   } = e, h = i.useRef(s), O = null == (t = h.current) ? true : t.length, v = null == (n = h.current) ? true : n.reduce((e, t) => (e.hasOwnProperty(t.id) || (e[t.id] = []), e[t.id].push(t), e), {});
   return (0, r.jsxs)(b, {
-    imageClass: a,
+    imageClass: o,
     error: c,
     onDismissError: u,
     children: [(0, r.jsx)(_.Text, {
       variant: "text-md/normal",
-      children: o
+      children: a
     }), (0, r.jsx)(_.Text, {
       variant: "text-xs/bold",
       className: E.transferGuildCardHeader,
@@ -150,8 +150,8 @@ function I(e) {
     confirmation: t,
     confirmationLabel: n,
     isModifyingSubscription: i,
-    onConfirm: a,
-    onCancel: o
+    onConfirm: o,
+    onCancel: a
   } = e;
   return (0, r.jsx)("div", {
     className: E.footer,
@@ -160,13 +160,13 @@ function I(e) {
       children: [(0, r.jsx)(_.zxk, {
         variant: "primary",
         text: t,
-        onClick: a,
+        onClick: o,
         loading: i,
         "aria-label": n
       }), (0, r.jsx)(_.zxk, {
         variant: "secondary",
         text: g.intl.string(g.t["ETE/oK"]),
-        onClick: o,
+        onClick: a,
         disabled: i
       })]
     })
@@ -192,8 +192,8 @@ let S = e => {
     transitionState: t,
     onClose: n,
     title: i,
-    subtitle: a,
-    imageClass: o,
+    subtitle: o,
+    imageClass: a,
     guild: s,
     warning: l,
     slotCount: _ = 1,
@@ -209,8 +209,8 @@ let S = e => {
     error: A,
     onDismissError: C
   } = e, N = T(E, b, y, I, S), R = () => h && null != g ? (0, r.jsx)(v, {
-    imageClass: null != o ? o : "",
-    blurb: a,
+    imageClass: null != a ? a : "",
+    blurb: o,
     fromGuilds: m,
     toGuild: g,
     error: A,
@@ -218,8 +218,8 @@ let S = e => {
     slotCount: _,
     canceledCount: p
   }) : null != s ? (0, r.jsx)(O, {
-    imageClass: null != o ? o : "",
-    blurb: a,
+    imageClass: null != a ? a : "",
+    blurb: o,
     guild: s,
     warning: l,
     error: A,

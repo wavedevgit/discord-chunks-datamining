@@ -12,9 +12,9 @@ function i(e) {
   return n
 }
 
-function a(e) {
+function o(e) {
   return !!e && ("object" == typeof e || "function" == typeof e) && "length" in e && !("setInterval" in e) && "number" != typeof e.nodeType && (Array.isArray(e) || "callee" in e || "item" in e)
 }
 module.exports = function(e) {
-  return a(e) ? Array.isArray(e) ? e.slice() : i(e) : [e]
+  return o(e) ? Array.isArray(e) ? e.slice() : i(e) : [e]
 }

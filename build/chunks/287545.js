@@ -106,8 +106,8 @@ async function X(e) {
     applicationId: n,
     location: r,
     instanceId: i
-  } = e, o = C.ZP.getEmbeddedActivityDurationMs(r.id, n), s = m.default.getSessionId();
-  null != i && null != s && await a.tn.post({
+  } = e, a = C.ZP.getEmbeddedActivityDurationMs(r.id, n), s = m.default.getSessionId();
+  null != i && null != s && await o.tn.post({
     url: U.ANM.ACTIVITY_LEAVE(n, r.id, i),
     body: {
       session_id: s
@@ -136,7 +136,7 @@ async function X(e) {
     media_session_id: l.mediaSessionIds[0],
     activity_session_id: l.activitySessionId,
     application_id: n,
-    duration_ms: o,
+    duration_ms: a,
     user_premium_tier: f.premiumType,
     raw_thermal_state: b,
     release_phase: E,
@@ -153,7 +153,7 @@ async function X(e) {
     media_session_ids: l.mediaSessionIds,
     activity_user_session_id: l.activityUserSessionId,
     raw_thermal_state: b,
-    duration_ms: o,
+    duration_ms: a,
     embedded_activity_location_kind: r.kind
   }), delete F[n]
 }
@@ -162,14 +162,14 @@ function Q(e) {
   var t, n;
   let {
     applicationId: r,
-    isFirstActivityInChannel: a,
-    isStart: o,
+    isFirstActivityInChannel: o,
+    isStart: a,
     participants: l,
     embeddedActivity: c,
     location: u,
     inviterUserId: f
   } = e, h = m.default.getId(), b = l.find(e => e.userId === h), v = (0, L.p)(u), I = (0, L.j)(u), A = g.Z.getChannel(v);
-  if (o && null != A && A.isPrivate() && a && null == b && s.Z.selectParticipant(A.id, null), null == b) return;
+  if (a && null != A && A.isPrivate() && o && null == b && s.Z.selectParticipant(A.id, null), null == b) return;
   let R = E.Z.getMediaSessionId(),
     P = c.compositeInstanceId,
     w = null == R && (null == A ? true : A.isVocal()) === true && (null == A ? true : A.isPrivate()) === false;
@@ -178,13 +178,13 @@ function Q(e) {
     x = "location" in c ? 2 : 1,
     j = y.default.getCurrentUser();
   if (null == j) return;
-  let k = C.ZP.getShelfActivities(I),
-    M = S.Z.getState().shelfOrder,
+  let M = C.ZP.getShelfActivities(I),
+    k = S.Z.getState().shelfOrder,
     G = (0, N.Z)({
       applicationId: r,
-      activityConfigs: k
+      activityConfigs: M
     }),
-    B = 1 + M.findIndex(e => e === r),
+    B = 1 + k.findIndex(e => e === r),
     {
       releasePhase: Z
     } = Y(G),
@@ -209,7 +209,7 @@ function Q(e) {
     user_premium_tier: j.premiumType,
     raw_thermal_state: H,
     n_participants: null != A ? _.Z.getUserParticipantCount(A.id) : null,
-    is_activity_start: o,
+    is_activity_start: a,
     release_phase: Z,
     shelf_rank: null == G || null == (t = G.activity) ? true : t.shelf_rank,
     shelf_sorted_rank: B > 0 ? B : null,
@@ -230,7 +230,7 @@ function Q(e) {
     initial_media_session_id: W[0],
     activity_user_session_id: D,
     raw_thermal_state: H,
-    is_activity_start: o,
+    is_activity_start: a,
     shelf_rank: null == G || null == (n = G.activity) ? true : n.shelf_rank,
     shelf_sorted_rank: B > 0 ? B : null,
     activities_infra_version: x,
@@ -257,7 +257,7 @@ class $ extends Chunk317770.Z {
         }
         of C.ZP.getSelfEmbeddedActivities().values()) {
         let r = (0, L.p)(t);
-        null != r && (0, M.Z)(r) && r !== e && this.leaveActivity({
+        null != r && (0, k.Z)(r) && r !== e && this.leaveActivity({
           location: t,
           applicationId: n
         })
@@ -294,19 +294,19 @@ class $ extends Chunk317770.Z {
         nonce: n,
         channelId: r,
         guildId: i,
-        applicationId: a,
-        isStart: o,
+        applicationId: o,
+        isStart: a,
         locationKind: s
-      } = e, l = K(a, n), c = await (0, x.k)(t, a);
+      } = e, l = K(o, n), c = await (0, x.k)(t, o);
       this.showLaunchErrorModal(c.message);
       let u = g.Z.getChannel(r),
         d = p.Z.getRawThermalState();
       O.default.track(U.rMx.ACTIVITY_SESSION_JOIN_FAILED, {
         channel_id: r,
         guild_id: null != i ? i : null == u ? true : u.getGuildId(),
-        application_id: a,
+        application_id: o,
         raw_thermal_state: d,
-        is_activity_start: o,
+        is_activity_start: a,
         channel_type: null == u ? true : u.type,
         location_stack: null == l ? true : l.locations,
         error_type: c.errorType,
@@ -354,17 +354,17 @@ class $ extends Chunk317770.Z {
       var t, n, r;
       let {
         channelId: i,
-        applicationId: a,
-        analyticsLocations: o,
+        applicationId: o,
+        analyticsLocations: a,
         commandOrigin: s,
         inviterUserId: l
       } = e, c = g.Z.getChannel(i);
       if (true === c || h.tx.has(null == c ? true : c.type) && b.Z.getVoiceChannelId() !== i) return;
       let u = C.ZP.getSelfEmbeddedActivityForChannel(i);
-      if ((null == u ? true : u.applicationId) === a) return;
-      let d = await f.ZP.fetchApplication(a);
+      if ((null == u ? true : u.applicationId) === o) return;
+      let d = await f.ZP.fetchApplication(o);
       if (!(0, D.a)()) return void this.showLaunchErrorModal(G.intl.string(G.t.UXoQTk));
-      if (!(0, k.Z)(null == d || null == (t = d.embedded_activity_config) ? true : t.supported_platforms)) return void this.showLaunchErrorModal(G.intl.string(G.t.uGDCc3));
+      if (!(0, M.Z)(null == d || null == (t = d.embedded_activity_config) ? true : t.supported_platforms)) return void this.showLaunchErrorModal(G.intl.string(G.t.uGDCc3));
       let _ = null != (n = null == c ? true : c.getGuildId()) ? n : true,
         {
           activityConfigs: p,
@@ -373,7 +373,7 @@ class $ extends Chunk317770.Z {
           guildId: _
         });
       if (null == (0, N.Z)({
-          applicationId: a,
+          applicationId: o,
           activityConfigs: p,
           applications: m
         })) {
@@ -382,23 +382,23 @@ class $ extends Chunk317770.Z {
           force: true
         });
         (0, N.Z)({
-          applicationId: a,
+          applicationId: o,
           activityConfigs: e.activityConfigs,
           applications: e.applications
         })
       }
-      let E = C.ZP.getEmbeddedActivitiesForChannel(i).find(e => e.applicationId === a);
+      let E = C.ZP.getEmbeddedActivitiesForChannel(i).find(e => e.applicationId === o);
       (null != (r = null == E ? true : E.userIds.size) ? r : 0) > 0 ? await (0, P.k)({
         channelId: i,
-        applicationId: a,
+        applicationId: o,
         launchId: null == E ? true : E.launchId,
         inputApplication: null,
-        analyticsLocations: o,
+        analyticsLocations: a,
         inviterUserId: l
       }) : await (0, w.Z)({
-        targetApplicationId: a,
+        targetApplicationId: o,
         channelId: i,
-        analyticsLocations: o,
+        analyticsLocations: a,
         commandOrigin: s,
         inviterUserId: l
       })

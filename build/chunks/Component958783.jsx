@@ -2,21 +2,21 @@
 /** chunk id: 958783, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => a
+  Z: () => o
 });
 var Chunk951288 = require("./951288.js"),
   Chunk950671 = require("./950671.js");
-let a = e => {
+let o = e => {
   let {
     assetComponent: t,
     tooltipWordmarkComponent: n,
-    children: a
+    children: o
   } = e;
   return (0, r.jsxs)("div", {
     className: i.tooltipContainer,
     children: [t, (0, r.jsx)("div", {
       className: i.tooltipWordmarkContainer,
       children: n
-    }), a]
+    }), o]
   })
 }

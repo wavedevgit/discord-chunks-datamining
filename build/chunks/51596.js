@@ -2,8 +2,8 @@
 /** chunk id: 51596, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $Z: () => k,
-  Cp: () => M,
+  $Z: () => M,
+  Cp: () => k,
   F_: () => D,
   Se: () => Z,
   ZN: () => U,
@@ -102,14 +102,14 @@ function L(e, t) {
     results: n,
     queryMode: r,
     query: i,
-    maxQueryLength: a
-  } = I.Z.getProps(), o = y.Z.getGuildId(), s = b.Z.getChannelId(o), l = n[(0, u.gJ)(u.a8.DOWN, false, n)], c = v.Z.isEmail(i), d = v.Z.isPhoneNumber(i), f = v.Z.isUserTagLike(i), _ = null != s && (0, S.AB)(s), p = e => null == e ? null : e.type === u.h8.IN_APP_NAVIGATION ? e.type + "_" + e.record.type : e.type, h = {
+    maxQueryLength: o
+  } = I.Z.getProps(), a = y.Z.getGuildId(), s = b.Z.getChannelId(a), l = n[(0, u.gJ)(u.a8.DOWN, false, n)], c = v.Z.isEmail(i), d = v.Z.isPhoneNumber(i), f = v.Z.isUserTagLike(i), _ = null != s && (0, S.AB)(s), p = e => null == e ? null : e.type === u.h8.IN_APP_NAVIGATION ? e.type + "_" + e.record.type : e.type, h = {
     current_channel_id: _ ? true : s,
     current_channel_static_route: _ ? s : true,
-    current_guild_id: o,
+    current_guild_id: a,
     query_mode: null != r ? r : "GENERAL",
     query_length: i.length,
-    max_query_length: a,
+    max_query_length: o,
     is_email_like: c,
     is_phone_like: d,
     is_username_like: f,
@@ -157,7 +157,7 @@ function j() {
   })
 }
 
-function k() {
+function M() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : "KEYBIND",
     t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : "";
   x(module), Chunk570140.Z.dispatch(C({
@@ -165,13 +165,13 @@ function k() {
   }, D(exports)))
 }
 
-function M() {
+function k() {
   L(Chunk981631.rMx.QUICKSWITCHER_CLOSED), j()
 }
 
 function U() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : "KEYBIND";
-  Chunk823385.Z.isOpen() ? M() : k(module)
+  Chunk823385.Z.isOpen() ? k() : M(module)
 }
 
 function G(e) {
@@ -211,7 +211,7 @@ function Z(e) {
       });
       break;
     case u.h8.VOICE_CHANNEL:
-      null != (t = g.Z.getChannel(b.id)) && (n ? o.Z.updateChatOpen(b.id, true) : l.default.selectVoiceChannel(b.id), (0, _.Kh)(t.id, {
+      null != (t = g.Z.getChannel(b.id)) && (n ? a.Z.updateChatOpen(b.id, true) : l.default.selectVoiceChannel(b.id), (0, _.Kh)(t.id, {
         state: {
           analyticsSource: y
         },
@@ -219,7 +219,7 @@ function Z(e) {
       }));
       break;
     case u.h8.USER:
-      a.Z.openPrivateChannel({
+      o.Z.openPrivateChannel({
         recipientIds: [b.id],
         location: "Quickswitcher"
       }), s.Z.channelListScrollTo(T.ME, g.Z.getDMFromUserId(b.id));

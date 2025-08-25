@@ -7,8 +7,8 @@ require.d(exports, {
 var Chunk644387 = require("./644387.js"),
   Chunk219845 = require("./219845.js"),
   Chunk383466 = require("./383466.js"),
-  o = function(e) {
-    return !(0, a.zd)(e) && !(0, a.jD)(e) && "inline" === getComputedStyle(e).display
+  a = function(e) {
+    return !(0, o.zd)(e) && !(0, o.jD)(e) && "inline" === getComputedStyle(e).display
   },
   s = function() {
     function e(e, t) {
@@ -19,6 +19,6 @@ var Chunk644387 = require("./644387.js"),
     }
     return module.prototype.isActive = function() {
       var e = (0, Chunk219845.Y9)(this.target, this.observedBox);
-      return o(this.target) && (this.lastReportedSize = module), this.lastReportedSize.inlineSize !== module.inlineSize || this.lastReportedSize.blockSize !== module.blockSize
+      return a(this.target) && (this.lastReportedSize = module), this.lastReportedSize.inlineSize !== module.inlineSize || this.lastReportedSize.blockSize !== module.blockSize
     }, module
   }()

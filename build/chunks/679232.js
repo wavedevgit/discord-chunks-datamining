@@ -1,7 +1,7 @@
-/** Chunk was on 36878 **/
+/** Chunk was on 76210 **/
 /** chunk id: 679232, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  Z: () => a
 }), require("./388685.js");
 var Chunk509613 = require("./509613.js"),
   Chunk960412 = require("./960412.js"),
@@ -9,7 +9,7 @@ var Chunk509613 = require("./509613.js"),
   Chunk352486 = require("./352486.js"),
   Chunk611811 = require("./611811.js"),
   Chunk388032 = require("./388032.jsx");
-let u = (0, Chunk509613.k4)("NotificationsEmail", {
+let a = (0, Chunk509613.k4)("NotificationsEmail", {
   useTitle: () => Chunk388032.intl.string(Chunk388032.t["w/qqKC"]),
   init: function() {
     let {

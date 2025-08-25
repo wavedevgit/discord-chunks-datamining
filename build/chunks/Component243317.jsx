@@ -53,7 +53,7 @@ function d() {
   return (0, Chunk951288.jsx)(Chunk481060.ua7, {
     text: Chunk388032.intl.string(Chunk388032.t["RO/KYm"]),
     children: e => (0, r.jsx)("div", u(l({
-      className: o.badge
+      className: a.badge
     }, e), {
       children: (0, r.jsx)(i.LQn, {
         color: "currentColor",

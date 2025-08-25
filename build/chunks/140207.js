@@ -4,17 +4,17 @@
 var r = require("./65183.js").Map;
 module.exports = function(e, t, n) {
   var i = t.getStartKey(),
-    a = t.getEndKey(),
-    o = e.getBlockMap(),
-    s = o.toSeq().skipUntil(function(e, t) {
+    o = t.getEndKey(),
+    a = e.getBlockMap(),
+    s = a.toSeq().skipUntil(function(e, t) {
       return t === i
     }).takeUntil(function(e, t) {
-      return t === a
+      return t === o
     }).concat(r([
-      [a, o.get(a)]
+      [o, a.get(o)]
     ])).map(n);
   return e.merge({
-    blockMap: o.merge(s),
+    blockMap: a.merge(s),
     selectionBefore: t,
     selectionAfter: t
   })

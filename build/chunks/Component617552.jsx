@@ -55,8 +55,8 @@ function p(e, t) {
   if (null == e) return {};
   var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -64,8 +64,8 @@ function p(e, t) {
 function h(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -86,7 +86,7 @@ function m(e) {
     m = () => {
       t(), l.onClose()
     };
-  return (0, r.jsx)(a.Modal, _(d({}, l), {
+  return (0, r.jsx)(o.Modal, _(d({}, l), {
     size: "md",
     title: c.intl.string(c.t.ye21jI),
     subtitle: c.intl.string(c.t.hbagWF),
@@ -99,11 +99,11 @@ function m(e) {
       onClick: m,
       variant: "primary"
     }],
-    actionBarInput: (0, r.jsx)(o.XZJ, {
+    actionBarInput: (0, r.jsx)(a.XZJ, {
       value: u,
       onChange: (e, t) => f(t),
-      type: o.XZJ.Types.DEFAULT,
-      children: (0, r.jsx)(o.Text, {
+      type: a.XZJ.Types.DEFAULT,
+      children: (0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
         color: "text-secondary",
         children: c.intl.string(c.t.wGAwOT)
@@ -118,8 +118,8 @@ function g(e) {
     onCancel: n,
     usesPopoutContext: i = false
   } = e;
-  l.ZP.disableEmbeddedActivityPopOutAlert ? t() : (0, o.h7j)(e => (0, r.jsx)(m, _(d({}, e), {
+  l.ZP.disableEmbeddedActivityPopOutAlert ? t() : (0, a.h7j)(e => (0, r.jsx)(m, _(d({}, e), {
     onConfirm: t,
     onCancel: n
-  })), {}, i ? o.u1M : true)
+  })), {}, i ? a.u1M : true)
 }

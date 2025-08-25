@@ -13,9 +13,9 @@ let s = e => {
   let {
     header: t,
     displayType: n
-  } = e, s = (0, a.C7)(n) > 0 ? "text-brand" : "text-muted", l = (0, a.A)(n);
+  } = e, s = (0, o.C7)(n) > 0 ? "text-brand" : "text-muted", l = (0, o.A)(n);
   return (0, r.jsxs)("div", {
-    className: o.counter,
+    className: a.counter,
     children: [(0, r.jsx)(i.X6q, {
       variant: "heading-xxl/medium",
       color: s,
@@ -24,7 +24,7 @@ let s = e => {
       })
     }), (0, r.jsx)(i.Text, {
       variant: "text-sm/semibold",
-      className: o.counterText,
+      className: a.counterText,
       children: t
     })]
   })

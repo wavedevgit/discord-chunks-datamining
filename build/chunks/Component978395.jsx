@@ -42,8 +42,8 @@ function L(e) {
     currentUser: n,
     displayProfile: L,
     guild: j,
-    isHovering: k,
-    onOpenProfile: M,
+    isHovering: M,
+    onOpenProfile: k,
     channelId: U,
     onClose: G
   } = e, B = u.ZP.useName(null == j ? true : j.id, U, t), {
@@ -52,15 +52,15 @@ function L(e) {
   } = (0, i.cj)([l.Z], () => ({
     relationshipType: l.Z.getRelationshipType(t.id),
     originApplicationId: l.Z.getOriginApplicationId(t.id)
-  })), V = (0, o.vh)(t.id), H = (0, i.e7)([c.Z], () => c.Z.hidePersonalInformation), Y = (0, f.b)({
+  })), V = (0, a.vh)(t.id), H = (0, i.e7)([c.Z], () => c.Z.hidePersonalInformation), Y = (0, f.b)({
     location: "UserProfilePopoutBody"
   }), W = t.id === n.id, K = (null == L ? true : L.widgets) != null && L.widgets.length > 0, z = (0, d.I5)(n);
-  return (0, r.jsxs)(a.Ttm, {
+  return (0, r.jsxs)(o.Ttm, {
     fade: true,
     className: x.body,
     children: [(0, r.jsx)(v.Z, {
       user: t,
-      onOpenProfile: M,
+      onOpenProfile: k,
       onClose: G,
       usernameIcon: t.hasAvatarForGuild(null == j ? true : j.id) && (0, r.jsx)(A.Z, {
         user: t,
@@ -78,8 +78,8 @@ function L(e) {
           userId: t.id
         }), !H && (0, r.jsx)(I.Z, {
           userId: t.id,
-          isHovering: k,
-          onOpenProfile: M
+          isHovering: M,
+          onOpenProfile: k
         })]
       })
     }), Z === P.OGo.PENDING_INCOMING && (0, r.jsx)(O.Z.Overlay, {
@@ -100,16 +100,16 @@ function L(e) {
       user: t
     }), !W && (0, r.jsx)(N.Z, {
       user: t,
-      onOpenProfile: e => null == M ? true : M({
+      onOpenProfile: e => null == k ? true : k({
         section: e
       })
     }), t.isProvisional ? (0, r.jsx)(O.Z.Overlay, {
       className: x.card,
       children: (0, r.jsx)(b.Z, {
         heading: D.intl.string(D.t.Iyka0d),
-        headingIcon: (0, r.jsx)(a.Mgn, {
+        headingIcon: (0, r.jsx)(o.Mgn, {
           size: "xxs",
-          color: a.TVs.colors.HEADER_PRIMARY
+          color: o.TVs.colors.HEADER_PRIMARY
         }),
         headingColor: "header-primary",
         children: (0, r.jsx)(s.n, {
@@ -124,7 +124,7 @@ function L(e) {
     }), K && (0, r.jsx)(T.Z, {
       widgets: null == L ? true : L.widgets,
       onClick: () => {
-        null == M || M({
+        null == k || k({
           section: R.oh.WIDGETS
         })
       }
@@ -135,7 +135,7 @@ function L(e) {
       user: t,
       currentUser: n,
       guildId: null == j ? true : j.id,
-      onOpenUserProfileModal: M,
+      onOpenUserProfileModal: k,
       onClose: G
     }) : (0, r.jsx)(h.Z, {
       user: t,

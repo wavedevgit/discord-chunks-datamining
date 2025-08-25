@@ -43,23 +43,23 @@ class f {
       var r;
       if (null == this.readStateVersion) return;
       let t = "0",
-        a = "0",
-        s = Object.keys(o.Z.getMutablePrivateChannels()),
+        o = "0",
+        s = Object.keys(a.Z.getMutablePrivateChannels()),
         u = new Set(s);
-      for (let e of (a = null != (r = i()(s).sort(l.default.compare).reverse().value()[0]) ? r : "0", n)) null != e._lastMessageId && (1 === l.default.compare(e._lastMessageId, t) && (t = e._lastMessageId), u.has(e.channelId) && 1 === l.default.compare(e._lastMessageId, a) && (a = e._lastMessageId));
+      for (let e of (o = null != (r = i()(s).sort(l.default.compare).reverse().value()[0]) ? r : "0", n)) null != e._lastMessageId && (1 === l.default.compare(e._lastMessageId, t) && (t = e._lastMessageId), u.has(e.channelId) && 1 === l.default.compare(e._lastMessageId, o) && (o = e._lastMessageId));
       c.Z.nonGuildVersionsTransaction(e).putAll([{
         id: "highest_last_message_id",
         versionString: t
       }, {
         id: "private_channels_version",
-        versionString: a
+        versionString: o
       }, {
         id: "read_state_version",
         version: this.readStateVersion
       }])
     }
-    let a = c.Z.readStatesTransaction(e);
-    a.delete(), n.forEach(e => a.put("".concat(e.type, "-").concat(e.channelId), e))
+    let o = c.Z.readStatesTransaction(e);
+    o.delete(), n.forEach(e => o.put("".concat(e.type, "-").concat(e.channelId), e))
   }
   constructor() {
     u(this, "readStateVersion", null), u(this, "actions", {

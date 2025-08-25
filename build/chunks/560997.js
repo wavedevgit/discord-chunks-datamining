@@ -35,7 +35,7 @@ function u(e, t) {
 }
 
 function d(e, t, n, i) {
-  let a = arguments.length > 4 && true !== arguments[4] ? arguments[4] : l.fy.INFREQUENT_USER_ACTION,
+  let o = arguments.length > 4 && true !== arguments[4] ? arguments[4] : l.fy.INFREQUENT_USER_ACTION,
     c = () => {
       var r;
       return n(null == (r = s.Z.settings[e]) ? true : r[t])
@@ -43,30 +43,30 @@ function d(e, t, n, i) {
     u = () => (0, r.e7)([s.Z], c);
   return {
     getSetting: c,
-    updateSetting: h(c, n => o.hW.updateAsync(e, e => {
+    updateSetting: h(c, n => a.hW.updateAsync(e, e => {
       e[t] = i(n, e[t])
-    }, a)),
+    }, o)),
     useSetting: u
   }
 }
 
 function f(e, t, n) {
-  let o = () => {
+  let a = () => {
     var r;
-    let i = a.Z.getState()[t];
+    let i = o.Z.getState()[t];
     return null != (r = null == i ? true : i.settings[n]) ? r : e.getSetting()
   };
   return {
-    getSetting: o,
+    getSetting: a,
     useSetting: () => {
       let i = e.useSetting(),
-        o = (0, r.e7)([a.Z], () => {
-          let e = a.Z.getState()[t];
+        a = (0, r.e7)([o.Z], () => {
+          let e = o.Z.getState()[t];
           return null == e ? true : e.settings[n]
         });
-      return null != o ? o : i
+      return null != a ? a : i
     },
-    updateSetting: h(o, r => a.Z.shouldSync(t) ? e.updateSetting(r) : (i.Z.dispatch({
+    updateSetting: h(a, r => o.Z.shouldSync(t) ? e.updateSetting(r) : (i.Z.dispatch({
       type: "SELECTIVELY_SYNCED_USER_SETTINGS_UPDATE",
       changes: {
         [t]: {
@@ -80,18 +80,18 @@ function f(e, t, n) {
 }
 
 function _(e, t, n, r) {
-  let a = () => {
+  let o = () => {
     var t;
     return null != (t = n()) ? t : e.getSetting()
   };
   return {
-    getSetting: a,
+    getSetting: o,
     useSetting: () => {
       let t = e.useSetting(),
         n = r();
       return null != n ? n : t
     },
-    updateSetting: h(a, n => (i.Z.dispatch({
+    updateSetting: h(o, n => (i.Z.dispatch({
       type: "USER_SETTINGS_OVERRIDE_CLEAR",
       settings: [t]
     }), e.updateSetting(n)))
@@ -104,18 +104,18 @@ function p(e) {
     isEligible: n,
     useIsEligible: r,
     eligibleDefault: i,
-    ineligibleDefault: a,
-    onUseDefault: o
+    ineligibleDefault: o,
+    onUseDefault: a
   } = e;
   return {
     getSetting: () => {
       let e = t.getSetting();
-      return null != e ? e : (null == o || o(), n() ? i() : a)
+      return null != e ? e : (null == a || a(), n() ? i() : o)
     },
     useSetting: () => {
       let e = t.useSetting(),
         n = r();
-      return null != e ? e : (null == o || o(), n ? i() : a)
+      return null != e ? e : (null == a || a(), n ? i() : o)
     },
     updateSetting: e => t.updateSetting(e)
   }

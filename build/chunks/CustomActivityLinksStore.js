@@ -24,8 +24,8 @@ function c(e) {
     link: n
   } = e;
   null == l[t] ? l[t] = {
-    [n.link_id]: new o.Z(n)
-  } : l[t][n.link_id] = new o.Z(n)
+    [n.link_id]: new a.Z(n)
+  } : l[t][n.link_id] = new a.Z(n)
 }
 
 function u() {

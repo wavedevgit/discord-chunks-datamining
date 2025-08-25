@@ -23,7 +23,7 @@ let g = e => {
     let {
       title: t,
       buttonText: n,
-      onButtonPress: o
+      onButtonPress: a
     } = e;
     return (0, r.jsxs)(i.Kq, {
       justify: "space-between",
@@ -34,9 +34,9 @@ let g = e => {
         variant: "text-sm/semibold",
         color: "interactive-active",
         children: t
-      }), (0, r.jsx)(a.zxk, {
+      }), (0, r.jsx)(o.zxk, {
         text: n,
-        onClick: o,
+        onClick: a,
         variant: "secondary",
         size: "sm"
       })]
@@ -47,11 +47,11 @@ let g = e => {
       t = (0, Chunk631885.mq)(Chunk292352.ne.ACTIVE),
       n = (0, Chunk277537.PO)("settings-controls"),
       {
-        handleTabChange: a
+        handleTabChange: o
       } = (0, Chunk841409.Z)();
     if (!require || 0 === exports.length) return null;
     let E = e => {
-        a(e)
+        o(e)
       },
       b = () => {
         (0, Chunk37234.xf)(), Chunk493683.Z.openPrivateChannel({

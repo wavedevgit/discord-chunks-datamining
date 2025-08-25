@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -39,7 +39,7 @@ class c extends(r = Chunk442837.ZP.PersistedStore) {
     return s
   }
 }
-o(c, "displayName", "ChannelListVoiceCategoryStore"), o(c, "persistKey", "ChannelListVoiceCategoryStore");
+a(c, "displayName", "ChannelListVoiceCategoryStore"), a(c, "persistKey", "ChannelListVoiceCategoryStore");
 let u = new c(Chunk570140.Z, {
   VOICE_CATEGORY_COLLAPSE: l,
   VOICE_CATEGORY_EXPAND: l

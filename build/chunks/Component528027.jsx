@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk596454 = require("./596454.jsx"),
   Chunk377171 = require("./377171.js"),
   Chunk403910 = require("./403910.js"),
@@ -22,13 +22,13 @@ function d(e) {
     emojiName: d,
     className: f
   } = e, _ = (0, l.Z)(n, i);
-  return null != _ || null != d ? (0, r.jsx)(o.Z, {
+  return null != _ || null != d ? (0, r.jsx)(a.Z, {
     emojiId: null == _ ? true : _.id,
     emojiName: null != d ? d : null == _ ? true : _.name,
     animated: null != (t = null == _ ? true : _.animated) && t,
-    className: a()(u.emojiIcon, f)
+    className: o()(u.emojiIcon, f)
   }) : (0, r.jsx)(c.Z, {
-    className: a()(u.emojiIcon, f),
+    className: o()(u.emojiIcon, f),
     color: s.Z.CREATOR_REVENUE_LOCKED_CHANNEL_ICON
   })
 }

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   l = require.n(Chunk392711),
   Chunk91192 = require("./91192.jsx"),
@@ -72,23 +72,23 @@ function x(e, t) {
 }
 let L = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_GUILD_CATEGORY_ICON_SIZE),
   j = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_GUILD_CATEGORY_ICON_MARGIN_VERICAL),
-  k = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_UNICODE_CATEGORY_ICON_SIZE),
-  M = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_UNICODE_CATEGORY_ICON_MARGIN_VERTICAL),
+  M = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_UNICODE_CATEGORY_ICON_SIZE),
+  k = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_UNICODE_CATEGORY_ICON_MARGIN_VERTICAL),
   U = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_UNICODE_CATEGORY_ICON_PADDING),
   G = (0, Chunk624138.Mg)(Chunk911166.__invalid_unicodeCategoryShortcutHeight),
   B = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_CATEGORY_SEPARATOR_SIZE),
   Z = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_CATEGORY_SEPARATOR_MARGIN_VERTICAL),
-  F = k + j + 2 * U,
+  F = M + j + 2 * U,
   V = L + j,
   H = V + (B + 2 * Z),
-  Y = k + M + 2 * U,
+  Y = M + k + 2 * U,
   W = 7;
 
 function K(e) {
   let {
     activeIndex: t,
     categoryIndex: n,
-    analyticsContext: a,
+    analyticsContext: o,
     categories: s,
     category: l,
     handleCategorySelect: u,
@@ -96,7 +96,7 @@ function K(e) {
     useReducedMotion: _
   } = e, p = (0, c.JA)("expression-guild-".concat(n)), h = l.type === S.En.GUILD ? null : l.id, m = t === n, E = l.type === S.En.GUILD ? l.guild : null, y = (0, r.jsxs)(f.P3F, x(w({}, p), {
     "aria-label": (0, O.Nf)(l, E),
-    className: o()({
+    className: a()({
       [R.categoryItemGuildCategory]: null != E,
       [R.categoryItemDefaultCategory]: null == E,
       [R.categoryItemDefaultCategorySelected]: null == E && m,
@@ -104,7 +104,7 @@ function K(e) {
     }),
     onClick: () => {
       null != E && b.default.track(A.rMx.EXPRESSION_PICKER_CATEGORY_SELECTED, {
-        location: null == a ? true : a.location,
+        location: null == o ? true : o.location,
         tab: C.X1.EMOJI,
         guild_id: E.id
       }), u(n)
@@ -117,8 +117,8 @@ function K(e) {
     }) : null, null == E && null != h ? (0, r.jsx)(v.Z, {
       categoryId: h,
       className: R.categoryIcon,
-      height: k,
-      width: k,
+      height: M,
+      width: M,
       size: "custom"
     }) : null]
   })), T = s[n + 1], N = null != T && l.type === S.En.GUILD && T.type !== S.En.GUILD;
@@ -138,13 +138,13 @@ let z = e => {
   let {
     className: t,
     emojiListRef: n,
-    sectionDescriptors: a,
+    sectionDescriptors: o,
     intention: s,
     channel: c,
     shouldShowSoundmojiInEmojiPicker: d = false,
     showOnlyUnicode: g = false
   } = e, b = h.kJ.useStore(e => e.activeCategoryIndex), y = (0, T.Ni)({
-    sectionDescriptors: a,
+    sectionDescriptors: o,
     emojiListRef: n
   }), v = (0, _.O)(), I = (0, O.kI)(s, c, null == c ? true : c.guild_id, d), A = i.useMemo(() => g ? (0, O.ZF)() : I, [I, g]), C = i.useRef(null), P = (0, u.e7)([E.Z], () => E.Z.isFocused()), w = (0, u.e7)([p.Z], () => p.Z.useReducedMotion, []), D = i.useMemo(() => l().memoize((e, t) => {
     let n = A[t];
@@ -203,7 +203,7 @@ let z = e => {
       let n = A[e];
       if (null == n) return 0;
       let r = Q ? G : 0;
-      if (n.type === S.En.RECENT) return t ? 0 : M;
+      if (n.type === S.En.RECENT) return t ? 0 : k;
       if (n.type === S.En.GUILD) {
         let n = A[e + 1];
         return null != n && n.type !== S.En.GUILD ? t ? B + false * Z + j + r : j : t ? r : j
@@ -233,7 +233,7 @@ let z = e => {
     children: e => U >= W && (0, r.jsx)(f.P3F, {
       "aria-hidden": !Q,
       "aria-label": N.intl.string(N.t.dT0ct7),
-      className: o()(R.unicodeShortcut, {
+      className: a()(R.unicodeShortcut, {
         [R.unicodeShortcutInvisible]: !Q
       }),
       tabIndex: Q ? 0 : false,
@@ -241,8 +241,8 @@ let z = e => {
       children: (0, r.jsx)(f.EO4, {
         size: "custom",
         color: "currentColor",
-        height: k,
-        width: k
+        height: M,
+        width: M
       })
     }, er)
   })

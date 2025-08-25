@@ -13,13 +13,13 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js");
 
 function l(e) {
-  return e.type !== o.A3.INACTIVE
+  return e.type !== a.A3.INACTIVE
 }
 
 function c(e, t) {
   var n, l;
   let c = (0, r.e7)([i.Z], () => i.Z.getGuild(e)),
-    u = (0, r.e7)([a.Z], () => a.Z.getStateForGuild(e)),
+    u = (0, r.e7)([o.Z], () => o.Z.getStateForGuild(e)),
     d = null != (l = null == c || null == (n = c.features) ? true : n.has(s.oNc.PREMIUM_TIER_3_OVERRIDE)) && l;
 
   function f(e) {
@@ -27,26 +27,26 @@ function c(e, t) {
       isActiveFromLevel: t,
       levelEntitlement: n,
       levelPowerup: r
-    } = _(e), i = p(e), a = h(e), s = null != a, l = {
-      type: o.A3.INACTIVE,
+    } = _(e), i = p(e), o = h(e), s = null != o, l = {
+      type: a.A3.INACTIVE,
       powerup: e,
       sourceEntitlement: true,
       sourcePowerup: true
     };
     return t ? l = {
-      type: o.A3.LEVEL_ACTIVATED,
+      type: a.A3.LEVEL_ACTIVATED,
       powerup: e,
       sourceEntitlement: n,
       sourcePowerup: r
     } : i ? l = {
-      type: o.A3.TIER_OVERRIDE_ACTIVATED,
+      type: a.A3.TIER_OVERRIDE_ACTIVATED,
       powerup: e,
       sourceEntitlement: true,
       sourcePowerup: e
     } : s && (l = {
-      type: o.A3.POWERUP_ACTIVATED,
+      type: a.A3.POWERUP_ACTIVATED,
       powerup: e,
-      sourceEntitlement: a,
+      sourceEntitlement: o,
       sourcePowerup: e
     }), l
   }
@@ -58,23 +58,23 @@ function c(e, t) {
       levelEntitlement: true,
       levelPowerup: true
     };
-    let r = o.Rx[e.skuId];
+    let r = a.Rx[e.skuId];
     if (null == r) return {
       isActiveFromLevel: false,
       levelEntitlement: true,
       levelPowerup: true
     };
     let i = c.premiumTier >= r,
-      a = o.Cp[r];
+      o = a.Cp[r];
     return {
       isActiveFromLevel: i,
-      levelEntitlement: null != a ? null == (t = u.unlockedPowerups) ? true : t[a] : true,
-      levelPowerup: null != a ? null == (n = u.allPowerups) ? true : n[a] : true
+      levelEntitlement: null != o ? null == (t = u.unlockedPowerups) ? true : t[o] : true,
+      levelPowerup: null != o ? null == (n = u.allPowerups) ? true : n[o] : true
     }
   }
 
   function p(e) {
-    return d && o.ad.has(e.skuId)
+    return d && a.ad.has(e.skuId)
   }
 
   function h(e) {
@@ -87,7 +87,7 @@ function c(e, t) {
 function u(e, t) {
   let n = c(e, null == t ? [] : [t]);
   return n.length <= 0 ? {
-    type: o.A3.INACTIVE,
+    type: a.A3.INACTIVE,
     sourceEntitlement: true,
     sourcePowerup: true
   } : n[0]

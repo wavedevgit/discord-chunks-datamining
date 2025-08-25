@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk756715 = require("./756715.jsx"),
@@ -61,8 +61,8 @@ function b(e, t) {
   if (null == e) return {};
   var n, r, i = y(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -70,8 +70,8 @@ function b(e, t) {
 function y(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -79,7 +79,7 @@ function O(e) {
   let {
     roleStyle: t,
     name: n,
-    colorString: a,
+    colorString: o,
     roleName: l,
     colorStrings: c,
     dotAlignment: d = "left",
@@ -101,29 +101,29 @@ function O(e) {
     roleStyle: "username",
     animateGradient: E || v || (null == O ? true : O.animate)
   }), x = (0, f.EJ)(n), L = {
-    className: o()(p.name, g, y, {
+    className: a()(p.name, g, y, {
       [p.username]: A,
       [w]: R
     }),
     children: x
   }, j = {
-    className: o()(p.nameGlow, D, y),
+    className: a()(p.nameGlow, D, y),
     children: n
-  }, k = C ? (0, r.jsx)(_.F, {
-    color: a,
+  }, M = C ? (0, r.jsx)(_.F, {
+    color: o,
     colors: N ? c : null,
     name: l,
     className: "left" === d ? p.roleDotLeft : p.roleDotRight,
     hoverOverride: E || v || (null == O ? true : O.animate)
   }) : null;
   return (0, r.jsxs)("span", {
-    className: o()(h, p.container),
+    className: a()(h, p.container),
     onMouseEnter: T,
     onMouseLeave: S,
-    children: ["left" === d && k, (0, r.jsxs)("span", {
+    children: ["left" === d && M, (0, r.jsxs)("span", {
       className: p.nameContainer,
       style: m({
-        color: A && !N && null != a ? a : true
+        color: A && !N && null != o ? o : true
       }, R ? P : {}),
       children: [null != b ? (0, r.jsx)(s.xv, m({
         tag: "span",
@@ -137,7 +137,7 @@ function O(e) {
       }, j)) : (0, r.jsx)("span", m({
         "aria-hidden": true
       }, j)))]
-    }), "right" === d && k]
+    }), "right" === d && M]
   })
 }
 
@@ -146,8 +146,8 @@ function v(e) {
     name: t,
     colorString: n,
     roleName: i,
-    dotAlignment: a,
-    className: o,
+    dotAlignment: o,
+    className: a,
     colorStrings: s,
     animateRoleGradient: u,
     ref: f
@@ -156,8 +156,8 @@ function v(e) {
     name: t,
     colorString: n,
     roleName: i,
-    dotAlignment: a,
-    className: o,
+    dotAlignment: o,
+    className: a,
     colorStrings: s,
     animateRoleGradient: u
   }), y = h && null != n ? {

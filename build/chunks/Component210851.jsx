@@ -50,19 +50,19 @@ let u = function(e) {
   }
   return i.useEffect(() => () => {
     null != m.current && URL.revokeObjectURL(m.current)
-  }, []), (0, r.jsxs)(a.xJW, {
-    children: [(0, r.jsx)(a.vwX, {
-      tag: a.RB0.H5,
+  }, []), (0, r.jsxs)(o.xJW, {
+    children: [(0, r.jsx)(o.vwX, {
+      tag: o.RB0.H5,
       children: (0, r.jsxs)("div", {
         className: s.headingWithTooltip,
-        children: [_, (0, r.jsx)(a.ua7, {
+        children: [_, (0, r.jsx)(o.ua7, {
           text: "Supported asset formats: ".concat(u.join(", ")),
-          children: e => (0, r.jsx)(a.d3s, c({
+          children: e => (0, r.jsx)(o.d3s, c({
             size: "xs"
           }, e))
         })]
       })
-    }), (0, r.jsx)(o.Z, {
+    }), (0, r.jsx)(a.Z, {
       filename: null != (n = null != (t = null == p ? true : p.name) ? t : d) ? n : "",
       filters: [{
         name: _,

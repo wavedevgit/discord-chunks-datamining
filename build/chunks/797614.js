@@ -78,10 +78,10 @@ class E {
     null != r && r.forEach(e => {
       i.tags.push(e)
     });
-    let a = p();
-    null != a && i.tags.push("platform:".concat(a));
-    let o = h();
-    return null != o && i.tags.push("release_channel:".concat(o)), i
+    let o = p();
+    null != o && i.tags.push("platform:".concat(o));
+    let a = h();
+    return null != a && i.tags.push("release_channel:".concat(a)), i
   }
   increment(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
@@ -103,8 +103,8 @@ class E {
         body: {
           metrics: module,
           client_info: {
-            built_at: "1756162095197",
-            build_number: "436970"
+            built_at: "1756163436378",
+            build_number: "436990"
           }
         },
         retries: 1,

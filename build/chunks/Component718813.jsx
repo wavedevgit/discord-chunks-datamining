@@ -67,7 +67,7 @@ let N = (0, Chunk663993.Un)({
     webpackId: 72493
   }),
   P = (0, Chunk663993.Un)({
-    createPromise: () => require.e("36878").then(require.bind(require, 604960)),
+    createPromise: () => Promise.all([require.e("76210"), require.e("36878")]).then(require.bind(require, 604960)),
     webpackId: 604960,
     name: "UserSettingsV2"
   }),

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk846027 = require("./846027.js"),
@@ -64,7 +64,7 @@ function v() {
   return (0, Chunk951288.jsx)(Chunk921801.F, {
     setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_CODECS_VIDEO_EXPERIMENTAL_ENCODERS,
     children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
-      className: o()(Chunk197571.marginTop8, Chunk197571.marginBottom20),
+      className: a()(Chunk197571.marginTop8, Chunk197571.marginBottom20),
       value: module,
       onChange: Chunk846027.Z.setExperimentalEncoders,
       hideBorder: true,
@@ -82,7 +82,7 @@ function I() {
     hardwareEncoding: Chunk131951.Z.getHardwareEncodingSetting()
   })), n = Chunk647438.useRef(null);
   (0, Chunk996073.Z)(require, Chunk526761.KQ.VoiceAndVideoScrollPositions.HARDWARE_ACCELERATION);
-  let a = Chunk647438.useCallback(e => {
+  let o = Chunk647438.useCallback(e => {
     e ? c.Z.setHardwareEncoding(true) : (0, l.h7j)(e => (0, r.jsx)(l.ConfirmModal, O(b({
       header: m.intl.string(m.t.mly1DA),
       confirmText: m.intl.string(m.t.BddRzc),

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk230711 = require("./230711.js"),
   Chunk63063 = require("./63063.js"),
@@ -29,20 +29,20 @@ let h = e => {
   if (c.ZP.isBoostOnlySubscription(i) ? t = _.intl.string(_.t.Uj0md3) : null != E && (t = c.ZP.getDisplayPremiumType(E.planId)), null == t) return null;
   let b = () => s.Z.open(f.oAB.SUBSCRIPTIONS),
     y = (null != E ? c.ZP.getSkuIdForPlan(E.planId) : null) === d.Si.TIER_1;
-  return n = null != m ? m : g ? "always-white" : "text-default", (0, r.jsxs)(o.Zbd, {
-    className: a()(p.container, h, {
+  return n = null != m ? m : g ? "always-white" : "text-default", (0, r.jsxs)(a.Zbd, {
+    className: o()(p.container, h, {
       [p.centerText]: g
     }),
-    type: o.Zbd.Types.CUSTOM,
-    children: [(0, r.jsx)(o.Mgn, {
+    type: a.Zbd.Types.CUSTOM,
+    children: [(0, r.jsx)(a.Mgn, {
       size: "custom",
       width: 20,
       height: 20,
       color: "currentColor",
-      className: a()(p.icon, {
+      className: o()(p.icon, {
         [p.lightThemeColorOnly]: g
       })
-    }), (0, r.jsx)(o.Text, {
+    }), (0, r.jsx)(a.Text, {
       variant: "text-sm/medium",
       color: n,
       children: y ? _.intl.format(_.t["tYuv+f"], {

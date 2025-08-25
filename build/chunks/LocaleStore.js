@@ -27,7 +27,7 @@ function d() {
 }
 
 function f(e) {
-  u = e.locale, (0, o._2)(u)
+  u = e.locale, (0, a._2)(u)
 }
 class _ extends(r = Chunk442837.ZP.Store) {
   initialize() {

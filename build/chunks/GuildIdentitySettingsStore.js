@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 /** chunk id: 778825, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-let r, i, a, o, s, l, c, u, d, f, _;
+let r, i, o, a, s, l, c, u, d, f, _;
 require.d(exports, {
   Z: () => F
 });
@@ -64,7 +64,7 @@ function R(e) {
   let {
     profileEffectId: t
   } = e;
-  o = t
+  a = t
 }
 
 function P(e) {
@@ -106,19 +106,19 @@ function j(e) {
   let {
     nameplate: t
   } = e;
-  a = t
-}
-
-function k() {
-  M(), U(), y = {}, b = Chunk981631.QZA.OPEN
+  o = t
 }
 
 function M() {
-  r = true, u = true, i = true, a = true
+  k(), U(), y = {}, b = Chunk981631.QZA.OPEN
+}
+
+function k() {
+  r = true, u = true, i = true, o = true
 }
 
 function U() {
-  s = true, l = true, c = true, d = true, o = true
+  s = true, l = true, c = true, d = true, a = true
 }
 
 function G() {
@@ -126,7 +126,7 @@ function G() {
 }
 
 function B() {
-  k(), v()
+  M(), v()
 }
 class Z extends(p = Chunk442837.ZP.Store) {
   getFormState() {
@@ -136,7 +136,7 @@ class Z extends(p = Chunk442837.ZP.Store) {
     return y
   }
   showNotice() {
-    return true !== r || true !== i || true !== o || true !== s || true !== l || true !== c || true !== u || true !== d || true !== a
+    return true !== r || true !== i || true !== a || true !== s || true !== l || true !== c || true !== u || true !== d || true !== o
   }
   getIsSubmitDisabled() {
     return true !== l && l.length > Chunk981631.tPV
@@ -148,7 +148,7 @@ class Z extends(p = Chunk442837.ZP.Store) {
     return i
   }
   getPendingProfileEffectId() {
-    return o
+    return a
   }
   getPendingBanner() {
     return s
@@ -169,19 +169,19 @@ class Z extends(p = Chunk442837.ZP.Store) {
     return d
   }
   getPendingNameplate() {
-    return a
+    return o
   }
   getAllPending() {
     return {
       pendingAvatar: r,
       pendingAvatarDecoration: i,
-      pendingProfileEffectId: o,
+      pendingProfileEffectId: a,
       pendingBanner: s,
       pendingBio: l,
       pendingPronouns: c,
       pendingNickname: u,
       pendingThemeColors: d,
-      pendingNameplate: a
+      pendingNameplate: o
     }
   }
   getGuild() {
@@ -208,9 +208,9 @@ let F = new Z(Chunk570140.Z, {
   GUILD_IDENTITY_SETTINGS_SET_PENDING_PRONOUNS: D,
   GUILD_IDENTITY_SETTINGS_SET_PENDING_NICKNAME: x,
   GUILD_IDENTITY_SETTINGS_SET_PENDING_THEME_COLORS: L,
-  GUILD_IDENTITY_SETTINGS_RESET_PENDING_MEMBER_CHANGES: M,
+  GUILD_IDENTITY_SETTINGS_RESET_PENDING_MEMBER_CHANGES: k,
   GUILD_IDENTITY_SETTINGS_RESET_PENDING_PROFILE_CHANGES: U,
-  GUILD_IDENTITY_SETTINGS_RESET_ALL_PENDING: k,
-  GUILD_IDENTITY_SETTINGS_SUBMIT_SUCCESS: k,
+  GUILD_IDENTITY_SETTINGS_RESET_ALL_PENDING: M,
+  GUILD_IDENTITY_SETTINGS_SUBMIT_SUCCESS: M,
   GUILD_IDENTITY_SETTINGS_CLEAR_ERRORS: G
 })

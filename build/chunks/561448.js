@@ -54,8 +54,8 @@ function u(e, t) {
   }), e
 }
 let d = e => {
-    if ("card" === e || "link_card_brand" === e) return a.He.CARD;
-    if ("ideal" === e) return a.He.IDEAL;
+    if ("card" === e || "link_card_brand" === e) return o.He.CARD;
+    if ("ideal" === e) return o.He.IDEAL;
     let t = T[(0, r.rI)()];
     return e in t ? t[e] : null
   },
@@ -64,10 +64,10 @@ let d = e => {
 
 function p(e, t) {
   let n = null != t ? t : (0, i.vP)(),
-    a = f.has(e);
-  if (!n) return a;
-  let o = (0, r.rI)();
-  return (!h(e) || "live" !== o || null != b(e, o)) && (a || _.has(e))
+    o = f.has(e);
+  if (!n) return o;
+  let a = (0, r.rI)();
+  return (!h(e) || "live" !== a || null != b(e, a)) && (o || _.has(e))
 }
 
 function h(e) {
@@ -116,7 +116,7 @@ function y(e) {
     id: b(t.paymentSourceType, e),
     options: {
       type: "static",
-      subtitle: o.intl.string(t.subtitleTranslationKey)
+      subtitle: a.intl.string(t.subtitleTranslationKey)
     },
     isRegionalPaymentMethod: t.isRegionalPaymentMethod,
     isStaffOnly: t.isStaffOnly,

@@ -20,7 +20,7 @@ let u = [Chunk297781.Yl, Chunk297781.Rg],
       selected: i
     } = e, {
       largeImage: d
-    } = (0, a.rv)({
+    } = (0, o.rv)({
       entry: t
     });
     return (0, r.jsxs)(l.Zb, {
@@ -38,7 +38,7 @@ let u = [Chunk297781.Yl, Chunk297781.Rg],
             entry: t
           }, n))
         })]
-      }), (0, r.jsx)(o.f, {
+      }), (0, r.jsx)(a.f, {
         src: null == d ? true : d.src,
         size: 48,
         className: c.thumbnail,

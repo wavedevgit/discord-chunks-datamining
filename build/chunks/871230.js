@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk506364 = require("./506364.js"),
   Chunk647438 = require("./647438.js"),
   Chunk764075 = require("./764075.js");
-let o = {
+let a = {
   border: 0,
   clip: "rect(0 0 0 0)",
   clipPath: "inset(50%)",
@@ -26,13 +26,13 @@ function s(e = {}) {
     isFocusable: n
   } = e, [r, l] = (0, i.useState)(false), {
     focusWithinProps: c
-  } = (0, a.L)({
+  } = (0, o.L)({
     isDisabled: !n,
     onFocusWithinChange: e => l(e)
   }), u = (0, i.useMemo)(() => r ? t : t ? {
-    ...o,
+    ...a,
     ...t
-  } : o, [r]);
+  } : a, [r]);
   return {
     visuallyHiddenProps: {
       ...c,
@@ -45,8 +45,8 @@ function l(e) {
   let {
     children: t,
     elementType: n = "div",
-    isFocusable: a,
-    style: o,
+    isFocusable: o,
+    style: a,
     ...l
   } = e, {
     visuallyHiddenProps: c

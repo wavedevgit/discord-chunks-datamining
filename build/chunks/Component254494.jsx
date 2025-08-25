@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk218867 = require("./218867.jsx"),
   Chunk28546 = require("./28546.js"),
   Chunk981631 = require("./981631.js"),
@@ -17,17 +17,17 @@ let d = e => {
       activeIndex: t,
       categoryListRef: n,
       getScrollOffsetForIndex: r
-    } = e, a = i.useRef(c.xAR), o = i.useRef(t);
+    } = e, o = i.useRef(c.xAR), a = i.useRef(t);
     return i.useEffect(() => {
-      null != t && t !== o.current && (a.current !== c.xAR && window.cancelAnimationFrame(a.current), a.current = window.requestAnimationFrame(() => {
+      null != t && t !== a.current && (o.current !== c.xAR && window.cancelAnimationFrame(o.current), o.current = window.requestAnimationFrame(() => {
         var e;
         if (null == n.current) return;
-        let i = t > (null != (e = o.current) ? e : false),
+        let i = t > (null != (e = a.current) ? e : false),
           s = null != r ? r(t, i) : 0;
         n.current.scrollRowIntoView(t, {
           animate: true,
           offset: s
-        }), a.current = c.xAR, o.current = t
+        }), o.current = c.xAR, a.current = t
       }))
     }, [t, n, r]), {
       categoryListRef: n
@@ -37,7 +37,7 @@ let d = e => {
     let {
       categoryListRef: t,
       expressionsListRef: n,
-      categories: a,
+      categories: o,
       store: c,
       children: f,
       className: _,
@@ -65,10 +65,10 @@ let d = e => {
           null == (r = n.current) || r.scrollToSectionTop(e)
         }
       }, [n, c]),
-      T = i.useCallback(e => b(a[e], e, () => I(e), v === e), [v, a, I, b]),
-      S = i.useMemo(() => "function" == typeof g ? e => g(a[e], e) : g, [a, g]);
+      T = i.useCallback(e => b(o[e], e, () => I(e), v === e), [v, o, I, b]),
+      S = i.useMemo(() => "function" == typeof g ? e => g(o[e], e) : g, [o, g]);
     return (0, r.jsxs)("div", {
-      className: o()(u.wrapper, _),
+      className: a()(u.wrapper, _),
       children: [(0, r.jsx)(s.Z, {
         listPadding: p,
         onScroll: E,

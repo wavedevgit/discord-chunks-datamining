@@ -2,12 +2,12 @@
 /** chunk id: 543936, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  x: () => o
+  x: () => a
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk960048 = require("./960048.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -15,7 +15,7 @@ function a(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class o extends Chunk647438.PureComponent {
+class a extends Chunk647438.PureComponent {
   componentDidCatch(e, t) {
     i.Z.captureException(e, {
       tags: {
@@ -34,7 +34,7 @@ class o extends Chunk647438.PureComponent {
     return null != this.state.error ? null != this.props.renderCustomErrorComponent ? this.props.renderCustomErrorComponent() : null : this.props.children
   }
   constructor(...e) {
-    super(...e), a(this, "state", {
+    super(...e), o(this, "state", {
       error: null,
       info: null
     })

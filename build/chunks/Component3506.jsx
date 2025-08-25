@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk512722 = require("./512722.js"),
-  a = require.n(Chunk512722),
+  o = require.n(Chunk512722),
   Chunk392711 = require("./392711.js"),
   s = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
@@ -72,32 +72,32 @@ function x(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let L = k(null);
+let L = M(null);
 
 function j() {
-  let e = k(L);
+  let e = M(L);
   s().isEqual(module, L) || (Chunk626135.default.track(Chunk981631.rMx.OVERLAY_SETTINGS_UPDATED, module), L = module)
 }
 
-function k(e) {
+function M(e) {
   var t;
   let n = T.default.getNotificationPositionMode(),
     r = n !== C._vf.DISABLED,
     i = v.ZP.getOverlayKeybind(),
-    a = v.ZP.getOverlayChatKeybind();
+    o = v.ZP.getOverlayChatKeybind();
   return {
     enabled: I.default.enabled,
     notifications_enabled: r,
     notifications_position: r ? n : null,
     text_notifications_mode: y.Z.isNotificationDisabled(g.OverlayNotificationDisabledSetting.TEXT_CHAT) ? "DISABLED" : "ENABLED",
     hotkey: null != i ? (0, A.BB)(i.shortcut) : null,
-    text_activation_hotkey: null != a ? (0, A.BB)(a.shortcut) : null,
+    text_activation_hotkey: null != o ? (0, A.BB)(o.shortcut) : null,
     text_opacity_slider: T.default.getTextWidgetOpacity(),
     old_enabled: null != (t = null == e ? true : e.enabled) ? t : I.default.enabled
   }
 }
 
-function M(e) {
+function k(e) {
   let {
     children: t,
     title: n
@@ -115,7 +115,7 @@ function U(e) {
     showHeader: n = true
   } = e, {
     oopEnabled: i,
-    legacyEnabled: o
+    legacyEnabled: a
   } = (0, l.cj)([b.default], () => b.default.getGlobalEnabledStatus()), {
     avatarSizeMode: s,
     displayNameMode: I,
@@ -130,7 +130,7 @@ function U(e) {
     notificationPositionMode: T.default.getNotificationPositionMode(),
     shouldShowKeybindIndicators: T.default.showKeybindIndicators,
     textChatDisabled: y.Z.isNotificationDisabled(g.OverlayNotificationDisabledSetting.TEXT_CHAT)
-  })), L = (0, l.e7)([v.ZP], () => v.ZP.getOverlayKeybind()), k = (0, E.Z)({
+  })), L = (0, l.e7)([v.ZP], () => v.ZP.getOverlayKeybind()), M = (0, E.Z)({
     location: "overlay_user_settings"
   }), U = (0, _.$1)();
 
@@ -138,7 +138,7 @@ function U(e) {
     var t, n;
     d.Z.setEnabled(e, i);
     let r = null != (n = null == (t = p.ZP.getCurrentGameForAnalytics()) ? true : t.id) ? n : null;
-    (0, m.ou)(e, m.AE.LEGACY, r), !e && o && (0, O.l)(m.AE.LEGACY, r)
+    (0, m.ou)(e, m.AE.LEGACY, r), !e && a && (0, O.l)(m.AE.LEGACY, r)
   }
 
   function B() {
@@ -147,7 +147,7 @@ function U(e) {
   }
 
   function Z(e) {
-    a()(null != L, "Keybind should never be undefined"), u.Z.setKeybind(x(w({}, L), {
+    o()(null != L, "Keybind should never be undefined"), u.Z.setKeybind(x(w({}, L), {
       shortcut: e
     }))
   }
@@ -163,7 +163,7 @@ function U(e) {
           className: R.enableOverlayItem,
           children: (0, r.jsx)(c.j7V, {
             className: R.enableSwitch,
-            value: o,
+            value: a,
             disabled: U,
             note: U ? N.intl.string(N.t.Eb0lnJ) : null,
             hideBorder: true,
@@ -174,12 +174,12 @@ function U(e) {
           title: N.intl.string(N.t.VsAZcH),
           className: R.enableOverlayItem,
           children: (0, r.jsx)(f.Z, {
-            disabled: !o,
+            disabled: !a,
             defaultValue: null != L ? L.shortcut : [],
             onChange: Z
           })
         })]
-      }), (0, r.jsx)(M, {
+      }), (0, r.jsx)(k, {
         title: N.intl.string(N.t.dnvZSk),
         children: (0, r.jsx)(c.FXm, {
           options: [{
@@ -197,7 +197,7 @@ function U(e) {
           },
           value: s
         })
-      }), (0, r.jsx)(M, {
+      }), (0, r.jsx)(k, {
         title: N.intl.string(N.t.J0dpcH),
         children: (0, r.jsx)(c.FXm, {
           options: [{
@@ -218,7 +218,7 @@ function U(e) {
           },
           value: I
         })
-      }), (0, r.jsx)(M, {
+      }), (0, r.jsx)(k, {
         title: N.intl.string(N.t.swsWWF),
         children: (0, r.jsx)(c.FXm, {
           options: [{
@@ -236,7 +236,7 @@ function U(e) {
           },
           value: S
         })
-      }), k && (0, r.jsx)(M, {
+      }), M && (0, r.jsx)(k, {
         children: (0, r.jsx)(c.j7V, {
           value: D,
           onChange: e => d.Z.setShowKeybindIndicators(e),
@@ -248,7 +248,7 @@ function U(e) {
       tag: c.RB0.H1,
       title: N.intl.string(N.t["3GMnLi"]),
       className: R.notificationSection,
-      children: [(0, r.jsx)(M, {
+      children: [(0, r.jsx)(k, {
         title: N.intl.string(N.t.IQv8Eh),
         children: (0, r.jsx)("div", {
           className: R.notificationSettings,
@@ -257,7 +257,7 @@ function U(e) {
             onChange: (e, t) => d.Z.setNotificationPositionMode(t)
           })
         })
-      }), (0, r.jsx)(M, {
+      }), (0, r.jsx)(k, {
         children: (0, r.jsx)(c.j7V, {
           value: P !== C._vf.DISABLED && !A,
           disabled: P === C._vf.DISABLED,

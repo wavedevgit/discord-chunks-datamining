@@ -117,7 +117,7 @@ function C(e) {
 }
 
 function N(e) {
-  let t = a.Z.convert.toCodePoint(e);
+  let t = o.Z.convert.toCodePoint(e);
   return null != t ? t : ""
 }
 
@@ -143,7 +143,7 @@ function L(e) {
   let t = x.get(e);
   if (null == t) {
     let n = b[e];
-    t = o.ZP.filterUnsupportedEmojis(E.slice(n[0], n[1])).map(C), x.set(e, t)
+    t = a.ZP.filterUnsupportedEmojis(E.slice(n[0], n[1])).map(C), x.set(e, t)
   }
   return t
 }
@@ -152,11 +152,11 @@ function j(e) {
   return m.test(e)
 }
 
-function k(e) {
+function M(e) {
   return e.replace(_, (e, t) => H(t, e))
 }
 
-function M(e) {
+function k(e) {
   var t;
   let n = null == (t = S(e)) ? true : t.names[0];
   return null != n ? {
@@ -180,20 +180,20 @@ function Z(e, t) {
   }];
   let r = "",
     i = [],
-    a = null != (n = e.match(g)) ? n : [];
-  for (let e = 0; e < a.length; e++) {
-    let t = a[e];
+    o = null != (n = e.match(g)) ? n : [];
+  for (let e = 0; e < o.length; e++) {
+    let t = o[e];
     if (null != r && "" !== r)
       if (t === U) t = r + t, r = "";
       else if (B.test(t)) {
       r += t;
       continue
-    } else i.push(M(r)), r = "";
+    } else i.push(k(r)), r = "";
     else if (t === G) {
       r = t;
       continue
     }
-    let n = M(t);
+    let n = k(t);
     if (i.length > 0) {
       let e = i[i.length - 1];
       if ("text" === n.type && "text" === e.type) {
@@ -203,7 +203,7 @@ function Z(e, t) {
     }
     i.push(n)
   }
-  return null != r && "" !== r && i.push(M(r)), i
+  return null != r && "" !== r && i.push(k(r)), i
 }
 
 function F(e) {
@@ -226,8 +226,8 @@ function Y(e) {
   var t, n;
   let r = !(arguments.length > 1) || true === arguments[1] || arguments[1],
     i = arguments.length > 2 && true !== arguments[2] ? arguments[2] : "",
-    a = null != (n = null == (t = S(e)) ? true : t.names[0]) ? n : i;
-  return r ? ":".concat(a, ":") : a
+    o = null != (n = null == (t = S(e)) ? true : t.names[0]) ? n : i;
+  return r ? ":".concat(o, ":") : o
 }
 
 function W(e) {
@@ -240,7 +240,7 @@ let K = {
   getByName: D,
   getByCategory: L,
   contentHasUnicodeOrEmoji: j,
-  translateInlineEmojiToSurrogates: k,
+  translateInlineEmojiToSurrogates: M,
   maybeTranslateSurrogatesToInlineEmoji: V,
   findInlineEmojisFromSurrogates: Z,
   translateSurrogatesToInlineEmoji: F,

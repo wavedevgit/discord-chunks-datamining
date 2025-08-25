@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk55935 = require("./55935.js"),
   Chunk543388 = require("./543388.jsx"),
@@ -61,7 +61,7 @@ let E = Chunk647438.memo(function(e) {
     let {
       children: t,
       className: n,
-      compact: a = false,
+      compact: o = false,
       timestamp: _,
       timestampFormat: p,
       isVisibleOnlyOnHover: h = false,
@@ -71,11 +71,11 @@ let E = Chunk647438.memo(function(e) {
       isEdited: O = false,
       application: v,
       tooltipPosition: I
-    } = e, T = i.useMemo(() => g(_), [_]), S = i.useMemo(() => (0, l.Hg)(T), [T]), A = i.useMemo(() => null != p ? (0, l.vc)(T, p) : a ? (0, l.vc)(T, "LT") : (0, l.Y4)(T, true), [T, p, a]), C = i.useMemo(() => a ? (0, u.Z)(A) : null, [a, A]), N = i.useMemo(() => O ? d.intl.formatToPlainString(d.t.CDzOFR, {
+    } = e, T = i.useMemo(() => g(_), [_]), S = i.useMemo(() => (0, l.Hg)(T), [T]), A = i.useMemo(() => null != p ? (0, l.vc)(T, p) : o ? (0, l.vc)(T, "LT") : (0, l.Y4)(T, true), [T, p, o]), C = i.useMemo(() => o ? (0, u.Z)(A) : null, [o, A]), N = i.useMemo(() => O ? d.intl.formatToPlainString(d.t.CDzOFR, {
       timeFormatted: S
     }) : S, [O, S]);
     return (0, r.jsx)("span", {
-      className: o()(n, C, {
+      className: a()(n, C, {
         [f.timestamp]: true,
         [f.timestampVisibleOnHover]: h,
         [f.timestampInline]: E,
@@ -92,18 +92,18 @@ let E = Chunk647438.memo(function(e) {
           timeFormatted: A,
           timestamp: T,
           id: y,
-          compact: a,
+          compact: o,
           children: t
         })
       }) : (0, r.jsx)(c.Z, {
         application: v,
         timestamp: T,
-        compact: a,
+        compact: o,
         children: (0, r.jsx)(b, {
           timeFormatted: A,
           timestamp: T,
           id: y,
-          compact: a,
+          compact: o,
           children: t
         })
       })
@@ -114,19 +114,19 @@ let E = Chunk647438.memo(function(e) {
       tooltipProps: t,
       timeFormatted: n,
       children: i,
-      compact: a,
-      timestamp: o,
+      compact: o,
+      timestamp: a,
       id: s
     } = e;
     return (0, r.jsx)("time", m(p({}, t), {
       id: s,
-      dateTime: o.toISOString(),
+      dateTime: a.toISOString(),
       children: null != i ? i : (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("i", {
           className: f.separator,
           "aria-hidden": true,
-          children: a ? "[" : " — "
-        }), n, a && (0, r.jsxs)("i", {
+          children: o ? "[" : " — "
+        }), n, o && (0, r.jsxs)("i", {
           className: f.separator,
           "aria-hidden": true,
           children: ["]", " "]

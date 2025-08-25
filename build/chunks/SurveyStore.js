@@ -6,7 +6,7 @@ require.d(exports, {
   Z: () => q
 }), require("./388685.js");
 var r, Chunk913527 = require("./913527.js"),
-  a = require.n(Chunk913527),
+  o = require.n(Chunk913527),
   Chunk149765 = require("./149765.js"),
   Chunk442837 = require("./442837.js"),
   Chunk433517 = require("./433517.js"),
@@ -85,7 +85,7 @@ function x() {
 }
 
 function L(e) {
-  return k(e) && j(e)
+  return M(e) && j(e)
 }
 
 function j(e) {
@@ -98,12 +98,12 @@ function j(e) {
   for (let e of t)
     if (!w.has(e)) returnfalse;
   let i = t.includes("guild_size_all"),
-    a = true;
+    o = true;
   for (let s of f.Z.getGuildsArray()) {
     if (i || t.includes("guild_size")) {
       let e = d.Z.getMemberCount(s.id);
       if (null == e || null != n[0] && e < n[0] || null != n[1] && e > n[1]) {
-        a = false;
+        o = false;
         continue
       }
     }
@@ -112,7 +112,7 @@ function j(e) {
       if (0 === r.length) continue;
       let e = false;
       for (let t of r) try {
-        let n = o.vB(t);
+        let n = a.vB(t);
         if (_.Z.can(n, s)) {
           e = true;
           break
@@ -129,16 +129,16 @@ function j(e) {
       g = null != f && f === s.id;
     if ((!t.includes("is_viewing") || g) && !i) returntrue
   }
-  return !!i && !!a
-}
-
-function k(e) {
-  returntrue
+  return !!i && !!o
 }
 
 function M(e) {
+  returntrue
+}
+
+function k(e) {
   let t = l.K.get(m.z7k);
-  return null == t || a()().diff(t, "day") < e
+  return null == t || o()().diff(t, "day") < e
 }
 
 function U(e) {
@@ -149,9 +149,9 @@ function U(e) {
   let n = null != t,
     r = n && null == v.hiddenSurveys[t.key],
     i = n && L(t);
-  M(R);
-  let a = false;
-  A = r && i && !a ? t : null
+  k(R);
+  let o = false;
+  A = r && i && !o ? t : null
 }
 
 function G(e) {

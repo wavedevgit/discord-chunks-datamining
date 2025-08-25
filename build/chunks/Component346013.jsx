@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk772848 = require("./772848.js"),
   Chunk831209 = require("./831209.js"),
   Chunk399606 = require("./399606.js"),
@@ -46,7 +46,7 @@ function j(e, t, n) {
   }) : e[t] = n, e
 }
 
-function k(e) {
+function M(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -59,7 +59,7 @@ function k(e) {
   return e
 }
 
-function M(e, t) {
+function k(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -71,18 +71,18 @@ function M(e, t) {
 }
 
 function U(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
 function G(e) {
-  var t, n, a, j;
+  var t, n, o, j;
   let {
-    embedUrl: M,
+    embedUrl: k,
     message: G,
     channel: B
-  } = e, Z = i.useRef(null), F = i.useRef(null), V = (0, R.J)(M, G), {
+  } = e, Z = i.useRef(null), F = i.useRef(null), V = (0, R.J)(k, G), {
     setPopout: H
   } = (0, b.Z)(G.id, w.d$), Y = (0, E.qo)(G, B, H, true), W = v.QK.useSetting(), K = (0, C.n)(), [z, q] = i.useState(false), [X, Q] = i.useState((null == V ? true : V.coverImage) == null), J = (0, c.e7)([I.ZP, T.default], () => {
     var e;
@@ -90,9 +90,9 @@ function G(e) {
   }, [V]), $ = (0, c.e7)([I.ZP], () => (null == V ? true : V.authorId) != null ? I.ZP.getMember(V.guildId, V.authorId) : null), ee = (0, _.Z)((null == $ ? true : $.avatarDecoration) != null ? null == $ ? true : $.avatarDecoration : null == V || null == (t = V.user) ? true : t.avatarDecoration), [et, en, er] = i.useMemo(() => {
     var e, t;
     return [null != (e = null == $ ? true : $.colorString) ? e : "inherit", null != (t = null == $ ? true : $.colorStrings) ? t : null, null == $ ? true : $.colorRoleId]
-  }, [$]), ei = (0, y.X7)(null == $ ? true : $.guildId, null != (a = null == V ? true : V.authorId) ? a : true, en), {
-    reducedMotion: ea
-  } = i.useContext(u.Sfi), [eo, es] = i.useState(false), el = i.useCallback(() => {
+  }, [$]), ei = (0, y.X7)(null == $ ? true : $.guildId, null != (o = null == V ? true : V.authorId) ? o : true, en), {
+    reducedMotion: eo
+  } = i.useContext(u.Sfi), [ea, es] = i.useState(false), el = i.useCallback(() => {
     q(true)
   }, [q]), ec = i.useCallback(() => {
     q(false)
@@ -110,11 +110,11 @@ function G(e) {
   let ed = (0, S.NZ)({
       avatarDecoration: ee,
       size: (0, p.y9)(u.EFr.SIZE_40),
-      canAnimate: eo
+      canAnimate: ea
     }),
-    ef = null == (n = V.user) ? true : n.getAvatarURL(V.guildId, 40, eo),
+    ef = null == (n = V.user) ? true : n.getAvatarURL(V.guildId, 40, ea),
     e_ = () => {
-      ea.enabled || es(e => !e)
+      eo.enabled || es(e => !e)
     },
     ep = () => null == V.authorId ? (0, r.jsx)(u.rz2, {
       name: V.authorName,
@@ -130,7 +130,7 @@ function G(e) {
       roleId: er,
       avatarUrl: V.avatarUrl,
       newAnalyticsLocations: [d.Z.USERNAME],
-      children: e => (0, r.jsx)(u.rz2, U(k({}, e), {
+      children: e => (0, r.jsx)(u.rz2, U(M({}, e), {
         ref: Z,
         name: V.authorName,
         colorString: et,
@@ -150,7 +150,7 @@ function G(e) {
       children: [!X && (true === V.shouldShowBlurredThumbnailImage ? (0, r.jsx)("img", {
         src: L,
         alt: D.intl.string(D.t.rIbh8P),
-        className: o()(x.thumbnail, {
+        className: a()(x.thumbnail, {
           [x.spoiler]: V.shouldSpoiler
         }),
         onContextMenu: Y,
@@ -160,7 +160,7 @@ function G(e) {
         backgroundSrc: "".concat(eh, "?format=png"),
         alt: D.intl.string(D.t.rIbh8P),
         aspectRatio: 16 / 9,
-        className: o()(x.thumbnail, {
+        className: a()(x.thumbnail, {
           [x.spoiler]: V.shouldSpoiler
         }),
         imageChildClassName: x.thumbnailImage,
@@ -194,7 +194,7 @@ function G(e) {
         }), (0, r.jsx)(u.Text, {
           variant: "text-sm/normal",
           color: "text-muted",
-          className: o()(x.descriptionHeaderText, x.descriptionSubtitle),
+          className: a()(x.descriptionHeaderText, x.descriptionSubtitle),
           children: V.subtitle
         })]
       }), (0, r.jsxs)("div", {
@@ -212,7 +212,7 @@ function G(e) {
           children: e => (0, r.jsx)("div", {
             onMouseEnter: e_,
             onMouseLeave: e_,
-            children: (0, r.jsx)(u.qEK, U(k({}, e), {
+            children: (0, r.jsx)(u.qEK, U(M({}, e), {
               ref: F,
               size: u.EFr.SIZE_40,
               src: ef,

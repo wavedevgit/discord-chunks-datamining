@@ -9,7 +9,7 @@ require.d(exports, {
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
   Chunk31775 = require("./31775.js"),
-  o = require.n(Chunk31775);
+  a = require.n(Chunk31775);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -40,7 +40,7 @@ class f {
   }
   _get(e) {
     var t;
-    return null != (t = this._subscriptions[e]) ? t : new(o())({
+    return null != (t = this._subscriptions[e]) ? t : new(a())({
       max: d
     })
   }

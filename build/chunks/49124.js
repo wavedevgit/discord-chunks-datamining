@@ -35,8 +35,8 @@ var Chunk98405 = require("./98405.js"),
     var n = d(arguments),
       r = f(t);
     if (!(!c(r) && (true === e || u(e)))) return n[1] = function(e, t) {
-      if (c(r) && (t = o(r, this, p(e), t)), !u(t)) return t
-    }, a(h, null, n)
+      if (c(r) && (t = a(r, this, p(e), t)), !u(t)) return t
+    }, o(h, null, n)
   },
   C = function(e, t, n) {
     var r = g(n, t - 1),
@@ -51,7 +51,7 @@ h && Chunk98405({
 }, {
   stringify: function(e, t, n) {
     var r = d(arguments),
-      i = a(T ? A : h, null, r);
+      i = o(T ? A : h, null, r);
     return S && "string" == typeof i ? b(i, O, C) : i
   }
 })

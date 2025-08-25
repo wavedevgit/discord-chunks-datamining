@@ -72,7 +72,7 @@ let C = 40,
     } = e, {
       name: I
     } = t;
-    (0, o.ZP)(() => {
+    (0, a.ZP)(() => {
       g.default.track(b.rMx.OPEN_POPOUT, T({
         type: "Role Icon Popout",
         guild_id: n.id
@@ -101,7 +101,7 @@ let C = 40,
         (0, _.uL)(b.Z5c.CHANNEL(n.id, y.oC.ROLE_SUBSCRIPTIONS))
       },
       x = N ? D : w;
-    return (0, r.jsx)(a.VqE, {
+    return (0, r.jsx)(o.VqE, {
       children: (0, r.jsx)(E.W_, {
         children: (0, r.jsxs)("div", {
           className: v.popoutContainer,
@@ -116,23 +116,23 @@ let C = 40,
               }))
             }), (0, r.jsxs)("div", {
               className: v.truncatingText,
-              children: [(0, r.jsx)(a.X6q, {
+              children: [(0, r.jsx)(o.X6q, {
                 variant: "heading-md/semibold",
                 className: v.roleName,
                 children: (0, r.jsx)(l.Z, {
                   children: I
                 })
-              }), (0, r.jsx)(a.Text, {
+              }), (0, r.jsx)(o.Text, {
                 variant: "text-sm/normal",
                 children: R
               })]
             })]
-          }), (0, r.jsx)(a.zxk, {
+          }), (0, r.jsx)(o.zxk, {
             size: "sm",
             variant: "secondary",
             text: O.intl.string(O.t["H930+P"]),
             onClick: x,
-            icon: a.$Eu,
+            icon: o.$Eu,
             fullWidth: true,
             autoFocus: true
           })]

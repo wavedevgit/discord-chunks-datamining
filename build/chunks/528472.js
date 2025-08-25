@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -15,7 +15,7 @@ function a(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let o = "mp4a.40.2",
+let a = "mp4a.40.2",
   s = "aac",
   l = 128e3,
   c = 25e5;
@@ -25,7 +25,7 @@ class u {
   }
   async checkCodecCapability(e, t, n, r, i) {
     try {
-      var a, c, u, d;
+      var o, c, u, d;
       let f = {
           type: "file",
           video: {
@@ -42,14 +42,14 @@ class u {
             bitrate: l
           }
         },
-        _ = await (null == (a = navigator.mediaCapabilities) ? true : a.decodingInfo(f));
+        _ = await (null == (o = navigator.mediaCapabilities) ? true : o.decodingInfo(f));
       return {
         videoCodec: e,
         videoProfile: t,
         resolution: n,
         framerate: r,
         videoBitrate: i,
-        audioCodec: o,
+        audioCodec: a,
         audioProfile: s,
         audioBitrate: l,
         capability: {
@@ -58,14 +58,14 @@ class u {
           powerEfficient: null != (d = null == _ ? true : _.powerEfficient) && d
         }
       }
-    } catch (a) {
+    } catch (o) {
       return {
         videoCodec: e,
         videoProfile: t,
         resolution: n,
         framerate: r,
         videoBitrate: i,
-        audioCodec: o,
+        audioCodec: a,
         audioProfile: s,
         audioBitrate: l,
         capability: {
@@ -177,14 +177,14 @@ class u {
           height: 1080
         }, 30, 2 * c)],
         n = performance.now() - module,
-        a = {
+        o = {
           capabilities: exports,
           timestamp: performance.now()
         };
       return Chunk626135.default.track(Chunk981631.rMx.MEDIA_VIDEO_CAPABILITIES_DETECTED, {
         detection_duration_ms: require,
         capabilities_json: JSON.stringify(exports)
-      }), this.capabilities = a, this.isDetecting = false, this.detectionPromise = null, this.hasAttemptedDetection = true, a
+      }), this.capabilities = o, this.isDetecting = false, this.detectionPromise = null, this.hasAttemptedDetection = true, o
     })(), this.detectionPromise
   }
   async getCapabilities() {
@@ -200,8 +200,8 @@ class u {
     return null != (n = null == r ? true : r.capability.supported) && n
   }
   constructor() {
-    a(this, "capabilities", null), a(this, "isDetecting", false), a(this, "detectionPromise", null), a(this, "hasAttemptedDetection", false)
+    o(this, "capabilities", null), o(this, "isDetecting", false), o(this, "detectionPromise", null), o(this, "hasAttemptedDetection", false)
   }
 }
-a(u, "instance", true);
+o(u, "instance", true);
 let d = u

@@ -39,17 +39,17 @@ function c(e) {
   let {
     isDisabled: t,
     placeholder: n,
-    look: o,
+    look: a,
     clearable: s,
     filter: c
   } = e, [u, d] = i.useState("blue");
-  return (0, r.jsx)(a.V, {
+  return (0, r.jsx)(o.V, {
     value: u,
     onChange: d,
     options: l,
     placeholder: n,
     isDisabled: t,
-    look: o,
+    look: a,
     clearable: s,
     filter: c
   })
@@ -63,16 +63,16 @@ let u = {
       let {
         isDisabled: t,
         placeholder: n,
-        look: a,
+        look: o,
         maxVisibleItems: s
       } = e, [c, u] = i.useState("blue");
-      return (0, r.jsx)(o.q4, {
+      return (0, r.jsx)(a.q4, {
         value: c,
         onChange: u,
         options: l,
         placeholder: n,
         isDisabled: t,
-        look: a,
+        look: o,
         maxVisibleItems: s
       })
     },

@@ -18,9 +18,9 @@ function c(e) {
   } = e;
   if (!(0, i.e7)([s.Z], () => s.Z.isIgnored(t))) return null;
   let c = () => {
-    o.Rt.updateSetting(true), n()
+    a.Rt.updateSetting(true), n()
   };
-  return (0, r.jsx)(a.Avr, {
+  return (0, r.jsx)(o.Avr, {
     onClick: c,
     variant: "primary",
     size: "sm",

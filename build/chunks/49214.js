@@ -10,11 +10,11 @@ var Chunk692547 = require("./692547.js"),
   Chunk358085 = require("./358085.js");
 
 function s(e) {
-  if (!__OVERLAY__ && o.isPlatformEmbedded) try {
+  if (!__OVERLAY__ && a.isPlatformEmbedded) try {
     let t = r.Z.colors.BACKGROUND_BASE_LOWEST.resolve({
       theme: e,
       saturation: i.Z.saturation
     }).hex();
-    a.Z.setApplicationBackgroundColor(t)
+    o.Z.setApplicationBackgroundColor(t)
   } catch (e) {}
 }

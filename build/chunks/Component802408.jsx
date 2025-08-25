@@ -20,7 +20,7 @@ function d(e) {
     markAsDismissed: d,
     config: f,
     children: _
-  } = e, p = (0, a.e7)([c.Z], () => c.Z.useReducedMotion), h = (0, l.ZP)(), m = i.useRef(null), g = {
+  } = e, p = (0, o.e7)([c.Z], () => c.Z.useReducedMotion), h = (0, l.ZP)(), m = i.useRef(null), g = {
     text: f.cta(),
     onClick: () => {
       n(), t(), d(u.L.TAKE_ACTION)
@@ -32,7 +32,7 @@ function d(e) {
     children: [(0, r.jsx)("div", {
       ref: m,
       children: _
-    }), (0, r.jsx)(o.Mb, {
+    }), (0, r.jsx)(a.Mb, {
       targetElementRef: m,
       shouldShow: true,
       position: "top",

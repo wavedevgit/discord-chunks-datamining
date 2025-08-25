@@ -27,7 +27,7 @@ function _(e) {
     guildId: t,
     emojis: n
   } = e;
-  u[t] = n.map(e => new o.Z(e))
+  u[t] = n.map(e => new a.Z(e))
 }
 
 function p(e) {

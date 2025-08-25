@@ -43,11 +43,11 @@ function P(e) {
   } = e, {
     themeType: x
   } = (0, m.z)(), L = (0, c.q)(D, "UserProfileActivityButtons"), j = (0, u.L)(null != n ? n : true, true), {
-    showPlayButton: k
+    showPlayButton: M
   } = d.m.useConfig({
     location: "UserProfileActivityButtons"
   });
-  if (k && null != D && (0, f.bP)(D)) return (0, r.jsx)(v.Z, {
+  if (M && null != D && (0, f.bP)(D)) return (0, r.jsx)(v.Z, {
     user: t,
     application: D,
     onAction: P,
@@ -58,7 +58,7 @@ function P(e) {
     icon: () => (0, r.jsx)(h.Z, {}),
     onAction: P
   });
-  if ((0, o.Z)(n)) return (0, r.jsx)(O.Z, {
+  if ((0, a.Z)(n)) return (0, r.jsx)(O.Z, {
     platformType: C.ABu.PLAYSTATION,
     icon: () => (0, r.jsx)(p.Z, {}),
     onAction: P
@@ -67,13 +67,13 @@ function P(e) {
     activity: n,
     onAction: P
   });
-  let M = x === N.l.MODAL || x === N.l.MODAL_V2;
-  if (!j && L && null != D && !M) return (0, r.jsx)(A.Z, {
+  let k = x === N.l.MODAL || x === N.l.MODAL_V2;
+  if (!j && L && null != D && !k) return (0, r.jsx)(A.Z, {
     application: D,
     onAction: P,
     onClose: w
   });
-  let U = (0, i.Z)(n, C.xjy.JOIN) || (0, a.Z)(n),
+  let U = (0, i.Z)(n, C.xjy.JOIN) || (0, o.Z)(n),
     G = (null == n ? true : n.application_id) != null;
   return U && G ? (0, r.jsxs)("div", {
     className: R.buttonContainer,

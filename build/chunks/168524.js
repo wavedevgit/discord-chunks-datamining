@@ -55,7 +55,7 @@ function _(e) {
     onOpened: t
   } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {}, {
     applicationId: n
-  } = e, c = (0, i.q)(n), d = r.useMemo(() => null == c ? n : (0, o.bP)(c) ? a.eB : n, [c, n]), _ = (0, l.ZP)(f(u({}, e), {
+  } = e, c = (0, i.q)(n), d = r.useMemo(() => null == c ? n : (0, a.bP)(c) ? o.eB : n, [c, n]), _ = (0, l.ZP)(f(u({}, e), {
     applicationId: d
   }));
   return _.shouldOpenGameProfile && null != d ? n => {

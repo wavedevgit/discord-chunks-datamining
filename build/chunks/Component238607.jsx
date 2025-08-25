@@ -74,11 +74,11 @@ function E(e) {
     onClose: m
   }), {
     enabled: O
-  } = o.c.useExperiment({
+  } = a.c.useExperiment({
     location: "ActivityButton"
   }, {
     autoTrackExposure: true
-  }), v = O ? a.iWm : a.jje;
+  }), v = O ? o.iWm : o.jje;
   if (null == y && null != n && (0, s.Z)(n)) return (0, r.jsx)(u.tG, {
     icon: v,
     text: _.intl.string(_.t.RscU7O),
@@ -100,10 +100,10 @@ function E(e) {
     isEnabled: C,
     isEmbedded: N
   } = y;
-  return N ? (0, r.jsx)(a.ua7, {
+  return N ? (0, r.jsx)(o.ua7, {
     text: A,
     children: e => (0, r.jsx)(u.tG, g(h({}, e), {
-      icon: a.YVR,
+      icon: o.YVR,
       text: S,
       disabled: !C,
       submitting: I,
@@ -116,10 +116,10 @@ function E(e) {
         }), T()
       }
     }))
-  }) : (0, r.jsx)(a.ua7, {
+  }) : (0, r.jsx)(o.ua7, {
     text: A,
     children: e => (0, r.jsx)(u.tG, g(h({}, e), {
-      icon: a.iWm,
+      icon: o.iWm,
       text: S,
       disabled: !C,
       submitting: I,

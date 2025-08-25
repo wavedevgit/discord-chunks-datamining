@@ -70,13 +70,13 @@ function h(e) {
       children: h.map(e => {
         var t;
         let [i, u] = e, d = null != (t = n[i]) ? t : u.defaultValue;
-        return (0, r.jsxs)(o.x, {
+        return (0, r.jsxs)(a.x, {
           title: "boolean" === u.type ? true : u.label,
           children: ["select" === u.type && null != u.options && (0, r.jsx)(s.q4, {
             value: d,
             onChange: e => _(i, e),
             options: u.options
-          }), "boolean" === u.type && (0, r.jsx)(a.X, {
+          }), "boolean" === u.type && (0, r.jsx)(o.X, {
             value: d,
             onChange: (e, t) => _(i, t),
             children: (0, r.jsx)(l.x, {

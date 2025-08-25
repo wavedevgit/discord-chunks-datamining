@@ -67,9 +67,9 @@ function f(e, t, n, r) {
         left: n = 0,
         top: r = 0,
         width: i = 0,
-        height: a = 0
+        height: o = 0
       } = null != t ? t : {};
-    _ = n + i / 2, p = r + a / 2
+    _ = n + i / 2, p = r + o / 2
   }
   let h = {
     render: t,
@@ -80,11 +80,11 @@ function f(e, t, n, r) {
       context: __OVERLAY__ ? s.IlC.OVERLAY : null != (f = (0, i.GB)()) ? f : s.IlC.APP
     }, n)
   };
-  if ((null == n ? true : n.enableSpellCheck) && (0, a.isDesktop)()) {
+  if ((null == n ? true : n.enableSpellCheck) && (0, o.isDesktop)()) {
     let e = () => {
         t(), u(h)
       },
-      t = (0, o.RD)(e)
+      t = (0, a.RD)(e)
   } else e.preventDefault(), u(h)
 }
 

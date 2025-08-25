@@ -3,8 +3,8 @@
 "use strict";
 var Chunk102801 = require("./102801.js"),
   Chunk65183 = require("./65183.js"),
-  a = Chunk65183.List,
-  o = Chunk65183.Repeat,
+  o = Chunk65183.List,
+  a = Chunk65183.Repeat,
   s = Chunk65183.Record,
   l = function() {
     returntrue
@@ -29,7 +29,7 @@ function d(e, t) {
       start: e + t,
       end: r + t
     }))
-  }), a(n)
+  }), o(n)
 }
 
 function f(e, t) {
@@ -38,17 +38,17 @@ function f(e, t) {
 module.exports = {
   generate: function(e, t, n) {
     var i = t.getLength();
-    if (!i) return a.of(new u({
+    if (!i) return o.of(new u({
       start: 0,
       end: 0,
       decoratorKey: null,
-      leaves: a.of(new c({
+      leaves: o.of(new c({
         start: 0,
         end: 0
       }))
     }));
     var s = [],
-      _ = n ? n.getDecorations(t, e) : a(o(null, i)),
+      _ = n ? n.getDecorations(t, e) : o(a(null, i)),
       p = t.getCharacterList();
     return r(_, f, l, function(e, t) {
       s.push(new u({
@@ -57,6 +57,6 @@ module.exports = {
         decoratorKey: _.get(e),
         leaves: d(p.slice(e, t).toList(), e)
       }))
-    }), a(s)
+    }), o(s)
   }
 }

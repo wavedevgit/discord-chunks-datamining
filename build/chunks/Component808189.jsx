@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk692547 = require("./692547.js"),
   Chunk481060 = require("./481060.js"),
   Chunk535322 = require("./535322.jsx"),
@@ -89,11 +89,11 @@ let m = [{
         className: h.tierCard,
         children: [e.tier === f.Eu4.TIER_3 && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)("div", {
-            className: a()(h.tierCardBorderHighlight, h.tierCardBorderHighlightTopRight)
+            className: o()(h.tierCardBorderHighlight, h.tierCardBorderHighlightTopRight)
           }), (0, r.jsx)("div", {
-            className: a()(h.tierCardBorderHighlight, h.tierCardBorderHighlightBottomLeft)
+            className: o()(h.tierCardBorderHighlight, h.tierCardBorderHighlightBottomLeft)
           }), (0, r.jsxs)("div", {
-            className: a()(h.tierCardSparkleHighlight, h.tierCardSparkleHighlightTopRight),
+            className: o()(h.tierCardSparkleHighlight, h.tierCardSparkleHighlightTopRight),
             children: [(0, r.jsx)(u.Z, {
               className: h.tierCardSparkle1
             }), (0, r.jsx)(u.Z, {
@@ -102,7 +102,7 @@ let m = [{
               className: h.tierCardSparkle3
             })]
           }), (0, r.jsx)("div", {
-            className: a()(h.tierCardSparkleHighlight, h.tierCardSparkleHighlightBottomLeft),
+            className: o()(h.tierCardSparkleHighlight, h.tierCardSparkleHighlightBottomLeft),
             children: (0, r.jsx)(u.Z, {
               className: h.tierCardSparkle1
             })
@@ -140,7 +140,7 @@ let m = [{
               color: "always-white",
               children: [(0, r.jsx)(e.icon, {
                 className: h.tierCardListIcon,
-                color: o.Z.colors.WHITE
+                color: a.Z.colors.WHITE
               }), e.getCopy()]
             }), e.isNew ? (0, r.jsx)(l.Z, {
               className: h.tierCardNewFeatureBadge,

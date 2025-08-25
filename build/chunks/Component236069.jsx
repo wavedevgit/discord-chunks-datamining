@@ -44,16 +44,16 @@ function m(e) {
     guildId: t,
     analyticsLocations: n,
     analyticsLocation: i
-  } = e, [o, s] = (0, u.ww)({
+  } = e, [a, s] = (0, u.ww)({
     guildId: t,
     analyticsLocations: n,
     analyticsLocation: i,
     openWithoutBackstack: true
   }), l = s ? _.intl.string(_.t["6ndMcn"]) : _.intl.string(_.t["0eiu6O"]), c = s ? _.intl.string(_.t.S09nw8) : _.intl.string(_.t.tEttXV);
-  return (0, r.jsxs)(a.qXd, {
-    color: a.DM8.DANGER,
-    children: [l, (0, r.jsx)(a.EyT, {
-      onClick: o,
+  return (0, r.jsxs)(o.qXd, {
+    color: o.DM8.DANGER,
+    children: [l, (0, r.jsx)(o.EyT, {
+      onClick: a,
       children: c
     })]
   })

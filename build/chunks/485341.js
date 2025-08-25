@@ -56,8 +56,8 @@ function p(e, t) {
   var n;
   let l = i.R_.useSetting(),
     u = true !== t ? t : l,
-    f = (0, r.e7)([o.default], () => o.default.getCurrentUser()),
-    p = (0, r.e7)([a.Z], () => a.Z.hidePersonalInformation);
+    f = (0, r.e7)([a.default], () => a.default.getCurrentUser()),
+    p = (0, r.e7)([o.Z], () => o.Z.hidePersonalInformation);
   if (null == e) return [];
   let h = null != (n = null == e ? true : e.getBadges()) ? n : [];
   return null != f && f.id === e.userId && u && (h = h.filter(e => e.id !== _)), p && (h = h.map(e => d(c({}, e), {

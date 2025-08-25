@@ -1,7 +1,7 @@
 /** Chunk was on 36878 **/
 /** chunk id: 604960, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => f
+  default: () => b
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -14,19 +14,19 @@ var Chunk481060 = require("./481060.js"),
   Chunk708827 = require("./708827.js"),
   Chunk920952 = require("./920952.js");
 
-function f() {
+function b() {
   let e = (0, Chunk996733.Z7)(),
     t = (0, Chunk131051.Z)(Chunk920952.Z, module);
   return (0, Chunk951288.jsx)(Chunk79808.Z, {
     onClose: Chunk37234.xf,
     root: exports,
-    sidebarHeader: g,
+    sidebarHeader: f,
     sidebarFooter: Chunk604227.Z,
     initialPanel: Chunk708827.Z
   })
 }
 
-function g() {
+function f() {
   let e = (0, Chunk996733.Z7)();
   return (0, Chunk951288.jsx)("div", {
     children: (0, Chunk951288.jsx)(Chunk481060.E1j, {

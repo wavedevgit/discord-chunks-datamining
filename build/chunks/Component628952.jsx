@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk979554 = require("./979554.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -63,7 +63,7 @@ let I = e => {
   let {
     skuId: t,
     isSelected: n,
-    price: a,
+    price: o,
     onSelect: b,
     shouldDisplayHeader: O = false,
     className: I
@@ -122,7 +122,7 @@ let I = e => {
     }), (0, r.jsxs)(c.P3F, {
       tag: "div",
       onClick: x,
-      className: o()(E.previewContainer, {
+      className: a()(E.previewContainer, {
         [E.previewContainerSelected]: n && null == A,
         [E.previewContainerError]: n && null != A
       }),
@@ -143,7 +143,7 @@ let I = e => {
           })]
         }), (0, r.jsx)(c.Text, {
           variant: "text-md/semibold",
-          children: a
+          children: o
         })]
       }), n && null != A && (0, r.jsx)("div", {
         className: E.recipientError,

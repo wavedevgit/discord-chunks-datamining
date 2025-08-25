@@ -27,10 +27,10 @@ let f = (0, Chunk647438.createContext)({
     let {
       skuId: t,
       loadId: n,
-      analyticsLocations: a,
+      analyticsLocations: o,
       onCheckoutSuccess: _,
       children: p
-    } = e, h = (0, o.e7)([c.default], () => u.ZP.canUseCollectibles(c.default.getCurrentUser())), {
+    } = e, h = (0, a.e7)([c.default], () => u.ZP.canUseCollectibles(c.default.getCurrentUser())), {
       product: m
     } = (0, s.T)(t), g = (0, i.useMemo)(() => {
       if (null == m) return null;
@@ -60,7 +60,7 @@ let f = (0, Chunk647438.createContext)({
       value: {
         skuId: t,
         loadId: n,
-        analyticsLocations: null != a ? a : [],
+        analyticsLocations: null != o ? o : [],
         orbProductContext: g,
         onRedeemVirtualCurrency: O,
         isRedeeming: b,

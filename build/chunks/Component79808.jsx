@@ -1,70 +1,62 @@
-/** Chunk was on 36878 **/
+/** Chunk was on 76210 **/
 /** chunk id: 79808, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => d
 }), require("./388685.js"), require("./361932.js"), require("./187205.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
-  Chunk873546 = require("./873546.js"),
   Chunk636298 = require("./636298.jsx"),
   Chunk404975 = require("./404975.jsx"),
-  Chunk178167 = require("./178167.jsx"),
   Chunk924052 = require("./924052.jsx"),
   Chunk59662 = require("./59662.js"),
   Chunk990757 = require("./990757.js");
 
-function v(e) {
+function c(e) {
   let {
     root: t,
     initialPanel: n,
-    onClose: r,
-    sidebarHeader: v,
-    sidebarFooter: b
-  } = e, [m, p] = l.useState(true), [x, j] = l.useState(n.key), {
-    navigateWithValidation: y
-  } = (0, d.Cu)(), C = l.useMemo(() => ({
-    currentPanel: t.layout.flatMap(e => e.layout).find(e => e.key === x),
-    setCurrentPanel: e => y(() => j(e.key)),
-    showNavigationMobile: m,
-    setShowNavigationMobile: p
-  }), [x, t, m, y, p]), h = () => y(r);
-  return (0, i.jsx)(f.j.Provider, {
-    value: C,
-    children: (0, i.jsxs)("div", {
-      className: o()(g.container, {
-        [g.mobile]: s.tq
-      }),
-      children: [(0, i.jsx)(c.d, {
-        onClose: h
-      }), (0, i.jsx)(u.P, {
+    onClose: c,
+    sidebarHeader: d,
+    sidebarFooter: f
+  } = e, [g, v] = i.useState(true), [m, j] = i.useState(n.key), {
+    navigateWithValidation: b
+  } = (0, o.Cu)(), y = i.useMemo(() => ({
+    currentPanel: t.layout.flatMap(e => e.layout).find(e => e.key === m),
+    setCurrentPanel: e => b(() => j(e.key)),
+    showNavigationMobile: g,
+    setShowNavigationMobile: v
+  }), [m, t, g, b, v]);
+  return (0, l.jsx)(u.j.Provider, {
+    value: y,
+    children: (0, l.jsxs)("div", {
+      className: a.container,
+      children: [(0, l.jsx)(s.P, {
         root: t,
-        header: v,
-        footer: b
-      }), (0, i.jsx)(a.Z, {
-        onClose: h,
-        setting: C.currentPanel
+        header: d,
+        footer: f
+      }), (0, l.jsx)(r.Z, {
+        onClose: () => b(c),
+        setting: y.currentPanel
       })]
     })
   })
 }
 
-function b(e) {
+function d(e) {
   let {
     root: t,
     initialPanel: n,
-    onClose: l,
+    onClose: i,
     sidebarHeader: r,
-    sidebarFooter: o
+    sidebarFooter: s
   } = e;
-  return (0, i.jsx)(d.Ri, {
-    children: (0, i.jsx)(v, {
+  return (0, l.jsx)(o.Ri, {
+    children: (0, l.jsx)(c, {
       root: t,
       initialPanel: n,
-      onClose: l,
+      onClose: i,
       sidebarHeader: r,
-      sidebarFooter: o
+      sidebarFooter: s
     })
   })
 }

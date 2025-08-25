@@ -83,7 +83,7 @@ let _ = {
             null == h || h(), e.onClose()
           },
           variant: _
-        }), (0, r.jsx)(a.Modal, f(u({}, e), {
+        }), (0, r.jsx)(o.Modal, f(u({}, e), {
           size: "sm",
           title: t,
           subtitle: n,
@@ -93,7 +93,7 @@ let _ = {
       return (0, r.jsx)(s.default, f(u({}, e), {
         title: t,
         body: n,
-        confirmColor: "critical-primary" === _ ? o.Tt.RED : o.Tt.BRAND,
+        confirmColor: "critical-primary" === _ ? a.Tt.RED : a.Tt.BRAND,
         confirmText: d,
         cancelText: p,
         onConfirm: h,

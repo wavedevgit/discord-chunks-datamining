@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -35,7 +35,7 @@ function m(e) {
   let {
     position: t,
     onChange: n
-  } = e, [a] = i.useState(() => _()), f = t === l._vf.DISABLED ? c.intl.string(c.t.R6LxVV) : c.intl.formatToPlainString(c.t.XXHDMz, {
+  } = e, [o] = i.useState(() => _()), f = t === l._vf.DISABLED ? c.intl.string(c.t.R6LxVV) : c.intl.formatToPlainString(c.t.XXHDMz, {
     position: p(t)
   });
   return (0, r.jsxs)("div", {
@@ -43,11 +43,11 @@ function m(e) {
       within: true,
       offset: false,
       children: (0, r.jsx)("div", {
-        className: o()(u.wrapper, {
+        className: a()(u.wrapper, {
           [u.disabledSelected]: t === l._vf.DISABLED
         }),
         children: h.map(e => (0, r.jsxs)("label", {
-          className: o()({
+          className: a()({
             [u.selected]: e === t,
             [u.disabled]: e === l._vf.DISABLED,
             [u.topRight]: e === l._vf.TOP_RIGHT,
@@ -61,7 +61,7 @@ function m(e) {
             className: u.disabledIcon
           }) : null, (0, r.jsx)("input", {
             type: "radio",
-            name: a,
+            name: o,
             value: e,
             onChange: t => n(t, e),
             className: u.hiddenInput

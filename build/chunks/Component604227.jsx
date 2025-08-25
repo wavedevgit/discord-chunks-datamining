@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk525654 = require("./525654.js"),
   s = require.n(Chunk525654),
   Chunk481060 = require("./481060.js"),
@@ -62,8 +62,8 @@ function b() {
   let t = null === s() || true === s() || null == (e = s().os) ? true : module.toString();
   if (null == exports || null == Chunk579806.Z) return null;
   let n = Chunk579806.Z.os.release,
-    [r, i, a] = Chunk998502.ZP.parsedOSRelease;
-  if (exports.includes("Windows 10") && true !== a && a >= 22e3 && (t = exports.replace("Windows 10", "Windows 11")), exports.includes("OS X 10.15.7") && true !== Chunk951288 && Chunk951288 >= 20) {
+    [r, i, o] = Chunk998502.ZP.parsedOSRelease;
+  if (exports.includes("Windows 10") && true !== o && o >= 22e3 && (t = exports.replace("Windows 10", "Windows 11")), exports.includes("OS X 10.15.7") && true !== Chunk951288 && Chunk951288 >= 20) {
     let e = Chunk951288 >= 25 ? Chunk951288 + 1 : Chunk951288 - 9;
     t = "macOS ".concat(module)
   }
@@ -71,14 +71,14 @@ function b() {
 }
 
 function y() {
-  var e, t, n, i, o;
+  var e, t, n, i, a;
   let s = window.GLOBAL_ENV.RELEASE_CHANNEL,
-    f = "436970",
-    h = "aa3b374f4aaba8cfc8082208fd0ef49825b6f327".substring(0, 7),
+    f = "436990",
+    h = "69c11e9dcfd1dcbb95808bd0fc93ded83c606c4e".substring(0, 7),
     g = null === Chunk579806.Z || true === Chunk579806.Z ? true : Chunk579806.Z.remoteApp.getVersion(),
     y = null === Chunk579806.Z || true === Chunk579806.Z || null == (e = (t = Chunk579806.Z.remoteApp).getBuildNumber) ? true : module.call(exports),
     O = null === Chunk579806.Z || true === Chunk579806.Z || null == (n = (i = Chunk579806.Z.remoteApp).getAppArch) ? true : require.call(Chunk120356),
-    v = null == (o = Chunk304761.C.getCurrentBuildOverride().overrides) ? true : Chunk525654.discord_web,
+    v = null == (a = Chunk304761.C.getCurrentBuildOverride().overrides) ? true : Chunk525654.discord_web,
     I = b(),
     T = [s, Chunk998502, "(".concat(h, ")")];
   return null != g && (T.push("Host ".concat(g)), null != O && T.push(O.toLowerCase()), null != y && T.push("(".concat(y, ")"))), T.push("Build Override: ".concat(null != v ? v.id : "N/A")), null != I && T.push(I), (0, Chunk951288.jsx)(Chunk320161.Z, {
@@ -124,7 +124,7 @@ function y() {
           }), " "]
         }) : null, null != I ? (0, r.jsx)(l.Text, {
           tag: "span",
-          className: a()(p.line, p.os),
+          className: o()(p.line, p.os),
           variant: "text-xs/normal",
           color: "text-muted",
           children: I

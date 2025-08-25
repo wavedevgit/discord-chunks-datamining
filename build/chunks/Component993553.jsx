@@ -54,8 +54,8 @@ function _(e, t) {
   if (null == e) return {};
   var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -63,8 +63,8 @@ function _(e, t) {
 function p(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -76,15 +76,15 @@ function h(e) {
   let [d, p] = i.useState(false), [h, m] = i.useState(null), g = null != h && (0, r.jsx)("button", {
     className: l.button,
     onClick: () => p(e => !e),
-    children: (0, r.jsxs)(o.Text, {
+    children: (0, r.jsxs)(a.Text, {
       className: l.seeMore,
       variant: "text-sm/medium",
       color: "text-brand",
-      children: [d ? s.intl.string(s.t["JQX/PT"]) : s.intl.string(s.t.Fbrd8P), d ? (0, r.jsx)(o.u04, {
-        color: a.Z.colors.TEXT_BRAND,
+      children: [d ? s.intl.string(s.t["JQX/PT"]) : s.intl.string(s.t.Fbrd8P), d ? (0, r.jsx)(a.u04, {
+        color: o.Z.colors.TEXT_BRAND,
         size: "xs"
-      }) : (0, r.jsx)(o.CJ0, {
-        color: a.Z.colors.TEXT_BRAND,
+      }) : (0, r.jsx)(a.CJ0, {
+        color: o.Z.colors.TEXT_BRAND,
         size: "xs"
       })]
     })
@@ -104,7 +104,7 @@ function h(e) {
   }, [y, t, n]);
   let O = "auto";
   return null != h && (O = d ? "".concat(h.expandedHeight, "px") : "".concat(h.truncatedHeight, "px")), (0, r.jsxs)("div", {
-    children: [(0, r.jsx)(o.Text, f(u({}, c), {
+    children: [(0, r.jsx)(a.Text, f(u({}, c), {
       className: l.content,
       lineClamp: d ? true : n,
       ref: b,

@@ -20,7 +20,7 @@ function d() {
     setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_QOS,
     children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
       value: module,
-      onChange: e => o.Z.setQoS(e),
+      onChange: e => a.Z.setQoS(e),
       note: Chunk388032.intl.string(Chunk388032.t.I1Eoqq),
       hideBorder: true,
       children: Chunk388032.intl.string(Chunk388032.t["3CqDxs"])

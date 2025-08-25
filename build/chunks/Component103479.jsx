@@ -24,14 +24,14 @@ async function p(e) {
     index: r
   } = e;
   try {
-    let e = await (0, a.sd)(t, n.id);
+    let e = await (0, o.sd)(t, n.id);
     if (e.button_urls.length <= r) return;
     let i = e.button_urls[r];
     if ("string" != typeof i) return;
-    let o = l.Z.safeParseWithQuery(i);
-    if ((null == o ? true : o.protocol) == null || (null == o ? true : o.hostname) == null) return;
+    let a = l.Z.safeParseWithQuery(i);
+    if ((null == a ? true : a.protocol) == null || (null == a ? true : a.hostname) == null) return;
     (0, s.q)({
-      href: l.Z.format(o),
+      href: l.Z.format(a),
       trusted: false
     })
   } catch (e) {}
@@ -41,43 +41,43 @@ function h(e) {
   let {
     user: t,
     activity: n,
-    onAction: a
+    onAction: o
   } = e, {
     themeType: s
   } = (0, c.z)();
   if ((null == n ? true : n.buttons) == null || n.buttons.length < 1) return null;
-  let l = (0, o.Z)(n);
+  let l = (0, a.Z)(n);
   return s === d.l.MODAL_V2 ? (0, r.jsx)(r.Fragment, {
-    children: n.buttons.map((e, o) => (0, r.jsx)(u.tG, {
+    children: n.buttons.map((e, a) => (0, r.jsx)(u.tG, {
       text: l ? f.intl.string(f.t["I6JG4+"]) : e,
       size: i.Ph.TINY,
       themeColor: "secondary",
       onClick: e => {
-        e.stopPropagation(), null == a || a({
+        e.stopPropagation(), null == o || o({
           action: l ? "PRESS_WATCH_ON_CRUNCHYROLL_BUTTON" : "PRESS_CUSTOM_BUTTON"
         }), p({
           user: t,
           activity: n,
-          index: o
+          index: a
         })
       }
-    }, o))
+    }, a))
   }) : (0, r.jsx)(r.Fragment, {
-    children: n.buttons.map((e, o) => (0, r.jsx)(u.tG, {
+    children: n.buttons.map((e, a) => (0, r.jsx)(u.tG, {
       text: l ? f.intl.string(f.t["I6JG4+"]) : e,
       size: i.Ph.SMALL,
       className: _.customButton,
       themeColor: "secondary",
       fullWidth: true,
       onClick: e => {
-        e.stopPropagation(), null == a || a({
+        e.stopPropagation(), null == o || o({
           action: l ? "PRESS_WATCH_ON_CRUNCHYROLL_BUTTON" : "PRESS_CUSTOM_BUTTON"
         }), p({
           user: t,
           activity: n,
-          index: o
+          index: a
         })
       }
-    }, o))
+    }, a))
   })
 }

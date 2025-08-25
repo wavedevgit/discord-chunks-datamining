@@ -33,12 +33,12 @@ class p extends Chunk147913.Z {
     onSwitchStart: e,
     onSwitchSuccess: t,
     onSwitchError: n,
-    onTokenSet: o
+    onTokenSet: a
   }) {
     super(), f(this, "onSwitchStart", true), f(this, "onSwitchSuccess", true), f(this, "onSwitchError", true), f(this, "onTokenSet", true), f(this, "actions", {
       LOGOUT: e => this.handleLogout(e)
     }), f(this, "handleConnectionOpen", () => {
-      var e, t, n, o, s, f;
+      var e, t, n, a, s, f;
       let p = l.default.getCurrentUser();
       if (null == p) return;
       if (null != i) {
@@ -52,19 +52,19 @@ class p extends Chunk147913.Z {
           c.default.track(d.rMx.MULTI_ACCOUNT_SWITCH_SUCCESS, {
             from_user_id: i,
             linked_user_ids: e
-          }), null == (n = (o = this).onSwitchSuccess) || n.call(o, p, _)
+          }), null == (n = (a = this).onSwitchSuccess) || n.call(a, p, _)
         } else c.default.track(d.rMx.MULTI_ACCOUNT_SWITCH_FAILURE), null == (s = (f = this).onSwitchError) || s.call(f, p);
         i = null
       }
       r = p.id;
-      let h = a.getToken();
-      null != h && "" !== h && a.setToken(h, p.id), null == (e = (t = this).onTokenSet) || e.call(t, p)
+      let h = o.getToken();
+      null != h && "" !== h && o.setToken(h, p.id), null == (e = (t = this).onTokenSet) || e.call(t, p)
     }), f(this, "handleLogout", e => {
       if (e.isSwitchingAccount) {
         var t, n;
         i = r, null == (t = (n = this).onSwitchStart) || t.call(n), _ = !!e.goHomeAfterSwitching
-      } else _ = false, a.removeToken(r);
+      } else _ = false, o.removeToken(r);
       r = null
-    }), this.onSwitchStart = e, this.onSwitchSuccess = t, this.onSwitchError = n, this.onTokenSet = o
+    }), this.onSwitchStart = e, this.onSwitchSuccess = t, this.onSwitchError = n, this.onTokenSet = a
   }
 }

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
 let b = () => {
   let e = (0, Chunk442837.e7)([Chunk914010.Z], () => Chunk914010.Z.getGuildId(), []),
     t = (0, Chunk442837.e7)([Chunk430824.Z], () => Chunk430824.Z.getGuild(module), [module]),
-    [n, a] = Chunk647438.useState(false);
+    [n, o] = Chunk647438.useState(false);
   if (null == exports) return null;
   let b = () => {
       (0, Chunk703656.s1)().goBack()
@@ -39,12 +39,12 @@ let b = () => {
       }
     };
   return (0, Chunk951288.jsxs)("div", {
-    className: o()(Chunk990186.notice, Chunk226910.notice),
+    className: a()(Chunk990186.notice, Chunk226910.notice),
     children: [(0, Chunk951288.jsxs)(Chunk755721.zx, {
       look: Chunk755721.zx.Looks.OUTLINED,
       color: Chunk755721.zx.Colors.WHITE,
       size: Chunk755721.zx.Sizes.NONE,
-      className: o()(Chunk990186.button, Chunk990186.back),
+      className: a()(Chunk990186.button, Chunk990186.back),
       innerClassName: Chunk990186.iconButton,
       onClick: b,
       children: [(0, Chunk951288.jsx)(Chunk481060.whL, {

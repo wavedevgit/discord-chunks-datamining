@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
 function c(e) {
   let {
     nameplate: t
-  } = e, n = (0, i.e7)([l.default], () => l.default.getCurrentUser()), c = (0, o.Y)({
+  } = e, n = (0, i.e7)([l.default], () => l.default.getCurrentUser()), c = (0, a.Y)({
     location: "AccountPreview"
   });
   return (0, r.jsx)(s.m, {
@@ -25,7 +25,7 @@ function c(e) {
     suppress: false,
     speaking: false,
     streaming: false,
-    status: a.Sk.ONLINE,
+    status: o.Sk.ONLINE,
     currentUser: n,
     activities: [],
     applicationStream: true,

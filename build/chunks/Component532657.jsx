@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk556638 = require("./556638.js"),
   Chunk80568 = require("./80568.js");
@@ -55,7 +55,7 @@ function p(e) {
   let {
     text: t,
     tooltipText: n,
-    textVariant: a = "text-xs/medium",
+    textVariant: o = "text-xs/medium",
     textClassName: u,
     "aria-label": f,
     icon: p,
@@ -68,34 +68,34 @@ function p(e) {
       children: [p, (0, r.jsx)(s.Text, {
         variant: "text-sm/medium",
         color: "none",
-        className: o()(c.tooltipText, u),
+        className: a()(c.tooltipText, u),
         children: e
       })]
     })
   }, y = {
-    variant: a,
+    variant: o,
     color: "none",
-    className: o()(h && c.truncated, u)
+    className: a()(h && c.truncated, u)
   }, O = null != t && null == n && h, v = !m && (null != n || O || g);
   return null == p && g ? null : v ? (0, r.jsx)(s.ua7, {
     text: b(),
     "aria-label": f,
-    tooltipContentClassName: o()(c.container, c.activitiesTooltip),
+    tooltipContentClassName: a()(c.container, c.activitiesTooltip),
     delay: l.X,
     children: e => {
       let {
         onMouseEnter: i,
-        onMouseLeave: a
+        onMouseLeave: o
       } = e;
       return (0, r.jsxs)("div", {
-        className: o()(c.container, c.textWithIconContainer),
+        className: a()(c.container, c.textWithIconContainer),
         onMouseEnter: () => {
           let {
             current: e
           } = E, t = null != e && e.offsetWidth < e.scrollWidth;
           (null != n || t || g) && (null == i || i())
         },
-        onMouseLeave: a,
+        onMouseLeave: o,
         children: [p, !g && (0, r.jsx)(s.Text, _(d({
           ref: E
         }, y), {

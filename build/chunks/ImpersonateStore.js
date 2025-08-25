@@ -91,12 +91,12 @@ function v(e) {
   if (null == n || null == E[n]) returnfalse;
   let i = E[n];
   if (null == i || i.type !== d.z.NEW_MEMBER) returnfalse;
-  let a = null != (t = i.optInChannels) ? t : new Set;
+  let o = null != (t = i.optInChannels) ? t : new Set;
   return u.default.keys(r).forEach(e => {
     var t;
     let n = r[e];
-    l.yE(null != (t = n.flags) ? t : 0, _.ic.OPT_IN_ENABLED) ? a.add(e) : a.delete(e)
-  }), i.optInChannels = a, true
+    l.yE(null != (t = n.flags) ? t : 0, _.ic.OPT_IN_ENABLED) ? o.add(e) : o.delete(e)
+  }), i.optInChannels = o, true
 }
 
 function I(e) {
@@ -105,13 +105,13 @@ function I(e) {
     guildId: n,
     optionId: r,
     selected: i,
-    removedOptionIds: a
+    removedOptionIds: o
   } = e;
   if (null == n || null == E[n]) returnfalse;
-  let o = E[n];
-  if (null == o || o.type !== d.z.NEW_MEMBER) returnfalse;
-  let s = null != (t = o.onboardingResponses) ? t : new Set;
-  return null != a && a.length > 0 && a.forEach(e => s.delete(e)), i ? s.add(r) : s.delete(r), o.onboardingResponses = s, true
+  let a = E[n];
+  if (null == a || a.type !== d.z.NEW_MEMBER) returnfalse;
+  let s = null != (t = a.onboardingResponses) ? t : new Set;
+  return null != o && o.length > 0 && o.forEach(e => s.delete(e)), i ? s.add(r) : s.delete(r), a.onboardingResponses = s, true
 }
 
 function T(e) {
@@ -123,7 +123,7 @@ function T(e) {
   if (null == t) returnfalse;
   let i = E[t];
   return null != i && (null != n && (i.roles = n.reduce((e, n) => {
-    let r = o.Z.getRole(t, n);
+    let r = a.Z.getRole(t, n);
     return null != r && (e[n] = r), e
   }, {})), null != r && i.type === d.z.NEW_MEMBER && (i.memberOptions.flags = r), true)
 }

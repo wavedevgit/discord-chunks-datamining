@@ -21,7 +21,7 @@ function l(e, t) {
 }
 
 function c(e, t) {
-  (0, a.iy)(e, t).then(n => i.Z.dispatch({
+  (0, o.iy)(e, t).then(n => i.Z.dispatch({
     type: "ACTIVITY_PLAY",
     activity: e,
     userId: t,
@@ -35,8 +35,8 @@ function c(e, t) {
 async function u(e, t) {
   let n = e.metadata;
   if (null != n && Object.keys(n).length > 0) return n;
-  let a = o.Z.getActivityMetadata(t);
-  if (null != a) return a;
+  let o = a.Z.getActivityMetadata(t);
+  if (null != o) return o;
   if (null == e.session_id) throw Error("null/undefined session_id");
   let {
     body: l

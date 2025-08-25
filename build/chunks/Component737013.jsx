@@ -54,7 +54,7 @@ function p(e, t) {
 }
 
 function h(e, t) {
-  let d = (0, a.vRw)(),
+  let d = (0, o.vRw)(),
     {
       videoEnabled: _,
       hasVideoDevice: h
@@ -63,10 +63,10 @@ function h(e, t) {
       hasVideoDevice: l.Z.isVideoAvailable()
     })),
     m = (0, i.e7)([s.default], () => s.default.getId() === e),
-    g = (0, o.Z)();
+    g = (0, a.Z)();
 
   function E() {
-    (0, a.ZDy)(async () => {
+    (0, o.ZDy)(async () => {
       let {
         default: e
       } = await n.e("91018").then(n.bind(n, 601572));
@@ -75,16 +75,16 @@ function h(e, t) {
       }))
     }, {
       modalKey: "camera-preview",
-      contextKey: null != t ? (0, a.VnL)(t) : d
+      contextKey: null != t ? (0, o.VnL)(t) : d
     })
   }
-  return (!_ || g) && m && h ? (0, r.jsx)(a.sNh, {
+  return (!_ || g) && m && h ? (0, r.jsx)(o.sNh, {
     id: "change-video-background",
     label: (0, r.jsx)("div", {
       className: u.item,
       children: _ ? c.intl.string(c.t.mZKxHR) : c.intl.string(c.t.vkV939)
     }),
     action: E,
-    icon: _ ? a.yMH : a.tEF
+    icon: _ ? o.yMH : o.tEF
   }) : null
 }

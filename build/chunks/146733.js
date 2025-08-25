@@ -24,7 +24,7 @@ Chunk98405({
 }, {
   slice: function(e, t) {
     if (_ && true === t) return _(s(this), e);
-    for (var n = s(this).byteLength, r = l(e, n), i = l(true === t ? n : t, n), a = new u(c(i - r)), o = new d(this), f = new d(a), m = 0; r < i;) h(f, m++, p(o, r++));
-    return a
+    for (var n = s(this).byteLength, r = l(e, n), i = l(true === t ? n : t, n), o = new u(c(i - r)), a = new d(this), f = new d(o), m = 0; r < i;) h(f, m++, p(a, r++));
+    return o
   }
 })

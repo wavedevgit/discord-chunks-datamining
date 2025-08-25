@@ -22,7 +22,7 @@ let s = {
         size: c,
         align: u
       } = e, [d, f] = i.useState(false);
-      return (0, r.jsx)(o.X, {
+      return (0, r.jsx)(a.X, {
         value: d,
         onChange: (e, t) => f(t),
         disabled: t,
@@ -30,7 +30,7 @@ let s = {
         type: s,
         size: c,
         align: u,
-        children: (0, r.jsx)(a.x, {
+        children: (0, r.jsx)(o.x, {
           variant: "text-md/medium",
           children: l
         })

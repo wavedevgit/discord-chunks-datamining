@@ -4,12 +4,12 @@
 require.d(exports, {
   $Z: () => s,
   L$: () => l,
-  fw: () => o
+  fw: () => a
 });
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
   Chunk981631 = require("./981631.js");
-async function o() {
+async function a() {
   var e;
   let t = await Chunk544891.tn.get({
     url: Chunk981631.ANM.AUTH_SESSIONS,
@@ -32,7 +32,7 @@ async function l(e) {
     if (0 === e.length) return
   } else e = [e];
   let t = await r.tn.post({
-    url: a.ANM.AUTH_SESSIONS_LOGOUT,
+    url: o.ANM.AUTH_SESSIONS_LOGOUT,
     body: {
       session_id_hashes: e
     },

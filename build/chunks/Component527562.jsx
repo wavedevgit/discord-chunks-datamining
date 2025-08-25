@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk100527 = require("./100527.js"),
@@ -25,7 +25,7 @@ function b(e) {
   let {
     guildId: t,
     name: n,
-    setPopoutRef: a,
+    setPopoutRef: o,
     onClose: b
   } = e, {
     analyticsLocations: y
@@ -41,10 +41,10 @@ function b(e) {
   }, [v]), i.useEffect(() => {
     (0, d.vb)(t, y)
   }, [t, y]), i.useEffect(() => {
-    null == a || a(null == S ? true : S.current)
-  }, [S, a]);
+    null == o || o(null == S ? true : S.current)
+  }, [S, o]);
   let C = i.useMemo(() => I === f.a.NOT_FETCHED || I === f.a.FETCHING ? (0, r.jsx)("div", {
-    className: o()(g.container, g.spinnerContainer),
+    className: a()(g.container, g.spinnerContainer),
     children: (0, r.jsx)(l.$jN, {})
   }) : null == O && T === E ? (0, r.jsx)("div", {
     className: g.container,

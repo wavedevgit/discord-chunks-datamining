@@ -43,8 +43,8 @@ function C(e) {
     renderOutputVolume: x = false,
     renderInputDevices: L = false,
     renderInputVolume: j = false,
-    maybeRenderInputMeter: k = false,
-    renderSettingsButton: M = false
+    maybeRenderInputMeter: M = false,
+    renderSettingsButton: k = false
   } = e, {
     analyticsLocations: U
   } = (0, d.ZP)();
@@ -66,22 +66,22 @@ function C(e) {
       analyticsLocations: U,
       asSubmenu: true
     }),
-    F = (0, a.e7)([g.Z], () => g.Z.getActiveInputProfile()),
+    F = (0, o.e7)([g.Z], () => g.Z.getActiveInputProfile()),
     V = (0, h.Z)(U),
     H = (0, p.Z)(U),
     Y = (0, m.Z)(U),
-    W = o.Yn.DEFAULT,
+    W = a.Yn.DEFAULT,
     K = g.Z.isSelfDeaf(W),
-    z = (0, a.e7)([g.Z], () => g.Z.getMode()),
+    z = (0, o.e7)([g.Z], () => g.Z.getMode()),
     q = z === v.pM4.VOICE_ACTIVITY ? v.pM4.PUSH_TO_TALK : v.pM4.VOICE_ACTIVITY,
-    X = (0, a.e7)([g.Z, b.ZP], () => {
+    X = (0, o.e7)([g.Z, b.ZP], () => {
       var e;
       let t = (null == (e = g.Z.getModeOptions().shortcut) ? true : e.length) > 0,
         n = null != b.ZP.getKeybindForAction(v.kg4.PUSH_TO_TALK, false, true),
         r = null != b.ZP.getKeybindForAction(v.kg4.PUSH_TO_TALK_PRIORITY, false, true);
       return t || n || r
     }),
-    Q = (0, a.e7)([E.Z], () => null != E.Z.getChannelId());
+    Q = (0, o.e7)([E.Z], () => null != E.Z.getChannelId());
   return (0, r.jsx)(u.Z, {
     object: v.qAy.CONTEXT_MENU,
     children: (0, r.jsxs)(s.v2r, {
@@ -94,7 +94,7 @@ function C(e) {
       children: [(0, r.jsxs)(s.kSQ, {
         children: [L && B, w && V, D && Z]
       }), (0, r.jsxs)(s.kSQ, {
-        children: [j && H, k && Q && (0, r.jsx)(s.II_, {
+        children: [j && H, M && Q && (0, r.jsx)(s.II_, {
           id: "input-device-meter",
           control: () => (0, r.jsx)(c.Z, {
             notchBackground: c._.BLACK,
@@ -122,7 +122,7 @@ function C(e) {
             location: "AudioDeviceMenu"
           }),
           checked: K
-        }, "self-deafen"), M && G]
+        }, "self-deafen"), k && G]
       })]
     })
   })

@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk921801 = require("./921801.js"),
   Chunk3957 = require("./3957.js"),
@@ -47,20 +47,20 @@ function p(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: d.header,
-    children: [(0, r.jsx)(o.X6q, {
+    children: [(0, r.jsx)(a.X6q, {
       variant: "text-md/medium",
       color: "header-primary",
       children: (0, r.jsx)("label", {
         htmlFor: i,
-        className: a()(d.title, {
+        className: o()(d.title, {
           [d.disabled]: s
         }),
         children: t
       })
-    }), (0, r.jsx)(o.Text, {
+    }), (0, r.jsx)(a.Text, {
       variant: "text-sm/normal",
       color: "header-secondary",
-      className: a()(d.description, {
+      className: o()(d.description, {
         [d.disabled]: s
       }),
       children: n
@@ -77,7 +77,7 @@ function h(e) {
   return (0, r.jsx)(s.F, {
     setting: t,
     children: (0, r.jsx)("div", {
-      className: a()(d.container, n),
+      className: o()(d.container, n),
       children: i
     })
   })
@@ -88,19 +88,19 @@ function m(e) {
     setting: t,
     className: n,
     children: i,
-    scrollPosition: o,
+    scrollPosition: a,
     scrollHighlightDelay: f
-  } = e, _ = (0, l.a)(o);
+  } = e, _ = (0, l.a)(a);
   return (0, r.jsx)(s.F, {
     setting: t,
     children: (0, r.jsxs)("div", {
-      className: a()(d.container, n, {
-        [u.settingsBackgroundFlashElement]: null != o
+      className: o()(d.container, n, {
+        [u.settingsBackgroundFlashElement]: null != a
       }),
       ref: _,
-      children: [i, null != o ? (0, r.jsx)(c.Z, {
+      children: [i, null != a ? (0, r.jsx)(c.Z, {
         animationDelay: f,
-        scrollPosition: o
+        scrollPosition: a
       }) : null]
     })
   })

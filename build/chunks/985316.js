@@ -2,7 +2,7 @@
 /** chunk id: 985316, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Px: () => a,
+  Px: () => o,
   W$: () => i,
   jF: () => r
 });
@@ -16,4 +16,4 @@ let r = {
     tension: 1200,
     friction: 80
   },
-  a = r
+  o = r

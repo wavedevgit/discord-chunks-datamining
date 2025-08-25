@@ -63,19 +63,19 @@ function P(e) {
     openedAt: x,
     closePopout: L,
     setPopoutRef: j,
-    disableUserProfileLink: k = __OVERLAY__,
-    newAnalyticsLocations: M = [],
+    disableUserProfileLink: M = __OVERLAY__,
+    newAnalyticsLocations: k = [],
     disableAutoFocus: U = false
   } = e, {
     analyticsLocations: G
-  } = (0, c.ZP)([...M, l.Z.USER_PROFILE_POPOUT]), B = (0, _.ZB)({
+  } = (0, c.ZP)([...k, l.Z.USER_PROFILE_POPOUT]), B = (0, _.ZB)({
     layout: "POPOUT",
     userId: t.id,
     guildId: N,
     channelId: P,
     messageId: w,
     roleId: D
-  }), Z = (0, h.ZP)(t.id, N), F = (0, a.e7)([d.Z], () => null != N ? d.Z.getGuild(N) : null), V = i.useRef(null), H = (0, s.Z)(V);
+  }), Z = (0, h.ZP)(t.id, N), F = (0, o.e7)([d.Z], () => null != N ? d.Z.getGuild(N) : null), V = i.useRef(null), H = (0, s.Z)(V);
   i.useEffect(() => {
     null == j || j(null == V ? true : V.current)
   }, [V, j]);
@@ -85,7 +85,7 @@ function P(e) {
         hideRestrictedProfile: true
       }, B, e))
     },
-    W = () => k ? null : (0, r.jsx)(o.sNh, {
+    W = () => M ? null : (0, r.jsx)(a.sNh, {
       id: "view-profile",
       label: A.intl.string(A.t["+Xp3ho"]),
       action: () => {
@@ -95,7 +95,7 @@ function P(e) {
         }, B))
       }
     }),
-    K = U ? "div" : o.VqE,
+    K = U ? "div" : a.VqE,
     z = (0, u.Dt)(),
     q = f.ZP.useName(N, P, t);
   return (0, r.jsx)(c.Gt, {
@@ -109,8 +109,8 @@ function P(e) {
       children: (0, r.jsxs)(K, {
         ref: V,
         "aria-labelledby": z,
-        children: [(0, r.jsx)(o.nn4, {
-          children: (0, r.jsx)(o.H, {
+        children: [(0, r.jsx)(a.nn4, {
+          children: (0, r.jsx)(a.H, {
             id: z,
             children: A.intl.format(A.t.KRe1Fh, {
               name: q
@@ -140,7 +140,7 @@ function P(e) {
               guildId: N,
               channelId: P,
               themeType: S.l.POPOUT,
-              onOpenProfile: k ? true : Y
+              onOpenProfile: M ? true : Y
             }), (0, r.jsx)(v.Z, {
               user: t,
               themeType: S.l.POPOUT,
@@ -153,7 +153,7 @@ function P(e) {
             displayProfile: Z,
             guild: F,
             isHovering: H,
-            onOpenProfile: k ? true : Y,
+            onOpenProfile: M ? true : Y,
             channelId: P,
             onClose: L
           }), (0, r.jsx)(T.Z, {

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk600164 = require("./600164.jsx"),
   Chunk483444 = require("./483444.jsx"),
@@ -49,9 +49,9 @@ let y = e => {
       percent: n
     }) : s && (l = g.intl.string(g.t.gtNqJS)), (0, r.jsx)("div", {
       className: E.trialBadgeContainer,
-      children: (0, r.jsx)(o.Text, {
+      children: (0, r.jsx)(a.Text, {
         variant: "text-xs/bold",
-        className: a()(E.trialOfferText, {
+        className: o()(E.trialOfferText, {
           [E.tier0TrialOffer]: t
         }),
         children: l
@@ -79,7 +79,7 @@ let y = e => {
       R = null == N || null == (t = N.discount) ? true : t.amount;
     return (0, r.jsxs)("div", {
       "aria-hidden": true,
-      className: a()({
+      className: o()({
         [E.headerBackground]: !C,
         [E.tier2HeaderBackground]: C
       }, T),
@@ -91,14 +91,14 @@ let y = e => {
         className: E.headerTop,
         children: [(0, r.jsxs)("div", {
           children: [(0, r.jsx)(n, {
-            className: a()(E.headerIcon, {
+            className: o()(E.headerIcon, {
               [E.nonTier2]: !C
             })
           }), (S || A) && (0, r.jsx)(y, {
             isTier0: I === m.p9.TIER_0,
             discountAmount: A ? R : true
           })]
-        }), !i && (0, r.jsx)(o.olH, {
+        }), !i && (0, r.jsx)(a.olH, {
           hideOnFullscreen: f,
           onClick: O,
           className: E.closeButton

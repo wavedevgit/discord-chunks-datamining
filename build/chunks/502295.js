@@ -2,7 +2,7 @@
 /** chunk id: 502295, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => a
+  Z: () => o
 });
 var Chunk647438 = require("./647438.js");
 let i = Object.freeze({
@@ -15,7 +15,7 @@ let i = Object.freeze({
   dirty: 0
 });
 
-function a() {
+function o() {
   let e = (0, Chunk647438.useRef)(null),
     t = (0, Chunk647438.useCallback)(() => {
       let {
@@ -27,16 +27,16 @@ function a() {
           scrollLeft: n,
           scrollHeight: r,
           scrollWidth: i,
-          offsetHeight: a,
-          offsetWidth: o
+          offsetHeight: o,
+          offsetWidth: a
         } = exports;
         return {
           scrollTop: module,
           scrollLeft: require,
           scrollHeight: Chunk647438,
           scrollWidth: i,
-          offsetHeight: a,
-          offsetWidth: o,
+          offsetHeight: o,
+          offsetWidth: a,
           dirty: 0
         }
       }

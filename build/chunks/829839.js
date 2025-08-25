@@ -6,12 +6,12 @@ require.d(exports, {
   DY: () => p,
   yQ: () => h
 }), require("./539854.js"), require("./290780.js");
-var r, i, a, o, s, l, Chunk553813 = require("./553813.js"),
+var r, i, o, a, s, l, Chunk553813 = require("./553813.js"),
   u = require.n(Chunk553813),
   Chunk65154 = require("./65154.js");
 let f = [{
   name: "H265",
-  encode: "undefined" == typeof window || (null == (i = window) || null == (r = i.DiscordNative) ? true : r.process.platform) !== "darwin" || (null == (o = window) || null == (a = o.DiscordNative) ? true : a.os.arch) === "arm64" && u().satisfies(null == (l = window) || null == (s = l.DiscordNative) ? true : s.os.release, Chunk65154.n4),
+  encode: "undefined" == typeof window || (null == (i = window) || null == (r = i.DiscordNative) ? true : r.process.platform) !== "darwin" || (null == (a = window) || null == (o = a.DiscordNative) ? true : o.os.arch) === "arm64" && u().satisfies(null == (l = window) || null == (s = l.DiscordNative) ? true : s.os.release, Chunk65154.n4),
   decode: true
 }, {
   name: "H264",

@@ -24,5 +24,5 @@ function u(e) {
     }, {
       autoTrackExposure: false
     });
-  return (n !== c.oC.GUILD_ONBOARDING || i.ZP.shouldShowOnboarding(e)) && (n !== c.oC.GUILD_HOME || (0, a.s)(e)) ? null == o.Z.getChannel(n) ? u : n : u
+  return (n !== c.oC.GUILD_ONBOARDING || i.ZP.shouldShowOnboarding(e)) && (n !== c.oC.GUILD_HOME || (0, o.s)(e)) ? null == a.Z.getChannel(n) ? u : n : u
 }

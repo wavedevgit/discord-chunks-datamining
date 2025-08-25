@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => q
 }), require("./388685.js"), require("./539854.js"), require("./642613.js");
 var r, Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk913527 = require("./913527.js"),
   s = require.n(Chunk913527),
   Chunk442837 = require("./442837.js"),
@@ -63,8 +63,8 @@ function R(e, t) {
   r.setFullYear(t);
   let i = new Date(r.getTime());
   i.setDate(r.getDate() - y);
-  let a = new Date(r.getTime());
-  return a.setDate(r.getDate() + y), n > i && n < a
+  let o = new Date(r.getTime());
+  return o.setDate(r.getDate() + y), n > i && n < o
 }
 
 function P(e) {
@@ -118,11 +118,11 @@ function j() {
   L()
 }
 
-function k() {
+function M() {
   T = I(), L()
 }
 
-function M() {
+function k() {
   T.lastShownFriendsListGiftIntents = Array.from(A)
 }
 
@@ -190,7 +190,7 @@ function K(e) {
   if (!t) return;
   N = e;
   let n = _.Z.getFriendIDs().filter(e => !_.Z.isIgnored(e));
-  a().sampleSize(n, e).forEach(e => {
+  o().sampleSize(n, e).forEach(e => {
     let t = _.Z.getSince(e);
     if (null != t) {
       let n = new Date(t);
@@ -248,9 +248,9 @@ m(z, "displayName", "PremiumGiftingIntentStore"), m(z, "persistKey", "PremiumGif
 }]);
 let q = new z(Chunk570140.Z, {
   CONNECTION_OPEN: j,
-  LOGOUT: k,
+  LOGOUT: M,
   MESSAGE_GIFT_INTENT_SHOWN: U,
-  FRIENDS_LIST_GIFT_INTENTS_SHOWN: M,
+  FRIENDS_LIST_GIFT_INTENTS_SHOWN: k,
   FRIENDS_TAB_BADGE_DISMISS: G,
   GIFT_INTENT_FLOW_PURCHASED_GIFT: B,
   DEV_TOOLS_FRIENDS_LIST_GIFT_INTENTS_SHOWN_RESET: V,

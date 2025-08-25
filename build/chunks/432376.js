@@ -8,15 +8,15 @@ function r(e) {
     canChat: n,
     renderReactions: r,
     canAddNewReactions: i,
-    isLurking: a,
-    isGuest: o,
+    isLurking: o,
+    isGuest: a,
     communicationDisabled: s,
     isActiveChannelOrUnarchivableThread: l,
     isAutomodQuarantined: c
-  } = e, u = t.isPrivate(), d = t.isSystemDM(), f = (true === i || u) && !d && l, _ = (n || u) && l, p = a || o || !_ || true === s || true === c;
+  } = e, u = t.isPrivate(), d = t.isSystemDM(), f = (true === i || u) && !d && l, _ = (n || u) && l, p = o || a || !_ || true === s || true === c;
   return {
     disableReactionReads: !r,
-    disableReactionCreates: a || o || !_ || !f,
+    disableReactionCreates: o || a || !_ || !f,
     disableReactionUpdates: p
   }
 }

@@ -10,7 +10,7 @@ var Chunk77025 = require("./77025.js"),
   c = Object,
   u = c.prototype;
 module.exports = Chunk87185 ? c.getPrototypeOf : function(e) {
-  var t = a(e);
+  var t = o(e);
   if (r(t, l)) return t[l];
   var n = t.constructor;
   return i(n) && t instanceof n ? n.prototype : t instanceof c ? u : null

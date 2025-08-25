@@ -23,6 +23,8 @@ function E(e, t) {
   } = d.A.useExperiment({
     guildId: t.guild_id,
     location: "useRequestToStreamItem"
+  }, {
+    autoTrackExposure: false
   }), E = (0, i.e7)([s.default], () => s.default.getId()), P = (0, g.Z)(e, t.guild_id)[0], v = (0, i.e7)([u.Z], () => null != u.Z.getStreamForUser(e, t.getGuildId())), b = (0, o.IX)(null == P ? true : P.application_id).data, h = (0, c.Z)(e, t.id);
   return E !== e && null != P && null != b && n && h && !v ? (0, l.jsx)(r.sNh, {
     id: "request-to-stream",

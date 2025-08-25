@@ -40,7 +40,7 @@ function b(e) {
   y(e), g.add(e);
   let n = d.Z.getGuild(e),
     r = f.default.getCurrentUser();
-  if (null == n || n.verificationLevel === _.sFg.NONE || null == r || (0, o.eM)(n, r) || r.isPhoneVerified()) return;
+  if (null == n || n.verificationLevel === _.sFg.NONE || null == r || (0, a.eM)(n, r) || r.isPhoneVerified()) return;
   let i = c.ZP.getMember(n.id, r.id);
   if (null != i) {
     var l;
@@ -63,7 +63,7 @@ function b(e) {
     T = false;
   r.isPhoneVerified() || r.isStaff() || (O = n.verificationLevel >= _.sFg.LOW && !r.verified, v = n.verificationLevel >= _.sFg.VERY_HIGH, I = n.verificationLevel >= _.sFg.MEDIUM && h > 0, T = n.verificationLevel >= _.sFg.HIGH && m > 0);
   let S = [];
-  T && S.push(m), I && S.push(h), S.length > 0 && (t = setTimeout(() => a.Z.dispatch({
+  T && S.push(m), I && S.push(h), S.length > 0 && (t = setTimeout(() => o.Z.dispatch({
     type: "GUILD_VERIFICATION_CHECK",
     guildId: e
   }), Math.max(...S))), E[e] = {

@@ -11,17 +11,17 @@ var Chunk647438 = require("./647438.js"),
 let s = e => {
   let [t, n] = r.useState(), {
     categories: s
-  } = (0, o.ZP)();
+  } = (0, a.ZP)();
   return r.useEffect(() => {
     (null == t || 0 === t.size) && n(s)
   }, [s, t]), r.useMemo(() => {
     if (null != e) return e;
     if (null == t) return;
-    let n = (0, a.XS)(t).filter(e => {
+    let n = (0, o.XS)(t).filter(e => {
       let {
         skuId: t
       } = e, n = i.Z.getProduct(t);
-      return (0, a.G1)(n)
+      return (0, o.G1)(n)
     }).map(e => e.id);
     return n[Math.floor(Math.random() * n.length)]
   }, [t, e])

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -26,12 +26,12 @@ function b(e) {
     label: t,
     onChange: n,
     enabled: i,
-    subLabel: a
+    subLabel: o
   } = e;
   return (0, r.jsx)(c.j7V, {
     value: !!i,
     onChange: n,
-    note: a,
+    note: o,
     children: t
   })
 }
@@ -41,7 +41,7 @@ function y() {
     t = Chunk647438.useRef(null),
     {
       categories: n,
-      initialized: a
+      initialized: o
     } = (0, Chunk442837.cj)([Chunk151662.Z], () => Chunk151662.Z.getEmailSettings());
   Chunk647438.useEffect(() => {
     if (null == Chunk120356)(0, Chunk960412.Y7)();
@@ -74,15 +74,15 @@ function y() {
         let {
           category: t,
           label: i,
-          subLabel: a
-        } = e, o = v[t], s = (0, r.jsx)(b, {
+          subLabel: o
+        } = e, a = v[t], s = (0, r.jsx)(b, {
           label: i(),
-          subLabel: a(),
+          subLabel: o(),
           enabled: n[t],
           onChange: e => O(t, e)
         }, i());
-        return null != o ? (0, r.jsx)(u.F, {
-          setting: o,
+        return null != a ? (0, r.jsx)(u.F, {
+          setting: a,
           children: s
         }, i()) : s
       }), (0, Chunk951288.jsxs)(Chunk921801.F, {
@@ -98,7 +98,7 @@ function y() {
           type: Chunk481060.geA.DESCRIPTION,
           children: Chunk388032.intl.string(Chunk388032.t.iYjQ8f)
         }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
-          className: o()(Chunk197571.marginTop40, Chunk197571.marginBottom40)
+          className: a()(Chunk197571.marginTop40, Chunk197571.marginBottom40)
         })]
       })]
     })]

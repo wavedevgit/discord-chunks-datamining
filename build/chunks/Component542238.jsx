@@ -15,7 +15,7 @@ function l(e) {
     body: t,
     dismissCallback: n,
     errorCodeMessage: l
-  } = e, c = (0, a.e7)([o.Z], () => o.Z.getRemoteSessionId());
+  } = e, c = (0, o.e7)([a.Z], () => a.Z.getRemoteSessionId());
   return (i.useEffect(() => {
     null != c && n()
   }, [c, n]), null == l) ? t : (0, r.jsxs)(r.Fragment, {

@@ -7,8 +7,8 @@ module.exports = function(e) {
   if (!t.rangeCount) return null;
   var n = r(t.getRangeAt(0)),
     i = n.top,
-    a = n.right,
-    o = n.bottom,
+    o = n.right,
+    a = n.bottom,
     s = n.left;
-  return 0 === i && 0 === a && 0 === o && 0 === s ? null : n
+  return 0 === i && 0 === o && 0 === a && 0 === s ? null : n
 }

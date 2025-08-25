@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk91192 = require("./91192.jsx"),
   Chunk442837 = require("./442837.js"),
   Chunk518738 = require("./518738.js"),
@@ -73,8 +73,8 @@ function D(e, t) {
   if (null == e) return {};
   var n, r, i = x(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -82,8 +82,8 @@ function D(e, t) {
 function x(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -91,14 +91,14 @@ function L(e) {
   var t, n;
   let {
     message: i,
-    compact: a = false,
+    compact: o = false,
     className: N,
     onContextMenu: P,
     onClick: x,
     hideSimpleEmbedContent: L = true,
     channel: j,
-    isGroupStart: k,
-    animateAvatar: M,
+    isGroupStart: M,
+    animateAvatar: k,
     subscribeToComponentDispatch: U,
     renderThreadAccessory: G,
     trackAnnouncementViews: B = false
@@ -120,14 +120,14 @@ function L(e) {
     enabled: B
   }), ee = (0, g.iG)(i), et = (0, g.Gx)(i);
   return (0, r.jsx)(m.Z, R({
-    compact: a,
-    className: o()(N, {
+    compact: o,
+    className: a()(N, {
       [C.ephemeral]: (0, p.Pv)(i),
       [C.disableInteraction]: F
     }),
     disableInteraction: F,
-    childrenRepliedMessage: (0, S.Z)(i, j, K, z, a),
-    childrenExecutedCommand: (0, T.Z)(i, j, a),
+    childrenRepliedMessage: (0, S.Z)(i, j, K, z, o),
+    childrenExecutedCommand: (0, T.Z)(i, j, o),
     childrenHeader: (0, v.Z)(w(R({}, e), {
       guildId: j.guild_id,
       author: X,

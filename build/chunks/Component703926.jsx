@@ -36,14 +36,14 @@ let g = {
     let {
       isSelected: n,
       giftStyle: i,
-      setSelectedGiftStyle: o,
+      setSelectedGiftStyle: a,
       onFocus: l,
       onBlur: c
     } = e;
-    return (0, r.jsx)(a.P3F, {
+    return (0, r.jsx)(o.P3F, {
       className: s.button,
       innerRef: t,
-      onClick: () => o(i),
+      onClick: () => a(i),
       onFocus: l,
       onBlur: c,
       children: (0, r.jsx)("img", {

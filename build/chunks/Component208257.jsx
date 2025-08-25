@@ -2,12 +2,12 @@
 /** chunk id: 208257, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  t: () => o
+  t: () => a
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk538534 = require("./538534.jsx");
-let o = {
+let a = {
   title: "RadioGroup",
   stories: [{
     id: "radiogroup",
@@ -16,7 +16,7 @@ let o = {
       let {
         optionCount: t,
         size: n,
-        disabled: o,
+        disabled: a,
         orientation: s,
         radioPosition: l,
         withTransparentBackground: c
@@ -26,7 +26,7 @@ let o = {
         value: "option".concat(t + 1),
         name: "Option ".concat(t + 1)
       }));
-      return (0, r.jsx)(a.Ee, {
+      return (0, r.jsx)(o.Ee, {
         value: u,
         onChange: e => {
           let {
@@ -36,7 +36,7 @@ let o = {
         },
         options: f,
         size: n,
-        disabled: o,
+        disabled: a,
         orientation: s,
         radioPosition: l,
         withTransparentBackground: c

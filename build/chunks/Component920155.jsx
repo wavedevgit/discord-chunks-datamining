@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk202841 = require("./202841.js"),
   Chunk442837 = require("./442837.js"),
   Chunk930295 = require("./930295.jsx"),
@@ -64,7 +64,7 @@ function I(e) {
   var t;
   let {
     children: n,
-    targetElementRef: a,
+    targetElementRef: o,
     shouldShow: p = true,
     onRequestClose: m,
     position: E = "top",
@@ -74,8 +74,8 @@ function I(e) {
     caretConfig: A
   } = e, [C, N] = i.useState(p), R = (0, l.e7)([f.Z], () => f.Z.getLayers()), P = null != (t = R[R.length - 1]) ? t : "base", w = i.useMemo(() => {
     var e;
-    return null == a.current || (null == (e = a.current.closest("[data-layer]")) ? true : e.getAttribute("data-layer")) === P
-  }, [a, P]);
+    return null == o.current || (null == (e = o.current.closest("[data-layer]")) ? true : e.getAttribute("data-layer")) === P
+  }, [o, P]);
   i.useEffect(() => {
     N(w && p)
   }, [w, p]);
@@ -104,10 +104,10 @@ function I(e) {
       if (!i) return null;
       let l = (0, r.jsx)(u.V, b(g({}, e), {
         modal: false,
-        className: o()(null != S ? h.popoverContentWithGradient : h.popover, {
+        className: a()(null != S ? h.popoverContentWithGradient : h.popover, {
           [h["popover--video"]]: T
         }),
-        returnRef: a,
+        returnRef: o,
         children: n
       }));
       return (0, r.jsx)(s.animated.div, {
@@ -122,7 +122,7 @@ function I(e) {
       })
     });
   return (0, r.jsx)(c.H, {
-    targetElementRef: a,
+    targetElementRef: o,
     shouldShow: C,
     onRequestClose: m,
     position: E,

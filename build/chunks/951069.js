@@ -17,17 +17,17 @@ var Chunk391997 = require("./391997.js"),
   c = function() {
     function e() {}
     return module.connect = function(e, t) {
-      var n = new a.r(e, t);
+      var n = new o.r(e, t);
       s.set(e, n)
     }, module.observe = function(e, t, n) {
-      var a = s.get(e),
-        c = 0 === a.observationTargets.length;
-      0 > l(a.observationTargets, t) && (c && o.C.push(a), a.observationTargets.push(new i.Q(t, n && n.box)), (0, r.t)(1), r.p.schedule())
+      var o = s.get(e),
+        c = 0 === o.observationTargets.length;
+      0 > l(o.observationTargets, t) && (c && a.C.push(o), o.observationTargets.push(new i.Q(t, n && n.box)), (0, r.t)(1), r.p.schedule())
     }, module.unobserve = function(e, t) {
       var n = s.get(e),
         i = l(n.observationTargets, t),
-        a = 1 === n.observationTargets.length;
-      i >= 0 && (a && o.C.splice(o.C.indexOf(n), 1), n.observationTargets.splice(i, 1), (0, r.t)(false))
+        o = 1 === n.observationTargets.length;
+      i >= 0 && (o && a.C.splice(a.C.indexOf(n), 1), n.observationTargets.splice(i, 1), (0, r.t)(false))
     }, module.disconnect = function(e) {
       var t = this,
         n = s.get(e);

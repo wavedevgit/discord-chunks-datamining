@@ -3,14 +3,14 @@
 "use strict";
 require.d(exports, {
   Dz: () => s,
-  Eb: () => o,
+  Eb: () => a,
   x$: () => l
 });
 var Chunk373793 = require("./373793.js"),
   Chunk213459 = require("./213459.js"),
   Chunk689079 = require("./689079.js");
 
-function o(e) {
+function a(e) {
   let {
     customInstallUrl: t,
     installParams: n,
@@ -25,7 +25,7 @@ function s(e) {
     installParams: n,
     integrationTypesConfig: i
   } = e;
-  return o({
+  return a({
     customInstallUrl: t,
     installParams: n,
     integrationTypesConfig: i
@@ -36,9 +36,9 @@ function l(e) {
   let {
     applicationId: t,
     channel: n,
-    commandIntegrationTypes: o
+    commandIntegrationTypes: a
   } = e;
-  return !(null != o && !o.includes(r.Y.USER_INSTALL) || t === a.bi.BUILT_IN || i.ZP.hasUserStateApplication(t) || null != n && i.ZP.hasContextStateApplication({
+  return !(null != a && !a.includes(r.Y.USER_INSTALL) || t === o.bi.BUILT_IN || i.ZP.hasUserStateApplication(t) || null != n && i.ZP.hasContextStateApplication({
     applicationId: t,
     channelId: n.id,
     guildId: n.guild_id

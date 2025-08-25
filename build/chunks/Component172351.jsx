@@ -52,7 +52,7 @@ function m(e) {
     type: "channel"
   }), [m]), {
     commands: y
-  } = o.Qm(b, t, n), O = i.useMemo(() => null == y ? true : y.filter(e => {
+  } = a.Qm(b, t, n), O = i.useMemo(() => null == y ? true : y.filter(e => {
     let {
       nsfw: t
     } = e;
@@ -66,7 +66,7 @@ function m(e) {
       application_id: t,
       command_id: e,
       guild_id: p
-    }, (0, a.JS)(m.id)))
+    }, (0, o.JS)(m.id)))
   };
   return (0, r.jsx)(u.Z, {
     heading: f.intl.string(f.t["0hKkS0"]),

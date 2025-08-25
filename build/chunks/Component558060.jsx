@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk884697 = require("./884697.js"),
   Chunk754433 = require("./754433.jsx"),
   Chunk409116 = require("./409116.jsx"),
@@ -63,28 +63,28 @@ function h(e) {
     hideStrikethroughPrice: h = false,
     nitroIconType: m,
     nitroIconSize: g = "md"
-  } = e, E = (0, o.ql)(t, c.tuJ.DEFAULT);
+  } = e, E = (0, a.ql)(t, c.tuJ.DEFAULT);
   if (null == E) return null;
   if (E.amount <= 0) return (0, r.jsx)("div", {
-    className: a()(u.priceTagsContainer, d),
+    className: o()(u.priceTagsContainer, d),
     children: (0, r.jsx)(l.F, {
       price: E
     })
   });
-  let b = (0, o.ql)(t, c.tuJ.PREMIUM_TIER_2),
-    y = (0, o.x6)(t) && n ? p(f({}, E), {
+  let b = (0, a.ql)(t, c.tuJ.PREMIUM_TIER_2),
+    y = (0, a.x6)(t) && n ? p(f({}, E), {
       amount: i.original
     }) : E,
     O = n && null != b;
   return (0, r.jsxs)("div", {
-    className: a()(u.priceTagsContainer, d),
+    className: o()(u.priceTagsContainer, d),
     children: [h ? null : (0, r.jsx)(s.y, {
       price: y,
       className: u.price
     }), (0, r.jsx)(l.F, {
       price: O ? b : y,
       discount: i,
-      className: a()({
+      className: o()({
         [u.price]: null == _
       }),
       nitroIconType: O ? m : true,

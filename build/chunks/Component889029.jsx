@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk223245 = require("./223245.js"),
@@ -99,7 +99,7 @@ function y() {
       }), T()]
     }), (0, Chunk951288.jsxs)("div", {
       children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
-        className: a()(Chunk197571.marginTop40, Chunk197571.marginBottom8, Chunk40086.sectionLabel),
+        className: o()(Chunk197571.marginTop40, Chunk197571.marginBottom8, Chunk40086.sectionLabel),
         children: Chunk388032.intl.string(Chunk388032.t["+1H47u"])
       }), (0, Chunk951288.jsx)(Chunk921801.F, {
         setting: Chunk726985.s6.STREAMER_MODE_HIDE_PERSONAL_INFORMATION,

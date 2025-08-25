@@ -20,8 +20,8 @@ function l(e) {
   }), {
     analyticsLocations: l
   } = (0, r.ZP)();
-  if ((0, a.Jw)()) return () => {
-    (0, o.Z)(n ? s.Z.MY_GAMES : s.Z.ACTIVITY_PRIVACY, {
+  if ((0, o.Jw)()) return () => {
+    (0, a.Z)(n ? s.Z.MY_GAMES : s.Z.ACTIVITY_PRIVACY, {
       analyticsLocations: l,
       onClose: t
     })

@@ -58,8 +58,8 @@ function m(e, t) {
   if (null == e) return {};
   var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -67,13 +67,13 @@ function m(e, t) {
 function g(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let E = e => (0, r.EQ)(e).with({
     type: i.Z.AVATAR_DECORATION
-  }, e => a.Z.fromServer(e)).with({
+  }, e => o.Z.fromServer(e)).with({
     type: i.Z.PROFILE_EFFECT
   }, e => u.Z.fromServer(e)).with({
     type: i.Z.NAMEPLATE
@@ -89,7 +89,7 @@ class y extends Chunk803358.Z {
       premium_type: n,
       category_sku_id: r,
       prices: i,
-      bundled_products: a,
+      bundled_products: o,
       variants: l
     } = e, c = m(e, ["type", "premium_type", "category_sku_id", "prices", "bundled_products", "variants"]);
     return new y(h(_({}, super.fromServer(c)), {
@@ -98,7 +98,7 @@ class y extends Chunk803358.Z {
       categorySkuId: r,
       prices: (0, s.l)(i),
       items: b(c.items),
-      bundledProducts: null == a ? true : a.map(o.Z.fromServer),
+      bundledProducts: null == o ? true : o.map(a.Z.fromServer),
       variants: null == l ? true : l.map(O.fromServer),
       googleSkuIds: c.google_sku_ids,
       eligibleOffers: c.eligible_offers
@@ -115,8 +115,8 @@ class O extends y {
       base_variant_sku_id: n,
       variant_label: r,
       variant_value: i
-    } = e, a = m(e, ["base_variant_name", "base_variant_sku_id", "variant_label", "variant_value"]);
-    return new O(h(_({}, super.fromServer(a)), {
+    } = e, o = m(e, ["base_variant_name", "base_variant_sku_id", "variant_label", "variant_value"]);
+    return new O(h(_({}, super.fromServer(o)), {
       baseVariantName: t,
       baseVariantSkuId: n,
       variantLabel: r,

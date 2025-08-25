@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk468194 = require("./468194.js"),
   Chunk481060 = require("./481060.js"),
   Chunk904245 = require("./904245.js"),
@@ -48,8 +48,8 @@ function v(e, t) {
   if (null == e) return {};
   var n, r, i = I(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -57,8 +57,8 @@ function v(e, t) {
 function I(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let T = 16;
@@ -120,7 +120,7 @@ function N(e) {
   var {
     type: n
   } = e, i = v(e, ["type"]);
-  let a = "text-muted";
+  let o = "text-muted";
   switch (n) {
     case "NO_VOTES":
       t = (0, r.jsx)(l.Text, {
@@ -132,7 +132,7 @@ function N(e) {
       break;
     case "VICTOR":
       let {
-        victorAnswerText: o, victorVotePercentage: s
+        victorAnswerText: a, victorVotePercentage: s
       } = i;
       t = (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)("div", {
@@ -142,7 +142,7 @@ function N(e) {
             color: "text-default",
             className: b.victorAnswerText,
             scaleFontToUserSetting: true,
-            children: o
+            children: a
           }), (0, r.jsx)(m.ZY, {
             size: T,
             className: b.victorIcon,
@@ -151,7 +151,7 @@ function N(e) {
           })]
         }), (0, r.jsxs)(l.Text, {
           variant: "text-xs/medium",
-          color: a,
+          color: o,
           scaleFontToUserSetting: true,
           children: [E.intl.string(E.t.ufIDIy), " • ", s, "%"]
         })]
@@ -169,7 +169,7 @@ function N(e) {
           children: E.intl.string(E.t.kPN9sr)
         }), (0, r.jsxs)(l.Text, {
           variant: "text-xs/medium",
-          color: a,
+          color: o,
           scaleFontToUserSetting: true,
           children: [c, "%"]
         })]
@@ -185,18 +185,18 @@ function R(e) {
   let {
     className: t,
     data: n,
-    onClickPollLink: a
+    onClickPollLink: o
   } = e, s = i.useMemo(() => C(n), [n]), c = null != n.victorEmoji || "NO_VOTES" === s.type;
   return (0, r.jsxs)("div", {
-    className: o()(b.container, {
+    className: a()(b.container, {
       [b.containerWithImage]: c
     }, t),
     children: [(0, r.jsx)(A, {
       hasNoVotes: "NO_VOTES" === s.type,
       victorEmoji: n.victorEmoji
-    }), (0, r.jsx)(N, O({}, s)), null != a && (0, r.jsx)(l.zxk, {
+    }), (0, r.jsx)(N, O({}, s)), null != o && (0, r.jsx)(l.zxk, {
       size: "sm",
-      onClick: a,
+      onClick: o,
       variant: "secondary",
       text: E.intl.string(E.t.Jw7VbW)
     })]
@@ -207,13 +207,13 @@ function P(e) {
   var t;
   let {
     message: n,
-    channel: a,
-    compact: o,
+    channel: o,
+    compact: a,
     disableInteraction: u = false
   } = e, d = n.embeds[0], m = i.useMemo(() => (0, h.Z)(d), [d]), y = (0, s.aF)(null != (t = null == m ? true : m.questionText) ? t : "", g.Dv), O = (0, f.ZP)(n), v = (0, _.l)({
     user: n.author,
-    channelId: a.id,
-    guildId: a.guild_id,
+    channelId: o.id,
+    guildId: o.guild_id,
     messageId: n.id
   }), I = n.messageReference, T = i.useCallback(() => {
     null != I && c.Z.jumpToMessage({
@@ -229,7 +229,7 @@ function P(e) {
         size: "xs"
       }),
       timestamp: n.timestamp,
-      compact: o,
+      compact: a,
       children: E.intl.format(E.t["VJcK4+"], {
         username: O.nick,
         usernameHook: v(O),

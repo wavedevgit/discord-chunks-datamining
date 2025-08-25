@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk872810 = require("./872810.js"),
@@ -27,14 +27,14 @@ function E(e) {
     width: n,
     noArt: i = false,
     selected: E = false
-  } = e, b = n < m, y = (0, o.e7)([c.Z, u.default], () => c.Z.getAllActiveStreams().some(e => {
+  } = e, b = n < m, y = (0, a.e7)([c.Z, u.default], () => c.Z.getAllActiveStreams().some(e => {
     let {
       ownerId: t
     } = e;
     return t !== u.default.getId()
   }));
   return (0, r.jsx)("div", {
-    className: a()(p.content, p.streamHidden, {
+    className: o()(p.content, p.streamHidden, {
       [p.__invalid_small]: b
     }),
     children: (0, r.jsx)(f.Z, {
@@ -45,7 +45,7 @@ function E(e) {
       size: (0, f.L)(n),
       header: b ? null : _.intl.string(_.t.epU4ER),
       description: E ? null : (0, r.jsxs)("div", {
-        className: a()(p.streamHiddenCTA, {
+        className: o()(p.streamHiddenCTA, {
           [p.largePaddingTop]: !b
         }),
         children: [(0, r.jsx)(d.a, {

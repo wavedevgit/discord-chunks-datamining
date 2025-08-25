@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk202841 = require("./202841.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -70,15 +70,15 @@ let R = 104,
   w = async () => await require.e("67963").then(require.t.bind(require, 145193, 19));
 
 function D(e) {
-  var t, n, a;
+  var t, n, o;
   let {
     quest: S,
     questContent: C,
     isHovering: D,
     contentPosition: L,
     rowIndex: j,
-    isVisibleInViewport: k,
-    onReceiveErrorHints: M,
+    isVisibleInViewport: M,
+    onReceiveErrorHints: k,
     sourceQuestContent: U
   } = e, G = i.useMemo(() => h.r.build(S.config), [S.config]), B = G.defaultRewardName, Z = G.defaultRewardNameWithArticle, F = (null == (t = S.userStatus) ? true : t.enrolledAt) != null, {
     ref: V,
@@ -92,7 +92,7 @@ function D(e) {
     config: N(A({}, v.Y), {
       clamp: true
     })
-  }), q = (null == (n = S.userStatus) ? true : n.completedAt) != null, X = (null == (a = S.userStatus) ? true : a.claimedAt) != null, Q = (0, _.xN)(S.config), J = (0, _.LM)(S.config), {
+  }), q = (null == (n = S.userStatus) ? true : n.completedAt) != null, X = (null == (o = S.userStatus) ? true : o.claimedAt) != null, Q = (0, _.xN)(S.config), J = (0, _.LM)(S.config), {
     completedRatio: $,
     completedRatioDisplay: ee
   } = (0, p.I)(S), et = (0, p.Bd)(S, U), en = i.useMemo(() => X && Q ? I.intl.format(I.t["8Op4c3"], {
@@ -135,7 +135,7 @@ function D(e) {
       },
       className: T.rewardDescriptionContainer,
       children: [(0, r.jsx)(b.E, {
-        showPlaceholder: !k,
+        showPlaceholder: !M,
         width: 80,
         height: 80,
         children: (0, r.jsxs)("div", {
@@ -182,7 +182,7 @@ function D(e) {
         })
       }), (0, r.jsxs)("div", {
         ref: V,
-        className: o()(T.textContainer, {
+        className: a()(T.textContainer, {
           [T.justifyCenter]: !W
         }),
         children: [(0, r.jsx)(c.X6q, {
@@ -209,7 +209,7 @@ function D(e) {
       questContent: C,
       contentPosition: L,
       rowIndex: j,
-      onReceiveErrorHints: M,
+      onReceiveErrorHints: k,
       sourceQuestContent: U
     })]
   })

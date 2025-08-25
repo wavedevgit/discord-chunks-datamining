@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
-  o = require.n(Chunk512722),
+  a = require.n(Chunk512722),
   Chunk399606 = require("./399606.js"),
   Chunk481060 = require("./481060.js"),
   Chunk594174 = require("./594174.js"),
@@ -60,17 +60,17 @@ function b(e, t) {
 function y(e) {
   let {
     user: t
-  } = e, a = (0, s.e7)([c.default], () => c.default.getCurrentUser()), m = i.useCallback(() => {
-    o()(true !== a, "User must be logged in to accept a link request"), (0, l.ZDy)(async () => {
+  } = e, o = (0, s.e7)([c.default], () => c.default.getCurrentUser()), m = i.useCallback(() => {
+    a()(true !== o, "User must be logged in to accept a link request"), (0, l.ZDy)(async () => {
       let {
         default: e
       } = await n.e("50872").then(n.bind(n, 442673));
       return n => (0, r.jsx)(e, b(g({}, n), {
-        currentUser: a,
+        currentUser: o,
         otherUser: t
       }))
     })
-  }, [a, t]);
+  }, [o, t]);
   return (0, r.jsxs)("div", {
     className: h.container,
     children: [(0, r.jsx)("div", {

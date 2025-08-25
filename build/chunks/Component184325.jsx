@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk315263 = require("./315263.js"),
   Chunk100527 = require("./100527.js"),
@@ -69,12 +69,12 @@ function j(e, t) {
   return n
 }
 
-function k(e, t) {
+function M(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let M = e => {
+let k = e => {
   let {
     badge: t,
     tieredTenureBadge: n,
@@ -105,7 +105,7 @@ function U(e) {
     trackUserProfileAction: Z
   } = (0, v.KZ)(), F = E.default.getCurrentUser(), V = (0, y.yd)(null == F ? true : F.premiumType, R.p9.TIER_2), H = (0, S.Of)(null != (t = null == F ? true : F.id) ? t : null), Y = (0, T.Z)(H).some(e => e.id === m.l.ORB_PROFILE_BADGE);
   return (0, r.jsx)("div", {
-    className: a()(D.container, i),
+    className: o()(D.container, i),
     "aria-label": w.intl.string(w.t.VWV0y8),
     role: "group",
     children: n.map((e, t) => {
@@ -155,7 +155,7 @@ function U(e) {
           if (null != n) return null == x || x(), n(t)
         },
         v = () => {
-          e.id === T.i && b.default.track(C.rMx.QUEST_CONTENT_VIEWED, k(L({}, (0, _.mH)(p.jn.QUEST_BADGE)), {
+          e.id === T.i && b.default.track(C.rMx.QUEST_CONTENT_VIEWED, M(L({}, (0, _.mH)(p.jn.QUEST_BADGE)), {
             is_targeted: false
           })), Z({
             action: "HOVER_BADGE"
@@ -164,17 +164,17 @@ function U(e) {
             analyticsLocations: G
           }, B))
         },
-        S = M({
+        S = k({
           badge: e,
           tieredTenureBadge: E && e.id !== P.a ? c : true,
           currentUserOwnsOrbBadge: Y
         });
-      return (0, r.jsx)(o.DY3, {
+      return (0, r.jsx)(a.DY3, {
         text: S,
         "aria-label": e.description,
         forceOpen: null != j && j(e.id),
         delay: A.vB,
-        children: (0, r.jsx)(o.eee, {
+        children: (0, r.jsx)(a.eee, {
           onClick: y,
           onMouseEnter: v,
           href: e.link,
@@ -185,7 +185,7 @@ function U(e) {
             alt: " ",
             "aria-hidden": true,
             src: null != (n = e.iconSrc) ? n : (0, A.Ej)(e.icon),
-            className: a()(D.badge, d)
+            className: o()(D.badge, d)
           })
         })
       }, "".concat(e.id, "-").concat(t))

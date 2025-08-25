@@ -14,11 +14,11 @@ var Chunk442837 = require("./442837.js"),
 function c(e) {
   let {
     userId: t
-  } = e, [n] = (0, r.e7)([o.Z, i.Z], () => {
+  } = e, [n] = (0, r.e7)([a.Z, i.Z], () => {
     let e = i.Z.getRelationshipType(t),
-      n = o.Z.getGameRelationshipsForUser(t),
-      r = o.Z.getGameRelationshipsVersion();
+      n = a.Z.getGameRelationshipsForUser(t),
+      r = a.Z.getGameRelationshipsVersion();
     return e === s.OGo.PENDING_INCOMING ? [l.intl.string(l.t["wPI56+"]), r] : [n.length > 0 ? l.intl.string(l.t.LAcY7u) : l.intl.string(l.t.w5uwoK), r]
-  }, [t], a.Q);
+  }, [t], o.Q);
   return n
 }
