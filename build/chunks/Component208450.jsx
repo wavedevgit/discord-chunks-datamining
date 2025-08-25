@@ -440,24 +440,30 @@ function W(e) {
     searchBarClassName: o,
     searchPopoutClassName: s,
     popoutAlignment: l
-  } = e, c = (0, T.Tm)(t), f = (0, u.e7)([p.Z], () => p.Z.keyboardModeEnabled), _ = (0, u.e7)([j.Z], () => null != c ? j.Z.getEditorState(c) : null), h = i.useMemo(() => null != _ ? _ : y.nR(O.Jl(P.ZP)), [_]), {
-    isSearching: E,
-    isSearchActive: b,
-    hasResults: v
-  } = (0, u.cj)([I.Z], () => {
-    let e = I.Z.getTotalCount(c);
-    return {
-      hasResults: null != e && e > 0,
-      isSearching: I.Z.getIsFetching(c),
-      isSearchActive: I.Z.hasSearchState(c)
-    }
-  }), S = i.useRef(b);
+  } = e, c = (0, T.Tm)(t), f = (0, u.e7)([p.Z], () => p.Z.keyboardModeEnabled), _ = (0, u.e7)([j.Z], () => null != c ? j.Z.getEditorState(c) : null), h = (0, u.e7)([j.Z], () => j.Z.getIsSearchTokensInitialized()), E = i.useRef(h);
   i.useEffect(() => {
-    S.current && !b && (S.current = false, (0, M.IZ)({
+    h && E.current !== h && (E.current = h, D.Z.ensureSearchInputDecorators(t))
+  }, [h, t]);
+  let b = i.useMemo(() => null != _ ? _ : y.nR(O.Jl(P.ZP)), [_]),
+    {
+      isSearching: v,
+      isSearchActive: S,
+      hasResults: C
+    } = (0, u.cj)([I.Z], () => {
+      let e = I.Z.getTotalCount(c);
+      return {
+        hasResults: null != e && e > 0,
+        isSearching: I.Z.getIsFetching(c),
+        isSearchActive: I.Z.hasSearchState(c)
+      }
+    }),
+    w = i.useRef(S);
+  i.useEffect(() => {
+    w.current && !S && (w.current = false, (0, M.IZ)({
       searchContext: t
-    })), !S.current && b && (S.current = true)
-  }, [b, t]);
-  let C = i.useCallback(e => {
+    })), !w.current && S && (w.current = true)
+  }, [S, t]);
+  let x = i.useCallback(e => {
       let {
         queryString: n,
         query: r,
@@ -480,7 +486,7 @@ function W(e) {
         searchMode: U.QIO.NEWEST
       })
     }, [t]),
-    w = (0, u.e7)([g.Z, m.Z], () => {
+    L = (0, u.e7)([g.Z, m.Z], () => {
       let e = (0, T.b7)(t) ? t.guildId : null;
       if (null != e) {
         let t = g.Z.getGuild(e);
@@ -493,23 +499,23 @@ function W(e) {
       }
       return null
     }),
-    x = (0, N.nP)({
+    k = (0, N.nP)({
       isXDMSearch: t.type === U.aib.DMS,
       location: "Search"
     }),
-    L = (0, N.KS)({
+    Z = (0, N.KS)({
       isXDMSearch: t.type === U.aib.DMS,
       location: "Search"
     }),
-    k = x || L,
-    Z = (0, A.$)({
+    V = k || Z,
+    F = (0, A.$)({
       location: "Search"
     }),
-    V = i.useMemo(() => t.type === U.aib.DMS ? G.intl.string(G.t.m7OrlZ) : Z ? G.intl.formatToPlainString(G.t.LDZtFB, {
-      name: w
-    }) : k ? (0, r.jsxs)(r.Fragment, {
+    W = i.useMemo(() => t.type === U.aib.DMS ? G.intl.string(G.t.m7OrlZ) : F ? G.intl.formatToPlainString(G.t.LDZtFB, {
+      name: L
+    }) : V ? (0, r.jsxs)(r.Fragment, {
       children: [G.intl.formatToPlainString(G.t.LDZtFB, {
-        name: w
+        name: L
       }), (0, r.jsx)("span", {
         className: B.keybind,
         children: (0, r.jsx)(d.M2$, {
@@ -517,22 +523,22 @@ function W(e) {
           className: B.shortcut
         })
       })]
-    }) : G.intl.string(G.t["5h0QOD"]), [t.type, k, w, Z]);
+    }) : G.intl.string(G.t["5h0QOD"]), [t.type, V, L, F]);
   return (0, r.jsx)(Y, {
     className: n,
     searchPopoutClassName: s,
     searchBarContainerClassName: a,
     searchBarClassName: o,
     searchContext: t,
-    isSearching: E,
-    editorState: h,
-    hasResults: v,
+    isSearching: v,
+    editorState: b,
+    hasResults: C,
     keyboardModeEnabled: f,
-    onSearch: C,
-    isSearchActive: b,
-    placeholder: V,
+    onSearch: x,
+    isSearchActive: S,
+    placeholder: W,
     popoutAlignment: l,
-    isSearchFiltersRedesignEnabled: k
+    isSearchFiltersRedesignEnabled: V
   })
 }
 

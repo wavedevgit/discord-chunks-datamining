@@ -304,5 +304,10 @@ let g = {
       tokens: t,
       cursorScope: n
     })
+  },
+  markSearchTokensRefreshed: function() {
+    Chunk570140.Z.dispatch({
+      type: "SEARCH_TOKENS_REFRESHED"
+    })
   }
 }

@@ -2,7 +2,7 @@
 /** chunk id: 817190, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => E
+  Z: () => y
 }), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
@@ -16,9 +16,10 @@ function o(e, t, n) {
   }) : e[t] = n, e
 }
 let s = .05,
-  l = new Map;
+  l = new Map,
+  c = false;
 
-function c(e) {
+function u(e) {
   var t;
   let n = null != (t = l.get(e)) ? t : {
     editorState: null,
@@ -31,85 +32,93 @@ function c(e) {
   return l.set(e, n), n
 }
 
-function u(e, t) {
+function d(e, t) {
   let n = l.get(e);
   return null == n ? null : t(n)
 }
 
-function d(e) {
+function f(e) {
   let {
     id: t,
     editorState: n
   } = e;
-  c(t).editorState = n
-}
-
-function f(e) {
-  let {
-    id: t
-  } = e;
-  c(t)
+  u(t).editorState = n
 }
 
 function _(e) {
   let {
     id: t
   } = e;
-  return l.delete(t)
+  u(t)
 }
 
 function p(e) {
   let {
-    id: t,
-    showBlocked: n
+    id: t
   } = e;
-  c(t).showBlockedResults = n
+  return l.delete(t)
 }
 
 function h(e) {
   let {
-    id: t
+    id: t,
+    showBlocked: n
   } = e;
-  c(t).showNoResultsAlt = Math.random() < s
+  u(t).showBlockedResults = n
 }
 
 function m(e) {
+  let {
+    id: t
+  } = e;
+  u(t).showNoResultsAlt = Math.random() < s
+}
+
+function g(e) {
   let {
     id: t,
     queryString: n,
     query: r,
     offset: i
-  } = e, a = c(t);
+  } = e, a = u(t);
   a.searchResultsQueryString = n, a.searchResultsQuery = r, a.searchResultsOffset = null != i ? i : 0
 }
-class g extends(r = Chunk442837.ZP.Store) {
+
+function E() {
+  c = true
+}
+class b extends(r = Chunk442837.ZP.Store) {
   getEditorState(e) {
-    return u(e, e => e.editorState)
+    return d(e, e => e.editorState)
   }
   shouldShowBlockedResults(e) {
     var t;
-    return null != (t = u(e, e => e.showBlockedResults)) && t
+    return null != (t = d(e, e => e.showBlockedResults)) && t
   }
   shouldShowNoResultsAlt(e) {
     var t;
-    return null != (t = u(e, e => e.showNoResultsAlt)) && t
+    return null != (t = d(e, e => e.showNoResultsAlt)) && t
   }
   getSearchResultsQueryString(e) {
-    return u(e, e => e.searchResultsQueryString)
+    return d(e, e => e.searchResultsQueryString)
   }
   getSearchResultsQuery(e) {
-    return u(e, e => e.searchResultsQuery)
+    return d(e, e => e.searchResultsQuery)
   }
   getSearchResultsOffset(e) {
-    return u(e, e => e.searchResultsOffset)
+    return d(e, e => e.searchResultsOffset)
+  }
+  getIsSearchTokensInitialized() {
+    return c
   }
 }
-o(g, "displayName", "SearchQueryStore");
-let E = new g(Chunk570140.Z, {
-  SEARCH_RESULTS_QUERY_UPDATE: m,
-  SEARCH_EDITOR_STATE_CLEAR: _,
-  SEARCH_ENSURE_SEARCH_STATE: f,
-  SEARCH_EDITOR_STATE_CHANGE: d,
-  SEARCH_SET_SHOW_BLOCKED_RESULTS: p,
-  SEARCH_SET_SHOW_NO_RESULTS_ALT: h
+o(b, "displayName", "SearchQueryStore");
+let y = new b(Chunk570140.Z, {
+  SEARCH_RESULTS_QUERY_UPDATE: g,
+  SEARCH_EDITOR_STATE_CLEAR: p,
+  SEARCH_ENSURE_SEARCH_STATE: _,
+  SEARCH_EDITOR_STATE_CHANGE: f,
+  SEARCH_SET_SHOW_BLOCKED_RESULTS: h,
+  SEARCH_SET_SHOW_NO_RESULTS_ALT: m,
+  SEARCH_TOKENS_REFRESHED: E
 })
