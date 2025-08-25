@@ -2,20 +2,22 @@
 /** chunk id: 771934, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  HA: () => A,
-  HV: () => y,
+  Ac: () => E,
+  HA: () => N,
+  HV: () => v,
   J4: () => p,
   JL: () => m,
-  Om: () => O,
+  Om: () => I,
   P0: () => _,
-  Vb: () => I,
-  fR: () => E,
+  PI: () => y,
+  Vb: () => S,
+  fR: () => b,
   gG: () => h,
-  hf: () => S,
-  u7: () => T,
-  uf: () => v,
+  hf: () => C,
+  u7: () => A,
+  uf: () => T,
   w8: () => g,
-  z3: () => b,
+  z3: () => O,
   zW: () => f
 });
 var Chunk647438 = require("./647438.js"),
@@ -59,29 +61,39 @@ let d = "manual",
   },
   E = () => {
     d = "manual", Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEMES_EDITOR_CONTROLS_CHANGED, {
-      control_name: "gradient_direction"
+      control_name: "gradient_direction_input"
     })
   },
   b = () => {
     d = "manual", Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEMES_EDITOR_CONTROLS_CHANGED, {
-      control_name: "color_intensity"
+      control_name: "gradient_direction"
     })
   },
   y = () => {
     d = "manual", Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEMES_EDITOR_CONTROLS_CHANGED, {
-      control_name: "base_theme"
+      control_name: "color_intensity_input"
     })
   },
   O = () => {
-    d = "surprise_me", Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEMES_SURPRISE_BUTTON_CLICKED, {})
+    d = "manual", Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEMES_EDITOR_CONTROLS_CHANGED, {
+      control_name: "color_intensity"
+    })
   },
   v = () => {
-    d = "manual", Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEME_RESET_BUTTON_CLICKED, {})
+    d = "manual", Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEMES_EDITOR_CONTROLS_CHANGED, {
+      control_name: "base_theme"
+    })
   },
   I = () => {
+    d = "surprise_me", Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEMES_SURPRISE_BUTTON_CLICKED, {})
+  },
+  T = () => {
+    d = "manual", Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEME_RESET_BUTTON_CLICKED, {})
+  },
+  S = () => {
     Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEMES_BACK_BUTTON_CLICKED, {})
   },
-  T = (e, t, n, r, i) => {
+  A = (e, t, n, r, i) => {
     l.default.track(c.rMx.CUSTOM_THEMES_UPDATED, {
       colors: e,
       color_intensity: t,
@@ -91,7 +103,7 @@ let d = "manual",
       creation_method: d
     }), d = "manual"
   },
-  S = (e, t) => {
+  C = (e, t) => {
     let {
       analyticsLocations: n
     } = (0, a.ZP)(t);
@@ -102,7 +114,7 @@ let d = "manual",
       })
     }, [e, n])
   },
-  A = (e, t) => {
+  N = (e, t) => {
     let n = (0, s.Nj)(i.z.CUSTOM_THEME_COACHMARK);
     r.useEffect(() => {
       if (e && !n && t !== i.z.CUSTOM_THEME_COACHMARK) {

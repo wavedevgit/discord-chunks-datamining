@@ -180,7 +180,7 @@ function z(e) {
     let r = parseInt(t, 10);
     if (isNaN(r)) return;
     let i = Math.max(0, Math.min(360, r));
-    c("".concat(i, "\xb0")), (0, N.fR)(), n(i)
+    c("".concat(i, "\xb0")), (0, N.Ac)(), n(i)
   };
   return (0, r.jsxs)("div", {
     className: o()(M.sliderContainer, M.gradientDirectionSliderContainer),
@@ -227,7 +227,7 @@ function q(e) {
     let r = parseInt(t, 10);
     if (isNaN(r)) return;
     let i = Math.max(0, Math.min(100, r));
-    l("".concat(i, "%")), (0, N.z3)(), n(i)
+    l("".concat(i, "%")), (0, N.PI)(), n(i)
   };
   return (0, r.jsxs)("div", {
     className: M.sliderContainer,
