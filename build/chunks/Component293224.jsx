@@ -191,6 +191,7 @@ function ec(e) {
     });
   return (0, i.jsx)(d.yRy, {
     targetElementRef: a,
+    clickTrap: true,
     renderPopout: e => {
       let {
         closePopout: t
@@ -293,6 +294,7 @@ function eu(e) {
     });
   return (0, i.jsx)(d.yRy, {
     targetElementRef: o,
+    clickTrap: true,
     renderPopout: e => {
       let {
         closePopout: t
@@ -373,6 +375,7 @@ function ed(e) {
     j = null == n || !m;
   return (0, i.jsx)(d.yRy, {
     targetElementRef: a,
+    clickTrap: true,
     renderPopout: e => {
       let {
         closePopout: t
@@ -462,6 +465,7 @@ function ep(e) {
   let S = ea(l);
   return (0, i.jsx)(d.yRy, {
     targetElementRef: a,
+    clickTrap: true,
     renderPopout: e => {
       let {
         closePopout: t
@@ -539,14 +543,15 @@ function ef(e) {
       onMouseEnter: _,
       onMouseLeave: S
     }
-  } = (0, c.j)(), x = ea(a), I = (0, o.e7)([P.Z, B.default], () => P.Z.isUserPlayingSounds(B.default.getId()), []) ? "green" : true;
+  } = (0, c.j)(), x = ea(a), I = (0, o.e7)([T.Z, B.default], () => T.Z.isUserPlayingSounds(B.default.getId()), []) ? "green" : true;
   return (0, i.jsx)(d.yRy, {
     targetElementRef: s,
+    clickTrap: true,
     renderPopout: e => {
       let {
         closePopout: t
       } = e;
-      return y || null == l ? (0, i.jsx)(i.Fragment, {}) : (0, i.jsx)(T.Z, {
+      return y || null == l ? (0, i.jsx)(i.Fragment, {}) : (0, i.jsx)(P.Z, {
         guildId: u,
         channel: l,
         onClose: x(t),
@@ -619,6 +624,7 @@ function eh(e) {
   } = (0, l.K)(), b = ea(n), v = s ? g : d.Csw;
   return (0, i.jsx)(d.yRy, {
     targetElementRef: a,
+    clickTrap: true,
     renderPopout: e => {
       let {
         closePopout: n

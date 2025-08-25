@@ -33,7 +33,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk379746 = require("./379746.js");
 
-function T(e) {
+function P(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -98,8 +98,8 @@ function D(e) {
       var {
         onClick: n
       } = e, r = k(e, ["onClick"]);
-      return (0, i.jsx)(c.P3F, A(T({}, r), {
-        className: P.controlAction,
+      return (0, i.jsx)(c.P3F, A(P({}, r), {
+        className: T.controlAction,
         onClick: e => {
           e.stopPropagation(), (0, C.Ws)(w.Odu.GO_LIVE, {
             type: C.Qu.AUDIO,
@@ -129,7 +129,7 @@ function R(e, t, r) {
       let {
         default: r
       } = await n.e("5704").then(n.bind(n, 360429));
-      return n => (0, i.jsx)(r, A(T({}, n), {
+      return n => (0, i.jsx)(r, A(P({}, n), {
         stream: e.stream,
         exitFullscreen: () => {},
         appContext: t
@@ -149,15 +149,15 @@ function L(e) {
   }, [s]), d = t ? Z.intl.string(Z.t.tLxK4u) : Z.intl.string(Z.t.E5RDnJ);
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)("div", {
-      className: l()(P.controlBackground, {
-        [P.controlsWithActiveStream]: t
+      className: l()(T.controlBackground, {
+        [T.controlsWithActiveStream]: t
       })
     }), !t && (0, i.jsx)("div", {
-      className: P.watchActionContainer,
+      className: T.watchActionContainer,
       children: (0, i.jsx)(c.ua7, {
         text: d,
-        children: e => (0, i.jsxs)(c.P3F, A(T({}, e), {
-          className: P.watchButton,
+        children: e => (0, i.jsxs)(c.P3F, A(P({}, e), {
+          className: T.watchButton,
           onClick: () => {
             var t;
             null == (t = e.onClick) || t.call(e), (0, f.rn)(n.stream, {
@@ -180,23 +180,23 @@ function L(e) {
         }))
       })
     }), (0, i.jsxs)("div", {
-      className: P.controls,
+      className: T.controls,
       children: [(0, i.jsx)("div", {
-        className: P.controlUser,
+        className: T.controlUser,
         children: (0, i.jsxs)("div", {
-          className: P.controlUserContainer,
+          className: T.controlUserContainer,
           children: [(0, i.jsx)(c.pzj, {
             size: "xs",
             color: c.TVs.colors.INTERACTIVE_ACTIVE
           }), (0, i.jsx)(c.Text, {
             variant: "text-md/medium",
             color: "always-white",
-            className: P.controlUserName,
+            className: T.controlUserName,
             children: j.ZP.getName(n.stream.guildId, n.stream.channelId, s)
           }), (0, i.jsx)(O.ZP, {
             primaryGuild: u.primaryGuild,
             userId: u.id,
-            containerClassName: P.guildTag,
+            containerClassName: T.guildTag,
             inline: false,
             onShowProfile: () => {
               (0, C.Ws)(w.Odu.GO_LIVE, {
@@ -208,7 +208,7 @@ function L(e) {
           })]
         })
       }), (0, i.jsx)("div", {
-        className: P.controlActions,
+        className: T.controlActions,
         children: t && (0, i.jsxs)(i.Fragment, {
           children: [(0, i.jsx)(D, {
             participant: n
@@ -218,8 +218,8 @@ function L(e) {
               var {
                 onClick: t
               } = e, r = k(e, ["onClick"]);
-              return (0, i.jsx)(c.P3F, A(T({}, r), {
-                className: P.controlAction,
+              return (0, i.jsx)(c.P3F, A(P({}, r), {
+                className: T.controlAction,
                 onClick: R(n, o, t),
                 children: (0, i.jsx)(c.xhG, {
                   size: "sm",
@@ -243,19 +243,19 @@ let M = new Set([Chunk981631.jm8.ENDED, Chunk981631.jm8.FAILED, Chunk981631.jm8.
       pinned: l
     } = e, s = (0, a.e7)([_.Z], () => _.Z.getActiveStreamForUser(t.user.id, t.stream.guildId), [t.user.id, t.stream.guildId]), u = (0, h.bp)(), d = null != s && M.has(s.state), f = null != s, m = (0, N.yA)(t.stream), O = (0, N.xN)(t.stream);
     return !f && r || d ? null : (0, i.jsxs)("div", {
-      className: P.tile,
+      className: T.tile,
       children: [f && !r && (0, i.jsx)(g.ZP, {
         size: g.ZP.Sizes.SMALL,
-        className: P.liveIndicator
+        className: T.liveIndicator
       }), f ? (0, i.jsx)("div", {
-        className: P.streamTile,
+        className: T.streamTile,
         children: (0, i.jsx)(c.kL8, {
           "aria-label": Z.intl.formatToPlainString(Z.t.gHPz3d, {
             streamerName: t.user.username
           }),
           onClick: () => {},
           onContextMenu: R(t, u),
-          className: P.streamTile,
+          className: T.streamTile,
           style: {
             transform: "scale(".concat(m, ")")
           },
@@ -266,15 +266,15 @@ let M = new Set([Chunk981631.jm8.ENDED, Chunk981631.jm8.FAILED, Chunk981631.jm8.
             inPopout: true,
             focused: !r,
             selected: false,
-            wrapperClassName: r ? P.streamTileWrapper : true,
+            wrapperClassName: r ? T.streamTileWrapper : true,
             inOverlayPopout: true
           })
         })
       }) : (0, i.jsx)("div", {
-        className: P.streamPreview,
+        className: T.streamPreview,
         children: (0, i.jsx)(y.Z, {
           noText: true,
-          className: P.absoluteFill,
+          className: T.absoluteFill,
           stream: t.stream
         })
       }), r ? null : (0, i.jsx)(L, {

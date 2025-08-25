@@ -287,7 +287,7 @@ let eb = new eO(Chunk570140.Z, {
       nudges: n
     } = e;
     ep(0);
-    let i = null != (t = R.ZP.getFocusedPID()) ? t : P.UNSET_PID;
+    let i = null != (t = R.ZP.getFocusedPID()) ? t : T.UNSET_PID;
     if (k.default.hasChangedRenderMode(i)) return;
     let r = (0, Y.Z)((0, M.pL)(), n);
     null != r && em(r, {
@@ -360,7 +360,7 @@ let eb = new eO(Chunk570140.Z, {
       }(a, l, s);
       if (false !== e) return e
     }
-    if (D.Z.isNotificationDisabled(T.OverlayNotificationDisabledSetting.TEXT_CHAT) || I.Z.disableNotifications || !(0, p.eF)(l, r)) returnfalse;
+    if (D.Z.isNotificationDisabled(P.OverlayNotificationDisabledSetting.TEXT_CHAT) || I.Z.disableNotifications || !(0, p.eF)(l, r)) returnfalse;
     let c = !b.Z.isSoundDisabled(N.Ay),
       u = null != (i = O.Z.getMessage(r, l.id)) ? i : (0, d.e5)(l);
     em((0, H.Z)(a, u, s, c), {

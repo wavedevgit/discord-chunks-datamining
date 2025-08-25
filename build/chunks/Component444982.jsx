@@ -78,16 +78,15 @@ let S = {
     renderTitle: () => (0, Chunk951288.jsx)(Chunk430561.PI, {
       children: Chunk388032.intl.string(Chunk388032.t.UPvOiY)
     }),
-    renderButtons: (e, t) => (0, i.jsxs)(i.Fragment, {
+    renderButtons: e => (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(g.ls, {
-        onClick: o => {
-          (0, d.js)(e) && (0, r.jW)(o, async () => {
+        onClick: t => {
+          (0, d.js)(e) && (0, r.jW)(t, async () => {
             let {
-              default: r
+              default: t
             } = await n.e("26775").then(n.bind(n, 740579));
-            return t(true), n => (0, i.jsx)(r, _(E({}, n), {
-              widget: e,
-              onClose: () => t(false)
+            return n => (0, i.jsx)(t, _(E({}, n), {
+              widget: e
             }))
           })
         }
@@ -121,16 +120,14 @@ let S = {
     renderTitle: () => (0, Chunk951288.jsx)(Chunk430561.PI, {
       children: Chunk388032.intl.string(Chunk388032.t.nFv3GR)
     }),
-    renderButtons: (e, t) => (0, i.jsxs)(i.Fragment, {
+    renderButtons: e => (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(g.ls, {
         onClick: e => {
           (0, r.jW)(e, async () => {
             let {
               default: e
             } = await n.e("32382").then(n.bind(n, 955280));
-            return t(true), n => (0, i.jsx)(e, _(E({}, n), {
-              onClose: () => t(false)
-            }))
+            return t => (0, i.jsx)(e, E({}, t))
           })
         }
       }), (0, i.jsx)(g.RT, {
@@ -154,16 +151,14 @@ let S = {
     renderTitle: () => (0, Chunk951288.jsx)(Chunk430561.PI, {
       children: "Click Zone Tester"
     }),
-    renderButtons: (e, t) => (0, i.jsxs)(i.Fragment, {
+    renderButtons: e => (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(g.ls, {
         onClick: e => {
           (0, r.jW)(e, async () => {
             let {
               default: e
             } = await n.e("38813").then(n.bind(n, 541501));
-            return t(true), n => (0, i.jsx)(e, _(E({}, n), {
-              onClose: () => t(false)
-            }))
+            return t => (0, i.jsx)(e, E({}, t))
           })
         }
       }), (0, i.jsx)(g.RT, {
@@ -228,24 +223,23 @@ let S = {
     renderTitle: () => (0, Chunk951288.jsx)(Chunk430561.PI, {
       children: Chunk388032.intl.string(Chunk388032.t["386XRk"])
     }),
-    renderButtons(e, t) {
-      var o;
+    renderButtons(e) {
+      var t;
       return (0, d.ZL)(e) ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(g.ls, {
-          onClick: o => {
-            (0, d.ZL)(e) && (0, r.jW)(o, async () => {
+          onClick: t => {
+            (0, d.ZL)(e) && (0, r.jW)(t, async () => {
               let {
-                default: r
+                default: t
               } = await n.e("34684").then(n.bind(n, 68738));
-              return t(true), n => (0, i.jsx)(r, _(E({}, n), {
-                widget: e,
-                onClose: () => t(false)
+              return n => (0, i.jsx)(t, _(E({}, n), {
+                widget: e
               }))
             })
           }
         }), (0, i.jsx)(g.GY, {
           widgetId: e.id,
-          showAllStreams: null == (o = e.meta.showAllStreams) || o
+          showAllStreams: null == (t = e.meta.showAllStreams) || t
         }), (0, i.jsx)(g.RT, {
           id: e.id,
           pinned: e.pinned
@@ -280,16 +274,14 @@ let S = {
     renderTitle: () => (0, Chunk951288.jsx)(Chunk430561.PI, {
       children: Chunk388032.intl.string(Chunk388032.t.gnKWdX)
     }),
-    renderButtons: (e, t) => (0, i.jsxs)(i.Fragment, {
+    renderButtons: e => (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(g.ls, {
         onClick: e => {
           (0, r.jW)(e, async () => {
             let {
               default: e
             } = await n.e("94706").then(n.bind(n, 168133));
-            return t(true), n => (0, i.jsx)(e, _(E({}, n), {
-              onClose: () => t(false)
-            }))
+            return t => (0, i.jsx)(e, E({}, t))
           })
         }
       }), (0, i.jsx)(g.RT, {

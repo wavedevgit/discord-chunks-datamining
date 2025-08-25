@@ -34,12 +34,15 @@ function f(e) {
   })), S = l.useRef(b);
   l.useEffect(() => {
     S.current = b
-  }), l.useEffect(() => () => S.current(), []);
-  let h = (0, r.e7)([p.ZP, u.Z], () => {
-      let e = p.ZP.getWidgetByType(m.Odu.VOICE_V3);
+  }), l.useEffect(() => () => {
+    var e;
+    return null == (e = S.current) ? true : e.call(S)
+  }, []);
+  let h = (0, r.e7)([v.ZP, u.Z], () => {
+      let e = v.ZP.getWidgetByType(m.Odu.VOICE_V3);
       if (null == e) return null;
       let t = u.Z.getWidget(e.id);
-      return null != t && (0, v.Aw)(t) ? t : null
+      return null != t && (0, p.Aw)(t) ? t : null
     }),
     k = null != (a = null == h || null == (t = h.meta) ? true : t.voiceStatesMaxShown) ? a : g.At;
 

@@ -119,7 +119,7 @@ function N(e, t) {
   let N = (0, d.zu)(r.z.OVERLAY_OOP_WELCOME_NUX),
     w = N ? _.intl.string(_.t.KWDIrq) : _.intl.string(_.t["prl+ra"]),
     Z = N ? true : _.intl.string(_.t.R3CpPT),
-    P = null != e ? (0, i.jsx)(C, {
+    T = null != e ? (0, i.jsx)(C, {
       game: e
     }) : (0, i.jsx)("img", {
       src: n(328756),
@@ -127,7 +127,7 @@ function N(e, t) {
       alt: ""
     });
   return j(I({
-    icon: P,
+    icon: T,
     title: w,
     body: Z,
     hint: () => (0, g.Q)((0, y.P)(), _.t["z8/sgI"], _.intl.string(_.t.jZkzVF), true),

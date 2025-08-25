@@ -63,7 +63,7 @@ let x = Chunk647438.memo(function(e) {
     resizeValidation: I,
     className: j,
     dragContainerClassName: C
-  } = e, N = u.Z.getWidgetConfig(t.type), w = (0, a.e7)([d.default], () => d.default.isLocked((0, h.getPID)())), Z = (0, b.Z)(), P = (0, a.e7)([p.Z], () => p.Z.windowSize((0, m.ZY)(Z))), T = r.useCallback((e, t, n, i, r) => {
+  } = e, N = u.Z.getWidgetConfig(t.type), w = (0, a.e7)([d.default], () => d.default.isLocked((0, h.getPID)())), Z = (0, b.Z)(), T = (0, a.e7)([p.Z], () => p.Z.windowSize((0, m.ZY)(Z))), P = r.useCallback((e, t, n, i, r) => {
     let o = p.Z.windowSize((0, m.ZY)((0, b.i)())),
       l = (0, f.jL)(n, o),
       a = (0, f.Ox)(i, o);
@@ -94,16 +94,16 @@ let x = Chunk647438.memo(function(e) {
     size: L,
     anchor: M,
     minSize: z
-  } = t, U = r.useMemo(() => (0, f.w_)(L, P), [L, P]), V = (0, f.KR)(M, P), {
+  } = t, U = r.useMemo(() => (0, f.w_)(L, T), [L, T]), V = (0, f.KR)(M, T), {
     resizeX: W,
     resizeY: F,
     dragAnywhere: G
   } = null != N ? N : {}, B = D || !w, H = r.useMemo(() => ({
     minX: 0,
     minY: 0,
-    maxX: P.width,
-    maxY: P.height
-  }), [P]), Y = r.useCallback(e => n(S(_({}, e), {
+    maxX: T.width,
+    maxY: T.height
+  }), [T]), Y = r.useCallback(e => n(S(_({}, e), {
     widget: t,
     dragging: null != e.dragOperation,
     className: j
@@ -138,7 +138,7 @@ let x = Chunk647438.memo(function(e) {
     },
     dragAnywhere: null != G && G,
     active: !w,
-    onUpdate: T,
+    onUpdate: P,
     onClick: A,
     targetWindow: Z,
     renderExtras: Q,

@@ -144,7 +144,7 @@ let T = e => {
       className: t
     } = e, {
       referralSentUsers: n
-    } = (0, p.G)(), i = (0, o.e7)([_.Z], () => _.Z.getRecipientStatus()), l = (0, o.e7)([_.Z], () => _.Z.getHasEligibleFriends()), c = i.size === p.Q && i.values().every(e => e === f.Fe.REDEEMED), d = () => false === l ? g.intl.format(g.t["zWhX/f"], {
+    } = (0, p.G)(), i = (0, o.e7)([_.Z], () => _.Z.getRecipientStatus()), l = (0, o.e7)([_.Z], () => _.Z.getHasEligibleFriends()), c = i.size === p.Q && i.values().every(e => e === f.Fe.REDEEMED), d = i.size === p.Q, y = () => false === l ? g.intl.format(g.t["zWhX/f"], {
       helpdeskArticle: u.Z.getArticleURL(m.BhN.REFERRAL_PROGRAM)
     }) : n.length === p.Q ? true === c ? g.intl.format(g.t["1aEjsL"], {
       helpdeskArticle: u.Z.getArticleURL(m.BhN.REFERRAL_PROGRAM)
@@ -159,7 +159,7 @@ let T = e => {
         className: E.bannerContainer,
         children: [(0, r.jsx)(s.Eep, {
           src: b.Z,
-          height: 84,
+          height: 96,
           width: 144
         }), (0, r.jsxs)("div", {
           className: E.bannerContent,
@@ -172,11 +172,11 @@ let T = e => {
             }), (0, r.jsx)(s.Text, {
               variant: "text-md/medium",
               color: "text-secondary",
-              children: d()
+              children: y()
             })]
           }), (0, r.jsx)(s.zxk, {
             variant: "primary",
-            disabled: false === l || true === c,
+            disabled: false === l || true === d,
             text: g.intl.string(g.t.Lm2nFR),
             onClick: () => T({
               startingScreen: h.K.SELECT_FRIENDS,

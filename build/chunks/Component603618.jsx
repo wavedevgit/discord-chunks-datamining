@@ -109,7 +109,7 @@ function X(e) {
           else {
             var i;
             let e = await m.Z.getOrEnsurePrivateChannel(a.id),
-              n = null != (i = T.Z.getChannel(e)) ? i : null;
+              n = null != (i = P.Z.getChannel(e)) ? i : null;
             l()(null != n, "Send channel must be defined"), (0, C.uL)(G.Z5c.CHANNEL(n.guild_id, n.id)), (0, b.i)(G.IlC.OVERLAY, true), "fake_inventory_item" in t.extra && true === t.extra.fake_inventory_item ? await (0, x.k)({
               channel: n,
               content: H.intl.formatToPlainString(H.t.UVBA9v, {
@@ -144,7 +144,7 @@ function X(e) {
       var e;
       if (null == a) return;
       let t = await m.Z.getOrEnsurePrivateChannel(a.id),
-        n = null != (e = T.Z.getChannel(t)) ? e : null;
+        n = null != (e = P.Z.getChannel(t)) ? e : null;
       l()(null != n, "Send channel must be defined"), (0, C.uL)(G.Z5c.CHANNEL(n.guild_id, n.id)), (0, b.i)(G.IlC.OVERLAY, true), (0, W.Ws)(G.Odu.ACTIVITY, {
         type: W.Qu.REDIRECT,
         value: W.bk.CHAT,
@@ -236,7 +236,7 @@ function J(e) {
     entry: t,
     currentUserActivity: n,
     idx: r
-  } = e, o = (0, u.e7)([R.default], () => R.default.getUser(t.author_id)), l = (0, u.e7)([P.Z], () => null != o ? P.Z.getAnyStreamForUser(o.id) : null, [o]), {
+  } = e, o = (0, u.e7)([R.default], () => R.default.getUser(t.author_id)), l = (0, u.e7)([T.Z], () => null != o ? T.Z.getAnyStreamForUser(o.id) : null, [o]), {
     isMobileOnline: a,
     status: s
   } = (0, u.cj)([k.Z], () => null == o ? {

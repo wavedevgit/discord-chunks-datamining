@@ -17,12 +17,15 @@ function s(e) {
     onSelect: t,
     onClose: r,
     widget: s
-  } = e, b = (0, l.Z)(), p = (0, a.Z)(s), y = o.useRef(r), O = (0, u.Z)(s.id, "boolean" != typeof s.meta.horizontal || s.meta.horizontal);
+  } = e, b = (0, c.Z)(), p = (0, a.Z)(s), y = o.useRef(r), O = (0, u.Z)(s.id, "boolean" != typeof s.meta.horizontal || s.meta.horizontal);
   return o.useEffect(() => {
     y.current = r
-  }), o.useEffect(() => () => y.current(), []), (0, n.jsxs)(i.v2r, {
+  }), o.useEffect(() => () => {
+    var e;
+    return null == (e = y.current) ? true : e.call(y)
+  }, []), (0, n.jsxs)(i.v2r, {
     navId: "overlay-video-widget-context-menu",
-    onClose: c.Zy,
+    onClose: l.Zy,
     "aria-label": f.intl.string(f.t.tPfVWl),
     onSelect: t,
     children: [b, O, p]

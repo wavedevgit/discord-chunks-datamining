@@ -65,19 +65,19 @@ function w(e, t) {
   return r
 }
 let Z = [],
-  P = (e, t) => ({
+  T = (e, t) => ({
     fixed: true,
     width: e,
     height: t
   }),
-  T = P(Chunk350663.bt, Chunk350663.fd);
+  P = T(Chunk350663.bt, Chunk350663.fd);
 
 function A(e, t, n, i, r) {
   let {
     padding: o,
     sizeOffset: l
   } = r, a = Math.max(1, i), s = (a - 1) * o, c = t * a + s, u = n * a + s;
-  return e === x.C5.HORIZONTAL ? u = n : c = t, P(c + l, u + l)
+  return e === x.C5.HORIZONTAL ? u = n : c = t, T(c + l, u + l)
 }
 
 function k(e, t, n) {
@@ -167,7 +167,7 @@ function R(e) {
 }
 
 function L(e) {
-  var t, n, a, v, S, P;
+  var t, n, a, v, S, T;
   let {
     id: D,
     widget: L,
@@ -199,7 +199,7 @@ function L(e) {
     streamParticipants: eo,
     activeStreams: el,
     participantsVersion: ea
-  } = (S = B && en || H && F, P = !B && en || !H && F, (0, o.cj)([h.Z, d.Z], () => {
+  } = (S = B && en || H && F, T = !B && en || !H && F, (0, o.cj)([h.Z, d.Z], () => {
     if (null == q) return {
       streamParticipants: Z,
       participantsVersion: false,
@@ -212,7 +212,7 @@ function L(e) {
       if (S) {
         if (t(e) && !t(n)) return false;
         if (!t(e) && t(n)) return 1
-      } else if (P) {
+      } else if (T) {
         if (t(e) && !t(n)) return 1;
         if (!t(e) && t(n)) return false
       }
@@ -222,7 +222,7 @@ function L(e) {
       activeStreams: e,
       participantsVersion: d.Z.getParticipantsVersion(q)
     }
-  }, [q, er, et, S, P])), es = eo.length, ec = null == ei || 0 === el.size && z || 0 === es && !z, eu = F ? x.C5.HORIZONTAL : x.C5.VERTICAL, ed = {
+  }, [q, er, et, S, T])), es = eo.length, ec = null == ei || 0 === el.size && z || 0 === es && !z, eu = F ? x.C5.HORIZONTAL : x.C5.VERTICAL, ed = {
     containerWidth: J,
     containerHeight: $
   }, {
@@ -294,7 +294,7 @@ function L(e) {
       if (null == c) return;
       if (0 === l) return void R(N({
         widgetId: t,
-        size: T,
+        size: P,
         minSize: k(a, 1, {
           padding: s,
           sizeOffset: r
@@ -355,7 +355,7 @@ function L(e) {
         a = w(e, ["id", "sizeOffset", "widget", "padding"]);
       null != r && R(N({
         widgetId: t,
-        size: T,
+        size: P,
         minSize: k(n, 0, {
           padding: l,
           sizeOffset: i

@@ -67,10 +67,10 @@ function b(e) {
       droppedFramesRef: N,
       renderedFrameCount: w,
       bufferFramecountRef: Z,
-      frameCheckerEffect: P
+      frameCheckerEffect: T
     } = (0, u.d6)(true, _, true),
-    [T, A, k] = (0, u.ZF)(b),
-    [D, R] = (0, u.Y5)(T, P, E),
+    [P, A, k] = (0, u.ZF)(b),
+    [D, R] = (0, u.Y5)(P, T, E),
     L = performance.now() - S.current < u.MC,
     M = A(I, Z.current);
   (0, c.ZP)(() => (D(), () => {

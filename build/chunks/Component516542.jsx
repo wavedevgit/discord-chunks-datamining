@@ -34,7 +34,7 @@ function b(e) {
   }), [x, I] = r.useState(() => (0, d.H2)()), {
     textValue: j,
     richValue: C
-  } = x, [N, w] = r.useState(false), Z = r.useCallback(() => w(true), []), P = r.useCallback(() => w(false), []);
+  } = x, [N, w] = r.useState(false), Z = r.useCallback(() => w(true), []), T = r.useCallback(() => w(false), []);
   (0, s.ZP)(() => {
     (0, a.In)(b.id, {
       section: g.jXE.OVERLAY,
@@ -42,7 +42,7 @@ function b(e) {
       objectType: g.Qqv.ACK_SEMI_AUTOMATIC
     }, true, true, n)
   });
-  let T = r.useCallback((e, t, n) => {
+  let P = r.useCallback((e, t, n) => {
       I({
         textValue: t,
         richValue: n
@@ -61,7 +61,7 @@ function b(e) {
     className: O.container,
     children: (0, i.jsx)(p.ZP, {
       innerClassName: O.textArea,
-      onChange: T,
+      onChange: P,
       placeholder: _,
       accessibilityLabel: S,
       channel: b,
@@ -69,7 +69,7 @@ function b(e) {
       richValue: C,
       type: u.Ie.OVERLAY_INLINE_REPLY,
       allowNewLines: false,
-      onBlur: P,
+      onBlur: T,
       onFocus: Z,
       focused: N,
       onSubmit: k,

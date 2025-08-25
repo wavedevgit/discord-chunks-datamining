@@ -221,12 +221,12 @@ function eo(e) {
       s = l && null != r && null != n,
       {
         allowActivityWidget: c
-      } = (0, T.Rb)("overlay"),
+      } = (0, P.Rb)("overlay"),
       u = null != (e = S.default.getFocusedPID()) ? e : (0, w.getPID)();
     if (M.default.hasChangedRenderMode(u)) return;
-    let p = z.Z.isNotificationDisabled(P.OverlayNotificationDisabledSetting.WELCOME_GENERAL),
-      f = z.Z.isNotificationDisabled(P.OverlayNotificationDisabledSetting.GO_LIVE_NUDGE),
-      h = z.Z.isNotificationDisabled(P.OverlayNotificationDisabledSetting.GAME_ACTIVITY),
+    let p = z.Z.isNotificationDisabled(T.OverlayNotificationDisabledSetting.WELCOME_GENERAL),
+      f = z.Z.isNotificationDisabled(T.OverlayNotificationDisabledSetting.GO_LIVE_NUDGE),
+      h = z.Z.isNotificationDisabled(T.OverlayNotificationDisabledSetting.GAME_ACTIVITY),
       m = [];
     p || m.push({
       type: G.nc.WELCOME

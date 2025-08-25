@@ -126,7 +126,7 @@ let D = Chunk647438.memo(function(e) {
       children: o.map(e => (0, i.jsx)(D, {
         participant: e,
         width: s,
-        className: T.tile,
+        className: P.tile,
         containerStyle: m,
         fit: f.L.COVER,
         channel: a,
@@ -166,9 +166,9 @@ let D = Chunk647438.memo(function(e) {
         opacity: c.opacity
       }), [c.opacity]),
       O = r.useMemo(() => l()({
-        [T.videoList]: true,
-        [T.vertical]: !m,
-        [T.hidden]: !g && a
+        [P.videoList]: true,
+        [P.vertical]: !m,
+        [P.hidden]: !g && a
       }), [m, g, a]);
     return 0 !== n.length || a ? null == u ? null : (0, i.jsx)("div", {
       ref: h,
@@ -187,7 +187,7 @@ let D = Chunk647438.memo(function(e) {
     }) : f ? (0, i.jsx)("div", {
       ref: h,
       children: (0, i.jsx)(I.E, {
-        emptyText: P.intl.string(P.t["aTiM4+"]),
+        emptyText: T.intl.string(T.t["aTiM4+"]),
         icon: s.Odl,
         absolute: true
       })
