@@ -31,7 +31,7 @@ function o(e) {
 }
 
 function s(e) {
-  e.length <= 1 || (0, i.ZD)(async () => {
+  null == e || e.length <= 1 || (0, i.ZD)(async () => {
     let {
       default: t
     } = await Promise.all([n.e("89311"), n.e("82052")]).then(n.bind(n, 429352));

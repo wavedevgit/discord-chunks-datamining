@@ -84,7 +84,7 @@ function b(e) {
     rewardNameWithArticle: l,
     duration: o,
     targetMinutes: d,
-    onClick: p ? () => (0, c.v)(null != f ? f : []) : () => {}
+    onClick: p ? () => (0, c.v)(f) : () => {}
   }, i, p)
 }
 
@@ -136,7 +136,7 @@ function O(e) {
     duration: o,
     questReward: l,
     targetMinutes: d,
-    onClick: p ? () => (0, c.v)(null != f ? f : []) : () => {}
+    onClick: p ? () => (0, c.v)(f) : () => {}
   }, i, p)
 }
 
