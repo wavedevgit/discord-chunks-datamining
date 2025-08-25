@@ -13,7 +13,7 @@ var Chunk680018 = require("./680018.jsx"),
   Chunk119475 = require("./119475.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk640744 = require("./640744.js"),
-  Chunk626869 = require("./626869.js");
+  Chunk758335 = require("./758335.js");
 
 function f() {
   let e = () => {
@@ -26,7 +26,7 @@ function f() {
     children: [(0, Chunk951288.jsx)("div", {
       className: Chunk640744.iconContainer,
       children: (0, Chunk951288.jsx)("img", {
-        src: Chunk626869.Z,
+        src: Chunk758335.Z,
         className: Chunk640744.bannerImage,
         alt: ""
       })
