@@ -1,44 +1,44 @@
 /** Chunk was on 53162 **/
-/** chunk id: 598952, original params: t,e,n (module,exports,require) **/
+/** chunk id: 598952, original params: t,a,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => o
+  Z: () => l
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk481060 = require("./481060.js"),
   Chunk294763 = require("./294763.js");
 
-function o(t) {
-  var e;
+function l(t) {
+  var a;
   let {
     attachment: n
-  } = t, o = Math.round((null != (e = n.size) ? e : 0) / 1024 / 1024 * 100) / 100;
-  return (0, a.jsxs)("div", {
-    className: l.container,
-    children: [(0, a.jsx)(r.ZKT, {
+  } = t, l = Math.round((null != (a = n.size) ? a : 0) / 1024 / 1024 * 100) / 100;
+  return (0, e.jsxs)("div", {
+    className: i.container,
+    children: [(0, e.jsx)(o.ZKT, {
       size: "xs",
       color: "currentColor",
-      className: l.fileIcon
-    }), (0, a.jsx)(r.LZC, {
+      className: i.fileIcon
+    }), (0, e.jsx)(o.LZC, {
       size: 8,
       horizontal: true
-    }), (0, a.jsx)(r.Text, {
+    }), (0, e.jsx)(o.Text, {
       variant: "text-sm/normal",
       color: "text-default",
-      className: l.fileName,
+      className: i.fileName,
       children: n.filename
-    }), (0, a.jsx)(r.LZC, {
+    }), (0, e.jsx)(o.LZC, {
       size: 8,
       horizontal: true
-    }), (0, a.jsx)("div", {
-      className: l.dot
-    }), (0, a.jsx)(r.LZC, {
+    }), (0, e.jsx)("div", {
+      className: i.dot
+    }), (0, e.jsx)(o.LZC, {
       size: 8,
       horizontal: true
-    }), (0, a.jsxs)(r.Text, {
+    }), (0, e.jsxs)(o.Text, {
       variant: "text-sm/normal",
       color: "text-muted",
-      children: [o, "MB"]
+      children: [l, "MB"]
     })]
   })
 }
