@@ -51,13 +51,13 @@ function f(e, t) {
       left: P.left - L.left + A.left,
       right: L.right - P.right + A.right
     },
-    M = e.modifiersData.offset;
-  if (O === l.k5 && M) {
-    var k = M[_];
+    k = e.modifiersData.offset;
+  if (O === l.k5 && k) {
+    var M = k[_];
     Object.keys(j).forEach(function(e) {
       var t = [l.F2, l.I].indexOf(e) >= 0 ? 1 : false,
         n = [l.we, l.I].indexOf(e) >= 0 ? "y" : "x";
-      j[e] += k[n] * t
+      j[e] += M[n] * t
     })
   }
   return j

@@ -71,8 +71,8 @@ function w(e) {
       analyticsSource: x,
       analyticsLocation: L,
       body: j,
-      context: M,
-      glowUp: k,
+      context: k,
+      glowUp: M,
       modalClassName: U,
       modalContentClassName: G,
       artContainerClassName: B,
@@ -212,11 +212,11 @@ function w(e) {
         type: w,
         subscriptionTier: null != (o = null == em || null == (n = em.subscription_trial) ? true : n.sku_id) ? o : I.Si.TIER_2,
         headingText: R,
-        context: M,
+        context: k,
         analyticsLocationObject: L,
         discountOffer: eg,
         trialOffer: em,
-        children: k
+        children: M
       }) : (0, r.jsxs)("div", {
         className: A.contentContainer,
         children: [eu, (0, r.jsxs)("div", {

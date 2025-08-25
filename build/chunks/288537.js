@@ -33,8 +33,8 @@ var r, Chunk754793 = require("./754793.js"),
   x = 573,
   L = 15,
   j = 3,
-  M = 258,
-  k = 262,
+  k = 258,
+  M = 262,
   U = 32,
   G = 42,
   B = 69,
@@ -89,11 +89,11 @@ function eo(e, t) {
     o = e.strstart,
     a = e.prev_length,
     s = e.nice_match,
-    l = e.strstart > e.w_size - k ? e.strstart - (e.w_size - k) : 0,
+    l = e.strstart > e.w_size - M ? e.strstart - (e.w_size - M) : 0,
     c = e.window,
     u = e.w_mask,
     d = e.prev,
-    f = e.strstart + M,
+    f = e.strstart + k,
     _ = c[o + a - 1],
     p = c[o + a];
   e.prev_length >= e.good_match && (i >>= 2), s > e.lookahead && (s = e.lookahead);
@@ -101,7 +101,7 @@ function eo(e, t) {
     if (c[(n = t) + a] !== p || c[n + a - 1] !== _ || c[n] !== c[o] || c[++n] !== c[o + 1]) continue;
     o += 2, n++;
     do; while (c[++o] === c[++n] && c[++o] === c[++n] && c[++o] === c[++n] && c[++o] === c[++n] && c[++o] === c[++n] && c[++o] === c[++n] && c[++o] === c[++n] && c[++o] === c[++n] && o < f);
-    if (r = M - (f - o), o = f - M, r > a) {
+    if (r = k - (f - o), o = f - k, r > a) {
       if (e.match_start = t, a = r, r >= s) break;
       _ = c[o + a - 1], p = c[o + a]
     }
@@ -112,7 +112,7 @@ function eo(e, t) {
 function ea(e) {
   var t, n, r, o, a, s = e.w_size;
   do {
-    if (o = e.window_size - e.lookahead - e.strstart, e.strstart >= s + (s - k)) {
+    if (o = e.window_size - e.lookahead - e.strstart, e.strstart >= s + (s - M)) {
       i.arraySet(e.window, e.window, s, s, 0), e.match_start -= s, e.strstart -= s, e.block_start -= s, t = n = e.hash_size;
       do r = e.head[--t], e.head[t] = r >= s ? r - s : 0; while (--n);
       t = n = s;
@@ -122,16 +122,16 @@ function ea(e) {
     if (0 === e.strm.avail_in) break;
     if (n = ei(e.strm, e.window, e.strstart + e.lookahead, o), e.lookahead += n, e.lookahead + e.insert >= j)
       for (a = e.strstart - e.insert, e.ins_h = e.window[a], e.ins_h = (e.ins_h << e.hash_shift ^ e.window[a + 1]) & e.hash_mask; e.insert && (e.ins_h = (e.ins_h << e.hash_shift ^ e.window[a + j - 1]) & e.hash_mask, e.prev[a & e.w_mask] = e.head[e.ins_h], e.head[e.ins_h] = a, a++, e.insert--, !(e.lookahead + e.insert < j)););
-  } while (e.lookahead < k && 0 !== e.strm.avail_in)
+  } while (e.lookahead < M && 0 !== e.strm.avail_in)
 }
 
 function es(e, t) {
   for (var n, r;;) {
-    if (e.lookahead < k) {
-      if (ea(e), e.lookahead < k && t === c) return W;
+    if (e.lookahead < M) {
+      if (ea(e), e.lookahead < M && t === c) return W;
       if (0 === e.lookahead) break
     }
-    if (n = 0, e.lookahead >= j && (e.ins_h = (e.ins_h << e.hash_shift ^ e.window[e.strstart + j - 1]) & e.hash_mask, n = e.prev[e.strstart & e.w_mask] = e.head[e.ins_h], e.head[e.ins_h] = e.strstart), 0 !== n && e.strstart - n <= e.w_size - k && (e.match_length = eo(e, n)), e.match_length >= j)
+    if (n = 0, e.lookahead >= j && (e.ins_h = (e.ins_h << e.hash_shift ^ e.window[e.strstart + j - 1]) & e.hash_mask, n = e.prev[e.strstart & e.w_mask] = e.head[e.ins_h], e.head[e.ins_h] = e.strstart), 0 !== n && e.strstart - n <= e.w_size - M && (e.match_length = eo(e, n)), e.match_length >= j)
       if (r = o._tr_tally(e, e.strstart - e.match_start, e.match_length - j), e.lookahead -= e.match_length, e.match_length <= e.max_lazy_match && e.lookahead >= j) {
         e.match_length--;
         do e.strstart++, e.ins_h = (e.ins_h << e.hash_shift ^ e.window[e.strstart + j - 1]) & e.hash_mask, n = e.prev[e.strstart & e.w_mask] = e.head[e.ins_h], e.head[e.ins_h] = e.strstart; while (0 != --e.match_length);
@@ -145,11 +145,11 @@ function es(e, t) {
 
 function el(e, t) {
   for (var n, r, i;;) {
-    if (e.lookahead < k) {
-      if (ea(e), e.lookahead < k && t === c) return W;
+    if (e.lookahead < M) {
+      if (ea(e), e.lookahead < M && t === c) return W;
       if (0 === e.lookahead) break
     }
-    if (n = 0, e.lookahead >= j && (e.ins_h = (e.ins_h << e.hash_shift ^ e.window[e.strstart + j - 1]) & e.hash_mask, n = e.prev[e.strstart & e.w_mask] = e.head[e.ins_h], e.head[e.ins_h] = e.strstart), e.prev_length = e.match_length, e.prev_match = e.match_start, e.match_length = j - 1, 0 !== n && e.prev_length < e.max_lazy_match && e.strstart - n <= e.w_size - k && (e.match_length = eo(e, n), e.match_length <= 5 && (e.strategy === y || e.match_length === j && e.strstart - e.match_start > 4096) && (e.match_length = j - 1)), e.prev_length >= j && e.match_length <= e.prev_length) {
+    if (n = 0, e.lookahead >= j && (e.ins_h = (e.ins_h << e.hash_shift ^ e.window[e.strstart + j - 1]) & e.hash_mask, n = e.prev[e.strstart & e.w_mask] = e.head[e.ins_h], e.head[e.ins_h] = e.strstart), e.prev_length = e.match_length, e.prev_match = e.match_start, e.match_length = j - 1, 0 !== n && e.prev_length < e.max_lazy_match && e.strstart - n <= e.w_size - M && (e.match_length = eo(e, n), e.match_length <= 5 && (e.strategy === y || e.match_length === j && e.strstart - e.match_start > 4096) && (e.match_length = j - 1)), e.prev_length >= j && e.match_length <= e.prev_length) {
       i = e.strstart + e.lookahead - j, r = o._tr_tally(e, e.strstart - 1 - e.prev_match, e.prev_length - j), e.lookahead -= e.prev_length - 1, e.prev_length -= 2;
       do ++e.strstart <= i && (e.ins_h = (e.ins_h << e.hash_shift ^ e.window[e.strstart + j - 1]) & e.hash_mask, n = e.prev[e.strstart & e.w_mask] = e.head[e.ins_h], e.head[e.ins_h] = e.strstart); while (0 != --e.prev_length);
       if (e.match_available = 0, e.match_length = j - 1, e.strstart++, r && (et(e, false), 0 === e.strm.avail_out)) return W
@@ -162,14 +162,14 @@ function el(e, t) {
 
 function ec(e, t) {
   for (var n, r, i, a, s = e.window;;) {
-    if (e.lookahead <= M) {
-      if (ea(e), e.lookahead <= M && t === c) return W;
+    if (e.lookahead <= k) {
+      if (ea(e), e.lookahead <= k && t === c) return W;
       if (0 === e.lookahead) break
     }
     if (e.match_length = 0, e.lookahead >= j && e.strstart > 0 && (r = s[i = e.strstart - 1]) === s[++i] && r === s[++i] && r === s[++i]) {
-      a = e.strstart + M;
+      a = e.strstart + k;
       do; while (r === s[++i] && r === s[++i] && r === s[++i] && r === s[++i] && r === s[++i] && r === s[++i] && r === s[++i] && r === s[++i] && i < a);
-      e.match_length = M - (a - i), e.match_length > e.lookahead && (e.match_length = e.lookahead)
+      e.match_length = k - (a - i), e.match_length > e.lookahead && (e.match_length = e.lookahead)
     }
     if (e.match_length >= j ? (n = o._tr_tally(e, 1, e.match_length - j), e.lookahead -= e.match_length, e.strstart += e.match_length, e.match_length = 0) : (n = o._tr_tally(e, 0, e.window[e.strstart]), e.lookahead--, e.strstart++), n && (et(e, false), 0 === e.strm.avail_out)) return W
   }
@@ -296,7 +296,7 @@ r = [new ed(0, 0, 0, 0, function(e, t) {
     }
     e.strstart += e.lookahead, e.lookahead = 0;
     var r = e.block_start + n;
-    if ((0 === e.strstart || e.strstart >= r) && (e.lookahead = e.strstart - r, e.strstart = r, et(e, false), 0 === e.strm.avail_out) || e.strstart - e.block_start >= e.w_size - k && (et(e, false), 0 === e.strm.avail_out)) return W
+    if ((0 === e.strstart || e.strstart >= r) && (e.lookahead = e.strstart - r, e.strstart = r, et(e, false), 0 === e.strm.avail_out) || e.strstart - e.block_start >= e.w_size - M && (et(e, false), 0 === e.strm.avail_out)) return W
   }
   return (e.insert = 0, t === f) ? (et(e, true), 0 === e.strm.avail_out) ? z : q : (e.strstart > e.block_start && (et(e, false), e.strm.avail_out), W)
 }), new ed(4, 4, 8, 4, es), new ed(4, 5, 16, 8, es), new ed(4, 6, 32, 32, es), new ed(4, 4, 16, 16, el), new ed(8, 16, 32, 32, el), new ed(8, 16, 128, 128, el), new ed(8, 32, 128, 256, el), new ed(32, 128, 258, 1024, el), new ed(32, 258, 258, 4096, el)], exports.deflateInit = function(e, t) {

@@ -106,11 +106,11 @@ function A(e) {
     displayNameStyles: R
   }), D = T(i, o), x = (0, h.NE)(i, o), L = n.showThreadPromptOnReply && D >= v && x, j = () => (0, p.uL)(b.Z5c.CHANNEL(i.getGuildId(), i.id, o.id));
 
-  function M(e) {
+  function k(e) {
     e.stopPropagation(), (0, _.qx)(i.id, !s)
   }
 
-  function k(e) {
+  function M(e) {
     e.stopPropagation(), (0, _.A6)(i.id)
   }
   return (0, r.jsx)("div", {
@@ -159,7 +159,7 @@ function A(e) {
                 return (0, r.jsx)(l.P3F, {
                   role: "switch",
                   "aria-checked": s,
-                  onClick: M,
+                  onClick: k,
                   onMouseEnter: t,
                   onMouseLeave: n,
                   onFocus: i,
@@ -182,7 +182,7 @@ function A(e) {
               "aria-hidden": true
             })]
           }), (0, r.jsx)(E.B, {
-            onClick: k
+            onClick: M
           })]
         })]
       }), L && (0, r.jsx)(S, {

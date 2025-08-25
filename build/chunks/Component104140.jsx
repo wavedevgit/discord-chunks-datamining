@@ -149,7 +149,7 @@ function v(e) {
     T(true)
   }, A = () => {
     T(false)
-  }, C = null != m, N = null != O, R = i.useId(), P = "".concat(R, "-upper_badge_masks"), w = "".concat(R, "-lower_badge_masks"), D = "".concat(R, "-blob_mask"), x = "".concat(R, "-stroke_mask"), L = "".concat(R, "-highlight_mask"), j = (null == f ? true : f.width) != null ? f.width : g, M = (null == f ? true : f.height) != null ? f.height : g, k = {
+  }, C = null != m, N = null != O, R = i.useId(), P = "".concat(R, "-upper_badge_masks"), w = "".concat(R, "-lower_badge_masks"), D = "".concat(R, "-blob_mask"), x = "".concat(R, "-stroke_mask"), L = "".concat(R, "-highlight_mask"), j = (null == f ? true : f.width) != null ? f.width : g, k = (null == f ? true : f.height) != null ? f.height : g, M = {
     width: d ? n : n + 8,
     height: d ? n : n + 8,
     x: d ? 0 : false,
@@ -161,9 +161,9 @@ function v(e) {
     onFocus: S,
     onBlur: A,
     children: [(0, r.jsxs)("svg", {
-      width: k.width,
-      height: k.height,
-      viewBox: "".concat(k.x, " ").concat(k.y, " ").concat(k.width, " ").concat(k.height),
+      width: M.width,
+      height: M.height,
+      viewBox: "".concat(M.x, " ").concat(M.y, " ").concat(M.width, " ").concat(M.height),
       className: a()(u.svg, {
         [u.noContain]: _,
         [u.shiftSVG]: !d
@@ -188,9 +188,9 @@ function v(e) {
         }) : null, null != O ? (0, r.jsx)("rect", {
           id: w,
           x: n - (j + 2 * p) + p,
-          y: n - (M + 2 * p) + p,
+          y: n - (k + 2 * p) + p,
           width: j + 2 * p,
-          height: M + 2 * p,
+          height: k + 2 * p,
           rx: h / 2,
           ry: h / 2
         }) : null]

@@ -42,8 +42,8 @@ function L(e) {
     currentUser: n,
     displayProfile: L,
     guild: j,
-    isHovering: M,
-    onOpenProfile: k,
+    isHovering: k,
+    onOpenProfile: M,
     channelId: U,
     onClose: G
   } = e, B = u.ZP.useName(null == j ? true : j.id, U, t), {
@@ -60,7 +60,7 @@ function L(e) {
     className: x.body,
     children: [(0, r.jsx)(v.Z, {
       user: t,
-      onOpenProfile: k,
+      onOpenProfile: M,
       onClose: G,
       usernameIcon: t.hasAvatarForGuild(null == j ? true : j.id) && (0, r.jsx)(A.Z, {
         user: t,
@@ -78,8 +78,8 @@ function L(e) {
           userId: t.id
         }), !H && (0, r.jsx)(I.Z, {
           userId: t.id,
-          isHovering: M,
-          onOpenProfile: k
+          isHovering: k,
+          onOpenProfile: M
         })]
       })
     }), Z === P.OGo.PENDING_INCOMING && (0, r.jsx)(O.Z.Overlay, {
@@ -100,7 +100,7 @@ function L(e) {
       user: t
     }), !W && (0, r.jsx)(N.Z, {
       user: t,
-      onOpenProfile: e => null == k ? true : k({
+      onOpenProfile: e => null == M ? true : M({
         section: e
       })
     }), t.isProvisional ? (0, r.jsx)(O.Z.Overlay, {
@@ -124,7 +124,7 @@ function L(e) {
     }), K && (0, r.jsx)(T.Z, {
       widgets: null == L ? true : L.widgets,
       onClick: () => {
-        null == k || k({
+        null == M || M({
           section: R.oh.WIDGETS
         })
       }
@@ -135,7 +135,7 @@ function L(e) {
       user: t,
       currentUser: n,
       guildId: null == j ? true : j.id,
-      onOpenUserProfileModal: k,
+      onOpenUserProfileModal: M,
       onClose: G
     }) : (0, r.jsx)(h.Z, {
       user: t,

@@ -9,14 +9,14 @@ require.d(exports, {
   L1: () => z,
   Ow: () => K,
   PZ: () => q,
-  WA: () => k,
+  WA: () => M,
   Wx: () => P,
   XZ: () => Y,
   Y$: () => B,
   Yn: () => H,
   dF: () => U,
   jD: () => x,
-  lf: () => M,
+  lf: () => k,
   pF: () => W,
   sl: () => Z,
   vJ: () => j,
@@ -127,12 +127,12 @@ function j(e) {
   return w(e) && (0, m.yE)(null != (t = e.flags) ? t : 0, y.udG.PARTNER)
 }
 
-function M(e) {
+function k(e) {
   var t;
   return w(e) && (0, m.yE)(null != (t = e.flags) ? t : 0, y.udG.PROMOTED)
 }
 
-function k(e) {
+function M(e) {
   let t = G(e),
     n = null == t ? true : t.client_platform_config[(0, s.Z)((0, g.getOS)())],
     r = Date.now();
@@ -144,7 +144,7 @@ function k(e) {
 }
 
 function U(e) {
-  switch (k(e)) {
+  switch (M(e)) {
     case a.ww.NEW:
       return "New";
     case a.ww.UPDATED:

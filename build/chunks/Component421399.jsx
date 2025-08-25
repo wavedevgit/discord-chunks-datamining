@@ -69,13 +69,13 @@ function j(e, t) {
   return n
 }
 
-function M(e, t) {
+function k(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function k(e, t) {
+function M(e, t) {
   if (null == e) return {};
   var n, r, i = U(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -158,7 +158,7 @@ function Z(e) {
     if (ec) {
       if (eb && null != eo) {
         var e;
-        return M(L({}, eO), {
+        return k(L({}, eO), {
           textDecorationColor: null != (e = null == eo ? true : eo.primaryColor) ? e : true
         })
       }
@@ -203,9 +203,9 @@ function Z(e) {
     children: e => {
       var {
         onClick: t
-      } = e, n = k(e, ["onClick"]);
+      } = e, n = M(e, ["onClick"]);
       return (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(d.P3F, M(L({
+        children: [(0, r.jsx)(d.P3F, k(L({
           tag: "span",
           innerRef: J
         }, n, eS), {
@@ -214,7 +214,7 @@ function Z(e) {
       })
     }
   }) : (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(d.P3F, M(L({}, eS), {
+    children: [(0, r.jsx)(d.P3F, k(L({}, eS), {
       className: a()(eS.className, V)
     })), eA]
   }), eR = null != q ? q[0] : null, eP = null != q ? q[1] : null;

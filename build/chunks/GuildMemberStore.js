@@ -4,7 +4,7 @@
 require.d(exports, {
   O5: () => K,
   V6: () => W,
-  ZP: () => ek
+  ZP: () => eM
 }), require("./35282.js"), require("./388685.js"), require("./997841.js"), require("./539854.js");
 var r, Chunk392711 = require("./392711.js"),
   o = require.n(Chunk392711),
@@ -73,8 +73,8 @@ let R = new Chunk710845.Z("GuildMemberStore"),
   x = {},
   L = {},
   j = false,
-  M = 0,
   k = 0,
+  M = 0,
   U = {},
   G = {},
   B = {
@@ -100,7 +100,7 @@ function F(e, t) {
 }
 
 function V(e) {
-  M += 1, U[e] = M
+  k += 1, U[e] = k
 }
 
 function H(e) {
@@ -440,7 +440,7 @@ function ep(e, t) {
       unusualDMActivityUntil: null != (i = t.unusual_dm_activity_until) ? i : null == o ? true : o.unusualDMActivityUntil,
       collectibles: (0, d.Xm)(t.collectibles)
     }), Z(e, n[t.user.id])
-  }), k++, true)
+  }), M++, true)
 }
 
 function eh(e) {
@@ -479,7 +479,7 @@ function eE(e) {
 function eb(e, t) {
   let n = P[e];
   if (null == n || null == n[t]) returnfalse;
-  delete n[t], F(e, t), k++
+  delete n[t], F(e, t), M++
 }
 
 function ey(e) {
@@ -708,7 +708,7 @@ function ej(e) {
   let t = O.Z.getChannel(e.channelId);
   return eN(e.resolved, null == t ? true : t.guild_id)
 }
-class eM extends(r = Chunk442837.ZP.Store) {
+class ek extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk430824.Z, Chunk485386.Z, Chunk314897.default, Chunk160404.Z)
   }
@@ -801,7 +801,7 @@ class eM extends(r = Chunk442837.ZP.Store) {
     return L
   }
   getCommunicationDisabledVersion() {
-    return M
+    return k
   }
   getPendingRoleUpdates(e) {
     var t;
@@ -814,11 +814,11 @@ class eM extends(r = Chunk442837.ZP.Store) {
     return null == a ? i : o().difference(o().union(i, a.added), a.removed)
   }
   getMemberVersion() {
-    return k
+    return M
   }
 }
-S(eM, "displayName", "GuildMemberStore");
-let ek = new eM(Chunk570140.Z, {
+S(ek, "displayName", "GuildMemberStore");
+let eM = new ek(Chunk570140.Z, {
   CONNECTION_OPEN: X,
   CONNECTION_OPEN_SUPPLEMENTAL: Q,
   OVERLAY_INITIALIZE: $,

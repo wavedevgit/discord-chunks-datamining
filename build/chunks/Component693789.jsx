@@ -152,8 +152,8 @@ function T(e) {
     onMouseEnter: x,
     onMouseLeave: L,
     onKeyDown: j,
-    children: M,
-    rel: k,
+    children: k,
+    rel: M,
     buttonRef: U,
     focusProps: G,
     "aria-label": B,
@@ -184,7 +184,7 @@ function T(e) {
       type: T,
       disabled: h,
       style: S,
-      rel: k,
+      rel: M,
       className: a()(C, I({
         look: t,
         color: n,
@@ -200,7 +200,7 @@ function T(e) {
         itemClassName: f.spinnerItem
       }) : null, (0, r.jsx)("div", {
         className: a()(f.contents, N),
-        children: M
+        children: k
       })]
     }))
   }));

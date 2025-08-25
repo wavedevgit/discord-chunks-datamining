@@ -100,7 +100,7 @@ function Z(e) {
             children: (0, b.P9)(et)
           }), (0, r.jsx)(s.Text, {
             variant: "text-sm/medium",
-            children: er ? M.intl.string(M.t.uQZTBQ) : M.intl.string(M.t.pgUTZG)
+            children: er ? k.intl.string(k.t.uQZTBQ) : k.intl.string(k.t.pgUTZG)
           })]
         })]
       }) : (0, r.jsxs)(s.P3F, {
@@ -127,7 +127,7 @@ function Z(e) {
       })
     },
     es = () => V !== j.l.MODAL && V !== j.l.MODAL_V2 ? null : (0, r.jsxs)("div", {
-      className: k.details,
+      className: M.details,
       children: [(0, r.jsx)(P.Z, {
         channel: W,
         guild: Y,
@@ -147,7 +147,7 @@ function Z(e) {
         onUserClick: e => e.stopPropagation(),
         disableUserPopout: e => e === t.id,
         overflowCountColor: "text-muted",
-        "aria-label": M.intl.string(M.t.jNqDh4)
+        "aria-label": k.intl.string(k.t.jNqDh4)
       }), V === j.l.MODAL_V2 && ec()]
     }),
     el = () => V === j.l.MODAL || V === j.l.MODAL_V2 ? null : (0, r.jsx)(w.Z, {
@@ -158,16 +158,16 @@ function Z(e) {
       onClose: F
     }),
     ec = () => t.id === n.id ? null : (0, r.jsx)("div", {
-      className: k.actions,
+      className: M.actions,
       children: (0, r.jsx)(D.Z, {
         channel: W,
         onAction: X,
         onClose: F
       })
     }),
-    eu = null != z ? M.intl.formatToPlainString(M.t["4CQq9f"], {
+    eu = null != z ? k.intl.formatToPlainString(k.t["4CQq9f"], {
       name: z.name
-    }) : M.intl.string(M.t["Jpkr/v"]);
+    }) : k.intl.string(k.t["Jpkr/v"]);
   return (0, r.jsx)(h.Gt, {
     value: q,
     children: (0, r.jsxs)(N.Z, {
@@ -187,9 +187,9 @@ function Z(e) {
           onClose: F
         })
       }), (0, r.jsxs)("div", {
-        className: k.body,
+        className: M.body,
         children: [(0, r.jsxs)("div", {
-          className: k.content,
+          className: M.content,
           children: [ea(), es(), V === j.l.MODAL && ec()]
         }), el()]
       }), V !== j.l.MODAL && V !== j.l.MODAL_V2 && ec()]

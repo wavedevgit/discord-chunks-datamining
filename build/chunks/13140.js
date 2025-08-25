@@ -5,9 +5,9 @@ require.d(exports, {
   BB: () => U,
   C$: () => C,
   H9: () => A,
-  Kd: () => k,
+  Kd: () => M,
   UR: () => v,
-  d2: () => M,
+  d2: () => k,
   dU: () => T
 }), require("./388685.js"), require("./704826.js"), require("./35282.js"), require("./415506.js"), require("./539854.js"), require("./781311.js");
 var Chunk921738 = require("./921738.js"),
@@ -213,7 +213,7 @@ function j(e) {
   return e + "Key"
 }
 
-function M(e) {
+function k(e) {
   let t = {
     keyCode: 0,
     key: "",
@@ -237,7 +237,7 @@ function M(e) {
   }, [])
 }
 
-function k(e) {
+function M(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : T(),
     n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : d.MoX.KEYBOARD_KEY;
   return e.replace(/numpad plus/i, "").replace(/NUMPAD \+/i, "numpad plus").replace(/mod/i, s.Z.modKey).split("+").map(e => e.trim().replace("plus", "+")).reduce((e, r) => {

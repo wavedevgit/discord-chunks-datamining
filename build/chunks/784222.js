@@ -62,7 +62,7 @@ function j(e) {
   return e
 }
 
-function M(e, t) {
+function k(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -73,8 +73,8 @@ function M(e, t) {
   return n
 }
 
-function k(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
+function M(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -91,7 +91,7 @@ let G = [Chunk185923.Z5.DISALLOW_EXTERNAL, Chunk185923.Z5.DISALLOW_CUSTOM],
       emojiSearchResults: p,
       gridWidth: h,
       emojiPaddingHorizontal: L,
-      emojiSpriteSize: M,
+      emojiSpriteSize: k,
       shouldShowSoundmojiInEmojiPicker: U,
       showOnlyUnicode: B
     } = e, Z = (0, s.e7)([c.ZP], () => c.ZP.categories), F = r.useMemo(() => B ? _.ZP.getCategories() : Z, [Z, B]), V = (0, s.e7)([y.Z], () => y.Z.getGuild(null == t ? true : t.getGuildId()), [t]), H = null == t ? null : t.getGuildId(), Y = (0, s.e7)([c.ZP], () => c.ZP.getDisambiguatedEmojiContext(H), [H]), W = (0, N.NJ)(H), K = (0, N.wC)(H), z = (0, N.q5)(H), {
@@ -134,7 +134,7 @@ let G = [Chunk185923.Z5.DISALLOW_EXTERNAL, Chunk185923.Z5.DISALLOW_CUSTOM],
         u = 0,
         d = 0;
       if (null != Y && null != h) {
-        let f = Math.floor(h / (M + 2 * L)),
+        let f = Math.floor(h / (k + 2 * L)),
           m = 3 * f,
           g = (a, _) => {
             let p = new Map,
@@ -174,7 +174,7 @@ let G = [Chunk185923.Z5.DISALLOW_EXTERNAL, Chunk185923.Z5.DISALLOW_CUSTOM],
                   return {
                     type: 0,
                     emoji: e,
-                    size: M,
+                    size: k,
                     isDisabled: p.get(e),
                     rowIndex: d,
                     columnIndex: G && t ? n + 1 : n,
@@ -187,7 +187,7 @@ let G = [Chunk185923.Z5.DISALLOW_EXTERNAL, Chunk185923.Z5.DISALLOW_CUSTOM],
                   type: 1,
                   guildId: y.id,
                   name: x.intl.string(x.t["Z/r7IS"]),
-                  size: M,
+                  size: k,
                   rowIndex: d,
                   columnIndex: 0,
                   visibleRowIndex: u
@@ -198,7 +198,7 @@ let G = [Chunk185923.Z5.DISALLOW_EXTERNAL, Chunk185923.Z5.DISALLOW_CUSTOM],
                     type: 1,
                     guildId: y.id,
                     name: x.intl.string(x.t["Z/r7IS"]),
-                    size: M,
+                    size: k,
                     rowIndex: e,
                     columnIndex: t.length,
                     visibleRowIndex: u
@@ -210,7 +210,7 @@ let G = [Chunk185923.Z5.DISALLOW_EXTERNAL, Chunk185923.Z5.DISALLOW_CUSTOM],
                     type: 2,
                     guildId: y.id,
                     name: x.intl.string(x.t.NZI2Zm),
-                    size: M,
+                    size: k,
                     rowIndex: e,
                     columnIndex: t.length,
                     visibleRowIndex: u,
@@ -222,7 +222,7 @@ let G = [Chunk185923.Z5.DISALLOW_EXTERNAL, Chunk185923.Z5.DISALLOW_CUSTOM],
               d++
             }
             let F = h ? 0 : B,
-              V = k(j({}, _), {
+              V = M(j({}, _), {
                 count: a.length
               });
             r.push(V), e.push(F)
@@ -346,7 +346,7 @@ let G = [Chunk185923.Z5.DISALLOW_EXTERNAL, Chunk185923.Z5.DISALLOW_CUSTOM],
         rowCountBySection: e,
         sectionDescriptors: r
       }
-    }, [Y, h, M, L, p, n, el, ec, es, i, et, ee, t, l, Q, J, er, F, V, $, q, X, z, K, W, ei, eu, U])
+    }, [Y, h, k, L, p, n, el, ec, es, i, et, ee, t, l, Q, J, er, F, V, $, q, X, z, K, W, ei, eu, U])
   };
 var Z = function(e) {
   return e[e.PREMIUM = 0] = "PREMIUM", e[e.ROLE_SUBSCRIPTION = 1] = "ROLE_SUBSCRIPTION", e

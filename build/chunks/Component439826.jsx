@@ -68,13 +68,13 @@ function j(e, t) {
   return n
 }
 
-function M(e, t) {
+function k(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function k(e) {
+function M(e) {
   var t;
   let {
     quest: n,
@@ -235,7 +235,7 @@ function G(e) {
             })
           }), B && (0, r.jsx)(c.ua7, {
             text: K ? w.intl.string(w.t.YsCuyM) : W ? w.intl.string(w.t["74Kqra"]) : (0, p.zi)(f) ? w.intl.string(w.t["I6JG4+"]) : w.intl.string(w.t.umdNio),
-            children: e => (0, r.jsx)(c.P3F, M(L({}, e), {
+            children: e => (0, r.jsx)(c.P3F, k(L({}, e), {
               className: D.utilButtonWrapper,
               "aria-label": w.intl.string(w.t.RscU7O),
               onClick: q,
@@ -254,7 +254,7 @@ function G(e) {
             shouldShowDisclosure: true,
             showShareLink: true,
             sourceQuestContent: G,
-            children: e => (0, r.jsx)(c.P3F, M(L({}, e), {
+            children: e => (0, r.jsx)(c.P3F, k(L({}, e), {
               className: D.utilButtonWrapper,
               "aria-label": w.intl.string(w.t.DEoVWV),
               children: (0, r.jsx)(c.xhG, {
@@ -293,7 +293,7 @@ function G(e) {
             })
           })]
         })]
-      }), (0, r.jsx)(k, {
+      }), (0, r.jsx)(M, {
         quest: f,
         errorHints: y,
         warningHints: O,

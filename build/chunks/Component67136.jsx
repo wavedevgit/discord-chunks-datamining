@@ -3,7 +3,7 @@
 "use strict";
 let r;
 require.d(exports, {
-  Jc: () => M,
+  Jc: () => k,
   dx: () => j,
   tE: () => G
 });
@@ -356,7 +356,7 @@ let L = false,
     }
   };
 
-function M(e) {
+function k(e) {
   let {
     containerRef: t,
     children: n,
@@ -366,11 +366,11 @@ function M(e) {
     i.current.setContainer(t.current), i.current.setThemeOptions(r)
   }, [t.current]), (0, a.jsxs)(N.Provider, {
     value: i.current,
-    children: [n, (0, a.jsx)(k, {})]
+    children: [n, (0, a.jsx)(M, {})]
   })
 }
 
-function k() {
+function M() {
   let e = Chunk647438.useContext(N),
     [, t] = Chunk647438.useState({});
   return Chunk647438.useEffect(() => (module.invalidate = () => exports({}), () => {

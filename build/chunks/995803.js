@@ -256,7 +256,7 @@ function b(e) {
     x = null != c ? c : {},
     L = x.maxX,
     j = x.maxY,
-    M = r.useCallback(function() {
+    k = r.useCallback(function() {
       var e, t, n, r, i = null != (t = null == (e = o.current) ? true : e.clientWidth) ? t : 0,
         a = null != (r = null == (n = o.current) ? true : n.clientHeight) ? r : 0;
       return C && c ? {
@@ -269,7 +269,7 @@ function b(e) {
     }, [o, C, L, j]);
   r.useEffect(function() {
     if (N && o.current && n) {
-      var e = M(),
+      var e = k(),
         t = e.width,
         r = e.height,
         a = false;
@@ -295,7 +295,7 @@ function b(e) {
       }
       l && (S || a) && l && l(), S && A(false)
     }
-  }, [i, o, w, D, M, S, A, O, v, p, h, l, N, C, R, n]), r.useEffect(function() {
+  }, [i, o, w, D, k, S, A, O, v, p, h, l, N, C, R, n]), r.useEffect(function() {
     I({
       width: 0,
       height: 0

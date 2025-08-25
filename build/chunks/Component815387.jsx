@@ -127,11 +127,11 @@ function ej(e, t) {
   }), e
 }
 
-function eM(e) {
+function ek(e) {
   q.Z.captureException(e), new m.Z("SystemMessage").error("", e)
 }
 
-function ek(e) {
+function eM(e) {
   let {
     message: t,
     compact: n,
@@ -273,7 +273,7 @@ function eF(e) {
     if (null != r) {
       await j.Z.loadThread(r);
       let t = B.Z.getChannel(r);
-      null != t && (0, M.ok)(t, e.shiftKey)
+      null != t && (0, k.ok)(t, e.shiftKey)
     }
   }, [t]), d = i.useCallback(() => {
     (0, a.ZDy)(async () => {
@@ -363,7 +363,7 @@ function eH(e) {
       message: t,
       compact: n,
       usernameHook: s
-    }), (0, r.jsx)(k.f, {
+    }), (0, r.jsx)(M.f, {
       channel: i,
       message: t
     })]
@@ -811,7 +811,7 @@ let ta = Object.freeze({
   [Chunk981631.uaV.CONTEXT_MENU_COMMAND]: true,
   [Chunk981631.uaV.RECIPIENT_ADD]: eZ,
   [Chunk981631.uaV.RECIPIENT_REMOVE]: eV,
-  [Chunk981631.uaV.CALL]: ek,
+  [Chunk981631.uaV.CALL]: eM,
   [Chunk981631.uaV.CHANNEL_NAME_CHANGE]: eU,
   [Chunk981631.uaV.CHANNEL_ICON_CHANGE]: eG,
   [Chunk981631.uaV.CHANNEL_PINNED_MESSAGE]: eB,
@@ -879,7 +879,7 @@ function ts(e) {
   } = e, {
     type: a
   } = t, s = ta[a];
-  return null == s ? (eM(Error("unknown message type ".concat(t.type))), null) : (0, r.jsx)(ee.ZP, {
+  return null == s ? (ek(Error("unknown message type ".concat(t.type))), null) : (0, r.jsx)(ee.ZP, {
     message: t,
     content: (0, Q.ZP)(t).content,
     compact: null != i && i,

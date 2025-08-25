@@ -235,7 +235,7 @@ let eh = 250,
       children: o
     } = e, {
       handleCardVisibilityChange: a
-    } = (0, k.E)(n.skuId, t === ei.AW.CATALOG ? "full" : t);
+    } = (0, M.E)(n.skuId, t === ei.AW.CATALOG ? "full" : t);
     return (0, r.jsx)(_.$, {
       innerRef: i,
       onChange: a,
@@ -296,7 +296,7 @@ function ev(e) {
     isPartiallyOwnedBundle: E,
     isDisabled: O,
     discount: v
-  } = e, C = (0, R.sp)(), w = (0, D.rN)(t), [x, j] = (0, f.Wu)([P.Z], () => [P.Z.isClaiming === t.skuId, null != P.Z.isClaiming && P.Z.isClaiming !== t.skuId]), M = (0, D.XM)(i, _, false), k = (0, D.ne)({
+  } = e, C = (0, R.sp)(), w = (0, D.rN)(t), [x, j] = (0, f.Wu)([P.Z], () => [P.Z.isClaiming === t.skuId, null != P.Z.isClaiming && P.Z.isClaiming !== t.skuId]), k = (0, D.XM)(i, _, false), M = (0, D.ne)({
     product: i,
     isPartiallyOwnedBundle: E,
     isPurchased: m
@@ -364,7 +364,7 @@ function ev(e) {
       nitroIconSize: "md",
       discountOfferAmount: W
     }),
-    eu = () => h || l.tq || J || !k || n === ei.AW.ORBS ? null : w ? (0, r.jsx)(p.hU, {
+    eu = () => h || l.tq || J || !M || n === ei.AW.ORBS ? null : w ? (0, r.jsx)(p.hU, {
       variant: "primary",
       "aria-label": es.intl.string(es.t.SKNnqq),
       icon: p.tEF,
@@ -417,7 +417,7 @@ function ev(e) {
         i = K ? es.intl.formatToPlainString(es.t["5U5RBw"], {
           discountOfferAmount: W
         }) : es.intl.formatToPlainString(es.t["cNSL/v"], {
-          price: M
+          price: k
         });
       return (0, r.jsx)(p.zxk, {
         variant: "primary",
@@ -531,7 +531,7 @@ function ev(e) {
     }),
     eE = () => {
       if (h && !_ && !w) return et();
-      if (!k || O) return ed();
+      if (!M || O) return ed();
       if (m) return em();
       if (h) return ep();
       if ($)
@@ -571,12 +571,12 @@ let eI = Chunk647438.memo(function(e) {
       _isInHeroBlock: N = false
     } = e, {
       analyticsLocations: P
-    } = (0, E.ZP)([g.Z.COLLECTIBLES_SHOP_CARD]), w = (0, R.sp)(), L = (0, h.Z)(d), k = (0, J.m)(d), U = L || k, B = (0, et.To)(t), Z = (0, f.e7)([m.Z], () => m.Z.useReducedMotion), H = C.ZP.canUseCollectibles(n), W = i.useMemo(() => (0, D.BH)(t, H), [t, H]), z = (0, D.G1)(t), q = (0, f.e7)([v.Z], () => (0, p.wjy)(v.Z.theme)), X = (0, D.Yq)(t.skuId), Q = o.skuId === c.T.ANIME_V3 && (0, D.WW)(t.skuId), {
+    } = (0, E.ZP)([g.Z.COLLECTIBLES_SHOP_CARD]), w = (0, R.sp)(), L = (0, h.Z)(d), M = (0, J.m)(d), U = L || M, B = (0, et.To)(t), Z = (0, f.e7)([m.Z], () => m.Z.useReducedMotion), H = C.ZP.canUseCollectibles(n), W = i.useMemo(() => (0, D.BH)(t, H), [t, H]), z = (0, D.G1)(t), q = (0, f.e7)([v.Z], () => (0, p.wjy)(v.Z.theme)), X = (0, D.Yq)(t.skuId), Q = o.skuId === c.T.ANIME_V3 && (0, D.WW)(t.skuId), {
       hoverVariant: $
     } = (0, x.E)("CollectiblesShopTallCard"), {
       isPurchased: ee,
       isPartiallyOwnedBundle: er
-    } = (0, M.L)(_), {
+    } = (0, k.L)(_), {
       isDisabled: ea
     } = (0, j.G)(_.skuId), ec = null !== T ? T : y, [ed, e_] = i.useState(false), ep = U, eh = i.useCallback(function(e, t, i) {
       let o = arguments.length > 3 && true !== arguments[3] && arguments[3];

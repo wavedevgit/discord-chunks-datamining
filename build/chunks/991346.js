@@ -88,14 +88,14 @@ function F(e) {
     shouldMergeGameSettings: t,
     showRedesignedThirdPartyAccessSettings: n
   } = e, r = I.Z.isDeveloper, i = [{
-    header: k.intl.string(k.t.cduTBA),
+    header: M.intl.string(M.t.cduTBA),
     settings: n ? [j.s6.ACCOUNT, j.s6.GAMES, j.s6.PROFILE_CUSTOMIZATION, j.s6.CONTENT_SOCIAL, j.s6.DATA_PRIVACY, j.s6.PRIVACY_FAMILY_CENTER, j.s6.THIRD_PARTY_ACCESS, j.s6.SESSIONS, j.s6.CLIPS] : [j.s6.ACCOUNT, j.s6.GAMES, j.s6.PROFILE_CUSTOMIZATION, j.s6.CONTENT_SOCIAL, j.s6.DATA_PRIVACY, j.s6.PRIVACY_FAMILY_CENTER, j.s6.AUTHORIZED_APPS, j.s6.SESSIONS, j.s6.CONNECTIONS, j.s6.CLIPS]
   }, {
-    header: k.intl.string(k.t["4uOdGh"]),
+    header: M.intl.string(M.t["4uOdGh"]),
     divider: true,
     settings: [j.s6.PREMIUM, j.s6.GUILD_BOOSTING, j.s6.SUBSCRIPTIONS, j.s6.GIFT_INVENTORY, j.s6.BILLING]
   }, {
-    header: k.intl.string(k.t.f2n1TE),
+    header: M.intl.string(M.t.f2n1TE),
     divider: true,
     settings: [j.s6.APPEARANCE, j.s6.ACCESSIBILITY, j.s6.VOICE_AND_VIDEO, j.s6.POGGERMODE, j.s6.CHAT, j.s6.NOTIFICATIONS, j.s6.KEYBINDS, j.s6.LANGUAGE, j.s6.WINDOW_SETTINGS, j.s6.LINUX_SETTINGS, j.s6.STREAMER_MODE, j.s6.SETTINGS_ADVANCED]
   }, {
@@ -112,7 +112,7 @@ function F(e) {
     divider: true,
     settings: [j.s6.SOCIAL_LINKS, j.s6.CLIENT_DEBUG_INFO]
   }], o = {
-    header: k.intl.string(k.t.SmHCFR),
+    header: M.intl.string(M.t.SmHCFR),
     divider: true,
     settings: [j.s6.ACTIVITY_PRIVACY, j.s6.REGISTERED_GAMES, j.s6.OVERLAY]
   };
@@ -149,7 +149,7 @@ function H() {
     P = (0, Chunk160913.U)(),
     L = (0, Chunk442837.e7)([Chunk663389.Z], () => Chunk663389.Z.getProps().impressionSource),
     j = (0, Chunk631885.gU)(),
-    k = (0, Chunk168308.bC)(),
+    M = (0, Chunk168308.bC)(),
     U = (0, Chunk924557.Go)(),
     [G] = (0, Chunk706140.cv)(U ? [Chunk704215.z.CLIPS_SETTINGS_BETA_TAG] : []),
     {

@@ -159,7 +159,7 @@ function eu(e) {
     priceOptions: N
   } = e, {
     setInvoicePreview: R
-  } = (0, O.JL)(), w = (0, C.Z)(), x = s.interval, L = s.intervalCount, U = (0, u.e7)([F.Z], () => F.Z.getForSkuAndInterval((0, K.Wz)(Q.Si.GUILD), x, L)), B = (0, u.e7)([G.default], () => G.default.getCurrentUser()), Z = (0, u.e7)([k.Z], () => k.Z.getGuild(o), [o]), et = (0, b.Z)({
+  } = (0, O.JL)(), w = (0, C.Z)(), x = s.interval, L = s.intervalCount, U = (0, u.e7)([F.Z], () => F.Z.getForSkuAndInterval((0, K.Wz)(Q.Si.GUILD), x, L)), B = (0, u.e7)([G.default], () => G.default.getCurrentUser()), Z = (0, u.e7)([M.Z], () => M.Z.getGuild(o), [o]), et = (0, b.Z)({
     forceFetch: false
   });
   l()(null != U, "Missing guildBoostingSubscriptionPlan"), l()(null != Z, "Unknown guild: ".concat(o));
@@ -208,7 +208,7 @@ function eu(e) {
       planName: K.ZP.getDisplayPremiumType(m.planId)
     }) : $.intl.format(eE ? $.t["ba1L7+"] : $.t.fkffDQ, {
       onPremiumSubscriptionClick: v,
-      discountPercentage: (0, W.T3)(M.default.locale, Q.Rr / 100),
+      discountPercentage: (0, W.T3)(k.default.locale, Q.Rr / 100),
       freeSubscriptionCount: Q.cb
     }),
     eS = T.filter(e => (0, H.tl)(e)).length,
@@ -428,7 +428,7 @@ function ef(e) {
     currency: s.currency,
     analyticsLocations: L,
     analyticsLocation: g.Z.GUILD_BOOSTING_REVIEW_PRORATED
-  }), [M] = (0, I.ED)({
+  }), [k] = (0, I.ED)({
     subscriptionId: null == l ? true : l.id,
     items: n,
     renewal: true,
@@ -436,22 +436,22 @@ function ef(e) {
     currency: s.currency,
     analyticsLocations: L,
     analyticsLocation: g.Z.GUILD_BOOSTING_REVIEW_RENEWAL
-  }), k = M;
-  null != k && (o = {
-    amount: k.subtotal,
-    currency: k.currency,
-    tax: k.tax,
+  }), M = k;
+  null != M && (o = {
+    amount: M.subtotal,
+    currency: M.currency,
+    tax: M.tax,
     taxInclusive: false
   });
   let G = c.M.EEA_COUNTRIES.has(B.Z.ipCountryCodeWithFallback);
   return i.useEffect(() => {
     N(j)
   }, [N, j]), (0, r.jsxs)("div", {
-    children: [null != j && null != M ? (0, r.jsx)(ed, {
+    children: [null != j && null != k ? (0, r.jsx)(ed, {
       premiumSubscription: l,
       premiumSubscriptionPlan: p,
       proratedInvoicePreview: j,
-      renewalInvoicePreview: M,
+      renewalInvoicePreview: k,
       priceOptions: s
     }) : null, (0, r.jsxs)("div", {
       className: ee.paymentSourceWrapper,

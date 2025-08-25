@@ -37,11 +37,11 @@ function b(e) {
       activeSubscription: P,
       paymentSources: v,
       paymentSourceId: w,
-      selectedPlan: M,
-      selectedSkuId: I,
+      selectedPlan: I,
+      selectedSkuId: M,
       step: Z,
-      updatedSubscription: A,
-      startingPremiumSubscriptionPlanIdRef: k,
+      updatedSubscription: k,
+      startingPremiumSubscriptionPlanIdRef: A,
       startingFractionalPremiumEndsAtRef: T
     } = (0, h.JL)(),
     {
@@ -58,13 +58,13 @@ function b(e) {
       confirmationFooter: W
     } = (0, _.zb)(),
     z = null != W,
-    Y = (0, d.id)(M, B, G),
+    Y = (0, d.id)(I, B, G),
     V = (0, C.Z)(),
-    K = (0, d.a5)(M),
+    K = (0, d.a5)(I),
     q = (0, d.tK)(null == D ? true : D.skuId),
     J = (0, m.$)(v, w),
     X = B && null != D && K;
-  s()(null != M, "Expected plan to selected"), s()(null != I, "Expected selectedSkuId"), s()(null != Z, "Step should be set");
+  s()(null != I, "Expected plan to selected"), s()(null != M, "Expected selectedSkuId"), s()(null != Z, "Step should be set");
   let Q = i.useCallback(() => {
     n(), null == b || b()
   }, [n, b]);
@@ -76,11 +76,11 @@ function b(e) {
     null != V && null != V.reminderNotice && Y && (0, o.wH)(a.z.GIFTING_PROMOTION_REMINDER, V.dismissibleContentVersion, {
       dismissAction: g.L.INDIRECT_ACTION
     })
-  }, [V, Y]), t = null != y ? y(M, Q, A) : null != O ? (0, r.jsx)(c.VY, {}) : B ? (0, r.jsx)(c.TB, {
-    planId: M.id,
+  }, [V, Y]), t = null != y ? y(I, Q, k) : null != O ? (0, r.jsx)(c.VY, {}) : B ? (0, r.jsx)(c.TB, {
+    planId: I.id,
     onClose: Q
-  }) : k.current === M.id ? (0, r.jsx)(c.ZP, {
-    planId: M.id,
+  }) : A.current === I.id ? (0, r.jsx)(c.ZP, {
+    planId: I.id,
     postSuccessGuild: S,
     onClose: Q,
     paymentSourceType: J,
@@ -88,10 +88,10 @@ function b(e) {
     startingFractionalPremiumEndsAt: T.current
   }) : (0, r.jsx)(c.ZP, {
     followupSKUInfo: E,
-    startingPremiumSubscriptionPlanId: k.current,
-    planId: M.id,
+    startingPremiumSubscriptionPlanId: A.current,
+    planId: I.id,
     onClose: Q,
-    isDowngrade: null != P && (0, u.GY)(P, M.id, l),
+    isDowngrade: null != P && (0, u.GY)(P, I.id, l),
     paymentSourceType: J,
     hideClose: z,
     startingFractionalPremiumEndsAt: T.current

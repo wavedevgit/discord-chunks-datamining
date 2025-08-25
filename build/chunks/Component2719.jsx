@@ -419,7 +419,7 @@ function et(e) {
   } = e, n = (0, y.Z)({
     id: t.id,
     label: V.intl.string(V.t["/AXYnJ"])
-  }), o = k.Sb.useSetting(), a = i.useRef(null);
+  }), o = M.Sb.useSetting(), a = i.useRef(null);
   return o && L.wS ? (0, r.jsx)(f.yRy, {
     targetElementRef: a,
     renderPopout: e => {

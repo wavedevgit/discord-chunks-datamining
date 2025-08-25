@@ -55,7 +55,7 @@ function v(e) {
     headerClassName: C,
     headingVariant: N = "heading-md/normal",
     headingColor: R
-  } = e, P = (0, l.e7)([d.Z], () => d.Z.getPremiumTypeSubscription()), w = (0, l.e7)([u.default], () => u.default.getCurrentUser()), D = (0, _.t7)(), x = (0, _.lr)(), L = n === E.p9.TIER_0 ? E.Si.TIER_0 : E.Si.TIER_2, j = (null == P ? true : P.hasActiveTrial) ? null == w ? true : w.premiumType : D ? E.p9.TIER_2 : null, M = (0, h.N)(), k = (0, p.Ng)(), U = null == M ? true : M.subscription_trial;
+  } = e, P = (0, l.e7)([d.Z], () => d.Z.getPremiumTypeSubscription()), w = (0, l.e7)([u.default], () => u.default.getCurrentUser()), D = (0, _.t7)(), x = (0, _.lr)(), L = n === E.p9.TIER_0 ? E.Si.TIER_0 : E.Si.TIER_2, j = (null == P ? true : P.hasActiveTrial) ? null == w ? true : w.premiumType : D ? E.p9.TIER_2 : null, k = (0, h.N)(), M = (0, p.Ng)(), U = null == k ? true : k.subscription_trial;
   if (!S && !t && null != j && n === j && null != P && null != P.planIdFromItems) {
     let e = null != P.trialEndsAt ? s()(null == P ? true : P.trialEndsAt).diff(s()(), "d") : 0,
       t = E.GP[P.planIdFromItems],
@@ -100,14 +100,14 @@ function v(e) {
         })
       })
     }
-    if (null != k) return (0, r.jsx)(c.X6q, {
+    if (null != M) return (0, r.jsx)(c.X6q, {
       variant: N,
       color: R,
       className: o()(y.trialHeader, C),
       children: (0, r.jsx)(O, {
         defaultPriceString: e,
         subscriptionPlan: E.Xh.PREMIUM_MONTH_TIER_2,
-        discountOffer: k
+        discountOffer: M
       })
     })
   }

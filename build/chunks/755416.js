@@ -212,18 +212,18 @@ function L(e) {
 }
 
 function j(e, t) {
-  return k(e) ? U(e, t) : M(e) ? {
+  return M(e) ? U(e, t) : k(e) ? {
     value: "",
     attributes: {},
     description: ""
   } : G(e) ? B(e, t) : H(e) ? Y(e, t) : W(e) ? K(e, t) : z(e) ? X(e, t) : J(e, t)
 }
 
-function M(e) {
+function k(e) {
   return "Resource" === e.attributes["rdf:parseType"] && "string" == typeof e.value && "" === e.value.trim()
 }
 
-function k(e) {
+function M(e) {
   return Array.isArray(e)
 }
 

@@ -182,8 +182,8 @@ class em extends(r = Chunk647438.PureComponent) {
       } = Chunk647438, a = null != (j = (0, Chunk866442.wK)(null != r ? r : "", Chunk951288)) ? Chunk695346 : "";
       this.isMe() && (Chunk659215.borderColor = r), Chunk659215.background = Chunk120356, e = require, t = require
     }
-    let M = null == Chunk305325 ? true : Chunk305325.getBoundingClientRect(),
-      k = null != Chunk906411 && null != Chunk592125,
+    let k = null == Chunk305325 ? true : Chunk305325.getBoundingClientRect(),
+      M = null != Chunk906411 && null != Chunk592125,
       U = null == Chunk906411;
     return (0, Chunk951288.jsx)(Chunk481060.yRy, {
       targetElementRef: {
@@ -227,11 +227,11 @@ class em extends(r = Chunk647438.PureComponent) {
                 }
               }), (0, i.jsxs)("div", {
                 children: [a ? (0, i.jsxs)(i.Fragment, {
-                  children: [k && (0, i.jsx)(v.Z, {
+                  children: [M && (0, i.jsx)(v.Z, {
                     messageId: O.id,
                     emoji: c,
                     startPosition: T,
-                    targetPosition: M
+                    targetPosition: k
                   }), U && (0, i.jsx)(Q.Z, {
                     count: r,
                     emoji: c,
@@ -287,7 +287,7 @@ class em extends(r = Chunk647438.PureComponent) {
         isLurking: a,
         isGuest: s,
         isForumToolbar: l
-      } = this.props, c = M.Z.getChannel(t.getChannelId());
+      } = this.props, c = k.Z.getChannel(t.getChannelId());
       if (a || s) {
         var u, d;
         null == (d = this.ctaRef) || null == (u = d.current) || u.focus();
@@ -367,7 +367,7 @@ class em extends(r = Chunk647438.PureComponent) {
       } = e, {
         message: n,
         isLurking: r
-      } = this.props, o = M.Z.getChannel(n.getChannelId()), a = k.Z.getGuild(null == o ? true : o.getGuildId());
+      } = this.props, o = k.Z.getChannel(n.getChannelId()), a = M.Z.getGuild(null == o ? true : o.getGuildId());
       return r && null != a ? (0, i.jsx)(R.Z, {
         ctaRef: this.ctaRef,
         type: R.s.REACTIONS,
@@ -393,7 +393,7 @@ class em extends(r = Chunk647438.PureComponent) {
         tooltipText: a,
         tooltipTextAria: l
       } = this.state, c = n => {
-        let r = M.Z.getChannel(t.getChannelId());
+        let r = k.Z.getChannel(t.getChannelId());
         null != r && (this.handleLeave(), ep(r, t, {
           emoji: e,
           reactionType: o ? Y.O.BURST : Y.O.NORMAL
@@ -496,8 +496,8 @@ class em extends(r = Chunk647438.PureComponent) {
         isPendingMember: t
       } = this.props;
       if (!t) return null;
-      let n = M.Z.getChannel(e.getChannelId()),
-        r = k.Z.getGuild(null == n ? true : n.getGuildId());
+      let n = k.Z.getChannel(e.getChannelId()),
+        r = M.Z.getGuild(null == n ? true : n.getGuildId());
       null != r && (0, N.hk)(r.id)
     }), eo(this, "handleSetReactionRef", e => {
       this.setState({
@@ -508,7 +508,7 @@ class em extends(r = Chunk647438.PureComponent) {
         emoji: e,
         message: t,
         type: n
-      } = this.props, r = B.default.getCurrentUser(), i = M.Z.getChannel(t.getChannelId()), o = n === Y.O.BURST, a = (0, V.I5)(r), s = o ? $.cd.EMOJI_IN_BURST_REACTION_HOVER : $.cd.EMOJI_IN_REACTION_HOVER;
+      } = this.props, r = B.default.getCurrentUser(), i = k.Z.getChannel(t.getChannelId()), o = n === Y.O.BURST, a = (0, V.I5)(r), s = o ? $.cd.EMOJI_IN_BURST_REACTION_HOVER : $.cd.EMOJI_IN_REACTION_HOVER;
       !o || this.userCanBurstReact() || a || (s = $.cd.EMOJI_IN_BURST_REACTION_HOVER_UPSELL), y.ZP.trackWithMetadata(J.rMx.EXPRESSION_TOOLTIP_VIEWED, {
         type: s,
         expression_id: e.id,
@@ -600,10 +600,10 @@ let eg = Chunk647438.memo(e => {
       nonce: l
     } = e, {
       joinedEmojiSourceGuild: c
-    } = (0, _.cj)([I.ZP, k.Z], () => {
+    } = (0, _.cj)([I.ZP, M.Z], () => {
       let e = I.ZP.getCustomEmojiById(n);
       return {
-        joinedEmojiSourceGuild: (null == e ? true : e.type) === T.B.GUILD ? k.Z.getGuild(null == e ? true : e.guildId) : true
+        joinedEmojiSourceGuild: (null == e ? true : e.type) === T.B.GUILD ? M.Z.getGuild(null == e ? true : e.guildId) : true
       }
     }), [u, d] = o.useState(true), [f, p] = o.useState(true), [m, g] = o.useState(null), [E, b] = o.useState(false), [y, O] = o.useState(false), [v, S] = o.useState(false), C = null != c, N = null != (t = null == u ? true : u.isDiscoverable()) && t, R = G.Z.getGuildId(), P = null != R && (R === (null == u ? true : u.id) || R === (null == c ? true : c.id)), w = B.default.getCurrentUser(), D = (0, W.a)({
       sourceType: m,
@@ -654,7 +654,7 @@ let eg = Chunk647438.memo(e => {
         })
       },
       j = E && (true !== u || true !== f),
-      M = () => (0, i.jsxs)(i.Fragment, {
+      k = () => (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
           className: et.reactionEmojiDetailsDivider
         }), null != D.emojiDescription && D.type !== W.$.UNAVAILABLE && (0, i.jsx)(h.Text, {
@@ -664,7 +664,7 @@ let eg = Chunk647438.memo(e => {
         })]
       });
     return (0, i.jsxs)("div", {
-      children: [j ? M() : L(), y ? (0, i.jsx)(z.SE, {
+      children: [j ? k() : L(), y ? (0, i.jsx)(z.SE, {
         className: et.emojiDetailsLoader
       }) : j && (0, i.jsx)(eE, {
         emojiId: n,

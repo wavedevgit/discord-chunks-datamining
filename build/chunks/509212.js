@@ -59,8 +59,8 @@ require.d(exports, {
   il: () => eX,
   jY: () => tN,
   lQ: () => K,
-  nc: () => ek,
-  o9: () => eM,
+  nc: () => eM,
+  o9: () => ek,
   oo: () => eC,
   pO: () => ew,
   q6: () => X,
@@ -124,7 +124,7 @@ function j(e, t, n) {
   }) : e[t] = n, e
 }
 
-function M(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -137,7 +137,7 @@ function M(e) {
   return e
 }
 
-function k(e, t) {
+function M(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -149,7 +149,7 @@ function k(e, t) {
 }
 
 function U(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -493,8 +493,8 @@ function eT(e, t) {
 }
 
 function eS(e, t) {
-  v.Z.captureException(e, U(M({}, t), {
-    tags: U(M({}, null == t ? true : t.tags), {
+  v.Z.captureException(e, U(k({}, t), {
+    tags: U(k({}, null == t ? true : t.tags), {
       app_context: "quests"
     })
   }))
@@ -561,7 +561,7 @@ function ej(e, t) {
   return R.r.build(e.config).features.has(t)
 }
 
-function eM(e) {
+function ek(e) {
   let {
     quest: t,
     idx: n
@@ -571,7 +571,7 @@ function eM(e) {
   return r.type === c.w.REWARD_CODE ? r : null
 }
 
-function ek(e, t) {
+function eM(e, t) {
   let n = R.r.build(e.config).application.link;
   (0, I._3)({
     questId: e.id,
@@ -859,7 +859,7 @@ function td(e) {
     sharedQuestFields: l
   } = e, c = eC({
     quest: o
-  }), u = null != s ? s : null == a ? true : a.platform, d = c ? eM({
+  }), u = null != s ? s : null == a ? true : a.platform, d = c ? ek({
     quest: o,
     idx: null != (r = null == a ? true : a.tier) ? r : null == (t = o.userStatus) ? true : t.claimedTier
   }) : null, f = null != (i = null == d || null == (n = d.messages) ? true : n.redemptionInstructionsByPlatform) ? i : l.defaultRewardRedemptionInstructionsByPlatform;

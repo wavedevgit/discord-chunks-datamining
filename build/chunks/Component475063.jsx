@@ -95,8 +95,8 @@ function R(e) {
       showCharacterCount: x,
       showRemainingCharacterCount: L = true,
       "aria-labelledby": j,
-      rows: M = 3,
-      disabled: k,
+      rows: k = 3,
+      disabled: M,
       helperText: U,
       successMessage: G,
       inputRef: B
@@ -134,7 +134,7 @@ function R(e) {
     X = E ? p.l : "textarea";
   return (0, r.jsxs)(d.J, {
     validation: H,
-    disabled: k,
+    disabled: M,
     helperText: U,
     successMessage: G,
     characterCount: F && V ? null != (t = null == n ? true : n.length) ? t : 0 : true,
@@ -153,8 +153,8 @@ function R(e) {
         autoFocus: s,
         minLength: y,
         maxLength: I,
-        rows: M,
-        disabled: k
+        rows: k,
+        disabled: M
       }, Z), {
         onChange: q,
         ref: B

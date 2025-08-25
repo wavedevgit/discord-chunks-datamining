@@ -93,7 +93,7 @@ function T(e) {
       } = e;
       C(t)
     }
-  }), M = (0, l.q_F)({
+  }), k = (0, l.q_F)({
     from: {
       x: g.x,
       scale: 1,
@@ -140,8 +140,8 @@ function T(e) {
         style: E({}, j),
         className: m.emojiContainer,
         children: (0, r.jsx)(a.animated.div, {
-          style: y(E({}, M), {
-            opacity: M.opacity
+          style: y(E({}, k), {
+            opacity: k.opacity
           }),
           children: (0, r.jsx)(c.Z, {
             className: m.emoji,

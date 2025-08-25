@@ -63,7 +63,7 @@ function j(e) {
   return e
 }
 
-function M(e, t) {
+function k(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -74,8 +74,8 @@ function M(e, t) {
   return n
 }
 
-function k(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
+function M(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -93,7 +93,7 @@ function U(e, t) {
   return r.useEffect(() => d(c()), [c]), {
     guildPlans: u,
     overrideGuild: r.useCallback((e, t) => {
-      s(n => k(j({}, n), {
+      s(n => M(j({}, n), {
         [e]: t
       }))
     }, []),
@@ -240,7 +240,7 @@ function Y(e) {
       unmuted_server_ids: t.filter(e => b.ZP.isMuted(e.plan.guildId)).map(e => e.plan.guildId)
     };
   return () => {
-    y.default.track(P.rMx.NOTIFICATION_MIGRATION_COMPLETED, k(j({}, n), {
+    y.default.track(P.rMx.NOTIFICATION_MIGRATION_COMPLETED, M(j({}, n), {
       auto_migrated: true,
       pre_selected_server_ids: Object.values(e).filter(e => e.mode === R.AR.UseGreyDot).map(e => e.guildId),
       final_selected_server_ids: t.map(e => e.plan.guildId),

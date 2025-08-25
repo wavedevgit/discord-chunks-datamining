@@ -71,7 +71,7 @@ let G = () => (0, Chunk951288.jsx)("div", {
         })
       }), (0, r.jsx)(f.X6q, {
         variant: "heading-lg/extrabold",
-        children: k.intl.string(k.t["xSR+a2"])
+        children: M.intl.string(M.t["xSR+a2"])
       })]
     })
   },
@@ -89,7 +89,7 @@ let G = () => (0, Chunk951288.jsx)("div", {
     }), m = (0, C.Rt)({
       intervalType: null == p || null == (t = p.subscription_trial) ? true : t.interval,
       intervalCount: null == p || null == (n = p.subscription_trial) ? true : n.interval_count
-    }), b = f ? k.intl.string(k.t.IJI7ys) : (null == p || null == (i = p.subscription_trial) ? true : i.sku_id) === M.Si.TIER_2 ? m : k.intl.string(k.t.mr4K7O), y = e => {
+    }), b = f ? M.intl.string(M.t.IJI7ys) : (null == p || null == (i = p.subscription_trial) ? true : i.sku_id) === k.Si.TIER_2 ? m : M.intl.string(M.t.mr4K7O), y = e => {
       e && (null == o || o(), null != a && a(j.L.PRIMARY), null != u && ((0, x.Yk)({
         isPersisted: true,
         themeName: c.Us[u.id],
@@ -100,7 +100,7 @@ let G = () => (0, Chunk951288.jsx)("div", {
       })))
     };
     return h ? (0, r.jsx)(v.Z, {
-      subscriptionTier: M.Si.TIER_2,
+      subscriptionTier: k.Si.TIER_2,
       defaultTextOverride: b,
       premiumModalAnalyticsLocation: {
         object: L.qAy.BUTTON_CTA,
@@ -113,7 +113,7 @@ let G = () => (0, Chunk951288.jsx)("div", {
       textOptions: {
         textOverride: b
       },
-      subscriptionTier: M.Si.TIER_2,
+      subscriptionTier: k.Si.TIER_2,
       onSubscribeModalClose: y
     })
   },
@@ -132,11 +132,11 @@ let G = () => (0, Chunk951288.jsx)("div", {
     }), [c, d] = i.useState(false), f = (0, w.q)(), _ = () => {
       null != t && t(j.L.DISMISS), f(L.rMx.CLIENT_THEME_PREVIEW_CLOSED), (0, P.C)(), n || p.Z.open()
     }, h = (0, y.B)({
-      no: k.t["3D5yo6"],
-      "sv-SE": k.t["3D5yo6"],
-      uk: k.t["3D5yo6"],
-      de: k.t["3D5yo6"]
-    }, k.t["dqH+qq"]), m = (0, s.EQ)({
+      no: M.t["3D5yo6"],
+      "sv-SE": M.t["3D5yo6"],
+      uk: M.t["3D5yo6"],
+      de: M.t["3D5yo6"]
+    }, M.t["dqH+qq"]), m = (0, s.EQ)({
       isPreview: o,
       isCoachmark: n,
       forceShowCloseButton: c
@@ -144,9 +144,9 @@ let G = () => (0, Chunk951288.jsx)("div", {
       isCoachmark: true
     }, {
       forceShowCloseButton: true
-    }, () => k.intl.string(k.t.cpT0Cg)).with({
+    }, () => M.intl.string(M.t.cpT0Cg)).with({
       isPreview: true
-    }, () => h).otherwise(() => k.intl.string(k.t.Olc2Ky)), g = a ? U.editorFooterV2 : U.editorFooter;
+    }, () => h).otherwise(() => M.intl.string(M.t.Olc2Ky)), g = a ? U.editorFooterV2 : U.editorFooter;
     return (0, r.jsxs)("div", {
       className: g,
       children: [o && (0, r.jsx)(Z, {
@@ -182,7 +182,7 @@ function V(e) {
   })), d = (0, b.oq)().activePanel === b.wh.CLIENT_THEMES, _ = (0, w.q)();
   i.useEffect(() => _(L.rMx.CLIENT_THEME_PREVIEW_VIEWED), [_]), i.useEffect(() => {
     c && A.default.track(L.rMx.PREMIUM_UPSELL_VIEWED, {
-      type: M.cd.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
+      type: k.cd.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
       location_stack: o
     })
   }, [c, o]);

@@ -93,8 +93,8 @@ let N = Chunk647438.memo(function(e) {
     } = e,
     L = i.useRef(null),
     j = i.useMemo(() => null != x ? d.ZP.getPlaybackPosition(x) : 0, [x]),
-    M = (0, s.e7)([d.ZP], () => d.ZP.getPlaybackRate(d.Ir.VOICE_MESSAGE)),
-    [k, U] = i.useState(j > 0),
+    k = (0, s.e7)([d.ZP], () => d.ZP.getPlaybackRate(d.Ir.VOICE_MESSAGE)),
+    [M, U] = i.useState(j > 0),
     [G, B] = i.useState(j),
     [Z, F] = i.useState(y),
     [V, H] = i.useState(false),
@@ -153,8 +153,8 @@ let N = Chunk647438.memo(function(e) {
       null != Z && null != t && (el(e * Z), clearTimeout(et.current), et.current = true)
     }, [Z, el]);
   i.useEffect(() => {
-    !k && Y && U(true)
-  }, [Y, k]);
+    !M && Y && U(true)
+  }, [Y, M]);
   let eh = i.useRef(null),
     em = {
       played: q,
@@ -196,9 +196,9 @@ let N = Chunk647438.memo(function(e) {
   let eE = Y ? l.fpf : l.o1U,
     eb = Y ? O.intl.string(O.t.ZcgDJS) : O.intl.string(O.t.RscU7O),
     ey = O.intl.formatToPlainString(O.t.LgCPMj, {
-      playbackRate: M
+      playbackRate: k
     }),
-    eO = "".concat(M.toString().replace(/^0/, ""), "X");
+    eO = "".concat(k.toString().replace(/^0/, ""), "X");
   t = "Safari" === platform.name ? (0, r.jsx)(i.Suspense, {
     children: (0, r.jsx)(I, {
       ref: L,
@@ -211,7 +211,7 @@ let N = Chunk647438.memo(function(e) {
       onError: ec,
       muted: V,
       volume: $,
-      playbackRate: M
+      playbackRate: k
     })
   }) : (0, r.jsx)(f.Z, {
     ref: L,
@@ -223,7 +223,7 @@ let N = Chunk647438.memo(function(e) {
     onError: ec,
     muted: V,
     volume: $,
-    playbackRate: M,
+    playbackRate: k,
     playing: Y && !K,
     children: (0, r.jsx)("source", {
       src: n
@@ -257,17 +257,17 @@ let N = Chunk647438.memo(function(e) {
       currentTime: G,
       duration: null != Z ? Z : 1,
       playing: Y,
-      played: k,
+      played: M,
       onDrag: ep,
       onDragStart: ef,
       onDragEnd: e_
     }), (0, r.jsx)(S, {
-      played: k,
+      played: M,
       currentTime: G,
       duration: Z
     }), (0, r.jsx)(l.P3F, {
       className: v.playbackRateContainer,
-      onClick: () => T(M),
+      onClick: () => T(k),
       "aria-label": ey,
       children: (0, r.jsx)(l.Text, {
         variant: "text-xs/semibold",

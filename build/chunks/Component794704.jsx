@@ -285,7 +285,7 @@ function ej(e) {
   let {
     runningGame: a,
     runningGameApplication: s
-  } = e, c = null == a ? true : a.pid, u = (0, _.e7)([M.default], () => null == a || null == c ? null : M.default.getTrackedGameByPid(c), [a, c], l()), {
+  } = e, c = null == a ? true : a.pid, u = (0, _.e7)([k.default], () => null == a || null == c ? null : k.default.getTrackedGameByPid(c), [a, c], l()), {
     enabledLegacy: d,
     enabledOOP: f
   } = (0, _.cj)([q.Z, Q.Z], () => {
@@ -310,7 +310,7 @@ function ej(e) {
     {
       legacyEnabled: D,
       oopEnabled: L
-    } = (0, _.cj)([M.default], () => M.default.getGlobalEnabledStatus()),
+    } = (0, _.cj)([k.default], () => k.default.getGlobalEnabledStatus()),
     j = (e, t, n) => {
       var r, i, o;
       if (eL(n), null == a) return;
@@ -330,7 +330,7 @@ function ej(e) {
           b.Z.setEnabled(D, e), (0, w.ou)(e, w.AE.OOP, null != (i = a.id) ? i : null)
       }(s || l) && (0, B.l)(s ? w.AE.LEGACY_GAME : w.AE.OOP_GAME, null != (o = a.id) ? o : null)
     },
-    k = (e, t) => {
+    M = (e, t) => {
       let n = !t && e,
         r = !L && g,
         i = !D && y,
@@ -507,7 +507,7 @@ function ej(e) {
         checked: g && L || y && D,
         disabled: G,
         onChange: (e, t) => {
-          U(e, k(e, g && L || y && D), t)
+          U(e, M(e, g && L || y && D), t)
         }
       })
     }),
@@ -551,7 +551,7 @@ function ej(e) {
   })
 }
 
-function eM(e) {
+function ek(e) {
   let {
     game: t,
     gameApplication: n
@@ -563,7 +563,7 @@ function eM(e) {
   })
 }
 
-function ek(e) {
+function eM(e) {
   let {
     rawGame: t,
     gameApplication: n,
@@ -585,7 +585,7 @@ function ek(e) {
   };
   return (0, r.jsx)(ew, {
     title: t.name,
-    icon: (0, r.jsx)(eM, {
+    icon: (0, r.jsx)(ek, {
       game: u,
       gameApplication: n
     }),
@@ -654,7 +654,7 @@ function eU() {
       })
     }), (0, Chunk951288.jsx)(Chunk481060.zJl, {
       className: Chunk607547.scroller,
-      children: a.map((e, t) => (0, r.jsx)(ek, {
+      children: a.map((e, t) => (0, r.jsx)(eM, {
         rawGame: e,
         clientSettingType: w.AE.LEGACY_GAME,
         supportDisabled: l,
@@ -728,7 +728,7 @@ function eG() {
       })
     }), (0, Chunk951288.jsx)(Chunk481060.zJl, {
       className: Chunk607547.scroller,
-      children: Chunk348327.map((e, t) => (0, r.jsx)(ek, {
+      children: Chunk348327.map((e, t) => (0, r.jsx)(eM, {
         rawGame: e,
         clientSettingType: w.AE.OOP_GAME,
         gameApplication: l[t],
@@ -1094,7 +1094,7 @@ function ez(e) {
   let {
     runningGame: t,
     runningGameApplication: n
-  } = e, o = null == n ? true : n.id, a = (0, _.e7)([U.Z], () => U.Z.isLimitedInteractionOverrideEnabled(o), [o]), s = i.useMemo(() => null != t && (0, k.H8)(t.pid), [t]), l = (0, j.Z)({
+  } = e, o = null == n ? true : n.id, a = (0, _.e7)([U.Z], () => U.Z.isLimitedInteractionOverrideEnabled(o), [o]), s = i.useMemo(() => null != t && (0, M.H8)(t.pid), [t]), l = (0, j.Z)({
     location: "overlay_user_settings"
   }), {
     disableClickableRegions: c,

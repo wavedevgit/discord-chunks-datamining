@@ -139,13 +139,13 @@ function S(e) {
   let {
     ref: L,
     width: j = 0,
-    height: M = 0
-  } = (0, u.ZP)(C), k = m({}, O, T.springConfig, P.enabled ? {
+    height: k = 0
+  } = (0, u.ZP)(C), M = m({}, O, T.springConfig, P.enabled ? {
     clamp: true
   } : null), U = (0, c.q_F)({
     width: null != (n = T.width) ? n : j,
-    height: M,
-    config: k
+    height: k,
+    config: M
   }, null == N ? "animate-never" : "respect-motion-settings"), G = (0, c.Yzy)(C, {
     value: 0,
     from: {
@@ -157,7 +157,7 @@ function S(e) {
     leave: {
       value: false
     },
-    config: k,
+    config: M,
     onRest: (e, t) => {
       let {
         item: n

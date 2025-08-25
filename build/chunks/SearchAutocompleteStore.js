@@ -65,7 +65,7 @@ function P(e) {
   let n = (0, E.Tm)(e),
     r = null != (t = S.get(n)) ? t : {
       results: [],
-      context: l.Z.getUserSearchContext(M.bind(null, e))
+      context: l.Z.getUserSearchContext(k.bind(null, e))
     };
   return S.set(n, r), r
 }
@@ -120,12 +120,12 @@ function j(e) {
   return e.type === O.Sap.FILTER_ALL || e.type === O.Sap.FILTER && t
 }
 
-function M(e, t) {
+function k(e, t) {
   let {
     results: n
   } = t, r = (0, E.Tm)(e), i = S.get(r), o = T.get(r);
   if (null == i || null == o || !j(o.mode)) return;
-  i.results = k(n, o.mode.type === O.Sap.FILTER ? A : C);
+  i.results = M(n, o.mode.type === O.Sap.FILTER ? A : C);
   let {
     query: a,
     mode: s,
@@ -142,7 +142,7 @@ function M(e, t) {
   T.set(r, d), et.emitChange()
 }
 
-function k(e) {
+function M(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : A,
     n = [];
   for (let r of e) {

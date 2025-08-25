@@ -44,8 +44,8 @@ let C = new Chunk710845.Z("AuthenticationStore"),
   x = null,
   L = null,
   j = null,
-  M = null,
-  k = Chunk981631.u34.NONE,
+  k = null,
+  M = Chunk981631.u34.NONE,
   U = false,
   G = [],
   B = "",
@@ -124,7 +124,7 @@ function ee(e, t) {
 }
 
 function et(e) {
-  M = e, o.setAnalyticsToken(e)
+  k = e, o.setAnalyticsToken(e)
 }
 
 function en() {
@@ -135,32 +135,32 @@ function er(e) {
   let {
     isPasswordAttempt: t
   } = e;
-  k = T.u34.LOGGING_IN, z = z || true === t
+  M = T.u34.LOGGING_IN, z = z || true === t
 }
 
 function ei(e) {
   let {
     isMultiAccount: t
   } = e;
-  k = T.u34.NONE, B = "", Z = false, F = null, r = null, t || (eu(), en(), Q(false))
+  M = T.u34.NONE, B = "", Z = false, F = null, r = null, t || (eu(), en(), Q(false))
 }
 
 function eo() {
-  k = Chunk981631.u34.NONE
+  M = Chunk981631.u34.NONE
 }
 
 function ea(e) {
   let {
     token: t
   } = e;
-  k = T.u34.NONE, ee(t), $(), B = "", Z = false, F = null, eu(), K = false
+  M = T.u34.NONE, ee(t), $(), B = "", Z = false, F = null, eu(), K = false
 }
 
 function es(e) {
   let {
     error: t
   } = e;
-  B = "", Z = false, F = null, eu(), k = null != (0, _.p)(t).date_of_birth ? T.u34.LOGIN_AGE_GATE : T.u34.NONE
+  B = "", Z = false, F = null, eu(), M = null != (0, _.p)(t).date_of_birth ? T.u34.LOGIN_AGE_GATE : T.u34.NONE
 }
 
 function el() {
@@ -171,7 +171,7 @@ function ec(e) {
   let {
     error: t
   } = e;
-  B = "", Z = false, F = null, K = false, k = null != (0, _.F)(t).date_of_birth ? T.u34.LOGIN_AGE_GATE : T.u34.NONE
+  B = "", Z = false, F = null, K = false, M = null != (0, _.F)(t).date_of_birth ? T.u34.LOGIN_AGE_GATE : T.u34.NONE
 }
 
 function eu() {
@@ -197,27 +197,27 @@ function ed(e) {
     backup: i,
     totp: o
   } = e;
-  null != t && (B = t, Z = n, F = null != r ? r : null, H = i, V = o, eu()), k = T.u34.MFA_STEP
+  null != t && (B = t, Z = n, F = null != r ? r : null, H = i, V = o, eu()), M = T.u34.MFA_STEP
 }
 
 function ef() {
-  k = Chunk981631.u34.LOGGING_IN_MFA
+  M = Chunk981631.u34.LOGGING_IN_MFA
 }
 
 function e_(e) {
-  k = T.u34.ACCOUNT_SCHEDULED_FOR_DELETION, r = e.credentials
+  M = T.u34.ACCOUNT_SCHEDULED_FOR_DELETION, r = e.credentials
 }
 
 function ep(e) {
-  k = T.u34.ACCOUNT_DISABLED, r = e.credentials
+  M = T.u34.ACCOUNT_DISABLED, r = e.credentials
 }
 
 function eh(e) {
-  k = T.u34.PASSWORD_RECOVERY_PHONE_VERIFICATION, r = e.credentials
+  M = T.u34.PASSWORD_RECOVERY_PHONE_VERIFICATION, r = e.credentials
 }
 
 function em(e) {
-  k = T.u34.PHONE_IP_AUTHORIZATION, r = e.credentials
+  M = T.u34.PHONE_IP_AUTHORIZATION, r = e.credentials
 }
 
 function eg(e) {
@@ -259,7 +259,7 @@ function ey(e) {
     analyticsToken: i,
     token: o
   } = e;
-  O.Z.setUser(n.id, n.username, null != (t = n.email) ? t : true, (0, E.Z)(n)), w = r, M = i, ee(o, n.id), null != i && et(i), $(), P = n.id, c.K.set(R, n.id)
+  O.Z.setUser(n.id, n.username, null != (t = n.email) ? t : true, (0, E.Z)(n)), w = r, k = i, ee(o, n.id), null != i && et(i), $(), P = n.id, c.K.set(R, n.id)
 }
 
 function eO(e) {
@@ -304,15 +304,15 @@ function eS(e) {
   null != (t = null == e ? true : e.isSwitchingAccount) && t || (n && $(), Q()), s.ZP.PersistedStore.clearAll({
     omit: ["InstallationManagerStore", "AgeGateStore", "NativePermissionsStore", "MultiAccountStore", "DraftStore", "OverlayStoreV2", "StreamerModeStore", "LoginRequiredActionStore", "LayoutStore", "OverlaySettingsStore", "ApexExperimentStore"],
     type: (null == e ? true : e.isSwitchingAccount) ? "user-data-only" : "all"
-  }), I.Z.clearAll(), h.ZH(), O.Z.clearUser(), c.K.remove(R), P = null, w = null, k = (null == e ? true : e.isSwitchingAccount) ? T.u34.LOGGING_IN : T.u34.NONE, B = "", F = null, Z = false, K = false, z = false, eu()
+  }), I.Z.clearAll(), h.ZH(), O.Z.clearUser(), c.K.remove(R), P = null, w = null, M = (null == e ? true : e.isSwitchingAccount) ? T.u34.LOGGING_IN : T.u34.NONE, B = "", F = null, Z = false, K = false, z = false, eu()
 }
 
 function eA() {
-  k = Chunk981631.u34.FORGOT_PASSWORD
+  M = Chunk981631.u34.FORGOT_PASSWORD
 }
 
 function eC() {
-  k = Chunk981631.u34.NONE
+  M = Chunk981631.u34.NONE
 }
 
 function eN(e) {
@@ -330,14 +330,14 @@ function eR(e) {
 }
 
 function eP() {
-  W = null, k = Chunk981631.u34.NONE, eS(), setImmediate(() => (0, Chunk703656.uL)(Chunk981631.Z5c.DEFAULT_LOGGED_OUT))
+  W = null, M = Chunk981631.u34.NONE, eS(), setImmediate(() => (0, Chunk703656.uL)(Chunk981631.Z5c.DEFAULT_LOGGED_OUT))
 }
 class ew extends(i = Chunk442837.ZP.Store) {
   initialize() {
     P = Chunk433517.K.get(R), null == Chunk213919.getToken() && Q(), this.addChangeListener(() => (0, Chunk670890.u)(P))
   }
   getLoginStatus() {
-    return k
+    return M
   }
   getId() {
     return P
@@ -361,7 +361,7 @@ class ew extends(i = Chunk442837.ZP.Store) {
     return L
   }
   getAnalyticsToken() {
-    return null != M ? M : Chunk213919.getAnalyticsToken()
+    return null != k ? k : Chunk213919.getAnalyticsToken()
   }
   getMFATicket() {
     return B

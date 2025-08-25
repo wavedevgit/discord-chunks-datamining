@@ -73,7 +73,7 @@ function L(e, t) {
 
 function j(e, t) {
   if (null == e) return {};
-  var n, r, i = M(e, t);
+  var n, r, i = k(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -81,14 +81,14 @@ function j(e, t) {
   return i
 }
 
-function M(e, t) {
+function k(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let k = 10;
+let M = 10;
 
 function U(e) {
   let {
@@ -96,7 +96,7 @@ function U(e) {
     locale: n,
     compactMode: r,
     numPages: a
-  } = e, l = o.useRef(null), [c, d] = o.useState(0), [_, h] = o.useState(null), m = t.slice(c * k, (c + 1) * k);
+  } = e, l = o.useRef(null), [c, d] = o.useState(0), [_, h] = o.useState(null), m = t.slice(c * M, (c + 1) * M);
   o.useEffect(() => {
     var e;
     null == (e = l.current) || e.scrollTo({
@@ -106,7 +106,7 @@ function U(e) {
   let E = o.useCallback(e => {
       d(e);
       let n = t[t.length - 1].id;
-      e >= a - 2 && _ !== n && ((0, p.cQ)(k, n), h(n))
+      e >= a - 2 && _ !== n && ((0, p.cQ)(M, n), h(n))
     }, [t, a, _]),
     y = (0, g.Z)("billing-history", l);
   return (0, i.jsx)(u.bG, {
@@ -141,11 +141,11 @@ function U(e) {
 }
 class G extends(r = Chunk647438.PureComponent) {
   get numPages() {
-    return Math.max(Math.ceil(this.props.payments.length / k), 1)
+    return Math.max(Math.ceil(this.props.payments.length / M), 1)
   }
   componentDidMount() {
     Chunk570140.Z.wait(() => {
-      (0, Chunk827837.N)(), (0, Chunk355467.cQ)(3 * k)
+      (0, Chunk827837.N)(), (0, Chunk355467.cQ)(3 * M)
     })
   }
   renderPremiumExternalSubscription(e) {

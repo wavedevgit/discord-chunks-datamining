@@ -159,7 +159,7 @@ function R(e, t) {
     case p.l.Attachment:
       return j(e.media, n);
     case p.l.GenericMedia:
-      return M(e.media, n);
+      return k(e.media, n);
     default:
       returnfalse
   }
@@ -214,7 +214,7 @@ function L(e, t) {
   return !(0 === t.length || null == e || 0 === t.filter(t => !P(t, {
     type: p.l.Embed,
     media: e
-  })).length || "video" in e && null != e.video && (null == (n = e.video) ? true : n.width) === 0 && (null == (r = e.video) ? true : r.height) === 0 || "thumbnail" in e && null != e.thumbnail && (null == (i = e.thumbnail) ? true : i.width) === 0 && (null == (o = e.thumbnail) ? true : o.height) === 0 || "image" in e && null != e.image && (null == (a = e.image) ? true : a.width) === 0 && (null == (s = e.image) ? true : s.height) === 0 || "images" in e && (null == (l = e.images) ? true : l.some(e => null != e && 0 === e.width && 0 === e.height))) && k(B(e), t)
+  })).length || "video" in e && null != e.video && (null == (n = e.video) ? true : n.width) === 0 && (null == (r = e.video) ? true : r.height) === 0 || "thumbnail" in e && null != e.thumbnail && (null == (i = e.thumbnail) ? true : i.width) === 0 && (null == (o = e.thumbnail) ? true : o.height) === 0 || "image" in e && null != e.image && (null == (a = e.image) ? true : a.width) === 0 && (null == (s = e.image) ? true : s.height) === 0 || "images" in e && (null == (l = e.images) ? true : l.some(e => null != e && 0 === e.width && 0 === e.height))) && M(B(e), t)
 }
 
 function j(e, t) {
@@ -222,18 +222,18 @@ function j(e, t) {
   return 0 !== t.length && 0 !== t.filter(t => !P(t, {
     type: p.l.Attachment,
     media: e
-  })).length && k(null != (n = e.content_scan_version) ? n : e.contentScanVersion, t)
+  })).length && M(null != (n = e.content_scan_version) ? n : e.contentScanVersion, t)
 }
 
-function M(e, t) {
+function k(e, t) {
   var n;
   return 0 !== t.length && 0 !== t.filter(t => !P(t, {
     type: p.l.GenericMedia,
     media: e
-  })).length && k(null == (n = e.contentScanMetadata) ? true : n.version, t)
+  })).length && M(null == (n = e.contentScanMetadata) ? true : n.version, t)
 }
 
-function k(e, t) {
+function M(e, t) {
   let n = h.Z.validContentScanVersion;
   return e !== g && (t.includes(m._.GORE) ? null == e || e < n : null == e)
 }

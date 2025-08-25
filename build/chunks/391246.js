@@ -34,9 +34,9 @@ var Chunk127849 = require("./127849.js"),
   x = Chunk199838.getterFor(N),
   L = Chunk199838.getterFor(R),
   j = Chunk199838.set,
-  M = Chunk127849[N],
-  k = M,
-  U = k && k[P],
+  k = Chunk127849[N],
+  M = k,
+  U = M && M[P],
   G = Chunk127849[R],
   B = G && G[P],
   Z = Object.prototype,
@@ -91,17 +91,17 @@ var Chunk127849 = require("./127849.js"),
     for (var u = a.bytes, d = s + a.byteOffset, f = 0; f < t; f++) u[d + f] = l[c ? f : t - f - 1]
   };
 if (Chunk848120) {
-  var er = A && M.name !== N;
+  var er = A && k.name !== N;
   !Chunk621523(function() {
-    M(1)
+    k(1)
   }) || !Chunk621523(function() {
-    new M(false)
+    new k(false)
   }) || Chunk621523(function() {
-    return new M, new M(1.5), new M(NaN), 1 !== M.length || er && !C
-  }) ? ((k = function(e) {
-    return f(this, U), v(new M(h(e)), this, k)
-  })[P] = U, U.constructor = k, Chunk190289(k, M)) : er && C && Chunk436207(M, "name", N), Chunk769827 && Chunk961050(B) !== Z && Chunk769827(B, Z);
-  var ei = new G(new k(2)),
+    return new k, new k(1.5), new k(NaN), 1 !== k.length || er && !C
+  }) ? ((M = function(e) {
+    return f(this, U), v(new k(h(e)), this, M)
+  })[P] = U, U.constructor = M, Chunk190289(M, k)) : er && C && Chunk436207(k, "name", N), Chunk769827 && Chunk961050(B) !== Z && Chunk769827(B, Z);
+  var ei = new G(new M(2)),
     eo = Chunk46015(B.setInt8);
   ei.setInt8(0, 0x80000000), ei.setInt8(1, 0x80000001), (ei.getInt8(0) || !ei.getInt8(1)) && Chunk477732(B, {
     setInt8: function(e, t) {
@@ -113,7 +113,7 @@ if (Chunk848120) {
   }, {
     unsafe: true
   })
-} else U = (k = function(e) {
+} else U = (M = function(e) {
   f(this, U);
   var t = h(e);
   j(this, {
@@ -135,7 +135,7 @@ if (Chunk848120) {
     byteOffset: a,
     bytes: r.bytes
   }), o || (this.buffer = e, this.byteLength = n, this.byteOffset = a)
-})[P], Chunk507604 && (ee(k, "byteLength", x), ee(G, "buffer", L), ee(G, "byteLength", L), ee(G, "byteOffset", L)), Chunk477732(B, {
+})[P], Chunk507604 && (ee(M, "byteLength", x), ee(G, "buffer", L), ee(G, "byteLength", L), ee(G, "byteOffset", L)), Chunk477732(B, {
   getInt8: function(e) {
     return et(this, 1, e)[0] << 24 >> 24
   },
@@ -187,7 +187,7 @@ if (Chunk848120) {
     en(this, 8, e, $, t, arguments.length > 2 && arguments[2])
   }
 });
-Chunk25124(k, N), Chunk25124(G, R), module.exports = {
-  ArrayBuffer: k,
+Chunk25124(M, N), Chunk25124(G, R), module.exports = {
+  ArrayBuffer: M,
   DataView: G
 }

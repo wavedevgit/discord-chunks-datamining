@@ -77,7 +77,7 @@ function G(e) {
     Q = null == X ? true : X.details,
     J = i.useMemo(() => {
       let e = new T.ZP(I);
-      return null == e.embeddedActivityConfig && (e.embeddedActivityConfig = M.wT), e
+      return null == e.embeddedActivityConfig && (e.embeddedActivityConfig = k.wT), e
     }, [I]),
     $ = (0, h.s5)({
       userId: H,
@@ -114,7 +114,7 @@ function G(e) {
         analyticsLocations: G,
         componentId: en
       })
-    }, eo = et.disabled ? k.intl.string(k.t.JBnc7O) : k.intl.string(k.t.cX9uLS), ea = (0, v.G)(J, () => {
+    }, eo = et.disabled ? M.intl.string(M.t.JBnc7O) : M.intl.string(M.t.cX9uLS), ea = (0, v.G)(J, () => {
       R.default.track(j.rMx.ACTIVITY_INSTANCE_EMBED_CLICKED, {
         application_id: I.id,
         channel_id: w,
@@ -131,14 +131,14 @@ function G(e) {
     ec = null != (l = null == X || null == (n = X.timestamps) ? true : n.start) ? l : null == X ? true : X.created_at,
     eu = (0, y.r)(X),
     ed = [{
-      label: ee ? k.intl.string(k.t.RscU7O) : k.intl.string(k.t.VJlc0d),
+      label: ee ? M.intl.string(M.t.RscU7O) : M.intl.string(M.t.VJlc0d),
       trackingArea: O.j_.PLAY,
       onClick: ei,
       disabledReason: d,
       submitting: er
     }];
   return (0, r.jsx)(b.W, {
-    header: k.intl.string(k.t.pkq6Vl),
+    header: M.intl.string(M.t.pkq6Vl),
     title: I.name,
     iconSrc: es,
     info: (0, r.jsx)("div", {

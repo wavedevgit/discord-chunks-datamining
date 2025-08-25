@@ -8,12 +8,12 @@ require.d(exports, {
   M8: () => b,
   RZ: () => P,
   X6: () => j,
-  kQ: () => k,
+  kQ: () => M,
   n$: () => R,
   np: () => v,
   ou: () => F,
   qH: () => C,
-  tk: () => M,
+  tk: () => k,
   vH: () => L,
   vI: () => E,
   y8: () => N
@@ -228,7 +228,7 @@ async function j() {
     console.error("Failed to save sample widgets:", module)
   }
 }
-async function M() {
+async function k() {
   try {
     await Chunk592183.Z.savePendingWidgets([])
   } catch (e) {
@@ -236,7 +236,7 @@ async function M() {
   }
 }
 
-function k(e) {
+function M(e) {
   let t = r.k[e.type];
   return e.games.length >= t
 }

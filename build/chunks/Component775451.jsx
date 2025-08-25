@@ -59,7 +59,7 @@ let g = {
         C && x()
       }, [C, x]),
       j = (0, s.Z)(null, L),
-      M = i.useMemo(() => (0, r.jsx)(f.L, {
+      k = i.useMemo(() => (0, r.jsx)(f.L, {
         analyticsPage: b,
         ctaText: n,
         ctaOnClick: () => {
@@ -88,7 +88,7 @@ let g = {
           [m.visible]: !R
         }),
         ref: j,
-        children: M
+        children: k
       })]
     })
   };

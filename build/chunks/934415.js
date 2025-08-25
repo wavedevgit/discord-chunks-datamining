@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   EO: () => G,
-  LY: () => M,
+  LY: () => k,
   Nj: () => Chunk90463.Z,
   a5: () => L,
   c4: () => x,
@@ -14,7 +14,7 @@ require.d(exports, {
   rX: () => N,
   rY: () => P,
   rt: () => R,
-  wR: () => k,
+  wR: () => M,
   wl: () => j
 }), require("./415506.js"), require("./539854.js"), require("./388685.js");
 var Chunk149765 = require("./149765.js"),
@@ -181,7 +181,7 @@ function j(e) {
   else if (c.sR.has(e.type)) return "text"
 }
 
-function M(e) {
+function k(e) {
   let t, n = u.Z.getChannel(_.Z.getLastSelectedChannelId());
   if (null != n && n.getGuildId() === e && n.type === g.d4z.GUILD_TEXT) t = n.id;
   else {
@@ -191,19 +191,19 @@ function M(e) {
   return g.Z5c.CHANNEL(e, t)
 }
 
-function k(e, t, n, r) {
+function M(e, t, n, r) {
   let i = null == r ? "" : "?summaryId=".concat(r);
   return "".concat(location.protocol, "//").concat(location.host).concat(g.Z5c.CHANNEL(e, t, n)).concat(i)
 }
 
 function U(e, t, n, r) {
-  return null == e || null == t || null == n ? k(e, t, r) : "".concat(location.protocol, "//").concat(location.host).concat(g.Z5c.CHANNEL_THREAD_VIEW(e, t, n, r))
+  return null == e || null == t || null == n ? M(e, t, r) : "".concat(location.protocol, "//").concat(location.host).concat(g.Z5c.CHANNEL_THREAD_VIEW(e, t, n, r))
 }
 
 function G(e, t, n, r) {
   let i, o = e.getGuildId(),
     a = (0, s.BC)(o, t);
-  return null != t && a ? U(o, t.id, e.id, m.default.castChannelIdAsMessageId(e.id)) : null != r ? r : k(o, e.id, n)
+  return null != t && a ? U(o, t.id, e.id, m.default.castChannelIdAsMessageId(e.id)) : null != r ? r : M(o, e.id, n)
 }
 
 function B(e) {

@@ -73,7 +73,7 @@ function eu(e) {
     isDiscountApplied: n,
     activeDiscountInfo: i,
     theme: o
-  } = e, a = t.hasActiveTrial, s = t.planIdFromItems === J.Xh.PREMIUM_YEAR_TIER_2, c = n || a, u = null != t.trialEndsAt ? l()(t.trialEndsAt).diff(l()(), "d") : 0, f = J.GP[t.planIdFromItems], p = M.ZP.formatPriceString(M.ZP.getDefaultPrice(f.id), f.interval), {
+  } = e, a = t.hasActiveTrial, s = t.planIdFromItems === J.Xh.PREMIUM_YEAR_TIER_2, c = n || a, u = null != t.trialEndsAt ? l()(t.trialEndsAt).diff(l()(), "d") : 0, f = J.GP[t.planIdFromItems], p = k.ZP.formatPriceString(k.ZP.getDefaultPrice(f.id), f.interval), {
     enabled: h
   } = G.T.getCurrentConfig({
     location: "SubscriptionUserHeroSubheader"
@@ -244,12 +244,14 @@ function ef(e) {
   let {
     className: i,
     config: o
-  } = e, s = (0, c.e7)([O.Z], () => O.Z.useReducedMotion) ? o.getStaticImageUrl() : o.getAnimatedImageUrl(), l = (0, Z.Tl)(null != (t = o.gradientConfig) ? t : true), u = {
+  } = e, s = (0, c.e7)([O.Z], () => O.Z.useReducedMotion) ? o.getStaticImageUrl() : o.getAnimatedImageUrl(), l = null != o.getBackgroundImageUrl ? o.getBackgroundImageUrl() : true, u = (0, Z.Tl)(null != (t = o.gradientConfig) ? t : true), d = {
     color: null != (n = o.textColor) ? n : "var(--always-white)"
   };
   return (0, r.jsxs)("div", {
     className: a()(et.giftCardPromotion, i),
-    style: l,
+    style: null != l ? {
+      backgroundImage: "url(".concat(l, ")")
+    } : u,
     children: [(0, r.jsx)(N.Z, {
       className: et.videoAsset,
       src: s,
@@ -259,29 +261,25 @@ function ef(e) {
       playsInline: true
     }), (0, r.jsxs)("div", {
       className: et.giftInfoPromotion,
-      children: [null != o.getBackgroundImageUrl && (0, r.jsx)("img", {
-        alt: "",
-        "aria-hidden": true,
-        className: et.giftCardPromotionBannerImage,
-        src: o.getBackgroundImageUrl()
-      }), (0, r.jsx)(_.X6q, {
+      children: [(0, r.jsx)(_.X6q, {
         className: et.giftInfoTitlePromotion,
-        style: u,
+        style: d,
         variant: "text-lg/bold",
         children: o.title()
       }), (0, r.jsx)(_.Text, {
         className: et.giftText,
-        style: u,
+        style: d,
         variant: "text-sm/medium",
         children: o.body()
       }), null != o.additionalTerm && (0, r.jsx)(_.Text, {
         className: et.giftAdditionalTerm,
-        style: u,
+        style: d,
         variant: "text-xxs/normal",
         children: o.additionalTerm()
       }), (0, r.jsx)(Y.Z, {
         variant: "secondary",
         size: "md",
+        fullWidth: true,
         onClick: () => {
           L.default.track($.rMx.PREMIUM_SETTINGS_INTERACTED, {
             cta_type: el,

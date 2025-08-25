@@ -48,8 +48,8 @@ module.exports = function(e, t, n, a, p, m, A) {
     x = e.prototype,
     L = x[O] || x["@@iterator"] || p && x[p],
     j = !y && L || P(p),
-    M = "Array" === t && x.entries || L;
-  if (M && (C = c(M.call(new e))) !== Object.prototype && C.next && (!o && c(C) !== b && (u ? u(C, b) : s(C[O]) || _(C, O, S)), d(C, w, true, true), o && (h[w] = S)), g && p === I && L && L.name !== I && (!o && E ? f(x, "name", I) : (D = true, j = function() {
+    k = "Array" === t && x.entries || L;
+  if (k && (C = c(k.call(new e))) !== Object.prototype && C.next && (!o && c(C) !== b && (u ? u(C, b) : s(C[O]) || _(C, O, S)), d(C, w, true, true), o && (h[w] = S)), g && p === I && L && L.name !== I && (!o && E ? f(x, "name", I) : (D = true, j = function() {
       return i(L, this)
     })), p)
     if (N = {

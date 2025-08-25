@@ -229,7 +229,7 @@ function j(e, t, n) {
   return (n ? n.A : O()).p.push(r), r
 }
 
-function M(e) {
+function k(e) {
   return i(e) || r(22, e),
     function e(t) {
       if (!o(t)) return t;
@@ -237,15 +237,15 @@ function M(e) {
         i = s(t);
       if (r) {
         if (!r.P && (r.i < 4 || !b("ES5").K(r))) return r.t;
-        r.I = true, n = k(t, i), r.I = false
-      } else n = k(t, i);
+        r.I = true, n = M(t, i), r.I = false
+      } else n = M(t, i);
       return a(n, function(t, i) {
         r && c(r.t, t) === i || u(n, t, e(i))
       }), 3 === i ? new Set(n) : n
     }(e)
 }
 
-function k(e, t) {
+function M(e, t) {
   switch (t) {
     case 2:
       return new Map(e);
@@ -400,7 +400,7 @@ var ee = new(function() {
     }
     var t = module.prototype;
     return exports.createDraft = function(e) {
-      o(e) || r(8), i(e) && (e = M(e));
+      o(e) || r(8), i(e) && (e = k(e));
       var t = S(this),
         n = j(this, e, true);
       return n[W].C = true, T(t), n

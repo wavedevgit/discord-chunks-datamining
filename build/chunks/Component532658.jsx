@@ -60,7 +60,7 @@ function j(e) {
   return e
 }
 
-function M(e, t) {
+function k(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -71,8 +71,8 @@ function M(e, t) {
   return n
 }
 
-function k(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
+function M(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -173,11 +173,11 @@ let K = Chunk647438.memo(function(e) {
       width: b
     } = (0, p.ZP)(), y = (0, l.e7)([g.Z], () => g.Z.useReducedMotion), O = _ ? "entering" : "exiting", {
       width: v
-    } = (0, s.useSpring)(k(j({}, H[O]), {
+    } = (0, s.useSpring)(M(j({}, H[O]), {
       width: f ? b : u
     })), {
       opacity: I
-    } = (0, s.useSpring)(k(j({}, Y[O]), {
+    } = (0, s.useSpring)(M(j({}, Y[O]), {
       opacity: +!!f,
       onRest: () => {
         f || m(true)
@@ -266,15 +266,15 @@ let K = Chunk647438.memo(function(e) {
       voiceState: D,
       showStreamPreview: L,
       onShowStreamPreview: j,
-      onWatchStream: M,
-      connectedOn: k,
+      onWatchStream: k,
+      connectedOn: M,
       ref: B
     } = e, Z = (0, l.e7)([T.default], () => T.default.getId() === s.id, [s.id]), {
       ref: F,
       width: V
     } = (0, p.ZP)(), {
       showConnectedAnimation: H
-    } = W(k, R), Y = null == D ? true : D.sessionId, X = t.id, Q = s.id, [J] = (0, l.e7)([C.Z], () => {
+    } = W(M, R), Y = null == D ? true : D.sessionId, X = t.id, Q = s.id, [J] = (0, l.e7)([C.Z], () => {
       var e;
       return [null != (e = C.Z.getVoiceStateForChannel(X, Q)) ? e : C.Z.getVoiceStateForSession(Q, Y), C.Z.getVoiceStateVersion()]
     }, [X, Q, Y], N.Q), $ = R ? D : null != J ? J : D, [ee, et, en] = (0, l.Wu)([A.Z], () => Z ? [!A.Z.isSupported() || A.Z.isSelfMute() || A.Z.isSelfMutedTemporarily(), A.Z.isSelfDeaf(), false] : [!A.Z.isSupported() || A.Z.isLocalMute(s.id), false, A.Z.isLocalVideoDisabled(s.id)], [Z, s.id]), er = (0, l.e7)([I.Z], () => {
@@ -292,13 +292,13 @@ let K = Chunk647438.memo(function(e) {
         null != ea && ((0, _.rn)(ea, {
           forceMultiple: true,
           noFocus: true
-        }), el(), M(null != ea ? ea : null))
+        }), el(), k(null != ea ? ea : null))
       },
-      onAction: () => M,
+      onAction: () => k,
       previewIsOpen: L,
       location: w.Sbl.UNLOCKED_OVERLAY,
       hideTip: true
-    }), [s, t, ea, L, el, M]), eu = i.useCallback(e => {
+    }), [s, t, ea, L, el, k]), eu = i.useCallback(e => {
       o || null == E || E(e, s)
     }, [o, E, s]), ed = i.useCallback(() => {
       o || null != es && j(s.id)
@@ -361,7 +361,7 @@ let K = Chunk647438.memo(function(e) {
         })
       }), !Z && (0, r.jsx)(K, {
         nick: u,
-        connectedOn: k,
+        connectedOn: M,
         isSettingsPreview: R,
         voiceBackgroundWidth: V,
         rightAlign: true
@@ -395,7 +395,7 @@ let K = Chunk647438.memo(function(e) {
         "aria-hidden": true
       }), !Z && (0, r.jsx)(K, {
         nick: u,
-        connectedOn: k,
+        connectedOn: M,
         isSettingsPreview: R,
         voiceBackgroundWidth: V
       }), ef && (d === w.wC$.NEVER || !eo && d === w.wC$.ONLY_WHILE_SPEAKING) ? null : (0, r.jsx)(c.yRy, {
@@ -486,7 +486,7 @@ let K = Chunk647438.memo(function(e) {
             type: P.Qu.VOICE,
             value: P.bk.SETTINGS_OPENED,
             userId: t.id
-          }), n => (0, r.jsx)(e, k(j({}, n), {
+          }), n => (0, r.jsx)(e, M(j({}, n), {
             user: t,
             channelId: null == o ? true : o.id,
             guildId: null == o ? true : o.guild_id,
@@ -520,7 +520,7 @@ let K = Chunk647438.memo(function(e) {
         })
       }, [o, t]);
     if (null == b || null == o || null == v) return null;
-    let M = c || h;
+    let k = c || h;
     return (0, r.jsx)(O.Z, {
       targetElementRef: E,
       user: b,
@@ -543,7 +543,7 @@ let K = Chunk647438.memo(function(e) {
           displayNameMode: s,
           displayUserMode: l,
           size: p,
-          locked: M,
+          locked: k,
           onContextMenu: x,
           onClick: x,
           context: g,

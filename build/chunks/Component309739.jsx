@@ -68,17 +68,17 @@ function j(e, t) {
   return n
 }
 
-function M(e, t) {
+function k(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function k(e) {
+function M(e) {
   let t = () => {
     C.SE.updateSetting(e ? v.Z.getGuildIds() : [])
   };
-  (0, _.h7j)(e => (0, r.jsx)(_.ConfirmModal, M(L({
+  (0, _.h7j)(e => (0, r.jsx)(_.ConfirmModal, k(L({
     header: P.intl.string(P.t["uUr+GR"]),
     confirmText: P.intl.string(P.t.gm1Ven),
     cancelText: P.intl.string(P.t.p89ACg),
@@ -98,10 +98,10 @@ function U() {
     n = (0, Chunk362352.Yd)("activity privacy tab"),
     i = Chunk358085.isPlatformEmbedded ? Chunk388032.intl.string(Chunk388032.t.MznbeH) : Chunk388032.intl.string(Chunk388032.t.oKqC4u),
     o = e => {
-      C.no.updateSetting(e ? u.GI.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS : u.GI.ACTIVITY_STATUS_OFF), k(e)
+      C.no.updateSetting(e ? u.GI.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS : u.GI.ACTIVITY_STATUS_OFF), M(e)
     },
     s = e => {
-      C.no.updateSetting(e), k(e !== u.GI.ACTIVITY_STATUS_OFF)
+      C.no.updateSetting(e), M(e !== u.GI.ACTIVITY_STATUS_OFF)
     },
     l = [{
       value: Chunk524437.GI.ACTIVITY_STATUS_ON,

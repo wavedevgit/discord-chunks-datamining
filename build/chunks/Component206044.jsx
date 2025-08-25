@@ -79,21 +79,21 @@ let w = (0, Chunk202841.animated)(Chunk481060.CJ0),
       isAnimating: x,
       isExpanded: L,
       contentPosition: j,
-      toggleExpanded: M,
-      sourceQuestContent: k
+      toggleExpanded: k,
+      sourceQuestContent: M
     } = e, {
       ref: U,
       height: G
     } = (0, u.ZP)(), [B, Z] = i.useState(null), [F, V] = i.useState(null), H = (0, f.Z)(e => {
       let t = e.target;
       Z(t.offsetWidth), V(t.scrollWidth)
-    }), Y = (0, d.y)(H), W = (0, v.uq)(C), K = C === h.jn.QUESTS_EMBED, z = (0, p.t5)(o, I.dr.QUESTS_CARD, C, k), q = (null == (t = o.userStatus) ? true : t.completedAt) != null, X = (0, _.O5)(), Q = (0, p.B6)(o.config.expiresAt), J = (0, p.B6)(m.r.build(o.config).rewardsExpireAt), $ = i.useMemo(() => null != o.config.cosponsorMetadata, [o]), ee = e => {
-      e.stopPropagation(), e.currentTarget.blur(), M(), X({
+    }), Y = (0, d.y)(H), W = (0, v.uq)(C), K = C === h.jn.QUESTS_EMBED, z = (0, p.t5)(o, I.dr.QUESTS_CARD, C, M), q = (null == (t = o.userStatus) ? true : t.completedAt) != null, X = (0, _.O5)(), Q = (0, p.B6)(o.config.expiresAt), J = (0, p.B6)(m.r.build(o.config).rewardsExpireAt), $ = i.useMemo(() => null != o.config.cosponsorMetadata, [o]), ee = e => {
+      e.stopPropagation(), e.currentTarget.blur(), k(), X({
         questId: o.id,
         questContent: C,
         questContentCTA: L ? _.jZ.COLLAPSE : _.jZ.EXPAND,
         questContentPosition: j,
-        sourceQuestContent: k
+        sourceQuestContent: M
       })
     }, et = () => null != B && null != F && B < F, en = (0, r.jsx)(g.ZP, {
       className: A.partnerBranding,
@@ -155,7 +155,7 @@ let w = (0, Chunk202841.animated)(Chunk481060.CJ0),
                   questContent: C,
                   className: A.headerCollapsedRewardTile,
                   location: I.dr.QUESTS_CARD,
-                  sourceQuestContent: k
+                  sourceQuestContent: M
                 })
               }), (0, r.jsxs)("div", {
                 className: A.headerCollapsedContentCopyWrapper,
@@ -237,7 +237,7 @@ let w = (0, Chunk202841.animated)(Chunk481060.CJ0),
             shouldShowDisclosure: true,
             hideLearnMore: W,
             showShareLink: !n && K,
-            sourceQuestContent: k,
+            sourceQuestContent: M,
             children: e => (0, r.jsx)(s.animated.div, {
               style: {
                 opacity: D,

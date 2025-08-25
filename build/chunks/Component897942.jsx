@@ -15,19 +15,20 @@ var Chunk442837 = require("./442837.js"),
   Chunk967282 = require("./967282.js"),
   Chunk328756 = require("./328756.js"),
   Chunk131812 = require("./131812.js");
-let _ = 1.2,
+let _ = 1.3,
   p = .321;
 
 function h(e) {
   let {
     maxRewardImageSrc: t,
     claimableRewards: n,
-    size: h
-  } = e, m = (0, i.e7)([c.default], () => c.default.getCurrentUser()), g = (0, i.e7)([a.Z], () => a.Z.useReducedMotion), E = (0, o.pxk)(h), b = {
-    height: E * _
+    size: h,
+    imageScaling: m = _
+  } = e, g = (0, i.e7)([c.default], () => c.default.getCurrentUser()), E = (0, i.e7)([a.Z], () => a.Z.useReducedMotion), b = (0, o.pxk)(h), y = {
+    height: b * m
   };
   return n.length > 2 ? (0, r.jsx)(l.Z, {
-    style: b,
+    style: y,
     src: t,
     autoPlay: true,
     loop: true,
@@ -36,20 +37,20 @@ function h(e) {
   }) : (0, r.jsxs)("div", {
     className: u.container,
     children: [(1 === n.length || 2 === n.length) && (0, r.jsx)(o.Xo$, {
-      "aria-label": null == m ? true : m.username,
+      "aria-label": null == g ? true : g.username,
       size: h,
       className: u.firstPromotionalAvatar,
-      src: 1 === n.length ? null == m ? true : m.getAvatarURL(true, (0, o.pxk)(h), !g) : f,
-      avatarDecoration: (0, s.Z)(n[0].assetId, h, !g)
+      src: 1 === n.length ? null == g ? true : g.getAvatarURL(true, (0, o.pxk)(h), !E) : f,
+      avatarDecoration: (0, s.Z)(n[0].assetId, h, !E)
     }), 2 === n.length && (0, r.jsx)("div", {
       style: {
-        marginRight: -Math.round(E * p)
+        marginRight: -Math.round(b * p)
       },
       children: (0, r.jsx)(o.Xo$, {
-        "aria-label": null == m ? true : m.username,
+        "aria-label": null == g ? true : g.username,
         size: h,
         src: d,
-        avatarDecoration: (0, s.Z)(n[1].assetId, h, !g)
+        avatarDecoration: (0, s.Z)(n[1].assetId, h, !E)
       })
     })]
   })

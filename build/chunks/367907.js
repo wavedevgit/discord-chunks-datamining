@@ -6,7 +6,7 @@ require.d(exports, {
   AB: () => B,
   JS: () => U,
   ZP: () => W,
-  hH: () => M,
+  hH: () => k,
   kO: () => H,
   oG: () => Y,
   v_: () => G,
@@ -71,7 +71,7 @@ function j(e) {
   return t
 }
 
-function M(e) {
+function k(e) {
   var t;
   if (null == e) return null;
   let n = m.Z.getGuild(e);
@@ -98,7 +98,7 @@ function M(e) {
   }
 }
 
-function k(e, t) {
+function M(e, t) {
   return {
     channel_static_route: t,
     channel_hidden: false
@@ -160,7 +160,7 @@ function F(e) {
     i = "guild_id" in t ? t.guild_id : r ? I.Z.getGuildId() : null,
     o = "channel_id" in t ? t.channel_id : r ? v.Z.getChannelId(i) : null,
     a = d.Z.getChannel(o),
-    s = L({}, t, M(Z(a, i)), null != i && null != o && (0, D.AB)(o) ? k(i, o) : G(a));
+    s = L({}, t, k(Z(a, i)), null != i && null != o && (0, D.AB)(o) ? M(i, o) : G(a));
   C.default.track(e, s, {
     flush: n
   })

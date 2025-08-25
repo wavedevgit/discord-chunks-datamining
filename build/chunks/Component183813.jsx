@@ -34,7 +34,7 @@ function L(e) {
     selectedGiftingPromotionReward: y,
     claimableRewards: S,
     claimableVariants: E
-  } = (0, u.wD)(), O = (0, a.e7)([c.default], () => c.default.getCurrentUser()), [P, v] = i.useState(null), w = Math.floor(2 * Math.random()), [M, I] = i.useState(w);
+  } = (0, u.wD)(), O = (0, a.e7)([c.default], () => c.default.getCurrentUser()), [P, v] = i.useState(null), w = Math.floor(2 * Math.random()), [I, M] = i.useState(w);
   i.useEffect(() => {
     null != S && S.length > 0 && null == y && b(S[0])
   }, [S, y, b]), s()(null != l, "Expected plan to selected"), s()(null != L, "Expected selectedSkuId"), s()(null != g, "Step should be set");
@@ -57,7 +57,7 @@ function L(e) {
           })
         }
         return e
-      }({}, e.variants[M]), n = n = {
+      }({}, e.variants[I]), n = n = {
         name: e.name
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);
@@ -69,17 +69,17 @@ function L(e) {
       })(Object(n)).forEach(function(e) {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
       }), t)
-    }), [E, S, M]),
-    A = e => {
+    }), [E, S, I]),
+    k = e => {
       b(Z.find(t => t.skuId === e)), v(e)
     },
-    k = Z.map(e => (0, r.jsx)(C.c, {
+    A = Z.map(e => (0, r.jsx)(C.c, {
       skuId: e.skuId,
       assetId: e.assetId,
       productName: e.name,
       a11yLabel: e.a11yLabel,
       user: O,
-      onSelect: A,
+      onSelect: k,
       selectedSkuId: null != P ? P : true
     }, e.skuId)),
     T = (0, r.jsx)(_.O3, {
@@ -131,19 +131,19 @@ function L(e) {
           name: "Treat",
           value: 1
         }],
-        value: M,
+        value: I,
         look: "pill",
         onChange: e => {
           let {
             value: t
           } = e;
-          I(t)
+          M(t)
         }
       })]
     }), (0, r.jsx)(o.hzk, {
       children: (0, r.jsx)("div", {
         className: m.cardsGrid,
-        children: k
+        children: A
       })
     }), T]
   })

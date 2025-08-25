@@ -171,11 +171,11 @@ function j(e) {
   O.displayNameStylesEnabled = e.enabled
 }
 
-function M() {
+function k() {
   (O = p({}, O)).submitButtonEnabled = !O.submitButtonEnabled
 }
 
-function k() {
+function M() {
   (O = p({}, O)).syncProfileThemeWithUserTheme = !O.syncProfileThemeWithUserTheme
 }
 
@@ -469,8 +469,8 @@ let Q = new X(Chunk570140.Z, {
   ACCESSIBILITY_FORCED_COLORS_MODAL_SEEN: Y,
   KEYBOARD_NAVIGATION_EXPLAINER_MODAL_SEEN: W,
   ACCESSIBILITY_SET_MESSAGE_GROUP_SPACING: K,
-  ACCESSIBILITY_SUBMIT_BUTTON_TOGGLE: M,
-  ACCESSIBILITY_SYNC_PROFILE_THEME_WITH_USER_THEME_TOGGLE: k,
+  ACCESSIBILITY_SUBMIT_BUTTON_TOGGLE: k,
+  ACCESSIBILITY_SYNC_PROFILE_THEME_WITH_USER_THEME_TOGGLE: M,
   ACCESSIBILITY_SET_CONTRAST: z,
   ACCESSIBILITY_SET_CONTRAST_MODE: q
 })

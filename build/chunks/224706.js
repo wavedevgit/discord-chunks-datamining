@@ -37,9 +37,9 @@ var Chunk664751 = require("./664751.js"),
   Chunk388032 = require("./388032.jsx");
 let L = 3,
   j = 20,
-  M = new Chunk710845.Z("GamesActionCreators");
+  k = new Chunk710845.Z("GamesActionCreators");
 
-function k(e) {
+function M(e) {
   let {
     applicationId: t,
     secret: n,
@@ -216,7 +216,7 @@ let Z = {
   },
   identifyGame: (e, t) => (0, d.Z)().then(t => new Promise((n, r) => {
     if (null == t) return void r(Error("Game utils module not loaded"));
-    t.identifyGame(e, (t, i) => (M.log("Identified game: ", {
+    t.identifyGame(e, (t, i) => (k.log("Identified game: ", {
       status: t,
       name: i.name,
       iconHash: i.iconHash,
@@ -326,7 +326,7 @@ let Z = {
       sku: o,
       executableName: s
     } = e, c = (0, d.F)(s);
-    M.log("Reporting unverified game: ", {
+    k.log("Reporting unverified game: ", {
       name: t,
       executableName: s,
       iconHash: n,
@@ -413,7 +413,7 @@ let Z = {
     });
     try {
       let e = await N.Z.getJoinSecret(t, n, r, i, o);
-      return null == f && k({
+      return null == f && M({
         applicationId: r,
         secret: e,
         channelId: i,
@@ -430,5 +430,5 @@ let Z = {
       }), false
     }
   },
-  joinWithSecret: k
+  joinWithSecret: M
 }

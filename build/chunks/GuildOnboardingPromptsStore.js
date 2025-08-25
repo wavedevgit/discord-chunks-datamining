@@ -192,8 +192,8 @@ function L(e) {
   null != r && (r.mode = n)
 }
 let j = [],
-  M = [],
-  k = [];
+  k = [],
+  M = [];
 class U extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk592125.Z, Chunk819553.ZP, Chunk160404.Z)
@@ -208,7 +208,7 @@ class U extends(r = Chunk442837.ZP.Store) {
   }
   getOnboardingResponses(e) {
     var t, n, r;
-    return l.Z.isFullServerPreview(e) ? Array.from(null != (n = l.Z.getOnboardingResponses(e)) ? n : M) : null != (r = null == (t = b[e]) ? true : t.responses) ? r : M
+    return l.Z.isFullServerPreview(e) ? Array.from(null != (n = l.Z.getOnboardingResponses(e)) ? n : k) : null != (r = null == (t = b[e]) ? true : t.responses) ? r : k
   }
   getSelectedOptions(e) {
     let t = this.getOnboardingResponses(e);
@@ -216,9 +216,9 @@ class U extends(r = Chunk442837.ZP.Store) {
   }
   getOnboardingResponsesForPrompt(e, t) {
     let n = b[e];
-    if (null == n) return M;
+    if (null == n) return k;
     let r = n.prompts.find(e => e.id === t);
-    return null == r ? M : o().intersection(r.options.map(e => e.id), this.getOnboardingResponses(e))
+    return null == r ? k : o().intersection(r.options.map(e => e.id), this.getOnboardingResponses(e))
   }
   getEnabledOnboardingPrompts(e) {
     var t, n;
@@ -227,7 +227,7 @@ class U extends(r = Chunk442837.ZP.Store) {
   }
   getDefaultChannelIds(e) {
     var t, n;
-    return null != (n = null == (t = b[e]) ? true : t.defaultChannelIds) ? n : k
+    return null != (n = null == (t = b[e]) ? true : t.defaultChannelIds) ? n : M
   }
   getEnabled(e) {
     var t, n;

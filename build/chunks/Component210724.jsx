@@ -38,8 +38,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk743294 = require("./743294.js"),
   Chunk981631 = require("./981631.js"),
   Chunk89855 = require("./89855.js");
-let M = 75,
-  k = 70;
+let k = 75,
+  M = 70;
 
 function U(e) {
   let {
@@ -90,7 +90,7 @@ function G(e) {
     let {
       withDelay: t = false
     } = e;
-    t ? ee.current = window.setTimeout(e_, M) : e_()
+    t ? ee.current = window.setTimeout(e_, k) : e_()
   }, [e_, eo]), eE = i.useCallback(() => {
     eg()
   }, [eg]), eb = i.useCallback(() => {
@@ -230,7 +230,7 @@ function G(e) {
     questConfig: o.config
   });
   if (!G || !J && ec && !Q || X) return X ? E.log("Not rendered due to asset error") : G || E.log("Not rendered due to ineligibility"), null;
-  let eC = k + 78 * !!en;
+  let eC = M + 78 * !!en;
   return (0, r.jsx)(S.A, {
     questOrQuests: o,
     questContent: y.jn.QUEST_BAR_V2,

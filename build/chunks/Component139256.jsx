@@ -2,7 +2,7 @@
 /** chunk id: 139256, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $e: () => M,
+  $e: () => k,
   $w: () => Z,
   Og: () => V,
   ZY: () => F,
@@ -176,7 +176,7 @@ function j(e) {
   })
 }
 
-function M(e) {
+function k(e) {
   let {
     answers: t,
     answersInteraction: n,
@@ -214,7 +214,7 @@ function M(e) {
   }));
   return (0, r.jsx)(d, {
     className: l,
-    children: t.map((e, t) => (0, r.jsx)(k, {
+    children: t.map((e, t) => (0, r.jsx)(M, {
       className: c,
       answer: e,
       isFirstAnswer: 0 === t,
@@ -226,7 +226,7 @@ function M(e) {
   })
 }
 
-function k(e) {
+function M(e) {
   let {
     className: t,
     answer: n,

@@ -181,7 +181,7 @@ function e_(e) {
       t && ej(String(Date.now()))
     }
   });
-  let [eM, ek] = (0, E.US)(eD ? [s.z.CUSTOM_STATUS_PROMPTS_COACHMARK] : []), eU = eM === s.z.CUSTOM_STATUS_PROMPTS_COACHMARK, eG = i.useRef((0, q.Z)(e => e.shouldRenderTenureLevelUp)), eB = i.useMemo(() => (0, m.Z)(), []), [eZ, eF] = i.useState(true);
+  let [ek, eM] = (0, E.US)(eD ? [s.z.CUSTOM_STATUS_PROMPTS_COACHMARK] : []), eU = ek === s.z.CUSTOM_STATUS_PROMPTS_COACHMARK, eG = i.useRef((0, q.Z)(e => e.shouldRenderTenureLevelUp)), eB = i.useMemo(() => (0, m.Z)(), []), [eZ, eF] = i.useState(true);
   i.useEffect(() => {
     setTimeout(() => {
       eF(false)
@@ -225,7 +225,7 @@ function e_(e) {
               positionKey: eL,
               onTryFeature: n,
               targetElementRef: ex,
-              markAsDismissed: ek,
+              markAsDismissed: eM,
               children: () => (0, r.jsx)(U.Z, {
                 ref: ex,
                 user: t,
@@ -244,7 +244,7 @@ function e_(e) {
             style: {
               pointerEvents: eZ ? "none" : true
             },
-            children: [(0, r.jsx)(M.Z, {
+            children: [(0, r.jsx)(k.Z, {
               user: t,
               className: eo.username,
               nickname: K.ZP.getName(null, null, t),
@@ -260,7 +260,7 @@ function e_(e) {
               nicknameIcons: (0, r.jsxs)(r.Fragment, {
                 children: [(0, r.jsx)(x.Z, {
                   userId: t.id
-                }), (0, r.jsx)(k.Z, {
+                }), (0, r.jsx)(M.Z, {
                   user: t,
                   isHovering: eE
                 })]

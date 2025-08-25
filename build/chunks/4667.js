@@ -47,7 +47,7 @@ function P(e) {
 }
 
 function w(e, t) {
-  return /^\w+:\/\//.test(e) ? "undefined" != typeof fetch ? D(e, t) : x(e, t) : j(e) ? Promise.resolve((0, r.u0)(e)) : M(e, t)
+  return /^\w+:\/\//.test(e) ? "undefined" != typeof fetch ? D(e, t) : x(e, t) : j(e) ? Promise.resolve((0, r.u0)(e)) : k(e, t)
 }
 
 function D(e, {
@@ -85,11 +85,11 @@ function j(e) {
   return /^data:[^;,]*(;base64)?,/.test(e)
 }
 
-function M(e, {
+function k(e, {
   length: t
 } = {}) {
   return new Promise((n, r) => {
-    let i = k();
+    let i = M();
     i.open(e, (o, a) => {
       o ? r(o) : i.stat(e, (o, s) => {
         if (o) r(o);
@@ -111,7 +111,7 @@ function M(e, {
   })
 }
 
-function k() {
+function M() {
   try {
     return require("fs")
   } catch (e) {
@@ -172,8 +172,8 @@ function V(e, {
       iptcDataOffset: x,
       xmpChunks: L,
       iccChunks: j,
-      mpfDataOffset: M,
-      pngHeaderOffset: k,
+      mpfDataOffset: k,
+      pngHeaderOffset: M,
       pngTextChunks: U,
       pngChunkOffsets: G,
       vp8xChunkOffset: B,
@@ -242,14 +242,14 @@ function V(e, {
     let t = h.Z.read(e, j, n);
     t instanceof Promise ? N.push(t.then(ea)) : ea(t)
   }
-  if (o.Z.USE_MPF && $(M)) {
+  if (o.Z.USE_MPF && $(k)) {
     A = true;
-    let n = c.Z.read(e, M, i);
+    let n = c.Z.read(e, k, i);
     t ? C.mpf = n : C = (0, r.wB)({}, C, n)
   }
-  if (o.Z.USE_PNG && o.Z.USE_PNG_FILE && ee(k)) {
+  if (o.Z.USE_PNG && o.Z.USE_PNG_FILE && ee(M)) {
     A = true;
-    let n = E.Z.read(e, k);
+    let n = E.Z.read(e, M);
     t ? (C.png = C.png ? (0, r.wB)({}, C.png, n) : n, C.pngFile = n) : C = (0, r.wB)({}, C, n)
   }
   if (o.Z.USE_PNG && et(U)) {

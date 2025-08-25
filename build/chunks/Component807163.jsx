@@ -257,7 +257,7 @@ function ep(e) {
   let {
     premiumType: t
   } = e, n = 3, i = (0, d.e7)([b.Z], () => b.Z.useReducedMotion), o = (0, y.wC)(null).filter(e => e.type === O.B.GUILD && (e.animated || null != e.guildId)).slice(0, n), a = (0, d.Wu)([I.Z], () => I.Z.stickerFrecencyWithoutFetchingLatest.frequently.slice(0, n - o.length)), s = eu().emojiStickersVisual, l = t === B.p9.TIER_1, c = () => {
-    window.open(M.Z.getArticleURL(Z.BhN.PREMIUM_DETAILS)), L.default.track(Z.rMx.PREMIUM_UNCANCEL_WINBACK_CTA_CLICKED, {
+    window.open(k.Z.getArticleURL(Z.BhN.PREMIUM_DETAILS)), L.default.track(Z.rMx.PREMIUM_UNCANCEL_WINBACK_CTA_CLICKED, {
       action: "emojis_stickers"
     })
   };
@@ -376,7 +376,7 @@ function eg(e) {
   let {
     premiumType: t
   } = e, n = eu().uploadsMessagesItemVisual, i = () => {
-    window.open(M.Z.getArticleURL(Z.BhN.PREMIUM_DETAILS)), L.default.track(Z.rMx.PREMIUM_UNCANCEL_WINBACK_CTA_CLICKED, {
+    window.open(k.Z.getArticleURL(Z.BhN.PREMIUM_DETAILS)), L.default.track(Z.rMx.PREMIUM_UNCANCEL_WINBACK_CTA_CLICKED, {
       action: "msgs_uploads"
     })
   };

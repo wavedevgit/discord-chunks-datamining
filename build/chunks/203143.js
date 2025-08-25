@@ -74,9 +74,9 @@ function j(e, t) {
   }), e
 }
 
-function M(e, t) {
+function k(e, t) {
   if (null == e) return {};
-  var n, r, i = k(e, t);
+  var n, r, i = M(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -84,7 +84,7 @@ function M(e, t) {
   return i
 }
 
-function k(e, t) {
+function M(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -382,7 +382,7 @@ let q = {
       channelId: i,
       messageId: o,
       message: a
-    } = U(M(e, ["answerId"])), {
+    } = U(k(e, ["answerId"])), {
       tapShouldOpenVotersModal: s
     } = null != (n = (0, R.Tk)(a)) ? n : {};
     if (true === s) return void Z({

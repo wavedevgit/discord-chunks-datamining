@@ -79,8 +79,8 @@ function p(e) {
     itemNodeMargin: x,
     listPadding: L,
     gridNavigatorId: j,
-    gridNotice: M,
-    renderHeader: k,
+    gridNotice: k,
+    renderHeader: M,
     renderUpsell: U
   } = e, G = i.useRef(null), B = i.useRef(null), Z = i.useRef(null), F = 0 === t.length, V = (0, o.Iu)(e => e.searchQuery), H = f.useStore(e => e.inspectedExpressionPosition), Y = (0, a.ep)({
     gridWrapperRef: G,
@@ -144,13 +144,13 @@ function p(e) {
     }), null == C ? true : C()]
   });
   return (0, r.jsxs)(r.Fragment, {
-    children: [null != k ? k(es) : (0, r.jsxs)("div", {
+    children: [null != M ? M(es) : (0, r.jsxs)("div", {
       className: c.header,
       children: [" ", es, " "]
     }), F && null != b ? b(c.emptyState) : (0, r.jsxs)(r.Fragment, {
-      children: [A(B), null != M && (0, r.jsx)("div", {
+      children: [A(B), null != k && (0, r.jsx)("div", {
         className: c.gridNoticeWrapper,
-        children: M
+        children: k
       }), (0, r.jsx)("div", _(d({
         ref: G,
         className: c.listWrapper,

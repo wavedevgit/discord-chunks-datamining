@@ -220,15 +220,15 @@ function A(e) {
   i.useEffect(() => {
     null != L.current && (j ? L.current.pause() : L.current.play())
   }, [j]);
-  let M = null != (t = P.onContextMenu) ? t : v,
-    k = null == v && !N,
+  let k = null != (t = P.onContextMenu) ? t : v,
+    M = null == v && !N,
     U = null != v && !N,
     G = N && null != v,
     B = (0, r.jsx)(I, y(E({}, P), {
       grow: false,
-      onContextMenu: M,
-      iconClassName: a()(b, m.centerIcon, k && m.fullRegionIcon),
-      className: a()(x || R ? g : null, l && m.active, m.centerButton, S[w], k && m.fullRegionButton, G && m.attachedButton)
+      onContextMenu: k,
+      iconClassName: a()(b, m.centerIcon, M && m.fullRegionIcon),
+      className: a()(x || R ? g : null, l && m.active, m.centerButton, S[w], M && m.fullRegionButton, G && m.attachedButton)
     }));
   return x ? B : (0, r.jsxs)("div", {
     ref: n,

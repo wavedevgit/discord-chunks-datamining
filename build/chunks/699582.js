@@ -447,7 +447,7 @@ function j(e, t) {
   }
 }
 
-function M(e, t) {
+function k(e, t) {
   for (var n, r = 0, i = t.length; r < i && !n;) {
     var o = t[r],
       a = String(o).replace(S, ""),
@@ -465,14 +465,14 @@ function M(e, t) {
   return s
 }
 
-function k(e, t) {
-  return M(e, t)
+function M(e, t) {
+  return k(e, t)
 }
 
 function U(e, t, n, r, i) {
   if (0 === e.length) throw ReferenceError("No locale data has been provided for this object yet.");
-  if ("lookup" === n["[[localeMatcher]]"]) var o = M(e, t);
-  else var o = k(e, t);
+  if ("lookup" === n["[[localeMatcher]]"]) var o = k(e, t);
+  else var o = M(e, t);
   var a = o["[[locale]]"];
   if (c.call(o, "[[extension]]")) var s = o["[[extension]]"],
     l = o["[[extensionIndex]]"],

@@ -151,7 +151,7 @@ class m extends h {
     }))
   }
   mergeFromApplicationUpdate(e) {
-    var t, n, r, i, o, a, s, l, c, d, f, _, p, h, g, E, b, y, O, v, I, T, S, A, C, N, R, P, w, D, x, L, j, M, k, U, G, B, Z, F, V, H, Y;
+    var t, n, r, i, o, a, s, l, c, d, f, _, p, h, g, E, b, y, O, v, I, T, S, A, C, N, R, P, w, D, x, L, j, k, M, U, G, B, Z, F, V, H, Y;
     return new m({
       id: null != (t = e.id) ? t : this.id,
       name: null != (n = e.name) ? n : this.name,
@@ -186,8 +186,8 @@ class m extends h {
       roleConnectionsVerificationUrl: null != (x = e.roleConnectionsVerificationUrl) ? x : this.roleConnectionsVerificationUrl,
       integrationTypesConfig: null != (L = e.integrationTypesConfig) ? L : this.integrationTypesConfig,
       isMonetized: null != (j = e.isMonetized) ? j : this.isMonetized,
-      storefront_available: null != (M = e.storefront_available) ? M : this.storefront_available,
-      termsOfServiceUrl: null != (k = e.termsOfServiceUrl) ? k : this.termsOfServiceUrl,
+      storefront_available: null != (k = e.storefront_available) ? k : this.storefront_available,
+      termsOfServiceUrl: null != (M = e.termsOfServiceUrl) ? M : this.termsOfServiceUrl,
       privacyPolicyUrl: null != (U = e.privacyPolicyUrl) ? U : this.privacyPolicyUrl,
       isVerified: null != (G = e.isVerified) ? G : this.isVerified,
       customInstallUrl: null != (B = e.customInstallUrl) ? B : this.customInstallUrl,
