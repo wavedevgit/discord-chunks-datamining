@@ -1,1 +1,0 @@
-{"id":"311687","type":"store","data":{"name":"UserLeaderboardStore","functions":[{"name":"initialize","args":["e"]},{"name":"getState","args":[]},{"name":"getLastUpdateRequested","args":["e"]}],"events":["SET_USER_LEADERBOARD_LAST_UPDATE_REQUESTED"]},"fromModule":{"id":"web.js"}}

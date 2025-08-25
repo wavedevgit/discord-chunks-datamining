@@ -212,7 +212,7 @@ function z(e) {
                 shouldShowTooltip: null === ed.interactionType,
                 themeType: B.l.POPOUT,
                 user: n
-              }), !eb && (0, r.jsx)(M.Z, {
+              }), !eb && (0, r.jsx)(k.Z, {
                 type: "banner",
                 user: n,
                 guildId: Y,
@@ -242,7 +242,7 @@ function z(e) {
                 markAsDismissed: eO,
                 targetElementRef: e_,
                 onTryFeature: J,
-                children: () => (0, r.jsx)(k.Z, {
+                children: () => (0, r.jsx)(M.Z, {
                   ref: e_,
                   user: n,
                   guildId: Y,
@@ -251,7 +251,7 @@ function z(e) {
                   onCloseProfile: J,
                   prompt: eT
                 })
-              }) : (0, r.jsx)(k.Z, {
+              }) : (0, r.jsx)(M.Z, {
                 ref: ev ? e_ : true,
                 user: n,
                 guildId: Y,

@@ -5,7 +5,7 @@ require.d(exports, {
   Vq: () => D,
   Xo: () => F,
   qE: () => U,
-  qe: () => k
+  qe: () => M
 }), require("./415506.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -350,7 +350,7 @@ function j(e) {
   }))
 }
 
-function M(e) {
+function k(e) {
   let {
     children: t,
     size: n,
@@ -421,7 +421,7 @@ function M(e) {
     children: [t, w]
   })
 }
-let k = Chunk647438.forwardRef((e, t) => {
+let M = Chunk647438.forwardRef((e, t) => {
   let {
     src: n,
     isSpeaking: i,
@@ -460,7 +460,7 @@ function U(e) {
     imageClassName: A,
     ref: C
   } = e, N = n !== h.Skl.UNKNOWN ? n : null, R = (0, g.UC)(i), P = null != N ? Math.ceil((R.status * g.D6 - R.status) / 2) : 0, x = R.size + P, j = (0, d.vj)(N, a);
-  return (0, r.jsx)(M, I(O({}, e), {
+  return (0, r.jsx)(k, I(O({}, e), {
     ariaLabel: S,
     ariaHidden: T,
     status: N,
@@ -479,7 +479,7 @@ function U(e) {
         width: R.size,
         height: R.size,
         mask: "url(#".concat(w(N, i, s, l), ")"),
-        children: (0, r.jsx)(k, {
+        children: (0, r.jsx)(M, {
           ref: _,
           src: t,
           isSpeaking: m,
@@ -586,7 +586,7 @@ function Z(e) {
       scale: 1
     }] : []
   }, C() ? "animate-always" : "animate-never", [Z, v]);
-  return (0, r.jsx)(M, I(O({}, e), {
+  return (0, r.jsx)(k, I(O({}, e), {
     ariaLabel: x,
     ariaHidden: D,
     typingOffset: ea,
@@ -622,7 +622,7 @@ function Z(e) {
         width: et,
         height: et,
         mask: "url(#".concat(F, ")"),
-        children: (0, r.jsx)(k, {
+        children: (0, r.jsx)(M, {
           src: y,
           isSpeaking: m,
           className: U
@@ -667,7 +667,7 @@ function Z(e) {
 function V(e, t, n, r, i) {
   return null != n && null != t && (!!e || t !== n || t === h.Skl.ONLINE && r !== i)
 }
-k.displayName = "AvatarImg";
+M.displayName = "AvatarImg";
 let F = Chunk647438.memo(function(e) {
   var {
     statusColor: t,

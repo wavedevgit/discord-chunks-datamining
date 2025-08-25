@@ -8,7 +8,7 @@ require.d(exports, {
   M8: () => E,
   RZ: () => R,
   X6: () => L,
-  kQ: () => M,
+  kQ: () => k,
   n$: () => N,
   np: () => O,
   ou: () => Z,
@@ -233,23 +233,23 @@ async function j() {
   }
 }
 
-function M(e) {
+function k(e) {
   let t = r.k[e.type];
   return e.games.length >= t
 }
 
-function k(e) {
+function M(e) {
   return null == e || "" === e || Array.isArray(e) && 0 === e.length ? null : e
 }
 
 function U(e, t) {
-  return e.applicationId === t.applicationId && k(e.comment) === k(t.comment)
+  return e.applicationId === t.applicationId && M(e.comment) === M(t.comment)
 }
 
 function G(e, t) {
   if (e.applicationId !== t.applicationId) returnfalse;
-  let n = k(e.tags),
-    r = k(t.tags);
+  let n = M(e.tags),
+    r = M(t.tags);
   return null === n && null === r || null !== n && null !== r && n.length === r.length && n.every((e, t) => e === r[t])
 }
 

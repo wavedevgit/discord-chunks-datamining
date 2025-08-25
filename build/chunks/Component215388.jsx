@@ -62,8 +62,8 @@ function v(e) {
     placeholder: x,
     required: U,
     value: V,
-    enableThemedBackground: O = false,
-    parentModalKey: P
+    enableThemedBackground: P = false,
+    parentModalKey: O
   } = e, I = (0, i.Gc0)(), [N, F] = r.useState(() => (0, s.JM)(V)), y = r.useRef(true === c), K = null != A ? A : null == I ? true : I.titleId, T = null != (t = null == I ? true : I.errorId) ? t : h, X = r.useMemo(() => ({
     analyticsName: "simple",
     autocomplete: {
@@ -108,8 +108,8 @@ function v(e) {
     },
     focused: y.current,
     onSubmit: null != v ? v : q,
-    disableThemedBackground: !O,
-    parentModalKey: P,
+    disableThemedBackground: !P,
+    parentModalKey: O,
     emojiPickerCloseOnModalOuterClick: true,
     children: [true === j && (0, n.jsx)(C, {
       hasError: null != I.error || null != f && V.length > f,

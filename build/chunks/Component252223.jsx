@@ -73,14 +73,14 @@ function j(e, t) {
   }), e
 }
 
-function M(e) {
+function k(e) {
   let t = (null == e ? true : e.name) === "" ? null : null == e ? true : e.name;
   return null != t ? P.intl.formatToPlainString(P.t["0wJXSk"], {
     name: t
   }) : P.intl.string(P.t.eXan7O)
 }
 
-function k(e, t) {
+function M(e, t) {
   return (e.isDM() || e.isGroupDM() ? P.intl.string(P.t["9FaEzs"]) : e.isGuildStageVoice() ? P.intl.string(P.t.QygGCA) : P.intl.string(P.t.msxteH)) + (null != t ? " (".concat(t, ")") : "")
 }
 
@@ -98,12 +98,12 @@ function U(e) {
   } = (0, m.Cq)({
     location: "StackedActivityStatus"
   }), s = (0, _.ZP)(r), l = a || o;
-  return null != t && i.push(M(t)), n.forEach(e => {
+  return null != t && i.push(k(t)), n.forEach(e => {
     let {
       tooltip: t
     } = (0, v.Z)(e, l);
     null != t && i.push(t)
-  }), null == t && null != r && i.push(k(r, s)), i.length > 0 ? i.join(", ") : ""
+  }), null == t && null != r && i.push(M(r, s)), i.length > 0 ? i.join(", ") : ""
 }
 
 function G(e) {
@@ -148,8 +148,8 @@ function Z(e) {
     hideTooltip: L = false
   } = e;
   (0, f.Z)(null == t ? true : t.id);
-  let M = (null == a ? true : a.discoverable) !== false ? a : null,
-    k = (0, g.Cf)(M),
+  let k = (null == a ? true : a.discoverable) !== false ? a : null,
+    M = (0, g.Cf)(k),
     Z = i.useMemo(() => {
       var e, t;
       let r = null == n ? true : n.find(e => {
@@ -171,17 +171,17 @@ function Z(e) {
           type: t,
           name: n
         } = e;
-        return t !== R.IIU.CUSTOM_STATUS && t !== R.IIU.HANG_STATUS && n !== (null == k ? true : k.name)
+        return t !== R.IIU.CUSTOM_STATUS && t !== R.IIU.HANG_STATUS && n !== (null == M ? true : M.name)
       })) ? e : [], (e, t) => null != e.application_id && null != t.application_id && e.application_id === t.application_id || null != e.name && null != t.name && e.name === t.name)
-    }, [n, null == k ? true : k.name]),
-    Y = null == n ? true : n.find(e => e.name === (null == k ? true : k.name)),
+    }, [n, null == M ? true : M.name]),
+    Y = null == n ? true : n.find(e => e.name === (null == M ? true : M.name)),
     W = (null == t ? true : t.bot) === true,
     K = (0, c.e7)([y.Z], () => y.Z.isBlockedOrIgnored(null == t ? true : t.id)),
     z = (0, p.Z)({
       location: "ActivityStatus"
     }) && null != Z ? (0, h.Z)(Z) : null,
     q = (null == Z ? true : Z.state) != null || null != z,
-    X = null != M,
+    X = null != k,
     Q = !X && null != l,
     J = H.length + (X || Q ? 1 : 0),
     $ = J > 1,
@@ -195,8 +195,8 @@ function Z(e) {
   let en = function() {
       let e = arguments.length > 0 && true !== arguments[0] && arguments[0],
         t = true === e || L;
-      if (null != M) return (0, r.jsx)(T.Z, {
-        stream: M,
+      if (null != k) return (0, r.jsx)(T.Z, {
+        stream: k,
         game: Y,
         textVariant: "text-".concat(O, "/medium"),
         textClassName: _,
@@ -232,8 +232,8 @@ function Z(e) {
           hideText: false,
           canTruncate: false
         };
-      return null != M && e.push((0, r.jsx)(T.Z, j(x({
-        stream: M,
+      return null != k && e.push((0, r.jsx)(T.Z, j(x({
+        stream: k,
         game: null == n ? true : n.find(d.Z)
       }, t), {
         showChannelName: true

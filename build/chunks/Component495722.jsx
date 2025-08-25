@@ -296,7 +296,7 @@ function z(e) {
     }), (0, r.jsxs)("div", {
       className: V.questAcceptedContent,
       ref: _,
-      children: [(0, r.jsx)(k.Z, {
+      children: [(0, r.jsx)(M.Z, {
         quest: n,
         onCtxMenuOpen: p,
         onCtxMenuClose: h,
@@ -311,7 +311,7 @@ function z(e) {
         isExpanded: d,
         isHovered: false,
         shouldShowRewardsCTAWhenCollapsed: false
-      }), (0, r.jsx)(M.Z, {
+      }), (0, r.jsx)(k.Z, {
         contentLocation: "expanded",
         quest: n,
         progressBarRef: C,

@@ -76,8 +76,8 @@ function P(e) {
     transitionState: y,
     onClose: A,
     sourceQuestContent: N
-  } = e, [P, D] = (0, i.useState)(a), x = (0, g.KX)(), L = (0, p.O5)(), j = null == (t = (0, h.WD)()) ? true : t.getId(), M = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), k = (0, O.g2)({
-    useReducedMotion: M,
+  } = e, [P, D] = (0, i.useState)(a), x = (0, g.KX)(), L = (0, p.O5)(), j = null == (t = (0, h.WD)()) ? true : t.getId(), k = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), M = (0, O.g2)({
+    useReducedMotion: k,
     className: T.colorTransition
   }), U = P.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), G = (0, m.Bz)(n), B = (0, s.e7)([_.Z], () => _.Z.getState().theme), Z = (0, l.wj)(B) ? v.BRd.DARK : v.BRd.LIGHT, {
     startConsoleQuest: V,
@@ -85,7 +85,7 @@ function P(e) {
   } = (0, g.GI)({
     questId: n.id,
     beforeRequest: () => {
-      k.startAnimation(), L({
+      M.startAnimation(), L({
         questId: n.id,
         questContent: E.jn.CONNECTIONS_MODAL,
         questContentCTA: p.jZ.DEFIBRILLATOR,
@@ -93,7 +93,7 @@ function P(e) {
       })
     },
     afterRequest: e => {
-      k.stopAnimation(), D(e)
+      M.stopAnimation(), D(e)
     }
   }), H = () => {
     A(), (0, m.V$)({
@@ -167,7 +167,7 @@ function P(e) {
             [T.disabled]: F
           }),
           onClick: V,
-          children: [k.render(), (0, r.jsx)(u.Text, {
+          children: [M.render(), (0, r.jsx)(u.Text, {
             variant: "text-sm/medium",
             color: "currentColor",
             className: T.colorTransition,

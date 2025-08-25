@@ -48,9 +48,9 @@ let P = e => {
     } = (0, _.ZP)(f.Z.PREMIUM_SUBSCRIBER_NITRO_HOME),
     [x, L] = i.useState(false),
     j = (0, s.e7)([m.Z], () => null != t ? m.Z.getUserProfile(t) : null),
-    M = "true" === new URLSearchParams(window.location.search).get("autoScroll");
+    k = "true" === new URLSearchParams(window.location.search).get("autoScroll");
   window.history.replaceState({}, "", window.location.pathname);
-  let k = (0, b.ZP)({
+  let M = (0, b.ZP)({
     location: "SubscriberNitroHome"
   });
   return null == j ? (0, r.jsx)("div", {
@@ -63,20 +63,20 @@ let P = e => {
       children: (0, r.jsx)(c.$, {
         color: "nitro-pink",
         className: o()(N.container, N.responsiveContainer, {
-          [N.hiddenGradient]: !k
+          [N.hiddenGradient]: !M
         }),
         children: (0, r.jsxs)(_.Gt, {
           value: D,
           children: [(0, r.jsx)(v.Z, {
             className: N.heroHeading,
             location: I.MQ.HOME,
-            enablePremiumBrandRefresh: k
+            enablePremiumBrandRefresh: M
           }), (0, r.jsx)(y.Z, {
             variant: I.gM.WHATS_NEW,
             className: N.whatsNew,
             noBackground: true,
             leftAlignHeaders: true,
-            shouldAutoScroll: M
+            shouldAutoScroll: k
           }), (0, r.jsx)(y.Z, {
             className: N.perksDiscoverability,
             variant: I.gM.PERKS_DISCOVERABILITY,
@@ -119,7 +119,7 @@ let P = e => {
       isAllPerksVisible: P,
       setIsAllPerksVisible: w,
       previousComponent: I.MQ.HOME,
-      enablePremiumBrandRefresh: k
+      enablePremiumBrandRefresh: M
     })]
   })
 }

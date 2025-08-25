@@ -392,11 +392,6 @@ let i = {
     inlineRequire: () => require("./345765.js").Z,
     neverLoadBeforeConnectionOpen: true
   },
-  GuildLeaderboardManager: {
-    actions: ["POST_CONNECTION_OPEN", "CONNECTION_CLOSED", "IDLE", "WINDOW_FOCUS", "CHANNEL_SELECT"],
-    inlineRequire: () => require("./434382.js").Z,
-    neverLoadBeforeConnectionOpen: true
-  },
   RunningGameDetectionManager: {
     actions: ["RUNNING_GAME_DELETE_ENTRY", "RUNNING_GAME_TOGGLE_DETECTION"],
     inlineRequire: () => require("./611184.js").Z,
@@ -415,12 +410,6 @@ let i = {
   ForwardGuildBreadcrumbManager: {
     actions: ["POST_CONNECTION_OPEN", "MESSAGE_UPDATE", "LOAD_MESSAGES_SUCCESS", "LOAD_MESSAGES_AROUND_SUCCESS", "LOAD_RECENT_MENTIONS_SUCCESS", "LOAD_PINNED_MESSAGES_SUCCESS", "SEARCH_MESSAGES_SUCCESS", "MOD_VIEW_SEARCH_MESSAGES_SUCCESS"],
     inlineRequire: () => require("./35260.js").Z
-  },
-  LeagueOfLegendsLifecycleManager: {
-    actions: ["RUNNING_GAMES_CHANGE"],
-    inlineRequire: () => require("./614571.js").Z,
-    neverLoadBeforeConnectionOpen: true,
-    hasStoreChangeListeners: true
   },
   SharedSpacesWarningManager: {
     actions: ["CHANNEL_SELECT", "APP_STATE_UPDATE"],

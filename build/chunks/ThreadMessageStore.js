@@ -147,14 +147,14 @@ function j(e) {
   T(t.id)
 }
 
-function M(e) {
+function k(e) {
   let {
     channel: t
   } = e;
   P(t)
 }
 
-function k(e) {
+function M(e) {
   let {
     threads: t,
     mostRecentMessages: n
@@ -320,9 +320,9 @@ let X = new q(Chunk570140.Z, {
   OVERLAY_INITIALIZE: x,
   GUILD_CREATE: L,
   GUILD_DELETE: j,
-  THREAD_CREATE: M,
-  THREAD_UPDATE: M,
-  THREAD_LIST_SYNC: k,
+  THREAD_CREATE: k,
+  THREAD_UPDATE: k,
+  THREAD_LIST_SYNC: M,
   LOAD_THREADS_SUCCESS: U,
   LOAD_ARCHIVED_THREADS_SUCCESS: U,
   RELATIONSHIP_ADD: z,

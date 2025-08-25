@@ -5,8 +5,8 @@ require.d(exports, {
   $0: () => B,
   Lk: () => V,
   Xg: () => F,
-  ZP: () => M,
-  c7: () => k,
+  ZP: () => k,
+  c7: () => M,
   j3: () => H,
   jO: () => U,
   ks: () => Z
@@ -96,7 +96,7 @@ function j(e, t) {
   return i
 }
 
-function M(e) {
+function k(e) {
   let {
     message: t,
     footer: n,
@@ -123,8 +123,8 @@ function M(e) {
   })
 }
 
-function k(e) {
-  return (0, r.jsx)(M, x(w({}, e), {
+function M(e) {
+  return (0, r.jsx)(k, x(w({}, e), {
     headerClassName: R.headerSuccess
   }))
 }
@@ -199,7 +199,7 @@ function G(e) {
       className: R.authorizedSuccessSubtext,
       children: s
     });
-  return (0, r.jsx)(k, w({
+  return (0, r.jsx)(M, w({
     message: o,
     footer: l
   }, a))
@@ -272,7 +272,7 @@ function Z(e) {
 }
 
 function V(e) {
-  return (0, r.jsx)(M, x(w({}, e), {
+  return (0, r.jsx)(k, x(w({}, e), {
     headerClassName: R.headerFailure
   }))
 }

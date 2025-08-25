@@ -72,14 +72,14 @@ function x(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let L = M(null);
+let L = k(null);
 
 function j() {
-  let e = M(L);
+  let e = k(L);
   s().isEqual(module, L) || (Chunk626135.default.track(Chunk981631.rMx.OVERLAY_SETTINGS_UPDATED, module), L = module)
 }
 
-function M(e) {
+function k(e) {
   var t;
   let n = T.default.getNotificationPositionMode(),
     r = n !== C._vf.DISABLED,
@@ -97,7 +97,7 @@ function M(e) {
   }
 }
 
-function k(e) {
+function M(e) {
   let {
     children: t,
     title: n
@@ -130,7 +130,7 @@ function U(e) {
     notificationPositionMode: T.default.getNotificationPositionMode(),
     shouldShowKeybindIndicators: T.default.showKeybindIndicators,
     textChatDisabled: y.Z.isNotificationDisabled(g.OverlayNotificationDisabledSetting.TEXT_CHAT)
-  })), L = (0, l.e7)([v.ZP], () => v.ZP.getOverlayKeybind()), M = (0, E.Z)({
+  })), L = (0, l.e7)([v.ZP], () => v.ZP.getOverlayKeybind()), k = (0, E.Z)({
     location: "overlay_user_settings"
   }), U = (0, _.$1)();
 
@@ -179,7 +179,7 @@ function U(e) {
             onChange: Z
           })
         })]
-      }), (0, r.jsx)(k, {
+      }), (0, r.jsx)(M, {
         title: N.intl.string(N.t.dnvZSk),
         children: (0, r.jsx)(c.FXm, {
           options: [{
@@ -197,7 +197,7 @@ function U(e) {
           },
           value: s
         })
-      }), (0, r.jsx)(k, {
+      }), (0, r.jsx)(M, {
         title: N.intl.string(N.t.J0dpcH),
         children: (0, r.jsx)(c.FXm, {
           options: [{
@@ -218,7 +218,7 @@ function U(e) {
           },
           value: I
         })
-      }), (0, r.jsx)(k, {
+      }), (0, r.jsx)(M, {
         title: N.intl.string(N.t.swsWWF),
         children: (0, r.jsx)(c.FXm, {
           options: [{
@@ -236,7 +236,7 @@ function U(e) {
           },
           value: S
         })
-      }), M && (0, r.jsx)(k, {
+      }), k && (0, r.jsx)(M, {
         children: (0, r.jsx)(c.j7V, {
           value: D,
           onChange: e => d.Z.setShowKeybindIndicators(e),
@@ -248,7 +248,7 @@ function U(e) {
       tag: c.RB0.H1,
       title: N.intl.string(N.t["3GMnLi"]),
       className: R.notificationSection,
-      children: [(0, r.jsx)(k, {
+      children: [(0, r.jsx)(M, {
         title: N.intl.string(N.t.IQv8Eh),
         children: (0, r.jsx)("div", {
           className: R.notificationSettings,
@@ -257,7 +257,7 @@ function U(e) {
             onChange: (e, t) => d.Z.setNotificationPositionMode(t)
           })
         })
-      }), (0, r.jsx)(k, {
+      }), (0, r.jsx)(M, {
         children: (0, r.jsx)(c.j7V, {
           value: P !== C._vf.DISABLED && !A,
           disabled: P === C._vf.DISABLED,

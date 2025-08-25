@@ -46,7 +46,7 @@ function j(e, t, n) {
   }) : e[t] = n, e
 }
 
-function M(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -59,7 +59,7 @@ function M(e) {
   return e
 }
 
-function k(e, t) {
+function M(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -71,7 +71,7 @@ function k(e, t) {
 }
 
 function U(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -93,7 +93,7 @@ let G = e => {
         }), i && (0, r.jsx)(c.ua7, {
           clickableOnMobile: true,
           text: a,
-          children: e => (0, r.jsx)(c.d3s, U(M({
+          children: e => (0, r.jsx)(c.d3s, U(k({
             size: "xs",
             color: "currentColor"
           }, e), {
@@ -167,7 +167,7 @@ let G = e => {
       handleToggleExpanded: g,
       subscriptionInfo: O
     } = (0, S.Z)(t), [v, T] = i.useState(false), j = (0, E.Dt)(), {
-      analyticsLocations: k
+      analyticsLocations: M
     } = (0, h.ZP)(), {
       shouldHideGuildPurchaseEntryPoints: V
     } = (0, b.uP)(null == l ? true : l.id), F = (null == t ? true : t.paymentGateway) === P.gg$.APPLE_PARTNER;
@@ -185,7 +185,7 @@ let G = e => {
       },
       W = async () => {
         try {
-          T(true), await u.pl(t, k), (0, R.h)()
+          T(true), await u.pl(t, M), (0, R.h)()
         } finally {
           T(false)
         }
@@ -243,7 +243,7 @@ let G = e => {
         color: s.Z.BRAND_500
       }) : z ? (0, r.jsx)(c.ua7, {
         text: x.intl.string(x.t.eSuJEx),
-        children: e => (0, r.jsx)("div", U(M({}, e), {
+        children: e => (0, r.jsx)("div", U(k({}, e), {
           children: (0, r.jsx)(c.IGR, {
             className: L.paymentDueBadge,
             text: x.intl.string(x.t.NrRwIi),
@@ -252,7 +252,7 @@ let G = e => {
         }))
       }) : null, er = () => F ? (0, r.jsx)(c.ua7, {
         text: x.intl.string(x.t.nv1IqK),
-        children: e => (0, r.jsx)("div", U(M({}, e), {
+        children: e => (0, r.jsx)("div", U(k({}, e), {
           children: (0, r.jsx)(c.IGR, {
             text: x.intl.string(x.t.sBl3X1),
             color: m.Z.INTERACTIVE_MUTED

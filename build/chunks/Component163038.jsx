@@ -59,7 +59,7 @@ function B(e) {
       channelId: r.id,
       baseChannelId: a,
       guildId: r.guild_id
-    }), (0, T.Kh)(a), j.default.track(k.rMx.MODERATOR_REPORT_ORIGINAL_MESSAGE_LINK_CLICKED, {
+    }), (0, T.Kh)(a), j.default.track(M.rMx.MODERATOR_REPORT_ORIGINAL_MESSAGE_LINK_CLICKED, {
       moderator_report_id: t.channel_id,
       destination_channel_id: a,
       destination_message_id: t.id
@@ -120,7 +120,7 @@ function V(e) {
     showAvatarPopout: f
   } = Z(t, i);
   return (0, r.jsx)(m.Z, {
-    childrenExecutedCommand: (0, r.jsx)(M.Z, {
+    childrenExecutedCommand: (0, r.jsx)(k.Z, {
       reportingUserId: a,
       guildId: i.guild_id,
       channel: i,

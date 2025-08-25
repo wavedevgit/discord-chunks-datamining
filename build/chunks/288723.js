@@ -38,9 +38,9 @@ let d = {
         }, []), N = t.rects.reference, R = t.rects.popper, P = new Map, w = true, D = C[0], x = 0; x < C.length; x++) {
         var L = C[x],
           j = (0, i.Z)(L),
-          M = (0, c.Z)(L) === l.BL,
-          k = [l.we, l.I].indexOf(j) >= 0,
-          U = k ? "width" : "height",
+          k = (0, c.Z)(L) === l.BL,
+          M = [l.we, l.I].indexOf(j) >= 0,
+          U = M ? "width" : "height",
           G = (0, o.Z)(t, {
             placement: L,
             boundary: g,
@@ -48,7 +48,7 @@ let d = {
             altBoundary: b,
             padding: m
           }),
-          B = k ? M ? l.F2 : l.t$ : M ? l.I : l.we;
+          B = M ? k ? l.F2 : l.t$ : k ? l.I : l.we;
         N[U] > R[U] && (B = (0, r.Z)(B));
         var Z = (0, r.Z)(B),
           V = [];

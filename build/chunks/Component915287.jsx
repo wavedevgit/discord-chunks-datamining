@@ -174,8 +174,8 @@ function v(e, t, n, a) {
       renderRow: x,
       renderFooter: L,
       renderSidebar: j,
-      renderListHeader: M,
-      stickyListHeader: k,
+      renderListHeader: k,
+      stickyListHeader: M,
       wrapSection: U,
       getAnchorId: G,
       paddingTop: B,
@@ -304,8 +304,8 @@ function v(e, t, n, a) {
           containerRef: et,
           children: y({
             items: ec,
-            renderListHeader: M,
-            stickyListHeader: k,
+            renderListHeader: k,
+            stickyListHeader: M,
             renderSection: D,
             renderRow: x,
             renderFooter: L,
@@ -313,7 +313,7 @@ function v(e, t, n, a) {
             spacerTop: es
           })
         })
-      }), [J, W, K, z, q, X, el, Q, ec, M, k, D, x, L, U, es]), i.useMemo(() => O({
+      }), [J, W, K, z, q, X, el, Q, ec, k, M, D, x, L, U, es]), i.useMemo(() => O({
         isSidebarVisible: eu,
         renderSidebar: j,
         sidebarHeight: P,

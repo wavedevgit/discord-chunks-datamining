@@ -83,13 +83,13 @@ function V(e, t) {
 function F(e, t, n) {
   for (let o of e) {
     var r, i, a;
-    if (o.type === M.fO.STREAM) {
+    if (o.type === k.fO.STREAM) {
       let e = null != (i = (0, f.Um)(o.stream, n)) ? i : null,
         a = (0, E.ZZ)(t, e);
       if (null != a && (null == (r = a.userStatus) ? true : r.claimedAt) == null) return a
     }
     for (let r of e)
-      if (!(0, M.I)(r))
+      if (!(0, k.I)(r))
         for (let e of n.getActivities(r.user.id)) {
           let n = (0, E.ZZ)(t, e);
           if (null != n && (null == (a = n.userStatus) ? true : a.claimedAt) == null) return n
@@ -100,7 +100,7 @@ function F(e, t, n) {
 
 function H(e, t, n, r) {
   return e.some(e => {
-    if (e.type !== M.fO.STREAM || e.user.id !== n.id) returnfalse;
+    if (e.type !== k.fO.STREAM || e.user.id !== n.id) returnfalse;
     let i = (0, f.Um)(e.stream, r);
     return null != i && (0, E._D)(i, t)
   })
@@ -111,7 +111,7 @@ function Y(e) {
   let {
     channelId: p,
     quest: A,
-    previewQuest: M,
+    previewQuest: k,
     isParticipatingOverride: G
   } = e, Z = (0, g.O5)(), [F, Y] = i.useState(false), W = i.useCallback(() => Y(true), []), K = i.useCallback(() => Y(false), []), z = (0, s.e7)([m.default], () => m.default.getCurrentUser()), q = (0, s.e7)([_.Z], () => _.Z.getState().theme), X = (0, l.wj)(q) ? j.BRd.DARK : j.BRd.LIGHT, Q = (0, s.e7)([u.Z], () => u.Z.getParticipants(e.channelId), [e.channelId]), J = (0, s.e7)([O.Z], () => (0, E.PM)(O.Z.quests, O.Z.questToDeliverForPlacement, v.Ok.DESKTOP_ACCOUNT_PANEL_AREA), []), {
     isCurrentUserStreamingQuestApplication: $,
@@ -164,7 +164,7 @@ function Y(e) {
     isQuestBarShowing: eb,
     isCurrentUserCallParticipant: eo
   });
-  let ey = null != M && (null == (a = A.userStatus) ? true : a.claimedAt) == null;
+  let ey = null != k && (null == (a = A.userStatus) ? true : a.claimedAt) == null;
   if (!ey && (eg || ep || eb) || !ey && !eo) return null;
   let eO = (0, E.il)(A),
     ev = (0, r.jsx)(R.Z, {
@@ -207,7 +207,7 @@ function Y(e) {
               children: ei ? (0, E.AV)({
                 quest: A,
                 taskDetails: eO
-              }) : k.intl.formatToPlainString(k.t.EQa7oq, {
+              }) : M.intl.formatToPlainString(M.t.EQa7oq, {
                 questName: A.config.messages.questName
               })
             }), (0, r.jsx)(w.r, {
@@ -218,7 +218,7 @@ function Y(e) {
               shouldShowDisclosure: (null == (f = A.userStatus) ? true : f.enrolledAt) == null,
               children: e => (0, r.jsx)(c.P3F, V(B({}, e), {
                 className: U.submenuWrapper,
-                "aria-label": k.intl.string(k.t.DEoVWV),
+                "aria-label": M.intl.string(M.t.DEoVWV),
                 children: (0, r.jsx)(c.xhG, {
                   size: "md",
                   color: "currentColor",
@@ -229,9 +229,9 @@ function Y(e) {
           }), (0, r.jsx)(c.Text, {
             color: "header-secondary",
             variant: "text-xs/medium",
-            children: em ? k.intl.formatToPlainString(k.t.APddvL, {
+            children: em ? M.intl.formatToPlainString(M.t.APddvL, {
               expirationDate: el
-            }) : k.intl.formatToPlainString(k.t["pX+fmp"], {
+            }) : M.intl.formatToPlainString(M.t["pX+fmp"], {
               expirationDate: es
             })
           })]
@@ -250,11 +250,11 @@ function Y(e) {
           fullWidth: true,
           children: [(0, r.jsx)(c.zxk, {
             variant: "secondary",
-            text: k.intl.string(k.t.LLLLPD),
+            text: M.intl.string(M.t.LLLLPD),
             onClick: ed
           }), (0, r.jsx)(c.zxk, {
             variant: "primary",
-            text: k.intl.string(k.t.l7E81t),
+            text: M.intl.string(M.t.l7E81t),
             onClick: ec,
             loading: ea
           })]
@@ -265,13 +265,13 @@ function Y(e) {
           variant: "primary",
           size: "sm",
           fullWidth: true,
-          text: k.intl.string(k.t.VN1Ajo),
+          text: M.intl.string(M.t.VN1Ajo),
           onClick: eu
         }), em && (0, r.jsx)(c.zxk, {
           variant: "primary",
           size: "sm",
           fullWidth: true,
-          text: k.intl.string(k.t.cfY4PD),
+          text: M.intl.string(M.t.cfY4PD),
           onClick: ef
         })]
       })]

@@ -272,11 +272,11 @@ function j() {
   E.error = "ERROR_ACTIVATING_VOICE_FILTER"
 }
 
-function M() {
+function k() {
   E.error = null
 }
 
-function k() {
+function M() {
   b = Date.now()
 }
 f(C, "displayName", "VoiceFilterStore");
@@ -291,6 +291,6 @@ let U = new C(Chunk570140.Z, {
   VOICE_FILTER_DEV_TOOLS_SET_UPDATE_TIME: x,
   VOICE_FILTER_NATIVE_MODULE_STATE_CHANGE: L,
   VOICE_FILTER_APPLY_FAILED: j,
-  VOICE_FILTER_REQUEST_SWITCH: M,
-  VOICE_FILTER_LAGGING: k
+  VOICE_FILTER_REQUEST_SWITCH: k,
+  VOICE_FILTER_LAGGING: M
 })

@@ -2,11 +2,11 @@
 /** chunk id: 178762, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ir: () => X,
-  J: () => q,
-  YN: () => F,
-  ZP: () => J,
-  iZ: () => Y
+  Ir: () => H,
+  J: () => F,
+  YN: () => M,
+  ZP: () => W,
+  iZ: () => G
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -15,14 +15,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk91192 = require("./91192.jsx"),
   Chunk876215 = require("./876215.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk704215 = require("./704215.js"),
   Chunk481060 = require("./481060.js"),
   Chunk239091 = require("./239091.js"),
   Chunk607070 = require("./607070.js"),
-  Chunk100527 = require("./100527.js"),
-  Chunk266454 = require("./266454.js"),
-  Chunk704041 = require("./704041.jsx"),
-  Chunk475676 = require("./475676.jsx"),
   Chunk439170 = require("./439170.js"),
   Chunk594174 = require("./594174.js"),
   Chunk69259 = require("./69259.js"),
@@ -40,10 +35,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk335326 = require("./335326.jsx"),
   Chunk268010 = require("./268010.jsx"),
   Chunk797342 = require("./797342.js"),
-  Chunk206583 = require("./206583.js"),
-  Chunk921944 = require("./921944.js");
+  Chunk206583 = require("./206583.js");
 
-function k(e, t, n) {
+function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -52,20 +46,20 @@ function k(e, t, n) {
   }) : e[t] = n, e
 }
 
-function U(e) {
+function D(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      k(e, t, n[t])
+      w(e, t, n[t])
     })
   }
   return e
 }
 
-function G(e, t) {
+function x(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -76,15 +70,15 @@ function G(e, t) {
   return n
 }
 
-function B(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : G(Object(t)).forEach(function(n) {
+function L(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function Z(e, t) {
+function j(e, t) {
   if (null == e) return {};
-  var n, r, i = V(e, t);
+  var n, r, i = k(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -92,73 +86,69 @@ function Z(e, t) {
   return i
 }
 
-function V(e, t) {
+function k(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let F = 72,
-  H = 2e3;
+let M = 72,
+  U = 2e3;
 
-function Y(e) {
-  return (null == e ? true : e.type) === E.so.CONTENT_INVENTORY ? F : 0
+function G(e) {
+  return (null == e ? true : e.type) === _.so.CONTENT_INVENTORY ? M : 0
 }
-let W = e => {
+let B = e => {
     var {
       entry: t
-    } = e, n = Z(e, ["entry"]);
+    } = e, n = j(e, ["entry"]);
     switch (t.content_type) {
       case l.s.PLAYED_GAME:
-        return (0, r.jsx)(I.Z, B(U({}, n), {
+        return (0, r.jsx)(E.Z, L(D({}, n), {
           entry: t
         }));
       case l.s.WATCHED_MEDIA:
-        return (0, r.jsx)(D.Z, B(U({}, n), {
+        return (0, r.jsx)(C.Z, L(D({}, n), {
           entry: t
         }));
       case l.s.TOP_GAME:
-        return (0, r.jsx)(P.ZP, B(U({}, n), {
+        return (0, r.jsx)(S.ZP, L(D({}, n), {
           entry: t
         }));
       case l.s.TOP_ARTIST:
-        return (0, r.jsx)(N.ZP, B(U({}, n), {
+        return (0, r.jsx)(I.ZP, L(D({}, n), {
           entry: t
         }));
       case l.s.LISTENED_SESSION:
-        return (0, r.jsx)(A.ZP, B(U({}, n), {
+        return (0, r.jsx)(O.ZP, L(D({}, n), {
           entry: t
         }));
       case l.s.LAUNCHED_ACTIVITY:
-        return (0, r.jsx)(O.Z, B(U({}, n), {
-          entry: t
-        }));
-      case l.s.LEADERBOARD:
-        return (0, r.jsx)(g.Z, B(U({}, n), {
+        return (0, r.jsx)(m.Z, L(D({}, n), {
           entry: t
         }));
       default:
         return null
     }
   },
-  K = e => {
+  Z = e => {
     var t, {
         entry: n,
         targetElementRef: i
       } = e,
-      a = Z(e, ["entry", "targetElementRef"]);
-    return n.content_type === l.s.PLAYED_GAME ? (0, r.jsx)(S.Z, {
+      a = j(e, ["entry", "targetElementRef"]);
+    return n.content_type === l.s.PLAYED_GAME ? (0, r.jsx)(y.Z, {
       entry: n,
       targetElementRef: i,
       isFirstApplicationOccurrence: null != (t = a.isFirstApplicationOccurrence) && t
     }) : null
   },
-  z = e => {
+  V = e => {
     var {
       closePopout: t
-    } = e, n = Z(e, ["closePopout"]);
-    return (0, r.jsx)(q, U({
+    } = e, n = j(e, ["closePopout"]);
+    return (0, r.jsx)(F, D({
       onReaction: (e, r) => {
         n.trackRankingItemInteraction(e, {
           destinationChannelId: r.id,
@@ -167,157 +157,147 @@ let W = e => {
       },
       closePopout: t,
       onVoiceChannelPreview: e => {
-        n.trackRankingItemInteraction(j.xP.VOICE_CHANNEL_PREVIEWED, {
+        n.trackRankingItemInteraction(P.xP.VOICE_CHANNEL_PREVIEWED, {
           destinationChannelId: e.id,
           destinationGuildId: e.guild_id
         })
       }
     }, n))
   },
-  q = e => {
-    var t, {
-        entry: n
-      } = e,
-      i = Z(e, ["entry"]);
-    switch (n.content_type) {
+  F = e => {
+    var {
+      entry: t
+    } = e, n = j(e, ["entry"]);
+    switch (t.content_type) {
       case l.s.PLAYED_GAME:
-        return (0, r.jsx)(T.Z, B(U({}, i), {
-          entry: n
+        return (0, r.jsx)(b.Z, L(D({}, n), {
+          entry: t
         }));
       case l.s.WATCHED_MEDIA:
-        return (0, r.jsx)(x.Z, B(U({}, i), {
-          entry: n
+        return (0, r.jsx)(N.Z, L(D({}, n), {
+          entry: t
         }));
       case l.s.TOP_GAME:
-        return (0, r.jsx)(w.Z, B(U({}, i), {
-          entry: n
+        return (0, r.jsx)(A.Z, L(D({}, n), {
+          entry: t
         }));
       case l.s.TOP_ARTIST:
-        return (0, r.jsx)(R.Z, B(U({}, i), {
-          entry: n
+        return (0, r.jsx)(T.Z, L(D({}, n), {
+          entry: t
         }));
       case l.s.LISTENED_SESSION:
-        return (0, r.jsx)(C.Z, B(U({}, i), {
-          entry: n
+        return (0, r.jsx)(v.Z, L(D({}, n), {
+          entry: t
         }));
       case l.s.LAUNCHED_ACTIVITY:
-        return (0, r.jsx)(v.ZP, B(U({}, i), {
-          entry: n
+        return (0, r.jsx)(g.ZP, L(D({}, n), {
+          entry: t
         }));
-      case l.s.LEADERBOARD:
-        return (null == (t = i.channel) ? true : t.guild_id) != null ? (0, r.jsx)(m.Z, {
-          guildId: i.channel.guild_id,
-          leaderboardId: n.extra.leaderboard_id,
-          source: p.Z.MEMBER_LIST,
-          trackRankingItemInteraction: i.trackRankingItemInteraction
-        }) : null;
       default:
         return null
     }
   },
-  X = Chunk647438.createContext(true),
-  Q = e => {
+  H = Chunk647438.createContext(true),
+  Y = e => {
     var t, {
         index: a,
-        ref: p
+        ref: l
       } = e,
-      m = Z(e, ["index", "ref"]);
-    let g = i.useRef(null),
-      [E, O] = i.useState("default"),
-      [v, I] = i.useState(false),
-      T = (0, s.JA)("".concat(a)),
-      S = null == (t = b.default.getCurrentUser()) ? true : t.isStaff(),
+      _ = j(e, ["index", "ref"]);
+    let m = i.useRef(null),
+      [g, E] = i.useState("default"),
+      [b, y] = i.useState(false),
+      O = (0, s.JA)("".concat(a)),
+      v = null == (t = p.default.getCurrentUser()) ? true : t.isStaff(),
       {
-        isRich: A,
-        appName: C
-      } = (0, L.n)(m.entry),
-      N = i.useMemo(() => ({
-        entry: m.entry,
-        channelId: m.channel.id,
-        guildId: m.channel.guild_id,
-        requestId: m.requestId,
-        richPresenceName: A ? C : true
-      }), [C, m.channel.guild_id, m.channel.id, m.entry, m.requestId, A]),
-      R = i.useRef(false),
-      [P, w] = i.useState(false),
-      [D, x] = i.useState(false),
-      k = (0, c.e7)([_.Z], () => _.Z.keyboardModeEnabled);
+        isRich: I,
+        appName: T
+      } = (0, R.n)(_.entry),
+      S = i.useMemo(() => ({
+        entry: _.entry,
+        channelId: _.channel.id,
+        guildId: _.channel.guild_id,
+        requestId: _.requestId,
+        richPresenceName: I ? T : true
+      }), [T, _.channel.guild_id, _.channel.id, _.entry, _.requestId, I]),
+      A = i.useRef(false),
+      [C, N] = i.useState(false),
+      [w, x] = i.useState(false),
+      k = (0, c.e7)([f.Z], () => f.Z.keyboardModeEnabled);
     i.useEffect(() => {
-      P && k && x(true)
-    }, [P, k]), i.useLayoutEffect(() => {
-      null != g.current && I(true)
+      C && k && x(true)
+    }, [C, k]), i.useLayoutEffect(() => {
+      null != m.current && y(true)
     }, []);
-    let G = i.useCallback(e => {
-        S && (0, f.jW)(e, async () => {
+    let M = i.useCallback(e => {
+        v && (0, d.jW)(e, async () => {
           let {
             default: e
           } = await n.e("153").then(n.bind(n, 330150));
           return () => (0, r.jsx)(e, {
-            entry: m.entry,
-            requestId: m.requestId
+            entry: _.entry,
+            requestId: _.requestId
           })
         })
-      }, [m, S]),
-      V = i.useCallback(() => {
-        O(String(Date.now()))
+      }, [_, v]),
+      G = i.useCallback(() => {
+        E(String(Date.now()))
       }, []),
       F = i.useCallback(function(e) {
         let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
-        (0, y.L)(e, U({}, N, t))
-      }, [N]),
+        (0, h.L)(e, D({}, S, t))
+      }, [S]),
       Y = i.useMemo(() => o().throttle(e => {
-        (0, y.L)(j.xP.CARD_POPOUT_OPEN, e)
-      }, H, {
+        (0, h.L)(P.xP.CARD_POPOUT_OPEN, e)
+      }, U, {
         leading: true,
         trailing: false
       }), []),
-      q = () => {
-        R.current = false, setTimeout(() => {
-          R.current || (w(false), x(k))
+      W = () => {
+        A.current = false, setTimeout(() => {
+          A.current || (N(false), x(k))
         }, 100)
       };
     return (0, r.jsxs)(r.Fragment, {
-      children: [v && (0, r.jsx)(K, B(U({}, m), {
-        targetElementRef: g
+      children: [b && (0, r.jsx)(Z, L(D({}, _), {
+        targetElementRef: m
       })), (0, r.jsx)("div", {
-        ref: p,
+        ref: l,
         onMouseEnter: () => {
-          m.entry.content_type !== l.s.LEADERBOARD || (0, h.zu)(u.z.LEADERBOARD_NUX_COACHMARK) || (0, h.Q3)(u.z.LEADERBOARD_NUX_COACHMARK, {
-            dismissAction: M.L.SECONDARY
-          }), R.current = true, setTimeout(() => {
-            R.current && w(true), Y(N)
+          A.current = true, setTimeout(() => {
+            A.current && N(true), Y(S)
           }, 100)
         },
-        onMouseLeave: q,
-        children: (0, r.jsx)(d.yRy, {
-          targetElementRef: g,
+        onMouseLeave: W,
+        children: (0, r.jsx)(u.yRy, {
+          targetElementRef: m,
           renderPopout: e => {
             let {
               closePopout: t
             } = e;
-            return (0, r.jsx)(X.Provider, {
-              value: q,
-              children: (0, r.jsx)(z, U({
+            return (0, r.jsx)(H.Provider, {
+              value: W,
+              children: (0, r.jsx)(V, D({
                 closePopout: t,
-                updatePopoutPosition: V,
+                updatePopoutPosition: G,
                 trackRankingItemInteraction: F
-              }, m))
+              }, _))
             })
           },
           position: "left",
-          shouldShow: P,
-          positionKey: E,
-          onRequestOpen: () => Y(N),
+          shouldShow: C,
+          positionKey: g,
+          onRequestOpen: () => Y(S),
           onRequestClose: () => {
-            D && q()
+            w && W()
           },
           spacing: 8,
           children: (e, t) => {
             let {
               isShown: n
             } = t;
-            return (0, r.jsx)(d.P3F, B(U({}, e, T), {
-              innerRef: g,
+            return (0, r.jsx)(u.P3F, L(D({}, e, O), {
+              innerRef: m,
               focusProps: {
                 offset: {
                   top: 4,
@@ -327,12 +307,12 @@ let W = e => {
                 }
               },
               onClick: () => {
-                P || w(true)
+                C || N(true)
               },
-              onContextMenu: G,
-              children: (0, r.jsx)(W, B(U({}, m), {
+              onContextMenu: M,
+              children: (0, r.jsx)(B, L(D({}, _), {
                 selected: n,
-                hovered: R.current
+                hovered: A.current
               }))
             }))
           }
@@ -340,4 +320,4 @@ let W = e => {
       })]
     })
   },
-  J = Chunk647438.memo(Q)
+  W = Chunk647438.memo(Y)

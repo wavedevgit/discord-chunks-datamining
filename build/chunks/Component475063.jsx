@@ -95,8 +95,8 @@ function N(e) {
       showRemainingCharacterCount: x = true,
       "aria-labelledby": L,
       rows: j = 3,
-      disabled: M,
-      helperText: k,
+      disabled: k,
+      helperText: M,
       successMessage: U
     } = e,
     G = O(e, ["value", "placeholder", "autoFocus", "minLength", "maxLength", "error", "defaultDirty", "showCharacterCountFullPadding", "showCharacterCount", "showRemainingCharacterCount", "aria-labelledby", "rows", "disabled", "helperText", "successMessage"]);
@@ -130,8 +130,8 @@ function N(e) {
     };
   return (0, r.jsxs)(d.J, {
     validation: Z,
-    disabled: M,
-    helperText: k,
+    disabled: k,
+    helperText: M,
     successMessage: U,
     characterCount: B && D ? null != (t = null == n ? true : n.length) ? t : 0 : true,
     characterCountMaxLength: B && x ? b : true,
@@ -150,7 +150,7 @@ function N(e) {
         minLength: g,
         maxLength: b,
         rows: j,
-        disabled: M
+        disabled: k
       }, G), {
         onChange: W
       }))

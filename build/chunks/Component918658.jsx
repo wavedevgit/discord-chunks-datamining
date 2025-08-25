@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => j,
-  d: () => M
+  d: () => k
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -97,8 +97,8 @@ function j() {
     }));
   if (null == Chunk120356 || null == exports) return null;
   let j = x(o),
-    M = L(o),
-    k = require === Chunk176505.oC.GUILD_ONBOARDING,
+    k = L(o),
+    M = require === Chunk176505.oC.GUILD_ONBOARDING,
     U = e => {
       let {
         backToSettings: n
@@ -119,7 +119,7 @@ function j() {
         direction: Chunk671533.Z.Directions.LEFT,
         className: Chunk829675.backArrow
       }), j]
-    }), k && Chunk755721 ? (0, Chunk951288.jsx)("div", {
+    }), M && Chunk755721 ? (0, Chunk951288.jsx)("div", {
       className: Chunk829675.noticeContents,
       children: (0, Chunk951288.jsx)("div", {
         className: Chunk829675.noticeText,
@@ -147,7 +147,7 @@ function j() {
           return (0, r.jsxs)(w, {
             onClick: n,
             buttonRef: e,
-            children: [M, (0, r.jsx)(y.Z, {
+            children: [k, (0, r.jsx)(y.Z, {
               width: 16,
               height: 16,
               direction: y.Z.Directions.DOWN,
@@ -181,7 +181,7 @@ function j() {
   })
 }
 
-function M(e) {
+function k(e) {
   let {
     guildId: t
   } = e;

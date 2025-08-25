@@ -80,9 +80,9 @@ function L(e) {
     analyticsLocation: P,
     currentInvoicePreview: D,
     disabled: L = false
-  } = e, M = (0, c.e7)([b.Z], () => b.Z.hidePersonalInformation), [k, U] = (0, c.Wu)([y.Z], () => [y.Z.paymentSources, y.Z.hasFetchedPaymentSources]), G = (0, E.V)((0, T.yb)(t)), {
+  } = e, k = (0, c.e7)([b.Z], () => b.Z.hidePersonalInformation), [M, U] = (0, c.Wu)([y.Z], () => [y.Z.paymentSources, y.Z.hasFetchedPaymentSources]), G = (0, E.V)((0, T.yb)(t)), {
     analyticsLocations: B
-  } = (0, g.ZP)(), Z = i.useMemo(() => Object.values(k).filter(e => !e.invalid), [k]), [V, F] = i.useState(false), [H, Y] = i.useState(t.currency), W = async (e, n, r) => {
+  } = (0, g.ZP)(), Z = i.useMemo(() => Object.values(M).filter(e => !e.invalid), [M]), [V, F] = i.useState(false), [H, Y] = i.useState(t.currency), W = async (e, n, r) => {
     if (null == t) throw Error("missing subscription and paymentSource");
     null == e ? await _.fG(t, n, r, B, P) : await _.tq(t, e, n, r, B, P), F(false), Y(n)
   }, K = async (e, n, r) => {
@@ -134,7 +134,7 @@ function L(e) {
       } : null,
       className: s,
       paymentSources: Z,
-      hidePersonalInformation: M,
+      hidePersonalInformation: k,
       selectedPaymentSourceId: e,
       onChange: q,
       onPaymentSourceAdd: Q,

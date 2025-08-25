@@ -141,7 +141,7 @@ function j(e) {
   }
 }
 
-function M() {
+function k() {
   let e = Chunk944486.Z.getChannelId();
   if (null == module) return;
   let t = Chunk592125.Z.getChannel(module);
@@ -156,7 +156,7 @@ function M() {
   }), Z(exports.getGuildId(), exports.id)
 }
 
-function k() {
+function M() {
   let e = Chunk944486.Z.getChannelId();
   if (null == module) return;
   let t = Chunk592125.Z.getChannel(module);
@@ -325,27 +325,27 @@ function q(e) {
 }
 class X extends Chunk147913.Z {
   _initialize() {
-    Chunk570140.Z.subscribe("CONNECTION_OPEN", M)
+    Chunk570140.Z.subscribe("CONNECTION_OPEN", k)
   }
   _terminate() {
-    Chunk570140.Z.unsubscribe("CONNECTION_OPEN", M)
+    Chunk570140.Z.unsubscribe("CONNECTION_OPEN", k)
   }
   constructor(...e) {
-    super(...e), R(this, "fetchMessages", w), R(this, "loadSelectedChannelIfNecessary", k), R(this, "stores", new Map().set(E.ZP, V)), R(this, "actions", {
+    super(...e), R(this, "fetchMessages", w), R(this, "loadSelectedChannelIfNecessary", M), R(this, "stores", new Map().set(E.ZP, V)), R(this, "actions", {
       APP_STATE_UPDATE: q,
-      OVERLAY_INITIALIZE: M,
+      OVERLAY_INITIALIZE: k,
       CHANNEL_SELECT: U,
       VOICE_CHANNEL_SELECT: G,
       THREAD_CREATE: H,
-      THREAD_LIST_SYNC: () => k(),
+      THREAD_LIST_SYNC: () => M(),
       CHANNEL_CREATE: H,
       CHANNEL_PRELOAD: F,
-      GUILD_CREATE: () => k(),
+      GUILD_CREATE: () => M(),
       MESSAGE_END_EDIT: Y,
       LOAD_MESSAGES_SUCCESS: K,
       UPLOAD_FAIL: z,
-      CHANNEL_DELETE: () => k(),
-      THREAD_DELETE: () => k(),
+      CHANNEL_DELETE: () => M(),
+      THREAD_DELETE: () => M(),
       CHANNEL_RTC_JUMP_TO_VOICE_CHANNEL_MESSAGE: B
     })
   }

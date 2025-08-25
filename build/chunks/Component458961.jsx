@@ -156,22 +156,22 @@ function $(e) {
     onClose: en
   } = e, [er, el] = r.useState(et), ea = (0, d.e7)([N.Z], () => null == er ? null : N.Z.getGuildProduct(er), [er]), eo = (null == ea ? true : ea.published) === true, {
     application: ei
-  } = (0, h.Z)($, B.wW.GUILD_ROLE_SUBSCRIPTIONS), es = y.M["0"], ed = (0, d.e7)([m.Z], () => m.Z.useReducedMotion), ec = x.QK.useSetting(), eu = (0, P.n)(), ef = r.useCallback(() => {
+  } = (0, h.Z)($, B.wW.GUILD_ROLE_SUBSCRIPTIONS), es = y.M["0"], ed = (0, d.e7)([m.Z], () => m.Z.useReducedMotion), ec = x.QK.useSetting(), eu = (0, O.n)(), ef = r.useCallback(() => {
     var e;
-    return (null == ea || null == (e = ea.image_asset) ? true : e.application_id) == null ? es.data : (0, O._W)(ea.image_asset.application_id, ea.image_asset, 600, eu && ec ? true : "webp")
+    return (null == ea || null == (e = ea.image_asset) ? true : e.application_id) == null ? es.data : (0, P._W)(ea.image_asset.application_id, ea.image_asset, 600, eu && ec ? true : "webp")
   }, [es, ea, eu, ec]), {
     shouldRestrictUpdatingCreatorMonetizationSettings: eg
   } = (0, v.gX)($);
   r.useEffect(() => {
     eg && (en(), (0, Z.B)(L.intl.string(L.t.OLf3xs), L.t["90LBVl"]))
   }, [eg, en]);
-  let [ep, em] = r.useState(null != (a = null == ea ? true : ea.name) ? a : ""), [eh, eb] = r.useState(null != (o = null == ea ? true : ea.description) ? o : ""), [eq, eC] = r.useState(null != (b = null == ea ? true : ea.price_tier) ? b : true), [ev, ej] = r.useState(ef), [ex, eU] = r.useState(null != (q = null == ea || null == (t = ea.image_asset) ? true : t.filename) ? q : es.name), [eV, eO] = r.useState(false), [eP, eI] = r.useState(), eN = r.useMemo(() => null != eq ? (0, V.T4)(eq, R.pKx.USD) : true, [eq]), [eF, ey] = r.useState(true), {
+  let [ep, em] = r.useState(null != (a = null == ea ? true : ea.name) ? a : ""), [eh, eb] = r.useState(null != (o = null == ea ? true : ea.description) ? o : ""), [eq, eC] = r.useState(null != (b = null == ea ? true : ea.price_tier) ? b : true), [ev, ej] = r.useState(ef), [ex, eU] = r.useState(null != (q = null == ea || null == (t = ea.image_asset) ? true : t.filename) ? q : es.name), [eV, eP] = r.useState(false), [eO, eI] = r.useState(), eN = r.useMemo(() => null != eq ? (0, V.T4)(eq, R.pKx.USD) : true, [eq]), [eF, ey] = r.useState(true), {
     changesSaving: eK,
     saveError: eT,
     saveProductWithAttachments: eX,
     hasUnsavedAttachmentChanges: eZ,
     cancelUnusedUploads: eW
-  } = (0, I.P)(), ez = (null == ea ? true : ea.attachments) != null && (null == ea ? true : ea.attachments.length) > 0, eQ = null != eT ? eT : eP, eS = null != eK && "published" in eK, ew = null != eK && !eS, eR = null != (j = null == ea ? true : ea.role_id) ? j : null, [eB, eL] = r.useState(), ek = null != eB || null != eR, eG = (0, d.e7)([U.Z], () => null != eR && null !== eB ? U.Z.getRole($, eR) : null != eB ? eB : true, [eB, eR, $]), eE = "";
+  } = (0, I.P)(), ez = (null == ea ? true : ea.attachments) != null && (null == ea ? true : ea.attachments.length) > 0, eQ = null != eT ? eT : eO, eS = null != eK && "published" in eK, ew = null != eK && !eS, eR = null != (j = null == ea ? true : ea.role_id) ? j : null, [eB, eL] = r.useState(), ek = null != eB || null != eR, eG = (0, d.e7)([U.Z], () => null != eR && null !== eB ? U.Z.getRole($, eR) : null != eB ? eB : true, [eB, eR, $]), eE = "";
   ek && eF ? eE = L.intl.string(L.t.ih4QMT) : ek ? eE = L.intl.string(L.t.o9xphY) : eF && (eE = L.intl.string(L.t.DWYJub));
   let eY = () => {
       ey(false), eW()
@@ -236,7 +236,7 @@ function $(e) {
     });
     if (eI(t), null != t) return;
     let A = await eX(e);
-    if (eO(false), null != A) {
+    if (eP(false), null != A) {
       if (null != e.name && em(A.name), null != e.description && eb(A.description), null != eB) {
         let e = A.role_id;
         i()(null != e, "Cannot update role without role ID"), await g.Z.updateRole($, e, eB)
@@ -348,7 +348,7 @@ function $(e) {
               onChange: (e, t) => {
                 if (null != e) {
                   var A;
-                  ej(e), eU(t), eO(e.startsWith("data:") || t !== (null == ea || null == (A = ea.image_asset) ? true : A.filename))
+                  ej(e), eU(t), eP(e.startsWith("data:") || t !== (null == ea || null == (A = ea.image_asset) ? true : A.filename))
                 }
               }
             })]

@@ -251,7 +251,7 @@ class Y extends Chunk647438.PureComponent {
         focused: r
       } = this.state;
       if (e.preventDefault(), e.stopPropagation(), "" === y.Sq(t)) return void this.focusEditor();
-      t = y.Hl(t, 0), this.setEditorState(t), (0, M.cy)({
+      t = y.Hl(t, 0), this.setEditorState(t), (0, k.cy)({
         searchContext: n
       }), r || Promise.resolve().then(() => this.blurEditor())
     }), Z(this, "handleFocusSearch", e => {
@@ -273,7 +273,7 @@ class Y extends Chunk647438.PureComponent {
       if (r.isPrivate() && !s) return void this.focusEditor();
       let l = (0, T.X3)(r);
       if (null == l) return void this.focusEditor();
-      (0, M.PJ)({
+      (0, k.PJ)({
         searchContext: a
       }), Promise.resolve().then(() => {
         let {
@@ -303,7 +303,7 @@ class Y extends Chunk647438.PureComponent {
       } = this.props;
       this.setState({
         focused: true
-      }), t || (0, M.I1)({
+      }), t || (0, k.I1)({
         searchContext: e
       })
     }), Z(this, "handleBlur", e => {
@@ -314,16 +314,16 @@ class Y extends Chunk647438.PureComponent {
       this.setState({
         focused: false
       }, () => {
-        n || e || (0, M.IZ)({
+        n || e || (0, k.IZ)({
           searchContext: t
         }), y.xb(this.props.editorState) && this.clearSearch()
       })
     }), Z(this, "onBlur", e => {
       this.handleBlur()
     }), Z(this, "handleOption", e => null != e && (false === e.state.selectedIndex && e.shouldShowSearchInSelectedChannel() ? e.handleSearchInChannel({
-      searchAutocompleteSelectAction: k.ZW.KEY_PRESS
+      searchAutocompleteSelectAction: M.ZW.KEY_PRESS
     }) : e.selectOption({
-      searchAutocompleteSelectAction: k.ZW.KEY_PRESS
+      searchAutocompleteSelectAction: M.ZW.KEY_PRESS
     }))), Z(this, "handleReturn", e => {
       let {
         shiftKey: t
@@ -460,7 +460,7 @@ function W(e) {
     }),
     w = i.useRef(S);
   i.useEffect(() => {
-    w.current && !S && (w.current = false, (0, M.IZ)({
+    w.current && !S && (w.current = false, (0, k.IZ)({
       searchContext: t
     })), !w.current && S && (w.current = true)
   }, [S, t]);
@@ -470,7 +470,7 @@ function W(e) {
         query: r,
         searchEverywhere: i
       } = e;
-      R.ZP.refreshSearchQueryAnalyticsId(t), (0, M.tI)({
+      R.ZP.refreshSearchQueryAnalyticsId(t), (0, k.tI)({
         searchContext: t,
         query: r,
         queryString: n
@@ -500,7 +500,7 @@ function W(e) {
       }
       return null
     }),
-    k = (0, N.nP)({
+    M = (0, N.nP)({
       isXDMSearch: t.type === U.aib.DMS,
       location: "Search"
     }),
@@ -508,7 +508,7 @@ function W(e) {
       isXDMSearch: t.type === U.aib.DMS,
       location: "Search"
     }),
-    V = k || Z,
+    V = M || Z,
     F = (0, A.$)({
       location: "Search"
     }),

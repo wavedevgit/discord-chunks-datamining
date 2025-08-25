@@ -44,8 +44,8 @@ function x(e, t, n) {
 }
 let L = "seenQSTutorial",
   j = 5,
-  M = 100,
-  k = [Chunk212819.h8.USER, Chunk212819.h8.GROUP_DM, Chunk212819.h8.TEXT_CHANNEL, Chunk212819.h8.GUILD, Chunk212819.h8.APPLICATION, Chunk212819.h8.LINK, Chunk212819.h8.IN_APP_NAVIGATION],
+  k = 100,
+  M = [Chunk212819.h8.USER, Chunk212819.h8.GROUP_DM, Chunk212819.h8.TEXT_CHANNEL, Chunk212819.h8.GUILD, Chunk212819.h8.APPLICATION, Chunk212819.h8.LINK, Chunk212819.h8.IN_APP_NAVIGATION],
   U = 0,
   G = false,
   B = false,
@@ -185,7 +185,7 @@ function J(e) {
     query: n,
     queryMode: i
   } = e, a = null != (t = A.Z.getGuildId()) ? t : true, o = new Set(["user:".concat(m.default.getId())]);
-  null != a && o.add("guild:".concat(a)), r = null != r ? r : new u.ZP(et, k, null != i ? M : j, {
+  null != a && o.add("guild:".concat(a)), r = null != r ? r : new u.ZP(et, M, null != i ? k : j, {
     frecencyBoosters: true,
     blacklist: o
   }), F = null, H = n.length, Z = i, r.search(n)
@@ -225,7 +225,7 @@ function er(e) {
   } = e;
   if (null == r) returnfalse;
   if (Z !== a) {
-    r.setResultTypes(null != a ? [a] : k), r.setLimit(null != a ? M : j);
+    r.setResultTypes(null != a ? [a] : M), r.setLimit(null != a ? k : j);
     let e = null != (t = A.Z.getGuildId()) ? t : true;
     a === u.h8.USER && null != e ? r.setOptions({
       userFilters: {

@@ -85,11 +85,11 @@ function p(e) {
     uploadButtonLabel: h = s.intl.string(s.t["MsUY/f"]),
     radioGroupAriaLabel: b = s.intl.string(s.t["0Q0UJi"]),
     disabled: q = false
-  } = e, C = l === f, [v, j] = r.useState(C ? A : null), [x, U] = r.useState(null), V = r.useRef(null), O = r.useRef(null);
+  } = e, C = l === f, [v, j] = r.useState(C ? A : null), [x, U] = r.useState(null), V = r.useRef(null), P = r.useRef(null);
   r.useEffect(() => {
     p !== f && (j(null), U(null))
   }, [p]);
-  let P = null != x ? s.intl.formatToPlainString(s.t["Kw+5YW"], {
+  let O = null != x ? s.intl.formatToPlainString(s.t["Kw+5YW"], {
       filename: x
     }) : s.intl.string(s.t.SNPvSk),
     I = (0, o.arW)({
@@ -124,7 +124,7 @@ function p(e) {
   return r.useEffect(() => {
     if (C && null != x) {
       var e, t;
-      null == (t = O.current) || null == (e = t.ref) || e.focus()
+      null == (t = P.current) || null == (e = t.ref) || e.focus()
     }
   }, [C, x]), (0, n.jsxs)("div", {
     className: d.imageSelectionContainer,
@@ -193,12 +193,12 @@ function p(e) {
     }, F), {
       className: d.radioGroup,
       children: [null != v && (0, n.jsx)(g, {
-        ref: O,
+        ref: P,
         selectedImageName: l,
         onChange: m,
         disabled: q,
         name: f,
-        alt: P,
+        alt: O,
         data: v
       }), t.map(e => (0, n.jsx)(g, c({
         selectedImageName: l,

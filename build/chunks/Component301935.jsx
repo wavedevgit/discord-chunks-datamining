@@ -69,12 +69,12 @@ function j(e, t) {
   return n
 }
 
-function M(e, t) {
+function k(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let k = "https://support.discord.com/hc/en-us";
+let M = "https://support.discord.com/hc/en-us";
 var U = function(e) {
   return e[e.LOADING = 0] = "LOADING", e[e.DONE = 1] = "DONE", e[e.ERROR = 2] = "ERROR", e
 }({});
@@ -92,8 +92,8 @@ function G(e) {
     appId: x,
     plan: L,
     storeListing: j,
-    price: M,
-    isGuildSubscription: k,
+    price: k,
+    isGuildSubscription: M,
     subscriptionForGuild: U,
     sku: G,
     isCancelled: W,
@@ -187,7 +187,7 @@ function G(e) {
       className: D.details,
       children: [(0, r.jsx)(Z, {
         title: w.intl.string(w.t["5D/KEB"]),
-        content: k ? (0, r.jsxs)(r.Fragment, {
+        content: M ? (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsxs)("span", {
             className: D.subscriptionTypeRow,
             children: [(0, r.jsx)(c.QTo, {
@@ -212,9 +212,9 @@ function G(e) {
             size: "xs"
           }), w.intl.string(w.t["6anEVl"])]
         })
-      }), null != M && (0, r.jsx)(Z, {
+      }), null != k && (0, r.jsx)(Z, {
         title: w.intl.string(w.t.KI7ER0),
-        content: M
+        content: k
       }), (0, r.jsx)(Z, {
         title: w.intl.string(w.t.dnUzb2),
         content: (0, N.p)(null != (u = p.createdAt) ? u : p.currentPeriodStart)
@@ -316,7 +316,7 @@ function F(e) {
       let {
         default: e
       } = await n.e("6284").then(n.bind(n, 257514));
-      return n => (0, r.jsx)(e, M(L({}, n), {
+      return n => (0, r.jsx)(e, k(L({}, n), {
         application: t,
         storeListing: a,
         subscription: d,
@@ -334,7 +334,7 @@ function F(e) {
         let {
           default: t
         } = await n.e("18879").then(n.bind(n, 389262));
-        return n => (0, r.jsx)(t, M(L({}, n), {
+        return n => (0, r.jsx)(t, k(L({}, n), {
           storeListing: a,
           subscription: y.Z.createFromServer(e)
         }))
@@ -434,7 +434,7 @@ function Y(e) {
       children: [w.intl.format(w.t.IIHUUF, {
         subscriptionId: t.id
       }), (0, r.jsx)("br", {}), w.intl.format(w.t.fh65ER, {
-        helpLink: k
+        helpLink: M
       })]
     })
   }) : (0, r.jsxs)("div", {

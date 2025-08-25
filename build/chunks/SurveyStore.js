@@ -85,7 +85,7 @@ function x() {
 }
 
 function L(e) {
-  return M(e) && j(e)
+  return k(e) && j(e)
 }
 
 function j(e) {
@@ -132,11 +132,11 @@ function j(e) {
   return !!i && !!a
 }
 
-function M(e) {
+function k(e) {
   returntrue
 }
 
-function k(e) {
+function M(e) {
   let t = l.K.get(m.z7k);
   return null == t || a()().diff(t, "day") < e
 }
@@ -149,7 +149,7 @@ function U(e) {
   let n = null != t,
     r = n && null == v.hiddenSurveys[t.key],
     i = n && L(t);
-  k(R);
+  M(R);
   let a = false;
   A = r && i && !a ? t : null
 }

@@ -88,9 +88,9 @@ let P = 490,
   x = 200,
   L = 120,
   j = Chunk647438.forwardRef(function(e, t) {
-    var n, a, T, A, R, j, M;
+    var n, a, T, A, R, j, k;
     let {
-      channel: k,
+      channel: M,
       type: U,
       editorHeight: G,
       onVisibilityChange: B,
@@ -98,8 +98,8 @@ let P = 490,
       barsHeight: V
     } = e, F = (0, h.Dt)(), H = (0, l.e7)([E.Z], () => {
       var e;
-      return null != (e = E.Z.getGuild(k.guild_id)) ? e : null
-    }, [k.guild_id]), Y = i.useRef(null), [W, K, z] = (0, O.Z)(C(S({}, e), {
+      return null != (e = E.Z.getGuild(M.guild_id)) ? e : null
+    }, [M.guild_id]), Y = i.useRef(null), [W, K, z] = (0, O.Z)(C(S({}, e), {
       guild: H
     }), t, Y), q = (null == (n = U.autocomplete) ? true : n.forceChatLayer) ? g.ZP : m.ZP, X = (0, _.DJ)(W.selectedIndex);
     (0, p.KR)(F, W.isVisible, X);
@@ -109,10 +109,10 @@ let P = 490,
         state: W
       }),
       J = (0, l.e7)([d.ZP], () => {
-        let e = d.ZP.getSelfEmbeddedActivityForChannel(k.id),
+        let e = d.ZP.getSelfEmbeddedActivityForChannel(M.id),
           t = d.ZP.getActivityPanelMode();
-        return (0, u.l5)(k) && null != e && (0, f.p)(e.location) === k.id && t === v.Ez.PANEL
-      }, [k]),
+        return (0, u.l5)(M) && null != e && (0, f.p)(e.location) === M.id && t === v.Ez.PANEL
+      }, [M]),
       $ = i.useMemo(() => (null == Q ? true : Q.top) == null && (null == Q ? true : Q.left) == null && (null == Q ? true : Q.bottom) == null && (null == Q ? true : Q.right) == null ? "" : String(Date.now()), [null == Q ? true : Q.top, null == Q ? true : Q.left, null == Q ? true : Q.bottom, null == Q ? true : Q.right]);
     if (i.useEffect(() => {
         B(W.isVisible)
@@ -120,7 +120,7 @@ let P = 490,
     let ee = null != (T = W.query.typeInfo.renderResults({
       results: W.query.results,
       selectedIndex: W.selectedIndex,
-      channel: k,
+      channel: M,
       guild: H,
       query: W.query.queryText,
       options: W.query.options,
@@ -175,7 +175,7 @@ let P = 490,
         targetRef: e.targetRef,
         overrideTargetRect: Q,
         positionKey: $,
-        position: null != (M = e.position) ? M : "top",
+        position: null != (k = e.position) ? k : "top",
         align: "left",
         spacing: 8,
         autoInvert: true,

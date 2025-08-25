@@ -105,7 +105,7 @@ let P = function(e) {
     "aria-controls": T,
     focusProps: S,
     ref: P
-  } = e, [w, D] = i.useState(false), [x, L] = i.useState(50), j = w || y, M = (0, h.l)(b, "emojiButton", j ? "Hovered" : "Normal"), k = R(x), U = i.useCallback(() => {
+  } = e, [w, D] = i.useState(false), [x, L] = i.useState(50), j = w || y, k = (0, h.l)(b, "emojiButton", j ? "Hovered" : "Normal"), M = R(x), U = i.useCallback(() => {
     if (j) return;
     let e = Math.floor(Math.random() * A);
     D(true), L(e), (0, _.x)(g.qR.EmojiButtonMouseEntered)
@@ -123,7 +123,7 @@ let P = function(e) {
     children: e => (0, r.jsx)(u.P3F, {
       innerRef: z,
       tabIndex: t,
-      className: o()(M, n),
+      className: o()(k, n),
       onMouseEnter: () => {
         var t;
         U(), null == (t = e.onMouseEnter) || t.call(e)
@@ -155,7 +155,7 @@ let P = function(e) {
           } = e;
           return (0, r.jsxs)(s.animated.div, {
             className: b.spriteContainer,
-            style: I(O({}, k), {
+            style: I(O({}, M), {
               transform: t.to([0, 1], [1, 1.14]).to(e => "scale(".concat(e, ")"))
             }),
             children: [(0, r.jsx)("div", {

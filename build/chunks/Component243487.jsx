@@ -128,7 +128,7 @@ function W(e) {
 let K = Chunk647438.memo(function(e) {
   let {
     id: t,
-    context: n = k.Yn.DEFAULT,
+    context: n = M.Yn.DEFAULT,
     channel: a,
     overlayVoiceStates: o,
     displayNameMode: c,
@@ -144,7 +144,7 @@ let K = Chunk647438.memo(function(e) {
     maxDisplayedVoiceStates: y = j.At
   } = e, O = (0, w.ee)(() => W(o), [o]), [v, I] = o, T = I.length > 0 && null != n && null != a && (!d || f), S = (0, s.Wu)([E.Z], () => Array.from(O).map(e => E.Z.getStreamForUser(e, _)).filter(C.lm).map(e => e.ownerId), [_, O]);
   i.useEffect(() => {
-    T && (0, w.zi)(M.Odu.VOICE_V3, {
+    T && (0, w.zi)(k.Odu.VOICE_V3, {
       locked: A.default.isInstanceLocked(),
       shownUserIds: Array.from(O),
       liveUserIds: S,
@@ -158,7 +158,7 @@ let K = Chunk647438.memo(function(e) {
     R = y !== j.Og ? I.slice(0, y) : I,
     P = y !== j.Og ? I.slice(y) : [],
     x = v.get(P[0]),
-    B = u === M.OYC.ALWAYS && y !== j.Og;
+    B = u === k.OYC.ALWAYS && y !== j.Og;
   return T ? (0, r.jsxs)("div", {
     className: G.voiceUserContainer,
     children: [R.map(e => {
@@ -253,7 +253,7 @@ function q(e) {
   var t;
   let {
     isSettingsPreview: n
-  } = e, i = (0, s.e7)([O.Z, y.Z], () => y.Z.getChannel(O.Z.getVoiceChannelId())), a = (0, f.ZP)(i), o = z(k.Yn.DEFAULT, e.maxDisplayedVoiceStates), l = (0, s.e7)([E.Z], () => E.Z.getStreamerActiveStreamMetadata()), c = (0, x.II)(), d = (0, u.q)(null == c ? true : c.id), p = (0, s.cj)([E.Z, A.default], () => {
+  } = e, i = (0, s.e7)([O.Z, y.Z], () => y.Z.getChannel(O.Z.getVoiceChannelId())), a = (0, f.ZP)(i), o = z(M.Yn.DEFAULT, e.maxDisplayedVoiceStates), l = (0, s.e7)([E.Z], () => E.Z.getStreamerActiveStreamMetadata()), c = (0, x.II)(), d = (0, u.q)(null == c ? true : c.id), p = (0, s.cj)([E.Z, A.default], () => {
     let e = E.Z.getCurrentUserActiveStream();
     return {
       displayUserMode: A.default.getDisplayUserMode(),

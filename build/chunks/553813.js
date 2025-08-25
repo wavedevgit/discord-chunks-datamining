@@ -83,7 +83,7 @@ function O(e, t, n, r) {
 }
 
 function v(e, t) {
-  if (k(e, t)) return null;
+  if (M(e, t)) return null;
   var n = g(e),
     r = g(t),
     i = "";
@@ -223,11 +223,11 @@ function j(e, t, n) {
   return R(e, t, n) > 0
 }
 
-function M(e, t, n) {
+function k(e, t, n) {
   return 0 > R(e, t, n)
 }
 
-function k(e, t, n) {
+function M(e, t, n) {
   return 0 === R(e, t, n)
 }
 
@@ -252,7 +252,7 @@ function Z(e, t, n, r) {
     case "":
     case "=":
     case "==":
-      return k(e, n, r);
+      return M(e, n, r);
     case "!=":
       return U(e, n, r);
     case ">":
@@ -260,7 +260,7 @@ function Z(e, t, n, r) {
     case ">=":
       return G(e, n, r);
     case "<":
-      return M(e, n, r);
+      return k(e, n, r);
     case "<=":
       return B(e, n, r);
     default:
@@ -278,7 +278,7 @@ function V(e, t) {
   if (!(this instanceof V)) return new V(e, t);
   r("comparator", e, t), this.options = t, this.loose = !!t.loose, this.parse(e), this.semver === F ? this.value = "" : this.value = this.operator + this.semver.version, r("comp", this)
 }
-exports.rcompareIdentifiers = S, exports.major = A, exports.minor = C, exports.patch = N, exports.compare = R, exports.compareLoose = P, exports.compareBuild = w, exports.rcompare = D, exports.sort = x, exports.rsort = L, exports.gt = j, exports.lt = M, exports.eq = k, exports.neq = U, exports.gte = G, exports.lte = B, exports.cmp = Z, exports.Comparator = V;
+exports.rcompareIdentifiers = S, exports.major = A, exports.minor = C, exports.patch = N, exports.compare = R, exports.compareLoose = P, exports.compareBuild = w, exports.rcompare = D, exports.sort = x, exports.rsort = L, exports.gt = j, exports.lt = k, exports.eq = M, exports.neq = U, exports.gte = G, exports.lte = B, exports.cmp = Z, exports.Comparator = V;
 var F = {};
 
 function H(e, t) {
@@ -468,10 +468,10 @@ function eu(e, t, n) {
 function ed(e, t, n, r) {
   switch (e = new y(e, r), t = new H(t, r), n) {
     case ">":
-      i = j, a = B, o = M, s = ">", l = ">=";
+      i = j, a = B, o = k, s = ">", l = ">=";
       break;
     case "<":
-      i = M, a = G, o = j, s = "<", l = "<=";
+      i = k, a = G, o = j, s = "<", l = "<=";
       break;
     default:
       throw TypeError('Must provide a hilo val of "<" or ">"')

@@ -1,11 +1,52 @@
 /** Chunk was on web.js **/
 /** chunk id: 176782, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-require.r(exports), require.d(exports, {
-  default: () => i,
-  metadata: () => r
+require.d(exports, {
+  _: () => l
 });
-let r = {
-    fileBytes: 126082
+var Chunk442837 = require("./442837.js"),
+  Chunk607070 = require("./607070.js"),
+  Chunk391110 = require("./391110.js"),
+  Chunk424373 = require("./424373.js");
+let s = {
+    subtitle: {
+      onlyShowOnHover: false
+    },
+    description: {
+      onlyShowOnHover: true,
+      className: Chunk424373.cardDescription
+    },
+    descriptionCta: {
+      onlyShowOnHover: true
+    }
   },
-  i = "https://cdn.discordapp.com/assets/content/a776ccf331f6d2071dc58e1415c387f57f41a08a5ed554b8535ffbd07fc662f1.jpg"
+  l = e => {
+    let t = !(0, r.e7)([i.Z], () => i.Z.useReducedMotion),
+      n = {
+        [a.zW.DEFAULT]: s,
+        [a.zW.REWARD]: {
+          subtitle: {
+            onlyShowOnHover: true,
+            textVariant: "text-sm/semibold"
+          },
+          description: {
+            onlyShowOnHover: true,
+            className: o.cardDescriptionTenureReward
+          },
+          descriptionCta: {
+            onlyShowOnHover: false,
+            hideOnHoverComponent: true,
+            className: o.descriptionCTATenureReward
+          },
+          cardContainer: {
+            className: t ? o.nitroGradientBorderHover : true
+          }
+        },
+        [a.zW.NITRO_GRADIENT_HOVER_BORDER]: {
+          cardContainer: {
+            className: o.nitroGradientBorderHover
+          }
+        }
+      };
+    return null != e ? n[e] : n[a.zW.DEFAULT]
+  }

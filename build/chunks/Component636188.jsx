@@ -88,9 +88,9 @@ function L(e, t) {
   return i
 }
 let j = 25,
-  M = 720;
+  k = 720;
 
-function k() {
+function M() {
   return [{
     name: Chunk388032.intl.string(Chunk388032.t.Sp2NFx),
     extensions: ["jpg", "jpeg", "png", "gif", "mp4"]
@@ -158,7 +158,7 @@ function G(e) {
     userId: t.user_id,
     assetId: t.id,
     assetHash: t.asset,
-    size: M,
+    size: k,
     canAnimate: false
   });
   return (0, r.jsx)("img", {
@@ -320,7 +320,7 @@ function H(e) {
     disabled: i
   } = e, a = (0, l.vRw)(), o = i ? C.intl.formatToPlainString(C.t.ykGFeH, {
     maxCustomBackgrounds: j
-  }) : C.intl.string(C.t.Qx0tFR), s = k();
+  }) : C.intl.string(C.t.Qx0tFR), s = M();
 
   function c() {
     (0, l.ZDy)(async () => {
@@ -398,7 +398,7 @@ function Y(e) {
             userId: e.user_id,
             assetId: e.id,
             assetHash: e.asset,
-            size: M
+            size: k
           });
           return null == n ? null : (0, i.createElement)(B, D(P({}, t), {
             key: e.id,

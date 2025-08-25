@@ -322,7 +322,7 @@ let e2 = () => {
         searchableTitles: [ez.intl.string(ez.t.URyqtL)],
         label: ez.intl.string(ez.t.URyqtL),
         ariaLabel: ez.intl.string(ez.t.URyqtL),
-        element: ek.Z,
+        element: eM.Z,
         predicate: () => e0
       },
       [eF.s6.GAMES_MY_GAMES]: {
@@ -351,7 +351,7 @@ let e2 = () => {
         searchableTitles: [ez.intl.string(ez.t["vi7f+v"])],
         label: ez.intl.string(ez.t["vi7f+v"]),
         ariaLabel: ez.intl.string(ez.t["vi7f+v"]),
-        element: M.Z,
+        element: k.Z,
         newIndicator: (0, r.jsx)(e8, {}),
         newIndicatorDismissibleContentTypes: [...e4()],
         notice: {
@@ -1632,7 +1632,7 @@ let e2 = () => {
         searchableTitles: [ez.intl.string(ez.t.AVDyEh)],
         label: ez.intl.string(ez.t.AVDyEh),
         element: eb.Z,
-        predicate: () => !e0 && (0, eM.Jw)()
+        predicate: () => !e0 && (0, ek.Jw)()
       },
       [eF.s6.OVERLAY]: {
         section: eY.oAB.OVERLAY,
@@ -2017,7 +2017,7 @@ let e2 = () => {
         searchableTitles: ["Quest Preview Tool"],
         label: "Quest Preview Tool",
         element: G.Z,
-        predicate: () => (0, k.X7)({
+        predicate: () => (0, M.X7)({
           location: eW.dr.QUEST_PREVIEW_TOOL
         })
       },

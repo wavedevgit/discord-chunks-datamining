@@ -10,12 +10,12 @@ require.d(exports, {
   Sm: () => P,
   fK: () => U,
   fi: () => V,
-  jr: () => k,
+  jr: () => M,
   mK: () => R,
   oK: () => D,
   oc: () => L,
   p8: () => F,
-  qg: () => M
+  qg: () => k
 }), require("./388685.js"), require("./49124.js");
 var Chunk561842 = require("./561842.js"),
   Chunk664081 = require("./664081.js"),
@@ -152,7 +152,7 @@ let R = e => {
         error: e
       }), i && (0, f.v)("fetchCollectiblesCategories failed: ".concat(e.message))
     }
-  }, M = async e => {
+  }, k = async e => {
     if (_.Z.isFetching) return;
     s.Z.dispatch({
       type: "COLLECTIBLES_PURCHASES_FETCH"
@@ -179,7 +179,7 @@ let R = e => {
         error: e
       }), e
     }
-  }, k = async (e, t) => {
+  }, M = async (e, t) => {
     s.Z.dispatch({
       type: "COLLECTIBLES_PRODUCT_FETCH",
       skuId: e

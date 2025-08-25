@@ -109,7 +109,7 @@ function j(e) {
   x.hardwareClassificationForDecoupled = t, x.hardwareClassificationForDecoupled === _.x.MEETS_AUTO_ENABLE && r !== _.x.MEETS_AUTO_ENABLE && x.clipsSettings.clipsEnabled && (x.clipsSettings.decoupledClipsEnabled = true)
 }
 
-function M(e) {
+function k(e) {
   let {
     clip: t
   } = e;
@@ -120,7 +120,7 @@ function M(e) {
     }
 }
 
-function k(e) {
+function M(e) {
   let {
     settings: t
   } = e;
@@ -450,7 +450,7 @@ g(er, "displayName", "ClipsStore"), g(er, "persistKey", "ClipsStore"), g(er, "mi
   }
 })]);
 let ei = new er(Chunk570140.Z, {
-    CLIPS_SETTINGS_UPDATE: k,
+    CLIPS_SETTINGS_UPDATE: M,
     CLIPS_SAVE_CLIP: Z,
     CLIPS_SAVE_CLIP_PLACEHOLDER: V,
     CLIPS_SAVE_CLIP_PLACEHOLDER_ERROR: F,
@@ -463,7 +463,7 @@ let ei = new er(Chunk570140.Z, {
     CLIPS_CLEAR_NEW_CLIP_IDS: $,
     CLIPS_LOAD_DIRECTORY_SUCCESS: X,
     CLIPS_DELETE_CLIP: Q,
-    CLIPS_UPDATE_METADATA: M,
+    CLIPS_UPDATE_METADATA: k,
     RTC_CONNECTION_FLAGS: ee,
     CLIPS_SHOW_CALL_WARNING: H,
     VOICE_CHANNEL_SELECT: Y,

@@ -286,7 +286,7 @@ let j = {
     APPLE_AND_GPAY_DISABLED: "Express Checkout Element - Google Pay and Apple Pay Disabled",
     CONFIGURABLE: "Express Checkout Element - Configurable"
   },
-  M = {
+  k = {
     GPAY_FILTERED: {
       wallets: {
         googlePay: "always",
@@ -306,7 +306,7 @@ let j = {
       }
     }
   },
-  k = {
+  M = {
     appearance: {
       theme: "flat",
       variables: {
@@ -330,9 +330,9 @@ let j = {
   B = "``";
 
 function Z() {
-  let [e, t] = Chunk647438.useState(G(k)), [n, o] = Chunk647438.useState(k), [s, d] = Chunk647438.useState(G(U)), [f, p] = Chunk647438.useState(U), [h, m] = Chunk647438.useState(null), [g, b] = Chunk647438.useState((0, Chunk951288.jsx)(Chunk450272.DS, {
+  let [e, t] = Chunk647438.useState(G(M)), [n, o] = Chunk647438.useState(M), [s, d] = Chunk647438.useState(G(U)), [f, p] = Chunk647438.useState(U), [h, m] = Chunk647438.useState(null), [g, b] = Chunk647438.useState((0, Chunk951288.jsx)(Chunk450272.DS, {
     errorLabel: j.CONFIGURABLE,
-    elementOptions: k,
+    elementOptions: M,
     children: (0, Chunk951288.jsx)(Chunk289008.ExpressCheckoutElement, {
       onConfirm: e => {
         console.log("ExpressCheckoutElement onConfirm event: ", e)
@@ -464,14 +464,14 @@ function V() {
             children: "expressCheckoutElement.options:"
           }), (0, r.jsx)(_.Z, {
             className: O.markdown,
-            children: "".concat(B).concat(G(M[e]), " ").concat(B)
+            children: "".concat(B).concat(G(k[e]), " ").concat(B)
           }), (0, r.jsx)(E.DS, {
             errorLabel: t,
             children: (0, r.jsx)(a.ExpressCheckoutElement, {
               onConfirm: e => {
                 console.log("ExpressCheckoutElement onConfirm event: ", e)
               },
-              options: M[e]
+              options: k[e]
             })
           })]
         })

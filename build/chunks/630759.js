@@ -11,7 +11,7 @@ require.d(exports, {
   aZ: () => R,
   bo: () => j,
   fz: () => W,
-  kK: () => M,
+  kK: () => k,
   lg: () => Y,
   om: () => V,
   pL: () => P,
@@ -138,7 +138,7 @@ function j(e) {
   }
 }
 
-function M(e) {
+function k(e) {
   let {
     isCurrentUserKeyPersistent: t,
     isOtherUserKeyPersistent: n,
@@ -155,7 +155,7 @@ function M(e) {
     helpArticle: N()
   })
 }
-async function k(e) {
+async function M(e) {
   let t = d.default.getStaticAuthSessionId();
   return a()(null != t, "[getCurrentUserPublicKey] session id should not be null"), await f.Z.getMLSSigningKey(t, e)
 }
@@ -182,7 +182,7 @@ async function B(e) {
   let {
     key: t,
     signature: n
-  } = await k(e);
+  } = await M(e);
   try {
     await l.tn.put({
       url: A.ANM.VOICE_PUBLIC_KEYS(),
@@ -209,7 +209,7 @@ async function F(e) {
   let t = d.default.getId(),
     {
       key: n
-    } = await k(e),
+    } = await M(e),
     r = await G(t, n, e);
   return r || (0, T.KA)(e), r
 }

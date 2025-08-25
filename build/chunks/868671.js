@@ -36,14 +36,13 @@ function v(e) {
   } = e, [j, E] = r.useState(false), {
     requestId: S,
     entries: I,
-    impressionCappedEntryIds: P,
-    hasLeaderboardEntry: Z
-  } = (0, m.Z)(v), T = (0, i.e7)([p.Z], () => p.Z.hidden), N = (0, i.e7)([c.Z], () => c.Z.isFocused()), A = (0, i.e7)([o.Z], () => o.Z.getChannel(v)), w = (0, i.e7)([s.Z], () => s.Z.getGuild(O), [O]), R = (0, h.E)(w), M = null != R && R && (null == A ? true : A.isForumChannel()) === false, [D, L, k, U] = r.useMemo(() => {
+    impressionCappedEntryIds: P
+  } = (0, m.Z)(v), Z = (0, i.e7)([p.Z], () => p.Z.hidden), T = (0, i.e7)([c.Z], () => c.Z.isFocused()), N = (0, i.e7)([o.Z], () => o.Z.getChannel(v)), A = (0, i.e7)([s.Z], () => s.Z.getGuild(O), [O]), w = (0, h.E)(A), R = null != w && w && (null == N ? true : N.isForumChannel()) === false, [M, D, L, k] = r.useMemo(() => {
     let e;
-    if (null == I || 0 === I.length || null == S || !M) return [t, n, x];
-    let r = j ? I.length : Z ? 4 : 3,
+    if (null == I || 0 === I.length || null == S || !R) return [t, n, x];
+    let r = j ? I.length : 3,
       i = I.slice(0, r);
-    e = T ? [{
+    e = Z ? [{
       type: a.so.HIDDEN_CONTENT_INVENTORY
     }] : i.map(e => ({
       type: a.so.CONTENT_INVENTORY,
@@ -75,42 +74,42 @@ function v(e) {
       [l, ...t],
       [...n, l, ...e], Math.random(), e
     ]
-  }, [v, I, j, t, O, S, n, x, T, M, Z]), B = r.useRef(0), F = r.useRef(I), G = r.useRef(true), H = r.useRef({
+  }, [v, I, j, t, O, S, n, x, Z, R]), U = r.useRef(0), B = r.useRef(I), F = r.useRef(true), G = r.useRef({
     impressionCappedEntryIds: P
-  }), V = r.useCallback(e => {
+  }), H = r.useCallback(e => {
     var t;
     let n = Math.floor(e / g.YN),
-      r = Math.min(null != (t = null == U ? true : U.length) ? t : 0, n);
-    B.current = Math.max(B.current, r)
-  }, [U]);
+      r = Math.min(null != (t = null == k ? true : k.length) ? t : 0, n);
+    U.current = Math.max(U.current, r)
+  }, [k]);
   return r.useEffect(() => {
-    F.current = I
+    B.current = I
   }, [I]), r.useEffect(() => {
-    H.current = {
+    G.current = {
       impressionCappedEntryIds: P
     }
-  }, [P]), r.useEffect(() => (B.current = 0, G.current = Date.now(), () => {
+  }, [P]), r.useEffect(() => (U.current = 0, F.current = Date.now(), () => {
     var e, t;
-    if (null == S || null == G.current || Date.now() - G.current < 3e3) return;
-    let n = null != (t = null == (e = F.current) ? true : e.map(e => e.id)) ? t : [],
-      r = n.slice(0, B.current);
-    !T && N && M && ((0, f.e)(y.rMx.RANKING_ITEMS_SEEN_MUST_BE_SAMPLED, {
+    if (null == S || null == F.current || Date.now() - F.current < 3e3) return;
+    let n = null != (t = null == (e = B.current) ? true : e.map(e => e.id)) ? t : [],
+      r = n.slice(0, U.current);
+    !Z && T && R && ((0, f.e)(y.rMx.RANKING_ITEMS_SEEN_MUST_BE_SAMPLED, {
       request_id: S,
-      first_shown_at: G.current,
+      first_shown_at: F.current,
       item_ids: r,
       surface_type: b.Kd.GUILD_MEMBER_LIST,
       channel_id: v,
       guild_id: O,
       all_item_ids: n,
-      impression_capped_item_ids: [...H.current.impressionCappedEntryIds]
+      impression_capped_item_ids: [...G.current.impressionCappedEntryIds]
     }), (0, d.wm)("useInjectContentInventoryFeed") && l.Z.dispatch({
       type: "CONTENT_INVENTORY_TRACK_ITEM_IMPRESSIONS",
       itemIds: r
     }))
-  }), [S, v, O, T, N, M]), {
-    groups: D,
-    rows: L,
-    version: k,
-    updateMaxRowSeen: V
+  }), [S, v, O, Z, T, R]), {
+    groups: M,
+    rows: D,
+    version: L,
+    updateMaxRowSeen: H
   }
 }

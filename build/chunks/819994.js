@@ -1,5 +1,5 @@
 /** Chunk was on 53162 **/
-/** chunk id: 819994, original params: e,t,n (module,exports,require) **/
+/** chunk id: 819994, original params: t,e,n (module,exports,require) **/
 module.exports = {
   modal: "modal__1e7f0",
   header: "header__1e7f0",

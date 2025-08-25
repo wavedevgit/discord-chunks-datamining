@@ -92,7 +92,7 @@ function $(e, t) {
 }
 
 function ee(e) {
-  k.Z.requestPermission(t => {
+  M.Z.requestPermission(t => {
     let n = t ? Y.$Ab.ENABLED : Y.$Ab.BLOCKED;
     _.default.setPermissionsState(n, e)
   })

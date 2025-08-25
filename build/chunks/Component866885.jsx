@@ -165,7 +165,7 @@ function F(e) {
         onMouseMove: n,
         onMouseDown: n,
         onMouseLeave: i,
-        className: M.clickShield,
+        className: k.clickShield,
         onDoubleClick: ei
       }), (0, r.jsx)(w.YB, {
         idle: a,
@@ -208,14 +208,14 @@ function F(e) {
         onForceIdle: s
       } = e;
       return (0, r.jsxs)(b.Z, {
-        className: o()(M.root, {
-          [M.pipMode]: en,
+        className: o()(k.root, {
+          [k.pipMode]: en,
           [U.elevationHigh]: en,
-          [k.idle]: i && !(null == (t = B.config) ? true : t.useInteractivePIP),
-          [M.pipModeShort]: en && !C,
-          [M.pipModeTall]: en && C,
-          [M.hidden]: W,
-          [M.multiPIPMode]: er
+          [M.idle]: i && !(null == (t = B.config) ? true : t.useInteractivePIP),
+          [k.pipModeShort]: en && !C,
+          [k.pipModeTall]: en && C,
+          [k.hidden]: W,
+          [k.multiPIPMode]: er
         }),
         noBorder: !en,
         children: [(0, r.jsx)("div", {
@@ -228,19 +228,19 @@ function F(e) {
             users: es
           })
         }), p ? (0, r.jsx)(l.$jN, {
-          className: o()(M.iframe, {
-            [M.pipModeShort]: en && !C,
-            [M.pipModeTall]: en && C
+          className: o()(k.iframe, {
+            [k.pipModeShort]: en && !C,
+            [k.pipModeTall]: en && C
           })
         }) : (0, r.jsx)(P.J, {
           allowPopups: (0, N.h)(V),
           referrerPolicy: D.um.has(B.applicationId) ? "no-referrer" : "origin",
           url: B.url,
           queryParams: el,
-          className: o()(M.iframe, {
-            [M.pipModeShort]: en && !C,
-            [M.pipModeTall]: en && C,
-            [M.pipNonInteractive]: en && !(null == (n = B.config) ? true : n.useInteractivePIP)
+          className: o()(k.iframe, {
+            [k.pipModeShort]: en && !C,
+            [k.pipModeTall]: en && C,
+            [k.pipNonInteractive]: en && !(null == (n = B.config) ? true : n.useInteractivePIP)
           }),
           shouldRefocus: !en && H
         }), !en && null != _ && (0, r.jsx)(w.Ds, {

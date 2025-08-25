@@ -1,5 +1,5 @@
 /** Chunk was on 53162 **/
-/** chunk id: 598952, original params: e,t,n (module,exports,require) **/
+/** chunk id: 598952, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   Z: () => o
 });
@@ -8,11 +8,11 @@ require("./647438.js");
 var Chunk481060 = require("./481060.js"),
   Chunk294763 = require("./294763.js");
 
-function o(e) {
-  var t;
+function o(t) {
+  var e;
   let {
     attachment: n
-  } = e, o = Math.round((null != (t = n.size) ? t : 0) / 1024 / 1024 * 100) / 100;
+  } = t, o = Math.round((null != (e = n.size) ? e : 0) / 1024 / 1024 * 100) / 100;
   return (0, a.jsxs)("div", {
     className: l.container,
     children: [(0, a.jsx)(r.ZKT, {

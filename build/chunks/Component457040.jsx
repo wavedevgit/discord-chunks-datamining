@@ -154,8 +154,8 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
         } = t;
         switch (e.type) {
           case N.al.CREATE_STICKER:
-            O.default.track(k.rMx.OPEN_MODAL, {
-              type: k.jXE.CREATE_STICKER_MODAL,
+            O.default.track(M.rMx.OPEN_MODAL, {
+              type: M.jXE.CREATE_STICKER_MODAL,
               location: Z
             }), (0, u.ZDy)(async () => {
               let {
@@ -183,7 +183,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
         onGridItemSelect: eN,
         store: p.ZN,
         setInspectedStickerPosition: p.ZN.setInspectedExpressionPosition,
-        gridNavigatorId: M.Vr
+        gridNavigatorId: k.Vr
       });
     i.useEffect(() => p.ZN.resetStoreState, []);
     let eL = () => {
@@ -213,8 +213,8 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
       null == (e = er.current) || e.focus()
     }, []);
     let ej = i.useCallback(() => {
-      G(), O.default.track(k.rMx.PREMIUM_PROMOTION_OPENED, {
-        location_section: k.jXE.STICKER_PICKER_UPSELL
+      G(), O.default.track(M.rMx.PREMIUM_PROMOTION_OPENED, {
+        location_section: M.jXE.STICKER_PICKER_UPSELL
       }), (0, g.z)()
     }, [G]);
     return (0, r.jsxs)(_.Gt, {
@@ -234,7 +234,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
         children: [(0, r.jsx)("div", V(B({
           ref: X,
           className: U.listWrapper,
-          id: M.Vr
+          id: k.Vr
         }, ew), {
           children: null != eu ? (0, r.jsx)(D.Z, {
             ref: ee,
@@ -263,8 +263,8 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
   }),
   ei = (e, t) => ((0, A.fP)(), (0, r.jsx)("div", {
     className: U.wrapper,
-    id: M.nZ,
-    "aria-labelledby": M.ED,
+    id: k.nZ,
+    "aria-labelledby": k.ED,
     role: "tabpanel",
     children: e.isLoading ? (0, r.jsx)(u.$jN, {
       className: U.loadingIndicator

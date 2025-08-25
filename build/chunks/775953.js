@@ -1,29 +1,11 @@
 /** Chunk was on web.js **/
 /** chunk id: 775953, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-require.d(exports, {
-  SE: () => u
-});
-var Chunk68133 = require("./68133.js"),
-  Chunk431462 = require("./431462.js"),
-  Chunk51466 = require("./51466.js"),
-  Chunk754396 = require("./754396.js"),
-  Chunk961742 = require("./961742.js");
-async function l(e, t = {}) {
+async function r(e, t = {}) {
   let {
     width: n,
-    height: c
-  } = (0, s.Ad)(e, t), u = await (0, r.s)(e, t, true);
-  return await (0, o.Y)(u, t), await (0, i.A)(u, t), (0, a.b)(u, t), await (0, s.P9)(u, n, c)
+    height: i
+  } = getImageSize(e, t), a = await cloneNode(e, t, true);
+  return await embedWebFonts(a, t), await embedImages(a, t), applyStyle(a, t), await nodeToDataURL(a, n, i)
 }
-async function c(e, t = {}) {
-  let {
-    width: n,
-    height: r
-  } = (0, s.Ad)(e, t), i = await l(e, t), a = await (0, s.Bi)(i), o = document.createElement("canvas"), u = o.getContext("2d"), d = t.pixelRatio || (0, s.mX)(), f = t.canvasWidth || n, _ = t.canvasHeight || r;
-  return o.width = f * d, o.height = _ * d, t.skipAutoScale || (0, s.Nv)(o), o.style.width = `${f}`, o.style.height = `${_}`, t.backgroundColor && (u.fillStyle = t.backgroundColor, u.fillRect(0, 0, o.width, o.height)), u.drawImage(a, 0, 0, o.width, o.height), o
-}
-async function u(e, t = {}) {
-  let n = await c(e, t);
-  return await (0, s._c)(n)
-}
+require("./68133.js"), require("./431462.js"), require("./51466.js"), require("./754396.js"), require("./961742.js")

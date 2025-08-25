@@ -44,8 +44,8 @@ let w = {},
   x = [],
   L = new Chunk810457.Z,
   j = false,
-  M = false,
   k = false,
+  M = false,
   U = false,
   G = Chunk709054.default.fromTimestamp(Date.now()),
   B = true,
@@ -128,7 +128,7 @@ function K() {
 }
 
 function z() {
-  w = {}, D = null, x = [], L = new Chunk810457.Z, j = false, M = false, k = false, G = Chunk709054.default.fromTimestamp(Date.now()), B = true, U = false, V = null, Z = null
+  w = {}, D = null, x = [], L = new Chunk810457.Z, j = false, k = false, M = false, G = Chunk709054.default.fromTimestamp(Date.now()), B = true, U = false, V = null, Z = null
 }
 
 function q() {
@@ -243,7 +243,7 @@ function ea(e) {
     hasMoreToLoad: n,
     analyticsPayload: r
   } = e;
-  j = false, t ? U = true : (null != n && (B = n), k = true), V = null != r ? r : null
+  j = false, t ? U = true : (null != n && (B = n), M = true), V = null != r ? r : null
 }
 
 function eo(e) {
@@ -254,11 +254,11 @@ function eo(e) {
   return null != (null == (t = (0, T.Ag)({
     location: "NotificationsInboxStore.canLoadMore",
     autoTrackExposure: false
-  })) ? true : t.notificationCenterVariant) && null != D && !j && !M && (!n || !U) && B
+  })) ? true : t.notificationCenterVariant) && null != D && !j && !k && (!n || !U) && B
 }
 
 function es() {
-  j = false, V = null, M = true
+  j = false, V = null, k = true
 }
 
 function el(e) {
@@ -287,7 +287,7 @@ function ec(e) {
 }
 
 function eu() {
-  M = false
+  k = false
 }
 
 function ed() {
@@ -379,7 +379,7 @@ class eE extends(r = Chunk442837.ZP.Store) {
     return j
   }
   get hasLoadedEver() {
-    return k
+    return M
   }
   get hasPreloaded() {
     return U

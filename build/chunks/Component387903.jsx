@@ -222,7 +222,7 @@ class J extends(r = Chunk647438.PureComponent) {
       application_id: f
     } = e;
     if (null == u || null == u.large_image && null == u.small_image) return null;
-    (0, k.Z)(e) && (o = z[c]);
+    (0, M.Z)(e) && (o = z[c]);
     let _ = (0, j.Z)(e),
       p = null != u.large_image ? (0, i.jsx)("img", {
         alt: null != (t = u.large_text) ? t : "",
@@ -380,7 +380,7 @@ class J extends(r = Chunk647438.PureComponent) {
         o = null == (l = e.assets) ? true : l.small_text
       }
     }
-    return null == o || "" === o ? null : ((0, k.Z)(e) && (o = Z.intl.formatToPlainString(Z.t.gmCZRU, {
+    return null == o || "" === o ? null : ((0, M.Z)(e) && (o = Z.intl.formatToPlainString(Z.t.gmCZRU, {
       game: o
     })), null != t) ? (0, i.jsx)(d.P3F, {
       onClick: t,
@@ -389,7 +389,7 @@ class J extends(r = Chunk647438.PureComponent) {
       children: o
     }) : (0, i.jsx)("div", {
       title: null != s ? s : true,
-      className: (0, k.Z)(e) || (0, j.Z)(e) ? V.detailsWrap : V.details,
+      className: (0, M.Z)(e) || (0, j.Z)(e) ? V.detailsWrap : V.details,
       children: o
     })
   }
@@ -400,12 +400,12 @@ class J extends(r = Chunk647438.PureComponent) {
       channel: r
     } = this.props;
     return n && null != t ? null == r ? (0, i.jsx)("div", {
-      className: (0, k.Z)(e) || (0, j.Z)(e) ? V.detailsWrap : V.details,
+      className: (0, M.Z)(e) || (0, j.Z)(e) ? V.detailsWrap : V.details,
       children: Z.intl.format(Z.t["hq/Qzc"], {
         guildName: t.name
       })
     }) : (0, i.jsxs)("div", {
-      className: s()((0, k.Z)(e) || (0, j.Z)(e) ? V.detailsWrap : V.details, V.guildDetails),
+      className: s()((0, M.Z)(e) || (0, j.Z)(e) ? V.detailsWrap : V.details, V.guildDetails),
       children: [(0, i.jsx)(O.Z, {
         guild: t,
         size: O.Z.Sizes.SMOL,

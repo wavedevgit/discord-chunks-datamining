@@ -2,7 +2,7 @@
 /** chunk id: 372113, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => k
+  Z: () => M
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -142,7 +142,7 @@ function j(e) {
   }) : u
 }
 
-function M(e) {
+function k(e) {
   let {
     quest: t,
     progressState: n,
@@ -183,7 +183,7 @@ function M(e) {
     }
   }, y.tooltipText)
 }
-let k = e => {
+let M = e => {
   var t;
   let {
     quest: n,
@@ -199,7 +199,7 @@ let k = e => {
     year: "numeric",
     month: "long",
     day: "numeric"
-  }), k = R >= m.OH.ACCEPTED, U = R >= m.OH.COMPLETED, G = (0, h.Xv)(n.config), B = _ || I, Z = (0, m.t5)(n, S.dr.QUESTS_CARD, a, A), V = (0, p.O5)(), F = i.useMemo(() => y.r.build(n.config), [n.config]), H = (0, m.Rf)(n), Y = (0, b.DD)({
+  }), M = R >= m.OH.ACCEPTED, U = R >= m.OH.COMPLETED, G = (0, h.Xv)(n.config), B = _ || I, Z = (0, m.t5)(n, S.dr.QUESTS_CARD, a, A), V = (0, p.O5)(), F = i.useMemo(() => y.r.build(n.config), [n.config]), H = (0, m.Rf)(n), Y = (0, b.DD)({
     quest: n,
     taskDetails: H,
     location: S.dr.QUESTS_CARD,
@@ -258,7 +258,7 @@ let k = e => {
       }), (0, r.jsxs)("div", {
         className: N.taskDetails,
         children: [(0, r.jsx)(c.Text, {
-          variant: x(a, l, k),
+          variant: x(a, l, M),
           className: N.taskInstructions,
           children: f ? C.intl.formatToPlainString(C.t["ge+AJi"], {
             questName: n.config.messages.questName
@@ -297,7 +297,7 @@ let k = e => {
           containerSize: l,
           onClick: K,
           text: C.intl.string(C.t.LLLLPD)
-        }), !q && (0, r.jsx)(M, {
+        }), !q && (0, r.jsx)(k, {
           quest: n,
           progressState: R,
           isCollectibleQuest: G,

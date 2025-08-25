@@ -64,18 +64,18 @@ let p = () => (0, Chunk951288.jsx)("img", {
     }, [D, N]);
     let x = D || A,
       L = A ? null : a,
-      [j, M] = (0, i.useState)(null),
-      k = (0, i.useRef)(null),
+      [j, k] = (0, i.useState)(null),
+      M = (0, i.useRef)(null),
       U = (0, i.useCallback)(() => {
-        k.current = null, M(null)
+        M.current = null, k(null)
       }, []),
       G = (0, i.useCallback)(e => {
-        let t = j === k.current;
-        e > 0 && ("earn" !== j || !t) && M("earn")
-      }, [M, j]),
+        let t = j === M.current;
+        e > 0 && ("earn" !== j || !t) && k("earn")
+      }, [k, j]),
       B = {
         currentAnimationType: j,
-        animationTypeRef: k,
+        animationTypeRef: M,
         onSetAnimationDurationMS: w
       };
     return (0, r.jsx)(s.P3F, {

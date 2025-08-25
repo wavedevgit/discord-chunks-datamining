@@ -178,8 +178,8 @@ function T(e) {
     fullWidth: x = false,
     clearable: L = false,
     helperText: j,
-    showCharacterCount: M = false,
-    successMessage: k
+    showCharacterCount: k = false,
+    successMessage: M
   } = e, U = b(e, ["disabled", "editable", "inputRef", "focusProps", "name", "type", "placeholder", "maxLength", "value", "defaultValue", "minLength", "error", "defaultDirty", "leading", "trailing", "validateOn", "size", "fullWidth", "clearable", "helperText", "showCharacterCount", "successMessage"]), G = O(T, S), B = (0, f.m)({
     validateOn: w,
     error: C,
@@ -226,8 +226,8 @@ function T(e) {
     fullWidth: x,
     readOnly: z,
     helperText: j,
-    successMessage: k,
-    characterCount: M ? null != (t = null == T ? true : T.length) ? t : 0 : true,
+    successMessage: M,
+    characterCount: k ? null != (t = null == T ? true : T.length) ? t : 0 : true,
     characterCountMaxLength: y,
     className: o()(p.container, p[D], {
       [p.hasLeading]: null != X,

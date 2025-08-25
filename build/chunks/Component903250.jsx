@@ -42,7 +42,7 @@ let w = (e, t) => {
       videoRef: x
     } = e, {
       analyticsLocations: L
-    } = (0, f.ZP)(d.Z.PREMIUM_MARKETING_HERO_CTA), j = (0, g._O)(), M = (0, m.Nx)(), k = (0, s.e7)([h.Z], () => h.Z.affinities), U = (0, b.Z)(), G = null != U, B = w ? l.Tt.WHITE : l.Tt.BRAND, Z = k.length > 0, V = (0, E.ZP)({
+    } = (0, f.ZP)(d.Z.PREMIUM_MARKETING_HERO_CTA), j = (0, g._O)(), k = (0, m.Nx)(), M = (0, s.e7)([h.Z], () => h.Z.affinities), U = (0, b.Z)(), G = null != U, B = w ? l.Tt.WHITE : l.Tt.BRAND, Z = M.length > 0, V = (0, E.ZP)({
       location: "HeroHeading"
     }) ? A.intl.string(A.t["EW+VIS"]) : A.intl.string(A.t.YCZldH), F = (0, p.rO)(), H = (0, s.e7)([u.Z], () => u.Z.useReducedMotion);
     return (0, r.jsx)(f.Gt, {
@@ -55,7 +55,7 @@ let w = (e, t) => {
           className: C.container,
           children: (0, r.jsxs)("div", {
             className: C.marketingPageTextContainer,
-            children: [M && (0, r.jsx)(T.Z, {}), (0, r.jsx)(c.X6q, {
+            children: [k && (0, r.jsx)(T.Z, {}), (0, r.jsx)(c.X6q, {
               className: C.marketingPageHeading,
               variant: "display-sm",
               color: "header-primary",
@@ -79,7 +79,7 @@ let w = (e, t) => {
               })
             }) : (0, r.jsx)(I.PK, {
               subscriptionTier: a,
-              inOfferExperience: M,
+              inOfferExperience: k,
               containerClassName: o()(C.marketingPageCTAContainer, {
                 [C.marketingPageCTAMargin]: !(Z || G)
               }),

@@ -71,7 +71,7 @@ var Chunk703656 = require("./703656.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx");
-let k = false,
+let M = false,
   U = 1;
 
 function G() {
@@ -114,7 +114,7 @@ function B(e, t) {
     l = (null == (r = t.userStatus) ? true : r.claimedAt) != null,
     c = (null == (i = e.userStatus) ? true : i.enrolledAt) != null,
     u = (null == (a = t.userStatus) ? true : a.enrolledAt) != null;
-  return o ? s !== l ? s ? U : k : c !== u ? c ? k : U : X(e.config.expiresAt, t.config.expiresAt, 1) : s !== l ? s ? k : U : c !== u ? c ? k : U : X(e.config.expiresAt, t.config.expiresAt, 0)
+  return o ? s !== l ? s ? U : M : c !== u ? c ? M : U : X(e.config.expiresAt, t.config.expiresAt, 1) : s !== l ? s ? M : U : c !== u ? c ? M : U : X(e.config.expiresAt, t.config.expiresAt, 0)
 }
 
 function Z(e, t) {
@@ -125,7 +125,7 @@ function V(e, t) {
   var n, r;
   let i = null == (n = e.userStatus) ? true : n.enrolledAt,
     a = null == (r = t.userStatus) ? true : r.enrolledAt;
-  return null == i && null == a ? X(e.config.expiresAt, t.config.expiresAt, 0) : null != i && null == a ? k : null == i && null != a ? U : X(i, a, 0)
+  return null == i && null == a ? X(e.config.expiresAt, t.config.expiresAt, 0) : null != i && null == a ? M : null == i && null != a ? U : X(i, a, 0)
 }
 
 function F(e, t) {
@@ -135,7 +135,7 @@ function F(e, t) {
 function H(e) {
   return function(t, n) {
     let r = !(0, T.zi)(t);
-    return !(0, T.zi)(n) !== r ? r ? k : U : e(t, n)
+    return !(0, T.zi)(n) !== r ? r ? M : U : e(t, n)
   }
 }
 
@@ -192,7 +192,7 @@ function q(e) {
 }
 
 function X(e, t, n) {
-  let r = 0 === n ? k : U;
+  let r = 0 === n ? M : U;
   return e.localeCompare(t) * r
 }
 
@@ -222,7 +222,7 @@ function J(e) {
     let e = t.sort((e, t) => {
       var n, r;
       let i = (null == (n = e.userStatus) ? true : n.claimedAt) == null;
-      return i !== ((null == (r = t.userStatus) ? true : r.claimedAt) == null) ? i ? k : U : X(D.r.build(e.config).rewardsExpireAt, D.r.build(t.config).rewardsExpireAt, 0)
+      return i !== ((null == (r = t.userStatus) ? true : r.claimedAt) == null) ? i ? M : U : X(D.r.build(e.config).rewardsExpireAt, D.r.build(t.config).rewardsExpireAt, 0)
     }).map(e => e.id);
     return n.current = e, e
   }, [t])
@@ -278,7 +278,7 @@ function er(e) {
 }
 
 function ei(e) {
-  return r.useMemo(() => (0, T.q8)(e) || (0, T.Pb)(e) || (0, T.pO)(e) || (0, T.Vl)(e) ? M.intl.string(M.t.hvVgAQ) : M.intl.string(M.t.lwQdjI), [e])
+  return r.useMemo(() => (0, T.q8)(e) || (0, T.Pb)(e) || (0, T.pO)(e) || (0, T.Vl)(e) ? k.intl.string(k.t.hvVgAQ) : k.intl.string(k.t.lwQdjI), [e])
 }
 
 function ea(e) {
@@ -366,12 +366,12 @@ function ep(e, t, n, r) {
   });
   if ((0, T.$J)(e) && !(0, T.Nj)({
       quest: e
-    })) return M.intl.format(M.t["l4S+cX"], {
+    })) return k.intl.format(k.t["l4S+cX"], {
     minutes: i,
     onClick: o,
     gameTitle: D.r.build(e.config).application.name
   });
-  if ((0, T.$J)(e)) return M.intl.format(M.t.Ajlcd3, {
+  if ((0, T.$J)(e)) return k.intl.format(k.t.Ajlcd3, {
     minutes: i,
     onClick: o,
     gameTitle: D.r.build(e.config).application.name
@@ -379,18 +379,18 @@ function ep(e, t, n, r) {
   if ((0, T.q8)(e)) {
     let t = D.r.build(e.config).defaultWatchVideoTask,
       n = null == t ? true : t.messages.videoTitle;
-    return null == n ? M.intl.string(M.t["o+e9ys"]) : M.intl.formatToPlainString(M.t["9m9MnZ"], {
+    return null == n ? k.intl.string(k.t["o+e9ys"]) : k.intl.formatToPlainString(k.t["9m9MnZ"], {
       videoTitle: n
     })
   }
   if (null != a) return a.title;
-  if ((0, T.pO)(e) && (0, T.KM)(e)) return M.intl.format(M.t["1NaRSk"], {
+  if ((0, T.pO)(e) && (0, T.KM)(e)) return k.intl.format(k.t["1NaRSk"], {
     minutes: i
   });
-  let s = M.t["6zWtV1"];
+  let s = k.t["6zWtV1"];
   return (0, T.Nj)({
     quest: e
-  }) && (s = M.t["wmOh/v"]), M.intl.format(s, {
+  }) && (s = k.t["wmOh/v"]), k.intl.format(s, {
     minutes: i,
     gameTitle: e.config.messages.gameTitle
   })
@@ -566,7 +566,7 @@ function eS(e, t) {
     }),
     s = (null == (n = e.userStatus) ? true : n.claimedAt) != null,
     l = ea(null == (r = e.userStatus) ? true : r.claimedAt);
-  return s ? M.intl.formatToPlainString(M.t.lOVr0N, {
+  return s ? k.intl.formatToPlainString(k.t.lOVr0N, {
     claimDate: l
   }) : null != a ? a.description : null != o ? o : null
 }
@@ -643,7 +643,7 @@ function eN(e) {
     p = (0, y.isWeb)() && _ && !(0, T.Gd)(e),
     h = (0, y.isMac)() && i.taskType === a.X.STREAM_ON_DESKTOP && _,
     m = [];
-  return h && m.push(M.intl.string(M.t.MFGxFB)), p && m.push(M.intl.string(M.t.BV6xDg)), m
+  return h && m.push(k.intl.string(k.t.MFGxFB)), p && m.push(k.intl.string(k.t.BV6xDg)), m
 }
 
 function eR(e) {
@@ -687,16 +687,16 @@ function ew(e) {
     o = ef(e),
     s = (null == (t = e.userStatus) ? true : t.completedAt) != null,
     c = null != o ? o.percentComplete : i.percentComplete;
-  if (s) return M.intl.string(M.t["ij5E//"]);
+  if (s) return k.intl.string(k.t["ij5E//"]);
   if ((null == (n = e.userStatus) ? true : n.enrolledAt) != null && c > 0) {
     let e = (0, b.T3)(r, c, {
       roundingMode: "floor"
     });
-    return M.intl.formatToPlainString(M.t.lVZaXF, {
+    return k.intl.formatToPlainString(k.t.lVZaXF, {
       percent: e
     })
   }
-  return a === C.LI.SELECT ? M.intl.string(M.t.EMrUHR) : (0, T.$J)(e) ? M.intl.string(M.t.mOrpXF) : M.intl.string(M.t["7e5k7O"])
+  return a === C.LI.SELECT ? k.intl.string(k.t.EMrUHR) : (0, T.$J)(e) ? k.intl.string(k.t.mOrpXF) : k.intl.string(k.t["7e5k7O"])
 }
 
 function eD(e) {
@@ -713,21 +713,21 @@ function eD(e) {
     taskDetails: l,
     sourceQuestContent: a
   }), _ = null != c ? c.percentComplete : l.percentComplete;
-  if (u) return M.intl.formatToPlainString(M.t.APddvL, {
+  if (u) return k.intl.formatToPlainString(k.t.APddvL, {
     expirationDate: s
   });
   if (i)
-    if (o === C.LI.SELECT) return M.intl.string(M.t.sWUpNz);
+    if (o === C.LI.SELECT) return k.intl.string(k.t.sWUpNz);
     else return f;
-  if ((0, T.q8)(n)) return M.intl.string(M.t["o+e9ys"]);
+  if ((0, T.q8)(n)) return k.intl.string(k.t["o+e9ys"]);
   if (_ > 0)
-    if (!d) return M.intl.string(M.t.mOrpXF);
+    if (!d) return k.intl.string(k.t.mOrpXF);
     else return (0, T.AV)({
       quest: n,
       taskDetails: l,
       thirdPartyTaskDetails: null != c ? c : true
     });
-  return M.intl.string(M.t.S6UUc3)
+  return k.intl.string(k.t.S6UUc3)
 }
 
 function ex(e, t) {
@@ -748,28 +748,28 @@ function eL(e) {
     a = (0, T.f$)(e),
     o = (0, l.e7)([m.default], () => m.default.getCurrentUser()),
     s = (0, O.I5)(o, j.p9.TIER_2);
-  if (null == n) return M.intl.formatToPlainString(M.t.l9uXLy, {
+  if (null == n) return k.intl.formatToPlainString(k.t.l9uXLy, {
     decorationName: t
   });
-  let c = M.intl.formatToPlainString(M.t.o97tNj, {
+  let c = k.intl.formatToPlainString(k.t.o97tNj, {
       rewardName: t
     }),
-    u = M.intl.formatToPlainString(M.t.PkyRZm, {
+    u = k.intl.formatToPlainString(k.t.PkyRZm, {
       rewardName: t,
       expirationDate: r
     }),
-    d = M.intl.formatToPlainString(M.t.ie4YKy, {
+    d = k.intl.formatToPlainString(k.t.ie4YKy, {
       rewardName: t,
       duration: n
     }),
-    f = M.intl.formatToPlainString(M.t.yCpc0d, {
+    f = k.intl.formatToPlainString(k.t.yCpc0d, {
       duration: n,
       rewardName: t
     }),
     _ = s ? c : d,
     p = s ? u : f,
     h = i ? _ : p;
-  return a ? h : M.intl.formatToPlainString(M.t.tTlItr, {
+  return a ? h : k.intl.formatToPlainString(k.t.tTlItr, {
     duration: n,
     decorationName: t
   })

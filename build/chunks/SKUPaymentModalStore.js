@@ -111,7 +111,7 @@ function j() {
   O = true
 }
 
-function M(e) {
+function k(e) {
   let {
     entitlements: t,
     giftCode: n
@@ -119,7 +119,7 @@ function M(e) {
   O = false, y = t, h = n
 }
 
-function k(e) {
+function M(e) {
   let {
     giftCode: t
   } = e;
@@ -203,11 +203,11 @@ let H = new F(Chunk570140.Z, {
   SKU_PURCHASE_PREVIEW_FETCH_SUCCESS: x,
   SKU_PURCHASE_PREVIEW_FETCH_FAILURE: L,
   SKU_PURCHASE_START: j,
-  SKU_PURCHASE_SUCCESS: M,
+  SKU_PURCHASE_SUCCESS: k,
   SKU_PURCHASE_FAIL: U,
   SKU_PURCHASE_SHOW_CONFIRMATION_STEP: G,
   SKU_PURCHASE_CLEAR_ERROR: B,
   SKU_PURCHASE_UPDATE_IS_GIFT: Z,
   OVERLAY_SET_INPUT_LOCKED: V,
-  GIFT_CODE_CREATE: k
+  GIFT_CODE_CREATE: M
 })

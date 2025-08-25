@@ -1,1 +1,0 @@
-{"id":"994752","type":"store","data":{"name":"GuildLeaderboardStore","functions":[{"name":"getLeaderboards","args":["e"]},{"name":"get","args":["e","t"]},{"name":"getLeaderboardResponse","args":["e","t"]}],"events":["CONNECTION_OPEN","SET_GUILD_LEADERBOARD"]},"fromModule":{"id":"web.js"}}

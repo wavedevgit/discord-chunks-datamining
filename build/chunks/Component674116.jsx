@@ -54,7 +54,7 @@ function V() {
     var e, r;
     exports === Chunk526761.GA && (null == require || null == (e = require.current) || module.scrollIntoView(), Chunk230711.Z.clearSubsection()), exports === Chunk526761.gP && (null == Chunk63063 || null == (r = Chunk63063.current) || Chunk951288.scrollIntoView(), Chunk230711.Z.clearSubsection())
   }, [require, Chunk63063, exports]);
-  let M = Chunk131951.Z.supports(Chunk65154.AN.SIDECHAIN_COMPRESSION);
+  let k = Chunk131951.Z.supports(Chunk65154.AN.SIDECHAIN_COMPRESSION);
   return (0, Chunk951288.jsxs)(Chunk481060.hjN, {
     tag: Chunk481060.RB0.H1,
     title: Chunk388032.intl.string(Chunk388032.t.NiTd0d),

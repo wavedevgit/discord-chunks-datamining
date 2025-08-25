@@ -113,8 +113,8 @@ function T(e) {
     selectedPlan: x,
     hasAcceptedTerms: L,
     purchaseType: j,
-    paymentSourceId: M,
-    activeSubscription: k,
+    paymentSourceId: k,
+    activeSubscription: M,
     devShelfFetchState: U,
     hasPaymentSources: G
   } = (0, c.JL)(), {
@@ -129,7 +129,7 @@ function T(e) {
     planGroup: T,
     isPrepaidPaymentSource: S,
     inReverseTrial: R,
-    paymentSourceId: M,
+    paymentSourceId: k,
     hasPaymentSources: G
   }), {
     analyticsLocations: V
@@ -197,11 +197,11 @@ function T(e) {
       "data-testid": "submitButton"
     }))
   });
-  else if (R && null != k && null != M) return (0, r.jsx)(p.Z, {
-    activeSubscription: k,
+  else if (R && null != M && null != k) return (0, r.jsx)(p.Z, {
+    activeSubscription: M,
     onNext: P,
     isSubmitting: m,
-    paymentSourceId: M,
+    paymentSourceId: k,
     buttonLabel: Z,
     analyticsLocations: V
   });

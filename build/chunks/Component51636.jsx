@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk213609 = require("./213609.js"),
   Chunk706140 = require("./706140.js"),
   Chunk626135 = require("./626135.js"),
-  Chunk404615 = require("./404615.js"),
+  Chunk176782 = require("./176782.js"),
   Chunk238108 = require("./238108.js"),
   Chunk22189 = require("./22189.jsx"),
   Chunk391110 = require("./391110.js"),
@@ -72,7 +72,7 @@ let R = Chunk647438.memo(e => {
     dismissibleContentType: a,
     forceShadow: h,
     cardType: b
-  } = e, y = null == e ? true : e.onCtaClick, S = (0, c.e7)([d.Z], () => d.Z.useReducedMotion), [C, w] = i.useState(false), [D, x] = i.useState(false), L = b === E.gM.CARD_CAROUSEL_FIRST_ROW || b === E.gM.CARD_CAROUSEL_SECOND_ROW || b === E.gM.CARD_CAROUSEL_THIRD_ROW, j = (0, g.Z)(), [M, k] = (0, _.cv)(null != a && n ? [a] : []), {
+  } = e, y = null == e ? true : e.onCtaClick, S = (0, c.e7)([d.Z], () => d.Z.useReducedMotion), [C, w] = i.useState(false), [D, x] = i.useState(false), L = b === E.gM.CARD_CAROUSEL_FIRST_ROW || b === E.gM.CARD_CAROUSEL_SECOND_ROW || b === E.gM.CARD_CAROUSEL_THIRD_ROW, j = (0, g.Z)(), [k, M] = (0, _.cv)(null != a && n ? [a] : []), {
     easterEggLevel: U,
     isEasterEggTriggered: G,
     onHover: B,
@@ -94,17 +94,17 @@ let R = Chunk647438.memo(e => {
   }, e), {
     onCtaClick: null != y ? H : true
   });
-  let Y = M !== a || null == a || D,
+  let Y = k !== a || null == a || D,
     W = e => {
       C && "transform" === e.propertyName && e.target.classList.contains(T.flipCard) && (x(true), p.default.track(O.rMx.PREMIUM_MARKETING_PERK_CARD_FLIPPED, {
         card_type: t
-      }), null != a && k(v.L.TAKE_ACTION))
+      }), null != a && M(v.L.TAKE_ACTION))
     };
   return (i.useEffect(() => {
     S && C && (x(true), p.default.track(O.rMx.PREMIUM_MARKETING_PERK_CARD_FLIPPED, {
       card_type: t
-    }), null != a && k(v.L.TAKE_ACTION))
-  }, [S, C, a, t, k]), (0, f.Z)({
+    }), null != a && M(v.L.TAKE_ACTION))
+  }, [S, C, a, t, M]), (0, f.Z)({
     type: l.ImpressionTypes.VIEW,
     name: l.ImpressionNames.PERK_DISCOVERABILITY_CARD,
     properties: {

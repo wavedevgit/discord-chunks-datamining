@@ -81,12 +81,12 @@ function j(e, t) {
   return n
 }
 
-function M(e, t) {
+function k(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let k = "in-app",
+let M = "in-app",
   U = "Discord Widget";
 
 function G(e) {
@@ -102,7 +102,7 @@ function G(e) {
     let {
       default: e
     } = await n.e("61624").then(n.bind(n, 985866));
-    return n => (0, r.jsx)(e, M(L({}, n), {
+    return n => (0, r.jsx)(e, k(L({}, n), {
       questId: t,
       questContentPosition: a,
       questContent: i,
@@ -119,7 +119,7 @@ function B(e, t) {
     let {
       default: i
     } = await n.e("838").then(n.bind(n, 824393));
-    return n => (0, r.jsx)(i, M(L({}, n), {
+    return n => (0, r.jsx)(i, k(L({}, n), {
       quest: e,
       location: t
     }))
@@ -131,7 +131,7 @@ function Z(e, t, i) {
     let {
       default: a
     } = await n.e("88938").then(n.bind(n, 390238));
-    return n => (0, r.jsx)(a, M(L({}, n), {
+    return n => (0, r.jsx)(a, k(L({}, n), {
       quest: e,
       location: t,
       sourceQuestContent: i
@@ -144,7 +144,7 @@ function V(e, t) {
     let {
       default: i
     } = await n.e("20565").then(n.bind(n, 383294));
-    return n => (0, r.jsx)(i, M(L({}, n), {
+    return n => (0, r.jsx)(i, k(L({}, n), {
       quest: e,
       location: t
     }))
@@ -156,7 +156,7 @@ function F(e, t, i) {
     let {
       default: a
     } = await n.e("58641").then(n.bind(n, 828664));
-    return n => (0, r.jsx)(a, M(L({}, n), {
+    return n => (0, r.jsx)(a, k(L({}, n), {
       quest: e,
       location: t,
       sourceQuestContent: i
@@ -176,7 +176,7 @@ function H(e, t) {
     let {
       default: i
     } = await n.e("4266").then(n.bind(n, 316210));
-    return n => (0, r.jsx)(i, M(L({}, n), {
+    return n => (0, r.jsx)(i, k(L({}, n), {
       questContent: t.content,
       quest: e
     }))
@@ -190,7 +190,7 @@ function Y() {
   } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
   (0, Chunk150560.Z.getState().setUtmCurrentContext)({
     utmSourceCurrent: U,
-    utmMediumCurrent: k,
+    utmMediumCurrent: M,
     utmCampaignCurrent: exports,
     utmContentCurrent: Object.keys(Chunk497505.jn).find(t => y.jn[t] === e)
   });
@@ -260,7 +260,7 @@ function z(e) {
     let {
       default: e
     } = await K();
-    return t => (0, r.jsx)(e, M(L({}, t), {
+    return t => (0, r.jsx)(e, k(L({}, t), {
       openStartClockTime: performance.now(),
       questId: n.id,
       autoplay: c,
@@ -315,7 +315,7 @@ function Q(e) {
     let {
       default: t
     } = await Promise.all([n.e("7784"), n.e("33628")]).then(n.bind(n, 570387));
-    return n => (0, r.jsx)(t, M(L({}, n), {
+    return n => (0, r.jsx)(t, k(L({}, n), {
       questId: e.id,
       questName: e.config.messages.questName
     }))

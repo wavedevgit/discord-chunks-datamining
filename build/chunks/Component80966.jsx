@@ -98,12 +98,12 @@ class m extends Chunk647438.Component {
         onControlsHide: x,
         onVolumeChange: L,
         onMute: j,
-        disableArrowKeySeek: M,
-        alt: k = Chunk388032.intl.string(Chunk388032.t.FlNoSU)
+        disableArrowKeySeek: k,
+        alt: M = Chunk388032.intl.string(Chunk388032.t.FlNoSU)
       } = module,
       U = p(module, ["src", "fileSize", "className", "mediaPlayerClassName", "poster", "fileName", "naturalWidth", "naturalHeight", "playable", "downloadable", "volume", "autoPlay", "autoMute", "responsive", "mediaLayoutType", "mimeType", "renderOverlayContent", "renderLinkComponent", "onClick", "onPlay", "onPause", "onEnded", "onControlsShow", "onControlsHide", "onVolumeChange", "onMute", "disableArrowKeySeek", "alt"]);
     return (0, Chunk951288.jsx)(Chunk124347.ZP, _(d({
-      alt: k,
+      alt: M,
       className: Chunk647438,
       src: f
     }, U), {
@@ -150,7 +150,7 @@ class m extends Chunk647438.Component {
           onControlsHide: x,
           mimeType: S,
           downloadable: b,
-          disableArrowKeySeek: M
+          disableArrowKeySeek: k
         })
       }
     }))

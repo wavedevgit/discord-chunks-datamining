@@ -6,7 +6,7 @@ require.d(exports, {
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
-var Chunk755721 = require("./755721.js"),
+var Chunk159691 = require("./159691.js"),
   Chunk406877 = require("./406877.js");
 
 function o(e, t, n) {
@@ -81,7 +81,7 @@ function f(e) {
     f(o)
   }
   return (0, r.jsx)(i.zx, c(s({}, l), {
-    submitting: d,
+    loading: d,
     onClick: _
   }))
 }

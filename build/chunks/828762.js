@@ -1,7 +1,7 @@
 /** Chunk was on 73628 **/
 /** chunk id: 828762, original params: e,t,A (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => P
 }), require("./415506.js"), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk399606 = require("./399606.js"),
@@ -177,7 +177,7 @@ class V {
   }
 }
 
-function O(e, t) {
+function P(e, t) {
   var A;
   let {
     editSkuId: l,
@@ -213,27 +213,27 @@ function O(e, t) {
     } finally {
       h(true)
     }
-  }, [c, a]), O = n.useCallback(() => {
+  }, [c, a]), P = n.useCallback(() => {
     c.cancelUnusedUploads(), p({})
   }, [c]);
   n.useEffect(() => () => {
     c.cancelUnusedUploads()
   }, [c]);
   let {
-    uploads: P
-  } = c, I = !P.every(e => c.existingAttachmentIds.has(e.id)) || P.length !== c.existingAttachmentIds.size;
+    uploads: O
+  } = c, I = !O.every(e => c.existingAttachmentIds.has(e.id)) || O.length !== c.existingAttachmentIds.size;
   return {
     addAttachment: x,
-    cancelUnusedUploads: O,
+    cancelUnusedUploads: P,
     deleteAttachment: v,
     fileUploadProgresses: u,
-    uploads: P,
+    uploads: O,
     saveProductWithAttachments: U,
     isSaving: null != m,
     changesSaving: m,
     saveError: b,
     hasUnsavedAttachmentChanges: I,
-    canAttachFiles: P.length < c.target.getMaxAttachmentsCount(),
+    canAttachFiles: O.length < c.target.getMaxAttachmentsCount(),
     canAttachArchives: null != (A = null == o ? true : o.features.has(q.oNc.GUILD_PRODUCTS_ALLOW_ARCHIVED_FILE)) && A
   }
 }

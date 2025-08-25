@@ -218,10 +218,10 @@ function q(e) {
   function J(e) {
     return e.twoWayLink ? null : e.type === U.ABu.XBOX ? (0, r.jsx)("div", {
       className: V.upsellWrapper,
-      children: (0, r.jsx)(k.Y, {})
+      children: (0, r.jsx)(M.Y, {})
     }) : e.type === U.ABu.PLAYSTATION ? (0, r.jsx)("div", {
       className: V.upsellWrapper,
-      children: (0, r.jsx)(M.t, {})
+      children: (0, r.jsx)(k.t, {})
     }) : null
   }
 

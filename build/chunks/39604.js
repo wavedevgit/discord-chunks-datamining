@@ -4,8 +4,8 @@
 require.d(exports, {
   C1: () => H,
   Gh: () => Y,
-  N0: () => M,
-  T1: () => k,
+  N0: () => k,
+  T1: () => M,
   Tm: () => W,
   _Q: () => j,
   eL: () => K,
@@ -134,7 +134,7 @@ function j(e) {
   }))
 }
 
-function M(e) {
+function k(e) {
   a.Z.dispatch({
     type: "CLIPS_SETTINGS_UPDATE",
     settings: {
@@ -145,7 +145,7 @@ function M(e) {
   })
 }
 
-function k(e) {
+function M(e) {
   a.Z.dispatch({
     type: "CLIPS_SETTINGS_UPDATE",
     settings: {

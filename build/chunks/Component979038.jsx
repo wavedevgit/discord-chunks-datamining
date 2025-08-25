@@ -43,11 +43,11 @@ function P(e) {
   } = e, {
     themeType: x
   } = (0, m.z)(), L = (0, c.q)(D, "UserProfileActivityButtons"), j = (0, u.L)(null != n ? n : true, true), {
-    showPlayButton: M
+    showPlayButton: k
   } = d.m.useConfig({
     location: "UserProfileActivityButtons"
   });
-  if (M && null != D && (0, f.bP)(D)) return (0, r.jsx)(v.Z, {
+  if (k && null != D && (0, f.bP)(D)) return (0, r.jsx)(v.Z, {
     user: t,
     application: D,
     onAction: P,
@@ -67,8 +67,8 @@ function P(e) {
     activity: n,
     onAction: P
   });
-  let k = x === N.l.MODAL || x === N.l.MODAL_V2;
-  if (!j && L && null != D && !k) return (0, r.jsx)(A.Z, {
+  let M = x === N.l.MODAL || x === N.l.MODAL_V2;
+  if (!j && L && null != D && !M) return (0, r.jsx)(A.Z, {
     application: D,
     onAction: P,
     onClose: w

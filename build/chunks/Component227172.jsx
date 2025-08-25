@@ -2,8 +2,8 @@
 /** chunk id: 227172, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => k,
-  v: () => M
+  Z: () => M,
+  v: () => k
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -38,7 +38,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk797342 = require("./797342.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let M = {
+let k = {
     [Chunk758713.z.DESKTOP]: null,
     [Chunk758713.z.LINUX]: null,
     [Chunk758713.z.MACOS]: null,
@@ -48,13 +48,13 @@ let M = {
     [Chunk758713.z.XBOX]: Chunk639351.Z,
     [Chunk758713.z.PLAYSTATION]: Chunk374129.Z
   },
-  k = e => {
+  M = e => {
     let {
       channel: t,
       entry: n,
       disableGameProfileLinks: E,
       onReaction: b,
-      onVoiceChannelPreview: k,
+      onVoiceChannelPreview: M,
       onUserPopoutClosed: U,
       trackRankingItemInteraction: G
     } = e, {
@@ -78,7 +78,7 @@ let M = {
       participant1: J,
       participant2: $,
       numOtherParticipants: ee
-    } = (0, v.Z)(n, 3), et = n.extra.platform, en = null != et ? M[et] : null, er = et === a.z.XBOX ? L.ABu.XBOX : et === a.z.PLAYSTATION ? L.ABu.PLAYSTATION : true, ei = (0, C.Z)(er), {
+    } = (0, v.Z)(n, 3), et = n.extra.platform, en = null != et ? k[et] : null, er = et === a.z.XBOX ? L.ABu.XBOX : et === a.z.PLAYSTATION ? L.ABu.PLAYSTATION : true, ei = (0, C.Z)(er), {
       data: ea
     } = (0, h.IX)(n.extra.application_id), eo = (0, d.q)(ea, "MemberListGamingContentPopout"), es = (0, m.L)(H, Y), el = i.useCallback(e => {
       if ((null == B ? true : B.src) == null || null == t || null == Z) return;
@@ -151,7 +151,7 @@ let M = {
       children: [eu, (0, r.jsx)(w.St, {
         children: (0, r.jsx)(w.WT, {
           onReaction: b,
-          onVoiceChannelPreview: k,
+          onVoiceChannelPreview: M,
           user: Z,
           channel: t,
           generateReactionImage: el,

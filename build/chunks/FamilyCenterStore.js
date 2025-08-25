@@ -141,14 +141,14 @@ function j(e) {
   h = o, m = l, D(r), w(a), x(i), P(t), I = false, T = s.default.fromTimestamp(Date.now()), v = true
 }
 
-function M(e) {
+function k(e) {
   let {
     linkedUsers: t
   } = e;
   P(t)
 }
 
-function k(e) {
+function M(e) {
   let {
     linkedUsers: t
   } = e;
@@ -326,10 +326,10 @@ class X extends Chunk750041.Z {
       CACHE_LOADED_LAZY: () => this.loadCache(),
       FAMILY_CENTER_INITIAL_LOAD: j,
       FAMILY_CENTER_FETCH_START: L,
-      FAMILY_CENTER_LINKED_USERS_FETCH_SUCCESS: M,
+      FAMILY_CENTER_LINKED_USERS_FETCH_SUCCESS: k,
       FAMILY_CENTER_TEEN_ACTIVITY_FETCH_SUCCESS: U,
       FAMILY_CENTER_TEEN_ACTIVITY_MORE_FETCH_SUCCESS: G,
-      FAMILY_CENTER_REQUEST_LINK_SUCCESS: k,
+      FAMILY_CENTER_REQUEST_LINK_SUCCESS: M,
       FAMILY_CENTER_REQUEST_LINK_UPDATE_SUCCESS: B,
       FAMILY_CENTER_REQUEST_LINK_REMOVE_SUCCESS: Z,
       FAMILY_CENTER_LINK_CODE_FETCH_SUCCESS: V,

@@ -12,6 +12,5 @@ module.exports = {
   attachedFileCardSpinner: "attachedFileCardSpinner_f8a8fa",
   attachedFileCardError: "attachedFileCardError_f8a8fa",
   attachedFileCardUploading: "attachedFileCardUploading_f8a8fa",
-  deleteButton: "deleteButton_f8a8fa",
-  deleteButtonInner: "deleteButtonInner_f8a8fa"
+  deleteButton: "deleteButton_f8a8fa"
 }

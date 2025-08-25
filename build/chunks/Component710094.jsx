@@ -2,7 +2,7 @@
 /** chunk id: 710094, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  l: () => M
+  l: () => k
 }), require("./388685.js"), require("./415506.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -38,11 +38,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk108626 = require("./108626.js");
 let j = 500;
 
-function M(e) {
+function k(e) {
   var t, n;
   let a, {
-      handleStepChange: M,
-      trialId: k,
+      handleStepChange: k,
+      trialId: M,
       trialFooterMessageOverride: U,
       reviewWarningMessage: G,
       planGroup: B,
@@ -98,7 +98,7 @@ function M(e) {
   i.useEffect(() => {
     (0, h.t)()
   }, []);
-  let eR = null != (n = null != k ? k : H) ? n : null,
+  let eR = null != (n = null != M ? M : H) ? n : null,
     eP = null != eR && (!ef || w.nG[eR].skus.includes(ea)) ? eR : null,
     ew = (0, f.N)(H),
     eD = (0, d.Ng)(),
@@ -111,16 +111,16 @@ function M(e) {
     })
   }, [et]);
   let eL = i.useCallback((e, t, n) => {
-      q(e), null != t && eh(t), null != n && em(n), M(b.h8.CONFIRM, {
+      q(e), null != t && eh(t), null != n && em(n), k(b.h8.CONFIRM, {
         fulfillment: {
           subscription: e,
           entitlements: t
         }
       })
-    }, [M, q, eh, em]),
+    }, [k, q, eh, em]),
     ej = (0, C.m)($, J),
-    eM = null != ei && w.o4.has(ei.id) && null != ej && !(0, c.aQ)(ej) ? Error(x.intl.string(x.t["2ik8io"])) : null,
-    ek = i.useRef(null),
+    ek = null != ei && w.o4.has(ei.id) && null != ej && !(0, c.aQ)(ej) ? Error(x.intl.string(x.t["2ik8io"])) : null,
+    eM = i.useRef(null),
     [eU, eG] = i.useState(null),
     eB = !eO && null != ew && null != ea && w.nG[ew.trial_id].skus.includes(ea),
     eZ = null == eD || null == (t = eD.discount) ? true : t.plan_ids,
@@ -136,16 +136,16 @@ function M(e) {
     eW = eO && ep === D.GZ.ONE_TIME,
     eK = eW || (eY ? eH && ef : ef),
     ez = (0, u.id)(ei, eO, eT),
-    eq = i.useCallback(() => eY ? void M(b.h8.SKU_SELECT) : ez ? void M(b.h8.SELECT_FREE_SKU) : eW ? M(b.h8.GIFT_CUSTOMIZATION) : M(b.h8.PLAN_SELECT), [M, eY, eW, ez]),
+    eq = i.useCallback(() => eY ? void k(b.h8.SKU_SELECT) : ez ? void k(b.h8.SELECT_FREE_SKU) : eW ? k(b.h8.GIFT_CUSTOMIZATION) : k(b.h8.PLAN_SELECT), [k, eY, eW, ez]),
     eX = false,
     eQ = () => {
-      M(b.h8.ADD_PAYMENT_STEPS)
+      k(b.h8.ADD_PAYMENT_STEPS)
     };
   return ep === D.GZ.ONE_TIME ? (eX = null != en, a = (0, r.jsx)(A.Z, {
     hasLegalTermsFlash: eC,
-    legalTermsNodeRef: ek,
+    legalTermsNodeRef: eM,
     onPaymentSourceChange: e => es(null != e ? e.id : null),
-    handlePaymentSourceAdd: () => M(b.h8.ADD_PAYMENT_STEPS)
+    handlePaymentSourceAdd: () => k(b.h8.ADD_PAYMENT_STEPS)
   })) : (eX = null == eE || !eO && null != ej && ep === D.GZ.SUBSCRIPTION && eB && !ej.canRedeemTrial(), null == z || eb || eO ? (o()(null != ei, "Expected plan to be selected"), a = (0, r.jsx)(_.Z, {
     selectedPlanId: ei.id,
     planGroup: B,
@@ -154,16 +154,16 @@ function M(e) {
     priceOptions: ee,
     currencies: Q,
     onCurrencyChange: e => eo(e),
-    handlePaymentSourceAdd: () => M(b.h8.ADD_PAYMENT_STEPS),
+    handlePaymentSourceAdd: () => k(b.h8.ADD_PAYMENT_STEPS),
     setHasAcceptedTerms: e_,
-    legalTermsNodeRef: ek,
+    legalTermsNodeRef: eM,
     hasLegalTermsFlash: eC,
     trialId: eP,
     trialFooterMessageOverride: U,
     reviewWarningMessage: G,
     purchaseState: ed,
     referralTrialOfferId: H,
-    isTrial: eB || null != k && null != U,
+    isTrial: eB || null != M && null != U,
     isDiscount: eV,
     handleClose: K
   })) : (o()(null != ei, "Expected plan to be selected"), a = (0, r.jsx)(p.Z, {
@@ -176,7 +176,7 @@ function M(e) {
     onPaymentSourceAdd: eQ,
     planId: ei.id,
     setHasAcceptedTerms: e_,
-    legalTermsNodeRef: ek,
+    legalTermsNodeRef: eM,
     hasLegalTermsFlash: eC,
     onInvoiceError: e => eG(e),
     planGroup: B,
@@ -205,10 +205,10 @@ function M(e) {
         onBack: eq,
         onNext: eL,
         onPurchaseError: e => ec(e),
-        legalTermsNodeRef: ek,
+        legalTermsNodeRef: eM,
         flashLegalTerms: () => eN(true),
         invoiceError: eU,
-        planError: eM,
+        planError: ek,
         analyticsLocation: F,
         baseAnalyticsData: V,
         flowStartTime: X.startTime,
