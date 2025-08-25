@@ -1,7 +1,5 @@
 /** Chunk was on 18879 **/
-/** chunk id: 758590, original params: t,e,i (module,exports,require) **/
+/** chunk id: 758590, original params: t,i,e (module,exports,require) **/
 module.exports = {
-  contentContainer: "contentContainer_f0889e",
-  title: "title_f0889e",
   subtitle: "subtitle_f0889e"
 }

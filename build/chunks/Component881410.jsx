@@ -36,17 +36,17 @@ function f(e) {
     disabled: t,
     widgetType: r,
     widget: f
-  } = e, [g] = (0, l.ynZ)(), b = i.useRef(null), p = i.useMemo(() => new Set(f.games.map(e => e.applicationId)), [f.games]), m = i.useCallback(e => {
+  } = e, [g] = (0, l.ynZ)(), b = a.useRef(null), p = a.useMemo(() => new Set(f.games.map(e => e.applicationId)), [f.games]), m = a.useCallback(e => {
     (0, c.ES)(r, {
       applicationId: e
     })
   }, [r]), {
     options: O,
     matchSorterOptions: j
-  } = (0, o.h)(), y = i.useCallback(e => {
+  } = (0, o.h)(), y = a.useCallback(e => {
     var t, r;
-    return "" === e.trim() ? O : (0, a.Lu)(O, e, (t = d({}, j), r = r = {
-      threshold: a.Lu.rankings.CONTAINS
+    return "" === e.trim() ? O : (0, i.Lu)(O, e, (t = d({}, j), r = r = {
+      threshold: i.Lu.rankings.CONTAINS
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
       var r = Object.keys(e);
       if (Object.getOwnPropertySymbols) {

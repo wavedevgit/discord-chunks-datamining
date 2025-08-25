@@ -46,10 +46,10 @@ function u(e) {
   n.useEffect(() => {
     if (e.length > 0) {
       let t = e.filter(e => l.Z.canFetch(e));
-      t.length > 0 && a.Z.getDetectableGamesSupplemental(t)
+      t.length > 0 && i.Z.getDetectableGamesSupplemental(t)
     }
   }, [e]);
-  let [t, r] = (0, i.Wu)([l.Z], () => [l.Z.numNoDataAvailable(), l.Z.numSupplementalGames()]);
+  let [t, r] = (0, a.Wu)([l.Z], () => [l.Z.numNoDataAvailable(), l.Z.numSupplementalGames()]);
   return {
     gameDataMap: n.useMemo(() => {
       let t = {};

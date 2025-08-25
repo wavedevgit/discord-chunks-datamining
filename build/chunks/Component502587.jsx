@@ -48,11 +48,11 @@ function g(e, t) {
 function b(e) {
   let {
     widget: t
-  } = e, b = i.useRef(null), p = e => {
+  } = e, b = a.useRef(null), p = e => {
     if (e.shiftKey) {
       (0, c.y8)(t.type), (0, s.L$)(u.qb.WIDGET_REMOVED);
       return
-    }(0, a.ZDy)(async () => {
+    }(0, i.ZDy)(async () => {
       let {
         default: e
       } = await r.e("70887").then(r.bind(r, 37668));
@@ -64,7 +64,7 @@ function b(e) {
       stackingBehavior: "stack"
     })
   };
-  return (0, n.jsx)(a.yRy, {
+  return (0, n.jsx)(i.yRy, {
     targetElementRef: b,
     align: "top",
     position: "right",
@@ -73,27 +73,27 @@ function b(e) {
       let {
         closePopout: t
       } = e;
-      return (0, n.jsx)(a.v2r, {
+      return (0, n.jsx)(i.v2r, {
         navId: "user-profile-widget-context-menu",
         onClose: () => {
           (0, l.Zy)(), t()
         },
         onSelect: () => {},
         "aria-label": d.intl.string(d.t.xpSHSk),
-        children: (0, n.jsx)(a.kSQ, {
-          children: (0, n.jsx)(a.sNh, {
+        children: (0, n.jsx)(i.kSQ, {
+          children: (0, n.jsx)(i.sNh, {
             id: "remove-widget",
             label: d.intl.string(d.t.Mm07YW),
             action: p,
             color: "danger",
-            icon: a.XHJ
+            icon: i.XHJ
           })
         })
       })
     },
-    children: e => (0, n.jsx)(a.hU, g(f({}, e), {
+    children: e => (0, n.jsx)(i.hU, g(f({}, e), {
       buttonRef: b,
-      icon: a.xhG,
+      icon: i.xhG,
       variant: "secondary",
       "aria-label": d.intl.string(d.t.xpSHSk),
       size: "sm"

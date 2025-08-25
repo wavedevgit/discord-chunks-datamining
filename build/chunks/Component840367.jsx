@@ -27,11 +27,11 @@ function m(e) {
   var t;
   let {
     userId: r,
-    headingId: a,
+    headingId: i,
     widget: u,
     disableInteraction: d = false
-  } = e, f = (0, l.e7)([c.default], () => c.default.getId() === r), m = (0, s.kQ)(u), j = p[u.type](), y = f && u.games.length > 0 ? (t = u.type, 1 === i.k[t] ? g.intl.string(g.t.wiXdER) : g.intl.format(g.t["zR1+09"], {
-    numGames: i.k[t]
+  } = e, f = (0, l.e7)([c.default], () => c.default.getId() === r), m = (0, s.kQ)(u), j = p[u.type](), y = f && u.games.length > 0 ? (t = u.type, 1 === a.k[t] ? g.intl.string(g.t.wiXdER) : g.intl.format(g.t["zR1+09"], {
+    numGames: a.k[t]
   })) : true;
   return (0, n.jsxs)("div", {
     className: b.headerRow,
@@ -40,7 +40,7 @@ function m(e) {
       children: [(0, n.jsx)(o.X6q, {
         variant: "heading-sm/medium",
         color: "text-default",
-        id: a,
+        id: i,
         children: j
       }), null != y && (0, n.jsx)(o.Text, {
         variant: "text-xs/normal",
@@ -60,10 +60,10 @@ function O(e) {
   let {
     widget: t,
     disabled: r,
-    disabledInteraction: i,
-    userId: a
-  } = e, o = (0, l.e7)([c.default], () => c.default.getId() === a), g = (0, s.vI)(t.type) && t.games.some(e => null != e.comment);
-  return i ? null : o ? (0, n.jsxs)("div", {
+    disabledInteraction: a,
+    userId: i
+  } = e, o = (0, l.e7)([c.default], () => c.default.getId() === i), g = (0, s.vI)(t.type) && t.games.some(e => null != e.comment);
+  return a ? null : o ? (0, n.jsxs)("div", {
     className: b.actions,
     children: [(0, n.jsx)(u.Z, {
       disabled: r,
@@ -76,7 +76,7 @@ function O(e) {
     className: b.actions,
     children: (0, n.jsx)(f.Z, {
       widget: t,
-      userId: a,
+      userId: i,
       className: b.menuButton
     })
   }) : null

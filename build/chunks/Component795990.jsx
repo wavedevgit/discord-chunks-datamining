@@ -29,7 +29,7 @@ function s() {
       className: Chunk958461.widgetGrid,
       "aria-label": Chunk388032.intl.string(Chunk388032.t["+EIBSE"]),
       children: Chunk247397.rR.map(e => (0, n.jsx)("li", {
-        children: (0, n.jsx)(a.Z, {
+        children: (0, n.jsx)(i.Z, {
           widgetType: e,
           size: "small"
         })

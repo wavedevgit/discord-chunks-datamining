@@ -49,33 +49,33 @@ function P(e) {
     widget: t
   } = e, r = function(e, t) {
     if (null == e) return {};
-    var r, n, i = function(e, t) {
+    var r, n, a = function(e, t) {
       if (null == e) return {};
-      var r, n, i = {},
-        a = Object.keys(e);
-      for (n = 0; n < a.length; n++) r = a[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
-      return i
+      var r, n, a = {},
+        i = Object.keys(e);
+      for (n = 0; n < i.length; n++) r = i[n], t.indexOf(r) >= 0 || (a[r] = e[r]);
+      return a
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var a = Object.getOwnPropertySymbols(e);
-      for (n = 0; n < a.length; n++) r = a[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
+      var i = Object.getOwnPropertySymbols(e);
+      for (n = 0; n < i.length; n++) r = i[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r])
     }
-    return i
+    return a
   }(e, ["widget"]);
   switch (t.type) {
-    case a.l.FAVORITE_GAMES:
+    case i.l.FAVORITE_GAMES:
       return (0, n.jsx)(m.Z, _({
         widget: t
       }, r));
-    case a.l.CURRENT_GAMES:
+    case i.l.CURRENT_GAMES:
       return (0, n.jsx)(p.Z, _({
         widget: t
       }, r));
-    case a.l.WANT_TO_PLAY_GAMES:
+    case i.l.WANT_TO_PLAY_GAMES:
       return (0, n.jsx)(j.Z, _({
         widget: t
       }, r));
-    case a.l.PLAYED_GAMES:
+    case i.l.PLAYED_GAMES:
       return (0, n.jsx)(O.Z, _({
         widget: t
       }, r));
@@ -102,13 +102,13 @@ function S(e) {
   let {
     user: t,
     guildId: r,
-    channelId: a
+    channelId: i
   } = e, o = (0, b.Z)(t.id), {
     widgets: p,
     isGameFetching: m
   } = (0, g.Z)(o), O = (0, l.e7)([u.default], () => u.default.getId() === t.id), j = (() => {
     let [e, t] = (0, l.Wu)([d.Z], () => [d.Z.ipCountryCode, d.Z.ipCountryCodeRequest]), r = (0, s.U)();
-    return i.useEffect(() => {
+    return a.useEffect(() => {
       null == e && null == t && r && (0, c.GE)()
     }, [e, t, r]), "GB" === e && r
   })(), v = 0 === p.length && O;
@@ -117,7 +117,7 @@ function S(e) {
       widget: e,
       user: t,
       guildId: r,
-      channelId: a,
+      channelId: i,
       isGameFetching: m
     }, e.id)), O && (0, n.jsx)(y.Z, {})]
   })

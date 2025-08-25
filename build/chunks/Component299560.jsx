@@ -52,12 +52,12 @@ function j(e) {
   let {
     widgetType: t,
     onAddWidget: r,
-    size: a = "default",
+    size: i = "default",
     loading: o = false
   } = e, {
     placeholder: s,
     getAriaLabel: j
-  } = O[t], y = "small" === a, x = i.useCallback(() => {
+  } = O[t], y = "small" === i, x = a.useCallback(() => {
     o || ((0, u.qH)(t), (0, d.L$)(g.qb.WIDGET_ADDED), null == r || r())
   }, [t, r, o]);
   return (0, n.jsxs)(c.P3F, {
@@ -67,10 +67,10 @@ function j(e) {
     "aria-busy": o,
     children: ["details" === s.variant ? (0, n.jsx)(f.i, {
       applicationId: s.applicationId,
-      size: a
+      size: i
     }) : (0, n.jsx)(f.c, {
       applicationIds: s.applicationIds,
-      size: a
+      size: i
     }), (0, n.jsxs)("div", {
       className: m.overlay,
       children: [(0, n.jsx)(c.oFk, {

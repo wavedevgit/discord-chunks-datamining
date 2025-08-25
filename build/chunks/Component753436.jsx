@@ -23,7 +23,7 @@ function f(e) {
     channelId: b,
     loading: p = false,
     disableInteraction: m = false
-  } = e, O = (0, c.Z)(t.applicationId), j = O.length > 0, y = i.default.getCurrentUser(), x = (null == y ? true : y.id) === r;
+  } = e, O = (0, c.Z)(t.applicationId), j = O.length > 0, y = a.default.getCurrentUser(), x = (null == y ? true : y.id) === r;
   return p ? (0, n.jsx)("div", {
     className: u.loadingCover
   }) : (0, n.jsxs)("div", {
@@ -40,7 +40,7 @@ function f(e) {
       widgetType: f,
       className: d.removeGameButton,
       iconSize: "xs"
-    }), !m && j && (0, n.jsx)(a.Z, {
+    }), !m && j && (0, n.jsx)(i.Z, {
       label: s.intl.formatToPlainString(s.t.ujhJdH, {
         numFriends: O.length
       }),

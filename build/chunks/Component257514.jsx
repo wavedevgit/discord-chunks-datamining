@@ -1,11 +1,14 @@
 /** Chunk was on 6284 **/
-/** chunk id: 257514, original params: e,t,i (module,exports,require) **/
+/** chunk id: 257514, original params: t,i,e (module,exports,require) **/
 require.d(exports, {
-  default: () => I
+  default: () => p
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk755721 = require("./755721.js"),
+  Chunk257465 = require("./257465.jsx"),
+  Chunk369585 = require("./369585.jsx"),
+  Chunk103866 = require("./103866.jsx"),
+  Chunk213734 = require("./213734.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk355467 = require("./355467.js"),
   Chunk100527 = require("./100527.js"),
@@ -20,107 +23,105 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk304495 = require("./304495.js");
 
-function I(e) {
+function p(t) {
   let {
-    transitionState: t,
-    application: i,
-    storeListing: I,
-    subscription: T,
-    guild: A,
-    onClose: E
-  } = e, p = (0, c.Dt)(), {
-    analyticsLocations: O
-  } = (0, d.ZP)(o.Z.APPLICATION_SUBSCRIPTION_CANCELLATION_MODAL), {
-    cancelSubscription: j,
-    error: g,
-    submitting: P
-  } = (e => {
-    let [t, i] = a.useState(false), [n, s] = a.useState(null);
+    transitionState: i,
+    application: e,
+    storeListing: p,
+    subscription: h,
+    guild: m,
+    onClose: P
+  } = t, g = (0, u.Dt)(), {
+    analyticsLocations: j
+  } = (0, _.ZP)(C.Z.APPLICATION_SUBSCRIPTION_CANCELLATION_MODAL), {
+    cancelSubscription: L,
+    error: f,
+    submitting: v
+  } = (t => {
+    let [i, e] = s.useState(false), [n, a] = s.useState(null);
     return {
-      cancelSubscription: async t => {
+      cancelSubscription: async i => {
         try {
-          return i(true), await r.EO(t, e), true
-        } catch (e) {
-          s(e)
+          return e(true), await o.EO(i, t), true
+        } catch (t) {
+          a(t)
         } finally {
-          i(false)
+          e(false)
         }
       },
       error: n,
-      submitting: t
+      submitting: i
     }
-  })(O), [L, f] = a.useState(0), R = async () => {
-    await j(T.id) && (_.ZP.disableApplicationSubscriptionCancellationSurvey ? E() : f(1))
+  })(j), [R, U] = s.useState(0), b = async () => {
+    await L(h.id) && (N.ZP.disableApplicationSubscriptionCancellationSurvey ? P() : U(1))
   };
-  a.useEffect(() => {
-    C.default.track(m.rMx.CANCELLATION_FLOW_STARTED, {
-      location_stack: O
+  s.useEffect(() => {
+    I.default.track(A.rMx.CANCELLATION_FLOW_STARTED, {
+      location_stack: j
     })
-  }, [O]);
-  let v = (0, u.KW)(I.skuFlags);
-  return (0, n.jsx)(l.Y0X, {
-    transitionState: t,
-    className: h.modal,
-    "aria-labelledby": p,
-    parentComponent: "CancelSubscriptionModal",
-    children: (0, n.jsxs)(l.MyZ, {
-      activeSlide: L,
-      width: 440,
-      children: [(0, n.jsx)(l.Mi4, {
+  }, [j]);
+  let k = (0, S.KW)(p.skuFlags);
+  return (0, n.jsx)(a.I, {
+    onClose: P,
+    transitionState: i,
+    "aria-labelledby": g,
+    children: (0, n.jsxs)(d.MyZ, {
+      activeSlide: R,
+      width: 480,
+      children: [(0, n.jsx)(d.Mi4, {
         id: 0,
         children: (0, n.jsxs)("div", {
-          className: h.slideContainer,
-          children: [null != g ? (0, n.jsx)(l.kzN, {
-            children: g.message
-          }) : null, (0, n.jsxs)(l.hzk, {
-            className: h.content,
-            children: [(0, n.jsx)(l.LZC, {
+          className: T.slideContainer,
+          children: [null != f ? (0, n.jsx)(d.kzN, {
+            children: f.message
+          }) : null, (0, n.jsxs)(r.f, {
+            children: [(0, n.jsx)(d.LZC, {
               size: 16
-            }), (0, n.jsxs)(N.q$, {
-              children: [(0, n.jsx)(N.CW, {
-                application: i
-              }), (0, n.jsx)(N.r0, {
-                id: p,
-                children: S.intl.format(S.t.irka9v, {
-                  tier: I.summary
+            }), (0, n.jsxs)(E.q$, {
+              children: [(0, n.jsx)(E.CW, {
+                application: e
+              }), (0, n.jsx)(E.r0, {
+                id: g,
+                children: O.intl.format(O.t.irka9v, {
+                  tier: p.summary
                 })
-              }), (0, n.jsx)(N.s$, {}), (0, n.jsx)(N.K9, {
-                title: S.intl.string(S.t.LZunzc),
-                description: v ? S.intl.formatToPlainString(S.t["+HdfBw"], {
-                  timestamp: T.currentPeriodEnd.getTime()
-                }) : S.intl.formatToPlainString(S.t.qxiBnZ, {
-                  timestamp: T.currentPeriodEnd.getTime(),
-                  guildName: null == A ? true : A.name
+              }), (0, n.jsx)(E.s$, {}), (0, n.jsx)(E.K9, {
+                title: O.intl.string(O.t.LZunzc),
+                description: k ? O.intl.formatToPlainString(O.t["+HdfBw"], {
+                  timestamp: h.currentPeriodEnd.getTime()
+                }) : O.intl.formatToPlainString(O.t.qxiBnZ, {
+                  timestamp: h.currentPeriodEnd.getTime(),
+                  guildName: null == m ? true : m.name
                 })
-              }), (0, n.jsx)(N.G9, {
-                applicationId: I.applicationId,
-                storeListingBenefits: I.benefits
+              }), (0, n.jsx)(E.G9, {
+                applicationId: p.applicationId,
+                storeListingBenefits: p.benefits
               })]
             })]
-          }), (0, n.jsxs)(l.mzw, {
-            className: h.footer,
-            children: [(0, n.jsx)(l.zxk, {
-              variant: "critical-primary",
-              text: S.intl.string(S.t.KSqyfX),
-              onClick: R,
-              loading: P
-            }), (0, n.jsx)(s.zx, {
-              look: s.zx.Looks.LINK,
-              color: s.zx.Colors.PRIMARY,
-              className: h.goBackButton,
-              onClick: E,
-              children: S.intl.string(S.t["05jDxs"])
-            })]
+          }), (0, n.jsx)(c.m, {
+            children: (0, n.jsx)(l.G, {
+              actions: [{
+                loading: v,
+                onClick: b,
+                text: O.intl.string(O.t.KSqyfX),
+                variant: "critical-primary"
+              }, {
+                onClick: P,
+                text: O.intl.string(O.t["05jDxs"]),
+                variant: "icon-only"
+              }],
+              actionsFullWidth: true
+            })
           })]
         })
-      }), (0, n.jsx)(l.Mi4, {
+      }), (0, n.jsx)(d.Mi4, {
         id: 1,
         children: (0, n.jsx)("div", {
-          className: h.slideContainer,
+          className: T.slideContainer,
           children: (0, n.jsx)(x.Z, {
-            application: i,
-            subscriptionId: T.id,
-            onClose: E
+            application: e,
+            subscriptionId: h.id,
+            onClose: P
           })
         })
       })]

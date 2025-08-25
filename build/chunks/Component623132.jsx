@@ -60,21 +60,21 @@ function w(e) {
   var {
     applicationId: t,
     userId: r,
-    gameName: i
-  } = e, a = function(e, t) {
+    gameName: a
+  } = e, i = function(e, t) {
     if (null == e) return {};
-    var r, n, i = function(e, t) {
+    var r, n, a = function(e, t) {
       if (null == e) return {};
-      var r, n, i = {},
-        a = Object.keys(e);
-      for (n = 0; n < a.length; n++) r = a[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
-      return i
+      var r, n, a = {},
+        i = Object.keys(e);
+      for (n = 0; n < i.length; n++) r = i[n], t.indexOf(r) >= 0 || (a[r] = e[r]);
+      return a
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var a = Object.getOwnPropertySymbols(e);
-      for (n = 0; n < a.length; n++) r = a[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
+      var i = Object.getOwnPropertySymbols(e);
+      for (n = 0; n < i.length; n++) r = i[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r])
     }
-    return i
+    return a
   }(e, ["applicationId", "userId", "gameName"]);
   let l = (0, d.Z)({
     location: "UserProfileWidgetGameDetailsCard",
@@ -83,13 +83,13 @@ function w(e) {
     sourceUserId: r,
     trackEntryPointImpression: true
   });
-  return null == l ? (0, n.jsx)(c.X6q, P(_({}, a), {
-    children: i
-  })) : (0, n.jsx)(c.X6q, P(_({}, a), {
+  return null == l ? (0, n.jsx)(c.X6q, P(_({}, i), {
+    children: a
+  })) : (0, n.jsx)(c.X6q, P(_({}, i), {
     children: (0, n.jsx)(c.P3F, {
       onClick: l,
       className: h.clickableText,
-      children: i
+      children: a
     })
   }))
 }
@@ -98,13 +98,13 @@ function S(e) {
   let {
     user: t,
     guildId: r,
-    channelId: i,
-    id: a
+    channelId: a,
+    id: i
   } = e;
   return (0, n.jsx)(c.nn4, {
-    id: a,
+    id: i,
     children: v.intl.format(v.t.TM0XDQ, {
-      name: g.ZP.getName(r, i, t)
+      name: g.ZP.getName(r, a, t)
     })
   })
 }
@@ -126,8 +126,8 @@ function E(e) {
   let {
     text: t,
     user: r,
-    guildId: i,
-    channelId: a
+    guildId: a,
+    channelId: i
   } = e, l = (0, s.Dt)();
   return null == t || "" === t.trim() ? null : (0, n.jsxs)("div", {
     role: "group",
@@ -138,8 +138,8 @@ function E(e) {
       className: h.commentIcon
     }), (0, n.jsx)(S, {
       user: r,
-      guildId: i,
-      channelId: a,
+      guildId: a,
+      channelId: i,
       id: l
     }), (0, n.jsx)(I, {
       text: t
@@ -151,21 +151,21 @@ function T(e) {
   let {
     text: t,
     user: r,
-    guildId: a,
+    guildId: i,
     channelId: o,
     widgetType: u,
     applicationId: d
-  } = e, f = (0, s.Dt)(), g = (0, s.Dt)(), [p, m] = i.useState("idle"), [O, j] = i.useState(null != t ? t : ""), y = i.useRef(null), x = i.useRef(null), _ = v.intl.string(v.t.xKSfBQ), P = null != t && "" !== t.trim(), w = i.useCallback(() => {
+  } = e, f = (0, s.Dt)(), g = (0, s.Dt)(), [p, m] = a.useState("idle"), [O, j] = a.useState(null != t ? t : ""), y = a.useRef(null), x = a.useRef(null), _ = v.intl.string(v.t.xKSfBQ), P = null != t && "" !== t.trim(), w = a.useCallback(() => {
     m("editing")
-  }, []), E = i.useCallback(() => {
+  }, []), E = a.useCallback(() => {
     let e = O.trim();
     (0, b.Bu)(u, d, "" !== e ? e : true), m("completed")
-  }, [u, d, O]), T = i.useCallback(e => {
+  }, [u, d, O]), T = a.useCallback(e => {
     j(e)
   }, []);
-  return i.useEffect(() => {
+  return a.useEffect(() => {
     "editing" === p && j(null != t ? t : "")
-  }, [t, p]), i.useEffect(() => {
+  }, [t, p]), a.useEffect(() => {
     if ("completed" === p) {
       var e;
       null == (e = y.current) || e.focus()
@@ -200,7 +200,7 @@ function T(e) {
       className: h.commentIcon
     }), (0, n.jsx)(S, {
       user: r,
-      guildId: a,
+      guildId: i,
       channelId: o,
       id: g
     }), (0, n.jsx)(I, {
@@ -223,17 +223,17 @@ function N(e) {
   let {
     applicationId: t,
     guildId: r,
-    channelId: i,
-    className: a
+    channelId: a,
+    className: i
   } = e, l = (0, x.Z)(t);
   return l.length > 0 ? (0, n.jsx)(p.Z, {
     label: v.intl.formatToPlainString(v.t.ujhJdH, {
       numFriends: l.length
     }),
-    className: a,
+    className: i,
     users: l,
     guildId: r,
-    channelId: i
+    channelId: a
   }) : null
 }
 
@@ -241,8 +241,8 @@ function k(e) {
   let {
     user: t,
     guildId: r,
-    channelId: i,
-    game: a,
+    channelId: a,
+    game: i,
     widgetType: l,
     loading: s = false,
     disableInteraction: u = false
@@ -252,7 +252,7 @@ function k(e) {
     applicationId: b,
     comment: p,
     tags: x
-  } = a, S = {
+  } = i, S = {
     variant: "heading-sm/medium",
     color: "text-default"
   }, I = f.default.getCurrentUser(), k = (null == I ? true : I.id) === t.id, C = !u && k && l === o.l.FAVORITE_GAMES;
@@ -277,14 +277,14 @@ function k(e) {
         text: p,
         user: t,
         guildId: r,
-        channelId: i,
+        channelId: a,
         widgetType: l,
         applicationId: b
       }) : (0, n.jsx)(E, {
         text: p,
         user: t,
         guildId: r,
-        channelId: i
+        channelId: a
       }), (0, n.jsx)(j.Z, {
         tags: x,
         isCurrentUser: k,
@@ -295,10 +295,10 @@ function k(e) {
         className: h.socialProof,
         applicationId: b,
         guildId: r,
-        channelId: i
+        channelId: a
       })]
     }), !u && k && (0, n.jsx)(y.Z, {
-      game: a,
+      game: i,
       widgetType: l,
       className: h.removeGameButton
     })]

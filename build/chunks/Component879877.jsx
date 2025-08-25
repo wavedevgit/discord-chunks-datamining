@@ -19,19 +19,19 @@ function b(e) {
   let {
     tags: t,
     isCurrentUser: r,
-    widgetType: a,
+    widgetType: i,
     applicationId: l,
     disableInteraction: c = false
-  } = e, b = null == t ? true : t.filter(e => null != (0, d.zK)(e)), y = (0, i.useRef)(new Map), x = (0, i.useRef)(null), v = (0, i.useRef)(null), [h, _] = (0, i.useState)(0), [P, w] = (0, i.useState)(false), {
+  } = e, b = null == t ? true : t.filter(e => null != (0, d.zK)(e)), y = (0, a.useRef)(new Map), x = (0, a.useRef)(null), v = (0, a.useRef)(null), [h, _] = (0, a.useState)(0), [P, w] = (0, a.useState)(false), {
     trackUserProfileAction: S
-  } = (0, o.KZ)(), I = r && !c && (0, s.M8)(a), E = j(x, v, b, y, _);
-  if ((0, i.useEffect)(() => (E(), window.addEventListener("resize", E), () => {
+  } = (0, o.KZ)(), I = r && !c && (0, s.M8)(i), E = j(x, v, b, y, _);
+  if ((0, a.useEffect)(() => (E(), window.addEventListener("resize", E), () => {
       window.removeEventListener("resize", E)
     }), [E, null == b ? true : b.join("")]), null == b || 0 === b.length) return I ? (0, n.jsx)("div", {
     className: g.tagListContainer,
     children: (0, n.jsx)(u.Z, {
       tags: t,
-      widgetType: a,
+      widgetType: i,
       applicationId: l,
       ref: v
     })
@@ -46,7 +46,7 @@ function b(e) {
         tag: e,
         isCurrentUser: r,
         applicationId: l,
-        widgetType: a,
+        widgetType: i,
         ref: t => {
           null != t && y.current.set(e, t)
         },
@@ -69,7 +69,7 @@ function b(e) {
       disableInteraction: c
     })), r && !c && (0, n.jsx)(u.Z, {
       tags: t,
-      widgetType: a,
+      widgetType: i,
       applicationId: l,
       ref: v
     })]
@@ -79,7 +79,7 @@ let p = e => {
     let {
       tag: t,
       isCurrentUser: r,
-      applicationId: i,
+      applicationId: a,
       widgetType: l,
       disableInteraction: o,
       ref: u
@@ -89,7 +89,7 @@ let p = e => {
       getText: p,
       icon: m
     } = b, O = () => {
-      (0, s.RZ)(l, i, t), (0, c.pQ)({
+      (0, s.RZ)(l, a, t), (0, c.pQ)({
         action: "REMOVE_GAME_TAGS"
       })
     };
@@ -98,15 +98,15 @@ let p = e => {
       ref: u,
       children: [(0, n.jsx)(m, {
         size: "xxs"
-      }), (0, n.jsx)(a.Text, {
+      }), (0, n.jsx)(i.Text, {
         variant: "text-xxs/medium",
         color: "text-secondary",
         children: p()
-      }), r && !o && (0, n.jsx)(a.ua7, {
+      }), r && !o && (0, n.jsx)(i.ua7, {
         text: f.intl.string(f.t.Otv9fH),
         children: e => {
           var t, r;
-          return (0, n.jsx)(a.P3F, (t = function(e) {
+          return (0, n.jsx)(i.P3F, (t = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var r = null != arguments[t] ? arguments[t] : {},
                 n = Object.keys(r);
@@ -129,7 +129,7 @@ let p = e => {
             "aria-label": f.intl.formatToPlainString(f.t.GCn1nZ, {
               tag: p()
             }),
-            children: (0, n.jsx)(a.Dio, {
+            children: (0, n.jsx)(i.Dio, {
               size: "xxs"
             })
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
@@ -150,25 +150,25 @@ let p = e => {
     let {
       numHidden: t,
       onClick: r,
-      disableInteraction: i,
+      disableInteraction: a,
       ref: l
     } = e;
-    return i ? (0, n.jsx)("div", {
+    return a ? (0, n.jsx)("div", {
       className: g.expandButton,
-      children: (0, n.jsx)(a.Text, {
+      children: (0, n.jsx)(i.Text, {
         variant: "text-xxs/medium",
         color: "text-secondary",
         children: "+".concat(t)
       })
-    }) : (0, n.jsx)(a.DY3, {
+    }) : (0, n.jsx)(i.DY3, {
       className: g.buttonContainer,
       text: f.intl.string(f.t.mriLXF),
-      children: (0, n.jsx)(a.P3F, {
+      children: (0, n.jsx)(i.P3F, {
         onClick: r,
         className: g.expandButton,
         innerRef: l,
         "aria-label": f.intl.string(f.t.mriLXF),
-        children: (0, n.jsx)(a.Text, {
+        children: (0, n.jsx)(i.Text, {
           variant: "text-xxs/medium",
           color: "text-secondary",
           children: "+".concat(t)
@@ -180,10 +180,10 @@ let p = e => {
     let {
       onClick: t
     } = e;
-    return (0, n.jsx)(a.DY3, {
+    return (0, n.jsx)(i.DY3, {
       className: g.buttonContainer,
       text: f.intl.string(f.t.z9VPra),
-      children: (0, n.jsx)(a.P3F, {
+      children: (0, n.jsx)(i.P3F, {
         onClick: t,
         className: g.collapseButton,
         "aria-label": f.intl.string(f.t.z9VPra),
@@ -196,10 +196,10 @@ let p = e => {
       })
     })
   },
-  j = (e, t, r, n, a) => (0, i.useCallback)(() => {
-    var i, l, o, c;
-    if (null == r) return void a(0);
-    let s = null != (o = null == (i = e.current) ? true : i.getBoundingClientRect().width) ? o : 0,
+  j = (e, t, r, n, i) => (0, a.useCallback)(() => {
+    var a, l, o, c;
+    if (null == r) return void i(0);
+    let s = null != (o = null == (a = e.current) ? true : a.getBoundingClientRect().width) ? o : 0,
       u = null != (c = null == (l = t.current) ? true : l.getBoundingClientRect().width) ? c : 0,
       d = u > 0 ? 8 : 4,
       f = 0,
@@ -220,5 +220,5 @@ let p = e => {
         f++
       }
     }
-    a(r.length - f)
-  }, [e, t, null == r ? true : r.join(""), n, a])
+    i(r.length - f)
+  }, [e, t, null == r ? true : r.join(""), n, i])

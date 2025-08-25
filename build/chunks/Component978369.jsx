@@ -15,10 +15,10 @@ let d = Chunk647438.memo(function(e) {
   let {
     currentTags: t,
     onTagSelect: r,
-    onNoneSelect: i,
+    onNoneSelect: a,
     onClose: l
   } = e;
-  return (0, n.jsx)(a.v2r, {
+  return (0, n.jsx)(i.v2r, {
     navId: "widget-game-tags",
     "aria-label": s.intl.string(s.t.r6EJOj),
     onClose: l,
@@ -26,29 +26,29 @@ let d = Chunk647438.memo(function(e) {
     children: Object.entries(c.aE).map(e => {
       let [l, o] = e, u = ((e, l) => {
         let o = [];
-        return l.type === c.kd.RADIO && o.push((0, n.jsx)(a.k5B, {
+        return l.type === c.kd.RADIO && o.push((0, n.jsx)(i.k5B, {
           id: "".concat(e, "-none"),
           group: e,
           label: s.intl.string(s.t.PoWNfX),
           checked: !l.tags.some(e => t.includes(e)),
-          action: () => i(l.tags)
-        }, "none")), l.tags.forEach(i => {
-          let s = c.XV[i];
-          null != s && (l.type === c.kd.RADIO ? o.push((0, n.jsx)(a.k5B, {
-            id: i,
+          action: () => a(l.tags)
+        }, "none")), l.tags.forEach(a => {
+          let s = c.XV[a];
+          null != s && (l.type === c.kd.RADIO ? o.push((0, n.jsx)(i.k5B, {
+            id: a,
             group: e,
             label: s.getText(),
-            checked: t.includes(i),
-            action: () => r(i, true)
-          }, i)) : o.push((0, n.jsx)(a.S89, {
-            id: i,
+            checked: t.includes(a),
+            action: () => r(a, true)
+          }, a)) : o.push((0, n.jsx)(i.S89, {
+            id: a,
             label: s.getText(),
-            checked: t.includes(i),
-            action: () => r(i, false)
-          }, i)))
+            checked: t.includes(a),
+            action: () => r(a, false)
+          }, a)))
         }), o
       })(l, o);
-      return (0, n.jsx)(a.kSQ, {
+      return (0, n.jsx)(i.kSQ, {
         label: o.getLabel(),
         children: u
       }, l)
@@ -62,9 +62,9 @@ function f(e) {
     widgetType: r,
     applicationId: f,
     ref: g
-  } = e, b = (0, i.useRef)(null), {
+  } = e, b = (0, a.useRef)(null), {
     trackUserProfileAction: p
-  } = (0, l.KZ)(), m = (0, i.useMemo)(() => null != t ? t : [], [t]), O = (0, i.useCallback)(function(e) {
+  } = (0, l.KZ)(), m = (0, a.useMemo)(() => null != t ? t : [], [t]), O = (0, a.useCallback)(function(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
       n = new Set(m);
     if (t) {
@@ -80,7 +80,7 @@ function f(e) {
       action: "ADD_GAME_TAGS"
     }));
     (0, o.n$)(r, f, Array.from(n))
-  }, [m, p, r, f]), j = (0, i.useCallback)(e => {
+  }, [m, p, r, f]), j = (0, a.useCallback)(e => {
     let t = new Set(m);
     e.forEach(e => {
       t.delete(e)
@@ -88,7 +88,7 @@ function f(e) {
       action: "REMOVE_GAME_TAGS"
     }), (0, o.n$)(r, f, Array.from(t))
   }, [m, p, r, f]);
-  return (0, n.jsx)(a.yRy, {
+  return (0, n.jsx)(i.yRy, {
     targetElementRef: b,
     position: "right",
     align: "top",
@@ -109,7 +109,7 @@ function f(e) {
         ref: e => (null != e && (b.current = e, g.current = e), () => {
           b.current = null, g.current = null
         }),
-        children: (0, n.jsx)(a.P3F, (t = function(e) {
+        children: (0, n.jsx)(i.P3F, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var r = null != arguments[t] ? arguments[t] : {},
               n = Object.keys(r);
@@ -129,7 +129,7 @@ function f(e) {
         }({}, e), r = r = {
           className: u.addButton,
           "aria-label": s.intl.string(s.t.r6EJOj),
-          children: (0, n.jsx)(a.Text, {
+          children: (0, n.jsx)(i.Text, {
             variant: "text-xxs/medium",
             color: "text-secondary",
             children: s.intl.string(s.t.fZSej4)

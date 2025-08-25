@@ -17,20 +17,20 @@ function o(e) {
     disableInteraction: c
   } = e, s = function(e, t) {
     if (null == e) return {};
-    var r, n, i = function(e, t) {
+    var r, n, a = function(e, t) {
       if (null == e) return {};
-      var r, n, i = {},
-        a = Object.keys(e);
-      for (n = 0; n < a.length; n++) r = a[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
-      return i
+      var r, n, a = {},
+        i = Object.keys(e);
+      for (n = 0; n < i.length; n++) r = i[n], t.indexOf(r) >= 0 || (a[r] = e[r]);
+      return a
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var a = Object.getOwnPropertySymbols(e);
-      for (n = 0; n < a.length; n++) r = a[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
+      var i = Object.getOwnPropertySymbols(e);
+      for (n = 0; n < i.length; n++) r = i[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r])
     }
-    return i
+    return a
   }(e, ["user", "widget", "containerClassName", "disableInteraction"]);
-  return (0, n.jsx)(i.Z, {
+  return (0, n.jsx)(a.Z, {
     userId: t.id,
     widget: r,
     className: o,
@@ -57,7 +57,7 @@ function o(e) {
       games: r.games,
       widgetType: r.type,
       disableInteraction: c
-    }, s)) : (0, n.jsx)(a.Z, {
+    }, s)) : (0, n.jsx)(i.Z, {
       widgetType: r.type
     })
   })
