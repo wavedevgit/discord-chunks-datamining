@@ -37,6 +37,7 @@ let u = e => {
           containerVisibilityPercentage: t,
           changeOpacity: true
         },
+        animationSpeedScale: 2,
         children: (0, r.jsx)("img", {
           src: c.Z,
           alt: "",
@@ -51,7 +52,8 @@ let u = e => {
       starContainerClassName: l.starContainer,
       hammerAssetClassName: l.hammerTrinket,
       keyAssetClassName: l.keyTrinket,
-      starAssetClassName: l.starTrinket
+      starAssetClassName: l.starTrinket,
+      animationSpeedScale: 2
     })]
   })
 }

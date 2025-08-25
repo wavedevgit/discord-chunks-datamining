@@ -27,7 +27,8 @@ let _ = e => {
     carAssetClassName: E,
     hammerAssetClassName: b,
     keyAssetClassName: y,
-    starAssetClassName: O
+    starAssetClassName: O,
+    animationSpeedScale: v = 1
   } = e;
   return (0, r.jsxs)(r.Fragment, {
     children: [null != i && (0, r.jsx)("div", {
@@ -56,6 +57,7 @@ let _ = e => {
         } : true,
         animateXAxisWiggle: true,
         isMotionReduced: t,
+        animationSpeedScale: v,
         children: (0, r.jsx)("img", {
           src: l.Z,
           className: g,
@@ -78,6 +80,7 @@ let _ = e => {
         } : true,
         animateXAxisWiggle: true,
         isMotionReduced: t,
+        animationSpeedScale: v,
         children: (0, r.jsx)("img", {
           src: c.Z,
           className: E,
@@ -100,6 +103,7 @@ let _ = e => {
         } : true,
         animateXAxisWiggle: true,
         isMotionReduced: t,
+        animationSpeedScale: v,
         children: (0, r.jsx)("img", {
           src: u.Z,
           className: b,
@@ -132,6 +136,7 @@ let _ = e => {
         } : true,
         animateXAxisWiggle: true,
         isMotionReduced: t,
+        animationSpeedScale: v,
         children: (0, r.jsx)("img", {
           src: d.Z,
           className: y,
@@ -164,6 +169,7 @@ let _ = e => {
         } : true,
         animateXAxisWiggle: true,
         isMotionReduced: t,
+        animationSpeedScale: v,
         children: (0, r.jsx)("img", {
           src: f.Z,
           className: O,
