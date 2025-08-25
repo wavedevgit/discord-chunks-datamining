@@ -33,7 +33,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk989308 = require("./989308.js"),
   Chunk210418 = require("./210418.js");
 
-function w(e) {
+function Z(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -52,7 +52,7 @@ function w(e) {
   return e
 }
 
-function Z(e, t) {
+function w(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -76,12 +76,12 @@ let T = (0, Chunk624138.Mg)(Chunk477690.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITI
       guild: t,
       tooltipTypes: l,
       withMargin: d
-    } = e, j = (0, _.Jh)(t.id), T = (0, b.Z)(t.id), A = (0, _.FZ)(j), R = null == A, M = null != A ? A : j, L = (0, c.e7)([x.Z], () => {
+    } = e, v = (0, _.Jh)(t.id), T = (0, b.Z)(t.id), A = (0, _.FZ)(v), R = null == A, M = null != A ? A : v, L = (0, c.e7)([x.Z], () => {
       var e;
       return null != (e = x.Z.getCountForGuild(t.id)) ? e : 0
     }), k = (0, c.e7)([O.Z], () => O.Z.can(E.Plq.MANAGE_GUILD, t));
     i.useEffect(() => {
-      L !== T && (0, v.v)(t.id, T)
+      L !== T && (0, j.v)(t.id, T)
     }, [t.id, L, T]);
     let U = R ? "100%" : "".concat(Math.min(100, T / E.oCV[M] * 100), "%"),
       {
@@ -115,7 +115,7 @@ let T = (0, Chunk624138.Mg)(Chunk477690.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITI
         guild: t,
         markAsDismissed: q
       }) : null,
-      Q = (e, i) => (0, r.jsxs)(p.P3F, Z(w({}, W, e, i), {
+      Q = (e, i) => (0, r.jsxs)(p.P3F, w(Z({}, W, e, i), {
         "aria-label": true,
         role: "button",
         focusProps: {
@@ -136,7 +136,7 @@ let T = (0, Chunk624138.Mg)(Chunk477690.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITI
             let {
               default: e
             } = await n.e("8570").then(n.bind(n, 651138));
-            return n => (0, r.jsx)(e, Z(w({}, n), {
+            return n => (0, r.jsx)(e, w(Z({}, n), {
               guild: t
             }))
           })

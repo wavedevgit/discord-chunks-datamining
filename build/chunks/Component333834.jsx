@@ -32,7 +32,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk809946 = require("./809946.js");
 
-function Z(e) {
+function w(e) {
   e.stopPropagation()
 }
 
@@ -45,8 +45,8 @@ function T(e) {
   return (0, r.jsx)(p.P3F, {
     "aria-expanded": n,
     onClick: i,
-    className: o()(w.messagesGroupHeaderWrap, {
-      [w.collapsed]: !n
+    className: o()(Z.messagesGroupHeaderWrap, {
+      [Z.collapsed]: !n
     }),
     children: (0, r.jsxs)(p.Kqy, {
       gap: 4,
@@ -55,11 +55,11 @@ function T(e) {
       children: [(0, r.jsx)(p.X6q, {
         variant: "text-sm/medium",
         color: "text-secondary",
-        className: w.messagesGroupHeader,
+        className: Z.messagesGroupHeader,
         children: (0, a.capitalize)(N.intl.string(S.Vv[t]).toLowerCase())
       }), (0, r.jsx)(p.CJ0, {
         size: "xxs",
-        className: w.chevron
+        className: Z.chevron
       })]
     })
   })
@@ -123,20 +123,20 @@ function D(e) {
     isLoading: G,
     isLoadingComplete: B,
     hasLoadedEver: F
-  } = (0, u.cj)([v.Z], () => ({
-    isLoading: v.Z.isLoading,
-    isLoadingComplete: v.Z.isLoadingComplete,
-    hasLoadedEver: v.Z.hasLoadedEver
+  } = (0, u.cj)([j.Z], () => ({
+    isLoading: j.Z.isLoading,
+    isLoadingComplete: j.Z.isLoadingComplete,
+    hasLoadedEver: j.Z.hasLoadedEver
   })), V = !F && G, {
     messageCategoryOpenStates: H,
     toggleOpenState: z
-  } = (0, j.Z)(), W = function() {
-    let e = (0, u.Wu)([v.Z], () => {
+  } = (0, v.Z)(), W = function() {
+    let e = (0, u.Wu)([j.Z], () => {
       var e;
-      return null != (e = v.Z.getNotifyingChannelIds()) ? e : []
+      return null != (e = j.Z.getNotifyingChannelIds()) ? e : []
     });
-    return (0, u.e7)([v.Z, m.ZP], () => {
-      let t = v.Z.getChannelInfoMap();
+    return (0, u.e7)([j.Z, m.ZP], () => {
+      let t = j.Z.getChannelInfoMap();
       for (let r of e) {
         var n;
         let e = t[r];
@@ -232,7 +232,7 @@ function D(e) {
       messagesByCategory: n
     } = e, r = i.useRef(false), l = n.UNREAD.length > 0, {
       setOpenStateFromUnreads: o
-    } = (0, j.Z)();
+    } = (0, v.Z)();
     i.useEffect(() => {
       t || r.current || (o(l), r.current = true)
     }, [o, l, t])
@@ -264,9 +264,9 @@ function D(e) {
     messagesByCategory: Y,
     viewId: D
   }), (0, r.jsx)("div", {
-    className: o()(g, w.messagesPopoutWrap),
-    onClick: Z,
-    onDoubleClick: Z,
+    className: o()(g, Z.messagesPopoutWrap),
+    onClick: w,
+    onDoubleClick: w,
     "aria-label": e["aria-label"],
     children: (0, r.jsx)(c.bG, {
       navigator: L,
@@ -312,7 +312,7 @@ function D(e) {
               var t;
               M.current = e, i.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
             },
-            className: o()(w.messagesPopout, f),
+            className: o()(Z.messagesPopout, f),
             onScroll: K,
             fade: true
           }, l), n = n = {

@@ -1,4 +1,4 @@
-/** Chunk was on 65819 **/
+/** Chunk was on 2262 **/
 /** chunk id: 384694, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   q: () => _
@@ -30,8 +30,8 @@ let v = e => ({
       selected: n,
       onError: d,
       labelledBy: _,
-      isEmojiAnimated: N
-    } = e, E = (0, i.cj)([c.Z, m.ZP], () => Object.fromEntries(m.ZP.getFlattenedGuildIds().map(e => c.Z.getGuild(e)).filter(f.lm).map(e => [e.id, e]))), O = (0, i.cj)([o.ZP], () => Object.fromEntries(Object.entries(E).map(e => {
+      isEmojiAnimated: y
+    } = e, O = (0, i.cj)([c.Z, m.ZP], () => Object.fromEntries(m.ZP.getFlattenedGuildIds().map(e => c.Z.getGuild(e)).filter(h.lm).map(e => [e.id, e]))), E = (0, i.cj)([o.ZP], () => Object.fromEntries(Object.entries(O).map(e => {
       let [t, n] = e;
       return [t, function(e) {
         var t;
@@ -44,12 +44,12 @@ let v = e => ({
       }({
         guild: n,
         emojis: o.ZP.getGuildEmoji(t),
-        isEmojiAnimated: N
+        isEmojiAnimated: y
       })]
-    })), [E, N]), C = l.useMemo(() => Object.values(E).filter(j).map(v), [E]), I = l.useCallback(e => {
+    })), [O, y]), N = l.useMemo(() => Object.values(O).filter(j).map(v), [O]), C = l.useCallback(e => {
       let [t] = e;
       if (null == t || null == t.value) return null;
-      let n = E[t.value];
+      let n = O[t.value];
       return null == n ? null : (0, r.jsxs)("div", {
         className: b.value,
         children: [(0, r.jsx)(s.Z, {
@@ -63,9 +63,9 @@ let v = e => ({
           children: t.label
         })]
       })
-    }, [E]), y = l.useCallback(e => {
+    }, [O]), I = l.useCallback(e => {
       if (null == e || null == e.value) return null;
-      let t = E[e.value];
+      let t = O[e.value];
       return null == t ? null : (0, r.jsxs)("div", {
         className: b.option,
         children: [(0, r.jsx)(s.Z, {
@@ -84,25 +84,25 @@ let v = e => ({
             color: "text-tertiary",
             className: b.text,
             children: p.intl.format(p.t.WkK72t, {
-              count: O[e.value]
+              count: E[e.value]
             })
           })]
         })]
       })
-    }, [O, E]);
+    }, [E, O]);
     return l.useEffect(() => {
       var e;
-      C.length < 1 ? d(h.ze.NO_PERMISSIONS) : null != n && (null != (e = null == O ? true : O[n]) ? e : 0) < 1 ? d(x.evJ.TOO_MANY_EMOJI) : d(null)
-    }, [C, t, d, n, O]), (0, r.jsx)(a.q4e, {
+      N.length < 1 ? d(f.ze.NO_PERMISSIONS) : null != n && (null != (e = null == E ? true : E[n]) ? e : 0) < 1 ? d(x.evJ.TOO_MANY_EMOJI) : d(null)
+    }, [N, t, d, n, E]), (0, r.jsx)(a.q4e, {
       onChange: t,
-      options: C,
+      options: N,
       popoutPosition: "top",
       popoutWidth: 240,
-      renderOptionLabel: y,
-      renderOptionValue: I,
+      renderOptionLabel: I,
+      renderOptionValue: C,
       value: n,
       "aria-labelledby": _,
-      placeholder: C.length < 1 ? p.intl.string(p.t.jHpxws) : p.intl.string(p.t["4mqeQE"]),
-      isDisabled: C.length < 1
+      placeholder: N.length < 1 ? p.intl.string(p.t.jHpxws) : p.intl.string(p.t["4mqeQE"]),
+      isDisabled: N.length < 1
     })
   }

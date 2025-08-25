@@ -1,7 +1,7 @@
 /** Chunk was on 91488 **/
 /** chunk id: 332538, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Wj: () => w,
+  Wj: () => Z,
   ZP: () => N
 }), require("./388685.js"), require("./361932.js"), require("./187205.js");
 var Chunk951288 = require("./951288.js"),
@@ -75,7 +75,7 @@ function N(e) {
       let [n, r] = (0, d.US)(null != t ? [a.z.GUILD_POWERUP_PERKS_COACHMARK] : []), o = n === a.z.GUILD_POWERUP_PERKS_COACHMARK, {
         available: s
       } = (0, x.Z)(e), c = function(e, t) {
-        let n = (0, j.qI)(e, "GuildPowerupsChannelRow"),
+        let n = (0, v.qI)(e, "GuildPowerupsChannelRow"),
           r = (0, _.i)(e, "GuildPowerupsChannelRow");
         return i.useMemo(() => {
           if (r && !Array.from(S.os[S.Du.GUILD_TAG_BADGE_PACKS_WAVE_ONE]).some(e => {
@@ -124,7 +124,7 @@ function N(e) {
               return null != n && !!(l >= n)
             }) ? [] : r.map(r => {
               let i = t.allPowerups[r];
-              return null == i || n < i.cost || (0, v.e)(e, i, "maybeGetPerkPurchaseablePopoutDCF") ? null : i
+              return null == i || n < i.cost || (0, j.e)(e, i, "maybeGetPerkPurchaseablePopoutDCF") ? null : i
             })).filter(f.lm);
           if (0 !== o.length) {
             if (1 === o.length && !(0, p.OY)(a.C.GUILD_POWERUP_SINGLE_SKU_PURCHASE_COACHMARK, e)) return {
@@ -207,7 +207,7 @@ function N(e) {
   }
 }
 
-function w(e) {
+function Z(e) {
   let t = (0, o.e7)([O.Z], () => O.Z.getStateForGuild(e)),
     n = N(e);
   i.useEffect(() => {

@@ -72,13 +72,22 @@ let a = (0, Chunk818083.B)({
     id: "2025-08-emoji_studio_speedrun",
     label: "Emoji Studio V2 Speedrun",
     defaultConfig: {
-      enabled: false
+      isEmojiEditingExperimentEnabled: false,
+      isSelectFileBeforeEmojiStudioExperimentEnabled: false
     },
     treatments: [{
       id: 1,
-      label: "Enabled - Instant Upload, Emoji Editing Support",
+      label: "Emoji Editing",
       config: {
-        enabled: true
+        isEmojiEditingExperimentEnabled: true,
+        isSelectFileBeforeEmojiStudioExperimentEnabled: false
+      }
+    }, {
+      id: 2,
+      label: "Select Image File Before Emoji Studio",
+      config: {
+        isEmojiEditingExperimentEnabled: false,
+        isSelectFileBeforeEmojiStudioExperimentEnabled: true
       }
     }]
   });
@@ -111,7 +120,8 @@ function c(e) {
     autoTrackExposure: n,
     disable: c || i
   }), {
-    enabled: p
+    isEmojiEditingExperimentEnabled: p,
+    isSelectFileBeforeEmojiStudioExperimentEnabled: h
   } = l.useExperiment({
     location: t
   }, {
@@ -121,8 +131,9 @@ function c(e) {
   return {
     enabled: u,
     isMobileEnabled: f,
-    isEntrypointEnabled: d || _ || p,
+    isEntrypointEnabled: d || _ || p || h,
     isEntrypointExperimentEnabled: _,
-    isV2SpeedrunExperimentEnabled: p
+    isEmojiEditingExperimentEnabled: p,
+    isSelectFileBeforeEmojiStudioExperimentEnabled: h
   }
 }

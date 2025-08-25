@@ -54,12 +54,12 @@ function R(e) {
     badge: h,
     link: m,
     showProgressBadge: b
-  } = e, [O, y] = i.useState(false), [_, j] = i.useState(false), [v, x] = i.useState(null), [N, R] = i.useState(0), D = (0, l.Ie)("home"), M = (0, d.oq)().activePanel === d.wh.APP_ICON, L = () => {
-    x(null), R(0), clearTimeout(v)
+  } = e, [O, y] = i.useState(false), [_, v] = i.useState(false), [j, x] = i.useState(null), [N, R] = i.useState(0), D = (0, l.Ie)("home"), M = (0, d.oq)().activePanel === d.wh.APP_ICON, L = () => {
+    x(null), R(0), clearTimeout(j)
   };
   if (null == p) return null;
-  let k = Z.intl.string(Z.t.YUU0RE);
-  _ && (k = a.K.get(I.wli) ? Z.intl.string(Z.t.nkq1l5) : Z.intl.string(Z.t.Be8Q5O));
+  let k = w.intl.string(w.t.YUU0RE);
+  _ && (k = a.K.get(I.wli) ? w.intl.string(w.t.nkq1l5) : w.intl.string(w.t.Be8Q5O));
   let U = null;
   !o && b && (U = (0, r.jsx)(c.Z, {
     className: T.downloadProgress,
@@ -94,16 +94,16 @@ function R(e) {
         onMouseEnter: () => y(true),
         onMouseLeave: () => y(false),
         onClick: () => {
-          if (!__OVERLAY__ && (null != v && clearTimeout(v), x(setTimeout(L, 500)), R(N + 1), 15 === N)) {
+          if (!__OVERLAY__ && (null != j && clearTimeout(j), x(setTimeout(L, 500)), R(N + 1), 15 === N)) {
             L();
             let e = !a.K.get(I.wli);
-            a.K.set(I.wli, e), e && a.K.set(w.O5, true), e ? (0, f.GN)("discodo") : (0, f.GN)("user_leave"), j(true), setTimeout(() => {
-              j(false)
+            a.K.set(I.wli, e), e && a.K.set(Z.O5, true), e ? (0, f.GN)("discodo") : (0, f.GN)("user_leave"), v(true), setTimeout(() => {
+              v(false)
             }, 1e3)
           }
         },
         selected: G,
-        ariaLabel: Z.intl.string(Z.t.YUU0RE),
+        ariaLabel: w.intl.string(w.t.YUU0RE),
         "aria-owns": "guild-list-unread-dms",
         "aria-selected": o
       }, D), n = n = {

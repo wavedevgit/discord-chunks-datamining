@@ -2,7 +2,7 @@
 /** chunk id: 55185, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   I: () => T,
-  N: () => Z
+  N: () => w
 }), require("./388685.js");
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -21,7 +21,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk87587 = require("./87587.js"),
   Chunk354810 = require("./354810.js");
-async function j(e) {
+async function v(e) {
   await d.hW.updateAsync("status", t => {
     t.status = s.Gm.create({
       value: e
@@ -29,7 +29,7 @@ async function j(e) {
   }, d.fy.INFREQUENT_USER_ACTION)
 }
 
-function v(e) {
+function j(e) {
   let {
     closePopout: t
   } = e;
@@ -41,7 +41,7 @@ function v(e) {
       size: "sm",
       text: O.intl.string(b.default.Poezn5),
       onClick: () => {
-        t(), j(c.Skl.ONLINE)
+        t(), v(c.Skl.ONLINE)
       },
       fullWidth: true
     })
@@ -80,7 +80,7 @@ function x(e) {
       })]
     }), (0, i.jsx)(c.rsf, {
       onChange: e => {
-        u.G6.updateSetting(e), n && j(e ? c.Skl.ONLINE : c.Skl.INVISIBLE)
+        u.G6.updateSetting(e), n && v(e ? c.Skl.ONLINE : c.Skl.INVISIBLE)
       },
       checked: t
     })]
@@ -164,7 +164,7 @@ function S(e) {
       children: O.intl.format(b.default["vtp/IS"], {
         learnMoreLink: h.Z.getArticleURL(m.BhN.ACTIVITY_STATUS_SETTINGS)
       })
-    }), (0, i.jsx)(v, {
+    }), (0, i.jsx)(j, {
       closePopout: t
     })]
   })
@@ -234,13 +234,13 @@ function N(e) {
       children: O.intl.format(b.default["vtp/IS"], {
         learnMoreLink: h.Z.getArticleURL(m.BhN.ACTIVITY_STATUS_SETTINGS)
       })
-    }), (0, i.jsx)(v, {
+    }), (0, i.jsx)(j, {
       closePopout: t
     })]
   })
 }
 
-function w(e) {
+function Z(e) {
   let {
     closePopout: t
   } = e, n = u.G6.useSetting(), {
@@ -264,7 +264,7 @@ function w(e) {
     })]
   })
 }
-var Z = ((r = {})[r.ActivityNux = 0] = "ActivityNux", r[r.StatusNux = 1] = "StatusNux", r[r.ActivityAndStatusNux = 2] = "ActivityAndStatusNux", r[r.Activity = 3] = "Activity", r[r.Status = 4] = "Status", r[r.ActivityAndStatus = 5] = "ActivityAndStatus", r);
+var w = ((r = {})[r.ActivityNux = 0] = "ActivityNux", r[r.StatusNux = 1] = "StatusNux", r[r.ActivityAndStatusNux = 2] = "ActivityAndStatusNux", r[r.Activity = 3] = "Activity", r[r.Status = 4] = "Status", r[r.ActivityAndStatus = 5] = "ActivityAndStatus", r);
 
 function T(e) {
   let {
@@ -296,7 +296,7 @@ function T(e) {
         closePopout: n
       });
     case 5:
-      return (0, i.jsx)(w, {
+      return (0, i.jsx)(Z, {
         closePopout: n
       });
     default:

@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk969649 = require("./969649.js");
 
-function j(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -40,7 +40,7 @@ function j(e) {
   }
   return e
 }
-let v = {
+let j = {
     animation: {
       BEG: 0,
       END: 75
@@ -61,29 +61,29 @@ let v = {
       var e;
       switch (null == x || null == (e = x.popout) ? true : e.type) {
         case h.J.LEVEL_REACHED:
-          return (0, r.jsx)(g.jG, j({
+          return (0, r.jsx)(g.jG, v({
             guildId: t
           }, x.popout));
         case h.J.PERKS_AVAILABLE:
-          return (0, r.jsx)(g.$h, j({
+          return (0, r.jsx)(g.$h, v({
             guildId: t
           }, x.popout));
         case h.J.PERKS_PURCHASABLE:
-          return (0, r.jsx)(g.yI, j({
+          return (0, r.jsx)(g.yI, v({
             guildId: t
           }, x.popout));
         case h.J.NEW_PERK_AVAILABLE:
-          return (0, r.jsx)(g.cO, j({
+          return (0, r.jsx)(g.cO, v({
             guildId: t
           }, x.popout));
         default:
           return (0, r.jsx)("div", {})
       }
-    }, [t, null == x ? true : x.popout]), S = (0, s.s9z)(s.JQI), P = (0, a.e7)([d.Z], () => d.Z.hasLayers()), [I, N] = i.useState(null), w = null == I ? "animation" : "LOOP";
+    }, [t, null == x ? true : x.popout]), S = (0, s.s9z)(s.JQI), P = (0, a.e7)([d.Z], () => d.Z.hasLayers()), [I, N] = i.useState(null), Z = null == I ? "animation" : "LOOP";
     i.useEffect(() => {
       (null == x ? true : x.popout) == null && N(null)
     }, [null == x ? true : x.popout]);
-    let Z = i.useCallback(e => {
+    let w = i.useCallback(e => {
         N(e)
       }, []),
       T = i.useRef(null);
@@ -96,7 +96,7 @@ let v = {
       renderPopout: E,
       children: e => {
         var i, a;
-        return (0, r.jsx)(u.m, (i = j({}, e), a = a = {
+        return (0, r.jsx)(u.m, (i = v({}, e), a = a = {
           ref: T,
           className: _.container,
           id: "skill-trees-".concat(t),
@@ -108,11 +108,11 @@ let v = {
           background: (null == x ? true : x.popout) != null && (0, r.jsx)("div", {
             className: _.lottieContainer,
             children: (0, r.jsx)(s.kci, {
-              nextScene: w,
+              nextScene: Z,
               className: _.lottie,
-              sceneSegments: v,
+              sceneSegments: j,
               importData: () => n.e("50821").then(n.t.bind(n, 548421, 19)),
-              onScenePlay: Z,
+              onScenePlay: w,
               rendererSettings: {
                 preserveAspectRatio: "xMidYMid slice"
               }

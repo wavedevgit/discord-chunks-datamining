@@ -1,8 +1,8 @@
-/** Chunk was on 20087 **/
-/** chunk id: 327802, original params: t,e,r (module,exports,require) **/
+/** Chunk was on 52721 **/
+/** chunk id: 327802, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   X: () => c,
-  Z: () => u
+  Z: () => d
 }), require("./415506.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -11,73 +11,73 @@ var Chunk481060 = require("./481060.js"),
   Chunk205822 = require("./205822.jsx"),
   Chunk731994 = require("./731994.js"),
   Chunk388032 = require("./388032.jsx");
-let c = t => {
+let c = e => {
     let {
-      className: e,
+      className: t,
       onSuccess: c,
-      onError: u
-    } = t, f = async t => {
+      onError: d
+    } = e, u = async e => {
       try {
         let {
-          dataURI: e
-        } = await (0, l.po)(t);
+          dataURI: t
+        } = await (0, l.po)(e);
         c({
-          file: t,
-          data: e
+          file: e,
+          data: t
         })
-      } catch (t) {
-        u(Error("Failed to read file", {
-          cause: t
+      } catch (e) {
+        d(Error("Failed to read file", {
+          cause: e
         }))
       }
     };
-    return (0, n.jsx)(o.Z, {
-      className: e,
-      title: s.intl.string(s.t.DU0dy8),
-      description: s.intl.string(s.t.bpycfH),
-      icons: a.pA,
-      onDrop: t => {
-        let e = null == t ? true : t[0];
-        null != e && (0, i.ZDy)(async () => {
+    return (0, r.jsx)(a.Z, {
+      className: t,
+      title: o.intl.string(o.t.DU0dy8),
+      description: o.intl.string(o.t.bpycfH),
+      icons: s.pA,
+      onDrop: e => {
+        let t = null == e ? true : e[0];
+        null != t && (0, i.ZDy)(async () => {
           let {
-            default: t
-          } = await r.e("16169").then(r.bind(r, 935333));
-          return r => (0, n.jsx)(t, function(t) {
-            for (var e = 1; e < arguments.length; e++) {
-              var r = null != arguments[e] ? arguments[e] : {},
-                n = Object.keys(r);
-              "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(t) {
-                return Object.getOwnPropertyDescriptor(r, t).enumerable
-              }))), n.forEach(function(e) {
-                var n;
-                n = r[e], e in t ? Object.defineProperty(t, e, {
-                  value: n,
+            default: e
+          } = await n.e("16169").then(n.bind(n, 935333));
+          return n => (0, r.jsx)(e, function(e) {
+            for (var t = 1; t < arguments.length; t++) {
+              var n = null != arguments[t] ? arguments[t] : {},
+                r = Object.keys(n);
+              "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                return Object.getOwnPropertyDescriptor(n, e).enumerable
+              }))), r.forEach(function(t) {
+                var r;
+                r = n[t], t in e ? Object.defineProperty(e, t, {
+                  value: r,
                   enumerable: true,
                   configurable: true,
                   writable: true
-                }) : t[e] = n
+                }) : e[t] = r
               })
             }
-            return t
+            return e
           }({
-            processFiles: () => f(e)
-          }, r))
+            processFiles: () => u(t)
+          }, n))
         })
       }
     })
   },
-  u = function(t) {
+  d = function(e) {
     let {
-      className: e,
-      style: r,
+      className: t,
+      style: n,
       onDrop: i
-    } = t;
-    return (0, n.jsx)(o.Z, {
-      className: e,
-      style: r,
-      title: s.intl.string(s.t.DU0dy8),
-      description: s.intl.string(s.t.bpycfH),
-      icons: a.pA,
+    } = e;
+    return (0, r.jsx)(a.Z, {
+      className: t,
+      style: n,
+      title: o.intl.string(o.t.DU0dy8),
+      description: o.intl.string(o.t.bpycfH),
+      icons: s.pA,
       onDrop: i
     })
   }

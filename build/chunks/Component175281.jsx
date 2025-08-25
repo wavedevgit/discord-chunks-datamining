@@ -43,13 +43,13 @@ let S = {
 
 function P(e) {
   switch (e.keyCode) {
-    case v.yXg.ARROW_UP:
+    case j.yXg.ARROW_UP:
       return "UP";
-    case v.yXg.ARROW_DOWN:
+    case j.yXg.ARROW_DOWN:
       return "DOWN";
-    case v.yXg.ARROW_LEFT:
+    case j.yXg.ARROW_LEFT:
       return "LEFT";
-    case v.yXg.ARROW_RIGHT:
+    case j.yXg.ARROW_RIGHT:
       return "RIGHT";
     default:
       return null
@@ -68,7 +68,7 @@ function N(e) {
   })
 }
 
-function w() {
+function Z() {
   let e = Chunk647438.useMemo(() => u()((0, Chunk612226.Rv)()).groupBy(e => e.group).value(), []);
   return (0, Chunk951288.jsx)("div", {
     className: Chunk870525.keyboardShortcutList,
@@ -110,7 +110,7 @@ function w() {
     })
   })
 }
-class Z extends Chunk647438.PureComponent {
+class w extends Chunk647438.PureComponent {
   componentDidMount() {
     this.lastInputedKeys = [], Chunk585483.S.subscribe(Chunk981631.CkL.SCROLL_PAGE_UP, this.scrollPageUp), Chunk585483.S.subscribe(Chunk981631.CkL.SCROLL_PAGE_DOWN, this.scrollPageDown), window.addEventListener("keydown", this.handleKeyDown, {
       capture: true
@@ -173,7 +173,7 @@ class Z extends Chunk647438.PureComponent {
         ref: this.scrollerRef,
         fade: true,
         children: (0, Chunk951288.jsx)(Chunk481060.y5t, {
-          children: (0, Chunk951288.jsx)(w, {})
+          children: (0, Chunk951288.jsx)(Z, {})
         })
       })]
     })
@@ -239,7 +239,7 @@ class Z extends Chunk647438.PureComponent {
         })
       }]
     })), E(this, "handleKeyDown", e => {
-      if (this.lastInputedKeys.push(e.keyCode), this.lastInputedKeys = this.lastInputedKeys.slice(false), this.lastInputedKeys[0] === v.yXg.H && this.lastInputedKeys[1] === v.yXg.H && this.lastInputedKeys[2] === v.yXg.ARROW_RIGHT && this.lastInputedKeys[3] === v.yXg.N && this.lastInputedKeys[4] === v.yXg.K && this.props.activateRagingDemon(), this.props.keyboardModeEnabled) return;
+      if (this.lastInputedKeys.push(e.keyCode), this.lastInputedKeys = this.lastInputedKeys.slice(false), this.lastInputedKeys[0] === j.yXg.H && this.lastInputedKeys[1] === j.yXg.H && this.lastInputedKeys[2] === j.yXg.ARROW_RIGHT && this.lastInputedKeys[3] === j.yXg.N && this.lastInputedKeys[4] === j.yXg.K && this.props.activateRagingDemon(), this.props.keyboardModeEnabled) return;
       let t = P(e);
       null !== t && (e.stopPropagation(), e.preventDefault(), this.arrowDown({
         direction: t
@@ -305,11 +305,11 @@ function A(e) {
       parentComponent: "KeyboardShortcutsModal",
       children: (0, r.jsx)(h.W, {
         component: "div",
-        children: l ? (0, r.jsx)(j.Z, {
+        children: l ? (0, r.jsx)(v.Z, {
           handleDemonClose: function() {
             c(false), setTimeout(n, 500)
           }
-        }, "raging-demo") : (0, r.jsx)(Z, {
+        }, "raging-demo") : (0, r.jsx)(w, {
           content: u,
           keyboardModeEnabled: d,
           activateRagingDemon: function() {

@@ -1,24 +1,26 @@
 /** Chunk was on web.js **/
-/** chunk id: 771934, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 507962, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ac: () => E,
-  HA: () => N,
-  HV: () => v,
-  J4: () => p,
-  JL: () => m,
-  Om: () => I,
-  P0: () => _,
-  PI: () => y,
-  Vb: () => S,
-  fR: () => b,
-  gG: () => h,
-  hf: () => C,
-  u7: () => A,
-  uf: () => T,
-  w8: () => g,
-  z3: () => O,
-  zW: () => f
+  Ac: () => b,
+  DI: () => C,
+  HA: () => P,
+  HV: () => I,
+  J4: () => h,
+  JL: () => g,
+  Ln: () => d,
+  Om: () => T,
+  P0: () => p,
+  PI: () => O,
+  Vb: () => A,
+  fR: () => y,
+  gG: () => m,
+  hf: () => R,
+  u7: () => N,
+  uf: () => S,
+  w8: () => E,
+  z3: () => v,
+  zW: () => _
 });
 var Chunk647438 = require("./647438.js"),
   Chunk704215 = require("./704215.js"),
@@ -27,83 +29,91 @@ var Chunk647438 = require("./647438.js"),
   Chunk266454 = require("./266454.js"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk474936 = require("./474936.js");
-let d = "manual",
-  f = () => {
-    d = "manual", Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEMES_EDITOR_CONTROLS_CHANGED, {
+  Chunk474936 = require("./474936.js"),
+  d = function(e) {
+    return e.APPEARANCE_SETTINGS = "appearance_settings", e.PREVIEW_THEMES = "preview_themes", e
+  }({});
+let f = "manual",
+  _ = () => {
+    f = "manual", Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEMES_EDITOR_CONTROLS_CHANGED, {
       control_name: "hex_input"
     })
   },
-  _ = () => {
-    d = "manual", Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEMES_EDITOR_CONTROLS_CHANGED, {
+  p = () => {
+    f = "manual", Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEMES_EDITOR_CONTROLS_CHANGED, {
       control_name: "color_picker"
     })
   },
-  p = () => {
+  h = () => {
     Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEMES_EDITOR_CONTROLS_CHANGED, {
       control_name: "eye_dropper"
     })
   },
-  h = () => {
-    d = "manual", Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEMES_EDITOR_CONTROLS_CHANGED, {
+  m = () => {
+    f = "manual", Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEMES_EDITOR_CONTROLS_CHANGED, {
       control_name: "add_color"
     })
   },
-  m = () => {
-    d = "manual", Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEMES_EDITOR_CONTROLS_CHANGED, {
+  g = () => {
+    f = "manual", Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEMES_EDITOR_CONTROLS_CHANGED, {
       control_name: "remove_color"
     })
   },
-  g = () => {
+  E = () => {
     Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEMES_EDITOR_CONTROLS_CHANGED, {
       control_name: "color_selected"
     })
   },
-  E = () => {
-    d = "manual", Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEMES_EDITOR_CONTROLS_CHANGED, {
+  b = () => {
+    f = "manual", Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEMES_EDITOR_CONTROLS_CHANGED, {
       control_name: "gradient_direction_input"
     })
   },
-  b = () => {
-    d = "manual", Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEMES_EDITOR_CONTROLS_CHANGED, {
+  y = () => {
+    f = "manual", Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEMES_EDITOR_CONTROLS_CHANGED, {
       control_name: "gradient_direction"
     })
   },
-  y = () => {
-    d = "manual", Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEMES_EDITOR_CONTROLS_CHANGED, {
+  O = () => {
+    f = "manual", Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEMES_EDITOR_CONTROLS_CHANGED, {
       control_name: "color_intensity_input"
     })
   },
-  O = () => {
-    d = "manual", Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEMES_EDITOR_CONTROLS_CHANGED, {
+  v = () => {
+    f = "manual", Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEMES_EDITOR_CONTROLS_CHANGED, {
       control_name: "color_intensity"
     })
   },
-  v = () => {
-    d = "manual", Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEMES_EDITOR_CONTROLS_CHANGED, {
+  I = () => {
+    f = "manual", Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEMES_EDITOR_CONTROLS_CHANGED, {
       control_name: "base_theme"
     })
   },
-  I = () => {
-    d = "surprise_me", Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEMES_SURPRISE_BUTTON_CLICKED, {})
-  },
   T = () => {
-    d = "manual", Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEME_RESET_BUTTON_CLICKED, {})
+    f = "surprise_me", Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEMES_SURPRISE_BUTTON_CLICKED, {})
   },
   S = () => {
+    f = "manual", Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEME_RESET_BUTTON_CLICKED, {})
+  },
+  A = () => {
     Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEMES_BACK_BUTTON_CLICKED, {})
   },
-  A = (e, t, n, r, i) => {
+  C = e => {
+    l.default.track(c.rMx.CUSTOM_THEMES_BANNER_CLICKED, {
+      banner_location: e
+    })
+  },
+  N = (e, t, n, r, i) => {
     l.default.track(c.rMx.CUSTOM_THEMES_UPDATED, {
       colors: e,
       color_intensity: t,
       gradient_angle: n,
       base_theme: r,
       location_stack: i,
-      creation_method: d
-    }), d = "manual"
+      creation_method: f
+    }), f = "manual"
   },
-  C = (e, t) => {
+  R = (e, t) => {
     let {
       analyticsLocations: n
     } = (0, a.ZP)(t);
@@ -114,7 +124,7 @@ let d = "manual",
       })
     }, [e, n])
   },
-  N = (e, t) => {
+  P = (e, t) => {
     let n = (0, s.Nj)(i.z.CUSTOM_THEME_COACHMARK);
     r.useEffect(() => {
       if (e && !n && t !== i.z.CUSTOM_THEME_COACHMARK) {

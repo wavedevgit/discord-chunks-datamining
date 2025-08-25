@@ -82,7 +82,7 @@ function V(e) {
     isSelected: a,
     isUnread: s,
     groupedMessages: d
-  } = e, p = n.type === L.d4z.UNKNOWN ? u.VL1 : (0, f.KS)(n, null), m = (0, h.ZP)(n, false), b = (0, c.e7)([w.Z], () => w.Z.getGuild(n.getGuildId())), {
+  } = e, p = n.type === L.d4z.UNKNOWN ? u.VL1 : (0, f.KS)(n, null), m = (0, h.ZP)(n, false), b = (0, c.e7)([Z.Z], () => Z.Z.getGuild(n.getGuildId())), {
     nick: y,
     colorString: _
   } = (0, O.ZP)(t), {
@@ -93,16 +93,16 @@ function V(e) {
     size: u.EFr.SIZE_32,
     guildId: null == b ? true : b.id,
     animateOnHover: true
-  }), S = n.type !== L.d4z.GUILD_ANNOUNCEMENT || null == b, I = (0, j.x)({
+  }), S = n.type !== L.d4z.GUILD_ANNOUNCEMENT || null == b, I = (0, v.x)({
     channel: n,
     message: t,
     user: t.author,
     compact: true,
     isRepliedMessage: true
-  }), Z = (0, r.jsx)("div", {
+  }), w = (0, r.jsx)("div", {
     className: G.usernameTagContainer,
     inert: true,
-    children: (0, r.jsx)(v.Z, {
+    children: (0, r.jsx)(j.Z, {
       channel: n,
       message: t,
       hideGuildTag: true,
@@ -161,7 +161,7 @@ function V(e) {
                 color: null != _ ? _ : true
               },
               children: (0, r.jsx)(g.Z, {
-                children: Z
+                children: w
               })
             }), I]
           }) : (0, r.jsx)(g.Z, {
@@ -309,18 +309,18 @@ function W(e) {
         O = null;
       1 === s ? O = u.XBm : s > 1 ? O = u.Ka2 : c ? O = b.Z : p || h ? O = u.QDj : d ? O = u.SlE : f && (O = u.gj8);
       let _ = true,
-        j = null;
+        v = null;
       if (e)
-        if (c) j = U.intl.string(U.t["9ddYKi"]);
+        if (c) v = U.intl.string(U.t["9ddYKi"]);
         else if (p) {
-        var v;
-        _ = false, j = null == (v = t.poll) ? true : v.question.text
-      } else j = h ? U.intl.string(U.t.sad2PD) : i ? U.intl.string(U.t.p0oZm5) : s > 1 ? U.intl.formatToPlainString(U.t.rtfTKi, {
+        var j;
+        _ = false, v = null == (j = t.poll) ? true : j.question.text
+      } else v = h ? U.intl.string(U.t.sad2PD) : i ? U.intl.string(U.t.p0oZm5) : s > 1 ? U.intl.formatToPlainString(U.t.rtfTKi, {
         count: s
       }) : 1 === s ? U.intl.string(U.t.tCcq5u) : d ? U.intl.format(U.t.zY4v1N, {
         stickerName: t.stickerItems[0].name
       }) : f ? U.intl.string(U.t.slFYgo) : g ? U.intl.string(U.t.Yvvfw8) : U.intl.string(U.t.sDqZHB);
-      else _ = false, j = (0, r.jsx)(y.ZP, {
+      else _ = false, v = (0, r.jsx)(y.ZP, {
         content: a,
         message: t,
         compact: false,
@@ -329,15 +329,15 @@ function W(e) {
           [G.selected]: l
         })
       });
-      return e && (j = (0, r.jsx)("div", {
+      return e && (v = (0, r.jsx)("div", {
         className: o()(G.message, {
           [G.unread]: n,
           [G.selected]: l,
           [G.descriptionMessage]: _
         }),
-        children: j
+        children: v
       })), {
-        previewContent: j,
+        previewContent: v,
         Icon: O
       }
     }, [t, a, n, l])
@@ -385,7 +385,7 @@ let K = (0, Chunk647438.memo)(function(e) {
     return e.isMenuOpenForMessage(null != (t = null == h ? true : h.id) ? t : null)
   }), {
     notificationCenterVariant: O
-  } = (0, Z.pN)({
+  } = (0, w.pN)({
     location: "NotificationsInboxMessageUnit"
   }), y = i.useMemo(() => "".concat(null == h ? true : h.author.username, ": ").concat(null == m ? true : m.name), [null == h ? true : h.author.username, null == m ? true : m.name]), _ = null != (t = null == a ? true : a.map(e => e.message).filter(e => null != e)) ? t : [];
   return null == h || null == m ? null : (0, r.jsx)(u.kL8, {
@@ -399,7 +399,7 @@ let K = (0, Chunk647438.memo)(function(e) {
         message: h,
         channel: m,
         isUnread: p,
-        isSidebar: O === Z.jP.SIDEBAR,
+        isSidebar: O === w.jP.SIDEBAR,
         viewId: f
       })
     },

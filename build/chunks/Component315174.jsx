@@ -2,7 +2,7 @@
 /** chunk id: 315174, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   ZP: () => D,
-  wD: () => w
+  wD: () => Z
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -105,7 +105,7 @@ function I(e) {
     hasSubheader: l
   } = e, {
     value: s
-  } = n.springs, c = t.features.has(j.oNc.DISCOVERABLE), d = (0, r.jsx)("div", {
+  } = n.springs, c = t.features.has(v.oNc.DISCOVERABLE), d = (0, r.jsx)("div", {
     className: C.communityInfo,
     children: c && (0, r.jsx)(u.ua7, {
       text: x.intl.string(x.t.O8lDIy),
@@ -150,7 +150,7 @@ function N() {
     width: 20
   })
 }
-let w = e => {
+let Z = e => {
   let {
     open: t
   } = e, n = t ? u.u04 : u.CJ0;
@@ -160,7 +160,7 @@ let w = e => {
   })
 };
 
-function Z(e) {
+function w(e) {
   let {
     guild: t
   } = e;
@@ -188,7 +188,7 @@ function T(e) {
     children: [(0, r.jsx)(_.Z, {
       guild: i,
       isBannerVisible: n
-    }), i.id === v._ && (0, r.jsx)(N, {}), (0, r.jsx)(Z, {
+    }), i.id === j._ && (0, r.jsx)(N, {}), (0, r.jsx)(w, {
       guild: i
     }), null != l && (0, r.jsx)(u.P3F, {
       className: C.headerButton,
@@ -244,7 +244,7 @@ function R(e) {
       } = await Promise.all([n.e("7654"), n.e("62292")]).then(n.bind(n, 560114));
       return t => (0, r.jsx)(e, S(E({}, t), {
         guild: l,
-        source: j.t4x.GUILD_HEADER
+        source: v.t4x.GUILD_HEADER
       }))
     }) : (0, u.ZDy)(async () => {
       let {
@@ -280,7 +280,7 @@ function R(e) {
             children: [(0, r.jsx)(_.Z, {
               guild: l,
               isBannerVisible: t
-            }), l.id === v._ && (0, r.jsx)(N, {}), (0, r.jsx)(Z, {
+            }), l.id === j._ && (0, r.jsx)(N, {}), (0, r.jsx)(w, {
               guild: l
             })]
           }), (0, r.jsx)("div", {
@@ -304,7 +304,7 @@ function R(e) {
           color: "currentColor"
         })
       }))
-    }), l.id === j.STv && (0, r.jsx)(f.p, {})]
+    }), l.id === v.STv && (0, r.jsx)(f.p, {})]
   })
 }
 let D = Chunk647438.memo(function(e) {
@@ -319,14 +319,14 @@ let D = Chunk647438.memo(function(e) {
     disableBannerAnimation: g,
     "aria-expanded": b,
     "aria-controls": _,
-    guild: v,
+    guild: j,
     guildBanner: x,
     animationOverlayHeight: N,
-    children: w,
-    headerClassName: Z,
+    children: Z,
+    headerClassName: w,
     communityInfoVisible: A,
     hasSubheader: D
-  } = e, L = v.features.has(j.oNc.ANIMATED_BANNER), k = (0, d.Z)(v), U = !k && (0, y.Z)(v), G = !k && A, B = (0, O.xR)(x) && L && !g, [F, V] = i.useState(false), H = i.useRef(false), z = i.useRef(null), W = null != t ? t : z, K = i.useRef(true), Y = m.QK.getSetting();
+  } = e, L = j.features.has(v.oNc.ANIMATED_BANNER), k = (0, d.Z)(j), U = !k && (0, y.Z)(j), G = !k && A, B = (0, O.xR)(x) && L && !g, [F, V] = i.useState(false), H = i.useRef(false), z = i.useRef(null), W = null != t ? t : z, K = i.useRef(true), Y = m.QK.getSetting();
   i.useEffect(() => {
     if (B && n && !H.current && Y) return V(true), K.current = setTimeout(() => {
       V(false)
@@ -350,7 +350,7 @@ let D = Chunk647438.memo(function(e) {
     }),
     Q = {
       bannerVisible: n,
-      guild: v,
+      guild: j,
       onClick: c,
       onContextMenu: h,
       ariaControls: _,
@@ -358,7 +358,7 @@ let D = Chunk647438.memo(function(e) {
       guildHeaderRef: W
     };
   return (0, r.jsx)(u.f6W, {
-    theme: n ? j.BRd.DARK : true,
+    theme: n ? v.BRd.DARK : true,
     children: e => (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
         "data-has-banner": q(),
@@ -378,24 +378,24 @@ let D = Chunk647438.memo(function(e) {
         onClick: X ? true : c,
         onContextMenu: h,
         children: [(0, r.jsxs)("header", {
-          className: o()(C.header, Z, {
+          className: o()(C.header, w, {
             [C.themedHeaderMobile]: s.tq
           }),
           children: [(0, r.jsx)("div", {
             className: o()(C.headerContent, C.primaryInfo),
             children: X ? (0, r.jsx)(R, S(E({}, Q), {
-              children: w
+              children: Z
             })) : (0, r.jsx)(T, S(E({}, Q), {
-              children: w
+              children: Z
             }))
           }), U && (0, r.jsx)(I, {
-            guild: v,
+            guild: j,
             controller: l,
             hasBanner: null != x,
             hasSubheader: null != D && D
           })]
         }), null != x ? (0, r.jsx)(P, {
-          guild: v,
+          guild: j,
           controller: l,
           guildBanner: x,
           animate: F

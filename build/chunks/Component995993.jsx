@@ -29,13 +29,13 @@ function C(e) {
   let {
     guild: t,
     selected: C
-  } = e, E = (0, p.Z)(t), S = (0, u.Nj)(o.z.CHANNEL_BROWSER_NEW_BADGE_NUX), P = (0, l.Wu)([h.Z], () => Array.from(h.Z.getNewChannelIds(t.id)).filter(e => h.Z.shouldIndicateNewChannel(t.id, e))), I = (0, l.e7)([g.ZP], () => g.ZP.hasUnread(t.id, j.W.GUILD_ONBOARDING_QUESTION)), N = P.length > b.Cb, w = (0, l.e7)([d.Z, g.ZP], () => {
+  } = e, E = (0, p.Z)(t), S = (0, u.Nj)(o.z.CHANNEL_BROWSER_NEW_BADGE_NUX), P = (0, l.Wu)([h.Z], () => Array.from(h.Z.getNewChannelIds(t.id)).filter(e => h.Z.shouldIndicateNewChannel(t.id, e))), I = (0, l.e7)([g.ZP], () => g.ZP.hasUnread(t.id, v.W.GUILD_ONBOARDING_QUESTION)), N = P.length > b.Cb, Z = (0, l.e7)([d.Z, g.ZP], () => {
     let e = d.Z.lastFetchedAt(t.id),
-      n = g.ZP.lastMessageId(t.id, j.W.GUILD_ONBOARDING_QUESTION);
+      n = g.ZP.lastMessageId(t.id, v.W.GUILD_ONBOARDING_QUESTION);
     if (null == n) returnfalse;
     let r = m.default.extractTimestamp(n);
     return null != e && e > r
-  }), Z = i.useCallback(() => {
+  }), w = i.useCallback(() => {
     (0, f.uL)(y.Z5c.CHANNEL(t.id, E ? _.oC.CUSTOMIZE_COMMUNITY : _.oC.CHANNEL_BROWSER))
   }, [t.id, E]), T = i.useCallback(e => {
     (0, c.jW)(e, async () => {
@@ -76,9 +76,9 @@ function C(e) {
       }
     })
   }, [t]), A = null;
-  return S && !I && !N || C || w || (A = (0, r.jsx)(s.IGR, {
+  return S && !I && !N || C || Z || (A = (0, r.jsx)(s.IGR, {
     color: a.Z.colors.BADGE_BRAND_BG.css,
-    text: v.intl.string(v.t.y2b7CA),
+    text: j.intl.string(j.t.y2b7CA),
     className: x.newChannel
   })), (0, r.jsx)(O.m, {
     id: "channels-".concat(t.id),
@@ -87,9 +87,9 @@ function C(e) {
       color: "currentColor",
       className: e
     }),
-    text: E ? v.intl.string(v.t.h9mGOD) : v.intl.string(v.t.et6wam),
+    text: E ? j.intl.string(j.t.h9mGOD) : j.intl.string(j.t.et6wam),
     selected: C,
-    onClick: Z,
+    onClick: w,
     onContextMenu: T,
     trailing: A
   })

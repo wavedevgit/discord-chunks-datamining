@@ -26,8 +26,8 @@ let O = (0, Chunk146773.B)(function(e) {
     disableManageChannels: O,
     sorting: y,
     sortingType: _,
-    sortingPosition: j,
-    connectChannelDragSource: v,
+    sortingPosition: v,
+    connectChannelDragSource: j,
     connectChannelDropTarget: x,
     tabIndex: C
   } = e, E = (0, a.e7)([u.Z, d.ZP], () => {
@@ -73,11 +73,11 @@ let O = (0, Chunk146773.B)(function(e) {
     })
   }, [E]);
   if (null == E) return null;
-  let w = (0, h.jo)(c, j),
-    Z = (0, h.CN)(E, y, _),
+  let Z = (0, h.jo)(c, v),
+    w = (0, h.CN)(E, y, _),
     T = (0, r.jsx)("div", {
-      className: o()(w, {
-        [b.disabled]: Z,
+      className: o()(Z, {
+        [b.disabled]: w,
         [b.selected]: P
       }),
       "data-dnd-name": E.name,
@@ -99,5 +99,5 @@ let O = (0, Chunk146773.B)(function(e) {
         })]
       })
     });
-  return I && (T = x(v(T))), T
+  return I && (T = x(j(T))), T
 })

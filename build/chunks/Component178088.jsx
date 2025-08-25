@@ -1,7 +1,7 @@
 /** Chunk was on 91488 **/
 /** chunk id: 178088, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  k: () => w
+  k: () => Z
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -31,13 +31,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk253107 = require("./253107.js");
 
-function w(e) {
+function Z(e) {
   let {
     onOpen: t,
     onClose: n,
     children: l,
-    badgeState: w,
-    popoutPosition: Z,
+    badgeState: Z,
+    popoutPosition: w,
     popoutAlign: T,
     targetElementRef: A,
     spacing: R,
@@ -99,7 +99,7 @@ function w(e) {
     children: (0, r.jsx)(u.yRy, {
       targetElementRef: A,
       animation: u.yRy.Animation.NONE,
-      position: Z,
+      position: w,
       align: T,
       autoInvert: false,
       shouldShow: L,
@@ -116,10 +116,10 @@ function w(e) {
               component: (0, r.jsx)(x.Z, {
                 tab: U,
                 setTab: G,
-                badgeState: w,
+                badgeState: Z,
                 closePopout: V
               }),
-              children: U === c.X.FOR_YOU ? (0, r.jsx)(j.ZP, {}) : U === c.X.MENTIONS ? (0, r.jsx)(v.Z, {
+              children: U === c.X.FOR_YOU ? (0, r.jsx)(v.ZP, {}) : U === c.X.MENTIONS ? (0, r.jsx)(j.Z, {
                 onJump: q
               }) : Y && U === c.X.GAME_INVITES ? (0, r.jsx)(S.Z, {}) : z && W && U === c.X.BOOKMARKS ? (0, r.jsx)(m.K, {
                 closePopout: V

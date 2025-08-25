@@ -86,8 +86,8 @@ function b(e) {
     folderGroupId: O,
     folderButtonContent: y,
     onClick: _,
-    onContextMenu: j,
-    onHoverChange: v,
+    onContextMenu: v,
+    onHoverChange: j,
     onKeyDown: x,
     treeItemProps: {
       onFocus: C
@@ -108,11 +108,11 @@ function b(e) {
       for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
-  }(e.treeItemProps, ["onFocus"]), [I, N] = i.useState(false), w = i.useCallback(() => {
-    a || N(true), null == v || v(true)
-  }, [a, v]), Z = i.useCallback(() => {
-    a || N(false), null == v || v(false)
-  }, [a, v]), T = o || null == u ? null : (0, p.Or)(u), A = !o && d > 0 ? (0, p.Ne)(d, g ? c.Z.BACKGROUND_ACCENT : c.Z.STATUS_DANGER) : null;
+  }(e.treeItemProps, ["onFocus"]), [I, N] = i.useState(false), Z = i.useCallback(() => {
+    a || N(true), null == j || j(true)
+  }, [a, j]), w = i.useCallback(() => {
+    a || N(false), null == j || j(false)
+  }, [a, j]), T = o || null == u ? null : (0, p.Or)(u), A = !o && d > 0 ? (0, p.Ne)(d, g ? c.Z.BACKGROUND_ACCENT : c.Z.STATUS_DANGER) : null;
   return (0, r.jsx)(s.tEY, {
     children: (0, r.jsx)(s.P3F, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -134,9 +134,9 @@ function b(e) {
     }({
       className: f.folderButton,
       onClick: _,
-      onContextMenu: j,
-      onMouseEnter: w,
-      onMouseLeave: Z,
+      onContextMenu: v,
+      onMouseEnter: Z,
+      onMouseLeave: w,
       onKeyDown: x,
       onFocus: C,
       focusProps: {

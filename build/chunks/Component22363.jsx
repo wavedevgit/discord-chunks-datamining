@@ -43,8 +43,6 @@ let p = e => {
       onFocus: g,
       autoFocus: E,
       defaultSearchPlaceholder: (0, s.nV)(i, O)
-    }), T && (0, r.jsx)(l.Z, {
-      channel: t
     }), i === f.Hz.REACTION ? (0, r.jsx)(o.Z, {
       checked: O,
       onClick: v
@@ -52,6 +50,8 @@ let p = e => {
       searchBarRef: b,
       className: _.diversitySelector,
       selectedSurrogate: y
+    }), T && (0, r.jsx)(l.Z, {
+      channel: t
     })]
   });
   return (0, r.jsx)("div", {

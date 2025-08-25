@@ -1,4 +1,4 @@
-/** Chunk was on 6049 **/
+/** Chunk was on 52721 **/
 /** chunk id: 29605, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   FT: () => J,
@@ -409,12 +409,12 @@ let Y = d().throttle(Chunk80932.OQ, 1e3),
     }, [Chunk202841, Chunk225433, exports.id]), Chunk647438.useEffect(() => {
       if (null != Chunk668781 && null == et) return void en(Chunk668781)
     }, [Chunk668781, et]);
-    let ei = Chunk647438.useMemo(() => ee.isV2SpeedrunExperimentEnabled && null != et ? new Set(d().differenceBy(Chunk668781, et, "id").map(e => e.id)) : new Set, [ee.isV2SpeedrunExperimentEnabled, Chunk668781, et]),
+    let ei = Chunk647438.useMemo(() => ee.isEmojiEditingExperimentEnabled && null != et ? new Set(d().differenceBy(Chunk668781, et, "id").map(e => e.id)) : new Set, [ee.isEmojiEditingExperimentEnabled, Chunk668781, et]),
       el = Chunk647438.useCallback(function() {
         let {
           emoji: e
         } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
-        if (ee.isV2SpeedrunExperimentEnabled && null != module) return void(0, Chunk748523.i)({
+        if (ee.isEmojiEditingExperimentEnabled && null != module) return void(0, Chunk748523.i)({
           guildId: exports.id,
           emoji: module,
           analyticsLocation: Chunk100527.Z.GUILD_SETTINGS_EMOJI_EDIT_BUTTON
@@ -426,7 +426,7 @@ let Y = d().throttle(Chunk80932.OQ, 1e3),
             section: Chunk981631.jXE.GUILD_SETTINGS_EMOJI_ADD_BUTTON
           }
         })
-      }, [ee.isV2SpeedrunExperimentEnabled, exports]),
+      }, [ee.isEmojiEditingExperimentEnabled, exports]),
       ea = (e, n, r) => (0, I.G)({
         data: e,
         file: n,
@@ -454,7 +454,7 @@ let Y = d().throttle(Chunk80932.OQ, 1e3),
             processFiles: () => es(e)
           }, n))
         })
-      }, ed = (0, Chunk200876.l)(exports), eu = ee.isV2SpeedrunExperimentEnabled ? e => el({
+      }, ed = (0, Chunk200876.l)(exports), eu = ee.isEmojiEditingExperimentEnabled ? e => el({
         emoji: e
       }) : true;
     return (0, Chunk951288.jsxs)("div", {

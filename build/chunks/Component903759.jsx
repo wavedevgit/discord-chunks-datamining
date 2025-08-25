@@ -1,4 +1,4 @@
-/** Chunk was on 65819 **/
+/** Chunk was on 2262 **/
 /** chunk id: 903759, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   u: () => m
@@ -29,7 +29,7 @@ let m = e => {
           children: [(0, r.jsx)(i.Text, {
             variant: "text-md/medium",
             children: c.intl.format(c.t["Ks2/3d"], {
-              selectFileHook: (e, n) => (0, r.jsx)(f, {
+              selectFileHook: (e, n) => (0, r.jsx)(h, {
                 translatedContent: e,
                 setUserImage: t
               }, n)
@@ -50,7 +50,7 @@ let m = e => {
       })
     })
   },
-  f = e => {
+  h = e => {
     let {
       setUserImage: t,
       translatedContent: n

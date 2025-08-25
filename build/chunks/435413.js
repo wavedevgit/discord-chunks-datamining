@@ -13,7 +13,6 @@ module.exports = {
   questTitle: "questTitle_e9b191",
   gameTile: "gameTile_e9b191",
   ctas: "ctas_e9b191",
-  cta: "cta_e9b191",
   submenuWrapper: "submenuWrapper_e9b191",
   submenuIcon: "submenuIcon_e9b191"
 }

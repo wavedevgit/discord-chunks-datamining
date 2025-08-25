@@ -10,6 +10,5 @@ module.exports = {
   headingCopy: "headingCopy__960df",
   instructions: "instructions__960df",
   ctas: "ctas__960df",
-  cta: "cta__960df",
   rewardTileWithInstructions: "rewardTileWithInstructions__960df"
 }

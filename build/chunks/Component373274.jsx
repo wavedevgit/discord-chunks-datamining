@@ -186,7 +186,7 @@ class eb extends(r = Chunk647438.PureComponent) {
         channel: o,
         category: a
       } = l;
-      return !!(0, A.vc)(o.record.type) && (!a.isCollapsed || !a.isMuted) && !o.isMuted && !!t.isItemVisible(r, i, true) && (0, w.d)(o.record)
+      return !!(0, A.vc)(o.record.type) && (!a.isCollapsed || !a.isMuted) && !o.isMuted && !!t.isItemVisible(r, i, true) && (0, Z.d)(o.record)
     })
   }
   renderTopUnread() {
@@ -469,7 +469,7 @@ class eb extends(r = Chunk647438.PureComponent) {
       } = this.props, s = em(a);
       if (e === U.wZ) {
         let e = n.getGuildActionSection();
-        return e.isEmpty() ? 0 : e.getRow(t) === ea.z.GUILD_PREMIUM_PROGRESS_BAR ? e.getRows().length > 1 ? j.aR : j.PD : s
+        return e.isEmpty() ? 0 : e.getRow(t) === ea.z.GUILD_PREMIUM_PROGRESS_BAR ? e.getRows().length > 1 ? v.aR : v.PD : s
       }
       if (n.isPlaceholderRow(e, t)) return 0;
       let c = n.getChannelFromSectionRow(e, t);
@@ -578,7 +578,7 @@ class eb extends(r = Chunk647438.PureComponent) {
               guild: r,
               tooltipTypes: o,
               withMargin: l.length > 1
-            }, ea.z.GUILD_PREMIUM_PROGRESS_BAR) : (0, i.jsx)(j.ZP, {
+            }, ea.z.GUILD_PREMIUM_PROGRESS_BAR) : (0, i.jsx)(v.ZP, {
               guild: r,
               tooltipTypes: o,
               withMargin: l.length > 1
@@ -619,7 +619,7 @@ class eb extends(r = Chunk647438.PureComponent) {
               disableManageChannels: h
             }, ea.z.GUILD_DIRECTORY);
           case ea.z.GUILD_MOD_DASH_MEMBER_SAFETY:
-            return (0, i.jsx)(v.Z, {
+            return (0, i.jsx)(j.Z, {
               guild: r,
               selected: a === eu.oC.MEMBER_SAFETY
             }, ea.z.GUILD_MOD_DASH_MEMBER_SAFETY);
@@ -667,7 +667,7 @@ class eb extends(r = Chunk647438.PureComponent) {
             }) : null]
           }, P);
         case ec.d4z.GUILD_STAGE_VOICE:
-          var w, Z;
+          var Z, w;
           return (0, i.jsx)(ee.Z, {
             channel: S,
             guild: r,
@@ -675,8 +675,8 @@ class eb extends(r = Chunk647438.PureComponent) {
             selected: a === C.id,
             connected: c === C.id,
             collapsed: C.isCollapsed || _.isCollapsed,
-            voiceStates: null != (w = p[C.id]) ? w : [],
-            speakerVoiceStates: null != (Z = f[C.id]) ? Z : [],
+            voiceStates: null != (Z = p[C.id]) ? Z : [],
+            speakerVoiceStates: null != (w = f[C.id]) ? w : [],
             disableManageChannels: h,
             isFavoriteCategory: E
           }, P);
@@ -782,7 +782,7 @@ let eO = e => {
     selectedVoiceChannelId: o
   } = e, a = (0, u.e7)([m.Z], () => m.Z.keyboardModeEnabled), {
     analyticsLocations: d
-  } = (0, O.ZP)(b.Z.GUILD_CHANNEL_LIST), p = (0, u.e7)([R.Z], () => R.Z.getChannel(r)), h = (0, u.e7)([R.Z], () => R.Z.getChannel(o)), f = (0, u.e7)([L.Z], () => L.Z.getGuildId()), y = (0, E.DM)(t), _ = l.useRef(null), j = l.useCallback((e, t) => {
+  } = (0, O.ZP)(b.Z.GUILD_CHANNEL_LIST), p = (0, u.e7)([R.Z], () => R.Z.getChannel(r)), h = (0, u.e7)([R.Z], () => R.Z.getChannel(o)), f = (0, u.e7)([L.Z], () => L.Z.getGuildId()), y = (0, E.DM)(t), _ = l.useRef(null), v = l.useCallback((e, t) => {
     let n = _.current;
     if (null != n)
       if (ec.Xyh.test(t) || (0, eu.AB)(t)) n.scrollToChannel(t, false, 2 * es.yE, () => {
@@ -795,7 +795,7 @@ let eO = e => {
         var r;
         null == (r = document.querySelector(e)) || r.focus()
       }
-  }, []), v = l.useCallback(() => new Promise(e => {
+  }, []), j = l.useCallback(() => new Promise(e => {
     let t = _.current;
     if (null == t) return e();
     t.scrollTo(0, () => requestAnimationFrame(() => e()))
@@ -807,15 +807,15 @@ let eO = e => {
     id: "channels",
     defaultFocused: null != r ? r : true,
     isEnabled: a,
-    setFocus: j,
-    scrollToStart: v,
+    setFocus: v,
+    scrollToStart: j,
     scrollToEnd: x
   }), I = C.setFocus;
   l.useEffect(() => {
     null != r && I(r)
   }, [r, I]);
-  let N = (0, Z.Z)(t),
-    w = (0, S.V)("NavigableChannels"),
+  let N = (0, w.Z)(t),
+    Z = (0, S.V)("NavigableChannels"),
     T = (0, u.e7)([k.default], () => k.default.getCurrentUser()),
     A = (0, P.Z)(null == T ? true : T.id, t) && true === n.premiumProgressBarEnabled;
   return (0, i.jsx)(O.Gt, {
@@ -832,7 +832,7 @@ let eO = e => {
           stageChannelSpeakerVoiceStates: N,
           selectedGuildId: f,
           optInEnabled: y,
-          isNewGuildPowerupsProgressBarEnabled: w,
+          isNewGuildPowerupsProgressBarEnabled: Z,
           shouldRenderBoosterEnhancedRoleColorsCoachmark: A
         }))
       })

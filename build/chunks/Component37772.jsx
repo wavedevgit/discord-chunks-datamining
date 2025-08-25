@@ -106,7 +106,7 @@ let B = Chunk647438.memo(function e(t) {
       allowLinks: true,
       previewLinkTarget: true
     }),
-    el = (0, v.ZP)(s),
+    el = (0, j.ZP)(s),
     eo = (0, a.e7)([g.Z], () => s.hasFlag(D.iLy.HAS_THREAD) && g.Z.getChannel(b.default.castMessageIdAsChannelId(s.id))),
     ea = s.type === D.uaV.THREAD_STARTER_MESSAGE && Y.state === h.Y.LOADED && null != q,
     es = !ea && true === i,
@@ -136,7 +136,7 @@ let B = Chunk647438.memo(function e(t) {
       [k.groupStart]: t.isGroupStart
     }),
     childrenRepliedMessage: (0, A.Z)(s, l, K, Y, R),
-    childrenHeader: (0, w.Z)(G(U({}, t), {
+    childrenHeader: (0, Z.Z)(G(U({}, t), {
       author: el,
       guildId: l.guild_id
     })),
@@ -165,12 +165,12 @@ let B = Chunk647438.memo(function e(t) {
     }),
     childrenExecutedCommand: (0, T.Z)(s, l, R),
     childrenMessageContent: (0, N.Z)(t, er),
-    childrenSystemMessage: (0, Z.Z)(t),
+    childrenSystemMessage: (0, w.Z)(t),
     onContextMenu: B,
     onClick: V,
     hasThread: false !== z && null != eo && s.hasFlag(D.iLy.HAS_THREAD),
     hasReply: s.type === D.uaV.REPLY,
-    isSystemMessage: (0, j.Z)(s),
+    isSystemMessage: (0, v.Z)(s),
     messageRef: ec,
     author: el,
     "aria-labelledby": eh,

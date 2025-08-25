@@ -37,13 +37,13 @@ function E(e) {
     selectedOverride: p = false,
     popoutProps: f,
     ref: O
-  } = e, v = (0, l.Ie)("notifications-inbox"), [E, S] = i.useState(false), P = (0, m.D)(), I = p || P, {
+  } = e, j = (0, l.Ie)("notifications-inbox"), [E, S] = i.useState(false), P = (0, m.D)(), I = p || P, {
     notificationCenterVariant: N
   } = (0, g.pN)({
     location: "NotificationsInboxButtonInner"
   }), {
-    badge: w,
-    badgeDimensions: Z,
+    badge: Z,
+    badgeDimensions: w,
     unreadChannelsCount: T
   } = function(e) {
     let {
@@ -78,7 +78,7 @@ function E(e) {
       badgeDimensions: o
     }
   }(I), A = N === g.jP.LEGACY ? a.xx7 : a.Dkj, R = (0, o.e7)([h.Z], () => h.Z.getChannelId()), D = i.useMemo(() => {
-    if (N === g.jP.SIDEBAR) return j.Z5c.CHANNEL(j.STv, R)
+    if (N === g.jP.SIDEBAR) return v.Z5c.CHANNEL(v.STv, R)
   }, [N, R]);
   return (0, r.jsxs)(u.H, {
     ref: O,
@@ -91,8 +91,8 @@ function E(e) {
     }), (0, r.jsx)(y.Z, {
       children: (0, r.jsx)(a.aRk, {
         selected: I || E,
-        lowerBadge: w,
-        lowerBadgeSize: Z,
+        lowerBadge: Z,
+        lowerBadgeSize: w,
         children: (0, r.jsx)(a.LYs, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
@@ -110,7 +110,7 @@ function E(e) {
             })
           }
           return e
-        }({}, v, f), n = n = {
+        }({}, j, f), n = n = {
           onClick: d,
           to: D,
           selected: I || E,

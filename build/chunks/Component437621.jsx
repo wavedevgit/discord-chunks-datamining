@@ -103,8 +103,8 @@ class k extends Chunk98597.ZP {
       isSubscriptionGated: b,
       isFavoriteSuggestion: y,
       subtitle: _,
-      forceTopLevelThread: j,
-      embeddedApps: v,
+      forceTopLevelThread: v,
+      embeddedApps: j,
       resolvedUnreadSetting: x,
       withGuildIcon: C,
       enableActivities: E
@@ -208,7 +208,7 @@ class k extends Chunk98597.ZP {
       } = this.props, {
         shouldShowActivities: l
       } = this.state;
-      return t.isModeratorReportChannel() || (0, f.aC)(t) && (0, f.dl)() ? null : null != i && i.length > 0 && l && !n ? (0, r.jsx)(Z.Z, {
+      return t.isModeratorReportChannel() || (0, f.aC)(t) && (0, f.dl)() ? null : null != i && i.length > 0 && l && !n ? (0, r.jsx)(w.Z, {
         onAction: this.handleActivitiesPopoutClose,
         channel: t
       }) : (0, r.jsx)(P.Z, L(M({}, e), {
@@ -249,7 +249,7 @@ class k extends Chunk98597.ZP {
           channel: t
         }))
       });
-      let i = v.Z.getGuild(t.getGuildId());
+      let i = j.Z.getGuild(t.getGuildId());
       null != i && (0, u.jW)(e, async () => {
         let {
           default: e
@@ -279,41 +279,41 @@ function G(e) {
     unread: C.ZP.hasUnread(t.id),
     ackMessageId: C.ZP.ackMessageId(t.id),
     isLowImportanceMention: C.ZP.getIsMentionLowImportance(t.id)
-  })), g = (0, a.e7)([E.ZP], () => E.ZP.resolveUnreadSetting(t)), m = (0, a.cj)([j.Z, x.Z], () => {
-    let e = j.Z.getChannel(t.parent_id);
+  })), g = (0, a.e7)([E.ZP], () => E.ZP.resolveUnreadSetting(t)), m = (0, a.cj)([v.Z, x.Z], () => {
+    let e = v.Z.getChannel(t.parent_id);
     return {
       canManageChannel: x.Z.can(T.Plq.MANAGE_CHANNELS, t),
       canReorderChannel: true !== i && (n.id === A._ || (null != e ? x.Z.can(T.Plq.MANAGE_CHANNELS, e) : x.Z.can(T.Plq.MANAGE_CHANNELS, n)))
     }
   }), O = (0, a.e7)([y.Z], () => y.Z.shouldIndicateNewChannel(n.id, t.id)), {
-    needSubscriptionToAccess: v,
+    needSubscriptionToAccess: j,
     isSubscriptionGated: P
-  } = (0, b.Z)(t.id), I = (0, a.e7)([E.ZP], () => E.ZP.isFavorite(n.id, t.id)), w = (0, a.e7)([S.default], () => {
+  } = (0, b.Z)(t.id), I = (0, a.e7)([E.ZP], () => E.ZP.isFavorite(n.id, t.id)), Z = (0, a.e7)([S.default], () => {
     let e = S.default.getCurrentUser();
     return null != e && (!(0, f.aC)(t) || e.nsfwAllowed)
-  }, [t]), Z = (0, p.NX)(t.id), R = (0, N.Z)({
+  }, [t]), w = (0, p.NX)(t.id), R = (0, N.Z)({
     channel: t,
     isChannelCollapsed: false,
     isChannelSelected: s,
     isSubscriptionGated: P,
-    needSubscriptionToAccess: v,
+    needSubscriptionToAccess: j,
     isNewChannel: O,
     muted: o,
-    enableActivities: Z,
+    enableActivities: w,
     resolvedUnreadSetting: g
   }), D = (0, h.ZP)(t);
   return (0, r.jsx)(U, L(M({}, d, m, e), {
     hasActiveThreads: c,
     hasMoreActiveThreads: u,
     isSubscriptionGated: P,
-    needSubscriptionToAccess: v,
+    needSubscriptionToAccess: j,
     isNewChannel: O && e.canBeNewChannel,
     isFavoriteSuggestion: l && !I,
-    canShowThreadPreviewForUser: w,
+    canShowThreadPreviewForUser: Z,
     channelInfo: R,
     embeddedApps: D,
     resolvedUnreadSetting: g,
     hasChannelInfo: null != R,
-    enableActivities: Z
+    enableActivities: w
   }))
 }

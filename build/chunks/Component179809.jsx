@@ -1,7 +1,7 @@
 /** Chunk was on 91488 **/
 /** chunk id: 179809, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => w
+  Z: () => Z
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -30,7 +30,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk534175 = require("./534175.js");
 let I = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
   N = (0, Chunk202841.animated)(Chunk481060.Kqy),
-  w = Chunk647438.memo(function(e) {
+  Z = Chunk647438.memo(function(e) {
     let {
       folderNode: t,
       setNodeRef: n,
@@ -38,8 +38,8 @@ let I = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
       expanded: s,
       mediaState: d,
       mentionCount: m = 0,
-      isMentionLowImportance: w,
-      unread: Z = false,
+      isMentionLowImportance: Z,
+      unread: w = false,
       defaultFolderName: T,
       draggable: A = false,
       sorting: R = false,
@@ -96,12 +96,12 @@ let I = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
       config: {
         duration: I
       }
-    }), es = i.useCallback(e => null == n ? true : n(H, e), [n, H]), ec = (0, r.jsxs)(v.H, {
+    }), es = i.useCallback(e => null == n ? true : n(H, e), [n, H]), ec = (0, r.jsxs)(j.H, {
       children: [(0, r.jsx)(O.Z, {
         disabled: $ || s,
         hovered: K,
         selected: l,
-        unread: Z,
+        unread: w,
         className: P.pill
       }), (0, r.jsx)(x.Z, {
         text: er,
@@ -117,7 +117,7 @@ let I = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
             [P.wobble]: !$ && q && !s
           }),
           "data-dnd-name": er,
-          children: $ ? (0, r.jsx)(j.Z, {
+          children: $ ? (0, r.jsx)(v.Z, {
             isFolder: true
           }) : (0, r.jsx)(y.Z, {
             folderNode: t,
@@ -125,7 +125,7 @@ let I = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
             sorting: R,
             mediaState: d,
             mentionCount: m,
-            isMentionLowImportance: w,
+            isMentionLowImportance: Z,
             tooltipName: er,
             folderGroupId: el,
             onClick: L,

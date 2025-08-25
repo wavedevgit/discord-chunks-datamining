@@ -2,7 +2,7 @@
 /** chunk id: 708154, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => h
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -12,12 +12,13 @@ var Chunk990547 = require("./990547.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk213609 = require("./213609.js"),
   Chunk550385 = require("./550385.js"),
+  Chunk507962 = require("./507962.js"),
   Chunk119475 = require("./119475.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk574876 = require("./574876.js"),
   Chunk758335 = require("./758335.js");
 
-function p() {
+function h() {
   let {
     analyticsLocations: e
   } = (0, Chunk906732.ZP)();
@@ -29,7 +30,7 @@ function p() {
     }
   });
   let t = () => {
-    (0, Chunk550385.XO)(Chunk550385.wh.CUSTOM_THEME, {
+    (0, Chunk507962.DI)(Chunk507962.Ln.PREVIEW_THEMES), (0, Chunk550385.XO)(Chunk550385.wh.CUSTOM_THEME, {
       from: Chunk550385.tE.CLIENT_THEMES_EDITOR
     })
   };

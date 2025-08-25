@@ -1,4 +1,4 @@
-/** Chunk was on 65819 **/
+/** Chunk was on 2262 **/
 /** chunk id: 983205, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   y: () => s
@@ -22,7 +22,7 @@ let s = e => {
       null == (e = s.current) || e.setSelectionRange(u.current, u.current), u.current = null
     }
   });
-  let f = l.useCallback(() => {
+  let h = l.useCallback(() => {
       d(false)
     }, []),
     g = l.useCallback(() => {
@@ -36,7 +36,7 @@ let s = e => {
     onChange: m,
     placeholder: o.intl.string(o.t.U2JFHR),
     name: "emoji_name",
-    onBlur: f,
+    onBlur: h,
     onFocus: g,
     required: true
   })

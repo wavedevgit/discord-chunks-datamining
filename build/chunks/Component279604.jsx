@@ -3,7 +3,7 @@
 require.d(exports, {
   KE: () => O,
   KT: () => b,
-  ZP: () => j,
+  ZP: () => v,
   _C: () => y
 }), require("./388685.js"), require("./457542.js");
 var Chunk951288 = require("./951288.js"),
@@ -80,7 +80,7 @@ function y(e, t) {
   } = _(e, t), y = (0, l.e7)([h.Z], () => {
     var t, n;
     return null != (n = null == (t = h.Z.getStateForGuild(e)) ? true : t.appliedBoosts) ? n : 0
-  }), j = (0, l.e7)([u.Z], () => u.Z.getGuild(e)), v = (0, l.e7)([h.Z], () => h.Z.getStateForGuild(e)), x = i.useMemo(() => null != t && t.type === f.Us.LEVEL && null != v ? function(e, t) {
+  }), v = (0, l.e7)([u.Z], () => u.Z.getGuild(e)), j = (0, l.e7)([h.Z], () => h.Z.getStateForGuild(e)), x = i.useMemo(() => null != t && t.type === f.Us.LEVEL && null != j ? function(e, t) {
     let n = f.T1[e.skuId];
     return null == n ? [] : Object.entries(f.Rx).filter(e => {
       let [r, i] = e;
@@ -89,7 +89,7 @@ function y(e, t) {
       let [n] = e;
       return t.allPowerups[n]
     }).filter(d.lm)
-  }(t, v) : [], [t, v]), C = null == x ? true : x.reduce((e, t) => e + t.cost, 0), E = Math.max((null != (p = null == j ? true : j.premiumSubscriberCount) ? p : 0) - y + C, 0);
+  }(t, j) : [], [t, j]), C = null == x ? true : x.reduce((e, t) => e + t.cost, 0), E = Math.max((null != (p = null == v ? true : v.premiumSubscriberCount) ? p : 0) - y + C, 0);
   return {
     onActivate: i.useCallback(function(e) {
       var i;
@@ -98,14 +98,14 @@ function y(e, t) {
       let {
         shouldCloseAllModals: a = true
       } = l;
-      if (null != j && null != t) return E < t.cost ? void(0, s.u)({
+      if (null != v && null != t) return E < t.cost ? void(0, s.u)({
         analyticsLocation: {
           page: g.ZY5.GUILD_POWERUPS_OVERVIEW,
           section: g.jXE.GUILD_POWERUPS_OVERVIEW_CARD
         },
         numberOfBoostsToAdd: t.cost - E,
         analyticsLocations: b,
-        guild: j,
+        guild: v,
         intent: t.type === f.Us.LEVEL ? c.P.LEVEL : c.P.PERK,
         onSubscribeComplete: () => {
           var e;
@@ -115,7 +115,7 @@ function y(e, t) {
                 default: e
               } = await Promise.all([n.e("97844"), n.e("68203")]).then(n.bind(n, 666083));
               return n => (0, r.jsx)(e, m({
-                guildId: j.id,
+                guildId: v.id,
                 powerup: t
               }, n))
             })
@@ -127,12 +127,12 @@ function y(e, t) {
             default: e
           } = await Promise.all([n.e("97844"), n.e("68203")]).then(n.bind(n, 666083));
           return n => (0, r.jsx)(e, m({
-            guildId: j.id,
+            guildId: v.id,
             powerup: t
           }, n))
         })
       })
-    }, [O, t, E, b, j])
+    }, [O, t, E, b, v])
   }
 }
 
@@ -154,7 +154,7 @@ function _(e, t) {
   }
 }
 
-function j(e, t) {
+function v(e, t) {
   let {
     isLoading: l,
     error: a,

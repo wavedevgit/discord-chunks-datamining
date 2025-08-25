@@ -35,17 +35,17 @@ function N(e) {
     guild: t,
     markAsDismissed: n
   } = e, l = (null == t ? true : t.premiumProgressBarEnabled) === true ? g.DF.LEFT_TOP : g.DF.TOP_CENTER, N = l === g.DF.TOP_CENTER || l === g.DF.LEFT_TOP ? E[l] : "", {
-    analyticsLocations: w
-  } = (0, d.ZP)(u.Z.GUILD_BOOSTING_ENHANCED_ROLE_COLOR_COACHMARK), Z = i.useCallback(() => {
+    analyticsLocations: Z
+  } = (0, d.ZP)(u.Z.GUILD_BOOSTING_ENHANCED_ROLE_COLOR_COACHMARK), w = i.useCallback(() => {
     (0, h.u)({
       analyticsLocation: {
-        section: j.jXE.BOOSTER_ENHANCED_ROLE_COLORS_COACHMARK
+        section: v.jXE.BOOSTER_ENHANCED_ROLE_COLORS_COACHMARK
       },
       numberOfBoostsToAdd: 1,
-      analyticsLocations: w,
+      analyticsLocations: Z,
       guild: t
     })
-  }, [t, w]), T = (0, s.e7)([b.default], () => b.default.getCurrentUser()), A = function(e) {
+  }, [t, Z]), T = (0, s.e7)([b.default], () => b.default.getCurrentUser()), A = function(e) {
     let t = (0, s.e7)([m.Z], () => m.Z.getSortedRoles(e).find(y.YB));
     return (null == t ? true : t.colorStrings) != null ? t.colorStrings : {
       primaryColor: (0, a.Rf)(_.oC.primary_color),
@@ -88,7 +88,7 @@ function N(e) {
       }), (0, r.jsx)(c.olH, {
         className: E.close,
         innerClassName: E.innerClose,
-        onClick: () => null == n ? true : n(v.L.USER_DISMISS)
+        onClick: () => null == n ? true : n(j.L.USER_DISMISS)
       })]
     }),
     header: (0, r.jsx)(c.Text, {
@@ -101,7 +101,7 @@ function N(e) {
       children: C.intl.string(x.default["/DTbiY"])
     }),
     buttonCTA: C.intl.string(C.t["oPAx7+"]),
-    onClick: Z,
+    onClick: w,
     className: o()(E.container, N),
     caretPosition: l,
     markAsDismissed: n

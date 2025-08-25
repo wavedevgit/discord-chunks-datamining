@@ -13,7 +13,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk803038 = require("./803038.js"),
   Chunk662975 = require("./662975.js"),
   Chunk724145 = require("./724145.jsx"),
-  Chunk771934 = require("./771934.js"),
+  Chunk507962 = require("./507962.js"),
   Chunk726034 = require("./726034.jsx"),
   Chunk884134 = require("./884134.jsx"),
   Chunk266454 = require("./266454.js"),
@@ -41,7 +41,7 @@ let v = function() {
     A = [];
   !module && null == T && (require && !exports && A.push(Chunk704215.z.CLIENT_THEMES_COACHMARK), v && A.push(Chunk704215.z.CUSTOM_THEME_COACHMARK));
   let [C, N] = (0, Chunk243778.US)(A, Chunk921944.R.SIDEBAR, true), R = C === Chunk704215.z.CLIENT_THEMES_COACHMARK, P = C === Chunk704215.z.CUSTOM_THEME_COACHMARK;
-  if ((0, Chunk771934.HA)(v, C), module) return null;
+  if ((0, Chunk507962.HA)(v, C), module) return null;
   let w = I ? Chunk884134.Z : Chunk726034.Z;
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(T === Chunk550385.wh.CLIENT_THEMES || R) && (0, Chunk951288.jsx)(Chunk724145.Z, {

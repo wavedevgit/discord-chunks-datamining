@@ -32,11 +32,11 @@ function f(e) {
 }
 
 function g(e) {
-  var t, n, r, g, m, b, O, y, _, j, v, x, C, E, S;
+  var t, n, r, g, m, b, O, y, _, v, j, x, C, E, S;
   let {
     item: P,
     renderApplication: I
-  } = e, N = null != (r = null == (t = P.other_user) ? true : t.id) ? r : p.lds, w = u.ZP.getName(s.default.getUser(null == (n = P.other_user) ? true : n.id)), Z = P.applicationId;
+  } = e, N = null != (r = null == (t = P.other_user) ? true : t.id) ? r : p.lds, Z = u.ZP.getName(s.default.getUser(null == (n = P.other_user) ? true : n.id)), w = P.applicationId;
   switch (P.type) {
     case d.O7.FRIEND_REQUESTS_GROUPED:
       let T = u.ZP.getName(s.default.getUser(null == (m = P.other_users) || null == (g = m[0]) ? true : g.id)),
@@ -48,7 +48,7 @@ function g(e) {
         count: R
       });
     case d.O7.MOBILE_NATIVE_UPDATE_AVAILABLE:
-      let D = null != (v = null == (j = P.local_id) ? true : j.split("_").pop()) ? v : "unknown";
+      let D = null != (j = null == (v = P.local_id) ? true : v.split("_").pop()) ? j : "unknown";
       return "Update to build ".concat(D, " available!");
     case d.DY.FRIEND_SUGGESTION_CREATED:
       return a.Z.getRelationshipType(N), p.OGo.PENDING_OUTGOING, null != (x = P.body) ? x : "";
@@ -64,43 +64,43 @@ function g(e) {
       });
     case d.O7.INCOMING_FRIEND_REQUESTS:
       return f({
-        username: w,
-        applicationId: Z,
+        username: Z,
+        applicationId: w,
         renderApplication: I,
         withApplication: h.t["9Dgf1N"],
         withDefault: h.t.uIomX1
       });
     case d.O7.INCOMING_FRIEND_REQUESTS_ACCEPTED:
       return f({
-        username: w,
-        applicationId: Z,
+        username: Z,
+        applicationId: w,
         renderApplication: I,
         withApplication: h.t.nnC1q6,
         withDefault: h.t["5Uzkdn"]
       });
     case d.DY.FRIEND_REQUEST_ACCEPTED:
       return f({
-        username: w,
-        applicationId: Z,
+        username: Z,
+        applicationId: w,
         renderApplication: I,
         withApplication: h.t.jXlYiI,
         withDefault: h.t.McYRBg
       });
     case d.O7.INCOMING_GAME_FRIEND_REQUESTS_ACCEPTED:
-      return i()(null != Z, "Expected application id for ".concat(P.type)), h.intl.format(h.t["BB/0vr"], {
-        username: w,
-        applicationName: () => I(Z)
+      return i()(null != w, "Expected application id for ".concat(P.type)), h.intl.format(h.t["BB/0vr"], {
+        username: Z,
+        applicationName: () => I(w)
       });
     case d.O7.INCOMING_GAME_FRIEND_REQUESTS:
-      return i()(null != Z, "Expected application id for ".concat(P.type)), h.intl.format(h.t["7cqOLC"], {
-        username: w,
-        applicationName: () => I(Z)
+      return i()(null != w, "Expected application id for ".concat(P.type)), h.intl.format(h.t["7cqOLC"], {
+        username: Z,
+        applicationName: () => I(w)
       });
     case d.DY.GAME_FRIEND_REQUEST_ACCEPTED:
-      if (null == Z) return P.body;
+      if (null == w) return P.body;
       return h.intl.format(h.t.Wi64vL, {
-        username: w,
-        applicationName: () => I(Z)
+        username: Z,
+        applicationName: () => I(w)
       })
   }
   return null != (S = P.body) ? S : ""

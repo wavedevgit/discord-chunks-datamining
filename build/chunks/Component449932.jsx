@@ -1,7 +1,7 @@
 /** Chunk was on 91488 **/
 /** chunk id: 449932, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => j
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -60,7 +60,7 @@ function _(e) {
   })
 }
 
-function j(e) {
+function v(e) {
   let {
     members: t,
     guildId: n
@@ -81,7 +81,7 @@ function j(e) {
     }, n)
   })
 }
-let v = e => {
+let j = e => {
   let {
     channel: t,
     presenceActivity: n,
@@ -97,7 +97,7 @@ let v = e => {
   });
   if (null == b) return null;
   let _ = p || (0, c.Z)(n),
-    v = (0, h.vd)(t.type);
+    j = (0, h.vd)(t.type);
   return (0, r.jsxs)("div", {
     className: y.activity,
     children: [(0, r.jsx)("div", {
@@ -108,16 +108,16 @@ let v = e => {
         user: b,
         channel: t,
         sortedVoiceStates: i,
-        onOpenSpotifyTrack: v ? d.aG : true,
-        onOpenSpotifyArtist: v ? d.d$ : true,
-        onOpenSpotifyAlbum: v ? d.Z5 : true
+        onOpenSpotifyTrack: j ? d.aG : true,
+        onOpenSpotifyArtist: j ? d.d$ : true,
+        onOpenSpotifyAlbum: j ? d.Z5 : true
       }) : (0, r.jsx)(s.Z, {
         type: s.P.VOICE_CHANNEL,
         activity: n,
         user: b,
         guildId: t.getGuildId(),
         channelId: t.id,
-        renderHeaderAccessory: null != i ? () => (0, r.jsx)(j, {
+        renderHeaderAccessory: null != i ? () => (0, r.jsx)(v, {
           guildId: t.guild_id,
           members: i
         }) : true

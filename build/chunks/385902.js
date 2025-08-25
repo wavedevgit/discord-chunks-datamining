@@ -45,20 +45,20 @@ function O(e, t) {
   let O = (0, l.e7)([o.Z], () => o.Z.getGuild(e)),
     y = (0, l.e7)([a.Z], () => a.Z.hasLayers()),
     _ = null != (b = (0, u.Z)(e)) && b,
-    j = (0, c.q8)(e, t),
-    v = (0, l.e7)([s.Z], () => s.Z.getStateForGuild(e)),
-    x = (null == v || null == (n = v.unlockedPowerups) ? true : n[i.A$]) != null,
-    C = null == v || null == (d = v.allPowerups) ? true : d[i.A$],
+    v = (0, c.q8)(e, t),
+    j = (0, l.e7)([s.Z], () => s.Z.getStateForGuild(e)),
+    x = (null == j || null == (n = j.unlockedPowerups) ? true : n[i.A$]) != null,
+    C = null == j || null == (d = j.allPowerups) ? true : d[i.A$],
     E = null == C ? true : C.storeRemovalDate,
-    S = null == v || null == (f = v.allPowerups) ? true : f[i.XW],
+    S = null == j || null == (f = j.allPowerups) ? true : f[i.XW],
     {
       onActivate: P
     } = (0, h._C)(e, S),
-    I = !y && _ && j && x && null != C && null != E && null != S && null != O,
+    I = !y && _ && v && x && null != C && null != E && null != S && null != O,
     N = r.useCallback(e => {
       P(e)
     }, [P]),
-    w = r.useMemo(() => {
+    Z = r.useMemo(() => {
       if (!I) return null;
       let e = (0, p.Z)(E);
       return {
@@ -80,6 +80,6 @@ function O(e, t) {
     }, [I, C, E, O, N]);
   return {
     shouldShow: I,
-    modalConfig: w
+    modalConfig: Z
   }
 }

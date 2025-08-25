@@ -1,88 +1,91 @@
-/** Chunk was on 20087 **/
-/** chunk id: 426642, original params: t,e,r (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 426642, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => f,
-  d: () => u
+  Z: () => u,
+  d: () => c
 }), require("./953529.js");
-var n, Chunk951288 = require("./951288.js");
+var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk692547 = require("./692547.js"),
   Chunk481060 = require("./481060.js"),
   Chunk752657 = require("./752657.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk749085 = require("./749085.js"),
-  u = ((n = {})[n.TOO_BIG = 0] = "TOO_BIG", n[n.RATE_LIMIT = 1] = "RATE_LIMIT", n[n.TOO_MANY_EMOJI = 2] = "TOO_MANY_EMOJI", n[n.TOO_MANY_ANIMATED_EMOJI = 3] = "TOO_MANY_ANIMATED_EMOJI", n[n.WRONG_TYPE = 4] = "WRONG_TYPE", n[n.RESIZE_GIF = 5] = "RESIZE_GIF", n);
-let f = t => {
+  c = function(e) {
+    return e[e.TOO_BIG = 0] = "TOO_BIG", e[e.RATE_LIMIT = 1] = "RATE_LIMIT", e[e.TOO_MANY_EMOJI = 2] = "TOO_MANY_EMOJI", e[e.TOO_MANY_ANIMATED_EMOJI = 3] = "TOO_MANY_ANIMATED_EMOJI", e[e.WRONG_TYPE = 4] = "WRONG_TYPE", e[e.RESIZE_GIF = 5] = "RESIZE_GIF", e
+  }({});
+let u = e => {
   let {
-    error: e
-  } = t, {
-    type: r,
-    filename: n
+    error: t
   } = e, {
+    type: n,
+    filename: c
+  } = t, {
     icon: u,
-    description: f,
-    color: d,
-    tooltip: h
+    description: d,
+    color: f,
+    tooltip: _
   } = {
     0: {
-      icon: o.gm1,
+      icon: a.gm1,
       description: s.intl.string(s.t.YbdEFB),
-      color: l.Z.unsafe_rawColors.RED_400.css,
+      color: i.Z.unsafe_rawColors.RED_400.css,
       tooltip: s.intl.string(s.t.PanA4O)
     },
     4: {
-      icon: o.LB9,
+      icon: a.LB9,
       description: s.intl.string(s.t["01Papq"]),
-      color: l.Z.unsafe_rawColors.RED_400.css,
+      color: i.Z.unsafe_rawColors.RED_400.css,
       tooltip: s.intl.string(s.t.PanA4O)
     },
     5: {
-      icon: a.Z,
+      icon: o.Z,
       description: s.intl.string(s.t.sp16MT),
-      color: l.Z.unsafe_rawColors.RED_400.css,
+      color: i.Z.unsafe_rawColors.RED_400.css,
       tooltip: s.intl.string(s.t.PanA4O)
     },
     1: {
-      icon: o.EmW,
+      icon: a.EmW,
       description: s.intl.string(s.t["4rjikp"]),
-      color: l.Z.unsafe_rawColors.ORANGE_345.css,
+      color: i.Z.unsafe_rawColors.ORANGE_345.css,
       tooltip: s.intl.string(s.t.dq9aTk)
     },
     2: {
-      icon: o.d3s,
+      icon: a.d3s,
       description: s.intl.string(s.t["5VmbbG"]),
-      color: l.Z.unsafe_rawColors.RED_400.css,
+      color: i.Z.unsafe_rawColors.RED_400.css,
       tooltip: s.intl.string(s.t.PanA4O)
     },
     3: {
-      icon: o.d3s,
+      icon: a.d3s,
       description: s.intl.string(s.t.rjFOZ2),
-      color: l.Z.unsafe_rawColors.RED_400.css,
+      color: i.Z.unsafe_rawColors.RED_400.css,
       tooltip: s.intl.string(s.t.PanA4O)
     }
-  } [r];
-  return (0, i.jsxs)("div", {
-    className: c.emojiErrorItem,
-    children: [(0, i.jsx)(u, {
-      className: c.fileIcon,
-      color: l.Z.unsafe_rawColors.PRIMARY_300.css
-    }), (0, i.jsxs)(o.hjN, {
-      className: c.fileInfo,
-      children: [(0, i.jsx)(o.vwX, {
-        className: c.fileName,
-        children: n
-      }), (0, i.jsx)(o.R94, {
-        type: o.geA.DESCRIPTION,
-        children: f
+  } [n];
+  return (0, r.jsxs)("div", {
+    className: l.emojiErrorItem,
+    children: [(0, r.jsx)(u, {
+      className: l.fileIcon,
+      color: i.Z.unsafe_rawColors.PRIMARY_300.css
+    }), (0, r.jsxs)(a.hjN, {
+      className: l.fileInfo,
+      children: [(0, r.jsx)(a.vwX, {
+        className: l.fileName,
+        children: c
+      }), (0, r.jsx)(a.R94, {
+        type: a.geA.DESCRIPTION,
+        children: d
       })]
-    }), (0, i.jsx)(o.DY3, {
+    }), (0, r.jsx)(a.DY3, {
       position: "right",
-      text: h,
-      children: (0, i.jsx)(o.Mgn, {
+      text: _,
+      children: (0, r.jsx)(a.Mgn, {
         size: "custom",
         width: 20,
         height: 20,
-        color: d
+        color: f
       })
     })]
   })

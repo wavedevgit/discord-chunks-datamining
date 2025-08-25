@@ -86,7 +86,7 @@ function _(e) {
   })) : y
 }
 
-function j(e) {
+function v(e) {
   let {
     activity: t,
     embeddedApp: n,
@@ -111,7 +111,7 @@ function j(e) {
   })
 }
 
-function v(e) {
+function j(e) {
   let {
     activity: t,
     user: n,
@@ -194,11 +194,11 @@ function E(e) {
         onOpenSpotifyAlbum: g
       }), (0, r.jsxs)("div", {
         className: O.detailsAndAvatarsContainer,
-        children: [(0, r.jsx)(j, {
+        children: [(0, r.jsx)(v, {
           activity: t,
           embeddedApp: n,
           onOpenSpotifyTrack: p
-        }), (0, r.jsx)(v, {
+        }), (0, r.jsx)(j, {
           activity: t,
           user: l,
           onOpenSpotifyArtist: f

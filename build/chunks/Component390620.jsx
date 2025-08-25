@@ -1,4 +1,4 @@
-/** Chunk was on 65819 **/
+/** Chunk was on 2262 **/
 /** chunk id: 390620, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   y: () => x
@@ -17,7 +17,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk583140 = require("./583140.js");
 let g = 6 * Chunk70956.Z.Millis.SECOND;
 
-function h(e) {
+function f(e) {
   let {
     emoji: t,
     guildId: n
@@ -26,7 +26,7 @@ function h(e) {
     return null == (e = u.Z.getGuild(n)) ? true : e.name
   });
   return (0, r.jsxs)("div", {
-    className: i()(f.toast, m.toast),
+    className: i()(h.toast, m.toast),
     children: [(0, r.jsx)(s.Z, {
       emojiId: t.id,
       size: "default"
@@ -60,7 +60,7 @@ function x(e) {
   } = e;
   (0, o.showToast)((0, o.createToast)("", o.ToastType.CUSTOM, {
     position: o.ToastPosition.TOP,
-    component: (0, r.jsx)(h, {
+    component: (0, r.jsx)(f, {
       emoji: t,
       guildId: n
     }),
