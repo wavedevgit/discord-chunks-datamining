@@ -17,8 +17,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk231319 = require("./231319.js"),
   Chunk8542 = require("./8542.js");
-let h = (0, Chunk772848.Z)(),
-  b = (0, Chunk131704.kt)({
+let b = (0, Chunk772848.Z)(),
+  h = (0, Chunk131704.kt)({
     id: "1",
     type: Chunk981631.d4z.DM
   });
@@ -64,7 +64,7 @@ function v(e) {
     value: V,
     enableThemedBackground: P = false,
     parentModalKey: O
-  } = e, I = (0, i.Gc0)(), [N, F] = r.useState(() => (0, s.JM)(V)), y = r.useRef(true === c), K = null != A ? A : null == I ? true : I.titleId, T = null != (t = null == I ? true : I.errorId) ? t : h, X = r.useMemo(() => ({
+  } = e, I = (0, i.Gc0)(), [N, F] = r.useState(() => (0, s.JM)(V)), y = r.useRef(true === c), K = null != A ? A : null == I ? true : I.titleId, T = null != (t = null == I ? true : I.errorId) ? t : b, X = r.useMemo(() => ({
     analyticsName: "simple",
     autocomplete: {
       alwaysUseLayer: true,
@@ -96,7 +96,7 @@ function v(e) {
     },
     placeholder: x,
     required: U,
-    channel: b,
+    channel: h,
     textValue: V,
     richValue: N,
     type: X,
@@ -116,7 +116,7 @@ function v(e) {
       text: V,
       maxLength: f
     }), null != f && (0, n.jsx)(i.nn4, {
-      id: h,
+      id: b,
       children: g.intl.format(g.t["+DFxLS"], {
         maxLength: f
       })

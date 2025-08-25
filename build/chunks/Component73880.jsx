@@ -1,69 +1,63 @@
 /** Chunk was on 36605 **/
 /** chunk id: 73880, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Q8: () => u,
-  jn: () => m,
-  lX: () => f
+  Q8: () => o,
+  jn: () => c,
+  lX: () => u
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
-var Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
-  Chunk755721 = require("./755721.js"),
+var Chunk481060 = require("./481060.js"),
   Chunk489813 = require("./489813.jsx"),
   Chunk592286 = require("./592286.js"),
-  Chunk388032 = require("./388032.jsx"),
-  Chunk624463 = require("./624463.js");
+  Chunk388032 = require("./388032.jsx");
 
-function u(e) {
+function o(e) {
   let {
     value: t,
     placeholder: n,
-    onChange: l,
+    onChange: i,
     disabled: a,
-    className: c,
-    autofocus: u
+    autofocus: o
   } = e;
-  return (0, r.jsx)(s.iS, {
-    className: i()(d.paragraphFieldBody, c),
-    maxLength: o.RS,
+  return (0, r.jsx)(l.Kx8, {
+    maxLength: s.RS,
     value: null != t ? t : "",
     placeholder: null != n ? n : "",
-    onChange: l,
+    onChange: i,
     disabled: a,
-    autoFocus: u,
+    autoFocus: o,
     autosize: true,
     showRemainingCharacterCount: !a
   })
 }
 
-function m(e) {
+function c(e) {
   let {
     formField: t
   } = e;
-  return (0, r.jsx)(a.CA, {
+  return (0, r.jsx)(i.CA, {
     title: t.label,
-    children: (0, r.jsx)(u, {
-      className: d.disabledFieldBackground,
+    children: (0, r.jsx)(o, {
       value: t.response,
       disabled: true
     })
   })
 }
 
-function f(e) {
+function u(e) {
   let {
     formField: t,
     autofocus: n,
     onChange: l
   } = e;
-  return (0, r.jsx)(a.hK, {
+  return (0, r.jsx)(i.hK, {
     title: t.label,
-    children: (0, r.jsx)(u, {
+    children: (0, r.jsx)(o, {
       value: t.response,
       onChange: l,
       autofocus: n,
-      placeholder: c.intl.string(c.t["Sqn+Wl"])
+      placeholder: a.intl.string(a.t["Sqn+Wl"])
     })
   })
 }

@@ -22,19 +22,19 @@ function c(e) {
     closeLabel: u,
     onConfirm: f,
     iconVariant: g = "warning"
-  } = e, [p, m] = l.useState(false), h = async () => {
+  } = e, [p, m] = l.useState(false), b = async () => {
     m(true);
     try {
       await f(), A()
     } finally {
       m(false)
     }
-  }, b = null != n ? n : i.intl.string(i.t.D94rwc);
+  }, h = null != n ? n : i.intl.string(i.t.D94rwc);
   return (0, r.jsxs)(o.Y0X, {
     className: s.__invalid_container,
     size: o.CgR.DYNAMIC,
     transitionState: t,
-    "aria-label": b,
+    "aria-label": h,
     parentComponent: "WarningModal",
     children: [(0, r.jsxs)(o.hzk, {
       className: s.content,
@@ -59,7 +59,7 @@ function c(e) {
         }), (0, r.jsx)(o.X6q, {
           variant: "heading-xl/semibold",
           color: "header-primary",
-          children: b
+          children: h
         })]
       }), (0, r.jsx)(o.LZC, {
         size: 12
@@ -73,7 +73,7 @@ function c(e) {
       children: [(0, r.jsx)(o.zxk, {
         variant: "primary",
         text: c,
-        onClick: h,
+        onClick: b,
         loading: p
       }), (0, r.jsx)(o.LZC, {
         size: 12,

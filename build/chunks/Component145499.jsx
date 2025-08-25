@@ -184,8 +184,8 @@ let w = e => {
           z = A < x.tier,
           W = (i = u.length, i < (0, v.A3)(E.Eu4.NONE) ? E.Eu4.NONE : i < (0, v.A3)(E.Eu4.TIER_1) ? E.Eu4.TIER_1 : i < (0, v.A3)(E.Eu4.TIER_2) ? E.Eu4.TIER_2 : i < (0, v.A3)(E.Eu4.TIER_3) || null != t && t.features.has(E.oNc.MORE_STICKERS) && i < d.D.MAX_STICKER_SLOTS ? E.Eu4.TIER_3 : E.Eu4.NONE),
           V = C && !z && W === x.tier && U !== F.length,
-          Y = V || F.length > 0,
-          K = U - G,
+          K = V || F.length > 0,
+          Y = U - G,
           X = n(872732),
           q = B - F.length,
           J = V ? Math.min(5 - (F.length + 0) % 5, q) : 0,
@@ -235,11 +235,11 @@ let w = e => {
           onSetRef: b,
           isAnimatedTo: m,
           hasBottomMargin: O !== _.length - 1,
-          withCardBody: !Y,
+          withCardBody: !K,
           headerButton: s,
           showHeaderLockStatus: ei,
           guildId: t.id,
-          children: [Y && (0, r.jsxs)("div", {
+          children: [K && (0, r.jsxs)("div", {
             className: T.grid,
             children: [F.map(e => (0, r.jsx)(y.Z, {
               isDisabled: z,
@@ -264,9 +264,9 @@ let w = e => {
               variant: "text-md/normal",
               color: "header-secondary",
               children: x.tier === E.Eu4.TIER_1 ? S.intl.formatToPlainString(S.t.psMYu7, {
-                numAdditional: K
+                numAdditional: Y
               }) : S.intl.formatToPlainString(S.t.bLykER, {
-                numAdditional: K,
+                numAdditional: Y,
                 numTotal: U
               })
             }), (0, r.jsx)(c.ua7, {

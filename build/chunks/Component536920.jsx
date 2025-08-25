@@ -29,9 +29,9 @@ function v(e) {
     var e;
     let t = null != j ? j : null == (e = c.ZP.getCurrentGameForAnalytics()) ? true : e.id;
     return null == t ? null : u.Z.getDetectableGame(t)
-  }), B = (0, i.e7)([h.default], () => {
+  }), B = (0, i.e7)([x.default], () => {
     var e;
-    let t = null != (e = null === h.default || true === h.default ? true : h.default.getMostRecentOverlayRenderMethod()) ? e : true;
+    let t = null != (e = null === x.default || true === x.default ? true : x.default.getMostRecentOverlayRenderMethod()) ? e : true;
     return null != t ? _.gl[t] : true
   }), H = r.useMemo(() => {
     let e = {
@@ -53,7 +53,7 @@ function v(e) {
       z(true), await (0, s._v)(100), z(false), P(true);
       return
     }
-    N(true), await m.default.track(x.rMx.OVERLAY_DISABLED_SURVEY, {
+    N(true), await m.default.track(h.rMx.OVERLAY_DISABLED_SURVEY, {
       reason: C,
       comment: k,
       client_setting_type: v,
@@ -63,7 +63,7 @@ function v(e) {
     }), await (0, s._v)(1e3), N(false), R(true), await (0, s._v)(1500), t()
   };
   return (0, d.ZP)(() => {
-    m.default.track(x.rMx.OPEN_MODAL, {
+    m.default.track(h.rMx.OPEN_MODAL, {
       type: "overlay_disabled_questionnaire_modal"
     })
   }), (0, a.jsxs)(l.Y0X, {
@@ -122,7 +122,7 @@ function v(e) {
             color: "text-muted",
             className: g.commentHeader,
             children: p.intl.string(p.t.LYnrhY)
-          }), (0, a.jsx)(o.iS, {
+          }), (0, a.jsx)(l.Kx8, {
             autosize: true,
             value: k,
             maxLength: 1e3,

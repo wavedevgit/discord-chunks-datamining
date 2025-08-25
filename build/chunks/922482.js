@@ -55,10 +55,9 @@ function y(e) {
     n = arguments.length > 2 && true !== arguments[2] && arguments[2],
     r = arguments.length > 3 && true !== arguments[3] && arguments[3],
     i = f.Z.getVoiceChannelId();
-  !(!r && i !== e.id && (0, o._)(e) && _.Gy(e, () => y(e, t, n, true))) && b(e, t) && O(e, i, n)
+  !(!r && i !== e.id && (0, o._)(e) && _.Gy(e, () => y(e, t, n, true))) && b(e, t) && O(e, i)
 }
 
 function O(e, t) {
-  let n = !(arguments.length > 2) || true === arguments[2] || arguments[2];
-  _.R5(e, t, n)
+  _.R5(e, t)
 }

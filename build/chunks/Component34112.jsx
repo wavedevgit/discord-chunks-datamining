@@ -191,7 +191,7 @@ function M(e) {
     })
   }), [k, d]), [{
     dragSourcePosition: W
-  }, V] = (0, o.L)(z), Y = i.useCallback(e => {
+  }, V] = (0, o.L)(z), K = i.useCallback(e => {
     (0, m.jW)(e, async () => {
       let {
         default: e
@@ -201,7 +201,7 @@ function M(e) {
         guild: g
       }))
     })
-  }, [g, d]), K = (0, b.e)(g, d);
+  }, [g, d]), Y = (0, b.e)(g, d);
   if (F) return (0, r.jsx)("div", {
     ref: e => {
       H(e)
@@ -223,7 +223,7 @@ function M(e) {
       [w.containerDragAfter]: null != W && x > W
     }),
     onClick: X,
-    onContextMenu: Y,
+    onContextMenu: K,
     innerRef: e => {
       H(V(e))
     },
@@ -299,13 +299,13 @@ function M(e) {
         }))
       }), (0, r.jsx)(u.ua7, {
         text: P.intl.string(P.t.UKOtz8),
-        shouldShow: K,
+        shouldShow: Y,
         children: e => (0, r.jsx)(u.hU, D(Z({}, e), {
           variant: "secondary",
           "aria-label": P.intl.string(P.t.UKOtz8),
           icon: u.xhG,
-          onClick: Y,
-          disabled: !K
+          onClick: K,
+          disabled: !Y
         }))
       })]
     })]

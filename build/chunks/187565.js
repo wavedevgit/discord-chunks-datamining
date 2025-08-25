@@ -23,17 +23,17 @@ var r, Chunk647438 = require("./647438.js"),
   g = ((r = {})[r.CLAIM_ACCOUNT = 0] = "CLAIM_ACCOUNT", r[r.EMAIL_CONFIRMATION = 1] = "EMAIL_CONFIRMATION", r[r.VERIFICATION_FORM = 2] = "VERIFICATION_FORM", r);
 
 function v(e, t, n) {
-  let [r, s] = l.useState(false), c = (0, i.e7)([m.Z], () => m.Z.get(e)), d = (0, i.e7)([a.Z], () => a.Z.pendingState);
+  let [r, s] = l.useState(false), c = (0, i.e7)([m.Z], () => m.Z.get(e)), u = (0, i.e7)([a.Z], () => a.Z.pendingState);
   l.useEffect(() => {
-    t || u.ZP.fetchVerificationForm(e, n).finally(() => s(true))
+    t || d.ZP.fetchVerificationForm(e, n).finally(() => s(true))
   }, [e, n, t]);
   let h = l.useMemo(() => {
     var e, n;
     let r;
-    if (!t || null == d) return null;
-    if (d.joinType === o.A.APPLY) r = null != d.pendingVerificationFields ? [...d.pendingVerificationFields] : true;
-    else if (null != d.termRules) {
-      let e = d.termRules.map(e => e.value.trim()).filter(e => "" !== e);
+    if (!t || null == u) return null;
+    if (u.joinType === o.A.APPLY) r = null != u.pendingVerificationFields ? [...u.pendingVerificationFields] : true;
+    else if (null != u.termRules) {
+      let e = u.termRules.map(e => e.value.trim()).filter(e => "" !== e);
       r = [{
         field_type: f.QJ.TERMS,
         label: p.intl.string(p.t["9suSIC"]),
@@ -47,7 +47,7 @@ function v(e, t, n) {
       formFields: r,
       guild: null == c ? true : c.guild
     }
-  }, [t, d, c]);
+  }, [t, u, c]);
   return {
     hasFetched: r,
     verificationForm: null != h ? h : c
@@ -57,7 +57,7 @@ function v(e, t, n) {
 function b(e, t, n) {
   let r = (0, i.e7)([c.Z], () => c.Z.getGuild(e)),
     a = (0, i.e7)([s.Z], () => s.Z.getGuild());
-  return l.useMemo(() => n && (null == a ? true : a.id) === e ? a : null != r ? r : null != t ? (0, d.Rj)(t) : null, [n, a, e, r, t])
+  return l.useMemo(() => n && (null == a ? true : a.id) === e ? a : null != r ? r : null != t ? (0, u.Rj)(t) : null, [n, a, e, r, t])
 }
 
 function j(e) {

@@ -154,7 +154,7 @@ function E(e) {
       }), (0, l.jsxs)(o.xJW, {
         title: y.intl.string(y.t["+gRCCw"]),
         className: b.formItem,
-        children: [(0, l.jsx)(s.iS, {
+        children: [(0, l.jsx)(o.Kx8, {
           placeholder: y.intl.string(y.t["kWO/Ex"]),
           value: P,
           onChange: e => {

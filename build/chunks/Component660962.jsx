@@ -50,9 +50,9 @@ let V = (0, Chunk663993.Un)({
     createPromise: () => require.e("4848").then(require.bind(require, 797967)),
     webpackId: 797967
   }),
-  Y = o().debounce((e, t) => (0, S.Uv)(e, t), 200);
+  K = o().debounce((e, t) => (0, S.Uv)(e, t), 200);
 
-function K(e) {
+function Y(e) {
   let {
     role: t,
     disabled: n
@@ -67,7 +67,7 @@ function K(e) {
       value: l,
       maxLength: M.VKK,
       onChange: function(e) {
-        a(e), Y(t.id, e)
+        a(e), K(t.id, e)
       },
       disabled: n
     })
@@ -361,7 +361,7 @@ function ee(e) {
           selectedSection: L.ZI.DISPLAY,
           setSelectedSection: l
         })
-      }), (0, r.jsx)(K, {
+      }), (0, r.jsx)(Y, {
         role: n,
         disabled: p
       }), (0, r.jsx)("div", {

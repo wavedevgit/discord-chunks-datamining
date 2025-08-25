@@ -67,8 +67,8 @@ function V(e) {
   }
   return e
 }
-let Y = d().throttle(Chunk80932.OQ, 1e3),
-  K = e => {
+let K = d().throttle(Chunk80932.OQ, 1e3),
+  Y = e => {
     let {
       guildId: t,
       emoji: n,
@@ -282,7 +282,7 @@ let Y = d().throttle(Chunk80932.OQ, 1e3),
         })]
       }), o.map(e => {
         var t;
-        return (0, r.jsx)(K, {
+        return (0, r.jsx)(Y, {
           guildId: n.id,
           emoji: e,
           onEdit: l,
@@ -378,7 +378,7 @@ let Y = d().throttle(Chunk80932.OQ, 1e3),
         maxEmojiSlots: L,
         availableEmojiSlots: F,
         staticEmoji: W,
-        totalStaticEmoji: K,
+        totalStaticEmoji: Y,
         animatedEmoji: q,
         totalAnimatedEmoji: J
       } = (0, Chunk719403.t)({
@@ -403,9 +403,9 @@ let Y = d().throttle(Chunk80932.OQ, 1e3),
         })
       }
     }, [Chunk80932, er]), Chunk647438.useEffect(() => {
-      Y(exports.id)
+      K(exports.id)
     }, [exports.id]), Chunk647438.useEffect(() => {
-      null != Chunk225433 && Chunk225433 < Chunk202841 && Y(exports.id)
+      null != Chunk225433 && Chunk225433 < Chunk202841 && K(exports.id)
     }, [Chunk202841, Chunk225433, exports.id]), Chunk647438.useEffect(() => {
       if (null != Chunk668781 && null == et) return void en(Chunk668781)
     }, [Chunk668781, et]);
@@ -467,7 +467,7 @@ let Y = d().throttle(Chunk80932.OQ, 1e3),
         title: Chunk388032.intl.string(Chunk388032.t.sMOuub),
         children: [(0, Chunk951288.jsx)(Q, {
           guild: exports,
-          staticEmojiCount: K,
+          staticEmojiCount: Y,
           animatedEmojiCount: J
         }), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
           className: Chunk878341.uploader,

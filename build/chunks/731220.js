@@ -1,5 +1,5 @@
 /** Chunk was on 11298 **/
-/** chunk id: 731220, original params: e,t,l (module,exports,require) **/
+/** chunk id: 731220, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   e: () => r
 }), require("./388685.js");
@@ -10,20 +10,20 @@ var Chunk647438 = require("./647438.js"),
 function r(e) {
   let {
     getOptions: t
-  } = e, l = n.useMemo(() => {
+  } = e, n = l.useMemo(() => {
     let e = t();
     return (0, a.Bi)(e, i.Ef)
-  }, [t]), [r, u] = n.useState(null), [s, b] = n.useState(""), [d, o] = n.useState(false), f = n.useCallback(e => {
+  }, [t]), [r, u] = l.useState(null), [s, b] = l.useState(""), [d, o] = l.useState(false), O = l.useCallback(e => {
     o(true), u(e)
-  }, []), c = n.useCallback(e => {
+  }, []), v = l.useCallback(e => {
     b(e)
   }, []);
-  return n.useMemo(() => ({
-    options: l,
+  return l.useMemo(() => ({
+    options: n,
     selectedOption: r,
     freeformText: s,
     isFreeformEnabled: d,
-    selectOption: f,
-    onFreeformTextChange: c
-  }), [l, r, s, d, f, c])
+    selectOption: O,
+    onFreeformTextChange: v
+  }), [n, r, s, d, O, v])
 }

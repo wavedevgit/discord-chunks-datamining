@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk202841 = require("./202841.js"),
   Chunk399606 = require("./399606.js"),
   Chunk481060 = require("./481060.js"),
@@ -38,7 +38,7 @@ function v(e) {
   let {
     guild: t,
     className: n,
-    onPageChange: a,
+    onPageChange: i,
     onMemberSelect: s
   } = e, v = t.id, g = (0, o.e7)([u.Z], () => u.Z.getEstimatedMemberSearchCountByGuildId(v), [v]), p = (0, d.$j)(v), C = (0, d.M3)(v), _ = r.useCallback(e => {
     null != e && (null == s || s(e))
@@ -47,7 +47,7 @@ function v(e) {
     null == (e = E.current) || e.resetSearchText()
   }, []);
   return (0, l.jsx)("div", {
-    className: i()(b.mainTableContainer, n),
+    className: a()(b.mainTableContainer, n),
     children: (0, l.jsxs)(c.Den, {
       className: b.horizatonalScroller,
       ref: N,
@@ -64,7 +64,7 @@ function v(e) {
         onResetForNewMembers: S
       }), T !== m.po.SUCCESS_STILL_INDEXING && (0, l.jsx)(j.Z, {
         guildId: t.id,
-        onPageChange: a
+        onPageChange: i
       })]
     })
   })

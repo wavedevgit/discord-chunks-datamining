@@ -1,12 +1,7 @@
 /** Chunk was on 11298 **/
-/** chunk id: 485525, original params: e,t,l (module,exports,require) **/
+/** chunk id: 485525, original params: e,t,n (module,exports,require) **/
 module.exports = {
   content: "content__7ca6b",
   header: "header__7ca6b",
-  footer: "footer__7ca6b",
-  freeformTextArea: "freeformTextArea__7ca6b",
-  freeformTextAreaDisabled: "freeformTextAreaDisabled__7ca6b",
-  question: "question__7ca6b",
-  questionTitle: "questionTitle__7ca6b",
-  textAreaTitle: "textAreaTitle__7ca6b"
+  footer: "footer__7ca6b"
 }

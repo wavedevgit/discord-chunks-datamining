@@ -1,7 +1,7 @@
 /** Chunk was on 68784 **/
 /** chunk id: 309081, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => k
+  Z: () => A
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -112,26 +112,26 @@ function R(e) {
     toggleEmojiPicker: b,
     containerRef: j
   } = e, P = a.useRef(null), R = (0, o.e7)([p.Z], () => p.Z.getChannel(t)), {
-    emoji: E,
-    isLoadingMedia: k,
-    hasUpload: A,
+    emoji: k,
+    isLoadingMedia: A,
+    hasUpload: E,
     mediaUrl: D,
     mediaFilename: S
   } = (0, h.Z)({
     channelId: t,
     localCreationAnswerId: n,
     image: l
-  }), I = A || null != E, N = a.useCallback(() => {
+  }), I = E || null != k, N = a.useCallback(() => {
     u(d)
-  }, [u, d]), T = a.useMemo(() => A ? x.intl.formatToPlainString(x.t.vcC7Qk, {
+  }, [u, d]), T = a.useMemo(() => E ? x.intl.formatToPlainString(x.t.vcC7Qk, {
     imageName: (0, g.fw)(S),
     answerNumber: d + 1
-  }) : null != E ? x.intl.formatToPlainString(x.t.ncOAhY, {
-    emojiName: E.name,
+  }) : null != k ? x.intl.formatToPlainString(x.t.ncOAhY, {
+    emojiName: k.name,
     answerNumber: d + 1
   }) : x.intl.formatToPlainString(x.t.emdpNj, {
     answerNumber: d + 1
-  }), [A, E, d, S]), L = a.useCallback(e => {
+  }), [E, k, d, S]), L = a.useCallback(e => {
     let {
       closePopout: t
     } = e;
@@ -139,7 +139,7 @@ function R(e) {
       className: O.emojiPicker,
       children: (0, r.jsx)(f.Z, {
         channel: R,
-        pickerIntention: w.Hz.POLLS,
+        pickerIntention: v.Hz.POLLS,
         closePopout: t,
         onNavigateAway: t,
         onSelectEmoji: e => {
@@ -161,21 +161,21 @@ function R(e) {
       onDeleteMedia: N,
       closePopout: t
     })
-  }, [N, b]), U = k ? (0, r.jsx)(c.$jN, {
+  }, [N, b]), U = A ? (0, r.jsx)(c.$jN, {
     className: O.spinnerWrapperDefault
   }) : (0, r.jsx)(C, {
-    hasUpload: A,
+    hasUpload: E,
     mediaUrl: D,
     mediaFilename: S,
     imageClassName: i()(O.media, O.gifDefault),
-    emoji: E,
+    emoji: k,
     emojiClassName: i()(O.media, O.emojiDefault),
     fallback: (0, r.jsx)(c.EO4, {
       size: "md",
       color: "currentColor",
       className: O.expressionPickerIconDefault
     })
-  }), Z = i()(v.CT, O.expressionPickerButtonDefault, {
+  }), Z = i()(w.CT, O.expressionPickerButtonDefault, {
     [O.canEditMedia]: I
   });
   return (0, r.jsx)(c.yRy, {
@@ -250,7 +250,7 @@ function R(e) {
   })
 }
 
-function E(e) {
+function k(e) {
   var t;
   let {
     value: n,
@@ -275,7 +275,7 @@ function E(e) {
     })]
   })
 }
-let k = Chunk647438.forwardRef(function(e, t) {
+let A = Chunk647438.forwardRef(function(e, t) {
   let {
     channelId: n,
     answer: l,
@@ -285,13 +285,13 @@ let k = Chunk647438.forwardRef(function(e, t) {
     onEmojiSelect: m,
     onEmojiRemove: p,
     canRemoveAnswer: h,
-    onRemoveAnswer: w,
-    addAnswer: v,
+    onRemoveAnswer: v,
+    addAnswer: w,
     submitPoll: y,
     answerTextInputRefs: C,
     error: _,
-    inputRef: k,
-    deleteButtonRef: A
+    inputRef: A,
+    deleteButtonRef: E
   } = e, D = a.useRef(null), S = (0, d.Dt)(), I = (0, d.Dt)(), N = null != _ && _.length > 0, [T, L] = a.useState(false), B = a.useCallback(() => {
     L(e => !e)
   }, []), U = a.useCallback(e => {
@@ -300,12 +300,12 @@ let k = Chunk647438.forwardRef(function(e, t) {
     switch (e.key.toLowerCase()) {
       case "enter":
         var r;
-        u && (e.preventDefault(), ((0, g.cS)(l) || "macos" !== (0, b.getOS)() ? t : n) ? (e.stopPropagation(), y()) : v()), null == (r = C.current[o + 1]) || r.focus();
+        u && (e.preventDefault(), ((0, g.cS)(l) || "macos" !== (0, b.getOS)() ? t : n) ? (e.stopPropagation(), y()) : w()), null == (r = C.current[o + 1]) || r.focus();
         break;
       case "e":
         ("macos" === (0, b.getOS)() ? n : t) && (e.preventDefault(), e.stopPropagation(), B())
     }
-  }, [v, l, C, o, u, y, B]), Z = (0, r.jsx)(R, {
+  }, [w, l, C, o, u, y, B]), Z = (0, r.jsx)(R, {
     containerRef: D,
     channelId: n,
     buttonImage: l.image,
@@ -344,18 +344,18 @@ let k = Chunk647438.forwardRef(function(e, t) {
         "aria-invalid": N,
         "aria-describedby": N ? S : I,
         focusProps: P,
-        inputRef: k
-      }), (0, r.jsx)(E, {
+        inputRef: A
+      }), (0, r.jsx)(k, {
         value: l.text,
         id: I
       })]
     }), h && (0, r.jsx)(c.P3F, {
-      onClick: () => w(o),
+      onClick: () => v(o),
       className: O.removeAnswerButtonDefault,
       "aria-label": x.intl.formatToPlainString(x.t["22fjER"], {
         answerNumber: o + 1
       }),
-      ref: A,
+      ref: E,
       children: (0, r.jsx)(c.XHJ, {
         size: "md",
         color: "currentColor",

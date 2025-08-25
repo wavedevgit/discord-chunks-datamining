@@ -1,8 +1,8 @@
 /** Chunk was on 36605 **/
 /** chunk id: 276486, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  l: () => d,
-  v: () => u
+  l: () => u,
+  v: () => d
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -13,7 +13,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk624463 = require("./624463.js");
 
-function d() {
+function u() {
   return (0, Chunk951288.jsx)(Chunk489813.PU, {
     className: Chunk624463.editableRequirementContainer,
     icon: Chunk481060.AtH,
@@ -32,14 +32,14 @@ function d() {
   })
 }
 
-function u(e) {
+function d(e) {
   let {
     isUserVerified: t
-  } = e, d = t ? o.intl.string(o.t.WWzQtb) : o.intl.string(o.t.woMjLS);
+  } = e, u = t ? o.intl.string(o.t.WWzQtb) : o.intl.string(o.t.woMjLS);
   return (0, r.jsx)(s.PU, {
     className: c.editableRequirementContainer,
     icon: l.AtH,
-    text: d,
+    text: u,
     footnote: o.intl.string(o.t["jMh+TU"]),
     meetsRequirement: t,
     children: (0, r.jsx)(l.zxk, {

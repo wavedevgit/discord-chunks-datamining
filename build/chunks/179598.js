@@ -6,7 +6,6 @@ module.exports = {
   headerText: "headerText__7fffd",
   modalContent: "modalContent__7fffd",
   productFieldsSection: "productFieldsSection__7fffd",
-  nameArea: "nameArea__7fffd",
   descriptionArea: "descriptionArea__7fffd",
   thumbnailLabel: "thumbnailLabel__7fffd",
   productPreview: "productPreview__7fffd",

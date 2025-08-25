@@ -64,7 +64,6 @@ function O(e) {
           children: (0, r.jsx)(a.Is, {
             placeholder: j.intl.string(j.t["So2/xM"]),
             value: y,
-            inputClassName: v.formInput,
             onChange: C,
             "aria-labelledby": k,
             disabled: L
@@ -78,7 +77,6 @@ function O(e) {
           disabled: L,
           children: (0, r.jsx)(s.q4e, {
             options: D,
-            className: v.formInput,
             isDisabled: L || null == t,
             placeholder: j.intl.string(j.t["88XZDg"]),
             value: N,
@@ -95,12 +93,10 @@ function O(e) {
       title: j.intl.string(j.t["1w2WcX"]),
       titleId: G,
       disabled: L,
-      children: (0, r.jsx)(a.iS, {
+      children: (0, r.jsx)(s.Kx8, {
         placeholder: j.intl.string(j.t.p7Jr4O),
         value: I,
-        rows: 2,
         autosize: true,
-        className: v.formInput,
         onChange: S,
         "aria-labelledby": G,
         disabled: L

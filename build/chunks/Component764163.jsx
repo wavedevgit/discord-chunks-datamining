@@ -130,68 +130,68 @@ function N(e) {
     initialData: l,
     benefitTypeInput: a,
     descriptionPlaceholder: s,
-    canSubmit: u,
-    onSave: g,
-    onDelete: p,
-    transitionState: h,
-    onClose: f
-  } = e, b = (0, m.Dt)(), x = (0, m.Dt)(), [j, _] = i.useState(null != (t = null == l ? true : l.description) ? t : ""), [O, y] = i.useState(() => ({
+    canSubmit: c,
+    onSave: u,
+    onDelete: g,
+    transitionState: p,
+    onClose: h
+  } = e, f = (0, m.Dt)(), b = (0, m.Dt)(), [x, j] = i.useState(null != (t = null == l ? true : l.description) ? t : ""), [_, O] = i.useState(() => ({
     id: null == l ? true : l.emoji_id,
     name: null == l ? true : l.emoji_name
-  })), N = u && "" !== j && (null != O.id || null != O.name);
+  })), y = c && "" !== x && (null != _.id || null != _.name);
 
-  function E(e) {
-    e.preventDefault(), N && (g({
-      description: j,
-      emojiId: O.id,
-      emojiName: O.name
-    }), f())
+  function N(e) {
+    e.preventDefault(), y && (u({
+      description: x,
+      emojiId: _.id,
+      emojiName: _.name
+    }), h())
   }
-  let I = [{
+  let E = [{
     text: v.intl.string(v.t["ETE/oK"]),
     variant: "secondary",
-    onClick: f
+    onClick: h
   }];
-  return null != p && I.push({
+  return null != g && E.push({
     text: v.intl.string(v.t.oyYWHB),
     variant: "critical-secondary",
     onClick: () => {
-      p(), f()
+      g(), h()
     },
     icon: d.XHJ
-  }), I.push({
+  }), E.push({
     text: null == l ? v.intl.string(v.t.OYkgVl) : v.intl.string(v.t.R3BPHx),
     variant: "primary",
-    onClick: E,
-    disabled: !N
+    onClick: N,
+    disabled: !y
   }), (0, r.jsx)("form", {
-    onSubmit: E,
+    onSubmit: N,
     children: (0, r.jsx)(o.Modal, {
-      transitionState: h,
-      onClose: f,
+      transitionState: p,
+      onClose: h,
       title: v.intl.string(v.t["2qf9EB"]),
-      actions: I,
+      actions: E,
       children: (0, r.jsxs)(d.Kqy, {
         gap: "md",
         children: [a, (0, r.jsx)(d.hjN, {
           title: v.intl.string(v.t["1Ts7QE"]),
-          titleId: b,
-          children: (0, r.jsx)(c.iS, {
+          titleId: f,
+          children: (0, r.jsx)(d.Kx8, {
             placeholder: s,
-            value: j,
+            value: x,
             rows: 1,
             autosize: true,
-            onChange: _,
-            "aria-labelledby": b
+            onChange: j,
+            "aria-labelledby": f
           })
         }), (0, r.jsx)(d.hjN, {
           title: v.intl.string(v.t.sMOuub),
-          titleId: x,
+          titleId: b,
           children: (0, r.jsx)(C, {
             guildId: n,
-            emojiData: O,
-            onSelectEmoji: y,
-            "aria-labelledby": x
+            emojiData: _,
+            onSelectEmoji: O,
+            "aria-labelledby": b
           })
         })]
       })
@@ -253,34 +253,34 @@ function I(e) {
     onSave: l,
     transitionState: s,
     onClose: o,
-    onDelete: u,
-    guildId: g
-  } = e, [p, h] = i.useState(null != (t = null == n ? true : n.name) ? t : ""), f = (0, m.Dt)(), b = (0, r.jsx)(d.hjN, {
+    onDelete: c,
+    guildId: u
+  } = e, [g, p] = i.useState(null != (t = null == n ? true : n.name) ? t : ""), h = (0, m.Dt)(), f = (0, r.jsx)(d.hjN, {
     title: v.intl.string(v.t.NPOJra),
-    titleId: f,
-    children: (0, r.jsx)(c.iS, {
+    titleId: h,
+    children: (0, r.jsx)(d.Kx8, {
       placeholder: v.intl.string(v.t.NPOJra),
-      value: p,
+      value: g,
       rows: 1,
       onChange: function(e) {
-        h(e)
+        p(e)
       },
-      "aria-labelledby": f
+      "aria-labelledby": h
     })
   });
   return (0, r.jsx)(N, {
-    guildId: g,
+    guildId: u,
     initialData: n,
-    benefitTypeInput: b,
+    benefitTypeInput: f,
     descriptionPlaceholder: v.intl.string(v.t.ucP4Tk),
-    canSubmit: "" !== p,
+    canSubmit: "" !== g,
     onSave: function(e) {
-      a()("" !== p, "Cannot submit empty name"), l(y(O({}, e), {
-        name: p
+      a()("" !== g, "Cannot submit empty name"), l(y(O({}, e), {
+        name: g
       }))
     },
     transitionState: s,
     onClose: o,
-    onDelete: u
+    onDelete: c
   })
 }

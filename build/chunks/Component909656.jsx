@@ -144,11 +144,11 @@ function k(e) {
   } = (0, y.QV)(), {
     imageCTA: W,
     imageAriaLabel: V,
-    setFilename: Y
-  } = (0, N.Z)(null == s ? true : s.cover_image_asset), K = (0, x.Dt)(), X = (0, x.Dt)(), q = (0, x.Dt)();
+    setFilename: K
+  } = (0, N.Z)(null == s ? true : s.cover_image_asset), Y = (0, x.Dt)(), X = (0, x.Dt)(), q = (0, x.Dt)();
 
   function J(e, t) {
-    o()(null != e, "Null value not allowed"), null != t && Y(t.name), k(e)
+    o()(null != e, "Null value not allowed"), null != t && K(t.name), k(e)
   }
   let Q = i.useMemo(() => {
       var e;
@@ -182,7 +182,7 @@ function k(e) {
     }), l ? null : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)(p.hjN, {
         title: P.intl.string(P.t["PAVi+/"]),
-        titleId: K,
+        titleId: Y,
         disabled: ee,
         children: [(0, r.jsx)(p.R94, {
           type: p.R94.Types.DESCRIPTION,
@@ -202,7 +202,7 @@ function k(e) {
               })
             }))), f(e)
           },
-          "aria-labelledby": K,
+          "aria-labelledby": Y,
           disabled: ee
         })]
       }), (0, r.jsx)(p.$i$, {
@@ -212,11 +212,10 @@ function k(e) {
       title: P.intl.string(P.t["1+Ho1d"]),
       titleId: X,
       disabled: ee,
-      children: (0, r.jsx)(g.iS, {
+      children: (0, r.jsx)(p.Kx8, {
         placeholder: l ? P.intl.string(P.t.SD6LRU) : P.intl.string(P.t["aVhW/f"]),
         maxLength: 1500,
         value: b,
-        rows: 2,
         autosize: true,
         onChange: O,
         "aria-labelledby": X,

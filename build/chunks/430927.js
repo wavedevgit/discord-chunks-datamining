@@ -20,7 +20,7 @@ async function d(e, n) {
     case u.WX.STAGE_INSTANCE: {
       let n = o.Z.getChannelId(),
         t = c.Z.getChannel(e.channel_id);
-      l()(null != t, "could not find channel"), n !== t.id && (await s.TM(t, true), await s.R5(t, null, false)), await (0, a.RK)(t, false, true);
+      l()(null != t, "could not find channel"), n !== t.id && (await s.TM(t, true), await s.R5(t, null)), await (0, a.RK)(t, false, true);
       break
     }
     case u.WX.VOICE: {

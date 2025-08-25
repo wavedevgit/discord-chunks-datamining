@@ -83,7 +83,7 @@ function F() {
     children: (0, Chunk951288.jsx)(Chunk481060.hjN, {
       tag: Chunk481060.RB0.H1,
       title: Chunk388032.intl.string(Chunk388032.t.OWQNYm),
-      children: (0, Chunk951288.jsx)(Y, {
+      children: (0, Chunk951288.jsx)(K, {
         guild: module
       })
     })
@@ -194,7 +194,7 @@ let W = e => {
     })
   };
 
-function Y(e) {
+function K(e) {
   let {
     guild: t
   } = e, [l, a] = (0, c.Wu)([_.Z], () => {
@@ -285,7 +285,7 @@ function Y(e) {
           }), (0, r.jsx)(H, {
             children: k.intl.string(k.t["85qMS0"])
           })]
-        }), l.map(e => (0, r.jsx)(K, {
+        }), l.map(e => (0, r.jsx)(Y, {
           sound: e,
           isPlaying: false,
           guild: t,
@@ -296,7 +296,7 @@ function Y(e) {
   })
 }
 
-function K(e) {
+function Y(e) {
   let {
     sound: t,
     isPlaying: l,

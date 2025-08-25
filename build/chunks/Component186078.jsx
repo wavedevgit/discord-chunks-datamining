@@ -1,7 +1,7 @@
 /** Chunk was on 36605 **/
 /** chunk id: 186078, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  BO: () => u,
+  BO: () => d,
   QH: () => m,
   sp: () => f
 });
@@ -14,30 +14,30 @@ var Chunk951288 = require("./951288.js"),
   Chunk707592 = require("./707592.jsx"),
   Chunk624463 = require("./624463.js");
 
-function u(e) {
+function d(e) {
   let {
     disabled: t,
     field: n,
     value: i,
     radioItemClassName: o,
     radioItemIconClassName: c,
-    onChange: u
+    onChange: d
   } = e, {
     choices: m
   } = n, f = l.useMemo(() => m.map((e, t) => ({
     name: e,
     value: t,
-    radioItemIconClassName: s()(d.multipleChoiceIcon, c),
-    radioBarClassName: d.multipleChoiceItem
+    radioItemIconClassName: s()(u.multipleChoiceIcon, c),
+    radioBarClassName: u.multipleChoiceItem
   })), [m, c]);
   return (0, r.jsx)(a.FXm, {
     radioPosition: "right",
     disabled: t,
     options: f,
     value: i,
-    onChange: u,
+    onChange: d,
     radioItemClassName: o,
-    itemTitleClassName: d.multipleChoiceTitle
+    itemTitleClassName: u.multipleChoiceTitle
   })
 }
 
@@ -61,7 +61,7 @@ function f(e) {
   } = e;
   return (0, r.jsx)(o.hK, {
     title: t.label,
-    children: (0, r.jsx)(u, {
+    children: (0, r.jsx)(d, {
       field: t,
       value: t.response,
       onChange: n

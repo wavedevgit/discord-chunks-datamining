@@ -1,8 +1,8 @@
 /** Chunk was on 36605 **/
 /** chunk id: 489813, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  CA: () => d,
-  Ih: () => u,
+  CA: () => u,
+  Ih: () => d,
   PU: () => m,
   hK: () => c
 });
@@ -30,7 +30,7 @@ function c(e) {
   })
 }
 
-function d(e) {
+function u(e) {
   let {
     title: t,
     children: n
@@ -46,7 +46,7 @@ function d(e) {
   })
 }
 
-function u(e) {
+function d(e) {
   let {
     icon: t,
     text: n,
@@ -84,12 +84,12 @@ function m(e) {
     text: n,
     footnote: l,
     meetsRequirement: c,
-    children: d,
-    className: u
+    children: u,
+    className: d
   } = e;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: i()(o.requirementContainer, u),
+      className: i()(o.requirementContainer, d),
       children: [(0, r.jsx)(t, {
         className: o.requirementIcon,
         height: 20,
@@ -105,7 +105,7 @@ function m(e) {
         color: "currentColor",
         className: o.requirementSuccess,
         secondaryColor: s.Z.colors.WHITE.css
-      }) : d]
+      }) : u]
     }), null != l && (0, r.jsx)(a.Text, {
       color: "header-secondary",
       className: o.footnote,

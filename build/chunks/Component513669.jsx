@@ -82,8 +82,8 @@ function p(e) {
     imageName: l,
     savedImageName: p,
     onChange: m,
-    uploadButtonLabel: h = s.intl.string(s.t["MsUY/f"]),
-    radioGroupAriaLabel: b = s.intl.string(s.t["0Q0UJi"]),
+    uploadButtonLabel: b = s.intl.string(s.t["MsUY/f"]),
+    radioGroupAriaLabel: h = s.intl.string(s.t["0Q0UJi"]),
     disabled: q = false
   } = e, C = l === f, [v, j] = r.useState(C ? A : null), [x, U] = r.useState(null), V = r.useRef(null), P = r.useRef(null);
   r.useEffect(() => {
@@ -144,14 +144,14 @@ function p(e) {
           variant: "text-xxs/normal",
           color: "text-muted",
           "aria-hidden": true,
-          children: h
+          children: b
         }), (0, n.jsx)(i.ZP, {
           ref: V,
           tabIndex: 0,
           onChange: (e, t) => {
             null != t && (U(t.name), j(e), m(e, f))
           },
-          "aria-label": h
+          "aria-label": b
         })]
       })
     }), null != v && (0, n.jsxs)("div", {
@@ -188,7 +188,7 @@ function p(e) {
         }))
       })]
     }), (0, n.jsxs)("div", u(c({
-      "aria-label": b,
+      "aria-label": h,
       ref: N
     }, F), {
       className: d.radioGroup,

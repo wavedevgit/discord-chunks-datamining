@@ -3,7 +3,7 @@
 require.d(exports, {
   YP: () => p,
   ZP: () => q,
-  aN: () => h
+  aN: () => b
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -71,7 +71,7 @@ function m(e) {
   })
 }
 
-function h() {
+function b() {
   return (0, Chunk951288.jsx)(Chunk481060.Mgn, {
     size: "xs",
     color: "currentColor",
@@ -79,7 +79,7 @@ function h() {
   })
 }
 
-function b(e) {
+function h(e) {
   let {
     roleName: t
   } = e;
@@ -142,7 +142,7 @@ function q(e) {
   return null === t ? (0, n.jsxs)(s.xJW, {
     title: (0, n.jsxs)("div", {
       className: g.warningTitle,
-      children: [(0, n.jsx)(h, {}), (0, n.jsx)(s.LZC, {
+      children: [(0, n.jsx)(b, {}), (0, n.jsx)(s.LZC, {
         horizontal: true,
         size: 4
       }), f.intl.string(f.t.ovXIrK)]
@@ -226,7 +226,7 @@ function q(e) {
                 return e
               }({
                 title: f.intl.string(f.t.Y3Hi3d),
-                body: (0, n.jsx)(b, {
+                body: (0, n.jsx)(h, {
                   roleName: r
                 }),
                 cta: f.intl.string(f.t.VawZV1),

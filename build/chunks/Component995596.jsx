@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk21260 = require("./21260.jsx"),
   Chunk780384 = require("./780384.js"),
@@ -26,23 +26,23 @@ let C = e => {
     tabs: t,
     selectedTab: n,
     onTabSelect: r,
-    onClose: a
+    onClose: i
   } = e;
   return (0, l.jsx)(d.v2r, {
     navId: "members-tabs-overflow-menu",
     "aria-label": g.intl.string(g.t.riPnr6),
     hideScroller: true,
-    onClose: a,
-    onSelect: a,
+    onClose: i,
+    onSelect: i,
     children: (0, l.jsx)(d.kSQ, {
       children: t.map(e => {
         let {
           id: t,
-          label: a
+          label: i
         } = e;
         return (0, l.jsx)(d.sNh, {
           id: t,
-          label: a,
+          label: i,
           icon: t === n ? d.owK : true,
           action: () => r(t)
         }, t)
@@ -55,13 +55,13 @@ function _(e) {
   let {
     onTabSelect: t,
     tabs: n,
-    selectedTab: a
+    selectedTab: i
   } = e, s = r.useRef(null), o = (0, x.ZP)(), u = (0, c.wj)(o), m = r.useMemo(() => null != n.find(e => {
     let {
       id: t
     } = e;
-    return t === a
-  }), [a, n]), j = m ? "header-primary" : u ? "text-muted" : "header-primary", h = m ? d.TVs.colors.HEADER_PRIMARY : u ? d.TVs.colors.TEXT_MUTED : d.TVs.colors.HEADER_PRIMARY;
+    return t === i
+  }), [i, n]), j = m ? "header-primary" : u ? "text-muted" : "header-primary", h = m ? d.TVs.colors.HEADER_PRIMARY : u ? d.TVs.colors.TEXT_MUTED : d.TVs.colors.HEADER_PRIMARY;
   return (0, l.jsx)(d.yRy, {
     targetElementRef: s,
     renderPopout: e => {
@@ -69,7 +69,7 @@ function _(e) {
         closePopout: r
       } = e;
       return (0, l.jsx)(C, {
-        selectedTab: a,
+        selectedTab: i,
         onClose: r,
         tabs: n,
         onTabSelect: t
@@ -80,7 +80,7 @@ function _(e) {
     children: (e, t) => {
       var n, r;
       let {
-        isShown: a
+        isShown: i
       } = t;
       return (0, l.jsxs)(d.njP.Item, (n = function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -103,7 +103,7 @@ function _(e) {
         id: "more",
         clickableInnerRef: s,
         color: "text-muted",
-        className: i()(p.more, {
+        className: a()(p.more, {
           [p.selected]: m
         }),
         "aria-label": g.intl.string(g.t.UKOtz8),
@@ -111,7 +111,7 @@ function _(e) {
           variant: "text-md/medium",
           color: j,
           children: g.intl.string(g.t.UKOtz8)
-        }), a ? (0, l.jsx)(d.u04, {
+        }), i ? (0, l.jsx)(d.u04, {
           size: "sm",
           color: h
         }) : (0, l.jsx)(d.CJ0, {
@@ -135,8 +135,8 @@ function _(e) {
 function T(e) {
   let t, {
       guildId: n,
-      currentTab: a,
-      onTabSelect: i
+      currentTab: i,
+      onTabSelect: a
     } = e,
     [c, x] = r.useState(0),
     C = r.useRef(null),
@@ -173,14 +173,14 @@ function T(e) {
     Z = (0, j.L)({
       guildId: n
     }),
-    w = r.useMemo(() => a === v.e.ALL_MEMBERS ? I : null != Z && null != Z.user, [a, I, Z]),
-    M = r.useMemo(() => N.slice(0, S + 1), [S, N]),
-    O = r.useMemo(() => N.slice(S + 1), [S, N]),
+    M = r.useMemo(() => i === v.e.ALL_MEMBERS ? I : null != Z && null != Z.user, [i, I, Z]),
+    O = r.useMemo(() => N.slice(0, S + 1), [S, N]),
+    w = r.useMemo(() => N.slice(S + 1), [S, N]),
     y = (0, m.Z)(e => {
       let t = e.contentRect.width;
       null != t && T.current !== t && (x(t), T.current = t)
     });
-  return (0, u.s)(C, y, [w]), (0, l.jsxs)(l.Fragment, {
+  return (0, u.s)(C, y, [M]), (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsx)(b.Z.Divider, {
       className: p.divider
     }), (0, l.jsxs)("div", {
@@ -199,24 +199,24 @@ function T(e) {
         }, e.id)), (0, l.jsx)("div", {
           ref: R,
           children: (0, l.jsx)(_, {
-            tabs: O,
-            onTabSelect: i,
-            selectedTab: a
+            tabs: w,
+            onTabSelect: a,
+            selectedTab: i
           })
         })]
       }), (0, l.jsxs)(d.njP, {
         "aria-label": g.intl.string(g.t.tcvVXF),
-        selectedItem: a,
+        selectedItem: i,
         type: "top-pill",
-        onItemSelect: i,
-        children: [M.map(e => (0, l.jsx)(d.njP.Item, {
+        onItemSelect: a,
+        children: [O.map(e => (0, l.jsx)(d.njP.Item, {
           id: e.id,
           "aria-label": e.label,
           children: e.label
-        }, e.id)), 0 !== O.length ? (0, l.jsx)(_, {
-          tabs: O,
-          onTabSelect: i,
-          selectedTab: a
+        }, e.id)), 0 !== w.length ? (0, l.jsx)(_, {
+          tabs: w,
+          onTabSelect: a,
+          selectedTab: i
         }) : null]
       })]
     })]

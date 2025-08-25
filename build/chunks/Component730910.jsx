@@ -109,7 +109,7 @@ function A(e) {
   let z = (0, d.dQu)(s.Z.colors.BACKGROUND_SURFACE_HIGH).hex(),
     W = (0, d.dQu)(s.Z.unsafe_rawColors.PRIMARY_160).hex(),
     V = (0, c.wj)(U) ? z : W,
-    Y = F.to({
+    K = F.to({
       range: [0, 1],
       output: [V, (0, d.dQu)(s.Z.colors.STATUS_DANGER).hex()]
     });
@@ -119,7 +119,7 @@ function A(e) {
     else if (D === y.PG.HOME_SETTINGS) return (0, r.jsx)(S.Z, {});
     else if ((D === y.PG.LANDING || D === y.PG.REVIEW) && j.Z.hasChanges()) return (0, r.jsx)(S.Z, {})
   }
-  let K = D === y.xh[y.xh.length - 1],
+  let Y = D === y.xh[y.xh.length - 1],
     X = async () => {
       let e = _.Z.advancedMode;
       if (L) try {
@@ -179,7 +179,7 @@ function A(e) {
       children: (0, r.jsx)(l.animated.div, {
         className: w.container,
         style: {
-          backgroundColor: Y
+          backgroundColor: K
         },
         children: (0, r.jsxs)("div", {
           className: w.flexContainer,
@@ -206,7 +206,7 @@ function A(e) {
                   variant: "text-sm/normal",
                   color: "status-warning",
                   children: P.intl.string(P.t.DhYsPD)
-                }) : null, K ? null : ee]
+                }) : null, Y ? null : ee]
               })]
             })
           })]

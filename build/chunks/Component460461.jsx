@@ -148,7 +148,7 @@ let S = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
         } = e;
         return null !== t && t.length >= 10 && t.length <= 128 && null !== n
       },
-      Y = [{
+      K = [{
         title: Chunk388032.intl.string(Chunk388032.t["/SWsHx"]),
         items: [{
           description: Chunk388032.intl.string(Chunk388032.t.DU8jFx),
@@ -170,7 +170,7 @@ let S = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
           })(e) || V(e)) && Z.reasonsToJoin.filter(V).length >= 2
         }]
       }],
-      K = (e, t) => {
+      Y = (e, t) => {
         let n = [...G];
         n[e] = t, U(n)
       };
@@ -309,7 +309,7 @@ let S = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                       className: Chunk539981.description,
                       type: Chunk481060.geA.DESCRIPTION,
                       children: Chunk388032.intl.string(Chunk388032.t.IBi6h4)
-                    }), (0, Chunk951288.jsx)(Chunk755721.iS, {
+                    }), (0, Chunk951288.jsx)(Chunk481060.Kx8, {
                       value: null !== Chunk852860.description ? Chunk852860.description : "",
                       placeholder: Chunk388032.intl.string(Chunk388032.t.rFa9Ul),
                       onChange: e => {
@@ -362,9 +362,9 @@ let S = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                         className: Chunk539981.description,
                         type: Chunk481060.geA.DESCRIPTION,
                         children: Chunk388032.intl.string(Chunk388032.t.ozSi8v)
-                      }), (0, Chunk951288.jsx)(Chunk755721.iS, {
+                      }), (0, Chunk951288.jsx)(Chunk481060.Kx8, {
                         showCharacterCount: true,
-                        className: Chunk539981.textArea,
+                        rows: 10,
                         value: Z.about,
                         placeholder: Chunk388032.intl.string(Chunk388032.t.TduTbm),
                         onChange: e => {
@@ -396,10 +396,10 @@ let S = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                         l = null != i ? "".concat(i.baseUrl) : true;
                       return (0, r.jsxs)("div", {
                         className: I.socialLinksContainer,
-                        onMouseOver: () => K(t, true),
-                        onFocus: () => K(t, true),
-                        onMouseOut: () => K(t, false),
-                        onBlur: () => K(t, false),
+                        onMouseOver: () => Y(t, true),
+                        onFocus: () => Y(t, true),
+                        onMouseOut: () => Y(t, false),
+                        onBlur: () => Y(t, false),
                         children: [(0, r.jsx)(s.q4e, {
                           className: Z.isPublished ? I.socialLinksDropdownMax : I.socialLinksDropdownMin,
                           options: (e => {
@@ -494,7 +494,7 @@ let S = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                   className: Chunk539981.checklist,
                   children: (0, Chunk951288.jsx)(Chunk970061.Z, {
                     title: Chunk388032.intl.string(Chunk388032.t["2kCyn5"]),
-                    children: Y,
+                    children: K,
                     buttonLabel: Chunk388032.intl.string(Chunk388032.t.tVK6S0),
                     buttonCallback: () => W(true),
                     disabled: !w || !k

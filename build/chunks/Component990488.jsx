@@ -92,7 +92,7 @@ function b(e) {
             onChange: e => c(t, e)
           }, t);
         case o.QJ.MULTIPLE_CHOICE:
-          return (0, r.jsx)(u.sp, {
+          return (0, r.jsx)(d.sp, {
             formField: e,
             onChange: e => ((e, t) => {
               let {
@@ -115,11 +115,11 @@ function j(e) {
       updateFormFields: s,
       disableVerification: o
     } = e,
-    u = (0, i.e7)([a.default], () => a.default.getCurrentUser()),
+    d = (0, i.e7)([a.default], () => a.default.getCurrentUser()),
     m = (0, c.i)({
       guildId: n
     });
-  return (t = m === p.sFg.NONE ? null : m === p.sFg.VERY_HIGH ? f.l : d.b, null == u) ? null : (0, r.jsxs)(r.Fragment, {
+  return (t = m === p.sFg.NONE ? null : m === p.sFg.VERY_HIGH ? f.l : u.b, null == d) ? null : (0, r.jsxs)(r.Fragment, {
     children: [!o && null != t && (0, r.jsx)(t, {}), (0, r.jsx)(b, {
       guildId: n,
       formFields: l,
@@ -133,7 +133,7 @@ function C(e) {
       guildId: n,
       formFields: s,
       updateFormFields: o,
-      disableVerification: u
+      disableVerification: d
     } = e,
     m = (0, i.e7)([a.default], () => a.default.getCurrentUser()),
     h = (0, c.i)({
@@ -142,10 +142,10 @@ function C(e) {
     x = (null == m ? true : m.isPhoneVerified()) || (null == m ? true : m.isStaff()),
     g = (null == m ? true : m.verified) || x,
     v = false;
-  h === p.sFg.NONE ? (v = true, t = null) : h === p.sFg.VERY_HIGH ? (v = null != x && x, t = f.v) : (v = null != g && g, t = d.B);
+  h === p.sFg.NONE ? (v = true, t = null) : h === p.sFg.VERY_HIGH ? (v = null != x && x, t = f.v) : (v = null != g && g, t = u.B);
   let j = l.useRef(v);
   return null == m ? null : (0, r.jsxs)(r.Fragment, {
-    children: [!u && !j.current && null != t && (0, r.jsx)(t, {
+    children: [!d && !j.current && null != t && (0, r.jsx)(t, {
       isUserVerified: v
     }), (0, r.jsx)(b, {
       guildId: n,

@@ -52,7 +52,6 @@ function x() {
       }), (0, Chunk951288.jsx)(Chunk481060.q4e, {
         "aria-labelledby": E,
         options: _,
-        className: Chunk605041.formInput,
         placeholder: Chunk388032.intl.string(Chunk388032.t.WZG1BQ),
         value: require,
         onChange: Chunk512722,
@@ -74,7 +73,6 @@ function x() {
       }), (0, Chunk951288.jsx)(Chunk481060.q4e, {
         "aria-labelledby": I,
         options: O,
-        className: Chunk605041.formInput,
         value: x,
         onChange: j,
         maxVisibleItems: 5,

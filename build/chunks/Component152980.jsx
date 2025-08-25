@@ -33,9 +33,9 @@ function C(e) {
   return (0, n.jsx)(o.DY3, {
     text: m,
     children: (0, n.jsxs)("div", {
-      className: a()(b.attachedFileCard, {
-        [b.attachedFileCardError]: u,
-        [b.attachedFileCardUploading]: !f
+      className: a()(h.attachedFileCard, {
+        [h.attachedFileCardError]: u,
+        [h.attachedFileCardUploading]: !f
       }),
       children: [(0, n.jsx)(o.ZKT, {
         size: "xs",
@@ -47,19 +47,19 @@ function C(e) {
         variant: "text-sm/normal",
         children: p
       }), !f && (0, n.jsx)(o.$jN, {
-        className: b.attachedFileCardSpinner,
+        className: h.attachedFileCardSpinner,
         type: o.$jN.Type.SPINNING_CIRCLE
       }), f && null != i && (0, n.jsx)(o.P3F, {
         onClick: s,
-        "aria-label": h.intl.formatToPlainString(h.t["1o5hyc"], {
+        "aria-label": b.intl.formatToPlainString(b.t["1o5hyc"], {
           attachment: p
         }),
         "aria-hidden": false,
-        className: b.deleteButton,
+        className: h.deleteButton,
         children: (0, n.jsx)(o.Dio, {
           size: "xxs",
           color: "currentColor",
-          className: b.__invalid_deleteIcon
+          className: h.__invalid_deleteIcon
         })
       })]
     })
@@ -91,18 +91,18 @@ function v(e) {
   return r.useEffect(() => {
     v.current && (t(), v.current = false)
   }, [t]), (0, n.jsxs)("div", {
-    className: b.container,
+    className: h.container,
     children: [(0, n.jsx)(i.Z, {
-      className: b.uploadArea,
-      title: h.intl.string(h.t["5eTk2t"]),
-      description: h.intl.string(h.t.Ecxoxs),
+      className: h.uploadArea,
+      title: b.intl.string(b.t["5eTk2t"]),
+      description: b.intl.string(b.t.Ecxoxs),
       icons: p.J6,
       onDrop: j
     }), (0, n.jsxs)(u.Z, {
-      className: b.addFileButtonLook,
-      innerClassName: b.addFileButton,
+      className: h.addFileButtonLook,
+      innerClassName: h.addFileButton,
       disabled: !l,
-      "aria-label": h.intl.string(h.t["23LeCA"]),
+      "aria-label": b.intl.string(b.t["23LeCA"]),
       "aria-describedby": q,
       multiple: true,
       onChange: function(e) {
@@ -111,12 +111,12 @@ function v(e) {
       children: [(0, n.jsx)(o.dZu, {
         size: "xs",
         color: "currentColor",
-        className: b.addFileButtonIcon,
+        className: h.addFileButtonIcon,
         "aria-hidden": true
       }), (0, n.jsx)(o.Text, {
         variant: "text-sm/medium",
         color: "always-white",
-        children: h.intl.string(h.t["23LeCA"])
+        children: b.intl.string(b.t["23LeCA"])
       })]
     }), (0, n.jsx)(o.LZC, {
       size: 12
@@ -124,17 +124,17 @@ function v(e) {
       id: q,
       color: "text-muted",
       variant: "text-xs/normal",
-      children: a ? h.intl.formatToPlainString(h.t.lvU6sr, {
+      children: a ? b.intl.formatToPlainString(b.t.lvU6sr, {
         fileUploadLimit: m.TR
-      }) : h.intl.formatToPlainString(h.t.DOXzIS, {
+      }) : b.intl.formatToPlainString(b.t.DOXzIS, {
         fileUploadLimit: m.TR
       })
     }), A.length > 0 && (0, n.jsxs)(n.Fragment, {
       children: [(0, n.jsx)("div", {
-        className: b.separator
+        className: h.separator
       }), (0, n.jsx)("ul", {
-        className: b.attachedFilesContainer,
-        "aria-label": h.intl.string(h.t.YZ6cTU),
+        className: h.attachedFilesContainer,
+        "aria-label": b.intl.string(b.t.YZ6cTU),
         children: A.map(e => (0, n.jsx)("li", {
           children: (0, n.jsx)(C, {
             upload: e,

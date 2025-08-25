@@ -43,21 +43,21 @@ function I(e) {
     body: o,
     problems: h,
     transitionState: I,
-    feedbackProblems: x = {},
-    otherKey: L,
-    hasCloseButton: T,
-    onSubmit: D,
+    feedbackProblems: L = {},
+    otherKey: T,
+    hasCloseButton: D,
+    onSubmit: x,
     onClose: y,
     canDismissForever: M = true,
     showHelpdeskLink: R = true
-  } = e, k = (0, c.Z)(h), [j, A] = a.useState(false), [P, B] = a.useState(null), [U, $] = a.useState(u().shuffle(h)), [F, Z] = a.useState(""), [w, H] = a.useState(false), J = (0, O.Dt)(), G = (0, f.Z)(j), z = (0, f.Z)(P), Y = (0, f.Z)(D), K = (0, f.Z)(F), X = (0, f.Z)(w), Q = null != P ? x[P] : null, V = null != Q;
+  } = e, k = (0, c.Z)(h), [j, A] = a.useState(false), [P, B] = a.useState(null), [U, $] = a.useState(u().shuffle(h)), [F, Z] = a.useState(""), [w, H] = a.useState(false), J = (0, O.Dt)(), G = (0, f.Z)(j), z = (0, f.Z)(P), K = (0, f.Z)(x), Y = (0, f.Z)(F), X = (0, f.Z)(w), Q = null != P ? L[P] : null, V = null != Q;
   return a.useEffect(() => {
-    u().isEqual(k, h) || $((0, g.Bi)(h, L))
-  }, [h, k, L]), (0, b.ZP)(() => () => {
-    Y.current({
+    u().isEqual(k, h) || $((0, g.Bi)(h, T))
+  }, [h, k, T]), (0, b.ZP)(() => () => {
+    K.current({
       problem: z.current,
       dontShowAgain: G.current,
-      feedback: K.current,
+      feedback: Y.current,
       closeClicked: X.current
     })
   }), (0, l.jsxs)(s.Y0X, {
@@ -78,7 +78,7 @@ function I(e) {
         color: "header-secondary",
         className: r()(m.ratingBody, p.headerBody),
         children: null != (t = null == Q ? true : Q.subheader) ? t : o
-      }), T ? (0, l.jsx)(s.olH, {
+      }), D ? (0, l.jsx)(s.olH, {
         className: m.modalCloseButton,
         onClick: function() {
           H(true), y()
@@ -94,16 +94,15 @@ function I(e) {
             let {
               value: t
             } = e;
-            B(t), Object.keys(x).includes(t) || y()
+            B(t), Object.keys(L).includes(t) || y()
           }
         })
       }), V ? (0, l.jsxs)(s.xJW, {
         className: m.problemInfo,
-        children: [(0, l.jsx)(d.iS, {
+        children: [(0, l.jsx)(s.Kx8, {
           value: F,
           maxLength: S.iF,
           onChange: Z,
-          className: p.textArea,
           placeholder: null != (n = Q.hint) ? n : N.intl.string(N.t.h95hcn)
         }), R ? (0, l.jsx)(C, {}) : null]
       }) : null]

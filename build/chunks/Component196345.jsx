@@ -1,7 +1,7 @@
 /** Chunk was on 36605 **/
 /** chunk id: 196345, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  EK: () => u,
+  EK: () => d,
   G0: () => m,
   QC: () => f,
   dd: () => h
@@ -16,23 +16,23 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk624463 = require("./624463.js");
 
-function u(e) {
+function d(e) {
   let {
     terms: t,
     channelId: n,
     className: l
   } = e;
   return (0, r.jsx)("div", {
-    className: i()(d.termsFieldBody, l),
+    className: i()(u.termsFieldBody, l),
     children: t.map((e, t) => (0, r.jsxs)("div", {
-      className: d.termsRow,
+      className: u.termsRow,
       children: [(0, r.jsx)(s.Text, {
         variant: "text-md/normal",
         color: "text-muted",
         children: "".concat(t + 1, ".")
       }), (0, r.jsx)(s.Text, {
         variant: "text-md/normal",
-        className: d.termsRowContent,
+        className: u.termsRowContent,
         children: a.Z.parseGuildVerificationFormRule(e, true, {
           channelId: n
         })
@@ -56,7 +56,7 @@ function m(e) {
     style: {
       borderWidth: 2
     },
-    className: d.checkbox,
+    className: u.checkbox,
     children: (0, r.jsx)(s.Text, {
       variant: "text-md/normal",
       children: c.intl.string(c.t["2EXfGB"])
@@ -82,8 +82,8 @@ let h = e => {
   } = e;
   return (0, r.jsxs)(o.hK, {
     title: c.intl.string(c.t.Q8OFNz),
-    children: [(0, r.jsx)(u, {
-      className: d.disabledFieldBackground,
+    children: [(0, r.jsx)(d, {
+      className: u.disabledFieldBackground,
       terms: n.values,
       channelId: t
     }), (0, r.jsx)(m, {

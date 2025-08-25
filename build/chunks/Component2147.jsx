@@ -323,14 +323,15 @@ class eR extends Chunk647438.PureComponent {
         children: [(0, i.jsx)(m.xJW, {
           title: ea.intl.string(ea.t.qk2jdX),
           className: ec.marginTop20,
-          children: (0, i.jsx)(g.iS, {
+          children: (0, i.jsx)(m.Kx8, {
             placeholder: ea.intl.string(ea.t.DDjD1N),
             value: I.ZP.translateSurrogatesToInlineEmoji(null != (r = e.template) ? r : ""),
             onChange: this.handleChangeTemplate,
             error: this.getError("template"),
             maxLength: er.Vb,
             disabled: !b,
-            autosize: true
+            autosize: true,
+            showCharacterCount: true
           })
         }), (0, i.jsx)(m.$i$, {
           className: s()(ec.marginTop40, ec.marginBottom40)

@@ -6,7 +6,7 @@ require.r(exports), require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk100527 = require("./100527.js"),
@@ -46,14 +46,14 @@ function G(e) {
     guild: t,
     currentTab: n,
     onTabSelect: r
-  } = e, a = (0, h.W)(t.id), i = D.intl.string(D.t.oclz3d), s = D.intl.string(D.t.oclz3d);
+  } = e, i = (0, h.W)(t.id), a = k.intl.string(k.t.oclz3d), s = k.intl.string(k.t.oclz3d);
   return (0, u.Tt)({
     location: t.name,
-    subsection: i
+    subsection: a
   }), (0, l.jsxs)(p.Z, {
     className: B.header,
     innerClassname: B.__invalid_innerHeader,
-    channelId: k.oC.MEMBER_SAFETY,
+    channelId: D.oC.MEMBER_SAFETY,
     guildId: t.id,
     hideSearch: true,
     children: [(0, l.jsx)(p.Z.Icon, {
@@ -61,7 +61,7 @@ function G(e) {
       "aria-hidden": true
     }), (0, l.jsx)(p.Z.Title, {
       children: s
-    }), a && (0, l.jsx)(w.Z, {
+    }), i && (0, l.jsx)(M.Z, {
       guildId: t.id,
       currentTab: n,
       onTabSelect: r
@@ -73,18 +73,18 @@ function q(e) {
   var t;
   let {
     guildId: n
-  } = e, a = null != (t = (0, g.A)({
+  } = e, i = null != (t = (0, g.A)({
     guildId: n
-  })) ? t : 0, [u, h] = r.useState(a > 0 ? N.e.PENDING : N.e.ALL_MEMBERS), p = (0, s.e7)([E.Z], () => E.Z.getGuild(n)), {
-    analyticsLocations: w
-  } = (0, d.ZP)(c.Z.MEMBER_SAFETY_PAGE), k = (0, f.C)({
+  })) ? t : 0, [u, h] = r.useState(i > 0 ? N.e.PENDING : N.e.ALL_MEMBERS), p = (0, s.e7)([E.Z], () => E.Z.getGuild(n)), {
+    analyticsLocations: M
+  } = (0, d.ZP)(c.Z.MEMBER_SAFETY_PAGE), D = (0, f.C)({
     guildId: n
   }), {
-    guildJoinRequests: D
+    guildJoinRequests: k
   } = (0, v.j)({
     guildId: n,
     applicationStatus: "ALL_MEMBERS" === u ? j.wB.SUBMITTED : u,
-    sortOrder: k
+    sortOrder: D
   });
   r.useEffect(() => {
     (null == p ? true : p.features.has(A.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL)) || h(N.e.ALL_MEMBERS)
@@ -97,15 +97,15 @@ function q(e) {
     fetchNextPage: z
   } = (0, b.m)({
     guildId: n,
-    guildJoinRequests: D
+    guildJoinRequests: k
   }), V = r.useCallback(async () => {
     var e;
     if (u === N.e.ALL_MEMBERS) return;
     let t = null == (e = U.current) ? true : e.getScrollerState();
-    null != t && t.scrollHeight - t.scrollTop - t.offsetHeight < 200 && await z(k, u)
-  }, [u, u, k, z]), J = r.useCallback(async e => {
-    u !== e && (h(e), x.Z.setSelectedGuildJoinRequest(n, null), "ALL_MEMBERS" !== e && await z(k, e))
-  }, [u, n, z, k]);
+    null != t && t.scrollHeight - t.scrollTop - t.offsetHeight < 200 && await z(D, u)
+  }, [u, u, D, z]), J = r.useCallback(async e => {
+    u !== e && (h(e), x.Z.setSelectedGuildJoinRequest(n, null), "ALL_MEMBERS" !== e && await z(D, e))
+  }, [u, n, z, D]);
   r.useEffect(() => {
     if (!q && null != p) {
       var e;
@@ -115,9 +115,9 @@ function q(e) {
   }, [p, q]);
   let K = (0, s.e7)([_.ZP], () => null != _.ZP.getGuildSidebarState(n), [n]);
   return null != p && q ? (0, l.jsxs)(d.Gt, {
-    value: w,
+    value: M,
     children: [(0, l.jsxs)("div", {
-      className: i()(L.chat, B.page, {
+      className: a()(L.chat, B.page, {
         [L.threadSidebarOpen]: K
       }),
       children: [(0, l.jsx)(G, {
@@ -129,7 +129,7 @@ function q(e) {
         ref: U,
         orientation: "vertical",
         children: (0, l.jsx)("div", {
-          className: i()(L.content, B.container),
+          className: a()(L.content, B.container),
           children: u === N.e.ALL_MEMBERS ? (0, l.jsxs)(l.Fragment, {
             children: [(0, l.jsx)(Z.Z, {
               guild: p
@@ -141,10 +141,10 @@ function q(e) {
             currentTab: u
           })
         })
-      }), (0, l.jsx)(O.Z, {
+      }), (0, l.jsx)(w.Z, {
         guildId: p.id
       })]
-    }), F && (u === N.e.ALL_MEMBERS ? (0, l.jsx)(M.Z, {
+    }), F && (u === N.e.ALL_MEMBERS ? (0, l.jsx)(O.Z, {
       guildId: p.id
     }) : (0, l.jsx)(R.Z, {
       guildId: p.id
