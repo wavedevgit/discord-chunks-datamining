@@ -22,19 +22,19 @@ function b(e) {
   let {
     channelId: t,
     onClick: n
-  } = e, b = (0, o.bp)(), _ = (0, m.qY)(t), y = (0, l.e7)([d.Z], () => d.Z.getChannel(t), [t]), {
+  } = e, b = (0, o.bp)(), y = (0, m.qY)(t), _ = (0, l.e7)([d.Z], () => d.Z.getChannel(t), [t]), {
     canManageGuildEvent: C
-  } = (0, s.XJ)(y), x = C(_), v = i.useRef(null);
-  if (null == _) return null;
+  } = (0, s.XJ)(_), v = C(y), x = i.useRef(null);
+  if (null == y) return null;
   let O = () => {
-      if (null != y && (0, f.Z)(y)) return void(0, p.lC)(y, b);
+      if (null != _ && (0, f.Z)(_)) return void(0, p.lC)(_, b);
       n()
     },
     j = () => {
-      h.Z.endEvent(_.id, _.guild_id)
+      h.Z.endEvent(y.id, y.guild_id)
     };
-  return x ? (0, r.jsx)(a.yRy, {
-    targetElementRef: v,
+  return v ? (0, r.jsx)(a.yRy, {
+    targetElementRef: x,
     renderPopout: e => {
       let {
         closePopout: t
@@ -63,7 +63,7 @@ function b(e) {
         onClick: t
       } = e;
       return (0, r.jsx)(u.Z, {
-        buttonRef: v,
+        buttonRef: x,
         label: g.intl.string(g.t["6vrfgo"]),
         onClick: O,
         onPopoutClick: t

@@ -1,7 +1,7 @@
 /** Chunk was on 5665 **/
 /** chunk id: 641861, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => x
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -24,20 +24,20 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk115858 = require("./115858.js");
 
-function v(e) {
+function x(e) {
   let {
     recipientUser: t,
     voiceChannel: n
-  } = e, i = (0, _.ZP)(n), s = (0, h.s)(t, "RingToVoiceBanner", n.id), {
+  } = e, i = (0, y.ZP)(n), s = (0, h.s)(t, "RingToVoiceBanner", n.id), {
     userIsInCall: u,
     isUserRinging: m
   } = (0, o.cj)([p.Z], () => {
     let e = null;
     return s && null != n.id && (e = p.Z.getParticipant(n.id, t.id)), {
       userIsInCall: null != e,
-      isUserRinging: null != e && e.type === y.fO.USER && e.ringing
+      isUserRinging: null != e && e.type === _.fO.USER && e.ringing
     }
-  }), v = (0, o.e7)([b.Z], () => b.Z.getGuild(n.guild_id)), j = null != v ? (0, g.EB)(v, 32, true) : null, E = !s || u && !m;
+  }), x = (0, o.e7)([b.Z], () => b.Z.getGuild(n.guild_id)), j = null != x ? (0, g.EB)(x, 32, true) : null, E = !s || u && !m;
   return ((0, d.Z)({
     type: a.ImpressionTypes.PAGE,
     name: a.ImpressionNames.RING_TO_GUILD_VC_BANNER_SHOWN,
@@ -48,27 +48,27 @@ function v(e) {
   }, {
     disableTrack: E
   }, [t.id]), E) ? null : (0, r.jsxs)("div", {
-    className: l()(x.themed, x.chatHeaderBar),
+    className: l()(v.themed, v.chatHeaderBar),
     children: [(0, r.jsxs)("div", {
-      className: x.chatHeaderBarInfo,
+      className: v.chatHeaderBarInfo,
       children: [(0, r.jsx)(f.ZP, {
-        className: x.mask,
+        className: v.mask,
         mask: f.QS.SQUIRCLE,
         width: 24,
         height: 24,
         children: null == j ? (0, r.jsx)("div", {
-          className: l()(x.guildIcon, x.guildIconWithoutImage),
+          className: l()(v.guildIcon, v.guildIconWithoutImage),
           children: (0, r.jsx)("div", {
-            className: x.guildAcronym,
-            children: null != v ? (0, g.gM)(v) : null
+            className: v.guildAcronym,
+            children: null != x ? (0, g.gM)(x) : null
           })
         }) : (0, r.jsx)("img", {
-          alt: null == v ? true : v.name,
+          alt: null == x ? true : x.name,
           src: j,
-          className: x.guildIcon
+          className: v.guildIcon
         })
       }), (0, r.jsx)(c.Text, {
-        className: x.chatHeaderBarText,
+        className: v.chatHeaderBarText,
         variant: "text-md/medium",
         color: "header-secondary",
         children: C.intl.format(C.t.f2tNxM, {

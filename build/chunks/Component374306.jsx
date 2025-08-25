@@ -22,13 +22,13 @@ function m(e) {
     channel: t
   } = e, n = (0, u.r_)(t), m = (0, i.e7)([a.Z], () => a.Z.hasHidden(t.id)), g = (0, d.c)(t.id), {
     sortOrder: b,
-    tagFilter: _,
-    tagSetting: y
-  } = (0, c.H)(t.id), C = (0, i.e7)([s.Z, p.Z], () => !!(s.Z.getThreadIds(t.id, b, _, y).length > 0) || !!(p.Z.getThreads(t.id, b, _, y).length > 0), [t.id, b, _, y]), x = t.isMediaChannel();
-  if (!n || g || x && C) return null;
-  let v = m ? x ? f.intl.string(f.t["WP/IEx"]) : f.intl.string(f.t.zfq9V1) : x ? f.intl.string(f.t.p60yFx) : f.intl.string(f.t.SNOqYG);
+    tagFilter: y,
+    tagSetting: _
+  } = (0, c.H)(t.id), C = (0, i.e7)([s.Z, p.Z], () => !!(s.Z.getThreadIds(t.id, b, y, _).length > 0) || !!(p.Z.getThreads(t.id, b, y, _).length > 0), [t.id, b, y, _]), v = t.isMediaChannel();
+  if (!n || g || v && C) return null;
+  let x = m ? v ? f.intl.string(f.t["WP/IEx"]) : f.intl.string(f.t.zfq9V1) : v ? f.intl.string(f.t.p60yFx) : f.intl.string(f.t.SNOqYG);
   return (0, r.jsx)(h.JO, {
-    tooltip: v,
+    tooltip: x,
     icon: l.d3s,
     onClick: () => o.Z.hideAdminOnboarding(t.id, !m),
     selected: !m

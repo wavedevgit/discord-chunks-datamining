@@ -51,22 +51,22 @@ function g(e, t) {
 function b(e) {
   let {
     channel: t
-  } = e, n = i.useRef(null), [b, _] = (0, l.Wu)([s.ZP], () => [s.ZP.isChannelMuted(t.getGuildId(), t.id), s.ZP.resolvedMessageNotifications(t)], [t]), [y, C] = i.useState(false);
+  } = e, n = i.useRef(null), [b, y] = (0, l.Wu)([s.ZP], () => [s.ZP.isChannelMuted(t.getGuildId(), t.id), s.ZP.resolvedMessageNotifications(t)], [t]), [_, C] = i.useState(false);
   i.useEffect(() => {
     let e = () => C(true);
     return c.S.subscribe(h.CkL.OPEN_THREAD_NOTIFICATION_SETTINGS, e), () => {
       c.S.unsubscribe(h.CkL.OPEN_THREAD_NOTIFICATION_SETTINGS, e)
     }
   }, []);
-  let x = e => {
+  let v = e => {
       e.shiftKey ? o.Z.updateChannelOverrideSettings(t.guild_id, t.id, {
         muted: !b
       }, u.UE.muted(!b)) : C(e => !e)
     },
-    v = f.intl.string(f.t.h850Sk);
+    x = f.intl.string(f.t.h850Sk);
   return (0, r.jsx)(a.yRy, {
     targetElementRef: n,
-    shouldShow: y,
+    shouldShow: _,
     animation: a.yRy.Animation.NONE,
     position: "bottom",
     align: "right",
@@ -84,10 +84,10 @@ function b(e) {
       } = t;
       return (0, r.jsx)(d.ZP.Icon, g(m({}, e), {
         ref: n,
-        onClick: x,
-        tooltip: i ? null : v,
-        icon: b || _ !== h.bL.ALL_MESSAGES ? a.owu : a.Dkj,
-        "aria-label": v,
+        onClick: v,
+        tooltip: i ? null : x,
+        icon: b || y !== h.bL.ALL_MESSAGES ? a.owu : a.Dkj,
+        "aria-label": x,
         selected: i
       }))
     }

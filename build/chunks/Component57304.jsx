@@ -1,7 +1,7 @@
 /** Chunk was on 5665 **/
 /** chunk id: 57304, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => _
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -37,7 +37,7 @@ function b(e) {
   return e
 }
 
-function _(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -49,24 +49,24 @@ function _(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let y = function(e) {
+let _ = function(e) {
   let {
     channel: t
   } = e, n = (0, l.e7)([u.Z, p.default], () => {
     let e = p.default.getCurrentUser();
     return null == e || (0, c.aC)(t) && (!e.nsfwAllowed || !u.Z.didAgree(t.getGuildId()))
-  }, [t]), [y, C] = i.useState(false), x = (0, l.e7)([d.ZP], () => d.ZP.hasUnreadPins(t.id), [t]), v = (0, s.Aq)(), O = i.useRef(null), j = i.useCallback(() => {
+  }, [t]), [_, C] = i.useState(false), v = (0, l.e7)([d.ZP], () => d.ZP.hasUnreadPins(t.id), [t]), x = (0, s.Aq)(), O = i.useRef(null), j = i.useCallback(() => {
     n || C(e => !e)
   }, [n]);
 
   function E(e) {
-    (null == e ? true : e.shiftKey) || v.dispatch(m.CkL.POPOUT_CLOSE)
+    (null == e ? true : e.shiftKey) || x.dispatch(m.CkL.POPOUT_CLOSE)
   }
   return i.useEffect(() => (h.S.subscribe(m.CkL.TOGGLE_CHANNEL_PINS, j), () => {
     h.S.unsubscribe(m.CkL.TOGGLE_CHANNEL_PINS, j)
   }), [j]), (0, r.jsx)(a.yRy, {
     targetElementRef: O,
-    shouldShow: y,
+    shouldShow: _,
     animation: a.yRy.Animation.NONE,
     position: "bottom",
     align: "right",
@@ -74,7 +74,7 @@ let y = function(e) {
     ignoreModalClicks: true,
     onRequestClose: () => C(false),
     renderPopout: function(e) {
-      return (0, r.jsx)(o.Z, _(b({}, e), {
+      return (0, r.jsx)(o.Z, y(b({}, e), {
         onJump: E,
         channel: t
       }))
@@ -84,7 +84,7 @@ let y = function(e) {
       let {
         isShown: i
       } = t;
-      return (0, r.jsx)(f.JO, _(b({}, e), {
+      return (0, r.jsx)(f.JO, y(b({}, e), {
         ref: O,
         onClick: j,
         tooltip: i ? null : g.intl.string(g.t["mp1N//"]),
@@ -92,7 +92,7 @@ let y = function(e) {
         iconSize: 20,
         "aria-label": g.intl.string(g.t["mp1N//"]),
         disabled: n,
-        showBadge: x,
+        showBadge: v,
         selected: i
       }))
     }

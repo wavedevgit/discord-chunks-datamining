@@ -1,7 +1,7 @@
 /** Chunk was on 5665 **/
 /** chunk id: 99843, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  j: () => y
+  j: () => _
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -48,7 +48,7 @@ function b(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let _ = e => {
+let y = e => {
     let {
       channel: t
     } = e;
@@ -63,7 +63,7 @@ let _ = e => {
       }))
     }) : null
   },
-  y = Chunk647438.memo(function(e) {
+  _ = Chunk647438.memo(function(e) {
     let {
       channel: t
     } = e, i = t.id, d = (0, s.ZP)(t);
@@ -74,8 +74,8 @@ let _ = e => {
         children: e => {
           var {
             onMouseEnter: s,
-            onClick: _
-          } = e, y = function(e, t) {
+            onClick: y
+          } = e, _ = function(e, t) {
             if (null == e) return {};
             var n, r, i = function(e, t) {
               if (null == e) return {};
@@ -90,10 +90,10 @@ let _ = e => {
             }
             return i
           }(e, ["onMouseEnter", "onClick"]);
-          return (0, r.jsxs)(l.P3F, b(g({}, y), {
+          return (0, r.jsxs)(l.P3F, b(g({}, _), {
             className: m.hoverableContainer,
             onClick: () => {
-              null == _ || _(), (0, u.B)(i, o.Z.HEADER_BAR)
+              null == y || y(), (0, u.B)(i, o.Z.HEADER_BAR)
             },
             onContextMenu: e => (0, a.jW)(e, () => Promise.all([n.e("79695"), n.e("70205"), n.e("57789"), n.e("71696")]).then(n.bind(n, 354741)).then(e => {
               let {
@@ -133,7 +133,7 @@ let _ = e => {
             })]
           }))
         }
-      }), (0, r.jsx)(_, {
+      }), (0, r.jsx)(y, {
         channel: t
       })]
     })

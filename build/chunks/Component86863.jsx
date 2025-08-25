@@ -24,7 +24,7 @@ let f = e => {
   } = e, b = (0, i.e7)([c.ZP], () => c.ZP.getSelfEmbeddedActivities());
   if (!f.bot || null == m) return null;
 
-  function _() {
+  function y() {
     o.Z.delete(g.id);
     let e = b.get(m.id);
     null != e && u.Z.leaveActivity({
@@ -69,7 +69,7 @@ let f = e => {
         channel_id: n.id,
         channel_type: n.type
       })
-    })(m, _, n),
+    })(m, y, n),
     children: h.intl.string(h.t["5S3sQE"])
   })
 }

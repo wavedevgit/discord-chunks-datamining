@@ -101,10 +101,10 @@ function P(e) {
     channel: t,
     closePopout: n,
     onSelect: i
-  } = e, l = (0, c.Z)(t), C = (0, f.Z)(t), E = (0, b.Z)(t.id), S = (0, g.Z)(t), I = (0, y.Z)({
+  } = e, l = (0, c.Z)(t), C = (0, f.Z)(t), E = (0, b.Z)(t.id), S = (0, g.Z)(t), I = (0, _.Z)({
     id: t.id,
     label: j.intl.string(j.t.DQ797u)
-  }), P = (0, u.Z)(t), Z = (0, d.Z)(t), T = (0, p.Z)(t, "Toolbar Overflow"), N = (0, m.Z)(t), A = (0, h.Z)(t), w = (0, _.Z)(t), R = x.vF.useSetting(), M = (0, o.e7)([v.Z], () => !a().isEmpty(v.Z.getVoiceStatesForChannel(t.id)));
+  }), P = (0, u.Z)(t), Z = (0, d.Z)(t), T = (0, p.Z)(t, "Toolbar Overflow"), N = (0, m.Z)(t), A = (0, h.Z)(t), w = (0, y.Z)(t), R = v.vF.useSetting(), M = (0, o.e7)([x.Z], () => !a().isEmpty(x.Z.getVoiceStatesForChannel(t.id)));
   return (0, r.jsxs)(s.v2r, {
     navId: "thread-context",
     onClose: n,

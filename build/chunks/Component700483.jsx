@@ -120,9 +120,9 @@ function eo(e) {
     onSelect: n
   } = e, d = (0, s.bp)(), {
     canManageGuildEvent: p
-  } = (0, v.XJ)(t), h = (0, l.e7)([z.Z], () => z.Z.getStageInstanceByChannel(t.id), [t.id]), f = (0, l.e7)([y.ZP], () => y.ZP.getGuildScheduledEvent(null == h ? true : h.guild_scheduled_event_id)), {
+  } = (0, x.XJ)(t), h = (0, l.e7)([z.Z], () => z.Z.getStageInstanceByChannel(t.id), [t.id]), f = (0, l.e7)([_.ZP], () => _.ZP.getGuildScheduledEvent(null == h ? true : h.guild_scheduled_event_id)), {
     suppress: b
-  } = (0, S.Z)(t), _ = M.default.getId(), [C] = (0, $.Z)(t), x = V.ZP.isModerator(_, t.id), O = (0, G.B)(t.id), j = p(f), {
+  } = (0, S.Z)(t), y = M.default.getId(), [C] = (0, $.Z)(t), v = V.ZP.isModerator(y, t.id), O = (0, H.B)(t.id), j = p(f), {
     parentAnalyticsLocation: E
   } = (0, u.ZP)(), I = i.useRef(null), P = () => (function(e) {
     let {
@@ -135,7 +135,7 @@ function eo(e) {
     channel: t,
     appContext: d
   });
-  return (x || j) && null != h ? (0, r.jsx)(a.yRy, {
+  return (v || j) && null != h ? (0, r.jsx)(a.yRy, {
     targetElementRef: I,
     renderPopout: e => {
       let {
@@ -238,13 +238,13 @@ let eu = Chunk647438.memo(function(e) {
     suppress: o,
     selfMute: s,
     mute: c
-  } = (0, S.Z)(t), m = (0, G.B)(t.id), y = (0, l.e7)([b.Z], () => null != b.Z.getAwaitingRemoteSessionInfo()), {
+  } = (0, S.Z)(t), m = (0, H.B)(t.id), _ = (0, l.e7)([b.Z], () => null != b.Z.getAwaitingRemoteSessionInfo()), {
     cameraUnavailable: C,
-    enabled: x
-  } = (0, O.Z)(), v = (0, E.Z)(t), {
+    enabled: v
+  } = (0, O.Z)(), x = (0, E.Z)(t), {
     limit: N,
     reachedLimit: A
-  } = (0, j.Z)(t), M = (0, l.e7)([U.default], () => U.default.getCurrentUser()), L = (0, l.e7)([D.Z], () => (0, _.Z)(D.Z)), B = (0, l.e7)([k.Z], () => k.Z.getVoiceChannelId() === t.id, [t.id]), F = (0, l.e7)([d.Z], () => d.Z.getStreamParticipants(t.id)[0], [t.id]), H = (0, W.PK)(t.id), V = N > 0, z = A && !H || null != F && F.user.id !== (null == M ? true : M.id), q = (0, g.u)("AudioDeviceMenu", n, {
+  } = (0, j.Z)(t), M = (0, l.e7)([U.default], () => U.default.getCurrentUser()), L = (0, l.e7)([D.Z], () => (0, y.Z)(D.Z)), B = (0, l.e7)([k.Z], () => k.Z.getVoiceChannelId() === t.id, [t.id]), F = (0, l.e7)([d.Z], () => d.Z.getStreamParticipants(t.id)[0], [t.id]), G = (0, W.PK)(t.id), V = N > 0, z = A && !G || null != F && F.user.id !== (null == M ? true : M.id), q = (0, g.u)("AudioDeviceMenu", n, {
     entrypoint: et.A5.CARET
   }), Y = i.useRef(null), K = i.useRef(null);
   if (null == M) return null;
@@ -277,8 +277,8 @@ let eu = Chunk647438.memo(function(e) {
       return (0, r.jsx)(R.C, {
         ref: Y,
         centerButton: true,
-        hasPermission: v,
-        enabled: x,
+        hasPermission: x,
+        enabled: v,
         cameraUnavailable: C,
         onChange: I.r,
         onCameraUnavailable: Z.Z,
@@ -332,7 +332,7 @@ let eu = Chunk647438.memo(function(e) {
             suppress: o,
             popoutOpen: i,
             onClick: () => (0, f.Z)(c, o, "Stage Channel Controls"),
-            awaitingRemote: y
+            awaitingRemote: _
           })
         }
       }), V && X]
@@ -343,7 +343,7 @@ let eu = Chunk647438.memo(function(e) {
         currentUser: M,
         exitFullScreen: () => null,
         canGoLive: L,
-        hasPermission: v,
+        hasPermission: x,
         disabled: z
       }) : null, (0, r.jsx)(ec, {
         channelId: t.id
@@ -382,7 +382,7 @@ let ep = Chunk647438.memo(function(e) {
   let {
     channel: t,
     isOnStartStageScreen: n
-  } = e, i = (0, Q.Z)(t.id), a = (0, G.B)(t.id), o = (0, l.e7)([L.Z], () => L.Z.can(H.yP, t), [t]), s = (0, J.Z)(t.id), c = (0, l.e7)([d.Z], () => null != t ? d.Z.getSelectedParticipant(t.id) : null), u = !s && null == c;
+  } = e, i = (0, Q.Z)(t.id), a = (0, H.B)(t.id), o = (0, l.e7)([L.Z], () => L.Z.can(G.yP, t), [t]), s = (0, J.Z)(t.id), c = (0, l.e7)([d.Z], () => null != t ? d.Z.getSelectedParticipant(t.id) : null), u = !s && null == c;
   return n ? (0, r.jsx)(ed, {
     channel: t
   }) : i || a ? (0, r.jsxs)("div", {
@@ -393,7 +393,7 @@ let ep = Chunk647438.memo(function(e) {
         channelId: null == t ? true : t.id
       }) : null, (0, r.jsx)("div", {
         className: er.separator
-      }), u && o ? (0, r.jsx)(x.Z, {
+      }), u && o ? (0, r.jsx)(v.Z, {
         highlight: true,
         channel: t
       }) : null, (0, r.jsx)("div", {

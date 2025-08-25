@@ -72,7 +72,7 @@ function M(e) {
     guildId: n
   } = e, i = (0, c.Wu)([S.Z, I.Z], () => {
     let e = Date.now();
-    return s()(S.Z.getSpeakers()).map(e => I.Z.getParticipant(t, e)).filter(e => null != e && e.type === T.fO.USER && e.speaking && !(0, y.ZP)(e)).sortBy(t => -S.Z.getSpeakingDuration(t.user.id, e)).slice(0, 3).value()
+    return s()(S.Z.getSpeakers()).map(e => I.Z.getParticipant(t, e)).filter(e => null != e && e.type === T.fO.USER && e.speaking && !(0, _.ZP)(e)).sortBy(t => -S.Z.getSpeakingDuration(t.user.id, e)).slice(0, 3).value()
   });
   return 0 === i.length ? null : (0, r.jsx)(r.Fragment, {
     children: i.map((e, t) => (0, r.jsx)(u.ua7, {
@@ -101,7 +101,7 @@ function D(e) {
   } = e, l = i.useRef(null), {
     analyticsLocations: o
   } = (0, h.ZP)(p.Z.VOICE_CHANNEL_HEADER), s = t.id, {
-    voiceParticipantsHidden: y,
+    voiceParticipantsHidden: _,
     selectedParticipant: E,
     userParticipantCount: S,
     participantsListOpen: N
@@ -120,7 +120,7 @@ function D(e) {
   } = b.Z.useExperiment({
     location: "ChannelCallHeaderToolbar"
   }), F = [];
-  return y && F.push((0, r.jsx)(M, {
+  return _ && F.push((0, r.jsx)(M, {
     channelId: s,
     guildId: t.guild_id
   }, "current-speaker")), F.push((0, r.jsx)(m.Z, {
@@ -135,13 +135,13 @@ function D(e) {
     participant: E,
     showQuality: true,
     premiumIndicator: false
-  }, "live-indicator"))), (null == E ? true : E.type) === T.fO.USER && F.push((0, r.jsx)(x.Z, {
+  }, "live-indicator"))), (null == E ? true : E.type) === T.fO.USER && F.push((0, r.jsx)(v.Z, {
     className: A.button,
     userId: E.id
-  }, "video-warning")), y && !L && F.push((0, r.jsx)(u.yRy, {
+  }, "video-warning")), _ && !L && F.push((0, r.jsx)(u.yRy, {
     targetElementRef: l,
     position: "bottom",
-    renderPopout: () => (0, r.jsx)(v.Z, {
+    renderPopout: () => (0, r.jsx)(x.Z, {
       children: (0, r.jsx)(P.Z, {
         channel: t
       })
@@ -158,7 +158,7 @@ function D(e) {
         className: A.button
       }))
     }
-  }, "call-members-popout")), U && !B && F.push((0, r.jsx)(_.Z, {
+  }, "call-members-popout")), U && !B && F.push((0, r.jsx)(y.Z, {
     className: A.button
   }, "for-later")), k && F.push((0, r.jsx)(j.Z, {
     className: a()(A.button, {

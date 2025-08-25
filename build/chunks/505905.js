@@ -1,6 +1,6 @@
-/** Chunk was on 1631 **/
+/** Chunk was on 5665 **/
 /** chunk id: 505905, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  s: () => l
+  s: () => r
 });
-let l = 60
+let r = 60

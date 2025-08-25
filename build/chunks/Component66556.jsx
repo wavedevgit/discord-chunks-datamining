@@ -22,9 +22,9 @@ function m(e) {
   } = e, [n, m] = i.useState(false), g = i.useRef(null), b = (0, l.e7)([c.Z, u.default], () => {
     let e = u.default.getCurrentUser();
     return null == e || (0, o.aC)(t) && (!e.nsfwAllowed || !c.Z.didAgree(t.getGuildId()))
-  }, [t]), _ = i.useCallback(() => {
+  }, [t]), y = i.useCallback(() => {
     m(false)
-  }, []), y = i.useCallback(() => {
+  }, []), _ = i.useCallback(() => {
     n || (0, d.U4)("Popout"), m(!n)
   }, [n]);
   return (0, r.jsx)(a.yRy, {
@@ -34,13 +34,13 @@ function m(e) {
     align: "right",
     autoInvert: false,
     shouldShow: n,
-    onRequestClose: _,
+    onRequestClose: y,
     renderPopout: function() {
       return (0, r.jsx)(a.VqE, {
         children: (0, r.jsx)(p.Z, {
           className: f.browser,
           channel: t,
-          onClose: _
+          onClose: y
         })
       })
     },
@@ -70,7 +70,7 @@ function m(e) {
       }({}, e), i = i = {
         ref: g,
         className: f.icon,
-        onClick: y,
+        onClick: _,
         icon: a.or_,
         "aria-label": h.intl.string(h.t.B2panJ),
         tooltip: l ? null : h.intl.string(h.t.B2panJ),

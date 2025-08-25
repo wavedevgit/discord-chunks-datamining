@@ -33,18 +33,18 @@ let j = Chunk647438.memo(function(e) {
     } = e;
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
-        className: a()(x.blockedNoticeContainer, {
-          [x.compact]: i
+        className: a()(v.blockedNoticeContainer, {
+          [v.compact]: i
         }),
         children: [(0, r.jsx)("div", {
-          className: x.blockedNoticeIcon,
+          className: v.blockedNoticeIcon,
           children: (0, r.jsx)(u.b7C, {
             size: "xs",
             color: "currentColor",
-            className: x.shieldIcon
+            className: v.shieldIcon
           })
         }), (0, r.jsx)("div", {
-          className: x.blockedNotice,
+          className: v.blockedNotice,
           children: (0, r.jsx)(u.Text, {
             variant: "text-sm/normal",
             color: "interactive-normal",
@@ -52,8 +52,8 @@ let j = Chunk647438.memo(function(e) {
           })
         })]
       }), (0, r.jsx)("div", {
-        className: a()(x.ephemeralAccessories, {
-          [x.compact]: i
+        className: a()(v.ephemeralAccessories, {
+          [v.compact]: i
         }),
         children: (0, r.jsx)(m.Z, {
           message: t,
@@ -62,9 +62,9 @@ let j = Chunk647438.memo(function(e) {
             variant: "text-xs/normal",
             color: "interactive-normal",
             tag: "span",
-            className: x.learnMore,
+            className: v.learnMore,
             children: C.intl.format(C.t.Nd3Gh4, {
-              helpUrl: f.Z.getArticleURL(y.BhN.GUILD_AUTOMOD_BLOCKED_MESSAGE)
+              helpUrl: f.Z.getArticleURL(_.BhN.GUILD_AUTOMOD_BLOCKED_MESSAGE)
             })
           })
         })
@@ -79,27 +79,27 @@ let j = Chunk647438.memo(function(e) {
       message: u,
       children: f,
       content: m,
-      onUpdate: y
+      onUpdate: _
     } = e, E = null == (t = u.editedTimestamp) ? true : t.toString(), S = i.useRef(false), I = (0, c.e7)([h.Z], () => h.Z.getMessage(u.id), [u.id]), P = i.useCallback(() => {
       (null == I ? true : I.isBlockedEdit) ? (0, p.I)(u.id) : d.Z.deleteMessage(u.channel_id, u.id, true)
     }, [u, I]);
     return i.useLayoutEffect(() => {
-      S.current ? null != y && y() : S.current = true
-    }, [y, u.content, m, E, f]), (0, r.jsxs)("div", {
+      S.current ? null != _ && _() : S.current = true
+    }, [_, u.content, m, E, f]), (0, r.jsxs)("div", {
       id: (0, g.ut)(u),
       className: a()(l, O.markup, {
-        [v.messageContent]: true,
-        [v.markupRtl]: "rtl" === s()(u.content),
-        [x.blockedEdit]: null == I ? true : I.isBlockedEdit,
-        [x.blockedSend]: !(null == I ? true : I.isBlockedEdit)
+        [x.messageContent]: true,
+        [x.markupRtl]: "rtl" === s()(u.content),
+        [v.blockedEdit]: null == I ? true : I.isBlockedEdit,
+        [v.blockedSend]: !(null == I ? true : I.isBlockedEdit)
       }),
       children: [null != f ? f : (0, b.L5)(u, m), (null == I ? true : I.isBlockedEdit) && null != u.timestamp && (0, r.jsxs)(r.Fragment, {
-        children: [" ", (0, r.jsx)(_.Z, {
+        children: [" ", (0, r.jsx)(y.Z, {
           timestamp: u.timestamp,
           isEdited: true,
           isInline: false,
           children: (0, r.jsxs)("span", {
-            className: v.edited,
+            className: x.edited,
             children: ["(", C.intl.string(C.t.Z7eEx8), ")"]
           })
         })]

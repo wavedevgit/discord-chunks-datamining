@@ -81,7 +81,7 @@ let P = Chunk647438.memo(function(e) {
         className: E.text,
         variant: "text-sm/normal",
         color: "header-primary",
-        children: v.ZP.getName(t, n, i)
+        children: x.ZP.getName(t, n, i)
       }), l ? (0, r.jsx)(p.$Eu, {
         className: E.boost,
         color: d.Z.unsafe_rawColors.GUILD_BOOSTING_PINK
@@ -138,13 +138,13 @@ let P = Chunk647438.memo(function(e) {
     } = e, {
       user: o,
       blocked: d
-    } = t, v = l.getGuildId(), O = C.default.getId(), {
+    } = t, x = l.getGuildId(), O = C.default.getId(), {
       newestAnalyticsLocation: P
-    } = (0, g.ZP)(m.Z.AUDIENCE_TILE), T = (0, f.bp)(), N = (0, u.e7)([x.ZP], () => {
+    } = (0, g.ZP)(m.Z.AUDIENCE_TILE), T = (0, f.bp)(), N = (0, u.e7)([v.ZP], () => {
       var e;
-      return null != v && (null == (e = x.ZP.getMember(v, o.id)) ? true : e.premiumSince) != null
-    }, [v, o.id]), A = i.useRef(null);
-    s()(null != v, "Channel cannot be guildless");
+      return null != x && (null == (e = v.ZP.getMember(x, o.id)) ? true : e.premiumSince) != null
+    }, [x, o.id]), A = i.useRef(null);
+    s()(null != x, "Channel cannot be guildless");
     let w = i.useCallback(e => {
       (0, b.h)({
         type: c.ImpressionTypes.MENU,
@@ -160,12 +160,12 @@ let P = Chunk647438.memo(function(e) {
         } = await Promise.all([n.e("79695"), n.e("98783"), n.e("8982"), n.e("7717"), n.e("52021")]).then(n.bind(n, 757387));
         return t => (0, r.jsx)(e, I(S({}, t), {
           user: o,
-          guildId: v,
+          guildId: x,
           channel: l,
           showMediaItems: true,
           showStageChannelItems: true,
           showChatItems: false,
-          onInteraction: (0, _.u)("GuildChannelUserContextMenu", P, {
+          onInteraction: (0, y.u)("GuildChannelUserContextMenu", P, {
             targetUserId: o.id,
             tileType: j.TH.USER
           })
@@ -173,8 +173,8 @@ let P = Chunk647438.memo(function(e) {
       }, {
         context: T
       })
-    }, [o, O, T, v, l, P]);
-    return (0, r.jsx)(y.Z, {
+    }, [o, O, T, x, l, P]);
+    return (0, r.jsx)(_.Z, {
       targetElementRef: A,
       user: o,
       guildId: l.guild_id,
@@ -190,7 +190,7 @@ let P = Chunk647438.memo(function(e) {
       }, e), {
         children: (0, r.jsx)(Z, {
           participant: t,
-          guildId: v,
+          guildId: x,
           channel: l,
           isPremium: N
         })

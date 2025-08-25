@@ -1,7 +1,7 @@
 /** Chunk was on 5665 **/
 /** chunk id: 83896, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  I: () => v
+  I: () => x
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -23,77 +23,44 @@ var Chunk951288 = require("./951288.js"),
   Chunk10359 = require("./10359.js"),
   Chunk254477 = require("./254477.js");
 
-function v(e) {
+function x(e) {
   let {
     hangStatusActivity: t,
-    channel: l,
-    setPopoutRef: v
-  } = e, O = i.useRef(null), j = (0, o.e7)([p.Z], () => p.Z.getVoiceChannelId() === l.id), E = (0, o.e7)([u.Z], () => u.Z.can(_.Plq.CONNECT, l)), S = (null == t ? true : t.emoji) == null || (0, g.K)(t.emoji, l), I = (0, o.e7)([d.Z], () => d.Z.getMediaSessionId());
+    channel: n,
+    setPopoutRef: l
+  } = e, x = i.useRef(null), O = (0, o.e7)([p.Z], () => p.Z.getVoiceChannelId() === n.id), j = (0, o.e7)([u.Z], () => u.Z.can(y.Plq.CONNECT, n)), E = (null == t ? true : t.emoji) == null || (0, g.K)(t.emoji, n), S = (0, o.e7)([d.Z], () => d.Z.getMediaSessionId());
   i.useEffect(() => {
-    null == v || v(null == O ? true : O.current)
-  }, [O, v]), i.useEffect(() => {
-    h.default.track(_.rMx.VIEW_HANG_STATUS, {
+    null == l || l(null == x ? true : x.current)
+  }, [x, l]), i.useEffect(() => {
+    h.default.track(y.rMx.VIEW_HANG_STATUS, {
       source: "HangStatusPopout",
-      guild_id: l.guild_id,
-      channel_id: l.id
+      guild_id: n.guild_id,
+      channel_id: n.id
     })
-  }, [l.guild_id, l.id]);
-  let P = i.useCallback(() => {
-      !j && E && (c.default.selectVoiceChannel(l.id), h.default.track(_.rMx.HANG_STATUS_CTA_CLICKED, {
+  }, [n.guild_id, n.id]);
+  let I = i.useCallback(() => {
+      !O && j && (c.default.selectVoiceChannel(n.id), h.default.track(y.rMx.HANG_STATUS_CTA_CLICKED, {
         source: "HangStatusPopout",
-        guild_id: l.guild_id,
-        channel_id: l.id
+        guild_id: n.guild_id,
+        channel_id: n.id
       }))
-    }, [j, E, l.guild_id, l.id]),
-    Z = i.useCallback(() => {
-      if (!j || !S) return;
+    }, [O, j, n.guild_id, n.id]),
+    P = i.useCallback(() => {
+      if (!O || !E) return;
       let e = t.state;
-      e === _.tNA.CUSTOM ? (0, s.ZDy)(async () => {
-        let {
-          default: e
-        } = await n.e("1631").then(n.bind(n, 333541));
-        return n => {
-          var i, l;
-          return (0, r.jsx)(e, (i = function(e) {
-            for (var t = 1; t < arguments.length; t++) {
-              var n = null != arguments[t] ? arguments[t] : {},
-                r = Object.keys(n);
-              "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                return Object.getOwnPropertyDescriptor(n, e).enumerable
-              }))), r.forEach(function(t) {
-                var r;
-                r = n[t], t in e ? Object.defineProperty(e, t, {
-                  value: r,
-                  enumerable: true,
-                  configurable: true,
-                  writable: true
-                }) : e[t] = r
-              })
-            }
-            return e
-          }({}, n), l = l = {
-            startingText: t.details,
-            startingEmoji: t.emoji
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
-            var n = Object.keys(e);
-            if (Object.getOwnPropertySymbols) {
-              var r = Object.getOwnPropertySymbols(e);
-              n.push.apply(n, r)
-            }
-            return n
-          })(Object(l)).forEach(function(e) {
-            Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
-          }), i))
-        }
-      }) : (0, f.Zx)(e, true), h.default.track(_.rMx.SWIPE_HANG_STATUS, {
-        guild_id: l.guild_id,
-        channel_id: l.id,
-        media_session_id: I
+      if (e === y.tNA.CUSTOM) {
+        if (null == t.details || null == t.emoji) return;
+        (0, f._s)(t.details, t.emoji, true)
+      } else(0, f.Zx)(e, true);
+      h.default.track(y.rMx.SWIPE_HANG_STATUS, {
+        guild_id: n.guild_id,
+        channel_id: n.id,
+        media_session_id: S
       })
-    }, [j, S, t, I, l.guild_id, l.id]);
+    }, [O, E, t, S, n.guild_id, n.id]);
   return (0, r.jsxs)("div", {
-    ref: O,
-    className: a()(x.popover, C.container),
+    ref: x,
+    className: a()(v.popover, C.container),
     children: [(0, r.jsx)(b.Z, {
       className: C.icon,
       hangStatusActivity: t
@@ -101,16 +68,16 @@ function v(e) {
       variant: "text-md/medium",
       className: C.statusText,
       children: (0, m.O8)(t)
-    }), j ? S && (0, r.jsx)(s.zxk, {
+    }), O ? E && (0, r.jsx)(s.zxk, {
       size: "sm",
       variant: "secondary",
-      text: y.intl.string(y.t["0eHzpq"]),
-      onClick: Z
-    }) : E && (0, r.jsx)(s.zxk, {
-      size: "sm",
-      variant: "secondary",
-      text: y.intl.string(y.t["B/dHXF"]),
+      text: _.intl.string(_.t["0eHzpq"]),
       onClick: P
+    }) : j && (0, r.jsx)(s.zxk, {
+      size: "sm",
+      variant: "secondary",
+      text: _.intl.string(_.t["B/dHXF"]),
+      onClick: I
     })]
   })
 }

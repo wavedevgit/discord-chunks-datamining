@@ -21,12 +21,12 @@ function d(e) {
       summaries: g,
       selectedSummary: b
     } = e,
-    _ = [],
-    y = false,
+    y = [],
+    _ = false,
     C = null != f ? a.default.extractTimestamp(f) : null,
-    x = null;
+    v = null;
   return h.forEach(e => {
-    var i, v, O;
+    var i, x, O;
     let j, E;
     if (null != g && g.length > 0) {
       let t = a.default.extractTimestamp(e.id);
@@ -35,26 +35,26 @@ function d(e) {
         let n = a.default.extractTimestamp(g[e].startId),
           r = a.default.extractTimestamp(g[e].endId);
         if (t >= n && t <= r) {
-          if (x === g[e].id) break;
-          _.push({
+          if (v === g[e].id) break;
+          y.push({
             type: u.ys_.DIVIDER,
             content: g[e].topic,
             contentKey: g[e].id
-          }), x = g[e].id;
+          }), v = g[e].id;
           break
         }
       }
     }
     let S = (0, l.vc)(e.timestamp, "LL");
-    S !== t && null == x && (_.push({
+    S !== t && null == v && (y.push({
       type: u.ys_.DIVIDER,
       content: S,
       contentKey: S
     }), t = S);
-    let I = _[_.length - 1],
+    let I = y[y.length - 1],
       P = null,
       Z = (0, s.DQ)(e);
-    y = y || Z;
+    _ = _ || Z;
     let T = function(e, t, n) {
       if (r.V.NON_COLLAPSIBLE.has(t.type));
       else if (t.blocked) return u.ys_.MESSAGE_GROUP_BLOCKED;
@@ -62,22 +62,22 @@ function d(e) {
       else if ((0, s.P1)(e) && n) return u.ys_.MESSAGE_GROUP_SPAMMER;
       return null
     }(p, e, Z && m);
-    (null !== T && ([P, I] = (E = v = I, null == v || v.type !== T ? (j = {
+    (null !== T && ([P, I] = (E = x = I, null == x || x.type !== T ? (j = {
       type: T,
       content: [],
       key: e.id
-    }, _.push(j)) : E = (j = v).content[j.content.length - 1], [j, E])), f === e.id && null != C) ? (null != I && I.type === u.ys_.DIVIDER ? I.unreadId = e.id : null !== P ? (O = P, e.isFirstMessageInForumPost(p) || O.content.push({
+    }, y.push(j)) : E = (j = x).content[j.content.length - 1], [j, E])), f === e.id && null != C) ? (null != I && I.type === u.ys_.DIVIDER ? I.unreadId = e.id : null !== P ? (O = P, e.isFirstMessageInForumPost(p) || O.content.push({
       type: u.ys_.DIVIDER,
       unreadId: e.id
-    }), O.hasUnread = true) : e.isFirstMessageInForumPost(p) || _.push({
+    }), O.hasUnread = true) : e.isFirstMessageInForumPost(p) || y.push({
       type: u.ys_.DIVIDER,
       unreadId: e.id
-    }), C = null) : null != C && a.default.extractTimestamp(e.id) > C && (e.isFirstMessageInForumPost(p) || _.push({
+    }), C = null) : null != C && a.default.extractTimestamp(e.id) > C && (e.isFirstMessageInForumPost(p) || y.push({
       type: u.ys_.DIVIDER,
       unreadId: e.id
     }), C = null);
     let N = (0, c.f)(e, p);
-    null != N && _.push({
+    null != N && y.push({
       type: u.ys_.MESSAGE,
       content: N,
       groupId: N.id
@@ -95,19 +95,19 @@ function d(e) {
       jumpFlash: M,
       jumpTargetId: D
     } = h;
-    M && e.id === D && null != R && (w.flashKey = R), h.jumpTargetId === e.id && (w.jumpTarget = true), null != b && e.id === b.startId && b.count > 1 && _.push({
+    M && e.id === D && null != R && (w.flashKey = R), h.jumpTargetId === e.id && (w.jumpTarget = true), null != b && e.id === b.startId && b.count > 1 && y.push({
       type: u.ys_.DIVIDER,
       content: b.topic,
       contentKey: b.startId,
       isSummaryDivider: true
-    }), null !== P ? (P.content.push(w), w.jumpTarget && (P.hasJumpTarget = true)) : _.push(w), e.isFirstMessageInForumPost(p) && _.push({
+    }), null !== P ? (P.content.push(w), w.jumpTarget && (P.hasJumpTarget = true)) : y.push(w), e.isFirstMessageInForumPost(p) && y.push({
       type: u.ys_.FORUM_POST_ACTION_BAR
-    }), null != b && e.id === b.endId && b.count > 1 && _.push({
+    }), null != b && e.id === b.endId && b.count > 1 && y.push({
       type: u.ys_.DIVIDER,
       contentKey: b.endId,
       isSummaryDivider: true
     })
-  }), y && (0, s.P1)(p) && i.Z.trackExposure({
+  }), _ && (0, s.P1)(p) && i.Z.trackExposure({
     location: "416cc9_1"
-  }), _
+  }), y
 }

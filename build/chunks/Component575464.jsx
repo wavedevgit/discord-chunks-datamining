@@ -24,11 +24,11 @@ function m(e) {
     row: m,
     hideDiscriminator: g,
     comparator: b,
-    selected: _,
-    checked: y,
+    selected: y,
+    checked: _,
     disabled: C = false,
-    inlineUsername: x = true,
-    onClick: v,
+    inlineUsername: v = true,
+    onClick: x,
     onMouseEnter: O,
     "aria-setsize": j,
     "aria-posinset": E
@@ -56,22 +56,22 @@ function m(e) {
       [f.disabled]: C
     }),
     onClick: () => {
-      null != v && v(i.id)
+      null != x && x(i.id)
     },
     onMouseEnter: () => {
       null != O && O(m)
     }
   }, I), n = n = {
     role: "option",
-    "aria-selected": y,
+    "aria-selected": _,
     "aria-disabled": C,
     "aria-setsize": j,
     "aria-posinset": E,
     children: (0, r.jsxs)(d.Z, {
       align: d.Z.Align.CENTER,
       className: l()(f.friend, {
-        [f.friendSelected]: _,
-        [f.twoRows]: !x
+        [f.friendSelected]: y,
+        [f.twoRows]: !v
       }),
       children: [(0, r.jsx)(u.Z, {
         user: i,
@@ -80,7 +80,7 @@ function m(e) {
       }), (0, r.jsxs)(d.Z, {
         className: f.match,
         align: d.Z.Align.BASELINE,
-        direction: x ? d.Z.Direction.HORIZONTAL : d.Z.Direction.VERTICAL,
+        direction: v ? d.Z.Direction.HORIZONTAL : d.Z.Direction.VERTICAL,
         children: [(0, r.jsx)(s.Text, {
           tag: "strong",
           className: f.nickname,
@@ -102,7 +102,7 @@ function m(e) {
       }), (0, r.jsx)(s.XZJ, {
         displayOnly: true,
         size: 22,
-        value: y,
+        value: _,
         disabled: C,
         className: f.checkbox
       })]

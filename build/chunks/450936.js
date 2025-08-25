@@ -21,15 +21,15 @@ let g = [Chunk911969.yU.PRIMARY_ENTRY_POINT, Chunk911969.yU.CHAT, Chunk911969.yU
 function b(e) {
   var t, n, b;
   let {
-    context: _
-  } = e, y = _.channel, C = r.useMemo(() => {
-    if (true !== y.isDM()) return null;
-    let e = f.default.getUser(y.getRecipientId());
+    context: y
+  } = e, _ = y.channel, C = r.useMemo(() => {
+    if (true !== _.isDM()) return null;
+    let e = f.default.getUser(_.getRecipientId());
     return true === e || true !== e.bot ? null : e
-  }, [y]), x = (0, i.e7)([d.Z], () => {
+  }, [_]), v = (0, i.e7)([d.Z], () => {
     var e;
     return d.Z.isFetchingProfile(null != (e = null == C ? true : C.id) ? e : m.lds)
-  }), v = (0, o.Z)(x), O = (0, i.e7)([c.Z], () => c.Z.getAppIdForBotUserId(null == C ? true : C.id)), j = (0, i.e7)([d.Z], () => {
+  }), x = (0, o.Z)(v), O = (0, i.e7)([c.Z], () => c.Z.getAppIdForBotUserId(null == C ? true : C.id)), j = (0, i.e7)([d.Z], () => {
     var e;
     return null !== C ? null == (e = d.Z.getUserProfile(null == C ? true : C.id)) ? true : e.application : true
   }), E = null != O ? O : null == j ? true : j.id;
@@ -47,7 +47,7 @@ function b(e) {
     })
   }, [null == C ? true : C.id]);
   let S = (0, s.v1)({
-      channel: y,
+      channel: _,
       type: "channel"
     }, {
       commandTypes: g
@@ -72,10 +72,10 @@ function b(e) {
     isInitialLoading: R,
     isAppDM: null != (b = null == C ? true : C.bot) && b,
     primaryEntryPointCommand: I,
-    isProfileFetching: x,
-    wasProfileFetching: null != v ? v : null,
+    isProfileFetching: v,
+    wasProfileFetching: null != x ? x : null,
     applicationId: E,
-    channelId: y.id,
+    channelId: _.id,
     commands: P
   }
 }

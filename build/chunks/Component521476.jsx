@@ -1,7 +1,7 @@
 /** Chunk was on 5665 **/
 /** chunk id: 521476, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  h: () => x
+  h: () => v
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -21,7 +21,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk216390 = require("./216390.js");
 
-function y(e) {
+function _(e) {
   var t;
   let {
     guild: n
@@ -33,14 +33,14 @@ function y(e) {
       bannerIcon: (0, r.jsx)(l.ics, {
         size: "lg",
         color: "currentColor",
-        className: _.bannerIcon
+        className: y.bannerIcon
       }),
       bannerHeader: b.intl.format(b.t.GgMwjo, {
         guildName: null != (t = null == n ? true : n.name) ? t : ""
       }),
       bannerSubtext: b.intl.string(b.t.ONjwDw),
-      textStyles: _.bannerContainer,
-      headerStyles: _.bannerHeader,
+      textStyles: y.bannerContainer,
+      headerStyles: y.bannerHeader,
       children: (0, r.jsx)(l.zxk, {
         variant: "primary",
         size: "sm",
@@ -67,14 +67,14 @@ function C(e) {
       bannerIcon: (0, r.jsx)(l.ics, {
         size: "lg",
         color: "currentColor",
-        className: _.bannerIcon
+        className: y.bannerIcon
       }),
       bannerHeader: b.intl.format(b.t.kcYdTk, {
         guildName: null != (n = null == i ? true : i.name) ? n : ""
       }),
       bannerSubtext: p,
-      textStyles: _.bannerContainer,
-      headerStyles: _.bannerHeader,
+      textStyles: y.bannerContainer,
+      headerStyles: y.bannerHeader,
       children: (0, r.jsx)(l.zxk, {
         variant: "primary",
         size: "sm",
@@ -87,7 +87,7 @@ function C(e) {
   })
 }
 
-function x(e) {
+function v(e) {
   let {
     guild: t
   } = e, n = (0, i.e7)([u.default, d.ZP], () => {
@@ -97,7 +97,7 @@ function x(e) {
   }, [t]);
   return n.has(m.q.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) || n.has(m.q.AUTOMOD_QUARANTINED_BIO) ? (0, r.jsx)(C, {
     guild: t
-  }) : n.has(m.q.AUTOMOD_QUARANTINED_SERVER_TAG) ? (0, r.jsx)(y, {
+  }) : n.has(m.q.AUTOMOD_QUARANTINED_SERVER_TAG) ? (0, r.jsx)(_, {
     guild: t
   }) : (0, r.jsx)(C, {
     guild: t

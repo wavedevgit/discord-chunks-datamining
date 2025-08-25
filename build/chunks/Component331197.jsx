@@ -43,14 +43,14 @@ function j(e) {
   } = (0, o.j)(), A = t.getGuildId(), {
     mute: w,
     suppress: R
-  } = (0, _.Z)(t), M = (0, l.e7)([y.Z], () => y.Z.isDeaf()), D = w || R || M, L = (0, m.sR)({
+  } = (0, y.Z)(t), M = (0, l.e7)([_.Z], () => _.Z.isDeaf()), D = w || R || M, L = (0, m.sR)({
     isSoundboardButtonDisabled: D
   }), [k, U] = (0, h.cv)(L), {
     analyticsLocations: B
   } = (0, u.ZP)(), {
     isHovered: F,
-    setIsHovered: G,
-    onMouseEnter: H,
+    setIsHovered: H,
+    onMouseEnter: G,
     onMouseLeave: V
   } = (0, f.Z)(200, 300);
 
@@ -98,19 +98,19 @@ function j(e) {
   }
 
   function W() {
-    (0, d.v)(I, d.d.SOUNDBOARD), E === v.D.SOUNDBOARD ? (null == S || S(true), V()) : (null != E ? (Z(), H()) : Z(), null == S || S(v.D.SOUNDBOARD))
+    (0, d.v)(I, d.d.SOUNDBOARD), E === x.D.SOUNDBOARD ? (null == S || S(true), V()) : (null != E ? (Z(), G()) : Z(), null == S || S(x.D.SOUNDBOARD))
   }
   let q = i.useRef(null);
   return (0, r.jsx)(s.y, {
     targetElementRef: q,
-    shouldShow: F && (E === v.D.SOUNDBOARD || null == E) || E === v.D.SOUNDBOARD,
+    shouldShow: F && (E === x.D.SOUNDBOARD || null == E) || E === x.D.SOUNDBOARD,
     animation: s.y.Animation.FADE,
     animationPosition: "top",
     position: "top",
     align: "center",
     spacing: 16,
     onRequestClose: () => {
-      G(false), null == S || S(true)
+      H(false), null == S || S(true)
     },
     renderPopout: e => {
       let {
@@ -118,7 +118,7 @@ function j(e) {
       } = e;
       return D ? null : (0, r.jsx)(C.Z, {
         children: (0, r.jsx)("div", {
-          onMouseEnter: H,
+          onMouseEnter: G,
           onMouseLeave: V,
           children: (0, r.jsx)(b.Z, {
             guildId: A,
@@ -133,7 +133,7 @@ function j(e) {
         })
       })
     },
-    children: () => (0, r.jsx)(x.d, {
+    children: () => (0, r.jsx)(v.d, {
       ref: q,
       isTrayButton: true,
       themeable: j,
@@ -143,13 +143,13 @@ function j(e) {
       onContextMenu: z,
       onClick: W,
       onMouseEnter: () => {
-        H(), T()
+        G(), T()
       },
       onMouseLeave: () => {
         null == E && (V(), N())
       },
-      isActive: F || E === v.D.SOUNDBOARD,
-      color: F || E === v.D.SOUNDBOARD ? "primaryDark" : true
+      isActive: F || E === x.D.SOUNDBOARD,
+      color: F || E === x.D.SOUNDBOARD ? "primaryDark" : true
     })
   })
 }

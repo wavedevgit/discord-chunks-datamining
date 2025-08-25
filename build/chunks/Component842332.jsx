@@ -39,7 +39,7 @@ function p(e) {
     enableAIFeatures: b
   } = o.C.useExperiment({
     location: "CreateThreadSidebar"
-  }), _ = i.useCallback(async () => {
+  }), y = i.useCallback(async () => {
     if (b) {
       f(true);
       try {
@@ -65,9 +65,9 @@ function p(e) {
       name: ""
     })
   }, [n, l, t.id, c.parentChannelId, c.parentMessageId]), i.useEffect(() => {
-    (null == c.name || "" === c.name.trim()) && !m && b && null != n && (g(true), _())
-  }, [t.id, n, l, c.name, m, b, _]);
-  let y = i.useCallback(function() {
+    (null == c.name || "" === c.name.trim()) && !m && b && null != n && (g(true), y())
+  }, [t.id, n, l, c.name, m, b, y]);
+  let _ = i.useCallback(function() {
     let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
     return b ? (0, r.jsx)(a.ua7, {
       text: u.intl.string(u.t.ZF2oBg),
@@ -95,7 +95,7 @@ function p(e) {
           variant: "secondary",
           size: "sm",
           "aria-label": u.intl.string(u.t.ZF2oBg),
-          onClick: _,
+          onClick: y,
           disabled: e || h || null == n && p.textValue.trim().length < 10,
           loading: h,
           type: "button"
@@ -111,11 +111,11 @@ function p(e) {
         }), i))
       }
     }) : null
-  }, [b, h, n, p.textValue, _]);
+  }, [b, h, n, p.textValue, y]);
   return {
     isGeneratingAI: h,
-    generateAIName: _,
+    generateAIName: y,
     enableAIFeatures: b,
-    renderAiGenerateButton: y
+    renderAiGenerateButton: _
   }
 }

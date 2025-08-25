@@ -25,42 +25,42 @@ function h(e) {
     activities: m,
     newClipsCount: g,
     canPostPolls: b,
-    canLaunchActivities: _,
-    appContext: y,
+    canLaunchActivities: y,
+    appContext: _,
     canSendScheduledMessages: C
-  } = e, x = [];
-  return t && (x.push({
+  } = e, v = [];
+  return t && (v.push({
     type: "UPLOAD_A_FILE",
     icon: i.xD0,
     display: d.intl.string(d.t["d3+iYm"])
-  }), x.push({
+  }), v.push({
     type: "UPLOAD_TEXT_AS_FILE",
     icon: i.xD0,
     display: d.intl.string(d.t["G9s+EB"])
-  })), h && t && y !== u.IlC.POPOUT && x.push({
+  })), h && t && _ !== u.IlC.POPOUT && v.push({
     type: "CLIPS",
     icon: i.AlX,
     display: d.intl.string(d.t.o034cn),
     badgeVal: g,
     badgeColor: o.Z.BG_BRAND
-  }), n && x.push({
+  }), n && v.push({
     type: "CREATE_THREAD",
     icon: i.YPH,
     display: d.intl.string(d.t.rBIGBA)
-  }), b && x.push({
+  }), b && v.push({
     type: "POLL",
     icon: i.QDj,
     display: d.intl.string(d.t.Flr51t)
-  }), r && p && x.push({
+  }), r && p && v.push({
     type: "SLASH_COMMAND",
     icon: i.jje,
     display: d.intl.string(d.t.Bbvp6O)
-  }), _ && x.push({
+  }), y && v.push({
     type: "ACTIVITY",
     icon: i.nG3,
     display: d.intl.string(d.t["16Lfra"])
   }), m.forEach(e => {
-    !(0, l.Z)(e, u.xjy.EMBEDDED) && (e.type === u.IIU.PLAYING && (0, l.Z)(e, u.xjy.JOIN) && x.push({
+    !(0, l.Z)(e, u.xjy.EMBEDDED) && (e.type === u.IIU.PLAYING && (0, l.Z)(e, u.xjy.JOIN) && v.push({
       type: "INVITE_TO_GAME",
       icon: i.xoD,
       display: d.intl.formatToPlainString(d.t["KHLo+P"], {
@@ -68,7 +68,7 @@ function h(e) {
         game: null != e ? e.name : ""
       }),
       activity: e
-    }), e.type === u.IIU.LISTENING && (0, l.Z)(e, u.xjy.SYNC) && x.push({
+    }), e.type === u.IIU.LISTENING && (0, l.Z)(e, u.xjy.SYNC) && v.push({
       type: "INVITE_TO_LISTEN",
       icon: i.iOO,
       display: d.intl.formatToPlainString(d.t.I479p6, {
@@ -76,7 +76,7 @@ function h(e) {
         name: null != e ? e.name : ""
       }),
       activity: e
-    }), e.type === u.IIU.WATCHING && (0, l.Z)(e, u.xjy.SYNC) && x.push({
+    }), e.type === u.IIU.WATCHING && (0, l.Z)(e, u.xjy.SYNC) && v.push({
       type: "INVITE_TO_WATCH",
       icon: i.tEF,
       display: d.intl.formatToPlainString(d.t["EvCP/v"], {
@@ -85,9 +85,9 @@ function h(e) {
       }),
       activity: e
     }))
-  }), C && x.push({
+  }), C && v.push({
     type: "SCHEDULED_MESSAGE",
     icon: i.T39,
     display: d.intl.string(d.t["3+ii4O"])
-  }), x
+  }), v
 }

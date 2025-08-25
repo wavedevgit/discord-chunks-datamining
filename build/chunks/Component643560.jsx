@@ -53,30 +53,30 @@ function f(e) {
     hideEditButton: g = false
   } = e, {
     isEntryAdmin: b,
-    canEdit: _,
-    canRemove: y
+    canEdit: y,
+    canRemove: _
   } = (0, u.Z)(t), C = (0, o.Z)({
     id: t.guildId,
     label: d.intl.string(d.t["94lLDw"]),
     onSuccess: m
   });
   i.useEffect(() => {
-    _ || y || null != C || (0, a.Zy)()
+    y || _ || null != C || (0, a.Zy)()
   });
-  let x = () => {
+  let v = () => {
     c.kx(t.channelId, t.guildId)
   };
 
-  function v() {
+  function x() {
     (0, a.Zy)(), null == m || m()
   }
   return (0, r.jsxs)(l.v2r, {
     navId: "guild-entry-context",
-    onClose: v,
+    onClose: x,
     "aria-label": d.intl.string(d.t.HpQykZ),
     onSelect: f,
     children: [(0, r.jsxs)(l.kSQ, {
-      children: [_ && !g ? (0, r.jsx)(l.sNh, {
+      children: [y && !g ? (0, r.jsx)(l.sNh, {
         id: "update-entry",
         label: d.intl.string(d.t.XnuOvL),
         action: function() {
@@ -87,9 +87,9 @@ function f(e) {
             return n => (0, r.jsx)(e, h(p({}, n), {
               entry: t
             }))
-          }), v()
+          }), x()
         }
-      }) : null, y ? (0, r.jsx)(l.sNh, {
+      }) : null, _ ? (0, r.jsx)(l.sNh, {
         id: "remove-from-hub",
         label: d.intl.string(d.t.KUxYWF),
         action: function() {
@@ -97,7 +97,7 @@ function f(e) {
             header: d.intl.string(d.t.KUxYWF),
             confirmText: d.intl.string(d.t.N86XcH),
             cancelText: d.intl.string(d.t["ETE/oK"]),
-            onConfirm: x
+            onConfirm: v
           }, e), {
             children: (0, r.jsx)(l.Text, {
               variant: "text-md/normal",
@@ -105,14 +105,14 @@ function f(e) {
                 guildName: t.name
               })
             })
-          }))), v()
+          }))), x()
         },
         color: "danger"
       }) : null, b ? null : (0, r.jsx)(l.sNh, {
         id: "report-server-listing",
         label: d.intl.string(d.t.Aen9en),
         action: function() {
-          null != t && ((0, s.sq)(t), v())
+          null != t && ((0, s.sq)(t), x())
         },
         icon: l.U65,
         color: "danger"

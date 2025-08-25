@@ -1,7 +1,7 @@
 /** Chunk was on 5665 **/
 /** chunk id: 910611, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  TS: () => G,
+  TS: () => H,
   ud: () => k,
   v0: () => B
 }), require("./388685.js");
@@ -140,8 +140,8 @@ function k(e) {
     handleParentContextMenu: m,
     renderFollowButton: g
   } = e, b = (0, h.KS)(t, o), {
-    prefix: _,
-    level: y
+    prefix: y,
+    level: _
   } = function(e, t) {
     var n, r;
     switch (e) {
@@ -177,21 +177,21 @@ function k(e) {
           prefix: null, level: 1
         }
     }
-  }(t.type, o), x = (0, r.jsxs)(r.Fragment, {
-    children: [null != _ ? (0, r.jsxs)(c.nn4, {
-      children: [_, ":"]
+  }(t.type, o), v = (0, r.jsxs)(r.Fragment, {
+    children: [null != y ? (0, r.jsxs)(c.nn4, {
+      children: [y, ":"]
     }) : null, " ", n]
   });
   switch (t.type) {
     case N.d4z.DM:
       return (0, r.jsx)(T.Z, {
-        level: y,
+        level: _,
         channel: t,
         handleClick: u,
         handleContextMenu: d
       });
     case N.d4z.GROUP_DM:
-      if (t.isManaged()) return x;
+      if (t.isManaged()) return v;
       return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(c.nn4, {
           children: w.intl.string(w.t["e5y+go"])
@@ -206,35 +206,35 @@ function k(e) {
       return null != t.linkedLobby ? (0, r.jsxs)(L, {
         channel: t,
         children: [F(b, t.type === N.d4z.GUILD_ANNOUNCEMENT ? w.intl.string(w.t.l1dkSE) : w.intl.string(w.t.Pnajj4)), (0, r.jsx)(Z.Z.Title, {
-          level: y,
+          level: _,
           onContextMenu: d,
           onClick: u,
-          children: x
+          children: v
         })]
       }) : (0, r.jsxs)(i.Fragment, {
         children: [F(b, t.type === N.d4z.GUILD_ANNOUNCEMENT ? w.intl.string(w.t.l1dkSE) : w.intl.string(w.t.Pnajj4)), (0, r.jsx)(Z.Z.Title, {
-          level: y,
+          level: _,
           onContextMenu: d,
           onClick: u,
-          children: x
+          children: v
         }), null != g ? g() : null]
       });
     case N.d4z.GUILD_VOICE:
       return (0, r.jsxs)(i.Fragment, {
         children: [F(b, w.intl.string(w.t.BVZqJi)), (0, r.jsx)(Z.Z.Title, {
-          level: y,
+          level: _,
           onContextMenu: d,
           onClick: u,
-          children: x
+          children: v
         })]
       });
     case N.d4z.GUILD_STAGE_VOICE:
       return (0, r.jsxs)(i.Fragment, {
         children: [F(b, w.intl.string(w.t.EErMzM)), (0, r.jsx)(Z.Z.Title, {
-          level: y,
+          level: _,
           onContextMenu: d,
           onClick: u,
-          children: x
+          children: v
         })]
       });
     case N.d4z.ANNOUNCEMENT_THREAD:
@@ -245,18 +245,18 @@ function k(e) {
         let e = (0, h.KS)(l, o);
         O = (0, r.jsxs)(i.Fragment, {
           children: [F(e, w.intl.string(w.t.Pnajj4)), (0, r.jsx)(Z.Z.Title, {
-            level: y,
+            level: _,
             onContextMenu: m,
             onClick: f,
             className: a()(R.parentChannelName, R.cursorPointer),
-            children: (0, p.F6)(l, v.default, C.Z)
+            children: (0, p.F6)(l, x.default, C.Z)
           }), (0, r.jsx)(Z.Z.Caret, {})]
         })
       }
       let j = (null == l ? true : l.type) != null && N.TPd.GUILD_THREADS_ONLY.has(l.type);
       return (0, r.jsxs)(i.Fragment, {
         children: [O, F(j ? null : b, w.intl.string(w.t["7Xm5QE"])), (0, r.jsx)(Z.Z.Title, {
-          level: y,
+          level: _,
           onContextMenu: d,
           onClick: u,
           className: a()({
@@ -264,7 +264,7 @@ function k(e) {
             [R.forumPostTitle]: j,
             [R.forumPostSidebarTitle]: s && j
           }),
-          children: x
+          children: v
         })]
       });
     case N.d4z.GUILD_DIRECTORY:
@@ -276,11 +276,11 @@ function k(e) {
           icon: b,
           "aria-hidden": true
         }) : null, (0, r.jsxs)(Z.Z.Title, {
-          level: y,
+          level: _,
           onContextMenu: d,
           onClick: u,
-          children: [null != _ ? (0, r.jsxs)(c.nn4, {
-            children: [_, ":"]
+          children: [null != y ? (0, r.jsxs)(c.nn4, {
+            children: [y, ":"]
           }) : null, " ", E]
         })]
       });
@@ -292,9 +292,9 @@ let U = e => {
   var t, n, l;
   let {
     channel: a
-  } = e, s = (0, o.e7)([v.default], () => v.default.getCurrentUser()), c = (0, o.e7)([v.default], () => v.default.getUser(a.getRecipientId())), u = (0, E.G)(), p = (0, o.e7)([_.Z], () => null != c ? _.Z.getUserProfile(c.id) : null), h = null != p && (null != (t = null == p ? true : p.fetchEndedAt) ? t : 0) > 0;
+  } = e, s = (0, o.e7)([x.default], () => x.default.getCurrentUser()), c = (0, o.e7)([x.default], () => x.default.getUser(a.getRecipientId())), u = (0, E.G)(), p = (0, o.e7)([y.Z], () => null != c ? y.Z.getUserProfile(c.id) : null), h = null != p && (null != (t = null == p ? true : p.fetchEndedAt) ? t : 0) > 0;
   return (i.useEffect(() => {
-    (null == s ? true : s.isStaff()) && null != c && !c.isStaff() && (0, y.Z)(c.id, c.getAvatarURL(true, 80), {
+    (null == s ? true : s.isStaff()) && null != c && !c.isStaff() && (0, _.Z)(c.id, c.getAvatarURL(true, 80), {
       dispatchWait: true,
       withMutualGuilds: true,
       withMutualFriendsCount: true
@@ -341,12 +341,12 @@ function F(e, t) {
   })
 }
 
-function G(e) {
+function H(e) {
   let {
     guild: t,
     channel: n,
     caretPosition: l = "left"
-  } = e, a = (0, o.e7)([x.Z], () => x.Z.getGuildId()), s = (0, g.D)(), u = i.useRef(null);
+  } = e, a = (0, o.e7)([v.Z], () => v.Z.getGuildId()), s = (0, g.D)(), u = i.useRef(null);
   if (a !== N.I_8 && !s || null == t) return null;
   let d = () => {
     (0, b.XU)(t.id, n.id)

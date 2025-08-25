@@ -22,11 +22,11 @@ function g(e) {
     channel: t,
     user: n,
     guild: g
-  } = e, b = (0, i.e7)([p.default, u.Z, d.Z], () => null != n && null != g && (0, o.F)(g.id, n.id, [p.default, u.Z, d.Z])), [_, y] = (0, s.ZP)(null == n ? true : n.id, t.guild_id), C = (0, i.e7)([c.ZP], () => null != g && null != n && null != c.ZP.getMember(g.id, n.id));
+  } = e, b = (0, i.e7)([p.default, u.Z, d.Z], () => null != n && null != g && (0, o.F)(g.id, n.id, [p.default, u.Z, d.Z])), [y, _] = (0, s.ZP)(null == n ? true : n.id, t.guild_id), C = (0, i.e7)([c.ZP], () => null != g && null != n && null != c.ZP.getMember(g.id, n.id));
   if (!b || !C) return null;
-  let x = "timeout-user-".concat(null == n ? true : n.id);
+  let v = "timeout-user-".concat(null == n ? true : n.id);
   return (0, r.jsx)(h.Z, {
-    text: y ? m.intl.string(f.default["6uMZbm"]) : m.intl.string(f.default["Sgg/uL"]),
+    text: _ ? m.intl.string(f.default["6uMZbm"]) : m.intl.string(f.default["Sgg/uL"]),
     icon: l.T39,
     onClick: () => {
       null != n && (0, a.z)({
@@ -35,6 +35,6 @@ function g(e) {
         modReportId: t.id
       })
     },
-    disabled: y
-  }, x)
+    disabled: _
+  }, v)
 }

@@ -42,11 +42,11 @@ let L = Chunk647438.memo(e => {
   let {
     mute: a,
     deaf: s,
-    user: v,
+    user: x,
     channel: I,
     sessionId: P,
     nick: D
-  } = e, L = v.id, k = (0, o.e7)([j.default], () => j.default.getId() === L, [L]), [U, B, F] = (0, o.Wu)([S.Z], () => k ? [!S.Z.isSupported() || S.Z.isSelfMute() || S.Z.isSelfMutedTemporarily(), S.Z.isSelfDeaf(), false] : [!S.Z.isSupported() || S.Z.isLocalMute(L), false, S.Z.isLocalVideoDisabled(L)], [k, L]), G = (0, o.e7)([T.Z], () => T.Z.isPrioritySpeaker(L)), H = (0, c.Z)({
+  } = e, L = x.id, k = (0, o.e7)([j.default], () => j.default.getId() === L, [L]), [U, B, F] = (0, o.Wu)([S.Z], () => k ? [!S.Z.isSupported() || S.Z.isSelfMute() || S.Z.isSelfMutedTemporarily(), S.Z.isSelfDeaf(), false] : [!S.Z.isSupported() || S.Z.isLocalMute(L), false, S.Z.isLocalVideoDisabled(L)], [k, L]), H = (0, o.e7)([T.Z], () => T.Z.isPrioritySpeaker(L)), G = (0, c.Z)({
     userId: L,
     checkSoundSharing: true
   }), V = (0, o.e7)([E.ZP], () => E.ZP.isGuestOrLurker(I.guild_id, L)), z = (0, o.e7)([h.Z], () => h.Z.getGuildRingingUsers(I.id).has(L)), W = (0, o.e7)([u.ZP], () => u.ZP.getEmbeddedActivitiesForChannel(I.id).find(e => {
@@ -54,21 +54,21 @@ let L = Chunk647438.memo(e => {
       userIds: t
     } = e;
     return t.has(L)
-  }), [L, I.id]), q = (0, p.Z)(null != W ? [W.applicationId] : []), Y = (0, C.Z)(L, I.guild_id)[0], K = null != (n = (0, d.IX)(null == Y ? true : Y.application_id).data) ? n : true, [X, Q] = (0, o.Wu)([O.Z], () => [O.Z.getStreamForUser(L, I.getGuildId()), O.Z.getActiveStreamForUser(L, I.getGuildId())], [I, L]), J = (0, o.e7)([Z.Z], () => Z.Z.getSessionById(P)), $ = A.ZP.useName(v), ee = (0, o.e7)([N.Z], () => N.Z.getVoicePlatformForChannel(I.id, L), [I.id, L]), {
+  }), [L, I.id]), q = (0, p.Z)(null != W ? [W.applicationId] : []), Y = (0, C.Z)(L, I.guild_id)[0], K = null != (n = (0, d.IX)(null == Y ? true : Y.application_id).data) ? n : true, [X, Q] = (0, o.Wu)([O.Z], () => [O.Z.getStreamForUser(L, I.getGuildId()), O.Z.getActiveStreamForUser(L, I.getGuildId())], [I, L]), J = (0, o.e7)([Z.Z], () => Z.Z.getSessionById(P)), $ = A.ZP.useName(x), ee = (0, o.e7)([N.Z], () => N.Z.getVoicePlatformForChannel(I.id, L), [I.id, L]), {
     enableHangStatus: et
   } = m.n.useExperiment({
     guildId: I.guild_id,
     location: "VoiceUsers"
-  }), en = (0, f.ZP)(I, true, v), er = (0, o.e7)([g.Z], () => k ? g.Z.getHangStatusActivity() : null, [k]), ei = (0, b.j)(L), el = (0, x.Eu)(I.id, L), {
+  }), en = (0, f.ZP)(I, true, x), er = (0, o.e7)([g.Z], () => k ? g.Z.getHangStatusActivity() : null, [k]), ei = (0, b.j)(L), el = (0, v.Eu)(I.id, L), {
     enableVCStatusIcons: ea,
     enableRequestToStream: eo
-  } = y.A.useExperiment({
+  } = _.A.useExperiment({
     guildId: I.guild_id,
     location: "VoiceUsers"
   });
-  return (0, r.jsx)(_.Z, {
+  return (0, r.jsx)(y.Z, {
     shakeLocation: M.oZ.VOICE_USER,
-    isShaking: H,
+    isShaking: G,
     children: (0, r.jsx)(w.ZP, (i = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -96,9 +96,9 @@ let L = Chunk647438.memo(e => {
       localVideoDisabled: F,
       mute: a || U,
       deaf: s || B,
-      speaking: H,
+      speaking: G,
       ringing: z,
-      priority: G,
+      priority: H,
       embeddedApplication: q[0],
       isStreaming: null != X && X.channelId === I.id,
       isWatching: null != Q && Q.state !== R.jm8.ENDED,
@@ -134,9 +134,9 @@ let k = [],
       location: m,
       numAudience: g,
       withGuildIcon: b = false,
-      className: _,
-      children: y
-    } = e, [C, O] = i.useState(null), [E, S] = i.useState(false), Z = i.useRef(null), T = (0, x.Es)(l.id, null != c ? c : k), N = i.useRef(new s.sW(50, () => {
+      className: y,
+      children: _
+    } = e, [C, O] = i.useState(null), [E, S] = i.useState(false), Z = i.useRef(null), T = (0, v.Es)(l.id, null != c ? c : k), N = i.useRef(new s.sW(50, () => {
       O(Z.current), Z.current = null
     })), A = i.useRef(new s.sW(175, () => {
       O(null)
@@ -196,12 +196,12 @@ let k = [],
         numUsers: T.length - d
       })), i
     })();
-    return null == F && null == y ? null : (0, r.jsxs)(v.eJ, {
-      className: a()(_, D.list, {
+    return null == F && null == _ ? null : (0, r.jsxs)(x.eJ, {
+      className: a()(y, D.list, {
         [D.collapsed]: u,
         [D.withGuildIcon]: b
       }),
       collapsed: u,
-      children: [F, y]
+      children: [F, _]
     })
   }

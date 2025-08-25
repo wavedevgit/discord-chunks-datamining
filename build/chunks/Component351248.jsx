@@ -1,7 +1,7 @@
 /** Chunk was on 5665 **/
 /** chunk id: 351248, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => x
 }), require("./539854.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk149715 = require("./149715.js"),
   Chunk162130 = require("./162130.js");
 
-function y(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -36,7 +36,7 @@ let C = {
   EASING_IN: Chunk748780.Z.Easing.inOut(Chunk748780.Z.Easing.back()),
   EASING_OUT: Chunk748780.Z.Easing.quad
 };
-class x extends Chunk647438.PureComponent {
+class v extends Chunk647438.PureComponent {
   componentDidMount() {
     this.componentDidAppear()
   }
@@ -140,11 +140,11 @@ class x extends Chunk647438.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), y(this, "scaleAnimation", new o.Z.Value(0)), y(this, "spriteAnimation", new o.Z.Value(0)), y(this, "spriteOpacity", new o.Z.Value(0)), y(this, "widthAnimation", new o.Z.Value(0))
+    super(...e), _(this, "scaleAnimation", new o.Z.Value(0)), _(this, "spriteAnimation", new o.Z.Value(0)), _(this, "spriteOpacity", new o.Z.Value(0)), _(this, "widthAnimation", new o.Z.Value(0))
   }
 }
 
-function v(e) {
+function x(e) {
   var t;
   let {
     participants: n,
@@ -153,7 +153,7 @@ function v(e) {
     onClick: o,
     width: u,
     guildId: b
-  } = e, _ = (0, p.ZP)(), y = (t = n.length, ((0, d.pxk)(d.EFr.SIZE_80) + 16) * t > u ? d.EFr.SIZE_40 : d.EFr.SIZE_80), C = (0, s.e7)([h.Z], () => h.Z.isFocused()), v = n.map(e => {
+  } = e, y = (0, p.ZP)(), _ = (t = n.length, ((0, d.pxk)(d.EFr.SIZE_80) + 16) * t > u ? d.EFr.SIZE_40 : d.EFr.SIZE_80), C = (0, s.e7)([h.Z], () => h.Z.isFocused()), x = n.map(e => {
     var t, n;
     if (e.type !== m.fO.USER) return null;
     let {
@@ -162,14 +162,14 @@ function v(e) {
       speaking: s,
       ringing: c
     } = e;
-    return (0, r.jsx)(x, {
+    return (0, r.jsx)(v, {
       className: g.participant,
-      width: (0, d.pxk)(y),
-      theme: _,
+      width: (0, d.pxk)(_),
+      theme: y,
       children: (0, r.jsx)(f.Z, {
         userId: l.id,
-        src: l.getAvatarURL(b, (0, d.pxk)(y), s && C),
-        size: y,
+        src: l.getAvatarURL(b, (0, d.pxk)(_), s && C),
+        size: _,
         muted: null != (t = null == a ? true : a.isVoiceMuted()) && t,
         deafen: null != (n = null == a ? true : a.isVoiceDeafened()) && n,
         speaking: s,
@@ -182,6 +182,6 @@ function v(e) {
   return (0, r.jsx)(c.W, {
     component: "div",
     className: a()(g.root, l),
-    children: v
+    children: x
   })
 }

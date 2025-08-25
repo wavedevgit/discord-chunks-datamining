@@ -71,20 +71,20 @@ class E {
     channelId: n,
     analyticsLocations: i
   }) {
-    j(this, "userId", true), j(this, "user", true), j(this, "channelId", true), j(this, "analyticsLocations", true), j(this, "generateNicknameGuildPairs", (0, _.oH)(e => {
+    j(this, "userId", true), j(this, "user", true), j(this, "channelId", true), j(this, "analyticsLocations", true), j(this, "generateNicknameGuildPairs", (0, y.oH)(e => {
       var t;
       return a()(m.ZP.getNicknameGuildsMapping(null != (t = null == e ? true : e.id) ? t : this.userId)).toPairs().map(e => {
         let [t, n] = e;
         return [t, n.map(e => {
           var t;
           return null == (t = g.Z.getGuild(e)) ? true : t.name
-        }).filter(y.lm)]
+        }).filter(_.lm)]
       }).filter(t => {
         let [n] = t;
         return n !== (null == e ? true : e.globalName)
       }).value()
     })), j(this, "renderMoreAvatars", () => (0, r.jsx)(s.DY3, {
-      text: v.intl.string(v.t.UTjREx),
+      text: x.intl.string(x.t.UTjREx),
       position: "bottom",
       children: (0, r.jsx)(s.P3F, {
         className: O.moreAvatars,
@@ -100,7 +100,7 @@ class E {
         userId: this.userId,
         channelId: this.channelId,
         sourceAnalyticsLocations: this.analyticsLocations,
-        section: x.oh.MUTUAL_GUILDS
+        section: v.oh.MUTUAL_GUILDS
       })
     }), this.userId = e, this.user = t, this.channelId = n, this.analyticsLocations = i
   }
@@ -132,11 +132,11 @@ function S(e) {
     userId: n,
     analyticsLocations: f,
     channelId: t.id
-  }), [_, y] = i.useState(false), x = i.useCallback(() => {
-    y(true)
-  }, [y]), j = i.useCallback(() => {
-    y(false)
-  }, [y]);
+  }), [y, _] = i.useState(false), v = i.useCallback(() => {
+    _(true)
+  }, [_]), j = i.useCallback(() => {
+    _(false)
+  }, [_]);
   return 0 === m.getNicknameGuildPairs().length && 0 === l.length ? (0, r.jsx)("div", {
     className: O.spacer
   }) : (0, r.jsxs)(d.Gt, {
@@ -144,7 +144,7 @@ function S(e) {
     children: [(0, r.jsx)(C.iz, {
       className: O.divider
     }), (0, r.jsx)(s.IGR, {
-      text: v.intl.string(v.t.l1QVfn),
+      text: x.intl.string(x.t.l1QVfn),
       disableColor: true,
       className: O.akaBadge
     }), l.length > 0 ? (0, r.jsx)(c.ZP, {
@@ -175,9 +175,9 @@ function S(e) {
       position: "bottom",
       className: O.nicknames,
       delay: 0,
-      onTooltipShow: x,
+      onTooltipShow: v,
       onTooltipHide: j,
-      children: m.renderNicknamePairs(!_)
+      children: m.renderNicknamePairs(!y)
     }) : null]
   })
 }

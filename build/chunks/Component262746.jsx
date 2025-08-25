@@ -22,11 +22,11 @@ function g(e) {
     channel: t,
     user: g,
     guild: b
-  } = e, _ = (0, l.e7)([p.Z], () => null != g && p.Z.isUserBanned(g.id)), y = null != g && null == _, [C, x] = i.useState(y), v = (0, l.e7)([d.Z], () => null != g && null != b && (0, u.lD)(g, b, [d.Z]));
+  } = e, y = (0, l.e7)([p.Z], () => null != g && p.Z.isUserBanned(g.id)), _ = null != g && null == y, [C, v] = i.useState(_), x = (0, l.e7)([d.Z], () => null != g && null != b && (0, u.lD)(g, b, [d.Z]));
   if ((0, c.ZP)(() => {
-      y && s.Z.searchGuildBans(t.guild_id, true, [null == g ? true : g.id]).finally(() => x(false))
-    }), !v) return null;
-  let O = true === _ ? m.intl.string(f.default.dpfwQ0) : m.intl.string(f.default.ASv23d),
+      _ && s.Z.searchGuildBans(t.guild_id, true, [null == g ? true : g.id]).finally(() => v(false))
+    }), !x) return null;
+  let O = true === y ? m.intl.string(f.default.dpfwQ0) : m.intl.string(f.default.ASv23d),
     j = "ban-user-".concat(null == g ? true : g.id);
   return (0, r.jsx)(h.Z, {
     text: O,
@@ -72,7 +72,7 @@ function g(e) {
         }
       })
     },
-    disabled: true === _ || C,
+    disabled: true === y || C,
     submitting: C,
     color: a.zx.Colors.RED
   }, j)

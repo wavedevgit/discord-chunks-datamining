@@ -1,7 +1,7 @@
 /** Chunk was on 5665 **/
 /** chunk id: 600084, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => H
+  Z: () => G
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -43,16 +43,16 @@ var Chunk951288 = require("./951288.js"),
   Chunk963392 = require("./963392.js"),
   Chunk197571 = require("./197571.js");
 
-function G(e) {
+function H(e) {
   let {
     canManageRoles: t,
     channel: n
-  } = e, i = t && (0, p.Yk)(n), a = (0, l.e7)([x.ZP], () => null != n.guild_id && n === x.ZP.getDefaultChannel(n.guild_id), [n]);
+  } = e, i = t && (0, p.Yk)(n), a = (0, l.e7)([v.ZP], () => null != n.guild_id && n === v.ZP.getDefaultChannel(n.guild_id), [n]);
   if ((0, h.Z)(n.id)) return null;
   if (n.isForumPost()) return (0, r.jsx)(I.Z, {
     channel: n
   });
-  if (y.Ec.has(n.type)) return (0, r.jsx)(M.Z, {
+  if (_.Ec.has(n.type)) return (0, r.jsx)(M.Z, {
     channel: n
   });
   if (a) return (0, r.jsx)(D.Z, {
@@ -66,21 +66,21 @@ function G(e) {
   })
 }
 
-function H(e) {
+function G(e) {
   var t, n;
   let {
     channel: p,
     showingBanner: h
-  } = e, y = (0, d.ZP)(p), {
-    type: x
+  } = e, _ = (0, d.ZP)(p), {
+    type: v
   } = p, I = (0, l.e7)([O.default], () => p.isPrivate() ? O.default.getUser(p.getRecipientId()) : null), A = j.ZP.useUserTag(I), {
     canManageRoles: R,
     canReadMessageHistory: M
-  } = (0, l.cj)([v.Z], () => ({
-    canManageRoles: v.Z.can(L.Plq.MANAGE_ROLES, p),
-    canReadMessageHistory: v.Z.can(L.Plq.READ_MESSAGE_HISTORY, p)
-  })), D = (0, l.e7)([b.Z], () => x === L.d4z.DM ? b.Z.getMutualGuilds(p.getRecipientId()) : null, [p, x]), {
-    systemDMRedesignEnabled: H
+  } = (0, l.cj)([x.Z], () => ({
+    canManageRoles: x.Z.can(L.Plq.MANAGE_ROLES, p),
+    canReadMessageHistory: x.Z.can(L.Plq.READ_MESSAGE_HISTORY, p)
+  })), D = (0, l.e7)([b.Z], () => v === L.d4z.DM ? b.Z.getMutualGuilds(p.getRecipientId()) : null, [p, v]), {
+    systemDMRedesignEnabled: G
   } = g.Z.useExperiment({
     location: "bf1a4f_1"
   }, {
@@ -95,18 +95,18 @@ function H(e) {
     location: "EmptyMessages"
   }).enabledDesktop;
   if (i.useEffect(() => {
-      x === L.d4z.DM && null == D && null != I && o.Z.wait(() => (0, _.Z)(p.getRecipientId(), I.getAvatarURL(null, 80), {
+      v === L.d4z.DM && null == D && null != I && o.Z.wait(() => (0, y.Z)(p.getRecipientId(), I.getAvatarURL(null, 80), {
         withMutualGuilds: true
       }))
-    }, [D, x, p, I]), i.useEffect(() => {
+    }, [D, v, p, I]), i.useEffect(() => {
       (null == I ? true : I.bot) && W === C.M.NOT_FETCHED && s.Z.fetch()
-    }, [null == I ? true : I.bot, W]), p.isSystemDM()) return H ? (0, r.jsx)(w.Z, {
+    }, [null == I ? true : I.bot, W]), p.isSystemDM()) return G ? (0, r.jsx)(w.Z, {
     channel: p
   }) : (0, r.jsx)(N.Z, {
     channel: p,
     children: U.intl.string(U.t.Rzvnio)
   });
-  if (x === L.d4z.DM) {
+  if (v === L.d4z.DM) {
     let e;
     return null != I && null != V ? null != z && (e = (0, r.jsxs)("div", {
       className: B.buttonContainer,
@@ -135,7 +135,7 @@ function H(e) {
         className: F.marginBottom20,
         children: A
       }), U.intl.format(U.t["Qvg+6+"], {
-        username: y
+        username: _
       }), (null == I ? true : I.isProvisional) && (0, r.jsx)(m.q, {
         userId: I.id
       }), e]
@@ -146,7 +146,7 @@ function H(e) {
       channelId: p.id,
       children: [(0, r.jsx)(S.Ot, {
         children: U.intl.format(U.t.I3R7Vl, {
-          channelName: y
+          channelName: _
         })
       }), (0, r.jsx)(S.jz, {
         children: U.intl.string(U.t.M8Ao6O)
@@ -158,17 +158,17 @@ function H(e) {
   else return (0, r.jsx)(N.Z, {
     channel: p,
     children: U.intl.format(U.t.MFwcqK, {
-      name: y
+      name: _
     })
   });
-  return M ? (0, r.jsx)(G, {
+  return M ? (0, r.jsx)(H, {
     channel: p,
     canManageRoles: R
   }) : (0, r.jsx)(S.ZP, {
     channelId: p.id,
     children: (0, r.jsx)(S.jz, {
       children: U.intl.format(U.t.hPVEQE, {
-        channelName: y
+        channelName: _
       })
     })
   })

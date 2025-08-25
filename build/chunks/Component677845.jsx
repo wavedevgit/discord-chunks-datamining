@@ -37,30 +37,30 @@ function S(e) {
     className: Z,
     inCall: T,
     totalNumberOfParticipants: N
-  } = e, A = (0, c.bp)() === j.IlC.POPOUT, w = (0, o.e7)([_.Z], () => _.Z.getGuild(P.guild_id), [P.guild_id]), {
+  } = e, A = (0, c.bp)() === j.IlC.POPOUT, w = (0, o.e7)([y.Z], () => y.Z.getGuild(P.guild_id), [P.guild_id]), {
     dismissedActivityEntryPointTileChannel: R
-  } = (0, v.d)(), M = (0, o.e7)([h.Z], () => h.Z.getUserParticipantCount(P.id), [P]), D = (0, b.bt)(P.id, t), L = i.useCallback(() => {
+  } = (0, x.d)(), M = (0, o.e7)([h.Z], () => h.Z.getUserParticipantCount(P.id), [P]), D = (0, b.bt)(P.id, t), L = i.useCallback(() => {
     (0, a.j)(() => {
-      v.d.setState({
+      x.d.setState({
         dismissedActivityEntryPointTileChannel: P.id
       })
     })
   }, [P.id]);
   i.useEffect(() => {
     null != R && P.id !== R && (0, a.j)(() => {
-      v.d.setState({
+      x.d.setState({
         dismissedActivityEntryPointTileChannel: null
       })
     })
   }, [P.id, R]);
-  let k = (0, o.e7)([y.Z], () => P.isPrivate() || (0, m.b)(y.Z, w, P), [w, P]),
+  let k = (0, o.e7)([_.Z], () => P.isPrivate() || (0, m.b)(_.Z, w, P), [w, P]),
     U = (null == w ? true : w.afkChannelId) === P.id,
     B = P.userLimit <= 0 || P.userLimit > 1,
     F = (0, o.e7)([u.ZP], () => u.ZP.getEmbeddedActivitiesForChannel(P.id).length <= 0),
-    G = (0, f.Nj)(s.z.VC_TILE_ACTIVITIES_ENTRY_POINT),
-    H = (0, d.KF)(P.id) !== d.jy.CAN_LAUNCH,
+    H = (0, f.Nj)(s.z.VC_TILE_ACTIVITIES_ENTRY_POINT),
+    G = (0, d.KF)(P.id) !== d.jy.CAN_LAUNCH,
     V = null != R && R === P.id,
-    z = D.map(e => t => (0, r.jsx)(x.ZP, {
+    z = D.map(e => t => (0, r.jsx)(v.ZP, {
       participant: e,
       channel: P,
       className: E.tile,
@@ -82,7 +82,7 @@ function S(e) {
     }
   }, {
     trackOnInitialLoad: true
-  }, []), null != w && !U && (!(M >= 2) || !F || H || G || V ? B && 1 === M && k && (F && !H ? z.push(e => (0, r.jsx)(C.h, {
+  }, []), null != w && !U && (!(M >= 2) || !F || G || H || V ? B && 1 === M && k && (F && !G ? z.push(e => (0, r.jsx)(C.h, {
     channel: P,
     guild: w,
     width: e,

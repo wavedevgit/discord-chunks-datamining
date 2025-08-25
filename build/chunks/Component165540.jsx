@@ -32,9 +32,9 @@ let S = Chunk647438.forwardRef(function(e, t) {
       type: d,
       animateRef: m
     } = e, g = (0, o.e7)([h.Z], () => h.Z.shouldShowPopup() && h.Z.activeViewType() === d), {
-      Component: y,
+      Component: _,
       events: C,
-      play: x
+      play: v
     } = (0, b.Z)("ChannelAppLauncherButton");
     i.useImperativeHandle(m, () => ({
       animate: () => {
@@ -42,16 +42,16 @@ let S = Chunk647438.forwardRef(function(e, t) {
       }
     }), [C]);
     let S = i.useCallback(() => {
-        g ? p.yT(f.ti.DISMISSED) : ((0, _.Q3)(s.z.DESKTOP_APP_LAUNCHER_ONBOARDING, {
+        g ? p.yT(f.ti.DISMISSED) : ((0, y.Q3)(s.z.DESKTOP_APP_LAUNCHER_ONBOARDING, {
           dismissAction: O.L.TAKE_ACTION
-        }), p.__(f._b.TEXT, d), u.ux()), x()
-      }, [g, d, x]),
-      I = (0, r.jsx)(y, {
+        }), p.__(f._b.TEXT, d), u.ux()), v()
+      }, [g, d, v]),
+      I = (0, r.jsx)(_, {
         size: "refresh_sm",
         color: "currentColor"
       });
     return (0, r.jsx)("div", {
-      className: a()(E.buttonContainer, v.t4),
+      className: a()(E.buttonContainer, x.t4),
       ref: t,
       children: (0, r.jsx)(c.zx, (n = function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -113,14 +113,14 @@ let S = Chunk647438.forwardRef(function(e, t) {
     } = e, s = i.useRef(null), c = (0, g.R)({
       channel: t,
       chatInputType: n
-    }), u = (0, x.Z)({
+    }), u = (0, v.Z)({
       type: n
     }), p = (0, d.Z)(t), f = (0, o.e7)([h.Z], () => h.Z.appDMChannelsWithFailedLoads().has(t.id)), {
       visible: b
     } = (0, C.xL)();
     return c ? (0, r.jsxs)("div", {
       className: E.channelAppLauncher,
-      children: [(0, r.jsx)(y.Z, {
+      children: [(0, r.jsx)(_.Z, {
         channel: t,
         animationContainerClassName: E.entrypointAnimation,
         glowClassName: E.animationGlow,

@@ -37,7 +37,7 @@ function b(e) {
   return e
 }
 
-function _(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -50,15 +50,15 @@ function _(e, t) {
   }), e
 }
 
-function y(e) {
+function _(e) {
   let {
     channel: t,
     speaker: l,
     className: f
-  } = e, y = i.useRef(null), {
+  } = e, _ = i.useRef(null), {
     newestAnalyticsLocation: C
-  } = (0, d.ZP)(), x = (0, u.bp)(), {
-    reducedMotion: v
+  } = (0, d.ZP)(), v = (0, u.bp)(), {
+    reducedMotion: x
   } = i.useContext(o.Sfi), O = (0, c.Z)({
     userId: l.id
   }), j = null != l.member ? (0, m.CA)(l.member) : null, E = e => {
@@ -66,7 +66,7 @@ function y(e) {
       let {
         default: e
       } = await Promise.all([n.e("79695"), n.e("98783"), n.e("8982"), n.e("7717"), n.e("52021")]).then(n.bind(n, 757387));
-      return n => (0, r.jsx)(e, _(b({}, n), {
+      return n => (0, r.jsx)(e, y(b({}, n), {
         user: l.user,
         guildId: t.guild_id,
         channel: t,
@@ -76,21 +76,21 @@ function y(e) {
         onInteraction: (0, p.u)("GuildChannelUserContextMenu", C)
       }))
     }, {
-      context: x
+      context: v
     })
   };
   return (0, r.jsx)(h.Z, {
-    targetElementRef: y,
+    targetElementRef: _,
     user: l.user,
     guildId: t.guild_id,
     channelId: t.id,
     clickTrap: true,
     children: e => (0, r.jsx)(o.ua7, {
-      targetElementRef: y,
+      targetElementRef: _,
       text: l.userNick,
       position: "bottom",
-      children: n => (0, r.jsx)(o.P3F, _(b({}, n, e), {
-        innerRef: y,
+      children: n => (0, r.jsx)(o.P3F, y(b({}, n, e), {
+        innerRef: _,
         onClick: t => {
           t.stopPropagation(), e.onClick(t)
         },
@@ -100,7 +100,7 @@ function y(e) {
           size: o.EFr.SIZE_24,
           className: a()(g.avatar, f),
           "aria-label": l.userNick,
-          isSpeaking: O && !v.enabled
+          isSpeaking: O && !x.enabled
         })
       }))
     })
@@ -117,7 +117,7 @@ function C(e) {
     guildId: n.guild_id,
     users: t,
     max: 10,
-    renderUser: (e, t, i) => (0, r.jsx)(y, {
+    renderUser: (e, t, i) => (0, r.jsx)(_, {
       channel: n,
       speaker: e,
       className: t

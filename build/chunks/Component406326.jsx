@@ -1,7 +1,7 @@
 /** Chunk was on 5665 **/
 /** chunk id: 406326, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => _
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -37,7 +37,7 @@ function b(e) {
   return e
 }
 
-function _(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -50,14 +50,14 @@ function _(e, t) {
   }), e
 }
 
-function y(e) {
+function _(e) {
   let {
     searchContext: t,
     searchMode: l,
     onSearchModeChange: s,
-    totalResults: y,
-    isIndexing: x,
-    isSearching: v,
+    totalResults: _,
+    isIndexing: v,
+    isSearching: x,
     documentsIndexed: O
   } = e, j = (0, d.UX)({
     location: "SearchHeader"
@@ -92,7 +92,7 @@ function y(e) {
       let {
         default: e
       } = await n.e("37979").then(n.bind(n, 238088));
-      return n => (0, r.jsx)(e, _(b({}, n), {
+      return n => (0, r.jsx)(e, y(b({}, n), {
         searchContext: t
       }))
     })
@@ -107,10 +107,10 @@ function y(e) {
       className: g.totalResults,
       role: "status",
       children: (0, r.jsx)(C, {
-        totalResults: y,
+        totalResults: _,
         subtitle: Z,
-        isIndexing: x,
-        isSearching: v,
+        isIndexing: v,
+        isSearching: x,
         documentsIndexed: O
       })
     }), E || S ? (0, r.jsxs)("div", {
@@ -159,7 +159,7 @@ function C(e) {
     isIndexing: l,
     documentsIndexed: a
   } = e;
-  return l ? (0, r.jsx)(v, {
+  return l ? (0, r.jsx)(x, {
     documentsIndexed: a
   }) : i ? (0, r.jsx)(O, {}) : (0, r.jsx)(j, {
     totalResults: t,
@@ -167,7 +167,7 @@ function C(e) {
   })
 }
 
-function x() {
+function v() {
   return (0, Chunk951288.jsx)("div", {
     className: Chunk865239.spinnerWrapper,
     children: (0, Chunk951288.jsx)(Chunk481060.$jN, {
@@ -178,7 +178,7 @@ function x() {
   })
 }
 
-function v(e) {
+function x(e) {
   let {
     documentsIndexed: t
   } = e;
@@ -186,7 +186,7 @@ function v(e) {
     text: m.intl.formatToPlainString(m.t["4Y3O+P"], {
       count: t
     }),
-    children: e => (0, r.jsxs)("div", _(b({
+    children: e => (0, r.jsxs)("div", y(b({
       className: g.totalResultsWrapper
     }, e), {
       children: [(0, r.jsx)(o.Text, {
@@ -197,7 +197,7 @@ function v(e) {
           href: s.Z.getArticleURL(f.BhN.SEARCH_INDEXING),
           children: m.intl.string(m.t["G3EA+/"])
         })
-      }), (0, r.jsx)(x, {})]
+      }), (0, r.jsx)(v, {})]
     }))
   })
 }
@@ -208,7 +208,7 @@ function O() {
       variant: "text-md/medium",
       color: "header-secondary",
       children: Chunk388032.intl.string(Chunk388032.t.uixzLS)
-    }), (0, Chunk951288.jsx)(x, {})]
+    }), (0, Chunk951288.jsx)(v, {})]
   })
 }
 

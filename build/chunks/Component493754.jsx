@@ -2,7 +2,7 @@
 /** chunk id: 493754, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   W: () => C,
-  Z: () => x
+  Z: () => v
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -21,7 +21,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk811130 = require("./811130.js");
 
-function _(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -40,7 +40,7 @@ function _(e) {
   return e
 }
 
-function y(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -68,7 +68,7 @@ function C(e) {
     let {
       default: e
     } = await Promise.all([n.e("7654"), n.e("62292")]).then(n.bind(n, 560114));
-    return n => (0, r.jsx)(e, y(_({}, n), {
+    return n => (0, r.jsx)(e, _(y({}, n), {
       guild: t,
       channel: i,
       streamUserId: l,
@@ -83,14 +83,14 @@ function C(e) {
   })
 }
 
-function x(e) {
+function v(e) {
   var t, {
       stream: n,
       applicationId: i,
       channel: a,
       exitFullScreen: u,
-      appContext: x,
-      analyticsLocation: v,
+      appContext: v,
+      analyticsLocation: x,
       className: O
     } = e,
     j = function(e, t) {
@@ -115,7 +115,7 @@ function x(e) {
   if (!(null != I && null != a && f.Z.can(m.Plq.CREATE_INSTANT_INVITE, a))) return null;
   let Z = g.intl.string(g.t.VINpSE);
   return null != n ? Z = g.intl.string(g.t["6VQaqa"]) : null != i && (Z = g.intl.string(g.t["OzOM/v"])), (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(c.zx, y(_({
+    children: [(0, r.jsx)(c.zx, _(y({
       size: null != (t = j.size) ? t : c.zx.Sizes.SMALL,
       color: b.buttonColor,
       onClick: () => {
@@ -124,9 +124,9 @@ function x(e) {
           channel: a,
           streamUserId: null == n ? true : n.ownerId,
           applicationId: i,
-          appContext: x,
+          appContext: v,
           exitFullScreen: u,
-          analyticsLocation: v,
+          analyticsLocation: x,
           guildScheduledEvent: P
         })
       },
@@ -136,10 +136,10 @@ function x(e) {
     })), (0, r.jsx)(p.Z, {
       channel: a,
       stream: n,
-      appContext: x,
+      appContext: v,
       className: l()(O, b.iconButton),
       exitFullScreen: u,
-      analyticsLocation: v,
+      analyticsLocation: x,
       guildScheduledEvent: P
     })]
   })

@@ -44,7 +44,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk151227 = require("./151227.js");
 
-function H(e) {
+function G(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -101,10 +101,10 @@ let W = (0, Chunk202841.animated)(Chunk481060.eTT),
       channel: m,
       messages: g,
       unreadCount: b,
-      showNewMessagesBar: _,
-      messageDisplayCompact: y,
-      channelStream: x,
-      uploads: v,
+      showNewMessagesBar: y,
+      messageDisplayCompact: _,
+      channelStream: v,
+      uploads: x,
       hasUnreads: O,
       editingMessageId: E,
       fontSize: S,
@@ -114,7 +114,7 @@ let W = (0, Chunk202841.animated)(Chunk481060.eTT),
       hideSummaries: N = false,
       jumpBarClassName: w,
       isChatInputBottomAligned: R
-    } = e, [D, q] = i.useState(null != (n = j.Z.isAtBottom(m.id)) && n), Y = i.useMemo(() => y ? (0, M.aJ)({
+    } = e, [D, q] = i.useState(null != (n = j.Z.isAtBottom(m.id)) && n), Y = i.useMemo(() => _ ? (0, M.aJ)({
       compact: true,
       messageGroups: 30,
       groupRange: 4,
@@ -128,10 +128,10 @@ let W = (0, Chunk202841.animated)(Chunk481060.eTT),
       attachments: 8,
       fontSize: S,
       groupSpacing: o
-    }), [y, S, o]), K = (0, k.ZP)({
+    }), [_, S, o]), K = (0, k.ZP)({
       messages: g,
       channel: m,
-      compact: y,
+      compact: _,
       hasUnreads: O,
       focusId: E,
       placeholderHeight: Y.totalHeight,
@@ -154,10 +154,10 @@ let W = (0, Chunk202841.animated)(Chunk481060.eTT),
       channel: m,
       messages: g,
       unreadCount: b,
-      showNewMessagesBar: _,
-      messageDisplayCompact: y,
-      channelStream: x,
-      uploads: v,
+      showNewMessagesBar: y,
+      messageDisplayCompact: _,
+      channelStream: v,
+      uploads: x,
       loadMore: K.loadMore,
       scrollManager: K,
       specs: Y,
@@ -215,12 +215,12 @@ let W = (0, Chunk202841.animated)(Chunk481060.eTT),
     return (0, r.jsxs)(s.bG, {
       navigator: X,
       children: [null != en && en, (0, r.jsxs)("div", {
-        className: a()(G.messagesWrapper, l, "group-spacing-".concat(o)),
-        children: [null == en && $, (0, r.jsxs)(W, V(H({
+        className: a()(H.messagesWrapper, l, "group-spacing-".concat(o)),
+        children: [null == en && $, (0, r.jsxs)(W, V(G({
           ref: eo,
           customTheme: true,
-          className: a()(p, G.scroller),
-          contentClassName: G.scrollerContent,
+          className: a()(p, H.scroller),
+          contentClassName: H.scrollerContent,
           onResize: K.handleResize,
           onScroll: K.handleScroll,
           onMouseDown: K.handleMouseDown,
@@ -228,24 +228,24 @@ let W = (0, Chunk202841.animated)(Chunk481060.eTT),
         }, er), {
           tabIndex: false,
           role: "group",
-          children: [et, (0, r.jsxs)("ol", V(H({
-            className: a()(G.scrollerInner, {
-              [G.scrollerAllowSticky]: m.isModeratorReportChannel()
+          children: [et, (0, r.jsxs)("ol", V(G({
+            className: a()(H.scrollerInner, {
+              [H.scrollerAllowSticky]: m.isModeratorReportChannel()
             }),
             "aria-label": F.intl.formatToPlainString(F.t.XarRiI, {
               channelName: m.name
             })
           }, ea), {
             children: [(0, r.jsx)("span", {
-              className: G.navigationDescription,
+              className: H.navigationDescription,
               id: "messagesNavigationDescription",
               "aria-hidden": true,
               children: F.intl.string(F.t.Spb3s7)
             }), J, (0, r.jsx)("div", {
               className: a()({
-                [G.scrollerSpacer]: !T,
-                [G.empty]: 0 === g.length && !g.loadingMore,
-                [G.emptyForum]: 1 === g.length && !g.loadingMore && m.isForumPost() && (null == (t = g.first()) ? true : t.isFirstMessageInForumPost(m))
+                [H.scrollerSpacer]: !T,
+                [H.empty]: 0 === g.length && !g.loadingMore,
+                [H.emptyForum]: 1 === g.length && !g.loadingMore && m.isForumPost() && (null == (t = g.first()) ? true : t.isFirstMessageInForumPost(m))
               })
             })]
           }))]
@@ -289,8 +289,8 @@ let W = (0, Chunk202841.animated)(Chunk481060.eTT),
       renderSpoilers: k,
       keyboardModeEnabled: U
     } = function() {
-      let e = v.jU.useSetting(),
-        t = v.cC.useSetting(),
+      let e = x.jU.useSetting(),
+        t = x.cC.useSetting(),
         {
           messageGroupSpacing: n,
           fontSize: r,
@@ -316,7 +316,7 @@ let W = (0, Chunk202841.animated)(Chunk481060.eTT),
       }
     }(), {
       messages: F,
-      channelStream: G,
+      channelStream: H,
       oldestUnreadMessageId: W,
       editingMessageId: Y
     } = function(e) {
@@ -328,19 +328,19 @@ let W = (0, Chunk202841.animated)(Chunk481060.eTT),
         }, [e.id]),
         {
           enabled: a
-        } = y.Z.useExperiment({
+        } = _.Z.useExperiment({
           location: "41de6d_1"
         }, {
           autoTrackExposure: false
         }),
         o = null != (n = null == (t = N.default.getUser(O.default.getId())) ? true : t.hasFlag(B.xW$.SPAMMER)) && n,
         s = (0, p.ts)(e),
-        u = (0, _.Z)("use_topic_dividers_in_chat"),
-        d = (0, c.Wu)([x.Z], () => {
+        u = (0, y.Z)("use_topic_dividers_in_chat"),
+        d = (0, c.Wu)([v.Z], () => {
           var t;
-          return s && u && null != (t = x.Z.summaries(e.id)) ? t : []
+          return s && u && null != (t = v.Z.summaries(e.id)) ? t : []
         }, [s, e.id, u]),
-        h = (0, c.e7)([x.Z], () => s ? x.Z.selectedSummary(e.id) : null, [s, e.id]),
+        h = (0, c.e7)([v.Z], () => s ? v.Z.selectedSummary(e.id) : null, [s, e.id]),
         f = function(e) {
           let t = i.useMemo(() => {
             let t = new Set;
@@ -372,13 +372,13 @@ let W = (0, Chunk202841.animated)(Chunk481060.eTT),
     return (0, r.jsx)(b.aQ.Provider, {
       value: (0, w.Z)(k, h),
       children: (0, r.jsx)(D.v, {
-        children: (0, r.jsx)(q, V(H({}, d), {
+        children: (0, r.jsx)(q, V(G({}, d), {
           messageGroupSpacing: A,
           showNewMessagesBar: true,
           channel: t,
           messageDisplayCompact: !o && (a || L),
           messages: F,
-          channelStream: G,
+          channelStream: H,
           permissionVersion: C,
           uploads: (0, c.e7)([T.Z], () => T.Z.getFiles(t.id), [t]),
           unreadCount: (0, c.e7)([Z.ZP], () => Z.ZP.getUnreadCount(t.id), [t]),

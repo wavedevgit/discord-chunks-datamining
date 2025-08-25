@@ -51,10 +51,10 @@ function w(e) {
     originApplicationId: u.Z.getOriginApplicationId(t.id)
   })), U = (0, o.vh)(t.id), B = (0, s.Y)({
     userId: t.id
-  }), F = (0, l.e7)([d.Z], () => d.Z.hidePersonalInformation), G = (0, l.e7)([h.Z], () => {
+  }), F = (0, l.e7)([d.Z], () => d.Z.hidePersonalInformation), H = (0, l.e7)([h.Z], () => {
     var e;
     return null == (e = h.Z.getUserProfile(t.id)) ? true : e.application
-  }), H = (0, f.b)({
+  }), G = (0, f.b)({
     location: "UserProfileSidebarBody"
   });
   return (0, r.jsxs)("div", {
@@ -69,7 +69,7 @@ function w(e) {
         themeType: T.l.SIDEBAR
       }),
       nicknameIcons: (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(y.Z, {
+        children: [(0, r.jsx)(_.Z, {
           userId: t.id
         }), !F && (0, r.jsx)(P.Z, {
           userId: t.id,
@@ -78,13 +78,13 @@ function w(e) {
         })]
       })
     }), L === Z.OGo.PENDING_INCOMING && (0, r.jsx)(S.Z.Overlay, {
-      children: (0, r.jsx)(x.Z, {
+      children: (0, r.jsx)(v.Z, {
         user: t,
         channelId: R.id,
         applicationId: k
       })
     }), U.map(e => (0, r.jsx)(S.Z.Overlay, {
-      children: (0, r.jsx)(x.Z, {
+      children: (0, r.jsx)(v.Z, {
         user: t,
         isGameRelationship: true,
         applicationId: e.applicationId,
@@ -106,11 +106,11 @@ function w(e) {
           userId: t.id
         })
       })
-    }), H ? (0, r.jsx)(E.Z, {
+    }), G ? (0, r.jsx)(E.Z, {
       user: t,
       currentUser: n,
       onOpenUserProfileModal: D
-    }) : (0, r.jsx)(_.Z, {
+    }) : (0, r.jsx)(y.Z, {
       user: t,
       currentUser: n,
       className: A.card
@@ -125,9 +125,9 @@ function w(e) {
           isHovering: M,
           userId: t.id
         })
-      }), (null == G ? true : G.popularApplicationCommandIds) != null && (0, r.jsx)(m.Z, {
-        applicationId: G.id,
-        commandIds: G.popularApplicationCommandIds,
+      }), (null == H ? true : H.popularApplicationCommandIds) != null && (0, r.jsx)(m.Z, {
+        applicationId: H.id,
+        commandIds: H.popularApplicationCommandIds,
         channel: R
       }), B.length > 0 && (0, r.jsx)(j.Z, {
         heading: N.intl.string(N.t["Uv/eT0"]),
@@ -138,7 +138,7 @@ function w(e) {
       }), (0, r.jsx)(j.Z, {
         heading: t.bot ? N.intl.string(N.t["A//N4u"]) : N.intl.string(N.t.a6XYDw),
         headingColor: "header-primary",
-        children: (0, r.jsx)(v.Z, {
+        children: (0, r.jsx)(x.Z, {
           userId: t.id
         })
       })]

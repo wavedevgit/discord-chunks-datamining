@@ -66,7 +66,7 @@ function M(e) {
     layout: "SIDEBAR",
     userId: n.id,
     channelId: A.id
-  }), G = i.useRef(null), H = (0, s.Z)(G), V = (0, g.$m)(), z = (0, o.q_F)({
+  }), H = i.useRef(null), G = (0, s.Z)(H), V = (0, g.$m)(), z = (0, o.q_F)({
     opacity: +(null != V.interactionType),
     config: {
       duration: 150
@@ -87,8 +87,8 @@ function M(e) {
       isLoaded: null == L ? true : L.isLoaded,
       children: (0, r.jsx)(g.NJ, {
         value: V,
-        children: (0, r.jsxs)(x.Z, {
-          ref: G,
+        children: (0, r.jsxs)(v.Z, {
+          ref: H,
           user: n,
           displayProfile: L,
           themeType: N.l.SIDEBAR,
@@ -102,7 +102,7 @@ function M(e) {
                 user: n,
                 themeType: N.l.SIDEBAR,
                 shouldShowTooltip: null === V.interactionType
-              }), n.bot ? (0, r.jsx)(v.Z, {
+              }), n.bot ? (0, r.jsx)(x.Z, {
                 user: n
               }) : (0, r.jsx)(E.Z, {
                 type: "banner",
@@ -110,16 +110,16 @@ function M(e) {
               })]
             }), (0, r.jsxs)("div", {
               className: w.header,
-              children: [(0, r.jsx)(y.Z, {
+              children: [(0, r.jsx)(_.Z, {
                 user: n,
                 displayProfile: L,
                 themeType: N.l.SIDEBAR,
-                animateOnHover: !H,
+                animateOnHover: !G,
                 className: w.banner
               }), (0, r.jsx)(C.Z, {
                 userId: n.id,
                 className: w.toast
-              }), (0, r.jsx)(_.Z, {
+              }), (0, r.jsx)(y.Z, {
                 user: n,
                 displayProfile: L,
                 channelId: A.id,
@@ -136,7 +136,7 @@ function M(e) {
               currentUser: f,
               displayProfile: L,
               channel: A,
-              isHovering: null == V.interactionType && H,
+              isHovering: null == V.interactionType && G,
               onOpenProfile: M ? true : W
             }), q && (0, r.jsx)("div", {
               className: w.widgetBreadcrumb,
@@ -158,7 +158,7 @@ function M(e) {
             context: F
           }), (null == L ? true : L.profileEffect) != null && (0, r.jsx)(p.Z, {
             profileEffectId: null == L || null == (t = L.profileEffect) ? true : t.id,
-            isHovering: H,
+            isHovering: G,
             urlQueryString: "dmView"
           })]
         })

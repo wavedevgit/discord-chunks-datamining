@@ -88,7 +88,7 @@ class M extends Chunk647438.PureComponent {
     let f = Chunk40851.isManaged(),
       g = false;
     Chunk358221 ? (g = true, e = Chunk388032.intl.string(Chunk388032.t.izMR7u), t = Chunk481060.ua7.Colors.RED) : Chunk26151 ? (e = Chunk266454 ? Chunk388032.intl.string(Chunk388032.t.LW2Gho) : Chunk388032.intl.string(Chunk388032.t.rF7lNz), t = Chunk481060.ua7.Colors.RED, g = true) : Chunk287734 ? (e = Chunk388032.intl.string(Chunk388032.t.PHzjvb), t = Chunk481060.ua7.Colors.RED, g = true) : e = Chunk442837 ? Chunk266454 ? Chunk388032.intl.string(Chunk388032.t.S0W8Z2) : Chunk388032.intl.string(Chunk388032.t.fdEeb2) : Chunk266454 ? Chunk388032.intl.string(Chunk388032.t.S0W8Z2) : Chunk388032.intl.string(Chunk388032.t.focH1t);
-    let _ = (0, Chunk951288.jsx)(Chunk665149.ZP.Icon, {
+    let y = (0, Chunk951288.jsx)(Chunk665149.ZP.Icon, {
       ref: this.iconRef,
       icon: Chunk481060.Csw,
       onClick: this.handleVoiceClick,
@@ -136,8 +136,8 @@ class M extends Chunk647438.PureComponent {
               className: w.tooltip
             })
           },
-          children: () => _
-        }) : _
+          children: () => y
+        }) : y
       }
     })
   }
@@ -153,7 +153,7 @@ class M extends Chunk647438.PureComponent {
         notFriend: r,
         appContext: i
       } = this.props, l = r ? n.getRecipientId() : null, a = () => s.Z.call(n.id, t, !r && !n.isManaged() && !(null == e ? true : e.shiftKey), l);
-      t ? (0, y.Z)(a, i) : a()
+      t ? (0, _.Z)(a, i) : a()
     }), R(this, "handleJoinCall", e => {
       c.default.selectVoiceChannel(this.props.channel.id, e)
     }), R(this, "handleVoiceClick", e => {
@@ -173,9 +173,9 @@ class M extends Chunk647438.PureComponent {
       let {
         appContext: e
       } = this.props, t = () => this.handleJoinCall(true);
-      (0, y.Z)(t, e)
+      (0, _.Z)(t, e)
     }), R(this, "handleBrowserNotSupported", () => {
-      (0, _.Z)()
+      (0, y.Z)()
     })
   }
 }
@@ -190,13 +190,13 @@ function D(e) {
   } = (0, l.cj)([C.Z], () => ({
     callActive: C.Z.isCallActive(n.id),
     callUnavailable: C.Z.isCallUnavailable(n.id)
-  })), _ = n.getRecipientId(), {
-    notFriend: y,
-    isBlocked: v
+  })), y = n.getRecipientId(), {
+    notFriend: _,
+    isBlocked: x
   } = (0, l.cj)([O.Z], () => ({
-    notFriend: n.type === P.d4z.DM && null != _ && !O.Z.isFriend(_),
-    isBlocked: n.type === P.d4z.DM && null != _ && O.Z.isBlocked(_)
-  })), S = (0, l.e7)([j.default], () => j.default.getUser(_)), I = (0, u.bp)(), Z = [], T = (0, p.Z)(n.id), N = (0, l.e7)([x.Z], () => x.Z.hasLayers());
+    notFriend: n.type === P.d4z.DM && null != y && !O.Z.isFriend(y),
+    isBlocked: n.type === P.d4z.DM && null != y && O.Z.isBlocked(y)
+  })), S = (0, l.e7)([j.default], () => j.default.getUser(y)), I = (0, u.bp)(), Z = [], T = (0, p.Z)(n.id), N = (0, l.e7)([v.Z], () => v.Z.hasLayers());
   T && !N && Z.push(a.z.ACTIVITY_GDM_CALL_TOOLTIP);
   let [A, w] = i.useState(false);
   return (i.useEffect(() => {
@@ -211,8 +211,8 @@ function D(e) {
     callActive: m,
     isProvisional: null != (t = null == S ? true : S.isProvisional) && t,
     callUnavailable: b,
-    notFriend: y,
-    isBlocked: v,
+    notFriend: _,
+    isBlocked: x,
     appContext: I,
     canShowTooltip: A,
     canShowActivityGdmTooltip: T,

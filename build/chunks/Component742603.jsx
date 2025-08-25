@@ -61,7 +61,7 @@ function F(e) {
   return e
 }
 
-function G(e, t) {
+function H(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -74,7 +74,7 @@ function G(e, t) {
   }), e
 }
 
-function H(e) {
+function G(e) {
   let {
     focusedParticipant: t,
     channel: n
@@ -120,7 +120,7 @@ function z(e) {
     } = e,
     a = (0, N.Z)(l, true),
     o = (0, b.qY)(l.id),
-    c = null != o ? (0, _.DK)(o) : null,
+    c = null != o ? (0, y.DK)(o) : null,
     u = null != o;
   if ((null == i ? true : i.type) === M.fO.ACTIVITY) null != n && (t = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(C.ZP.Divider, {
@@ -133,7 +133,7 @@ function z(e) {
       variant: "text-md/normal",
       color: "none",
       children: (0, d.Z)(n.name)
-    }), a && (0, r.jsx)(H, {
+    }), a && (0, r.jsx)(G, {
       channel: l,
       focusedParticipant: i
     })]
@@ -149,12 +149,12 @@ function z(e) {
         channel: l,
         stream: n,
         color: a ? "header-primary" : "none"
-      }), a && (0, r.jsx)(H, {
+      }), a && (0, r.jsx)(G, {
         channel: l,
         focusedParticipant: i
       })]
     })
-  } else u && (t = (0, r.jsx)(y.Z, {
+  } else u && (t = (0, r.jsx)(_.Z, {
     guildEvent: o,
     recurrenceId: c
   }));
@@ -177,30 +177,30 @@ function W(e) {
   } = (0, o.cj)([Z.Z], () => ({
     focusedParticipant: Z.Z.getSelectedParticipant(t.id),
     participantsOpen: Z.Z.getParticipantsOpen(t.id)
-  }), [t.id]), _ = i.useContext(I.h9), y = (0, f.ZP)(t), S = (0, m.KS)(t), [P] = (0, p.Z)((null == b ? true : b.type) === M.fO.ACTIVITY ? [b.applicationId] : []), N = k.intl.string(k.t.BVZqJi);
+  }), [t.id]), y = i.useContext(I.h9), _ = (0, f.ZP)(t), S = (0, m.KS)(t), [P] = (0, p.Z)((null == b ? true : b.type) === M.fO.ACTIVITY ? [b.applicationId] : []), N = k.intl.string(k.t.BVZqJi);
   t.isDM() ? N = k.intl.string(k.t.jN2DfX) : t.isGroupDM() && (N = k.intl.string(k.t["e5y+go"]));
   let w = (0, o.e7)([h.Z], () => h.Z.getChannelStatus(t)),
     D = t.isGuildVoice() && u && null != w && w.length > 0,
-    H = (0, T.ZP)(t),
+    G = (0, T.ZP)(t),
     V = D ? (0, r.jsx)(s.ua7, {
       text: k.intl.string(k.t.Mgpxi4),
       delay: 500,
       position: "bottom",
-      shouldShow: H,
-      children: e => (0, r.jsxs)(s.P3F, G(F({}, e), {
+      shouldShow: G,
+      children: e => (0, r.jsxs)(s.P3F, H(F({}, e), {
         className: a()(U.channelStatusClickable, {
-          [U.hoverable]: H
+          [U.hoverable]: G
         }),
-        onClick: H ? W : true,
+        onClick: G ? W : true,
         children: [(0, r.jsx)(s.Text, {
           variant: "text-xs/normal",
           className: a()(U.channelStatus, B.markup, {
-            [U.hoverable]: H
+            [U.hoverable]: G
           }),
           children: O.Z.parseVoiceChannelStatus(w, true, {
             channelId: t.id
           })
-        }), H && (0, r.jsx)(s.vdY, {
+        }), G && (0, r.jsx)(s.vdY, {
           size: "custom",
           color: "currentColor",
           className: a()(U.pencilIcon, U.hoverable),
@@ -230,9 +230,9 @@ function W(e) {
     children: [(0, r.jsx)(s.f6W, {
       theme: L.BR.DARK,
       children: e => (0, r.jsxs)(C.ZP, {
-        onDoubleClick: x.O,
+        onDoubleClick: v.O,
         transparent: true,
-        showToolbar: !_,
+        showToolbar: !y,
         className: a()(e, U.headerBar),
         innerClassName: U.headerBarChildren,
         toolbarClassName: U.toolbar,
@@ -250,9 +250,9 @@ function W(e) {
             children: [null != S ? (0, r.jsx)(C.ZP.ChannelIcon, {
               icon: S,
               "aria-label": N
-            }) : null, y, q && (0, r.jsx)(s.ua7, {
+            }) : null, _, q && (0, r.jsx)(s.ua7, {
               text: k.intl.string(k.t.QyZ4TU),
-              children: e => (0, r.jsx)(s.tQf, G(F({}, e), {
+              children: e => (0, r.jsx)(s.tQf, H(F({}, e), {
                 size: "xs",
                 "aria-label": k.intl.string(k.t.VHXh8f),
                 color: s.TVs.colors.INTERACTIVE_NORMAL,
@@ -260,7 +260,7 @@ function W(e) {
               }))
             })]
           })
-        }), (0, r.jsx)(v.TS, {
+        }), (0, r.jsx)(x.TS, {
           channel: t,
           guild: l
         }), (0, r.jsx)(z, {

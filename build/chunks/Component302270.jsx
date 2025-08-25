@@ -52,7 +52,7 @@ function L(e) {
   } = (0, o.cj)([h.Z], () => ({
     chatOpen: h.Z.getChatOpen(t.id),
     participantsListOpen: h.Z.getParticipantsListOpen(t.id)
-  }), [t.id]), _ = (0, P.B)(t.id), y = (0, S.Rk)(t.id, I.pV.REQUESTED_TO_SPEAK_ONLY), {
+  }), [t.id]), y = (0, P.B)(t.id), _ = (0, S.Rk)(t.id, I.pV.REQUESTED_TO_SPEAK_ONLY), {
     hasParticipantsPanel: C
   } = (0, f.Z)({
     location: "StageChannelCallHeader"
@@ -61,16 +61,16 @@ function L(e) {
     value: l,
     children: [(0, r.jsx)(b.Z, {
       channelId: t.id
-    }, "clips-enabled-indicator"), !i && _ ? (0, r.jsx)("div", {
+    }, "clips-enabled-indicator"), !i && y ? (0, r.jsx)("div", {
       className: D.button,
       children: (0, r.jsx)(N.Z, {
         toggleRequestToSpeakSidebar: () => {
           c && u.Z.updateChatOpen(t.id, false), g && u.Z.toggleParticipantsList(t.id, false), (0, m.v)(s, m.d.OPEN_REQUEST_TO_SPEAK_SIDEBAR), n()
         },
         showRequestToSpeakSidebar: i,
-        numRequestToSpeak: y
+        numRequestToSpeak: _
       })
-    }) : null, !g && C && (0, r.jsx)(v.Z, {
+    }) : null, !g && C && (0, r.jsx)(x.Z, {
       className: a()(D.button, {
         [D.sidebarOpen]: c
       }),
@@ -81,7 +81,7 @@ function L(e) {
       className: a()(D.button, {
         [D.sidebarOpen]: O || i
       }),
-      children: (0, r.jsx)(x.T, {
+      children: (0, r.jsx)(v.T, {
         channelId: t.id,
         showRequestToSpeakSidebar: i,
         toggleRequestToSpeakSidebar: n,
@@ -97,7 +97,7 @@ function k(e) {
     channel: n,
     toggleRequestToSpeakSidebar: l,
     showRequestToSpeakSidebar: d
-  } = e, p = (0, g.ZP)(n), h = (0, o.e7)([T.Z], () => T.Z.getStageInstanceByChannel(n.id)), f = (0, S.Io)(n.id), m = (0, S.Rk)(n.id, I.pV.AUDIENCE), b = (0, o.e7)([O.Z], () => O.Z.getGuild(n.guild_id), [n.guild_id]), x = null != (t = null == b ? true : b.maxStageVideoChannelUsers) ? t : 0, v = null != b && b.features.has(w.oNc.COMMUNITY) ? x < w.TU7 : (null == b ? true : b.premiumTier) !== w.Eu4.TIER_3 && x <= w.eez, P = (0, A.Z)(n), N = (0, o.e7)([j.Z], () => j.Z.can(Z.yP, n)), k = () => {
+  } = e, p = (0, g.ZP)(n), h = (0, o.e7)([T.Z], () => T.Z.getStageInstanceByChannel(n.id)), f = (0, S.Io)(n.id), m = (0, S.Rk)(n.id, I.pV.AUDIENCE), b = (0, o.e7)([O.Z], () => O.Z.getGuild(n.guild_id), [n.guild_id]), v = null != (t = null == b ? true : b.maxStageVideoChannelUsers) ? t : 0, x = null != b && b.features.has(w.oNc.COMMUNITY) ? v < w.TU7 : (null == b ? true : b.premiumTier) !== w.Eu4.TIER_3 && v <= w.eez, P = (0, A.Z)(n), N = (0, o.e7)([j.Z], () => j.Z.can(Z.yP, n)), k = () => {
     u.Z.updateStageVideoLimitBoostUpsellDismissed(n.id, true), E.default.track(w.rMx.BOOSTING_UPSELL_CLICKED, {
       guild_id: n.guild_id,
       type: R.cd.VIDEO_STAGE_LIMIT,
@@ -126,11 +126,11 @@ function k(e) {
       listener_count: r + t
     })
   }, [P]);
-  let G = (0, r.jsx)(c.f6W, {
+  let H = (0, r.jsx)(c.f6W, {
     theme: w.BRd.DARK,
     children: e => {
       var t;
-      return (0, r.jsxs)(y.ZP, {
+      return (0, r.jsxs)(_.ZP, {
         toolbar: (0, r.jsx)(L, {
           toggleRequestToSpeakSidebar: l,
           showRequestToSpeakSidebar: d,
@@ -139,19 +139,19 @@ function k(e) {
         onDoubleClick: C.O,
         transparent: true,
         className: a()(e, D.participants),
-        children: [(0, r.jsx)(y.ZP.Icon, {
+        children: [(0, r.jsx)(_.ZP.Icon, {
           icon: c.ewx,
           disabled: true,
           "aria-label": M.intl.string(M.t.EErMzM),
           className: D.icon,
           color: null != h ? s.Z.colors.HEADER_MUTED.css : true
-        }), (0, r.jsx)(y.ZP.Title, {
+        }), (0, r.jsx)(_.ZP.Title, {
           className: D.channelName,
           wrapperClassName: D.channelNameWrapper,
           children: null != (t = null == h ? true : h.topic) ? t : p
-        }), (0, r.jsx)(y.ZP.Divider, {
+        }), (0, r.jsx)(_.ZP.Divider, {
           className: D.divider
-        }), (0, r.jsxs)(y.ZP.Title, {
+        }), (0, r.jsxs)(_.ZP.Title, {
           children: [(0, r.jsx)(c.S6n, {
             size: "xs",
             color: s.Z.colors.TEXT_LOW_CONTRAST.css
@@ -179,22 +179,22 @@ function k(e) {
     }
   });
   return P ? (0, r.jsxs)("div", {
-    children: [G, (0, r.jsxs)("div", {
+    children: [H, (0, r.jsxs)("div", {
       className: D.boostUpsell,
       children: [(0, r.jsx)(U, {}), (0, r.jsxs)("div", {
         className: D.text,
         children: [(0, r.jsx)(c.Text, {
           variant: "text-md/medium",
           color: "header-primary",
-          children: v ? M.intl.string(M.t["T+zF9P"]) : M.intl.string(M.t["IZ+SVl"])
+          children: x ? M.intl.string(M.t["T+zF9P"]) : M.intl.string(M.t["IZ+SVl"])
         }), (0, r.jsx)(c.Text, {
           variant: "text-xs/medium",
           color: "text-default",
-          children: v ? M.intl.string(M.t.Izgpmp) : M.intl.string(M.t["7FHbPD"])
+          children: x ? M.intl.string(M.t.Izgpmp) : M.intl.string(M.t["7FHbPD"])
         })]
       }), (0, r.jsx)("div", {
         className: D.buttons,
-        children: v ? (0, r.jsxs)(r.Fragment, {
+        children: x ? (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(c.zxk, {
             onClick: k,
             size: "sm",
@@ -203,7 +203,7 @@ function k(e) {
           }), (0, r.jsx)(c.zxk, {
             variant: "expressive",
             onClick: () => {
-              (0, _.f)({
+              (0, y.f)({
                 guildId: n.guild_id,
                 location: {
                   section: w.jXE.STAGE_VIDEO_LIMIT
@@ -226,7 +226,7 @@ function k(e) {
         })
       })]
     })]
-  }) : G
+  }) : H
 }
 
 function U() {

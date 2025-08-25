@@ -1,7 +1,7 @@
 /** Chunk was on 5665 **/
 /** chunk id: 325708, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _,
+  Z: () => y,
   y: () => g
 }), require("./388685.js");
 var r, Chunk951288 = require("./951288.js"),
@@ -40,14 +40,14 @@ function b(e) {
   })
 }
 
-function _(e) {
+function y(e) {
   let {
     sidebarType: t,
     maxWidth: n,
     onWidthChange: r,
     children: a,
     floatingLayer: p
-  } = e, g = l.useRef(null), _ = function(e) {
+  } = e, g = l.useRef(null), y = function(e) {
     switch (e) {
       case 0:
         return "postSidebarWidth";
@@ -62,14 +62,14 @@ function _(e) {
       case 5:
         return "callParticipantsSidebarWidth"
     }
-  }(t), [y, C] = l.useState(h.ZP[_]), x = l.useCallback(e => {
+  }(t), [_, C] = l.useState(h.ZP[y]), v = l.useCallback(e => {
     d.ZP.updatedUnsyncedSettings({
-      [_]: e
+      [y]: e
     })
-  }, [_]), v = 5 === t ? f.at : f.Co, O = (0, f.WL)({
+  }, [y]), x = 5 === t ? f.at : f.Co, O = (0, f.WL)({
     maxWidth: n,
-    minWidth: v
-  }), j = (0, u.dQu)(c.Z.modules.chat.RESIZE_HANDLE_WIDTH), E = (0, s.clamp)(y, v, n), S = O ? E : E + j;
+    minWidth: x
+  }), j = (0, u.dQu)(c.Z.modules.chat.RESIZE_HANDLE_WIDTH), E = (0, s.clamp)(_, x, n), S = O ? E : E + j;
   l.useEffect(() => {
     null == r || r(E, O)
   }, [E, r, O]);
@@ -93,11 +93,11 @@ function _(e) {
             width: S
           }
         }), !O && (0, i.jsx)(b, {
-          minWidth: v,
+          minWidth: x,
           maxWidth: n,
           resizableNode: g,
           onResize: C,
-          onResizeEnd: x
+          onResizeEnd: v
         }), (0, i.jsx)("div", {
           ref: g,
           className: o()(m.container, {

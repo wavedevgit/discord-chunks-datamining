@@ -71,32 +71,32 @@ let p = Chunk647438.forwardRef(function(e, t) {
     isPopoutBlocked: m,
     onPopoutOpen: g,
     onPopoutClose: b,
-    onRequestClose: _
-  } = e, [y, C] = i.useState(false), {
-    isHovered: x,
-    setIsHovered: v,
+    onRequestClose: y
+  } = e, [_, C] = i.useState(false), {
+    isHovered: v,
+    setIsHovered: x,
     onMouseEnter: O,
     onMouseLeave: j,
     cancelTimers: E
   } = (0, o.Z)(200, 300);
 
   function S(e) {
-    "focus" === e.type || y || O()
+    "focus" === e.type || _ || O()
   }
 
   function I() {
-    y || j()
+    _ || j()
   }
 
   function P(e) {
-    E(), C(!y), y ? null == b || b() : null == g || g(), (!x || y) && e()
+    E(), C(!_), _ ? null == b || b() : null == g || g(), (!v || _) && e()
   }
   i.useImperativeHandle(t, () => ({
     hidePopout() {
-      v(false), C(false)
+      x(false), C(false)
     }
-  }), [v, C]);
-  let Z = x && !m || y;
+  }), [x, C]);
+  let Z = v && !m || _;
   return (0, r.jsx)(a.yRy, {
     targetElementRef: p,
     animation: a.yRy.Animation.FADE,
@@ -106,8 +106,8 @@ let p = Chunk647438.forwardRef(function(e, t) {
     align: f,
     spacing: 16,
     onRequestClose: () => {
-      if ((null == _ ? true : _()) === l.F) return l.F;
-      v(false), C(false), null == b || b()
+      if ((null == y ? true : y()) === l.F) return l.F;
+      x(false), C(false), null == b || b()
     },
     renderPopout: e => (0, r.jsx)(d, u({
       isHovered: Z,
@@ -130,7 +130,7 @@ let p = Chunk647438.forwardRef(function(e, t) {
           className: c.actionBarButton,
           onMouseEnter: S,
           onMouseLeave: I,
-          isActive: y
+          isActive: _
         })
       })
     }

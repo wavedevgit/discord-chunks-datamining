@@ -63,7 +63,7 @@ function w(e) {
     layout: "SIDEBAR",
     userId: n.id,
     channelId: w.id
-  }), B = i.useRef(null), F = (0, o.Z)(B), G = e => {
+  }), B = i.useRef(null), F = (0, o.Z)(B), H = e => {
     (0, b.openUserProfileModal)(A({
       sourceAnalyticsLocations: k,
       hideRestrictedProfile: true
@@ -95,12 +95,12 @@ function w(e) {
               displayProfile: M,
               themeType: P.l.SIDEBAR,
               animateOnHover: !F
-            }), (0, r.jsx)(_.Z, {
+            }), (0, r.jsx)(y.Z, {
               user: n,
               displayProfile: M,
               channelId: w.id,
               themeType: P.l.SIDEBAR,
-              onOpenProfile: R ? true : G
+              onOpenProfile: R ? true : H
             })]
           }), (0, r.jsxs)("div", {
             className: N.body,
@@ -108,8 +108,8 @@ function w(e) {
               user: n,
               nickname: h.ZP.getName(null, w.id, n),
               pronouns: null == M ? true : M.pronouns,
-              onOpenProfile: R ? true : G,
-              tags: (0, r.jsx)(y.Z, {
+              onOpenProfile: R ? true : H,
+              tags: (0, r.jsx)(_.Z, {
                 displayProfile: M,
                 themeType: P.l.SIDEBAR
               })
@@ -118,7 +118,7 @@ function w(e) {
               children: [(0, r.jsx)(O.Z, {
                 heading: Z.intl.string(Z.t["61W33d"]),
                 headingColor: "header-primary",
-                children: (0, r.jsx)(x.Z, {
+                children: (0, r.jsx)(v.Z, {
                   userBio: null == M ? true : M.bio,
                   userId: n.id,
                   animateOnHover: true,
@@ -127,7 +127,7 @@ function w(e) {
               }), (0, r.jsx)(O.Z, {
                 heading: Z.intl.string(Z.t["A//N4u"]),
                 headingColor: "header-primary",
-                children: (0, r.jsx)(v.Z, {
+                children: (0, r.jsx)(x.Z, {
                   userId: n.id
                 })
               })]
@@ -137,7 +137,7 @@ function w(e) {
           className: T.footer,
           children: (0, r.jsx)(a.P3F, {
             onClick: () => {
-              G(), (0, m.pQ)(A({
+              H(), (0, m.pQ)(A({
                 action: "PRESS_VIEW_PROFILE",
                 analyticsLocations: k
               }, U))

@@ -61,7 +61,7 @@ function F(e) {
   return e
 }
 
-function G(e, t) {
+function H(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -74,11 +74,11 @@ function G(e, t) {
   }), e
 }
 
-function H(e) {
+function G(e) {
   let {
     channel: t
   } = e, l = t.isArchivedThread(), a = (0, O.P0)(t), [o, u] = i.useState(false), d = () => {
-    u(true), v.Z.resolveFlag(t.id).then(() => {
+    u(true), x.Z.resolveFlag(t.id).then(() => {
       u(false)
     })
   };
@@ -117,7 +117,7 @@ function V(e) {
     isLastItem: l = false,
     parentChannelId: s
   } = e, {
-    ref: v,
+    ref: x,
     width: O
   } = (0, p.ZP)(), [E, L] = i.useState(3), [V, z] = i.useState(!n), [W, q] = (0, h.Z)(false, 2e3), Y = (0, o.e7)([Z.Z], () => Z.Z.getChannel(t), [t]), {
     firstMessage: K
@@ -136,7 +136,7 @@ function V(e) {
     }
   }, [n]);
   i.useLayoutEffect(() => {
-    let e = v.current;
+    let e = x.current;
     if (null == e || !n) return;
     let t = new IntersectionObserver(ea, {
       threshold: 1
@@ -175,7 +175,7 @@ function V(e) {
       className: a()(k.container, {
         [k.header]: V
       }),
-      ref: v,
+      ref: x,
       children: [en ? (0, r.jsx)("div", {
         className: k.reportedMessageActions,
         children: (0, r.jsx)(S.Z, {
@@ -188,7 +188,7 @@ function V(e) {
         }),
         children: [!ec && !J && null != ei && (0, r.jsx)("div", {
           className: B.reactions,
-          children: (0, r.jsx)(x.le, {
+          children: (0, r.jsx)(v.le, {
             message: K,
             readOnly: false,
             useChatFontScaling: false,
@@ -217,7 +217,7 @@ function V(e) {
           useChatFontScaling: false,
           isForumToolbar: true,
           forceHideReactionCreates: true
-        }), !J && (0, r.jsx)(_.X, {
+        }), !J && (0, r.jsx)(y.X, {
           type: g.O.NORMAL,
           message: K,
           channel: Y,
@@ -230,11 +230,11 @@ function V(e) {
         })]
       }), (0, r.jsxs)("div", {
         className: k.buttons,
-        children: [en ? (0, r.jsx)(H, {
+        children: [en ? (0, r.jsx)(G, {
           channel: Y
         }) : (0, r.jsx)(c.ua7, {
           text: D.intl.string(D.t.F7oeDg),
-          children: e => (0, r.jsx)(c.zxk, G(F({}, e), {
+          children: e => (0, r.jsx)(c.zxk, H(F({}, e), {
             icon: eh,
             size: "sm",
             variant: "secondary",
@@ -243,13 +243,13 @@ function V(e) {
           }))
         }), (0, r.jsx)(c.ua7, {
           text: D.intl.string(D.t.WqhZsr),
-          children: e => W ? (0, r.jsx)(c.zxk, G(F({}, e), {
+          children: e => W ? (0, r.jsx)(c.zxk, H(F({}, e), {
             icon: c.dz2,
             size: "sm",
             variant: "secondary",
             onClick: ed,
             text: D.intl.string(D.t["t5VZ8/"])
-          })) : (0, r.jsx)(c.hU, G(F({}, e), {
+          })) : (0, r.jsx)(c.hU, H(F({}, e), {
             icon: c.xPt,
             size: "sm",
             variant: "secondary",
@@ -258,7 +258,7 @@ function V(e) {
           }))
         }), !n && (0, r.jsx)(c.ua7, {
           text: D.intl.string(D.t.nFP4oa),
-          children: e => (0, r.jsx)(c.hU, G(F({}, e), {
+          children: e => (0, r.jsx)(c.hU, H(F({}, e), {
             icon: c.Za2,
             size: "sm",
             variant: "secondary",
@@ -269,7 +269,7 @@ function V(e) {
       })]
     }), el && (0, r.jsx)(m.Z, {
       threadId: t
-    }), (0, r.jsx)(y.Z, {
+    }), (0, r.jsx)(_.Z, {
       channel: Y,
       isLastItem: l
     })]

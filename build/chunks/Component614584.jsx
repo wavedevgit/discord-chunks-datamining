@@ -68,33 +68,33 @@ let S = Chunk647438.memo(function(e) {
     setPopout: N,
     isReplySpineClickable: A,
     showReplySpine: w
-  } = e, R = S.state === f.Y.LOADED ? S.message : true, M = (0, _.Uj)(R), D = (0, u.p)(), L = s.d.useExperiment({
+  } = e, R = S.state === f.Y.LOADED ? S.message : true, M = (0, y.Uj)(R), D = (0, u.p)(), L = s.d.useExperiment({
     location: "repliedMessage"
   }).enabled, k = (0, d.A)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), U = i.useMemo(() => {
     if (null == R) return null;
     let e = (0, o.Z)(R);
-    if (e.type === v.uaV.USER_JOIN) return (0, a.Rp)(O.intl.formatToParts(g.Z.getSystemMessageUserJoin(e.id), {
+    if (e.type === x.uaV.USER_JOIN) return (0, a.Rp)(O.intl.formatToParts(g.Z.getSystemMessageUserJoin(e.id), {
       username: null != M ? M.nick : e.author.username,
       usernameHook: e => e
     }));
-    if (e.type === v.uaV.ROLE_SUBSCRIPTION_PURCHASE) return (0, a.Rp)((0, c.PA)({
+    if (e.type === x.uaV.ROLE_SUBSCRIPTION_PURCHASE) return (0, a.Rp)((0, c.PA)({
       username: null != M ? M.nick : e.author.username,
       guildId: null == I ? true : I.guild_id,
       roleSubscriptionData: e.roleSubscriptionData
     }));
-    if (e.type === v.uaV.GUILD_APPLICATION_PREMIUM_SUBSCRIPTION) return (0, a.Rp)((0, p.Y)({
+    if (e.type === x.uaV.GUILD_APPLICATION_PREMIUM_SUBSCRIPTION) return (0, a.Rp)((0, p.Y)({
       application: null == e ? true : e.application,
       username: null == M ? true : M.nick
     }));
-    if (e.type === v.uaV.PRIVATE_CHANNEL_INTEGRATION_ADDED) return (0, a.Rp)((0, h.B2)({
+    if (e.type === x.uaV.PRIVATE_CHANNEL_INTEGRATION_ADDED) return (0, a.Rp)((0, h.B2)({
       application: null == e ? true : e.application,
       username: null == M ? true : M.nick
     }));
-    if (e.type === v.uaV.PRIVATE_CHANNEL_INTEGRATION_REMOVED) return (0, a.Rp)((0, h.hj)({
+    if (e.type === x.uaV.PRIVATE_CHANNEL_INTEGRATION_REMOVED) return (0, a.Rp)((0, h.hj)({
       application: null == e ? true : e.application,
       username: null == M ? true : M.nick
     }));
-    else if (e.type === v.uaV.GUILD_DEADCHAT_REVIVE_PROMPT) return "" !== e.content ? e.content : O.intl.string(O.t.wnn1DQ);
+    else if (e.type === x.uaV.GUILD_DEADCHAT_REVIVE_PROMPT) return "" !== e.content ? e.content : O.intl.string(O.t.wnn1DQ);
     if (null != e.content && "" !== e.content) {
       let t = {
           formatInline: true,
@@ -121,13 +121,13 @@ let S = Chunk647438.memo(function(e) {
   } = (0, l.cj)([m.Z], () => ({
     isReplyAuthorBlocked: null != R && m.Z.isBlockedForMessage(R),
     isReplyAuthorIgnored: null != R && m.Z.isIgnoredForMessage(R)
-  }), [R]), G = (0, x.wq)(null == R ? true : R.author.id, I.id), H = (0, x.$3)(n, R), V = (0, x.Wl)(R, I, Z, N), z = (0, x.rY)(T, N), W = i.useCallback(() => {
+  }), [R]), H = (0, v.wq)(null == R ? true : R.author.id, I.id), G = (0, v.$3)(n, R), V = (0, v.Wl)(R, I, Z, N), z = (0, v.rY)(T, N), W = i.useCallback(() => {
     N({
       referencedUsernameProfile: false,
       referencedAvatarProfile: false
     })
-  }, [N]), q = (0, _.Uj)(n);
-  return (0, r.jsx)(y.Z, {
+  }, [N]), q = (0, y.Uj)(n);
+  return (0, r.jsx)(_.Z, {
     repliedAuthor: M,
     baseMessage: n,
     channel: I,
@@ -142,8 +142,8 @@ let S = Chunk647438.memo(function(e) {
     renderPopout: C.Z,
     onClickAvatar: z,
     onClickUsername: V,
-    onClickReply: H,
-    onContextMenu: G,
+    onClickReply: G,
+    onContextMenu: H,
     onPopoutRequestClose: W,
     isReplySpineClickable: A,
     showReplySpine: w

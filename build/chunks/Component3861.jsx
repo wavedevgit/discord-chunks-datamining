@@ -1,7 +1,7 @@
 /** Chunk was on 5665 **/
 /** chunk id: 3861, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => y
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -18,16 +18,16 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk354459 = require("./354459.js"),
   Chunk394024 = require("./394024.js");
-let _ = (0, Chunk112724.Z)(e => {
+let y = (0, Chunk112724.Z)(e => {
   let {
     participants: t,
     filteredParticipants: n,
     selectedParticipant: l,
-    participantsVersion: _,
-    layout: y,
+    participantsVersion: y,
+    layout: _,
     onSelectParticipant: C,
-    onContextMenuParticipant: x,
-    onFullscreenParticipant: v,
+    onContextMenuParticipant: v,
+    onFullscreenParticipant: x,
     channel: O,
     hasConnectPermission: j,
     className: E,
@@ -44,7 +44,7 @@ let _ = (0, Chunk112724.Z)(e => {
   i.useEffect(() => {
     c.S.dispatch(m.CkL.REMEASURE_TARGET)
   }, [P, Z, R.width, R.height]);
-  let M = i.useMemo(() => n.filter(e => e.type !== g.fO.ACTIVITY || !e.participants.some(e => (0, a.J)(e))), [n, _]);
+  let M = i.useMemo(() => n.filter(e => e.type !== g.fO.ACTIVITY || !e.participants.some(e => (0, a.J)(e))), [n, y]);
   return (null == w ? true : w.channelId) === O.id ? (0, r.jsx)(d.Z, {
     height: Z
   }) : (null == O ? true : O.isGuildVocal()) && !S ? (0, r.jsx)(u.Z, {
@@ -56,7 +56,7 @@ let _ = (0, Chunk112724.Z)(e => {
     width: P,
     className: b.voiceCallWrapper,
     participants: t,
-    onContextMenu: x
+    onContextMenu: v
   }) : (n = S ? n : t, null == l) ? 0 === n.length ? (0, r.jsx)(f.Z, {
     channelId: O.id
   }) : (0, r.jsx)(s.Z, {
@@ -69,13 +69,13 @@ let _ = (0, Chunk112724.Z)(e => {
       participants: M,
       totalNumberOfParticipants: t.length,
       onClick: C,
-      onDoubleClick: v,
-      onContextMenu: x,
+      onDoubleClick: x,
+      onContextMenu: v,
       inCall: S
     })
   }) : (0, r.jsx)(h.Z, {
-    onFullscreenParticipant: v,
-    onContextMenuParticipant: x,
+    onFullscreenParticipant: x,
+    onContextMenuParticipant: v,
     onSelectParticipant: C,
     selectedParticipant: l,
     filteredParticipants: M,
@@ -85,7 +85,7 @@ let _ = (0, Chunk112724.Z)(e => {
     idle: T,
     height: Z,
     width: P,
-    layout: y,
+    layout: _,
     inCall: S,
     channel: O,
     showParticipants: I

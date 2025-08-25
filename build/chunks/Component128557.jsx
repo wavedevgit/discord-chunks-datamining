@@ -96,9 +96,9 @@ function w(e) {
       className: a()(T.checkmark, {
         [T.animate]: d
       })
-    }) : (0, r.jsx)(x.Z, {
+    }) : (0, r.jsx)(v.Z, {
       className: T.arrow,
-      direction: x.Z.Directions.RIGHT
+      direction: v.Z.Directions.RIGHT
     })]
   })
 }
@@ -106,7 +106,7 @@ function w(e) {
 function R(e) {
   let {
     channel: t
-  } = e, l = (0, s.e7)([y.Z], () => null != t ? y.Z.getGuild(t.getGuildId()) : null, [t]), p = null != l && E.default.extractTimestamp(l.id) < Date.now() - I._8R, x = (0, s.e7)([_.default], () => (null == l ? true : l.ownerId) === _.default.getId(), [l]), {
+  } = e, l = (0, s.e7)([_.Z], () => null != t ? _.Z.getGuild(t.getGuildId()) : null, [t]), p = null != l && E.default.extractTimestamp(l.id) < Date.now() - I._8R, v = (0, s.e7)([y.default], () => (null == l ? true : l.ownerId) === y.default.getId(), [l]), {
     canInvite: R,
     canManageGuild: M,
     canMessage: D
@@ -119,8 +119,8 @@ function R(e) {
     guildPersonalized: B
   } = (0, f.h_)(l), {
     handleInvite: F,
-    handleMessage: G,
-    handlePersonalize: H,
+    handleMessage: H,
+    handlePersonalize: G,
     handleDownload: V,
     handleAddApplication: z
   } = function(e) {
@@ -145,7 +145,7 @@ function R(e) {
         h.ZP.trackWithMetadata(I.rMx.SERVER_SETUP_CTA_CLICKED, {
           setup_type: P.Ft.CHANNEL_WELCOME,
           action: P.j7.SEND_MESSAGE
-        }), v.S.dispatch(I.CkL.TEXTAREA_FOCUS, {
+        }), x.S.dispatch(I.CkL.TEXTAREA_FOCUS, {
           highlight: true,
           channelId: I.lds
         })
@@ -264,7 +264,7 @@ function R(e) {
       iconUrl: u.$_T,
       header: Z.intl.string(Z.t.c5kxPj),
       completed: B,
-      onClick: H
+      onClick: G
     })
   }, "customize")), D && J.push((0, r.jsx)(o.Z.div, {
     className: T.cardWrapper,
@@ -275,7 +275,7 @@ function R(e) {
       iconUrl: u.qMX,
       header: Z.intl.string(Z.t["SoP7+v"]),
       completed: U,
-      onClick: G
+      onClick: H
     })
   }, "message")), (0, j.isWeb)() && J.push((0, r.jsx)(o.Z.div, {
     className: T.cardWrapper,
@@ -300,7 +300,7 @@ function R(e) {
       onClick: z
     })
   }, "addapp")));
-  let $ = x ? Z.intl.string(Z.t["1ach9P"]) : Z.intl.string(Z.t["ezm+/v"]);
+  let $ = v ? Z.intl.string(Z.t["1ach9P"]) : Z.intl.string(Z.t["ezm+/v"]);
   p && ($ = Z.intl.string(Z.t["gwyU/P"]));
   let ee = "".concat(O.Z.getArticleURL(I.BhN.GUILD_GETTING_STARTED), "?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-new-user&utm_content=--t%3Apm");
   return (0, r.jsx)(S.ZP, {

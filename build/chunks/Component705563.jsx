@@ -1,7 +1,7 @@
 /** Chunk was on 5665 **/
 /** chunk id: 705563, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => y
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -20,18 +20,18 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk482722 = require("./482722.js");
 
-function _(e) {
+function y(e) {
   let {
     channelId: t,
     showProfile: n = false,
-    showTrailingDivider: _ = false
-  } = e, y = d.default.cast(t), {
+    showTrailingDivider: y = false
+  } = e, _ = d.default.cast(t), {
     joinRequest: C,
-    isModmin: x,
-    guildId: v,
+    isModmin: v,
+    guildId: x,
     maxMembers: O
   } = (0, i.cj)([p.Z, c.Z, u.Z], () => {
-    let e = p.Z.getRequest(y),
+    let e = p.Z.getRequest(_),
       t = c.Z.getGuild(null == e ? true : e.guildId);
     return {
       joinRequest: e,
@@ -39,12 +39,12 @@ function _(e) {
       guildId: null == t ? true : t.id,
       maxMembers: null == t ? true : t.maxMembers
     }
-  }), j = (0, i.e7)([s.Z], () => null != v ? s.Z.getMemberCount(v) : 0), E = null != O && (null != j ? j : 0) >= O, {
+  }), j = (0, i.e7)([s.Z], () => null != x ? s.Z.getMemberCount(x) : 0), E = null != O && (null != j ? j : 0) >= O, {
     approveRequest: S,
     rejectRequest: I,
     submitting: P
   } = (0, f.s)(null == C ? true : C.guildId, null == C ? true : C.userId, null == C ? true : C.joinRequestId);
-  return null != C && C.applicationStatus === h.wB.SUBMITTED && x ? (0, r.jsxs)("div", {
+  return null != C && C.applicationStatus === h.wB.SUBMITTED && v ? (0, r.jsxs)("div", {
     className: b.buttons,
     children: [(0, r.jsx)(l.ua7, {
       text: g.intl.string(g.t.cdPGbG),
@@ -103,6 +103,6 @@ function _(e) {
       variant: "secondary",
       size: "sm",
       text: g.intl.string(g.t.iXAna2)
-    }), _ && (0, r.jsx)(a.ZP.Divider, {})]
+    }), y && (0, r.jsx)(a.ZP.Divider, {})]
   }) : null
 }

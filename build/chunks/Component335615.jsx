@@ -125,11 +125,11 @@ let $ = Chunk998502.ZP.getEnableHardwareAcceleration(),
       currentUser: p,
       activities: h,
       applicationStream: m,
-      status: _,
-      channel: y,
+      status: y,
+      channel: _,
       guildId: C,
-      isTyping: x,
-      isMobileOnline: v,
+      isTyping: v,
+      isMobileOnline: x,
       premiumSince: O,
       nameplate: j
     } = e, E = J(e, ["colorString", "colorStrings", "colorRoleName", "colorRoleId", "isOwner", "nick", "user", "currentUser", "activities", "applicationStream", "status", "channel", "guildId", "isTyping", "isMobileOnline", "premiumSince", "nameplate"]), S = i.useRef(null), [I, P] = i.useState(false), Z = null != O ? new Date(O) : null, N = i.useCallback(e => {
@@ -140,22 +140,22 @@ let $ = Chunk998502.ZP.getEnableHardwareAcceleration(),
         return n => (0, r.jsx)(e, Q(X({}, n), {
           user: u,
           guildId: C,
-          channel: y,
+          channel: _,
           showMediaItems: t
         }))
       })
-    }, [u, C, y]), A = i.useCallback(() => {
+    }, [u, C, _]), A = i.useCallback(() => {
       let e = "@".concat(V.ZP.getUserTag(u, {
           decoration: "never"
         })),
         t = "<@".concat(u.id, ">");
-      G.S.dispatch(W.CkL.TEXTAREA_FOCUS, {
-        channelId: y.id
-      }), G.S.dispatchToLastSubscribed(W.CkL.INSERT_TEXT, {
+      H.S.dispatch(W.CkL.TEXTAREA_FOCUS, {
+        channelId: _.id
+      }), H.S.dispatchToLastSubscribed(W.CkL.INSERT_TEXT, {
         plainText: e,
         rawText: t
-      }), g.Z.startTyping(y.id)
-    }, [u, y.id]), w = i.useCallback(e => {
+      }), g.Z.startTyping(_.id)
+    }, [u, _.id]), w = i.useCallback(e => {
       null != C && (e.stopPropagation(), (0, T.f)({
         guildId: C,
         location: {
@@ -168,7 +168,7 @@ let $ = Chunk998502.ZP.getEnableHardwareAcceleration(),
       targetElementRef: S,
       user: u,
       guildId: C,
-      channelId: y.id,
+      channelId: _.id,
       roleId: o,
       position: d.tq ? "window_center" : "left",
       spacing: 16,
@@ -190,7 +190,7 @@ let $ = Chunk998502.ZP.getEnableHardwareAcceleration(),
           user: u,
           currentUser: p,
           nick: c,
-          status: _,
+          status: y,
           activities: h,
           applicationStream: m,
           isOwner: s,
@@ -198,10 +198,10 @@ let $ = Chunk998502.ZP.getEnableHardwareAcceleration(),
           colorString: t,
           colorStrings: l,
           colorRoleName: a,
-          isTyping: x,
-          channel: y,
+          isTyping: v,
+          channel: _,
           guildId: C,
-          isMobile: v,
+          isMobile: x,
           onClickPremiumGuildIcon: w,
           selected: I,
           itemProps: E,
@@ -547,7 +547,7 @@ class el extends Chunk647438.Component {
         } = this.getDimensions();
       if (true === n || 0 === n || null == t) return;
       this.hasContentFeed() && (t = t.filter(e => e.section !== S.T));
-      let r = t.map(e => this.getRowProps(e)).slice(0, n + 1).filter(H.lm);
+      let r = t.map(e => this.getRowProps(e)).slice(0, n + 1).filter(G.lm);
       if (0 === r.length) return;
       let i = r.reduce((e, t) => {
         var n;
@@ -571,7 +571,7 @@ function ea(e) {
     className: n
   } = e, {
     analyticsLocations: l
-  } = (0, x.ZP)(y.Z.MEMBER_LIST), o = (0, p.e7)([_.Z], () => _.Z.keyboardModeEnabled), s = (0, p.cj)([D.ZP], () => D.ZP.getProps(t.guild_id, t.id)), {
+  } = (0, v.ZP)(_.Z.MEMBER_LIST), o = (0, p.e7)([y.Z], () => y.Z.keyboardModeEnabled), s = (0, p.cj)([D.ZP], () => D.ZP.getProps(t.guild_id, t.id)), {
     rows: d,
     groups: f,
     version: m,
@@ -580,7 +580,7 @@ function ea(e) {
     memberStoreProps: s,
     channelId: t.id,
     guildId: t.guild_id
-  }), b = i.useRef(null), C = (0, h.UBm)("lg") + (0, h.UBm)("xxs"), v = i.useCallback((e, t) => {
+  }), b = i.useRef(null), C = (0, h.UBm)("lg") + (0, h.UBm)("xxs"), x = i.useCallback((e, t) => {
     let n = b.current;
     if (null == n) return;
     let r = parseInt(t, 10),
@@ -614,12 +614,12 @@ function ea(e) {
     })
   }), []), E = (0, u.ZP)({
     id: "members-".concat(t.id),
-    setFocus: v,
+    setFocus: x,
     isEnabled: o,
     scrollToStart: O,
     scrollToEnd: j
   });
-  return (0, r.jsx)(x.Gt, {
+  return (0, r.jsx)(v.Gt, {
     value: l,
     children: (0, r.jsx)("div", {
       className: a()(Y.container, n),

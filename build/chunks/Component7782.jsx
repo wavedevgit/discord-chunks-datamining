@@ -34,7 +34,7 @@ let T = e => {
     let {
       userId: t,
       channelId: n
-    } = e, l = (0, s.e7)([y.Z], () => y.Z.getMutualGuilds(t), [t]), a = i.useMemo(() => null != l ? l.slice(0, 3).map((e, t) => {
+    } = e, l = (0, s.e7)([_.Z], () => _.Z.getMutualGuilds(t), [t]), a = i.useMemo(() => null != l ? l.slice(0, 3).map((e, t) => {
       let {
         guild: n
       } = e, i = null != n ? j.ZP.getGuildIconURL({
@@ -181,9 +181,9 @@ let T = e => {
     } = e, l = i.useCallback(() => {
       (0, c.showToast)((0, c.createToast)(P.intl.string(P.t.a2j0ho), c.ToastType.FAILURE))
     }, []), a = i.useCallback(() => {
-      _.Z.closeChannelSidebar(x.uZ)
+      y.Z.closeChannelSidebar(v.uZ)
     }, []), o = i.useCallback(() => {
-      _.Z.closeChannelSidebar(x.uZ)
+      y.Z.closeChannelSidebar(v.uZ)
     }, []), {
       acceptMessageRequest: s,
       rejectMessageRequest: u,
@@ -222,7 +222,7 @@ let T = e => {
       showingBanner: i
     } = e, {
       channelId: l
-    } = (0, g._)(), u = (0, s.e7)([f.Z], () => null != l && f.Z.isSpam(l), [l]), d = (0, s.e7)([v.Z], () => v.Z.getRelationshipType(t), [t]), p = n.id === l, h = !o.tq && !p, m = !!o.tq || p || u, _ = u || p ? (0, r.jsxs)("div", {
+    } = (0, g._)(), u = (0, s.e7)([f.Z], () => null != l && f.Z.isSpam(l), [l]), d = (0, s.e7)([x.Z], () => x.Z.getRelationshipType(t), [t]), p = n.id === l, h = !o.tq && !p, m = !!o.tq || p || u, y = u || p ? (0, r.jsxs)("div", {
       className: Z.inline,
       children: [(0, r.jsx)(A, {
         channelId: n.id,
@@ -241,7 +241,7 @@ let T = e => {
         channel: n,
         navigateAwayOnReportSuccess: h
       })]
-    }), y = d !== S.OGo.PENDING_INCOMING || u || p ? null : (0, r.jsx)(c.Text, {
+    }), _ = d !== S.OGo.PENDING_INCOMING || u || p ? null : (0, r.jsx)(c.Text, {
       color: "header-secondary",
       variant: "text-sm/normal",
       children: P.intl.string(P.t.c2v5nJ)
@@ -258,7 +258,7 @@ let T = e => {
         className: Z.divider
       }), (0, r.jsxs)("div", {
         className: a()(Z.inline, Z.wrap),
-        children: [y, _]
+        children: [_, y]
       })]
     })
   }

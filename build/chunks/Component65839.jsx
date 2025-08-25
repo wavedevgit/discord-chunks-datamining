@@ -1,7 +1,7 @@
 /** Chunk was on 5665 **/
 /** chunk id: 65839, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => y
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -66,7 +66,7 @@ let b = e => {
       })]
     })
   },
-  _ = e => {
+  y = e => {
     let {
       channel: t,
       directoryEntries: n,
@@ -76,10 +76,10 @@ let b = e => {
       handleClearSearch: d,
       handleSearchKeyPress: m,
       currentCategoryId: g,
-      handleSelectCategory: _,
-      categoryCounts: y,
+      handleSelectCategory: y,
+      categoryCounts: _,
       allEntriesCount: C,
-      isLoading: x
+      isLoading: v
     } = e;
     return (0, r.jsx)("div", {
       className: h.pageContainer,
@@ -98,7 +98,7 @@ let b = e => {
             look: "brand",
             selectedItem: g,
             onItemSelect: e => {
-              _(e)
+              y(e)
             },
             children: [(0, r.jsx)(o.njP.Item, {
               className: f.tabBarItem,
@@ -112,11 +112,11 @@ let b = e => {
               return (0, r.jsx)(o.njP.Item, {
                 className: f.tabBarItem,
                 id: t,
-                children: "".concat(n, " ").concat(null != y[t] ? "(".concat(y[t], ")") : "")
+                children: "".concat(n, " ").concat(null != _[t] ? "(".concat(_[t], ")") : "")
               }, t)
             })]
           })
-        }), x && null == n ? (0, r.jsx)(o.$jN, {
+        }), v && null == n ? (0, r.jsx)(o.$jN, {
           className: h.spinner
         }) : null == n ? true : n.map((e, t) => (0, r.jsxs)(i.Fragment, {
           children: [true !== e.header ? (0, r.jsx)(o.Text, {

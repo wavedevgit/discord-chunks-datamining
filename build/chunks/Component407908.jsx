@@ -22,15 +22,15 @@ function b(e) {
   var t, n;
   let {
     channel: b
-  } = e, _ = i.useContext(p.AnalyticsContext), y = (0, a.Aq)(), C = m.intl.string(g.default["Beo/7u"]), {
-    firstMessage: x
-  } = (0, s.cl)(b), v = null == x || null == (t = x.messageSnapshots) ? true : t[0], O = null == v || null == (n = v.moderatorReport) ? true : n.reported_user_id;
+  } = e, y = i.useContext(p.AnalyticsContext), _ = (0, a.Aq)(), C = m.intl.string(g.default["Beo/7u"]), {
+    firstMessage: v
+  } = (0, s.cl)(b), x = null == v || null == (t = v.messageSnapshots) ? true : t[0], O = null == x || null == (n = x.moderatorReport) ? true : n.reported_user_id;
   return b.isModeratorReportChannel() && null != O ? (0, r.jsx)(u.ZP.Icon, {
     onClick: () => {
       (0, d.Kh)(b.id), (0, o.i)(), (0, c.r)(b.guild_id, O, b.id, {
         modViewPanel: f.k.INFO,
-        sourceLocation: null != location ? location : _.location
-      }), y.dispatch(h.CkL.POPOUT_CLOSE)
+        sourceLocation: null != location ? location : y.location
+      }), _.dispatch(h.CkL.POPOUT_CLOSE)
     },
     tooltip: C,
     icon: l.HI3,

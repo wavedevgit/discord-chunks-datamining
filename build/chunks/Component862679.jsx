@@ -22,24 +22,24 @@ let p = function(e) {
     buttonSubmitting: m,
     onButtonClick: g,
     imageSrc: b,
-    animationSrc: _,
-    secondaryButtonText: y,
+    animationSrc: y,
+    secondaryButtonText: _,
     onSecondaryButtonClick: C,
-    children: x,
-    useReducedMotion: v = false
+    children: v,
+    useReducedMotion: x = false
   } = e, O = (0, a.e7)([u.ZP], () => u.ZP.getState().isMembersOpen);
   if (l.tq && O) return null;
   if (null == t) return (0, r.jsx)(r.Fragment, {
-    children: i.Children.only(x)
+    children: i.Children.only(v)
   });
   let j = null;
   return null != b ? j = (0, r.jsx)("img", {
     alt: "",
     src: b,
     className: d.image
-  }) : null != _ && (j = (0, r.jsx)(s.Fmz, {
-    importData: _,
-    shouldAnimate: !v,
+  }) : null != y && (j = (0, r.jsx)(s.Fmz, {
+    importData: y,
+    shouldAnimate: !x,
     className: d.animation
   })), (0, r.jsxs)("div", {
     className: d.wrapper,
@@ -59,14 +59,14 @@ let p = function(e) {
       })]
     }), (0, r.jsxs)("div", {
       className: d.buttonContainer,
-      children: [null != y && (0, r.jsx)(o.zx, {
+      children: [null != _ && (0, r.jsx)(o.zx, {
         className: d.button,
         size: o.zx.Sizes.SMALL,
         onClick: C,
         look: o.zx.Looks.LINK,
         color: o.zx.Colors.PRIMARY,
         submitting: m,
-        children: y
+        children: _
       }), null != h && (0, r.jsx)(o.zx, {
         className: d.button,
         innerClassName: d.innerButton,

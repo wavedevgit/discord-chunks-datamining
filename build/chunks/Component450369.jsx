@@ -129,7 +129,7 @@ let k = 16 / 9,
     } = i.useContext(c.Sfi), {
       id: m,
       blocked: g,
-      ignored: _
+      ignored: y
     } = t, O = (0, s.Wu)([E.Z], () => E.Z.getAllActiveStreams(), []), {
       selectedParticipant: j,
       largeStream: S
@@ -138,7 +138,7 @@ let k = 16 / 9,
       largeStream: null != l && b.Z.getStageStreamSize(l.id)
     })), T = i.useCallback((e, t) => {
       if (e.type === R.fO.STREAM && 0 === O.filter(t => (0, C.V9)(t) === e.id && t.state !== w.jm8.ENDED).length) {
-        if (!(0, x.p9)(l, Z.Z, I.Z, P.Z, y.Z)[0]) return;
+        if (!(0, v.p9)(l, Z.Z, I.Z, P.Z, _.Z)[0]) return;
         (0, p.rn)((0, C.my)(e.id), {
           forceMultiple: t.shiftKey
         })
@@ -147,9 +147,9 @@ let k = 16 / 9,
     return (0, r.jsx)(N.Z, {
       participant: n,
       aspectRatio: k,
-      fit: n.type === R.fO.USER ? v.L.COVER : true,
+      fit: n.type === R.fO.USER ? x.L.COVER : true,
       blocked: g,
-      ignored: _,
+      ignored: y,
       channel: l,
       className: M.tile,
       inCall: true,
@@ -169,19 +169,19 @@ let k = 16 / 9,
       width: c
     } = e, {
       newestAnalyticsLocation: u
-    } = (0, m.ZP)(f.Z.STAGE_TILE), p = (0, h.bp)(), y = l.getGuildId(), C = S.default.getId();
-    a()(null != y, "Channel cannot be guildless");
+    } = (0, m.ZP)(f.Z.STAGE_TILE), p = (0, h.bp)(), _ = l.getGuildId(), C = S.default.getId();
+    a()(null != _, "Channel cannot be guildless");
     let {
-      user: x
-    } = i, v = (0, s.e7)([b.Z], () => b.Z.getParticipant(l.id, i.id), [l.id, i.id]), j = (0, s.e7)([T.ZP], () => T.ZP.isModerator(x.id, l.id), [l.id, x.id]);
-    if (null == v || v.type === R.fO.ACTIVITY) return null;
+      user: v
+    } = i, x = (0, s.e7)([b.Z], () => b.Z.getParticipant(l.id, i.id), [l.id, i.id]), j = (0, s.e7)([T.ZP], () => T.ZP.isModerator(v.id, l.id), [l.id, v.id]);
+    if (null == x || x.type === R.fO.ACTIVITY) return null;
     let E = e => {
         (0, g.h)({
           type: o.ImpressionTypes.MENU,
           name: o.ImpressionNames.CALL_TILE_CONTEXT_MENU,
           properties: {
             location: "StageTile",
-            is_tile_owner: x.id === C,
+            is_tile_owner: v.id === C,
             tile_type: e
           }
         })
@@ -198,9 +198,9 @@ let k = 16 / 9,
                 stream: e.stream,
                 appContext: p,
                 exitFullscreen: () => {},
-                onInteraction: (0, _.u)("StreamContextMenu", u, {
+                onInteraction: (0, y.u)("StreamContextMenu", u, {
                   entrypoint: a,
-                  targetUserId: x.id,
+                  targetUserId: v.id,
                   tileType: R.TH.STREAM
                 })
               }))
@@ -210,13 +210,13 @@ let k = 16 / 9,
             return;
           case R.fO.USER:
           default:
-            if (E(R.TH.USER), i) return (0, O.D)(t, x, l, {
+            if (E(R.TH.USER), i) return (0, O.D)(t, v, l, {
               context: p
-            }, (e, t) => (0, _.o)({
+            }, (e, t) => (0, y.o)({
               menuName: e,
               menuItemProps: t,
               entrypoint: R.A5.THREE_DOT,
-              targetUserId: x.id,
+              targetUserId: v.id,
               location: u,
               tileType: R.TH.USER
             }));
@@ -225,14 +225,14 @@ let k = 16 / 9,
                 default: e
               } = await Promise.all([n.e("79695"), n.e("98783"), n.e("8982"), n.e("7717"), n.e("52021")]).then(n.bind(n, 757387));
               return t => (0, r.jsx)(e, L(D({}, t), {
-                user: x,
-                guildId: y,
+                user: v,
+                guildId: _,
                 channel: l,
                 showMediaItems: true,
                 showStageChannelItems: true,
                 showChatItems: false,
-                onInteraction: (0, _.u)("GuildChannelUserContextMenu", u, {
-                  targetUserId: x.id,
+                onInteraction: (0, y.u)("GuildChannelUserContextMenu", u, {
+                  targetUserId: v.id,
                   tileType: R.TH.USER
                 })
               }))
@@ -241,22 +241,22 @@ let k = 16 / 9,
             })
         }
       };
-    return v.type !== R.fO.USER || (null == (t = v.voiceState) ? true : t.selfVideo) ? (0, r.jsx)(B, {
+    return x.type !== R.fO.USER || (null == (t = x.voiceState) ? true : t.selfVideo) ? (0, r.jsx)(B, {
       stageParticipant: i,
-      rtcParticipant: v,
+      rtcParticipant: x,
       channel: l,
-      guildId: y,
-      user: x,
+      guildId: _,
+      user: v,
       width: c,
       isModerator: j,
       onContextMenu: I,
       inPopout: p === w.IlC.POPOUT
     }) : (0, r.jsx)(U, {
       stageParticipant: i,
-      rtcParticipant: v,
+      rtcParticipant: x,
       channel: l,
-      guildId: y,
-      user: x,
+      guildId: _,
+      user: v,
       width: c,
       isModerator: j,
       onContextMenu: I,

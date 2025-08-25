@@ -46,7 +46,7 @@ function j(e) {
     id: c
   } = t, {
     id: u
-  } = n, m = t.getGuildId(), b = (0, l.e7)([h.Z], () => h.Z.getGuild(m), [m]), _ = t.type === C.d4z.GUILD_ANNOUNCEMENT, j = null != b && b.features.has(C.oNc.NEWS), S = _ && j, {
+  } = n, m = t.getGuildId(), b = (0, l.e7)([h.Z], () => h.Z.getGuild(m), [m]), y = t.type === C.d4z.GUILD_ANNOUNCEMENT, j = null != b && b.features.has(C.oNc.NEWS), S = y && j, {
     editingMessage: I,
     editingTextValue: P,
     editingRichValue: Z
@@ -68,7 +68,7 @@ function j(e) {
       t.splice(+!!e, 0, {
         type: s.re.TEXT_DISPLAY,
         content: l,
-        id: "".concat(x.Kb)
+        id: "".concat(v.Kb)
       }), p.content = "", p.components = t
     }
     return d && null != I && (0, g.yE)(I.flags, C.iLy.CROSSPOSTED) ? o.Z.confirmEdit(e, r, p) : a.Z.editMessage(e, r, p), Promise.resolve()
@@ -92,7 +92,7 @@ function j(e) {
       }
       return e
     }({}, e), n = n = {
-      className: v.channelTextArea,
+      className: x.channelTextArea,
       key: u
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
@@ -105,7 +105,7 @@ function j(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t))
   }, [u]);
-  return null != P && null != Z ? (0, r.jsx)(y.Z, {
+  return null != P && null != Z ? (0, r.jsx)(_.Z, {
     ref: true,
     channel: t,
     message: n,
@@ -134,7 +134,7 @@ function E(e) {
   return i.useEffect(() => (m.S.subscribe(C.CkL.TEXTAREA_FOCUS, g), m.S.subscribe(C.CkL.TEXTAREA_BLUR, b), () => {
     m.S.unsubscribe(C.CkL.TEXTAREA_FOCUS, g), m.S.unsubscribe(C.CkL.TEXTAREA_BLUR, b)
   }), [g, b]), (0, r.jsx)(u.ZP, {
-    className: v.channelTextArea,
+    className: x.channelTextArea,
     textValue: t,
     richValue: n,
     channel: a,
@@ -163,7 +163,7 @@ function S(e, t, n) {
   return n ? (0, r.jsx)(j, {
     channel: l,
     message: i
-  }) : (0, r.jsx)(_.ZP, {
+  }) : (0, r.jsx)(y.ZP, {
     message: i,
     content: t,
     compact: null != a && a

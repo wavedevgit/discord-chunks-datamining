@@ -1,7 +1,7 @@
 /** Chunk was on 5665 **/
 /** chunk id: 561472, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => x
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -22,27 +22,27 @@ var Chunk951288 = require("./951288.js"),
   Chunk731994 = require("./731994.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let v = function(e) {
+let x = function(e) {
   let {
     className: t,
     style: n,
-    channel: v,
+    channel: x,
     draftType: O
-  } = e, [j, E] = i.useState(true), S = (0, l.e7)([p.Z], () => p.Z.hasLayers()), I = (0, l.e7)([h.Z], () => null != v && h.Z.can(C.Plq.ATTACH_FILES, v), [v]), P = null != (0, l.e7)([o.Z], () => o.Z.getActiveCommand(v.id)), Z = v.getGuildId(), T = O === c.d.FirstThreadMessage, N = (0, l.e7)([m.default], () => {
+  } = e, [j, E] = i.useState(true), S = (0, l.e7)([p.Z], () => p.Z.hasLayers()), I = (0, l.e7)([h.Z], () => null != x && h.Z.can(C.Plq.ATTACH_FILES, x), [x]), P = null != (0, l.e7)([o.Z], () => o.Z.getActiveCommand(x.id)), Z = x.getGuildId(), T = O === c.d.FirstThreadMessage, N = (0, l.e7)([m.default], () => {
     var e;
     returntrue == !(null == (e = m.default.getCurrentUser()) ? true : e.nsfwAllowed)
-  }), A = (0, l.e7)([u.Z], () => u.Z.didAgree(Z)) && !N, w = i.useMemo(() => !S && (v.isPrivate() && !v.isManaged() || null != Z && (!(0, a.aC)(v) || A) && I && d.Z.canChatInGuild(Z)), [I, A, v, Z, S]), R = T ? C.TPd.GUILD_THREADS_ONLY.has(v.type) ? x.intl.string(x.t.RBBLhI) : x.intl.string(x.t.gUx4en) : j ? x.intl.format(x.t.dYP2FR, {
-    destination: (0, s.F6)(v, m.default, f.Z, true)
-  }) : x.intl.string(x.t.h76ulJ);
-  return P || !w ? null : (0, r.jsx)(_.Z, {
+  }), A = (0, l.e7)([u.Z], () => u.Z.didAgree(Z)) && !N, w = i.useMemo(() => !S && (x.isPrivate() && !x.isManaged() || null != Z && (!(0, a.aC)(x) || A) && I && d.Z.canChatInGuild(Z)), [I, A, x, Z, S]), R = T ? C.TPd.GUILD_THREADS_ONLY.has(x.type) ? v.intl.string(v.t.RBBLhI) : v.intl.string(v.t.gUx4en) : j ? v.intl.format(v.t.dYP2FR, {
+    destination: (0, s.F6)(x, m.default, f.Z, true)
+  }) : v.intl.string(v.t.h76ulJ);
+  return P || !w ? null : (0, r.jsx)(y.Z, {
     className: t,
     style: n,
     title: R,
-    description: T ? x.intl.string(x.t.lpgkzs) : x.intl.string(x.t.usQh4O),
-    icons: y.J6,
+    description: T ? v.intl.string(v.t.lpgkzs) : v.intl.string(v.t.usQh4O),
+    icons: _.J6,
     onDrop: e => {
       if (P) returnfalse;
-      w && null != v && ((0, b.d5)(e, v, O, {
+      w && null != x && ((0, b.d5)(e, x, O, {
         requireConfirm: j,
         showLargeMessageDialog: false,
         origin: "drag_drop"

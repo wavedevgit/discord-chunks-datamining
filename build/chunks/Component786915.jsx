@@ -1,7 +1,7 @@
 /** Chunk was on 5665 **/
 /** chunk id: 786915, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => _
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -20,7 +20,7 @@ var Chunk512722 = require("./512722.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function _(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -39,14 +39,14 @@ function _(e) {
   return e
 }
 
-function y(e) {
+function _(e) {
   var {
     applicationId: t,
     stream: i,
-    channel: y,
+    channel: _,
     exitFullScreen: C,
-    appContext: x,
-    analyticsLocation: v,
+    appContext: v,
+    analyticsLocation: x,
     guildScheduledEvent: O,
     shouldPrioritizeGroupPlusIcon: j = false,
     isRichPresenceInvite: E = false,
@@ -74,7 +74,7 @@ function y(e) {
     {
       parentAnalyticsLocation: w
     } = (0, u.ZP)(),
-    R = null == y ? true : y.getGuildId(),
+    R = null == _ ? true : _.getGuildId(),
     M = (0, a.e7)([p.Z], () => null != R ? p.Z.getGuild(R) : null, [R]),
     D = (0, a.e7)([h.Z], () => null != t ? h.Z.getApplicationActivity(t) : true),
     L = null == t || j ? o.ejJ : o.gQj,
@@ -90,9 +90,9 @@ function y(e) {
     size: P,
     buttonText: Z,
     color: null != T ? T : true
-  }) : null != M && null != y && f.Z.can(g.Plq.CREATE_INSTANT_INVITE, y) ? (0, r.jsx)(m.Z, _({
+  }) : null != M && null != _ && f.Z.can(g.Plq.CREATE_INSTANT_INVITE, _) ? (0, r.jsx)(m.Z, y({
     onClick: () => {
-      l()(null != M, "guild cannot be null"), l()(null != y, "channel cannot be null"), null != w && (0, d.v)(w, d.d.INVITE),
+      l()(null != M, "guild cannot be null"), l()(null != _, "channel cannot be null"), null != w && (0, d.v)(w, d.d.INVITE),
         function(e) {
           let {
             guild: t,
@@ -110,7 +110,7 @@ function y(e) {
             } = await Promise.all([n.e("7654"), n.e("62292")]).then(n.bind(n, 560114));
             return n => {
               var o, s;
-              return (0, r.jsx)(e, (o = _({}, n), s = s = {
+              return (0, r.jsx)(e, (o = y({}, n), s = s = {
                 guild: t,
                 channel: i,
                 streamUserId: l,
@@ -135,12 +135,12 @@ function y(e) {
           })
         }({
           guild: M,
-          channel: y,
+          channel: _,
           streamUserId: null == i ? true : i.ownerId,
           applicationId: t,
-          appContext: null != x ? x : A,
+          appContext: null != v ? v : A,
           exitFullScreen: C,
-          analyticsLocation: v,
+          analyticsLocation: x,
           guildScheduledEvent: O
         })
     },

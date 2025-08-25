@@ -118,7 +118,7 @@ let en = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
     disabled: P,
     accessibilityLabel: M,
     channel: L,
-    type: H,
+    type: G,
     focused: Y,
     onChange: en,
     onResize: eo,
@@ -132,26 +132,26 @@ let en = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
     maxCharacterCount: em,
     placeholder: eg,
     "aria-describedby": eb,
-    "aria-labelledby": e_,
-    setEditorRef: ey,
+    "aria-labelledby": ey,
+    setEditorRef: e_,
     autoCompletePosition: eC,
-    children: ex,
-    disableThemedBackground: ev = false,
+    children: ev,
+    disableThemedBackground: ex = false,
     emojiPickerCloseOnModalOuterClick: eO,
     parentModalKey: ej
-  } = e, eE = v.Z.useField("channelDrafts")[L.id], eS = null != (l = null == eE ? true : eE.title) ? l : "", eI = null == eE ? true : eE.heroFile, eP = null == (o = null == eE ? true : eE.publish) || o, eZ = null == (u = null == eE ? true : eE.createThread) || u;
-  s()(null != H, "chat input type must be set");
+  } = e, eE = x.Z.useField("channelDrafts")[L.id], eS = null != (l = null == eE ? true : eE.title) ? l : "", eI = null == eE ? true : eE.heroFile, eP = null == (o = null == eE ? true : eE.publish) || o, eZ = null == (u = null == eE ? true : eE.createThread) || u;
+  s()(null != G, "chat input type must be set");
   let {
     analyticsLocations: eT
-  } = (0, y.ZP)(_.Z.CHANNEL_TEXT_AREA), eN = (0, G.qz)(t), eA = i.useRef(null), ew = i.useRef(null), eR = i.useRef(null), eM = i.useRef(null);
-  null == ey || ey(ew.current);
+  } = (0, _.ZP)(y.Z.CHANNEL_TEXT_AREA), eN = (0, H.qz)(t), eA = i.useRef(null), ew = i.useRef(null), eR = i.useRef(null), eM = i.useRef(null);
+  null == e_ || e_(ew.current);
   let {
     activeCommand: eD
   } = (0, d.cj)([C.Z], () => {
     var e, t;
     return {
-      activeCommand: (null == (e = H.commands) ? true : e.enabled) ? C.Z.getActiveCommand(L.id) : null,
-      activeCommandSection: (null == (t = H.commands) ? true : t.enabled) ? C.Z.getActiveCommandSection(L.id) : null
+      activeCommand: (null == (e = G.commands) ? true : e.enabled) ? C.Z.getActiveCommand(L.id) : null,
+      activeCommandSection: (null == (t = G.commands) ? true : t.enabled) ? C.Z.getActiveCommandSection(L.id) : null
     }
   }), {
     isLurking: eL,
@@ -159,21 +159,21 @@ let en = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
     disabled: eU,
     canAttachFiles: eB,
     canEveryoneSendMessages: eF
-  } = (0, G.TE)(L, H, eD, P), eG = !N.dN.useSetting() && !(0, D.isAndroidWeb)() && null != window.ResizeObserver, eH = !eG || !(null == (n = H.commands) ? true : n.enabled) || !Y || p !== W.GI, eV = (0, Z.Z)(), {
+  } = (0, H.TE)(L, G, eD, P), eH = !N.dN.useSetting() && !(0, D.isAndroidWeb)() && null != window.ResizeObserver, eG = !eH || !(null == (n = G.commands) ? true : n.enabled) || !Y || p !== W.GI, eV = (0, Z.Z)(), {
     fontSize: ez
   } = (0, d.cj)([b.Z], () => ({
     fontSize: b.Z.fontSize,
     isSubmitButtonEnabled: b.Z.isSubmitButtonEnabled
   })), eW = (0, d.e7)([w.Z], () => w.Z.isEnabled()), eq = (0, T.NE)(L);
-  (0, G.hJ)(H, eU);
+  (0, H.hJ)(G, eU);
   let {
     eventEmitter: eY,
     handleEditorSelectionChanged: eK
-  } = (0, G.x2)(ew, p, g), eX = i.useCallback(e => {
+  } = (0, H.x2)(ew, p, g), eX = i.useCallback(e => {
     let t = e => {
         if (e.shouldClear) {
           var t;
-          (0, v.c)(L.id, {
+          (0, x.c)(L.id, {
             title: "",
             heroFile: null
           }), null == (t = ew.current) || t.blur()
@@ -225,17 +225,17 @@ let en = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
   }, [ed, eS, eI, L.id, eZ, eP, eq]), {
     submit: eQ,
     handleSubmit: eJ
-  } = (0, G.bL)(eX, H, ew, eM, L.id), {
+  } = (0, H.bL)(eX, G, ew, eM, L.id), {
     autocompleteRef: e$,
     handleMaybeShowAutocomplete: e0,
     handleHideAutocomplete: e1
-  } = (0, G.jx)(), e2 = i.useCallback(() => {
+  } = (0, H.jx)(), e2 = i.useCallback(() => {
     var e;
     return null == eM || null == (e = eM.current) ? true : e.hide()
   }, []), {
     editorHeight: e8,
     handleResize: e3
-  } = (0, G.oR)(eo), {
+  } = (0, H.oR)(eo), {
     handleTab: e4,
     handleEnter: e7,
     handleMoveSelection: e6
@@ -255,17 +255,17 @@ let en = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
         return !!(!n && (null == (i = t.current) ? true : i.onMoveSelection(r))) || (null == (l = e.current) ? true : l.onMoveSelection(r)) || false
       }, [n])
     }
-  }(e$, eA, eH), {
+  }(e$, eA, eG), {
     expressionPickerView: e5,
     shouldHideExpressionPicker: e9,
     handleAutocompleteVisibilityChange: te,
     handleOuterClick: tt
-  } = (0, G.iV)(H, eY, ew), tn = (0, G.ae)(ew), tr = (0, G.Sg)(eQ, H, ew), ti = (0, G.O1)({
+  } = (0, H.iV)(G, eY, ew), tn = (0, H.ae)(ew), tr = (0, H.Sg)(eQ, G, ew), ti = (0, H.O1)({
     editorRef: ew,
     disabled: eU,
     textValue: p,
     channelId: L.id,
-    chatInputType: H,
+    chatInputType: G,
     submit: eX
   });
   (0, k.S)(eY, L.guild_id, L.id);
@@ -295,14 +295,14 @@ let en = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
   }, []), tg = i.useCallback(() => {
     var e;
     if (null == eI) return;
-    let t = null == (e = R.Z.getUploads(L.id, H.drafts.type).find(e => e.filename === eI.name)) ? true : e.id;
-    null != t && f.Z.remove(L.id, t, A.d.ChannelMessage), (0, v.c)(L.id, {
+    let t = null == (e = R.Z.getUploads(L.id, G.drafts.type).find(e => e.filename === eI.name)) ? true : e.id;
+    null != t && f.Z.remove(L.id, t, A.d.ChannelMessage), (0, x.c)(L.id, {
       heroFile: null
     })
-  }, [L.id, eI, H.drafts.type]);
+  }, [L.id, eI, G.drafts.type]);
   return (0, r.jsx)(O.f6, {
     value: eY,
-    children: (0, r.jsxs)(y.Gt, {
+    children: (0, r.jsxs)(_.Gt, {
       value: eT,
       children: [(0, r.jsxs)("div", {
         ref: eN,
@@ -312,7 +312,7 @@ let en = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
           ref: eR,
           onScroll: e2,
           className: a()(Q.announcementScrollableContainer, {
-            [Q.themedBackground]: !ev
+            [Q.themedBackground]: !ex
           }),
           children: (0, r.jsxs)("div", {
             className: a()(Q.inner, X.inner),
@@ -329,7 +329,7 @@ let en = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
                   onRemoveHeroImage: tg
                 }) : null, null != eI ? null : (0, r.jsx)(ea, {
                   channel: L,
-                  onImageUploaded: e => (0, v.c)(L.id, {
+                  onImageUploaded: e => (0, x.c)(L.id, {
                     heroFile: e
                   }),
                   onFocus: () => ta(true)
@@ -340,7 +340,7 @@ let en = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
                   className: X.titleInput,
                   placeholder: K.intl.string(K.t.Z8fYjI),
                   value: eS,
-                  onChange: e => (0, v.c)(L.id, {
+                  onChange: e => (0, x.c)(L.id, {
                     title: e.target.value
                   })
                 })]
@@ -353,7 +353,7 @@ let en = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
                     ref: ew,
                     id: S,
                     focused: Y,
-                    useSlate: eG,
+                    useSlate: eH,
                     textValue: p,
                     richValue: g,
                     disabled: eU,
@@ -384,7 +384,7 @@ let en = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
                     fontSize: ez,
                     spellcheckEnabled: eW,
                     canOnlyUseTextCommands: false,
-                    "aria-labelledby": e_
+                    "aria-labelledby": ey
                   })
                 })
               })]
@@ -392,7 +392,7 @@ let en = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
               className: X.attachmentsContainer,
               children: (0, r.jsx)(V.Z, {
                 channelId: L.id,
-                type: H,
+                type: G,
                 canAttachFiles: eB,
                 ignoreFile: null == eI ? true : eI.name,
                 smallAttachments: true
@@ -463,19 +463,19 @@ let en = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
               })
             })
           })]
-        }), (0, r.jsx)(x.Z, {
+        }), (0, r.jsx)(v.Z, {
           targetRef: eN,
           ref: e$,
           channel: L,
           canMentionRoles: eh,
           canMentionChannels: ef,
-          useNewSlashCommands: eG,
+          useNewSlashCommands: eH,
           canOnlyUseTextCommands: false,
           canSendStickers: true,
           textValue: p,
           focused: Y,
           expressionPickerView: e5,
-          type: H,
+          type: G,
           editorRef: ew,
           onSendMessage: eQ,
           onSendSticker: () => {},
@@ -483,10 +483,10 @@ let en = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
           editorHeight: e8,
           setValue: (e, t) => null == en ? true : en(null, e, t),
           position: eC
-        }), ex]
+        }), ev]
       }), e9 ? null : (0, r.jsx)(E.Z, {
         positionTargetRef: eN,
-        type: H,
+        type: G,
         onSelectGIF: tr,
         onSelectEmoji: tn,
         onSelectSticker: ti,
@@ -506,7 +506,7 @@ function er(e) {
   let {
     channelId: i,
     canCreateThread: l
-  } = e, a = v.Z.useField("channelDrafts")[i], o = null == (t = null == a ? true : a.createThread) || t, s = null == (n = null == a ? true : a.publish) || n;
+  } = e, a = x.Z.useField("channelDrafts")[i], o = null == (t = null == a ? true : a.createThread) || t, s = null == (n = null == a ? true : a.publish) || n;
   return (0, r.jsxs)(h.v2r, {
     "aria-label": K.intl.string(K.t["9WnJys"]),
     navId: "send-announcement-options",
@@ -518,7 +518,7 @@ function er(e) {
       checked: l && o,
       disabled: !l,
       action: () => {
-        (0, v.c)(i, {
+        (0, x.c)(i, {
           createThread: !o
         })
       }
@@ -527,7 +527,7 @@ function er(e) {
       label: K.intl.string(K.t["MFGE5+"]),
       checked: s,
       action: () => {
-        (0, v.c)(i, {
+        (0, x.c)(i, {
           publish: !s
         })
       }
@@ -563,7 +563,7 @@ function ei(e) {
       className: X.heroImage
     }), o ? (0, r.jsx)(j.ZP, {
       className: X.heroOverlay,
-      children: (0, r.jsx)(H.Z, {
+      children: (0, r.jsx)(G.Z, {
         tooltip: K.intl.string(K.t.VjC219),
         onClick: n,
         dangerous: true,

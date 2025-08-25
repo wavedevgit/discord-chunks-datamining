@@ -58,7 +58,7 @@ function w(e) {
     channel: o,
     status: u,
     activities: d
-  } = e, p = (0, a.e7)([y.Z], () => null != y.Z.getTypingUsers(o.id)[t.id]), f = (0, a.e7)([C.default], () => C.default.getCurrentUser()), x = (0, a.e7)([b.Z], () => b.Z.isMobileOnline(t.id)), O = (0, a.e7)([_.Z], () => _.Z.getNickname(t.id)), E = (0, h.Z)(t.id), Z = i.useRef(null), N = e => {
+  } = e, p = (0, a.e7)([_.Z], () => null != _.Z.getTypingUsers(o.id)[t.id]), f = (0, a.e7)([C.default], () => C.default.getCurrentUser()), v = (0, a.e7)([b.Z], () => b.Z.isMobileOnline(t.id)), O = (0, a.e7)([y.Z], () => y.Z.getNickname(t.id)), E = (0, h.Z)(t.id), Z = i.useRef(null), N = e => {
     (0, s.jW)(e, async () => {
       let {
         default: e
@@ -85,9 +85,9 @@ function w(e) {
         decoration: "never"
       })),
       n = "<@".concat(t.id, ">");
-    v.S.dispatch(I.CkL.TEXTAREA_FOCUS, {
+    x.S.dispatch(I.CkL.TEXTAREA_FOCUS, {
       channelId: o.id
-    }), v.S.dispatchToLastSubscribed(I.CkL.INSERT_TEXT, {
+    }), x.S.dispatchToLastSubscribed(I.CkL.INSERT_TEXT, {
       plainText: e,
       rawText: n
     }), c.Z.startTyping(o.id)
@@ -136,7 +136,7 @@ function w(e) {
         channel: o,
         onContextMenu: N,
         selected: M,
-        isMobile: x,
+        isMobile: v,
         nick: O,
         nameplate: R,
         onClick: e => {
@@ -167,12 +167,12 @@ function M(e) {
     analyticsLocations: s
   } = (0, d.ZP)(u.Z.MEMBER_LIST), {
     listItems: c
-  } = (0, a.e7)([_.Z, C.default, b.Z], () => {
+  } = (0, a.e7)([y.Z, C.default, b.Z], () => {
     let e = (0, O.T)(t.recipients, C.default),
       n = {};
     for (let t of e) {
       var r, i, l;
-      _.Z.isFriend(t.id) || t.id === (null == (r = C.default.getCurrentUser()) ? true : r.id) ? n[t.id] = {
+      y.Z.isFriend(t.id) || t.id === (null == (r = C.default.getCurrentUser()) ? true : r.id) ? n[t.id] = {
         status: null != (i = b.Z.getStatus(t.id)) ? i : I.Skl.OFFLINE,
         activities: null != (l = b.Z.getActivities(t.id)) ? l : N
       } : n[t.id] = {
@@ -194,7 +194,7 @@ function M(e) {
     }
   }, [t], R);
   i.useEffect(() => {
-    x.default.track(I.rMx.MEMBER_LIST_VIEWED, {
+    v.default.track(I.rMx.MEMBER_LIST_VIEWED, {
       channel_id: t.id,
       channel_type: t.type,
       guild_id: t.guild_id

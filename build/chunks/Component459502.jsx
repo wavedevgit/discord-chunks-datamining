@@ -21,10 +21,10 @@ var Chunk442837 = require("./442837.js"),
 function g(e) {
   let {
     channelId: t
-  } = e, g = (0, i.e7)([s.Z], () => s.Z.getChannel(t), [t]), b = (0, d.sz)(t), _ = null != (0, d.qY)(t), {
-    canManageGuildEvent: y
+  } = e, g = (0, i.e7)([s.Z], () => s.Z.getChannel(t), [t]), b = (0, d.sz)(t), y = null != (0, d.qY)(t), {
+    canManageGuildEvent: _
   } = (0, o.XJ)(g), C = (0, i.cj)([u.ZP], () => b.reduce((e, t) => (e[t.id] = u.ZP.getUserCount(t.id, (0, p.DK)(t)), e), {}));
-  return b.length < 1 || _ ? null : (0, r.jsx)(r.Fragment, {
+  return b.length < 1 || y ? null : (0, r.jsx)(r.Fragment, {
     children: b.map(e => (0, r.jsx)(h.Z, {
       icon: (0, r.jsx)(a.Que, {
         size: "custom",
@@ -33,14 +33,14 @@ function g(e) {
         width: 20
       }),
       color: l.Z.unsafe_rawColors.GREEN_360.css,
-      title: f.intl.formatToPlainString(y(e) ? f.t["1vGXqK"] : f.t.xMJylZ, {
+      title: f.intl.formatToPlainString(_(e) ? f.t["1vGXqK"] : f.t.xMJylZ, {
         eventName: e.name
       }),
       description: f.intl.formatToPlainString(f.t.PTebCQ, {
         startTime: (0, p.ub)(e.scheduled_start_time).startDateTimeString
       }),
       onClick: () => {
-        y(e) ? (0, a.ZDy)(async () => {
+        _(e) ? (0, a.ZDy)(async () => {
           let {
             default: t
           } = await Promise.all([n.e("84722"), n.e("51885")]).then(n.bind(n, 296864));

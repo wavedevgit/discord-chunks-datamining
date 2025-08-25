@@ -39,10 +39,10 @@ function b(e) {
   return e
 }
 
-function _(e) {
+function y(e) {
   return e.matches("a") || "highlight" === e.className || e.className.includes("mention")
 }
-class y extends Chunk647438.Component {
+class _ extends Chunk647438.Component {
   render() {
     let {
       channel: e
@@ -71,9 +71,9 @@ class y extends Chunk647438.Component {
     super(...e), g(this, "_mouseDown", false), g(this, "_mouseUp", false), g(this, "handleOpenTopic", e => {
       let t = e.target;
       if ((0, o.k)(t)) {
-        if (_(t)) return;
+        if (y(t)) return;
         let e = t.parentNode;
-        if ((0, o.k)(e) && _(e)) return
+        if ((0, o.k)(e) && y(e)) return
       }(0, s.ZDy)(async () => {
         let {
           default: e
@@ -121,4 +121,4 @@ class y extends Chunk647438.Component {
     })
   }
 }
-let C = y
+let C = _

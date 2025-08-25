@@ -1,7 +1,7 @@
 /** Chunk was on 5665 **/
 /** chunk id: 9145, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => H
+  Z: () => G
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -42,20 +42,20 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk33985 = require("./33985.js");
 let F = Chunk884338.u8.SIZE_32,
-  G = {
+  H = {
     [Chunk918559.MI.NO_CHAT]: Chunk33985.noChat,
     [Chunk918559.MI.RESIZABLE]: Chunk33985.resizable
   };
 
-function H(e) {
+function G(e) {
   var t, n, l;
   let {
-    maxHeight: H,
+    maxHeight: G,
     connectedLocation: V,
     renderExternalHeader: z
-  } = e, W = (0, T.Z)(), q = (0, o.Wu)([S.ZP], () => S.ZP.getEmbeddedActivitiesForLocation(V), [V]), Y = (0, Z.p)(V), K = (0, o.e7)([y.Z], () => y.Z.getChannel(Y)), X = (0, I.gb)(q), Q = (0, I.uF)(X), J = i.useCallback(() => {
+  } = e, W = (0, T.Z)(), q = (0, o.Wu)([S.ZP], () => S.ZP.getEmbeddedActivitiesForLocation(V), [V]), Y = (0, Z.p)(V), K = (0, o.e7)([_.Z], () => _.Z.getChannel(Y)), X = (0, I.gb)(q), Q = (0, I.uF)(X), J = i.useCallback(() => {
     (0, E.tg)(L.Ez.PIP)
-  }, []), $ = i.useRef(null), ee = (0, o.e7)([S.ZP], () => S.ZP.getFocusedLayout()), et = ee !== L.MI.NO_CHAT, [en, er] = i.useState(null != (n = null != (t = m.ZP.activityPanelHeight) ? t : H) ? n : null), ei = i.useCallback(e => {
+  }, []), $ = i.useRef(null), ee = (0, o.e7)([S.ZP], () => S.ZP.getFocusedLayout()), et = ee !== L.MI.NO_CHAT, [en, er] = i.useState(null != (n = null != (t = m.ZP.activityPanelHeight) ? t : G) ? n : null), ei = i.useCallback(e => {
     u.ZP.updatedUnsyncedSettings({
       activityPanelHeight: e
     })
@@ -84,7 +84,7 @@ function H(e) {
     es ? ((t = ea.width / L.I0) > ea.height && (e = (t = ea.height) * L.I0), eu = (ea.height - t) / 2) : ((e = Math.min(ea.height * L.I0)) > ea.width && (t = (e = ea.width) / L.I0), ec = (ea.width - e) / 2)
   }
   let ep = Q.get(null != (l = null == W ? true : W.id) ? l : ""),
-    eh = (0, o.e7)([x.Z], () => x.Z.getChannelId()),
+    eh = (0, o.e7)([v.Z], () => v.Z.getChannelId()),
     ef = (0, o.Wu)([C.ZP], () => {
       var e;
       return null == K ? [] : Array.from(null != (e = null == ep ? true : ep.embeddedActivity.userIds) ? e : []).map(e => C.ZP.getMember(K.guild_id, e))
@@ -144,12 +144,12 @@ function H(e) {
           Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
         }), r) : l
       }, [s, e, n, t])
-    }(et, en, H),
+    }(et, en, G),
     eb = (0, M.y)();
   if (null == W) return null;
-  let e_ = [];
-  null != ep && (e_ = Array.from(ep.embeddedActivity.userIds).map(e => v.default.getUser(e)).filter(e => null != e && true !== e));
-  let ey = e => {
+  let ey = [];
+  null != ep && (ey = Array.from(ep.embeddedActivity.userIds).map(e => x.default.getUser(e)).filter(e => null != e && true !== e));
+  let e_ = e => {
     var t;
     if (null == e || true === e || e === A.ag) return null;
     let n = em.get(e.id),
@@ -167,7 +167,7 @@ function H(e) {
   return (0, r.jsx)(c.f6W, {
     theme: k.BRd.DARK,
     children: e => (0, r.jsxs)("div", {
-      className: a()(B.wrapper, G[ee], e),
+      className: a()(B.wrapper, H[ee], e),
       ref: $,
       style: eg,
       children: [null == z ? true : z(), (0, r.jsxs)("div", {
@@ -199,10 +199,10 @@ function H(e) {
           className: B.footer,
           children: [(0, r.jsx)(A.ZP, {
             renderIcon: false,
-            users: e_,
+            users: ey,
             size: F,
             max: 6,
-            renderUser: ey
+            renderUser: e_
           }), (0, r.jsxs)("div", {
             className: B.footerButtons,
             children: [(0, r.jsxs)("div", {
@@ -225,7 +225,7 @@ function H(e) {
                 color: "disconnect"
               })
             })]
-          }), eb ? (0, r.jsx)(_.Z, {
+          }), eb ? (0, r.jsx)(y.Z, {
             popoutOpen: false,
             onOpenPopout: () => {
               (0, h.yw)(k.rMx.ACTIVITY_POPOUT_POP_OUT_BUTTON_CLICKED), (0, w.Z)({
@@ -235,9 +235,9 @@ function H(e) {
             onClosePopout: () => {}
           }) : null]
         }) : null]
-      }), et && null != H ? (0, r.jsx)(f.Z, {
+      }), et && null != G ? (0, r.jsx)(f.Z, {
         minHeight: 480,
-        maxHeight: H,
+        maxHeight: G,
         resizableNode: $,
         onResize: e => {
           O.S.dispatch(k.CkL.MANUAL_IFRAME_RESIZING, {

@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function v(e) {
+function x(e) {
   let t = (0, s.e7)([m.Z], () => !(0, o.isEmpty)(m.Z.getTypingUsers(e)), [e]),
     n = (0, s.e7)([f.Z], () => f.Z.getVoiceChannelId() === e, [e]),
     {
@@ -50,8 +50,8 @@ function O(e) {
     mentionCount: l,
     isTyping: a,
     voiceChannelIsSelected: o
-  } = v(n);
-  return (0, r.jsx)(_.Z, {
+  } = x(n);
+  return (0, r.jsx)(y.Z, {
     className: t,
     unreadCount: i,
     mentionCount: l,
@@ -69,7 +69,7 @@ function j(e) {
     onClick: h,
     inPopout: f,
     showRequestToSpeakSidebar: m,
-    toggleRequestToSpeakSidebar: _
+    toggleRequestToSpeakSidebar: y
   } = e, j = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
@@ -98,7 +98,7 @@ function j(e) {
       unreadCount: t,
       mentionCount: n,
       isTyping: r
-    } = v(e), [l, a] = i.useState(false);
+    } = x(e), [l, a] = i.useState(false);
     return i.useEffect(() => {
       a(t > 0);
       let e = setTimeout(() => {
@@ -113,8 +113,8 @@ function j(e) {
       mentionCount: n
     }
   }(n), A = i.useCallback(() => {
-    (0, p.v)(E, p.d.CHAT, !P), null == h || h(), !P && m && (null == _ || _()), c.Z.updateChatOpen(n, !P)
-  }, [n, P, h, m, _, E]), w = i.useCallback(e => {
+    (0, p.v)(E, p.d.CHAT, !P), null == h || h(), !P && m && (null == y || y()), c.Z.updateChatOpen(n, !P)
+  }, [n, P, h, m, y, E]), w = i.useCallback(e => {
     let {
       className: t
     } = e;
@@ -144,10 +144,10 @@ function j(e) {
       clearTimeout(e)
     }
   }, [M]);
-  let k = [t = f && S ? x.intl.string(x.t.DPgc5u) : P ? x.intl.string(x.t.nthdxM) : x.intl.string(x.t["5KxXrK"])];
-  return N > 0 && k.push(x.intl.formatToPlainString(x.t["3l1GOz"], {
+  let k = [t = f && S ? v.intl.string(v.t.DPgc5u) : P ? v.intl.string(v.t.nthdxM) : v.intl.string(v.t["5KxXrK"])];
+  return N > 0 && k.push(v.intl.formatToPlainString(v.t["3l1GOz"], {
     mentionCount: N
-  })), T > 0 && k.push(x.intl.string(x.t.x5zAGR)), (0, r.jsx)(y.Z, function(e) {
+  })), T > 0 && k.push(v.intl.string(v.t.x5zAGR)), (0, r.jsx)(_.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);

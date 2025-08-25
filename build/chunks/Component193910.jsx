@@ -61,7 +61,7 @@ function A(e) {
     options: a,
     onFileUpload: f,
     onClose: m,
-    onSelect: _,
+    onSelect: y,
     draftType: A,
     editorTextContent: w,
     setValue: R,
@@ -78,14 +78,14 @@ function A(e) {
   }
 
   function B() {
-    y.default.track(E.rMx.CHANNEL_ATTACH_MENU_USE_APPS_CLICKED), R("/", (0, O.JM)("/"))
+    _.default.track(E.rMx.CHANNEL_ATTACH_MENU_USE_APPS_CLICKED), R("/", (0, O.JM)("/"))
   }
 
   function F() {
     M()
   }
 
-  function G() {
+  function H() {
     (0, h.Q3)(o.z.POLLS_CHAT_INPUT_COACHMARK, {
       dismissAction: S.L.TAKE_ACTION
     }), (0, s.ZDy)(async () => {
@@ -129,8 +129,8 @@ function A(e) {
     })
   }
 
-  function H() {
-    y.default.track(E.rMx.CHANNEL_ATTACH_MENU_START_ACTIVITY_CLICKED, {
+  function G() {
+    _.default.track(E.rMx.CHANNEL_ATTACH_MENU_START_ACTIVITY_CLICKED, {
       channel_type: t.type,
       channel_id: t.id,
       guild_id: t.guild_id
@@ -152,20 +152,20 @@ function A(e) {
       n = "txt",
       r = "",
       i = w.match(T);
-    null != i && (r = i[1], n = i[2], e = i[3], r += i[4]), await (0, v.d5)([(0, x.dp)(new Blob([e], {
+    null != i && (r = i[1], n = i[2], e = i[3], r += i[4]), await (0, x.d5)([(0, v.dp)(new Blob([e], {
       type: "text/plain"
     }), "message.".concat(n), "text/plain")], t, A), C.S.dispatchToLastSubscribed(E.CkL.CLEAR_TEXT), "" !== r && C.S.dispatchToLastSubscribed(E.CkL.INSERT_TEXT, {
       plainText: r
     })
   }
   return i.useEffect(() => {
-    y.default.track(E.rMx.OPEN_POPOUT, {
+    _.default.track(E.rMx.OPEN_POPOUT, {
       type: "Send Attachment",
       channel_id: t.id,
       guild_id: t.guild_id
     })
   }, [t.guild_id, t.id]), (0, r.jsx)(s.v2r, {
-    onSelect: _,
+    onSelect: y,
     navId: "channel-attach",
     onClose: m,
     "aria-label": P.intl.string(P.t.Xm41aW),
@@ -210,7 +210,7 @@ function A(e) {
           return (0, r.jsx)(s.sNh, {
             id: "poll",
             label: i,
-            action: G
+            action: H
           }, "poll");
         case j.r.INVITE_TO_PLAY_GAME:
           return (0, r.jsx)(s.sNh, {
@@ -270,7 +270,7 @@ function A(e) {
           return (0, r.jsx)(s.sNh, {
             id: "activity",
             label: i,
-            action: H,
+            action: G,
             hint: (0, r.jsx)(N, {})
           }, "activity");
         case j.r.SCHEDULED_MESSAGE:

@@ -23,12 +23,12 @@ function m(e) {
     m = (0, i.e7)([u.default], () => u.default.getUser(t)),
     g = (0, i.e7)([s.Z], () => s.Z.getStatus(t)),
     b = (0, i.e7)([s.Z], () => s.Z.isMobileOnline(t)),
-    _ = (0, i.e7)([c.Z], () => c.Z.getNickname(t)),
-    y = d.ZP.useUserTag(m),
+    y = (0, i.e7)([c.Z], () => c.Z.getNickname(t)),
+    _ = d.ZP.useUserTag(m),
     C = (0, a.j)({
       displayNameStyles: null == m ? true : m.displayNameStyles
     }),
-    x = (0, o.m$)({
+    v = (0, o.m$)({
       channelId: e.channel.id
     });
   return (0, r.jsxs)(r.Fragment, {
@@ -50,11 +50,11 @@ function m(e) {
       className: null != e.handleClick ? f.cursorPointer : null,
       children: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(l.DY3, {
-          text: y,
+          text: _,
           position: "bottom",
           className: C,
-          children: null != _ ? _ : d.ZP.getName(m)
-        }), x && (0, r.jsx)(l.ua7, {
+          children: null != y ? y : d.ZP.getName(m)
+        }), v && (0, r.jsx)(l.ua7, {
           text: h.intl.string(h.t.QyZ4TU),
           children: e => {
             var t, n;
