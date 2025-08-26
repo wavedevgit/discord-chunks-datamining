@@ -108,45 +108,51 @@ class S {
     if (!this._include(E.h8.TEXT_CHANNEL)) return [];
     let n = T(E.h8.TEXT_CHANNEL, this.options),
       {
-        blacklist: r
+        allowSnowflake: r,
+        blacklist: i
       } = this.options,
-      i = null != r ? e => !r.has("channel:".concat(e.id)) : true;
+      o = null != i ? e => !i.has("channel:".concat(e.id)) : true;
     return _.ZP.queryChannels({
       query: e,
       guildId: null,
       limit: t,
       fuzzy: true,
-      filter: i,
+      allowSnowflake: r,
+      filter: o,
       boosters: n
     })
   }
   queryVoiceChannels(e, t) {
     if (!this._include(E.h8.VOICE_CHANNEL)) return [];
     let {
-      voiceChannelGuildFilter: n
-    } = this.options, r = T(E.h8.VOICE_CHANNEL, this.options);
+      allowSnowflake: n,
+      voiceChannelGuildFilter: r
+    } = this.options, i = T(E.h8.VOICE_CHANNEL, this.options);
     return _.ZP.queryChannels({
       query: e,
-      guildId: n,
+      guildId: r,
       limit: t,
       fuzzy: true,
       type: u.Zb,
-      boosters: r
+      allowSnowflake: n,
+      boosters: i
     })
   }
   queryGuilds(e, t) {
     if (!this._include(E.h8.GUILD)) return [];
     let n = T(E.h8.GUILD, this.options),
       {
-        blacklist: r
+        allowSnowflake: r,
+        blacklist: i
       } = this.options,
-      i = null != r ? e => !r.has("guild:".concat(e.id)) : true;
+      o = null != i ? e => !i.has("guild:".concat(e.id)) : true;
     return _.ZP.queryGuilds({
       query: e,
       limit: t,
       fuzzy: true,
-      filter: i,
-      boosters: n
+      filter: o,
+      boosters: n,
+      allowSnowflake: r
     })
   }
   queryUsers(e, t, n) {
@@ -155,18 +161,19 @@ class S {
     } = this;
     if (null == r || !this._include(E.h8.USER)) return;
     let {
-      userFilters: i
-    } = this.options, o = T(E.h8.USER, this.options);
-    if ((null == i ? true : i.thread) != null) {
-      let t = s.Z.getMemberListSections(i.thread),
+      allowSnowflake: i,
+      userFilters: o
+    } = this.options, a = T(E.h8.USER, this.options);
+    if ((null == o ? true : o.thread) != null) {
+      let t = s.Z.getMemberListSections(o.thread),
         r = [];
       for (let e in t) {
         let n = t[e];
         for (let e of n.userIds) {
-          var a, l, c;
-          (null == i || !i.friends || d.Z.isFriend(e)) && (null != (c = null == (a = this._userBlacklist) ? true : a.includes(e)) && c || r.push({
+          var l, c, u;
+          (null == o || !o.friends || d.Z.isFriend(e)) && (null != (u = null == (l = this._userBlacklist) ? true : l.includes(e)) && u || r.push({
             userId: e,
-            nick: null == (l = n.usersById[e]) ? true : l.displayName
+            nick: null == (c = n.usersById[e]) ? true : c.displayName
           }))
         }
       }
@@ -174,15 +181,16 @@ class S {
         query: e,
         users: r,
         limit: n,
-        boosters: o
+        boosters: a,
+        allowSnowflake: i
       });
       return
     }
     true !== t && p.Z.requestMembers(t, e, 100), r.setLimit(n), r.setQuery({
       query: e,
-      filters: i,
+      filters: o,
       blacklist: this._userBlacklist,
-      boosters: o
+      boosters: a
     })
   }
   queryGroupDMs(e, t) {

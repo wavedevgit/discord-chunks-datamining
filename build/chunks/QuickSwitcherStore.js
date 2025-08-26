@@ -184,7 +184,8 @@ function q(e) {
   } = e, o = null != (t = T.Z.getGuildId()) ? t : true, a = new Set(["user:".concat(h.default.getId())]);
   null != o && a.add("guild:".concat(o)), r = null != r ? r : new u.ZP(J, L, null != i ? x : D, {
     frecencyBoosters: true,
-    blacklist: a
+    blacklist: a,
+    allowSnowflake: true
   }), B = null, Z = n.length, U = i, r.search(n)
 }
 

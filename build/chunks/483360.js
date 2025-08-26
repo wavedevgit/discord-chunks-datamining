@@ -493,13 +493,15 @@ let e8 = (0, Chunk251625.oH)((e, t, n) => {
         filter: n,
         boosters: r,
         limit: i = 10,
-        users: o
+        users: o,
+        allowSnowflake: a
       } = e;
       return eq({
         query: t,
         members: o,
         limit: i,
         filter: n,
+        allowSnowflake: a,
         boosters: r
       })
     },
@@ -572,26 +574,27 @@ let e8 = (0, Chunk251625.oH)((e, t, n) => {
         query: t,
         limit: n = 10,
         fuzzy: r = true,
-        filter: i = eM,
-        boosters: o = {}
-      } = e, a = "" === t ? "" : t.toLocaleLowerCase(), s = {
-        exactQuery: RegExp("^".concat(er.Z.escape(a)), "i"),
-        containQuery: RegExp(er.Z.escape(a), "i"),
-        queryLower: a
-      }, l = [];
+        allowSnowflake: i,
+        filter: o = eM,
+        boosters: a = {}
+      } = e, s = "" === t ? "" : t.toLocaleLowerCase(), l = {
+        exactQuery: RegExp("^".concat(er.Z.escape(s)), "i"),
+        containQuery: RegExp(er.Z.escape(s), "i"),
+        queryLower: s
+      }, c = [];
       for (let e of F.Z.getGuildsArray()) {
-        if (!i(e)) continue;
-        let t = e.name.toLocaleLowerCase(),
-          n = eK(t, s, r);
-        n > 0 && l.push({
+        if (!o(e)) continue;
+        let n = e.name.toLocaleLowerCase(),
+          s = i && t === e.id ? eb : eK(n, l, r);
+        s > 0 && c.push({
           type: el.h8.GUILD,
           record: e,
-          score: eV(n, o[e.id]),
+          score: eV(s, a[e.id]),
           comparator: e.name,
-          sortable: t
+          sortable: n
         })
       }
-      return l.sort(f.Z), l.length > n && (l.length = n), l
+      return c.sort(f.Z), c.length > n && (c.length = n), c
     },
     queryDMChannels(e) {
       let {
