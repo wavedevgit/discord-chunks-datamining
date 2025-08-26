@@ -80,6 +80,7 @@ function S(e) {
       className: T.menu,
       onClose: t,
       navId: "audio-device-context",
+      variant: "fixed",
       "aria-label": I.intl.string(I.t.ZR1Ss7),
       children: [S && k, n && U, A && B, !w && C && G !== O._.STUDIO ? (0, r.jsx)(s.kSQ, {
         label: I.intl.string(I.t["pS+K2N"]),

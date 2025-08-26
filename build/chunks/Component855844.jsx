@@ -89,6 +89,7 @@ function C(e) {
       onInteraction: n,
       onClose: N,
       navId: "audio-device-context",
+      variant: "fixed",
       "aria-label": S.intl.string(S.t.ZR1Ss7),
       className: A.menu,
       children: [(0, r.jsxs)(s.kSQ, {
