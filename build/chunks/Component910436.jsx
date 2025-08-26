@@ -115,7 +115,8 @@ function E(e) {
       }, "embedded-activity-".concat(x.application_id)))
     } else if ((null != x.assets || (0, a.Z)(x)) && x.type === O.IIU.PLAYING) P((0, r.jsx)(m.Z.RichPresenceSection, {
       activity: x,
-      getAssetImage: h.xF
+      getAssetImage: h.xF,
+      user: w
     }, "rich-presence-".concat(null != (g = x.session_id) ? g : t, "-").concat(w.id)));
     else if ((0, u.Z)(x)) {
       let e = v.length > 0 && v[0].members.length > 1,
@@ -138,7 +139,8 @@ function E(e) {
       members: Z
     }, "spotify-".concat(null != (y = x.session_id) ? y : t, "-").concat(w.id))) : (null != x.assets || (0, a.Z)(x)) && x.type === O.IIU.LISTENING ? P((0, r.jsx)(m.Z.RichPresenceSection, {
       activity: x,
-      getAssetImage: h.xF
+      getAssetImage: h.xF,
+      user: w
     }, "rich-presence-".concat(null != (S = x.session_id) ? S : t, "-").concat(w.id))) : (0, c.Z)(x) && P((0, r.jsx)(m.Z.XboxSection, {
       title: A.name
     }, "xbox-".concat(null != (T = x.session_id) ? T : t)));
