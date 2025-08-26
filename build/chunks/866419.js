@@ -77,12 +77,12 @@ function O() {
   return JSON.stringify(Chunk647438) === JSON.stringify(Chunk238302) && Chunk780384 === Chunk893712 && Chunk781391 === Chunk803038
 }
 
-function v() {
-  let e = Chunk893712.L.useExperiment({
-      location: "CustomThemesUtils"
+function v(e) {
+  let t = d.L.useExperiment({
+      location: e
     }).enabled,
-    t = Chunk803038.Mc.useExperiment({
-      location: "CustomThemesUtils"
+    n = u.Mc.useExperiment({
+      location: e
     }).v2EditorEnabled;
-  return module && exports
+  return t && n
 }

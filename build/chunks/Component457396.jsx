@@ -120,7 +120,7 @@ let V = e => {
         location: "NitroTabButton"
       }),
       e_ = (null == er ? true : er.trial_id) === M.a7,
-      eO = (0, p.YZ)(),
+      eO = (0, p.YZ)("NitroTabButton"),
       eE = [];
     (0, f.Kl)() && (ea && eE.push(o.z.BOGO_2025_NITRO_TAB_BADGE), eb && eE.push(o.z.VOICE_FILTER_EARLY_ACCESS_PREMIUM_TAB_BADGE), el && eE.push(o.z.Q2_2025_MARKETING_MOMENT_NITRO_TAB_BADGE_V2), eO && eE.push(o.z.CUSTOM_THEMES_PREMIUM_TAB_BADGE));
     let [ey, ev] = (0, g.US)(eE, true, true);

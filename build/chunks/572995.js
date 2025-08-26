@@ -9,7 +9,7 @@ require.d(exports, {
 var Chunk230711 = require("./230711.js"),
   Chunk100527 = require("./100527.js"),
   Chunk906732 = require("./906732.jsx"),
-  Chunk803038 = require("./803038.js"),
+  Chunk866419 = require("./866419.js"),
   Chunk550385 = require("./550385.js"),
   Chunk300284 = require("./300284.js"),
   Chunk526167 = require("./526167.js"),
@@ -161,9 +161,7 @@ let es = (e, t) => ei({
       })
     }, g = (0, Chunk526167.rO)(), E = Chunk63063.Z.getArticleURL(Chunk981631.BhN.REFERRAL_PROGRAM), b = (0, Chunk963590.Z)({
       location: "WhatsNewSection"
-    }), y = Chunk803038.Mc.useExperiment({
-      location: "useBentoBoxes"
-    }).v2EditorEnabled, O = es(Chunk509614, (0, Chunk47280.ZP)({
+    }), y = (0, Chunk866419.YZ)("useBentoBoxes"), O = es(Chunk509614, (0, Chunk47280.ZP)({
       location: "useBentoBoxes"
     })), v = {
       name: "voiceFilters",
