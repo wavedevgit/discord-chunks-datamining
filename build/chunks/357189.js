@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
-/** chunk id: 829176, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 357189, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  rS: () => l
+  ko: () => c
 }), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js");
 var Chunk772848 = require("./772848.js"),
   Chunk544891 = require("./544891.js"),
@@ -10,25 +10,31 @@ var Chunk772848 = require("./772848.js"),
   Chunk981631 = require("./981631.js");
 
 function s(e, t, n) {
-  let {
-    planId: s,
-    isGift: l,
-    loadId: c,
-    paymentMethodType: u,
-    deepLinkType: d
-  } = e, f = a.Z5c.BILLING_STANDALONE_CHECKOUT_PAGE(s, l, c, u, d), _ = new URL(o.Z.makeUrl(a.Z5c.BILLING_LOGIN_HANDOFF, false)), p = (0, r.Z)();
-  return _.searchParams.append("handoff_key", p), _.searchParams.append("redirect_to", f), i.tn.post({
+  let s = new URL(o.Z.makeUrl(a.Z5c.BILLING_LOGIN_HANDOFF, false)),
+    l = (0, r.Z)();
+  return s.searchParams.append("handoff_key", l), s.searchParams.append("redirect_to", e), i.tn.post({
     url: a.ANM.HANDOFF,
     body: {
-      key: p
+      key: l
     },
     oldFormErrors: true,
     rejectWithError: false
-  }).then(e => t(e, _), e => n(e))
+  }).then(e => t(e, s), e => n(e))
 }
 
-function l(e, t) {
-  return s(e, (e, t) => {
+function l(e, t, n) {
+  let {
+    planId: r,
+    isGift: i,
+    loadId: o,
+    paymentMethodType: l,
+    deepLinkType: c
+  } = e;
+  return s(a.Z5c.BILLING_STANDALONE_CHECKOUT_PAGE(r, i, o, l, c), t, n)
+}
+
+function c(e, t) {
+  return l(e, (e, t) => {
     t.searchParams.append("handoff_token", e.body.handoff_token), window.open(t.href)
   }, t)
 }

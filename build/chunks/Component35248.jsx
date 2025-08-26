@@ -12,7 +12,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk821849 = require("./821849.js"),
   Chunk600164 = require("./600164.jsx"),
   Chunk311821 = require("./311821.jsx"),
-  Chunk829176 = require("./829176.js"),
+  Chunk357189 = require("./357189.js"),
   Chunk987209 = require("./987209.jsx"),
   Chunk563132 = require("./563132.jsx"),
   Chunk409813 = require("./409813.js"),
@@ -52,7 +52,7 @@ let b = 1e3,
     return i.useEffect(() => {
       let e = setTimeout(() => {
         var e;
-        R || (P(true), (0, a.r5)(C.loadId), (0, u.rS)({
+        R || (P(true), (0, a.r5)(C.loadId), (0, u.ko)({
           planId: null != (e = null == y ? true : y.id) ? e : m.Xh.PREMIUM_MONTH_TIER_2,
           isGift: N,
           loadId: C.loadId,

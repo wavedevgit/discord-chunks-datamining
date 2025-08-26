@@ -1,92 +1,59 @@
 /** Chunk was on 31835 **/
 /** chunk id: 393809, original params: t,r,n (module,exports,require) **/
 require.d(exports, {
-  default: () => T
+  default: () => l
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk755721 = require("./755721.js"),
+  Chunk82659 = require("./82659.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk53365 = require("./53365.js"),
   Chunk377176 = require("./377176.js"),
-  Chunk388032 = require("./388032.jsx"),
-  Chunk690558 = require("./690558.js");
+  Chunk388032 = require("./388032.jsx");
 
-function T(t) {
+function l(t) {
   let {
     guildId: r,
     transitionState: n,
-    onClose: T
-  } = t, [_, A] = i.useState(false), [N, d] = i.useState(false), u = async () => {
-    A(true);
+    onClose: l
+  } = t, [A, _] = e.useState(false), [u, N] = e.useState(false), s = async () => {
+    _(true);
     try {
-      await (0, c.zo)(r), T()
+      await (0, o.zo)(r), l()
     } finally {
-      A(false)
+      _(false)
     }
-  }, I = l.intl.string(l.t["22itmp"]);
-  return (0, e.jsxs)(o.Y0X, {
-    className: E.__invalid_container,
-    size: o.CgR.DYNAMIC,
+  }, O = c.intl.string(c.t["22itmp"]);
+  return (0, i.jsx)(a.Modal, {
+    size: "md",
     transitionState: n,
-    "aria-label": I,
-    parentComponent: "TermsNotAcceptedErrorModal",
-    children: [(0, e.jsxs)(o.hzk, {
-      className: E.content,
-      children: [(0, e.jsxs)("div", {
-        className: E.header,
-        children: [(0, e.jsx)(o.Mgn, {
-          size: "custom",
-          color: "currentColor",
-          width: 20,
-          height: 20,
-          className: E.warningIcon
-        }), (0, e.jsx)(o.LZC, {
-          size: 8,
-          horizontal: true
-        }), (0, e.jsx)(o.X6q, {
-          variant: "heading-xl/semibold",
-          color: "header-primary",
-          children: I
-        })]
-      }), (0, e.jsx)(o.LZC, {
-        size: 12
-      }), (0, e.jsx)(o.Text, {
+    onClose: l,
+    "aria-label": O,
+    title: O,
+    subtitle: c.intl.string(c.t.kdbm9P),
+    actions: [{
+      variant: "secondary",
+      onClick: l,
+      text: c.intl.string(c.t["ETE/oK"])
+    }, {
+      variant: "primary",
+      text: c.intl.string(c.t["cY+Ooa"]),
+      disabled: !u,
+      onClick: s,
+      loading: A
+    }],
+    children: (0, i.jsx)(E.XZJ, {
+      onChange: () => {
+        N(t => !t)
+      },
+      size: 20,
+      type: E.XZJ.Types.INVERTED,
+      value: u,
+      children: (0, i.jsx)(E.Text, {
         variant: "text-md/normal",
-        color: "text-muted",
-        className: E.__invalid_body,
-        children: l.intl.string(l.t.kdbm9P)
-      }), (0, e.jsx)(o.LZC, {
-        size: 28
-      }), (0, e.jsx)(o.XZJ, {
-        onChange: () => {
-          d(t => !t)
-        },
-        size: 20,
-        type: o.XZJ.Types.INVERTED,
-        value: N,
-        children: (0, e.jsx)(o.Text, {
-          variant: "text-md/normal",
-          color: "header-secondary",
-          children: (0, s.f)()
-        })
-      })]
-    }), (0, e.jsxs)(o.mzw, {
-      children: [(0, e.jsx)(o.zxk, {
-        variant: "primary",
-        text: l.intl.string(l.t["cY+Ooa"]),
-        disabled: !N,
-        onClick: u,
-        loading: _
-      }), (0, e.jsx)(o.LZC, {
-        size: 12,
-        horizontal: true
-      }), (0, e.jsx)(a.zx, {
-        color: a.zx.Colors.PRIMARY,
-        look: a.zx.Looks.OUTLINED,
-        onClick: T,
-        children: l.intl.string(l.t["ETE/oK"])
-      })]
-    })]
+        color: "header-secondary",
+        children: (0, T.f)()
+      })
+    })
   })
 }

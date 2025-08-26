@@ -1424,6 +1424,7 @@ let eE = "@me",
     VERIFY_HUB_EMAIL: "/verify-hub-email",
     OPEN_APP_FROM_EMAIL: "/open-app-from-email",
     BILLING_MANAGE_SUBSCRIPTION: "/billing/premium/manage",
+    BILLING_MANAGE_SUBSCRIPTION_WITH_DEEP_LINK: e => "/billing/premium/manage?deep_link_type=".concat(e),
     BILLING_STANDALONE_CHECKOUT_PAGE: (e, t, n, r, i) => "/billing/premium/subscribe?plan_id=".concat(e, "&gift=").concat(t, "&load_id=").concat(n).concat(null != r ? "&payment_method_type=".concat(r) : "").concat(null != i ? "&deep_link_type=".concat(i) : ""),
     GUILD_BOOSTING_MARKETING: e => "/guilds/".concat(e, "/premium-guild-subscriptions"),
     GUILD_SETTINGS: (e, t, n) => {
