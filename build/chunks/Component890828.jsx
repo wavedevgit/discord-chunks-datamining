@@ -39,7 +39,7 @@ let P = e => [e.userId, ... function(e) {
       i = (0, m.e3)(t);
     return Array.from(new Set([n, i.nick, ...Object.values(i.names)].flat().filter(C.lm)))
   }(e)],
-  k = {
+  A = {
     searchType: Chunk886118.S.FUZZY,
     sortType: Chunk886118.E.JARO_WINKLER,
     searchStringGenerator: e => {
@@ -52,7 +52,7 @@ let P = e => [e.userId, ... function(e) {
     },
     throttleMs: 100
   },
-  A = {
+  k = {
     searchType: Chunk886118.S.FUZZY,
     sortType: Chunk886118.E.JARO_WINKLER,
     searchStringGenerator: P,
@@ -63,7 +63,7 @@ let P = e => [e.userId, ... function(e) {
       channel: t,
       query: n
     } = e, [o] = (0, a.e7)([j.Z], () => [j.Z.getVoiceStatesForChannel(t.id), j.Z.getVoiceStateVersion()], [t.id], N.Q), [l, c] = r.useState([]);
-    (0, O.BO)(n, Object.values(o), c, A);
+    (0, O.BO)(n, Object.values(o), c, k);
     let u = (0, a.Wu)([j.Z, I.default, b.Z, x.Z], () => Object.values(j.Z.getVoiceStatesForChannel(t.id)).map(e => I.default.getUser(e.userId)).filter(C.lm).sort((e, t) => {
         var i, r, o, a;
         if (l.length > 0 && "" !== n.trim()) {
@@ -304,7 +304,7 @@ function W(e) {
     channel: e,
     voiceStates: Object.values(j.Z.getVoiceStatesForChannel(e.id)).filter(e => x.Z.isFriend(e.userId))
   })), []), [d, p] = r.useState(""), [f, h] = r.useState([]);
-  (0, O.BO)(d, u, h, k);
+  (0, O.BO)(d, u, h, A);
   let m = r.useCallback(e => {
       "Escape" === e.key && l()
     }, [l]),

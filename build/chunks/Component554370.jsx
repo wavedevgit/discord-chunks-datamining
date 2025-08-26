@@ -124,7 +124,7 @@ let $ = Chunk647438.memo(function(e) {
       onContextMenu: J,
       children: r ? null : (0, i.jsx)(L.Z, {
         className: Y.closeContainer,
-        children: (0, i.jsx)(A.Z, {
+        children: (0, i.jsx)(k.Z, {
           keybind: t,
           onClick: n,
           IconComponent: c.Uz9
@@ -139,7 +139,7 @@ let $ = Chunk647438.memo(function(e) {
     } = e;
     return t && n ? (0, i.jsx)(L.Z, {
       className: Y.closeContainer,
-      children: (0, i.jsx)(A.Z, {
+      children: (0, i.jsx)(k.Z, {
         onClick: () => d.Z.setInputLocked(false, (0, w.getPID)()),
         IconComponent: c.d$P
       })
@@ -175,7 +175,7 @@ function eo(e) {
     focused: u,
     incompatibleApp: m,
     hasZeroSizeDimension: C,
-    keybind: A
+    keybind: k
   } = (0, a.cj)([U.ZP, x.default, I.Z, _.ZP], () => {
     let e = I.Z.windowSize((0, Z.ZY)(n)),
       t = _.ZP.getOverlayKeybind(),
@@ -270,7 +270,7 @@ function eo(e) {
         className: l()(Y.overlay, e),
         children: [!t && K, (0, i.jsx)($, {
           locked: o,
-          keybind: A,
+          keybind: k,
           onClick: et
         }), (0, i.jsx)(R.Z, {
           className: l()({
@@ -280,7 +280,7 @@ function eo(e) {
         }), (0, i.jsx)(W.Z, {}), !t && Q && (0, i.jsx)(ee, {
           locked: o,
           focused: u
-        }), (0, i.jsx)(k.Z, {}), (0, i.jsx)(D.Z, {
+        }), (0, i.jsx)(A.Z, {}), (0, i.jsx)(D.Z, {
           locked: o
         }), (0, i.jsx)(c.Ixi, {})]
       })

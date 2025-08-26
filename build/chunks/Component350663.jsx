@@ -97,11 +97,11 @@ let _ = {
       locked: v,
       widgetId: t,
       pinned: I
-    })), w = (0, c.Z)(n), Z = (0, c.Z)(v), T = b === h.C5.VERTICAL, P = v || Z !== v || w !== n, k = 0, A = 0, D = (0, s.Yzy)(T ? N.map((e, t) => O(y({}, e), {
-      y: (k += e.height + (t > 0 ? j : 0)) - e.height,
+    })), w = (0, c.Z)(n), Z = (0, c.Z)(v), T = b === h.C5.VERTICAL, P = v || Z !== v || w !== n, A = 0, k = 0, D = (0, s.Yzy)(T ? N.map((e, t) => O(y({}, e), {
+      y: (A += e.height + (t > 0 ? j : 0)) - e.height,
       x: 0
     })) : N.map((e, t) => O(y({}, e), {
-      x: (A += e.width + (t > 0 ? j : 0)) - e.width,
+      x: (k += e.width + (t > 0 ? j : 0)) - e.width,
       y: 0
     })), {
       key: e => e.key,
@@ -159,9 +159,9 @@ let _ = {
         [g.horizontal]: !T
       }),
       style: T ? {
-        height: k
+        height: A
       } : {
-        width: A
+        width: k
       },
       children: D((e, t, r, l) => (0, i.jsx)(a.animated.div, {
         className: g.gridItem,

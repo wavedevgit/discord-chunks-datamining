@@ -288,7 +288,7 @@ let eb = new eO(Chunk570140.Z, {
     } = e;
     ep(0);
     let i = null != (t = R.ZP.getFocusedPID()) ? t : T.UNSET_PID;
-    if (A.default.hasChangedRenderMode(i)) return;
+    if (k.default.hasChangedRenderMode(i)) return;
     let r = (0, Y.Z)((0, M.pL)(), n);
     null != r && em(r, {
       priority: L.Tu.URGENT,

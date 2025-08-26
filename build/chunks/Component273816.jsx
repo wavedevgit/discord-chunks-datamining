@@ -69,16 +69,16 @@ function b(e) {
       bufferFramecountRef: Z,
       frameCheckerEffect: T
     } = (0, u.d6)(true, _, true),
-    [P, k, A] = (0, u.ZF)(b),
+    [P, A, k] = (0, u.ZF)(b),
     [D, R] = (0, u.Y5)(P, T, E),
     L = performance.now() - S.current < u.MC,
-    M = k(I, Z.current);
+    M = A(I, Z.current);
   (0, c.ZP)(() => (D(), () => {
     R()
   }));
   let z = r.useCallback(() => {
-      C(), A(), D()
-    }, [C, A, D]),
+      C(), k(), D()
+    }, [C, k, D]),
     [U, V] = r.useState(true),
     [W, F] = r.useState(true),
     [G, B] = r.useState(true),

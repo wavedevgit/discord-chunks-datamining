@@ -52,7 +52,7 @@ function P(e) {
   return e
 }
 
-function k(e, t) {
+function A(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -65,7 +65,7 @@ function k(e, t) {
   }), e
 }
 
-function A(e, t) {
+function k(e, t) {
   if (null == e) return {};
   var n, i, r = function(e, t) {
     if (null == e) return {};
@@ -97,8 +97,8 @@ function D(e) {
     children: e => {
       var {
         onClick: n
-      } = e, r = A(e, ["onClick"]);
-      return (0, i.jsx)(c.P3F, k(P({}, r), {
+      } = e, r = k(e, ["onClick"]);
+      return (0, i.jsx)(c.P3F, A(P({}, r), {
         className: T.controlAction,
         onClick: e => {
           e.stopPropagation(), (0, C.Ws)(w.Odu.GO_LIVE, {
@@ -129,7 +129,7 @@ function R(e, t, r) {
       let {
         default: r
       } = await n.e("5704").then(n.bind(n, 360429));
-      return n => (0, i.jsx)(r, k(P({}, n), {
+      return n => (0, i.jsx)(r, A(P({}, n), {
         stream: e.stream,
         exitFullscreen: () => {},
         appContext: t
@@ -156,7 +156,7 @@ function L(e) {
       className: T.watchActionContainer,
       children: (0, i.jsx)(c.ua7, {
         text: d,
-        children: e => (0, i.jsxs)(c.P3F, k(P({}, e), {
+        children: e => (0, i.jsxs)(c.P3F, A(P({}, e), {
           className: T.watchButton,
           onClick: () => {
             var t;
@@ -217,8 +217,8 @@ function L(e) {
             children: e => {
               var {
                 onClick: t
-              } = e, r = A(e, ["onClick"]);
-              return (0, i.jsx)(c.P3F, k(P({}, r), {
+              } = e, r = k(e, ["onClick"]);
+              return (0, i.jsx)(c.P3F, A(P({}, r), {
                 className: T.controlAction,
                 onClick: R(n, o, t),
                 children: (0, i.jsx)(c.xhG, {

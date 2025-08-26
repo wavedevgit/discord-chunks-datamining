@@ -72,7 +72,7 @@ let Z = [],
   }),
   P = T(Chunk350663.bt, Chunk350663.fd);
 
-function k(e, t, n, i, r) {
+function A(e, t, n, i, r) {
   let {
     padding: o,
     sizeOffset: l
@@ -80,8 +80,8 @@ function k(e, t, n, i, r) {
   return e === x.C5.HORIZONTAL ? u = n : c = t, T(c + l, u + l)
 }
 
-function A(e, t, n) {
-  return k(e, _.bt, _.fd, t, n)
+function k(e, t, n) {
+  return A(e, _.bt, _.fd, t, n)
 }
 let D = e => {
   let {
@@ -295,7 +295,7 @@ function L(e) {
       if (0 === l) return void R(N({
         widgetId: t,
         size: P,
-        minSize: A(a, 1, {
+        minSize: k(a, 1, {
           padding: s,
           sizeOffset: r
         }),
@@ -308,11 +308,11 @@ function L(e) {
       } = i;
       R(N({
         widgetId: t,
-        size: k(a, d, p, l, {
+        size: A(a, d, p, l, {
           padding: s,
           sizeOffset: r
         }),
-        minSize: A(a, l, {
+        minSize: k(a, l, {
           padding: s,
           sizeOffset: r
         }),
@@ -333,11 +333,11 @@ function L(e) {
         c = w(e, ["id", "sizeOffset", "containerSize", "padding", "participants", "widget"]);
       null != s && R(N({
         widgetId: t,
-        size: A(n, a, {
+        size: k(n, a, {
           padding: l,
           sizeOffset: i
         }),
-        minSize: A(n, a, {
+        minSize: k(n, a, {
           padding: l,
           sizeOffset: i
         }),
@@ -356,7 +356,7 @@ function L(e) {
       null != r && R(N({
         widgetId: t,
         size: P,
-        minSize: A(n, 0, {
+        minSize: k(n, 0, {
           padding: l,
           sizeOffset: i
         }),

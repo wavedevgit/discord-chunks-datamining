@@ -110,7 +110,7 @@ function X(e) {
             var i;
             let e = await m.Z.getOrEnsurePrivateChannel(a.id),
               n = null != (i = P.Z.getChannel(e)) ? i : null;
-            l()(null != n, "Send channel must be defined"), (0, C.uL)(G.Z5c.CHANNEL(n.guild_id, n.id)), (0, b.i)(G.IlC.OVERLAY, true), "fake_inventory_item" in t.extra && true === t.extra.fake_inventory_item ? await (0, x.k)({
+            l()(null != n, "Send channel must be defined"), (0, C.uL)(G.Z5c.CHANNEL(n.guild_id, n.id)), (0, b.i)(G.IlC.OVERLAY, true), true === t.extra.fake_inventory_item ? await (0, x.k)({
               channel: n,
               content: H.intl.formatToPlainString(H.t.UVBA9v, {
                 gameName: t.extra.game_name
@@ -186,7 +186,7 @@ function q(e) {
   let {
     entry: n,
     currentUserActivity: o
-  } = e, l = (0, u.e7)([R.default], () => R.default.getUser(n.author_id)), a = null != (t = null == o ? true : o.application_id) ? t : n.extra.application_id, s = (0, u.e7)([A.Z], () => null != l ? A.Z.getApplicationActivity(l.id, a) : null, [a, l]), [c, h] = r.useState("unsent");
+  } = e, l = (0, u.e7)([R.default], () => R.default.getUser(n.author_id)), a = null != (t = null == o ? true : o.application_id) ? t : n.extra.application_id, s = (0, u.e7)([k.Z], () => null != l ? k.Z.getApplicationActivity(l.id, a) : null, [a, l]), [c, h] = r.useState("unsent");
   if (!(null != s && (0, v.Z)(s, G.xjy.JOIN))) return null;
   let m = async e => {
     if (null != l && "unsent" === c) {
@@ -239,12 +239,12 @@ function J(e) {
   } = e, o = (0, u.e7)([R.default], () => R.default.getUser(t.author_id)), l = (0, u.e7)([T.Z], () => null != o ? T.Z.getAnyStreamForUser(o.id) : null, [o]), {
     isMobileOnline: a,
     status: s
-  } = (0, u.cj)([A.Z], () => null == o ? {
+  } = (0, u.cj)([k.Z], () => null == o ? {
     isMobileOnline: true,
     status: true
   } : {
-    isMobileOnline: A.Z.isMobileOnline(o.id),
-    status: A.Z.getStatus(o.id)
+    isMobileOnline: k.Z.isMobileOnline(o.id),
+    status: k.Z.getStatus(o.id)
   }, [o]);
   return null == o ? null : (0, i.jsxs)("div", {
     className: Y.row,
@@ -342,7 +342,7 @@ function et(e) {
   (0, O.ZP)(() => {
     (0, N._)()
   });
-  let l = (0, u.e7)([k.Z], () => null == t ? null : k.Z.getApplicationActivity(t), [t]),
+  let l = (0, u.e7)([A.Z], () => null == t ? null : A.Z.getApplicationActivity(t), [t]),
     d = (0, u.Wu)([L.Z, D.Z, w.Z], () => {
       if (null == t) return [];
       let e = L.Z.nowPlayingCards,
@@ -449,7 +449,7 @@ function ei(e) {
 function er(e) {
   let {
     locked: t
-  } = e, n = (0, F.II)(), r = null == n ? true : n.id, o = null == n ? true : n.altId, l = (0, I.Z)(r, "ActivityWidget"), a = (0, u.e7)([R.default], () => R.default.getCurrentUser()), s = null != o ? o : r, c = (0, u.e7)([k.Z], () => null == s ? null : k.Z.getApplicationActivity(s), [s]);
+  } = e, n = (0, F.II)(), r = null == n ? true : n.id, o = null == n ? true : n.altId, l = (0, I.Z)(r, "ActivityWidget"), a = (0, u.e7)([R.default], () => R.default.getCurrentUser()), s = null != o ? o : r, c = (0, u.e7)([A.Z], () => null == s ? null : A.Z.getApplicationActivity(s), [s]);
   (0, O.ZP)(() => (j.L(), () => j.v()));
   let d = et({
     gamingId: s,
