@@ -34,7 +34,7 @@ function L(e) {
     selectedGiftingPromotionReward: y,
     claimableRewards: S,
     claimableVariants: E
-  } = (0, u.wD)(), O = (0, a.e7)([c.default], () => c.default.getCurrentUser()), [P, v] = i.useState(null), w = Math.floor(2 * Math.random()), [I, M] = i.useState(w);
+  } = (0, u.wD)(), O = (0, a.e7)([c.default], () => c.default.getCurrentUser()), [P, v] = i.useState(null), I = Math.floor(2 * Math.random()), [w, M] = i.useState(I);
   i.useEffect(() => {
     null != S && S.length > 0 && null == y && b(S[0])
   }, [S, y, b]), s()(null != l, "Expected plan to selected"), s()(null != L, "Expected selectedSkuId"), s()(null != g, "Step should be set");
@@ -57,7 +57,7 @@ function L(e) {
           })
         }
         return e
-      }({}, e.variants[I]), n = n = {
+      }({}, e.variants[w]), n = n = {
         name: e.name
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);
@@ -69,7 +69,7 @@ function L(e) {
       })(Object(n)).forEach(function(e) {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
       }), t)
-    }), [E, S, I]),
+    }), [E, S, w]),
     k = e => {
       b(Z.find(t => t.skuId === e)), v(e)
     },
@@ -78,6 +78,7 @@ function L(e) {
       assetId: e.assetId,
       productName: e.name,
       a11yLabel: e.a11yLabel,
+      claimed: null != S && !S.includes(e),
       user: O,
       onSelect: k,
       selectedSkuId: null != P ? P : true
@@ -109,7 +110,7 @@ function L(e) {
         color: "text-secondary",
         className: m.subtitle,
         children: j.intl.format(j.t.xGzXNT, {
-          rewardCount: Z.length
+          rewardCount: 2 * Z.length
         })
       })]
     });
@@ -131,7 +132,7 @@ function L(e) {
           name: "Treat",
           value: 1
         }],
-        value: I,
+        value: w,
         look: "pill",
         onChange: e => {
           let {

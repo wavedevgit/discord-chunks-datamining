@@ -76,8 +76,8 @@ function R(e) {
     renderPurchaseConfirmation: O,
     postSuccessGuild: P,
     followupSKUInfo: v,
-    renderHeader: w,
-    applicationId: I,
+    renderHeader: I,
+    applicationId: w,
     guildId: M,
     referralTrialOfferId: A,
     skuId: T,
@@ -96,7 +96,7 @@ function R(e) {
     isGift: F,
     giftMessage: G,
     giftRecipient: D
-  } = (0, h.wD)(), W = F && (0, x.pO)(D) && H === f.h8.PLAN_SELECT;
+  } = (0, h.wD)(), z = F && (0, x.pO)(D) && H === f.h8.PLAN_SELECT;
   return (0, r.jsx)(S.Z, {
     isConfirmationStep: H === f.h8.CONFIRM,
     children: (0, r.jsx)(m.PaymentModal, {
@@ -121,13 +121,13 @@ function R(e) {
       renderPurchaseConfirmation: O,
       postSuccessGuild: P,
       followupSKUInfo: v,
-      renderHeader: w,
-      applicationId: I,
+      renderHeader: I,
+      applicationId: w,
       guildId: M,
       referralTrialOfferId: A,
       skuId: T,
       shakeWhilePurchasing: true,
-      isDynamicModal: W,
+      isDynamicModal: z,
       returnRef: B,
       skipConfirm: U,
       continueSessionToInitialStep: R
@@ -178,7 +178,7 @@ let H = [{
   renderStep: e => (0, r.jsx)(m.I, B({}, e))
 }, {
   key: Chunk409813.h8.SKU_SELECT,
-  renderStep: e => (0, r.jsx)(w.q, B({}, e)),
+  renderStep: e => (0, r.jsx)(I.q, B({}, e)),
   options: {
     renderHeader: false,
     hideSlider: true,
@@ -186,7 +186,7 @@ let H = [{
   }
 }, {
   key: Chunk409813.h8.WHAT_YOU_LOSE,
-  renderStep: e => (0, r.jsx)(I.x, B({}, e)),
+  renderStep: e => (0, r.jsx)(w.x, B({}, e)),
   options: {
     renderHeader: false,
     hideSlider: true
