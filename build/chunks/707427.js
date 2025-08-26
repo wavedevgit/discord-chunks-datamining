@@ -193,13 +193,14 @@ let {
       gradient: {
         light: {
           color: "gradient.mid",
-          opacity: .4,
-          lightness: "*0.75"
+          opacity: .9,
+          lightness: "*0.5",
+          saturation: "*0.2"
         },
         dark: {
           color: "gradient.mid",
-          opacity: .3,
-          lightness: .75,
+          opacity: .8,
+          lightness: "*0.5",
           saturation: "*1.2"
         }
       }

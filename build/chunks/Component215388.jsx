@@ -36,15 +36,15 @@ function C(e) {
   var A;
   let {
     hasError: t,
-    maxLength: n,
+    maxLength: r,
     text: l
   } = e;
-  return (0, r.jsxs)("div", {
+  return (0, n.jsxs)("div", {
     className: a()(m.maxLength, {
       [m.errorOverflow]: t
     }),
     "aria-hidden": "true",
-    children: [null != (A = null == l ? true : l.length) ? A : 0, " ", null != n && "/ ".concat(n)]
+    children: [null != (A = null == l ? true : l.length) ? A : 0, " ", null != r && "/ ".concat(r)]
   })
 }
 
@@ -53,7 +53,7 @@ function v(e) {
   let {
     "aria-labelledby": t,
     className: l,
-    id: o,
+    id: i,
     autoFocus: c,
     maxLength: f,
     onChange: m,
@@ -62,9 +62,9 @@ function v(e) {
     placeholder: x,
     required: U,
     value: V,
-    enableThemedBackground: P = false,
-    parentModalKey: O
-  } = e, F = (0, i.Gc0)(), [I, y] = n.useState(() => (0, s.JM)(V)), N = n.useRef(true === c), K = null != t ? t : null == F ? true : F.titleId, T = null != (A = null == F ? true : F.errorId) ? A : b, X = n.useMemo(() => ({
+    enableThemedBackground: O = false,
+    parentModalKey: P
+  } = e, F = (0, o.Gc0)(), [I, y] = r.useState(() => (0, s.JM)(V)), N = r.useRef(true === c), K = null != t ? t : null == F ? true : F.titleId, T = null != (A = null == F ? true : F.errorId) ? A : b, X = r.useMemo(() => ({
     analyticsName: "simple",
     autocomplete: {
       alwaysUseLayer: true,
@@ -85,11 +85,11 @@ function v(e) {
       disableEnterToSubmit: true
     }
   }), [c]);
-  return (0, r.jsxs)(d.ZP, {
+  return (0, n.jsxs)(d.ZP, {
     "aria-describedby": T,
     "aria-labelledby": K,
     innerClassName: a()(l, p.textArea),
-    id: o,
+    id: i,
     maxCharacterCount: f,
     onChange: function(e, A, t) {
       m(A), y(t)
@@ -108,14 +108,14 @@ function v(e) {
     },
     focused: N.current,
     onSubmit: null != v ? v : h,
-    disableThemedBackground: !P,
-    parentModalKey: O,
+    disableThemedBackground: !O,
+    parentModalKey: P,
     emojiPickerCloseOnModalOuterClick: true,
-    children: [true === j && (0, r.jsx)(C, {
+    children: [true === j && (0, n.jsx)(C, {
       hasError: null != F.error || null != f && V.length > f,
       text: V,
       maxLength: f
-    }), null != f && (0, r.jsx)(i.nn4, {
+    }), null != f && (0, n.jsx)(o.nn4, {
       id: b,
       children: g.intl.format(g.t["+DFxLS"], {
         maxLength: f

@@ -8,10 +8,10 @@ var Chunk531643 = require("./531643.jsx"),
   Chunk388032 = require("./388032.jsx");
 
 function a(e) {
-  (0, r.openUploadError)({
+  (0, n.openUploadError)({
     title: l.intl.string(l.t["/tGlcn"]),
     help: l.intl.formatToPlainString(l.t.fxEKdX, {
-      maxSize: (0, n.Ng)(e)
+      maxSize: (0, r.Ng)(e)
     })
   })
 }
