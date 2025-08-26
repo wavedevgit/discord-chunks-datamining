@@ -72,8 +72,11 @@ let j = Chunk647438.memo(function(e) {
     children: [(0, l.jsx)(m, {
       title: i,
       onClose: t
-    }), null != n && (0, l.jsx)(d.Z, {
-      node: n
+    }), (0, l.jsx)("div", {
+      className: g.contentBody,
+      children: null != n && (0, l.jsx)(d.Z, {
+        node: n
+      })
     })]
   })
 })

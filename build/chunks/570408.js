@@ -2,16 +2,17 @@
 /** chunk id: 570408, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  I: () => o
+  I: () => a
 });
-var Chunk585483 = require("./585483.js"),
+var Chunk819640 = require("./819640.js"),
+  Chunk585483 = require("./585483.js"),
   Chunk981631 = require("./981631.js");
-let o = {
+let a = {
   binds: ["mod+f"],
   comboKeysBindGlobal: true,
-  action(e) {
-    e.preventDefault(), e.stopPropagation(), r.S.dispatch(i.CkL.FOCUS_SEARCH, {
+  action() {
+    if (!Chunk819640.Z.hasLayers()) return Chunk585483.S.dispatch(Chunk981631.CkL.FOCUS_SEARCH, {
       prefillCurrentChannel: true
-    })
+    }), false
   }
 }
