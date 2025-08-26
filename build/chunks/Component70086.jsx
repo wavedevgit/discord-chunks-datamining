@@ -15,12 +15,12 @@ function c(e) {
     onClick: t,
     className: n
   } = e;
-  return (0, r.jsxs)(i.gtL, {
-    color: s.zx.Colors.GREEN,
+  return (0, i.jsxs)(s.gtL, {
+    color: r.zx.Colors.GREEN,
     className: n,
     innerClassName: a.upsellButton,
     onClick: t,
-    children: [(0, r.jsx)(i.$Eu, {
+    children: [(0, i.jsx)(s.$Eu, {
       color: "white",
       size: "custom",
       height: 16,

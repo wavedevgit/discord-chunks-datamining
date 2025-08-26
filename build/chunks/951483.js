@@ -3,7 +3,7 @@
 require.d(exports, {
   Sr: () => x,
   Xq: () => C,
-  Zg: () => E
+  Zg: () => S
 }), require("./415506.js");
 var Chunk186070 = require("./186070.js"),
   Chunk185514 = require("./185514.js"),
@@ -67,7 +67,7 @@ let x = {
     [Chunk981631.EkH.QUICKSWITCHER_SHOW]: Chunk167042.$
   };
 
-function E() {
+function S() {
   return [{
     description: Chunk388032.intl.string(Chunk388032.t.bx4Uy8),
     binds: j(Chunk981631.EkH.SERVER_PREV, Chunk981631.EkH.SERVER_NEXT)

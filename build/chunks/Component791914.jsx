@@ -40,7 +40,7 @@ function v(e) {
     enabled: x
   } = u.Z.useExperiment({
     location: "RecentsHeader"
-  }), C = (0, i.e7)([c.Z], () => c.Z.getUnseenInviteCount()), E = (0, i.e7)([p.Z], () => p.Z.getOverdueMessageReminderCount());
+  }), C = (0, i.e7)([c.Z], () => c.Z.getUnseenInviteCount()), S = (0, i.e7)([p.Z], () => p.Z.getOverdueMessageReminderCount());
   return (0, r.jsxs)(a.h4, {
     className: _.header,
     children: [(0, r.jsxs)("div", {
@@ -104,8 +104,8 @@ function v(e) {
           "aria-label": y.intl.string(y.t["2pAkDA"]),
           id: l.X.BOOKMARKS,
           className: _.tab,
-          children: 0 === E ? y.intl.string(y.t["2pAkDA"]) : y.intl.formatToPlainString(y.t.I4fryM, {
-            count: E
+          children: 0 === S ? y.intl.string(y.t["2pAkDA"]) : y.intl.formatToPlainString(y.t.I4fryM, {
+            count: S
           })
         }) : null, v ? (0, r.jsx)(o.njP.Item, {
           "aria-label": "scheduled",

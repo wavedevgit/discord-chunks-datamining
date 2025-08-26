@@ -1,12 +1,12 @@
-/** Chunk was on 7318 **/
-/** chunk id: 683101, original params: A,e,t (module,exports,require) **/
+/** Chunk was on 74486 **/
+/** chunk id: 683101, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => I
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk392711 = require("./392711.js"),
-  i = require.n(Chunk392711),
+  a = require.n(Chunk392711),
   Chunk374470 = require("./374470.js"),
   Chunk481060 = require("./481060.js"),
   Chunk239091 = require("./239091.js"),
@@ -15,63 +15,63 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk374815 = require("./374815.js");
 
-function h(A, e, t) {
-  return e in A ? Object.defineProperty(A, e, {
-    value: t,
+function A(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
     enumerable: true,
     configurable: true,
     writable: true
-  }) : A[e] = t, A
+  }) : e[t] = n, e
 }
 
-function u(A) {
-  for (var e = 1; e < arguments.length; e++) {
-    var t = null != arguments[e] ? arguments[e] : {},
-      n = Object.keys(t);
-    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(t).filter(function(A) {
-      return Object.getOwnPropertyDescriptor(t, A).enumerable
-    }))), n.forEach(function(e) {
-      h(A, e, t[e])
+function m(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      A(e, t, n[t])
     })
   }
-  return A
+  return e
 }
 
-function d(A, e) {
-  return e = null != e ? e : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(A, Object.getOwnPropertyDescriptors(e)) : (function(A, e) {
-    var t = Object.keys(A);
+function T(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+    var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var n = Object.getOwnPropertySymbols(A);
-      t.push.apply(t, n)
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
     }
-    return t
-  })(Object(e)).forEach(function(t) {
-    Object.defineProperty(A, t, Object.getOwnPropertyDescriptor(e, t))
-  }), A
+    return n
+  })(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
 }
-class E extends Chunk647438.PureComponent {
+class I extends Chunk647438.PureComponent {
   render() {
     let {
-      result: A,
-      listItemProps: e,
-      searchOffset: t,
-      index: r,
-      totalResults: l
-    } = this.props, s = i().find(module, A => A.isSearchHit);
+      result: e,
+      listItemProps: t,
+      searchOffset: n,
+      index: l,
+      totalResults: i
+    } = this.props, s = a().find(module, e => e.isSearchHit);
     if (null == Chunk374470) return null;
-    let o = Chunk592125.Z.getChannel(Chunk374470.channel_id);
+    let u = Chunk592125.Z.getChannel(Chunk374470.channel_id);
     if (null == Chunk239091) return null;
-    let h = "search-result-".concat(Chunk374470.id);
+    let A = "search-result-".concat(Chunk374470.id);
     return (0, Chunk951288.jsx)(Chunk481060.tEY, {
       ringTarget: this.hitRef,
       ringClassName: Chunk374815.__invalid_searchResultFocusRing,
       offset: 4,
-      children: (0, Chunk951288.jsxs)("li", d(u({
+      children: (0, Chunk951288.jsxs)("li", T(m({
         className: Chunk374815.container
       }, exports), {
         "aria-posinset": 1 + require + Chunk647438,
         "aria-setsize": Chunk392711,
-        "aria-labelledby": h,
+        "aria-labelledby": A,
         children: [(0, Chunk951288.jsx)(Chunk481060.P3F, {
           tabIndex: false,
           onClick: this.handleMessageClick,
@@ -84,10 +84,10 @@ class E extends Chunk647438.PureComponent {
             ref: this.hitRef,
             className: Chunk374815.message,
             children: (0, Chunk951288.jsx)(Chunk294218.Z, {
-              id: h,
+              id: A,
               message: Chunk374470,
               channel: Chunk239091,
-              onContextMenu: A => this.handleContextMenu(A, s),
+              onContextMenu: e => this.handleContextMenu(e, s),
               animateAvatar: false,
               subscribeToComponentDispatch: false,
               trackAnnouncementViews: true,
@@ -106,43 +106,43 @@ class E extends Chunk647438.PureComponent {
       }))
     })
   }
-  constructor(...A) {
-    super(...A), h(this, "containerRef", r.createRef()), h(this, "hitRef", r.createRef()), h(this, "handleContextMenu", (A, e) => {
-      let r = c.Z.getChannel(e.channel_id);
-      null != r && (A.stopPropagation(), (0, o.jW)(A, async () => {
+  constructor(...e) {
+    super(...e), A(this, "containerRef", l.createRef()), A(this, "hitRef", l.createRef()), A(this, "handleContextMenu", (e, t) => {
+      let l = d.Z.getChannel(t.channel_id);
+      null != l && (e.stopPropagation(), (0, u.jW)(e, async () => {
         let {
-          default: A
-        } = await Promise.all([t.e("76676"), t.e("93077"), t.e("69363")]).then(t.bind(t, 858341));
-        return t => (0, n.jsx)(A, d(u({}, t), {
-          message: e,
-          channel: r
+          default: e
+        } = await Promise.all([n.e("76676"), n.e("93077"), n.e("69363")]).then(n.bind(n, 858341));
+        return n => (0, r.jsx)(e, T(m({}, n), {
+          message: t,
+          channel: l
         }))
       }))
-    }), h(this, "jumpTo", A => {
-      null != A && (A.preventDefault(), A.stopPropagation());
+    }), A(this, "jumpTo", e => {
+      null != e && (e.preventDefault(), e.stopPropagation());
       let {
-        onJump: e,
-        result: t,
-        index: n
-      } = this.props, r = t.find(A => A.isSearchHit);
-      null != r && e(r, n)
-    }), h(this, "handleMessageClick", A => {
-      if (function(A, e) {
-          var t;
-          let n = null == (t = window) ? true : t.getSelection();
-          if (null != n && !n.isCollapsed) returntrue;
-          if (null == A || null == e) returnfalse;
+        onJump: t,
+        result: n,
+        index: r
+      } = this.props, l = n.find(e => e.isSearchHit);
+      null != l && t(l, r)
+    }), A(this, "handleMessageClick", e => {
+      if (function(e, t) {
+          var n;
+          let r = null == (n = window) ? true : n.getSelection();
+          if (null != r && !r.isCollapsed) returntrue;
+          if (null == e || null == t) returnfalse;
           for (;
-            (0, s.k)(A) && A !== e;) {
+            (0, s.k)(e) && e !== t;) {
             let {
-              tagName: e
-            } = A;
-            if ("A" === e || "IMG" === e || "BUTTON" === e) returntrue;
-            A = A.parentNode
+              tagName: t
+            } = e;
+            if ("A" === t || "IMG" === t || "BUTTON" === t) returntrue;
+            e = e.parentNode
           }
           returnfalse
-        }(A.target, this.containerRef.current)) return void A.stopPropagation();
-      this.jumpTo(A)
+        }(e.target, this.containerRef.current)) return void e.stopPropagation();
+      this.jumpTo(e)
     })
   }
 }

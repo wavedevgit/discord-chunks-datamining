@@ -1,7 +1,7 @@
-/** Chunk was on 7318 **/
-/** chunk id: 718617, original params: A,e,t (module,exports,require) **/
+/** Chunk was on 74486 **/
+/** chunk id: 718617, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => w
+  Z: () => h
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,39 +20,39 @@ var Chunk951288 = require("./951288.js"),
   Chunk50493 = require("./50493.js"),
   Chunk981631 = require("./981631.js");
 
-function B(A, e) {
-  return t => {
-    if (0 === t) return "auto";
-    let n = "forwards" === e.current,
-      r = t > 0,
-      l = false;
-    return r && n && "left" === A && (l = true), r && !n && "right" === A && (l = true), !r && n && "right" === A && (l = true), r || n || "left" !== A || (l = true), l ? "calc(".concat(100 * Math.abs(t), "% + ").concat(Math.round(12 * Math.abs(t)), "px)") : "auto"
+function f(e, t) {
+  return n => {
+    if (0 === n) return "auto";
+    let r = "forwards" === t.current,
+      l = n > 0,
+      i = false;
+    return l && r && "left" === e && (i = true), l && !r && "right" === e && (i = true), !l && r && "right" === e && (i = true), l || r || "left" !== e || (i = true), i ? "calc(".concat(100 * Math.abs(n), "% + ").concat(Math.round(12 * Math.abs(n)), "px)") : "auto"
   }
 }
 
-function w(A) {
-  var e;
+function h(e) {
+  var t;
   let {
-    userId: t,
-    guildId: w,
-    onClose: D,
-    analyticsLocation: M,
+    userId: n,
+    guildId: h,
+    onClose: N,
+    analyticsLocation: O,
     className: p
-  } = A, I = (0, i.e7)([f.ZP], () => f.ZP.getGuildSidebarState(w), [w]), H = null != (e = null == I ? true : I.details.modViewPanel) ? e : E.k.INFO, b = (0, o.Z)(t), Q = null == H ? null : H === E.k.INFO ? "backwards" : "forwards", O = (0, c.Z)(Q), {
-    reducedMotion: P
-  } = r.useContext(s.S), V = r.useCallback(A => {
-    null != I && (0, v.r)(w, t, I.baseChannelId, {
-      modViewPanel: A
+  } = e, R = (0, a.e7)([E.ZP], () => E.ZP.getGuildSidebarState(h), [h]), S = null != (t = null == R ? true : R.details.modViewPanel) ? t : I.k.INFO, C = (0, u.Z)(n), D = null == S ? null : S === I.k.INFO ? "backwards" : "forwards", L = (0, d.Z)(D), {
+    reducedMotion: b
+  } = l.useContext(s.S), U = l.useCallback(e => {
+    null != R && (0, _.r)(h, n, R.baseChannelId, {
+      modViewPanel: e
     })
-  }, [I, w, t]), j = r.useMemo(() => ({
-    [C.EkH.CLOSE_MODAL]: {
+  }, [R, h, n]), v = l.useMemo(() => ({
+    [g.EkH.CLOSE_MODAL]: {
       binds: ["esc"],
       comboKeysBindGlobal: true,
-      action: () => H === E.k.INFO ? D() : V(E.k.INFO)
+      action: () => S === I.k.INFO ? N() : U(I.k.INFO)
     }
-  }), [D, H, V]);
-  r.useEffect(() => (g.Z.enable(), g.Z.enableTemp(j), () => g.Z.disableTemp()), [j]);
-  let m = (0, a.Yzy)(H, {
+  }), [N, S, U]);
+  l.useEffect(() => (c.Z.enable(), c.Z.enableTemp(v), () => c.Z.disableTemp()), [v]);
+  let M = (0, o.Yzy)(S, {
     value: 0,
     from: {
       value: 1
@@ -63,37 +63,37 @@ function w(A) {
     leave: {
       value: false
     }
-  }, b !== t ? "animate-never" : "animate-always");
-  return (0, n.jsx)(l.animated.div, {
+  }, C !== n ? "animate-never" : "animate-always");
+  return (0, r.jsx)(i.animated.div, {
     style: {
       position: "relative",
       height: "100%",
       flex: 1,
       overflow: "hidden"
     },
-    children: m((A, e, r) => {
-      var i, s, a;
+    children: M((e, t, l) => {
+      var a, s, o;
       let {
-        key: o
-      } = r;
-      return (0, n.jsx)(l.animated.div, {
-        style: function(A) {
-          for (var e = 1; e < arguments.length; e++) {
-            var t = null != arguments[e] ? arguments[e] : {},
-              n = Object.keys(t);
-            "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(t).filter(function(A) {
-              return Object.getOwnPropertyDescriptor(t, A).enumerable
-            }))), n.forEach(function(e) {
-              var n;
-              n = t[e], e in A ? Object.defineProperty(A, e, {
-                value: n,
+        key: u
+      } = l;
+      return (0, r.jsx)(i.animated.div, {
+        style: function(e) {
+          for (var t = 1; t < arguments.length; t++) {
+            var n = null != arguments[t] ? arguments[t] : {},
+              r = Object.keys(n);
+            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+              return Object.getOwnPropertyDescriptor(n, e).enumerable
+            }))), r.forEach(function(t) {
+              var r;
+              r = n[t], t in e ? Object.defineProperty(e, t, {
+                value: r,
                 enumerable: true,
                 configurable: true,
                 writable: true
-              }) : A[e] = n
+              }) : e[t] = r
             })
           }
-          return A
+          return e
         }({
           position: "absolute",
           display: "flex",
@@ -101,40 +101,40 @@ function w(A) {
           backfaceVisibility: "hidden",
           width: "100%",
           height: "100%"
-        }, P.enabled ? {
-          opacity: null == (i = A.value) ? true : i.to(A => 1 - Math.abs(A))
+        }, b.enabled ? {
+          opacity: null == (a = e.value) ? true : a.to(e => 1 - Math.abs(e))
         } : {
-          left: null == (s = A.value) ? true : s.to(B("left", O)),
-          right: null == (a = A.value) ? true : a.to(B("right", O))
+          left: null == (s = e.value) ? true : s.to(f("left", L)),
+          right: null == (o = e.value) ? true : o.to(f("right", L))
         }),
-        children: function(A) {
-          switch (A) {
-            case E.k.INFO:
-              return (0, n.jsx)(h.Z, {
-                userId: t,
-                guildId: w,
-                onNavigate: V,
+        children: function(e) {
+          switch (e) {
+            case I.k.INFO:
+              return (0, r.jsx)(A.Z, {
+                userId: n,
+                guildId: h,
+                onNavigate: U,
                 className: p
               });
-            case E.k.MESSAGE_HISTORY:
-              return (0, n.jsx)(u.Z, {
-                userId: t,
-                guildId: w,
-                onNavigate: () => V(E.k.INFO),
+            case I.k.MESSAGE_HISTORY:
+              return (0, r.jsx)(m.Z, {
+                userId: n,
+                guildId: h,
+                onNavigate: () => U(I.k.INFO),
                 className: p
               });
-            case E.k.PERMISSIONS:
-              return (0, n.jsx)(d.Z, {
-                userId: t,
-                guildId: w,
-                onNavigate: () => V(E.k.INFO),
+            case I.k.PERMISSIONS:
+              return (0, r.jsx)(T.Z, {
+                userId: n,
+                guildId: h,
+                onNavigate: () => U(I.k.INFO),
                 className: p
               });
             default:
               return null
           }
-        }(e)
-      }, o)
+        }(t)
+      }, u)
     })
   })
 }

@@ -21,22 +21,22 @@ function _(e) {
   let {
     guildId: t,
     powerupListingId: n
-  } = e, _ = (0, i.e7)([d.Z], () => d.Z.getGuild(t)), x = (0, i.e7)([a.Z], () => a.Z.hasLoadedExperiments), g = (0, p.Z)(t), v = (0, u.At)(), b = !x || null == g || null == _, h = (0, l.ZP)(null != v ? v : []);
-  return ((0, s.Z)({
-    type: o.ImpressionTypes.VIEW,
-    name: o.ImpressionNames.BOOST_SHOP_OPENED,
+  } = e, _ = (0, o.e7)([d.Z], () => d.Z.getGuild(t)), g = (0, o.e7)([s.Z], () => s.Z.hasLoadedExperiments), v = (0, p.Z)(t), x = (0, c.At)(), b = !g || null == v || null == _, h = (0, l.ZP)(null != x ? x : []);
+  return ((0, a.Z)({
+    type: i.ImpressionTypes.VIEW,
+    name: i.ImpressionNames.BOOST_SHOP_OPENED,
     properties: {
       location_stack: h.analyticsLocations
     }
   }, {
     disableTrack: b
-  }), b) ? null : g ? (0, r.jsx)(m.Z, {
+  }), b) ? null : v ? (0, r.jsx)(f.Z, {
     guildId: t,
     powerupListingId: n
-  }) : (0, r.jsx)(c.Z, {
+  }) : (0, r.jsx)(u.Z, {
     analyticsLocation: {
-      section: f.jXE.CHANNEL_LIST,
-      object: f.qAy.GUILD_POWERUPS_CHANNEL_LIST_ITEM
+      section: m.jXE.CHANNEL_LIST,
+      object: m.qAy.GUILD_POWERUPS_CHANNEL_LIST_ITEM
     },
     guild: _
   })

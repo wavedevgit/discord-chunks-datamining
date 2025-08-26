@@ -24,40 +24,40 @@ var Chunk793030 = require("./793030.js"),
 function b(e) {
   let {
     guildId: t
-  } = e, n = (0, i.e7)([u.Z], () => u.Z.getGuild(t)), {
+  } = e, n = (0, o.e7)([c.Z], () => c.Z.getGuild(t)), {
     available: b,
     spent: h,
-    total: j
+    total: C
   } = (0, p.Z)(t);
   if (null != n) return (0, r.jsxs)("div", {
-    className: v.container,
+    className: x.container,
     children: [(0, r.jsxs)("div", {
-      className: v.headerContainer,
-      children: [(0, r.jsx)(o.xv, {
+      className: x.headerContainer,
+      children: [(0, r.jsx)(i.xv, {
         variant: "eyebrow",
         color: "text-secondary",
-        children: g.intl.string(x.default.hjvcLC)
-      }), (0, r.jsx)(o.xv, {
-        className: v.learnMore,
+        children: v.intl.string(g.default.hjvcLC)
+      }), (0, r.jsx)(i.xv, {
+        className: x.learnMore,
         variant: "text-xs/semibold",
-        children: g.intl.format(x.default.fXE30d, {
+        children: v.intl.format(g.default.fXE30d, {
           helpDeskArticle: d.Z.getArticleURL(_.BhN.GUILD_BOOSTING_FAQ)
         })
       })]
     }), (0, r.jsxs)("div", {
-      className: v.contentContainer,
-      children: [(0, r.jsx)(f.Z, {
+      className: x.contentContainer,
+      children: [(0, r.jsx)(m.Z, {
         count: b,
-        type: f.b.AVAILABLE
-      }), (0, r.jsx)(f.Z, {
+        type: m.b.AVAILABLE
+      }), (0, r.jsx)(m.Z, {
         count: h,
-        type: f.b.SPENT
-      }), (0, r.jsx)(f.Z, {
-        count: j,
-        type: f.b.TOTAL
+        type: m.b.SPENT
+      }), (0, r.jsx)(m.Z, {
+        count: C,
+        type: m.b.TOTAL
       })]
-    }), (0, r.jsx)(a.Z, {
-      className: v.boostButton,
+    }), (0, r.jsx)(s.Z, {
+      className: x.boostButton,
       guild: n,
       analyticsLocation: {
         page: _.ZY5.GUILD_POWERUPS_OVERVIEW,
@@ -65,13 +65,13 @@ function b(e) {
       },
       color: l.Tt.CUSTOM,
       size: l.Ph.LARGE,
-      intent: c.P.NONE,
-      icon: (0, r.jsx)(s.$Eu, {
-        className: v.boostButtonIcon,
+      intent: u.P.NONE,
+      icon: (0, r.jsx)(a.$Eu, {
+        className: x.boostButtonIcon,
         size: "sm",
-        color: s.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK
+        color: a.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK
       })
-    }), (0, r.jsx)(m.Z, {
+    }), (0, r.jsx)(f.Z, {
       guildId: t
     })]
   })

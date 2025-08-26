@@ -1,14 +1,14 @@
-/** Chunk was on 7318 **/
-/** chunk id: 472596, original params: A,e,t (module,exports,require) **/
+/** Chunk was on 74486 **/
+/** chunk id: 472596, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  RE: () => f,
-  RN: () => h,
-  po: () => d,
-  vN: () => v,
-  xb: () => E,
-  zq: () => u
+  RE: () => E,
+  RN: () => A,
+  po: () => T,
+  vN: () => _,
+  xb: () => I,
+  zq: () => m
 });
-var n, Chunk647438 = require("./647438.js"),
+var r, Chunk647438 = require("./647438.js"),
   Chunk399606 = require("./399606.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk892001 = require("./892001.js"),
@@ -16,64 +16,64 @@ var n, Chunk647438 = require("./647438.js"),
   Chunk430824 = require("./430824.js"),
   Chunk594174 = require("./594174.js"),
   Chunk91047 = require("./91047.jsx");
-let f = (A, e) => {
+let E = (e, t) => {
   let {
-    guildId: t,
-    userId: n,
-    colorRoleId: r
-  } = A;
+    guildId: n,
+    userId: r,
+    colorRoleId: l
+  } = e;
   (0, s.openUserProfileModal)({
-    userId: n,
-    guildId: t,
-    sourceAnalyticsLocations: e,
-    roleId: r
+    userId: r,
+    guildId: n,
+    sourceAnalyticsLocations: t,
+    roleId: l
   })
 };
 
-function v(A, e, t, n) {
+function _(e, t, n, r) {
   let {
-    analyticsLocations: l
-  } = (0, i.ZP)();
-  return r.useCallback(r => {
-    if (null == A) return;
-    let i = g.default.getUser(A.userId);
-    null != i && (r.stopPropagation(), (0, c.nm)(r, {
-      user: i,
-      guildId: A.guildId,
-      analyticsLocations: null != t ? [t] : l,
-      onCloseContextMenu: n,
-      isViewOnly: e
+    analyticsLocations: i
+  } = (0, a.ZP)();
+  return l.useCallback(l => {
+    if (null == e) return;
+    let a = c.default.getUser(e.userId);
+    null != a && (l.stopPropagation(), (0, d.nm)(l, {
+      user: a,
+      guildId: e.guildId,
+      analyticsLocations: null != n ? [n] : i,
+      onCloseContextMenu: r,
+      isViewOnly: t
     }))
-  }, [A, l, n, t, e])
+  }, [e, i, r, n, t])
 }
 
-function h(A, e, t) {
+function A(e, t, n) {
   let {
-    analyticsLocations: n
-  } = (0, i.ZP)();
-  return r.useCallback(r => {
-    if (null == A) return;
-    let l = g.default.getUser(A.userId);
-    null != l && (r.stopPropagation(), (0, c._j)(r, {
-      user: l,
-      guildId: A.guildId,
-      analyticsLocations: null != e ? [e] : n,
-      onCloseContextMenu: t,
+    analyticsLocations: r
+  } = (0, a.ZP)();
+  return l.useCallback(l => {
+    if (null == e) return;
+    let i = c.default.getUser(e.userId);
+    null != i && (l.stopPropagation(), (0, d._j)(l, {
+      user: i,
+      guildId: e.guildId,
+      analyticsLocations: null != t ? [t] : r,
+      onCloseContextMenu: n,
       showTransferOwnershipItem: true
     }))
-  }, [A, t, n, e])
+  }, [e, n, r, t])
 }
 
-function u(A) {
-  return (0, l.e7)([o.Z, a.Z], () => {
-    var e;
-    if (null == A) return null;
-    let t = o.Z.getGuild(A.guildId);
-    return null == t || null == A.highestRoleId ? null : null != (e = a.Z.getRole(t.id, A.highestRoleId)) ? e : null
-  }, [A])
+function m(e) {
+  return (0, i.e7)([u.Z, o.Z], () => {
+    var t;
+    if (null == e) return null;
+    let n = u.Z.getGuild(e.guildId);
+    return null == n || null == e.highestRoleId ? null : null != (t = o.Z.getRole(n.id, e.highestRoleId)) ? t : null
+  }, [e])
 }
-var d = ((n = {})[n.LOADING = 0] = "LOADING", n[n.SUCCESS_STILL_INDEXING = 1] = "SUCCESS_STILL_INDEXING", n[n.SUCCESS_EMPTY = 2] = "SUCCESS_EMPTY", n[n.SUCCESS_FULL = 3] = "SUCCESS_FULL", n);
+var T = ((r = {})[r.LOADING = 0] = "LOADING", r[r.SUCCESS_STILL_INDEXING = 1] = "SUCCESS_STILL_INDEXING", r[r.SUCCESS_EMPTY = 2] = "SUCCESS_EMPTY", r[r.SUCCESS_FULL = 3] = "SUCCESS_FULL", r);
 
-function E(A, e, t) {
-  return e ? 0 : A ? 1 : t <= 0 ? 2 : 3
+function I(e, t, n) {
+  return t ? 0 : e ? 1 : n <= 0 ? 2 : 3
 }

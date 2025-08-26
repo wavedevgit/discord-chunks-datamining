@@ -2,7 +2,7 @@
 /** chunk id: 933104, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   $h: () => I,
-  cO: () => Z,
+  cO: () => w,
   jG: () => P,
   yI: () => N
 });
@@ -38,7 +38,7 @@ function P(e) {
     powerup: n,
     markAsDismissed: i
   } = e;
-  return (0, r.jsx)(w, {
+  return (0, r.jsx)(Z, {
     asset: (0, r.jsx)(m.g, {
       className: x.image
     }),
@@ -59,7 +59,7 @@ function I(e) {
     guildId: t,
     markAsDismissed: n
   } = e, i = (0, f.Z)(t);
-  return (0, r.jsx)(w, {
+  return (0, r.jsx)(Z, {
     asset: (0, r.jsx)("img", {
       alt: "",
       src: C.Z,
@@ -101,7 +101,7 @@ function N(e) {
       perk: n[0].title
     }),
     c = 1 === n.length;
-  return (0, r.jsx)(w, {
+  return (0, r.jsx)(Z, {
     asset: 1 === n.length ? (0, r.jsx)(m.m, {
       className: x.image,
       powerup: n[0]
@@ -118,18 +118,18 @@ function N(e) {
   })
 }
 
-function Z(e) {
+function w(e) {
   let {
     guildId: t,
     powerups: n,
     markAsDismissed: i
   } = e, l = n.find(e => e.skuId === o.A$);
-  if (null != l) return (0, r.jsx)(w, {
+  if (null != l) return (0, r.jsx)(Z, {
     header: j.intl.string(v.default.Ygpx4e),
     content: j.intl.string(v.default.mmNkUF),
     asset: (0, r.jsx)("img", {
       alt: "",
-      src: S.Z,
+      src: E.Z,
       className: x.image
     }),
     onClick: () => (0, g.Z)(t, u.Z.GUILD_POWERUPS_COACHMARK_NEW_PERK_AVAILABLE, l.skuId),
@@ -137,12 +137,12 @@ function Z(e) {
     buttonCTA: j.intl.string(j.t.RzWDqa)
   });
   let a = n.find(e => O.NL.has(e.skuId));
-  return null != a ? (0, r.jsx)(w, {
+  return null != a ? (0, r.jsx)(Z, {
     header: j.intl.string(v.default["kA2c+v"]),
     content: j.intl.string(v.default.TUilLi),
     asset: (0, r.jsx)("img", {
       alt: "",
-      src: E.Z,
+      src: S.Z,
       className: x.image
     }),
     onClick: () => (0, g.Z)(t, u.Z.GUILD_POWERUPS_COACHMARK_NEW_PERK_AVAILABLE, a.skuId),
@@ -151,7 +151,7 @@ function Z(e) {
   }) : null
 }
 
-function w(e) {
+function Z(e) {
   var {
     asset: t,
     header: n,

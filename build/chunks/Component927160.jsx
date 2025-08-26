@@ -14,10 +14,10 @@ function l(e) {
     error: l,
     disabled: a,
     className: c,
-    autoFocus: u = false
+    autoFocus: d = false
   } = e;
-  return (0, r.jsx)(s.Z, {
-    prefix: "".concat(i.mf, "/"),
+  return (0, i.jsx)(r.Z, {
+    prefix: "".concat(s.mf, "/"),
     value: t,
     onChange: e => {
       n(e.replace(/ /g, "-"))
@@ -26,6 +26,6 @@ function l(e) {
     error: l,
     disabled: a,
     className: c,
-    autoFocus: u
+    autoFocus: d
   })
 }

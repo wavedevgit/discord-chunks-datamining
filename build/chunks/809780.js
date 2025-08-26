@@ -238,9 +238,9 @@ class Y extends Chunk836560.EventEmitter {
         collapsedChannels: i,
         loadState: l
       } = this.state, o = u().findIndex(r, e => e.channelId === t), a = r[o], s = !a.collapsed;
-      i[t] = s, (0, E.BU)(n, t, e => {
+      i[t] = s, (0, S.BU)(n, t, e => {
         e.collapsedInInbox = s
-      }, E.fy.FREQUENT_USER_ACTION), this.setState({
+      }, S.fy.FREQUENT_USER_ACTION), this.setState({
         scrollToChannelIndex: o,
         collapsedChannels: i,
         loadState: "done" !== l || s || a.isFullyLoaded ? l : "loaded",
@@ -345,7 +345,7 @@ function Q(e, t, n, r) {
     }) && (0, g.sf)()) return;
   let l = R.ZP.ackMessageId(r);
   if (null == l) {
-    let e = w.Z.getGuild(i.guild_id);
+    let e = Z.Z.getGuild(i.guild_id);
     if (null == e || null == e.joinedAt) return;
     l = U.default.fromTimestamp(e.joinedAt.getTime())
   }
@@ -388,7 +388,7 @@ function Q(e, t, n, r) {
     }(n, r, a),
     order: 0
   };
-  (0, b.aC)(i) && !Z.Z.didAgree(i.guild_id) ? t.push(H(V({}, u), {
+  (0, b.aC)(i) && !w.Z.didAgree(i.guild_id) ? t.push(H(V({}, u), {
     type: "nsfw"
   })) : i.isForumLikeChannel() ? t.push(H(V({}, u), {
     type: "forum"

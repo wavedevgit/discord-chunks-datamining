@@ -92,8 +92,8 @@ function b(e) {
     treeItemProps: {
       onFocus: C
     },
-    "aria-setsize": E,
-    "aria-posinset": S
+    "aria-setsize": S,
+    "aria-posinset": E
   } = e, P = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
@@ -108,9 +108,9 @@ function b(e) {
       for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
-  }(e.treeItemProps, ["onFocus"]), [I, N] = i.useState(false), Z = i.useCallback(() => {
+  }(e.treeItemProps, ["onFocus"]), [I, N] = i.useState(false), w = i.useCallback(() => {
     a || N(true), null == j || j(true)
-  }, [a, j]), w = i.useCallback(() => {
+  }, [a, j]), Z = i.useCallback(() => {
     a || N(false), null == j || j(false)
   }, [a, j]), T = o || null == u ? null : (0, p.Or)(u), A = !o && d > 0 ? (0, p.Ne)(d, g ? c.Z.BACKGROUND_ACCENT : c.Z.STATUS_DANGER) : null;
   return (0, r.jsx)(s.tEY, {
@@ -135,8 +135,8 @@ function b(e) {
       className: f.folderButton,
       onClick: _,
       onContextMenu: v,
-      onMouseEnter: Z,
-      onMouseLeave: w,
+      onMouseEnter: w,
+      onMouseLeave: Z,
       onKeyDown: x,
       onFocus: C,
       focusProps: {
@@ -144,8 +144,8 @@ function b(e) {
       }
     }, P), n = n = {
       role: "treeitem",
-      "aria-setsize": E,
-      "aria-posinset": S,
+      "aria-setsize": S,
+      "aria-posinset": E,
       "aria-expanded": o,
       "aria-owns": O,
       children: (0, r.jsxs)(s.aRk, {

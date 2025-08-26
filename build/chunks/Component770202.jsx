@@ -1,7 +1,7 @@
 /** Chunk was on 91488 **/
 /** chunk id: 770202, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
+  Z: () => E
 }), require("./415506.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -122,8 +122,8 @@ class C extends Chunk98597.ZP {
     })
   }
 }
-let E = (0, Chunk146773.B)(C),
-  S = Chunk647438.memo(function(e) {
+let S = (0, Chunk146773.B)(C),
+  E = Chunk647438.memo(function(e) {
     let {
       channel: t,
       guild: n,
@@ -135,5 +135,5 @@ let E = (0, Chunk146773.B)(C),
         canReorderChannel: true !== i && null != e ? g.Z.can(O.Plq.MANAGE_CHANNELS, e) : g.Z.can(O.Plq.MANAGE_CHANNELS, n)
       }
     });
-    return (0, r.jsx)(E, j({}, l, e))
+    return (0, r.jsx)(S, j({}, l, e))
   })

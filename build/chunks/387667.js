@@ -1,157 +1,157 @@
-/** Chunk was on 7318 **/
-/** chunk id: 387667, original params: A,e,t (module,exports,require) **/
+/** Chunk was on 74486 **/
+/** chunk id: 387667, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Pw: () => c,
-  ZP: () => h,
-  ms: () => f,
-  p5: () => g
+  Pw: () => d,
+  ZP: () => A,
+  ms: () => E,
+  p5: () => c
 });
 var Chunk913527 = require("./913527.js"),
-  r = require.n(Chunk913527),
+  l = require.n(Chunk913527),
   Chunk81825 = require("./81825.js"),
   Chunk960048 = require("./960048.js"),
   Chunk709054 = require("./709054.js"),
   Chunk981631 = require("./981631.js");
 
-function o(A, e, t) {
-  return e in A ? Object.defineProperty(A, e, {
-    value: t,
+function u(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
     enumerable: true,
     configurable: true,
     writable: true
-  }) : A[e] = t, A
+  }) : e[t] = n, e
 }
 
-function g(A) {
-  if (A === a.rsA.ALL) return a.KFR.ALL;
-  if (A <= a.rsA.GUILD_UPDATE) return a.KFR.GUILD;
-  if (A <= a.rsA.CHANNEL_DELETE || A === a.rsA.MESSAGE_BULK_DELETE) return a.KFR.CHANNEL;
-  if (A <= a.rsA.CHANNEL_OVERWRITE_DELETE) return a.KFR.CHANNEL_OVERWRITE;
-  if (A <= a.rsA.BOT_ADD || A === a.rsA.MESSAGE_DELETE || A === a.rsA.MESSAGE_PIN || A === a.rsA.MESSAGE_UNPIN) return a.KFR.USER;
-  else if (A <= a.rsA.ROLE_DELETE) return a.KFR.ROLE;
-  else if (A <= a.rsA.INVITE_DELETE) return a.KFR.INVITE;
-  else if (A <= a.rsA.WEBHOOK_DELETE) return a.KFR.WEBHOOK;
-  else if (A <= a.rsA.EMOJI_DELETE) return a.KFR.EMOJI;
-  else if (A <= a.rsA.INTEGRATION_DELETE) return a.KFR.INTEGRATION;
-  else if (A <= a.rsA.STAGE_INSTANCE_DELETE) return a.KFR.STAGE_INSTANCE;
-  else if (A <= a.rsA.STICKER_DELETE) return a.KFR.STICKER;
-  else if (A <= a.rsA.GUILD_SCHEDULED_EVENT_DELETE) return a.KFR.GUILD_SCHEDULED_EVENT;
-  else if (A <= a.rsA.THREAD_DELETE) return a.KFR.THREAD;
-  else if (A === a.rsA.APPLICATION_COMMAND_PERMISSION_UPDATE) return a.KFR.APPLICATION_COMMAND;
-  else if (A <= a.rsA.SOUNDBOARD_SOUND_DELETE) return a.KFR.GUILD_SOUNDBOARD;
-  else if (A < a.rsA.AUTO_MODERATION_BLOCK_MESSAGE) return a.KFR.AUTO_MODERATION_RULE;
-  else if (A === a.rsA.AUTO_MODERATION_BLOCK_MESSAGE) return a.KFR.USER;
-  else if (A === a.rsA.AUTO_MODERATION_FLAG_TO_CHANNEL) return a.KFR.USER;
-  else if (A === a.rsA.AUTO_MODERATION_USER_COMMUNICATION_DISABLED) return a.KFR.USER;
-  else if (A === a.rsA.AUTO_MODERATION_QUARANTINE_USER) return a.KFR.USER;
-  else if (A <= a.rsA.CREATOR_MONETIZATION_TERMS_ACCEPTED) return a.KFR.GUILD;
-  else if (A <= a.rsA.ONBOARDING_PROMPT_DELETE) return a.KFR.ONBOARDING_PROMPT;
-  else if (A <= a.rsA.ONBOARDING_UPDATE) return a.KFR.GUILD_ONBOARDING;
-  else if (A <= a.rsA.GUILD_HOME_REMOVE_ITEM) return a.KFR.GUILD_HOME;
-  else if (A <= a.rsA.HARMFUL_LINKS_BLOCKED_MESSAGE) return a.KFR.GUILD;
-  else if (A <= a.rsA.HOME_SETTINGS_UPDATE) return a.KFR.HOME_SETTINGS;
-  else if (A <= a.rsA.VOICE_CHANNEL_STATUS_DELETE) return a.KFR.VOICE_CHANNEL_STATUS;
-  else if (A <= a.rsA.GUILD_SCHEDULED_EVENT_EXCEPTION_DELETE) return a.KFR.GUILD_SCHEDULED_EVENT_EXCEPTION;
-  else if (A <= a.rsA.GUILD_MEMBER_VERIFICATION_UPDATE) return a.KFR.GUILD_MEMBER_VERIFICATION;
-  else if (A <= a.rsA.GUILD_PROFILE_UPDATE) return a.KFR.GUILD_PROFILE;
-  else if (A <= a.rsA.GUILD_MIGRATE_PIN_PERMISSION) return a.KFR.GUILD;
-  return i.Z.captureMessage("Unknown target type for: ".concat(A)), a.KFR.UNKNOWN
+function c(e) {
+  if (e === o.rsA.ALL) return o.KFR.ALL;
+  if (e <= o.rsA.GUILD_UPDATE) return o.KFR.GUILD;
+  if (e <= o.rsA.CHANNEL_DELETE || e === o.rsA.MESSAGE_BULK_DELETE) return o.KFR.CHANNEL;
+  if (e <= o.rsA.CHANNEL_OVERWRITE_DELETE) return o.KFR.CHANNEL_OVERWRITE;
+  if (e <= o.rsA.BOT_ADD || e === o.rsA.MESSAGE_DELETE || e === o.rsA.MESSAGE_PIN || e === o.rsA.MESSAGE_UNPIN) return o.KFR.USER;
+  else if (e <= o.rsA.ROLE_DELETE) return o.KFR.ROLE;
+  else if (e <= o.rsA.INVITE_DELETE) return o.KFR.INVITE;
+  else if (e <= o.rsA.WEBHOOK_DELETE) return o.KFR.WEBHOOK;
+  else if (e <= o.rsA.EMOJI_DELETE) return o.KFR.EMOJI;
+  else if (e <= o.rsA.INTEGRATION_DELETE) return o.KFR.INTEGRATION;
+  else if (e <= o.rsA.STAGE_INSTANCE_DELETE) return o.KFR.STAGE_INSTANCE;
+  else if (e <= o.rsA.STICKER_DELETE) return o.KFR.STICKER;
+  else if (e <= o.rsA.GUILD_SCHEDULED_EVENT_DELETE) return o.KFR.GUILD_SCHEDULED_EVENT;
+  else if (e <= o.rsA.THREAD_DELETE) return o.KFR.THREAD;
+  else if (e === o.rsA.APPLICATION_COMMAND_PERMISSION_UPDATE) return o.KFR.APPLICATION_COMMAND;
+  else if (e <= o.rsA.SOUNDBOARD_SOUND_DELETE) return o.KFR.GUILD_SOUNDBOARD;
+  else if (e < o.rsA.AUTO_MODERATION_BLOCK_MESSAGE) return o.KFR.AUTO_MODERATION_RULE;
+  else if (e === o.rsA.AUTO_MODERATION_BLOCK_MESSAGE) return o.KFR.USER;
+  else if (e === o.rsA.AUTO_MODERATION_FLAG_TO_CHANNEL) return o.KFR.USER;
+  else if (e === o.rsA.AUTO_MODERATION_USER_COMMUNICATION_DISABLED) return o.KFR.USER;
+  else if (e === o.rsA.AUTO_MODERATION_QUARANTINE_USER) return o.KFR.USER;
+  else if (e <= o.rsA.CREATOR_MONETIZATION_TERMS_ACCEPTED) return o.KFR.GUILD;
+  else if (e <= o.rsA.ONBOARDING_PROMPT_DELETE) return o.KFR.ONBOARDING_PROMPT;
+  else if (e <= o.rsA.ONBOARDING_UPDATE) return o.KFR.GUILD_ONBOARDING;
+  else if (e <= o.rsA.GUILD_HOME_REMOVE_ITEM) return o.KFR.GUILD_HOME;
+  else if (e <= o.rsA.HARMFUL_LINKS_BLOCKED_MESSAGE) return o.KFR.GUILD;
+  else if (e <= o.rsA.HOME_SETTINGS_UPDATE) return o.KFR.HOME_SETTINGS;
+  else if (e <= o.rsA.VOICE_CHANNEL_STATUS_DELETE) return o.KFR.VOICE_CHANNEL_STATUS;
+  else if (e <= o.rsA.GUILD_SCHEDULED_EVENT_EXCEPTION_DELETE) return o.KFR.GUILD_SCHEDULED_EVENT_EXCEPTION;
+  else if (e <= o.rsA.GUILD_MEMBER_VERIFICATION_UPDATE) return o.KFR.GUILD_MEMBER_VERIFICATION;
+  else if (e <= o.rsA.GUILD_PROFILE_UPDATE) return o.KFR.GUILD_PROFILE;
+  else if (e <= o.rsA.GUILD_MIGRATE_PIN_PERMISSION) return o.KFR.GUILD;
+  return a.Z.captureMessage("Unknown target type for: ".concat(e)), o.KFR.UNKNOWN
 }
 
-function c(A) {
-  switch (A) {
-    case a.rsA.CHANNEL_CREATE:
-    case a.rsA.CHANNEL_OVERWRITE_CREATE:
-    case a.rsA.MEMBER_BAN_REMOVE:
-    case a.rsA.ROLE_CREATE:
-    case a.rsA.INVITE_CREATE:
-    case a.rsA.WEBHOOK_CREATE:
-    case a.rsA.EMOJI_CREATE:
-    case a.rsA.STICKER_CREATE:
-    case a.rsA.MESSAGE_PIN:
-    case a.rsA.BOT_ADD:
-    case a.rsA.INTEGRATION_CREATE:
-    case a.rsA.STAGE_INSTANCE_CREATE:
-    case a.rsA.GUILD_SCHEDULED_EVENT_CREATE:
-    case a.rsA.THREAD_CREATE:
-    case a.rsA.AUTO_MODERATION_RULE_CREATE:
-    case a.rsA.CREATOR_MONETIZATION_REQUEST_CREATED:
-    case a.rsA.ONBOARDING_PROMPT_CREATE:
-    case a.rsA.ONBOARDING_CREATE:
-    case a.rsA.GUILD_HOME_FEATURE_ITEM:
-    case a.rsA.SOUNDBOARD_SOUND_CREATE:
-    case a.rsA.HOME_SETTINGS_CREATE:
-    case a.rsA.VOICE_CHANNEL_STATUS_CREATE:
-      return a.vB8.CREATE;
-    case a.rsA.CHANNEL_DELETE:
-    case a.rsA.CHANNEL_OVERWRITE_DELETE:
-    case a.rsA.MEMBER_KICK:
-    case a.rsA.MEMBER_PRUNE:
-    case a.rsA.MEMBER_BAN_ADD:
-    case a.rsA.ROLE_DELETE:
-    case a.rsA.INVITE_DELETE:
-    case a.rsA.WEBHOOK_DELETE:
-    case a.rsA.EMOJI_DELETE:
-    case a.rsA.STICKER_DELETE:
-    case a.rsA.MESSAGE_DELETE:
-    case a.rsA.MESSAGE_BULK_DELETE:
-    case a.rsA.MESSAGE_UNPIN:
-    case a.rsA.INTEGRATION_DELETE:
-    case a.rsA.MEMBER_DISCONNECT:
-    case a.rsA.STAGE_INSTANCE_DELETE:
-    case a.rsA.GUILD_SCHEDULED_EVENT_DELETE:
-    case a.rsA.GUILD_SCHEDULED_EVENT_EXCEPTION_DELETE:
-    case a.rsA.THREAD_DELETE:
-    case a.rsA.AUTO_MODERATION_BLOCK_MESSAGE:
-    case a.rsA.AUTO_MODERATION_RULE_DELETE:
-    case a.rsA.ONBOARDING_PROMPT_DELETE:
-    case a.rsA.GUILD_HOME_REMOVE_ITEM:
-    case a.rsA.SOUNDBOARD_SOUND_DELETE:
-    case a.rsA.VOICE_CHANNEL_STATUS_DELETE:
-      return a.vB8.DELETE;
-    case a.rsA.GUILD_UPDATE:
-    case a.rsA.CHANNEL_UPDATE:
-    case a.rsA.CHANNEL_OVERWRITE_UPDATE:
-    case a.rsA.MEMBER_UPDATE:
-    case a.rsA.MEMBER_ROLE_UPDATE:
-    case a.rsA.ROLE_UPDATE:
-    case a.rsA.INVITE_UPDATE:
-    case a.rsA.WEBHOOK_UPDATE:
-    case a.rsA.EMOJI_UPDATE:
-    case a.rsA.STICKER_UPDATE:
-    case a.rsA.INTEGRATION_UPDATE:
-    case a.rsA.MEMBER_MOVE:
-    case a.rsA.STAGE_INSTANCE_UPDATE:
-    case a.rsA.GUILD_SCHEDULED_EVENT_UPDATE:
-    case a.rsA.GUILD_SCHEDULED_EVENT_EXCEPTION_CREATE:
-    case a.rsA.GUILD_SCHEDULED_EVENT_EXCEPTION_UPDATE:
-    case a.rsA.THREAD_UPDATE:
-    case a.rsA.APPLICATION_COMMAND_PERMISSION_UPDATE:
-    case a.rsA.CREATOR_MONETIZATION_TERMS_ACCEPTED:
-    case a.rsA.AUTO_MODERATION_RULE_UPDATE:
-    case a.rsA.AUTO_MODERATION_FLAG_TO_CHANNEL:
-    case a.rsA.AUTO_MODERATION_USER_COMMUNICATION_DISABLED:
-    case a.rsA.AUTO_MODERATION_QUARANTINE_USER:
-    case a.rsA.ONBOARDING_PROMPT_UPDATE:
-    case a.rsA.ONBOARDING_UPDATE:
-    case a.rsA.SOUNDBOARD_SOUND_UPDATE:
-    case a.rsA.HOME_SETTINGS_UPDATE:
-    case a.rsA.GUILD_MEMBER_VERIFICATION_UPDATE:
-    case a.rsA.GUILD_PROFILE_UPDATE:
-    case a.rsA.GUILD_MIGRATE_PIN_PERMISSION:
-      return a.vB8.UPDATE
+function d(e) {
+  switch (e) {
+    case o.rsA.CHANNEL_CREATE:
+    case o.rsA.CHANNEL_OVERWRITE_CREATE:
+    case o.rsA.MEMBER_BAN_REMOVE:
+    case o.rsA.ROLE_CREATE:
+    case o.rsA.INVITE_CREATE:
+    case o.rsA.WEBHOOK_CREATE:
+    case o.rsA.EMOJI_CREATE:
+    case o.rsA.STICKER_CREATE:
+    case o.rsA.MESSAGE_PIN:
+    case o.rsA.BOT_ADD:
+    case o.rsA.INTEGRATION_CREATE:
+    case o.rsA.STAGE_INSTANCE_CREATE:
+    case o.rsA.GUILD_SCHEDULED_EVENT_CREATE:
+    case o.rsA.THREAD_CREATE:
+    case o.rsA.AUTO_MODERATION_RULE_CREATE:
+    case o.rsA.CREATOR_MONETIZATION_REQUEST_CREATED:
+    case o.rsA.ONBOARDING_PROMPT_CREATE:
+    case o.rsA.ONBOARDING_CREATE:
+    case o.rsA.GUILD_HOME_FEATURE_ITEM:
+    case o.rsA.SOUNDBOARD_SOUND_CREATE:
+    case o.rsA.HOME_SETTINGS_CREATE:
+    case o.rsA.VOICE_CHANNEL_STATUS_CREATE:
+      return o.vB8.CREATE;
+    case o.rsA.CHANNEL_DELETE:
+    case o.rsA.CHANNEL_OVERWRITE_DELETE:
+    case o.rsA.MEMBER_KICK:
+    case o.rsA.MEMBER_PRUNE:
+    case o.rsA.MEMBER_BAN_ADD:
+    case o.rsA.ROLE_DELETE:
+    case o.rsA.INVITE_DELETE:
+    case o.rsA.WEBHOOK_DELETE:
+    case o.rsA.EMOJI_DELETE:
+    case o.rsA.STICKER_DELETE:
+    case o.rsA.MESSAGE_DELETE:
+    case o.rsA.MESSAGE_BULK_DELETE:
+    case o.rsA.MESSAGE_UNPIN:
+    case o.rsA.INTEGRATION_DELETE:
+    case o.rsA.MEMBER_DISCONNECT:
+    case o.rsA.STAGE_INSTANCE_DELETE:
+    case o.rsA.GUILD_SCHEDULED_EVENT_DELETE:
+    case o.rsA.GUILD_SCHEDULED_EVENT_EXCEPTION_DELETE:
+    case o.rsA.THREAD_DELETE:
+    case o.rsA.AUTO_MODERATION_BLOCK_MESSAGE:
+    case o.rsA.AUTO_MODERATION_RULE_DELETE:
+    case o.rsA.ONBOARDING_PROMPT_DELETE:
+    case o.rsA.GUILD_HOME_REMOVE_ITEM:
+    case o.rsA.SOUNDBOARD_SOUND_DELETE:
+    case o.rsA.VOICE_CHANNEL_STATUS_DELETE:
+      return o.vB8.DELETE;
+    case o.rsA.GUILD_UPDATE:
+    case o.rsA.CHANNEL_UPDATE:
+    case o.rsA.CHANNEL_OVERWRITE_UPDATE:
+    case o.rsA.MEMBER_UPDATE:
+    case o.rsA.MEMBER_ROLE_UPDATE:
+    case o.rsA.ROLE_UPDATE:
+    case o.rsA.INVITE_UPDATE:
+    case o.rsA.WEBHOOK_UPDATE:
+    case o.rsA.EMOJI_UPDATE:
+    case o.rsA.STICKER_UPDATE:
+    case o.rsA.INTEGRATION_UPDATE:
+    case o.rsA.MEMBER_MOVE:
+    case o.rsA.STAGE_INSTANCE_UPDATE:
+    case o.rsA.GUILD_SCHEDULED_EVENT_UPDATE:
+    case o.rsA.GUILD_SCHEDULED_EVENT_EXCEPTION_CREATE:
+    case o.rsA.GUILD_SCHEDULED_EVENT_EXCEPTION_UPDATE:
+    case o.rsA.THREAD_UPDATE:
+    case o.rsA.APPLICATION_COMMAND_PERMISSION_UPDATE:
+    case o.rsA.CREATOR_MONETIZATION_TERMS_ACCEPTED:
+    case o.rsA.AUTO_MODERATION_RULE_UPDATE:
+    case o.rsA.AUTO_MODERATION_FLAG_TO_CHANNEL:
+    case o.rsA.AUTO_MODERATION_USER_COMMUNICATION_DISABLED:
+    case o.rsA.AUTO_MODERATION_QUARANTINE_USER:
+    case o.rsA.ONBOARDING_PROMPT_UPDATE:
+    case o.rsA.ONBOARDING_UPDATE:
+    case o.rsA.SOUNDBOARD_SOUND_UPDATE:
+    case o.rsA.HOME_SETTINGS_UPDATE:
+    case o.rsA.GUILD_MEMBER_VERIFICATION_UPDATE:
+    case o.rsA.GUILD_PROFILE_UPDATE:
+    case o.rsA.GUILD_MIGRATE_PIN_PERMISSION:
+      return o.vB8.UPDATE
   }
-  return a.vB8.ALL
+  return o.vB8.ALL
 }
-class f {
-  constructor(A, e, t) {
-    o(this, "key", true), o(this, "oldValue", true), o(this, "newValue", true), o(this, "subtarget", true), this.key = A, this.oldValue = e, this.newValue = t
-  }
-}
-class v extends Chunk81825.Z {
-  constructor(A) {
-    var e, t, n, l, i, a;
-    super(), o(this, "id", true), o(this, "actionType", true), o(this, "action", true), o(this, "targetType", true), o(this, "targetId", true), o(this, "target", true), o(this, "userId", true), o(this, "changes", true), o(this, "timestampStart", true), o(this, "timestampEnd", true), o(this, "user", true), o(this, "options", true), this.id = A.id, this.action = A.action, this.actionType = c(this.action), this.targetId = A.targetId, this.timestampStart = null != (e = A.timestampStart) ? e : r()(s.default.extractTimestamp(this.id)), this.timestampEnd = null != (t = A.timestampEnd) ? t : this.timestampStart, this.userId = A.userId, this.changes = null != (n = A.changes) ? n : [], this.targetType = g(this.action), this.options = null != (l = A.options) ? l : {}, this.target = null != (i = A.target) ? i : A.id, this.user = null != (a = A.user) ? a : null
+class E {
+  constructor(e, t, n) {
+    u(this, "key", true), u(this, "oldValue", true), u(this, "newValue", true), u(this, "subtarget", true), this.key = e, this.oldValue = t, this.newValue = n
   }
 }
-let h = v
+class _ extends Chunk81825.Z {
+  constructor(e) {
+    var t, n, r, i, a, o;
+    super(), u(this, "id", true), u(this, "actionType", true), u(this, "action", true), u(this, "targetType", true), u(this, "targetId", true), u(this, "target", true), u(this, "userId", true), u(this, "changes", true), u(this, "timestampStart", true), u(this, "timestampEnd", true), u(this, "user", true), u(this, "options", true), this.id = e.id, this.action = e.action, this.actionType = d(this.action), this.targetId = e.targetId, this.timestampStart = null != (t = e.timestampStart) ? t : l()(s.default.extractTimestamp(this.id)), this.timestampEnd = null != (n = e.timestampEnd) ? n : this.timestampStart, this.userId = e.userId, this.changes = null != (r = e.changes) ? r : [], this.targetType = c(this.action), this.options = null != (i = e.options) ? i : {}, this.target = null != (a = e.target) ? a : e.id, this.user = null != (o = e.user) ? o : null
+  }
+}
+let A = _

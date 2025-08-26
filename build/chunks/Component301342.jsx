@@ -1,8 +1,8 @@
 /** Chunk was on 91488 **/
 /** chunk id: 301342, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  P: () => Z,
-  Qo: () => w,
+  P: () => w,
+  Qo: () => Z,
   ZP: () => N,
   kw: () => A,
   rj: () => T
@@ -30,7 +30,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk84688 = require("./84688.js");
 
-function E(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -49,7 +49,7 @@ function E(e) {
   return e
 }
 
-function S(e, t) {
+function E(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -73,8 +73,8 @@ let I = Chunk647438.memo(function(e) {
         disableManageChannels: v,
         position: I,
         sortingPosition: N,
-        hideIcon: Z,
-        children: w
+        hideIcon: w,
+        children: Z
       } = e,
       T = (0, s.e7)([y.ZP], () => y.ZP.isChannelMuted(l.getGuildId(), l.id)),
       A = (0, s.e7)([m.Z], () => m.Z.isCollapsed(l.id)),
@@ -90,7 +90,7 @@ let I = Chunk647438.memo(function(e) {
             let {
               default: e
             } = await Promise.all([n.e("8965"), n.e("14280")]).then(n.bind(n, 139035));
-            return n => (0, r.jsx)(e, S(E({}, n), {
+            return n => (0, r.jsx)(e, E(S({}, n), {
               channel: l,
               guild: t
             }))
@@ -104,7 +104,7 @@ let I = Chunk647438.memo(function(e) {
           let {
             default: i
           } = await Promise.all([n.e("46786"), n.e("45094"), n.e("21914")]).then(n.bind(n, 218613));
-          return n => (0, r.jsx)(i, S(E({}, n), {
+          return n => (0, r.jsx)(i, E(S({}, n), {
             channelType: e,
             guildId: t,
             categoryId: "null" !== l.id ? l.id : null
@@ -151,7 +151,7 @@ let I = Chunk647438.memo(function(e) {
               [C.clickable]: true
             }),
             onContextMenu: M,
-            children: [(0, r.jsxs)(u.P3F, S(E({
+            children: [(0, r.jsxs)(u.P3F, E(S({
               innerRef: F,
               className: C.mainContent,
               tabIndex: G
@@ -169,7 +169,7 @@ let I = Chunk647438.memo(function(e) {
                 children: (0, r.jsx)(g.Z, {
                   children: l.name
                 })
-              }), Z ? null : (0, r.jsx)(u.CJ0, {
+              }), w ? null : (0, r.jsx)(u.CJ0, {
                 size: "md",
                 color: "currentColor",
                 className: C.icon
@@ -211,12 +211,12 @@ let I = Chunk647438.memo(function(e) {
               }) : null
             })]
           })
-        }), w]
+        }), Z]
       });
     return null != _ && null != h ? _(h(H)) : H
   }),
   N = (0, Chunk146773.B)(I),
-  Z = Chunk647438.memo(function(e) {
+  w = Chunk647438.memo(function(e) {
     let {
       name: t,
       onDismiss: n,
@@ -250,7 +250,7 @@ let I = Chunk647438.memo(function(e) {
       })
     })
   }),
-  w = Chunk647438.memo(function(e) {
+  Z = Chunk647438.memo(function(e) {
     let {
       category: t
     } = e, n = (0, s.e7)([_.Z], () => _.Z.isVoiceCategoryCollapsed(t.guild.id)), l = i.useCallback(() => {

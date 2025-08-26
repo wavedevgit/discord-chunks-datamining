@@ -49,7 +49,7 @@ function N(e) {
   return e
 }
 
-function Z(e, t) {
+function w(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -62,7 +62,7 @@ function Z(e, t) {
   }), e
 }
 
-function w(e) {
+function Z(e) {
   let {
     style: t,
     withGuildIcon: n,
@@ -79,7 +79,7 @@ function w(e) {
   } = (0, c.TCT)();
   switch (a) {
     case "cozy":
-      return (0, r.jsxs)("svg", Z(N({}, l), {
+      return (0, r.jsxs)("svg", w(N({}, l), {
         width: "10",
         height: "20",
         viewBox: "0 0 10 20",
@@ -94,7 +94,7 @@ function w(e) {
         })]
       }));
     case "compact":
-      return (0, r.jsxs)("svg", Z(N({}, l), {
+      return (0, r.jsxs)("svg", w(N({}, l), {
         width: "10",
         height: "19",
         viewBox: "0 0 10 19",
@@ -109,7 +109,7 @@ function w(e) {
         })]
       }));
     default:
-      return (0, r.jsxs)("svg", Z(N({}, l), {
+      return (0, r.jsxs)("svg", w(N({}, l), {
         width: "10",
         height: "19",
         viewBox: "0 0 10 19",
@@ -150,7 +150,7 @@ let T = Chunk647438.memo(function(e) {
       let {
         default: e
       } = await n.e("40157").then(n.bind(n, 422200));
-      return t => (0, r.jsx)(e, Z(N({}, t), {
+      return t => (0, r.jsx)(e, w(N({}, t), {
         channel: i
       }))
     })
@@ -170,22 +170,22 @@ let T = Chunk647438.memo(function(e) {
       for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
-  }(H, ["role"]), K = i.useRef(null), Y = L > 0 ? E.intl.formatToPlainString(E.t["ZL7+Iy"], {
+  }(H, ["role"]), K = i.useRef(null), Y = L > 0 ? S.intl.formatToPlainString(S.t["ZL7+Iy"], {
     channelName: t.name,
     mentionCount: L
-  }) : M ? E.intl.formatToPlainString(E.t.YlVvmZ, {
+  }) : M ? S.intl.formatToPlainString(S.t.YlVvmZ, {
     channelName: t.name
-  }) : E.intl.formatToPlainString(E.t["0nZpiI"], {
+  }) : S.intl.formatToPlainString(S.t["0nZpiI"], {
     channelName: t.name
   });
   return (0, r.jsxs)("li", {
     role: z,
-    className: o()(S.containerDefault, {
-      [S.selected]: l
+    className: o()(E.containerDefault, {
+      [E.selected]: l
     }),
-    children: [(0, r.jsx)(w, {
+    children: [(0, r.jsx)(Z, {
       withGuildIcon: A
-    }), T ? null : (0, r.jsx)(w, {
+    }), T ? null : (0, r.jsx)(Z, {
       withGuildIcon: A,
       inverted: true,
       style: {
@@ -200,7 +200,7 @@ let T = Chunk647438.memo(function(e) {
         right: 4
       },
       children: (0, r.jsxs)("div", {
-        className: o()(S.iconVisibility, P.wrapper, P.typeThread, {
+        className: o()(E.iconVisibility, P.wrapper, P.typeThread, {
           [P.modeSelected]: l,
           [P.modeMuted]: !l && U,
           [P.modeUnreadImportant]: !U && !l && M,
@@ -210,7 +210,7 @@ let T = Chunk647438.memo(function(e) {
         onContextMenu: F,
         children: [!M || U || l ? null : (0, r.jsx)("div", {
           className: o()(P.unread, P.unreadImportant)
-        }), (0, r.jsx)(c.P3F, Z(N({}, W), {
+        }), (0, r.jsx)(c.P3F, w(N({}, W), {
           innerRef: K,
           className: P.link,
           onClick: G,

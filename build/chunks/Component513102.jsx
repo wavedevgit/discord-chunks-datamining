@@ -1,7 +1,7 @@
 /** Chunk was on 45141 **/
 /** chunk id: 513102, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => d
+  Z: () => s
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -12,7 +12,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk49898 = require("./49898.js"),
   Chunk388032 = require("./388032.jsx");
 
-function d(e) {
+function s(e) {
   let {
     enabled: t
   } = l.c.useExperiment({
@@ -23,12 +23,12 @@ function d(e) {
   return (0, i.jsx)(r.sNh, {
     id: "application-directory",
     label: (0, i.jsx)(i.Fragment, {
-      children: s.intl.string(s.t.AKcFUl)
+      children: c.intl.string(c.t.AKcFUl)
     }),
     icon: n,
     action: () => {
       (0, a.transitionToGlobalDiscovery)({
-        tab: c.GlobalDiscoveryTab.APPS,
+        tab: d.GlobalDiscoveryTab.APPS,
         newSessionState: {
           entrypoint: {
             name: o.xF.GUILD_HEADER_POPOUT

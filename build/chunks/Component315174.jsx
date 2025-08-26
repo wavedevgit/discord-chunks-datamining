@@ -2,7 +2,7 @@
 /** chunk id: 315174, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   ZP: () => D,
-  wD: () => Z
+  wD: () => w
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk869786 = require("./869786.js");
 
-function E(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -46,7 +46,7 @@ function E(e) {
   return e
 }
 
-function S(e, t) {
+function E(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -110,7 +110,7 @@ function I(e) {
     children: c && (0, r.jsx)(u.ua7, {
       text: x.intl.string(x.t.O8lDIy),
       position: "right",
-      children: e => (0, r.jsxs)("div", S(E({
+      children: e => (0, r.jsxs)("div", E(S({
         className: C.communityInfoPill
       }, e), {
         children: [(0, r.jsx)(u.enf, {
@@ -150,7 +150,7 @@ function N() {
     width: 20
   })
 }
-let Z = e => {
+let w = e => {
   let {
     open: t
   } = e, n = t ? u.u04 : u.CJ0;
@@ -160,7 +160,7 @@ let Z = e => {
   })
 };
 
-function w(e) {
+function Z(e) {
   let {
     guild: t
   } = e;
@@ -188,7 +188,7 @@ function T(e) {
     children: [(0, r.jsx)(_.Z, {
       guild: i,
       isBannerVisible: n
-    }), i.id === j._ && (0, r.jsx)(N, {}), (0, r.jsx)(w, {
+    }), i.id === j._ && (0, r.jsx)(N, {}), (0, r.jsx)(Z, {
       guild: i
     }), null != l && (0, r.jsx)(u.P3F, {
       className: C.headerButton,
@@ -242,7 +242,7 @@ function R(e) {
       let {
         default: e
       } = await Promise.all([n.e("7654"), n.e("62292")]).then(n.bind(n, 560114));
-      return t => (0, r.jsx)(e, S(E({}, t), {
+      return t => (0, r.jsx)(e, E(S({}, t), {
         guild: l,
         source: v.t4x.GUILD_HEADER
       }))
@@ -250,7 +250,7 @@ function R(e) {
       let {
         default: e
       } = await n.e("88358").then(n.bind(n, 598402));
-      return t => (0, r.jsx)(e, E({}, t))
+      return t => (0, r.jsx)(e, S({}, t))
     })
   }, [O, l]);
   return (0, r.jsxs)(r.Fragment, {
@@ -263,7 +263,7 @@ function R(e) {
       spacing: 4,
       children: e => {
         var n;
-        return (0, r.jsxs)(u.P3F, S(E({
+        return (0, r.jsxs)(u.P3F, E(S({
           innerRef: d,
           className: C.guildDropdown,
           "aria-label": x.intl.formatToPlainString(x.t.xMXpl5, {
@@ -280,7 +280,7 @@ function R(e) {
             children: [(0, r.jsx)(_.Z, {
               guild: l,
               isBannerVisible: t
-            }), l.id === j._ && (0, r.jsx)(N, {}), (0, r.jsx)(w, {
+            }), l.id === j._ && (0, r.jsx)(N, {}), (0, r.jsx)(Z, {
               guild: l
             })]
           }), (0, r.jsx)("div", {
@@ -292,7 +292,7 @@ function R(e) {
     }), !A.includes(l.id) && (0, r.jsx)(u.ua7, {
       text: x.intl.string(x.t.Sd8Ix8),
       position: "bottom",
-      children: e => (0, r.jsx)(u.P3F, S(E({
+      children: e => (0, r.jsx)(u.P3F, E(S({
         className: C.inviteButton
       }, e), {
         onClick: () => {
@@ -322,8 +322,8 @@ let D = Chunk647438.memo(function(e) {
     guild: j,
     guildBanner: x,
     animationOverlayHeight: N,
-    children: Z,
-    headerClassName: w,
+    children: w,
+    headerClassName: Z,
     communityInfoVisible: A,
     hasSubheader: D
   } = e, L = j.features.has(v.oNc.ANIMATED_BANNER), k = (0, d.Z)(j), U = !k && (0, y.Z)(j), G = !k && A, B = (0, O.xR)(x) && L && !g, [F, V] = i.useState(false), H = i.useRef(false), z = i.useRef(null), W = null != t ? t : z, K = i.useRef(true), Y = m.QK.getSetting();
@@ -378,15 +378,15 @@ let D = Chunk647438.memo(function(e) {
         onClick: X ? true : c,
         onContextMenu: h,
         children: [(0, r.jsxs)("header", {
-          className: o()(C.header, w, {
+          className: o()(C.header, Z, {
             [C.themedHeaderMobile]: s.tq
           }),
           children: [(0, r.jsx)("div", {
             className: o()(C.headerContent, C.primaryInfo),
-            children: X ? (0, r.jsx)(R, S(E({}, Q), {
-              children: Z
-            })) : (0, r.jsx)(T, S(E({}, Q), {
-              children: Z
+            children: X ? (0, r.jsx)(R, E(S({}, Q), {
+              children: w
+            })) : (0, r.jsx)(T, E(S({}, Q), {
+              children: w
             }))
           }), U && (0, r.jsx)(I, {
             guild: j,

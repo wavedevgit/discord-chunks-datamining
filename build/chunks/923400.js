@@ -1,11 +1,11 @@
 /** Chunk was on 73628 **/
 /** chunk id: 923400, original params: e,A,t (module,exports,require) **/
 require.d(exports, {
-  M: () => l
+  M: () => a
 });
 var Chunk83439 = require("./83439.js"),
   Chunk100781 = require("./100781.js");
-let l = [{
+let a = [{
   name: "cool-frog",
   alt: "A cool frog",
   data: Chunk83439.Z

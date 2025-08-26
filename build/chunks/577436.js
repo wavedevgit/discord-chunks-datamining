@@ -1,4 +1,4 @@
-/** Chunk was on 58121 **/
+/** Chunk was on 88479 **/
 /** chunk id: 577436, original params: e,t,n (module,exports,require) **/
 module.exports = {
   coverContainer: "coverContainer__2f300",

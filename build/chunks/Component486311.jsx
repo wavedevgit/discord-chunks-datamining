@@ -57,7 +57,7 @@ let j = {
     } = e, x = (0, m.ZP)(t), C = i.useCallback(() => {
       var e;
       (0, p.jd)(t), (0, f.Z)(t, c.Z.GUILD_POWERUPS_CHANNEL_LIST_ROW), null == x || null == (e = x.popout) || e.markAsDismissed(b.L.INDIRECT_ACTION)
-    }, [t, x]), E = i.useCallback(() => {
+    }, [t, x]), S = i.useCallback(() => {
       var e;
       switch (null == x || null == (e = x.popout) ? true : e.type) {
         case h.J.LEVEL_REACHED:
@@ -79,21 +79,21 @@ let j = {
         default:
           return (0, r.jsx)("div", {})
       }
-    }, [t, null == x ? true : x.popout]), S = (0, s.s9z)(s.JQI), P = (0, a.e7)([d.Z], () => d.Z.hasLayers()), [I, N] = i.useState(null), Z = null == I ? "animation" : "LOOP";
+    }, [t, null == x ? true : x.popout]), E = (0, s.s9z)(s.JQI), P = (0, a.e7)([d.Z], () => d.Z.hasLayers()), [I, N] = i.useState(null), w = null == I ? "animation" : "LOOP";
     i.useEffect(() => {
       (null == x ? true : x.popout) == null && N(null)
     }, [null == x ? true : x.popout]);
-    let w = i.useCallback(e => {
+    let Z = i.useCallback(e => {
         N(e)
       }, []),
       T = i.useRef(null);
     return (0, r.jsx)(s.yRy, {
       targetElementRef: T,
-      shouldShow: (null == x ? true : x.popout) != null && !(S || P),
+      shouldShow: (null == x ? true : x.popout) != null && !(E || P),
       nudgeAlignIntoViewport: true,
       animationPosition: "bottom",
       position: "right",
-      renderPopout: E,
+      renderPopout: S,
       children: e => {
         var i, a;
         return (0, r.jsx)(u.m, (i = v({}, e), a = a = {
@@ -108,11 +108,11 @@ let j = {
           background: (null == x ? true : x.popout) != null && (0, r.jsx)("div", {
             className: _.lottieContainer,
             children: (0, r.jsx)(s.kci, {
-              nextScene: Z,
+              nextScene: w,
               className: _.lottie,
               sceneSegments: j,
               importData: () => n.e("50821").then(n.t.bind(n, 548421, 19)),
-              onScenePlay: w,
+              onScenePlay: Z,
               rendererSettings: {
                 preserveAspectRatio: "xMidYMid slice"
               }

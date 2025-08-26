@@ -1,8 +1,8 @@
 /** Chunk was on 91488 **/
 /** chunk id: 339144, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  J: () => S,
-  y: () => E
+  J: () => E,
+  y: () => S
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -27,16 +27,16 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk258628 = require("./258628.js");
 
-function E(e, t, n) {
+function S(e, t, n) {
   return null != e && (null != n ? n.applicationId === e.id : null != t && t.application_id === e.id && t.type === j.IIU.PLAYING && (0, u.Z)(t, j.xjy.JOIN))
 }
-let S = Chunk647438.memo(function(e) {
-  let t, l, u, S, {
+let E = Chunk647438.memo(function(e) {
+  let t, l, u, E, {
       stream: P,
       canGoLive: I,
       guildId: N,
-      isStreaming: Z,
-      channel: w,
+      isStreaming: w,
+      channel: Z,
       canStream: T,
       runningGame: A,
       embeddedActivity: R,
@@ -54,7 +54,7 @@ let S = Chunk647438.memo(function(e) {
     {
       parentAnalyticsLocation: G
     } = (0, p.ZP)(),
-    B = E(M, D, R),
+    B = S(M, D, R),
     F = i.useCallback(() => {
       o()(null != D, "Received null activity"), (0, h.v)(G, h.d.INVITE), _.default.track(j.rMx.OPEN_MODAL, {
         type: "Send Join Invite",
@@ -73,7 +73,7 @@ let S = Chunk647438.memo(function(e) {
       (0, b.Z)(P)
     }, [P]),
     z = i.useCallback(() => {
-      let e = null != w && (0, O.vd)(w.type) ? w : null,
+      let e = null != Z && (0, O.vd)(Z.type) ? Z : null,
         t = null != e ? e.getGuildId() : N;
       if (k && null != A && null != y.Z.getVoiceChannelId()) {
         (0, g.s)("Activity Panel"), (0, m.Z)(A.pid);
@@ -118,17 +118,17 @@ let S = Chunk647438.memo(function(e) {
           }), i))
         }
       })
-    }, [w, N, A, U, k]),
-    W = (null != A || null == R || (0, c.R)()) && (Z || I) ? (Z ? (t = false, l = () => {
+    }, [Z, N, A, U, k]),
+    W = (null != A || null == R || (0, c.R)()) && (w || I) ? (w ? (t = false, l = () => {
       H(), (0, h.v)(G, h.d.STREAM, false)
-    }, u = a.g5r, S = x.intl.string(x.t.S5anIS)) : T ? (t = false, l = () => {
+    }, u = a.g5r, E = x.intl.string(x.t.S5anIS)) : T ? (t = false, l = () => {
       z(), (0, h.v)(G, h.d.STREAM, true)
-    }, u = a.hGI, S = null != A ? x.intl.formatToPlainString(x.t.AB5gT0, {
+    }, u = a.hGI, E = null != A ? x.intl.formatToPlainString(x.t.AB5gT0, {
       game: A.name
-    }) : x.intl.string(x.t.FeUKeH)) : (t = true, l = null, u = a.hGI, S = null != w && (0, O.vd)(w.type) ? x.intl.string(x.t.uQn9Bw) : null != N ? x.intl.string(x.t.fBXEoK) : x.intl.string(x.t.n3feND)), (0, r.jsx)("div", {
+    }) : x.intl.string(x.t.FeUKeH)) : (t = true, l = null, u = a.hGI, E = null != Z && (0, O.vd)(Z.type) ? x.intl.string(x.t.uQn9Bw) : null != N ? x.intl.string(x.t.fBXEoK) : x.intl.string(x.t.n3feND)), (0, r.jsx)("div", {
       className: C.panelButtonContainer,
       children: (0, r.jsx)(v.Z, {
-        tooltipText: S,
+        tooltipText: E,
         disabled: t,
         onClick: l,
         icon: u

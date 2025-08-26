@@ -1,11 +1,11 @@
-/** Chunk was on 7318 **/
-/** chunk id: 351127, original params: A,e,t (module,exports,require) **/
+/** Chunk was on 74486 **/
+/** chunk id: 351127, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  B2: () => C,
-  Ov: () => E,
-  Qn: () => u,
-  _o: () => d,
-  pd: () => h
+  B2: () => g,
+  Ov: () => I,
+  Qn: () => m,
+  _o: () => T,
+  pd: () => A
 }), require("./388685.js"), require("./415506.js"), require("./539854.js");
 var Chunk149765 = require("./149765.js"),
   Chunk399606 = require("./399606.js"),
@@ -18,39 +18,39 @@ var Chunk149765 = require("./149765.js"),
   Chunk700785 = require("./700785.js"),
   Chunk981631 = require("./981631.js"),
   Chunk135899 = require("./135899.js");
-let h = Object.keys(Chunk981631.Plq),
-  u = Array.from(new Set([...Chunk135899.$X, ...Chunk981631.yYS, Chunk981631.Plq.ADMINISTRATOR, Chunk981631.Plq.KICK_MEMBERS, Chunk981631.Plq.BAN_MEMBERS, Chunk981631.Plq.MANAGE_GUILD, Chunk981631.Plq.MANAGE_CHANNELS, Chunk981631.Plq.MANAGE_ROLES, Chunk981631.Plq.MANAGE_MESSAGES, Chunk981631.Plq.MANAGE_THREADS, Chunk981631.Plq.MANAGE_GUILD_EXPRESSIONS, Chunk981631.Plq.CREATE_GUILD_EXPRESSIONS, Chunk981631.Plq.MANAGE_EVENTS, Chunk981631.Plq.CREATE_EVENTS, Chunk981631.Plq.MODERATE_MEMBERS, Chunk981631.Plq.MENTION_EVERYONE, Chunk981631.Plq.MANAGE_WEBHOOKS])).map(A => {
-    let e = h.find(e => f.Plq[e] === A);
-    if (null == e) throw Error("Permission ".concat(A, " not found in Permissions"));
-    return e
+let A = Object.keys(Chunk981631.Plq),
+  m = Array.from(new Set([...Chunk135899.$X, ...Chunk981631.yYS, Chunk981631.Plq.ADMINISTRATOR, Chunk981631.Plq.KICK_MEMBERS, Chunk981631.Plq.BAN_MEMBERS, Chunk981631.Plq.MANAGE_GUILD, Chunk981631.Plq.MANAGE_CHANNELS, Chunk981631.Plq.MANAGE_ROLES, Chunk981631.Plq.MANAGE_MESSAGES, Chunk981631.Plq.MANAGE_THREADS, Chunk981631.Plq.MANAGE_GUILD_EXPRESSIONS, Chunk981631.Plq.CREATE_GUILD_EXPRESSIONS, Chunk981631.Plq.MANAGE_EVENTS, Chunk981631.Plq.CREATE_EVENTS, Chunk981631.Plq.MODERATE_MEMBERS, Chunk981631.Plq.MENTION_EVERYONE, Chunk981631.Plq.MANAGE_WEBHOOKS])).map(e => {
+    let t = A.find(t => E.Plq[t] === e);
+    if (null == t) throw Error("Permission ".concat(e, " not found in Permissions"));
+    return t
   }),
-  d = new Set(Chunk981631.yYS);
+  T = new Set(Chunk981631.yYS);
 
-function E(A, e) {
-  return A === e
+function I(e, t) {
+  return e === t
 }
 
-function C(A, e, t) {
-  let v = (0, r.e7)([o.Z], () => o.Z.getGuild(e), [e]);
-  return (0, r.e7)([s.ZP, g.default, a.Z], () => {
-    let r = {},
-      o = s.ZP.getMember(e, A),
-      h = g.default.getUser(A);
-    if (null == v || null == o || null == h) return r;
-    let u = a.Z.getEveryoneRole(v),
-      d = c.uB({
-        user: h,
-        context: v
+function g(e, t, n) {
+  let _ = (0, l.e7)([u.Z], () => u.Z.getGuild(t), [t]);
+  return (0, l.e7)([s.ZP, c.default, o.Z], () => {
+    let l = {},
+      u = s.ZP.getMember(t, e),
+      A = c.default.getUser(e);
+    if (null == _ || null == u || null == A) return l;
+    let m = o.Z.getEveryoneRole(_),
+      T = d.uB({
+        user: A,
+        context: _
       });
-    for (let A of t) {
-      let e = f.Plq[A];
-      if (n.e$(d, e)) {
-        for (let t of (r[A] = [], o.roles)) {
-          let n = a.Z.getRole(v.id, t);
-          null != n && ((0, i.Fs)(n, f.Plq.ADMINISTRATOR) || (0, i._N)(n, e)) && r[A].push(n.id)
-        }((0, i.Fs)(u, f.Plq.ADMINISTRATOR) || (0, i._N)(u, e)) && r[A].push(u.id), (0, l.eM)(v, h) && r[A].push(h.id)
+    for (let e of n) {
+      let t = E.Plq[e];
+      if (r.e$(T, t)) {
+        for (let n of (l[e] = [], u.roles)) {
+          let r = o.Z.getRole(_.id, n);
+          null != r && ((0, a.Fs)(r, E.Plq.ADMINISTRATOR) || (0, a._N)(r, t)) && l[e].push(r.id)
+        }((0, a.Fs)(m, E.Plq.ADMINISTRATOR) || (0, a._N)(m, t)) && l[e].push(m.id), (0, i.eM)(_, A) && l[e].push(A.id)
       }
     }
-    return r
-  }, [v, e, t, A])
+    return l
+  }, [_, t, n, e])
 }

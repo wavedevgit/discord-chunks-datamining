@@ -41,8 +41,8 @@ let p = () => {
       cursor: c.Z.cursor,
       errored: c.Z.errored
     })), {
-      roleFilter: E,
-      everyoneFilter: S
+      roleFilter: S,
+      everyoneFilter: E
     } = (0, i.cj)([a.ZP], () => ({
       everyoneFilter: a.ZP.everyoneFilter,
       roleFilter: a.ZP.roleFilter
@@ -58,21 +58,21 @@ let p = () => {
       (!y || e) && (0, s.jk)({
         limit: null != f ? f : h ? 8 : 20,
         with_mentions: h,
-        roles_filter: E,
-        everyone_filter: S
+        roles_filter: S,
+        everyone_filter: E
       })
-    }, [y, g, t, h, E, S, f]);
+    }, [y, g, t, h, S, E, f]);
     let I = r.useCallback(async e => {
       !m.current && y && j && null != x && (e || !C) && (m.current = true, O(true), await (0, s.jk)({
         after: x,
         with_mentions: h,
-        roles_filter: E,
-        everyone_filter: S,
+        roles_filter: S,
+        everyone_filter: E,
         limit: h ? 8 : 20
       }, () => {
         m.current = false
       }), O(false))
-    }, [y, j, x, C, h, E, S]);
+    }, [y, j, x, C, h, S, E]);
     return {
       initialized: y,
       loading: _,

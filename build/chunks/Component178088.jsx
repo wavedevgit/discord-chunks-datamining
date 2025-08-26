@@ -1,7 +1,7 @@
 /** Chunk was on 91488 **/
 /** chunk id: 178088, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  k: () => Z
+  k: () => w
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -31,13 +31,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk253107 = require("./253107.js");
 
-function Z(e) {
+function w(e) {
   let {
     onOpen: t,
     onClose: n,
     children: l,
-    badgeState: Z,
-    popoutPosition: w,
+    badgeState: w,
+    popoutPosition: Z,
     popoutAlign: T,
     targetElementRef: A,
     spacing: R,
@@ -99,7 +99,7 @@ function Z(e) {
     children: (0, r.jsx)(u.yRy, {
       targetElementRef: A,
       animation: u.yRy.Animation.NONE,
-      position: w,
+      position: Z,
       align: T,
       autoInvert: false,
       shouldShow: L,
@@ -116,16 +116,16 @@ function Z(e) {
               component: (0, r.jsx)(x.Z, {
                 tab: U,
                 setTab: G,
-                badgeState: Z,
+                badgeState: w,
                 closePopout: V
               }),
               children: U === c.X.FOR_YOU ? (0, r.jsx)(v.ZP, {}) : U === c.X.MENTIONS ? (0, r.jsx)(j.Z, {
                 onJump: q
-              }) : Y && U === c.X.GAME_INVITES ? (0, r.jsx)(S.Z, {}) : z && W && U === c.X.BOOKMARKS ? (0, r.jsx)(m.K, {
+              }) : Y && U === c.X.GAME_INVITES ? (0, r.jsx)(E.Z, {}) : z && W && U === c.X.BOOKMARKS ? (0, r.jsx)(m.K, {
                 closePopout: V
               }) : U === c.X.SCHEDULED ? (0, r.jsx)(C._, {}) : (0, r.jsx)(a.SV, {
-                fallback: (0, r.jsx)(E.h6, {}),
-                children: (0, r.jsx)(E.ZP, {
+                fallback: (0, r.jsx)(S.h6, {}),
+                children: (0, r.jsx)(S.ZP, {
                   onJump: q,
                   showTutorial: B,
                   setSeenTutorial: F,

@@ -1,45 +1,45 @@
-/** Chunk was on 7318 **/
-/** chunk id: 994463, original params: A,e,t (module,exports,require) **/
+/** Chunk was on 74486 **/
+/** chunk id: 994463, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => E
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk525654 = require("./525654.js"),
-  i = require.n(Chunk525654),
+  a = require.n(Chunk525654),
   Chunk748780 = require("./748780.js"),
   Chunk654339 = require("./654339.js");
 
-function o(A, e, t) {
-  return e in A ? Object.defineProperty(A, e, {
-    value: t,
+function u(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
     enumerable: true,
     configurable: true,
     writable: true
-  }) : A[e] = t, A
+  }) : e[t] = n, e
 }
 
-function g(A) {
-  let e = A => A.interpolate({
+function c(e) {
+  let t = e => e.interpolate({
     inputRange: [0, 1],
     outputRange: ["0px", "1px"]
   });
   return {
     transform: [{
-      translateX: e(A.x)
+      translateX: t(e.x)
     }, {
-      translateY: e(A.y)
+      translateY: t(e.y)
     }]
   }
 }
-class c extends Chunk647438.Component {
+class d extends Chunk647438.Component {
   componentDidMount() {
     this._isMounted = true;
     let {
-      x: A,
-      y: e
+      x: e,
+      y: t
     } = this.state;
-    "Firefox" !== i().name && (Chunk748780.Z.animate(module, {
+    "Firefox" !== a().name && (Chunk748780.Z.animate(module, {
       loop: true,
       toValueMin: false,
       toValueMax: 95,
@@ -85,7 +85,7 @@ class c extends Chunk647438.Component {
               id: "search-index-foreground-mask-b",
               fill: "#fff",
               children: (0, Chunk951288.jsx)(Chunk748780.Z.use, {
-                style: g(this.state),
+                style: c(this.state),
                 className: Chunk654339.mask,
                 xlinkHref: "#search-index-foreground-mask-a"
               })
@@ -350,7 +350,7 @@ class c extends Chunk647438.Component {
             })]
           }), (0, Chunk951288.jsxs)(Chunk748780.Z.g, {
             className: Chunk654339.magnifyingGlass,
-            style: g(this.state),
+            style: c(this.state),
             children: [(0, Chunk951288.jsx)("path", {
               fill: "#C9D2F0",
               d: "M89.8311 190.9259c-2.441-2.441-2.441-6.4 0-8.841l36.771-36.771 8.841 8.841-36.771 36.771c-2.441 2.441-6.4 2.441-8.841 0"
@@ -392,11 +392,11 @@ class c extends Chunk647438.Component {
       })]
     })
   }
-  constructor(...A) {
-    super(...A), o(this, "state", {
+  constructor(...e) {
+    super(...e), u(this, "state", {
       x: new s.Z.Value(0),
       y: new s.Z.Value(0)
-    }), o(this, "_isMounted", false), o(this, "shouldLoop", () => this._isMounted)
+    }), u(this, "_isMounted", false), u(this, "shouldLoop", () => this._isMounted)
   }
 }
-let f = c
+let E = d

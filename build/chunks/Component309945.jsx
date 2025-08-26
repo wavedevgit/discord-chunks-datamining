@@ -20,33 +20,33 @@ function _(e) {
   let {
     guildId: t,
     powerups: n
-  } = e, _ = (0, a.e7)([d.Z], () => {
+  } = e, _ = (0, s.e7)([d.Z], () => {
     var e, n;
     return null != (n = null == (e = d.Z.getStateForGuild(t)) ? true : e.appliedBoosts) ? n : 0
-  }), x = (0, a.e7)([u.Z], () => u.Z.getAppliedGuildBoostsForGuild(t), [t]), g = _ - o.useMemo(() => {
+  }), g = (0, s.e7)([c.Z], () => c.Z.getAppliedGuildBoostsForGuild(t), [t]), v = _ - i.useMemo(() => {
     var e, t, n;
-    return null != (n = null == x || null == (t = x.filter) || null == (e = t.call(x, e => !e.ended && null == e.endsAt)) ? true : e.length) ? n : 0
-  }, [x]);
-  if (g <= 0) return null;
-  let v = n.some(e => e.skuId === i.A$);
+    return null != (n = null == g || null == (t = g.filter) || null == (e = t.call(g, e => !e.ended && null == e.endsAt)) ? true : e.length) ? n : 0
+  }, [g]);
+  if (v <= 0) return null;
+  let x = n.some(e => e.skuId === o.A$);
   return (0, r.jsxs)("div", {
-    className: f.container,
+    className: m.container,
     children: [(0, r.jsx)(l.Mgn, {
-      color: c.Z.colors.TEXT_FEEDBACK_WARNING,
-      className: f.icon
-    }), (0, r.jsx)(s.xv, {
+      color: u.Z.colors.TEXT_FEEDBACK_WARNING,
+      className: m.icon
+    }), (0, r.jsx)(a.xv, {
       variant: "text-md/semibold",
       color: "text-feedback-warning",
-      children: m.intl.string(p.default.n5hQhY)
-    }), (0, r.jsxs)(s.xv, {
+      children: f.intl.string(p.default.n5hQhY)
+    }), (0, r.jsxs)(a.xv, {
       variant: "text-sm/medium",
-      children: [m.intl.formatToPlainString(p.default.iAaAiI, {
-        boostCount: g,
+      children: [f.intl.formatToPlainString(p.default.iAaAiI, {
+        boostCount: v,
         perksString: n.map(e => e.title).join(", ")
-      }), v && (0, r.jsx)(s.xv, {
+      }), x && (0, r.jsx)(a.xv, {
         variant: "text-sm/medium",
         color: "text-feedback-warning",
-        children: m.intl.string(p.default.Sfr0Jy)
+        children: f.intl.string(p.default.Sfr0Jy)
       })]
     })]
   })

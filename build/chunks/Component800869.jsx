@@ -17,22 +17,22 @@ function d(e) {
     markAsDismissed: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: c.container,
+    className: u.container,
     children: [(0, r.jsx)("img", {
       alt: "",
-      className: c.image,
-      src: u
-    }), (0, r.jsx)(o.xv, {
+      className: u.image,
+      src: c
+    }), (0, r.jsx)(i.xv, {
       color: "always-white",
       variant: "text-md/semibold",
-      children: a.intl.string(s.default.diMhWV)
-    }), (0, r.jsx)(o.xv, {
+      children: s.intl.string(a.default.diMhWV)
+    }), (0, r.jsx)(i.xv, {
       color: "always-white",
       variant: "text-sm/medium",
-      children: a.intl.string(s.default.pycxTk)
-    }), (0, r.jsx)(i.olH, {
-      className: c.close,
-      innerClassName: c.innerClose,
+      children: s.intl.string(a.default.pycxTk)
+    }), (0, r.jsx)(o.olH, {
+      className: u.close,
+      innerClassName: u.innerClose,
       onClick: () => {
         t(l.L.USER_DISMISS)
       }

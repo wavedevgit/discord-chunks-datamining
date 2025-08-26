@@ -19,33 +19,33 @@ function p(e) {
     count: t,
     type: n
   } = e;
-  return (0, o.jsxs)("div", {
-    className: u.container,
-    children: [(0, o.jsxs)("div", {
-      className: u.headerContainer,
-      children: [(0, o.jsx)(i.$Eu, {
+  return (0, i.jsxs)("div", {
+    className: c.container,
+    children: [(0, i.jsxs)("div", {
+      className: c.headerContainer,
+      children: [(0, i.jsx)(o.$Eu, {
         size: "sm",
-        color: 0 !== n ? s.Z.colors.HEADER_MUTED : s.Z.unsafe_rawColors.GUILD_BOOSTING_PINK
-      }), (0, o.jsx)(l.X6, {
+        color: 0 !== n ? a.Z.colors.HEADER_MUTED : a.Z.unsafe_rawColors.GUILD_BOOSTING_PINK
+      }), (0, i.jsx)(l.X6, {
         color: 0 !== n ? "header-muted" : "header-primary",
         variant: "heading-lg/semibold",
         children: t
       })]
-    }), (0, o.jsx)(l.xv, {
+    }), (0, i.jsx)(l.xv, {
       color: "header-muted",
       variant: "text-sm/medium",
       children: (() => {
         switch (n) {
           case 0:
-            return c.intl.formatToPlainString(a.default.BdRXZG, {
+            return u.intl.formatToPlainString(s.default.BdRXZG, {
               boostCount: t
             });
           case 1:
-            return c.intl.formatToPlainString(a.default.xvgIVF, {
+            return u.intl.formatToPlainString(s.default.xvgIVF, {
               boostCount: t
             });
           case 2:
-            return c.intl.string(a.default["/F7Z29"])
+            return u.intl.string(s.default["/F7Z29"])
         }
       })()
     })]

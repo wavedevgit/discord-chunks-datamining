@@ -5,7 +5,7 @@ require.d(exports, {
   ZP: () => M,
   eP: () => A,
   hR: () => T,
-  jo: () => Z
+  jo: () => w
 });
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -30,7 +30,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk55940 = require("./55940.js");
 
-function S(e, t, n) {
+function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -46,7 +46,7 @@ function P(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      E(e, t, n[t])
     })
   }
   return e
@@ -69,11 +69,11 @@ function N(e, t, n) {
   return null != t && !!t && !(0, j.ig)(n, e.type)
 }
 
-function Z(e, t) {
-  return null == t ? E.containerDefault : e > t ? E.containerDragAfter : E.containerDragBefore
+function w(e, t) {
+  return null == t ? S.containerDefault : e > t ? S.containerDragAfter : S.containerDragBefore
 }
 
-function w(e) {
+function Z(e) {
   let {
     tabIndex: t,
     forceShowButtons: n,
@@ -90,7 +90,7 @@ function w(e) {
         onBlur: d
       } = e;
       return (0, i.jsx)(c.P3F, {
-        className: a()(E.iconItem, n ? E.alwaysShown : true, r ? E.iconWithChannelInfo : E.iconNoChannelInfo),
+        className: a()(S.iconItem, n ? S.alwaysShown : true, r ? S.iconWithChannelInfo : S.iconNoChannelInfo),
         onClick: l,
         tabIndex: t,
         "aria-label": C.intl.string(C.t.OBr7Cw),
@@ -101,7 +101,7 @@ function w(e) {
         children: (0, i.jsx)(c.xhG, {
           size: "xs",
           color: "currentColor",
-          className: E.actionIcon
+          className: S.actionIcon
         })
       })
     }
@@ -131,7 +131,7 @@ function T(e) {
         onBlur: u
       } = e;
       return (0, i.jsx)(c.P3F, {
-        className: a()(E.iconItem, l ? E.alwaysShown : true, o ? E.iconWithChannelInfo : E.iconNoChannelInfo),
+        className: a()(S.iconItem, l ? S.alwaysShown : true, o ? S.iconWithChannelInfo : S.iconNoChannelInfo),
         onClick: d,
         tabIndex: r,
         "aria-label": C.intl.string(C.t["3gUsJS"]),
@@ -142,7 +142,7 @@ function T(e) {
         children: (0, i.jsx)(c.ewm, {
           size: "xs",
           color: "currentColor",
-          className: E.actionIcon
+          className: S.actionIcon
         })
       })
     }
@@ -161,8 +161,8 @@ function A(e) {
     entrypoints: v
   } = (0, p._k)({
     location: "channel_base"
-  }), j = (0, s.e7)([y.Z], () => y.Z.getGuild(t.getGuildId())), S = (0, s.e7)([g.Z], () => g.Z.getStageInstanceByChannel(t.id), [t.id]), N = (0, s.e7)([d.ZP], () => d.ZP.getActiveEventByChannel(t.id), [t.id]), Z = (0, s.e7)([_.Z], () => (0, h.b)(_.Z, j, t, S)), w = (0, s.e7)([_.Z], () => _.Z.can(x.Plq.CREATE_INSTANT_INVITE, t) ? C.intl.string(C.t.zJrgTE) : C.intl.string(C.t.Sd8Ix8)), T = v ? C.intl.string(C.t["EE+P0N"]) : w, A = l.useRef(null);
-  if (o || !Z || t.isModeratorReportChannel()) return null;
+  }), j = (0, s.e7)([y.Z], () => y.Z.getGuild(t.getGuildId())), E = (0, s.e7)([g.Z], () => g.Z.getStageInstanceByChannel(t.id), [t.id]), N = (0, s.e7)([d.ZP], () => d.ZP.getActiveEventByChannel(t.id), [t.id]), w = (0, s.e7)([_.Z], () => (0, h.b)(_.Z, j, t, E)), Z = (0, s.e7)([_.Z], () => _.Z.can(x.Plq.CREATE_INSTANT_INVITE, t) ? C.intl.string(C.t.zJrgTE) : C.intl.string(C.t.Sd8Ix8)), T = v ? C.intl.string(C.t["EE+P0N"]) : Z, A = l.useRef(null);
+  if (o || !w || t.isModeratorReportChannel()) return null;
 
   function R() {
     if (null != j) {
@@ -184,7 +184,7 @@ function A(e) {
   let D = v ? c.oLu : c.ejJ,
     M = (0, i.jsx)(D, {
       size: "xs",
-      className: E.actionIcon,
+      className: S.actionIcon,
       "aria-hidden": true,
       color: "currentColor"
     });
@@ -199,7 +199,7 @@ function A(e) {
   })), (0, i.jsx)(c.ua7, {
     text: T,
     children: e => (0, i.jsx)(c.P3F, I(P({
-      className: a()(E.iconItem, f ? E.alwaysShown : true, b ? E.iconWithChannelInfo : E.iconNoChannelInfo)
+      className: a()(S.iconItem, f ? S.alwaysShown : true, b ? S.iconWithChannelInfo : S.iconNoChannelInfo)
     }, e), {
       onClick: R,
       tabIndex: u,
@@ -218,14 +218,14 @@ function R(e) {
   return (0, i.jsx)(c.ua7, {
     text: C.intl.string(C.t.ROh4T0),
     children: e => (0, i.jsx)(c.P3F, I(P({
-      className: E.iconItem
+      className: S.iconItem
     }, e), {
       onClick: n,
       "aria-label": C.intl.string(C.t.ROh4T0),
       children: (0, i.jsx)(c.Dio, {
         size: "xs",
         color: "currentColor",
-        className: E.actionIcon
+        className: S.actionIcon
       })
     }))
   })
@@ -242,14 +242,14 @@ function D(e) {
   return (0, i.jsx)(c.ua7, {
     text: C.intl.string(C.t["N2c/Ul"]),
     children: e => (0, i.jsx)(c.P3F, I(P({
-      className: E.iconItem
+      className: S.iconItem
     }, e), {
       onClick: n,
       "aria-label": C.intl.string(C.t["N2c/Ul"]),
       children: (0, i.jsx)(c.dz2, {
         size: "xs",
         color: "currentColor",
-        className: E.actionIcon
+        className: S.actionIcon
       })
     }))
   })
@@ -259,7 +259,7 @@ class M extends(r = Chunk647438.PureComponent) {
     let {
       onContextMenu: t
     } = e;
-    return (0, i.jsx)(w, I(P({}, this.props), {
+    return (0, i.jsx)(Z, I(P({}, this.props), {
       onContextMenu: t
     }))
   }
@@ -280,7 +280,7 @@ class M extends(r = Chunk647438.PureComponent) {
       position: e,
       sortingPosition: t
     } = this.props;
-    return Z(module, exports)
+    return w(module, exports)
   }
   isDisabled() {
     let {
@@ -291,6 +291,6 @@ class M extends(r = Chunk647438.PureComponent) {
     return N(module, exports, require)
   }
 }
-S(M, "defaultProps", {
+E(M, "defaultProps", {
   isDefaultChannel: false
 })

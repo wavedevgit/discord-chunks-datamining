@@ -28,16 +28,16 @@ let h = Chunk647438.forwardRef(function(e, t) {
     showPill: j = true,
     className: x,
     "aria-label": C,
-    children: E,
-    onMouseEnter: S,
+    children: S,
+    onMouseEnter: E,
     onMouseLeave: P,
     onMouseDown: I
-  } = e, N = (0, a.Ie)(h), [Z, w] = i.useState(false);
+  } = e, N = (0, a.Ie)(h), [w, Z] = i.useState(false);
   return (0, r.jsxs)(u.H, {
     children: [j ? (0, r.jsx)("div", {
       className: p.pill,
       children: (0, r.jsx)(c.Z, {
-        hovered: Z,
+        hovered: w,
         selected: b
       })
     }) : null, (0, r.jsx)(d.Z, {
@@ -68,14 +68,14 @@ let h = Chunk647438.forwardRef(function(e, t) {
         }({
           innerRef: t,
           onMouseEnter: () => {
-            null == S || S(), w(true)
+            null == E || E(), Z(true)
           },
           onMouseLeave: () => {
-            null == P || P(), w(false)
+            null == P || P(), Z(false)
           },
           onMouseDown: I,
           className: o()(p.circleIconButton, x, {
-            [p.selected]: b || Z
+            [p.selected]: b || w
           }),
           onClick: f,
           "aria-label": "string" == typeof O && null == C ? O : C,
@@ -100,6 +100,6 @@ let h = Chunk647438.forwardRef(function(e, t) {
           Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(l, e))
         }), n))
       })
-    }), E]
+    }), S]
   })
 })

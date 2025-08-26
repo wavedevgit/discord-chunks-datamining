@@ -1,4 +1,4 @@
-/** Chunk was on 52721 **/
+/** Chunk was on 88479 **/
 /** chunk id: 469351, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   t: () => w
@@ -7,7 +7,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk278074 = require("./278074.js"),
   Chunk399606 = require("./399606.js"),
-  Chunk755721 = require("./755721.js"),
+  Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
   Chunk76535 = require("./76535.js"),
   Chunk395586 = require("./395586.jsx"),
@@ -94,11 +94,10 @@ function w(e) {
       }) : null, n ? (0, r.jsx)("div", {
         className: P.previewButton,
         children: (0, r.jsx)(s.zx, {
+          text: T.intl.string(T.t.vM81yc),
+          variant: "secondary",
           onClick: M,
-          color: s.zx.Colors.PRIMARY,
-          size: s.zx.Sizes.SMALL,
-          look: s.zx.Looks.OUTLINED,
-          children: T.intl.string(T.t.vM81yc)
+          size: "sm"
         })
       }) : null]
     }),

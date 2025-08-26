@@ -92,7 +92,7 @@ function C(e) {
   })
 }
 
-function E(e) {
+function S(e) {
   let {
     channel: t,
     message: n,
@@ -152,7 +152,7 @@ function E(e) {
     })
   })
 }
-let S = {
+let E = {
   [Chunk982183.r0.ACK]: {
     type: "standard",
     Icon: Chunk481060.dz2,
@@ -253,7 +253,7 @@ function P(e) {
     justify: "center",
     className: _.actions,
     children: a.map(e => {
-      let i = S[e];
+      let i = E[e];
       switch (i.type) {
         case "standard":
           return (0, r.jsx)(C, j(v({}, i), {
@@ -261,7 +261,7 @@ function P(e) {
             message: t
           }), e);
         case "menu":
-          return (0, r.jsx)(E, j(v({}, i), {
+          return (0, r.jsx)(S, j(v({}, i), {
             actionType: e,
             channel: n,
             message: t

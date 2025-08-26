@@ -1,11 +1,11 @@
-/** Chunk was on 52721 **/
+/** Chunk was on 88479 **/
 /** chunk id: 310800, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
-var Chunk755721 = require("./755721.js"),
+var Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
   Chunk724598 = require("./724598.jsx"),
   Chunk674180 = require("./674180.js"),
@@ -107,21 +107,11 @@ function j(e) {
     m.h(t, e)
   };
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsxs)(i.zx, {
-      className: f.addButton,
-      innerClassName: f.addButtonInner,
+    children: [(0, r.jsx)(i.zx, {
+      text: h.intl.string(h.t.riG6DQ),
+      icon: l.qJs,
       onClick: () => a(null),
-      disabled: n,
-      children: [(0, r.jsx)(l.qJs, {
-        size: "custom",
-        color: "currentColor",
-        width: 20,
-        height: 20,
-        "aria-hidden": true
-      }), (0, r.jsx)(l.LZC, {
-        size: 6,
-        horizontal: true
-      }), h.intl.string(h.t.riG6DQ)]
+      disabled: n
     }), (0, r.jsx)(l.LZC, {
       size: 24
     }), (0, r.jsx)(x, {

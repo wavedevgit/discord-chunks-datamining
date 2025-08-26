@@ -49,18 +49,18 @@ function O(e, t) {
     j = (0, l.e7)([s.Z], () => s.Z.getStateForGuild(e)),
     x = (null == j || null == (n = j.unlockedPowerups) ? true : n[i.A$]) != null,
     C = null == j || null == (d = j.allPowerups) ? true : d[i.A$],
-    E = null == C ? true : C.storeRemovalDate,
-    S = null == j || null == (f = j.allPowerups) ? true : f[i.XW],
+    S = null == C ? true : C.storeRemovalDate,
+    E = null == j || null == (f = j.allPowerups) ? true : f[i.XW],
     {
       onActivate: P
-    } = (0, h._C)(e, S),
-    I = !y && _ && v && x && null != C && null != E && null != S && null != O,
+    } = (0, h._C)(e, E),
+    I = !y && _ && v && x && null != C && null != S && null != E && null != O,
     N = r.useCallback(e => {
       P(e)
     }, [P]),
-    Z = r.useMemo(() => {
+    w = r.useMemo(() => {
       if (!I) return null;
-      let e = (0, p.Z)(E);
+      let e = (0, p.Z)(S);
       return {
         firstHeader: C.title,
         secondHeader: m.intl.formatToPlainString(g.default["8imxAg"], {
@@ -77,9 +77,9 @@ function O(e, t) {
         primaryButtonText: m.intl.string(g.default["0uo/LC"]),
         onPrimaryClick: N
       }
-    }, [I, C, E, O, N]);
+    }, [I, C, S, O, N]);
   return {
     shouldShow: I,
-    modalConfig: Z
+    modalConfig: w
   }
 }

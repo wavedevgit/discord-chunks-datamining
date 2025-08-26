@@ -45,10 +45,10 @@ let v = Chunk981631.IlC.APP,
   x = false,
   C = [];
 
-function E() {
+function S() {
   j = true
 }
-class S extends(i = Chunk442837.ZP.Store) {
+class E extends(i = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk430824.Z, Chunk701190.Z, Chunk594174.default)
   }
@@ -64,10 +64,10 @@ class S extends(i = Chunk442837.ZP.Store) {
     }
   }
 }
-y(S, "displayName", "InviteModalStore");
-let P = new S(Chunk570140.Z, {
-  OVERLAY_INITIALIZE: E,
-  CONNECTION_OPEN: E,
+y(E, "displayName", "InviteModalStore");
+let P = new E(Chunk570140.Z, {
+  OVERLAY_INITIALIZE: S,
+  CONNECTION_OPEN: S,
   CONNECTION_CLOSED: function() {
     j = false
   },

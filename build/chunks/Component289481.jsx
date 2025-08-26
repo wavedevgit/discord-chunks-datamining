@@ -1,7 +1,7 @@
 /** Chunk was on 91488 **/
 /** chunk id: 289481, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => S
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -43,7 +43,7 @@ function C(e) {
   }
   return e
 }
-let E = Chunk647438.memo(function(e) {
+let S = Chunk647438.memo(function(e) {
     let {
       channel: t,
       deleteChannel: n
@@ -81,10 +81,10 @@ let E = Chunk647438.memo(function(e) {
     return (0, r.jsx)(a.animated.div, {
       ref: l,
       style: f,
-      children: (0, r.jsx)(S, C({}, e))
+      children: (0, r.jsx)(E, C({}, e))
     })
   }),
-  S = Chunk647438.memo(function(e) {
+  E = Chunk647438.memo(function(e) {
     let {
       channel: t,
       onJump: n,

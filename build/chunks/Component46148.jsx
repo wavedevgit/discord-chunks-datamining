@@ -46,17 +46,17 @@ let C = Chunk647438.memo(function(e) {
   let t = e.channel.id,
     n = e.selected,
     C = (0, c.Nj)(o.z.CHAT_WALLPAPERS_PICKER_COACHMARK),
-    E = (0, l.e7)([p.Z], () => p.Z.getLayers().includes(b.S9g.USER_SETTINGS)),
+    S = (0, l.e7)([p.Z], () => p.Z.getLayers().includes(b.S9g.USER_SETTINGS)),
     {
-      canAccessPicker: S,
+      canAccessPicker: E,
       entryPoint: P
     } = (0, f.m)({
       location: "ChatWallpaperDMListCoachmark",
       channelId: t
     }),
     I = P === h.FN.CONTEXT_MENU,
-    [N, Z] = (0, u.US)(C && I && n && S && !E ? [o.z.CHAT_WALLPAPERS_DM_LIST_COACHMARK] : []),
-    w = (0, d.m)(y.p9.TIER_2),
+    [N, w] = (0, u.US)(C && I && n && E && !S ? [o.z.CHAT_WALLPAPERS_DM_LIST_COACHMARK] : []),
+    Z = (0, d.m)(y.p9.TIER_2),
     T = (0, g.Z)(t),
     A = N === o.z.CHAT_WALLPAPERS_DM_LIST_COACHMARK,
     R = (0, i.useRef)(null),
@@ -75,12 +75,12 @@ let C = Chunk647438.memo(function(e) {
       return e(), window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
     }, [A]), !A) return (0, r.jsx)(s.ZP, x({}, e));
   let U = () => {
-      Z(O.L.USER_DISMISS)
+      w(O.L.USER_DISMISS)
     },
     G = ((e, t) => {
       let n = null != t && !t.isPreview;
       return e ? e && !n ? "no-wallpaper-nitro" : "has-wallpaper-nitro" : "non-nitro"
-    })(w, null != T ? T : null),
+    })(Z, null != T ? T : null),
     B = "has-wallpaper-nitro" === G ? _.intl.string(_.t.T9dXPj) : _.intl.string(_.t.zyvzQ0),
     F = (e => {
       switch (e) {

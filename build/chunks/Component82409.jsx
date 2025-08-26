@@ -78,19 +78,19 @@ function G(e) {
     includePanelSpacing: l
   } = e, a = (0, C.fJ)(), {
     selectedFilter: h
-  } = (0, E.Z)(), I = (0, s.e7)([S.Z], () => S.Z.oldestDisplayedMessageId), N = (0, s.Wu)([S.Z], () => S.Z.getInboxMessages()), Z = (0, s.Wu)([_.ZP, O.Z, S.Z], () => N.filter(e => !(0, P.YH)({
+  } = (0, S.Z)(), I = (0, s.e7)([E.Z], () => E.Z.oldestDisplayedMessageId), N = (0, s.Wu)([E.Z], () => E.Z.getInboxMessages()), w = (0, s.Wu)([_.ZP, O.Z, E.Z], () => N.filter(e => !(0, P.YH)({
     messageId: e.id,
     channelId: e.channelId,
     guildId: e.guildId,
     ReadStateStore_: _.ZP,
     GuildStore_: O.Z
-  }) && !(0, P.Tj)(e, S.Z.selectedItemInfo))), D = (0, s.Wu)([_.ZP, O.Z, S.Z], () => N.filter(e => (0, P.YH)({
+  }) && !(0, P.Tj)(e, E.Z.selectedItemInfo))), D = (0, s.Wu)([_.ZP, O.Z, E.Z], () => N.filter(e => (0, P.YH)({
     messageId: e.id,
     channelId: e.channelId,
     guildId: e.guildId,
     ReadStateStore_: _.ZP,
     GuildStore_: O.Z
-  }) || (0, P.Tj)(e, S.Z.selectedItemInfo))), G = i.useCallback(e => {
+  }) || (0, P.Tj)(e, E.Z.selectedItemInfo))), G = i.useCallback(e => {
     h !== A.V5.BOOKMARKS && x.Z.loadMoreInbox({
       viewId: a,
       loadingTrigger: e
@@ -98,9 +98,9 @@ function G(e) {
   }, [h, a]), {
     hasLoadedEver: B,
     canLoadMore: W
-  } = (0, s.cj)([S.Z], () => ({
-    hasLoadedEver: S.Z.hasLoadedEver,
-    canLoadMore: S.Z.canLoadMore({})
+  } = (0, s.cj)([E.Z], () => ({
+    hasLoadedEver: E.Z.hasLoadedEver,
+    canLoadMore: E.Z.canLoadMore({})
   }));
   i.useEffect(() => {
       W && !B && G(A.X.ON_OPEN)
@@ -138,7 +138,7 @@ function G(e) {
         message: n
       }]
     }), [K]),
-    q = F(Z, h, I),
+    q = F(w, h, I),
     X = F(D, h, null);
   (0, p.ZP)(() => {
     var e;
@@ -148,7 +148,7 @@ function G(e) {
     let t = (0, j.Ag)({
         location: "NotificationsInboxSidebar"
       }).notificationCenterVariant,
-      n = null == (e = S.Z.getDevOverrides().navOnClick) || e;
+      n = null == (e = E.Z.getDevOverrides().navOnClick) || e;
     if (t !== j.jP.SIDEBAR || false === n) return;
     let {
       message: r,
@@ -162,7 +162,7 @@ function G(e) {
         message: a,
         isUnread: null != o
       };
-      let s = S.Z.getNotifyingChannelIds();
+      let s = E.Z.getNotifyingChannelIds();
       if (null == s || 0 === s.length) return {
         message: null,
         isUnread: false
@@ -220,7 +220,7 @@ function G(e) {
           style: {
             marginRight: false
           },
-          children: Q === j.v8.DROPDOWN && !J && (0, r.jsx)(w.p, {})
+          children: Q === j.v8.DROPDOWN && !J && (0, r.jsx)(Z.p, {})
         })
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);
@@ -270,7 +270,7 @@ function V() {
 }
 
 function H(e, t) {
-  return (0, r.jsx)(Z.Z, {
+  return (0, r.jsx)(w.Z, {
     message: e[0],
     groupedMessages: e.slice(1),
     isUnread: t

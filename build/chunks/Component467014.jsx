@@ -1,7 +1,7 @@
-/** Chunk was on 7318 **/
-/** chunk id: 467014, original params: A,e,t (module,exports,require) **/
+/** Chunk was on 74486 **/
+/** chunk id: 467014, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => A
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -15,89 +15,89 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk87819 = require("./87819.js");
 
-function h(A) {
+function A(e) {
   let {
-    userId: e,
-    guildId: t
-  } = A, h = (0, l.e7)([s.ZP], () => s.ZP.getGuildSidebarState(t), [t]), {
-    messagesCount: u,
-    linksCount: d,
-    mediaCount: E
-  } = (0, o.P2)(e, t), C = new Intl.NumberFormat(f.intl.currentLocale).format(u), B = new Intl.NumberFormat(f.intl.currentLocale).format(d), w = new Intl.NumberFormat(f.intl.currentLocale).format(E), D = r.useCallback(async A => {
-    if (null == h) return;
-    let n = (0, o.Ow)(e, A, {
+    userId: t,
+    guildId: n
+  } = e, A = (0, i.e7)([s.ZP], () => s.ZP.getGuildSidebarState(n), [n]), {
+    messagesCount: m,
+    linksCount: T,
+    mediaCount: I
+  } = (0, u.P2)(t, n), g = new Intl.NumberFormat(E.intl.currentLocale).format(m), f = new Intl.NumberFormat(E.intl.currentLocale).format(T), h = new Intl.NumberFormat(E.intl.currentLocale).format(I), N = l.useCallback(async e => {
+    if (null == A) return;
+    let r = (0, u.Ow)(t, e, {
       include_nsfw: true
     });
-    await (0, a.r)(t, e, h.baseChannelId, {
-      modViewPanel: c.k.MESSAGE_HISTORY,
-      additionalSearchQuery: n
+    await (0, o.r)(n, t, A.baseChannelId, {
+      modViewPanel: d.k.MESSAGE_HISTORY,
+      additionalSearchQuery: r
     })
-  }, [t, h, e]);
-  return (0, n.jsx)(i.xJW, {
-    title: f.intl.string(f.t.vCn2Tk),
-    titleClassName: v.infoTitle,
-    children: (0, n.jsxs)(g.WM, {
-      children: [(0, n.jsx)(g._2, {
-        icon: (0, n.jsx)(i.kBi, {
+  }, [n, A, t]);
+  return (0, r.jsx)(a.xJW, {
+    title: E.intl.string(E.t.vCn2Tk),
+    titleClassName: _.infoTitle,
+    children: (0, r.jsxs)(c.WM, {
+      children: [(0, r.jsx)(c._2, {
+        icon: (0, r.jsx)(a.kBi, {
           size: "custom",
           color: "currentColor",
-          width: g.Mn,
-          height: g.Mn
+          width: c.Mn,
+          height: c.Mn
         }),
-        name: (0, n.jsx)(i.Text, {
+        name: (0, r.jsx)(a.Text, {
           variant: "text-sm/semibold",
           color: "text-default",
-          children: f.intl.string(f.t.OIgYlZ)
+          children: E.intl.string(E.t.OIgYlZ)
         }),
-        description: u === o.II ? (0, n.jsx)(i.$jN, {
-          type: i.RAz.SPINNING_CIRCLE,
-          className: v.loadingSpinner
-        }) : (0, n.jsx)(i.Text, {
+        description: m === u.II ? (0, r.jsx)(a.$jN, {
+          type: a.RAz.SPINNING_CIRCLE,
+          className: _.loadingSpinner
+        }) : (0, r.jsx)(a.Text, {
           variant: "text-sm/semibold",
           color: "interactive-normal",
-          children: C
+          children: g
         }),
-        onNavigate: u > 0 ? () => D(o.mw.MESSAGES) : true
-      }), (0, n.jsx)(g._2, {
-        icon: (0, n.jsx)(i.xPt, {
+        onNavigate: m > 0 ? () => N(u.mw.MESSAGES) : true
+      }), (0, r.jsx)(c._2, {
+        icon: (0, r.jsx)(a.xPt, {
           size: "custom",
-          width: g.Mn,
-          height: g.Mn
+          width: c.Mn,
+          height: c.Mn
         }),
-        name: (0, n.jsx)(i.Text, {
+        name: (0, r.jsx)(a.Text, {
           variant: "text-sm/semibold",
           color: "text-default",
-          children: f.intl.string(f.t.DFSvTk)
+          children: E.intl.string(E.t.DFSvTk)
         }),
-        description: d === o.II ? (0, n.jsx)(i.$jN, {
-          type: i.RAz.SPINNING_CIRCLE,
-          className: v.loadingSpinner
-        }) : (0, n.jsx)(i.Text, {
+        description: T === u.II ? (0, r.jsx)(a.$jN, {
+          type: a.RAz.SPINNING_CIRCLE,
+          className: _.loadingSpinner
+        }) : (0, r.jsx)(a.Text, {
           variant: "text-sm/semibold",
           color: "interactive-normal",
-          children: B
+          children: f
         }),
-        onNavigate: d > 0 ? () => D(o.mw.LINKS) : true
-      }), (0, n.jsx)(g._2, {
-        icon: (0, n.jsx)(i.Ka2, {
+        onNavigate: T > 0 ? () => N(u.mw.LINKS) : true
+      }), (0, r.jsx)(c._2, {
+        icon: (0, r.jsx)(a.Ka2, {
           size: "custom",
-          width: g.Mn,
-          height: g.Mn
+          width: c.Mn,
+          height: c.Mn
         }),
-        name: (0, n.jsx)(i.Text, {
+        name: (0, r.jsx)(a.Text, {
           variant: "text-sm/semibold",
           color: "text-default",
-          children: f.intl.string(f.t["Aw9+/P"])
+          children: E.intl.string(E.t["Aw9+/P"])
         }),
-        description: E === o.II ? (0, n.jsx)(i.$jN, {
-          type: i.RAz.SPINNING_CIRCLE,
-          className: v.loadingSpinner
-        }) : (0, n.jsx)(i.Text, {
+        description: I === u.II ? (0, r.jsx)(a.$jN, {
+          type: a.RAz.SPINNING_CIRCLE,
+          className: _.loadingSpinner
+        }) : (0, r.jsx)(a.Text, {
           variant: "text-sm/semibold",
           color: "interactive-normal",
-          children: w
+          children: h
         }),
-        onNavigate: E > 0 ? () => D(o.mw.MEDIA) : true
+        onNavigate: I > 0 ? () => N(u.mw.MEDIA) : true
       })]
     })
   })

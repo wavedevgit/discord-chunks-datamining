@@ -30,11 +30,11 @@ let O = (0, Chunk146773.B)(function(e) {
     connectChannelDragSource: j,
     connectChannelDropTarget: x,
     tabIndex: C
-  } = e, E = (0, a.e7)([u.Z, d.ZP], () => {
+  } = e, S = (0, a.e7)([u.Z, d.ZP], () => {
     let e = d.ZP.getDirectoryChannelIds(t.id);
     return 0 === e.length ? null : u.Z.getChannel(e[0])
-  }), S = (0, a.e7)([u.Z], () => u.Z.getChannel(null == E ? true : E.parent_id)), P = l === (null == E ? true : E.id), I = (0, a.e7)([p.Z], () => null != S ? p.Z.can(g.Plq.MANAGE_CHANNELS, S) : null != t && p.Z.can(g.Plq.MANAGE_CHANNELS, t)), N = i.useCallback(e => {
-    null != E && (0, s.jW)(e, async () => {
+  }), E = (0, a.e7)([u.Z], () => u.Z.getChannel(null == S ? true : S.parent_id)), P = l === (null == S ? true : S.id), I = (0, a.e7)([p.Z], () => null != E ? p.Z.can(g.Plq.MANAGE_CHANNELS, E) : null != t && p.Z.can(g.Plq.MANAGE_CHANNELS, t)), N = i.useCallback(e => {
+    null != S && (0, s.jW)(e, async () => {
       let {
         default: e
       } = await n.e("70623").then(n.bind(n, 99334));
@@ -58,7 +58,7 @@ let O = (0, Chunk146773.B)(function(e) {
           }
           return e
         }({}, t), i = i = {
-          channel: E
+          channel: S
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -71,29 +71,29 @@ let O = (0, Chunk146773.B)(function(e) {
         }), n))
       }
     })
-  }, [E]);
-  if (null == E) return null;
-  let Z = (0, h.jo)(c, v),
-    w = (0, h.CN)(E, y, _),
+  }, [S]);
+  if (null == S) return null;
+  let w = (0, h.jo)(c, v),
+    Z = (0, h.CN)(S, y, _),
     T = (0, r.jsx)("div", {
-      className: o()(Z, {
-        [b.disabled]: w,
+      className: o()(w, {
+        [b.disabled]: Z,
         [b.selected]: P
       }),
-      "data-dnd-name": E.name,
+      "data-dnd-name": S.name,
       children: (0, r.jsxs)(f.ZP, {
         className: b.iconVisibility,
-        channel: E,
+        channel: S,
         guild: t,
         selected: P,
         onContextMenu: N,
         forceInteractable: true,
         resolvedUnreadSetting: m.i.ONLY_MENTIONS,
         children: [(0, r.jsx)(h.eP, {
-          channel: E,
+          channel: S,
           tabIndex: C
         }), (0, r.jsx)(h.hR, {
-          channel: E,
+          channel: S,
           disableManageChannels: O,
           tabIndex: C
         })]

@@ -1,29 +1,29 @@
 /** Chunk was on 44799 **/
 /** chunk id: 169010, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  S: () => s,
-  z: () => i
+  S: () => a,
+  z: () => o
 }), require("./388685.js"), require("./539854.js");
 var Chunk494497 = require("./494497.js"),
   Chunk535396 = require("./535396.js");
-let i = {
+let o = {
     guildTagsBadgePacks: [Chunk494497.MB, Chunk494497.Vk]
   },
-  l = Object.entries(i).reduce((e, t) => {
+  l = Object.entries(o).reduce((e, t) => {
     let [n, r] = t;
     for (let t of r) e[t] = n;
     return e
   }, {});
 
-function s(e) {
+function a(e) {
   let t = [],
     n = e.reduce((e, t) => {
-      if (t.type !== o.Us.PERK) return e;
+      if (t.type !== i.Us.PERK) return e;
       let n = l[t.skuId];
       return null == n || (null != e[n] || (e[n] = []), e[n].push(t)), e
     }, {});
   for (let r of e) {
-    if (r.type === o.Us.LEVEL) {
+    if (r.type === i.Us.LEVEL) {
       t.push({
         type: "singleLevel",
         powerup: r
@@ -50,9 +50,9 @@ function s(e) {
       n = e.findIndex(e => "multiPerk" === e.type && "guildTagsBadgePacks" === e.group);
     if (false !== t && false !== n && n !== t + 1) {
       let t = [...e],
-        [o] = t.splice(n, 1),
-        i = t.findIndex(e => "singlePerk" === e.type && e.powerup.skuId === r.IN);
-      return t.splice(i + 1, 0, o), t
+        [i] = t.splice(n, 1),
+        o = t.findIndex(e => "singlePerk" === e.type && e.powerup.skuId === r.IN);
+      return t.splice(o + 1, 0, i), t
     }
     return e
   }(t)

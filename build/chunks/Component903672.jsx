@@ -30,14 +30,14 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk889833 = require("./889833.js");
-let Z = {
+let w = {
   offset: {
     left: 4,
     right: false
   }
 };
 
-function w(e, t, n) {
+function Z(e, t, n) {
   let r = t ? x.ZP.guildFilter : null,
     i = t ? x.ZP.roleFilter : null,
     l = t ? x.ZP.everyoneFilter : null,
@@ -70,16 +70,16 @@ function T(e) {
     everyoneFilter: x.ZP.everyoneFilter
   })), y = (0, O.Us)({
     location: "RecentMentions"
-  }), v = (0, p.Z)(f), C = (0, p.Z)(g), E = (0, p.Z)(b);
+  }), v = (0, p.Z)(f), C = (0, p.Z)(g), S = (0, p.Z)(b);
   i.useEffect(() => {
-    if (!x.ZP.hasLoadedEver) return void w(n, true);
-    (null != v && f !== v || null != C && g !== C || null != E && b !== E) && w(n, true)
-  }, [v, f, C, g, E, b, n, true]), (0, d.ZP)(() => {
-    (null == l ? true : l.some(m.k5)) && (c.Z.clearMentions(), w(n, true))
+    if (!x.ZP.hasLoadedEver) return void Z(n, true);
+    (null != v && f !== v || null != C && g !== C || null != S && b !== S) && Z(n, true)
+  }, [v, f, C, g, S, b, n, true]), (0, d.ZP)(() => {
+    (null == l ? true : l.some(m.k5)) && (c.Z.clearMentions(), Z(n, true))
   }), i.useEffect(() => () => {
     c.Z.truncateMentions(P.DJj)
   }, []);
-  let S = i.useCallback(() => null, []);
+  let E = i.useCallback(() => null, []);
   return (0, r.jsx)(u.ZP, {
     className: o()(N.recentMentionsPopout, {
       [N.widerInbox]: y
@@ -96,10 +96,10 @@ function T(e) {
     hasMore: s,
     analyticsName: "Recent Mentions",
     loadMore: function() {
-      w(n, true, null != l && l.length > 0 ? l[l.length - 1].id : null)
+      Z(n, true, null != l && l.length > 0 ? l[l.length - 1].id : null)
     },
     canCloseAllMessages: true,
-    renderHeader: S,
+    renderHeader: E,
     renderEmptyState: D,
     renderMessage: A,
     "aria-label": I.intl.string(I.t.jbV6MD),
@@ -130,7 +130,7 @@ function R(e) {
     u = !!(0, g.aC)(o) && !a;
   return (0, r.jsxs)("div", {
     className: N.container,
-    children: [(0, r.jsx)(E.Z, {
+    children: [(0, r.jsx)(S.Z, {
       channel: o,
       gotoChannel: n,
       children: null != i ? (0, r.jsx)(s.M0o, {
@@ -155,7 +155,7 @@ function R(e) {
         hideAccessories: u,
         compact: y.jU.getSetting(),
         animateAvatar: false,
-        focusProps: Z,
+        focusProps: w,
         trackAnnouncementViews: true
       }, t.id)]
     })]

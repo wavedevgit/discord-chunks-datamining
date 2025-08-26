@@ -1,4 +1,4 @@
-/** Chunk was on 52721 **/
+/** Chunk was on 88479 **/
 /** chunk id: 566386, original params: e,t,n (module,exports,require) **/
 module.exports = {
   serverBoostTabItem: "serverBoostTabItem_cbe0b4",

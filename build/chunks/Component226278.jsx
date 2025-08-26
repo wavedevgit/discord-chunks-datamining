@@ -2,7 +2,7 @@
 /** chunk id: 226278, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _,
-  g: () => f
+  g: () => m
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,17 +16,17 @@ var Chunk951288 = require("./951288.js"),
   Chunk787188 = require("./787188.js"),
   Chunk535396 = require("./535396.js");
 
-function f(e) {
+function m(e) {
   var t;
   let {
     guildId: n,
-    powerup: o,
-    className: i
-  } = e, s = (0, a.ZP)(n, o), u = s.type !== m.A3.LEVEL_ACTIVATED, d = (0, l.Z)(n, o, "GuildPowerupCardBodyFooter"), f = null != (t = (0, p._)(o, s, d)) ? t : true;
-  return (0, r.jsx)(c.uf, {
-    status: f,
-    cost: u ? o.cost : true,
-    className: i
+    powerup: i,
+    className: o
+  } = e, a = (0, s.ZP)(n, i), c = a.type !== f.A3.LEVEL_ACTIVATED, d = (0, l.Z)(n, i, "GuildPowerupCardBodyFooter"), m = null != (t = (0, p._)(i, a, d)) ? t : true;
+  return (0, r.jsx)(u.uf, {
+    status: m,
+    cost: c ? i.cost : true,
+    className: o
   })
 }
 
@@ -35,32 +35,32 @@ function _(e) {
   let {
     guildId: n,
     powerup: p,
-    badge: f,
+    badge: m,
     className: _,
-    onHover: x,
-    children: g
-  } = e, v = (0, s.Z)(n), b = (0, a.ZP)(n, p), h = b.type !== m.A3.INACTIVE, j = (null == (t = b.sourceEntitlement) ? true : t.ends_at) != null, C = (0, l.Z)(n, p, "GuildPowerupCard"), E = o.useRef(null), {
-    onShowMore: I
-  } = (0, d.ZP)(n, p), [N, w] = o.useState(false), Z = (0, i.O)(w, 1);
+    onHover: g,
+    children: v
+  } = e, x = (0, a.Z)(n), b = (0, s.ZP)(n, p), h = b.type !== f.A3.INACTIVE, C = (null == (t = b.sourceEntitlement) ? true : t.ends_at) != null, j = (0, l.Z)(n, p, "GuildPowerupCard"), I = i.useRef(null), {
+    onShowMore: E
+  } = (0, d.ZP)(n, p), [w, Z] = i.useState(false), N = (0, o.O)(Z, 1);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(c.aB, {
+    children: [(0, r.jsx)(u.aB, {
       label: p.title,
       isActive: h,
-      isWarning: j,
-      badge: f,
-      canRollback: C,
-      onClick: I,
-      onMouseOver: () => null == x ? true : x(true),
-      onMouseLeave: () => null == x ? true : x(false),
+      isWarning: C,
+      badge: m,
+      canRollback: j,
+      onClick: E,
+      onMouseOver: () => null == g ? true : g(true),
+      onMouseLeave: () => null == g ? true : g(false),
       className: _,
       ref: e => {
-        E.current = e, Z.current = e
+        I.current = e, N.current = e
       },
-      children: g
-    }), !C && v && (0, r.jsx)(u.Z, {
+      children: v
+    }), !j && x && (0, r.jsx)(c.Z, {
       powerup: p,
-      targetRef: E,
-      isCardVisible: N
+      targetRef: I,
+      isCardVisible: w
     })]
   })
 }

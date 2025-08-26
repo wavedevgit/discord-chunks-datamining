@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk772848 = require("./772848.js"),
   Chunk481060 = require("./481060.js"),
   Chunk752305 = require("./752305.js"),
@@ -17,13 +17,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk231319 = require("./231319.js"),
   Chunk8542 = require("./8542.js");
-let b = (0, Chunk772848.Z)(),
-  q = (0, Chunk131704.kt)({
+let q = (0, Chunk772848.Z)(),
+  h = (0, Chunk131704.kt)({
     id: "1",
     type: Chunk981631.d4z.DM
   });
 
-function h() {
+function C() {
   return new Promise(e => {
     e({
       shouldClear: false,
@@ -32,19 +32,19 @@ function h() {
   })
 }
 
-function C(e) {
+function b(e) {
   var A;
   let {
     hasError: t,
     maxLength: r,
-    text: l
+    text: a
   } = e;
   return (0, n.jsxs)("div", {
-    className: a()(m.maxLength, {
+    className: l()(m.maxLength, {
       [m.errorOverflow]: t
     }),
     "aria-hidden": "true",
-    children: [null != (A = null == l ? true : l.length) ? A : 0, " ", null != r && "/ ".concat(r)]
+    children: [null != (A = null == a ? true : a.length) ? A : 0, " ", null != r && "/ ".concat(r)]
   })
 }
 
@@ -52,19 +52,19 @@ function v(e) {
   var A;
   let {
     "aria-labelledby": t,
-    className: l,
+    className: a,
     id: i,
     autoFocus: c,
-    maxLength: f,
+    maxLength: g,
     onChange: m,
     onSubmit: v,
-    showCharacterCount: j = false,
-    placeholder: x,
-    required: U,
+    showCharacterCount: U = false,
+    placeholder: j,
+    required: x,
     value: V,
-    enableThemedBackground: O = false,
-    parentModalKey: P
-  } = e, F = (0, o.Gc0)(), [I, y] = r.useState(() => (0, s.JM)(V)), N = r.useRef(true === c), K = null != t ? t : null == F ? true : F.titleId, T = null != (A = null == F ? true : F.errorId) ? A : b, X = r.useMemo(() => ({
+    enableThemedBackground: P = false,
+    parentModalKey: O
+  } = e, F = (0, o.Gc0)(), [I, K] = r.useState(() => (0, s.JM)(V)), y = r.useRef(true === c), N = null != t ? t : null == F ? true : F.titleId, T = null != (A = null == F ? true : F.errorId) ? A : q, X = r.useMemo(() => ({
     analyticsName: "simple",
     autocomplete: {
       alwaysUseLayer: true,
@@ -87,38 +87,38 @@ function v(e) {
   }), [c]);
   return (0, n.jsxs)(d.ZP, {
     "aria-describedby": T,
-    "aria-labelledby": K,
-    innerClassName: a()(l, p.textArea),
+    "aria-labelledby": N,
+    innerClassName: l()(a, p.textArea),
     id: i,
-    maxCharacterCount: f,
+    maxCharacterCount: g,
     onChange: function(e, A, t) {
-      m(A), y(t)
+      m(A), K(t)
     },
-    placeholder: x,
-    required: U,
-    channel: q,
+    placeholder: j,
+    required: x,
+    channel: h,
     textValue: V,
     richValue: I,
     type: X,
     onBlur: () => {
-      N.current = false
+      y.current = false
     },
     onFocus: () => {
-      N.current = true
+      y.current = true
     },
-    focused: N.current,
-    onSubmit: null != v ? v : h,
-    disableThemedBackground: !O,
-    parentModalKey: P,
+    focused: y.current,
+    onSubmit: null != v ? v : C,
+    disableThemedBackground: !P,
+    parentModalKey: O,
     emojiPickerCloseOnModalOuterClick: true,
-    children: [true === j && (0, n.jsx)(C, {
-      hasError: null != F.error || null != f && V.length > f,
+    children: [true === U && (0, n.jsx)(b, {
+      hasError: null != F.error || null != g && V.length > g,
       text: V,
-      maxLength: f
-    }), null != f && (0, n.jsx)(o.nn4, {
-      id: b,
-      children: g.intl.format(g.t["+DFxLS"], {
-        maxLength: f
+      maxLength: g
+    }), null != g && (0, n.jsx)(o.nn4, {
+      id: q,
+      children: f.intl.format(f.t["+DFxLS"], {
+        maxLength: g
       })
     })]
   })
