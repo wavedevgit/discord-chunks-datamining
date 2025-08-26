@@ -64,11 +64,11 @@ function y(e) {
     }), u && (0, n.jsx)(c.IGR, {
       color: c.TVs.unsafe_rawColors.BRAND_260.css,
       className: v.newBadge,
-      text: O.intl.string(O.t.y2b7CA)
+      text: m.intl.string(m.t.y2b7CA)
     }), null != d && (0, n.jsx)(c.P3F, {
       className: v.tabPreviewClose,
       onClick: d,
-      "aria-label": O.intl.string(O.t.WAI6xs),
+      "aria-label": m.intl.string(m.t.WAI6xs),
       children: (0, n.jsx)(c.k$p, {
         size: "xs",
         color: "currentColor"
@@ -93,8 +93,8 @@ function _(e) {
             width: 20,
             height: 20
           }),
-          title: O.intl.string(O.t.odvTUl),
-          body: O.intl.string(O.t["0JFpRU"]),
+          title: m.intl.string(m.t.odvTUl),
+          body: m.intl.string(m.t["0JFpRU"]),
           selected: i === f.y.GUILD_PRODUCTS,
           onClick: () => o(f.y.GUILD_PRODUCTS)
         }, e);
@@ -104,9 +104,9 @@ function _(e) {
             width: 20,
             height: 20
           }),
-          title: O.intl.string(O.t["KzCF//"]),
-          body: r ? O.intl.string(O.t["jqz+l5"]) : O.intl.format(O.t.ycs4oK, {
-            openRoleSubPage: () => (0, u.uL)(x.Z5c.CHANNEL(t.id, m.oC.ROLE_SUBSCRIPTIONS))
+          title: m.intl.string(m.t["KzCF//"]),
+          body: r ? m.intl.string(m.t["jqz+l5"]) : m.intl.format(m.t.ycs4oK, {
+            openRoleSubPage: () => (0, u.uL)(O.Z5c.CHANNEL(t.id, x.oC.ROLE_SUBSCRIPTIONS))
           }),
           disabled: !r,
           selected: i === f.y.GUILD_ROLE_SUBSCRIPTIONS,
@@ -124,8 +124,8 @@ function _(e) {
             width: 20,
             height: 20
           }),
-          title: O.intl.string(O.t.odvTUl),
-          body: O.intl.string(O.t["827i8P"]),
+          title: m.intl.string(m.t.odvTUl),
+          body: m.intl.string(m.t["827i8P"]),
           selected: i === f.y.GUILD_PRODUCTS_PREVIEW,
           onClick: () => {
             o(f.y.GUILD_PRODUCTS_PREVIEW), s.K.set(h.Hr, "true")
@@ -142,7 +142,7 @@ function _(e) {
     children: [(0, n.jsx)(c.X6q, {
       variant: "heading-sm/bold",
       className: v.header,
-      children: O.intl.string(O.t.GF433N)
+      children: m.intl.string(m.t.GF433N)
     }), (0, n.jsx)(c.LZC, {
       size: 12
     }), (0, n.jsxs)("div", {

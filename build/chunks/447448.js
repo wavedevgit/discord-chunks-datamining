@@ -5,22 +5,22 @@ require.d(exports, {
   h: () => s,
   k: () => a
 });
-var Chunk818083 = require("./818083.js"),
+var Chunk427164 = require("./427164.js"),
   Chunk438379 = require("./438379.js");
-let o = (0, Chunk818083.B)({
+let o = (0, Chunk427164.le)({
+  name: "2025-07-user-profile-game-widgets",
   kind: "user",
-  id: "2025-07_user_profile_game_widgets",
-  label: "User Profile Game Widgets",
   defaultConfig: {
     enabled: false
   },
-  treatments: [{
-    id: 1,
-    label: "Enable game widgets on user profile",
-    config: {
+  variations: {
+    0: {
+      enabled: false
+    },
+    1: {
       enabled: true
     }
-  }]
+  }
 });
 
 function a(e) {
@@ -30,15 +30,10 @@ function a(e) {
   } = e, r = (0, i.J)({
     location: t,
     autoTrackExposure: n
-  }), {
-    enabled: a
-  } = o.useExperiment({
+  }), a = o.useConfig({
     location: t
-  }, {
-    autoTrackExposure: n,
-    disable: r
-  });
-  return a
+  }).enabled;
+  return !r && a
 }
 
 function s(e) {
@@ -48,13 +43,8 @@ function s(e) {
     location: e
   }, {
     autoTrackExposure: false
-  }), {
-    enabled: n
-  } = o.getCurrentConfig({
-    location: e
-  }, {
-    autoTrackExposure: false,
-    disable: t
   });
-  return n
+  return !t && o.getConfig({
+    location: e
+  }).enabled
 }

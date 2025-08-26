@@ -5,7 +5,7 @@ require.d(exports, {
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk755721 = require("./755721.js"),
+  Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
   Chunk891561 = require("./891561.jsx"),
   Chunk333866 = require("./333866.js"),
@@ -28,7 +28,6 @@ function u(e) {
     checked: o === e
   }, e)), [s, o]);
   return (0, n.jsx)("div", {
-    className: d.__invalid_container,
     children: (0, n.jsxs)(l.v2r, {
       navId: "sort-and-view",
       "aria-label": a.intl.string(a.t["4jfWTE"]),
@@ -71,12 +70,9 @@ function C() {
     },
     position: "bottom",
     align: "left",
-    children: (e, i) => {
-      var s, c;
-      let {
-        isShown: u
-      } = i;
-      return (0, n.jsxs)(o.zx, (s = function(e) {
+    children: e => {
+      var i, s;
+      return (0, n.jsx)(o.zx, (i = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {},
             n = Object.keys(r);
@@ -93,42 +89,21 @@ function C() {
           })
         }
         return e
-      }({}, e), c = c = {
-        buttonRef: r,
-        size: o.zx.Sizes.MIN,
-        color: o.zx.Colors.CUSTOM,
-        className: d.sortDropdown,
-        innerClassName: d.sortDropdownInner,
-        children: [(0, n.jsx)(l.uVW, {
-          size: "xs",
-          color: "currentColor",
-          "aria-label": a.intl.string(a.t["5cmFc3"])
-        }), (0, n.jsx)(l.LZC, {
-          size: 8,
-          horizontal: true
-        }), (0, n.jsx)(l.Text, {
-          variant: "text-sm/medium",
-          color: "header-primary",
-          children: t
-        }), u ? (0, n.jsx)(l.u04, {
-          size: "custom",
-          color: "currentColor",
-          width: 20
-        }) : (0, n.jsx)(l.CJ0, {
-          size: "custom",
-          color: "currentColor",
-          width: 20
-        })]
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(s, Object.getOwnPropertyDescriptors(c)) : (function(e, t) {
+      }({}, e), s = s = {
+        text: t,
+        icon: l.uVW,
+        variant: "secondary",
+        buttonRef: r
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
         var r = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e);
           r.push.apply(r, n)
         }
         return r
-      })(Object(c)).forEach(function(e) {
-        Object.defineProperty(s, e, Object.getOwnPropertyDescriptor(c, e))
-      }), s))
+      })(Object(s)).forEach(function(e) {
+        Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(s, e))
+      }), i))
     }
   })
 }

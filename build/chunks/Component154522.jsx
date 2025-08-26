@@ -26,7 +26,7 @@ function g(e) {
     listingsLoaded: o
   } = (0, u.eD)(t), s = (0, u.ue)(t), g = i.useRef(null), {
     sortOption: h
-  } = (0, p.s)(), x = i.useMemo(() => (function(e, t) {
+  } = (0, p.s)(), O = i.useMemo(() => (function(e, t) {
     let r, n;
     switch (t) {
       case f.zJ.NAME:
@@ -49,7 +49,7 @@ function g(e) {
   return o ? (0, n.jsx)("ul", {
     className: j.cardContainer,
     "aria-label": b.intl.string(b.t.qe4kTU),
-    children: x.map(e => (0, n.jsx)("li", {
+    children: O.map(e => (0, n.jsx)("li", {
       className: j.card,
       children: (0, n.jsx)("div", {
         className: l()(j.cardContent, {

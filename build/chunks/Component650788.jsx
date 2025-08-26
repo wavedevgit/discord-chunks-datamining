@@ -1,7 +1,7 @@
 /** Chunk was on 78431 **/
 /** chunk id: 650788, original params: e,t,r (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => U
+  default: () => V
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -49,8 +49,8 @@ function E(e) {
     selectedTab: d,
     isPhantomPreview: u,
     categoryTabs: C
-  } = (0, O.m)(), p = !o || null == l;
-  return null == s || !u && p ? (0, n.jsx)(a.$jN, {}) : (0, n.jsx)(m.Z, {
+  } = (0, m.m)(), p = !o || null == l;
+  return null == s || !u && p ? (0, n.jsx)(a.$jN, {}) : (0, n.jsx)(x.Z, {
     defaultSortOption: null != (t = null == l ? true : l.store_page_guild_products_default_sort) ? t : Z.zJ.NAME,
     children: (0, n.jsxs)("div", {
       className: k.contentContainer,
@@ -78,20 +78,20 @@ function E(e) {
   })
 }
 
-function M(e) {
+function U(e) {
   let {
     guildId: t,
     productId: r
   } = e, o = (0, c.e7)([p.Z], () => p.Z.isConnected()), h = (0, c.e7)([g.Z], () => g.Z.getGuild(t)), {
-    shouldHideGuildPurchaseEntryPoints: m,
+    shouldHideGuildPurchaseEntryPoints: x,
     restrictionsLoading: v
   } = (0, C.uP)(t), {
     selectedTab: y,
     isPhantomPreview: _,
     categoryTabs: w
-  } = (0, O.m)(), P = o && (null == h || 0 === w.length && !_ || m && !v);
+  } = (0, m.m)(), P = o && (null == h || 0 === w.length && !_ || x && !v);
   return i.useEffect(() => {
-    P && (0, x.M)(t, D.oC.GUILD_SHOP)
+    P && (0, O.M)(t, D.oC.GUILD_SHOP)
   }, [t, P]), (0, d.Z)({
     type: N.n.PAGE,
     name: s.ImpressionNames.GUILD_SHOP_PAGE,
@@ -126,16 +126,16 @@ function M(e) {
   })
 }
 
-function U(e) {
+function V(e) {
   let {
     guildId: t,
     productId: r,
     initialTab: i
   } = e;
-  return null == i && null != r && (i = v.y.GUILD_PRODUCTS), (0, n.jsx)(O.Z, {
+  return null == i && null != r && (i = v.y.GUILD_PRODUCTS), (0, n.jsx)(m.Z, {
     initialTab: i,
     guildId: t,
-    children: (0, n.jsx)(M, {
+    children: (0, n.jsx)(U, {
       initialTab: i,
       productId: r,
       guildId: t
