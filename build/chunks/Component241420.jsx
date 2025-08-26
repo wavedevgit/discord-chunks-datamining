@@ -1,74 +1,65 @@
 /** Chunk was on 59500 **/
-/** chunk id: 241420, original params: n,i,t (module,exports,require) **/
+/** chunk id: 241420, original params: i,s,t (module,exports,require) **/
 require.d(exports, {
-  default: () => h
+  default: () => p
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
-var Chunk481060 = require("./481060.js"),
+var Chunk82659 = require("./82659.jsx"),
+  Chunk481060 = require("./481060.js"),
   Chunk546957 = require("./546957.jsx"),
   Chunk190014 = require("./190014.jsx"),
   Chunk301812 = require("./301812.jsx"),
   Chunk988043 = require("./988043.jsx"),
   Chunk919539 = require("./919539.jsx"),
   Chunk526761 = require("./526761.js"),
-  Chunk388032 = require("./388032.jsx"),
-  Chunk942465 = require("./942465.js");
+  Chunk388032 = require("./388032.jsx");
 
-function g(n) {
+function R(i) {
   let {
-    guildId: i
-  } = n;
-  return (0, s.jsxs)(r.Z, {
-    children: [(0, s.jsx)(d.Z, {
-      ingress: o.f4.SERVER_PRIVACY_MODAL,
-      guildId: i
-    }), (0, s.jsx)(l.Z, {
-      ingress: o.f4.SERVER_PRIVACY_MODAL,
-      guildId: i
-    }), (0, s.jsx)(c.Z, {
-      ingress: o.f4.SERVER_PRIVACY_MODAL,
-      guildId: i
-    }), (0, s.jsx)(a.Z, {
-      ingress: o.f4.SERVER_PRIVACY_MODAL,
-      guildId: i
-    }), (0, s.jsx)(e.Text, {
+    guildId: s
+  } = i;
+  return (0, n.jsxs)(a.Z, {
+    children: [(0, n.jsx)(o.Z, {
+      ingress: u.f4.SERVER_PRIVACY_MODAL,
+      guildId: s
+    }), (0, n.jsx)(c.Z, {
+      ingress: u.f4.SERVER_PRIVACY_MODAL,
+      guildId: s
+    }), (0, n.jsx)(l.Z, {
+      ingress: u.f4.SERVER_PRIVACY_MODAL,
+      guildId: s
+    }), (0, n.jsx)(d.Z, {
+      ingress: u.f4.SERVER_PRIVACY_MODAL,
+      guildId: s
+    }), (0, n.jsx)(r.Text, {
       color: "header-secondary",
       variant: "text-sm/normal",
-      children: x.intl.format(x.t.LNsV09, {
+      children: g.intl.format(g.t.LNsV09, {
         policyLink: "https://discord.com/safety/360043709612-our-policies"
       })
     })]
   })
 }
 
-function h(n) {
+function p(i) {
   let {
-    guild: i,
+    guild: s,
     transitionState: t,
     onClose: r
-  } = n, a = "".concat(x.intl.string(x.t.BayiAg), "—").concat(null != i ? i.name : "??");
-  return (0, s.jsxs)(e.Y0X, {
+  } = i, a = "".concat(g.intl.string(g.t.BayiAg), "—").concat(null != s ? s.name : "??");
+  return (0, n.jsx)(e.Modal, {
     transitionState: t,
-    size: e.CgR.SMALL,
-    "aria-label": a,
-    parentComponent: "PrivacySettings",
-    children: [(0, s.jsx)(e.xBx, {
-      children: (0, s.jsx)(e.X6q, {
-        variant: "heading-lg/semibold",
-        children: a
-      })
-    }), (0, s.jsx)(e.hzk, {
-      className: u.content,
-      children: (0, s.jsx)(g, {
-        guildId: i.id
-      })
-    }), (0, s.jsx)(e.mzw, {
-      children: (0, s.jsx)(e.zxk, {
-        variant: "primary",
-        text: x.intl.string(x.t.i4jeWV),
-        onClick: () => r()
-      })
-    })]
+    size: "sm",
+    title: a,
+    actions: [{
+      onClick: () => r(),
+      variant: "primary",
+      text: g.intl.string(g.t.i4jeWV)
+    }],
+    onClose: () => Promise.resolve(r()),
+    children: (0, n.jsx)(R, {
+      guildId: s.id
+    })
   })
 }

@@ -10,14 +10,23 @@ let l = (0, Chunk818083.B)({
   id: "2025-08_double_tap_to_react",
   label: "Double Tap To React",
   defaultConfig: {
-    enabled: false
+    enabled: false,
+    showToast: false
   },
   commonTriggerPoint: Chunk987338.$P.CONNECTION_OPEN,
   treatments: [{
     id: 1,
-    label: "Enabled",
+    label: "Enabled - Show Half Sheet Upsell",
     config: {
-      enabled: true
+      enabled: true,
+      showToast: false
+    }
+  }, {
+    id: 2,
+    label: "Enabled - Show Toast Upsell",
+    config: {
+      enabled: true,
+      showToast: true
     }
   }]
 })
