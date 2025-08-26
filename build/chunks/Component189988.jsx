@@ -19,8 +19,8 @@ function c(e) {
     children: (0, n.jsx)(i.Text, {
       variant: "text-xs/normal",
       color: "text-secondary",
-      children: a.intl.format(a.t.W8K2GB, {
-        maxGames: l.k[t]
+      children: l.intl.format(l.t.W8K2GB, {
+        maxGames: a.k[t]
       })
     })
   })

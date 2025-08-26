@@ -1,5 +1,5 @@
 /** Chunk was on 73628 **/
-/** chunk id: 587123, original params: e,t,A (module,exports,require) **/
+/** chunk id: 587123, original params: e,A,t (module,exports,require) **/
 require.d(exports, {
   P: () => o,
   W: () => i
@@ -17,26 +17,26 @@ function o() {
 
 function i(e) {
   var {
-    children: t,
-    guildId: A
-  } = e, r = function(e, t) {
+    children: A,
+    guildId: t
+  } = e, n = function(e, A) {
     if (null == e) return {};
-    var A, n, r = function(e, t) {
+    var t, r, n = function(e, A) {
       if (null == e) return {};
-      var A, n, r = {},
+      var t, r, n = {},
         l = Object.keys(e);
-      for (n = 0; n < l.length; n++) A = l[n], t.indexOf(A) >= 0 || (r[A] = e[A]);
-      return r
-    }(e, t);
+      for (r = 0; r < l.length; r++) t = l[r], A.indexOf(t) >= 0 || (n[t] = e[t]);
+      return n
+    }(e, A);
     if (Object.getOwnPropertySymbols) {
       var l = Object.getOwnPropertySymbols(e);
-      for (n = 0; n < l.length; n++) A = l[n], !(t.indexOf(A) >= 0) && Object.prototype.propertyIsEnumerable.call(e, A) && (r[A] = e[A])
+      for (r = 0; r < l.length; r++) t = l[r], !(A.indexOf(t) >= 0) && Object.prototype.propertyIsEnumerable.call(e, t) && (n[t] = e[t])
     }
-    return r
+    return n
   }(e, ["children", "guildId"]);
-  let o = (0, l.Z)(A, r);
-  return (0, n.jsx)(a.Provider, {
+  let o = (0, l.Z)(t, n);
+  return (0, r.jsx)(a.Provider, {
     value: o,
-    children: t
+    children: A
   })
 }

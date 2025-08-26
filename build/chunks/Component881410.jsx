@@ -36,16 +36,18 @@ function f(e) {
     disabled: t,
     widgetType: r,
     widget: f
-  } = e, [g] = (0, a.ynZ)(), b = l.useRef(null), p = l.useMemo(() => new Set(f.games.map(e => e.applicationId)), [f.games]), m = l.useCallback(e => {
+  } = e, [g] = (0, l.ynZ)(), [b, p] = a.useState(""), m = a.useRef(null), O = a.useMemo(() => new Set(f.games.map(e => e.applicationId)), [f.games]), j = a.useCallback(e => {
     (0, c.ES)(r, {
       applicationId: e
     })
   }, [r]), {
-    options: O,
-    matchSorterOptions: j
-  } = (0, o.h)(), y = l.useCallback(e => {
+    options: y,
+    matchSorterOptions: v
+  } = (0, o.h)(), x = a.useMemo(() => "" !== b.trim() ? s.intl.formatToPlainString(s.t.ZoearK, {
+    searchTerm: b.trim()
+  }) : s.intl.string(s.t.QwSXv7), [b]), h = a.useCallback(e => {
     var t, r;
-    return "" === e.trim() ? O : (0, i.Lu)(O, e, (t = d({}, j), r = r = {
+    return "" === e.trim() ? y : (0, i.Lu)(y, e, (t = d({}, v), r = r = {
       threshold: i.Lu.rankings.CONTAINS
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
       var r = Object.keys(e);
@@ -57,32 +59,35 @@ function f(e) {
     })(Object(r)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
     }), t))
-  }, [O, j]);
-  return (0, n.jsx)(a.yRy, {
-    targetElementRef: b,
+  }, [y, v]);
+  return (0, n.jsx)(l.yRy, {
+    targetElementRef: m,
     position: "bottom",
     align: "center",
     renderPopout: e => {
       let {
         closePopout: t
       } = e;
-      return (0, n.jsx)(a.DBG, {
+      return (0, n.jsx)(l.DBG, {
         className: u.gameSearchCombobox,
         placeholder: s.intl.string(s.t["5h0QOD"]),
         autoFocus: true,
         value: g,
         onChange: e => {
-          m(e), t()
+          j(e), t()
         },
         onClose: t,
         multiSelect: false,
         showScrollbar: true,
         maxVisibleItems: 7,
-        children: e => y(e).map(e => (0, n.jsx)(a.lo1, {
-          disabled: p.has(e.value),
+        emptyStateText: x,
+        emptyStateHeader: "",
+        onQueryChange: p,
+        children: e => h(e).map(e => (0, n.jsx)(l.lo1, {
+          disabled: O.has(e.value),
           value: String(e.value),
-          children: (0, n.jsx)(a.lo1.Label, {
-            children: (0, n.jsx)(a.Text, {
+          children: (0, n.jsx)(l.lo1.Label, {
+            children: (0, n.jsx)(l.Text, {
               variant: "text-md/medium",
               color: "header-secondary",
               children: e.label
@@ -92,11 +97,11 @@ function f(e) {
       })
     },
     children: e => (0, n.jsx)("div", {
-      ref: b,
-      children: (0, n.jsx)(a.zxk, d({
+      ref: m,
+      children: (0, n.jsx)(l.zxk, d({
         variant: "secondary",
         size: "sm",
-        icon: a.qJs,
+        icon: l.qJs,
         text: s.intl.string(s.t.SgTOtb),
         disabled: t
       }, e))

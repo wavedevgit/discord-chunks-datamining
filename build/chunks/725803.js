@@ -1,5 +1,5 @@
 /** Chunk was on 73628 **/
-/** chunk id: 725803, original params: e,t,A (module,exports,require) **/
+/** chunk id: 725803, original params: e,A,t (module,exports,require) **/
 require.d(exports, {
   Z: () => i
 }), require("./388685.js");
@@ -9,17 +9,17 @@ var Chunk647438 = require("./647438.js"),
   Chunk728345 = require("./728345.js"),
   Chunk812206 = require("./812206.js");
 
-function i(e, t) {
-  let A = (0, r.e7)([o.Z], () => o.Z.getGuildApplication(e, t)),
-    [i, s] = n.useState(null == A),
-    [d, c] = n.useState(),
-    [u, f] = n.useState(false),
-    g = n.useCallback(async () => {
-      if (null == A && null != e) {
+function i(e, A) {
+  let t = (0, n.e7)([o.Z], () => o.Z.getGuildApplication(e, A)),
+    [i, s] = r.useState(null == t),
+    [d, c] = r.useState(),
+    [u, f] = r.useState(false),
+    g = r.useCallback(async () => {
+      if (null == t && null != e) {
         f(true), s(true);
         try {
           await a.ZP.getApplicationsForGuild(e, {
-            type: t,
+            type: A,
             includeTeam: true
           })
         } catch (e) {
@@ -28,11 +28,11 @@ function i(e, t) {
           s(false)
         }
       }
-    }, [A, t, e]);
-  return n.useEffect(() => {
+    }, [t, A, e]);
+  return r.useEffect(() => {
     u || g()
   }, [u, g]), {
-    application: A,
+    application: t,
     error: d,
     loading: i
   }

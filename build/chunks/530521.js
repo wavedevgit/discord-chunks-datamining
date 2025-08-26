@@ -1,5 +1,5 @@
 /** Chunk was on 73628 **/
-/** chunk id: 530521, original params: e,t,A (module,exports,require) **/
+/** chunk id: 530521, original params: e,A,t (module,exports,require) **/
 module.exports = {
   container: "container_f8a8fa",
   uploadArea: "uploadArea_f8a8fa",

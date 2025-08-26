@@ -49,18 +49,18 @@ function P(e) {
     widget: t
   } = e, r = function(e, t) {
     if (null == e) return {};
-    var r, n, l = function(e, t) {
+    var r, n, a = function(e, t) {
       if (null == e) return {};
-      var r, n, l = {},
+      var r, n, a = {},
         i = Object.keys(e);
-      for (n = 0; n < i.length; n++) r = i[n], t.indexOf(r) >= 0 || (l[r] = e[r]);
-      return l
+      for (n = 0; n < i.length; n++) r = i[n], t.indexOf(r) >= 0 || (a[r] = e[r]);
+      return a
     }(e, t);
     if (Object.getOwnPropertySymbols) {
       var i = Object.getOwnPropertySymbols(e);
-      for (n = 0; n < i.length; n++) r = i[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r])
+      for (n = 0; n < i.length; n++) r = i[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r])
     }
-    return l
+    return a
   }(e, ["widget"]);
   switch (t.type) {
     case i.l.FAVORITE_GAMES:
@@ -106,9 +106,9 @@ function S(e) {
   } = e, o = (0, b.Z)(t.id), {
     widgets: p,
     isGameFetching: m
-  } = (0, g.Z)(o), O = (0, a.e7)([u.default], () => u.default.getId() === t.id), j = (() => {
-    let [e, t] = (0, a.Wu)([d.Z], () => [d.Z.ipCountryCode, d.Z.ipCountryCodeRequest]), r = (0, s.U)();
-    return l.useEffect(() => {
+  } = (0, g.Z)(o), O = (0, l.e7)([u.default], () => u.default.getId() === t.id), j = (() => {
+    let [e, t] = (0, l.Wu)([d.Z], () => [d.Z.ipCountryCode, d.Z.ipCountryCodeRequest]), r = (0, s.U)();
+    return a.useEffect(() => {
       null == e && null == t && r && (0, c.GE)()
     }, [e, t, r]), "GB" === e && r
   })(), x = 0 === p.length && O;

@@ -15,43 +15,43 @@ let d = Chunk647438.memo(function(e) {
   let {
     currentTags: t,
     onTagSelect: r,
-    onNoneSelect: l,
-    onClose: a
+    onNoneSelect: a,
+    onClose: l
   } = e;
   return (0, n.jsx)(i.v2r, {
     navId: "widget-game-tags",
     "aria-label": s.intl.string(s.t.r6EJOj),
-    onClose: a,
+    onClose: l,
     onSelect: () => {},
     children: Object.entries(c.aE).map(e => {
-      let [a, o] = e, u = ((e, a) => {
+      let [l, o] = e, u = ((e, l) => {
         let o = [];
-        return a.type === c.kd.RADIO && o.push((0, n.jsx)(i.k5B, {
+        return l.type === c.kd.RADIO && o.push((0, n.jsx)(i.k5B, {
           id: "".concat(e, "-none"),
           group: e,
           label: s.intl.string(s.t.PoWNfX),
-          checked: !a.tags.some(e => t.includes(e)),
-          action: () => l(a.tags)
-        }, "none")), a.tags.forEach(l => {
-          let s = c.XV[l];
-          null != s && (a.type === c.kd.RADIO ? o.push((0, n.jsx)(i.k5B, {
-            id: l,
+          checked: !l.tags.some(e => t.includes(e)),
+          action: () => a(l.tags)
+        }, "none")), l.tags.forEach(a => {
+          let s = c.XV[a];
+          null != s && (l.type === c.kd.RADIO ? o.push((0, n.jsx)(i.k5B, {
+            id: a,
             group: e,
             label: s.getText(),
-            checked: t.includes(l),
-            action: () => r(l, true)
-          }, l)) : o.push((0, n.jsx)(i.S89, {
-            id: l,
+            checked: t.includes(a),
+            action: () => r(a, true)
+          }, a)) : o.push((0, n.jsx)(i.S89, {
+            id: a,
             label: s.getText(),
-            checked: t.includes(l),
-            action: () => r(l, false)
-          }, l)))
+            checked: t.includes(a),
+            action: () => r(a, false)
+          }, a)))
         }), o
-      })(a, o);
+      })(l, o);
       return (0, n.jsx)(i.kSQ, {
         label: o.getLabel(),
         children: u
-      }, a)
+      }, l)
     })
   })
 });
@@ -62,9 +62,9 @@ function f(e) {
     widgetType: r,
     applicationId: f,
     ref: g
-  } = e, b = (0, l.useRef)(null), {
+  } = e, b = (0, a.useRef)(null), {
     trackUserProfileAction: p
-  } = (0, a.KZ)(), m = (0, l.useMemo)(() => null != t ? t : [], [t]), O = (0, l.useCallback)(function(e) {
+  } = (0, l.KZ)(), m = (0, a.useMemo)(() => null != t ? t : [], [t]), O = (0, a.useCallback)(function(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
       n = new Set(m);
     if (t) {
@@ -80,7 +80,7 @@ function f(e) {
       action: "ADD_GAME_TAGS"
     }));
     (0, o.n$)(r, f, Array.from(n))
-  }, [m, p, r, f]), j = (0, l.useCallback)(e => {
+  }, [m, p, r, f]), j = (0, a.useCallback)(e => {
     let t = new Set(m);
     e.forEach(e => {
       t.delete(e)

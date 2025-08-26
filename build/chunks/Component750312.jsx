@@ -20,7 +20,7 @@ function b(e) {
   let {
     userId: t,
     widget: r,
-    children: l,
+    children: a,
     disableInteraction: b,
     className: p
   } = e, m = (0, c.Dt)(), O = (0, o.e7)([s.default], () => s.default.getId() === t), {
@@ -35,8 +35,8 @@ function b(e) {
       headingId: m,
       widget: r,
       disableInteraction: b
-    }), (0, n.jsxs)(a.y5, {
-      children: [l, O && !b && j && (0, n.jsx)(f.Z, {
+    }), (0, n.jsxs)(l.y5, {
+      children: [a, O && !b && j && (0, n.jsx)(f.Z, {
         userId: t,
         widgetType: r.type,
         onDismiss: y,

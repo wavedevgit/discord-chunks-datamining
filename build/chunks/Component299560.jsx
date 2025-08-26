@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk296009 = require("./296009.js"),
   Chunk481060 = require("./481060.js"),
   Chunk804919 = require("./804919.js"),
@@ -57,11 +57,11 @@ function j(e) {
   } = e, {
     placeholder: s,
     getAriaLabel: j
-  } = O[t], y = "small" === i, v = l.useCallback(() => {
+  } = O[t], y = "small" === i, v = a.useCallback(() => {
     o || ((0, u.qH)(t), (0, d.L$)(g.qb.WIDGET_ADDED), null == r || r())
   }, [t, r, o]);
   return (0, n.jsxs)(c.P3F, {
-    className: a()(m.addButtonContainer, y && m.sizeSmall, o && m.loading),
+    className: l()(m.addButtonContainer, y && m.sizeSmall, o && m.loading),
     onClick: v,
     "aria-label": j(),
     "aria-busy": o,

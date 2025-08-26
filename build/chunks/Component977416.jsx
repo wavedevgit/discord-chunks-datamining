@@ -51,31 +51,31 @@ function p(e) {
   var {
     gameName: t,
     onClick: r,
-    loading: l = true
+    loading: a = true
   } = e, i = function(e, t) {
     if (null == e) return {};
-    var r, n, l = function(e, t) {
+    var r, n, a = function(e, t) {
       if (null == e) return {};
-      var r, n, l = {},
+      var r, n, a = {},
         i = Object.keys(e);
-      for (n = 0; n < i.length; n++) r = i[n], t.indexOf(r) >= 0 || (l[r] = e[r]);
-      return l
+      for (n = 0; n < i.length; n++) r = i[n], t.indexOf(r) >= 0 || (a[r] = e[r]);
+      return a
     }(e, t);
     if (Object.getOwnPropertySymbols) {
       var i = Object.getOwnPropertySymbols(e);
-      for (n = 0; n < i.length; n++) r = i[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r])
+      for (n = 0; n < i.length; n++) r = i[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r])
     }
-    return l
+    return a
   }(e, ["gameName", "onClick", "loading"]);
   let o = null != t ? t : u.intl.string(u.t.GIWFlJ),
     s = u.intl.formatToPlainString(u.t["3mb1s7"], {
       game: o
     });
-  return l ? (0, n.jsx)("div", {
+  return a ? (0, n.jsx)("div", {
     className: d.loadingCover
-  }) : (0, n.jsx)(a.ua7, {
+  }) : (0, n.jsx)(l.ua7, {
     text: s,
-    children: e => (0, n.jsxs)(a.P3F, b(g({
+    children: e => (0, n.jsxs)(l.P3F, b(g({
       className: f.addButton
     }, e), {
       onClick: r,
@@ -84,10 +84,10 @@ function p(e) {
         gameName: t
       }, i), {
         disableInteraction: true
-      })), (0, n.jsx)(a.svS, {
+      })), (0, n.jsx)(l.svS, {
         size: "md",
         className: f.addIcon,
-        color: a.TVs.colors.WHITE
+        color: l.TVs.colors.WHITE
       })]
     }))
   })
@@ -97,7 +97,7 @@ function m(e) {
   let {
     userId: t,
     games: r,
-    isGameFetching: l,
+    isGameFetching: a,
     isSuggestedGamesLoading: c,
     onDismiss: d,
     onClick: g,
@@ -108,15 +108,15 @@ function m(e) {
     "aria-labelledby": m,
     children: [(0, n.jsxs)("div", {
       className: f.header,
-      children: [(0, n.jsx)(a.P3F, {
+      children: [(0, n.jsx)(l.P3F, {
         className: f.dismissButton,
         "aria-label": u.intl.string(u.t["pUR+3t"]),
         onClick: d,
-        children: (0, n.jsx)(a.Dio, {
+        children: (0, n.jsx)(l.Dio, {
           size: "sm",
           color: "currentColor"
         })
-      }), (0, n.jsx)(a.X6q, {
+      }), (0, n.jsx)(l.X6q, {
         id: m,
         variant: "text-xs/medium",
         color: "text-secondary",
@@ -128,15 +128,15 @@ function m(e) {
         let {
           applicationId: r,
           gameName: i,
-          imageSrc: a
+          imageSrc: l
         } = e;
         return (0, n.jsx)(p, {
-          onClick: () => g(r, i, a),
+          onClick: () => g(r, i, l),
           userId: t,
-          loading: c || l(r),
+          loading: c || a(r),
           applicationId: r,
           gameName: i,
-          imageSrc: a
+          imageSrc: l
         })
       }
     })]

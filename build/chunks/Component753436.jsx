@@ -20,12 +20,12 @@ function b(e) {
   let {
     game: t,
     userId: r,
-    widgetType: l,
+    widgetType: a,
     guildId: b,
     channelId: p,
     loading: m = false,
     disableInteraction: O = false
-  } = e, j = (0, u.Z)(t.applicationId), y = j.length > 0, v = a.default.getCurrentUser(), x = (null == v ? true : v.id) === r;
+  } = e, j = (0, u.Z)(t.applicationId), y = j.length > 0, v = l.default.getCurrentUser(), x = (null == v ? true : v.id) === r;
   return m ? (0, n.jsx)("div", {
     className: f.loadingCover
   }) : (0, n.jsxs)("div", {
@@ -39,7 +39,7 @@ function b(e) {
       className: i()(y ? g.socialProofBackdrop : true, (null == t ? true : t.imageSrc) == null || O ? true : f.hoverActiveEffect)
     }), !O && x && (0, n.jsx)(s.Z, {
       game: t,
-      widgetType: l,
+      widgetType: a,
       className: g.removeGameButton,
       iconSize: "xs"
     }), !O && y && (0, n.jsx)(o.Z, {
