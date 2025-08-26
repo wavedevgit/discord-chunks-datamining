@@ -1400,8 +1400,8 @@ function eK(e) {
   }
 }
 
-function ez(e) {
-  if (null != e && null != e.subscription_trial) {
+function ez(e, t) {
+  if (null != e && null != e.subscription_trial && e.subscription_trial.sku_id === t) {
     let t = e.subscription_trial;
     return eK({
       intervalType: t.interval,

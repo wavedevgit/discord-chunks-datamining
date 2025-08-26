@@ -57,7 +57,7 @@ function w(e) {
   } = e;
   S = true === c.Z.getCurrentConfig({
     location: "handleReferralsRemainingFetchSuccess"
-  }).enabled ? null == r : null == r && o, A = o, m = false, _ = t, p = new Set(n), C = r, h = i
+  }).enabled || null == r && o, A = o, m = false, _ = t, p = new Set(n), C = r, h = i
 }
 
 function D(e) {

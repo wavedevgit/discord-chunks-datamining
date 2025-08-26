@@ -337,7 +337,7 @@ let W = 0,
     function ev() {
       var e;
       let t = (0, A.J0)();
-      return null != (e = (0, x.fr)(t)) ? e : H.intl.string(H.t.BmJkbW)
+      return null != (e = (0, x.fr)(t, V.Si.TIER_2)) ? e : H.intl.string(H.t.BmJkbW)
     }
     return i.useEffect(() => {
       et && w.default.track(Z.rMx.PREMIUM_UPSELL_VIEWED, {
