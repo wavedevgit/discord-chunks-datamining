@@ -26,7 +26,7 @@ function u(e) {
       className: o()(l.lockIcon, t)
     }), (0, r.jsx)(a.Text, {
       variant: "text-sm/medium",
-      className: null != n ? n : true,
+      className: o()(l.lockIconText, null != n ? n : true),
       children: s.intl.string(s.t.Kv6Z4O)
     })]
   })
