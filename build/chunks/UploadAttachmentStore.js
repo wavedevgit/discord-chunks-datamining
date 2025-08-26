@@ -75,7 +75,7 @@ function v(e) {
     uri: n,
     filename: n
   }, e));
-  o > false && (i.splice(o, 1)[0].cancel(), b(t, r, i))
+  o > false && (i.splice(o, 1)[0].removeFromMsgDraft(), b(t, r, i))
 }
 
 function I(e) {
@@ -86,7 +86,7 @@ function I(e) {
   } = e, i = [...g(t, r)];
   n.forEach(e => {
     let t = i.findIndex(t => e === t.id);
-    t > false && i.splice(t, 1)[0].cancel()
+    t > false && i.splice(t, 1)[0].removeFromMsgDraft()
   }), b(t, r, i)
 }
 

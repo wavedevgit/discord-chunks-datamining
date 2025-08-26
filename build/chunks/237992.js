@@ -21,7 +21,10 @@ async function o(e) {
           t && e.error !== i.evJ.ENTITY_TOO_LARGE ? e.upload() : a(Error("File failed to upload"));
           break;
         case r.mw.CANCELED:
-          a(Error("Upload is canceled"))
+          a(Error("Upload is canceled"));
+          break;
+        case r.mw.REMOVED_FROM_MSG_DRAFT:
+          a(Error("Upload is removed from draft"))
       }
       e.on("complete", () => {
         o("complete")

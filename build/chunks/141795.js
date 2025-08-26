@@ -107,7 +107,7 @@ class x extends Error {
 }
 let L = "Content-MD5";
 var j = function(e) {
-  return e.NOT_STARTED = "NOT_STARTED", e.STARTED = "STARTED", e.UPLOADING = "UPLOADING", e.ERROR = "ERROR", e.COMPLETED = "COMPLETED", e.CANCELED = "CANCELED", e
+  return e.NOT_STARTED = "NOT_STARTED", e.STARTED = "STARTED", e.UPLOADING = "UPLOADING", e.ERROR = "ERROR", e.COMPLETED = "COMPLETED", e.CANCELED = "CANCELED", e.REMOVED_FROM_MSG_DRAFT = "REMOVED_FROM_MSG_DRAFT", e
 }({});
 class M {
   constructor() {
@@ -280,7 +280,7 @@ class k extends Chunk476326.ZP {
   async upload() {
     var e, t, n, r, i;
     if ("COMPLETED" === this.status) return;
-    if (this.setStatus("STARTED"), this.startTime = performance.now(), this.trackUploadStart(), "CANCELED" === this.status) return void this.handleComplete(this.id);
+    if (this.setStatus("STARTED"), this.startTime = performance.now(), this.trackUploadStart(), this.isCancelled()) return void this.handleComplete(this.id);
     this.item.platform !== Chunk476326.ow.WEB || (null == (e = this.item.compressionMetadata) ? true : module.earlyClipboardCompressionAttempted) || await this.maybeConvertToWebP();
     let o = await D.getUploadPayload(this),
       s = (0, Chunk983544.F)(this.item.target),
@@ -345,7 +345,7 @@ class k extends Chunk476326.ZP {
       }
       this.trackUploadFinished("COMPLETED"), this.handleComplete(module)
     } catch (e) {
-      "CANCELED" === this.status ? this.handleComplete(module) : (w.info("Error: status ".concat(module.status, " for ").concat(this.id)), this.handleError(module))
+      this.isCancelled() ? this.handleComplete(module) : (w.info("Error: status ".concat(module.status, " for ").concat(this.id)), this.handleError(module))
     }
   }
   async reactNativeCompressAndExtractData() {
@@ -413,8 +413,17 @@ class k extends Chunk476326.ZP {
   handleComplete(e) {
     this.setStatus("COMPLETED"), w.log("Upload complete for ".concat(this.id)), this.emit("complete", e), this.removeAllListeners()
   }
+  _cancel(e, t) {
+    w.log(t), this._aborted = true, this._abortController.abort(), this.trackUploadFinished(e), "COMPLETED" === this.status && this.delete(), this.setStatus(e), this.emit("complete"), this.removeAllListeners()
+  }
   cancel() {
-    w.log("Cancelled called for ".concat(this.id)), this._aborted = true, this._abortController.abort(), this.trackUploadFinished("CANCELED"), "COMPLETED" === this.status && this.delete(), this.setStatus("CANCELED"), this.emit("complete"), this.removeAllListeners()
+    this._cancel("CANCELED", "Cancelled called for ".concat(this.id))
+  }
+  removeFromMsgDraft() {
+    this._cancel("REMOVED_FROM_MSG_DRAFT", "Removed from draft for ".concat(this.id))
+  }
+  isCancelled() {
+    return "CANCELED" === this.status || "REMOVED_FROM_MSG_DRAFT" === this.status
   }
   resetState() {
     return this.status = "NOT_STARTED", this.uploadedFilename = true, this.responseUrl = true, this.error = true, this.startTime = true, this.uploadAnalytics = new M, this.uploadAttempts = 0, this._aborted = false, this._abortController = new AbortController, super.resetState()
