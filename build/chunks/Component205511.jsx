@@ -130,16 +130,16 @@ function R(e) {
       }),
       i = t.config.messages.gameTitle;
     return {
-      header: e ? O.intl.formatToPlainString(O.t["28Ql29"], {
+      header: e ? (0, h.Pb)(t) ? O.intl.string(O.t.N33EuL) : O.intl.formatToPlainString(O.t["28Ql29"], {
         gameTitle: i
-      }) : O.intl.formatToPlainString(O.t.gX0Qc3, {
+      }) : (0, h.Pb)(t) ? O.intl.string(O.t["6HNovr"]) : O.intl.formatToPlainString(O.t.gX0Qc3, {
         gameTitle: i
       }),
       renderBody: e ? n : () => (0, r.jsx)(c.Text, {
         className: v.microphoneUnitBodyText,
         color: "text-muted",
         variant: "text-xxs/normal",
-        children: O.intl.format(O.t.GXqvCw, {
+        children: (0, h.Pb)(t) ? O.intl.string(O.t.bUyEZW) : O.intl.format(O.t.GXqvCw, {
           gameTitle: i
         })
       })
@@ -203,7 +203,7 @@ let P = function(e) {
         isComplete: i || o || c
       }, {
         renderContent: () => (0, r.jsx)(y.y3, {
-          children: O.intl.formatToPlainString(O.t["+8JB6e"], {
+          children: (0, h.Pb)(t) ? O.intl.string(O.t["5tXqFR"]) : O.intl.formatToPlainString(O.t["+8JB6e"], {
             gameTitle: l
           })
         }),

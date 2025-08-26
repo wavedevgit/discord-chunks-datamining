@@ -547,7 +547,7 @@ function eD(e) {
 }
 
 function ex(e) {
-  if (null == e) returnfalse;
+  if (!(0, N.CD)("QuestUtils") || null == e) returnfalse;
   let t = R.r.build(e.config).applications;
   return null != t && t.length > 1
 }
