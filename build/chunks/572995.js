@@ -103,7 +103,7 @@ let es = (e, t) => ei({
     },
     customThemes: {
       thumbnail: U.Z,
-      assetUrl: e ? M.Z : G.Z
+      assetUrl: e ? k.Z : G.Z
     }
   }, t ? {
     referralProgram: {
@@ -116,7 +116,7 @@ let es = (e, t) => ei({
     },
     yourSpace: {
       thumbnail: j.Z,
-      assetUrl: e ? L.Z : k.Z
+      assetUrl: e ? L.Z : M.Z
     },
     emojis: {
       thumbnail: I.Z,

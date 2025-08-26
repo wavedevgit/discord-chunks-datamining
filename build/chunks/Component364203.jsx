@@ -96,7 +96,7 @@ function K(e) {
     children: [(0, r.jsxs)("div", {
       className: U.badgeAndCloseRow,
       children: [(0, r.jsx)(_.lBU, {
-        text: M.intl.string(M.t.oW0eUV)
+        text: k.intl.string(k.t.oW0eUV)
       }), (0, r.jsx)("div", {
         className: U.coachmarkCloseIcon,
         children: (0, r.jsx)(d.P, {
@@ -112,12 +112,12 @@ function K(e) {
       className: U.coachmarkHeaderTextContainer,
       children: [(0, r.jsx)(_.X6q, {
         variant: "heading-lg/extrabold",
-        children: M.intl.string(M.t.dFhhcX)
+        children: k.intl.string(k.t.dFhhcX)
       }), (0, r.jsx)(_.Text, {
         className: U.subtitle,
         variant: "text-xs/medium",
         color: "text-muted",
-        children: M.intl.string(M.t.u7Hzjo)
+        children: k.intl.string(k.t.u7Hzjo)
       })]
     })]
   })
@@ -133,11 +133,11 @@ function z(e) {
     children: [(0, r.jsxs)("div", {
       children: [(0, r.jsx)(_.X6q, {
         variant: "heading-md/semibold",
-        children: M.intl.string(M.t.EJ4k19)
+        children: k.intl.string(k.t.EJ4k19)
       }), (0, r.jsx)(_.Text, {
         className: U.subtitle,
         variant: "text-sm/medium",
-        children: t ? M.intl.string(M.t.MnUZLS) : M.intl.string(M.t.frNDKS)
+        children: t ? k.intl.string(k.t.MnUZLS) : k.intl.string(k.t.frNDKS)
       })]
     }), (0, r.jsx)("div", {
       className: U.closeContainer,
@@ -270,8 +270,8 @@ function Q(e) {
     isSelected: t,
     onSelect: n,
     selectionId: H,
-    tooltipText: M.intl.string(M.t["C/MRFx"]),
-    label: M.intl.string(M.t["C/MRFx"]),
+    tooltipText: k.intl.string(k.t["C/MRFx"]),
+    label: k.intl.string(k.t["C/MRFx"]),
     className: U.wallpaperRemoveSelection,
     children: (0, r.jsx)(_.t6m, {
       size: "lg",
@@ -303,7 +303,7 @@ function J(e) {
           selected: t
         }), o(t)
       },
-      children: M.intl.string(M.t["3nPvdH"])
+      children: k.intl.string(k.t["3nPvdH"])
     }), (0, r.jsx)(_.Kqy, {
       direction: "horizontal",
       justify: "end",
@@ -311,7 +311,7 @@ function J(e) {
       children: (0, r.jsxs)(_.hE2, {
         children: [(0, r.jsx)(_.zxk, {
           variant: "secondary",
-          text: M.intl.string(M.t["ETE/oK"]),
+          text: k.intl.string(k.t["ETE/oK"]),
           onClick: () => {
             S.default.track(L.rMx.CHAT_WALLPAPER_PICKER_CANCEL_CLICKED, {
               cta_location: "footer"
@@ -320,7 +320,7 @@ function J(e) {
           disabled: n
         }), (0, r.jsx)(_.zxk, {
           variant: "primary",
-          text: M.intl.string(M.t["1Qm829"]),
+          text: k.intl.string(k.t["1Qm829"]),
           onClick: s,
           disabled: !t,
           loading: n
@@ -369,7 +369,7 @@ let ee = function(e) {
     activePickerChannelId: c,
     closePicker: d,
     setPreviewWallpaperId: f
-  } = (0, A.B)(), g = (0, x.Z)(c), E = (0, O.m)(k.p9.TIER_2), [b, y] = i.useState(false), v = (0, N.e)(b), D = (0, w.u)();
+  } = (0, A.B)(), g = (0, x.Z)(c), E = (0, O.m)(M.p9.TIER_2), [b, y] = i.useState(false), v = (0, N.e)(b), D = (0, w.u)();
   (0, R.W)();
   let G = (0, u.e7)([C.Z], () => C.Z.isFetchingWallpapers),
     B = (0, u.e7)([C.Z], () => C.Z.failedToFetchWallpapers),
@@ -407,7 +407,7 @@ let ee = function(e) {
         channel_id: c,
         channel_type: null == e ? true : e.type
       }), W(c, g.wallpaperId, () => {
-        (0, _.showToast)((0, _.createToast)(M.intl.string(M.t.F8FvU1), _.ToastType.FAILURE))
+        (0, _.showToast)((0, _.createToast)(k.intl.string(k.t.F8FvU1), _.ToastType.FAILURE))
       })
     }, [c, g, W, b]),
     et = i.useCallback(e => {
@@ -451,7 +451,7 @@ let ee = function(e) {
       variant: "text-sm/medium",
       color: "text-muted",
       className: U.errorText,
-      children: M.intl.string(M.t.F8FvU1)
+      children: k.intl.string(k.t.F8FvU1)
     })]
   }) : G ? (0, r.jsx)("div", {
     className: U.loadingContainer,

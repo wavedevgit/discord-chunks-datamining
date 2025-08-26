@@ -73,10 +73,10 @@ function j(e, t) {
   }), e
 }
 new Chunk710845.Z("ChannelEditor.tsx");
-let k = function() {
+let M = function() {
     for (var e = arguments.length, t = Array(module), n = 0; require < module; require++) exports[require] = arguments[require]
   },
-  M = 1e3;
+  k = 1e3;
 class U extends Chunk647438.Component {
   _getEditorWindow() {
     var e, t, n, r, i;
@@ -88,7 +88,7 @@ class U extends Chunk647438.Component {
     return this._cachedEditorWindow
   }
   componentDidMount() {
-    this.props.focused && requestAnimationFrame(() => this.focus()), document.addEventListener("selectionchange", this.handleSelectionChange), window.addEventListener("beforeunload", this.handleBeforeUnload), this._initTimeoutId = setTimeout(() => void this._getEditorWindow(), M)
+    this.props.focused && requestAnimationFrame(() => this.focus()), document.addEventListener("selectionchange", this.handleSelectionChange), window.addEventListener("beforeunload", this.handleBeforeUnload), this._initTimeoutId = setTimeout(() => void this._getEditorWindow(), k)
   }
   componentDidUpdate(e) {
     if (this.fixFocus(e), this.props.useSlate !== e.useSlate) {
@@ -228,8 +228,8 @@ class U extends Chunk647438.Component {
       required: P,
       maxCharacterCount: D,
       allowNewLines: L,
-      "aria-describedby": k,
-      "aria-labelledby": M,
+      "aria-describedby": M,
+      "aria-labelledby": k,
       accessibilityLabel: U
     } = this.props, {
       submitting: G,
@@ -275,8 +275,8 @@ class U extends Chunk647438.Component {
       "aria-expanded": null !== B.id || true,
       "aria-activedescendant": null != (s = B.activeDescendant) ? Chunk392711 : true,
       "aria-invalid": l.length > D,
-      "aria-describedby": k,
-      "aria-labelledby": M,
+      "aria-describedby": M,
+      "aria-labelledby": k,
       "aria-autocomplete": "list"
     }, F = Chunk710845 ? (0, Chunk951288.jsx)(Chunk4484.Z, j(x({
       ref: this.ref
@@ -411,7 +411,7 @@ class U extends Chunk647438.Component {
       }, O = null != s ? s : c, {
         files: v
       } = G(e.clipboardData, u.uploadLongMessages ? O : null);
-      return k("onPaste", [...e.clipboardData.items].map(e => {
+      return M("onPaste", [...e.clipboardData.items].map(e => {
         if ("file" !== e.kind) return {
           kind: e.kind,
           type: e.type

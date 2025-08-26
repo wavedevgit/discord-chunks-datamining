@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => l
-}), require("./539854.js");
+});
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
@@ -16,12 +16,6 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 class s extends(r = Chunk442837.ZP.Store) {
-  get earnedOrbsCoachmark() {
-    return {
-      shouldOpen: this._earnedOrbsCoachmarkOpen,
-      earnedOrbsQuantity: this._earnedOrbsCoachmarkQuantity
-    }
-  }
   get redeemError() {
     return this._redeemVirtualCurrencyError
   }
@@ -104,18 +98,7 @@ class s extends(r = Chunk442837.ZP.Store) {
   }
   handleOnboardingModalReset(e) {
     let {} = e;
-    this._onboardingModalOpenedPrior = false, this._earnedOrbsCoachmarkOpen = false, this._earnedOrbsCoachmarkDedupeKeys = [], this._earnedOrbsCoachmarkQuantity = 0
-  }
-  handleEarnedOrbsCoachmarkOpen(e) {
-    let {
-      earnedOrbsQuantity: t,
-      dedupeKey: n
-    } = e;
-    true !== n && this._earnedOrbsCoachmarkDedupeKeys.includes(n) || (this._earnedOrbsCoachmarkOpen = true, this._earnedOrbsCoachmarkQuantity = t, true !== n && this._earnedOrbsCoachmarkDedupeKeys.push(n))
-  }
-  handleEarnedOrbsCoachmarkClose(e) {
-    let {} = e;
-    this._earnedOrbsCoachmarkOpen = false, this._earnedOrbsCoachmarkQuantity = 0
+    this._onboardingModalOpenedPrior = false
   }
   constructor() {
     super(Chunk570140.Z, {
@@ -128,13 +111,11 @@ class s extends(r = Chunk442837.ZP.Store) {
       VIRTUAL_CURRENCY_BALANCE_UPDATE: e => this.handleBalanceUpdate(e),
       VIRTUAL_CURRENCY_ONBOARDING_MODAL_OPEN: e => this.handleOnboardingModalOpen(e),
       VIRTUAL_CURRENCY_ONBOARDING_MODAL_RESET: e => this.handleOnboardingModalReset(e),
-      VIRTUAL_CURRENCY_EARNED_ORBS_COACHMARK_OPEN: e => this.handleEarnedOrbsCoachmarkOpen(e),
-      VIRTUAL_CURRENCY_EARNED_ORBS_COACHMARK_CLOSE: e => this.handleEarnedOrbsCoachmarkClose(e),
       LOGIN_SUCCESS: () => this.handleBalanceStateReset(),
       VIRTUAL_CURRENCY_SET_BALANCE_PILL_OVERLAY: e => {
         this.setBalancePillOverlay(e.balancePillOverlay)
       }
-    }), a(this, "_entitlements", null), a(this, "_redeemingSkuId", null), a(this, "_isRedeemingVirtualCurrency", false), a(this, "_redeemVirtualCurrencyError", null), a(this, "_balance", null), a(this, "_fetchBalanceError", null), a(this, "_isFetchingBalance", false), a(this, "_onboardingModalOpenedPrior", false), a(this, "_earnedOrbsCoachmarkOpen", false), a(this, "_earnedOrbsCoachmarkDedupeKeys", []), a(this, "_earnedOrbsCoachmarkQuantity", 0), a(this, "_balancePillOverlay", false)
+    }), a(this, "_entitlements", null), a(this, "_redeemingSkuId", null), a(this, "_isRedeemingVirtualCurrency", false), a(this, "_redeemVirtualCurrencyError", null), a(this, "_balance", null), a(this, "_fetchBalanceError", null), a(this, "_isFetchingBalance", false), a(this, "_onboardingModalOpenedPrior", false), a(this, "_balancePillOverlay", false)
   }
 }
 a(s, "displayName", "VirtualCurrencyStore");

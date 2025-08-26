@@ -90,8 +90,8 @@ function L(e, t) {
   return i
 }
 let j = 43,
-  k = 25,
-  M = 40,
+  M = 25,
+  k = 40,
   U = 250;
 
 function G(e) {
@@ -288,9 +288,9 @@ function H(e) {
       })
     }) : null,
     z = {
-      maxHeight: Z.height - j - k - 48
+      maxHeight: Z.height - j - M - 48
     };
-  B && (z.maxHeight -= M);
+  B && (z.maxHeight -= k);
   let q = null != _ && o;
   return (0, r.jsx)("div", {
     className: a()(O, N.messagesPopoutWrap),

@@ -85,7 +85,7 @@ function A(e) {
     sourceQuestContent: x
   } = e, L = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), j = (0, b.g2)({
     useReducedMotion: L
-  }), k = (0, f.O5)(), M = (0, p._s)({
+  }), M = (0, f.O5)(), k = (0, p._s)({
     quest: N
   }), U = (0, p.z)(N), G = (0, p.B6)(N.config.expiresAt, {
     month: "numeric",
@@ -120,7 +120,7 @@ function A(e) {
   } = (0, p.GI)({
     questId: N.id,
     beforeRequest: () => {
-      j.startAnimation(), k({
+      j.startAnimation(), M({
         questId: N.id,
         questContent: R,
         questContentCTA: f.jZ.DEFIBRILLATOR,
@@ -218,7 +218,7 @@ function A(e) {
           return (0, d.vE)(e)
       }
     }
-  }) : (0, _.$J)(N) && !U && ee !== m.LI.DESKTOP ? M ? (0, r.jsx)("div", {
+  }) : (0, _.$J)(N) && !U && ee !== m.LI.DESKTOP ? k ? (0, r.jsx)("div", {
     className: v.button,
     children: (0, r.jsx)(a.z, {
       variant: "secondary",

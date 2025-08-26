@@ -73,7 +73,7 @@ function eu(e) {
     isDiscountApplied: n,
     activeDiscountInfo: i,
     theme: o
-  } = e, a = t.hasActiveTrial, s = t.planIdFromItems === J.Xh.PREMIUM_YEAR_TIER_2, c = n || a, u = null != t.trialEndsAt ? l()(t.trialEndsAt).diff(l()(), "d") : 0, f = J.GP[t.planIdFromItems], p = k.ZP.formatPriceString(k.ZP.getDefaultPrice(f.id), f.interval), {
+  } = e, a = t.hasActiveTrial, s = t.planIdFromItems === J.Xh.PREMIUM_YEAR_TIER_2, c = n || a, u = null != t.trialEndsAt ? l()(t.trialEndsAt).diff(l()(), "d") : 0, f = J.GP[t.planIdFromItems], p = M.ZP.formatPriceString(M.ZP.getDefaultPrice(f.id), f.interval), {
     enabled: h
   } = G.T.getCurrentConfig({
     location: "SubscriptionUserHeroSubheader"

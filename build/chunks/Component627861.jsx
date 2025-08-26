@@ -290,12 +290,12 @@ function eh(e) {
     presenceActivity: w
   } = e, x = (0, y.A)(I), L = (0, f.ye)(I), {
     bot: j
-  } = I, k = B.ZP.getApplicationIconURL({
+  } = I, M = B.ZP.getApplicationIconURL({
     id: I.id,
     icon: I.icon,
     bot: j
   }), {
-    staticBannerSrc: M,
+    staticBannerSrc: k,
     videoBannerSrc: G,
     bannerAspectRatio: Z
   } = (0, m.E)(I), F = !(0, J.Z)(w, N, I.id), V = (0, z.H)(N), K = (0, s.e7)([D.Z], () => D.Z.getGameByName(I.name), [I.name]), {
@@ -417,11 +417,11 @@ function eh(e) {
     return (0, r.jsx)(_.W, {
       header: eI,
       title: I.name,
-      staticBannerSrc: M,
+      staticBannerSrc: k,
       videoBannerSrc: G,
       onClickBanner: eO,
       bannerAspectRatio: Z,
-      iconSrc: null != k ? k : true,
+      iconSrc: null != M ? M : true,
       info: e,
       actions: ev,
       onClickContent: eO,
@@ -463,11 +463,11 @@ function eh(e) {
   return (0, r.jsx)(_.W, {
     header: eI,
     title: I.name,
-    staticBannerSrc: M,
+    staticBannerSrc: k,
     videoBannerSrc: G,
     onClickBanner: eO,
     bannerAspectRatio: Z,
-    iconSrc: null != k ? k : true,
+    iconSrc: null != M ? M : true,
     info: eR,
     actions: ev,
     onClickContent: eO,
@@ -496,9 +496,9 @@ function em(e) {
       let e = c.author.id;
       return (0, z.H)(c) && (e = e === _ && l.isPrivate() ? l.getRecipientId() : _), j.Z.getApplicationActivity(e, c.application.id)
     }
-  }, [c, l, _]), m = (0, s.e7)([L.Z, k.Z], () => {
+  }, [c, l, _]), m = (0, s.e7)([L.Z, M.Z], () => {
     var e;
-    return null != (e = L.Z.getApplicationActivity(f.id)) ? e : k.Z.getApplicationActivity(f.id, true)
+    return null != (e = L.Z.getApplicationActivity(f.id)) ? e : M.Z.getApplicationActivity(f.id, true)
   }, [f.id]), g = (0, s.Wu)([w.Z], () => {
     var e;
     return null == p || null == p.party ? [] : Array.from(null != (e = w.Z.getParty(p.party.id)) ? e : [])
@@ -506,7 +506,7 @@ function em(e) {
     partySize: E,
     maxPartySize: b
   } = (0, X._)(p), y = i.useMemo(() => g.map(e => {
-    let t = M.default.getUser(e);
+    let t = k.default.getUser(e);
     return null != t ? t : en.ag
   }), [g]), O = (0, eo.Ps)(null == p || null == (t = p.party) ? true : t.id) || f.id === N.r9.id, v = (0, r.jsx)(ec, {
     partyMembers: y,

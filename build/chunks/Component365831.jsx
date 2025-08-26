@@ -117,7 +117,7 @@ function N(e) {
       } : T,
       delay: 100 * !!x
     }, "respect-motion-settings"),
-    k = (0, c.Yzy)(null == l ? true : l.id, {
+    M = (0, c.Yzy)(null == l ? true : l.id, {
       key: P,
       from: {
         opacity: 0,
@@ -136,7 +136,7 @@ function N(e) {
         duration: x ? 250 : 200
       }
     }, "respect-motion-settings"),
-    [M] = (0, c.bYB)(2, e => ({
+    [k] = (0, c.bYB)(2, e => ({
       from: x ? {
         translateY: 0,
         opacity: 1
@@ -217,7 +217,7 @@ function N(e) {
     style: j,
     children: [(0, r.jsx)("div", {
       className: a()([E.bgGradient, E.bgGradientHighlight])
-    }), k(e => (0, r.jsx)(s.animated.div, {
+    }), M(e => (0, r.jsx)(s.animated.div, {
       className: E.bgGradient,
       style: e
     })), (0, r.jsx)("div", {
@@ -265,7 +265,7 @@ function N(e) {
         }),
         children: e => (0, r.jsx)(s.animated.div, {
           className: E.buttonWrapper,
-          style: M[0],
+          style: k[0],
           children: (0, r.jsx)(c.P3F, v(y({
             className: a()(E.button, {
               [E.loopbackEnabled]: f
@@ -290,7 +290,7 @@ function N(e) {
         text: g.intl.string(g.t.UvMx7O),
         children: e => (0, r.jsx)(s.animated.div, {
           className: E.buttonWrapper,
-          style: M[1],
+          style: k[1],
           children: (0, r.jsx)(c.P3F, v(y({
             className: E.button,
             "aria-hidden": D,

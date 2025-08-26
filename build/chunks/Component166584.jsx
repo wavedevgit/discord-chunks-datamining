@@ -106,11 +106,11 @@ function L(e) {
     onRemoveRole: E
   } = e, T = i.useRef({}), A = (e, t) => {
     null != t ? T.current[e] = t : delete T.current[e]
-  }, [R, L] = i.useState(d), [j, k] = i.useState(w), [M, U] = i.useState(false), G = i.useRef(null), B = i.useRef(null), Z = i.useRef(0);
+  }, [R, L] = i.useState(d), [j, M] = i.useState(w), [k, U] = i.useState(false), G = i.useRef(null), B = i.useRef(null), Z = i.useRef(0);
   i.useLayoutEffect(() => {
     Z.current = 0
   }, [d]), i.useLayoutEffect(() => {
-    if (M) return;
+    if (k) return;
     let e = x(G.current),
       t = x(B.current),
       n = [],
@@ -129,8 +129,8 @@ function L(e) {
         e += a + P, n.push(i)
       }
     }
-    L(n.length === R.length ? R : n), k(r), Z.current++
-  }, [d, R, M]);
+    L(n.length === R.length ? R : n), M(r), Z.current++
+  }, [d, R, k]);
   let F = i.useMemo(() => "roles-".concat((0, o.Z)()), []),
     V = (0, a.ZP)({
       id: F,
@@ -143,13 +143,13 @@ function L(e) {
     Y = 0 === H ? v.intl.string(v.t["vR7M+/"]) : v.intl.formatToPlainString(v.t.PCs0oq, {
       numRoles: H
     }),
-    W = (M ? d : R).map((e, i) => {
+    W = (k ? d : R).map((e, i) => {
       var o;
       return (0, r.jsx)(b.Z, {
         role: e,
         guildId: l.id,
         style: {
-          maxWidth: M || i !== R.length - 1 ? w : j
+          maxWidth: k || i !== R.length - 1 ? w : j
         },
         disableBorderColor: true,
         ref: t => A(e.id, t),
@@ -182,7 +182,7 @@ function L(e) {
           "aria-label": Y,
           ref: t
         }, n), {
-          children: [W, R.length < d.length ? M ? (0, r.jsx)(c.DY3, {
+          children: [W, R.length < d.length ? k ? (0, r.jsx)(c.DY3, {
             text: v.intl.string(v.t.XnXtCg),
             children: (0, r.jsx)(c.P3F, {
               onClick: q,

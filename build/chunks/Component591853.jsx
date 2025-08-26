@@ -189,10 +189,10 @@ function eO(e) {
     onVoiceChannelPreview: h
   }), {
     embeddedActivity: R
-  } = (0, ee.Z)(a), P = eC(R), w = null != N && 0 === s.length ? [N] : s, D = w.length > 0, x = w.length >= 2, [L, j] = i.useState(!D), k = z.ZP.getName(null == t ? true : t.guild_id, null == t ? true : t.id, n), M = null != t && m ? eu.intl.formatToPlainString(eu.t["8lzR/f"], {
+  } = (0, ee.Z)(a), P = eC(R), w = null != N && 0 === s.length ? [N] : s, D = w.length > 0, x = w.length >= 2, [L, j] = i.useState(!D), M = z.ZP.getName(null == t ? true : t.guild_id, null == t ? true : t.id, n), k = null != t && m ? eu.intl.formatToPlainString(eu.t["8lzR/f"], {
     channel: "#".concat(t.name)
   }) : eu.intl.formatToPlainString(eu.t["4c+CAw"], {
-    channel: "@".concat(k)
+    channel: "@".concat(M)
   }), G = m ? eu.intl.string(eu.t.Z2CUgo) : eu.intl.string(eu.t.XLGiTE), Z = async e => {
     let r, {
       emoji: i
@@ -280,7 +280,7 @@ function eO(e) {
     }), (0, r.jsxs)("div", {
       className: L ? ed.inputContainerShareToChannel : ed.hiddenButRenderedInputField,
       children: [(0, r.jsx)(y.A7, {
-        placeholder: M,
+        placeholder: k,
         onEnter: F,
         setEditorRef: e => b(e),
         channel: m ? t : true,
@@ -583,8 +583,8 @@ function eA(e) {
       fallbackApplication: j
     } = (0, ee.Z)(O),
     {
-      largeImage: k,
-      smallImage: M
+      largeImage: M,
+      smallImage: k
     } = (0, q.YC)(x, null != L ? L : j),
     {
       largeImage: Z
@@ -618,11 +618,11 @@ function eA(e) {
         })
       }), (0, r.jsxs)("div", {
         className: ed.streamingPopoutHeader,
-        children: [null != k && (0, r.jsx)("div", {
+        children: [null != M && (0, r.jsx)("div", {
           className: ed.popoutThumbnailContainer,
           children: (0, r.jsx)(J.E, {
-            image: k,
-            smallImage: M,
+            image: M,
+            smallImage: k,
             onClick: null != l ? l : D,
             size: J.J.SIZE_72
           })
@@ -665,7 +665,7 @@ function eC(e) {
       var t, n;
       return null != (n = null == e || null == (t = e.participants) ? true : t.map(e => V.default.getUser(e.userId))) ? n : []
     });
-  return null != e && null != t && null != n && M.sR.has(n.type) ? (0, r.jsxs)(r.Fragment, {
+  return null != e && null != t && null != n && k.sR.has(n.type) ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: ed.voiceChannelPopoutReactorHeader,
       children: [(0, r.jsxs)(f.P3F, {
@@ -689,7 +689,7 @@ function eC(e) {
           className: ed.voiceChannelName,
           children: null == n ? true : n.name
         })]
-      }), (0, r.jsx)(k.Z, {
+      }), (0, r.jsx)(M.Z, {
         guildId: t.id,
         users: i,
         max: 3,
@@ -798,7 +798,7 @@ function eN(e) {
               children: s.name
             })]
           }))
-        }), (0, r.jsx)(k.Z, {
+        }), (0, r.jsx)(M.Z, {
           guildId: u.id,
           users: _,
           max: 3,

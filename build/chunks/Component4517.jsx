@@ -74,7 +74,7 @@ function L(e, t) {
 
 function j(e, t) {
   if (null == e) return {};
-  var n, r, i = k(e, t);
+  var n, r, i = M(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -82,7 +82,7 @@ function j(e, t) {
   return i
 }
 
-function k(e, t) {
+function M(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -90,7 +90,7 @@ function k(e, t) {
   return i
 }
 
-function M(e) {
+function k(e) {
   let {
     children: t,
     className: n
@@ -140,7 +140,7 @@ let U = Chunk647438.forwardRef(function(e, t) {
       })]
     });
     return (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(M, {
+      children: [(0, r.jsx)(k, {
         children: f
       }), (0, r.jsx)(u.tEY, {
         ringClassName: P.ring,
@@ -191,10 +191,10 @@ let U = Chunk647438.forwardRef(function(e, t) {
     i.useEffect(() => {
       null != W.current ? j(W.current.getBoundingClientRect().height > N.Ow + N.P) : j(false)
     }, [S, L]);
-    let k = null != _ ? N.Hp : 0,
+    let M = null != _ ? N.Hp : 0,
       U = null != S ? N.du : 0,
-      G = (L && (null == _ || null != p) ? N._v : N.hT) + k + U,
-      B = N.YF + k + U,
+      G = (L && (null == _ || null != p) ? N._v : N.hT) + M + U,
+      B = N.YF + M + U,
       Z = i.useRef(null),
       F = i.useRef(null),
       V = i.useRef(null),
@@ -291,7 +291,7 @@ let U = Chunk647438.forwardRef(function(e, t) {
           })
         })
       }),
-      ep = (0, r.jsxs)(M, {
+      ep = (0, r.jsxs)(k, {
         className: null != ea ? P.withLabel : true,
         children: [ea, ed, ef]
       });
@@ -399,9 +399,9 @@ function Z(e) {
   }, [_, p, t, n]);
   let [N, R] = i.useState(false), w = i.useCallback(e => {
     (e || !E) && R(e)
-  }, [E]), x = e => null == e ? null : null != e.id ? "`" + ":".concat(e.name, ":") + "`" : y.ZP.translateSurrogatesToInlineEmoji(e.name), k = (e, t) => null == e ? t : "".concat(e, " ").concat(t), M = () => {
+  }, [E]), x = e => null == e ? null : null != e.id ? "`" + ":".concat(e.name, ":") + "`" : y.ZP.translateSurrogatesToInlineEmoji(e.name), M = (e, t) => null == e ? t : "".concat(e, " ").concat(t), k = () => {
     let e = x(t),
-      r = null == n ? e : k(e, n);
+      r = null == n ? e : M(e, n);
     return null != o ? "".concat((0, g.Z)(o), ":\n> ").concat(r) : r
   };
   return (0, r.jsx)(T.Z, {
@@ -409,7 +409,7 @@ function Z(e) {
     guildId: s,
     channelId: l,
     themeType: c,
-    sourceDetails: M(),
+    sourceDetails: k(),
     sourceType: C.n_.STATUS,
     onAction: d,
     onClose: () => R(false),

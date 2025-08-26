@@ -111,8 +111,8 @@ async function v(e) {
   let L = [];
   u.Z.isLoadedForPremiumSKUs() || L.push((0, s.Y2)()), c.Z.hasFetched || (L.push(o.jg()), L.push((0, a.X8)())), L.length > 0 && await Promise.allSettled(L);
   let j = (0, f.vx)(c.Z.boostSlots),
-    k = j.length,
-    M = e => {
+    M = j.length,
+    k = e => {
       null == v || v(), null == C || C(e)
     },
     U = () => {
@@ -121,9 +121,9 @@ async function v(e) {
         location_section: h.section
       })
     };
-  if (k > 0 && (null == y || k >= y)) {
+  if (M > 0 && (null == y || M >= y)) {
     let e;
-    1 === k ? e = j.slice(0, 1) : null != y && (e = j.slice(0, y)), await (0, i.ZDy)(async () => {
+    1 === M ? e = j.slice(0, 1) : null != y && (e = j.slice(0, y)), await (0, i.ZDy)(async () => {
       let {
         default: t
       } = await Promise.resolve().then(n.bind(n, 760558));
@@ -133,7 +133,7 @@ async function v(e) {
         } = n, o = b(n, ["onClose"]);
         return (0, r.jsx)(t, E(m({}, o), {
           onClose: e => {
-            i(), M(e)
+            i(), k(e)
           },
           selectedGuild: A,
           locationSection: p.ZY5.PREMIUM_GUILD_USER_MODAL,
@@ -143,7 +143,7 @@ async function v(e) {
     }, {
       modalKey: O,
       onCloseRequest: () => {
-        (0, i.Mr3)(O), M(false)
+        (0, i.Mr3)(O), k(false)
       },
       contextKey: D
     })
@@ -154,7 +154,7 @@ async function v(e) {
     guildId: A.id,
     closeLayer: U,
     totalNumberOfSlotsToAssign: null != y ? y : 1,
-    onCloseModal: M,
+    onCloseModal: k,
     disablePremiumUpsell: N,
     onSubscriptionConfirmation: T,
     onSubscribeComplete: S,

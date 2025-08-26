@@ -305,8 +305,8 @@ let R = {
     maxAge: +Chunk70956.Z.Millis.MINUTE,
     updateAgeOnGet: true
   },
-  k = new(a())(j),
-  M = new(a())(j);
+  M = new(a())(j),
+  k = new(a())(j);
 
 function U(e, t, n) {
   let r = [],
@@ -318,7 +318,7 @@ function U(e, t, n) {
       allowGameMentions: true
     },
     o = n ? L : x,
-    a = n ? M : k,
+    a = n ? k : M,
     s = a.get(e);
   if (null != s) return s;
   let l = e.replace(/\r\n/g, " \n").replace(/[\r\f]/g, " ").replace(/\t/g, " ") + "\n\n",

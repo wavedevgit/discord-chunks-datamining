@@ -88,11 +88,11 @@ function j() {
   P += 1
 }
 
-function k() {
+function M() {
   j()
 }
 
-function M() {
+function k() {
   $()
 }
 
@@ -329,12 +329,12 @@ function $() {
 }
 A(J, "displayName", "PermissionStore");
 let ee = new J(Chunk570140.Z, {
-  BACKGROUND_SYNC: k,
-  CONNECTION_OPEN: k,
-  OVERLAY_INITIALIZE: k,
-  CACHE_LOADED: k,
-  CACHE_LOADED_LAZY: k,
-  CONNECTION_CLOSED: M,
+  BACKGROUND_SYNC: M,
+  CONNECTION_OPEN: M,
+  OVERLAY_INITIALIZE: M,
+  CACHE_LOADED: M,
+  CACHE_LOADED_LAZY: M,
+  CONNECTION_CLOSED: k,
   GUILD_CREATE: U,
   GUILD_UPDATE: U,
   GUILD_DELETE: U,

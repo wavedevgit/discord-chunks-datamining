@@ -96,14 +96,14 @@ function S(e) {
       guild: N,
       size: s.Z.Sizes.MINI
     }),
-    k = (0, m.OY)(P, N.name);
+    M = (0, m.OY)(P, N.name);
   if (null != (null != (O = P.dmsDisabledUntil) ? O : P.invitesDisabledUntil) && w) return (0, r.jsxs)(a.qXd, {
     className: y.notice,
     color: a.DM8.NEUTRAL,
     children: [(0, r.jsx)(a.RyX, {
       onClick: I,
       noticeType: g.kVF.GUILD_RAID_NOTIFICATION
-    }), j, k, (0, r.jsx)(a.EyT, {
+    }), j, M, (0, r.jsx)(a.EyT, {
       className: y.actionButton,
       onClick: () => L(false),
       children: (0, r.jsxs)("div", {
@@ -117,7 +117,7 @@ function S(e) {
       })
     })]
   });
-  let M = (0, m.CG)(P) ? b.intl.formatToPlainString(b.t.tZTx2N, {
+  let k = (0, m.CG)(P) ? b.intl.formatToPlainString(b.t.tZTx2N, {
       guildName: N.name
     }) : (0, m.kk)(P) ? b.intl.formatToPlainString(b.t["1bSmxs"], {
       guildName: N.name
@@ -131,7 +131,7 @@ function S(e) {
     children: [(0, r.jsx)(a.RyX, {
       onClick: I,
       noticeType: g.kVF.GUILD_RAID_NOTIFICATION
-    }), j, M, !U && (0, r.jsx)(a.EyT, {
+    }), j, k, !U && (0, r.jsx)(a.EyT, {
       className: y.actionButton,
       onClick: () => L(true),
       children: (0, r.jsx)("div", {

@@ -269,10 +269,10 @@ function eg(e) {
   } = (0, p.cj)([z.Z], () => ({
     ignored: z.Z.isIgnored(t.getRecipientId()),
     blocked: z.Z.isBlocked(t.getRecipientId())
-  })), eD = eC && eP, ex = eC && ew, eL = (eR || eD || ex) && !(s || $), ej = (0, p.e7)([K.ZP], () => K.ZP.getMentionCount(t.id) > 0), ek = (0, N.ZP)(t), eM = (0, p.e7)([L.Z], () => L.Z.isFavorite(t.id)), {
+  })), eD = eC && eP, ex = eC && ew, eL = (eR || eD || ex) && !(s || $), ej = (0, p.e7)([K.ZP], () => K.ZP.getMentionCount(t.id) > 0), eM = (0, N.ZP)(t), ek = (0, p.e7)([L.Z], () => L.Z.isFavorite(t.id)), {
     dotsInsteadOfCloseButton: eU,
     rearrangeContextMenu: eG
-  } = k.Z.useExperiment({
+  } = M.Z.useExperiment({
     location: "private_channel"
   }, {
     autoTrackExposure: true
@@ -328,15 +328,15 @@ function eg(e) {
   }, eQ = e => {
     e.preventDefault(), e.stopPropagation();
     let i = et.intl.formatToPlainString(et.t.hJ5Ap6, {
-        name: ek
+        name: eM
       }),
       o = et.intl.format(et.t.SSIVOj, {
-        name: ek
+        name: eM
       });
     t.isManaged() && (i = et.intl.formatToPlainString(et.t.hVGjER, {
-      name: ek
+      name: eM
     }), o = et.intl.format(et.t.IK1Qvr, {
-      name: ek
+      name: eM
     })), (0, h.ZDy)(async () => {
       let {
         default: e
@@ -372,7 +372,7 @@ function eg(e) {
   }) : null, e$ = () => {
     let e = h.EFr.SIZE_32;
     if (t.isMultiUserDM())
-      if (t.recipients.length >= 2 && o && null == t.icon) return (0, r.jsx)(M.Z, {
+      if (t.recipients.length >= 2 && o && null == t.icon) return (0, r.jsx)(k.Z, {
         "aria-hidden": true,
         recipients: t.recipients,
         size: e,
@@ -399,7 +399,7 @@ function eg(e) {
       statusTooltip: true
     }))
   }, e0 = (0, r.jsx)(x.Z, {
-    userName: ek,
+    userName: eM,
     displayNameStyles: null == f ? true : f.displayNameStyles,
     effectDisplayType: $ || s || em ? D.F.ANIMATED : D.F.PLAIN,
     loop: $,
@@ -490,7 +490,7 @@ function eg(e) {
             className: a()(en.iconsContainer, {
               [en.nameplated]: eZ
             }),
-            children: [eM && !em ? (0, r.jsx)(e_, {}) : null, eD ? (0, r.jsx)(ep, {}) : null, ex ? (0, r.jsx)(eh, {}) : null, eU && !e4 ? (0, r.jsx)(h.ua7, {
+            children: [ek && !em ? (0, r.jsx)(e_, {}) : null, eD ? (0, r.jsx)(ep, {}) : null, ex ? (0, r.jsx)(eh, {}) : null, eU && !e4 ? (0, r.jsx)(h.ua7, {
               text: et.intl.string(eT ? et.t.Et8qws : et.t["d+e27u"]),
               delay: ed,
               targetElementRef: eB,

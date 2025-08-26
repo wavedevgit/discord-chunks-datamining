@@ -255,8 +255,8 @@ let I = /\b\B/,
       begin: m(/[ ]+/, "(", o, /[.]?[:]?([.][ ]|[ ])/, "){3}")
     }), r
   },
-  k = j("//", "$"),
-  M = j("/\\*", "\\*/"),
+  M = j("//", "$"),
+  k = j("/\\*", "\\*/"),
   U = j("#", "$"),
   G = {
     scope: "regexp",
@@ -290,8 +290,8 @@ var F = Object.freeze({
   },
   BINARY_NUMBER_RE: N,
   COMMENT: j,
-  C_BLOCK_COMMENT_MODE: M,
-  C_LINE_COMMENT_MODE: k,
+  C_BLOCK_COMMENT_MODE: k,
+  C_LINE_COMMENT_MODE: M,
   C_NUMBER_MODE: {
     scope: "number",
     begin: C,
@@ -748,7 +748,7 @@ let em = r,
           throw e.mode = w, e
         }
         if ("illegal" === r.type && "" === o) return L += "\n", 1;
-        if (M > 1e5 && M > 3 * r.index) throw Error("potential infinite loop, way more iterations than matches");
+        if (k > 1e5 && k > 3 * r.index) throw Error("potential infinite loop, way more iterations than matches");
         return L += o, o.length
       }
       let C = P(e);
@@ -761,21 +761,21 @@ let em = r,
       T();
       let L = "",
         j = 0,
-        k = 0,
         M = 0,
+        k = 0,
         U = false;
       try {
         if (C.__emitTokens) C.__emitTokens(t, x);
         else {
           for (w.matcher.considerAll();;) {
-            M++, U ? U = false : w.matcher.considerAll(), w.matcher.lastIndex = k;
+            k++, U ? U = false : w.matcher.considerAll(), w.matcher.lastIndex = M;
             let e = w.matcher.exec(t);
             if (!e) break;
-            let n = t.substring(k, e.index),
+            let n = t.substring(M, e.index),
               r = A(n, e);
-            k = e.index + r
+            M = e.index + r
           }
-          A(t.substring(k))
+          A(t.substring(M))
         }
         return x.finalize(), R = x.toHTML(), {
           language: e,
@@ -793,8 +793,8 @@ let em = r,
           relevance: 0,
           _illegalBy: {
             message: n.message,
-            index: k,
-            context: t.slice(k - 100, k + 100),
+            index: M,
+            context: t.slice(M - 100, M + 100),
             mode: n.mode,
             resultSoFar: R
           },

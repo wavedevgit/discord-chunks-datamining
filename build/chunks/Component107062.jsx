@@ -71,9 +71,9 @@ let C = (e, t) => A.intl.formatToPlainString(A.t.tAwI1t, {
       user: x,
       details: L,
       activity: j,
-      embeddedActivity: k
+      embeddedActivity: M
     } = (0, T.n)(n), {
-      primaryColor: M,
+      primaryColor: k,
       secondaryColor: U
     } = (0, O.Z)(null == D ? true : D.src), G = (0, o.e7)([p.default], () => p.default.locale), {
       displayParticipants: B,
@@ -98,10 +98,10 @@ let C = (e, t) => A.intl.formatToPlainString(A.t.tAwI1t, {
         avatarSrcs: B.map(e => e.getAvatarURL(t.guild_id, 128)),
         description: r,
         timestamp: (0, b.yh)(n, G),
-        colors: [M, U],
+        colors: [k, U],
         channelId: e
       })
-    }, [null == D ? true : D.src, t, B, n, G, V, Z, F, M, U, x]), {
+    }, [null == D ? true : D.src, t, B, n, G, V, Z, F, k, U, x]), {
       enabled: W
     } = s.c.useExperiment({
       location: "MemberListAcitivtyContentPopout"
@@ -127,7 +127,7 @@ let C = (e, t) => A.intl.formatToPlainString(A.t.tAwI1t, {
       }),
       q = (0, l.Z)(j, S.xjy.JOIN) || (0, c.Z)(j),
       X = q ? (0, r.jsx)(u.Z, {
-        embeddedActivity: k,
+        embeddedActivity: M,
         activity: j,
         user: x,
         variant: "primary",

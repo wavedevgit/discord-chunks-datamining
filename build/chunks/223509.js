@@ -32,8 +32,8 @@ var r, i, Chunk754793 = require("./754793.js"),
   x = 10,
   L = 11,
   j = 12,
-  k = 13,
-  M = 14,
+  M = 13,
+  k = 14,
   U = 15,
   G = 16,
   B = 17,
@@ -115,11 +115,11 @@ function ep(e, t) {
     eA = new o.Buf8(4),
     eC = [16, 17, 18, 0, 8, 7, 9, 6, 10, 5, 11, 4, 12, 3, 13, 2, 14, 1, 15];
   if (!e || !e.state || !e.output || !e.input && 0 !== e.avail_in) return b;
-  (n = e.state).mode === j && (n.mode = k), en = e.next_out, i = e.output, eo = e.avail_out, et = e.next_in, r = e.input, er = e.avail_in, ea = n.hold, es = n.bits, el = er, ec = eo, ev = m;
+  (n = e.state).mode === j && (n.mode = M), en = e.next_out, i = e.output, eo = e.avail_out, et = e.next_in, r = e.input, er = e.avail_in, ea = n.hold, es = n.bits, el = er, ec = eo, ev = m;
   i: for (;;) switch (n.mode) {
     case T:
       if (0 === n.wrap) {
-        n.mode = k;
+        n.mode = M;
         break
       }
       for (; es < 16;) {
@@ -224,7 +224,7 @@ function ep(e, t) {
       e.adler = n.check = 1, n.mode = j;
     case j:
       if (t === p || t === h) break i;
-    case k:
+    case M:
       if (n.last) {
         ea >>>= 7 & es, es -= 7 & es, n.mode = X;
         break
@@ -235,7 +235,7 @@ function ep(e, t) {
       }
       switch (n.last = 1 & ea, es -= 1, 3 & (ea >>>= 1)) {
         case 0:
-          n.mode = M;
+          n.mode = k;
           break;
         case 1:
           if (ef(n), n.mode = V, t === h) {
@@ -251,7 +251,7 @@ function ep(e, t) {
       }
       ea >>>= 2, es -= 2;
       break;
-    case M:
+    case k:
       for (ea >>>= 7 & es, es -= 7 & es; es < 32;) {
         if (0 === er) break i;
         er--, ea += r[et++] << es, es += 8

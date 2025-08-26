@@ -201,12 +201,12 @@ function j(e) {
   return !("incomplete" in e)
 }
 
-function k(e) {
+function M(e) {
   if (null != e.users)
     for (let t of e.users) t.id in y && j(t) || (y[t.id] = new f.Z(t))
 }
 
-function M(e) {
+function k(e) {
   let {
     user: t
   } = e;
@@ -718,9 +718,9 @@ class eL extends Chunk750041.Z {
       CONNECTION_OPEN: x,
       CONNECTION_OPEN_SUPPLEMENTAL: L,
       UPDATE_CLIENT_PREMIUM_TYPE: B,
-      OVERLAY_INITIALIZE: k,
+      OVERLAY_INITIALIZE: M,
       CACHE_LOADED: e => this.handleLoadCache(e),
-      USER_UPDATE: M,
+      USER_UPDATE: k,
       USER_PROFILE_FETCH_SUCCESS: U,
       CURRENT_USER_UPDATE: G,
       PRESENCE_UPDATES: et,

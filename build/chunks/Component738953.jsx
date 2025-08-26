@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk526031 = require("./526031.jsx"),
   Chunk243778 = require("./243778.jsx"),
   Chunk680295 = require("./680295.jsx"),
-  Chunk622562 = require("./622562.jsx"),
+  Chunk622562 = require("./622562.js"),
   Chunk430824 = require("./430824.js"),
   Chunk5192 = require("./5192.js"),
   Chunk785717 = require("./785717.jsx"),
@@ -212,7 +212,7 @@ function z(e) {
                 shouldShowTooltip: null === ed.interactionType,
                 themeType: B.l.POPOUT,
                 user: n
-              }), !eb && (0, r.jsx)(k.Z, {
+              }), !eb && (0, r.jsx)(M.Z, {
                 type: "banner",
                 user: n,
                 guildId: Y,
@@ -242,7 +242,7 @@ function z(e) {
                 markAsDismissed: eO,
                 targetElementRef: e_,
                 onTryFeature: J,
-                children: () => (0, r.jsx)(M.Z, {
+                children: () => (0, r.jsx)(k.Z, {
                   ref: e_,
                   user: n,
                   guildId: Y,
@@ -251,7 +251,7 @@ function z(e) {
                   onCloseProfile: J,
                   prompt: eT
                 })
-              }) : (0, r.jsx)(M.Z, {
+              }) : (0, r.jsx)(k.Z, {
                 ref: ev ? e_ : true,
                 user: n,
                 guildId: Y,

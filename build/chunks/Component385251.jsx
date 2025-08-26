@@ -206,8 +206,8 @@ let w = function(e) {
         onClick: x
       })]
     })
-  }, k = f.ZP.getPlanIdFromInvoice(t, u), M = (0, m.eQ)(null == A ? true : A.expires_at);
-  return (0, c.Q0)(k) ? null : (0, r.jsx)("div", {
+  }, M = f.ZP.getPlanIdFromInvoice(t, u), k = (0, m.eQ)(null == A ? true : A.expires_at);
+  return (0, c.Q0)(M) ? null : (0, r.jsx)("div", {
     className: v.churnDiscountBannerBackground,
     children: (0, r.jsx)(i.$, {
       color: "nitro-pink",
@@ -230,7 +230,7 @@ let w = function(e) {
             className: v.churnDiscountBannerExpiryDate,
             variant: "text-sm/medium",
             color: "text-primary",
-            children: null != A && M
+            children: null != A && k
           })]
         }), (0, r.jsx)("div", {
           className: v.selectPlanDivider

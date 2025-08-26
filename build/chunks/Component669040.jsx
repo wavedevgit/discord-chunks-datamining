@@ -160,11 +160,11 @@ let W = 0,
           sectionId: l
         } = n;
         if (s === B.En.SEARCH_RESULTS) return;
-        let c = s === B.En.GUILD ? null != i ? (0, r.jsx)(M.Z, {
+        let c = s === B.En.GUILD ? null != i ? (0, r.jsx)(k.Z, {
             guild: i,
             height: ee,
             width: ee
-          }) : null : null != o ? (0, r.jsx)(k.Z, {
+          }) : null : null != o ? (0, r.jsx)(M.Z, {
             categoryId: o,
             height: ee,
             width: ee,
@@ -250,8 +250,8 @@ let W = 0,
       isUsingKeyboardNavigation: N,
       channelGuildId: L,
       channelId: j,
-      messageId: k,
-      isBurstReaction: M,
+      messageId: M,
+      isBurstReaction: k,
       listHeaderClassName: G
     } = e, B = i.useRef(false), F = E.kJ.useStore(e => e.activeCategoryIndex), K = (0, b.Iu)(e => e.searchQuery), z = R.Yk.useSetting(), q = (0, u.e7)([P.default], () => P.default.getCurrentUser()), X = (0, D.I5)(q), {
       location: Q
@@ -283,8 +283,8 @@ let W = 0,
       allowAnimatedEmoji: z,
       channelGuildId: L,
       channelId: j,
-      messageId: k,
-      isBurstReaction: M,
+      messageId: M,
+      isBurstReaction: k,
       listHeaderClassName: G,
       activeSectionIndex: $,
       upsellGlowOpacity: er,

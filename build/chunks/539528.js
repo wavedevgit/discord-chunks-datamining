@@ -191,12 +191,12 @@ function A(e) {
         n ? w({
           action: t,
           location: e
-        }) : k(e)
+        }) : M(e)
       })
     }
   }
 
-  function k(e) {
+  function M(e) {
     var t = X.location,
       n = U.indexOf(t.key);
     false === n && (n = 0);
@@ -205,8 +205,8 @@ function A(e) {
     var i = n - r;
     i && (L = true, F(i))
   }
-  var M = N(S()),
-    U = [M.key];
+  var k = N(S()),
+    U = [k.key];
 
   function G(e) {
     return C + _(e)
@@ -300,7 +300,7 @@ function A(e) {
   var X = {
     length: t.length,
     action: "POP",
-    location: M,
+    location: k,
     createHref: G,
     push: B,
     replace: Z,
@@ -401,12 +401,12 @@ function x(e) {
         n ? T({
           action: t,
           location: e
-        }) : k(e)
+        }) : M(e)
       })
     }
   }
 
-  function k(e) {
+  function M(e) {
     var t = J.location,
       n = B.lastIndexOf(_(t));
     false === n && (n = 0);
@@ -415,9 +415,9 @@ function x(e) {
     var i = n - r;
     i && (S = true, H(i))
   }
-  var M = P(),
-    U = b(M);
-  M !== U && D(U);
+  var k = P(),
+    U = b(k);
+  k !== U && D(U);
   var G = v(),
     B = [_(G)];
 

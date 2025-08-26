@@ -229,15 +229,15 @@ let j = (e, t) => {
     let n = Array.isArray(e) ? e.sort().map(e => e.id).join("_") : e.id;
     return "".concat(n, "_").concat(t)
   },
-  k = e => {
+  M = e => {
     let t = Array.isArray(e) ? null : (0, b.uk)(e),
       n = (0, c.Z)(t);
     return t !== n
   },
-  M = Chunk647438.createContext(true);
+  k = Chunk647438.createContext(true);
 
 function U() {
-  let e = Chunk647438.useContext(M);
+  let e = Chunk647438.useContext(k);
   return null == module ? true : module.current
 }
 
@@ -254,7 +254,7 @@ function B(e) {
     reference: a,
     focusedChanged: c,
     sourceQuestContent: u
-  } = e, d = k(e.questOrQuests), f = i.useRef(null), _ = (0, s.e7)([O.Z], () => null != O.Z.questEnrollmentBlockedUntil, []);
+  } = e, d = M(e.questOrQuests), f = i.useRef(null), _ = (0, s.e7)([O.Z], () => null != O.Z.questEnrollmentBlockedUntil, []);
   return (0, l.ZP)(() => () => {
     null != f.current && f.current.stop()
   }), i.useEffect(() => {
@@ -272,7 +272,7 @@ function B(e) {
       isQuestEnrollmentBlocked: _,
       sourceQuestContent: u
     }), f.current.start())
-  }, [o, t, c, n, e.questOrQuests, e.questContent, e.questContentPosition, e.questContentRowIndex, e.trackGuildAndChannelMetadata, d, e.minViewTimeSeconds, _, u]), (0, r.jsx)(M.Provider, {
+  }, [o, t, c, n, e.questOrQuests, e.questContent, e.questContentPosition, e.questContentRowIndex, e.trackGuildAndChannelMetadata, d, e.minViewTimeSeconds, _, u]), (0, r.jsx)(k.Provider, {
     value: f,
     children: e.children(a, f)
   })

@@ -34,8 +34,8 @@ var r, Chunk98405 = require("./98405.js"),
   x = Chunk46015("".charAt),
   L = Chunk46015(/./.exec),
   j = Chunk46015([].join),
-  k = Chunk46015(1..toString),
-  M = Chunk46015([].pop),
+  M = Chunk46015(1..toString),
+  k = Chunk46015([].pop),
   U = Chunk46015([].push),
   G = Chunk46015("".replace),
   B = Chunk46015([].shift),
@@ -75,7 +75,7 @@ var r, Chunk98405 = require("./98405.js"),
       if (a = n[r], r === t - 1) {
         if (a >= D(256, 5 - t)) return null
       } else if (a > 255) return null;
-    for (r = 0, s = M(n); r < n.length; r++) s += n[r] * D(256, 3 - r);
+    for (r = 0, s = k(n); r < n.length; r++) s += n[r] * D(256, 3 - r);
     return s
   },
   el = function(e) {
@@ -140,7 +140,7 @@ var r, Chunk98405 = require("./98405.js"),
       return j(t, ".")
     }
     if ("object" == typeof e) {
-      for (n = 0, t = "", r = ec(e); n < 8; n++)(!i || 0 !== e[n]) && (i && (i = false), r === n ? (t += n ? ":" : "::", i = true) : (t += k(e[n], 16), n < 7 && (t += ":")));
+      for (n = 0, t = "", r = ec(e); n < 8; n++)(!i || 0 !== e[n]) && (i && (i = false), r === n ? (t += n ? ":" : "::", i = true) : (t += M(e[n], 16), n < 7 && (t += ":")));
       return "[" + t + "]"
     }
     return e
@@ -212,8 +212,8 @@ var r, Chunk98405 = require("./98405.js"),
   ex = {},
   eL = {},
   ej = {},
-  ek = {},
   eM = {},
+  ek = {},
   eU = {},
   eG = {},
   eB = {},
@@ -334,7 +334,7 @@ eF.prototype = {
         case ew:
         case eD:
           if (t && "file" === l.scheme) {
-            c = ek;
+            c = eM;
             continue
           }
           if (":" !== o || p)
@@ -342,7 +342,7 @@ eF.prototype = {
               if (l.isSpecial() && "" === d) return K;
               if (t && "" === d && (l.includesCredentials() || null !== l.port)) return;
               if (s = l.parseHost(d)) return s;
-              if (d = "", c = eM, t) return;
+              if (d = "", c = ek, t) return;
               continue
             } else "[" === o ? p = true : "]" === o && (p = false), d += o;
           else {
@@ -361,7 +361,7 @@ eF.prototype = {
               l.port = l.isSpecial() && v === em[l.scheme] ? null : v, d = ""
             }
             if (t) return;
-            c = eM;
+            c = ek;
             continue
           }
           break;
@@ -387,27 +387,27 @@ eF.prototype = {
           break;
         case ej:
           if ("/" === o || "\\" === o) {
-            c = ek;
+            c = eM;
             break
           }
           n && "file" === n.scheme && !eE(j(m(i, u), "")) && (eg(n.path[0], true) ? U(l.path, n.path[0]) : l.host = n.host), c = eU;
           continue;
-        case ek:
+        case eM:
           if (o === r || "/" === o || "\\" === o || "?" === o || "#" === o) {
             if (!t && eg(d)) c = eU;
             else if ("" === d) {
               if (l.host = "", t) return;
-              c = eM
+              c = ek
             } else {
               if (s = l.parseHost(d)) return s;
               if ("localhost" === l.host && (l.host = ""), t) return;
-              d = "", c = eM
+              d = "", c = ek
             }
             continue
           }
           d += o;
           break;
-        case eM:
+        case ek:
           if (l.isSpecial()) {
             if (c = eU, "/" !== o && "\\" !== o) continue
           } else if (t || "?" !== o)
@@ -544,7 +544,7 @@ eF.prototype = {
     return this.cannotBeABaseURL ? module[0] : module.length ? "/" + j(module, "/") : ""
   },
   setPathname: function(e) {
-    this.cannotBeABaseURL || (this.path = [], this.parse(e, eM))
+    this.cannotBeABaseURL || (this.path = [], this.parse(e, ek))
   },
   getSearch: function() {
     var e = this.query;

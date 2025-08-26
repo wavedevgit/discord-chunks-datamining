@@ -9,7 +9,7 @@ require.d(exports, {
   H4: () => R,
   J0: () => N,
   JO: () => B,
-  ME: () => M,
+  ME: () => k,
   OA: () => x,
   Ow: () => Z,
   UJ: () => w,
@@ -20,7 +20,7 @@ require.d(exports, {
   kk: () => j,
   oK: () => L,
   po: () => T,
-  u9: () => k,
+  u9: () => M,
   wH: () => G,
   wx: () => y,
   z2: () => I
@@ -208,12 +208,12 @@ function j(e, t, n) {
   })))
 }
 
-function k(e) {
+function M(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
   ((0, p.cI)(e) || t.forceTrack) && F(e, t), (0, f.Vr)(e)
 }
 
-function M(e) {
+function k(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
     n = !_.Z.hasUserHitDCCap();
   (0, p.gE)({
@@ -228,14 +228,14 @@ async function U(e) {
 }
 async function G(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {};
-  k(e, n), await v(e, t), M(e, n)
+  M(e, n), await v(e, t), k(e, n)
 }
 async function B(e, t, n) {
-  k(e, n), await T(e, t), M(e, n)
+  M(e, n), await T(e, t), k(e, n)
 }
 async function Z(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
-  k(e, t), await I(e), M(e, t)
+  M(e, t), await I(e), k(e, t)
 }
 
 function F(e, t) {

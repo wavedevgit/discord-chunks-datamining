@@ -4,9 +4,7 @@
 require.d(exports, {
   ZO: () => u,
   df: () => d,
-  hF: () => f,
-  j2: () => _,
-  qD: () => p
+  qD: () => f
 }), require("./415506.js");
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
@@ -88,24 +86,6 @@ async function d(e) {
 }
 
 function f(e) {
-  let {
-    earnedOrbsQuantity: t,
-    dedupeKey: n
-  } = e;
-  return i.Z.dispatch({
-    type: "VIRTUAL_CURRENCY_EARNED_ORBS_COACHMARK_OPEN",
-    earnedOrbsQuantity: t,
-    dedupeKey: n
-  })
-}
-
-function _() {
-  return Chunk570140.Z.dispatch({
-    type: "VIRTUAL_CURRENCY_EARNED_ORBS_COACHMARK_CLOSE"
-  })
-}
-
-function p(e) {
   return i.Z.dispatch({
     type: "VIRTUAL_CURRENCY_SET_BALANCE_PILL_OVERLAY",
     balancePillOverlay: e

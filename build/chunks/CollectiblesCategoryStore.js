@@ -53,14 +53,14 @@ let m = new Map,
     } = e;
     (R = new Set(R)).delete(t), (P = new Map(P)).set(t, n), (w = new Map(w)).set(t, Date.now())
   },
-  k = e => {
+  M = e => {
     let {
       skuId: t,
       product: n
     } = e;
     v.set(t, n), (R = new Set(R)).delete(t), (P = new Map(P)).delete(t), (w = new Map(w)).delete(t)
   },
-  M = e => {
+  k = e => {
     N = true, r = true, o = true, D = e.options
   },
   U = e => {
@@ -190,12 +190,12 @@ class K extends(a = Chunk442837.ZP.Store) {
 }
 h(K, "displayName", "CollectiblesCategoryStore");
 let z = new K(Chunk570140.Z, {
-  COLLECTIBLES_CATEGORIES_FETCH: M,
+  COLLECTIBLES_CATEGORIES_FETCH: k,
   COLLECTIBLES_CATEGORIES_FETCH_SUCCESS: G,
   COLLECTIBLES_CATEGORIES_V2_FETCH_SUCCESS: B,
   COLLECTIBLES_CATEGORIES_FETCH_FAILURE: U,
   COLLECTIBLES_PRODUCT_FETCH: L,
-  COLLECTIBLES_PRODUCT_FETCH_SUCCESS: k,
+  COLLECTIBLES_PRODUCT_FETCH_SUCCESS: M,
   COLLECTIBLES_PRODUCT_FETCH_FAILURE: j,
   COLLECTIBLES_SHOP_HOME_FETCH_SUCCESS: F,
   COLLECTIBLES_SKIP_NUM_CATEGORIES: W,

@@ -5,8 +5,8 @@ require.d(exports, {
   DH: () => Z,
   Ks: () => B,
   Ws: () => V,
-  g2: () => M,
-  hf: () => k,
+  g2: () => k,
+  hf: () => M,
   k3: () => U,
   qN: () => F
 }), require("./388685.js");
@@ -80,7 +80,7 @@ function j(e, t) {
   }), e
 }
 
-function k(e) {
+function M(e) {
   let {
     quest: t,
     questContent: n,
@@ -104,7 +104,7 @@ function k(e) {
     }) : (0, C.B)())
   }, [t, d, n, r, o, c, u, s])
 }
-let M = e => {
+let k = e => {
     let {
       useReducedMotion: t,
       className: n
@@ -181,7 +181,7 @@ function B(e) {
     isVideoQuest: b,
     inGameQuest: y,
     sourceQuestContent: v
-  } = e, I = k({
+  } = e, I = M({
     quest: n,
     questContent: a,
     questContentPosition: s,
@@ -202,7 +202,7 @@ function B(e) {
       analyticsLocations: [],
       analyticsSource: l.Z.QUEST_HOME_PAGE
     })
-  }, []), M = null == (t = (0, h.WD)()) ? true : t.getId(), {
+  }, []), k = null == (t = (0, h.WD)()) ? true : t.getId(), {
     launchInGameActivity: U
   } = (0, E.zB)(n), B = (0, O.f)({
     location: N.dr.QUEST_HOME_DESKTOP,
@@ -284,7 +284,7 @@ function B(e) {
             ctaContent: p.jZ.CONNECT_CONSOLE,
             position: s,
             rowIndex: f,
-            impressionId: M,
+            impressionId: k,
             sourceQuestContent: v
           })
         };
@@ -349,7 +349,7 @@ function B(e) {
           text: w.intl.string(w.t.bAGFz8)
         })
     }
-  }, [r, b, A, _, I, o, n, a, s, f, M, C, D, L, y, U, v, B])
+  }, [r, b, A, _, I, o, n, a, s, f, k, C, D, L, y, U, v, B])
 }
 
 function Z() {

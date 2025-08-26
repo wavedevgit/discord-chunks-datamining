@@ -194,7 +194,7 @@ function j() {
   y = null
 }
 
-function k(e) {
+function M(e) {
   let {
     guild: t
   } = e;
@@ -202,7 +202,7 @@ function k(e) {
   R()
 }
 
-function M(e) {
+function k(e) {
   let {
     channelId: t
   } = e;
@@ -392,10 +392,10 @@ let q = new z(Chunk570140.Z, __OVERLAY__ ? {} : {
   CLEAR_REMOTE_DISCONNECT_VOICE_CHANNEL_ID: L,
   REMOTE_SESSION_CONNECT: L,
   CLEAR_LAST_SESSION_VOICE_CHANNEL_ID: j,
-  GUILD_DELETE: k,
+  GUILD_DELETE: M,
   CHANNEL_DELETE: U,
   THREAD_DELETE: U,
-  CALL_DELETE: M,
+  CALL_DELETE: k,
   APP_STATE_UPDATE: B,
   RTC_DEBUG_SET_SIMULCAST_OVERRIDE: W
 });

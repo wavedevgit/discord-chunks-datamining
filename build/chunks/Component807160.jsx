@@ -634,9 +634,9 @@ class ep extends(r = Chunk647438.PureComponent) {
           children: [this.renderDescription(), (0, i.jsxs)("div", {
             className: z.amount,
             children: [this.renderStatus(), this.renderPrice()]
-          }), (0, i.jsx)(M.Z, {
+          }), (0, i.jsx)(k.Z, {
             className: z.expand,
-            direction: r ? M.Z.Directions.UP : M.Z.Directions.DOWN
+            direction: r ? k.Z.Directions.UP : k.Z.Directions.DOWN
           })]
         }), r ? this.renderExpandedSection() : null]
       }))
@@ -737,10 +737,10 @@ function eh(e) {
     applicationStatistics: p,
     gameApplication: h,
     paymentSources: g
-  } = (0, f.cj)([L.Z, k.Z, m.Z], () => {
+  } = (0, f.cj)([L.Z, M.Z, m.Z], () => {
     var e, t;
     return {
-      applicationStatistics: null != u ? k.Z.getCurrentUserStatisticsForApplication(u) : null,
+      applicationStatistics: null != u ? M.Z.getCurrentUserStatisticsForApplication(u) : null,
       gameApplication: null != (t = m.Z.getApplication(null != u ? u : "")) ? t : null == (e = r.sku) ? true : e.application,
       paymentSources: L.Z.paymentSources
     }

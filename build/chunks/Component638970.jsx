@@ -2,7 +2,7 @@
 /** chunk id: 638970, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => k
+  Z: () => M
 }), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -97,7 +97,7 @@ let j = {
   height: "auto"
 };
 
-function k(e) {
+function M(e) {
   let {
     user: t,
     currentUser: n,
@@ -107,9 +107,9 @@ function k(e) {
   } = e, P = (0, _.Dt)(), {
     analyticsLocations: w
   } = (0, f.ZP)(), {
-    trackUserProfileAction: k
+    trackUserProfileAction: M
   } = (0, g.KZ)(), {
-    live: M,
+    live: k,
     stream: U
   } = (0, E.Z)(t.id), {
     voiceChannel: G,
@@ -135,7 +135,7 @@ function k(e) {
   };
   null != U && er.push((0, r.jsx)(v.Z, R({
     stream: U
-  }, ei), "stream")), M.forEach((e, t) => {
+  }, ei), "stream")), k.forEach((e, t) => {
     er.push((0, r.jsx)(O.Z, R({
       activity: e
     }, ei), "live-".concat(t)))
@@ -148,7 +148,7 @@ function k(e) {
     color: l.zx.Colors.TRANSPARENT,
     className: a()(C.viewAllButton, en && C.isShown),
     onClick: () => {
-      k({
+      M({
         action: "PRESS_VIEW_PROFILE",
         analyticsLocations: w
       }), m({
@@ -162,7 +162,7 @@ function k(e) {
     })
   }) : null, ec = i.useCallback(() => {
     if (null == K.current || null == q.current) return;
-    k({
+    M({
       action: "PRESS_SHOW_MORE_ACTIVITY",
       analyticsLocations: w
     });
@@ -183,7 +183,7 @@ function k(e) {
         }), null == (e = z.current) || e.focus()
       }, D)
     })
-  }, [w, k]);
+  }, [w, M]);
   return ((0, u.zq)(() => {
     null != X.current && window.clearTimeout(X.current)
   }), F || 0 === er.length) ? null : (0, r.jsxs)("section", {

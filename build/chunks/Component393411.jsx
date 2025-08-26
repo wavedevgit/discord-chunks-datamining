@@ -48,7 +48,7 @@ function j(e, t, n) {
   }) : e[t] = n, e
 }
 
-function k(e) {
+function M(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -61,7 +61,7 @@ function k(e) {
   return e
 }
 
-function M(e, t) {
+function k(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -73,7 +73,7 @@ function M(e, t) {
 }
 
 function U(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -208,7 +208,7 @@ let W = function(e) {
     paymentSource: p,
     busy: N,
     analyticsLocation: j
-  } = e, M = "subscription_header", {
+  } = e, k = "subscription_header", {
     analyticsLocations: Y
   } = (0, f.ZP)(d.Z.SUBSCRIPTION_HEADER), {
     fractionalState: W
@@ -217,7 +217,7 @@ let W = function(e) {
   }), K = W === w.a$.FP_SUB_PAUSED, {
     enabled: z
   } = (0, A.ZP)({
-    location: M
+    location: k
   });
   w.pj.has(i.planId) && D.JwP.ALL_PAUSEABLE.has(i.status) && !K || (z = false);
   let q = (0, C.Ng)(),
@@ -239,7 +239,7 @@ let W = function(e) {
         let {
           default: t
         } = await Promise.all([n.e("58067"), n.e("81709")]).then(n.bind(n, 833569));
-        return n => (0, r.jsx)(t, U(k({}, n), {
+        return n => (0, r.jsx)(t, U(M({}, n), {
           premiumSubscription: i,
           analyticsLocation: j,
           analyticsLocations: Y,
@@ -342,7 +342,7 @@ let W = function(e) {
             children: x.intl.string(x.t["ETE/oK"])
           }), (0, r.jsx)(c.ua7, {
             text: t,
-            children: t => (0, r.jsx)(R.Z, U(k({}, t), {
+            children: t => (0, r.jsx)(R.Z, U(M({}, t), {
               disabled: e,
               className: L.toolsButton,
               onClick: () => {

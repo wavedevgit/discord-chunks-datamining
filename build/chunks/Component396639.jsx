@@ -241,7 +241,7 @@ let w = {
       })]
     })
   },
-  k = [{
+  M = [{
     key: null,
     renderStep: e => (0, r.jsx)(L, A({}, e))
   }, {
@@ -251,7 +251,7 @@ let w = {
       useBreadcrumbLabel: () => Chunk388032.intl.string(Chunk388032.t.QBnNHh)
     }
   }],
-  M = (e, t, n) => (0, r.jsx)(_.Z, {
+  k = (e, t, n) => (0, r.jsx)(_.Z, {
     isOrbCheckout: true,
     step: n,
     onClose: () => t(false)
@@ -282,7 +282,7 @@ let w = {
       onClose: c,
       hideShadow: true,
       skuId: t,
-      renderHeader: M,
+      renderHeader: k,
       initialPlanId: null,
       analyticsLocations: n
     })
@@ -299,7 +299,7 @@ let w = {
       applicationId: (0, E.N)(t),
       activeSubscription: null,
       loadId: n,
-      stepConfigs: k,
+      stepConfigs: M,
       purchaseType: v.GZQ.ONE_TIME,
       skuIDs: [t],
       excludeSubscriptionPlansBySKU: true,

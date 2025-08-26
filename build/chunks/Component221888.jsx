@@ -156,7 +156,7 @@ function x(e) {
     compact: b = false,
     disableInteraction: v = false,
     maxVisibleUsers: T = 3
-  } = e, A = i.useRef(null), R = (0, p.Z)(), [x, L] = i.useState(false), j = i.useRef(new u.sW(N, () => L(false))), k = (0, c.Wu)([m.Z, g.default], () => {
+  } = e, A = i.useRef(null), R = (0, p.Z)(), [x, L] = i.useState(false), j = i.useRef(new u.sW(N, () => L(false))), M = (0, c.Wu)([m.Z, g.default], () => {
     if (s.type === y.fO.STREAM) {
       let e = m.Z.getViewerIds(s.id);
       return e.length > 0 ? e.map(e => g.default.getUser(e)).filter(E.lm) : D
@@ -166,14 +166,14 @@ function x(e) {
   i.useEffect(() => {
     R && (j.current.cancel(), L(false))
   }, [R]);
-  let M = i.useCallback(() => {
+  let k = i.useCallback(() => {
       j.current.cancel(), L(true)
     }, []),
     U = i.useCallback(() => {
       j.current.delay()
     }, []),
     G = i.useCallback((e, t) => {
-      M(), (0, f.jW)(e, async () => {
+      k(), (0, f.jW)(e, async () => {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("69220")]).then(n.bind(n, 881351));
@@ -183,29 +183,29 @@ function x(e) {
       }, {
         onClose: U
       })
-    }, [U, M]);
-  if (0 === k.length) return null;
+    }, [U, k]);
+  if (0 === M.length) return null;
   if (b) return (0, r.jsx)(w, {
     maxVisibleUsers: T,
-    users: k,
+    users: M,
     guildId: o,
     channelId: t,
     className: h,
     participantType: s.type
   });
-  let B = l()(k).take(T).map(e => (0, r.jsx)(d.qEK, {
+  let B = l()(M).take(T).map(e => (0, r.jsx)(d.qEK, {
     src: e.getAvatarURL(o, 24),
     "aria-label": e.username,
     size: d.EFr.SIZE_24,
     className: I.viewer
   }, e.id)).value();
-  return k.length > T && (B[B.length - 1] = (0, r.jsxs)("div", {
+  return M.length > T && (B[B.length - 1] = (0, r.jsxs)("div", {
     className: I.overflow,
-    children: ["+", k.length - T + 1]
+    children: ["+", M.length - T + 1]
   }, "overflow")), (0, r.jsx)(_.Z, {
     section: O.jXE.STREAM_VIEWER_POPOUT,
     children: (0, r.jsx)("div", {
-      onMouseEnter: M,
+      onMouseEnter: k,
       onMouseLeave: U,
       children: (0, r.jsx)(d.yRy, {
         targetElementRef: A,
@@ -214,7 +214,7 @@ function x(e) {
           handleUserContextMenu: G,
           guildId: o,
           channelId: t,
-          users: k,
+          users: M,
           disableInteraction: v
         }),
         shouldShow: x && !R,

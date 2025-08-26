@@ -9,7 +9,7 @@ require.d(exports, {
   GP: () => F,
   H9: () => ee,
   Lo: () => $,
-  PK: () => M,
+  PK: () => k,
   R7: () => W,
   TT: () => X,
   UE: () => H,
@@ -17,7 +17,7 @@ require.d(exports, {
   Xo: () => es,
   _T: () => j,
   d9: () => U,
-  mR: () => k,
+  mR: () => M,
   p9: () => G,
   qs: () => B,
   rU: () => J
@@ -120,7 +120,7 @@ function j(e) {
   return x(e, "name", t)
 }
 
-function k(e) {
+function M(e) {
   let t = L(e, e => {
     var t;
     return null == e || null == (t = e.subscription_plans[0]) ? true : t.price
@@ -128,7 +128,7 @@ function k(e) {
   return x(e, "priceTier", t)
 }
 
-function M(e) {
+function k(e) {
   let t = L(e, e => {
     var t;
     return null != (t = null == e ? true : e.description) ? t : ""

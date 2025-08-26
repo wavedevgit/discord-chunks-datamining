@@ -4,7 +4,7 @@
 let r;
 require.d(exports, {
   Ek: () => D,
-  I1: () => M,
+  I1: () => k,
   ZP: () => eO
 }), require("./415506.js"), require("./388685.js"), require("./539854.js"), require("./704826.js"), require("./35282.js");
 var i, Chunk348327 = require("./348327.js"),
@@ -85,7 +85,7 @@ function x() {
 }
 let L = "1001",
   j = 10,
-  k = function(e) {
+  M = function(e) {
     let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
     return {
       id: L,
@@ -96,7 +96,7 @@ let L = "1001",
       params: {}
     }
   },
-  M = e => {
+  k = e => {
     let t = (0, O.UR)("shift");
     return null != t && (1 !== e.length || e[0][1] !== t)
   },
@@ -129,7 +129,7 @@ function G(e) {
   let n = (0, O.Kd)(e),
     r = (0, y.T_)("`"),
     i = null != (t = null == r ? true : r.keyCode) ? t : (0, O.UR)("`");
-  return M(n) ? n : null == i ? (U(Error("Unable to get backtick code for overlay default keybind"), e, n, {
+  return k(n) ? n : null == i ? (U(Error("Unable to get backtick code for overlay default keybind"), e, n, {
     rawBacktickShape: r
   }), null) : (U(Error("Default overlay keybind is unsupported"), e, n, {
     rawBacktickCode: i
@@ -139,13 +139,13 @@ let B = () => {
     let e = x();
     "shift" === module && (U(Error("Default overlay keybind is only shift"), module, null), e = "shift+`");
     let t = G(module);
-    if (null == exports) return k([], false);
-    if (M(exports)) return k(exports, true);
+    if (null == exports) return M([], false);
+    if (k(exports)) return M(exports, true);
     let n = (0, Chunk13140.UR)("shift"),
       r = (0, Chunk378799.T_)("`");
     return 0 === exports.length ? U(Error("Default overlay keybind combo is empty"), module, exports) : null == require ? U(Error("Unable to get shift code"), module, exports, {
       shiftCode: require
-    }) : null == r && U(Error("Unable to get backtick code"), module, exports), k(exports, false)
+    }) : null == r && U(Error("Unable to get backtick code"), module, exports), M(exports, false)
   },
   Z = {},
   F = {},

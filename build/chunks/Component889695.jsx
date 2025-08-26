@@ -65,12 +65,12 @@ function S(e) {
       return !R || (null == (t = e.tags) ? true : t.subscription_listing_id) != null
     }).filter(e => (null == L ? true : L.id) === e.id || m.r6(o, n.id, L, e)) : [], [o, n, R, L, A]);
   if (null == n || null == o || null == P) return null;
-  let k = {};
+  let M = {};
   return (P.roles.forEach(e => {
     let t = S[e];
-    null != t && (k[t.id] = t)
+    null != t && (M[t.id] = t)
   }), s.e$(m.I0({
-    forceRoles: k,
+    forceRoles: M,
     context: o
   }), s.$e(O.Plq.MANAGE_GUILD, O.Plq.MANAGE_ROLES)) || (0, u.eM)(o, n)) ? (0, r.jsx)("div", {
     className: I.container,

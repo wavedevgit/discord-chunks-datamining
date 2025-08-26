@@ -97,11 +97,11 @@ function j() {
   S && (S = x(S)), A = x(A)
 }
 
-function k() {
+function M() {
   C || Chunk585483.S.dispatch(Chunk981631.CkL.SEARCH_RESULTS_CLOSE), C = x(C)
 }
 
-function M(e) {
+function k(e) {
   let {
     sidebarType: t,
     guildId: n,
@@ -271,10 +271,10 @@ class z extends(r = Chunk442837.ZP.PersistedStore) {
 y(z, "displayName", "ChannelSectionStore"), y(z, "persistKey", "ChannelSectionStore2");
 let q = new z(Chunk570140.Z, {
   CHANNEL_TOGGLE_MEMBERS_SECTION: L,
-  USER_PROFILE_SIDEBAR_TOGGLE_SECTION: k,
+  USER_PROFILE_SIDEBAR_TOGGLE_SECTION: M,
   CHANNEL_TOGGLE_SUMMARIES_SECTION: j,
   SIDEBAR_VIEW_CHANNEL: G,
-  SIDEBAR_VIEW_GUILD: M,
+  SIDEBAR_VIEW_GUILD: k,
   SIDEBAR_CREATE_THREAD: B,
   SIDEBAR_CLOSE: Y,
   SIDEBAR_CLOSE_GUILD: U,

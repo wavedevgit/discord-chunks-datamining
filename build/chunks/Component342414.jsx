@@ -103,7 +103,7 @@ let X = e => {
     }), g = null;
     s ? g = (0, r.jsx)(T.Z, {
       variant: T.C.SUBSCRIBER_HOME
-    }) : l ? g = (0, r.jsx)(M.Z, {}) : u && (g = m.cohort === O.S$.Control ? (0, r.jsx)(U.Z, {}) : (0, r.jsx)(A._, {}));
+    }) : l ? g = (0, r.jsx)(k.Z, {}) : u && (g = m.cohort === O.S$.Control ? (0, r.jsx)(U.Z, {}) : (0, r.jsx)(A._, {}));
     let E = (0, a.e7)([h.Z], () => h.Z.getPremiumTypeSubscription()),
       b = (0, I.N)(),
       y = (0, v.Ng)(),
@@ -123,7 +123,7 @@ let X = e => {
         ref: D,
         children: [p && f, (0, r.jsxs)("div", {
           className: V.headerContainer,
-          children: [(0, r.jsx)(k.Z, {
+          children: [(0, r.jsx)(M.Z, {
             containerVisibilityPercentage: j
           }), (0, r.jsx)(x.Z, {
             children: d
@@ -272,7 +272,7 @@ let X = e => {
             },
             className: F.button
           })
-        }), !t && (0, r.jsx)(M.Z, {}), t && (0, r.jsx)(T.Z, {
+        }), !t && (0, r.jsx)(k.Z, {}), t && (0, r.jsx)(T.Z, {
           variant: T.C.SUBSCRIBER_HOME
         })]
       })]

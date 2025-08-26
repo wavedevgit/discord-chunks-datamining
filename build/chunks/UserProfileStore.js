@@ -73,7 +73,7 @@ let O = Symbol("NO GUILD ID"),
   L = [],
   j = [];
 
-function k(e) {
+function M(e) {
   let t = e.data.type,
     n = e.data.games.map(e => ({
       applicationId: e.game_id,
@@ -86,7 +86,7 @@ function k(e) {
     games: n
   }
 }
-let M = false,
+let k = false,
   U = null;
 
 function G(e) {
@@ -123,7 +123,7 @@ function B(e, t) {
 }
 
 function Z() {
-  v.clear(), I.clear(), C.clear(), N.clear(), w.clear(), D.clear(), x.clear(), M = false
+  v.clear(), I.clear(), C.clear(), N.clear(), w.clear(), D.clear(), x.clear(), k = false
 }
 
 function F(e) {
@@ -158,7 +158,7 @@ function Y(e) {
 }
 
 function W(e) {
-  var t, n, r, i, s, l, c, d, f, h, g, b, A, j, M, Z, F, V, Y, W, z;
+  var t, n, r, i, s, l, c, d, f, h, g, b, A, j, k, Z, F, V, Y, W, z;
   let {
     userProfile: q,
     fetchStartedAt: X
@@ -218,7 +218,7 @@ function W(e) {
         skuId: et.sku_id,
         expiresAt: et.expires_at
       } : true,
-      pronouns: null != (M = null == (f = q.user_profile) ? true : f.pronouns) ? M : "",
+      pronouns: null != (k = null == (f = q.user_profile) ? true : f.pronouns) ? k : "",
       connectedAccounts: null != (Z = q.connected_accounts.filter(e => a.Z.isSupported(e.type))) ? Z : [],
       applicationRoleConnections: null != (F = q.application_role_connections) ? F : [],
       premiumSince: J,
@@ -239,7 +239,7 @@ function W(e) {
         name: ee.name
       } : null,
       badges: en,
-      widgets: null == (h = q.widgets) ? true : h.map(k)
+      widgets: null == (h = q.widgets) ? true : h.map(M)
     }), (null == (b = q.user_profile) || null == (g = b.profile_effect) ? true : g.expires_at) != null) {
     let e = new o.V7;
     R.set(q.user.id, e), G(q.user.id)
@@ -401,15 +401,15 @@ function Q(e) {
 }
 
 function J(e) {
-  M = true
+  k = true
 }
 
 function $(e) {
-  M = false, null != e.guild_id ? Q(e) : X(e)
+  k = false, null != e.guild_id ? Q(e) : X(e)
 }
 
 function ee(e) {
-  M = false
+  k = false
 }
 
 function et(e) {
@@ -419,7 +419,7 @@ function et(e) {
   } = e, r = C.get(t);
   if (null == r) returnfalse;
   C.set(t, y(E({}, r), {
-    widgets: n.map(k)
+    widgets: n.map(M)
   }))
 }
 
@@ -484,7 +484,7 @@ class ec extends Chunk750041.Z {
     return I.has(e)
   }
   get isSubmitting() {
-    return M
+    return k
   }
   getUserProfile(e) {
     return C.get(e)

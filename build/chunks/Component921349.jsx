@@ -88,8 +88,8 @@ function j(e, t) {
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let k = 44,
-  M = {
+let M = 44,
+  k = {
     keys: ["label"]
   };
 
@@ -175,7 +175,7 @@ let Z = Chunk647438.forwardRef(function(e, t) {
     maxVisibleItems: D = 7,
     look: x = C.q.FILLED,
     autoFocus: j = false,
-    popoutPosition: k = "bottom",
+    popoutPosition: M = "bottom",
     filter: Z = true,
     debounceTime: V,
     renderOptionLabel: W = U,
@@ -214,7 +214,7 @@ let Z = Chunk647438.forwardRef(function(e, t) {
     active: ev,
     loadableOptions: n,
     debounceTime: V
-  }), ex = i.useMemo(() => B(eP, o), [eP, o]), eL = i.useMemo(() => ex.map(e => e.value), [ex]), ej = ex[ex.length - 1], ek = (0, A.Z)(ej), eM = i.useId(), eU = i.useId(), eG = i.useId(), eB = i.useCallback(e => {
+  }), ex = i.useMemo(() => B(eP, o), [eP, o]), eL = i.useMemo(() => ex.map(e => e.value), [ex]), ej = ex[ex.length - 1], eM = (0, A.Z)(ej), ek = i.useId(), eU = i.useId(), eG = i.useId(), eB = i.useCallback(e => {
     ev === e || P || (eI(e), e ? null == g || g() : null == E || E())
   }, [P, E, g, ev]), eZ = i.useCallback(e => {
     ev && !e && eB(false)
@@ -260,7 +260,7 @@ let Z = Chunk647438.forwardRef(function(e, t) {
     ez = (0, A.Z)(eP);
   i.useEffect(() => {
     let e = ez.current,
-      t = ek.current;
+      t = eM.current;
     ev && null != t && !ew && requestAnimationFrame(() => {
       let n = eN.current,
         r = e.indexOf(t);
@@ -269,7 +269,7 @@ let Z = Chunk647438.forwardRef(function(e, t) {
         row: r
       })
     })
-  }, [ev, ew, ez, ek]), i.useEffect(() => {
+  }, [ev, ew, ez, eM]), i.useEffect(() => {
     let e = eK.current;
     if (ev && !ew) {
       var t;
@@ -283,11 +283,11 @@ let Z = Chunk647438.forwardRef(function(e, t) {
       }
       eO(null != (t = e.focusedItemId()) ? t : null)
     } else {
-      let t = ek.current,
+      let t = eM.current,
         n = null != t ? String(t.value) : null;
       e.setFocus(n), eO(null)
     }
-  }, [ev, ew, eK, ek]), i.useLayoutEffect(() => {
+  }, [ev, ew, eK, eM]), i.useLayoutEffect(() => {
     ev || (f ? eS("") : null != ej && eS(ej.label))
   }, [f, ej, ev]), i.useLayoutEffect(() => {
     f && eS("")
@@ -326,7 +326,7 @@ let Z = Chunk647438.forwardRef(function(e, t) {
       }
     }, [eB, ev]),
     eJ = eP;
-  eA && null != eT && false !== Z && (eJ = "function" == typeof Z ? Z(eP, eT) : (0, s.Lu)(eP, eT, null != ea ? ea : M)), i.useEffect(() => {
+  eA && null != eT && false !== Z && (eJ = "function" == typeof Z ? Z(eP, eT) : (0, s.Lu)(eP, eT, null != ea ? ea : k)), i.useEffect(() => {
     let e = eN.current;
     null == e || e.scrollToTop()
   }, [eT]), i.useEffect(() => {
@@ -357,7 +357,7 @@ let Z = Chunk647438.forwardRef(function(e, t) {
           loading: ew,
           multi: !!f,
           listRef: eN,
-          listId: eM,
+          listId: ek,
           maxVisibleItems: D,
           width: eE,
           selectedValues: eL,
@@ -373,7 +373,7 @@ let Z = Chunk647438.forwardRef(function(e, t) {
           renderOptionSuffix: Q
         })
       },
-      position: k,
+      position: M,
       children: (e, t) => {
         let {
           "aria-expanded": n,
@@ -452,7 +452,7 @@ let Z = Chunk647438.forwardRef(function(e, t) {
                   activeDescendant: ey,
                   placeholder: y,
                   inputId: eG,
-                  listboxId: eM,
+                  listboxId: ek,
                   navigatorId: eU,
                   selectValue: function(e) {
                     let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
@@ -576,7 +576,7 @@ function F(e) {
         }),
         style: {
           width: l,
-          maxHeight: c * k
+          maxHeight: c * M
         },
         ref: e => {
           var n;
@@ -589,7 +589,7 @@ function F(e) {
         innerRole: "listbox",
         innerAriaMultiselectable: g,
         innerId: _,
-        rowHeight: k,
+        rowHeight: M,
         sections: [s.length],
         sectionHeight: 0,
         renderRow: e => {
@@ -744,7 +744,7 @@ function W(e) {
   return (0, r.jsxs)(p.P, x(w({
     tag: "li",
     style: {
-      height: k
+      height: M
     },
     focusProps: {
       enabled: false

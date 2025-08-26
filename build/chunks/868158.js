@@ -95,10 +95,10 @@ function w(e, t) {
       merged_presences: o
     } = e,
     a = S(e, ["guilds", "merged_members", "merged_presences"]);
-  let s = k(P, null == o ? true : o.friends),
+  let s = M(P, null == o ? true : o.friends),
     l = null != (n = null == r ? true : r.map((e, t) => {
-      let n = k(P, null == o ? true : o.guilds[t]),
-        r = k(P, null == i ? true : i[t]);
+      let n = M(P, null == o ? true : o.guilds[t]),
+        r = M(P, null == i ? true : i[t]);
       return T(v({}, e), {
         unavailable: true === e.voice_states,
         presences: n,
@@ -142,12 +142,12 @@ function x(e, t, n) {
     } = e,
     d = S(e, ["users", "relationships", "private_channels", "merged_members", "guilds"]);
   U(n);
-  let f = k(P = a().keyBy(o, e => e.id), s);
+  let f = M(P = a().keyBy(o, e => e.id), s);
   null == l || l.forEach(e => {
     let t = e.recipient_ids;
     null != t && (e.recipients = t.map(e => (i()(null != P[e], "Missing user in compressed ready payload"), P[e]))), delete e.recipient_ids
   });
-  let _ = null != (r = null == u ? true : u.map((e, t) => true === e.unavailable ? e : (e.members = k(P, null == c ? true : c[t]), B(e)))) ? r : [],
+  let _ = null != (r = null == u ? true : u.map((e, t) => true === e.unavailable ? e : (e.members = M(P, null == c ? true : c[t]), B(e)))) ? r : [],
     p = L(t, u, e => B(e));
   return null != p && _.push(p), T(v({}, d), {
     users: o,
@@ -177,7 +177,7 @@ function j(e, t) {
   }, a
 }
 
-function k(e, t) {
+function M(e, t) {
   let n = [];
   return null == t || t.forEach(t => {
     if (null == t) return;
@@ -186,7 +186,7 @@ function k(e, t) {
   }), n
 }
 
-function M(e) {
+function k(e) {
   let t = N[e];
   return delete N[e], t
 }
@@ -225,7 +225,7 @@ function G(e, t, n) {
 
 function B(e) {
   var t, n, r, i, o, a, s, l;
-  let c = M(e.id);
+  let c = k(e.id);
   if ("partial" !== e.data_mode) return {
     id: e.id,
     dataMode: e.data_mode,
@@ -286,7 +286,7 @@ function B(e) {
 
 function Z(e, t) {
   var n, r, i, o, a, s, l, c;
-  if (null == t && (t = M(e.id)), "partial" !== e.data_mode) return {
+  if (null == t && (t = k(e.id)), "partial" !== e.data_mode) return {
     id: e.id,
     guild_scheduled_events: e.guild_scheduled_events,
     joined_at: e.joined_at,

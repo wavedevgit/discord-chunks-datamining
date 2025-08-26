@@ -260,14 +260,14 @@ class W extends Chunk647438.Component {
     if (e.isSubscription) {
       if (null == o) return U.intl.string(U.t.ZTNur6);
       if (null != i) {
-        let e = o.interval === M.rV.MONTH ? U.t["/RDIEB"] : U.t["3CX6Eh"];
+        let e = o.interval === k.rV.MONTH ? U.t["/RDIEB"] : U.t["3CX6Eh"];
         return U.intl.format(e, {
           username: L.ZP.getUserTag(i),
           skuName: s,
           intervalCount: o.intervalCount
         })
       }
-      let e = o.interval === M.rV.MONTH ? U.t["2O4lo6"] : U.t["+Xjmsb"];
+      let e = o.interval === k.rV.MONTH ? U.t["2O4lo6"] : U.t["+Xjmsb"];
       return U.intl.format(e, {
         skuName: s,
         intervalCount: o.intervalCount
@@ -335,13 +335,13 @@ class W extends Chunk647438.Component {
       let {
         libraryApplication: t
       } = this.props;
-      e.preventDefault(), null != t && t.isHidden() ? (0, v.uL)(k.Z5c.APPLICATION_LIBRARY_SETTINGS) : (0, v.uL)(k.Z5c.APPLICATION_LIBRARY, {
+      e.preventDefault(), null != t && t.isHidden() ? (0, v.uL)(M.Z5c.APPLICATION_LIBRARY_SETTINGS) : (0, v.uL)(M.Z5c.APPLICATION_LIBRARY, {
         state: {
           applicationId: null != t ? t.id : true
         }
       })
     }), B(this, "handleVerificationClick", e => {
-      e.stopPropagation(), e.preventDefault(), f.Z.open(k.oAB.ACCOUNT)
+      e.stopPropagation(), e.preventDefault(), f.Z.open(M.oAB.ACCOUNT)
     }), B(this, "handleAccept", e => {
       let {
         channelId: t,
@@ -350,13 +350,13 @@ class W extends Chunk647438.Component {
         type: i,
         giftInfo: o
       } = this.props;
-      e.preventDefault(), e.stopPropagation(), P.default.track(k.rMx.OPEN_MODAL, {
+      e.preventDefault(), e.stopPropagation(), P.default.track(M.rMx.OPEN_MODAL, {
         type: "gift_accept",
         location: V(Z({}, this.analyticsLocation), {
-          object: k.qAy.BUTTON_CTA
+          object: M.qAy.BUTTON_CTA
         })
       });
-      let a = i !== k.uaV.CUSTOM_GIFT ? true : r;
+      let a = i !== M.uaV.CUSTOM_GIFT ? true : r;
       (0, y.V)({
         processedCode: n,
         channelContext: t,
@@ -367,18 +367,18 @@ class W extends Chunk647438.Component {
       let {
         giftCode: t
       } = this.props;
-      null != t && t.isSubscription && (e.preventDefault(), f.Z.open(k.oAB.PREMIUM))
+      null != t && t.isSubscription && (e.preventDefault(), f.Z.open(M.oAB.PREMIUM))
     }), B(this, "handleClaimPromotion", e => {
       var t;
       e.stopPropagation(), e.preventDefault();
       let n = null == (t = this.props.giftCode) ? true : t.code;
-      null != n && window.open(k.Z5c.BILLING_PROMOTION_REDEMPTION(n))
+      null != n && window.open(M.Z5c.BILLING_PROMOTION_REDEMPTION(n))
     }), B(this, "renderCustomGiftBox", e => {
       let {
         width: t
       } = this.props;
       if (null == e || null == e.giftStyle) return null;
-      let n = M.jy.includes(e.giftStyle),
+      let n = k.jy.includes(e.giftStyle),
         i = a()(G.customGiftEmbedWrapper, {
           [G.legacySeasonalGiftEmbedWrapper]: n,
           [G.giftEmbedWrapperHorizontal]: t >= _.aL

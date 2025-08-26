@@ -52,18 +52,18 @@ let I = [Chunk342905.C.CHERRY_BOMB, Chunk342905.C.CHICLE],
       location: "useDisplayNameStylesFont"
     }), j = (0, g.Y)({
       location: "UserNameWithEffects"
-    }), k = (0, _.dQu)(_.TVs.colors.BACKGROUND_BASE_LOW).hex(), M = null != (t = null == o ? true : o.effectId) ? t : c.m.SOLID, U = (0, y.R)(M), G = (0, _.qgQ)(n), B = (0, f.EJ)(G, M === c.m.TOON ? v.emoji : true), Z = i.useMemo(() => null != o && j ? o.colors.map(e => (0, h.wh)({
+    }), M = (0, _.dQu)(_.TVs.colors.BACKGROUND_BASE_LOW).hex(), k = null != (t = null == o ? true : o.effectId) ? t : c.m.SOLID, U = (0, y.R)(k), G = (0, _.qgQ)(n), B = (0, f.EJ)(G, k === c.m.TOON ? v.emoji : true), Z = i.useMemo(() => null != o && j ? o.colors.map(e => (0, h.wh)({
       foreground: a()(e),
-      background: M === c.m.TOON ? a()("#333") : a()(k),
+      background: k === c.m.TOON ? a()("#333") : a()(M),
       ratio: U.minContrastRatio,
       saturationFactor: x
-    }).hex()) : [], [o, j, M, U.minContrastRatio, x, k]);
+    }).hex()) : [], [o, j, k, U.minContrastRatio, x, M]);
     if (!j || !T && !L || null == o) return n;
-    let F = (0, b.K)(M, Z, {
+    let F = (0, b.K)(k, Z, {
         shouldWrap: N,
         fontOpacity: I.includes(o.fontId) ? R : 1
       }),
-      V = S(M);
+      V = S(k);
     return (0, r.jsxs)("div", {
       className: l()(v.container, w, A, {
         [v.showEffect]: s !== E.F.PLAIN,

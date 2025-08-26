@@ -2,7 +2,6 @@
 /** chunk id: 622562, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  E9: () => y,
   fu: () => E
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -153,21 +152,3 @@ function b(e) {
     offsets: u
   }
 }
-
-function y(e) {
-  var {
-    children: t,
-    style: n,
-    className: i,
-    key: o
-  } = e;
-  let {
-    offsets: s
-  } = b(_({}, p(e, ["children", "style", "className", "key"]))), l = _({}, s, n);
-  return null === s ? null : (0, r.jsx)("div", {
-    style: l,
-    className: a()(d.wrapper, i),
-    children: t
-  }, o)
-}
-y.displayName = "ElementFixedOffsetContentWrapper"

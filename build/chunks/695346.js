@@ -8,7 +8,7 @@ require.d(exports, {
   CW: () => ex,
   Cr: () => em,
   DC: () => es,
-  Ex: () => eM,
+  Ex: () => ek,
   Fg: () => ee,
   G6: () => e_,
   H1: () => j,
@@ -34,7 +34,7 @@ require.d(exports, {
   UP: () => ed,
   Wp: () => eP,
   Xc: () => F,
-  Xk: () => k,
+  Xk: () => M,
   Xr: () => ef,
   YC: () => ez,
   YT: () => A,
@@ -69,8 +69,8 @@ require.d(exports, {
   l4: () => eW,
   mX: () => z,
   nc: () => ev,
-  no: () => ek,
-  qF: () => M,
+  no: () => eM,
+  qF: () => k,
   rN: () => eI,
   tU: () => eE,
   uL: () => B,
@@ -171,13 +171,13 @@ let A = (0, Chunk560997.Zc)("notifications", "gameActivityNotifications", e => n
   }, e => a.D5.create({
     value: e
   })),
-  k = (0, Chunk560997.Zc)("textAndImages", "showCommandSuggestions", e => {
+  M = (0, Chunk560997.Zc)("textAndImages", "showCommandSuggestions", e => {
     var t;
     return null == (t = null == e ? true : e.value) || t
   }, e => a.D5.create({
     value: e
   })),
-  M = (0, Chunk560997.Zc)("voiceAndVideo", "alwaysPreviewVideo", e => {
+  k = (0, Chunk560997.Zc)("voiceAndVideo", "alwaysPreviewVideo", e => {
     var t;
     return null != (t = null == e ? true : e.value) && t
   }, e => a.D5.create({
@@ -520,14 +520,14 @@ let eA = (0, Chunk560997.KM)((0, Chunk560997.Zc)("appearance", "developerMode", 
   ineligibleDefault: Chunk524437.E5.OFF,
   eligibleDefault: () => Chunk524437.E5.ON_FOR_LARGE_GUILDS
 });
-let ek = (0, Chunk560997.TG)({
+let eM = (0, Chunk560997.TG)({
     baseSetting: (0, Chunk560997.Zc)("privacy", "defaultGuildsActivityRestrictedV2", e => e, e => null != e ? e : o.GI.ACTIVITY_STATUS_OFF),
     isEligible: () => (0, Chunk362352.o0)("user_settings"),
     useIsEligible: () => (0, Chunk362352.Yd)("user_settings"),
     ineligibleDefault: Chunk524437.GI.ACTIVITY_STATUS_OFF,
     eligibleDefault: () => Chunk524437.GI.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS
   }),
-  eM = (0, Chunk560997.Zc)("privacy", "familyCenterEnabledV2", e => null == e ? true : e.value, e => a.D5.create({
+  ek = (0, Chunk560997.Zc)("privacy", "familyCenterEnabledV2", e => null == e ? true : e.value, e => a.D5.create({
     value: e
   })),
   eU = (0, Chunk560997.Zc)("privacy", "hideLegacyUsername", e => {

@@ -133,11 +133,11 @@ function j() {
   x()
 }
 
-function k() {
+function M() {
   j()
 }
 
-function M() {
+function k() {
   D(v)
 }
 
@@ -178,8 +178,8 @@ function Z() {
 class F extends Chunk147913.Z {
   constructor(...e) {
     super(...e), b(this, "actions", {
-      POST_CONNECTION_OPEN: k,
-      CONNECTION_CLOSED: M,
+      POST_CONNECTION_OPEN: M,
+      CONNECTION_CLOSED: k,
       WINDOW_FOCUS: j,
       IDLE: j,
       CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN: j,

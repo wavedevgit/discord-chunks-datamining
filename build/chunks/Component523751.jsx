@@ -217,9 +217,9 @@ function j(e) {
       return h.ZP.isMember(null == a ? true : a.id, null == e ? true : e.id)
     }),
     j = (0, s.e7)([p.Z], () => p.Z.theme),
-    k = (0, O.XX)(a),
-    M = (0, y.i)(k),
-    U = i.useMemo(() => k.premium && x && !A, [A, k.premium, x]),
+    M = (0, O.XX)(a),
+    k = (0, y.i)(M),
+    U = i.useMemo(() => M.premium && x && !A, [A, M.premium, x]),
     G = i.useCallback(e => {
       U && (e.stopPropagation(), e.preventDefault(), (0, f.f)({
         guildId: a.id,
@@ -229,7 +229,7 @@ function j(e) {
         }
       }))
     }, [U, a.id]);
-  if (M === y.Q.NONE) return null;
+  if (k === y.Q.NONE) return null;
   let {
     IconComponent: B,
     backgroundDarkColor: Z,
@@ -239,9 +239,9 @@ function j(e) {
     premiumBackgroundColor: Y,
     premiumForegroundColor: W,
     sizeAdjustment: K
-  } = D[M];
+  } = D[k];
   if (null == B) return null;
-  k.premium && (t = W, n = Y);
+  M.premium && (t = W, n = Y);
   let z = (0, c.wj)(j) ? V : H,
     q = (0, c.wj)(j) ? Z : F;
   t = null != t ? t : z, n = null != n ? n : q;
@@ -251,8 +251,8 @@ function j(e) {
     position: d,
     "aria-label": N,
     text: (0, r.jsx)(L, {
-      badgeType: M,
-      guildTraits: k
+      badgeType: k,
+      guildTraits: M
     }),
     tooltipContentClassName: S.tooltipRemovePadding,
     children: e => (0, r.jsx)(u.P3F, {

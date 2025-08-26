@@ -23,7 +23,7 @@ require.d(exports, {
   pf: () => B,
   qm: () => q,
   w: () => Q,
-  wF: () => M,
+  wF: () => k,
   xw: () => L
 }), require("./415506.js");
 var Chunk990547 = require("./990547.js"),
@@ -221,11 +221,11 @@ async function j(e) {
   }
 }
 
-function k(e) {
+function M(e) {
   var t, n;
   return e instanceof c.CaptchaCancelError || null != e && "object" == typeof e && (400 === e.status && (null == (t = e.body) ? true : t.captcha_key) != null || null != e.captchaFields && !!(Object.keys(e.captchaFields).length > 0) || (null == (n = e.fields) ? true : n.captcha_key) != null || false)
 }
-var M = function(e) {
+var k = function(e) {
   return e.SUCCESS = "success", e.CAPTCHA_FAILED = "captcha_failed", e.UNKNOWN_ERROR = "unknown_error", e.PREVIOUS_IN_FLIGHT_REQUEST = "previous_in_flight_request", e
 }({});
 async function U(e, t) {
@@ -261,7 +261,7 @@ async function U(e, t) {
     return o.Z.dispatch({
       type: "QUESTS_ENROLL_FAILURE",
       questId: e
-    }), k(t) ? {
+    }), M(t) ? {
       type: "captcha_failed"
     } : {
       type: "unknown_error"
