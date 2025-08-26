@@ -86,12 +86,12 @@ function v(e) {
     className: a()(p.bar, l),
     onDoubleClick: u,
     children: [(0, r.jsx)("div", {
-      className: p.title,
-      children: n
-    }), (0, r.jsx)("div", {
       className: p.leading,
       onDoubleClick: y,
       children: t
+    }), (0, r.jsx)("div", {
+      className: p.title,
+      children: n
     }), (0, r.jsxs)("div", {
       className: p.trailing,
       onDoubleClick: y,

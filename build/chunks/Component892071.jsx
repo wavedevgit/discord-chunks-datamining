@@ -85,8 +85,8 @@ function m(e) {
       x: 10,
       y: 12
     } : {
-      x: 10,
-      y: 10
+      x: 9,
+      y: 8
     };
     _.ZP.setTrafficLightPosition(e)
   }, [R, G]), (0, r.jsx)(p.Provider, {
