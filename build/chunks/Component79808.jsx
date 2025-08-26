@@ -17,26 +17,26 @@ function c(e) {
     initialPanel: n,
     onClose: c,
     sidebarHeader: d,
-    sidebarFooter: f
-  } = e, [g, v] = i.useState(true), [m, j] = i.useState(n.key), {
-    navigateWithValidation: b
-  } = (0, u.Cu)(), y = i.useMemo(() => ({
-    currentPanel: t.layout.flatMap(e => e.layout).find(e => e.key === m),
-    setCurrentPanel: e => b(() => j(e.key)),
-    showNavigationMobile: g,
-    setShowNavigationMobile: v
-  }), [m, t, g, b, v]);
+    sidebarFooter: T
+  } = e, [O, f] = i.useState(true), [N, I] = i.useState(n.key), {
+    navigateWithValidation: E
+  } = (0, a.Cu)(), g = i.useMemo(() => ({
+    currentPanel: t.layout.flatMap(e => e.layout).find(e => e.key === N),
+    setCurrentPanel: e => E(() => I(e.key)),
+    showNavigationMobile: O,
+    setShowNavigationMobile: f
+  }), [N, t, O, E, f]);
   return (0, l.jsx)(o.j.Provider, {
-    value: y,
+    value: g,
     children: (0, l.jsxs)("div", {
-      className: a.container,
+      className: u.container,
       children: [(0, l.jsx)(s.P, {
         root: t,
         header: d,
-        footer: f
+        footer: T
       }), (0, l.jsx)(r.Z, {
-        onClose: () => b(c),
-        setting: y.currentPanel
+        onClose: () => E(c),
+        setting: g.currentPanel
       })]
     })
   })
@@ -50,7 +50,7 @@ function d(e) {
     sidebarHeader: r,
     sidebarFooter: s
   } = e;
-  return (0, l.jsx)(u.Ri, {
+  return (0, l.jsx)(a.Ri, {
     children: (0, l.jsx)(c, {
       root: t,
       initialPanel: n,

@@ -1,7 +1,7 @@
 /** Chunk was on 76210 **/
 /** chunk id: 357660, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  T: () => f
+  T: () => T
 }), require("./415506.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,38 +17,38 @@ function d(e) {
     notice: t,
     children: n
   } = e, {
-    showNotice: a,
+    showNotice: u,
     handleStoreUpdate: d
-  } = (0, o.Cu)(), f = null == t ? true : t.stores;
+  } = (0, o.Cu)(), T = null == t ? true : t.stores;
   i.useEffect(() => {
-    if (null != f) {
-      let e = new r.Fh(f, () => {
-        d(f)
+    if (null != T) {
+      let e = new r.Fh(T, () => {
+        d(T)
       });
-      return e.attach("SettingPanelNotice"), d(f), () => {
+      return e.attach("SettingPanelNotice"), d(T), () => {
         e.detach()
       }
     }
-  }, [f, d]);
-  let g = i.useMemo(() => {
-    if (null == t || !a) return null;
+  }, [T, d]);
+  let O = i.useMemo(() => {
+    if (null == t || !u) return null;
     let {
       element: e
     } = t;
-    return (0, l.jsx)(u.oXn, {
+    return (0, l.jsx)(a.oXn, {
       className: c.notice,
       children: (0, l.jsx)(e, {})
     })
-  }, [t, a]);
+  }, [t, u]);
   return (0, l.jsxs)(l.Fragment, {
     children: [n, (0, l.jsx)(s.W, {
       component: "div",
-      children: g
+      children: O
     })]
   })
 }
 
-function f(e) {
+function T(e) {
   let {
     node: t
   } = e, n = t.render;
@@ -56,11 +56,11 @@ function f(e) {
   if (1 !== t.layout.length) throw Error("Panels with multiple panes must define a render prop to handle the multiple panes");
   return (0, l.jsx)(d, {
     notice: t.notice,
-    children: (0, l.jsx)(u.w0Z, {
+    children: (0, l.jsx)(a.w0Z, {
       className: c.scroller,
       children: (0, l.jsx)("div", {
         className: c.panel,
-        children: (0, l.jsx)(a.Z, {
+        children: (0, l.jsx)(u.Z, {
           node: t.layout[0]
         })
       })

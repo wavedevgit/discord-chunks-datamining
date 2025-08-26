@@ -1,7 +1,7 @@
 /** Chunk was on 76210 **/
 /** chunk id: 206403, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  x: () => a
+  x: () => u
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
@@ -10,22 +10,22 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk845442 = require("./845442.js");
 
-function a(e) {
+function u(e) {
   let {
     leadingElement: t,
     primaryTrailingElement: n,
     secondaryTrailingElement: i,
-    title: a,
+    title: u,
     secondaryTitle: c,
     description: d,
-    compact: f = false,
-    onClick: g
+    compact: T = false,
+    onClick: O
   } = e;
-  return (0, l.jsxs)(u.P3F, {
+  return (0, l.jsxs)(a.P3F, {
     className: r()(o.baseControlItem, {
-      [o.compact]: f
+      [o.compact]: T
     }),
-    onClick: g,
+    onClick: O,
     children: [null != t && (0, l.jsx)("div", {
       className: o.baseControlItemLeadingElement,
       children: t
@@ -36,7 +36,7 @@ function a(e) {
         children: [(0, l.jsx)(s.X6, {
           variant: "heading-md/semibold",
           color: "text-primary",
-          children: a
+          children: u
         }), null != c && (0, l.jsx)(s.X6, {
           variant: "heading-md/semibold",
           color: "text-secondary",

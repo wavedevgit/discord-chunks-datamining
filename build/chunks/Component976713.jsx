@@ -13,10 +13,10 @@ function s(e) {
   } = e, {
     useValue: n,
     setValue: s,
-    useTitle: u,
+    useTitle: a,
     useSubtitle: o,
-    useOptions: a
-  } = t, c = u(), d = null == o ? true : o(), f = n(), g = a();
+    useOptions: u
+  } = t, c = a(), d = null == o ? true : o(), T = n(), O = u();
   return (0, l.jsx)(i.xJW, {
     title: c,
     className: r.radioContainer,
@@ -26,8 +26,8 @@ function s(e) {
         type: i.geA.DESCRIPTION,
         children: d
       }), (0, l.jsx)(i.FXm, {
-        options: g,
-        value: f,
+        options: O,
+        value: T,
         onChange: e => s(e.value)
       })]
     })

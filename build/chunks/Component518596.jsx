@@ -22,7 +22,7 @@ function c() {
   }), (0, Chunk526665.yP)("openUserSettings") ? (0, Chunk481060.ZDy)(async () => {
     let {
       default: e
-    } = await Promise.all([require.e("76210"), require.e("94827")]).then(require.bind(require, 245286));
+    } = await Promise.all([require.e("76210"), require.e("63751")]).then(require.bind(require, 245286));
     return t => (0, r.jsx)(e, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},

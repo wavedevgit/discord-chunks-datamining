@@ -15,24 +15,24 @@ function o(e) {
   } = e, {
     useLabel: n,
     useTitle: o,
-    useSubtitle: a,
+    useSubtitle: u,
     useVariant: c,
     useDisabled: d,
-    onClick: f
-  } = t, g = o(), v = null == a ? true : a(), m = n(), j = null == c ? true : c(), b = null == d ? true : d();
+    onClick: T
+  } = t, O = o(), f = null == u ? true : u(), N = n(), I = null == c ? true : c(), E = null == d ? true : d();
   return (0, l.jsx)(i.x, {
-    title: g,
-    className: u.settingButtonContainer,
+    title: O,
+    className: a.settingButtonContainer,
     children: (0, l.jsxs)("div", {
-      className: u.settingButtonContent,
-      children: [null != v && (0, l.jsx)(r.R, {
+      className: a.settingButtonContent,
+      children: [null != f && (0, l.jsx)(r.R, {
         type: r.g.DESCRIPTION,
-        children: v
+        children: f
       }), (0, l.jsx)(s.zxk, {
-        onClick: f,
-        text: m,
-        variant: j,
-        disabled: b
+        onClick: T,
+        text: N,
+        variant: I,
+        disabled: E
       })]
     })
   })

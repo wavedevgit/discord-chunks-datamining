@@ -85,18 +85,17 @@ class A extends Chunk442837.ZP.Store {
     return null !== u && (null === d || !i().isEqual(u, d))
   }
   hasSaveablePendingChanges() {
-    if (null == u) returnfalse;
+    let e = this.getSaveablePendingWidgets();
+    if (null == module) returnfalse;
     if (null == d) returntrue;
-    let e = new Map(d.map(e => [e.id, e])),
-      t = new Map(u.map(e => [e.id, e]));
-    for (let [n, r] of exports) {
-      let t = module.get(require);
-      if (null == exports) {
-        if (Chunk392711.games.length > 0) returntrue
-      } else if (!(0, Chunk86419.ou)(Chunk392711.games, exports.games, Chunk392711.type)) returntrue
+    let t = new Map(d.map(e => [e.id, e])),
+      n = new Map(module.map(e => [e.id, e]));
+    for (let [e, r] of require) {
+      let n = exports.get(module);
+      if (null == require || !(0, Chunk86419.ou)(Chunk392711.games, require.games, Chunk392711.type)) returntrue
     }
-    for (let [n] of module)
-      if (!exports.has(require)) returntrue;
+    for (let [e] of exports)
+      if (!require.has(module)) returntrue;
     returnfalse
   }
   get isSubmitting() {

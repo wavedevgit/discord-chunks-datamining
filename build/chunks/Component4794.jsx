@@ -14,13 +14,13 @@ let o = Chunk647438.memo(function(e) {
   } = e, {
     useTitle: n,
     layout: o,
-    useSubtitle: a
-  } = t, [c, d] = i.useState(false), f = null == n ? true : n(c), g = null == a ? true : a();
+    useSubtitle: u
+  } = t, [c, d] = i.useState(false), T = null == n ? true : n(c), O = null == u ? true : u();
   return (0, l.jsx)("div", {
-    className: u.accordion,
+    className: a.accordion,
     children: (0, l.jsx)(s.I, {
-      title: f,
-      subtitle: g,
+      title: T,
+      subtitle: O,
       isOpen: c,
       setIsOpen: d,
       children: o.map(e => (0, l.jsx)(r.Z, {

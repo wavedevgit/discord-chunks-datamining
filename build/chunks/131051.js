@@ -13,10 +13,10 @@ function o(e, t) {
   let n = l.useMemo(() => (0, s.Ql)(e), [e]),
     o = (0, i.Pt)(),
     {
-      searchResults: a
+      searchResults: u
     } = (0, r.E)(),
     c = new Set;
-  for (let e of a) {
+  for (let e of u) {
     let t = e;
     for (; null != t;) {
       var d;
@@ -28,5 +28,5 @@ function o(e, t) {
       t = e
     }
   }
-  return (0, u.Z)(n, t, c)
+  return (0, a.Z)(n, t, c)
 }

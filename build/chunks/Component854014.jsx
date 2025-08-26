@@ -15,20 +15,20 @@ function o(e) {
     title: n,
     onClick: i,
     active: o,
-    trailing: a
+    trailing: u
   } = e;
   return (0, l.jsxs)(s.P3F, {
-    className: r()(u.item, o && u.active),
+    className: r()(a.item, o && a.active),
     onClick: i,
     children: [(0, l.jsxs)("div", {
-      className: u.itemContent,
+      className: a.itemContent,
       children: [(0, l.jsx)(t, {
         color: "currentColor",
         size: "refresh_sm"
       }), n]
     }), (0, l.jsx)("div", {
-      className: u.itemContent,
-      children: a
+      className: a.itemContent,
+      children: u
     })]
   })
 }

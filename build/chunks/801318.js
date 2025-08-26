@@ -26,7 +26,7 @@ function s(e) {
   return e
 }
 
-function u(e, t) {
+function a(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -44,26 +44,26 @@ function o(e, t, n) {
   let o = function(e, t, n) {
     let l = new Set,
       s = function(e) {
-        var u;
+        var a;
         let o = arguments.length > 1 && true !== arguments[1] && arguments[1],
-          a = arguments.length > 2 && true !== arguments[2] && arguments[2],
-          c = (null == (u = e.usePredicate) ? true : u.call(e)) === false || o,
+          u = arguments.length > 2 && true !== arguments[2] && arguments[2],
+          c = (null == (a = e.usePredicate) ? true : a.call(e)) === false || o,
           d = function(e, t, n, l) {
             var r, s;
             if (null != e.legacySearchKey) return l.has(e.legacySearchKey);
-            let u = "useTitle" in e ? null == (r = e.useTitle) ? true : r.call(e, false) : true,
+            let a = "useTitle" in e ? null == (r = e.useTitle) ? true : r.call(e, false) : true,
               o = "useSearchTerms" in e ? null == (s = e.useSearchTerms) ? true : s.call(e) : true;
-            if (n || null == u && null == o) returnfalse;
+            if (n || null == a && null == o) returnfalse;
             if ("" === t) returntrue;
-            let a = t.toLowerCase();
+            let u = t.toLowerCase();
             for (let e of null != o ? o : [])
-              if (i()(a, e.toLowerCase())) returntrue;
-            return "string" == typeof u && i()(a, u.toLowerCase())
-          }(e, t, c, n) || a,
-          f = false;
+              if (i()(u, e.toLowerCase())) returntrue;
+            return "string" == typeof a && i()(u, a.toLowerCase())
+          }(e, t, c, n) || u,
+          T = false;
         if ((0, r.L)(e))
-          for (let t of e.layout) f = s(t, c, d) || f;
-        return !c && (d || f) && l.add(e.key), d || f
+          for (let t of e.layout) T = s(t, c, d) || T;
+        return !c && (d || T) && l.add(e.key), d || T
       };
     return s(e), l
   }(e, null != t ? t : "", n);
@@ -71,10 +71,10 @@ function o(e, t, n) {
     if (!n.has(t.key)) return null;
     if (!(0, r.L)(t)) return t;
     let l = t.layout.map(t => e(t, n)).filter(e => null != e);
-    return 0 !== l.length || "render" in t ? u(s({}, t), {
+    return 0 !== l.length || "render" in t ? a(s({}, t), {
       layout: l
     }) : null
-  }(e, o)) ? l : u(s({}, e), {
+  }(e, o)) ? l : a(s({}, e), {
     layout: []
   })
 }
