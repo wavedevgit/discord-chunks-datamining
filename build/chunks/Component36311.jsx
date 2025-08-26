@@ -38,7 +38,9 @@ function x(e) {
   }, [t]), j = i.useCallback(() => {
     null != t && u.Z.nsfwAgree(t.id)
   }, [t]), E = i.useCallback(() => {
-    d.Z.showAgeVerificationGetStartedModal(p.cU.NSFW_GUILD)
+    d.Z.showAgeVerificationGetStartedModal({
+      entryPoint: p.cU.NSFW_GUILD
+    })
   }, []), S = (0, m.Y2)(t), I = C.intl.string(S ? C.t.xi46lp : C.t.ZmwvDQ);
   return a ? (0, r.jsx)(f.Z, {
     guildId: null == t ? true : t.id,

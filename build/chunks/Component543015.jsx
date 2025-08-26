@@ -585,7 +585,9 @@ function eb(e) {
     children: (0, r.jsxs)("div", {
       className: l()(el.bodyMedia, ea.bodyMedia),
       onClick: function(e) {
-        e.stopPropagation(), s && (e.preventDefault(), e.nativeEvent.stopImmediatePropagation(), b.Z.showAgeVerificationGetStartedModal(j.cU.FORUM_POST_MEDIA_PREVIEW))
+        e.stopPropagation(), s && (e.preventDefault(), e.nativeEvent.stopImmediatePropagation(), b.Z.showAgeVerificationGetStartedModal({
+          entryPoint: j.cU.FORUM_POST_MEDIA_PREVIEW
+        }))
       },
       children: [(0, r.jsx)(ep, {
         firstMedia: n,

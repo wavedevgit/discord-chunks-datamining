@@ -36,22 +36,22 @@ function I(e) {
   let {
     transitionState: t,
     source: a
-  } = e, s = (0, u.e7)([g.default], () => g.default.getCurrentUser()), I = (0, u.e7)([R.Z, N.Z], () => N.Z.getChannel(R.Z.getChannelId())), [v, k] = r.useState(null), [G, M] = r.useState(null), [F, V] = r.useState(false), [w, U] = r.useState(0), Z = r.useRef(null), D = r.useRef(null), Y = (0, x.Dt)(), W = (0, p.Kt)() && a !== C.L0.FAMILY_CENTER, {
+  } = e, s = (0, u.e7)([g.default], () => g.default.getCurrentUser()), I = (0, u.e7)([R.Z, N.Z], () => N.Z.getChannel(R.Z.getChannelId())), [v, k] = r.useState(null), [G, M] = r.useState(null), [F, V] = r.useState(false), [w, U] = r.useState(0), Z = r.useRef(null), D = r.useRef(null), Y = (0, x.Dt)(), W = (0, L.Kt)() && a !== C.L0.FAMILY_CENTER, {
     verifyAgreementButtonText: B,
     verifyGateDescription: P
-  } = (0, p.a1)(a), q = a === C.L0.NSFW_SERVER || a === C.L0.NSFW_SERVER_INVITE || a === C.L0.NSFW_SERVER_INVITE_EMBED, K = null != v ? o()().diff(v, "years") : null;
+  } = (0, L.a1)(a), q = a === C.L0.NSFW_SERVER || a === C.L0.NSFW_SERVER_INVITE || a === C.L0.NSFW_SERVER_INVITE_EMBED, K = null != v ? o()().diff(v, "years") : null;
 
   function O() {
-    if (a === C.L0.NSFW_SERVER_INVITE_EMBED) return void(0, L.qV)(a);
+    if (a === C.L0.NSFW_SERVER_INVITE_EMBED) return void(0, y.qV)(a);
     let e = null == I ? true : I.getGuildId();
-    E.Z.nsfwReturnToSafety(e), (0, L.qV)(a)
+    E.Z.nsfwReturnToSafety(e), (0, y.qV)(a)
   }
   async function X() {
     l()(null != v, "Cannot submit null birthday.");
     try {
       return M(null), V(true), await (0, S.Av)(v, a)
     } catch (t) {
-      if (null != t.body && null != t.body.date_of_birth)(0, L.C8)(a, t.body.date_of_birth);
+      if (null != t.body && null != t.body.date_of_birth)(0, y.C8)(a, t.body.date_of_birth);
       else {
         var e;
         (null == t || null == (e = t.body) ? true : e.username) != null ? M(j.intl.string(j.t["TGg/2t"])) : M(null == t ? true : t.body.message), V(false)
@@ -69,7 +69,7 @@ function I(e) {
     null == await X() && U(0)
   }
   r.useEffect(() => {
-    null == s || null == s.nsfwAllowed || W || (0, L.qq)(a)
+    null == s || null == s.nsfwAllowed || W || (0, y.qq)(a)
   }), r.useEffect(() => {
     b.default.track(T.rMx.AGE_GATE_ACTION, {
       source: a,
@@ -84,7 +84,9 @@ function I(e) {
       null == (e = D.current) || e.focus()
     }, [D]),
     et = r.useCallback(() => {
-      m.Z.showAgeVerificationGetStartedModal(_.cU.NSFW_AGE_GATE)
+      m.Z.showAgeVerificationGetStartedModal({
+        entryPoint: _.cU.NSFW_AGE_GATE
+      })
     }, []);
   return W ? (0, i.jsxs)(f.Y0X, {
     impression: {
@@ -182,7 +184,7 @@ function I(e) {
           })]
         }), (0, i.jsx)("form", {
           onSubmit: Q,
-          children: (0, i.jsx)(y.Z, {
+          children: (0, i.jsx)(p.Z, {
             label: j.intl.string(j.t.rhBeKS),
             wrapperClassName: z.birthday,
             name: "date_of_birth",

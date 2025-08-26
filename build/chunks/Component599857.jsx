@@ -24,7 +24,7 @@ function d(e) {
     })
   }, []), p = i.useCallback(e => {
     f("handle-verify"), a(e)
-  }, [a, f]), y = i.useCallback(() => {
+  }, [a, f]), m = i.useCallback(() => {
     var e, r, i;
     null == (i = window) || null == (r = i.grecaptcha) || null == (e = r.enterprise) || e.ready(async () => {
       var e;
@@ -32,12 +32,12 @@ function d(e) {
         action: n
       } : true)), d("loaded")
     })
-  }, [t, n, p, f]), m = i.useCallback(() => {
-    d("running"), f("recaptcha-loading"), s.I.loadRecaptchaScript(t, y, f)
-  }, [t, y, f]);
+  }, [t, n, p, f]), y = i.useCallback(() => {
+    d("running"), f("recaptcha-loading"), s.I.loadRecaptchaScript(t, m, f)
+  }, [t, m, f]);
   return i.useEffect(() => {
-    "uninitialized" === l && m()
-  }, [m, l]), i.useEffect(() => () => {
+    "uninitialized" === l && y()
+  }, [y, l]), i.useEffect(() => () => {
     f("recaptcha-unloading"), document.querySelectorAll('script[src*="recaptcha/enterprise.js"],.grecaptcha-badge').forEach(e => {
       var t;
       return null == (t = e.parentNode) ? true : t.removeChild(e)

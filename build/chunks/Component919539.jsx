@@ -48,7 +48,9 @@ function S(e) {
   }
 
   function D(e, t) {
-    if ((0, f.SI)()) return void a.Z.showAgeVerificationGetStartedModal(s.cU.MESSAGE_REQUESTS_SETTINGS);
+    if ((0, f.SI)()) return void a.Z.showAgeVerificationGetStartedModal({
+      entryPoint: s.cU.MESSAGE_REQUESTS_SETTINGS
+    });
     t ? P(e) : x(!e)
   }
 

@@ -2,7 +2,7 @@
 /** chunk id: 138201, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
   JZ: () => d,
-  rT: () => c
+  rT: () => a
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -12,7 +12,7 @@ require("./755721.js");
 var Chunk481060 = require("./481060.js"),
   Chunk753599 = require("./753599.js");
 
-function a(t) {
+function c(t) {
   let {
     title: n
   } = t;
@@ -23,17 +23,17 @@ function a(t) {
   })
 }
 
-function c(t) {
+function a(t) {
   let {
     children: n,
     title: e,
     description: r,
     accessibilityRole: l = "none",
-    accessibilityLabel: c
+    accessibilityLabel: a
   } = t;
   return (0, i.jsxs)("div", {
     className: s.tableRowGroup,
-    children: [null != e && (0, i.jsx)(a, {
+    children: [null != e && (0, i.jsx)(c, {
       title: e
     }), null != r && (0, i.jsx)(o.Text, {
       variant: "text-sm/normal",
@@ -42,7 +42,7 @@ function c(t) {
     }), (0, i.jsx)("div", {
       className: s.content,
       role: l,
-      "aria-label": c,
+      "aria-label": a,
       children: n
     })]
   })
@@ -53,8 +53,8 @@ function d(t) {
     icon: n,
     title: e,
     titleVariant: r = "text-md/semibold",
-    titleColor: a = "header-primary",
-    description: c,
+    titleColor: c = "header-primary",
+    description: a,
     descriptionVariant: d = "text-xs/medium",
     descriptionColor: x = "text-secondary",
     iconClassName: u,
@@ -67,8 +67,8 @@ function d(t) {
     buttonIconPosition: v = "start",
     buttonLoading: b,
     onButtonPress: g,
-    listType: C = "icon",
-    index: N,
+    listType: N = "icon",
+    index: C,
     noInset: w = false
   } = t, y = null != h ? (0, i.jsx)(o.zxk, {
     variant: f,
@@ -89,11 +89,11 @@ function d(t) {
       direction: "horizontal",
       gap: 16,
       align: "center",
-      children: ["numbered" === C && null != N ? (0, i.jsx)(o.X6q, {
+      children: ["numbered" === N && null != C ? (0, i.jsx)(o.X6q, {
         variant: "heading-md/semibold",
         color: "text-brand",
         className: s.number,
-        children: N + 1
+        children: C + 1
       }) : null != n && (0, i.jsx)("div", {
         className: s.iconContainer,
         children: (0, i.jsx)(n, {
@@ -104,12 +104,12 @@ function d(t) {
         className: s.textContainer,
         children: [(0, i.jsx)(o.Text, {
           variant: r,
-          color: a,
+          color: c,
           children: e
-        }), null != c && (0, i.jsx)(o.Text, {
+        }), null != a && (0, i.jsx)(o.Text, {
           variant: d,
           color: x,
-          children: c
+          children: a
         })]
       })]
     }), y]

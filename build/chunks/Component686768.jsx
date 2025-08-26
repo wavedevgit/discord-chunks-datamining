@@ -24,11 +24,11 @@ let b = function(n) {
   } = n, {
     loading: h,
     initiateAgeVerification: p
-  } = (0, u.WD)(b, true), j = r.useMemo(() => (0, i.Z)(), []);
+  } = (0, u.WD)(b, true), R = r.useMemo(() => (0, i.Z)(), []);
   r.useEffect(() => {
-    (0, d.lA)(j, d.d_.RETRY, e)
-  }, [j, e]);
-  let R = r.useMemo(() => [{
+    (0, d.lA)(R, d.d_.RETRY, e)
+  }, [R, e]);
+  let j = r.useMemo(() => [{
     title: _.intl.string(_.t.FYkioq),
     description: _.intl.string(_.t.xMfbR0),
     buttonText: _.intl.string(_.t.RtOE1t),
@@ -36,7 +36,7 @@ let b = function(n) {
     buttonIcon: a.Gr1,
     buttonLoading: h,
     onButtonPress: () => {
-      p(), (0, d.x3)(j, d.d_.RETRY, d.sU.GET_STARTED)
+      p(d.cU.RETRY_MODAL), (0, d.x3)(R, d.d_.RETRY, d.sU.GET_STARTED)
     }
   }, {
     title: _.intl.string(_.t["LZO+HR"]),
@@ -44,9 +44,9 @@ let b = function(n) {
     buttonText: _.intl.string(_.t["LZO+HR"]),
     buttonIcon: a.Gr1,
     onButtonPress: () => {
-      c.Z.openUrl(m.sQ.APPEALS_LINK), (0, d.x3)(j, d.d_.RETRY, d.sU.MANUAL_REVIEW_REQUEST)
+      c.Z.openUrl(m.sQ.APPEALS_LINK), (0, d.x3)(R, d.d_.RETRY, d.sU.MANUAL_REVIEW_REQUEST)
     }
-  }], [p, j, h]);
+  }], [p, R, h]);
   return (0, o.jsx)(a.Y0X, {
     transitionState: t,
     className: f.root,
@@ -66,7 +66,7 @@ let b = function(n) {
           className: f.modalClose,
           onClick: b
         })]
-      }), R.map((n, t) => (0, o.jsx)(l.JZ, function(n) {
+      }), j.map((n, t) => (0, o.jsx)(l.JZ, function(n) {
         for (var t = 1; t < arguments.length; t++) {
           var e = null != arguments[t] ? arguments[t] : {},
             o = Object.keys(e);
@@ -91,7 +91,7 @@ let b = function(n) {
         className: f.learnMore,
         children: _.intl.format(_.t["L+FgkZ"], {
           handleOnHelpUrlHook: () => {
-            c.Z.openUrl(s.Z.getArticleURL(x.BhN.TIGGER_PAWTECT_LEARN_MORE)), (0, d.x3)(j, d.d_.RETRY, d.sU.LEARN_MORE)
+            c.Z.openUrl(s.Z.getArticleURL(x.BhN.TIGGER_PAWTECT_LEARN_MORE)), (0, d.x3)(R, d.d_.RETRY, d.sU.LEARN_MORE)
           }
         })
       })]

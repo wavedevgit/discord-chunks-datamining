@@ -1,7 +1,7 @@
 /** Chunk was on 72853 **/
 /** chunk id: 762756, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => v
 }), require("./388685.js");
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -137,4 +137,4 @@ h(b, "defaultProps", {
   onCaptchaVerify: Chunk981631.dG4,
   onLogout: Chunk981631.dG4
 });
-let j = b
+let v = b

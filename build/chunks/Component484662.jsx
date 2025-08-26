@@ -48,7 +48,14 @@ function m() {
             variant: "primary",
             text: "Open Safety Flow",
             onClick: () => {
-              (0, Chunk84615.q4)(() => (0, Chunk951288.jsx)(Chunk918714.Z, {}), {
+              (0, Chunk84615.q4)(e => {
+                let {
+                  closeLayer: t
+                } = e;
+                return (0, a.jsx)(s.Z, {
+                  onClose: t
+                })
+              }, {
                 layerKey: Chunk308569.CV,
                 Layer: Chunk429142.ZP
               })

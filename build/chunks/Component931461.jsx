@@ -31,7 +31,9 @@ function p() {
 
 function h() {
   let e = () => {
-    Chunk168107.Z.showAgeVerificationGetStartedModal(Chunk480916.cU.CONTENT_AND_SOCIAL_NOTICE)
+    Chunk168107.Z.showAgeVerificationGetStartedModal({
+      entryPoint: Chunk480916.cU.CONTENT_AND_SOCIAL_NOTICE
+    })
   };
   return (0, Chunk951288.jsx)(Chunk907995.f, {
     label: Chunk388032.t.OX4ybm,

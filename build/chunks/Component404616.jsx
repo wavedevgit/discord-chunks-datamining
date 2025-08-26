@@ -612,7 +612,9 @@ function ev(e) {
     children: (0, r.jsxs)("div", {
       className: ea.bodyMedia,
       onClick: function(e) {
-        e.stopPropagation(), l && (e.preventDefault(), e.nativeEvent.stopImmediatePropagation(), v.Z.showAgeVerificationGetStartedModal(O.cU.FORUM_POST_MEDIA_PREVIEW))
+        e.stopPropagation(), l && (e.preventDefault(), e.nativeEvent.stopImmediatePropagation(), v.Z.showAgeVerificationGetStartedModal({
+          entryPoint: O.cU.FORUM_POST_MEDIA_PREVIEW
+        }))
       },
       children: [(0, r.jsx)(ex, {
         firstMedia: n,

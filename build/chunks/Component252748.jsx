@@ -77,10 +77,13 @@ function b(e) {
       }),
       src: t,
       alt: n
-    }), i && (0, r.jsxs)(l.Text, {
+    }), i && (0, r.jsx)("div", {
       className: m.displayCountText,
-      variant: "text-xs/medium",
-      children: ["+", o]
+      children: (0, r.jsxs)(l.Text, {
+        variant: "text-xs/medium",
+        className: m.displayCountTextColor,
+        children: ["+", o]
+      })
     })]
   })
 }

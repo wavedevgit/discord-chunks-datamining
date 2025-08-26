@@ -85,7 +85,9 @@ function j() {
         children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Launch Age Verification Modal",
-          onClick: () => Chunk168107.Z.showAgeVerificationGetStartedModal(Chunk480916.cU.DEV_TOOLS_QUICK_ACTIONS)
+          onClick: () => Chunk168107.Z.showAgeVerificationGetStartedModal({
+            entryPoint: Chunk480916.cU.DEV_TOOLS_QUICK_ACTIONS
+          })
         })
       }), (0, Chunk951288.jsx)("div", {
         className: l()(Chunk517269.buttonsContainer, Chunk197571.marginBottom20),

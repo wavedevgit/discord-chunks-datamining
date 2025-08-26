@@ -480,7 +480,9 @@ function er(e) {
         size: "sm",
         text: o ? V.intl.string(V.t.KPGVWl) : V.intl.string(V.t.yNGjyM),
         "aria-label": o ? V.intl.string(V.t.KPGVWl) : V.intl.string(V.t.yNGjyM),
-        onClick: () => m.Z.showAgeVerificationGetStartedModal(g.cU.ACCOUNT_AGE_GROUP)
+        onClick: () => m.Z.showAgeVerificationGetStartedModal({
+          entryPoint: g.cU.ACCOUNT_AGE_GROUP
+        })
       })
     })]
   })

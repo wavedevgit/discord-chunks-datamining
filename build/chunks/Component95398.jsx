@@ -384,7 +384,9 @@ class C extends Chunk647438.PureComponent {
     }), g(this, "handleToggleObscurity", e => {
       if (e.stopPropagation(), e.nativeEvent.stopPropagation(), (0, f.Jl)({
           obscure: this.state.visible
-        }), this.props.shouldAgeVerify) return void c.Z.showAgeVerificationGetStartedModal(u.cU.OBSCURED_MEDIA);
+        }), this.props.shouldAgeVerify) return void c.Z.showAgeVerificationGetStartedModal({
+        entryPoint: u.cU.OBSCURED_MEDIA
+      });
       let {
         onToggleObscurity: t
       } = this.props;

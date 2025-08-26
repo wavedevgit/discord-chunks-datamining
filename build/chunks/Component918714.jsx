@@ -33,7 +33,7 @@ function h(e) {
     children: (0, r.jsxs)(a.Kqy, {
       direction: "horizontal",
       justify: "start",
-      className: y.body,
+      className: m.body,
       children: [(0, r.jsx)(d.Z, {}), (0, r.jsx)(u.Z, {
         onSubmit: n,
         disabled: l
@@ -41,78 +41,77 @@ function h(e) {
     })
   })
 }
-let g = function() {
-  let [e, t] = Chunk647438.useState(null), [n, o] = Chunk647438.useState(true), [u, d] = Chunk647438.useState(null), [g, b] = Chunk647438.useState(false), j = Chunk647438.useCallback(async () => {
-    Chunk132392(true), Chunk856597(null);
+let g = function(e) {
+  let {
+    onClose: t
+  } = e, [n, o] = i.useState(null), [u, d] = i.useState(true), [g, b] = i.useState(null), [v, j] = i.useState(false), x = i.useCallback(async () => {
+    d(true), b(null);
     try {
       var e;
-      let n = await (0, Chunk845077.PA)();
-      if (null == require) return;
-      !(0, Chunk624138.Ew)(null == (e = require.ui_component) ? true : module.component.type) && Chunk118589.VZ.has(require.ui_component.component.type) ? exports(require) : exports({
-        task_id: require.task_id,
-        task_type: Chunk118589.UA.REFRESH_APP,
-        assignment_id: require.assignment_id,
+      let n = await (0, c.PA)();
+      if (null == n) return void t();
+      !(0, l.Ew)(null == (e = n.ui_component) ? true : e.component.type) && s.VZ.has(n.ui_component.component.type) ? o(n) : o({
+        task_id: n.task_id,
+        task_type: s.UA.REFRESH_APP,
+        assignment_id: n.assignment_id,
         ui_component: {
           component: {
-            type: Chunk118589.NS.REFRESH_APP,
+            type: s.NS.REFRESH_APP,
             data: {}
           }
         },
         flow_context: {
           tasks: [],
-          flow_id: require.flow_context.flow_id
+          flow_id: n.flow_context.flow_id
         }
       })
     } catch (e) {
-      Chunk856597(Chunk388032.intl.string(Chunk241945.default["/f++3t"]))
+      b(p.intl.string(f.default["/f++3t"]))
     } finally {
-      Chunk132392(false)
+      d(false)
     }
-  }, []), v = Chunk647438.useCallback(async t => {
-    if (null !== e) {
-      b(true);
+  }, [t]), E = i.useCallback(async e => {
+    if (null !== n) {
+      j(true);
       try {
-        let n = {
-          task_id: e.task_id,
-          flow_id: e.flow_context.flow_id,
-          data: t
+        let t = {
+          task_id: n.task_id,
+          flow_id: n.flow_context.flow_id,
+          data: e
         };
-        await (0, c.Wl)(n), j()
+        await (0, c.Wl)(t), x()
       } catch (e) {
-        d(p.intl.string(f.default["+QRSxc"]))
+        b(p.intl.string(f.default["+QRSxc"]))
       } finally {
-        b(false)
+        j(false)
       }
     }
-  }, [module, j]);
-  return Chunk647438.useEffect(() => {
-    j()
-  }, [j]), (0, Chunk951288.jsxs)("div", {
-    className: Chunk104940.background,
-    children: [(0, Chunk951288.jsx)(Chunk481060.y5t, {
-      forceLevel: 6,
-      children: (0, Chunk951288.jsx)("img", {
-        className: Chunk104940.artwork,
-        src: Chunk575703,
-        alt: ""
-      })
-    }), (0, Chunk951288.jsx)("div", {
-      className: Chunk104940.safetyFlow,
-      children: (0, Chunk951288.jsxs)("div", {
-        className: Chunk104940.container,
-        children: [require && (0, Chunk951288.jsx)(Chunk481060.Text, {
+  }, [n, x]);
+  return i.useEffect(() => {
+    x()
+  }, [x]), (0, r.jsxs)("div", {
+    className: m.background,
+    children: [(0, r.jsx)("img", {
+      className: m.artwork,
+      src: y,
+      alt: ""
+    }), (0, r.jsx)("div", {
+      className: m.safetyFlow,
+      children: (0, r.jsxs)("div", {
+        className: m.container,
+        children: [u && (0, r.jsx)(a.Text, {
           variant: "text-md/normal",
           color: "text-muted",
-          children: Chunk388032.intl.string(Chunk241945.default.v0H5Tk)
-        }), null !== Chunk535188 && (0, Chunk951288.jsx)(Chunk481060.Text, {
+          children: p.intl.string(f.default.v0H5Tk)
+        }), null !== g && (0, r.jsx)(a.Text, {
           variant: "text-md/normal",
           color: "text-danger",
-          className: Chunk104940.error,
-          children: Chunk535188
-        }), !require && null === Chunk535188 && null != module && (0, Chunk951288.jsx)(h, {
-          task: module,
-          handleSubmit: v,
-          disabled: g
+          className: m.error,
+          children: g
+        }), !u && null === g && null != n && (0, r.jsx)(h, {
+          task: n,
+          handleSubmit: E,
+          disabled: v
         })]
       })
     })]

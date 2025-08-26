@@ -7,5 +7,6 @@ module.exports = {
   icons: "icons_c2a763",
   icon: "icon_c2a763",
   displayCount: "displayCount_c2a763",
-  displayCountText: "displayCountText_c2a763"
+  displayCountText: "displayCountText_c2a763",
+  displayCountTextColor: "displayCountTextColor_c2a763"
 }

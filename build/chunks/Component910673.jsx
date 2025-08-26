@@ -24,31 +24,31 @@ let f = t => {
     messageId: f,
     transitionState: g,
     onClose: L
-  } = t, v = (0, u.Z)(), O = (0, _.Jm)(), P = (0, d.m8)(), h = r.useMemo(() => O && P, [O, P]), M = r.useCallback(t => {
+  } = t, v = (0, u.Z)(), P = (0, _.Jm)(), O = (0, d.m8)(), h = i.useMemo(() => P && O, [P, O]), M = i.useCallback(t => {
     (0, d.aP)({
       action: t,
       channelId: e,
       messageId: f
     })
-  }, [e, f]), T = r.useCallback(() => {
+  }, [e, f]), T = i.useCallback(() => {
     L(), M(d.Yy.EXPLICIT_MEDIA_LEARN_MORE_CLICK_FALSE_POSITIVE), (0, o.ZDy)(async () => {
       let {
         default: t
       } = await n(788679);
-      return n => (0, l.jsx)(t, function(t) {
+      return n => (0, r.jsx)(t, function(t) {
         for (var e = 1; e < arguments.length; e++) {
           var n = null != arguments[e] ? arguments[e] : {},
-            l = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(t) {
+            r = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(t) {
             return Object.getOwnPropertyDescriptor(n, t).enumerable
-          }))), l.forEach(function(e) {
-            var l;
-            l = n[e], e in t ? Object.defineProperty(t, e, {
-              value: l,
+          }))), r.forEach(function(e) {
+            var r;
+            r = n[e], e in t ? Object.defineProperty(t, e, {
+              value: r,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : t[e] = l
+            }) : t[e] = r
           })
         }
         return t
@@ -58,13 +58,13 @@ let f = t => {
       }, n))
     })
   }, [e, f, L, M]);
-  return r.useEffect(() => {
+  return i.useEffect(() => {
     (0, d.aP)({
       action: d.Yy.EXPLICIT_MEDIA_LEARN_MORE_VIEWED,
       channelId: e,
       messageId: f
     })
-  }, [e, f]), (0, l.jsx)(i.Modal, {
+  }, [e, f]), (0, r.jsx)(l.Modal, {
     title: R.intl.string(R.t.sGW77u),
     subtitle: function() {
       if (h) return R.intl.format(R.t["1L0hub"], {
@@ -77,7 +77,7 @@ let f = t => {
       return v ? t : e
     }(),
     actions: [function() {
-      if (!P && !h) return {
+      if (!O && !h) return {
         text: R.intl.string(R.t.ZH7P2t),
         onClick: T,
         variant: "secondary"
@@ -85,7 +85,9 @@ let f = t => {
     }(), h ? {
       text: R.intl.string(R.t.KPGVWl),
       onClick: function() {
-        L(), M(d.Yy.EXPLICIT_MEDIA_LEARN_MORE_CLICK_AGE_VERIFY_REVERIFY), s.Z.showAgeVerificationGetStartedModal(I.cU.SENSITIVE_MEDIA_LEARN_MORE)
+        L(), M(d.Yy.EXPLICIT_MEDIA_LEARN_MORE_CLICK_AGE_VERIFY_REVERIFY), s.Z.showAgeVerificationGetStartedModal({
+          entryPoint: I.cU.SENSITIVE_MEDIA_LEARN_MORE
+        })
       }
     } : v ? {
       text: R.intl.string(R.t["9D+zGR"]),
