@@ -316,7 +316,7 @@ let J = Chunk647438.memo(function(e) {
           action: () => (0, s.ZDy)(async () => {
             let {
               default: e
-            } = await Promise.all([n.e("45094"), n.e("67133")]).then(n.bind(n, 218613));
+            } = await Promise.all([n.e("46786"), n.e("45094"), n.e("21914")]).then(n.bind(n, 218613));
             return n => (0, i.jsx)(e, W(V({}, n), {
               channelType: R.d4z.GUILD_TEXT,
               guildId: t.id
@@ -329,7 +329,7 @@ let J = Chunk647438.memo(function(e) {
           action: () => (0, s.ZDy)(async () => {
             let {
               default: e
-            } = await Promise.all([n.e("45094"), n.e("67133")]).then(n.bind(n, 218613));
+            } = await Promise.all([n.e("46786"), n.e("45094"), n.e("21914")]).then(n.bind(n, 218613));
             return n => (0, i.jsx)(e, W(V({}, n), {
               channelType: R.d4z.GUILD_CATEGORY,
               guildId: t.id

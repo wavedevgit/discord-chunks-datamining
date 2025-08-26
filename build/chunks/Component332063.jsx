@@ -11,7 +11,7 @@ var i, Chunk951288 = require("./951288.js"),
   Chunk560587 = require("./560587.js"),
   Chunk388032 = require("./388032.jsx");
 
-function h(e, t, n) {
+function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -58,12 +58,12 @@ class u extends(i = Chunk647438.Component) {
     })
   }
   constructor(...e) {
-    super(...e), h(this, "handleChange", e => {
+    super(...e), c(this, "handleChange", e => {
       this.props.onChange(e)
     })
   }
 }
-h(u, "defaultProps", {
+c(u, "defaultProps", {
   includeMaster: false
 });
 let p = Chunk442837.ZP.connectStores([Chunk560587.Z], e => {

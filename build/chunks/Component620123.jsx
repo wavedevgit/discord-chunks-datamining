@@ -1,7 +1,7 @@
 /** Chunk was on 45094 **/
 /** chunk id: 620123, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => c
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -10,7 +10,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk16084 = require("./16084.js"),
   Chunk55563 = require("./55563.js"),
   Chunk388032 = require("./388032.jsx");
-class c extends Chunk647438.Component {
+class h extends Chunk647438.Component {
   componentDidMount() {
     let {
       applicationId: e,
@@ -60,11 +60,11 @@ class c extends Chunk647438.Component {
       })
   }
 }
-let h = Chunk442837.ZP.connectStores([Chunk55563.Z], e => {
+let c = Chunk442837.ZP.connectStores([Chunk55563.Z], e => {
   let {
     applicationId: t
   } = e;
   return {
     skus: o.Z.getForApplication(t)
   }
-})(c)
+})(h)

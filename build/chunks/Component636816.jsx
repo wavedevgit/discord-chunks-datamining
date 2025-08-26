@@ -26,15 +26,15 @@ function u(e) {
   s.useEffect(() => {
     m()
   }, [t, m]);
-  let x = [];
-  if (n === c.d4z.GUILD_ANNOUNCEMENT && (x.push(h.intl.format(h.t.tI7KNT, {
-      documentationLink: d.Z.getArticleURL(c.BhN.ANNOUNCEMENT_CHANNELS)
+  let E = [];
+  if (n === h.d4z.GUILD_ANNOUNCEMENT && (E.push(c.intl.format(c.t.tI7KNT, {
+      documentationLink: d.Z.getArticleURL(h.BhN.ANNOUNCEMENT_CHANNELS)
     })), !C && !N)) {
-    let e = h.intl.string(h.t["2Ab4IS"]);
-    x.push(e)
+    let e = c.intl.string(c.t["2Ab4IS"]);
+    E.push(e)
   }
-  return 0 === x.length ? null : (0, i.jsx)(i.Fragment, {
-    children: x.map((e, t) => (0, i.jsx)(l.R94, {
+  return 0 === E.length ? null : (0, i.jsx)(i.Fragment, {
+    children: E.map((e, t) => (0, i.jsx)(l.R94, {
       className: u,
       type: l.R94.Types.DESCRIPTION,
       children: e
