@@ -1,5 +1,5 @@
 /** Chunk was on 62199 **/
-/** chunk id: 163696, original params: t,e,s (module,exports,require) **/
+/** chunk id: 163696, original params: t,e,i (module,exports,require) **/
 module.exports = {
   wrapper: "wrapper__29f4e",
   productsContainer: "productsContainer__29f4e",
