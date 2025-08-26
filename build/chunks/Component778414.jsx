@@ -113,7 +113,7 @@ function S(e) {
     }, [e, t, r]), "GB" === e && r
   })(), x = 0 === p.length && O;
   return ((0, f.J)(O, p), x) ? (0, n.jsx)(v.Z, {}) : (0, n.jsxs)(n.Fragment, {
-    children: [j && (0, n.jsx)(w, {}), p.map(e => (0, n.jsx)(P, {
+    children: [O && j && (0, n.jsx)(w, {}), p.map(e => (0, n.jsx)(P, {
       widget: e,
       user: t,
       guildId: r,
