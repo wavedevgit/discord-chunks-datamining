@@ -120,7 +120,7 @@ function w(e) {
   }))) ? t : []
 }
 var D = function(e) {
-  return e.Connecting = "connecting", e.Connect = "connect", e.Disconnect = "disconnect", e.Resuming = "resuming", e.Ready = "ready", e.Speaking = "speaking", e.Video = "video", e.Ping = "ping", e.ClientConnect = "client-connect", e.ClientDisconnect = "client-disconnect", e.Codecs = "codecs", e.MediaSessionId = "media-session-id", e.MediaSinkWants = "media-sink-wants", e.VoiceBackendVersion = "voice-backend-version", e.KeyframeInterval = "keyframe-interval", e.ChannelOptionsUpdateSecureFramesProtocol = "update-secure-frames-protocol", e.Flags = "flags", e.Platform = "platform", e.SDP = "sdp", e.Encryption = "encryption", e.BandwidthEstimationExperiment = "bandwidth-estimation-experiment", e.SecureFramesInit = "secure-frames-init", e.SecureFramesPrepareTransition = "secure-frames-prepare-transition", e.SecureFramesExecuteTransition = "secure-frames-execute-transition", e.SecureFramesPrepareEpoch = "secure-frames-prepare-epoch", e.MLSExternalSenderPackage = "mls-external-sender-package", e.MLSProposals = "mls-proposals", e.MLSPrepareCommitTransition = "mls-prepare-commit-transition", e.MLSWelcome = "mls-welcome", e
+  return e.Connecting = "connecting", e.Connect = "connect", e.Disconnect = "disconnect", e.Resuming = "resuming", e.Ready = "ready", e.Speaking = "speaking", e.Video = "video", e.Ping = "ping", e.ClientConnect = "client-connect", e.ClientDisconnect = "client-disconnect", e.Codecs = "codecs", e.MediaSessionId = "media-session-id", e.MediaSinkWants = "media-sink-wants", e.VoiceBackendVersion = "voice-backend-version", e.KeyframeInterval = "keyframe-interval", e.ChannelOptionsUpdateSecureFramesProtocol = "update-secure-frames-protocol", e.Flags = "flags", e.Platform = "platform", e.SDP = "sdp", e.Encryption = "encryption", e.BandwidthEstimationExperiment = "bandwidth-estimation-experiment", e.SecureFramesInit = "secure-frames-init", e.SecureFramesPrepareTransition = "secure-frames-prepare-transition", e.SecureFramesExecuteTransition = "secure-frames-execute-transition", e.SecureFramesPrepareEpoch = "secure-frames-prepare-epoch", e.MLSExternalSenderPackage = "mls-external-sender-package", e.MLSProposals = "mls-proposals", e.MLSPrepareCommitTransition = "mls-prepare-commit-transition", e.MLSWelcome = "mls-welcome", e.ReceiveMessage = "receive-message", e.SendMessage = "send-message", e
 }({});
 class x extends Chunk47770.Z {
   createWebSocket() {
@@ -139,7 +139,7 @@ class x extends Chunk47770.Z {
         seq: n,
         d: r
       } = this.parseWebSocketMessage(e);
-      if (n && (this.lastRecvSeqNum = n), c.default.isLoggingGatewayEvents)
+      if (this.emit("receive-message", t, r), n && (this.lastRecvSeqNum = n), c.default.isLoggingGatewayEvents)
         if (r instanceof Uint8Array) {
           let e = [...r].map(e => e.toString(16).padStart(2, "0")).join("");
           this.logger.info("~> ".concat(t, ": 0x").concat(e))
@@ -238,7 +238,7 @@ class x extends Chunk47770.Z {
       op: e,
       d: t
     });
-    c.default.isLoggingGatewayEvents && this.logger.info("<~ ".concat(r));
+    c.default.isLoggingGatewayEvents && this.logger.info("<~ ".concat(r)), this.emit("send-message", e, t);
     try {
       n.send(r)
     } catch (e) {}
