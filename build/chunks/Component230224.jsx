@@ -3,7 +3,7 @@
 require.d(exports, {
   GB: () => O,
   JI: () => N,
-  UM: () => Z,
+  UM: () => A,
   V6: () => S,
   WT: () => b,
   X7: () => j,
@@ -120,7 +120,7 @@ function C(e) {
   })
 }
 
-function Z(e) {
+function A(e) {
   let t, n, i, {
     user: l,
     guild: o,

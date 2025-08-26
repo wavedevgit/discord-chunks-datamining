@@ -84,7 +84,7 @@ let o = (0, Chunk818083.B)({
       }
     }, {
       id: 2,
-      label: "Select Image File Before Emoji Studio",
+      label: '"Speedrun": Select Image File Before Emoji Studio',
       config: {
         isEmojiEditingExperimentEnabled: false,
         isSelectFileBeforeEmojiStudioExperimentEnabled: true
@@ -132,7 +132,8 @@ function c(e) {
     enabled: u,
     isMobileEnabled: f,
     isEntrypointEnabled: d || _ || p || h,
-    isEntrypointExperimentEnabled: _,
+    isEntrypointEnabledInDMs: d || p || h,
+    isEntrypointOnlyExperimentEnabled: _,
     isEmojiEditingExperimentEnabled: p,
     isSelectFileBeforeEmojiStudioExperimentEnabled: h
   }

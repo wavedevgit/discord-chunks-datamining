@@ -19,13 +19,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk149715 = require("./149715.js"),
   Chunk197571 = require("./197571.js");
 let x = () => {
-  let [e, t] = Chunk647438.useState(""), [l, x] = Chunk647438.useState(""), [v, E] = Chunk647438.useState(false), [b, j] = Chunk647438.useState(false), [I, N] = Chunk647438.useState(null), [y, O] = Chunk647438.useState(null), S = (0, Chunk442837.e7)([Chunk541692.Z], () => Chunk541692.Z.getCountryCode()), C = S.code.split(" ")[0], Z = async () => {
+  let [e, t] = Chunk647438.useState(""), [l, x] = Chunk647438.useState(""), [v, E] = Chunk647438.useState(false), [b, j] = Chunk647438.useState(false), [I, N] = Chunk647438.useState(null), [y, O] = Chunk647438.useState(null), S = (0, Chunk442837.e7)([Chunk541692.Z], () => Chunk541692.Z.getCountryCode()), C = S.code.split(" ")[0], A = async () => {
     try {
       await Chunk144114.Z.resendCode(module)
     } catch (e) {
       O(module.body.message)
     }
-  }, A = async () => {
+  }, Z = async () => {
     E(true);
     try {
       let {
@@ -77,11 +77,11 @@ let x = () => {
       }), (0, Chunk951288.jsx)(Chunk388905.zx, {
         size: Chunk388905.zx.Sizes.SMALL,
         look: Chunk388905.zx.Looks.LINK,
-        onClick: Z,
+        onClick: A,
         children: Chunk388032.intl.string(Chunk388032.t["5b60go"])
       }), (0, Chunk951288.jsx)(Chunk388905.zx, {
         className: Chunk197571.marginTop20,
-        onClick: A,
+        onClick: Z,
         submitting: v,
         children: Chunk388032.intl.string(Chunk388032.t.i4jeWV)
       })]

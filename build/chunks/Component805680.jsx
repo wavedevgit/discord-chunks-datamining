@@ -204,7 +204,7 @@ function J(e) {
     location: "expression_picker",
     autoTrackExposure: true,
     disable: !ey || ec !== j.X1.EMOJI
-  }), ev = i.useCallback(e => {
+  }), ev = null == K.guild_id ? eO.isEntrypointEnabledInDMs : eO.isEntrypointEnabled, eI = i.useCallback(e => {
     var t;
     if (!em && (0, _.$s)() || em && !(eg && et) || eh || e.defaultPrevented) return;
     let {
@@ -218,23 +218,23 @@ function J(e) {
     }(0, L._Q)();
     let r = null == (t = (0, x.uB)(e)) ? true : t.activeElement;
     (null == r || "BODY" === r.tagName) && D.S.dispatchToLastSubscribed(M.CkL.TEXTAREA_FOCUS)
-  }, [et, eg, em, eh]), eI = i.useCallback(() => {
+  }, [et, eg, em, eh]), eT = i.useCallback(() => {
     (0, L._Q)()
   }, []);
   i.useLayoutEffect(() => {
     let e = () => {
       ec === j.X1.GIF && (0, L._Q)()
     };
-    return ed.addEventListener("mousedown", ev), ed.addEventListener("contextmenu", ev), ef.subscribe(M.CkL.POPOUT_CLOSE, eI), D.S.subscribe(M.CkL.CLOSE_GIF_PICKER, e), () => {
-      ed.removeEventListener("mousedown", ev), ed.removeEventListener("contextmenu", ev), ef.unsubscribe(M.CkL.POPOUT_CLOSE, eI), D.S.unsubscribe(M.CkL.CLOSE_GIF_PICKER, e)
+    return ed.addEventListener("mousedown", eI), ed.addEventListener("contextmenu", eI), ef.subscribe(M.CkL.POPOUT_CLOSE, eT), D.S.subscribe(M.CkL.CLOSE_GIF_PICKER, e), () => {
+      ed.removeEventListener("mousedown", eI), ed.removeEventListener("contextmenu", eI), ef.unsubscribe(M.CkL.POPOUT_CLOSE, eT), D.S.unsubscribe(M.CkL.CLOSE_GIF_PICKER, e)
     }
-  }, [ec, eI, ev, ed, ef]), (0, p.Tbt)(er);
-  let [eT, eS] = (0, y.US)(ep ? [f.z.SOUNDMOJI_BADGE] : [], true, false), [eA, eC] = i.useState(false);
+  }, [ec, eT, eI, ed, ef]), (0, p.Tbt)(er);
+  let [eS, eA] = (0, y.US)(ep ? [f.z.SOUNDMOJI_BADGE] : [], true, false), [eC, eN] = i.useState(false);
   i.useEffect(() => {
-    ec === j.X1.SOUNDBOARD && eC(true)
+    ec === j.X1.SOUNDBOARD && eN(true)
   }, [ec]), i.useEffect(() => () => {
-    eA && eS(k.L.TAKE_ACTION)
-  }, [eA, eS]), i.useEffect(() => {
+    eC && eA(k.L.TAKE_ACTION)
+  }, [eC, eA]), i.useEffect(() => {
     (0, L.ql)("")
   }, []), i.useEffect(() => {
     (!em && (0, _.$s)() || em && !eg) && (0, L._Q)()
@@ -248,15 +248,15 @@ function J(e) {
       }), ei.current = true)
     }
   });
-  let eN = i.useCallback((e, t) => null == W ? true : W(e, "emoji_picker", t), [W]),
-    eR = i.useCallback((e, t) => null == W ? true : W(e, "soundboard_picker", t), [W]),
-    eP = (null == (s = z.soundmoji) ? true : s.allowSending) === true && null != W,
-    ew = "left" === $ ? "right" : "left",
-    eD = null != ee ? ee : "left" === $ ? F.positionLayerDefaultAlignLeft : F.positionLayerDefaultAlignRight;
+  let eR = i.useCallback((e, t) => null == W ? true : W(e, "emoji_picker", t), [W]),
+    eP = i.useCallback((e, t) => null == W ? true : W(e, "soundboard_picker", t), [W]),
+    ew = (null == (s = z.soundmoji) ? true : s.allowSending) === true && null != W,
+    eD = "left" === $ ? "right" : "left",
+    ex = null != ee ? ee : "left" === $ ? F.positionLayerDefaultAlignLeft : F.positionLayerDefaultAlignRight;
   return (0, r.jsx)(m.Z, {
     section: M.jXE.EXPRESSION_PICKER,
     children: (0, r.jsx)(T.W5, {
-      className: a()(F.positionLayer, eD),
+      className: a()(F.positionLayer, ex),
       targetRef: l,
       position: J,
       align: $,
@@ -286,7 +286,7 @@ function J(e) {
               className: F.resizeHandle,
               onMouseDown: el,
               style: {
-                [ew]: false
+                [eD]: false
               }
             }), (0, r.jsxs)("div", {
               className: F.contentWrapper,
@@ -321,7 +321,7 @@ function J(e) {
                     isActive: ec === j.X1.EMOJI,
                     viewType: j.X1.EMOJI,
                     children: Z.intl.string(Z.t.Xu3wEx)
-                  }), ep && eP && (0, r.jsx)(X, {
+                  }), ep && ew && (0, r.jsx)(X, {
                     id: U.Hr,
                     "aria-controls": U.gV,
                     "aria-selected": ec === j.X1.SOUNDBOARD,
@@ -329,7 +329,7 @@ function J(e) {
                     viewType: j.X1.SOUNDBOARD,
                     children: (0, r.jsxs)("div", {
                       className: F.soundmojiLabelContainer,
-                      children: [Z.intl.string(Z.t.EHlAMT), null != eT && (0, r.jsx)(p.IGR, {
+                      children: [Z.intl.string(Z.t.EHlAMT), null != eS && (0, r.jsx)(p.IGR, {
                         text: Z.intl.string(Z.t.y2b7CA)
                       })]
                     })
@@ -340,7 +340,7 @@ function J(e) {
                 channel: K,
                 containerWidth: es,
                 onSelectSticker: Y,
-                closePopout: eI,
+                closePopout: eT,
                 ref: e => {
                   eo.current = e
                 }
@@ -357,22 +357,22 @@ function J(e) {
                 includeCreateEmojiButton: P,
                 emojiSize: null != es && es < q ? U.Su.MEDIUM : U.Su.LARGE,
                 pickerIntention: G.Hz.CHAT,
-                closePopout: eI,
+                closePopout: eT,
                 onSelectEmoji: H,
-                onSelectSoundmoji: eN,
+                onSelectSoundmoji: eR,
                 ref: e => {
                   eo.current = e
                 },
                 shouldShowSoundmojiInEmojiPicker: (null == (t = z.soundmoji) ? true : t.allowSending) === true,
-                showAddEmojiButton: eO.isEntrypointEnabled && null != K.guild_id
+                showAddEmojiButton: ev
               }) : null, ec === j.X1.SOUNDBOARD ? (0, r.jsx)("div", {
                 className: F.soundboardContainer,
                 children: (0, r.jsx)(A.Z, {
                   guildId: K.guild_id,
                   channel: K,
                   containerWidth: es,
-                  onClose: eI,
-                  onSelect: eR,
+                  onClose: eT,
+                  onSelect: eP,
                   analyticsSource: "expression-picker",
                   renderHeader: e => (0, r.jsx)("div", {
                     className: F.soundboardHeader,

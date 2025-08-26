@@ -46,7 +46,7 @@ function E(e) {
       return
     }
     if (null == t) return void v(false);
-    let n = T.isEntrypointExperimentEnabled || T.isEmojiEditingExperimentEnabled;
+    let n = T.isEntrypointOnlyExperimentEnabled || T.isEmojiEditingExperimentEnabled;
     f.K({
       guildId: t.guild_id,
       autoOpenFileInput: n,

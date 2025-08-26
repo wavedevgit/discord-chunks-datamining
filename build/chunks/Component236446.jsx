@@ -52,7 +52,7 @@ class L extends Chunk647438.PureComponent {
     this.props.code !== e.code && p.Z.resolveGuildTemplate(this.props.code)
   }
   renderButton(e, t) {
-    return A.KO ? (0, r.jsx)(u.zx, {
+    return Z.KO ? (0, r.jsx)(u.zx, {
       className: R.marginTop40,
       onClick: t,
       children: e
@@ -184,7 +184,7 @@ function k(e) {
     form: n,
     handleSubmit: i
   } = (0, f.Z)(t, false);
-  v.Z.flowStep(Z.MK.ORGANIC_GUILD_TEMPLATES, Z.X2.GUILD_CREATE);
+  v.Z.flowStep(A.MK.ORGANIC_GUILD_TEMPLATES, A.X2.GUILD_CREATE);
   let l = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(u.Dx, {
       className: P.header,

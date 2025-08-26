@@ -31,7 +31,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk197571 = require("./197571.js");
 
-function A(e, t, n) {
+function Z(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -146,24 +146,24 @@ class T extends Chunk647438.PureComponent {
     return (0, r.jsxs)(f.ZP, {
       children: [(0, r.jsx)(f.Ee, {
         src: n(892235),
-        className: Z.marginBottom8
+        className: A.marginBottom8
       }), (0, r.jsx)(f.Dx, {
         children: C.intl.format(C.t.ivLUf3, {
           username: e.username
         })
       }), (0, r.jsx)(f.DK, {
-        className: Z.marginTop20,
+        className: A.marginTop20,
         children: C.intl.string(C.t["8Su18/"])
       }), (0, r.jsx)(f.zx, {
         disabled: t,
-        className: Z.marginTop40,
+        className: A.marginTop40,
         onClick: this.handleResendVerification,
         children: t ? C.intl.string(C.t.CMa9Rk) : C.intl.string(C.t.lm1UKi)
       }), (0, r.jsx)(f.zx, {
         look: f.zx.Looks.LINK,
         color: f.zx.Colors.LINK,
         onClick: this.refreshUser,
-        className: Z.marginTop8,
+        className: A.marginTop8,
         children: C.intl.string(C.t.Po9eBQ)
       })]
     })
@@ -175,14 +175,14 @@ class T extends Chunk647438.PureComponent {
         giftCode: e
       }), (0, r.jsx)(f.zx, {
         disabled: null != n,
-        className: Z.marginTop40,
+        className: A.marginTop40,
         onClick: this.handleAccept,
         children: C.intl.string(C.t.n6I6k5)
       }), null != n ? (0, r.jsx)(f.DK, {
-        className: Z.marginTop20,
+        className: A.marginTop20,
         children: n
       }) : (0, r.jsx)(f.i_, {
-        className: Z.marginTop20,
+        className: A.marginTop20,
         children: C.intl.format(C.t.NYM08v, {
           userTag: I.ZP.getUserTag(t),
           onLogoutClick: this.handleLogout
@@ -228,13 +228,13 @@ class T extends Chunk647438.PureComponent {
     return null
   }
   constructor(...e) {
-    super(...e), A(this, "state", {
+    super(...e), Z(this, "state", {
       error: null,
       continueOnWeb: false,
       currentUser: null,
       sentVerification: false,
       fetchingUser: false
-    }), A(this, "refreshUser", () => {
+    }), Z(this, "refreshUser", () => {
       this.setState({
         fetchingUser: true
       }), h.k({
@@ -245,14 +245,14 @@ class T extends Chunk647438.PureComponent {
       })).catch(() => this.setState({
         fetchingUser: false
       }))
-    }), A(this, "handleLogout", () => {
+    }), Z(this, "handleLogout", () => {
       let e = this.props.match.params.giftCode;
       c.Z.logout("gift_code", S.Z5c.GIFT_CODE_LOGIN(e))
-    }), A(this, "handleResendVerification", () => {
+    }), Z(this, "handleResendVerification", () => {
       c.Z.verifyResend(), this.setState({
         sentVerification: true
       })
-    }), A(this, "handleAccept", async () => {
+    }), Z(this, "handleAccept", async () => {
       let {
         transitionTo: e,
         giftCode: t
@@ -270,7 +270,7 @@ class T extends Chunk647438.PureComponent {
           error: e
         })
       }
-    }), A(this, "resolveGiftCode", () => {
+    }), Z(this, "resolveGiftCode", () => {
       let {
         transitionTo: e
       } = this.props, t = this.getCode();

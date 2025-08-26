@@ -1462,7 +1462,8 @@ let eE = "@me",
     USER_SUMMARIES: "/users/@me/summaries",
     QUESTS: e => "/quests/".concat(e),
     ACCOUNT_REVERT: e => "/wasntme/".concat(e),
-    POWERUP_STORE: e => "/channels/".concat(e, "/boosts")
+    POWERUP_STORE: e => "/channels/".concat(e, "/boosts"),
+    CONFERENCE_MODE: "/conference-mode"
   }),
   eR = (0, Chunk860911.Ft)(eC),
   eP = (0, Chunk860911.Ft)(eN, [":", "?", "@"]);

@@ -485,7 +485,7 @@ class eu extends(r = Chunk647438.PureComponent) {
       consentRequired: y,
       authBoxClassName: S,
       hasLoggedInAccounts: C
-    } = this.props, Z = this.renderErrorMessage(), A = (0, i.jsx)(f.ua7, {
+    } = this.props, A = this.renderErrorMessage(), Z = (0, i.jsx)(f.ua7, {
       text: !c && y ? en.intl.string(en.t.AY4IVF) : null,
       children: e => (0, i.jsx)("div", es(eo({
         className: ei.marginTop20
@@ -613,7 +613,7 @@ class eu extends(r = Chunk647438.PureComponent) {
         required: true,
         onFocus: this.trackInputFocus,
         onBlur: this.trackInputBlur
-      }), (0, i.jsx)(O.Z, {}), this.renderConsentComponent(), A, Z, $.a ? null : (0, i.jsx)(I.zx, {
+      }), (0, i.jsx)(O.Z, {}), this.renderConsentComponent(), Z, A, $.a ? null : (0, i.jsx)(I.zx, {
         look: I.zx.Looks.LINK,
         color: I.zx.Colors.LINK,
         onClick: this.handleGotoLogin,

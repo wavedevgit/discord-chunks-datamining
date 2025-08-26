@@ -129,7 +129,7 @@ class ey extends Chunk647438.PureComponent {
         guild: e,
         target_application: t
       } = r;
-      null != t ? null != o && (a = (0, A.xF)(t.id, o, 1024)) : null != e && "string" == typeof e.splash && (a = P.ZP.getGuildSplashURL({
+      null != t ? null != o && (a = (0, Z.xF)(t.id, o, 1024)) : null != e && "string" == typeof e.splash && (a = P.ZP.getGuildSplashURL({
         id: e.id,
         splash: e.splash
       }))
