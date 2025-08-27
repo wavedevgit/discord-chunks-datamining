@@ -5,6 +5,7 @@ require.d(exports, {
   $z: () => R,
   I1: () => b,
   IZ: () => y,
+  O2: () => D,
   PJ: () => A,
   Qb: () => E,
   Yc: () => I,
@@ -394,5 +395,14 @@ function w(e) {
     search_session_id: l.ZP.getSessionId(t),
     search_query_id: l.ZP.getQueryId(t),
     search_autocomplete_select_action: n
+  })
+}
+
+function D(e) {
+  let {
+    searchContext: t
+  } = e;
+  r.ZP.trackWithMetadata(u.rMx.SEARCH_BAR_VIEWED, {
+    search_type: t.type
   })
 }

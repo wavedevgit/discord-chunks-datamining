@@ -76,7 +76,7 @@ function m(e) {
     lang: n,
     style: D,
     className: k
-  }), [n, D, k]), G = (0, f.$)({
+  }), [n, D, k]), G = (0, f.$V)({
     location: "RootElementContextProvider"
   });
   return i.useLayoutEffect(() => {

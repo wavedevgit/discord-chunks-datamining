@@ -2,8 +2,9 @@
 /** chunk id: 819439, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $: () => a,
-  Q: () => s
+  $V: () => a,
+  Qg: () => s,
+  ef: () => l
 });
 var Chunk818083 = require("./818083.js");
 let i = {
@@ -53,6 +54,20 @@ function s(e) {
   } = e, {
     enabled: r
   } = o.getCurrentConfig({
+    location: t
+  }, {
+    autoTrackExposure: n
+  });
+  return r
+}
+
+function l(e) {
+  let {
+    location: t,
+    autoTrackExposure: n = true
+  } = e, {
+    inExperiment: r
+  } = o.useExperiment({
     location: t
   }, {
     autoTrackExposure: n

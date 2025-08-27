@@ -337,6 +337,10 @@ let Z = {
   [Chunk981631.rMx.NOTIFICATION_PERMISSION_STATUS]: {
     throttlePeriod: 12 * L,
     throttleKeys: e => [e.os_enabled, e.notification_authorization_status, e.foreground_app_enabled, e.background_app_enabled]
+  },
+  [Chunk981631.rMx.SEARCH_BAR_VIEWED]: {
+    throttlePeriod: L,
+    throttleKeys: () => []
   }
 };
 

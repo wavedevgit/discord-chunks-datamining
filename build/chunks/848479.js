@@ -83,14 +83,36 @@ class c extends Chunk77450.h {
     }
   }
   enablePerfMemoryHooks(e) {
-    return a.ZP.enablePerfMemoryHooks(e)
+    try {
+      return a.ZP.enablePerfMemoryHooks(e)
+    } catch (e) {
+      return null
+    }
   }
   disablePerfMemoryHooks() {
-    return Chunk998502.ZP.disablePerfMemoryHooks()
+    try {
+      return Chunk998502.ZP.disablePerfMemoryHooks()
+    } catch (e) {
+      return null
+    }
   }
   getPerfAttributedMemory() {
     try {
       return Chunk998502.ZP.getPerfAttributedMemory()
+    } catch (e) {
+      return null
+    }
+  }
+  getPerfAttributedMemoryCallstacks(e) {
+    try {
+      return a.ZP.getPerfAttributedMemoryCallstacks(e)
+    } catch (e) {
+      return null
+    }
+  }
+  getPerfAttributedMemoryStats() {
+    try {
+      return Chunk998502.ZP.getPerfAttributedMemoryStats()
     } catch (e) {
       return null
     }

@@ -581,6 +581,18 @@ let z = {
       } = this.getDiscordUtils();
       return null == module ? true : module()
     },
+    getPerfAttributedMemoryCallstacks(e) {
+      let {
+        getPerfAttributedMemoryCallstacks: t
+      } = this.getDiscordUtils();
+      return null == t ? true : t(e)
+    },
+    getPerfAttributedMemoryStats() {
+      let {
+        getPerfAttributedMemoryStats: e
+      } = this.getDiscordUtils();
+      return null == module ? true : module()
+    },
     showOpenDialog: e => I.fileManager.showOpenDialog({
       properties: e
     }),

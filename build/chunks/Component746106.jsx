@@ -80,7 +80,7 @@ function S(e) {
       location: "RootThemeContextProvider"
     }).enabled,
     q = (0, d.Z)("RootThemeContextProvider"),
-    X = (0, E.$)({
+    X = (0, E.$V)({
       location: "RootThemeContextProvider"
     }),
     Q = (0, _.On)({

@@ -509,7 +509,7 @@ function W(e) {
       location: "Search"
     }),
     F = k || Z,
-    V = (0, A.$)({
+    V = (0, A.$V)({
       location: "Search"
     }),
     W = i.useMemo(() => t.type === U.aib.DMS ? G.intl.string(G.t.m7OrlZ) : V ? G.intl.formatToPlainString(G.t.LDZtFB, {
@@ -524,8 +524,15 @@ function W(e) {
           className: B.shortcut
         })
       })]
-    }) : G.intl.string(G.t["5h0QOD"]), [t.type, F, L, V]);
-  return (0, r.jsx)(Y, {
+    }) : G.intl.string(G.t["5h0QOD"]), [t.type, F, L, V]),
+    K = (0, A.ef)({
+      location: "Search"
+    });
+  return i.useEffect(() => {
+    K && (0, M.O2)({
+      searchContext: t
+    })
+  }, [K, t]), (0, r.jsx)(Y, {
     className: n,
     searchPopoutClassName: s,
     searchBarContainerClassName: o,

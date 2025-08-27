@@ -203,7 +203,7 @@ function er(e) {
     withFastTravel: t,
     quickSwitcherInsteadOfTitle: n,
     focusSectionProps: i
-  } = e, l = (0, c.e7)([M.Z], () => M.Z.getChannelId()), a = (0, Z.$)({
+  } = e, l = (0, c.e7)([M.Z], () => M.Z.getChannelId()), a = (0, Z.$V)({
     location: "TitleText"
   }), o = (0, c.e7)([D.Z], () => {
     let e = D.Z.getChannel(l);
