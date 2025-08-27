@@ -2,8 +2,9 @@
 /** chunk id: 806774, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  K: () => l,
-  m: () => c
+  Ku: () => l,
+  MK: () => u,
+  ml: () => c
 });
 var Chunk481060 = require("./481060.js"),
   Chunk570140 = require("./570140.js"),
@@ -31,5 +32,17 @@ function c(e) {
   i.Z.dispatch({
     type: "EMOJI_FILE_INPUT_AUTO_OPEN",
     autoOpen: t
+  })
+}
+
+function u(e) {
+  let {
+    emojiId: t,
+    userImage: n
+  } = e;
+  i.Z.dispatch({
+    type: "EMOJI_CACHE_RAW_EMOJI_ASSET",
+    emojiId: t,
+    userImage: n
   })
 }

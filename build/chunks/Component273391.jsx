@@ -51,8 +51,8 @@ function j(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let _ = new Chunk710845.Z("ImageEditor"),
-  y = {
+let y = new Chunk710845.Z("ImageEditor"),
+  _ = {
     width: 240,
     height: 240
   },
@@ -65,10 +65,10 @@ let _ = new Chunk710845.Z("ImageEditor"),
     } = e, O = l.useRef({
       x: 0,
       y: 0
-    }), [w, S] = l.useState({
+    }), [I, S] = l.useState({
       x: 0,
       y: 0
-    }), T = l.useRef(null), [P, A] = l.useState(1), [M, R] = l.useState(null), [D, k] = l.useState({
+    }), P = l.useRef(null), [T, A] = l.useState(1), [M, R] = l.useState(null), [D, k] = l.useState({
       top: 0,
       bottom: 0,
       left: 0,
@@ -81,7 +81,7 @@ let _ = new Chunk710845.Z("ImageEditor"),
       (0, g.Z)()
     }, []);
     let K = l.useCallback(e => {
-        if (null == T.current) return;
+        if (null == P.current) return;
         let {
           x: t,
           y: n
@@ -89,11 +89,11 @@ let _ = new Chunk710845.Z("ImageEditor"),
         O.current = {
           x: t,
           y: n
-        }, T.current.style.transform = "translate3d(".concat(t, "px, ").concat(n, "px, 0) rotate(").concat(z, "deg)"), S({
+        }, P.current.style.transform = "translate3d(".concat(t, "px, ").concat(n, "px, 0) rotate(").concat(z, "deg)"), S({
           x: t,
           y: n
         })
-      }, [T, z, D]),
+      }, [P, z, D]),
       X = l.useCallback(e => {
         if (null == M) return;
         let t = C(M, e, B),
@@ -107,7 +107,7 @@ let _ = new Chunk710845.Z("ImageEditor"),
         }), null == J || J()
       }, [M, K, B, J]),
       q = l.useCallback(() => {
-        if (null == T.current || null == M) return;
+        if (null == P.current || null == M) return;
         let e = (z + 90) % 360,
           t = -O.current.x,
           n = O.current.y,
@@ -116,7 +116,7 @@ let _ = new Chunk710845.Z("ImageEditor"),
           i = C({
             width: r,
             height: l
-          }, P, B);
+          }, T, B);
         K({
           x: n,
           y: t
@@ -124,20 +124,20 @@ let _ = new Chunk710845.Z("ImageEditor"),
           width: r,
           height: l
         }), k(i), null == J || J()
-      }, [M, z, K, P, B, J]),
+      }, [M, z, K, T, B, J]),
       Q = l.useCallback(() => {
         if (null == M) return {};
         let {
           height: e,
           width: t
-        } = N(E(M, z), P);
+        } = N(E(M, z), T);
         return {
           height: e,
           width: t,
           minHeight: e,
           minWidth: t
         }
-      }, [M, z, P]),
+      }, [M, z, T]),
       $ = l.useCallback(e => {
         L({
           x: e.clientX - O.current.x,
@@ -164,38 +164,38 @@ let _ = new Chunk710845.Z("ImageEditor"),
     let et = l.useRef(null),
       en = l.useCallback(async () => {
         let e;
-        if (null == T.current || null == M) return;
+        if (null == P.current || null == M) return;
         let r = Date.now(),
-          l = T.current,
+          l = P.current,
           a = {
             height: f.eT,
             width: f.eT
           },
           s = null;
         if (null != et.current && (et.current(), et.current = null), F) try {
-          let n = I({
+          let n = w({
               file: t,
               image: l,
-              cropDimensions: y,
+              cropDimensions: _,
               cropOriginCoordinates: O.current,
               maxDimensions: a,
               imageRotation: z,
               resizeWidth: f.eT,
               resizeHeight: f.eT
-            }, M, P),
+            }, M, T),
             {
               result: r,
               cancelFn: i
             } = await (0, h.$p)(n);
           et.current = i, e = await r
         } catch (e) {
-          _.error("Error cropping GIF", e), s = f.ze.GIF_CROPPING
+          y.error("Error cropping GIF", e), s = f.ze.GIF_CROPPING
         } finally {
           var u;
           null == (u = et.current) || u.call(et), et.current = null
         } else e = V ? n : (0, o.PT)({
           image: l,
-          cropDimensions: y,
+          cropDimensions: _,
           cropOriginCoordinates: O.current,
           maxDimensions: a,
           imageRotation: z
@@ -209,14 +209,14 @@ let _ = new Chunk710845.Z("ImageEditor"),
           var e;
           null == (e = et.current) || e.call(et), et.current = null
         }
-      }, [t, z, F, V, i, M, P, n]);
+      }, [t, z, F, V, i, M, T, n]);
     l.useEffect(() => {
       en()
-    }, [en, w, z, M, U, P, W]);
+    }, [en, I, z, M, U, T, W]);
     let er = l.useCallback(() => {
-      if (null == T.current) return;
-      let e = T.current.naturalWidth,
-        t = T.current.naturalHeight;
+      if (null == P.current) return;
+      let e = P.current.naturalWidth,
+        t = P.current.naturalHeight;
       R({
         width: e,
         height: t
@@ -252,15 +252,15 @@ let _ = new Chunk710845.Z("ImageEditor"),
           src: n,
           crossOrigin: "anonymous",
           alt: p.intl.string(p.t.EYR1FR),
-          ref: T,
+          ref: P,
           onMouseDown: $,
           draggable: false
         }), !V && (0, r.jsx)("div", {
           className: b.overlay,
           style: {
             opacity: +(null != M),
-            width: y.width,
-            height: y.height
+            width: _.width,
+            height: _.height
           },
           children: (0, r.jsx)(c.Text, {
             className: b.panHint,
@@ -377,7 +377,7 @@ function C(e, t, n) {
     right: i
   }
 }
-let I = (e, t, n) => {
+let w = (e, t, n) => {
   let {
     height: r,
     width: l

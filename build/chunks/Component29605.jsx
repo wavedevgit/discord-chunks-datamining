@@ -137,14 +137,13 @@ let K = d().throttle(Chunk80932.OQ, 1e3),
             autoComplete: "off",
             value: null != c ? c : "",
             onBlur: () => {
-              if (c !== n.name) {
-                let e = D.ZP.sanitizeEmojiName(c);
-                e !== n.name && (0, b.dv)({
-                  guildId: t,
-                  emojiId: n.id,
-                  name: e
-                }), d(e)
-              }
+              if (c === n.name) return;
+              let e = D.ZP.sanitizeEmojiName(c);
+              e !== n.name && (0, b.dv)({
+                guildId: t,
+                emojiId: n.id,
+                name: e
+              }), d(e)
             },
             onChange: e => {
               d(e.target.value)
@@ -398,7 +397,7 @@ let K = d().throttle(Chunk80932.OQ, 1e3),
           var t;
           null == (t = module.current) || exports.activateUploadDialogue()
         }
-        Chunk806774.m({
+        Chunk806774.ml({
           autoOpen: false
         })
       }
@@ -427,18 +426,28 @@ let K = d().throttle(Chunk80932.OQ, 1e3),
           }
         })
       }, [ee.isEmojiEditingExperimentEnabled, exports]),
-      ea = (e, n, r) => (0, I.G)({
-        data: e,
-        file: n,
-        image: r,
-        guildId: t.id,
-        uploadId: l,
-        hideErrorModal: true,
-        analyticsLocation: {
-          page: B.ZY5.GUILD_SETTINGS
-        }
-      }),
-      es = async e => {
+      ea = async (e, n, r) => {
+        let i = await (0, I.G)({
+          data: e,
+          file: n,
+          image: r,
+          guildId: t.id,
+          uploadId: l,
+          hideErrorModal: true,
+          analyticsLocation: {
+            page: B.ZY5.GUILD_SETTINGS
+          }
+        });
+        if ("object" != typeof i || !("id" in i)) return i;
+        U.MK({
+          emojiId: i.id,
+          userImage: {
+            data: e,
+            file: n,
+            image: r
+          }
+        })
+      }, es = async e => {
         a((0, m.Z)()), R.default.track(B.rMx.EMOJI_UPLOAD_STARTED, {
           guild_id: t.id,
           upload_id: l

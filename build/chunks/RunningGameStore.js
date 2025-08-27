@@ -694,6 +694,14 @@ function e4() {
           game_metadata_v2: (0, T.sD)(e)
         })
       }
+  }), Chunk998502.ZP.setGameDetectionErrorCallback((e, t, n, r, i) => {
+    R.default.track(U.rMx.GAME_DETECTION_ERROR, {
+      error_code: e.toString(),
+      distributor: t,
+      commit_hash: n,
+      file_name: r,
+      line_number: i
+    })
   })
 });
 class e8 extends(i = Chunk442837.ZP.Store) {

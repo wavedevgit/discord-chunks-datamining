@@ -47,7 +47,7 @@ function E(e) {
     }
     if (null == t) return void v(false);
     let n = T.isEntrypointOnlyExperimentEnabled || T.isEmojiEditingExperimentEnabled;
-    f.K({
+    f.Ku({
       guildId: t.guild_id,
       autoOpenFileInput: n,
       analyticsLocation: y

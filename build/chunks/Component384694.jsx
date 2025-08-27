@@ -1,7 +1,7 @@
 /** Chunk was on 2262 **/
 /** chunk id: 384694, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  q: () => _
+  q: () => y
 }), require("./467055.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -24,13 +24,13 @@ let v = e => ({
     value: e.id
   }),
   j = e => d.Z.can(x.Plq.CREATE_GUILD_EXPRESSIONS, e),
-  _ = e => {
+  y = e => {
     let {
       onChange: t,
       selected: n,
       onError: d,
-      labelledBy: _,
-      isEmojiAnimated: y
+      labelledBy: y,
+      isEmojiAnimated: _
     } = e, O = (0, i.cj)([c.Z, m.ZP], () => Object.fromEntries(m.ZP.getFlattenedGuildIds().map(e => c.Z.getGuild(e)).filter(h.lm).map(e => [e.id, e]))), E = (0, i.cj)([o.ZP], () => Object.fromEntries(Object.entries(O).map(e => {
       let [t, n] = e;
       return [t, function(e) {
@@ -44,9 +44,9 @@ let v = e => ({
       }({
         guild: n,
         emojis: o.ZP.getGuildEmoji(t),
-        isEmojiAnimated: y
+        isEmojiAnimated: _
       })]
-    })), [O, y]), N = l.useMemo(() => Object.values(O).filter(j).map(v), [O]), C = l.useCallback(e => {
+    })), [O, _]), N = l.useMemo(() => Object.values(O).filter(j).map(v), [O]), C = l.useCallback(e => {
       let [t] = e;
       if (null == t || null == t.value) return null;
       let n = O[t.value];
@@ -63,7 +63,7 @@ let v = e => ({
           children: t.label
         })]
       })
-    }, [O]), I = l.useCallback(e => {
+    }, [O]), w = l.useCallback(e => {
       if (null == e || null == e.value) return null;
       let t = O[e.value];
       return null == t ? null : (0, r.jsxs)("div", {
@@ -98,10 +98,10 @@ let v = e => ({
       options: N,
       popoutPosition: "top",
       popoutWidth: 240,
-      renderOptionLabel: I,
+      renderOptionLabel: w,
       renderOptionValue: C,
       value: n,
-      "aria-labelledby": _,
+      "aria-labelledby": y,
       placeholder: N.length < 1 ? p.intl.string(p.t.jHpxws) : p.intl.string(p.t["4mqeQE"]),
       isDisabled: N.length < 1
     })

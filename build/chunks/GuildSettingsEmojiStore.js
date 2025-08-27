@@ -2,14 +2,17 @@
 /** chunk id: 471613, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => O
+  Z: () => A
 });
-var r, Chunk442837 = require("./442837.js"),
+var r, Chunk31775 = require("./31775.js"),
+  o = require.n(Chunk31775),
+  Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk40572 = require("./40572.js"),
-  Chunk914010 = require("./914010.js");
+  Chunk914010 = require("./914010.js"),
+  Chunk70956 = require("./70956.js");
 
-function l(e, t, n) {
+function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -17,81 +20,97 @@ function l(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let c = {},
-  u = {},
-  d = 0,
-  f = false;
+let f = {},
+  _ = {},
+  p = 0,
+  h = false,
+  m = new(o())({
+    max: 5,
+    maxAge: Chunk70956.Z.Millis.HOUR
+  });
 
-function _(e) {
+function g(e) {
   let {
     guildId: t,
     emojis: n
   } = e;
-  u[t] = n.map(e => new a.Z(e))
-}
-
-function p(e) {
-  let {
-    guildId: t
-  } = e;
-  u[t] = []
-}
-
-function h() {
-  d++
-}
-
-function m() {
-  d--
-}
-
-function g(e) {
-  let {
-    autoOpen: t
-  } = e;
-  f = t
+  _[t] = n.map(e => new l.Z(e))
 }
 
 function E(e) {
+  let {
+    guildId: t
+  } = e;
+  _[t] = []
+}
+
+function b() {
+  p++
+}
+
+function y() {
+  p--
+}
+
+function O(e) {
+  let {
+    autoOpen: t
+  } = e;
+  h = t
+}
+
+function v(e) {
   var t;
   let {
     guildId: n
   } = e;
-  c[n] = (null != (t = c[n]) ? t : 0) + 1
+  f[n] = (null != (t = f[n]) ? t : 0) + 1
 }
 
-function b(e) {
+function I(e) {
   let {
     guildId: t,
     emojiId: n
   } = e;
-  u[t] = u[t].filter(e => e.id !== n)
+  _[t] = _[t].filter(e => e.id !== n)
 }
-class y extends(r = Chunk442837.ZP.Store) {
+
+function T(e) {
+  let {
+    emojiId: t,
+    userImage: n
+  } = e;
+  m.set(t, n)
+}
+class S extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk914010.Z)
   }
   isUploadingEmoji() {
-    return d > 0
+    return p > 0
   }
   getEmojiRevision(e) {
     var t;
-    return null != (t = c[e]) ? t : 0
+    return null != (t = f[e]) ? t : 0
   }
   getEmojis(e) {
-    return u[e]
+    return _[e]
   }
   getEmojiFileInputAutoOpen() {
-    return f
+    return h
+  }
+  getEmojiRawAsset(e) {
+    return m.get(e)
   }
 }
-l(y, "displayName", "GuildSettingsEmojiStore");
-let O = new y(Chunk570140.Z, {
-  EMOJI_DELETE: b,
-  EMOJI_FETCH_SUCCESS: _,
-  EMOJI_FETCH_FAILURE: p,
-  EMOJI_UPLOAD_START: h,
-  EMOJI_UPLOAD_STOP: m,
-  EMOJI_FILE_INPUT_AUTO_OPEN: g,
-  GUILD_EMOJIS_UPDATE: E
+d(S, "displayName", "GuildSettingsEmojiStore");
+let A = new S(Chunk570140.Z, {
+  EMOJI_DELETE: I,
+  EMOJI_FETCH_SUCCESS: g,
+  EMOJI_FETCH_FAILURE: E,
+  EMOJI_UPLOAD_START: b,
+  EMOJI_UPLOAD_STOP: y,
+  EMOJI_FILE_INPUT_AUTO_OPEN: O,
+  EMOJI_CACHE_RAW_EMOJI_ASSET: T,
+  GUILD_EMOJIS_UPDATE: v
 })

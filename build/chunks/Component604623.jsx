@@ -1,8 +1,8 @@
 /** Chunk was on 9007 **/
 /** chunk id: 604623, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
-  CreateEmojiWithRolesModal: () => E,
-  UpdateEmojiRolesModal: () => C
+  CreateEmojiWithRolesModal: () => C,
+  UpdateEmojiRolesModal: () => R
 }), require("./388685.js"), require("./35282.js"), require("./642613.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,6 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk80932 = require("./80932.js"),
   Chunk935369 = require("./935369.js"),
   Chunk730089 = require("./730089.js"),
+  Chunk806774 = require("./806774.js"),
   Chunk626135 = require("./626135.js"),
   Chunk768581 = require("./768581.js"),
   Chunk176354 = require("./176354.js"),
@@ -25,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk815976 = require("./815976.js");
 
-function w(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var i = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(i);
@@ -44,7 +45,7 @@ function w(e) {
   return e
 }
 
-function _(e, t) {
+function k(e, t) {
   if (null == e) return {};
   var i, n, r = function(e, t) {
     if (null == e) return {};
@@ -59,7 +60,7 @@ function _(e, t) {
   }
   return r
 }
-let k = e => {
+let O = e => {
   let {
     className: t,
     onChange: i,
@@ -70,24 +71,24 @@ let k = e => {
   } = e;
   return (0, n.jsx)(u.XZJ, {
     size: 24,
-    className: a()(S.checklistRow, t),
+    className: a()(w.checklistRow, t),
     value: s,
     onChange: i,
     type: u.XZJ.Types.INVERTED,
     children: (0, n.jsxs)("div", {
-      className: S.checklistLabel,
+      className: w.checklistLabel,
       children: [(0, n.jsx)(u.Text, {
         color: "interactive-active",
         variant: r,
         children: l
       }), o && (0, n.jsx)(u.IGR, {
-        text: y.intl.string(y.t.nhbtEh)
+        text: S.intl.string(S.t.nhbtEh)
       })]
     })
   })
 };
 
-function O(e) {
+function E(e) {
   let {
     transitionState: t,
     onClose: i,
@@ -102,24 +103,24 @@ function O(e) {
       role_id: t
     } = e;
     return t
-  }))), [a, b]), g = b.size > 0;
+  }))), [a, b]), j = b.size > 0;
   return (0, n.jsx)(d.Modal, {
     onClose: i,
     transitionState: t,
-    title: y.intl.string(y.t.nP7nDQ),
-    subtitle: y.intl.string(y.t.I4SYUF),
+    title: S.intl.string(S.t.nP7nDQ),
+    subtitle: S.intl.string(S.t.I4SYUF),
     preview: true,
     actions: [{
-      text: y.intl.string(y.t["ETE/oK"]),
+      text: S.intl.string(S.t["ETE/oK"]),
       variant: "secondary",
       onClick: i
     }, {
-      text: y.intl.string(y.t.R3BPHx),
+      text: S.intl.string(S.t.R3BPHx),
       variant: "primary",
       onClick: () => {
         h(Array.from(b), i)
       },
-      disabled: !g,
+      disabled: !j,
       loading: m
     }],
     children: (0, n.jsxs)(u.Kqy, {
@@ -138,9 +139,9 @@ function O(e) {
           children: [":", c, ":"]
         })]
       }), (0, n.jsxs)("div", {
-        children: [(0, n.jsx)(k, {
-          className: S.selectAllCheckbox,
-          label: y.intl.string(y.t["Ve/y5+"]),
+        children: [(0, n.jsx)(O, {
+          className: w.selectAllCheckbox,
+          label: S.intl.string(S.t["Ve/y5+"]),
           textVariant: "text-md/semibold",
           value: p,
           onChange: () => {
@@ -153,8 +154,8 @@ function O(e) {
           }
         }, "allSubscriptionRoles"), a.map((e, t) => (0, n.jsxs)(n.Fragment, {
           children: [0 !== t && (0, n.jsx)("div", {
-            className: S.seperator
-          }), (0, n.jsx)(k, {
+            className: w.seperator
+          }), (0, n.jsx)(O, {
             onChange: () => {
               let t;
               return t = e.role_id, f(e => {
@@ -172,34 +173,42 @@ function O(e) {
   })
 }
 
-function E(e) {
+function C(e) {
   var {
     guildId: t,
     data: i,
     file: l
-  } = e, a = _(e, ["guildId", "data", "file"]);
+  } = e, a = k(e, ["guildId", "data", "file"]);
   let [s, o] = r.useState(false), d = async (e, n) => {
     try {
       o(true);
       let r = (0, c.Z)();
-      f.default.track(v.rMx.EMOJI_UPLOAD_STARTED, {
+      p.default.track(y.rMx.EMOJI_UPLOAD_STARTED, {
         guild_id: t,
         upload_id: r
-      }), await (0, b.G)({
+      });
+      let a = await (0, b.G)({
         guildId: t,
         uploadId: r,
         data: i,
         file: l,
         roles: e
+      });
+      "object" == typeof a && "id" in a && f.MK({
+        emojiId: a.id,
+        userImage: {
+          data: i,
+          file: l
+        }
       }), n()
     } catch (e) {} finally {
       o(false)
     }
-  }, u = (0, j.qi)(t, {
+  }, u = (0, x.qi)(t, {
     includeSoftDeleted: true,
     sortDeletedListingsLast: true
   }), m = g.ZP.sanitizeEmojiName(l.name.split(".")[0]);
-  return (0, n.jsx)(O, w({
+  return (0, n.jsx)(E, _({
     emojiName: m,
     emojiUrl: i,
     onSave: d,
@@ -208,12 +217,12 @@ function E(e) {
   }, a))
 }
 
-function C(e) {
+function R(e) {
   var {
     emoji: t,
     guildId: i
-  } = e, l = _(e, ["emoji", "guildId"]);
-  let a = p.ZP.getEmojiURL({
+  } = e, l = k(e, ["emoji", "guildId"]);
+  let a = j.ZP.getEmojiURL({
       id: t.id,
       animated: t.animated,
       size: 40
@@ -227,11 +236,11 @@ function C(e) {
         emojiId: t.id,
         roles: e
       }) && n()
-    }, d = (0, j.qi)(i, {
+    }, d = (0, x.qi)(i, {
       includeSoftDeleted: true
     });
   d.sort((e, t) => Number(e.soft_deleted) - Number(t.soft_deleted));
-  let u = (0, x.Z)(i),
+  let u = (0, v.Z)(i),
     b = r.useMemo(() => {
       let e = new Set(u.map(e => {
         let {
@@ -241,7 +250,7 @@ function C(e) {
       }));
       return t.roles.filter(t => e.has(t))
     }, [t.roles, u]);
-  return (0, n.jsx)(O, w({
+  return (0, n.jsx)(E, _({
     emojiName: t.name,
     emojiUrl: a,
     onSave: c,
