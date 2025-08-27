@@ -96,7 +96,7 @@ function er(e) {
   }), eP = l.useMemo(() => null != el ? {
     [el]: [t.id]
   } : {}, [el, t.id]);
-  (0, d.$)(eP);
+  (0, d.$)(eP, "UserProfileModalV2");
   let eT = (0, T.ZP)(t.id, eh ? el : true),
     eN = I.ZP.useName(null == eT ? true : eT.guildId, eo, t),
     {

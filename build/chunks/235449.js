@@ -2,8 +2,8 @@
 /** chunk id: 235449, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   FO: () => Z,
-  nA: () => y,
-  qQ: () => O,
+  nA: () => w,
+  qQ: () => y,
   r7: () => b
 }), require("./388685.js"), require("./642613.js"), require("./583741.js");
 var Chunk647438 = require("./647438.js"),
@@ -47,7 +47,7 @@ function Z(e) {
   }
 }
 
-function y(e) {
+function w(e) {
   let t = (0, s.Wu)([d.Z, m.Z, c.Z], () => a()(m.Z.getThreadsForGuild(e)).values().map(e => a().values(e)).flatten().map(e => {
     let {
       id: t
@@ -57,7 +57,7 @@ function y(e) {
   return r.useMemo(() => a()(t).sort((e, t) => g.default.compare(u.ZP.lastMessageId(e), u.ZP.lastMessageId(t))).reverse().value(), [t])
 }
 
-function O(e, t, n, l) {
+function y(e, t, n, l) {
   let u = e.isModeratorReportChannel(),
     {
       showResolvedFlags: h

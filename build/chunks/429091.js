@@ -2,7 +2,7 @@
 /** chunk id: 429091, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  d: () => b
+  d: () => y
 }), require("./953529.js"), require("./388685.js"), require("./539854.js"), require("./415506.js");
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
@@ -11,9 +11,10 @@ var Chunk512722 = require("./512722.js"),
   Chunk579092 = require("./579092.js"),
   Chunk570140 = require("./570140.js"),
   Chunk311929 = require("./311929.js"),
-  Chunk823379 = require("./823379.js");
+  Chunk823379 = require("./823379.js"),
+  Chunk854586 = require("./854586.js");
 
-function d(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -21,32 +22,32 @@ function d(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let f = new Chunk579092.Yd("KkvStore"),
-  _ = Symbol("version"),
-  p = Symbol("boxedPartition"),
-  h = Object.freeze({}),
-  m = Object.freeze({
-    current: h,
+let _ = new Chunk579092.Yd("KkvStore"),
+  p = Symbol("version"),
+  h = Symbol("boxedPartition"),
+  m = Object.freeze({}),
+  g = Object.freeze({
+    current: m,
     length: 0,
     version: false
   }),
-  g = Object.hasOwnProperty;
+  E = Object.hasOwnProperty;
 
-function E(e, t) {
+function b(e, t) {
   if (e === t) returntrue;
   let n = Object.keys(e),
     r = Object.keys(t);
   if (n.length !== r.length) returnfalse;
   for (let r of n) {
     let n = r;
-    if (!g.call(t, r) || !(0, c.$E)(e[n], t[n])) returnfalse
+    if (!E.call(t, r) || !(0, c.$E)(e[n], t[n])) returnfalse
   }
   returntrue
 }
-class b extends Chunk442837.yh {
+class y extends Chunk442837.yh {
   _derivedVersion(e) {
-    let t = e[_];
-    return null == t && (e[_] = t = this.nextVersion++), t
+    let t = e[p];
+    return null == t && (e[p] = t = this.nextVersion++), t
   }
   mapPartitions(e) {
     let t = [];
@@ -62,7 +63,7 @@ class b extends Chunk442837.yh {
   registerWithLibdiscore(e) {
     let t;
     switch (this.mode) {
-      case "typescript-libdiscore-dual-read":
+      case "typescript-libdiscore-dual-read": {
         this.shadowState = {
           root: {},
           derived: {
@@ -75,10 +76,57 @@ class b extends Chunk442837.yh {
             root: e,
             derived: t
           }
-        }, this.addChangeListener(() => {
-          i()(null != this.shadowState, "Shadow state must be set in dual-read mode before running validation.")
+        };
+        let e = Symbol();
+        this.addChangeListener(() => {
+          let t = this.shadowState;
+          i()(null != t, "Shadow state must be set in dual-read mode before running validation."), (0, d.tL)(this.getName(), "Kkv", n => {
+            let r = Object.keys(this.root),
+              i = Object.keys(t.root);
+            for (let i of r) {
+              if (!Object.prototype.hasOwnProperty.call(t.root, i)) {
+                let e = this.root[i];
+                n({
+                  root: e.root,
+                  derived: e[a.V]
+                }, {
+                  root: {},
+                  derived: {
+                    length: 0,
+                    memoized: {}
+                  }
+                });
+                continue
+              }
+              let r = this.root[i],
+                o = t.root[i],
+                s = r[a.V].memoized[e],
+                l = o[a.V].memoized[e];
+              if (null != s && s === l) continue;
+              n({
+                root: r.root,
+                derived: r[a.V]
+              }, {
+                root: o.root,
+                derived: o[a.V]
+              });
+              let c = {};
+              r[a.V].memoized[e] = c, o[a.V].memoized[e] = c
+            }
+            for (let e of i) Object.prototype.hasOwnProperty.call(this.root, e) || n({
+              root: {},
+              derived: {
+                length: 0,
+                memoized: {}
+              }
+            }, {
+              root: t.root[e].root,
+              derived: t.root[e][a.V]
+            })
+          })
         });
-        break;
+        break
+      }
       case "libdiscore":
         t = this.setKkvRoot.bind(this);
         break;
@@ -114,19 +162,19 @@ class b extends Chunk442837.yh {
   }
   getPartition(e) {
     let t = this.root[e];
-    return null != t ? t.root : h
+    return null != t ? t.root : m
   }
   getBoxedPartition(e) {
     let t = this.root[e];
-    if (null == t) return m;
+    if (null == t) return g;
     let {
       root: n,
       [a.V]: {
         memoized: r,
         length: i
       }
-    } = t, o = r[p];
-    return null == o && (r[p] = o = {
+    } = t, o = r[h];
+    return null == o && (r[h] = o = {
       current: n,
       version: this._derivedVersion(r),
       length: i
@@ -158,7 +206,7 @@ class b extends Chunk442837.yh {
           memoized: s
         }
       } = i, l = s[t];
-      return g.call(s, t) || (l = e(o), s[t] = l), l
+      return E.call(s, t) || (l = e(o), s[t] = l), l
     }
   }
   memoized(e) {
@@ -167,11 +215,22 @@ class b extends Chunk442837.yh {
       let {
         memoized: n
       } = this.derived, r = n[t];
-      return g.call(n, t) || (r = e(this.root), n[t] = r), r
+      return E.call(n, t) || (r = e(this.root), n[t] = r), r
     }
   }
   setKkvRoot(e, t) {
     this.root = e, this.derived = t
+  }
+  debugFindRecordByClusteringKeyDoNotUse(e) {
+    let t = [];
+    for (let n in this.root) {
+      let r = this.root[n].root[e];
+      null != r && t.push({
+        partitionKey: n,
+        record: r
+      })
+    }
+    return t
   }
   constructor(e, t = "typescript") {
     let n = {};
@@ -226,7 +285,7 @@ class b extends Chunk442837.yh {
                 }
               }, this.derived.numPartitions++, this.derived.length += r, t = true, true)
             }
-            if ("function" == typeof n && (n = n(r.root)), E(r.root, n)) returnfalse;
+            if ("function" == typeof n && (n = n(r.root)), b(r.root, n)) returnfalse;
             let i = Object.keys(n).length,
               o = r[a.V].length;
             return this.derived.length -= o, 0 === i ? (delete this.root[e], this.derived.numPartitions--) : (this.root[e] = {
@@ -265,10 +324,10 @@ class b extends Chunk442837.yh {
         n[i] = a
       }
     }
-    super(l.Z, n), d(this, "mode", true), d(this, "root", true), d(this, "shadowState", true), d(this, "derived", true), d(this, "nextVersion", true), this.mode = t, this.root = {}, this.shadowState = null, this.derived = {
+    super(l.Z, n), f(this, "mode", true), f(this, "root", true), f(this, "shadowState", true), f(this, "derived", true), f(this, "nextVersion", true), this.mode = t, this.root = {}, this.shadowState = null, this.derived = {
       numPartitions: 0,
       memoized: {},
       length: 0
-    }, this.nextVersion = 0, f.info("".concat(this.getName(), " initialized in mode: ").concat(this.mode))
+    }, this.nextVersion = 0, _.info("".concat(this.getName(), " initialized in mode: ").concat(this.mode))
   }
 }

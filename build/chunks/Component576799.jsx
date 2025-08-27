@@ -29,7 +29,7 @@ function p(e) {
   }), [t]), p = (0, s.p)(), m = i.useMemo(() => ({
     [n.guild_id]: [t.author.id]
   }), [n.guild_id, t.author.id]);
-  (0, a.$)(m);
+  (0, a.$)(m, "ThreadMessageAccessoryMessage");
   let g = i.useMemo(() => null != t.content && "" !== t.content ? (0, l.ZP)(t, {
     formatInline: true,
     shouldFilterKeywords: p

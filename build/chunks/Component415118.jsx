@@ -44,9 +44,9 @@ let T = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
     context: T,
     onSelect: U
   } = e, D = {
-    page: _.ZY5.GUILD_CHANNEL,
-    section: _.jXE.CHAT_USERNAME,
-    object: _.qAy.CONTEXT_MENU_ITEM
+    page: A.ZY5.GUILD_CHANNEL,
+    section: A.jXE.CHAT_USERNAME,
+    object: A.qAy.CONTEXT_MENU_ITEM
   }, L = (0, M.Z)({
     userId: t.id,
     guildId: n
@@ -59,7 +59,7 @@ let T = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
     context: T
   }), V = (0, f.Z)({
     user: t
-  }), G = (0, I.Z)(t.id), F = (0, C.Z)(t.id), Y = (0, c.Z)({
+  }), G = (0, x.Z)(t.id), F = (0, C.Z)(t.id), Y = (0, c.Z)({
     guildId: n,
     userId: t.id,
     analyticsLocation: D,
@@ -84,14 +84,14 @@ let T = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
     user: t,
     guildId: n,
     location: "GuildUserContextMenu"
-  }), ee = (0, O.Z)(t, n), et = (0, x.Z)(t.id, n), en = (0, y.Z)(t, n), el = (0, d.Z)({
+  }), ee = (0, O.Z)(t, n), et = (0, I.Z)(t.id, n), en = (0, y.Z)(t, n), el = (0, d.Z)({
     id: t.id,
-    label: A.intl.string(A.t["/AXYnJ"])
+    label: _.intl.string(_.t["/AXYnJ"])
   }), ei = t.isNonUserBot();
   return (0, l.jsxs)(i.v2r, {
     navId: "user-context",
     onClose: r.Zy,
-    "aria-label": A.intl.string(A.t.liqwPD),
+    "aria-label": _.intl.string(_.t.liqwPD),
     onSelect: U,
     children: [!ei && (0, l.jsxs)(l.Fragment, {
       children: [(0, l.jsxs)(i.kSQ, {

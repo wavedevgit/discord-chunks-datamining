@@ -50,7 +50,7 @@ function S(e) {
     }
   }, [v, U, i]), (0, E.$)({
     [n]: [t]
-  }), l.useEffect(() => {
+  }, "GuildMemberModViewSidebar"), l.useEffect(() => {
     !async function() {
       let e = [u.Z.requestMembersById(n, [t]), (0, m.nb)(n, [t]), (0, I.Z)(t, true, {
         guildId: n,

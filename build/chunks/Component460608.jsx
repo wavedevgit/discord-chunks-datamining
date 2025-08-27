@@ -37,7 +37,7 @@ function x(e) {
   let h = i.useMemo(() => b.length > 0 ? {
     [t]: b
   } : {}, [t, b]);
-  (0, u.$)(h);
+  (0, u.$)(h, "GuildPowerupsRecentActivity");
   let C = (0, a.e7)([f.Z], () => {
     var e;
     return null == (e = f.Z.getGuild(t)) ? true : e.premiumSubscriberCount

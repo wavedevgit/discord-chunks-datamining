@@ -59,7 +59,7 @@ function P(e, t) {
   }), e
 }
 
-function I(e) {
+function A(e) {
   let {
     user: t,
     guildId: n,
@@ -69,17 +69,17 @@ function I(e) {
     onShowProfile: S,
     onWatchStream: h,
     appContext: P
-  } = e, I = (0, v.Z)({
+  } = e, A = (0, m.Z)({
     onAction: () => {
       null == S || S()
     }
-  }), A = (0, y.Z)({
+  }), I = (0, y.Z)({
     user: t,
     context: P
   }), M = (0, b.Z)({
     user: t,
     appContext: P
-  }), x = (0, p.Z)(t.id, h), C = (0, E.Z)(t.id), D = (0, m.Z)(t.id, a), w = (0, j.Z)({
+  }), x = (0, p.Z)(t.id, h), C = (0, E.Z)(t.id), D = (0, v.Z)(t.id, a), w = (0, j.Z)({
     user: t
   }), N = (0, u.Z)(null, t), T = (0, f.Z)({
     user: t,
@@ -103,7 +103,7 @@ function I(e) {
       children: [(0, l.jsx)(r.kSQ, {
         children: R
       }), (0, l.jsxs)(r.kSQ, {
-        children: [I, A, M, x]
+        children: [A, I, M, x]
       }), (0, l.jsx)(r.kSQ, {
         children: C
       }), (0, l.jsx)(r.kSQ, {
@@ -119,7 +119,7 @@ function I(e) {
   })
 }
 
-function A(e) {
+function I(e) {
   let {
     user: t,
     mediaEngineContext: n,
@@ -127,7 +127,7 @@ function A(e) {
     onShowProfile: a,
     onWatchStream: c,
     appContext: g
-  } = e, S = (0, v.Z)({
+  } = e, S = (0, m.Z)({
     onAction: () => {
       null == a || a()
     }
@@ -137,7 +137,7 @@ function A(e) {
   }), P = (0, b.Z)({
     user: t,
     appContext: g
-  }), I = (0, p.Z)(t.id, c), A = (0, E.Z)(t.id), M = (0, m.Z)(t.id, n), x = (0, j.Z)({
+  }), A = (0, p.Z)(t.id, c), I = (0, E.Z)(t.id), M = (0, v.Z)(t.id, n), x = (0, j.Z)({
     user: t
   }), C = (0, u.Z)(null, t), D = (0, f.Z)({
     user: t,
@@ -161,9 +161,9 @@ function A(e) {
       children: [(0, l.jsx)(r.kSQ, {
         children: U
       }), (0, l.jsxs)(r.kSQ, {
-        children: [S, h, P, I]
+        children: [S, h, P, A]
       }), (0, l.jsx)(r.kSQ, {
-        children: A
+        children: I
       }), (0, l.jsx)(r.kSQ, {
         children: C
       }), (0, l.jsxs)(r.kSQ, {
@@ -193,10 +193,10 @@ let M = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
     }
     return r
   }(e, ["guildId", "channelId"]);
-  return null != t && null != n ? (0, l.jsx)(I, P(h({}, r), {
+  return null != t && null != n ? (0, l.jsx)(A, P(h({}, r), {
     guildId: t,
     channelId: n
-  })) : (0, l.jsx)(A, P(h({}, r), {
+  })) : (0, l.jsx)(I, P(h({}, r), {
     guildId: t,
     channelId: n
   }))

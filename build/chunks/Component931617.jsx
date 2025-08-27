@@ -48,12 +48,12 @@ function j(e, n) {
     P = (0, i.e7)([Z.Z], () => Z.Z.getGuild(n)),
     v = (0, i.e7)([g.Z], () => g.Z.getSortedRoles(n)),
     x = (0, i.e7)([a.Z], () => a.Z.roleStyle),
-    _ = (0, o.sE)(n, {
+    y = (0, o.sE)(n, {
       location: O,
       targetUserId: e
     }),
     {
-      userRoles: y,
+      userRoles: _,
       isGuildMember: N,
       canManageRoles: E
     } = (0, i.cj)([d.ZP, b.Z], () => {
@@ -65,22 +65,22 @@ function j(e, n) {
       }
     }, [e, n, P]),
     C = (0, s.ZP)(n, e);
-  if (__OVERLAY__ || null == y || null == P || !N) return null;
+  if (__OVERLAY__ || null == _ || null == P || !N) return null;
   let I = b.Z.getHighestRole(P),
     S = E && !j ? v.map(t => {
       if ((0, c.fI)(t)) return null;
       let i = t.managed || !b.Z.isRoleHigher(P, I, t),
-        a = y.includes(t.id);
+        a = _.includes(t.id);
       return i && !a ? null : (0, l.jsx)(r.S89, {
         id: t.id,
         label: () => h(t, x, C),
         disabled: i,
         action: () => {
-          y.includes(t.id) ? (u.Z.updateMemberRoles(n, e, y.filter(e => e !== t.id), [], [t.id]), _(o.jQ.REMOVE_ROLE)) : (u.Z.updateMemberRoles(n, e, y.concat([t.id]), [t.id], []), _(o.jQ.ADD_ROLE))
+          _.includes(t.id) ? (u.Z.updateMemberRoles(n, e, _.filter(e => e !== t.id), [], [t.id]), y(o.jQ.REMOVE_ROLE)) : (u.Z.updateMemberRoles(n, e, _.concat([t.id]), [t.id], []), y(o.jQ.ADD_ROLE))
         },
         checked: a
       }, t.id)
-    }) : v.map(e => (0, c.fI)(e) || !y.includes(e.id) ? null : (0, l.jsx)(r.sNh, {
+    }) : v.map(e => (0, c.fI)(e) || !_.includes(e.id) ? null : (0, l.jsx)(r.sNh, {
       id: e.id,
       label: () => h(e, x, C)
     }, e.id));

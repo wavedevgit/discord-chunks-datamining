@@ -44,14 +44,14 @@ function g(e) {
     type: "active",
     statusText: m.intl.string(f.default.FFLkm5)
   });
-  let T = I.reduce((e, t) => {
+  let y = I.reduce((e, t) => {
       let {
         type: n,
         powerup: r
       } = t;
       return n === p.A3.POWERUP_ACTIVATED ? e + r.cost : e
     }, 0),
-    y = I.reduce((e, t) => {
+    T = I.reduce((e, t) => {
       var n, r;
       let {
         powerup: i
@@ -65,7 +65,7 @@ function g(e) {
       } = t;
       return e + (null != (n = null == r ? true : r.cost) ? n : 0)
     }, 0),
-    A = Z ? T : y,
+    A = Z ? y : T,
     O = !Z && S > A ? "+" : true,
     k = !E && C ? w.image.animatedUrl : w.image.staticUrl,
     R = null != w.viewCta && "" !== w.viewCta ? w.viewCta : m.intl.string(f.default["27GkOj"]),

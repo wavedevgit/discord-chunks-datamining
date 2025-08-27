@@ -108,7 +108,7 @@ let A = Chunk647438.memo(function(e) {
     })), A = (0, c.e7)([y.ZP], () => y.ZP.getMember(E, a.user.id)), w = (0, g.X7)(l.guild_id, null == A ? true : A.userId, null != (t = null == A ? true : A.colorStrings) ? t : null), R = i.useMemo(() => ({
       [E]: [a.user.id]
     }), [E, a.user.id]);
-    (0, f.$)(R);
+    (0, f.$)(R, "RequestToSpeakSidebar");
     let M = a.rtsState === j.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
 
     function D() {

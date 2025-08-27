@@ -44,6 +44,7 @@ let o = {
     return null != i || c || a ? (0, l.jsx)(r.mzw, {
       children: (0, l.jsxs)(r.hE2, {
         fullWidth: true,
+        direction: "vertical",
         children: [i, c && (0, l.jsx)(r.zxk, {
           variant: "secondary",
           text: s.intl.string(s.t.Tot4EB),

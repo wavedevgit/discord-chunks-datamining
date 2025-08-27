@@ -27,11 +27,11 @@ function Z(e) {
     channel: t,
     className: n,
     onClose: a
-  } = e, Z = (0, o.e7)([d.Z], () => d.Z.can(x.Plq.READ_MESSAGE_HISTORY, t)), O = (0, h.cD)(t), w = () => {
+  } = e, Z = (0, o.e7)([d.Z], () => d.Z.can(x.Plq.READ_MESSAGE_HISTORY, t)), y = (0, h.cD)(t), O = () => {
     a(), (0, j.R6)(t, true, "Thread Browser Empty State")
-  }, N = l.useCallback((e, t) => {
+  }, S = l.useCallback((e, t) => {
     a(), (0, j.ok)(e, !t, v.on.BROWSER)
-  }, [a]), S = function(e, t) {
+  }, [a]), N = function(e, t) {
     let [n, r] = l.useState(""), [a, s] = l.useState(false), [o, i] = l.useState(false), [c, d] = l.useState([]), h = async () => {
       if (null != n && "" !== n && !a) {
         s(true);
@@ -72,7 +72,7 @@ function Z(e) {
         }), Z ? (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)("div", {
             className: b.divider
-          }), (0, r.jsx)(y, function(e) {
+          }), (0, r.jsx)(w, function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
                 r = Object.keys(n);
@@ -89,10 +89,10 @@ function Z(e) {
               })
             }
             return e
-          }({}, S))]
+          }({}, N))]
         }) : null, (0, r.jsx)("div", {
           className: b.spacer
-        }), O ? (0, r.jsx)("div", {
+        }), y ? (0, r.jsx)("div", {
           className: b.createButton,
           children: (0, r.jsx)(i.zx, {
             size: "sm",
@@ -111,21 +111,21 @@ function Z(e) {
           })
         })]
       }),
-      children: S.hasResults ? (0, r.jsx)(m.Z, {
+      children: N.hasResults ? (0, r.jsx)(m.Z, {
         channel: t,
-        startThread: w,
-        goToThread: N,
-        threadIds: S.results
+        startThread: O,
+        goToThread: S,
+        threadIds: N.results
       }) : (0, r.jsx)(f.Z, {
         channel: t,
-        startThread: w,
-        goToThread: N
+        startThread: O,
+        goToThread: S
       })
     })
   })
 }
 
-function y(e) {
+function w(e) {
   let {
     query: t,
     setQuery: n,

@@ -3,6 +3,7 @@
 "use strict";
 require.d(exports, {
   IH: () => o,
+  Z$: () => s,
   qC: () => a
 }), require("./539854.js");
 let r = 10,
@@ -14,4 +15,8 @@ function o(e) {
 
 function a() {
   return i.join(" -> ")
+}
+
+function s() {
+  return i.length > 0 ? i[i.length - 1] : null
 }

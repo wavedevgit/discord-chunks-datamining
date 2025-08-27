@@ -126,7 +126,7 @@ function O(e) {
         icon: u.$Eu,
         "aria-label": ""
       }), (0, r.jsx)(d.Z.Title, {
-        children: y.intl.string(T.default.yv3DJC)
+        children: T.intl.string(y.default.yv3DJC)
       })]
     }), (0, r.jsxs)("div", {
       className: S.contentContainer,
@@ -143,11 +143,11 @@ function O(e) {
             switch (e) {
               case N.Us.LEVEL:
                 return {
-                  title: y.intl.string(T.default["TXY/b2"]), description: y.intl.string(T.default.aJv4PD)
+                  title: T.intl.string(y.default["TXY/b2"]), description: T.intl.string(y.default.aJv4PD)
                 };
               case N.Us.PERK:
                 return {
-                  title: y.intl.string(T.default.TV3Vm5), description: y.intl.string(T.default.STx9ho)
+                  title: T.intl.string(y.default.TV3Vm5), description: T.intl.string(y.default.STx9ho)
                 }
             }
           }(n), s = n === N.Us.LEVEL ? u.zJl : "div";

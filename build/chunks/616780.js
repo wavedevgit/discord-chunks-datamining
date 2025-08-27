@@ -2,15 +2,16 @@
 /** chunk id: 616780, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $: () => u
+  $: () => f
 }), require("./951288.js");
 var Chunk647438 = require("./647438.js"),
   Chunk392711 = require("./392711.js"),
   o = require.n(Chunk392711);
 require("./902704.js");
-var Chunk941028 = require("./941028.js");
+var Chunk941028 = require("./941028.js"),
+  Chunk960048 = require("./960048.js");
 
-function s(e, t, n) {
+function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -19,7 +20,7 @@ function s(e, t, n) {
   }) : e[t] = n, e
 }
 
-function l(e, t) {
+function c(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -30,16 +31,25 @@ function l(e, t) {
   return n
 }
 
-function c(e, t) {
+function u(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
+let d = false;
 
-function u(e) {
-  r.useEffect(() => (o().forEach(e, (e, t) => (0, a.ym)(t, e)), () => {
+function f(e, t) {
+  r.useEffect(() => (o().forEach(e, (e, n) => {
+    !d && e.length > 50 && (d = true, s.Z.captureMessage("SubscribeGuildMembers called with more than 50 userIds.", {
+      extra: {
+        userIdsCount: e.length,
+        guildId: n,
+        reason: t
+      }
+    })), (0, a.ym)(n, e)
+  }), () => {
     o().forEach(e, (e, t) => (0, a.w5)(t, e))
-  }), [e])
+  }), [e, t])
 }

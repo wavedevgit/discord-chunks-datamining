@@ -1,7 +1,7 @@
 /** Chunk was on 16120 **/
 /** chunk id: 833737, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => C
+  default: () => N
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -29,14 +29,14 @@ var Chunk951288 = require("./951288.js"),
   Chunk931617 = require("./931617.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let C = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
+let N = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
   var t;
   let {
     user: n,
     guildId: u,
     channelId: c,
     context: M,
-    onSelect: C,
+    onSelect: N,
     moderationAlertId: I,
     analyticsLocation: A,
     analyticsLocations: T,
@@ -74,7 +74,7 @@ let C = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
     channelId: c
   }), Q = (0, p.Z)(n, u, null != c ? c : L, R), H = (0, v.Z)(c, I), W = (0, h.Z)(n, u), X = (0, S.Z)(n.id, u, false, R), z = (0, b.Z)({
     id: n.id,
-    label: N.intl.string(N.t["/AXYnJ"]),
+    label: C.intl.string(C.t["/AXYnJ"]),
     onSuccess: q
   }), J = (0, m.Z)(n, u), $ = !!(null == n ? true : n.isNonUserBot());
   return (0, l.jsxs)(a.v2r, {
@@ -82,8 +82,8 @@ let C = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
     onClose: () => {
       (0, o.Zy)(), null == D || D()
     },
-    "aria-label": N.intl.string(N.t.liqwPD),
-    onSelect: C,
+    "aria-label": C.intl.string(C.t.liqwPD),
+    onSelect: N,
     children: [!$ && (0, l.jsxs)(l.Fragment, {
       children: [(0, l.jsxs)(a.kSQ, {
         children: [G, V]

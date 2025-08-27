@@ -24,12 +24,12 @@ function E(e) {
   let {
     widgets: t,
     onClick: n
-  } = e, o = (0, i.useMemo)(() => t.map(e => e.games.map(e => e.applicationId)).flat(), [t]), E = (0, s.e7)([u.Z], () => u.Z.canFetchDetectableGames()), [y, O] = (0, i.useState)([]), {
-    themeType: v
-  } = (0, _.z)(), I = v === p.l.SIDEBAR;
+  } = e, o = (0, i.useMemo)(() => t.map(e => e.games.map(e => e.applicationId)).flat(), [t]), a = (0, s.e7)([u.Z], () => u.Z.canFetchDetectableGames()), [E, y] = (0, i.useState)([]), {
+    themeType: O
+  } = (0, _.z)(), v = O === p.l.SIDEBAR;
   return (0, i.useEffect)(() => {
-    if (E) return void c.Z.getDetectableGames();
-    O(o.map(e => u.Z.getDetectableGame(e)).filter(e => null != e).map(e => {
+    if (a) return void c.Z.getDetectableGames();
+    y(o.map(e => u.Z.getDetectableGame(e)).filter(e => null != e).map(e => {
       var t;
       return {
         image: null != (t = d.ZP.getApplicationIconURL({
@@ -39,23 +39,22 @@ function E(e) {
         name: e.name
       }
     }).filter(e => "" !== e.image).slice(0, g))
-  }, [o, E]), (0, r.jsx)(f.Z.Overlay, {
-    children: (0, r.jsxs)(l.P3F, {
-      "aria-label": h.intl.string(h.t.JjiwFx),
-      className: a()(m.breadcrumb, {
-        [m.mdPadding]: I
-      }),
-      onClick: n,
+  }, [o, a]), (0, r.jsx)(l.P3F, {
+    "aria-label": h.intl.string(h.t.JjiwFx),
+    onClick: n,
+    className: m.breadcrumb,
+    children: (0, r.jsxs)(f.Z.Overlay, {
+      className: m.innerContainer,
       children: [(0, r.jsx)(l.Text, {
-        variant: I ? "text-sm/medium" : "text-xs/medium",
+        variant: v ? "text-sm/medium" : "text-xs/medium",
         children: h.intl.string(h.t.JjiwFx)
       }), (0, r.jsx)("div", {
         className: m.icons,
-        children: y.map((e, t) => (0, r.jsx)(b, {
+        children: E.map((e, t) => (0, r.jsx)(b, {
           iconUrl: e.image,
           name: e.name,
-          displayCount: t === y.length - 1 && o.length > g,
-          gameCount: o.length - y.length
+          displayCount: t === E.length - 1 && o.length > g,
+          gameCount: o.length - E.length
         }, t))
       })]
     })

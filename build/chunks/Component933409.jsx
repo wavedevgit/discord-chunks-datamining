@@ -29,7 +29,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk372897 = require("./372897.js"),
   Chunk388032 = require("./388032.jsx");
 
-function x(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       l = Object.keys(n);
@@ -48,7 +48,7 @@ function x(e) {
   return e
 }
 
-function I(e, t) {
+function x(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -61,12 +61,12 @@ function I(e, t) {
   }), e
 }
 
-function N(e, t, N, _, A) {
+function N(e, t, N, A, _) {
   let T = i.useMemo(() => ({
       [t]: [e.id]
     }), [t, e.id]),
-    U = null != _ ? [_] : [];
-  (0, u.$)(T), (0, r.e7)([h.Z], () => h.Z.getGuildVersion(t), [t]);
+    U = null != A ? [A] : [];
+  (0, u.$)(T, "useAdminActionItems"), (0, r.e7)([h.Z], () => h.Z.getGuildVersion(t), [t]);
   let D = (0, r.e7)([O.Z], () => O.Z.getGuild(t), [t]),
     L = (0, r.e7)([E.default], () => {
       var t;
@@ -96,11 +96,11 @@ function N(e, t, N, _, A) {
       userId: e.id,
       guildId: t,
       channelId: N,
-      location: _,
-      appContext: A
+      location: A,
+      appContext: _
     }),
     Q = (0, f.sE)(t, {
-      location: _,
+      location: A,
       targetUserId: e.id
     }),
     K = (0, c.Z)(t, e.id),
@@ -135,7 +135,7 @@ function N(e, t, N, _, A) {
     J = async (t, n, l) => {
       if (t.ctrlKey || t.metaKey) try {
         var i;
-        await a.Z.setCommunicationDisabledDuration(n, l, S.UK.DURATION_60_SEC, null, _), Q(f.jQ.TIMEOUT), (0, o.showToast)((0, o.createToast)(M.intl.formatToPlainString(M.t.O9C3Nj, {
+        await a.Z.setCommunicationDisabledDuration(n, l, S.UK.DURATION_60_SEC, null, A), Q(f.jQ.TIMEOUT), (0, o.showToast)((0, o.createToast)(M.intl.formatToPlainString(M.t.O9C3Nj, {
           user: null != (i = P.ZP.getName(n, null, e)) ? i : ""
         }), o.ToastType.SUCCESS))
       } catch (e) {
@@ -197,8 +197,8 @@ function N(e, t, N, _, A) {
       let {
         default: i
       } = await n.e("5454").then(n.bind(n, 854360));
-      return n => (0, l.jsx)(i, I(x({}, n), {
-        location: _,
+      return n => (0, l.jsx)(i, x(I({}, n), {
+        location: A,
         guildId: t,
         user: e
       }))
@@ -213,8 +213,8 @@ function N(e, t, N, _, A) {
       let {
         default: i
       } = await n.e("43350").then(n.bind(n, 98746));
-      return n => (0, l.jsx)(i, I(x({}, n), {
-        location: _,
+      return n => (0, l.jsx)(i, x(I({}, n), {
+        location: A,
         guildId: t,
         user: e
       }))

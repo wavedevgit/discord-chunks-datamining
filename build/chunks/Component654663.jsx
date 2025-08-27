@@ -51,7 +51,7 @@ let D = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
     userId: n.id,
     guildId: t,
     channelId: G
-  }), V = (0, E.Z)(n, t, u), q = (0, C.Z)(n.id, u), W = (0, k.Z)(n.id), H = (0, _.Z)({
+  }), V = (0, E.Z)(n, t, u), q = (0, C.Z)(n.id, u), W = (0, k.Z)(n.id), H = (0, y.Z)({
     user: n,
     context: u
   }), B = (0, i.e7)([m.Z, p.Z], () => {
@@ -92,7 +92,7 @@ let D = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
     guildId: t,
     channelId: G,
     location: "ThreadUserContextMenu"
-  }), ei = (0, y.Z)({
+  }), ei = (0, _.Z)({
     user: n,
     guildId: t,
     channelId: G,

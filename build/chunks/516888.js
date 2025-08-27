@@ -11,7 +11,7 @@ var Chunk512722 = require("./512722.js"),
   Chunk570140 = require("./570140.js"),
   Chunk311929 = require("./311929.js"),
   Chunk823379 = require("./823379.js"),
-  Chunk544407 = require("./544407.js");
+  Chunk854586 = require("./854586.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -44,10 +44,13 @@ class h extends Chunk442837.yh {
             derived: t
           }
         }, this.addChangeListener(() => {
-          i()(null != this.shadowState, "Shadow state must be set in dual-read mode before running validation."), (0, u.t)(this.getName(), {
-            root: this.root,
-            derived: this.derived
-          }, this.shadowState)
+          let e = this.shadowState;
+          i()(null != e, "Shadow state must be set in dual-read mode before running validation."), (0, u.tL)(this.getName(), "Kv", t => {
+            t({
+              root: this.root,
+              derived: this.derived
+            }, e)
+          })
         });
         break;
       case "libdiscore":

@@ -1,7 +1,7 @@
 /** Chunk was on 8982 **/
 /** chunk id: 286694, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => f
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -16,18 +16,18 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function m(e, t, n) {
-  var m;
+function f(e, t, n) {
+  var f;
   let Z = a.Z.getChannel(n),
     E = (0, i.e7)([o.Z], () => o.Z.getGuild(t), [t]),
     P = (0, i.e7)([c.ZP], () => c.ZP.getPermissionsForUser(e.id, n), [n, e.id]),
-    v = (null == (m = s.default.getCurrentUser()) ? true : m.id) === e.id,
+    v = (null == (f = s.default.getCurrentUser()) ? true : f.id) === e.id,
     b = (0, i.e7)([u.Z], () => null != n && u.Z.canWithPartialContext(g.Plq.MUTE_MEMBERS, {
       channelId: n
     }), [n]);
   return null != Z && null != E && (b || v) && P.speaker ? (0, l.jsx)(r.sNh, {
     id: "audience",
-    label: v ? f.intl.string(f.t["6C6PJy"]) : f.intl.string(f.t.VK3vQ0),
+    label: v ? m.intl.string(m.t["6C6PJy"]) : m.intl.string(m.t.VK3vQ0),
     action: () => {
       v ? (0, d.yi)(Z) : (0, d.hz)(e, Z)
     }

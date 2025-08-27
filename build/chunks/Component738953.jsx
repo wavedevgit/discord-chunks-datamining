@@ -113,7 +113,7 @@ function z(e) {
   }), ea = (0, a.e7)([v.Z], () => null != Y ? v.Z.getGuild(Y) : null), es = i.useMemo(() => null != Y ? {
     [Y]: [n.id]
   } : {}, [Y, n.id]);
-  (0, d.$)(es);
+  (0, d.$)(es, "UserProfilePopout");
   let el = i.useRef(null),
     ec = (0, A.ZP)(n.id, Y),
     eu = (0, c.Z)(el),

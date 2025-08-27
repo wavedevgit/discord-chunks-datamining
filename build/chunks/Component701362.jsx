@@ -184,7 +184,7 @@ function j(e) {
   let [a, l] = (0, s.Wu)([b.Z, m.Z, g.Z, _.Z], () => (0, O.p9)(n, b.Z, m.Z, g.Z, _.Z)), c = (0, s.e7)([p.Z], () => p.Z.getStreamForUser(t.id, n.getGuildId())), d = (0, s.e7)([p.Z], () => p.Z.getActiveStreamForApplicationStream(c)), f = (0, s.e7)([h.default], () => h.default.getId()), y = (0, v.Cf)(c), I = (0, s.e7)([E.Z], () => (0, v.Um)(c, E.Z)), T = i.useMemo(() => ({
     [n.guild_id]: [t.id]
   }), [n.guild_id, t.id]);
-  return (0, u.$)(T), (0, r.jsx)(L, w(R({}, o), {
+  return (0, u.$)(T, "StreamPreviewPopout"), (0, r.jsx)(L, w(R({}, o), {
     canWatch: a,
     unavailableReason: l,
     user: t,

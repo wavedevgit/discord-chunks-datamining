@@ -28,12 +28,12 @@ function E(e, t) {
   }), E = (0, i.e7)([s.default], () => s.default.getId()), P = (0, g.Z)(e, t.guild_id)[0], v = (0, i.e7)([u.Z], () => null != u.Z.getStreamForUser(e, t.getGuildId())), b = (0, o.IX)(null == P ? true : P.application_id).data, h = (0, c.Z)(e, t.id);
   return E !== e && null != P && null != b && n && h && !v ? (0, l.jsx)(r.sNh, {
     id: "request-to-stream",
-    label: Z.intl.format(m.default["8qq+Hx"], {
+    label: Z.intl.format(f.default["8qq+Hx"], {
       applicationName: b.name
     }),
     action: function() {
       a.Z.sendActivityInvite({
-        type: f.mFx.STREAM_REQUEST,
+        type: m.mFx.STREAM_REQUEST,
         channelId: t.id,
         activity: P,
         content: "<@".concat(e, ">"),

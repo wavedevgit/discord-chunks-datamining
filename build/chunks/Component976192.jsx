@@ -28,39 +28,39 @@ function j(e) {
     analyticsLocations: w,
     context: N,
     icon: v
-  } = e, Z = f.Z.getGuild(t), _ = b.default.getId(), C = (0, a.e7)([O.default], () => O.default.getUser(j)), m = (0, a.e7)([p.ZP], () => p.ZP.isGuestOrLurker(t, j), [t, j]);
-  (0, a.e7)([d.Z], () => d.Z.getGuildVersion(t), [t]);
+  } = e, C = d.Z.getGuild(t), Z = b.default.getId(), _ = (0, a.e7)([O.default], () => O.default.getUser(j)), m = (0, a.e7)([p.ZP], () => p.ZP.isGuestOrLurker(t, j), [t, j]);
+  (0, a.e7)([f.Z], () => f.Z.getGuildVersion(t), [t]);
   let A = l.useMemo(() => ({
     [t]: [j]
   }), [t, j]);
-  (0, c.$)(A);
-  let k = N === P.IlC.POPOUT,
+  (0, c.$)(A, "useChangeIdentityItem");
+  let k = N === g.IlC.POPOUT,
     E = (0, s.Z)({
-      guild: Z,
+      guild: C,
       analyticsLocation: h
     }),
     x = (0, o.Aq)();
-  if (null == Z || k) return null;
-  let M = _ === j && (d.Z.can(P.Plq.CHANGE_NICKNAME, Z) || d.Z.can(P.Plq.MANAGE_NICKNAMES, Z)),
-    S = _ === j,
-    D = d.Z.canManageUser(P.Plq.MANAGE_NICKNAMES, j, Z);
-  if (!(M || D || S) || null == C || m) return null;
-  let G = Z.features.has(P.oNc.HUB) ? g.intl.string(g.t["+MWrWl"]) : g.intl.string(g.t["PKQB/P"]),
-    I = S ? G : g.intl.string(g.t.dilOFx);
+  if (null == C || k) return null;
+  let I = Z === j && (f.Z.can(g.Plq.CHANGE_NICKNAME, C) || f.Z.can(g.Plq.MANAGE_NICKNAMES, C)),
+    M = Z === j,
+    S = f.Z.canManageUser(g.Plq.MANAGE_NICKNAMES, j, C);
+  if (!(I || S || M) || null == _ || m) return null;
+  let D = C.features.has(g.oNc.HUB) ? P.intl.string(P.t["+MWrWl"]) : P.intl.string(P.t["PKQB/P"]),
+    G = M ? D : P.intl.string(P.t.dilOFx);
   return (0, n.jsx)(i.sNh, {
     id: "change-nickname",
     label: (0, n.jsx)("div", {
       className: y.labelWrapper,
       children: (0, n.jsx)("span", {
         className: y.label,
-        children: I
+        children: G
       })
     }),
     icon: v,
     action: () => {
-      S ? ((0, u.Z)(C.id, C.getAvatarURL(t, 80), {
+      M ? ((0, u.Z)(_.id, _.getAvatarURL(t, 80), {
         guildId: t
-      }), E(), x.dispatch(P.CkL.POPOUT_CLOSE), (0, i.pTH)()) : (0, i.ZDy)(async () => {
+      }), E(), x.dispatch(g.CkL.POPOUT_CLOSE), (0, i.pTH)()) : (0, i.ZDy)(async () => {
         let {
           default: e
         } = await r.e("17712").then(r.bind(r, 620021));
@@ -85,7 +85,7 @@ function j(e) {
             return e
           }({}, r), a = a = {
             guildId: t,
-            user: C,
+            user: _,
             analyticsSource: h,
             analyticsLocations: w
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {

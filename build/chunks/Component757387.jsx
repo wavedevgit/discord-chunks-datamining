@@ -93,7 +93,7 @@ let V = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
     guildId: n
   }), eZ = (0, c.Z)(null, l), eg = (0, C.Z)({
     user: l
-  }), eh = (0, y.Z)({
+  }), eh = (0, M.Z)({
     user: l,
     guildId: n,
     channelId: $,
@@ -106,14 +106,14 @@ let V = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
   }), eb = (0, x.Z)(l, n, $), ej = (0, w.Z)(l.id, n), eO = (0, R.Z)(l, n), ep = (0, b.Z)({
     id: l.id,
     label: H.intl.string(H.t["/AXYnJ"])
-  }), eE = (0, I.Z)(l.id, $), eP = (0, g.Z)(l.id), eN = (0, Z.Z)($), eC = (0, p.Z)(l), em = (0, E.Z)(l, n, $), eS = (0, r.e7)([P.Z], () => null != W ? P.Z.getChannel(W) : null), ex = (0, M.Z)({
+  }), eE = (0, I.Z)(l.id, $), eP = (0, g.Z)(l.id), eN = (0, Z.Z)($), eC = (0, p.Z)(l), em = (0, E.Z)(l, n, $), eS = (0, r.e7)([P.Z], () => null != W ? P.Z.getChannel(W) : null), ex = (0, y.Z)({
     commandType: a.yU.USER,
     commandTargetId: l.id,
     channel: null != eS ? eS : s,
     guildId: n,
     onHeightUpdate: K,
     context: X
-  }), eM = (0, h.Z)(l.id), ey = (0, r.e7)([N.Z], () => N.Z.getVoiceChannelId()), ev = (0, T.Z)(l, ey), eI = (0, O.Z)(l.id, s), e_ = l.isNonUserBot();
+  }), ey = (0, h.Z)(l.id), eM = (0, r.e7)([N.Z], () => N.Z.getVoiceChannelId()), ev = (0, T.Z)(l, eM), eI = (0, O.Z)(l.id, s), e_ = l.isNonUserBot();
   return (0, t.jsxs)(i.v2r, {
     navId: "user-context",
     onClose: d.Zy,
@@ -130,7 +130,7 @@ let V = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
       }), (0, t.jsx)(i.kSQ, {
         children: B && eZ
       }), (0, t.jsxs)(i.kSQ, {
-        children: [o && eo, o && ea, o && eE, B && ec, ex, B && eu, eg, B && ef, B && eh, V && eM]
+        children: [o && eo, o && ea, o && eE, B && ec, ex, B && eu, eg, B && ef, B && eh, V && ey]
       }), (0, t.jsx)(i.kSQ, {
         children: eb
       }), (0, t.jsxs)(i.kSQ, {

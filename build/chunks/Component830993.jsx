@@ -49,7 +49,7 @@ function I(e) {
       })) ? e : []
     }
   }, [o, g]);
-  (0, c.$)(v);
+  (0, c.$)(v, "VoiceChannelActivities");
   let j = (0, u.ZP)(o),
     x = Array.from((0, u.uF)(j).values()),
     P = null != (t = null == g ? true : g.filter(O.lm)) ? t : [],
