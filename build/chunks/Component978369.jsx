@@ -72,20 +72,18 @@ function f(e) {
       null != t && (t.tags.forEach(e => {
         n.delete(e)
       }), n.add(e), p({
-        action: "ADD_GAME_TAGS"
+        action: "EDIT_ACTION"
       }))
-    } else n.has(e) ? (n.delete(e), p({
-      action: "REMOVE_GAME_TAGS"
-    })) : (n.add(e), p({
-      action: "ADD_GAME_TAGS"
-    }));
+    } else n.has(e) ? n.delete(e) : n.add(e), p({
+      action: "EDIT_ACTION"
+    });
     (0, o.n$)(r, f, Array.from(n))
   }, [m, p, r, f]), j = (0, a.useCallback)(e => {
     let t = new Set(m);
     e.forEach(e => {
       t.delete(e)
     }), p({
-      action: "REMOVE_GAME_TAGS"
+      action: "EDIT_ACTION"
     }), (0, o.n$)(r, f, Array.from(t))
   }, [m, p, r, f]);
   return (0, n.jsx)(i.yRy, {

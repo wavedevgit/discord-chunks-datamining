@@ -35,11 +35,14 @@ function b(t) {
     transitionState: e,
     widget: i,
     userId: u,
-    onClose: b
-  } = t, m = r.useCallback(() => {
-    (0, o.y8)(i.type), b(), (0, x.L$)(h.qb.WIDGET_REMOVED)
-  }, [i.type, b]), v = (0, s.e7)([c.default], () => c.default.getUser(u));
-  return null == v ? null : (0, n.jsxs)(l.Modal, {
+    onClose: b,
+    trackUserProfileAction: m
+  } = t, v = r.useCallback(() => {
+    (0, o.y8)(i.type), m({
+      action: "EDIT_ACTION"
+    }), b(), (0, x.L$)(h.qb.WIDGET_REMOVED)
+  }, [i.type, b, m]), f = (0, s.e7)([c.default], () => c.default.getUser(u));
+  return null == f ? null : (0, n.jsxs)(a.Modal, {
     transitionState: e,
     onClose: b,
     title: p.intl.string(p.t.Mm07YW),
@@ -53,17 +56,17 @@ function b(t) {
     }, {
       variant: "critical-primary",
       text: p.intl.string(p.t.Mm07YW),
-      onClick: m
+      onClick: v
     }],
     children: [(0, n.jsx)("div", {
       className: g.widgetPreview,
       children: (0, n.jsx)(w, {
         widget: i,
-        user: v
+        user: f
       })
     }), (0, n.jsx)("div", {
       className: g.hintText,
-      children: (0, n.jsx)(a.Text, {
+      children: (0, n.jsx)(l.Text, {
         color: "text-secondary",
         variant: "text-sm/normal",
         children: p.intl.string(p.t.bQNGeX)

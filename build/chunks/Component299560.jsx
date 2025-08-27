@@ -53,23 +53,26 @@ function j(e) {
     widgetType: t,
     onAddWidget: r,
     size: i = "default",
-    loading: o = false
+    loading: o = false,
+    trackUserProfileAction: s
   } = e, {
-    placeholder: s,
-    getAriaLabel: j
-  } = O[t], y = "small" === i, v = a.useCallback(() => {
-    o || ((0, u.qH)(t), (0, d.L$)(g.qb.WIDGET_ADDED), null == r || r())
-  }, [t, r, o]);
+    placeholder: j,
+    getAriaLabel: y
+  } = O[t], v = "small" === i, x = a.useCallback(() => {
+    o || ((0, u.qH)(t), s({
+      action: "EDIT_ACTION"
+    }), (0, d.L$)(g.qb.WIDGET_ADDED), null == r || r())
+  }, [t, r, o, s]);
   return (0, n.jsxs)(c.P3F, {
-    className: l()(m.addButtonContainer, y && m.sizeSmall, o && m.loading),
-    onClick: v,
-    "aria-label": j(),
+    className: l()(m.addButtonContainer, v && m.sizeSmall, o && m.loading),
+    onClick: x,
+    "aria-label": y(),
     "aria-busy": o,
-    children: ["details" === s.variant ? (0, n.jsx)(f.i, {
-      applicationId: s.applicationId,
+    children: ["details" === j.variant ? (0, n.jsx)(f.i, {
+      applicationId: j.applicationId,
       size: i
     }) : (0, n.jsx)(f.c, {
-      applicationIds: s.applicationIds,
+      applicationIds: j.applicationIds,
       size: i
     }), (0, n.jsxs)("div", {
       className: m.overlay,

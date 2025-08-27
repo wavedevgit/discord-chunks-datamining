@@ -17,9 +17,10 @@ var Chunk951288 = require("./951288.js"),
 
 function d(e) {
   var t, r, {
-      onClose: d
+      onClose: d,
+      trackUserProfileAction: O
     } = e,
-    O = function(e, t) {
+    y = function(e, t) {
       if (null == e) return {};
       var r, n, o = function(e, t) {
         if (null == e) return {};
@@ -33,21 +34,21 @@ function d(e) {
         for (n = 0; n < i.length; n++) r = i[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (o[r] = e[r])
       }
       return o
-    }(e, ["onClose"]);
-  let y = (0, i.e7)([s.default], () => s.default.getCurrentUser()),
-    g = (0, u.Z)(),
-    j = o.useRef(new Set(g)),
-    m = p.rR.filter(e => j.current.has(e)),
-    h = m.length > 0,
-    [w, v] = o.useState(false),
-    P = {
+    }(e, ["onClose", "trackUserProfileAction"]);
+  let g = (0, i.e7)([s.default], () => s.default.getCurrentUser()),
+    j = (0, u.Z)(),
+    m = o.useRef(new Set(j)),
+    h = p.rR.filter(e => m.current.has(e)),
+    w = h.length > 0,
+    [v, P] = o.useState(false),
+    k = {
       onClick: () => d(),
       text: f.intl.string(f.t.cpT0Cg)
     },
     x = o.useCallback(() => {
-      v(true), d()
+      P(true), d()
     }, [d]);
-  return null == y ? null : (0, n.jsx)(l.Modal, (t = function(e) {
+  return null == g ? null : (0, n.jsx)(l.Modal, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {},
         n = Object.keys(r);
@@ -66,17 +67,18 @@ function d(e) {
     return e
   }({
     title: f.intl.string(f.t.grUgR0),
-    actions: h ? [] : [P],
-    size: h ? "md" : "sm",
+    actions: w ? [] : [k],
+    size: w ? "md" : "sm",
     onClose: d
-  }, O), r = r = {
-    children: h ? (0, n.jsx)("ul", {
+  }, y), r = r = {
+    children: w ? (0, n.jsx)("ul", {
       "aria-label": f.intl.string(f.t["+EIBSE"]),
       className: b.options,
-      children: m.map(e => (0, n.jsx)(a.Z, {
+      children: h.map(e => (0, n.jsx)(a.Z, {
         widgetType: e,
         onAddWidget: x,
-        loading: w
+        loading: v,
+        trackUserProfileAction: O
       }, e))
     }) : (0, n.jsx)(c.Text, {
       variant: "text-md/medium",

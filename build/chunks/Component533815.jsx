@@ -1,28 +1,33 @@
 /** Chunk was on 21585 **/
 /** chunk id: 533815, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  Z: () => d
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
   i = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
+  Chunk785717 = require("./785717.jsx"),
   Chunk86419 = require("./86419.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk51708 = require("./51708.js");
 
-function u(e) {
+function d(e) {
   let {
     game: t,
     widgetType: r,
     iconSize: a = "refresh_sm",
-    className: u
-  } = e, d = () => {
-    (0, o.$b)(r, t.applicationId)
+    className: d
+  } = e, {
+    trackUserProfileAction: f
+  } = (0, o.KZ)(), g = () => {
+    (0, c.$b)(r, t.applicationId), f({
+      action: "EDIT_ACTION"
+    })
   };
   return (0, n.jsx)(l.ua7, {
-    text: c.intl.string(c.t.HUvyDQ),
+    text: s.intl.string(s.t.HUvyDQ),
     children: e => {
       var t, r;
       return (0, n.jsx)(l.P3F, (t = function(e) {
@@ -43,12 +48,12 @@ function u(e) {
         }
         return e
       }({}, e), r = r = {
-        onClick: d,
-        "aria-label": c.intl.string(c.t.HUvyDQ),
-        className: i()(u, s.clickable),
+        onClick: g,
+        "aria-label": s.intl.string(s.t.HUvyDQ),
+        className: i()(d, u.clickable),
         children: (0, n.jsx)(l.XHJ, {
           size: a,
-          className: s.icon,
+          className: u.icon,
           color: l.TVs.colors.STATUS_DANGER
         })
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
