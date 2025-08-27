@@ -1,7 +1,7 @@
 /** Chunk was on 88479 **/
 /** chunk id: 202905, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  r: () => _
+  r: () => v
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk556955 = require("./556955.js");
-let v = {
+let _ = {
   id: "0",
   name: "",
   description: "",
@@ -40,22 +40,22 @@ let v = {
   badgeColorSecondary: null
 };
 
-function _(e) {
+function v(e) {
   let {
     pendingFields: t
   } = e, {
     guild: n,
-    guildProfile: _
+    guildProfile: v
   } = (0, s.cj)([p.Z], () => ({
     guild: p.Z.getGuild(),
     guildProfile: p.Z.getGuildProfile()
   })), O = null == n ? true : n.id, y = (0, s.e7)([d.Z], () => d.Z.get(O)), {
     fetchGuildProfile: C
-  } = (0, u.u)(O), N = (null == _ ? true : _.visibility) == null || !l.Y.VISIBLE.has(null == _ ? true : _.visibility), E = (null == _ ? true : _.visibility) === l.k.PUBLIC_WITH_RECRUITMENT;
+  } = (0, u.u)(O), N = (null == v ? true : v.visibility) == null || !l.Y.VISIBLE.has(null == v ? true : v.visibility), E = (null == v ? true : v.visibility) === l.k.PUBLIC_WITH_RECRUITMENT;
   i.useEffect(() => {
     null != O && C()
   }, [O, C]);
-  let I = i.useMemo(() => null == n || null == _ ? v : _, [n, _]),
+  let I = i.useMemo(() => null == n || null == v ? _ : v, [n, v]),
     S = i.useCallback(() => {
       (null == n ? true : n.id) != null && (E ? g.Z.updateGuildProfile(n.id, {
         visibility: l.k.PUBLIC

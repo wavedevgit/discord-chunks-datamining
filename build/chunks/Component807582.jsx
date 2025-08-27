@@ -24,8 +24,8 @@ let m = e => {
     } = e,
     x = g.features.has(m),
     j = (0, s.AR)(g.id, "GuildSettingsBoostPerks"),
-    v = (0, o._p)(m);
-  return !x && m === c.oNc.VANITY_URL && j ? null : (x ? (null != v && (i = d.intl.string(d.t.hUgjyM)), t = (0, r.jsxs)(r.Fragment, {
+    _ = (0, o._p)(m);
+  return !x && m === c.oNc.VANITY_URL && j ? null : (x ? (null != _ && (i = d.intl.string(d.t.hUgjyM)), t = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(a.$Eu, {
       color: a.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK,
       className: u.unlockedIcon
@@ -34,14 +34,14 @@ let m = e => {
       className: u.description,
       children: d.intl.string(d.t["0O+87u"])
     })]
-  })) : (null != v && (i = d.intl.string(d.t.L2wYYm)), t = (0, r.jsxs)(r.Fragment, {
+  })) : (null != _ && (i = d.intl.string(d.t.L2wYYm)), t = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(a.$Eu, {
       color: "currentColor",
       className: u.icon
     }), (0, r.jsx)(a.X6q, {
       variant: "eyebrow",
       className: u.description,
-      children: null != v && (0, o.e9)(v)
+      children: null != _ && (0, o.e9)(_)
     })]
   })), n = h || null == i ? (0, r.jsx)("div", {
     className: l()(u.availabilityIndicator, p),

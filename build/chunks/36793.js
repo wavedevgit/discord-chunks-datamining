@@ -32,7 +32,7 @@ function r(e) {
     }
   }(r, l), o = l % 180 != 0, c = n.width * a, d = n.height * a, u = Math.min(c, i.width), m = Math.min(d, i.height), g = (o ? n.height : n.width) / 2, p = (o ? n.width : n.height) / 2, h = (t.width / 2 - g - s.x) * a, f = (t.height / 2 - p - s.y) * a, b = o ? d : c, x = o ? c : d, {
     x: j,
-    y: v
+    y: _
   } = function(e, t, n) {
     switch (n) {
       case 0:
@@ -53,13 +53,13 @@ function r(e) {
         }
     }
   }(c, d, l);
-  return i.width < c && (j *= i.width / c), i.height < d && (v *= i.height / d), {
+  return i.width < c && (j *= i.width / c), i.height < d && (_ *= i.height / d), {
     sourceX: h,
     sourceY: f,
     sourceWidth: b,
     sourceHeight: x,
     destinationX: j,
-    destinationY: v,
+    destinationY: _,
     destinationWidth: o ? m : u,
     destinationHeight: o ? u : m,
     canvasWidth: u,

@@ -2,7 +2,7 @@
 /** chunk id: 861345, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   p: () => j,
-  s: () => v
+  s: () => _
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -33,14 +33,14 @@ function x(e) {
     onEdit: p,
     onMove: x,
     disabled: j = false
-  } = e, v = i.useRef(null), _ = i.useRef(null), {
+  } = e, _ = i.useRef(null), v = i.useRef(null), {
     drag: O,
     dragPreview: y,
     drop: C,
     isDragging: N
-  } = (0, h.Z)(v, d, u, x);
-  return O(_), y(C(v)), (0, r.jsxs)("div", {
-    ref: v,
+  } = (0, h.Z)(_, d, u, x);
+  return O(v), y(C(_)), (0, r.jsxs)("div", {
+    ref: _,
     className: a()(b.card, {
       [b.cardDragging]: N,
       [b.disabled]: j
@@ -53,7 +53,7 @@ function x(e) {
         emojiName: l,
         className: b.emoji
       }), !j && (0, r.jsx)("div", {
-        ref: _,
+        ref: v,
         className: b.dragIconWrapper,
         "data-dnd-name": g,
         children: (0, r.jsx)(o.Vni, {
@@ -125,7 +125,7 @@ function j(e) {
   })
 }
 
-function v(e) {
+function _(e) {
   let {
     onClick: t,
     children: n,

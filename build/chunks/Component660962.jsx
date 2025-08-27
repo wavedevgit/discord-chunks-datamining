@@ -74,14 +74,14 @@ function Y(e) {
   })
 }
 
-function X(e) {
+function q(e) {
   let {
     role: t,
     guildId: n,
     selectedStyle: i,
     disabled: l,
     shouldShowUpsell: s
-  } = e, o = (0, P.F)(U.intl.string(U.t.Mi9KbW)), d = (0, h.ZP)(), f = (0, v.oC)(n, t), x = {
+  } = e, o = (0, P.F)(U.intl.string(U.t.Mi9KbW)), d = (0, h.ZP)(), f = (0, _.oC)(n, t), x = {
     dark: {
       src: z,
       name: t.name
@@ -127,7 +127,7 @@ function X(e) {
           children: [(0, r.jsx)(g.Rny, {
             children: (0, r.jsx)("div", {
               className: F.roleStyleMessageContainer,
-              children: (0, r.jsx)(_.Z, {
+              children: (0, r.jsx)(v.Z, {
                 author: {
                   nick: o.author.username,
                   guildId: n,
@@ -158,7 +158,7 @@ function X(e) {
           variant: "text-sm/semibold",
           color: "button-outline-primary-text",
           children: U.intl.format(B.default.VpEDJS, {
-            magical: (0, r.jsx)(q, {})
+            magical: (0, r.jsx)(X, {})
           })
         }), (0, r.jsx)(g.Text, {
           variant: "text-xs/medium",
@@ -177,7 +177,7 @@ function X(e) {
   })
 }
 
-function q() {
+function X() {
   let e = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion),
     {
       gradientStyle: t,
@@ -214,7 +214,7 @@ function q() {
   })
 }
 
-function J(e) {
+function Q(e) {
   var t, n;
   let {
     role: i,
@@ -252,7 +252,7 @@ function J(e) {
   })
 }
 
-function Q(e) {
+function J(e) {
   let {
     role: t,
     guildId: n,
@@ -271,7 +271,7 @@ function Q(e) {
   }, d = {
     src: W,
     name: t.name
-  }, u = (0, v.oC)(n, t), p = [M.BRd.DARK, M.BRd.DARKER, M.BRd.MIDNIGHT, M.BRd.LIGHT];
+  }, u = (0, _.oC)(n, t), p = [M.BRd.DARK, M.BRd.DARKER, M.BRd.MIDNIGHT, M.BRd.LIGHT];
   return (0, r.jsx)(g.Rny, {
     children: (0, r.jsx)("div", {
       className: a()(F.previewContainer, {
@@ -285,7 +285,7 @@ function Q(e) {
           className: a()(t, F.messageWrapper),
           children: [(0, r.jsx)("div", {
             className: F.messageContainer,
-            children: (0, r.jsx)(_.Z, {
+            children: (0, r.jsx)(v.Z, {
               author: o,
               message: s,
               roleIcon: null != u ? u : (0, m.ap)(e) ? d : c,
@@ -371,13 +371,13 @@ function ee(e) {
         })
       }), (0, r.jsx)(g.$i$, {
         className: F.divider
-      }), (s || c) && null != u && (0, r.jsx)(X, {
+      }), (s || c) && null != u && (0, r.jsx)(q, {
         role: n,
         guildId: t.id,
         selectedStyle: u,
         disabled: p,
         shouldShowUpsell: c
-      }), u !== T.g.HOLOGRAPHIC && null != u && (0, r.jsx)(J, {
+      }), u !== T.g.HOLOGRAPHIC && null != u && (0, r.jsx)(Q, {
         role: n,
         disabled: p,
         currentStyle: u,
@@ -392,7 +392,7 @@ function ee(e) {
         guild: t,
         disabled: p,
         role: n
-      }), (0, r.jsx)(Q, {
+      }), (0, r.jsx)(J, {
         role: n,
         guildId: t.id,
         selectedStyle: u,

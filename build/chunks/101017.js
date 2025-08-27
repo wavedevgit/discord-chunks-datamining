@@ -1,4 +1,4 @@
-/** Chunk was on 42926 **/
+/** Chunk was on 90746 **/
 /** chunk id: 101017, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -18,10 +18,10 @@ function d() {
     }),
     n = (0, Chunk901005.i)(null == module ? true : module.id, "GuildSettingsTags");
   return (0, Chunk647438.useMemo)(() => {
-    let i = Chunk131085.QV.map(e => ({
+    let r = Chunk131085.QV.map(e => ({
         kind: e
       })),
-      r = [];
+      i = [];
     return require && (null == module ? true : module.features) != null && Object.keys(Chunk131085.Ct).forEach(n => {
       let s = c.Ct[n],
         l = c.AC[n],
@@ -31,7 +31,7 @@ function d() {
           kind: e,
           packName: d
         }));
-      e.features.has(n) ? i.push(...u) : r.push(...u)
+      e.features.has(n) ? r.push(...u) : i.push(...u)
     }), {
       unlockedBadges: Chunk647438,
       lockedBadges: Chunk442837

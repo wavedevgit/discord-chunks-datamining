@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk290511 = require("./290511.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk814939 = require("./814939.js");
-let _ = {
+let v = {
   optionErrors: []
 };
 
@@ -52,7 +52,7 @@ function O(e) {
     onDragReset: T
   }), A = (0, s.cj)([f.Z], () => {
     var e;
-    return null != (e = f.Z.errors[b]) ? e : _
+    return null != (e = f.Z.errors[b]) ? e : v
   }), [L, k] = i.useState(false), [M, G] = i.useState(false), U = null != (t = A.options) ? t : A.optionErrors.filter(g.lm)[0], B = A.config, F = l.options.length >= x.fY, H = (0, u.kl)(n.id, Array.from(P), [l]).length - P.size, z = i.useRef(null), W = i.useRef(b);
   return (i.useEffect(() => {
     W.current = b
@@ -69,22 +69,22 @@ function O(e) {
       onFocus: () => G(true),
       onBlur: () => G(false),
       onMouseLeave: () => G(false),
-      className: a()(v.container, {
-        [v.dropIndicatorBefore]: null != R && b < R,
-        [v.dropIndicatorAfter]: null != R && b > R,
-        [v.containerFocused]: M
+      className: a()(_.container, {
+        [_.dropIndicatorBefore]: null != R && b < R,
+        [_.dropIndicatorAfter]: null != R && b > R,
+        [_.containerFocused]: M
       }),
       ref: e => {
         w(Z(e))
       },
       children: [(0, r.jsx)("div", {
-        className: v.dragContainer,
+        className: _.dragContainer,
         onMouseEnter: () => D(true),
         onMouseLeave: () => D(false),
         children: (0, r.jsx)(o.Vni, {
           size: "xs",
           color: "currentColor",
-          className: v.dragIcon
+          className: _.dragIcon
         })
       }), (0, r.jsx)(o.Text, {
         variant: "text-xs/semibold",
@@ -97,7 +97,7 @@ function O(e) {
         color: "text-default",
         children: l.title
       }), (0, r.jsx)(o.P3F, {
-        className: v.collapseButton,
+        className: _.collapseButton,
         onClick: () => k(false),
         children: (0, r.jsx)(m.Z, {
           direction: m.Z.Directions.DOWN,
@@ -106,9 +106,9 @@ function O(e) {
         })
       }), (0, r.jsx)(o.DY3, {
         text: j.intl.string(j.t["Ku+86e"]),
-        className: v.removeButton,
+        className: _.removeButton,
         children: (0, r.jsx)(o.P3F, {
-          className: v.closeIcon,
+          className: _.closeIcon,
           onClick: () => (0, h.fi)(n, l.id),
           children: (0, r.jsx)(o.XHJ, {
             size: "xs",
@@ -122,22 +122,22 @@ function O(e) {
       tabIndex: 0,
       onFocus: () => G(true),
       onBlur: () => G(false),
-      className: a()(v.container, {
-        [v.dropIndicatorBefore]: null != R && b < R,
-        [v.dropIndicatorAfter]: null != R && b > R,
-        [v.containerFocused]: M
+      className: a()(_.container, {
+        [_.dropIndicatorBefore]: null != R && b < R,
+        [_.dropIndicatorAfter]: null != R && b > R,
+        [_.containerFocused]: M
       }),
       ref: e => {
         w(Z(e))
       },
       children: [(0, r.jsx)("div", {
-        className: v.dragContainer,
+        className: _.dragContainer,
         onMouseEnter: () => D(true),
         onMouseLeave: () => D(false),
         children: (0, r.jsx)(o.Vni, {
           size: "xs",
           color: "currentColor",
-          className: v.dragIcon
+          className: _.dragIcon
         })
       }), (0, r.jsxs)(o.Kqy, {
         gap: 16,
@@ -177,9 +177,9 @@ function O(e) {
           }) : null]
         })]
       }), (0, r.jsxs)("div", {
-        className: v.buttons,
+        className: _.buttons,
         children: [(0, r.jsxs)("div", {
-          className: v.checkboxes,
+          className: _.checkboxes,
           children: [(0, r.jsx)(o.XZJ, {
             size: 20,
             type: o.XZJ.Types.INVERTED,
@@ -209,7 +209,7 @@ function O(e) {
             })
           }) : null]
         }), (0, r.jsx)(o.P3F, {
-          className: v.collapseButton,
+          className: _.collapseButton,
           onClick: () => k(true),
           children: (0, r.jsx)(m.Z, {
             direction: m.Z.Directions.UP,
@@ -218,9 +218,9 @@ function O(e) {
           })
         }), (0, r.jsx)(o.DY3, {
           text: j.intl.string(j.t["Ku+86e"]),
-          className: v.removeButton,
+          className: _.removeButton,
           children: (0, r.jsx)(o.P3F, {
-            className: v.closeIcon,
+            className: _.closeIcon,
             onClick: () => (0, h.fi)(n, l.id),
             children: (0, r.jsx)(o.XHJ, {
               size: "xs",
@@ -246,7 +246,7 @@ function y(e) {
 
   function s(e) {
     return (0, r.jsx)(o.P3F, {
-      className: v.example,
+      className: _.example,
       onClick: () => (0, h.Kk)(n, t.id, {
         title: e
       }),
@@ -257,13 +257,13 @@ function y(e) {
     })
   }
   return (0, r.jsxs)("div", {
-    className: v.examplesSection,
+    className: _.examplesSection,
     children: [(0, r.jsx)(o.Text, {
       variant: "text-xs/normal",
       color: "text-muted",
       children: j.intl.string(j.t.ECnSLi)
     }), (0, r.jsxs)("div", {
-      className: v.examples,
+      className: _.examples,
       children: [s(j.intl.string(j.t["7GZMJS"])), s(j.intl.string(j.t.nItydn)), s(j.intl.string(j.t.evuYbm)), s(j.intl.string(j.t.XWRuOj))]
     })]
   })
@@ -284,7 +284,7 @@ function C(e) {
     options: e
   }));
   return (0, r.jsxs)("div", {
-    className: v.options,
+    className: _.options,
     children: [n.options.map((e, d) => (0, r.jsx)(b.Z, {
       guild: t,
       prompt: n,

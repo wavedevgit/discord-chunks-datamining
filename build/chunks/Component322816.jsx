@@ -168,7 +168,7 @@ function w(e) {
   } = (0, j.Z)(0), {
     scrolledToTop: b,
     handleScroll: x
-  } = (0, v.V)(), T = i.useRef(false);
+  } = (0, _.V)(), T = i.useRef(false);
   return i.useEffect(() => {
     T.current || "" === d.trimStart() || (p.default.track(y.rMx.SEARCH_STARTED, {
       search_type: "Permissions"
@@ -186,14 +186,14 @@ function w(e) {
           [E.stickyHeaderElevated]: !b
         }),
         ref: f,
-        children: [(0, r.jsx)(v.Z, {
+        children: [(0, r.jsx)(_.Z, {
           guild: t,
           role: n,
           selectedSection: O.ZI.PERMISSIONS,
           setSelectedSection: s
         }), (0, r.jsx)("div", {
           className: N.noticeContainer,
-          children: (0, r.jsx)(_.Z, {
+          children: (0, r.jsx)(v.Z, {
             role: n
           })
         }), (0, r.jsx)("div", {

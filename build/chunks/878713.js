@@ -1,5 +1,5 @@
-/** Chunk was on 88572 **/
-/** chunk id: 878713, original params: e,a,o (module,exports,require) **/
+/** Chunk was on 70725 **/
+/** chunk id: 878713, original params: e,c,a (module,exports,require) **/
 module.exports = {
   channelName: "channelName__7169d",
   channelIcon: "channelIcon__7169d",

@@ -39,16 +39,16 @@ function f(e) {
   }, {
     disable: null == n,
     autoTrackExposure: false
-  }), v = i.useCallback((e, t) => {
+  }), _ = i.useCallback((e, t) => {
     let r = (0, d.mB)(n.systemChannelFlags, e, t);
     u.Z.updateGuild({
       systemChannelFlags: r
     })
-  }, [n.systemChannelFlags]), _ = i.useCallback(e => v(m.xmn.SUPPRESS_JOIN_NOTIFICATIONS, !e), [v]), O = i.useCallback(e => v(m.xmn.SUPPRESS_PREMIUM_SUBSCRIPTIONS, !e), [v]), y = i.useCallback(e => v(m.xmn.SUPPRESS_UGC_ADDED_NOTIFICATIONS, !e), [v]), C = i.useCallback(e => v(m.xmn.SUPPRESS_GUILD_REMINDER_NOTIFICATIONS, !e), [v]), N = i.useCallback(e => v(m.xmn.SUPPRESS_JOIN_NOTIFICATION_REPLIES, !e), [v]), E = i.useCallback(e => v(m.xmn.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATIONS, !e), [v]), I = i.useCallback(e => v(m.xmn.SUPPRESS_CHANNEL_PROMPT_DEADCHAT, !e), [v]), S = i.useCallback(e => v(m.xmn.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATION_REPLIES, !e), [v]), T = null != (t = n.systemChannelId) ? t : h, P = (0, c.eI)(n), w = P || (0, d.yE)(n.systemChannelFlags, m.xmn.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATIONS), R = P || (0, d.yE)(n.systemChannelFlags, m.xmn.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATION_REPLIES);
+  }, [n.systemChannelFlags]), v = i.useCallback(e => _(m.xmn.SUPPRESS_JOIN_NOTIFICATIONS, !e), [_]), O = i.useCallback(e => _(m.xmn.SUPPRESS_PREMIUM_SUBSCRIPTIONS, !e), [_]), y = i.useCallback(e => _(m.xmn.SUPPRESS_UGC_ADDED_NOTIFICATIONS, !e), [_]), C = i.useCallback(e => _(m.xmn.SUPPRESS_GUILD_REMINDER_NOTIFICATIONS, !e), [_]), N = i.useCallback(e => _(m.xmn.SUPPRESS_JOIN_NOTIFICATION_REPLIES, !e), [_]), E = i.useCallback(e => _(m.xmn.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATIONS, !e), [_]), I = i.useCallback(e => _(m.xmn.SUPPRESS_CHANNEL_PROMPT_DEADCHAT, !e), [_]), S = i.useCallback(e => _(m.xmn.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATION_REPLIES, !e), [_]), T = null != (t = n.systemChannelId) ? t : h, P = (0, c.eI)(n), w = P || (0, d.yE)(n.systemChannelFlags, m.xmn.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATIONS), R = P || (0, d.yE)(n.systemChannelFlags, m.xmn.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATION_REPLIES);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.j7V, {
       className: b,
-      onChange: _,
+      onChange: v,
       value: !(0, d.yE)(n.systemChannelFlags, m.xmn.SUPPRESS_JOIN_NOTIFICATIONS),
       hideBorder: true,
       disabled: !f || T === h,

@@ -26,12 +26,12 @@ let p = e => {
       reasonMaxLength: b,
       placeholder: x,
       position: j
-    } = e, v = i.useRef(null), [_, O] = i.useState(false), y = (0, l.e7)([u.Z], () => u.Z.isGuildMetadataLoaded()), C = (0, r.jsx)(a.yRy, {
-      targetElementRef: v,
+    } = e, _ = i.useRef(null), [v, O] = i.useState(false), y = (0, l.e7)([u.Z], () => u.Z.isGuildMetadataLoaded()), C = (0, r.jsx)(a.yRy, {
+      targetElementRef: _,
       onRequestClose: () => {
         O(false)
       },
-      shouldShow: _,
+      shouldShow: v,
       position: "right",
       align: "top",
       animation: a.yRy.Animation.NONE,
@@ -61,7 +61,7 @@ let p = e => {
           emojiName: d,
           animated: false
         }) : null,
-        ref: v
+        ref: _
       })
     });
     return (0, r.jsx)(a.oil, {

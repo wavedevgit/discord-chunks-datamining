@@ -55,7 +55,7 @@ let w = e => {
       currentGuildTier: n,
       guildStickers: i,
       tier: l
-    } = e, a = n < l, s = (0, v.ig)(l);
+    } = e, a = n < l, s = (0, _.ig)(l);
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(c.X6q, {
         color: "header-primary",
@@ -65,7 +65,7 @@ let w = e => {
         variant: "text-xs/normal",
         children: S.intl.format(S.t.ZLoNtr, {
           numTotal: s,
-          numAvailable: (0, v.Qi)(i, l)
+          numAvailable: (0, _.Qi)(i, l)
         })
       })]
     })
@@ -118,9 +118,9 @@ let w = e => {
       guild: t
     } = e, {
       isLoading: l
-    } = (0, O.Z)(t.id), u = (0, s.e7)([_.Z], () => {
+    } = (0, O.Z)(t.id), u = (0, s.e7)([v.Z], () => {
       var e;
-      return null != (e = _.Z.getStickersByGuildId(t.id)) ? e : []
+      return null != (e = v.Z.getStickersByGuildId(t.id)) ? e : []
     }, [t]), {
       analyticsLocations: j
     } = (0, m.ZP)(), D = (0, b.Z)(t.id), A = t.features.has(E.oNc.MORE_STICKERS) ? E.Eu4.TIER_3 : t.premiumTier, L = t.features.has(E.oNc.MORE_STICKERS) ? E.oCV[E.Eu4.TIER_3] : D, k = (0, x.Z)(t.id);
@@ -168,29 +168,29 @@ let w = e => {
             isAnimatedTo: m,
             onSetRef: b,
             tier: x,
-            tiers: _,
+            tiers: v,
             tierIndex: O
           } = e,
           {
             canCreateExpressions: C,
             canManageGuildExpression: w
           } = (0, h.Gw)(t),
-          M = _[O - 1],
-          G = null != M ? (0, v.A3)(M.tier) : 0,
-          U = (0, v.A3)(x.tier, t),
-          B = (0, v.ig)(x.tier),
+          M = v[O - 1],
+          G = null != M ? (0, _.A3)(M.tier) : 0,
+          U = (0, _.A3)(x.tier, t),
+          B = (0, _.ig)(x.tier),
           F = u.slice(G, U),
           H = F.length > 0,
           z = A < x.tier,
-          W = (i = u.length, i < (0, v.A3)(E.Eu4.NONE) ? E.Eu4.NONE : i < (0, v.A3)(E.Eu4.TIER_1) ? E.Eu4.TIER_1 : i < (0, v.A3)(E.Eu4.TIER_2) ? E.Eu4.TIER_2 : i < (0, v.A3)(E.Eu4.TIER_3) || null != t && t.features.has(E.oNc.MORE_STICKERS) && i < d.D.MAX_STICKER_SLOTS ? E.Eu4.TIER_3 : E.Eu4.NONE),
+          W = (i = u.length, i < (0, _.A3)(E.Eu4.NONE) ? E.Eu4.NONE : i < (0, _.A3)(E.Eu4.TIER_1) ? E.Eu4.TIER_1 : i < (0, _.A3)(E.Eu4.TIER_2) ? E.Eu4.TIER_2 : i < (0, _.A3)(E.Eu4.TIER_3) || null != t && t.features.has(E.oNc.MORE_STICKERS) && i < d.D.MAX_STICKER_SLOTS ? E.Eu4.TIER_3 : E.Eu4.NONE),
           V = C && !z && W === x.tier && U !== F.length,
           K = V || F.length > 0,
           Y = U - G,
-          X = n(872732),
-          q = B - F.length,
-          J = V ? Math.min(5 - (F.length + 0) % 5, q) : 0,
-          Q = [];
-        for (let e = 0; e < J; e++) Q.push((0, r.jsx)(R, {}, "placeholder-".concat(e)));
+          q = n(872732),
+          X = B - F.length,
+          Q = V ? Math.min(5 - (F.length + 0) % 5, X) : 0,
+          J = [];
+        for (let e = 0; e < Q; e++) J.push((0, r.jsx)(R, {}, "placeholder-".concat(e)));
         let $ = t.premiumTier < x.tier && D >= E.oCV[x.tier],
           ee = S.intl.string(S.t.dtFw5e),
           et = () => {
@@ -225,7 +225,7 @@ let w = e => {
             page: E.ZY5.GUILD_SETTINGS,
             section: E.jXE.GUILD_SETTINGS_STICKERS,
             object: E.qAy.BOOST_UPSELL_NEXT_LEVEL_HEADER,
-            objectType: (0, v.ge)(x.tier)
+            objectType: (0, _.ge)(x.tier)
           }
         }) : V && (s = (0, r.jsx)(Z, {
           guild: t
@@ -234,7 +234,7 @@ let w = e => {
           tier: x,
           onSetRef: b,
           isAnimatedTo: m,
-          hasBottomMargin: O !== _.length - 1,
+          hasBottomMargin: O !== v.length - 1,
           withCardBody: !K,
           headerButton: s,
           showHeaderLockStatus: ei,
@@ -245,7 +245,7 @@ let w = e => {
               isDisabled: z,
               sticker: e,
               canManageSticker: w(e)
-            }, e.id)), Q]
+            }, e.id)), J]
           }), !z && !V && 0 === F.length && (0, r.jsx)("div", {
             className: a()(T.emptyTierWrapper, T.unusedTierWrapper),
             children: (0, r.jsx)(c.Text, {
@@ -258,7 +258,7 @@ let w = e => {
             children: [(0, r.jsx)("img", {
               alt: S.intl.string(S.t.BAhsws),
               className: T.emptyTierImage,
-              src: X
+              src: q
             }), (0, r.jsx)(c.Text, {
               className: T.unlockTierCtaHeading,
               variant: "text-md/normal",

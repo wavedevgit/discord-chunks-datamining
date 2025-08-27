@@ -25,7 +25,7 @@ function h(e, t) {
     let b = null == (i = t.tags) ? true : i.bot_id,
       x = null == (a = t.tags) ? true : a.integration_id,
       j = (null == (m = t.tags) ? true : m.premium_subscriber) !== true,
-      v = (null == (h = t.tags) ? true : h.guild_connections) !== true;
+      _ = (null == (h = t.tags) ? true : h.guild_connections) !== true;
     if (null != b ? f = null == n ? true : n.find(e => {
         var t;
         let {
@@ -52,6 +52,6 @@ function h(e, t) {
         }, t)
       })
     }
-    return j ? (0, d.Tq)(e, "useManagedRoleWarningText") ? p.intl.string(p.t.NqRten) : p.intl.string(p.t.oF6FYW) : v ? p.intl.string(p.t.ZQ37tL) : p.intl.string(p.t.k5d7DA)
+    return j ? (0, d.Tq)(e, "useManagedRoleWarningText") ? p.intl.string(p.t.NqRten) : p.intl.string(p.t.oF6FYW) : _ ? p.intl.string(p.t.ZQ37tL) : p.intl.string(p.t.k5d7DA)
   })(e, t, n), [e, t, n])
 }

@@ -52,11 +52,11 @@ function f(e) {
     guildId: t,
     triggerType: n
   } = e, f = i.useMemo(() => () => (0, o.ep)(t, n), [t, n]), [b] = i.useState(f), [x, j] = i.useState(false), {
-    editingRule: v,
-    createNewEditingRule: _
+    editingRule: _,
+    createNewEditingRule: v
   } = (0, d.V)(), {
     getDefaultRuleName: O
-  } = c.I6[n], y = !(0, o.Vb)(v) && (null == v ? true : v.triggerType) === n, [C, N] = i.useState(y ? v : b), E = (0, s.q_F)({
+  } = c.I6[n], y = !(0, o.Vb)(_) && (null == _ ? true : _.triggerType) === n, [C, N] = i.useState(y ? _ : b), E = (0, s.q_F)({
     opacity: +!y,
     pointerEvents: y ? "none" : "all",
     config: h(p({}, l.config.stiff), {
@@ -69,13 +69,13 @@ function f(e) {
       clamp: true
     }),
     onStart: () => {
-      N(y ? v : b)
+      N(y ? _ : b)
     },
     onRest: () => {
-      N(y ? v : b), j(y)
+      N(y ? _ : b), j(y)
     }
   });
-  return null == v || y ? (0, r.jsxs)("div", {
+  return null == _ || y ? (0, r.jsxs)("div", {
     className: g.mainRuleContainer,
     style: {
       height: y ? "auto" : "60px"
@@ -93,7 +93,7 @@ function f(e) {
       children: (0, r.jsxs)(s.P3F, {
         className: g.addAnotherRuleCardContainer,
         onClick: () => {
-          _(t, n)
+          v(t, n)
         },
         children: [(0, r.jsx)(s.oFk, {
           size: "custom",

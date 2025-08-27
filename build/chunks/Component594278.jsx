@@ -20,7 +20,7 @@ let g = function(e) {
     paginationCaretClassName: l,
     intervalBetweenAutomaticItemRotations: g,
     renderItem: p
-  } = e, h = i.useMemo(() => new s.Xp, []), [f, b] = i.useState(d.n.LEFT), [x, j] = i.useState(0), [v, _] = i.useState(false), [O, y] = i.useState(false), C = i.useCallback((e, t) => {
+  } = e, h = i.useMemo(() => new s.Xp, []), [f, b] = i.useState(d.n.LEFT), [x, j] = i.useState(0), [_, v] = i.useState(false), [O, y] = i.useState(false), C = i.useCallback((e, t) => {
     j(n => {
       let r = n + t;
       return r < 0 ? r = e.length - 1 : r > e.length - 1 && (r = 0), r
@@ -31,11 +31,11 @@ let g = function(e) {
     O || C(t, false)
   }, [C, t, O]);
   return i.useEffect(() => {
-    null != g && (v ? v && h.stop() : h.start(g, N))
-  }, [v, h, g, N]), (0, r.jsxs)("div", {
+    null != g && (_ ? _ && h.stop() : h.start(g, N))
+  }, [_, h, g, N]), (0, r.jsxs)("div", {
     className: m.root,
-    onMouseEnter: () => _(true),
-    onMouseLeave: () => _(false),
+    onMouseEnter: () => v(true),
+    onMouseLeave: () => v(false),
     children: [(0, r.jsx)(o.P3F, {
       className: a()(m.carouselCaret, l),
       onClick: E,

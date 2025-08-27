@@ -1,7 +1,7 @@
 /** Chunk was on 88479 **/
 /** chunk id: 833695, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => _
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -30,44 +30,44 @@ function j(e) {
   })
 }
 
-function v(e) {
+function _(e) {
   var t, n, s;
   let {
     guildId: h
-  } = e, v = (0, f.Z)(h), _ = (0, a.f3)(), O = (0, i.e7)([p.Z], () => p.Z.getGuild());
-  return v.loading || null == O ? (0, r.jsx)(l.$jN, {}) : null == v.application ? (0, r.jsx)(u.Z, {
+  } = e, _ = (0, f.Z)(h), v = (0, a.f3)(), O = (0, i.e7)([p.Z], () => p.Z.getGuild());
+  return _.loading || null == O ? (0, r.jsx)(l.$jN, {}) : null == _.application ? (0, r.jsx)(u.Z, {
     guild: O
   }) : (0, r.jsxs)(d.Z, {
     children: [(0, r.jsx)(c.Z, {
-      revenue: v.metrics.revenue,
-      revenueTrend: v.metrics.revenuePctChange,
+      revenue: _.metrics.revenue,
+      revenueTrend: _.metrics.revenuePctChange,
       summaryMetricLabel: x.intl.string(x.t.R3PCmZ),
-      summaryMetricValue: null != (n = v.metrics.paymentsCount) ? n : "-",
-      summaryMetricTrend: null != (s = v.metrics.paymentsCountChange) ? s : 0,
+      summaryMetricValue: null != (n = _.metrics.paymentsCount) ? n : "-",
+      summaryMetricTrend: null != (s = _.metrics.paymentsCountChange) ? s : 0,
       summaryMetricTrendIsPercent: false,
       children: (0, r.jsx)(b.Z, {
         guildId: h,
-        earningsData: v
+        earningsData: _
       })
     }), (0, r.jsx)(l.hjN, {
       title: x.intl.string(x.t["+5Rmho"]),
       children: (0, r.jsx)(o.Z, {
         ListingIdLabel: j,
-        payoutsByPeriod: v.payoutsByPeriod,
-        team: null == (t = v.application) ? true : t.team
+        payoutsByPeriod: _.payoutsByPeriod,
+        team: null == (t = _.application) ? true : t.team
       })
     }), (0, r.jsx)(l.hjN, {
       title: x.intl.string(x.t.O8cDAA),
-      disabled: _,
+      disabled: v,
       children: (0, r.jsx)(m.Z, {
         guildId: h,
-        application: v.application
+        application: _.application
       })
     }), (0, r.jsx)(l.hjN, {
       title: x.intl.string(x.t["0n7R2d"]),
       children: (0, r.jsx)(g.Z, {
         guildId: h,
-        allPeriods: v.payoutsByPeriod
+        allPeriods: _.payoutsByPeriod
       })
     })]
   })

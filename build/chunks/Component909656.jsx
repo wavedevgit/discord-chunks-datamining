@@ -136,7 +136,7 @@ function k(e) {
     format: a
   } = (0, E.Z)(n.id), s = (0, y.YB)(n.id), c = i.useCallback(() => {
     var e;
-    return (null == s || null == (e = s.cover_image_asset) ? true : e.application_id) == null ? null : (0, _._W)(s.cover_image_asset.application_id, s.cover_image_asset, D)
+    return (null == s || null == (e = s.cover_image_asset) ? true : e.application_id) == null ? null : (0, v._W)(s.cover_image_asset.application_id, s.cover_image_asset, D)
   }, [s]), [m, f] = i.useState(a), [b, O] = i.useState(null != (t = null == s ? true : s.description) ? t : ""), [A, k] = i.useState(c), [M, G] = i.useState(null == s ? true : s.store_page_guild_products_default_sort), [U, B] = i.useState(null == s ? true : s.server_shop_tab_order), {
     loading: F,
     error: H,
@@ -145,19 +145,19 @@ function k(e) {
     imageCTA: W,
     imageAriaLabel: V,
     setFilename: K
-  } = (0, N.Z)(null == s ? true : s.cover_image_asset), Y = (0, x.Dt)(), X = (0, x.Dt)(), q = (0, x.Dt)();
+  } = (0, N.Z)(null == s ? true : s.cover_image_asset), Y = (0, x.Dt)(), q = (0, x.Dt)(), X = (0, x.Dt)();
 
-  function J(e, t) {
+  function Q(e, t) {
     o()(null != e, "Null value not allowed"), null != t && K(t.name), k(e)
   }
-  let Q = i.useMemo(() => {
+  let J = i.useMemo(() => {
       var e;
       return null != b && b !== (null != (e = null == s ? true : s.description) ? e : "") || (null == A ? true : A.startsWith("data:")) === true || m !== a || (null == s ? true : s.store_page_guild_products_default_sort) !== M || (null == s ? true : s.server_shop_tab_order) !== U
     }, [A, a, b, s, m, M, U]),
     $ = null != b && "" !== b && null != A;
   i.useEffect(() => {
     var e;
-    (null == s || null == (e = s.cover_image_asset) ? true : e.application_id) != null && k((0, _._W)(s.cover_image_asset.application_id, s.cover_image_asset, D))
+    (null == s || null == (e = s.cover_image_asset) ? true : e.application_id) != null && k((0, v._W)(s.cover_image_asset.application_id, s.cover_image_asset, D))
   }, [null == s ? true : s.cover_image_asset]);
   let ee = (0, C.mY)(),
     et = i.useMemo(() => T.kL.map(e => ({
@@ -210,7 +210,7 @@ function k(e) {
       })]
     }), (0, r.jsx)(p.hjN, {
       title: P.intl.string(P.t["1+Ho1d"]),
-      titleId: X,
+      titleId: q,
       disabled: ee,
       children: (0, r.jsx)(p.Kx8, {
         placeholder: l ? P.intl.string(P.t.SD6LRU) : P.intl.string(P.t["aVhW/f"]),
@@ -218,7 +218,7 @@ function k(e) {
         value: b,
         autosize: true,
         onChange: O,
-        "aria-labelledby": X,
+        "aria-labelledby": q,
         disabled: ee
       })
     }), (0, r.jsx)(p.$i$, {
@@ -231,7 +231,7 @@ function k(e) {
         className: w.formDescription,
         disabled: ee,
         children: P.intl.string(P.t.i2rCwc)
-      }), (0, r.jsx)(v.Z, {
+      }), (0, r.jsx)(_.Z, {
         image: A,
         hint: W,
         showIcon: true,
@@ -241,13 +241,13 @@ function k(e) {
         iconWrapperClassName: w.coverImageUploaderIconWrapper,
         imageClassName: w.coverImageUploaderInner,
         iconClassName: w.coverImageUploaderIcon,
-        onChange: J,
+        onChange: Q,
         "aria-label": V,
         disabled: ee
       }), (0, r.jsx)(p.LZC, {
         size: 16
       }), (0, r.jsx)(j.Z, {
-        onChange: J,
+        onChange: Q,
         buttonCTA: W,
         "aria-label": V,
         disabled: ee,
@@ -259,7 +259,7 @@ function k(e) {
         className: w.divider
       }), (0, r.jsxs)(p.hjN, {
         title: P.intl.string(P.t.aaZ9pK),
-        titleId: q,
+        titleId: X,
         disabled: ee,
         children: [(0, r.jsx)(p.R94, {
           type: p.R94.Types.DESCRIPTION,
@@ -278,7 +278,7 @@ function k(e) {
         className: w.divider
       }), (0, r.jsxs)(p.hjN, {
         title: P.intl.string(P.t["+dtmw8"]),
-        titleId: q,
+        titleId: X,
         disabled: ee,
         children: [(0, r.jsx)(p.R94, {
           type: p.R94.Types.DESCRIPTION,
@@ -295,7 +295,7 @@ function k(e) {
     }), (0, r.jsx)(u.W, {
       component: "div",
       className: w.contentRegion,
-      children: Q && (0, r.jsx)(p.oXn, {
+      children: J && (0, r.jsx)(p.oXn, {
         children: (0, r.jsx)(h.Z, {
           submitting: F,
           disabled: !$,

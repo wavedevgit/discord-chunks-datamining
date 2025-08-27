@@ -26,11 +26,11 @@ function h(e) {
   let x = null != (t = (0, s.A)({
       guildId: n.id
     })) ? t : 0,
-    [j, v] = i.useState(null),
-    _ = i.useMemo(() => null == h ? true : h.some(e => (0, a.J)(e)), [h]),
+    [j, _] = i.useState(null),
+    v = i.useMemo(() => null == h ? true : h.some(e => (0, a.J)(e)), [h]),
     O = i.useMemo(() => h.length === m.nx, [h]),
     y = i.useCallback(e => {
-      u.Z.setPendingMemberVerificationRules(n.id, e), b(e), null != j && v(null)
+      u.Z.setPendingMemberVerificationRules(n.id, e), b(e), null != j && _(null)
     }, [j, n.id]),
     C = i.useCallback(e => {
       y([...h, e])
@@ -46,7 +46,7 @@ function h(e) {
     I = i.useCallback((e, t, n) => {
       let r = h.indexOf(e),
         i = [...h];
-      null != t && t !== r && (i.splice(r, 1), i.splice(t, 0, e), b(i)), n ? (y(i), null !== j && v(null)) : j !== t && v(t)
+      null != t && t !== r && (i.splice(r, 1), i.splice(t, 0, e), b(i)), n ? (y(i), null !== j && _(null)) : j !== t && _(t)
     }, [j, h, y]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.X6, {
@@ -75,7 +75,7 @@ function h(e) {
       children: (0, r.jsx)(o.Z, {
         addFormField: C,
         guild: n,
-        allowTerms: !_
+        allowTerms: !v
       })
     }), !O && (0, r.jsx)(f, {
       addFormField: C

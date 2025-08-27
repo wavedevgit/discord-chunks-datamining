@@ -95,7 +95,7 @@ function w(e) {
   } = (0, x.Z)(0), {
     scrolledToTop: R,
     handleScroll: Z
-  } = (0, v.V)(), D = (0, c.e7)([h.Z], () => {
+  } = (0, _.V)(), D = (0, c.e7)([h.Z], () => {
     var e;
     return null == (e = h.Z.getRoleMemberCount(t.id)) ? true : e[n.id]
   }, [n.id, t.id]), A = (0, c.Wu)([b.Z], () => {
@@ -258,10 +258,10 @@ function w(e) {
           [E.stickyHeaderElevated]: !R
         }),
         ref: w,
-        children: (0, r.jsx)(v.Z, {
+        children: (0, r.jsx)(_.Z, {
           guild: t,
           role: n,
-          selectedSection: _.ZI.VERIFICATIONS,
+          selectedSection: v.ZI.VERIFICATIONS,
           setSelectedSection: s
         })
       }), (null != D ? D : 0) > 0 ? (0, r.jsxs)("div", {

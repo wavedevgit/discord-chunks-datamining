@@ -54,9 +54,9 @@ function O(e) {
     title: j.intl.string(j.t.iHU439),
     intiallyExpanded: true,
     children: [(0, r.jsxs)("div", {
-      className: _.formSplit,
+      className: v.formSplit,
       children: [(0, r.jsx)("div", {
-        className: _.formSplitHalf,
+        className: v.formSplitHalf,
         children: (0, r.jsx)(s.hjN, {
           title: j.intl.string(j.t.grbGJy),
           titleId: k,
@@ -70,7 +70,7 @@ function O(e) {
           })
         })
       }), (0, r.jsx)("div", {
-        className: _.formSplitHalf,
+        className: v.formSplitHalf,
         children: (0, r.jsx)(s.hjN, {
           title: j.intl.string(j.t.Ibl4BQ),
           titleId: M,
@@ -103,14 +103,14 @@ function O(e) {
     }), (0, r.jsx)(s.LZC, {
       size: 24
     }), (0, r.jsxs)("div", {
-      className: _.iconSection,
+      className: v.iconSection,
       children: [(0, r.jsxs)(s.hjN, {
         title: j.intl.string(j.t.RUBM2t),
-        className: _.iconSectionDescription,
+        className: v.iconSectionDescription,
         disabled: L,
         children: [(0, r.jsx)(s.R94, {
           type: s.R94.Types.DESCRIPTION,
-          className: v.formDescription,
+          className: _.formDescription,
           disabled: L,
           children: j.intl.string(j.t["0iUofH"])
         }), (0, r.jsx)(c.Z, {
@@ -127,8 +127,8 @@ function O(e) {
         showIcon: true,
         showRemoveButton: false,
         hideSize: true,
-        className: _.iconUploader,
-        imageClassName: _.tierSymbolUploaderInner,
+        className: v.iconUploader,
+        imageClassName: v.tierSymbolUploaderInner,
         onChange: A,
         "aria-label": R,
         disabled: L

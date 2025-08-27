@@ -1,4 +1,4 @@
-/** Chunk was on 74486 **/
+/** Chunk was on 10576 **/
 /** chunk id: 345226, original params: e,t,n (module,exports,require) **/
 module.exports = {
   sidebarContainer: "sidebarContainer__656be",

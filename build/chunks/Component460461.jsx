@@ -104,7 +104,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
     let z = (0, Chunk442837.e7)([Chunk999382.Z], () => null != Chunk852860 ? Chunk999382.Z.getErrors() : null);
     if (null == Chunk852860 || null == D) return null;
     let W = e => {
-        v.Z.updateGuild({
+        _.Z.updateGuild({
           discoverySplash: e
         })
       },
@@ -132,7 +132,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
             reasonsToJoin: D.reasonsToJoin,
             socialLinks: D.socialLinks,
             about: D.about
-          }), v.Z.saveGuild(d.id, {
+          }), _.Z.saveGuild(d.id, {
             discoverySplash: d.discoverySplash,
             description: d.description
           })
@@ -171,7 +171,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
           })(e) || K(e)) && D.reasonsToJoin.filter(K).length >= 2
         }]
       }],
-      X = (e, t) => {
+      q = (e, t) => {
         let n = [...U];
         n[e] = t, B(n)
       };
@@ -315,7 +315,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                       placeholder: Chunk388032.intl.string(Chunk388032.t.rFa9Ul),
                       onChange: e => {
                         var t;
-                        v.Z.updateGuild({
+                        _.Z.updateGuild({
                           description: null != (t = null == e ? true : e.replaceAll("\n", "")) ? t : ""
                         })
                       },
@@ -397,10 +397,10 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                         l = null != i ? "".concat(i.baseUrl) : true;
                       return (0, r.jsxs)("div", {
                         className: S.socialLinksContainer,
-                        onMouseOver: () => X(t, true),
-                        onFocus: () => X(t, true),
-                        onMouseOut: () => X(t, false),
-                        onBlur: () => X(t, false),
+                        onMouseOver: () => q(t, true),
+                        onFocus: () => q(t, true),
+                        onMouseOut: () => q(t, false),
+                        onBlur: () => q(t, false),
                         children: [(0, r.jsx)(o.q4e, {
                           className: D.isPublished ? S.socialLinksDropdownMax : S.socialLinksDropdownMin,
                           options: (e => {

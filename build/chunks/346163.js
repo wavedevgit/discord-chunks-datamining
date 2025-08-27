@@ -27,8 +27,8 @@ function f(e) {
     }),
     {
       error: j,
-      loading: v,
-      createEnableRequest: _,
+      loading: _,
+      createEnableRequest: v,
       submittedRequest: O
     } = (0, d.Z)(null == e ? true : e.id),
     {
@@ -65,10 +65,10 @@ function f(e) {
   return r.useEffect(() => {
     D && N()
   }, [N, D]), {
-    resubmittingEnableRequest: v,
+    resubmittingEnableRequest: _,
     resubmissionError: j,
     isGuildOwner: x,
-    createEnableRequest: _,
+    createEnableRequest: v,
     resubmittedRequest: O,
     eligibilityLoading: y,
     eligibilityError: C,

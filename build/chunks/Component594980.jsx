@@ -24,11 +24,11 @@ function f(e) {
     buttonClassName: f
   } = e, {
     analyticsLocations: b
-  } = (0, a.ZP)(), x = t.features.has(m.oNc.INVITE_SPLASH), j = n && x, v = i.useCallback(e => {
+  } = (0, a.ZP)(), x = t.features.has(m.oNc.INVITE_SPLASH), j = n && x, _ = i.useCallback(e => {
     c.Z.updateGuild({
       splash: e
     })
-  }, []), _ = i.useCallback(e => {
+  }, []), v = i.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), (0, u.E6)({
       guild: t,
       analyticsLocations: b,
@@ -43,12 +43,12 @@ function f(e) {
     className: f,
     children: [h.intl.string(h.t.yG2pUl), (0, r.jsx)(o.ZP, {
       disabled: !j,
-      onChange: v,
+      onChange: _,
       maxFileSizeBytes: p.B,
       onFileSizeError: () => (0, s.Z)(p.B)
     })]
   }) : (0, r.jsx)(d.P, {
     className: f,
-    onClick: _
+    onClick: v
   })
 }

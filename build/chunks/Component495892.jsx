@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk260107 = require("./260107.js");
 
-function v(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -40,7 +40,7 @@ function v(e) {
   return e
 }
 
-function _(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -101,7 +101,7 @@ let y = e => {
       }
       return i
     }(e, ["className", "children"]);
-    return (0, r.jsx)(a.P3F, _(v({
+    return (0, r.jsx)(a.P3F, v(_({
       className: t,
       onClick: y,
       onMouseDown: y,
@@ -117,7 +117,7 @@ function N(e) {
     rule: n,
     onChangeRule: i,
     onContextMenu: l
-  } = e, s = () => i(_(v({}, n), {
+  } = e, s = () => i(v(_({}, n), {
     enabled: !n.enabled
   })), o = e => {
     y(e), l(e)
@@ -139,7 +139,7 @@ function N(e) {
         text: x.intl.string(x.t.UKOtz8),
         position: "top",
         "aria-label": x.intl.string(x.t.PdRCRk),
-        children: e => (0, r.jsx)(a.P3F, _(v({}, e), {
+        children: e => (0, r.jsx)(a.P3F, v(_({}, e), {
           onClick: o,
           className: j.menuIconButton,
           children: (0, r.jsx)(a.Huf, {
@@ -173,7 +173,7 @@ function I(e) {
     updateRule: h
   } = (0, u.pH)(t.guildId), [f, b] = i.useState(t.enabled), N = (0, l.throttle)(async (e, n) => {
     if (n.preventDefault(), n.stopPropagation(), !c) {
-      let e = _(v({}, t), {
+      let e = v(_({}, t), {
         enabled: !f
       });
       b(!f);
@@ -230,7 +230,7 @@ function I(e) {
         text: x.intl.string(x.t.UKOtz8),
         position: "top",
         "aria-label": x.intl.string(x.t.PdRCRk),
-        children: e => (0, r.jsx)(a.P3F, _(v({}, e), {
+        children: e => (0, r.jsx)(a.P3F, v(_({}, e), {
           onClick: I,
           className: j.menuIconButton,
           children: (0, r.jsx)(a.Huf, {
@@ -306,7 +306,7 @@ function T(e) {
       let {
         default: e
       } = await n.e("25443").then(n.bind(n, 46577));
-      return n => (0, r.jsx)(e, v({
+      return n => (0, r.jsx)(e, _({
         rule: t
       }, n))
     }))

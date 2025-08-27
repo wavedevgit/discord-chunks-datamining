@@ -2,8 +2,8 @@
 /** chunk id: 677892, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   $$: () => x,
-  P_: () => _,
-  ap: () => v,
+  P_: () => v,
+  ap: () => _,
   ku: () => j
 }), require("./953529.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -131,11 +131,11 @@ function j(e) {
     guildId: t,
     onEdit: n,
     disableGoodStatus: c
-  } = e, d = (0, l.Wu)([s.Z], () => s.Z.getDefaultChannelIds(t)), u = (0, l.e7)([s.Z], () => (0, o.kl)(t, s.Z.getDefaultChannelIds(t), s.Z.getOnboardingPrompts(t)).length), x = i.useMemo(() => new Set(d), [d]), [, j] = (0, o.VF)(t, x), v = j.length, _ = b(t), O = (0, m.O4)(t), y = (0, l.e7)([s.Z], () => s.Z.isAdvancedMode(t)), C = y ? p.intl.formatToPlainString(p.t.nHwnLC, {
-    numDefaultChannels: v,
-    numFromQuestions: u - v
-  }) : _ ? p.intl.formatToPlainString(p.t.HxEwSk, {
-    numDefaultChannels: v
+  } = e, d = (0, l.Wu)([s.Z], () => s.Z.getDefaultChannelIds(t)), u = (0, l.e7)([s.Z], () => (0, o.kl)(t, s.Z.getDefaultChannelIds(t), s.Z.getOnboardingPrompts(t)).length), x = i.useMemo(() => new Set(d), [d]), [, j] = (0, o.VF)(t, x), _ = j.length, v = b(t), O = (0, m.O4)(t), y = (0, l.e7)([s.Z], () => s.Z.isAdvancedMode(t)), C = y ? p.intl.formatToPlainString(p.t.nHwnLC, {
+    numDefaultChannels: _,
+    numFromQuestions: u - _
+  }) : v ? p.intl.formatToPlainString(p.t.HxEwSk, {
+    numDefaultChannels: _
   }) : p.intl.formatToPlainString(p.t.ey3uVV, {
     numDefaultChannels: g.md,
     numChattableChannels: g.X
@@ -148,20 +148,20 @@ function j(e) {
       color: "currentColor",
       className: h.channelIcon
     }),
-    hasStarted: v > 0 || y,
-    status: _ || O ? c ? "none" : "good" : "required",
+    hasStarted: _ > 0 || y,
+    status: v || O ? c ? "none" : "good" : "required",
     onEdit: n
   })
 }
 
-function v(e) {
+function _(e) {
   let {
     guildId: t,
     onEdit: n,
     disableGoodStatus: i
-  } = e, c = (0, l.Wu)([s.Z], () => s.Z.getDefaultChannelIds(t)), d = (0, l.Wu)([s.Z], () => s.Z.getOnboardingPrompts(t)), u = d.length, [m, g] = (0, o.dF)(t, d, c), b = m.length, x = m.length + g.length, j = b / x * 100, v = (0, l.e7)([s.Z], () => s.Z.isAdvancedMode(t)), _ = u > 0, O = "none";
-  return _ && (j >= 85 && !i ? O = "good" : j < 85 && (O = "warning")), (0, r.jsx)(f, {
-    title: v ? p.intl.string(p.t.AGjtFh) : p.intl.string(p.t.dqCzoa),
+  } = e, c = (0, l.Wu)([s.Z], () => s.Z.getDefaultChannelIds(t)), d = (0, l.Wu)([s.Z], () => s.Z.getOnboardingPrompts(t)), u = d.length, [m, g] = (0, o.dF)(t, d, c), b = m.length, x = m.length + g.length, j = b / x * 100, _ = (0, l.e7)([s.Z], () => s.Z.isAdvancedMode(t)), v = u > 0, O = "none";
+  return v && (j >= 85 && !i ? O = "good" : j < 85 && (O = "warning")), (0, r.jsx)(f, {
+    title: _ ? p.intl.string(p.t.AGjtFh) : p.intl.string(p.t.dqCzoa),
     description: p.intl.format(p.t.iuNisr, {
       numChannels: b,
       numTotalChannels: x,
@@ -177,25 +177,25 @@ function v(e) {
       color: "currentColor",
       className: h.channelIcon
     }),
-    hasStarted: _,
+    hasStarted: v,
     status: O,
     onEdit: n
   })
 }
 
-function _(e) {
+function v(e) {
   let {
     guildId: t,
     onEdit: n,
     disableGoodStatus: o
   } = e, m = (0, l.e7)([u.Z], () => u.Z.getSettings()), g = (0, l.e7)([s.Z], () => s.Z.getEnabled(t)), b = (0, c.uo)(m), x = m.enabled, j = i.useCallback(() => {
     (0, d.To)(t, !x)
-  }, [t, x]), v = !(0, c.av)(m), _ = "none";
-  v && (b && !o ? _ = "good" : b || (_ = "required"));
+  }, [t, x]), _ = !(0, c.av)(m), v = "none";
+  _ && (b && !o ? v = "good" : b || (v = "required"));
   let O = p.intl.string(p.t.GMOwOD);
-  b ? v || (O = p.intl.string(p.t.wHOoyM)) : O = p.intl.string(p.t.wXFbgY);
+  b ? _ || (O = p.intl.string(p.t.wHOoyM)) : O = p.intl.string(p.t.wXFbgY);
   let y = null;
-  return v && g && (y = (0, r.jsx)(a.rsf, {
+  return _ && g && (y = (0, r.jsx)(a.rsf, {
     className: h.inlineSwitch,
     checked: x,
     onChange: j,
@@ -208,8 +208,8 @@ function _(e) {
       color: "currentColor",
       className: h.channelIcon
     }),
-    hasStarted: v,
-    status: _,
+    hasStarted: _,
+    status: v,
     onEdit: n,
     extra: y
   })

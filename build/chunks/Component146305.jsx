@@ -1,7 +1,7 @@
 /** Chunk was on 88479 **/
 /** chunk id: 146305, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => e_
+  Z: () => ev
 });
 var Chunk951288 = require("./951288.js"),
   Chunk990547 = require("./990547.js"),
@@ -93,7 +93,7 @@ function ej(e) {
   return e
 }
 
-function ev(e, t) {
+function e_(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -105,12 +105,12 @@ function ev(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let e_ = {
+let ev = {
   getSectionDefinition: function(e, t) {
-    let e_ = (0, f.p)(t.guild.id, "guild_settings"),
+    let ev = (0, f.p)(t.guild.id, "guild_settings"),
       eO = (0, d.Vm)(t.guild.id),
       ey = false === t.guild.features.has(eh.oNc.CREATOR_MONETIZABLE) && false === t.guild.features.has(eh.oNc.CREATOR_MONETIZABLE_PROVISIONAL),
-      eC = e_ && ey ? {
+      eC = ev && ey ? {
         label: (0, r.jsx)("div", {
           className: ex.roleSubLabel,
           children: eb.intl.string(eb.t.Tn7Koq)
@@ -214,7 +214,7 @@ let e_ = {
         };
       case eh.pNK.MODERATION:
         return {
-          section: eh.pNK.MODERATION, impressionName: i.ImpressionNames.GUILD_SETTINGS_MODERATION, label: eb.intl.string(eb.t["suhY+f"]), element: Q.ZP, predicate: () => t.canManageGuild && !t.guild.features.has(eh.oNc.COMMUNITY)
+          section: eh.pNK.MODERATION, impressionName: i.ImpressionNames.GUILD_SETTINGS_MODERATION, label: eb.intl.string(eb.t["suhY+f"]), element: J.ZP, predicate: () => t.canManageGuild && !t.guild.features.has(eh.oNc.COMMUNITY)
         };
       case eh.pNK.GUILD_AUTOMOD:
         return {
@@ -247,7 +247,7 @@ let e_ = {
         };
       case eh.pNK.ONBOARDING:
         return {
-          section: eh.pNK.ONBOARDING, label: eb.intl.string(eb.t.LdxCKy), element: q.Z, ariaLabel: eb.intl.string(eb.t.LdxCKy), newIndicatorDismissibleContentTypes: t.onboardingEnabled ? null : [l.z.COMMUNITY_ONBOARDING_NEW_BADGE], notice: {
+          section: eh.pNK.ONBOARDING, label: eb.intl.string(eb.t.LdxCKy), element: X.Z, ariaLabel: eb.intl.string(eb.t.LdxCKy), newIndicatorDismissibleContentTypes: t.onboardingEnabled ? null : [l.z.COMMUNITY_ONBOARDING_NEW_BADGE], notice: {
             stores: [A.Z, D.Z],
             element: M.Z
           }, predicate: () => (0, h.wC)(t.guild.id), decoration: function(e, t) {
@@ -286,9 +286,9 @@ let e_ = {
           }, predicate: () => t.canManageGuild && t.guild.features.has(eh.oNc.COMMUNITY) && !t.welcomeScreenEmpty && !t.guild.features.has(eh.oNc.GUILD_SERVER_GUIDE)
         };
       case eh.pNK.ROLE_SUBSCRIPTIONS:
-        return ev(ej({}, eC), {
+        return e_(ej({}, eC), {
           section: eh.pNK.ROLE_SUBSCRIPTIONS,
-          element: v.Z,
+          element: _.Z,
           type: o.bT.CUSTOM,
           predicate: () => eO ? t.monetizationPredicate() && ((0, x.sy)(t.guild) || c.Z.hasSeenCreatorOnboardingForGuild(t.guild.id)) : t.monetizationPredicate(),
           newIndicatorDismissibleContentTypes: (0, j.sO)(t.guild) ? [l.z.SERVER_SUBSCRIPTION_SETTINGS_NEW_BADGE_TIER_TEMPLATE] : null
@@ -299,11 +299,11 @@ let e_ = {
         };
       case eh.pNK.ROLE_SUBSCRIPTIONS_STORE_PAGE:
         return {
-          section: eh.pNK.ROLE_SUBSCRIPTIONS_STORE_PAGE, impressionName: i.ImpressionNames.GUILD_ROLE_SUBSCRIPTION_STORE_PAGE_GUILD_SETTINGS, newIndicator: 2022 === new Date().getFullYear(), label: eb.intl.string(eb.t.ipTYsr), ariaLabel: eb.intl.string(eb.t.ipTYsr), element: _.Z, predicate: () => t.monetizationPredicate() && (0, x.sy)(t.guild)
+          section: eh.pNK.ROLE_SUBSCRIPTIONS_STORE_PAGE, impressionName: i.ImpressionNames.GUILD_ROLE_SUBSCRIPTION_STORE_PAGE_GUILD_SETTINGS, newIndicator: 2022 === new Date().getFullYear(), label: eb.intl.string(eb.t.ipTYsr), ariaLabel: eb.intl.string(eb.t.ipTYsr), element: v.Z, predicate: () => t.monetizationPredicate() && (0, x.sy)(t.guild)
         };
       case eh.pNK.GUILD_PREMIUM:
         return {
-          section: eh.pNK.GUILD_PREMIUM, impressionName: i.ImpressionNames.GUILD_SETTINGS_BOOST_STATUS, label: eb.intl.string(eb.t["8+VX4+"]), ariaLabel: eb.intl.string(eb.t["8+VX4+"]), element: J.Z, className: ex.serverBoostTabItem, icon: (0, r.jsx)(a.$Eu, {
+          section: eh.pNK.GUILD_PREMIUM, impressionName: i.ImpressionNames.GUILD_SETTINGS_BOOST_STATUS, label: eb.intl.string(eb.t["8+VX4+"]), ariaLabel: eb.intl.string(eb.t["8+VX4+"]), element: Q.Z, className: ex.serverBoostTabItem, icon: (0, r.jsx)(a.$Eu, {
             color: a.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK,
             size: "sm",
             className: ex.icon
@@ -311,7 +311,7 @@ let e_ = {
         };
       case eh.pNK.MEMBERS:
         return {
-          section: eh.pNK.MEMBERS, impressionName: i.ImpressionNames.GUILD_SETTINGS_MEMBERS, label: (0, r.jsx)(X.$, {}), ariaLabel: eb.intl.string(eb.t["9Oq93t"]), element: X.Z, type: o.bT.CUSTOM, predicate: () => t.canAccessMembersPage
+          section: eh.pNK.MEMBERS, impressionName: i.ImpressionNames.GUILD_SETTINGS_MEMBERS, label: (0, r.jsx)(q.$, {}), ariaLabel: eb.intl.string(eb.t["9Oq93t"]), element: q.Z, type: o.bT.CUSTOM, predicate: () => t.canAccessMembersPage
         };
       case eh.pNK.DELETE:
         return {
@@ -332,7 +332,7 @@ let e_ = {
                 }), (0, s.xf)()
               }
             };
-            e.mfaEnabled ? (0, a.h7j)(e => (0, r.jsx)(a.ConfirmModal, ev(ej({}, e, l), {
+            e.mfaEnabled ? (0, a.h7j)(e => (0, r.jsx)(a.ConfirmModal, e_(ej({}, e, l), {
               children: (0, r.jsx)(a.Text, {
                 variant: "text-md/normal",
                 children: eb.intl.format(eb.t["Zuo+VV"], {
@@ -343,7 +343,7 @@ let e_ = {
               let {
                 default: e
               } = await n.e("18259").then(n.bind(n, 1493));
-              return t => (0, r.jsx)(e, ev(ej({}, t, l), {
+              return t => (0, r.jsx)(e, e_(ej({}, t, l), {
                 validationText: i,
                 instructionText: eb.intl.string(eb.t.abprOD),
                 errorText: eb.intl.string(eb.t["c2/DS0"]),

@@ -58,7 +58,7 @@ let E = function(e, t, n) {
   },
   I = function(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
-    return t || e === _.evJ.NOT_ENOUGH_GUILD_MEMBERS ? (0, r.jsx)(c.kzN, {
+    return t || e === v.evJ.NOT_ENOUGH_GUILD_MEMBERS ? (0, r.jsx)(c.kzN, {
       icon: c.d3s,
       className: C.notEnoughMembersError,
       backgroundColor: c.mTc.BACKGROUND_ACCENT,
@@ -78,13 +78,13 @@ let E = function(e, t, n) {
         text: Chunk388032.intl.string(Chunk388032.t.Uskgx8),
         onClick: () => {
           exports(true), (function(e) {
-            b.default.track(_.rMx.GUILD_INSIGHTS_SETTINGS_CTA_CLICKED, {
+            b.default.track(v.rMx.GUILD_INSIGHTS_SETTINGS_CTA_CLICKED, {
               guild_id: e
             });
-            let t = null == e ? _.E07.DEVELOPER_PORTAL : _.E07.DEVELOPER_PORTAL_GUILD_ANALYTICS(e),
+            let t = null == e ? v.E07.DEVELOPER_PORTAL : v.E07.DEVELOPER_PORTAL_GUILD_ANALYTICS(e),
               n = (0, l.Z)();
             return o.tn.post({
-              url: _.ANM.HANDOFF,
+              url: v.ANM.HANDOFF,
               body: {
                 key: n
               },
@@ -92,7 +92,7 @@ let E = function(e, t, n) {
               rejectWithError: true
             }).then(e => {
               let r = e.body.handoff_token;
-              window.open(_.EYA.DEVELOPER_PORTAL_LOGIN_HANDOFF(n, r, t))
+              window.open(v.EYA.DEVELOPER_PORTAL_LOGIN_HANDOFF(n, r, t))
             }, () => {
               window.open(t)
             })

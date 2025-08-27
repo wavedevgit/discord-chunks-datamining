@@ -1,4 +1,4 @@
-/** Chunk was on 42926 **/
+/** Chunk was on 90746 **/
 /** chunk id: 70086, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   P: () => c
@@ -15,12 +15,12 @@ function c(e) {
     onClick: t,
     className: n
   } = e;
-  return (0, i.jsxs)(s.gtL, {
-    color: r.zx.Colors.GREEN,
+  return (0, r.jsxs)(s.gtL, {
+    color: i.zx.Colors.GREEN,
     className: n,
     innerClassName: a.upsellButton,
     onClick: t,
-    children: [(0, i.jsx)(s.$Eu, {
+    children: [(0, r.jsx)(s.$Eu, {
       color: "white",
       size: "custom",
       height: 16,

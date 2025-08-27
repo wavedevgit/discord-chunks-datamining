@@ -87,7 +87,7 @@ let w = Chunk647438.forwardRef((e, t) => {
       log: l,
       className: o,
       expanded: h,
-      guildId: _,
+      guildId: v,
       guild: w,
       onChannelContextMenu: R,
       onContentClick: Z,
@@ -142,7 +142,7 @@ let w = Chunk647438.forwardRef((e, t) => {
           if (null != e && null != t) return (0, r.jsx)(p.Z, {
             targetElementRef: M,
             user: e,
-            guildId: _,
+            guildId: v,
             newAnalyticsLocations: [m.Z.AVATAR],
             children: e => {
               var t;
@@ -152,7 +152,7 @@ let w = Chunk647438.forwardRef((e, t) => {
                   t.stopPropagation(), e.onClick(t)
                 },
                 className: I.avatar,
-                src: l.action === N.rsA.AUTO_MODERATION_BLOCK_MESSAGE || l.action === N.rsA.AUTO_MODERATION_FLAG_TO_CHANNEL || l.action === N.rsA.AUTO_MODERATION_USER_COMMUNICATION_DISABLED || l.action === N.rsA.AUTO_MODERATION_QUARANTINE_USER ? (0, O.j)() : null == (t = l.user) ? true : t.getAvatarURL(_, 40),
+                src: l.action === N.rsA.AUTO_MODERATION_BLOCK_MESSAGE || l.action === N.rsA.AUTO_MODERATION_FLAG_TO_CHANNEL || l.action === N.rsA.AUTO_MODERATION_USER_COMMUNICATION_DISABLED || l.action === N.rsA.AUTO_MODERATION_QUARANTINE_USER ? (0, O.j)() : null == (t = l.user) ? true : t.getAvatarURL(v, 40),
                 "aria-hidden": true,
                 size: d.EFr.SIZE_40
               }))
@@ -181,7 +181,7 @@ let w = Chunk647438.forwardRef((e, t) => {
                 target: n,
                 options: i
               } = l;
-              e = (0, v.lM)(n) ? n.name : n.toString();
+              e = (0, _.lM)(n) ? n.name : n.toString();
               let a = y.N5(l);
               return null != a ? (0, r.jsx)("div", {
                 className: I.overflowEllipsis,

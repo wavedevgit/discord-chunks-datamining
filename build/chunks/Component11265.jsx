@@ -22,7 +22,7 @@ let m = Chunk647438.memo(function(e) {
     onExpand: h,
     disableAnimation: f,
     disableBackground: b
-  } = e, [x, j] = i.useState(true), [v, _] = i.useState(false), {
+  } = e, [x, j] = i.useState(true), [_, v] = i.useState(false), {
     ref: O,
     height: y = 0
   } = (0, c.ZP)(), {
@@ -60,14 +60,14 @@ let m = Chunk647438.memo(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t),
     onStart: () => {
-      _(false)
+      v(false)
     },
     onRest: () => {
-      _(true)
+      v(true)
     }
   }, x || f ? "animate-never" : "respect-motion-settings");
   return i.useLayoutEffect(() => {
-    _(false), I(g)
+    v(false), I(g)
   }, [g]), i.useLayoutEffect(() => {
     let e = setTimeout(() => {
       j(false)
@@ -80,7 +80,7 @@ let m = Chunk647438.memo(function(e) {
     }),
     children: (0, r.jsxs)(s.animated.div, {
       className: a()(u.contentExpandContainer, {
-        [u.showOverflow]: g && v
+        [u.showOverflow]: g && _
       }),
       style: S,
       children: [(0, r.jsx)(o.P3F, {

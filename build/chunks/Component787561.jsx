@@ -112,9 +112,9 @@ let Z = "dismissedCommunityFeaturesUpsell",
         b(e.body.eligible_for_admin_server)
       }).catch(() => b(false))
     });
-    let v = (0, o.e7)([j.Z], () => j.Z.getGuild("942897714956472401")),
-      _ = l.features.has(I.oNc.COMMUNITY) && g >= 1e3 && h && null == v;
-    if (t && n && !_) return null;
+    let _ = (0, o.e7)([j.Z], () => j.Z.getGuild("942897714956472401")),
+      v = l.features.has(I.oNc.COMMUNITY) && g >= 1e3 && h && null == _;
+    if (t && n && !v) return null;
     let O = async () => {
       try {
         let e = await c.tn.post({
@@ -125,7 +125,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
         y.Z.close(), (0, f.X)(e.body.id)
       } catch (e) {}
     };
-    return a && !_ ? null : (0, r.jsxs)("div", {
+    return a && !v ? null : (0, r.jsxs)("div", {
       className: T.upsellContainer,
       children: [(0, r.jsxs)("div", {
         className: T.upsellContent,
@@ -158,7 +158,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
         })
       }), (0, r.jsxs)("div", {
         className: T.upsellFooter,
-        children: [_ && (0, r.jsx)("div", {
+        children: [v && (0, r.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
           className: T.upsellButton,
           children: (0, r.jsx)(m.zxk, {
@@ -224,7 +224,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
       } = e;
       t.type === I.d4z.GUILD_TEXT && g.push({
         value: t.id,
-        label: (0, h.F6)(t, O.default, _.Z, true)
+        label: (0, h.F6)(t, O.default, v.Z, true)
       })
     });
     let p = () => {

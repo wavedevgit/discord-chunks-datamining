@@ -24,8 +24,8 @@ function j(e) {
   var t, n;
   let {
     allSubscriptionListings: j,
-    priceTiers: v,
-    loading: _,
+    priceTiers: _,
+    loading: v,
     error: O,
     handlePublishTier: y,
     onDeleteEditState: C
@@ -36,8 +36,8 @@ function j(e) {
       var t;
       return null == (t = e.subscription_plans[0]) ? true : t.price
     });
-    return null == v ? true : v.filter(t => !e.includes(t))
-  }, [j, N, v]), T = null == E, P = null != (t = null == E ? true : E.published) && t, w = null != (n = null == E ? true : E.archived) && n;
+    return null == _ ? true : _.filter(t => !e.includes(t))
+  }, [j, N, _]), T = null == E, P = null != (t = null == E ? true : E.published) && t, w = null != (n = null == E ? true : E.archived) && n;
   return (0, r.jsxs)("div", {
     className: x.body,
     children: [null != O && (0, r.jsx)(d.Z, {
@@ -81,7 +81,7 @@ function j(e) {
               disabled: T,
               variant: "secondary",
               onClick: y,
-              loading: _,
+              loading: v,
               text: f.intl.string(f.t.Lj6R5u)
             })
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

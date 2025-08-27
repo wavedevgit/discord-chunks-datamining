@@ -95,7 +95,7 @@ function I(e) {
     }, [T.id, null == P ? true : P.id]), null == P) return null;
   switch (I) {
     case C.ZI.DISPLAY:
-      t = (0, r.jsx)(v.ZP, {
+      t = (0, r.jsx)(_.ZP, {
         guild: T,
         role: P,
         locked: Z,
@@ -122,7 +122,7 @@ function I(e) {
       });
       break;
     case C.ZI.MEMBERS:
-      t = (0, r.jsx)(_.ZP, {
+      t = (0, r.jsx)(v.ZP, {
         guild: T,
         role: P,
         locked: Z,

@@ -22,19 +22,19 @@ function u(e) {
     guildProfile: p,
     fetchGuildProfile: m,
     fetchStatus: g
-  } = (0, o.u)(t), C = g !== a.a.FETCHED, N = null != p && r.Y.VISIBLE.has(p.visibility);
-  s.useEffect(() => {
+  } = (0, o.u)(t), x = g !== a.a.FETCHED, C = null != p && s.Y.VISIBLE.has(p.visibility);
+  i.useEffect(() => {
     m()
   }, [t, m]);
-  let E = [];
-  if (n === h.d4z.GUILD_ANNOUNCEMENT && (E.push(c.intl.format(c.t.tI7KNT, {
-      documentationLink: d.Z.getArticleURL(h.BhN.ANNOUNCEMENT_CHANNELS)
-    })), !C && !N)) {
-    let e = c.intl.string(c.t["2Ab4IS"]);
-    E.push(e)
+  let N = [];
+  if (n === d.d4z.GUILD_ANNOUNCEMENT && (N.push(h.intl.format(h.t.tI7KNT, {
+      documentationLink: c.Z.getArticleURL(d.BhN.ANNOUNCEMENT_CHANNELS)
+    })), !x && !C)) {
+    let e = h.intl.string(h.t["2Ab4IS"]);
+    N.push(e)
   }
-  return 0 === E.length ? null : (0, i.jsx)(i.Fragment, {
-    children: E.map((e, t) => (0, i.jsx)(l.R94, {
+  return 0 === N.length ? null : (0, r.jsx)(r.Fragment, {
+    children: N.map((e, t) => (0, r.jsx)(l.R94, {
       className: u,
       type: l.R94.Types.DESCRIPTION,
       children: e

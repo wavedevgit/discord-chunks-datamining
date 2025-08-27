@@ -62,7 +62,7 @@ function j(e) {
     [i.id]: b(f({}, i), {
       permissions: a.Od(i.permissions, e)
     })
-  })), v = (0, r.jsxs)(r.Fragment, {
+  })), _ = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: h.itemContent,
       children: [(0, r.jsx)(o.X6q, {
@@ -97,7 +97,7 @@ function j(e) {
     children: e => (0, r.jsx)("div", b(f({
       className: l()(h.simpleItemWrapper, h.disabled)
     }, e), {
-      children: v
+      children: _
     }))
   }) : (0, r.jsx)(o.P3F, {
     onClick: () => {
@@ -111,9 +111,9 @@ function j(e) {
       })
     },
     className: l()(h.simpleItemWrapper, h.clickable),
-    children: v
+    children: _
   }) : (0, r.jsx)("div", {
     className: h.simpleItemWrapper,
-    children: v
+    children: _
   })
 }

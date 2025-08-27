@@ -64,7 +64,7 @@ let j = function(e) {
       welcomeMessage: l,
       onSave: e => (0, m._N)(e)
     }))
-  }), [t, l]), v = (0, s.e7)([u.default], () => u.default.getId());
+  }), [t, l]), _ = (0, s.e7)([u.default], () => u.default.getId());
   return (0, c.pw)(l) ? (0, r.jsx)(o.zxk, {
     variant: "primary",
     size: "sm",
@@ -76,7 +76,7 @@ let j = function(e) {
     children: [(0, r.jsx)(d.Z, {
       guildId: t,
       welcomeMessage: {
-        authorIds: l.authorIds.length > 0 ? l.authorIds : [v],
+        authorIds: l.authorIds.length > 0 ? l.authorIds : [_],
         message: l.message
       }
     }), (0, r.jsx)(o.ua7, {

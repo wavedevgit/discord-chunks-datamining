@@ -24,25 +24,25 @@ function x(e) {
   let {
     profile: n,
     canManageGuild: l
-  } = e, x = n.id, j = s.Y.VISIBLE.has(n.visibility), v = (0, o.e7)([d.Z], () => {
+  } = e, x = n.id, j = s.Y.VISIBLE.has(n.visibility), _ = (0, o.e7)([d.Z], () => {
     var e;
     return (null == (e = d.Z.getProfile(x)) ? true : e.visibility) === u.k.PUBLIC_WITH_RECRUITMENT
-  }, [x]), _ = i.useRef(null);
-  (0, p.Z)(_, h.KsC.PROFILE_VISIBILITY);
+  }, [x]), v = i.useRef(null);
+  (0, p.Z)(v, h.KsC.PROFILE_VISIBILITY);
   let O = i.useCallback(() => {
       j ? g.Z.updateGuildProfile(x, {
         visibility: u.k.RESTRICTED
       }) : g.Z.updateGuildProfile(x, {
-        visibility: v ? u.k.PUBLIC_WITH_RECRUITMENT : u.k.PUBLIC
+        visibility: _ ? u.k.PUBLIC_WITH_RECRUITMENT : u.k.PUBLIC
       })
-    }, [x, v, j]),
+    }, [x, _, j]),
     y = i.useCallback(() => {
       g.Z.setSection(h.pNK.ACCESS, h.KsC.ACCESS_DISCOVERABLE)
     }, []),
     C = null == (t = n.features) ? true : t.includes(h.oNc.DISCOVERABLE);
   return (0, r.jsxs)(c.hjN, {
     className: b.twoColumnContainer,
-    ref: _,
+    ref: v,
     children: [(0, r.jsxs)("div", {
       className: b.column,
       children: [(0, r.jsx)(c.j7V, {

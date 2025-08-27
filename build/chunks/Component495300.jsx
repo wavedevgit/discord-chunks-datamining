@@ -45,18 +45,18 @@ function D(e) {
   let t, {
       guildId: n
     } = e,
-    l = (0, s.e7)([_.Z], () => _.Z.getCurrentPage()),
-    h = (0, s.e7)([_.Z], () => {
+    l = (0, s.e7)([v.Z], () => v.Z.getCurrentPage()),
+    h = (0, s.e7)([v.Z], () => {
       let e = (0, O.lg)(l);
-      return null != e && !_.Z.isEducationUpsellDismissed(e)
+      return null != e && !v.Z.isEducationUpsellDismissed(e)
     }),
-    v = (0, y.Z)(n),
-    Z = !v && h;
+    _ = (0, y.Z)(n),
+    Z = !_ && h;
   switch (i.useEffect(() => {
       (0, m.Q3)(o.z.COMMUNITY_ONBOARDING_NEW_BADGE)
     }, []), l) {
     case O.PG.LANDING:
-      t = v ? (0, r.jsx)(E.Z, {
+      t = _ ? (0, r.jsx)(E.Z, {
         completed: true,
         guildId: n
       }) : (0, r.jsx)(S.Z, {});
@@ -66,22 +66,22 @@ function D(e) {
       break;
     case O.PG.DEFAULT_CHANNELS:
       t = (0, r.jsx)(C.Z, {
-        saveOnClose: !v
+        saveOnClose: !_
       });
       break;
     case O.PG.CUSTOMIZATION_QUESTIONS:
       t = (0, r.jsx)(I.ZP, {
-        saveOnClose: !v
+        saveOnClose: !_
       });
       break;
     case O.PG.HOME_SETTINGS:
       t = (0, r.jsx)(N.Z, {
-        saveOnClose: !v
+        saveOnClose: !_
       });
       break;
     case O.PG.REVIEW:
       t = (0, r.jsx)(E.Z, {
-        completed: v,
+        completed: _,
         guildId: n
       })
   }
@@ -89,17 +89,17 @@ function D(e) {
     className: a()(R.onboardingContainer, {
       [R.upsellOnTop]: Z
     }),
-    children: [!v && l !== O.PG.LANDING && (0, r.jsx)(A, {
+    children: [!_ && l !== O.PG.LANDING && (0, r.jsx)(A, {
       setOnboardingStep: b.$K,
       page: l,
       homeSettingsEnabled: true
-    }), v && l !== O.PG.LANDING && (0, r.jsx)("div", {
+    }), _ && l !== O.PG.LANDING && (0, r.jsx)("div", {
       children: (0, r.jsxs)(c.zx, {
         innerClassName: R.backButton,
         look: c.zx.Looks.BLANK,
         size: c.zx.Sizes.MIN,
         onClick: () => {
-          if (_.Z.hasChanges() && !_.Z.canCloseEarly()) {
+          if (v.Z.hasChanges() && !v.Z.canCloseEarly()) {
             p.S.dispatch(P.CkL.SHAKE_APP, {
               duration: 300,
               intensity: u.$x
@@ -127,9 +127,9 @@ function A(e) {
     page: t,
     setOnboardingStep: n,
     homeSettingsEnabled: i
-  } = e, l = (0, s.e7)([_.Z], () => _.Z.hasErrors()), o = e => {
+  } = e, l = (0, s.e7)([v.Z], () => v.Z.hasErrors()), o = e => {
     if (!l) return () => n(e)
-  }, c = (0, s.e7)([v.Z], () => v.Z.advancedMode);
+  }, c = (0, s.e7)([_.Z], () => _.Z.advancedMode);
   return (0, r.jsxs)("div", {
     className: R.progressContainer,
     children: [(0, r.jsxs)(d.P3F, {

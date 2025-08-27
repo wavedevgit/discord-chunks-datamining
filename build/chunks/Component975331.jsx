@@ -23,12 +23,12 @@ function x() {
   var e;
   let {
     editStateId: t
-  } = (0, Chunk727843.N)(), [n, l] = Chunk290348.TT(exports), [x, j] = Chunk290348.F2(exports), v = (0, Chunk584825.oC)(exports), {
-    options: _
-  } = (0, Chunk22902.Z)(null != (e = null == v ? true : v.active_trial) ? module : null), O = (0, Chunk518470.Z)(), y = null != require, C = Chunk647438.useCallback(e => {
-    let t = _.find(e => e.isDefault);
+  } = (0, Chunk727843.N)(), [n, l] = Chunk290348.TT(exports), [x, j] = Chunk290348.F2(exports), _ = (0, Chunk584825.oC)(exports), {
+    options: v
+  } = (0, Chunk22902.Z)(null != (e = null == _ ? true : _.active_trial) ? module : null), O = (0, Chunk518470.Z)(), y = null != require, C = Chunk647438.useCallback(e => {
+    let t = v.find(e => e.isDefault);
     a()(null != t, "Missing default trial duartion option"), l(e ? t.value : null)
-  }, [Chunk512722, _]), N = (0, Chunk723047.mY)(), E = (0, Chunk313201.Dt)(), I = (0, Chunk313201.Dt)();
+  }, [Chunk512722, v]), N = (0, Chunk723047.mY)(), E = (0, Chunk313201.Dt)(), I = (0, Chunk313201.Dt)();
   return (0, Chunk951288.jsxs)(Chunk783454.Z, {
     title: Chunk388032.intl.string(Chunk388032.t["6antoq"]),
     description: Chunk388032.intl.string(Chunk388032.t.urVijY),
@@ -51,7 +51,7 @@ function x() {
         size: 8
       }), (0, Chunk951288.jsx)(Chunk481060.q4e, {
         "aria-labelledby": E,
-        options: _,
+        options: v,
         placeholder: Chunk388032.intl.string(Chunk388032.t.WZG1BQ),
         value: require,
         onChange: Chunk512722,

@@ -77,7 +77,7 @@ function f(e) {
     placeholder: p,
     className: f,
     maxTags: b
-  } = e, x = i.useRef(null), j = i.useRef(null), v = i.useRef(null), _ = (0, m.V)(n), {
+  } = e, x = i.useRef(null), j = i.useRef(null), _ = i.useRef(null), v = (0, m.V)(n), {
     handlePasteEvent: O,
     handleInputChange: y,
     handleKeyDown: C,
@@ -88,8 +88,8 @@ function f(e) {
     handleUnselectTag: T,
     handleResetTagSelections: P,
     handleInputBlurEvent: w
-  } = (0, m.Q)(_, {
-    scrollerRef: v,
+  } = (0, m.Q)(v, {
+    scrollerRef: _,
     mainInputRef: x,
     mainContainerRef: j
   }), {
@@ -99,7 +99,7 @@ function f(e) {
       selections: D,
       isSelecting: A
     }
-  } = _, L = (0, o.Z)(Z), [k, M] = i.useState(false), G = i.useCallback(() => {
+  } = v, L = (0, o.Z)(Z), [k, M] = i.useState(false), G = i.useCallback(() => {
     var e;
     M(false), P(), null == (e = x.current) || e.focus({
       preventScroll: true
@@ -133,7 +133,7 @@ function f(e) {
     tabIndex: 0,
     onKeyUp: N,
     children: [(0, r.jsxs)(h, {
-      ref: v,
+      ref: _,
       onClick: G,
       children: [Z.map((e, t) => (0, r.jsx)(d.Z, {
         value: e,

@@ -51,7 +51,7 @@ function j(e, t) {
   }), e
 }
 
-function v(e) {
+function _(e) {
   var t, n;
   let i, {
     theme: l,
@@ -99,7 +99,7 @@ function v(e) {
   })
 }
 
-function _(e) {
+function v(e) {
   let {
     titleText: t,
     fieldText: n,
@@ -167,11 +167,11 @@ function O(e) {
     onConfigurationChange: g,
     locked: p,
     operator: x
-  } = e, j = (null == c ? true : c.configuration) != null, v = null != (n = null == c ? true : c.index) ? n : false, [_, O] = function(e, t) {
+  } = e, j = (null == c ? true : c.configuration) != null, _ = null != (n = null == c ? true : c.index) ? n : false, [v, O] = function(e, t) {
     let n = null != t ? t : h.iO.GREATER_THAN,
       r = Math.round(Number(null != e ? e : 0));
     return n === h.iO.GREATER_THAN ? r = Math.max(1, r + 1) : n === h.iO.LESS_THAN && (r = Math.max(0, r - 1)), [r.toString(), n]
-  }(null == c || null == (t = c.configuration) ? true : t.value, x), [y, C] = i.useState(_), N = null != s ? f.intl.format(s, {
+  }(null == c || null == (t = c.configuration) ? true : t.value, x), [y, C] = i.useState(v), N = null != s ? f.intl.format(s, {
     count: y,
     metadataHook: () => y
   }) : (0, r.jsx)("span", {
@@ -223,7 +223,7 @@ function O(e) {
                 connectionMetadataField: o,
                 operator: n,
                 value: t
-              }, v)
+              }, _)
             }
           },
           disabled: p || !j
@@ -396,7 +396,7 @@ function E(e) {
       platform: l,
       onConfigurationChange: n,
       locked: i
-    }), (0, r.jsx)(_, {
+    }), (0, r.jsx)(v, {
       titleText: f.intl.string(f.t.yz2CIC),
       fieldText: f.intl.string(f.t.E2iT8P),
       metadataField: h.PC.TWITTER_VERIFIED,
@@ -431,7 +431,7 @@ function I(e) {
       platform: l,
       onConfigurationChange: n,
       locked: i
-    }), (0, r.jsx)(_, {
+    }), (0, r.jsx)(v, {
       titleText: f.intl.string(f.t.oWM95O),
       fieldText: f.intl.string(f.t["0cKdkZ"]),
       metadataField: h.PC.REDDIT_MOD,
@@ -439,7 +439,7 @@ function I(e) {
       platform: l,
       onConfigurationChange: n,
       locked: i
-    }), (0, r.jsx)(_, {
+    }), (0, r.jsx)(v, {
       titleText: f.intl.string(f.t["06rDHR"]),
       fieldText: f.intl.string(f.t["kCAN5+"]),
       metadataField: h.PC.REDDIT_GOLD,
@@ -466,7 +466,7 @@ function S(e) {
       platform: l,
       onConfigurationChange: n,
       locked: i
-    }), (0, r.jsx)(_, {
+    }), (0, r.jsx)(v, {
       titleText: f.intl.string(f.t.IhXLy8),
       fieldText: f.intl.string(f.t["0JyE8P"]),
       metadataField: h.PC.PAYPAL_VERIFIED,
@@ -518,7 +518,7 @@ function T(e) {
       onConfigurationChange: n,
       locked: i,
       operator: h.iO.LESS_THAN
-    }), (0, r.jsx)(_, {
+    }), (0, r.jsx)(v, {
       titleText: f.intl.string(f.t.TEEYwc),
       fieldText: f.intl.string(f.t["39wASE"]),
       metadataField: h.PC.EBAY_TOP_RATED_SELLER,
@@ -537,7 +537,7 @@ function P(e) {
     locked: i
   } = e, l = g.Z.get(p.ABu.TIKTOK);
   return (0, r.jsxs)(y, {
-    children: [(0, r.jsx)(_, {
+    children: [(0, r.jsx)(v, {
       titleText: f.intl.string(f.t.QHHwRU),
       fieldText: f.intl.string(f.t.E2iT8P),
       metadataField: h.PC.TIKTOK_VERIFIED,
@@ -623,7 +623,7 @@ function w(e) {
         }, e.key);
       case h.xn.BOOLEAN_EQUAL:
       case h.xn.BOOLEAN_NOT_EQUAL:
-        return (0, r.jsx)(_, {
+        return (0, r.jsx)(v, {
           titleText: e.name,
           fieldText: e.description,
           metadataField: e.key,
@@ -696,7 +696,7 @@ function R(e) {
   }
   return (0, r.jsxs)("div", {
     className: b.container,
-    children: [(0, r.jsx)(v, {
+    children: [(0, r.jsx)(_, {
       theme: s,
       platform: d,
       integration: c,

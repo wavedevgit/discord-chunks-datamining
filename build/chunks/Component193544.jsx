@@ -24,13 +24,13 @@ function h(e) {
     options: b,
     className: x,
     onChange: j
-  } = e, [v, _] = i.useState(f), [O, y] = i.useState(false), [C, N] = i.useState(false), E = i.useRef(null);
+  } = e, [_, v] = i.useState(f), [O, y] = i.useState(false), [C, N] = i.useState(false), E = i.useRef(null);
   i.useEffect(() => {
-    _(f)
+    v(f)
   }, [f]), i.useEffect(() => () => {
     clearTimeout(E.current)
   }, []);
-  let I = b.find(e => e.value === v);
+  let I = b.find(e => e.value === _);
   return (0, r.jsx)(u.Z, {
     title: O ? h : null != (t = null == I ? true : I.title) ? t : h,
     description: O ? "(".concat(null != (n = null == I ? true : I.title) ? n : g.intl.string(g.t.PoWNfX), ")") : null != (l = null == I ? true : I.description) ? l : "",
@@ -47,15 +47,15 @@ function h(e) {
       title: e.title,
       description: e.description,
       highlightColor: e.highlightColor,
-      className: a()(p.groupCollapsedRow, v === e.value && p.selected),
-      selected: v === e.value,
-      action: v === e.value ? (0, r.jsx)(c.Z, {
+      className: a()(p.groupCollapsedRow, _ === e.value && p.selected),
+      selected: _ === e.value,
+      action: _ === e.value ? (0, r.jsx)(c.Z, {
         className: p.radioItem
       }) : (0, r.jsx)(o.Z, {
         className: p.radioItem
       }),
       onClick: () => {
-        e.disabled || e.value === v || (N(true), null == j || j(e), _(e.value), E.current = setTimeout(() => {
+        e.disabled || e.value === _ || (N(true), null == j || j(e), v(e.value), E.current = setTimeout(() => {
           N(false), y(false)
         }, 1e3))
       },

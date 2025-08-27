@@ -28,8 +28,8 @@ function g(e) {
   }, [x]);
   if (null == b) return null;
   let {
-    headerText: v,
-    descriptionText: _,
+    headerText: _,
+    descriptionText: v,
     icon: O
   } = b;
   return (0, r.jsxs)("div", {
@@ -45,11 +45,11 @@ function g(e) {
       className: m.actionTextContainer,
       children: [(0, r.jsx)(l.X6q, {
         variant: "heading-sm/semibold",
-        children: v
+        children: _
       }), (0, r.jsx)(l.Text, {
         color: "interactive-normal",
         variant: "text-xs/medium",
-        children: _
+        children: v
       }), p && (0, r.jsxs)(l.Text, {
         color: "text-muted",
         variant: "text-xs/medium",

@@ -1,7 +1,7 @@
 /** Chunk was on 88479 **/
 /** chunk id: 507317, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => _
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,10 +20,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk200299 = require("./200299.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk197530 = require("./197530.js");
-let v = function(e) {
+let _ = function(e) {
   let {
     guild: t
-  } = e, v = t.features.has(p.oNc.BANNER), _ = i.useCallback((e, i) => {
+  } = e, _ = t.features.has(p.oNc.BANNER), v = i.useCallback((e, i) => {
     if (null == e || true === i) return void g.Z.saveGuild(t.id, {
       homeHeader: null
     });
@@ -86,13 +86,13 @@ let v = function(e) {
       id: t.id,
       homeHeader: e
     }) : null,
-    disabled: !v,
-    onChange: _,
+    disabled: !_,
+    onChange: v,
     hint: x.intl.string(x.t.NyXznp),
-    enabled: v,
+    enabled: _,
     maxFileSizeBytes: b.B
   });
-  return v ? (0, r.jsxs)(r.Fragment, {
+  return _ ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: j.sectionHeader,
       children: [(0, r.jsx)(a.X6q, {
@@ -117,7 +117,7 @@ let v = function(e) {
           color: l.Tt.BRAND,
           className: j.uploadButton,
           buttonCTA: x.intl.string(x.t.yG2pUl),
-          onChange: _,
+          onChange: v,
           maxFileSizeBytes: b.B
         })]
       }), (0, r.jsx)("div", {

@@ -24,7 +24,7 @@ let m = Chunk647438.memo(function(e) {
     setEditingRule: f
   } = (0, s.V)(), {
     isLoading: b
-  } = (0, s.w)(), [x] = i.useState(() => !(0, l.Vb)(t)), j = (null == p ? true : p.id) === t.id || n, v = (0, a.U)(null == t ? true : t.id), _ = j && null != p ? p : t, O = i.useMemo(() => (0, o.af)(t.name), [null == t ? true : t.name]), y = i.useCallback(() => {
+  } = (0, s.w)(), [x] = i.useState(() => !(0, l.Vb)(t)), j = (null == p ? true : p.id) === t.id || n, _ = (0, a.U)(null == t ? true : t.id), v = j && null != p ? p : t, O = i.useMemo(() => (0, o.af)(t.name), [null == t ? true : t.name]), y = i.useCallback(() => {
     h(t.guildId, t.triggerType)
   }, [t.guildId, t.triggerType, h]), C = i.useCallback(e => {
     b || f(e, true)
@@ -39,11 +39,11 @@ let m = Chunk647438.memo(function(e) {
   }, [j, g, O, t, f]);
   return (0, r.jsx)(d.Z, {
     renderHeader: (0, r.jsx)(u.Z, {
-      rule: _,
-      forceSetup: x && !j && !v,
+      rule: v,
+      forceSetup: x && !j && !_,
       triggerType: t.triggerType,
       isEditMode: j,
-      isDefaultRule: v,
+      isDefaultRule: _,
       onChangeRule: C,
       onSetupRule: y
     }),
@@ -51,7 +51,7 @@ let m = Chunk647438.memo(function(e) {
     isExpanded: j,
     onExpand: N,
     children: j && (0, r.jsx)(c.Z, {
-      rule: _,
+      rule: v,
       isLoading: b,
       onChangeRule: C
     })

@@ -40,11 +40,11 @@ let y = {
       children: [(0, r.jsx)(a.X6q, {
         className: O.upsellHeader,
         variant: "heading-xl/semibold",
-        children: _.intl.string(_.t.hzCkys)
+        children: v.intl.string(v.t.hzCkys)
       }), (0, r.jsx)(a.Text, {
         className: O.upsellDescription,
         variant: "text-md/normal",
-        children: _.intl.string(_.t.jcesAA)
+        children: v.intl.string(v.t.jcesAA)
       }), (0, r.jsxs)("div", {
         className: O.upsellButtons,
         children: [(0, r.jsx)(l.zx, {
@@ -57,7 +57,7 @@ let y = {
             guildId: t.id,
             totalNumberOfSlotsToAssign: s
           }),
-          children: _.intl.string(_.t.Q5dbTk)
+          children: v.intl.string(v.t.Q5dbTk)
         }), (0, r.jsx)(l.zx, {
           innerClassName: O.upsellButton,
           color: l.zx.Colors.WHITE,
@@ -67,7 +67,7 @@ let y = {
               section: j.jXE.GUILD_SETTINGS_STICKERS
             }
           }),
-          children: _.intl.string(_.t.hvVgAQ)
+          children: v.intl.string(v.t.hvVgAQ)
         })]
       })]
     })
@@ -98,11 +98,11 @@ let y = {
       c = (0, f.FZ)(s),
       u = (0, f.A3)(s),
       m = a.length;
-    return null == c || s === j.Eu4.TIER_3 || o > 0 ? null : (m > u ? (t = _.intl.formatToPlainString(_.t.ZtAY1d, {
+    return null == c || s === j.Eu4.TIER_3 || o > 0 ? null : (m > u ? (t = v.intl.formatToPlainString(v.t.ZtAY1d, {
       level: c
-    }), n = _.intl.formatToPlainString(_.t["13hOWl"], {
+    }), n = v.intl.formatToPlainString(v.t["13hOWl"], {
       level: c
-    }), i = j.qAy.BOOST_UPSELL_BANNER_LOST_LEVEL) : (t = _.intl.string(_.t.zT9Sxc), n = _.intl.formatToPlainString(_.t.YaW9wM, {
+    }), i = j.qAy.BOOST_UPSELL_BANNER_LOST_LEVEL) : (t = v.intl.string(v.t.zT9Sxc), n = v.intl.formatToPlainString(v.t.YaW9wM, {
       level: c,
       numAdditional: (0, f.ig)(c)
     }), i = j.qAy.BOOST_UPSELL_BANNER_SLOTS_FULL), (0, r.jsx)(d.Z, {

@@ -97,7 +97,7 @@ function Z(e) {
   function b(e) {
     if (e.stopPropagation(), !u) {
       if (e.shiftKey) return void R(t, l, s);
-      let n = v.Z.getRole(s);
+      let n = _.Z.getRole(s);
       (0, c.h7j)(e => (0, r.jsx)(o.Modal, w(P({}, e), {
         title: I.intl.string(I.t["7sFNfX"]),
         subtitle: I.intl.format(I.t.scORUl, {
@@ -221,8 +221,8 @@ function A(e) {
   } = e, {
     analyticsLocations: m
   } = (0, p.ZP)(g.Z.MEMBER_LIST), h = i.useMemo(() => l.trim().toLowerCase(), [l]);
-  (0, _.rY)(t, h);
-  let f = i.useMemo(() => d.filter(e => (0, _.eg)(h, e)), [d, h]),
+  (0, v.rY)(t, h);
+  let f = i.useMemo(() => d.filter(e => (0, v.eg)(h, e)), [d, h]),
     b = i.useMemo(() => f.sort((e, t) => e.name.localeCompare(t.name)), [f]);
   return (0, r.jsx)(p.Gt, {
     value: m,
@@ -297,10 +297,10 @@ function k(e) {
   } = (0, O.Z)(0), {
     scrolledToTop: h,
     handleScroll: f
-  } = (0, y.V)(), j = l.managed || o, v = (0, _.e)(t.id, l.id), C = (0, s.e7)([x.Z], () => {
+  } = (0, y.V)(), j = l.managed || o, _ = (0, v.e)(t.id, l.id), C = (0, s.e7)([x.Z], () => {
     var e, n;
     return null != (n = null == (e = x.Z.getRoleMemberCount(t.id)) ? true : e[l.id]) ? n : 0
-  }) > v.length, R = () => {
+  }) > _.length, R = () => {
     b.default.track(E.rMx.OPEN_MODAL, {
       type: "Add Role Members",
       location_page: "Role Settings",
@@ -308,7 +308,7 @@ function k(e) {
     }), (0, c.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("7590"), n.e("71993")]).then(n.bind(n, 24722));
+      } = await Promise.all([n.e("33285"), n.e("3291")]).then(n.bind(n, 24722));
       return n => (0, r.jsx)(e, w(P({}, n), {
         roleId: l.id,
         guildId: t.id
@@ -350,7 +350,7 @@ function k(e) {
       roleId: l.id,
       locked: j,
       onScroll: f,
-      roleMembers: v,
+      roleMembers: _,
       handleAddClick: R
     })]
   })

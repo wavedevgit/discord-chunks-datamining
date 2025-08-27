@@ -1,7 +1,7 @@
 /** Chunk was on 88479 **/
 /** chunk id: 516448, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => _
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -21,15 +21,15 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk605041 = require("./605041.js");
 
-function v(e) {
+function _(e) {
   let {
     allSubscriptionListings: t
   } = e, {
     editStateId: n,
-    guildId: v
-  } = (0, o.N)(), [_, O] = c.UE(n), [y, C] = c.R7(n), N = i.useMemo(() => t.filter(e => e.id !== n), [t, n]), {
+    guildId: _
+  } = (0, o.N)(), [v, O] = c.UE(n), [y, C] = c.R7(n), N = i.useMemo(() => t.filter(e => e.id !== n), [t, n]), {
     isFullServerGating: E
-  } = (0, d.Z)(v), I = (0, a.Dt)(), S = (0, s.mY)();
+  } = (0, d.Z)(_), I = (0, a.Dt)(), S = (0, s.mY)();
   return (0, r.jsxs)(u.Z, {
     title: x.intl.string(x.t.YNw2Sk),
     description: x.intl.string(x.t.zMW5r6),
@@ -42,7 +42,7 @@ function v(e) {
         disabled: S,
         children: x.intl.string(x.t.kHalVF)
       }), (0, r.jsx)(m.Z, {
-        channelBenefits: _,
+        channelBenefits: v,
         intangibleBenefits: y,
         subscriptionListings: N,
         onImport: function(e, t) {
@@ -51,7 +51,7 @@ function v(e) {
       }), (0, r.jsx)(l.LZC, {
         size: 8
       }), (0, r.jsx)(m.w, {
-        guildId: v,
+        guildId: _,
         onImport: function(e) {
           O(t => {
             let n = new Set(t.map(e => {

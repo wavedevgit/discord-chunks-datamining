@@ -136,10 +136,10 @@ let C = [{
   I = e => {
     let {
       guild: t
-    } = e, [n, l] = i.useState(0), [a, v] = i.useState(0), [_, O] = i.useState(), I = (0, s.e7)([m.Z], () => m.Z.can(p.Plq.ADMINISTRATOR, t)), S = null == _ ? true : _.offsetWidth, T = null == _ ? true : _.offsetHeight;
+    } = e, [n, l] = i.useState(0), [a, _] = i.useState(0), [v, O] = i.useState(), I = (0, s.e7)([m.Z], () => m.Z.can(p.Plq.ADMINISTRATOR, t)), S = null == v ? true : v.offsetWidth, T = null == v ? true : v.offsetHeight;
     i.useEffect(() => {
-      null != S && l(S / 2), null != T && v(T / 2)
-    }, [S, T, l, v]), i.useEffect(() => {
+      null != S && l(S / 2), null != T && _(T / 2)
+    }, [S, T, l, _]), i.useEffect(() => {
       (0, d.Kw)(h.v.GUILD_SETTINGS_COMMUNITY_GUILD_UPSELL)
     }, []);
     let P = () => {

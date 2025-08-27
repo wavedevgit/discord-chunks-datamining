@@ -34,7 +34,7 @@ function b(e) {
       })
     }), (0, r.jsxs)("div", {
       className: f.channelList,
-      children: [(0, r.jsx)(v, {}), 0 === l.length && (0, r.jsx)(x, {}), (0, r.jsx)(j, {
+      children: [(0, r.jsx)(_, {}), 0 === l.length && (0, r.jsx)(x, {}), (0, r.jsx)(j, {
         channels: l
       })]
     })]
@@ -64,7 +64,7 @@ function j(e) {
     channels: t
   } = e;
   return (0, r.jsx)(r.Fragment, {
-    children: t.map(e => e.isCategory() ? (0, r.jsx)(_, {
+    children: t.map(e => e.isCategory() ? (0, r.jsx)(v, {
       label: e.name
     }, e.id) : (0, r.jsx)(O, {
       channel: e
@@ -72,13 +72,13 @@ function j(e) {
   })
 }
 
-function v() {
+function _() {
   return (0, Chunk951288.jsx)("div", {
     className: Chunk628682.divider
   })
 }
 
-function _(e) {
+function v(e) {
   let {
     label: t
   } = e;

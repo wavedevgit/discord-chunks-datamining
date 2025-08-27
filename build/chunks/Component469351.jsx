@@ -38,7 +38,7 @@ function w(e) {
     hasValidApplication: n
   } = e, {
     listingsLoaded: w
-  } = (0, y.eD)(t), R = (0, a.e7)([v.Z], () => v.Z.getGuild(t)), Z = (0, a.e7)([_.default], () => _.default.getCurrentUser()), D = null != R && (0, x.eM)(R, Z), {
+  } = (0, y.eD)(t), R = (0, a.e7)([_.Z], () => _.Z.getGuild(t)), Z = (0, a.e7)([v.default], () => v.default.getCurrentUser()), D = null != R && (0, x.eM)(R, Z), {
     loading: A
   } = (0, c.H)(t), [L, k] = i.useState(n ? "manage_listings" : "payment");
   (0, m.P)(R);

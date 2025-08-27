@@ -69,9 +69,9 @@ function I(e) {
       nsfwLevel: null == (e = d.Z.getGuild(t)) ? true : e.nsfwLevel,
       ownerConfiguredContentLevel: null == (n = d.Z.getGuild(t)) ? true : n.ownerConfiguredContentLevel
     }
-  }), o = (0, l.e7)([v.Z], () => {
+  }), o = (0, l.e7)([_.Z], () => {
     var e;
-    return null == (e = v.Z.pendingState) ? true : e.isAgeRestricted
+    return null == (e = _.Z.pendingState) ? true : e.isAgeRestricted
   }), c = i.useCallback(e => {
     f.Z.setIsAgeRestricted(t, e)
   }, [t]), m = n === y.V_K.AGE_RESTRICTED && s !== y.V_K.AGE_RESTRICTED;

@@ -212,7 +212,7 @@ function P(e) {
       keywords: r
     } = n;
     r.length >= y.G7 || (m(null), (0, d.zH)(t, [...r, e]))
-  }, [t, n]), h = i.useMemo(() => (0, v.P5)(n.primaryCategoryId).filter(e => !n.keywords.includes(e)).map(e => {
+  }, [t, n]), h = i.useMemo(() => (0, _.P5)(n.primaryCategoryId).filter(e => !n.keywords.includes(e)).map(e => {
     let t = n.keywords.length >= y.G7;
     return {
       text: e,
@@ -383,7 +383,7 @@ function D(e) {
     }), (0, r.jsx)(Z, {}), (0, r.jsx)(R, {
       preferredLocale: o.preferredLocale
     }), (0, r.jsx)(Z, {}), (0, r.jsx)("div", {
-      children: (0, r.jsx)(_.A, {
+      children: (0, r.jsx)(v.A, {
         requireTerms: t,
         rules: n
       })

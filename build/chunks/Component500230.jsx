@@ -1,7 +1,7 @@
 /** Chunk was on 88479 **/
 /** chunk id: 500230, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => v
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -75,7 +75,7 @@ function j(e) {
   }))
 }
 
-function v(e) {
+function _(e) {
   let {
     badge: t,
     primary: n,
@@ -127,17 +127,17 @@ function v(e) {
     }))
   })
 }
-let _ = function(e) {
+let v = function(e) {
   let {
     className: t,
     guildId: n,
     badge: l,
     primaryColor: a,
     secondaryColor: s
-  } = e, [c, d] = i.useState(false), u = i.useRef(null), _ = i.useId(), O = i.useId(), y = i.useMemo(() => g.Ek.every(e => e.primary !== a || e.secondary !== s), [a, s]), C = (0, o.arW)({
+  } = e, [c, d] = i.useState(false), u = i.useRef(null), v = i.useId(), O = i.useId(), y = i.useMemo(() => g.Ek.every(e => e.primary !== a || e.secondary !== s), [a, s]), C = (0, o.arW)({
     orientation: "horizontal",
     isDisabled: false,
-    labelledBy: _
+    labelledBy: v
   });
 
   function N(e) {
@@ -147,7 +147,7 @@ let _ = function(e) {
   return (0, r.jsxs)("div", {
     className: t,
     children: [(0, r.jsx)(o.vwX, {
-      id: _,
+      id: v,
       className: f.sectionTitle,
       children: h.intl.string(p.default.zSbMdX)
     }), (0, r.jsx)(o.nn4, {
@@ -161,7 +161,7 @@ let _ = function(e) {
         badge: l,
         isSelected: e.primary === a && e.secondary === s,
         onClick: () => N(e)
-      }, "".concat(e.primary).concat(e.secondary))), (0, r.jsx)(v, {
+      }, "".concat(e.primary).concat(e.secondary))), (0, r.jsx)(_, {
         badge: l,
         primary: a,
         secondary: s,

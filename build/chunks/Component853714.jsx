@@ -158,7 +158,7 @@ let M = Chunk647438.forwardRef((e, t) => {
             }))
           });
         case T.KFR.USER:
-          let o = _.default.getUser(t.targetId);
+          let o = v.default.getUser(t.targetId);
           if (null != o && null != l) return (0, m.jW)(e, async () => {
             let {
               default: e
@@ -563,7 +563,7 @@ let B = Chunk442837.ZP.connectStores([Chunk987707.Z, Chunk999382.Z, Chunk430824.
   return {
     guildId: module,
     guild: exports,
-    moderators: Chunk987707.Z.userIds.map(e => _.default.getUser(e)).filter(Chunk823379.lm),
+    moderators: Chunk987707.Z.userIds.map(e => v.default.getUser(e)).filter(Chunk823379.lm),
     isInitialLoading: Chunk987707.Z.isInitialLoading,
     isLoading: Chunk987707.Z.isLoading,
     isLoadingNextPage: Chunk987707.Z.isLoadingNextPage,

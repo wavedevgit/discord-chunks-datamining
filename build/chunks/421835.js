@@ -1,15 +1,18 @@
-/** Chunk was on 88572 **/
-/** chunk id: 421835, original params: e,a,o (module,exports,require) **/
+/** Chunk was on 70725 **/
+/** chunk id: 421835, original params: e,c,a (module,exports,require) **/
 module.exports = {
   modal: "modal_ac72c6 " + require("./154257.js").scrollbarGhostHairline,
   modalContent: "modalContent_ac72c6",
   modalFooter: "modalFooter_ac72c6",
   name: "name_ac72c6",
   type: "type_ac72c6",
+  description: "description_ac72c6",
   emojiButton: "emojiButton_ac72c6",
   channelNameNote: "channelNameNote_ac72c6",
   icon: "icon_ac72c6",
   error: "error_ac72c6",
+  searchHelpText: "searchHelpText_ac72c6",
+  membersList: "membersList_ac72c6",
   header: "header_ac72c6",
   title: "title_ac72c6",
   subtitle: "subtitle_ac72c6",

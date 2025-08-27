@@ -23,9 +23,9 @@ let m = e => {
       maxTaxLength: b,
       maxTags: x,
       disabled: j,
-      placeholder: v
+      placeholder: _
     } = e,
-    _ = function(e, t) {
+    v = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -95,14 +95,14 @@ let m = e => {
     }({
       className: u.inputOuter,
       inputClassName: u.inputInner
-    }, _), n = n = {
+    }, v), n = n = {
       value: O,
       onKeyDown: E,
       onChange: y,
       maxLength: b,
       disabled: j,
       onBlur: N,
-      placeholder: v
+      placeholder: _
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {

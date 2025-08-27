@@ -1,8 +1,8 @@
 /** Chunk was on 46786 **/
-/** chunk id: 388131, original params: e,t,r (module,exports,require) **/
+/** chunk id: 388131, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => w,
-  default: () => j
+  A: () => j,
+  default: () => m
 }), require("./388685.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -22,58 +22,58 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk878713 = require("./878713.js");
 
-function w(e, t) {
+function j(e, t) {
   return {
     id: e,
     type: t,
-    deny: h.Hn,
-    allow: f.yP
+    deny: f.Hn,
+    allow: g.yP
   }
 }
 
-function j(e) {
-  var t, r, {
-      channelId: h,
-      onClose: j
+function m(e) {
+  var t, n, {
+      channelId: f,
+      onClose: m
     } = e,
-    O = function(e, t) {
+    w = function(e, t) {
       if (null == e) return {};
-      var r, n, l = function(e, t) {
+      var n, r, i = function(e, t) {
         if (null == e) return {};
-        var r, n, l = {},
-          o = Object.keys(e);
-        for (n = 0; n < o.length; n++) r = o[n], t.indexOf(r) >= 0 || (l[r] = e[r]);
-        return l
+        var n, r, i = {},
+          l = Object.keys(e);
+        for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+        return i
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var o = Object.getOwnPropertySymbols(e);
-        for (n = 0; n < o.length; n++) r = o[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r])
+        var l = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
       }
-      return l
+      return i
     }(e, ["channelId", "onClose"]);
-  let v = (0, o.e7)([x.Z], () => x.Z.getChannel(h)),
-    S = (0, o.e7)([b.Z], () => b.Z.getGuild(null == v ? true : v.getGuildId())),
-    [E, R] = l.useState(""),
-    [T, P] = l.useState({}),
-    [C, k] = l.useState(false),
-    [I, L] = l.useState(null),
-    M = l.useRef(null),
+  let v = (0, l.e7)([b.Z], () => b.Z.getChannel(f)),
+    P = (0, l.e7)([y.Z], () => y.Z.getGuild(null == v ? true : v.getGuildId())),
+    [S, E] = i.useState(""),
+    [_, N] = i.useState({}),
+    [T, Z] = i.useState(false),
+    [k, C] = i.useState(null),
+    I = i.useRef(null),
     {
-      roles: Z,
-      members: N,
-      getRichTag: B
-    } = (0, m.Q)(S, v, f.yP, E),
-    A = d.Z.useSections({
-      roles: Z,
-      members: N
+      roles: R,
+      members: H,
+      getRichTag: G
+    } = (0, p.Q)(P, v, g.yP, S),
+    M = d.Z.useSections({
+      roles: R,
+      members: H
     });
-  if (null == v || null == S) return null;
-  let D = async () => {
-    k(true);
+  if (null == v || null == P) return null;
+  let A = async () => {
+    Z(true);
     try {
       await
       function(e, t) {
-        let r = Object.values(t).filter(e => {
+        let n = Object.values(t).filter(e => {
           let {
             row: t
           } = e;
@@ -82,99 +82,99 @@ function j(e) {
           let {
             row: t
           } = e;
-          return t.rowType === y.aC.ROLE ? w(t.id, u.BN.ROLE) : w(t.id, u.BN.MEMBER)
+          return t.rowType === O.aC.ROLE ? j(t.id, u.BN.ROLE) : j(t.id, u.BN.MEMBER)
         });
-        return (0, a.hw)(e.id, r, true)
-      }(v, T), j()
+        return (0, s.hw)(e.id, n, true)
+      }(v, _), m()
     } catch (t) {
-      let e = new c.Hx(t);
-      k(false), L(e)
+      let e = new a.Hx(t);
+      Z(false), C(e)
     }
   };
-  return (0, n.jsx)(d.Z.Provider, {
-    listRef: M,
-    query: E,
-    setQuery: R,
-    pendingAdditions: T,
-    setPendingAdditions: P,
-    roles: Z,
-    members: N,
-    getRichTag: B,
-    children: (0, n.jsx)(i.Modal, (t = function(e) {
+  return (0, r.jsx)(d.Z.Provider, {
+    listRef: I,
+    query: S,
+    setQuery: E,
+    pendingAdditions: _,
+    setPendingAdditions: N,
+    roles: R,
+    members: H,
+    getRichTag: G,
+    children: (0, r.jsx)(o.Modal, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
-        var r = null != arguments[t] ? arguments[t] : {},
-          n = Object.keys(r);
-        "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-          return Object.getOwnPropertyDescriptor(r, e).enumerable
-        }))), n.forEach(function(t) {
-          var n;
-          n = r[t], t in e ? Object.defineProperty(e, t, {
-            value: n,
+        var n = null != arguments[t] ? arguments[t] : {},
+          r = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          return Object.getOwnPropertyDescriptor(n, e).enumerable
+        }))), r.forEach(function(t) {
+          var r;
+          r = n[t], t in e ? Object.defineProperty(e, t, {
+            value: r,
             enumerable: true,
             configurable: true,
             writable: true
-          }) : e[t] = n
+          }) : e[t] = r
         })
       }
       return e
-    }({}, O), r = r = {
-      title: g.intl.string(g.t.dMJ3Y2),
-      onClose: j,
-      input: (0, n.jsxs)("div", {
-        children: [(0, n.jsxs)(s.Text, {
-          className: p.channelName,
+    }({}, w), n = n = {
+      title: h.intl.string(h.t.dMJ3Y2),
+      onClose: m,
+      input: (0, r.jsxs)("div", {
+        children: [(0, r.jsxs)(c.Text, {
+          className: x.channelName,
           variant: "text-lg/normal",
           color: "header-secondary",
-          children: [(0, n.jsx)(s.ewx, {
-            className: p.channelIcon,
+          children: [(0, r.jsx)(c.ewx, {
+            className: x.channelIcon,
             size: "sm",
             color: "currentColor"
           }), v.name]
-        }), v.isGuildStageVoice() && (0, n.jsx)(s.Text, {
+        }), v.isGuildStageVoice() && (0, r.jsx)(c.Text, {
           color: "header-secondary",
-          className: p.description,
+          className: x.description,
           variant: "text-sm/normal",
-          children: g.intl.string(g.t.f7VbhI)
-        }), (0, n.jsx)(d.Z.SearchBox, {
-          placeholderText: g.intl.string(g.t.iezLLi)
-        }), (0, n.jsx)(s.Text, {
-          className: p.subtext,
+          children: h.intl.string(h.t.f7VbhI)
+        }), (0, r.jsx)(d.Z.SearchBox, {
+          placeholderText: h.intl.string(h.t.iezLLi)
+        }), (0, r.jsx)(c.Text, {
+          className: x.subtext,
           variant: "text-xs/normal",
-          children: g.intl.string(g.t["rwFx8/"])
-        }), null != I ? (0, n.jsx)(s.Text, {
-          className: p.subtext,
+          children: h.intl.string(h.t["rwFx8/"])
+        }), null != k ? (0, r.jsx)(c.Text, {
+          className: x.subtext,
           variant: "text-xs/normal",
           color: "text-danger",
-          children: I.getAnyErrorMessage()
+          children: k.getAnyErrorMessage()
         }) : null]
       }),
       listProps: {
-        ref: M,
+        ref: I,
         sectionHeight: d.Z.SECTION_HEIGHT,
         renderSection: d.Z.renderSection,
         rowHeight: d.Z.ROW_HEIGHT,
         renderRow: d.Z.renderRow,
-        sections: A
+        sections: M
       },
       actions: [{
         variant: "secondary",
-        text: g.intl.string(g.t["ETE/oK"]),
-        onClick: j
+        text: h.intl.string(h.t["ETE/oK"]),
+        onClick: m
       }, {
         variant: "primary",
-        text: g.intl.string(g.t.OYkgVl),
-        onClick: D,
-        loading: C
+        text: h.intl.string(h.t.OYkgVl),
+        onClick: A,
+        loading: T
       }]
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
-      var r = Object.keys(e);
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+      var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
-        var n = Object.getOwnPropertySymbols(e);
-        r.push.apply(r, n)
+        var r = Object.getOwnPropertySymbols(e);
+        n.push.apply(n, r)
       }
-      return r
-    })(Object(r)).forEach(function(e) {
-      Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
+      return n
+    })(Object(n)).forEach(function(e) {
+      Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t))
   })
 }

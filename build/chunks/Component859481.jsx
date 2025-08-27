@@ -41,7 +41,7 @@ function y(e) {
       variant: "text-sm/medium",
       color: "text-secondary",
       className: O.vanityInfo,
-      children: _.intl.format(_.t["1qTOvr"], {
+      children: v.intl.format(v.t["1qTOvr"], {
         urlText: e,
         urlValue: e
       })
@@ -70,11 +70,11 @@ function C(e) {
       children: [(0, r.jsx)(s.X6q, {
         variant: "heading-sm/semibold",
         color: "text-default",
-        children: _.intl.string(_.t["6oJyq6"])
+        children: v.intl.string(v.t["6oJyq6"])
       }), n.length > 0 ? (0, r.jsx)(s.Text, {
         variant: "text-sm/medium",
         color: "text-secondary",
-        children: _.intl.format(_.t.MVWOUV, {
+        children: v.intl.format(v.t.MVWOUV, {
           uses: l
         })
       }) : null]
@@ -89,7 +89,7 @@ function C(e) {
       look: a.zx.Looks.LINK,
       size: a.zx.Sizes.MIN,
       color: a.zx.Colors.RED,
-      children: _.intl.string(_.t["3ggb6O"])
+      children: v.intl.string(v.t["3ggb6O"])
     }) : null]
   })
 }
@@ -103,13 +103,13 @@ function N(e) {
     errorDetails: d
   } = e, {
     analyticsLocations: p
-  } = (0, c.ZP)(), x = (0, u.g1)(t.id, "GuildSettingsBoostPerks"), _ = i.useCallback(e => {
+  } = (0, c.ZP)(), x = (0, u.g1)(t.id, "GuildSettingsBoostPerks"), v = i.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), x ? (g.Z.close(), (0, m.Z)(t.id, o.Z.GUILD_POWERUPS_GUILD_SETTINGS_VANITY_URL, l.A$)) : (0, b.E6)({
       guild: t,
       analyticsLocations: p,
       analyticsSection: j.jXE.GUILD_SETTINGS_VANITY_URL,
       analyticsObject: j.qAy.BUTTON_CTA,
-      perks: (0, v.WW)(),
+      perks: (0, _.WW)(),
       targetPremiumGuildTier: j.Eu4.TIER_3
     })
   }, [p, t, x]);
@@ -121,7 +121,7 @@ function N(e) {
       originalVanityURLCode: s,
       hasError: null != d
     }) : (0, r.jsx)(f.P, {
-      onClick: _,
+      onClick: v,
       className: O.upsellButton
     }), (0, r.jsx)(y, {
       errorDetails: d,

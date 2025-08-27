@@ -54,8 +54,8 @@ let x = function(e) {
     resourceChannel: l,
     index: x,
     onDragComplete: j,
-    onDragStart: v,
-    onDragReset: _
+    onDragStart: _,
+    onDragReset: v
   } = e, {
     title: O,
     channelId: y,
@@ -76,9 +76,9 @@ let x = function(e) {
       type: "RESOURCE_CHANNEL",
       optionId: l.channelId,
       index: x,
-      onDragStart: v,
+      onDragStart: _,
       onDragComplete: j,
-      onDragReset: _
+      onDragReset: v
     }),
     Z = i.useCallback(e => {
       (0, m.XG)(l.channelId, e)
