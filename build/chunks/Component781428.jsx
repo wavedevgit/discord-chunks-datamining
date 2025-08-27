@@ -129,7 +129,7 @@ class X extends(r = Chunk647438.PureComponent) {
       checkingHandoff: l,
       redirecting: o
     } = this.state;
-    if (!n || e.authenticated || l && (i || o) || (this.state.conditionalMediationAbortController.abort(), this.loginOrSSO(n, r)), t.errors !== this.state.errors) {
+    if (!n || e.authenticated || l && (i || o) || (this.state.conditionalMediationAbortController.abort("Transitioning to authenticated state"), this.loginOrSSO(n, r)), t.errors !== this.state.errors) {
       var s, a, c;
       this.hasError("password") ? null == (s = this.passwordRef) || s.focus() : this.hasError("email") || this.hasError("login") ? null == (a = this.loginRef) || a.focus() : this.hasError("code") && (null == (c = this.codeRef) || c.focus())
     }
@@ -591,7 +591,7 @@ class X extends(r = Chunk647438.PureComponent) {
         login_method: "remote_auth"
       })
     }), W(this, "loginReset", () => {
-      this.setState({
+      this.state.conditionalMediationAbortController.abort("Login state reset"), this.setState({
         errors: {}
       }), f.Z.loginReset()
     }), W(this, "setLoginRef", e => {
@@ -618,9 +618,10 @@ class X extends(r = Chunk647438.PureComponent) {
     }), W(this, "handleLogin", async e => {
       let {
         password: t,
-        undelete: n
+        undelete: n,
+        conditionalMediationAbortController: r
       } = this.state;
-      null == e || e.preventDefault(), D.S.dispatch(G.CkL.WAVE_EMPHASIZE), this.setState({
+      null == e || e.preventDefault(), r.abort("Starting password login"), D.S.dispatch(G.CkL.WAVE_EMPHASIZE), this.setState({
         errors: {}
       });
       try {
