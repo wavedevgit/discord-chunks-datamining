@@ -3,7 +3,7 @@
 "use strict";
 let r;
 require.d(exports, {
-  Z: () => ea
+  Z: () => eo
 }), require("./539854.js"), require("./388685.js"), require("./583741.js"), require("./290780.js"), require("./35282.js"), require("./781311.js");
 var i, Chunk392711 = require("./392711.js"),
   o = require.n(Chunk392711),
@@ -51,30 +51,31 @@ let w = "seenQSTutorial",
   B = null,
   Z = 0,
   F = [],
-  V = [];
+  V = [],
+  H = null;
 
-function H() {
+function Y() {
   k = Chunk430824.Z.getGuildCount() >= 3 || o().size(Chunk592125.Z.getMutablePrivateChannels()) >= 20, F = []
 }
 
-function Y(e) {
+function W(e) {
   let t = [];
   return g.Z.getRecentlyEditedDrafts(g.d.ChannelMessage).forEach(n => {
     let {
       channelId: r
     } = n;
     if (e(r)) return;
-    let i = W(r);
+    let i = K(r);
     null != i && t.push(i)
   }), t
 }
 
-function W(e) {
+function K(e) {
   let t = (0, d.Z)(e);
   return null == t || null != U && U !== t.type ? null : t
 }
 
-function K() {
+function z() {
   var e, t;
   let n = null != (e = Chunk914010.Z.getGuildId()) ? module : true,
     r = null != (t = Chunk944486.Z.getChannelId()) ? exports : true;
@@ -123,24 +124,24 @@ function K() {
     a = new Set,
     o = [];
   for (let e = 1; module < V.length; e += 1) {
-    let t = W(V[module]);
+    let t = K(V[module]);
     null != exports && (exports.type !== Chunk212819.h8.TEXT_CHANNEL && exports.type !== Chunk212819.h8.VOICE_CHANNEL || Chunk496675.Z.can(Chunk981631.Plq.VIEW_CHANNEL, exports.record)) && (o.push(exports), Chunk392711.add(exports.record.id))
   }
   o.length > 0 && i.push((0, Chunk212819.o6)(Chunk388032.intl.string(Chunk388032.t["80lOZ2"])), ...o);
-  let s = Y(e => e === r || V.includes(e) || a.has(e));
+  let s = W(e => e === r || V.includes(e) || a.has(e));
   if (Chunk442837.length > 0)
     for (let e of (i.push((0, Chunk212819.o6)(Chunk388032.intl.string(Chunk388032.t["4B63jY"]))), Chunk442837)) Chunk392711.add(module.record.id), i.push(module);
-  let l = Chunk306680.ZP.getMentionChannelIds().filter(e => e !== r && !V.includes(e) && !a.has(e)).map(e => W(e)).filter(Chunk823379.lm).reverse();
+  let l = Chunk306680.ZP.getMentionChannelIds().filter(e => e !== r && !V.includes(e) && !a.has(e)).map(e => K(e)).filter(Chunk823379.lm).reverse();
   if (Chunk433517.length > 0)
     for (let e of (i.push((0, Chunk212819.o6)(Chunk388032.intl.string(Chunk388032.t["61Df19"]))), Chunk433517)) Chunk392711.add(module.record.id), i.push(module);
   if (null != require) {
     let e = Chunk984933.ZP.getSelectableChannelIds(require).filter(e => {
       let t = m.Z.getChannel(e);
       return !(null == t || e === r || V.includes(e) || a.has(e) || S.ZP.isChannelMuted(t.guild_id, e) || null != t.parent_id && S.ZP.isChannelMuted(t.guild_id, t.parent_id)) && (0, f.d)(t)
-    }).map(e => W(e)).filter(e => e);
+    }).map(e => K(e)).filter(e => e);
     Object.values(Chunk601070.Z.getActiveJoinedUnreadThreadsForGuild(require)).forEach(t => {
       for (let n in t) {
-        let t = W(n);
+        let t = K(n);
         null == t || a.has(t.record.id) || e.push(t)
       }
     }), module.length > 0 && (i.push((0, Chunk212819.o6)(Chunk388032.intl.string(Chunk388032.t.ieCAhI))), i = i.concat(module))
@@ -148,7 +149,7 @@ function K() {
   return i
 }
 
-function z(e, t) {
+function q(e, t) {
   switch (U) {
     case u.h8.USER: {
       let t = y.Z.getGuild(T.Z.getGuildId());
@@ -177,23 +178,23 @@ function z(e, t) {
     let e = G[j];
     null != e && e.type === u.h8.HEADER && (j = (0, u.gJ)(u.a8.DOWN, j, G))
   }
-  ei.emitChange()
+  ea.emitChange()
 }
 
-function q(e) {
+function X(e) {
   var t;
   let {
     query: n,
     queryMode: i
   } = e, a = null != (t = T.Z.getGuildId()) ? t : true, o = new Set(["user:".concat(h.default.getId())]);
-  null != a && o.add("guild:".concat(a)), r = null != r ? r : new u.ZP(J, L, null != i ? x : D, {
+  null != a && o.add("guild:".concat(a)), H = Date.now(), r = null != r ? r : new u.ZP($, L, null != i ? x : D, {
     frecencyBoosters: true,
     blacklist: o,
     allowSnowflake: true
   }), B = null, Z = n.length, U = i, r.search(n)
 }
 
-function X(e) {
+function Q(e) {
   let {
     channelId: t
   } = e;
@@ -201,7 +202,7 @@ function X(e) {
   (V = V.filter(e => e !== t)).unshift(t), V.length > 4 && (V.length = 4)
 }
 
-function Q(e, t) {
+function J(e, t) {
   if (e.length !== t.length) returnfalse;
   for (let n = 0; n < e.length; n++) {
     let r = e[n],
@@ -211,15 +212,15 @@ function Q(e, t) {
   returntrue
 }
 
-function J(e, t) {
-  Q(e = "" === (t = t.trim()).trim() ? K() : e, F) || (F = e, z(e, t))
+function $(e, t) {
+  J(e = "" === (t = t.trim()).trim() ? z() : e, F) || (F = e, q(e, t))
 }
 
-function $() {
+function ee() {
   B = null, Z = 0, F = [], null != r && (r.destroy(), r = null)
 }
 
-function ee(e) {
+function et(e) {
   var t, n;
   let {
     query: i,
@@ -247,15 +248,15 @@ function ee(e) {
   } else r.search(i, true)
 }
 
-function et(e) {
+function en(e) {
   j = e.selectedIndex
 }
 
-function en() {
+function er() {
   if (M) returnfalse;
   M = true, Chunk433517.K.set(w, true)
 }
-class er extends(i = Chunk442837.ZP.PersistedStore) {
+class ei extends(i = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     var t;
     this.waitFor(b.ZP, y.Z, m.Z), this.syncWith([p.Z], () => true), M = l.K.get(w) || false, V = null != (t = null == e ? true : e.channelHistory) ? t : []
@@ -284,6 +285,9 @@ class er extends(i = Chunk442837.ZP.PersistedStore) {
   getChannelHistory() {
     return V
   }
+  getLastShowTimestamp() {
+    return H
+  }
   getProps() {
     return {
       theme: Chunk210887.Z.theme,
@@ -296,18 +300,18 @@ class er extends(i = Chunk442837.ZP.PersistedStore) {
     }
   }
 }
-P(er, "displayName", "QuickSwitcherStore"), P(er, "persistKey", "QuickSwitcherStore");
-let ei = new er(Chunk570140.Z, {
-    CONNECTION_OPEN: H,
-    CONNECTION_OPEN_SUPPLEMENTAL: H,
-    QUICKSWITCHER_SHOW: q,
-    SHOW_ACTION_SHEET_QUICK_SWITCHER: q,
-    QUICKSWITCHER_HIDE: $,
-    OVERLAY_SET_INPUT_LOCKED: $,
-    HIDE_ACTION_SHEET_QUICK_SWITCHER: $,
-    QUICKSWITCHER_SEARCH: ee,
-    QUICKSWITCHER_SELECT: et,
-    QUICKSWITCHER_SWITCH_TO: en,
-    CHANNEL_SELECT: X
+P(ei, "displayName", "QuickSwitcherStore"), P(ei, "persistKey", "QuickSwitcherStore");
+let ea = new ei(Chunk570140.Z, {
+    CONNECTION_OPEN: Y,
+    CONNECTION_OPEN_SUPPLEMENTAL: Y,
+    QUICKSWITCHER_SHOW: X,
+    SHOW_ACTION_SHEET_QUICK_SWITCHER: X,
+    QUICKSWITCHER_HIDE: ee,
+    OVERLAY_SET_INPUT_LOCKED: ee,
+    HIDE_ACTION_SHEET_QUICK_SWITCHER: ee,
+    QUICKSWITCHER_SEARCH: et,
+    QUICKSWITCHER_SELECT: en,
+    QUICKSWITCHER_SWITCH_TO: er,
+    CHANNEL_SELECT: Q
   }),
-  ea = ei
+  eo = ea

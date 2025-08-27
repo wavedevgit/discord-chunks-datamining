@@ -24,7 +24,7 @@ function E(e) {
   let {
     widgets: t,
     onClick: n
-  } = e, a = (0, i.useMemo)(() => t.map(e => e.games.map(e => e.applicationId)).flat(), [t]), o = (0, s.e7)([u.Z], () => u.Z.canFetchDetectableGames()), [E, y] = (0, i.useState)([]), {
+  } = e, a = (0, i.useMemo)(() => [...new Set(t.map(e => e.games.map(e => e.applicationId)).flat())], [t]), o = (0, s.e7)([u.Z], () => u.Z.canFetchDetectableGames()), [E, y] = (0, i.useState)([]), {
     themeType: O
   } = (0, _.z)(), v = O === p.l.SIDEBAR;
   return (0, i.useEffect)(() => {

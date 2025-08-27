@@ -2,7 +2,7 @@
 /** chunk id: 978395, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => L
+  Z: () => j
 });
 var Chunk951288 = require("./951288.js"),
   Chunk442837 = require("./442837.js"),
@@ -13,6 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk246946 = require("./246946.js"),
   Chunk5192 = require("./5192.js"),
   Chunk74538 = require("./74538.js"),
+  Chunk461133 = require("./461133.js"),
   Chunk209698 = require("./209698.js"),
   Chunk648052 = require("./648052.jsx"),
   Chunk537006 = require("./537006.jsx"),
@@ -36,77 +37,79 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk116649 = require("./116649.js");
 
-function L(e) {
+function j(e) {
   let {
     user: t,
     currentUser: n,
-    displayProfile: L,
-    guild: j,
-    isHovering: M,
-    onOpenProfile: k,
-    channelId: U,
-    onClose: G
-  } = e, B = u.ZP.useName(null == j ? true : j.id, U, t), {
-    relationshipType: Z,
-    originApplicationId: F
+    displayProfile: j,
+    guild: M,
+    isHovering: k,
+    onOpenProfile: U,
+    channelId: G,
+    onClose: B
+  } = e, Z = u.ZP.useName(null == M ? true : M.id, G, t), {
+    relationshipType: F,
+    originApplicationId: V
   } = (0, i.cj)([l.Z], () => ({
     relationshipType: l.Z.getRelationshipType(t.id),
     originApplicationId: l.Z.getOriginApplicationId(t.id)
-  })), V = (0, o.vh)(t.id), H = (0, i.e7)([c.Z], () => c.Z.hidePersonalInformation), Y = (0, f.b)({
+  })), H = (0, o.vh)(t.id), Y = (0, i.e7)([c.Z], () => c.Z.hidePersonalInformation), W = (0, _.b)({
     location: "UserProfilePopoutBody"
-  }), W = t.id === n.id, K = (null == L ? true : L.widgets) != null && L.widgets.length > 0, z = (0, d.I5)(n);
+  }), K = t.id === n.id, z = (0, f.P)({
+    location: "UserProfilePopoutBody"
+  }), q = (null == j ? true : j.widgets) != null && j.widgets.length > 0, X = z && q, Q = (0, d.I5)(n);
   return (0, r.jsxs)(a.Ttm, {
     fade: true,
-    className: x.body,
-    children: [(0, r.jsx)(v.Z, {
+    className: L.body,
+    children: [(0, r.jsx)(I.Z, {
       user: t,
-      onOpenProfile: k,
-      onClose: G,
-      usernameIcon: t.hasAvatarForGuild(null == j ? true : j.id) && (0, r.jsx)(A.Z, {
+      onOpenProfile: U,
+      onClose: B,
+      usernameIcon: t.hasAvatarForGuild(null == M ? true : M.id) && (0, r.jsx)(C.Z, {
         user: t,
-        nickname: B
+        nickname: Z
       }),
-      nickname: B,
-      pronouns: null == L ? true : L.pronouns,
-      tags: (0, r.jsx)(_.Z, {
-        displayProfile: L,
-        themeType: w.l.POPOUT,
-        onClose: G
+      nickname: Z,
+      pronouns: null == j ? true : j.pronouns,
+      tags: (0, r.jsx)(p.Z, {
+        displayProfile: j,
+        themeType: D.l.POPOUT,
+        onClose: B
       }),
       nicknameIcons: (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(m.Z, {
+        children: [(0, r.jsx)(g.Z, {
           userId: t.id
-        }), !H && (0, r.jsx)(I.Z, {
+        }), !Y && (0, r.jsx)(T.Z, {
           userId: t.id,
-          isHovering: M,
-          onOpenProfile: k
+          isHovering: k,
+          onOpenProfile: U
         })]
       })
-    }), Z === P.OGo.PENDING_INCOMING && (0, r.jsx)(O.Z.Overlay, {
-      children: (0, r.jsx)(g.Z, {
+    }), F === w.OGo.PENDING_INCOMING && (0, r.jsx)(v.Z.Overlay, {
+      children: (0, r.jsx)(E.Z, {
         user: t,
-        guildId: null == j ? true : j.id,
-        channelId: U,
-        applicationId: F
+        guildId: null == M ? true : M.id,
+        channelId: G,
+        applicationId: V
       })
-    }), V.map(e => (0, r.jsx)(O.Z.Overlay, {
-      children: (0, r.jsx)(g.Z, {
+    }), H.map(e => (0, r.jsx)(v.Z.Overlay, {
+      children: (0, r.jsx)(E.Z, {
         user: t,
         isGameRelationship: true,
         applicationId: e.applicationId,
-        channelId: U
+        channelId: G
       })
-    }, e.applicationId)), (0, r.jsx)(E.Z, {
+    }, e.applicationId)), (0, r.jsx)(b.Z, {
       user: t
-    }), !W && (0, r.jsx)(N.Z, {
+    }), !K && (0, r.jsx)(R.Z, {
       user: t,
-      onOpenProfile: e => null == k ? true : k({
+      onOpenProfile: e => null == U ? true : U({
         section: e
       })
-    }), t.isProvisional ? (0, r.jsx)(O.Z.Overlay, {
-      className: x.card,
-      children: (0, r.jsx)(b.Z, {
-        heading: D.intl.string(D.t.Iyka0d),
+    }), t.isProvisional ? (0, r.jsx)(v.Z.Overlay, {
+      className: L.card,
+      children: (0, r.jsx)(y.Z, {
+        heading: x.intl.string(x.t.Iyka0d),
         headingIcon: (0, r.jsx)(a.Mgn, {
           size: "xxs",
           color: a.TVs.colors.HEADER_PRIMARY
@@ -116,36 +119,36 @@ function L(e) {
           userId: t.id
         })
       })
-    }) : (0, r.jsx)(S.Z, {
+    }) : (0, r.jsx)(A.Z, {
       user: t,
-      bio: null == L ? true : L.bio,
-      hidePersonalInformation: H,
-      onClose: G
-    }), K && (0, r.jsx)(T.Z, {
-      widgets: null == L ? true : L.widgets,
+      bio: null == j ? true : j.bio,
+      hidePersonalInformation: Y,
+      onClose: B
+    }), X && (0, r.jsx)(S.Z, {
+      widgets: null == j ? true : j.widgets,
       onClick: () => {
-        null == k || k({
-          section: R.oh.WIDGETS
+        null == U || U({
+          section: P.oh.WIDGETS
         })
       }
-    }), W && (0, r.jsx)(p.Z, {
-      isPremiumUser: z,
-      onInteraction: G
-    }), Y ? (0, r.jsx)(y.Z, {
+    }), K && (0, r.jsx)(h.Z, {
+      isPremiumUser: Q,
+      onInteraction: B
+    }), W ? (0, r.jsx)(O.Z, {
       user: t,
       currentUser: n,
-      guildId: null == j ? true : j.id,
-      onOpenUserProfileModal: k,
-      onClose: G
-    }) : (0, r.jsx)(h.Z, {
+      guildId: null == M ? true : M.id,
+      onOpenUserProfileModal: U,
+      onClose: B
+    }) : (0, r.jsx)(m.Z, {
       user: t,
       currentUser: n,
-      guildId: null == j ? true : j.id,
-      onClose: G
-    }), null != j && (0, r.jsx)(C.Z, {
+      guildId: null == M ? true : M.id,
+      onClose: B
+    }), null != M && (0, r.jsx)(N.Z, {
       user: t,
       currentUser: n,
-      guild: j
+      guild: M
     })]
   })
 }

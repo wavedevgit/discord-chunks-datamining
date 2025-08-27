@@ -2,16 +2,18 @@
 /** chunk id: 950796, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Dg: () => I,
-  On: () => h,
-  TF: () => v,
-  Y7: () => m
+  Dg: () => A,
+  On: () => E,
+  TF: () => S,
+  Y7: () => b
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
+  Chunk51596 = require("./51596.js"),
+  Chunk823385 = require("./823385.js"),
   Chunk428548 = require("./428548.jsx"),
   Chunk679219 = require("./679219.jsx"),
   Chunk939039 = require("./939039.jsx"),
@@ -19,8 +21,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk998502 = require("./998502.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk107009 = require("./107009.js");
+let g = 1e3;
 
-function h(e) {
+function E(e) {
   let {
     isPopoutWindow: t,
     isSearchDesktopTopLevelEnabled: n
@@ -28,74 +31,74 @@ function h(e) {
   return t ? "refresh-title-bar-small" : n ? "refresh-title-bar-large" : true
 }
 
-function m(e) {
+function b(e) {
   let {
     isPopoutWindow: t,
     isSearchDesktopTopLevelEnabled: n
   } = e;
   return t ? 16 : n ? 32 : 24
 }
-let g = e => f.ZP.close(e),
-  E = e => f.ZP.minimize(e),
-  b = e => f.ZP.maximize(e);
+let y = e => p.ZP.close(e),
+  O = e => p.ZP.minimize(e),
+  v = e => p.ZP.maximize(e);
 
-function y(e) {
+function I(e) {
   e.stopPropagation()
 }
 
-function O(e) {
+function T(e) {
   let {
     windowKey: t,
     showDivider: n
   } = e, i = (0, r.jsx)(s.P3F, {
-    className: o()(p.winButton, p.winButtonClose),
-    onClick: () => g(t),
-    "aria-label": _.intl.string(_.t.ZdNUj4),
-    tabIndex: false,
-    children: (0, r.jsx)(l.Z, {})
-  }), a = (0, r.jsx)(s.P3F, {
-    className: o()(p.winButton, p.winButtonMinMax),
-    onClick: () => b(t),
-    "aria-label": _.intl.string(_.t.G1u0hI),
-    tabIndex: false,
-    children: (0, r.jsx)(c.Z, {})
-  }), d = (0, r.jsx)(s.P3F, {
-    className: o()(p.winButton, p.winButtonMinMax),
-    onClick: () => E(t),
-    "aria-label": _.intl.string(_.t.CxOC4e),
+    className: o()(m.winButton, m.winButtonClose),
+    onClick: () => y(t),
+    "aria-label": h.intl.string(h.t.ZdNUj4),
     tabIndex: false,
     children: (0, r.jsx)(u.Z, {})
+  }), a = (0, r.jsx)(s.P3F, {
+    className: o()(m.winButton, m.winButtonMinMax),
+    onClick: () => v(t),
+    "aria-label": h.intl.string(h.t.G1u0hI),
+    tabIndex: false,
+    children: (0, r.jsx)(d.Z, {})
+  }), l = (0, r.jsx)(s.P3F, {
+    className: o()(m.winButton, m.winButtonMinMax),
+    onClick: () => O(t),
+    "aria-label": h.intl.string(h.t.CxOC4e),
+    tabIndex: false,
+    children: (0, r.jsx)(f.Z, {})
   });
   return (0, r.jsxs)("div", {
-    className: o()(p.winButtons, {
-      [p.winButtonsWithDivider]: n
+    className: o()(m.winButtons, {
+      [m.winButtonsWithDivider]: n
     }),
-    children: [d, a, i]
+    children: [l, a, i]
   })
 }
 
-function v(e) {
+function S(e) {
   let {
     leading: t,
     title: n,
     trailing: a,
     windowKey: s,
     className: l
-  } = e, c = (0, d.getPlatform)(), u = i.useCallback(() => b(s), [s]);
+  } = e, c = (0, _.getPlatform)(), u = i.useCallback(() => v(s), [s]);
   return (0, r.jsxs)("div", {
-    className: o()(p.bar, l),
+    className: o()(m.bar, l),
     onDoubleClick: u,
     children: [(0, r.jsx)("div", {
-      className: p.leading,
-      onDoubleClick: y,
+      className: m.leading,
+      onDoubleClick: I,
       children: t
     }), (0, r.jsx)("div", {
-      className: p.title,
+      className: m.title,
       children: n
     }), (0, r.jsxs)("div", {
-      className: p.trailing,
-      onDoubleClick: y,
-      children: [a, c === d.PlatformTypes.WINDOWS && (0, r.jsx)(O, {
+      className: m.trailing,
+      onDoubleClick: I,
+      children: [a, c === _.PlatformTypes.WINDOWS && (0, r.jsx)(T, {
         windowKey: s,
         showDivider: null != a
       })]
@@ -103,22 +106,28 @@ function v(e) {
   })
 }
 
-function I(e) {
+function A(e) {
   let {
     fixed: t = false,
     show: n,
     windowKey: a
-  } = e, s = (0, d.getPlatform)(), l = i.useCallback(() => b(a), [a]), c = s === d.PlatformTypes.WINDOWS;
-  return s === d.PlatformTypes.WEB ? null : (0, r.jsx)("div", {
-    className: o()(p.bar, p.systemBar, {
-      [p.fixed]: t,
-      [p.show]: n
+  } = e, s = (0, _.getPlatform)(), u = i.useCallback(() => {
+    c.Z.isOpen() && (0, l.Cp)()
+  }, []), d = i.useCallback(() => {
+    let e = c.Z.getLastShowTimestamp();
+    null != e && Date.now() - e < g || v(a)
+  }, [a]), f = s === _.PlatformTypes.WINDOWS;
+  return s === _.PlatformTypes.WEB ? null : (0, r.jsx)("div", {
+    className: o()(m.bar, m.systemBar, {
+      [m.fixed]: t,
+      [m.show]: n
     }),
-    onDoubleClick: l,
-    children: c && (0, r.jsx)("div", {
-      className: p.trailing,
-      onDoubleClick: y,
-      children: (0, r.jsx)(O, {
+    onClick: u,
+    onDoubleClick: d,
+    children: f && (0, r.jsx)("div", {
+      className: m.trailing,
+      onDoubleClick: I,
+      children: (0, r.jsx)(T, {
         windowKey: a
       })
     })
