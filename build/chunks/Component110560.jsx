@@ -2,19 +2,19 @@
 /** chunk id: 110560, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.r(exports), require.d(exports, {
-  enrollAndStartVideoQuestWithErrorHandling: () => J,
-  loadVideoQuestModal: () => K,
-  maybeShowSurveyForQuest: () => W,
+  enrollAndStartVideoQuestWithErrorHandling: () => $,
+  loadVideoQuestModal: () => z,
+  maybeShowSurveyForQuest: () => K,
   navigateToQuestHome: () => Y,
-  openAppWithQuest: () => X,
+  openAppWithQuest: () => Q,
   openDisclosureModal: () => H,
-  openPushToPhoneModal: () => Q,
+  openPushToPhoneModal: () => J,
   openQuestInGameRewardModal: () => Z,
   openQuestMinorEnrollmentBlockModal: () => V,
   openQuestOrbsRewardModal: () => F,
   openQuestsNitroRewardModal: () => B,
   openQuestsRewardCodeModal: () => G,
-  openVideoQuestModal: () => z
+  openVideoQuestModal: () => q
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -199,15 +199,16 @@ function Y() {
     selectedTab: Chunk49898.GlobalDiscoveryTab.QUESTS
   }), (0, Chunk37234.xf)(), (0, Chunk703656.uL)(Chunk981631.Z5c.QUEST_HOME + require)
 }
+let W = .2;
 
-function W(e) {
+function K(e) {
   let t = (0, S.T)({
       quest: e
     }),
     n = {
       location: R.dr.QUESTS_BAR
     };
-  if (!(0, T.j)(n)) return;
+  if (!(0, T.j)(n) || Math.random() > W) return;
   let r = (0, A.Z)({
     entityName: e.config.messages.gameTitle
   });
@@ -217,11 +218,11 @@ function W(e) {
   })
 }
 
-function K() {
+function z() {
   return Promise.all([require.e("66816"), require.e("32249")]).then(require.bind(require, 536687))
 }
 
-function z(e) {
+function q(e) {
   var t;
   let {
     quest: n,
@@ -240,7 +241,7 @@ function z(e) {
       }, {
         autoTrackExposure: e
       });
-    if (t && e) return void Q(n)
+    if (t && e) return void J(n)
   }
   let d = (0, i.Z)();
   if ((0, I.D)(R.dr.VIDEO_MODAL) && !u && (null == (t = n.userStatus) ? true : t.enrolledAt) == null && !(0, g.zi)(n)) {
@@ -259,7 +260,7 @@ function z(e) {
   }(0, s.ZDy)(async () => {
     let {
       default: e
-    } = await K();
+    } = await z();
     return t => (0, r.jsx)(e, M(L({}, t), {
       openStartClockTime: performance.now(),
       questId: n.id,
@@ -278,7 +279,7 @@ function z(e) {
   })
 }
 
-function q(e) {
+function X(e) {
   var t;
   let n = null == (t = platform.os) ? true : t.family,
     r = "quest";
@@ -295,8 +296,8 @@ function q(e) {
   return "discord://"
 }
 
-function X(e) {
-  let t = q(e),
+function Q(e) {
+  let t = X(e),
     n = (0, a.zS)(t);
   null != n && p.default.track(P.rMx.DEEP_LINK_CLICKED, {
     fingerprint: (0, o.K)(n.fingerprint),
@@ -310,7 +311,7 @@ function X(e) {
   })
 }
 
-function Q(e) {
+function J(e) {
   (0, s.ZDy)(async () => {
     let {
       default: t
@@ -321,7 +322,7 @@ function Q(e) {
     }))
   })
 }
-async function J(e, t) {
+async function $(e, t) {
   let {
     type: n
   } = await (0, E.AH)(e.id, {
@@ -333,7 +334,7 @@ async function J(e, t) {
   });
   switch (n) {
     case E.wF.SUCCESS:
-      z({
+      q({
         quest: e,
         questContent: t.questContent,
         sourceQuestContent: t.sourceQuestContent,
