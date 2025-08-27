@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk607070 = require("./607070.js"),
   Chunk981631 = require("./981631.js"),
   Chunk842926 = require("./842926.js");
-let d = RegExp("\\p{Emoji_Presentation}", "gu");
+let d = RegExp("\\p{Extended_Pictographic}", "gu");
 
 function f(e) {
   var t, n, r;
