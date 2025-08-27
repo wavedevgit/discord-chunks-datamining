@@ -132,7 +132,7 @@ function R(e) {
     return {
       header: e ? (0, h.Pb)(t) ? O.intl.string(O.t.N33EuL) : O.intl.formatToPlainString(O.t["28Ql29"], {
         gameTitle: i
-      }) : (0, h.Pb)(t) ? O.intl.string(O.t["6HNovr"]) : O.intl.formatToPlainString(O.t.gX0Qc3, {
+      }) : (0, h.Pb)(t) ? O.intl.string(O.t.YstzGB) : O.intl.formatToPlainString(O.t.gX0Qc3, {
         gameTitle: i
       }),
       renderBody: e ? n : () => (0, r.jsx)(c.Text, {

@@ -74,8 +74,8 @@ function E(e, t) {
 }
 
 function b(e, t) {
-  let [n, r] = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [o.Z, i.ZP];
-  return null != t && y(e, t, [n]) && null != r.getMember(t.id, e.id)
+  let [n] = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [o.Z];
+  return null != t && y(e, t, [n]) && !e.isProvisional
 }
 
 function y(e, t) {

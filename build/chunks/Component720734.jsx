@@ -1011,7 +1011,7 @@ function tP(e) {
       tooltipClassName: ti.accountButtonsTooltip,
       tooltipContentClassName: ti.accountButtonsTooltipContent,
       tooltipPositionKeyStemOverride: n,
-      "aria-label": y && a,
+      "aria-label": y ? a : true,
       onClick: l,
       onContextMenu: c,
       icon: (0, r.jsx)(I, {
