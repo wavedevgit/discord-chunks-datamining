@@ -26,8 +26,8 @@ function h(e, t) {
       application: h,
       channelId: m
     });
-  if (null != g) return void(0, a.Z)(g);
-  null != m && ((0, s.uL)(p.Z5c.CHANNEL(e, m)), (0, f.Z)(m) ? (r.Z.selectParticipant(m, (0, o.gN)({
+  if (null != g) return void(0, o.Z)(g);
+  null != m && ((0, s.uL)(p.Z5c.CHANNEL(e, m)), (0, f.Z)(m) ? (r.Z.selectParticipant(m, (0, a.gN)({
     applicationId: n.applicationId,
     instanceId: null == n ? true : n.compositeInstanceId
   })), r.Z.updateLayout(m, p.AEg.NO_CHAT)) : (0, l.tg)(_.Ez.PANEL))

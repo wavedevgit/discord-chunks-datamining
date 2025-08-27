@@ -90,7 +90,7 @@ function y() {
       let t = (null == e ? true : e.label) === b.label() && (null == e ? true : e.value) === b.value;
       return null == e || "" === e.value || t ? (0, r.jsx)("div", {
         className: p.clydeIconContainer,
-        children: (0, r.jsx)(a.gw7, {
+        children: (0, r.jsx)(o.gw7, {
           size: "sm",
           color: "white",
           "aria-hidden": true,

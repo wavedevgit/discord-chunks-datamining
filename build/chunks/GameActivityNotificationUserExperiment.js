@@ -9,7 +9,7 @@ require.d(exports, {
 var Chunk818083 = require("./818083.js"),
   Chunk752048 = require("./752048.js"),
   Chunk699516 = require("./699516.js");
-let a = (0, Chunk818083.B)({
+let o = (0, Chunk818083.B)({
   kind: "user",
   id: "2025-04_game_activity_notification",
   label: "Game Activity Notifications",
@@ -32,7 +32,7 @@ let a = (0, Chunk818083.B)({
 });
 
 function s(e) {
-  switch (a.getCurrentConfig({
+  switch (o.getCurrentConfig({
       location: "filterPresences"
     }).fromUserType) {
     case 2:
@@ -42,14 +42,14 @@ function s(e) {
         let {
           user: t
         } = e;
-        return o.Z.isFriend(t.id)
+        return a.Z.isFriend(t.id)
       });
     case 1:
       return e.filter(e => {
         let {
           user: t
         } = e;
-        return o.Z.isFriend(t.id) || i.Z.isHighlyAffinedVCUser(t.id)
+        return a.Z.isFriend(t.id) || i.Z.isHighlyAffinedVCUser(t.id)
       });
     default:
       return e
@@ -57,13 +57,13 @@ function s(e) {
 }
 
 function l(e) {
-  return 2 !== a.getCurrentConfig({
+  return 2 !== o.getCurrentConfig({
     location: e
   }).fromUserType
 }
 
 function c(e) {
-  return 2 !== a.useExperiment({
+  return 2 !== o.useExperiment({
     location: e
   }).fromUserType
 }

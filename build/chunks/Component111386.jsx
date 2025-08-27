@@ -72,12 +72,12 @@ let h = () => (0, Chunk951288.jsxs)("div", {
   m = e => {
     let {
       children: t
-    } = e, [n] = (0, s.US)([o.z.CONTENT_INVENTORY_ONE_CLICK_REPLY_COACHTIP]), [l, u] = i.useState(false);
+    } = e, [n] = (0, s.US)([a.z.CONTENT_INVENTORY_ONE_CLICK_REPLY_COACHTIP]), [l, u] = i.useState(false);
     return (i.useEffect(() => {
       setTimeout(() => {
         u(true)
       }, 300)
-    }), n !== o.z.CONTENT_INVENTORY_ONE_CLICK_REPLY_COACHTIP) ? t : (0, r.jsx)(a.ua7, {
+    }), n !== a.z.CONTENT_INVENTORY_ONE_CLICK_REPLY_COACHTIP) ? t : (0, r.jsx)(o.ua7, {
       text: (0, r.jsx)(h, {}),
       tooltipClassName: c.coachtip,
       tooltipContentClassName: c.coachtipContent,

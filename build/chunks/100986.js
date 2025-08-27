@@ -19,10 +19,10 @@ function d(e, t) {
 
 function f(e, t, n, f) {
   var _;
-  let p = i.Z.getChannel(a.Z.getVoiceChannelId()),
+  let p = i.Z.getChannel(o.Z.getVoiceChannelId()),
     h = null == p ? true : p.getGuildId(),
-    m = o.Z.getMediaSessionId(),
-    g = o.Z.getRTCConnectionId(),
+    m = a.Z.getMediaSessionId(),
+    g = a.Z.getRTCConnectionId(),
     E = null == (_ = r.ZP.getCurrentGameForAnalytics()) ? true : _.name,
     b = h !== n.guildId && n.guildId !== l.X8,
     y = d(n, b);

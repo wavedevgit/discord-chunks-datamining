@@ -76,7 +76,7 @@ function R(e) {
     premiumSubscription: t,
     discountInfo: n,
     invoicePreview: i,
-    isDiscountActive: a
+    isDiscountActive: o
   } = e, s = f.ZP.getPlanIdFromInvoice(t, i), l = u.Z.get(s);
   if (null == l || null == i || null == n || null == n.duration || null == n.percentage) return null;
   let c = i.invoiceItems.find(e => {
@@ -93,16 +93,16 @@ function R(e) {
     }),
     h = (0, _.T4)(p.amount, p.currency);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(o.X6q, {
+    children: [(0, r.jsx)(a.X6q, {
       variant: "heading-xl/semibold",
       color: "text-primary",
       children: O.intl.format(O.t["50bA2N"], {
         percent: n.percentage
       })
-    }), (0, r.jsx)(o.Text, {
+    }), (0, r.jsx)(a.Text, {
       variant: "text-sm/medium",
       color: "text-default",
-      children: a ? O.intl.format(O.t["3Ziutb"], {
+      children: o ? O.intl.format(O.t["3Ziutb"], {
         percent: n.percentage,
         numMonths: n.duration,
         regularPrice: h
@@ -122,13 +122,13 @@ function P(e) {
     premiumSubscription: n
   } = e, i = (0, h._)(n, b.Xh.PREMIUM_MONTH_TIER_2, t);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(o.X6q, {
+    children: [(0, r.jsx)(a.X6q, {
       variant: "heading-xl/semibold",
       color: "text-primary",
       children: O.intl.format(O.t.sFO20N, {
         percent: t.discount.amount
       })
-    }), (0, r.jsx)(o.Text, {
+    }), (0, r.jsx)(a.Text, {
       variant: "text-sm/medium",
       color: "text-default",
       children: O.intl.format(O.t["PH7Q+f"], {
@@ -150,14 +150,14 @@ let w = function(e) {
     discountOffer: A
   } = e, {
     analyticsLocations: w
-  } = (0, s.ZP)(a.Z.CHURN_DISCOUNT_SUBSCRIPTION_HEADER), {
+  } = (0, s.ZP)(o.Z.CHURN_DISCOUNT_SUBSCRIPTION_HEADER), {
     showDiscountBadge: D
   } = (0, p.k)({
     location: "Subscription Details"
   }), x = () => {
     t.status !== y.O0b.CANCELED && L()
   }, L = e => {
-    (0, o.ZDy)(async () => {
+    (0, a.ZDy)(async () => {
       let {
         default: i
       } = await Promise.all([n.e("58067"), n.e("81709")]).then(n.bind(n, 833569));
@@ -171,9 +171,9 @@ let w = function(e) {
   }, j = () => {
     let e = f.ZP.isSwitchingPlansDisabled(t),
       n = f.ZP.getSwitchingPlansDisabledMessage(t);
-    return f.ZP.isBaseSubscriptionCanceled(t) ? (0, r.jsx)(o.zxk, {
+    return f.ZP.isBaseSubscriptionCanceled(t) ? (0, r.jsx)(a.zxk, {
       variant: "expressive",
-      icon: o.SrA,
+      icon: a.SrA,
       size: "md",
       text: D && null != A ? O.intl.format(O.t.XIVblZ, {
         percent: A.discount.amount
@@ -182,9 +182,9 @@ let w = function(e) {
       onClick: () => L(E.R.CONFIRM_DISCOUNT)
     }) : (0, r.jsxs)("div", {
       className: v.activeSubButtons,
-      children: [(0, r.jsx)(o.ua7, {
+      children: [(0, r.jsx)(a.ua7, {
         text: n,
-        children: n => (0, r.jsx)(o.zxk, C(S({}, n), {
+        children: n => (0, r.jsx)(a.zxk, C(S({}, n), {
           variant: "expressive",
           disabled: e,
           text: O.intl.string(O.t["dylp//"]),
@@ -198,7 +198,7 @@ let w = function(e) {
             })
           }
         }))
-      }), (0, r.jsx)(o.zxk, {
+      }), (0, r.jsx)(a.zxk, {
         variant: "secondary",
         size: "md",
         text: O.intl.string(O.t["ETE/oK"]),
@@ -226,7 +226,7 @@ let w = function(e) {
             }),
             className: v.churnDiscountPill,
             colorOptions: g.VE.PREMIUM_TIER_2_MOD_BACKGROUND_FILL
-          }), (0, r.jsx)(o.Text, {
+          }), (0, r.jsx)(a.Text, {
             className: v.churnDiscountBannerExpiryDate,
             variant: "text-sm/medium",
             color: "text-primary",

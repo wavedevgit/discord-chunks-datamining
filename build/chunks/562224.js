@@ -69,7 +69,7 @@ function S(e) {
   if (T(e)) return {
     pid: e.pid
   };
-  let t = (0, g.Z)(true, e, o.ZP.getRunningGames()),
+  let t = (0, g.Z)(true, e, a.ZP.getRunningGames()),
     n = !(0, p.isWindows)() || null == t || (null == e ? true : e.id.startsWith(r.vA.CAMERA)) || null == t ? null : t.pid;
   return null != n ? {
     pid: n
@@ -88,8 +88,8 @@ async function A(e, t) {
     D = null == (n = u.Z.getGuild(w)) ? true : n.premiumTier;
   if (null == N || null == P || null == R) return [false, "no user or channel"];
   let x = null;
-  if (null == (x = "number" == typeof e ? o.ZP.getGameForPID(e) : e)) return [false, "no source"];
-  if (!d.Z.getUseSystemScreensharePicker() && !await a.Z.hasPermission(b.Eu.SCREEN_RECORDING, {
+  if (null == (x = "number" == typeof e ? a.ZP.getGameForPID(e) : e)) return [false, "no source"];
+  if (!d.Z.getUseSystemScreensharePicker() && !await o.Z.hasPermission(b.Eu.SCREEN_RECORDING, {
       showAuthorizationError: false
     })) return [false, "no permission"];
   let {

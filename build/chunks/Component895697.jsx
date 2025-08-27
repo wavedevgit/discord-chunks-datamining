@@ -45,10 +45,10 @@ function R(e) {
   } = e, j = c.ZP.getName(null == P ? true : P.id, x, t), M = (0, i.e7)([u.Z], () => {
     var e;
     return null == (e = u.Z.getUserProfile(t.id)) ? true : e.application
-  }), k = (0, i.e7)([a.Z, s.Z], () => a.Z.getChannel(s.Z.getChannelId())), U = (0, i.e7)([l.Z], () => l.Z.hidePersonalInformation), G = (0, d.b)({
+  }), k = (0, i.e7)([o.Z, s.Z], () => o.Z.getChannel(s.Z.getChannelId())), U = (0, i.e7)([l.Z], () => l.Z.hidePersonalInformation), G = (0, d.b)({
     location: "BotUserProfilePopoutBody"
   });
-  return (0, r.jsxs)(o.Ttm, {
+  return (0, r.jsxs)(a.Ttm, {
     fade: true,
     className: N.body,
     children: [(0, r.jsx)(E.Z, {

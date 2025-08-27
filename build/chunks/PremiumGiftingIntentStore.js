@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => q
 }), require("./388685.js"), require("./539854.js"), require("./642613.js");
 var r, Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  a = require.n(Chunk392711),
   Chunk913527 = require("./913527.js"),
   s = require.n(Chunk913527),
   Chunk442837 = require("./442837.js"),
@@ -63,8 +63,8 @@ function R(e, t) {
   r.setFullYear(t);
   let i = new Date(r.getTime());
   i.setDate(r.getDate() - y);
-  let o = new Date(r.getTime());
-  return o.setDate(r.getDate() + y), n > i && n < o
+  let a = new Date(r.getTime());
+  return a.setDate(r.getDate() + y), n > i && n < a
 }
 
 function P(e) {
@@ -190,7 +190,7 @@ function K(e) {
   if (!t) return;
   N = e;
   let n = _.Z.getFriendIDs().filter(e => !_.Z.isIgnored(e));
-  o().sampleSize(n, e).forEach(e => {
+  a().sampleSize(n, e).forEach(e => {
     let t = _.Z.getSince(e);
     if (null != t) {
       let n = new Date(t);

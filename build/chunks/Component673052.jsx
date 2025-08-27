@@ -19,12 +19,12 @@ function d(e) {
     message: t,
     channel: n,
     compact: d
-  } = e, f = (0, a.ZP)(t), _ = (0, s.l)({
+  } = e, f = (0, o.ZP)(t), _ = (0, s.l)({
     user: t.author,
     channelId: n.id,
     guildId: n.guild_id,
     messageId: t.id
-  })(f), p = (0, o.q)(t.applicationId);
+  })(f), p = (0, a.q)(t.applicationId);
   if (null == p) return null;
   let h = c.intl.format(c.t.mAtJTE, {
     username: t.author.username,

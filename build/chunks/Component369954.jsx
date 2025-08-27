@@ -27,16 +27,16 @@ let y = e => {
       buttonText: n,
       onButtonPress: i
     } = e;
-    return (0, r.jsxs)(o.Kq, {
+    return (0, r.jsxs)(a.Kq, {
       justify: "space-between",
       direction: "horizontal",
       align: "center",
       gap: 32,
-      children: [(0, r.jsx)(o.xv, {
+      children: [(0, r.jsx)(a.xv, {
         variant: "text-sm/semibold",
         color: "interactive-active",
         children: t
-      }), (0, r.jsx)(a.zxk, {
+      }), (0, r.jsx)(o.zxk, {
         text: n,
         onClick: i,
         variant: "secondary",
@@ -53,7 +53,7 @@ let y = e => {
     Chunk647438.useEffect(() => {
       (null == module ? true : module.id) != null && exports && Chunk260722.ZP.fetchTeenSettingsAndConsents(null == module ? true : module.id)
     }, [null == module ? true : module.id, exports]);
-    let o = e => {
+    let a = e => {
       n(e)
     };
     return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {

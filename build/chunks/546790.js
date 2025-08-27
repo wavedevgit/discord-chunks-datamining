@@ -25,7 +25,7 @@ module.exports = function(e) {
         begin: /''/
       }]
     },
-    o = {
+    a = {
       className: "number",
       relevance: 0,
       variants: [{
@@ -44,7 +44,7 @@ module.exports = function(e) {
         relevance: 0
       }]
     },
-    a = {
+    o = {
       className: "string",
       variants: [{
         match: /#\d[\d_]*/
@@ -71,7 +71,7 @@ module.exports = function(e) {
         begin: /\(/,
         end: /\)/,
         keywords: t,
-        contains: [i, a, r].concat(n)
+        contains: [i, o, r].concat(n)
       }, r].concat(n)
     };
   return {
@@ -80,6 +80,6 @@ module.exports = function(e) {
     case_insensitive: true,
     keywords: t,
     illegal: /"|\$[G-Zg-z]|\/\*|<\/|\|/,
-    contains: [i, a, o, s, l, r].concat(n)
+    contains: [i, o, a, s, l, r].concat(n)
   }
 }

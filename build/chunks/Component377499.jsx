@@ -25,17 +25,17 @@ function s(e) {
     m = (0, i.Sw)(c, f);
   if (null != m && null != u) {
     let e = u(m);
-    t = a.intl.format(a.t.L2FyVl, {
+    t = o.intl.format(o.t.L2FyVl, {
       username: p,
       usernameHook: h,
       otherUsername: m.nick,
       otherUsernameHook: e
     })
-  } else t = a.intl.format(a.t["5v2xa2"], {
+  } else t = o.intl.format(o.t["5v2xa2"], {
     username: p,
     usernameHook: h
   });
-  return (0, r.jsx)(o.Z, {
+  return (0, r.jsx)(a.Z, {
     icon: n(474019),
     timestamp: s.timestamp,
     compact: d,

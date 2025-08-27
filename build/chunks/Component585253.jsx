@@ -20,7 +20,7 @@ function d(e) {
     onAction: n
   } = e, {
     themeType: d
-  } = (0, s.z)(), f = null == t ? true : t.application_id, _ = d === c.l.MODAL_V2 ? o.Z.USER_PROFILE_MODAL : o.Z.USER_PROFILE_POPOUT, p = (0, a.u)(f, _);
+  } = (0, s.z)(), f = null == t ? true : t.application_id, _ = d === c.l.MODAL_V2 ? a.Z.USER_PROFILE_MODAL : a.Z.USER_PROFILE_POPOUT, p = (0, o.u)(f, _);
   return null == p ? null : d === c.l.MODAL_V2 ? (0, r.jsx)(l.tG, {
     icon: p.icon,
     text: u.intl.string(p.labelKey),

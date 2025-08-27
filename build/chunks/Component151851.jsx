@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk350810 = require("./350810.js"),
@@ -36,7 +36,7 @@ let I = "#ffffff",
       children: t,
       windowKey: n,
       themeOverride: i,
-      hasOpenLayer: a
+      hasOpenLayer: o
     } = e, l = (0, r.jsx)(s.P3F, {
       className: v.winButtonClose,
       onClick: () => T(n),
@@ -61,8 +61,8 @@ let I = "#ffffff",
     return (0, r.jsx)(s.f6W, {
       theme: i,
       children: e => (0, r.jsxs)("div", {
-        className: o()(v.typeWindows, e, {
-          [v.withBackgroundOverride]: !a
+        className: a()(v.typeWindows, e, {
+          [v.withBackgroundOverride]: !o
         }),
         children: [(0, r.jsx)("div", {
           className: v.wordmarkWindows,
@@ -76,14 +76,14 @@ let I = "#ffffff",
       focused: t,
       windowKey: n,
       frame: i,
-      themeOverride: a,
+      themeOverride: o,
       hasOpenLayer: l,
       children: u
     } = e;
     return (0, r.jsx)(s.f6W, {
-      theme: a,
+      theme: o,
       children: e => (0, r.jsxs)(s.P3F, {
-        className: o()(i ? v.typeMacOSWithFrame : v.typeMacOS, t ? v.focused : v.unfocused, e, {
+        className: a()(i ? v.typeMacOSWithFrame : v.typeMacOS, t ? v.focused : v.unfocused, e, {
           [v.withBackgroundOverride]: !l
         }),
         onDoubleClick: () => y.ZP.maximize(n),
@@ -130,9 +130,9 @@ function R(e) {
     focused: t,
     type: n,
     windowKey: i,
-    macOSFrame: o = false,
+    macOSFrame: a = false,
     themeOverride: s
-  } = e, c = (0, u.bp)(), f = (0, a.e7)([d.Z], () => d.Z.isFullscreenInContext(c)), _ = (0, l.Z)();
+  } = e, c = (0, u.bp)(), f = (0, o.e7)([d.Z], () => d.Z.isFullscreenInContext(c)), _ = (0, l.Z)();
   if (f) return null;
   switch (n) {
     case b.PlatformTypes.WINDOWS:
@@ -145,7 +145,7 @@ function R(e) {
       return (0, r.jsx)(N, {
         focused: t,
         windowKey: i,
-        frame: o,
+        frame: a,
         themeOverride: s,
         hasOpenLayer: _
       });

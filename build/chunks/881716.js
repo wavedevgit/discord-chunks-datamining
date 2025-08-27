@@ -4,8 +4,8 @@ var Chunk677420 = require("./677420.js"),
   Chunk319608 = require("./319608.js");
 module.exports = function(e, t, n) {
   if (r()) return Reflect.construct.apply(null, arguments);
-  var o = [null];
-  o.push.apply(o, t);
-  var a = new(e.bind.apply(e, o));
-  return n && i(a, n.prototype), a
+  var a = [null];
+  a.push.apply(a, t);
+  var o = new(e.bind.apply(e, a));
+  return n && i(o, n.prototype), o
 }, module.exports.__esModule = true, module.exports.default = module.exports

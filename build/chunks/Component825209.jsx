@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk921738 = require("./921738.js"),
-  a = require.n(Chunk921738),
+  o = require.n(Chunk921738),
   Chunk213005 = require("./213005.js"),
   Chunk455279 = require("./455279.jsx"),
   Chunk358085 = require("./358085.js"),
@@ -54,7 +54,7 @@ class p extends Chunk647438.PureComponent {
         mode: i
       } = this.state,
       {
-        disabled: o
+        disabled: a
       } = this.props;
     return _ ? (t = Chunk998502.ZP.getDiscordUtils().inputCaptureRegisterElement, e = this.handleNativeChange) : Chunk358085.isPlatformEmbedded || (e = this.handleComboKeys), (0, Chunk951288.jsx)(Chunk455279.Z, {
       disabled: Chunk921738,
@@ -79,7 +79,7 @@ class p extends Chunk647438.PureComponent {
       this.state.mode === l.c.DEFAULT ? this.recordStart() : this.recordEnd()
     }), f(this, "handleComboKeys", (e, t, n) => {
       if (n.preventDefault(), "keydown" === n.type) {
-        let e = t.map(e => [d.MoX.KEYBOARD_KEY, a()(e), d.CgE.BROWSER]),
+        let e = t.map(e => [d.MoX.KEYBOARD_KEY, o()(e), d.CgE.BROWSER]),
           {
             keyCode: r
           } = n;

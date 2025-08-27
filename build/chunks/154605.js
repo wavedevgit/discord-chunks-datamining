@@ -8,7 +8,7 @@ var Chunk857708 = require("./857708.js"),
   s = 0x100000000;
 module.exports = function(e) {
   var t = i(e);
-  if (!a(t) || 0 === t) return 0;
-  var n = r(o(t), s);
+  if (!o(t) || 0 === t) return 0;
+  var n = r(a(t), s);
   return 0 === n ? 0 : n
 }

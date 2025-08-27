@@ -29,11 +29,11 @@ let i = {
     316: "Envelope Priority",
     326: {
       name: "Date Sent",
-      description: o
+      description: a
     },
     336: {
       name: "Time Sent",
-      description: a
+      description: o
     },
     346: {
       name: "Coded Character Set",
@@ -114,19 +114,19 @@ let i = {
     },
     567: {
       name: "Date Created",
-      description: o
+      description: a
     },
     572: {
       name: "Time Created",
-      description: a
+      description: o
     },
     574: {
       name: "Digital Creation Date",
-      description: o
+      description: a
     },
     575: {
       name: "Digital Creation Time",
-      description: a
+      description: o
     },
     577: "Originating Program",
     582: "Program Version",
@@ -183,8 +183,8 @@ let i = {
         let t = (0, r.SI)(e),
           n = t.charAt(0),
           i = t.charAt(1),
-          o = "";
-        return ("1" === n ? o += "Mono" : "2" === n && (o += "Stereo"), "A" === i ? o += ", actuality" : "C" === i ? o += ", question and answer session" : "M" === i ? o += ", music, transmitted by itself" : "Q" === i ? o += ", response to a question" : "R" === i ? o += ", raw sound" : "S" === i ? o += ", scener" : "V" === i ? o += ", voicer" : "W" === i && (o += ", wrap"), "" !== o) ? o : t
+          a = "";
+        return ("1" === n ? a += "Mono" : "2" === n && (a += "Stereo"), "A" === i ? a += ", actuality" : "C" === i ? a += ", question and answer session" : "M" === i ? a += ", music, transmitted by itself" : "Q" === i ? a += ", response to a question" : "R" === i ? a += ", raw sound" : "S" === i ? a += ", scener" : "V" === i ? a += ", voicer" : "W" === i && (a += ", wrap"), "" !== a) ? a : t
       }
     },
     663: {
@@ -331,12 +331,12 @@ let i = {
   }
 };
 
-function o(e) {
+function a(e) {
   let t = (0, r.SI)(e);
   return t.length >= 8 ? t.substr(0, 4) + "-" + t.substr(4, 2) + "-" + t.substr(6, 2) : t
 }
 
-function a(e) {
+function o(e) {
   let t = (0, r.SI)(e),
     n = t;
   return t.length >= 6 && (n = t.substr(0, 2) + ":" + t.substr(2, 2) + ":" + t.substr(4, 2), 11 === t.length && (n += t.substr(6, 1) + t.substr(7, 2) + ":" + t.substr(9, 2))), n

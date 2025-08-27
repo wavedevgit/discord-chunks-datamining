@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk468194 = require("./468194.js"),
   Chunk399606 = require("./399606.js"),
   Chunk481060 = require("./481060.js"),
@@ -36,14 +36,14 @@ let E = e => {
     b = (0, u.EB)(n, 40, true),
     y = null,
     O = m[m.length - 1];
-  return null == n.icon && null != E && (O = g(y = (0, a.Zg)(E))), (0, r.jsxs)("div", {
+  return null == n.icon && null != E && (O = g(y = (0, o.Zg)(E))), (0, r.jsxs)("div", {
     className: h.container,
     children: [(0, r.jsxs)("div", {
       style: {
         fontSize: O
       },
       children: [null != y ? (0, r.jsx)("div", {
-        className: o()(h.childWrapper, h.acronym),
+        className: a()(h.childWrapper, h.acronym),
         "aria-hidden": true,
         children: y
       }) : null, null != b ? (0, r.jsx)(l.qEK, {

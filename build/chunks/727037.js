@@ -19,16 +19,16 @@ class s {
       this.fieldNoToField = new Map(exports.map(e => [e.no, e]))
     }
   }
-  read(e, t, n, o) {
+  read(e, t, n, a) {
     this.prepare();
-    let a = true === o ? e.len : e.pos + o;
-    for (; e.pos < a;) {
-      let [o, a] = e.tag(), s = this.fieldNoToField.get(o);
+    let o = true === a ? e.len : e.pos + a;
+    for (; e.pos < o;) {
+      let [a, o] = e.tag(), s = this.fieldNoToField.get(a);
       if (!s) {
         let i = n.readUnknownField;
-        if ("throw" == i) throw Error(`Unknown field ${o} (wire type ${a}) for ${this.info.typeName}`);
-        let s = e.skip(a);
-        false !== i && (true === i ? r.z.onRead : i)(this.info.typeName, t, o, a, s);
+        if ("throw" == i) throw Error(`Unknown field ${a} (wire type ${o}) for ${this.info.typeName}`);
+        let s = e.skip(o);
+        false !== i && (true === i ? r.z.onRead : i)(this.info.typeName, t, a, o, s);
         continue
       }
       let l = t,
@@ -43,7 +43,7 @@ class s {
             f = "scalar" == s.kind ? s.L : true;
           if (c) {
             let t = l[u];
-            if (a == r.TD.LengthDelimited && d != i.wx.STRING && d != i.wx.BYTES) {
+            if (o == r.TD.LengthDelimited && d != i.wx.STRING && d != i.wx.BYTES) {
               let n = e.uint32() + e.pos;
               for (; e.pos < n;) t.push(this.scalar(e, d, f))
             } else t.push(this.scalar(e, d, f))
@@ -63,45 +63,45 @@ class s {
     }
   }
   mapEntry(e, t, n) {
-    let r, o, s = t.uint32(),
+    let r, a, s = t.uint32(),
       l = t.pos + s;
     for (; t.pos < l;) {
-      let [a, s] = t.tag();
-      switch (a) {
+      let [o, s] = t.tag();
+      switch (o) {
         case 1:
           r = e.K == i.wx.BOOL ? t.bool().toString() : this.scalar(t, e.K, i.pz.STRING);
           break;
         case 2:
           switch (e.V.kind) {
             case "scalar":
-              o = this.scalar(t, e.V.T, e.V.L);
+              a = this.scalar(t, e.V.T, e.V.L);
               break;
             case "enum":
-              o = t.int32();
+              a = t.int32();
               break;
             case "message":
-              o = e.V.T().internalBinaryRead(t, t.uint32(), n)
+              a = e.V.T().internalBinaryRead(t, t.uint32(), n)
           }
           break;
         default:
-          throw Error(`Unknown field ${a} (wire type ${s}) in map entry for ${this.info.typeName}#${e.name}`)
+          throw Error(`Unknown field ${o} (wire type ${s}) in map entry for ${this.info.typeName}#${e.name}`)
       }
     }
     if (true === r) {
-      let t = (0, a.N)(e.K);
+      let t = (0, o.N)(e.K);
       r = e.K == i.wx.BOOL ? t.toString() : t
     }
-    if (true === o) switch (e.V.kind) {
+    if (true === a) switch (e.V.kind) {
       case "scalar":
-        o = (0, a.N)(e.V.T, e.V.L);
+        a = (0, o.N)(e.V.T, e.V.L);
         break;
       case "enum":
-        o = 0;
+        a = 0;
         break;
       case "message":
-        o = e.V.T().create()
+        a = e.V.T().create()
     }
-    return [r, o]
+    return [r, a]
   }
   scalar(e, t, n) {
     switch (t) {
@@ -116,11 +116,11 @@ class s {
       case i.wx.FLOAT:
         return e.float();
       case i.wx.INT64:
-        return (0, o._)(e.int64(), n);
+        return (0, a._)(e.int64(), n);
       case i.wx.UINT64:
-        return (0, o._)(e.uint64(), n);
+        return (0, a._)(e.uint64(), n);
       case i.wx.FIXED64:
-        return (0, o._)(e.fixed64(), n);
+        return (0, a._)(e.fixed64(), n);
       case i.wx.FIXED32:
         return e.fixed32();
       case i.wx.BYTES:
@@ -130,11 +130,11 @@ class s {
       case i.wx.SFIXED32:
         return e.sfixed32();
       case i.wx.SFIXED64:
-        return (0, o._)(e.sfixed64(), n);
+        return (0, a._)(e.sfixed64(), n);
       case i.wx.SINT32:
         return e.sint32();
       case i.wx.SINT64:
-        return (0, o._)(e.sint64(), n)
+        return (0, a._)(e.sint64(), n)
     }
   }
 }

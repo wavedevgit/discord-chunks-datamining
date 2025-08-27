@@ -70,7 +70,7 @@ let b = "game_console_alert_modal",
         let n = () => {
             (0, l.Q3)(i.z.CONSOLE_PTT_DISABLE_ALERT), e()
           },
-          s = e => (0, r.jsx)(a.Modal, E(m({}, e), {
+          s = e => (0, r.jsx)(o.Modal, E(m({}, e), {
             title: t,
             subtitle: p.intl.string(p.t.bL21zs),
             actions: [{
@@ -78,7 +78,7 @@ let b = "game_console_alert_modal",
               onClick: n
             }]
           }));
-        (0, o.nf)(y) ? (0, o.o)(y, e => s(e)) : (0, o.ZD)(async () => e => s(e), {
+        (0, a.nf)(y) ? (0, a.o)(y, e => s(e)) : (0, a.ZD)(async () => e => s(e), {
           modalKey: y
         })
       })
@@ -92,7 +92,7 @@ let b = "game_console_alert_modal",
       } = e, c = (0, r.jsx)(d.t, {
         body: n,
         errorCodeMessage: i,
-        dismissCallback: () => (0, o.Mr)(b)
+        dismissCallback: () => (0, a.Mr)(b)
       });
 
       function h() {
@@ -104,7 +104,7 @@ let b = "game_console_alert_modal",
           platform_type: l
         }))
       }
-      let g = e => (0, r.jsx)(a.Modal, E(m({}, e), {
+      let g = e => (0, r.jsx)(o.Modal, E(m({}, e), {
         title: t,
         actions: [{
           text: p.intl.string(p.t.BddRzc),
@@ -112,7 +112,7 @@ let b = "game_console_alert_modal",
         }],
         children: c
       }));
-      (0, o.nf)(b) ? (0, o.o)(b, e => g(e)) : (0, o.ZD)(async () => e => g(e), {
+      (0, a.nf)(b) ? (0, a.o)(b, e => g(e)) : (0, a.ZD)(async () => e => g(e), {
         modalKey: b
       })
     }

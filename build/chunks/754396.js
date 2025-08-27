@@ -12,18 +12,18 @@ async function i(e) {
     cssText: await n.text()
   }, r[e] = t, t
 }
-async function o(e, t) {
+async function a(e, t) {
   let n = e.cssText,
     r = /url\(["']?([^"')]+)["']?\)/g;
   return Promise.all((n.match(/url\([^)]+\)/g) || []).map(async i => {
-    let o = i.replace(r, "$1");
-    return o.startsWith("https://") || (o = new URL(o, e.url).href), fetchAsDataURL(o, t.fetchRequestInit, ({
+    let a = i.replace(r, "$1");
+    return a.startsWith("https://") || (a = new URL(a, e.url).href), fetchAsDataURL(a, t.fetchRequestInit, ({
       result: e
     }) => (n = n.replace(i, `url(${e})`), [i, e]))
   })).then(() => n)
 }
 
-function a(e) {
+function o(e) {
   if (null == e) return [];
   let t = [],
     n = /(\/\*[\s\S]*?\*\/)/gi,
@@ -35,14 +35,14 @@ function a(e) {
     t.push(e[0])
   }
   r = r.replace(i, "");
-  let o = /@import[\s\S]*?url\([^)]*\)[\s\S]*?;/gi,
-    a = RegExp("((\\s*?(?:\\/\\*[\\s\\S]*?\\*\\/)?\\s*?@media[\\s\\S]*?){([\\s\\S]*?)}\\s*?})|(([\\s\\S]*?){([\\s\\S]*?)})", "gi");
+  let a = /@import[\s\S]*?url\([^)]*\)[\s\S]*?;/gi,
+    o = RegExp("((\\s*?(?:\\/\\*[\\s\\S]*?\\*\\/)?\\s*?@media[\\s\\S]*?){([\\s\\S]*?)}\\s*?})|(([\\s\\S]*?){([\\s\\S]*?)})", "gi");
   for (;;) {
-    let e = o.exec(r);
+    let e = a.exec(r);
     if (null === e) {
-      if (null === (e = a.exec(r))) break;
-      o.lastIndex = a.lastIndex
-    } else a.lastIndex = o.lastIndex;
+      if (null === (e = o.exec(r))) break;
+      a.lastIndex = o.lastIndex
+    } else o.lastIndex = a.lastIndex;
     t.push(e[0])
   }
   return t
@@ -56,7 +56,7 @@ async function s(e, t) {
         if (e.type === CSSRule.IMPORT_RULE) {
           let l = s + 1,
             c = e.href,
-            u = i(c).then(e => o(e, t)).then(e => a(e).forEach(e => {
+            u = i(c).then(e => a(e, t)).then(e => o(e).forEach(e => {
               try {
                 n.insertRule(e, e.startsWith("@import") ? l += 1 : n.cssRules.length)
               } catch (t) {
@@ -73,7 +73,7 @@ async function s(e, t) {
       })
     } catch (l) {
       let s = e.find(e => null == e.href) || document.styleSheets[0];
-      null != n.href && r.push(i(n.href).then(e => o(e, t)).then(e => a(e).forEach(e => {
+      null != n.href && r.push(i(n.href).then(e => a(e, t)).then(e => o(e).forEach(e => {
         s.insertRule(e, n.cssRules.length)
       })).catch(e => {
         console.error("Error loading remote stylesheet", e)

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk780384 = require("./780384.js"),
   Chunk481060 = require("./481060.js"),
@@ -128,11 +128,11 @@ let w = () => (0, Chunk951288.jsx)("div", {
       label: t,
       tier0ColumnData: n,
       tier2ColumnData: i,
-      withBottomMargin: o
+      withBottomMargin: a
     } = e;
     return (0, r.jsxs)("tr", {
-      className: a()(v.row, v.rowBottomBorder, {
-        [v.bottomMargin]: o
+      className: o()(v.row, v.rowBottomBorder, {
+        [v.bottomMargin]: a
       }),
       children: [(0, r.jsx)("th", {
         scope: "row",
@@ -185,16 +185,16 @@ let w = () => (0, Chunk951288.jsx)("div", {
       } = e,
       i = (0, u.ZP)();
     t = n === y.p9.TIER_0 ? (0, l.wj)(i) ? I : T : (0, l.wj)(i) ? S : A;
-    let o = (0, h.Px)(n);
+    let a = (0, h.Px)(n);
     return (0, r.jsx)("img", {
       src: t,
       className: v.logo,
-      alt: o
+      alt: a
     })
   },
   U = () => (0, Chunk951288.jsx)("thead", {
     children: (0, Chunk951288.jsxs)("tr", {
-      className: a()(Chunk893296.headerRow, Chunk893296.topBorderRadius),
+      className: o()(Chunk893296.headerRow, Chunk893296.topBorderRadius),
       children: [(0, Chunk951288.jsx)("th", {
         scope: "col",
         className: Chunk893296.headerLabelCell,
@@ -211,7 +211,7 @@ let w = () => (0, Chunk951288.jsx)("div", {
         })
       }), (0, Chunk951288.jsx)("th", {
         scope: "col",
-        className: a()(Chunk893296.headerCell, Chunk893296.topBorderRadius),
+        className: o()(Chunk893296.headerCell, Chunk893296.topBorderRadius),
         children: (0, Chunk951288.jsx)(k, {
           premiumType: Chunk474936.p9.TIER_2
         })
@@ -223,10 +223,10 @@ let w = () => (0, Chunk951288.jsx)("div", {
       tier0MonthlyPrice: t,
       tier2MonthlyPrice: n,
       shouldUseDiscountPrice: i,
-      tier2DiscountedPriceString: o
+      tier2DiscountedPriceString: a
     } = e;
     return (0, r.jsxs)("tr", {
-      className: a()(v.row, v.rowBottomBorder, v.bottomMargin),
+      className: o()(v.row, v.rowBottomBorder, v.bottomMargin),
       children: [(0, r.jsx)("th", {
         scope: "row",
         className: v.labelCell,
@@ -242,7 +242,7 @@ let w = () => (0, Chunk951288.jsx)("div", {
       }), (0, r.jsx)("td", {
         className: v.cell,
         children: (0, r.jsx)(x, {
-          text: i ? o : h.ZP.formatPriceString(n, y.rV.MONTH)
+          text: i ? a : h.ZP.formatPriceString(n, y.rV.MONTH)
         })
       })]
     })
@@ -250,7 +250,7 @@ let w = () => (0, Chunk951288.jsx)("div", {
   B = e => {
     var t;
     let n, {
-        className: o,
+        className: a,
         hidePill: l = false,
         selectedPlanColumnClassName: c,
         selectedPlanTier: u = y.p9.TIER_2
@@ -275,17 +275,17 @@ let w = () => (0, Chunk951288.jsx)("div", {
     return (0, r.jsx)(f.Gt, {
       value: O,
       children: (0, r.jsx)("div", {
-        className: a()(v.root, o),
+        className: o()(v.root, a),
         "data-testid": "application-home-marketing-page-comparison-table",
         children: (0, r.jsxs)("div", {
           className: v.tableWrapper,
           children: [(0, r.jsxs)("div", {
-            className: a()(c, {
+            className: o()(c, {
               [v.tier0ColumnPosition]: Z,
               [v.tier2ColumnPosition]: !Z
             }),
             children: [!Z && n, (0, r.jsx)("div", {
-              className: a()({
+              className: o()({
                 [v.tier0ColumnOuter]: Z,
                 [v.tier2ColumnOuter]: !Z
               })

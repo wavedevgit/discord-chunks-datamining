@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk399606 = require("./399606.js"),
   Chunk481060 = require("./481060.js"),
   Chunk596454 = require("./596454.jsx"),
@@ -89,13 +89,13 @@ function C(e) {
   } = e, n = (0, s.e7)([h.Z], () => h.Z.getSoundById(t)), i = (0, d.V2)({
     location: "SoundboardMentionInline"
   }), {
-    isPlaying: o,
-    playSound: a
+    isPlaying: a,
+    playSound: o
   } = (0, p.Z)(n);
   return i ? null == n ? (0, r.jsx)(A, {}) : (0, r.jsx)(N, {
     className: O.inlineTextArea,
-    isPlaying: o,
-    playSound: a,
+    isPlaying: a,
+    playSound: o,
     sound: n
   }) : null
 }
@@ -105,7 +105,7 @@ function N(e) {
     className: t,
     sound: n,
     playSound: i,
-    isPlaying: o
+    isPlaying: a
   } = e, s = (null == n ? true : n.emojiId) != null || (null == n ? true : n.emojiName) != null, d = y.intl.formatToPlainString(y.t.tuMUJy, {
     emojiName: null == n ? true : n.emojiName,
     soundName: null == n ? true : n.name
@@ -116,8 +116,8 @@ function N(e) {
     "aria-label": d,
     tag: "span",
     onClick: i,
-    className: a()(O.inlineContainer, O.inlineButton, {
-      [O.playing]: true === o
+    className: o()(O.inlineContainer, O.inlineButton, {
+      [O.playing]: true === a
     }, t),
     children: [s && (0, r.jsx)(c.Z, {
       emojiId: null == n ? true : n.emojiId,
@@ -132,13 +132,13 @@ let R = function(e) {
   let {
     channelId: t,
     messageId: n,
-    soundId: o,
-    messageSounds: a,
+    soundId: a,
+    messageSounds: o,
     jumbo: c = false
-  } = e, d = E.jU.useSetting(), y = (0, s.e7)([h.Z], () => h.Z.getSoundById(o), [o]), v = i.useMemo(() => {
+  } = e, d = E.jU.useSetting(), y = (0, s.e7)([h.Z], () => h.Z.getSoundById(a), [a]), v = i.useMemo(() => {
     var e;
-    return null != (e = (0, f.Z)(t, n, o, a)) ? e : y
-  }, [t, n, o, a, y]), T = (0, s.e7)([b.Z], () => b.Z.getChannel(t)), C = (0, u.X0)({
+    return null != (e = (0, f.Z)(t, n, a, o)) ? e : y
+  }, [t, n, a, o, y]), T = (0, s.e7)([b.Z], () => b.Z.getChannel(t)), C = (0, u.X0)({
     location: "SoundboardMention"
   }), R = i.useRef(null), {
     isPlaying: P,

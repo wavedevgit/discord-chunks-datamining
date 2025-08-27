@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
-  a = require.n(Chunk512722),
+  o = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk570140 = require("./570140.js"),
@@ -78,8 +78,8 @@ function k(e, t) {
   if (null == e) return {};
   var n, r, i = U(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -87,8 +87,8 @@ function k(e, t) {
 function U(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -110,20 +110,20 @@ function B(e) {
     selectedGuild: t
   } = e, {
     analyticsLocations: n
-  } = (0, _.ZP)(d.Z.USER_SETTINGS_GUILD_PROFILE), o = (0, s.e7)([v.default], () => {
+  } = (0, _.ZP)(d.Z.USER_SETTINGS_GUILD_PROFILE), a = (0, s.e7)([v.default], () => {
     let e = v.default.getCurrentUser();
-    return a()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
-  }), x = (0, s.e7)([y.Z], () => !y.Z.isFetchingProfile(o.id, null == t ? true : t.id)), j = (0, s.e7)([O.Z], () => O.Z.hidePersonalInformation), U = (0, s.cj)([A.Z], () => M(L({}, A.Z.getAllPending()), {
+    return o()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
+  }), x = (0, s.e7)([y.Z], () => !y.Z.isFetchingProfile(a.id, null == t ? true : t.id)), j = (0, s.e7)([O.Z], () => O.Z.hidePersonalInformation), U = (0, s.cj)([A.Z], () => M(L({}, A.Z.getAllPending()), {
     source: A.Z.getSource()
   })), {
     source: B,
     pendingAvatar: Z,
     pendingNameplate: F
   } = U, V = k(U, ["source", "pendingAvatar", "pendingNameplate"]), H = (0, b.SD)({
-    userId: o.id,
+    userId: a.id,
     image: Z
   }), Y = (0, m.K)({
-    user: o,
+    user: a,
     guildId: null == t ? true : t.id
   });
   i.useEffect(() => () => c.Z.wait(S.W3), []), i.useEffect(() => {
@@ -161,13 +161,13 @@ function B(e) {
         }),
         profilePreview: (0, r.jsx)(E.Z, M(L({}, V), {
           pendingAvatar: H,
-          user: o,
+          user: a,
           guild: t,
-          canUsePremiumCustomization: T.ZP.canUsePremiumProfileCustomization(o),
+          canUsePremiumCustomization: T.ZP.canUsePremiumProfileCustomization(a),
           onUpsellClick: G
         })),
         nameplatePreview: W ? (0, r.jsx)(p.Z, {
-          user: o,
+          user: a,
           guildId: null == t ? true : t.id,
           nameplate: F,
           nameplateData: null == F ? Y : true,

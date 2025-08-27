@@ -58,8 +58,8 @@ function m(e, t) {
   if (null == e) return {};
   var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -67,8 +67,8 @@ function m(e, t) {
 function g(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let E = (0, Chunk481060.pxk)(Chunk481060.EFr.SIZE_80),
@@ -88,7 +88,7 @@ function O(e) {
   var {
     children: t,
     user: n,
-    currentUser: o,
+    currentUser: a,
     guildId: s,
     channelId: d,
     messageId: f,
@@ -108,14 +108,14 @@ function O(e) {
   let P = i.useRef(true),
     w = i.useCallback(() => null != v ? v() : (0, l.Z)(n.id, null != O ? O : n.getAvatarURL(s, E), {
       type: "popout",
-      withMutualGuilds: n.id !== o.id,
-      withMutualFriends: !n.bot && n.id !== o.id,
+      withMutualGuilds: n.id !== a.id,
+      withMutualFriends: !n.bot && n.id !== a.id,
       guildId: s,
       channelId: d
-    }), [v, o, n, O, s, d]),
+    }), [v, a, n, O, s, d]),
     D = i.useCallback(e => (P.current = Date.now(), null != I) ? I(e, P.current) : (0, r.jsx)(c.Z, h(_({}, e), {
       user: n,
-      currentUser: o,
+      currentUser: a,
       guildId: s,
       channelId: d,
       roleId: p,
@@ -127,8 +127,8 @@ function O(e) {
       closePopout: () => {
         e.closePopout(), null == A || A()
       }
-    })), [n, o, I, s, d, p, f, g, b, y, A]);
-  return (0, r.jsx)(a.yRy, h(_({
+    })), [n, a, I, s, d, p, f, g, b, y, A]);
+  return (0, r.jsx)(o.yRy, h(_({
     popoutKey: u.Tg,
     shouldShow: C,
     preload: N ? w : true,
@@ -145,10 +145,10 @@ function v(e) {
     children: t,
     userId: n,
     user: i
-  } = e, a = m(e, ["children", "userId", "user"]);
-  let l = (0, o.e7)([s.default], () => s.default.getCurrentUser()),
-    c = (0, o.e7)([s.default], () => null != i ? i : s.default.getUser(n));
-  return null == c || null == l ? t(b, y) : (0, r.jsx)(O, h(_({}, a), {
+  } = e, o = m(e, ["children", "userId", "user"]);
+  let l = (0, a.e7)([s.default], () => s.default.getCurrentUser()),
+    c = (0, a.e7)([s.default], () => null != i ? i : s.default.getUser(n));
+  return null == c || null == l ? t(b, y) : (0, r.jsx)(O, h(_({}, o), {
     user: c,
     currentUser: l,
     children: t

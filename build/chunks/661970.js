@@ -10,5 +10,5 @@ module.exports = Chunk677671 ? function(e) {
   return "symbol" == typeof e
 } : function(e) {
   var t = r("Symbol");
-  return i(t) && o(t.prototype, s(e))
+  return i(t) && a(t.prototype, s(e))
 }

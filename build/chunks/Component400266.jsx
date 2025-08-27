@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk729594 = require("./729594.js"),
   Chunk785992 = require("./785992.js"),
   Chunk616922 = require("./616922.js"),
@@ -29,7 +29,7 @@ function d(e) {
   let i = null,
     d = null;
   try {
-    let e = a.parse(u(n), true);
+    let e = o.parse(u(n), true);
     i = e.host, d = e.pathname
   } catch (e) {
     return null
@@ -43,7 +43,7 @@ function d(e) {
   "user" === _ && "playlist" === p && null != h && (d = "/playlist/".concat(h));
   let m = 352;
   return "track" === _ ? m = 80 : ("episode" === _ || "show" === _) && (m = 232), (0, r.jsx)("iframe", {
-    className: o()(c.embedSpotify, t),
+    className: a()(c.embedSpotify, t),
     src: l.C7.EMBED(d),
     style: {
       maxWidth: 400,

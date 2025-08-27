@@ -9,7 +9,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk951394 = require("./951394.jsx"),
@@ -75,7 +75,7 @@ function T(e) {
   let {
     user: t,
     sourceType: n,
-    isVisible: o,
+    isVisible: a,
     isExpandable: m,
     interactionSourceId: E,
     targetRef: y,
@@ -113,8 +113,8 @@ function T(e) {
       })
     };
   return (0, r.jsxs)(c.ZP, {
-    className: a()(h.popover, {
-      [h.visible]: o,
+    className: o()(h.popover, {
+      [h.visible]: a,
       [h.expandable]: m,
       [h.statusPopover]: n === _.n_.STATUS,
       [h.avatarPopover]: n === _.n_.AVATAR,
@@ -122,7 +122,7 @@ function T(e) {
     }),
     children: [(0, r.jsx)(l.DY3, {
       text: p.intl.string(p.t.nhaI4e),
-      shouldShow: o,
+      shouldShow: a,
       className: h.tooltipContainer,
       delay: 0,
       "aria-label": false,
@@ -138,7 +138,7 @@ function T(e) {
       })
     }), (0, r.jsx)(l.DY3, {
       text: p.intl.string(p.t.RmDYKC),
-      shouldShow: o,
+      shouldShow: a,
       className: h.tooltipContainer,
       delay: 0,
       "aria-label": false,
@@ -159,7 +159,7 @@ function T(e) {
       };
       return (0, r.jsx)(l.DY3, {
         text: p.intl.string(p.t.UKOtz8),
-        shouldShow: o,
+        shouldShow: a,
         className: h.tooltipContainer,
         delay: 0,
         "aria-label": false,

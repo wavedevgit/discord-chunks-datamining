@@ -13,7 +13,7 @@ function i() {
   }).apply(this, arguments)
 }
 
-function o(e, t) {
+function a(e, t) {
   e.prototype = Object.create(t.prototype), e.prototype.constructor = e, e.__proto__ = t
 }
 var Chunk654530 = require("./654530.js"),
@@ -24,21 +24,21 @@ module.exports = function(e) {
   function t() {
     return e.apply(this, arguments) || this
   }
-  return o(t, e), t.prototype.render = function() {
+  return a(t, e), t.prototype.render = function() {
     var e = this.props,
       t = e.block,
       n = e.children,
       r = e.contentState,
-      o = e.decorator,
+      a = e.decorator,
       u = e.decoratorKey,
       d = e.direction,
       f = e.leafSet,
       _ = e.text,
       p = t.getKey(),
       h = f.get("leaves"),
-      m = o.getComponentForKey(u),
-      g = o.getPropsForKey(u),
-      E = a.encode(p, parseInt(u, 10), 0),
+      m = a.getComponentForKey(u),
+      g = a.getPropsForKey(u),
+      E = o.encode(p, parseInt(u, 10), 0),
       b = _.slice(h.first().get("start"), h.last().get("end")),
       y = c.getHTMLDirIfDifferent(l.getDirection(b), d);
     return s.createElement(m, i({}, g, {

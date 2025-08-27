@@ -29,7 +29,7 @@ function p() {
       } = e;
       return (null != t ? t : 0) > 0
     }),
-    a = (0, Chunk392711.sumBy)(require, e => {
+    o = (0, Chunk392711.sumBy)(require, e => {
       var t;
       return null != (t = null == e ? true : e.downloadedBytes) ? t : 0
     }),
@@ -49,7 +49,7 @@ function h() {
     progress: t
   } = p(), {
     activeVoice: n
-  } = (0, Chunk378441.o)(), i = null != require, o = module ? Chunk647438 ? "voice-on" : "voice-off" : null;
+  } = (0, Chunk378441.o)(), i = null != require, a = module ? Chunk647438 ? "voice-on" : "voice-off" : null;
   return (0, Chunk481060.Yzy)(Chunk392711, {
     from: {
       opacity: 0,
@@ -63,7 +63,7 @@ function h() {
       opacity: 0,
       translateY: 80
     }
-  }, "respect-motion-settings")((e, n) => null != n ? (0, r.jsx)(a.animated.div, {
+  }, "respect-motion-settings")((e, n) => null != n ? (0, r.jsx)(o.animated.div, {
     style: e,
     className: _.floaterWrapper,
     children: (0, r.jsxs)("div", {

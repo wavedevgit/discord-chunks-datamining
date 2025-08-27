@@ -134,8 +134,8 @@ class j extends(r = Chunk647438.Component) {
       fullWidth: t,
       size: n,
       color: r,
-      customDisabledColor: o,
-      isPlayShiny: a,
+      customDisabledColor: a,
+      isPlayShiny: o,
       onDropdownOpen: s,
       onDropdownClose: l,
       analyticsListSort: c,
@@ -159,8 +159,8 @@ class j extends(r = Chunk647438.Component) {
     let {
       className: n,
       fullWidth: r,
-      size: o,
-      customDisabledColor: a,
+      size: a,
+      customDisabledColor: o,
       tooltipPosition: s
     } = this.props;
     return (0, i.jsxs)("div", {
@@ -168,8 +168,8 @@ class j extends(r = Chunk647438.Component) {
       children: [(0, i.jsxs)(l.zx, {
         className: n,
         fullWidth: r,
-        size: o,
-        color: null != a ? a : A.disabledButtonColor,
+        size: a,
+        color: null != o ? o : A.disabledButtonColor,
         disabled: true,
         children: [this.getText(e), this.renderProgressBar()]
       }), (0, i.jsx)(c.ua7, {
@@ -202,15 +202,15 @@ class j extends(r = Chunk647438.Component) {
     let {
       className: n,
       fullWidth: r,
-      size: o,
-      color: a,
+      size: a,
+      color: o,
       isCloudSyncing: s
     } = this.props;
     return (0, i.jsxs)(l.zx, {
       className: n,
       fullWidth: r,
-      size: o,
-      color: null != a ? a : l.zx.Colors.GREEN,
+      size: a,
+      color: null != o ? o : l.zx.Colors.GREEN,
       submitting: "uninstalling" === e || s,
       onClick: e => this.handleClick(e, t),
       children: [this.getText(e), this.renderProgressBar()]
@@ -267,11 +267,11 @@ class j extends(r = Chunk647438.Component) {
 function M(e) {
   let {
     libraryApplication: t
-  } = e, n = (0, d.O)(), [r, o] = (0, a.Wu)([g.Z, E.Z], () => [(0, h.i)(t, g.Z, E.Z), g.Z.getState(t.id, t.branchId)], [t]), s = (0, a.e7)([m.Z], () => m.Z.isSyncing(t.id, t.branchId), [t]), l = (0, a.e7)([p.Z], () => p.Z.hasNoBuild(t.id, t.branchId), [t]);
+  } = e, n = (0, d.O)(), [r, a] = (0, o.Wu)([g.Z, E.Z], () => [(0, h.i)(t, g.Z, E.Z), g.Z.getState(t.id, t.branchId)], [t]), s = (0, o.e7)([m.Z], () => m.Z.isSyncing(t.id, t.branchId), [t]), l = (0, o.e7)([p.Z], () => p.Z.hasNoBuild(t.id, t.branchId), [t]);
   return (0, i.jsx)(j, P(N({}, e), {
     analyticsContext: n,
     actionState: r,
-    dispatchState: o,
+    dispatchState: a,
     isCloudSyncing: s,
     hasNoBuild: l
   }))

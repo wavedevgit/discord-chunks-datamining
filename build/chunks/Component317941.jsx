@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk913527 = require("./913527.js"),
-  a = require.n(Chunk913527),
+  o = require.n(Chunk913527),
   Chunk442837 = require("./442837.js"),
   Chunk846519 = require("./846519.js"),
   Chunk755721 = require("./755721.js"),
@@ -82,7 +82,7 @@ class D extends Chunk647438.PureComponent {
         className: Chunk669255.subTextRow,
         children: [null != exports.expiresAt ? (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
           children: [Chunk388032.intl.format(Chunk388032.t.ltVZcH, {
-            hours: exports.expiresAt.diff(a()(), "h")
+            hours: exports.expiresAt.diff(o()(), "h")
           }), " —\xa0"]
         }) : null, (0, Chunk951288.jsx)(Chunk481060.P3F, {
           tag: "a",
@@ -160,8 +160,8 @@ class x extends Chunk647438.PureComponent {
       entitlements: e,
       application: t,
       giftCodes: n,
-      className: o,
-      sku: a,
+      className: a,
+      sku: o,
       isFetching: s,
       hideCodes: l,
       giftStyle: c
@@ -188,7 +188,7 @@ class x extends Chunk647438.PureComponent {
               }) : (0, Chunk951288.jsx)(Chunk925329.Z, {
                 game: exports,
                 size: Chunk925329.Z.Sizes.MEDIUM,
-                skuId: a.id
+                skuId: o.id
               }), (0, Chunk951288.jsxs)("div", {
                 className: Chunk669255.headerText,
                 children: [this.renderTitle(), (0, Chunk951288.jsx)("div", {
@@ -210,7 +210,7 @@ class x extends Chunk647438.PureComponent {
         }) : (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
           children: [require.length < module.length ? this.renderGenerateGiftCodeRow() : null, require.map(e => (0, r.jsx)(D, {
             giftCode: e,
-            sku: a,
+            sku: o,
             hideCode: l
           }, e.code))]
         })
@@ -254,7 +254,7 @@ let L = Chunk442837.ZP.connectStores([Chunk55563.Z, Chunk246946.Z, Chunk82142.Z,
     giftStyle: r
   } = e, i = O.Z.get(t);
   if (null == i) throw Error("SKU was unavailable while rendering gift.");
-  let o = E.Z.getForGifterSKUAndPlan(g.default.getId(), t, n).filter(e => !e.isClaimed).filter(e => e.giftStyle === r);
+  let a = E.Z.getForGifterSKUAndPlan(g.default.getId(), t, n).filter(e => !e.isClaimed).filter(e => e.giftStyle === r);
   return {
     sku: i,
     hideCodes: b.Z.enabled,
@@ -262,6 +262,6 @@ let L = Chunk442837.ZP.connectStores([Chunk55563.Z, Chunk246946.Z, Chunk82142.Z,
     loadedAt: E.Z.getUserGiftCodesLoadedAtForSKUAndPlan(t, n),
     application: _.Z.getApplication(i.applicationId),
     subscriptionPlan: null != n ? (0, S.oE)(n) : null,
-    giftCodes: o
+    giftCodes: a
   }
 })(x)

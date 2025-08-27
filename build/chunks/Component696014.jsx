@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk886886 = require("./886886.js");
 let l = 2;
 
@@ -18,7 +18,7 @@ function c() {
     let {
       showAll: n = false,
       className: i,
-      children: o,
+      children: a,
       lineClamp: c = l
     } = e, u = {
       lineClamp: c,
@@ -28,9 +28,9 @@ function c() {
     };
     return (0, r.jsx)("div", {
       ref: d,
-      className: a()(s.lineClamp, i),
+      className: o()(s.lineClamp, i),
       style: n ? true : u,
-      children: o
+      children: a
     })
   }
   return {

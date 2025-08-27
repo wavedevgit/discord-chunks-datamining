@@ -2,13 +2,13 @@
 /** chunk id: 960095, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  j: () => a
+  j: () => o
 });
 var Chunk554276 = require("./554276.js"),
   Chunk647438 = require("./647438.js");
-let o = Chunk647438.createContext(null);
+let a = Chunk647438.createContext(null);
 
-function a() {
+function o() {
   let e = (0, Chunk554276.R)();
-  return (0, Chunk647438.useContext)(o) || module
+  return (0, Chunk647438.useContext)(a) || module
 }

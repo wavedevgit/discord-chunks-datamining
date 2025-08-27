@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk106351 = require("./106351.js"),
   Chunk507274 = require("./507274.jsx"),
   Chunk541716 = require("./541716.js"),
@@ -38,11 +38,11 @@ let T = (0, Chunk131704.kt)({
     } = e;
     switch (r) {
       case y.n_.ACTIVITY:
-        let o = v.intl.formatToPlainString(v.t.WmvMCg, {
+        let a = v.intl.formatToPlainString(v.t.WmvMCg, {
             username: n
           }),
-          a = "\n> ".concat(i);
-        return null != i ? "".concat(E.jd).concat(o, "*").concat(a, "\n").concat(t) : "".concat(E.jd).concat(o, "*\n").concat(t);
+          o = "\n> ".concat(i);
+        return null != i ? "".concat(E.jd).concat(a, "*").concat(o, "\n").concat(t) : "".concat(E.jd).concat(a, "*\n").concat(t);
       case y.n_.AVATAR:
         let s = v.intl.formatToPlainString(v.t.lpaBsL, {
           username: n
@@ -75,7 +75,7 @@ function C(e) {
   let {
     user: t,
     guildId: n,
-    channelId: o,
+    channelId: a,
     sourceType: s,
     sourceDetails: f,
     setPopoutRef: _,
@@ -130,7 +130,7 @@ function C(e) {
     ref: U,
     onKeyDown: G,
     children: (0, r.jsx)("div", {
-      className: a()(I.container, Z, {
+      className: o()(I.container, Z, {
         [I.customProfileTheme]: null != D
       }),
       children: (0, r.jsx)(d.ZP, {
@@ -141,7 +141,7 @@ function C(e) {
         editorClassName: I.editor,
         type: c.Ie.USER_PROFILE_REPLY,
         placeholder: v.intl.formatToPlainString(A(s), {
-          username: p.ZP.getName(n, o, t)
+          username: p.ZP.getName(n, a, t)
         }),
         channel: T,
         textValue: x,

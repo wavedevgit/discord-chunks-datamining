@@ -7,10 +7,10 @@ function r(e, t) {
 }
 
 function i(e) {
-  return o(e, 0)
+  return a(e, 0)
 }
 
-function o(e, t) {
+function a(e, t) {
   if (t < 0) return;
   let n = 0;
   for (let r of e) {
@@ -19,12 +19,12 @@ function o(e, t) {
   }
 }
 
-function a(e, t, n) {
+function o(e, t, n) {
   if (t.parentKey === n.parentKey) return t.index - n.index;
   let r = [...s(e, t), t],
     i = [...s(e, n), n],
-    o = r.slice(0, i.length).findIndex((e, t) => e !== i[t]);
-  return false !== o ? (t = r[o], n = i[o], t.index - n.index) : r.findIndex(e => e === n) >= 0 ? 1 : (i.findIndex(e => e === t), false)
+    a = r.slice(0, i.length).findIndex((e, t) => e !== i[t]);
+  return false !== a ? (t = r[a], n = i[a], t.index - n.index) : r.findIndex(e => e === n) >= 0 ? 1 : (i.findIndex(e => e === t), false)
 }
 
 function s(e, t) {
@@ -36,6 +36,6 @@ function s(e, t) {
 }
 require.d(exports, {
   _P: () => r,
-  eg: () => a,
+  eg: () => o,
   l8: () => i
 })

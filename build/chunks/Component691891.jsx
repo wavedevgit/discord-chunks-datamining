@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk243964 = require("./243964.js");
@@ -17,11 +17,11 @@ let c = e => {
     onDismiss: n,
     "aria-label": i
   } = e;
-  return (0, r.jsx)(a.zx, {
-    look: a.zx.Looks.BLANK,
-    size: a.zx.Sizes.NONE,
+  return (0, r.jsx)(o.zx, {
+    look: o.zx.Looks.BLANK,
+    size: o.zx.Sizes.NONE,
     onClick: n,
-    className: o()(l.dismissButton, t),
+    className: a()(l.dismissButton, t),
     "aria-label": i,
     children: (0, r.jsx)(s.Dio, {
       size: "xs",

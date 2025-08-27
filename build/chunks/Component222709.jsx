@@ -17,7 +17,7 @@ let f = e => {
   let {
     channelId: t,
     messageId: n
-  } = e, f = (0, o.e7)([c.Z], () => c.Z.shouldShowBump(n), [n]), _ = i.useCallback(() => {
+  } = e, f = (0, a.e7)([c.Z], () => c.Z.shouldShowBump(n), [n]), _ = i.useCallback(() => {
     s.Z.dismissPublishBump(n), (0, l.Z)(t, n)
   }, [t, n]), p = i.useCallback(() => {
     s.Z.dismissPublishBump(n)
@@ -28,35 +28,35 @@ let f = e => {
     className: d.container,
     children: [(0, r.jsxs)("div", {
       className: d.bumpBox,
-      children: [(0, r.jsx)(a.MqZ, {
+      children: [(0, r.jsx)(o.MqZ, {
         size: "xs",
         color: "currentColor",
         className: d.icon
-      }), (0, r.jsx)(a.X6q, {
+      }), (0, r.jsx)(o.X6q, {
         variant: "heading-sm/normal",
         className: d.tagline,
         children: u.intl.string(u.t.hasZoa)
-      }), (0, r.jsx)(a.Text, {
+      }), (0, r.jsx)(o.Text, {
         color: "text-brand",
         className: d.publish,
         variant: "text-sm/normal",
-        children: (0, r.jsx)(a.P3F, {
+        children: (0, r.jsx)(o.P3F, {
           onClick: _,
           children: u.intl.string(u.t["MFGE5+"])
         })
-      }), (0, r.jsx)(a.P3F, {
+      }), (0, r.jsx)(o.P3F, {
         onClick: p,
-        children: (0, r.jsx)(a.k$p, {
+        children: (0, r.jsx)(o.k$p, {
           size: "xs",
           color: "currentColor",
           className: d.closeIcon
         })
       })]
-    }), (0, r.jsx)(a.Text, {
+    }), (0, r.jsx)(o.Text, {
       color: "text-muted",
       className: d.hidePermanently,
       variant: "text-sm/normal",
-      children: (0, r.jsx)(a.P3F, {
+      children: (0, r.jsx)(o.P3F, {
         onClick: h,
         children: u.intl.string(u.t.efSkDg)
       })

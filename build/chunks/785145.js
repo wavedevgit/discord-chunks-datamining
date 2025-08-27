@@ -18,7 +18,7 @@ let c = new Set(Object.values(Chunk526761.NB)),
         return u(module) ? module : Chunk526761.NB.USER_PROFILE
       }),
       t = Chunk647438.useCallback(t => {
-        e !== t && o.Z.setSection(s.oAB.PROFILE_CUSTOMIZATION, t)
+        e !== t && a.Z.setSection(s.oAB.PROFILE_CUSTOMIZATION, t)
       }, [module]);
     return {
       subsection: module,

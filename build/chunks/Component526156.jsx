@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk230711 = require("./230711.js"),
   Chunk528084 = require("./528084.js"),
@@ -32,11 +32,11 @@ let u = e => {
     s.Z.setSection(i, e), null == _ || _(e)
   };
   return (0, r.jsxs)("div", {
-    className: o()(c.tabbedSettingsContainer, {
+    className: a()(c.tabbedSettingsContainer, {
       [c.vertical]: "vertical" === p
     }),
-    children: [(0, r.jsx)(a.njP, {
-      className: o()(c.tabBar, {
+    children: [(0, r.jsx)(o.njP, {
+      className: a()(c.tabBar, {
         [c.vertical]: "vertical" === p
       }),
       selectedItem: E.setting,
@@ -44,8 +44,8 @@ let u = e => {
       orientation: p,
       type: "vertical" === p ? "side" : "top",
       look: "brand",
-      children: h.map(e => (0, r.jsx)(a.njP.Item, {
-        className: o()(c.tab, {
+      children: h.map(e => (0, r.jsx)(o.njP.Item, {
+        className: a()(c.tab, {
           [c.vertical]: "vertical" === p,
           [c.selected]: e.setting === E.setting
         }),
@@ -53,10 +53,10 @@ let u = e => {
         "aria-label": e.title,
         children: e.title
       }, e.setting))
-    }), (0, r.jsx)(a.njP.Panel, {
+    }), (0, r.jsx)(o.njP.Panel, {
       id: E.setting,
       "aria-labelledby": E.title,
-      className: o()(c.tabBarPanel, d, {
+      className: a()(c.tabBarPanel, d, {
         [c.vertical]: "vertical" === p
       }),
       children: b(E)

@@ -20,17 +20,17 @@ let u = {
   },
   async savePendingWidgets(e) {
     var t;
-    let n = null == (t = o.default.getCurrentUser()) ? true : t.id;
+    let n = null == (t = a.default.getCurrentUser()) ? true : t.id;
     if (null == n) return;
     i.Z.dispatch({
       type: "WIDGET_PENDING_SAVE_START"
     });
-    let a = e.map(l.vH);
+    let o = e.map(l.vH);
     try {
       let e = await r.tn.put({
         url: c.ANM.USER_PROFILE_WIDGETS,
         body: {
-          widgets: a
+          widgets: o
         },
         oldFormErrors: true,
         rejectWithError: true
@@ -56,15 +56,15 @@ let u = {
       type: "WIDGET_SUGGESTED_FETCH_START"
     });
     try {
-      var e, t, n, o, a, l;
+      var e, t, n, a, o, l;
       let u = await Chunk544891.tn.get({
         url: Chunk981631.ANM.USER_PROFILE_SUGGESTED_GAMES,
         rejectWithError: true
       });
       ((null == (e = u.body) ? true : module.suggested_games) == null || (null == (t = u.body) ? true : exports.suggested_wishlist_games) == null) && Chunk960048.Z.captureMessage("Suggested games or wishlist games not found"), Chunk570140.Z.dispatch({
         type: "WIDGET_SUGGESTED_FETCH_SUCCESS",
-        suggestedGamesIds: null != (a = null == (n = u.body) ? true : require.suggested_games) ? Chunk585483 : [],
-        suggestedWishlistGamesIds: null != (l = null == (o = u.body) ? true : Chunk594174.suggested_wishlist_games) ? Chunk86419 : []
+        suggestedGamesIds: null != (o = null == (n = u.body) ? true : require.suggested_games) ? Chunk585483 : [],
+        suggestedWishlistGamesIds: null != (l = null == (a = u.body) ? true : Chunk594174.suggested_wishlist_games) ? Chunk86419 : []
       })
     } catch (e) {
       throw Chunk570140.Z.dispatch({

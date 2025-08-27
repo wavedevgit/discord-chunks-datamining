@@ -38,8 +38,8 @@ function d(e, t) {
   if (null == e) return {};
   var n, r, i = f(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -47,8 +47,8 @@ function d(e, t) {
 function f(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let _ = e => {
@@ -61,9 +61,9 @@ let _ = e => {
   } = e, p = d(e, ["guildId", "channelId", "variant", "size", "onAction"]);
   let h = (0, i.e7)([s.Z], () => s.Z.isInChannel(n), [n]),
     m = () => {
-      null == _ || _(), a.AC(t, n)
+      null == _ || _(), o.AC(t, n)
     };
-  return (0, r.jsx)(o.zxk, u({
+  return (0, r.jsx)(a.zxk, u({
     variant: c,
     size: f,
     text: l.intl.string(l.t.ZYO5OD),

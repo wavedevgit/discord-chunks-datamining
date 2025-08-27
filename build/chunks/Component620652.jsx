@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk500923 = require("./500923.js"),
   l = require.n(Chunk500923),
   Chunk570140 = require("./570140.js"),
@@ -32,7 +32,7 @@ function g(e) {
   let {
     className: t,
     effect: n,
-    onComplete: o,
+    onComplete: a,
     emojiSize: s = 20
   } = e, d = i.useRef(null), _ = s * f.Vz, h = (_ + s) / 2, g = "translateY(".concat(h, "px)");
   return i.useEffect(() => {
@@ -49,7 +49,7 @@ function g(e) {
           autoplay: true,
           animationData: t
         })).addEventListener("complete", () => {
-          null == o || o(), e.destroy()
+          null == a || a(), e.destroy()
         }), null != n.channelId && null != n.messageId && null != n.emoji && n.key === u.I.HOVER && c.Z.dispatch({
           type: "BURST_REACTION_ANIMATION_ADD",
           channelId: n.channelId,
@@ -61,10 +61,10 @@ function g(e) {
     }(), () => {
       null != e && e.destroy()
     }
-  }, [o, n, s]), (0, r.jsx)("div", {
+  }, [a, n, s]), (0, r.jsx)("div", {
     className: p.effectsWrapper,
     children: (0, r.jsx)("div", {
-      className: a()(p.effect, t),
+      className: o()(p.effect, t),
       style: {
         transform: g,
         height: _,

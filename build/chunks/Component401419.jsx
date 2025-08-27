@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk729594 = require("./729594.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk126425 = require("./126425.js");
@@ -45,14 +45,14 @@ function m(e) {
   if (null == n || null == i) return null;
   let s = null;
   try {
-    s = a.parse(n, true)
+    s = o.parse(n, true)
   } catch (e) {
     return null
   }
   let c = h(i, s);
   return null == c ? null : (0, r.jsx)("iframe", {
     src: c.embedUrl,
-    className: o()(l.embedIFrame, e.className),
+    className: a()(l.embedIFrame, e.className),
     style: c.style,
     sandbox: "allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
   })

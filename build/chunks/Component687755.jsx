@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk388032 = require("./388032.jsx"),
   Chunk284597 = require("./284597.js");
 let l = e => {
@@ -15,10 +15,10 @@ let l = e => {
     className: t
   } = e;
   return (0, r.jsx)("div", {
-    className: o()(s.tag, t),
+    className: a()(s.tag, t),
     children: (0, r.jsx)("span", {
       className: s.text,
-      children: a.intl.string(a.t["14lP0d"])
+      children: o.intl.string(o.t["14lP0d"])
     })
   })
 }

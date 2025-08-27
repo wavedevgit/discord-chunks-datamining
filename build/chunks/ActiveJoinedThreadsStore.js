@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => eu
 }), require("./388685.js"), require("./539854.js");
 var r, Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  a = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk622822 = require("./622822.js"),
@@ -94,9 +94,9 @@ function x(e) {
           {
             isUnread: r,
             isRelevant: i,
-            isTimedRelevant: o
+            isTimedRelevant: a
           } = X(e);
-        ee(I, e, n, false), ee(C, e, i ? n : null, false), ee(T, e, r ? n : null, false), o && Q(e, true)
+        ee(I, e, n, false), ee(C, e, i ? n : null, false), ee(T, e, r ? n : null, false), a && Q(e, true)
       } else {
         ee(S, e, e, false);
         let t = f.ZP.isForumPostUnread(e.id);
@@ -141,9 +141,9 @@ function k(e, t, n) {
         {
           isUnread: t,
           isRelevant: n,
-          isTimedRelevant: o
+          isTimedRelevant: a
         } = X(r);
-      ee(I, r, e, true), ee(C, r, n ? e : null, true), ee(T, r, t ? e : null, true), ee(S, r, null, true), ee(A, r, null, true), Q(r, o)
+      ee(I, r, e, true), ee(C, r, n ? e : null, true), ee(T, r, t ? e : null, true), ee(S, r, null, true), ee(A, r, null, true), Q(r, a)
     } else {
       let e = f.ZP.isForumPostUnread(r.id);
       ee(I, r, null, true), ee(T, r, null, true), ee(C, r, null, true), ee(S, r, r, true), ee(A, r, e ? r : null, true), $(r.id)
@@ -174,10 +174,10 @@ function B(e, t) {
       if ((0, l.aC)(r[e].channel)) returntrue
   }
   let i = S[e],
-    o = null == i ? null : i[t];
-  if (null != o) {
-    for (let e in o)
-      if ((0, l.aC)(o[e])) returntrue
+    a = null == i ? null : i[t];
+  if (null != a) {
+    for (let e in a)
+      if ((0, l.aC)(a[e])) returntrue
   }
   returnfalse
 }
@@ -211,12 +211,12 @@ function V(e) {
       let {
         isUnread: n,
         isRelevant: i,
-        isTimedRelevant: o
+        isTimedRelevant: a
       } = X(t);
-      Q(t, o);
-      let a = en(T, t),
+      Q(t, a);
+      let o = en(T, t),
         s = en(C, t);
-      if (n === a && i === s) returnfalse;
+      if (n === o && i === s) returnfalse;
       let l = I[e][r][t.id],
         c = n ? l : null,
         u = i ? l : null;
@@ -237,10 +237,10 @@ function H() {
         let r = I[module][exports][require],
           {
             isUnread: i,
-            isRelevant: o,
-            isTimedRelevant: a
+            isRelevant: a,
+            isTimedRelevant: o
           } = X(r.channel);
-        Chunk392711 && ee(T, r.channel, r, false), o && ee(C, r.channel, r, false), Q(r.channel, Chunk442837)
+        Chunk392711 && ee(T, r.channel, r, false), a && ee(C, r.channel, r, false), Q(r.channel, Chunk442837)
       }
   for (let e in A = {}, S)
     for (let t in S[module])
@@ -284,11 +284,11 @@ function X(e) {
     n = f.ZP.hasUnread(e.id) && !m.Z.isMuted(e.id),
     r = e.hasFlag(E.zZ.PINNED),
     i = e.isActiveThread(),
-    o = i && (0, g.Z)(e) > Date.now();
+    a = i && (0, g.Z)(e) > Date.now();
   return {
     isUnread: (i || r) && n || t,
-    isRelevant: o || r || n || t,
-    isTimedRelevant: o
+    isRelevant: a || r || n || t,
+    isTimedRelevant: a
   }
 }
 
@@ -313,18 +313,18 @@ function $(e) {
 function ee(e, t, n, r) {
   let {
     guild_id: i,
-    parent_id: a,
+    parent_id: o,
     id: s
   } = t;
-  null != i && null != a && null != s && (i in e || (e[i] = {}), a in e[i] || (e[i][a] = {}), r && (e[i] = v(y({}, e[i]), {
-    [a]: y({}, e[i][a])
-  })), null === n ? (delete e[i][a][s], o().isEmpty(e[i][a]) && delete e[i][a]) : e[i][a][s] = n)
+  null != i && null != o && null != s && (i in e || (e[i] = {}), o in e[i] || (e[i][o] = {}), r && (e[i] = v(y({}, e[i]), {
+    [o]: y({}, e[i][o])
+  })), null === n ? (delete e[i][o][s], a().isEmpty(e[i][o]) && delete e[i][o]) : e[i][o][s] = n)
 }
 
 function et(e, t, n, r) {
   null != t && null != n && null != r && er(e, t, n, r) && (e[t] = v(y({}, e[t]), {
     [n]: y({}, e[t][n])
-  }), delete e[t][n][r], o().isEmpty(e[t][n]) && delete e[t][n])
+  }), delete e[t][n][r], a().isEmpty(e[t][n]) && delete e[t][n])
 }
 
 function en(e, t) {
@@ -335,8 +335,8 @@ function er(e, t, n, r) {
   return t in e && n in e[t] && r in e[t][n]
 }
 let ei = {},
-  eo = {},
   ea = {},
+  eo = {},
   es = {},
   el = {};
 class ec extends(r = Chunk442837.ZP.Store) {
@@ -352,7 +352,7 @@ class ec extends(r = Chunk442837.ZP.Store) {
   }
   getActiveJoinedThreadsForParent(e, t) {
     var n;
-    return e in I && null != (n = I[e][t]) ? n : ea
+    return e in I && null != (n = I[e][t]) ? n : eo
   }
   getAllActiveJoinedThreads() {
     return I
@@ -367,7 +367,7 @@ class ec extends(r = Chunk442837.ZP.Store) {
   }
   getActiveJoinedUnreadThreadsForParent(e, t) {
     var n;
-    return null != (n = this.getActiveJoinedUnreadThreadsForGuild(e)[t]) ? n : ea
+    return null != (n = this.getActiveJoinedUnreadThreadsForGuild(e)[t]) ? n : eo
   }
   getActiveJoinedRelevantThreadsForGuild(e) {
     var t;
@@ -375,11 +375,11 @@ class ec extends(r = Chunk442837.ZP.Store) {
   }
   getActiveJoinedRelevantThreadsForParent(e, t) {
     var n;
-    return null != (n = this.getActiveJoinedRelevantThreadsForGuild(e)[t]) ? n : ea
+    return null != (n = this.getActiveJoinedRelevantThreadsForGuild(e)[t]) ? n : eo
   }
   getActiveUnjoinedThreadsForGuild(e) {
     var t;
-    return null != (t = S[e]) ? t : eo
+    return null != (t = S[e]) ? t : ea
   }
   getActiveUnjoinedUnreadThreadsForGuild(e) {
     var t;
@@ -387,7 +387,7 @@ class ec extends(r = Chunk442837.ZP.Store) {
   }
   getActiveUnjoinedUnreadThreadsForParent(e, t) {
     var n;
-    return null != (n = this.getActiveUnjoinedUnreadThreadsForGuild(e)[t]) ? n : ea
+    return null != (n = this.getActiveUnjoinedUnreadThreadsForGuild(e)[t]) ? n : eo
   }
   getNewThreadCountsForGuild(e) {
     var t;
@@ -406,8 +406,8 @@ class ec extends(r = Chunk442837.ZP.Store) {
     return null != (r = null == (n = N[e]) ? true : n[t]) ? r : 0
   }
   getActiveThreadCount(e, t) {
-    var n, r, i, a;
-    return o().size(null != (i = null == (n = I[e]) ? true : n[t]) ? i : {}) + o().size(null != (a = null == (r = S[e]) ? true : r[t]) ? a : {})
+    var n, r, i, o;
+    return a().size(null != (i = null == (n = I[e]) ? true : n[t]) ? i : {}) + a().size(null != (o = null == (r = S[e]) ? true : r[t]) ? o : {})
   }
 }
 b(ec, "displayName", "ActiveJoinedThreadsStore");

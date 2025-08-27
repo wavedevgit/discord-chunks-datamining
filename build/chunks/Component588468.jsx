@@ -81,8 +81,8 @@ function G(e, t) {
   if (null == e) return {};
   var n, r, i = B(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -90,8 +90,8 @@ function G(e, t) {
 function B(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -116,13 +116,13 @@ class H extends Chunk647438.PureComponent {
       layoutClass: n,
       props: {
         className: r,
-        index: o,
-        selected: a
+        index: a,
+        selected: o
       }
     } = this, l = this.isSelectable();
     return (0, i.jsx)(f.P3F, U(M({}, e), {
       className: s()(L.clickable, r, n),
-      id: null != (t = Z(o)) ? t : true,
+      id: null != (t = Z(a)) ? t : true,
       onClick: l ? this.handleClick : true,
       onMouseMove: l ? () => {
         this.setState({
@@ -134,7 +134,7 @@ class H extends Chunk647438.PureComponent {
       }) : true,
       role: "option",
       "aria-disabled": !l,
-      "aria-selected": l && a,
+      "aria-selected": l && o,
       children: (0, i.jsx)("div", {
         className: L.base,
         children: this.renderContent()
@@ -191,7 +191,7 @@ class Y extends H {
 }
 
 function W(e) {
-  let t = o.useMemo(() => c().random(60, 120), []);
+  let t = a.useMemo(() => c().random(60, 120), []);
   return (0, i.jsx)("div", {
     className: L.base,
     "aria-busy": true,
@@ -215,11 +215,11 @@ function K(e) {
     title: t,
     className: n,
     children: r
-  } = e, a = o.useContext(V);
+  } = e, o = a.useContext(V);
   return (0, i.jsx)("div", {
     className: L.base,
     children: (0, i.jsxs)(f.X6q, {
-      id: F(a.id),
+      id: F(o.id),
       className: s()(L.contentTitle, n),
       variant: "heading-deprecated-12/semibold",
       children: [t, r]
@@ -246,8 +246,8 @@ class q extends H {
       user: t,
       nick: n,
       status: r,
-      hidePersonalInformation: o,
-      guildId: a
+      hidePersonalInformation: a,
+      guildId: o
     } = this.props, s = null == Chunk120356 ? Chunk699516.Z.getNickname(exports.id) : null;
     return (0, Chunk951288.jsxs)(Chunk965386.RX, {
       children: [(0, Chunk951288.jsx)(Chunk965386.Tw, {
@@ -281,8 +281,8 @@ class X extends H {
       guildId: n
     } = this.props, {
       colorString: r,
-      colorStrings: o
-    } = module, a = "dot" === Chunk607070.Z.roleStyle, l = "username" === Chunk607070.Z.roleStyle && (null != r || null != Chunk647438), c = (0, Chunk884902.AQ)(require, module, Chunk647438), u = null != c && Chunk392711, {
+      colorStrings: a
+    } = module, o = "dot" === Chunk607070.Z.roleStyle, l = "username" === Chunk607070.Z.roleStyle && (null != r || null != Chunk647438), c = (0, Chunk884902.AQ)(require, module, Chunk647438), u = null != c && Chunk392711, {
       gradientStyle: d,
       gradientClassname: p
     } = (0, Chunk481060.JUn)({
@@ -370,9 +370,9 @@ class $ extends H {
       channel: t,
       showImage: n,
       section: r,
-      selected: o
+      selected: a
     } = this.props, {
-      hovered: a
+      hovered: o
     } = this.state, s = this.isSelectable();
     return module.inputType === Chunk895924.iw.PLACEHOLDER ? (0, Chunk951288.jsx)(Chunk342687.Z, {}) : (0, Chunk951288.jsx)(Chunk237375.Z, {
       command: module,
@@ -390,7 +390,7 @@ class ee extends H {
       emoji: e,
       sentinel: t,
       guild: n
-    } = this.props, r = Chunk695346.Yk.getSetting(), o = null != module.id || "" !== module.url ? (0, Chunk951288.jsx)("img", {
+    } = this.props, r = Chunk695346.Yk.getSetting(), a = null != module.id || "" !== module.url ? (0, Chunk951288.jsx)("img", {
       alt: "",
       className: Chunk512746.emojiImage,
       src: null != module.id ? Chunk768581.ZP.getEmojiURL({
@@ -401,7 +401,7 @@ class ee extends H {
     }) : (0, Chunk951288.jsx)("span", {
       className: Chunk512746.emojiRaw,
       children: module.surrogates
-    }), a = null != require ? (0, Chunk951288.jsx)(Chunk965386.dY, {
+    }), o = null != require ? (0, Chunk951288.jsx)(Chunk965386.dY, {
       children: require.name
     }) : null;
     return (0, Chunk951288.jsxs)(Chunk965386.RX, {
@@ -423,8 +423,8 @@ class et extends H {
     var e, t;
     let n, {
         queryMatch: r,
-        renderSticker: o,
-        selected: a,
+        renderSticker: a,
+        selected: o,
         sticker: s
       } = this.props,
       {
@@ -480,7 +480,7 @@ class ei extends H {
     return (0, Chunk951288.jsx)(Chunk887120.Z, M({}, this.props))
   }
 }
-class eo extends H {
+class ea extends H {
   renderContent() {
     let {
       game: e
@@ -504,14 +504,14 @@ class eo extends H {
     })
   }
 }
-class ea extends(r = Chunk647438.PureComponent) {
+class eo extends(r = Chunk647438.PureComponent) {
   render() {
     let e = this.props,
       {
         children: t,
         className: n,
         innerClassName: r,
-        id: a
+        id: o
       } = module,
       l = G(module, ["children", "className", "innerClassName", "id"]);
     return Chunk647438.Children.count(exports) > 0 ? (0, Chunk951288.jsx)(V.Provider, {
@@ -529,5 +529,5 @@ class ea extends(r = Chunk647438.PureComponent) {
     }) : null
   }
 }
-j(ea, "Generic", Y), j(ea, "Loading", W), j(ea, "Title", K), j(ea, "Divider", z), j(ea, "User", q), j(ea, "Role", X), j(ea, "Channel", Q), j(ea, "Command", J), j(ea, "NewCommand", $), j(ea, "Emoji", ee), j(ea, "GIFIntegration", en), j(ea, "Sticker", et), j(ea, "EmojiUpsell", er), j(ea, "Soundmoji", ei), j(ea, "Game", eo);
-let es = ea
+j(eo, "Generic", Y), j(eo, "Loading", W), j(eo, "Title", K), j(eo, "Divider", z), j(eo, "User", q), j(eo, "Role", X), j(eo, "Channel", Q), j(eo, "Command", J), j(eo, "NewCommand", $), j(eo, "Emoji", ee), j(eo, "GIFIntegration", en), j(eo, "Sticker", et), j(eo, "EmojiUpsell", er), j(eo, "Soundmoji", ei), j(eo, "Game", ea);
+let es = eo

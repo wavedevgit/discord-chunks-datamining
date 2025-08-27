@@ -60,13 +60,13 @@ function E(e) {
     messageId: n,
     channelId: r,
     attachments: i
-  } = e, o = {
+  } = e, a = {
     messageId: n,
     channelId: r,
     attachments: i,
     reportSubmit: false
-  }, a = null != (t = g[r]) ? t : h;
-  g[r] = [...a, o], m[n] = o
+  }, o = null != (t = g[r]) ? t : h;
+  g[r] = [...o, a], m[n] = a
 }
 
 function b(e) {

@@ -14,8 +14,8 @@ let c = e => {
   let {
     showSubtext: t = false
   } = e;
-  return (0, r.jsxs)(o.Z, {
-    assetComponent: (0, r.jsx)(a.Z, {
+  return (0, r.jsxs)(a.Z, {
+    assetComponent: (0, r.jsx)(o.Z, {
       className: l.orbBadgeAsset
     }),
     tooltipWordmarkComponent: (0, r.jsx)(i.X6, {

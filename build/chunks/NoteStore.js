@@ -8,7 +8,7 @@ var Chunk311929 = require("./311929.js"),
   Chunk894276 = require("./894276.js"),
   Chunk516888 = require("./516888.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -22,7 +22,7 @@ class l extends Chunk516888.f {
     return this.get(e)
   }
 }
-a(l, "displayName", "NoteStore");
+o(l, "displayName", "NoteStore");
 let c = new l({
   CONNECTION_OPEN: (e, t) => t.reset(),
   OVERLAY_INITIALIZE: (e, t) => t.reset(),

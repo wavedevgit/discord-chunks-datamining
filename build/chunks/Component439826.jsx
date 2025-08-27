@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk202841 = require("./202841.js"),
   Chunk780384 = require("./780384.js"),
   Chunk481060 = require("./481060.js"),
@@ -78,29 +78,29 @@ function k(e) {
   var t;
   let {
     quest: n,
-    errorHints: o,
-    warningHints: a,
+    errorHints: a,
+    warningHints: o,
     isDarkTheme: l,
     sourceQuestContent: d
   } = e, {
     ref: _,
     height: p = 0
-  } = (0, u.ZP)([o]), h = (null == (t = n.userStatus) ? true : t.completedAt) != null, g = (0, m.z)(n), {
+  } = (0, u.ZP)([a]), h = (null == (t = n.userStatus) ? true : t.completedAt) != null, g = (0, m.z)(n), {
     type: E,
     hints: b
   } = i.useMemo(() => h || g ? {
     type: 2,
     hints: []
-  } : o.length > 0 ? {
-    type: 0,
-    hints: o.map(e => e.message)
   } : a.length > 0 ? {
+    type: 0,
+    hints: a.map(e => e.message)
+  } : o.length > 0 ? {
     type: 1,
-    hints: a
+    hints: o
   } : {
     type: 2,
     hints: []
-  }, [o, h, g, a]), y = 2 !== E, O = (0, c.q_F)({
+  }, [a, h, g, o]), y = 2 !== E, O = (0, c.q_F)({
     opacity: +!!y,
     height: y ? p : 0,
     config: R.Y
@@ -124,7 +124,7 @@ function k(e) {
         text: w.intl.string(w.t["yKJi+/"]),
         onClick: () => (0, v.y)({
           quest: n,
-          errorHints: o,
+          errorHints: a,
           sourceQuestContent: d
         }),
         variant: "always-white",
@@ -138,15 +138,15 @@ function U(e) {
   let {
     quest: t,
     isHovering: n,
-    showAssets: o
-  } = e, a = i.useMemo(() => (0, y.fh)(t, y.eC.HERO_IMAGE), [t]), s = i.useMemo(() => (0, y.fh)(t, y.eC.HERO_VIDEO), [t]), l = (0, E.h)(t, N.dr.QUEST_HOME_DESKTOP), {
+    showAssets: a
+  } = e, o = i.useMemo(() => (0, y.fh)(t, y.eC.HERO_IMAGE), [t]), s = i.useMemo(() => (0, y.fh)(t, y.eC.HERO_VIDEO), [t]), l = (0, E.h)(t, N.dr.QUEST_HOME_DESKTOP), {
     onAssetLoadComplete: c
   } = i.useContext(A.k), u = !l && n;
   return (0, r.jsx)("div", {
     className: D.heroAssetCont,
-    children: o && (0, r.jsx)(O.K, {
-      imageAsset: null != a ? {
-        asset: a,
+    children: a && (0, r.jsx)(O.K, {
+      imageAsset: null != o ? {
+        asset: o,
         assetId: "QuestTileBanner",
         alt: w.intl.string(w.t.jnijW1),
         className: D.heroAsset
@@ -167,7 +167,7 @@ function U(e) {
 }
 
 function G(e) {
-  var t, n, o, s, u;
+  var t, n, a, s, u;
   let {
     quest: f,
     isHovering: E,
@@ -181,7 +181,7 @@ function G(e) {
   } = e, B = (0, p.PB)(f), Z = (0, d.ZP)(), F = ((0, l.wj)(Z) ? P.BRd.DARK : P.BRd.LIGHT) === P.BRd.DARK, V = (0, m.tP)(f), H = (null == (t = f.userStatus) ? true : t.claimedAt) != null, Y = (0, m.B6)(f.config.expiresAt, {
     month: "numeric",
     day: "numeric"
-  }), W = (null == (n = f.userStatus) ? true : n.enrolledAt) != null, K = (null == (o = f.userStatus) ? true : o.completedAt) != null, {
+  }), W = (null == (n = f.userStatus) ? true : n.enrolledAt) != null, K = (null == (a = f.userStatus) ? true : a.completedAt) != null, {
     onAssetLoadComplete: z
   } = i.useContext(A.k), q = i.useCallback(async () => {
     B && ((0, p.zi)(f) || W ? (0, T.openVideoQuestModal)({
@@ -215,7 +215,7 @@ function G(e) {
         showAssets: v
       })
     }), (0, r.jsx)("div", {
-      className: a()(D.overlay, {
+      className: o()(D.overlay, {
         [D.darkThemeGradient]: F,
         [D.lightThemeGradient]: !F
       })

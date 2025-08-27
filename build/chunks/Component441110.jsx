@@ -23,7 +23,7 @@ let h = function(e) {
     message: n,
     onClose: h
   } = e, m = c.Z.getChannel(u.Z.getChannelId(t.id));
-  if ((0, o.ZP)(() => {
+  if ((0, a.ZP)(() => {
       d.default.track(f.rMx.OPEN_POPOUT, {
         type: "New Member Badge Popout",
         guild_id: t.id,
@@ -31,7 +31,7 @@ let h = function(e) {
       })
     }), null == m) return null;
   let g = () => {
-    a.ZP.trackWithMetadata(f.rMx.NEW_MEMBER_MENTION_CTA_CLICKED, {
+    o.ZP.trackWithMetadata(f.rMx.NEW_MEMBER_MENTION_CTA_CLICKED, {
       target_user_id: n.author.id
     }), h(), (0, l.q)(n.author, m.id)
   };

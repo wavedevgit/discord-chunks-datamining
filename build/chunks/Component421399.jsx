@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk873546 = require("./873546.js"),
   Chunk442837 = require("./442837.js"),
   Chunk573385 = require("./573385.js"),
@@ -79,8 +79,8 @@ function k(e, t) {
   if (null == e) return {};
   var n, r, i = U(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -88,8 +88,8 @@ function k(e, t) {
 function U(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 var G = function(e) {
@@ -111,7 +111,7 @@ function Z(e) {
   var t;
   let {
     author: n,
-    message: o,
+    message: a,
     channel: h,
     userOverride: x,
     compact: j = false,
@@ -133,33 +133,33 @@ function Z(e) {
   } = (0, p.ZP)(_.Z.USERNAME), en = U ? "@" : "", {
     nick: er,
     colorString: ei,
-    colorStrings: eo,
-    colorRoleName: ea,
+    colorStrings: ea,
+    colorRoleName: eo,
     displayNameStyles: es
   } = n, el = (0, l.e7)([f.Z], () => f.Z.roleStyle), ec = "username" === el, eu = "dot" === el, ed = (0, I.X$)(), ef = (0, E.j)({
     displayNameStyles: es
-  }), e_ = (0, l.e7)([S.Z], () => null == n.guildId || null == n.colorRoleId ? null : S.Z.getRole(n.guildId, n.colorRoleId)), ep = (0, v.yH)(null != X ? X : ee, e_), eh = (0, R.Z)(o), em = i.useContext(c.d), eg = (null == em ? true : em.animate) || G, eE = ep && (0, O.S2)(n), eb = ec && eE, ey = (null == h ? true : h.isPrivate()) && null != es;
+  }), e_ = (0, l.e7)([S.Z], () => null == n.guildId || null == n.colorRoleId ? null : S.Z.getRole(n.guildId, n.colorRoleId)), ep = (0, v.yH)(null != X ? X : ee, e_), eh = (0, R.Z)(a), em = i.useContext(c.d), eg = (null == em ? true : em.animate) || G, eE = ep && (0, O.S2)(n), eb = ec && eE, ey = (null == h ? true : h.isPrivate()) && null != es;
   i.useEffect(() => {
     if (null == Q || !eb && !ey || null == em) return;
     let {
       setAnimate: e
     } = em;
-    return C.S.subscribeKeyed(P.LPv.ANIMATE_CHAT_AVATAR, "".concat(Q, ":").concat(o.author.id), e), () => void C.S.unsubscribeKeyed(P.LPv.ANIMATE_CHAT_AVATAR, "".concat(Q, ":").concat(o.author.id), e)
-  }, [o.author.id, Q, eb, ey, em]);
+    return C.S.subscribeKeyed(P.LPv.ANIMATE_CHAT_AVATAR, "".concat(Q, ":").concat(a.author.id), e), () => void C.S.unsubscribeKeyed(P.LPv.ANIMATE_CHAT_AVATAR, "".concat(Q, ":").concat(a.author.id), e)
+  }, [a.author.id, Q, eb, ey, em]);
   let {
     gradientStyle: eO,
     gradientClassname: ev
   } = (0, d.Icv)({
-    colorStrings: eo,
+    colorStrings: ea,
     roleStyle: "username",
     includeConvenienceGlow: true,
     animateGradient: eg
   }), eI = () => {
     if (ec) {
-      if (eb && null != eo) {
+      if (eb && null != ea) {
         var e;
         return M(L({}, eO), {
-          textDecorationColor: null != (e = null == eo ? true : eo.primaryColor) ? e : true
+          textDecorationColor: null != (e = null == ea ? true : ea.primaryColor) ? e : true
         })
       }
       return null != ei ? {
@@ -167,7 +167,7 @@ function Z(e) {
       } : true
     }
   }, eT = (0, u.EJ)(en + er), eS = {
-    className: a()([D.username, eb && ev, ef]),
+    className: o()([D.username, eb && ev, ef]),
     style: eI(),
     onClick: H,
     onContextMenu: Y,
@@ -181,11 +181,11 @@ function Z(e) {
     "data-text": en + er
   }, eA = i.useMemo(() => j && !Z ? (0, r.jsx)(y.ZP, {
     primaryGuild: n.primaryGuild,
-    userId: o.author.id,
+    userId: a.author.id,
     contextGuildId: ee,
     className: D.clanTagChiplet,
     badgeSize: w.Gg.SIZE_12
-  }) : null, [j, n.primaryGuild, ee, o.author.id, Z]), eC = null != x ? x : o.author, eN = null != K && null != G ? (0, r.jsx)(T.Z, {
+  }) : null, [j, n.primaryGuild, ee, a.author.id, Z]), eC = null != x ? x : a.author, eN = null != K && null != G ? (0, r.jsx)(T.Z, {
     targetElementRef: J,
     user: eC,
     renderPopout: K,
@@ -209,13 +209,13 @@ function Z(e) {
           tag: "span",
           innerRef: J
         }, n, eS), {
-          className: a()(eS.className, D.clickable, V)
+          className: o()(eS.className, D.clickable, V)
         })), eA]
       })
     }
   }) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(d.P3F, M(L({}, eS), {
-      className: a()(eS.className, V)
+      className: o()(eS.className, V)
     })), eA]
   }), eR = null != q ? q[0] : null, eP = null != q ? q[1] : null;
   return (0, r.jsxs)(p.Gt, {
@@ -224,15 +224,15 @@ function Z(e) {
       children: [" ", eR, " "]
     }) : null, eu ? (0, r.jsx)(d.FhE, {
       color: ei,
-      colors: eE ? eo : null,
-      name: ea,
+      colors: eE ? ea : null,
+      name: eo,
       className: D.roleDot,
       hoverOverride: eg
     }) : null, eN, !j && !Z && (0, r.jsx)(y.ZP, {
       primaryGuild: n.primaryGuild,
-      userId: o.author.id,
+      userId: a.author.id,
       contextGuildId: ee,
       className: D.clanTagChiplet
-    }), null != eP ? eP : null, null == eR || F || j ? null : eR, null != o && (0, N.f)(o) && ed && z ? (0, r.jsx)(B, {}) : null]
+    }), null != eP ? eP : null, null == eR || F || j ? null : eR, null != a && (0, N.f)(a) && ed && z ? (0, r.jsx)(B, {}) : null]
   })
 }

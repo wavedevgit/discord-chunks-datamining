@@ -8,7 +8,7 @@ var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk239091 = require("./239091.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -17,14 +17,14 @@ function o(e, t, n) {
   }) : e[t] = n, e
 }
 
-function a(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      a(e, t, n[t])
     })
   }
   return e
@@ -47,15 +47,15 @@ function l(e, t) {
   }), e
 }
 
-function c(e, t, o, s, c) {
-  let u = o.getGuildId();
+function c(e, t, a, s, c) {
+  let u = a.getGuildId();
   return null != u ? (0, i.jW)(e, async () => {
     let {
       default: e
     } = await Promise.all([n.e("8982"), n.e("80125"), n.e("57937")]).then(n.bind(n, 357823));
-    return n => (0, r.jsx)(e, l(a({}, n), {
+    return n => (0, r.jsx)(e, l(o({}, n), {
       user: t,
-      channel: o,
+      channel: a,
       guildId: u,
       onInteraction: e => c("GuildVoiceUserContextMenu", e)
     }))
@@ -63,9 +63,9 @@ function c(e, t, o, s, c) {
     let {
       default: e
     } = await Promise.all([n.e("80125"), n.e("24509")]).then(n.bind(n, 238296));
-    return n => (0, r.jsx)(e, l(a({}, n), {
+    return n => (0, r.jsx)(e, l(o({}, n), {
       user: t,
-      channel: o,
+      channel: a,
       onInteraction: e => c("BaseVoiceUserContextMenu", e)
     }))
   }, s)

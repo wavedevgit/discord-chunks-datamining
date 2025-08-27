@@ -67,7 +67,7 @@ function et(e, t, n, R, P, w) {
       Z = B == x || B == L;
     if (b(e)) return l(e, j);
     if (B == k || B == N || Z && !P) {
-      if (D = M || Z ? {} : g(e), !j) return M ? d(e, s(D, e)) : u(e, a(D, e))
+      if (D = M || Z ? {} : g(e), !j) return M ? d(e, s(D, e)) : u(e, o(D, e))
     } else {
       if (!ee[B]) return P ? e : {};
       D = m(e, B, j)
@@ -84,7 +84,7 @@ function et(e, t, n, R, P, w) {
   var V = U ? M ? _ : f : M ? T : I,
     H = G ? true : V(e);
   return i(H || e, function(r, i) {
-    H && (r = e[i = r]), o(D, i, et(r, t, n, i, e, w))
+    H && (r = e[i = r]), a(D, i, et(r, t, n, i, e, w))
   }), D
 }
 ee[N] = ee[R] = ee[V] = ee[H] = ee[P] = ee[w] = ee[Y] = ee[W] = ee[K] = ee[z] = ee[q] = ee[j] = ee[M] = ee[k] = ee[U] = ee[G] = ee[B] = ee[Z] = ee[X] = ee[Q] = ee[J] = ee[$] = true, ee[D] = ee[x] = ee[F] = false, module.exports = et

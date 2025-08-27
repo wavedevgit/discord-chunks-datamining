@@ -106,11 +106,11 @@ function z(e) {
     } = e;
   for (let r = 0; r < e.buffered.length; r++) {
     let i = e.buffered.start(r),
-      o = e.buffered.end(r);
-    if (o - i < 1) continue;
-    let a = (o - i) / n,
+      a = e.buffered.end(r);
+    if (a - i < 1) continue;
+    let o = (a - i) / n,
       s = i / n;
-    t.push([s, a])
+    t.push([s, o])
   }
   return t
 }
@@ -119,15 +119,15 @@ let q = e => {
     current: t,
     duration: n
   } = e, r = null != t ? K(t) : V, i = null != n ? K(n) : V;
-  return r = r.padStart(i.length, "0"), (0, o.jsxs)("div", {
+  return r = r.padStart(i.length, "0"), (0, a.jsxs)("div", {
     className: j.durationTimeWrapper,
-    children: [(0, o.jsx)("span", {
+    children: [(0, a.jsx)("span", {
       className: j.durationTimeDisplay,
       children: r
-    }), (0, o.jsx)("span", {
+    }), (0, a.jsx)("span", {
       className: j.durationTimeSeparator,
       children: "/"
-    }), (0, o.jsx)("span", {
+    }), (0, a.jsx)("span", {
       className: j.durationTimeDisplay,
       children: i
     })]
@@ -138,12 +138,12 @@ class X extends(r = Chunk647438.Component) {
     this.state.translateY.setValue(+!!this.props.autoPlay)
   }
   componentDidUpdate(e) {
-    var t, n, r, i, o;
+    var t, n, r, i, a;
     let {
-      hide: a,
+      hide: o,
       playing: s
     } = this.props;
-    a && !e.hide ? (this.animateControls(1, s), null == (t = this.volumeButton) || t.blur(), null == (n = (r = this.props).onControlsHide) || n.call(r)) : !a && e.hide && (this.animateControls(0, s), null == (i = (o = this.props).onControlsShow) || i.call(o))
+    o && !e.hide ? (this.animateControls(1, s), null == (t = this.volumeButton) || t.blur(), null == (n = (r = this.props).onControlsHide) || n.call(r)) : !o && e.hide && (this.animateControls(0, s), null == (i = (a = this.props).onControlsShow) || i.call(a))
   }
   updateProgress(e) {
     let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
@@ -180,7 +180,7 @@ class X extends(r = Chunk647438.Component) {
       duration: n,
       onPause: r,
       onPlay: i,
-      disabled: a
+      disabled: o
     } = this.props;
     return module ? (0, Chunk951288.jsx)(Chunk481060.P3F, {
       className: Chunk55343.videoButton,
@@ -219,7 +219,7 @@ class X extends(r = Chunk647438.Component) {
       currentTime: n,
       duration: r,
       muted: i,
-      onDrag: a,
+      onDrag: o,
       onDragEnd: s,
       onDragStart: l,
       onToggleMuted: c,
@@ -254,7 +254,7 @@ class X extends(r = Chunk647438.Component) {
           minValue: 0,
           maxValue: 1,
           currentWindow: window,
-          onValueChange: e => a(e, C.Z.Types.VOLUME),
+          onValueChange: e => o(e, C.Z.Types.VOLUME),
           onToggleMute: Chunk392711,
           onVolumeShow: u,
           onVolumeHide: Chunk374470,
@@ -282,28 +282,28 @@ function Q(e) {
     fileSize: n,
     src: r,
     disabled: i,
-    mimeType: a,
+    mimeType: o,
     hideDownloadButton: s
   } = e;
-  return (0, o.jsxs)("div", {
+  return (0, a.jsxs)("div", {
     className: j.audioMetadata,
-    children: [(0, o.jsxs)("div", {
+    children: [(0, a.jsxs)("div", {
       className: j.metadataContent,
-      children: [i ? t : (0, o.jsx)(m.Z, {
+      children: [i ? t : (0, a.jsx)(m.Z, {
         href: r,
         className: j.metadataDownload,
         iconClassName: j.metadataIcon,
-        mimeType: a,
+        mimeType: o,
         fileName: t
-      }), (0, o.jsx)("div", {
+      }), (0, a.jsx)("div", {
         className: j.metadataSize,
         children: n
       })]
-    }), !s && (0, o.jsx)(m.Z, {
+    }), !s && (0, a.jsx)(m.Z, {
       href: r,
       className: j.metadataDownload,
       iconClassName: j.metadataIcon,
-      mimeType: a
+      mimeType: o
     })]
   })
 }
@@ -568,8 +568,8 @@ class et extends(i = Chunk647438.PureComponent) {
         onMute: i
       },
       state: {
-        playing: o,
-        fullscreen: a,
+        playing: a,
+        fullscreen: o,
         muted: s,
         dragging: l,
         volume: c
@@ -580,9 +580,9 @@ class et extends(i = Chunk647438.PureComponent) {
       current: d
     } = this.playPausePopRef;
     if (null == u) return;
-    o && !t.playing ? (this.play(), this.handleMouseMove(), this.handleUIUpdate(), t.hasClickedPlay && (null == d || d.pop(o))) : !o && t.playing && (u.pause(), null == d || d.pop(o), null == n || n()), o && null == this._analytics.metadata.hasValidFrame && this.checkVideoDecodability();
+    a && !t.playing ? (this.play(), this.handleMouseMove(), this.handleUIUpdate(), t.hasClickedPlay && (null == d || d.pop(a))) : !a && t.playing && (u.pause(), null == d || d.pop(a), null == n || n()), a && null == this._analytics.metadata.hasValidFrame && this.checkVideoDecodability();
     let f = (0, S.fn)(u.parentNode, u);
-    a && !t.fullscreen && null != f ? ((0, S.Dj)(f), f.addEventListener(S.NO, this.handleFullScreenExit)) : !a && t.fullscreen && null != f && (f.removeEventListener(S.NO, this.handleFullScreenExit), (0, S.Pr)(f, f.ownerDocument)), l === C.Z.Types.DURATION && t.dragging !== C.Z.Types.DURATION && o ? u.pause() : l !== C.Z.Types.DURATION && t.dragging === C.Z.Types.DURATION && o && u.play(), s !== t.muted && (u.muted = s, null == i || i(s)), c !== t.volume && (u.volume = c, null == r || r(c))
+    o && !t.fullscreen && null != f ? ((0, S.Dj)(f), f.addEventListener(S.NO, this.handleFullScreenExit)) : !o && t.fullscreen && null != f && (f.removeEventListener(S.NO, this.handleFullScreenExit), (0, S.Pr)(f, f.ownerDocument)), l === C.Z.Types.DURATION && t.dragging !== C.Z.Types.DURATION && a ? u.pause() : l !== C.Z.Types.DURATION && t.dragging === C.Z.Types.DURATION && a && u.play(), s !== t.muted && (u.muted = s, null == i || i(s)), c !== t.volume && (u.volume = c, null == r || r(c))
   }
   componentWillUnmount() {
     this._unmounted = true;
@@ -604,7 +604,7 @@ class et extends(i = Chunk647438.PureComponent) {
         current: i
       } = this.mediaRef;
     if (null != i) {
-      let o = {};
+      let a = {};
       if ("function" == typeof require) {
         let e = require();
         module !== this.state.volume && (i.volume = module, Chunk951288.volume = module)
@@ -660,7 +660,7 @@ class et extends(i = Chunk647438.PureComponent) {
       responsive: r,
       mediaLayoutType: i
     } = this.props, {
-      playing: a,
+      playing: o,
       fullscreen: s
     } = this.state, l = this.getWidth(), c = this.getHeight();
     return require ? (0, Chunk951288.jsx)(Chunk70097.Z, {
@@ -723,7 +723,7 @@ class et extends(i = Chunk647438.PureComponent) {
         autoPlay: n,
         playable: r = true,
         onVolumeShow: i,
-        onVolumeHide: a,
+        onVolumeHide: o,
         onControlsHide: s,
         onControlsShow: l
       },
@@ -784,7 +784,7 @@ class et extends(i = Chunk647438.PureComponent) {
       src: n,
       type: r,
       playable: i,
-      mimeType: a
+      mimeType: o
     } = this.props;
     return null == module || null == exports ? null : r === Y.AUDIO ? (0, Chunk951288.jsx)(Q, {
       fileName: module,
@@ -823,7 +823,7 @@ class et extends(i = Chunk647438.PureComponent) {
       src: n,
       forceExternal: r,
       className: i,
-      renderLinkComponent: a,
+      renderLinkComponent: o,
       responsive: s,
       mediaLayoutType: c,
       renderOverlayContent: u
@@ -867,7 +867,7 @@ class et extends(i = Chunk647438.PureComponent) {
       style: this.getMediaStyle(),
       children: [this.renderMetadata(), exports === Y.AUDIO ? this.renderAudio() : this.renderVideo(), (0, Chunk951288.jsx)(Chunk481060.f6W, {
         theme: Chunk981631.BRd.MIDNIGHT,
-        children: e => (0, o.jsx)("div", {
+        children: e => (0, a.jsx)("div", {
           className: e,
           children: this.renderControls()
         })
@@ -912,7 +912,7 @@ class et extends(i = Chunk647438.PureComponent) {
   }
   constructor(e) {
     var t, n;
-    super(e), t = this, k(this, "_unmounted", false), k(this, "_lastMove", 0), k(this, "_analytics", true), k(this, "mediaRef", a.createRef()), k(this, "controlsRef", a.createRef()), k(this, "playPausePopRef", a.createRef()), k(this, "handleFullScreenExit", () => {
+    super(e), t = this, k(this, "_unmounted", false), k(this, "_lastMove", 0), k(this, "_analytics", true), k(this, "mediaRef", o.createRef()), k(this, "controlsRef", o.createRef()), k(this, "playPausePopRef", o.createRef()), k(this, "handleFullScreenExit", () => {
       let {
         current: e
       } = this.mediaRef;
@@ -1017,11 +1017,11 @@ class et extends(i = Chunk647438.PureComponent) {
         props: {
           onClick: r,
           autoPlay: i,
-          autoMute: o
+          autoMute: a
         }
       } = this;
       if (null != r) return void r(e);
-      e.stopPropagation(), i && !t && n && o ? this.setState({
+      e.stopPropagation(), i && !t && n && a ? this.setState({
         muted: false,
         hasClickedPlay: true
       }) : this.setPlay(!this.state.playing)
@@ -1092,8 +1092,8 @@ class et extends(i = Chunk647438.PureComponent) {
       }
     }), k(this, "handleError", e => {
       var t, n, r, i;
-      let o = e.currentTarget;
-      this._analytics.errorCode = null != (r = null == (t = o.error) ? true : t.code) ? r : null, this._analytics.errorMessage = null != (i = null == (n = o.error) ? true : n.message) ? i : null, this._analytics.onError(e)
+      let a = e.currentTarget;
+      this._analytics.errorCode = null != (r = null == (t = a.error) ? true : t.code) ? r : null, this._analytics.errorMessage = null != (i = null == (n = a.error) ? true : n.message) ? i : null, this._analytics.onError(e)
     }), this._analytics = new ee({
       src: e.src,
       mimeType: null == (n = e.mimeType) ? true : n.join("/"),
@@ -1102,9 +1102,9 @@ class et extends(i = Chunk647438.PureComponent) {
     let {
       autoPlay: r,
       autoMute: i,
-      volume: o,
+      volume: a,
       playable: s
-    } = this.props, l = "function" == typeof o ? o() : o, c = "function" == typeof i ? i() : i;
+    } = this.props, l = "function" == typeof a ? a() : a, c = "function" == typeof i ? i() : i;
     this.state = {
       buffers: [],
       currentTime: null,

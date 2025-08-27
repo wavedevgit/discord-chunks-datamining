@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -73,8 +73,8 @@ function D(e) {
   let {
     guildBoostSlot: t,
     isCancellable: n,
-    onCancel: o,
-    onUncancel: a,
+    onCancel: a,
+    onUncancel: o,
     premiumSubscription: s,
     useReducedMotion: u,
     fractionalState: d
@@ -112,7 +112,7 @@ function D(e) {
           className: C.unappliedGuildBoostSlotCta,
           color: l.zx.Colors.PRIMARY,
           look: l.zx.Looks.LINK,
-          onClick: () => o(t),
+          onClick: () => a(t),
           size: l.zx.Sizes.NONE,
           disabled: h,
           children: A.intl.string(A.t.twFU3d)
@@ -125,7 +125,7 @@ function D(e) {
           className: C.unappliedGuildBoostSlotCta,
           color: l.zx.Colors.PRIMARY,
           look: l.zx.Looks.LINK,
-          onClick: () => a(t),
+          onClick: () => o(t),
           size: l.zx.Sizes.NONE,
           disabled: h,
           children: A.intl.string(A.t["2glQNj"])
@@ -154,7 +154,7 @@ function j(e) {
   })))
 }
 let M = function(e) {
-  let t, n, o, {
+  let t, n, a, {
       guildBoostSlots: l
     } = e,
     _ = (0, s.e7)([E.Z], () => E.Z.getPremiumTypeSubscription()),
@@ -178,8 +178,8 @@ let M = function(e) {
         n = 0,
         r = false,
         i = true;
-      return l.forEach(o => {
-        !(0, b.tl)(o) && n++, o.isOnCooldown() ? r = true : i = false, null != o.premiumGuildSubscription ? e.push(o) : t.push(o)
+      return l.forEach(a => {
+        !(0, b.tl)(a) && n++, a.isOnCooldown() ? r = true : i = false, null != a.premiumGuildSubscription ? e.push(a) : t.push(a)
       }), {
         appliedGuildBoostSlots: e,
         unappliedGuildBoostSlots: t,
@@ -226,10 +226,10 @@ let M = function(e) {
   } else n = G ? A.intl.string(A.t["8pcUZm"]) : A.intl.formatToPlainString(A.t.Kaw82t, {
     numUnappliedGuildBoostSlots: K
   });
-  return o = p && h === S.a$.NONE ? A.intl.string(A.t.mOWsFx) : A.intl.string(A.t.xr4m5O), (0, r.jsx)("div", {
+  return a = p && h === S.a$.NONE ? A.intl.string(A.t.mOWsFx) : A.intl.string(A.t.xr4m5O), (0, r.jsx)("div", {
     className: C.wrapper,
     children: (0, r.jsxs)("div", {
-      className: a()(C.content, [C.headerWithoutSpecialHeader]),
+      className: o()(C.content, [C.headerWithoutSpecialHeader]),
       children: [(0, r.jsxs)("div", {
         className: C.header,
         children: [(0, r.jsxs)("div", {
@@ -254,8 +254,8 @@ let M = function(e) {
           className: C.headerContentSecondary,
           children: (0, r.jsx)(f.Z, {
             shouldShow: null == W || N,
-            text: o,
-            "aria-label": o.toString(),
+            text: a,
+            "aria-label": a.toString(),
             children: e => (0, r.jsx)(c.zxk, w(R({
               variant: "primary",
               text: A.intl.string(A.t.BMx1i4)

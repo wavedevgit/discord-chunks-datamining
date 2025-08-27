@@ -2,15 +2,15 @@
 /** chunk id: 589530, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  FC: () => o,
+  FC: () => a,
   Zj: () => l,
-  jA: () => a,
+  jA: () => o,
   rs: () => s
 });
 var Chunk433517 = require("./433517.js");
 let i = "MediaPlayerVolume";
 
-function o() {
+function a() {
   var e;
   let {
     volume: t
@@ -18,7 +18,7 @@ function o() {
   return "number" != typeof exports && (t = 1), t = Math.min(1, Math.max(0, exports))
 }
 
-function a(e) {
+function o(e) {
   r.K.set(i, {
     volume: e,
     muted: s()
@@ -35,7 +35,7 @@ function s() {
 
 function l(e) {
   r.K.set(i, {
-    volume: o(),
+    volume: a(),
     muted: e
   })
 }

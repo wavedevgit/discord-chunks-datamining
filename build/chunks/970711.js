@@ -14,7 +14,7 @@ require.d(exports, {
   B8: () => I,
   BQ: () => eN,
   C2: () => ek,
-  Cn: () => eo,
+  Cn: () => ea,
   D7: () => ex,
   DZ: () => ev,
   F8: () => em,
@@ -25,13 +25,13 @@ require.d(exports, {
   IU: () => eJ,
   KD: () => en,
   KE: () => eB,
-  KJ: () => to,
+  KJ: () => ta,
   Mc: () => ed,
   OU: () => eK,
   On: () => eM,
   Or: () => tg,
   R7: () => e$,
-  RC: () => ea,
+  RC: () => eo,
   Rb: () => e8,
   Rs: () => eq,
   S: () => ei,
@@ -70,7 +70,7 @@ require.d(exports, {
   jm: () => eU,
   jx: () => eE,
   k7: () => eI,
-  kI: () => ta,
+  kI: () => to,
   kK: () => e6,
   kn: () => el,
   kr: () => eA,
@@ -110,19 +110,19 @@ require.d(exports, {
   zF: () => eV,
   zr: () => td
 }), require("./410992.js"), require("./227481.js"), require("./730884.js"), require("./20464.js"), require("./341884.js"), require("./364341.js"), require("./629680.js"), require("./505025.js"), require("./918970.js"), require("./121784.js"), require("./644351.js"), require("./146733.js"), require("./388685.js"), require("./953529.js"), require("./35282.js"), require("./49124.js"), require("./415506.js"), require("./980754.js"), require("./824928.js"), require("./539854.js"), require("./563775.js");
-let o = new("undefined" == typeof TextDecoder ? (0, module.require)("util").TextDecoder : TextDecoder)("utf-8", {
+let a = new("undefined" == typeof TextDecoder ? (0, module.require)("util").TextDecoder : TextDecoder)("utf-8", {
   ignoreBOM: true,
   fatal: true
 });
-o.decode();
-let a = null;
+a.decode();
+let o = null;
 
 function s() {
-  return (null === a || 0 === a.byteLength) && (a = new Uint8Array(r.memory.buffer)), a
+  return (null === o || 0 === o.byteLength) && (o = new Uint8Array(r.memory.buffer)), o
 }
 
 function l(e, t) {
-  return e >>>= 0, o.decode(s().subarray(e, e + t))
+  return e >>>= 0, a.decode(s().subarray(e, e + t))
 }
 
 function c(e) {
@@ -166,19 +166,19 @@ function m(e, t, n) {
   }
   let r = e.length,
     i = t(r, 1) >>> 0,
-    o = s(),
-    a = 0;
-  for (; a < r; a++) {
-    let t = e.charCodeAt(a);
+    a = s(),
+    o = 0;
+  for (; o < r; o++) {
+    let t = e.charCodeAt(o);
     if (t > 127) break;
-    o[i + a] = t
+    a[i + o] = t
   }
-  if (a !== r) {
-    0 !== a && (e = e.slice(a)), i = n(i, r, r = a + 3 * e.length, 1) >>> 0;
-    let t = h(e, s().subarray(i + a, i + r));
-    a += t.written, i = n(i, r, a, 1) >>> 0
+  if (o !== r) {
+    0 !== o && (e = e.slice(o)), i = n(i, r, r = o + 3 * e.length, 1) >>> 0;
+    let t = h(e, s().subarray(i + o, i + r));
+    o += t.written, i = n(i, r, o, 1) >>> 0
   }
-  return _ = a, i
+  return _ = o, i
 }
 let g = null;
 
@@ -193,24 +193,24 @@ let b = "undefined" == typeof FinalizationRegistry ? {
 });
 
 function y(e, t, n, i) {
-  let o = {
+  let a = {
       a: e,
       b: t,
       cnt: 1,
       dtor: n
     },
-    a = function() {
+    o = function() {
       for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
-      o.cnt++;
-      let a = o.a;
-      o.a = 0;
+      a.cnt++;
+      let o = a.a;
+      a.a = 0;
       try {
-        return i(a, o.b, ...t)
+        return i(o, a.b, ...t)
       } finally {
-        0 == --o.cnt ? (r.__wbindgen_export_5.get(o.dtor)(a, o.b), b.unregister(o)) : o.a = a
+        0 == --a.cnt ? (r.__wbindgen_export_5.get(a.dtor)(o, a.b), b.unregister(a)) : a.a = o
       }
     };
-  return a.original = o, b.register(a, o, o), a
+  return o.original = a, b.register(o, a, a), o
 }
 
 function O(e) {
@@ -252,8 +252,8 @@ function v(e) {
   }
 }
 
-function I(e, t, n, i, o) {
-  r.installLogCallback(e, t, n, i, o)
+function I(e, t, n, i, a) {
+  r.installLogCallback(e, t, n, i, a)
 }
 
 function T(e, t) {
@@ -302,8 +302,8 @@ class j {
   static isBlockedDomain(e) {
     let t, n = m(e, r.__wbindgen_malloc, r.__wbindgen_realloc),
       i = _,
-      o = r.blockeddomainsstore_isBlockedDomain(n, i);
-    return 0 !== o[0] && (t = l(o[0], o[1]).slice(), r.__wbindgen_free(o[0], +o[1], 1)), t
+      a = r.blockeddomainsstore_isBlockedDomain(n, i);
+    return 0 !== a[0] && (t = l(a[0], a[1]).slice(), r.__wbindgen_free(a[0], +a[1], 1)), t
   }
   static startFetchingBlockedDomains(e) {
     let t = m(e, r.__wbindgen_malloc, r.__wbindgen_realloc),
@@ -501,11 +501,11 @@ function ei(e) {
   return clearTimeout(e)
 }
 
-function eo(e) {
+function ea(e) {
   return clearTimeout(e)
 }
 
-function ea() {
+function eo() {
   return u(function(e) {
     e.close()
   }, arguments)
@@ -832,11 +832,11 @@ function ti(e) {
   return 1 == t.cnt-- && (t.a = 0, true)
 }
 
-function to(e, t, n) {
+function ta(e, t, n) {
   return y(e, t, 542, R)
 }
 
-function ta(e, t, n) {
+function to(e, t, n) {
   return y(e, t, 359, C)
 }
 
@@ -880,9 +880,9 @@ function tp() {
 function th(e, t) {
   let n = t,
     i = "string" == typeof n ? n : true;
-  var o = d(i) ? 0 : m(i, r.__wbindgen_malloc, r.__wbindgen_realloc),
-    a = _;
-  E().setInt32(e + 4, a, true), E().setInt32(e + 0, o, true)
+  var a = d(i) ? 0 : m(i, r.__wbindgen_malloc, r.__wbindgen_realloc),
+    o = _;
+  E().setInt32(e + 4, o, true), E().setInt32(e + 0, a, true)
 }
 
 function tm(e, t) {

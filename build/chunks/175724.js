@@ -35,7 +35,7 @@ let A = {
     if (T.S.hasSubscribers(S.CkL.CALL_DECLINE)) return T.S.dispatch(S.CkL.CALL_DECLINE), false;
     if (v.Z.close()) returnfalse;
     if (T.S.hasSubscribers(S.CkL.MEDIA_MODAL_CLOSE)) return T.S.dispatch(S.CkL.MEDIA_MODAL_CLOSE), false;
-    let t = (0, a.AN)(e);
+    let t = (0, o.AN)(e);
     if (null == t ? true : t.hasSubscribers(S.CkL.POPOUT_CLOSE)) return t.dispatch(S.CkL.POPOUT_CLOSE), false;
     if (T.S.hasSubscribers(S.CkL.CLOSE_GIF_PICKER)) return T.S.dispatch(S.CkL.CLOSE_GIF_PICKER), false;
     if (T.S.hasSubscribers(S.CkL.MODAL_CLOSE)) return T.S.dispatch(S.CkL.MODAL_CLOSE), false;
@@ -43,8 +43,8 @@ let A = {
     if (null == t ? true : t.hasSubscribers(S.CkL.POPOUT_CLOSE_AFTER_MODALS)) return t.dispatch(S.CkL.POPOUT_CLOSE_AFTER_MODALS), false;
     let n = O.Z.getGuildId(),
       i = y.Z.getChannelId(n),
-      o = h.Z.getChannel(i),
-      l = p.ZP.getSection(i, null == o ? true : o.isDM()) === S.ULH.SIDEBAR_CHAT ? p.ZP.getSidebarState(i) : null,
+      a = h.Z.getChannel(i),
+      l = p.ZP.getSection(i, null == a ? true : a.isDM()) === S.ULH.SIDEBAR_CHAT ? p.ZP.getSidebarState(i) : null,
       c = (null == l ? true : l.type) === d.tI.VIEW_THREAD || (null == l ? true : l.type) === d.tI.VIEW_CHANNEL ? l.channelId : null;
     if (false === C(i) || false === C(c)) returnfalse;
     if (null != i && (null == l ? true : l.type) === d.tI.CREATE_THREAD) return u.Z.closeChannelSidebar(i), false;
@@ -65,8 +65,8 @@ function C(e) {
 function N(e) {
   if (null == e) returnfalse;
   let t = false;
-  return E.Z.getMessages(e).hasMoreAfter && (i.Z.jumpToPresent(e, S.AQB), t = true), b.ZP.hasUnread(e) && ((0, o.In)(e, {
+  return E.Z.getMessages(e).hasMoreAfter && (i.Z.jumpToPresent(e, S.AQB), t = true), b.ZP.hasUnread(e) && ((0, a.In)(e, {
     object: S.qAy.MARK_CHANNEL_AS_READ_KEYBIND,
     objectType: S.Qqv.ACK_MANUAL
-  }), t = true), (0, o.iV)(e), t
+  }), t = true), (0, a.iV)(e), t
 }

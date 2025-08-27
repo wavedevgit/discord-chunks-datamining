@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
   l = require.n(Chunk512722),
   Chunk913527 = require("./913527.js"),
@@ -83,8 +83,8 @@ function Z(e, t) {
   if (null == e) return {};
   var n, r, i = F(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -92,8 +92,8 @@ function Z(e, t) {
 function F(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let V = {
@@ -142,8 +142,8 @@ function W(e) {
   let {
     onOpen: t,
     onClose: n,
-    children: o,
-    popoutPosition: a,
+    children: a,
+    popoutPosition: o,
     popoutAlign: s
   } = e, [l, c] = i.useState(false), u = i.useRef(null), d = i.useCallback(() => {
     c(false), l && (null == n || n())
@@ -161,7 +161,7 @@ function W(e) {
   return (0, r.jsx)(p.yRy, {
     targetElementRef: u,
     animation: p.yRy.Animation.NONE,
-    position: a,
+    position: o,
     align: s,
     autoInvert: false,
     shouldShow: l,
@@ -172,7 +172,7 @@ function W(e) {
       let {
         isShown: n
       } = t;
-      return o(f, n, e, h, u)
+      return a(f, n, e, h, u)
     }
   })
 }
@@ -181,26 +181,26 @@ function K(e) {
   let {
     savedMessageKeys: t,
     closePopout: n
-  } = e, o = i.useRef(null), a = (0, g.Z)("for-later", o), [s, l] = i.useState(new Date);
+  } = e, a = i.useRef(null), o = (0, g.Z)("for-later", a), [s, l] = i.useState(new Date);
   return i.useEffect(() => {
     let e = setInterval(() => l(new Date), S.Z.Millis.MINUTE);
     return () => {
       clearInterval(e)
     }
   }, []), (0, r.jsx)(f.bG, {
-    navigator: a,
+    navigator: o,
     children: (0, r.jsx)(f.SJ, {
       children: e => {
         var {
           ref: i
-        } = e, a = Z(e, ["ref"]);
+        } = e, o = Z(e, ["ref"]);
         return (0, r.jsx)(p.h21, B(U({
           ref: e => {
             var t;
-            o.current = e, i.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
+            a.current = e, i.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
           },
           className: M.messagesScroller
-        }, a), {
+        }, o), {
           children: t.map(e => (0, r.jsx)(q, {
             savedMessageKey: e,
             closePopout: n,
@@ -216,7 +216,7 @@ function z(e) {
   let {
     savedMessage: t,
     closePopout: n,
-    throttledNow: o
+    throttledNow: a
   } = e, s = (0, C.gr)(t), l = i.useCallback(async e => {
     var r;
     await (0, C.fC)(t, s), e.shiftKey || n(), I.default.track(L.rMx.FOR_LATER_SAVED_MESSAGE_JUMP, {
@@ -235,7 +235,7 @@ function z(e) {
       "aria-label": j.intl.string(j.t["+TSRGB"])
     }), null != t.saveData.dueAt ? (0, r.jsx)(x.Z, {
       reminder: t,
-      throttledNow: o
+      throttledNow: a
     }) : null, (0, r.jsx)(w.Z, {
       channel: s
     }), (0, r.jsx)(b.Z, {
@@ -254,7 +254,7 @@ function z(e) {
       })
     })]
   }) : (0, r.jsxs)("div", {
-    className: a()(M.messageContainer, M.deletedMessage),
+    className: o()(M.messageContainer, M.deletedMessage),
     children: [(0, r.jsx)("div", {
       className: M.deleteIcon,
       children: (0, r.jsx)(p.Mgn, {
@@ -282,9 +282,9 @@ function q(e) {
     savedMessageKey: t,
     closePopout: n,
     throttledNow: i
-  } = e, o = (0, _.e7)([N.Z], () => N.Z.getSavedMessage(t.channelId, t.messageId));
-  return null == o ? null : (0, r.jsx)(z, {
-    savedMessage: o,
+  } = e, a = (0, _.e7)([N.Z], () => N.Z.getSavedMessage(t.channelId, t.messageId));
+  return null == a ? null : (0, r.jsx)(z, {
+    savedMessage: a,
     closePopout: n,
     throttledNow: i
   })

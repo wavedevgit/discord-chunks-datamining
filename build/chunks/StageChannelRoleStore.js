@@ -5,7 +5,7 @@ require.d(exports, {
   ZP: () => j
 }), require("./388685.js");
 var r, Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  a = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk592125 = require("./592125.js"),
@@ -51,10 +51,10 @@ function v(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
     r = l.Z.getChannel(t),
     i = null == r ? true : r.getGuildId(),
-    o = d.Z.getGuild(i);
-  return null != o && null != r && r.isGuildStageVoice() ? {
+    a = d.Z.getGuild(i);
+  return null != a && null != r && r.isGuildStageVoice() ? {
     speaker: y(e, t),
-    moderator: n ? O(e, o, r) : null
+    moderator: n ? O(e, a, r) : null
   } : b
 }
 
@@ -112,7 +112,7 @@ function P(e) {
   let {
     voiceStates: t
   } = e;
-  return !o().isEmpty(E) && t.reduce((e, t) => {
+  return !a().isEmpty(E) && t.reduce((e, t) => {
     let {
       userId: n,
       channelId: r

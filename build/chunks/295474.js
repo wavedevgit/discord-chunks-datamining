@@ -39,9 +39,9 @@ function E(e) {
       r = null != e ? e : n,
       i = c.Z.getGuild(r);
     if (null == i || null == r) return t;
-    let o = s.default.getId(),
-      a = l.ZP.getMember(r, o),
-      u = (0, f.Ow)(null == a ? true : a.flags);
+    let a = s.default.getId(),
+      o = l.ZP.getMember(r, a),
+      u = (0, f.Ow)(null == o ? true : o.flags);
     if (0 === u.size) return t;
     if (u.has(p.q.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME))
       if (null == e) {
@@ -66,7 +66,7 @@ function b(e) {
     if (null == f) return;
     let e = _.oAB.PROFILE_CUSTOMIZATION,
       t = h.NB.GUILD;
-    p ? (0, a.Fq)(f) : t = h.NB.USER_PROFILE, o.Z.open(e, t, {
+    p ? (0, o.Fq)(f) : t = h.NB.USER_PROFILE, a.Z.open(e, t, {
       scrollPosition: n,
       analyticsLocation: s,
       analyticsLocations: l,

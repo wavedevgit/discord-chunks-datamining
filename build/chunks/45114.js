@@ -23,11 +23,11 @@ var Chunk570140 = require("./570140.js"),
 function d(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
     i = arguments.length > 3 && true !== arguments[3] && arguments[3],
-    o = arguments.length > 4 ? arguments[4] : true;
+    a = arguments.length > 4 ? arguments[4] : true;
   r.Z.dispatch({
     type: "CHANNEL_ACK",
     channelId: e,
-    messageId: o,
+    messageId: a,
     immediate: n,
     force: i,
     context: u.e3s,
@@ -38,7 +38,7 @@ function d(e, t) {
 function f(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
     r = arguments.length > 3 && true !== arguments[3] && arguments[3],
-    l = a.Z.getChannel(e);
+    l = o.Z.getChannel(e);
   if (null == l || null == l.guild_id) return;
   let c = s.Z.getCategories(l.guild_id);
   if (null == c[e]) return;
@@ -46,7 +46,7 @@ function f(e, t) {
       let {
         channel: t
       } = e;
-      return (0, o.Em)(t.type)
+      return (0, a.Em)(t.type)
     }).map(e => {
       let {
         channel: t

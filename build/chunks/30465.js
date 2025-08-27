@@ -9,15 +9,15 @@ require.d(exports, {
 var Chunk647438 = require("./647438.js"),
   Chunk879690 = require("./879690.js"),
   Chunk731965 = require("./731965.js");
-let a = Object.freeze({
+let o = Object.freeze({
     id: null,
     activeDescendant: null
   }),
-  s = (0, Chunk879690.U)(() => a);
+  s = (0, Chunk879690.U)(() => o);
 
 function l(e, t, n) {
   (0, r.useEffect)(() => {
-    (0, o.j)(() => {
+    (0, a.j)(() => {
       t ? s.setState({
         id: e,
         activeDescendant: n
@@ -30,5 +30,5 @@ function l(e, t, n) {
 }
 
 function c() {
-  (0, Chunk731965.j)(() => s.setState(() => a))
+  (0, Chunk731965.j)(() => s.setState(() => o))
 }

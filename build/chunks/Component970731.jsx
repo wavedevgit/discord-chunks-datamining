@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk493773 = require("./493773.js"),
@@ -85,11 +85,11 @@ function y(e) {
     onClick: O,
     onSecondaryClick: v,
     buttonProps: I = {
-      color: a.zx.Colors.BRAND,
-      look: a.zx.Looks.FILLED
+      color: o.zx.Colors.BRAND,
+      look: o.zx.Looks.FILLED
     },
     secondaryButtonProps: T = {
-      color: a.zx.Colors.BRAND_INVERTED
+      color: o.zx.Colors.BRAND_INVERTED
     },
     onComponentMount: S,
     asset: A,
@@ -108,27 +108,27 @@ function y(e) {
       null == v || v(), null == C || C(c.L.SECONDARY)
     };
   return (0, r.jsxs)("div", {
-    className: o()(n, g[t], u.upsellTooltipWrapper, u[N]),
+    className: a()(n, g[t], u.upsellTooltipWrapper, u[N]),
     children: [A, null == i ? null : (0, r.jsx)(s.X6q, {
       color: E[t],
-      className: o()(d, u.upsellTooltipHeader),
+      className: a()(d, u.upsellTooltipHeader),
       variant: "heading-md/semibold",
       children: i
     }), (0, r.jsx)(s.Text, {
       color: b[t],
-      className: o()(h, u.content),
+      className: a()(h, u.content),
       variant: "text-sm/normal",
       children: _
     }), null != m || P ? (0, r.jsxs)("div", {
-      className: o()(u.upsellButtonsContainer, {
+      className: a()(u.upsellButtonsContainer, {
         [u.upsellButtonsAdjacent]: 0 === R,
         [u.upsellButtonsStacked]: 1 === R
       }),
-      children: [P ? (0, r.jsx)(a.zx, p(f({}, T), {
+      children: [P ? (0, r.jsx)(o.zx, p(f({}, T), {
         fullWidth: 1 === R,
         onClick: D,
         children: y
-      })) : null, null == m ? null : (0, r.jsx)(a.zx, p(f({}, I), {
+      })) : null, null == m ? null : (0, r.jsx)(o.zx, p(f({}, I), {
         fullWidth: !P || 1 === R,
         onClick: w,
         children: m

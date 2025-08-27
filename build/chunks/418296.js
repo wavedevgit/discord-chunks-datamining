@@ -14,11 +14,11 @@ module.exports = function(e, t, n) {
     _ = true,
     p = [],
     h = p;
-  if (n) _ = false, d = o;
+  if (n) _ = false, d = a;
   else if (f >= c) {
     var m = t ? null : s(e);
     if (m) return l(m);
-    _ = false, d = a, h = new r
+    _ = false, d = o, h = new r
   } else h = t ? [] : p;
   n: for (; ++u < f;) {
     var g = e[u],

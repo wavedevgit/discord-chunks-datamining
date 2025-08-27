@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk870670 = require("./870670.js"),
   Chunk742795 = require("./742795.js"),
   Chunk200289 = require("./200289.js");
@@ -18,15 +18,15 @@ function c(e) {
     className: n
   } = e;
   return (0, r.jsx)("div", {
-    className: o()(a.container, n),
+    className: a()(o.container, n),
     children: (0, r.jsxs)("div", {
-      className: a.innerContainer,
+      className: o.innerContainer,
       children: [(0, r.jsx)("img", {
         src: l,
         alt: "",
-        className: a.star
+        className: o.star
       }), (0, r.jsx)("div", {
-        className: a.iconWrapper,
+        className: o.iconWrapper,
         children: (0, r.jsx)(t, {
           width: 40,
           height: 40
@@ -34,7 +34,7 @@ function c(e) {
       }), (0, r.jsx)("img", {
         src: s,
         alt: "",
-        className: a.sparkle
+        className: o.sparkle
       })]
     })
   })

@@ -26,7 +26,7 @@ function _(e) {
     channelId: n.channel_id,
     guildId: _.guild_id,
     messageId: n.id
-  })(p), m = a.Z.getArticleURL(u.BhN.HD_STREAMING_POTION);
+  })(p), m = o.Z.getArticleURL(u.BhN.HD_STREAMING_POTION);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: f.parentContainer,
@@ -43,10 +43,10 @@ function _(e) {
       })
     }), (0, r.jsxs)(i.P3F, {
       onClick: () => {
-        window.open(a.Z.getArticleURL(u.BhN.HD_STREAMING_POTION), "_blank")
+        window.open(o.Z.getArticleURL(u.BhN.HD_STREAMING_POTION), "_blank")
       },
       className: f.embed,
-      children: [(0, r.jsx)(o.Z, {}), (0, r.jsxs)("div", {
+      children: [(0, r.jsx)(a.Z, {}), (0, r.jsxs)("div", {
         className: f.text,
         children: [(0, r.jsx)(i.Text, {
           color: "text-default",

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk692547 = require("./692547.js"),
   Chunk755721 = require("./755721.js"),
@@ -81,14 +81,14 @@ let j = Chunk442837.ZP.connectStores([Chunk210887.Z], () => ({
 function G(e) {
   let {
     onClose: t
-  } = e, n = (0, s.e7)([p.ZP], () => p.ZP.getCandidateGames()), [o, l] = i.useState(null);
+  } = e, n = (0, s.e7)([p.ZP], () => p.ZP.getCandidateGames()), [a, l] = i.useState(null);
 
   function f(e) {
     l(e)
   }
 
   function _() {
-    null != o && (d.Z.addGame(o.pid, o.name), t())
+    null != a && (d.Z.addGame(a.pid, a.name), t())
   }
   let h = n.map(e => ({
     key: e.pid,
@@ -96,11 +96,11 @@ function G(e) {
     label: null != e.name ? e.name : ""
   }));
   return (0, r.jsxs)(u.VqE, {
-    className: a()(C.addGamePopout, N.elevationBorderHigh),
+    className: o()(C.addGamePopout, N.elevationBorderHigh),
     "aria-label": A.intl.string(A.t.GTCx0t),
     children: [(0, r.jsx)(u.VcW, {
       placeholder: A.intl.string(A.t.XqMe3N),
-      value: o,
+      value: a,
       options: h,
       onChange: f,
       renderOptionLabel: e => (0, r.jsx)(u.Text, {
@@ -110,9 +110,9 @@ function G(e) {
         children: e.label
       })
     }), (0, r.jsx)(u.$i$, {
-      className: a()(P.marginTop8, P.marginBottom8)
+      className: o()(P.marginTop8, P.marginBottom8)
     }), (0, r.jsxs)("div", {
-      className: a()(C.actions, R.horizontal),
+      className: o()(C.actions, R.horizontal),
       children: [(0, r.jsx)(c.zx, {
         className: C.cancelButton,
         look: c.iL.LINK,
@@ -122,7 +122,7 @@ function G(e) {
       }), (0, r.jsx)(u.zxk, {
         variant: "primary",
         text: A.intl.string(A.t.GTCx0t),
-        disabled: null == o,
+        disabled: null == a,
         onClick: _
       })]
     })]
@@ -132,7 +132,7 @@ function G(e) {
 function B(e) {
   let {
     rawGame: t,
-    nowPlaying: o = false,
+    nowPlaying: a = false,
     isOverride: c,
     subgames: h,
     isSubgame: g = false,
@@ -145,10 +145,10 @@ function B(e) {
     isCurrentGameDetectionEnabled: p.ZP.isDetectionEnabled(I)
   })), P = (0, s.e7)([p.ZP], () => p.ZP.getVisibleGame()), [w, x] = i.useState(false), j = i.useMemo(() => (0, E.le)(I) ? g ? I.gameName : A.intl.formatToPlainString(A.t.G6BGd3, {
     subgameName: I.gameName
-  }) : I.name, [I, g]), [U, G] = i.useState(null != j ? j : "???"), Z = a()(R.flexCenter, {
-    [C.game]: !o,
-    [C.activeGame]: o,
-    [C.nowPlaying]: null != I && o,
+  }) : I.name, [I, g]), [U, G] = i.useState(null != j ? j : "???"), Z = o()(R.flexCenter, {
+    [C.game]: !a,
+    [C.activeGame]: a,
+    [C.nowPlaying]: null != I && a,
     [C.subgame]: g,
     [C.gameHasSubgame]: null != h && h.length > 0
   });
@@ -231,7 +231,7 @@ function B(e) {
         }))
       })]
     }) : (0, r.jsx)("input", {
-      className: a()(C.gameName, C.gameNameInput),
+      className: o()(C.gameName, C.gameNameInput),
       type: "text",
       maxLength: 128,
       value: U,
@@ -246,7 +246,7 @@ function B(e) {
       played: t,
       exePath: n
     } = I;
-    return o || ee ? e = A.intl.string(A.t.VbV5dn) : null != t && "" !== t && (e = A.intl.format(A.t.gGeOEx, {
+    return a || ee ? e = A.intl.string(A.t.VbV5dn) : null != t && "" !== t && (e = A.intl.format(A.t.gGeOEx, {
       when: t
     })), (0, r.jsx)("div", {
       className: C.lastPlayed,
@@ -279,20 +279,20 @@ function B(e) {
       }, e))
     }) : null;
     return (0, r.jsxs)("div", {
-      className: a()(R.flexCenter, R.noWrap, R.justifyBetween, C.toggleContainer),
+      className: o()(R.flexCenter, R.noWrap, R.justifyBetween, C.toggleContainer),
       children: [i, (0, r.jsx)(u.ua7, {
         text: A.intl.string(A.t["1+O+Tk"]),
         children: t => {
           let {
             onMouseEnter: i,
-            onMouseLeave: o
+            onMouseLeave: a
           } = t;
           return (0, r.jsx)(u.P3F, {
             "aria-label": A.intl.string(A.t["1+O+Tk"]),
             className: C.toggleIcon,
             onClick: () => Y(!e),
             onMouseEnter: i,
-            onMouseLeave: o,
+            onMouseLeave: a,
             children: n
           })
         }
@@ -315,7 +315,7 @@ function B(e) {
       colorClass: C.fill
     });
     return (0, r.jsx)("div", {
-      className: a()(R.flexCenter, R.noWrap, R.justifyBetween, C.toggleContainer),
+      className: o()(R.flexCenter, R.noWrap, R.justifyBetween, C.toggleContainer),
       children: (0, r.jsx)(u.ua7, {
         text: A.intl.string(A.t.QmitzM),
         children: e => {
@@ -338,7 +338,7 @@ function B(e) {
 
   function J() {
     return w ? null : (0, r.jsx)("div", {
-      className: a()(R.flexCenter, R.noWrap, R.justifyBetween, C.toggleContainer),
+      className: o()(R.flexCenter, R.noWrap, R.justifyBetween, C.toggleContainer),
       children: (0, r.jsx)(u.ua7, {
         text: A.intl.string(A.t["y0B+lp"]),
         children: e => {
@@ -376,10 +376,10 @@ function B(e) {
     children: [(0, r.jsxs)("div", {
       className: Z,
       children: [(0, r.jsxs)("div", {
-        className: a()(C.gameNameLastPlayed, R.vertical),
+        className: o()(C.gameNameLastPlayed, R.vertical),
         children: [z(), q()]
-      }), c ? null : J(), Q(), X(), o && !c || et ? null : $()]
-    }), null != h && h.length > 0 && !o && (0, r.jsx)("div", {
+      }), c ? null : J(), Q(), X(), a && !c || et ? null : $()]
+    }), null != h && h.length > 0 && !a && (0, r.jsx)("div", {
       className: C.subgameContainer,
       children: h.map((e, t) => (0, r.jsxs)(i.Fragment, {
         children: [(0, r.jsx)(B, {
@@ -397,9 +397,9 @@ function B(e) {
 
 function Z() {
   return (0, Chunk951288.jsx)("div", {
-    className: a()(Chunk149715.flexCenter, Chunk740508.notDetected, Chunk740508.activeGame),
+    className: o()(Chunk149715.flexCenter, Chunk740508.notDetected, Chunk740508.activeGame),
     children: (0, Chunk951288.jsxs)("div", {
-      className: a()(Chunk740508.gameNameLastPlayed, Chunk149715.vertical),
+      className: o()(Chunk740508.gameNameLastPlayed, Chunk149715.vertical),
       children: [(0, Chunk951288.jsx)("div", {
         className: Chunk740508.gameName,
         children: Chunk388032.intl.string(Chunk388032.t["H68X9/"])
@@ -433,7 +433,7 @@ let V = (0, Chunk251625.oH)(function() {
     let {
       className: t,
       showHeader: n = true
-    } = e, o = (0, s.Wu)([p.ZP], () => p.ZP.getGamesSeen(false)), {
+    } = e, a = (0, s.Wu)([p.ZP], () => p.ZP.getGamesSeen(false)), {
       runningGame: l,
       overrideExePaths: d
     } = (0, s.cj)([p.ZP], () => ({
@@ -442,10 +442,10 @@ let V = (0, Chunk251625.oH)(function() {
     })), {
       gameHistory: f,
       robloxSubgameHistory: _
-    } = i.useMemo(() => o.reduce((e, t) => ((0, E.le)(t) ? e.robloxSubgameHistory.push(t) : e.gameHistory.push(t), e), {
+    } = i.useMemo(() => a.reduce((e, t) => ((0, E.le)(t) ? e.robloxSubgameHistory.push(t) : e.gameHistory.push(t), e), {
       gameHistory: [],
       robloxSubgameHistory: []
-    }), [o]), m = i.useRef(null);
+    }), [a]), m = i.useRef(null);
 
     function b() {
       return 0 === f.length ? (0, r.jsx)(F, {
@@ -480,7 +480,7 @@ let V = (0, Chunk251625.oH)(function() {
         nowPlaying: true,
         subgames: l.id === g.eB ? _ : true
       }, (0, p.rH)(l)) : (0, r.jsx)(Z, {}), (0, r.jsxs)("div", {
-        className: a()(C.nowPlayingAdd, P.marginReset, P.marginTop8, P.marginBottom20),
+        className: o()(C.nowPlayingAdd, P.marginReset, P.marginTop8, P.marginBottom20),
         children: [(0, r.jsx)("span", {
           children: A.intl.string(A.t.xwhoqK)
         }), (0, r.jsx)(u.yRy, {

@@ -68,8 +68,8 @@ function v(e, t) {
   if (null == e) return {};
   var n, r, i = I(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -77,8 +77,8 @@ function v(e, t) {
 function I(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 require("./388032.jsx");
@@ -105,9 +105,9 @@ function C(e, t) {
   var n, r;
   let i = (0, s.K)(e);
   if (null == i) return;
-  let o = e.getGuildId(),
-    a = e.parent_id,
-    l = (0, f.I)(o, a),
+  let a = e.getGuildId(),
+    o = e.parent_id,
+    l = (0, f.I)(a, o),
     _ = e => (0, d.yE)(e, m.iN.ALL_MESSAGES) ? f.$R[g.bL.ALL_MESSAGES] : (0, d.yE)(e, m.iN.ONLY_MENTIONS) ? f.$R[g.bL.ONLY_MENTIONS] : (0, d.yE)(e, m.iN.NO_MESSAGES) ? f.$R[g.bL.NO_MESSAGES] : f.$R[g.bL.NULL],
     h = null != (n = p.Z.flags(e.id)) ? n : 0,
     E = _(h),
@@ -119,11 +119,11 @@ function C(e, t) {
     } = i,
     A = O(b({}, v(i, ["can_send_message", "parent_channel_type"])), {
       channel_id: e.id,
-      guild_id: o,
-      parent_id: a,
+      guild_id: a,
+      parent_id: o,
       channel_type: e.type,
       has_interacted_with_thread: (h & m.iN.HAS_INTERACTED) != 0,
-      parent_is_muted: c.ZP.isGuildOrCategoryOrChannelMuted(o, a),
+      parent_is_muted: c.ZP.isGuildOrCategoryOrChannelMuted(a, o),
       old_thread_notification_setting: E,
       new_thread_notification_setting: null != t.flags ? _(t.flags) : E,
       parent_notification_setting: l.channel_message_notification_settings,
@@ -136,9 +136,9 @@ function C(e, t) {
 }
 let N = e => {
   var t, n;
-  let r = (0, o.e7)([l.ZP], () => l.ZP.lastMessageId(e.id)),
-    a = null != r ? _.default.extractTimestamp(r) : null,
+  let r = (0, a.e7)([l.ZP], () => l.ZP.lastMessageId(e.id)),
+    o = null != r ? _.default.extractTimestamp(r) : null,
     s = null == (t = e.threadMetadata) ? true : t.createTimestamp,
     c = null != s ? i()(s).valueOf() : null;
-  return null != (n = null != a ? a : c) ? n : _.default.extractTimestamp(e.id)
+  return null != (n = null != o ? o : c) ? n : _.default.extractTimestamp(e.id)
 }

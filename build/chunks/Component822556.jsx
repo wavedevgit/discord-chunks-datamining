@@ -21,10 +21,10 @@ function u(e) {
     id: "voice-settings",
     label: c.intl.string(c.t.NiTd0d),
     action: () => {
-      o.Z.open(l.oAB.VOICE, null, {
+      a.Z.open(l.oAB.VOICE, null, {
         analyticsLocations: t,
         appContext: e
-      }), (0, a.i)(e)
+      }), (0, o.i)(e)
     },
     icon: i.ewm
   })

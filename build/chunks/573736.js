@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Cy: () => d,
-  HD: () => a,
+  HD: () => o,
   J8: () => u,
   PO: () => s,
   V9: () => f,
@@ -25,16 +25,16 @@ function i(e) {
   }
 }
 
-function o(e, t) {
+function a(e, t) {
   return r.call(e) === `[object ${t}]`
 }
 
-function a(e) {
-  return o(e, "String")
+function o(e) {
+  return a(e, "String")
 }
 
 function s(e) {
-  return o(e, "Object")
+  return a(e, "Object")
 }
 
 function l(e) {

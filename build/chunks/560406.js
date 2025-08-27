@@ -3,8 +3,8 @@
 "use strict";
 var Chunk46015 = require("./46015.js"),
   i = 0x7fffffff,
-  o = 36,
-  a = 1,
+  a = 36,
+  o = 1,
   s = 26,
   l = 38,
   c = 700,
@@ -29,8 +29,8 @@ var Chunk46015 = require("./46015.js"),
     for (var t = [], n = 0, r = e.length; n < r;) {
       var i = O(e, n++);
       if (i >= 55296 && i <= 56319 && n < r) {
-        var o = O(e, n++);
-        (64512 & o) == 56320 ? I(t, ((1023 & i) << 10) + (1023 & o) + 65536) : (I(t, i), n--)
+        var a = O(e, n++);
+        (64512 & a) == 56320 ? I(t, ((1023 & i) << 10) + (1023 & a) + 65536) : (I(t, i), n--)
       } else I(t, i)
     }
     return t
@@ -40,7 +40,7 @@ var Chunk46015 = require("./46015.js"),
   },
   R = function(e, t, n) {
     var r = 0;
-    for (e = n ? b(e / c) : e >> 1, e += b(e / t); e > m * s >> 1;) e = b(e / m), r += o;
+    for (e = n ? b(e / c) : e >> 1, e += b(e / t); e > m * s >> 1;) e = b(e / m), r += a;
     return b(r + (m + 1) * e / (e + l))
   },
   P = function(e) {
@@ -60,12 +60,12 @@ var Chunk46015 = require("./46015.js"),
       for (_ += (O - c) * T, c = O, t = 0; t < e.length; t++) {
         if ((n = e[t]) < c && ++_ > i) throw new g(h);
         if (n === c) {
-          for (var S = _, A = o;;) {
-            var P = A <= p ? a : A >= p + s ? s : A - p;
+          for (var S = _, A = a;;) {
+            var P = A <= p ? o : A >= p + s ? s : A - p;
             if (S < P) break;
             var w = S - P,
-              D = o - P;
-            I(r, y(N(P + w % D))), S = b(w / D), A += o
+              D = a - P;
+            I(r, y(N(P + w % D))), S = b(w / D), A += a
           }
           I(r, y(N(S))), p = R(_, T, E === m), _ = 0, E++
         }

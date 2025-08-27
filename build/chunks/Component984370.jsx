@@ -70,8 +70,8 @@ function C(e, t) {
   if (null == e) return {};
   var n, r, i = N(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -79,8 +79,8 @@ function C(e, t) {
 function N(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 async function R(e) {
@@ -110,7 +110,7 @@ function P(e) {
     hideSearch: D,
     showDivider: x,
     disableDoubleClick: L
-  } = e, j = null == s || (0, O.AB)(s) ? null : s, M = (0, o.e7)([m.Z], () => m.Z.isInChannel(j) || false), k = (0, o.e7)([c.Z], () => null != j && c.Z.getParticipantsListOpen(j)), {
+  } = e, j = null == s || (0, O.AB)(s) ? null : s, M = (0, a.e7)([m.Z], () => m.Z.isInChannel(j) || false), k = (0, a.e7)([c.Z], () => null != j && c.Z.getParticipantsListOpen(j)), {
     enabled: U,
     inInbox: G
   } = d.Z.useExperiment({
@@ -134,7 +134,7 @@ function P(e) {
       }, null != g ? g : s) : null, x && (0, r.jsx)(b.ZP.Divider, {}), U && !G ? (0, r.jsx)(f.Z, {}) : null, B && M && null != j && !k && l === y.d4z.GROUP_DM && (0, r.jsxs)("div", {
         className: v.controlButtonWrapper,
         children: [(0, r.jsx)(b.ZP.Divider, {}), (0, r.jsx)(h.Z, {
-          onClick: () => a.Z.toggleParticipantsList(j, !k)
+          onClick: () => o.Z.toggleParticipantsList(j, !k)
         })]
       })]
     })
@@ -159,16 +159,16 @@ function w(e) {
     children: t,
     className: n,
     "aria-label": i,
-    "aria-labelledby": o,
-    role: a,
+    "aria-labelledby": a,
+    role: o,
     disableDoubleClick: s
   } = e;
   return (0, r.jsx)(b.ZP, {
     className: n,
     onDoubleClick: () => R(s),
     "aria-label": i,
-    "aria-labelledby": o,
-    role: a,
+    "aria-labelledby": a,
+    role: o,
     children: t
   })
 }

@@ -12,13 +12,13 @@ var Chunk581883 = require("./581883.js"),
   Chunk473092 = require("./473092.js");
 
 function s(e) {
-  return o.ZP.getChannelSafetyWarnings(e).filter(e => e.type === o.pj.INAPPROPRIATE_CONVERSATION_TIER_1)
+  return a.ZP.getChannelSafetyWarnings(e).filter(e => e.type === a.pj.INAPPROPRIATE_CONVERSATION_TIER_1)
 }
 
 function l() {
-  var e, t, n, o;
+  var e, t, n, a;
   let s = (null == (e = Chunk594174.default.getCurrentUser()) ? true : module.isStaff()) === true,
-    l = null == (o = null == (n = Chunk581883.Z.settings.privacy) || null == (t = require.inappropriateConversationWarnings) ? true : exports.value) || Chunk359119;
+    l = null == (a = null == (n = Chunk581883.Z.settings.privacy) || null == (t = require.inappropriateConversationWarnings) ? true : exports.value) || Chunk359119;
   return ((0, Chunk473092.Lm)() || s) && l
 }
 
@@ -30,6 +30,6 @@ function c(e) {
 }
 
 function u(e) {
-  let t = e.filter(e => e.type === o.pj.INAPPROPRIATE_CONVERSATION_TIER_1);
+  let t = e.filter(e => e.type === a.pj.INAPPROPRIATE_CONVERSATION_TIER_1);
   return t.length > 0 && t.every(e => null == e.dismiss_timestamp)
 }

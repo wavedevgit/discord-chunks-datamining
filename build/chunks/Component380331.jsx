@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   l = require.n(Chunk392711),
   Chunk91192 = require("./91192.jsx"),
@@ -88,7 +88,7 @@ function K(e) {
   let {
     activeIndex: t,
     categoryIndex: n,
-    analyticsContext: o,
+    analyticsContext: a,
     categories: s,
     category: l,
     handleCategorySelect: u,
@@ -96,7 +96,7 @@ function K(e) {
     useReducedMotion: _
   } = e, p = (0, c.JA)("expression-guild-".concat(n)), h = l.type === S.En.GUILD ? null : l.id, m = t === n, E = l.type === S.En.GUILD ? l.guild : null, y = (0, r.jsxs)(f.P3F, x(w({}, p), {
     "aria-label": (0, O.Nf)(l, E),
-    className: a()({
+    className: o()({
       [R.categoryItemGuildCategory]: null != E,
       [R.categoryItemDefaultCategory]: null == E,
       [R.categoryItemDefaultCategorySelected]: null == E && m,
@@ -104,7 +104,7 @@ function K(e) {
     }),
     onClick: () => {
       null != E && b.default.track(A.rMx.EXPRESSION_PICKER_CATEGORY_SELECTED, {
-        location: null == o ? true : o.location,
+        location: null == a ? true : a.location,
         tab: C.X1.EMOJI,
         guild_id: E.id
       }), u(n)
@@ -138,13 +138,13 @@ let z = e => {
   let {
     className: t,
     emojiListRef: n,
-    sectionDescriptors: o,
+    sectionDescriptors: a,
     intention: s,
     channel: c,
     shouldShowSoundmojiInEmojiPicker: d = false,
     showOnlyUnicode: g = false
   } = e, b = h.kJ.useStore(e => e.activeCategoryIndex), y = (0, T.Ni)({
-    sectionDescriptors: o,
+    sectionDescriptors: a,
     emojiListRef: n
   }), v = (0, _.O)(), I = (0, O.kI)(s, c, null == c ? true : c.guild_id, d), A = i.useMemo(() => g ? (0, O.ZF)() : I, [I, g]), C = i.useRef(null), P = (0, u.e7)([E.Z], () => E.Z.isFocused()), w = (0, u.e7)([p.Z], () => p.Z.useReducedMotion, []), D = i.useMemo(() => l().memoize((e, t) => {
     let n = A[t];
@@ -233,7 +233,7 @@ let z = e => {
     children: e => U >= W && (0, r.jsx)(f.P3F, {
       "aria-hidden": !Q,
       "aria-label": N.intl.string(N.t.dT0ct7),
-      className: a()(R.unicodeShortcut, {
+      className: o()(R.unicodeShortcut, {
         [R.unicodeShortcutInvisible]: !Q
       }),
       tabIndex: Q ? 0 : false,

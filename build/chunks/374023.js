@@ -2,7 +2,7 @@
 /** chunk id: 374023, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  s: () => o
+  s: () => a
 });
 var Chunk579806 = require("./579806.js");
 
@@ -14,17 +14,17 @@ function i(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class o {
+class a {
   static get() {
-    if (null == o.cached) {
+    if (null == a.cached) {
       var e, t;
       let n = null === Chunk579806.Z || true === Chunk579806.Z || null == (t = Chunk579806.Z.processUtils) || null == (e = exports.getMainArgvSync) ? true : module.call(exports);
-      null != require && require.length > 1 && require.shift(), o.cached = null != require ? require : []
+      null != require && require.length > 1 && require.shift(), a.cached = null != require ? require : []
     }
-    return o.cached
+    return a.cached
   }
   static contains(e) {
-    return o.get().includes(e)
+    return a.get().includes(e)
   }
   static isEnvVariableTrue(e) {
     var t, n;
@@ -37,13 +37,13 @@ class o {
     returnfalse
   }
   static isDisallowPopupsSet() {
-    return o.contains("--disallow-popups") || o.isEnvVariableTrue("DISCORD_DISALLOW_POPUPS")
+    return a.contains("--disallow-popups") || a.isEnvVariableTrue("DISCORD_DISALLOW_POPUPS")
   }
   static isDiscordTestSet() {
-    return o.isEnvVariableTrue("DISCORD_TEST")
+    return a.isEnvVariableTrue("DISCORD_TEST")
   }
   static isDiscordGatewayPlaintextSet() {
     returnfalse
   }
 }
-i(o, "cached", true)
+i(a, "cached", true)

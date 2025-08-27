@@ -31,7 +31,7 @@ class f extends(r = Chunk647438.Component) {
       percent: t,
       colorOverride: n,
       background: r
-    } = this.props, o = Math.min(Math.max(exports, 0), 100), a = (d - module) / 2, c = Chunk120356 * Math.PI * 2;
+    } = this.props, a = Math.min(Math.max(exports, 0), 100), o = (d - module) / 2, c = Chunk120356 * Math.PI * 2;
     return (0, Chunk951288.jsxs)("svg", {
       viewBox: "0 0 ".concat(d, " ").concat(d),
       className: Chunk399020.circle,

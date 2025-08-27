@@ -2,31 +2,31 @@
 /** chunk id: 496842, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  N: () => o
+  N: () => a
 });
 var Chunk39807 = require("./39807.js"),
   Chunk955650 = require("./955650.js");
 
-function o(e) {
+function a(e) {
   let {
     id: t,
     label: n,
-    "aria-labelledby": o,
-    "aria-label": a,
+    "aria-labelledby": a,
+    "aria-label": o,
     labelElementType: s = "label"
   } = e;
   t = (0, r.Me)(t);
   let l = (0, r.Me)(),
     c = {};
-  return n && (o = o ? `${l} ${o}` : l, c = {
+  return n && (a = a ? `${l} ${a}` : l, c = {
     id: l,
     htmlFor: "label" === s ? t : true
   }), {
     labelProps: c,
     fieldProps: (0, i.b)({
       id: t,
-      "aria-label": a,
-      "aria-labelledby": o
+      "aria-label": o,
+      "aria-labelledby": a
     })
   }
 }

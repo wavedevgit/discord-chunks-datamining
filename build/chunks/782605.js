@@ -13,19 +13,19 @@ var Chunk594174 = require("./594174.js"),
 
 function l(e) {
   switch (e) {
-    case a.evJ.TOO_MANY_USER_GUILDS:
+    case o.evJ.TOO_MANY_USER_GUILDS:
       let t = r.default.getCurrentUser(),
-        n = o.ZP.canUseIncreasedGuildCap(t) || (null == t ? true : t.isStaff()) ? a.tHP : a.DZw;
+        n = a.ZP.canUseIncreasedGuildCap(t) || (null == t ? true : t.isStaff()) ? o.tHP : o.DZw;
       return {
         title: s.intl.formatToPlainString(s.t["ttJ/ho"], {
           quantity: n
         }), description: s.intl.string(s.t.iLyuDA)
       };
-    case a.evJ.GUILD_AT_CAPACITY:
+    case o.evJ.GUILD_AT_CAPACITY:
       return {
         title: s.intl.string(s.t.ZZlox8), description: s.intl.string(s.t.ZUEGFh)
       };
-    case a.evJ.GUILD_JOIN_INVITE_LIMITED_ACCESS:
+    case o.evJ.GUILD_JOIN_INVITE_LIMITED_ACCESS:
       return {
         title: s.intl.string(s.t.kJwpBQ), description: s.intl.string(s.t.ZUEGFh)
       };
@@ -36,17 +36,17 @@ function l(e) {
 
 function c(e) {
   switch (e) {
-    case a.evJ.TOO_MANY_USER_GUILDS:
+    case o.evJ.TOO_MANY_USER_GUILDS:
       return s.intl.string(s.t.iLyuDA);
-    case a.evJ.GUILD_AT_CAPACITY:
+    case o.evJ.GUILD_AT_CAPACITY:
       return s.intl.string(s.t.M6unND);
-    case a.evJ.INVALID_COUNTRY_CODE:
+    case o.evJ.INVALID_COUNTRY_CODE:
       return s.intl.string(s.t.sRJGR0);
-    case a.evJ.INVALID_CANNOT_FRIEND_SELF:
+    case o.evJ.INVALID_CANNOT_FRIEND_SELF:
       return s.intl.string(s.t["mY2R+P"]);
-    case a.evJ.INVITES_DISABLED:
+    case o.evJ.INVITES_DISABLED:
       return s.intl.format(s.t.RXSeLi, {
-        articleLink: i.Z.getArticleURL(a.BhN.INVITE_DISABLED)
+        articleLink: i.Z.getArticleURL(o.BhN.INVITE_DISABLED)
       });
     default:
       return s.intl.string(s.t.dDZRd3)

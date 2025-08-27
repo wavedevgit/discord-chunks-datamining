@@ -21,7 +21,7 @@ function l(e) {
     location: t
   }), u = s.qM.useExperiment({
     location: t
-  }).lightMode, d = (0, i.wj)((0, o.ZP)()), f = (0, r.e7)([a.Z], () => a.Z.getChannel(n));
+  }).lightMode, d = (0, i.wj)((0, a.ZP)()), f = (0, r.e7)([o.Z], () => o.Z.getChannel(n));
   return {
     canAccessPicker: l && (d || u) && (null == f ? true : f.isChatWallpaperEnabled) === true,
     entryPoint: c,

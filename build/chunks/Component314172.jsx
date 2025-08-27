@@ -67,7 +67,7 @@ function E(e) {
   } = e, y = (0, i.e7)([l.Z], () => l.Z.roleStyle);
   if (!(0, i.e7)([u.Z], () => u.Z.can(d.Plq.MANAGE_ROLES, t))) return null;
   let O = e => !(0, c.fI)(e) && !e.managed && u.Z.isRoleHigher(t, m, e) && false === n.roles.indexOf(e.id);
-  return (0, r.jsx)(o.y, {
+  return (0, r.jsx)(a.y, {
     targetElementRef: b,
     position: "bottom",
     align: "center",
@@ -83,20 +83,20 @@ function E(e) {
         onClose: n
       })
     },
-    children: e => (0, r.jsx)(a.DY3, {
+    children: e => (0, r.jsx)(o.DY3, {
       text: f.intl.string(f.t.icyMgY),
       "aria-label": false,
       shouldShow: p > 0,
-      children: (0, r.jsxs)(a.P3F, g(h({
+      children: (0, r.jsxs)(o.P3F, g(h({
         innerRef: b,
         className: _.button,
         role: "button",
         "aria-label": f.intl.string(f.t.icyMgY)
       }, e), {
-        children: [(0, r.jsx)(a.qJs, {
+        children: [(0, r.jsx)(o.qJs, {
           size: "xs",
           color: "currentColor"
-        }), 0 === p && (0, r.jsx)(a.Text, {
+        }), 0 === p && (0, r.jsx)(o.Text, {
           variant: "text-xs/normal",
           color: "none",
           children: f.intl.string(f.t.icyMgY)

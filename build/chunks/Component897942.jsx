@@ -24,7 +24,7 @@ function h(e) {
     claimableRewards: n,
     size: h,
     imageScaling: m = _
-  } = e, g = (0, i.e7)([c.default], () => c.default.getCurrentUser()), E = (0, i.e7)([a.Z], () => a.Z.useReducedMotion), b = (0, o.pxk)(h), y = {
+  } = e, g = (0, i.e7)([c.default], () => c.default.getCurrentUser()), E = (0, i.e7)([o.Z], () => o.Z.useReducedMotion), b = (0, a.pxk)(h), y = {
     height: b * m
   };
   return n.length > 2 ? (0, r.jsx)(l.Z, {
@@ -36,17 +36,17 @@ function h(e) {
     playsInline: true
   }) : (0, r.jsxs)("div", {
     className: u.container,
-    children: [(1 === n.length || 2 === n.length) && (0, r.jsx)(o.Xo$, {
+    children: [(1 === n.length || 2 === n.length) && (0, r.jsx)(a.Xo$, {
       "aria-label": null == g ? true : g.username,
       size: h,
       className: u.firstPromotionalAvatar,
-      src: 1 === n.length ? null == g ? true : g.getAvatarURL(true, (0, o.pxk)(h), !E) : f,
+      src: 1 === n.length ? null == g ? true : g.getAvatarURL(true, (0, a.pxk)(h), !E) : f,
       avatarDecoration: (0, s.Z)(n[0].assetId, h, !E)
     }), 2 === n.length && (0, r.jsx)("div", {
       style: {
         marginRight: -Math.round(b * p)
       },
-      children: (0, r.jsx)(o.Xo$, {
+      children: (0, r.jsx)(a.Xo$, {
         "aria-label": null == g ? true : g.username,
         size: h,
         src: d,

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk129861 = require("./129861.jsx"),
   Chunk406943 = require("./406943.js"),
@@ -35,7 +35,7 @@ function g(e) {
     onOpenProfile: T,
     onClose: S,
     nicknameVariant: A = "heading-lg/bold"
-  } = e, C = e => null == T ? e : (0, r.jsx)(a.kL8, {
+  } = e, C = e => null == T ? e : (0, r.jsx)(o.kL8, {
     onClick: T,
     className: m.clickableUsername,
     "aria-label": h.intl.string(h.t["+Xp3ho"]),
@@ -44,12 +44,12 @@ function g(e) {
     location: "UserProfileUsername"
   }) && null != b;
   return (0, r.jsxs)("div", {
-    className: o()(m.container, {
+    className: a()(m.container, {
       [m.bot]: null != R
     }, O),
     children: [(0, r.jsxs)("div", {
       className: m.usernameRow,
-      children: [C(P ? (0, r.jsx)(a.Text, {
+      children: [C(P ? (0, r.jsx)(o.Text, {
         variant: A,
         children: (0, r.jsx)(f.Z, {
           userName: g,
@@ -61,7 +61,7 @@ function g(e) {
           inProfile: true,
           shouldUnderlineOnHover: null != T
         })
-      }) : (0, r.jsx)(a.Text, {
+      }) : (0, r.jsx)(o.Text, {
         className: m.nickname,
         variant: A,
         children: g
@@ -73,7 +73,7 @@ function g(e) {
         children: E
       })]
     }), (0, r.jsxs)("div", {
-      className: o()(m.tags, {
+      className: a()(m.tags, {
         [m.pronouns]: N,
         [m.bot]: null != R
       }),
@@ -82,7 +82,7 @@ function g(e) {
         usernameIcon: n,
         forceUsername: true,
         forcePomelo: I,
-        className: o()(m.userTag, v),
+        className: a()(m.userTag, v),
         usernameClass: m.userTagUsername,
         discriminatorClass: m.userTagDiscriminator,
         hideBotTag: true
@@ -90,12 +90,12 @@ function g(e) {
         children: [(0, r.jsx)("div", {
           "aria-hidden": "true",
           className: m.dotSpacer
-        }), (0, r.jsx)(a.DY3, {
+        }), (0, r.jsx)(o.DY3, {
           className: m.pronounsTooltip,
           text: h.intl.string(h.t.GI2A8P),
           delay: p.vB,
-          children: (0, r.jsx)(a.Text, {
-            className: o()(m.pronounsText, v),
+          children: (0, r.jsx)(o.Text, {
+            className: a()(m.pronounsText, v),
             variant: "text-sm/medium",
             color: "header-primary",
             children: y

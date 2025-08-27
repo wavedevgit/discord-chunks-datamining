@@ -3,12 +3,12 @@
 "use strict";
 require.d(exports, {
   L: () => s,
-  N: () => a
+  N: () => o
 });
 var Chunk884697 = require("./884697.js"),
   Chunk328456 = require("./328456.js");
 
-function o(e) {
+function a(e) {
   let t = new i.bB(e.items);
   return {
     firstProfileEffect: t.firstProfileEffect,
@@ -17,19 +17,19 @@ function o(e) {
   }
 }
 
-function a(e) {
+function o(e) {
   let {
     firstAvatarDecoration: t,
     firstProfileEffect: n,
     firstNameplate: r
-  } = o(e), i = null != t && null != n && null == r, a = null != t && null != n && null != r;
-  return i || a
+  } = a(e), i = null != t && null != n && null == r, o = null != t && null != n && null != r;
+  return i || o
 }
 
 function s(e) {
   if (!(0, r.x6)(e)) returnfalse;
   let {
     firstNameplate: t
-  } = o(e);
+  } = a(e);
   return null != t
 }

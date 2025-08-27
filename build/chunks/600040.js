@@ -2,9 +2,9 @@
 /** chunk id: 600040, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 var r, Chunk264344 = require("./264344.js"),
-  o = require.n(Chunk264344),
+  a = require.n(Chunk264344),
   Chunk345546 = require("./345546.js");
-window.AudioContext = null != (r = window.AudioContext) ? r : window.webkitAudioContext, null != window.RTCPeerConnection && "Chrome" === o().name && 52 > (0, Chunk345546.n)() && ["createOffer", "createAnswer"].forEach(e => {
+window.AudioContext = null != (r = window.AudioContext) ? r : window.webkitAudioContext, null != window.RTCPeerConnection && "Chrome" === a().name && 52 > (0, Chunk345546.n)() && ["createOffer", "createAnswer"].forEach(e => {
   let t = RTCPeerConnection.prototype[e];
   RTCPeerConnection.prototype[e] = function() {
     for (var e = arguments.length, n = Array(e), r = 0; r < e; r++) n[r] = arguments[r];

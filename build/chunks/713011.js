@@ -2,16 +2,16 @@
 /** chunk id: 713011, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  F: () => o
+  F: () => a
 });
 var Chunk573654 = require("./573654.js"),
   Chunk964742 = require("./964742.js");
 
-function o(e) {
+function a(e) {
   return function() {
     var t = e.getMonitor(),
       n = e.getRegistry();
-    a(t);
+    o(t);
     var r = t.getSourceId();
     return null != r && (n.getSource(r, true).endDrag(t, r), n.unpinSource()), {
       type: i.Bs
@@ -19,6 +19,6 @@ function o(e) {
   }
 }
 
-function a(e) {
+function o(e) {
   (0, r.k)(e.isDragging(), "Cannot call endDrag while not dragging.")
 }

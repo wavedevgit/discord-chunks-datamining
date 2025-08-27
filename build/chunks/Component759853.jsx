@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk238651 = require("./238651.js"),
   Chunk603113 = require("./603113.js"),
   Chunk202841 = require("./202841.js"),
@@ -107,7 +107,7 @@ let C = e => {
   var t;
   let {
     expansionSpring: n,
-    overlayRef: o,
+    overlayRef: a,
     quest: E,
     progressBarRef: b,
     isExpanded: y,
@@ -129,9 +129,9 @@ let C = e => {
         y: r
       } = e.getBoundingClientRect(), {
         x: i,
-        y: o
+        y: a
       } = t.getBoundingClientRect();
-      B.createMultipleConfetti(A(n - i, r - o, e.clientHeight, e.clientWidth), I)
+      B.createMultipleConfetti(A(n - i, r - a, e.clientHeight, e.clientWidth), I)
     }
   }, [b, D, B, w]), F = (0, d.Z)(y);
   return (i.useEffect(() => {
@@ -154,7 +154,7 @@ let C = e => {
         opacity: C
       }
     }), (0, r.jsx)(c.animated.div, {
-      className: a()(m.borders, m.bordersTopLeft),
+      className: o()(m.borders, m.bordersTopLeft),
       style: {
         opacity: C
       }
@@ -176,12 +176,12 @@ let C = e => {
         colors: v,
         spriteWidth: h.Ko,
         spriteHeight: h.Ko
-      }), null != o.current && (0, l.createPortal)((0, r.jsx)(c.animated.div, {
-        className: a()(m.borders, m.bordersBottom),
+      }), null != a.current && (0, l.createPortal)((0, r.jsx)(c.animated.div, {
+        className: o()(m.borders, m.bordersBottom),
         style: {
           opacity: C
         }
-      }), o.current)]
+      }), a.current)]
     })]
   })
 }

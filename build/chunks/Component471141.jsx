@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk84735 = require("./84735.js"),
   Chunk437337 = require("./437337.jsx"),
   Chunk981729 = require("./981729.jsx"),
@@ -19,7 +19,7 @@ function _(e) {
   let {
     value: t,
     disabled: n = false,
-    hideBorder: o = false,
+    hideBorder: a = false,
     tooltipNote: _,
     onChange: p,
     className: h,
@@ -41,7 +41,7 @@ function _(e) {
   return (0, r.jsxs)("div", {
     ref: y,
     style: m,
-    className: a()(f.container, h, {
+    className: o()(f.container, h, {
       [f.disabled]: n
     }),
     children: [(0, r.jsx)(s.t, {
@@ -77,7 +77,7 @@ function _(e) {
         type: d.g.ERROR,
         children: b
       })
-    }), !o && (0, r.jsx)(u.$, {
+    }), !a && (0, r.jsx)(u.$, {
       className: f.dividerDefault
     })]
   })

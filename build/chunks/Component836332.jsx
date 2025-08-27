@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk100527 = require("./100527.js"),
   Chunk906732 = require("./906732.jsx"),
@@ -24,7 +24,7 @@ var Chunk951288 = require("./951288.js"),
 let y = (e, t) => {
     let {
       className: n,
-      isFooterVisible: o,
+      isFooterVisible: a,
       isDarkMode: y,
       isReducedMotion: O,
       subscriptionTier: v
@@ -32,12 +32,12 @@ let y = (e, t) => {
       analyticsLocations: I
     } = (0, c.ZP)(l.Z.PREMIUM_MARKETING_FOOTER_CTA), T = (0, f.Nx)(), S = (0, d.rO)(), A = i.useRef(null), [C, N] = i.useState(false);
     return i.useEffect(() => {
-      !o || O || C || null == A.current || A.current.play()
-    }, [o, O, C]), (0, r.jsx)(c.Gt, {
+      !a || O || C || null == A.current || A.current.play()
+    }, [a, O, C]), (0, r.jsx)(c.Gt, {
       value: I,
       children: (0, r.jsxs)("div", {
         ref: t,
-        className: a()(m.container, n),
+        className: o()(m.container, n),
         children: [(0, r.jsx)(s.X6q, {
           className: m.footerHeader,
           variant: "display-md",

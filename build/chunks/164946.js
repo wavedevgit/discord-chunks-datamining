@@ -2,8 +2,8 @@
 /** chunk id: 164946, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ED: () => o,
-  Jo: () => a,
+  ED: () => a,
+  Jo: () => o,
   g9: () => i,
   jE: () => s
 }), require("./953529.js");
@@ -14,7 +14,7 @@ function i(e) {
   return true !== e.pendingBanner && (t.banner = e.pendingBanner), null != e.pendingBio && (t.bio = e.pendingBio), null != e.pendingPronouns && (t.pronouns = e.pendingPronouns), true !== e.pendingAccentColor && (t.accent_color = e.pendingAccentColor), true !== e.pendingThemeColors && (t.theme_colors = e.pendingThemeColors), true !== e.pendingProfileEffectId && (t.profile_effect_id = null != e.pendingProfileEffectId ? e.pendingProfileEffectId : null), t
 }
 
-function o(e) {
+function a(e) {
   let t = {};
   if (true !== e.pendingGlobalName && (t.globalName = e.pendingGlobalName), true !== e.pendingNameplate && (t.nameplate = e.pendingNameplate), true !== e.pendingAvatar) {
     let {
@@ -25,7 +25,7 @@ function o(e) {
   return true !== e.pendingAvatarDecoration && (t.avatarDecoration = e.pendingAvatarDecoration), true !== e.pendingDisplayNameStyles && (t.displayNameStyles = e.pendingDisplayNameStyles), t
 }
 
-function a(e) {
+function o(e) {
   let t = {};
   if (true !== e.pendingAvatar) {
     let {

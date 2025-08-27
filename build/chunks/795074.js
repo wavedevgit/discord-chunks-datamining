@@ -3,18 +3,18 @@
 "use strict";
 let r;
 require.d(exports, {
-  ur: () => a
+  ur: () => o
 }), require("./647438.js");
 let i = !!("undefined" != typeof window && window.document && window.document.createElement),
-  o = new Map;
+  a = new Map;
 
-function a(e, t) {
+function o(e, t) {
   if (e === t) return e;
-  let n = o.get(e);
+  let n = a.get(e);
   if (n) return n.forEach(e => e.current = t), t;
-  let r = o.get(t);
+  let r = a.get(t);
   return r ? (r.forEach(t => t.current = e), e) : t
 }
 "undefined" != typeof FinalizationRegistry && (r = new FinalizationRegistry(e => {
-  o.delete(e)
+  a.delete(e)
 }))

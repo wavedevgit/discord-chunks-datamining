@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk845239 = require("./845239.js");
 let s = e => {
   let {
@@ -20,13 +20,13 @@ let s = e => {
     backgroundImage: "url(".concat(i, ")")
   } : {};
   return (0, r.jsx)("div", {
-    className: o()({
-      [a.forceLightTheme]: s
+    className: a()({
+      [o.forceLightTheme]: s
     }, n),
     children: (0, r.jsxs)("div", {
-      className: a.wrapper,
+      className: o.wrapper,
       children: [(0, r.jsx)("div", {
-        className: a.sadImage,
+        className: o.sadImage,
         style: c
       }), (0, r.jsx)("div", {
         children: t

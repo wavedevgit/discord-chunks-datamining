@@ -70,7 +70,7 @@ let M = {
     } = (0, x.n)(n), {
       primaryColor: W,
       secondaryColor: K
-    } = (0, N.Z)(null == B ? true : B.src), z = (0, a.e7)([g.default], () => g.default.locale), {
+    } = (0, N.Z)(null == B ? true : B.src), z = (0, o.e7)([g.default], () => g.default.locale), {
       streamPreviewUrl: q,
       stream: X
     } = (0, I.Z)(n), {
@@ -78,9 +78,9 @@ let M = {
       participant1: J,
       participant2: $,
       numOtherParticipants: ee
-    } = (0, v.Z)(n, 3), et = n.extra.platform, en = null != et ? M[et] : null, er = et === o.z.XBOX ? L.ABu.XBOX : et === o.z.PLAYSTATION ? L.ABu.PLAYSTATION : true, ei = (0, C.Z)(er), {
-      data: eo
-    } = (0, h.IX)(n.extra.application_id), ea = (0, d.q)(eo, "MemberListGamingContentPopout"), es = (0, m.L)(H, Y), el = i.useCallback(e => {
+    } = (0, v.Z)(n, 3), et = n.extra.platform, en = null != et ? M[et] : null, er = et === a.z.XBOX ? L.ABu.XBOX : et === a.z.PLAYSTATION ? L.ABu.PLAYSTATION : true, ei = (0, C.Z)(er), {
+      data: ea
+    } = (0, h.IX)(n.extra.application_id), eo = (0, d.q)(ea, "MemberListGamingContentPopout"), es = (0, m.L)(H, Y), el = i.useCallback(e => {
       if ((null == B ? true : B.src) == null || null == t || null == Z) return;
       let r = ee > 0 ? (0, A.VY)({
         entry: n,
@@ -131,8 +131,8 @@ let M = {
         onUserPopoutClosed: U,
         trackRankingItemInteraction: G
       }),
-      ed = !es && ea ? (0, r.jsx)(f.Z, {
-        application: eo,
+      ed = !es && eo ? (0, r.jsx)(f.Z, {
+        application: ea,
         location: "MemberListGamingContentPopout"
       }, "cloud-play") : null,
       ef = [null == ed && ((0, l.Z)(H, L.xjy.JOIN) || (0, c.Z)(H)) ? (0, r.jsx)(_.Z, {

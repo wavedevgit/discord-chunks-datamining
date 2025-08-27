@@ -8,13 +8,13 @@ var Chunk529883 = require("./529883.js");
 let i = {
     read: s
   },
-  o = 4,
-  a = 7;
+  a = 4,
+  o = 7;
 
 function s(e, t) {
   let n = {},
     i = r.Z.getByteAt(e, t);
-  return n.Alpha = l(i), n.Animation = c(i), n.ImageWidth = u(e, t + o), n.ImageHeight = u(e, t + a), n
+  return n.Alpha = l(i), n.Animation = c(i), n.ImageWidth = u(e, t + a), n.ImageHeight = u(e, t + o), n
 }
 
 function l(e) {

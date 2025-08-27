@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk512722 = require("./512722.js"),
-  o = require.n(Chunk512722),
+  a = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk809206 = require("./809206.js"),
   Chunk295474 = require("./295474.js"),
@@ -80,7 +80,7 @@ function U() {
   var e, t, n, i, L, M, U, G;
   let B = (0, Chunk442837.e7)([Chunk594174.default], () => {
       let e = Chunk594174.default.getCurrentUser();
-      return o()(null != module, "DefaultCustomizationSections: user cannot be undefined"), module
+      return a()(null != module, "DefaultCustomizationSections: user cannot be undefined"), module
     }),
     Z = (0, Chunk442837.e7)([Chunk621853.Z], () => Chunk621853.Z.getUserProfile(B.id)),
     {
@@ -111,8 +111,8 @@ function U() {
     en = (0, Chunk150039.f$)(H, null == Z ? true : Z.banner),
     er = (0, Chunk687158.ZP)(B.id),
     ei = null == er ? true : er.getLegacyUsername(),
-    eo = (null != (n = null == (e = Q.global_name) ? true : module.length) ? require : 0) > 0 ? Q.global_name : null != (i = null == $ ? true : $.nick) ? Chunk512722 : [],
-    ea = (null != (L = null == (t = Q.bio) ? true : exports.length) ? L : 0) > 0 ? Q.bio : null != (M = null == $ ? true : $.bio) ? M : [],
+    ea = (null != (n = null == (e = Q.global_name) ? true : module.length) ? require : 0) > 0 ? Q.global_name : null != (i = null == $ ? true : $.nick) ? Chunk512722 : [],
+    eo = (null != (L = null == (t = Q.bio) ? true : exports.length) ? L : 0) > 0 ? Q.bio : null != (M = null == $ ? true : $.bio) ? M : [],
     es = (0, Chunk396402.w)(),
     el = (0, Chunk447448.k)({
       location: "DefaultCustomizationSections"
@@ -140,7 +140,7 @@ function U() {
     className: Chunk436360.sectionsContainer,
     children: [(0, Chunk951288.jsx)(Chunk349177.Z, {
       placeholder: B.username,
-      errors: eo,
+      errors: ea,
       currentGlobalName: B.globalName,
       pendingGlobalName: V,
       onGlobalNameChange: Chunk809206.W0,
@@ -167,7 +167,7 @@ function U() {
       sectionTitle: Chunk388032.intl.string(Chunk388032.t.wR5wOj)
     }, "effect"), ec(), el && (0, Chunk951288.jsx)(Chunk9617.Z, {}), (0, Chunk951288.jsx)(Chunk126631.Z, {
       sectionTitle: Chunk388032.intl.string(Chunk388032.t.NepzEx),
-      errors: ea,
+      errors: eo,
       onBioChange: e => (0, d.xQ)(e, null == Z ? true : Z.bio),
       pendingBio: Y,
       currentBio: null != (G = null == Z ? true : Z.bio) ? G : ""

@@ -6,7 +6,7 @@ require.d(exports, {
 });
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk113434 = require("./113434.js"),
   Chunk497505 = require("./497505.js"),
@@ -62,9 +62,9 @@ function m(e) {
   } = e, p = (0, s.B6)(t.config.expiresAt);
   return (0, r.jsxs)("div", {
     className: d.questAcceptedHeader,
-    children: [(0, r.jsx)(a.Text, {
+    children: [(0, r.jsx)(o.Text, {
       variant: "text-xxs/medium",
-      className: o()(d.flex, d.headerText),
+      className: a()(d.flex, d.headerText),
       children: u.intl.format(u.t["pX+fmp"], {
         expirationDate: p
       })
@@ -77,13 +77,13 @@ function m(e) {
       shouldShowDisclosure: false,
       showShareLink: true,
       sourceQuestContent: l.jn.QUEST_BAR_V2,
-      children: e => (0, r.jsx)(a.P3F, h(_({}, e), {
+      children: e => (0, r.jsx)(o.P3F, h(_({}, e), {
         className: d.submenuWrapper,
         "aria-label": u.intl.string(u.t.DEoVWV),
-        children: (0, r.jsx)(a.xhG, {
+        children: (0, r.jsx)(o.xhG, {
           size: "md",
           color: "currentColor",
-          className: o()(d.submenuIcon, d.interactiveNormal)
+          className: a()(d.submenuIcon, d.interactiveNormal)
         })
       }))
     })]

@@ -67,7 +67,7 @@ function I(e) {
     B = null != U,
     Z = null != U && U.isGuildVocal(),
     F = null != U && U.isGuildStageVoice(),
-    V = (0, p.yE)(null != (t = P.flags) ? t : 0, o.$.IS_GUEST_INVITE),
+    V = (0, p.yE)(null != (t = P.flags) ? t : 0, a.$.IS_GUEST_INVITE),
     H = null != (O = null == R ? true : R.features.has(E.oNc.HUB)) && O,
     Y = null == R ? true : R.id,
     {
@@ -120,10 +120,10 @@ function I(e) {
         disableBoostClick: true
       })
     })]
-  }), V && (A = (0, r.jsx)(a.DY3, {
+  }), V && (A = (0, r.jsx)(o.DY3, {
     className: y.tooltipContainer,
     text: b.intl.string(b.t["/FeTKy"]),
-    children: (0, r.jsx)(a.d3s, {
+    children: (0, r.jsx)(o.d3s, {
       size: "md",
       color: "currentColor",
       className: y.infoIcon
@@ -172,11 +172,11 @@ function I(e) {
     }), R.features.has(E.oNc.HUB) && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
         className: y.separator
-      }), (0, r.jsx)(a.Text, {
+      }), (0, r.jsx)(o.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",
         children: b.intl.format(b.t["/o1IfH"], {
-          onClick: () => (0, a.ZDy)(async () => {
+          onClick: () => (0, o.ZDy)(async () => {
             let {
               default: e
             } = await Promise.all([n.e("95468"), n.e("70799")]).then(n.bind(n, 650233));

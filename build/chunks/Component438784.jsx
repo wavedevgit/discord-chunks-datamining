@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk202841 = require("./202841.js"),
   Chunk481060 = require("./481060.js"),
   Chunk199847 = require("./199847.js");
@@ -101,8 +101,8 @@ let I = Chunk647438.memo(function(e) {
     let {
       dotRadius: t,
       dotPosition: n,
-      fill: o = "currentColor",
-      spacing: a = 2.5
+      fill: a = "currentColor",
+      spacing: o = 2.5
     } = e, c = i.useRef(h()), u = i.useRef(true);
     i.useEffect(() => () => void(u.current = false), []);
     let [f] = (0, l.q_F)(() => _(d({}, O), {
@@ -120,12 +120,12 @@ let I = Chunk647438.memo(function(e) {
     return (0, r.jsx)(r.Fragment, {
       children: [0, 1, 2].map(e => {
         let i = m * e,
-          l = t + t * a * e;
+          l = t + t * o * e;
         return (0, r.jsx)(s.animated.circle, {
           cx: n ? n.to([0, 1], [y, l]) : l,
           cy: t,
           r: f.dotCycle.to(e => v(e - i)).to([0, .4, .8, 1], [.8 * t, .8 * t, t, t]).to(e => c.current ? e : t),
-          fill: o,
+          fill: a,
           style: {
             opacity: f.dotCycle.to(e => v(e - i)).to([0, .4, .8, 1], [.3, .3, 1, 1]).to(e => c.current ? e : 1)
           }
@@ -137,7 +137,7 @@ let I = Chunk647438.memo(function(e) {
     let {
       dotRadius: n,
       x: i,
-      y: o,
+      y: a,
       hide: u = false,
       themed: f = false,
       className: p
@@ -153,10 +153,10 @@ let I = Chunk647438.memo(function(e) {
       return l ? null : (0, r.jsx)("svg", {
         ref: t,
         x: i,
-        y: o,
+        y: a,
         width: 2 * n * 3 + n / 2 * 2,
         height: 2 * n,
-        className: a()(p, c.dots, f ? c.themed : null),
+        className: o()(p, c.dots, f ? c.themed : null),
         children: (0, r.jsx)(s.animated.g, {
           style: {
             opacity: d.to(e => Math.min(1, Math.max(e, 0)))

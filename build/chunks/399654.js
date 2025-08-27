@@ -15,36 +15,36 @@ async function u(e) {
   let {
     channelId: t,
     location: n,
-    withCommands: a
+    withCommands: o
   } = e;
   if (null == t) return;
   let u = Date.now(),
     d = s.ZP.getFetchState({
       location: n,
       channelId: t,
-      withCommands: a
+      withCommands: o
     }),
     f = s.ZP.getLastFetchTimeMs({
       location: n,
       channelId: t,
-      withCommands: a
+      withCommands: o
     });
   if (d !== s.M.FETCHING && (null == f || !(f + c > u))) {
     i.Z.dispatch({
       type: "APP_RECOMMENDATIONS_FETCH_RECOMMENDATIONS",
       location: n,
       channelId: t,
-      withCommands: a
+      withCommands: o
     });
     try {
       var _;
       let e = await r.tn.get({
         url: l.ANM.APP_RECOMMENDATIONS,
         query: {
-          locale: o.default.locale,
+          locale: a.default.locale,
           channel_id: t,
           location: n,
-          with_commands: a
+          with_commands: o
         },
         rejectWithError: false
       });
@@ -53,14 +53,14 @@ async function u(e) {
         location: n,
         channelId: t,
         recommendations: null != (_ = e.body) ? _ : [],
-        withCommands: a
+        withCommands: o
       })
     } catch (e) {
       i.Z.dispatch({
         type: "APP_RECOMMENDATIONS_FETCH_RECOMMENDATIONS_FAILURE",
         location: n,
         channelId: t,
-        withCommands: a
+        withCommands: o
       })
     }
   }

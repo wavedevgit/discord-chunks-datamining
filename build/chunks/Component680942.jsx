@@ -84,7 +84,7 @@ let v = e => {
           sku_id: t.skuId,
           page_section: null == A ? true : A.pageSection,
           page_category: null == A ? true : A.pageCategory,
-          tile_type: o.Z[t.type],
+          tile_type: a.Z[t.type],
           tile_position: String(null == A ? true : A.tilePosition),
           cta_name: "gift button",
           page_type: C || "home"
@@ -97,7 +97,7 @@ let v = e => {
           giftingOrigin: m.Wt.SHOP_PAGE,
           analyticsLocations: T,
           returnRef: y,
-          variantsReturnStyle: a.v.VARIANTS_GROUP,
+          variantsReturnStyle: o.v.VARIANTS_GROUP,
           onClose: null != v ? e => {
             e && v()
           } : true

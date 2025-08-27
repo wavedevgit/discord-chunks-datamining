@@ -11,14 +11,14 @@ function r(e, t, n) {
   }) : e[t] = n, e
 }
 require.d(exports, {
-  Z: () => o
+  Z: () => a
 });
 var i = function(e) {
   return e[e.PRIMARY_APP_COMMAND_NOT_FOUND = 0] = "PRIMARY_APP_COMMAND_NOT_FOUND", e[e.LEGACY_LAUNCH_CLIENT_VALIDATION_FAILED = 1] = "LEGACY_LAUNCH_CLIENT_VALIDATION_FAILED", e[e.INVALID_CHANNEL = 2] = "INVALID_CHANNEL", e
 }(i || {});
-class o {
+class a {
   constructor(e, t) {
     r(this, "reason", true), r(this, "detailCode", true), this.reason = e, this.detailCode = t
   }
 }
-r(o, "Reasons", i)
+r(a, "Reasons", i)

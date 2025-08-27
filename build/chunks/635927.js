@@ -2,15 +2,15 @@
 /** chunk id: 635927, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => o
+  Z: () => a
 });
 var Chunk463424 = require("./463424.js"),
   Chunk441349 = require("./441349.js");
-let o = {
+let a = {
     isJpegFile: B,
     findJpegOffsets: Z
   },
-  a = 2,
+  o = 2,
   s = 65496,
   l = 2,
   c = 4,
@@ -46,16 +46,16 @@ let o = {
   G = "Photoshop 3.0";
 
 function B(e) {
-  return !!e && e.byteLength >= a && e.getUint16(0) === s
+  return !!e && e.byteLength >= o && e.getUint16(0) === s
 }
 
 function Z(e) {
-  let t, n, r, o, a, s, p, h, E, O = l;
+  let t, n, r, a, o, s, p, h, E, O = l;
   for (; O + c + 5 <= e.byteLength;) {
     if (i.Z.USE_FILE && F(e, O)) t = e.getUint16(O + u), n = O + u;
     else if (i.Z.USE_FILE && V(e, O)) t = e.getUint16(O + u), r = O + u;
-    else if (i.Z.USE_JFIF && W(e, O)) t = e.getUint16(O + u), o = O + d;
-    else if (i.Z.USE_EXIF && K(e, O)) t = e.getUint16(O + u), a = O + f;
+    else if (i.Z.USE_JFIF && W(e, O)) t = e.getUint16(O + u), a = O + d;
+    else if (i.Z.USE_EXIF && K(e, O)) t = e.getUint16(O + u), o = O + f;
     else if (i.Z.USE_XMP && z(e, O)) p || (p = []), t = e.getUint16(O + u), p.push(J(O, t));
     else if (i.Z.USE_XMP && X(e, O)) p || (p = []), t = e.getUint16(O + u), p.push($(O, t));
     else if (i.Z.USE_IPTC && ee(e, O)) t = e.getUint16(O + u), s = O + _;
@@ -64,12 +64,12 @@ function Z(e) {
       let n = O + m,
         r = t - (m - u),
         i = e.getUint8(O + b),
-        o = e.getUint8(O + y);
+        a = e.getUint8(O + y);
       h || (h = []), h.push({
         offset: n,
         length: r,
         chunkNumber: i,
-        chunksTotal: o
+        chunksTotal: a
       })
     } else if (i.Z.USE_MPF && Y(e, O)) t = e.getUint16(O + u), E = O + g;
     else if (et(e, O)) t = e.getUint16(O + u);
@@ -82,8 +82,8 @@ function Z(e) {
   return {
     hasAppMarkers: O > l,
     fileDataOffset: n || r,
-    jfifDataOffset: o,
-    tiffHeaderOffset: a,
+    jfifDataOffset: a,
+    tiffHeaderOffset: o,
     iptcDataOffset: s,
     xmpChunks: p,
     iccChunks: h,

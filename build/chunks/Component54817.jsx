@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk385499 = require("./385499.jsx"),
   Chunk739566 = require("./739566.js"),
@@ -41,7 +41,7 @@ function m(e) {
     onMouseEnter: b,
     onMouseLeave: y,
     children: (0, r.jsx)(d.Z, {
-      className: o()(h.mainContainer, {
+      className: a()(h.mainContainer, {
         [h.compact]: n
       }),
       iconNode: n ? null : (0, r.jsx)(u.S, {
@@ -50,18 +50,18 @@ function m(e) {
       iconContainerClassName: h.iconContainer,
       compact: n,
       children: (0, r.jsxs)("div", {
-        className: o()(h.content, {
+        className: a()(h.content, {
           [h.compact]: n
         }),
         children: [(0, r.jsx)(c.nD, {
           message: t,
           messageClassname: h.spanCorrection,
-          className: o()(h.usernameContainer, h.spanCorrection, {
+          className: a()(h.usernameContainer, h.spanCorrection, {
             [h.compact]: n
           }),
           username: (0, r.jsxs)("div", {
             className: h.spanCorrection,
-            children: [(0, r.jsx)(a.Text, {
+            children: [(0, r.jsx)(o.Text, {
               variant: "text-md/normal",
               color: "text-brand",
               tag: "span",
@@ -75,7 +75,7 @@ function m(e) {
           compact: n,
           showTimestamp: true
         }), (0, r.jsx)("div", {
-          className: o()(h.__invalid_messageContent, {
+          className: a()(h.__invalid_messageContent, {
             [h.compact]: n
           }),
           children: t.type === f.uaV.GUILD_INCIDENT_ALERT_MODE_ENABLED ? p.intl.format(p.t["+m8eDw"], {

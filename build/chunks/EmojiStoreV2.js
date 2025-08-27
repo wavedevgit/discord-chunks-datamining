@@ -6,7 +6,7 @@ require.d(exports, {
   ZP: () => eV
 }), require("./388685.js"), require("./825670.js"), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./539854.js"), require("./642613.js"), require("./804061.js"), require("./704826.js");
 var r, Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  a = require.n(Chunk392711),
   Chunk913527 = require("./913527.js"),
   s = require.n(Chunk913527),
   Chunk135273 = require("./135273.js"),
@@ -119,7 +119,7 @@ class Q {
   build() {
     this._dirty && (this._dirty = false, this._emojis.forEach(e => {
       e.allNamesString = ":".concat(e.name, ":"), e.guildId = this.id, e.type = L.B.GUILD, this._emojiMap[e.id] = e
-    }), this._usableEmojis = o().sortBy(this._emojis.filter(e => this.isUsable(e)), e => e.name), this._emoticons = this._usableEmojis.filter(e => !e.require_colons))
+    }), this._usableEmojis = a().sortBy(this._emojis.filter(e => this.isUsable(e)), e => e.name), this._emoticons = this._usableEmojis.filter(e => !e.require_colons))
   }
   constructor(e, t, n, r = false) {
     H(this, "id", true), H(this, "_userId", true), H(this, "_dirty", true), H(this, "_emojis", true), H(this, "_emojiMap", {}), H(this, "_emoticons", []), H(this, "_usableEmojis", []), H(this, "_canSeeServerSubIAP", false), H(this, "_totalUsable", 0), this.id = e, this._userId = t, this._emojis = n, this._canSeeServerSubIAP = r
@@ -132,8 +132,8 @@ let J = 42,
   en = 3,
   er = [...q],
   ei = {},
-  eo = {},
-  ea = null,
+  ea = {},
+  eo = null,
   es = new Map;
 
 function el(e) {
@@ -149,10 +149,10 @@ function ec(e) {
 }
 
 function eu() {
-  if (ed(), null == eo)
-    for (let e in eo = {}, ei)
-      for (let t of ei[module].rawEmojis) eo[exports.id] = module;
-  return eo
+  if (ed(), null == ea)
+    for (let e in ea = {}, ei)
+      for (let t of ei[module].rawEmojis) ea[exports.id] = module;
+  return ea
 }
 async function ed() {
   if (0 !== en) return;
@@ -186,7 +186,7 @@ function e_(e) {
       return null != (t = k.ZP.getByName(e)) ? t : ec(e)
     },
     afterCompute: () => {
-      e(), er = [...q], o().some(ei, e => e.usableEmojis.length > 0) || er.splice(q.indexOf(F.UX.CUSTOM), 1)
+      e(), er = [...q], a().some(ei, e => e.usableEmojis.length > 0) || er.splice(q.indexOf(F.UX.CUSTOM), 1)
     },
     numFrequentlyItems: J
   })
@@ -291,12 +291,12 @@ class ep {
           var t;
           return null != (t = this.getById(e)) ? t : k.ZP.getByName(k.ZP.convertSurrogateToName(e, false))
         }),
-        o = [];
+        a = [];
       i.forEach(e => {
-        null != e && o.push(e)
+        null != e && a.push(e)
       });
-      let a = this.getNewlyAddedEmojiForGuild(e).map(e => e.id);
-      this.topEmojis = o.filter(e => !a.includes(e.id))
+      let o = this.getNewlyAddedEmojiForGuild(e).map(e => e.id);
+      this.topEmojis = a.filter(e => !o.includes(e.id))
     }
     return this.topEmojis
   }
@@ -309,12 +309,12 @@ class ep {
     return null == this.escapedEmoticonNames && this._buildDisambiguatedCustomEmoji(), this.escapedEmoticonNames
   }
   nameMatchesChain(e) {
-    return o()(this.getDisambiguatedEmoji()).filter(t => {
+    return a()(this.getDisambiguatedEmoji()).filter(t => {
       let {
         names: n,
         name: r
-      } = t, i = null != n && o().some(n, e), a = null != r && e(r), s = null != r && o().some(h.Z.getTermsForEmoji(r), e);
-      return i || a || s
+      } = t, i = null != n && a().some(n, e), o = null != r && e(r), s = null != r && a().some(h.Z.getTermsForEmoji(r), e);
+      return i || o || s
     })
   }
   _buildDisambiguatedCustomEmoji() {
@@ -324,9 +324,9 @@ class ep {
     let n = t => {
         var n, r;
         let i = t.name,
-          o = null != (n = e[i]) ? n : 0;
-        if (e[i] = o + 1, o > 0) {
-          let e = "".concat(i, "~").concat(o);
+          a = null != (n = e[i]) ? n : 0;
+        if (e[i] = a + 1, a > 0) {
+          let e = "".concat(i, "~").concat(a);
           t = K(Y({}, t), {
             name: e,
             originalName: i,
@@ -345,7 +345,7 @@ class ep {
     Chunk633302.ZP.forEach(require);
     let i = e => {
       let t = ei[null == e ? Z.kod : e];
-      null != t && (o().each(t.usableEmojis, n), o().each(t.emoticons, r))
+      null != t && (a().each(t.usableEmojis, n), a().each(t.emoticons, r))
     };
     for (let e in Chunk392711(this.guildId), this.newlyAddedEmoji) null != this.newlyAddedEmoji[module] ? this.newlyAddedEmoji[module] = this.newlyAddedEmoji[module].sort((e, t) => x.default.compare(t.id, e.id)).slice(0, 3) : this.newlyAddedEmoji[module] = [];
     Chunk771845.ZP.getFlattenedGuildIds().forEach(e => {
@@ -370,7 +370,7 @@ let eh = e_(ep.resetFrequentlyUsed),
   em = e_(ep.resetFrequentlyUsedReactionEmojis);
 
 function eg() {
-  ei = {}, eo = {}, ep.reset(), es.clear(), en = 3
+  ei = {}, ea = {}, ep.reset(), es.clear(), en = 3
 }
 
 function eE(e) {
@@ -378,7 +378,7 @@ function eE(e) {
 }
 
 function eb() {
-  eo = null, ep.reset(), (3 === en || 1 === en) && (eh.compute(), em.compute())
+  ea = null, ep.reset(), (3 === en || 1 === en) && (eh.compute(), em.compute())
 }
 
 function ey(e, t) {
@@ -461,22 +461,22 @@ function ew(e, t) {
   });
   if (M.Xb.trackExposure({
       location: "populateInitialFrecencyData"
-    }), o().isEmpty(e) && o().isEmpty(X.pendingUsages) && v.Z.hasLoaded(V.yP.FRECENCY_AND_FAVORITES_SETTINGS))
+    }), a().isEmpty(e) && a().isEmpty(X.pendingUsages) && v.Z.hasLoaded(V.yP.FRECENCY_AND_FAVORITES_SETTINGS))
     for (let e of ["thumbsup", "thumbsup", "eyes", "eyes", "laughing", "laughing", "watermelon", "fork_and_knife", "yum", "weary", "tired_face", "poop", "100"]) eh.track(e);
-  if ((n || r) && o().isEmpty(t) && o().isEmpty(X.emojiReactionPendingUsages) && v.Z.hasLoaded(V.yP.FRECENCY_AND_FAVORITES_SETTINGS))
+  if ((n || r) && a().isEmpty(t) && a().isEmpty(X.emojiReactionPendingUsages) && v.Z.hasLoaded(V.yP.FRECENCY_AND_FAVORITES_SETTINGS))
     for (let e of ["100", "100", "thumbsup", "thumbsup", "thumbsdown", "thumbsdown", "heart", "point_up", "eyes", "weary", "laughing", "white_check_mark", "x"]) em.track(e)
 }
 
 function eD() {
-  var e, t, n, r, i, a;
+  var e, t, n, r, i, o;
   let s = null == (t = Chunk581883.Z.settings.textAndImages) || null == (e = exports.diversitySurrogate) ? true : module.value;
   null != s && Chunk633302.ZP.setDefaultDiversitySurrogate(s), ep.reset();
   let l = Chunk581883.Z.frecencyWithoutFetchingLatest,
     c = null != (i = null == (n = Chunk135273.emojiFrecency) ? true : require.emojis) ? Chunk392711 : {},
-    u = null != (a = null == (r = Chunk135273.emojiReactionFrecency) ? true : r.emojis) ? Chunk913527 : {};
-  eh.overwriteHistory(o().mapValues(Chunk442837, e => K(Y({}, e), {
+    u = null != (o = null == (r = Chunk135273.emojiReactionFrecency) ? true : r.emojis) ? Chunk913527 : {};
+  eh.overwriteHistory(a().mapValues(Chunk442837, e => K(Y({}, e), {
     recentUses: e.recentUses.map(Number).filter(e => e > 0)
-  })), X.pendingUsages), em.overwriteHistory(o().mapValues(Chunk570140, e => K(Y({}, e), {
+  })), X.pendingUsages), em.overwriteHistory(a().mapValues(Chunk570140, e => K(Y({}, e), {
     recentUses: e.recentUses.map(Number).filter(e => e > 0)
   })), X.emojiReactionPendingUsages), ew(Chunk442837, Chunk570140)
 }
@@ -577,7 +577,7 @@ function eZ(e) {
   let {
     text: t
   } = e;
-  ea = t
+  eo = t
 }
 class eF extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
@@ -628,7 +628,7 @@ class eF extends(r = Chunk442837.ZP.PersistedStore) {
   }
   getSearchResultsOrder(e, t, n, r) {
     let i = t.toLowerCase(),
-      a = D.Z.escape(i),
+      o = D.Z.escape(i),
       {
         canSplitFrecencyList: s
       } = j.Z.getCurrentConfig({
@@ -643,19 +643,19 @@ class eF extends(r = Chunk442837.ZP.PersistedStore) {
     if (M.Xb.trackExposure({
         location: "getSearchResultsOrder"
       }), e.length > 0) {
-      let t = RegExp("^".concat(a), "i"),
-        n = new RegExp("(^|_|[A-Z])".concat(a, "s?([A-Z]|_|$)")),
+      let t = RegExp("^".concat(o), "i"),
+        n = new RegExp("(^|_|[A-Z])".concat(o, "s?([A-Z]|_|$)")),
         c = n.test.bind(n),
         u = t.test.bind(t),
         d = function(e) {
           let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : e;
           if (null == e || null == t) return 0;
           let n = e.toLowerCase(),
-            o = 1 + 4 * (n === i) + (c(n) || c(e) ? 2 : 0) + +!!u(e),
-            a = r === B.Hz.REACTION && (s || l) ? em.getScore(t) : eh.getScore(t);
-          return null != a && (o *= a / 100), o
+            a = 1 + 4 * (n === i) + (c(n) || c(e) ? 2 : 0) + +!!u(e),
+            o = r === B.Hz.REACTION && (s || l) ? em.getScore(t) : eh.getScore(t);
+          return null != o && (a *= o / 100), a
         };
-      e = o().orderBy(e, [e => null != e.names ? d(e.names[0]) : d(e.name, e.id), e => null != e.names ? e.names[0] : e.name], ["desc", "asc"])
+      e = a().orderBy(e, [e => null != e.names ? d(e.names[0]) : d(e.name, e.id), e => null != e.names ? e.names[0] : e.name], ["desc", "asc"])
     }
     return n > 0 && (e = e.slice(0, n)), e
   }
@@ -664,8 +664,8 @@ class eF extends(r = Chunk442837.ZP.PersistedStore) {
       channel: n,
       query: r,
       count: i = 0,
-      intention: o,
-      includeExternalGuilds: a = true,
+      intention: a,
+      includeExternalGuilds: o = true,
       matchComparator: s,
       showOnlyUnicode: l
     } = e;
@@ -681,8 +681,8 @@ class eF extends(r = Chunk442837.ZP.PersistedStore) {
         let r = P.ZP.getEmojiUnavailableReason({
           emoji: t,
           channel: n,
-          intention: o,
-          forceIncludeExternalGuilds: a
+          intention: a,
+          forceIncludeExternalGuilds: o
         });
         return r !== B.Z5.PREMIUM_LOCKED || l ? null != r || l && t.type !== L.B.UNICODE || e.unlocked.push(t) : e.locked.push(t), e
       }, {
@@ -690,8 +690,8 @@ class eF extends(r = Chunk442837.ZP.PersistedStore) {
         locked: []
       });
     return {
-      unlocked: this.getSearchResultsOrder(f.unlocked, r, i, o),
-      locked: this.getSearchResultsOrder(f.locked, r, 0, o)
+      unlocked: this.getSearchResultsOrder(f.unlocked, r, i, a),
+      locked: this.getSearchResultsOrder(f.locked, r, 0, a)
     }
   }
   getUsableCustomEmojiById(e) {
@@ -710,14 +710,14 @@ class eF extends(r = Chunk442837.ZP.PersistedStore) {
     return es.get(e)
   }
   getEmojiAutosuggestion(e) {
-    if (null != ea && ea.length > 0) {
+    if (null != eo && eo.length > 0) {
       let {
         locked: t,
         unlocked: n
       } = this.searchWithoutFetchingLatest({
         channel: e,
         count: 10,
-        query: ea,
+        query: eo,
         intention: B.Hz.CHAT
       });
       return [...n.slice(0, 5), ...t.slice(0, 5)].slice(0, 5)

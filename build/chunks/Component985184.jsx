@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk95398 = require("./95398.jsx"),
   Chunk936141 = require("./936141.js"),
   Chunk197653 = require("./197653.jsx"),
@@ -42,12 +42,12 @@ function m(e) {
   let {
     components: t,
     accentColor: n,
-    spoiler: o,
+    spoiler: a,
     renderComponents: d
-  } = e, [f, _] = i.useState(o), h = e => (0, r.jsx)(c.am.AutoMeasuredNestedContainer, {
+  } = e, [f, _] = i.useState(a), h = e => (0, r.jsx)(c.am.AutoMeasuredNestedContainer, {
     children: i => (0, r.jsx)("div", {
       ref: i,
-      className: a()(u.container, {
+      className: o()(u.container, {
         [u.isHidden]: e,
         [u.withAccentColor]: null != n
       }),
@@ -59,7 +59,7 @@ function m(e) {
       })
     })
   });
-  return null == t || 0 === t.length ? null : o ? (0, r.jsx)(s.ZP, {
+  return null == t || 0 === t.length ? null : a ? (0, r.jsx)(s.ZP, {
     type: s.ZP.Types.ATTACHMENT,
     reason: l.wk.SPOILER,
     obscured: f,

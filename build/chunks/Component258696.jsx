@@ -52,10 +52,10 @@ function A(e) {
     isEmpty: P,
     showAllButtons: w,
     children: D
-  } = e, x = (0, a.e7)([l.Z], () => l.Z.isSubmitButtonEnabled), L = C(N.id, O, P), {
+  } = e, x = (0, o.e7)([l.Z], () => l.Z.isSubmitButtonEnabled), L = C(N.id, O, P), {
     activeCommand: j,
     activeCommandOption: M
-  } = (0, a.cj)([c.Z], () => ({
+  } = (0, o.cj)([c.Z], () => ({
     activeCommand: c.Z.getActiveCommand(N.id),
     activeCommandOption: c.Z.getActiveOption(N.id)
   })), {
@@ -64,8 +64,8 @@ function A(e) {
     location: "dc120b_3"
   }, {
     autoTrackExposure: false
-  }), U = [], G = !N.isDM() || true === N.recipients || N.recipients.length > 1, B = (0, a.e7)([h.default], () => G ? null : h.default.getUser(N.recipients[0])), Z = (0, d.Nt)() && (null == (t = O.confetti) ? true : t.button) != null;
-  return (o.tq || ((null == (_ = O.gifts) ? true : _.button) != null && null == j && !k && (null == B || m.ZP.isPremiumEligible(B)) && U.push((0, r.jsx)(S, {
+  }), U = [], G = !N.isDM() || true === N.recipients || N.recipients.length > 1, B = (0, o.e7)([h.default], () => G ? null : h.default.getUser(N.recipients[0])), Z = (0, d.Nt)() && (null == (t = O.confetti) ? true : t.button) != null;
+  return (a.tq || ((null == (_ = O.gifts) ? true : _.button) != null && null == j && !k && (null == B || m.ZP.isPremiumEligible(B)) && U.push((0, r.jsx)(S, {
     disabled: A,
     channel: N
   }, "gift")), (null == (p = O.gifs) ? true : p.button) != null && null == j && w && U.push((0, r.jsx)(E.Z, {
@@ -90,7 +90,7 @@ function A(e) {
 }
 
 function C(e, t, n) {
-  return (0, a.e7)([_.Z, p.Z], () => {
+  return (0, o.e7)([_.Z, p.Z], () => {
     let r = _.Z.getStickerPreview(e, t.drafts.type),
       i = null != r && r.length > 0;
     return 0 === p.Z.getUploads(e, t.drafts.type).length && n && !i

@@ -136,8 +136,8 @@ class C extends(r = Chunk647438.Component) {
       align: t,
       nudgeAlignIntoViewport: n,
       useRawTargetDimensions: r,
-      spacing: o,
-      autoInvert: a,
+      spacing: a,
+      autoInvert: o,
       fixed: s,
       positionKey: l,
       disablePointerEvents: c,
@@ -177,7 +177,7 @@ class C extends(r = Chunk647438.Component) {
     })
   }
   constructor(...e) {
-    super(...e), O(this, "domElementRef", o.createRef()), O(this, "layerRef", o.createRef()), O(this, "popoutRef", o.createRef()), O(this, "resizeObserver", true), O(this, "popoutId", "popout_".concat(s()())), O(this, "loadingTimeout", new u.V7), O(this, "validClickTimeout", new u.V7), O(this, "isValidClickStart", false), O(this, "state", {
+    super(...e), O(this, "domElementRef", a.createRef()), O(this, "layerRef", a.createRef()), O(this, "popoutRef", a.createRef()), O(this, "resizeObserver", true), O(this, "popoutId", "popout_".concat(s()())), O(this, "loadingTimeout", new u.V7), O(this, "validClickTimeout", new u.V7), O(this, "isValidClickStart", false), O(this, "state", {
       renderedPosition: this.props.position,
       shouldShowPopout: false,
       shouldShowLoadingState: false,
@@ -220,8 +220,8 @@ class C extends(r = Chunk647438.Component) {
         onRequestClose: i
       } = this.props;
       if ((null == e ? true : e.shiftKey) && null != t) return void t(e);
-      let o = null != n;
-      (o ? n : this.state.shouldShowPopout) ? null == i || i(): null == r || r(), o || this.setState(e => {
+      let a = null != n;
+      (a ? n : this.state.shouldShowPopout) ? null == i || i(): null == r || r(), a || this.setState(e => {
         let {
           shouldShowPopout: t
         } = e;

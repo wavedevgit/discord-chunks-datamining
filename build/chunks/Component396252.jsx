@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk385499 = require("./385499.jsx"),
@@ -27,7 +27,7 @@ function g(e) {
     compact: i,
     usernameHook: g,
     channel: E
-  } = e, b = (0, a.e7)([c.Z], () => c.Z.getGuild(E.guild_id)), y = (0, u.ZP)(n), O = g(y), {
+  } = e, b = (0, o.e7)([c.Z], () => c.Z.getGuild(E.guild_id)), y = (0, u.ZP)(n), O = g(y), {
     avatarSrc: v,
     eventHandlers: {
       onMouseEnter: I,
@@ -38,7 +38,7 @@ function g(e) {
     onMouseEnter: I,
     onMouseLeave: T,
     children: (0, r.jsx)(_.Z, {
-      className: o()(m.mainContainer, {
+      className: a()(m.mainContainer, {
         [m.compact]: i
       }),
       iconNode: i ? null : (0, r.jsx)(f.S, {
@@ -47,13 +47,13 @@ function g(e) {
       iconContainerClassName: m.iconContainer,
       compact: i,
       children: (0, r.jsxs)("div", {
-        className: o()(m.content, {
+        className: a()(m.content, {
           [m.compact]: i
         }),
         children: [(0, r.jsx)(d.nD, {
           message: n,
           messageClassname: m.spanCorrection,
-          className: o()(m.usernameContainer, m.spanCorrection, {
+          className: a()(m.usernameContainer, m.spanCorrection, {
             [m.compact]: i
           }),
           username: (0, r.jsxs)("div", {
@@ -72,7 +72,7 @@ function g(e) {
           compact: i,
           showTimestamp: true
         }), (0, r.jsx)("div", {
-          className: o()(m.__invalid_messageContent, {
+          className: a()(m.__invalid_messageContent, {
             [m.compact]: i
           }),
           children: h.intl.format(h.t.W0UBIy, {

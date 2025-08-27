@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   s = require.n(Chunk392711),
   Chunk755721 = require("./755721.js"),
@@ -45,7 +45,7 @@ function p(e) {
     className: t,
     maxGuilds: n,
     guilds: i,
-    onFocus: a,
+    onFocus: o,
     onClick: p,
     size: h = u.Z.Sizes.SMALLER,
     hideOverflowCount: m = false,
@@ -60,9 +60,9 @@ function p(e) {
       y = s()(i).take(n).map((e, t) => {
         let n = e.name,
           i = t === b && !f,
-          a = o()(d.avatar, E, i && d.isLast);
+          o = a()(d.avatar, E, i && d.isLast);
         return g ? (0, r.jsx)("div", {
-          className: a,
+          className: o,
           children: (0, r.jsx)(u.Z, {
             guild: e,
             onClick: p,
@@ -71,7 +71,7 @@ function p(e) {
           })
         }) : (0, r.jsx)(c.DY3, {
           text: n,
-          className: a,
+          className: o,
           children: (0, r.jsx)(u.Z, {
             guild: e,
             onClick: p,
@@ -82,8 +82,8 @@ function p(e) {
     if (f) {
       let e = _(h);
       y[y.length - 1] = (0, r.jsx)(l.zx, {
-        className: o()(d.overflow, E),
-        onFocus: a,
+        className: a()(d.overflow, E),
+        onFocus: o,
         onClick: e => null == p ? true : p(e),
         look: l.zx.Looks.BLANK,
         size: l.zx.Sizes.NONE,
@@ -96,7 +96,7 @@ function p(e) {
     return y
   }
   return i.length <= 0 ? null : (0, r.jsx)("div", {
-    className: o()(t, d.avatars),
+    className: a()(t, d.avatars),
     children: b()
   })
 }

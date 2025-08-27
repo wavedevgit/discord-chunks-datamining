@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk913527 = require("./913527.js"),
   s = require.n(Chunk913527),
   Chunk481060 = require("./481060.js"),
@@ -22,31 +22,31 @@ function _(e) {
     dateUnlocked: n
   } = e, i = (0, u.oX)(t);
   if (null == i) return null;
-  let a = null != n,
+  let o = null != n,
     {
       name: _,
       description: p,
       hideDescriptionUntilUnlock: h,
       onAction: m
     } = i,
-    g = h && !a,
-    E = a ? "header-primary" : "text-muted",
-    b = a ? "header-secondary" : "text-muted",
+    g = h && !o,
+    E = o ? "header-primary" : "text-muted",
+    b = o ? "header-secondary" : "text-muted",
     y = s()(n),
-    O = null != m && a,
+    O = null != m && o,
     v = () => {
       O && m()
     },
     I = O ? l.P3F : "div";
   return (0, r.jsxs)(I, {
-    className: o()(f.container, O && f.actionable),
+    className: a()(f.container, O && f.actionable),
     onClick: v,
     children: [(0, r.jsx)("div", {
       className: f.iconContainer,
       children: (0, r.jsx)(d.Z, {
         achievementId: t,
         size: d.Z.Sizes.SIZE_40,
-        unlocked: a
+        unlocked: o
       })
     }), (0, r.jsxs)("div", {
       className: f.nameContainer,

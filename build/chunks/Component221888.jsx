@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   l = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
@@ -86,10 +86,10 @@ function P(e) {
     users: t,
     disableInteraction: n,
     guildId: i,
-    participantType: o,
+    participantType: a,
     channelId: s,
     handleUserContextMenu: l
-  } = e, c = R(o, t.length);
+  } = e, c = R(a, t.length);
   return (0, r.jsx)(d.VqE, {
     "aria-label": c,
     className: I.popoutWrapper,
@@ -105,7 +105,7 @@ function P(e) {
           guildId: null != i ? i : true,
           channelId: s,
           nick: b.ZP.getNickname(i, s, e),
-          className: a()(I.memberListItem, {
+          className: o()(I.memberListItem, {
             [I.popoutDisabled]: n
           }),
           textClassName: I.memberListItemText,
@@ -122,10 +122,10 @@ function w(e) {
     users: t,
     guildId: n,
     channelId: i,
-    maxVisibleUsers: o = 3,
+    maxVisibleUsers: a = 3,
     className: s,
     participantType: l
-  } = e, c = R(l, t.length), u = t.length < o ? t.map(e => (0, r.jsx)("div", {
+  } = e, c = R(l, t.length), u = t.length < a ? t.map(e => (0, r.jsx)("div", {
     className: I.viewersTooltipItem,
     children: b.ZP.getName(n, i, e)
   }, e.id)) : c;
@@ -133,7 +133,7 @@ function w(e) {
     text: u,
     "aria-label": c,
     children: (0, r.jsxs)("div", {
-      className: a()(I.viewers, s),
+      className: o()(I.viewers, s),
       children: [(0, r.jsx)(d.tEF, {
         size: "xs",
         color: "currentColor",
@@ -150,7 +150,7 @@ let D = [];
 function x(e) {
   let {
     channelId: t,
-    guildId: o,
+    guildId: a,
     participant: s,
     className: h,
     compact: b = false,
@@ -188,13 +188,13 @@ function x(e) {
   if (b) return (0, r.jsx)(w, {
     maxVisibleUsers: T,
     users: M,
-    guildId: o,
+    guildId: a,
     channelId: t,
     className: h,
     participantType: s.type
   });
   let B = l()(M).take(T).map(e => (0, r.jsx)(d.qEK, {
-    src: e.getAvatarURL(o, 24),
+    src: e.getAvatarURL(a, 24),
     "aria-label": e.username,
     size: d.EFr.SIZE_24,
     className: I.viewer
@@ -212,7 +212,7 @@ function x(e) {
         renderPopout: () => (0, r.jsx)(P, {
           participantType: s.type,
           handleUserContextMenu: G,
-          guildId: o,
+          guildId: a,
           channelId: t,
           users: M,
           disableInteraction: v
@@ -221,7 +221,7 @@ function x(e) {
         position: "top",
         children: () => (0, r.jsx)("div", {
           ref: A,
-          className: a()(I.viewers, h),
+          className: o()(I.viewers, h),
           children: B
         })
       })

@@ -6,7 +6,7 @@ require.d(exports, {
   Z: () => q
 }), require("./388685.js");
 var i, Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk177523 = require("./177523.js"),
@@ -44,9 +44,9 @@ let S = new Chunk177523.ZP(e => {
 function A(e, t) {
   let n = {};
   S.forEach(i => {
-    var o;
-    i !== v.Z.getGuildId() && i !== b.Z.getGuildId() && i !== (null == (o = h.Z.getChannel(O.Z.getChannelId())) ? true : o.getGuildId()) && (null == r || r.guildId !== i) && (S.clearWithoutFlushing(i, e), t && (n[i] = S.get(i)))
-  }), a().isEmpty(n) || l.Z.dispatch({
+    var a;
+    i !== v.Z.getGuildId() && i !== b.Z.getGuildId() && i !== (null == (a = h.Z.getChannel(O.Z.getChannelId())) ? true : a.getGuildId()) && (null == r || r.guildId !== i) && (S.clearWithoutFlushing(i, e), t && (n[i] = S.get(i)))
+  }), o().isEmpty(n) || l.Z.dispatch({
     type: "GUILD_SUBSCRIPTIONS_FLUSH",
     subscriptions: n
   })
@@ -74,7 +74,7 @@ function R(e) {
   let r = {};
   S.forEach(e => {
     null == E.Z.getGuild(e) ? S.clearWithoutFlushing(e, true) : r[e] = S.get(e)
-  }), a().isEmpty(r) || l.Z.dispatch({
+  }), o().isEmpty(r) || l.Z.dispatch({
     type: "GUILD_SUBSCRIPTIONS_FLUSH",
     subscriptions: r
   })

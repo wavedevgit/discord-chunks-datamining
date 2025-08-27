@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk780384 = require("./780384.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -34,10 +34,10 @@ function p(e) {
     onClick: b
   } = e, y = (0, c.ZP)();
   return (0, r.jsx)(d.Z, {
-    className: o()(f.statusWarningBlock, {
+    className: a()(f.statusWarningBlock, {
       [f.statusWarningBlockWithCta]: null != h
     }, t),
-    color: (0, a.wj)(y) ? n : u.W.BROWN,
+    color: (0, o.wj)(y) ? n : u.W.BROWN,
     children: (0, r.jsxs)("div", {
       className: i,
       children: [(0, r.jsx)(l.Text, {
@@ -47,8 +47,8 @@ function p(e) {
       }), null != h && null != b && (0, r.jsx)("div", {
         className: f.ctaButtonContainer,
         children: (0, r.jsx)(s.zx, {
-          className: o()(f.ctaButton, (0, a.wj)(y) ? true : f.ctaBlackButton, E),
-          color: (0, a.wj)(y) ? s.zx.Colors.WHITE : s.zx.Colors.CUSTOM,
+          className: a()(f.ctaButton, (0, o.wj)(y) ? true : f.ctaBlackButton, E),
+          color: (0, o.wj)(y) ? s.zx.Colors.WHITE : s.zx.Colors.CUSTOM,
           size: s.Ph.MEDIUM,
           onClick: b,
           disabled: g,

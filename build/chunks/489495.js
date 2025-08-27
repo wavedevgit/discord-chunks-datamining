@@ -11,16 +11,16 @@ require.d(exports, {
 }), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js"), require("./35282.js"), require("./853839.js"), require("./570086.js"), require("./479048.js"), require("./410992.js"), require("./227481.js"), require("./730884.js"), require("./20464.js"), require("./341884.js"), require("./364341.js"), require("./629680.js"), require("./505025.js"), require("./918970.js"), require("./121784.js"), require("./644351.js"), require("./146733.js");
 var Chunk605387 = require("./605387.js"),
   i = require.n(Chunk605387);
-let o = e => i().decode(e),
-  a = e => Math.round(e.frames.reduce((e, t) => e + t.delay, 0)),
+let a = e => i().decode(e),
+  o = e => Math.round(e.frames.reduce((e, t) => e + t.delay, 0)),
   s = async (e, t, n) => {
-    let r = o(await t.arrayBuffer());
+    let r = a(await t.arrayBuffer());
     return {
       src: URL.createObjectURL(t),
       base64: e,
       loop: false,
       loopDelay: 0,
-      duration: a(r),
+      duration: o(r),
       start: 0,
       position: {
         x: 0,
@@ -57,9 +57,9 @@ let c = (e, t) => ({
     }), n += "\n]"
   },
   f = e => {
-    let [t, n] = e.split(","), r = atob(n), i = t.split(";")[0], o = new Uint8Array(r.length);
-    for (let e = 0; e < r.length; e++) o[e] = r.charCodeAt(e);
-    return new Blob([o], {
+    let [t, n] = e.split(","), r = atob(n), i = t.split(";")[0], a = new Uint8Array(r.length);
+    for (let e = 0; e < r.length; e++) a[e] = r.charCodeAt(e);
+    return new Blob([a], {
       type: i
     })
   },

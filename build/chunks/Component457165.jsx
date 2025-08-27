@@ -9,7 +9,7 @@ require("./647438.js");
 var Chunk481060 = require("./481060.js"),
   Chunk981631 = require("./981631.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,7 +25,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      a(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -37,10 +37,10 @@ function l() {
       default: e
     } = await require.e("10165").then(require.bind(require, 166335));
     return t => (0, r.jsx)(e, s({
-      analyticsSource: o.Sbl.VOICE_FILTERS,
+      analyticsSource: a.Sbl.VOICE_FILTERS,
       analyticsLocation: {
-        section: o.jXE.VOICE_FILTERS_UPSELL_MODAL,
-        object: o.qAy.BUTTON_CTA
+        section: a.jXE.VOICE_FILTERS_UPSELL_MODAL,
+        object: a.qAy.BUTTON_CTA
       }
     }, t))
   })

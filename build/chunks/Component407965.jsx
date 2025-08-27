@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
-  a = require.n(Chunk512722),
+  o = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk82659 = require("./82659.jsx"),
   Chunk481060 = require("./481060.js"),
@@ -36,12 +36,12 @@ let b = e => {
       transitionState: e,
       onClose: t,
       premiumType: n,
-      setStep: o,
+      setStep: a,
       churnUserDiscountOffer: p,
       isFetchingChurnDiscountOffer: E
     } = (0, Chunk594135.a)(), y = (0, Chunk442837.e7)([Chunk594174.default], () => {
       let e = Chunk594174.default.getCurrentUser();
-      return a()(null != module, "ProfileItem: currentUser cannot be undefined"), module
+      return o()(null != module, "ProfileItem: currentUser cannot be undefined"), module
     });
     Chunk647438.useEffect(() => {
       (0, Chunk484459.Z)(y.id, y.getAvatarURL(null, 80))

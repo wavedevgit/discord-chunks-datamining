@@ -15,15 +15,15 @@ function s(e) {
     notificationBlockRef: t
   } = e, {
     selectedPlanNotification: n
-  } = (0, o.JL)();
+  } = (0, a.JL)();
   return null == n ? null : (0, r.jsxs)("div", {
-    className: a.notification,
+    className: o.notification,
     ref: t,
     children: [(0, r.jsx)(i.owK, {
-      className: a.icon,
+      className: o.icon,
       color: "currentColor"
     }), (0, r.jsx)("div", {
-      className: a.text,
+      className: o.text,
       children: n
     })]
   })

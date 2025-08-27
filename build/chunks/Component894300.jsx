@@ -14,17 +14,17 @@ function s(e) {
     className: t,
     game: n
   } = e;
-  return (0, o.hi)() && null != n && n.elevated ? (0, r.jsx)("div", {
+  return (0, a.hi)() && null != n && n.elevated ? (0, r.jsx)("div", {
     className: t,
     children: (0, r.jsx)(i.Wn, {
       messageType: i.QYI.WARNING,
       action: (0, r.jsx)(i.zxk, {
         variant: "secondary",
         size: "sm",
-        text: a.intl.string(a.t["1iI46O"]),
-        onClick: o.sU
+        text: o.intl.string(o.t["1iI46O"]),
+        onClick: a.sU
       }),
-      children: a.intl.string(a.t.NP1FHx)
+      children: o.intl.string(o.t.NP1FHx)
     })
   }) : null
 }

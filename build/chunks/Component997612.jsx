@@ -110,7 +110,7 @@ function L() {
     onRequestClose: () => {},
     children: t => (0, r.jsx)(h.h, w(R({
       size: "sm",
-      icon: o.ewm,
+      icon: a.ewm,
       "aria-label": "Settings",
       variant: "icon-only"
     }, t), {
@@ -193,7 +193,7 @@ function j(e) {
           children: [(0, r.jsx)(g.ZP.Divider, {
             className: C.headerDivider
           }), (0, r.jsx)(g.ZP.Title, {
-            children: (0, r.jsx)(a.Anchor, {
+            children: (0, r.jsx)(o.Anchor, {
               href: E.docs,
               children: "Docs"
             })
@@ -202,7 +202,7 @@ function j(e) {
           size: "sm",
           "aria-label": "Copy Link",
           variant: "icon-only",
-          icon: o.TIy,
+          icon: a.TIy,
           onClick: N
         }) : null, (0, r.jsx)("div", {
           className: C.headerRight,

@@ -116,7 +116,7 @@ function x(e) {
   A = e.reduce((e, t) => {
     var n;
     return p(f({}, e), {
-      [t.id]: p(f({}, (0, a.Jh)(t)), {
+      [t.id]: p(f({}, (0, o.Jh)(t)), {
         approximateMemberCount: null != (n = t.approximate_member_count) ? n : 0
       })
     })
@@ -134,11 +134,11 @@ function j(e) {
   } = e, {
     actions: r,
     guilds: i,
-    totals: o,
-    teenId: a,
+    totals: a,
+    teenId: o,
     rangeStartId: l
   } = n;
-  h = a, m = l, D(r), w(o), x(i), P(t), I = false, T = s.default.fromTimestamp(Date.now()), v = true
+  h = o, m = l, D(r), w(a), x(i), P(t), I = false, T = s.default.fromTimestamp(Date.now()), v = true
 }
 
 function M(e) {
@@ -164,10 +164,10 @@ function U(e) {
     actions: n,
     totals: r,
     guilds: i,
-    teenId: o,
-    rangeStartId: a
+    teenId: a,
+    rangeStartId: o
   } = t;
-  h = o, m = a, D(n), w(r), x(i), I = false, T = s.default.fromTimestamp(Date.now())
+  h = a, m = o, D(n), w(r), x(i), I = false, T = s.default.fromTimestamp(Date.now())
 }
 
 function G(e) {
@@ -213,7 +213,7 @@ function H(e) {
     user: t
   } = e;
   if (true === t.linked_users) return;
-  let n = o.default.getUsers();
+  let n = a.default.getUsers();
   t.linked_users.some(e => {
     let {
       user_id: t

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk751334 = require("./751334.jsx"),
   Chunk920155 = require("./920155.jsx"),
   Chunk744399 = require("./744399.jsx"),
@@ -59,8 +59,8 @@ function E(e, t) {
   if (null == e) return {};
   var n, r, i = b(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -68,15 +68,15 @@ function E(e, t) {
 function b(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
 function y(e) {
   var t, {
       title: n,
-      body: o,
+      body: a,
       caretConfig: p = {
         position: "bottom",
         align: "center"
@@ -107,7 +107,7 @@ function y(e) {
         onClick: N,
         variant: null != I ? "color-mix" : true
       }), null != b && (0, r.jsx)("div", {
-        className: a()(_.graphic, {
+        className: o()(_.graphic, {
           [_["graphic--".concat(y)]]: null != y
         }),
         children: (0, r.jsx)(s.z, g(h({}, b), {
@@ -115,7 +115,7 @@ function y(e) {
         }))
       }), (0, r.jsx)(f.Y, {
         title: n,
-        body: o,
+        body: a,
         badge: m,
         textLink: v,
         hasBottomMargin: null != O

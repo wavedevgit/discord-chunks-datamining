@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk202841 = require("./202841.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -92,7 +92,7 @@ function Q(e) {
   let {
     onSettingsButtonClick: t,
     wide: n,
-    showOutputDevices: o = false,
+    showOutputDevices: a = false,
     showSearchBar: F = true
   } = e, [H, Q] = i.useState(""), {
     analyticsLocations: J,
@@ -108,8 +108,8 @@ function Q(e) {
   (0, B.useSyncMessages)(G.messagesLoader);
   let en = (0, l.e7)([O.default], () => (0, I.I5)(O.default.getCurrentUser())),
     er = (0, l.e7)([C.Z], () => C.Z.getCatalogUpdateTime()),
-    [ei, eo] = i.useState(false),
-    [ea, es] = i.useState(false),
+    [ei, ea] = i.useState(false),
+    [eo, es] = i.useState(false),
     {
       activeVoice: el
     } = (0, N.o)(),
@@ -149,7 +149,7 @@ function Q(e) {
     e_ = i.useRef(null),
     ep = e => {
       let t = e_.current;
-      if (null == t || (eo(e > 0), ea)) return;
+      if (null == t || (ea(e > 0), eo)) return;
       let {
         height: n,
         totalHeight: r
@@ -168,7 +168,7 @@ function Q(e) {
     value: J,
     children: (0, r.jsxs)("div", {
       ref: ee,
-      className: a()(Z.voiceFiltersPopout, {
+      className: o()(Z.voiceFiltersPopout, {
         [Z.wide]: n,
         [Z.notResizable]: !eg
       }),
@@ -231,7 +231,7 @@ function Q(e) {
           })
         })]
       }), (0, r.jsx)(w.l, {}), (0, r.jsx)(P.R, {}), (0, r.jsx)(D.y, {}), (0, r.jsxs)("div", {
-        className: a()(Z.voiceFiltersFooter, {
+        className: o()(Z.voiceFiltersFooter, {
           [Z.hasActiveVoice]: null != el
         }),
         children: [(0, r.jsx)(g.j, {
@@ -244,7 +244,7 @@ function Q(e) {
             })
           },
           popoutPosition: "top"
-        }), o && (0, r.jsx)(g.j, {
+        }), a && (0, r.jsx)(g.j, {
           deviceType: U.h7.AUDIO_OUTPUT,
           location: "VoiceFiltersPopout",
           popoutPosition: "top"
@@ -256,8 +256,8 @@ function Q(e) {
             renderInputModes: true,
             renderInputVolume: true,
             renderInputDevices: true,
-            renderOutputDevices: o,
-            renderOutputVolume: o,
+            renderOutputDevices: a,
+            renderOutputVolume: a,
             onClose: t,
             onInteraction: (0, m.u)("AudioDeviceMenu", $, {
               entrypoint: M.A5.THREE_DOT

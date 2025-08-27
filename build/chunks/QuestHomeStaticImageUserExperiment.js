@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk818083 = require("./818083.js"),
   Chunk520278 = require("./520278.js"),
   Chunk46140 = require("./46140.js");
-let a = (0, Chunk818083.B)({
+let o = (0, Chunk818083.B)({
   id: "2025-02_quest_home_static_image",
   kind: "user",
   label: "Quest Home Static Image Experiment",
@@ -30,5 +30,5 @@ let a = (0, Chunk818083.B)({
 });
 
 function s(e, t) {
-  return (0, i.J)(a, o.S7.QUEST_HOME_FORCE_STATIC_IMAGE, e, t)
+  return (0, i.J)(o, a.S7.QUEST_HOME_FORCE_STATIC_IMAGE, e, t)
 }

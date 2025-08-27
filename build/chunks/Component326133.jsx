@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk91192 = require("./91192.jsx"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -69,8 +69,8 @@ function N(e, t) {
   if (null == e) return {};
   var n, r, i = R(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -78,8 +78,8 @@ function N(e, t) {
 function R(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let P = 490,
@@ -88,7 +88,7 @@ let P = 490,
   x = 200,
   L = 120,
   j = Chunk647438.forwardRef(function(e, t) {
-    var n, o, T, A, R, j, M;
+    var n, a, T, A, R, j, M;
     let {
       channel: k,
       type: U,
@@ -136,12 +136,12 @@ let P = 490,
       },
       en = P;
     null != Q && (en = (null == (A = U.autocomplete) ? true : A.small) ? x : (null == (R = W.query) ? true : R.type) === b.eq.EMOJIS_AND_STICKERS ? w : D);
-    let er = Math.max(G, null != (j = null == Z || null == (o = Z.current) ? true : o.clientHeight) ? j : 0),
+    let er = Math.max(G, null != (j = null == Z || null == (a = Z.current) ? true : a.clientHeight) ? j : 0),
       ei = Math.min(.5 * window.innerHeight, er);
     en = Math.min(window.innerHeight - L - ei - (null != F ? F : 0), en);
-    let eo = (0, r.jsx)(_.ZP, {
+    let ea = (0, r.jsx)(_.ZP, {
       id: V,
-      className: a()(I.autocomplete, et),
+      className: o()(I.autocomplete, et),
       innerClassName: I.autocompleteInner,
       onMouseDown: e => e.preventDefault(),
       children: (0, r.jsx)(s.bG, {
@@ -180,7 +180,7 @@ let P = 490,
         spacing: 8,
         autoInvert: true,
         nudgeAlignIntoViewport: true,
-        children: () => eo
+        children: () => ea
       })
-    }) : eo
+    }) : ea
   })

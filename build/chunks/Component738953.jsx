@@ -103,14 +103,14 @@ function z(e) {
     disableAutoFocus: er = false
   } = e, {
     analyticsLocations: ei
-  } = (0, _.ZP)([...et, f.Z.USER_PROFILE_POPOUT]), eo = (0, T.ZB)({
+  } = (0, _.ZP)([...et, f.Z.USER_PROFILE_POPOUT]), ea = (0, T.ZB)({
     layout: "POPOUT",
     userId: n.id,
     guildId: Y,
     channelId: z,
     messageId: q,
     roleId: X
-  }), ea = (0, a.e7)([v.Z], () => null != Y ? v.Z.getGuild(Y) : null), es = i.useMemo(() => null != Y ? {
+  }), eo = (0, o.e7)([v.Z], () => null != Y ? v.Z.getGuild(Y) : null), es = i.useMemo(() => null != Y ? {
     [Y]: [n.id]
   } : {}, [Y, n.id]);
   (0, d.$)(es, "UserProfilePopout");
@@ -156,7 +156,7 @@ function z(e) {
         sourceAnalyticsLocations: ei,
         hideRestrictedProfile: true,
         customStatusPrompt: eT
-      }, eo, e), {
+      }, ea, e), {
         appContext: en
       }))
     },
@@ -167,16 +167,16 @@ function z(e) {
         eS(), (0, S.pQ)(H({
           action: "PRESS_VIEW_PROFILE",
           analyticsLocations: ei
-        }, eo))
+        }, ea))
       }
     }),
     eC = er ? "div" : l.VqE,
     eN = (0, p.Dt)(),
-    eR = I.ZP.useName(null == ea ? true : ea.id, z, n);
+    eR = I.ZP.useName(null == eo ? true : eo.id, z, n);
   return (0, r.jsx)(_.Gt, {
     value: ei,
     children: (0, r.jsx)(T.Mt, {
-      value: eo,
+      value: ea,
       openedAt: Q,
       fetchStartedAt: null == ec ? true : ec.fetchStartedAt,
       fetchEndedAt: null == ec ? true : ec.fetchEndedAt,
@@ -197,7 +197,7 @@ function z(e) {
             user: n,
             displayProfile: ec,
             themeType: B.l.POPOUT,
-            children: [null != ed.interactionType && (0, r.jsx)(o.animated.div, {
+            children: [null != ed.interactionType && (0, r.jsx)(a.animated.div, {
               style: ef,
               className: F.backdrop
             }), (0, r.jsxs)(x.Z, {
@@ -264,7 +264,7 @@ function z(e) {
               user: n,
               currentUser: V,
               displayProfile: ec,
-              guild: ea,
+              guild: eo,
               isHovering: null == ed.interactionType && eu,
               onOpenProfile: ee ? true : eS,
               channelId: z,

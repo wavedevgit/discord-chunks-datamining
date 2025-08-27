@@ -20,8 +20,8 @@ function l(e) {
   } = e;
   c({
     autoOpen: n
-  }), a.Z.open(t, s.pNK.EMOJI, i);
-  let l = (0, o.Su)();
+  }), o.Z.open(t, s.pNK.EMOJI, i);
+  let l = (0, a.Su)();
   null != l && l.windowDispatch.dispatch(s.CkL.POPOUT_CLOSE), (0, r.pTH)()
 }
 

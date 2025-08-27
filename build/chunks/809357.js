@@ -16,7 +16,7 @@ function s(e) {
     options: n
   } = e, r = l(), {
     showKeybindIndicators: i
-  } = o.Z.useExperiment({
+  } = a.Z.useExperiment({
     location: t
   }, n);
   return i && r

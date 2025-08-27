@@ -13,12 +13,12 @@ require.r(exports), require.d(exports, {
   expandLocation: () => F,
   getAnalyticsEventsRecording: () => ee,
   getNewAnalyticsLoadId: () => es,
-  isGameApplicationType: () => eo,
+  isGameApplicationType: () => ea,
   launchSignature: () => U,
   setUTMContext: () => K,
   startRecordingAnalyticsEvents: () => J,
   stopRecordingAnalyticsEvents: () => $,
-  trackNetworkAction: () => ea
+  trackNetworkAction: () => eo
 }), require("./539854.js"), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk772848 = require("./772848.js"),
@@ -81,8 +81,8 @@ function T(e, t) {
   if (null == e) return {};
   var n, r, i = S(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -90,8 +90,8 @@ function T(e, t) {
 function S(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let A = {
@@ -384,29 +384,29 @@ function K(e) {
 
 function z(e) {
   var t, n, r, i;
-  let o = null != e ? e : {};
-  if (null != o.location) {
+  let a = null != e ? e : {};
+  if (null != a.location) {
     let {
       location: e
-    } = o;
-    o = O({}, T(o, ["location"]), F(e))
+    } = a;
+    a = O({}, T(a, ["location"]), F(e))
   }
-  if (null != o.source) {
+  if (null != a.source) {
     let {
       source: e
-    } = o;
-    o = O({}, T(o, ["source"]), V(e))
+    } = a;
+    a = O({}, T(a, ["source"]), V(e))
   }
-  o.client_performance_cpu = p.Z.getCurrentCPUUsagePercent(), o.client_performance_memory = p.Z.getCurrentMemoryUsageKB(), o.cpu_core_count = p.Z.getCPUCoreCount(), o.accessibility_features = H(), o.rendered_locale = b.intl.currentLocale, o.uptime_app = Math.floor((performance.now() - k) / 1e3);
-  let a = p.Z.getProcessUptime();
-  null != a && (o.uptime_process_renderer = Math.floor(a));
+  a.client_performance_cpu = p.Z.getCurrentCPUUsagePercent(), a.client_performance_memory = p.Z.getCurrentMemoryUsageKB(), a.cpu_core_count = p.Z.getCPUCoreCount(), a.accessibility_features = H(), a.rendered_locale = b.intl.currentLocale, a.uptime_app = Math.floor((performance.now() - k) / 1e3);
+  let o = p.Z.getProcessUptime();
+  null != o && (a.uptime_process_renderer = Math.floor(o));
   let {
     utmSource: s,
     utmMedium: l,
     utmCampaign: c,
     utmContent: u
   } = N;
-  return o.utm_source = null != (t = o.utm_source) ? t : s, o.utm_medium = null != (n = o.utm_medium) ? n : l, o.utm_campaign = null != (r = o.utm_campaign) ? r : c, o.utm_content = null != (i = o.utm_content) ? i : u, o.launch_signature = U, G.forEach(e => e(o)), o
+  return a.utm_source = null != (t = a.utm_source) ? t : s, a.utm_medium = null != (n = a.utm_medium) ? n : l, a.utm_campaign = null != (r = a.utm_campaign) ? r : c, a.utm_content = null != (i = a.utm_content) ? i : u, a.launch_signature = U, G.forEach(e => e(a)), a
 }
 
 function q(e, t) {
@@ -457,11 +457,11 @@ let ei = (0, Chunk990547.trackMaker)({
   TRACK_ACTION_NAME: "TRACK"
 });
 
-function eo(e) {
+function ea(e) {
   return e === E.wW.GAME || e === E.wW.DEPRECATED_GAME
 }
 
-function ea(e, t) {
+function eo(e, t) {
   let n = z(O({
     location: (0, c.k$)()
   }, t));

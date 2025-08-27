@@ -43,21 +43,21 @@ function p(e) {
     channelContext: f,
     customGiftMessage: p,
     giftInfo: h
-  } = e, m = false, g = null, E = o.default.getCurrentUser(), b = (0, l.yd)(null == E ? true : E.premiumType, u.p9.TIER_0);
+  } = e, m = false, g = null, E = a.default.getCurrentUser(), b = (0, l.yd)(null == E ? true : E.premiumType, u.p9.TIER_0);
   (0, i.ZDy)(async () => {
     let {
       default: e
     } = await n.e("38029").then(n.bind(n, 409858));
     return n => {
-      var i, o;
+      var i, a;
       return (0, r.jsx)(e, _({
         code: t,
         channelContext: f,
         customGiftMessage: p,
         emojiName: null == h || null == (i = h.emoji) ? true : i.name,
-        soundId: null == h || null == (o = h.sound) ? true : o.id,
+        soundId: null == h || null == (a = h.sound) ? true : a.id,
         onComplete: (e, t) => {
-          g = e, t && (m = t, e.isSubscription && null == a.Z.getPremiumSubscription(false) && (0, c.H)(true))
+          g = e, t && (m = t, e.isSubscription && null == o.Z.getPremiumSubscription(false) && (0, c.H)(true))
         }
       }, n))
     }

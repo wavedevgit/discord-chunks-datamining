@@ -16,52 +16,52 @@ var Chunk594174 = require("./594174.js"),
 
 function l(e, t) {
   switch (t) {
-    case o.mFx.LISTEN:
-      return a.intl.formatToPlainString(a.t["/8czHx"], {
+    case a.mFx.LISTEN:
+      return o.intl.formatToPlainString(o.t["/8czHx"], {
         name: e
       });
-    case o.mFx.WATCH:
-      return a.intl.formatToPlainString(a.t.BBJXVl, {
+    case a.mFx.WATCH:
+      return o.intl.formatToPlainString(o.t.BBJXVl, {
         name: e
       });
-    case o.mFx.JOIN:
-      return a.intl.string(a.t.pkq6Vl);
-    case o.mFx.STREAM_REQUEST:
-      return a.intl.string(s.default.DKHheX);
-    case o.mFx.JOIN_REQUEST:
+    case a.mFx.JOIN:
+      return o.intl.string(o.t.pkq6Vl);
+    case a.mFx.STREAM_REQUEST:
+      return o.intl.string(s.default.DKHheX);
+    case a.mFx.JOIN_REQUEST:
     default:
-      return a.intl.string(a.t.Ckxb6u)
+      return o.intl.string(o.t.Ckxb6u)
   }
 }
 
 function c(e, t, n) {
-  return e.author.id === n ? a.intl.string(s.default["8B3U5O"]) : a.intl.formatToPlainString(s.default["d/qbCw"], {
+  return e.author.id === n ? o.intl.string(s.default["8B3U5O"]) : o.intl.formatToPlainString(s.default["d/qbCw"], {
     username: (0, i.oY)(t.guild_id, t.id, e.author)
   })
 }
 
-function u(e, t, n, i, o) {
+function u(e, t, n, i, a) {
   if (e.author.id === i) {
     if (n.isPrivate()) {
       let e = r.default.getUser(n.getRecipientId());
-      if (null != e) return o ? a.intl.formatToPlainString(a.t.JddpNz, {
+      if (null != e) return a ? o.intl.formatToPlainString(o.t.JddpNz, {
         username: e.globalName,
         appName: t.name
-      }) : a.intl.formatToPlainString(a.t.gYVkSU, {
+      }) : o.intl.formatToPlainString(o.t.gYVkSU, {
         username: e.globalName,
         appName: t.name
       })
     }
-    return o ? a.intl.formatToPlainString(a.t["2N1kNT"], {
+    return a ? o.intl.formatToPlainString(o.t["2N1kNT"], {
       appName: t.name
-    }) : a.intl.formatToPlainString(a.t.IA6uDQ, {
+    }) : o.intl.formatToPlainString(o.t.IA6uDQ, {
       appName: t.name
     })
   }
-  return o ? a.intl.formatToPlainString(a.t.XE8axM, {
+  return a ? o.intl.formatToPlainString(o.t.XE8axM, {
     username: e.author.globalName,
     appName: t.name
-  }) : a.intl.formatToPlainString(a.t.hgcjOj, {
+  }) : o.intl.formatToPlainString(o.t.hgcjOj, {
     username: e.author.globalName,
     appName: t.name
   })
@@ -70,13 +70,13 @@ function u(e, t, n, i, o) {
 function d(e, t, n, r) {
   var i;
   switch (null == (i = e.activity) ? true : i.type) {
-    case o.mFx.LISTEN:
-    case o.mFx.WATCH:
-    case o.mFx.JOIN:
-      return a.intl.string(a.t.x1UXGR);
-    case o.mFx.STREAM_REQUEST:
+    case a.mFx.LISTEN:
+    case a.mFx.WATCH:
+    case a.mFx.JOIN:
+      return o.intl.string(o.t.x1UXGR);
+    case a.mFx.STREAM_REQUEST:
       return c(e, n, r);
-    case o.mFx.JOIN_REQUEST:
+    case a.mFx.JOIN_REQUEST:
     default:
       return u(e, t, n, r, true)
   }
@@ -88,15 +88,15 @@ function f(e) {
     maxPartySize: r,
     partySize: i
   } = e;
-  return n === o.mFx.STREAM_REQUEST ? "" : t = n === o.mFx.LISTEN ? r > 0 ? a.intl.formatToPlainString(a.t.Zogooq, {
+  return n === a.mFx.STREAM_REQUEST ? "" : t = n === a.mFx.LISTEN ? r > 0 ? o.intl.formatToPlainString(o.t.Zogooq, {
     partySize: i,
     maxPartySize: r
-  }) : a.intl.formatToPlainString(a.t.UGei0t, {
+  }) : o.intl.formatToPlainString(o.t.UGei0t, {
     partySize: i
-  }) : r > 0 ? a.intl.formatToPlainString(a.t.gLu7NT, {
+  }) : r > 0 ? o.intl.formatToPlainString(o.t.gLu7NT, {
     partySize: i,
     maxPartySize: r
-  }) : a.intl.formatToPlainString(a.t["65JnWF"], {
+  }) : o.intl.formatToPlainString(o.t["65JnWF"], {
     partySize: i
   })
 }

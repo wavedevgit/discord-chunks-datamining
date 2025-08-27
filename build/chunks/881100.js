@@ -44,12 +44,12 @@ let G = (e, t, n) => (0, i.wj)(e) ? t : n,
   B = e => {
     let {
       styles: t
-    } = e, n = (0, a.ZP)(), i = (0, r.e7)([s.default], () => {
+    } = e, n = (0, o.ZP)(), i = (0, r.e7)([s.default], () => {
       let e = s.default.getCurrentUser();
       return c.ZP.canUsePremiumProfileCustomization(e)
     }), B = e => {
       let t = () => {
-        o.Z.open(d.oAB.PROFILE_CUSTOMIZATION, null, {
+        a.Z.open(d.oAB.PROFILE_CUSTOMIZATION, null, {
           scrollPosition: f.Y_.TRY_IT_OUT,
           analyticsLocations: e
         })

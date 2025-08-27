@@ -31,7 +31,7 @@ let p = Chunk704215.z.FOR_LATER_POPOUT_COACHMARK,
     content: d.intl.string(d.t.URrJq6),
     buttonCTA: d.intl.string(d.t["NX+WJC"]),
     buttonProps: {
-      color: o.Tt.WHITE,
+      color: a.Tt.WHITE,
       innerClassName: f.primaryButton
     },
     onClick: () => e(u.L.USER_DISMISS),
@@ -45,19 +45,19 @@ function g(e) {
     children: n,
     targetElementRef: i
   } = e, {
-    enabled: o,
+    enabled: a,
     inInbox: l
   } = c.Z.useExperiment({
     location: "ForLaterCoachmarkWeb"
   }, {
     autoTrackExposure: false
-  }), u = t === (l ? "inbox-button" : "bookmarks-button"), d = o && u ? [p] : [], [f, _] = (0, s.US)(d, true);
-  return f !== p ? n : (0, r.jsx)(a.yRy, {
+  }), u = t === (l ? "inbox-button" : "bookmarks-button"), d = a && u ? [p] : [], [f, _] = (0, s.US)(d, true);
+  return f !== p ? n : (0, r.jsx)(o.yRy, {
     targetElementRef: i,
     renderPopout: () => m(_),
     position: "bottom",
     align: "right",
-    animation: a.yRy.Animation.TRANSLATE,
+    animation: o.yRy.Animation.TRANSLATE,
     shouldShow: true,
     children: () => n
   })

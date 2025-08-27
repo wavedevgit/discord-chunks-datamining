@@ -32,13 +32,13 @@ function A(e) {
   let {
     discoverableGuildId: t,
     closePopout: n,
-    buttonType: o
-  } = e, a = i.useCallback(async () => {
+    buttonType: a
+  } = e, o = i.useCallback(async () => {
     if (n(), null != t) try {
       await u.Z.joinGuild(t), u.Z.transitionToGuildSync(t)
     } catch (e) {}
   }, [n, t]);
-  return o === y.y.GET_NITRO ? (0, r.jsx)(E.Z, {
+  return a === y.y.GET_NITRO ? (0, r.jsx)(E.Z, {
     fullWidth: true,
     showGradient: true,
     premiumModalAnalyticsLocation: {
@@ -51,12 +51,12 @@ function A(e) {
     textOptions: {
       textOverride: T.intl.string(T.t.pj0XBA)
     }
-  }) : o === y.y.JOIN_GUILD ? (0, r.jsx)(c.zxk, {
+  }) : a === y.y.JOIN_GUILD ? (0, r.jsx)(c.zxk, {
     variant: "primary",
     size: "sm",
     text: T.intl.string(T.t.riu2R0),
     fullWidth: true,
-    onClick: a
+    onClick: o
   }) : null
 }
 
@@ -91,13 +91,13 @@ function C(e) {
           channel: true,
           isSoundmoji: true,
           onSelectItem: () => {}
-        }), (0, r.jsx)(a.xv, {
+        }), (0, r.jsx)(o.xv, {
           variant: "text-sm/normal",
           children: L
         })]
       }), null != k && (0, r.jsxs)("div", {
         className: S.infoExpandedGuildContainer,
-        children: [(0, r.jsx)(a.xv, {
+        children: [(0, r.jsx)(o.xv, {
           variant: "eyebrow",
           color: "header-muted",
           className: S.infoExpandedGuildTitle,
@@ -117,7 +117,7 @@ function C(e) {
       })]
     }), (0, r.jsx)(c.IGR, {
       text: "BETA",
-      color: o.Z.BG_BRAND,
+      color: a.Z.BG_BRAND,
       className: S.betaBadge
     })]
   })

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  a = require.n(Chunk392711),
   Chunk481060 = require("./481060.js"),
   Chunk730749 = require("./730749.jsx"),
   Chunk823379 = require("./823379.js"),
@@ -23,10 +23,10 @@ let u = 99,
       className: c.partyMember
     }) : (0, r.jsx)("div", {
       className: c.partyMember,
-      children: (0, r.jsx)(a.qEK, {
+      children: (0, r.jsx)(o.qEK, {
         src: t.getAvatarURL(i, 16),
         "aria-label": t.username,
-        size: a.EFr.SIZE_16,
+        size: o.EFr.SIZE_16,
         className: c.partyMember
       })
     })
@@ -37,25 +37,25 @@ let u = 99,
       partySize: t,
       members: n,
       minAvatarsShown: i = 1,
-      maxAvatarsShown: a = 2,
+      maxAvatarsShown: o = 2,
       guildId: s
     } = e, {
       totalSize: d,
       knownSize: _
     } = t;
     if (d < i) return null;
-    let p = o()(n).filter(l.lm).take(a).map(e => (0, r.jsx)(f, {
+    let p = a()(n).filter(l.lm).take(o).map(e => (0, r.jsx)(f, {
         member: e,
         guildId: s
       }, e.id)).value(),
       h = d - _;
-    for (let e = 0; e < h && p.length < a; e++) p.push((0, r.jsx)(f, {
+    for (let e = 0; e < h && p.length < o; e++) p.push((0, r.jsx)(f, {
       empty: true,
       guildId: s
     }, "empty-member-".concat(e)));
     let m = Math.max(Math.min(d - p.length, u), 0);
     if (1 === m) {
-      let e = n[a];
+      let e = n[o];
       p.push((0, r.jsx)(f, {
         member: e,
         guildId: s

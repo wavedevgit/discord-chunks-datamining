@@ -6,7 +6,7 @@ require.d(exports, {
   Ic: () => u,
   Jn: () => p,
   ZN: () => g,
-  ZP: () => o,
+  ZP: () => a,
   a0: () => _,
   oT: () => m,
   vx: () => d,
@@ -15,11 +15,11 @@ require.d(exports, {
 });
 var Chunk463424 = require("./463424.js"),
   Chunk441349 = require("./441349.js");
-let o = {
+let a = {
     isPngFile: y,
     findPngOffsets: O
   },
-  a = "\x89PNG\r\n\x1a\n",
+  o = "\x89PNG\r\n\x1a\n",
   s = 4,
   l = 4,
   c = 0,
@@ -35,53 +35,53 @@ let o = {
   b = "iCCP";
 
 function y(e) {
-  return !!e && (0, r.oH)(e, 0, a.length) === a
+  return !!e && (0, r.oH)(e, 0, o.length) === o
 }
 
 function O(e, t) {
   let n = 4,
-    o = {
+    a = {
       hasAppMarkers: false
     },
-    f = a.length;
+    f = o.length;
   for (; f + s + l <= e.byteLength;) {
-    if (i.Z.USE_PNG_FILE && v(e, f)) o.hasAppMarkers = true, o.pngHeaderOffset = f + d;
+    if (i.Z.USE_PNG_FILE && v(e, f)) a.hasAppMarkers = true, a.pngHeaderOffset = f + d;
     else if (i.Z.USE_XMP && I(e, f)) {
       let t = N(e, f);
-      true !== t && (o.hasAppMarkers = true, o.xmpChunks = [{
+      true !== t && (a.hasAppMarkers = true, a.xmpChunks = [{
         dataOffset: t,
         length: e.getUint32(f + c) - (t - (f + d))
       }])
     } else if (T(e, f, t)) {
-      o.hasAppMarkers = true;
+      a.hasAppMarkers = true;
       let t = (0, r.oH)(e, f + u, l);
-      o.pngTextChunks || (o.pngTextChunks = []), o.pngTextChunks.push({
+      a.pngTextChunks || (a.pngTextChunks = []), a.pngTextChunks.push({
         length: e.getUint32(f + c),
         type: t,
         offset: f + d
       })
-    } else if (S(e, f)) o.hasAppMarkers = true, o.tiffHeaderOffset = f + d;
+    } else if (S(e, f)) a.hasAppMarkers = true, a.tiffHeaderOffset = f + d;
     else if (i.Z.USE_ICC && t && A(e, f)) {
-      o.hasAppMarkers = true;
+      a.hasAppMarkers = true;
       let t = e.getUint32(f + c),
         n = f + d,
         {
           profileName: r,
           compressionMethod: i,
-          compressedProfileOffset: a
+          compressedProfileOffset: o
         } = R(e, n);
-      o.iccChunks || (o.iccChunks = []), o.iccChunks.push({
-        offset: a,
-        length: t - (a - n),
+      a.iccChunks || (a.iccChunks = []), a.iccChunks.push({
+        offset: o,
+        length: t - (o - n),
         chunkNumber: 1,
         chunksTotal: 1,
         profileName: r,
         compressionMethod: i
       })
-    } else C(e, f) && (o.hasAppMarkers = true, o.pngChunkOffsets || (o.pngChunkOffsets = []), o.pngChunkOffsets.push(f + c));
+    } else C(e, f) && (a.hasAppMarkers = true, a.pngChunkOffsets || (a.pngChunkOffsets = []), a.pngChunkOffsets.push(f + c));
     f += e.getUint32(f + c) + s + l + n
   }
-  return o
+  return a
 }
 
 function v(e, t) {
@@ -122,9 +122,9 @@ function N(e, t) {
 function R(e, t) {
   let n = 1,
     i = 1,
-    o = (0, r.o7)(e, t);
-  return t += o.length + n, {
-    profileName: o,
+    a = (0, r.o7)(e, t);
+  return t += a.length + n, {
+    profileName: a,
     compressionMethod: e.getUint8(t),
     compressedProfileOffset: t += i
   }

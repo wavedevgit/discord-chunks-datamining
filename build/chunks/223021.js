@@ -10,9 +10,9 @@ let i = {
     LATIN24: Chunk724913.latin24CompactTimeStamp,
     ASIAN: Chunk724913.asianCompactTimeStamp
   },
-  o = 5,
-  a = /(AM|PM)$/;
+  a = 5,
+  o = /(AM|PM)$/;
 
 function s(e) {
-  return null != e.match(a) ? i.LATIN24 : e.length <= o ? i.LATIN12 : i.ASIAN
+  return null != e.match(o) ? i.LATIN24 : e.length <= a ? i.LATIN12 : i.ASIAN
 }

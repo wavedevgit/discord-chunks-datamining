@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk990547 = require("./990547.js"),
   Chunk442837 = require("./442837.js"),
   Chunk692547 = require("./692547.js"),
@@ -43,7 +43,7 @@ function L(e) {
   let {
     giftIntentType: t,
     premiumGiftIntentCardType: n,
-    recipientUser: o,
+    recipientUser: a,
     onMouseEnter: x,
     onMouseLeave: L,
     popoutPosition: j,
@@ -53,7 +53,7 @@ function L(e) {
     giftIntentSecondaryAction: G
   } = e, B = (0, l.e7)([y.default], () => y.default.getCurrentUser()), {
     analyticsLocations: Z
-  } = (0, h.ZP)(), F = (0, l.e7)([S.Z], () => S.Z.getFriendAnniversaryYears(o.id));
+  } = (0, h.ZP)(), F = (0, l.e7)([S.Z], () => S.Z.getFriendAnniversaryYears(a.id));
   i.useEffect(() => {
     (0, m.h)({
       name: s.ImpressionNames.GIFT_INTENT_CARD,
@@ -66,7 +66,7 @@ function L(e) {
     })
   }, [t, n]);
   let V = () => t === C.hX.FRIEND_ANNIVERSARY ? w.intl.formatToPlainString(w.t.BWJvAA, {
-      friendUserName: v.ZP.getName(o)
+      friendUserName: v.ZP.getName(a)
     }) : (0, I.Ou)(t),
     H = () => t === C.hX.FRIEND_ANNIVERSARY ? w.intl.formatToPlainString(w.t.S3fdq6, {
       numberOfYears: F
@@ -90,7 +90,7 @@ function L(e) {
       (0, b.Z)({
         isGift: true,
         initialPlanId: null,
-        giftRecipient: o,
+        giftRecipient: a,
         analyticsLocation: "system_message" === n ? r.chat : r.actionButtonCoachmark,
         analyticsLocations: Z,
         analyticsObject: {
@@ -108,8 +108,8 @@ function L(e) {
         cta_type: G
       }), G === C.X2.VIEW_ALL ? _.Z.transitionToSection(N.pJs.ALL, {
         explicit: true
-      }) : G === C.X2.SEND_MESSAGE && ((0, T.PV)(o.id), f.Z.openPrivateChannel({
-        recipientIds: o.id
+      }) : G === C.X2.SEND_MESSAGE && ((0, T.PV)(a.id), f.Z.openPrivateChannel({
+        recipientIds: a.id
       }).then(() => {
         setTimeout(() => {
           (0, E.PG)(R.X1.GIF, g.Ie.NORMAL), setTimeout(() => {
@@ -128,16 +128,16 @@ function L(e) {
     en = q ? c.Z.colors.WHITE : c.Z.colors.BG_BRAND,
     er = q ? D.buttonTextPrimaryCoachmark : D.buttonTextPrimary,
     ei = q ? D.buttonSecondaryCoachmark : D.buttonSecondary,
-    eo = q ? D.buttonTextSecondaryCoachmark : D.buttonTextSecondary;
+    ea = q ? D.buttonTextSecondaryCoachmark : D.buttonTextSecondary;
   return (0, r.jsx)("div", {
-    className: a()(D.content, {
+    className: o()(D.content, {
       [D.outerGlow]: U,
       [D.contentCoachmark]: q
     }),
     onMouseEnter: x,
     onMouseLeave: L,
     children: (0, r.jsxs)("div", {
-      className: a()(X, {
+      className: o()(X, {
         [D.innerGlow]: U
       }),
       children: [(0, r.jsxs)("div", {
@@ -146,13 +146,13 @@ function L(e) {
           className: D.avatars,
           children: [(0, r.jsx)(p.Z, {
             className: Q,
-            user: o,
-            "aria-label": o.username,
+            user: a,
+            "aria-label": a.username,
             size: P.EF.SIZE_56
           }), null != B && (0, r.jsx)(p.Z, {
             className: J,
             user: B,
-            "aria-label": o.username,
+            "aria-label": a.username,
             size: P.EF.SIZE_24
           })]
         }), (0, r.jsxs)("div", {
@@ -171,7 +171,7 @@ function L(e) {
       }), (0, r.jsxs)("div", {
         className: D.buttonContainer,
         children: [null != G && (0, r.jsx)(u.zx, {
-          className: a()(D.button, ei),
+          className: o()(D.button, ei),
           onClick: z,
           size: u.zx.Sizes.MEDIUM,
           color: u.zx.Colors.CUSTOM,
@@ -180,7 +180,7 @@ function L(e) {
             className: D.buttonContentContainer,
             children: (0, r.jsx)(d.Text, {
               variant: "text-sm/medium",
-              className: a()(D.buttonText, eo),
+              className: o()(D.buttonText, ea),
               children: Y()
             })
           })
@@ -198,13 +198,13 @@ function L(e) {
               height: "14"
             }), (0, r.jsx)(d.Text, {
               variant: "text-sm/medium",
-              className: a()(D.buttonText, er),
+              className: o()(D.buttonText, er),
               children: w.intl.string(w.t["wg/30t"])
             })]
           })
         })]
       }), null != j && (0, r.jsx)("div", {
-        className: a()(D.connector, {
+        className: o()(D.connector, {
           [D.leftPopoutConnector]: "left" === j,
           [D.rightPopoutConnector]: "right" === j
         })

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk780384 = require("./780384.js"),
   Chunk481060 = require("./481060.js"),
@@ -81,18 +81,18 @@ function F(e, t) {
 }
 
 function V(e, t, n) {
-  for (let a of e) {
-    var r, i, o;
-    if (a.type === M.fO.STREAM) {
-      let e = null != (i = (0, f.Um)(a.stream, n)) ? i : null,
-        o = (0, E.ZZ)(t, e);
-      if (null != o && (null == (r = o.userStatus) ? true : r.claimedAt) == null) return o
+  for (let o of e) {
+    var r, i, a;
+    if (o.type === M.fO.STREAM) {
+      let e = null != (i = (0, f.Um)(o.stream, n)) ? i : null,
+        a = (0, E.ZZ)(t, e);
+      if (null != a && (null == (r = a.userStatus) ? true : r.claimedAt) == null) return a
     }
     for (let r of e)
       if (!(0, M.I)(r))
         for (let e of n.getActivities(r.user.id)) {
           let n = (0, E.ZZ)(t, e);
-          if (null != n && (null == (o = n.userStatus) ? true : o.claimedAt) == null) return n
+          if (null != n && (null == (a = n.userStatus) ? true : a.claimedAt) == null) return n
         }
   }
   return null
@@ -107,7 +107,7 @@ function H(e, t, n, r) {
 }
 
 function Y(e) {
-  var t, n, o, f;
+  var t, n, a, f;
   let {
     channelId: p,
     quest: A,
@@ -124,7 +124,7 @@ function Y(e) {
     if ((0, E.$H)(A) && e.includes(en)) returntrue;
     let t = null != z ? h.Z.findActivity(z.id, e => e.type !== j.IIU.CUSTOM_STATUS) : null;
     return !!(null != t && (0, E.$J)(A) && (0, E._D)(t, A))
-  }, [A, en, z]), ei = true === G || $ || er, eo = (0, s.e7)([O.Z], () => null != A && O.Z.isEnrolling(A.id), [A]), ea = (0, s.e7)([u.Z], () => ((null == z ? true : z.id) == null ? null : u.Z.getParticipant(p, z.id)) != null, [p, z]), es = (0, y.B6)(null == A ? true : A.config.expiresAt), el = (0, y.B6)(null == et ? true : et.rewardsExpireAt), ec = i.useCallback(() => {
+  }, [A, en, z]), ei = true === G || $ || er, ea = (0, s.e7)([O.Z], () => null != A && O.Z.isEnrolling(A.id), [A]), eo = (0, s.e7)([u.Z], () => ((null == z ? true : z.id) == null ? null : u.Z.getParticipant(p, z.id)) != null, [p, z]), es = (0, y.B6)(null == A ? true : A.config.expiresAt), el = (0, y.B6)(null == et ? true : et.rewardsExpireAt), ec = i.useCallback(() => {
     (0, b.AH)(A.id, {
       questContent: v.jn.QUEST_LIVE_STREAM,
       questContentCTA: g.jZ.ACCEPT_QUEST,
@@ -162,10 +162,10 @@ function Y(e) {
     isQuestCallHeaderDismissed: eg,
     isQuestExpired: ep,
     isQuestBarShowing: eb,
-    isCurrentUserCallParticipant: ea
+    isCurrentUserCallParticipant: eo
   });
-  let ey = null != M && (null == (o = A.userStatus) ? true : o.claimedAt) == null;
-  if (!ey && (eg || ep || eb) || !ey && !ea) return null;
+  let ey = null != M && (null == (a = A.userStatus) ? true : a.claimedAt) == null;
+  if (!ey && (eg || ep || eb) || !ey && !eo) return null;
   let eO = (0, E.il)(A),
     ev = (0, r.jsx)(R.Z, {
       className: U.rewardTile,
@@ -176,7 +176,7 @@ function Y(e) {
       sourceQuestContent: v.jn.QUEST_LIVE_STREAM
     });
   return (0, r.jsxs)("div", {
-    className: a()(U.wrapper, {
+    className: o()(U.wrapper, {
       [U.wrapperAccepted]: eh
     }),
     onFocus: W,
@@ -256,7 +256,7 @@ function Y(e) {
             variant: "primary",
             text: k.intl.string(k.t.l7E81t),
             onClick: ec,
-            loading: eo
+            loading: ea
           })]
         }), eh && !em && ei && (0, r.jsx)(C.Z, {
           color: c.TVs.colors.BG_BRAND,
@@ -282,10 +282,10 @@ function Y(e) {
 function W(e) {
   let t = i.useContext(p.h9),
     n = (0, s.e7)([O.Z], () => null != O.Z.questEnrollmentBlockedUntil, []),
-    o = (0, s.e7)([O.Z], () => O.Z.quests),
-    a = i.useMemo(() => (0, E.MM)(o, L.Lv), [o]),
+    a = (0, s.e7)([O.Z], () => O.Z.quests),
+    o = i.useMemo(() => (0, E.MM)(a, L.Lv), [a]),
     l = (0, s.e7)([u.Z], () => u.Z.getParticipants(e.channelId), [e.channelId]),
-    c = (0, s.e7)([h.Z], () => null != e.previewQuest ? e.previewQuest : V(l, a, h.Z), [l, a, e.previewQuest]);
+    c = (0, s.e7)([h.Z], () => null != e.previewQuest ? e.previewQuest : V(l, o, h.Z), [l, o, e.previewQuest]);
   return null == c || n ? null : (0, r.jsx)(A.A, {
     questOrQuests: c,
     overrideVisibility: !t,

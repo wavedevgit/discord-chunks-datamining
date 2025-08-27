@@ -2,7 +2,7 @@
 /** chunk id: 649754, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => a
+  Z: () => o
 }), require("./388685.js");
 var Chunk992774 = require("./992774.js");
 
@@ -14,15 +14,15 @@ function i(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class o {
+class a {
   addSink(e, t, n) {
     let i = this.streams,
-      o = i[e];
-    if (null == o && (o = i[e] = new Map), 0 === o.size) {
+      a = i[e];
+    if (null == a && (a = i[e] = new Map), 0 === a.size) {
       let t = (0, r.zS)();
-      t.setVideoOutputSink(e, this.handleImageData.bind(this, t.signalVideoOutputSinkReady.bind(t, e), o), true)
+      t.setVideoOutputSink(e, this.handleImageData.bind(this, t.signalVideoOutputSinkReady.bind(t, e), a), true)
     }
-    o.set(t, n)
+    a.set(t, n)
   }
   removeSink(e, t) {
     let n = this.streams,
@@ -37,4 +37,4 @@ class o {
     i(this, "streams", {})
   }
 }
-let a = new o
+let o = new a

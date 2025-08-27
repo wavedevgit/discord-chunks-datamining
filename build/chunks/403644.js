@@ -3,12 +3,12 @@
 var Chunk812639 = require("./812639.js"),
   Chunk757209 = require("./757209.js"),
   Chunk105890 = require("./105890.js"),
-  a = Math.ceil,
+  o = Math.ceil,
   s = Math.max;
 module.exports = function(e, t, n) {
-  t = (n ? i(e, t, n) : true === t) ? 1 : s(o(t), 0);
+  t = (n ? i(e, t, n) : true === t) ? 1 : s(a(t), 0);
   var l = null == e ? 0 : e.length;
   if (!l || t < 1) return [];
-  for (var c = 0, u = 0, d = Array(a(l / t)); c < l;) d[u++] = r(e, c, c += t);
+  for (var c = 0, u = 0, d = Array(o(l / t)); c < l;) d[u++] = r(e, c, c += t);
   return d
 }

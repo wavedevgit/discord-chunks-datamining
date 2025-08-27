@@ -19,7 +19,7 @@ function u(e) {
     variant: n = "default",
     enablePremiumBrandRefresh: u = false,
     style: d
-  } = e, f = t.fractionalState === a.a$.FP_SUB_PAUSED, _ = (0, o.Z)(t.endsAt, f), p = "", h = {
+  } = e, f = t.fractionalState === o.a$.FP_SUB_PAUSED, _ = (0, a.Z)(t.endsAt, f), p = "", h = {
     trial: {
       days_and_hours: s.t.SQyVVV,
       days: s.t["2ifAYG"],

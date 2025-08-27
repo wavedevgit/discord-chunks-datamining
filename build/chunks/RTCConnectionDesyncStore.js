@@ -38,7 +38,7 @@ function v(e, t, n) {
     }),
     i = (0, h.PH)(r, null != t ? t : m.ME, e.id);
   b.set(e.id, i);
-  let o = {
+  let a = {
     type: g.fO.USER,
     user: e,
     id: e.id,
@@ -53,7 +53,7 @@ function v(e, t, n) {
     userAvatarDecoration: (0, l.o)(e, t),
     localVideoDisabled: false
   };
-  y.set(e.id, o)
+  y.set(e.id, a)
 }
 
 function I(e) {
@@ -89,7 +89,7 @@ function C(e) {
     state: t,
     context: n
   } = e;
-  if (n !== o.Yn.DEFAULT || t !== m.hes.DISCONNECTED) returnfalse;
+  if (n !== a.Yn.DEFAULT || t !== m.hes.DISCONNECTED) returnfalse;
   S()
 }
 
@@ -113,7 +113,7 @@ function R(e) {
     channelId: r,
     context: i
   } = e;
-  return i === o.Yn.DEFAULT && t.reduce((e, t) => {
+  return i === a.Yn.DEFAULT && t.reduce((e, t) => {
     if (null != p.Z.getVoiceStateForChannel(r, t)) return e;
     let i = _.default.getUser(t);
     return null == i ? (O.add(t), e) : (v(i, n, r), true)
@@ -125,7 +125,7 @@ function P(e) {
     userId: t,
     context: n
   } = e;
-  return n === o.Yn.DEFAULT && I(t)
+  return n === a.Yn.DEFAULT && I(t)
 }
 class w extends(r = Chunk442837.ZP.Store) {
   initialize() {

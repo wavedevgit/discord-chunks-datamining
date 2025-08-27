@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk305347 = require("./305347.jsx"),
   Chunk172751 = require("./172751.jsx"),
@@ -57,7 +57,7 @@ function m(e) {
   let {
     className: t,
     guildTag: n,
-    guildBadge: o,
+    guildBadge: a,
     guildId: f,
     guildName: p,
     guildIcon: m,
@@ -67,7 +67,7 @@ function m(e) {
     let e = E.current;
     null != e && null != e.offsetWidth && null != e.scrollWidth && y(e.offsetWidth < e.scrollWidth)
   }, []), (0, r.jsxs)("div", {
-    className: a()(d.container, t),
+    className: o()(d.container, t),
     children: [(0, r.jsxs)("div", {
       className: d.guildPrefixContainer,
       children: [(0, r.jsx)(l.Ft, {
@@ -97,7 +97,7 @@ function m(e) {
         guildId: f,
         className: d.tag,
         guildTag: n,
-        guildBadge: o,
+        guildBadge: a,
         badgeSize: u.Gg.SIZE_16,
         textColor: "interactive-normal",
         textVariant: "text-sm/semibold",

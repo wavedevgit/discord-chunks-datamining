@@ -25,14 +25,14 @@ Chunk507604 && Chunk621523(function() {
         }
       })
     },
-    o = {
+    a = {
       dotAll: "s",
       global: "g",
       ignoreCase: "i",
       multiline: "m",
       sticky: "y"
     };
-  for (var a in module && (Chunk573078.hasIndices = "d"), Chunk573078) Chunk507604(Chunk503463, Chunk573078[Chunk503463]);
+  for (var o in module && (Chunk573078.hasIndices = "d"), Chunk573078) Chunk507604(Chunk503463, Chunk573078[Chunk503463]);
   return Object.getOwnPropertyDescriptor(c, "flags").get.call(exports) !== Chunk127849 || require !== Chunk127849
 }) && Chunk573078(c, "flags", {
   configurable: true,

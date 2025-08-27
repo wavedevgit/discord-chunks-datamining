@@ -40,7 +40,7 @@ function O(e) {
   } = e, P = (0, i.e7)([c.Z], () => c.Z.getGuild(n), [n]), w = (0, i.e7)([l.Z], () => {
     var e;
     return l.Z.getRole(n, null != (e = null == t ? true : t.role_id) ? e : b.lds)
-  }), D = (0, o.U)(t, y), x = (0, h.C)(t), L = (0, d.SO)(P), {
+  }), D = (0, a.U)(t, y), x = (0, h.C)(t), L = (0, d.SO)(P), {
     shouldHideGuildPurchaseEntryPoints: j
   } = (0, s.uP)(n), M = (0, h.k)(t);
   if (null == P || j) return null;
@@ -53,7 +53,7 @@ function O(e) {
       _.h(P.id, t.id)
     },
     G = () => {
-      (0, a.x)({
+      (0, o.x)({
         listing: t
       })
     },

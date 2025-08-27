@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk710845 = require("./710845.js"),
   Chunk310752 = require("./310752.jsx"),
@@ -30,19 +30,19 @@ let h = new Chunk710845.Z("UploadArea"),
 function g() {
   return (0, Chunk951288.jsxs)("div", {
     children: [(0, Chunk951288.jsx)("div", {
-      className: a()(Chunk162130.sparkleWhite, Chunk995751.sparkleOne)
+      className: o()(Chunk162130.sparkleWhite, Chunk995751.sparkleOne)
     }), (0, Chunk951288.jsx)("div", {
-      className: a()(Chunk162130.sparkleWhite, Chunk995751.sparkleTwo)
+      className: o()(Chunk162130.sparkleWhite, Chunk995751.sparkleTwo)
     }), (0, Chunk951288.jsx)("div", {
-      className: a()(Chunk162130.lightWhite, Chunk995751.lightOne)
+      className: o()(Chunk162130.lightWhite, Chunk995751.lightOne)
     }), (0, Chunk951288.jsx)("div", {
-      className: a()(Chunk162130.lightWhite, Chunk995751.lightTwo)
+      className: o()(Chunk162130.lightWhite, Chunk995751.lightTwo)
     }), (0, Chunk951288.jsx)("div", {
-      className: a()(Chunk162130.crossWhite, Chunk995751.crossOne)
+      className: o()(Chunk162130.crossWhite, Chunk995751.crossOne)
     }), (0, Chunk951288.jsx)("div", {
-      className: a()(Chunk162130.crossWhite, Chunk995751.crossTwo)
+      className: o()(Chunk162130.crossWhite, Chunk995751.crossTwo)
     }), (0, Chunk951288.jsx)("div", {
-      className: a()(Chunk162130.popWhite, Chunk995751.popOne)
+      className: o()(Chunk162130.popWhite, Chunk995751.popOne)
     })]
   })
 }
@@ -61,11 +61,11 @@ class E extends Chunk647438.Component {
       description: t,
       icons: n,
       style: i,
-      className: o
+      className: a
     } = this.props;
     return (0, Chunk951288.jsx)("div", {
       ref: this.elementDOMRef,
-      className: a()(Chunk120356, Chunk995751.uploadArea, {
+      className: o()(Chunk120356, Chunk995751.uploadArea, {
         [Chunk995751.droppable]: this.state.isDragging,
         [Chunk995751.uploadModalIn]: this.state.isOverZone
       }),
@@ -109,8 +109,8 @@ class E extends Chunk647438.Component {
         r = e.dataTransfer;
       if (null == r) returntrue;
       let i = Array.isArray(r.types) && false !== r.types.indexOf("text/uri-list") && false === r.types.indexOf("application/json"),
-        o = null != r.items && !t.isAllDropFiles(r.items);
-      return !i && !o || (e.stopPropagation(), e.preventDefault(), r.effectAllowed = "none", r.dropEffect = "none", n && (t.setState({
+        a = null != r.items && !t.isAllDropFiles(r.items);
+      return !i && !a || (e.stopPropagation(), e.preventDefault(), r.effectAllowed = "none", r.dropEffect = "none", n && (t.setState({
         isDragging: false
       }), (0, u.openUploadError)({
         title: d.intl.string(d.t.azO1PT),

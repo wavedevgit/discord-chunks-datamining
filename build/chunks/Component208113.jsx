@@ -55,7 +55,7 @@ function h() {
         value: module,
         options: p(exports, require, h),
         onChange: e => {
-          let t = () => a.Z.setAudioSubsystem(e);
+          let t = () => o.Z.setAudioSubsystem(e);
           (0, c.Z)(f.intl.string(f.t.uY7AcX), f.intl.string(f.t.gBqik5), t)
         }
       })

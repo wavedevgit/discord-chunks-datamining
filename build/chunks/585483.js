@@ -3,13 +3,13 @@
 "use strict";
 require.d(exports, {
   S: () => s,
-  b: () => a
+  b: () => o
 }), require("./388685.js"), require("./539854.js");
 var Chunk836560 = require("./836560.js");
 require("./17089.js");
 var Chunk710845 = require("./710845.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -18,7 +18,7 @@ function o(e, t, n) {
   }) : e[t] = n, e
 }
 require("./981631.js");
-class a {
+class o {
   safeDispatch(e) {
     for (var t, n = arguments.length, r = Array(n > 1 ? n - 1 : 0), i = 1; i < n; i++) r[i - 1] = arguments[i];
     if (!this.hasSubscribers(e)) {
@@ -73,7 +73,7 @@ class a {
     return this.unsubscribe("".concat(e, "_").concat(t), n)
   }
   constructor() {
-    o(this, "emitter", new Chunk836560.EventEmitter), o(this, "_savedDispatches", {}), this.emitter.setMaxListeners(100)
+    a(this, "emitter", new Chunk836560.EventEmitter), a(this, "_savedDispatches", {}), this.emitter.setMaxListeners(100)
   }
 }
-let s = new a
+let s = new o

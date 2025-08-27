@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk97028 = require("./97028.js"),
   Chunk481060 = require("./481060.js"),
   Chunk686546 = require("./686546.jsx"),
@@ -62,13 +62,13 @@ function y(e) {
     game: t,
     activityLevel: n,
     hideTooltip: i
-  } = e, o = t.getIconURL(24), a = (0, f.B)(), p = (0, d.Z)({
+  } = e, a = t.getIconURL(24), o = (0, f.B)(), p = (0, d.Z)({
     location: "GuildProfile",
     source: u.m1.GuildProfile,
     trackEntryPointImpression: true,
     applicationId: t.id
   });
-  if (null == o) return null;
+  if (null == a) return null;
   let m = !i,
     y = (null == n ? true : n.level) === s.m.HIGH,
     O = (0, r.jsx)(l.Text, {
@@ -85,7 +85,7 @@ function y(e) {
         className: _.gameIcon,
         children: [(0, r.jsx)("img", {
           className: _.gameIconImage,
-          src: o,
+          src: a,
           alt: t.name
         }), y && (0, r.jsx)(c.ZP, {
           mask: c.QS.GAMEPLAY_HIGH_ACTIVITY_ICON,
@@ -104,7 +104,7 @@ function y(e) {
         })]
       }))
     });
-  return a ? (0, r.jsx)(l.P3F, {
+  return o ? (0, r.jsx)(l.P3F, {
     onClick: p,
     className: _.gameIconWrapper,
     children: v
@@ -155,17 +155,17 @@ function I(e) {
   let {
     gamesToDisplay: t,
     lastGameToDisplay: n,
-    remainingGames: o,
+    remainingGames: a,
     activity: s
   } = e, c = i.useMemo(() => {
     if (null == n) return null;
     let e = n.getIconURL(24);
     if (null == e) return null;
-    if (0 === o.length) return (0, r.jsx)(y, {
+    if (0 === a.length) return (0, r.jsx)(y, {
       game: n,
       activityLevel: s[n.id]
     });
-    let t = o;
+    let t = a;
     return (0, r.jsx)(l.ua7, {
       "aria-label": "",
       position: "bottom",
@@ -174,9 +174,9 @@ function I(e) {
         activity: s
       }),
       children: i => (0, r.jsxs)("div", g(h({}, i), {
-        className: a()(_.gameIcon, _.extraGameItem),
+        className: o()(_.gameIcon, _.extraGameItem),
         children: [(0, r.jsx)("img", {
-          className: a()(_.gameIconImage, _.extraGameIconImage),
+          className: o()(_.gameIconImage, _.extraGameIconImage),
           src: e,
           alt: n.name
         }), (0, r.jsx)("div", {
@@ -191,7 +191,7 @@ function I(e) {
         })]
       }))
     })
-  }, [n, o, s]);
+  }, [n, a, s]);
   return null == t || 0 === t.length ? null : 1 === t.length ? (0, r.jsx)("div", {
     className: _.container,
     children: (0, r.jsx)(v, {

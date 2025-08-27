@@ -61,15 +61,15 @@ function h(e) {
     size: _
   } = e, {
     themeType: h
-  } = (0, s.z)(), m = (0, a.Z)({
+  } = (0, s.z)(), m = (0, o.Z)({
     application: t,
     location: "User Profile Activity"
   });
-  return null == m ? null : (0, r.jsx)(o.ua7, {
+  return null == m ? null : (0, r.jsx)(a.ua7, {
     text: u.intl.string(u.t.JVwWvb),
     position: "top",
     children: e => (0, r.jsx)(l.tG, p(f({}, e), {
-      icon: o.v3n,
+      icon: a.v3n,
       text: u.intl.string(u.t["jaYS/v"]),
       size: null != _ ? _ : h === c.l.MODAL_V2 ? i.Ph.TINY : i.Ph.SMALL,
       fullWidth: h !== c.l.MODAL_V2,

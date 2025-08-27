@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   z: () => m
-}), require("./388685.js");
+}), require("./388685.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk755721 = require("./755721.js"),
@@ -54,8 +54,8 @@ function _(e, t) {
   if (null == e) return {};
   var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -63,8 +63,8 @@ function _(e, t) {
 function p(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let h = [{
@@ -94,7 +94,7 @@ let h = [{
         var {
           leading: t,
           trailing: n
-        } = e, o = _(e, ["leading", "trailing"]);
+        } = e, a = _(e, ["leading", "trailing"]);
         let [c, d] = i.useState(""), p = (0, s.U)("UserSettingsDesignSystems"), [m, g] = i.useState(h), E = i.useCallback(e => {
           g(m.filter(t => !e.has(t.id)))
         }, [m]);
@@ -107,7 +107,7 @@ let h = [{
               };
             case "icon":
               return {
-                icon: a.lOy, onClick: l.dG, "aria-label": "At"
+                icon: o.lOy, onClick: l.dG, "aria-label": "At"
               };
             case "text":
               return "https://discord.gg/";
@@ -119,21 +119,21 @@ let h = [{
         function y(e) {
           if (p)
             if ("icon" === e) return {
-              icon: a.qJs,
+              icon: o.qJs,
               onClick: l.dG,
               "aria-label": "At"
             };
             else return
         }
-        return (0, r.jsxs)(a.Kqy, {
+        return (0, r.jsxs)(o.Kqy, {
           gap: 16,
-          children: [(0, r.jsx)(a.oil, f(u({}, o), {
+          children: [(0, r.jsx)(o.oil, f(u({}, a), {
             value: c,
             onChange: d,
             leading: b(t),
             trailing: y(n),
             maxLength: 500
-          })), "tags" === t ? (0, r.jsx)(a.zxk, {
+          })), "tags" === t ? (0, r.jsx)(o.zxk, {
             text: "Reset Tags",
             size: "sm",
             variant: "secondary",
@@ -160,6 +160,26 @@ let h = [{
             label: "Number",
             value: "number"
           }]
+        },
+        label: {
+          label: "Label",
+          type: "text",
+          defaultValue: "Example Label"
+        },
+        hideLabel: {
+          label: "Hide Label",
+          type: "boolean",
+          defaultValue: false
+        },
+        description: {
+          label: "Description",
+          type: "text",
+          defaultValue: "This is an example description"
+        },
+        required: {
+          label: "Required",
+          type: "boolean",
+          defaultValue: false
         },
         placeholder: {
           label: "Placeholder",
@@ -236,7 +256,7 @@ let h = [{
       name: "SearchBar",
       component: function(e) {
         let [t, n] = i.useState("");
-        return (0, r.jsx)(a.E1j, f(u({}, e), {
+        return (0, r.jsx)(o.E1j, f(u({}, e), {
           query: t,
           onChange: n,
           onClear: e.clearable ? () => n("") : true
@@ -282,12 +302,37 @@ let h = [{
       id: "text-area",
       component: function(e) {
         let [t, n] = i.useState("");
-        return (0, r.jsx)(a.Kx8, f(u({}, e), {
+        return (0, r.jsx)(o.Kx8, f(u({}, e), {
           value: t,
           onChange: n
         }))
       },
       controls: {
+        label: {
+          label: "Label",
+          type: "text",
+          defaultValue: "Example Label"
+        },
+        hideLabel: {
+          label: "Hide Label",
+          type: "boolean",
+          defaultValue: false
+        },
+        required: {
+          label: "Required",
+          type: "boolean",
+          defaultValue: false
+        },
+        description: {
+          label: "Description",
+          type: "text",
+          defaultValue: "This is an example description"
+        },
+        helperText: {
+          label: "Helper Text",
+          type: "text",
+          defaultValue: true
+        },
         placeholder: {
           label: "Placeholder",
           type: "text",
@@ -329,63 +374,71 @@ let h = [{
       id: "input-collection",
       component: function(e) {
         let {
-          error: t,
-          disabled: n,
-          placeholder: i,
-          value: c = "",
-          readOnly: d,
-          helperText: _,
-          successMessage: p,
-          showCharacterCount: m
-        } = e, g = (0, s.U)("UserSettingsDesignSystems"), E = {
-          value: c,
-          error: t,
-          disabled: n,
-          placeholder: i,
-          readOnly: d,
-          helperText: _,
-          showCharacterCount: m,
-          successMessage: p
+          label: t,
+          hideLabel: n,
+          description: i,
+          required: c,
+          error: d,
+          disabled: _,
+          placeholder: p,
+          value: m = "",
+          readOnly: g,
+          helperText: E,
+          successMessage: b,
+          showCharacterCount: y
+        } = e, O = (0, s.U)("UserSettingsDesignSystems"), v = {
+          label: t,
+          hideLabel: n,
+          description: i,
+          required: c,
+          value: m,
+          error: d,
+          disabled: _,
+          placeholder: p,
+          readOnly: g,
+          helperText: E,
+          showCharacterCount: y,
+          successMessage: b
         };
-        return (0, r.jsxs)(a.Kqy, {
-          children: [(0, r.jsxs)(a.Kqy, {
-            children: [(0, r.jsx)(a.xJW, {
+        return (0, r.jsxs)(o.Kqy, {
+          children: [(0, r.jsxs)(o.Kqy, {
+            children: [(0, r.jsx)(o.xJW, {
               title: "Text Input",
-              children: (0, r.jsxs)(a.Kqy, {
-                children: [(0, r.jsx)(a.oil, u({}, E)), (0, r.jsx)(a.oil, f(u({}, E), {
+              children: (0, r.jsxs)(o.Kqy, {
+                children: [(0, r.jsx)(o.oil, u({}, v)), (0, r.jsx)(o.oil, f(u({}, v), {
                   clearable: true
-                })), g && (0, r.jsxs)(r.Fragment, {
-                  children: [(0, r.jsx)(a.xJW, {
+                })), O && (0, r.jsxs)(r.Fragment, {
+                  children: [(0, r.jsx)(o.xJW, {
                     title: "Leading Icons",
-                    children: (0, r.jsxs)(a.Kqy, {
-                      children: [(0, r.jsx)(a.oil, f(u({}, E), {
+                    children: (0, r.jsxs)(o.Kqy, {
+                      children: [(0, r.jsx)(o.oil, f(u({}, v), {
                         leading: {
-                          icon: a.lOy,
+                          icon: o.lOy,
                           onClick: l.dG,
                           "aria-label": "At"
                         }
-                      })), (0, r.jsx)(a.oil, f(u({}, E), {
-                        leading: a.lOy
-                      })), (0, r.jsx)(a.oil, f(u({}, E), {
+                      })), (0, r.jsx)(o.oil, f(u({}, v), {
+                        leading: o.lOy
+                      })), (0, r.jsx)(o.oil, f(u({}, v), {
                         leading: "https://discord.gg/"
                       }))]
                     })
-                  }), (0, r.jsx)(a.xJW, {
+                  }), (0, r.jsx)(o.xJW, {
                     title: "Trailing Icons",
-                    children: (0, r.jsxs)(a.Kqy, {
-                      children: [(0, r.jsx)(a.oil, f(u({}, E), {
+                    children: (0, r.jsxs)(o.Kqy, {
+                      children: [(0, r.jsx)(o.oil, f(u({}, v), {
                         trailing: {
-                          icon: a.lOy,
+                          icon: o.lOy,
                           onClick: l.dG,
                           "aria-label": "At"
                         }
-                      })), (0, r.jsx)(a.oil, f(u({}, E), {
-                        trailing: a.lOy
+                      })), (0, r.jsx)(o.oil, f(u({}, v), {
+                        trailing: o.lOy
                       }))]
                     })
-                  }), (0, r.jsx)(a.xJW, {
+                  }), (0, r.jsx)(o.xJW, {
                     title: "Tags",
-                    children: (0, r.jsx)(a.oil, f(u({}, E), {
+                    children: (0, r.jsx)(o.oil, f(u({}, v), {
                       leading: {
                         type: "tags",
                         label: "Tags",
@@ -395,32 +448,32 @@ let h = [{
                   })]
                 })]
               })
-            }), (0, r.jsx)(a.xJW, {
+            }), (0, r.jsx)(o.xJW, {
               title: "Text Input (Legacy)",
-              children: (0, r.jsx)(a.GSy, u({}, E))
+              children: (0, r.jsx)(o.GSy, u({}, v))
             })]
-          }), (0, r.jsx)(a.xJW, {
+          }), (0, r.jsx)(o.xJW, {
             title: "Search Bar",
-            children: (0, r.jsxs)(a.Kqy, {
-              children: [(0, r.jsx)(a.E1j, {
-                query: c,
+            children: (0, r.jsxs)(o.Kqy, {
+              children: [(0, r.jsx)(o.E1j, {
+                query: m,
                 onChange: l.dG,
-                disabled: n,
-                placeholder: i
-              }), (0, r.jsx)(a.E1j, {
-                query: c,
+                disabled: _,
+                placeholder: p
+              }), (0, r.jsx)(o.E1j, {
+                query: m,
                 onChange: l.dG,
                 size: "sm",
-                disabled: n,
-                placeholder: i
+                disabled: _,
+                placeholder: p
               })]
             })
-          }), (0, r.jsx)(a.xJW, {
+          }), (0, r.jsx)(o.xJW, {
             title: "Text Area",
-            children: (0, r.jsx)(a.Kx8, u({}, E))
-          }), (0, r.jsx)(a.xJW, {
+            children: (0, r.jsx)(o.Kx8, u({}, v))
+          }), (0, r.jsx)(o.xJW, {
             title: "Text Area (Legacy)",
-            children: (0, r.jsx)(o.iS, u({}, E))
+            children: (0, r.jsx)(a.iS, u({}, v))
           })]
         })
       },
@@ -434,6 +487,26 @@ let h = [{
           label: "Placeholder",
           type: "text",
           defaultValue: "Enter some text..."
+        },
+        label: {
+          label: "Label",
+          type: "text",
+          defaultValue: "Example Label"
+        },
+        hideLabel: {
+          label: "Hide Label",
+          type: "boolean",
+          defaultValue: false
+        },
+        description: {
+          label: "Description",
+          type: "text",
+          defaultValue: "This is an example description"
+        },
+        required: {
+          label: "Required",
+          type: "boolean",
+          defaultValue: false
         },
         error: {
           label: "Error Message",

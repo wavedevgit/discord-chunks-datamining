@@ -13,13 +13,13 @@ var Chunk442837 = require("./442837.js"),
 
 function c(e) {
   let t = null == e ? true : e.features.has(l.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL),
-    n = (0, r.e7)([s.Z, o.default, i.ZP], () => {
+    n = (0, r.e7)([s.Z, a.default, i.ZP], () => {
       if (null == e) return;
       let t = s.Z.getRequest(e.id),
-        n = o.default.getCurrentUser();
+        n = a.default.getCurrentUser();
       if (null == n || null == t || t.userId !== n.id) return;
       let r = i.ZP.getMember(e.id, t.userId);
-      if (!(null != r && !r.isPending) || (0, a.oP)(t)) return t.applicationStatus
+      if (!(null != r && !r.isPending) || (0, o.oP)(t)) return t.applicationStatus
     }, [e]);
   return t ? n : true
 }

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk512722 = require("./512722.js"),
-  o = require.n(Chunk512722),
+  a = require.n(Chunk512722),
   Chunk392711 = require("./392711.js"),
   s = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
@@ -84,14 +84,14 @@ function M(e) {
   let n = T.default.getNotificationPositionMode(),
     r = n !== C._vf.DISABLED,
     i = v.ZP.getOverlayKeybind(),
-    o = v.ZP.getOverlayChatKeybind();
+    a = v.ZP.getOverlayChatKeybind();
   return {
     enabled: I.default.enabled,
     notifications_enabled: r,
     notifications_position: r ? n : null,
     text_notifications_mode: y.Z.isNotificationDisabled(g.OverlayNotificationDisabledSetting.TEXT_CHAT) ? "DISABLED" : "ENABLED",
     hotkey: null != i ? (0, A.BB)(i.shortcut) : null,
-    text_activation_hotkey: null != o ? (0, A.BB)(o.shortcut) : null,
+    text_activation_hotkey: null != a ? (0, A.BB)(a.shortcut) : null,
     text_opacity_slider: T.default.getTextWidgetOpacity(),
     old_enabled: null != (t = null == e ? true : e.enabled) ? t : I.default.enabled
   }
@@ -115,7 +115,7 @@ function U(e) {
     showHeader: n = true
   } = e, {
     oopEnabled: i,
-    legacyEnabled: a
+    legacyEnabled: o
   } = (0, l.cj)([b.default], () => b.default.getGlobalEnabledStatus()), {
     avatarSizeMode: s,
     displayNameMode: I,
@@ -138,7 +138,7 @@ function U(e) {
     var t, n;
     d.Z.setEnabled(e, i);
     let r = null != (n = null == (t = p.ZP.getCurrentGameForAnalytics()) ? true : t.id) ? n : null;
-    (0, m.ou)(e, m.AE.LEGACY, r), !e && a && (0, O.l)(m.AE.LEGACY, r)
+    (0, m.ou)(e, m.AE.LEGACY, r), !e && o && (0, O.l)(m.AE.LEGACY, r)
   }
 
   function B() {
@@ -147,7 +147,7 @@ function U(e) {
   }
 
   function Z(e) {
-    o()(null != L, "Keybind should never be undefined"), u.Z.setKeybind(x(w({}, L), {
+    a()(null != L, "Keybind should never be undefined"), u.Z.setKeybind(x(w({}, L), {
       shortcut: e
     }))
   }
@@ -163,7 +163,7 @@ function U(e) {
           className: R.enableOverlayItem,
           children: (0, r.jsx)(c.j7V, {
             className: R.enableSwitch,
-            value: a,
+            value: o,
             disabled: U,
             note: U ? N.intl.string(N.t.Eb0lnJ) : null,
             hideBorder: true,
@@ -174,7 +174,7 @@ function U(e) {
           title: N.intl.string(N.t.VsAZcH),
           className: R.enableOverlayItem,
           children: (0, r.jsx)(f.Z, {
-            disabled: !a,
+            disabled: !o,
             defaultValue: null != L ? L.shortcut : [],
             onChange: Z
           })

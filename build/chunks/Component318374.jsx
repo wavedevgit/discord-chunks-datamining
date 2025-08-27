@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   l = require.n(Chunk392711),
   Chunk481060 = require("./481060.js"),
@@ -85,7 +85,7 @@ function O() {
 function v(e) {
   let {
     users: t,
-    maxUsers: o,
+    maxUsers: a,
     guildId: s,
     channelId: m,
     className: E,
@@ -103,7 +103,7 @@ function v(e) {
     "aria-label": x,
     "aria-labelledby": L,
     "aria-hidden": j
-  } = e, [M, k] = i.useState(false), U = y(v), G = i.useRef(null), B = t.length - o, Z = B + 1, F = B > 0 && !A && !j, V = () => (0, r.jsx)(c.VqE, {
+  } = e, [M, k] = i.useState(false), U = y(v), G = i.useRef(null), B = t.length - a, Z = B + 1, F = B > 0 && !A && !j, V = () => (0, r.jsx)(c.VqE, {
     className: h.popoutWrapper,
     "aria-label": x,
     "aria-labelledby": L,
@@ -134,13 +134,13 @@ function v(e) {
       }, e.id))
     })
   }), H = () => {
-    let e = F ? o - 1 : Math.min(t.length, o),
+    let e = F ? a - 1 : Math.min(t.length, a),
       n = e - 1,
       i = l()(t).take(e).map((e, t) => {
         let i = f.ZP.getNickname(s, m, e),
-          o = null != i ? i : _.ZP.getName(e),
+          a = null != i ? i : _.ZP.getName(e),
           l = t === n && !F,
-          u = a()(h.avatar, U, l && h.isLast),
+          u = o()(h.avatar, U, l && h.isLast),
           d = (0, r.jsx)(c.qEK, {
             src: e.getAvatarURL(s, 24),
             size: v,
@@ -150,14 +150,14 @@ function v(e) {
           className: u,
           children: C ? (0, r.jsx)("span", {
             role: "img",
-            "aria-label": o,
+            "aria-label": a,
             children: d
           }) : (0, r.jsx)(c.ua7, {
-            text: o,
+            text: a,
             "aria-label": false,
             children: e => (0, r.jsx)("span", b(g({}, e), {
               role: "img",
-              "aria-label": o,
+              "aria-label": a,
               children: d
             }))
           })
@@ -178,7 +178,7 @@ function v(e) {
       onRequestClose: () => k(false),
       children: t => (0, r.jsx)(c.P3F, b(g({}, t), {
         innerRef: G,
-        className: a()(h.overflow, U, S),
+        className: o()(h.overflow, U, S),
         onFocus: P,
         onClick: e => {
           null == R || R(e), k(true)
@@ -198,7 +198,7 @@ function v(e) {
     role: "group",
     "aria-label": x,
     "aria-labelledby": L,
-    className: a()(E, h.avatars),
+    className: o()(E, h.avatars),
     "aria-hidden": j,
     children: [H(), Y()]
   })

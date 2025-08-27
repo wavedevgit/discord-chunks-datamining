@@ -74,7 +74,7 @@ class y extends Chunk647438.Component {
       codeInput: t,
       submitting: n,
       hasError: i,
-      isPromoCode: o
+      isPromoCode: a
     } = this.state;
     return (0, Chunk951288.jsxs)(Chunk481060.hjN, {
       tag: Chunk481060.RB0.H1,

@@ -19,9 +19,9 @@ function c(e) {
       return t.id
     }), [e.id, e.guild_id]),
     n = (0, r.e7)([i.Z], () => i.Z.getUserAffinitiesMap()),
-    c = (0, r.e7)([o.Z], () => o.Z.hasConsented(l.pjP.PERSONALIZATION));
-  return (0, r.Wu)([a.default], () => (c ? t.sort((e, t) => {
-    var r, i, o, a;
-    return (null != (o = null == (r = n.get(t)) ? true : r.vcProbability) ? o : 0) - (null != (a = null == (i = n.get(e)) ? true : i.vcProbability) ? a : 0)
-  }) : t).map(e => a.default.getUser(e)).filter(e => null != e), [c, n, t])
+    c = (0, r.e7)([a.Z], () => a.Z.hasConsented(l.pjP.PERSONALIZATION));
+  return (0, r.Wu)([o.default], () => (c ? t.sort((e, t) => {
+    var r, i, a, o;
+    return (null != (a = null == (r = n.get(t)) ? true : r.vcProbability) ? a : 0) - (null != (o = null == (i = n.get(e)) ? true : i.vcProbability) ? o : 0)
+  }) : t).map(e => o.default.getUser(e)).filter(e => null != e), [c, n, t])
 }

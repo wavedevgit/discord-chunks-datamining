@@ -52,10 +52,10 @@ function L(e) {
   } = (0, i.cj)([l.Z], () => ({
     relationshipType: l.Z.getRelationshipType(t.id),
     originApplicationId: l.Z.getOriginApplicationId(t.id)
-  })), V = (0, a.vh)(t.id), H = (0, i.e7)([c.Z], () => c.Z.hidePersonalInformation), Y = (0, f.b)({
+  })), V = (0, o.vh)(t.id), H = (0, i.e7)([c.Z], () => c.Z.hidePersonalInformation), Y = (0, f.b)({
     location: "UserProfilePopoutBody"
   }), W = t.id === n.id, K = (null == L ? true : L.widgets) != null && L.widgets.length > 0, z = (0, d.I5)(n);
-  return (0, r.jsxs)(o.Ttm, {
+  return (0, r.jsxs)(a.Ttm, {
     fade: true,
     className: x.body,
     children: [(0, r.jsx)(v.Z, {
@@ -107,9 +107,9 @@ function L(e) {
       className: x.card,
       children: (0, r.jsx)(b.Z, {
         heading: D.intl.string(D.t.Iyka0d),
-        headingIcon: (0, r.jsx)(o.Mgn, {
+        headingIcon: (0, r.jsx)(a.Mgn, {
           size: "xxs",
-          color: o.TVs.colors.HEADER_PRIMARY
+          color: a.TVs.colors.HEADER_PRIMARY
         }),
         headingColor: "header-primary",
         children: (0, r.jsx)(s.n, {

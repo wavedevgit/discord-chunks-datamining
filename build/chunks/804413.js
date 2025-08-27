@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk74538 = require("./74538.js"),
   Chunk848572 = require("./848572.js"),
   Chunk474936 = require("./474936.js");
-let a = 6048e5;
+let o = 6048e5;
 
 function s() {
   let e = (0, Chunk848572.GG)(),
@@ -18,7 +18,7 @@ function s() {
     let r = Chunk474936.vK[Chunk474936.Qh[exports]],
       i = new Date(module);
     if (Chunk848572.setMonth(module.getMonth() + Chunk74538.tenureReqNumMonths), Chunk848572.setHours(Chunk848572.getHours() + 30), require > Chunk848572.getTime())
-      if (require - Chunk848572.getTime() < a) return Chunk74538.id;
+      if (require - Chunk848572.getTime() < o) return Chunk74538.id;
       else break
   }
   return null

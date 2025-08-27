@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk680295 = require("./680295.jsx"),
   Chunk687158 = require("./687158.js"),
@@ -62,7 +62,7 @@ function v(e) {
     guildId: null == n ? true : n.id,
     avatarDecorationOverride: N,
     avatarOverride: C,
-    size: a.EFr.SIZE_80,
+    size: o.EFr.SIZE_80,
     showPending: true
   }), q = (0, _.ZT)({
     pendingProfileEffectId: D,
@@ -80,7 +80,7 @@ function v(e) {
     displayProfile: W,
     themeType: b.l.POPOUT,
     pendingThemeColors: w,
-    className: o()(O.container, M),
+    className: a()(O.container, M),
     forceShowPremium: i,
     children: [(0, r.jsxs)("div", {
       className: O.header,
@@ -142,7 +142,7 @@ function v(e) {
   return Y ? J : (0, r.jsx)("div", {
     role: "img",
     "aria-label": y.intl.string(y.t.ayozFh),
-    children: (0, r.jsx)(a.Rny, {
+    children: (0, r.jsx)(o.Rny, {
       children: J
     })
   })

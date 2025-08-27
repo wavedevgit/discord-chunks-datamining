@@ -14,11 +14,11 @@ function s(e) {
   let {
     user: t,
     size: n
-  } = e, s = (0, i.UCu)(n), l = null != t ? t.getAvatarURL(null, s.size) : a;
+  } = e, s = (0, i.UCu)(n), l = null != t ? t.getAvatarURL(null, s.size) : o;
   return (0, r.jsx)("div", {
-    className: o.avatarBackground,
+    className: a.avatarBackground,
     children: (0, r.jsx)("div", {
-      className: o.avatar,
+      className: a.avatar,
       style: {
         width: s.size,
         height: s.size

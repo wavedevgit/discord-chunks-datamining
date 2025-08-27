@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk762641 = require("./762641.js");
 
@@ -46,13 +46,13 @@ function d(e) {
     children: i,
     className: l
   } = e;
-  return (0, r.jsx)(a.kzN, {
+  return (0, r.jsx)(o.kzN, {
     icon: e => (0, r.jsx)(n, c({
       height: 20,
       width: 20
     }, e)),
     iconClassName: s.messageBlockIcon,
-    className: o()(t, l),
+    className: a()(t, l),
     children: i
   })
 }

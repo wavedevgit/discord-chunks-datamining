@@ -40,7 +40,7 @@ var Chunk873546 = require("./873546.js"),
 require("./215023.js");
 var Chunk46140 = require("./46140.js");
 async function k(e, t) {
-  await o.Z.dispatch({
+  await a.Z.dispatch({
     type: "INVITE_MODAL_OPEN",
     invite: e,
     code: t,
@@ -70,25 +70,25 @@ let G = {
 function B(e) {
   var t;
   let {
-    skipExtensionCheck: o,
+    skipExtensionCheck: a,
     analyticsLocations: s
   } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : G, N = (0, E.zO)(e);
   if (null != N && (N.type === g.g.INVITE || N.type === g.g.EMBEDDED_ACTIVITY_INVITE)) return e => (null == e || e.preventDefault(), U(N), true);
   if (null != N && (N.type === g.g.APP_DIRECTORY_PROFILE || N.type === g.g.APP_DIRECTORY_STOREFRONT || N.type === g.g.APP_DIRECTORY_STOREFRONT_SKU)) return t => {
-    var i, o;
+    var i, a;
     null == t || t.preventDefault();
     let {
-      code: a
+      code: o
     } = N, {
       applicationId: s,
       skuId: l
     } = N.type === g.g.APP_DIRECTORY_PROFILE || N.type === g.g.APP_DIRECTORY_STOREFRONT ? {
-      applicationId: a,
+      applicationId: o,
       skuId: true
-    } : null != (i = (0, p.Q)(a)) ? i : {
+    } : null != (i = (0, p.Q)(o)) ? i : {
       applicationId: true,
       skuId: true
-    }, c = null != (o = P.Z.getGuildId()) ? o : true;
+    }, c = null != (a = P.Z.getGuildId()) ? a : true;
     return null == s ? (0, L.Z)(e) : (D.default.track(j.rMx.APP_DIRECTORY_PROFILE_EMBED_URL_CLICKED, {
       application_id: s,
       device_platform: r.tq ? "mobile_web" : "desktop_web",
@@ -116,7 +116,7 @@ function B(e) {
     let {
       code: r,
       url: i
-    } = N, o = h.Z.getApplication(r), l = new URL(i), _ = null != (t = l.searchParams.get("referrer_id")) ? t : true, p = (0, f.Z)(), {
+    } = N, a = h.Z.getApplication(r), l = new URL(i), _ = null != (t = l.searchParams.get("referrer_id")) ? t : true, p = (0, f.Z)(), {
       currentChannelId: g,
       instanceId: E,
       isCurrentlyInInstance: b,
@@ -137,8 +137,8 @@ function B(e) {
       })
     }).catch(() => {}), true);
     {
-      let e = null == o || null == (n = o.bot) ? true : n.id;
-      return null != e && (a.Z.openPrivateChannel({
+      let e = null == a || null == (n = a.bot) ? true : n.id;
+      return null != e && (o.Z.openPrivateChannel({
         recipientIds: e
       }).then(async e => {
         let {
@@ -187,14 +187,14 @@ function B(e) {
       t = null == B ? true : B.startsWith("/discovery/applications"),
       r = e[t ? 3 : 2],
       i = "search" === r,
-      o = t && "categories" === r && "featured" !== e[4];
+      a = t && "categories" === r && "featured" !== e[4];
     return t => {
-      let r, a, s;
+      let r, o, s;
       if (null == t || t.preventDefault(), i) {
         var l, c, u;
         let e = new URLSearchParams(Z);
-        r = null != (l = e.get("q")) ? l : true, a = null != (c = e.get("category_id")) ? c : true, s = null != (u = e.get("page")) ? u : true
-      } else o && (a = e[4]);
+        r = null != (l = e.get("q")) ? l : true, o = null != (c = e.get("category_id")) ? c : true, s = null != (u = e.get("page")) ? u : true
+      } else a && (o = e[4]);
       return Promise.resolve().then(n.bind(n, 749681)).then(e => {
         let {
           transitionToGlobalDiscovery: t
@@ -203,7 +203,7 @@ function B(e) {
         } = n(49898);
         t({
           tab: i.APPS,
-          categoryId: null == a || Number.isNaN(a) ? true : Number(a),
+          categoryId: null == o || Number.isNaN(o) ? true : Number(o),
           page: null == s || Number.isNaN(s) ? true : Number(s),
           query: r
         })
@@ -257,5 +257,5 @@ function B(e) {
     t({
       tab: r.SERVERS
     })
-  }), true) : o || null == (0, C.v)(e) ? true : t => (null == t || t.preventDefault(), A.Z.show(e), true)
+  }), true) : a || null == (0, C.v)(e) ? true : t => (null == t || t.preventDefault(), A.Z.show(e), true)
 }

@@ -58,7 +58,7 @@ function P(e) {
     icon: () => (0, r.jsx)(h.Z, {}),
     onAction: P
   });
-  if ((0, a.Z)(n)) return (0, r.jsx)(O.Z, {
+  if ((0, o.Z)(n)) return (0, r.jsx)(O.Z, {
     platformType: C.ABu.PLAYSTATION,
     icon: () => (0, r.jsx)(p.Z, {}),
     onAction: P
@@ -73,7 +73,7 @@ function P(e) {
     onAction: P,
     onClose: w
   });
-  let U = (0, i.Z)(n, C.xjy.JOIN) || (0, o.Z)(n),
+  let U = (0, i.Z)(n, C.xjy.JOIN) || (0, a.Z)(n),
     G = (null == n ? true : n.application_id) != null;
   return U && G ? (0, r.jsxs)("div", {
     className: R.buttonContainer,

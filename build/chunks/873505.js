@@ -2,17 +2,17 @@
 /** chunk id: 873505, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  xQ: () => o
+  xQ: () => a
 });
 let r = 7e3,
   i = null;
 
-function o(e, t = "assertive", n = r) {
-  i ? i.announce(e, t, n) : (i = new a, ("boolean" == typeof IS_REACT_ACT_ENVIRONMENT ? IS_REACT_ACT_ENVIRONMENT : "undefined" != typeof jest) ? i.announce(e, t, n) : setTimeout(() => {
+function a(e, t = "assertive", n = r) {
+  i ? i.announce(e, t, n) : (i = new o, ("boolean" == typeof IS_REACT_ACT_ENVIRONMENT ? IS_REACT_ACT_ENVIRONMENT : "undefined" != typeof jest) ? i.announce(e, t, n) : setTimeout(() => {
     (null == i ? true : i.isAttached()) && (null == i || i.announce(e, t, n))
   }, 100))
 }
-class a {
+class o {
   isAttached() {
     var e;
     return null == (e = this.node) ? true : module.isConnected
@@ -25,11 +25,11 @@ class a {
     this.node && (document.body.removeChild(this.node), this.node = null)
   }
   announce(e, t = "assertive", n = r) {
-    var i, o;
+    var i, a;
     if (!this.node) return;
-    let a = document.createElement("div");
-    "object" == typeof e ? (a.setAttribute("role", "img"), a.setAttribute("aria-labelledby", e["aria-labelledby"])) : a.textContent = e, "assertive" === t ? null == (i = this.assertiveLog) || i.appendChild(a) : null == (o = this.politeLog) || o.appendChild(a), "" !== e && setTimeout(() => {
-      a.remove()
+    let o = document.createElement("div");
+    "object" == typeof e ? (o.setAttribute("role", "img"), o.setAttribute("aria-labelledby", e["aria-labelledby"])) : o.textContent = e, "assertive" === t ? null == (i = this.assertiveLog) || i.appendChild(o) : null == (a = this.politeLog) || a.appendChild(o), "" !== e && setTimeout(() => {
+      o.remove()
     }, n)
   }
   clear(e) {

@@ -33,7 +33,7 @@ function y(e) {
     explicitContentNonFriendDm: I
   } = (0, u.B)(), T = e => {
     let t = Object.values(e);
-    if ((0, l.Ks)() && t.includes(i.Q4.SHOW)) return void a.Z.showAgeVerificationGetStartedModal({
+    if ((0, l.Ks)() && t.includes(i.Q4.SHOW)) return void o.Z.showAgeVerificationGetStartedModal({
       entryPoint: s.cU.SENSITIVE_MEDIA_FILTER_SETTINGS
     });
     (0, c.zj)(e)
@@ -56,10 +56,10 @@ function y(e) {
     children: n ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
         className: b.selectItemRow,
-        children: [(0, r.jsx)(o.Text, {
+        children: [(0, r.jsx)(a.Text, {
           variant: "text-md/medium",
           children: E.intl.string(E.t["+uI23N"])
-        }), (0, r.jsx)(o.q4e, {
+        }), (0, r.jsx)(a.q4e, {
           variant: "text-only",
           className: b.select,
           options: S,
@@ -79,10 +79,10 @@ function y(e) {
         })]
       }), (0, r.jsxs)("div", {
         className: b.selectItemRow,
-        children: [(0, r.jsx)(o.Text, {
+        children: [(0, r.jsx)(a.Text, {
           variant: "text-md/medium",
           children: E.intl.string(E.t["Yh+HX1"])
-        }), (0, r.jsx)(o.q4e, {
+        }), (0, r.jsx)(a.q4e, {
           variant: "text-only",
           className: b.select,
           options: S,
@@ -102,11 +102,11 @@ function y(e) {
         })]
       }), (0, r.jsxs)("div", {
         className: b.selectItemRow,
-        children: [(0, r.jsx)(o.Text, {
+        children: [(0, r.jsx)(a.Text, {
           variant: "text-md/medium",
           color: y ? "text-primary" : "text-muted",
           children: E.intl.string(E.t["FP+a4+"])
-        }), (0, r.jsx)(o.q4e, {
+        }), (0, r.jsx)(a.q4e, {
           variant: "text-only",
           className: b.select,
           options: A,
@@ -125,7 +125,7 @@ function y(e) {
             option: e
           })
         })]
-      }), (0, r.jsx)(o.Text, {
+      }), (0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
         color: "text-muted",
         children: E.intl.string(E.t.Wnojv7)
@@ -136,11 +136,11 @@ function y(e) {
         description: E.intl.format(E.t.ZUvrwM, {
           learnMoreLink: _.Z.getArticleURL(g.BhN.EXPLICIT_MEDIA_REDACTION)
         })
-      }), (0, r.jsx)(o.xJW, {
-        tag: o.RB0.H3,
+      }), (0, r.jsx)(a.xJW, {
+        tag: a.RB0.H3,
         title: E.intl.string(E.t["6k0AgI"]),
         titleClassName: b.selectItemTitle,
-        children: (0, r.jsx)(o.q4e, {
+        children: (0, r.jsx)(a.q4e, {
           variant: "text-only",
           className: b.select,
           options: S,
@@ -149,11 +149,11 @@ function y(e) {
             explicitContentFriendDm: e
           })
         })
-      }), (0, r.jsx)(o.xJW, {
-        tag: o.RB0.H3,
+      }), (0, r.jsx)(a.xJW, {
+        tag: a.RB0.H3,
         title: E.intl.string(E.t.D2EGSk),
         titleClassName: b.selectItemTitle,
-        children: (0, r.jsx)(o.q4e, {
+        children: (0, r.jsx)(a.q4e, {
           variant: "text-only",
           className: b.select,
           options: S,
@@ -162,11 +162,11 @@ function y(e) {
             explicitContentNonFriendDm: e
           })
         })
-      }), (0, r.jsx)(o.xJW, {
-        tag: o.RB0.H3,
+      }), (0, r.jsx)(a.xJW, {
+        tag: a.RB0.H3,
         title: E.intl.string(E.t["FP+a4+"]),
         titleClassName: b.selectItemTitle,
-        children: (0, r.jsx)(o.q4e, {
+        children: (0, r.jsx)(a.q4e, {
           variant: "text-only",
           className: b.select,
           options: A,

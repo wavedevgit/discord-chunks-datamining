@@ -101,7 +101,7 @@ function X(e) {
 }
 
 function Q(e) {
-  var t, n, r, i, o, a, s, l;
+  var t, n, r, i, a, o, s, l;
   let {
     location: u,
     applicationId: d,
@@ -133,11 +133,11 @@ function Q(e) {
       userIds: new Set(A),
       participants: p,
       referrerId: null != (i = null == G ? true : G.referrerId) ? i : null == Z ? true : Z.referrerId,
-      customId: null != (o = null == G ? true : G.customId) ? o : null == Z ? true : Z.customId,
+      customId: null != (a = null == G ? true : G.customId) ? a : null == Z ? true : Z.customId,
       proxyTicket: h
     };
   P && null != G && D.set(G.applicationId, C(S({}, G, F), {
-    proxyTicket: null != (a = F.proxyTicket) ? a : G.proxyTicket
+    proxyTicket: null != (o = F.proxyTicket) ? o : G.proxyTicket
   }));
   let V = !j;
   null != G && u.id === G.location.id && d === G.applicationId && (!P && Array.from(G.userIds).some(e => e === N) || V) ? $(G) : P && (null == G || G.applicationId !== d || G.location.id !== u.id) && (w === c.default.getSessionId() && ei({
@@ -173,14 +173,14 @@ function J(e) {
       application_id: n,
       launch_id: r,
       composite_instance_id: i,
-      participants: o
+      participants: a
     } = e;
     Q({
       location: t,
       applicationId: n,
       launchId: r,
       compositeInstanceId: i,
-      participants: o.map(e => ({
+      participants: a.map(e => ({
         userId: e.user_id,
         sessionId: e.session_id,
         nonce: e.nonce
@@ -215,9 +215,9 @@ function en(e) {
     channel: r
   } = e, i = null != (t = L.get(r.id)) ? t : [];
   L.set(r.id, []);
-  let o = X(r.guild_id),
-    a = (null != (n = x.get(o)) ? n : []).filter(e => (0, E.p)(e.location) !== r.id);
-  x.set(o, a), i.forEach(e => {
+  let a = X(r.guild_id),
+    o = (null != (n = x.get(a)) ? n : []).filter(e => (0, E.p)(e.location) !== r.id);
+  x.set(a, o), i.forEach(e => {
     M.delete(e.location.id)
   }), j.set(r.id, [])
 }
@@ -228,14 +228,14 @@ function er(e) {
     launchId: n,
     compositeInstanceId: r,
     location: i,
-    participants: o
-  } = e, a = (0, E.p)(i), s = U.get(k(null != a ? a : null, t));
+    participants: a
+  } = e, o = (0, E.p)(i), s = U.get(k(null != o ? o : null, t));
   Q({
     location: i,
     applicationId: t,
     launchId: n,
     compositeInstanceId: r,
-    participants: o.map(e => ({
+    participants: a.map(e => ({
       userId: e.user_id,
       sessionId: e.session_id,
       nonce: e.nonce
@@ -248,7 +248,7 @@ function ei(e) {
   var t, n;
   let {
     applicationId: i,
-    launchId: o,
+    launchId: a,
     compositeInstanceId: s,
     location: l,
     participants: p,
@@ -271,7 +271,7 @@ function ei(e) {
     userIds: new Set(p.map(e => e.userId)),
     participants: p,
     connectedSince: Date.now(),
-    launchId: o,
+    launchId: a,
     compositeInstanceId: s,
     location: l,
     referrerId: O,
@@ -286,21 +286,21 @@ function ei(e) {
     participants: p,
     embeddedActivity: x,
     inviterUserId: S
-  }), (0, h.R)() ? (K = v.Ez.ACTIVITY_POPOUT_WINDOW, a.Z.wait(() => {
-    a.Z.dispatch({
+  }), (0, h.R)() ? (K = v.Ez.ACTIVITY_POPOUT_WINDOW, o.Z.wait(() => {
+    o.Z.dispatch({
       type: "ACTIVITY_POPOUT_WINDOW_OPEN"
     })
   })) : K = R !== d.Z.getChannelId() || (0, y.Z)(R) ? v.Ez.PIP : v.Ez.PANEL, W.set(eI(l.id, i), Date.now())
 }
 
-function eo(e) {
+function ea(e) {
   let {
     applicationId: t
   } = e, n = D.get(t);
   D.delete(t), (null == n ? true : n.location.id) === (null == r ? true : r.id) && (r = true)
 }
 
-function ea(e) {
+function eo(e) {
   let {
     layout: t
   } = e;
@@ -355,15 +355,15 @@ function ed(e) {
   } = e, r = (0, b.Z)((0, p.getOS)()), i = t.reduce((e, t) => {
     let i = t.client_platform_config[r];
     if (null == i.label_from || null == i.label_until) return e;
-    let o = {
+    let a = {
         fromDate: i.label_from,
         untilDate: i.label_until
       },
-      a = new Date(i.label_from).getTime(),
+      o = new Date(i.label_from).getTime(),
       l = new Date(i.label_until).getTime();
-    return a > n || l < n || Object.values(s.eR).filter(e => !i.omit_badge_from_surfaces.includes(e)).forEach(t => {
+    return o > n || l < n || Object.values(s.eR).filter(e => !i.omit_badge_from_surfaces.includes(e)).forEach(t => {
       let n = e[t];
-      (null == n || new Date(n.fromDate).getTime() < a) && (e[t] = o)
+      (null == n || new Date(n.fromDate).getTime() < o) && (e[t] = a)
     }), e
   }, {});
   N.dateRangesForSurfaces = i
@@ -391,13 +391,13 @@ function e_(e) {
     componentId: n,
     commandOrigin: r,
     launchParams: i,
-    channelId: o,
-    inviterUserId: a
+    channelId: a,
+    inviterUserId: o
   } = e;
-  U.set(k(o, t), {
+  U.set(k(a, t), {
     isLaunching: true,
     componentId: n,
-    inviterUserId: a,
+    inviterUserId: o,
     launchParams: i
   }), z = r === l.bB.APP_DMS_ENTRY_POINT_COMMAND_BUTTON ? v.MI.NO_CHAT : v.MI.RESIZABLE
 }
@@ -407,8 +407,8 @@ function ep(e) {
     applicationId: t,
     channelId: n,
     proxyTicket: r
-  } = e, i = k(n, t), o = U.get(i);
-  null != o && U.set(i, C(S({}, o), {
+  } = e, i = k(n, t), a = U.get(i);
+  null != a && U.set(i, C(S({}, a), {
     proxyTicket: r
   }))
 }
@@ -553,8 +553,8 @@ class eS extends(i = Chunk442837.ZP.PersistedStore) {
       i = null != (t = B.get(r)) ? t : {
         isFetching: false
       },
-      o = Date.now() - (null != (n = null == i ? true : i.lastFetchTimestampMs) ? n : 0) > Y;
-    return !(null == i ? true : i.isFetching) && o
+      a = Date.now() - (null != (n = null == i ? true : i.lastFetchTimestampMs) ? n : 0) > Y;
+    return !(null == i ? true : i.isFetching) && a
   }
   getOrientationLockStateForApp(e) {
     return Z.get(e)
@@ -637,8 +637,8 @@ let eA = new eS(Chunk570140.Z, {
     EMBEDDED_ACTIVITY_LAUNCH_SET_PROXY_TICKET: ep,
     EMBEDDED_ACTIVITY_LAUNCH_SUCCESS: eh,
     EMBEDDED_ACTIVITY_LAUNCH_FAIL: em,
-    EMBEDDED_ACTIVITY_CLOSE: eo,
-    EMBEDDED_ACTIVITY_UPDATE_POPOUT_WINDOW_LAYOUT: ea,
+    EMBEDDED_ACTIVITY_CLOSE: ea,
+    EMBEDDED_ACTIVITY_UPDATE_POPOUT_WINDOW_LAYOUT: eo,
     EMBEDDED_ACTIVITY_UPDATE_V2: er,
     LOCAL_ACTIVITY_UPDATE: es,
     EMBEDDED_ACTIVITY_SET_CONFIG: el,

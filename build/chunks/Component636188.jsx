@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk239091 = require("./239091.js"),
@@ -74,8 +74,8 @@ function x(e, t) {
   if (null == e) return {};
   var n, r, i = L(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -83,8 +83,8 @@ function x(e, t) {
 function L(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let j = 25,
@@ -102,7 +102,7 @@ function U(e) {
     icon: t,
     onClick: n,
     text: i,
-    children: o,
+    children: a,
     className: s,
     selected: c = false,
     disabled: u = false,
@@ -110,7 +110,7 @@ function U(e) {
     onBlur: f
   } = e;
   return (0, r.jsxs)(l.P3F, {
-    className: a()(s, N.backgroundOption, {
+    className: o()(s, N.backgroundOption, {
       [N.backgroundOptionSelected]: c,
       [N.backgroundOptionDisabled]: u
     }),
@@ -121,7 +121,7 @@ function U(e) {
       className: N.backgroundOptionRing
     }) : null, (0, r.jsxs)("div", {
       className: N.backgroundOptionInner,
-      children: [o, (0, r.jsxs)("div", {
+      children: [a, (0, r.jsxs)("div", {
         className: N.backgroundOptionContent,
         children: [(0, r.jsx)(t, {
           className: N.backgroundIconOptionIcon,
@@ -144,11 +144,11 @@ function G(e) {
   let {
     option: t,
     source: n,
-    isAnimated: o
-  } = e, [a, s] = i.useState(false);
+    isAnimated: a
+  } = e, [o, s] = i.useState(false);
   if (i.useEffect(() => {
       new Image().src = n
-    }, [n]), !o || null == t) return (0, r.jsx)("div", {
+    }, [n]), !a || null == t) return (0, r.jsx)("div", {
     className: N.backgroundImageOption,
     style: {
       backgroundImage: "url(".concat(n, ")")
@@ -165,7 +165,7 @@ function G(e) {
     onMouseMove: () => s(true),
     onMouseLeave: () => s(false),
     className: N.backgroundImageOption,
-    src: a ? n : l,
+    src: o ? n : l,
     alt: t.id
   })
 }
@@ -174,7 +174,7 @@ function B(e) {
   var {
     option: t,
     source: i,
-    selected: o = false,
+    selected: a = false,
     onSelectOption: d,
     isAnimatedImage: E,
     isVideo: b,
@@ -205,8 +205,8 @@ function B(e) {
     }))
   }
   return (0, r.jsxs)(l.P3F, D(P({}, v), {
-    className: a()(N.backgroundOption, {
-      [N.backgroundOptionSelected]: o
+    className: o()(N.backgroundOption, {
+      [N.backgroundOptionSelected]: a
     }),
     onClick: () => d(t),
     onContextMenu: e => (0, c.jW)(e, async () => {
@@ -215,10 +215,10 @@ function B(e) {
       } = await n.e("99414").then(n.bind(n, 187658));
       return n => (0, r.jsx)(e, D(P({}, n), {
         backgroundOption: t,
-        optionIsInUse: o
+        optionIsInUse: a
       }))
     }),
-    children: [o ? (0, r.jsx)("div", {
+    children: [a ? (0, r.jsx)("div", {
       className: N.backgroundOptionRing
     }) : null, (0, r.jsx)("div", {
       onFocus: L,
@@ -257,12 +257,12 @@ function F(e) {
     onClick: t,
     tooltipText: n,
     disabled: i = false
-  } = e, o = (0, s.e7)([m.Z], () => m.Z.hasHotspot(T.v.ANIMATED_VIDEO_BG_CUSTOM_TOOLTIP_NEW));
+  } = e, a = (0, s.e7)([m.Z], () => m.Z.hasHotspot(T.v.ANIMATED_VIDEO_BG_CUSTOM_TOOLTIP_NEW));
 
-  function a() {
+  function o() {
     h.Kw(T.v.ANIMATED_VIDEO_BG_CUSTOM_TOOLTIP_NEW)
   }
-  let c = o ? C.intl.string(C.t["5TUJOj"]) : n;
+  let c = a ? C.intl.string(C.t["5TUJOj"]) : n;
   return (0, r.jsxs)(l.DY3, {
     text: c,
     className: N.newBackgroundTooltipContainer,
@@ -271,8 +271,8 @@ function F(e) {
       disabled: i,
       icon: l.FmF,
       onClick: t,
-      onMouseLeave: a,
-      onBlur: a,
+      onMouseLeave: o,
+      onBlur: o,
       text: (0, r.jsxs)("div", {
         className: N.backgroundCustomInlineUpsell,
         children: [(0, r.jsx)(l.SrA, {
@@ -289,7 +289,7 @@ function F(e) {
       }), (0, r.jsx)("div", {
         className: N.backgroundCustomInlineUpsellBackgroundDarkener
       })]
-    }), o && (0, r.jsx)(l.IGR, {
+    }), a && (0, r.jsx)(l.IGR, {
       text: C.intl.string(C.t.y2b7CA),
       className: N.newTextBadge
     })]
@@ -318,7 +318,7 @@ function H(e) {
   let {
     onAddBackgroundImage: t,
     disabled: i
-  } = e, o = (0, l.vRw)(), a = i ? C.intl.formatToPlainString(C.t.ykGFeH, {
+  } = e, a = (0, l.vRw)(), o = i ? C.intl.formatToPlainString(C.t.ykGFeH, {
     maxCustomBackgrounds: j
   }) : C.intl.string(C.t.Qx0tFR), s = k();
 
@@ -345,13 +345,13 @@ function H(e) {
         showUpsellHeader: true
       }, n))
     }, {
-      contextKey: o
+      contextKey: a
     })
   }
   return (0, r.jsx)(F, {
     disabled: i,
     onClick: c,
-    tooltipText: a
+    tooltipText: o
   })
 }
 
@@ -359,8 +359,8 @@ function Y(e) {
   let {
     canUseCustomBackgrounds: t,
     customBackgroundOptions: n,
-    selectedOption: o,
-    onSelectOption: a,
+    selectedOption: a,
+    onSelectOption: o,
     onUpsellClick: s,
     onAddBackgroundImage: c,
     smallerOptions: u
@@ -372,15 +372,15 @@ function Y(e) {
     children: (0, r.jsxs)("div", {
       className: u ? N.backgroundOptionsSmall : N.backgroundOptionsLarge,
       children: [(0, r.jsx)(U, {
-        selected: null == o,
+        selected: null == a,
         icon: l.t6m,
-        onClick: () => a(null),
+        onClick: () => o(null),
         text: C.intl.string(C.t.fUdMeH)
       }), (0, r.jsx)(U, {
         className: N.__invalid_backgroundOptionBlurred,
-        selected: o === v.f7,
+        selected: a === v.f7,
         icon: l.yMH,
-        onClick: () => a(v.f7),
+        onClick: () => o(v.f7),
         text: C.intl.string(C.t.LhSyLy),
         children: (0, r.jsx)("div", {
           className: N.backgroundOptionBlurBackground
@@ -404,8 +404,8 @@ function Y(e) {
             key: e.id,
             option: e,
             source: n,
-            selected: (0, y.rD)(o) && o.id === e.id,
-            onSelectOption: a,
+            selected: (0, y.rD)(a) && a.id === e.id,
+            onSelectOption: o,
             isVideo: (0, E.ay)(e.asset),
             isAnimatedImage: (0, E.xR)(e.asset)
           }))
@@ -419,8 +419,8 @@ function Y(e) {
             key: e.id,
             option: e.id,
             source: e.source,
-            selected: o === e.id,
-            onSelectOption: a,
+            selected: a === e.id,
+            onSelectOption: o,
             isVideo: t,
             isAnimatedImage: false,
             hotspotLocation: e.hotspotLocation

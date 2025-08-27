@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk100527 = require("./100527.js"),
@@ -69,7 +69,7 @@ function I(e) {
     maxCharacterCount: T,
     showRemainingCharsAfterCount: S,
     className: A
-  } = e, C = (0, a.e7)([f.default], () => _.ZP.canUseIncreasedMessageLength(f.default.getCurrentUser())), N = (0, u.Z)(), R = null != T ? T : N, P = null != (b = null != S ? S : T) ? b : N / 10, w = I.length, D = null != O.upsellLongMessages && (null != w ? w : 0) > h.J6R && C, x = null != O.upsellLongMessages && !C, L = (null == (n = (0, d.N)()) || null == (t = n.subscription_trial) ? true : t.sku_id) === m.Si.TIER_2, j = R - w, M = j > P, k = j < 0 && L, U = 0 === j ? g.intl.string(g.t.tU6YQ0) : j > 0 ? g.intl.formatToPlainString(g.t.qH8uFR, {
+  } = e, C = (0, o.e7)([f.default], () => _.ZP.canUseIncreasedMessageLength(f.default.getCurrentUser())), N = (0, u.Z)(), R = null != T ? T : N, P = null != (b = null != S ? S : T) ? b : N / 10, w = I.length, D = null != O.upsellLongMessages && (null != w ? w : 0) > h.J6R && C, x = null != O.upsellLongMessages && !C, L = (null == (n = (0, d.N)()) || null == (t = n.subscription_trial) ? true : t.sku_id) === m.Si.TIER_2, j = R - w, M = j > P, k = j < 0 && L, U = 0 === j ? g.intl.string(g.t.tU6YQ0) : j > 0 ? g.intl.formatToPlainString(g.t.qH8uFR, {
     count: j
   }) : g.intl.string(g.t.YSRIqa), {
     analyticsLocations: G
@@ -79,7 +79,7 @@ function I(e) {
   return (0, r.jsx)(c.Gt, {
     value: G,
     children: (0, r.jsxs)("div", {
-      className: o()(A, E.characterCount),
+      className: a()(A, E.characterCount),
       children: [(0, r.jsxs)("div", {
         className: E.flairContainer,
         children: [D && B ? (0, r.jsx)(s.ua7, {

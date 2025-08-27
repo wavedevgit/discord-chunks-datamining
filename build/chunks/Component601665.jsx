@@ -75,7 +75,7 @@ function P(e) {
     channelId: P,
     messageId: w,
     roleId: D
-  }), Z = (0, h.ZP)(t.id, N), F = (0, o.e7)([d.Z], () => null != N ? d.Z.getGuild(N) : null), V = i.useRef(null), H = (0, s.Z)(V);
+  }), Z = (0, h.ZP)(t.id, N), F = (0, a.e7)([d.Z], () => null != N ? d.Z.getGuild(N) : null), V = i.useRef(null), H = (0, s.Z)(V);
   i.useEffect(() => {
     null == j || j(null == V ? true : V.current)
   }, [V, j]);
@@ -85,7 +85,7 @@ function P(e) {
         hideRestrictedProfile: true
       }, B, e))
     },
-    W = () => M ? null : (0, r.jsx)(a.sNh, {
+    W = () => M ? null : (0, r.jsx)(o.sNh, {
       id: "view-profile",
       label: A.intl.string(A.t["+Xp3ho"]),
       action: () => {
@@ -95,7 +95,7 @@ function P(e) {
         }, B))
       }
     }),
-    K = U ? "div" : a.VqE,
+    K = U ? "div" : o.VqE,
     z = (0, u.Dt)(),
     q = f.ZP.useName(N, P, t);
   return (0, r.jsx)(c.Gt, {
@@ -109,8 +109,8 @@ function P(e) {
       children: (0, r.jsxs)(K, {
         ref: V,
         "aria-labelledby": z,
-        children: [(0, r.jsx)(a.nn4, {
-          children: (0, r.jsx)(a.H, {
+        children: [(0, r.jsx)(o.nn4, {
+          children: (0, r.jsx)(o.H, {
             id: z,
             children: A.intl.format(A.t.KRe1Fh, {
               name: q

@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 /** chunk id: 106301, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-let r, i, o;
+let r, i, a;
 require.d(exports, {
   Z: () => T
 }), require("./388685.js");
-var a, Chunk392711 = require("./392711.js"),
+var o, Chunk392711 = require("./392711.js"),
   l = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -56,7 +56,7 @@ function b(e) {
     status: t,
     customHangStatus: i,
     expiresAt: Date.now() + h
-  }), o = {
+  }), a = {
     type: d.IIU.HANG_STATUS,
     name: "Hang Status",
     state: r
@@ -67,7 +67,7 @@ function y(e) {
   let {
     status: t,
     emoji: n,
-    saveAsDefault: a
+    saveAsDefault: o
   } = e;
   r = d.tNA.CUSTOM, i = {
     status: t,
@@ -75,11 +75,11 @@ function y(e) {
   };
   let s = [...m.recentCustomStatuses],
     c = s.findIndex(e => e.status === t && l().isEqual(e.emoji, n));
-  false !== c ? s.splice(c, 1) : s.length === p && s.splice(p - 1, 1), m.recentCustomStatuses = [i, ...s], a && (m.currentDefaultStatus = {
+  false !== c ? s.splice(c, 1) : s.length === p && s.splice(p - 1, 1), m.recentCustomStatuses = [i, ...s], o && (m.currentDefaultStatus = {
     status: r,
     customHangStatus: i,
     expiresAt: Date.now() + h
-  }), o = {
+  }), a = {
     type: d.IIU.HANG_STATUS,
     name: "Hang Status",
     state: r,
@@ -96,7 +96,7 @@ function O(e) {
     status: null,
     customHangStatus: null,
     expiresAt: Date.now() + h
-  }), o = null
+  }), a = null
 }
 
 function v(e) {
@@ -106,12 +106,12 @@ function v(e) {
   t.forEach(e => {
     let {
       status: t,
-      emoji: a
-    } = e, s = n.findIndex(e => e.status === t && l().isEqual(e.emoji, a));
-    false !== s && n.splice(s, 1), t === (null == i ? true : i.status) && l().isEqual(a, null == i ? true : i.emoji) && (r = null, i = null, m.currentDefaultStatus = null, o = null)
+      emoji: o
+    } = e, s = n.findIndex(e => e.status === t && l().isEqual(e.emoji, o));
+    false !== s && n.splice(s, 1), t === (null == i ? true : i.status) && l().isEqual(o, null == i ? true : i.emoji) && (r = null, i = null, m.currentDefaultStatus = null, a = null)
   }), m.recentCustomStatuses = n
 }
-class I extends(a = Chunk442837.ZP.PersistedStore) {
+class I extends(o = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     m = _({}, g(), null != e ? e : {})
   }
@@ -131,7 +131,7 @@ class I extends(a = Chunk442837.ZP.PersistedStore) {
     return m.currentDefaultStatus
   }
   getHangStatusActivity() {
-    return null == r ? null : o
+    return null == r ? null : a
   }
 }
 f(I, "displayName", "HangStatusStore"), f(I, "persistKey", "HangStatusStore");

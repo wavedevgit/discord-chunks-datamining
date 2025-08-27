@@ -44,14 +44,14 @@ function y(e) {
 }
 let O = function(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
-  return (0, u.dS)(e) ? o.ewx : (0, s.Z)(e) ? t ? o.iWm : o.jje : e.type === E.IIU.PLAYING ? o.iWm : e.type === E.IIU.LISTENING ? o.RZG : e.type === E.IIU.WATCHING || e.type === E.IIU.STREAMING ? o.ARS : e.type === E.IIU.COMPETING ? o.iWm : null
+  return (0, u.dS)(e) ? a.ewx : (0, s.Z)(e) ? t ? a.iWm : a.jje : e.type === E.IIU.PLAYING ? a.iWm : e.type === E.IIU.LISTENING ? a.RZG : e.type === E.IIU.WATCHING || e.type === E.IIU.STREAMING ? a.ARS : e.type === E.IIU.COMPETING ? a.iWm : null
 };
 
 function v(e) {
   let {
     activity: t,
     textVariant: n,
-    textClassName: o,
+    textClassName: a,
     iconClassName: s,
     hideIcon: u = false,
     hideText: d = false,
@@ -59,7 +59,7 @@ function v(e) {
     canTruncate: E = true
   } = e, {
     enabled: b
-  } = a.c.useExperiment({
+  } = o.c.useExperiment({
     location: "PresenceActivityStatus"
   }, {
     autoTrackExposure: true
@@ -93,7 +93,7 @@ function v(e) {
       onTooltipShow: N ? T : true
     }), !d && (0, r.jsx)(m.Z, {
       variant: n,
-      className: o,
+      className: a,
       canTruncate: E,
       hideTooltip: g,
       children: S
@@ -106,14 +106,14 @@ function I(e) {
     activity: t,
     textVariant: n,
     textClassName: i,
-    iconClassName: o,
+    iconClassName: a,
     hideIcon: s = false,
     hideText: l = false,
     hideTooltip: u = false,
     canTruncate: d = true
   } = e, {
     enabled: p
-  } = a.c.useExperiment({
+  } = o.c.useExperiment({
     location: "PresenceActivityStatusWithCombinedTooltip"
   }, {
     autoTrackExposure: true
@@ -132,7 +132,7 @@ function I(e) {
   return (0, r.jsx)(g.Z, {
     icon: I ? (0, r.jsx)(h.Z, {
       icon: v,
-      className: o
+      className: a
     }) : true,
     text: b,
     textVariant: n,

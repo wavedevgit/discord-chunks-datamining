@@ -13,16 +13,16 @@ var Chunk442837 = require("./442837.js"),
   Chunk373076 = require("./373076.js");
 
 function u(e) {
-  let t = (0, r.e7)([a.Z], () => {
+  let t = (0, r.e7)([o.Z], () => {
       var t;
-      return null == (t = a.Z.getChannel(e)) ? true : t.wallpaper
+      return null == (t = o.Z.getChannel(e)) ? true : t.wallpaper
     }),
     {
       previewWallpaperId: n,
       activePickerChannelId: u
     } = (0, l.B)(),
     d = (0, c.P)(null == t ? true : t.setterId),
-    f = (0, i.wj)((0, o.ZP)()),
+    f = (0, i.wj)((0, a.ZP)()),
     _ = (0, s.sQ)({
       location: "ChatWallpaperSetSystemMessage"
     }),

@@ -56,17 +56,17 @@ function h(e, t) {
 function m(e) {
   return ({
     [u.h7.AUDIO_INPUT]: {
-      setDevice: a.Z.setInputDevice,
+      setDevice: o.Z.setInputDevice,
       getLabel: () => d.intl.string(d.t.ElbIXF),
       getLocation: e => "".concat(e, ".useInputDeviceMenuItems")
     },
     [u.h7.AUDIO_OUTPUT]: {
-      setDevice: a.Z.setOutputDevice,
+      setDevice: o.Z.setOutputDevice,
       getLabel: () => d.intl.string(d.t["6Ww0iI"]),
       getLocation: e => "".concat(e, ".useOutputDeviceMenuItems")
     },
     [u.h7.VIDEO_INPUT]: {
-      setDevice: a.Z.setVideoDevice,
+      setDevice: o.Z.setVideoDevice,
       getLabel: () => d.intl.string(d.t.F122Gx),
       getLocation: e => "".concat(e, ".useVideoDeviceMenuItems")
     }
@@ -77,7 +77,7 @@ function g(e) {
   let {
     deviceType: t,
     analyticsLocations: n,
-    asSubmenu: a = false,
+    asSubmenu: o = false,
     onDeviceSelect: u,
     showAllDevices: f = false,
     selectedDeviceId: p,
@@ -96,13 +96,13 @@ function g(e) {
   } = (0, l.p6)(t), w = null != p ? p : R, D = N.map(e => {
     let {
       id: i,
-      disabled: a,
+      disabled: o,
       name: s
     } = e;
-    return (0, r.jsx)(o.k5B, _({
+    return (0, r.jsx)(a.k5B, _({
       id: "".concat(t, "-").concat(i),
       group: "".concat(t, "-devices"),
-      disabled: a,
+      disabled: o,
       label: s,
       checked: i === w,
       action: () => {
@@ -112,7 +112,7 @@ function g(e) {
         })
       }
     }, null == b ? true : b(i)), "".concat(t, "-").concat(i))
-  }), x = (0, r.jsx)(o.sNh, {
+  }), x = (0, r.jsx)(a.sNh, {
     id: "SHOW_MORE",
     label: d.intl.string(d.t.E99UMj),
     dontCloseOnAction: true,
@@ -126,13 +126,13 @@ function g(e) {
       })
     }
   }), L = !I && (null == C ? true : C.length) > 0;
-  return a ? (0, r.jsxs)(o.sNh, h(_({
+  return o ? (0, r.jsxs)(a.sNh, h(_({
     id: "".concat(t, "-devices"),
     label: O(),
     subtext: P
   }, E), {
     children: [D, L && x]
-  })) : (0, r.jsxs)(o.kSQ, h(_({
+  })) : (0, r.jsxs)(a.kSQ, h(_({
     label: O()
   }, g), {
     children: [D, L && x]

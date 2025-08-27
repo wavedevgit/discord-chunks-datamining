@@ -73,9 +73,9 @@ function _(e) {
   let t = i.X.PLAY_ON_PLAYSTATION in e || i.X.PLAY_ON_XBOX in e,
     n = i.X.PLAY_ON_DESKTOP in e || i.X.PLAY_ON_DESKTOP_V2 in e,
     r = i.X.STREAM_ON_DESKTOP in e,
-    o = i.X.WATCH_VIDEO in e,
-    a = i.X.PLAY_ACTIVITY in e;
-  return t && n ? 4 : t ? 3 : n ? 0 : r ? 1 : o ? 2 : a ? 5 : true
+    a = i.X.WATCH_VIDEO in e,
+    o = i.X.PLAY_ACTIVITY in e;
+  return t && n ? 4 : t ? 3 : n ? 0 : r ? 1 : a ? 2 : o ? 5 : true
 }
 
 function p(e, t) {
@@ -150,7 +150,7 @@ let h = function(e) {
   function l(e) {
     let n = Number(e);
     if (isNaN(n)) return;
-    n *= a.Z.Seconds.MINUTE;
+    n *= o.Z.Seconds.MINUTE;
     let r = Object.fromEntries(Object.entries(i.tasks).map(e => {
       let [t, r] = e;
       return [t, d(c({}, r), {
@@ -162,12 +162,12 @@ let h = function(e) {
     }))
   }
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsxs)(o.xJW, {
-      children: [(0, r.jsx)(o.vwX, {
-        tag: o.RB0.H5,
+    children: [(0, r.jsxs)(a.xJW, {
+      children: [(0, r.jsx)(a.vwX, {
+        tag: a.RB0.H5,
         children: "Task Type(s)"
-      }), (0, r.jsx)(o.R94, {
-        children: (0, r.jsx)(o.PhF, {
+      }), (0, r.jsx)(a.R94, {
+        children: (0, r.jsx)(a.PhF, {
           className: s.taskPresetSelect,
           placeholder: "Select Task Preset",
           options: f,
@@ -186,13 +186,13 @@ let h = function(e) {
           serialize: String
         })
       })]
-    }), (0, r.jsxs)(o.xJW, {
-      children: [(0, r.jsx)(o.vwX, {
-        tag: o.RB0.H5,
+    }), (0, r.jsxs)(a.xJW, {
+      children: [(0, r.jsx)(a.vwX, {
+        tag: a.RB0.H5,
         children: "Task Duration"
-      }), (0, r.jsx)(o.R94, {
-        children: (0, r.jsx)(o.oil, {
-          value: String(n / a.Z.Seconds.MINUTE),
+      }), (0, r.jsx)(a.R94, {
+        children: (0, r.jsx)(a.oil, {
+          value: String(n / o.Z.Seconds.MINUTE),
           onChange: l
         })
       })]

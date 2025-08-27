@@ -45,7 +45,7 @@ async function u(e) {
     i.Z.dispatch({
       type: "ROBLOX_SUBGAME_APPLICATION_FETCH_SUCCESS",
       universeId: e,
-      application: null != n ? o.ZP.createFromServer(n) : null
+      application: null != n ? a.ZP.createFromServer(n) : null
     })
   } catch (t) {
     i.Z.dispatch({
@@ -58,14 +58,14 @@ async function u(e) {
 async function d(e) {
   let t = e,
     n = e => {
-      let t = a.Z.getSupplementalData(e);
+      let t = o.Z.getSupplementalData(e);
       return null == t || null == t.rootPlaceId
     };
   t = e.filter(n);
-  let o = e.filter(e => !n(e)),
+  let a = e.filter(e => !n(e)),
     l = {};
-  return (o.forEach(e => {
-    let t = a.Z.getSupplementalData(e);
+  return (a.forEach(e => {
+    let t = o.Z.getSupplementalData(e);
     null != t && (l[e] = t)
   }), 0 === t.length) ? l : await r.tn.get({
     url: s.ANM.ROBLOX_APPLICATIONS_SUPPLEMENTAL_DATA,

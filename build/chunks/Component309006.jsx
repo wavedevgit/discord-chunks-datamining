@@ -43,9 +43,9 @@ let m = Chunk647438.forwardRef(function(e, t) {
         }),
         r = null != n.emojiId,
         i = f.q.PREMIUM,
-        s = (0, o.random)(c.Jw[i].length, false),
+        s = (0, a.random)(c.Jw[i].length, false),
         l = {
-          id: (0, a.Z)(),
+          id: (0, o.Z)(),
           animationId: s,
           animationType: i,
           shouldResize: r,

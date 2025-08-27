@@ -2,15 +2,15 @@
 /** chunk id: 504692, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  S$: () => o,
-  ZP: () => a
+  S$: () => a,
+  ZP: () => o
 });
 var Chunk818083 = require("./818083.js"),
   Chunk987338 = require("./987338.js"),
-  o = function(e) {
+  a = function(e) {
     return e.Control = "CONTROL", e.Expressive = "EXPRESSIVE", e.Primary = "PRIMARY", e
   }({});
-let a = (0, Chunk818083.B)({
+let o = (0, Chunk818083.B)({
   kind: "user",
   id: "2025-08_referral_program_banner",
   label: "Referral Program Banner Experiment",

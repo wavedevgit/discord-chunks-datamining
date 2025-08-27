@@ -27,7 +27,7 @@ function f(e) {
   });
   return (0, r.jsx)(u.Z, {
     compact: f,
-    iconNode: (0, r.jsx)(o.vdY, {
+    iconNode: (0, r.jsx)(a.vdY, {
       size: "xs",
       color: "currentColor"
     }),
@@ -35,19 +35,19 @@ function f(e) {
     children: m ? d.intl.format("" === t.content ? d.t.AI1ZZm : d.t.geP3ra, {
       username: p.nick,
       usernameHook: h,
-      channelName: (0, r.jsx)(o.Text, {
+      channelName: (0, r.jsx)(a.Text, {
         tag: "span",
         variant: "text-md/medium",
         color: "text-primary",
         children: t.content
       }, "group-name-".concat(t.id)),
-      editGroupButton: (0, r.jsx)(o.Text, {
+      editGroupButton: (0, r.jsx)(a.Text, {
         tag: "span",
         variant: "text-md/medium",
         color: "text-link",
         children: d.intl.string(d.t["5Q9+/P"])
       }, "edit-group-button-".concat(t.id)),
-      onEditGroup: () => (0, s.B)(t.channel_id, a.Z.GROUP_DM_SYSTEM_MESSAGE_NAME)
+      onEditGroup: () => (0, s.B)(t.channel_id, o.Z.GROUP_DM_SYSTEM_MESSAGE_NAME)
     }) : d.intl.format(_ ? d.t.SOQ4hI : d.t.oItgEx, {
       username: p.nick,
       usernameHook: h,

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk202841 = require("./202841.js"),
   Chunk831209 = require("./831209.js"),
   Chunk494497 = require("./494497.js"),
@@ -79,7 +79,7 @@ function U(e) {
   let {
     guildId: t,
     powerup: n,
-    onClose: o
+    onClose: a
   } = e, {
     analyticsLocations: u
   } = (0, h.ZP)(), b = (0, v.g1)(t, "GuildPowerupMarketingPowerupCard"), y = n.skuId === c.A$, O = (0, A.ZP)(t, n).type !== N.A3.INACTIVE, S = (0, T.Z)(t), [L, M] = i.useState(false), [U, G] = i.useState(false), B = U, Z = i.useCallback(() => {
@@ -94,8 +94,8 @@ function U(e) {
       guild: e
     })
   }, [t, u]), F = i.useCallback(() => {
-    o(), (0, C.Z)(t, p.Z.GUILD_POWERUPS_MARKETING, n.skuId)
-  }, [t, n.skuId, o]), V = {
+    a(), (0, C.Z)(t, p.Z.GUILD_POWERUPS_MARKETING, n.skuId)
+  }, [t, n.skuId, a]), V = {
     tension: 400,
     friction: 30
   }, H = (0, f.q_F)({
@@ -114,7 +114,7 @@ function U(e) {
     e && M(true)
   }, []), z = (0, _.O)(K), q = (0, I.Z)(n, U);
   return (0, r.jsxs)("div", {
-    className: a()(x.topPerksCard, x.animatedTopPerksCard, D.powerupCard, {
+    className: o()(x.topPerksCard, x.animatedTopPerksCard, D.powerupCard, {
       [x.animate]: L
     }),
     onMouseEnter: () => G(true),
@@ -125,7 +125,7 @@ function U(e) {
     }), (0, r.jsx)("div", {
       className: x.topPerksCardImageWrapper,
       children: (0, r.jsx)(s.animated.img, {
-        className: a()(x.topPerksCardImage, D.image),
+        className: o()(x.topPerksCardImage, D.image),
         src: q,
         alt: "",
         style: H
@@ -134,7 +134,7 @@ function U(e) {
       style: k(j({}, Y), {
         transform: Y.y.to(e => "translateY(".concat(e, "px)"))
       }),
-      className: a()(x.contentContainer, D.contentContainer),
+      className: o()(x.contentContainer, D.contentContainer),
       children: [(0, r.jsx)(g.xm, {
         heading: n.title,
         description: n.description,
@@ -175,13 +175,13 @@ let G = 3,
   B = Chunk647438.forwardRef((e, t) => {
     let {
       guild: n,
-      onClose: o
+      onClose: a
     } = e;
     i.useEffect(() => {
       O.Z.shouldFetchCatalogForGuild(n.id) && (0, y.Sn)(n.id), O.Z.shouldFetchPowerupsForGuild(n.id) && (0, y.Fm)(n.id)
     }, [n.id]);
-    let a = (0, S.Z)(n.id),
-      s = (null != a ? a : []).slice(0, G);
+    let o = (0, S.Z)(n.id),
+      s = (null != o ? o : []).slice(0, G);
     return 0 === s.length ? null : (0, r.jsxs)("div", {
       ref: t,
       className: D.container,
@@ -198,7 +198,7 @@ let G = 3,
         children: s.map(e => (0, r.jsx)(U, {
           guildId: n.id,
           powerup: e,
-          onClose: o
+          onClose: a
         }, "guild-powerup-marketing-".concat(e.skuId)))
       })]
     })

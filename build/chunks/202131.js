@@ -14,22 +14,22 @@ var Chunk626135 = require("./626135.js"),
 function c(e, t, n) {
   let r = arguments.length > 3 && true !== arguments[3] && arguments[3],
     i = Math.max(t, 0),
-    o = Math.min(n, e.length - 1),
-    a = r ? "\\*" : "*",
-    s = [...e.substring(i, o + 1)].map(e => " " === e ? " " : a).join("");
-  return "".concat(e.substring(0, i)).concat(s).concat(e.substring(o + 1))
+    a = Math.min(n, e.length - 1),
+    o = r ? "\\*" : "*",
+    s = [...e.substring(i, a + 1)].map(e => " " === e ? " " : o).join("");
+  return "".concat(e.substring(0, i)).concat(s).concat(e.substring(a + 1))
 }
 
 function u(e) {
   var t;
-  let n = a.Z.getKeywordTrie();
+  let n = o.Z.getKeywordTrie();
   if ("" === e) return [];
   let r = (0, s.F)(e).toLowerCase();
   return Object.values(null != (t = null == n ? true : n.search(r)) ? t : {})
 }
 
 function d(e, t) {
-  (0, o.pB)({
+  (0, a.pB)({
     location: "keyword_substituted_content"
   });
   try {

@@ -17,7 +17,7 @@ let f = 20,
   _ = Chunk647438.forwardRef(function(e, t) {
     let {
       categories: n,
-      store: o,
+      store: a,
       hasSearchResults: c,
       listPadding: _,
       renderRow: h,
@@ -33,7 +33,7 @@ let f = 20,
       sectionFooterHeight: S,
       renderUpsell: A,
       onScroll: C
-    } = e, N = i.useRef(false), R = i.useRef(null), P = (0, l.Iu)(e => e.searchQuery), w = o.useStore(e => e.activeCategoryIndex), D = n.map(e => (0, s._O)(e.categoryInfo) ? {
+    } = e, N = i.useRef(false), R = i.useRef(null), P = (0, l.Iu)(e => e.searchQuery), w = a.useStore(e => e.activeCategoryIndex), D = n.map(e => (0, s._O)(e.categoryInfo) ? {
       isNitroLocked: e.categoryInfo.isNitroLocked
     } : {
       isNitroLocked: false
@@ -41,7 +41,7 @@ let f = 20,
       activeCategoryIndex: w,
       isScrolling: N,
       listRef: R,
-      onActiveCategoryIndexChange: o.setActiveCategoryIndex,
+      onActiveCategoryIndexChange: a.setActiveCategoryIndex,
       scrollOffset: f,
       searchQuery: P
     }), L = i.useCallback(e => {
@@ -94,7 +94,7 @@ let f = 20,
       }
     }), []), (0, r.jsxs)("div", {
       className: d.wrapper,
-      children: [P.length > 0 && !c && null != y ? y() : (0, r.jsx)(a.Z, {
+      children: [P.length > 0 && !c && null != y ? y() : (0, r.jsx)(o.Z, {
         role: "none presentation",
         listPadding: _,
         onScroll: L,
@@ -125,15 +125,15 @@ function h(e) {
     scrollTop: i
   } = e;
   if (null == t.current) return;
-  let o = (0, c.y)({
+  let a = (0, c.y)({
     listRef: t,
     searchQuery: n,
     nitroLockedSectionStates: r,
     scrollTop: i
   });
   l.Iu.setState({
-    isNitroLockedSectionVisible: o.isNitroLockedSectionVisible,
-    areOnlyNitroLockedSectionsVisible: o.areOnlyNitroLockedSectionsVisible
+    isNitroLockedSectionVisible: a.isNitroLockedSectionVisible,
+    areOnlyNitroLockedSectionsVisible: a.areOnlyNitroLockedSectionsVisible
   })
 }
 let m = _

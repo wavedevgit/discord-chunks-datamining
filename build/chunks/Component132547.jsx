@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk622535 = require("./622535.js"),
   Chunk304789 = require("./304789.jsx"),
@@ -41,7 +41,7 @@ let P = e => {
     })
   }, [t]), (0, h.z)(p.X);
   let n = i.useRef(null),
-    o = i.useRef(null),
+    a = i.useRef(null),
     [P, w] = i.useState(false),
     {
       analyticsLocations: D
@@ -54,7 +54,7 @@ let P = e => {
     location: "SubscriberNitroHome"
   });
   return null == j ? (0, r.jsx)("div", {
-    className: a()(N.container, N.loading),
+    className: o()(N.container, N.loading),
     children: (0, r.jsx)(u.$jN, {})
   }) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(u.yWw, {
@@ -62,7 +62,7 @@ let P = e => {
       ref: n,
       children: (0, r.jsx)(c.$, {
         color: "nitro-pink",
-        className: a()(N.container, N.responsiveContainer, {
+        className: o()(N.container, N.responsiveContainer, {
           [N.hiddenGradient]: !k
         }),
         children: (0, r.jsxs)(_.Gt, {
@@ -96,14 +96,14 @@ let P = e => {
           }), (0, r.jsx)("div", {
             className: N.footerSpacing
           }), (0, r.jsx)(l.$, {
-            innerRef: o,
+            innerRef: a,
             onChange: e => {
               e && !x && (E.default.track(A.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
                 location_stack: D
               }), L(true))
             },
             children: (0, r.jsx)("div", {
-              ref: o,
+              ref: a,
               className: N.bottomOfPageVisibilitySensor
             })
           }), (0, r.jsx)("img", {

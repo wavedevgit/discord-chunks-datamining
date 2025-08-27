@@ -12,7 +12,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk873546 = require("./873546.js"),
   Chunk481060 = require("./481060.js"),
   Chunk626135 = require("./626135.js"),
@@ -63,8 +63,8 @@ function m(e, t) {
   if (null == e) return {};
   var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -72,8 +72,8 @@ function m(e, t) {
 function g(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let E = Object.freeze({
@@ -97,13 +97,13 @@ function b(e) {
     children: t,
     className: n,
     minor: i = false
-  } = e, a = m(e, ["children", "className", "minor"]);
+  } = e, o = m(e, ["children", "className", "minor"]);
   return (0, r.jsx)(s.tEY, {
     children: (0, r.jsx)("button", h(_({
-      className: o()(d.button, n, {
+      className: a()(d.button, n, {
         [d.buttonMinor]: i
       })
-    }, a), {
+    }, o), {
       children: t
     }))
   })
@@ -126,10 +126,10 @@ function v(e) {
     children: t,
     noticeType: n,
     additionalTrackingProps: i
-  } = e, o = m(e, ["children", "noticeType", "additionalTrackingProps"]);
-  return (0, r.jsx)(b, h(_({}, o), {
+  } = e, a = m(e, ["children", "noticeType", "additionalTrackingProps"]);
+  return (0, r.jsx)(b, h(_({}, a), {
     onClick: e => {
-      null != o.onClick && o.onClick(e), y(n, i)
+      null != a.onClick && a.onClick(e), y(n, i)
     },
     children: t
   }))
@@ -177,8 +177,8 @@ function S(e) {
     children: s
   } = e;
   return (0, r.jsx)("div", {
-    className: o()(d.notice, {
-      [d.isMobile]: a.tq
+    className: a()(d.notice, {
+      [d.isMobile]: o.tq
     }, n, t),
     style: null != i ? i : true,
     children: s

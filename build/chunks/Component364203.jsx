@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk954955 = require("./954955.js"),
   l = require.n(Chunk954955),
   Chunk990547 = require("./990547.js"),
@@ -157,7 +157,7 @@ function q(e) {
   let {
     isSelected: t,
     onSelect: n,
-    selectionId: o,
+    selectionId: a,
     tooltipText: s,
     label: u,
     className: d,
@@ -173,7 +173,7 @@ function q(e) {
           type: c.ImpressionTypes.VIEW,
           name: c.ImpressionNames.CHAT_WALLPAPER_WALLPAPER_OPTION,
           properties: {
-            design_group_id: o
+            design_group_id: a
           }
         })
       })
@@ -183,7 +183,7 @@ function q(e) {
     return null != h.current && e.observe(h.current), () => {
       e.disconnect()
     }
-  }, [o, h]);
+  }, [a, h]);
   let [m, E] = i.useState("top");
   return i.useEffect(() => {
     let e = h.current;
@@ -206,11 +206,11 @@ function q(e) {
     position: m,
     children: e => (0, r.jsx)("div", {
       ref: h,
-      className: a()(d, t && U.wallpaperSelected),
+      className: o()(d, t && U.wallpaperSelected),
       children: (0, r.jsx)(_.P3F, F(B({}, e, p), {
         className: U.wallpaperSelectionClickableContainer,
         tabIndex: p.tabIndex,
-        onClick: t ? L.dG4 : () => n(o),
+        onClick: t ? L.dG4 : () => n(a),
         children: f
       }))
     })
@@ -221,17 +221,17 @@ function X(e) {
   let {
     isSelected: t,
     onSelect: n,
-    chatWallpaperMetadata: o
-  } = e, a = (0, D.Z)(o.id), {
+    chatWallpaperMetadata: a
+  } = e, o = (0, D.Z)(a.id), {
     label: s,
     designGroupId: l
-  } = o, [c, u] = i.useState(false);
+  } = a, [c, u] = i.useState(false);
   return (i.useEffect(() => {
     let e;
     if (t) {
       var n;
       let t = false,
-        r = (0, E.I)(null != (n = null == a ? true : a.asset) ? n : "");
+        r = (0, E.I)(null != (n = null == o ? true : o.asset) ? n : "");
       (0, b.p)(r, () => {
         u(false), t = true
       }), e = setTimeout(() => {
@@ -241,7 +241,7 @@ function X(e) {
     return () => {
       clearTimeout(e), u(false)
     }
-  }, [t, a]), null == a) ? null : (0, r.jsxs)(q, {
+  }, [t, o]), null == o) ? null : (0, r.jsxs)(q, {
     isSelected: t,
     onSelect: n,
     selectionId: l,
@@ -251,7 +251,7 @@ function X(e) {
     children: [c && (0, r.jsx)(_.$jN, {
       className: U.previewLoadingSpinner
     }), (0, r.jsx)("img", {
-      src: (0, E.I)(a.icon),
+      src: (0, E.I)(o.icon),
       alt: s,
       width: V,
       height: V,
@@ -285,8 +285,8 @@ function J(e) {
     canApply: t,
     isUpdating: n,
     isBlurEnabled: i,
-    onBlurEnabledChange: o,
-    onClose: a,
+    onBlurEnabledChange: a,
+    onClose: o,
     onApply: s
   } = e;
   return (0, r.jsxs)(_.Kqy, {
@@ -301,7 +301,7 @@ function J(e) {
       onChange: (e, t) => {
         S.default.track(L.rMx.CHAT_WALLPAPER_PICKER_BLUR_TOGGLED, {
           selected: t
-        }), o(t)
+        }), a(t)
       },
       children: k.intl.string(k.t["3nPvdH"])
     }), (0, r.jsx)(_.Kqy, {
@@ -315,7 +315,7 @@ function J(e) {
           onClick: () => {
             S.default.track(L.rMx.CHAT_WALLPAPER_PICKER_CANCEL_CLICKED, {
               cta_location: "footer"
-            }), a()
+            }), o()
           },
           disabled: n
         }), (0, r.jsx)(_.zxk, {
@@ -361,7 +361,7 @@ function $() {
 let ee = function(e) {
   let {
     className: t,
-    position: o = L.VD2.TOP_RIGHT,
+    position: a = L.VD2.TOP_RIGHT,
     config: s
   } = e, {
     analyticsLocations: l
@@ -439,8 +439,8 @@ let ee = function(e) {
     }
   }, [F]);
   let ei = null == c && (null == s ? true : s.pickerType) !== A.j.COACHMARK,
-    eo = null;
-  return eo = B || ei ? (0, r.jsxs)("div", {
+    ea = null;
+  return ea = B || ei ? (0, r.jsxs)("div", {
     className: U.errorContainer,
     children: [(0, r.jsx)(_.Eep, {
       src: n(167969),
@@ -483,8 +483,8 @@ let ee = function(e) {
   }), (0, r.jsx)(m.Gt, {
     value: l,
     children: (0, r.jsx)(I.Z, {
-      className: a()(U.draggableContainer, t),
-      defaultPosition: o,
+      className: o()(U.draggableContainer, t),
+      defaultPosition: a,
       topOffset: 88,
       children: (0, r.jsxs)("div", {
         className: U.container,
@@ -500,7 +500,7 @@ let ee = function(e) {
           className: U.divider
         }), (0, r.jsx)(_.JcV, {
           containerRef: F,
-          children: eo
+          children: ea
         })]
       })
     })

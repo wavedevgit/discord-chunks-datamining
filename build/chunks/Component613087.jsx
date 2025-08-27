@@ -94,7 +94,7 @@ let _ = Chunk647438.createContext({
     let v = null == (n = g.get(c)) ? true : n.current,
       I = null;
     return null == v ? I = null : d && null != m ? I = (0, r.jsxs)(r.Fragment, {
-      children: ["collapsed" === u && (0, o.createPortal)((0, r.jsx)(a.animated.div, {
+      children: ["collapsed" === u && (0, a.createPortal)((0, r.jsx)(o.animated.div, {
         style: {
           position: "absolute",
           opacity: m.to({
@@ -103,7 +103,7 @@ let _ = Chunk647438.createContext({
           })
         },
         children: l(b)
-      }), v), "expanded" === u && (0, o.createPortal)((0, r.jsx)(a.animated.div, {
+      }), v), "expanded" === u && (0, a.createPortal)((0, r.jsx)(o.animated.div, {
         style: {
           position: "absolute",
           opacity: m.to({
@@ -113,7 +113,7 @@ let _ = Chunk647438.createContext({
         },
         children: l(b)
       }), v)]
-    }) : "collapsed" === u && (I = (0, o.createPortal)(l(b), v)), (0, r.jsxs)("div", {
+    }) : "collapsed" === u && (I = (0, a.createPortal)(l(b), v)), (0, r.jsxs)("div", {
       style: {
         opacity: +(null == I && "collapsed" === u || null == v)
       },
@@ -125,17 +125,17 @@ let _ = Chunk647438.createContext({
     let {
       children: t,
       expandedContentRef: n,
-      collapsedContentRef: o,
-      expansionSpring: a
+      collapsedContentRef: a,
+      expansionSpring: o
     } = e, [s, c] = i.useState({}), [d, p] = i.useState([]), [h, m] = i.useState(() => new Map), g = i.useCallback((e, t, n) => {
       c(r => {
         var i;
-        let o = null != (i = r[t]) ? i : {
+        let a = null != (i = r[t]) ? i : {
           expanded: null,
           collapsed: null
         };
         return f(u({}, r), {
-          [t]: f(u({}, o), {
+          [t]: f(u({}, a), {
             [n]: e
           })
         })
@@ -147,12 +147,12 @@ let _ = Chunk647438.createContext({
       let n = false;
       c(r => {
         var i;
-        let o = null != (i = r[e]) ? i : {
+        let a = null != (i = r[e]) ? i : {
           expanded: null,
           collapsed: null
         };
-        return o[t] = null, n = null == o.expanded && null == o.collapsed, f(u({}, r), {
-          [e]: o
+        return a[t] = null, n = null == a.expanded && null == a.collapsed, f(u({}, r), {
+          [e]: a
         })
       }), n && m(t => {
         let n = new Map(t);
@@ -161,19 +161,19 @@ let _ = Chunk647438.createContext({
     }, []), b = i.useCallback(() => {
       let e = [];
       for (let t in s) {
-        if (null == s[t] || null == n.current || null == o.current) continue;
+        if (null == s[t] || null == n.current || null == a.current) continue;
         let r = s[t].collapsed,
           i = s[t].expanded;
         if (null == r || null == i) continue;
-        let a = i.getBoundingClientRect(),
+        let o = i.getBoundingClientRect(),
           c = n.current.getBoundingClientRect(),
           u = r.getBoundingClientRect(),
-          d = o.current.getBoundingClientRect(),
-          f = a.top - c.top + l.Li,
+          d = a.current.getBoundingClientRect(),
+          f = o.top - c.top + l.Li,
           _ = u.top - d.top,
-          p = a.left - c.left + l.Li,
+          p = o.left - c.left + l.Li,
           h = u.left - d.left,
-          m = -a.right + c.right + l.Li,
+          m = -o.right + c.right + l.Li,
           g = -u.right + d.right;
         e.push({
           id: t,
@@ -183,21 +183,21 @@ let _ = Chunk647438.createContext({
           expandedRight: m,
           collapsedTop: _,
           expandedTop: f,
-          width: a.width
+          width: o.width
         })
       }
       p(e)
-    }, [s, n, o, p]);
+    }, [s, n, a, p]);
     return (0, r.jsx)(_.Provider, {
       value: {
         registerComponent: g,
         unregisterComponent: E,
         animatedComponents: s,
         expandedContentRef: n,
-        collapsedContentRef: o,
+        collapsedContentRef: a,
         recalculateAnimationPositions: b,
         animatedComponentProps: d,
-        expansionSpring: a,
+        expansionSpring: o,
         mountPoints: h
       },
       children: t

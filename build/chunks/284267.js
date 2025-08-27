@@ -17,10 +17,10 @@ function i(e, t, n) {
       case "enum":
       case "scalar":
         let d = "enum" == i.kind ? r.wx.INT32 : i.T;
-        if (!(i.repeat ? s(d, c, u) : a(d, c, u))) returnfalse;
+        if (!(i.repeat ? s(d, c, u) : o(d, c, u))) returnfalse;
         break;
       case "map":
-        if (!("message" == i.V.kind ? l(i.V.T(), o(c), o(u)) : s("enum" == i.V.kind ? r.wx.INT32 : i.V.T, o(c), o(u)))) returnfalse;
+        if (!("message" == i.V.kind ? l(i.V.T(), a(c), a(u)) : s("enum" == i.V.kind ? r.wx.INT32 : i.V.T, a(c), a(u)))) returnfalse;
         break;
       case "message":
         let f = i.T();
@@ -29,23 +29,23 @@ function i(e, t, n) {
   }
   returntrue
 }
-let o = Object.values;
+let a = Object.values;
 
-function a(e, t, n) {
+function o(e, t, n) {
   if (t === n) returntrue;
   if (e !== r.wx.BYTES) returnfalse;
   let i = t,
-    o = n;
-  if (i.length !== o.length) returnfalse;
+    a = n;
+  if (i.length !== a.length) returnfalse;
   for (let e = 0; e < i.length; e++)
-    if (i[e] != o[e]) returnfalse;
+    if (i[e] != a[e]) returnfalse;
   returntrue
 }
 
 function s(e, t, n) {
   if (t.length !== n.length) returnfalse;
   for (let r = 0; r < t.length; r++)
-    if (!a(e, t[r], n[r])) returnfalse;
+    if (!o(e, t[r], n[r])) returnfalse;
   returntrue
 }
 

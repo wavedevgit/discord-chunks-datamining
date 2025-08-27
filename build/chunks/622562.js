@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   Chunk442837 = require("./442837.js"),
   Chunk110924 = require("./110924.js"),
@@ -40,8 +40,8 @@ function p(e, t) {
   if (null == e) return {};
   var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -49,8 +49,8 @@ function p(e, t) {
 function h(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let m = (e, t) => true !== t && t > e ? t : e,
@@ -66,8 +66,8 @@ function E(e) {
     onGetElementDimensionsAndBoundingRect: t,
     targetElementRef: n,
     shouldPollPositionOnMount: r,
-    positionControlRef: o,
-    debounceTime: a
+    positionControlRef: a,
+    debounceTime: o
   } = e, {
     hasLayers: d
   } = (0, l.cj)([u.Z], () => ({
@@ -90,7 +90,7 @@ function E(e) {
     }
   }, [n]), p = i.useCallback(() => t(_()), [t, _]), h = i.useMemo(() => (0, s.debounce)(() => {
     p()
-  }, a), [p, a]);
+  }, o), [p, o]);
   i.useEffect(() => (window.addEventListener("resize", h), () => {
     window.removeEventListener("resize", h)
   }), [h]);
@@ -111,12 +111,12 @@ function E(e) {
   }, [r, y, p]), i.useEffect(() => {
     m && !d && y()
   }, [y, d, m]), i.useEffect(() => {
-    true !== o && (o.current = {
+    true !== a && (a.current = {
       getElementDimensionsAndBoundingRect: _,
       updateElementPosition: p,
       updateElementPositionWithPolling: y
     })
-  }, [p, y, _, o]), {
+  }, [p, y, _, a]), {
     getElementDimensionsAndBoundingRect: _
   }
 }
@@ -126,8 +126,8 @@ function b(e) {
     backgroundElementRef: t,
     getOffsetsRelativeToElement: n,
     fallbackAbsoluteOffsets: r,
-    minimumOffsets: o,
-    positionControlRef: a,
+    minimumOffsets: a,
+    positionControlRef: o,
     onGetBoundingRect: l = () => {},
     debounceTime: c = 60
   } = e, [u, d] = i.useState(null);
@@ -136,17 +136,17 @@ function b(e) {
       let {
         height: t,
         width: i,
-        elementBoundingRect: a
+        elementBoundingRect: o
       } = e;
-      if (null == a) return r;
+      if (null == o) return r;
       let c = _({}, n({
         height: t,
         width: i
       }));
-      return true !== c.top && (c.top = m(a.top + c.top, null == o ? true : o.top)), true !== c.left && (c.left = m(a.left + c.left, null == o ? true : o.left)), true !== c.right && (c.right = m(window.innerWidth - a.right + c.right, null == o ? true : o.right)), true !== c.bottom && (c.bottom = m(window.innerHeight - a.bottom + c.bottom, null == o ? true : o.bottom)), l(a), (0, s.isEqual)(c, u) || d(c), c
-    }, [u, n, r, o, l]),
+      return true !== c.top && (c.top = m(o.top + c.top, null == a ? true : a.top)), true !== c.left && (c.left = m(o.left + c.left, null == a ? true : a.left)), true !== c.right && (c.right = m(window.innerWidth - o.right + c.right, null == a ? true : a.right)), true !== c.bottom && (c.bottom = m(window.innerHeight - o.bottom + c.bottom, null == a ? true : a.bottom)), l(o), (0, s.isEqual)(c, u) || d(c), c
+    }, [u, n, r, a, l]),
     targetElementRef: t,
-    positionControlRef: a,
+    positionControlRef: o,
     debounceTime: c
   }), {
     offsets: u

@@ -58,13 +58,13 @@ let d = [{
           }), (0, r.jsx)(l.o, {
             placeholder: n,
             disabled: t
-          }), (0, r.jsx)(a.V, {
+          }), (0, r.jsx)(o.V, {
             value: f,
             onChange: _,
             options: d,
             placeholder: n,
             isDisabled: t
-          }), (0, r.jsx)(o.W, {
+          }), (0, r.jsx)(a.W, {
             onSelect: h,
             value: p,
             disabled: t

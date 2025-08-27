@@ -22,11 +22,11 @@ function d(e) {
     linkId: f
   } = e, {
     analyticsLocations: _
-  } = (0, o.ZP)(i.Z.ACTIVITY_BOOKMARK), [p] = (0, l.Z)([t]), h = null != p && (0, a.ye)(p), {
+  } = (0, a.ZP)(i.Z.ACTIVITY_BOOKMARK), [p] = (0, l.Z)([t]), h = null != p && (0, o.ye)(p), {
     data: m,
     error: g
   } = (0, c.h)(null == p ? true : p.id, f);
-  return null == p || false === h ? null : null != f && null == g && null != m ? (0, r.jsx)(o.Gt, {
+  return null == p || false === h ? null : null != f && null == g && null != m ? (0, r.jsx)(a.Gt, {
     value: _,
     children: (0, r.jsx)(u.b, {
       application: p,
@@ -34,7 +34,7 @@ function d(e) {
       customLink: m,
       referrerId: d
     })
-  }) : (0, r.jsx)(o.Gt, {
+  }) : (0, r.jsx)(a.Gt, {
     value: _,
     children: (0, r.jsx)(s.O, {
       app: p,

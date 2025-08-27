@@ -22,31 +22,31 @@ function u(e) {
     canAnimate: n = false,
     allowWebp: r = true
   } = e;
-  if (n && (0, o.xR)(t)) return "gif";
+  if (n && (0, a.xR)(t)) return "gif";
   let {
     CDN_HOST: i
   } = window.GLOBAL_ENV;
-  return null == i ? "jpg" : r && o.$k ? "webp" : "png"
+  return null == i ? "jpg" : r && a.$k ? "webp" : "png"
 }
 
 function d(e) {
   let {
     userId: t,
     avatarId: n,
-    storageHash: o,
-    canAnimate: a = false,
+    storageHash: a,
+    canAnimate: o = false,
     allowWebp: s = true,
     size: c
   } = e, {
     CDN_HOST: d
   } = window.GLOBAL_ENV, f = null != d ? "https://".concat(d) : location.protocol + window.GLOBAL_ENV.API_ENDPOINT, _ = u({
-    storageHash: o,
-    canAnimate: a,
+    storageHash: a,
+    canAnimate: o,
     allowWebp: s
   }), p = "?".concat(r.stringify({
     size: (0, i.oO)(c * (0, i.x_)())
   }));
-  return "".concat(f).concat(l.ANM.ARCHIVED_AVATAR(t, n, o, _)).concat(p)
+  return "".concat(f).concat(l.ANM.ARCHIVED_AVATAR(t, n, a, _)).concat(p)
 }
 
 function f(e) {
@@ -82,7 +82,7 @@ function p(e) {
     case "jpg":
       return "image/jpeg";
     default:
-      (0, a.vE)(e)
+      (0, o.vE)(e)
   }
 }
 
@@ -120,7 +120,7 @@ function m(e) {
         assetOrigin: t, imageUri: n, originalAsset: i
       };
     default:
-      (0, a.vE)(t)
+      (0, o.vE)(t)
   }
 }
 

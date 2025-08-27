@@ -81,7 +81,7 @@ class y extends Chunk147913.Z {
         t.updateAvailable ? e(true) : t._callbacks.push(e)
       })
     }), p(this, "_handleCheckingForUpdates", () => {
-      o.Z.dispatch({
+      a.Z.dispatch({
         type: "CHECKING_FOR_UPDATES"
       })
     }), p(this, "_handleNativeUpdateNotAvailable", () => {
@@ -93,30 +93,30 @@ class y extends Chunk147913.Z {
         oldFormErrors: true,
         rejectWithError: true
       }).then(e => {
-        if (null == e.body || "bcb63db1f3410cf69a8d555a5ad6d7c2d32a33a8" === e.body.hash) return this._handleUpdateNotAvailable();
+        if (null == e.body || "136a4b02797ff705207a64fe0fb06b348f82cb22" === e.body.hash) return this._handleUpdateNotAvailable();
         if (e.body.required || (0, s.fD)()) return this._handleUpdateDownloaded(false);
         let t = "stable" === window.GLOBAL_ENV.RELEASE_CHANNEL ? m : g;
         if (Date.now() - E > t) return i.K.set("lastNonRequiredUpdateShown", Date.now()), this._handleUpdateDownloaded(false)
       }, () => this._handleUpdateError())
     }), p(this, "_handleUpdateNotAvailable", () => {
-      o.Z.dispatch({
+      a.Z.dispatch({
         type: "UPDATE_NOT_AVAILABLE"
       }), this._emitCallbacks()
     }), p(this, "_handleUpdateAvailable", e => {
-      this.updateAvailable = true, this.nativeUpdateAvailable = e, o.Z.dispatch({
+      this.updateAvailable = true, this.nativeUpdateAvailable = e, a.Z.dispatch({
         type: "UPDATE_AVAILABLE"
       })
     }), p(this, "_handleUpdateManually", () => {
-      this.updateAvailable = true, this.nativeUpdateAvailable = true, o.Z.dispatch({
+      this.updateAvailable = true, this.nativeUpdateAvailable = true, a.Z.dispatch({
         type: "UPDATE_MANUALLY"
       })
     }), p(this, "_handleUpdateError", e => {
-      this.updateAvailable = false, o.Z.dispatch({
+      this.updateAvailable = false, a.Z.dispatch({
         type: "UPDATE_ERROR",
         message: e
       })
     }), p(this, "_handleUpdateDownloaded", (e, t, n, r, i) => {
-      e && (this.nativeUpdatesDownloaded += 1), this._handleUpdateAvailable(e), o.Z.dispatch({
+      e && (this.nativeUpdatesDownloaded += 1), this._handleUpdateAvailable(e), a.Z.dispatch({
         type: "UPDATE_DOWNLOADED",
         releaseNotes: t,
         releaseName: n,

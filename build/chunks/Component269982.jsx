@@ -43,7 +43,7 @@ function p(e) {
   } = e, {
     newestAnalyticsLocation: p
   } = (0, s.ZP)(), h = i.useCallback(() => {
-    null != t && (0, a.ZDy)(async () => {
+    null != t && (0, o.ZDy)(async () => {
       let {
         default: e
       } = await n.e("43360").then(n.bind(n, 73415));
@@ -59,11 +59,11 @@ function p(e) {
     })
   }, [t, p, f]), m = i.useMemo(() => {
     switch (null == t ? true : t.type) {
-      case o.Z.AVATAR_DECORATION:
+      case a.Z.AVATAR_DECORATION:
         return u.intl.format(u.t["aFR/EB"], {
           onClick: h
         });
-      case o.Z.PROFILE_EFFECT:
+      case a.Z.PROFILE_EFFECT:
         return u.intl.format(u.t.eWNOND, {
           onClick: h
         })
@@ -71,11 +71,11 @@ function p(e) {
   }, [null == t ? true : t.type, h]);
   return (0, r.jsxs)("div", {
     className: d.nitroUpsellContainer,
-    children: [(0, r.jsx)(a.SrA, {
+    children: [(0, r.jsx)(o.SrA, {
       className: d.nitroWheel,
       size: "md",
       color: l.JX.PREMIUM_TIER_2
-    }), (0, r.jsx)(a.Text, {
+    }), (0, r.jsx)(o.Text, {
       className: d.nitroText,
       variant: "text-md/medium",
       children: m

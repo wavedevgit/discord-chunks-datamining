@@ -28,14 +28,14 @@ let c = {
   };
 
 function d(e) {
-  let t = (0, a.P)(e);
+  let t = (0, o.P)(e);
   return r.useMemo(() => {
     var n, r;
     return {
       name: l.intl.string(null != (n = c[e]) ? n : s.default.OpWJ3d),
       defaultColors: t,
       previewStyles: {
-        fontId: o.C.DEFAULT,
+        fontId: a.C.DEFAULT,
         effectId: e,
         colors: t
       },

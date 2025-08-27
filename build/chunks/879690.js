@@ -6,15 +6,15 @@ require.d(exports, {
 });
 var Chunk647438 = require("./647438.js"),
   Chunk101186 = require("./101186.js");
-let o = e => e;
+let a = e => e;
 
-function a(e, t = o) {
+function o(e, t = a) {
   let n = r.useSyncExternalStore(e.subscribe, () => t(e.getState()), () => t(e.getInitialState()));
   return r.useDebugValue(n), n
 }
 let s = e => {
     let t = (0, i.M)(e),
-      n = e => a(t, e);
+      n = e => o(t, e);
     return Object.assign(n, t), n
   },
   l = e => e ? s(e) : s

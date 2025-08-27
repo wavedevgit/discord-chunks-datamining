@@ -639,7 +639,7 @@ var Chunk15127 = require("./15127.jsx"),
   Chunk770102 = require("./770102.jsx"),
   Chunk434333 = require("./434333.jsx"),
   Chunk540863 = require("./540863.jsx");
-require("./722187.js");
+require("./722187.jsx");
 var Chunk383838 = require("./383838.jsx"),
   Chunk789164 = require("./789164.jsx"),
   Chunk471141 = require("./471141.jsx"),

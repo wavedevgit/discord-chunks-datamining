@@ -54,8 +54,8 @@ function _(e, t) {
   if (null == e) return {};
   var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -63,8 +63,8 @@ function _(e, t) {
 function p(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -83,7 +83,7 @@ function h(e) {
   } = c, I = _(c, ["isUsingKeyboardNavigation", "focusIndex"]);
   i.useLayoutEffect(() => {
     var e;
-    n && ((0, a.F)(g), null == (e = b.current) || e.focus())
+    n && ((0, o.F)(g), null == (e = b.current) || e.focus())
   }, [n]), i.useEffect(() => {
     if (n && v >= 0 && O) {
       var e;
@@ -96,7 +96,7 @@ function h(e) {
     className: l.__invalid_submenuContainer,
     children: [(0, r.jsx)("div", {
       ref: E
-    }), t, n ? (0, r.jsx)(o.j, {
+    }), t, n ? (0, r.jsx)(a.j, {
       targetRef: E,
       autoInvert: true,
       nudgeAlignIntoViewport: true,

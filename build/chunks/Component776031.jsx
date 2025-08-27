@@ -62,7 +62,7 @@ function I(e, t) {
 }
 
 function T(e, t) {
-  (0, a.ZDy)(async () => {
+  (0, o.ZDy)(async () => {
     let {
       default: e
     } = await n.e("28479").then(n.bind(n, 78865));
@@ -70,7 +70,7 @@ function T(e, t) {
       analyticsSource: t
     }))
   }, {
-    contextKey: e === m.IlC.POPOUT ? a.u1M : a.z1l
+    contextKey: e === m.IlC.POPOUT ? o.u1M : o.z1l
   })
 }
 
@@ -79,12 +79,12 @@ function S(e, t) {
     preset: n,
     resolution: y,
     fps: v
-  } = (0, o.cj)([u.Z], () => u.Z.getState()), S = (0, o.e7)([_.Z], () => _.Z.getGoLiveSource()), A = (0, o.e7)([h.default], () => h.default.getCurrentUser()), C = (0, o.e7)([f.Z], () => {
+  } = (0, a.cj)([u.Z], () => u.Z.getState()), S = (0, a.e7)([_.Z], () => _.Z.getGoLiveSource()), A = (0, a.e7)([h.default], () => h.default.getCurrentUser()), C = (0, a.e7)([f.Z], () => {
     var t;
     return null == (t = f.Z.getGuild(null == e ? true : e.guildId)) ? true : t.premiumTier
   }), {
     location: N
-  } = (0, l.O)(), R = (0, o.e7)([p.Z, d.Z], () => d.Z.getChannel(p.Z.getVoiceChannelId())), P = i.useCallback((e, n, r, i) => {
+  } = (0, l.O)(), R = (0, a.e7)([p.Z, d.Z], () => d.Z.getChannel(p.Z.getVoiceChannelId())), P = i.useCallback((e, n, r, i) => {
     if (e) {
       if (null != S) {
         let e = {
@@ -115,7 +115,7 @@ function S(e, t) {
         value: t,
         label: n
       } = e, i = (0, c.Z)(g.tI.PRESET_CUSTOM, y, t, A, C, R);
-      return (0, r.jsx)(a.k5B, {
+      return (0, r.jsx)(o.k5B, {
         group: "stream-settings-fps",
         id: "stream-settings-fps-".concat(t),
         label: n,
@@ -128,7 +128,7 @@ function S(e, t) {
         value: t,
         label: n
       } = e, i = (0, c.Z)(g.tI.PRESET_CUSTOM, t, w, A, C, R);
-      return (0, r.jsx)(a.k5B, {
+      return (0, r.jsx)(o.k5B, {
         group: "stream-settings-resolution",
         id: "stream-settings-resolution-".concat(t),
         label: n,
@@ -137,10 +137,10 @@ function S(e, t) {
       }, "stream-settings-resolution-".concat(t))
     });
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(a.kSQ, {
+    children: [(0, r.jsx)(o.kSQ, {
       label: b.intl.string(b.t.SkkeIi),
       children: D
-    }), (0, r.jsx)(a.kSQ, {
+    }), (0, r.jsx)(o.kSQ, {
       label: b.intl.string(b.t.rHyPXl),
       children: x
     })]

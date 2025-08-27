@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk385499 = require("./385499.jsx"),
@@ -63,8 +63,8 @@ function O(e, t) {
   if (null == e) return {};
   var n, r, i = v(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -72,8 +72,8 @@ function O(e, t) {
 function v(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -85,7 +85,7 @@ let T = e => {
       primary: t,
       secondary: n,
       botType: i,
-      botVerified: a,
+      botVerified: o,
       discriminatorClass: u,
       className: f,
       usernameClass: _,
@@ -97,7 +97,7 @@ let T = e => {
       location: "DiscordTag"
     });
     return (0, r.jsxs)("div", {
-      className: o()(m.info, {
+      className: a()(m.info, {
         [m.withDisplayNameStyles]: v && null != b
       }, f),
       children: [(0, r.jsx)(s.ua7, {
@@ -105,7 +105,7 @@ let T = e => {
         shouldShow: g,
         "aria-label": !!g && true,
         children: e => (0, r.jsx)("span", y(E({}, e), {
-          className: o()(m.__invalid_username, _),
+          className: a()(m.__invalid_username, _),
           children: null != b ? (0, r.jsx)(d.Z, {
             userName: t,
             displayNameStyles: b,
@@ -113,12 +113,12 @@ let T = e => {
           }) : t
         }))
       }), null != n ? (0, r.jsx)("span", {
-        className: o()(m.infoSpacing, u),
+        className: a()(m.infoSpacing, u),
         children: n
       }) : true, null != i && (0, r.jsx)(l.Z, {
         type: i,
-        className: o()(m.infoSpacing, p),
-        verified: a
+        className: a()(m.infoSpacing, p),
+        verified: o
       })]
     })
   },
@@ -127,14 +127,14 @@ let T = e => {
       user: t,
       nick: n,
       forceUsername: i,
-      showAccountIdentifier: o,
+      showAccountIdentifier: a,
       overrideDiscriminator: s,
       forcePomelo: l,
       hideBotTag: c = false,
       hideDiscriminator: d = false,
       displayNameStylesType: h = u.F.PLAIN
     } = e, m = O(e, ["user", "nick", "forceUsername", "showAccountIdentifier", "overrideDiscriminator", "forcePomelo", "hideBotTag", "hideDiscriminator", "displayNameStylesType"]);
-    let g = (0, a.e7)([_.Z], () => _.Z.hidePersonalInformation),
+    let g = (0, o.e7)([_.Z], () => _.Z.hidePersonalInformation),
       b = g || d || t.isNonUserBot(),
       y = t.toString(),
       v = c ? null : I(t),
@@ -146,7 +146,7 @@ let T = e => {
       let e = C === y && N && i ? p.ZP.getUserTag(t, {
           forcePomelo: l
         }) : C,
-        n = o && e !== "@".concat(y) ? p.ZP.getUserTag(t) : true;
+        n = a && e !== "@".concat(y) ? p.ZP.getUserTag(t) : true;
       return (0, r.jsx)(T, E({
         primary: e,
         secondary: n,

@@ -25,19 +25,19 @@ function c(e) {
     return n => {
       let {
         transitionState: i,
-        onClose: o
+        onClose: a
       } = n;
       return (0, r.jsx)(e, {
         channelId: t,
         blockedUserIds: c,
         ignoredUserIds: u,
         transitionState: i,
-        onClose: o
+        onClose: a
       })
     }
   }, {
     onCloseCallback: () => {
-      (0, a.O)(t), o.default.track(l.rMx.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, {
+      (0, o.O)(t), a.default.track(l.rMx.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, {
         action: s.q.DISMISS,
         channel_id: t,
         warning_medium: s.WR.MODAL,

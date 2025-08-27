@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => I
 }), require("./388685.js");
 var r, Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  a = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk569545 = require("./569545.js"),
@@ -64,21 +64,21 @@ function O(e) {
   let {
     voiceStates: t
   } = e;
-  return !(o().isEmpty(p) && o().isEmpty(h)) && t.reduce((e, t) => {
+  return !(a().isEmpty(p) && a().isEmpty(h)) && t.reduce((e, t) => {
     let {
       userId: n,
       guildId: r,
       channelId: i,
-      selfStream: o
+      selfStream: a
     } = t;
-    if (o) return e;
-    let a = (0, l.V9)({
+    if (a) return e;
+    let o = (0, l.V9)({
       streamType: null != r ? c.lo.GUILD : c.lo.CALL,
       guildId: r,
       channelId: i,
       ownerId: n
     });
-    return delete p[a], delete h[a], true
+    return delete p[o], delete h[o], true
   }, false)
 }
 class v extends(r = Chunk442837.ZP.Store) {
@@ -99,10 +99,10 @@ class v extends(r = Chunk442837.ZP.Store) {
         channelId: t,
         ownerId: n
       }),
-      o = p[i],
-      a = null != (r = h[i]) ? r : 0,
-      s = null != o && Date.now() > o.expires;
-    return (null == o && a < _ || s) && !m.has(i)
+      a = p[i],
+      o = null != (r = h[i]) ? r : 0,
+      s = null != a && Date.now() > a.expires;
+    return (null == a && o < _ || s) && !m.has(i)
   }
   getPreviewURLForStreamKey(e) {
     let {

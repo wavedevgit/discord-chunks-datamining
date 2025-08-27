@@ -17,11 +17,11 @@ function c(e) {
     message: t,
     compact: n,
     usernameHook: c
-  } = e, u = (0, o.ZP)(t), d = c(u), f = s.intl.format(s.t.tv2DNz, {
+  } = e, u = (0, a.ZP)(t), d = c(u), f = s.intl.format(s.t.tv2DNz, {
     username: u.nick,
     usernameHook: d
   });
-  return (0, r.jsx)(a.Z, {
+  return (0, r.jsx)(o.Z, {
     className: l.stageSystemMessage,
     iconNode: (0, r.jsx)(i.V9, {
       size: "md",

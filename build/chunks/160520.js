@@ -3,12 +3,12 @@
 "use strict";
 var Chunk98405 = require("./98405.js"),
   Chunk127849 = require("./127849.js"),
-  o = require("./390827.js").clear;
+  a = require("./390827.js").clear;
 Chunk98405({
   global: true,
   bind: true,
   enumerable: true,
-  forced: Chunk127849.clearImmediate !== o
+  forced: Chunk127849.clearImmediate !== a
 }, {
-  clearImmediate: o
+  clearImmediate: a
 })

@@ -189,7 +189,7 @@ class O extends(r = Chunk647438.PureComponent) {
         t = (0, i.jsx)(y, {});
         break;
       case 2:
-        t = (0, i.jsxs)(o.Fragment, {
+        t = (0, i.jsxs)(a.Fragment, {
           children: [(0, i.jsxs)("div", {
             className: d.row,
             children: [(0, i.jsx)(E, {

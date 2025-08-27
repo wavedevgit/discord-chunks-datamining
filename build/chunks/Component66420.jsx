@@ -19,7 +19,7 @@ function l(e) {
     compact: u,
     action: d
   } = e, f = n.reactions.length > 0;
-  return (0, r.jsxs)(a.Z, {
+  return (0, r.jsxs)(o.Z, {
     iconNode: t.isGroupDM() ? (0, r.jsx)(i.Dkj, {
       size: "md",
       color: "var(--premium-tier-2-purple-for-gradients-2)"
@@ -33,11 +33,11 @@ function l(e) {
     className: f ? s.withReactions : s.noReactions,
     children: [(0, r.jsxs)("div", {
       className: s.textContainer,
-      children: [(0, r.jsx)(o.xv, {
+      children: [(0, r.jsx)(a.xv, {
         variant: "text-md/medium",
         color: "header-primary",
         children: l
-      }), null != c && (0, r.jsx)(o.xv, {
+      }), null != c && (0, r.jsx)(a.xv, {
         variant: "text-sm/medium",
         color: "text-secondary",
         children: c

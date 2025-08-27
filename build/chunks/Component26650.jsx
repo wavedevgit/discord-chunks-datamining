@@ -44,13 +44,13 @@ function u(e, t) {
     style: c({
       marginTop: 8 * !!n
     }, i),
-    children: [(0, r.jsx)(o.d3s, {
+    children: [(0, r.jsx)(a.d3s, {
       size: "custom",
       className: s.infoIcon,
       height: n ? 16 : 12,
       width: n ? 16 : 12,
-      color: n ? a.Z.TEXT_MUTED : a.Z.WHITE
-    }), (0, r.jsx)(o.Text, {
+      color: n ? o.Z.TEXT_MUTED : o.Z.WHITE
+    }), (0, r.jsx)(a.Text, {
       color: n ? "text-muted" : "always-white",
       variant: n ? "text-xs/normal" : "text-xxs/normal",
       children: l

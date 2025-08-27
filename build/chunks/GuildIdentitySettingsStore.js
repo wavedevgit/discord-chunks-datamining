@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 /** chunk id: 778825, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-let r, i, o, a, s, l, c, u, d, f, _;
+let r, i, a, o, s, l, c, u, d, f, _;
 require.d(exports, {
   Z: () => F
 });
@@ -64,7 +64,7 @@ function R(e) {
   let {
     profileEffectId: t
   } = e;
-  a = t
+  o = t
 }
 
 function P(e) {
@@ -106,7 +106,7 @@ function j(e) {
   let {
     nameplate: t
   } = e;
-  o = t
+  a = t
 }
 
 function M() {
@@ -114,11 +114,11 @@ function M() {
 }
 
 function k() {
-  r = true, u = true, i = true, o = true
+  r = true, u = true, i = true, a = true
 }
 
 function U() {
-  s = true, l = true, c = true, d = true, a = true
+  s = true, l = true, c = true, d = true, o = true
 }
 
 function G() {
@@ -136,7 +136,7 @@ class Z extends(p = Chunk442837.ZP.Store) {
     return y
   }
   showNotice() {
-    return true !== r || true !== i || true !== a || true !== s || true !== l || true !== c || true !== u || true !== d || true !== o
+    return true !== r || true !== i || true !== o || true !== s || true !== l || true !== c || true !== u || true !== d || true !== a
   }
   getIsSubmitDisabled() {
     return true !== l && l.length > Chunk981631.tPV
@@ -148,7 +148,7 @@ class Z extends(p = Chunk442837.ZP.Store) {
     return i
   }
   getPendingProfileEffectId() {
-    return a
+    return o
   }
   getPendingBanner() {
     return s
@@ -169,19 +169,19 @@ class Z extends(p = Chunk442837.ZP.Store) {
     return d
   }
   getPendingNameplate() {
-    return o
+    return a
   }
   getAllPending() {
     return {
       pendingAvatar: r,
       pendingAvatarDecoration: i,
-      pendingProfileEffectId: a,
+      pendingProfileEffectId: o,
       pendingBanner: s,
       pendingBio: l,
       pendingPronouns: c,
       pendingNickname: u,
       pendingThemeColors: d,
-      pendingNameplate: o
+      pendingNameplate: a
     }
   }
   getGuild() {

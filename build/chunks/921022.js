@@ -2,21 +2,21 @@
 /** chunk id: 921022, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => o
+  Z: () => a
 });
 var Chunk647438 = require("./647438.js"),
   Chunk338379 = require("./338379.js");
 
-function o(e) {
+function a(e) {
   let {
     delay: t,
     disable: n = false
-  } = e, o = (0, i.Z)();
+  } = e, a = (0, i.Z)();
   r.useEffect(() => {
     if (t <= 0 || n) return;
     let e = setTimeout(() => {
-      o()
+      a()
     }, t);
     return () => clearTimeout(e)
-  }, [t, n, o])
+  }, [t, n, a])
 }

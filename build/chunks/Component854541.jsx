@@ -10,7 +10,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk91192 = require("./91192.jsx"),
   Chunk924826 = require("./924826.js"),
   Chunk866442 = require("./866442.js"),
@@ -67,8 +67,8 @@ function I(e, t) {
   if (null == e) return {};
   var n, r, i = T(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -76,8 +76,8 @@ function I(e, t) {
 function T(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let S = Chunk647438.lazy(() => Promise.all([require.e("3115"), require.e("28102")]).then(require.bind(require, 534828))),
@@ -93,7 +93,7 @@ function R(e) {
     color: t,
     isDefault: n = false,
     isCustom: i = false,
-    isSelected: o = false,
+    isSelected: a = false,
     disabled: l = false,
     style: u = {},
     onClick: d,
@@ -118,18 +118,18 @@ function R(e) {
   function N() {
     let e = 16,
       t = 16;
-    if ((i || n) && (e = "38%", t = "auto"), o) return (0, r.jsx)(_.dz2, {
+    if ((i || n) && (e = "38%", t = "auto"), a) return (0, r.jsx)(_.dz2, {
       size: "custom",
       width: e,
       height: t,
       color: (0, h.Lq)(C ? m.Ilk.WHITE_500 : m.Ilk.BLACK_500)
     })
   }
-  return i && !o ? C = true : (i || o) && (C = (0, c.Bd)(null != A ? A : m.p6O) > .2), (0, r.jsx)(f.t, {
+  return i && !a ? C = true : (i || a) && (C = (0, c.Bd)(null != A ? A : m.p6O) > .2), (0, r.jsx)(f.t, {
     offset: false,
     children: (0, r.jsxs)("button", v(y({
       type: "button",
-      className: a()(E.colorPickerSwatch, {
+      className: o()(E.colorPickerSwatch, {
         [E.disabled]: l,
         [E.default]: n,
         [E.custom]: i,
@@ -161,7 +161,7 @@ class P extends Chunk647438.PureComponent {
       onChange: t,
       value: n,
       disabled: i,
-      allowBlackCustomColor: o
+      allowBlackCustomColor: a
     } = this.props;
     return (0, Chunk951288.jsx)(R, {
       isDefault: true,
@@ -194,7 +194,7 @@ function D(e) {
   let {
     value: t,
     eagerUpdate: n = false,
-    onChange: o,
+    onChange: a,
     onClose: s,
     suggestedColors: l,
     middle: f,
@@ -237,7 +237,7 @@ function D(e) {
           hsl: r
         },
         input: t
-      }), o(n)
+      }), a(n)
     },
     L = async () => {
       if (null != I) try {
@@ -250,9 +250,9 @@ function D(e) {
       D(t => v(y({}, t), {
         pending: e,
         input: e.hex
-      })), n && o((0, c._i)(e.hex))
-    }, [n, o]), M = e => {
-      o((0, c._i)(e))
+      })), n && a((0, c._i)(e.hex))
+    }, [n, a]), M = e => {
+      a((0, c._i)(e))
     }, k = (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(i.Suspense, {
         fallback: null,
@@ -290,7 +290,7 @@ function D(e) {
     }), U = null != b ? b : d.V;
   return (0, r.jsx)(U, {
     "aria-label": g.intl.string(g.t.WTqQ5e),
-    className: a()(E.customColorPicker, O),
+    className: o()(E.customColorPicker, O),
     children: k
   })
 }
@@ -301,7 +301,7 @@ function L(e) {
     className: t,
     defaultColor: n,
     customColor: i,
-    colors: o,
+    colors: a,
     value: c,
     secondaryValue: u,
     disabled: d,
@@ -332,7 +332,7 @@ function L(e) {
       disabled: d,
       isGradient: false
     }, e))
-  }), S = o.slice(0, o.length / 2), A = o.slice(o.length / 2, o.length), N = (0, l.ZP)({
+  }), S = a.slice(0, a.length / 2), A = a.slice(a.length / 2, a.length), N = (0, l.ZP)({
     id: "color-picker",
     isEnabled: true,
     scrollToStart: C,
@@ -343,17 +343,17 @@ function L(e) {
     children: (0, r.jsx)(s.SJ, {
       children: e => {
         var {
-          ref: o
+          ref: a
         } = e, s = I(e, ["ref"]);
         return (0, r.jsxs)("div", v(y({
-          className: a()(E.container, t, {
+          className: o()(E.container, t, {
             [E.gradient]: m
           }),
-          ref: o
+          ref: a
         }, s), {
           children: [!m && (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)("div", {
-              className: a()(E.defaultContainer, h),
+              className: o()(E.defaultContainer, h),
               children: _({
                 value: c,
                 color: n,
@@ -362,7 +362,7 @@ function L(e) {
                 allowBlackCustomColor: O
               })
             }), (0, r.jsx)("div", {
-              className: a()(E.customContainer, h),
+              className: o()(E.customContainer, h),
               children: p({
                 value: c,
                 customColor: i,

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk202841 = require("./202841.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -70,7 +70,7 @@ let R = 104,
   w = async () => await require.e("67963").then(require.t.bind(require, 145193, 19));
 
 function D(e) {
-  var t, n, o;
+  var t, n, a;
   let {
     quest: S,
     questContent: C,
@@ -92,7 +92,7 @@ function D(e) {
     config: N(A({}, v.Y), {
       clamp: true
     })
-  }), q = (null == (n = S.userStatus) ? true : n.completedAt) != null, X = (null == (o = S.userStatus) ? true : o.claimedAt) != null, Q = (0, _.xN)(S.config), J = (0, _.LM)(S.config), {
+  }), q = (null == (n = S.userStatus) ? true : n.completedAt) != null, X = (null == (a = S.userStatus) ? true : a.claimedAt) != null, Q = (0, _.xN)(S.config), J = (0, _.LM)(S.config), {
     completedRatio: $,
     completedRatioDisplay: ee
   } = (0, p.I)(S), et = (0, p.Bd)(S, U), en = i.useMemo(() => X && Q ? I.intl.format(I.t["8Op4c3"], {
@@ -182,7 +182,7 @@ function D(e) {
         })
       }), (0, r.jsxs)("div", {
         ref: V,
-        className: a()(T.textContainer, {
+        className: o()(T.textContainer, {
           [T.justifyCenter]: !W
         }),
         children: [(0, r.jsx)(c.X6q, {

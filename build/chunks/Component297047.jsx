@@ -27,11 +27,11 @@ function p(e, t) {
   u.S.dispatchToLastSubscribed(f.CkL.INSERT_TEXT, {
     plainText: r,
     rawText: i
-  }), null != t && a.Z.startTyping(t)
+  }), null != t && o.Z.startTyping(t)
 }
 
 function h(e, t, n) {
-  let [a, u] = (0, i.Wu)([c.Z, s.Z, l.Z], () => {
+  let [o, u] = (0, i.Wu)([c.Z, s.Z, l.Z], () => {
     let e = c.Z.getChannelId(t),
       n = s.Z.getChannel(e);
     return [e, null != n && (n.isMultiUserDM() || l.Z.can(f.Plq.SEND_MESSAGES, n))]
@@ -39,9 +39,9 @@ function h(e, t, n) {
   if (!u || d) return null;
 
   function h() {
-    p(e, a)
+    p(e, o)
   }
-  return (0, r.jsx)(o.sNh, {
+  return (0, r.jsx)(a.sNh, {
     id: "mention",
     label: _.intl.string(_.t.P8tvKC),
     action: h

@@ -43,7 +43,7 @@ function _(e, t) {
     j = null == v ? null == A : null == N,
     M = !j && (C || L);
   if (!j && !M) return Promise.resolve();
-  (0, s.t)(), null != t && (0, o.vM)(t);
+  (0, s.t)(), null != t && (0, a.vM)(t);
   let k = {
     type: m,
     withMutualGuilds: g,
@@ -52,7 +52,7 @@ function _(e, t) {
     guildId: v,
     joinRequestId: T,
     abortSignal: S,
-    connectionsRoleId: null == v || null == (p = (0, a.Ur)({
+    connectionsRoleId: null == v || null == (p = (0, o.Ur)({
       guildMember: c.ZP.getMember(v, e),
       channel: l.Z.getChannel(I)
     })) ? true : p.id

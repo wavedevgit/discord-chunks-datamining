@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   HM: () => i,
-  J_: () => o
+  J_: () => a
 });
 let r = (0, require("./818083.js").B)({
   kind: "user",
@@ -45,18 +45,18 @@ function i(e) {
   return i
 }
 
-function o(e) {
+function a(e) {
   let {
     location: t,
     autoTrackExposure: n,
     disable: i
   } = e, {
-    isDownloadIconEnabled: o
+    isDownloadIconEnabled: a
   } = r.useExperiment({
     location: t
   }, {
     autoTrackExposure: n,
     disable: __OVERLAY__ || i
   });
-  return o
+  return a
 }

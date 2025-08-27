@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -101,7 +101,7 @@ function M(e) {
   let {
     user: t,
     currentUser: n,
-    guildId: o,
+    guildId: a,
     onOpenUserProfileModal: m,
     onClose: N
   } = e, P = (0, _.Dt)(), {
@@ -116,9 +116,9 @@ function M(e) {
     voiceActivity: B
   } = (0, b.Z)({
     userId: t.id,
-    guildId: o
+    guildId: a
   }), Z = t.id === n.id, F = (0, s.e7)([h.Z, p.Z], () => {
-    let e = Z ? h.Z.getStatus() : p.Z.getStatus(t.id, o);
+    let e = Z ? h.Z.getStatus() : p.Z.getStatus(t.id, a);
     return e === S.Sk.OFFLINE || e === S.Sk.INVISIBLE
   }), {
     voiceActivityStatusEnabled: V
@@ -142,11 +142,11 @@ function M(e) {
   }), H && er.push((0, r.jsx)(I.Z, R({
     voiceChannel: G
   }, ei), "voice"));
-  let [eo, ...ea] = er, es = ea.length > 0, el = null != m && es ? (0, r.jsx)(l.zx, {
+  let [ea, ...eo] = er, es = eo.length > 0, el = null != m && es ? (0, r.jsx)(l.zx, {
     look: l.zx.Looks.BLANK,
     size: l.zx.Sizes.NONE,
     color: l.zx.Colors.TRANSPARENT,
-    className: a()(C.viewAllButton, en && C.isShown),
+    className: o()(C.viewAllButton, en && C.isShown),
     onClick: () => {
       M({
         action: "PRESS_VIEW_PROFILE",
@@ -205,33 +205,33 @@ function M(e) {
         "aria-labelledby": P,
         tabIndex: false,
         children: [(0, r.jsxs)("li", {
-          className: a()(C.firstCardContainer, !en && ea.length > 0 && C.hasShowMoreButton, W && C.isInteracting),
-          children: [eo, es && "done" !== ee && (0, r.jsx)("div", {
+          className: o()(C.firstCardContainer, !en && eo.length > 0 && C.hasShowMoreButton, W && C.isInteracting),
+          children: [ea, es && "done" !== ee && (0, r.jsx)("div", {
             className: C.showMoreButtonContainer,
             children: (0, r.jsx)(l.zx, {
               look: l.zx.Looks.BLANK,
               size: l.zx.Sizes.NONE,
               color: l.zx.Colors.TRANSPARENT,
-              className: a()(C.showMoreButton, en && C.isHidden),
+              className: o()(C.showMoreButton, en && C.isHidden),
               onClick: ec,
               children: (0, r.jsx)(c.Text, {
                 variant: "text-xs/medium",
                 color: "none",
                 children: A.intl.format(A.t.wv8Q7u, {
-                  activitiesCount: ea.length
+                  activitiesCount: eo.length
                 })
               })
             })
           })]
-        }), es && et && ea.map((e, t) => (0, r.jsx)("li", {
-          className: a()(C.remainingCardContainer, en && C.isShown),
+        }), es && et && eo.map((e, t) => (0, r.jsx)("li", {
+          className: o()(C.remainingCardContainer, en && C.isShown),
           children: e
         }, "activity-".concat(t)))]
       }), es && et && el]
     }), es && (0, r.jsxs)("div", {
       ref: q,
-      className: a()(C.cardsList, C.remainingCardsCopyToMeasure),
-      children: [ea, el]
+      className: o()(C.cardsList, C.remainingCardsCopyToMeasure),
+      children: [eo, el]
     })]
   })
 }

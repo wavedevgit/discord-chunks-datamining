@@ -61,8 +61,8 @@ class U extends Chunk647438.PureComponent {
       pipWindows: t,
       pipWidth: n,
       maxX: i,
-      maxY: o,
-      theme: a,
+      maxY: a,
+      theme: o,
       dockedRect: s,
       appContext: l,
       roundCorners: c,
@@ -96,14 +96,14 @@ class U extends Chunk647438.PureComponent {
   }
   constructor(...e) {
     super(...e), L(this, "handleWindowMove", (e, t) => {
-      a.Ao(e, t)
+      o.Ao(e, t)
     }), L(this, "handleWindowResize", e => {
-      a.d7(e, w.cL.VIDEO)
+      o.d7(e, w.cL.VIDEO)
     })
   }
 }
 let G = Chunk442837.ZP.connectStores([Chunk928518.Z, Chunk317381.ZP, Chunk451478.Z, Chunk210887.Z, Chunk592125.Z, Chunk944486.Z, Chunk366050.Z, Chunk358221.Z, Chunk740492.ZP, Chunk591472.Z], e => {
-  var t, n, r, i, o, a, d;
+  var t, n, r, i, a, o, d;
   let h, {
       popoutWindowKey: m,
       popoutWindowHasTitleBar: g = false
@@ -142,7 +142,7 @@ let G = Chunk442837.ZP.connectStores([Chunk928518.Z, Chunk317381.ZP, Chunk451478
       }
       return e
     };
-  h = null != L && x || V && M ? null : V || !I || M ? null != L && G ? null != (n = S.Z.pipActivityWindow) ? n : S.Z.pipVideoWindow : null != Z && F ? null != (i = null != (r = S.Z.pipFrameWindow) ? r : S.Z.pipVideoWindow) ? i : S.Z.pipActivityWindow : null != (a = null != (o = S.Z.pipVideoWindow) ? o : S.Z.pipActivityWindow) ? a : S.Z.pipFrameWindow : null;
+  h = null != L && x || V && M ? null : V || !I || M ? null != L && G ? null != (n = S.Z.pipActivityWindow) ? n : S.Z.pipVideoWindow : null != Z && F ? null != (i = null != (r = S.Z.pipFrameWindow) ? r : S.Z.pipVideoWindow) ? i : S.Z.pipActivityWindow : null != (o = null != (a = S.Z.pipVideoWindow) ? a : S.Z.pipActivityWindow) ? o : S.Z.pipFrameWindow : null;
   let q = Array.from(S.Z.pipWindows.values()),
     X = S.Z.pipWidth(w.cL.VIDEO),
     Q = q.find(e => e.component === R.NYg.VIDEO),
@@ -153,19 +153,19 @@ let G = Chunk442837.ZP.connectStores([Chunk928518.Z, Chunk317381.ZP, Chunk451478
     en = A.Z.getChannelId() === et,
     er = null != et && f.Z.getChatOpen(et),
     ei = G || B,
-    eo = ei && null != L && (0, l.q)(L.applicationId),
-    ea = !ei && null != h && en && er;
+    ea = ei && null != L && (0, l.q)(L.applicationId),
+    eo = !ei && null != h && en && er;
   return {
     selectedPIPWindow: h,
     pipWindows: 0 === $.length ? k : $,
     pipWidth: X,
-    maxX: W.width - (ea ? ee : 0),
+    maxX: W.width - (eo ? ee : 0),
     maxY: W.height,
     theme: O.Z.theme,
     dockedRect: S.Z.getDockedRect(null != (d = null == h ? true : h.id) ? d : ""),
     getDockedRectPositionY: z,
     appContext: K,
-    roundCorners: !eo,
+    roundCorners: !ea,
     windowSize: W,
     inPopoutWindow: V,
     activityPIPWindow: J,

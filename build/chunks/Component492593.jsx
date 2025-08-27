@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk573385 = require("./573385.js"),
   Chunk481060 = require("./481060.js"),
@@ -60,8 +60,8 @@ function b(e, t) {
   if (null == e) return {};
   var n, r, i = y(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -69,15 +69,15 @@ function b(e, t) {
 function y(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let O = function(e) {
   var {
     className: t,
     compact: n = false,
-    contentOnly: o = false,
+    contentOnly: a = false,
     zalgo: h = true,
     preview: g = false,
     disableInteraction: y = false,
@@ -121,11 +121,11 @@ let O = function(e) {
       },
       children: (0, r.jsx)(c.tEY, E(m({}, R), {
         children: (0, r.jsxs)("div", E(m({
-          className: a()(t, {
+          className: o()(t, {
             [p.gradient]: U,
             [p.withDisplayNameStyles]: V && (null == x ? true : x.displayNameStyles) != null && (null == x ? true : x.guildId) == null,
             [p.wrapper]: true,
-            [p.contentOnly]: o,
+            [p.contentOnly]: a,
             [p.compact]: n,
             [p.preview]: g,
             [p.cozy]: !n,

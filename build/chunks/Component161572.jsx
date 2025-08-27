@@ -22,13 +22,13 @@ function l(e) {
   } = e, f = (0, i.Z)(t.id, n);
   return (0, r.jsxs)("div", {
     className: s.footer,
-    children: [f && (0, r.jsx)(a.Z, {
+    children: [f && (0, r.jsx)(o.Z, {
       user: t,
       guildId: n,
       channelId: l,
       onClose: c,
       disableAutoFocus: d
-    }), !f && (0, r.jsx)(o.Z, {
+    }), !f && (0, r.jsx)(a.Z, {
       user: t,
       guildId: n,
       onClose: c,

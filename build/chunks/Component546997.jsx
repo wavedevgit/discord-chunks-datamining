@@ -57,7 +57,7 @@ function g(e, t) {
 }
 
 function E(e) {
-  (0, d.isMac)() && e ? (0, a.ZDy)(async () => {
+  (0, d.isMac)() && e ? (0, o.ZDy)(async () => {
     let {
       ConfirmModal: t
     } = await Promise.resolve().then(n.bind(n, 878678));
@@ -65,11 +65,11 @@ function E(e) {
       onConfirm: () => {
         s.Z.setUseSystemScreensharePicker(e), l.Z.app.relaunch()
       },
-      confirmButtonColor: o.zx.Colors.BRAND,
+      confirmButtonColor: a.zx.Colors.BRAND,
       header: _.intl.string(_.t["9jf31N"]),
       cancelText: _.intl.string(_.t["ETE/oK"]),
       confirmText: _.intl.string(_.t.BddRzc),
-      children: (0, r.jsx)(a.Text, {
+      children: (0, r.jsx)(o.Text, {
         variant: "text-md/normal",
         children: _.intl.string(_.t.uBd6JS)
       })
@@ -82,7 +82,7 @@ function b() {
     videoHook: e,
     experimentalSoundshare: t,
     supportsExperimentalSoundshare: n,
-    supportsHookSoundshare: o,
+    supportsHookSoundshare: a,
     useSystemScreensharePicker: l
   } = (0, Chunk442837.cj)([Chunk131951.Z], () => ({
     videoHook: Chunk131951.Z.getVideoHook(),

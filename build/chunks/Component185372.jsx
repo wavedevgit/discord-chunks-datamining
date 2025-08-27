@@ -9,7 +9,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk780384 = require("./780384.js"),
   Chunk481060 = require("./481060.js"),
   Chunk600164 = require("./600164.jsx"),
@@ -66,18 +66,18 @@ class b extends Chunk647438.PureComponent {
       darkSrc: t,
       width: n,
       height: i,
-      offsetX: o,
+      offsetX: a,
       offsetY: l,
       style: u
     } = this.props;
     return (0, Chunk951288.jsx)(E, {
       children: _ => (0, r.jsx)(c.Z.Child, {
         grow: 0,
-        className: a()(d.image, f.marginBottom40),
+        className: o()(d.image, f.marginBottom40),
         style: m(p({}, u), {
           width: n,
           height: i,
-          marginLeft: o,
+          marginLeft: a,
           marginTop: l,
           backgroundImage: "url(".concat((0, s.wj)(_) ? t : e, ")")
         })
@@ -90,7 +90,7 @@ let y = e => {
     children: t,
     className: n,
     noteClassName: i,
-    note: o,
+    note: a,
     style: s
   } = e;
   return (0, r.jsxs)(c.Z.Child, {
@@ -98,11 +98,11 @@ let y = e => {
     direction: c.Z.Direction.VERTICAL,
     style: s,
     children: [null != t && (0, r.jsx)(l.H, {
-      className: a()(n, d.title),
+      className: o()(n, d.title),
       children: t
-    }), null != o ? (0, r.jsx)("div", {
-      className: a()(i, d.text, f.marginTop8),
-      children: o
+    }), null != a ? (0, r.jsx)("div", {
+      className: o()(i, d.text, f.marginTop8),
+      children: a
     }) : null]
   })
 };
@@ -112,7 +112,7 @@ function O(e) {
     children: t,
     theme: n,
     className: i,
-    style: o
+    style: a
   } = e;
   return (0, r.jsx)(g, {
     value: n,
@@ -120,8 +120,8 @@ function O(e) {
       direction: c.Z.Direction.VERTICAL,
       align: c.Z.Align.CENTER,
       justify: c.Z.Justify.CENTER,
-      className: a()(d.wrapper, i),
-      style: o,
+      className: o()(d.wrapper, i),
+      style: a,
       children: t
     })
   })

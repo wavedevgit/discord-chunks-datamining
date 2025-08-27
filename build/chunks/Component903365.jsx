@@ -2,13 +2,13 @@
 /** chunk id: 903365, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  V: () => o
+  V: () => a
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk495511 = require("./495511.js");
 
-function o() {
+function a() {
   return (0, Chunk951288.jsxs)("svg", {
     width: "16",
     height: "10",

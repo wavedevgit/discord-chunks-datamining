@@ -96,13 +96,13 @@ function D(e, t, n) {
     let i = g.default.getUser(e);
     if (null == i) return;
     if (r.preventDefault(), r.stopPropagation(), !r.shiftKey) return void n();
-    let o = "@".concat(v.ZP.getUserTag(i, {
+    let a = "@".concat(v.ZP.getUserTag(i, {
         decoration: "never"
       })),
-      a = "<@".concat(e, ">");
+      o = "<@".concat(e, ">");
     E.S.dispatchToLastSubscribed(A.CkL.INSERT_TEXT, {
-      plainText: o,
-      rawText: a
+      plainText: a,
+      rawText: o
     }), s.Z.startTyping(t)
   }, [e, t, n])
 }
@@ -145,7 +145,7 @@ function B(e, t) {
   return k(w("interactionAvatarProfile", e, t))
 }
 
-function Z(e, t, a, s) {
+function Z(e, t, o, s) {
   let {
     id: c
   } = t, {
@@ -163,9 +163,9 @@ function Z(e, t, a, s) {
     let i = p.Z.getChannel(c),
       l = m.Z.getMessage(c, u),
       d = h.Z.isEditing(c, u);
-    null == i || null == l || d || (a({
+    null == i || null == l || d || (o({
       contextMenu: true
-    }), (0, o.jW)(e, async () => {
+    }), (0, a.jW)(e, async () => {
       let {
         default: e
       } = await Promise.all([n.e("79381"), n.e("76676"), n.e("37220"), n.e("93077"), n.e("3719")]).then(n.bind(n, 225138));
@@ -176,12 +176,12 @@ function Z(e, t, a, s) {
         shouldHideMediaOptions: s
       }))
     }, {
-      onClose: () => a({
+      onClose: () => o({
         contextMenu: false
       }),
       context: _
     }))
-  }, [f, c, u, a, _, s])
+  }, [f, c, u, o, _, s])
 }
 
 function F(e, t) {
@@ -195,10 +195,10 @@ function F(e, t) {
 function V(e, t, n) {
   return i.useCallback(r => {
     let i = g.default.getUser(e),
-      o = p.Z.getChannel(t);
-    null != i && null != o && (r.stopPropagation(), (0, I._j)(r, {
+      a = p.Z.getChannel(t);
+    null != i && null != a && (r.stopPropagation(), (0, I._j)(r, {
       user: i,
-      channel: o,
+      channel: a,
       moderationAlertId: n
     }))
   }, [e, t, n])
@@ -228,18 +228,18 @@ function W(e) {
     groupId: t,
     message: n,
     defaultValue: r,
-    popouts: o
+    popouts: a
   } = e, {
-    canShowReactionsOnMessageHover: a
+    canShowReactionsOnMessageHover: o
   } = c.ZP.useExperiment({
     location: "useHoveredMessage"
   }, {
     autoTrackExposure: false
-  }), s = n.author.id, l = "".concat(t, ":").concat(s), u = i.useRef(r), d = X(n, o), [f, p] = i.useState(r);
+  }), s = n.author.id, l = "".concat(t, ":").concat(s), u = i.useRef(r), d = X(n, a), [f, p] = i.useState(r);
   u.current = f || u.current;
   let h = i.useCallback(e => {
-      a && (0, _.T6)(), f || (E.S.dispatchKeyed(A.LPv.ANIMATE_CHAT_AVATAR, l, true), d(e), p(true))
-    }, [f, l, a, d]),
+      o && (0, _.T6)(), f || (E.S.dispatchKeyed(A.LPv.ANIMATE_CHAT_AVATAR, l, true), d(e), p(true))
+    }, [f, l, o, d]),
     m = i.useCallback(() => {
       E.S.dispatchKeyed(A.LPv.ANIMATE_CHAT_AVATAR, l, false), p(false)
     }, [l]);
@@ -252,20 +252,20 @@ function W(e) {
 }
 
 function K(e, t) {
-  let [n, r] = i.useState(false), [o, a] = i.useState(false);
+  let [n, r] = i.useState(false), [a, o] = i.useState(false);
   return {
     handleFocus: i.useCallback(t => {
       var n, i;
-      let o = null != (i = null == (n = (0, b.uB)(t)) ? true : n.activeElement) ? i : null;
-      (t.target === t.currentTarget || t.currentTarget.contains(o)) && (a(true), r(true)), null != e && e(t)
+      let a = null != (i = null == (n = (0, b.uB)(t)) ? true : n.activeElement) ? i : null;
+      (t.target === t.currentTarget || t.currentTarget.contains(a)) && (o(true), r(true)), null != e && e(t)
     }, [e]),
     handleBlur: i.useCallback(e => {
       var n, i;
-      let o = null != (i = null == (n = (0, b.uB)(e)) ? true : n.activeElement) ? i : null;
-      e.target !== e.currentTarget && e.currentTarget.contains(o) || r(false), null != t && t(e)
+      let a = null != (i = null == (n = (0, b.uB)(e)) ? true : n.activeElement) ? i : null;
+      e.target !== e.currentTarget && e.currentTarget.contains(a) || r(false), null != t && t(e)
     }, [t]),
     isFocused: n,
-    hasFocused: o
+    hasFocused: a
   }
 }
 
@@ -274,7 +274,7 @@ function z(e, t) {
     let {
       messageReference: n
     } = e;
-    (null == t || (0, S.Z)(t)) && a.Z.jumpToMessage({
+    (null == t || (0, S.Z)(t)) && o.Z.jumpToMessage({
       channelId: n.channel_id,
       messageId: n.message_id,
       flash: true,
@@ -299,13 +299,13 @@ function X(e, t) {
         x: t,
         y: n,
         width: i,
-        height: o
+        height: a
       } = r.getBoundingClientRect();
       (0, d.Z)(e, {
         x: t,
         y: n,
         w: i,
-        h: o
+        h: a
       }, false, u.LL.UserTriggered)
     }
   }, [e, t])

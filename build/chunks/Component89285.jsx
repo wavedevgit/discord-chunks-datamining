@@ -14,17 +14,17 @@ function s(e) {
   let {
     name: t,
     onRetry: n
-  } = e, s = null != t ? t : o.intl.string(o.t["11pdXV"]);
+  } = e, s = null != t ? t : a.intl.string(a.t["11pdXV"]);
   return (0, r.jsx)("div", {
-    className: a.container,
+    className: o.container,
     children: (0, r.jsxs)("div", {
-      className: a.headingContainer,
+      className: o.headingContainer,
       children: [(0, r.jsx)(i.X6q, {
         variant: "heading-lg/medium",
         color: "header-primary",
         children: s
       }), (0, r.jsxs)(i.P3F, {
-        className: a.error,
+        className: o.error,
         onClick: n,
         children: [(0, r.jsx)(i.Mgn, {
           size: "sm",
@@ -32,7 +32,7 @@ function s(e) {
         }), (0, r.jsx)(i.Text, {
           variant: "text-sm/normal",
           color: "text-feedback-warning",
-          children: o.intl.string(o.t.tmGHjY)
+          children: a.intl.string(a.t.tmGHjY)
         })]
       })]
     })

@@ -75,7 +75,7 @@ class g extends Chunk147913.Z {
     if (!module) return;
     let {
       body: {
-        guild_noise: o,
+        guild_noise: a,
         usage: s
       }
     } = await Chunk544891.tn.get({
@@ -88,7 +88,7 @@ class g extends Chunk147913.Z {
       location: "NotificationMigrationManager"
     }), exports && ((0, Chunk115345.cG)(Chunk433517, Chunk480294) ? (0, Chunk481060.h7j)(e => (0, r.jsx)(c, m(p({}, e), {
       dismissable: false,
-      guildPain: o,
+      guildPain: a,
       myUsage: l
     })), {
       onCloseRequest: () => {}
@@ -117,13 +117,13 @@ async function E(e) {
   let {
     body: {
       guild_noise: t,
-      usage: o
+      usage: a
     }
   } = await i.tn.get({
     url: "/users/@me/notification-migration-data2",
     rejectWithError: false
-  }), s = (0, d._Y)(o);
-  (0, a.ZDy)(async () => {
+  }), s = (0, d._Y)(a);
+  (0, o.ZDy)(async () => {
     let {
       default: i
     } = await n.e("53512").then(n.bind(n, 753521));

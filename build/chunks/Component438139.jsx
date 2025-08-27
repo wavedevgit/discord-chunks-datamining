@@ -52,8 +52,8 @@ function d(e, t) {
   if (null == e) return {};
   var n, r, i = f(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -61,8 +61,8 @@ function d(e, t) {
 function f(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let _ = 13;
@@ -113,23 +113,23 @@ function h(e) {
         } = t,
         i = d(t, ["timestamps"]),
         {
-          hours: o,
+          hours: a,
           minutes: s,
           seconds: c
         } = this.state,
         f = {
-          hours: this.renderTime(o, true),
+          hours: this.renderTime(a, true),
           minutes: this.renderTime(s),
           seconds: this.renderTime(c)
         };
       return null != n.end ? (0, r.jsx)(e, u(l({}, i), {
-        message: a.intl.formatToPlainString(a.t["I/J7vL"], f)
+        message: o.intl.formatToPlainString(o.t["I/J7vL"], f)
       })) : null != n.start ? (0, r.jsx)(e, u(l({}, i), {
-        message: a.intl.formatToPlainString(a.t.M9Fexc, f)
+        message: o.intl.formatToPlainString(o.t.M9Fexc, f)
       })) : null
     }
     constructor(e) {
-      super(e), s(this, "_interval", true), this._interval = new o.Xp, this.state = l({}, this.getUpdatedTime())
+      super(e), s(this, "_interval", true), this._interval = new a.Xp, this.state = l({}, this.getUpdatedTime())
     }
   }
 }

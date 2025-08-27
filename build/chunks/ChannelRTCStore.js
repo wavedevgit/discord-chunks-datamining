@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => ek
 }), require("./388685.js"), require("./539854.js");
 var r, Chunk512722 = require("./512722.js"),
-  o = require.n(Chunk512722),
+  a = require.n(Chunk512722),
   Chunk392711 = require("./392711.js"),
   s = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
@@ -89,7 +89,7 @@ function W(e) {
 
 function K() {
   for (let e of L) ei(module);
-  eo()
+  ea()
 }
 
 function z() {
@@ -101,8 +101,8 @@ function z() {
   let r = Chunk258609.Z.getRemoteSessionId(),
     i = Chunk979651.Z.getVoiceStateForSession(Chunk314897.default.getId(), r);
   (null == Chunk512722 ? true : Chunk512722.channelId) != null && module.push(null == Chunk512722 ? true : Chunk512722.channelId), s().difference(L, module).forEach(ei);
-  let o = s().difference(module, L);
-  return L = module, o
+  let a = s().difference(module, L);
+  return L = module, a
 }
 
 function q(e) {
@@ -161,15 +161,15 @@ function en(e) {
   if (0 === n.size() || y.Z.getVoiceChannelId() !== e) return void ee(e, null);
   let r = A.dF.NONE,
     i = n.toArray(S.sI.STREAM).find(e => e.type === A.fO.STREAM && h.Z.getActiveStreamForStreamKey(e.id));
-  if (null != i) o()(i.type === A.fO.STREAM, "Impossible condition"), r = i.id;
+  if (null != i) a()(i.type === A.fO.STREAM, "Impossible condition"), r = i.id;
   else if (1 === n.size()) r = t;
   else if (1 === n.size(S.sI.VIDEO)) {
     let [e] = n.toArray(S.sI.VIDEO);
     r = e.id
   } else {
-    var a;
+    var o;
     let e = n.toArray().find(e => e.type === A.fO.USER && e.id !== t && !e.ringing);
-    r = null != (a = null == e ? true : e.id) ? a : t
+    r = null != (o = null == e ? true : e.id) ? o : t
   }
   let [s] = Q(e);
   if (s !== A.dF.AUTO && s !== A.dF.NONE) {
@@ -190,23 +190,23 @@ function ei(e) {
   delete j[e], delete M[e], delete U[e], delete G[e]
 }
 
-function eo() {
+function ea() {
   return q(e => e.rebuild(), z())
 }
 
-function ea(e) {
+function eo(e) {
   let {
     channelId: t,
     currentVoiceChannelId: n
   } = e;
-  return null != t ? delete k[t] : null != n && (delete F[n], delete H[n], $(n)), eo()
+  return null != t ? delete k[t] : null != n && (delete F[n], delete H[n], $(n)), ea()
 }
 
 function es(e) {
   let {
     channelId: t,
     messageId: n
-  } = e, r = eo(), i = E.Z.getChannel(t);
+  } = e, r = ea(), i = E.Z.getChannel(t);
   return null == t || null == n || (null == i ? true : i.type) !== C.d4z.GUILD_VOICE && (null == i ? true : i.type) !== C.d4z.GUILD_STAGE_VOICE || F[t] ? r : (V[t] = false, F[t] = true, true)
 }
 
@@ -219,10 +219,10 @@ function el(e) {
     let {
       userId: r,
       channelId: i,
-      guildId: o
+      guildId: a
     } = t;
-    return (null != o && null != i && p.Z.getCurrentConfig({
-      guildId: o,
+    return (null != a && null != i && p.Z.getCurrentConfig({
+      guildId: a,
       location: "voice_status_update"
     }, {
       autoTrackExposure: false
@@ -482,7 +482,7 @@ function ej(e) {
 }
 class eM extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    this.waitFor(h.Z, m.default, g.Z, E.Z, u.ZP, b.Z, y.Z, O.Z, v.default, I.Z, T.Z), this.syncWith([u.ZP], ec), this.syncWith([b.Z], eu), this.syncWith([f.Z], eo), (null == e ? true : e.voiceParticipantsHidden) !== true && Object.assign(Z, null == e ? true : e.voiceParticipantsHidden)
+    this.waitFor(h.Z, m.default, g.Z, E.Z, u.ZP, b.Z, y.Z, O.Z, v.default, I.Z, T.Z), this.syncWith([u.ZP], ec), this.syncWith([b.Z], eu), this.syncWith([f.Z], ea), (null == e ? true : e.voiceParticipantsHidden) !== true && Object.assign(Z, null == e ? true : e.voiceParticipantsHidden)
   }
   getState() {
     return {
@@ -585,12 +585,12 @@ class eM extends(r = Chunk442837.ZP.PersistedStore) {
 N(eM, "displayName", "ChannelRTCStore"), N(eM, "persistKey", "ChannelRTCStore");
 let ek = new eM(Chunk570140.Z, {
   CONNECTION_OPEN: K,
-  CONNECTION_OPEN_SUPPLEMENTAL: eo,
-  THREAD_LIST_SYNC: eo,
-  OVERLAY_INITIALIZE: eo,
-  VOICE_CHANNEL_SELECT: ea,
+  CONNECTION_OPEN_SUPPLEMENTAL: ea,
+  THREAD_LIST_SYNC: ea,
+  OVERLAY_INITIALIZE: ea,
+  VOICE_CHANNEL_SELECT: eo,
   CHANNEL_SELECT: es,
-  CHANNEL_RTC_ACTIVE_CHANNELS: eo,
+  CHANNEL_RTC_ACTIVE_CHANNELS: ea,
   VOICE_STATE_UPDATES: el,
   CHANNEL_CREATE: eT,
   CHANNEL_DELETE: eS,

@@ -24,7 +24,7 @@ let m = e => {
     } = e,
     m = (0, i.e7)([s.Z], () => s.Z.useReducedMotion),
     g = (0, c.rO)(),
-    E = (0, o.apv)((0, a.ZP)());
+    E = (0, a.apv)((0, o.ZP)());
   if (m) {
     let e = E ? h.Z : f.Z;
     return (0, r.jsx)("div", {

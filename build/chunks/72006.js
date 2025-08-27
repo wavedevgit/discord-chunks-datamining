@@ -16,14 +16,14 @@ require.d(exports, {
   l8: () => w,
   lv: () => R,
   nR: () => P,
-  q0: () => o.a,
+  q0: () => a.a,
   x0: () => S,
   xb: () => F,
   yd: () => A
 }), require("./388685.js"), require("./539854.js");
 var Chunk258863 = require("./258863.js"),
   Chunk551483 = require("./551483.js"),
-  o = require.n(Chunk551483),
+  a = require.n(Chunk551483),
   Chunk878694 = require("./878694.js"),
   s = require.n(Chunk878694),
   Chunk924849 = require("./924849.js"),
@@ -44,34 +44,34 @@ var Chunk258863 = require("./258863.js"),
   I = require.n(Chunk562531);
 
 function T(e, t, n, i) {
-  let o = i.getCurrentContent(),
-    a = null;
-  null != e && (a = (o = o.createEntity(...e)).getLastCreatedEntityKey());
-  let s = o.getFirstBlock(),
+  let a = i.getCurrentContent(),
+    o = null;
+  null != e && (o = (a = a.createEntity(...e)).getLastCreatedEntityKey());
+  let s = a.getFirstBlock(),
     l = new r.SelectionState({
       anchorKey: s.getKey(),
       anchorOffset: t,
       focusKey: s.getKey(),
       focusOffset: n
     });
-  return o = r.Modifier.applyEntity(o, l, a), r.EditorState.set(i, {
-    currentContent: o
+  return a = r.Modifier.applyEntity(a, l, o), r.EditorState.set(i, {
+    currentContent: a
   })
 }
 
 function S(e, t, n, i) {
-  let o, a, l = t.getCurrentContent(),
+  let a, o, l = t.getCurrentContent(),
     c = l.getFirstBlock(),
     u = c.getText();
-  "number" == typeof n ? (n > u.length && (n = u.length), null != i && i > u.length && (i = u.length), o = new r.SelectionState({
+  "number" == typeof n ? (n > u.length && (n = u.length), null != i && i > u.length && (i = u.length), a = new r.SelectionState({
     anchorKey: c.getKey(),
     anchorOffset: n,
     focusKey: c.getKey(),
     focusOffset: null != i && 0 !== i ? i : n
-  })) : o = t.getSelection();
+  })) : a = t.getSelection();
   let d = t.getCurrentInlineStyle(),
-    f = s()(l, o);
-  return o.isCollapsed() ? (l = r.Modifier.insertText(l, o, e, d, f), a = "insert-characters") : (l = r.Modifier.replaceText(l, o, e, d, f), a = "replace-characters"), r.EditorState.push(t, l, a)
+    f = s()(l, a);
+  return a.isCollapsed() ? (l = r.Modifier.insertText(l, a, e, d, f), o = "insert-characters") : (l = r.Modifier.replaceText(l, a, e, d, f), o = "replace-characters"), r.EditorState.push(t, l, o)
 }
 
 function A(e, t) {
@@ -112,12 +112,12 @@ function R(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {},
     r = t.getCurrentContent(),
     i = r.getFirstBlock(),
-    o = i.getText(),
-    a = [];
+    a = i.getText(),
+    o = [];
   return i.findEntityRanges(e => null !== e.getEntity(), (e, t) => {
     let n = r.getEntity(i.getEntityAt(e)).getType(),
-      s = o.substring(e, t);
-    a.push({
+      s = a.substring(e, t);
+    o.push({
       processed: false,
       type: n,
       start: e,
@@ -126,19 +126,19 @@ function R(e, t) {
     })
   }), e.forEach(e => {
     let r = false;
-    if (a.forEach(n => {
+    if (o.forEach(n => {
         let {
           type: i,
-          start: o,
-          end: a
+          start: a,
+          end: o
         } = e, s = e.getFullMatch();
-        !n.processed && (n.type === i && n.start === o && n.text === s ? (n.processed = true, r = true) : (o >= n.start && o < n.end || a > n.start && a <= n.end) && (n.processed = true, t = T(null, n.start, n.end, t)))
+        !n.processed && (n.type === i && n.start === a && n.text === s ? (n.processed = true, r = true) : (a >= n.start && a < n.end || o > n.start && o <= n.end) && (n.processed = true, t = T(null, n.start, n.end, t)))
       }), r) return;
     let i = n[e.type];
     t = T([e.type, null != i && i.mutable ? "MUTABLE" : "IMMUTABLE", {
       token: e
     }], e.start, e.end, t)
-  }), a.forEach(e => {
+  }), o.forEach(e => {
     e.processed || (t = T(null, e.start, e.end, t))
   }), t
 }
@@ -204,8 +204,8 @@ function B(e) {
   let r = n.getClientRects()[0],
     i = e.getClientRects()[0];
   if (null == r || null == i) return;
-  let o = r.left - i.left + e.scrollLeft;
-  o < e.scrollLeft ? e.scrollLeft = o - 10 : o > e.scrollLeft + e.offsetWidth && (e.scrollLeft = o - e.offsetWidth + 3)
+  let a = r.left - i.left + e.scrollLeft;
+  a < e.scrollLeft ? e.scrollLeft = a - 10 : a > e.scrollLeft + e.offsetWidth && (e.scrollLeft = a - e.offsetWidth + 3)
 }
 
 function Z(e, t) {

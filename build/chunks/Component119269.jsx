@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk607070 = require("./607070.js"),
@@ -24,7 +24,7 @@ let m = e => {
     let {
       avatarDecoAssetId: t,
       avatarDecoAssetDescription: n
-    } = e, o = i.useMemo(() => (0, u.Z)(t, l.EFr.SIZE_120, false), [t]);
+    } = e, a = i.useMemo(() => (0, u.Z)(t, l.EFr.SIZE_120, false), [t]);
     return (0, r.jsx)("div", {
       className: p.avatarDecoContainer,
       children: (0, r.jsx)("div", {
@@ -32,7 +32,7 @@ let m = e => {
         children: (0, r.jsx)("img", {
           className: p.avatarDecoImage,
           alt: n,
-          src: o
+          src: a
         })
       })
     })
@@ -42,7 +42,7 @@ let m = e => {
       showAnimations: t = true,
       iconClassName: n,
       staticPercentage: i,
-      innerCircleClassName: o,
+      innerCircleClassName: a,
       progressCircleStrokeSize: l,
       backgroundCircleSize: u,
       percentage: h,
@@ -59,7 +59,7 @@ let m = e => {
         case 0:
           return (0, r.jsx)(d.Z, {
             className: A ? p.nitroGemAnimation : true,
-            backgroundColor: a()(p.gemBackgroundFill, o),
+            backgroundColor: o()(p.gemBackgroundFill, a),
             backgroundCircleSize: u
           });
         case 1:
@@ -78,9 +78,9 @@ let m = e => {
       }
     };
     return (0, r.jsx)("div", {
-      className: a()(p.progressCircle, n),
+      className: o()(p.progressCircle, n),
       children: (0, r.jsx)(_.Z, {
-        animationClassName: a()(p.activeProgressCircle, {
+        animationClassName: o()(p.activeProgressCircle, {
           [p.activeProgressCircleAnimation]: A,
           [null != v ? v : ""]: A
         }),

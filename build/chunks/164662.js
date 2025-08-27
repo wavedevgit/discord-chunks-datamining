@@ -2,23 +2,23 @@
 /** chunk id: 164662, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  E: () => a
+  E: () => o
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk434650 = require("./434650.js");
-let o = 100,
-  a = function() {
+let a = 100,
+  o = function() {
     let e = !(arguments.length > 0) || true === arguments[0] || arguments[0],
       [t, n] = (0, Chunk647438.useState)(1),
-      a = (0, Chunk647438.useMemo)(() => ({
+      o = (0, Chunk647438.useMemo)(() => ({
         threshold: Array.from({
-          length: o + 1
-        }, (e, t) => t / o)
+          length: a + 1
+        }, (e, t) => t / a)
       }), []);
     return {
       visibilityPercentageRef: (0, Chunk434650.S)(e => {
         n(e.intersectionRatio)
-      }, a, module),
+      }, o, module),
       visibilityPercentage: exports
     }
   }

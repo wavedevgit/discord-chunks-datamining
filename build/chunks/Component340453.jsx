@@ -57,11 +57,11 @@ function h(e) {
   let {
     otherUser: t,
     status: n
-  } = e, a = (0, s.j_)(t.id, n), {
+  } = e, o = (0, s.j_)(t.id, n), {
     avatarSrc: u,
     avatarDecorationSrc: f,
     eventHandlers: h
-  } = (0, o.Z)({
+  } = (0, a.Z)({
     userId: t.id,
     size: i.EFr.SIZE_40,
     animateOnHover: true
@@ -86,7 +86,7 @@ function h(e) {
         className: c.__invalid_timestamp,
         color: "text-muted",
         variant: "text-xs/normal",
-        children: a
+        children: o
       })]
     })]
   })

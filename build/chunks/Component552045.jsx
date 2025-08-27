@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk785681 = require("./785681.js"),
   Chunk841409 = require("./841409.js"),
@@ -45,7 +45,7 @@ let b = () => {
         articleLink: "https://support.discord.com/hc/articles/14155043715735"
       }));
     return (0, Chunk951288.jsxs)("div", {
-      className: o()(Chunk26919.container, Chunk519279.box),
+      className: a()(Chunk26919.container, Chunk519279.box),
       children: [(0, Chunk951288.jsxs)("div", {
         children: [(0, Chunk951288.jsx)("div", {
           children: (0, Chunk951288.jsxs)("div", {

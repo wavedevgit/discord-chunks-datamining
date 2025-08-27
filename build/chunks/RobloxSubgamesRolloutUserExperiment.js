@@ -2,7 +2,7 @@
 /** chunk id: 355281, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  D: () => o,
+  D: () => a,
   m: () => i
 });
 var Chunk818083 = require("./818083.js");
@@ -42,7 +42,7 @@ let i = (0, require("./427164.js").le)({
       }
     }
   }),
-  o = (0, Chunk818083.B)({
+  a = (0, Chunk818083.B)({
     kind: "user",
     id: "2025-08_roblox_subgames_rollout",
     label: "Roblox subgames fetch rollout",

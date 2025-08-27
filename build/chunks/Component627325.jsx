@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk658722 = require("./658722.js"),
-  a = require.n(Chunk658722),
+  o = require.n(Chunk658722),
   Chunk468194 = require("./468194.js"),
   Chunk442837 = require("./442837.js"),
   Chunk692547 = require("./692547.js"),
@@ -30,9 +30,9 @@ function I(e) {
     columns: t,
     handleScroll: n,
     voiceListRef: i,
-    showSectionHeaders: o = false,
-    query: a
-  } = e, s = S(), I = (0, l.e7)([f.default], () => (0, _.I5)(f.default.getCurrentUser())), A = C(a, I), N = Math.ceil(A.length / t), {
+    showSectionHeaders: a = false,
+    query: o
+  } = e, s = S(), I = (0, l.e7)([f.default], () => (0, _.I5)(f.default.getCurrentUser())), A = C(o, I), N = Math.ceil(A.length / t), {
     isNativeModuleLoaded: R,
     isNativeModuleLoading: P,
     catalogLastFetchTime: w
@@ -41,7 +41,7 @@ function I(e) {
     isNativeModuleLoading: h.Z.isNativeModuleLoading(),
     catalogLastFetchTime: h.Z.getCatalogLastFetchTime()
   }));
-  return a && 0 === A.length ? (0, r.jsxs)("div", {
+  return o && 0 === A.length ? (0, r.jsxs)("div", {
     className: b.iconMessage,
     children: [(0, r.jsx)(u._Ve, {
       width: 40,
@@ -97,13 +97,13 @@ function I(e) {
         }, null == n ? true : n.id))
       }, e)
     },
-    renderSectionHeader: false === o ? true : e => (0, r.jsx)(u.Text, {
+    renderSectionHeader: false === a ? true : e => (0, r.jsx)(u.Text, {
       variant: "text-sm/medium",
       color: "header-muted",
       className: b.header,
       children: E.intl.string(v[e])
     }),
-    sectionHeaderHeight: false === o ? true : e => O[e],
+    sectionHeaderHeight: false === a ? true : e => O[e],
     rowCount: N,
     rowHeight: y,
     onScroll: n,
@@ -135,7 +135,7 @@ let S = () => (0, Chunk442837.e7)([Chunk709706.Z], () => {
       let {
         name: t
       } = e, r = (0, s._I)(E.intl.string(t)).toLowerCase();
-      return a()(n, r)
+      return o()(n, r)
     })
   },
   C = (e, t) => (0, l.Wu)([h.Z], () => {

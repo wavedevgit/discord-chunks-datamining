@@ -6,9 +6,9 @@ require.d(exports, {
 }), require("./35282.js");
 var Chunk159635 = require("./159635.js"),
   i = require.n(Chunk159635);
-let o = /^https:\/\/(?:(?:media|images)\.discordapp\.net|(?:cdn\.discordapp\.com))\/(?:attachments|ephemeral-attachments)\/\d+\/\d+\/([A-Za-z0-9._-]*[A-Za-z0-9_-])(?:[?][a-zA-Z0-9?&=_-]*)?/;
+let a = /^https:\/\/(?:(?:media|images)\.discordapp\.net|(?:cdn\.discordapp\.com))\/(?:attachments|ephemeral-attachments)\/\d+\/\d+\/([A-Za-z0-9._-]*[A-Za-z0-9_-])(?:[?][a-zA-Z0-9?&=_-]*)?/;
 
-function a(e, t) {
+function o(e, t) {
   return {
     type: "attachmentLink",
     content: [{
@@ -23,10 +23,10 @@ let s = {
   attachmentLink: {
     order: i().defaultRules.url.order - .5,
     requiredFirstCharacters: ["h"],
-    match: e => o.exec(e),
+    match: e => a.exec(e),
     parse(e, t, n) {
       let r = e[0];
-      return a(e[1], r)
+      return o(e[1], r)
     }
   }
 }

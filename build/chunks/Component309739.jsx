@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk658722 = require("./658722.js"),
   l = require.n(Chunk658722),
   Chunk442837 = require("./442837.js"),
@@ -96,7 +96,7 @@ function k() {
     t = Chunk695346.no.useSetting(),
     n = (0, Chunk362352.Yd)("activity privacy tab"),
     i = Chunk358085.isPlatformEmbedded ? Chunk388032.intl.string(Chunk388032.t.MznbeH) : Chunk388032.intl.string(Chunk388032.t.oKqC4u),
-    o = e => {
+    a = e => {
       A.no.updateSetting(e ? u.GI.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS : u.GI.ACTIVITY_STATUS_OFF), M(e)
     },
     s = e => {
@@ -141,14 +141,14 @@ function k() {
             onChange: e => s(e)
           })]
         }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
-          className: a()(Chunk197571.marginBottom20, Chunk197571.marginTop20)
+          className: o()(Chunk197571.marginBottom20, Chunk197571.marginTop20)
         })]
       }) : (0, Chunk951288.jsx)(Chunk481060.j7V, {
         value: exports === Chunk524437.GI.ACTIVITY_STATUS_OFF,
         note: Chunk388032.intl.format(Chunk388032.t["+5/xu7"], {
           helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.ACTIVITY_STATUS_SETTINGS)
         }),
-        onChange: e => o(!e),
+        onChange: e => a(!e),
         children: Chunk388032.intl.string(Chunk388032.t.D5GXTU)
       })]
     })
@@ -216,13 +216,13 @@ let B = e => {
 function Z(e) {
   let {
     account: t
-  } = e, [n, o] = i.useState(t.showActivity), a = (0, h.ZP)();
+  } = e, [n, a] = i.useState(t.showActivity), o = (0, h.ZP)();
 
   function s(e) {
-    o(e), p.Z.setShowActivity(t.type, t.id, e)
+    a(e), p.Z.setShowActivity(t.type, t.id, e)
   }
   i.useEffect(() => {
-    o(t.showActivity)
+    a(t.showActivity)
   }, [t]);
   let l = m.Z.get(t.type);
   return (0, r.jsxs)(r.Fragment, {
@@ -236,7 +236,7 @@ function Z(e) {
         children: [(0, r.jsx)("img", {
           alt: l.name,
           className: P.connectionIcon,
-          src: (0, d.wj)(a) ? l.icon.darkSVG : l.icon.lightSVG
+          src: (0, d.wj)(o) ? l.icon.darkSVG : l.icon.lightSVG
         }), (0, r.jsxs)("div", {
           children: [(0, r.jsx)(_.Text, {
             variant: "text-md/semibold",
@@ -257,8 +257,8 @@ function Z(e) {
 function F() {
   let e = (0, Chunk442837.e7)([Chunk553795.Z], () => Chunk553795.Z.getAccounts()),
     t = Chunk647438.useMemo(() => module.filter(e => m.Z.isSupported(e.type) && N.vbS.has(e.type)), [module]),
-    [n, o] = Chunk647438.useState(""),
-    a = Chunk647438.useMemo(() => {
+    [n, a] = Chunk647438.useState(""),
+    o = Chunk647438.useMemo(() => {
       let e = require.trim().toLowerCase();
       return "" === module ? exports : exports.filter(t => l()(e, m.Z.get(t.type).name.toLowerCase()))
     }, [exports, require]);
@@ -276,7 +276,7 @@ function F() {
           query: require,
           onChange: Chunk120356,
           placeholder: Chunk388032.intl.string(Chunk388032.t.WPrtoa)
-        }), a.map(e => (0, r.jsx)(Z, {
+        }), o.map(e => (0, r.jsx)(Z, {
           account: e
         }, e.id))]
       })
@@ -293,9 +293,9 @@ function V(e) {
   } = S.b.useExperiment({
     location: "activity privacy tab"
   }), {
-    showUpdatedSettingsPage: o
+    showUpdatedSettingsPage: a
   } = (0, g.D)("activity privacy tab");
-  return o ? (0, r.jsx)(E.Z, {}) : (0, r.jsxs)(_.hjN, {
+  return a ? (0, r.jsx)(E.Z, {}) : (0, r.jsxs)(_.hjN, {
     className: t,
     tag: _.RB0.H1,
     title: n ? R.intl.string(R.t.Cq98yM) : null,

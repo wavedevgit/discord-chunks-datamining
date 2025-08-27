@@ -19,7 +19,7 @@ function s(e, t, n) {
 }
 class l extends Chunk81825.Z {
   static createFromServer(e) {
-    var t, n, r, i, o, a, s, c;
+    var t, n, r, i, a, o, s, c;
     return new l({
       id: e.id,
       trialId: e.trial_id,
@@ -30,8 +30,8 @@ class l extends Chunk81825.Z {
       inboundBodyText: null != (n = e.inbound_body_text) ? n : "",
       inboundHelpCenterLink: null != (r = e.inbound_help_center_link) ? r : "",
       outboundTitle: null != (i = e.outbound_title) ? i : "",
-      outboundRedemptionModalBody: null != (o = e.outbound_redemption_modal_body) ? o : "",
-      outboundTermsAndConditions: null != (a = e.outbound_terms_and_conditions) ? a : "",
+      outboundRedemptionModalBody: null != (a = e.outbound_redemption_modal_body) ? a : "",
+      outboundTermsAndConditions: null != (o = e.outbound_terms_and_conditions) ? o : "",
       outboundRedemptionPageLink: null != (s = e.outbound_redemption_page_link) ? s : "",
       outboundRedemptionUrlFormat: null != (c = e.outbound_redemption_url_format) ? c : "",
       flags: e.flags,
@@ -50,7 +50,7 @@ class l extends Chunk81825.Z {
     return this.promotionType === Chunk397047.$.MARKETING_MOMENT
   }
   hasFlag(e) {
-    return (0, o.yE)(this.flags, e)
+    return (0, a.yE)(this.flags, e)
   }
   isCountryRestricted(e) {
     switch (this.promotionType) {

@@ -75,7 +75,7 @@ function P(e) {
     channelId: P,
     messageId: w,
     roleId: D
-  }), F = i.useRef(null), V = (0, a.Z)(F);
+  }), F = i.useRef(null), V = (0, o.Z)(F);
   i.useEffect(() => {
     null == L || L(null == F ? true : F.current)
   }, [F, L]);
@@ -86,7 +86,7 @@ function P(e) {
       }, Z))
     },
     Y = !M && (0, c.Z)(n.id),
-    W = () => Y ? (0, r.jsx)(o.sNh, {
+    W = () => Y ? (0, r.jsx)(a.sNh, {
       id: "view-profile",
       label: A.intl.string(A.t["+Xp3ho"]),
       action: () => {
@@ -96,7 +96,7 @@ function P(e) {
         }, Z))
       }
     }) : null,
-    K = U ? "div" : o.VqE,
+    K = U ? "div" : a.VqE,
     z = (0, u.Dt)(),
     q = f.ZP.useName(N, P, n);
   return (0, r.jsx)(l.Gt, {
@@ -110,8 +110,8 @@ function P(e) {
       children: (0, r.jsxs)(K, {
         ref: F,
         "aria-labelledby": z,
-        children: [(0, r.jsx)(o.nn4, {
-          children: (0, r.jsx)(o.H, {
+        children: [(0, r.jsx)(a.nn4, {
+          children: (0, r.jsx)(a.H, {
             id: z,
             children: A.intl.format(A.t.KRe1Fh, {
               name: q
@@ -141,7 +141,7 @@ function P(e) {
               themeType: S.l.POPOUT,
               onOpenProfile: Y ? H : true
             })]
-          }), (0, r.jsxs)(o.Ttm, {
+          }), (0, r.jsxs)(a.Ttm, {
             fade: true,
             className: C.body,
             children: [(0, r.jsx)(v.Z, {

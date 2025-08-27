@@ -40,20 +40,20 @@ module.exports = {
     return s(e, c, t)
   },
   processText: function(e, t, n) {
-    return e.reduce(function(e, i, o) {
+    return e.reduce(function(e, i, a) {
       i = f(i);
-      var a = l(),
+      var o = l(),
         s = {
-          key: a,
+          key: o,
           type: n,
           text: i,
           characterList: _(p(t, i.length))
         };
-      if (h && 0 !== o) {
-        var c = o - 1;
+      if (h && 0 !== a) {
+        var c = a - 1;
         s = r({}, s, {
           prevSibling: (e[c] = e[c].merge({
-            nextSibling: a
+            nextSibling: o
           })).getKey()
         })
       }

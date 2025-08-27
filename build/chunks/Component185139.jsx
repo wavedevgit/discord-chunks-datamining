@@ -28,7 +28,7 @@ function O(e) {
   let {
     steps: t,
     currentStep: n,
-    body: a,
+    body: o,
     overrideKey: O,
     paymentError: v,
     header: I,
@@ -62,7 +62,7 @@ function O(e) {
     }
   }, [k]);
   let G = t.includes(p.h8.PAYMENT_TYPE) ? p.h8.PAYMENT_TYPE : p.h8.ADD_PAYMENT_STEPS;
-  return (0, r.jsxs)(o.Elements, {
+  return (0, r.jsxs)(a.Elements, {
     options: g.OBo,
     stripe: k,
     children: [I, (0, r.jsxs)("div", {
@@ -104,7 +104,7 @@ function O(e) {
           children: (0, r.jsx)(c.h21, {
             onScroll: D,
             className: s()(b.scroller, x),
-            children: a
+            children: o
           })
         })]
       })]

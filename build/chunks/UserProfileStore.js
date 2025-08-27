@@ -107,13 +107,13 @@ function B(e, t) {
   var n, r;
   let i = N.get(e);
   if (null == i) return;
-  let o = i.get(t);
-  if (null == o) return;
-  let a = o.profileEffect;
-  if ((null == a ? true : a.expiresAt) == null) return;
-  let s = 1e3 * a.expiresAt + h.Cm - Date.now();
+  let a = i.get(t);
+  if (null == a) return;
+  let o = a.profileEffect;
+  if ((null == o ? true : o.expiresAt) == null) return;
+  let s = 1e3 * o.expiresAt + h.Cm - Date.now();
   if (s <= 0) {
-    i.set(t, y(E({}, o), {
+    i.set(t, y(E({}, a), {
       profileEffect: true
     })), null == (r = P.get(e)) || r.delete(t), eu.emitChange();
     return
@@ -219,7 +219,7 @@ function W(e) {
         expiresAt: et.expires_at
       } : true,
       pronouns: null != (k = null == (f = q.user_profile) ? true : f.pronouns) ? k : "",
-      connectedAccounts: null != (Z = q.connected_accounts.filter(e => a.Z.isSupported(e.type))) ? Z : [],
+      connectedAccounts: null != (Z = q.connected_accounts.filter(e => o.Z.isSupported(e.type))) ? Z : [],
       applicationRoleConnections: null != (F = q.application_role_connections) ? F : [],
       premiumSince: J,
       premiumType: q.premium_type,
@@ -241,7 +241,7 @@ function W(e) {
       badges: en,
       widgets: null == (h = q.widgets) ? true : h.map(M)
     }), (null == (b = q.user_profile) || null == (g = b.profile_effect) ? true : g.expires_at) != null) {
-    let e = new o.V7;
+    let e = new a.V7;
     R.set(q.user.id, e), G(q.user.id)
   }
   if (null != q.guild_member_profile) {
@@ -269,7 +269,7 @@ function W(e) {
       e.set(q.guild_member_profile.guild_id, t), N.set(q.user.id, e)
     }
     if ((null == (z = q.guild_member_profile) || null == (W = z.profile_effect) ? true : W.expires_at) != null) {
-      let e = new o.V7,
+      let e = new a.V7,
         t = P.get(q.user.id);
       if (null != t) t.set(q.guild_member_profile.guild_id, e);
       else {
@@ -293,8 +293,8 @@ function z(e) {
     userId: t,
     guildId: n,
     withMutualFriends: r
-  } = e, i = null != n ? n : O, o = v.get(t);
-  if (null != o) o.add(i);
+  } = e, i = null != n ? n : O, a = v.get(t);
+  if (null != a) a.add(i);
   else {
     let e = new Set;
     e.add(i), v.set(t, e)
@@ -307,8 +307,8 @@ function q(e) {
   let {
     userId: r,
     guildId: i,
-    apiError: o,
-    fetchStartedAt: a
+    apiError: a,
+    fetchStartedAt: o
   } = e;
   null == (t = v.get(r)) || t.delete(null != i ? i : O), I.delete(r);
   let s = null != (n = C.get(r)) ? n : {
@@ -328,7 +328,7 @@ function q(e) {
     fetchEndedAt: 0,
     fetchError: true
   };
-  s.fetchStartedAt = a, s.fetchEndedAt = Date.now(), s.fetchError = o, C.set(r, s), (null == o ? true : o.status) === 404 && (D.set(r, 0), w.set(r, L), x.set(r, j))
+  s.fetchStartedAt = o, s.fetchEndedAt = Date.now(), s.fetchError = a, C.set(r, s), (null == a ? true : a.status) === 404 && (D.set(r, 0), w.set(r, L), x.set(r, j))
 }
 
 function X(e) {
@@ -337,7 +337,7 @@ function X(e) {
     accent_color: n,
     banner: r,
     bio: i,
-    pronouns: a,
+    pronouns: o,
     popout_animation_particle_type: s,
     theme_colors: l,
     profile_effect: c
@@ -347,7 +347,7 @@ function X(e) {
       accentColor: n,
       banner: r,
       bio: i,
-      pronouns: a,
+      pronouns: o,
       popoutAnimationParticleType: s,
       themeColors: l,
       profileEffect: null != c ? {
@@ -356,7 +356,7 @@ function X(e) {
         expiresAt: c.expires_at
       } : true
     })), (null == c ? true : c.expires_at) != null) {
-    let e = new o.V7;
+    let e = new a.V7;
     R.set(t, e), G(t)
   }
 }
@@ -367,7 +367,7 @@ function Q(e) {
     guild_id: n,
     accent_color: r,
     banner: i,
-    bio: a,
+    bio: o,
     pronouns: s,
     popout_animation_particle_type: l,
     theme_colors: c,
@@ -379,7 +379,7 @@ function Q(e) {
   if (d.set(n, y(E({}, f), {
       accentColor: r,
       banner: i,
-      bio: a,
+      bio: o,
       pronouns: s,
       popoutAnimationParticleType: l,
       themeColors: c,
@@ -389,7 +389,7 @@ function Q(e) {
         expiresAt: u.expires_at
       } : true
     })), (null == u ? true : u.expires_at) != null) {
-    let e = new o.V7,
+    let e = new a.V7,
       r = P.get(t);
     if (null != r) r.set(n, e);
     else {
@@ -436,8 +436,8 @@ function en(e) {
   };
   let i = C.get(r);
   if (null != i) {
-    var o;
-    let e = null != (o = i.badges) ? o : [];
+    var a;
+    let e = null != (a = i.badges) ? a : [];
     K(e, U), C.set(r, y(E({}, i), {
       badges: e
     }))
@@ -454,11 +454,11 @@ function ei(e) {
   return [...C.keys()].reduce((e, t) => el(t) || e, false)
 }
 
-function eo(e) {
+function ea(e) {
   return el(e.user.id)
 }
 
-function ea(e) {
+function eo(e) {
   return el(e.relationship.id)
 }
 
@@ -539,11 +539,11 @@ class ec extends Chunk750041.Z {
       GUILD_JOIN: ei,
       GUILD_DELETE: ei,
       INVITE_ACCEPT_SUCCESS: ei,
-      GUILD_MEMBER_ADD: eo,
-      GUILD_MEMBER_REMOVE: eo,
-      RELATIONSHIP_ADD: ea,
-      RELATIONSHIP_REMOVE: ea,
-      RELATIONSHIP_UPDATE: ea,
+      GUILD_MEMBER_ADD: ea,
+      GUILD_MEMBER_REMOVE: ea,
+      RELATIONSHIP_ADD: eo,
+      RELATIONSHIP_REMOVE: eo,
+      RELATIONSHIP_UPDATE: eo,
       LOGOUT: Z
     }), g(this, "loadCache", () => {
       let e = this.readSnapshot(ec.LATEST_SNAPSHOT_VERSION);

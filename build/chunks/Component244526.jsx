@@ -87,8 +87,8 @@ class E extends(r = Chunk647438.PureComponent) {
       paymentSource: t,
       showSubtext: n,
       isForSubscription: r,
-      showPaymentSourceIcon: o,
-      showLabels: a
+      showPaymentSourceIcon: a,
+      showLabels: o
     } = this.props, s = this.renderSubText();
     return (0, Chunk951288.jsxs)(Chunk600164.Z, {
       children: [Chunk647438 && (0, Chunk951288.jsx)(Chunk219929.ZP, {

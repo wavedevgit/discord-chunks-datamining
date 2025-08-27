@@ -22,7 +22,7 @@ function _(e) {
     children: _
   } = e, p = (0, i.e7)([s.default], () => s.default.getId());
   return (0, r.jsxs)(r.Fragment, {
-    children: [_, (0, r.jsx)(o.J2, {
+    children: [_, (0, r.jsx)(a.J2, {
       targetElementRef: t,
       title: d.intl.string(d.t.gxcsSk),
       body: d.intl.string(d.t["8L7E5u"]),
@@ -47,7 +47,7 @@ function _(e) {
         onClick: () => {
           n(u.L.TAKE_ACTION), (0, l.openUserProfileModal)({
             userId: p,
-            sourceAnalyticsLocations: [a.Z.ACCOUNT],
+            sourceAnalyticsLocations: [o.Z.ACCOUNT],
             hideRestrictedProfile: true,
             section: c.oh.WIDGETS
           })

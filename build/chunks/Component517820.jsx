@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk913527 = require("./913527.js"),
   l = require.n(Chunk913527),
   Chunk722770 = require("./722770.js"),
@@ -170,18 +170,18 @@ function H(e) {
   var t;
   let {
     message: n,
-    compact: o
-  } = e, a = C.default.getUser((0, b.Sw)(n)), s = null == (t = S.Z.getBasicChannel(n.channel_id)) ? true : t.guild_id, c = null != s && null != a ? A.ZP.getMember(s, a.id) : null, {
+    compact: a
+  } = e, o = C.default.getUser((0, b.Sw)(n)), s = null == (t = S.Z.getBasicChannel(n.channel_id)) ? true : t.guild_id, c = null != s && null != o ? A.ZP.getMember(s, o.id) : null, {
     avatarSrc: u,
     avatarDecorationSrc: d,
     eventHandlers: f
   } = (0, I.Z)({
-    userId: null == a ? true : a.id,
+    userId: null == o ? true : o.id,
     guildId: s,
     size: 12
   }), h = i.useRef(null);
   return (0, r.jsx)(K, {
-    compact: o,
+    compact: a,
     header: (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)(p.bgT, {
         size: "xs",
@@ -196,14 +196,14 @@ function H(e) {
       className: j.dotSeparatedRow,
       children: [(0, r.jsx)("div", {
         className: j.alertsEnabledSubHeader,
-        children: null != c && null != a && (0, r.jsxs)(i.Fragment, {
+        children: null != c && null != o && (0, r.jsxs)(i.Fragment, {
           children: [(0, r.jsx)(p.Text, {
             variant: "text-xs/medium",
             color: "text-default",
             children: L.intl.string(L.t.qlFrXV)
           }), (0, r.jsx)(T.Z, {
             targetElementRef: h,
-            user: a,
+            user: o,
             guildId: s,
             channelId: n.channel_id,
             messageId: n.id,
@@ -223,7 +223,7 @@ function H(e) {
                 style: {
                   color: null != c.colorString ? c.colorString : _.Z.colors.TEXT_DEFAULT.css
                 },
-                children: [" ", "@", a.username]
+                children: [" ", "@", o.username]
               })]
             }))
           })]
@@ -246,9 +246,9 @@ function Y(e) {
   var t;
   let {
     message: n,
-    compact: o
+    compact: a
   } = e, {
-    joinAttempts: a,
+    joinAttempts: o,
     raidDatetime: s,
     dmsSent: u,
     raidType: h,
@@ -262,7 +262,7 @@ function Y(e) {
     null != e && (0, y.kW)(n.id, e)
   }, [n.id, O]), N = h === d.$.DM_RAID, P = N ? p.Mgn : p.b6m;
   return (0, r.jsx)(K, {
-    compact: o,
+    compact: a,
     header: (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)(P, {
         size: "xs",
@@ -275,11 +275,11 @@ function Y(e) {
     }),
     subheader: (0, r.jsxs)("div", {
       className: j.dotSeparatedRow,
-      children: [null != a && (0, r.jsx)(p.Text, {
+      children: [null != o && (0, r.jsx)(p.Text, {
         variant: "text-xs/medium",
         color: "text-default",
         children: L.intl.format(L.t["4ylIio"], {
-          joinCount: a
+          joinCount: o
         })
       }), null != u && (0, r.jsx)(p.Text, {
         variant: "text-xs/medium",
@@ -335,24 +335,24 @@ function W(e) {
   var t;
   let {
     message: n,
-    compact: o
-  } = e, a = null == (t = S.Z.getBasicChannel(n.channel_id)) ? true : t.guild_id, {
+    compact: a
+  } = e, o = null == (t = S.Z.getBasicChannel(n.channel_id)) ? true : t.guild_id, {
     raidDatetime: s,
     decisionId: c,
     suspiciousMentionActivityUntil: u
   } = (0, b.FL)(n);
 
   function d() {
-    null != a && null != c && (0, O.UE)(a, c, () => {
-      (0, h.c)(u), (0, O.T9)(a)
+    null != o && null != c && (0, O.UE)(o, c, () => {
+      (0, h.c)(u), (0, O.T9)(o)
     })
   }
 
   function f() {
-    null != a && v.Z.open(a, D.pNK.GUILD_AUTOMOD, true, D.KsC.AUTOMOD_MENTION_SPAM)
+    null != o && v.Z.open(o, D.pNK.GUILD_AUTOMOD, true, D.KsC.AUTOMOD_MENTION_SPAM)
   }
   return (0, r.jsx)(K, {
-    compact: o,
+    compact: a,
     header: (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)(p.Mgn, {
         size: "xs",
@@ -406,11 +406,11 @@ function K(e) {
     compact: t,
     header: n,
     subheader: i,
-    content: o,
+    content: a,
     footerButtons: s
   } = e;
   return (0, r.jsxs)("div", {
-    className: a()(j.embedCard, {
+    className: o()(j.embedCard, {
       [j.compact]: t
     }),
     children: [(0, r.jsxs)("div", {
@@ -424,9 +424,9 @@ function K(e) {
           className: j.subheader,
           children: i
         })]
-      }), o]
+      }), a]
     }), null != s && (0, r.jsx)("div", {
-      className: a()(j.centeredRowContainer, j.cardFooter, {
+      className: o()(j.centeredRowContainer, j.cardFooter, {
         [j.compact]: t
       }),
       children: s
@@ -439,7 +439,7 @@ function z(e) {
     id: t,
     compact: n,
     message: i,
-    channel: o
+    channel: a
   } = e, {
     avatarSrc: s,
     eventHandlers: {
@@ -453,7 +453,7 @@ function z(e) {
     onMouseEnter: l,
     onMouseLeave: c,
     children: (0, r.jsx)(w.Z, {
-      className: a()(j.mainContainer, {
+      className: o()(j.mainContainer, {
         [j.compact]: n
       }),
       iconNode: n ? null : (0, r.jsx)(P.S, {
@@ -462,13 +462,13 @@ function z(e) {
       iconContainerClassName: j.iconContainer,
       compact: n,
       children: (0, r.jsxs)("div", {
-        className: a()(j.content, {
+        className: o()(j.content, {
           [j.compact]: n
         }),
         children: [(0, r.jsx)(N.nD, {
           message: i,
           messageClassname: j.spanCorrection,
-          className: a()(j.usernameContainer, j.spanCorrection, {
+          className: o()(j.usernameContainer, j.spanCorrection, {
             [j.compact]: n
           }),
           username: (0, r.jsxs)("div", {

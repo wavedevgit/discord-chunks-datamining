@@ -17,10 +17,10 @@ let u = e => {
     onCardInfoChange: n
   } = e, u = null != t && (null == t.code || (0, s.ly)(t) === s.Rg.CREDIT_CARD_INFORMATION);
   return (0, r.jsxs)(i.Fragment, {
-    children: [u ? (0, r.jsx)(o.kzN, {
+    children: [u ? (0, r.jsx)(a.kzN, {
       className: c.errorBlock,
       children: l.intl.string(l.t["4vnhKS"])
-    }) : null, (0, r.jsx)(a.Z, {
+    }) : null, (0, r.jsx)(o.Z, {
       onCardInfoChange: n,
       error: t
     })]

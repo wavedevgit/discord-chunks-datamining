@@ -104,10 +104,10 @@ function _(e, t, n) {
             return l.t.LG9VAg;
           case s.d4z.GUILD_ANNOUNCEMENT:
             return l.intl.format(l.t.WFwfSE, {
-              articleURL: a.Z.getArticleURL(s.BhN.ANNOUNCEMENT_CHANNELS)
+              articleURL: o.Z.getArticleURL(s.BhN.ANNOUNCEMENT_CHANNELS)
             });
           case s.d4z.GUILD_VOICE:
-            return o.Z.getTextInVoiceSendMessageChannelPermissionText(null == n ? true : n.sendMessagesDisabled);
+            return a.Z.getTextInVoiceSendMessageChannelPermissionText(null == n ? true : n.sendMessagesDisabled);
           default:
             return l.t.WQ6zpa
         }
@@ -161,7 +161,7 @@ function _(e, t, n) {
             return l.t["5R9nYm"];
           case s.d4z.GUILD_ANNOUNCEMENT:
             return l.intl.format(l.t.XRxOo6, {
-              articleURL: a.Z.getArticleURL(s.BhN.ANNOUNCEMENT_CHANNELS)
+              articleURL: o.Z.getArticleURL(s.BhN.ANNOUNCEMENT_CHANNELS)
             });
           default:
             return l.t["SeA+Gx"]
@@ -181,7 +181,7 @@ function _(e, t, n) {
           case s.d4z.GUILD_CATEGORY:
             return l.t["cJRv/v"];
           case s.d4z.GUILD_VOICE:
-            return o.Z.getTextInVoiceReadMessageHistoryChannelPermissionText(null == n ? true : n.readMessageHistoryDisabled);
+            return a.Z.getTextInVoiceReadMessageHistoryChannelPermissionText(null == n ? true : n.readMessageHistoryDisabled);
           case s.d4z.GUILD_FORUM:
           case s.d4z.GUILD_MEDIA:
             return l.t.RqCc7u;
@@ -313,17 +313,17 @@ function _(e, t, n) {
         switch (c) {
           case s.d4z.GUILD_CATEGORY:
             return l.intl.format(l.t["0kBp//"], {
-              helpCenterArticle: a.Z.getArticleURL(s.BhN.SOUNDBOARD)
+              helpCenterArticle: o.Z.getArticleURL(s.BhN.SOUNDBOARD)
             });
           case s.d4z.GUILD_TEXT:
           case s.d4z.GUILD_FORUM:
           case s.d4z.GUILD_MEDIA:
             return l.intl.format(l.t["6eYqU1"], {
-              helpCenterArticle: a.Z.getArticleURL(s.BhN.SOUNDBOARD)
+              helpCenterArticle: o.Z.getArticleURL(s.BhN.SOUNDBOARD)
             });
           default:
             return l.intl.format(l.t.GEi6Ym, {
-              helpCenterArticle: a.Z.getArticleURL(s.BhN.SOUNDBOARD)
+              helpCenterArticle: o.Z.getArticleURL(s.BhN.SOUNDBOARD)
             })
         }
       })(),

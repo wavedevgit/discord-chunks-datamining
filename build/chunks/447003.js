@@ -15,7 +15,7 @@ function s(e) {
     type: t
   } = e;
   if (null == e.guild_id || !i.zS.has(t)) returnfalse;
-  if (e.isGuildVocal() && !o.Uu(a.Pl.CONNECT, e)) returntrue;
+  if (e.isGuildVocal() && !a.Uu(o.Pl.CONNECT, e)) returntrue;
   let n = e.permissionOverwrites[e.guild_id];
-  return null != n && r.e$(n.deny, a.Pl.VIEW_CHANNEL)
+  return null != n && r.e$(n.deny, o.Pl.VIEW_CHANNEL)
 }

@@ -24,7 +24,7 @@ function i(e) {
   return e
 }
 
-function o(e, t) {
+function a(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -35,8 +35,8 @@ function o(e, t) {
   return n
 }
 
-function a(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : o(Object(t)).forEach(function(n) {
+function o(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : a(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -108,7 +108,7 @@ let u = {
       [9001, 1e4]
     ]
   },
-  d = Object.keys(u).reduce((e, t) => a(i({}, e), {
+  d = Object.keys(u).reduce((e, t) => o(i({}, e), {
     [t]: u[t].map(e => {
       let [t] = e;
       return t
@@ -120,7 +120,7 @@ let u = {
     3: [],
     4: []
   }),
-  f = Object.keys(u).reduce((e, t) => a(i({}, e), {
+  f = Object.keys(u).reduce((e, t) => o(i({}, e), {
     [t]: u[t].map(e => {
       let [t, n] = e;
       return n

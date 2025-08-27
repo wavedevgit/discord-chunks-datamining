@@ -86,23 +86,23 @@ let m = h("en-US"),
         children: e
       }, t),
       $link: (e, t, r) => {
-        let [o] = r, {
-          Anchor: a
+        let [a] = r, {
+          Anchor: o
         } = n(756715), l = {};
-        switch (typeof o) {
+        switch (typeof a) {
           case "string":
-            l.href = s().sanitizeUrl(o);
+            l.href = s().sanitizeUrl(a);
             break;
           case "function":
           default:
-            l.onClick = o;
+            l.onClick = a;
             break;
           case "object":
             var c;
-            if (null == o) break;
-            l.onClick = null != (c = o.onClick) ? c : o, l.onContextMenu = o.onContextMenu
+            if (null == a) break;
+            l.onClick = null != (c = a.onClick) ? c : a, l.onContextMenu = a.onContextMenu
         }
-        return (0, i.createElement)(a, p(f({}, l), {
+        return (0, i.createElement)(o, p(f({}, l), {
           key: t
         }), e)
       }

@@ -27,13 +27,13 @@ let m = (0, Chunk879690.U)(e => ({
     let {
       entry: t,
       isFirstApplicationOccurrence: n,
-      targetElementRef: o
+      targetElementRef: a
     } = e, {
       data: g
-    } = (0, u.IX)(t.extra.application_id), E = (0, c.q)(g, "CloudPlayPopover"), b = (0, d.Nj)(a.z.CLOUD_PLAY_NEW_BADGE), y = E && !b && n, {
+    } = (0, u.IX)(t.extra.application_id), E = (0, c.q)(g, "CloudPlayPopover"), b = (0, d.Nj)(o.z.CLOUD_PLAY_NEW_BADGE), y = E && !b && n, {
       activeEntryId: O,
       setActiveEntryId: v
-    } = m(), I = O === t.id, T = y && I ? [a.z.CLOUD_PLAY_POPOVER] : [], [S, A] = (0, f.US)(T), C = S === a.z.CLOUD_PLAY_POPOVER, N = (0, c.Z)({
+    } = m(), I = O === t.id, T = y && I ? [o.z.CLOUD_PLAY_POPOVER] : [], [S, A] = (0, f.US)(T), C = S === o.z.CLOUD_PLAY_POPOVER, N = (0, c.Z)({
       application: g,
       location: "CloudPlayDismissibleContentPopover"
     });
@@ -52,7 +52,7 @@ let m = (0, Chunk879690.U)(e => ({
     return (0, r.jsx)(s.J2, {
       title: p.intl.string(p.t["+WNDtb"]),
       body: "",
-      targetElementRef: o,
+      targetElementRef: a,
       shouldShow: C,
       position: "left",
       caretConfig: {

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk503438 = require("./503438.js"),
   Chunk100527 = require("./100527.js"),
@@ -74,44 +74,44 @@ function x(e) {
   let {
     user: t,
     currentUser: n,
-    activity: o,
+    activity: a,
     className: R,
     onClose: w
   } = e, x = (0, p.Dt)(), L = (0, p.Dt)(), {
     themeType: j
   } = (0, b.z)(), M = (0, _.Z)({
-    activity: o,
+    activity: a,
     user: t
-  }), k = (0, E.Z)(o), U = null != k.text && "" !== k.text, {
+  }), k = (0, E.Z)(a), U = null != k.text && "" !== k.text, {
     largeImage: G
-  } = (0, d.FO)(o), {
+  } = (0, d.FO)(a), {
     analyticsLocations: B
   } = (0, u.ZP)(c.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), Z = (0, m.Z)({
     display: "live",
     user: t,
-    activity: o,
+    activity: a,
     entry: M,
     analyticsLocations: B
   }), F = (0, g.Z)({
     userId: t.id,
     onAction: Z
   });
-  if (!(0, l.Z)(o)) return null;
+  if (!(0, l.Z)(a)) return null;
   let V = () => {
       var e, n;
-      let l = null != (n = null == (e = o.state) ? true : e.split(";")) ? n : [];
-      return 0 === l.length ? null : null == o.sync_id ? (0, r.jsx)(I.Z, {
+      let l = null != (n = null == (e = a.state) ? true : e.split(";")) ? n : [];
+      return 0 === l.length ? null : null == a.sync_id ? (0, r.jsx)(I.Z, {
         variant: "text-xs/normal",
         text: l.join(", ")
       }) : (0, r.jsx)(I.Z, {
         variant: "text-xs/normal",
         text: l.map((e, n) => (0, r.jsxs)(i.Fragment, {
           children: [(0, r.jsx)(s.P3F, {
-            className: a()(N.clickableText, N.inline),
+            className: o()(N.clickableText, N.inline),
             onClick: e => {
               e.stopPropagation(), Z({
                 action: "OPEN_SPOTIFY_ARTIST"
-              }), (0, h.d$)(o, t.id, n)
+              }), (0, h.d$)(a, t.id, n)
             },
             children: e
           }), n < l.length - 1 ? ", " : ""]
@@ -121,7 +121,7 @@ function x(e) {
     H = () => {
       let {
         timestamps: e
-      } = o;
+      } = a;
       if (null == e) return null;
       let {
         start: t,
@@ -136,7 +136,7 @@ function x(e) {
       className: N.actions,
       children: (0, r.jsx)(S.Z, {
         user: t,
-        activity: o,
+        activity: a,
         onAction: Z
       })
     });
@@ -144,7 +144,7 @@ function x(e) {
     value: B,
     children: (0, r.jsxs)(O.Z, {
       ref: F,
-      className: a()(N.card, R),
+      className: o()(N.card, R),
       onAction: Z,
       onClose: w,
       "aria-labelledby": U ? "".concat(L, " ").concat(x) : x,
@@ -154,7 +154,7 @@ function x(e) {
         contextMenu: (0, r.jsx)(A.Z, {
           display: "live",
           user: t,
-          activity: o,
+          activity: a,
           entry: M,
           onClose: w
         })
@@ -169,24 +169,24 @@ function x(e) {
             onClick: e => {
               e.stopPropagation(), Z({
                 action: "OPEN_SPOTIFY_ALBUM"
-              }), (0, h.Z5)(o, t.id)
+              }), (0, h.Z5)(a, t.id)
             }
           }), (0, r.jsxs)("div", {
             className: N.details,
             children: [(0, r.jsxs)("div", {
               children: [(0, r.jsx)(I.f, {
                 variant: "heading-sm/semibold",
-                text: o.details,
+                text: a.details,
                 onClick: () => {
                   Z({
                     action: "OPEN_SPOTIFY_TRACK"
-                  }), (0, h.aG)(o)
+                  }), (0, h.aG)(a)
                 },
                 id: x
               }), V()]
             }), (0, r.jsx)(y.Z, {
               user: t,
-              activity: o,
+              activity: a,
               className: N.badges
             }), H(), j === C.l.MODAL_V2 && Y()]
           }), j === C.l.MODAL && Y()]

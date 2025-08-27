@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
@@ -90,14 +90,14 @@ function U(e) {
     otherActivities: n,
     voiceActivityChannel: r
   } = e, i = [], {
-    descriptiveTextEnabled: o
+    descriptiveTextEnabled: a
   } = (0, O.f)({
     location: "StackedActivityStatus"
   }), {
-    enableTopNavButton: a
+    enableTopNavButton: o
   } = (0, m.Cq)({
     location: "StackedActivityStatus"
-  }), s = (0, _.ZP)(r), l = o || a;
+  }), s = (0, _.ZP)(r), l = a || o;
   return null != t && i.push(M(t)), n.forEach(e => {
     let {
       tooltip: t
@@ -111,11 +111,11 @@ function G(e) {
     textVariant: t,
     className: n,
     hasCustomStatusText: i,
-    totalActivityCount: o
-  } = e, s = o - 1;
+    totalActivityCount: a
+  } = e, s = a - 1;
   return (0, r.jsxs)(l.xv, {
     variant: t,
-    className: a()(n, w.activityCounter),
+    className: o()(n, w.activityCounter),
     color: i ? "status-positive" : "none",
     children: ["+", s]
   })
@@ -128,7 +128,7 @@ function B(e) {
   } = e;
   return (0, r.jsx)(l.xv, {
     variant: t,
-    className: a()(w.dot, n),
+    className: o()(w.dot, n),
     children: N.l
   })
 }
@@ -137,7 +137,7 @@ function Z(e) {
   let {
     user: t,
     activities: n,
-    applicationStream: o,
+    applicationStream: a,
     voiceChannel: l,
     textClassName: _,
     iconClassName: m,
@@ -148,7 +148,7 @@ function Z(e) {
     hideTooltip: L = false
   } = e;
   (0, f.Z)(null == t ? true : t.id);
-  let M = (null == o ? true : o.discoverable) !== false ? o : null,
+  let M = (null == a ? true : a.discoverable) !== false ? a : null,
     k = (0, g.Cf)(M),
     Z = i.useMemo(() => {
       var e, t;
@@ -253,21 +253,21 @@ function Z(e) {
       hasCustomStatusText: q,
       totalActivityCount: J
     }),
-    eo = () => 0 === J ? null : $ && !W ? L ? (0, r.jsxs)("div", {
-      className: a()(w.activityContainer, ee && w.iconOnly),
+    ea = () => 0 === J ? null : $ && !W ? L ? (0, r.jsxs)("div", {
+      className: o()(w.activityContainer, ee && w.iconOnly),
       children: [en(), ei()]
     }) : (0, r.jsx)(u.ua7, {
-      tooltipContentClassName: a()(w.container, w.activitiesTooltip, w.hasMultipleActivities),
+      tooltipContentClassName: o()(w.container, w.activitiesTooltip, w.hasMultipleActivities),
       delay: N.X,
       text: er(),
       "aria-label": et,
       children: e => (0, r.jsxs)("div", j(x({
-        className: a()(w.activityContainer, ee && w.iconOnly)
+        className: o()(w.activityContainer, ee && w.iconOnly)
       }, e), {
         children: [en(true), ei()]
       }))
     }) : en(),
-    ea = a()(w.container, {
+    eo = o()(w.container, {
       [w.textXs]: "xs" === O,
       [w.textSm]: "sm" === O
     }),
@@ -279,13 +279,13 @@ function Z(e) {
       hideTooltip: L,
       textClassName: _,
       iconClassName: m,
-      tooltipClassName: ea,
+      tooltipClassName: eo,
       voiceChannel: l,
       hangStatus: V
     });
   return (0, r.jsxs)("div", {
-    className: ea,
-    children: [eo(), null != Z && J > 0 && (0, r.jsx)(B, {
+    className: eo,
+    children: [ea(), null != Z && J > 0 && (0, r.jsx)(B, {
       textVariant: "text-".concat(O, "/normal"),
       className: _
     }), es(), P && (0, r.jsx)(I.Z, {})]

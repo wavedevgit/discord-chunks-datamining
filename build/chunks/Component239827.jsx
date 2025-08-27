@@ -53,8 +53,8 @@ function f(e, t) {
   if (null == e) return {};
   var n, r, i = _(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -62,8 +62,8 @@ function f(e, t) {
 function _(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let p = Chunk647438.forwardRef(function(e, t) {
@@ -76,10 +76,10 @@ let p = Chunk647438.forwardRef(function(e, t) {
   } = e, p = f(e, ["currentPageIndex", "numPages", "onChangePage", "children", "showPageCount"]);
   let h = n <= 0,
     m = n >= i - 1,
-    g = _ ? a.intl.format(a.t.MtpIws, {
+    g = _ ? o.intl.format(o.t.MtpIws, {
       currentPage: n + 1,
       numPages: i
-    }) : a.intl.format(a.t.bKI77e, {
+    }) : o.intl.format(o.t.bKI77e, {
       currentPage: n + 1
     });
   return (0, r.jsxs)("div", d(c({
@@ -89,21 +89,21 @@ let p = Chunk647438.forwardRef(function(e, t) {
       className: s.pageActions,
       children: (0, r.jsxs)("div", {
         className: s.buttons,
-        children: [(0, r.jsx)(o.hU, {
+        children: [(0, r.jsx)(a.hU, {
           variant: "icon-only",
-          icon: o.V7D,
+          icon: a.V7D,
           disabled: h,
           onClick: () => l(n - 1),
-          "aria-label": a.intl.string(a.t.vgfxaG)
-        }), (0, r.jsx)(o.Text, {
+          "aria-label": o.intl.string(o.t.vgfxaG)
+        }), (0, r.jsx)(a.Text, {
           variant: "text-sm/medium",
           children: g
-        }), (0, r.jsx)(o.hU, {
+        }), (0, r.jsx)(a.hU, {
           variant: "icon-only",
-          icon: o.Fbu,
+          icon: a.Fbu,
           disabled: m,
           onClick: () => l(n + 1),
-          "aria-label": a.intl.string(a.t.XiOHRU)
+          "aria-label": o.intl.string(o.t.XiOHRU)
         })]
       })
     })]

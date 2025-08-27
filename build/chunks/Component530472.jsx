@@ -22,7 +22,7 @@ function c(e) {
     f = null == (t = c.interactionMetadata) ? true : t.ephemerality_reason,
     _ = () => u(c, true);
   if (null != f) {
-    let e = (0, o.i)(f);
+    let e = (0, a.i)(f);
     n = (0, r.jsx)("div", {
       className: l.userAppsBetaContent,
       children: s.intl.format(s.t.wx1tLS, {
@@ -30,7 +30,7 @@ function c(e) {
         reason: e
       })
     })
-  } else n = c.type === a.uaV.STAGE_RAISE_HAND ? s.intl.format(s.t["qDAX+/"], {
+  } else n = c.type === o.uaV.STAGE_RAISE_HAND ? s.intl.format(s.t["qDAX+/"], {
     handleDelete: _
   }) : s.intl.format(s.t.uX3ecH, {
     count: 1,

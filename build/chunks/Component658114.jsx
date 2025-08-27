@@ -16,8 +16,8 @@ function l(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: s.warningContainer,
-    children: [(0, r.jsx)(a.aNP, {
-      color: o.Z.colors.ICON_PRIMARY
+    children: [(0, r.jsx)(o.aNP, {
+      color: a.Z.colors.ICON_PRIMARY
     }), (0, r.jsx)(i.xv, {
       variant: "text-sm/medium",
       color: "text-feedback-warning",

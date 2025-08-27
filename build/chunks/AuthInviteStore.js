@@ -23,7 +23,7 @@ function c(e) {
     invite: t
   } = e, n = t.guild;
   if (null == n) returnfalse;
-  l[n.id] = (0, a.Qs)(n)
+  l[n.id] = (0, o.Qs)(n)
 }
 class u extends(r = Chunk442837.ZP.Store) {
   getGuild(e) {

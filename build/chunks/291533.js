@@ -16,13 +16,13 @@ let d = 18e4;
 
 function f(e) {
   let t = (0, c.A2)(e),
-    n = (0, r.e7)([a.Z], () => a.Z.isOpen()),
+    n = (0, r.e7)([o.Z], () => o.Z.isOpen()),
     f = (0, r.e7)([l.Z], () => l.Z.hasLayers()),
     _ = (0, s.Ws)({
       location: u.dr.QUESTS_BAR
     }),
     p = t && !n && !f && _;
-  return (0, o.bf)(p ? i.z.GUILD_TAG_AVAILABLE_COACHMARK : null, {
+  return (0, a.bf)(p ? i.z.GUILD_TAG_AVAILABLE_COACHMARK : null, {
     cooldownDurationMs: d
   })
 }

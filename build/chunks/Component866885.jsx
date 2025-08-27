@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk570140 = require("./570140.js"),
@@ -67,8 +67,8 @@ function Z(e, t) {
   if (null == e) return {};
   var n, r, i = F(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -76,13 +76,13 @@ function Z(e, t) {
 function F(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
 function V(e) {
-  var t, n, o;
+  var t, n, a;
   let {
     channel: _,
     isLoading: p
@@ -123,33 +123,33 @@ function V(e) {
     null == K && (0, f.Ou)()
   }
 
-  function eo() {
+  function ea() {
     G(!C)
   }
 
-  function ea(e) {
+  function eo(e) {
     var t;
     let {
       onActive: n,
       onForceIdle: i,
-      idle: o,
-      isActivityInTextChannel: a,
+      idle: a,
+      isActivityInTextChannel: o,
       users: s
     } = e;
-    return en && null != B && ((null == z ? true : z.type) === j.fO.ACTIVITY || a) ? (null == (t = B.config) ? true : t.useInteractivePIP) ? (0, r.jsx)(w.of, {
+    return en && null != B && ((null == z ? true : z.type) === j.fO.ACTIVITY || o) ? (null == (t = B.config) ? true : t.useInteractivePIP) ? (0, r.jsx)(w.of, {
       onJumpToChannel: ei,
       applicationId: B.applicationId,
       channel: _,
-      showControls: !o,
+      showControls: !a,
       onMouseDown: n,
       onMouseMove: n,
       onMouseLeave: i,
-      onToggleHeight: eo,
+      onToggleHeight: ea,
       isExpanded: C,
-      hideExpandedButton: a,
+      hideExpandedButton: o,
       embeddedActivity: B
-    }) : a ? (0, r.jsx)(w.q5, {
-      idle: o,
+    }) : o ? (0, r.jsx)(w.q5, {
+      idle: a,
       onMouseMove: n,
       onMouseDown: n,
       onMouseLeave: i,
@@ -168,7 +168,7 @@ function V(e) {
         className: M.clickShield,
         onDoubleClick: ei
       }), (0, r.jsx)(w.YB, {
-        idle: o,
+        idle: a,
         onMouseMove: n,
         onMouseDown: n,
         onMouseLeave: i,
@@ -192,7 +192,7 @@ function V(e) {
     }, [null == B ? true : B.applicationId, en]), null == B || null == V || (0, R.Z)(null == _ ? true : _.id) && null == z || null == F) return null;
   let es = Array.from(B.userIds).map(e => I.default.getUser(e)).filter(e => null != e),
     el = {
-      instance_id: null != (o = null != (n = B.compositeInstanceId) ? n : B.launchId) ? o : "",
+      instance_id: null != (a = null != (n = B.compositeInstanceId) ? n : B.launchId) ? a : "",
       location_id: null == (t = B.location) ? true : t.id,
       launch_id: B.launchId,
       referrer_id: B.referrerId,
@@ -204,11 +204,11 @@ function V(e) {
       var t, n;
       let {
         idle: i,
-        onActive: o,
+        onActive: a,
         onForceIdle: s
       } = e;
       return (0, r.jsxs)(b.Z, {
-        className: a()(M.root, {
+        className: o()(M.root, {
           [M.pipMode]: en,
           [U.elevationHigh]: en,
           [k.idle]: i && !(null == (t = B.config) ? true : t.useInteractivePIP),
@@ -220,15 +220,15 @@ function V(e) {
         noBorder: !en,
         children: [(0, r.jsx)("div", {
           className: "theme-dark",
-          children: ea({
-            onActive: o,
+          children: eo({
+            onActive: a,
             onForceIdle: s,
             idle: i,
             isActivityInTextChannel: ee,
             users: es
           })
         }), p ? (0, r.jsx)(l.$jN, {
-          className: a()(M.iframe, {
+          className: o()(M.iframe, {
             [M.pipModeShort]: en && !C,
             [M.pipModeTall]: en && C
           })
@@ -237,7 +237,7 @@ function V(e) {
           referrerPolicy: D.um.has(B.applicationId) ? "no-referrer" : "origin",
           url: B.url,
           queryParams: el,
-          className: a()(M.iframe, {
+          className: o()(M.iframe, {
             [M.pipModeShort]: en && !C,
             [M.pipModeTall]: en && C,
             [M.pipNonInteractive]: en && !(null == (n = B.config) ? true : n.useInteractivePIP)
@@ -261,13 +261,13 @@ let H = e => {
     connectedEmbeddedActivity: i
   });
   let {
-    analyticsLocations: o
-  } = (0, p.ZP)(_.Z.ACTIVITY_PIP), a = null == i;
+    analyticsLocations: a
+  } = (0, p.ZP)(_.Z.ACTIVITY_PIP), o = null == i;
   return (0, r.jsx)(p.Gt, {
-    value: o,
+    value: a,
     children: (0, r.jsx)(V, B({
       channel: t,
-      isLoading: a
+      isLoading: o
     }, n))
   })
 }

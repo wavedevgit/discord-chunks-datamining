@@ -96,7 +96,7 @@ function Y(e) {
     tryItOutBanner: Q,
     tryItOutProfileEffectId: J,
     tryItOutAvatarDecoration: $
-  } = (0, o.cj)([S.Z], () => {
+  } = (0, a.cj)([S.Z], () => {
     let e = S.Z.getAllPending(),
       t = S.Z.getErrors();
     return H(F({}, e, S.Z.getAllTryItOut()), {
@@ -109,8 +109,8 @@ function Y(e) {
   (0, T.Z)(er, U.Y_.TRY_IT_OUT);
   let {
     analyticsLocations: ei,
-    newestAnalyticsLocation: eo,
-    sourceAnalyticsLocations: ea
+    newestAnalyticsLocation: ea,
+    sourceAnalyticsLocations: eo
   } = (0, c.ZP)(l.Z.USER_SETTINGS_TRY_OUT_PREMIUM), es = e => {
     if (e) {
       if ((0, s.I5)(X), (0, I.z5)(q), (0, I.ho)(Q), null != $) {
@@ -128,9 +128,9 @@ function Y(e) {
       location: {
         page: M.ZY5.USER_SETTINGS
       },
-      location_stack: ea
+      location_stack: eo
     })
-  }, [ea, Z, V]);
+  }, [eo, Z, V]);
   let el = (null == (n = (0, m.N)()) || null == (t = n.subscription_trial) ? true : t.sku_id) === k.Si.TIER_2,
     ec = (0, h.Ng)(),
     eu = (0, h.Wp)(ec, k.Si.TIER_2),
@@ -148,7 +148,7 @@ function Y(e) {
       children: [(0, r.jsx)(N.Z, {
         layoutClassName: B.tryItOutLayout,
         profilePreviewTitle: (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(a.SrA, {
+          children: [(0, r.jsx)(o.SrA, {
             size: "md",
             color: "currentColor",
             className: B.premiumIcon
@@ -165,10 +165,10 @@ function Y(e) {
         children: (0, r.jsxs)("div", {
           className: B.editor,
           children: [(0, r.jsxs)("div", {
-            children: [(0, r.jsx)(a.X6q, {
+            children: [(0, r.jsx)(o.X6q, {
               variant: "heading-xl/extrabold",
               children: G.intl.string(G.t["2zGdAQ"])
-            }), (0, r.jsx)(a.Text, {
+            }), (0, r.jsx)(o.Text, {
               className: B.description,
               variant: "text-sm/normal",
               children: G.intl.string(G.t.xeEC29)
@@ -208,7 +208,7 @@ function Y(e) {
             initialSelectedEffectId: ee,
             user: Z,
             sectionTitle: G.intl.string(G.t.wR5wOj)
-          }, "effect"), !el && (0, r.jsx)(a.Text, {
+          }, "effect"), !el && (0, r.jsx)(o.Text, {
             variant: "text-sm/normal",
             children: G.intl.string(G.t["smo74+"])
           })]
@@ -220,7 +220,7 @@ function Y(e) {
         text: G.intl.format(G.t.TmfgIy, {
           onClick: () => {
             (0, O.y)({
-              analyticsSource: eo,
+              analyticsSource: ea,
               onSubscribeFinish: es
             })
           }

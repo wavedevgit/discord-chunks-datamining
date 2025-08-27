@@ -91,19 +91,19 @@ function R(e) {
     components: (0, s.uZ)(null != (t = e.components) ? t : [], {
       includeEmojiSrc: false
     }),
-    codedLinks: e.type === O.uaV.THREAD_CREATED ? [] : (0, a.ZP)(e.content)
+    codedLinks: e.type === O.uaV.THREAD_CREATED ? [] : (0, o.ZP)(e.content)
   }))
 }
 
 function P(e) {
-  var t, n, r, i, a, s, c, f;
+  var t, n, r, i, o, s, c, f;
   let h, m, {
       reactions: y,
       interactionData: v
     } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
     T = R(e),
     A = null != (i = null == (t = e.mentions) ? true : t.map(e => e.id)) ? i : [],
-    P = null != (a = e.mention_roles) ? a : [],
+    P = null != (o = e.mention_roles) ? o : [],
     w = null != (s = e.mention_channels) ? s : [],
     D = null != (c = e.mention_games) ? c : [],
     x = e.message_reference,
@@ -114,7 +114,7 @@ function P(e) {
     Z = null != e.interaction ? u.Z.createFromServer(e.interaction) : null,
     F = e.type === O.uaV.THREAD_STARTER_MESSAGE ? null == (r = e.referenced_message) || null == (n = r.author) ? true : n.id : true,
     V = e.content;
-  return new d.ZP((e.type === O.uaV.PREMIUM_REFERRAL ? (h = E.default.isProbablyAValidSnowflake(e.content) ? e.content : true, V = "") : e.type === O.uaV.CHAT_WALLPAPER_SET && (m = (0, o.Z)(e.content), V = ""), N(e)) ? S(I({}, U), {
+  return new d.ZP((e.type === O.uaV.PREMIUM_REFERRAL ? (h = E.default.isProbablyAValidSnowflake(e.content) ? e.content : true, V = "") : e.type === O.uaV.CHAT_WALLPAPER_SET && (m = (0, a.Z)(e.content), V = ""), N(e)) ? S(I({}, U), {
     id: e.id,
     channel_id: e.channel_id,
     type: O.uaV.DEFAULT,

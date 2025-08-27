@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk257465 = require("./257465.jsx"),
   Chunk369585 = require("./369585.jsx"),
   Chunk103866 = require("./103866.jsx"),
@@ -63,8 +63,8 @@ function y(e, t) {
   if (null == e) return {};
   var n, r, i = O(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -72,8 +72,8 @@ function y(e, t) {
 function O(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -88,7 +88,7 @@ function v(e) {
   }), (0, r.jsx)(d.f6W, {
     theme: _.BRd.DARK,
     children: e => (0, r.jsx)("div", {
-      className: o()(e, h.oauth2PageWrapper, i),
+      className: a()(e, h.oauth2PageWrapper, i),
       children: true === n ? t : (0, r.jsx)("div", {
         className: h.oauth2PageContent,
         children: t
@@ -101,24 +101,24 @@ function I(e) {
   var t, n, {
       hideHeader: i
     } = e,
-    o = y(e, ["hideHeader"]);
-  return (0, r.jsxs)(a.I, b(g({}, o), {
+    a = y(e, ["hideHeader"]);
+  return (0, r.jsxs)(o.I, b(g({}, a), {
     onClose: () => {
       var e;
-      return Promise.resolve(null == (e = o.onClose) ? true : e.call(o))
+      return Promise.resolve(null == (e = a.onClose) ? true : e.call(a))
     },
     children: [i ? null : (0, r.jsx)(u.x, {
-      title: null != (t = o.title) ? t : "",
-      subtitle: o.subtitle
+      title: null != (t = a.title) ? t : "",
+      subtitle: a.subtitle
     }), (0, r.jsx)(l.f, {
-      controls: o.input,
-      children: o.children
+      controls: a.input,
+      children: a.children
     }), (0, r.jsx)(c.m, {
-      children: o.preview
+      children: a.preview
     }), (0, r.jsx)(s.G, {
-      leading: o.actionBarInput,
-      actions: null != (n = o.actions) ? n : [],
-      actionsFullWidth: null == o.actionBarInput
+      leading: a.actionBarInput,
+      actions: null != (n = a.actions) ? n : [],
+      actionsFullWidth: null == a.actionBarInput
     })]
   }))
 }

@@ -55,8 +55,8 @@ function p(e, t) {
   if (null == e) return {};
   var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -64,8 +64,8 @@ function p(e, t) {
 function h(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -75,7 +75,7 @@ function m(e) {
     layout: n,
     isDisabled: i
   } = e, u = p(e, ["label", "layout", "isDisabled"]);
-  return (0, r.jsx)(o.Vp, _(d({}, u), {
+  return (0, r.jsx)(a.Vp, _(d({}, u), {
     className: c.tag,
     textValue: t,
     isDisabled: i,
@@ -87,7 +87,7 @@ function m(e) {
         children: [(0, r.jsx)(s.x, {
           variant: "inline" === n ? "text-sm/normal" : "text-md/normal",
           children: t
-        }), i && (0, r.jsx)(a.z, {
+        }), i && (0, r.jsx)(o.z, {
           slot: "remove",
           children: (0, r.jsx)(l.Dio, {
             size: "inline" === n ? "xs" : "sm",
@@ -103,22 +103,22 @@ function g(e) {
   let {
     label: t,
     disabledKeys: n,
-    selectionMode: a = "none",
+    selectionMode: o = "none",
     layout: s = "default",
     items: l,
     onRemove: u,
     children: d
   } = e, [f, _] = i.useState(() => new Set);
-  return (0, r.jsxs)(o.QS, {
+  return (0, r.jsxs)(a.QS, {
     "aria-label": t,
     "data-layout": s,
     className: c.tagGroup,
-    selectionMode: a,
+    selectionMode: o,
     selectedKeys: f,
     onSelectionChange: _,
     disabledKeys: n,
     onRemove: u,
-    children: [(0, r.jsx)(o.PS, {
+    children: [(0, r.jsx)(a.PS, {
       className: c.tagList,
       children: l.map(e => (0, r.jsx)(m, {
         id: e.id,

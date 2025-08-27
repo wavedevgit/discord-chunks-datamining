@@ -49,7 +49,7 @@ function u(e, t) {
 let d = {};
 
 function f(e) {
-  let t = a.Z.getChannel(e);
+  let t = o.Z.getChannel(e);
   return null != t && !!t.isForumLikeChannel()
 }
 

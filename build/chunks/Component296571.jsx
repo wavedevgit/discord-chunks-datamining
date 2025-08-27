@@ -23,9 +23,9 @@ function d(e) {
     onClickThread: _,
     onClickViewThreads: p,
     onContextMenuThread: h
-  } = e, m = (0, s.ZP)(n), g = f(m), E = (0, i.e7)([a.Z], () => {
+  } = e, m = (0, s.ZP)(n), g = f(m), E = (0, i.e7)([o.Z], () => {
     var e;
-    return a.Z.getChannel(null == (e = n.messageReference) ? true : e.channel_id)
+    return o.Z.getChannel(null == (e = n.messageReference) ? true : e.channel_id)
   }), b = c.intl.format(c.t.cZ9Uf3, {
     actorName: m.nick,
     actorHook: g,
@@ -37,7 +37,7 @@ function d(e) {
     viewThreadsOnClick: p
   });
   return (0, r.jsx)(l.Z, {
-    iconNode: (0, r.jsx)(o.or_, {
+    iconNode: (0, r.jsx)(a.or_, {
       size: "md",
       color: "currentColor",
       className: u.icon

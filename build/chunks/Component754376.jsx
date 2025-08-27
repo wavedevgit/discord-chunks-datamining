@@ -35,15 +35,15 @@ function d(e) {
         idle: h,
         title: null != (t = null == m ? true : m.name) ? t : "",
         onJumpToChannel: p,
-        preventIdleComponent: a.Z
+        preventIdleComponent: o.Z
       })
     }), (0, r.jsx)("div", {
       className: u.bottomControls,
-      children: (0, r.jsx)(o.Z, {
+      children: (0, r.jsx)(a.Z, {
         grow: 1,
         shrink: 1,
-        justify: o.Z.Justify.END,
-        align: o.Z.Align.CENTER,
+        justify: a.Z.Justify.END,
+        align: a.Z.Align.CENTER,
         children: (0, r.jsx)(l.Z, {
           applicationId: n,
           className: c.rightPipIcon

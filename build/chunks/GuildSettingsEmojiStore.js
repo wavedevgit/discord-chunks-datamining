@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => A
 });
 var r, Chunk31775 = require("./31775.js"),
-  o = require.n(Chunk31775),
+  a = require.n(Chunk31775),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk40572 = require("./40572.js"),
@@ -24,7 +24,7 @@ let f = {},
   _ = {},
   p = 0,
   h = false,
-  m = new(o())({
+  m = new(a())({
     max: 5,
     maxAge: Chunk70956.Z.Millis.HOUR
   });

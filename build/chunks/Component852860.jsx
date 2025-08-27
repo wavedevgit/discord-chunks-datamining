@@ -78,7 +78,7 @@ let h = function(e) {
     children: (0, r.jsx)("div", {
       className: u.flexContainer,
       ref: v,
-      children: (0, r.jsxs)(a.JcV, {
+      children: (0, r.jsxs)(o.JcV, {
         containerRef: v,
         children: [(0, r.jsx)("div", {
           className: u.shrinkingContainer,
@@ -88,20 +88,20 @@ let h = function(e) {
           })
         }), (0, r.jsxs)("div", {
           className: u.actions,
-          children: [null != h && (0, r.jsx)(o.zx, {
+          children: [null != h && (0, r.jsx)(a.zx, {
             className: u.resetButton,
-            size: o.zx.Sizes.SMALL,
-            color: o.zx.Colors.PRIMARY,
-            look: o.zx.Looks.LINK,
+            size: a.zx.Sizes.SMALL,
+            color: a.zx.Colors.PRIMARY,
+            look: a.zx.Looks.LINK,
             onClick: h,
             children: (0, r.jsx)("span", {
               children: null != E ? E : c.intl.string(c.t.yBZMsb)
             })
-          }), null != m ? (0, r.jsx)(a.ua7, {
+          }), null != m ? (0, r.jsx)(o.ua7, {
             text: O,
-            children: e => (0, r.jsx)(o.zx, p(f({
-              size: o.zx.Sizes.SMALL,
-              color: null != b ? b : o.zx.Colors.GREEN,
+            children: e => (0, r.jsx)(a.zx, p(f({
+              size: a.zx.Sizes.SMALL,
+              color: null != b ? b : a.zx.Colors.GREEN,
               submitting: _,
               disabled: y,
               onClick: m

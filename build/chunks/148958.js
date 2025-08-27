@@ -53,7 +53,7 @@ function _(e, t) {
 
 function p(e, t) {
   r.useEffect(() => {
-    a.DZ.loadIfUncached(c.yP.FRECENCY_AND_FAVORITES_SETTINGS)
+    o.DZ.loadIfUncached(c.yP.FRECENCY_AND_FAVORITES_SETTINGS)
   }, []);
   let n = (0, i.e7)([l.Z], () => l.Z.getApplicationFrecencyWithoutLoadingLatest()),
     u = r.useMemo(() => null == t || 0 === t.length ? e : e.map(e => {
@@ -69,26 +69,26 @@ function p(e, t) {
         let t = s.default.extractTimestamp(e.id);
         null == n.getEntry(e.application.id) && n.track(e.application.id, t)
       }), n.compute();
-      let t = null != (e = null == f ? true : f.map(e => (0, o.X0)(e.application, true))) ? e : [],
+      let t = null != (e = null == f ? true : f.map(e => (0, a.X0)(e.application, true))) ? e : [],
         r = [...u];
       return r.push(...t), r.sort((e, t) => {
         var r, i;
-        let o = (null != (r = n.getScore(t.id)) ? r : 0) - (null != (i = n.getScore(e.id)) ? i : 0);
-        return 0 !== o ? o : e.name.localeCompare(t.name)
+        let a = (null != (r = n.getScore(t.id)) ? r : 0) - (null != (i = n.getScore(e.id)) ? i : 0);
+        return 0 !== a ? a : e.name.localeCompare(t.name)
       }), r
     }, [u, n, f]);
   return r.useMemo(() => {
     var e, r;
-    let i, o;
+    let i, a;
     null == t || t.forEach(e => {
       let t = s.default.extractTimestamp(e.id);
-      (null == o || t > o) && (i = e, o = t)
+      (null == a || t > a) && (i = e, a = t)
     }), u.forEach(e => {
       var t, r;
-      let a = Math.max(...null != (r = null == (t = n.getEntry(e.id)) ? true : t.recentUses) ? r : []);
-      (null == o || a > o) && (i = e, o = a)
+      let o = Math.max(...null != (r = null == (t = n.getEntry(e.id)) ? true : t.recentUses) ? r : []);
+      (null == a || o > a) && (i = e, a = o)
     });
-    let a = null != (r = null == i || null == (e = i.application) ? true : e.id) ? r : "";
-    return [...p.filter(e => e.id === a), ...p.filter(e => e.id !== a)]
+    let o = null != (r = null == i || null == (e = i.application) ? true : e.id) ? r : "";
+    return [...p.filter(e => e.id === o), ...p.filter(e => e.id !== o)]
   }, [p, u, n, t])
 }

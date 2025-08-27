@@ -88,7 +88,7 @@ class y extends Chunk442837.yh {
                 let e = this.root[i];
                 n({
                   root: e.root,
-                  derived: e[a.V]
+                  derived: e[o.V]
                 }, {
                   root: {},
                   derived: {
@@ -99,19 +99,19 @@ class y extends Chunk442837.yh {
                 continue
               }
               let r = this.root[i],
-                o = t.root[i],
-                s = r[a.V].memoized[e],
-                l = o[a.V].memoized[e];
+                a = t.root[i],
+                s = r[o.V].memoized[e],
+                l = a[o.V].memoized[e];
               if (null != s && s === l) continue;
               n({
                 root: r.root,
-                derived: r[a.V]
+                derived: r[o.V]
               }, {
-                root: o.root,
-                derived: o[a.V]
+                root: a.root,
+                derived: a[o.V]
               });
               let c = {};
-              r[a.V].memoized[e] = c, o[a.V].memoized[e] = c
+              r[o.V].memoized[e] = c, a[o.V].memoized[e] = c
             }
             for (let e of i) Object.prototype.hasOwnProperty.call(this.root, e) || n({
               root: {},
@@ -121,7 +121,7 @@ class y extends Chunk442837.yh {
               }
             }, {
               root: t.root[e].root,
-              derived: t.root[e][a.V]
+              derived: t.root[e][o.V]
             })
           })
         });
@@ -144,7 +144,7 @@ class y extends Chunk442837.yh {
   }
   partitionVersion(e) {
     let t = this.root[e];
-    return null == t ? null : this._derivedVersion(t[a.V].memoized)
+    return null == t ? null : this._derivedVersion(t[o.V].memoized)
   }
   getRecord(e, t) {
     var n;
@@ -169,20 +169,20 @@ class y extends Chunk442837.yh {
     if (null == t) return g;
     let {
       root: n,
-      [a.V]: {
+      [o.V]: {
         memoized: r,
         length: i
       }
-    } = t, o = r[h];
-    return null == o && (r[h] = o = {
+    } = t, a = r[h];
+    return null == a && (r[h] = a = {
       current: n,
       version: this._derivedVersion(r),
       length: i
-    }), o
+    }), a
   }
   partitionLength(e) {
     let t = this.root[e];
-    return null == t ? 0 : t[a.V].length
+    return null == t ? 0 : t[o.V].length
   }
   length() {
     return this.derived.length
@@ -201,12 +201,12 @@ class y extends Chunk442837.yh {
       let i = this.root[r];
       if (null == i) return n;
       let {
-        root: o,
-        [a.V]: {
+        root: a,
+        [o.V]: {
           memoized: s
         }
       } = i, l = s[t];
-      return E.call(s, t) || (l = e(o), s[t] = l), l
+      return E.call(s, t) || (l = e(a), s[t] = l), l
     }
   }
   memoized(e) {
@@ -242,20 +242,20 @@ class y extends Chunk442837.yh {
             "function" == typeof e ? e(n, this.root) : null != e && (n = e);
             let r = {},
               i = 0,
-              o = 0;
+              a = 0;
             for (let e in n) {
               let t = Object.keys(n[e]).length;
-              i++, o += t, r[e] = {
+              i++, a += t, r[e] = {
                 root: n[e],
-                [a.V]: {
+                [o.V]: {
                   length: t,
                   memoized: {}
                 }
               }
-            }(0 !== o || 0 !== this.derived.length) && (t = true, this.setKkvRoot(r, {
+            }(0 !== a || 0 !== this.derived.length) && (t = true, this.setKkvRoot(r, {
               memoized: {},
               numPartitions: i,
-              length: o
+              length: a
             }))
           },
           set: (e, n, r) => {
@@ -264,13 +264,13 @@ class y extends Chunk442837.yh {
               root: {
                 [n]: r
               },
-              [a.V]: {
+              [o.V]: {
                 length: 1,
                 memoized: {}
               }
             }, this.derived.numPartitions++, this.derived.length++, t = true, true;
-            let o = i.root[n];
-            return "function" == typeof r && (r = r(o)), !(true !== o && (0, c.$E)(o, r)) && (i.root[n] = r, true === o && (i[a.V].length++, this.derived.length++), i[a.V].memoized = {}, t = true, true)
+            let a = i.root[n];
+            return "function" == typeof r && (r = r(a)), !(true !== a && (0, c.$E)(a, r)) && (i.root[n] = r, true === a && (i[o.V].length++, this.derived.length++), i[o.V].memoized = {}, t = true, true)
           },
           setPartition: (e, n) => {
             let r = this.root[e];
@@ -279,7 +279,7 @@ class y extends Chunk442837.yh {
               let r = Object.keys(n).length;
               return 0 !== r && (this.root[e] = {
                 root: n,
-                [a.V]: {
+                [o.V]: {
                   length: r,
                   memoized: {}
                 }
@@ -287,10 +287,10 @@ class y extends Chunk442837.yh {
             }
             if ("function" == typeof n && (n = n(r.root)), b(r.root, n)) returnfalse;
             let i = Object.keys(n).length,
-              o = r[a.V].length;
-            return this.derived.length -= o, 0 === i ? (delete this.root[e], this.derived.numPartitions--) : (this.root[e] = {
+              a = r[o.V].length;
+            return this.derived.length -= a, 0 === i ? (delete this.root[e], this.derived.numPartitions--) : (this.root[e] = {
               root: n,
-              [a.V]: {
+              [o.V]: {
                 length: i,
                 memoized: {}
               }
@@ -306,22 +306,22 @@ class y extends Chunk442837.yh {
           },
           remove: (e, n) => {
             let r = this.root[e];
-            return null != r && true !== r.root[n] && (delete r.root[n], r[a.V].length--, 0 === r[a.V].length ? (delete this.root[e], this.derived.numPartitions--) : r[a.V].memoized = {}, this.derived.length--, t = true, true)
+            return null != r && true !== r.root[n] && (delete r.root[n], r[o.V].length--, 0 === r[o.V].length ? (delete this.root[e], this.derived.numPartitions--) : r[o.V].memoized = {}, this.derived.length--, t = true, true)
           },
           removePartition: e => {
             let n = this.root[e];
             if (null == n) returnfalse;
-            let r = n[a.V].length;
+            let r = n[o.V].length;
             return delete this.root[e], this.derived.numPartitions--, this.derived.length -= r, t = true, true
           }
         };
       for (let i in e) {
-        let o = e[i],
-          a = e => {
-            if (t = false, o(e, r), !t) returnfalse;
+        let a = e[i],
+          o = e => {
+            if (t = false, a(e, r), !t) returnfalse;
             this.derived.memoized = {}
           };
-        n[i] = a
+        n[i] = o
       }
     }
     super(l.Z, n), f(this, "mode", true), f(this, "root", true), f(this, "shadowState", true), f(this, "derived", true), f(this, "nextVersion", true), this.mode = t, this.root = {}, this.shadowState = null, this.derived = {

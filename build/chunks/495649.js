@@ -43,7 +43,7 @@ class b extends Chunk147913.Z {
         channelId: n
       } = e;
       if (g === t && E === n || (g = null != t ? t : null, E = null != n ? n : null, null == g || null == E)) return;
-      let r = a.Z.getGuild(t);
+      let r = o.Z.getGuild(t);
       null != r && r.features.has(_.oNc.COMMUNITY) && d.Z.shouldFetchPrompts(g, 8 * l.Z.Millis.HOUR) && (0, u.rj)(g), this._openOnboardingIfIncomplete(g, n)
     }), m(this, "handleGuildDelete", e => {
       let {
@@ -53,9 +53,9 @@ class b extends Chunk147913.Z {
     }), m(this, "_openOnboardingIfIncomplete", async (e, t) => {
       var n, r;
       if ((0, f.hz)(e)) return void(0, i.uL)(_.Z5c.CHANNEL(e, p.oC.GUILD_ONBOARDING));
-      let s = a.Z.getGuild(e);
+      let s = o.Z.getGuild(e);
       if (null == s || !s.features.has(_.oNc.GUILD_ONBOARDING)) return;
-      let l = o.ZP.getSelfMember(e);
+      let l = a.ZP.getSelfMember(e);
       !(null == l || (0, c.yE)(null != (n = l.flags) ? n : 0, h.q.COMPLETED_ONBOARDING)) && (0, c.yE)(null != (r = l.flags) ? r : 0, h.q.STARTED_ONBOARDING) && (await (0, f.default)({
         guildId: e
       }), (0, i.uL)(_.Z5c.CHANNEL(e, t)))

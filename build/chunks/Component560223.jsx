@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk975298 = require("./975298.js"),
   Chunk893712 = require("./893712.js"),
@@ -63,16 +63,16 @@ let v = e => {
       showAllPerksButton: t,
       leftAlignHeaders: n,
       title: i,
-      headerClassname: o
-    } = e, a = (0, r.jsx)(s.X6q, {
+      headerClassname: a
+    } = e, o = (0, r.jsx)(s.X6q, {
       variant: "heading-xxl/extrabold",
       color: "header-primary",
-      className: null != o ? o : g.heading,
+      className: null != a ? a : g.heading,
       children: i
     });
-    return null == t ? a : n ? (0, r.jsxs)("div", {
+    return null == t ? o : n ? (0, r.jsxs)("div", {
       className: g.sectionHeader,
-      children: [a, null != t && (0, r.jsx)("div", {
+      children: [o, null != t && (0, r.jsx)("div", {
         className: g.showAllPerksButton,
         children: t
       })]
@@ -80,7 +80,7 @@ let v = e => {
       className: g.container,
       children: (0, r.jsx)("div", {
         className: g.sectionHeaderSeeAll,
-        children: a
+        children: o
       })
     })
   },
@@ -88,7 +88,7 @@ let v = e => {
     let {
       className: t,
       variant: n,
-      noBackground: o = false,
+      noBackground: a = false,
       leftAlignHeaders: E = false,
       showAllPerksButton: y,
       headerClassname: I
@@ -122,7 +122,7 @@ let v = e => {
       j = L.some(e => null != e.pillText);
     return (0, r.jsxs)("div", {
       ref: T,
-      className: a()(g.section, {
+      className: o()(g.section, {
         [g.centerAlignSection]: !E,
         [g.leftAlignSection]: E
       }, t),
@@ -134,7 +134,7 @@ let v = e => {
       }), (0, r.jsx)(s.Text, {
         variant: "text-lg/normal",
         color: "header-primary",
-        className: a()(g.subtitle, {
+        className: o()(g.subtitle, {
           [g.subtitle]: null == y || E,
           [g.subtitleWithButton]: null != y && !E,
           [g.fullWidth]: S || E,
@@ -149,7 +149,7 @@ let v = e => {
       }), (0, r.jsx)("div", {
         className: g.cardContainer,
         children: L.map((e, t) => (0, r.jsx)(m.Z, O(b({}, e), {
-          forceShadow: o
+          forceShadow: a
         }), "".concat(e.name, "_").concat(t)))
       })]
     })

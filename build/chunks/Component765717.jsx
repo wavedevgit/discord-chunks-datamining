@@ -36,8 +36,8 @@ function c(e, t) {
   if (null == e) return {};
   var n, r, i = u(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -45,8 +45,8 @@ function c(e, t) {
 function u(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -58,8 +58,8 @@ function d(e) {
     } = e,
     d = c(e, ["impressionName", "impressionProperties", "disableTrack"]);
   let f = s;
-  return "function" == typeof f && (f = f(d)), (0, a.Z)({
-    type: o.ImpressionTypes.PAGE,
+  return "function" == typeof f && (f = f(d)), (0, o.Z)({
+    type: a.ImpressionTypes.PAGE,
     name: n,
     properties: f
   }, {

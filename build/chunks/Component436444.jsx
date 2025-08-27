@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk202841 = require("./202841.js"),
   Chunk481060 = require("./481060.js"),
   Chunk906732 = require("./906732.jsx"),
@@ -107,13 +107,13 @@ let T = {
         friction: 12
       }
     }), G = (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(a.animated.div, {
+      children: [(0, r.jsx)(o.animated.div, {
         className: E.progressBarMarkerIndicator,
         style: {
           transform: U.to(e => "translate(-50%, -50%) scale(".concat(e, ")"))
         }
       }), A !== p.Eu4.NONE ? k ? (0, r.jsx)(s.mTd, {
-        className: o()(E.boostedTierIcon, E.disabledIndicator),
+        className: a()(E.boostedTierIcon, E.disabledIndicator),
         size: "xxs",
         color: "currentColor"
       }) : (0, r.jsx)(u.Z, {
@@ -159,7 +159,7 @@ let T = {
       }),
       shouldShow: A !== p.Eu4.NONE,
       children: e => (0, r.jsxs)(F, v(y({
-        className: o()(E.progressBarMarker, {
+        className: a()(E.progressBarMarker, {
           [E.progressBarMarkerUnlocked]: L,
           [E.progressBarMarkerLocked]: Z,
           [E.progressBarMarkerLower]: j,

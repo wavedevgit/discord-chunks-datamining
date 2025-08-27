@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk913527 = require("./913527.js"),
   l = require.n(Chunk913527),
   Chunk692547 = require("./692547.js"),
@@ -95,11 +95,11 @@ function v(e, t) {
   }
 }
 
-function I(e, t, n, i, o) {
+function I(e, t, n, i, a) {
   switch (e) {
     case 1:
-      return o > 0 ? h.intl.formatToPlainString(h.t.PQlCWl, {
-        minutes: o
+      return a > 0 ? h.intl.formatToPlainString(h.t.PQlCWl, {
+        minutes: a
       }) : h.intl.string(h.t.WINqKS);
     case 2:
       return h.intl.string(h.t.WINqKS);
@@ -124,8 +124,8 @@ function T(e) {
       timeStatus: n,
       textBrand: r,
       textPositive: i,
-      textDanger: o,
-      endDateTimeString: a,
+      textDanger: a,
+      endDateTimeString: o,
       startDateTimeString: s
     } = e,
     l = u.Que,
@@ -133,7 +133,7 @@ function T(e) {
     d = "header-secondary";
   switch (n) {
     case 3:
-      c = i, d = null != a ? true : "text-feedback-positive";
+      c = i, d = null != o ? true : "text-feedback-positive";
       break;
     case 4:
       l = u.T39;
@@ -143,7 +143,7 @@ function T(e) {
       d = "text-brand", t = s;
       break;
     case 5:
-      c = o
+      c = a
   }
   return {
     Icon: l,
@@ -172,13 +172,13 @@ function A(e) {
     tooltipText: i
   } = e;
   return (0, r.jsx)("div", {
-    className: a()(m.eventStatusContainer, n),
+    className: o()(m.eventStatusContainer, n),
     children: (0, r.jsx)(u.ua7, {
       position: "right",
       text: i,
       shouldShow: null != i,
       children: e => (0, r.jsx)("div", y(E({}, e), {
-        className: a()(m.eventStatusContainer, n),
+        className: o()(m.eventStatusContainer, n),
         children: t
       }))
     })
@@ -189,7 +189,7 @@ function C(e) {
   let {
     startTime: t,
     status: n,
-    eventType: o,
+    eventType: a,
     className: s,
     endTime: _,
     liveText: g,
@@ -199,7 +199,7 @@ function C(e) {
     guildEventId: C,
     recurrenceId: N
   } = e, R = (0, u.dQu)(c.Z.colors.TEXT_BRAND).hex(), P = (0, u.dQu)(c.Z.colors.TEXT_FEEDBACK_POSITIVE).hex(), w = (0, u.dQu)(c.Z.colors.TEXT_DANGER).hex();
-  null == g && (g = o === p.WX.EXTERNAL ? h.intl.string(h.t.IyZxjI) : h.intl.string(h.t["X2K3//"]));
+  null == g && (g = a === p.WX.EXTERNAL ? h.intl.string(h.t.IyZxjI) : h.intl.string(h.t["X2K3//"]));
   let D = (0, d.Z)(N, C),
     [{
       startDateTimeString: x,
@@ -245,7 +245,7 @@ function C(e) {
     W = v((0, f.zi)(n, y), n)
   }
   return (0, r.jsxs)(A, {
-    className: a()(s, {
+    className: o()(s, {
       [m.isRecurring]: null != W
     }),
     tooltipText: Y,

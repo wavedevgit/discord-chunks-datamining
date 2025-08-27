@@ -46,7 +46,7 @@ function f(e) {
     commands: u.L8.DISABLED,
     allowStickers: true === _,
     allowSoundmoji: true === p,
-    forNonStringCommandOption: null != n && n.type !== o.jw.STRING,
+    forNonStringCommandOption: null != n && n.type !== a.jw.STRING,
     hideMentionDescription: true === h,
     hidePersonalInformation: true === m,
     chatInputType: g,
@@ -74,7 +74,7 @@ function f(e) {
     }
   };
   if (null != n) {
-    let e = (0, a.$z)(n);
+    let e = (0, o.$z)(n);
     e.canMentionChannels && (I.mentions.channel = u.nS.ALLOW_SELECTABLE), e.canMentionEveryone && (I.mentions.global = e.canMentionHere ? u.VV.ALLOW_EVERYONE_OR_HERE : u.VV.ALLOW_EVERYONE), e.canMentionRoles && (I.mentions.role = e.canMentionNonMentionableRoles ? u.Fw.ALLOW_ALL : u.Fw.ALLOW_MENTIONABLE), e.canMentionUsers && (I.mentions.user = e.canMentionAnyGuildUser ? u.h3.ALLOW_GUILD : u.h3.ALLOW_CHANNEL), I.hideMentionDescription = true
   } else l && (I.mentions.channel = u.nS.ALLOW_SELECTABLE), i && (I.mentions.role = u.Fw.ALLOW_MENTIONABLE), r && (I.mentions.user = u.h3.ALLOW_CHANNEL), c && (I.mentions.global = u.VV.ALLOW_EVERYONE_OR_HERE);
   return (null == (t = g.commands) ? true : t.enabled) && (d ? I.commands = f ? u.L8.NEW_TEXT_ONLY : u.L8.NEW : I.commands = u.L8.OLD_BUILT_INS), null != n && null != n.channelTypes && (I.allowedChannelTypes = n.channelTypes), I
@@ -86,14 +86,14 @@ function _(e) {
     channel: n,
     guild: r,
     query: i,
-    isAtStart: o,
-    options: a
+    isAtStart: a,
+    options: o
   } = e, s = c.W[t];
   if (null != s.sentinel) {
     if (!i.startsWith(s.sentinel)) returnfalse;
     i = i.substring(s.sentinel.length)
   }
-  return null == s.matches || !!s.matches(n, r, i, o, a)
+  return null == s.matches || !!s.matches(n, r, i, a, o)
 }
 
 function p(e) {
@@ -101,8 +101,8 @@ function p(e) {
     channel: t,
     guild: n,
     options: r,
-    currentWord: o,
-    currentWordIsAtStart: a,
+    currentWord: a,
+    currentWordIsAtStart: o,
     textValue: s,
     optionText: f,
     parentAutocompleteInputType: p,
@@ -175,7 +175,7 @@ function p(e) {
           channel: t,
           guild: n,
           query: s,
-          isAtStart: a,
+          isAtStart: o,
           options: r
         })) {
         m = {
@@ -186,18 +186,18 @@ function p(e) {
         break
       }
     } else if (e === u.eq.EMOJIS_AND_STICKERS) {
-      if (null != o && o.length > 0 && (0, l.x)(d.qR.AutocompleteTyped), null != o && _({
+      if (null != a && a.length > 0 && (0, l.x)(d.qR.AutocompleteTyped), null != a && _({
           type: e,
           channel: t,
           guild: n,
-          query: o,
-          isAtStart: a,
+          query: a,
+          isAtStart: o,
           options: r
         })) {
         m = {
           type: e,
           typeInfo: I,
-          query: o.substring(null != (y = null == (b = I.sentinel) ? true : b.length) ? y : 0)
+          query: a.substring(null != (y = null == (b = I.sentinel) ? true : b.length) ? y : 0)
         };
         break
       }
@@ -206,18 +206,18 @@ function p(e) {
       typeInfo: I,
       query: h
     });
-    else if (null != o && _({
+    else if (null != a && _({
         type: e,
         channel: t,
         guild: n,
-        query: o,
-        isAtStart: a,
+        query: a,
+        isAtStart: o,
         options: r
       })) {
       m = {
         type: e,
         typeInfo: I,
-        query: o.substring(null != (v = null == (O = I.sentinel) ? true : O.length) ? v : 0)
+        query: a.substring(null != (v = null == (O = I.sentinel) ? true : O.length) ? v : 0)
       };
       break
     }
@@ -230,15 +230,15 @@ function h(e, t) {
   if (null == t || null == e) return null;
   if (null != e.choices || e.autocomplete) n = u.eq.CHOICES;
   else switch (e.type) {
-    case o.jw.BOOLEAN:
+    case a.jw.BOOLEAN:
       n = u.eq.CHOICES;
       break;
-    case o.jw.CHANNEL:
+    case a.jw.CHANNEL:
       n = u.eq.CHANNELS;
       break;
-    case o.jw.ROLE:
-    case o.jw.USER:
-    case o.jw.MENTIONABLE:
+    case a.jw.ROLE:
+    case a.jw.USER:
+    case a.jw.MENTIONABLE:
       n = u.eq.MENTIONS;
       break;
     default:

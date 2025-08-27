@@ -93,7 +93,7 @@ function A(e) {
 }
 
 function C(e, t) {
-  var n, r, i, o, a;
+  var n, r, i, a, o;
   let [s] = null != (n = e.embeds) ? n : [];
   if (null != s) {
     if (A(s)) return null == s || null == (i = s.fields) || null == (r = i.find(e => {
@@ -102,12 +102,12 @@ function C(e, t) {
       } = e;
       return n === t
     })) ? true : r.rawValue;
-    if (S(s)) return null == s || null == (a = s.fields) || null == (o = a.find(e => {
+    if (S(s)) return null == s || null == (o = s.fields) || null == (a = o.find(e => {
       let {
         rawName: n
       } = e;
       return n === t
-    })) ? true : o.rawValue
+    })) ? true : a.rawValue
   }
 }
 
@@ -147,9 +147,9 @@ function L(e, t, n) {
     case u.z.BLOCK_PROFILE_UPDATE:
       return r(e);
     case u.z.QUARANTINE_USER:
-      return a(n);
+      return o(n);
     case u.z.BLOCK_GUEST_JOIN:
-      return o()
+      return a()
   }
 
   function r(e) {
@@ -163,11 +163,11 @@ function L(e, t, n) {
     }
   }
 
-  function o() {
+  function a() {
     return E.intl.string(E.t.MrYeyc)
   }
 
-  function a(e) {
+  function o(e) {
     switch (e) {
       case c.B.MESSAGE_SEND:
         return E.intl.string(E.t.PmSMMT);
@@ -217,7 +217,7 @@ function k(e, t) {
     b = j(t, m),
     y = null != t && m ? n : g.VqG,
     O = M(e, b, n);
-  return null != O ? O : null != h ? _ === a.y.MODAL && null != i ? f !== o.P.BLOCKED ? E.intl.format(E.t["4xL9Sk"], {
+  return null != O ? O : null != h ? _ === o.y.MODAL && null != i ? f !== a.P.BLOCKED ? E.intl.format(E.t["4xL9Sk"], {
     applicationName: h,
     interactionUserHook: i,
     integrationOwnerHook: r
@@ -225,7 +225,7 @@ function k(e, t) {
     applicationName: h,
     interactionUserHook: i,
     integrationOwnerHook: r
-  }) : f !== o.P.BLOCKED ? E.intl.format(E.t.AXQufH, {
+  }) : f !== a.P.BLOCKED ? E.intl.format(E.t.AXQufH, {
     applicationName: h,
     channelName: b,
     channelHook: y,
@@ -235,7 +235,7 @@ function k(e, t) {
     channelName: b,
     channelHook: y,
     integrationOwnerHook: r
-  }) : f !== o.P.BLOCKED ? E.intl.format(E.t.IZg0VV, {
+  }) : f !== a.P.BLOCKED ? E.intl.format(E.t.IZg0VV, {
     channelName: b,
     channelHook: y
   }) : E.intl.format(E.t.lOIOSE, {
@@ -268,8 +268,8 @@ function B(e) {
   let n = C(e, l.D.NOTIFICATION_TYPE),
     r = C(e, l.D.JOIN_ATTEMPTS),
     i = C(e, l.D.RAID_DATETIME),
-    o = C(e, l.D.DMS_SENT),
-    a = C(e, l.D.RAID_TYPE),
+    a = C(e, l.D.DMS_SENT),
+    o = C(e, l.D.RAID_TYPE),
     s = C(e, l.D.RESOLVED_REASON),
     c = C(e, l.D.DECISION_ID),
     u = C(e, l.D.SUSPICIOUS_MENTION_ACTIVITY_UNTIL);
@@ -277,8 +277,8 @@ function B(e) {
     notificationType: null != (t = G(n)) ? t : true,
     joinAttempts: null != r ? parseInt(r) : true,
     raidDatetime: null != i ? new Date(i) : true,
-    dmsSent: null != o ? parseInt(o) : true,
-    raidType: null != a ? a : true,
+    dmsSent: null != a ? parseInt(a) : true,
+    raidType: null != o ? o : true,
     resolvedReason: null != s ? s : true,
     decisionId: null != c ? c : true,
     suspiciousMentionActivityUntil: null != u ? new Date(u) : true

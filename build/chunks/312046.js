@@ -2,13 +2,13 @@
 /** chunk id: 312046, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Q: () => a,
+  Q: () => o,
   s: () => s
 });
 var Chunk418793 = require("./418793.js"),
   Chunk460597 = require("./460597.js"),
   Chunk608591 = require("./608591.js");
-let a = e => ({
+let o = e => ({
   id: e.id,
   configVersion: 2,
   startsAt: e.starts_at,
@@ -38,7 +38,7 @@ let a = e => ({
   },
   taskConfigV2: (0, i._)(e.task_config_v2),
   rewardsConfig: (0, r.v)(e.rewards_config),
-  videoMetadata: (0, o.FG)(e.video_metadata),
+  videoMetadata: (0, a.FG)(e.video_metadata),
   cosponsorMetadata: s(e.cosponsor_metadata),
   sharePolicy: e.share_policy
 });

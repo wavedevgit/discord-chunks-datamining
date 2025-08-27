@@ -27,23 +27,23 @@ function b(e) {
     isDiscoverable: t,
     customInstallUrl: n,
     installParams: r,
-    integrationTypesConfig: a
+    integrationTypesConfig: o
   } = e, s = (0, p.Eb)({
     customInstallUrl: n,
     installParams: r,
-    integrationTypesConfig: a
+    integrationTypesConfig: o
   }), l = (0, i.e7)([f.Z], () => {
     var e;
     return null != (e = f.Z.getGuildId()) ? e : true
   }), _ = (0, i.e7)([c.Z, u.Z, d.Z], () => {
     let e = c.Z.getChannel(d.Z.getChannelId());
     return null != e && (e.isPrivate() || u.Z.can(m.Plq.SEND_MESSAGES, e))
-  }, []), h = (0, o.PZ)(e, l) && _, g = t || h;
+  }, []), h = (0, a.PZ)(e, l) && _, g = t || h;
   return {
     isDiscoverable: t,
     customInstallUrl: n,
     installParams: r,
-    integrationTypesConfig: a,
+    integrationTypesConfig: o,
     canViewApp: g,
     canOpenAppLauncher: h,
     isInstallable: s,
@@ -55,14 +55,14 @@ function y(e, t) {
   let {
     canViewApp: n,
     canOpenAppLauncher: i,
-    isInstallable: o,
+    isInstallable: a,
     customInstallUrl: c,
     installParams: u,
     integrationTypesConfig: d,
     selectedGuildId: f
   } = b(e);
   return r.useMemo(() => n ? () => {
-    if (null == t || t(), i) return void(0, a.X)(e.id);
+    if (null == t || t(), i) return void(0, o.X)(e.id);
     (0, s.transitionToGlobalDiscovery)({
       tab: g.GlobalDiscoveryTab.APPS,
       applicationId: e.id,
@@ -72,7 +72,7 @@ function y(e, t) {
         }
       }
     })
-  } : o ? () => {
+  } : a ? () => {
     null == t || t(), (0, _.L)({
       applicationId: e.id,
       customInstallUrl: c,
@@ -81,7 +81,7 @@ function y(e, t) {
       guildId: f,
       source: "app_message_embed"
     })
-  } : true, [e.id, i, n, c, u, d, o, t, f])
+  } : true, [e.id, i, n, c, u, d, a, t, f])
 }
 
 function O(e) {

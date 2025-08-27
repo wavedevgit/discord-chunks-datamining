@@ -21,7 +21,7 @@ let p = Chunk647438.forwardRef(function(e, t) {
     onClose: p,
     transitionState: h,
     reason: m
-  } = e, g = (0, o.e7)([d.default], () => d.default.getCurrentUser()), E = (0, o.e7)([u.Z], () => u.Z.getAction()), [b, y] = i.useState(null), [O, v] = i.useState(null), [I, T] = i.useState(null), [S, A] = i.useState(false), C = i.useCallback(async e => {
+  } = e, g = (0, a.e7)([d.default], () => d.default.getCurrentUser()), E = (0, a.e7)([u.Z], () => u.Z.getAction()), [b, y] = i.useState(null), [O, v] = i.useState(null), [I, T] = i.useState(null), [S, A] = i.useState(false), C = i.useCallback(async e => {
     A(true);
     try {
       f.Z.isPhoneReverification(g, E) ? await l.Z.beginReverifyPhone(e, m) : await l.Z.beginAddPhone(e, m), T(null), y(e)
@@ -45,7 +45,7 @@ let p = Chunk647438.forwardRef(function(e, t) {
   }, [g, b]), R = i.useCallback(async e => {
     null != O && (f.Z.isPhoneReverification(g, E) ? await l.Z.reverifyPhone(O, e, m) : await l.Z.addPhone(O, e, m), null == n || n(), p())
   }, [n, p, O, m, g, E]);
-  return null != O ? (0, r.jsx)(a.Z, {
+  return null != O ? (0, r.jsx)(o.Z, {
     onClose: p,
     transitionState: h,
     title: _.intl.string(_.t.ZtCDc3),

@@ -102,7 +102,7 @@ class P extends(r = Chunk647438.Component) {
       storeListing: t,
       width: n,
       fetchFailed: r,
-      renderFallback: o
+      renderFallback: a
     } = this.props, s = require > Chunk568836.aL;
     return null == module || null == exports ? r ? Chunk647438() : (0, Chunk951288.jsx)(Chunk568836.OR, {
       isHorizontal: Chunk442837
@@ -154,8 +154,8 @@ class P extends(r = Chunk647438.Component) {
       let {
         inLibrary: n,
         width: r,
-        renderCustomTitle: o,
-        renderCustomTagline: a,
+        renderCustomTitle: a,
+        renderCustomTagline: o,
         renderCustomMedia: s
       } = this.props, {
         playing: l,
@@ -169,8 +169,8 @@ class P extends(r = Chunk647438.Component) {
         inLibrary: n,
         onToggleMute: this.handleToggleMute,
         renderCustomActions: () => this.renderActions(e),
-        renderCustomTitle: o,
-        renderCustomTagline: a,
+        renderCustomTitle: a,
+        renderCustomTagline: o,
         renderCustomMedia: s,
         isHorizontal: u,
         isEmbed: true
@@ -180,16 +180,16 @@ class P extends(r = Chunk647438.Component) {
         inLibrary: t,
         application: n,
         skuId: r,
-        libraryApplication: o,
-        renderCustomActions: a
+        libraryApplication: a,
+        renderCustomActions: o
       } = this.props;
-      if (null != a) return (0, i.jsx)("div", {
+      if (null != o) return (0, i.jsx)("div", {
         className: S.tileActions,
-        children: a()
+        children: o()
       });
       if (null == n) return null;
       let s = null != n && n.primarySkuId === r,
-        c = null != o && o.hasFlag(I.eHb.HIDDEN);
+        c = null != a && a.hasFlag(I.eHb.HIDDEN);
       return (0, i.jsxs)("div", {
         className: S.tileActions,
         children: [!s || c ? this.renderViewInStoreButton() : (0, i.jsx)(d.Z, {

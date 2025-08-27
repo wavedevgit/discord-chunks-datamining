@@ -3,9 +3,9 @@
 "use strict";
 require.d(exports, {
   N3: () => i,
-  _j: () => a,
+  _j: () => o,
   jD: () => s,
-  uj: () => o,
+  uj: () => a,
   vs: () => l
 });
 var Chunk359135 = require("./359135.js");
@@ -66,10 +66,10 @@ let i = {
       name: Chunk359135.P.White
     }
   },
-  o = "invalid_palette",
-  a = "custom_palette",
+  a = "invalid_palette",
+  o = "custom_palette",
   s = {
-    name: o,
+    name: a,
     darkBackground: "",
     lightBackground: ""
   },

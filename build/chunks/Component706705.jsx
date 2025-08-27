@@ -58,14 +58,14 @@ function s() {
       },
       children: Array.from({
         length: s
-      }).map((t, i) => e ? (0, r.jsx)(o.t7u, {
+      }).map((t, i) => e ? (0, r.jsx)(a.t7u, {
         eventTargetRef: {
           current: document.body
         },
-        className: a.animationObj
-      }, i) : (0, r.jsx)(o.Fmz, {
+        className: o.animationObj
+      }, i) : (0, r.jsx)(a.Fmz, {
         importData: () => n.e("37372").then(n.t.bind(n, 459274, 19)),
-        className: a.animationObj
+        className: o.animationObj
       }, i))
     })]
   })

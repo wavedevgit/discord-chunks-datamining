@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
 function h(e) {
   let {
     onBackClick: t
-  } = e, n = (0, o.e7)([u.Z], () => u.Z.getAllUnlockedAchievements()), h = i.useMemo(() => Object.values(n).sort((e, t) => t.dateUnlocked - e.dateUnlocked), [n]), m = i.useMemo(() => Object.values(d.LG).filter(c.lm).filter(e => null == n[e.id]).sort((e, t) => e.rarity - t.rarity), [n]);
+  } = e, n = (0, a.e7)([u.Z], () => u.Z.getAllUnlockedAchievements()), h = i.useMemo(() => Object.values(n).sort((e, t) => t.dateUnlocked - e.dateUnlocked), [n]), m = i.useMemo(() => Object.values(d.LG).filter(c.lm).filter(e => null == n[e.id]).sort((e, t) => e.rarity - t.rarity), [n]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.hjN, {
       children: (0, r.jsxs)(s.P3F, {
@@ -52,7 +52,7 @@ function h(e) {
         className: p.headerIcon,
         children: (0, r.jsx)(s.rm8, {
           size: "custom",
-          color: a.Z.unsafe_rawColors.ORANGE_345.css,
+          color: o.Z.unsafe_rawColors.ORANGE_345.css,
           width: 40,
           height: 40
         })

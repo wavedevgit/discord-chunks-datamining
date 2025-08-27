@@ -45,9 +45,9 @@ function g(e) {
     editorHeight: r,
     textValue: c,
     channelId: d
-  } = e, _ = i.useRef(c), p = (0, a.Z)({
+  } = e, _ = i.useRef(c), p = (0, o.Z)({
     editorHeight: r
-  }), g = (0, u.Z)(), E = (0, o.e7)([l.ZP, s.default], () => l.ZP.isComboing(s.default.getId(), d)), b = null != (t = null == p ? true : p.left) ? t : 0, y = (null != (n = null == p ? true : p.top) ? n : 0) - h, O = 0 === c.length, v = i.useMemo(() => Math.random() < m, [O]);
+  }), g = (0, u.Z)(), E = (0, a.e7)([l.ZP, s.default], () => l.ZP.isComboing(s.default.getId(), d)), b = null != (t = null == p ? true : p.left) ? t : 0, y = (null != (n = null == p ? true : p.top) ? n : 0) - h, O = 0 === c.length, v = i.useMemo(() => Math.random() < m, [O]);
   return i.useEffect(() => {
     0 !== c.length && c !== _.current && E && (g.fire(b, y, v ? {
       sprite: f.vv

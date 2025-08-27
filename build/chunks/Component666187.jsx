@@ -118,8 +118,8 @@ class T extends(r = Chunk647438.Component) {
     let {
       disabled: n,
       value: r,
-      placeholder: o,
-      autoFocus: a,
+      placeholder: a,
+      autoFocus: o,
       minLength: l,
       maxLength: u,
       allowOverflow: f,
@@ -195,8 +195,8 @@ class T extends(r = Chunk647438.Component) {
         maxLength: t,
         minLength: n,
         error: r
-      } = this.props, i = [], o = null == (e = this.context) ? true : e.errorId;
-      return null != o && i.push(o), null != r ? i.push(b) : (null != t && i.push(O), null != n && i.push(y)), i.length > 0 ? i.join(" ") : true
+      } = this.props, i = [], a = null == (e = this.context) ? true : e.errorId;
+      return null != a && i.push(a), null != r ? i.push(b) : (null != t && i.push(O), null != n && i.push(y)), i.length > 0 ? i.join(" ") : true
     }), E(this, "onChange", e => {
       let {
         onChange: t,

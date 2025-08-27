@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -43,7 +43,7 @@ let b = Chunk647438.forwardRef(function(e, t) {
   let {
     title: n,
     titleIcon: i,
-    titleId: o,
+    titleId: a,
     description: f,
     children: g,
     className: b,
@@ -63,7 +63,7 @@ let b = Chunk647438.forwardRef(function(e, t) {
     })
   };
   return (0, r.jsx)("div", {
-    className: a()(m.customizationSection, b, {
+    className: o()(m.customizationSection, b, {
       [m.disabled]: O,
       [m.hideDivider]: v,
       [m.showBorder]: I,
@@ -78,7 +78,7 @@ let b = Chunk647438.forwardRef(function(e, t) {
       hasBackground: S,
       children: [(0, r.jsxs)(c.vwX, {
         className: m.title,
-        id: o,
+        id: a,
         children: [n, C && (0, r.jsx)(_.Z, {}), i, N && null != R && (0, r.jsx)(l.zx, {
           look: l.zx.Looks.LINK,
           color: l.zx.Colors.TRANSPARENT,

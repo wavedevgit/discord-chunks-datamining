@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   l = require.n(Chunk392711),
   Chunk788911 = require("./788911.jsx"),
@@ -47,7 +47,7 @@ let D = 512,
   Z = Chunk647438.forwardRef(function(e, t) {
     let {
       channel: n,
-      canOnlyUseTextCommands: o
+      canOnlyUseTextCommands: a
     } = e, s = i.useRef(false), l = i.useRef(0), [Z, V] = i.useState(0), H = i.useRef(null), [Y, W] = i.useState(false), K = m.Xn.useStore(e => e.activeCategoryIndex);
     i.useEffect(() => {
       (0, d.yw)(N.rMx.APPLICATION_COMMAND_BROWSER_OPENED)
@@ -68,8 +68,8 @@ let D = 512,
       },
       filters: {
         commandTypes: [u.yU.CHAT],
-        builtIns: o ? O.D.ONLY_TEXT : O.D.ALLOW,
-        applicationCommands: !o
+        builtIns: a ? O.D.ONLY_TEXT : O.D.ALLOW,
+        applicationCommands: !a
       },
       options: {
         placeholderCount: x,
@@ -99,8 +99,8 @@ let D = 512,
     }), i.useEffect(() => {
       ei.current(l.current)
     }, [J]);
-    let eo = i.useCallback(e => e !== q.length - 1 || Q ? j : 0, [q.length, Q]),
-      ea = X.map(e => e.data.length);
+    let ea = i.useCallback(e => e !== q.length - 1 || Q ? j : 0, [q.length, Q]),
+      eo = X.map(e => e.data.length);
     i.useEffect(() => {
       null != H.current && Y && null != Z && H.current.scrollRowIntoView(Z)
     }, [Y, Z]), i.useLayoutEffect(() => {
@@ -150,7 +150,7 @@ let D = 512,
         let t = q[e];
         if (null == t) return null;
         let i = (0, A.ky)(t),
-          o = (0, r.jsx)(i, {
+          a = (0, r.jsx)(i, {
             channel: n,
             section: t,
             width: 16,
@@ -159,7 +159,7 @@ let D = 512,
           });
         return (0, r.jsx)(E.Z, {
           className: P.categoryHeader,
-          icon: o,
+          icon: a,
           children: t.name
         }, e)
       }, [n, q]),
@@ -167,15 +167,15 @@ let D = 512,
         let n = e === q.length - 1,
           i = q[e],
           {
-            data: o
+            data: a
           } = X[e];
         return (0, r.jsxs)("ul", {
           role: "group",
           "aria-label": i.name,
-          className: a()(P.categorySection, {
+          className: o()(P.categorySection, {
             [P.categorySectionLast]: n
           }),
-          children: [t, 0 === o.length && (0, r.jsx)(c.Z, {
+          children: [t, 0 === a.length && (0, r.jsx)(c.Z, {
             message: R.intl.format(R.t.WoQXT0, {
               applicationName: i.name
             }),
@@ -186,20 +186,20 @@ let D = 512,
       }, [q, X]),
       ed = i.useCallback((e, t) => {
         var i;
-        let o = X[t.sectionIndex],
-          a = o.data[t.sectionRowIndex],
-          s = "".concat(o.section.id, ":").concat(null != (i = null == a ? true : a.id) ? i : e);
-        if (null == a || o.section.id !== a.applicationId && o.section.id !== C.bi.FRECENCY || a.inputType === v.iw.PLACEHOLDER) return (0, r.jsx)(S.Z, {}, s);
-        let l = z.find(e => e.id === a.applicationId);
+        let a = X[t.sectionIndex],
+          o = a.data[t.sectionRowIndex],
+          s = "".concat(a.section.id, ":").concat(null != (i = null == o ? true : o.id) ? i : e);
+        if (null == o || a.section.id !== o.applicationId && a.section.id !== C.bi.FRECENCY || o.inputType === v.iw.PLACEHOLDER) return (0, r.jsx)(S.Z, {}, s);
+        let l = z.find(e => e.id === o.applicationId);
         return (0, r.jsx)(f.ZP.NewCommand, {
           index: e,
-          command: a,
+          command: o,
           channel: n,
           className: P.itemWrapper,
           selected: Z === e,
-          showImage: o.section.id !== a.applicationId,
+          showImage: a.section.id !== o.applicationId,
           section: l,
-          onClick: () => el(a, l, (0, I.tI)(o.section)),
+          onClick: () => el(o, l, (0, I.tI)(a.section)),
           onHover: () => {
             V(null), W(false)
           }
@@ -230,10 +230,10 @@ let D = 512,
         renderSection: eu,
         renderSectionHeader: ec,
         rowCount: q.length,
-        rowCountBySection: ea,
+        rowCountBySection: eo,
         rowHeight: L,
         sectionHeaderHeight: M,
-        sectionMarginBottom: eo,
+        sectionMarginBottom: ea,
         ref: H,
         stickyHeaders: true
       })]

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk937615 = require("./937615.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -21,10 +21,10 @@ let u = e => {
     className: i,
     variant: u = "heading-md/semibold"
   } = e, d = (0, s.qr)(t, n);
-  return (0, r.jsxs)(a.Text, {
+  return (0, r.jsxs)(o.Text, {
     variant: u,
-    className: o()(c.striked, i),
-    children: [(0, r.jsx)(a.nn4, {
+    className: a()(c.striked, i),
+    children: [(0, r.jsx)(o.nn4, {
       children: l.intl.format(l.t["2CEGlp"], {
         price: d
       })

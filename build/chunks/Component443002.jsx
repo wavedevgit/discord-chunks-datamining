@@ -79,7 +79,7 @@ let T = function(e) {
         keybind: "ESC",
         variant: s.Z.Variants.BOLD
       })
-    }), (0, r.jsxs)(a.yWw, {
+    }), (0, r.jsxs)(o.yWw, {
       ref: w,
       className: I.scroller,
       children: [(0, r.jsxs)("div", {
@@ -90,7 +90,7 @@ let T = function(e) {
             guild: e.guild,
             themeResponsive: false,
             onButtonClick: x
-          }), (0, r.jsx)(a.X6q, {
+          }), (0, r.jsx)(o.X6q, {
             className: I.heading,
             color: "always-white",
             variant: "display-lg",
@@ -123,7 +123,7 @@ let T = function(e) {
         }), (0, r.jsx)(y.A, {}), (0, r.jsx)("div", {
           className: I.lowerBodyBackgroundImage
         })]
-      }), (0, r.jsx)(o.$, {
+      }), (0, r.jsx)(a.$, {
         innerRef: P,
         onChange: j,
         children: (0, r.jsx)("div", {

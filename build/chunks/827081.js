@@ -18,9 +18,9 @@ function s(e) {
   } = e, c = (0, i.useCallback)(e => {
     if (e.target === e.currentTarget) return s && s(e), l && l(false), true
   }, [s, l]), u = (0, r.d0)(c), d = (0, i.useCallback)(e => {
-    let t = (0, o.r3)(e.target),
-      r = t ? (0, a.vY)(t) : (0, a.vY)();
-    e.target === e.currentTarget && r === (0, a.NI)(e.nativeEvent) && (n && n(e), l && l(true), u(e))
+    let t = (0, a.r3)(e.target),
+      r = t ? (0, o.vY)(t) : (0, o.vY)();
+    e.target === e.currentTarget && r === (0, o.NI)(e.nativeEvent) && (n && n(e), l && l(true), u(e))
   }, [l, n, u]);
   return {
     focusProps: {

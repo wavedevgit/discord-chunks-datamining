@@ -10,5 +10,5 @@ module.exports = Chunk138676 ? function(e) {
   if (!e || "object" != typeof e && "function" != typeof e) throw TypeError("getProto: not an object");
   return i(e)
 } : Chunk819401 ? function(e) {
-  return o(e)
+  return a(e)
 } : null

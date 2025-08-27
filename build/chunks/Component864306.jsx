@@ -15,9 +15,9 @@ function l(e) {
   let {
     questId: t
   } = e;
-  return (0, r.jsx)(o.w, {
+  return (0, r.jsx)(a.w, {
     questId: t,
-    fallbackReason: a.V_.NOT_SHAREABLE_QUEST,
+    fallbackReason: o.V_.NOT_SHAREABLE_QUEST,
     bodyText: s.intl.string(s.t.yj6fIi),
     questContent: i.jn.NOT_SHAREABLE_QUEST_EMBED
   })

@@ -16,14 +16,14 @@ function s(e) {
     description: n,
     component: s,
     renderComponent: l
-  } = e, c = (0, o.h4)(s);
+  } = e, c = (0, a.h4)(s);
   return (0, r.jsxs)(i.xJW, {
     title: t,
     required: s.required,
     error: c,
     children: [null != n && (0, r.jsx)(i.R94, {
       type: i.geA.DESCRIPTION,
-      className: a.description,
+      className: o.description,
       children: n
     }), l(s, "label-child")]
   })

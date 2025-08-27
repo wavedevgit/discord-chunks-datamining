@@ -20,7 +20,7 @@ function f() {
     setting: Chunk726985.s6.PRIVACY_KEYWORD_FILTER_V2,
     children: (0, Chunk951288.jsx)(Chunk51331.Z, {
       value: module,
-      onChange: e => a.gw.updateSetting({
+      onChange: e => o.gw.updateSetting({
         profanity: e,
         slurs: e,
         sexualContent: e

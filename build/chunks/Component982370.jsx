@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk680018 = require("./680018.jsx"),
   Chunk607070 = require("./607070.js"),
@@ -20,12 +20,12 @@ let p = e => {
   let {
     className: t,
     onBackClick: n
-  } = e, i = (0, a.e7)([l.Z], () => l.Z.useReducedMotion), {
+  } = e, i = (0, o.e7)([l.Z], () => l.Z.useReducedMotion), {
     visibilityPercentageRef: p,
     visibilityPercentage: h
   } = (0, u.E)(!i);
   return (0, r.jsxs)("div", {
-    className: o()(_.container, t),
+    className: a()(_.container, t),
     "data-testid": "all-perks-hero-header",
     ref: p,
     children: [(0, r.jsx)("div", {

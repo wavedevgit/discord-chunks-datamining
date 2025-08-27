@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk596454 = require("./596454.jsx"),
@@ -36,10 +36,10 @@ function h(e) {
   let {
     trait: t,
     ellipsize: n
-  } = e, o = i.useRef(null), c = (0, u.Z)(o), f = !(0, s.e7)([d.Z], () => d.Z.useReducedMotion) && c;
+  } = e, a = i.useRef(null), c = (0, u.Z)(a), f = !(0, s.e7)([d.Z], () => d.Z.useReducedMotion) && c;
   return null == t.label || t.label.length <= 0 ? null : (0, r.jsxs)("div", {
-    ref: o,
-    className: a()(_.trait, {
+    ref: a,
+    className: o()(_.trait, {
       [_.ellipsize]: n
     }),
     children: [(0, r.jsx)(p, {
@@ -59,7 +59,7 @@ function m(e) {
   let {
     items: t
   } = e, n = i.useCallback((e, t) => "string" == typeof e ? (0, r.jsx)("div", {
-    className: a()(_.trait, {
+    className: o()(_.trait, {
       [_.ellipsize]: t.ellipsize
     }),
     children: (0, r.jsx)(l.Text, {
@@ -71,7 +71,7 @@ function m(e) {
   }, "overflow") : (0, r.jsx)(h, {
     trait: e,
     ellipsize: t.ellipsize
-  }, e.key), []), o = i.useCallback(e => n(e, {
+  }, e.key), []), a = i.useCallback(e => n(e, {
     ellipsize: true
   }), [n]), s = i.useCallback(e => n(e, {
     ellipsize: false
@@ -82,7 +82,7 @@ function m(e) {
   return 0 === t.length ? null : (0, r.jsx)(l.Epb, {
     className: _.container,
     items: t,
-    renderItem: o,
+    renderItem: a,
     renderOverflow: c,
     maxLines: 2,
     itemGapPx: 4

@@ -32,10 +32,10 @@ let _ = e => {
         listingName: m
       }), (0, r.jsxs)("div", {
         className: f.tierPriceContainer,
-        children: [!n && (0, r.jsx)(o.v, {}), (0, r.jsxs)(i.Text, {
+        children: [!n && (0, r.jsx)(a.v, {}), (0, r.jsxs)(i.Text, {
           variant: "text-xs/normal",
           className: f.tierPrice,
-          children: [(0, a.T4)(E.price, E.currency), " ", d.intl.format(d.t.isLGyc, {
+          children: [(0, o.T4)(E.price, E.currency), " ", d.intl.format(d.t.isLGyc, {
             period: (0, s.JE)({
               interval: E.interval,
               interval_count: E.interval_count

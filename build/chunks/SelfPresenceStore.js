@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => H
 }), require("./997841.js"), require("./388685.js"), require("./642613.js");
 var r, Chunk348327 = require("./348327.js"),
-  o = require.n(Chunk348327),
+  a = require.n(Chunk348327),
   Chunk392711 = require("./392711.js"),
   s = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
@@ -84,7 +84,7 @@ function U() {
   S === Chunk981631.Skl.ONLINE && C > 0 && (S = Chunk981631.Skl.IDLE);
   let t = false,
     n = P || S === Chunk981631.Skl.INVISIBLE ? [] : Chunk293273.Z.getActivities().filter(M);
-  o()(N, require) || (N = require, t = true);
+  a()(N, require) || (N = require, t = true);
   let r = Chunk797258.Z.getRemoteActivities();
   w !== r && (w = r, t = true);
   let i = Chunk797258.Z.getHiddenActivities();

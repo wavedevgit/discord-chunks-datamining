@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   l = require.n(Chunk392711),
   Chunk481060 = require("./481060.js"),
@@ -19,16 +19,16 @@ var Chunk951288 = require("./951288.js"),
 let h = l().memoize(e => "".concat(e * _.DC.NonDiversityPerRow, "px ").concat(e * Math.ceil(u.ZP.numNonDiversitySprites / _.DC.NonDiversityPerRow), "px")),
   m = l().memoize(e => "".concat(e * _.DC.DiversityPerRow, "px ").concat(e * Math.ceil(u.ZP.numDiversitySprites / _.DC.DiversityPerRow), "px")),
   g = (e, t, r) => {
-    let i, o, a;
+    let i, a, o;
     if (!e.useSpriteSheet) return;
     let s = null != e.index ? e.index : 0;
-    e.hasDiversity ? (i = n(735800)("./spritesheet-".concat(t, "-").concat(r, ".png")), o = m(r), a = _.DC.DiversityPerRow) : (i = n(604901)("./spritesheet-emoji-".concat(r, ".png")), o = h(r), a = _.DC.NonDiversityPerRow);
-    let l = -s % a * r,
-      c = -Math.floor(s / a) * r;
+    e.hasDiversity ? (i = n(735800)("./spritesheet-".concat(t, "-").concat(r, ".png")), a = m(r), o = _.DC.DiversityPerRow) : (i = n(604901)("./spritesheet-emoji-".concat(r, ".png")), a = h(r), o = _.DC.NonDiversityPerRow);
+    let l = -s % o * r,
+      c = -Math.floor(s / o) * r;
     return {
       backgroundImage: "url('".concat(i, "')"),
       backgroundPosition: "".concat(l, "px ").concat(c, "px"),
-      backgroundSize: o,
+      backgroundSize: a,
       height: r,
       width: r
     }
@@ -37,7 +37,7 @@ let h = l().memoize(e => "".concat(e * _.DC.NonDiversityPerRow, "px ").concat(e 
     let {
       emoji: t,
       size: n,
-      surrogateCodePoint: o,
+      surrogateCodePoint: a,
       allowAnimatedEmoji: s,
       "aria-label": l,
       isLocked: u
@@ -58,10 +58,10 @@ let h = l().memoize(e => "".concat(e * _.DC.NonDiversityPerRow, "px ").concat(e 
         }) : null
       }
       return (0, r.jsx)("div", {
-        className: a()(p.emojiSpriteImage, {
+        className: o()(p.emojiSpriteImage, {
           [p.lockedEmoji]: u
         }),
-        style: g(t, o, n),
+        style: g(t, a, n),
         children: (0, r.jsx)(c.nn4, {
           children: l
         })

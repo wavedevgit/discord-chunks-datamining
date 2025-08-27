@@ -52,7 +52,7 @@ let b = 1e3,
     return i.useEffect(() => {
       let e = setTimeout(() => {
         var e;
-        R || (P(true), (0, a.r5)(C.loadId), (0, u.ko)({
+        R || (P(true), (0, o.r5)(C.loadId), (0, u.ko)({
           planId: null != (e = null == y ? true : y.id) ? e : m.Xh.PREMIUM_MONTH_TIER_2,
           isGift: N,
           loadId: C.loadId,
@@ -61,13 +61,13 @@ let b = 1e3,
       }, b);
       return () => clearTimeout(e)
     }, [y, N, C, c, P, R, t]), i.useEffect(() => {
-      null !== S && (m.YQ.includes(S) && ((0, s.GZ)(S), (0, a.jg)()), v(S)), null !== A && O(A), T === C.loadId && I === p.Y.DONE && l()
+      null !== S && (m.YQ.includes(S) && ((0, s.GZ)(S), (0, o.jg)()), v(S)), null !== A && O(A), T === C.loadId && I === p.Y.DONE && l()
     }, [v, O, I, T, S, A, C, l]), (0, r.jsxs)("div", {
       className: E.body,
-      children: [(0, r.jsx)(o.X6q, {
+      children: [(0, r.jsx)(a.X6q, {
         variant: "heading-xl/bold",
         children: g.intl.string(g.t.C4HYf3)
-      }), (0, r.jsx)(o.Text, {
+      }), (0, r.jsx)(a.Text, {
         variant: "text-md/normal",
         className: E.description,
         children: g.intl.string(g.t.xfG7Ji)
@@ -80,7 +80,7 @@ let b = 1e3,
       onBackClick: n
     } = e;
     return (0, r.jsx)("div", {
-      children: (0, r.jsxs)(o.mzw, {
+      children: (0, r.jsxs)(a.mzw, {
         justify: l.Z.Justify.BETWEEN,
         align: l.Z.Align.CENTER,
         "data-migration-pending": true,

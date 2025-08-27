@@ -11,8 +11,8 @@ module.exports = function(e, t, n) {
   });
   else {
     var i = r.slice(0, n),
-      o = r.slice(n);
-    r = i.concat(t, o).toList()
+      a = r.slice(n);
+    r = i.concat(t, a).toList()
   }
   return r
 }

@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -23,7 +23,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      a(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -85,10 +85,10 @@ function g(e) {
     completingEmoji: n,
     completingUserId: r,
     waitingUserId: i,
-    channelId: o
-  } = e, a = null != (t = d[o]) ? t : {}, l = a[i];
-  if (delete a[i], null == l) returnfalse;
-  f[o] = c(s({}, f[o]), {
+    channelId: a
+  } = e, o = null != (t = d[a]) ? t : {}, l = o[i];
+  if (delete o[i], null == l) returnfalse;
+  f[a] = c(s({}, f[a]), {
     [i]: [l, n],
     [r]: [n, l]
   })
@@ -100,8 +100,8 @@ function E(e) {
     firstUserId: n,
     secondUserId: r,
     channelId: i
-  } = e, o = null != (t = f[i]) ? t : {};
-  delete o[n], delete o[r]
+  } = e, a = null != (t = f[i]) ? t : {};
+  delete a[n], delete a[r]
 }
 class b extends(r = Chunk442837.ZP.DeviceSettingsStore) {
   initialize() {
@@ -125,7 +125,7 @@ class b extends(r = Chunk442837.ZP.DeviceSettingsStore) {
     }
   }
 }
-a(b, "persistKey", "HighFiveStore");
+o(b, "persistKey", "HighFiveStore");
 let y = new b(Chunk570140.Z, {
   HIGH_FIVE_QUEUE: p,
   HIGH_FIVE_REMOVE: h,

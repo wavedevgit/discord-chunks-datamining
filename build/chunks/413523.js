@@ -136,7 +136,7 @@ class w {
     var t, n;
     return null != (n = null == (t = this.participants[e]) ? true : t.reduce((t, n) => {
       if (n.type === y.fO.USER) {
-        let t = (0, o.O)({
+        let t = (0, a.O)({
           userId: e,
           checkIsMuted: true
         });
@@ -183,7 +183,7 @@ class w {
     })
   }
   _getParticipantsForUser(e) {
-    var t, n, r, i, a, d;
+    var t, n, r, i, o, d;
     let b, O, I = [],
       S = h.default.getUser(e);
     if (null == S) return I;
@@ -199,7 +199,7 @@ class w {
       id: S.id,
       voiceState: C,
       voicePlatform: N,
-      speaking: (0, o.O)({
+      speaking: (0, a.O)({
         userId: e,
         checkIsMuted: true
       }),
@@ -210,7 +210,7 @@ class w {
       userAvatarDecoration: (0, s.o)(S, P),
       localVideoDisabled: _.Z.isLocalVideoDisabled(S.id)
     }), I.push(b));
-    let D = null != (a = c.Z.getStreamForUser(e, P)) ? a : c.Z.getActiveStreamForUser(e, P);
+    let D = null != (o = c.Z.getStreamForUser(e, P)) ? o : c.Z.getActiveStreamForUser(e, P);
     if (null != D && D.channelId === this.channelId) {
       let t = (0, l.V9)(D),
         n = this.getParticipant(t),

@@ -117,25 +117,25 @@ let x = function(e) {
       }), T.set(e.id, i)
     } else if ((0, m.J8)(e) && null != n) {
       let i = u.ZP.getByName(n),
-        o = [r, {
+        a = [r, {
           type: h.MO.TAG,
           value: n.trim().toLocaleLowerCase()
         }];
       if (null != t) {
         let e = t.name.trim().toLocaleLowerCase();
-        null != e && "" !== e && o.push({
+        null != e && "" !== e && a.push({
           type: h.MO.GUILD_NAME,
           value: e
         })
       }
-      if (null == i) return void T.set(e.id, o);
-      o.push({
+      if (null == i) return void T.set(e.id, a);
+      a.push({
         type: h.MO.CORRELATED_EMOJI,
         value: i.surrogates
-      }), i.forEachDiversity(e => o.push({
+      }), i.forEachDiversity(e => a.push({
         type: h.MO.CORRELATED_EMOJI,
         value: e.surrogates
-      })), T.set(e.id, o)
+      })), T.set(e.id, a)
     }
   },
   j = (e, t, n) => {
@@ -216,8 +216,8 @@ let F = () => {
     let {
       guildId: r,
       sticker: i
-    } = e, o = null != (t = N.get(r)) ? t : [];
-    R(r, [...null != (n = o.filter(e => e.id !== i.id)) ? n : [], i]), x(i)
+    } = e, a = null != (t = N.get(r)) ? t : [];
+    R(r, [...null != (n = a.filter(e => e.id !== i.id)) ? n : [], i]), x(i)
   },
   z = e => {
     let {
@@ -239,8 +239,8 @@ let F = () => {
     (null != (t = N.get(n)) ? t : []).filter(e => null == r.find(t => t.id === e.id)).forEach(e => {
       I.delete(e.id), null != T && T.delete(e.id)
     });
-    let o = r.map(e => i(e));
-    o.forEach(e => x(e)), R(n, o)
+    let a = r.map(e => i(e));
+    a.forEach(e => x(e)), R(n, a)
   };
 class X extends(r = Chunk442837.ZP.Store) {
   initialize() {

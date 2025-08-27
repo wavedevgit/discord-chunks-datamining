@@ -16,14 +16,14 @@ function s(e) {
     renderComponents: n
   } = e, {
     message: s
-  } = (0, o.CJ)();
+  } = (0, a.CJ)();
   return null == t || 0 === t.length ? null : (0, r.jsxs)("div", {
-    className: a.container,
+    className: o.container,
     children: [(0, r.jsx)("div", {
-      className: a.children,
+      className: o.children,
       children: n(t)
     }), null != s ? (0, r.jsx)(i.ZP, {
-      className: a.error,
+      className: o.error,
       message: s,
       component: e
     }) : null]

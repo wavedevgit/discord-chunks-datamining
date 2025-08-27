@@ -2,7 +2,7 @@
 /** chunk id: 250919, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  F: () => o
+  F: () => a
 }), require("./415506.js");
 var Chunk153102 = require("./153102.js");
 
@@ -14,7 +14,7 @@ function i(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class o {
+class a {
   attach(e) {
     let {
       stores: t

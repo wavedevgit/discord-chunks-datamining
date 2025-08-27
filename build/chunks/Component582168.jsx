@@ -49,7 +49,7 @@ function c(e) {
       height: c,
       disabled: u
     }).then(e => {
-      let t = null != e ? (0, o.N7)(e) : null;
+      let t = null != e ? (0, a.N7)(e) : null;
       return f(t), {
         stream: e,
         streamId: t
@@ -61,7 +61,7 @@ function c(e) {
           stream: t,
           streamId: n
         } = e;
-        s(t), null != n && (0, o.jC)(n)
+        s(t), null != n && (0, a.jC)(n)
       })
     }
   }, [t, n, c, u]), null == d ? (0, r.jsx)("div", {
@@ -70,7 +70,7 @@ function c(e) {
       width: n,
       height: c
     }
-  }) : (0, r.jsx)(a.Z, {
+  }) : (0, r.jsx)(o.Z, {
     streamId: d,
     style: {
       width: n,

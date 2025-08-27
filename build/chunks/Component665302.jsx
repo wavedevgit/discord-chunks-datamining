@@ -19,9 +19,9 @@ function c(e) {
     onDismiss: c,
     showCloseButton: u
   } = e;
-  return (0, r.jsxs)(o.qXd, {
+  return (0, r.jsxs)(a.qXd, {
     className: l.backNotice,
-    children: [u && (0, r.jsx)(o.RyX, {
+    children: [u && (0, r.jsx)(a.RyX, {
       onClick: c,
       noticeType: s.kVF.BACK_TO_PREVIOUS_SCREEN
     }), (0, r.jsxs)(i.zx, {
@@ -31,10 +31,10 @@ function c(e) {
       color: i.zx.Colors.WHITE,
       size: i.zx.Sizes.NONE,
       onClick: n,
-      children: [(0, r.jsx)(a.Z, {
+      children: [(0, r.jsx)(o.Z, {
         width: 16,
         height: 16,
-        direction: a.Z.Directions.LEFT,
+        direction: o.Z.Directions.LEFT,
         className: l.__invalid_backArrow
       }), t]
     })]

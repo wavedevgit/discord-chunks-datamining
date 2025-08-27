@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk913527 = require("./913527.js"),
   l = require.n(Chunk913527),
   Chunk873546 = require("./873546.js"),
@@ -219,7 +219,7 @@ class F extends Chunk647438.Component {
         color: "text-secondary",
         children: this.renderExpirationDate()
       })]
-    }), o = (0, r.jsx)(d.zxk, {
+    }), a = (0, r.jsx)(d.zxk, {
       variant: "primary",
       disabled: false,
       size: "md",
@@ -228,7 +228,7 @@ class F extends Chunk647438.Component {
         startingScreen: this.referralsSent.size === A.Q ? C.K.REMINDER : C.K.SELECT_FRIENDS
       }),
       text: D.intl.string(D.t.Lm2nFR)
-    }), a = this.isSender ? o : i, s = "SOCIAL" === t ? (0, r.jsx)(d.Eep, {
+    }), o = this.isSender ? a : i, s = "SOCIAL" === t ? (0, r.jsx)(d.Eep, {
       src: j.Z,
       height: 84,
       width: 144,
@@ -271,7 +271,7 @@ class F extends Chunk647438.Component {
             })]
           }), (0, r.jsx)("div", {
             className: x.buttonContainerDMEmbedXP,
-            children: a
+            children: o
           })]
         })]
       })]
@@ -289,7 +289,7 @@ class F extends Chunk647438.Component {
         });
       default:
         return (0, Chunk951288.jsxs)("div", {
-          className: a()(Chunk269143.tile, Chunk269143.container),
+          className: o()(Chunk269143.tile, Chunk269143.container),
           children: [(0, Chunk951288.jsx)("div", {
             className: Chunk269143.media,
             children: this.renderMedia()
@@ -320,14 +320,14 @@ function V(e) {
     canRenderReferralEmbed: n,
     compact: i
   } = e, {
-    trialOffer: o,
-    isResolving: a,
+    trialOffer: a,
+    isResolving: o,
     referralsSent: s
   } = (0, u.cj)([I.Z], () => ({
     trialOffer: n ? I.Z.getRelevantUserTrialOffer(t) : null,
     isResolving: !!n && I.Z.isResolving(t),
     referralsSent: I.Z.getRecipientStatus()
-  }), [n, t]), l = g.default.getCurrentUser(), d = (0, u.e7)([g.default], () => null != o && (0, v.I5)(true !== l && o.user_id === l.id ? l : g.default.getUser(o.user_id))), h = (0, u.e7)([E.Z], () => {
+  }), [n, t]), l = g.default.getCurrentUser(), d = (0, u.e7)([g.default], () => null != a && (0, v.I5)(true !== l && a.user_id === l.id ? l : g.default.getUser(a.user_id))), h = (0, u.e7)([E.Z], () => {
     var e;
     return d ? null == (e = E.Z.getPremiumTypeSubscription()) ? true : e.trialEndsAt : null
   }), {
@@ -335,10 +335,10 @@ function V(e) {
   } = (0, p.ZP)(_.Z.SHARE_NITRO_EMBED), b = T.ZP.useExperiment({
     location: "ConnectedReferralTrialEmbed"
   });
-  return a ? (0, r.jsx)(f.OR, {
+  return o ? (0, r.jsx)(f.OR, {
     isHorizontal: !c.tq
-  }) : n && null != o && true !== l ? (0, r.jsx)(F, {
-    trialOffer: o,
+  }) : n && null != a && true !== l ? (0, r.jsx)(F, {
+    trialOffer: a,
     referralsSent: s,
     currentUser: l,
     recipientHasNitro: d,

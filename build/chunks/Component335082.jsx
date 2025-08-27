@@ -23,7 +23,7 @@ function h(e) {
     label: t,
     sublabel: n,
     id: i,
-    checked: a,
+    checked: o,
     onChange: s
   } = e;
   return (0, r.jsxs)("div", {
@@ -31,17 +31,17 @@ function h(e) {
     children: [(0, r.jsxs)("label", {
       className: p.settingSwitchLabel,
       htmlFor: i,
-      children: [(0, r.jsx)(o.X6q, {
+      children: [(0, r.jsx)(a.X6q, {
         variant: "heading-md/semibold",
         children: t
-      }), (0, r.jsx)(o.Text, {
+      }), (0, r.jsx)(a.Text, {
         variant: "text-md/normal",
         color: "header-secondary",
         children: n
       })]
-    }), (0, r.jsx)(o.rsf, {
+    }), (0, r.jsx)(a.rsf, {
       id: i,
-      checked: a,
+      checked: o,
       onChange: s
     })]
   })
@@ -53,7 +53,7 @@ function m() {
     n = e => {
       s.no.updateSetting(e)
     },
-    a = [{
+    o = [{
       value: Chunk524437.GI.ACTIVITY_STATUS_ON,
       name: Chunk388032.intl.string(Chunk388032.t.UzGMHx)
     }, {
@@ -186,21 +186,21 @@ let y = function(e) {
   let {
     className: t
   } = e;
-  return (0, r.jsx)(o.hjN, {
+  return (0, r.jsx)(a.hjN, {
     className: t,
-    children: (0, r.jsxs)(o.y5t, {
+    children: (0, r.jsxs)(a.y5t, {
       forceLevel: 1,
-      component: (0, r.jsx)(o.X6q, {
+      component: (0, r.jsx)(a.X6q, {
         className: p.formTitle,
         variant: "heading-xl/semibold",
         color: "header-primary",
         children: _.intl.string(_.t.Cq98yM)
       }),
-      children: [(0, r.jsx)(E, {}), (0, r.jsx)(o.$i$, {
+      children: [(0, r.jsx)(E, {}), (0, r.jsx)(a.$i$, {
         className: p.divider
-      }), (0, r.jsx)(m, {}), (0, r.jsx)(o.$i$, {
+      }), (0, r.jsx)(m, {}), (0, r.jsx)(a.$i$, {
         className: p.divider
-      }), (0, r.jsx)(g, {}), (0, r.jsx)(o.$i$, {
+      }), (0, r.jsx)(g, {}), (0, r.jsx)(a.$i$, {
         className: p.divider
       }), (0, r.jsx)(b, {})]
     })

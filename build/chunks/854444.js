@@ -7,7 +7,7 @@ require.d(exports, {
 }), require("./388685.js"), require("./539854.js");
 var Chunk647438 = require("./647438.js"),
   Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  a = require.n(Chunk392711),
   Chunk524437 = require("./524437.js"),
   Chunk317381 = require("./317381.js"),
   Chunk853856 = require("./853856.js"),
@@ -33,7 +33,7 @@ let A = [Chunk317381.ZP, Chunk853856.Z, Chunk924301.ZP, Chunk601070.Z, Chunk5694
 function C() {
   let [e, t] = Chunk647438.useState(() => N());
   return Chunk647438.useEffect(() => {
-    let e = o().throttle(() => exports(N()), 100);
+    let e = a().throttle(() => exports(N()), 100);
     return A.forEach(t => t.addChangeListener(e)), () => A.forEach(t => t.removeChangeListener(e))
   }, []), module
 }
@@ -58,12 +58,12 @@ function N() {
     require.parentId in Chunk924301 || (Chunk924301[require.parentId] = []), Chunk924301[require.parentId].push(Chunk392711)
   }
 
-  function f(n, a) {
+  function f(n, o) {
     let {
       isCollapsed: s,
       isMuted: l
-    } = a;
-    return o()(n).map(n => {
+    } = o;
+    return a()(n).map(n => {
       var c;
       if (!n.isPrivate() && !E.Z.can(S.Pl.VIEW_CHANNEL, n)) return null;
       let u = null != r && (r.id === n.id || i === n.id),
@@ -75,16 +75,16 @@ function N() {
         v = {
           id: n.id,
           record: n,
-          category: a,
+          category: o,
           position: e[n.id].order,
           threadIds: h,
-          threadCount: o().size(h),
+          threadCount: a().size(h),
           isCollapsed: g,
           isMuted: y,
           isFirstVoiceChannel: false,
           subtitle: (0, I.Bz)(n, g, false)
         };
-      return u || f || !o().isEmpty(p) || b.ZP.getMentionCount(n.id) > 0 ? v : t && y || s && (y || l || (0, _.vd)(n.type) || (0, _.vc)(n.type) && false === b.ZP.hasUnread(n.id)) ? null : v
+      return u || f || !a().isEmpty(p) || b.ZP.getMentionCount(n.id) > 0 ? v : t && y || s && (y || l || (0, _.vd)(n.type) || (0, _.vc)(n.type) && false === b.ZP.hasUnread(n.id)) ? null : v
     }).filter(v.lm).sortBy(e => {
       let {
         record: t
@@ -105,24 +105,24 @@ function N() {
         return null == Chunk77498 && (g = Chunk569471(Chunk317381, this)), Chunk77498
       }
     },
-    C = o()(module).values().filter(e => e.type === a.Dd.CATEGORY).sortBy(e => e.order).map(e => {
+    C = a()(module).values().filter(e => e.type === o.Dd.CATEGORY).sortBy(e => e.order).map(e => {
       var t;
       let {
         id: n,
         order: r
-      } = e, i = l.Z.getCategoryRecord(n), o = null != (t = u[n]) ? t : [], a = O.ZP.isChannelMuted(T._, n), s = p.Z.isCollapsed(n), c = null;
+      } = e, i = l.Z.getCategoryRecord(n), a = null != (t = u[n]) ? t : [], o = O.ZP.isChannelMuted(T._, n), s = p.Z.isCollapsed(n), c = null;
       return {
-        isMuted: a,
+        isMuted: o,
         isCollapsed: s,
         record: i,
         id: n,
         position: r,
-        getChannelRecords: () => o,
-        getShownChannelIds: () => o.map(e => e.id),
-        getShownChannelAndThreadIds: () => o.map(e => e.id),
-        isEmpty: () => 0 === o.length,
+        getChannelRecords: () => a,
+        getShownChannelIds: () => a.map(e => e.id),
+        getShownChannelAndThreadIds: () => a.map(e => e.id),
+        isEmpty: () => 0 === a.length,
         get channelList() {
-          return null == c && (c = f(o, this)), c
+          return null == c && (c = f(a, this)), c
         }
       }
     }).value(),

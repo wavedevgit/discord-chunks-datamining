@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk446673 = require("./446673.jsx"),
   Chunk304789 = require("./304789.jsx"),
@@ -47,7 +47,7 @@ function U(e) {
   let {
     containerContext: t,
     image: n,
-    title: o,
+    title: a,
     description: k,
     enableSocialProof: U,
     analyticsLocationSection: G,
@@ -115,12 +115,12 @@ function U(e) {
                 text: et
               }
             }), (0, r.jsx)(d.X6q, {
-              className: a()(P.title, {
+              className: o()(P.title, {
                 [P.withBadge]: null != et
               }),
               variant: "heading-xl/bold",
               color: "header-primary",
-              children: o
+              children: a
             }), (0, r.jsx)(d.Text, {
               variant: "text-md/medium",
               color: "text-secondary",
@@ -159,7 +159,7 @@ function U(e) {
       onClick: Z,
       isVisible: true
     }), (0, r.jsxs)("div", {
-      className: a()(w.container, z()),
+      className: o()(w.container, z()),
       children: [(0, r.jsx)(d.olH, {
         "data-migration-pending": true,
         onClick: Z,
@@ -173,11 +173,11 @@ function U(e) {
           src: n.url,
           alt: "Nitro Perk"
         }), (0, r.jsx)(d.X6q, {
-          className: a()(w.title, {
+          className: o()(w.title, {
             [w.titleNoSocialProof]: !K
           }),
           variant: "heading-xl/bold",
-          children: o
+          children: a
         }), K && (0, r.jsx)(A.Z, {
           affinities: Y
         }), (0, r.jsx)(d.Text, {

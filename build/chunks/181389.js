@@ -10,7 +10,7 @@ require("./349033.js");
 var Chunk607802 = require("./607802.js"),
   Chunk532428 = require("./532428.js");
 require("./72006.js"), require("./981631.js");
-let a = {
+let o = {
   [Chunk532428.Qe.FILTER]: Chunk395041.w,
   [Chunk532428.Qe.ANSWER]: Chunk395041.O
 };
@@ -29,7 +29,7 @@ function l() {
     let r = e[n];
     t.push({
       strategy: (e, t, r) => s(r, e, t, n),
-      component: a[r.componentType]
+      component: o[r.componentType]
     })
   }), exports
 }

@@ -9,7 +9,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk67136 = require("./67136.jsx"),
   Chunk368072 = require("./368072.jsx"),
   Chunk777207 = require("./777207.jsx"),
@@ -33,9 +33,9 @@ function h(e) {
     subtitle: y,
     maxBenefits: O = p
   } = e;
-  return (0, r.jsx)(a.tE, {
+  return (0, r.jsx)(o.tE, {
     children: (0, r.jsxs)("div", {
-      className: o()(d.container, f.hoverCard),
+      className: a()(d.container, f.hoverCard),
       tabIndex: 0,
       onClick: () => {
         null != g ? g() : null != h && h()

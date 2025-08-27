@@ -60,7 +60,7 @@ let C = new Chunk710845.Z("AuthenticationStore"),
   q = [];
 
 function X(e) {
-  let t = null != o.getToken(),
+  let t = null != a.getToken(),
     n = null != c.K.get(T.B1h);
   C.verbose(e, {
     tokenManagerHasToken: t,
@@ -120,11 +120,11 @@ function $() {
 }
 
 function ee(e, t) {
-  X("setAuthToken called."), (null == t || t !== P) && o.removeAnalyticsToken(), o.setToken(e, t)
+  X("setAuthToken called."), (null == t || t !== P) && a.removeAnalyticsToken(), a.setToken(e, t)
 }
 
 function et(e) {
-  M = e, o.setAnalyticsToken(e)
+  M = e, a.setAnalyticsToken(e)
 }
 
 function en() {
@@ -145,11 +145,11 @@ function ei(e) {
   k = T.u34.NONE, B = "", Z = false, F = null, r = null, t || (eu(), en(), Q(false))
 }
 
-function eo() {
+function ea() {
   k = Chunk981631.u34.NONE
 }
 
-function ea(e) {
+function eo(e) {
   let {
     token: t
   } = e;
@@ -195,9 +195,9 @@ function ed(e) {
     sms: n,
     webauthn: r,
     backup: i,
-    totp: o
+    totp: a
   } = e;
-  null != t && (B = t, Z = n, F = null != r ? r : null, H = i, V = o, eu()), k = T.u34.MFA_STEP
+  null != t && (B = t, Z = n, F = null != r ? r : null, H = i, V = a, eu()), k = T.u34.MFA_STEP
 }
 
 function ef() {
@@ -223,11 +223,11 @@ function em(e) {
 function eg(e) {
   let t = e.fingerprint;
   null == L ? null != t ? (b.default.track(T.rMx.USER_FINGERPRINT_CHANGED, {
-    old_fingerprint: null != j ? (0, a.s)(j) : null,
-    new_fingerprint: (0, a.s)(t)
+    old_fingerprint: null != j ? (0, o.s)(j) : null,
+    new_fingerprint: (0, o.s)(t)
   }), L = t, j = t, c.K.set(N, L)) : Q() : null != t && L !== t && b.default.track(T.rMx.EXTERNAL_FINGERPRINT_DROPPED, {
-    fingerprint: (0, a.s)(L),
-    dropped_fingerprint: (0, a.s)(t)
+    fingerprint: (0, o.s)(L),
+    dropped_fingerprint: (0, o.s)(t)
   })
 }
 
@@ -244,11 +244,11 @@ function eb(e) {
     user: n,
     sessionId: r,
     authSessionIdHash: i,
-    analyticsToken: o,
-    auth: a,
+    analyticsToken: a,
+    auth: o,
     staticAuthSessionId: s
   } = e;
-  X("handleConnectionOpen called"), O.Z.setUser(n.id, n.username, null != (t = n.email) ? t : true, (0, E.Z)(n)), w = r, D = i, x = s, et(o), P = n.id, true !== a && (G = a.authenticator_types), c.K.set(R, n.id)
+  X("handleConnectionOpen called"), O.Z.setUser(n.id, n.username, null != (t = n.email) ? t : true, (0, E.Z)(n)), w = r, D = i, x = s, et(a), P = n.id, true !== o && (G = o.authenticator_types), c.K.set(R, n.id)
 }
 
 function ey(e) {
@@ -257,9 +257,9 @@ function ey(e) {
     user: n,
     sessionId: r,
     analyticsToken: i,
-    token: o
+    token: a
   } = e;
-  O.Z.setUser(n.id, n.username, null != (t = n.email) ? t : true, (0, E.Z)(n)), w = r, M = i, ee(o, n.id), null != i && et(i), $(), P = n.id, c.K.set(R, n.id)
+  O.Z.setUser(n.id, n.username, null != (t = n.email) ? t : true, (0, E.Z)(n)), w = r, M = i, ee(a, n.id), null != i && et(i), $(), P = n.id, c.K.set(R, n.id)
 }
 
 function eO(e) {
@@ -396,7 +396,7 @@ let eD = new ew(Chunk570140.Z, {
   CONNECTION_CLOSED: eO,
   AUTH_SESSION_CHANGE: eI,
   LOGIN: er,
-  LOGIN_SUCCESS: ea,
+  LOGIN_SUCCESS: eo,
   LOGIN_FAILURE: es,
   LOGIN_MFA_STEP: ed,
   LOGIN_MFA: ef,
@@ -405,7 +405,7 @@ let eD = new ew(Chunk570140.Z, {
   LOGIN_PASSWORD_RECOVERY_PHONE_VERIFICATION: eh,
   LOGIN_PHONE_IP_AUTHORIZATION_REQUIRED: em,
   LOGIN_RESET: ei,
-  LOGIN_STATUS_RESET: eo,
+  LOGIN_STATUS_RESET: ea,
   LOGIN_SUSPENDED_USER: eR,
   LOGOUT: eS,
   FINGERPRINT: eg,

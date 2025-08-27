@@ -3,8 +3,8 @@
 "use strict";
 var Chunk169774 = require("./169774.js"),
   Chunk581079 = require("./581079.js"),
-  o = Chunk169774.isBrowser("IE <= 9");
+  a = Chunk169774.isBrowser("IE <= 9");
 module.exports = function(e) {
   var t, n = null;
-  return !o && document.implementation && document.implementation.createHTMLDocument && ((t = document.implementation.createHTMLDocument("foo")).documentElement || i(false), t.documentElement.innerHTML = e, n = t.getElementsByTagName("body")[0]), n
+  return !a && document.implementation && document.implementation.createHTMLDocument && ((t = document.implementation.createHTMLDocument("foo")).documentElement || i(false), t.documentElement.innerHTML = e, n = t.getElementsByTagName("body")[0]), n
 }

@@ -3,16 +3,16 @@
 "use strict";
 require.d(exports, {
   h: () => s,
-  r: () => a
+  r: () => o
 }), require("./388685.js"), require("./415506.js");
 var Chunk524437 = require("./524437.js"),
   Chunk960048 = require("./960048.js"),
   Chunk874893 = require("./874893.js"),
-  a = function(e) {
+  o = function(e) {
     return e.BACKGROUND_GRADIENT_PRESET = "backgroundGradientPreset", e.STANDARD_BACKGROUND_THEME = "standardBackgroundTheme", e.CUSTOM_BACKGROUND_GRADIENT = "customBackgroundGradient", e
   }({});
 let s = e => {
-  let t = Object.entries(o.yW).find(t => {
+  let t = Object.entries(a.yW).find(t => {
     let [n, r] = t;
     return r === e
   });

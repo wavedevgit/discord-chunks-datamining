@@ -10,8 +10,8 @@ module.exports = function(e) {
     n >= "0" && n <= "9" || "_" !== n && t.ignoreMatch()
   }
   let i = /[+-]?((\.\d+)|(\d+)(\.\d*)?)/,
-    o = /[GM]\s*\d+(\.\d+)?/,
-    a = /T\s*\d+/,
+    a = /[GM]\s*\d+(\.\d+)?/,
+    o = /T\s*\d+/,
     s = /O\s*\d+/,
     l = /O<.+>/,
     c = /[ABCUVWXYZ]\s*/,
@@ -29,14 +29,14 @@ module.exports = function(e) {
     contains: [e.COMMENT(/\(/, /\)/), e.COMMENT(/;/, /$/), e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, e.C_NUMBER_MODE, {
       scope: "title.function",
       variants: [{
-        match: t.concat(n, o)
-      }, {
-        begin: o,
-        "on:begin": r
-      }, {
         match: t.concat(n, a)
       }, {
         begin: a,
+        "on:begin": r
+      }, {
+        match: t.concat(n, o)
+      }, {
+        begin: o,
         "on:begin": r
       }]
     }, {

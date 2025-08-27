@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk349361 = require("./349361.js"),
   Chunk891727 = require("./891727.js");
 
@@ -54,8 +54,8 @@ function _(e, t) {
   if (null == e) return {};
   var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -63,8 +63,8 @@ function _(e, t) {
 function p(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -72,7 +72,7 @@ function h(e) {
   var {
     children: t,
     gradientClassName: n
-  } = e, o = _(e, ["children", "gradientClassName"]);
+  } = e, a = _(e, ["children", "gradientClassName"]);
   let c = i.useRef(null),
     [d, p] = i.useState(true),
     h = () => {
@@ -82,14 +82,14 @@ function h(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.h2, f(u({
       fade: true
-    }, o), {
+    }, a), {
       ref: e => {
         null != e && (c.current = e, h())
       },
       onScroll: h,
       children: t
     })), (0, r.jsx)("div", {
-      className: a()(l.containerScrollGradient, n),
+      className: o()(l.containerScrollGradient, n),
       "data-shown": d
     })]
   })

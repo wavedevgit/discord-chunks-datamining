@@ -7,21 +7,21 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk817002 = require("./817002.js");
 let l = Chunk647438.forwardRef(function(e, t) {
   let {
     children: n,
     className: i,
-    style: o,
+    style: a,
     noBorder: l = false,
     participantUserId: c
   } = e;
   return (0, r.jsx)("div", {
-    className: a()(i, s.tile, {
+    className: o()(i, s.tile, {
       [s.noBorder]: l
     }),
-    style: o,
+    style: a,
     ref: t,
     "data-selenium-video-tile": c,
     children: n

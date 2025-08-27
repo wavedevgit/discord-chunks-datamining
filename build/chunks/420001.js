@@ -76,10 +76,10 @@ let v = y(E({}, Chunk126226.Z), {
   focusMode: Chunk590921.QZ.MANUAL,
   matches(e, t, n, r, i) {
     if (i.commands === p.L8.DISABLED || i.commands === p.L8.OLD_BUILT_INS || n.length < 2 || !c.Xk.getSetting()) returnfalse;
-    let o = O(n);
-    return null != o && o.cleanedQuery.length > 0
+    let a = O(n);
+    return null != a && a.cleanedQuery.length > 0
   },
-  queryResults(e, t, n, a, l) {
+  queryResults(e, t, n, o, l) {
     if (!c.Xk.getSetting()) return h.K;
     let u = O(n);
     if (null == u) return h.K;
@@ -96,7 +96,7 @@ let v = y(E({}, Chunk126226.Z), {
       }, {
         limit: p.AQ,
         placeholderCount: p.YP,
-        scoreMethod: o.p.COMMAND_OR_APPLICATION,
+        scoreMethod: a.p.COMMAND_OR_APPLICATION,
         allowFetch: l
       });
     if (null == f) return h.K;
@@ -123,20 +123,20 @@ let v = y(E({}, Chunk126226.Z), {
       selectedIndex: n,
       guild: r,
       channel: i,
-      query: o,
-      options: a,
+      query: a,
+      options: o,
       onHover: s,
       onClick: c
     } = e;
     return (0, _.HI)({
-      query: o,
+      query: a,
       selectedIndex: n,
       autocompletes: t,
       onHover: s,
       onClick: c,
       titleWithQuery: m.t.HFRoZW,
       titleWithoutQuery: m.intl.string(m.t["0hKkS0"]),
-      Component: a.commands === p.L8.OLD_BUILT_INS ? l.ZP.Command : l.ZP.NewCommand,
+      Component: o.commands === p.L8.OLD_BUILT_INS ? l.ZP.Command : l.ZP.NewCommand,
       getProps: e => {
         let {
           command: t,
@@ -166,16 +166,16 @@ let v = y(E({}, Chunk126226.Z), {
       index: n,
       type: r,
       options: i,
-      channel: o,
+      channel: a,
       guild: s
     } = e, l = h.Z.onSelect({
       results: t,
       index: n,
       type: r,
       options: i,
-      channel: o,
+      channel: a,
       guild: s,
-      location: a.Vh.SUGGESTION
+      location: o.Vh.SUGGESTION
     });
     return null == l ? null : y(E({}, l), {
       type: p.z2.COMMAND_SUGGESTION

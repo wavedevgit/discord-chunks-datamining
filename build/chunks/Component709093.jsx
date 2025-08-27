@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk304789 = require("./304789.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk410030 = require("./410030.js"),
@@ -33,7 +33,7 @@ function S(e) {
     isOneStepCheckout: t,
     headerText: n,
     step: i,
-    filteredBreadcrumbs: o
+    filteredBreadcrumbs: a
   } = e;
   if (t) return (0, r.jsx)("div", {
     className: E.oneStepCheckoutTextWrapper,
@@ -42,15 +42,15 @@ function S(e) {
       children: n
     })
   });
-  let a = o.length > 1;
+  let o = a.length > 1;
   return (0, r.jsxs)("div", {
     className: E.headerTextWrapper,
     children: [(0, r.jsx)(s.Text, {
       variant: "text-lg/semibold",
       children: n
-    }), a && (0, r.jsx)(f.Z, {
+    }), o && (0, r.jsx)(f.Z, {
       activeId: i,
-      breadcrumbs: o
+      breadcrumbs: a
     })]
   })
 }
@@ -113,15 +113,15 @@ let C = function(e) {
     Y = P ? "nitro-pink" : "nitro-green";
   return G ? (0, r.jsx)("div", {
     className: E.container,
-    children: (0, r.jsx)(a.$, {
+    children: (0, r.jsx)(o.$, {
       color: Y,
       className: E.headerContainer
     })
   }) : (0, r.jsxs)("div", {
     className: E.container,
-    children: [(0, r.jsxs)(a.$, {
+    children: [(0, r.jsxs)(o.$, {
       color: Y,
-      className: o()(E.headerContainer, {
+      className: a()(E.headerContainer, {
         [E.containerBottomPadding]: !V
       }),
       children: [(0, r.jsx)(A, {

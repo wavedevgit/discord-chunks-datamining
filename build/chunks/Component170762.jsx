@@ -24,10 +24,10 @@ let l = e => {
       className: s.content,
       children: (0, r.jsx)(i.Text, {
         variant: "text-xs/normal",
-        children: a.intl.string(a.t["xdRf6+"])
+        children: o.intl.string(o.t["xdRf6+"])
       })
     }), (0, r.jsx)(i.P3F, {
-      onClick: () => t(o.L.UNKNOWN),
+      onClick: () => t(a.L.UNKNOWN),
       children: (0, r.jsx)(i.Dio, {
         size: "md",
         color: "currentColor",

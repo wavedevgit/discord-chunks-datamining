@@ -10,25 +10,25 @@ var r = function(e) {
   return e[e.ExactMatch = 0] = "ExactMatch", e[e.PrefixMatch = 1] = "PrefixMatch", e
 }({});
 let i = e => RegExp("\\p{P}", "gu").test(null != e ? e : "") || " " === e || "" === e,
-  o = (e, t, n) => {
+  a = (e, t, n) => {
     if (n - t > e.length) returnfalse;
     let r = e.charAt(t - 1),
-      o = e.charAt(n + 1);
-    return i(r) && i(o)
+      a = e.charAt(n + 1);
+    return i(r) && i(a)
   },
-  a = (e, t) => i(e.charAt(t - 1)),
-  s = (e, t, n, r) => 1 === r ? a(e, t) : o(e, t, n),
+  o = (e, t) => i(e.charAt(t - 1)),
+  s = (e, t, n, r) => 1 === r ? o(e, t) : a(e, t, n),
   l = (e, t, n, r) => {
     if (0 === r) return {
       start: t,
       end: n,
       keyword: e.substring(t, n + 1)
     };
-    let o = n;
-    for (; o < e.length - 1 && !i(e.charAt(o + 1));) o++;
+    let a = n;
+    for (; a < e.length - 1 && !i(e.charAt(a + 1));) a++;
     return {
       start: t,
-      end: o,
-      keyword: e.substring(t, o + 1)
+      end: a,
+      keyword: e.substring(t, a + 1)
     }
   }

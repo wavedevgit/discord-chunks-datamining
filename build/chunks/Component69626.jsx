@@ -67,19 +67,19 @@ function C(e, t) {
   }), e
 }
 
-function N(e, t, n, i, o) {
+function N(e, t, n, i, a) {
   if (null == e) return;
   let d = () => {
     let r = p.Z.getChannel(e);
     if (null == r) return;
     let {
-      command: a,
+      command: o,
       application: s
     } = c.Xq({
       channel: r,
       type: "channel"
-    }, n, o);
-    if (null != a && a.untranslatedName === t) {
+    }, n, a);
+    if (null != o && o.untranslatedName === t) {
       var d, f;
       E.S.dispatch(b.CkL.FOCUS_CHANNEL_TEXT_AREA, {
         channelId: e
@@ -97,7 +97,7 @@ function N(e, t, n, i, o) {
         section: null
       }), l.Po({
         channelId: e,
-        command: a,
+        command: o,
         section: t,
         location: i
       })
@@ -108,7 +108,7 @@ function N(e, t, n, i, o) {
     confirmText: v.intl.string(v.t.VkKicX),
     cancelText: v.intl.string(v.t["ETE/oK"]),
     onConfirm: () => d(),
-    confirmButtonColor: a.zx.Colors.BRAND,
+    confirmButtonColor: o.zx.Colors.BRAND,
     onCloseCallback: () => {
       E.S.dispatch(b.CkL.FOCUS_CHANNEL_TEXT_AREA, {
         channelId: e
@@ -126,15 +126,15 @@ function R(e) {
   var t;
   let {
     node: n,
-    stateKey: a,
+    stateKey: o,
     children: s
-  } = e, l = (0, o.e7)([p.Z, g.Z], () => {
+  } = e, l = (0, a.e7)([p.Z, g.Z], () => {
     var e;
     return p.Z.getChannel(null != (e = n.channelId) ? e : g.Z.getChannelId())
   }, [n.channelId]), {
     hasSendMessagePerm: h,
     hasUseAppCommandsPerm: E
-  } = (0, o.cj)([m.Z], () => ({
+  } = (0, a.cj)([m.Z], () => ({
     hasSendMessagePerm: m.Z.can(b.Plq.SEND_MESSAGES, l),
     hasUseAppCommandsPerm: m.Z.can(b.Plq.USE_APPLICATION_COMMANDS, l)
   })), v = true !== l ? {
@@ -157,7 +157,7 @@ function R(e) {
     role: "link",
     onClick: A,
     children: [O.GI, s]
-  }, a) : (0, r.jsxs)("span", {
+  }, o) : (0, r.jsxs)("span", {
     children: [O.GI, s]
   })
 }
@@ -169,7 +169,7 @@ function P(e) {
     commandDescription: i,
     applicationId: l,
     onClick: c
-  } = e, d = (0, o.e7)([g.Z], () => g.Z.getChannelId()), f = e => {
+  } = e, d = (0, a.e7)([g.Z], () => g.Z.getChannelId()), f = e => {
     null == e || e.stopPropagation(), N(d, n, t, u.Vh.POPULAR_COMMANDS, l), null == c || c(t)
   };
   return (0, r.jsx)(s.ua7, {
@@ -181,9 +181,9 @@ function P(e) {
         onMouseEnter: t,
         onMouseLeave: i
       } = e;
-      return (0, r.jsxs)(a.zx, {
-        color: a.Tt.PRIMARY,
-        size: a.Ph.ICON,
+      return (0, r.jsxs)(o.zx, {
+        color: o.Tt.PRIMARY,
+        size: o.Ph.ICON,
         onClick: f,
         onMouseEnter: t,
         onMouseLeave: i,

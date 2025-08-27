@@ -62,7 +62,7 @@ function v(e, t) {
 let I = 300,
   T = 2e3,
   S = e => "AudioContextSettingsMigrated:".concat(e),
-  A = e => e === E.Yn.STREAM ? o.h.STREAM : o.h.USER;
+  A = e => e === E.Yn.STREAM ? a.h.STREAM : a.h.USER;
 
 function C(e, t, n) {
   return e[t].volume !== A(n) || e[t].muted || e[t].soundboardMuted || delete e[t], e
@@ -76,9 +76,9 @@ function N(e) {
       let [n, {
         modifiedAt: r
       }] = e, [i, {
-        modifiedAt: o
+        modifiedAt: a
       }] = t;
-      return Number(r) - Number(o)
+      return Number(r) - Number(a)
     }),
     i = n - I;
   for (let t = 0; t < i; t++) {
@@ -88,7 +88,7 @@ function N(e) {
 }
 
 function R(e) {
-  return a.JY.create({
+  return o.JY.create({
     muted: false,
     volume: A(e)
   })
@@ -100,25 +100,25 @@ function P() {
     for (let [n, r] of Object.entries(_.Z.getState().settingsByContext)) {
       let i = (0, m.z)(n);
       if (null == i) continue;
-      let o = e[i],
-        a = String(Date.now()),
+      let a = e[i],
+        o = String(Date.now()),
         s = {};
       for (let [e, t] of Object.entries(r.localMutes)) s[e] = {
         muted: t,
         volume: A(n),
-        modifiedAt: a,
+        modifiedAt: o,
         soundboardMuted: false
       };
       for (let [e, t] of Object.entries(r.localVolumes)) s[e] = v(y({
         muted: false,
-        modifiedAt: a
+        modifiedAt: o
       }, s[e]), {
         volume: (0, m.r)(t, n)
       });
-      let l = Object.keys(o).length;
+      let l = Object.keys(a).length;
       for (let [e, [n, r]] of Object.entries(s).entries()) {
         if (I - l - (e + 1) <= 0) break;
-        null == o[n] && (t = true, o[n] = r)
+        null == a[n] && (t = true, a[n] = r)
       }
     }
     return s.K.set(S(f.default.getId()), true), t
@@ -127,11 +127,11 @@ function P() {
 
 function w(e, t, n, r) {
   var i;
-  let o = !(arguments.length > 4) || true === arguments[4] || arguments[4],
-    a = (0, m.z)(n);
-  if (null == a) returnfalse;
-  let s = e[a];
-  return s[t] = null != (i = s[t]) ? i : R(n), r(s[t]), s[t].modifiedAt = String(Date.now()), o && C(s, t, n), N(s), true
+  let a = !(arguments.length > 4) || true === arguments[4] || arguments[4],
+    o = (0, m.z)(n);
+  if (null == o) returnfalse;
+  let s = e[o];
+  return s[t] = null != (i = s[t]) ? i : R(n), r(s[t]), s[t].modifiedAt = String(Date.now()), a && C(s, t, n), N(s), true
 }
 
 function D() {
@@ -166,10 +166,10 @@ function U() {
   Chunk675478.hW.updateAsync("audioContextSettings", e => {
     let t = false;
     return (0, h.$E)((n, r, i) => {
-      let o = w(e, r, n, e => {
+      let a = w(e, r, n, e => {
         Object.assign(e, i)
       });
-      t = t || o
+      t = t || a
     }), t
   }, Chunk675478.fy.INFREQUENT_USER_ACTION)
 }

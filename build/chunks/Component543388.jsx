@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk913527 = require("./913527.js"),
-  o = require.n(Chunk913527),
+  a = require.n(Chunk913527),
   Chunk481060 = require("./481060.js"),
   Chunk925329 = require("./925329.jsx"),
   Chunk388032 = require("./388032.jsx"),
@@ -63,12 +63,12 @@ function p(e) {
       game: t
     }), (0, r.jsxs)("div", {
       className: c.textContainer,
-      children: [(0, r.jsx)(a.Text, {
+      children: [(0, r.jsx)(o.Text, {
         className: c.timestamp,
         variant: "text-xs/medium",
         color: "text-muted",
-        children: o()(n).format("LLLL")
-      }), (0, r.jsx)(a.Text, {
+        children: a()(n).format("LLLL")
+      }), (0, r.jsx)(o.Text, {
         variant: "text-md/normal",
         color: "interactive-active",
         children: l.intl.format(l.t.J3s8JC, {
@@ -85,7 +85,7 @@ function h(e) {
     timestamp: n,
     children: i
   } = e;
-  return (0, r.jsx)(a.ua7, {
+  return (0, r.jsx)(o.ua7, {
     hideOnClick: true,
     position: "top",
     "aria-label": l.intl.string(l.t["5nMcv7"]),
@@ -95,7 +95,7 @@ function h(e) {
       application: t,
       timestamp: n
     }),
-    children: e => (0, r.jsx)(a.P3F, _(d({
+    children: e => (0, r.jsx)(o.P3F, _(d({
       tag: "span"
     }, e), {
       children: i
@@ -108,16 +108,16 @@ function m(e) {
     application: t,
     timestamp: n,
     compact: i,
-    children: o
+    children: a
   } = e;
   return (0, r.jsxs)(h, {
     application: t,
     timestamp: n,
-    children: [i ? null : (0, r.jsx)(a.iWm, {
+    children: [i ? null : (0, r.jsx)(o.iWm, {
       className: c.gameIcon,
       size: "custom",
       width: 14,
       height: 14
-    }), o]
+    }), a]
   })
 }

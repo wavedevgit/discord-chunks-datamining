@@ -7,14 +7,14 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk913527 = require("./913527.js"),
-  o = require.n(Chunk913527),
+  a = require.n(Chunk913527),
   Chunk692547 = require("./692547.js"),
   Chunk481060 = require("./481060.js"),
   Chunk788080 = require("./788080.js"),
   Chunk800530 = require("./800530.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk304451 = require("./304451.js");
-let f = e => o()().diff(o().unix(e), "days");
+let f = e => a()().diff(a().unix(e), "days");
 
 function _(e) {
   let {
@@ -78,10 +78,10 @@ function m(e) {
   } = e, n = {
     default: (0, r.jsx)(s.MqZ, {
       size: "xs",
-      color: a.Z.colors.TEXT_LINK.css
+      color: o.Z.colors.TEXT_LINK.css
     }),
     danger: (0, r.jsx)(s.aNP, {
-      color: a.Z.colors.STATUS_DANGER
+      color: o.Z.colors.STATUS_DANGER
     })
   };
   return null != t && t in n ? (0, r.jsx)("div", {

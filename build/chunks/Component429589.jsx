@@ -9,7 +9,7 @@ require("./647438.js");
 var Chunk481060 = require("./481060.js"),
   Chunk103450 = require("./103450.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,7 +25,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      a(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -35,8 +35,8 @@ function l(e, t) {
   if (null == e) return {};
   var n, r, i = c(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -44,8 +44,8 @@ function l(e, t) {
 function c(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -53,16 +53,16 @@ function u(e) {
   var {
     activity: t,
     embeddedActivity: n,
-    user: a,
+    user: o,
     onAction: c,
     location: u,
     variant: d = "secondary",
     size: f = "sm"
   } = e, _ = l(e, ["activity", "embeddedActivity", "user", "onAction", "location", "variant", "size"]);
-  let p = (0, o.e)({
+  let p = (0, a.e)({
     activity: null != t ? t : true,
     embeddedActivity: n,
-    user: a,
+    user: o,
     onGameJoin: c,
     location: u
   });

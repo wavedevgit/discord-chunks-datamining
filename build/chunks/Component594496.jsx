@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk512722 = require("./512722.js"),
-  o = require.n(Chunk512722),
+  a = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk295474 = require("./295474.js"),
@@ -78,9 +78,9 @@ function j(e) {
   let {
     guild: x,
     nameplateEnabled: j
-  } = e, M = (0, a.e7)([O.default], () => {
+  } = e, M = (0, o.e7)([O.default], () => {
     let e = O.default.getCurrentUser();
-    return o()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
+    return a()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
   }), {
     pendingAvatar: k,
     pendingNickname: U,
@@ -90,14 +90,14 @@ function j(e) {
     pendingThemeColors: F,
     errors: V,
     guild: H
-  } = (0, a.cj)([S.Z], () => {
+  } = (0, o.cj)([S.Z], () => {
     let {
       pendingAvatar: e,
       pendingNickname: t,
       pendingBio: n,
       pendingPronouns: r,
       pendingBanner: i,
-      pendingThemeColors: o
+      pendingThemeColors: a
     } = S.Z.getAllPending();
     return {
       pendingAvatar: e,
@@ -105,7 +105,7 @@ function j(e) {
       pendingBanner: i,
       pendingBio: n,
       pendingPronouns: r,
-      pendingThemeColors: o,
+      pendingThemeColors: a,
       errors: S.Z.getErrors(),
       guild: S.Z.getGuild()
     }
@@ -113,10 +113,10 @@ function j(e) {
     userId: M.id,
     image: k
   }), W = null != x ? x : H;
-  o()(null != W, "guild should not be null");
+  a()(null != W, "guild should not be null");
   let K = (0, l.gS)(W.id),
-    z = (0, a.e7)([y.ZP], () => null == W.id ? null : y.ZP.getMember(W.id, M.id)),
-    q = (0, a.e7)([b.Z], () => b.Z.getGuildMemberProfile(M.id, W.id)),
+    z = (0, o.e7)([y.ZP], () => null == W.id ? null : y.ZP.getMember(W.id, M.id)),
+    q = (0, o.e7)([b.Z], () => b.Z.getGuildMemberProfile(M.id, W.id)),
     X = v.ZP.canUsePremiumProfileCustomization(M),
     Q = (0, c.gd)(k, null == z ? true : z.avatar),
     J = (0, c.f$)(G, null == q ? true : q.banner),

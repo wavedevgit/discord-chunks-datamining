@@ -114,7 +114,7 @@ function g() {
       email: t,
       firstName: n,
       lastName: r,
-      billingAddress: o
+      billingAddress: a
     } = e.details;
     i.Z.dispatch({
       type: "BRAINTREE_TOKENIZE_PAYPAL_SUCCESS",
@@ -122,12 +122,12 @@ function g() {
       email: t,
       billingAddress: {
         name: "".concat(n, " ").concat(r),
-        line1: o.line1,
-        line2: o.line2,
-        city: o.city,
-        state: o.state,
-        country: o.countryCode,
-        postalCode: o.postalCode
+        line1: a.line1,
+        line2: a.line2,
+        city: a.city,
+        state: a.state,
+        country: a.countryCode,
+        postalCode: a.postalCode
       }
     })
   }).catch(e => {
@@ -142,7 +142,7 @@ function g() {
       type: "BRAINTREE_TOKENIZE_PAYPAL_FAIL",
       message: t,
       code: n
-    }), a.q2(Error("Braintree Paypal Error: ".concat(t, " ").concat(n, " ").concat(r))))
+    }), o.q2(Error("Braintree Paypal Error: ".concat(t, " ").concat(n, " ").concat(r))))
   })
 }
 
@@ -172,7 +172,7 @@ function E() {
       type: "BRAINTREE_TOKENIZE_VENMO_FAIL",
       message: t,
       code: n
-    }), a.q2(Error("Braintree Venmo Error: ".concat(t, " ").concat(n, " ").concat(r))))
+    }), o.q2(Error("Braintree Venmo Error: ".concat(t, " ").concat(n, " ").concat(r))))
   })
 }
 

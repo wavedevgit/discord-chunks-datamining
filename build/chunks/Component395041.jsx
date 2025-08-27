@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk819439 = require("./819439.js"),
   Chunk624595 = require("./624595.js");
@@ -17,7 +17,7 @@ function c(e, t) {
   let {
     children: n
   } = e;
-  return (0, r.jsx)(a.Text, {
+  return (0, r.jsx)(o.Text, {
     variant: "text-sm/medium",
     className: t,
     children: n
@@ -27,7 +27,7 @@ let u = e => {
     let t = (0, s.$V)({
       location: "SearchTokens"
     });
-    return c(e, o()(l.searchFilter, {
+    return c(e, a()(l.searchFilter, {
       [l.searchTokenTopLevel]: t
     }))
   },
@@ -35,7 +35,7 @@ let u = e => {
     let t = (0, s.$V)({
       location: "SearchTokens"
     });
-    return c(e, o()(l.searchAnswer, {
+    return c(e, a()(l.searchAnswer, {
       [l.searchTokenTopLevel]: t
     }))
   }

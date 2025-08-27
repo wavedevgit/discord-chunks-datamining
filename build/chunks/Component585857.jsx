@@ -41,16 +41,16 @@ function _(e) {
     text: t,
     quest: n,
     sourceQuestContent: c
-  } = e, d = (0, a.O5)();
+  } = e, d = (0, o.O5)();
   return (0, r.jsx)(i.P3F, {
     className: u.showConnectionsButton,
     onClick: () => {
       d({
         questId: n.id,
         questContent: s.jn.QUEST_BAR_V2,
-        questContentCTA: a.jZ.VIEW_CONSOLE_CONNECTIONS_LINK,
+        questContentCTA: o.jZ.VIEW_CONSOLE_CONNECTIONS_LINK,
         sourceQuestContent: c
-      }), o.Z.open(l.oAB.CONNECTIONS)
+      }), a.Z.open(l.oAB.CONNECTIONS)
     },
     children: (0, r.jsx)(i.Text, {
       "aria-label": t,

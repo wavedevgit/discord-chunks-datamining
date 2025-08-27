@@ -3,10 +3,10 @@
 "use strict";
 let r;
 require.d(exports, {
-  Z: () => eo
+  Z: () => ea
 }), require("./539854.js"), require("./388685.js"), require("./583741.js"), require("./290780.js"), require("./35282.js"), require("./781311.js");
 var i, Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk433517 = require("./433517.js"),
   Chunk570140 = require("./570140.js"),
@@ -54,7 +54,7 @@ let w = "seenQSTutorial",
   V = [];
 
 function H() {
-  k = Chunk430824.Z.getGuildCount() >= 3 || a().size(Chunk592125.Z.getMutablePrivateChannels()) >= 20, F = []
+  k = Chunk430824.Z.getGuildCount() >= 3 || o().size(Chunk592125.Z.getMutablePrivateChannels()) >= 20, F = []
 }
 
 function Y(e) {
@@ -120,28 +120,28 @@ function K() {
       })
   }
   let i = [],
-    o = new Set,
-    a = [];
+    a = new Set,
+    o = [];
   for (let e = 1; module < V.length; e += 1) {
     let t = W(V[module]);
-    null != exports && (exports.type !== Chunk212819.h8.TEXT_CHANNEL && exports.type !== Chunk212819.h8.VOICE_CHANNEL || Chunk496675.Z.can(Chunk981631.Plq.VIEW_CHANNEL, exports.record)) && (a.push(exports), Chunk392711.add(exports.record.id))
+    null != exports && (exports.type !== Chunk212819.h8.TEXT_CHANNEL && exports.type !== Chunk212819.h8.VOICE_CHANNEL || Chunk496675.Z.can(Chunk981631.Plq.VIEW_CHANNEL, exports.record)) && (o.push(exports), Chunk392711.add(exports.record.id))
   }
-  a.length > 0 && i.push((0, Chunk212819.o6)(Chunk388032.intl.string(Chunk388032.t["80lOZ2"])), ...a);
-  let s = Y(e => e === r || V.includes(e) || o.has(e));
+  o.length > 0 && i.push((0, Chunk212819.o6)(Chunk388032.intl.string(Chunk388032.t["80lOZ2"])), ...o);
+  let s = Y(e => e === r || V.includes(e) || a.has(e));
   if (Chunk442837.length > 0)
     for (let e of (i.push((0, Chunk212819.o6)(Chunk388032.intl.string(Chunk388032.t["4B63jY"]))), Chunk442837)) Chunk392711.add(module.record.id), i.push(module);
-  let l = Chunk306680.ZP.getMentionChannelIds().filter(e => e !== r && !V.includes(e) && !o.has(e)).map(e => W(e)).filter(Chunk823379.lm).reverse();
+  let l = Chunk306680.ZP.getMentionChannelIds().filter(e => e !== r && !V.includes(e) && !a.has(e)).map(e => W(e)).filter(Chunk823379.lm).reverse();
   if (Chunk433517.length > 0)
     for (let e of (i.push((0, Chunk212819.o6)(Chunk388032.intl.string(Chunk388032.t["61Df19"]))), Chunk433517)) Chunk392711.add(module.record.id), i.push(module);
   if (null != require) {
     let e = Chunk984933.ZP.getSelectableChannelIds(require).filter(e => {
       let t = m.Z.getChannel(e);
-      return !(null == t || e === r || V.includes(e) || o.has(e) || S.ZP.isChannelMuted(t.guild_id, e) || null != t.parent_id && S.ZP.isChannelMuted(t.guild_id, t.parent_id)) && (0, f.d)(t)
+      return !(null == t || e === r || V.includes(e) || a.has(e) || S.ZP.isChannelMuted(t.guild_id, e) || null != t.parent_id && S.ZP.isChannelMuted(t.guild_id, t.parent_id)) && (0, f.d)(t)
     }).map(e => W(e)).filter(e => e);
     Object.values(Chunk601070.Z.getActiveJoinedUnreadThreadsForGuild(require)).forEach(t => {
       for (let n in t) {
         let t = W(n);
-        null == t || o.has(t.record.id) || e.push(t)
+        null == t || a.has(t.record.id) || e.push(t)
       }
     }), module.length > 0 && (i.push((0, Chunk212819.o6)(Chunk388032.intl.string(Chunk388032.t.ieCAhI))), i = i.concat(module))
   }
@@ -185,10 +185,10 @@ function q(e) {
   let {
     query: n,
     queryMode: i
-  } = e, o = null != (t = T.Z.getGuildId()) ? t : true, a = new Set(["user:".concat(h.default.getId())]);
-  null != o && a.add("guild:".concat(o)), r = null != r ? r : new u.ZP(J, L, null != i ? x : D, {
+  } = e, a = null != (t = T.Z.getGuildId()) ? t : true, o = new Set(["user:".concat(h.default.getId())]);
+  null != a && o.add("guild:".concat(a)), r = null != r ? r : new u.ZP(J, L, null != i ? x : D, {
     frecencyBoosters: true,
-    blacklist: a,
+    blacklist: o,
     allowSnowflake: true
   }), B = null, Z = n.length, U = i, r.search(n)
 }
@@ -223,25 +223,25 @@ function ee(e) {
   var t, n;
   let {
     query: i,
-    queryMode: o
+    queryMode: a
   } = e;
   if (null == r) returnfalse;
-  if (U !== o) {
-    r.setResultTypes(null != o ? [o] : L), r.setLimit(null != o ? x : D);
+  if (U !== a) {
+    r.setResultTypes(null != a ? [a] : L), r.setLimit(null != a ? x : D);
     let e = null != (t = T.Z.getGuildId()) ? t : true;
-    o === u.h8.USER && null != e ? r.setOptions({
+    a === u.h8.USER && null != e ? r.setOptions({
       userFilters: {
         guild: e,
         friends: true
       }
-    }, true) : o === u.h8.VOICE_CHANNEL ? r.setOptions({
+    }, true) : a === u.h8.VOICE_CHANNEL ? r.setOptions({
       voiceChannelGuildFilter: null
     }, true) : r.setOptions({
       userFilters: null,
       voiceChannelGuildFilter: true
     }, true)
   }
-  if ((U = o) === u.h8.USER) {
+  if ((U = a) === u.h8.USER) {
     let e = null != (n = T.Z.getGuildId()) ? n : null;
     r.search(i, e)
   } else r.search(i, true)
@@ -310,4 +310,4 @@ let ei = new er(Chunk570140.Z, {
     QUICKSWITCHER_SWITCH_TO: en,
     CHANNEL_SELECT: X
   }),
-  eo = ei
+  ea = ei

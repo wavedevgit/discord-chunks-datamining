@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   l = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
@@ -42,7 +42,7 @@ function M(e) {
   let {
     giftCode: t,
     application: n,
-    sku: o,
+    sku: a,
     subscriptionPlan: s,
     selectedGiftStyle: l,
     onClose: u,
@@ -50,19 +50,19 @@ function M(e) {
     giftRecipient: p,
     giftMessageError: g,
     isSendingMessage: y
-  } = e, [O, I] = i.useState(f.kO8.Modes.DEFAULT), S = (0, c.e7)([T.Z], () => T.Z.enabled), M = _ || null != l && null != p, U = (null == o ? true : o.productLine) === w.POd.COLLECTIBLES, G = (0, E.Z)(), {
+  } = e, [O, I] = i.useState(f.kO8.Modes.DEFAULT), S = (0, c.e7)([T.Z], () => T.Z.enabled), M = _ || null != l && null != p, U = (null == a ? true : a.productLine) === w.POd.COLLECTIBLES, G = (0, E.Z)(), {
     selectedGiftingPromotionReward: B
-  } = (0, P.wD)(), Z = null == G ? true : G.giftPurchaseConfirmation, F = (0, b.tK)(null == B ? true : B.skuId), V = (0, b.a5)(s) && null != F && null != Z, H = () => null != s ? s.skuId : null != o ? o.id : null, Y = () => {
+  } = (0, P.wD)(), Z = null == G ? true : G.giftPurchaseConfirmation, F = (0, b.tK)(null == B ? true : B.skuId), V = (0, b.a5)(s) && null != F && null != Z, H = () => null != s ? s.skuId : null != a ? a.id : null, Y = () => {
     let e;
     return null != g ? x.intl.string(x.t.qB8ayc) : null == s ? null : (e = s.interval === D.rV.MONTH ? M ? V ? Z.monthGiftText : x.t["4ZJ+7e"] : x.t["P+z55e"] : M ? V ? Z.yearGiftText : x.t.p0pZXF : x.t.bXqk3t, x.intl.format(e, {
       skuName: (0, N.aq)(s.id),
       intervalCount: s.intervalCount
     }))
   }, W = () => null != p || _ && null == g ? x.intl.string(x.t.zOmK9P) : null != g ? x.intl.string(x.t.d1lrmZ) : x.intl.string(x.t["/s1xR0"]), K = (e, t) => {
-    null != o && (0, C.dM)(new v.Z({
+    null != a && (0, C.dM)(new v.Z({
       code: t,
       maxUses: 1
-    }), o), (0, A.JG)(e, () => I(f.kO8.Modes.SUCCESS), () => I(f.kO8.Modes.ERROR)), setTimeout(() => {
+    }), a), (0, A.JG)(e, () => I(f.kO8.Modes.SUCCESS), () => I(f.kO8.Modes.ERROR)), setTimeout(() => {
       I(f.kO8.Modes.DEFAULT)
     }, j)
   }, z = () => {
@@ -135,7 +135,7 @@ function M(e) {
       type: f.RAz.PULSING_ELLIPSIS
     })]
   }) : (0, r.jsxs)("div", {
-    className: a()(L.confirmation, {
+    className: o()(L.confirmation, {
       [L.seasonalConfirmationPadding]: V
     }),
     children: [null != n ? (0, r.jsx)(m.Z, {
@@ -145,7 +145,7 @@ function M(e) {
       skuId: H()
     }) : null, (0, r.jsx)(f.X6q, {
       variant: "heading-lg/semibold",
-      className: a()({
+      className: o()({
         [L.header]: null == l && !U,
         [L.headerCustomGifting]: null != l && !U
       }),
@@ -161,7 +161,7 @@ let k = e => {
   i.useEffect(() => {
     p.Z.fetchRelationships(), (0, y._)()
   }, []);
-  let [o, a] = i.useState(), [s, d] = i.useState(false), [m, E] = i.useState(false), {
+  let [a, o] = i.useState(), [s, d] = i.useState(false), [m, E] = i.useState(false), {
     userAffinities: b,
     isLoading: v
   } = (0, c.cj)([O.Z], () => ({
@@ -187,19 +187,19 @@ let k = e => {
         renderLeading: () => v ? (0, r.jsx)(f.$jN, {
           type: f.RAz.PULSING_ELLIPSIS
         }) : null,
-        value: o,
+        value: a,
         onChange: e => {
-          a(e), d(false)
+          o(e), d(false)
         },
         options: w.map(e => ({
           value: e,
           label: "".concat(R.ZP.getUserTag(e))
         }))
       }), (0, r.jsx)(u.z, {
-        disabled: null == o,
+        disabled: null == a,
         loading: m,
         onClick: () => {
-          E(true), (0, g.YD)(o, t).then(() => {
+          E(true), (0, g.YD)(a, t).then(() => {
             n(), (0, _.Ou)()
           }).catch(() => {
             d(true), E(false)

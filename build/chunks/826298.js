@@ -10,7 +10,7 @@ var Chunk895924 = require("./895924.js"),
   Chunk809090 = require("./809090.jsx"),
   Chunk944877 = require("./944877.jsx"),
   Chunk689079 = require("./689079.js");
-let s = e => e.type === r.Qi.BUILT_IN ? o.Z : i.Z;
+let s = e => e.type === r.Qi.BUILT_IN ? a.Z : i.Z;
 
 function l(e) {
   return "".concat(e / 16, "rem")
@@ -24,10 +24,10 @@ function c(e, t) {
     let e = t.lastIndexOf(" ", i);
     e >= 0 ? (t = t.substring(0, e), r = true) : t = t.substring(0, i)
   } else t = t.substring(0, t.length);
-  let o = t.split(" ", a.Vd + 1);
-  return o.length > a.Vd && (r = true, o.pop()), t = o.join(" "), (n.length > t.length || t.endsWith(" ")) && (r = true, t = t.trimEnd()), {
+  let a = t.split(" ", o.Vd + 1);
+  return a.length > o.Vd && (r = true, a.pop()), t = a.join(" "), (n.length > t.length || t.endsWith(" ")) && (r = true, t = t.trimEnd()), {
     text: t,
-    parts: o,
+    parts: a,
     hasSpaceTerminator: r
   }
 }

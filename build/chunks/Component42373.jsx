@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   Chunk680018 = require("./680018.jsx"),
   Chunk304789 = require("./304789.jsx"),
@@ -100,11 +100,11 @@ let C = e => {
       descriptionCta: t,
       onClick: n,
       debouncedOnClickAnalytics: i,
-      enablePremiumBrandRefreshDesign: o
+      enablePremiumBrandRefreshDesign: a
     } = e, s = (0, _.ZP)(), c = (0, u.wj)(s), f = c ? d.Tt.WHITE : d.Tt.BRAND, p = () => {
       i(), n()
     };
-    return o ? (0, r.jsx)("div", {
+    return a ? (0, r.jsx)("div", {
       className: O.bentoBoxButton,
       children: (0, r.jsx)(l.z, {
         variant: "secondary",
@@ -115,7 +115,7 @@ let C = e => {
       "data-migration-pending": true,
       look: d.iL.OUTLINED,
       color: f,
-      className: a()(y.bentoBoxButton, c ? y.bentoBoxButtonWhite : y.bentoBoxButtonBrand),
+      className: o()(y.bentoBoxButton, c ? y.bentoBoxButtonWhite : y.bentoBoxButtonBrand),
       onClick: p,
       children: t
     })
@@ -123,7 +123,7 @@ let C = e => {
   N = e => {
     let t, {
         name: n,
-        title: o,
+        title: a,
         description: l,
         descriptionCta: u,
         previewImage: d,
@@ -155,7 +155,7 @@ let C = e => {
       Z = x ? O : y;
     t = x ? D === g.y$.LARGE ? "heading-xxl/bold" : "heading-xl/bold" : D === g.y$.SMALL ? "heading-xl/extrabold" : "heading-xxl/extrabold";
     let F = () => (0, r.jsxs)("div", {
-        className: a()(Z.textBox, Z["".concat(D)]),
+        className: o()(Z.textBox, Z["".concat(D)]),
         children: [(0, r.jsxs)("div", {
           children: [null != w && (0, r.jsx)("div", {
             className: Z.badge,
@@ -167,8 +167,8 @@ let C = e => {
           }), (0, r.jsx)(f.X6q, {
             variant: t,
             color: "header-primary",
-            className: a()(Z.header, !x && Z["".concat(D)]),
-            children: o
+            className: o()(Z.header, !x && Z["".concat(D)]),
+            children: a
           })]
         }), (0, r.jsx)(f.Text, {
           variant: "text-md/medium",
@@ -183,14 +183,14 @@ let C = e => {
         })]
       }),
       V = () => (0, r.jsx)("div", {
-        className: a()(Z.boxArtContainer, Z["".concat(D)]),
+        className: o()(Z.boxArtContainer, Z["".concat(D)]),
         children: (0, r.jsx)(p.Z, {
           playsInline: true,
           preload: v ? "auto" : "none",
           muted: true,
           poster: d,
           loop: true,
-          className: a()(Z.boxVideo, {
+          className: o()(Z.boxVideo, {
             [N]: null != N
           }),
           ref: j,
@@ -207,7 +207,7 @@ let C = e => {
         children: [(0, r.jsx)(V, {}), (0, r.jsx)(F, {})]
       }),
       W = {
-        className: a()(x ? O.backgroundColor : k, Z.boxContainer, Z["".concat(D)], x && O.gradientBackground),
+        className: o()(x ? O.backgroundColor : k, Z.boxContainer, Z["".concat(D)], x && O.gradientBackground),
         onMouseEnter: G,
         onFocus: G,
         onBlur: B,

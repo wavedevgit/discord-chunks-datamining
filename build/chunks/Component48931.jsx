@@ -16,7 +16,7 @@ function l(e) {
     onClose: t
   } = e, {
     refreshCategories: n
-  } = (0, o.Z)();
+  } = (0, a.Z)();
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(i.xBx, {
       className: s.header,
@@ -24,9 +24,9 @@ function l(e) {
         className: s.closeButton,
         onClick: t
       })
-    }), (0, r.jsx)(a.Z, {
+    }), (0, r.jsx)(o.Z, {
       onRetry: n,
-      errorOrigin: a.i.GIFT_MODAL
+      errorOrigin: o.i.GIFT_MODAL
     })]
   })
 }

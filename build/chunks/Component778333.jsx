@@ -27,14 +27,14 @@ function b(e) {
     invite: n,
     message: b,
     getAcceptInviteContext: y
-  } = e, O = (0, o.e7)([f.default], () => f.default.getId()), v = (null == (t = n.inviter) ? true : t.id) === O, I = n.state === m.r2o.ACCEPTING, {
+  } = e, O = (0, a.e7)([f.default], () => f.default.getId()), v = (null == (t = n.inviter) ? true : t.id) === O, I = n.state === m.r2o.ACCEPTING, {
     analyticsLocations: T
-  } = (0, c.ZP)(l.Z.INVITE_EMBED), S = (0, o.e7)([p.Z], () => {
+  } = (0, c.ZP)(l.Z.INVITE_EMBED), S = (0, a.e7)([p.Z], () => {
     var e;
     return null != n.inviter && p.Z.isFriend(null == (e = n.inviter) ? true : e.id)
   }), A = i.useCallback(() => {
     let e = "noop";
-    null != n.inviter && null != _.Z.getDMFromUserId(n.inviter.id) && (e = "transition", a.Z.openPrivateChannel({
+    null != n.inviter && null != _.Z.getDMFromUserId(n.inviter.id) && (e = "transition", o.Z.openPrivateChannel({
       recipientIds: [n.inviter.id]
     })), (0, s.r$)({
       invite: n,

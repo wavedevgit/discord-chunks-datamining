@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk906732 = require("./906732.jsx"),
@@ -32,7 +32,7 @@ let g = e => {
   return (0, r.jsx)(l.Gt, {
     value: E,
     children: (0, r.jsxs)("div", {
-      className: o()(b.container, t),
+      className: a()(b.container, t),
       children: [(0, r.jsxs)("div", {
         className: b.textContainer,
         children: [(0, r.jsx)(s.X6q, {
@@ -55,7 +55,7 @@ let g = e => {
             textOverride: f.intl.string(f.t.Ve9Ge3),
             textClassName: _.giftButtonCTA
           },
-          color: a.zx.Colors.CUSTOM,
+          color: o.zx.Colors.CUSTOM,
           premiumModalAnalyticsLocation: i
         })]
       }), (0, r.jsx)("img", {

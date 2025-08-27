@@ -18,7 +18,7 @@ let d = function(e) {
     closeLayer: t,
     guild: n,
     isVisible: d
-  } = e, f = (0, a.q_F)({
+  } = e, f = (0, o.q_F)({
     transform: d ? "translateY(-100%)" : "translateY(0%)",
     opacity: +!!d,
     config: {
@@ -37,7 +37,7 @@ let d = function(e) {
           className: u.guildIcon,
           guild: n,
           size: s.Z.Sizes.LARGER
-        }), (0, r.jsx)(a.X6q, {
+        }), (0, r.jsx)(o.X6q, {
           className: u.guildName,
           variant: "text-lg/bold",
           children: n.name
@@ -53,7 +53,7 @@ let d = function(e) {
         },
         closeLayer: t,
         pauseAnimation: !d,
-        size: o.zx.Sizes.LARGE
+        size: a.zx.Sizes.LARGE
       })]
     })
   })

@@ -13,7 +13,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   s = require.n(Chunk392711),
   Chunk481060 = require("./481060.js"),
@@ -63,13 +63,13 @@ function h(e) {
     width: t,
     height: n,
     opacity: i,
-    className: a
+    className: o
   } = e, l = {
     width: f(t),
     opacity: null != i ? i : s().random(.02, .08)
   };
   return null != n && (l.height = f(n)), (0, r.jsx)("div", {
-    className: o()(a, {
+    className: a()(o, {
       [c.blob]: true
     }),
     style: l
@@ -80,7 +80,7 @@ function m(e) {
   let t, {
       groupStart: n = false,
       compact: i = false,
-      attachmentSpecs: a,
+      attachmentSpecs: o,
       usernameWidth: u,
       usernameOpacity: f,
       className: m,
@@ -99,7 +99,7 @@ function m(e) {
   }) : i && (t = (0, r.jsxs)(r.Fragment, {
     children: [i && (0, r.jsx)(h, {
       width: E,
-      className: o()({
+      className: a()({
         [c.compactTimestamp]: true,
         [c.hidden]: !n
       })
@@ -112,7 +112,7 @@ function m(e) {
     })]
   })), (0, r.jsxs)("div", {
     "aria-hidden": true,
-    className: o()(m, {
+    className: a()(m, {
       [c.wrapper]: true,
       [c.compact]: i,
       [c.cozy]: !i
@@ -127,13 +127,13 @@ function m(e) {
           opacity: .06
         }, t))
       })]
-    }), null != a && (0, r.jsx)("div", {
+    }), null != o && (0, r.jsx)("div", {
       className: c.attachmentContainer,
       children: (0, r.jsx)("div", {
         className: c.attachment,
         style: d({
           opacity: .03
-        }, a)
+        }, o)
       })
     })]
   })
@@ -149,17 +149,17 @@ function v(e) {
     messages: t,
     groupSpacing: n = 0,
     compact: i = false,
-    attachmentSpecs: o,
-    className: a
-  } = e, l = null != o ? o.last ? t - 1 : s().random(0, t - 1) : false, c = s().random(80, 120), u = s().random(.1, .2);
+    attachmentSpecs: a,
+    className: o
+  } = e, l = null != a ? a.last ? t - 1 : s().random(0, t - 1) : false, c = s().random(80, 120), u = s().random(.1, .2);
   return (0, r.jsx)(r.Fragment, {
     children: Array(t).fill(null).map((e, t) => (0, r.jsx)(m, {
       compact: i,
-      className: a,
+      className: o,
       usernameWidth: c,
       usernameOpacity: u,
       groupStart: 0 === t,
-      attachmentSpecs: t === l ? o : true,
+      attachmentSpecs: t === l ? a : true,
       style: 0 === t ? {
         marginTop: f(n)
       } : true

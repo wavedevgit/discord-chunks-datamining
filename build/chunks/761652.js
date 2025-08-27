@@ -3,15 +3,15 @@
 "use strict";
 require.d(exports, {
   GI: () => l,
-  Iv: () => o,
+  Iv: () => a,
   ME: () => r,
-  a4: () => a,
+  a4: () => o,
   jp: () => s,
   zy: () => i
 });
 let r = "@",
   i = "#",
-  o = ":",
-  a = "+:",
+  a = ":",
+  o = "+:",
   s = ":",
   l = "/"

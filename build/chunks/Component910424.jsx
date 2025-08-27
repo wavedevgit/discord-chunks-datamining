@@ -77,25 +77,25 @@ function y(e) {
   })), O = (0, i.e7)([f.Z], () => f.Z.getChannel(null == n ? true : n.channelId)), [v, I] = (0, u.wq)(O), T = (0, c.Aq)(), S = null != E && null != n && E.state !== p.jm8.ENDED && E.ownerId === n.ownerId, A = e => {
     null != n && (null == m || m(), s.default.selectVoiceChannel(n.channelId), S || (0, l.iV)(n, {
       forceMultiple: e
-    }), T.dispatch(p.CkL.POPOUT_CLOSE), _.S.dispatch(p.CkL.MODAL_CLOSE), a.Z.popAll())
+    }), T.dispatch(p.CkL.POPOUT_CLOSE), _.S.dispatch(p.CkL.MODAL_CLOSE), o.Z.popAll())
   };
   if (null == n) return null;
   let C = (0, u.P9)(I);
   return t ? C = h.intl.string(h.t.XvBdeX) : S && (C = h.intl.string(h.t.JH1SJy)), (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(o.zxk, {
+    children: [(0, r.jsx)(a.zxk, {
       size: "sm",
       variant: "active",
-      icon: o.hGI,
+      icon: a.hGI,
       text: C,
       disabled: t || S || !v,
       onClick: () => A(false),
       fullWidth: true
-    }), y && !S ? (0, r.jsx)(o.ua7, {
+    }), y && !S ? (0, r.jsx)(a.ua7, {
       text: h.intl.string(h.t.wCrzur),
-      children: e => (0, r.jsx)(o.hU, b(g({}, e), {
+      children: e => (0, r.jsx)(a.hU, b(g({}, e), {
         variant: "secondary",
         size: "sm",
-        icon: o.OgY,
+        icon: a.OgY,
         "aria-label": h.intl.string(h.t.wCrzur),
         onClick: () => {
           var t;

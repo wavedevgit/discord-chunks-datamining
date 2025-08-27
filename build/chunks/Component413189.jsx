@@ -48,14 +48,14 @@ function T(e) {
       chatWallpaper: k,
       isUpdatingChatWallpaperFlag: U,
       lastSetMessageId: G
-    } = (0, o.cj)([h.Z], () => ({
+    } = (0, a.cj)([h.Z], () => ({
       chatWallpaper: h.Z.getWallpaperById(D),
       isUpdatingChatWallpaperFlag: h.Z.isUpdatingChatWallpaperFlagForChannel(P.id),
       lastSetMessageId: h.Z.getLastSetWallpaperMessageIdForChannel(P.id)
     })),
     B = (0, E.Z)(P.id),
     Z = G === R.id,
-    F = (0, o.e7)([f.default], () => f.default.getCurrentUser()),
+    F = (0, a.e7)([f.default], () => f.default.getCurrentUser()),
     V = (null == F ? true : F.id) === R.author.id,
     H = (0, u.m)(O.p9.TIER_2),
     Y = m.t(P);
@@ -76,7 +76,7 @@ function T(e) {
     learnMoreLink: _.Z.getArticleURL(y.BhN.DM_WALLPAPERS)
   }) : C = v.intl.string(v.t["6JSOu7"]), (null == B ? true : B.isViewable) && Z && !V && (N = (0, r.jsx)("div", {
     className: I.action,
-    children: (0, r.jsx)(a.z, {
+    children: (0, r.jsx)(o.z, {
       variant: "primary",
       text: v.intl.string(Y ? v.t.o6850d : v.t["/ubFp6"]),
       loading: U,

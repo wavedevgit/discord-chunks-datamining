@@ -43,8 +43,8 @@ class h extends(r = Chunk647438.PureComponent) {
       color: t,
       children: n,
       iconSize: r,
-      className: o,
-      iconClassName: a
+      className: a,
+      iconClassName: o
     } = this.props;
     return (0, Chunk951288.jsxs)(Chunk600164.Z, {
       className: s()(Chunk9643.note, _[exports], Chunk647438),

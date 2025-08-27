@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk780384 = require("./780384.js"),
   Chunk481060 = require("./481060.js"),
   Chunk410030 = require("./410030.js"),
@@ -46,16 +46,16 @@ let h = e => {
         onMouseLeave: c
       } = e;
       return (0, r.jsx)("div", {
-        className: o()(p.wrapper, i),
+        className: a()(p.wrapper, i),
         children: (0, r.jsx)(s.tEY, {
           children: (0, r.jsx)("button", {
             onMouseEnter: l,
             onMouseLeave: c,
-            className: o()(p.inner, h),
+            className: a()(p.inner, h),
             type: "button",
             disabled: t,
             style: {
-              backgroundImage: "url('".concat((0, a.wj)(g) ? b.icon.darkSVG : b.icon.lightSVG, "')")
+              backgroundImage: "url('".concat((0, o.wj)(g) ? b.icon.darkSVG : b.icon.lightSVG, "')")
             },
             onClick: null != m ? m : () => E(n),
             "aria-label": b.name

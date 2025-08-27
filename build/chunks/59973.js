@@ -23,7 +23,7 @@ function l(e) {
         publishSource: true
       },
       r = n.publishSource,
-      o = true === r || r,
+      a = true === r || r,
       l = n.clientOffset,
       _ = n.getSourceClientOffset,
       p = e.getMonitor(),
@@ -42,14 +42,14 @@ function l(e) {
       d(E), h.pinSource(m);
       var b = h.getSourceType(m);
       return {
-        type: a.qu,
+        type: o.qu,
         payload: {
           itemType: b,
           item: E,
           sourceId: m,
           clientOffset: l || null,
           sourceClientOffset: g || null,
-          isSourcePublic: !!o
+          isSourcePublic: !!a
         }
       }
     }
@@ -67,7 +67,7 @@ function u(e) {
 }
 
 function d(e) {
-  (0, r.k)((0, o.Kn)(e), "Item must be an object.")
+  (0, r.k)((0, a.Kn)(e), "Item must be an object.")
 }
 
 function f(e, t) {

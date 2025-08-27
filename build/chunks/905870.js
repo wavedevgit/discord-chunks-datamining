@@ -54,14 +54,14 @@ class h extends Chunk147913.Z {
       let e = Chunk848479.Z.getPerfAttributedMemory();
       if (null == module) return;
       let t = [],
-        a = [],
+        o = [],
         s = [],
         u = [],
         d = Object.entries(module);
-      for (let [e, o] of(d.sort((e, t) => {
+      for (let [e, a] of(d.sort((e, t) => {
           var n, r;
-          let [, i] = e, [, o] = t;
-          return (null != (n = null == o ? true : o.total_allocation_kb) ? n : 0) - (null != (r = null == i ? true : i.total_allocation_kb) ? r : 0)
+          let [, i] = e, [, a] = t;
+          return (null != (n = null == a ? true : a.total_allocation_kb) ? n : 0) - (null != (r = null == i ? true : i.total_allocation_kb) ? r : 0)
         }), d.slice(0, 10))) null != Chunk626135 && (exports.push(module), Chunk70956.push(null != (n = Chunk626135.total_allocation_kb) ? require : 0), Chunk358085.push(null != (r = Chunk626135.allocation_count) ? Chunk147913 : 0), u.push(null != (i = Chunk626135.module_version) ? Chunk579806 : ""));
       let f = Chunk848479.Z.getPerfAttributedMemoryStats(),
         p = null == f ? true : f.events_dropped,

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk420660 = require("./420660.js"),
@@ -71,7 +71,7 @@ function P(e) {
   let {
     user: t,
     displayProfile: n,
-    guildId: o,
+    guildId: a,
     channelId: h,
     themeType: S,
     animateOnHover: C,
@@ -92,13 +92,13 @@ function P(e) {
   } = (0, s.cj)([_.Z], () => ({
     status: (0, c.Z)(G) ? O.Skl.STREAMING : _.Z.getStatus(t.id),
     isMobileOnline: _.Z.isMobileOnline(t.id)
-  })), F = true !== D ? D : B, V = [I.l.MODAL, I.l.MODAL_V2].includes(S) ? l.EFr.SIZE_120 : l.EFr.SIZE_80, H = a()(T.avatar, w), {
+  })), F = true !== D ? D : B, V = [I.l.MODAL, I.l.MODAL_V2].includes(S) ? l.EFr.SIZE_120 : l.EFr.SIZE_80, H = o()(T.avatar, w), {
     avatarDecorationSrc: Y,
     avatarSrc: W,
     eventHandlers: K
   } = (0, E.Z)({
     userId: t.id,
-    guildId: null != n ? n.guildId : o,
+    guildId: null != n ? n.guildId : a,
     size: V,
     animateOnHover: C
   }), z = (0, r.jsx)(R, {
@@ -117,7 +117,7 @@ function P(e) {
     className: H,
     children: z
   })) : (0, r.jsx)(l.P3F, N(A({}, K), {
-    className: a()(H, T.clickable),
+    className: o()(H, T.clickable),
     focusProps: {
       ringClassName: T.focusRing
     },

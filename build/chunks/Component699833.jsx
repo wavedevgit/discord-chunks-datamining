@@ -7,19 +7,19 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk913527 = require("./913527.js"),
-  o = require.n(Chunk913527),
+  a = require.n(Chunk913527),
   Chunk692547 = require("./692547.js"),
   Chunk481060 = require("./481060.js"),
   Chunk800530 = require("./800530.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk832467 = require("./832467.js");
-let d = e => o()().diff(o().unix(e), "days");
+let d = e => a()().diff(a().unix(e), "days");
 
 function f(e) {
-  var t, i, o, f, _;
+  var t, i, a, f, _;
   if (null == e.message.embeds || null == e.message.embeds[0].fields) return null;
   let p = e.message.embeds[0],
-    h = null != (o = null == (t = p.fields) ? true : t.find(e => e.rawName === l.Cg.CLASSIFICATION_ID)) ? o : true,
+    h = null != (a = null == (t = p.fields) ? true : t.find(e => e.rawName === l.Cg.CLASSIFICATION_ID)) ? a : true,
     m = null != (f = null == h ? true : h.rawValue) ? f : true,
     g = null != (_ = null == (i = p.fields) ? true : i.find(e => e.rawName === l.Cg.INCIDENT_TIMESTAMP)) ? _ : true,
     E = null == g || null == g.rawValue ? true : parseFloat(g.rawValue);
@@ -46,7 +46,7 @@ function f(e) {
         className: u.headerRow,
         children: [(0, r.jsx)(s.aNP, {
           className: u.warningIcon,
-          color: a.Z.colors.STATUS_DANGER
+          color: o.Z.colors.STATUS_DANGER
         }), (0, r.jsx)(s.Text, {
           variant: "text-md/semibold",
           children: c.intl.string(c.t["4CxGXl"])

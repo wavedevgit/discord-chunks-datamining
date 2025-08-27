@@ -2,12 +2,12 @@
 /** chunk id: 465240, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => a
+  A: () => o
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk706898 = require("./706898.jsx");
-let a = {
+let o = {
   title: "TabBar",
   stories: [{
     id: "tabbar",
@@ -16,19 +16,19 @@ let a = {
       let {
         look: t,
         type: n,
-        tabCount: a
+        tabCount: o
       } = e, [s, l] = i.useState("tab1"), c = Array.from({
-        length: a
+        length: o
       }, (e, t) => ({
         id: "tab".concat(t + 1),
         name: "Tab ".concat(t + 1)
       }));
-      return (0, r.jsx)(o.n, {
+      return (0, r.jsx)(a.n, {
         type: n,
         look: t,
         selectedItem: s,
         onItemSelect: l,
-        children: c.map(e => (0, r.jsx)(o.n.Item, {
+        children: c.map(e => (0, r.jsx)(a.n.Item, {
           id: e.id,
           children: e.name
         }, e.id))

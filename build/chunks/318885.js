@@ -39,12 +39,12 @@ function p(e) {
 }
 
 function h() {
-  let e, t, n, i, o, a = Chunk131951.Z.getGoLiveSource();
+  let e, t, n, i, a, o = Chunk131951.Z.getGoLiveSource();
   if (null != Chunk388627 && (e = Chunk388627.quality.resolution, t = Chunk388627.quality.frameRate, null != Chunk388627.desktopSource)) {
     var l, c;
     n = Chunk388627.desktopSource.soundshareSession;
     let e = null != Chunk388627.desktopSource.sourcePid ? Chunk594190.ZP.getGameForPID(Chunk388627.desktopSource.sourcePid) : null;
-    i = null != (l = null == module ? true : module.name) ? Chunk19780 : null, o = null != (c = null == module ? true : module.id) ? Chunk449224 : null
+    i = null != (l = null == module ? true : module.name) ? Chunk19780 : null, a = null != (c = null == module ? true : module.id) ? Chunk449224 : null
   }
   return {
     video_input_resolution: module,
@@ -58,11 +58,11 @@ function h() {
 function m(e, t) {
   var n, s, _;
   let h = arguments.length > 2 && true !== arguments[2] && arguments[2],
-    m = __OVERLAY__ ? c.Z.getGame() : (0, a.pL)(),
+    m = __OVERLAY__ ? c.Z.getGame() : (0, o.pL)(),
     g = r.ZP.getRunningGames().find(e => e.name === (null == m ? true : m.name)),
-    E = (null == g ? true : g.pid) != null ? o.default.getTrackedGameByPid(null == g ? true : g.pid) : null,
+    E = (null == g ? true : g.pid) != null ? a.default.getTrackedGameByPid(null == g ? true : g.pid) : null,
     b = null != (n = null == E ? true : E.source) ? n : null,
-    y = null != (_ = null != (s = null == E ? true : E.overlayMethod) ? s : o.default.getRenderMethod(null == g ? true : g.pid)) ? _ : null;
+    y = null != (_ = null != (s = null == E ? true : E.overlayMethod) ? s : a.default.getRenderMethod(null == g ? true : g.pid)) ? _ : null;
   switch (t = p({}, {
       overlay_game_source: b,
       overlay_game_name: null != m ? m.name : "Unknown Game",

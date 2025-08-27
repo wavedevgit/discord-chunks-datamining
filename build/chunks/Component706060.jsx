@@ -17,7 +17,7 @@ function u(e) {
     setting: t,
     hasChildren: n
   } = e;
-  return (0, r.jsx)(a.Text, {
+  return (0, r.jsx)(o.Text, {
     variant: n ? "text-md/bold" : "text-md/normal",
     children: t
   })
@@ -40,21 +40,21 @@ function d(e) {
       setting: t,
       hasChildren: false
     })
-  }, (0, o.Z)());
+  }, (0, a.Z)());
   let h = f ? (0, r.jsx)("div", {
     className: c.settingNodeChildren,
     children: n.sort((e, t) => e.setting.localeCompare(t.setting)).sort((e, t) => e.children.length - t.children.length).map(e => (0, r.jsx)(d, {
       setting: e.setting,
       children: e.children,
       depth: l + 1
-    }, (0, o.Z)()))
+    }, (0, a.Z)()))
   }) : null;
   return (0, r.jsxs)("div", {
     style: {
       marginLeft: 8 * l
     },
     className: c.settingNode,
-    children: [(0, r.jsxs)(a.P3F, {
+    children: [(0, r.jsxs)(o.P3F, {
       className: c.headerBar,
       onClick: p,
       children: [(0, r.jsx)(u, {
@@ -65,7 +65,7 @@ function d(e) {
         className: c.headerCaret
       })]
     }), h]
-  }, (0, o.Z)())
+  }, (0, a.Z)())
 }
 
 function f() {
@@ -108,7 +108,7 @@ function f() {
         setting: e.setting,
         children: e.children,
         depth: 1
-      }, (0, o.Z)()))
+      }, (0, a.Z)()))
     })]
   })
 }

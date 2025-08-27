@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk668757 = require("./668757.js"),
   Chunk147913 = require("./147913.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -15,7 +15,7 @@ function o(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class a extends Chunk147913.Z {
+class o extends Chunk147913.Z {
   _initialize() {
     if ((0, Chunk668757.X6)()) {
       let e = "https:".concat(window.GLOBAL_ENV.WEBAPP_ENDPOINT, "/bad-hash-delta");
@@ -24,7 +24,7 @@ class a extends Chunk147913.Z {
     }
   }
   constructor(...e) {
-    super(...e), o(this, "intervalID", true)
+    super(...e), a(this, "intervalID", true)
   }
 }
-let s = new a
+let s = new o

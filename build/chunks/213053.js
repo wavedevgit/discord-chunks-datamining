@@ -6,7 +6,7 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk866442 = require("./866442.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -64,7 +64,7 @@ function y(e) {
   return {
     profileThemeStyle: (0, r.useMemo)(() => {
       if (null == i || null == p || null == v || null == I) return b;
-      let e = (e, t) => (0, a.ho)(e, y, null, t);
+      let e = (e, t) => (0, o.ho)(e, y, null, t);
       return m({
         "--profile-gradient-primary-color": e(i),
         "--profile-gradient-secondary-color": e(p),
@@ -79,7 +79,7 @@ function y(e) {
         textMixAmount: 25
       }))
     }, [i, p, v, I, O, h, t, y]),
-    profileThemeClassName: o()((0, l.QeD)(t), null != n ? {
+    profileThemeClassName: a()((0, l.QeD)(t), null != n ? {
       [g[n]]: true
     } : true, {
       [d.e3]: null != i,

@@ -111,12 +111,12 @@ function F(e) {
   }, {
     divider: true,
     settings: [j.s6.SOCIAL_LINKS, j.s6.CLIENT_DEBUG_INFO]
-  }], o = {
+  }], a = {
     header: k.intl.string(k.t.SmHCFR),
     divider: true,
     settings: [j.s6.ACTIVITY_PRIVACY, j.s6.REGISTERED_GAMES, j.s6.OVERLAY]
   };
-  return t ? i : i.toSpliced(3, 0, o)
+  return t ? i : i.toSpliced(3, 0, a)
 }
 
 function V() {
@@ -144,7 +144,7 @@ function V() {
 }
 
 function H() {
-  var e, t, n, a;
+  var e, t, n, o;
   let I = (0, Chunk725727.YO)().length,
     P = (0, Chunk160913.U)(),
     L = (0, Chunk442837.e7)([Chunk663389.Z], () => Chunk663389.Z.getProps().impressionSource),
@@ -180,7 +180,7 @@ function H() {
     } = Chunk319828.Z.useExperiment({
       location: "settings"
     }),
-    J = null == (a = (0, Chunk880257.Z)()) || Chunk493544,
+    J = null == (o = (0, Chunk880257.Z)()) || Chunk493544,
     $ = (null == (t = (0, Chunk921157.s)()) ? true : exports.length) > 0,
     {
       hasBlockedUsers: ee,
@@ -193,7 +193,7 @@ function H() {
     {
       inputMode: er,
       activeInputProfile: ei,
-      isInputProfileCustom: eo
+      isInputProfileCustom: ea
     } = (0, Chunk442837.cj)([Chunk131951.Z], () => ({
       activeInputProfile: Chunk131951.Z.getActiveInputProfile(),
       inputMode: Chunk131951.Z.getMode(),
@@ -225,8 +225,8 @@ function H() {
     isEligibleForSensitiveContentDefaults: en,
     inputMode: er,
     activeInputProfile: ei,
-    isInputProfileCustom: eo
-  }), [q, G, ee, et, K, $, z, Q, Chunk839469, J, W, H, V, Z, Chunk388032, F, X, Chunk726985, Y, B, Chunk413182, Chunk906467, en, er, ei, eo])
+    isInputProfileCustom: ea
+  }), [q, G, ee, et, K, $, z, Q, Chunk839469, J, W, H, V, Z, Chunk388032, F, X, Chunk726985, Y, B, Chunk413182, Chunk906467, en, er, ei, ea])
 }
 
 function Y(e) {
@@ -235,7 +235,7 @@ function Y(e) {
   } = (0, L.E)(), n = H(), r = n[e], i = Object.fromEntries(Object.entries(n).filter(e => {
     let [t, n] = e;
     return n.section === r.section
-  })), o = Object.fromEntries(Object.entries(i).filter(e => {
+  })), a = Object.fromEntries(Object.entries(i).filter(e => {
     let [t, {
       parent: n,
       section: i
@@ -246,14 +246,14 @@ function Y(e) {
       parent: n
     }] = e;
     return [t, n]
-  })), a = new Set, s = e => {
+  })), o = new Set, s = e => {
     let t = i[e];
     if (null == t) return;
-    a.add(e);
+    o.add(e);
     let n = t.parent;
     null != n && s(n)
   }, l = e => {
-    for (let t of (a.add(e), Object.entries(o).filter(t => {
+    for (let t of (o.add(e), Object.entries(a).filter(t => {
         let [n, r] = t;
         return r === e
       }).map(e => {
@@ -262,13 +262,13 @@ function Y(e) {
       }))) l(t)
   };
   for (let e of t.filter(e => e in i))
-    if (!a.has(e)) {
+    if (!o.has(e)) {
       if (null != i[e].element && null == i[e].parent) {
-        a.clear();
+        o.clear();
         break
       }
-      Object.values(o).includes(e) && l(e), s(e)
-    } return a
+      Object.values(a).includes(e) && l(e), s(e)
+    } return o
 }
 
 function W(e, t, n) {
@@ -278,16 +278,16 @@ function W(e, t, n) {
 function K(e, t, n) {
   let r = [],
     i = Q(t),
-    o = z(t, new Set(Array.from(null != n ? n : []).filter(e => i.has(e))));
+    a = z(t, new Set(Array.from(null != n ? n : []).filter(e => i.has(e))));
   return e.forEach(e => {
     0 !== e.settings.length && (true === e.divider && r.push({
-      section: a.ID.DIVIDER
+      section: o.ID.DIVIDER
     }), null != e.header && r.push({
-      section: a.ID.HEADER,
+      section: o.ID.HEADER,
       label: e.header
     }), e.settings.forEach(e => {
       r.push(Z(G({}, t[e]), {
-        tabPredicate: () => null == n || W(e, n, o)
+        tabPredicate: () => null == n || W(e, n, a)
       }))
     }))
   }), r
@@ -334,7 +334,7 @@ function X(e) {
 function Q(e) {
   return new Map(Object.entries(e).filter(e => {
     let [t, n] = e;
-    return n.section !== a.ID.CUSTOM && null != n.searchableTitles && (null == n.predicate || n.predicate())
+    return n.section !== o.ID.CUSTOM && null != n.searchableTitles && (null == n.predicate || n.predicate())
   }))
 }
 

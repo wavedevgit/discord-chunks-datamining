@@ -23,35 +23,35 @@ let d = (e, t, n) => (0, i.wj)(e) ? t : n,
       perksCards: n,
       showVoiceFiltersCard: r,
       showCustomThemesCard: i
-    } = e, o = f, a = e => {
+    } = e, a = f, o = e => {
       let {
         card: n
       } = e;
-      t.length < o && t.push(n)
+      t.length < a && t.push(n)
     }, s = () => {
-      a({
+      o({
         card: n.specialShopPerks
       })
     }, l = g();
-    return r ? a({
+    return r ? o({
       card: n.voiceFilters
-    }) : i ? a({
+    }) : i ? o({
       card: n.customThemes
-    }) : a({
+    }) : o({
       card: n.nameplates
-    }), null != n.tenureBadge && a({
+    }), null != n.tenureBadge && o({
       card: n.tenureBadge
-    }), a({
+    }), o({
       card: n.permadecos
-    }), l ? 0 === t.length && s() : a({
+    }), l ? 0 === t.length && s() : o({
       card: n.referralProgram
-    }), a({
+    }), o({
       card: n.newAppStylesUpdateJune2024
-    }), a({
+    }), o({
       card: n.serverProfiles
-    }), a({
+    }), o({
       card: n.earlyAccess
-    }), a({
+    }), o({
       card: n.unlimitedSuperReactions
     }), t
   },
@@ -61,14 +61,14 @@ let d = (e, t, n) => (0, i.wj)(e) ? t : n,
       variant: n,
       hideCardsOnNarrowScreen: r,
       isPremiumSubscriber: i,
-      fractionalState: o,
-      isInReverseTrial: a,
+      fractionalState: a,
+      isInReverseTrial: o,
       showVoiceFiltersCard: s,
       showCustomThemesCard: u
     } = e, d = [];
     switch (n) {
       case l.gM.PERKS_DISCOVERABILITY:
-        d = false === i ? [t.profiles, t.moreEmojiPower, t.largeUploads, t.hdVideo, t.clientThemes, t.customAppIcons] : o === c.a$.FP_ONLY ? [t.profiles, t.clientThemes, t.hdVideo] : [t.profiles, t.clientThemes, t.serverBoosts];
+        d = false === i ? [t.profiles, t.moreEmojiPower, t.largeUploads, t.hdVideo, t.clientThemes, t.customAppIcons] : a === c.a$.FP_ONLY ? [t.profiles, t.clientThemes, t.hdVideo] : [t.profiles, t.clientThemes, t.serverBoosts];
         break;
       case l.gM.WHATS_NEW:
         d = _({
@@ -82,15 +82,15 @@ let d = (e, t, n) => (0, i.wj)(e) ? t : n,
         d = false === i ? [t.serverBoosts, t.superReactions, t.earlyAccessSeeAllVariant, t.specialShopPerks] : [t.customAppIcons, t.moreEmojiPower, t.customSoundsEverywhere, t.specialStickerAccess];
         break;
       case l.gM.CARD_CAROUSEL_SECOND_ROW:
-        d = false === i ? [t.customSoundsEverywhere, t.specialStickerAccess] : o === c.a$.FP_ONLY ? a ? [t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions] : [t.greyServerBoosts, t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions] : [t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions];
+        d = false === i ? [t.customSoundsEverywhere, t.specialStickerAccess] : a === c.a$.FP_ONLY ? o ? [t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions] : [t.greyServerBoosts, t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions] : [t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions];
         break;
       case l.gM.CARD_CAROUSEL_THIRD_ROW:
-        d = o === c.a$.FP_ONLY ? a ? [t.entranceSoundsSeeAllVariation] : [t.entranceSoundsSeeAllVariation, t.greyBadge] : [t.entranceSoundsSeeAllVariation, t.badge]
+        d = a === c.a$.FP_ONLY ? o ? [t.entranceSoundsSeeAllVariation] : [t.entranceSoundsSeeAllVariation, t.greyBadge] : [t.entranceSoundsSeeAllVariation, t.badge]
     }
     return r && (d = d.filter(e => !e.hideOnNarrowScreen)), d
   },
   h = e => {
-    let t = (0, r.e7)([a.Z], () => a.Z.getPremiumTypeSubscription()),
+    let t = (0, r.e7)([o.Z], () => o.Z.getPremiumTypeSubscription()),
       n = null != t ? s.ZP.getPremiumPlanItem(t) : null,
       i = (null != n ? s.ZP.getSkuIdForPlan(n.planId) : null) === c.Si.TIER_2;
     return e ? i ? {

@@ -25,7 +25,7 @@ function g() {
     t = (0, Chunk442837.e7)([Chunk663389.Z], () => Chunk663389.Z.getSubsection()),
     n = null != exports && module.some(e => e.id === t) ? exports : module[0].id,
     g = e => {
-      a.Z.setSection(p.oAB.GAMES, e)
+      o.Z.setSection(p.oAB.GAMES, e)
     },
     E = () => {
       switch (require) {
@@ -64,7 +64,7 @@ function g() {
       orientation: "horizontal",
       type: "top",
       look: "brand",
-      children: module.map(e => (0, r.jsxs)(o.njP.Item, {
+      children: module.map(e => (0, r.jsxs)(a.njP.Item, {
         className: m.tab,
         id: e.id,
         "aria-label": e.title,

@@ -2,7 +2,7 @@
 /** chunk id: 28881, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  QK: () => o,
+  QK: () => a,
   u$: () => i
 });
 let r = (0, require("./818083.js").B)({
@@ -28,7 +28,7 @@ let r = (0, require("./818083.js").B)({
       autoTrackExposure: t
     })
   },
-  o = function(e) {
+  a = function(e) {
     let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
     return r.getCurrentConfig({
       location: e

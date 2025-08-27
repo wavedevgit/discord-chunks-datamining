@@ -6,7 +6,7 @@ require.d(exports, {
   ZP: () => H
 }), require("./388685.js"), require("./415506.js"), require("./539854.js");
 var Chunk348327 = require("./348327.js"),
-  o = require.n(Chunk348327),
+  a = require.n(Chunk348327),
   Chunk512722 = require("./512722.js"),
   s = require.n(Chunk512722),
   Chunk937111 = require("./937111.js"),
@@ -36,8 +36,8 @@ function v(e, t) {
   if (null == e) return {};
   var n, r, i = I(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -45,8 +45,8 @@ function v(e, t) {
 function I(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let T = new Chunk727258.g8;
@@ -84,7 +84,7 @@ function C(e, t) {
         } for (let e of T.allNodes()) e.type === c.eD.GUILD && (u.Z.isLurking(e.id) || m.ZP.isCurrentUserGuest(e.id) || null == g.Z.getGuild(e.id) && !h.Z.isUnavailable(e.id)) && T.removeNode(e);
   for (let e of Object.values(T.nodes)) e.type === c.eD.FOLDER && 0 === e.children.length && T.removeNode(e);
   S(e => null == T.nodes[e], e => T.addNode((0, c.Mg)(e), T.root, false)), T.version = n.version;
-  let r = o()(n, T);
+  let r = a()(n, T);
   return r ? T = n : T.version = n.version + 1, !r
 }
 
@@ -96,7 +96,7 @@ function N() {
 function R() {
   var e, t;
   let n = Chunk581883.Z.getGuildFolders();
-  return !(null != r && o()(r, require)) && C(null != (r = require) ? r : [], null != (t = null == (e = Chunk581883.Z.settings.guildFolders) ? true : module.guildPositions) ? exports : [])
+  return !(null != r && a()(r, require)) && C(null != (r = require) ? r : [], null != (t = null == (e = Chunk581883.Z.settings.guildFolders) ? true : module.guildPositions) ? exports : [])
 }
 
 function P(e) {
@@ -105,12 +105,12 @@ function P(e) {
     targetId: n,
     moveToBelow: r,
     combine: i
-  } = e, o = T.getNode(t), a = T.getNode(n);
-  if (null == o || null == a) returnfalse;
-  if (s()(!(i && o.type === c.eD.FOLDER), "[SORTED GUILDS] Can't combine a folder ".concat(o.id, " with another guilds list item")), s()(!(i && null != a.parentId), "[SORTED GUILDS] Can't combine with a guild ".concat(a.id, " that's already inside of a folder")), s()(o.type !== c.eD.FOLDER || null == a.parentId, "[SORTED GUILDS] Can't move a folder ".concat(o.id, " to inside of another folder ").concat(a.parentId)), i) {
-    let e = a.type !== c.eD.FOLDER ? T.convertToFolder(a) : a;
-    T.moveInto(o, e, r)
-  } else T.moveNextTo(o, a, r)
+  } = e, a = T.getNode(t), o = T.getNode(n);
+  if (null == a || null == o) returnfalse;
+  if (s()(!(i && a.type === c.eD.FOLDER), "[SORTED GUILDS] Can't combine a folder ".concat(a.id, " with another guilds list item")), s()(!(i && null != o.parentId), "[SORTED GUILDS] Can't combine with a guild ".concat(o.id, " that's already inside of a folder")), s()(a.type !== c.eD.FOLDER || null == o.parentId, "[SORTED GUILDS] Can't move a folder ".concat(a.id, " to inside of another folder ").concat(o.parentId)), i) {
+    let e = o.type !== c.eD.FOLDER ? T.convertToFolder(o) : o;
+    T.moveInto(a, e, r)
+  } else T.moveNextTo(a, o, r)
 }
 
 function w(e) {
@@ -121,10 +121,10 @@ function w(e) {
   if (null == r) returnfalse;
   let i = T.getNode(r);
   if (null == i) returnfalse;
-  let o = T.convertToFolder(i);
-  o.name = n, t.forEach(e => {
+  let a = T.convertToFolder(i);
+  a.name = n, t.forEach(e => {
     let t = T.getNode(e);
-    null != t && T.moveInto(t, o, true)
+    null != t && T.moveInto(t, a, true)
   })
 }
 
@@ -135,23 +135,23 @@ function D(e) {
   } = e, r = v(e, ["targetId", "sourceIds"]);
   let i = T.getNode(t);
   if (null == i || i.type !== c.eD.FOLDER) returnfalse;
-  let o = "" === r.name ? true : r.name;
-  if (o !== i.name) {
+  let a = "" === r.name ? true : r.name;
+  if (a !== i.name) {
     let e = T.cloneNode(i);
-    s()(e.id === i.id, "[SORTED GUILDS] Replacement folder node must have same id."), e.name = o, T.replaceNode(i, e)
+    s()(e.id === i.id, "[SORTED GUILDS] Replacement folder node must have same id."), e.name = a, T.replaceNode(i, e)
   }
-  let a = T.getNode(t);
-  if (null == a) returnfalse;
-  let l = a.children.map(e => e.id).filter(_.lm),
+  let o = T.getNode(t);
+  if (null == o) returnfalse;
+  let l = o.children.map(e => e.id).filter(_.lm),
     u = new Set(l),
     d = new Set(n),
     f = new Set([...l].filter(e => !d.has(e)));
   n.filter(e => !u.has(e)).forEach(e => {
     let t = T.getNode(e);
-    null != t && T.moveInto(t, a, true)
+    null != t && T.moveInto(t, o, true)
   }), f.forEach(e => {
     let t = T.getNode(e);
-    null != t && T.moveNextTo(t, a, true)
+    null != t && T.moveNextTo(t, o, true)
   })
 }
 
@@ -171,10 +171,10 @@ function L(e) {
     guildId: t,
     joinedAt: n,
     user: r
-  } = e, i = y.default.getCurrentUser(), o = g.Z.getGuild(t);
-  if ((null == i ? true : i.id) !== r.id || null == o) returnfalse;
-  let a = "string" == typeof n ? new Date(n) : n;
-  return a !== o.joinedAt && null != a && N()
+  } = e, i = y.default.getCurrentUser(), a = g.Z.getGuild(t);
+  if ((null == i ? true : i.id) !== r.id || null == a) returnfalse;
+  let o = "string" == typeof n ? new Date(n) : n;
+  return o !== a.joinedAt && null != o && N()
 }
 
 function j(e) {

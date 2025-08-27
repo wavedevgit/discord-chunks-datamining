@@ -33,7 +33,7 @@ function l(e) {
 async function c(e, t) {
   try {
     let n = await r.tn.put({
-      url: a.ANM.USER_SET_GUILD_IDENTITY,
+      url: o.ANM.USER_SET_GUILD_IDENTITY,
       body: {
         identity_guild_id: e,
         identity_enabled: t
@@ -42,7 +42,7 @@ async function c(e, t) {
     });
     return n.ok && i.Z.dispatch({
       type: "CURRENT_USER_UPDATE",
-      user: l({}, o.default.getCurrentUser(), n.body)
+      user: l({}, a.default.getCurrentUser(), n.body)
     }), n
   } catch (e) {
     return e

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk129861 = require("./129861.jsx"),
   Chunk670188 = require("./670188.jsx"),
@@ -56,8 +56,8 @@ function h(e, t) {
   if (null == e) return {};
   var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -65,8 +65,8 @@ function h(e, t) {
 function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -74,7 +74,7 @@ function g(e) {
   let {
     user: t,
     guildId: n,
-    channelId: o,
+    channelId: a,
     nick: d,
     className: _,
     textClassName: m,
@@ -89,7 +89,7 @@ function g(e) {
     targetElementRef: I,
     user: t,
     guildId: n,
-    channelId: o,
+    channelId: a,
     position: "left",
     shouldShow: !g && true,
     onRequestOpen: O,
@@ -98,10 +98,10 @@ function g(e) {
     children: e => {
       var {
         onClick: i
-      } = e, o = h(e, ["onClick"]);
-      return (0, r.jsxs)(s.P3F, p(f({}, o), {
+      } = e, a = h(e, ["onClick"]);
+      return (0, r.jsxs)(s.P3F, p(f({}, a), {
         innerRef: I,
-        className: a()(u.userListItem, _, {
+        className: o()(u.userListItem, _, {
           [u.popoutDisabled]: g
         }),
         onContextMenu: y,
@@ -114,7 +114,7 @@ function g(e) {
           "aria-label": t.username,
           size: s.EFr.SIZE_24
         }), (0, r.jsx)(s.Text, {
-          className: a()(u.userListItemTag, m),
+          className: o()(u.userListItemTag, m),
           variant: "text-sm/normal",
           children: (0, r.jsx)(l.Z, {
             user: t,

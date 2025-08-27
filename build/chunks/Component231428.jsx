@@ -75,8 +75,8 @@ function j(e, t) {
   if (null == e) return {};
   var n, r, i = M(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -84,8 +84,8 @@ function j(e, t) {
 function M(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let k = 10;
@@ -95,19 +95,19 @@ function U(e) {
     payments: t,
     locale: n,
     compactMode: r,
-    numPages: a
-  } = e, l = o.useRef(null), [c, d] = o.useState(0), [_, h] = o.useState(null), m = t.slice(c * k, (c + 1) * k);
-  o.useEffect(() => {
+    numPages: o
+  } = e, l = a.useRef(null), [c, d] = a.useState(0), [_, h] = a.useState(null), m = t.slice(c * k, (c + 1) * k);
+  a.useEffect(() => {
     var e;
     null == (e = l.current) || e.scrollTo({
       to: 0
     })
   }, [c]);
-  let E = o.useCallback(e => {
+  let E = a.useCallback(e => {
       d(e);
       let n = t[t.length - 1].id;
-      e >= a - 2 && _ !== n && ((0, p.cQ)(k, n), h(n))
-    }, [t, a, _]),
+      e >= o - 2 && _ !== n && ((0, p.cQ)(k, n), h(n))
+    }, [t, o, _]),
     y = (0, g.Z)("billing-history", l);
   return (0, i.jsx)(u.bG, {
     navigator: y,
@@ -115,15 +115,15 @@ function U(e) {
       children: e => {
         var {
           ref: t
-        } = e, o = j(e, ["ref"]);
+        } = e, a = j(e, ["ref"]);
         return (0, i.jsx)(b.Z, L(D({
           className: R.verticalFit,
           currentPageIndex: c,
           onChangePage: E,
-          numPages: a,
+          numPages: o,
           showPageCount: false,
           ref: t
-        }, o), {
+        }, a), {
           children: (0, i.jsx)(f.Den, {
             className: R.bottomDivider,
             ref: l,
@@ -171,7 +171,7 @@ class G extends(r = Chunk647438.PureComponent) {
       payments: t,
       subscription: n,
       locale: r
-    } = this.props, o = null != require && require.isPurchasedExternally;
+    } = this.props, a = null != require && require.isPurchasedExternally;
     return 0 !== exports.length || Chunk647438 ? (0, Chunk951288.jsxs)("div", {
       className: Chunk504333.verticalFit,
       children: [null != require && Chunk647438 ? this.renderPremiumExternalSubscription(require) : null, exports.length > 0 ? (0, Chunk951288.jsxs)("div", {
@@ -201,7 +201,7 @@ class G extends(r = Chunk647438.PureComponent) {
     }) : null
   }
   constructor(...e) {
-    super(...e), w(this, "scrollerRef", o.createRef())
+    super(...e), w(this, "scrollerRef", a.createRef())
   }
 }
 
@@ -215,26 +215,26 @@ function B(e) {
 function Z(e) {
   let t = (0, d.e7)([y.Z], () => y.Z.getPayments()),
     n = (0, d.e7)([v.Z], () => v.Z.getPremiumTypeSubscription()),
-    r = o.useMemo(() => new Set(t.filter(B).map(e => {
+    r = a.useMemo(() => new Set(t.filter(B).map(e => {
       let {
         subscription: t
       } = e;
       return null == t ? true : t.items[0].planId
     })), [t]),
-    a = o.useMemo(() => new Set(t.filter(B).map(e => {
+    o = a.useMemo(() => new Set(t.filter(B).map(e => {
       let {
         skuId: t
       } = e;
       return t
     })), [t]),
-    s = (0, d.Wu)([O.Z], () => O.Z.getPlanIdsForSkus(Array.from(a))),
-    l = o.useCallback(() => s.length === r.size, [s, r]),
-    c = o.useMemo(() => t.filter(e => e.currency !== S.pKx.DISCORD_ORB), [t]);
-  return o.useEffect(() => {
+    s = (0, d.Wu)([O.Z], () => O.Z.getPlanIdsForSkus(Array.from(o))),
+    l = a.useCallback(() => s.length === r.size, [s, r]),
+    c = a.useMemo(() => t.filter(e => e.currency !== S.pKx.DISCORD_ORB), [t]);
+  return a.useEffect(() => {
     l() || _.Z.wait(() => {
-      a.forEach(e => (0, m.GZ)(e, true, true, true, true))
+      o.forEach(e => (0, m.GZ)(e, true, true, true, true))
     })
-  }, [l, a]), (0, i.jsx)(G, L(D({}, e), {
+  }, [l, o]), (0, i.jsx)(G, L(D({}, e), {
     payments: c,
     subscription: n
   }))

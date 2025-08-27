@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -36,7 +36,7 @@ let w = (e, t) => {
     let {
       className: n,
       buttonClassName: i,
-      subscriptionTier: o,
+      subscriptionTier: a,
       isDarkMode: w,
       isEligibleForBogoPromotion: D,
       videoRef: x
@@ -48,7 +48,7 @@ let w = (e, t) => {
     return (0, r.jsx)(f.Gt, {
       value: L,
       children: (0, r.jsxs)("div", {
-        className: a()(C.container, C.heroHeadingContainer, n),
+        className: o()(C.container, C.heroHeadingContainer, n),
         ref: t,
         "data-testid": "marketing-page-hero-header",
         children: [(0, r.jsx)("div", {
@@ -70,17 +70,17 @@ let w = (e, t) => {
                 isApplicationHome: true
               })
             }), j ? (0, r.jsx)("div", {
-              className: a()(C.buttonContainer, C.marketingPageCTAContainer, {
+              className: o()(C.buttonContainer, C.marketingPageCTAContainer, {
                 [C.marketingPageCTAMargin]: !(Z || G)
               }),
               children: (0, r.jsx)(y.Z, {
-                className: a()(C.button, i),
+                className: o()(C.button, i),
                 color: B
               })
             }) : (0, r.jsx)(I.PK, {
-              subscriptionTier: o,
+              subscriptionTier: a,
               inOfferExperience: M,
-              containerClassName: a()(C.marketingPageCTAContainer, {
+              containerClassName: o()(C.marketingPageCTAContainer, {
                 [C.marketingPageCTAMargin]: !(Z || G)
               }),
               buttonClassName: i,

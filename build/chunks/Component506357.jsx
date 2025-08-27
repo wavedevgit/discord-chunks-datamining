@@ -66,7 +66,7 @@ function S(e) {
   var t, O;
   let {
     onDismiss: I
-  } = e, S = (0, o.e7)([f.Z], () => f.Z.getGuildId()), A = (0, o.e7)([d.Z], () => null != S ? d.Z.getChannelId(S) : null, [S]), C = null != S ? S : null, N = (0, o.e7)([u.Z], () => null != C ? u.Z.getGuild(C) : null, [C]), {
+  } = e, S = (0, a.e7)([f.Z], () => f.Z.getGuildId()), A = (0, a.e7)([d.Z], () => null != S ? d.Z.getChannelId(S) : null, [S]), C = null != S ? S : null, N = (0, a.e7)([u.Z], () => null != C ? u.Z.getGuild(C) : null, [C]), {
     shouldShowIncidentActions: R,
     incidentData: P,
     isUnderLockdown: w
@@ -77,7 +77,7 @@ function S(e) {
         notice_type: g.kVF.GUILD_RAID_NOTIFICATION,
         guild_id: N.id
       });
-      (0, a.ZDy)(async () => {
+      (0, o.ZDy)(async () => {
         let e = {
             source: h.Zu.NAGBAR,
             alertType: (0, m.T1)(P)
@@ -97,18 +97,18 @@ function S(e) {
       size: s.Z.Sizes.MINI
     }),
     M = (0, m.OY)(P, N.name);
-  if (null != (null != (O = P.dmsDisabledUntil) ? O : P.invitesDisabledUntil) && w) return (0, r.jsxs)(a.qXd, {
+  if (null != (null != (O = P.dmsDisabledUntil) ? O : P.invitesDisabledUntil) && w) return (0, r.jsxs)(o.qXd, {
     className: y.notice,
-    color: a.DM8.NEUTRAL,
-    children: [(0, r.jsx)(a.RyX, {
+    color: o.DM8.NEUTRAL,
+    children: [(0, r.jsx)(o.RyX, {
       onClick: I,
       noticeType: g.kVF.GUILD_RAID_NOTIFICATION
-    }), j, M, (0, r.jsx)(a.EyT, {
+    }), j, M, (0, r.jsx)(o.EyT, {
       className: y.actionButton,
       onClick: () => L(false),
       children: (0, r.jsxs)("div", {
         className: y.actionButtonInner,
-        children: [(0, r.jsx)(a.mBM, {
+        children: [(0, r.jsx)(o.mBM, {
           size: "xs",
           color: "currentColor"
         }), (0, r.jsx)("span", {
@@ -125,13 +125,13 @@ function S(e) {
       guildName: N.name
     }),
     U = D && A === E.oC.MEMBER_SAFETY;
-  return (0, r.jsxs)(a.qXd, {
+  return (0, r.jsxs)(o.qXd, {
     className: y.notice,
-    color: a.DM8.WARNING,
-    children: [(0, r.jsx)(a.RyX, {
+    color: o.DM8.WARNING,
+    children: [(0, r.jsx)(o.RyX, {
       onClick: I,
       noticeType: g.kVF.GUILD_RAID_NOTIFICATION
-    }), j, k, !U && (0, r.jsx)(a.EyT, {
+    }), j, k, !U && (0, r.jsx)(o.EyT, {
       className: y.actionButton,
       onClick: () => L(true),
       children: (0, r.jsx)("div", {

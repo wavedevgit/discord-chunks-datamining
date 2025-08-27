@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
   l = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
@@ -40,7 +40,7 @@ function L(e) {
   let {
     premiumSubscription: t,
     setPurchaseState: n,
-    onBack: o,
+    onBack: a,
     onNext: s,
     legalTermsNodeRef: L,
     flashLegalTerms: j,
@@ -68,8 +68,8 @@ function L(e) {
     paymentSourceId: en,
     paymentSources: er,
     selectedSkuId: ei,
-    skusById: eo,
-    skuPricePreviewsById: ea,
+    skusById: ea,
+    skuPricePreviewsById: eo,
     referralCode: es,
     contextMetadata: el,
     invoicePreview: ec,
@@ -104,8 +104,8 @@ function L(e) {
     eM = null;
   if (et === P.GZQ.ONE_TIME) {
     var ek;
-    l()(null != ei, "SKU must be selected for one-time purchases"), ej = null != (ek = eo[ei]) ? ek : null, l()(null != ej, "SKU must exist and be fetched.");
-    let e = ea[ei],
+    l()(null != ei, "SKU must be selected for one-time purchases"), ej = null != (ek = ea[ei]) ? ek : null, l()(null != ej, "SKU must exist and be fetched.");
+    let e = eo[ei],
       t = null != en ? en : y.c;
     eM = null != e ? e[t] : null
   }
@@ -167,7 +167,7 @@ function L(e) {
   return eI ? null : (0, r.jsxs)(u.mzw, {
     "data-migration-pending": true,
     align: p.Z.Align.CENTER,
-    className: a()({
+    className: o()({
       [D.modalFooterDiscount]: eG
     }, ed, D.modalFooter),
     children: [eG && (0, r.jsx)("img", {
@@ -197,8 +197,8 @@ function L(e) {
     }), eH ? (0, r.jsx)("div", {
       className: D.back,
       children: (0, r.jsx)(g.Z, {
-        onClick: o,
-        className: a()({
+        onClick: a,
+        className: o()({
           [D.discountColor]: eG
         })
       })

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk780384 = require("./780384.js"),
   Chunk481060 = require("./481060.js"),
@@ -37,7 +37,7 @@ let C = {
     let {
       user: t,
       guildId: n,
-      nameplate: o,
+      nameplate: a,
       nameplateData: N,
       className: R,
       innerClassName: P,
@@ -50,7 +50,7 @@ let C = {
       nameplatePreviewSize: k = "default",
       isPurchased: U = false,
       skipEffectDisplayName: G = false
-    } = e, B = (0, s.e7)([b.Z], () => (0, l.wj)(b.Z.theme)), Z = null != o ? (0, v.EU)(o) : N, F = (0, s.e7)([O.Z], () => null != t ? O.Z.getStatus(t.id) : c.Skl.ONLINE), V = B ? "#706F74" : "#aaaab2", H = i.useRef(null), Y = (0, s.e7)([y.ZP], () => null != n && null != t ? y.ZP.getMember(n, t.id) : null), W = null != t ? (0, E.Ly)({
+    } = e, B = (0, s.e7)([b.Z], () => (0, l.wj)(b.Z.theme)), Z = null != a ? (0, v.EU)(a) : N, F = (0, s.e7)([O.Z], () => null != t ? O.Z.getStatus(t.id) : c.Skl.ONLINE), V = B ? "#706F74" : "#aaaab2", H = i.useRef(null), Y = (0, s.e7)([y.ZP], () => null != n && null != t ? y.ZP.getMember(n, t.id) : null), W = null != t ? (0, E.Ly)({
       pendingNickname: true,
       pendingGlobalName: L,
       user: t,
@@ -66,7 +66,7 @@ let C = {
         width: "100%"
       },
       children: (0, r.jsxs)(c.Rny, {
-        className: a()(R, T.nameplatePreview, {
+        className: o()(R, T.nameplatePreview, {
           [T.nameplatePurchased]: U && !w,
           [T.large]: "large" === k,
           [T.xlarge]: "xlarge" === k
@@ -76,10 +76,10 @@ let C = {
           hovered: w,
           placement: m.i.PREVIEW,
           content: x ? true : H
-        }, null == o ? true : o.id), (0, r.jsxs)("div", {
+        }, null == a ? true : a.id), (0, r.jsxs)("div", {
           className: T.overlayContainer,
           children: [null != t ? (0, r.jsx)("div", {
-            className: a()(T.avatarContainer, !x && T.avatarVisible),
+            className: o()(T.avatarContainer, !x && T.avatarVisible),
             children: (0, r.jsx)(u.Z, {
               ref: H,
               avatar: (0, r.jsx)(d.Z, {
@@ -107,7 +107,7 @@ let C = {
               withDisplayNameStyles: z && null != q
             })
           }) : null, (0, r.jsxs)("div", {
-            className: a()(T.avatarContainer, x && T.avatarVisible),
+            className: o()(T.avatarContainer, x && T.avatarVisible),
             children: [(0, r.jsx)(c.qEK, {
               src: B ? S : A,
               size: K,

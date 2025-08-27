@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   X$: () => i,
-  _f: () => o
+  _f: () => a
 }), require("./906732.jsx");
 let r = (0, require("./818083.js").B)({
   kind: "user",
@@ -49,7 +49,7 @@ function i() {
   }).canSeeRemixBadge
 }
 
-function o() {
+function a() {
   return !!r.useExperiment({
     location: "isRemixANitroPerkHook"
   }, {

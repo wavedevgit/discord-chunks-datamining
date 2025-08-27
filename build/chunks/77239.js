@@ -3,8 +3,8 @@
 "use strict";
 var Chunk754793 = require("./754793.js"),
   i = 15,
-  o = 852,
-  a = 592,
+  a = 852,
+  o = 592,
   s = 0,
   l = 1,
   c = 2,
@@ -40,7 +40,7 @@ module.exports = function(e, t, n, p, h, m, g, E) {
   if (M > 0 && (e === s || 1 !== D)) return false;
   for (R = 1, F[1] = 0; R < i; R++) F[R + 1] = F[R] + Z[R];
   for (P = 0; P < p; P++) 0 !== t[n + P] && (g[F[t[n + P]]++] = P);
-  if (e === s ? (G = V = g, T = 19) : e === l ? (G = u, B -= 257, V = d, H -= 257, T = 256) : (G = f, V = _, T = false), U = 0, P = 0, R = w, I = m, L = x, j = 0, O = false, v = (k = 1 << x) - 1, e === l && k > o || e === c && k > a) return 1;
+  if (e === s ? (G = V = g, T = 19) : e === l ? (G = u, B -= 257, V = d, H -= 257, T = 256) : (G = f, V = _, T = false), U = 0, P = 0, R = w, I = m, L = x, j = 0, O = false, v = (k = 1 << x) - 1, e === l && k > a || e === c && k > o) return 1;
   for (;;) {
     S = R - j, g[P] < T ? (A = 0, C = g[P]) : g[P] > T ? (A = V[H + g[P]], C = G[B + g[P]]) : (A = 96, C = 0), b = 1 << R - j, w = y = 1 << L;
     do h[I + (U >> j) + (y -= b)] = S << 24 | A << 16 | C; while (0 !== y);
@@ -51,7 +51,7 @@ module.exports = function(e, t, n, p, h, m, g, E) {
     }
     if (R > x && (U & v) !== O) {
       for (0 === j && (j = x), I += w, M = 1 << (L = R - j); L + j < D && !((M -= Z[L + j]) <= 0);) L++, M <<= 1;
-      if (k += 1 << L, e === l && k > o || e === c && k > a) return 1;
+      if (k += 1 << L, e === l && k > a || e === c && k > o) return 1;
       h[O = U & v] = x << 24 | L << 16 | I - m
     }
   }

@@ -3,12 +3,12 @@
 "use strict";
 require.d(exports, {
   FL: () => s,
-  Ky: () => a
+  Ky: () => o
 }), require("./415506.js");
 var Chunk81825 = require("./81825.js"),
   Chunk981631 = require("./981631.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -16,9 +16,9 @@ function o(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-var a = function(e) {
+var o = function(e) {
   return e.SHOP = "SHOP", e.NITRO_HOME = "NITRO_HOME", e.QUEST_HOME = "QUEST_HOME", e.APPS_HOME = "APPS_HOME", e.SETTINGS = "SETTINGS", e
-}(a || {});
+}(o || {});
 class s extends Chunk81825.Z {
   static fromType(e, t, n) {
     switch (e) {
@@ -53,6 +53,6 @@ class s extends Chunk81825.Z {
     }
   }
   constructor(e) {
-    super(), o(this, "id", true), o(this, "path", true), o(this, "type", true), o(this, "label", true), this.id = e.type, this.path = e.path, this.type = e.type, this.label = e.label
+    super(), a(this, "id", true), a(this, "path", true), a(this, "type", true), a(this, "label", true), this.id = e.type, this.path = e.path, this.type = e.type, this.label = e.label
   }
 }

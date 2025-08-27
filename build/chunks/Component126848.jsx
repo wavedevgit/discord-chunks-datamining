@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk704215 = require("./704215.js"),
   Chunk243778 = require("./243778.jsx"),
   Chunk367074 = require("./367074.js"),
@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
 function E(e) {
   let t, {
       decoration: n,
-      label: o,
+      label: a,
       isSelected: E
     } = e,
     b = (0, d.N)(),
@@ -46,12 +46,12 @@ function E(e) {
     trialOffer: b
   }), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: a()(g.premiumLabel, {
+      className: o()(g.premiumLabel, {
         [g.selected]: E && !O
       }),
-      children: [o, t]
+      children: [a, t]
     }), (0, r.jsx)("div", {
-      className: a()(g.background, {
+      className: o()(g.background, {
         [g.selectedBackground]: !O && E
       })
     })]

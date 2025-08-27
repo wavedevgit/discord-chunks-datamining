@@ -32,7 +32,7 @@ let h = e => {
       activeStep: b
     } = e, {
       analyticsLocations: y
-    } = (0, a.ZP)(o.Z.USER_SETTINGS), [O, v] = i.useState(m(b));
+    } = (0, o.ZP)(a.Z.USER_SETTINGS), [O, v] = i.useState(m(b));
     return (0, i.useEffect)(() => {
       v(m(b))
     }, [b]), (0, r.jsx)(d.D.Provider, {

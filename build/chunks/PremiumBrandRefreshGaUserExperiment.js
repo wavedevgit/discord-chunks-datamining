@@ -3,12 +3,12 @@
 "use strict";
 require.d(exports, {
   YI: () => s,
-  ZP: () => a,
-  jk: () => o
+  ZP: () => o,
+  jk: () => a
 });
 var Chunk818083 = require("./818083.js"),
   Chunk987338 = require("./987338.js");
-let o = (0, Chunk818083.B)({
+let a = (0, Chunk818083.B)({
   kind: "user",
   id: "2025-09_premium_brand_refresh_ga",
   label: "Premium Brand Refresh GA",
@@ -31,11 +31,11 @@ let o = (0, Chunk818083.B)({
   }]
 });
 
-function a(e) {
+function o(e) {
   let {
     location: t
   } = e;
-  return o.useExperiment({
+  return a.useExperiment({
     location: t
   }, {
     autoTrackExposure: true
@@ -46,7 +46,7 @@ function s(e) {
   let {
     location: t
   } = e;
-  return o.getCurrentConfig({
+  return a.getCurrentConfig({
     location: t
   }).enabled
 }

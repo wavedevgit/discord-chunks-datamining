@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -80,8 +80,8 @@ function g(e) {
     queryString: n,
     query: r,
     offset: i
-  } = e, o = u(t);
-  o.searchResultsQueryString = n, o.searchResultsQuery = r, o.searchResultsOffset = null != i ? i : 0
+  } = e, a = u(t);
+  a.searchResultsQueryString = n, a.searchResultsQuery = r, a.searchResultsOffset = null != i ? i : 0
 }
 
 function E() {
@@ -112,7 +112,7 @@ class b extends(r = Chunk442837.ZP.Store) {
     return c
   }
 }
-a(b, "displayName", "SearchQueryStore");
+o(b, "displayName", "SearchQueryStore");
 let y = new b(Chunk570140.Z, {
   SEARCH_RESULTS_QUERY_UPDATE: g,
   SEARCH_EDITOR_STATE_CLEAR: p,

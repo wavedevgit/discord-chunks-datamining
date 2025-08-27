@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
-  a = require.n(Chunk512722),
+  o = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk660216 = require("./660216.js"),
@@ -76,7 +76,7 @@ function L() {
     {
       clipsEnabled: t,
       remindersEnabled: n,
-      decoupledClipsEnabled: o,
+      decoupledClipsEnabled: a,
       clipsLength: P,
       clipsQuality: D
     } = (0, Chunk442837.cj)([Chunk435064.Z], () => Chunk435064.Z.getSettings()),
@@ -91,7 +91,7 @@ function L() {
     }, {
       autoTrackExposure: false
     });
-  a()(null != j, "Save clip keybind unset");
+  o()(null != j, "Save clip keybind unset");
   let G = (0, Chunk442837.e7)([Chunk706454.default], () => Chunk706454.default.locale),
     B = Chunk647438.useMemo(() => [{
       value: Chunk356659.OT.SECONDS_30,

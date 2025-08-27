@@ -44,16 +44,16 @@ function v(e) {
   let {
     url: t
   } = e, n = i.useCallback(() => {
-    (0, c.JG)(t, () => (0, a.showToast)({
+    (0, c.JG)(t, () => (0, o.showToast)({
       id: "experiment-link-copied",
       message: "Copied experiment link",
-      type: a.ToastType.SUCCESS
+      type: o.ToastType.SUCCESS
     }))
   }, [t]);
-  return (0, r.jsx)(a.P3F, {
+  return (0, r.jsx)(o.P3F, {
     className: m.copyLinkButton,
     onClick: n,
-    children: (0, r.jsx)(a.xPt, {
+    children: (0, r.jsx)(o.xPt, {
       size: "sm",
       color: "currentColor"
     })
@@ -73,7 +73,7 @@ function I(e) {
     if (null == n);
     else if (null != E[n]) return E[n];
     else if (null != I[n]) return I[n]
-  }, [E, I, n]), A = s.default.getId(), C = (0, p.a)(T, A), N = i.useMemo(() => null == C || null == T ? null : T.system === d.I.LEGACY ? u.Z.getExperimentBucketName(C.bucket) : T.system === d.I.APEX ? "Variant ".concat(C.variantId) : null, [C, T]), R = (0, o.e7)([l.default], () => {
+  }, [E, I, n]), A = s.default.getId(), C = (0, p.a)(T, A), N = i.useMemo(() => null == C || null == T ? null : T.system === d.I.LEGACY ? u.Z.getExperimentBucketName(C.bucket) : T.system === d.I.APEX ? "Variant ".concat(C.variantId) : null, [C, T]), R = (0, a.e7)([l.default], () => {
     let e = l.default.getCurrentUser();
     return (null == e ? true : e.isStaff()) || (null == e ? true : e.isStaffPersonal())
   });
@@ -88,11 +88,11 @@ function I(e) {
       url: t
     }),
     j = null;
-  return (1 === w && null != P ? j = (0, r.jsx)(a.Text, {
+  return (1 === w && null != P ? j = (0, r.jsx)(o.Text, {
     variant: "text-xs/normal",
     color: "text-muted",
     children: P.label
-  }) : null != C && (j = (0, r.jsxs)(a.Text, {
+  }) : null != C && (j = (0, r.jsxs)(o.Text, {
     variant: "text-xs/normal",
     color: "text-muted",
     children: ["Server Config: ", N]
@@ -101,18 +101,18 @@ function I(e) {
     children: [(0, r.jsx)("div", {
       children: (0, r.jsx)("div", {
         className: m.header,
-        children: (0, r.jsxs)(a.Kqy, {
+        children: (0, r.jsxs)(o.Kqy, {
           direction: "horizontal",
           justify: "space-between",
-          children: [(0, r.jsxs)(a.Kqy, {
+          children: [(0, r.jsxs)(o.Kqy, {
             direction: "horizontal",
             gap: 8,
-            children: [(0, r.jsx)(a.Che, {
+            children: [(0, r.jsx)(o.Che, {
               size: "lg"
-            }), (0, r.jsxs)(a.Kqy, {
+            }), (0, r.jsxs)(o.Kqy, {
               direction: "vertical",
               gap: 0,
-              children: [(0, r.jsx)(a.Text, {
+              children: [(0, r.jsx)(o.Text, {
                 variant: "text-md/semibold",
                 children: T.title
               }), j]
@@ -120,7 +120,7 @@ function I(e) {
           }), L]
         })
       })
-    }), null != P ? (0, r.jsx)(a.zxk, {
+    }), null != P ? (0, r.jsx)(o.zxk, {
       fullWidth: true,
       variant: D ? "critical-primary" : "primary",
       text: D ? "Clear Treatment ".concat(P.value) : "Apply Treatment ".concat(P.value),

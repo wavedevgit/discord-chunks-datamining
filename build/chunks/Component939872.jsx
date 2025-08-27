@@ -25,27 +25,27 @@ let f = e => {
   });
   return (0, r.jsxs)("div", {
     className: d.confirmationContainer,
-    children: [(0, r.jsx)(a.X6q, {
+    children: [(0, r.jsx)(o.X6q, {
       className: d.confirmationHeader,
       variant: "heading-lg/extrabold",
       children: u.intl.format(u.t.I5dYFh, {
         serverName: null == _ ? true : _.name,
         tierName: n.name
       })
-    }), !p.isEmpty() && (0, r.jsx)(a.Text, {
+    }), !p.isEmpty() && (0, r.jsx)(o.Text, {
       className: d.confirmationSubtitle,
       variant: "text-sm/normal",
       color: "header-secondary",
       children: u.intl.format(u.t.TnhFHh, {
         benefits: p.asString()
       })
-    }), (0, r.jsx)(o.zx, {
+    }), (0, r.jsx)(a.zx, {
       className: d.openDiscordButton,
       onClick: () => (0, s.Z)("role_sub_mweb_success_modal"),
       children: u.intl.string(u.t.WWvswM)
-    }), (0, r.jsx)(o.zx, {
+    }), (0, r.jsx)(a.zx, {
       className: d.doneButton,
-      look: o.zx.Looks.BLANK,
+      look: a.zx.Looks.BLANK,
       onClick: () => t(true),
       children: u.intl.string(u.t.y84Dho)
     })]

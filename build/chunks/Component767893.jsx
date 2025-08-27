@@ -6,7 +6,7 @@ require.d(exports, {
 });
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk67136 = require("./67136.jsx"),
   Chunk657707 = require("./657707.js"),
   Chunk442837 = require("./442837.js"),
@@ -30,7 +30,7 @@ function E(e) {
     channel: t,
     children: n
   } = e;
-  return (0, r.jsx)(a.tE, {
+  return (0, r.jsx)(o.tE, {
     offset: g,
     children: (0, r.jsxs)("div", {
       className: m.channelHeader,
@@ -60,7 +60,7 @@ function b(e) {
     size: c.EFr.SIZE_24,
     experimentLocation: "ForLaterChannelHeader"
   }) : (0, r.jsx)("div", {
-    className: o()(m.icon, m.dmIcon),
+    className: a()(m.icon, m.dmIcon),
     children: (0, r.jsx)(s.kBi, {
       size: "xxs"
     })
@@ -70,12 +70,12 @@ function b(e) {
 function y(e) {
   let {
     channel: t
-  } = e, n = (0, l.e7)([p.Z], () => p.Z.getGuild(t.guild_id)), i = (0, u.ZP)(t, false), o = (0, d.KS)(t, n), a = t.isPrivate() || null == o, s = t.isDM() ? h.intl.formatToPlainString(h.t.smD7XV, {
+  } = e, n = (0, l.e7)([p.Z], () => p.Z.getGuild(t.guild_id)), i = (0, u.ZP)(t, false), a = (0, d.KS)(t, n), o = t.isPrivate() || null == a, s = t.isDM() ? h.intl.formatToPlainString(h.t.smD7XV, {
     username: i
   }) : i;
   return (0, r.jsxs)("div", {
     className: m.channelNameSection,
-    children: [a ? null : (0, r.jsx)(o, {
+    children: [o ? null : (0, r.jsx)(a, {
       className: m.channelTypeIcon,
       size: "xxs"
     }), (0, r.jsx)(c.X6q, {

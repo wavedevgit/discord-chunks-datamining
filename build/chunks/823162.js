@@ -18,7 +18,7 @@ async function l(e) {
   await r.tn.put({
     url: s.ANM.CHANNEL_RECIPIENT_ME(e),
     body: {
-      consent_status: a.h.ACCEPTED
+      consent_status: o.h.ACCEPTED
     },
     rejectWithError: false
   }), i.Z.dispatch({
@@ -31,7 +31,7 @@ function c(e) {
   return r.tn.put({
     url: s.ANM.CHANNEL_RECIPIENT_ME(e),
     body: {
-      consent_status: a.h.UNSPECIFIED
+      consent_status: o.h.UNSPECIFIED
     },
     rejectWithError: false
   })
@@ -41,7 +41,7 @@ function u(e) {
   return r.tn.put({
     url: s.ANM.CHANNEL_RECIPIENT_ME(e),
     body: {
-      consent_status: a.h.PENDING
+      consent_status: o.h.PENDING
     },
     rejectWithError: false
   })

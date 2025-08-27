@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   l = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
@@ -153,41 +153,41 @@ class P extends Chunk647438.PureComponent {
       return n ? [...t] : [e, ...t]
     })), T(this, "renderItem", (e, t, n, i) => {
       if (e > 0) return null;
-      let o = this.getData()[t];
-      if (null == o) return;
+      let a = this.getData()[t];
+      if (null == a) return;
       let {
-        onSelectItem: a,
+        onSelectItem: o,
         imagePool: s,
         videoPool: l
       } = this.props, {
         focusedId: c
       } = this.state;
       return (0, r.jsx)(y.iR, {
-        format: o.format,
+        format: a.format,
         color: d.Z.unsafe_rawColors.PRIMARY_800.css,
-        src: o.src,
-        item: o,
+        src: a.src,
+        item: a,
         index: t,
         coords: n,
-        onClick: () => a(o.type, o.name),
+        onClick: () => o(a.type, a.name),
         renderExtras: this.renderCategoryExtras,
-        focused: o.name === c,
+        focused: a.name === c,
         imagePool: s,
         videoPool: l
       }, i)
     }), T(this, "renderContent", (e, t, n) => {
       let {
         className: i,
-        trendingCategories: o
+        trendingCategories: a
       } = this.props;
-      return 0 === o.length ? (0, r.jsx)(b.u$, {
+      return 0 === a.length ? (0, r.jsx)(b.u$, {
         columns: e,
         width: t,
         renderColumn: N
       }) : (0, r.jsx)(f.GMG, {
         ref: this._masonryRef,
         fade: true,
-        className: a()(I.container, i),
+        className: o()(I.container, i),
         itemGutter: 12,
         getItemKey: this.getItemKey,
         columns: e,

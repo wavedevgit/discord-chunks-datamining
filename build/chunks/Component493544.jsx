@@ -65,8 +65,8 @@ function O(e, t) {
   if (null == e) return {};
   var n, r, i = v(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -74,8 +74,8 @@ function O(e, t) {
 function v(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let I = {
@@ -142,7 +142,7 @@ function R(e) {
     isMobile: t,
     mobileSidebarOpen: n,
     closeAction: r
-  } = e, a = o.useRef(null);
+  } = e, o = a.useRef(null);
   return null == r ? null : (0, i.jsx)("div", {
     className: s()(m.toolsContainer, {
       [m.mobileToolsContainer]: t,
@@ -150,9 +150,9 @@ function R(e) {
       [m.closeIconOnly]: !n,
       [m.isMobileAndroid]: !n && true === (0, p.isAndroidWeb)()
     }),
-    ref: a,
+    ref: o,
     children: (0, i.jsx)(f.JcV, {
-      containerRef: a,
+      containerRef: o,
       children: (0, i.jsx)("div", {
         className: m.tools,
         children: (0, i.jsx)(h.Z, {
@@ -171,7 +171,7 @@ let P = function(e) {
     sidebar: t,
     content: n,
     notice: r,
-    section: a,
+    section: o,
     closeAction: p,
     sidebarTheme: h,
     contentType: g,
@@ -179,7 +179,7 @@ let P = function(e) {
     mobileSidebarOpen: b,
     toggleSidebar: y,
     hideSidebar: O = false
-  } = e, v = o.useRef(null), I = o.useRef(null), S = (0, _.Z)(a), A = (0, f.Yzy)(O, {
+  } = e, v = a.useRef(null), I = a.useRef(null), S = (0, _.Z)(o), A = (0, f.Yzy)(O, {
     from: {
       position: "absolute",
       opacity: 0
@@ -189,14 +189,14 @@ let P = function(e) {
     },
     reverse: O,
     config: l.config.stiff
-  }, "animate-always"), C = o.useCallback(e => {
+  }, "animate-always"), C = a.useCallback(e => {
     v.current = e, null != E && (E.current = e)
   }, [E]);
-  o.useLayoutEffect(() => {
-    null != v.current && S !== a && v.current.scrollTo({
+  a.useLayoutEffect(() => {
+    null != v.current && S !== o && v.current.scrollTo({
       to: 0
     })
-  }, [a, S, v]);
+  }, [o, S, v]);
   let P = (0, i.jsx)(R, {
     isMobile: u.tq,
     mobileSidebarOpen: b,
@@ -209,7 +209,7 @@ let P = function(e) {
         [m.noticeRegionHiddenSidebar]: O
       }),
       children: r
-    }, a)
+    }, o)
   }
 
   function D() {
@@ -260,7 +260,7 @@ let P = function(e) {
           children: [(0, i.jsx)(T.Provider, {
             value: v.current,
             children: (0, i.jsx)(f.njP.Panel, {
-              id: a,
+              id: o,
               className: s()(m.contentColumn, m[r], {
                 [m.mobileContent]: u.tq
               }),

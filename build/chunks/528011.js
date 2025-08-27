@@ -21,10 +21,10 @@ var Chunk149765 = require("./149765.js"),
 function h(e) {
   let t = c.default.getCurrentUser(),
     n = _.Z.getIncidentsByGuild();
-  for (let i of d.default.keys(n).map(e => a.Z.getGuild(e))) {
+  for (let i of d.default.keys(n).map(e => o.Z.getGuild(e))) {
     if (null == i) continue;
-    let o = n[i.id];
-    if (!(null == o || !(0, f.i9)(o) && !(0, f.ur)(o) || (0, f.ur)(o) && i.id !== e) && r.Db(u.uB({
+    let a = n[i.id];
+    if (!(null == a || !(0, f.i9)(a) && !(0, f.ur)(a) || (0, f.ur)(a) && i.id !== e) && r.Db(u.uB({
         user: t,
         context: i,
         checkElevated: false
@@ -34,18 +34,18 @@ function h(e) {
 }
 
 function m(e) {
-  let t = (0, i.e7)([a.Z, s.Z], () => {
-      let t = a.Z.getGuild(e);
+  let t = (0, i.e7)([o.Z, s.Z], () => {
+      let t = o.Z.getGuild(e);
       if (null == t) returnfalse;
       let n = s.Z.getGuildPermissions(t);
       return null != n && r.Db(n, p.cv)
     }),
     n = (0, i.e7)([_.Z], () => null != e ? _.Z.getGuildIncident(e) : null),
-    o = null != n && (0, f.ur)(n);
+    a = null != n && (0, f.ur)(n);
   return {
     shouldShowIncidentActions: t,
     incidentData: n,
-    isUnderLockdown: o
+    isUnderLockdown: a
   }
 }
 

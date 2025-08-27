@@ -83,7 +83,7 @@ function p(e) {
     gridNotice: k,
     renderHeader: U,
     renderUpsell: G
-  } = e, B = i.useRef(null), Z = i.useRef(null), F = i.useRef(null), V = 0 === t.length, H = (0, o.Iu)(e => e.searchQuery), Y = f.useStore(e => e.inspectedExpressionPosition), W = (0, a.ep)({
+  } = e, B = i.useRef(null), Z = i.useRef(null), F = i.useRef(null), V = 0 === t.length, H = (0, a.Iu)(e => e.searchQuery), Y = f.useStore(e => e.inspectedExpressionPosition), W = (0, o.ep)({
     gridWrapperRef: B,
     containerWidth: u,
     showingEmptyState: V
@@ -93,7 +93,7 @@ function p(e) {
     rowCountBySection: q,
     columnCounts: X,
     gutterWidth: Q
-  } = (0, a.yi)({
+  } = (0, o.yi)({
     categories: t,
     collapsedCategories: n,
     gridWidth: W,
@@ -106,7 +106,7 @@ function p(e) {
     gridContainerProps: ee,
     handleGridContainerKeyDown: et,
     isUsingKeyboardNavigation: en
-  } = (0, a.t$)({
+  } = (0, o.t$)({
     columnCounts: X,
     expressionsListRef: Z,
     expressionsGrid: K,
@@ -119,7 +119,7 @@ function p(e) {
     rowIndex: e,
     totalRowCount: z,
     sectionIndex: t.sectionIndex
-  }, t => J(e, t), t => f.setInspectedExpressionPosition(t, e)), [K, J, $, Q, en, O, f, z]), ei = i.useCallback(e => null == v ? true : v(t[e]), [t, v]), eo = i.useCallback(e => null == I ? true : I(t[e], e), [t, I]), ea = i.useCallback(e => null == T ? true : T(t[e], e), [t, T]), es = i.useCallback(() => {
+  }, t => J(e, t), t => f.setInspectedExpressionPosition(t, e)), [K, J, $, Q, en, O, f, z]), ei = i.useCallback(e => null == v ? true : v(t[e]), [t, v]), ea = i.useCallback(e => null == I ? true : I(t[e], e), [t, I]), eo = i.useCallback(e => null == T ? true : T(t[e], e), [t, T]), es = i.useCallback(() => {
     var e;
     return null == S ? true : S(null == K || null == (e = K[Y.rowIndex]) ? true : e[Y.columnIndex])
   }, [K, Y.columnIndex, Y.rowIndex, S]);
@@ -165,8 +165,8 @@ function p(e) {
           listPadding: j,
           renderRow: er,
           renderSection: null != v ? ei : true,
-          renderSectionHeader: null != I ? eo : true,
-          renderSectionFooter: null != T ? ea : true,
+          renderSectionHeader: null != I ? ea : true,
+          renderSectionFooter: null != T ? eo : true,
           renderInspector: null != S ? es : true,
           renderEmptySearchState: A,
           rowCount: z,

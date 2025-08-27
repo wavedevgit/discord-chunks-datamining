@@ -56,11 +56,11 @@ class _ {
   trackEvent(e) {
     let t = Date.now();
     requestIdleCallback(() => {
-      o.default.track(s.rMx.APP_UI_VIEWED, d(c({}, m(), g()), {
+      a.default.track(s.rMx.APP_UI_VIEWED, d(c({}, m(), g()), {
         load_id: this.loadId,
         screen_name: e,
         duration_ms_since_app_opened: t - f(),
-        app_hardware_acceleration_enabled: a.ZP.getEnableHardwareAcceleration()
+        app_hardware_acceleration_enabled: o.ZP.getEnableHardwareAcceleration()
       }))
     })
   }
@@ -68,7 +68,7 @@ class _ {
     if (!this.appUIViewed) {
       this.trackEvent(e);
       try {
-        a.ZP.appViewed()
+        o.ZP.appViewed()
       } catch (e) {}
       this.appUIViewed = true
     }
@@ -86,7 +86,7 @@ function h(e) {
 function m() {
   var e, t, n;
   let r = "--campaign-id=";
-  for (let o of null != (n = null === Chunk579806.Z || true === Chunk579806.Z || null == (t = Chunk579806.Z.processUtils) || null == (e = exports.getMainArgvSync) ? true : module.call(exports)) ? require : [])
+  for (let a of null != (n = null === Chunk579806.Z || true === Chunk579806.Z || null == (t = Chunk579806.Z.processUtils) || null == (e = exports.getMainArgvSync) ? true : module.call(exports)) ? require : [])
     if (Chunk626135.startsWith(Chunk772848)) return {
       referrer: Chunk626135.substr(Chunk772848.length)
     };
@@ -109,7 +109,7 @@ function g() {
   return null != window.performance && null != window.performance.getEntries && window.performance.getEntries().forEach(n => {
     let r = null != n.encodedBodySize ? n.encodedBodySize : n.decodedBodySize,
       i = null != n.decodedBodySize ? n.decodedBodySize : n.encodedBodySize,
-      o = n.transferSize;
-    null != i && null != r && (e = true, t.total_compressed_byte_size += r, t.total_uncompressed_byte_size += i, null != o && (t.total_uncompressed_byte_size += o), "resource" === n.entryType && ("script" === n.initiatorType && null != n.name && null != n.name.match(/\.js/) && (t.js_compressed_byte_size += r, t.js_uncompressed_byte_size += i, null != o && (t.js_uncompressed_byte_size += o)), "link" === n.initiatorType && null != n.name && null != n.name.match(/\.css/) && (t.css_compressed_byte_size += r, t.css_uncompressed_byte_size += i, null != o && (t.css_uncompressed_byte_size += o))))
+      a = n.transferSize;
+    null != i && null != r && (e = true, t.total_compressed_byte_size += r, t.total_uncompressed_byte_size += i, null != a && (t.total_uncompressed_byte_size += a), "resource" === n.entryType && ("script" === n.initiatorType && null != n.name && null != n.name.match(/\.js/) && (t.js_compressed_byte_size += r, t.js_uncompressed_byte_size += i, null != a && (t.js_uncompressed_byte_size += a)), "link" === n.initiatorType && null != n.name && null != n.name.match(/\.css/) && (t.css_compressed_byte_size += r, t.css_uncompressed_byte_size += i, null != a && (t.css_uncompressed_byte_size += a))))
   }), module ? exports : {}
 }

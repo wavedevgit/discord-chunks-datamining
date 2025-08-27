@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk315263 = require("./315263.js"),
   Chunk100527 = require("./100527.js"),
@@ -105,7 +105,7 @@ function U(e) {
     trackUserProfileAction: Z
   } = (0, v.KZ)(), F = E.default.getCurrentUser(), V = (0, y.yd)(null == F ? true : F.premiumType, R.p9.TIER_2), H = (0, S.Of)(null != (t = null == F ? true : F.id) ? t : null), Y = (0, T.Z)(H).some(e => e.id === m.l.ORB_PROFILE_BADGE);
   return (0, r.jsx)("div", {
-    className: o()(D.container, i),
+    className: a()(D.container, i),
     "aria-label": w.intl.string(w.t.VWV0y8),
     role: "group",
     children: n.map((e, t) => {
@@ -169,12 +169,12 @@ function U(e) {
           tieredTenureBadge: E && e.id !== P.a ? c : true,
           currentUserOwnsOrbBadge: Y
         });
-      return (0, r.jsx)(a.DY3, {
+      return (0, r.jsx)(o.DY3, {
         text: S,
         "aria-label": e.description,
         forceOpen: null != j && j(e.id),
         delay: A.vB,
-        children: (0, r.jsx)(a.eee, {
+        children: (0, r.jsx)(o.eee, {
           onClick: y,
           onMouseEnter: v,
           href: e.link,
@@ -185,7 +185,7 @@ function U(e) {
             alt: " ",
             "aria-hidden": true,
             src: null != (n = e.iconSrc) ? n : (0, A.Ej)(e.icon),
-            className: o()(D.badge, d)
+            className: a()(D.badge, d)
           })
         })
       }, "".concat(e.id, "-").concat(t))

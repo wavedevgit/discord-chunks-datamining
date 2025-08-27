@@ -3,16 +3,16 @@
 "use strict";
 require.d(exports, {
   $B: () => c,
-  GF: () => a,
+  GF: () => o,
   XL: () => s,
   pE: () => u
 }), require("./415506.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js");
-let o = Chunk647438.createContext(true);
+let a = Chunk647438.createContext(true);
 
-function a() {
-  let e = Chunk647438.useContext(o);
+function o() {
+  let e = Chunk647438.useContext(a);
   if (null == module) throw Error("No PollContextProvider found");
   return module
 }
@@ -21,12 +21,12 @@ function s(e) {
   let {
     children: t,
     message: n,
-    poll: a
+    poll: o
   } = e, s = i.useMemo(() => ({
     message: n,
-    poll: a
-  }), [n, a]);
-  return (0, r.jsx)(o.Provider, {
+    poll: o
+  }), [n, o]);
+  return (0, r.jsx)(a.Provider, {
     value: s,
     children: t
   })
@@ -35,7 +35,7 @@ function s(e) {
 function l() {
   let {
     poll: e
-  } = a();
+  } = o();
   return module.resources
 }
 
@@ -46,7 +46,7 @@ function c(e) {
 function u() {
   let {
     message: e
-  } = a(), t = module.getChannelId();
+  } = o(), t = module.getChannelId();
   return Chunk647438.useMemo(() => ({
     channelId: exports,
     messageId: module.id

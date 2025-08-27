@@ -46,7 +46,7 @@ class f extends Chunk147913.Z {
         this.setContentProtection(r)
       },
       STREAM_STOP: () => {
-        null == a.Z.getCurrentUserActiveStream() && this.setContentProtection(false)
+        null == o.Z.getCurrentUserActiveStream() && this.setContentProtection(false)
       }
     })
   }

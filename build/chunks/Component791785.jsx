@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk548680 = require("./548680.js"),
   Chunk399606 = require("./399606.js"),
   Chunk481060 = require("./481060.js"),
@@ -94,7 +94,7 @@ function J(e) {
   let {
     analyticsDataOverride: t,
     analyticsLocations: n,
-    analyticsLocation: o,
+    analyticsLocation: a,
     analyticsObject: l,
     analyticsSourceLocation: d,
     analyticsSubscriptionType: p = F.NYc.PREMIUM,
@@ -112,8 +112,8 @@ function J(e) {
     renderPurchaseConfirmation: en,
     postSuccessGuild: er,
     followupSKUInfo: ei,
-    renderHeader: eo,
-    applicationId: ea,
+    renderHeader: ea,
+    applicationId: eo,
     guildId: es,
     referralTrialOfferId: el,
     skuId: ec,
@@ -161,7 +161,7 @@ function J(e) {
     [eq, eX] = i.useState(K({
       load_id: eP.loadId,
       payment_type: F.Zuq[ek],
-      location: null != o ? o : l,
+      location: null != a ? a : l,
       source: d,
       subscription_type: p,
       subscription_plan_id: null == eI ? true : eI.id,
@@ -169,7 +169,7 @@ function J(e) {
       eligible_for_trial: null != W,
       location_stack: n,
       sku_id: ec,
-      application_id: ea,
+      application_id: eo,
       guild_id: es,
       payment_modal_version: J.CURRENT_VERSION,
       activity_session_id: eE,
@@ -217,8 +217,8 @@ function J(e) {
       }, {
         autoTrackExposure: false
       });
-      eZ && null != eF && null != o && n && (0, O.n)(o) && (0, y.Ni)(eF.id)
-    }, [eq, eH, eV, eF, eZ, eY, eP.startTime, eQ, o]),
+      eZ && null != eF && null != a && n && (0, O.n)(a) && (0, y.Ni)(eF.id)
+    }, [eq, eH, eV, eF, eZ, eY, eP.startTime, eQ, a]),
     e$ = i.useMemo(() => () => null == B ? true : B(eb === L.A.COMPLETED, eO), [B, eb, eO]),
     e0 = (0, s.Z)(() => Date.now(), [eR]),
     e1 = i.useCallback(function(e) {
@@ -227,13 +227,13 @@ function J(e) {
           trackedFromStep: n,
           analyticsDataOverride: r,
           fulfillment: i,
-          emitPaymentFlowLoadedEvent: o
+          emitPaymentFlowLoadedEvent: a
         } = t,
-        a = Date.now();
+        o = Date.now();
       if (e === x.h8.CONFIRM && (eJ(), null == m || m(i), em)) return void e$();
       eA(e), null == eu || eu(e), eC(null), eS(null), e === x.h8.ADD_PAYMENT_STEPS && (u.Z.wait(f.fw), u.Z.wait(_.pB));
       let s = null != n ? n : eR;
-      if (null === s || o) return void N.default.track(F.rMx.PAYMENT_FLOW_LOADED, q(K({}, eq), {
+      if (null === s || a) return void N.default.track(F.rMx.PAYMENT_FLOW_LOADED, q(K({}, eq), {
         initial_step: null != s ? s : e,
         continue_session_initial_step: eg,
         has_saved_payment_source: eL
@@ -241,8 +241,8 @@ function J(e) {
       N.default.track(F.rMx.PAYMENT_FLOW_STEP, q(K({}, eq, r), {
         from_step: s,
         to_step: e === x.h8.ADD_PAYMENT_STEPS ? x.h8.PAYMENT_TYPE : e,
-        step_duration_ms: a - e0,
-        flow_duration_ms: a - eP.startTime
+        step_duration_ms: o - e0,
+        flow_duration_ms: o - eP.startTime
       }))
     }, [eA, eu, eC, eS, eR, eg, eq, e0, eP.startTime, eJ, m, em, e$, eL]);
   (0, I.bp)(eR, eN, e1, ey), (0, x.dZ)(eR, eb, ey), (0, T.p)(eR, ew, e1), (0, E.Z)(e$), (0, S.w)(eD, () => B(false), eZ), (0, I.D6)(eN);
@@ -258,7 +258,7 @@ function J(e) {
       reviewWarningMessage: Q,
       planGroup: $,
       openInvoiceId: ee,
-      analyticsLocation: o,
+      analyticsLocation: a,
       onSubscriptionConfirmation: et,
       renderPurchaseConfirmation: en,
       postSuccessGuild: er,
@@ -268,7 +268,7 @@ function J(e) {
       continueSessionToInitialStep: eg
     },
     e3 = (0, G.U)({
-      renderHeader: eo,
+      renderHeader: ea,
       referralTrialOfferId: el,
       handleClose: e$
     });
@@ -278,7 +278,7 @@ function J(e) {
     intensity: X,
     children: (0, r.jsx)(c.Y0X, {
       "data-migration-pending": true,
-      className: a()(Y.root, eG, {
+      className: o()(Y.root, eG, {
         [Y.withHeader]: null != e3
       }),
       transitionState: C,
@@ -299,8 +299,8 @@ function $(e) {
   let {
     subscriptionTier: t,
     initialPlanId: n,
-    handleStepChange: o,
-    referralTrialOfferId: a,
+    handleStepChange: a,
+    referralTrialOfferId: o,
     handleClose: s,
     continueSessionToInitialStep: c
   } = e, {
@@ -318,7 +318,7 @@ function $(e) {
   } = (0, w.wD)(), I = O.current, T = (0, k.Z)({
     isGift: v,
     skuId: E,
-    referralTrialOfferId: a
+    referralTrialOfferId: o
   }), [S, A] = i.useState(true), N = (0, l.e7)([C.Z], () => C.Z.applicationIdsFetched.has(V.CL));
   return (i.useEffect(() => {
     A(!_ || !h || g)
@@ -338,11 +338,11 @@ function $(e) {
       selectedSkuId: E,
       startedPaymentFlowWithPaymentSources: I
     });
-    null != c ? o(x.h8.ADD_PAYMENT_STEPS, {
+    null != c ? a(x.h8.ADD_PAYMENT_STEPS, {
       emitPaymentFlowLoadedEvent: true,
       trackedFromStep: c
-    }) : null != n ? o(x.h8.REVIEW) : e ? (b((0, M.nA)(E, u, y)), o(x.h8.REVIEW)) : null != t ? o(x.h8.PLAN_SELECT) : o(x.h8.SKU_SELECT)
-  }, [c, u, f, N, n, S, o, t, E, b, T, y, v, I]), S) ? (0, r.jsx)(B.Z, {}) : f ? (0, r.jsx)(m.Vq, {
+    }) : null != n ? a(x.h8.REVIEW) : e ? (b((0, M.nA)(E, u, y)), a(x.h8.REVIEW)) : null != t ? a(x.h8.PLAN_SELECT) : a(x.h8.SKU_SELECT)
+  }, [c, u, f, N, n, S, a, t, E, b, T, y, v, I]), S) ? (0, r.jsx)(B.Z, {}) : f ? (0, r.jsx)(m.Vq, {
     onClose: s
   }) : null
 }

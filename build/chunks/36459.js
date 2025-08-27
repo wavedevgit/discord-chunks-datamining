@@ -125,10 +125,10 @@ async function I(e, t, n) {
 }
 
 function T(e, t, n) {
-  let i = a.Z.getGuild(e);
+  let i = o.Z.getGuild(e);
   if (null == i || !s.Z.can(_.Plq.MANAGE_GUILD, i)) return;
   let l = () => {
-    (0, o.yw)(_.rMx.GUILD_AUTOMOD_FEEDBACK, {
+    (0, a.yw)(_.rMx.GUILD_AUTOMOD_FEEDBACK, {
       feedback_type: u.x2.MENTION_RAID_REMOVE_RESTRICTION,
       decision_id: t
     }), r.tn.post({

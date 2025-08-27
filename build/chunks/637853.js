@@ -66,7 +66,7 @@ function y(e, t, n) {
       })
     })
   }), t.forEach(e => r.add(e));
-  let i = n.filter(e => !e.isCategory() && !e.isThread() && !(0, o.Z)(e));
+  let i = n.filter(e => !e.isCategory() && !e.isThread() && !(0, a.Z)(e));
   return [i.filter(e => r.has(e.id) || null != e.parent_id && r.has(e.parent_id)), i.filter(e => !r.has(e.id) && !(null != e.parent_id && r.has(e.parent_id)))]
 }
 
@@ -89,7 +89,7 @@ function v(e, t, n) {
 }
 
 function I(e) {
-  return T(a.Z.getChannel(e))
+  return T(o.Z.getChannel(e))
 }
 
 function T(e) {
@@ -97,8 +97,8 @@ function T(e) {
 }
 
 function S(e) {
-  return (0, r.e7)([a.Z], () => {
-    let t = a.Z.getChannel(e);
+  return (0, r.e7)([o.Z], () => {
+    let t = o.Z.getChannel(e);
     return (0, d.lm)(t) && T(t)
   })
 }
@@ -107,14 +107,14 @@ function A(e, t, n) {
   let r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : () => true,
     i = N(e, t, e => e.id, r);
   return n.forEach(t => {
-    var n, o;
+    var n, a;
     if (!t.required) return;
-    let a = N(e, null != (o = null == (n = t.options[0]) ? true : n.channelIds) ? o : [], e => e.id),
+    let o = N(e, null != (a = null == (n = t.options[0]) ? true : n.channelIds) ? a : [], e => e.id),
       s = t.options.reduce((t, n) => {
         if (null == n.channelIds) return [];
-        let o = N(e, n.channelIds, e => e.id, e => r(e) && !i.includes(e));
-        return o.length < t.length ? o : t
-      }, a);
+        let a = N(e, n.channelIds, e => e.id, e => r(e) && !i.includes(e));
+        return a.length < t.length ? a : t
+      }, o);
     i.push(...s)
   }), i
 }
@@ -130,15 +130,15 @@ function N(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : e => e,
     r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : () => true,
     i = s.ZP.getChannels(e)[s.sH],
-    o = [];
+    a = [];
   for (let {
       channel: e
     }
     of i)
     if ((0, _.s)(e.guild_id, e.id) && (t.includes(e.id) && !e.isCategory() || !e.isThread() && null != e.parent_id && t.includes(e.parent_id))) {
       let t = n(e);
-      r(t) && o.push(t)
-    } return o
+      r(t) && a.push(t)
+    } return a
 }
 
 function R(e, t) {
@@ -163,8 +163,8 @@ function w(e, t) {
     let n = s.ZP.getChannels(e),
       r = [],
       i = [],
-      o = {};
-    for (let e of n[s.sH])(0, _.s)(e.channel.guild_id, e.channel.id) && (t.has(e.channel.id) && !e.channel.isCategory() || !e.channel.isThread() && null != e.channel.parent_id && t.has(e.channel.parent_id)) && (o[e.channel.id] = e, r.push(e.channel), T(e.channel) && i.push(e.channel.id));
+      a = {};
+    for (let e of n[s.sH])(0, _.s)(e.channel.guild_id, e.channel.id) && (t.has(e.channel.id) && !e.channel.isCategory() || !e.channel.isThread() && null != e.channel.parent_id && t.has(e.channel.parent_id)) && (a[e.channel.id] = e, r.push(e.channel), T(e.channel) && i.push(e.channel.id));
     return [i, r]
   }, [e, t], P)
 }

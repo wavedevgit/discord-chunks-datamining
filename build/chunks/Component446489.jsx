@@ -136,7 +136,7 @@ class g extends(r = Chunk647438.PureComponent) {
     } = this.state, {
       color: n,
       formatString: r
-    } = this.props, o = s().omit(this.props, ["value", "digitWidth", "padStartLength", "forcePosition"]);
+    } = this.props, a = s().omit(this.props, ["value", "digitWidth", "padStartLength", "forcePosition"]);
     if (null == module) return (0, Chunk951288.jsx)("div", _(d({}, Chunk647438), {
       style: {
         color: require,
@@ -144,7 +144,7 @@ class g extends(r = Chunk647438.PureComponent) {
       },
       children: null != r ? r(this.padValue(exports)) : this.padValue(exports)
     }));
-    let a = Math.max(module, exports);
+    let o = Math.max(module, exports);
     return (0, Chunk951288.jsxs)("div", _(d({}, Chunk647438), {
       style: {
         color: require,

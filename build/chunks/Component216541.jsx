@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk780384 = require("./780384.js"),
   Chunk481060 = require("./481060.js"),
   Chunk410030 = require("./410030.js"),
@@ -32,11 +32,11 @@ let E = e => {
     firstProfileEffect: O,
     firstAvatarDecoration: v,
     firstNameplate: I
-  } = (0, u.Rj)(t), T = (0, f.O1)(v), S = (0, l.ZP)(), A = (0, a.ap)(S), C = (0, d.L)(t);
+  } = (0, u.Rj)(t), T = (0, f.O1)(v), S = (0, l.ZP)(), A = (0, o.ap)(S), C = (0, d.L)(t);
   return (0, r.jsxs)("div", {
-    className: o()(h.container, C ? h.threeItemBundle : null, y),
+    className: a()(h.container, C ? h.threeItemBundle : null, y),
     children: [(0, r.jsx)("div", {
-      className: o()(h.profileEffectShopPreview, b ? h.profileEffectShopPreviewCollectedModal : null),
+      className: a()(h.profileEffectShopPreview, b ? h.profileEffectShopPreviewCollectedModal : null),
       children: (0, r.jsx)(c.Z, {
         isHovering: i,
         profileEffectId: O.id,
@@ -45,7 +45,7 @@ let E = e => {
         removeSetHeight: true
       })
     }), (0, r.jsx)("div", {
-      className: o()(h.avatarDecorationPreview, b ? h.avatarDecorationPreviewCollectedModal : null, C ? h.avatarDecorationDropShadow : null),
+      className: a()(h.avatarDecorationPreview, b ? h.avatarDecorationPreviewCollectedModal : null, C ? h.avatarDecorationDropShadow : null),
       children: (0, r.jsx)(_.R, {
         item: T,
         user: E,
@@ -55,7 +55,7 @@ let E = e => {
         avatarPlaceholderSrc: A ? g : m
       })
     }), C && (0, r.jsx)("div", {
-      className: o()(h.nameplatePreview, b ? h.nameplatePreviewCollectedModal : null),
+      className: a()(h.nameplatePreview, b ? h.nameplatePreviewCollectedModal : null),
       children: (0, r.jsx)(p.Z, {
         user: E,
         nameplate: I,

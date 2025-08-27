@@ -2,12 +2,12 @@
 /** chunk id: 553245, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  b: () => a
+  b: () => o
 }), require("./388685.js");
 var Chunk689320 = require("./689320.js"),
   Chunk143806 = require("./143806.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -15,7 +15,7 @@ function o(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class a {
+class o {
   get totalLength() {
     return this.primary.length + this.extended.length
   }
@@ -74,6 +74,6 @@ class a {
     return Chunk689320.t(this.extended.values(), this.primary.values())
   }
   constructor(e, t) {
-    o(this, "primary", true), o(this, "extended", true), this.primary = new i.S(e), this.extended = new i.S(t)
+    a(this, "primary", true), a(this, "extended", true), this.primary = new i.S(e), this.extended = new i.S(t)
   }
 }

@@ -32,7 +32,7 @@ function c(e) {
       className: l.content,
       children: [(0, r.jsx)(i.P3F, {
         className: l.closeIcon,
-        onClick: () => t(a.L.USER_DISMISS),
+        onClick: () => t(o.L.USER_DISMISS),
         children: (0, r.jsx)(i.Dio, {})
       }), (0, r.jsx)("img", {
         src: n(414190),
@@ -43,7 +43,7 @@ function c(e) {
           variant: "heading-md/semibold",
           color: "header-primary",
           className: l.heading,
-          children: [s.intl.string(s.t.MLt8Hx), (0, r.jsx)(o.Z, {
+          children: [s.intl.string(s.t.MLt8Hx), (0, r.jsx)(a.Z, {
             className: l.betaTag
           })]
         }), (0, r.jsx)(i.Text, {
@@ -56,7 +56,7 @@ function c(e) {
         text: s.intl.string(s.t["9WdoBw"]),
         fullWidth: true,
         onClick: () => {
-          t(a.L.TAKE_ACTION), c()
+          t(o.L.TAKE_ACTION), c()
         }
       })]
     })]

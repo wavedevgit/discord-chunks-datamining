@@ -2,14 +2,14 @@
 /** chunk id: 528963, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => a
+  Z: () => o
 });
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
   Chunk981631 = require("./981631.js");
-let a = {
+let o = {
   createChannelFollower: (e, t) => r.tn.post({
-    url: o.ANM.CHANNEL_FOLLOWERS(t),
+    url: a.ANM.CHANNEL_FOLLOWERS(t),
     body: {
       webhook_channel_id: e
     },
@@ -22,7 +22,7 @@ let a = {
     });
     try {
       let t = await r.tn.get({
-        url: o.ANM.CHANNEL_FOLLOWER_STATS(e),
+        url: a.ANM.CHANNEL_FOLLOWER_STATS(e),
         body: {
           channel_id: e
         },

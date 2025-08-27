@@ -193,8 +193,8 @@ let e3 = () => {
       paymentsBlocked: tn,
       isEligibleForQuests: tr,
       isStricterMessageRequestsEnabled: ti,
-      hasLibraryApplication: to,
-      hasTOTPEnabled: ta,
+      hasLibraryApplication: ta,
+      hasTOTPEnabled: to,
       developerMode: ts,
       isAdultUser: tl,
       hasSecureFramesVerifiedUserIds: tc,
@@ -279,13 +279,13 @@ let e3 = () => {
         searchableTitles: [eq.intl.string(eq.t.cDgKtb)],
         section: eW.oAB.ACCOUNT,
         parent: eH.s6.ACCOUNT_MULTI_FACTOR_AUTHENTICATION,
-        predicate: () => !ta
+        predicate: () => !to
       },
       [eH.s6.ACCOUNT_REMOVE_2FA]: {
         searchableTitles: [eq.intl.string(eq.t["D+aE7u"])],
         section: eW.oAB.ACCOUNT,
         parent: eH.s6.ACCOUNT_MULTI_FACTOR_AUTHENTICATION,
-        predicate: () => ta
+        predicate: () => to
       },
       [eH.s6.ACCOUNT_VIEW_BACKUP_CODES]: {
         searchableTitles: [eq.intl.string(eq.t.fZSi1N)],
@@ -584,7 +584,7 @@ let e3 = () => {
           text: eq.intl.string(eq.t.y2b7CA),
           color: T.Z.BG_BRAND
         }),
-        newIndicatorDismissibleContentTypes: [o.z.FAMILY_CENTER_NEW_BADGE],
+        newIndicatorDismissibleContentTypes: [a.z.FAMILY_CENTER_NEW_BADGE],
         url: eW.Z5c.SETTINGS("family-center")
       },
       [eH.s6.PRIVACY_AND_SAFETY_RECEIVE_DISCORD_DATA_CATEGORY]: {
@@ -605,7 +605,7 @@ let e3 = () => {
         label: eq.intl.string(eq.t["+1h0k5"]),
         ariaLabel: eq.intl.string(eq.t["+1h0k5"]),
         element: eR.Z,
-        newIndicatorDismissibleContentTypes: [o.z.AUTH_SESSIONS_NEW],
+        newIndicatorDismissibleContentTypes: [a.z.AUTH_SESSIONS_NEW],
         impressionName: i.ImpressionNames.USER_SETTINGS_SESSIONS,
         impressionProperties: {
           source: A
@@ -621,7 +621,7 @@ let e3 = () => {
         impressionProperties: {
           source: A
         },
-        newIndicatorDismissibleContentTypes: [o.z.NEW_CRUNCHYROLL_CONNECTION],
+        newIndicatorDismissibleContentTypes: [a.z.NEW_CRUNCHYROLL_CONNECTION],
         url: eW.Z5c.SETTINGS("connections")
       },
       [eH.s6.THIRD_PARTY_ACCESS]: {
@@ -692,7 +692,7 @@ let e3 = () => {
         element: L.Z,
         icon: b ? (0, r.jsx)(s.Mgn, {
           size: "xs",
-          color: a.Z.unsafe_rawColors.YELLOW_300.css
+          color: o.Z.unsafe_rawColors.YELLOW_300.css
         }) : null
       },
       [eH.s6.SUBSCRIPTIONS_CREDITS]: {
@@ -1563,7 +1563,7 @@ let e3 = () => {
         section: eW.oAB.ADVANCED,
         searchableTitles: [eq.intl.string(eq.t.fi3UQE)],
         parent: eH.s6.SETTINGS_ADVANCED,
-        predicate: () => to
+        predicate: () => ta
       },
       [eH.s6.SETTINGS_ADVANCED_APPLICATION_TEST_MODE]: {
         section: eW.oAB.ADVANCED,
@@ -1983,7 +1983,7 @@ let e3 = () => {
         section: eW.oAB.TEXT_COMPONENT,
         searchableTitles: ["Text Components"],
         label: "Text Components",
-        element: ea.Z,
+        element: eo.Z,
         predicate: () => H.Z.isDeveloper
       },
       [eH.s6.INTL_TESTING]: {
@@ -2058,7 +2058,7 @@ let e3 = () => {
       },
       [eH.s6.SOCIAL_LINKS]: {
         section: _.ID.CUSTOM,
-        element: eo.Z
+        element: ea.Z
       },
       [eH.s6.CLIENT_DEBUG_INFO]: {
         section: _.ID.CUSTOM,

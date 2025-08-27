@@ -35,7 +35,7 @@ function c(e) {
       return
     }
     if (null != c.current && c.current.src === e) return;
-    let t = new(await (0, a.Z)(e));
+    let t = new(await (0, o.Z)(e));
     t.src = e, c.current = t
   }, [c, e]);
   return {
@@ -44,13 +44,13 @@ function c(e) {
       var e, r;
       let {
         volume: i,
-        outputChannel: a = l.w.DEFAULT
+        outputChannel: o = l.w.DEFAULT
       } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
       f(), null == (e = n.current) || e.pause();
       let {
         current: s
       } = c;
-      return null != s && (n.current = s, s.currentTime = 0, s.volume = null != i ? i : 1, s.dataset.soundId = t.soundId, a === l.w.VOICE && (null == (r = s.setSinkId) || r.call(s, o.voiceSinkId)), s.play(), s.onplay = () => d(true), s.onpause = () => d(false), s.onended = () => d(false), true)
+      return null != s && (n.current = s, s.currentTime = 0, s.volume = null != i ? i : 1, s.dataset.soundId = t.soundId, o === l.w.VOICE && (null == (r = s.setSinkId) || r.call(s, a.voiceSinkId)), s.play(), s.onplay = () => d(true), s.onpause = () => d(false), s.onended = () => d(false), true)
     }, [n, t.soundId, f]),
     stopSound: r.useCallback(() => {
       let {

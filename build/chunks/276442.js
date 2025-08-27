@@ -93,14 +93,14 @@ function y(e) {
     paymentAuthenticationState: P,
     selectedSkuId: w,
     isGift: M
-  }), U = (0, a.N)(m), G = !M && null != U && null != w && h.nG[U.trial_id].skus.includes(w), B = () => {
+  }), U = (0, o.N)(m), G = !M && null != U && null != w && h.nG[U.trial_id].skus.includes(w), B = () => {
     c(Object.values(T).length < 1 && null == n ? f.h8.PLAN_SELECT : f.h8.REVIEW, {
       trackedFromStep: f.h8.PAYMENT_TYPE
     })
   }, Z = null != E ? E : B;
   i()(I, "Step should be set here");
-  let F = (0, o.Z)(() => Date.now(), [I]),
-    V = (0, o.Z)(() => null != y && null == x.current ? j && y === f.h8.CREDIT_CARD_INFORMATION ? f.h8.PAYMENT_ELEMENT : y : f.h8.PAYMENT_TYPE, [y, x.current, j]);
+  let F = (0, a.Z)(() => Date.now(), [I]),
+    V = (0, a.Z)(() => null != y && null == x.current ? j && y === f.h8.CREDIT_CARD_INFORMATION ? f.h8.PAYMENT_ELEMENT : y : f.h8.PAYMENT_TYPE, [y, x.current, j]);
   return (0, s.vP)({
     paymentModalArgs: k,
     initialStep: V,

@@ -13,9 +13,9 @@ let s = [Chunk981631.d4z.GUILD_TEXT, Chunk981631.d4z.GUILD_VOICE, Chunk981631.d4
 
 function c(e) {
   if (null == e || !s.includes(e.type)) return [];
-  let t = o.Z.getGuild(e.guild_id);
+  let t = a.Z.getGuild(e.guild_id);
   return null == t ? [] : Object.values(e.permissionOverwrites).filter(e => {
-    var n, o;
-    return 0 === e.type && (null == (o = i.Z.getRole(t.id, e.id)) || null == (n = o.tags) ? true : n.guild_connections) === null && !r.Db(e.deny, l)
+    var n, a;
+    return 0 === e.type && (null == (a = i.Z.getRole(t.id, e.id)) || null == (n = a.tags) ? true : n.guild_connections) === null && !r.Db(e.deny, l)
   }).map(e => i.Z.getRole(t.id, e.id)).filter(e => null != e)
 }

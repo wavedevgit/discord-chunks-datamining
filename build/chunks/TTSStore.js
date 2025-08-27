@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -23,7 +23,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      a(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -95,7 +95,7 @@ class h extends(r = Chunk442837.ZP.DeviceSettingsStore) {
     return d
   }
 }
-a(h, "displayName", "TTSStore"), a(h, "persistKey", "TTSStore"), a(h, "migrations", []);
+o(h, "displayName", "TTSStore"), o(h, "persistKey", "TTSStore"), o(h, "migrations", []);
 let m = new h(Chunk570140.Z, __OVERLAY__ ? {} : {
   SPEAKING_MESSAGE: f,
   STOP_SPEAKING: _,

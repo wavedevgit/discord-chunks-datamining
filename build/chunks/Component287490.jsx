@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -53,8 +53,8 @@ function S() {
     overridesInfo: t
   } = (0, Chunk667344.Q)(), {
     experiments: n,
-    overridesInfo: o
-  } = (0, Chunk493075.s)(), a = Chunk647438.useMemo(() => T({}, require, module), [require, module]), s = Chunk647438.useMemo(() => T({}, Chunk392711, exports), [Chunk392711, exports]), [l, u] = Chunk647438.useState(""), d = (0, Chunk878209.Ro)((0, Chunk878209.Tc)((0, Chunk878209.Cg)(a), Chunk442837), Chunk755721);
+    overridesInfo: a
+  } = (0, Chunk493075.s)(), o = Chunk647438.useMemo(() => T({}, require, module), [require, module]), s = Chunk647438.useMemo(() => T({}, Chunk392711, exports), [Chunk392711, exports]), [l, u] = Chunk647438.useState(""), d = (0, Chunk878209.Ro)((0, Chunk878209.Tc)((0, Chunk878209.Cg)(o), Chunk442837), Chunk755721);
   return (0, Chunk951288.jsxs)(Chunk481060.hjN, {
     tag: Chunk481060.RB0.H1,
     title: "Experiments",
@@ -84,11 +84,11 @@ function A(e) {
   let {
     experiment: t,
     experimentId: n,
-    overrideInfo: o,
+    overrideInfo: a,
     defaultOpen: p
   } = e, [m, E] = i.useState(p), [y, I] = i.useState(false), T = i.useCallback(() => {
     E(e => !e)
-  }, []), S = (0, s.e7)([g.default], () => g.default.getId()), A = (0, h.q)(t, S), C = (0, h.a)(t, S), N = (0, s.Wu)([_.Z], () => a().sortBy(_.Z.getRecentExposures(O.xY.USER, n), e => {
+  }, []), S = (0, s.e7)([g.default], () => g.default.getId()), A = (0, h.q)(t, S), C = (0, h.a)(t, S), N = (0, s.Wu)([_.Z], () => o().sortBy(_.Z.getRecentExposures(O.xY.USER, n), e => {
     let [t, n] = e;
     return -n
   }).map(e => {
@@ -146,7 +146,7 @@ function A(e) {
           children: (0, r.jsx)(f.y, {
             experiment: t,
             experimentId: n,
-            overrideInfo: o
+            overrideInfo: a
           })
         })
       }), (0, r.jsxs)("div", {
@@ -174,7 +174,7 @@ function A(e) {
         }), (0, r.jsx)(c.Text, {
           variant: "code",
           className: v.pre,
-          children: (null == o ? true : o.originalDescriptor) == null ? "None" : JSON.stringify(o.originalDescriptor, true, 2)
+          children: (null == a ? true : a.originalDescriptor) == null ? "None" : JSON.stringify(a.originalDescriptor, true, 2)
         }), (0, r.jsx)(c.vwX, {
           tag: "h5",
           className: v.debugTitle,
@@ -201,27 +201,27 @@ function C(e) {
   let {
     experiment: t,
     experimentId: n,
-    overrideInfo: o
-  } = e, [u, d] = i.useState(null != o), [p, h] = i.useState(false), m = i.useCallback(() => {
+    overrideInfo: a
+  } = e, [u, d] = i.useState(null != a), [p, h] = i.useState(false), m = i.useCallback(() => {
     d(e => !e)
-  }, []), g = (0, s.e7)([_.Z], () => _.Z.getLoadedGuildExperiment(n)), b = (0, s.Wu)([_.Z], () => a().sortBy(_.Z.getRecentExposures(O.xY.GUILD, n), e => {
+  }, []), g = (0, s.e7)([_.Z], () => _.Z.getLoadedGuildExperiment(n)), b = (0, s.Wu)([_.Z], () => o().sortBy(_.Z.getRecentExposures(O.xY.GUILD, n), e => {
     let [t, n] = e;
     return -n
   }).map(e => {
     let [t, n] = e;
     return "".concat(new Date(n).toLocaleString(), " (").concat(t, ")")
   })), [y, I] = (0, s.Wu)([E.Z, _.Z], () => {
-    let e = a().sortBy(E.Z.getGuildsArray(), e => e.name.toLowerCase()),
+    let e = o().sortBy(E.Z.getGuildsArray(), e => e.name.toLowerCase()),
       t = {},
       r = [];
-    for (let o of e) {
+    for (let a of e) {
       var i;
-      let e = _.Z.getGuildExperimentDescriptor(n, o.id),
-        a = null != (i = null == e ? true : e.bucket) ? i : O.NZ.NOT_ELIGIBLE;
-      a in t || (t[a] = 0), t[a]++, r.push("".concat(o.name, ": ").concat(a))
+      let e = _.Z.getGuildExperimentDescriptor(n, a.id),
+        o = null != (i = null == e ? true : e.bucket) ? i : O.NZ.NOT_ELIGIBLE;
+      o in t || (t[o] = 0), t[o]++, r.push("".concat(a.name, ": ").concat(o))
     }
-    let o = a()(t).keys().map(Number).sort().map(e => "".concat(t[e], " guilds in bucket ").concat(e)).join(", ");
-    return [r.join("\n"), o]
+    let a = o()(t).keys().map(Number).sort().map(e => "".concat(t[e], " guilds in bucket ").concat(e)).join(", ");
+    return [r.join("\n"), a]
   }), T = (0, r.jsx)(c.P3F, {
     onClick: m,
     children: (0, r.jsxs)(c.vwX, {
@@ -250,7 +250,7 @@ function C(e) {
           children: (0, r.jsx)(f.y, {
             experiment: t,
             experimentId: n,
-            overrideInfo: o
+            overrideInfo: a
           })
         })
       }), (0, r.jsxs)("div", {
@@ -286,7 +286,7 @@ function C(e) {
         }), (0, r.jsx)(c.Text, {
           variant: "code",
           className: v.pre,
-          children: (null == o ? true : o.originalDescriptor) == null ? "None" : JSON.stringify(o.originalDescriptor, true, 2)
+          children: (null == a ? true : a.originalDescriptor) == null ? "None" : JSON.stringify(a.originalDescriptor, true, 2)
         }), (0, r.jsx)(c.vwX, {
           tag: "h5",
           className: v.debugTitle,

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk871230 = require("./871230.js"),
   Chunk202841 = require("./202841.js"),
   Chunk278074 = require("./278074.js"),
@@ -66,8 +66,8 @@ function S(e, t) {
   if (null == e) return {};
   var n, r, i = A(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -75,8 +75,8 @@ function S(e, t) {
 function A(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let C = 24,
@@ -87,14 +87,14 @@ function P(e) {
   let {
     percentage: t,
     label: n,
-    canShowVoterDetails: o,
-    answerId: a
+    canShowVoterDetails: a,
+    answerId: o
   } = e, l = (0, f.Dt)(), {
     channelId: c,
     messageId: u
   } = (0, E.pE)(), [m, g] = i.useState(""), [b, O] = i.useState(false), I = "" !== m && b, S = i.useCallback(() => {
-    g((0, h.e1)(u, c, a))
-  }, [u, c, a]), A = i.useCallback(() => {
+    g((0, h.e1)(u, c, o))
+  }, [u, c, o]), A = i.useCallback(() => {
     S(), O(true)
   }, [S]), C = i.useCallback(() => {
     O(false)
@@ -102,16 +102,16 @@ function P(e) {
     (0, p.n)({
       channelId: c,
       messageId: u,
-      answerId: a
+      answerId: o
     })
-  }, [c, u, a]);
+  }, [c, u, o]);
   return i.useEffect(() => {
     if (b) return _.Z.addReactChangeListener(S), () => {
       _.Z.removeReactChangeListener(S)
     }
   }, [b, S]), (0, r.jsxs)("div", {
     className: y.votesData,
-    children: [o ? (0, r.jsxs)(r.Fragment, {
+    children: [a ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(d.ua7, {
         text: (0, r.jsx)(d.Text, {
           variant: "text-sm/normal",
@@ -178,8 +178,8 @@ function D(e) {
     answersInteraction: t,
     isSelected: n,
     didSelfVote: i,
-    isVictor: o,
-    isExpired: a,
+    isVictor: a,
+    isExpired: o,
     className: s
   } = e;
   return (0, c.EQ)({
@@ -201,8 +201,8 @@ function D(e) {
     answersInteraction: m.Y7.LIST,
     didSelfVote: true
   }, () => (0, r.jsx)(g.ZY, {
-    isVictor: o,
-    isExpired: a,
+    isVictor: a,
+    isExpired: o,
     size: C,
     className: s
   })).otherwise(() => null)
@@ -213,15 +213,15 @@ function x(e) {
     answer: t,
     isExpired: n,
     answersInteraction: i,
-    canShowVoteCounts: o,
+    canShowVoteCounts: a,
     canShowVoterDetails: l
   } = e, c = true === t.isSelected, u = true === t.didSelfVote, f = true === t.isVictor, _ = t.shouldAnimateTransition;
   return (0, r.jsxs)("div", {
-    className: a()(y.answerInner, {
+    className: o()(y.answerInner, {
       [y.currentlyVoting]: i !== m.Y7.LIST,
       [y.selected]: c
     }),
-    children: [o ? (0, r.jsx)(w, {
+    children: [a ? (0, r.jsx)(w, {
       percentage: t.votesPercentage,
       shouldAnimate: _
     }) : null, null != t.pollMedia.emoji && (0, r.jsx)(g.sc, {
@@ -235,7 +235,7 @@ function x(e) {
       children: t.pollMedia.text
     }), t.didSelfVote && (0, r.jsx)(s.T, {
       children: b.intl.string(b.t["8DAM+/"])
-    }), o && (0, r.jsx)(P, {
+    }), a && (0, r.jsx)(P, {
       percentage: t.votesPercentage,
       label: t.votes,
       canShowVoterDetails: l,
@@ -256,19 +256,19 @@ function L(e) {
     isExpired: t,
     answersInteraction: n,
     canShowVoteCounts: i,
-    canTapAnswers: o
-  } = e, a = S(e, ["isExpired", "answersInteraction", "canShowVoteCounts", "canTapAnswers"]);
+    canTapAnswers: a
+  } = e, o = S(e, ["isExpired", "answersInteraction", "canShowVoteCounts", "canTapAnswers"]);
   return (0, r.jsx)(g.$e, v({
     className: y.answersContainer,
     answerClassName: y.answer,
     answersInteraction: n,
-    canTapAnswers: o,
+    canTapAnswers: a,
     renderAnswerContent: e => (0, r.jsx)(x, {
       answer: e,
       isExpired: t,
       answersInteraction: n,
       canShowVoteCounts: i,
-      canShowVoterDetails: o
+      canShowVoterDetails: a
     })
-  }, a))
+  }, o))
 }

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk202841 = require("./202841.js"),
   Chunk818405 = require("./818405.js"),
   Chunk587158 = require("./587158.js"),
@@ -41,7 +41,7 @@ function w(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let D = a().throttle(() => {
+let D = o().throttle(() => {
     Chunk797614.Z.increment({
       name: Chunk286379.V.APP_CRASHED,
       tags: ["reason:".concat(Chunk818405.v.UNHANDLED_JS_ERROR), "level:".concat(Chunk587158.c.FATAL)]
@@ -54,8 +54,8 @@ let D = a().throttle(() => {
 function L(e) {
   var t, n;
   let {
-    error: o,
-    onLock: a,
+    error: a,
+    onLock: o,
     onReload: l,
     onDisable: c,
     onCrashDisabled: u
@@ -66,20 +66,20 @@ function L(e) {
     null != m.current && clearTimeout(m.current)
   }));
   let T = i.useCallback(() => {
-      _.set(0), null != m.current && clearTimeout(m.current), m.current = null, null == a || a(), null == u || u()
-    }, [_, a, u]),
+      _.set(0), null != m.current && clearTimeout(m.current), m.current = null, null == o || o(), null == u || u()
+    }, [_, o, u]),
     w = i.useCallback(e => {
-      O || (v(true), null == a || a(), p.Z.track(N.rMx.NOTIFICATION_CLICKED, {
+      O || (v(true), null == o || o(), p.Z.track(N.rMx.NOTIFICATION_CLICKED, {
         notif_type: C.n0.OverlayCrashed,
         action_type: "reload"
       }, true), e.stopPropagation(), setTimeout(() => null == l ? true : l(), 200))
-    }, [a, l, O]),
+    }, [o, l, O]),
     D = i.useCallback(e => {
       e.stopPropagation(), e.shiftKey ? (y(true), null != m.current && clearTimeout(m.current)) : y(false)
     }, [y]),
     L = i.useCallback(e => {
-      e.stopPropagation(), null == a || a(), null == c || c()
-    }, [c, a]),
+      e.stopPropagation(), null == o || o(), null == c || c()
+    }, [c, o]),
     j = (0, d.e7)([S.ZP], () => S.ZP.getFocusedRunningGame()),
     M = g ? (0, r.jsxs)("div", {
       children: [(0, r.jsx)(f.Text, {
@@ -91,14 +91,14 @@ function L(e) {
         children: [(0, r.jsx)(f.Text, {
           variant: "text-sm/normal",
           color: "text-secondary",
-          children: o.message
+          children: a.message
         }), (0, r.jsx)(f.Text, {
           variant: "text-xxs/normal",
           color: "text-secondary",
           children: (0, r.jsx)("code", {
             className: P.code,
             children: (0, r.jsx)("pre", {
-              children: o.stack
+              children: a.stack
             })
           })
         })]
@@ -120,7 +120,7 @@ function L(e) {
     onNotificationClick: D,
     onConfirmClick: w,
     onCancelClick: null != j ? L : true,
-    onDismissClick: a,
+    onDismissClick: o,
     expand: true,
     locked: true,
     notificationId: "overlay-crashed",

@@ -17,30 +17,30 @@ function c(e) {
   let {
     activityUsers: t,
     guildId: n,
-    activityText: a
+    activityText: o
   } = e;
   return (0, r.jsxs)("div", {
     className: l.wrapper,
-    children: [(0, r.jsx)(o.ZP, {
+    children: [(0, r.jsx)(a.ZP, {
       guildId: n,
       users: t,
       max: 6,
-      size: o.u8.SIZE_16
+      size: a.u8.SIZE_16
     }), (0, r.jsxs)(i.Text, {
       variant: "text-xs/normal",
       color: "none",
-      children: [t.length, " ", a]
+      children: [t.length, " ", o]
     })]
   })
 }
 
 function u(e) {
   switch (null == e ? true : e.type) {
-    case a.IIU.STREAMING:
+    case o.IIU.STREAMING:
       return {
         text: s.intl.string(s.t["Jpkr/v"]), Icon: i.m3e
       };
-    case a.IIU.LISTENING:
+    case o.IIU.LISTENING:
       return {
         text: s.intl.string(s.t.kUEnxM), Icon: i.RZG
       };

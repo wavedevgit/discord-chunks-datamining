@@ -32,7 +32,7 @@ function u() {
   let [e, t] = (0, Chunk647438.useState)(""), [n, l] = (0, Chunk647438.useState)("server-order"), u = (0, Chunk442837.e7)([Chunk771845.ZP], () => Chunk771845.ZP.getFlattenedGuildIds()), d = (0, Chunk442837.e7)([Chunk430824.Z], () => Chunk430824.Z.getGuilds()), f = u.map(e => d[e]), _ = Chunk695346.CW.useSetting(), [p, h] = (0, Chunk647438.useState)(_), m = async e => {
     h(e);
     try {
-      await o.CW.updateSetting(e)
+      await a.CW.updateSetting(e)
     } catch (e) {
       h(_)
     }

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk658722 = require("./658722.js"),
   l = require.n(Chunk658722),
   Chunk392711 = require("./392711.js"),
@@ -66,14 +66,14 @@ class v extends Chunk647438.PureComponent {
       let {
         alpha2: n,
         phoneCountryCodes: i,
-        name: o
-      } = e, a = (0, p.q9)(n);
+        name: a
+      } = e, o = (0, p.q9)(n);
       return i.map(e => ({
         key: "".concat(t, "-").concat(e),
-        name: o,
-        translatedName: a,
+        name: a,
+        translatedName: o,
         countryData: {
-          name: o,
+          name: a,
           alpha2: n,
           code: e
         },
@@ -83,7 +83,7 @@ class v extends Chunk647438.PureComponent {
           align: _.Z.Align.CENTER,
           children: [(0, r.jsx)(_.Z.Child, {
             className: m.countryName,
-            children: a
+            children: o
           }), (0, r.jsx)(_.Z.Child, {
             className: m.countryCode,
             grow: 0,
@@ -108,7 +108,7 @@ class v extends Chunk647438.PureComponent {
       className: e
     } = this.props;
     return (0, Chunk951288.jsxs)(Chunk481060.mzC, {
-      className: a()(Chunk538525.phoneFieldPopout, Chunk315091.elevationBorderLow, module),
+      className: o()(Chunk538525.phoneFieldPopout, Chunk315091.elevationBorderLow, module),
       children: [(0, Chunk951288.jsx)(Chunk481060.mzC.SearchBar, {
         query: this.state.query,
         placeholder: Chunk388032.intl.string(Chunk388032.t.hGOODg),

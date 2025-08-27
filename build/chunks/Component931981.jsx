@@ -40,7 +40,7 @@ class g extends(r = Chunk442837.ZP.PersistedStore) {
 }
 h(g, "displayName", "PTOStore"), h(g, "persistKey", "PTOStore");
 let E = new g(Chunk570140.Z, {}),
-  b = e => (0, o.e7)([u.ZP, f.default, E], () => {
+  b = e => (0, a.e7)([u.ZP, f.default, E], () => {
     let t = f.default.getCurrentUser();
     if (null == t || !t.isStaff() || !e.isDM()) returnfalse;
     let n = f.default.getUser(e.getRecipientId());

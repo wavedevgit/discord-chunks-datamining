@@ -2,11 +2,11 @@
 /** chunk id: 570220, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  f6: () => a
+  f6: () => o
 }), require("./415506.js");
 var Chunk647438 = require("./647438.js"),
   Chunk836560 = require("./836560.js");
-class o extends Chunk836560.EventEmitter {
+class a extends Chunk836560.EventEmitter {
   on() {
     return this
   }
@@ -24,5 +24,5 @@ class o extends Chunk836560.EventEmitter {
   }
 }
 let {
-  Provider: a
-} = Chunk647438.createContext(new o)
+  Provider: o
+} = Chunk647438.createContext(new a)

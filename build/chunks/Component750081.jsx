@@ -2,7 +2,7 @@
 /** chunk id: 750081, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.r(exports), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js"), require("./358797.js");
-var r, i, o, a, s, l, c, Chunk951288 = require("./951288.js");
+var r, i, a, o, s, l, c, Chunk951288 = require("./951288.js");
 require("./92138.js"), require("./647438.js");
 var Chunk602954 = require("./602954.js"),
   Chunk512722 = require("./512722.js"),
@@ -61,8 +61,8 @@ if (null != Chunk579806.Z) {
       throw O.Z.captureCrash(e), e
     })
   }), Chunk998502.ZP.appLoaded();
-  let e = null == (i = (o = Chunk579806.Z.remoteApp).getVersion) ? true : i.call(o),
-    t = null == (a = (s = Chunk579806.Z.remoteApp).getBuildNumber) ? true : a.call(s),
+  let e = null == (i = (a = Chunk579806.Z.remoteApp).getVersion) ? true : i.call(a),
+    t = null == (o = (s = Chunk579806.Z.remoteApp).getBuildNumber) ? true : o.call(s),
     n = {};
   null != Chunk579806.Z.remoteApp.getModuleVersions && (n = Chunk579806.Z.remoteApp.getModuleVersions()), Chunk960048.Z.setExtra({
     hostVersion: module,

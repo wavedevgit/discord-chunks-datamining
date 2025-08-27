@@ -14,12 +14,12 @@ let l = function(e) {
   let {
     className: t,
     cooldown: n
-  } = e, l = (0, o.Z)(n);
+  } = e, l = (0, a.Z)(n);
   return (0, r.jsx)(i.Text, {
     className: t,
     variant: "text-sm/medium",
     color: "text-muted",
-    children: (0, a.QX)(l, {
+    children: (0, o.QX)(l, {
       days: s.t.WUTPDQ,
       hours: s.t.c1qodX,
       minutes: s.t["2+A3dn"]

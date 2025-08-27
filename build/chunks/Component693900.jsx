@@ -37,7 +37,7 @@ function p(e) {
   } = e, {
     springConfig: f,
     isExpanded: p
-  } = i.useContext(d), h = (0, a.e7)([u.Z], () => u.Z.useReducedMotion), {
+  } = i.useContext(d), h = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), {
     ref: m,
     height: g = _
   } = (0, l.ZP)(), E = null != (t = (0, c.Z)(g)) ? t : _, [{
@@ -53,7 +53,7 @@ function p(e) {
       height: g,
       immediate: !p || h || E === _
     })
-  }, [g, y, p, h, E]), (0, r.jsx)(o.animated.div, {
+  }, [g, y, p, h, E]), (0, r.jsx)(a.animated.div, {
     style: {
       height: E === _ ? "auto" : b,
       overflow: "hidden"

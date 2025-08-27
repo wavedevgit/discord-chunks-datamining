@@ -29,11 +29,11 @@ function u() {
 
 function d(e) {
   let t = Date.now();
-  if (t < e.createdAtTimestamp) return o.Z.addBreadcrumb({
+  if (t < e.createdAtTimestamp) return a.Z.addBreadcrumb({
     category: "ad",
     message: "future facing timestamp Date.now(): ".concat(t, ", initialized timestamp: ").concat(e.createdAtTimestamp)
   }), true;
-  let n = t - e.lastUsedTimestamp > a.XM,
+  let n = t - e.lastUsedTimestamp > o.XM,
     r = t - e.createdAtTimestamp > s;
   return n || r
 }

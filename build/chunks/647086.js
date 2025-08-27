@@ -3,11 +3,11 @@
 "use strict";
 require.d(exports, {
   _: () => i,
-  g: () => o
+  g: () => a
 });
 var Chunk411198 = require("./411198.js");
 let i = "373",
-  o = (0, Chunk411198.z$)({
+  a = (0, Chunk411198.z$)({
     id: i,
     name: "Favorites",
     description: "The place for all your favorite channels!",

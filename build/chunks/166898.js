@@ -15,7 +15,7 @@ var Chunk746117 = require("./746117.js"),
   Chunk581079 = require("./581079.js");
 module.exports = function() {
   function e(e) {
-    r(this, "_defaultDir", true), r(this, "_lastDir", true), e ? o.isStrong(e) || a(false) : e = o.getGlobalDir(), this._defaultDir = e, this.reset()
+    r(this, "_defaultDir", true), r(this, "_lastDir", true), e ? a.isStrong(e) || o(false) : e = a.getGlobalDir(), this._defaultDir = e, this.reset()
   }
   var t = module.prototype;
   return exports.reset = function() {

@@ -17,7 +17,7 @@ async function d(e, t) {
   if (e instanceof r.Z) {
     n = 0, f = e.reason;
     let i = s.Z.getFetchState();
-    switch (a.Sb.getSetting() && i !== s.O.LOADED && await (0, l.$h)(), e.reason) {
+    switch (o.Sb.getSetting() && i !== s.O.LOADED && await (0, l.$h)(), e.reason) {
       case r.Z.Reasons.PRIMARY_APP_COMMAND_NOT_FOUND:
         s.Z.inDevModeForApplication(t) && (_ = u.intl.string(u.t.hXRXf3));
         break;
@@ -29,7 +29,7 @@ async function d(e, t) {
     }
   } else if (e instanceof i.Z) {
     var p;
-    n = 1, f = e.reason, _ = null != (p = (0, o.A0)(e.reason, t)) ? p : _
+    n = 1, f = e.reason, _ = null != (p = (0, a.A0)(e.reason, t)) ? p : _
   } else switch (n = 2, d = e.status, f = e.code, e.code) {
     case c.evJ.INVALID_ACTIVITY_LAUNCH_NO_ACCESS:
       _ = u.intl.string(u.t.Gyzcra);

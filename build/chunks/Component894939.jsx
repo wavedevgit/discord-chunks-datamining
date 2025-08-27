@@ -30,7 +30,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk647484 = require("./647484.js");
 
 function C(e) {
-  return (0, o.e7)([_.Z], () => {
+  return (0, a.e7)([_.Z], () => {
     if (null == e) return null;
     let {
       guildId: t,
@@ -117,7 +117,7 @@ function R() {
 function P(e) {
   let {
     guildId: t
-  } = e, n = (0, o.e7)([E.Z], () => {
+  } = e, n = (0, a.e7)([E.Z], () => {
     var e, n, r;
     return null == (r = E.Z.settings.guilds) || null == (n = r.guilds) || null == (e = n[t]) ? true : e.joinSound
   }), i = C(n);
@@ -132,11 +132,11 @@ function P(e) {
       emojiId: l,
       emojiName: c,
       className: A.pillIcon
-    }) : (0, r.jsx)(a.gj8, {
+    }) : (0, r.jsx)(o.gj8, {
       size: "md",
       color: "currentColor",
       className: A.pillIcon
-    }), (0, r.jsx)(a.Text, {
+    }), (0, r.jsx)(o.Text, {
       className: A.pillText,
       variant: "text-xs/medium",
       children: i.name

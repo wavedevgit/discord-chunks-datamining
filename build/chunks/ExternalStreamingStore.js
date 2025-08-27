@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => k
 }), require("./388685.js"), require("./35282.js"), require("./415506.js"), require("./539854.js"), require("./993155.js");
 var r, Chunk348327 = require("./348327.js"),
-  o = require.n(Chunk348327),
+  a = require.n(Chunk348327),
   Chunk442837 = require("./442837.js"),
   Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
@@ -64,8 +64,8 @@ async function w(e, t) {
     }
   } = await P("/games", {
     id: e
-  }, t), o = null == (n = i[0]) ? true : n.name;
-  return N[e] = o, o
+  }, t), a = null == (n = i[0]) ? true : n.name;
+  return N[e] = a, a
 }
 class D {
   start() {
@@ -84,18 +84,18 @@ class D {
       var n, r, i;
       let {
         body: {
-          data: o
+          data: a
         }
       } = await P("/streams", {
         user_id: e.id,
         first: 1
-      }, t), a = o[0];
-      if (null == a || "live" !== a.type) throw Error("no stream");
+      }, t), o = a[0];
+      if (null == o || "live" !== o.type) throw Error("no stream");
       let {
         thumbnail_url: s,
         game_id: l,
         title: c
-      } = a, f = {
+      } = o, f = {
         large_image: null != s && null != (r = (0, d.f)(h.ABu.TWITCH, s)) ? r : true
       }, _ = await w(l, t), p = u.Z.get(h.ABu.TWITCH), m = null != (i = R(s)) ? i : e.name, g = null != c && "" !== c ? c.slice(0, I) : true, E = null != _ && "" !== _ ? _.slice(0, I) : true;
       return {
@@ -139,12 +139,12 @@ class D {
       let {
         id: i,
         snippet: {
-          title: o,
-          thumbnails: a
+          title: a,
+          thumbnails: o
         }
       } = r[0], l = {
-        large_image: null != (n = (0, d.f)(h.ABu.YOUTUBE, a.high.url)) ? n : true
-      }, c = null != o && "" !== o ? o.slice(0, I) : true;
+        large_image: null != (n = (0, d.f)(h.ABu.YOUTUBE, o.high.url)) ? n : true
+      }, c = null != a && "" !== a ? a.slice(0, I) : true;
       return A = {
         url: b(i),
         name: u.Z.get(h.ABu.YOUTUBE).name,
@@ -190,7 +190,7 @@ function L() {
 
 function j(e) {
   var t;
-  if (o()(e.stream, T)) returnfalse;
+  if (a()(e.stream, T)) returnfalse;
   T = null != (t = e.stream) ? t : null
 }
 class M extends(r = Chunk442837.ZP.Store) {

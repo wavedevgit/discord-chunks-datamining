@@ -96,7 +96,7 @@ function C(e) {
     k = (0, i.e7)([m.Z], () => m.Z.getChannelId()),
     U = b.default.extractTimestamp(S.id) + y.O < Date.now(),
     G = (0, r.jsx)(r.Fragment, {
-      children: (0, a._0)(S, N, I)
+      children: (0, o._0)(S, N, I)
     }),
     {
       newestAnalyticsLocation: B
@@ -114,7 +114,7 @@ function C(e) {
       trackingArea: u.j_.STREAM,
       disabledReason: t,
       onClick: () => {
-        null != j && ((0, E.isWindows)() ? (0, _.Z)(j.pid) : (0, o.ZDy)(async () => {
+        null != j && ((0, E.isWindows)() ? (0, _.Z)(j.pid) : (0, a.ZDy)(async () => {
           let {
             default: e
           } = await Promise.all([n.e("38697"), n.e("46746"), n.e("79839")]).then(n.bind(n, 60594));

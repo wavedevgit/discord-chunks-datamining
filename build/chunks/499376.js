@@ -26,8 +26,8 @@ function u(e, t) {
     else {
       var u;
       if (!(0, i.NU)(n) || null == e.proxy_url) return "INVALID";
-      return (0, r.yE)(null != (u = e.flags) ? u : 0, a.J0y.IS_CLIP) ? "CLIP" : "VIDEO"
-    } return null != t && s.test(n) && null != e.url ? "AUDIO" : null != e.url && (0, o.O)(n) ? "PLAINTEXT_PREVIEW" : "OTHER"
+      return (0, r.yE)(null != (u = e.flags) ? u : 0, o.J0y.IS_CLIP) ? "CLIP" : "VIDEO"
+    } return null != t && s.test(n) && null != e.url ? "AUDIO" : null != e.url && (0, a.O)(n) ? "PLAINTEXT_PREVIEW" : "OTHER"
 }
 
 function d(e) {

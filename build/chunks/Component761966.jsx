@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk549631 = require("./549631.jsx"),
@@ -56,8 +56,8 @@ function p(e, t) {
   if (null == e) return {};
   var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -65,8 +65,8 @@ function p(e, t) {
 function h(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -74,13 +74,13 @@ function m(e) {
   var {
     children: t,
     className: n,
-    size: i = a.zx.Sizes.MEDIUM,
+    size: i = o.zx.Sizes.MEDIUM,
     onlyShineOnHover: u = false
   } = e, f = p(e, ["children", "className", "size", "onlyShineOnHover"]);
   return (0, r.jsx)(s.gtL, _(d({}, f), {
-    color: a.zx.Colors.CUSTOM,
+    color: o.zx.Colors.CUSTOM,
     size: i,
-    className: o()(c.button, n),
+    className: a()(c.button, n),
     onlyShineOnHover: u,
     children: (0, r.jsxs)("div", {
       className: c.buttonContents,

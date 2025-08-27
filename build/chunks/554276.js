@@ -7,10 +7,10 @@ require.d(exports, {
 var Chunk183515 = require("./183515.js"),
   Chunk647438 = require("./647438.js"),
   Chunk179506 = require("./179506.js");
-let a = Symbol.for("react-aria.i18n.locale");
+let o = Symbol.for("react-aria.i18n.locale");
 
 function s() {
-  let e = "undefined" != typeof window && window[a] || "undefined" != typeof navigator && (navigator.language || navigator.userLanguage) || "en-US";
+  let e = "undefined" != typeof window && window[o] || "undefined" != typeof navigator && (navigator.language || navigator.userLanguage) || "en-US";
   try {
     Intl.DateTimeFormat.supportedLocalesOf([module])
   } catch {

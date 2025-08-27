@@ -88,8 +88,8 @@ class A extends(r = Chunk647438.PureComponent) {
     let {
       className: n,
       fullWidth: r,
-      size: o,
-      customDisabledColor: a,
+      size: a,
+      customDisabledColor: o,
       tooltipPosition: s
     } = this.props;
     return (0, i.jsxs)("div", {
@@ -97,8 +97,8 @@ class A extends(r = Chunk647438.PureComponent) {
       children: [(0, i.jsx)(c.zx, {
         className: n,
         fullWidth: r,
-        size: o,
-        color: null != a ? a : O.disabledButtonColor,
+        size: a,
+        color: null != o ? o : O.disabledButtonColor,
         disabled: true,
         children: e
       }), (0, i.jsx)(u.ua7, {
@@ -116,8 +116,8 @@ class A extends(r = Chunk647438.PureComponent) {
       fullWidth: t,
       size: n,
       color: r,
-      isLaunchable: o,
-      isLaunching: a,
+      isLaunchable: a,
+      isLaunching: o,
       isRunning: l,
       isShiny: d,
       hideNotLaunchable: f
@@ -145,7 +145,7 @@ class A extends(r = Chunk647438.PureComponent) {
       let {
         libraryApplication: t,
         onDropdownOpen: r,
-        onDropdownClose: o
+        onDropdownClose: a
       } = this.props;
       if (null == r || r(e), null == t) throw Error("Unexpected missing libraryApplication");
       d.jW(e, async () => {
@@ -157,7 +157,7 @@ class A extends(r = Chunk647438.PureComponent) {
           onPlay: this.handleClick
         }))
       }, {
-        onClose: o
+        onClose: a
       })
     }), v(this, "handleClick", () => {
       let {
@@ -181,11 +181,11 @@ function C(e) {
   let {
     applicationId: t,
     libraryApplication: n
-  } = e, r = (0, f.O)(), [o, a] = (0, l.Wu)([h.Z, p.Z, m.Z], () => [h.Z.isConnected(t) || p.Z.isLaunchable(t) || null != n && m.Z.isLaunchable(n.id, n.branchId), p.Z.launchingGames.has(t)], [t, n]), s = (0, l.e7)([_.ZP], () => new Set(_.ZP.getRunningVerifiedApplicationIds()).has(t), [t]), c = (0, l.e7)([m.Z], () => null != n ? m.Z.getState(n.id, n.branchId) : null, [n]);
+  } = e, r = (0, f.O)(), [a, o] = (0, l.Wu)([h.Z, p.Z, m.Z], () => [h.Z.isConnected(t) || p.Z.isLaunchable(t) || null != n && m.Z.isLaunchable(n.id, n.branchId), p.Z.launchingGames.has(t)], [t, n]), s = (0, l.e7)([_.ZP], () => new Set(_.ZP.getRunningVerifiedApplicationIds()).has(t), [t]), c = (0, l.e7)([m.Z], () => null != n ? m.Z.getState(n.id, n.branchId) : null, [n]);
   return (0, i.jsx)(A, S(I({}, e), {
     analyticsContext: r,
-    isLaunchable: o,
-    isLaunching: a,
+    isLaunchable: a,
+    isLaunching: o,
     isRunning: s,
     dispatchState: c
   }))

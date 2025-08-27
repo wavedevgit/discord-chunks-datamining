@@ -22,9 +22,9 @@ class l extends Chunk147913.Z {
     let {
       interaction: t
     } = e;
-    if ([a.qR.EmojiButtonMouseEntered].includes(t)) {
+    if ([o.qR.EmojiButtonMouseEntered].includes(t)) {
       let e = i.Z.getGuildId();
-      (0, o.O)(e)
+      (0, a.O)(e)
     }
   }
   constructor(...e) {

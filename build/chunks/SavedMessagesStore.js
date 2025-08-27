@@ -82,8 +82,8 @@ function I(e) {
   null == h.get(n) && (g = Date.now()), h.set(n, e);
   let r = e.saveData.messageId,
     i = e.saveData.channelId,
-    o = null != (t = y.get(i)) ? t : new Set;
-  o.add(r), y.set(i, o), null == e.message && b.add(r), null != e.saveData.dueAt && new Date > e.saveData.dueAt ? E.add(r) : E.delete(r)
+    a = null != (t = y.get(i)) ? t : new Set;
+  a.add(r), y.set(i, a), null == e.message && b.add(r), null != e.saveData.dueAt && new Date > e.saveData.dueAt ? E.add(r) : E.delete(r)
 }
 
 function T(e) {
@@ -134,8 +134,8 @@ function P(e) {
     channelId: n
   }), i = h.get(r);
   if ((null == i ? true : i.message) == null) returnfalse;
-  let o = d({}, i);
-  return o.message = null, h.set(r, o), true
+  let a = d({}, i);
+  return a.message = null, h.set(r, a), true
 }
 
 function w(e) {

@@ -7,7 +7,7 @@ require.d(exports, {
   Z: () => Q
 }), require("./388685.js"), require("./642613.js");
 var i, Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk697988 = require("./697988.js"),
   Chunk683860 = require("./683860.js"),
   Chunk843991 = require("./843991.js"),
@@ -40,8 +40,8 @@ let O = [],
   N = [],
   R = false,
   P = [],
-  w = a().chain(O),
-  D = a().chain(O),
+  w = o().chain(O),
+  D = o().chain(O),
   x = new Set,
   L = new Set;
 
@@ -74,7 +74,7 @@ function U(e, t) {
 }
 
 function G() {
-  N = [], r = null, I = null, T = new Set, S = Chunk683860.z.LATEST_ACTIVITY, A = Chunk697988.z.MATCH_SOME, C = 0, P = [], w = a().chain(O), D = a().chain(O), L.clear(), x.clear()
+  N = [], r = null, I = null, T = new Set, S = Chunk683860.z.LATEST_ACTIVITY, A = Chunk697988.z.MATCH_SOME, C = 0, P = [], w = o().chain(O), D = o().chain(O), L.clear(), x.clear()
 }
 
 function B() {
@@ -104,7 +104,7 @@ function F(e) {
       id: t
     } = e;
     return t
-  }), C = 0, R = true), 0 !== x.size && (P = P.filter(e => !x.has(e)), x.clear()), 0 !== L.size && (P = Array.from(new Set([...P, ...L])), L.clear()), ((null == e ? true : e.refreshThreadIds) || (null == e ? true : e.sortThreadIds)) && (D = a().chain(P).sort(k(l.z.LATEST_ACTIVITY)), w = a().chain(P).sort(k(l.z.CREATION_DATE)));
+  }), C = 0, R = true), 0 !== x.size && (P = P.filter(e => !x.has(e)), x.clear()), 0 !== L.size && (P = Array.from(new Set([...P, ...L])), L.clear()), ((null == e ? true : e.refreshThreadIds) || (null == e ? true : e.sortThreadIds)) && (D = o().chain(P).sort(k(l.z.LATEST_ACTIVITY)), w = o().chain(P).sort(k(l.z.CREATION_DATE)));
   let n = (S === l.z.LATEST_ACTIVITY ? D : w).value(),
     i = (N = 0 === T.size ? n : n.filter(U(T, A))).find(e => M(e));
   r = null == i ? null : i
@@ -195,14 +195,14 @@ class X extends(i = Chunk442837.ZP.Store) {
   }
   getThreadIds(e, t, n, r) {
     let i = e !== I,
-      o = !(0, c.O)(n, T),
-      a = t !== S,
+      a = !(0, c.O)(n, T),
+      o = t !== S,
       s = r !== A;
     return I = e, T = n, S = t, A = r, i ? F({
       refreshThreadIds: true
-    }) : a ? F({
+    }) : o ? F({
       sortThreadIds: true
-    }) : (o || s) && F(), N
+    }) : (a || s) && F(), N
   }
   getCurrentThreadIds() {
     return N

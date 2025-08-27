@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk646574 = require("./646574.jsx"),
   Chunk543241 = require("./543241.js"),
   Chunk912648 = require("./912648.jsx"),
@@ -43,7 +43,7 @@ let p = e => {
       onFocus: g,
       autoFocus: E,
       defaultSearchPlaceholder: (0, s.nV)(i, O)
-    }), i === f.Hz.REACTION ? (0, r.jsx)(a.Z, {
+    }), i === f.Hz.REACTION ? (0, r.jsx)(o.Z, {
       checked: O,
       onClick: v
     }) : null, null != n ? n : (0, r.jsx)(c.Z, {
@@ -55,7 +55,7 @@ let p = e => {
     })]
   });
   return (0, r.jsx)("div", {
-    className: o()(_.header, p),
+    className: a()(_.header, p),
     children: null != I ? I(S) : S
   })
 }

@@ -25,7 +25,7 @@ var Chunk267603 = require("./267603.js"),
 let b = (0, Chunk647438.createContext)(null),
   y = (0, Chunk647438.createContext)(null),
   O = (0, Chunk647438.forwardRef)(function(e, t) {
-    return [e, t] = (0, o.pE)(e, t, b), E.createElement(_.yF, {
+    return [e, t] = (0, a.pE)(e, t, b), E.createElement(_.yF, {
       content: e.children
     }, n => E.createElement(v, {
       props: e,
@@ -41,7 +41,7 @@ function v({
 }) {
   var r;
   let i = (0, E.useRef)(null),
-    [u, d] = (0, o.xc)(!e["aria-label"] && !e["aria-labelledby"]),
+    [u, d] = (0, a.xc)(!e["aria-label"] && !e["aria-labelledby"]),
     f = (0, g.n)({
       ...e,
       children: true,
@@ -67,9 +67,9 @@ function v({
     slot: e.slot || true,
     className: null != (r = e.className) ? r : "react-aria-TagGroup",
     style: e.style
-  }, E.createElement(o.zt, {
+  }, E.createElement(a.zt, {
     values: [
-      [a.n, {
+      [o.n, {
         ...b,
         elementType: "span",
         ref: u
@@ -103,7 +103,7 @@ function T({
     {
       CollectionRoot: r
     } = (0, E.useContext)(i.Qk),
-    [a, l] = (0, o.pE)({}, t, y),
+    [o, l] = (0, a.pE)({}, t, y),
     {
       focusProps: c,
       isFocused: d,
@@ -115,7 +115,7 @@ function T({
       isFocusVisible: f,
       state: n
     },
-    m = (0, o.aX)({
+    m = (0, a.aX)({
       className: e.className,
       style: e.style,
       defaultClassName: "react-aria-TagList",
@@ -126,7 +126,7 @@ function T({
       global: true
     });
   return E.createElement("div", {
-    ...(0, h.d)(b, m, a, c),
+    ...(0, h.d)(b, m, o, c),
     ref: l,
     "data-empty": 0 === n.collection.size || true,
     "data-focused": d || true,
@@ -137,7 +137,7 @@ function T({
   }))
 }
 let S = (0, Chunk873954.G5)("item", (e, t, n) => {
-  let a = (0, E.useContext)(s.a$),
+  let o = (0, E.useContext)(s.a$),
     l = (0, m.B)(t),
     {
       focusProps: c,
@@ -152,7 +152,7 @@ let S = (0, Chunk873954.G5)("item", (e, t, n) => {
       ...O
     } = (0, d.E)({
       item: n
-    }, a, l),
+    }, o, l),
     {
       hoverProps: v,
       isHovered: I
@@ -162,7 +162,7 @@ let S = (0, Chunk873954.G5)("item", (e, t, n) => {
       onHoverChange: n.props.onHoverChange,
       onHoverEnd: n.props.onHoverEnd
     }),
-    T = (0, o.aX)({
+    T = (0, a.aX)({
       ...e,
       id: true,
       children: n.rendered,
@@ -171,8 +171,8 @@ let S = (0, Chunk873954.G5)("item", (e, t, n) => {
         ...O,
         isFocusVisible: _,
         isHovered: I,
-        selectionMode: a.selectionManager.selectionMode,
-        selectionBehavior: a.selectionManager.selectionBehavior
+        selectionMode: o.selectionManager.selectionMode,
+        selectionBehavior: o.selectionManager.selectionBehavior
       }
     });
   (0, E.useEffect)(() => {
@@ -191,13 +191,13 @@ let S = (0, Chunk873954.G5)("item", (e, t, n) => {
     "data-focus-visible": _ || true,
     "data-pressed": O.isPressed || true,
     "data-allows-removing": O.allowsRemoving || true,
-    "data-selection-mode": "none" === a.selectionManager.selectionMode ? true : a.selectionManager.selectionMode
+    "data-selection-mode": "none" === o.selectionManager.selectionMode ? true : o.selectionManager.selectionMode
   }, E.createElement("div", {
     ...b,
     style: {
       display: "contents"
     }
-  }, E.createElement(o.zt, {
+  }, E.createElement(a.zt, {
     values: [
       [r.b, {
         slots: {

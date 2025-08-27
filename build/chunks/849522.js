@@ -10,7 +10,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js");
 
 function s(e) {
-  return o.ZP.canUseIncreasedMessageLength(e.getCurrentUser()) ? a.en1 : a.J6R
+  return a.ZP.canUseIncreasedMessageLength(e.getCurrentUser()) ? o.en1 : o.J6R
 }
 
 function l() {

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk722770 = require("./722770.js"),
   Chunk481060 = require("./481060.js"),
   Chunk591146 = require("./591146.js"),
@@ -56,8 +56,8 @@ function h(e, t) {
   if (null == e) return {};
   var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -65,8 +65,8 @@ function h(e, t) {
 function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let g = 16,
@@ -106,17 +106,17 @@ function O(e) {
       height: g
     },
     highlight: i = false,
-    rounded: o = false
-  } = e, a = h(e, ["selected", "lowerBadgeSize", "highlight", "rounded"]);
-  let s = !!a.isFolder,
+    rounded: a = false
+  } = e, o = h(e, ["selected", "lowerBadgeSize", "highlight", "rounded"]);
+  let s = !!o.isFolder,
     u = (0, c.Ml)("BlobMask"),
     d = (0, l.dQu)(l.TVs.modules.guildbar.AVATAR_SIZE),
     _ = (0, l.dQu)(l.TVs.modules.guildbar.FOLDER_SIZE),
     m = !u && s ? _ : d,
     E = m / 2;
-  return (0, r.jsx)(v, p(f({}, a), {
+  return (0, r.jsx)(v, p(f({}, o), {
     selected: t,
-    rounded: o,
+    rounded: a,
     baseViewBoxSize: m,
     viewBoxSize: m,
     style: {
@@ -134,7 +134,7 @@ function v(e) {
   let {
     children: t,
     viewBoxSize: n,
-    className: o,
+    className: a,
     style: l,
     innerClassName: c,
     isFolder: d,
@@ -156,7 +156,7 @@ function v(e) {
     y: d ? 0 : false
   }, U = d ? 20 : h, G = v ? y(n) : b(n);
   return (0, r.jsxs)("div", {
-    className: a()(o, u.wrapper),
+    className: o()(a, u.wrapper),
     style: l,
     onFocus: S,
     onBlur: A,
@@ -164,7 +164,7 @@ function v(e) {
       width: k.width,
       height: k.height,
       viewBox: "".concat(k.x, " ").concat(k.y, " ").concat(k.width, " ").concat(k.height),
-      className: a()(u.svg, {
+      className: o()(u.svg, {
         [u.noContain]: _,
         [u.shiftSVG]: !d
       }),
@@ -207,7 +207,7 @@ function v(e) {
         }), (0, r.jsx)("use", {
           href: "#".concat(D),
           fill: "white",
-          className: a()({
+          className: o()({
             [u.isHighlighted]: _
           })
         }), C ? (0, r.jsx)("use", {

@@ -15,8 +15,8 @@ function l(e) {
 }
 
 function c(e) {
-  let t = (0, a.q)(l(r.Z), "@react-aria/grid"),
-    n = (0, o.Kf)(),
+  let t = (0, o.q)(l(r.Z), "@react-aria/grid"),
+    n = (0, a.Kf)(),
     c = ("pointer" === n || "virtual" === n || null == n) && "undefined" != typeof window && "ontouchstart" in window,
     u = (0, s.useMemo)(() => {
       let n, r = e.selectionManager.selectionMode,

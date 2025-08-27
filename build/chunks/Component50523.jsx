@@ -39,7 +39,7 @@ function O(e) {
     botUserId: null == O || null == (n = O.bot) ? true : n.id
   }), N = null != O && (0, l.ye)(O), R = null != A && N && C, {
     analyticsLocations: P
-  } = (0, a.ZP)(o.Z.ACTIVITY_CUSTOM_LINK), w = (0, i.e7)([p.Z], () => p.Z.getChannelId()), D = (0, b.KF)(w), x = (0, i.e7)([g.ZP], () => {
+  } = (0, o.ZP)(a.Z.ACTIVITY_CUSTOM_LINK), w = (0, i.e7)([p.Z], () => p.Z.getChannelId()), D = (0, b.KF)(w), x = (0, i.e7)([g.ZP], () => {
     if (null == w) return;
     let e = g.ZP.getEmbeddedActivitiesForChannel(w).filter(e => e.applicationId === O.id);
     return e.length > 0 ? e[0].compositeInstanceId : true

@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk258863 = require("./258863.js"),
   Chunk299608 = require("./299608.js"),
   c = require.n(Chunk299608),
@@ -129,7 +129,7 @@ class Y extends Chunk647438.PureComponent {
       editorState: t,
       hasResults: n,
       className: i,
-      searchBarContainerClassName: o,
+      searchBarContainerClassName: a,
       searchBarClassName: s,
       popoutAlignment: l
     } = this.props, {
@@ -152,7 +152,7 @@ class Y extends Chunk647438.PureComponent {
           className: i,
           ref: this._containerRef,
           children: (0, r.jsx)("div", {
-            className: a()(B.search, o, {
+            className: o()(B.search, a, {
               [B.open]: u || c,
               [B.focused]: c
             }),
@@ -162,7 +162,7 @@ class Y extends Chunk647438.PureComponent {
               },
               ringTarget: this._searchBarRef,
               children: (0, r.jsxs)("div", {
-                className: a()(B.searchBar, s),
+                className: o()(B.searchBar, s),
                 ref: this._searchBarRef,
                 children: [this.renderInput(_), (0, r.jsx)(d.BK9, {
                   onClear: this.handleClearSearch,
@@ -187,14 +187,14 @@ class Y extends Chunk647438.PureComponent {
         anchor: n,
         focus: r,
         performSearch: i,
-        replace: o
+        replace: a
       } = e, {
-        editorState: a
-      } = this.props, s = y.Sq(a);
-      " " !== t.charAt(t.length - 1) && (t += " "), null != n && 0 !== n && " " !== s.charAt(n - 1) && " " !== t.charAt(0) && (t = " " + t), o ? (a = y.c2(t, a), n = 0) : a = y.x0(t, a, n, r), a = y.Hl(a, F), a = this.tokenize(a);
+        editorState: o
+      } = this.props, s = y.Sq(o);
+      " " !== t.charAt(t.length - 1) && (t += " "), null != n && 0 !== n && " " !== s.charAt(n - 1) && " " !== t.charAt(0) && (t = " " + t), a ? (o = y.c2(t, o), n = 0) : o = y.x0(t, o, n, r), o = y.Hl(o, F), o = this.tokenize(o);
       let l = Number(n) + t.length;
-      a = y.iK(l, a), this.setEditorState(a), i && this.search({
-        queryString: y.Sq(a)
+      o = y.iK(l, o), this.setEditorState(o), i && this.search({
+        queryString: y.Sq(o)
       })
     }), Z(this, "handleSelectedIndexChanged", e => {
       var t, n;
@@ -266,15 +266,15 @@ class Y extends Chunk647438.PureComponent {
         }).enabled;
       if ((null == r ? true : r.isThread()) && !i && (r = m.Z.getChannel(null == r ? true : r.parent_id)), null == r) return void this.focusEditor();
       let {
-        searchContext: o
-      } = this.props, a = (0, C.ad)({
+        searchContext: a
+      } = this.props, o = (0, C.ad)({
         location: "SearchBar_handleFocusSearch"
-      }), s = o.type === U.aib.DMS && a;
+      }), s = a.type === U.aib.DMS && o;
       if (r.isPrivate() && !s) return void this.focusEditor();
       let l = (0, T.X3)(r);
       if (null == l) return void this.focusEditor();
       (0, M.PJ)({
-        searchContext: o
+        searchContext: a
       }), Promise.resolve().then(() => {
         let {
           _editorRef: e
@@ -391,14 +391,14 @@ class Y extends Chunk647438.PureComponent {
         shiftKey: r
       } = e, {
         editorState: i,
-        searchContext: o,
-        keyboardModeEnabled: a
+        searchContext: a,
+        keyboardModeEnabled: o
       } = this.props;
       if (e.stopPropagation(), "Escape" === t) {
         if (e.preventDefault(), y.xb(i)) this.blurEditor();
         else {
           let e = y.FZ(i);
-          v.Z.setSearchState(o, e), this.setState({
+          v.Z.setSearchState(a, e), this.setState({
             focused: true
           })
         }
@@ -419,7 +419,7 @@ class Y extends Chunk647438.PureComponent {
         return null != t && t.focusNextOption(), true
       }
       if ("Tab" === t) {
-        if (a) return;
+        if (o) return;
         return (0, _.Qj)(), true
       }
       if ("Home" === t || "ArrowLeft" === t && n) return e.preventDefault(), i = r ? y.R8(i) : y.eE(i), this.setEditorState(i), true;
@@ -437,8 +437,8 @@ function W(e) {
   let {
     searchContext: t,
     className: n,
-    searchBarContainerClassName: o,
-    searchBarClassName: a,
+    searchBarContainerClassName: a,
+    searchBarClassName: o,
     searchPopoutClassName: s,
     popoutAlignment: l
   } = e, c = (0, T.Tm)(t), f = (0, u.e7)([p.Z], () => p.Z.keyboardModeEnabled), _ = (0, u.e7)([j.Z], () => null != c ? j.Z.getEditorState(c) : null), h = (0, u.e7)([j.Z], () => j.Z.getIsSearchTokensInitialized()), E = i.useRef(h);
@@ -535,8 +535,8 @@ function W(e) {
   }, [K, t]), (0, r.jsx)(Y, {
     className: n,
     searchPopoutClassName: s,
-    searchBarContainerClassName: o,
-    searchBarClassName: a,
+    searchBarContainerClassName: a,
+    searchBarClassName: o,
     searchContext: t,
     isSearching: v,
     editorState: b,
@@ -555,12 +555,12 @@ function K(e) {
     className: t,
     guildId: n,
     channelId: i
-  } = e, o = (0, L.H)({
+  } = e, a = (0, L.H)({
     guildId: n,
     channelId: i
   });
-  return null == o ? null : (0, r.jsx)(W, {
+  return null == a ? null : (0, r.jsx)(W, {
     className: t,
-    searchContext: o
+    searchContext: a
   })
 }

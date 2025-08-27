@@ -59,31 +59,31 @@ let g = e => {
     searchFavorites: n,
     showDMQueryText: r
   } = e, {
-    filterCount: a,
+    filterCount: o,
     queryContent: s,
     isQueryEmpty: u
-  } = o.useMemo(() => {
+  } = a.useMemo(() => {
     var e, n, r;
     let i = (0, c.kG)(t),
-      o = (0, c.$G)(i),
-      a = null != (n = (0, c.UP)(o)) ? n : "";
+      a = (0, c.$G)(i),
+      o = null != (n = (0, c.UP)(a)) ? n : "";
     return {
-      filterCount: null != (r = null == (e = o.channel_id) ? true : e.length) ? r : 0,
-      isQueryEmpty: 0 === a.length,
-      queryContent: a
+      filterCount: null != (r = null == (e = a.channel_id) ? true : e.length) ? r : 0,
+      isQueryEmpty: 0 === o.length,
+      queryContent: o
     }
   }, [t]);
   return n ? (0, i.jsx)("div", {
     className: f.queryText,
     children: d.intl.string(d.t["6RVtLC"])
-  }) : r ? a > 0 ? (0, i.jsx)(l.Text, {
+  }) : r ? o > 0 ? (0, i.jsx)(l.Text, {
     variant: "text-sm/medium",
     color: "text-secondary",
     className: f.searchDMQueryText,
     children: u ? d.intl.format(d.t.iV2ftr, {
-      filterCount: a
+      filterCount: o
     }) : d.intl.format(d.t["5CTmUl"], {
-      filterCount: a,
+      filterCount: o,
       value: s
     })
   }) : (0, i.jsx)(l.Text, {
@@ -119,8 +119,8 @@ class y extends(r = Chunk647438.PureComponent) {
       query: t,
       navId: n,
       focusedIndex: r,
-      onSelectQuery: o,
-      onSelectSearchEverywhere: a,
+      onSelectQuery: a,
+      onSelectSearchEverywhere: o,
       onHighlightQuery: c,
       hideQuery: u,
       searchFavorites: _,
@@ -135,7 +135,7 @@ class y extends(r = Chunk647438.PureComponent) {
         })
       }, b(n, false, E)), {
         onMouseEnter: c,
-        onClick: o,
+        onClick: a,
         children: [(0, i.jsx)(g, {
           query: t,
           searchFavorites: _,
@@ -155,7 +155,7 @@ class y extends(r = Chunk647438.PureComponent) {
         })
       }, b(n, false, E)), {
         onMouseEnter: c,
-        onClick: a,
+        onClick: o,
         children: [(0, i.jsx)("div", {
           className: f.queryText,
           children: d.intl.string(d.t.FtSUxc)
@@ -177,14 +177,14 @@ class y extends(r = Chunk647438.PureComponent) {
       renderNoResults: n,
       renderInitialState: r,
       renderResult: i,
-      renderCustomResults: o
+      renderCustomResults: a
     } = this.props;
     if (e) return r();
     if (0 === t) return n();
     if (null != i) return Array.from({
       length: t
     }).map((e, t) => i(t));
-    if (null != o) return o();
+    if (null != a) return a();
     throw Error("SearchResultsPopout.renderResults: Flow should never allow this...")
   }
   render() {
@@ -193,7 +193,7 @@ class y extends(r = Chunk647438.PureComponent) {
       focusedIndex: t,
       navId: n,
       className: r
-    } = this.props, o = "" === module.trim();
+    } = this.props, a = "" === module.trim();
     return (0, Chunk951288.jsxs)("div", {
       className: s()(Chunk575209.container, r),
       onMouseDown: E,
@@ -211,10 +211,10 @@ class y extends(r = Chunk647438.PureComponent) {
         channel: t,
         showSearchInSelectedChannel: n,
         focusedIndex: r,
-        onSelectSearchInSelectedChannel: o
+        onSelectSearchInSelectedChannel: a
       } = this.props;
       if (!n || null == t) return null;
-      let a = false === r,
+      let o = false === r,
         s = (0, c.X3)(t),
         _ = (0, i.jsx)(u.ZP, {
           channel: t,
@@ -224,9 +224,9 @@ class y extends(r = Chunk647438.PureComponent) {
           channelContainerClassName: f.channelContainer,
           textContainerClassName: f.searchResultNameContainer
         });
-      return (0, i.jsx)(l.P3F, m(p({}, b(e, false, a)), {
+      return (0, i.jsx)(l.P3F, m(p({}, b(e, false, o)), {
         className: f.inChannelOptionContainer,
-        onClick: o,
+        onClick: a,
         children: (0, i.jsx)(l.Text, {
           variant: "text-md/normal",
           color: "interactive-normal",

@@ -3,14 +3,14 @@
 "use strict";
 require.d(exports, {
   A: () => l,
-  O: () => a
+  O: () => o
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk772848 = require("./772848.js"),
   Chunk726007 = require("./726007.js");
 
-function a() {
+function o() {
   return (0, Chunk951288.jsx)("svg", {
     className: Chunk726007.headerWave,
     version: "1.1",

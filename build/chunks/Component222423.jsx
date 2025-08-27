@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk410030 = require("./410030.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -19,9 +19,9 @@ function f(e) {
   let {
     className: t,
     size: n = "md"
-  } = e, i = (0, a.ZP)() === s.BR.LIGHT ? d : u;
+  } = e, i = (0, o.ZP)() === s.BR.LIGHT ? d : u;
   return (0, r.jsx)("img", {
-    className: o()(t, {
+    className: a()(t, {
       [c.sm]: "sm" === n,
       [c.md]: "md" === n
     }),

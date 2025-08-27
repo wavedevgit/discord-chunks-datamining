@@ -25,7 +25,7 @@ let p = Chunk647438.createContext(""),
   h = e => {
     let {
       children: t
-    } = e, [n] = i.useState(() => (0, o.Z)());
+    } = e, [n] = i.useState(() => (0, a.Z)());
     return (0, r.jsx)(p.Provider, {
       value: n,
       children: t
@@ -52,8 +52,8 @@ function E(e) {
     unreadsCount: n,
     totalMessagesCount: r,
     viewId: i,
-    unreadsBadgeMentionCount: o,
-    unreadsBadgeChannelCount: a,
+    unreadsBadgeMentionCount: a,
+    unreadsBadgeChannelCount: o,
     unreadMessageItemsCount: s,
     unreadMentionsCount: l
   } = e;
@@ -62,8 +62,8 @@ function E(e) {
     unreads_count: n,
     total_messages_count: r,
     view_id: i,
-    unreads_badge_mention_count: o,
-    unreads_badge_channel_count: a,
+    unreads_badge_mention_count: a,
+    unreads_badge_channel_count: o,
     unread_message_items_count: s,
     unread_mentions_count: l
   })
@@ -107,14 +107,14 @@ function v(e) {
     totalMessagesCount: n,
     unreadItemsCount: r,
     totalItemsCount: i,
-    viewId: o
+    viewId: a
   } = e;
   c.default.track(_.rMx.NOTIFICATIONS_INBOX_UNMOUNTED, {
     unreads_count: t,
     total_messages_count: n,
     unread_items_count: r,
     total_items_count: i,
-    view_id: o
+    view_id: a
   })
 }
 
@@ -124,8 +124,8 @@ function I(e) {
     messagesCount: n,
     unreadMessagesCount: r,
     channelsFetched: i,
-    mentionsFetched: o,
-    loadingTrigger: a,
+    mentionsFetched: a,
+    loadingTrigger: o,
     viewId: s
   } = e;
   c.default.track(_.rMx.NOTIFICATIONS_INBOX_DATA_LOADED, {
@@ -133,8 +133,8 @@ function I(e) {
     messages_count: n,
     unread_messages_count: r,
     channels_fetched: i,
-    mentions_fetched: o,
-    loading_trigger: null != a ? a : f.X.UNKNOWN,
+    mentions_fetched: a,
+    loading_trigger: null != o ? o : f.X.UNKNOWN,
     view_id: s
   })
 }
@@ -144,10 +144,10 @@ function T(e) {
     notificationCenterVariant: t,
     entrypoint: n,
     messages: r,
-    unreadMessages: o,
+    unreadMessages: a,
     viewId: c,
     messagesByCategory: _
-  } = e, p = i.useRef(null), h = i.useRef(false), m = (0, a.e7)([u.Z], () => u.Z.isLoading), b = (0, l.Z)(m), y = (0, a.e7)([u.Z], () => {
+  } = e, p = i.useRef(null), h = i.useRef(false), m = (0, o.e7)([u.Z], () => u.Z.isLoading), b = (0, l.Z)(m), y = (0, o.e7)([u.Z], () => {
     var e;
     return null != (e = u.Z.currentRequestAnalyticsPayload) ? e : null
   }), {
@@ -161,11 +161,11 @@ function T(e) {
       entrypoint: n
     }), p.current = Date.now()
   }), i.useEffect(() => {
-    if (null != p.current && ((null == r ? true : r.length) > 0 || (null == o ? true : o.length) > 0) && !h.current) {
+    if (null != p.current && ((null == r ? true : r.length) > 0 || (null == a ? true : a.length) > 0) && !h.current) {
       let e = Date.now() - p.current;
       h.current = true, E({
         timeToLoad: e,
-        unreadsCount: o.length,
+        unreadsCount: a.length,
         totalMessagesCount: r.length,
         unreadsBadgeMentionCount: O,
         unreadsBadgeChannelCount: T.length,
@@ -174,24 +174,24 @@ function T(e) {
         viewId: c
       })
     }
-  }, [r, o, c, T, O, _]), i.useEffect(() => {
+  }, [r, a, c, T, O, _]), i.useEffect(() => {
     let e = (null == y ? true : y.loadingTrigger) === f.X.AUTO_LOAD;
     if (null != y && true === b && false === m && !e) {
       var t;
       I({
         timeToLoad: null == y ? true : y.timeToLoad,
         messagesCount: r.length,
-        unreadMessagesCount: o.length,
+        unreadMessagesCount: a.length,
         loadingTrigger: null != (t = null == y ? true : y.loadingTrigger) ? t : f.X.UNKNOWN,
         viewId: null == y ? true : y.viewId,
         channelsFetched: null == y ? true : y.channelsFetched,
         mentionsFetched: null == y ? true : y.mentionsFetched
       })
     }
-  }, [m, r, o, c, b, y]), (0, s.zq)(() => {
+  }, [m, r, a, c, b, y]), (0, s.zq)(() => {
     var e, t;
     v({
-      unreadsCount: null != (e = null == o ? true : o.length) ? e : 0,
+      unreadsCount: null != (e = null == a ? true : a.length) ? e : 0,
       totalMessagesCount: null != (t = null == r ? true : r.length) ? t : 0,
       unreadItemsCount: _.UNREAD.length,
       totalItemsCount: _.TODAY.length + _.YESTERDAY.length + _.OLDER.length,

@@ -3,13 +3,13 @@
 "use strict";
 require.d(exports, {
   HG: () => s,
-  Md: () => a,
-  Q8: () => o
+  Md: () => o,
+  Q8: () => a
 });
 var Chunk373228 = require("./373228.js"),
   Chunk388032 = require("./388032.jsx");
-let o = () => [Chunk388032.intl.string(Chunk388032.t.b6wEe3), Chunk388032.intl.string(Chunk388032.t.i8o9hY)],
-  a = () => [Chunk388032.intl.string(Chunk388032.t.vqnToa), Chunk388032.intl.string(Chunk388032.t["9yh+dH"])],
+let a = () => [Chunk388032.intl.string(Chunk388032.t.b6wEe3), Chunk388032.intl.string(Chunk388032.t.i8o9hY)],
+  o = () => [Chunk388032.intl.string(Chunk388032.t.vqnToa), Chunk388032.intl.string(Chunk388032.t["9yh+dH"])],
   s = [{
     id: "781323471249604648",
     format_type: Chunk373228.u3.APNG,

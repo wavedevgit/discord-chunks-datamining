@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk548680 = require("./548680.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -70,7 +70,7 @@ let T = {
   };
 
 function A() {
-  return 500 !== a().random(1, 1e3) ? "call_ringing" : a().sample(["call_ringing_beat", "call_ringing_snow_halation"])
+  return 500 !== o().random(1, 1e3) ? "call_ringing" : o().sample(["call_ringing_beat", "call_ringing_snow_halation"])
 }
 
 function C() {
@@ -82,13 +82,13 @@ function C() {
     })),
     t = (0, Chunk442837.e7)([Chunk340895.Z], () => Chunk340895.Z.hasIncomingCalls()),
     n = (0, Chunk442837.e7)([Chunk292959.Z], () => Chunk292959.Z.isSoundDisabled("call_ringing")),
-    o = (0, Chunk442837.e7)([Chunk246946.Z], () => Chunk246946.Z.disableSounds),
-    a = (0, Chunk442837.e7)([Chunk474873.Z], () => Chunk474873.Z.getSoundpack()),
+    a = (0, Chunk442837.e7)([Chunk246946.Z], () => Chunk246946.Z.disableSounds),
+    o = (0, Chunk442837.e7)([Chunk474873.Z], () => Chunk474873.Z.getSoundpack()),
     y = Chunk647438.useRef(false),
     v = (0, Chunk548680.Z)(() => {
       let e = "call_ringing";
-      return a === Chunk871465.YC.CLASSIC ? (0, Chunk460181.tu)(A(), module) : (0, Chunk460181.uk)("call_ringing", a)
-    }, [a]);
+      return o === Chunk871465.YC.CLASSIC ? (0, Chunk460181.tu)(A(), module) : (0, Chunk460181.uk)("call_ringing", o)
+    }, [o]);
   return Chunk647438.useEffect(() => () => {
     v.stop()
   }, [v]), Chunk647438.useEffect(() => {

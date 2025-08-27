@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk927359 = require("./927359.js"),
   Chunk74538 = require("./74538.js"),
@@ -20,18 +20,18 @@ function f(e) {
     className: d.accountCreditRow,
     children: [(0, r.jsx)("div", {
       className: d.iconBackgroundFractional,
-      children: (0, r.jsx)(a.SrA, {
+      children: (0, r.jsx)(o.SrA, {
         size: "md",
         color: "white",
         className: d.iconFractional
       })
     }), (0, r.jsx)("div", {
       className: d.rowDetails,
-      children: (0, r.jsx)(a.X6q, {
+      children: (0, r.jsx)(o.X6q, {
         variant: "heading-md/semibold",
         children: u.intl.string(u.t.DFMPWV)
       })
-    }), (0, r.jsx)(a.Text, {
+    }), (0, r.jsx)(o.Text, {
       className: d.rowCreditCount,
       variant: "text-md/semibold",
       children: e.length > 0 ? e : u.intl.string(u.t["B66Z+f"])
@@ -50,24 +50,24 @@ function _(e) {
     activateDate: l
   }) : s === c.a$.FP_SUB_PAUSED ? u.intl.format(u.t.MMvaIC, {
     resumeDate: i.toDate()
-  }) : null, p = o()({
+  }) : null, p = a()({
     [d.fractionalUnactivatedPill]: t,
     [d.fractionalTimeRemainingPill]: !t
-  }), h = o()({
+  }), h = a()({
     [d.fractionalUnactivatedPillText]: t,
     [d.fractionalTimeRemainingPillText]: !t
-  }), m = o()({
+  }), m = a()({
     [d.fractionalTimeRemainingRowHeader]: !t
   });
   return (0, r.jsxs)("div", {
     className: d.fractionalTimeRemainingRow,
     children: [(0, r.jsxs)("div", {
       className: d.fractionalTimeRemainingRowDetails,
-      children: [(0, r.jsx)(a.X6q, {
+      children: [(0, r.jsx)(o.X6q, {
         variant: "heading-md/semibold",
         className: m,
         children: f
-      }), null !== _ && (0, r.jsx)(a.Text, {
+      }), null !== _ && (0, r.jsx)(o.Text, {
         variant: "text-sm/normal",
         children: _
       })]
@@ -75,7 +75,7 @@ function _(e) {
       className: d.fractionalTimeRemainingPillWrapper,
       children: (0, r.jsx)("div", {
         className: p,
-        children: (0, r.jsx)(a.Text, {
+        children: (0, r.jsx)(o.Text, {
           variant: "text-sm/semibold",
           className: h,
           children: n
@@ -89,13 +89,13 @@ let p = function(e) {
     fractionalPremiumInfo: t,
     className: n,
     activationDate: i
-  } = e, a = (0, l.jp)(t), c = a.length > 0, u = (0, s.ZP)(t.endsAt, s.aj.SHORT_TIME), p = c ? a : u;
+  } = e, o = (0, l.jp)(t), c = o.length > 0, u = (0, s.ZP)(t.endsAt, s.aj.SHORT_TIME), p = c ? o : u;
   return (0, r.jsx)("div", {
     children: (0, r.jsxs)("div", {
-      className: o()(n, d.fractionalPremiumAccountCredit),
+      className: a()(n, d.fractionalPremiumAccountCredit),
       children: [(0, r.jsx)("div", {
         className: d.accountCreditsContainer,
-        children: f(a)
+        children: f(o)
       }), (0, r.jsx)(_, {
         showChargingUpState: c,
         rowValueText: p,

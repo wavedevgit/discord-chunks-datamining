@@ -16,7 +16,7 @@ function u(e) {
   let {
     selected: t,
     onSelect: n
-  } = e, u = (0, o.ZP)();
+  } = e, u = (0, a.ZP)();
   return (0, r.jsxs)("div", {
     className: c.picker,
     children: [(0, r.jsx)(i.Text, {
@@ -26,14 +26,14 @@ function u(e) {
       className: c.themes,
       children: s.vs.map(e => {
         let i = u !== l.BRd.LIGHT ? e.darkBackground : e.lightBackground,
-          o = t === e.name;
-        return (0, r.jsx)(a.S4, {
+          a = t === e.name;
+        return (0, r.jsx)(o.S4, {
           onSelect: () => n(e),
           style: {
             background: i
           },
           name: e.name,
-          isSelected: o
+          isSelected: a
         }, e.name)
       })
     })]

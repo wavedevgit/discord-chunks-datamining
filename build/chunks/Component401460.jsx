@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   l = require.n(Chunk392711),
   Chunk481060 = require("./481060.js"),
@@ -67,7 +67,7 @@ function I(e) {
   let {
     id: t,
     className: n,
-    onSelect: o,
+    onSelect: a,
     isSelected: s = false,
     tabIndex: l,
     children: f,
@@ -83,10 +83,10 @@ function I(e) {
       className: m.appIconSelectionContainer,
       children: [(0, r.jsx)(c.P3F, y(E({}, e, I), {
         tabIndex: null != l ? l : I.tabIndex,
-        className: a()(m.appIconSelection, {
+        className: o()(m.appIconSelection, {
           [m.selected]: s
         }, n),
-        onClick: s ? p.dG4 : () => null == o ? true : o(t),
+        onClick: s ? p.dG4 : () => null == a ? true : a(t),
         children: f
       })), s && (0, r.jsx)(u.oK, {}), h && (0, r.jsx)("div", {
         className: m.lockedBadgeContainer,
@@ -104,16 +104,16 @@ function T(e) {
     icon: t,
     isSelected: n,
     disabled: i,
-    tabIndex: o,
-    onSelect: a,
+    tabIndex: a,
+    onSelect: o,
     locked: s
   } = e;
   return (0, r.jsx)(I, {
-    onSelect: i ? true : a,
+    onSelect: i ? true : o,
     isSelected: n,
     id: t.id,
     className: i ? m.disabled : true,
-    tabIndex: o,
+    tabIndex: a,
     locked: s,
     children: (0, r.jsx)(f.Z, {
       id: t.id,

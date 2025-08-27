@@ -35,8 +35,8 @@ function c(e, t) {
   if (null == e) return {};
   var n, r, i = u(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -44,8 +44,8 @@ function c(e, t) {
 function u(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -56,13 +56,13 @@ let f = Chunk647438.memo(function(e) {
   var {
     user: t,
     guildId: n,
-    size: s = o.EFr.SIZE_32,
+    size: s = a.EFr.SIZE_32,
     animate: u = false,
     "aria-hidden": f = false
   } = e, _ = c(e, ["user", "guildId", "size", "animate", "aria-hidden"]);
-  let p = i.useContext(a.Z);
-  return (0, r.jsx)(o.qEK, l({
-    src: d(t, (0, o.pxk)(s), u, null != n ? n : p),
+  let p = i.useContext(o.Z);
+  return (0, r.jsx)(a.qEK, l({
+    src: d(t, (0, a.pxk)(s), u, null != n ? n : p),
     size: s,
     "aria-label": f ? true : t.username,
     "aria-hidden": f

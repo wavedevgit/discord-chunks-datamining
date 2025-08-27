@@ -44,7 +44,7 @@ function p(e) {
     trackUserProfileAction: p
   } = (0, c.KZ)(), {
     analyticsLocations: h
-  } = (0, s.ZP)(a.Z.USER_PROFILE_OVERFLOW_MENU), m = [
+  } = (0, s.ZP)(o.Z.USER_PROFILE_OVERFLOW_MENU), m = [
     [n],
     [(0, l.Z)({
       id: t.id,
@@ -55,18 +55,18 @@ function p(e) {
       })
     })]
   ];
-  return m.every(e => e.every(e => null == e)) ? null : (0, r.jsx)(o.yRy, {
+  return m.every(e => e.every(e => null == e)) ? null : (0, r.jsx)(a.yRy, {
     targetElementRef: f,
     renderPopout: e => {
       let {
         closePopout: t
       } = e;
-      return (0, r.jsx)(o.v2r, {
+      return (0, r.jsx)(a.v2r, {
         navId: "non-user-bot-profile-overflow-menu",
         onSelect: true,
         onClose: t,
         "aria-label": d.intl.string(d.t.AXIHpa),
-        children: m.map((e, t) => (0, r.jsx)(o.kSQ, {
+        children: m.map((e, t) => (0, r.jsx)(a.kSQ, {
           children: e.map(e => e)
         }, t))
       })
@@ -74,7 +74,7 @@ function p(e) {
     children: e => (0, r.jsx)(u.oY, _({
       ref: f,
       action: "PRESS_OPTIONS",
-      icon: o.xhG,
+      icon: a.xhG,
       tooltipText: d.intl.string(d.t.UKOtz8)
     }, e))
   })

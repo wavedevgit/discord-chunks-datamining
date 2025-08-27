@@ -21,12 +21,12 @@ function h() {
   let e = (0, Chunk442837.cj)([Chunk480294.Z], () => Chunk480294.Z.hasConsented(Chunk981631.pjP.PERSONALIZATION)),
     [t, n] = Chunk647438.useState(module),
     h = e => {
-      e ? (0, a.g)([_.pjP.PERSONALIZATION], []).catch(d.S).then(() => n(true)) : (0, d.V)({
+      e ? (0, o.g)([_.pjP.PERSONALIZATION], []).catch(d.S).then(() => n(true)) : (0, d.V)({
         header: p.intl.string(p.t["9SNpzs"]),
         confirmText: p.intl.string(p.t["9g5UGx"]),
         cancelText: p.intl.string(p.t["+ZLPw8"]),
         onConfirm: () => {
-          (0, a.g)([], [_.pjP.PERSONALIZATION]).catch(d.S).then(() => n(false))
+          (0, o.g)([], [_.pjP.PERSONALIZATION]).catch(d.S).then(() => n(false))
         },
         body: p.intl.string(p.t.gJvDDg)
       })

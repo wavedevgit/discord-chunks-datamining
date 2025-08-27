@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk202841 = require("./202841.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -32,8 +32,8 @@ let p = function(e) {
   }), m = {
     section: f.jXE.MARKETING_FLOATING_CTA
   }, g = (0, c.ZP)(), E = (0, l.wjy)(g);
-  return (0, r.jsx)(a.animated.div, {
-    className: o()(_.wrapper, {
+  return (0, r.jsx)(o.animated.div, {
+    className: a()(_.wrapper, {
       [_.fullscreenWrapper]: i,
       [_.invisible]: !t
     }),
@@ -42,7 +42,7 @@ let p = function(e) {
       className: i ? _.innerWrapperApplicationHome : _.innerWrapper,
       children: [(0, r.jsx)(d.Z, {
         color: E ? s.Tt.BRAND_INVERTED : true,
-        className: o()(_.button, {
+        className: a()(_.button, {
           [_.subButton]: E
         }),
         subscriptionTier: n,

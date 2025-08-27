@@ -33,7 +33,7 @@ function h(e) {
     isEligibleForTrial: I,
     enablePremiumBrandRefresh: T,
     isDisplayingWowMomentConfirmation: S
-  } = e, A = (0, i.e7)([a.Z], () => a.Z.useReducedMotion), C = () => {
+  } = e, A = (0, i.e7)([o.Z], () => o.Z.useReducedMotion), C = () => {
     switch (t) {
       case s.h8.PLAN_SELECT:
         return m === f.p9.TIER_0 ? _.intl.string(_.t.rk4Uu7) : _.intl.string(_.t["7YWj6+"]);
@@ -45,14 +45,14 @@ function h(e) {
         return _.intl.string(_.t["7YWj6+"])
     }
   };
-  return O && (0, l.pO)(v) && t !== s.h8.CONFIRM ? (0, r.jsxs)(o.xBx, {
+  return O && (0, l.pO)(v) && t !== s.h8.CONFIRM ? (0, r.jsxs)(a.xBx, {
     className: p.modalHeaderCustomGift,
     separator: false,
     "data-migration-pending": true,
-    children: [(0, r.jsx)(o.X6q, {
+    children: [(0, r.jsx)(a.X6q, {
       variant: "heading-lg/semibold",
       children: C()
-    }), (0, r.jsx)(o.olH, {
+    }), (0, r.jsx)(a.olH, {
       onClick: g,
       className: p.closeButton,
       innerClassName: p.closeButtonInner,

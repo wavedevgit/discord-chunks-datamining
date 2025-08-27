@@ -24,7 +24,7 @@ function d() {
         helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.QUESTS_PRIVACY_CONTROLS)
       }),
       value: !module,
-      onChange: e => o.bh.updateSetting(!e)
+      onChange: e => a.bh.updateSetting(!e)
     })
   })
 }

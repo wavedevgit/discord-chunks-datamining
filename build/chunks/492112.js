@@ -7,33 +7,33 @@ require.d(exports, {
 var Chunk423650 = require("./423650.js"),
   i = require.n(Chunk423650),
   Chunk388032 = require("./388032.jsx");
-let a = "1290718710658629658";
+let o = "1290718710658629658";
 
 function s(e) {
   let {
     entityName: t
   } = e, n = [{
     key: "NOT_INTERESTED",
-    text: o.intl.formatToPlainString(o.t.AZRWVV, {
+    text: a.intl.formatToPlainString(a.t.AZRWVV, {
       entityName: t
     })
   }, {
     key: "INVALUABLE",
-    text: o.intl.string(o.t.ETU4NT)
+    text: a.intl.string(a.t.ETU4NT)
   }, {
     key: "TOO_LONG",
-    text: o.intl.string(o.t.uRIIpK)
+    text: a.intl.string(a.t.uRIIpK)
   }, {
     key: "UNSURE_HOW",
-    text: o.intl.string(o.t["5dxvxs"])
+    text: a.intl.string(a.t["5dxvxs"])
   }, {
     key: "OTHER",
-    text: o.intl.string(o.t.RFasgo)
+    text: a.intl.string(a.t.RFasgo)
   }];
   return {
-    id: a,
-    title: o.intl.string(o.t.ugbhDQ),
-    subtitle: o.intl.string(o.t.FIYcpK),
+    id: o,
+    title: a.intl.string(a.t.ugbhDQ),
+    subtitle: a.intl.string(a.t.FIYcpK),
     choices: i()(n.slice(0, 4)).concat(n[4])
   }
 }

@@ -41,8 +41,8 @@ function L(e) {
   let {
     app: t,
     embedUrl: n,
-    linkType: o,
-    activityCustomId: a,
+    linkType: a,
+    activityCustomId: o,
     activityReferrerId: l,
     onView: m
   } = e, {
@@ -80,7 +80,7 @@ function L(e) {
           applicationId: t.id,
           isStart: null == G,
           embeddedActivitiesManager: F,
-          customId: a,
+          customId: o,
           referrerId: L,
           analyticsLocations: k
         })
@@ -94,12 +94,12 @@ function L(e) {
           appId: t.id,
           botId: y,
           analyticsLocations: k,
-          customId: a,
+          customId: o,
           referrerId: L
         })
       }
     })) : null != K && e.push(K), e
-  }, [Y, H, G, B, U, t.id, F, a, L, k, O, K, y]), q = O ? (0, r.jsx)(M, {
+  }, [Y, H, G, B, U, t.id, F, o, L, k, O, K, y]), q = O ? (0, r.jsx)(M, {
     app: t
   }) : (0, r.jsx)(j, {
     app: t
@@ -117,23 +117,23 @@ function L(e) {
     onClickContent: W,
     trackingConfig: {
       id: t.id,
-      linkType: o,
+      linkType: a,
       referrerId: L,
-      activityCustomId: a,
+      activityCustomId: o,
       onView: m
     }
   })
 }
 
 function j(e) {
-  var t, n, a;
+  var t, n, o;
   let {
     app: c
   } = e, u = (0, T.Eb)({
     customInstallUrl: c.customInstallUrl,
     installParams: c.installParams,
     integrationTypesConfig: c.integrationTypesConfig
-  }) && null != c.integrationTypesConfig && o.Y.GUILD_INSTALL in c.integrationTypesConfig, d = (0, s.e7)([E.default], () => E.default.locale, []), f = i.useMemo(() => {
+  }) && null != c.integrationTypesConfig && a.Y.GUILD_INSTALL in c.integrationTypesConfig, d = (0, s.e7)([E.default], () => E.default.locale, []), f = i.useMemo(() => {
     var e, t;
     if (!u) return null;
     let n = new Intl.NumberFormat(d, {
@@ -144,7 +144,7 @@ function j(e) {
     return 0 === r ? null : D.intl.format(D.t["6IW6Wl"], {
       guildCount: n.format(r)
     })
-  }, [null == (t = c.directoryEntry) ? true : t.guild_count, u, d]), _ = null == (a = c.categories) || null == (n = a.at(0)) ? true : n.name;
+  }, [null == (t = c.directoryEntry) ? true : t.guild_count, u, d]), _ = null == (o = c.categories) || null == (n = o.at(0)) ? true : n.name;
   return (0, r.jsxs)(r.Fragment, {
     children: [null != _ && (0, r.jsx)(l.Text, {
       variant: "text-xs/medium",
@@ -169,7 +169,7 @@ function M(e) {
     app: t
   } = e, {
     tags: n,
-    maxParticipants: o = 0
+    maxParticipants: a = 0
   } = t, c = (0, s.e7)([O.Z], () => {
     var e;
     return null != (e = O.Z.getGuildId()) ? e : true
@@ -190,14 +190,14 @@ function M(e) {
         count: d.length
       })
     });
-    if (u.some(e => (0, m.ig)(e) === a.o.GLOBAL)) return (0, r.jsxs)(r.Fragment, {
+    if (u.some(e => (0, m.ig)(e) === o.o.GLOBAL)) return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(l.YqE, {
         size: "xxs",
         color: "currentColor"
       }), D.intl.string(D.t.TsWCdX)]
     });
-    let e = o > 0 ? D.intl.format(D.t.z8EAJS, {
-      count: o
+    let e = a > 0 ? D.intl.format(D.t.z8EAJS, {
+      count: a
     }) : D.intl.string(D.t.RjceQU);
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(l.tBG, {
@@ -205,7 +205,7 @@ function M(e) {
         color: "currentColor"
       }), e]
     })
-  }, [u, d, c, o]);
+  }, [u, d, c, a]);
   return (0, r.jsxs)(r.Fragment, {
     children: [n.length > 0 && (0, r.jsx)(l.Text, {
       variant: "text-xs/medium",

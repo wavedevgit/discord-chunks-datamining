@@ -2,19 +2,19 @@
 /** chunk id: 942833, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  C: () => a,
+  C: () => o,
   k: () => s
 });
 var Chunk647438 = require("./647438.js"),
   Chunk937615 = require("./937615.js"),
   Chunk388032 = require("./388032.jsx");
 
-function a(e) {
+function o(e) {
   return r.useMemo(() => {
     if (null == e) return;
     let t = null != e.role_id,
       n = e.attachments_count > 0;
-    return t && n ? o.intl.string(o.t.ih4QMT) : t ? o.intl.string(o.t.o9xphY) : n ? o.intl.string(o.t.DWYJub) : true
+    return t && n ? a.intl.string(a.t.ih4QMT) : t ? a.intl.string(a.t.o9xphY) : n ? a.intl.string(a.t.DWYJub) : true
   }, [e])
 }
 

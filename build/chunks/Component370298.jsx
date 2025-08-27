@@ -82,11 +82,11 @@ function k(e) {
     channelId: c,
     imageUrl: u,
     mimeType: d
-  } = e, f = (0, o.e7)([I.Z], () => I.Z.getChannel(c)), {
+  } = e, f = (0, a.e7)([I.Z], () => I.Z.getChannel(c)), {
     Component: _,
     events: p,
     play: h
-  } = (0, a.w)(), [m, g] = i.useState(false), E = i.useRef(null);
+  } = (0, o.w)(), [m, g] = i.useState(false), E = i.useRef(null);
   return null == f ? null : (m || h(), (0, r.jsx)(s.yRy, {
     targetElementRef: E,
     renderPopout: e => {
@@ -139,15 +139,15 @@ function U(e) {
   let {
     onSelect: t,
     onClose: n,
-    channel: a,
+    channel: o,
     imageUrl: I,
     mimeType: x
-  } = e, j = (0, o.e7)([S.Z], () => S.Z.getGuild(a.guild_id)), {
+  } = e, j = (0, a.e7)([S.Z], () => S.Z.getGuild(o.guild_id)), {
     fetchState: M,
     imageRecCommandContexts: k
   } = (0, N.h)({
-    channelId: a.id
-  }), U = M === R.M.FETCHING, G = (0, E.g)(a), B = (0, _.PL)(true, true), Z = (0, _.LD)(a.guild_id, true);
+    channelId: o.id
+  }), U = M === R.M.FETCHING, G = (0, E.g)(o), B = (0, _.PL)(true, true), Z = (0, _.LD)(o.guild_id, true);
   i.useEffect(() => {
     (M === R.M.ERROR || M === R.M.FETCHED && 0 === k.length) && n()
   }, [M, k.length, n]), i.useEffect(() => {
@@ -157,12 +157,12 @@ function U(e) {
     k.forEach(e => {
       n.push(Number(e.command.id)), null != e.overrideSendCommand && n.push(Number(e.overrideSendCommand.id))
     }), A.default.track(P.rMx.APP_IMAGE_RECS_MENU_VIEWED, {
-      guild_id: null != (e = null == a ? true : a.guild_id) ? e : "",
-      channel_id: null != (t = null == a ? true : a.id) ? t : "",
+      guild_id: null != (e = null == o ? true : o.guild_id) ? e : "",
+      channel_id: null != (t = null == o ? true : o.id) ? t : "",
       application_ids: [...k.map(e => Number(e.command.applicationId))],
       command_ids: n
     })
-  }, [k, a, U]);
+  }, [k, o, U]);
   let F = i.useCallback(async e => {
       let t = await fetch(I),
         n = await t.arrayBuffer(),
@@ -173,7 +173,7 @@ function U(e) {
           type: r
         });
       l.Z.setFile({
-        channelId: a.id,
+        channelId: o.id,
         id: e,
         file: {
           id: e,
@@ -183,19 +183,19 @@ function U(e) {
         },
         draftType: T.d.SlashCommand
       })
-    }, [I, a.id, x]),
+    }, [I, o.id, x]),
     V = i.useCallback(async (e, t, n, r) => {
-      var i, o;
+      var i, a;
       if (!G) return;
       let s = e.applicationId,
         l = (null == (i = B.result) ? true : i.sections[s]) != null,
-        u = (null == (o = Z.result) ? true : o.sections[s]) != null;
-      await F(r), null != p.Z.getActiveCommand(a.id) && f.Po({
-        channelId: a.id,
+        u = (null == (a = Z.result) ? true : a.sections[s]) != null;
+      await F(r), null != p.Z.getActiveCommand(o.id) && f.Po({
+        channelId: o.id,
         command: null,
         section: null
-      }), l || u || _.ZP.queryInstallOnDemandApp(e.applicationId, a.id), f.Po({
-        channelId: a.id,
+      }), l || u || _.ZP.queryInstallOnDemandApp(e.applicationId, o.id), f.Po({
+        channelId: o.id,
         command: e,
         section: t,
         location: n,
@@ -213,20 +213,20 @@ function U(e) {
         location: n,
         sectionName: t.name
       }), C.S.dispatch(P.CkL.FOCUS_CHANNEL_TEXT_AREA, {
-        channelId: a.id
+        channelId: o.id
       })
-    }, [a.id, F, G, B, Z]),
+    }, [o.id, F, G, B, Z]),
     H = i.useCallback(async (e, t, n) => {
       var r, i;
-      let o = e.applicationId,
-        s = (null == (r = B.result) ? true : r.sections[o]) != null,
-        l = (null == (i = Z.result) ? true : i.sections[o]) != null;
-      s || l || _.ZP.queryInstallOnDemandApp(e.applicationId, a.id);
+      let a = e.applicationId,
+        s = (null == (r = B.result) ? true : r.sections[a]) != null,
+        l = (null == (i = Z.result) ? true : i.sections[a]) != null;
+      s || l || _.ZP.queryInstallOnDemandApp(e.applicationId, o.id);
       let {
         isAuthorized: c
       } = await (0, y.L)({
-        applicationId: o,
-        channel: a,
+        applicationId: a,
+        channel: o,
         commandIntegrationTypes: e.integration_types,
         appLauncherContext: {
           entrypoint: d._b.TEXT,
@@ -247,12 +247,12 @@ function U(e) {
           }]
         },
         context: {
-          channel: a,
+          channel: o,
           guild: j
         },
         commandOrigin: t === h.Vh.IMAGE_RECS_SUBMENU ? h.bB.IMAGE_RECS_SUBMENU : h.bB.IMAGE_RECS_MENU
       }))
-    }, [a, j, B, Z, F]);
+    }, [o, j, B, Z, F]);
   return (0, r.jsxs)(s.v2r, {
     onSelect: t,
     navId: "image-context-commands-popout",
@@ -278,19 +278,19 @@ function U(e) {
         let t = e.overrideSendCommand,
           n = null == e ? true : e.overrideSendCommandInfo,
           i = null != t && null != n,
-          o = e.onlyAllowEdit || null != n && null == t,
+          a = e.onlyAllowEdit || null != n && null == t,
           l = e.imageOption;
         return null == l ? null : (0, r.jsx)(s.sNh, {
           id: e.command.id,
           action: () => {
-            o ? V(e.command, e.section, h.Vh.IMAGE_RECS_MENU, l) : H(i ? t : e.command, h.Vh.IMAGE_RECS_MENU, i ? n.imageOption : l)
+            a ? V(e.command, e.section, h.Vh.IMAGE_RECS_MENU, l) : H(i ? t : e.command, h.Vh.IMAGE_RECS_MENU, i ? n.imageOption : l)
           },
           label: e.command.displayName,
           subtext: e.command.displayDescription,
           subtextLineClamp: 1,
-          icon: o ? s.vdY : i ? true : s.Uuj,
+          icon: a ? s.vdY : i ? true : s.Uuj,
           iconLeft: () => (0, r.jsx)(b.Z, {
-            channel: a,
+            channel: o,
             section: e.section,
             width: 32,
             height: 32,
@@ -299,7 +299,7 @@ function U(e) {
           }),
           iconLeftSize: "lg",
           showImageFirst: true,
-          disabled: !G && o,
+          disabled: !G && a,
           children: i ? (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(s.sNh, {
               id: "".concat(e.command.id, "-send"),

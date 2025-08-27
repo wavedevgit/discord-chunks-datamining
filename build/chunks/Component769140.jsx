@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk287734 = require("./287734.js"),
@@ -54,12 +54,12 @@ function Z(e) {
   } = e, {
     themeType: V,
     theme: H
-  } = (0, C.z)(), Y = (0, a.e7)([O.Z], () => O.Z.getGuild(null == i ? true : i.guildId)), W = (0, a.e7)([y.Z], () => y.Z.getChannel(null == i ? true : i.channelId)), K = (0, a.Wu)([T.ZP], () => null != W ? T.ZP.getVoiceStatesForChannel(W).map(e => {
+  } = (0, C.z)(), Y = (0, o.e7)([O.Z], () => O.Z.getGuild(null == i ? true : i.guildId)), W = (0, o.e7)([y.Z], () => y.Z.getChannel(null == i ? true : i.channelId)), K = (0, o.Wu)([T.ZP], () => null != W ? T.ZP.getVoiceStatesForChannel(W).map(e => {
     let {
       user: t
     } = e;
     return t
-  }) : []), z = (0, a.e7)([I.Z], () => I.Z.findActivity(t.id, e => (0, d.Z)(e) && !(0, f.Z)(e))), {
+  }) : []), z = (0, o.e7)([I.Z], () => I.Z.findActivity(t.id, e => (0, d.Z)(e) && !(0, f.Z)(e))), {
     analyticsLocations: q
   } = (0, h.ZP)(p.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), X = (0, S.Z)({
     display: "live",
@@ -73,19 +73,19 @@ function Z(e) {
   }), {
     previewUrl: J,
     isLoading: $
-  } = (0, E.Z)(null == i ? true : i.guildId, null == i ? true : i.channelId, null == i ? true : i.ownerId), [ee, et] = (0, b.wq)(W), en = (0, _.Kt)() && (0, _.zd)(null == W ? true : W.id), er = (0, a.e7)([v.Z], () => null != W && !en && v.Z.canBasicChannel(L.S7T.CONNECT, W)), ei = (0, u.Z)($ ? null : J), eo = $ || null == J ? ei : J;
+  } = (0, E.Z)(null == i ? true : i.guildId, null == i ? true : i.channelId, null == i ? true : i.ownerId), [ee, et] = (0, b.wq)(W), en = (0, _.Kt)() && (0, _.zd)(null == W ? true : W.id), er = (0, o.e7)([v.Z], () => null != W && !en && v.Z.canBasicChannel(L.S7T.CONNECT, W)), ei = (0, u.Z)($ ? null : J), ea = $ || null == J ? ei : J;
   if (null == Y || null == W || false === i.discoverable) return null;
-  let ea = () => {
+  let eo = () => {
       let e = e => {
         e.stopPropagation(), ee && (X({
           action: "PRESS_IMAGE"
         }), l.default.selectVoiceChannel(i.channelId), (0, c.iV)(i), null == F || F())
       };
-      return null == eo && $ ? (0, r.jsx)("div", {
+      return null == ea && $ ? (0, r.jsx)("div", {
         className: U.preview,
         children: (0, r.jsx)(s.$jN, {})
-      }) : null == eo || en ? (0, r.jsxs)(s.P3F, {
-        className: o()(U.preview, U.overlay, ee ? U.clickable : U.disabled),
+      }) : null == ea || en ? (0, r.jsxs)(s.P3F, {
+        className: a()(U.preview, U.overlay, ee ? U.clickable : U.disabled),
         onClick: e,
         "aria-label": (0, b.gR)(et),
         "aria-disabled": !ee,
@@ -104,13 +104,13 @@ function Z(e) {
           })]
         })]
       }) : (0, r.jsxs)(s.P3F, {
-        className: o()(U.preview, U.overlay, ee ? U.clickable : U.disabled),
+        className: a()(U.preview, U.overlay, ee ? U.clickable : U.disabled),
         onClick: e,
         "aria-label": (0, b.gR)(et),
         "aria-disabled": !ee,
         children: [(0, r.jsx)("img", {
           alt: "",
-          src: eo,
+          src: ea,
           className: U.image
         }), V !== j.l.MODAL && V !== j.l.MODAL_V2 && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(s.Text, {
@@ -190,7 +190,7 @@ function Z(e) {
         className: k.body,
         children: [(0, r.jsxs)("div", {
           className: k.content,
-          children: [ea(), es(), V === j.l.MODAL && ec()]
+          children: [eo(), es(), V === j.l.MODAL && ec()]
         }), el()]
       }), V !== j.l.MODAL && V !== j.l.MODAL_V2 && ec()]
     })

@@ -43,12 +43,12 @@ function x(e) {
   } = e, {
     invite: L,
     inviteError: j
-  } = (0, o.cj)([y.Z], () => ({
+  } = (0, a.cj)([y.Z], () => ({
     invite: y.Z.getInvite(t),
     inviteError: y.Z.getInviteError(t)
   }), [t]), M = null == L;
   i.useEffect(() => {
-    M && a.ZP.resolveInvite(t)
+    M && o.ZP.resolveInvite(t)
   }, [t, M]);
   let k = null != L ? L : {
       state: w.r2o.RESOLVING,
@@ -58,14 +58,14 @@ function x(e) {
       analyticsLocations: U
     } = (0, u.ZP)(),
     G = (0, d.v)(),
-    B = (0, o.e7)([b.Z], () => (null == L ? true : L.guild) != null ? b.Z.getGuild(L.guild.id) : null, [L]),
-    Z = (0, o.e7)([E.default], () => E.default.getId()),
-    F = (0, o.e7)([_.ZP], () => {
+    B = (0, a.e7)([b.Z], () => (null == L ? true : L.guild) != null ? b.Z.getGuild(L.guild.id) : null, [L]),
+    Z = (0, a.e7)([E.default], () => E.default.getId()),
+    F = (0, a.e7)([_.ZP], () => {
       var e;
       return _.ZP.getGuildScheduledEvent(null == (e = k.guild_scheduled_event) ? true : e.id)
     }, [k]),
     V = () => {
-      null != k.channel && a.ZP.transitionToInviteSync(k)
+      null != k.channel && o.ZP.transitionToInviteSync(k)
     },
     H = () => {
       if (null == B && (null == L ? true : L.guild) != null) {
@@ -80,7 +80,7 @@ function x(e) {
           section: w.jXE.GUILD_CAP_UPSELL_MODAL
         },
         analyticsLocations: U
-      }) : a.ZP.acceptInviteAndTransitionToInviteChannel({
+      }) : o.ZP.acceptInviteAndTransitionToInviteChannel({
         inviteKey: t,
         context: x("Invite Button Embed")
       })

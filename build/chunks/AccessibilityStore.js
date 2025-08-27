@@ -58,8 +58,8 @@ function g(e, t) {
   if (null == e) return {};
   var n, r, i = E(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -67,8 +67,8 @@ function g(e, t) {
 function E(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 var b = function(e) {
@@ -389,7 +389,7 @@ _(X, "displayName", "AccessibilityStore"), _(X, "persistKey", "AccessibilityStor
     n = "a11yColorblindMode",
     r = Chunk433517.K.get(module) || 100,
     i = Chunk433517.K.get(exports) || Chunk981631.yqN.ZOOM_DEFAULT,
-    a = Chunk433517.K.get(require) || false;
+    o = Chunk433517.K.get(require) || false;
   return Chunk433517.K.remove(module), Chunk433517.K.remove(exports), Chunk433517.K.remove(require), {
     fontScale: r,
     zoom: Chunk442837,
@@ -430,7 +430,7 @@ _(X, "displayName", "AccessibilityStore"), _(X, "persistKey", "AccessibilityStor
   systemPrefersReducedMotion: "no-preference",
   prefersReducedMotion: "auto"
 }), e => m(p({}, e), {
-  alwaysShowLinkDecorations: e.saturation <= a.AE
+  alwaysShowLinkDecorations: e.saturation <= o.AE
 }), e => m(p({}, e), {
   disableVoiceBackgrounds: false
 }), e => {

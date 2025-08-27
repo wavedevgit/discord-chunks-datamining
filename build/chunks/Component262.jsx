@@ -55,8 +55,8 @@ function p(e, t) {
   if (null == e) return {};
   var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -64,8 +64,8 @@ function p(e, t) {
 function h(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -75,15 +75,15 @@ function m(e) {
     messageReference: n,
     guildName: s
   } = e, l = i.useRef(null);
-  if (null == n) return (0, r.jsx)(o.eee, {
+  if (null == n) return (0, r.jsx)(a.eee, {
     children: t
   });
   let {
     guild_id: c
   } = n;
-  return null == c ? (0, r.jsx)(o.eee, {
+  return null == c ? (0, r.jsx)(a.eee, {
     children: t
-  }) : (0, r.jsx)(a.Z, {
+  }) : (0, r.jsx)(o.Z, {
     guildId: c,
     name: s,
     targetElementRef: l,
@@ -91,8 +91,8 @@ function m(e) {
       let {
         "aria-controls": n,
         "aria-expanded": i
-      } = e, a = p(e, ["aria-controls", "aria-expanded"]);
-      return (0, r.jsx)(o.eee, _(d({}, a), {
+      } = e, o = p(e, ["aria-controls", "aria-expanded"]);
+      return (0, r.jsx)(a.eee, _(d({}, o), {
         ref: l,
         children: t
       }))
@@ -104,15 +104,15 @@ function g(e) {
   let {
     usernameHook: t,
     message: i,
-    compact: o
+    compact: a
   } = e, {
-    content: a,
+    content: o,
     timestamp: u,
     messageReference: d
-  } = i, f = (0, s.ZP)(i), _ = t(f), p = (null != a ? a : "").split(" ").slice(0, false).join(" "), h = c.intl.format(c.t["47CZc3"], {
+  } = i, f = (0, s.ZP)(i), _ = t(f), p = (null != o ? o : "").split(" ").slice(0, false).join(" "), h = c.intl.format(c.t["47CZc3"], {
     username: f.nick,
     usernameHook: _,
-    webhookName: a,
+    webhookName: o,
     webhookNameHook: (e, t) => (0, r.jsx)(m, {
       messageReference: d,
       guildName: p,
@@ -122,7 +122,7 @@ function g(e) {
   return (0, r.jsx)(l.Z, {
     icon: n(570111),
     timestamp: u,
-    compact: o,
+    compact: a,
     children: h
   })
 }

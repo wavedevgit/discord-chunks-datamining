@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -45,8 +45,8 @@ function _(e) {
       application_id: t,
       name: n,
       summary: i,
-      websites: o,
-      themes: a,
+      websites: a,
+      themes: o,
       genres: l,
       platforms: c,
       artwork_urls: u,
@@ -62,8 +62,8 @@ function _(e) {
       name: n,
       summary: i,
       summaryLocalized: p,
-      websites: o,
-      themes: a,
+      websites: a,
+      themes: o,
       genres: l,
       platforms: c,
       artwork: u,
@@ -125,7 +125,7 @@ class h extends(r = Chunk442837.ZP.Store) {
     return s.size
   }
 }
-a(h, "displayName", "DetectableGameSupplementalStore");
+o(h, "displayName", "DetectableGameSupplementalStore");
 let m = new h(Chunk570140.Z, {
   LOGOUT: d,
   DETECTABLE_GAME_SUPPLEMENTAL_FETCH: f,

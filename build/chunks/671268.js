@@ -13,9 +13,9 @@ function i(e, t) {
     id: i
   } = null != (n = r.get(e)) ? n : {};
   if (!i) throw Error("Unknown list");
-  return `${i}-${o(t)}`
+  return `${i}-${a(t)}`
 }
 
-function o(e) {
+function a(e) {
   return "string" == typeof e ? e.replace(/\s*/g, "") : "" + e
 }

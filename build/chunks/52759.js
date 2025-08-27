@@ -2,8 +2,8 @@
 /** chunk id: 52759, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  _G: () => o,
-  qW: () => a
+  _G: () => a,
+  qW: () => o
 });
 var Chunk647438 = require("./647438.js");
 if ("undefined" != typeof HTMLTemplateElement) {
@@ -18,7 +18,7 @@ if ("undefined" != typeof HTMLTemplateElement) {
 }
 let i = (0, Chunk647438.createContext)(false);
 
-function o(e) {
+function a(e) {
   if ((0, r.useContext)(i)) return r.createElement(r.Fragment, null, e.children);
   let t = r.createElement(i.Provider, {
     value: true
@@ -28,7 +28,7 @@ function o(e) {
   }, t)
 }
 
-function a(e) {
+function o(e) {
   let t = (t, n) => (0, r.useContext)(i) ? null : e(t, n);
   return t.displayName = e.displayName || e.name, (0, r.forwardRef)(t)
 }

@@ -66,7 +66,7 @@ let T = 3,
 function A(e) {
   let {
     applications: t
-  } = e, n = i.useMemo(() => t.sort((e, t) => u.default.compare(t.id, e.id)), [t]), o = i.useMemo(() => {
+  } = e, n = i.useMemo(() => t.sort((e, t) => u.default.compare(t.id, e.id)), [t]), a = i.useMemo(() => {
     let e = [];
     for (let t = 0; t < T; t++) {
       let r = n[t];
@@ -77,7 +77,7 @@ function A(e) {
       i = n.length - T;
     return i > 0 ? E.intl.format(E.t.sHFdTk, {
       gameList: t,
-      plusMoreHook: (e, t) => (0, r.jsx)(a.Text, {
+      plusMoreHook: (e, t) => (0, r.jsx)(o.Text, {
         tag: "span",
         variant: "text-sm/medium",
         color: "text-muted",
@@ -92,14 +92,14 @@ function A(e) {
       let i = n[t];
       if (null == i) break;
       let {
-        icon: o,
+        icon: a,
         name: s,
         id: c
       } = i, u = l.ZP.getApplicationIconURL({
         id: c,
-        icon: o
+        icon: a
       });
-      e.push((0, r.jsx)(a.ua7, {
+      e.push((0, r.jsx)(o.ua7, {
         text: s,
         children: e => (0, r.jsx)("img", I(O({}, e), {
           src: u,
@@ -111,7 +111,7 @@ function A(e) {
     let t = n.length - S;
     return t > 0 && e.push((0, r.jsx)("div", {
       className: b.moreIcon,
-      children: (0, r.jsx)(a.Text, {
+      children: (0, r.jsx)(o.Text, {
         variant: "text-xs/medium",
         color: "text-default",
         children: "+".concat(t)
@@ -124,20 +124,20 @@ function A(e) {
     className: b.header,
     children: [(0, r.jsxs)("div", {
       className: b.gameNamesHeader,
-      children: [(0, r.jsx)(a.Text, {
+      children: [(0, r.jsx)(o.Text, {
         variant: "text-md/normal",
         color: "header-primary",
-        children: o
-      }), (0, r.jsxs)(a.P3F, {
+        children: a
+      }), (0, r.jsxs)(o.P3F, {
         onClick: d,
         className: b.manageGamesLink,
-        children: [(0, r.jsx)(a.Text, {
+        children: [(0, r.jsx)(o.Text, {
           variant: "text-xs/normal",
           color: "interactive-normal",
           children: E.intl.format(E.t.oYaYOT, {})
-        }), (0, r.jsx)(a.Fbu, {
+        }), (0, r.jsx)(o.Fbu, {
           size: "xxs",
-          color: a.TVs.colors.INTERACTIVE_NORMAL,
+          color: o.TVs.colors.INTERACTIVE_NORMAL,
           className: b.manageGamesChevron
         })]
       })]

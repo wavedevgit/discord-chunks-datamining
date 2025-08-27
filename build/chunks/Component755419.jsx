@@ -7,7 +7,7 @@ require.d(exports, {
 });
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk317257 = require("./317257.js"),
   Chunk499997 = require("./499997.jsx"),
   Chunk215023 = require("./215023.js"),
@@ -37,7 +37,7 @@ let f = {
         } = e;
         return (0, r.jsx)(s.Z, {
           animationState: t,
-          className: o()(c.orbProfileBadgeAsset, n)
+          className: a()(c.orbProfileBadgeAsset, n)
         })
       }
     }

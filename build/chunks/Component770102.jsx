@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk388398 = require("./388398.js");
 
 function s(e) {
@@ -16,7 +16,7 @@ function s(e) {
     style: n
   } = e;
   return (0, r.jsx)("div", {
-    className: o()(a.divider, t),
+    className: a()(o.divider, t),
     style: n
   })
 }

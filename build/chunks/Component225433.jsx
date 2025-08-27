@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk903443 = require("./903443.js");
@@ -23,9 +23,9 @@ function u(e) {
     "aria-label": i,
     look: u = c.DEFAULT
   } = e;
-  return (0, r.jsx)(a.P3F, {
+  return (0, r.jsx)(o.P3F, {
     "aria-label": null != i ? i : s.intl.string(s.t.N86XcH),
-    className: o()(l.button, u, t),
+    className: a()(l.button, u, t),
     onClick: n
   })
 }

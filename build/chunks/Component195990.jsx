@@ -26,11 +26,11 @@ function h(e) {
     onClose: g
   } = e, {
     themeType: E
-  } = (0, u.z)(), [b, y] = i.useState(false), O = (0, o.e7)([c.default], () => c.default.getCurrentUser()), v = null == (t = h.thirdPartySkus.find(e => e.distributor === f.GQo.ROBLOX)) ? true : t.id, I = (0, l.dW)(v);
+  } = (0, u.z)(), [b, y] = i.useState(false), O = (0, a.e7)([c.default], () => c.default.getCurrentUser()), v = null == (t = h.thirdPartySkus.find(e => e.distributor === f.GQo.ROBLOX)) ? true : t.id, I = (0, l.dW)(v);
   return null == O || n.id === O.id || null == v ? null : (0, r.jsx)(d.tG, {
     text: p.intl.string(p.t.RscU7O),
     submitting: b,
-    size: E === _.l.MODAL_V2 ? a.Ph.TINY : a.Ph.SMALL,
+    size: E === _.l.MODAL_V2 ? o.Ph.TINY : o.Ph.SMALL,
     fullWidth: E !== _.l.MODAL_V2,
     themeColor: "secondary",
     onClick: async e => {

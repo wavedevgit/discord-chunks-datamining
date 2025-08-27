@@ -38,14 +38,14 @@ require.d(exports, {
   fC: () => c,
   fU: () => m,
   fm: () => V,
-  h7: () => o,
+  h7: () => a,
   iA: () => z,
   jg: () => E,
   kS: () => F,
   mC: () => A,
   mN: () => S,
   n4: () => Y,
-  pM: () => a,
+  pM: () => o,
   pk: () => k,
   ru: () => j,
   u$: () => N,
@@ -61,10 +61,10 @@ var Chunk268146 = require("./268146.js"),
   i = function(e) {
     return e.DEFAULT = "default", e.STREAM = "stream", e
   }({}),
-  o = function(e) {
+  a = function(e) {
     return e.AUDIO_INPUT = "audioinput", e.AUDIO_OUTPUT = "audiooutput", e.VIDEO_INPUT = "videoinput", e
   }({}),
-  a = function(e) {
+  o = function(e) {
     return e.PUSH_TO_TALK = "PUSH_TO_TALK", e.VOICE_ACTIVITY = "VOICE_ACTIVITY", e
   }({}),
   s = function(e) {

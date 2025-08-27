@@ -9,7 +9,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk692547 = require("./692547.js"),
   Chunk780384 = require("./780384.js"),
   Chunk481060 = require("./481060.js"),
@@ -46,7 +46,7 @@ let g = function(e) {
     onLoadComplete: y
   } = e, O = (0, s.wj)(g) ? f.BRd.DARK : f.BRd.LIGHT, v = (0, c.Gd)(p.id, O), I = E && null != p.config.cosponsorMetadata && null != v;
   return (0, r.jsxs)("div", {
-    className: o()(_.partnerBranding, t),
+    className: a()(_.partnerBranding, t),
     children: [b && (0, r.jsx)(d.Fl, {
       id: "QuestPartnerBranding_gameTile",
       children: e => (0, r.jsx)("img", {
@@ -65,7 +65,7 @@ let g = function(e) {
       id: "QuestPartnerBranding_gameLogotype",
       children: e => (0, r.jsx)("img", {
         ref: e,
-        className: o()(_.partnerBrandingLogotype, n, {
+        className: a()(_.partnerBrandingLogotype, n, {
           [_.partnerBrandingLogotypeWithCosponsor]: I
         }),
         alt: p.config.messages.gameTitle,
@@ -80,7 +80,7 @@ let g = function(e) {
         },
         children: (0, r.jsx)(l.P$X, {
           className: _.cosponsorBrandSeparator,
-          color: a.Z.colors.WHITE
+          color: o.Z.colors.WHITE
         })
       }), (0, r.jsx)(d.Fl, {
         id: "QuestPartnerBranding_cosponsorLogotype",
@@ -88,7 +88,7 @@ let g = function(e) {
           var t, i;
           return (0, r.jsx)("img", {
             ref: e,
-            className: o()(_.partnerBrandingLogotype, _.partnerBrandingLogotypeWithCosponsor, n),
+            className: a()(_.partnerBrandingLogotype, _.partnerBrandingLogotypeWithCosponsor, n),
             alt: null != (i = null == (t = p.config.cosponsorMetadata) ? true : t.name) ? i : "",
             src: v.url,
             onLoad: y

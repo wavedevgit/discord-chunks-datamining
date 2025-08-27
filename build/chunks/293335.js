@@ -6,15 +6,15 @@ require.d(exports, {
 }), require("./388685.js"), require("./539854.js");
 var Chunk647438 = require("./647438.js");
 let i = (e, t) => {
-  let [n, i] = r.useState(false), o = r.useRef(false);
+  let [n, i] = r.useState(false), a = r.useRef(false);
   return r.useEffect(() => {
     let t = e.reduce((e, t) => (e.includes(t.src) || e.push(t.src), e), []);
-    i(t.length), o.current = t.length
-  }, [e, o, i]), r.useEffect(() => {
+    i(t.length), a.current = t.length
+  }, [e, a, i]), r.useEffect(() => {
     0 === n && t()
   }, [n, t]), {
     pending: n,
-    pendingRef: o,
+    pendingRef: a,
     setPending: i
   }
 }

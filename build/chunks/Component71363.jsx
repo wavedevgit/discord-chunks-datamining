@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk622535 = require("./622535.js"),
   Chunk304789 = require("./304789.jsx"),
@@ -30,7 +30,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk865215 = require("./865215.js");
 let C = e => {
   let t, n, {
-      isAllPerksVisible: o,
+      isAllPerksVisible: a,
       setIsAllPerksVisible: C,
       previousComponent: N,
       enablePremiumBrandRefresh: R
@@ -60,14 +60,14 @@ let C = e => {
     })
   };
   return (0, r.jsx)(u.yWw, {
-    className: a()(S.allPerksScroller, {
-      [S.open]: o,
+    className: o()(S.allPerksScroller, {
+      [S.open]: a,
       [S.openCloseReduceMotion]: M
     }),
     ref: P,
     children: (0, r.jsx)(c.$, {
       color: "nitro-pink",
-      className: a()(S.container, S.responsiveContainer, {
+      className: o()(S.container, S.responsiveContainer, {
         [S.hiddenGradient]: !R
       }),
       children: (0, r.jsxs)(_.Gt, {
@@ -78,7 +78,7 @@ let C = e => {
           className: S.heroHeading,
           onBackClick: B
         }), (0, r.jsxs)("div", {
-          className: a()(S.column, {
+          className: o()(S.column, {
             [S.premiumBrandRefresh]: R
           }),
           children: [(0, r.jsx)(u.X6q, {

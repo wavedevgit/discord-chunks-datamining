@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  a = require.n(Chunk392711),
   Chunk481060 = require("./481060.js"),
   Chunk358230 = require("./358230.js"),
   Chunk905423 = require("./905423.js"),
@@ -80,7 +80,7 @@ function I(e, t) {
 }
 
 function T(e, t) {
-  var i, o;
+  var i, a;
   let s, {
       channelPredicate: d = () => true,
       guildPredicate: f = () => true,
@@ -99,7 +99,7 @@ function T(e, t) {
       for (; null != s && "" !== s;) {
         if ("string" == typeof s) {
           if (d(v, s)) return (0, p.K)(v, s, false, g(v, s))
-        } else if ("object" == typeof s && m(s.resourceId, s.type)) return v !== u.Z.getGuildId() && (0, p.K)(v, null == (o = c.ZP.getDefaultChannel(v)) ? true : o.id), (0, a.ZDy)(async () => {
+        } else if ("object" == typeof s && m(s.resourceId, s.type)) return v !== u.Z.getGuildId() && (0, p.K)(v, null == (a = c.ZP.getDefaultChannel(v)) ? true : a.id), (0, o.ZDy)(async () => {
           let {
             default: e
           } = await Promise.all([n.e("4096"), n.e("56236"), n.e("74103")]).then(n.bind(n, 17671));
@@ -117,4 +117,4 @@ function T(e, t) {
     intensity: 2
   })
 }
-let S = o().throttle(T, Chunk981631.aZC)
+let S = a().throttle(T, Chunk981631.aZC)

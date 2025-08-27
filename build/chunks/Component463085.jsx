@@ -2,17 +2,17 @@
 /** chunk id: 463085, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  z: () => a
+  z: () => o
 }), require("./997841.js"), require("./415506.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk710260 = require("./710260.jsx");
 
-function a(e) {
+function o(e) {
   let {
     children: t,
     theme: n,
-    primaryColor: a,
+    primaryColor: o,
     secondaryColor: s,
     gradient: l,
     flags: c,
@@ -21,11 +21,11 @@ function a(e) {
     density: f,
     disableAdaptiveTheme: _,
     reduceAdaptiveTheme: p
-  } = e, h = i.useContext(o.Ni);
-  o.qF;
-  let m = i.useMemo(() => (0, o.TT)({
+  } = e, h = i.useContext(a.Ni);
+  a.qF;
+  let m = i.useMemo(() => (0, a.TT)({
     theme: null != n ? n : h.theme,
-    primaryColor: null != a ? a : h.primaryColor,
+    primaryColor: null != o ? o : h.primaryColor,
     secondaryColor: null != s ? s : h.secondaryColor,
     gradient: null != l ? l : h.gradient,
     flags: null != c ? c : h.flags,
@@ -34,8 +34,8 @@ function a(e) {
     density: null != f ? f : h.density,
     disableAdaptiveTheme: null != _ ? _ : h.disableAdaptiveTheme,
     reduceAdaptiveTheme: null != p ? p : h.reduceAdaptiveTheme
-  }), [n, h.theme, h.primaryColor, h.secondaryColor, h.gradient, h.flags, h.contrast, h.saturation, h.density, h.disableAdaptiveTheme, h.reduceAdaptiveTheme, a, s, l, c, u, d, f, _, p]);
-  return (0, r.jsx)(o.Ni.Provider, {
+  }), [n, h.theme, h.primaryColor, h.secondaryColor, h.gradient, h.flags, h.contrast, h.saturation, h.density, h.disableAdaptiveTheme, h.reduceAdaptiveTheme, o, s, l, c, u, d, f, _, p]);
+  return (0, r.jsx)(a.Ni.Provider, {
     value: m,
     children: t
   })

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
   s = require.n(Chunk512722),
   Chunk257465 = require("./257465.jsx"),
@@ -47,7 +47,7 @@ function b(e) {
     transitionState: t,
     analyticsLocation: n,
     onClose: i,
-    onAddPaymentSource: a,
+    onAddPaymentSource: o,
     toastContent: d,
     initialStep: g = f.h8.PAYMENT_TYPE,
     overwriteSubscriptionPaymentSource: E = false
@@ -60,11 +60,11 @@ function b(e) {
       i()
     },
     onComplete: (e, t) => {
-      s()(null != t, "paymentSource missing"), null == a || a(t), i()
+      s()(null != t, "paymentSource missing"), null == o || o(t), i()
     },
     onStepChange: () => {},
     header: (0, r.jsxs)("div", {
-      className: o()(h.modalTitle, m.flex, m.justifyBetween, m.alignCenter),
+      className: a()(h.modalTitle, m.flex, m.justifyBetween, m.alignCenter),
       children: [(0, r.jsx)(u.vwX, {
         tag: u.RB0.H4,
         children: p.intl.string(p.t.eQ2bLi)

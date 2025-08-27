@@ -7,7 +7,7 @@ require.d(exports, {
 }), require("./583741.js");
 var Chunk647438 = require("./647438.js"),
   Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  a = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk189451 = require("./189451.js"),
   Chunk77498 = require("./77498.js"),
@@ -24,7 +24,7 @@ function d(e) {
 
 function f() {
   let e = (0, Chunk442837.e7)([Chunk77498.Z], () => Chunk77498.Z.games),
-    t = Chunk647438.useMemo(() => o()(module).filter(e => !d(e)).map(e => ({
+    t = Chunk647438.useMemo(() => a()(module).filter(e => !d(e)).map(e => ({
       value: e.id,
       label: e.name
     })).sortBy(e => {

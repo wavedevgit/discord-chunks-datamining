@@ -11,7 +11,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk692547 = require("./692547.js"),
   Chunk481060 = require("./481060.js"),
   Chunk104494 = require("./104494.js"),
@@ -28,11 +28,11 @@ function p(e) {
     text: t,
     className: n,
     colorOptions: i = 2,
-    icon: a,
+    icon: o,
     gap: l = true
   } = e;
   return (0, r.jsxs)("div", {
-    className: o()(n, f.freeTrialPill, {
+    className: a()(n, f.freeTrialPill, {
       [f.freeTrialPillTier0GradientFill]: 1 === i,
       [f.freeTrialPillTier2GradientFill]: 3 === i,
       [f.freeTrialPillTier2OldGradientFill]: 4 === i,
@@ -43,14 +43,14 @@ function p(e) {
     }),
     children: [(0, r.jsx)(s.Text, {
       variant: "text-xs/bold",
-      className: o()(f.freeTrialPillText, {
+      className: a()(f.freeTrialPillText, {
         [f.freeTrialPillTextInverted]: 0 !== i && 2 !== i,
         [f.freeTrialPillTextTier0]: 0 === i,
         [f.freeTrialPillTextTier2]: 2 === i || 6 === i,
         [f.freeTrialPillTextDefault]: 7 === i
       }),
       children: t
-    }), a]
+    }), o]
   })
 }
 
@@ -63,7 +63,7 @@ function h(e) {
   } = e;
   switch (s) {
     case 1:
-      t = a.Z.unsafe_rawColors.PREMIUM_TIER_0_PURPLE_FOR_GRADIENTS.css;
+      t = o.Z.unsafe_rawColors.PREMIUM_TIER_0_PURPLE_FOR_GRADIENTS.css;
       break;
     case 3:
       t = "url(#".concat(c.l_, ")");
@@ -76,7 +76,7 @@ function h(e) {
       t = "white"
   }
   return l ? (0, r.jsxs)("div", {
-    className: o()(i, f.freeTrialPillWithSparkles),
+    className: a()(i, f.freeTrialPillWithSparkles),
     children: [(0, r.jsx)(c.R9, {
       foreground: f.sparkleStar1,
       color: t
@@ -97,7 +97,7 @@ function h(e) {
       color: t
     })]
   }) : (0, r.jsxs)("div", {
-    className: o()(i, f.freeTrialPillWithSparkles),
+    className: a()(i, f.freeTrialPillWithSparkles),
     children: [(0, r.jsx)(p, {
       text: n,
       colorOptions: s

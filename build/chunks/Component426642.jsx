@@ -28,37 +28,37 @@ let u = e => {
     tooltip: _
   } = {
     0: {
-      icon: o.gm1,
+      icon: a.gm1,
       description: s.intl.string(s.t.YbdEFB),
       color: i.Z.unsafe_rawColors.RED_400.css,
       tooltip: s.intl.string(s.t.PanA4O)
     },
     4: {
-      icon: o.LB9,
+      icon: a.LB9,
       description: s.intl.string(s.t["01Papq"]),
       color: i.Z.unsafe_rawColors.RED_400.css,
       tooltip: s.intl.string(s.t.PanA4O)
     },
     5: {
-      icon: a.Z,
+      icon: o.Z,
       description: s.intl.string(s.t.sp16MT),
       color: i.Z.unsafe_rawColors.RED_400.css,
       tooltip: s.intl.string(s.t.PanA4O)
     },
     1: {
-      icon: o.EmW,
+      icon: a.EmW,
       description: s.intl.string(s.t["4rjikp"]),
       color: i.Z.unsafe_rawColors.ORANGE_345.css,
       tooltip: s.intl.string(s.t.dq9aTk)
     },
     2: {
-      icon: o.d3s,
+      icon: a.d3s,
       description: s.intl.string(s.t["5VmbbG"]),
       color: i.Z.unsafe_rawColors.RED_400.css,
       tooltip: s.intl.string(s.t.PanA4O)
     },
     3: {
-      icon: o.d3s,
+      icon: a.d3s,
       description: s.intl.string(s.t.rjFOZ2),
       color: i.Z.unsafe_rawColors.RED_400.css,
       tooltip: s.intl.string(s.t.PanA4O)
@@ -69,19 +69,19 @@ let u = e => {
     children: [(0, r.jsx)(u, {
       className: l.fileIcon,
       color: i.Z.unsafe_rawColors.PRIMARY_300.css
-    }), (0, r.jsxs)(o.hjN, {
+    }), (0, r.jsxs)(a.hjN, {
       className: l.fileInfo,
-      children: [(0, r.jsx)(o.vwX, {
+      children: [(0, r.jsx)(a.vwX, {
         className: l.fileName,
         children: c
-      }), (0, r.jsx)(o.R94, {
-        type: o.geA.DESCRIPTION,
+      }), (0, r.jsx)(a.R94, {
+        type: a.geA.DESCRIPTION,
         children: d
       })]
-    }), (0, r.jsx)(o.DY3, {
+    }), (0, r.jsx)(a.DY3, {
       position: "right",
       text: _,
-      children: (0, r.jsx)(o.Mgn, {
+      children: (0, r.jsx)(a.Mgn, {
         size: "custom",
         width: 20,
         height: 20,

@@ -41,8 +41,8 @@ function p(e, t) {
   if (null == e) return {};
   var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -50,8 +50,8 @@ function p(e, t) {
 function h(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -62,9 +62,9 @@ function m(e) {
   } = e, i = p(e, ["user", "onClick"]);
   return (0, l.q)(t.id), (0, r.jsx)(u.tG, _({
     action: "PRESS_APP_STOREFRONT",
-    icon: a.EOn,
+    icon: o.EOn,
     text: d.intl.string(d.t.V7j5aW),
-    color: o.Tt.BRAND,
+    color: a.Tt.BRAND,
     themeColor: "none",
     onClick: n
   }, i))
@@ -72,18 +72,18 @@ function m(e) {
 
 function g(e) {
   var t, {
-      user: o,
+      user: a,
       guildId: l
     } = e,
     u = p(e, ["user", "guildId"]);
   let d = (0, i.e7)([c.Z], () => {
       var e;
-      return null == (e = c.Z.getUserProfile(o.id)) ? true : e.application
+      return null == (e = c.Z.getUserProfile(a.id)) ? true : e.application
     }),
     f = (0, s.R)(null != (t = null == d ? true : d.id) ? t : "");
   if (null == d || !f) return null;
   let h = () => {
-    (0, a.ZDy)(async () => {
+    (0, o.ZDy)(async () => {
       let {
         default: e
       } = await Promise.all([n.e("77803"), n.e("62199")]).then(n.bind(n, 7225));
@@ -94,7 +94,7 @@ function g(e) {
     })
   };
   return (0, r.jsx)(m, _({
-    user: o,
+    user: a,
     guildId: l,
     onClick: h
   }, u))

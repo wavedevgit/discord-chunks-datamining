@@ -9,13 +9,13 @@ var Chunk314794 = require("./314794.js"),
   Chunk78839 = require("./78839.js"),
   Chunk388032 = require("./388032.jsx");
 let s = e => {
-  let t = (0, i.e7)([o.Z], () => {
-    let e = o.Z.getPremiumSubscription();
+  let t = (0, i.e7)([a.Z], () => {
+    let e = a.Z.getPremiumSubscription();
     return (null == e ? true : e.isPurchasedExternally) === true
   });
   return e === r.a.PREMIUM_TIER_2_3_DAY ? {
     isDisabled: t,
-    disabledReason: t ? a.intl.string(a.t.NbveHB) : null
+    disabledReason: t ? o.intl.string(o.t.NbveHB) : null
   } : {
     isDisabled: false,
     disabledReason: null

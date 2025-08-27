@@ -9,7 +9,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk653603 = require("./653603.js"),
   l = require.n(Chunk653603),
   Chunk902704 = require("./902704.js"),
@@ -28,27 +28,27 @@ function g(e) {
   var t;
   let {
     className: n,
-    message: o,
+    message: a,
     children: s,
     content: c,
     onUpdate: _,
     contentRef: g,
     compact: E
-  } = e, b = o.state === f.yb.SEND_FAILED, y = o.state === f.yb.SENDING, O = o.isCommandType(), v = null == (t = o.editedTimestamp) ? true : t.toString(), I = i.useRef(false);
+  } = e, b = a.state === f.yb.SEND_FAILED, y = a.state === f.yb.SENDING, O = a.isCommandType(), v = null == (t = a.editedTimestamp) ? true : t.toString(), I = i.useRef(false);
   return i.useLayoutEffect(() => {
     I.current ? null != _ && _() : I.current = true
-  }, [_, o.content, c, v, s]), (0, r.jsxs)("div", {
-    id: (0, u.ut)(o),
+  }, [_, a.content, c, v, s]), (0, r.jsxs)("div", {
+    id: (0, u.ut)(a),
     ref: g,
-    className: a()(n, h.markup, {
+    className: o()(n, h.markup, {
       [p.messageContent]: true,
       [p.isSending]: y && !O,
-      [p.markupRtl]: "rtl" === l()(o.content),
+      [p.markupRtl]: "rtl" === l()(a.content),
       [p.isFailed]: b,
-      [p.isUnsupported]: o.isUnsupported
+      [p.isUnsupported]: a.isUnsupported
     }),
-    children: [null != s ? s : m(o, c), (0, r.jsx)(d.Z, {
-      message: o,
+    children: [null != s ? s : m(a, c), (0, r.jsx)(d.Z, {
+      message: a,
       compact: E,
       location: d.H.WITH_CONTENT
     })]
@@ -60,8 +60,8 @@ function E(e, t) {
   let {
     message: i
   } = t, {
-    message: o
+    message: a
   } = e;
-  return (0, c.Z)(e, t, ["message"]) && i.content === o.content && i.state === o.state && (null == (n = i.editedTimestamp) ? true : n.toString()) === (null == (r = o.editedTimestamp) ? true : r.toString())
+  return (0, c.Z)(e, t, ["message"]) && i.content === a.content && i.state === a.state && (null == (n = i.editedTimestamp) ? true : n.toString()) === (null == (r = a.editedTimestamp) ? true : r.toString())
 }
 let b = Chunk647438.memo(g, E)

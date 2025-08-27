@@ -195,14 +195,14 @@ function P(e) {
 function w(e) {
   let {
     paymentRequestWallet: t
-  } = e, n = i.useRef(null), [o, a] = i.useState(false), s = () => {
+  } = e, n = i.useRef(null), [a, o] = i.useState(false), s = () => {
     null != n.current && n.current.show()
   };
   return (0, r.jsx)(P, {
     footer: (0, r.jsx)(p.Z, {
       primaryCTA: p.Z.CTAType.CONTINUE,
       primaryText: b.intl.string("applePay" === t ? b.t.WoXvJC : b.t.wnVVr6),
-      primaryDisabled: !o,
+      primaryDisabled: !a,
       onPrimary: () => s(),
       onBack: () => {}
     }),
@@ -211,7 +211,7 @@ function w(e) {
       renderStepBody: true,
       paymentRequestWallet: t,
       paymentRequestRef: n,
-      onValidPaymentRequest: () => a(true)
+      onValidPaymentRequest: () => o(true)
     })
   })
 }
@@ -329,7 +329,7 @@ let L = {
   G = "``";
 
 function B() {
-  let [e, t] = Chunk647438.useState(U(M)), [n, a] = Chunk647438.useState(M), [s, u] = Chunk647438.useState(U(k)), [d, _] = Chunk647438.useState(k), [p, h] = Chunk647438.useState(null), [m, E] = Chunk647438.useState((0, Chunk951288.jsx)(Chunk450272.DS, {
+  let [e, t] = Chunk647438.useState(U(M)), [n, o] = Chunk647438.useState(M), [s, u] = Chunk647438.useState(U(k)), [d, _] = Chunk647438.useState(k), [p, h] = Chunk647438.useState(null), [m, E] = Chunk647438.useState((0, Chunk951288.jsx)(Chunk450272.DS, {
     errorLabel: L.CONFIGURABLE,
     elementOptions: M,
     children: (0, Chunk951288.jsx)(Chunk289008.ExpressCheckoutElement, {
@@ -466,7 +466,7 @@ function Z() {
             children: "".concat(G).concat(U(j[e]), " ").concat(G)
           }), (0, r.jsx)(g.DS, {
             errorLabel: t,
-            children: (0, r.jsx)(o.ExpressCheckoutElement, {
+            children: (0, r.jsx)(a.ExpressCheckoutElement, {
               onConfirm: e => {
                 console.log("ExpressCheckoutElement onConfirm event: ", e)
               },

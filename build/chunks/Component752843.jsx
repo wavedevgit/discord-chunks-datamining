@@ -19,7 +19,7 @@ function u(e) {
     type: t
   } = e;
   return (0, r.jsx)(d, {
-    icon: "user" === t ? (0, r.jsx)(o.t, {
+    icon: "user" === t ? (0, r.jsx)(a.t, {
       size: "xxs",
       color: s.Z.colors.INTERACTIVE_NORMAL
     }) : (0, r.jsx)(i.Q, {
@@ -37,7 +37,7 @@ function d(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: c.container,
-    children: [t, (0, r.jsx)(a.x, {
+    children: [t, (0, r.jsx)(o.x, {
       color: "header-primary",
       variant: "text-sm/medium",
       children: n

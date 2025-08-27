@@ -16,7 +16,7 @@ function c(e) {
     message: t,
     channel: n,
     compact: c
-  } = e, u = (0, i.e7)([a.default], () => a.default.getCurrentUser()), d = (0, o.ZP)(t), f = (null == u ? true : u.id) === t.author.id ? l.intl.string(l.t.huMLgY) : l.intl.format(l.t.PVAL4O, {
+  } = e, u = (0, i.e7)([o.default], () => o.default.getCurrentUser()), d = (0, a.ZP)(t), f = (null == u ? true : u.id) === t.author.id ? l.intl.string(l.t.huMLgY) : l.intl.format(l.t.PVAL4O, {
     username: null == d ? true : d.nick
   });
   return (0, r.jsx)(s.Z, {

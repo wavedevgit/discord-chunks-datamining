@@ -7,7 +7,7 @@ require.d(exports, {
 });
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk580309 = require("./580309.js");
@@ -37,9 +37,9 @@ function d(e) {
     type: t,
     variant: n = "default"
   } = e;
-  return (0, r.jsx)(a.Text, {
+  return (0, r.jsx)(o.Text, {
     variant: "eyebrow",
-    className: o()(l.badge, l[n]),
+    className: a()(l.badge, l[n]),
     children: c(t)
   })
 }

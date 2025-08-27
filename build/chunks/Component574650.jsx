@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk843611 = require("./843611.js"),
   Chunk442837 = require("./442837.js"),
   Chunk755721 = require("./755721.js"),
@@ -114,7 +114,7 @@ let A = () => {
       D = Chunk388032.intl.string(Chunk388032.t.G5YKXF), x = Chunk388032.intl.string(Chunk388032.t["r8/DT0"]), L = N
   }
   return (0, Chunk951288.jsxs)("div", {
-    className: o()(...j),
+    className: a()(...j),
     children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
       className: Chunk342891.header,
       variant: "text-sm/normal",

@@ -31,9 +31,9 @@ function g(e) {
   } = e, {
     activeCommandOption: O,
     activeCommandOptionStates: v
-  } = (0, o.cj)([a.Z], () => ({
-    activeCommandOption: a.Z.getActiveOption(t.id),
-    activeCommandOptionStates: a.Z.getOptionStates(t.id)
+  } = (0, a.cj)([o.Z], () => ({
+    activeCommandOption: o.Z.getActiveOption(t.id),
+    activeCommandOptionStates: o.Z.getOptionStates(t.id)
   })), I = (0, c.e)(t), T = (0, d.LN)(t.id);
   return i.useMemo(() => {
     let e = [],
@@ -66,13 +66,13 @@ function E(e) {
     bars: t
   } = e, n = t.stacked.map((e, t) => (0, r.jsx)("div", {
     children: e
-  }, t)), o = t.floating.map((e, t) => (0, r.jsx)(i.Fragment, {
+  }, t)), a = t.floating.map((e, t) => (0, r.jsx)(i.Fragment, {
     children: e
   }, t));
-  return 0 === n.length && 0 === o.length ? null : (0, r.jsxs)(i.Fragment, {
-    children: [o.length > 0 && (0, r.jsx)("div", {
+  return 0 === n.length && 0 === a.length ? null : (0, r.jsxs)(i.Fragment, {
+    children: [a.length > 0 && (0, r.jsx)("div", {
       className: m.floatingBars,
-      children: o
+      children: a
     }), n.length > 0 && (0, r.jsx)("div", {
       className: m.stackedBars,
       children: n

@@ -24,7 +24,7 @@ let u = e => Object.values(e).sort((e, t) => e.order - t.order),
       [s.h.PLANS]: l.intl.string(l.t.wyNMnp),
       [s.h.COMPARE]: l.intl.string(l.t.pwD7IS)
     }, f = u(t);
-    return (0, r.jsx)(o.Z, {
+    return (0, r.jsx)(a.Z, {
       className: c.navBar,
       transparent: true,
       children: (0, r.jsxs)("div", {
@@ -38,21 +38,21 @@ let u = e => Object.values(e).sort((e, t) => e.order - t.order),
             className: c.navBarSectionContent,
             children: f.map(e => {
               let t = n === e.id,
-                o = d[e.id];
+                a = d[e.id];
               return (0, r.jsxs)(i.P3F, {
                 className: c.sectionClickable,
                 onClick: e.scrollToSection,
                 children: [(0, r.jsx)(i.Text, {
                   variant: "text-sm/medium",
                   color: "text-primary",
-                  children: o
+                  children: a
                 }), t && (0, r.jsx)("div", {
                   className: c.sectionUnderline
                 })]
-              }, o)
+              }, a)
             })
           })]
-        }), (0, r.jsx)(a.Z, {
+        }), (0, r.jsx)(o.Z, {
           size: "sm",
           variant: "overlay-secondary"
         })]

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
-  a = require.n(Chunk512722),
+  o = require.n(Chunk512722),
   Chunk399606 = require("./399606.js"),
   Chunk481060 = require("./481060.js"),
   Chunk594174 = require("./594174.js"),
@@ -62,8 +62,8 @@ function O(e, t) {
 function v(e) {
   let {
     user: t
-  } = e, o = (0, u.Z)(), E = (0, d.VM)(), y = (0, s.e7)([c.default], () => c.default.getCurrentUser()), v = i.useCallback(() => {
-    a()(true !== y, "User must be logged in to accept a link request"), (0, l.ZDy)(async () => {
+  } = e, a = (0, u.Z)(), E = (0, d.VM)(), y = (0, s.e7)([c.default], () => c.default.getCurrentUser()), v = i.useCallback(() => {
+    o()(true !== y, "User must be logged in to accept a link request"), (0, l.ZDy)(async () => {
       let {
         default: e
       } = await n.e("59716").then(n.bind(n, 275370));
@@ -73,7 +73,7 @@ function v(e) {
       }))
     })
   }, [y, t]), I = i.useCallback(() => {
-    a()(true !== y, "User must be logged in to decline a link request"), (0, l.ZDy)(async () => {
+    o()(true !== y, "User must be logged in to decline a link request"), (0, l.ZDy)(async () => {
       let {
         default: e
       } = await n.e("958").then(n.bind(n, 4526));
@@ -83,7 +83,7 @@ function v(e) {
       }))
     })
   }, [y, t]), T = i.useCallback(() => {
-    a()(true !== y, "User must be logged in to decline a link request"), (0, l.ZDy)(async () => {
+    o()(true !== y, "User must be logged in to decline a link request"), (0, l.ZDy)(async () => {
       let {
         default: e
       } = await n.e("69015").then(n.bind(n, 247265));
@@ -103,7 +103,7 @@ function v(e) {
       })
     }), (0, r.jsx)("div", {
       className: g.actions,
-      children: o ? (0, r.jsx)(f.Z, {
+      children: a ? (0, r.jsx)(f.Z, {
         icon: l.Dio,
         className: g.__invalid_actionDeny,
         tooltip: m.intl.string(h.default.e5iHmZ),

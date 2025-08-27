@@ -18,7 +18,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk836560 = require("./836560.js"),
   Chunk512722 = require("./512722.js"),
   c = require.n(Chunk512722),
@@ -127,7 +127,7 @@ function eg(e, t) {
   return null != (r = e && (null == (n = t.submit) ? true : n.clearOnSubmit)) && r
 }
 
-function eE(e, t, o, a, s) {
+function eE(e, t, a, o, s) {
   let [l, c] = i.useState(false), u = i.useCallback((i, d, f, _, m) => {
     var g, E, b;
     if (l) return;
@@ -161,24 +161,24 @@ function eE(e, t, o, a, s) {
       let {
         shouldClear: l,
         shouldRefocus: u
-      } = e, d = eg(l, t), f = null != o.current;
-      d && (em(s) ? h.Z.saveDraft(s, "", t.drafts.type) : f && (null == (r = o.current) || r.clearValue(), null == (i = a.current) || i.hide())), f && (c(false), (0, C._Q)(), u && (null == (n = o.current) || n.focus()))
+      } = e, d = eg(l, t), f = null != a.current;
+      d && (em(s) ? h.Z.saveDraft(s, "", t.drafts.type) : f && (null == (r = a.current) || r.clearValue(), null == (i = o.current) || i.hide())), f && (c(false), (0, C._Q)(), u && (null == (n = a.current) || n.focus()))
     })
-  }, [o, a, e, l, t, s]);
+  }, [a, o, e, l, t, s]);
   return {
     submitting: l,
     submit: u,
     handleSubmit: i.useCallback(e => {
       var t;
-      null == o || null == (t = o.current) || t.submit(e)
-    }, [o])
+      null == a || null == (t = a.current) || t.submit(e)
+    }, [a])
   }
 }
 
 function eb(e, t, n) {
   return i.useCallback(r => {
-    var i, o;
-    t === X.Ie.CREATE_FORUM_POST || t === X.Ie.CREATE_ANNOUNCEMENT_POST ? null == (o = n.current) || o.insertGIF(r) : e(r.url, true, true, true), (0, C._Q)(), null == (i = n.current) || i.focus()
+    var i, a;
+    t === X.Ie.CREATE_FORUM_POST || t === X.Ie.CREATE_ANNOUNCEMENT_POST ? null == (a = n.current) || a.insertGIF(r) : e(r.url, true, true, true), (0, C._Q)(), null == (i = n.current) || i.focus()
   }, [n, e, t])
 }
 
@@ -200,37 +200,37 @@ function eO(e) {
     editorRef: t,
     disabled: n,
     textValue: r,
-    channelId: o,
-    chatInputType: a,
+    channelId: a,
+    chatInputType: o,
     submit: s
   } = e, {
     analyticsLocations: l
   } = (0, b.ZP)();
   return i.useCallback((e, i) => {
     var c, u;
-    n || (a === X.Ie.CREATE_ANNOUNCEMENT_POST || (0, M.Hc)(i, r, o, a.drafts.type) ? ((0, $._H)({
+    n || (o === X.Ie.CREATE_ANNOUNCEMENT_POST || (0, M.Hc)(i, r, a, o.drafts.type) ? ((0, $._H)({
       sticker: e,
       stickerSelectLocation: i,
-      isReplacement: null != L.Z.getStickerPreview(o, a.drafts.type),
+      isReplacement: null != L.Z.getStickerPreview(a, o.drafts.type),
       analyticsLocations: l
-    }), (0, j.eu)(o, e, a.drafts.type)) : (s({
+    }), (0, j.eu)(a, e, o.drafts.type)) : (s({
       value: "",
       uploads: true,
       stickers: [e.id]
     }), null == (u = t.current) || u.clearValue()), (0, C._Q)(), null == (c = t.current) || c.focus())
-  }, [n, r, o, t, l, s, a])
+  }, [n, r, a, t, l, s, o])
 }
 
 function ev(e, t) {
   return i.useCallback((n, r, i) => {
-    let o = e.current;
-    null != n && null != o && (Y.default.track(es.rMx.SOUNDMOJI_SELECT, {
+    let a = e.current;
+    null != n && null != a && (Y.default.track(es.rMx.SOUNDMOJI_SELECT, {
       channel_id: t.id,
       guild_id: t.guild_id,
       sound_guild_id: n.guildId,
       sound_id: n.soundId,
       source: r
-    }), o.insertSound(n)), i && (0, C._Q)(), null == o || o.focus()
+    }), a.insertSound(n)), i && (0, C._Q)(), null == a || a.focus()
   }, [e, t.id, t.guild_id])
 }
 
@@ -242,7 +242,7 @@ function eI(e, t) {
       var n;
       !t && (null == (n = e.gifs) ? true : n.allowSending) && (0, C.RO)(ec.X1.GIF, e)
     }, [t, e]),
-    o = i.useCallback(() => {
+    a = i.useCallback(() => {
       var n;
       !t && (null == (n = e.stickers) ? true : n.allowSending) && (0, C.RO)(ec.X1.STICKER, e)
     }, [t, e]);
@@ -254,7 +254,7 @@ function eI(e, t) {
     handler: r
   }), (0, W.yp)({
     event: es.CkL.TOGGLE_STICKER_PICKER,
-    handler: o
+    handler: a
   })
 }
 
@@ -263,12 +263,12 @@ function eT(e, t, n) {
   i.useEffect(() => {
     r.emit("text-changed", t, n)
   }, [t, n, r]);
-  let o = t => {
+  let a = t => {
     null != e.current && r.emit("selection-changed", t)
   };
   return {
     eventEmitter: r,
-    handleEditorSelectionChanged: o
+    handleEditorSelectionChanged: a
   }
 }
 
@@ -307,36 +307,36 @@ function eC(e) {
 
 function eN(e, t, n, r) {
   let i = e.getGuildId(),
-    o = (0, _.e7)([P.Z], () => null != i && P.Z.isLurking(i), [i]),
-    a = (0, _.e7)([G.ZP, H.default], () => {
+    a = (0, _.e7)([P.Z], () => null != i && P.Z.isLurking(i), [i]),
+    o = (0, _.e7)([G.ZP, H.default], () => {
       var e, t;
       let n = H.default.getCurrentUser();
       return null != (t = null != i && null != n ? null == (e = G.ZP.getMember(i, n.id)) ? true : e.isPending : null) && t
     }),
     s = (0, _.cj)([B.Z], () => {
-      var i, o;
+      var i, a;
       let s = e.isPrivate(),
         l = B.Z.computePermissions(e),
         c = f.e$(l, es.Plq.CREATE_PUBLIC_THREADS) || f.e$(l, es.Plq.CREATE_PRIVATE_THREADS),
-        u = (!(null == (i = t.permissions) ? true : i.requireCreateTherads) || c) && (!(null == (o = t.permissions) ? true : o.requireSendMessages) || f.e$(l, es.Plq.SEND_MESSAGES)),
+        u = (!(null == (i = t.permissions) ? true : i.requireCreateTherads) || c) && (!(null == (a = t.permissions) ? true : a.requireSendMessages) || f.e$(l, es.Plq.SEND_MESSAGES)),
         d = u && f.e$(l, es.Plq.ATTACH_FILES),
         _ = null != n,
         p = (0, k.xl)(e);
       return {
-        disabled: r || a || !s && !u || p,
-        canAttachFiles: true === t.attachments && (s || a || d || _),
+        disabled: r || o || !s && !u || p,
+        canAttachFiles: true === t.attachments && (s || o || d || _),
         canCreateThreads: c,
         canEveryoneSendMessages: K.Uu(es.Plq.SEND_MESSAGES, e)
       }
-    }, [e, t.permissions.requireCreateTherads, t.permissions.requireSendMessages, t.attachments, n, r, a]);
+    }, [e, t.permissions.requireCreateTherads, t.permissions.requireSendMessages, t.attachments, n, r, o]);
   return ef({
-    isLurking: o,
-    isPendingMember: a
+    isLurking: a,
+    isPendingMember: o
   }, s)
 }
 
 function eR(e, t, n) {
-  let [r, o] = (0, C.Iu)(e => [e.activeView, e.activeViewType], u.X), a = (0, _.e7)([O.Z], () => O.Z.shouldShowPopup() && O.Z.activeViewType() === e);
+  let [r, a] = (0, C.Iu)(e => [e.activeView, e.activeViewType], u.X), o = (0, _.e7)([O.Z], () => O.Z.shouldShowPopup() && O.Z.activeViewType() === e);
   i.useEffect(() => () => {
     (0, C._Q)(e)
   }, [e]);
@@ -345,9 +345,9 @@ function eR(e, t, n) {
     }, [t]),
     l = i.useCallback(() => {
       var e;
-      null != r || a || null == (e = n.current) || e.handleOuterClick()
-    }, [r, a, n]),
-    c = null == r || null == o || o !== e;
+      null != r || o || null == (e = n.current) || e.handleOuterClick()
+    }, [r, o, n]),
+    c = null == r || null == a || a !== e;
   return {
     expressionPickerView: r,
     shouldHideExpressionPicker: c,
@@ -368,25 +368,25 @@ function eP(e, t, n) {
       return !!(!n && (null == (r = t.current) ? true : r.onTabOrEnter(true))) || (null == (i = e.current) ? true : i.onTabOrEnter(true)) || false
     }, [n, t, e]),
     handleMoveSelection: i.useCallback(r => {
-      var i, o;
-      return !!(!n && (null == (i = t.current) ? true : i.onMoveSelection(r))) || (null == (o = e.current) ? true : o.onMoveSelection(r)) || false
+      var i, a;
+      return !!(!n && (null == (i = t.current) ? true : i.onMoveSelection(r))) || (null == (a = e.current) ? true : a.onMoveSelection(r)) || false
     }, [n, t, e])
   }
 }
 
 function ew(e, t) {
-  let [n, r] = i.useState(null), o = i.useCallback(() => {
+  let [n, r] = i.useState(null), a = i.useCallback(() => {
     var e, n;
-    let i, o = null == (e = t.current) ? true : e.getSlateEditor();
-    null != o && (i = null == (n = eo.bN.getSelectedParentOfType(o, S.un)) ? true : n[0].type), r(null != i ? i : null)
+    let i, a = null == (e = t.current) ? true : e.getSlateEditor();
+    null != a && (i = null == (n = ea.bN.getSelectedParentOfType(a, S.un)) ? true : n[0].type), r(null != i ? i : null)
   }, [t]);
-  return i.useEffect(() => (e.on("selection-changed", o), o(), () => {
-    e.off("selection-changed", o)
-  }), [o, e]), n
+  return i.useEffect(() => (e.on("selection-changed", a), a(), () => {
+    e.off("selection-changed", a)
+  }), [a, e]), n
 }
 
 function eD(e, t) {
-  var n, o, s, l, u;
+  var n, a, s, l, u;
   let {
     textValue: f,
     richValue: h,
@@ -409,7 +409,7 @@ function eD(e, t) {
     onChange: W,
     onResize: K,
     onBlur: $,
-    onFocus: eo,
+    onFocus: ea,
     onKeyDown: ec,
     onSubmit: ed,
     promptToUpload: ef,
@@ -466,13 +466,13 @@ function eD(e, t) {
     fontSize: g.Z.fontSize
   })), tr = (0, _.e7)([F.Z], () => F.Z.isEnabled()), ti = i.useRef(f);
   ti.current = f;
-  let to = i.useCallback((e, t, n) => {
+  let ta = i.useCallback((e, t, n) => {
     var r;
     t === el.GI && "" === ti.current && (null == (r = k.commands) ? true : r.enabled) && (null == eV || eV()), null == W || W(e, t, n)
-  }, [W, eV, null == (o = k.commands) ? true : o.enabled]);
+  }, [W, eV, null == (a = k.commands) ? true : a.enabled]);
   eI(k, e4);
   let {
-    eventEmitter: ta,
+    eventEmitter: to,
     handleEditorSelectionChanged: ts
   } = eT(ez, f, h), {
     submitting: tl,
@@ -504,8 +504,8 @@ function eD(e, t) {
     shouldHideExpressionPicker: tS,
     handleAutocompleteVisibilityChange: tA,
     handleOuterClick: tC
-  } = eR(k, ta, ez), tN = ew(ta, ez);
-  (0, q.S)(ta, M.guild_id, M.id);
+  } = eR(k, to, ez), tN = ew(to, ez);
+  (0, q.S)(to, M.guild_id, M.id);
   let tR = null != Y,
     tP = e4 && !((e2 || e3) && e5) || tl && (null == (s = k.submit) ? true : s.useDisabledStylesOnSubmit),
     tw = null;
@@ -540,10 +540,10 @@ function eD(e, t) {
       showRemainingCharsAfterCount: eD
     }) : null;
   return (0, r.jsx)(A.f6, {
-    value: ta,
+    value: to,
     children: (0, r.jsxs)(b.Gt, {
       value: eY,
-      children: [tx && e7 ? (0, r.jsx)(ea.Z, {
+      children: [tx && e7 ? (0, r.jsx)(eo.Z, {
         editorRef: ez,
         options: k.markdown,
         channel: M
@@ -554,7 +554,7 @@ function eD(e, t) {
         options: k.markdown
       }) : null, (0, r.jsxs)("div", {
         ref: eW,
-        className: a()(O, {
+        className: o()(O, {
           [eu.channelTextArea]: true,
           [eu.channelTextAreaDisabled]: tP,
           [eu.highlighted]: e_,
@@ -568,7 +568,7 @@ function eD(e, t) {
         }), (0, r.jsxs)("div", {
           ref: eq,
           onScroll: tE,
-          className: a()(S, {
+          className: o()(S, {
             [eu.scrollableContainer]: true,
             [eu.themedBackground]: !eB,
             [eu.hasStackedBar]: tL.stacked.length > 0
@@ -581,7 +581,7 @@ function eD(e, t) {
             type: k,
             canAttachFiles: e8
           }), (0, r.jsxs)("div", {
-            className: a()(eu.inner, {
+            className: o()(eu.inner, {
               [eu.innerDisabled]: tP,
               [eu.sansAttachButton]: k !== X.Ie.EDIT && (null != tw || tP && null == tw || e2),
               [eu.sansAttachButtonCreateThread]: k === X.Ie.THREAD_CREATION,
@@ -611,10 +611,10 @@ function eD(e, t) {
                 maxCharacterCount: null != eg ? eg : tt,
                 allowNewLines: ex,
                 "aria-describedby": ej,
-                onChange: to,
+                onChange: ta,
                 onResize: ty,
                 onBlur: $,
-                onFocus: eo,
+                onFocus: ea,
                 onKeyDown: ec,
                 onSubmit: tc,
                 onTab: tO,
@@ -627,7 +627,7 @@ function eD(e, t) {
                 fontSize: tn,
                 spellcheckEnabled: tr,
                 canOnlyUseTextCommands: tR,
-                className: a()({
+                className: o()({
                   [eu.textAreaThreadCreation]: k === X.Ie.THREAD_CREATION,
                   [eu.profileBioInput]: k === X.Ie.PROFILE_BIO_INPUT,
                   [eu.overlayInlineReply]: k === X.Ie.OVERLAY_INLINE_REPLY
@@ -661,7 +661,7 @@ function eD(e, t) {
           editorScrollerRef: eq,
           editorHeight: tb,
           barsHeight: 40 * tL.floating.length,
-          setValue: (e, t) => null == to ? true : to(null, e, t),
+          setValue: (e, t) => null == ta ? true : ta(null, e, t),
           position: eU
         }), (0, r.jsx)(D.Z, {
           textValue: f,

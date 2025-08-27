@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
-  a = require.n(Chunk512722),
+  o = require.n(Chunk512722),
   Chunk278074 = require("./278074.js"),
   Chunk754700 = require("./754700.js"),
   Chunk887003 = require("./887003.js"),
@@ -240,12 +240,12 @@ let X = "1193992107035983872",
   };
 
 function J() {
-  var e, t, o, s, u, d, L;
+  var e, t, a, s, u, d, L;
   let [M, F] = Chunk647438.useState(Q), X = Chunk647438.useCallback(e => {
     F(k(j({}, e), {
       preview: true
     }))
-  }, []), [J, $] = Chunk647438.useState(Chunk899457.a.UNENROLLED), [ee, et] = Chunk647438.useState(false), [en, er] = Chunk647438.useState(false), [ei, eo] = Chunk647438.useState(null), ea = "123", es = V(M.config);
+  }, []), [J, $] = Chunk647438.useState(Chunk899457.a.UNENROLLED), [ee, et] = Chunk647438.useState(false), [en, er] = Chunk647438.useState(false), [ei, ea] = Chunk647438.useState(null), eo = "123", es = V(M.config);
 
   function el(e) {
     switch ($(e), e) {
@@ -422,7 +422,7 @@ function J() {
   }
 
   function eE(e) {
-    eo(e), null != e && ($(q(e)), X(e))
+    ea(e), null != e && ($(q(e)), X(e))
   }
 
   function eb() {
@@ -448,7 +448,7 @@ function J() {
       return U * Chunk70956.Z.Seconds.MINUTE
     }, [M.config.taskConfigV2.tasks]),
     ev = Chunk647438.useMemo(() => Chunk754700.X.WATCH_VIDEO in M.config.taskConfigV2.tasks, [M.config.taskConfigV2.tasks]);
-  a()(false !== M.preview && null != M.preview, "Preview config must have property preview: true");
+  o()(false !== M.preview && null != M.preview, "Preview config must have property preview: true");
   let eI = M.config.taskConfigV2.tasks[Chunk754700.X.WATCH_VIDEO];
   return (0, Chunk951288.jsxs)("div", {
     children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
@@ -583,7 +583,7 @@ function J() {
           assetKey: "questHomeVideo",
           onFileChange: ed,
           filters: Z,
-          initialValue: null == (o = M.config.videoMetadata) ? true : Chunk512722.assets.questHomeVideo
+          initialValue: null == (a = M.config.videoMetadata) ? true : Chunk512722.assets.questHomeVideo
         })]
       })]
     }), es.map((e, t) => (0, r.jsxs)("div", {
@@ -712,7 +712,7 @@ function J() {
             children: (0, Chunk951288.jsx)("div", {
               className: Chunk301188.questChannelCallHeaderPreview,
               children: (0, Chunk951288.jsx)(Chunk134483.Z, {
-                channelId: ea,
+                channelId: eo,
                 previewQuest: M,
                 isParticipatingOverride: ee
               })

@@ -21,26 +21,26 @@ function c(e) {
   }
 }
 async function u(e) {
-  a.Z.dispatch({
+  o.Z.dispatch({
     type: "USER_NOTE_LOAD_START",
     userId: e
   });
   try {
     let {
       body: t
-    } = await o.tn.get({
+    } = await a.tn.get({
       url: l.ANM.NOTE(e),
       oldFormErrors: true,
       rejectWithError: true
     });
     if (t.note_user_id !== e) throw Error("Invalid response from server");
-    a.Z.dispatch({
+    o.Z.dispatch({
       type: "USER_NOTE_UPDATE",
       id: e,
       note: t.note
     })
   } catch (t) {
-    a.Z.dispatch({
+    o.Z.dispatch({
       type: "USER_NOTE_UPDATE",
       id: e
     })

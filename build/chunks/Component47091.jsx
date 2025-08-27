@@ -55,12 +55,12 @@ function p(e, t) {
 function h(e) {
   let {
     user: t
-  } = e, d = (0, a.ML)(t.id), _ = l.ZP.useName(t), h = i.useCallback(e => {
+  } = e, d = (0, o.ML)(t.id), _ = l.ZP.useName(t), h = i.useCallback(e => {
     let {
       id: i,
-      name: a
+      name: o
     } = e;
-    (0, o.ZDy)(async () => {
+    (0, a.ZDy)(async () => {
       let {
         ConfirmModal: e
       } = await Promise.resolve().then(n.bind(n, 481060));
@@ -76,11 +76,11 @@ function h(e) {
           location: "Context Menu"
         })
       }, n), {
-        children: (0, r.jsx)(o.Text, {
+        children: (0, r.jsx)(a.Text, {
           variant: "text-md/normal",
           children: u.intl.format(u.t.dsU5bm, {
             name: _,
-            gameName: a
+            gameName: o
           })
         })
       }))

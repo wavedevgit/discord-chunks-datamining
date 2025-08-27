@@ -23,7 +23,7 @@ let c = null;
 function u(e) {
   let {
     enabled: t
-  } = a.Z.getCurrentConfig({
+  } = o.Z.getCurrentConfig({
     location: "MessageRemindersNotificationManager"
   }, {
     autoTrackExposure: false

@@ -13,7 +13,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk686546 = require("./686546.jsx"),
@@ -38,13 +38,13 @@ function E(e) {
     children: t,
     selected: n,
     className: i,
-    usesCardRows: a = false,
+    usesCardRows: o = false,
     isAutoHeight: s = false
   } = e;
   return (0, r.jsx)("div", {
-    className: o()(m.container, m.openOnHover, {
+    className: a()(m.container, m.openOnHover, {
       [m.selected]: n,
-      [m.usesCardRows]: a,
+      [m.usesCardRows]: o,
       [m.isAutoHeight]: s
     }, i),
     children: t
@@ -69,22 +69,22 @@ function y(e) {
   } = e;
   return (0, r.jsx)("div", {
     className: m.facePile,
-    children: t.map((e, o) => {
-      let a = (0, r.jsx)(s.qEK, {
+    children: t.map((e, a) => {
+      let o = (0, r.jsx)(s.qEK, {
         src: e.getAvatarURL(n, 80),
         size: s.EFr.SIZE_16,
         "aria-label": i ? true : e.username,
         "aria-hidden": i
       });
-      return o === t.length - 1 ? (0, r.jsx)("div", {
+      return a === t.length - 1 ? (0, r.jsx)("div", {
         className: m.facePileItem,
-        children: a
+        children: o
       }, e.id) : (0, r.jsx)(l.ZP, {
         width: 16,
         height: 16,
         className: m.facePileItem,
         mask: l.ZP.Masks.CONTENT_INVENTORY_CARD_FACE_PILE_AVATAR,
-        children: a
+        children: o
       }, e.id)
     })
   })
@@ -95,14 +95,14 @@ function O(e) {
   let {
     guildId: n,
     channelId: i,
-    entry: o,
+    entry: a,
     maxAvatars: l = 3
-  } = e, g = o.author_id, E = (0, a.e7)([f.default], () => f.default.getUser(g)), {
+  } = e, g = a.author_id, E = (0, o.e7)([f.default], () => f.default.getUser(g)), {
     displayParticipants: b,
     participant1: O,
     participant2: v,
     numOtherParticipants: I
-  } = (0, p.Z)(o, l), T = (0, a.e7)([u.ZP], () => u.ZP.getMember(n, g)), S = (0, a.e7)([d.Z], () => {
+  } = (0, p.Z)(a, l), T = (0, o.e7)([u.ZP], () => u.ZP.getMember(n, g)), S = (0, o.e7)([d.Z], () => {
     var e;
     return (null == T ? true : T.colorRoleId) != null ? null == (e = d.Z.getRole(n, T.colorRoleId)) ? true : e.name : true
   }, [n, T]), A = (0, c.X7)(n, g, null != (t = null == T ? true : T.colorStrings) ? t : null);
@@ -169,7 +169,7 @@ function I(e) {
     className: n
   } = e;
   return (0, r.jsx)("div", {
-    className: o()(m.cardRow, n),
+    className: a()(m.cardRow, n),
     children: t
   })
 }

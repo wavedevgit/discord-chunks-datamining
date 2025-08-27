@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk318374 = require("./318374.jsx"),
   Chunk5192 = require("./5192.js"),
@@ -61,7 +61,7 @@ function y(e) {
   let {
     entry: t,
     channel: n,
-    className: o
+    className: a
   } = e, m = i.useRef(null), E = i.useRef(null), {
     displayParticipants: y,
     participant1: O,
@@ -70,7 +70,7 @@ function y(e) {
     orderedParticipants: T
   } = (0, u.Z)(t), S = [O, v];
   return (0, r.jsxs)("div", {
-    className: a()(h.container, o),
+    className: o()(h.container, a),
     children: [y.length > 0 ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(_.Z, {
         targetElementRef: m,
@@ -95,7 +95,7 @@ function y(e) {
     }) : null, (0, r.jsx)(s.X6q, {
       variant: "text-sm/semibold",
       color: "text-secondary",
-      className: a()(h.truncatedText, h.usersHeader),
+      className: o()(h.truncatedText, h.usersHeader),
       scaleFontToUserSetting: true,
       children: p.intl.format(p.t.rH95Gh, {
         user0: c.ZP.getName(n.guild_id, n.id, S[0]),

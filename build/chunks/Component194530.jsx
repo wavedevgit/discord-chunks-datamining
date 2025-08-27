@@ -23,7 +23,7 @@ function _(e) {
     onClose: g,
     requirementsUpdated: E,
     noSkip: b = false
-  } = e, [y, O] = i.useState(""), [v, I] = i.useState(""), [T, S] = i.useState(""), [A, C] = i.useState(null), [N, R] = i.useState(null), P = (0, o.e7)([l.Z], () => l.Z.getErrors()), w = (0, o.e7)([l.Z], () => l.Z.getFormState()), D = i.useRef(null);
+  } = e, [y, O] = i.useState(""), [v, I] = i.useState(""), [T, S] = i.useState(""), [A, C] = i.useState(null), [N, R] = i.useState(null), P = (0, a.e7)([l.Z], () => l.Z.getErrors()), w = (0, a.e7)([l.Z], () => l.Z.getFormState()), D = i.useRef(null);
   async function x(e) {
     e.preventDefault(), (0, s.b9)();
     let t = false;
@@ -39,39 +39,39 @@ function _(e) {
     }
   }
   return i.useEffect(() => {
-    if (h === a.Dvm.ENTERED) {
+    if (h === o.Dvm.ENTERED) {
       var e;
       null == (e = D.current) || e.focus()
     }
-  }, [h]), (0, r.jsxs)(a.Y0X, {
+  }, [h]), (0, r.jsxs)(o.Y0X, {
     transitionState: h,
     parentComponent: "ChangePasswordModal",
-    children: [(0, r.jsxs)(a.xBx, {
+    children: [(0, r.jsxs)(o.xBx, {
       separator: false,
       className: f.header,
-      children: [(0, r.jsx)(a.X6q, {
+      children: [(0, r.jsx)(o.X6q, {
         color: "header-primary",
         variant: "heading-xl/bold",
         className: f.title,
         children: d.intl.string(d.t["geta7+"])
-      }), (0, r.jsx)(a.Text, {
+      }), (0, r.jsx)(o.Text, {
         color: "header-secondary",
         variant: "text-md/normal",
         className: f.subtitle,
         children: E ? d.intl.string(d.t["37iHbW"]) : d.intl.string(d.t.iOurYm)
-      }), true !== b && (0, r.jsx)(a.olH, {
+      }), true !== b && (0, r.jsx)(o.olH, {
         onClick: g,
         className: f.modalCloseButton
       })]
     }), (0, r.jsxs)("form", {
       onSubmit: x,
-      children: [(0, r.jsxs)(a.hzk, {
+      children: [(0, r.jsxs)(o.hzk, {
         className: f.content,
-        children: [(0, r.jsx)(a.xJW, {
+        children: [(0, r.jsx)(o.xJW, {
           title: d.intl.string(d.t.WBqMRU),
           error: null == P || null == (t = P.password) ? true : t[0],
           required: true,
-          children: (0, r.jsx)(a.oil, {
+          children: (0, r.jsx)(o.oil, {
             type: "password",
             value: y,
             onChange: O,
@@ -79,24 +79,24 @@ function _(e) {
             autoComplete: "current-password",
             required: true
           })
-        }), (0, r.jsx)(a.xJW, {
+        }), (0, r.jsx)(o.xJW, {
           className: f.newPassword,
           title: d.intl.string(d.t["8dM4FB"]),
           error: null != (p = null != (_ = null == P || null == (n = P.new_password) ? true : n[0]) ? _ : A) ? p : true,
           required: true,
-          children: (0, r.jsx)(a.oil, {
+          children: (0, r.jsx)(o.oil, {
             type: "password",
             value: v,
             onChange: I,
             autoComplete: "new-password",
             required: true
           })
-        }), (0, r.jsx)(a.xJW, {
+        }), (0, r.jsx)(o.xJW, {
           className: f.newPassword,
           title: d.intl.string(d.t.iQG2KC),
           error: null != N ? N : true,
           required: true,
-          children: (0, r.jsx)(a.oil, {
+          children: (0, r.jsx)(o.oil, {
             type: "password",
             value: T,
             onChange: S,
@@ -104,8 +104,8 @@ function _(e) {
             required: true
           })
         })]
-      }), (0, r.jsxs)(a.mzw, {
-        children: [(0, r.jsx)(a.zxk, {
+      }), (0, r.jsxs)(o.mzw, {
+        children: [(0, r.jsx)(o.zxk, {
           variant: "primary",
           text: d.intl.string(d.t.i4jeWV),
           type: "submit",
@@ -113,7 +113,7 @@ function _(e) {
         }), true !== b && (0, r.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
           className: f.cancel,
-          children: (0, r.jsx)(a.zxk, {
+          children: (0, r.jsx)(o.zxk, {
             variant: "secondary",
             text: d.intl.string(d.t["ETE/oK"]),
             onClick: g

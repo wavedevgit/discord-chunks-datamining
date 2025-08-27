@@ -32,7 +32,7 @@ function b(e) {
       dismissAction: e
     })
   }, v = () => {
-    a.Z.open(p.oAB.NOTIFICATIONS, null, {
+    o.Z.open(p.oAB.NOTIFICATIONS, null, {
       analyticsLocations: y
     }), O(h.L.SECONDARY)
   };
@@ -52,16 +52,16 @@ function b(e) {
       }), (0, r.jsxs)("div", {
         className: g.content,
         children: [(0, r.jsxs)("div", {
-          children: [(0, r.jsx)(o.X6q, {
+          children: [(0, r.jsx)(a.X6q, {
             variant: "heading-md/bold",
             color: true,
             className: g.specialText,
             children: m.intl.string(m.t.zUhr3N)
-          }), (0, r.jsx)(o.Text, {
+          }), (0, r.jsx)(a.Text, {
             variant: "text-xs/normal",
             color: "always-white",
             children: m.intl.format(m.t.Xw2XUV, {
-              settingsHook: (e, t) => (0, r.jsx)(o.P3F, {
+              settingsHook: (e, t) => (0, r.jsx)(a.P3F, {
                 tag: "span",
                 className: g.specialTextLink,
                 onClick: v,
@@ -69,10 +69,10 @@ function b(e) {
               }, t)
             })
           })]
-        }), (0, r.jsx)(o.P3F, {
+        }), (0, r.jsx)(a.P3F, {
           className: g.closeClickable,
           onClick: () => O(h.L.USER_DISMISS),
-          children: (0, r.jsx)(o.Dio, {
+          children: (0, r.jsx)(a.Dio, {
             color: "currentColor",
             size: "xs"
           })

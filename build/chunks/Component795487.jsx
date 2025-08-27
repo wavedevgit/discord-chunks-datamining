@@ -19,7 +19,7 @@ let p = function(e) {
   let t = i.useRef(null),
     {
       stripeType: n,
-      flipped: a,
+      flipped: o,
       updateCompleted: p,
       onFocus: h,
       onBlur: m
@@ -29,23 +29,23 @@ let p = function(e) {
     [O, v] = i.useState(false),
     [I, T] = i.useState(null),
     [S, A] = i.useState({}),
-    C = (0, o.useElements)(),
+    C = (0, a.useElements)(),
     N = i.useCallback(() => {
       if (null != C) switch (n) {
         case "cardNumber": {
-          let e = C.getElement(o.CardNumberElement);
+          let e = C.getElement(a.CardNumberElement);
           if (null == e) return;
           e.off("change"), e.off("focus"), e.off("blur");
           break
         }
         case "cardExpiry": {
-          let e = C.getElement(o.CardExpiryElement);
+          let e = C.getElement(a.CardExpiryElement);
           if (null == e) return;
           e.off("change"), e.off("focus"), e.off("blur");
           break
         }
         case "cardCvc": {
-          let e = C.getElement(o.CardCvcElement);
+          let e = C.getElement(a.CardCvcElement);
           if (null == e) return;
           e.off("change"), e.off("focus"), e.off("blur")
         }
@@ -63,7 +63,7 @@ let p = function(e) {
     D = i.useCallback(() => {
       if (null != C) switch (n) {
         case "cardNumber": {
-          let e = C.getElement(o.CardNumberElement);
+          let e = C.getElement(a.CardNumberElement);
           if (null == e) return;
           e.on("change", e => {
             g !== e.brand && E(e.brand), e.empty && O ? T(d.intl.string(d.t.eOIfu7)) : null != e.error ? T(d.intl.string(d.t.x4pWtL)) : T(null), R(e)
@@ -71,7 +71,7 @@ let p = function(e) {
           break
         }
         case "cardExpiry": {
-          let e = C.getElement(o.CardExpiryElement);
+          let e = C.getElement(a.CardExpiryElement);
           if (null == e) return;
           e.on("change", e => {
             null != e.error || e.empty && O ? T(d.intl.string(d.t["9/zZdn"])) : T(null), R(e)
@@ -79,7 +79,7 @@ let p = function(e) {
           break
         }
         case "cardCvc": {
-          let e = C.getElement(o.CardCvcElement);
+          let e = C.getElement(a.CardCvcElement);
           if (null == e) return;
           e.on("change", e => {
             null != e.error || e.empty && O ? T(d.intl.string(d.t.ro4isb)) : T(null), R(e)
@@ -108,8 +108,8 @@ let p = function(e) {
           children: [(0, r.jsx)(u.ZP, {
             className: f.cardIcon,
             type: g,
-            flipped: a
-          }), (0, r.jsx)(o.CardNumberElement, {
+            flipped: o
+          }), (0, r.jsx)(a.CardNumberElement, {
             options: {
               style: S,
               placeholder: d.intl.string(d.t.gPRHf3),
@@ -119,7 +119,7 @@ let p = function(e) {
           })]
         });
       case "cardExpiry":
-        return (0, r.jsx)(o.CardExpiryElement, {
+        return (0, r.jsx)(a.CardExpiryElement, {
           options: {
             style: S,
             placeholder: d.intl.string(d.t.xeEWQ0)
@@ -127,7 +127,7 @@ let p = function(e) {
           className: j()
         });
       case "cardCvc":
-        return (0, r.jsx)(o.CardCvcElement, {
+        return (0, r.jsx)(a.CardCvcElement, {
           options: {
             style: S,
             placeholder: d.intl.string(d.t.wZz04O)

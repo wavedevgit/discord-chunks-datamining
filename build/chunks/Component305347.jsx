@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk686546 = require("./686546.jsx"),
   Chunk451478 = require("./451478.js"),
@@ -21,15 +21,15 @@ function f(e) {
     guildName: t,
     iconSize: n,
     className: i
-  } = e, a = (0, u.Zg)(t);
+  } = e, o = (0, u.Zg)(t);
   return (0, r.jsx)(s.ZP, {
     mask: s.ZP.Masks.CLAN_ICON,
     width: n,
     height: n,
     className: i,
     children: (0, r.jsx)("div", {
-      className: o()(d.guildIconImage, d.acronym),
-      children: a
+      className: a()(d.guildIconImage, d.acronym),
+      children: o
     })
   })
 }
@@ -43,7 +43,7 @@ function _(e) {
     className: _,
     acronymClassName: p,
     animate: h
-  } = e, m = (0, a.e7)([l.Z], () => l.Z.isFocused()), g = (0, c.pU)(i) ? i : c.ZP.getGuildIconURL({
+  } = e, m = (0, o.e7)([l.Z], () => l.Z.isFocused()), g = (0, c.pU)(i) ? i : c.ZP.getGuildIconURL({
     id: t,
     icon: i,
     size: f,
@@ -57,7 +57,7 @@ function _(e) {
       height: f,
       className: _,
       children: (0, r.jsx)("div", {
-        className: o()(d.guildIconImage, d.acronym, p),
+        className: a()(d.guildIconImage, d.acronym, p),
         children: e
       })
     })

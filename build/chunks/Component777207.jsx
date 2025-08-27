@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk696689 = require("./696689.js"),
   l = require.n(Chunk696689),
   Chunk692547 = require("./692547.js"),
@@ -57,8 +57,8 @@ function m(e, t) {
   if (null == e) return {};
   var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -66,15 +66,15 @@ function m(e, t) {
 function g(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let E = Object.fromEntries(Object.keys(Chunk692547.Z.colors).map(e => [l()(e), e])),
   b = Chunk647438.forwardRef(function(e, t) {
     let n;
     var i, {
-        variant: o,
+        variant: a,
         tag: s = "div",
         selectable: l = false,
         className: f,
@@ -108,14 +108,14 @@ let E = Object.fromEntries(Object.keys(Chunk692547.Z.colors).map(e => [l()(e), e
     }, T, O.style);
     return (0, r.jsx)(v, h(_({
       ref: t,
-      className: a()({
+      className: o()({
         [u.defaultColor]: true === g,
         [u.selectable]: l,
         [u.tabularNumbers]: b,
         [d.fontScaling]: y
-      }, I, d[o], f)
+      }, I, d[a], f)
     }, O), {
       style: Object.values(S).filter(Boolean).length > 0 ? S : true,
-      "data-text-variant": o
+      "data-text-variant": a
     }))
   })

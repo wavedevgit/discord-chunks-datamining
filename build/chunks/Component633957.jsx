@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk846519 = require("./846519.js"),
   Chunk481060 = require("./481060.js"),
@@ -42,7 +42,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk853392 = require("./853392.js");
 
 function G(e) {
-  var t, n, o, l;
+  var t, n, a, l;
   let d, {
       application: I,
       channelId: w,
@@ -114,7 +114,7 @@ function G(e) {
         analyticsLocations: G,
         componentId: en
       })
-    }, eo = et.disabled ? k.intl.string(k.t.JBnc7O) : k.intl.string(k.t.cX9uLS), ea = (0, v.G)(J, () => {
+    }, ea = et.disabled ? k.intl.string(k.t.JBnc7O) : k.intl.string(k.t.cX9uLS), eo = (0, v.G)(J, () => {
       R.default.track(j.rMx.ACTIVITY_INSTANCE_EMBED_CLICKED, {
         application_id: I.id,
         channel_id: w,
@@ -126,7 +126,7 @@ function G(e) {
       icon: I.icon,
       bot: I.bot
     });
-  et.disabled && (d = null != (o = et.tooltip) ? o : et.text);
+  et.disabled && (d = null != (a = et.tooltip) ? a : et.text);
   let el = q.length,
     ec = null != (l = null == X || null == (n = X.timestamps) ? true : n.start) ? l : null == X ? true : X.created_at,
     eu = (0, y.r)(X),
@@ -146,7 +146,7 @@ function G(e) {
       children: ee ? (0, r.jsx)(c.Text, {
         variant: "text-xs/medium",
         color: "none",
-        children: eo
+        children: ea
       }) : (0, r.jsxs)(r.Fragment, {
         children: [null != Q && (0, r.jsxs)("div", {
           className: U.activityPresenceDetailsContainer,
@@ -166,7 +166,7 @@ function G(e) {
               })
             })]
           }), (0, r.jsxs)("div", {
-            className: a()(U.activityPresenceDetailsItemContainer, U.truncatesText),
+            className: o()(U.activityPresenceDetailsItemContainer, U.truncatesText),
             children: [(0, r.jsx)("div", {
               children: (0, r.jsx)(c.hH0, {
                 size: "xxs",
@@ -187,7 +187,7 @@ function G(e) {
       })
     }),
     actions: ed,
-    onClickContent: ea,
+    onClickContent: eo,
     trackingConfig: {
       id: I.id,
       linkType: O.Un.ACTIVITY_INSTANCE
@@ -197,7 +197,7 @@ function G(e) {
 let B = Chunk647438.memo(e => {
   let {
     start: t
-  } = e, [n, r] = i.useState(0), o = (0, x.n)(), a = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), c = false === o || a;
+  } = e, [n, r] = i.useState(0), a = (0, x.n)(), o = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), c = false === a || o;
   return i.useEffect(() => {
     let e = new l.Xp;
     return e.start(c ? 15 * w.Z.Millis.SECOND : w.Z.Millis.SECOND, () => {

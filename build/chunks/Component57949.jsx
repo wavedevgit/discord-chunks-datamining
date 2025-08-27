@@ -60,7 +60,7 @@ function p(e) {
   } = e, p = false, h = (0, i.Z)(), m = t.id, g = () => {
     p = true
   };
-  (0, o.ZDy)(async () => {
+  (0, a.ZDy)(async () => {
     let {
       default: e
     } = await n.e("88806").then(n.bind(n, 578780));
@@ -83,7 +83,7 @@ function p(e) {
         is_gift: false,
         sku_id: m,
         location_stack: Array.isArray(f) ? f : [f]
-      }), (0, a.fw)(), (0, s.p)()
+      }), (0, o.fw)(), (0, s.p)()
     },
     onCloseRequest: c.dG4
   })

@@ -2,12 +2,12 @@
 /** chunk id: 732728, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => a
+  Z: () => o
 });
 var Chunk951288 = require("./951288.js"),
   Chunk761006 = require("./761006.jsx"),
   Chunk314042 = require("./314042.js");
-let a = e => {
+let o = e => {
   let {
     isMotionReduced: t,
     containerVisibilityPercentage: n
@@ -15,10 +15,10 @@ let a = e => {
   return (0, r.jsx)(i.Z, {
     isMotionReduced: t,
     containerVisibilityPercentage: n,
-    hammerContainerClassName: o.hammerContainer,
-    keyContainerClassName: o.keyContainer,
-    hammerAssetClassName: o.hammerTrinket,
-    keyAssetClassName: o.keyTrinket,
+    hammerContainerClassName: a.hammerContainer,
+    keyContainerClassName: a.keyContainer,
+    hammerAssetClassName: a.hammerTrinket,
+    keyAssetClassName: a.keyTrinket,
     animationSpeedScale: 2
   })
 }

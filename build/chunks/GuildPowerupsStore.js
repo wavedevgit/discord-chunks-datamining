@@ -73,11 +73,11 @@ function g(e) {
 
 function E(e) {
   var t, n;
-  let r = a.Z.getGuild(e),
+  let r = o.Z.getGuild(e),
     i = (null == r ? true : r.features.has(l.oNc.PREMIUM_TIER_3_OVERRIDE)) === true ? 0 : l.oCV[null != (t = null == r ? true : r.premiumTier) ? t : l.Eu4.NONE];
   for (let [e, t] of Object.entries(s.Hk)) {
-    let o = e;
-    (null == r || null == (n = r.premiumFeatures) ? true : n.features.includes(o)) && (null == t.includedInLevel || r.premiumTier < t.includedInLevel) && (i += t.boostPrice)
+    let a = e;
+    (null == r || null == (n = r.premiumFeatures) ? true : n.features.includes(a)) && (null == t.includedInLevel || r.premiumTier < t.includedInLevel) && (i += t.boostPrice)
   }
   return i
 }
@@ -182,11 +182,11 @@ c(A, "displayName", "GuildPowerupsStore"), c(A, "persistKey", "GuildPowerupsStor
   return null != n && "object" == typeof n
 }).map(e => {
   var t, n, r;
-  let [i, o] = e, a = o;
-  return [i, f(u({}, a), {
-    allPowerups: null != (t = a.allPowerups) ? t : {},
-    powerupCatalog: null != (n = a.powerupCatalog) ? n : {},
-    unlockedPowerups: null != (r = a.unlockedPowerups) ? r : {}
+  let [i, a] = e, o = a;
+  return [i, f(u({}, o), {
+    allPowerups: null != (t = o.allPowerups) ? t : {},
+    powerupCatalog: null != (n = o.powerupCatalog) ? n : {},
+    unlockedPowerups: null != (r = o.unlockedPowerups) ? r : {}
   })]
 }))]);
 let C = new A(Chunk570140.Z, {

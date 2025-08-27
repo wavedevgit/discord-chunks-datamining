@@ -27,7 +27,7 @@ class f extends(r = Chunk647438.PureComponent) {
       title: t,
       actionText: n,
       children: r,
-      error: a,
+      error: o,
       isLoading: d,
       maxLength: f,
       transitionState: _,

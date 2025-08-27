@@ -52,7 +52,7 @@ function c(e) {
           color: "header-primary",
           variant: "heading-xl/semibold",
           children: u
-        }), p && (0, r.jsx)(o.x, {
+        }), p && (0, r.jsx)(a.x, {
           color: "text-default",
           variant: "text-md/normal",
           className: s.description,
@@ -60,10 +60,10 @@ function c(e) {
         })]
       }), null != t && (0, r.jsxs)("div", {
         className: s.benefits,
-        children: [(0, r.jsx)(o.x, {
+        children: [(0, r.jsx)(a.x, {
           color: "header-secondary",
           variant: "eyebrow",
-          children: a.Z.Messages.STOREFRONT_BENEFITS_TITLE
+          children: o.Z.Messages.STOREFRONT_BENEFITS_TITLE
         }), t]
       })]
     })]

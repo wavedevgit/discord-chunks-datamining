@@ -16,5 +16,5 @@ let s = function() {
     })
   },
   l = e => {
-    null == e || e(), (0, r.xf)(), (0, o.uL)(a.Z5c.APPLICATION_STORE)
+    null == e || e(), (0, r.xf)(), (0, a.uL)(o.Z5c.APPLICATION_STORE)
   }

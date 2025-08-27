@@ -19,16 +19,16 @@ function l(e) {
 
 function c(e) {
   if (null == e) returnfalse;
-  let t = o.Z.getChannel(e.parent_id);
+  let t = a.Z.getChannel(e.parent_id);
   return (null == t || (null == t ? true : t.type) === r.d.GUILD_CATEGORY) && l(e.type)
 }
 
 function u(e) {
-  return f(e, a.Z)
+  return f(e, o.Z)
 }
 
 function d(e) {
-  return (0, i.e7)([o.Z, a.Z], () => f(o.Z.getChannel(e), a.Z))
+  return (0, i.e7)([a.Z, o.Z], () => f(a.Z.getChannel(e), o.Z))
 }
 
 function f(e, t) {

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk987997 = require("./987997.jsx"),
@@ -34,7 +34,7 @@ function _(e) {
     }), (0, r.jsx)(s.LZC, {
       size: 24
     }), (0, r.jsxs)("div", {
-      className: o()(d.guildBoostingSubscriptionRow, u.card),
+      className: a()(d.guildBoostingSubscriptionRow, u.card),
       children: [(0, r.jsx)("img", {
         src: f,
         alt: "",
@@ -53,7 +53,7 @@ function _(e) {
           })
         })]
       }), (0, r.jsx)(l.Z, {
-        color: a.zx.Colors.BRAND,
+        color: o.zx.Colors.BRAND,
         onClick: t,
         children: c.intl.string(c.t.z5YcJy)
       })]

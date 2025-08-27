@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk108131 = require("./108131.js"),
   i = require.n(Chunk108131),
   Chunk605387 = require("./605387.js"),
-  a = require.n(Chunk605387);
+  o = require.n(Chunk605387);
 let s = new(require("./710845.js")).Z("WebP"),
   Chunk4667 = require("./4667.js"),
   c = 0;
@@ -42,7 +42,7 @@ async function d(e) {
     return s.warn("[WebP] Failed to read file data:", e), "conversion_failed"
   }
   try {
-    let e = a().decode(t);
+    let e = o().decode(t);
     if (4 === e.ctype || 6 === e.ctype) return s.verbose("[webp] png has transparency - skipping conversion"), "has_transparency";
     if (null != e.tabs.acTL) return s.verbose("[webp] png is animated (apng) - skipping conversion"), "animated_image"
   } catch (e) {
@@ -78,42 +78,42 @@ async function _(e) {
       }
     };
   try {
-    let o = await d(e);
-    if (null != o) return s.verbose("[WebP] Conversion rejected: ".concat(o)), i(o);
-    let a = document.createElement("canvas"),
-      l = a.getContext("2d");
+    let a = await d(e);
+    if (null != a) return s.verbose("[WebP] Conversion rejected: ".concat(a)), i(a);
+    let o = document.createElement("canvas"),
+      l = o.getContext("2d");
     if (null == l) throw Error("could not get canvas context");
     let u = new Image,
       _ = URL.createObjectURL(e);
     try {
       await new Promise((e, t) => {
         u.onload = () => e(), u.onerror = () => t(Error("failed to load image")), u.src = _
-      }), a.width = u.width, a.height = u.height, l.drawImage(u, 0, 0)
+      }), o.width = u.width, o.height = u.height, l.drawImage(u, 0, 0)
     } finally {
       URL.revokeObjectURL(_)
     }
     let p = await new Promise(e => {
-      a.toBlob(e, "image/webp", 1)
+      o.toBlob(e, "image/webp", 1)
     });
     if (null == p) throw Error("failed to convert to webp");
     {
       let n = performance.now(),
-        r = await l.getImageData(0, 0, a.width, a.height);
-      l.clearRect(0, 0, a.width, a.height);
-      let o = new Image,
+        r = await l.getImageData(0, 0, o.width, o.height);
+      l.clearRect(0, 0, o.width, o.height);
+      let a = new Image,
         c = URL.createObjectURL(p);
       try {
         await new Promise((e, t) => {
-          o.onload = () => e(), o.onerror = () => t(Error("failed to load image")), o.src = c
-        }), l.drawImage(o, 0, 0)
+          a.onload = () => e(), a.onerror = () => t(Error("failed to load image")), a.src = c
+        }), l.drawImage(a, 0, 0)
       } finally {
         URL.revokeObjectURL(c)
       }
-      let u = await l.getImageData(0, 0, a.width, a.height),
+      let u = await l.getImageData(0, 0, o.width, o.height),
         d = f(r),
         _ = f(u),
         h = d === _;
-      if (t = performance.now() - n, s.verbose("[WebP] Pixel hash results: " + "fileName=".concat(e.name, " ") + "fileLength={".concat(e.size, "} ") + "width=".concat(o.width, " ") + "height=".concat(o.height, " ") + "pixelHash=".concat(d, " ") + "mezzanineFileLength={".concat(p.size, "} ") + "mezzaninePixelHash=".concat(_, " ") + "match=".concat(h, " ") + "elapsed_ms=".concat(Math.round(t))), !h) return i("pixel_hash_mismatch")
+      if (t = performance.now() - n, s.verbose("[WebP] Pixel hash results: " + "fileName=".concat(e.name, " ") + "fileLength={".concat(e.size, "} ") + "width=".concat(a.width, " ") + "height=".concat(a.height, " ") + "pixelHash=".concat(d, " ") + "mezzanineFileLength={".concat(p.size, "} ") + "mezzaninePixelHash=".concat(_, " ") + "match=".concat(h, " ") + "elapsed_ms=".concat(Math.round(t))), !h) return i("pixel_hash_mismatch")
     }
     let h = e.size > 0 ? p.size / e.size : 1,
       m = 1 - h;

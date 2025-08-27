@@ -24,21 +24,21 @@ let c = {
 
 function E(e, t, n, r) {
   let i = {},
-    o = [];
+    a = [];
   for (let c = 0; c < t.length; c++) {
     let {
       offset: u,
       length: d,
       type: f
     } = t[c], _ = b(e, u, d, f, n);
-    if (_ instanceof Promise) o.push(_.then(({
+    if (_ instanceof Promise) a.push(_.then(({
       name: e,
       value: t,
       description: n
     }) => {
       try {
         if (l.Z.USE_EXIF && C(e, t)) return {
-          __exif: a.Z.read(R(t), g, r).tags
+          __exif: o.Z.read(R(t), g, r).tags
         };
         if (l.Z.USE_IPTC && N(e, t)) return {
           __iptc: s.Z.read(R(t), 0, r)
@@ -66,11 +66,11 @@ function E(e, t, n, r) {
   }
   return {
     readTags: i,
-    readTagsPromise: o.length > 0 ? Promise.all(o) : true
+    readTagsPromise: a.length > 0 ? Promise.all(a) : true
   }
 }
 
-function b(e, t, n, i, a) {
+function b(e, t, n, i, o) {
   let s, l = [],
     c = [],
     m = [],
@@ -82,17 +82,17 @@ function b(e, t, n, i, a) {
         type: i,
         dataView: e,
         offset: t + r
-      }), i === o.Jn && (r += h), g = O(i, g);
+      }), i === a.Jn && (r += h), g = O(i, g);
       continue
     }
     if (g === p) {
       s = new DataView(e.buffer.slice(t + r, t + n));
       break
     }
-    let a = e.getUint8(t + r);
-    0 === a ? g = O(i, g) : g === u ? l.push(a) : g === f ? c.push(a) : g === _ && m.push(a)
+    let o = e.getUint8(t + r);
+    0 === o ? g = O(i, g) : g === u ? l.push(o) : g === f ? c.push(o) : g === _ && m.push(o)
   }
-  if (E !== r.p4 && !a) return {};
+  if (E !== r.p4 && !o) return {};
   let b = (0, r.Lj)(s, E, v(i));
   return b instanceof Promise ? b.then(e => I(e, i, c, l)).catch(() => I("<text using unknown compression>".split(""), i, c, l)) : I(b, i, c, l)
 }
@@ -102,18 +102,18 @@ function y({
   dataView: t,
   offset: n
 }) {
-  if (e === o.Jn) {
+  if (e === a.Jn) {
     if (t.getUint8(n) === m) return t.getUint8(n + 1)
-  } else if (e === o.z_) return t.getUint8(n);
+  } else if (e === a.z_) return t.getUint8(n);
   return r.p4
 }
 
 function O(e, t) {
-  return t === u && [o.Jn, o.z_].includes(e) ? d : t === d ? e === o.Jn ? f : p : t === f ? _ : p
+  return t === u && [a.Jn, a.z_].includes(e) ? d : t === d ? e === a.Jn ? f : p : t === f ? _ : p
 }
 
 function v(e) {
-  return e === o.a0 || e === o.z_ ? "latin1" : "utf-8"
+  return e === a.a0 || e === a.z_ ? "latin1" : "utf-8"
 }
 
 function I(e, t, n, r) {
@@ -121,15 +121,15 @@ function I(e, t, n, r) {
   return {
     name: T(t, n, r),
     value: i,
-    description: t === o.Jn ? A(e) : i
+    description: t === a.Jn ? A(e) : i
   }
 }
 
 function T(e, t, n) {
   let i = (0, r.nZ)(n);
-  if (e === o.a0 || 0 === t.length) return i;
-  let a = (0, r.nZ)(t);
-  return `${i} (${a})`
+  if (e === a.a0 || 0 === t.length) return i;
+  let o = (0, r.nZ)(t);
+  return `${i} (${o})`
 }
 
 function S(e) {

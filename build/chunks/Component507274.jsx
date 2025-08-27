@@ -55,8 +55,8 @@ function _(e, t) {
   if (null == e) return {};
   var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -64,8 +64,8 @@ function _(e, t) {
 function p(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let h = Chunk647438.createContext({
@@ -79,7 +79,7 @@ let h = Chunk647438.createContext({
       disableTrack: p,
       returnRef: m
     } = e, g = _(e, ["children", "impressionType", "impression", "disableTrack", "returnRef"]), E = i.useRef(null), b = i.useRef(null), [y, O] = i.useState(false), v = y ? b : E;
-    (0, o.T)(v, {
+    (0, a.T)(v, {
       returnRef: m
     }), i.useContext(l.Z)({
       type: c,
@@ -103,7 +103,7 @@ let h = Chunk647438.createContext({
         "aria-modal": true,
         children: (0, r.jsx)(s.y5t, {
           forceLevel: 1,
-          children: (0, r.jsx)(a.J, {
+          children: (0, r.jsx)(o.J, {
             containerRef: E,
             children: n
           })

@@ -14,17 +14,17 @@ let s = function(e) {
     {
       categories: l,
       purchases: c
-    } = (0, a.ZP)();
+    } = (0, o.ZP)();
   return r.useEffect(() => {
     (null == n || 0 === n.size) && s(l)
   }, [l, n]), r.useMemo(() => {
     if (null != e) return e;
     if (null == n || !t) return;
-    let r = (0, o.iC)(c, n).filter(e => {
+    let r = (0, a.iC)(c, n).filter(e => {
       let {
         skuId: t
       } = e, n = i.Z.getProduct(t);
-      return (0, o.G1)(n)
+      return (0, a.G1)(n)
     });
     return r[Math.floor(Math.random() * r.length)]
   }, [n, e, c, t])

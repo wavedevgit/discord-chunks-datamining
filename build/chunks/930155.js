@@ -10,9 +10,9 @@ var Chunk647438 = require("./647438.js"),
   Chunk509545 = require("./509545.js");
 
 function s(e) {
-  let [t, n] = r.useState(false), s = (0, i.Wu)([a.Z], () => a.Z.getForSKU(e), [e]), l = (0, i.e7)([a.Z], () => a.Z.isFetchingForSKU(e), [e]);
+  let [t, n] = r.useState(false), s = (0, i.Wu)([o.Z], () => o.Z.getForSKU(e), [e]), l = (0, i.e7)([o.Z], () => o.Z.isFetchingForSKU(e), [e]);
   return r.useEffect(() => {
-    a.Z.isFetchingForSKU(e) || (n(false), (0, o.GZ)(e).then(() => {
+    o.Z.isFetchingForSKU(e) || (n(false), (0, a.GZ)(e).then(() => {
       n(false)
     }).catch(() => {
       n(true)

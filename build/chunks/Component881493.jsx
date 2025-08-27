@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk434333 = require("./434333.jsx"),
   Chunk82659 = require("./82659.jsx"),
   Chunk74538 = require("./74538.js"),
@@ -22,7 +22,7 @@ let m = () => {
     transitionState: e,
     planId: t,
     renewalInvoice: n,
-    onClose: o,
+    onClose: a,
     handleCancellation: m,
     renewalInvoiceDetails: g,
     fullPrice: E,
@@ -70,7 +70,7 @@ let m = () => {
     onClose: async () => Chunk120356(),
     children: [(0, Chunk951288.jsxs)(Chunk811334.aO, {
       isPremiumRebrand: true,
-      className: a()({
+      className: o()({
         [Chunk704442.hasError]: v
       }),
       children: [(0, Chunk951288.jsx)(Chunk811334.Z9, {

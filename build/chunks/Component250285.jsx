@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk67136 = require("./67136.jsx"),
   Chunk748780 = require("./748780.js"),
   Chunk91192 = require("./91192.jsx"),
@@ -57,7 +57,7 @@ let g = e => {
   let {
     userId: t,
     children: n,
-    isLast: o,
+    isLast: a,
     className: _
   } = e, h = 1, [g, E] = i.useState(false), {
     analyticsLocations: b
@@ -82,8 +82,8 @@ let g = e => {
         style: {
           opacity: h
         },
-        className: a()(f.rowItem, _, {
-          [f.last]: o,
+        className: o()(f.rowItem, _, {
+          [f.last]: a,
           [f.active]: g
         }),
         onMouseEnter: O,

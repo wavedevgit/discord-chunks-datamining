@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk674746 = require("./674746.js"),
   Chunk442837 = require("./442837.js"),
   Chunk780384 = require("./780384.js"),
@@ -33,7 +33,7 @@ let y = e => {
         theme: s,
         children: e => (0, r.jsxs)(_.Z, {
           isAuthenticated: t,
-          className: o()(b.headerBar, e, {
+          className: a()(b.headerBar, e, {
             [b.headerBarV2LightBackground]: !i && !(0, l.wj)(s),
             [b.headerBarV2DarkBackground]: !i && (0, l.wj)(s)
           }),
@@ -41,7 +41,7 @@ let y = e => {
           children: [(0, r.jsx)(_.Z.Icon, {
             icon: c.SrA,
             "aria-hidden": true,
-            color: i ? true : a.Z.PREMIUM_TIER_2_PINK
+            color: i ? true : o.Z.PREMIUM_TIER_2_PINK
           }), (0, r.jsx)(_.Z.Title, {
             children: E.intl.string(E.t.Ipxkoq)
           })]

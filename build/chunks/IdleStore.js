@@ -99,7 +99,7 @@ function P(e) {
     timestamp: t,
     type: n
   } = e, r = "OVERLAY_SET_NOT_IDLE" === n && null != t;
-  return (!r || !(t <= h)) && (h = r ? t : Date.now(), __OVERLAY__ ? o.Z.dispatch({
+  return (!r || !(t <= h)) && (h = r ? t : Date.now(), __OVERLAY__ ? a.Z.dispatch({
     type: "OVERLAY_SET_NOT_IDLE",
     timestamp: h
   }) : T(), false)

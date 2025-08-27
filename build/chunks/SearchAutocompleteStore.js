@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => et
 }), require("./388685.js"), require("./539854.js"), require("./781311.js"), require("./290780.js");
 var r, Chunk498607 = require("./498607.js"),
-  o = require.n(Chunk498607),
+  a = require.n(Chunk498607),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk279779 = require("./279779.js"),
@@ -90,16 +90,16 @@ function w(e) {
     query: n,
     mode: r,
     tokens: i,
-    cursorScope: o,
-    autocompletes: a
+    cursorScope: a,
+    autocompletes: o
   } = e;
   return R(t), {
     searchContext: t,
     query: n,
     mode: r,
     tokens: i,
-    cursorScope: o,
-    autocompletes: a
+    cursorScope: a,
+    autocompletes: o
   }
 }
 
@@ -122,17 +122,17 @@ function L(e) {
 function j(e, t) {
   let {
     results: n
-  } = t, r = (0, g.Tm)(e), i = T.get(r), o = I.get(r);
-  if (null == i || null == o || !L(o.mode)) return;
-  i.results = M(n, o.mode.type === y.Sap.FILTER ? S : A);
+  } = t, r = (0, g.Tm)(e), i = T.get(r), a = I.get(r);
+  if (null == i || null == a || !L(a.mode)) return;
+  i.results = M(n, a.mode.type === y.Sap.FILTER ? S : A);
   let {
-    query: a,
+    query: o,
     mode: s,
     tokens: l,
     cursorScope: c
-  } = o, u = Y(e, s, l), d = w({
+  } = a, u = Y(e, s, l), d = w({
     searchContext: e,
-    query: a,
+    query: o,
     mode: s,
     tokens: l,
     cursorScope: c,
@@ -158,7 +158,7 @@ function M(e) {
 }
 
 function k(e) {
-  o()(v, e) || (v = e, (0, g.WU)())
+  a()(v, e) || (v = e, (0, g.WU)())
 }
 
 function U(e) {
@@ -175,34 +175,34 @@ function G(e) {
     cursorScope: i
   } = e;
   k(n);
-  let o = (0, g.cl)(r),
-    a = (0, g.qc)(i, r),
+  let a = (0, g.cl)(r),
+    o = (0, g.qc)(i, r),
     s = (0, g.Tm)(n),
     l = I.get(s),
     c = true;
-  if (null != l && o === l.query && (null == l.mode || l.mode.filter === a.filter)) t = l.autocompletes, c = false;
-  else if (L(a)) {
+  if (null != l && a === l.query && (null == l.mode || l.mode.filter === o.filter)) t = l.autocompletes, c = false;
+  else if (L(o)) {
     var u, d;
     let e = R(n),
-      i = a.token,
-      o = null == i || null == (u = i.getFullMatch()) ? true : u.trim();
-    if (null != o && o.length > 0) {
+      i = o.token,
+      a = null == i || null == (u = i.getFullMatch()) ? true : u.trim();
+    if (null != a && a.length > 0) {
       let r = (0, g.s5)(n);
-      null != r && h.Z.requestMembers(r, o, S), e.context.setQuery({
-        query: o,
+      null != r && h.Z.requestMembers(r, a, S), e.context.setQuery({
+        query: a,
         filters: {
           guild: null != r ? r : true
         }
       }), t = null != (d = null == l ? true : l.autocompletes) ? d : [], c = false
-    } else e.context.clearQuery(), t = Y(n, a, r)
+    } else e.context.clearQuery(), t = Y(n, o, r)
   } else {
     let e = T.get(s);
-    null != e && (e.context.clearQuery(), e.results = []), t = Y(n, a, r)
+    null != e && (e.context.clearQuery(), e.results = []), t = Y(n, o, r)
   }
   let f = w({
     searchContext: n,
-    query: o,
-    mode: a,
+    query: a,
+    mode: o,
     tokens: r,
     cursorScope: i,
     autocompletes: t
@@ -214,21 +214,21 @@ function B(e) {
   var t, n, r;
   let {
     filter: i,
-    currentToken: o,
-    searchContext: a,
+    currentToken: a,
+    searchContext: o,
     maxResults: s = S,
     tokens: l
   } = e;
   if (null == i) return null;
   let c = null,
-    u = null != (n = null == o || null == (t = o.getFullMatch()) ? true : t.trim()) ? n : "",
+    u = null != (n = null == a || null == (t = a.getFullMatch()) ? true : t.trim()) ? n : "",
     d = 0 === u.length;
-  if ((0, g.b7)(a) && x(i) && !d) c = R(a).results;
+  if ((0, g.b7)(o) && x(i) && !d) c = R(o).results;
   else {
     let e = null == (r = b.ZP[i]) ? true : r.getAutocompletions;
     c = null != e ? e({
       query: u,
-      searchContext: a,
+      searchContext: o,
       maxResults: s,
       tokens: l
     }) : []
@@ -264,9 +264,9 @@ function Z(e, t) {
 function F(e, t, n) {
   var r;
   let i = e.token,
-    o = null == i || null == (r = i.getFullMatch()) ? true : r.trim(),
-    a = [];
-  if (null != o && "" !== o) {
+    a = null == i || null == (r = i.getFullMatch()) ? true : r.trim(),
+    o = [];
+  if (null != a && "" !== a) {
     N(t).forEach(e => {
       if (null == e) return;
       let r = B({
@@ -276,16 +276,16 @@ function F(e, t, n) {
         maxResults: A,
         tokens: n
       });
-      null != r && a.push(r)
+      null != r && o.push(r)
     });
     let e = V(i, t);
-    null != e && a.push(e)
+    null != e && o.push(e)
   }
-  return 5 > (0, g.BU)(a) && a.push(Z(i, t)), a
+  return 5 > (0, g.BU)(o) && o.push(Z(i, t)), o
 }
 
 function V(e, t) {
-  var n, r, i, o, a, s, l, c, u;
+  var n, r, i, a, o, s, l, c, u;
   let d = (null != e ? e.getFullMatch() : "").trim();
   if (null == d || "" === d) return null;
   let f = null == (i = b.ZP[y.dCx.FILTER_BEFORE]) || null == (r = i.getAutocompletions) || null == (n = r.call(i, {
@@ -293,11 +293,11 @@ function V(e, t) {
       searchContext: t,
       maxResults: 1
     })) ? true : n[0],
-    _ = null == (s = b.ZP[y.dCx.FILTER_ON]) || null == (a = s.getAutocompletions) || null == (o = a.call(s, {
+    _ = null == (s = b.ZP[y.dCx.FILTER_ON]) || null == (o = s.getAutocompletions) || null == (a = o.call(s, {
       query: d,
       searchContext: t,
       maxResults: 1
-    })) ? true : o[0],
+    })) ? true : a[0],
     p = null == (u = b.ZP[y.dCx.FILTER_AFTER]) || null == (c = u.getAutocompletions) || null == (l = c.call(u, {
       query: d,
       searchContext: t,
@@ -361,8 +361,8 @@ function K(e) {
     searchContext: n,
     query: r,
     mode: i,
-    tokens: o,
-    cursorScope: a,
+    tokens: a,
+    cursorScope: o,
     autocompletes: s
   } = t, l = [];
   s.forEach(e => {
@@ -372,8 +372,8 @@ function K(e) {
     searchContext: n,
     query: r,
     mode: i,
-    tokens: o,
-    cursorScope: a,
+    tokens: a,
+    cursorScope: o,
     autocompletes: l
   });
   I.set(e, c)
@@ -397,15 +397,15 @@ function X(e) {
   let {
     query: r,
     mode: i,
-    tokens: o,
-    cursorScope: a
+    tokens: a,
+    cursorScope: o
   } = n, s = w({
     searchContext: e,
     query: r,
     mode: i,
-    tokens: o,
-    cursorScope: a,
-    autocompletes: Y(e, i, o)
+    tokens: a,
+    cursorScope: o,
+    autocompletes: Y(e, i, a)
   });
   I.set(t, s)
 }
@@ -424,8 +424,8 @@ function J() {
     let {
       type: r,
       filter: i,
-      token: o
-    } = require.mode, a = null == o || null == (e = o.getFullMatch()) ? true : module.trim(), s = null == Chunk442837 || 0 === Chunk442837.length;
+      token: a
+    } = require.mode, o = null == a || null == (e = a.getFullMatch()) ? true : module.trim(), s = null == Chunk442837 || 0 === Chunk442837.length;
     if (r === Chunk981631.Sap.FILTER && Chunk498607 === Chunk981631.dCx.FILTER_IN && Chunk570140) return X(v)
   }
   returnfalse

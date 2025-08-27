@@ -6,14 +6,14 @@ require.d(exports, {
 });
 var Chunk818083 = require("./818083.js"),
   Chunk984134 = require("./984134.js");
-let o = {
+let a = {
     doGroupEligibilityCheck: false
   },
-  a = (0, Chunk818083.B)({
+  o = (0, Chunk818083.B)({
     kind: "user",
     id: "2025-04_feedback_trigger_experiment",
     label: "Feedback trigger logic changes",
-    defaultConfig: o,
+    defaultConfig: a,
     treatments: [{
       id: 1,
       label: "Do group eligibility check",
@@ -34,7 +34,7 @@ function s(e) {
   }, {
     autoTrackExposure: n
   });
-  return a.getCurrentConfig({
+  return o.getCurrentConfig({
     location: t
   }, {
     disable: r,

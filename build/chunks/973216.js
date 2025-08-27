@@ -12,8 +12,8 @@ Chunk98405({
 }, {
   at: function(e) {
     var t = i(this),
-      n = o(t),
-      r = a(e),
+      n = a(t),
+      r = o(e),
       s = r >= 0 ? r : n + r;
     return s < 0 || s >= n ? true : t[s]
   }

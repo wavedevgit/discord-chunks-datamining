@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk692547 = require("./692547.js"),
   Chunk481060 = require("./481060.js"),
   Chunk113434 = require("./113434.js"),
@@ -16,7 +16,7 @@ var Chunk120356 = require("./120356.js"),
 let d = function(e) {
   let {
     className: t,
-    color: n = a.Z.colors.WHITE,
+    color: n = o.Z.colors.WHITE,
     quest: i,
     isInventory: d
   } = e, f = (0, l.qb)(e.quest), {
@@ -26,7 +26,7 @@ let d = function(e) {
   return !d && f.length > 0 ? (0, r.jsx)(c.Z, {
     children: f.at(0)
   }) : (0, r.jsxs)("div", {
-    className: o()(u.wrapper, t),
+    className: a()(u.wrapper, t),
     style: {
       color: n.css
     },

@@ -88,7 +88,7 @@ function F(e) {
   }), q = (0, T.tP)(v), X = (null == v || null == (t = v.userStatus) ? true : t.claimedAt) != null, Q = (null == v || null == (m = v.userStatus) ? true : m.enrolledAt) != null, J = (null == v || null == (g = v.userStatus) ? true : g.completedAt) != null, $ = (0, s.e7)([E.Z], () => E.Z.getState().theme), ee = (0, l.wj)($) ? x.BR.DARK : x.BR.LIGHT, et = (0, s.e7)([h.Z], () => h.Z.useReducedMotion), {
     ref: en,
     height: er
-  } = (0, _.ZP)(), [ei, eo] = i.useState(et), ea = (0, p.Aq)(), es = (0, a.eg)();
+  } = (0, _.ZP)(), [ei, ea] = i.useState(et), eo = (0, p.Aq)(), es = (0, o.eg)();
   i.useEffect(() => {
     let e = es.current;
     return null == e || e.addEventListener("scroll", V), () => {
@@ -115,7 +115,7 @@ function F(e) {
         tension: 450,
         friction: 45
       },
-      onRest: () => eo(true)
+      onRest: () => ea(true)
     }),
     ec = (0, u.Yzy)(ei, {
       from: {
@@ -128,7 +128,7 @@ function F(e) {
       }
     }),
     eu = () => {
-      ea.dispatch(D.CkL.POPOUT_CLOSE)
+      eo.dispatch(D.CkL.POPOUT_CLOSE)
     },
     ed = "top" === F ? "".concat(U, " ").concat(U, " 0 0") : "0 0 ".concat(U, " ").concat(U);
   if (null == v || q || X && !Z(M, K)) return null;
@@ -204,7 +204,7 @@ function F(e) {
       handleClickCta: e_,
       tileAssetType: "game"
     };
-  return (0, r.jsx)(o.animated.div, {
+  return (0, r.jsx)(a.animated.div, {
     ref: e => {
       Y.current = e
     },
@@ -255,7 +255,7 @@ function F(e) {
           className: j.right,
           children: (0, r.jsxs)("div", {
             className: j.imgWrapper,
-            children: [ec((e, t) => t && (0, r.jsx)(o.animated.div, {
+            children: [ec((e, t) => t && (0, r.jsx)(a.animated.div, {
               style: e,
               className: j.imgUnderlay
             })), "game" === em.tileAssetType && (0, r.jsx)("img", {

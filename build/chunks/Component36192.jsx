@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk544891 = require("./544891.js"),
   Chunk704215 = require("./704215.js"),
@@ -32,8 +32,8 @@ function S() {
       currentSession: t,
       otherSessions: n
     } = (0, Chunk136097.h)(),
-    o = (0, Chunk442837.e7)([Chunk246946.Z], () => Chunk246946.Z.hidePersonalInformation),
-    a = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
+    a = (0, Chunk442837.e7)([Chunk246946.Z], () => Chunk246946.Z.hidePersonalInformation),
+    o = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
     [d, _] = Chunk647438.useState(false);
   Chunk647438.useEffect(() => {
     (0, Chunk266454.Q3)(Chunk704215.z.AUTH_SESSIONS_NEW, {
@@ -65,7 +65,7 @@ function S() {
           session: exports,
           current: true
         }) : null
-      }), !(require.length > 0) && (null == a ? true : a.mfaEnabled) ? null : (0, Chunk951288.jsxs)(Chunk481060.hjN, {
+      }), !(require.length > 0) && (null == o ? true : o.mfaEnabled) ? null : (0, Chunk951288.jsxs)(Chunk481060.hjN, {
         tag: Chunk481060.RB0.H5,
         title: Chunk388032.intl.string(Chunk388032.t.xx1MWV),
         titleClassName: Chunk844642.groupTitle,
@@ -78,7 +78,7 @@ function S() {
             let n = new Set(y);
             t ? n.add(e.id_hash) : n.delete(e.id_hash), S(n)
           }
-        }, e.id_hash)), (null == a ? true : a.mfaEnabled) ? null : (0, Chunk951288.jsx)(C, {})]
+        }, e.id_hash)), (null == o ? true : o.mfaEnabled) ? null : (0, Chunk951288.jsx)(C, {})]
       })]
     }), require.length > 0 ? (0, Chunk951288.jsxs)(Chunk481060.hjN, {
       tag: Chunk481060.RB0.H5,
@@ -108,7 +108,7 @@ function S() {
       type: Chunk481060.geA.DESCRIPTION,
       className: Chunk844642.description,
       children: Chunk388032.intl.string(Chunk388032.t.zZp619)
-    }), (null == a ? true : a.isStaff()) ? (0, Chunk951288.jsxs)("div", {
+    }), (null == o ? true : o.isStaff()) ? (0, Chunk951288.jsxs)("div", {
       className: Chunk844642.tools,
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         className: Chunk844642.toolsTitle,
@@ -141,7 +141,7 @@ function S() {
 }
 
 function A(e) {
-  var t, n, i, o, s;
+  var t, n, i, a, s;
   let {
     session: l,
     current: c,
@@ -151,9 +151,9 @@ function A(e) {
   } = e, m = null != (s = null == (t = l.client_info) ? true : t.location) ? s : null == (n = l.client_info) ? true : n.ip, g = null == (i = l.client_info) ? true : i.platform, {
     text: E,
     icon: b
-  } = N(null == (o = l.client_info) ? true : o.os), O = c ? null : (0, h.p)(l.approx_last_used_time), v = [E, g].filter(y.lm), S = [m, O].filter(y.lm);
+  } = N(null == (a = l.client_info) ? true : a.os), O = c ? null : (0, h.p)(l.approx_last_used_time), v = [E, g].filter(y.lm), S = [m, O].filter(y.lm);
   return (0, r.jsxs)("div", {
-    className: a()(T.session, c ? T.currentSession : null),
+    className: o()(T.session, c ? T.currentSession : null),
     children: [(0, r.jsx)("div", {
       className: T.sessionIcon,
       children: (0, r.jsx)(b, {
@@ -211,7 +211,7 @@ function A(e) {
 
 function C() {
   return (0, Chunk951288.jsxs)("div", {
-    className: a()(Chunk844642.session, Chunk844642.legacySession),
+    className: o()(Chunk844642.session, Chunk844642.legacySession),
     children: [(0, Chunk951288.jsx)("div", {
       className: Chunk844642.sessionIcon,
       children: (0, Chunk951288.jsx)(Chunk460562.Z, {

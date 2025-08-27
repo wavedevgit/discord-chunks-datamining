@@ -61,8 +61,8 @@ function b(e, t) {
   if (null == e) return {};
   var n, r, i = y(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -70,8 +70,8 @@ function b(e, t) {
 function y(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let O = "payment-modal",
@@ -98,7 +98,7 @@ function T(e) {
     },
     x = h ? v : O,
     L = u.default.getCurrentUser();
-  if (!(null == L ? true : L.verified)) return void(0, o.ZDy)(async () => {
+  if (!(null == L ? true : L.verified)) return void(0, a.ZDy)(async () => {
     let {
       default: e
     } = await Promise.all([n.e("88470"), n.e("20102")]).then(n.bind(n, 444688));
@@ -113,11 +113,11 @@ function T(e) {
       }))
     }
   });
-  a.Z.wait(() => {
-    a.Z.dispatch({
+  o.Z.wait(() => {
+    o.Z.dispatch({
       type: "PAYMENT_MODAL_OPEN"
     })
-  }), (0, o.ZDy)(async () => e => {
+  }), (0, a.ZDy)(async () => e => {
     var {
       onClose: t,
       returnRef: n
@@ -154,7 +154,7 @@ function T(e) {
       })
     },
     onCloseRequest: () => {
-      null != t && I.has(t) && (0, o.Mr3)(x)
+      null != t && I.has(t) && (0, a.Mr3)(x)
     }
   })
 }

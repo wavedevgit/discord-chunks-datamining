@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk843611 = require("./843611.js"),
   Chunk481060 = require("./481060.js"),
   Chunk624138 = require("./624138.js"),
@@ -56,8 +56,8 @@ function h(e, t) {
   if (null == e) return {};
   var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -65,8 +65,8 @@ function h(e, t) {
 function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let g = [18, 18, 16, 16, 14, 12, 10];
@@ -77,7 +77,7 @@ function E(e) {
 }
 
 function b(e, t) {
-  return a()({
+  return o()({
     [u.childWrapper]: true,
     [u.childWrapperNoHoverBg]: "always" === e,
     [u.childWrapperHoverScale]: "on-hover" === e && t
@@ -86,7 +86,7 @@ function b(e, t) {
 let y = e => {
   let t, n;
   var {
-    backgroundStyle: o = "always",
+    backgroundStyle: a = "always",
     children: d,
     icon: _,
     name: m,
@@ -114,7 +114,7 @@ let y = e => {
     N = (0, l.dQu)(l.TVs.modules.guildbar.AVATAR_SIZE);
   return (0, r.jsxs)(l.P3F, p(f({}, S), {
     onClick: C,
-    className: a()(y, u.wrapper, {
+    className: o()(y, u.wrapper, {
       [u.selected]: T
     }),
     style: p(f({}, O), {
@@ -126,7 +126,7 @@ let y = e => {
     children: [(0, r.jsx)(l.nn4, {
       children: null != g && "" !== g ? g : null != m ? m : ""
     }), null != t ? (0, r.jsx)("div", {
-      className: a()(b(o, false), u.acronym),
+      className: o()(b(a, false), u.acronym),
       "aria-hidden": true,
       children: t
     }) : null, null != _ ? (0, r.jsx)("img", {
@@ -137,7 +137,7 @@ let y = e => {
       height: N,
       "aria-hidden": true
     }) : null, null != d ? (0, r.jsx)("div", {
-      className: b(o, true),
+      className: b(a, true),
       children: d
     }) : null]
   }))

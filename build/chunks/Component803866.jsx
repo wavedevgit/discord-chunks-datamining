@@ -39,10 +39,10 @@ function d(e) {
     "aria-label": n = s.intl.string(s.t.cpT0Cg)
   } = e, {
     firstFocusableItemProps: c
-  } = i.useContext(a.M);
+  } = i.useContext(o.M);
   return (0, r.jsx)("div", {
     className: l.closeButton,
-    children: (0, r.jsx)(o.P, u({
+    children: (0, r.jsx)(a.P, u({
       size: "xs",
       "aria-label": n,
       onClick: t,

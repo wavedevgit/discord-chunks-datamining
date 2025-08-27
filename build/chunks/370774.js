@@ -34,14 +34,14 @@ function E(e) {
     channelId: n,
     guildId: r,
     ReadStateStore_: i = _.ZP,
-    GuildStore_: o = f.Z
+    GuildStore_: a = f.Z
   } = e;
   if (!i.hasUnread(n)) returnfalse;
-  let a = o.getGuild(r);
-  if (null == a || null == a.joinedAt) returnfalse;
+  let o = a.getGuild(r);
+  if (null == o || null == o.joinedAt) returnfalse;
   let s = i.ackMessageId(n);
   if (null == s) {
-    let e = o.getGuild(r);
+    let e = a.getGuild(r);
     null != e && null != e.joinedAt && (s = p.default.fromTimestamp(e.joinedAt.getTime()))
   }
   return p.default.compare(t, s) > 0
@@ -62,7 +62,7 @@ function y() {
 }
 
 function O(e) {
-  a.Z.open(g.oAB.NOTIFICATIONS, true, {
+  o.Z.open(g.oAB.NOTIFICATIONS, true, {
     analyticsLocations: e
   })
 }

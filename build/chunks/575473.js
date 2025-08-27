@@ -32,7 +32,7 @@ module.exports = function(e, t, n, r, v, T, S) {
     case d:
     case f:
     case h:
-      return o(+e, +t);
+      return a(+e, +t);
     case _:
       return e.name == t.name && e.message == t.message;
     case m:
@@ -46,7 +46,7 @@ module.exports = function(e, t, n, r, v, T, S) {
       var N = S.get(e);
       if (N) return N == t;
       r |= u, S.set(e, t);
-      var R = a(A(e), A(t), r, v, T, S);
+      var R = o(A(e), A(t), r, v, T, S);
       return S.delete(e), R;
     case b:
       if (I) return I.call(e) == I.call(t)

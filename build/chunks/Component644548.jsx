@@ -22,15 +22,15 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx");
 
 function b(e) {
-  if (e === o._.WEEK) return E.t["7TXfc3"]
+  if (e === a._.WEEK) return E.t["7TXfc3"]
 }
 let y = (e, t, n, r) => {
     let i = b(r),
-      o = s.ZP.getName(t.guild_id, t.id, n),
-      a = e.extra.game_name;
+      a = s.ZP.getName(t.guild_id, t.id, n),
+      o = e.extra.game_name;
     return E.intl.formatToMarkdownString(i, {
-      gameName: a,
-      userName: o
+      gameName: o,
+      userName: a
     }).replaceAll("*", "")
   },
   O = (e, t) => E.intl.formatToPlainString(E.t.tAwI1t, {
@@ -41,7 +41,7 @@ let y = (e, t, n, r) => {
     let {
       channel: t,
       entry: n,
-      disableGameProfileLinks: o,
+      disableGameProfileLinks: a,
       onReaction: s,
       onVoiceChannelPreview: b
     } = e, {
@@ -62,7 +62,7 @@ let y = (e, t, n, r) => {
         avatarSrcs: [I.getAvatarURL(null == t ? true : t.guild_id, 128)],
         description: y(n, t, I, R),
         timestamp: E.intl.formatToPlainString(E.t.YL7UEx, {
-          hours: Math.round(N / a.Z.Seconds.HOUR)
+          hours: Math.round(N / o.Z.Seconds.HOUR)
         }),
         colors: [A, C],
         channelId: e
@@ -87,7 +87,7 @@ let y = (e, t, n, r) => {
             entry: n
           }, t))
         }),
-        disableGameProfileLinks: o
+        disableGameProfileLinks: a
       }), (0, r.jsx)(h.St, {
         children: (0, r.jsx)(h.WT, {
           onReaction: s,

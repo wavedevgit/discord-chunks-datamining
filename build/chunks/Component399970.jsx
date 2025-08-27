@@ -38,7 +38,7 @@ function b(e) {
     authorizedApplicationId: u,
     authorizationError: b,
     authorizing: y
-  } = (0, o.cj)([_.Z], () => ({
+  } = (0, a.cj)([_.Z], () => ({
     authorizedApplicationId: _.Z.testModeApplicationId,
     authorizationError: _.Z.error,
     authorizing: _.Z.isFetchingAuthorization
@@ -141,11 +141,11 @@ function b(e) {
               onChange: D,
               placeholder: "URL Origin Type"
             })
-          }), L(), (0, r.jsx)(a.zx, {
+          }), L(), (0, r.jsx)(o.zx, {
             submitting: y,
             type: "submit",
             disabled: !N || 0 === O.length || "localhost" === S && 0 === I.length,
-            color: j ? a.zx.Colors.RED : a.zx.Colors.GREEN,
+            color: j ? o.zx.Colors.RED : o.zx.Colors.GREEN,
             children: j ? p.intl.string(p.t.d6TR3N) : p.intl.string(p.t.qwuK5O)
           })]
         })

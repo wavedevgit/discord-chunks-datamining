@@ -20,7 +20,7 @@ function s(e, t, n) {
 }
 class l extends Chunk147913.Z {
   handleDmSettingsUpsellShow(e) {
-    o.Z.openDmSettingsUpsellModal(e.guildId)
+    a.Z.openDmSettingsUpsellModal(e.guildId)
   }
   constructor(...e) {
     super(...e), s(this, "actions", {
@@ -31,7 +31,7 @@ class l extends Chunk147913.Z {
 
 function c(e) {
   return r.tn.post({
-    url: a.ANM.DM_SETTINGS_UPSELL_ACK(e),
+    url: o.ANM.DM_SETTINGS_UPSELL_ACK(e),
     rejectWithError: false
   })
 }

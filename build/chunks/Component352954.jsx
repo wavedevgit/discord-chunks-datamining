@@ -58,22 +58,22 @@ let d = {
       }, n))
     })
   },
-  openSecureFramesUserVerificationModal: function(e, t, a, s) {
-    a() && (0, i.ZDy)(async () => {
+  openSecureFramesUserVerificationModal: function(e, t, o, s) {
+    o() && (0, i.ZDy)(async () => {
       let i = (await n.e("33397").then(n.bind(n, 963410))).default;
       return n => (0, r.jsx)(i, l({
         userId: e,
         channelId: t
       }, n))
     }, {
-      contextKey: s === o.IlC.POPOUT ? i.u1M : i.z1l
+      contextKey: s === a.IlC.POPOUT ? i.u1M : i.z1l
     })
   },
   openSecureFramesUpdateConfirmation: function(e) {
     let {
       title: t,
-      subtitle: o,
-      confirmText: s = a.intl.string(a.t["cY+Ooa"]),
+      subtitle: a,
+      confirmText: s = o.intl.string(o.t["cY+Ooa"]),
       onConfirm: c
     } = e;
     (0, i.ZDy)(async () => {
@@ -83,13 +83,13 @@ let d = {
       return n => (0, r.jsx)(e, u(l({
         header: t,
         confirmText: s,
-        cancelText: a.intl.string(a.t["ETE/oK"]),
+        cancelText: o.intl.string(o.t["ETE/oK"]),
         onConfirm: c
       }, n), {
         children: (0, r.jsx)(i.Text, {
           variant: "text-sm/normal",
           color: "header-secondary",
-          children: o
+          children: a
         })
       }))
     })

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
   Chunk680018 = require("./680018.jsx"),
@@ -82,12 +82,12 @@ function V(e, t) {
 }
 
 function H(e) {
-  let [t, n] = i.useState(0), [r, o] = i.useState(false), a = i.useRef(e);
+  let [t, n] = i.useState(0), [r, a] = i.useState(false), o = i.useRef(e);
   return i.useEffect(() => {
-    e === a.current || r || n(e => e + 1), a.current = e, o(false)
+    e === o.current || r || n(e => e + 1), o.current = e, a(false)
   }, [e, r]), {
     key: t,
-    handleInternalChange: i.useCallback(e => (o(true), e), [])
+    handleInternalChange: i.useCallback(e => (a(true), e), [])
   }
 }
 
@@ -170,10 +170,10 @@ function q(e) {
     setGradientAngle: n
   } = e, {
     key: i,
-    handleInternalChange: o
+    handleInternalChange: a
   } = H(t);
   return (0, r.jsxs)("div", {
-    className: a()(G.sliderContainer, G.gradientDirectionSliderContainer),
+    className: o()(G.sliderContainer, G.gradientDirectionSliderContainer),
     children: [(0, r.jsx)(p.Text, {
       variant: "text-sm/medium",
       children: U.intl.string(k.default.dZkwg4)
@@ -183,7 +183,7 @@ function q(e) {
       minValue: 0,
       maxValue: 360,
       onValueChange: e => {
-        (0, w.fR)(), o(e), n(e)
+        (0, w.fR)(), a(e), n(e)
       },
       onValueRender: e => "".concat(Math.round(e), "\xb0"),
       keyboardStep: 1
@@ -197,7 +197,7 @@ function X(e) {
     setChassisMixAmount: n
   } = e, {
     key: i,
-    handleInternalChange: o
+    handleInternalChange: a
   } = H(t);
   return (0, r.jsxs)("div", {
     className: G.sliderContainer,
@@ -210,7 +210,7 @@ function X(e) {
       minValue: 0,
       maxValue: 100,
       onValueChange: e => {
-        (0, w.z3)(), o(e), n(e)
+        (0, w.z3)(), a(e), n(e)
       },
       keyboardStep: 1
     }, i)]
@@ -303,9 +303,9 @@ function ee(e) {
     onSaveTheme: t,
     canApply: n,
     metadata: i
-  } = e, o = (0, T.m)(M.p9.TIER_2);
-  (0, w.hf)(o, E.Z.CUSTOM_THEMES_EDITOR);
-  let a = () => {
+  } = e, a = (0, T.m)(M.p9.TIER_2);
+  (0, w.hf)(a, E.Z.CUSTOM_THEMES_EDITOR);
+  let o = () => {
     (0, w.Vb)(), (0, O.Q3)(l.z.CUSTOM_THEME_COACHMARK), (null == i ? true : i.from) === y.tE.SETTING ? (m.Z.open(), (0, y.Ll)()) : (null == i ? true : i.from) === y.tE.CLIENT_THEMES_EDITOR ? (0, y.XO)(y.wh.CLIENT_THEMES) : (0, y.Ll)()
   };
   return (0, r.jsxs)("div", {
@@ -314,9 +314,9 @@ function ee(e) {
       type: "no-text"
     }), (0, r.jsx)(f.A, {
       variant: "secondary",
-      onClick: a,
+      onClick: o,
       text: U.intl.string(U.t["13/7kZ"])
-    }), o ? (0, r.jsx)(J, {
+    }), a ? (0, r.jsx)(J, {
       disabled: !n,
       onApply: t
     }) : (0, r.jsx)(I.Z, {
@@ -339,8 +339,8 @@ function et(e) {
   var t;
   let {
     metadata: n,
-    markAsDismissed: o,
-    isCoachmark: a
+    markAsDismissed: a,
+    isCoachmark: o
   } = e, u = P.Mc.useExperiment({
     location: "ClientThemeColorPickerTools"
   }).enabled, d = (0, R.jJ)(), f = i.useRef(false), {
@@ -361,14 +361,14 @@ function et(e) {
         gradientAngle: v,
         baseMix: m
       }
-    }), (0, w.u7)(_, m, v, k, Z), null == o || o(j.L.TAKE_ACTION), B || (0, O.Q3)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), (0, y.Ll)(), (0, S.UD)()
+    }), (0, w.u7)(_, m, v, k, Z), null == a || a(j.L.TAKE_ACTION), B || (0, O.Q3)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), (0, y.Ll)(), (0, S.UD)()
   }, V = () => {
     d(R._m.RESET_BUTTON), (0, w.uf)()
   }, H = _.length > 0;
   return (i.useEffect(() => () => {
     f.current || d(R._m.EDITOR_CLOSE)
   }, [d]), (0, g.ZP)(() => {
-    a || (0, R.lT)(_, L, I)
+    o || (0, R.lT)(_, L, I)
   }), u) ? (0, r.jsx)("div", {
     className: G.container,
     "data-app-right-panel": true,
@@ -378,8 +378,8 @@ function et(e) {
         children: (0, r.jsxs)("div", {
           className: G.editorBody,
           children: [(0, r.jsx)(K, {
-            markAsDismissed: o,
-            isCoachmark: a
+            markAsDismissed: a,
+            isCoachmark: o
           }), (0, r.jsx)(x.o, {}), (0, r.jsx)(D.U, {
             onChange: e => {
               M(e), 0 === _.length && (0, R.lT)(_, e, I)
@@ -403,7 +403,7 @@ function et(e) {
             fullWidth: true
           })]
         })
-      }), a ? (0, r.jsx)($, {
+      }), o ? (0, r.jsx)($, {
         onSaveTheme: F,
         canApply: H
       }) : (0, r.jsx)(ee, {

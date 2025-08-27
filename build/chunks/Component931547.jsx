@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk740313 = require("./740313.js");
@@ -22,7 +22,7 @@ function c(e) {
     ctaMessage: d
   } = e;
   return (0, r.jsxs)("div", {
-    className: o()(l.container, u),
+    className: a()(l.container, u),
     children: [(0, r.jsxs)("div", {
       className: l.textContainer,
       children: [(0, r.jsx)(s.Mgn, {
@@ -42,7 +42,7 @@ function c(e) {
           variant: "text-sm/normal",
           children: t
         }), null != n && (0, r.jsx)(s.Text, {
-          className: o()(l.info, l.error),
+          className: a()(l.info, l.error),
           variant: "text-sm/normal",
           children: n
         })]
@@ -50,11 +50,11 @@ function c(e) {
     }), (0, r.jsx)(s.LZC, {
       size: 16,
       horizontal: true
-    }), (0, r.jsx)(a.zx, {
+    }), (0, r.jsx)(o.zx, {
       className: l.undoButton,
-      color: a.zx.Colors.LINK,
-      look: a.zx.Looks.LINK,
-      size: a.zx.Sizes.ICON,
+      color: o.zx.Colors.LINK,
+      look: o.zx.Looks.LINK,
+      size: o.zx.Sizes.ICON,
       onClick: i,
       submitting: c,
       children: d

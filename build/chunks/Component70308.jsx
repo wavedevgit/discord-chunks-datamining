@@ -134,7 +134,7 @@ function g() {
     }, p.current)
   }, [d]), (0, Chunk951288.jsx)("div", {
     className: h.styles,
-    children: g((e, t) => null === t ? null : (0, r.jsx)(o.animated.div, {
+    children: g((e, t) => null === t ? null : (0, r.jsx)(a.animated.div, {
       style: e,
       children: (0, r.jsx)(s.F, f({}, t))
     }, t.id))

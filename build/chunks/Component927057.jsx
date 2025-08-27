@@ -22,7 +22,7 @@ function p(e) {
   } = e, n = (0, c.CJ)(), p = null == n ? true : n.channelId, h = s.Z.getChannel(p), m = l.Z.getGuild(null == h ? true : h.getGuildId()), g = e => (0, u.af)(e, p, t), E = (e, t) => {
     let n = s.Z.getChannel(null == e ? true : e.value);
     if (null == n) return null;
-    let i = n.type === f.d4z.GUILD_CATEGORY ? o.ROc : (0, a.KS)(n);
+    let i = n.type === f.d4z.GUILD_CATEGORY ? a.ROc : (0, o.KS)(n);
     return null != i ? (0, r.jsx)(i, {
       size: "custom",
       color: "currentColor",

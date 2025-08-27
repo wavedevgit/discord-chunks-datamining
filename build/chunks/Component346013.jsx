@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk772848 = require("./772848.js"),
   Chunk831209 = require("./831209.js"),
   Chunk399606 = require("./399606.js"),
@@ -77,7 +77,7 @@ function U(e, t) {
 }
 
 function G(e) {
-  var t, n, o, j;
+  var t, n, a, j;
   let {
     embedUrl: k,
     message: G,
@@ -90,9 +90,9 @@ function G(e) {
   }, [V]), $ = (0, c.e7)([I.ZP], () => (null == V ? true : V.authorId) != null ? I.ZP.getMember(V.guildId, V.authorId) : null), ee = (0, _.Z)((null == $ ? true : $.avatarDecoration) != null ? null == $ ? true : $.avatarDecoration : null == V || null == (t = V.user) ? true : t.avatarDecoration), [et, en, er] = i.useMemo(() => {
     var e, t;
     return [null != (e = null == $ ? true : $.colorString) ? e : "inherit", null != (t = null == $ ? true : $.colorStrings) ? t : null, null == $ ? true : $.colorRoleId]
-  }, [$]), ei = (0, y.X7)(null == $ ? true : $.guildId, null != (o = null == V ? true : V.authorId) ? o : true, en), {
-    reducedMotion: eo
-  } = i.useContext(u.Sfi), [ea, es] = i.useState(false), el = i.useCallback(() => {
+  }, [$]), ei = (0, y.X7)(null == $ ? true : $.guildId, null != (a = null == V ? true : V.authorId) ? a : true, en), {
+    reducedMotion: ea
+  } = i.useContext(u.Sfi), [eo, es] = i.useState(false), el = i.useCallback(() => {
     q(true)
   }, [q]), ec = i.useCallback(() => {
     q(false)
@@ -110,11 +110,11 @@ function G(e) {
   let ed = (0, S.NZ)({
       avatarDecoration: ee,
       size: (0, p.y9)(u.EFr.SIZE_40),
-      canAnimate: ea
+      canAnimate: eo
     }),
-    ef = null == (n = V.user) ? true : n.getAvatarURL(V.guildId, 40, ea),
+    ef = null == (n = V.user) ? true : n.getAvatarURL(V.guildId, 40, eo),
     e_ = () => {
-      eo.enabled || es(e => !e)
+      ea.enabled || es(e => !e)
     },
     ep = () => null == V.authorId ? (0, r.jsx)(u.rz2, {
       name: V.authorName,
@@ -150,7 +150,7 @@ function G(e) {
       children: [!X && (true === V.shouldShowBlurredThumbnailImage ? (0, r.jsx)("img", {
         src: L,
         alt: D.intl.string(D.t.rIbh8P),
-        className: a()(x.thumbnail, {
+        className: o()(x.thumbnail, {
           [x.spoiler]: V.shouldSpoiler
         }),
         onContextMenu: Y,
@@ -160,7 +160,7 @@ function G(e) {
         backgroundSrc: "".concat(eh, "?format=png"),
         alt: D.intl.string(D.t.rIbh8P),
         aspectRatio: 16 / 9,
-        className: a()(x.thumbnail, {
+        className: o()(x.thumbnail, {
           [x.spoiler]: V.shouldSpoiler
         }),
         imageChildClassName: x.thumbnailImage,
@@ -194,7 +194,7 @@ function G(e) {
         }), (0, r.jsx)(u.Text, {
           variant: "text-sm/normal",
           color: "text-muted",
-          className: a()(x.descriptionHeaderText, x.descriptionSubtitle),
+          className: o()(x.descriptionHeaderText, x.descriptionSubtitle),
           children: V.subtitle
         })]
       }), (0, r.jsxs)("div", {

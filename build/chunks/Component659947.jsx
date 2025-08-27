@@ -105,7 +105,7 @@ function N() {
 
 function R(e) {
   let t = "" !== e,
-    n = (0, o.Wu)([f.ZP, d.Z, p.Z], () => {
+    n = (0, a.Wu)([f.ZP, d.Z, p.Z], () => {
       let e = p.Z.getGuildId();
       if (t || null == e) return [];
       let n = [];
@@ -121,13 +121,13 @@ function R(e) {
 function P(e) {
   var t, n;
   let {
-    keybind: o
-  } = e, l = i.useRef(o);
+    keybind: a
+  } = e, l = i.useRef(a);
   i.useEffect(() => {
-    l.current = o
+    l.current = a
   });
-  let [u, d] = i.useState(null != (n = null == (t = o.params) ? true : t.channelId) ? n : true), f = i.useCallback(() => {
-    (0, a.ZDy)(async () => e => (0, r.jsx)(x, O(b({}, e), {
+  let [u, d] = i.useState(null != (n = null == (t = a.params) ? true : t.channelId) ? n : true), f = i.useCallback(() => {
+    (0, o.ZDy)(async () => e => (0, r.jsx)(x, O(b({}, e), {
       onSelect: e => {
         d(e), s.Z.setKeybind(O(b({}, l.current), {
           params: {
@@ -137,7 +137,7 @@ function P(e) {
       }
     })))
   }, []);
-  return (0, r.jsx)(a.hjN, {
+  return (0, r.jsx)(o.hjN, {
     title: m.intl.string(m.t.q4JpMz),
     className: g.channelIdSection,
     children: (0, r.jsxs)(c.Z, {
@@ -150,7 +150,7 @@ function P(e) {
       }), (0, r.jsx)(c.Z.Child, {
         grow: 0,
         shrink: 0,
-        children: (0, r.jsx)(a.zxk, {
+        children: (0, r.jsx)(o.zxk, {
           variant: "primary",
           text: m.intl.string(m.t.Dm8O4e),
           onClick: f
@@ -189,7 +189,7 @@ function x(e) {
   let {
     transitionState: t,
     onClose: n,
-    onSelect: o
+    onSelect: a
   } = e, s = i.useId(), c = i.useRef(null), {
     mouseFocusEnabled: f,
     enableMouseFocus: p,
@@ -226,16 +226,16 @@ function x(e) {
       if ((null == e ? true : e.type) === h.h8.VOICE_CHANNEL) return e.record
     })();
     if (null == i) return null;
-    let a = null != i.parent_id ? d.Z.getChannel(i.parent_id) : true,
+    let o = null != i.parent_id ? d.Z.getChannel(i.parent_id) : true,
       s = _.Z.getGuild(i.guild_id);
     return (0, r.jsx)(u.$W, {
       id: i.id,
       channel: i,
-      category: a,
+      category: o,
       focused: S === t,
       onMouseEnter: () => f.current && P(t),
       onClick: () => {
-        o(i.id), n()
+        a(i.id), n()
       },
       onFocus: () => P(t),
       children: null != s ? (0, r.jsx)("div", {
@@ -258,7 +258,7 @@ function x(e) {
           let e = O[S];
           if ((null == e ? true : e.type) === h.h8.VOICE_CHANNEL) return e.record
         })();
-        null == e ? o(true) : o(e.id), n();
+        null == e ? a(true) : a(e.id), n();
         break
       }
       case "arrowup":
@@ -279,14 +279,14 @@ function x(e) {
   return (0, r.jsx)("div", {
     className: g.voiceModalContainer,
     onMouseMove: p,
-    children: (0, r.jsxs)(a.Y0X, {
+    children: (0, r.jsxs)(o.Y0X, {
       transitionState: t,
-      size: a.CgR.MEDIUM,
+      size: o.CgR.MEDIUM,
       className: g.voiceModalRootContainer,
       parentComponent: "SwitchChannelKeybindSettings",
       children: [(0, r.jsx)("div", {
         className: g.inputWrapper,
-        children: (0, r.jsx)(a.oil, {
+        children: (0, r.jsx)(o.oil, {
           value: b,
           onChange: y,
           onKeyDown: j,
@@ -298,7 +298,7 @@ function x(e) {
           "aria-autocomplete": "list",
           spellCheck: false
         })
-      }), 0 === x && "" !== b && (0, r.jsx)(N, {}), (x > 0 || "" === b) && (0, r.jsx)(a.Tvr, {
+      }), 0 === x && "" !== b && (0, r.jsx)(N, {}), (x > 0 || "" === b) && (0, r.jsx)(o.Tvr, {
         innerId: s,
         innerRole: "listbox",
         "aria-label": m.intl.string(m.t["+N3fW1"]),
@@ -324,7 +324,7 @@ function L(e) {
     channel: n,
     category: i,
     guild: s
-  } = (0, o.cj)([d.Z, _.Z], () => {
+  } = (0, a.cj)([d.Z, _.Z], () => {
     let e = null != t ? d.Z.getChannel(t) : true;
     return null != e ? {
       channel: e,
@@ -336,7 +336,7 @@ function L(e) {
       guild: true
     }
   });
-  return null == n ? (0, r.jsx)(a.Text, {
+  return null == n ? (0, r.jsx)(o.Text, {
     variant: "text-md/medium",
     color: "text-muted",
     className: g.noVoiceChannelSelected,

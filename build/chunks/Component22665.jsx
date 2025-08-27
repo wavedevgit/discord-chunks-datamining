@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk913527 = require("./913527.js"),
   l = require.n(Chunk913527),
   Chunk481060 = require("./481060.js"),
@@ -26,11 +26,11 @@ let O = e => {
   let {
     reportingUserId: t,
     guildId: n,
-    compact: o,
+    compact: a,
     channel: s,
     messageId: O,
     reportedTimestamp: v
-  } = e, I = p.default.getUser(t), T = i.useMemo(() => o ? (0, f.Z)((0, h.vc)(l()(), "LT")) : null, [o]), S = (0, _.l)({
+  } = e, I = p.default.getUser(t), T = i.useMemo(() => a ? (0, f.Z)((0, h.vc)(l()(), "LT")) : null, [a]), S = (0, _.l)({
     user: I,
     channelId: s.id,
     guildId: n,
@@ -40,7 +40,7 @@ let O = e => {
     onUserClick: S
   }) : g.intl.string(m.default.xpRjfX);
   return (0, r.jsxs)("div", {
-    className: a()(b.messageSpine, b.repliedMessage, T),
+    className: o()(b.messageSpine, b.repliedMessage, T),
     children: [(0, r.jsx)(c.qEK, {
       src: A,
       size: c.EFr.SIZE_16,

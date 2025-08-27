@@ -42,15 +42,15 @@ let s = [{
         let {
           isDisabled: t,
           placeholder: n,
-          maxVisibleItems: o
+          maxVisibleItems: a
         } = e, [l, c] = i.useState("blue");
-        return (0, r.jsx)(a.q4, {
+        return (0, r.jsx)(o.q4, {
           value: l,
           onChange: c,
           options: s,
           placeholder: n,
           isDisabled: t,
-          maxVisibleItems: o
+          maxVisibleItems: a
         })
       },
       controls: {
@@ -77,16 +77,16 @@ let s = [{
         let {
           isDisabled: t,
           placeholder: n,
-          clearable: a,
+          clearable: o,
           filter: l
         } = e, [c, u] = i.useState("blue");
-        return (0, r.jsx)(o.V, {
+        return (0, r.jsx)(a.V, {
           value: c,
           onChange: u,
           options: s,
           placeholder: n,
           isDisabled: t,
-          clearable: a,
+          clearable: o,
           filter: l
         })
       },

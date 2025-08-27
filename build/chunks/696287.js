@@ -39,7 +39,7 @@ function p(e) {
 let h = 5 * Chunk70956.Z.Millis.MINUTE;
 
 function m(e) {
-  return e.distributor === f.GQo.ROBLOX ? (0, o.x3)(e) : null
+  return e.distributor === f.GQo.ROBLOX ? (0, a.x3)(e) : null
 }
 
 function g(e) {
@@ -84,13 +84,13 @@ class E extends Chunk147913.Z {
         var r, i;
         let s = g(e),
           c = !this.runningGameKeys.has(s),
-          _ = null != (i = e.id) ? i : null == (r = a.Z.getGameByName(e.name)) ? true : r.id;
+          _ = null != (i = e.id) ? i : null == (r = o.Z.getGameByName(e.name)) ? true : r.id;
         l.default.track(f.rMx.RUNNING_GAME_HEARTBEAT, p({
           game_id: _,
           game_name: e.name,
           game_distributor: e.distributor,
           game_distributor_game_id: e.sku,
-          game_metadata: (0, o.sD)(e),
+          game_metadata: (0, a.sD)(e),
           game_executable: (0, u.N6)(e.exePath),
           game_detection_enabled: (0, d.ik)(e),
           initial_heartbeat: c

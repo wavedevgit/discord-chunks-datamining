@@ -12,13 +12,13 @@ var Chunk580983 = require("./580983.js"),
   u = RegExp.prototype;
 module.exports = function(e, t, n, d) {
   var f = s(e),
-    _ = !a(function() {
+    _ = !o(function() {
       var t = {};
       return t[f] = function() {
         return 7
       }, 7 !== "" [e](t)
     }),
-    p = _ && !a(function() {
+    p = _ && !o(function() {
       var t = false,
         n = /a/;
       return "split" === e && ((n = {}).constructor = {}, n.constructor[c] = function() {
@@ -29,9 +29,9 @@ module.exports = function(e, t, n, d) {
     });
   if (!_ || !p || n) {
     var h = /./ [f],
-      m = t(f, "" [e], function(e, t, n, i, a) {
+      m = t(f, "" [e], function(e, t, n, i, o) {
         var s = t.exec;
-        return s === o || s === u.exec ? _ && !a ? {
+        return s === a || s === u.exec ? _ && !o ? {
           done: true,
           value: r(h, t, n, i)
         } : {

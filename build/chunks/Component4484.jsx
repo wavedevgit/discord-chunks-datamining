@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk911969 = require("./911969.js"),
   Chunk367907 = require("./367907.js"),
   Chunk998698 = require("./998698.js"),
@@ -37,7 +37,7 @@ var Chunk951288 = require("./951288.js"),
 let x = Chunk647438.forwardRef(function(e, t) {
   let {
     value: n,
-    type: o,
+    type: a,
     channel: x,
     className: L,
     id: j,
@@ -64,8 +64,8 @@ let x = Chunk647438.forwardRef(function(e, t) {
     canOnlyUseTextCommands: en,
     disableAutoFocus: er,
     disableEnterToSubmit: ei,
-    allowNewLines: eo,
-    "aria-owns": ea,
+    allowNewLines: ea,
+    "aria-owns": eo,
     "aria-expanded": es,
     "aria-haspopup": el,
     "aria-activedescendant": ec,
@@ -78,30 +78,30 @@ let x = Chunk647438.forwardRef(function(e, t) {
     var r;
     let {
       value: i,
-      selection: o
-    } = n, a = b.bN.richValue(e), s = e.selection, l = false;
-    if (true !== i && i !== a) {
+      selection: a
+    } = n, o = b.bN.richValue(e), s = e.selection, l = false;
+    if (true !== i && i !== o) {
       if (e.children = i, "parent" === t && !e.previewMarkdown && e.chatInputType === _.Ie.EDIT) {
         try {
           e.previewMarkdown = true, (0, C.KH)(e, x.guild_id, x.id)
         } finally {
           e.previewMarkdown = false
-        }(0, C.KH)(e, x.guild_id, x.id), o = true
+        }(0, C.KH)(e, x.guild_id, x.id), a = true
       }
-      "undo" !== t && true !== i && i !== a && h.T.insertEntry(e, "other", false, a, s), l = true
+      "undo" !== t && true !== i && i !== o && h.T.insertEntry(e, "other", false, o, s), l = true
     }
-    if (null == o || b.Ew.isValid(e, o) || (o = true), (l || !b.Ew.isValid(e, s)) && true === o) {
+    if (null == a || b.Ew.isValid(e, a) || (a = true), (l || !b.Ew.isValid(e, s)) && true === a) {
       let t = b.bN.end(e, []);
-      o = {
+      a = {
         anchor: t,
         focus: t
       }
     }
-    let u = null != o && !b.Ew.equals(o, s);
-    if (l && !er && b.bN.focus(e), null != o && u) {
-      e.selection = o;
+    let u = null != a && !b.Ew.equals(a, s);
+    if (l && !er && b.bN.focus(e), null != a && u) {
+      e.selection = a;
       let t = h.T.currentEntry(e);
-      null != t && (t.selection = o), l = true
+      null != t && (t.selection = a), l = true
     }
     let d = p.cr(e);
     if (null != d && d[0].command.id !== (null == (r = c.Z.getActiveCommand(x.id)) ? true : r.id) && h.T.withMergedEntry(e, () => {
@@ -118,7 +118,7 @@ let x = Chunk647438.forwardRef(function(e, t) {
     eg.current = true
   }, []), eI = (0, O.Z)({
     channel: x,
-    chatInputType: o,
+    chatInputType: a,
     canUseCommands: et,
     canOnlyUseTextCommands: en,
     onChangeStart: eO,
@@ -145,12 +145,12 @@ let x = Chunk647438.forwardRef(function(e, t) {
       });
       for (let e of r.options) !e.required || e.name in t.values || (E.Q.insertCommandOption(eI, e), n.push(e));
       if (n.length > 0) {
-        var o, a;
+        var a, o;
         let e = n[0];
         E.Q.selectCommandOption(eI, e.name), i = true, (0, l.yw)(w.rMx.APPLICATION_COMMAND_VALIDATION_FAILED, {
           application_id: null == r ? true : r.applicationId,
-          command_id: null == r || null == (o = r.rootCommand) ? true : o.id,
-          argument_type: s.jw[null != (a = null == e ? true : e.type) ? a : 3],
+          command_id: null == r || null == (a = r.rootCommand) ? true : a.id,
+          argument_type: s.jw[null != (o = null == e ? true : e.type) ? o : 3],
           is_required: null == e ? true : e.required
         })
       }
@@ -182,7 +182,7 @@ let x = Chunk647438.forwardRef(function(e, t) {
     onKeyUp: K,
     onTab: z,
     onEnter: q,
-    allowNewLines: eo,
+    allowNewLines: ea,
     submit: eS,
     hideAutocomplete: J,
     moveSelection: $
@@ -220,13 +220,13 @@ let x = Chunk647438.forwardRef(function(e, t) {
       handler: eR
     }), (0, r.jsx)("div", {
       ref: eh,
-      className: a()(L, D.slateContainer),
+      className: o()(L, D.slateContainer),
       children: (0, r.jsx)(m.Z, {
         id: j,
         editor: eI,
         channelId: x.id,
         guildId: x.guild_id,
-        className: a()(D.slateTextArea, B),
+        className: o()(D.slateTextArea, B),
         placeholder: U,
         readOnly: eb,
         spellCheck: ee,
@@ -242,7 +242,7 @@ let x = Chunk647438.forwardRef(function(e, t) {
         decorateExtra: eD,
         renderExtraElement: ex,
         renderExtraLeaf: eL,
-        "aria-owns": ea,
+        "aria-owns": eo,
         "aria-haspopup": el,
         "aria-expanded": es,
         "aria-activedescendant": ec,

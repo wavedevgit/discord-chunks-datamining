@@ -4,8 +4,8 @@
 module.exports = function(e, t, n, r) {
   if (e.size) {
     var i = 0;
-    e.reduce(function(e, o, a) {
-      return t(e, o) || (n(e) && r(i, a), i = a), o
+    e.reduce(function(e, a, o) {
+      return t(e, a) || (n(e) && r(i, o), i = o), a
     }), n(e.last()) && r(i, e.count())
   }
 }

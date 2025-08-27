@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -25,7 +25,7 @@ var Chunk951288 = require("./951288.js"),
 function y(e) {
   let {
     message: t,
-    channel: o,
+    channel: a,
     compact: y
   } = e, O = (0, s.Wu)([f.Z], () => Array.from(f.Z.getAllGuildStickers().values()).flat()).slice(0, 20), [v, I] = i.useState(null);
   return (i.useEffect(() => {
@@ -33,19 +33,19 @@ function y(e) {
       O.length > 0 && I(O[Math.floor(Math.random() * O.length)])
     }, 500);
     return () => clearInterval(e)
-  }, [O]), null == o.guild_id) ? null : (0, r.jsxs)("div", {
+  }, [O]), null == a.guild_id) ? null : (0, r.jsxs)("div", {
     children: [(0, r.jsx)(u.Z, {
-      className: a()(b.mainContainer, {
+      className: o()(b.mainContainer, {
         [b.compact]: y
       }),
       icon: n(570111),
       compact: y,
       children: (0, r.jsx)("div", {
-        className: a()(b.__invalid_content, {
+        className: o()(b.__invalid_content, {
           [b.compact]: y
         }),
         children: (0, r.jsx)("div", {
-          className: a()(b.__invalid_messageContent, {
+          className: o()(b.__invalid_messageContent, {
             [b.compact]: y
           }),
           children: "" !== t.content ? t.content : E.intl.string(E.t.wnn1DQ)
@@ -60,12 +60,12 @@ function y(e) {
           onClick: () => {
             p.default.track(g.rMx.CHANNEL_PROMPT_ACTION_CLICKED, {
               message_id: t.id,
-              channel_id: o.id,
-              guild_id: o.guild_id,
+              channel_id: a.id,
+              guild_id: a.guild_id,
               action_type: "upload_file"
             }), h.S.dispatch(g.CkL.UPLOAD_FILE), (0, d.fE)({
               message: t,
-              channel: o,
+              channel: a,
               shouldMention: true
             })
           },
@@ -81,10 +81,10 @@ function y(e) {
           onClick: () => {
             p.default.track(g.rMx.CHANNEL_PROMPT_ACTION_CLICKED, {
               message_id: t.id,
-              channel_id: o.id,
-              guild_id: o.guild_id,
+              channel_id: a.id,
+              guild_id: a.guild_id,
               action_type: "sticker"
-            }), (0, m.O)(t.id, o)
+            }), (0, m.O)(t.id, a)
           },
           children: null != v ? (0, r.jsx)(_.Z, {
             size: 32,

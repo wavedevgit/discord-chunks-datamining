@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk585483 = require("./585483.js"),
@@ -23,7 +23,7 @@ function g() {
   let [e, t] = Chunk647438.useState(false), n = (0, Chunk442837.Wu)([Chunk224724.Z], () => {
     var e;
     return null != (e = Chunk224724.Z.getSaveablePendingWidgets()) ? module : []
-  }), o = (0, Chunk442837.e7)([Chunk224724.Z], () => Chunk224724.Z.hasSaveablePendingChanges()), g = (0, Chunk442837.e7)([Chunk224724.Z], () => Chunk224724.Z.isSubmitting);
+  }), a = (0, Chunk442837.e7)([Chunk224724.Z], () => Chunk224724.Z.hasSaveablePendingChanges()), g = (0, Chunk442837.e7)([Chunk224724.Z], () => Chunk224724.Z.isSubmitting);
   Chunk647438.useEffect(() => {
     let e = null;
 
@@ -45,12 +45,12 @@ function g() {
       Chunk592183.Z.clearPendingWidgets()
     }, []);
   return Chunk120356 ? (0, Chunk951288.jsx)("div", {
-    className: a()(Chunk461671.container, {
+    className: o()(Chunk461671.container, {
       [Chunk461671.visible]: Chunk120356
     }),
     role: "status",
     children: (0, Chunk951288.jsxs)("div", {
-      className: a()(Chunk461671.content, {
+      className: o()(Chunk461671.content, {
         [Chunk461671.emphasized]: module
       }),
       children: [(0, Chunk951288.jsx)("div", {

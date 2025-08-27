@@ -3,12 +3,12 @@
 "use strict";
 require.d(exports, {
   T: () => i,
-  Z: () => o
+  Z: () => a
 });
 var Chunk951288 = require("./951288.js");
 let i = require("./647438.js").createContext(false);
 
-function o(e) {
+function a(e) {
   return (0, r.jsx)(i.Provider, {
     value: true,
     children: e.children

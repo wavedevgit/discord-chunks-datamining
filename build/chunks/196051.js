@@ -2,26 +2,26 @@
 /** chunk id: 196051, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Bo: () => a,
+  Bo: () => o,
   Ct: () => l,
-  LA: () => o,
+  LA: () => a,
   NB: () => s,
   cP: () => i
 });
 var Chunk570140 = require("./570140.js");
 
-function i(e, t, n, i, o) {
+function i(e, t, n, i, a) {
   r.Z.dispatch({
     type: "SPEAK_TEXT",
     text: e,
     interrupt: t,
     maxLength: n,
     onStart: i,
-    onEnd: o
+    onEnd: a
   })
 }
 
-function o(e, t) {
+function a(e, t) {
   r.Z.dispatch({
     type: "SPEAK_MESSAGE",
     channel: e,
@@ -29,7 +29,7 @@ function o(e, t) {
   })
 }
 
-function a(e, t) {
+function o(e, t) {
   r.Z.dispatch({
     type: "SPEAKING_MESSAGE",
     channelId: e,

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk953782 = require("./953782.js");
 
 function s(e, t, n) {
@@ -57,8 +57,8 @@ function d(e) {
     text: s
   } = e;
   if (i.commandName) {
-    let e = o()(a.commandName, {
-      [a.emptyText]: "" === s.text
+    let e = a()(o.commandName, {
+      [o.emptyText]: "" === s.text
     });
     return (0, r.jsx)("span", u(l({}, t), {
       className: e,

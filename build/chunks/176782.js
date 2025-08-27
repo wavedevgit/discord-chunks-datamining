@@ -23,30 +23,30 @@ let s = {
   l = e => {
     let t = !(0, r.e7)([i.Z], () => i.Z.useReducedMotion),
       n = {
-        [o.zW.DEFAULT]: s,
-        [o.zW.REWARD]: {
+        [a.zW.DEFAULT]: s,
+        [a.zW.REWARD]: {
           subtitle: {
             onlyShowOnHover: true,
             textVariant: "text-sm/semibold"
           },
           description: {
             onlyShowOnHover: true,
-            className: a.cardDescriptionTenureReward
+            className: o.cardDescriptionTenureReward
           },
           descriptionCta: {
             onlyShowOnHover: false,
             hideOnHoverComponent: true,
-            className: a.descriptionCTATenureReward
+            className: o.descriptionCTATenureReward
           },
           cardContainer: {
-            className: t ? a.nitroGradientBorderHover : true
+            className: t ? o.nitroGradientBorderHover : true
           }
         },
-        [o.zW.NITRO_GRADIENT_HOVER_BORDER]: {
+        [a.zW.NITRO_GRADIENT_HOVER_BORDER]: {
           cardContainer: {
-            className: a.nitroGradientBorderHover
+            className: o.nitroGradientBorderHover
           }
         }
       };
-    return null != e ? n[e] : n[o.zW.DEFAULT]
+    return null != e ? n[e] : n[a.zW.DEFAULT]
   }

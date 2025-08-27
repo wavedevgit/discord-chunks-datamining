@@ -63,8 +63,8 @@ function y(e) {
     searchQueryString: n,
     searchQuery: r,
     offset: i
-  } = e, o = (0, c.Tm)(t);
-  s.Z.clearSearchMessages(o), s.Z.setShowNoResultsAlt(t), s.Z.setShowBlockedResults(t, false), s.Z.updateSearchResultsQuery(t, n, r, i), s.Z.addWebSearchHistoryItem(t, n)
+  } = e, a = (0, c.Tm)(t);
+  s.Z.clearSearchMessages(a), s.Z.setShowNoResultsAlt(t), s.Z.setShowBlockedResults(t, false), s.Z.updateSearchResultsQuery(t, n, r, i), s.Z.addWebSearchHistoryItem(t, n)
 }
 
 function O(e) {
@@ -73,13 +73,13 @@ function O(e) {
     selectedPageIndex: n,
     queryString: r,
     searchMode: i
-  } = e, o = (0, c.Tm)(t);
+  } = e, a = (0, c.Tm)(t);
   s.Z.fetchTabMessages({
     searchContext: t,
     searchTabs: [p.sR.MESSAGES],
     searchQueryString: r,
     searchMode: i,
-    getId: () => o,
+    getId: () => a,
     getLimit: () => h.vpv,
     onFetchStart: e => {
       let {
@@ -106,16 +106,16 @@ function v(e) {
     searchQuery: n,
     queryString: r,
     searchEverywhere: i,
-    offset: o,
-    searchMode: a
-  } = e, l = b(g({}, n, null != a ? (0, c.zH)(a) : {}), {
-    offset: o
+    offset: a,
+    searchMode: o
+  } = e, l = b(g({}, n, null != o ? (0, c.zH)(o) : {}), {
+    offset: a
   });
   y({
     searchContext: t,
     searchQueryString: r,
     searchQuery: l,
-    offset: o
+    offset: a
   }), s.Z.fetchMessages({
     searchContext: t,
     query: l,
@@ -126,15 +126,15 @@ function v(e) {
 function I(e, t) {
   let n = (0, c.Tm)(e),
     r = _.Z.getEditorState(n),
-    a = _.Z.getSearchResultsQueryString(n),
+    o = _.Z.getSearchResultsQueryString(n),
     u = l.Z.getIsFetching(n);
-  if (null == r || null == a || u) return;
-  let d = a.endsWith(" ") ? a + t : a + " " + t,
-    p = o.c2(d, r);
-  p = o.Hl(p, 512);
+  if (null == r || null == o || u) return;
+  let d = o.endsWith(" ") ? o + t : o + " " + t,
+    p = a.c2(d, r);
+  p = a.Hl(p, 512);
   let m = (0, c.kG)(d),
     g = m.filter(e => e.type !== i.ZP.NON_TOKEN_TYPE);
-  p = o.lv(g, p, f.ZP), p = o.iK(0 + d.length, p), s.Z.setSearchState(e, p);
+  p = a.lv(g, p, f.ZP), p = a.iK(0 + d.length, p), s.Z.setSearchState(e, p);
   let E = (0, c.$G)(m);
   e.type === h.aib.DMS ? O({
     searchContext: e,
@@ -158,13 +158,13 @@ let T = {
   getSearchInputText: function(e) {
     let t = (0, c.Tm)(e),
       n = null != t ? _.Z.getEditorState(t) : null;
-    return null != n ? o.Sq(n) : null
+    return null != n ? a.Sq(n) : null
   },
   ensureSearchInputDecorators: function(e) {
     let t, n = (0, c.Tm)(e),
       i = _.Z.getEditorState(n),
       l = null == i ? true : i.getCurrentContent(),
       u = null == i ? true : i.getSelection();
-    null != l && null != u ? (t = o.l8(a.Jl(f.ZP), l), t = r.EditorState.forceSelection(t, u)) : t = o.nR(a.Jl(f.ZP)), s.Z.setSearchState(e, t)
+    null != l && null != u ? (t = a.l8(o.Jl(f.ZP), l), t = r.EditorState.forceSelection(t, u)) : t = a.nR(o.Jl(f.ZP)), s.Z.setSearchState(e, t)
   }
 }

@@ -27,7 +27,7 @@ function E(e) {
     children: c
   } = e, {
     analyticsLocations: E
-  } = (0, l.ZP)(), b = (0, i.useRef)(null), y = (0, o.e7)([u.Z], () => u.Z.isFocused()), O = (0, i.useCallback)(() => {
+  } = (0, l.ZP)(), b = (0, i.useRef)(null), y = (0, a.e7)([u.Z], () => u.Z.isFocused()), O = (0, i.useCallback)(() => {
     t(_.L.TAKE_ACTION), s.Z.open(f.oAB.PROFILE_CUSTOMIZATION, null, {
       analyticsLocations: E
     }), (0, d.I)({
@@ -40,7 +40,7 @@ function E(e) {
     var e, t, n;
     y && (null == (e = b.current) ? true : e.paused) ? null == (t = b.current) || t.play().catch(g.error) : y || null == (n = b.current) || n.pause()
   }, [y]), (0, r.jsxs)(r.Fragment, {
-    children: [c, (0, r.jsx)(a.J, {
+    children: [c, (0, r.jsx)(o.J, {
       targetElementRef: n,
       shouldShow: true,
       onRequestClose: v,

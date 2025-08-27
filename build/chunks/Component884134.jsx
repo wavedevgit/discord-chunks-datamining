@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
   Chunk680018 = require("./680018.jsx"),
@@ -82,12 +82,12 @@ let F = 0,
   V = 5e3;
 
 function H(e) {
-  let [t, n] = i.useState(0), [r, o] = i.useState(false), a = i.useRef(e);
+  let [t, n] = i.useState(0), [r, a] = i.useState(false), o = i.useRef(e);
   return i.useEffect(() => {
-    e === a.current || r || n(e => e + 1), a.current = e, o(false)
+    e === o.current || r || n(e => e + 1), o.current = e, a(false)
   }, [e, r]), {
     key: t,
-    handleInternalChange: i.useCallback(e => (o(true), e), [])
+    handleInternalChange: i.useCallback(e => (a(true), e), [])
   }
 }
 
@@ -169,7 +169,7 @@ function q(e) {
     gradientAngle: t,
     setGradientAngle: n
   } = e, {
-    key: o,
+    key: a,
     handleInternalChange: s
   } = H(t), [l, c] = i.useState("".concat(Math.round(t), "\xb0"));
   i.useEffect(() => {
@@ -184,7 +184,7 @@ function q(e) {
     c("".concat(i, "\xb0")), (0, N.Ac)(), n(i)
   };
   return (0, r.jsxs)("div", {
-    className: a()(k.sliderContainer, k.gradientDirectionSliderContainer),
+    className: o()(k.sliderContainer, k.gradientDirectionSliderContainer),
     children: [(0, r.jsxs)("div", {
       className: k.controlLabelContainer,
       children: [(0, r.jsx)(f.Text, {
@@ -207,7 +207,7 @@ function q(e) {
       },
       onValueRender: () => null,
       keyboardStep: 1
-    }, o)]
+    }, a)]
   })
 }
 
@@ -216,8 +216,8 @@ function X(e) {
     chassisMixAmount: t,
     setChassisMixAmount: n
   } = e, {
-    key: o,
-    handleInternalChange: a
+    key: a,
+    handleInternalChange: o
   } = H(t), [s, l] = i.useState("".concat(Math.round(t), "%"));
   i.useEffect(() => {
     l("".concat(Math.round(t), "%"))
@@ -250,18 +250,18 @@ function X(e) {
       minValue: 0,
       maxValue: 100,
       onValueChange: e => {
-        (0, N.z3)(), a(e), n(e)
+        (0, N.z3)(), o(e), n(e)
       },
       onValueRender: () => null,
       keyboardStep: 1
-    }, o)]
+    }, a)]
   })
 }
 
 function Q(e) {
   let {
     isCoachmark: t
-  } = e, [n, o] = i.useState(false), a = i.useRef(false), [s, l] = i.useState(false), u = i.useRef(null), _ = i.useCallback(() => {
+  } = e, [n, a] = i.useState(false), o = i.useRef(false), [s, l] = i.useState(false), u = i.useRef(null), _ = i.useCallback(() => {
     var e;
     (0, N.Om)();
     let t = (0, S.C)();
@@ -272,17 +272,17 @@ function Q(e) {
     })
   }, []);
   i.useEffect(() => {
-    if (t) return a.current = false, u.current = setTimeout(() => {
-      a.current || o(true)
+    if (t) return o.current = false, u.current = setTimeout(() => {
+      o.current || a(true)
     }, V), () => {
       null != u.current && clearTimeout(u.current)
     }
   }, [t]);
   let p = i.useCallback(() => {
-      a.current = true
+      o.current = true
     }, []),
     h = i.useCallback(() => {
-      o(false)
+      a(false)
     }, []),
     m = n && !s;
   return (0, r.jsx)(d.i_, {
@@ -360,17 +360,17 @@ function ee(e) {
     onSaveTheme: t,
     canApply: n,
     metadata: i
-  } = e, o = (0, O.m)(L.p9.TIER_2);
-  (0, N.hf)(o, m.Z.CUSTOM_THEMES_EDITOR);
+  } = e, a = (0, O.m)(L.p9.TIER_2);
+  (0, N.hf)(a, m.Z.CUSTOM_THEMES_EDITOR);
   let s = () => {
       (0, N.Vb)(), (0, b.Q3)(l.z.CUSTOM_THEME_COACHMARK), (null == i ? true : i.from) === E.tE.SETTING ? (p.Z.open(), (0, E.Ll)()) : (null == i ? true : i.from) === E.tE.CLIENT_THEMES_EDITOR ? (0, E.XO)(E.wh.CLIENT_THEMES) : (0, E.Ll)()
     },
-    u = a()(k.footerContainer, {
-      [k.footerContainerNonPremium]: !o
+    u = o()(k.footerContainer, {
+      [k.footerContainerNonPremium]: !a
     });
   return (0, r.jsx)("div", {
     className: u,
-    children: o ? (0, r.jsxs)(r.Fragment, {
+    children: a ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(P.q, {}), (0, r.jsx)(c.z, {
         variant: "secondary",
         onClick: s,
@@ -402,8 +402,8 @@ function et(e) {
   var t;
   let {
     metadata: n,
-    markAsDismissed: o,
-    isCoachmark: a
+    markAsDismissed: a,
+    isCoachmark: o
   } = e, u = C.Mc.useExperiment({
     location: "ClientThemeColorPickerTools"
   }).enabled, d = (0, A.jJ)(), p = (0, A.SK)(), y = i.useRef(false), {
@@ -424,14 +424,14 @@ function et(e) {
         gradientAngle: P,
         baseMix: S
       }
-    }), (0, N.u7)(O, S, P, Z, V), null == o || o(x.L.TAKE_ACTION), F || (0, b.Q3)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), (0, E.Ll)(), (0, v.UD)()
+    }), (0, N.u7)(O, S, P, Z, V), null == a || a(x.L.TAKE_ACTION), F || (0, b.Q3)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), (0, E.Ll)(), (0, v.UD)()
   }, Y = () => {
     d(A._m.RESET_BUTTON), (0, N.uf)()
   }, W = O.length > 0;
   return (i.useEffect(() => () => {
     y.current || d(A._m.EDITOR_CLOSE)
   }, [d]), (0, h.ZP)(() => {
-    a || (0, A.lT)(O, G, D)
+    o || (0, A.lT)(O, G, D)
   }), u) ? (0, r.jsxs)("div", {
     className: k.container,
     "data-app-right-panel": true,
@@ -439,8 +439,8 @@ function et(e) {
       children: (0, r.jsxs)("div", {
         className: k.editorBody,
         children: [(0, r.jsx)(K, {
-          markAsDismissed: o,
-          isCoachmark: a
+          markAsDismissed: a,
+          isCoachmark: o
         }), (0, r.jsxs)("div", {
           className: k.section,
           children: [(0, r.jsx)(f.Text, {
@@ -480,7 +480,7 @@ function et(e) {
         }), (0, r.jsxs)("div", {
           className: k.resetButton,
           children: [(0, r.jsx)(Q, {
-            isCoachmark: a
+            isCoachmark: o
           }), (0, r.jsx)(c.z, {
             variant: "secondary",
             onClick: Y,
@@ -490,7 +490,7 @@ function et(e) {
           })]
         })]
       })
-    }), a ? (0, r.jsx)($, {
+    }), o ? (0, r.jsx)($, {
       onSaveTheme: H,
       canApply: W
     }) : (0, r.jsx)(ee, {

@@ -8,14 +8,14 @@ require.d(exports, {
 var Chunk772848 = require("./772848.js"),
   Chunk433517 = require("./433517.js"),
   Chunk70956 = require("./70956.js");
-let a = "purchase_token",
+let o = "purchase_token",
   s = 60 * Chunk70956.Z.Millis.DAY;
 
 function l() {
-  let e = Chunk433517.K.get(a);
+  let e = Chunk433517.K.get(o);
   if (null != module && module.expires >= Date.now()) return module.purchaseToken;
   let t = (0, Chunk772848.Z)();
-  return Chunk433517.K.set(a, {
+  return Chunk433517.K.set(o, {
     purchaseToken: exports,
     expires: Date.now() + s
   }), exports

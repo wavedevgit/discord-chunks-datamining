@@ -16,13 +16,13 @@ var Chunk647438 = require("./647438.js"),
   Chunk474936 = require("./474936.js");
 let _ = function(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
-    n = (0, i.e7)([a.default], () => a.default.getCurrentUser()),
+    n = (0, i.e7)([o.default], () => o.default.getCurrentUser()),
     _ = (0, l.t7)(),
     p = (0, c._O)(),
     {
       eligibleToFetch: h
     } = (0, d.N)(e),
-    m = (0, o.Z)(),
+    m = (0, a.Z)(),
     g = h && (null == n ? true : n.verified) === true && (0, s.M5)(n, f.p9.TIER_2) && m.fetched && m.fractionalState !== f.a$.FP_ONLY && !_ && !p;
   r.useEffect(() => {
     g && !t && u.Z.checkAndFetchReferralsRemaining()

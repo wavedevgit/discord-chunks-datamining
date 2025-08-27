@@ -59,9 +59,9 @@ function d(e) {
           default: i
         } = await n.e("94005").then(n.bind(n, 144462));
         return n => {
-          var o;
+          var a;
           return (0, r.jsx)(i, u(l({
-            initialCustomMessage: null != (o = t.metadata.customMessage) ? o : "",
+            initialCustomMessage: null != (a = t.metadata.customMessage) ? a : "",
             onSubmit: r => {
               t.metadata.customMessage = r, e(t), n.onClose()
             }
@@ -71,49 +71,49 @@ function d(e) {
         }
       })
     }),
-    a = (t, a) => new Promise(s => {
+    o = (t, o) => new Promise(s => {
       (0, i.ZDy)(async () => {
         let {
           default: i
-        } = await n.e("74543").then(n.bind(n, 643611)), c = t.actions.find(e => e.type === o.jj.FLAG_TO_CHANNEL);
+        } = await n.e("74543").then(n.bind(n, 643611)), c = t.actions.find(e => e.type === a.jj.FLAG_TO_CHANNEL);
         return n => (0, r.jsx)(i, u(l({
-          action: a,
+          action: o,
           isEdit: null != c,
           triggerType: t.triggerType,
           guildId: e,
           onEditChannel: e => {
-            a.metadata.channelId = e, t.exemptChannels.add(e), s(a), n.onClose()
+            o.metadata.channelId = e, t.exemptChannels.add(e), s(o), n.onClose()
           }
         }, n), {
           onClose: () => (s(null), n.onClose())
         }))
       })
     }),
-    s = (e, t) => new Promise(a => {
+    s = (e, t) => new Promise(o => {
       (0, i.ZDy)(async () => {
         let {
           default: i
-        } = await n.e("78273").then(n.bind(n, 41767)), s = e.actions.find(e => e.type === o.jj.USER_COMMUNICATION_DISABLED);
+        } = await n.e("78273").then(n.bind(n, 41767)), s = e.actions.find(e => e.type === a.jj.USER_COMMUNICATION_DISABLED);
         return n => (0, r.jsx)(i, u(l({
           action: t,
           isEdit: null != s,
           triggerType: e.triggerType,
           onUpdateDuration: e => {
-            null != e && (t.metadata.durationSeconds = e), a(t), n.onClose()
+            null != e && (t.metadata.durationSeconds = e), o(t), n.onClose()
           }
         }, n), {
-          onClose: () => (a(null), n.onClose())
+          onClose: () => (o(null), n.onClose())
         }))
       })
     });
   return {
-    [o.jj.BLOCK_MESSAGE]: t,
-    [o.jj.FLAG_TO_CHANNEL]: a,
-    [o.jj.USER_COMMUNICATION_DISABLED]: s
+    [a.jj.BLOCK_MESSAGE]: t,
+    [a.jj.FLAG_TO_CHANNEL]: o,
+    [a.jj.USER_COMMUNICATION_DISABLED]: s
   }
 }
 
-function f(e, t, o, a) {
+function f(e, t, a, o) {
   (0, i.ZDy)(async () => {
     let {
       default: i
@@ -122,8 +122,8 @@ function f(e, t, o, a) {
       automodDecision: {
         messageId: e,
         messageContent: t,
-        decisionId: o,
-        channel: a
+        decisionId: a,
+        channel: o
       }
     }))
   })
@@ -143,14 +143,14 @@ function _(e, t) {
 
 function p(e) {
   (0, i.h7j)(t => (0, r.jsx)(i.ConfirmModal, u(l({
-    header: a.intl.string(a.t.wLGrjI),
-    confirmText: a.intl.string(a.t["cY+Ooa"]),
+    header: o.intl.string(o.t.wLGrjI),
+    confirmText: o.intl.string(o.t["cY+Ooa"]),
     onConfirm: e,
-    cancelText: a.intl.string(a.t["ETE/oK"])
+    cancelText: o.intl.string(o.t["ETE/oK"])
   }, t), {
     children: (0, r.jsx)(i.Text, {
       variant: "text-md/normal",
-      children: a.intl.string(a.t.arYQ2d)
+      children: o.intl.string(o.t.arYQ2d)
     })
   })))
 }

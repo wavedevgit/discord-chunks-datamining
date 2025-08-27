@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => Y
 }), require("./388685.js"), require("./539854.js"), require("./467055.js"), require("./472816.js"), require("./794429.js");
 var r, Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  a = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk695346 = require("./695346.js"),
@@ -105,9 +105,9 @@ function M(e) {
   var t, n, r;
   let {
     soundId: i,
-    userId: o
-  } = e, a = (null != (n = b.get(i)) ? n : 0) + 1, s = (null != (r = T.get(o)) ? r : 0) + 1;
-  b.set(i, a), T.set(o, s), o !== (null == (t = u.default.getCurrentUser()) ? true : t.id) && (S = true)
+    userId: a
+  } = e, o = (null != (n = b.get(i)) ? n : 0) + 1, s = (null != (r = T.get(a)) ? r : 0) + 1;
+  b.set(i, o), T.set(a, s), a !== (null == (t = u.default.getCurrentUser()) ? true : t.id) && (S = true)
 }
 
 function k(e) {
@@ -115,10 +115,10 @@ function k(e) {
   let {
     soundId: r,
     userId: i
-  } = e, o = (null != (t = b.get(r)) ? t : 0) - 1, a = (null != (n = T.get(i)) ? n : 0) - 1;
-  o <= 0 ? b.delete(r) : b.set(r, o), a <= 0 ? T.delete(i) : T.set(i, a)
+  } = e, a = (null != (t = b.get(r)) ? t : 0) - 1, o = (null != (n = T.get(i)) ? n : 0) - 1;
+  a <= 0 ? b.delete(r) : b.set(r, a), o <= 0 ? T.delete(i) : T.set(i, o)
 }
-let U = o().debounce((e, t) => {
+let U = a().debounce((e, t) => {
   d.default.track(h.rMx.UPDATE_SOUNDBOARD_SETTINGS, {
     volume: Math.round((0, f.P)(e)),
     location_stack: t
@@ -150,8 +150,8 @@ function Z(e) {
     proto: r
   } = t;
   if (n === m.yP.FRECENCY_AND_FAVORITES_SETTINGS) {
-    var i, o;
-    I = new Set(null != (o = null == r || null == (i = r.favoriteSoundboardSounds) ? true : i.soundIds) ? o : [])
+    var i, a;
+    I = new Set(null != (a = null == r || null == (i = r.favoriteSoundboardSounds) ? true : i.soundIds) ? a : [])
   } else n === m.yP.PRELOADED_USER_SETTINGS && B(r)
 }
 

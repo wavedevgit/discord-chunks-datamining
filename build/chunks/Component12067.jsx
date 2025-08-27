@@ -32,7 +32,7 @@ function E(e) {
     getOnMediaItemContextMenu: v
   } = (0, u.c)();
   if (null == t || null == n) return null;
-  let I = e.items.map(e => (0, a.ze)(e.media, t)).filter(e => "INVALID" !== e.type),
+  let I = e.items.map(e => (0, o.ze)(e.media, t)).filter(e => "INVALID" !== e.type),
     {
       srcToOnClickOverride: T,
       srcToHandlePreloadImage: S
@@ -52,7 +52,7 @@ function E(e) {
   let C = e.items.map((e, n) => {
     let r = e.media,
       i = (e, t, n) => {},
-      a = null == v ? true : v(r),
+      o = null == v ? true : v(r),
       s = {
         message: t,
         item: {
@@ -64,9 +64,9 @@ function E(e) {
           width: r.width,
           spoiler: e.spoiler,
           contentType: r.contentType,
-          srcIsAnimated: (0, h.yE)(r.flags, o.hR.IS_ANIMATED)
+          srcIsAnimated: (0, h.yE)(r.flags, a.hR.IS_ANIMATED)
         },
-        onContextMenu: a,
+        onContextMenu: o,
         autoPlayGif: y,
         getObscureReason: A,
         renderImageComponent: c.aB,

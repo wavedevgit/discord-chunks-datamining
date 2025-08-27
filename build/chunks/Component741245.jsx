@@ -61,8 +61,8 @@ function y(e, t) {
   if (null == e) return {};
   var n, r, i = O(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -70,8 +70,8 @@ function y(e, t) {
 function O(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let v = Object.freeze({
@@ -351,11 +351,11 @@ function S(e) {
     theme: t
   } = e, n = y(e, ["theme"]);
   let r = (0, d.dQu)(c.Z.unsafe_rawColors.WHITE_500).hex(),
-    o = (0, d.dQu)(c.Z.unsafe_rawColors.BRAND_500).hex(),
-    a = (0, u.wj)(t) ? r : o;
+    a = (0, d.dQu)(c.Z.unsafe_rawColors.BRAND_500).hex(),
+    o = (0, u.wj)(t) ? r : a;
   return (0, i.jsx)(T, b(g({}, n), {
     theme: t,
-    flashColor: a
+    flashColor: o
   }))
 }
 m(T, "Types", I), S.Types = I

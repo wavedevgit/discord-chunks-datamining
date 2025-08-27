@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
-  a = require.n(Chunk512722),
+  o = require.n(Chunk512722),
   Chunk392711 = require("./392711.js"),
   l = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
@@ -165,10 +165,10 @@ class ef extends Chunk647438.PureComponent {
         participantOnScreen: t,
         width: n,
         isOverlayRenderingVideo: i,
-        videoStreamError: o,
-        cameraEncodeError: a
+        videoStreamError: a,
+        cameraEncodeError: o
       } = this.props;
-    if (null != Chunk512722 && null == a) {
+    if (null != Chunk512722 && null == o) {
       if ((null == exports ? true : exports.type) === Chunk354459.fO.STREAM) return (0, Chunk951288.jsx)(Chunk916771.Z, {
         stream: exports.stream,
         width: require,
@@ -227,8 +227,8 @@ class ef extends Chunk647438.PureComponent {
       streamId: t,
       participantOnScreen: n,
       isVideoEnabled: i,
-      width: o
-    } = this.props, a = (0, Chunk933557.F6)(module, Chunk594174.default, Chunk699516.Z), s = (null == require ? true : require.id) === Chunk314897.default.getId() && Chunk647438, l = this.renderStreamState(), c = this.activeStreamForSelectedParticipant, u = null;
+      width: a
+    } = this.props, o = (0, Chunk933557.F6)(module, Chunk594174.default, Chunk699516.Z), s = (null == require ? true : require.id) === Chunk314897.default.getId() && Chunk647438, l = this.renderStreamState(), c = this.activeStreamForSelectedParticipant, u = null;
     return (null == require ? true : require.type) !== Chunk354459.fO.ACTIVITY && (null != l ? u = l : ((null == require ? true : require.type) === Chunk354459.fO.USER || (null == require ? true : require.type) === Chunk354459.fO.STREAM) && (u = (0, Chunk951288.jsx)(Chunk484286.Z, {
       paused: this.streamerPaused,
       streamId: exports,
@@ -244,7 +244,7 @@ class ef extends Chunk647438.PureComponent {
       children: e => {
         var t;
         return (0, r.jsx)(j.Z, ed(ec({
-          title: a,
+          title: o,
           backgroundKey: null != (t = null == n ? true : n.id) ? t : "",
           screenMessage: null == l ? this.getScreenMessage() : null,
           onJumpToChannel: this.handleJumpToChannel,
@@ -252,9 +252,9 @@ class ef extends Chunk647438.PureComponent {
           renderBottomLeftControls: this.renderBottomLeftControls,
           renderBottomRightControls: this.renderBottomRightControls,
           preventIdleComponent: L.Z,
-          width: o,
+          width: a,
           className: es.elevationHigh,
-          videoControlsClassName: (null == c ? true : c.state) === ei.jm8.ENDED ? ea.videoControls : true
+          videoControlsClassName: (null == c ? true : c.state) === ei.jm8.ENDED ? eo.videoControls : true
         }, e), {
           children: u
         }))
@@ -285,7 +285,7 @@ class ef extends Chunk647438.PureComponent {
       let {
         participantOnScreen: e
       } = this.props;
-      a()((0, eo._5)(e), "cannot stop stream for non streamer"), (0, v.v)(g.Z.VIDEO_PIP, v.d.STREAM, false), (0, R.Z)(e.stream)
+      o()((0, ea._5)(e), "cannot stop stream for non streamer"), (0, v.v)(g.Z.VIDEO_PIP, v.d.STREAM, false), (0, R.Z)(e.stream)
     }), el(this, "handleHidePIP", () => {
       let {
         channel: e
@@ -307,13 +307,13 @@ class ef extends Chunk647438.PureComponent {
         canPopout: t,
         canDisconnect: n,
         canStopStream: i,
-        canSeeViewers: o
+        canSeeViewers: a
       } = this.viewProperties;
       return (0, r.jsxs)(r.Fragment, {
-        children: [o ? this.renderViewersIcon() : null, e ? this.renderSettingsIcon() : null, t ? this.renderPopoutIcon() : null, i ? this.renderStopStreamButton() : null, n ? this.renderDisconnectButton() : null]
+        children: [a ? this.renderViewersIcon() : null, e ? this.renderSettingsIcon() : null, t ? this.renderPopoutIcon() : null, i ? this.renderStopStreamButton() : null, n ? this.renderDisconnectButton() : null]
       })
     }), el(this, "renderDisconnectButton", () => (0, r.jsx)(M.Z, {
-      className: ea.rightTrayIcon,
+      className: eo.rightTrayIcon,
       onClick: () => (0, v.v)(g.Z.VIDEO_PIP, v.d.DISCONNECT)
     })), el(this, "renderStopStreamButton", () => {
       let {
@@ -321,7 +321,7 @@ class ef extends Chunk647438.PureComponent {
       } = this.viewProperties;
       return (0, r.jsx)(U.Z, {
         isSelfStream: e,
-        className: ea.rightTrayIcon,
+        className: eo.rightTrayIcon,
         onClick: this.handleStopStream
       })
     }), el(this, "renderViewersIcon", () => {
@@ -329,17 +329,17 @@ class ef extends Chunk647438.PureComponent {
         participantOnScreen: e,
         channel: t
       } = this.props;
-      return a()((0, eo._5)(e) || (null == e ? true : e.type) === eo.fO.ACTIVITY, "Cannot render participants for participant type ".concat(null == e ? true : e.type)), (0, r.jsx)(L.Z, {
+      return o()((0, ea._5)(e) || (null == e ? true : e.type) === ea.fO.ACTIVITY, "Cannot render participants for participant type ".concat(null == e ? true : e.type)), (0, r.jsx)(L.Z, {
         children: (0, r.jsx)(O.Z, {
           channelId: t.id,
           guildId: t.getGuildId(),
-          className: ea.rightTrayIcon,
+          className: eo.rightTrayIcon,
           participant: e,
           compact: true
         })
       })
     }), el(this, "renderPopoutIcon", () => (0, r.jsx)(k.Z, {
-      className: ea.rightTrayIcon,
+      className: eo.rightTrayIcon,
       popoutOpen: false,
       onOpenPopout: this.handleOpenPopout,
       onClosePopout: ei.VqG
@@ -348,11 +348,11 @@ class ef extends Chunk647438.PureComponent {
         participantOnScreen: e,
         activeStreams: t
       } = this.props;
-      a()((0, eo._5)(e), "Cannot render settings for non stream participant");
+      o()((0, ea._5)(e), "Cannot render settings for non stream participant");
       let n = t.find(t => (0, A.V9)(t) === e.id);
       return null == n || n.state === ei.jm8.ENDED ? null : (0, r.jsx)(G.Z, {
         stream: n,
-        className: ea.rightTrayIcon,
+        className: eo.rightTrayIcon,
         appContext: ei.IlC.APP,
         location: g.Z.VIDEO_PIP
       })
@@ -364,11 +364,11 @@ function e_(e) {
   let {
     channel: t,
     width: n
-  } = e, i = (0, c.e7)([Y.Z], () => Y.Z.getSpeaker(t.id)), o = (0, c.e7)([b.Z], () => b.Z.getParticipant(t.id, i), [t.id, i]), a = (0, c.e7)([F.Z], () => l()(F.Z.getVideoDevices()).values().first()), s = (0, c.e7)([W.Z], () => null != o && o.type !== eo.fO.ACTIVITY && o.type !== eo.fO.HIDDEN_STREAM ? W.Z.getStreamId(o.user.id, t.getGuildId(), (0, y.Z)(o.type)) : null, [o, t]), d = null == a || a.disabled, f = !d, _ = (0, c.e7)([F.Z], () => !d && F.Z.isVideoEnabled(), [d]), p = (0, c.e7)([F.Z], () => (0, C.Z)(F.Z)), h = (0, c.e7)([Z.default], () => Z.default.getId()), m = (0, c.e7)([B.Z], () => B.Z.getCurrentUserActiveStream()), g = null != o && "user" in o ? o.user.id : "", E = (0, S.Z)((null == o ? true : o.type) === eo.fO.STREAM ? u.Yn.STREAM : u.Yn.DEFAULT, g), O = (0, T.Z)(g), v = (0, c.Wu)([B.Z], () => B.Z.getAllActiveStreams());
+  } = e, i = (0, c.e7)([Y.Z], () => Y.Z.getSpeaker(t.id)), a = (0, c.e7)([b.Z], () => b.Z.getParticipant(t.id, i), [t.id, i]), o = (0, c.e7)([F.Z], () => l()(F.Z.getVideoDevices()).values().first()), s = (0, c.e7)([W.Z], () => null != a && a.type !== ea.fO.ACTIVITY && a.type !== ea.fO.HIDDEN_STREAM ? W.Z.getStreamId(a.user.id, t.getGuildId(), (0, y.Z)(a.type)) : null, [a, t]), d = null == o || o.disabled, f = !d, _ = (0, c.e7)([F.Z], () => !d && F.Z.isVideoEnabled(), [d]), p = (0, c.e7)([F.Z], () => (0, C.Z)(F.Z)), h = (0, c.e7)([Z.default], () => Z.default.getId()), m = (0, c.e7)([B.Z], () => B.Z.getCurrentUserActiveStream()), g = null != a && "user" in a ? a.user.id : "", E = (0, S.Z)((null == a ? true : a.type) === ea.fO.STREAM ? u.Yn.STREAM : u.Yn.DEFAULT, g), O = (0, T.Z)(g), v = (0, c.Wu)([B.Z], () => B.Z.getAllActiveStreams());
   return (0, r.jsx)(ef, {
     channel: t,
     streamId: s,
-    participantOnScreen: o,
+    participantOnScreen: a,
     isVideoAvailable: f,
     isVideoEnabled: _,
     canGoLive: p,

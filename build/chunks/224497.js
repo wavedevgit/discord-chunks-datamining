@@ -7,23 +7,23 @@ require.d(exports, {
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
   Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk830496 = require("./830496.js");
 let l = {
   getUploadPayload: function(e) {
     var t, n, r;
-    let o = e.item,
-      l = o.file;
+    let a = e.item,
+      l = a.file;
     return i()(null != l, "file data must not be empty"), {
       filename: l.name,
       file_size: l.size,
-      id: a().uniqueId(),
+      id: o().uniqueId(),
       is_clip: null != e.clip,
       title: null == (t = e.clip) ? true : t.name,
       application_id: null == (n = e.clip) ? true : n.applicationId,
       clip_created_at: null != e.clip ? (0, s.U)(e.clip.id) : true,
       clip_participant_ids: null != e.clip ? (0, s.Z)(e.clip.users) : true,
-      original_content_type: null == (r = o.compressionMetadata) ? true : r.originalContentType
+      original_content_type: null == (r = a.compressionMetadata) ? true : r.originalContentType
     }
   }
 }

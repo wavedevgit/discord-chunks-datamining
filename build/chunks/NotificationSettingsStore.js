@@ -131,7 +131,7 @@ class y extends(r = Chunk442837.ZP.DeviceSettingsStore) {
 }
 l(y, "displayName", "NotificationSettingsStore"), l(y, "persistKey", "notifications"), l(y, "migrations", [e => {
   let t = c({}, e);
-  return t.disabledSounds = t.disabledSounds || [], t.disableUnreadBadge = t.disableUnreadBadge || false, t.taskbarFlash = null == t.taskbarFlash || t.taskbarFlash, t.ttsType = t.ttsType || s.PrB.NEVER, null == t.desktopType && (t.desktopType = a.isPlatformEmbedded ? s.qrD.ALL : s.qrD.NEVER), t
+  return t.disabledSounds = t.disabledSounds || [], t.disableUnreadBadge = t.disableUnreadBadge || false, t.taskbarFlash = null == t.taskbarFlash || t.taskbarFlash, t.ttsType = t.ttsType || s.PrB.NEVER, null == t.desktopType && (t.desktopType = o.isPlatformEmbedded ? s.qrD.ALL : s.qrD.NEVER), t
 }]);
 let O = new y(Chunk570140.Z, {
   NOTIFICATIONS_SET_DESKTOP_TYPE: f,

@@ -49,7 +49,7 @@ function s(e, t) {
   let {
     pressProps: O,
     isPressed: v
-  } = (0, o.r)({
+  } = (0, a.r)({
     onPressStart: u,
     onPressEnd: d,
     onPressChange: _,
@@ -61,7 +61,7 @@ function s(e, t) {
     ref: t
   }), {
     focusableProps: I
-  } = (0, a.kc)(e, t);
+  } = (0, o.kc)(e, t);
   h && (I.tabIndex = l ? false : I.tabIndex);
   let T = (0, r.d)(I, O, (0, i.z)(e, {
     labelable: true

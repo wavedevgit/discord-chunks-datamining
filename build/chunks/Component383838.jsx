@@ -9,7 +9,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk49800 = require("./49800.jsx"),
   Chunk600164 = require("./600164.jsx"),
   Chunk534542 = require("./534542.jsx"),
@@ -42,8 +42,8 @@ function _(e, t) {
   if (null == e) return {};
   var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -51,8 +51,8 @@ function _(e, t) {
 function p(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let h = Chunk49800.Z.Types,
@@ -63,7 +63,7 @@ let h = Chunk49800.Z.Types,
 
 function g(e) {
   let t, n, {
-      type: i = a.Z.Types.DANGER,
+      type: i = o.Z.Types.DANGER,
       imageData: d,
       button: p,
       className: h,
@@ -83,13 +83,13 @@ function g(e) {
       shrink: 0,
       children: (0, r.jsx)("img", f({
         alt: "",
-        className: o()(u.icon, g)
+        className: a()(u.icon, g)
       }, n))
     }), e === m.RIGHT && (v = s.Z.Direction.HORIZONTAL_REVERSE)
   } else null != p && (n = p);
   let I = true;
-  return i === a.Z.Types.PRIMARY && (I = false), (0, r.jsx)(a.Z, {
-    className: o()(u.formNotice, h),
+  return i === o.Z.Types.PRIMARY && (I = false), (0, r.jsx)(o.Z, {
+    className: a()(u.formNotice, h),
     type: i,
     style: y,
     children: (0, r.jsxs)(s.Z, {
@@ -98,13 +98,13 @@ function g(e) {
       children: [t, (0, r.jsxs)(s.Z.Child, {
         children: [null != E && "" !== E ? (0, r.jsx)(c.v, {
           tag: c.R.H5,
-          className: o()(u.formNoticeTitle, {
+          className: a()(u.formNoticeTitle, {
             [u.whiteText]: I
           }),
           faded: true,
           children: E
         }) : null, (0, r.jsx)(l.R, {
-          className: o()(u.formNoticeBody, {
+          className: a()(u.formNoticeBody, {
             [u.whiteText]: I
           }),
           children: b

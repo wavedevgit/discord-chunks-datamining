@@ -14,7 +14,7 @@ function s(e) {
   let {
     application: t,
     location: n
-  } = e, s = (0, o.Z)({
+  } = e, s = (0, a.Z)({
     application: t,
     location: n
   }), l = () => {
@@ -24,7 +24,7 @@ function s(e) {
     variant: "primary",
     size: "md",
     icon: i.v3n,
-    text: a.intl.string(a.t["jaYS/v"]),
+    text: o.intl.string(o.t["jaYS/v"]),
     onClick: l,
     fullWidth: true
   }, "cloud-play")

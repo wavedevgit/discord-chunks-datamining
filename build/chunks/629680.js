@@ -39,5 +39,5 @@ var Chunk127849 = require("./127849.js"),
     }
   };
 p("sort", function(e) {
-  return (true !== e && a(e), E) ? m(this, e) : s(_(this), b(e))
+  return (true !== e && o(e), E) ? m(this, e) : s(_(this), b(e))
 }, !E || g)

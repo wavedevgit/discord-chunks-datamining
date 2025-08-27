@@ -3,18 +3,18 @@
 "use strict";
 var Chunk581079 = require("./581079.js"),
   i = /\.textClipping$/,
-  o = {
+  a = {
     "text/plain": true,
     "text/html": true,
     "text/rtf": true
   },
-  a = 5e3;
+  o = 5e3;
 
 function s(e, t) {
-  if (!n.g.FileReader || e.type && !(e.type in o)) return void t("");
+  if (!n.g.FileReader || e.type && !(e.type in a)) return void t("");
   if ("" === e.type) {
-    var a = "";
-    i.test(e.name) && (a = e.name.replace(i, "")), t(a);
+    var o = "";
+    i.test(e.name) && (o = e.name.replace(i, "")), t(o);
     return
   }
   var s = new FileReader;
@@ -30,7 +30,7 @@ module.exports = function(e, t) {
     r = [];
   e.forEach(function(i) {
     s(i, function(i) {
-      n++, i && r.push(i.slice(0, a)), n == e.length && t(r.join("\r"))
+      n++, i && r.push(i.slice(0, o)), n == e.length && t(r.join("\r"))
     })
   })
 }

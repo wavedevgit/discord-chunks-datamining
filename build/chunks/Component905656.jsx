@@ -26,8 +26,8 @@ function b(e) {
     movDark: t = d,
     movLight: n = h,
     mp4Dark: i = f,
-    mp4Light: o = m,
-    pngDark: a = _,
+    mp4Light: a = m,
+    pngDark: o = _,
     pngLight: s = g,
     webmDark: c = p,
     webmLight: b = E
@@ -36,9 +36,9 @@ function b(e) {
     type: "video/mp4"
   }, "mp4"), (0, r.jsx)("img", {
     alt: "",
-    src: a
+    src: o
   }, "png")], v = [(0, r.jsx)("source", {
-    src: o,
+    src: a,
     type: "video/mp4"
   }, "mp4"), (0, r.jsx)("img", {
     alt: "",
@@ -74,11 +74,11 @@ let y = Chunk197344.Z.getAppSpinnerSources(),
       onReady: f
     } = e, {
       theme: _
-    } = (0, a.TCT)(), {
+    } = (0, o.TCT)(), {
       reducedMotion: p
-    } = i.useContext(a.Sfi), h = v;
+    } = i.useContext(o.Sfi), h = v;
     null != O && (h = O);
-    let m = null != (t = h[(0, o.wj)(_) ? u.BRd.DARK : u.BRd.LIGHT]) ? t : h[u.BRd.DARK];
+    let m = null != (t = h[(0, a.wj)(_) ? u.BRd.DARK : u.BRd.LIGHT]) ? t : h[u.BRd.DARK];
     return (0, r.jsx)(c.Z, {
       ref: l,
       onLoadedData: f,

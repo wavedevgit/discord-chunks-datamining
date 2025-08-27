@@ -9,7 +9,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk271383 = require("./271383.js"),
@@ -73,7 +73,7 @@ function T(e) {
     guildEvent: m,
     eventPreview: y,
     recurrenceId: v
-  } = e, T = (0, f.Z)(i, m.id, v), S = null != m ? m : y, A = (0, a.e7)([l.ZP], () => l.ZP.getNick(i, null == n ? true : n.id), [i, n]);
+  } = e, T = (0, f.Z)(i, m.id, v), S = null != m ? m : y, A = (0, o.e7)([l.ZP], () => l.ZP.getNick(i, null == n ? true : n.id), [i, n]);
   v = null == S || null != v ? v : (0, p.DK)(S);
   let {
     startTime: C
@@ -85,7 +85,7 @@ function T(e) {
     recurrence_rule: D
   } = S;
   return (0, r.jsxs)("div", {
-    className: o()(b.statusContainer, t),
+    className: a()(b.statusContainer, t),
     children: [(0, r.jsx)(g.z, {
       startTime: C.toISOString(),
       status: null != R ? R : w,
@@ -132,17 +132,17 @@ function S(e) {
     headerVariant: t = "heading-lg/medium",
     descriptionClassName: n,
     name: i,
-    description: a,
+    description: o,
     truncate: l,
     guildId: c,
     imageSource: u
   } = e;
   return (0, r.jsxs)("div", {
-    className: o()({
+    className: a()({
       [b.withThumbnail]: null != u
     }),
     children: [(0, r.jsxs)("div", {
-      className: o()({
+      className: a()({
         [b.descriptionWithThumbnail]: null != u
       }),
       children: [(0, r.jsx)(s.X6q, {
@@ -150,9 +150,9 @@ function S(e) {
         selectable: true,
         className: b.eventName,
         children: i
-      }), null != a && (0, r.jsx)(h.Z, {
-        description: a,
-        className: o()(n, b.description),
+      }), null != o && (0, r.jsx)(h.Z, {
+        description: o,
+        className: a()(n, b.description),
         truncate: l,
         guildId: c
       })]
@@ -171,8 +171,8 @@ function A(e) {
     headerVariant: t,
     descriptionClassName: n,
     creator: i,
-    name: o,
-    description: a,
+    name: a,
+    description: o,
     imageSource: s,
     truncate: l,
     guildId: c,
@@ -198,8 +198,8 @@ function A(e) {
       eventPreview: f,
       recurrenceId: _
     }), (0, r.jsx)(S, {
-      name: o,
-      description: a,
+      name: a,
+      description: o,
       headerVariant: t,
       descriptionClassName: n,
       truncate: l,

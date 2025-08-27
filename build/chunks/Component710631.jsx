@@ -75,7 +75,7 @@ function N(e) {
     user: t,
     guildId: n,
     onAction: s
-  } = e, c = (0, o.e7)([g.default], () => g.default.getCurrentUser(), []), d = (0, o.Wu)([m.ZP, _.Z, p.Z], () => {
+  } = e, c = (0, a.e7)([g.default], () => g.default.getCurrentUser(), []), d = (0, a.Wu)([m.ZP, _.Z, p.Z], () => {
     let e = m.ZP.getFlattenedGuildIds(),
       t = [];
     return e.forEach(e => {
@@ -96,14 +96,14 @@ function N(e) {
       }, S).then(e => C(t, e.code))
     }
   }
-  return (null == c ? true : c.id) === t.id || t.bot || 0 === d.length || h.Z.isBlockedOrIgnored(t.id) ? null : (0, r.jsx)(a.sNh, {
+  return (null == c ? true : c.id) === t.id || t.bot || 0 === d.length || h.Z.isBlockedOrIgnored(t.id) ? null : (0, r.jsx)(o.sNh, {
     id: "invite-to-server",
     label: b.intl.string(b.t.Sd8Ix8),
-    children: d.map(e => y[e.id] ? (0, r.jsx)(a.sNh, {
+    children: d.map(e => y[e.id] ? (0, r.jsx)(o.sNh, {
       id: e.id,
       disabled: true,
       label: b.intl.string(b.t.PuLLzM)
-    }, e.id) : (0, r.jsx)(a.sNh, {
+    }, e.id) : (0, r.jsx)(o.sNh, {
       id: e.id,
       label: e.name,
       action: () => {

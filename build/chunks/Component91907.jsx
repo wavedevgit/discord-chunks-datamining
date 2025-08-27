@@ -62,9 +62,9 @@ function f(e) {
     participants: _,
     channel: l,
     onPopoutClosed: f,
-    children: e => (0, r.jsx)(a.Z, d(c({}, e), {
+    children: e => (0, r.jsx)(o.Z, d(c({}, e), {
       tag: "span",
-      children: (0, r.jsx)(o.xv, {
+      children: (0, r.jsx)(a.xv, {
         ref: p,
         className: u,
         variant: "text-sm/semibold",

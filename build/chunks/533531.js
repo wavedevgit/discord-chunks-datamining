@@ -5,15 +5,15 @@ require("./42547.js"), module.exports = function(e, t) {
   var n = e.getSelection(),
     r = e.getCurrentContent(),
     i = n.getStartKey(),
-    o = n.getStartOffset(),
-    a = i,
+    a = n.getStartOffset(),
+    o = i,
     s = 0;
-  if (t > o) {
+  if (t > a) {
     var l = r.getKeyBefore(i);
-    null == l ? a = i : (a = l, s = r.getBlockForKey(l).getText().length)
-  } else s = o - t;
+    null == l ? o = i : (o = l, s = r.getBlockForKey(l).getText().length)
+  } else s = a - t;
   return n.merge({
-    focusKey: a,
+    focusKey: o,
     focusOffset: s,
     isBackward: true
   })

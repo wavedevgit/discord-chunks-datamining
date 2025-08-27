@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk243814 = require("./243814.js"),
   Chunk993365 = require("./993365.js"),
   Chunk481060 = require("./481060.js"),
@@ -54,7 +54,7 @@ function b(e) {
     location: "oauth2_authorize"
   });
   return (0, r.jsxs)("div", {
-    className: o()(g.applicationDetails, {
+    className: a()(g.applicationDetails, {
       [g.noPadding]: C.enabled
     }),
     children: [null != n ? (0, r.jsx)(y, {
@@ -70,7 +70,7 @@ function b(e) {
       text: m.intl.formatToPlainString(m.t["+1bjc3"], {
         date: T
       })
-    }), s.includes(a.x.BOT) && null != O ? (0, r.jsx)(y, {
+    }), s.includes(o.x.BOT) && null != O ? (0, r.jsx)(y, {
       icon: l.wGt,
       text: m.intl.formatToPlainString(m.t.UHGHSE, {
         guildCount: O

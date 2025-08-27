@@ -4,7 +4,7 @@
 var r;
 if (!Object.keys) {
   var i = Object.prototype.hasOwnProperty,
-    o = Object.prototype.toString,
+    a = Object.prototype.toString,
     Chunk560640 = require("./560640.js"),
     s = Object.prototype.propertyIsEnumerable,
     l = !s.call({
@@ -64,9 +64,9 @@ if (!Object.keys) {
     };
   r = function(e) {
     var t = null !== e && "object" == typeof e,
-      n = "[object Function]" === o.call(e),
-      r = a(e),
-      s = t && "[object String]" === o.call(e),
+      n = "[object Function]" === a.call(e),
+      r = o(e),
+      s = t && "[object String]" === a.call(e),
       d = [];
     if (!t && !n && !r) throw TypeError("Object.keys called on a non-object");
     var f = c && n;

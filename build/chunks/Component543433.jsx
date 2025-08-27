@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk772848 = require("./772848.js"),
   Chunk481060 = require("./481060.js"),
   Chunk626135 = require("./626135.js"),
@@ -46,12 +46,12 @@ function E(e) {
     questId: t,
     questContent: n,
     fullWidth: i
-  } = e, o = () => {
+  } = e, a = () => {
     (0, u.navigateToQuestHome)({
       fromContent: n
     }), l.default.track(f.rMx.QUEST_CONTENT_CLICKED, g({
       quest_id: t,
-      click_id: (0, a.Z)(),
+      click_id: (0, o.Z)(),
       cta_name: c.jZ.VIEW_QUESTS,
       is_targeted: false
     }, (0, c.mH)(n)))
@@ -61,7 +61,7 @@ function E(e) {
     children: (0, r.jsx)(s.zxk, {
       fullWidth: i,
       variant: "primary",
-      onClick: o,
+      onClick: a,
       text: _.intl.string(_.t.GURBQk)
     })
   })
@@ -72,7 +72,7 @@ function b(e) {
     questId: t,
     fallbackReason: n,
     bodyText: i,
-    questContent: a
+    questContent: o
   } = e, {
     containerRef: l,
     size: u
@@ -81,7 +81,7 @@ function b(e) {
     ref: e => {
       l.current = e
     },
-    className: o()(p.container, {
+    className: a()(p.container, {
       [p.wide]: "lg" === u,
       [p.tall]: "lg" !== u
     }),
@@ -98,7 +98,7 @@ function b(e) {
         children: i
       }), (0, r.jsx)(E, {
         questId: t,
-        questContent: a,
+        questContent: o,
         fullWidth: "lg" !== u
       })]
     }), (0, r.jsx)("div", {

@@ -16,26 +16,26 @@ let s = 3e3,
 function c(e) {
   let {
     guildStore: t
-  } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {}, n = null != t ? t : r.Z, i = n.getGuild(a.y), s = (null == i ? true : i.joinedAt) instanceof Date && Date.now() - i.joinedAt.getTime() <= l;
-  return 1 === n.getGuildCount() && s && (0, o.Z)(e)
+  } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {}, n = null != t ? t : r.Z, i = n.getGuild(o.y), s = (null == i ? true : i.joinedAt) instanceof Date && Date.now() - i.joinedAt.getTime() <= l;
+  return 1 === n.getGuildCount() && s && (0, a.Z)(e)
 }
 
 function u(e) {
-  return e.isDM() && 1 === e.rawRecipients.length && e.rawRecipients[0].id === a.g && c("app")
+  return e.isDM() && 1 === e.rawRecipients.length && e.rawRecipients[0].id === o.g && c("app")
 }
 
 function d(e) {
   return new Promise((t, n) => {
     if (i.Z.getGuildId() === e) return void t();
     let r = setTimeout(() => {
-        a(), n()
+        o(), n()
       }, s),
-      o = () => {
-        i.Z.getGuildId() === e && (a(), t())
-      },
       a = () => {
-        i.Z.removeChangeListener(o), clearTimeout(r)
+        i.Z.getGuildId() === e && (o(), t())
+      },
+      o = () => {
+        i.Z.removeChangeListener(a), clearTimeout(r)
       };
-    i.Z.addChangeListener(o)
+    i.Z.addChangeListener(a)
   })
 }

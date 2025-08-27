@@ -10,9 +10,9 @@ module.exports = {
     r ? r.reset() : r = new i;
     var n = e.getBlockMap(),
       l = n.valueSeq().map(function(e) {
-        return a(r).getDirection(e.getText())
+        return o(r).getDirection(e.getText())
       }),
       c = s(n.keySeq().zip(l));
-    return null != t && o.is(t, c) ? t : c
+    return null != t && a.is(t, c) ? t : c
   }
 }

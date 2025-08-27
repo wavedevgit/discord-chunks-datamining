@@ -3,12 +3,12 @@
 "use strict";
 var Chunk567701 = require("./567701.js"),
   i = "Unknown",
-  o = {
+  a = {
     "Mac OS": "Mac OS X"
   };
 
-function a(e) {
-  return o[e] || e
+function o(e) {
+  return a[e] || e
 }
 
 function s(e) {
@@ -34,7 +34,7 @@ module.exports = {
   engineName: l.engine.name || i,
   engineVersion: l.engine.version || i,
   platformArchitecture: l.cpu.architecture || i,
-  platformName: a(l.os.name) || i,
+  platformName: o(l.os.name) || i,
   platformVersion: l.os.version || i,
   platformFullVersion: l.os.version || i
 }

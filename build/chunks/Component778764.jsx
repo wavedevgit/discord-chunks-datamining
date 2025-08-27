@@ -66,13 +66,13 @@ function S(e, t) {
 function A(e) {
   let {
     transitionState: t,
-    onClose: a,
+    onClose: o,
     ticket: s,
     challenge: c
   } = e, f = (0, u.Dt)(), [g, v] = i.useState(""), [I, T] = i.useState(true), [S, A] = i.useState(E.x.INIT), [C, N] = i.useState(""), [R, P] = i.useState(null), w = async () => {
     let e;
     A(E.x.REGISTER);
-    let t = _.isPlatformEmbedded && h.ZP.supportsFeature(b.eRX.WEBAUTHN) ? h.ZP.webAuthnRegister(c) : o.Ue(JSON.parse(c)).then(e => JSON.stringify(e));
+    let t = _.isPlatformEmbedded && h.ZP.supportsFeature(b.eRX.WEBAUTHN) ? h.ZP.webAuthnRegister(c) : a.Ue(JSON.parse(c)).then(e => JSON.stringify(e));
     try {
       e = await t
     } catch (e) {
@@ -93,7 +93,7 @@ function A(e) {
         variant: "heading-lg/semibold",
         children: [S === E.x.INIT && y.intl.string(y.t.vrOCCg), S === E.x.REGISTER && y.intl.string(y.t.wePEBA), S === E.x.NAME && y.intl.string(y.t["cY/IOj"])]
       }), (0, r.jsx)(l.olH, {
-        onClick: a,
+        onClick: o,
         className: O.modalCloseButton
       })]
     }), (0, r.jsxs)(l.MyZ, {
@@ -157,7 +157,7 @@ function A(e) {
           onSubmit: e => {
             e.preventDefault(), (0, m.Sr)(g, s, C).then(async () => {
               await (0, d.Yn)(false)
-            }).then(() => a()).catch(() => {
+            }).then(() => o()).catch(() => {
               P(y.intl.string(y.t.fEptJC)), A(E.x.INIT)
             })
           },
@@ -252,7 +252,7 @@ function N() {
   Chunk647438.useEffect(() => {
     exports || (0, Chunk365007.hL)()
   }, [exports]);
-  let [n, o] = Chunk647438.useState(false);
+  let [n, a] = Chunk647438.useState(false);
   return (0, Chunk951288.jsxs)(Chunk481060.hjN, {
     title: Chunk388032.intl.string(Chunk388032.t.y7SXYW),
     className: Chunk421156.settings,

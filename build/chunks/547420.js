@@ -11,18 +11,18 @@ var Chunk857595 = require("./857595.js"),
   Chunk607070 = require("./607070.js"),
   Chunk981631 = require("./981631.js");
 
-function a(e) {
-  return o.yqN.ZOOM_SCALES[Math.max(0, Math.min(o.yqN.ZOOM_SCALES.indexOf(i.Z.zoom) + e, o.yqN.ZOOM_SCALES.length - 1))]
+function o(e) {
+  return a.yqN.ZOOM_SCALES[Math.max(0, Math.min(a.yqN.ZOOM_SCALES.indexOf(i.Z.zoom) + e, a.yqN.ZOOM_SCALES.length - 1))]
 }
 let s = {
     binds: ["mod+plus"],
     comboKeysBindGlobal: true,
-    action: () => ((0, Chunk857595.cq)(a(1)), false)
+    action: () => ((0, Chunk857595.cq)(o(1)), false)
   },
   l = {
     binds: ["mod+minus"],
     comboKeysBindGlobal: true,
-    action: () => ((0, Chunk857595.cq)(a(false)), false)
+    action: () => ((0, Chunk857595.cq)(o(false)), false)
   },
   c = {
     binds: ["mod+0"],

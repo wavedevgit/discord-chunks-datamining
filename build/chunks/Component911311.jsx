@@ -42,8 +42,8 @@ function m(e, t) {
   if (null == e) return {};
   var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -51,8 +51,8 @@ function m(e, t) {
 function g(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let E = 2.1,
@@ -60,14 +60,14 @@ let E = 2.1,
     var {
       handleLearnMore: t
     } = e, n = m(e, ["handleLearnMore"]);
-    let p = (0, i.e7)([o.Z], () => o.Z.getGuildId()),
+    let p = (0, i.e7)([a.Z], () => a.Z.getGuildId()),
       g = (0, s.iL)({
         guildId: p,
         onClick: () => {
           window.open(l.Z.getArticleURL(u.BhN.NITRO_FAQ), "_blank")
         }
       }),
-      b = (0, a.rO)() ? f.Z : _.Z;
+      b = (0, o.rO)() ? f.Z : _.Z;
     return (0, r.jsx)(c.Z, h({
       gradientColor: "nitro-pink",
       title: d.intl.string(d.t["9C+41t"]),

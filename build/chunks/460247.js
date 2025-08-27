@@ -8,7 +8,7 @@ var Chunk569545 = require("./569545.js"),
   Chunk458725 = require("./458725.js"),
   Chunk442741 = require("./442741.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,7 +24,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      a(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -37,7 +37,7 @@ let l = {
     return t.filter(e => null != e.errorCode).map(e => s({
       type: i.u.SCREENSHARE_OS_ERROR,
       errorMessage: e.errorCode.toString()
-    }, (0, o.rT)((0, r.V9)(e))))
+    }, (0, a.rT)((0, r.V9)(e))))
   },
   makeErrorContextKey: e => "".concat(e.streamKey, ":").concat(e.mediaSessionId)
 }

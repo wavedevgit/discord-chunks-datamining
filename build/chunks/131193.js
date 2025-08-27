@@ -9,15 +9,15 @@ var Chunk647438 = require("./647438.js"),
   Chunk922365 = require("./922365.js"),
   Chunk101186 = require("./101186.js");
 let {
-  useSyncExternalStoreWithSelector: a
+  useSyncExternalStoreWithSelector: o
 } = Chunk922365, s = e => e;
 
 function l(e, t = s, n) {
-  let i = a(e.subscribe, e.getState, e.getInitialState, t, n);
+  let i = o(e.subscribe, e.getState, e.getInitialState, t, n);
   return r.useDebugValue(i), i
 }
 let c = (e, t) => {
-    let n = (0, o.M)(e),
+    let n = (0, a.M)(e),
       r = (e, r = t) => l(n, e, r);
     return Object.assign(r, n), r
   },

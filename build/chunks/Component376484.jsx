@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk446411 = require("./446411.jsx"),
   Chunk454585 = require("./454585.js"),
@@ -25,24 +25,24 @@ function p(e) {
   } = e, l = null != t.embeds && t.embeds.length > 0;
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(c.Z, {
-      className: o()(_.mainContainer, {
+      className: a()(_.mainContainer, {
         [_.compact]: s
       }),
       icon: n(570111),
       compact: s,
       children: (0, r.jsx)("div", {
-        className: o()(_.__invalid_content, {
+        className: a()(_.__invalid_content, {
           [_.compact]: s
         }),
         children: (0, r.jsx)("div", {
-          className: o()(_.__invalid_messageContent, {
+          className: a()(_.__invalid_messageContent, {
             [_.compact]: s
           }),
           children: t.content
         })
       })
     }), (0, r.jsx)("div", {
-      className: o()(_.__invalid_embedContent, {
+      className: a()(_.__invalid_embedContent, {
         [_.compact]: s
       }),
       children: (0, r.jsx)(h, {
@@ -50,7 +50,7 @@ function p(e) {
       })
     }), (0, r.jsx)("div", {
       className: _.actions,
-      children: (0, r.jsx)(a.zxk, {
+      children: (0, r.jsx)(o.zxk, {
         variant: "secondary",
         text: f.intl.string(f.t.zdBCIi),
         onClick: () => {
@@ -67,17 +67,17 @@ function h(e) {
     message: n
   } = e, [i] = null != (t = n.embeds) ? t : [];
   if (null == i) return null;
-  let o = (e, t) => l.Z.parseEmbedTitle(t, true, {
+  let a = (e, t) => l.Z.parseEmbedTitle(t, true, {
       channelId: n.channel_id
     }),
-    a = (e, t, r) => l.Z.parse(t, true, {
+    o = (e, t, r) => l.Z.parse(t, true, {
       channelId: n.channel_id
     });
   return (0, r.jsx)(s.ZP, {
     className: _.embed,
     embed: i,
-    renderTitle: o,
-    renderDescription: a,
+    renderTitle: a,
+    renderDescription: o,
     autoPlayGif: false,
     renderImageComponent: d.VqG,
     renderVideoComponent: d.VqG,

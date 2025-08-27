@@ -19,24 +19,24 @@ function f(e) {
     onClose: t
   } = e;
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsxs)(a.xBx, {
+    children: [(0, r.jsxs)(o.xBx, {
       separator: false,
       className: d.errorHeader,
       children: [(0, r.jsx)("div", {
         className: d.errorArt
-      }), (0, r.jsx)(a.X6q, {
+      }), (0, r.jsx)(o.X6q, {
         variant: "heading-xl/semibold",
         children: u.intl.string(u.t.iufib2)
       })]
-    }), (0, r.jsx)(a.hzk, {
+    }), (0, r.jsx)(o.hzk, {
       className: d.errorBody,
-      children: (0, r.jsx)(a.Text, {
+      children: (0, r.jsx)(o.Text, {
         variant: "text-md/normal",
         className: d.bodyText,
         children: u.intl.string(u.t.eAn6z8)
       })
-    }), (0, r.jsx)(a.mzw, {
-      children: (0, r.jsx)(a.zxk, {
+    }), (0, r.jsx)(o.mzw, {
+      children: (0, r.jsx)(o.zxk, {
         variant: "primary",
         text: u.intl.string(u.t.cpT0Cg),
         onClick: t
@@ -60,59 +60,59 @@ let _ = function(e) {
   }, [_, p.id, n]);
   let b = () => null != m ? (0, r.jsx)(f, {
     onClose: t
-  }) : null == _ ? (0, r.jsx)(a.hzk, {
-    children: (0, r.jsx)(a.$jN, {
+  }) : null == _ ? (0, r.jsx)(o.hzk, {
+    children: (0, r.jsx)(o.$jN, {
       className: d.loading
     })
   }) : (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsxs)(a.xBx, {
+    children: [(0, r.jsxs)(o.xBx, {
       separator: false,
       className: d.headerContainer,
       children: [(0, r.jsx)("div", {
         className: d.art
-      }), (0, r.jsx)(a.X6q, {
+      }), (0, r.jsx)(o.X6q, {
         variant: "heading-xl/semibold",
         children: u.intl.string(u.t["23BfZm"])
       })]
-    }), (0, r.jsxs)(a.hzk, {
-      children: [(0, r.jsx)(a.Text, {
+    }), (0, r.jsxs)(o.hzk, {
+      children: [(0, r.jsx)(o.Text, {
         variant: "text-md/normal",
         className: d.bodyText,
         children: p.outboundRedemptionModalBody
-      }), (0, r.jsx)(a.$i$, {
+      }), (0, r.jsx)(o.$i$, {
         className: d.formDivider
-      }), (0, r.jsxs)(a.hjN, {
+      }), (0, r.jsxs)(o.hjN, {
         title: u.intl.string(u.t.s9LFQk),
         className: d.formSection,
         children: [(0, r.jsx)(s.Z, {
           value: _,
-          buttonColor: o.zx.Colors.BRAND,
-          buttonLook: o.zx.Looks.FILLED,
+          buttonColor: a.zx.Colors.BRAND,
+          buttonLook: a.zx.Looks.FILLED,
           delay: 1e3
-        }), (0, r.jsx)(a.Text, {
+        }), (0, r.jsx)(o.Text, {
           variant: "text-xs/normal",
           color: "header-secondary",
           className: d.confirmationText,
           children: u.intl.string(u.t["F+nFTU"])
         })]
       })]
-    }), (0, r.jsxs)(a.mzw, {
-      children: [(0, r.jsx)(a.zxk, {
+    }), (0, r.jsxs)(o.mzw, {
+      children: [(0, r.jsx)(o.zxk, {
         variant: "primary",
         text: u.intl.string(u.t["+zx47e"]),
         onClick: () => {
           let e = (0, c.BU)(_, p);
           window.open(e, "_blank")
         }
-      }), (0, r.jsx)(o.zx, {
+      }), (0, r.jsx)(a.zx, {
         onClick: t,
-        look: o.zx.Looks.LINK,
+        look: a.zx.Looks.LINK,
         color: d.maybeLaterButton,
         children: u.intl.string(u.t.TulDPj)
       })]
     })]
   });
-  return (0, r.jsx)(a.Y0X, {
+  return (0, r.jsx)(o.Y0X, {
     transitionState: h,
     "aria-labelledby": E,
     parentComponent: "OutboundPromotionRedemptionModal",

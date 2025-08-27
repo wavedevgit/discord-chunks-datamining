@@ -61,9 +61,9 @@ function R(e) {
   if (null == t || null == n) return null;
   let r = {};
   for (let e of ["videohookFrames", "hybridDxgiFrames", "hybridGdiFrames", "hybridVideohookFrames", "hybridGraphicsCaptureFrames", "hybridGdiBitBltFrames", "hybridGdiPrintWindowFrames", "quartzFrames", "screenCaptureKitFrames"]) {
-    var i, o, a, s;
-    let l = null != (a = null == (i = n.stats.screenshare) ? true : i[e]) ? a : 0,
-      c = null != (s = null == (o = t.stats.screenshare) ? true : o[e]) ? s : 0;
+    var i, a, o, s;
+    let l = null != (o = null == (i = n.stats.screenshare) ? true : i[e]) ? o : 0,
+      c = null != (s = null == (a = t.stats.screenshare) ? true : a[e]) ? s : 0;
     r[e] = c - l
   }
   let l = false,
@@ -79,8 +79,8 @@ function P(e) {
 }
 
 function w(e, t, n) {
-  var r, i, o, a;
-  return e ? null != (i = null == (r = T(t)) ? true : r.frameRateEncode) ? i : null : null != (a = null == (o = S(t, n)) ? true : o.frameRateDecode) ? a : null
+  var r, i, a, o;
+  return e ? null != (i = null == (r = T(t)) ? true : r.frameRateEncode) ? i : null : null != (o = null == (a = S(t, n)) ? true : a.frameRateDecode) ? o : null
 }
 
 function D(e, t) {
@@ -113,8 +113,8 @@ function D(e, t) {
     {
       gameName: er,
       gameId: ei,
-      exe: eo,
-      distributor: ea
+      exe: ea,
+      distributor: eo
     } = (0, s.G8)(ee),
     es = L.isErrorOutbound,
     el = null != U ? U : I.Yn.DEFAULT,
@@ -147,11 +147,11 @@ function D(e, t) {
       num_packets: null != (eE = null == x ? true : x.num_packets) ? eE : 0,
       num_bytes: null != (eb = null == x ? true : x.num_bytes) ? eb : 0,
       num_packets_lost: null != (ey = null == (i = A(es, ed, ec)) ? true : i.packetsLost) ? ey : 0,
-      video_codec: null != (eO = null != V ? V : (0, o.bU)(null == (s = A(es, ed, ec)) ? true : s.codec.name)) ? eO : null,
-      video_encoder: null != (ev = null != H ? H : (0, o.lG)(null == (l = T(ed)) ? true : l.encoderImplementationName)) ? ev : null,
-      video_decoder: null != (eI = null != Y ? Y : (0, o.z_)(null == (c = S(ed, ec)) ? true : c.decoderImplementationName)) ? eI : null,
+      video_codec: null != (eO = null != V ? V : (0, a.bU)(null == (s = A(es, ed, ec)) ? true : s.codec.name)) ? eO : null,
+      video_encoder: null != (ev = null != H ? H : (0, a.lG)(null == (l = T(ed)) ? true : l.encoderImplementationName)) ? ev : null,
+      video_decoder: null != (eI = null != Y ? Y : (0, a.z_)(null == (c = S(ed, ec)) ? true : c.decoderImplementationName)) ? eI : null,
       audio_capture_sample_rate_mismatch_percent: null != W ? W : null,
-      incoming_video_stopped_for_occlusion: !a.w.isIncomingVideoEnabled(),
+      incoming_video_stopped_for_occlusion: !o.w.isIncomingVideoEnabled(),
       bitrate: null != (eT = null == (u = A(es, ed, ec)) ? true : u.bitrate) ? eT : null,
       target_bitrate: es && null != (eS = null == (d = T(ed)) ? true : d.bitrateTarget) ? eS : null,
       fps: null != (eA = w(es, el, ec)) ? eA : null,
@@ -165,8 +165,8 @@ function D(e, t) {
       screenshare_capture_method: R(ed),
       share_application_name: null != er ? er : null,
       share_application_id: null != ei ? ei : null,
-      share_application_executable: null != eo ? eo : null,
-      share_application_distributor: null != ea ? ea : null,
+      share_application_executable: null != ea ? ea : null,
+      share_application_distributor: null != eo ? eo : null,
       cpu_brand: null != (ew = null == t ? true : t.cpu_brand) ? ew : null,
       cpu_vendor: null != (eD = null == t ? true : t.cpu_vendor) ? eD : null,
       cpu_memory: null != (ex = null == t ? true : t.cpu_memory) ? ex : null,

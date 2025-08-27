@@ -2,13 +2,13 @@
 /** chunk id: 534542, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  R: () => E,
+  R: () => g,
   g: () => p
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk520463 = require("./520463.js");
 
@@ -55,8 +55,8 @@ function f(e, t) {
   if (null == e) return {};
   var n, r, i = _(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -64,8 +64,8 @@ function f(e, t) {
 function _(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let p = {
@@ -79,25 +79,23 @@ let p = {
     SUCCESS: "success"
   },
   h = "modeDefault",
-  m = "modeDisabled",
-  g = "modeSelectable";
+  m = "modeDisabled";
 
-function E(e) {
+function g(e) {
   var {
     type: t = p.DEFAULT,
     className: n,
     disabled: i,
-    selectable: l,
-    children: u,
-    style: _
-  } = e, E = f(e, ["type", "className", "disabled", "selectable", "children", "style"]);
-  let b = h;
-  return i ? b = m : l && (b = g), (0, r.jsx)(a.Text, d(c({
+    children: l,
+    style: u
+  } = e, _ = f(e, ["type", "className", "disabled", "children", "style"]);
+  let g = h;
+  return i && (g = m), (0, r.jsx)(o.Text, d(c({
     variant: "text-sm/normal",
-    className: o()(s[t], n, s[b]),
-    style: _
-  }, E), {
-    children: u
+    className: a()(s[t], n, s[g]),
+    style: u
+  }, _), {
+    children: l
   }))
 }
-E.Types = p
+g.Types = p

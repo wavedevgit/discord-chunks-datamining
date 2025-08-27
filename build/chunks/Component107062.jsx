@@ -35,9 +35,9 @@ let C = (e, t) => A.intl.formatToPlainString(A.t.tAwI1t, {
   N = (e, t, n) => {
     let r = A.t["bES+y8"],
       i = m.ZP.getName(t.guild_id, t.id, n),
-      o = e.extra.activity_name;
+      a = e.extra.activity_name;
     return A.intl.formatToMarkdownString(r, {
-      gameName: o,
+      gameName: a,
       userName: i
     }).replaceAll("*", "")
   },
@@ -47,8 +47,8 @@ let C = (e, t) => A.intl.formatToPlainString(A.t.tAwI1t, {
       channel: n,
       users: r,
       countOthers: i
-    } = e, o = A.t["7j/5mp"];
-    return A.intl.formatToMarkdownString(o, {
+    } = e, a = A.t["7j/5mp"];
+    return A.intl.formatToMarkdownString(a, {
       gameName: t.extra.activity_name,
       user1: m.ZP.getName(null == n ? true : n.guild_id, null == n ? true : n.id, r[0]),
       user2: m.ZP.getName(null == n ? true : n.guild_id, null == n ? true : n.id, r[1]),
@@ -75,7 +75,7 @@ let C = (e, t) => A.intl.formatToPlainString(A.t.tAwI1t, {
     } = (0, T.n)(n), {
       primaryColor: k,
       secondaryColor: U
-    } = (0, O.Z)(null == D ? true : D.src), G = (0, o.e7)([p.default], () => p.default.locale), {
+    } = (0, O.Z)(null == D ? true : D.src), G = (0, a.e7)([p.default], () => p.default.locale), {
       displayParticipants: B,
       participant1: Z,
       participant2: F,
@@ -132,10 +132,10 @@ let C = (e, t) => A.intl.formatToPlainString(A.t.tAwI1t, {
         user: x,
         variant: "primary",
         size: "md",
-        icon: a.YVR
+        icon: o.YVR
       }) : null,
-      Q = W ? a.iWm : a.jje,
-      J = w ? null : (0, r.jsx)(a.zxk, {
+      Q = W ? o.iWm : o.jje,
+      J = w ? null : (0, r.jsx)(o.zxk, {
         variant: "primary",
         size: "md",
         fullWidth: true,

@@ -3,15 +3,15 @@
 "use strict";
 var Chunk621523 = require("./621523.js"),
   Chunk880181 = require("./880181.js"),
-  o = /#|\.prototype\./,
-  a = function(e, t) {
+  a = /#|\.prototype\./,
+  o = function(e, t) {
     var n = l[s(e)];
     return n === u || n !== c && (i(t) ? r(t) : !!t)
   },
-  s = a.normalize = function(e) {
-    return String(e).replace(o, ".").toLowerCase()
+  s = o.normalize = function(e) {
+    return String(e).replace(a, ".").toLowerCase()
   },
-  l = a.data = {},
-  c = a.NATIVE = "N",
-  u = a.POLYFILL = "P";
-module.exports = a
+  l = o.data = {},
+  c = o.NATIVE = "N",
+  u = o.POLYFILL = "P";
+module.exports = o

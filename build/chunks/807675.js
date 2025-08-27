@@ -30,10 +30,10 @@ function _(e) {
     }),
     _ = l.Hn;
   try {
-    _ = o.vB(null != d.permissions && "" !== d.permissions ? d.permissions : "0")
+    _ = a.vB(null != d.permissions && "" !== d.permissions ? d.permissions : "0")
   } catch (e) {}
   let p = d.channel_id,
-    h = f(null != (i = null != (n = d.guild_id) ? n : null == (t = a.Z.getChannel(p)) ? true : t.guild_id) ? i : s.Z.getGuildId());
+    h = f(null != (i = null != (n = d.guild_id) ? n : null == (t = o.Z.getChannel(p)) ? true : t.guild_id) ? i : s.Z.getGuildId());
   return {
     clientId: null != (c = d.client_id) ? c : "",
     scopes: (null != (u = d.scope) ? u : "").split(" ").filter(e => e.length > 0),

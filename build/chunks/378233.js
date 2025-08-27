@@ -74,16 +74,16 @@ let {
   if (null == e.format_type) return null;
   let i = e.format_type;
   e.format_type === d.u3.GIF && t && (i = d.u3.PNG);
-  let o = T(i),
-    a = _.ANM.STICKER_ASSET(e.id, o),
-    s = o === d.og.WEBP ? "&quality=lossless" : "";
+  let a = T(i),
+    o = _.ANM.STICKER_ASSET(e.id, a),
+    s = a === d.og.WEBP ? "&quality=lossless" : "";
   if ("development" !== m) {
-    if (e.format_type === d.u3.LOTTIE) return "".concat(location.protocol).concat(g).concat(a);
+    if (e.format_type === d.u3.LOTTIE) return "".concat(location.protocol).concat(g).concat(o);
     let i = e.format_type === d.u3.APNG && t && !(0, l.isAndroid)() ? "&passthrough=false" : "",
-      o = Math.min(2, (0, r.x_)());
-    return "".concat(location.protocol).concat(h).concat(a, "?size=").concat((0, r.oO)(n * o)).concat(i).concat(s)
+      a = Math.min(2, (0, r.x_)());
+    return "".concat(location.protocol).concat(h).concat(o, "?size=").concat((0, r.oO)(n * a)).concat(i).concat(s)
   }
-  return "".concat(location.protocol).concat(p).concat(a)
+  return "".concat(location.protocol).concat(p).concat(o)
 }, N = e => null != e.match("development" !== m ? O : v), R = e => ({
   type: d.Ih.PACK,
   id: e.id,
@@ -91,7 +91,7 @@ let {
   stickers: e.stickers,
   previewSticker: I(e)
 }), P = (e, t) => e === f.yr.ANIMATE_ON_INTERACTION ? t : e !== f.yr.NEVER_ANIMATE, w = (e, t, n, r) => {
-  if (a.Z.getUploadCount(n, r) > 0) returntrue;
+  if (o.Z.getUploadCount(n, r) > 0) returntrue;
   let i = c.Z.getStickerPreview(n, r);
   if (null != i && i.length > 0) returntrue;
   switch (e) {
@@ -106,7 +106,7 @@ let {
 }, D = e => e.type === d.n0.GUILD, x = e => e.type === d.n0.STANDARD, L = e => e.stickerItems.length > 0 ? e.stickerItems : e.stickers.length > 0 ? e.stickers : [], j = e => {
   if (null === e) returnfalse;
   let t = e.guild_id;
-  return true !== o.Z.getGuild(t)
+  return true !== a.Z.getGuild(t)
 }, M = [];
 
 function k() {

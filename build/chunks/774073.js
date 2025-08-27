@@ -7,7 +7,7 @@ require.d(exports, {
 }), require("./997841.js"), require("./539854.js");
 var Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
-  o = require.n(Chunk512722),
+  a = require.n(Chunk512722),
   Chunk683076 = require("./683076.js"),
   Chunk442837 = require("./442837.js"),
   Chunk812206 = require("./812206.js"),
@@ -30,7 +30,7 @@ let m = function(e, t) {
   },
   g = (e, t) => {
     let n = [];
-    return null == e || null == t ? ["no match"] : ((0, _.yE)(t.flags, h.udG.GAME_PROFILE_DISABLED) && n.push("profile disabled"), e.themes.includes(a.i.EROTIC) && n.push("nsfw"), (null == e.summary || 0 === e.summary.length) && n.push("no summary"), (null == e.summary || 0 === e.summary.length) && n.push("no summary"), n)
+    return null == e || null == t ? ["no match"] : ((0, _.yE)(t.flags, h.udG.GAME_PROFILE_DISABLED) && n.push("profile disabled"), e.themes.includes(o.i.EROTIC) && n.push("nsfw"), (null == e.summary || 0 === e.summary.length) && n.push("no summary"), (null == e.summary || 0 === e.summary.length) && n.push("no summary"), n)
   },
   E = (e, t) => 0 === g(e, t).length,
   b = e => E(u.Z.getGame(e), l.Z.getApplication(e)),
@@ -39,7 +39,7 @@ let m = function(e, t) {
       location: t,
       applicationId: n = "",
       autoTrackExposure: i = true,
-      source: a,
+      source: o,
       trackEntryPointImpression: l = true
     } = e, f = r.useRef(false), _ = (0, p.xG)(t, i);
     (0, d.M)(_ && "" !== n ? n : null);
@@ -47,8 +47,8 @@ let m = function(e, t) {
       b = (0, c.q)(n),
       y = r.useMemo(() => null != h && null != b ? E(h, b) : null, [b, h]);
     return r.useEffect(() => {
-      !f.current && _ && l && false === u.Z.isFetching(n) && null != h && null != y && (o()(null != a, "Cannot track a Game Profile Entry Point Impressions without a source."), m(y, n, g(h), a), f.current = true)
-    }, [y, n, _, h, a, l]), {
+      !f.current && _ && l && false === u.Z.isFetching(n) && null != h && null != y && (a()(null != o, "Cannot track a Game Profile Entry Point Impressions without a source."), m(y, n, g(h), o), f.current = true)
+    }, [y, n, _, h, o, l]), {
       shouldOpenGameProfile: _ && true === y,
       applicationId: n
     }

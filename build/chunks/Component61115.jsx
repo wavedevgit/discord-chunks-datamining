@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk202841 = require("./202841.js"),
   Chunk481060 = require("./481060.js"),
   Chunk493773 = require("./493773.js"),
@@ -67,8 +67,8 @@ function S(e) {
   let {
     questId: t,
     survey: n,
-    transitionState: o,
-    onClose: a,
+    transitionState: a,
+    onClose: o,
     onSubmit: f
   } = e, p = (0, _.B4)(t), [b, O] = i.useState(0), [S, C] = (0, l.q_F)(() => ({
     from: {
@@ -85,13 +85,13 @@ function S(e) {
   }, P = async e => {
     1 === e && (await C({
       width: "100%"
-    }), a())
+    }), o())
   };
   return (0, c.ZP)(() => {
     null != p && d.default.track(h.rMx.QUEST_SURVEY_DISPLAYED, N(p, n))
-  }), null == p && a(), (0, r.jsx)(l.Y0X, {
+  }), null == p && o(), (0, r.jsx)(l.Y0X, {
     "data-migration-pending": true,
-    transitionState: o,
+    transitionState: a,
     size: l.CgR.DYNAMIC,
     className: g.modalRoot,
     parentComponent: "QuestSurveyModal",
@@ -109,7 +109,7 @@ function S(e) {
           children: [(0, r.jsx)(l.olH, {
             "data-migration-pending": true,
             className: g.closeBtn,
-            onClick: a
+            onClick: o
           }), (0, r.jsx)("img", {
             src: E,
             alt: "",
@@ -154,7 +154,7 @@ function S(e) {
             children: [(0, r.jsx)(l.zxk, {
               variant: "primary",
               text: m.intl.string(m.t.cpT0Cg),
-              onClick: a
+              onClick: o
             }), (0, r.jsx)(s.animated.div, {
               className: g.progressOverlay,
               style: S
@@ -173,7 +173,7 @@ function A(e) {
     onClick: i
   } = e;
   return (0, r.jsxs)(l.P3F, {
-    className: a()(g.choiceContainer, t),
+    className: o()(g.choiceContainer, t),
     onClick: () => i(n),
     children: [(0, r.jsx)(l.Text, {
       variant: "text-sm/semibold",

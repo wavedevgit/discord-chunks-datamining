@@ -10,7 +10,7 @@ require.d(exports, {
 }), require("./388685.js"), require("./539854.js");
 var Chunk647438 = require("./647438.js"),
   Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  a = require.n(Chunk392711),
   Chunk772848 = require("./772848.js"),
   Chunk442837 = require("./442837.js"),
   Chunk80932 = require("./80932.js"),
@@ -113,9 +113,9 @@ let G = [Chunk185923.Z5.DISALLOW_EXTERNAL, Chunk185923.Z5.DISALLOW_CUSTOM],
       newlyAddedEmojis: J
     } = (0, P.Z)(H, l), $ = (0, s.Wu)([v.ZP], () => v.ZP.getFlattenedGuildIds(), []), ee = (0, s.e7)([c.ZP], () => c.ZP.expandedSectionsByGuildIds), {
       canCreateExpressions: et
-    } = (0, m.XJ)(V), en = (0, s.e7)([I.default], () => I.default.getCurrentUser()), er = (0, A.I5)(en), ei = (0, g.B4)(), eo = Y.getCustomEmoji(), ea = e => {
+    } = (0, m.XJ)(V), en = (0, s.e7)([I.default], () => I.default.getCurrentUser()), er = (0, A.I5)(en), ei = (0, g.B4)(), ea = Y.getCustomEmoji(), eo = e => {
       if (e.type === u.B.GUILD) return e.guildId
-    }, es = r.useMemo(() => o().groupBy(eo, ea), [eo]), {
+    }, es = r.useMemo(() => a().groupBy(ea, eo), [ea]), {
       enabled: el,
       treatment: ec
     } = C.Z.useExperiment({
@@ -136,10 +136,10 @@ let G = [Chunk185923.Z5.DISALLOW_EXTERNAL, Chunk185923.Z5.DISALLOW_CUSTOM],
       if (null != Y && null != h) {
         let f = Math.floor(h / (M + 2 * L)),
           m = 3 * f,
-          g = (a, _) => {
+          g = (o, _) => {
             let p = new Map,
               h = n.has(_.sectionId),
-              [g, E] = o().partition(a, e => {
+              [g, E] = a().partition(o, e => {
                 let n = T.ZP.isEmojiDisabled({
                   emoji: e,
                   channel: t,
@@ -223,7 +223,7 @@ let G = [Chunk185923.Z5.DISALLOW_EXTERNAL, Chunk185923.Z5.DISALLOW_CUSTOM],
             }
             let F = h ? 0 : B,
               V = k(j({}, _), {
-                count: a.length
+                count: o.length
               });
             r.push(V), e.push(F)
           };
@@ -268,7 +268,7 @@ let G = [Chunk185923.Z5.DISALLOW_EXTERNAL, Chunk185923.Z5.DISALLOW_CUSTOM],
                   intention: l
                 })));
                 if (0 === i.length) return;
-                let o = y.Z.getGuild(n),
+                let a = y.Z.getGuild(n),
                   s = ei || !er && T.ZP.isEmojiCategoryNitroLocked({
                     categoryEmojis: i,
                     channel: t,
@@ -276,9 +276,9 @@ let G = [Chunk185923.Z5.DISALLOW_EXTERNAL, Chunk185923.Z5.DISALLOW_CUSTOM],
                   });
                 g(i, {
                   categoryId: e,
-                  guild: o,
+                  guild: a,
                   type: w.En.GUILD,
-                  sectionId: null != o ? o.id : (0, a.Z)(),
+                  sectionId: null != a ? a.id : (0, o.Z)(),
                   count: i.length,
                   isNitroLocked: s
                 })
@@ -356,8 +356,8 @@ let F = e => {
       pickerIntention: t,
       selectedChannel: n,
       onSelectEmoji: i,
-      setUpsellConfigs: o,
-      emojiSelectAnalytics: a,
+      setUpsellConfigs: a,
+      emojiSelectAnalytics: o,
       trackEmojiFavorited: d
     } = e, f = (0, s.e7)([c.ZP], () => c.ZP.getDisambiguatedEmojiContext(null == n ? true : n.getGuildId()), [n]);
     return r.useCallback((e, r) => {
@@ -380,24 +380,24 @@ let F = e => {
           });
           if (r.toggleFavorite) return void(f.isFavoriteEmojiWithoutFetchingLatest(s) || null != c ? (0, l.Xe)(s) : (null == d || d(e), (0, l.$K)(s)));
           if (c === D.Z5.GUILD_SUBSCRIPTION_UNAVAILABLE) return;
-          if (c === D.Z5.PREMIUM_LOCKED) return void o({
+          if (c === D.Z5.PREMIUM_LOCKED) return void a({
             type: 0,
             emojiDescriptor: e
           });
-          if (c === D.Z5.ROLE_SUBSCRIPTION_LOCKED && s.type === u.B.GUILD) return void o({
+          if (c === D.Z5.ROLE_SUBSCRIPTION_LOCKED && s.type === u.B.GUILD) return void a({
             type: 1,
             guildId: s.guildId,
             emojiId: s.id
           });
           if (c === D.Z5.ROLE_SUBSCRIPTION_UNAVAILABLE) return;
-          null == a || a(e), i({
+          null == o || o(e), i({
             emoji: s,
             willClose: r.isFinalSelection,
             isBurst: r.isBurst
           })
         }
       }
-    }, [n, t, i, o, f, a, d])
+    }, [n, t, i, a, f, o, d])
   },
   V = e => {
     let {

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk628692 = require("./628692.jsx"),
   Chunk845537 = require("./845537.jsx"),
   Chunk653309 = require("./653309.jsx"),
@@ -74,7 +74,7 @@ function m(e, t, n) {
         children: f
       }));
     case "blockQuote": {
-      let e = o()(d.blockquoteContainer, d.slateBlockquoteContainer);
+      let e = a()(d.blockquoteContainer, d.slateBlockquoteContainer);
       return (0, r.jsxs)("div", h(_({}, u), {
         className: e,
         children: [(0, r.jsx)("span", {
@@ -150,7 +150,7 @@ function m(e, t, n) {
       return (0, r.jsxs)(g, {
         attributes: u,
         className: b,
-        children: [(0, r.jsx)(a.ku, {
+        children: [(0, r.jsx)(o.ku, {
           soundId: p.soundId
         }), f]
       });
@@ -188,9 +188,9 @@ let g = e => {
     className: t,
     attributes: n,
     children: i
-  } = e, a = o()(u.inlineElement, u.inlineVoid, t);
+  } = e, o = a()(u.inlineElement, u.inlineVoid, t);
   return (0, r.jsx)("span", h(_({}, n), {
-    className: a,
+    className: o,
     contentEditable: false,
     children: i
   }))

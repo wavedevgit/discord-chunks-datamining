@@ -61,7 +61,7 @@ function h(e) {
   let {
     applicationId: t,
     proxyTicket: n
-  } = e, r = (0, a.ZP)(t);
+  } = e, r = (0, o.ZP)(t);
   if (null == r) return void _.delete(t);
   _.delete(t), null != f && (f = null), f = {
     applicationId: t,

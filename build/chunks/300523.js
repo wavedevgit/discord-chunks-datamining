@@ -9,7 +9,7 @@ var r = Object.assign || function(e) {
     return e
   },
   i = "src/createAnimatedComponent.js",
-  o = function() {
+  a = function() {
     function e(e, t) {
       for (var n = 0; n < t.length; n++) {
         var r = t[n];
@@ -21,7 +21,7 @@ var r = Object.assign || function(e) {
     }
   }();
 
-function a(e, t) {
+function o(e, t) {
   var n = {};
   for (var r in e) !(t.indexOf(r) >= 0) && Object.prototype.hasOwnProperty.call(e, r) && (n[r] = e[r]);
   return n
@@ -55,7 +55,7 @@ module.exports = function(e) {
     function n() {
       return s(this, n), l(this, (n.__proto__ || Object.getPrototypeOf(n)).apply(this, arguments))
     }
-    return c(n, t), o(n, [{
+    return c(n, t), a(n, [{
       key: "componentWillUnmount",
       value: function() {
         this._propsAnimated && this._propsAnimated.__detach()
@@ -90,10 +90,10 @@ module.exports = function(e) {
       value: function() {
         var t = this,
           n = this._propsAnimated.__getValue(),
-          o = n.style,
-          s = a(n, ["style"]);
+          a = n.style,
+          s = o(n, ["style"]);
         return u.createElement(e, r({}, s, {
-          style: f.transformStyles(o),
+          style: f.transformStyles(a),
           ref: function(e) {
             t.componentRef = e
           },

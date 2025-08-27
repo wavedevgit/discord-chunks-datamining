@@ -42,17 +42,17 @@ var Chunk507604 = require("./507604.js"),
     return M[S] = false, A(j) !== j || A(M) === M || "/a/i" !== String(A(j, "i"))
   })),
   Z = function(e) {
-    for (var t, n = e.length, r = 0, i = "", o = false; r <= n; r++) {
+    for (var t, n = e.length, r = 0, i = "", a = false; r <= n; r++) {
       if ("\\" === (t = P(e, r))) {
         i += t + P(e, ++r);
         continue
       }
-      o || "." !== t ? ("[" === t ? o = true : "]" === t && (o = false), i += t) : i += "[\\s\\S]"
+      a || "." !== t ? ("[" === t ? a = true : "]" === t && (a = false), i += t) : i += "[\\s\\S]"
     }
     return i
   },
   F = function(e) {
-    for (var t, n = e.length, r = 0, i = "", o = [], a = c(null), s = false, l = false, u = 0, d = ""; r <= n; r++) {
+    for (var t, n = e.length, r = 0, i = "", a = [], o = c(null), s = false, l = false, u = 0, d = ""; r <= n; r++) {
       if ("\\" === (t = P(e, r))) t += P(e, ++r);
       else if ("]" === t) s = false;
       else if (!s) switch (true) {
@@ -64,26 +64,26 @@ var Chunk507604 = require("./507604.js"),
           R(L, x(e, r + 1)) && (r += 2, l = true), u++;
           continue;
         case ">" === t && l:
-          if ("" === d || b(a, d)) throw new N("Invalid capture group name");
-          a[d] = true, o[o.length] = [d, u], l = false, d = "";
+          if ("" === d || b(o, d)) throw new N("Invalid capture group name");
+          o[d] = true, a[a.length] = [d, u], l = false, d = "";
           continue
       }
       l ? d += t : i += t
     }
-    return [i, o]
+    return [i, a]
   };
 if (Chunk275717("RegExp", B)) {
   for (var V = function(e, t) {
-      var n, r, i, o, a, c, u = d(C, this),
+      var n, r, i, a, o, c, u = d(C, this),
         h = f(e),
         m = true === t,
         g = [],
         E = e;
       if (!u && h && m && e.constructor === V) return e;
-      if ((h || d(C, e)) && (e = e.source, m && (t = p(E))), e = true === e ? "" : _(e), t = true === t ? "" : _(t), E = e, I && "dotAll" in j && (r = !!t && D(t, "s") > false) && (t = w(t, /s/g, "")), n = t, U && "sticky" in j && (i = !!t && D(t, "y") > false) && G && (t = w(t, /y/g, "")), T && (e = (o = F(e))[0], g = o[1]), a = s(A(e, t), u ? this : C, V), (r || i || g.length) && (c = y(a), r && (c.dotAll = true, c.raw = V(Z(e), n)), i && (c.sticky = true), g.length && (c.groups = g)), e !== E) try {
-        l(a, "source", "" === E ? "(?:)" : E)
+      if ((h || d(C, e)) && (e = e.source, m && (t = p(E))), e = true === e ? "" : _(e), t = true === t ? "" : _(t), E = e, I && "dotAll" in j && (r = !!t && D(t, "s") > false) && (t = w(t, /s/g, "")), n = t, U && "sticky" in j && (i = !!t && D(t, "y") > false) && G && (t = w(t, /y/g, "")), T && (e = (a = F(e))[0], g = a[1]), o = s(A(e, t), u ? this : C, V), (r || i || g.length) && (c = y(o), r && (c.dotAll = true, c.raw = V(Z(e), n)), i && (c.sticky = true), g.length && (c.groups = g)), e !== E) try {
+        l(o, "source", "" === E ? "(?:)" : E)
       } catch (e) {}
-      return a
+      return o
     }, H = u(A), Y = 0; H.length > Y;) Chunk316096(V, A, H[Y++]);
   C.constructor = V, V.prototype = C, Chunk556585(Chunk127849, "RegExp", V, {
     constructor: true

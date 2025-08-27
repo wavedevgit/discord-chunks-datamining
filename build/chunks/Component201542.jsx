@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk607070 = require("./607070.js"),
@@ -37,12 +37,12 @@ function S(e) {
     played: t,
     duration: n,
     currentTime: i
-  } = e, o = null == n ? "--:--" : t ? (0, _.yv)(Math.ceil(n - i)) : (0, _.yv)(Math.ceil(n));
+  } = e, a = null == n ? "--:--" : t ? (0, _.yv)(Math.ceil(n - i)) : (0, _.yv)(Math.ceil(n));
   return (0, r.jsx)(l.Text, {
     variant: "text-sm/normal",
     className: v.duration,
     tabularNumbers: true,
-    children: o
+    children: a
   })
 }
 
@@ -51,8 +51,8 @@ function A(e, t, n) {
     let r;
 
     function i() {
-      let o = e.current;
-      null != o && (n(o.currentTime), t && (r = requestAnimationFrame(i)))
+      let a = e.current;
+      null != a && (n(a.currentTime), t && (r = requestAnimationFrame(i)))
     }
     return i(), () => {
       null != r && cancelAnimationFrame(r)
@@ -79,7 +79,7 @@ function C(e, t, n) {
 let N = Chunk647438.memo(function(e) {
   let t, {
       src: n,
-      volume: o = 1,
+      volume: a = 1,
       onVolumeChange: _,
       onMute: h,
       waveform: b,
@@ -102,7 +102,7 @@ let N = Chunk647438.memo(function(e) {
     [K, z] = i.useState(false),
     [q, X] = i.useState(false),
     [Q, J] = i.useState("none"),
-    [$, ee] = i.useState(() => "function" == typeof o ? o() : o),
+    [$, ee] = i.useState(() => "function" == typeof a ? a() : a),
     et = i.useRef(true),
     en = i.useCallback(() => {
       W(e => !e), X(true)
@@ -114,17 +114,17 @@ let N = Chunk647438.memo(function(e) {
       let t = e.currentTarget.duration;
       isNaN(t) || F(t)
     }, []),
-    eo = i.useCallback(e => {
+    ea = i.useCallback(e => {
       null != y && null != x && (0, u.U)(x, e, y)
     }, [x, y]),
-    ea = i.useCallback(() => {
+    eo = i.useCallback(() => {
       W(false), null == et.current && (et.current = setTimeout(() => {
         U(false), X(false), et.current = true
       }, 500))
     }, []),
     es = i.useCallback(() => {
-      K || (eo(0), ea())
-    }, [ea, K, eo]),
+      K || (ea(0), eo())
+    }, [eo, K, ea]),
     el = i.useCallback(e => {
       let t = L.current;
       null != t && (B(e), t.currentTime = e, U(true))
@@ -146,8 +146,8 @@ let N = Chunk647438.memo(function(e) {
       z(true)
     }, []),
     e_ = i.useCallback(() => {
-      z(false), G === Z && ea(), eo(G)
-    }, [G, Z, ea, eo]),
+      z(false), G === Z && eo(), ea(G)
+    }, [G, Z, eo, ea]),
     ep = i.useCallback(e => {
       let t = L.current;
       null != Z && null != t && (el(e * Z), clearTimeout(et.current), et.current = true)
@@ -171,11 +171,11 @@ let N = Chunk647438.memo(function(e) {
     let e;
     return Y && !K && (e = setInterval(() => {
       var e, t;
-      eo(null != (t = null == (e = L.current) ? true : e.currentTime) ? t : 0)
+      ea(null != (t = null == (e = L.current) ? true : e.currentTime) ? t : 0)
     }, m.Z.Millis.SECOND)), () => {
       null != e && clearInterval(e)
     }
-  }, [Y, K, eo]), i.useEffect(() => {
+  }, [Y, K, ea]), i.useEffect(() => {
     let {
       played: e,
       currentTime: t,
@@ -184,15 +184,15 @@ let N = Chunk647438.memo(function(e) {
     } = eg.current;
     if (e || Y)
       if (Y) {
-        var i, o;
-        eh.current = performance.now(), null == r || r(false, t, (null != (o = null == (i = L.current) ? true : i.duration) ? o : 0) * m.Z.Millis.SECOND)
+        var i, a;
+        eh.current = performance.now(), null == r || r(false, t, (null != (a = null == (i = L.current) ? true : i.duration) ? a : 0) * m.Z.Millis.SECOND)
       } else {
         let e = performance.now(),
           r = eh.current,
           i = null != r ? (e - r) / 1e3 : 0;
-        null == n || n(t, i), eo(t), eh.current = null
+        null == n || n(t, i), ea(t), eh.current = null
       }
-  }, [Y, n, Z, eo]), A(L, Y, B), C(n, Y, W);
+  }, [Y, n, Z, ea]), A(L, Y, B), C(n, Y, W);
   let eE = Y ? l.fpf : l.o1U,
     eb = Y ? O.intl.string(O.t.ZcgDJS) : O.intl.string(O.t.RscU7O),
     ey = O.intl.formatToPlainString(O.t.LgCPMj, {
@@ -231,14 +231,14 @@ let N = Chunk647438.memo(function(e) {
   });
   let ev = (0, s.e7)([c.Z], () => c.Z.useReducedMotion);
   return (0, r.jsxs)("div", {
-    className: a()(v.container, {
+    className: o()(v.container, {
       [v.playing]: Y
     }),
     onMouseEnter: er,
     children: [(0, r.jsx)("div", {
       className: v.rippleContainer,
       children: (0, r.jsx)("div", {
-        className: a()(v.ripple, {
+        className: o()(v.ripple, {
           [v.reducedMotion]: ev
         })
       })

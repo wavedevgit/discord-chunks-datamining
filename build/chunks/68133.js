@@ -7,12 +7,12 @@ function r(e, t) {
   if (!n) return;
   let r = window.getComputedStyle(e);
   r.cssText ? (n.cssText = r.cssText, n.transformOrigin = r.transformOrigin) : toArray(r).forEach(i => {
-    let o = r.getPropertyValue(i);
-    if ("font-size" === i && o.endsWith("px")) {
-      let e = Math.floor(parseFloat(o.substring(0, o.length - 2))) - .1;
-      o = `${e}px`
+    let a = r.getPropertyValue(i);
+    if ("font-size" === i && a.endsWith("px")) {
+      let e = Math.floor(parseFloat(a.substring(0, a.length - 2))) - .1;
+      a = `${e}px`
     }
-    isInstanceOfElement(e, HTMLIFrameElement) && "display" === i && "inline" === o && (o = "block"), "d" === i && t.getAttribute("d") && (o = `path(${t.getAttribute("d")})`), n.setProperty(i, o, r.getPropertyPriority(i))
+    isInstanceOfElement(e, HTMLIFrameElement) && "display" === i && "inline" === a && (a = "block"), "d" === i && t.getAttribute("d") && (a = `path(${t.getAttribute("d")})`), n.setProperty(i, a, r.getPropertyPriority(i))
   })
 }
 
@@ -20,7 +20,7 @@ function i(e, t) {
   isInstanceOfElement(e, HTMLTextAreaElement) && (t.innerHTML = e.value), isInstanceOfElement(e, HTMLInputElement) && t.setAttribute("value", e.value)
 }
 
-function o(e, t) {
+function a(e, t) {
   if (isInstanceOfElement(e, HTMLSelectElement)) {
     let n = Array.from(t.children).find(t => e.value === t.getAttribute("value"));
     n && n.setAttribute("selected", "")

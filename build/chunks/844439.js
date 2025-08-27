@@ -8,7 +8,7 @@ require.d(exports, {
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,7 +24,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      a(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -84,19 +84,19 @@ function g(e) {
     location: n,
     channelId: r,
     withCommands: i
-  } = e, o = h({
+  } = e, a = h({
     location: n,
     channelId: r,
     withCommands: i
   });
   f = c(s({}, f), {
-    [o]: t
+    [a]: t
   }), _ = c(s({}, _), {
-    [o]: 1
+    [a]: 1
   });
-  let a = Date.now();
+  let o = Date.now();
   p = c(s({}, p), {
-    [o]: a
+    [a]: o
   })
 }
 
@@ -154,7 +154,7 @@ class y extends(r = Chunk442837.ZP.Store) {
     })]) ? t : b
   }
 }
-a(y, "displayName", true);
+o(y, "displayName", true);
 let O = new y(Chunk570140.Z, {
   APP_RECOMMENDATIONS_FETCH_RECOMMENDATIONS: m,
   APP_RECOMMENDATIONS_FETCH_RECOMMENDATIONS_SUCCESS: g,

@@ -6,7 +6,7 @@ require.d(exports, {
   Z: () => H,
   c: () => _
 }), require("./388685.js");
-var o, Chunk442837 = require("./442837.js"),
+var a, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk981631 = require("./981631.js");
 
@@ -153,7 +153,7 @@ function F(e) {
   if (!t || null == C) returnfalse;
   S = false, C = null, R()
 }
-class V extends(o = Chunk442837.ZP.Store) {
+class V extends(a = Chunk442837.ZP.Store) {
   getPricesForSku(e) {
     return b[e]
   }

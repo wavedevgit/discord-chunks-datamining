@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk831371 = require("./831371.js");
@@ -18,9 +18,9 @@ let c = e => {
       onClick: n,
       children: i
     } = e;
-    return (0, r.jsx)(a.eee, {
+    return (0, r.jsx)(o.eee, {
       onClick: n,
-      className: o()(l.link, t),
+      className: a()(l.link, t),
       children: i
     })
   },

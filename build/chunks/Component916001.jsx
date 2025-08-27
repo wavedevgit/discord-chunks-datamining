@@ -16,7 +16,7 @@ function l(e) {
     locked: t,
     role: n,
     textVariant: l = "text-xs/medium"
-  } = e, c = (0, o.dQu)(o.TVs.colors.INTERACTIVE_NORMAL).hex();
+  } = e, c = (0, a.dQu)(a.TVs.colors.INTERACTIVE_NORMAL).hex();
   return (0, r.jsx)("div", {
     className: s.roleTagContainer,
     children: (0, r.jsxs)("div", {
@@ -26,20 +26,20 @@ function l(e) {
         style: {
           backgroundColor: (0, i.Rf)(n.color)
         }
-      }), (0, r.jsx)(o.LZC, {
+      }), (0, r.jsx)(a.LZC, {
         size: 8,
         horizontal: true
-      }), (0, r.jsxs)(o.Text, {
+      }), (0, r.jsxs)(a.Text, {
         variant: l,
         color: "text-default",
-        children: [(0, r.jsx)(o.nn4, {
-          children: a.intl.string(a.t.RnyseH)
+        children: [(0, r.jsx)(a.nn4, {
+          children: o.intl.string(o.t.RnyseH)
         }), n.name]
       }), true === t && (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(o.LZC, {
+        children: [(0, r.jsx)(a.LZC, {
           size: 8,
           horizontal: true
-        }), (0, r.jsx)(o.mBM, {
+        }), (0, r.jsx)(a.mBM, {
           size: "md",
           color: c
         })]

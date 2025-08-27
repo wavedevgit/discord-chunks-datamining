@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk512722 = require("./512722.js"),
-  o = require.n(Chunk512722),
+  a = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk100527 = require("./100527.js"),
   Chunk906732 = require("./906732.jsx"),
@@ -21,9 +21,9 @@ let _ = "BoostedGuildPerksModalConnected",
       guildId: t,
       close: n,
       location: i
-    } = e, c = (0, a.e7)([d.default], () => d.default.getCurrentUser());
-    o()(null != c, "PremiumGuildPerksModalConnected: currentUser cannot be undefined");
-    let _ = (0, a.e7)([u.Z], () => u.Z.getGuild(t), [t]),
+    } = e, c = (0, o.e7)([d.default], () => d.default.getCurrentUser());
+    a()(null != c, "PremiumGuildPerksModalConnected: currentUser cannot be undefined");
+    let _ = (0, o.e7)([u.Z], () => u.Z.getGuild(t), [t]),
       {
         analyticsLocations: p
       } = (0, l.ZP)(s.Z.BOOSTED_GUILD_PERKS_MODAL);

@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   Chunk202841 = require("./202841.js"),
   Chunk481060 = require("./481060.js"),
@@ -72,13 +72,13 @@ function P(e) {
   let {
     emoji: t,
     isDisabled: n = false,
-    onClick: o,
+    onClick: a,
     className: s
   } = e, f = i.useRef(null), _ = (0, d.Z)(f);
   return (0, r.jsx)("span", {
     ref: f,
     children: (0, r.jsx)(c.P3F, {
-      onClick: o,
+      onClick: a,
       focusProps: {
         enabled: !n
       },
@@ -99,7 +99,7 @@ function P(e) {
               transform: i.to([0, 1], [1, 1.14]).to(e => "scale(".concat(e, ")"))
             },
             children: (0, r.jsx)(u.Z, {
-              className: a()(I.emoji, s, {
+              className: o()(I.emoji, s, {
                 [I.emojiItemDisabled]: n
               }),
               emojiId: t.id,
@@ -118,18 +118,18 @@ function w(e) {
     otherAccessories: t,
     isEmojiPickerExpanded: n,
     onSetExpanded: i,
-    onFocus: o
+    onFocus: a
   } = e;
   return (0, r.jsxs)(r.Fragment, {
     children: [t, (0, r.jsx)(c.P3F, {
       className: I.dropDownContainer,
       onClick: () => {
-        i(!n), o()
+        i(!n), a()
       },
       children: (0, r.jsx)(c.CJ0, {
         size: "md",
         color: "currentColor",
-        className: a()(I.dropDown, {
+        className: o()(I.dropDown, {
           [I.dropDownOpen]: n
         })
       })
@@ -141,7 +141,7 @@ function D(e) {
   let {
     channel: t,
     title: n,
-    closePopout: o,
+    closePopout: a,
     onFocus: l,
     onSelectEmoji: u,
     onSelectDisabledEmoji: d,
@@ -164,7 +164,7 @@ function D(e) {
         emoji: t,
         willClose: n
       } = e;
-      if (null == t && n) return void o();
+      if (null == t && n) return void a();
       null != t && u(t), k(!n), n && g.kJ.setSearchPlaceholder(null)
     },
     G = e => {
@@ -186,13 +186,13 @@ function D(e) {
       children: [(0, r.jsx)(h.Z, {
         analyticsOverride: T,
         channel: t,
-        className: a()(I.animatedPicker, {
+        className: o()(I.animatedPicker, {
           [I.animatedPickerTall]: x
         }),
-        headerClassName: a()(I.emojiPickerHeader, {
+        headerClassName: o()(I.emojiPickerHeader, {
           [I.emojiPickerHeaderExpanded]: x
         }),
-        closePopout: o,
+        closePopout: a,
         onSelectEmoji: x ? U : () => {},
         shouldHidePickerActions: !x,
         wrapper: "div",
@@ -209,7 +209,7 @@ function D(e) {
       }), (0, r.jsx)("div", {
         className: I.slotsContainer,
         children: (0, r.jsx)("div", {
-          className: a()(I.slots, I.slotsWide),
+          className: o()(I.slots, I.slotsWide),
           children: M.map(e => {
             let n = E.ZP.isEmojiDisabled({
               emoji: e,

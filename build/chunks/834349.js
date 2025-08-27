@@ -16,9 +16,9 @@ let u = null,
 
 function f(e, t, n, r = "react-aria-ListBoxSection") {
   var i;
-  let o = $e8Bmu$useContext(d),
+  let a = $e8Bmu$useContext(d),
     {
-      dragAndDropHooks: a,
+      dragAndDropHooks: o,
       dropState: s
     } = $e8Bmu$useContext($612b8eb6cb90e02d$export$d188a835a7bc5783),
     {
@@ -50,9 +50,9 @@ function f(e, t, n, r = "react-aria-ListBoxSection") {
       ref: c
     }
   }, $e8Bmu$react.createElement(l, {
-    collection: o.collection,
+    collection: a.collection,
     parent: n,
-    renderDropIndicator: $612b8eb6cb90e02d$export$971707d8a129a1f7(a, s)
+    renderDropIndicator: $612b8eb6cb90e02d$export$971707d8a129a1f7(o, s)
   })))
 }
 
@@ -63,19 +63,19 @@ function _(e, t) {
     dropState: r
   } = $e8Bmu$useContext($612b8eb6cb90e02d$export$d188a835a7bc5783), {
     dropIndicatorProps: i,
-    isHidden: o,
-    isDropTarget: a
+    isHidden: a,
+    isDropTarget: o
   } = n.useDropIndicator(e, r, t);
-  return o ? null : $e8Bmu$react.createElement(p, {
+  return a ? null : $e8Bmu$react.createElement(p, {
     ...e,
     dropIndicatorProps: i,
-    isDropTarget: a,
+    isDropTarget: o,
     ref: t
   })
 }
 let p = null;
 (0, Chunk873954.G5)("loader", function(e, t, n) {
-  let o = (0, c.useContext)(d),
+  let a = (0, c.useContext)(d),
     {
       isLoading: u,
       onLoadMore: f,
@@ -85,11 +85,11 @@ let p = null;
     h = (0, c.useRef)(null),
     m = (0, c.useMemo)(() => ({
       onLoadMore: f,
-      collection: null == o ? true : o.collection,
+      collection: null == a ? true : a.collection,
       sentinelRef: h,
       scrollOffset: _
-    }), [f, _, null == o ? true : o.collection]);
-  (0, a.B)(m, h);
+    }), [f, _, null == a ? true : a.collection]);
+  (0, o.B)(m, h);
   let g = (0, r.aX)({
       ...p,
       id: true,

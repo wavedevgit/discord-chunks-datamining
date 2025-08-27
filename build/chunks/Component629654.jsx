@@ -18,7 +18,7 @@ function f(e) {
   let {
     preset: t,
     onShuffle: n
-  } = e, f = (0, o.e7)([s.Z], () => s.Z.useReducedMotion), _ = (0, l.g2)({
+  } = e, f = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), _ = (0, l.g2)({
     useReducedMotion: f
   }), {
     name: p,
@@ -32,14 +32,14 @@ function f(e) {
   }, [t]);
   return (0, r.jsxs)("div", {
     className: d.container,
-    children: [(0, r.jsx)(a.P3F, {
+    children: [(0, r.jsx)(o.P3F, {
       onClick: () => {
         n(), _.startAnimation(false)
       },
       className: d.button,
       "aria-label": u.intl.string(u.t["44yJxs"]),
       children: _.render()
-    }), (0, r.jsxs)(a.P3F, {
+    }), (0, r.jsxs)(o.P3F, {
       onClick: () => {
         n(), _.startAnimation(false)
       },
@@ -50,7 +50,7 @@ function f(e) {
         "aria-hidden": true,
         src: h,
         className: d.presetImage
-      }), (0, r.jsx)(a.Text, {
+      }), (0, r.jsx)(o.Text, {
         className: d.presetLabel,
         variant: "text-sm/bold",
         color: "always-white",

@@ -7,14 +7,14 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk539510 = require("./539510.js");
 
 function l(e) {
   let {
     className: t,
     header: n,
-    headerClassName: o,
+    headerClassName: a,
     children: l
   } = e, c = i.useMemo(() => {
     let e = false;
@@ -23,9 +23,9 @@ function l(e) {
     }), e
   }, [l]);
   return (0, r.jsxs)("div", {
-    className: a()(s.wrapper, t),
+    className: o()(s.wrapper, t),
     children: [(0, r.jsx)("div", {
-      className: a()(s.header, o),
+      className: o()(s.header, a),
       children: n
     }), c && (0, r.jsx)("div", {
       className: s.content,

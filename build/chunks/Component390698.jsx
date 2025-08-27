@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk863577 = require("./863577.js");
@@ -55,27 +55,27 @@ let _ = e => {
     className: t,
     isPartiallyPurchased: n
   } = e;
-  return n ? (0, r.jsx)(a.ua7, {
+  return n ? (0, r.jsx)(o.ua7, {
     tooltipClassName: l.partiallyOwnedDisclaimer,
     position: "top",
     align: "left",
     text: s.intl.string(s.t.y1VWkZ),
     children: e => (0, r.jsxs)("div", f(u({
-      className: o()(l.partialOwnStateContainer, t)
+      className: a()(l.partialOwnStateContainer, t)
     }, e), {
       children: [(0, r.jsx)("span", {
         className: l.iconWrapper,
-        children: (0, r.jsx)(a.d3s, {
+        children: (0, r.jsx)(o.d3s, {
           size: "md",
           color: "currentColor",
           className: l.infoIcon
         })
-      }), (0, r.jsx)(a.Text, {
+      }), (0, r.jsx)(o.Text, {
         variant: "text-md/semibold",
         children: s.intl.string(s.t.BEjTio)
       })]
     }))
-  }) : (0, r.jsx)(a.Text, {
+  }) : (0, r.jsx)(o.Text, {
     variant: "text-md/semibold",
     className: t,
     children: s.intl.string(s.t["6cfuDg"])

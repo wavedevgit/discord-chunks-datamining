@@ -20,8 +20,8 @@ let _ = {
 
 function p(e, t) {
   if (r.Z.USE_TIFF && i.Z.isTiffFile(e)) return h(i.Z.findTiffOffsets(), "tiff", "TIFF");
-  if (r.Z.USE_JPEG && o.Z.isJpegFile(e)) return h(o.Z.findJpegOffsets(e), "jpeg", "JPEG");
-  if (r.Z.USE_PNG && a.ZP.isPngFile(e)) return h(a.ZP.findPngOffsets(e, t), "png", "PNG");
+  if (r.Z.USE_JPEG && a.Z.isJpegFile(e)) return h(a.Z.findJpegOffsets(e), "jpeg", "JPEG");
+  if (r.Z.USE_PNG && o.ZP.isPngFile(e)) return h(o.ZP.findPngOffsets(e, t), "png", "PNG");
   if (r.Z.USE_HEIC && s.Z.isHeicFile(e)) return h(s.Z.findHeicOffsets(e), "heic", "HEIC");
   if (r.Z.USE_AVIF && l.Z.isAvifFile(e)) return h(l.Z.findAvifOffsets(e), "avif", "AVIF");
   if (r.Z.USE_WEBP && c.Z.isWebpFile(e)) return h(c.Z.findOffsets(e), "webp", "WebP");

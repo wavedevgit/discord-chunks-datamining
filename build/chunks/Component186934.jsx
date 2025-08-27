@@ -29,7 +29,7 @@ function f() {
     setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_SIDECHAIN_COMPRESSION,
     children: [(0, Chunk951288.jsx)(Chunk481060.j7V, {
       value: module,
-      onChange: e => a.Z.setSidechainCompression(e, {
+      onChange: e => o.Z.setSidechainCompression(e, {
         analyticsLocations: n
       }),
       note: Chunk388032.intl.string(Chunk388032.t.zlA23N),
@@ -40,7 +40,7 @@ function f() {
       children: (0, Chunk951288.jsx)(Chunk481060.iRW, {
         initialValue: exports,
         minValue: 1,
-        onValueChange: e => a.Z.setSidechainCompressionStrength(e, {
+        onValueChange: e => o.Z.setSidechainCompressionStrength(e, {
           analyticsLocations: n
         })
       })

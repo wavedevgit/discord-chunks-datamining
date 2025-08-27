@@ -48,7 +48,7 @@ function S(e) {
   }
 
   function D(e, t) {
-    if ((0, f.SI)()) return void a.Z.showAgeVerificationGetStartedModal({
+    if ((0, f.SI)()) return void o.Z.showAgeVerificationGetStartedModal({
       entryPoint: s.cU.MESSAGE_REQUESTS_SETTINGS
     });
     t ? P(e) : x(!e)
@@ -66,7 +66,7 @@ function S(e) {
       body: T.intl.string(T.t["Ry2z7+"]),
       confirmText: T.intl.string(T.t.gm1Ven),
       cancelText: T.intl.string(T.t.p89ACg),
-      confirmButtonColor: o.zx.Colors.BRAND,
+      confirmButtonColor: a.zx.Colors.BRAND,
       onConfirm: n,
       onCancel: t
     })

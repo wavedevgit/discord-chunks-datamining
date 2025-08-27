@@ -42,17 +42,17 @@ function h(e) {
   return g === _.l.MODAL_V2 ? (0, r.jsx)(d.tG, {
     icon: n,
     text: p.intl.formatToPlainString(p.t.XWSHTU, {
-      platform: a.Z.get(t).name
+      platform: o.Z.get(t).name
     }),
-    size: o.Ph.TINY,
+    size: a.Ph.TINY,
     themeColor: "secondary",
     onClick: E
   }) : (0, r.jsx)(d.tG, {
     icon: n,
     text: p.intl.formatToPlainString(p.t.XWSHTU, {
-      platform: a.Z.get(t).name
+      platform: o.Z.get(t).name
     }),
-    size: o.Ph.SMALL,
+    size: a.Ph.SMALL,
     themeColor: "secondary",
     fullWidth: true,
     onClick: E

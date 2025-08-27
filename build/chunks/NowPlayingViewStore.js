@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => ew
 }), require("./388685.js"), require("./539854.js");
 var r, Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  a = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk790920 = require("./790920.js"),
@@ -109,7 +109,7 @@ function ei(e) {
   })), J[e]
 }
 
-function eo(e) {
+function ea(e) {
   return null == $[e] && ($ = V(Z({}, $), {
     [e]: new S.Z({
       url: e
@@ -117,7 +117,7 @@ function eo(e) {
   })), $[e]
 }
 
-function ea(e) {
+function eo(e) {
   et.has(e) || ee.add(e)
 }
 
@@ -125,7 +125,7 @@ function es(e) {
   if ((0, d.Z)(e)) return T.r9;
   if ((0, f.Z)(e)) return ei(e.name);
   let t = null != e.application_id ? m.Z.getApplication(e.application_id) : null;
-  return null != t ? t : (0, _.Z)(e) && null != e.url ? eo(e.url) : (null != e.application_id && ea(e.application_id), t)
+  return null != t ? t : (0, _.Z)(e) && null != e.url ? ea(e.url) : (null != e.application_id && eo(e.application_id), t)
 }
 
 function el(e) {
@@ -134,7 +134,7 @@ function el(e) {
     tags: {
       source: "ACTIVITIES"
     }
-  }), null) : e === T.XB ? T.r9 : e.startsWith(A.H) ? ei(e.slice(A.H.length)) : e.startsWith(S._) ? eo(e.slice(S._.length)) : (ea(e), null)
+  }), null) : e === T.XB ? T.r9 : e.startsWith(A.H) ? ei(e.slice(A.H.length)) : e.startsWith(S._) ? ea(e.slice(S._.length)) : (eo(e), null)
 }
 
 function ec(e) {
@@ -145,7 +145,7 @@ function ec(e) {
 }
 
 function eu(e) {
-  return o()(e).groupBy(e => {
+  return a()(e).groupBy(e => {
     var t;
     let n = ec(e.id),
       r = er(e.id);
@@ -155,7 +155,7 @@ function eu(e) {
 
 function ed(e, t) {
   let n = e => e.game.name;
-  return o()(e).orderBy([t, n], ["desc", "asc"])
+  return a()(e).orderBy([t, n], ["desc", "asc"])
 }
 
 function ef(e) {
@@ -163,7 +163,7 @@ function ef(e) {
 }
 
 function e_(e, t, n) {
-  var r, i, a, s, d;
+  var r, i, o, s, d;
   let f, _ = M.default.getCurrentUser(),
     h = null != (r = null == _ ? true : _.nsfwAllowed) && r,
     m = O.Z.getUserAffinitiesMap(),
@@ -195,7 +195,7 @@ function e_(e, t, n) {
           activity: r,
           userId: e.id,
           application: m,
-          channelId: null == (a = k.Z.getVoiceStateForUser(e.id)) ? true : a.channelId,
+          channelId: null == (o = k.Z.getVoiceStateForUser(e.id)) ? true : o.channelId,
           currentUser: _,
           isActivitiesEnabledForCurrentPlatform: t,
           ChannelStore: N.Z,
@@ -215,7 +215,7 @@ function e_(e, t, n) {
       let t = er(e.id),
         n = null != t ? es(t) : null;
       return null != n && n.id === m.id
-    }), (O = o().orderBy(O, [ef], ["desc"])).length !== g.length && (A = true), j.add(m.id), R.push({
+    }), (O = a().orderBy(O, [ef], ["desc"])).length !== g.length && (A = true), j.add(m.id), R.push({
       game: m,
       activity: r,
       activityUser: e,
@@ -235,14 +235,14 @@ function e_(e, t, n) {
     if (H.has(r) && V.has(t) || null == n || null == i || n.id === i.afkChannelId) null == n && (f = null, Z = true);
     else {
       let e = k.Z.getVoiceStatesForChannel(n.id),
-        a = (0, v.HG)("NowPlayingViewStore - voiceMembers"),
+        o = (0, v.HG)("NowPlayingViewStore - voiceMembers"),
         s = ef;
-      null != a && (s = e => {
+      null != o && (s = e => {
         var t, n;
         let r = O.Z.getUserAffinity(e.id);
-        return "vc_probability" === a ? null != (t = null == r ? true : r.vcProbability) ? t : 0 : null != (n = null == r ? true : r.communicationProbability) ? n : 0
+        return "vc_probability" === o ? null != (t = null == r ? true : r.vcProbability) ? t : 0 : null != (n = null == r ? true : r.communicationProbability) ? n : 0
       });
-      let l = o()(e).map(e => {
+      let l = a()(e).map(e => {
         let {
           userId: t
         } = e;
@@ -278,7 +278,7 @@ function e_(e, t, n) {
 function ep(e) {
   let t = en(),
     n = e_.bind(null, t);
-  return o()(e).mapValues(n)
+  return a()(e).mapValues(n)
 }
 
 function eh(e) {
@@ -286,9 +286,9 @@ function eh(e) {
     n = e => e.currentActivities.length > 0,
     r = e => e.voiceChannels.length > 0,
     i = e => e.applicationStreams.length > 0,
-    o = e => e.partiedMembers.length > 1,
-    a = e => e.isSpotifyActivity;
-  return e.values().orderBy([em, o, i, r, n, a, t], ["asc", "desc", "desc", "desc", "desc", "asc", "asc"]).value()
+    a = e => e.partiedMembers.length > 1,
+    o = e => e.isSpotifyActivity;
+  return e.values().orderBy([em, a, i, r, n, o, t], ["asc", "desc", "desc", "desc", "desc", "asc", "asc"]).value()
 }
 
 function em(e) {
@@ -346,7 +346,7 @@ function eI() {
     return null == n || n.bot || e.push(n), e
   }, [])))))), eO(), q = true
 }
-let eT = o().throttle(() => {
+let eT = a().throttle(() => {
   eI(), eP.emitChange()
 }, K);
 

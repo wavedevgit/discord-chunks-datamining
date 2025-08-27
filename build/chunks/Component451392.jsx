@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk498607 = require("./498607.js"),
   s = require.n(Chunk498607),
   Chunk692547 = require("./692547.js"),
@@ -26,7 +26,7 @@ function E(e) {
     user: t,
     pendingAvatarSrc: n,
     pendingColors: i,
-    onThemeColorsChange: a,
+    onThemeColorsChange: o,
     preventDisabled: E,
     guildId: b,
     className: y,
@@ -44,12 +44,12 @@ function E(e) {
   }), C = _.ZP.canUsePremiumProfileCustomization(t), N = null != n ? n : t.getAvatarURL(b, 80), R = (0, c.dQu)(l.Z.unsafe_rawColors.PRIMARY_530).hex(), P = (0, u.Cf)(N, R, false);
   if (null == S || null == A) return null;
   let w = e => {
-    a(s()(e, null == T ? true : T.themeColors) ? true : e)
+    o(s()(e, null == T ? true : T.themeColors) ? true : e)
   };
   return (0, r.jsx)(h.Z, {
     title: m.intl.string(m.t.DMeO2d),
     disabled: !C && !E,
-    className: o()(g.__invalid_profileThemesSection, y),
+    className: a()(g.__invalid_profileThemesSection, y),
     showPremiumIcon: O,
     forcedDivider: I,
     children: (0, r.jsxs)("div", {

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk990169 = require("./990169.js"),
   Chunk249458 = require("./249458.js"),
@@ -64,8 +64,8 @@ function I(e, t) {
   if (null == e) return {};
   var n, r, i = T(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -73,8 +73,8 @@ function I(e, t) {
 function T(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 require("./54453.js");
@@ -82,7 +82,7 @@ let S = __OVERLAY__ ? () => (0, Chunk442837.e7)([Chunk237997.default], () => Chu
 
 function A(e) {
   var t, n, {
-      src: o,
+      src: a,
       alt: s,
       className: c,
       emojiId: f,
@@ -106,7 +106,7 @@ function A(e) {
     triggerAnimation: Z,
     untriggerAnimation: F
   } = i.useContext(u.Rm), V = _.Yk.useSetting(), H = S(), Y = null == w ? V : w, W = E.kV[T], K = i.useRef(null), z = i.useMemo(() => {
-    if (null != o) return o;
+    if (null != a) return a;
     if (null != f) {
       let e = true === C && Y;
       return h.ZP.getEmojiURL({
@@ -117,7 +117,7 @@ function A(e) {
     }
     if (null != p) return m.ZP.getURL(p);
     throw Error("Unknown Src for Emoji")
-  }, [O, Y, f, p, W, H, M, A, C, o]), q = i.useCallback(() => {
+  }, [O, Y, f, p, W, H, M, A, C, a]), q = i.useCallback(() => {
     null != z && (B.current = (0, d.po)(z, e => {
       e || G(Date.now())
     }))
@@ -132,7 +132,7 @@ function A(e) {
       "data-name": p
     };
     return y(v(y({}, j), {
-      className: a()("emoji", c, {
+      className: o()("emoji", c, {
         jumboable: "jumbo" === T
       }),
       onError: q,
@@ -151,7 +151,7 @@ function A(e) {
     ee = (0, l.Z)(K);
   return null == z || "" === z ? (0, r.jsx)("span", v(y({}, J), {
     ref: $,
-    className: a()("emoji", "emoji-text"),
+    className: o()("emoji", "emoji-text"),
     children: null != L ? L : p
   })) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(u.aO, {
@@ -184,13 +184,13 @@ function C(e) {
     useThoughtfullyAnimated: t
   } = i.useContext(f.q), {
     animate: n,
-    registerRef: o
+    registerRef: a
   } = t(), {
-    disableAnimations: a
+    disableAnimations: o
   } = i.useContext(c.G);
   return (0, r.jsx)(A, v(y({}, e), {
-    registerAnimatedElementRef: o,
-    shouldAnimate: n && !a
+    registerAnimatedElementRef: a,
+    shouldAnimate: n && !o
   }))
 }
 

@@ -30,7 +30,7 @@ function p(e) {
     allowsDifferentPressOrigin: I,
     linkBehavior: T = "action"
   } = e, S = (0, i.tv)();
-  t = (0, o.Me)(t);
+  t = (0, a.Me)(t);
   let A = e => {
     if ("keyboard" === e.pointerType && (0, r.FJ)(e)) n.toggleSelection(p);
     else {
@@ -42,7 +42,7 @@ function p(e) {
           return
         } else if ("override" === T || "none" === T) return
       }
-      "single" === n.selectionMode ? n.isSelected(p) && !n.disallowEmptySelection ? n.toggleSelection(p) : n.replaceSelection(p) : e && e.shiftKey ? n.extendSelection(p) : "toggle" === n.selectionBehavior || e && ((0, a.y)(e) || "touch" === e.pointerType || "virtual" === e.pointerType) ? n.toggleSelection(p) : n.replaceSelection(p)
+      "single" === n.selectionMode ? n.isSelected(p) && !n.disallowEmptySelection ? n.toggleSelection(p) : n.replaceSelection(p) : e && e.shiftKey ? n.extendSelection(p) : "toggle" === n.selectionBehavior || e && ((0, o.y)(e) || "touch" === e.pointerType || "virtual" === e.pointerType) ? n.toggleSelection(p) : n.replaceSelection(p)
     }
   };
   (0, _.useEffect)(() => {

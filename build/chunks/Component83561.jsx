@@ -20,7 +20,7 @@ function _() {
   let e = arguments.length > 0 && true !== arguments[0] && arguments[0],
     [t, n] = Chunk647438.useState(false),
     r = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion),
-    a = Chunk647438.useMemo(() => {
+    o = Chunk647438.useMemo(() => {
       let n = exports || !Chunk951288 && !module;
       return (0, Chunk426563.j)(require)
     }, [exports, Chunk951288, module]);
@@ -41,7 +41,7 @@ function p(e) {
     className: d.avatarContainer,
     children: (0, r.jsx)(f, {
       src: t,
-      size: a.EFr.SIZE_40,
+      size: o.EFr.SIZE_40,
       "aria-label": u.intl.string(u.t.hG1StL)
     })
   })

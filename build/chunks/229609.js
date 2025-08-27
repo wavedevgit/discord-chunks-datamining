@@ -17,7 +17,7 @@ module.exports = function(e) {
         returnEnd: true
       }
     },
-    o = {
+    a = {
       className: "keyword",
       begin: "\\bsignal\\b",
       starts: {
@@ -26,7 +26,7 @@ module.exports = function(e) {
         returnEnd: true
       }
     },
-    a = {
+    o = {
       className: "attribute",
       begin: "\\bid\\s*:",
       starts: {
@@ -93,7 +93,7 @@ module.exports = function(e) {
         subLanguage: "xml"
       }],
       relevance: 0
-    }, o, i, {
+    }, a, i, {
       className: "function",
       beginKeywords: "function",
       end: /\{/,
@@ -112,7 +112,7 @@ module.exports = function(e) {
     }, {
       begin: "\\." + e.IDENT_RE,
       relevance: 0
-    }, a, s, l],
+    }, o, s, l],
     illegal: /#/
   }
 }

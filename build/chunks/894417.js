@@ -3,9 +3,9 @@
 "use strict";
 require.d(exports, {
   Fp: () => r,
-  NM: () => o,
+  NM: () => a,
   VV: () => i
 });
 var r = Math.max,
   i = Math.min,
-  o = Math.round
+  a = Math.round

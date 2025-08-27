@@ -7,14 +7,14 @@ require.d(exports, {
 });
 var Chunk818083 = require("./818083.js"),
   Chunk945577 = require("./945577.js");
-let o = {
+let a = {
     enabled: false
   },
-  a = (0, Chunk818083.B)({
+  o = (0, Chunk818083.B)({
     kind: "user",
     id: "2025-06_search_desktop_xdm_feedback",
     label: "Search Desktop XDM Feedback Experiment",
-    defaultConfig: o,
+    defaultConfig: a,
     treatments: [{
       id: 1,
       label: "Enables feedback in xDM control and treatment groups",
@@ -29,7 +29,7 @@ function s(e) {
     location: t
   } = e, {
     enabled: n
-  } = a.useExperiment({
+  } = o.useExperiment({
     location: t
   }, {
     autoTrackExposure: false
@@ -44,7 +44,7 @@ function l(e) {
     location: t
   } = e, {
     enabled: n
-  } = a.getCurrentConfig({
+  } = o.getCurrentConfig({
     location: t
   }, {
     autoTrackExposure: false

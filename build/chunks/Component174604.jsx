@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk202841 = require("./202841.js"),
   Chunk793030 = require("./793030.js"),
   Chunk755721 = require("./755721.js"),
@@ -72,7 +72,7 @@ function y(e) {
   let {
     guild: t,
     themeResponsive: n = true,
-    onButtonClick: o
+    onButtonClick: a
   } = e, h = (0, d.Z)(t.id), [g, y] = i.useState(false), [O, v] = (0, u.q_F)(() => ({
     scale: .8,
     config: {
@@ -118,7 +118,7 @@ function y(e) {
     })
   }, [h]);
   return null == h || 0 === h.length ? null : (0, r.jsxs)(s.animated.div, {
-    className: a()(p.container, {
+    className: o()(p.container, {
       [p.themeResponsiveContainer]: n
     }),
     style: E(m({}, O), {
@@ -127,14 +127,14 @@ function y(e) {
     children: [(0, r.jsx)(l.xv, {
       tag: "span",
       variant: "text-md/semibold",
-      className: a()(p.description, {
+      className: o()(p.description, {
         [p.text]: !n,
         [p.responsiveText]: n
       }),
       children: I
     }), (0, r.jsx)(c.zx, {
       className: p.button,
-      onClick: o,
+      onClick: a,
       children: _.intl.string(f.default.E5V5KC)
     })]
   })

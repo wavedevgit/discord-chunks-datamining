@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk164369 = require("./164369.js"),
   Chunk202841 = require("./202841.js"),
   Chunk481060 = require("./481060.js"),
@@ -187,16 +187,16 @@ function v(e) {
   let {
     textVariant: t,
     className: n,
-    catalogUpdateTime: o,
+    catalogUpdateTime: a,
     isScrolled: s
-  } = e, [l, u] = i.useState(() => g(o));
+  } = e, [l, u] = i.useState(() => g(a));
   return i.useEffect(() => {
     let e = setInterval(() => {
-      u(() => g(o))
+      u(() => g(a))
     }, 1e3);
     return () => clearInterval(e)
-  }, [o]), (0, r.jsxs)("div", {
-    className: a()(n, f.countdownContainer, {
+  }, [a]), (0, r.jsxs)("div", {
+    className: o()(n, f.countdownContainer, {
       [f.isScrolled]: s
     }),
     "aria-label": l.countdownString,

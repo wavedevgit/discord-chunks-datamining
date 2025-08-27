@@ -122,11 +122,11 @@ class h extends Chunk442837.yh {
           }
         };
       for (let i in e) {
-        let o = e[i],
-          a = e => {
-            if (t = false, o(e, r), !t) returnfalse
+        let a = e[i],
+          o = e => {
+            if (t = false, a(e, r), !t) returnfalse
           };
-        n[i] = a
+        n[i] = o
       }
     }
     super(s.Z, n), d(this, "mode", true), d(this, "shadowState", true), d(this, "root", true), d(this, "derived", true), d(this, "nextVersion", true), this.mode = t, this.shadowState = null, this.root = {}, this.derived = {

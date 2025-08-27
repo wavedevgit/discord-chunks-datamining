@@ -30,8 +30,8 @@ function p(e, t, n) {
 function h(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -42,7 +42,7 @@ function m(e) {
     initiallyExpanded: p,
     contentPosition: h,
     sourceQuestContent: m
-  } = e, [g, E] = i.useState(false), b = i.useCallback(() => E(true), []), y = i.useCallback(() => E(false), []), O = (0, a.tP)(t), {
+  } = e, [g, E] = i.useState(false), b = i.useCallback(() => E(true), []), y = i.useCallback(() => E(false), []), O = (0, o.tP)(t), {
     containerRef: v,
     size: I,
     height: T
@@ -63,7 +63,7 @@ function m(e) {
     questContentPosition: h,
     trackGuildAndChannelMetadata: n === s.jn.QUESTS_EMBED,
     sourceQuestContent: m,
-    children: e => (0, r.jsx)(o.animated.div, {
+    children: e => (0, r.jsx)(a.animated.div, {
       style: {
         maxHeight: n === s.jn.QUESTS_EMBED ? true : S.to({
           range: [0, 1],

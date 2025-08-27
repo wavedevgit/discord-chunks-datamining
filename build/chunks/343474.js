@@ -4,16 +4,16 @@
 var Chunk169774 = require("./169774.js"),
   Chunk581079 = require("./581079.js");
 
-function o(e) {
+function a(e) {
   for (var t = e.cloneRange(), n = [], r = e.endContainer; null != r; r = r.parentNode) {
-    var o, a = r === e.commonAncestorContainer;
-    a ? t.setStart(e.startContainer, e.startOffset) : t.setStart(t.endContainer, 0);
+    var a, o = r === e.commonAncestorContainer;
+    o ? t.setStart(e.startContainer, e.startOffset) : t.setStart(t.endContainer, 0);
     var s = Array.from(t.getClientRects());
-    if (n.push(s), a) return n.reverse(), (o = []).concat.apply(o, n);
+    if (n.push(s), o) return n.reverse(), (a = []).concat.apply(a, n);
     t.setEndBefore(r)
   }
   i(false)
 }
-module.exports = Chunk169774.isBrowser("Chrome") ? o : function(e) {
+module.exports = Chunk169774.isBrowser("Chrome") ? a : function(e) {
   return Array.from(e.getClientRects())
 }

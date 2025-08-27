@@ -4,39 +4,39 @@
 
 function r(e, t, n) {
   let r, i = n,
-    o;
+    a;
   for (let n of e.fields) {
     let e = n.localName;
     if (n.oneof) {
-      let a = i[n.oneof];
-      if ((null == a ? true : a.oneofKind) == true) continue;
-      if (r = a[e], (o = t[n.oneof]).oneofKind = a.oneofKind, true == r) {
-        delete o[e];
+      let o = i[n.oneof];
+      if ((null == o ? true : o.oneofKind) == true) continue;
+      if (r = o[e], (a = t[n.oneof]).oneofKind = o.oneofKind, true == r) {
+        delete a[e];
         continue
       }
-    } else if (r = i[e], o = t, true == r) continue;
-    switch (n.repeat && (o[e].length = r.length), n.kind) {
+    } else if (r = i[e], a = t, true == r) continue;
+    switch (n.repeat && (a[e].length = r.length), n.kind) {
       case "scalar":
       case "enum":
         if (n.repeat)
-          for (let t = 0; t < r.length; t++) o[e][t] = r[t];
-        else o[e] = r;
+          for (let t = 0; t < r.length; t++) a[e][t] = r[t];
+        else a[e] = r;
         break;
       case "message":
-        let a = n.T();
+        let o = n.T();
         if (n.repeat)
-          for (let t = 0; t < r.length; t++) o[e][t] = a.create(r[t]);
-        else true === o[e] ? o[e] = a.create(r) : a.mergePartial(o[e], r);
+          for (let t = 0; t < r.length; t++) a[e][t] = o.create(r[t]);
+        else true === a[e] ? a[e] = o.create(r) : o.mergePartial(a[e], r);
         break;
       case "map":
         switch (n.V.kind) {
           case "scalar":
           case "enum":
-            Object.assign(o[e], r);
+            Object.assign(a[e], r);
             break;
           case "message":
             let s = n.V.T();
-            for (let t of Object.keys(r)) o[e][t] = s.create(r[t])
+            for (let t of Object.keys(r)) a[e][t] = s.create(r[t])
         }
     }
   }

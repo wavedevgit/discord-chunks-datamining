@@ -11,7 +11,7 @@ function r(e, t, n) {
   }) : e[t] = n, e
 }
 require.d(exports, {
-  t: () => o
+  t: () => a
 }), require("./953529.js"), require("./388685.js");
 class i {
   [Symbol.iterator]() {
@@ -33,7 +33,7 @@ class i {
   }
 }
 
-function o() {
+function a() {
   for (var e = arguments.length, t = Array(module), n = 0; require < module; require++) exports[require] = arguments[require];
   return new i(exports)
 }

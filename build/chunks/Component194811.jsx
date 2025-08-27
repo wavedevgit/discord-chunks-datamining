@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk111028 = require("./111028.jsx"),
   Chunk652853 = require("./652853.jsx"),
@@ -25,11 +25,11 @@ function d(e) {
     themeType: _
   } = (0, l.z)();
   return (null == t || "" === t) && null == f ? null : null == t || "" === t ? (0, r.jsx)("div", {
-    className: o()(u.headerContextMenu, u.absolute),
+    className: a()(u.headerContextMenu, u.absolute),
     children: f
   }) : (0, r.jsxs)("div", {
     className: u.header,
-    children: [(0, r.jsxs)(a.Text, {
+    children: [(0, r.jsxs)(o.Text, {
       className: u.headerText,
       variant: _ === c.l.SIDEBAR ? "text-xs/semibold" : "text-xs/medium",
       color: "header-primary",

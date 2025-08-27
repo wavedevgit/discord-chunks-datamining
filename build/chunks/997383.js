@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
   Chunk159635 = require("./159635.js"),
-  a = require.n(Chunk159635),
+  o = require.n(Chunk159635),
   Chunk159299 = require("./159299.js"),
   Chunk675478 = require("./675478.js"),
   Chunk709302 = require("./709302.js"),
@@ -111,14 +111,14 @@ class S {
         allowSnowflake: r,
         blacklist: i
       } = this.options,
-      o = null != i ? e => !i.has("channel:".concat(e.id)) : true;
+      a = null != i ? e => !i.has("channel:".concat(e.id)) : true;
     return _.ZP.queryChannels({
       query: e,
       guildId: null,
       limit: t,
       fuzzy: true,
       allowSnowflake: r,
-      filter: o,
+      filter: a,
       boosters: n
     })
   }
@@ -145,12 +145,12 @@ class S {
         allowSnowflake: r,
         blacklist: i
       } = this.options,
-      o = null != i ? e => !i.has("guild:".concat(e.id)) : true;
+      a = null != i ? e => !i.has("guild:".concat(e.id)) : true;
     return _.ZP.queryGuilds({
       query: e,
       limit: t,
       fuzzy: true,
-      filter: o,
+      filter: a,
       boosters: n,
       allowSnowflake: r
     })
@@ -162,16 +162,16 @@ class S {
     if (null == r || !this._include(E.h8.USER)) return;
     let {
       allowSnowflake: i,
-      userFilters: o
-    } = this.options, a = T(E.h8.USER, this.options);
-    if ((null == o ? true : o.thread) != null) {
-      let t = s.Z.getMemberListSections(o.thread),
+      userFilters: a
+    } = this.options, o = T(E.h8.USER, this.options);
+    if ((null == a ? true : a.thread) != null) {
+      let t = s.Z.getMemberListSections(a.thread),
         r = [];
       for (let e in t) {
         let n = t[e];
         for (let e of n.userIds) {
           var l, c, u;
-          (null == o || !o.friends || d.Z.isFriend(e)) && (null != (u = null == (l = this._userBlacklist) ? true : l.includes(e)) && u || r.push({
+          (null == a || !a.friends || d.Z.isFriend(e)) && (null != (u = null == (l = this._userBlacklist) ? true : l.includes(e)) && u || r.push({
             userId: e,
             nick: null == (c = n.usersById[e]) ? true : c.displayName
           }))
@@ -181,16 +181,16 @@ class S {
         query: e,
         users: r,
         limit: n,
-        boosters: a,
+        boosters: o,
         allowSnowflake: i
       });
       return
     }
     true !== t && p.Z.requestMembers(t, e, 100), r.setLimit(n), r.setQuery({
       query: e,
-      filters: o,
+      filters: a,
       blacklist: this._userBlacklist,
-      boosters: a
+      boosters: o
     })
   }
   queryGroupDMs(e, t) {
@@ -216,7 +216,7 @@ class S {
   queryLink(e, t) {
     let n;
     if (!this._include(E.h8.LINK)) return [];
-    let r = a().sanitizeUrl(e);
+    let r = o().sanitizeUrl(e);
     try {
       n = new URL(r)
     } catch (e) {
@@ -224,9 +224,9 @@ class S {
     }
     let {
       pathname: i,
-      hostname: o = "",
+      hostname: a = "",
       host: s
-    } = n, l = h.Z.isDiscordHostname(o) || window.location.host === s;
+    } = n, l = h.Z.isDiscordHostname(a) || window.location.host === s;
     return null !== i && l && h.Z.isAppRoute(i) ? [{
       type: E.h8.LINK,
       record: c.Z.fromPath(i),

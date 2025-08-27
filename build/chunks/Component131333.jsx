@@ -120,9 +120,9 @@ function j(e) {
 let M = Chunk647438.forwardRef(function(e, t) {
   let {
     sprites: n
-  } = e, [a, s] = i.useState(null), {
+  } = e, [o, s] = i.useState(null), {
     confettiCanvas: c
-  } = i.useContext(l.h), u = (0, o.uR)(c, a);
+  } = i.useContext(l.h), u = (0, a.uR)(c, o);
   return i.useImperativeHandle(t, () => ({
     fireConfetti: (e, t) => {
       u.createMultipleConfetti(E(m({}, _.We), {
@@ -155,7 +155,7 @@ let M = Chunk647438.forwardRef(function(e, t) {
         }
       }), A)
     }
-  }), [u]), (0, r.jsx)(o.Ji, {
+  }), [u]), (0, r.jsx)(a.Ji, {
     ref: s,
     colors: b,
     sprites: n,
@@ -167,7 +167,7 @@ let M = Chunk647438.forwardRef(function(e, t) {
 function k(e) {
   let {
     children: t
-  } = e, n = i.useRef({}), [o, l] = i.useState(null), c = j(o), _ = i.useRef(null), [h, m] = i.useState(false), g = i.useRef("jack_o_lantern"), E = (0, s.bp)(), b = i.useCallback(e => {
+  } = e, n = i.useRef({}), [a, l] = i.useState(null), c = j(a), _ = i.useRef(null), [h, m] = i.useState(false), g = i.useRef("jack_o_lantern"), E = (0, s.bp)(), b = i.useCallback(e => {
     if (!h) {
       let t = D(e);
       null != t && (g.current = t, m(true), l(null))
@@ -183,7 +183,7 @@ function k(e) {
     _.current = e
   }, []);
   return (i.useEffect(() => {
-    if ("confetti" === o) {
+    if ("confetti" === a) {
       if (null == _.current) return;
       let e = _.current.getBoundingClientRect(),
         t = e.left - T,
@@ -191,7 +191,7 @@ function k(e) {
         i = n.current[g.current];
       null == i || i.fireConfetti(t, r)
     }
-  }, [o]), E !== f.IlC.APP) ? t : (0, r.jsxs)(d.Rm.Provider, {
+  }, [a]), E !== f.IlC.APP) ? t : (0, r.jsxs)(d.Rm.Provider, {
     value: y,
     children: [t, Object.keys(w).map(e => {
       let t = w[e];
@@ -204,7 +204,7 @@ function k(e) {
     }), h ? (0, r.jsx)(u.ZP, {
       children: (0, r.jsx)("div", {
         className: p.animationWrapper,
-        children: (0, r.jsx)(a.kci, {
+        children: (0, r.jsx)(o.kci, {
           animationRef: I,
           className: p.lottieAnimation,
           nextScene: c,

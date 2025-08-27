@@ -235,10 +235,10 @@ class k {
         [Chunk593472.Jx.MINIMIZED]: require(Chunk593472.Jx.MINIMIZED)
       },
       i = Object.entries(Chunk772848).sort((e, t) => {
-        let [n, r] = e, [i, o] = t;
-        return o - r
+        let [n, r] = e, [i, a] = t;
+        return a - r
       })[0],
-      o = parseInt(Chunk379649[0], 10),
+      a = parseInt(Chunk379649[0], 10),
       s = isNaN(Chunk570140) ? Chunk593472.Jx.UNKNOWN : Chunk570140;
     isNaN(Chunk570140) && x.error("ScreenTypeAnalytics: Unknown most used screen type: ".concat(Chunk379649), Chunk772848);
     let l = Chunk938038.c.getGameDisplayMode(null != (e = this.game.name) ? module : this.game.id);
@@ -265,12 +265,12 @@ class k {
   }
   constructor(e) {
     C(this, "game", true), C(this, "counters", true), C(this, "lastscreenType", true), C(this, "updateScreenInterval", true), this.game = e, this.counters = {
-      [a.Jx.UNKNOWN]: new i.G9,
-      [a.Jx.WINDOWED]: new i.G9,
-      [a.Jx.MAXIMIZED]: new i.G9,
-      [a.Jx.BORDERLESS_FULLSCREEN]: new i.G9,
-      [a.Jx.FULLSCREEN]: new i.G9,
-      [a.Jx.MINIMIZED]: new i.G9
+      [o.Jx.UNKNOWN]: new i.G9,
+      [o.Jx.WINDOWED]: new i.G9,
+      [o.Jx.MAXIMIZED]: new i.G9,
+      [o.Jx.BORDERLESS_FULLSCREEN]: new i.G9,
+      [o.Jx.FULLSCREEN]: new i.G9,
+      [o.Jx.MINIMIZED]: new i.G9
     }, this.lastscreenType = true, this.update(), this.updateScreenInterval = setInterval(() => this.update(), 1e4)
   }
 }
@@ -293,8 +293,8 @@ class G {
     this._successfullyShown = e
   }
   getQunsName(e) {
-    let t = null != e ? e : a.Ng.QUNS_UNKNOWN;
-    return a.Ng[t]
+    let t = null != e ? e : o.Ng.QUNS_UNKNOWN;
+    return o.Ng[t]
   }
   buildOverlayMethodStats(e, t) {
     let n = this.overlayMethodStats,
@@ -302,30 +302,30 @@ class G {
         oopEnabled: r,
         legacyEnabled: i
       } = p.default.getPerGameEnabledStatus(t),
-      o = {
+      a = {
         legacy_override: true === i,
         enabled: r || i,
-        quns_mode: this.getQunsName(a.Ng.QUNS_UNKNOWN)
+        quns_mode: this.getQunsName(o.Ng.QUNS_UNKNOWN)
       };
     if (null != t) {
       let {
         quns: e
       } = y.ZP.GetWindowFullscreenTypeExtraByPid(t.pid, t.gameName);
-      o.quns_mode = this.getQunsName(e)
+      a.quns_mode = this.getQunsName(e)
     }
     if (null == e) {
       let e = null != t ? p.default.getRenderMethod(t.pid) : null;
       return N({
         original_method: null != e ? e : _.gl.Disabled
-      }, o)
+      }, a)
     }
     if (null == n) return N({
       original_method: e
-    }, o);
+    }, a);
     let s = n.any_other_method;
     return N(P(N({}, n), {
       any_other_method: e !== s ? e : s
-    }), o)
+    }), a)
   }
   static getGameName(e) {
     var t, n;
@@ -377,7 +377,7 @@ class G {
     return null == this.overlayMethod ? Chunk837268.gl[Chunk837268.gl.Disabled] : Chunk837268.gl[this.overlayMethod]
   }
   async getAnalytics() {
-    var e, t, n, r, i, o, a, s, c;
+    var e, t, n, r, i, a, o, s, c;
     let p = null != (n = this.overlayMethod) ? require : Chunk837268.gl.Disabled,
       m = {
         setting_is_enabled: Chunk808506.default.enabled,
@@ -401,8 +401,8 @@ class G {
         overlay_status_game_enabled: Chunk554174,
         overlay_status_game_source: Chunk626135.source,
         game_name: null != (i = Chunk998502.gameName) ? Chunk379649 : null,
-        game_id: null != (o = Chunk998502.gameId) ? Chunk570140 : null,
-        game_exe: null != (a = Chunk998502.exe) ? Chunk593472 : null,
+        game_id: null != (a = Chunk998502.gameId) ? Chunk570140 : null,
+        game_exe: null != (o = Chunk998502.exe) ? Chunk593472 : null,
         game_elevated: this.game.elevated,
         game_is_launcher: null != (s = this.game.isLauncher) && Chunk147913,
         game_duration: this.gameTimer.elapsed().asMilliseconds(),
@@ -596,7 +596,7 @@ class ee {
     x.verbose("MESSAGE_ACKED", e);
     let t = m.Z.getGame();
     if (null == t) return void x.error("Game not found.");
-    o.Z.dispatch({
+    a.Z.dispatch({
       type: "OVERLAY_MESSAGE_EVENT_ACTION",
       eventType: "ack",
       gameName: t.name,
@@ -608,7 +608,7 @@ class ee {
     x.verbose("MESSAGE_CREATE", e, Error().stack);
     let t = m.Z.getGame();
     if (null == t) return void x.error("Game not found.");
-    o.Z.dispatch({
+    a.Z.dispatch({
       type: "OVERLAY_MESSAGE_EVENT_ACTION",
       eventType: "create",
       gameName: t.name,

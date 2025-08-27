@@ -36,7 +36,7 @@ function E() {
       useForcedColors: Chunk607070.Z.useForcedColors
     })),
     y = Chunk695346.YC.useSetting(),
-    O = (e, i) => (0, r.jsx)(a.k5B, {
+    O = (e, i) => (0, r.jsx)(o.k5B, {
       id: e,
       group: "input-modes",
       label: i,

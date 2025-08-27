@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk661824 = require("./661824.jsx"),
   Chunk360514 = require("./360514.js");
 
@@ -54,8 +54,8 @@ function _(e, t) {
   if (null == e) return {};
   var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -63,23 +63,23 @@ function _(e, t) {
 function p(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let h = Chunk647438.forwardRef(function(e, t) {
     var {
       className: n,
       isBeforeGroup: i = false
-    } = e, o = _(e, ["className", "isBeforeGroup"]);
+    } = e, a = _(e, ["className", "isBeforeGroup"]);
     let {
       children: c
-    } = o;
-    return (0, r.jsx)(s.Z, f(u({}, o), {
+    } = a;
+    return (0, r.jsx)(s.Z, f(u({}, a), {
       ref: t,
       role: "separator",
       "aria-label": "string" == typeof c ? c : true,
-      className: a()(n, {
+      className: o()(n, {
         [l.divider]: true,
         [l.hasContent]: null != c,
         [l.beforeGroup]: i

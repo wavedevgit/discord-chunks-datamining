@@ -93,8 +93,8 @@ function G(e) {
   let {
     questId: t,
     questContent: i,
-    questContentPosition: o,
-    preview: a = false,
+    questContentPosition: a,
+    preview: o = false,
     previewQuest: l = null,
     sourceQuestContent: c
   } = e;
@@ -104,9 +104,9 @@ function G(e) {
     } = await n.e("61624").then(n.bind(n, 985866));
     return n => (0, r.jsx)(e, M(L({}, n), {
       questId: t,
-      questContentPosition: o,
+      questContentPosition: a,
       questContent: i,
-      preview: a,
+      preview: o,
       previewQuest: l,
       sourceQuestContent: c
     }))
@@ -129,9 +129,9 @@ function B(e, t) {
 function Z(e, t, i) {
   (0, s.ZDy)(async () => {
     let {
-      default: o
+      default: a
     } = await n.e("88938").then(n.bind(n, 390238));
-    return n => (0, r.jsx)(o, M(L({}, n), {
+    return n => (0, r.jsx)(a, M(L({}, n), {
       quest: e,
       location: t,
       sourceQuestContent: i
@@ -154,9 +154,9 @@ function F(e, t) {
 function V(e, t, i) {
   (0, s.ZDy)(async () => {
     let {
-      default: o
+      default: a
     } = await n.e("58641").then(n.bind(n, 828664));
-    return n => (0, r.jsx)(o, M(L({}, n), {
+    return n => (0, r.jsx)(a, M(L({}, n), {
       quest: e,
       location: t,
       sourceQuestContent: i
@@ -225,8 +225,8 @@ function z(e) {
   var t;
   let {
     quest: n,
-    questContent: o,
-    sourceQuestContent: a,
+    questContent: a,
+    sourceQuestContent: o,
     sourceQuestContentCTA: l,
     autoplay: c = true,
     skipEnrollmentCheck: u = false
@@ -245,14 +245,14 @@ function z(e) {
   let d = (0, i.Z)();
   if ((0, I.D)(R.dr.VIDEO_MODAL) && !u && (null == (t = n.userStatus) ? true : t.enrolledAt) == null && !(0, g.zi)(n)) {
     b.Z.isEnrolling(n.id) || (0, E.AH)(n.id, {
-      questContent: o,
+      questContent: a,
       questContentCTA: m.jZ.ACCEPT_QUEST,
-      sourceQuestContent: a
+      sourceQuestContent: o
     });
     let e = O.ZP.getState().getVideoProgress(n.id);
     null != e && e.timestampSec > 1 && ((0, E.lx)(n.id), p.default.track(P.rMx.QUEST_VIDEO_ENROLLMENT_RETRY_ATTEMPTED, {
       quest_id: n.id,
-      source_quest_content: (0, m._b)(a),
+      source_quest_content: (0, m._b)(o),
       source_quest_content_cta: l,
       video_session_id: d
     }))
@@ -265,14 +265,14 @@ function z(e) {
       questId: n.id,
       autoplay: c,
       videoSessionId: d,
-      sourceQuestContent: a
+      sourceQuestContent: o
     }))
   }, {
     modalKey: (0, g.u7)(n.id),
     backdropStyle: s.fCB.IMMERSIVE,
     onCloseCallback: () => (0, g.Mo)({
       questId: n.id,
-      sourceQuestContent: a,
+      sourceQuestContent: o,
       videoSessionId: d
     })
   })
@@ -284,9 +284,9 @@ function q(e) {
     r = "quest";
   if ("Android" === n || "iOS" === n) {
     let t = _.default.getFingerprint(),
-      n = (0, o.WS)(),
+      n = (0, a.WS)(),
       i = "".concat(location.protocol, "//").concat(window.GLOBAL_ENV.WEBAPP_ENDPOINT, "/quests/").concat(e);
-    return (0, o.ZP)(i, {
+    return (0, a.ZP)(i, {
       utmSource: r,
       fingerprint: t,
       attemptId: n
@@ -297,9 +297,9 @@ function q(e) {
 
 function X(e) {
   let t = q(e),
-    n = (0, o.zS)(t);
+    n = (0, a.zS)(t);
   null != n && p.default.track(P.rMx.DEEP_LINK_CLICKED, {
-    fingerprint: (0, a.K)(n.fingerprint),
+    fingerprint: (0, o.K)(n.fingerprint),
     attempt_id: n.attemptId,
     source: n.utmSource
   }), h.Z.launch(t, t => {

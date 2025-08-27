@@ -75,7 +75,7 @@ function b(e) {
   } = e;
   if (null == n) return;
   let r = h(n),
-    i = a.default.getCurrentUser();
+    i = o.default.getCurrentUser();
   if (null != i && r.userId !== i.id) returnfalse;
   (0, l.d3)(r) ? m(t): d[t] = r
 }
@@ -109,15 +109,15 @@ function v(e) {
     let {
       id: t,
       name: i,
-      icon: o,
-      features: a,
+      icon: a,
+      features: o,
       splash: s
     } = n;
     _[t] = {
       id: t,
       name: i,
-      icon: o,
-      features: null != a ? a : [],
+      icon: a,
+      features: null != o ? o : [],
       splash: s
     }
   }
@@ -133,14 +133,14 @@ function I(e) {
       name: n,
       features: r,
       icon: i,
-      splash: o
+      splash: a
     } = e;
     _[t] = {
       id: t,
       name: n,
       features: r,
       icon: i,
-      splash: o
+      splash: a
     }
   })
 }
@@ -163,15 +163,15 @@ function S(e) {
       id: e,
       name: r,
       icon: i,
-      features: o,
-      splash: a
+      features: a,
+      splash: o
     } = t.guild;
     _[n] = {
       id: e,
       name: r,
       icon: i,
-      features: null != o ? o : [],
-      splash: a
+      features: null != a ? a : [],
+      splash: o
     }
   }
 }

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk512722 = require("./512722.js"),
-  o = require.n(Chunk512722),
+  a = require.n(Chunk512722),
   Chunk481060 = require("./481060.js"),
   Chunk100527 = require("./100527.js"),
   Chunk906732 = require("./906732.jsx"),
@@ -45,7 +45,7 @@ function g(e) {
   if (null == y) return null;
   let O = y.subscriptionPlanId,
     v = c.Z.get(O);
-  o()(null != v, "Missing plan");
+  a()(null != v, "Missing plan");
   let I = (0, d.T4)(E.total, E.currency);
   return v.interval === _.rV.YEAR ? t = h.intl.format(h.t["jPz/39"], {
     price: I,
@@ -63,7 +63,7 @@ function g(e) {
     paidURL: p.EYA.PAID_TERMS,
     privacyUrl: p.EYA.PRIVACY,
     intervalCount: v.intervalCount
-  })), (0, r.jsx)(a.Text, {
+  })), (0, r.jsx)(o.Text, {
     color: "text-muted",
     className: b,
     variant: "text-xs/normal",

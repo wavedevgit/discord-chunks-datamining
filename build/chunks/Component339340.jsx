@@ -34,7 +34,7 @@ function S(e) {
     transitionState: n,
     sourceAnalyticsLocations: S,
     onClose: A
-  } = e, C = (0, o.e7)([d.Z], () => d.Z.getChannelStatus(t)), N = (0, o.e7)([m.Z], () => m.Z.getMediaSessionId()), [R, P] = i.useState(null != C ? C : ""), [w, D] = i.useState(false), [x, L] = i.useState(null), j = (0, o.e7)([g.default], () => g.default.getCurrentUser()), M = R.length > T;
+  } = e, C = (0, a.e7)([d.Z], () => d.Z.getChannelStatus(t)), N = (0, a.e7)([m.Z], () => m.Z.getMediaSessionId()), [R, P] = i.useState(null != C ? C : ""), [w, D] = i.useState(false), [x, L] = i.useState(null), j = (0, a.e7)([g.default], () => g.default.getCurrentUser()), M = R.length > T;
   i.useEffect(() => {
     E.default.track(b.rMx.OPEN_MODAL, {
       type: "Voice Channel Topic Modal",
@@ -43,7 +43,7 @@ function S(e) {
     })
   }, [t.guild_id, S]);
   let k = e => {
-      L(new a.Hx(e, e.status).getAnyErrorMessage())
+      L(new o.Hx(e, e.status).getAnyErrorMessage())
     },
     U = e => {
       let {
@@ -67,9 +67,9 @@ function S(e) {
         r = R.replace(/<(a)?:[^:]+:[0-9]+>/g, "--").length,
         i = h.ZP.parse(t, R),
         {
-          hasErrors: o
+          hasErrors: a
         } = U(i);
-      if (!o) {
+      if (!a) {
         try {
           let e = await c.ZP.updateVoiceChannelStatus(t.id, i.content);
           204 === e.status ? (E.default.track(b.rMx.VOICE_CHANNEL_TOPIC_SET, {

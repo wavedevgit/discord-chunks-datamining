@@ -13,14 +13,14 @@ var Chunk187753 = require("./187753.js"),
 function s(e, t) {
   if (null != t) switch (t.type) {
     case i.T.STORE_ASSET:
-      let n = (0, a._W)(e, t.store_asset_id);
+      let n = (0, o._W)(e, t.store_asset_id);
       return (0, r.jsx)("img", {
         src: n,
         alt: "",
         className: "emoji"
       });
     case i.T.EMOJI:
-      return (0, r.jsx)(o.Z, {
+      return (0, r.jsx)(a.Z, {
         emojiName: t.emoji
       })
   }

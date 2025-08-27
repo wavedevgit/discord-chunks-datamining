@@ -55,10 +55,10 @@ function b(e) {
   let {
     achievementId: n,
     unlocked: u,
-    size: f = o.EFr.SIZE_40
-  } = e, b = (0, a.ZP)(), y = (0, c.oX)(n);
+    size: f = a.EFr.SIZE_40
+  } = e, b = (0, o.ZP)(), y = (0, c.oX)(n);
   if (null == y) return null;
-  let O = (0, o.UCu)(f),
+  let O = (0, a.UCu)(f),
     {
       name: v,
       rarity: I
@@ -90,7 +90,7 @@ function b(e) {
     "aria-label": "".concat(null != (t = v()) ? t : ""),
     children: [(0, r.jsx)("div", {
       className: d.trophyIconContainer,
-      children: (0, r.jsx)(o.rm8, {
+      children: (0, r.jsx)(a.rm8, {
         size: "custom",
         color: u ? T : (0, s.Lq)(S.trophy),
         width: A,
@@ -99,7 +99,7 @@ function b(e) {
     }), !u && (0, r.jsx)("div", {
       className: d.lockContainer,
       style: R,
-      children: (0, r.jsx)(o.mBM, _({
+      children: (0, r.jsx)(a.mBM, _({
         size: "custom",
         color: (0, s.Lq)(S.locked)
       }, N))

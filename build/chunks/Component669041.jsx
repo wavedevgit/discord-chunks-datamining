@@ -2,12 +2,13 @@
 /** chunk id: 669041, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  B: () => m,
-  QuestsRewardModalUnverified: () => h
+  B: () => g,
+  QuestsRewardModalUnverified: () => m
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
+  Chunk667202 = require("./667202.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk893776 = require("./893776.js"),
   Chunk594174 = require("./594174.js"),
@@ -16,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk803035 = require("./803035.js"),
   Chunk800010 = require("./800010.js");
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,116 +26,82 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
 }
 
-function h(e) {
+function m(e) {
   let {
     transitionState: t,
     onClose: n
-  } = e, _ = (0, o.e7)([l.default], () => {
+  } = e, p = (0, a.e7)([c.default], () => {
     var e;
-    return null == (e = l.default.getCurrentUser()) ? true : e.email
-  }), [p, h] = i.useState({
+    return null == (e = c.default.getCurrentUser()) ? true : e.email
+  }), [h, m] = i.useState({
     status: "unknown"
   });
   i.useEffect(() => {
-    h({
+    m({
       status: "loading"
-    }), s.Z.verifyResend().then(() => h({
+    }), l.Z.verifyResend().then(() => m({
       status: "success"
     }), e => {
-      h({
+      m({
         status: "error"
-      }), (0, c.ys)(e, {
+      }), (0, u.ys)(e, {
         tags: {
           location: "QuestsRewardModalUnverified"
         }
       })
     })
   }, []);
-  let m = () => (0, r.jsx)(a.mzw, {
-    className: d.modalFooter,
-    children: (0, r.jsx)(a.zxk, {
-      variant: "primary",
-      text: u.intl.string(u.t.cpT0Cg),
-      onClick: n
-    })
-  });
-  return (0, r.jsxs)(a.Y0X, {
+  let g = "error" === h.status ? d.intl.string(d.t.vjyinp) : "success" === h.status ? d.intl.format(d.t.qP5xYW, {
+    emailAddress: p,
+    emailAddressLink: "mailto:".concat(p)
+  }) : true;
+  return (0, r.jsxs)(o.I, {
     transitionState: t,
-    disableTrack: true,
-    parentComponent: "QuestsRewardModalUnverified",
-    children: [(0, r.jsx)("img", {
-      alt: "",
-      className: d.headerImage,
-      src: f
-    }), (0, r.jsxs)(a.xBx, {
-      separator: false,
-      className: d.header,
-      children: [(0, r.jsx)(a.X6q, {
-        className: d.title,
-        variant: "heading-xl/bold",
-        children: u.intl.string(u.t.c8eASE)
-      }), (0, r.jsx)(a.olH, {
-        onClick: n,
-        className: d.modalCloseButton
+    onClose: n,
+    graphic: "loading" === h.status ? true : {
+      type: "image",
+      src: _
+    },
+    title: "loading" === h.status ? true : d.intl.string(d.t.c8eASE),
+    subtitle: g,
+    actions: "loading" === h.status ? true : [{
+      variant: "secondary",
+      text: d.intl.string(d.t.cpT0Cg),
+      onClick: n
+    }],
+    children: ["loading" === h.status && (0, r.jsx)(s.$jN, {}), "success" === h.status && (0, r.jsxs)("div", {
+      className: f.helper,
+      children: [(0, r.jsx)(s.d3s, {
+        size: "xs",
+        color: "currentColor",
+        className: f.infoFilledIcon
+      }), (0, r.jsx)(s.Text, {
+        variant: "text-sm/normal",
+        color: "header-secondary",
+        children: d.intl.string(d.t.yb7itb)
       })]
-    }), "loading" === p.status && (0, r.jsx)(a.hzk, {
-      className: d.content,
-      children: (0, r.jsx)(a.$jN, {})
-    }), "error" === p.status && (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(a.hzk, {
-        className: d.content,
-        children: (0, r.jsx)(a.Text, {
-          variant: "text-md/normal",
-          children: u.intl.string(u.t.vjyinp)
-        })
-      }), m()]
-    }), "success" === p.status && (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(a.hzk, {
-        className: d.content,
-        children: (0, r.jsx)(a.Text, {
-          variant: "text-md/normal",
-          children: u.intl.format(u.t.qP5xYW, {
-            emailAddress: _,
-            emailAddressLink: "mailto:".concat(_)
-          })
-        })
-      }), (0, r.jsx)(a.hzk, {
-        className: d.content,
-        children: (0, r.jsxs)("div", {
-          className: d.tooltip,
-          children: [(0, r.jsx)(a.d3s, {
-            size: "xs",
-            color: "currentColor",
-            className: d.infoFilledIcon
-          }), (0, r.jsx)(a.Text, {
-            className: d.tooltipText,
-            variant: "text-sm/normal",
-            children: u.intl.string(u.t.yb7itb)
-          })]
-        })
-      }), m()]
     })]
   })
 }
 
-function m() {
+function g() {
   (0, Chunk481060.ZDy)(async () => {
     let {
       QuestsRewardModalUnverified: e
     } = await Promise.resolve().then(require.bind(require, 669041));
-    return t => (0, r.jsx)(e, p({}, t))
+    return t => (0, r.jsx)(e, h({}, t))
   })
 }

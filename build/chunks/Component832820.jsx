@@ -24,7 +24,7 @@ function E(e) {
   let {
     emojiConfetti: t
   } = e, n = i.useMemo(() => null == t ? null : null == t.id ? t.optionallyDiverseSequence : t.name, [t]);
-  return null == t ? (0, r.jsx)(a.EO4, {
+  return null == t ? (0, r.jsx)(o.EO4, {
     size: "sm",
     color: "currentColor"
   }) : (0, r.jsx)(s.Z, {
@@ -78,7 +78,7 @@ let b = function(e) {
       positionRef: w,
       position: "top",
       align: "left",
-      children: () => (0, r.jsxs)(a.P3F, {
+      children: () => (0, r.jsxs)(o.P3F, {
         innerRef: w,
         onClick: () => C(!A),
         className: g.emojiSelectContainer,
@@ -87,7 +87,7 @@ let b = function(e) {
           children: (0, r.jsx)(E, {
             emojiConfetti: null != n ? n : true
           })
-        }), (0, r.jsx)(o.xv, {
+        }), (0, r.jsx)(a.xv, {
           variant: "text-sm/medium",
           children: null == n ? m.intl.string(m.t.mzfiGR) : m.intl.format(m.t.Hcd9OT, {
             emojiName: I
@@ -96,7 +96,7 @@ let b = function(e) {
       })
     }), (0, r.jsxs)("div", {
       className: g.end,
-      children: [(0, r.jsx)(a.zxk, {
+      children: [(0, r.jsx)(o.zxk, {
         onClick: P,
         text: S,
         variant: "primary"

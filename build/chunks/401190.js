@@ -15,7 +15,7 @@ let s = {
   },
   l = {
     joinHypeSquadOnline: e => r.tn.post({
-      url: a.ANM.HYPESQUAD_ONLINE,
+      url: o.ANM.HYPESQUAD_ONLINE,
       body: {
         house_id: s[e.houseID]
       },
@@ -25,7 +25,7 @@ let s = {
       type: "HYPESQUAD_ONLINE_MEMBERSHIP_JOIN_SUCCESS",
       houseID: e.houseID
     })).catch(e => {
-      throw new o.yZ(e)
+      throw new a.yZ(e)
     }),
     leaveHypeSquadOnline: () => Chunk544891.tn.del({
       url: Chunk981631.ANM.HYPESQUAD_ONLINE,
@@ -34,6 +34,6 @@ let s = {
     }).then(() => Chunk570140.Z.dispatch({
       type: "HYPESQUAD_ONLINE_MEMBERSHIP_LEAVE_SUCCESS"
     })).catch(e => {
-      throw new o.yZ(e)
+      throw new a.yZ(e)
     })
   }

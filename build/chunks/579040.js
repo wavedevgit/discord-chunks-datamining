@@ -14,7 +14,7 @@ var Chunk745872 = require("./745872.js"),
 module.exports = !!s && function() {
   var e, t = {
     assert: function(e) {
-      if (!t.has(e)) throw new a("Side channel does not contain " + o(e))
+      if (!t.has(e)) throw new o("Side channel does not contain " + a(e))
     },
     delete: function(t) {
       if (e) {

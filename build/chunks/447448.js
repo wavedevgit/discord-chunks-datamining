@@ -3,11 +3,11 @@
 "use strict";
 require.d(exports, {
   h: () => s,
-  k: () => a
+  k: () => o
 });
 var Chunk427164 = require("./427164.js"),
   Chunk438379 = require("./438379.js");
-let o = (0, Chunk427164.le)({
+let a = (0, Chunk427164.le)({
   name: "2025-07-user-profile-game-widgets",
   kind: "user",
   defaultConfig: {
@@ -23,17 +23,17 @@ let o = (0, Chunk427164.le)({
   }
 });
 
-function a(e) {
+function o(e) {
   let {
     location: t,
     autoTrackExposure: n = true
   } = e, r = (0, i.J)({
     location: t,
     autoTrackExposure: n
-  }), a = o.useConfig({
+  }), o = a.useConfig({
     location: t
   }).enabled;
-  return !r && a
+  return !r && o
 }
 
 function s(e) {
@@ -44,7 +44,7 @@ function s(e) {
   }, {
     autoTrackExposure: false
   });
-  return !t && o.getConfig({
+  return !t && a.getConfig({
     location: e
   }).enabled
 }

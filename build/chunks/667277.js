@@ -49,7 +49,7 @@ function m(e, t) {
     }
     throw TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
   }
-  var i, o, a = true,
+  var i, a, o = true,
     s = false;
   return {
     s: function() {
@@ -57,16 +57,16 @@ function m(e, t) {
     },
     n: function() {
       var e = i.next();
-      return a = e.done, e
+      return o = e.done, e
     },
     e: function(e) {
-      s = true, o = e
+      s = true, a = e
     },
     f: function() {
       try {
-        a || null == i.return || i.return()
+        o || null == i.return || i.return()
       } finally {
-        if (s) throw o
+        if (s) throw a
       }
     }
   }
@@ -105,7 +105,7 @@ function S(e, t, n, g) {
   var N = (0, u.Z)(null != (G = null != (B = null != (Z = null != (F = null == g ? true : g.weekStartsOn) ? F : null == g || null == (V = g.locale) || null == (H = V.options) ? true : H.weekStartsOn) ? Z : v.weekStartsOn) ? B : null == (Y = v.locale) || null == (W = Y.options) ? true : W.weekStartsOn) ? G : 0);
   if (!(N >= 0 && N <= 6)) throw RangeError("weekStartsOn must be between 0 and 6 inclusively");
   if ("" === O)
-    if ("" === E) return (0, o.default)(n);
+    if ("" === E) return (0, a.default)(n);
     else return new Date(NaN);
   var R, P, w, D, x, L, j, M, k, U, G, B, Z, F, V, H, Y, W, K, z = {
       firstWeekContainsDate: C,
@@ -128,20 +128,20 @@ function S(e, t, n, g) {
       if (r) {
         var i = r.incompatibleTokens;
         if (Array.isArray(i)) {
-          var o = Q.find(function(e) {
+          var a = Q.find(function(e) {
             return i.includes(e.token) || e.token === n
           });
-          if (o) throw RangeError("The format string mustn't contain `".concat(o.fullToken, "` and `").concat(t, "` at the same time"))
+          if (a) throw RangeError("The format string mustn't contain `".concat(a.fullToken, "` and `").concat(t, "` at the same time"))
         } else if ("*" === r.incompatibleTokens && Q.length > 0) throw RangeError("The format string mustn't contain `".concat(t, "` and any other token at the same time"));
         Q.push({
           token: n,
           fullToken: t
         });
-        var a = r.run(E, t, S.match, z);
-        if (!a) return {
+        var o = r.run(E, t, S.match, z);
+        if (!o) return {
           v: new Date(NaN)
         };
-        q.push(a.setter), E = a.rest
+        q.push(o.setter), E = o.rest
       } else {
         if (n.match(T)) throw RangeError("Format string contains an unescaped latin alphabet character `" + n + "`");
         if ("''" === t ? t = "'" : "'" === n && (t = A(t)), 0 !== E.indexOf(t)) return {
@@ -175,22 +175,22 @@ function S(e, t, n, g) {
     }).map(function(e) {
       return e[0]
     }),
-    en = (0, o.default)(n);
+    en = (0, a.default)(n);
   if (isNaN(en.getTime())) return new Date(NaN);
   var er, ei = (0, i.Z)(en, (0, l.Z)(en)),
-    eo = {},
-    ea = m(et);
+    ea = {},
+    eo = m(et);
   try {
-    for (ea.s(); !(er = ea.n()).done;) {
+    for (eo.s(); !(er = eo.n()).done;) {
       var es = er.value;
       if (!es.validate(ei, z)) return new Date(NaN);
-      var el = es.set(ei, eo, z);
-      Array.isArray(el) ? (ei = el[0], (0, a.Z)(eo, el[1])) : ei = el
+      var el = es.set(ei, ea, z);
+      Array.isArray(el) ? (ei = el[0], (0, o.Z)(ea, el[1])) : ei = el
     }
   } catch (e) {
-    ea.e(e)
+    eo.e(e)
   } finally {
-    ea.f()
+    eo.f()
   }
   return ei
 }

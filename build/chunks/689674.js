@@ -20,7 +20,7 @@ function f(e) {
     message: f,
     channel: _,
     enabled: p = true
-  } = e, h = (0, o.e7)([s.Z], () => {
+  } = e, h = (0, a.e7)([s.Z], () => {
     var e;
     let t = s.Z.getGuild(_.guild_id);
     return null != (e = null == t ? true : t.features.has(u.oNc.COMMUNITY)) && e
@@ -37,7 +37,7 @@ function f(e) {
   }, {
     disable: !E || !p,
     autoTrackExposure: true
-  }).enabled, T = (0, a.O)(v, d, I);
+  }).enabled, T = (0, o.O)(v, d, I);
   return r.useEffect(() => () => {
     c.Z.handleMessageLostVisibility(b)
   }, [b]), T

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
   l = require.n(Chunk512722),
   Chunk755721 = require("./755721.js"),
@@ -30,13 +30,13 @@ function O(e, t) {
 function v(e) {
   let {
     url: t
-  } = e, [n, o] = i.useState(false), s = i.useRef(true), l = i.useCallback(() => {
+  } = e, [n, a] = i.useState(false), s = i.useRef(true), l = i.useCallback(() => {
     n || (0, p.JG)(t, () => {
-      o(true), s.current = setTimeout(() => o(false), 2e3)
+      a(true), s.current = setTimeout(() => a(false), 2e3)
     })
   }, [t, n]);
   return i.useEffect(() => () => clearTimeout(s.current), []), p.wS ? (0, r.jsxs)(u.P3F, {
-    className: a()(y.copyLink, n ? y.copied : null),
+    className: o()(y.copyLink, n ? y.copied : null),
     onClick: l,
     children: [(0, r.jsx)(u.xPt, {
       size: "md",
@@ -51,7 +51,7 @@ function I() {
     children: [(0, Chunk951288.jsxs)("div", {
       className: Chunk322108.buildInfo,
       children: [(0, Chunk951288.jsx)("div", {
-        className: a()(Chunk322108.barLoader, Chunk322108.barTitle)
+        className: o()(Chunk322108.barLoader, Chunk322108.barTitle)
       }), (0, Chunk951288.jsx)("div", {
         className: Chunk322108.barLoader
       })]
@@ -65,7 +65,7 @@ function T(e) {
   let {
     subHead: t,
     buildDetails: n,
-    buttonColor: o,
+    buttonColor: a,
     buttonClick: s,
     buttonText: l,
     disabled: d = false,
@@ -84,9 +84,9 @@ function T(e) {
       })]
     }), (0, r.jsx)(c.zx, {
       submitting: f,
-      color: o,
+      color: a,
       onClick: s,
-      className: a()(y.button, d ? y.disabledButtonOverride : null),
+      className: o()(y.button, d ? y.disabledButtonOverride : null),
       size: y.buttonSize,
       disabled: d,
       children: l
@@ -97,21 +97,21 @@ function T(e) {
 function S(e) {
   let t, n, r, {
       currentOverrides: i,
-      linkMeta: o,
-      applyBuildOverride: a,
+      linkMeta: a,
+      applyBuildOverride: o,
       clearBuildOverride: s,
       submitting: u
     } = e,
     _ = ["discord_web"];
   m.isPlatformEmbedded || _.push("discord_marketing", "discord_developers");
-  let p = (0, g.Z)(o, _);
+  let p = (0, g.Z)(a, _);
   if (!p.valid) return A(p.reason);
-  l()(null != o, "BuildOverrideEmbed.renderResolved: linkMeta should never be null if resolved");
+  l()(null != a, "BuildOverrideEmbed.renderResolved: linkMeta should never be null if resolved");
   let {
     discord_web: h,
     discord_developers: E
-  } = o.targetBuildOverride, y = null != h ? h : E;
-  l()(null != y, "BuildOverrideEmbed.renderResolved: linkMeta.targetBuildOverride.discord_web or linkMeta.targetBuildOverride.discord_developers should never be null if resolved"), O(y, i) ? (n = b.intl.string(b.t.tX4xrq), t = s, r = c.zx.Colors.RED) : (n = b.intl.string(b.t.nOunHB), t = a, r = c.zx.Colors.GREEN);
+  } = a.targetBuildOverride, y = null != h ? h : E;
+  l()(null != y, "BuildOverrideEmbed.renderResolved: linkMeta.targetBuildOverride.discord_web or linkMeta.targetBuildOverride.discord_developers should never be null if resolved"), O(y, i) ? (n = b.intl.string(b.t.tX4xrq), t = s, r = c.zx.Colors.RED) : (n = b.intl.string(b.t.nOunHB), t = o, r = c.zx.Colors.GREEN);
   let v = () => {
     f.Z.isConnected() ? d.Z.show({
       title: b.intl.string(b.t.tiu1l5),
@@ -169,8 +169,8 @@ let N = e => {
   let {
     loading: t = false,
     currentOverrides: n,
-    linkMeta: o,
-    url: a,
+    linkMeta: a,
+    url: o,
     applyBuildOverride: s,
     clearBuildOverride: l
   } = e, [c, u] = i.useState(false), d = i.useCallback(() => {
@@ -180,13 +180,13 @@ let N = e => {
   }, [l, c]);
   return (0, r.jsxs)("div", {
     className: y.wrapper,
-    children: [C(o, a, t), (0, r.jsxs)("div", {
+    children: [C(a, o, t), (0, r.jsxs)("div", {
       className: y.content,
       children: [(0, r.jsx)(_.Z, {
         className: y.icon
       }), t ? I() : S({
         currentOverrides: n,
-        linkMeta: o,
+        linkMeta: a,
         applyBuildOverride: d,
         clearBuildOverride: f,
         submitting: c

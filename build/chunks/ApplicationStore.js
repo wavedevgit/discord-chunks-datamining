@@ -73,7 +73,7 @@ function O(e) {
   let {
     applications: t
   } = e;
-  for (let e of t) b(new a.ZP(e))
+  for (let e of t) b(new o.ZP(e))
 }
 
 function v(e) {
@@ -98,7 +98,7 @@ function T(e) {
 }
 
 function S(e) {
-  b(a.ZP.createFromServer(e))
+  b(o.ZP.createFromServer(e))
 }
 
 function A(e) {
@@ -115,10 +115,10 @@ function A(e) {
   };
   let i = new Map;
   for (let [e, t] of Object.entries(g.botUserIdToAppUsage)) i.set(e, t);
-  let o = Array.from(i.entries()).sort((e, t) => t[1].lastUsedMs - e[1].lastUsedMs);
-  for (let e = 0; e < o.length; e++)
+  let a = Array.from(i.entries()).sort((e, t) => t[1].lastUsedMs - e[1].lastUsedMs);
+  for (let e = 0; e < a.length; e++)
     if (e >= E) {
-      let t = o[e][0];
+      let t = a[e][0];
       delete g.botUserIdToAppUsage[t]
     }
 }
@@ -145,7 +145,7 @@ function R(e) {
   let {
     libraryApplications: t
   } = e;
-  for (let e of t) b(a.ZP.createFromServer(e.application))
+  for (let e of t) b(o.ZP.createFromServer(e.application))
 }
 
 function P(e) {
@@ -159,7 +159,7 @@ function w(e) {
   let {
     applications: t
   } = e;
-  for (let e of t) b(a.ZP.createFromServer(e))
+  for (let e of t) b(o.ZP.createFromServer(e))
 }
 
 function D(e) {
@@ -168,7 +168,7 @@ function D(e) {
   } = e;
   t.forEach(e => {
     e.items.forEach(e => {
-      b(a.ZP.createFromServer(e.application))
+      b(o.ZP.createFromServer(e.application))
     })
   })
 }
@@ -213,7 +213,7 @@ function M(e) {
   for (let {
       sku: e
     }
-    of t)(null == e ? true : e.application) != null && (b(a.ZP.createFromServer(e.application)), n = true);
+    of t)(null == e ? true : e.application) != null && (b(o.ZP.createFromServer(e.application)), n = true);
   return n
 }
 
@@ -222,7 +222,7 @@ function k(e) {
     guildId: t,
     applications: n
   } = e, r = [];
-  for (let e of n) r.push(e.id), b(a.ZP.createFromServer(e));
+  for (let e of n) r.push(e.id), b(o.ZP.createFromServer(e));
   _[t] = r
 }
 
@@ -233,7 +233,7 @@ function U(e) {
   for (let e of t) {
     var r;
     let t = null == (r = e.sku) ? true : r.application;
-    null == t || n.has(t.id) || b(a.ZP.createFromServer(t))
+    null == t || n.has(t.id) || b(o.ZP.createFromServer(t))
   }
   return n.size > 0
 }
@@ -244,7 +244,7 @@ function G(e) {
     payment: n
   } = e;
   if ((null == (t = n.sku) ? true : t.application) == null) returnfalse;
-  b(a.ZP.createFromServer(n.sku.application))
+  b(o.ZP.createFromServer(n.sku.application))
 }
 
 function B(e) {
@@ -253,7 +253,7 @@ function B(e) {
     giftCode: n
   } = e;
   if ((null == (t = n.store_listing) ? true : t.sku.application) == null) returnfalse;
-  b(a.ZP.createFromServer(n.store_listing.sku.application))
+  b(o.ZP.createFromServer(n.store_listing.sku.application))
 }
 
 function Z(e) {
@@ -261,7 +261,7 @@ function Z(e) {
     invite: t
   } = e;
   if (null == t.target_application) returnfalse;
-  b(a.ZP.createFromServer(t.target_application))
+  b(o.ZP.createFromServer(t.target_application))
 }
 
 function F(e) {
@@ -269,7 +269,7 @@ function F(e) {
     storeListing: t
   } = e;
   if (null == t.sku.application) returnfalse;
-  b(a.ZP.createFromServer(t.sku.application))
+  b(o.ZP.createFromServer(t.sku.application))
 }
 
 function V(e) {
@@ -282,7 +282,7 @@ function V(e) {
 function H(e) {
   var t;
   null == (t = e.attachments) || t.forEach(e => {
-    null != e.application && b(a.ZP.createFromServer(e.application))
+    null != e.application && b(o.ZP.createFromServer(e.application))
   })
 }
 
@@ -290,12 +290,12 @@ function Y(e) {
   let {
     application: t
   } = e;
-  b(a.ZP.createFromServer(t))
+  b(o.ZP.createFromServer(t))
 }
 
 function W(e) {
   e.tokens.forEach(e => {
-    b(a.ZP.createFromServer(e.application));
+    b(o.ZP.createFromServer(e.application));
     let t = e.application.bot;
     null != t && A({
       userId: t.id,
@@ -306,7 +306,7 @@ function W(e) {
 
 function K(e) {
   e.items.forEach(e => {
-    null != e.application && b(a.ZP.createFromServer(e.application))
+    null != e.application && b(o.ZP.createFromServer(e.application))
   })
 }
 class z extends(r = Chunk442837.ZP.PersistedStore) {

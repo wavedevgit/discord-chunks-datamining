@@ -19,16 +19,16 @@ function u(e) {
 }
 
 function d(e, t, n) {
-  var o = t,
-    d = r(o);
-  if (null != d || e && (e === o || e.firstChild === o) || a(false), e === o && (s(o = o.firstChild) || a(false), "true" !== o.getAttribute("data-contents") && a(false), n > 0 && (n = o.childNodes.length)), 0 === n) {
+  var a = t,
+    d = r(a);
+  if (null != d || e && (e === a || e.firstChild === a) || o(false), e === a && (s(a = a.firstChild) || o(false), "true" !== a.getAttribute("data-contents") && o(false), n > 0 && (n = a.childNodes.length)), 0 === n) {
     var _ = null;
     return {
-      key: _ = null != d ? d : l(i(c(o))),
+      key: _ = null != d ? d : l(i(c(a))),
       offset: 0
     }
   }
-  var p = o.childNodes[n - 1],
+  var p = a.childNodes[n - 1],
     h = null,
     m = null;
   if (i(p)) {
@@ -45,11 +45,11 @@ function f(e) {
   var t = e.textContent;
   return "\n" === t ? 0 : t.length
 }
-module.exports = function(e, t, n, i, a, s) {
+module.exports = function(e, t, n, i, o, s) {
   var c = n.nodeType === Node.TEXT_NODE,
-    u = a.nodeType === Node.TEXT_NODE;
+    u = o.nodeType === Node.TEXT_NODE;
   if (c && u) return {
-    selectionState: o(e, l(r(n)), i, l(r(a)), s),
+    selectionState: a(e, l(r(n)), i, l(r(o)), s),
     needsRecovery: false
   };
   var f = null,
@@ -58,11 +58,11 @@ module.exports = function(e, t, n, i, a, s) {
   return c ? (f = {
     key: l(r(n)),
     offset: i
-  }, _ = d(t, a, s)) : u ? (_ = {
-    key: l(r(a)),
+  }, _ = d(t, o, s)) : u ? (_ = {
+    key: l(r(o)),
     offset: s
-  }, f = d(t, n, i)) : (f = d(t, n, i), _ = d(t, a, s), n === a && i === s && (p = !!n.firstChild && "BR" !== n.firstChild.nodeName)), {
-    selectionState: o(e, f.key, f.offset, _.key, _.offset),
+  }, f = d(t, n, i)) : (f = d(t, n, i), _ = d(t, o, s), n === o && i === s && (p = !!n.firstChild && "BR" !== n.firstChild.nodeName)), {
+    selectionState: a(e, f.key, f.offset, _.key, _.offset),
     needsRecovery: p
   }
 }

@@ -60,7 +60,7 @@ function E(e, t) {
 }
 
 function b(e) {
-  c.default.track(_.rMx.GUILD_ONBOARDING_LOADED, E(m({}, (0, o.hH)(e)), {
+  c.default.track(_.rMx.GUILD_ONBOARDING_LOADED, E(m({}, (0, a.hH)(e)), {
     has_new_prompts: false,
     number_of_prompts: 0
   }))
@@ -88,10 +88,10 @@ function y(e) {
 }
 async function O(e) {
   var t, n;
-  let r = a.default.getId(),
+  let r = o.default.getId(),
     i = (0, u.yE)(null != (n = null == (t = s.ZP.getMember(e, r)) ? true : t.flags) ? n : 0, p.q.COMPLETED_ONBOARDING),
-    o = l.Z.getGuild(e);
-  if (null == o || !o.features.has(_.oNc.GUILD_ONBOARDING)) return Promise.resolve();
+    a = l.Z.getGuild(e);
+  if (null == a || !a.features.has(_.oNc.GUILD_ONBOARDING)) return Promise.resolve();
   let c = d.Z.shouldFetchPrompts(e),
     f = d.Z.getOnboardingPrompts(e);
   if (!c && f.length > 0) return f.every(e => !e.inOnboarding) ? T(e) : i || v(e), Promise.resolve();
@@ -108,10 +108,10 @@ function v(e) {
 let I = false;
 
 function T(e) {
-  c.default.track(_.rMx.GUILD_ONBOARDING_STEP_VIEWED, E(m({}, (0, o.hH)(e)), {
+  c.default.track(_.rMx.GUILD_ONBOARDING_STEP_VIEWED, E(m({}, (0, a.hH)(e)), {
     step: I,
     required: true
-  })), c.default.track(_.rMx.GUILD_ONBOARDING_STEP_COMPLETED, E(m({}, (0, o.hH)(e)), {
+  })), c.default.track(_.rMx.GUILD_ONBOARDING_STEP_COMPLETED, E(m({}, (0, a.hH)(e)), {
     step: I,
     skipped: false,
     is_final_step: true,

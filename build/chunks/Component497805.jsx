@@ -42,8 +42,8 @@ function p(e, t) {
   if (null == e) return {};
   var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -51,8 +51,8 @@ function p(e, t) {
 function h(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let m = new Set;
@@ -62,8 +62,8 @@ function g(e, t) {
 }
 async function E(e) {
   var t, {
-      userId: o,
-      section: a,
+      userId: a,
+      section: o,
       subsection: f,
       guildId: h,
       channelId: E,
@@ -73,18 +73,18 @@ async function E(e) {
       disableActionsForPreview: v = false
     } = e,
     I = p(e, ["userId", "section", "subsection", "guildId", "channelId", "showGuildProfile", "appContext", "customStatusPrompt", "disableActionsForPreview"]);
-  let T = l.default.getUser(o);
+  let T = l.default.getUser(a);
   if (null == T) return;
   let S = l.default.getCurrentUser();
   if (null == S) return;
-  let A = g(o, b ? h : true);
+  let A = g(a, b ? h : true);
   m.add(await (0, i.ZDy)(async () => {
     let e = (await Promise.all([n.e("1268"), n.e("21585"), n.e("62880"), n.e("82008")]).then(n.bind(n, 866035))).default;
     return t => (0, r.jsx)(e, _({
       user: T,
       currentUser: S,
       guildId: h,
-      initialSection: a,
+      initialSection: o,
       initialSubsection: f,
       channelId: E,
       showGuildProfile: b,

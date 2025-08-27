@@ -51,7 +51,7 @@ class c {
         case "update":
           return e.writes;
         default:
-          (0, o.vE)(e)
+          (0, a.vE)(e)
       }
     }
     this.updateWith(r, [n]), this.updateWith(r, i(n.emojis)), this.updateWith(r, i(n.stickers)), this.updateWith(r, i(n.channels)), this.updateWith(r, Array.isArray(n.roles) ? n.roles : Object.values(n.roles)), this.commit(t)
@@ -101,8 +101,8 @@ class c {
     var n, r;
     if (0 === t.length) return;
     let i = Math.max(null != (n = this.committed.get(e)) ? n : 0, null != (r = this.pending.get(e)) ? r : 0),
-      o = this.computeLatestVersion(i, t);
-    o > i && this.pending.set(e, o)
+      a = this.computeLatestVersion(i, t);
+    a > i && this.pending.set(e, a)
   }
   computeLatestVersion(e, t) {
     let n = e;
@@ -114,7 +114,7 @@ class c {
   }
   commit(e) {
     if (this.pending.size > 0) {
-      let t = a.Z.guildVersionsTransaction(e);
+      let t = o.Z.guildVersionsTransaction(e);
       for (let [e, n] of this.pending) null != n ? (t.put({
         id: e,
         version: n

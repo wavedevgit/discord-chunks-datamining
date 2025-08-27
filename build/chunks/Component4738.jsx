@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk693789 = require("./693789.jsx"),
   Chunk1561 = require("./1561.jsx"),
   Chunk481060 = require("./481060.js"),
@@ -19,7 +19,7 @@ function _(e) {
   let {
     page: t,
     totalPageCount: n,
-    disabled: o,
+    disabled: a,
     onPageChange: s
   } = e, [u, d] = i.useState(false), [_, p] = i.useState(null), h = null != _ && _ >= 1 && _ <= n, m = e => {
     let t = parseInt(e);
@@ -28,7 +28,7 @@ function _(e) {
   }, g = e => {
     "Enter" === e.key && null != _ && h && (s(_), d(false), p(null))
   };
-  return o ? (0, r.jsx)(c.X6q, {
+  return a ? (0, r.jsx)(c.X6q, {
     className: f.gap,
     "aria-hidden": true,
     variant: "heading-sm/semibold",
@@ -44,12 +44,12 @@ function _(e) {
         d(false), p(null)
       },
       onKeyUp: g,
-      disabled: o
+      disabled: a
     }, t.key)
   }) : (0, r.jsx)(l.P, {
     onClick: () => d(true),
     children: (0, r.jsx)(c.X6q, {
-      className: a()(f.roundButton, f.gap),
+      className: o()(f.roundButton, f.gap),
       "aria-hidden": true,
       variant: "heading-sm/semibold",
       children: "…"
@@ -62,7 +62,7 @@ function p(e) {
     currentPage: t,
     totalCount: n,
     pageSize: i,
-    maxVisiblePages: o,
+    maxVisiblePages: a,
     disablePaginationGap: p,
     onPageChange: h,
     hideMaxPage: m = false,
@@ -126,7 +126,7 @@ function p(e) {
 
   function I(e) {
     return (0, r.jsx)(l.P, {
-      className: a()(f.roundButton, {
+      className: o()(f.roundButton, {
         [f.activeButton]: e.selected
       }),
       onClick: e.selected ? true : e.navigateToPage,
@@ -160,7 +160,7 @@ function p(e) {
       hasMultiplePages: n
     } = e;
     return n ? (0, r.jsx)("div", {
-      className: a()(f.pageControlContainer, g),
+      className: o()(f.pageControlContainer, g),
       children: (0, r.jsx)("nav", {
         className: f.pageControl,
         children: t.map(e => {
@@ -183,7 +183,7 @@ function p(e) {
   return (0, r.jsx)(u.W, {
     totalPageCount: b,
     selectedPage: t,
-    maxVisiblePages: o,
+    maxVisiblePages: a,
     hideMaxPage: m,
     onPageChange: y,
     children: A

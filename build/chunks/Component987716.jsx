@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk987209 = require("./987209.jsx"),
   Chunk321051 = require("./321051.jsx"),
@@ -64,8 +64,8 @@ function I(e, t) {
   if (null == e) return {};
   var n, r, i = T(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -73,15 +73,15 @@ function I(e, t) {
 function T(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let S = e => {
   let {
     isShopGift: t,
     className: n,
-    optionsContainerClassName: o
+    optionsContainerClassName: a
   } = e, {
     giftRecipient: b,
     selectedGiftStyle: O,
@@ -101,7 +101,7 @@ let S = e => {
   };
   return (0, r.jsxs)("div", {
     children: [k && (0, r.jsxs)("div", {
-      className: a()(E.giftMainAnimation, n),
+      className: o()(E.giftMainAnimation, n),
       children: [null != O ? (0, r.jsx)(p.Z, {
         giftStyle: O,
         defaultAnimationState: d.SR.ACTION,
@@ -111,7 +111,7 @@ let S = e => {
       }) : (0, r.jsx)(s.$jN, {
         className: E.spinner
       }), M && (0, r.jsxs)("div", {
-        className: a()(E.soundEmojiContainer, G && E.refresh),
+        className: o()(E.soundEmojiContainer, G && E.refresh),
         children: [(0, r.jsx)(c.Z, {
           sound: A,
           onSelect: B
@@ -126,7 +126,7 @@ let S = e => {
         var t;
         e.target === e.currentTarget && (null == (t = w.current) || t.focus())
       },
-      className: a()(E.giftBoxOptionContainer, o),
+      className: o()(E.giftBoxOptionContainer, a),
       "aria-label": g.intl.string(g.t.v54NrK),
       ref: x
     }, L), {

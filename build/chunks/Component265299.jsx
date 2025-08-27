@@ -29,8 +29,8 @@ function g(e) {
   } = (0, l.J2)({
     fetchPolicy: "cache-or-network",
     callerSource: "embed"
-  }), b = i.useMemo(() => n.find(e => e.id === t), [t, n]), y = i.useMemo(() => g.find(e => e.id === t), [t, g]), O = i.useMemo(() => (null == b ? true : b.config.features.includes(o.S.MOBILE_ONLY_QUEST_PUSH_TO_MOBILE)) === true, [null == b ? true : b.config.features]);
-  if (E) return (0, r.jsx)(a.$jN, {
+  }), b = i.useMemo(() => n.find(e => e.id === t), [t, n]), y = i.useMemo(() => g.find(e => e.id === t), [t, g]), O = i.useMemo(() => (null == b ? true : b.config.features.includes(a.S.MOBILE_ONLY_QUEST_PUSH_TO_MOBILE)) === true, [null == b ? true : b.config.features]);
+  if (E) return (0, r.jsx)(o.$jN, {
     className: m.spinner
   });
   if (null != y) return (0, r.jsx)(f.W, {

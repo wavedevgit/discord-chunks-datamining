@@ -3,7 +3,7 @@
 "use strict";
 var Chunk815329 = require("./815329.js"),
   Chunk706165 = require("./706165.js"),
-  o = {
+  a = {
     __proto__: null,
     "[[Configurable]]": true,
     "[[Enumerable]]": true,
@@ -15,9 +15,9 @@ var Chunk815329 = require("./815329.js"),
 module.exports = function(e) {
   if (!e || "object" != typeof e) returnfalse;
   for (var t in e)
-    if (i(e, t) && !o[t]) returnfalse;
+    if (i(e, t) && !a[t]) returnfalse;
   var n = i(e, "[[Value]]") || i(e, "[[Writable]]"),
-    a = i(e, "[[Get]]") || i(e, "[[Set]]");
-  if (n && a) throw new r("Property Descriptors may not be both accessor and data descriptors");
+    o = i(e, "[[Get]]") || i(e, "[[Set]]");
+  if (n && o) throw new r("Property Descriptors may not be both accessor and data descriptors");
   returntrue
 }

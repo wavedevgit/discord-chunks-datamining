@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk818083 = require("./818083.js"),
   Chunk751823 = require("./751823.js"),
   Chunk875527 = require("./875527.js");
-let a = (0, Chunk818083.B)({
+let o = (0, Chunk818083.B)({
   kind: "user",
   id: "2025-08_audio_context_menu_refresh",
   label: "Audio context menu refresh experiment",
@@ -33,11 +33,11 @@ function s(e) {
     location: t
   }, {
     autoTrackExposure: n
-  }), s = (0, o.Hu)({
+  }), s = (0, a.Hu)({
     location: t,
     autoTrackExposure: false
   });
-  return a.useExperiment({
+  return o.useExperiment({
     location: t
   }, {
     disable: r || s,

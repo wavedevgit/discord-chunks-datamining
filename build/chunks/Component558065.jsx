@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk579092 = require("./579092.js"),
   Chunk992774 = require("./992774.js");
 
@@ -37,8 +37,8 @@ function d(e, t) {
   if (null == e) return {};
   var n, r, i = f(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -46,8 +46,8 @@ function d(e, t) {
 function f(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let _ = new Chunk579092.Yd("DirectVideo");
@@ -77,7 +77,7 @@ function g(e) {
 function E(e, t) {
   var {
     streamId: n,
-    paused: o = false,
+    paused: a = false,
     onReady: s,
     onResize: l,
     className: c
@@ -90,7 +90,7 @@ function E(e, t) {
     }),
     b = i.useRef({
       streamId: n,
-      paused: o,
+      paused: a,
       onReady: s,
       onResize: l,
       onContainerResized: t
@@ -101,17 +101,17 @@ function E(e, t) {
     } = p;
 
     function t() {
-      var e, t, n, r, i, o;
+      var e, t, n, r, i, a;
       let {
-        width: a,
+        width: o,
         height: s
       } = E.current, l = null != (n = null == (e = h.current) ? true : e.videoWidth) ? n : 0, c = null != (r = null == (t = h.current) ? true : t.videoHeight) ? r : 0;
-      if (a !== l || s !== c) {
+      if (o !== l || s !== c) {
         let e = {
           width: l,
           height: c
         };
-        null == (i = (o = b.current).onResize) || i.call(o, e), E.current = e
+        null == (i = (a = b.current).onResize) || i.call(a, e), E.current = e
       }
     }
 
@@ -136,20 +136,20 @@ function E(e, t) {
       }
     });
     if (null != e) {
-      let o = document.createElement("video");
-      o.style.display = "block", o.style.width = "100%", o.style.height = "100%", o.autoplay = true, o.muted = true, o.addEventListener("pause", r), o.addEventListener("resize", t), o.addEventListener("canplaythrough", n), _.info("create video element for ".concat(b.current.streamId, ", readyState=").concat(o.readyState)), o.readyState > 3 && _.error("video element for ".concat(b.current.streamId, " was ready before attached")), e.appendChild(o), i.disconnect(), i.observe(o), h.current = o
+      let a = document.createElement("video");
+      a.style.display = "block", a.style.width = "100%", a.style.height = "100%", a.autoplay = true, a.muted = true, a.addEventListener("pause", r), a.addEventListener("resize", t), a.addEventListener("canplaythrough", n), _.info("create video element for ".concat(b.current.streamId, ", readyState=").concat(a.readyState)), a.readyState > 3 && _.error("video element for ".concat(b.current.streamId, " was ready before attached")), e.appendChild(a), i.disconnect(), i.observe(a), h.current = a
     }
   }, []), i.useEffect(() => {
-    b.current.streamId = n, b.current.paused = o, b.current.onReady = s, b.current.onResize = l
+    b.current.streamId = n, b.current.paused = a, b.current.onReady = s, b.current.onResize = l
   }), i.useEffect(() => {
     let e = h.current;
     if (null != e)
-      if (!o) return _.info("attaching srcObject for ".concat(n)), e.srcObject = m(n), () => {
+      if (!a) return _.info("attaching srcObject for ".concat(n)), e.srcObject = m(n), () => {
         g(n), e.srcObject = null
       };
       else null != e.srcObject && (e.srcObject = null, g(n))
-  }, [o, n]), (0, r.jsx)("div", u({
-    className: a()("media-engine-video", c),
+  }, [a, n]), (0, r.jsx)("div", u({
+    className: o()("media-engine-video", c),
     ref: p
   }, f))
 }

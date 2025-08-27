@@ -89,12 +89,12 @@ let P = e => {
           allNamesString: null == B ? true : B.name
         }
     }
-    let Z = (0, o.e7)([g.Z], () => null !== t && t.type === u.B.GUILD ? g.Z.getGuild(t.guildId) : null, [t]),
-      F = (0, o.e7)([E.Z], () => E.Z.isFocused()),
-      V = (0, o.e7)([l.Z], () => l.Z.useReducedMotion, []),
+    let Z = (0, a.e7)([g.Z], () => null !== t && t.type === u.B.GUILD ? g.Z.getGuild(t.guildId) : null, [t]),
+      F = (0, a.e7)([E.Z], () => E.Z.isFocused()),
+      V = (0, a.e7)([l.Z], () => l.Z.useReducedMotion, []),
       H = m.Yk.useSetting(),
       Y = (0, O.C1)(j, R(t) ? t : null),
-      W = (0, o.e7)([c.ZP], () => c.ZP.expandedSectionsByGuildIds),
+      W = (0, a.e7)([c.ZP], () => c.ZP.expandedSectionsByGuildIds),
       {
         newlyAddedEmojis: K
       } = (0, v.Z)(j, M),
@@ -136,15 +136,15 @@ let P = e => {
     else if ("EXPAND_OR_COLLAPSE_EMOJI" === t.type) {
       let e = n(187119),
         i = n(39874),
-        o = n(853871),
+        a = n(853871),
         s = n(63149);
       w = W.has(t.guildId) ? (0, r.jsx)("img", {
         className: C.icon,
-        src: (0, a.wj)(q) ? o : s,
+        src: (0, o.wj)(q) ? a : s,
         alt: ""
       }) : (0, r.jsx)("img", {
         className: C.icon,
-        src: (0, a.wj)(q) ? e : i,
+        src: (0, o.wj)(q) ? e : i,
         alt: ""
       })
     }

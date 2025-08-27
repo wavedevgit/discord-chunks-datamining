@@ -11,19 +11,19 @@ function i(e) {
     isVoiceChannel: t,
     isHubGuild: n,
     isOwnInvite: i,
-    isGuest: o,
-    isStage: a,
+    isGuest: a,
+    isStage: o,
     isStream: s
   } = e;
   if (t)
     if (i)
       if (s) return r.intl.string(r.t.N85DCg);
-      else if (a) return r.intl.string(r.t.TJQcNj);
-  else if (o) return r.intl.string(r.t.mJyBio);
+      else if (o) return r.intl.string(r.t.TJQcNj);
+  else if (a) return r.intl.string(r.t.mJyBio);
   else return r.intl.string(r.t.lxTgPz);
   else if (s) return r.intl.string(r.t.Mnvc3N);
-  else if (a) return r.intl.string(r.t.FdPNr6);
-  else if (o) return r.intl.string(r.t.f4gmra);
+  else if (o) return r.intl.string(r.t.FdPNr6);
+  else if (a) return r.intl.string(r.t.f4gmra);
   else return r.intl.string(r.t.H39rER);
   return n ? i ? r.intl.string(r.t.UxmnHx) : r.intl.string(r.t.sigPER) : i ? r.intl.string(r.t["oU/lsr"]) : r.intl.string(r.t.BoQUFR)
 }

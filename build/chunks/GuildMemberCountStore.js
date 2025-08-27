@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -23,7 +23,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      a(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -98,7 +98,7 @@ class g extends(r = Chunk442837.ZP.Store) {
     return null != e ? c[e] : null
   }
 }
-a(g, "displayName", "GuildMemberCountStore");
+o(g, "displayName", "GuildMemberCountStore");
 let E = new g(Chunk570140.Z, {
   CONNECTION_OPEN: u,
   OVERLAY_INITIALIZE: d,

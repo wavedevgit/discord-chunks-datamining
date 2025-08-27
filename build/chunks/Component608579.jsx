@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk238651 = require("./238651.js"),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -76,7 +76,7 @@ function j(e) {
   var t;
   let {
     onClose: n,
-    onComplete: o,
+    onComplete: a,
     onStepChange: w,
     transitionState: x,
     loadId: j,
@@ -93,8 +93,8 @@ function j(e) {
     purchaseType: N.o8.FIAT,
     skuId: M
   }), [M]), X = (0, l.Wu)([f.Z], () => f.Z.recommendedGiftSkuIds, []), Q = null != M ? [M] : X, J = null != (t = Q[0]) ? t : null, $ = null != M && p.Rm.has(M), ee = i.useCallback(() => {
-    z(true), null == o || o()
-  }, [o]), et = i.useCallback(e => {
+    z(true), null == a || a()
+  }, [a]), et = i.useCallback(e => {
     z(false), n(e), c.Z.dispatch({
       type: "SKU_PURCHASE_MODAL_CLOSE",
       error: null
@@ -126,7 +126,7 @@ function j(e) {
       environment: H.current
     }), (0, r.jsx)(_.i, {
       options: q,
-      className: a()(P.customConfetti, {
+      className: o()(P.customConfetti, {
         [P.hidden]: !K
       })
     }), (0, r.jsx)(m.PaymentContextProvider, {

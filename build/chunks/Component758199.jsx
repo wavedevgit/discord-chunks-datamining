@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -83,7 +83,7 @@ function A(e) {
   } = e;
   return null != t ? (0, r.jsx)(c.P3F, {
     onClick: t,
-    className: a()({
+    className: o()({
       [b.cursorPointer]: null != t
     }, i),
     children: n
@@ -97,7 +97,7 @@ function C(e) {
   let {
     title: t,
     header: n,
-    footer: o,
+    footer: a,
     info: p,
     staticBannerSrc: y,
     videoBannerSrc: T,
@@ -156,7 +156,7 @@ function C(e) {
     className: b.embed,
     children: [Y && (0, r.jsxs)(A, {
       onClick: Q,
-      className: a()(b.bannerWrapper, W, {
+      className: o()(b.bannerWrapper, W, {
         [b.showVideoOnFocus]: H
       }),
       children: [H && (q ? (0, r.jsx)("div", {
@@ -195,7 +195,7 @@ function C(e) {
           className: b.contentAndCopyButtonWrapper,
           children: [(0, r.jsxs)(A, {
             onClick: X,
-            className: a()(b.contentWrapper, {
+            className: o()(b.contentWrapper, {
               [b.contentWrapperClickable]: null != X
             }),
             children: [null != N && (0, r.jsx)("div", {
@@ -223,11 +223,11 @@ function C(e) {
             let {
               label: n,
               icon: i,
-              onClick: o,
-              disabledReason: a,
+              onClick: a,
+              disabledReason: o,
               submitting: s,
               trackingArea: u
-            } = e, d = null != a, f = 0 === t, _ = null != i ? (0, r.jsxs)(r.Fragment, {
+            } = e, d = null != o, f = 0 === t, _ = null != i ? (0, r.jsxs)(r.Fragment, {
               children: [i, (0, r.jsx)("span", {
                 children: n
               })]
@@ -238,11 +238,11 @@ function C(e) {
               submitting: s,
               children: _,
               onClick(e) {
-                o(e), (0, m.KX)(D.id, D.linkType, u, D.referrerId, D.activityCustomId)
+                a(e), (0, m.KX)(D.id, D.linkType, u, D.referrerId, D.activityCustomId)
               }
             };
             return d ? (0, r.jsx)(c.ua7, {
-              text: a,
+              text: o,
               children: e => {
                 var t = O({}, v(e));
                 return (0, r.jsx)(l.zx, I({}, p, t))
@@ -250,7 +250,7 @@ function C(e) {
             }, n) : (0, r.jsx)(l.zx, I({}, p), n)
           })
         })]
-      }), null != o && o]
+      }), null != a && a]
     })]
   })
 }

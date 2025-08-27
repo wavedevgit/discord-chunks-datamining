@@ -26,11 +26,11 @@ let d = e => {
   let f = (0, l.OT)(t.unpublishedAt);
 
   function _(e) {
-    return (0, r.jsx)(a.IGR, {
+    return (0, r.jsx)(o.IGR, {
       disableColor: true,
       text: e,
       className: u,
-      style: (0, o.wj)(d) ? {
+      style: (0, a.wj)(d) ? {
         color: "var(--black-500)",
         backgroundColor: "var(--white-500)"
       } : {

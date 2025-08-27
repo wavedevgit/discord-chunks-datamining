@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk846027 = require("./846027.js"),
@@ -59,7 +59,7 @@ function N(e) {
     } = e,
     {
       shortcut: i,
-      delay: o,
+      delay: a,
       pttLatchingEnabled: f
     } = (0, s.cj)([p.Z], () => p.Z.getModeOptions()),
     {
@@ -69,13 +69,13 @@ function N(e) {
     });
   return t = h.isPlatformEmbedded || n !== E.pM4.PUSH_TO_TALK ? (0, r.jsx)(l.R94, {
     type: l.R94.Types.DESCRIPTION,
-    className: a()(y.pttToolsMessage, v.marginBottom8),
+    className: o()(y.pttToolsMessage, v.marginBottom8),
     children: b.intl.format(b.t.HVvn5e, {
       onClick: () => u.Z.setSection(E.oAB.KEYBINDS)
     })
   }) : (0, r.jsx)(l.R94, {
     type: l.R94.Types.DESCRIPTION,
-    className: a()(y.pttToolsMessage, y.pttToolsWarning, v.marginBottom8),
+    className: o()(y.pttToolsMessage, y.pttToolsWarning, v.marginBottom8),
     children: b.intl.format(b.t.zvMPOT, {
       onDownloadClick: () => (0, g.y)("Help Text PTT")
     })
@@ -103,7 +103,7 @@ function N(e) {
             className: v.marginBottom8,
             children: b.intl.string(b.t.y0ShVl)
           }), (0, r.jsx)(l.iRW, {
-            initialValue: o,
+            initialValue: a,
             onValueChange: e => c.Z.setMode(n, {
               delay: e
             }),
@@ -117,7 +117,7 @@ function N(e) {
       className: v.marginTop8,
       children: [(0, r.jsx)(_.FG, {
         children: e => (0, r.jsxs)("div", {
-          className: a()(O.horizontal, v.marginBottom4),
+          className: o()(O.horizontal, v.marginBottom4),
           children: [(0, r.jsx)(l.vwX, {
             tag: l.RB0.H3,
             className: v.marginReset,
@@ -145,13 +145,13 @@ function N(e) {
 function R() {
   let {
     analyticsLocations: e
-  } = (0, Chunk906732.ZP)(), t = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getMode()), o = [{
+  } = (0, Chunk906732.ZP)(), t = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getMode()), a = [{
     value: Chunk981631.pM4.VOICE_ACTIVITY,
     name: Chunk388032.intl.string(Chunk388032.t.cHCEOD)
   }, {
     value: Chunk981631.pM4.PUSH_TO_TALK,
     name: S ? Chunk388032.intl.string(Chunk388032.t["1AINrK"]) : Chunk388032.intl.string(Chunk388032.t.Q8gkVF)
-  }], a = Chunk647438.useCallback(t => {
+  }], o = Chunk647438.useCallback(t => {
     let {
       value: i
     } = t;
@@ -175,7 +175,7 @@ function R() {
       title: Chunk388032.intl.string(Chunk388032.t["pS+K2N"]),
       className: Chunk197571.marginBottom20,
       children: (0, Chunk951288.jsx)(Chunk481060.FXm, {
-        onChange: a,
+        onChange: o,
         options: Chunk120356,
         value: exports
       })

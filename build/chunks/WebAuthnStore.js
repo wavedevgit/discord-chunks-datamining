@@ -43,18 +43,18 @@ let f = new d(Chunk570140.Z, {
     let {
       credential: t
     } = e;
-    t.type === a.Pi.WEBAUTHN && true === c.find(e => e.id === t.id) && (c = [...c, t])
+    t.type === o.Pi.WEBAUTHN && true === c.find(e => e.id === t.id) && (c = [...c, t])
   },
   AUTHENTICATOR_UPDATE(e) {
     let {
       credential: t
     } = e;
-    t.type === a.Pi.WEBAUTHN && (c = c.map(e => e.id === t.id ? t : e))
+    t.type === o.Pi.WEBAUTHN && (c = c.map(e => e.id === t.id ? t : e))
   },
   AUTHENTICATOR_DELETE(e) {
     let {
       credential: t
     } = e;
-    t.type === a.Pi.WEBAUTHN && (c = c.filter(e => e.id !== t.id))
+    t.type === o.Pi.WEBAUTHN && (c = c.filter(e => e.id !== t.id))
   }
 })

@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk692547 = require("./692547.js"),
   Chunk477690 = require("./477690.js"),
   Chunk393238 = require("./393238.js"),
@@ -32,7 +32,7 @@ function g(e) {
   let {
     notchBackground: t,
     progress: n,
-    gradientStart: o = s.Z.unsafe_rawColors.YELLOW_260.css,
+    gradientStart: a = s.Z.unsafe_rawColors.YELLOW_260.css,
     gradientEnd: l = s.Z.unsafe_rawColors.GREEN_360.css,
     className: d,
     children: _
@@ -46,20 +46,20 @@ function g(e) {
     }
   }, [n, E]), y = i.useMemo(() => ({
     width: "".concat(E, "px"),
-    background: n <= 0 ? "none" : "linear-gradient(to right, ".concat(o, ", ").concat(l, ")")
-  }), [l, o, n, E]);
+    background: n <= 0 ? "none" : "linear-gradient(to right, ".concat(a, ", ").concat(l, ")")
+  }), [l, a, n, E]);
   return (0, r.jsxs)("div", {
     className: f.wrapper,
     ref: p,
     children: [(0, r.jsxs)("div", {
-      className: a()(f.container, d),
+      className: o()(f.container, d),
       style: y,
       children: [(0, r.jsx)("div", {
         className: f.progress,
         style: b
       }), 0 !== E && (0, r.jsx)(u.Z, {
         width: E,
-        className: a()(f.notches, h[t])
+        className: o()(f.notches, h[t])
       })]
     }), _]
   })

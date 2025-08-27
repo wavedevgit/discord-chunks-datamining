@@ -15,10 +15,10 @@ var Chunk442837 = require("./442837.js"),
 
 function c(e, t, n) {
   if (null == n) return null;
-  if (null != e) return o.ZP.getNick(e, n.id);
+  if (null != e) return a.ZP.getNick(e, n.id);
   if (null != t) {
     let e = i.Z.getChannel(t);
-    if (null == e ? true : e.isPrivate()) return a.Z.getNickname(n.id)
+    if (null == e ? true : e.isPrivate()) return o.Z.getNickname(n.id)
   }
   return null
 }
@@ -29,7 +29,7 @@ function u(e, t, n) {
 }
 
 function d(e, t, n) {
-  return (0, r.e7)([o.ZP, i.Z, a.Z], () => u(e, t, n))
+  return (0, r.e7)([a.ZP, i.Z, o.Z], () => u(e, t, n))
 }
 let f = {
   getNickname: c,

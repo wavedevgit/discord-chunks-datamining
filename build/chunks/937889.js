@@ -105,8 +105,8 @@ function g(e) {
 function E(e, t, n) {
   var r;
   let {
-    toAST: o = false,
-    hideSimpleEmbedContent: a = true,
+    toAST: a = false,
+    hideSimpleEmbedContent: o = true,
     formatInline: s = false,
     postProcessor: l,
     shouldFilterKeywords: c,
@@ -116,7 +116,7 @@ function E(e, t, n) {
     messageId: t.id,
     channelId: t.channel_id,
     authorId: null == (r = t.author) ? true : r.id
-  }) : f, true, m(t, n), (e, n) => (Array.isArray(e) || (e = [e]), a && (e = N(e, (null != u ? u : t).embeds)), s || (e = I(e, n)), e = b(e), t.embeds.length > 0 && (d = S(e, n)), s && (e = R(e)), null != l && (e = l(e, n)), e));
+  }) : f, true, m(t, n), (e, n) => (Array.isArray(e) || (e = [e]), o && (e = N(e, (null != u ? u : t).embeds)), s || (e = I(e, n)), e = b(e), t.embeds.length > 0 && (d = S(e, n)), s && (e = R(e)), null != l && (e = l(e, n)), e));
   return {
     hasSpoilerEmbeds: d,
     content: _
@@ -134,7 +134,7 @@ function b(e) {
 
 function y(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
-  return E(t.formatInline ? o.Z.parseInlineReply : o.Z.parse, e, t)
+  return E(t.formatInline ? a.Z.parseInlineReply : a.Z.parse, e, t)
 }
 
 function O(e, t, n, r) {
@@ -159,7 +159,7 @@ function O(e, t, n, r) {
 }
 
 function v(e, t, n) {
-  return O(o.Z.parseAutoModerationSystemMessage, e, t, n)
+  return O(a.Z.parseAutoModerationSystemMessage, e, t, n)
 }
 
 function I(e, t) {
@@ -194,7 +194,7 @@ function N(e, t) {
   if (1 !== e.length || 1 !== t.length) return e;
   let n = e[0],
     r = t[0];
-  return ("link" === n.type || "attachmentLink" === n.type) && p.has(r.type) && (0, a.dY)(r) ? [] : e
+  return ("link" === n.type || "attachmentLink" === n.type) && p.has(r.type) && (0, o.dY)(r) ? [] : e
 }
 
 function R(e) {

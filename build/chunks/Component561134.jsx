@@ -2,35 +2,35 @@
 /** chunk id: 561134, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  N: () => a
+  N: () => o
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk706898 = require("./706898.jsx");
 
-function a(e) {
+function o(e) {
   let {
     groups: t,
     selectedStory: n,
-    onStorySelect: a
+    onStorySelect: o
   } = e;
-  return (0, r.jsx)(o.n, {
+  return (0, r.jsx)(a.n, {
     selectedItem: n,
     orientation: "vertical",
     onItemSelect: e => {
-      null != e && a(e)
+      null != e && o(e)
     },
     children: t.map((e, s) => (0, r.jsxs)(i.Fragment, {
-      children: [(0, r.jsx)(o.n.Header, {
+      children: [(0, r.jsx)(a.n.Header, {
         children: e.title
-      }), e.stories.map(e => (0, r.jsx)(o.n.Item, {
+      }), e.stories.map(e => (0, r.jsx)(a.n.Item, {
         selectedItem: n,
         id: e.id,
         onItemSelect: () => {
-          a(e.id)
+          o(e.id)
         },
         children: e.name
-      }, e.id)), s < t.length - 1 && (0, r.jsx)(o.n.Separator, {})]
+      }, e.id)), s < t.length - 1 && (0, r.jsx)(a.n.Separator, {})]
     }, e.title))
   })
 }

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 /** chunk id: 569984, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-let r, i, o, a, s, l, c, u, d, f, _, p, h, m, g, E, b, y, O, v, I;
+let r, i, a, o, s, l, c, u, d, f, _, p, h, m, g, E, b, y, O, v, I;
 require.d(exports, {
   Z: () => eM
 }), require("./388685.js");
@@ -59,20 +59,20 @@ let G = new Map,
   Z = 1e3;
 
 function F() {
-  r = false, i = false, o = false, a = new Map, s = new Map, l = new Map, c = 0, u = 0, d = new Set, f = new Set, _ = new Set, p = new Set, G = new Map, m = new Map, g = new Map, E = new Map, b = null, y = new Map, h = new Set, O = new Map, v = new Map, eD(), I = null
+  r = false, i = false, a = false, o = new Map, s = new Map, l = new Map, c = 0, u = 0, d = new Set, f = new Set, _ = new Set, p = new Set, G = new Map, m = new Map, g = new Map, E = new Map, b = null, y = new Map, h = new Set, O = new Map, v = new Map, eD(), I = null
 }
 
 function V(e, t) {
-  var n, r, i, o;
+  var n, r, i, a;
   if (null != t.userStatus)
-    for (let a of Object.values(null != (r = null == (n = t.userStatus) ? true : n.progress) ? r : {})) !(0, S.isNil)(a) && A.T.DESKTOP.has(a.eventName) && ((null == (i = a.heartbeat) ? true : i.lastBeatAt) != null ? h.add(e) : (null == (o = a.heartbeat) ? true : o.lastBeatAt) == null && h.delete(e))
+    for (let o of Object.values(null != (r = null == (n = t.userStatus) ? true : n.progress) ? r : {})) !(0, S.isNil)(o) && A.T.DESKTOP.has(o.eventName) && ((null == (i = o.heartbeat) ? true : i.lastBeatAt) != null ? h.add(e) : (null == (a = o.heartbeat) ? true : a.lastBeatAt) == null && h.delete(e))
 }
 
 function H(e, t) {
-  let n = (a = new Map(a)).get(e);
+  let n = (o = new Map(o)).get(e);
   if (null != n) {
     let r = M({}, n, t);
-    V(e, t), a.set(e, r)
+    V(e, t), o.set(e, r)
   }
 }
 
@@ -83,7 +83,7 @@ function Y(e, t) {
 
 function W(e, t) {
   Y(e, t);
-  let n = a.get(e),
+  let n = o.get(e),
     r = null == n ? true : n.userStatus;
   null != r && null == r.claimedAt && H(e, {
     userStatus: U(M({}, r), {
@@ -103,17 +103,17 @@ function K(e) {
 function z(e, t) {
   let n = new Map(g);
   n.set(e, t.items), g = n;
-  let r = a.get(e),
+  let r = o.get(e),
     i = null == r ? true : r.userStatus;
   if (null != i && null == i.claimedAt) {
-    var o;
+    var a;
     let n = K({
       entitlements: t
     });
     null != n && Y(e, n), H(e, {
       userStatus: U(M({}, i), {
         claimedAt: t.claimedAt,
-        claimedTier: null != (o = null == n ? true : n.tier) ? o : null
+        claimedTier: null != (a = null == n ? true : n.tier) ? a : null
       })
     })
   }
@@ -137,12 +137,12 @@ function J(e) {
     excludedQuests: n,
     questEnrollmentBlockedUntil: i
   } = e;
-  c = Date.now(), r = false, a = new Map;
-  let o = new Map;
-  for (let e of t) a.set(e.id, e), o.set(e.id, (0, P.zi)(e)), e.targetedContent.includes(w.jn.QUEST_BAR) && (0, x.T)({
+  c = Date.now(), r = false, o = new Map;
+  let a = new Map;
+  for (let e of t) o.set(e.id, e), a.set(e.id, (0, P.zi)(e)), e.targetedContent.includes(w.jn.QUEST_BAR) && (0, x.T)({
     location: L.dr.QUESTS_STORE
   }).log("Delivered ".concat(e.config.messages.questName, " (").concat(e.id, ")"));
-  for (let e of (v = o, s = new Map, n)) s.set(e.id, e);
+  for (let e of (v = a, s = new Map, n)) s.set(e.id, e);
   ew(), I = null != i ? new Date(i) : null
 }
 
@@ -155,18 +155,18 @@ function ee() {
 }
 
 function et() {
-  o = true
+  a = true
 }
 
 function en(e) {
   let {
     quests: t
   } = e;
-  for (let e of (o = false, l = new Map, t)) l.set(e.id, e)
+  for (let e of (a = false, l = new Map, t)) l.set(e.id, e)
 }
 
 function er() {
-  o = false
+  a = false
 }
 
 function ei(e) {
@@ -180,7 +180,7 @@ function ei(e) {
   }), null != n && q(n)
 }
 
-function eo(e) {
+function ea(e) {
   let {
     questId: t,
     streamKey: n
@@ -192,7 +192,7 @@ function eo(e) {
   })
 }
 
-function ea(e) {
+function eo(e) {
   let {
     streamKey: t
   } = e;
@@ -317,7 +317,7 @@ function ev(e) {
   H(t.quest_id, {
     userStatus: r
   });
-  let i = a.get(t.quest_id);
+  let i = o.get(t.quest_id);
   if (null != i) {
     let e = (0, P.zi)(i);
     v.get(t.quest_id) !== e && (v = new Map(v).set(t.quest_id, e))
@@ -332,7 +332,7 @@ function eI(e) {
   H(t.questId, {
     userStatus: t
   }), null == t.claimedAt && (m = new Map(m)).delete(t.questId), null == t.enrolledAt && ((y = new Map(y)).delete(t.questId), D.ZP.getState().resetQuest(t.questId));
-  let n = a.get(t.questId);
+  let n = o.get(t.questId);
   if (null != n) {
     let e = (0, P.zi)(n);
     v.get(t.questId) !== e && (v = new Map(v).set(t.questId, e))
@@ -360,8 +360,8 @@ function eA(e) {
     questId: n,
     taskEventName: r,
     progress: i
-  } = e, o = null != (t = G.get(n)) ? t : new Map;
-  o.set(r, i), G.set(n, o)
+  } = e, a = null != (t = G.get(n)) ? t : new Map;
+  a.set(r, i), G.set(n, a)
 }
 
 function eC(e) {
@@ -376,14 +376,14 @@ function eN(e) {
     quest: t,
     placement: n,
     adDecisionData: r,
-    adContext: o,
-    metadataRaw: a
+    adContext: a,
+    metadataRaw: o
   } = e;
   u = Date.now(), i = false, null == t ? O.delete(n) : O.set(n, {
     quest: t,
     adDecisionData: r,
-    adContext: o,
-    metadataRaw: a
+    adContext: a,
+    metadataRaw: o
   })
 }
 
@@ -397,7 +397,7 @@ function eR(e) {
 function eP() {
   let e = false,
     t = new Map(v);
-  a.forEach((n, r) => {
+  o.forEach((n, r) => {
     true !== t.get(r) && ((0, P.zi)(n) ? (t.set(r, true), e = true) : t.has(r) || t.set(r, false))
   }), module && (v = exports, ej.emitChange())
 }
@@ -421,7 +421,7 @@ function ex(e) {
 F();
 class eL extends(T = Chunk442837.ZP.Store) {
   get quests() {
-    return a
+    return o
   }
   get excludedQuests() {
     return s
@@ -433,7 +433,7 @@ class eL extends(T = Chunk442837.ZP.Store) {
     return r
   }
   get isFetchingClaimedQuests() {
-    return o
+    return a
   }
   get lastFetchedCurrentQuests() {
     return c
@@ -445,7 +445,7 @@ class eL extends(T = Chunk442837.ZP.Store) {
     return i
   }
   get questDeliveryOverride() {
-    return a.get(null != b ? b : "")
+    return o.get(null != b ? b : "")
   }
   get questToDeliverForPlacement() {
     return O
@@ -475,7 +475,7 @@ class eL extends(T = Chunk442837.ZP.Store) {
     return E.get(e)
   }
   getQuest(e) {
-    return a.get(e)
+    return o.get(e)
   }
   isProgressingOnDesktop(e) {
     return h.has(e)
@@ -509,7 +509,7 @@ let ej = new eL(Chunk570140.Z, {
     QUESTS_FETCH_QUEST_TO_DELIVER_SUCCESS: eN,
     QUESTS_FETCH_QUEST_TO_DELIVER_FAILURE: eR,
     QUESTS_SEND_HEARTBEAT_SUCCESS: ei,
-    QUESTS_SEND_HEARTBEAT_FAILURE: eo,
+    QUESTS_SEND_HEARTBEAT_FAILURE: ea,
     QUESTS_ENROLL_BEGIN: el,
     QUESTS_ENROLL_SUCCESS: ec,
     QUESTS_ENROLL_FAILURE: eu,
@@ -523,7 +523,7 @@ let ej = new eL(Chunk570140.Z, {
     QUESTS_DISMISS_CONTENT_SUCCESS: eb,
     QUESTS_DISMISS_CONTENT_FAILURE: ey,
     QUESTS_USER_STATUS_UPDATE: ev,
-    STREAM_CLOSE: ea,
+    STREAM_CLOSE: eo,
     QUESTS_DISMISS_PROGRESS_TRACKING_FAILURE_NOTICE: eO,
     QUESTS_PREVIEW_UPDATE_SUCCESS: eI,
     QUESTS_DELIVERY_OVERRIDE: eT,

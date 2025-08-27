@@ -2,8 +2,8 @@
 /** chunk id: 697492, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Gd: () => o,
-  ME: () => a,
+  Gd: () => a,
+  ME: () => o,
   Ym: () => s,
   _g: () => i,
   hu: () => l
@@ -19,7 +19,7 @@ function i(e, t, n) {
   })
 }
 
-function o(e, t) {
+function a(e, t) {
   r.Z.dispatch({
     type: "HIGH_FIVE_REMOVE",
     channelId: t,
@@ -27,7 +27,7 @@ function o(e, t) {
   })
 }
 
-function a(e) {
+function o(e) {
   r.Z.dispatch({
     type: "HIGH_FIVE_SET_ENABLED",
     enabled: e

@@ -11,8 +11,8 @@ var Chunk442837 = require("./442837.js"),
 
 function s(e) {
   var t;
-  let n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : a.Z,
-    r = arguments.length > 2 && true !== arguments[2] ? arguments[2] : o.Z,
+  let n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : o.Z,
+    r = arguments.length > 2 && true !== arguments[2] ? arguments[2] : a.Z,
     s = arguments.length > 3 && true !== arguments[3] ? arguments[3] : i.default,
     l = null != e ? n.getVoiceState(e.getGuildId(), s.getId()) : null;
   return {
@@ -22,5 +22,5 @@ function s(e) {
 }
 
 function l(e) {
-  return (0, r.cj)([a.Z, o.Z, i.default], () => s(e, a.Z, o.Z, i.default), [e])
+  return (0, r.cj)([o.Z, a.Z, i.default], () => s(e, o.Z, a.Z, i.default), [e])
 }

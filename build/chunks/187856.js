@@ -4,6 +4,6 @@ var Chunk196322 = require("./196322.js"),
   Chunk828091 = require("./828091.js");
 module.exports = function(e, t) {
   t = r(t, e);
-  for (var n = 0, o = t.length; null != e && n < o;) e = e[i(t[n++])];
-  return n && n == o ? e : true
+  for (var n = 0, a = t.length; null != e && n < a;) e = e[i(t[n++])];
+  return n && n == a ? e : true
 }

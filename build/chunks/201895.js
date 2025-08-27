@@ -32,7 +32,7 @@ function u(e) {
       isSubscriptionGated: p,
       needSubscriptionToAccess: h
     } = e,
-    m = (0, a.F6)(n, o.default, i.Z);
+    m = (0, o.F6)(n, a.default, i.Z);
   switch (n.type) {
     case s.d4z.DM:
       t = u ? l.t.F2MZsr : l.t.fYqXVV;

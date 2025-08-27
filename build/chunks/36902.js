@@ -46,6 +46,6 @@ class c {
           }
         }
       })
-    }, this.pttQueueLatencyHistogram = new a.b
+    }, this.pttQueueLatencyHistogram = new o.b
   }
 }

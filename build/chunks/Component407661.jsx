@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk367907 = require("./367907.js"),
@@ -44,15 +44,15 @@ function S(e) {
   let {
     channel: t,
     message: n,
-    replyChainLength: o
+    replyChainLength: a
   } = e;
 
-  function a() {
+  function o() {
     (0, _.A6)(t.id), (0, m.R6)(t, n, "Reply Chain Nudge")
   }
-  let s = i.useRef(o);
+  let s = i.useRef(a);
   return i.useEffect(() => {
-    s.current = o
+    s.current = a
   }), i.useEffect(() => {
     (0, c.yw)(b.rMx.THREAD_NUDGE_SHOWN, {
       type: "Reply Chain (".concat(v + 1, ")"),
@@ -61,7 +61,7 @@ function S(e) {
       guild_id: t.guild_id
     })
   }, [t]), (0, r.jsxs)(l.P3F, {
-    onClick: a,
+    onClick: o,
     className: O.threadSuggestionBar,
     focusProps: {
       offset: {
@@ -74,7 +74,7 @@ function S(e) {
       className: O.text,
       variant: "text-sm/normal",
       children: y.intl.format(y.t.B3V0FB, {
-        count: Math.min(I, o + 1)
+        count: Math.min(I, a + 1)
       })
     }), (0, r.jsx)(l.Text, {
       color: "text-link",
@@ -91,7 +91,7 @@ function A(e) {
     chatInputType: n
   } = e, {
     channel: i,
-    message: o,
+    message: a,
     shouldMention: s,
     showMentionToggle: c
   } = t, {
@@ -102,9 +102,9 @@ function A(e) {
     colorRoleName: C,
     authorId: N,
     displayNameStyles: R
-  } = (0, d.ZP)(o), P = (0, f.X7)(m, N, A), w = (0, u.j)({
+  } = (0, d.ZP)(a), P = (0, f.X7)(m, N, A), w = (0, u.j)({
     displayNameStyles: R
-  }), D = T(i, o), x = (0, h.NE)(i, o), L = n.showThreadPromptOnReply && D >= v && x, j = () => (0, p.uL)(b.Z5c.CHANNEL(i.getGuildId(), i.id, o.id));
+  }), D = T(i, a), x = (0, h.NE)(i, a), L = n.showThreadPromptOnReply && D >= v && x, j = () => (0, p.uL)(b.Z5c.CHANNEL(i.getGuildId(), i.id, a.id));
 
   function M(e) {
     e.stopPropagation(), (0, _.qx)(i.id, !s)
@@ -131,7 +131,7 @@ function A(e) {
           },
           children: (0, r.jsx)(l.Text, {
             color: "header-secondary",
-            className: a()(O.text, O.replyLabel),
+            className: o()(O.text, O.replyLabel),
             variant: "text-sm/normal",
             children: y.intl.format(y.t["8E4Gxc"], {
               userHook: (e, t) => (0, r.jsx)(l.PUh, {
@@ -154,7 +154,7 @@ function A(e) {
                   onMouseEnter: t,
                   onMouseLeave: n,
                   onFocus: i,
-                  onBlur: o
+                  onBlur: a
                 } = e;
                 return (0, r.jsx)(l.P3F, {
                   role: "switch",
@@ -163,7 +163,7 @@ function A(e) {
                   onMouseEnter: t,
                   onMouseLeave: n,
                   onFocus: i,
-                  onBlur: o,
+                  onBlur: a,
                   children: (0, r.jsxs)(l.Text, {
                     variant: "text-sm/bold",
                     color: s ? "text-link" : "text-muted",
@@ -187,7 +187,7 @@ function A(e) {
         })]
       }), L && (0, r.jsx)(S, {
         channel: i,
-        message: o,
+        message: a,
         replyChainLength: D
       })]
     })

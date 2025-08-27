@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => G
 });
 var r, Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  a = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk594174 = require("./594174.js"),
@@ -53,7 +53,7 @@ function C(e) {
 }
 
 function N(e) {
-  var t, n, r, i, o, a;
+  var t, n, r, i, a, o;
   let s = l.default.getCurrentUser();
   if (null == s) return R();
   p = null != (t = e.section) ? t : p, S = null != (n = e.section) ? n : p, null != e.subsection && null != p && (h[p] = e.subsection), null != e.scrollPosition && null != p && (m[p] = e.scrollPosition), O = !!e.openWithoutBackstack, f = c.QZA.OPEN, g = {}, b = d({}, E = {
@@ -67,7 +67,7 @@ function N(e) {
       newPassword: null,
       claimed: s.isClaimed()
     }
-  }), v = null != (r = e.onClose) ? r : null, I = null != (i = e.analyticsLocation) ? i : null, T = null != (o = e.analyticsLocations) ? o : [], A = null != (a = e.impressionSource) ? a : null
+  }), v = null != (r = e.onClose) ? r : null, I = null != (i = e.analyticsLocation) ? i : null, T = null != (a = e.analyticsLocations) ? a : [], A = null != (o = e.impressionSource) ? o : null
 }
 
 function R() {
@@ -136,7 +136,7 @@ class U extends(r = Chunk442837.ZP.Store) {
     this.waitFor(Chunk594174.default)
   }
   hasChanges() {
-    return null != b && null != E && !!this.isOpen() && !o().isEqual(b, E)
+    return null != b && null != E && !!this.isOpen() && !a().isEqual(b, E)
   }
   isOpen() {
     return y

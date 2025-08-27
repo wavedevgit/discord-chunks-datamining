@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk911969 = require("./911969.js"),
@@ -69,7 +69,7 @@ let C = {
     color: "header-secondary"
   },
   N = {
-    className: a()("mention", Chunk466002.mention)
+    className: o()("mention", Chunk466002.mention)
   };
 
 function R(e) {
@@ -80,7 +80,7 @@ function R(e) {
 }
 
 function P(e) {
-  var t, n, o, a, s, u, d;
+  var t, n, a, o, s, u, d;
   let f, {
       option: g,
       channel: v,
@@ -97,8 +97,8 @@ function P(e) {
           children: null != (n = null == D ? true : D.name_localized) ? n : g.name
         }))]
       }, L)],
-      s = Object.fromEntries(null == (t = null != (o = null == D ? true : D.options) ? o : []) ? true : t.map(e => [e.name, e]));
-    for (let t of null != (a = g.options) ? a : []) e = e.concat(P({
+      s = Object.fromEntries(null == (t = null != (a = null == D ? true : D.options) ? a : []) ? true : t.map(e => [e.name, e]));
+    for (let t of null != (o = g.options) ? o : []) e = e.concat(P({
       option: t,
       channel: v,
       guild: I,
@@ -183,7 +183,7 @@ function P(e) {
 }
 
 function w(e) {
-  var t, n, o, a, _, p;
+  var t, n, a, o, _, p;
   let h, {
       channel: m,
       messageId: E,
@@ -205,7 +205,7 @@ function w(e) {
   });
   else {
     let e = [],
-      t = Object.fromEntries((null != (a = null == (n = b.application_command) ? true : n.options) ? a : []).map(e => [e.name, e]));
+      t = Object.fromEntries((null != (o = null == (n = b.application_command) ? true : n.options) ? o : []).map(e => [e.name, e]));
     for (let n of null != (_ = b.options) ? _ : []) e = e.concat(P({
       option: n,
       channel: m,
@@ -217,7 +217,7 @@ function w(e) {
     }));
     h = (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)(l.Text, A(T({}, C), {
-        children: ["/", null != (p = null == (o = b.application_command) ? true : o.name_localized) ? p : b.name]
+        children: ["/", null != (p = null == (a = b.application_command) ? true : a.name_localized) ? p : b.name]
       })), e]
     })
   }

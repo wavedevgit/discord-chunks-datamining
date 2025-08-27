@@ -48,11 +48,11 @@ let s = 5,
       t = d(),
       n = f();
     return u().map(r => {
-      let o = t[r],
-        a = n[r];
-      return i()(null != o && null != a, "Invalid HypeSquad quiz question index"), {
-        prompt: o,
-        options: a.map((t, n) => {
+      let a = t[r],
+        o = n[r];
+      return i()(null != a && null != o, "Invalid HypeSquad quiz question index"), {
+        prompt: a,
+        options: o.map((t, n) => {
           let r = e[n];
           return i()(null !== r, "Invalid HypeSquad quiz question option index"), {
             copy: t,
@@ -63,7 +63,7 @@ let s = 5,
     })
   },
   h = e => ({
-    [o.gkr.HOUSE_1]: a.intl.string(a.t.ORKdHR),
-    [o.gkr.HOUSE_2]: a.intl.string(a.t.aKf3dn),
-    [o.gkr.HOUSE_3]: a.intl.string(a.t["21LOa2"])
+    [a.gkr.HOUSE_1]: o.intl.string(o.t.ORKdHR),
+    [a.gkr.HOUSE_2]: o.intl.string(o.t.aKf3dn),
+    [a.gkr.HOUSE_3]: o.intl.string(o.t["21LOa2"])
   })[e]

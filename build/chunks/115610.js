@@ -33,7 +33,7 @@ async function y(e, t) {
   if (null == v) return;
   await (0, s.$p)();
   let I = Array.from(l.Z.getAllStickersIterator()),
-    T = I.filter(e => e.type === c.n0.GUILD).filter(e => b(e.guild_id) && (0, a.kl)(e, v, t)).sort((e, t) => -_.default.compare(e.id, t.id));
+    T = I.filter(e => e.type === c.n0.GUILD).filter(e => b(e.guild_id) && (0, o.kl)(e, v, t)).sort((e, t) => -_.default.compare(e.id, t.id));
   if (T.length > g) {
     let i = [T[Math.floor(Math.pow(Math.random(), 2) * T.length)].id];
     r.Z.sendStickers(t.id, i, "", {
@@ -54,7 +54,7 @@ async function y(e, t) {
   })).sort((e, t) => -_.default.compare(e.id, t.id));
   if (S.length > E) {
     let n = S[Math.floor(Math.pow(Math.random(), 2) * S.length)];
-    r.Z.sendMessage(t.id, o.ZP.parse(t, n.allNamesString), false, {
+    r.Z.sendMessage(t.id, a.ZP.parse(t, n.allNamesString), false, {
       location: m.dy.CHANNEL_PROMPT,
       messageReference: {
         guild_id: null != (p = t.getGuildId()) ? p : true,

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk238651 = require("./238651.js"),
   Chunk772848 = require("./772848.js"),
   Chunk468194 = require("./468194.js"),
@@ -247,9 +247,9 @@ function ee(e) {
   let {
     onAnimationComplete: t,
     onClick: n,
-    position: o,
+    position: a,
     size: c
-  } = e, u = i.useRef(null), [f, p] = i.useState(null), [h] = i.useState(null != o ? o : H()), {
+  } = e, u = i.useRef(null), [f, p] = i.useState(null), [h] = i.useState(null != a ? a : H()), {
     createMultipleConfettiAt: m,
     confettiCanvas: g
   } = i.useContext(_.h), [E, b] = i.useState(null), y = (0, s.uR)(g, E), O = Q(f, h), I = P.includes(h), T = I && "exit" === f, S = i.useCallback(e => {
@@ -327,7 +327,7 @@ function ee(e) {
       spriteHeight: Y
     }), (0, r.jsx)(d.P3F, {
       onClick: n,
-      className: a()(v.easterEggAnimationClickTarget, {
+      className: o()(v.easterEggAnimationClickTarget, {
         [v.easterEggAnimationClickTargetTopLeft]: "TOP_LEFT" === h,
         [v.easterEggAnimationClickTargetTopRight]: "TOP_RIGHT" === h,
         [v.easterEggAnimationClickTargetBottomLeft]: "BOTTOM_LEFT" === h,
@@ -335,7 +335,7 @@ function ee(e) {
       }),
       children: (0, r.jsx)(d.kci, {
         animationRef: C,
-        className: a()(v.easterEggAnimation, {
+        className: o()(v.easterEggAnimation, {
           [v.easterEggAnimationHideLeaf]: T
         }),
         nextScene: O,
@@ -352,8 +352,8 @@ function ee(e) {
 function et(e) {
   let t, {
       message: n,
-      compact: o,
-      guild: a,
+      compact: a,
+      guild: o,
       usernameHook: s,
       onClickMessage: l
     } = e,
@@ -371,7 +371,7 @@ function et(e) {
     P = (0, E.ZP)(n),
     w = P.nick,
     D = s(P);
-  t = null == c || null == a ? u > 1 ? O.intl.format(O.t.yfC9dn, {
+  t = null == c || null == o ? u > 1 ? O.intl.format(O.t.yfC9dn, {
     username: w,
     usernameHook: D,
     numSubscriptions: u
@@ -382,12 +382,12 @@ function et(e) {
     username: w,
     usernameHook: D,
     numSubscriptions: u,
-    guildName: a.name,
+    guildName: o.name,
     newTierName: (0, g.nW)(c)
   }) : O.intl.format(O.t.cUfTTE, {
     username: w,
     usernameHook: D,
-    guildName: a.name,
+    guildName: o.name,
     newTierName: (0, g.nW)(c)
   });
   let x = i.useCallback(() => {
@@ -424,7 +424,7 @@ function et(e) {
   return (0, r.jsxs)(b.Z, {
     iconNode: k,
     timestamp: n.timestamp,
-    compact: o,
+    compact: a,
     children: [(0, r.jsx)("div", {
       onClick: l,
       className: v.message,

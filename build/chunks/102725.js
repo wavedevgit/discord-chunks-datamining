@@ -20,7 +20,7 @@ function l(e) {
     forceOpen: d = false,
     overflowOnly: f = false
   } = e, _ = r.useRef(null), p = null != t ? t : _, [h, m] = r.useState(false), [g, E] = r.useState(false), b = r.useRef(null);
-  r.useEffect(() => (b.current = new o.V7, () => {
+  r.useEffect(() => (b.current = new a.V7, () => {
     let e = b.current;
     null != e && e.stop()
   }), []);
@@ -51,7 +51,7 @@ function l(e) {
       null == p.current && (p.current = e.currentTarget), I()
     }, [I, p]),
     A = r.useCallback(e => {
-      null == p.current && (p.current = e.currentTarget), a.Z.keyboardModeEnabled && I()
+      null == p.current && (p.current = e.currentTarget), o.Z.keyboardModeEnabled && I()
     }, [I, p]);
   return {
     isVisible: O,

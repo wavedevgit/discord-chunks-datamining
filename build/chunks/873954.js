@@ -25,7 +25,7 @@ function h(e) {
     collection: t,
     document: n
   } = b(e.createCollection);
-  return c.createElement(c.Fragment, null, c.createElement(a._G, null, c.createElement(p.Provider, {
+  return c.createElement(c.Fragment, null, c.createElement(o._G, null, c.createElement(p.Provider, {
     value: n
   }, e.content)), c.createElement(m, {
     render: e.children,
@@ -44,8 +44,8 @@ function g(e, t, n) {
   let r = (0, u.Av)(),
     i = (0, c.useRef)(r);
   i.current = r;
-  let o = (0, c.useCallback)(() => i.current ? n() : t(), [t, n]);
-  return (0, f.useSyncExternalStore)(e, o)
+  let a = (0, c.useCallback)(() => i.current ? n() : t(), [t, n]);
+  return (0, f.useSyncExternalStore)(e, a)
 }
 let E = "function" == typeof Chunk647438.useSyncExternalStore ? Chunk647438.useSyncExternalStore : g;
 
@@ -63,19 +63,19 @@ function b(e) {
 }
 let y = (0, Chunk647438.createContext)(null);
 
-function O(e, t, n, r, i, o) {
-  let a = (0, c.useCallback)(e => {
-      null == e || e.setProps(t, n, r, o)
-    }, [t, n, r, o]),
+function O(e, t, n, r, i, a) {
+  let o = (0, c.useCallback)(e => {
+      null == e || e.setProps(t, n, r, a)
+    }, [t, n, r, a]),
     s = (0, c.useContext)(y);
   if (s) {
-    let a = s.ownerDocument.nodesByProps.get(t);
-    return a || ((a = s.ownerDocument.createElement(e)).setProps(t, n, r, o), s.appendChild(a), s.ownerDocument.updateCollection(), s.ownerDocument.nodesByProps.set(t, a)), i ? c.createElement(y.Provider, {
-      value: a
+    let o = s.ownerDocument.nodesByProps.get(t);
+    return o || ((o = s.ownerDocument.createElement(e)).setProps(t, n, r, a), s.appendChild(o), s.ownerDocument.updateCollection(), s.ownerDocument.nodesByProps.set(t, o)), i ? c.createElement(y.Provider, {
+      value: o
     }, i) : null
   }
   return c.createElement(e, {
-    ref: a
+    ref: o
   }, i)
 }
 
@@ -84,13 +84,13 @@ function v(e, t) {
       node: e
     }) => t(e.props, e.props.ref, e),
     r = (0, c.forwardRef)((r, i) => {
-      let o = (0, c.useContext)(l.RG);
+      let a = (0, c.useContext)(l.RG);
       if (!(0, c.useContext)(_)) {
         if (t.length >= 3) throw Error(t.name + " cannot be rendered outside a collection.");
         return t(r, i)
       }
       return O(e, r, i, "children" in r ? r.children : null, null, e => c.createElement(l.RG.Provider, {
-        value: o
+        value: a
       }, c.createElement(n, {
         node: e
       })))
@@ -99,7 +99,7 @@ function v(e, t) {
 }
 
 function I(e) {
-  return (0, o.H)({
+  return (0, a.H)({
     ...e,
     addIdAndValue: true
   })

@@ -43,7 +43,7 @@ function u() {
     url: Chunk981631.ANM.MFA_WEBAUTHN_CREDENTIALS,
     rejectWithError: true
   }).then(e => {
-    o.Z.dispatch({
+    a.Z.dispatch({
       type: "MFA_WEBAUTHN_CREDENTIALS_LOADED",
       credentials: e.body
     })
@@ -55,7 +55,7 @@ function d(e) {
     url: s.ANM.MFA_WEBAUTHN_CREDENTIAL(e.id),
     rejectWithError: true
   }).then(() => {
-    o.Z.dispatch({
+    a.Z.dispatch({
       type: "AUTHENTICATOR_DELETE",
       credential: e
     })
@@ -69,7 +69,7 @@ async function f(e, t) {
     },
     rejectWithError: false
   });
-  o.Z.dispatch({
+  a.Z.dispatch({
     type: "AUTHENTICATOR_UPDATE",
     credential: n.body
   })
@@ -91,7 +91,7 @@ async function _() {
   }
 }
 async function p(e, t, n) {
-  let i = await a.Z.post({
+  let i = await o.Z.post({
     url: s.ANM.MFA_WEBAUTHN_CREDENTIALS,
     body: {
       name: e,
@@ -103,10 +103,10 @@ async function p(e, t, n) {
     },
     rejectWithError: false
   });
-  o.Z.dispatch({
+  a.Z.dispatch({
     type: "AUTHENTICATOR_CREATE",
     credential: i.body
-  }), o.Z.dispatch({
+  }), a.Z.dispatch({
     type: "MFA_ENABLE_SUCCESS",
     codes: i.body.backup_codes
   })

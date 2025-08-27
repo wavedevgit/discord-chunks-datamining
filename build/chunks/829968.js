@@ -2,25 +2,25 @@
 /** chunk id: 829968, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => o
+  Z: () => a
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk439849 = require("./439849.js");
 
-function o(e, t) {
-  let [n, o] = r.useState();
+function a(e, t) {
+  let [n, a] = r.useState();
   return r.useEffect(() => {
-    if (null == e || null != t) return void o(true);
+    if (null == e || null != t) return void a(true);
     let n = false;
     return (0, i.Z)().then(t => {
       null == t || n || t.identifyGame(e, (e, t) => {
         if (!n) {
-          if (0 !== e || null == t.icon || "" === t.icon || null == t.name || "" === t.name) return void o(true);
-          o("data:image/png;base64,".concat(t.icon))
+          if (0 !== e || null == t.icon || "" === t.icon || null == t.name || "" === t.name) return void a(true);
+          a("data:image/png;base64,".concat(t.icon))
         }
       })
     }).catch(() => {
-      n || o(true)
+      n || a(true)
     }), () => {
       n = true
     }

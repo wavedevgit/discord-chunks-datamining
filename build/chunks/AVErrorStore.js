@@ -52,8 +52,8 @@ function f(e) {
     r = new Set(l.keys());
   if (!(0, i.O)(n, r))
     for (let [e, n] of(l = t, c = new Map, l.entries())) {
-      var o;
-      let t = null != (o = c.get(n.type)) ? o : [];
+      var a;
+      let t = null != (a = c.get(n.type)) ? a : [];
       t.push(e), c.set(n.type, t)
     }
 }

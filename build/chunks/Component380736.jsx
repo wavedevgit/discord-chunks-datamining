@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk202841 = require("./202841.js"),
   Chunk442837 = require("./442837.js"),
   Chunk755721 = require("./755721.js"),
@@ -66,8 +66,8 @@ function T(e, t) {
   if (null == e) return {};
   var n, r, i = S(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -75,8 +75,8 @@ function T(e, t) {
 function S(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -87,7 +87,7 @@ let C = Chunk647438.memo(function(e) {
   let {
     maxBodyLines: t,
     expand: n = false,
-    onNotificationShow: o,
+    onNotificationShow: a,
     onDismissClick: d,
     onConfirmClick: p,
     onCancelClick: m,
@@ -106,8 +106,8 @@ let C = Chunk647438.memo(function(e) {
     wrapperClassName: x
   } = e, [L, j] = i.useState(false), M = n || L || P === g._1z.FOCUSED, k = (0, l.e7)([h.ZP], () => h.ZP.isInputLocked((0, f.getPID)()));
   i.useEffect(() => {
-    null == o || o()
-  }, [o]);
+    null == a || a()
+  }, [a]);
   let U = i.useCallback(e => {
       e.stopPropagation(), null == d || d(e)
     }, [d]),
@@ -206,7 +206,7 @@ let C = Chunk647438.memo(function(e) {
   }
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: a()(b.overflowWrapper, x),
+      className: o()(b.overflowWrapper, x),
       onScroll: A,
       children: (0, r.jsx)(u.P3F, {
         innerRef: w,
@@ -214,7 +214,7 @@ let C = Chunk647438.memo(function(e) {
         onMouseOver: Z,
         onMouseLeave: F,
         onClick: y,
-        className: a()(b.container, {
+        className: o()(b.container, {
           [b.clickable]: null != y
         }, D),
         children: K()
@@ -229,7 +229,7 @@ function N(e) {
       opacity: t,
       scale: n,
       transform: i,
-      height: o
+      height: a
     },
     index: l,
     children: c,
@@ -237,14 +237,14 @@ function N(e) {
     animationWrapperClassName: d
   } = e;
   return (0, r.jsx)(s.animated.div, {
-    className: a()(b.animationWrapper, d),
+    className: o()(b.animationWrapper, d),
     style: {
       pointerEvents: u && 0 !== l ? "none" : "auto",
       zIndex: Math.max(5 - l, 0),
       opacity: t,
       transform: i.to(e => "translate3d(0, ".concat(e, "px, 0)")),
       scale: n.to([0, 1], [.7, 1]),
-      height: o,
+      height: a,
       maxWidth: 0 === l ? true : "100%"
     },
     children: c
@@ -266,8 +266,8 @@ function P(e) {
   let {
     notification: t,
     index: n,
-    locked: o,
-    pinned: a,
+    locked: a,
+    pinned: o,
     transitionState: s,
     cleanUp: l
   } = e, {
@@ -302,7 +302,7 @@ function P(e) {
       disableClickableRegions: k = false
     },
     status: U
-  } = t, G = T(t.props, ["onNotificationShow", "onDismissClick", "renderFooter", "onNotificationClick", "onConfirmClick", "onCancelClick", "disableClickableRegions"]), B = !a && o, Z = 0 === n && !k && !B, {
+  } = t, G = T(t.props, ["onNotificationShow", "onDismissClick", "renderFooter", "onNotificationClick", "onConfirmClick", "onCancelClick", "disableClickableRegions"]), B = !o && a, Z = 0 === n && !k && !B, {
     ref: F,
     springs: V
   } = (0, m.X4)(t.id, s, l);
@@ -310,7 +310,7 @@ function P(e) {
     transitionState: s,
     springs: V,
     index: n,
-    locked: o,
+    locked: a,
     animationWrapperClassName: E,
     children: (0, r.jsx)(R, {
       observe: Z,
@@ -326,7 +326,7 @@ function P(e) {
         renderFooter: P,
         expand: false,
         index: n,
-        locked: o,
+        locked: a,
         status: U,
         contentOpacity: V.contentOpacity
       }))

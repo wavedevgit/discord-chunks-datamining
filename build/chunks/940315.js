@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk709706 = require("./709706.js");
-let a = 3e3,
+let o = 3e3,
   s = 4e3;
 
 function l() {
@@ -18,7 +18,7 @@ function l() {
   return Chunk647438.useEffect(() => {
     let t = null != module;
     require(exports);
-    let r = exports ? setTimeout(() => require(false), a) : null;
+    let r = exports ? setTimeout(() => require(false), o) : null;
     return () => {
       clearTimeout(Chunk647438), require(false)
     }

@@ -24,7 +24,7 @@ function _() {
       className: Chunk197571.marginBottom20,
       note: Chunk388032.intl.string(Chunk388032.t.YCCMkJ),
       onChange: t => {
-        (0, c.Z)("switch_channel_warning_enabled", t, !e), a.ZP.updatedUnsyncedSettings({
+        (0, c.Z)("switch_channel_warning_enabled", t, !e), o.ZP.updatedUnsyncedSettings({
           disableVoiceChannelChangeAlert: !t
         })
       },

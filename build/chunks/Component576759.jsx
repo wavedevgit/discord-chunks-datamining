@@ -36,10 +36,10 @@ function g(e) {
       className: m.cloudPlaySection,
       children: [(0, r.jsxs)("div", {
         className: m.cloudPlaySectionTextContainer,
-        children: [T === i.z.CLOUD_PLAY_NEW_BADGE && (0, r.jsx)(a.IGR, {
+        children: [T === i.z.CLOUD_PLAY_NEW_BADGE && (0, r.jsx)(o.IGR, {
           text: h.intl.string(h.t.y2b7CA),
           color: c.Z.BG_BRAND
-        }), (0, r.jsx)(a.Text, {
+        }), (0, r.jsx)(o.Text, {
           variant: "text-xs/medium",
           children: h.intl.string(h.t.IQjdmZ)
         })]
@@ -47,7 +47,7 @@ function g(e) {
         application: E,
         onAction: n,
         onClose: g,
-        size: o.Ph.SMALL
+        size: a.Ph.SMALL
       })]
     })]
   }) : null

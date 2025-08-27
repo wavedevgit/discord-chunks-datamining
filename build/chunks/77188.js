@@ -68,10 +68,10 @@ function N(e, t) {
 }
 
 function R(e) {
-  let t = r.useContext(a.ZP),
+  let t = r.useContext(o.ZP),
     n = c.R$.useSetting(),
     [i] = r.useState(() => {
-      let r = (0, o.Jh)();
+      let r = (0, a.Jh)();
       return r.children = (0, u.JM)(""), r.selection = {
         anchor: T.nO,
         focus: T.nO
@@ -94,8 +94,8 @@ function R(e) {
 function P(e) {
   var t, n, r;
   let {
-    editor: o,
-    chatInputType: a,
+    editor: a,
+    chatInputType: o,
     channel: s,
     canUseCommands: l,
     canOnlyUseTextCommands: c,
@@ -105,12 +105,12 @@ function P(e) {
     onChangeStart: A,
     onChangeEnd: C,
     updateState: N
-  } = e, R = o, {
+  } = e, R = a, {
     onChange: P
   } = R;
-  R.chatInputType = a, R.windowContext = u, R.previewMarkdown = T, R.composition = null, R.events = new i.EventEmitter, R.isMac = "MacIntel" === navigator.platform, R.onChange = () => {
+  R.chatInputType = o, R.windowContext = u, R.previewMarkdown = T, R.composition = null, R.events = new i.EventEmitter, R.isMac = "MacIntel" === navigator.platform, R.onChange = () => {
     R.events.emit("onChange"), P()
-  }, R = (0, y.B)(R, true === S), R = (0, b.Z)(R), R = (0, E.Z)(R), (null == (t = a.commands) ? true : t.enabled) && (R = (0, d.Z)(R, s, true === l, true === c)), R = (0, g.ZP)(R, s.guild_id, s.id), (null == (n = a.markdown) ? true : n.disableBlockQuotes) || (R = (0, f.Z)(R)), (null == (r = a.markdown) ? true : r.disableCodeBlocks) || (R = (0, _.ZP)(R)), S && (R = (0, v.Z)(R)), R = (0, m.Z)(R), R = (0, p.Z)(R), R = (0, O.Z)(R), R = (0, I.Z)(R, A, C), R = (0, h.Z)(R, e => {
+  }, R = (0, y.B)(R, true === S), R = (0, b.Z)(R), R = (0, E.Z)(R), (null == (t = o.commands) ? true : t.enabled) && (R = (0, d.Z)(R, s, true === l, true === c)), R = (0, g.ZP)(R, s.guild_id, s.id), (null == (n = o.markdown) ? true : n.disableBlockQuotes) || (R = (0, f.Z)(R)), (null == (r = o.markdown) ? true : r.disableCodeBlocks) || (R = (0, _.ZP)(R)), S && (R = (0, v.Z)(R)), R = (0, m.Z)(R), R = (0, p.Z)(R), R = (0, O.Z)(R), R = (0, I.Z)(R, A, C), R = (0, h.Z)(R, e => {
     let {
       newValue: t,
       newSelection: n

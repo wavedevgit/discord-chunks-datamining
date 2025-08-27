@@ -32,7 +32,7 @@ function b(e, t) {
   let i = f.Z.getChannel(t);
   if (null != i && (0, d.bw)(i.type)) {
     if (n) {
-      a.Z.updateChatOpen(i.id, true), (0, u.uL)(E.Z5c.CHANNEL(e, t));
+      o.Z.updateChatOpen(i.id, true), (0, u.uL)(E.Z5c.CHANNEL(e, t));
       return
     }
     s.default.selectVoiceChannel(i.id);
@@ -44,11 +44,11 @@ function y(e) {
   let {
     channel: t,
     onClick: n,
-    beforeTransition: a,
+    beforeTransition: o,
     className: s,
     openChatWithoutConnecting: u
   } = e, d = (0, i.e7)([h.default, p.Z], () => null == t ? "" : (0, l.F6)(t, h.default, p.Z), [t]);
-  return (0, r.jsx)(o.ua7, {
+  return (0, r.jsx)(a.ua7, {
     text: d,
     position: "top",
     children: e => {
@@ -60,7 +60,7 @@ function y(e) {
         role: "link",
         className: s,
         onClick: e => {
-          e.stopPropagation(), null != n ? n() : (null != a && a(), (0, o.pTH)(), b(null == t ? true : t.guild_id, null == t ? true : t.id, u))
+          e.stopPropagation(), null != n ? n() : (null != o && o(), (0, a.pTH)(), b(null == t ? true : t.guild_id, null == t ? true : t.id, u))
         },
         onMouseEnter: i,
         onMouseLeave: l,

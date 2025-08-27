@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => X
 }), require("./388685.js"), require("./539854.js");
 var r, Chunk913527 = require("./913527.js"),
-  o = require.n(Chunk913527),
+  a = require.n(Chunk913527),
   Chunk442837 = require("./442837.js"),
   Chunk759174 = require("./759174.js"),
   Chunk570140 = require("./570140.js"),
@@ -62,7 +62,7 @@ function O(e) {
 }
 
 function v(e, t) {
-  y[e] = t, b.set(e, o()())
+  y[e] = t, b.set(e, a()())
 }
 
 function I(e, t, n) {
@@ -133,10 +133,10 @@ function U(e) {
   let {
     guildId: n,
     request: r
-  } = e, i = (0, _.j)(r), o = c.default.getCurrentUser();
-  if (null == o || i.userId === o.id) returnfalse;
-  let a = null == (t = j(i.joinRequestId)) ? true : t.applicationStatus;
-  return I(n, i.applicationStatus, a), k(i), true
+  } = e, i = (0, _.j)(r), a = c.default.getCurrentUser();
+  if (null == a || i.userId === a.id) returnfalse;
+  let o = null == (t = j(i.joinRequestId)) ? true : t.applicationStatus;
+  return I(n, i.applicationStatus, o), k(i), true
 }
 
 function G(e) {
@@ -208,7 +208,7 @@ class q extends(r = Chunk442837.ZP.Store) {
   hasFetched(e) {
     if (!b.has(e)) returnfalse;
     let t = b.get(e);
-    return null != t && o()().diff(t, "seconds") < z
+    return null != t && a()().diff(t, "seconds") < z
   }
   getSelectedApplicationTab(e) {
     var t;

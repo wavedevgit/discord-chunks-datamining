@@ -19,7 +19,7 @@ function d(e) {
     d = (null == e ? true : e.details) === "" ? null : null == e ? true : e.details,
     f = (null == e ? true : e.state) === "" ? null : null == e ? true : e.state,
     _ = (null == e ? true : e.type) === c.IIU.STREAMING && null != d ? d : n;
-  if ((null == e ? true : e.status_display_type) === r.D.NAME && null != n ? _ = n : (null == e ? true : e.status_display_type) === r.D.STATE && null != f ? _ = f : (null == e ? true : e.status_display_type) === r.D.DETAILS && null != d && (_ = d), (0, a.Z)(e)) {
+  if ((null == e ? true : e.status_display_type) === r.D.NAME && null != n ? _ = n : (null == e ? true : e.status_display_type) === r.D.STATE && null != f ? _ = f : (null == e ? true : e.status_display_type) === r.D.DETAILS && null != d && (_ = d), (0, o.Z)(e)) {
     let e = (0, i.Z)(n);
     return {
       text: e,
@@ -60,7 +60,7 @@ function d(e) {
     tooltip: u.intl.formatToPlainString(u.t.Vnuxub, {
       name: _
     })
-  } : (0, o.Z)(e) && t && null != d ? {
+  } : (0, a.Z)(e) && t && null != d ? {
     text: u.intl.format(u.t.pW3Ip6, {
       name: d
     }),

@@ -2,11 +2,11 @@
 /** chunk id: 82085, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => o
+  Z: () => a
 });
 var Chunk703656 = require("./703656.js"),
   Chunk981631 = require("./981631.js");
-let o = {
+let a = {
   onOpenHubInvite(e) {
     let {
       guild: t

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk541716 = require("./541716.js"),
   Chunk752305 = require("./752305.js"),
@@ -27,7 +27,7 @@ function E(e) {
   let {
     sectionTitle: t,
     errors: n,
-    onTextChange: o,
+    onTextChange: a,
     pendingText: f,
     placeholder: p,
     currentText: E,
@@ -38,7 +38,7 @@ function E(e) {
   } = e, [I, T] = i.useState(null != f ? f : E), [S, A] = i.useState((0, c.JM)(I)), C = i.useRef(false);
 
   function N(e, t, n) {
-    t !== I && (T(t), A(n), o(t))
+    t !== I && (T(t), A(n), a(t))
   }
 
   function R() {
@@ -57,13 +57,13 @@ function E(e) {
       T(E), A(e)
     }
   }, [f, E]), (0, r.jsx)("div", {
-    className: a()(m.body, b),
+    className: o()(m.body, b),
     children: (0, r.jsxs)(d.Z, {
       title: t,
       errors: n,
       disabled: O,
       children: [(0, r.jsx)(u.ZP, {
-        innerClassName: a()(m.textArea, y),
+        innerClassName: o()(m.textArea, y),
         editorClassName: m.editorTextArea,
         maxCharacterCount: _.$n,
         onChange: N,

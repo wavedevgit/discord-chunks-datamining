@@ -16,9 +16,9 @@ var Chunk780384 = require("./780384.js"),
 let d = function(e) {
   let {
     onClose: t
-  } = e, n = (0, a.ZP)(), d = (0, i.wj)(n);
+  } = e, n = (0, o.ZP)(), d = (0, i.wj)(n);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsxs)(o.xBx, {
+    children: [(0, r.jsxs)(a.xBx, {
       "data-migration-pending": true,
       separator: false,
       className: l.header,
@@ -26,27 +26,27 @@ let d = function(e) {
         alt: "",
         className: l.headerImage,
         src: d ? c : u
-      }), (0, r.jsx)(o.X6q, {
+      }), (0, r.jsx)(a.X6q, {
         className: l.title,
         variant: "heading-xl/medium",
         children: s.intl.string(s.t.tWYWJy)
-      }), (0, r.jsx)(o.olH, {
+      }), (0, r.jsx)(a.olH, {
         "data-migration-pending": true,
         onClick: t,
         className: l.modalCloseButton
       })]
-    }), (0, r.jsx)(o.hzk, {
+    }), (0, r.jsx)(a.hzk, {
       "data-migration-pending": true,
       className: l.content,
       scrollbarType: "none",
-      children: (0, r.jsx)(o.Text, {
+      children: (0, r.jsx)(a.Text, {
         variant: "text-md/normal",
         children: s.intl.string(s.t.JNQRU1)
       })
-    }), (0, r.jsx)(o.mzw, {
+    }), (0, r.jsx)(a.mzw, {
       "data-migration-pending": true,
       className: l.modalFooter,
-      children: (0, r.jsx)(o.zxk, {
+      children: (0, r.jsx)(a.zxk, {
         variant: "primary",
         text: s.intl.string(s.t.cpT0Cg),
         onClick: t

@@ -8,12 +8,12 @@ module.exports = function(e) {
       literal: "false true"
     },
     i = e.COMMENT("%", "$"),
-    o = {
+    a = {
       className: "number",
       begin: "\\b(\\d+(_\\d+)*#[a-fA-F0-9]+(_[a-fA-F0-9]+)*|\\d+(_\\d+)*(\\.\\d+(_\\d+)*)?([eE][-+]?\\d+)?)",
       relevance: 0
     },
-    a = {
+    o = {
       begin: "fun\\s+" + t + "/\\d+"
     },
     s = {
@@ -108,10 +108,10 @@ module.exports = function(e) {
       end: "end",
       keywords: r
     };
-  h.contains = [i, a, e.inherit(e.APOS_STRING_MODE, {
+  h.contains = [i, o, e.inherit(e.APOS_STRING_MODE, {
     className: ""
-  }), h, s, p, _, e.QUOTE_STRING_MODE, o, l, c, u, d, f];
-  let m = [i, a, h, s, p, _, e.QUOTE_STRING_MODE, o, l, c, u, d, f];
+  }), h, s, p, _, e.QUOTE_STRING_MODE, a, l, c, u, d, f];
+  let m = [i, o, h, s, p, _, e.QUOTE_STRING_MODE, a, l, c, u, d, f];
   s.contains[1].contains = m, l.contains = m, d.contains[1].contains = m;
   let g = ["-module", "-record", "-undef", "-export", "-ifdef", "-ifndef", "-author", "-copyright", "-doc", "-moduledoc", "-vsn", "-import", "-include", "-include_lib", "-compile", "-define", "-else", "-endif", "-file", "-behaviour", "-behavior", "-spec", "-on_load", "-nifs"],
     E = {
@@ -150,7 +150,7 @@ module.exports = function(e) {
         keyword: g.map(e => `${e}|1.5`).join(" ")
       },
       contains: [E, p, _, e.QUOTE_STRING_MODE]
-    }, o, p, _, e.QUOTE_STRING_MODE, d, c, u, l, f, {
+    }, a, p, _, e.QUOTE_STRING_MODE, d, c, u, l, f, {
       begin: /\.$/
     }]
   }

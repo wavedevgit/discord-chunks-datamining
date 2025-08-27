@@ -6,7 +6,7 @@ require.d(exports, {
 });
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk756715 = require("./756715.jsx"),
   Chunk446673 = require("./446673.jsx"),
   Chunk481060 = require("./481060.js"),
@@ -45,7 +45,7 @@ function f(e) {
     hasBottomMargin: f = false
   } = e, h = null == (t = null == d ? true : d.external) || t;
   return (0, r.jsxs)("div", {
-    className: o()(c.header, u, {
+    className: a()(c.header, u, {
       [c.hasActions]: f
     }),
     children: [(0, r.jsxs)("div", {
@@ -58,7 +58,7 @@ function f(e) {
       })]
     }), (0, r.jsx)(p, {
       body: i
-    }), null != d && (0, r.jsx)(a.Anchor, {
+    }), null != d && (0, r.jsx)(o.Anchor, {
       href: d.link,
       target: h ? "_blank" : true,
       rel: h ? "noopener noreferrer" : true,

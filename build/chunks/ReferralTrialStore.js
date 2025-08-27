@@ -53,11 +53,11 @@ function w(e) {
     sent_user_ids: n,
     refresh_at: r,
     recipient_status: i,
-    has_eligible_friends: o
+    has_eligible_friends: a
   } = e;
   S = true === c.Z.getCurrentConfig({
     location: "handleReferralsRemainingFetchSuccess"
-  }).enabled || null == r && o, A = o, m = false, _ = t, p = new Set(n), C = r, h = i
+  }).enabled || null == r && a, A = a, m = false, _ = t, p = new Set(n), C = r, h = i
 }
 
 function D(e) {
@@ -115,13 +115,13 @@ function B(e) {
   let {
     userTrialOfferId: t
   } = e;
-  m || (0, l.C$)(), g.has(t) || (j(t), a.Z.wait(() => (0, l.IB)(t).catch(u.VqG)))
+  m || (0, l.C$)(), g.has(t) || (j(t), o.Z.wait(() => (0, l.IB)(t).catch(u.VqG)))
 }
 
 function Z(e) {
   let t = e.type === i.u.PREMIUM_REFERRAL ? e.content : null;
   if (null == t) returnfalse;
-  E.has(t) || g.has(t) || (j(t), a.Z.wait(() => (0, l.IB)(t).catch(u.VqG)))
+  E.has(t) || g.has(t) || (j(t), o.Z.wait(() => (0, l.IB)(t).catch(u.VqG)))
 }
 
 function F() {

@@ -18,13 +18,13 @@ async function f(e) {
     channelId: t,
     timeoutMs: n = u,
     bypassChangeModal: f = false
-  } = e, _ = a.Z.getChannel(t);
+  } = e, _ = o.Z.getChannel(t);
   if (null == _ || !await i.Z.handleVoiceConnect({
       bypassGuildIdCheck: true,
       bypassChangeModal: f,
       channel: _,
       connected: c.Z.isInChannel(t),
-      needSubscriptionToAccess: (0, o.$)(t, a.Z, r.Z, s.Z).needSubscriptionToAccess
+      needSubscriptionToAccess: (0, a.$)(t, o.Z, r.Z, s.Z).needSubscriptionToAccess
     })) returnfalse;
   let p = new Promise((e, r) => {
     let i = setTimeout(() => {

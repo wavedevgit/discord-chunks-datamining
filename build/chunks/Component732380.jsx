@@ -9,7 +9,7 @@ require("./647438.js");
 var Chunk481060 = require("./481060.js"),
   Chunk785717 = require("./785717.jsx");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,7 +25,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      a(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -35,8 +35,8 @@ function l(e, t) {
   if (null == e) return {};
   var n, r, i = c(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -44,8 +44,8 @@ function l(e, t) {
 function c(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -55,7 +55,7 @@ function u(e) {
     onClick: n
   } = e, {
     trackUserProfileAction: r
-  } = (0, o.KZ)();
+  } = (0, a.KZ)();
   return e => {
     null != t && r({
       action: t
@@ -67,8 +67,8 @@ function d(e) {
   var {
     action: t,
     onClick: n,
-    variant: o = "secondary",
-    size: a = "sm"
+    variant: a = "secondary",
+    size: o = "sm"
   } = e, c = l(e, ["action", "onClick", "variant", "size"]);
   let d = u({
     action: t,
@@ -76,7 +76,7 @@ function d(e) {
   });
   return (0, r.jsx)(i.zxk, s({
     onClick: d,
-    variant: o,
-    size: a
+    variant: a,
+    size: o
   }, c))
 }

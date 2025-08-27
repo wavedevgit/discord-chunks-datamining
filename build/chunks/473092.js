@@ -4,7 +4,7 @@
 require.d(exports, {
   KQ: () => l,
   Lm: () => d,
-  MC: () => a,
+  MC: () => o,
   NM: () => c,
   pb: () => s,
   qc: () => u
@@ -13,18 +13,18 @@ var Chunk594174 = require("./594174.js"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js");
 
-function a(e, t) {
+function o(e, t) {
   let {
     channelId: n,
     warningId: r,
-    senderId: o,
-    warningType: a
+    senderId: a,
+    warningType: o
   } = t;
   i.default.track(e, {
     channel_id: n,
     warning_id: null != r ? parseInt(r) : true,
-    warning_type: a,
-    other_user_id: o
+    warning_type: o,
+    other_user_id: a
   })
 }
 var s = function(e) {
@@ -36,14 +36,14 @@ function l(e) {
     channelId: t,
     warningId: n,
     senderId: r,
-    warningType: a,
+    warningType: o,
     viewName: s,
     isNudgeWarning: l
   } = e;
-  i.default.track(o.rMx.SAFETY_WARNING_VIEWED, {
+  i.default.track(a.rMx.SAFETY_WARNING_VIEWED, {
     channel_id: t,
     warning_id: null != n ? parseInt(n) : true,
-    warning_type: a,
+    warning_type: o,
     other_user_id: r,
     view_name: s,
     is_nudge_warning: l
@@ -58,14 +58,14 @@ function u(e) {
     channelId: t,
     warningId: n,
     senderId: r,
-    warningType: a,
+    warningType: o,
     cta: s,
     isNudgeWarning: l
   } = e;
-  i.default.track(o.rMx.SAFETY_WARNING_CTA_CLICKED, {
+  i.default.track(a.rMx.SAFETY_WARNING_CTA_CLICKED, {
     channel_id: t,
     warning_id: null != n ? parseInt(n) : true,
-    warning_type: a,
+    warning_type: o,
     other_user_id: r,
     cta: s,
     is_nudge_warning: l

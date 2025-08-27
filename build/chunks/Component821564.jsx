@@ -17,12 +17,12 @@ var Chunk442837 = require("./442837.js"),
 function d(e) {
   let t = !l.isPlatformEmbedded,
     n = (0, i.e7)([s.Z], () => s.Z.getMode()),
-    d = (t, i) => (0, r.jsx)(o.k5B, {
+    d = (t, i) => (0, r.jsx)(a.k5B, {
       id: t,
       group: "input-modes",
       label: i,
       checked: n === t,
-      action: () => a.Z.setMode(t, true, true, {
+      action: () => o.Z.setMode(t, true, true, {
         analyticsLocations: e
       })
     }, t);

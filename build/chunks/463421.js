@@ -14,14 +14,14 @@ var Chunk647438 = require("./647438.js"),
   Chunk981631 = require("./981631.js");
 
 function u(e, t) {
-  return (o.default.getId() === e ? s.Z.getActivities() : a.Z.getActivities(e, t)).filter(e => {
+  return (a.default.getId() === e ? s.Z.getActivities() : o.Z.getActivities(e, t)).filter(e => {
     var t;
     return null != e.application_id && e.type === c.IIU.PLAYING && !(0, l.yE)(null != (t = e.flags) ? t : 0, c.xjy.EMBEDDED)
   })
 }
 
 function d(e, t) {
-  let n = (0, i.e7)([s.Z, a.Z, o.default], () => o.default.getId() === e ? s.Z.getActivities() : a.Z.getActivities(e, t));
+  let n = (0, i.e7)([s.Z, o.Z, a.default], () => a.default.getId() === e ? s.Z.getActivities() : o.Z.getActivities(e, t));
   return r.useMemo(() => n.filter(e => {
     var t;
     return null != e.application_id && e.type === c.IIU.PLAYING && !(0, l.yE)(null != (t = e.flags) ? t : 0, c.xjy.EMBEDDED)

@@ -2,16 +2,16 @@
 /** chunk id: 93856, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => o
+  Z: () => a
 });
 var Chunk684667 = require("./684667.js"),
   Chunk441349 = require("./441349.js");
-let o = {
-  isTiffFile: a,
+let a = {
+  isTiffFile: o,
   findTiffOffsets: l
 };
 
-function a(e) {
+function o(e) {
   let t = 4;
   return !!e && e.byteLength >= t && s(e)
 }

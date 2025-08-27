@@ -23,9 +23,9 @@ function c(e) {
   let {
     relationship: t
   } = e, n = t.userIgnored;
-  t.type !== a.OGo.PENDING_INCOMING || n || (r.uv.announce(s.intl.formatToPlainString(s.t.zH0kCw, {
+  t.type !== o.OGo.PENDING_INCOMING || n || (r.uv.announce(s.intl.formatToPlainString(s.t.zH0kCw, {
     username: t.user.username
-  })), o.T(t.user))
+  })), a.T(t.user))
 }
 
 function u(e) {
@@ -34,7 +34,7 @@ function u(e) {
   } = e;
   r.uv.announce(s.intl.formatToPlainString(s.t["/+7xk5"], {
     username: t.username
-  })), o.z(t)
+  })), a.z(t)
 }
 class d extends Chunk147913.Z {
   constructor(...e) {

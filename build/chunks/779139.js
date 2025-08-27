@@ -14,21 +14,21 @@ var Chunk904245 = require("./904245.js"),
 let c = e => {
     var t;
     let n = null == (t = i.default.getCurrentUser()) ? true : t.id,
-      r = ((null != n ? a.default.extractTimestamp(n) : 0) + a.default.extractTimestamp(e)) % s.m.length;
+      r = ((null != n ? o.default.extractTimestamp(n) : 0) + o.default.extractTimestamp(e)) % s.m.length;
     return s.m[r]
   },
   u = (e, t, n) => {
-    var a;
+    var o;
     let s = {
       channel: e,
       message: t,
       shouldMention: true,
       showMentionToggle: true
     };
-    r.Z.sendGreetMessage(e.id, n, r.Z.getSendMessageOptionsForReply(s)), o.default.track(l.rMx.WELCOME_CTA_CLICKED, {
+    r.Z.sendGreetMessage(e.id, n, r.Z.getSendMessageOptionsForReply(s)), a.default.track(l.rMx.WELCOME_CTA_CLICKED, {
       is_reply: true,
       sticker_id: n,
       target_user: t.author.id,
-      sender: null == (a = i.default.getCurrentUser()) ? true : a.id
+      sender: null == (o = i.default.getCurrentUser()) ? true : o.id
     })
   }

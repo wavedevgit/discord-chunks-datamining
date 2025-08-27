@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk906732 = require("./906732.jsx"),
@@ -31,7 +31,7 @@ function p(e) {
     withHighlight: y = false
   } = e, {
     newestAnalyticsLocation: O
-  } = (0, l.ZP)(), v = y ? s.gtL : a.zx;
+  } = (0, l.ZP)(), v = y ? s.gtL : o.zx;
   return (0, r.jsx)(u.Z, {
     className: h,
     title: f.intl.string(f.t.Vgdusr),
@@ -42,10 +42,10 @@ function p(e) {
     children: (0, r.jsxs)("div", {
       className: _.buttonsContainer,
       children: [(0, r.jsx)(v, {
-        className: o()({
+        className: a()({
           [_.buttonHighlighted]: y
         }),
-        size: a.zx.Sizes.SMALL,
+        size: o.zx.Sizes.SMALL,
         onClick: () => (0, c.$r)({
           uploadType: d.pC.BANNER,
           analyticsSource: O,

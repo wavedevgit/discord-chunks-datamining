@@ -2,7 +2,7 @@
 /** chunk id: 885577, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  K: () => o
+  K: () => a
 });
 var Chunk685816 = require("./685816.js");
 
@@ -14,9 +14,9 @@ function i(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class o {
+class a {
   static fromServer(e) {
-    return new o(e)
+    return new a(e)
   }
   constructor(e) {
     i(this, "rankedSkuIds", true), i(this, "sortedSkuIds", true), this.type = r.z.FEED, this.rankedSkuIds = e.ranked_sku_ids, this.sortedSkuIds = e.sorted_sku_ids

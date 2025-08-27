@@ -26,7 +26,7 @@ let b = (0, Chunk313201.hQ)(),
       availablePrimaryGuilds: t,
       pendingPrimaryGuildId: n,
       onChange: l
-    } = e, [y, O] = (0, c.US)([a.z.GUILD_TAG_USER_PROFILE_NEW_BADGE]), v = i.useMemo(() => new Map(t.map(e => [e.id, e])), [t]), I = (0, o.e7)([_.default], () => {
+    } = e, [y, O] = (0, c.US)([o.z.GUILD_TAG_USER_PROFILE_NEW_BADGE]), v = i.useMemo(() => new Map(t.map(e => [e.id, e])), [t]), I = (0, a.e7)([_.default], () => {
       var e;
       return (0, u.Pb)(null == (e = _.default.getCurrentUser()) ? true : e.primaryGuild).guildId
     }), T = true !== n ? n : I, S = i.useMemo(() => t.reduce((e, t) => {
@@ -38,15 +38,15 @@ let b = (0, Chunk313201.hQ)(),
     }, []), [t]), A = i.useCallback(e => {
       var t, n, i;
       if (null == e) return null;
-      let o = v.get(e.value);
-      if (null == o) return null;
-      let a = null == (t = o.profile) ? true : t.tag;
-      return null == a ? null : (0, r.jsx)(p.Z, {
-        guildTag: a,
-        guildBadge: null != (i = null == (n = o.profile) ? true : n.badge) ? i : true,
-        guildId: o.id,
+      let a = v.get(e.value);
+      if (null == a) return null;
+      let o = null == (t = a.profile) ? true : t.tag;
+      return null == o ? null : (0, r.jsx)(p.Z, {
+        guildTag: o,
+        guildBadge: null != (i = null == (n = a.profile) ? true : n.badge) ? i : true,
+        guildId: a.id,
         guildName: e.label,
-        guildIcon: o.icon,
+        guildIcon: a.icon,
         guildIconSize: 32
       })
     }, [v]), C = i.useCallback(e => {
@@ -63,7 +63,7 @@ let b = (0, Chunk313201.hQ)(),
       title: g.intl.string(g.t.Pdd1nZ),
       titleId: b,
       ref: D,
-      titleIcon: y === a.z.GUILD_TAG_USER_PROFILE_NEW_BADGE && (0, r.jsx)(s.IGR, {
+      titleIcon: y === o.z.GUILD_TAG_USER_PROFILE_NEW_BADGE && (0, r.jsx)(s.IGR, {
         text: g.intl.string(g.t.y2b7CA),
         className: E.newBadge
       }),

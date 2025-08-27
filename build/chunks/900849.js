@@ -64,20 +64,20 @@ function h(e, t) {
 async function m(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {},
     {
-      channelId: o,
+      channelId: a,
       onSuccess: l,
       joinSource: u,
       loadId: f,
       shouldNavigate: p = true
     } = n,
-    m = (0, a.s1)(),
+    m = (0, o.s1)(),
     g = c.Z.getGuild(e),
     E = {
       state: {
         analyticsSource: t
       }
     };
-  null != g && null != g.joinedAt ? p && (null == o ? (0, s.X)(e, E) : (0, i.Z)(d.Z5c.CHANNEL(e, o, n.messageId), h(_({}, E), {
+  null != g && null != g.joinedAt ? p && (null == a ? (0, s.X)(e, E) : (0, i.Z)(d.Z5c.CHANNEL(e, a, n.messageId), h(_({}, E), {
     navigationReplace: true,
     openChannel: true
   }))) : (await r.Z.joinGuild(e, {
@@ -86,11 +86,11 @@ async function m(e, t) {
     loadId: f,
     lurkLocation: null == t ? true : t.page
   }), p && await r.Z.transitionToGuildSync(e, h(_({}, E), {
-    welcomeModalChannelId: o,
-    navigationReplace: null != o,
-    openChannel: null != o,
+    welcomeModalChannelId: a,
+    navigationReplace: null != a,
+    openChannel: null != a,
     search: m.location.search
-  }), o, n.messageId)), null == l || l()
+  }), a, n.messageId)), null == l || l()
 }
 
 function g(e) {
@@ -182,8 +182,8 @@ function T(e) {
     searchId: n,
     query: r,
     guildResults: i,
-    analyticsContext: o,
-    categoryId: a,
+    analyticsContext: a,
+    categoryId: o,
     isTagSearch: s
   } = e;
   u.default.track(d.rMx.SEARCH_RESULT_VIEWED, {
@@ -193,13 +193,13 @@ function T(e) {
     total_results: true !== i ? i.length : null,
     guild_ids: true !== i ? i.map(e => e.id) : null,
     query: r,
-    location: o.location,
-    category_id: a
+    location: a.location,
+    category_id: o
   })
 }
 
 function S(e) {
-  let t = o.Z.getLoadId(e);
+  let t = a.Z.getLoadId(e);
   u.default.track(d.rMx.GUILD_DISCOVERY_GUILD_JOIN_CLICKED, {
     guild_id: e,
     load_id: t,

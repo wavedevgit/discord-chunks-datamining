@@ -38,14 +38,14 @@ function p(e) {
     resolution: n,
     frameRate: r,
     soundshareEnabled: i
-  } = e, o = false;
-  return null != t && (c = t, o = true), null != n && (u = n, o = true), null != r && (d = r, o = true), null != i && (f = i, o = true), o
+  } = e, a = false;
+  return null != t && (c = t, a = true), null != n && (u = n, a = true), null != r && (d = r, a = true), null != i && (f = i, a = true), a
 }
 class h extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     if (null != e) {
       var t, n;
-      c = null != (t = e.preset) ? t : a.tI.PRESET_VIDEO, u = e.resolution, d = e.fps, f = null == (n = e.soundshareEnabled) || n
+      c = null != (t = e.preset) ? t : o.tI.PRESET_VIDEO, u = e.resolution, d = e.fps, f = null == (n = e.soundshareEnabled) || n
     }
   }
   getState() {

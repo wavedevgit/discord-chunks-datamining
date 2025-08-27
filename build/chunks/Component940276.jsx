@@ -22,9 +22,9 @@ function h(e) {
     guild: t,
     isActivityRestricted: n,
     onToggleActivityRestrictedGuild: i
-  } = e, l = (0, o.e7)([s.Z], () => s.Z.getMemberCount(t.id));
+  } = e, l = (0, a.e7)([s.Z], () => s.Z.getMemberCount(t.id));
   return (0, r.jsx)("li", {
-    children: (0, r.jsx)(a.j7V, {
+    children: (0, r.jsx)(o.j7V, {
       className: p.guildRowWrapper,
       value: !n,
       onChange: e => i({
@@ -41,7 +41,7 @@ function h(e) {
           })
         }), (0, r.jsxs)("div", {
           className: p.guildRowTextContainer,
-          children: [(0, r.jsx)(a.Text, {
+          children: [(0, r.jsx)(o.Text, {
             variant: "text-md/medium",
             lineClamp: 1,
             color: "text-default",
@@ -50,7 +50,7 @@ function h(e) {
             className: p.memberDetailsContainer,
             children: [(0, r.jsx)("div", {
               className: p.memberCountDot
-            }), (0, r.jsx)(a.Text, {
+            }), (0, r.jsx)(o.Text, {
               variant: "text-xs/normal",
               color: "text-secondary",
               children: _.intl.format(_.t.zRl6XV, {
@@ -68,7 +68,7 @@ let m = function() {
     guilds: e,
     searchQuery: t,
     setSearchQuery: n,
-    sortOrder: o,
+    sortOrder: a,
     setSortOrder: s,
     hasActivityRestrictedGuilds: c,
     onToggleAllActivityRestrictedGuilds: m,
@@ -136,7 +136,7 @@ let m = function() {
               total_guild_count: y
             }), s(e)
           },
-          isSelected: e => o === e,
+          isSelected: e => a === e,
           serialize: String
         }), (0, Chunk951288.jsx)(Chunk481060.Avr, {
           variant: "primary",

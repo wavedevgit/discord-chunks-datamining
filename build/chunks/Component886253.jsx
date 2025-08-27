@@ -33,7 +33,7 @@ function v(e) {
     onClose: I,
     children: T,
     footer: S
-  } = e, A = (0, o.e7)([d.Z, f.Z], () => {
+  } = e, A = (0, a.e7)([d.Z, f.Z], () => {
     var e;
     return null != (e = d.Z.getApplication(t)) ? e : f.Z.getApplicationRecord(t)
   }, [t]), {
@@ -67,7 +67,7 @@ function v(e) {
     alt: "",
     className: y.appIcon
   }) : true;
-  return (0, r.jsxs)(a.I, {
+  return (0, r.jsxs)(o.I, {
     onClose: I,
     size: "lg",
     transitionState: v,

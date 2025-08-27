@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk202841 = require("./202841.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -95,17 +95,17 @@ function N(e) {
   var t;
   let {} = e, {
     activeVoice: n
-  } = (0, m.o)(), o = (0, d.Z)(n), l = (0, h.z)(n), {
+  } = (0, m.o)(), a = (0, d.Z)(n), l = (0, h.z)(n), {
     toggleLoopback: u,
     isLoopbackEnabled: f
-  } = C(), _ = f ? c.Iy5 : c.X_q, b = i.useCallback(() => (0, p.v6)(null), []), O = (0, c.dQu)(c.TVs.colors.BACKGROUND_BASE_LOWER).hex(), N = (0, c.dQu)(c.TVs.colors.WHITE).hex(), R = i.useRef(0), P = n !== o ? R.current + 1 : R.current;
+  } = C(), _ = f ? c.Iy5 : c.X_q, b = i.useCallback(() => (0, p.v6)(null), []), O = (0, c.dQu)(c.TVs.colors.BACKGROUND_BASE_LOWER).hex(), N = (0, c.dQu)(c.TVs.colors.WHITE).hex(), R = i.useRef(0), P = n !== a ? R.current + 1 : R.current;
   i.useEffect(() => {
     R.current = P
   }, [P]);
   let w = null != n,
     D = !w,
-    x = w && null != o,
-    L = null == n && null != o,
+    x = w && null != a,
+    L = null == n && null != a,
     j = (0, c.q_F)({
       opacity: +!!w,
       height: 72 * !!w,
@@ -216,7 +216,7 @@ function N(e) {
     "aria-hidden": D,
     style: j,
     children: [(0, r.jsx)("div", {
-      className: a()([E.bgGradient, E.bgGradientHighlight])
+      className: o()([E.bgGradient, E.bgGradientHighlight])
     }), M(e => (0, r.jsx)(s.animated.div, {
       className: E.bgGradient,
       style: e
@@ -267,7 +267,7 @@ function N(e) {
           className: E.buttonWrapper,
           style: k[0],
           children: (0, r.jsx)(c.P3F, v(y({
-            className: a()(E.button, {
+            className: o()(E.button, {
               [E.loopbackEnabled]: f
             }),
             "aria-hidden": D,

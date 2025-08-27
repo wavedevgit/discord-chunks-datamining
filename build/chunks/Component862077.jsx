@@ -58,7 +58,7 @@ function T(e) {
     onHide: N,
     newAnalyticsLocations: R = [],
     disableAutoFocus: P = false
-  } = e, w = (0, o.e7)([c.Z], () => c.Z.isBlocked(t.id)), {
+  } = e, w = (0, a.e7)([c.Z], () => c.Z.isBlocked(t.id)), {
     analyticsLocations: D
   } = (0, l.ZP)([...R, w ? s.Z.BLOCKED_PROFILE_POPOUT : s.Z.IGNORED_PROFILE_POPOUT]), x = (0, d.ZB)({
     layout: "POPOUT",
@@ -72,7 +72,7 @@ function T(e) {
     null == v || v(null == L ? true : L.current)
   }, [L, v]);
   let M = w ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
-    k = P ? "div" : a.VqE;
+    k = P ? "div" : o.VqE;
   return (0, r.jsx)(l.Gt, {
     value: D,
     children: (0, r.jsx)(d.Mt, {
@@ -102,16 +102,16 @@ function T(e) {
                 children: [(0, r.jsx)(p.Z, {
                   user: t,
                   guildId: n
-                }), (0, r.jsx)(a.X6q, {
+                }), (0, r.jsx)(o.X6q, {
                   variant: "heading-lg/bold",
                   children: b.intl.string(b.t.b33pLC)
-                }), (0, r.jsx)(a.Text, {
+                }), (0, r.jsx)(o.Text, {
                   variant: "text-sm/medium",
                   children: b.intl.format(w ? b.t["8F+WNz"] : b.t["/cZp5u"], {
                     username: u.ZP.getName(n, T, t)
                   })
                 })]
-              }), (0, r.jsxs)(a.Kqy, {
+              }), (0, r.jsxs)(o.Kqy, {
                 align: "center",
                 children: [(0, r.jsx)(g.Z, {
                   isBlocked: w,

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk524825 = require("./524825.js"),
   Chunk442837 = require("./442837.js"),
   Chunk114101 = require("./114101.jsx"),
@@ -63,7 +63,7 @@ function v(e, t) {
 function I(e, t) {
   let {
     disabled: n,
-    type: o
+    type: a
   } = e, [b, O] = i.useState(false), I = (0, l.e7)([f.Z], () => {
     var e, t;
     return b && Object.values(null != (t = null == (e = f.Z.frecencyWithoutFetchingLatest.favoriteGifs) ? true : e.gifs) ? t : {}).length <= 2
@@ -77,21 +77,21 @@ function I(e, t) {
     handler: N
   });
   let R = i.useCallback(() => {
-      (0, d.RO)(m.X1.GIF, o)
-    }, [o]),
+      (0, d.RO)(m.X1.GIF, a)
+    }, [a]),
     {
       Component: P,
       events: w,
       play: D
     } = (0, c.V)();
   if (n) return null;
-  let x = T === m.X1.GIF && S === o;
+  let x = T === m.X1.GIF && S === a;
   return (0, r.jsx)(u.ua7, {
     text: I ? g.intl.string(g.t.mE2e8P) : null,
     forceOpen: true,
     children: e => (0, r.jsx)("div", v(y({
       ref: t,
-      className: a()(m.CT, E.buttonContainer)
+      className: o()(m.CT, E.buttonContainer)
     }, e), {
       children: (0, r.jsx)(p.Z, {
         className: E.button,

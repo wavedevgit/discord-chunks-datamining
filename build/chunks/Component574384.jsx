@@ -40,11 +40,11 @@ function f(e) {
   }));
   return (0, r.jsxs)("div", {
     className: u.selectorGroup,
-    children: [(0, r.jsx)(o.X6, {
+    children: [(0, r.jsx)(a.X6, {
       variant: "heading-deprecated-12/semibold",
       className: u.sectionLabel,
       children: c.intl.string(c.t["8qKd+P"])
-    }), null != p && "" !== p ? (0, r.jsx)(a.x, {
+    }), null != p && "" !== p ? (0, r.jsx)(o.x, {
       variant: "text-xs/normal",
       color: "text-danger",
       children: p
@@ -55,15 +55,15 @@ function f(e) {
       placeholder: c.intl.string(c.t["Re/64e"]),
       options: E,
       value: f,
-      renderOptionLabel: e => (0, r.jsx)(a.x, {
+      renderOptionLabel: e => (0, r.jsx)(o.x, {
         variant: "text-md/normal",
         children: e.label
       }),
-      renderOptionValue: e => (0, r.jsx)(a.x, {
+      renderOptionValue: e => (0, r.jsx)(o.x, {
         variant: "text-md/normal",
         children: e[0].label
       })
-    }), (0, r.jsx)(a.x, {
+    }), (0, r.jsx)(o.x, {
       variant: "text-xs/normal",
       color: "header-secondary",
       className: u.label,

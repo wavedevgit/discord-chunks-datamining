@@ -45,8 +45,8 @@ function b(e, t) {
   if (null == e) return {};
   var n, r, i = y(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -54,8 +54,8 @@ function b(e, t) {
 function y(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -66,7 +66,7 @@ function O(e) {
     fullWidth: g,
     appContext: y,
     onClose: O
-  } = e, v = (0, o.e7)([c.default], () => c.default.getId() === t.id), I = (0, o.e7)([u.Z], () => null != n ? u.Z.getGuild(n) : null), T = (0, o.e7)([_.Z], () => _.Z.hasSaveablePendingChanges()), S = (0, l.Z)({
+  } = e, v = (0, a.e7)([c.default], () => c.default.getId() === t.id), I = (0, a.e7)([u.Z], () => null != n ? u.Z.getGuild(n) : null), T = (0, a.e7)([_.Z], () => _.Z.hasSaveablePendingChanges()), S = (0, l.Z)({
     guild: I
   }), A = (0, l.Z)({}), {
     trackUserProfileAction: C
@@ -74,7 +74,7 @@ function O(e) {
   return v ? null == I ? (0, r.jsx)(p.O1, {
     action: "EDIT_PROFILE",
     text: h.intl.string(h.t.s5vZlZ),
-    icon: a.vdY,
+    icon: o.vdY,
     autoFocus: true,
     fullWidth: g,
     variant: "primary",
@@ -82,13 +82,13 @@ function O(e) {
       if (T) return void f.Z.notifyPendingWidgets();
       null == O || O(), A(), (0, s.i)(y)
     }
-  }) : (0, r.jsx)(a.yRy, {
+  }) : (0, r.jsx)(o.yRy, {
     targetElementRef: N,
     renderPopout: e => {
       let {
         closePopout: t
       } = e;
-      return (0, r.jsxs)(a.v2r, {
+      return (0, r.jsxs)(o.v2r, {
         className: m.popoutMenu,
         onSelect: true,
         navId: "edit-profile-popout",
@@ -96,7 +96,7 @@ function O(e) {
           t(), null == O || O()
         },
         "aria-label": h.intl.string(h.t.AXIHpa),
-        children: [(0, r.jsx)(a.sNh, {
+        children: [(0, r.jsx)(o.sNh, {
           id: "edit-server-profile",
           label: h.intl.string(h.t["PKQB/P"]),
           subtext: h.intl.string(h.t.VYHWKC),
@@ -105,7 +105,7 @@ function O(e) {
               action: "EDIT_GUILD_PROFILE"
             }), S(), (0, s.i)(y)
           }
-        }), (0, r.jsx)(a.sNh, {
+        }), (0, r.jsx)(o.sNh, {
           id: "edit-main-profile",
           label: h.intl.string(h.t.HmFaFB),
           subtext: h.intl.string(h.t["+EERMj"]),
@@ -124,7 +124,7 @@ function O(e) {
       return (0, r.jsx)(p.O1, E({
         buttonRef: N,
         text: h.intl.string(h.t.s5vZlZ),
-        icon: a.vdY,
+        icon: o.vdY,
         autoFocus: true,
         fullWidth: g,
         variant: "primary",
