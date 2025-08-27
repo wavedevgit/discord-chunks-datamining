@@ -1,4 +1,4 @@
-/** Chunk was on 63751 **/
+/** Chunk was on 85321 **/
 /** chunk id: 82084, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -11,10 +11,10 @@ var Chunk951288 = require("./951288.js"),
 function c(e) {
   var t, n, {
       root: c,
-      sidebarHeader: l,
-      sidebarFooter: s
+      sidebarHeader: b,
+      sidebarFooter: l
     } = e,
-    b = function(e, t) {
+    s = function(e, t) {
       if (null == e) return {};
       var n, o, r = function(e, t) {
         if (null == e) return {};
@@ -49,12 +49,12 @@ function c(e) {
   }({
     size: "xl",
     fullScreenOnMobile: true
-  }, b), n = n = {
+  }, s), n = n = {
     children: (0, o.jsx)(a.Z, {
-      onClose: b.onClose,
+      onClose: s.onClose,
       root: c,
-      sidebarHeader: l,
-      sidebarFooter: s,
+      sidebarHeader: b,
+      sidebarFooter: l,
       initialPanel: i.Z
     })
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

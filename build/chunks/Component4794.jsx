@@ -15,15 +15,15 @@ let o = Chunk647438.memo(function(e) {
     useTitle: n,
     layout: o,
     useSubtitle: u
-  } = t, [c, d] = i.useState(false), T = null == n ? true : n(c), O = null == u ? true : u();
-  return (0, l.jsx)("div", {
+  } = t, [c, d] = l.useState(false), _ = null == n ? true : n(c), E = null == u ? true : u();
+  return (0, i.jsx)("div", {
     className: a.accordion,
-    children: (0, l.jsx)(s.I, {
-      title: T,
-      subtitle: O,
+    children: (0, i.jsx)(s.I, {
+      title: _,
+      subtitle: E,
       isOpen: c,
       setIsOpen: d,
-      children: o.map(e => (0, l.jsx)(r.Z, {
+      children: o.map(e => (0, i.jsx)(r.Z, {
         node: e
       }, e.key))
     })

@@ -13,20 +13,20 @@ function o(e) {
   let {
     icon: t,
     title: n,
-    onClick: i,
+    onClick: l,
     active: o,
     trailing: u
   } = e;
-  return (0, l.jsxs)(s.P3F, {
+  return (0, i.jsxs)(s.P3F, {
     className: r()(a.item, o && a.active),
-    onClick: i,
-    children: [(0, l.jsxs)("div", {
+    onClick: l,
+    children: [(0, i.jsxs)("div", {
       className: a.itemContent,
-      children: [(0, l.jsx)(t, {
+      children: [(0, i.jsx)(t, {
         color: "currentColor",
         size: "refresh_sm"
       }), n]
-    }), (0, l.jsx)("div", {
+    }), (0, i.jsx)("div", {
       className: a.itemContent,
       children: u
     })]

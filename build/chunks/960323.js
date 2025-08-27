@@ -16,7 +16,6 @@ let a = (0, Chunk509613.k4)(Chunk869235.t.VOICE_CATEGORY, {
     getLayout: () => []
   }),
   u = (0, Chunk509613.x1)(Chunk869235.t.VOICE_AND_VIDEO_PANE, {
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t.B1fFpa),
     getLayout: () => [a, o]
   }),
   c = (0, Chunk509613.wf)(Chunk869235.t.VOICE_AND_VIDEO_PANEL, {

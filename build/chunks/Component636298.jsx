@@ -15,14 +15,14 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk214779 = require("./214779.js");
 
-function f(e) {
+function N(e) {
   let {
     icon: t,
     label: n,
-    onClick: i
+    onClick: l
   } = e;
-  return (0, l.jsx)(o.h, {
-    onClick: i,
+  return (0, i.jsx)(o.h, {
+    onClick: l,
     icon: t,
     size: "sm",
     variant: "icon-only",
@@ -30,30 +30,30 @@ function f(e) {
   })
 }
 
-function N(e) {
+function T(e) {
   let {
     title: t,
     onClose: n
   } = e, {
-    setShowNavigationMobile: i
+    setShowNavigationMobile: l
   } = (0, c.t)();
-  return (0, l.jsxs)("div", {
-    className: O.contentHeader,
-    children: [(0, l.jsxs)("div", {
-      className: O.contentHeaderLeft,
-      children: [a.tq && (0, l.jsx)(f, {
+  return (0, i.jsxs)("div", {
+    className: E.contentHeader,
+    children: [(0, i.jsxs)("div", {
+      className: E.contentHeaderLeft,
+      children: [a.tq && (0, i.jsx)(N, {
         icon: u.yFM,
-        onClick: () => i(true),
-        label: T.intl.string(T.t["13/7kZ"])
-      }), (0, l.jsx)(u.X6q, {
+        onClick: () => l(true),
+        label: _.intl.string(_.t["13/7kZ"])
+      }), (0, i.jsx)(u.X6q, {
         variant: "heading-md/normal",
         color: "header-secondary",
         children: t
       })]
-    }), (0, l.jsx)(f, {
+    }), (0, i.jsx)(N, {
       icon: u.Uz9,
       onClick: n,
-      label: T.intl.string(T.t.cpT0Cg)
+      label: _.intl.string(_.t.cpT0Cg)
     })]
   })
 }
@@ -61,20 +61,20 @@ let I = Chunk647438.memo(function(e) {
   let {
     onClose: t,
     setting: n
-  } = e, i = null == n ? true : n.useTitle(), {
+  } = e, l = null == n ? true : n.useTitle(), {
     showNavigationMobile: r
   } = (0, c.t)();
-  return (0, l.jsxs)("div", {
-    className: s()(O.content, {
-      [O.mobile]: a.tq,
-      [O.mobileNavigationOpen]: r
+  return (0, i.jsxs)("div", {
+    className: s()(E.content, {
+      [E.mobile]: a.tq,
+      [E.mobileNavigationOpen]: r
     }),
-    children: [(0, l.jsx)(N, {
-      title: i,
+    children: [(0, i.jsx)(T, {
+      title: l,
       onClose: t
-    }), (0, l.jsx)("div", {
-      className: O.contentBody,
-      children: null != n && (0, l.jsx)(d.Z, {
+    }), (0, i.jsx)("div", {
+      className: E.contentBody,
+      children: null != n && (0, i.jsx)(d.Z, {
         node: n
       })
     })]

@@ -12,9 +12,9 @@ function s(e) {
   let {
     node: s
   } = e;
-  return (0, l.jsx)(r.x, {
+  return (0, i.jsx)(r.x, {
     title: "useTitle" in s ? "[PLACEHOLDER] ".concat(null == (t = s.useTitle) ? true : t.call(s, false)) : "[PLACEHOLDER]",
     description: "useSubtitle" in s ? null == (n = s.useSubtitle) ? true : n.call(s) : "",
-    secondaryTrailingElement: (0, l.jsx)(i.tEQ, {})
+    secondaryTrailingElement: (0, i.jsx)(l.tEQ, {})
   })
 }

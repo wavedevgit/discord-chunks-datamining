@@ -14,25 +14,25 @@ function u(e) {
   let {
     title: t,
     subtitle: n,
-    isOpen: i,
+    isOpen: l,
     setIsOpen: u,
     compact: c = false,
     children: d
   } = e;
-  return (0, l.jsxs)(l.Fragment, {
-    children: [(0, l.jsx)(a.x, {
+  return (0, i.jsxs)(i.Fragment, {
+    children: [(0, i.jsx)(a.x, {
       title: t,
-      description: i ? true : n,
-      secondaryTrailingElement: (0, l.jsx)(s.sXD, {
+      description: l ? true : n,
+      secondaryTrailingElement: (0, i.jsx)(s.sXD, {
         className: r()(o.icon, {
-          [o.iconClosed]: !i
+          [o.iconClosed]: !l
         })
       }),
-      onClick: () => u(!i),
+      onClick: () => u(!l),
       compact: c
-    }), (0, l.jsx)("div", {
+    }), (0, i.jsx)("div", {
       className: r()({
-        [o.hidden]: !i
+        [o.hidden]: !l
       }),
       children: d
     })]

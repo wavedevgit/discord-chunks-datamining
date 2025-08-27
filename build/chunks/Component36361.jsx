@@ -1,7 +1,7 @@
 /** Chunk was on 76210 **/
 /** chunk id: 36361, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => N
+  Z: () => T
 }), require("./415506.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -16,53 +16,53 @@ var Chunk28682 = require("./28682.js"),
   Chunk409322 = require("./409322.jsx"),
   Chunk670304 = require("./670304.jsx"),
   Chunk357660 = require("./357660.jsx");
-let N = function(e) {
+let T = function(e) {
   let {
     node: t
   } = e;
   switch (t.type) {
-    case i.J.ROOT:
-    case i.J.SECTION:
+    case l.J.ROOT:
+    case l.J.SECTION:
       throw Error("".concat(t.type, " nodes should never be rendered directly"));
-    case i.J.PANEL:
-      return (0, l.jsx)(f.T, {
+    case l.J.PANEL:
+      return (0, i.jsx)(N.T, {
         node: t
       });
-    case i.J.PANE:
-      return (0, l.jsx)(O.Z, {
+    case l.J.PANE:
+      return (0, i.jsx)(E.Z, {
         node: t
       });
-    case i.J.LIST:
-      return (0, l.jsx)(T.Z, {
+    case l.J.LIST:
+      return (0, i.jsx)(_.Z, {
         node: t
       });
-    case i.J.CATEGORY:
-      return (0, l.jsx)(d.Z, {
+    case l.J.CATEGORY:
+      return (0, i.jsx)(d.Z, {
         node: t
       });
-    case i.J.ACCORDION:
-      return (0, l.jsx)(c.Z, {
+    case l.J.ACCORDION:
+      return (0, i.jsx)(c.Z, {
         node: t
       });
-    case i.J.TOGGLE:
-      return (0, l.jsx)(u.I, {
+    case l.J.TOGGLE:
+      return (0, i.jsx)(u.I, {
         node: t
       });
-    case i.J.BUTTON:
-      return (0, l.jsx)(r.I, {
+    case l.J.BUTTON:
+      return (0, i.jsx)(r.I, {
         node: t
       });
-    case i.J.SELECT:
-      return (0, l.jsx)(o.Z, {
+    case l.J.SELECT:
+      return (0, i.jsx)(o.Z, {
         node: t
       });
-    case i.J.RADIO:
-      return (0, l.jsx)(a.Z, {
+    case l.J.RADIO:
+      return (0, i.jsx)(a.Z, {
         node: t
       });
-    case i.J.CUSTOM:
+    case l.J.CUSTOM:
     default:
-      return (0, l.jsx)(s.W, {
+      return (0, i.jsx)(s.W, {
         node: t
       })
   }

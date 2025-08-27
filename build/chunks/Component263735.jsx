@@ -1,0 +1,22 @@
+/** Chunk was on 76210 **/
+/** chunk id: 263735, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  Z: () => d
+});
+var Chunk951288 = require("./951288.js"),
+  Chunk657707 = require("./657707.js"),
+  Chunk509613 = require("./509613.js"),
+  Chunk400287 = require("./400287.jsx"),
+  Chunk869235 = require("./869235.js"),
+  Chunk726985 = require("./726985.js"),
+  Chunk388032 = require("./388032.jsx");
+let c = (0, Chunk509613.x1)(Chunk869235.t.CHAT_PANE, {
+    getLayout: () => [],
+    render: () => (0, Chunk951288.jsx)(Chunk400287.Z, {})
+  }),
+  d = (0, Chunk509613.wf)(Chunk869235.t.CHAT_PANEL, {
+    useTitle: () => Chunk388032.intl.string(Chunk388032.t["/VQax8"]),
+    icon: Chunk657707.kBi,
+    getLayout: () => [c],
+    legacySearchKey: Chunk726985.s6.CHAT
+  })

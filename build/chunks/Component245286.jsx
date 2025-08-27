@@ -1,7 +1,7 @@
-/** Chunk was on 63751 **/
+/** Chunk was on 85321 **/
 /** chunk id: 245286, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => b
+  default: () => s
 });
 var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
@@ -11,9 +11,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk604227 = require("./604227.jsx"),
   Chunk920952 = require("./920952.js");
 
-function b(e) {
+function s(e) {
   let t = (0, c.Z7)(),
-    n = (0, a.Z)(s.Z, t);
+    n = (0, a.Z)(l.Z, t);
   return (0, o.jsx)(i.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -34,7 +34,7 @@ function b(e) {
   }({
     root: n,
     sidebarHeader: _,
-    sidebarFooter: l.Z
+    sidebarFooter: b.Z
   }, e))
 }
 

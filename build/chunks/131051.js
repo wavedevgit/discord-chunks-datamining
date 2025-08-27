@@ -10,8 +10,8 @@ var Chunk647438 = require("./647438.js"),
   Chunk801318 = require("./801318.js");
 
 function o(e, t) {
-  let n = l.useMemo(() => (0, s.Ql)(e), [e]),
-    o = (0, i.Pt)(),
+  let n = i.useMemo(() => (0, s.Ql)(e), [e]),
+    o = (0, l.Pt)(),
     {
       searchResults: u
     } = (0, r.E)(),

@@ -14,43 +14,43 @@ function u(e) {
   let {
     leadingElement: t,
     primaryTrailingElement: n,
-    secondaryTrailingElement: i,
+    secondaryTrailingElement: l,
     title: u,
     secondaryTitle: c,
     description: d,
-    compact: T = false,
-    onClick: O
+    compact: _ = false,
+    onClick: E
   } = e;
-  return (0, l.jsxs)(a.P3F, {
+  return (0, i.jsxs)(a.P3F, {
     className: r()(o.baseControlItem, {
-      [o.compact]: T
+      [o.compact]: _
     }),
-    onClick: O,
-    children: [null != t && (0, l.jsx)("div", {
+    onClick: E,
+    children: [null != t && (0, i.jsx)("div", {
       className: o.baseControlItemLeadingElement,
       children: t
-    }), (0, l.jsxs)("div", {
+    }), (0, i.jsxs)("div", {
       className: o.baseControlItemContent,
-      children: [(0, l.jsxs)("div", {
+      children: [(0, i.jsxs)("div", {
         className: o.baseControlItemTitle,
-        children: [(0, l.jsx)(s.X6, {
+        children: [(0, i.jsx)(s.X6, {
           variant: "heading-md/semibold",
           color: "text-primary",
           children: u
-        }), null != c && (0, l.jsx)(s.X6, {
+        }), null != c && (0, i.jsx)(s.X6, {
           variant: "heading-md/semibold",
           color: "text-secondary",
           className: o.secondaryTitle,
           children: c
         })]
-      }), null != d && (0, l.jsx)(s.xv, {
+      }), null != d && (0, i.jsx)(s.xv, {
         variant: "text-md/normal",
         color: "text-secondary",
         children: d
       })]
-    }), (null != n || null != i) && (0, l.jsxs)("div", {
+    }), (null != n || null != l) && (0, i.jsxs)("div", {
       className: o.baseControlItemTrailingElements,
-      children: [n, i]
+      children: [n, l]
     })]
   })
 }

@@ -16,18 +16,18 @@ function s(e) {
     useTitle: a,
     useSubtitle: o,
     useOptions: u
-  } = t, c = a(), d = null == o ? true : o(), T = n(), O = u();
-  return (0, l.jsx)(i.xJW, {
+  } = t, c = a(), d = null == o ? true : o(), _ = n(), E = u();
+  return (0, i.jsx)(l.xJW, {
     title: c,
     className: r.radioContainer,
-    children: (0, l.jsxs)("div", {
+    children: (0, i.jsxs)("div", {
       className: r.radioContent,
-      children: [null != d && (0, l.jsx)(i.R94, {
-        type: i.geA.DESCRIPTION,
+      children: [null != d && (0, i.jsx)(l.R94, {
+        type: l.geA.DESCRIPTION,
         children: d
-      }), (0, l.jsx)(i.FXm, {
-        options: O,
-        value: T,
+      }), (0, i.jsx)(l.FXm, {
+        options: E,
+        value: _,
         onChange: e => s(e.value)
       })]
     })

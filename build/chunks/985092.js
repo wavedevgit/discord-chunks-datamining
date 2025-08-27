@@ -1,7 +1,7 @@
 /** Chunk was on 76210 **/
 /** chunk id: 985092, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => T
+  Z: () => _
 });
 var Chunk657707 = require("./657707.js"),
   Chunk778825 = require("./778825.js"),
@@ -15,7 +15,7 @@ let d = (0, Chunk509613.x1)(Chunk869235.t.PROFILE_PANE, {
     getLayout: () => [],
     render: Chunk564344.Z
   }),
-  T = (0, Chunk509613.wf)(Chunk869235.t.PROFILE_SETTINGS_PANEL, {
+  _ = (0, Chunk509613.wf)(Chunk869235.t.PROFILE_SETTINGS_PANEL, {
     icon: Chunk657707.tBG,
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.LYju5O),
     getLayout: () => [d],

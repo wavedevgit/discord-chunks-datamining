@@ -1,7 +1,7 @@
 /** Chunk was on 76210 **/
 /** chunk id: 404975, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  P: () => T
+  P: () => _
 }), require("./361932.js"), require("./187205.js");
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
@@ -13,64 +13,64 @@ var Chunk951288 = require("./951288.js"),
   Chunk829210 = require("./829210.jsx"),
   Chunk845435 = require("./845435.js");
 
-function T(e) {
+function _(e) {
   let {
     root: t,
     header: n,
-    footer: i
+    footer: l
   } = e, {
     showNavigationMobile: c
-  } = (0, u.t)(), T = t.layout.flatMap(e => e.layout).flatMap(e => {
+  } = (0, u.t)(), _ = t.layout.flatMap(e => e.layout).flatMap(e => {
     var t;
     return null == (t = e.trailing) ? true : t.newIndicatorDismissibleContentTypes
   }).filter(e => null != e);
-  return (0, l.jsx)(o.ZP, {
-    contentTypes: T,
+  return (0, i.jsx)(o.ZP, {
+    contentTypes: _,
     children: e => {
       let {
         visibleContent: o
       } = e;
-      return (0, l.jsxs)("div", {
+      return (0, i.jsxs)("div", {
         className: r()(d.sidebar, {
           [d.mobile]: s.tq,
           [d.mobileNavigationOpen]: c
         }),
-        children: [null != n && (0, l.jsx)(n, {}), (0, l.jsx)(a.zJl, {
+        children: [null != n && (0, i.jsx)(n, {}), (0, i.jsx)(a.zJl, {
           className: d.navScroller,
           fade: true,
-          children: (0, l.jsx)("nav", {
+          children: (0, i.jsx)("nav", {
             className: d.nav,
-            children: t.layout.map(e => (0, l.jsx)(O, {
+            children: t.layout.map(e => (0, i.jsx)(E, {
               section: e,
               visibleContent: o
             }, e.key))
           })
-        }), null != i && (0, l.jsx)("footer", {
+        }), null != l && (0, i.jsx)("footer", {
           className: d.footer,
-          children: (0, l.jsx)(i, {})
+          children: (0, i.jsx)(l, {})
         })]
       })
     }
   })
 }
 
-function O(e) {
+function E(e) {
   var t;
   let {
     section: n,
-    visibleContent: i
+    visibleContent: l
   } = e, r = null == (t = n.useLabel) ? true : t.call(n);
-  return (0, l.jsxs)("ul", {
+  return (0, i.jsxs)("ul", {
     className: d.section,
-    children: [null != r && (0, l.jsx)(a.X6q, {
+    children: [null != r && (0, i.jsx)(a.X6q, {
       className: d.label,
       variant: "heading-sm/medium",
       color: "text-tertiary",
       children: r
-    }), n.layout.map(e => (0, l.jsx)("li", {
-      children: (0, l.jsx)(c.Z, {
+    }), n.layout.map(e => (0, i.jsx)("li", {
+      children: (0, i.jsx)(c.Z, {
         node: e,
-        visibleContent: i
+        visibleContent: l
       })
     }, e.key))]
   })

@@ -17,14 +17,14 @@ let o = Chunk647438.memo(function(e) {
     render: u,
     init: c
   } = t, d = null == n ? true : n();
-  return (i.useEffect(() => {
+  return (l.useEffect(() => {
     null == c || c()
-  }, [c]), null != u) ? (0, l.jsx)(u, {}) : (0, l.jsx)(r.hjN, {
+  }, [c]), null != u) ? (0, i.jsx)(u, {}) : (0, i.jsx)(r.hjN, {
     tag: r.RB0.H1,
     className: a.category,
     title: d,
     titleClassName: a.categoryTitle,
-    children: o.map(e => (0, l.jsx)(s.Z, {
+    children: o.map(e => (0, i.jsx)(s.Z, {
       node: e
     }, e.key))
   })

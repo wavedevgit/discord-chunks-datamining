@@ -15,39 +15,39 @@ function u(e) {
   let n, {
       node: u
     } = e,
-    [c, d] = i.useState(false),
+    [c, d] = l.useState(false),
     {
-      layout: T,
-      collapseAfter: O,
-      ContextProvider: f,
-      useCollapsibleTitle: N
+      layout: _,
+      collapseAfter: E,
+      ContextProvider: N,
+      useCollapsibleTitle: T
     } = u,
-    I = T.filter(e => {
+    I = _.filter(e => {
       var t, n;
       return null == (n = null == (t = e.usePredicate) ? true : t.call(e)) || n
     }),
-    E = null != O ? I.slice(0, O) : I,
-    g = null != O ? I.slice(O) : [],
-    _ = null != f ? f : i.Fragment,
-    v = null != (t = null == N ? true : N(c, g.length)) ? t : (n = g.length, c ? o.intl.formatToPlainString(o.t["3SHL+f"], {
+    A = null != E ? I.slice(0, E) : I,
+    g = null != E ? I.slice(E) : [],
+    O = null != N ? N : l.Fragment,
+    S = null != (t = null == T ? true : T(c, g.length)) ? t : (n = g.length, c ? o.intl.formatToPlainString(o.t["3SHL+f"], {
       count: n
     }) : o.intl.formatToPlainString(o.t["8JRFyc"], {
       count: n
     }));
-  return (0, l.jsxs)(_, {
-    children: [E.map((e, t) => (0, l.jsxs)(i.Fragment, {
-      children: [(0, l.jsx)(s.Z, {
+  return (0, i.jsxs)(O, {
+    children: [A.map((e, t) => (0, i.jsxs)(l.Fragment, {
+      children: [(0, i.jsx)(s.Z, {
         node: e
-      }), (t !== E.length - 1 || g.length > 0) && (0, l.jsx)(r.$i$, {})]
-    }, e.key)), g.length > 0 && (0, l.jsx)(a.I, {
-      title: v,
+      }), (t !== A.length - 1 || g.length > 0) && (0, i.jsx)(r.$i$, {})]
+    }, e.key)), g.length > 0 && (0, i.jsx)(a.I, {
+      title: S,
       isOpen: c,
       setIsOpen: d,
       compact: true,
-      children: g.map((e, t) => (0, l.jsxs)(i.Fragment, {
-        children: [(0, l.jsx)(s.Z, {
+      children: g.map((e, t) => (0, i.jsxs)(l.Fragment, {
+        children: [(0, i.jsx)(s.Z, {
           node: e
-        }), t !== g.length - 1 && (0, l.jsx)(r.$i$, {})]
+        }), t !== g.length - 1 && (0, i.jsx)(r.$i$, {})]
       }, e.key))
     })]
   })

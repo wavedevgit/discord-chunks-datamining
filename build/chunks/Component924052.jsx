@@ -14,13 +14,13 @@ let o = Chunk647438.createContext(true);
 function u(e) {
   let {
     children: t
-  } = e, n = i.useRef(r.$x), [u, c] = i.useState(false), d = i.useCallback(e => {
+  } = e, n = l.useRef(r.$x), [u, c] = l.useState(false), d = l.useCallback(e => {
     var t;
     c(null != (t = null == e ? true : e.some(e => {
       var t;
       return e.showNotice() && !(null == (t = e.canCloseEarly) ? true : t.call(e))
     })) && t), n.current = r.$x
-  }, []), T = i.useCallback(e => {
+  }, []), _ = l.useCallback(e => {
     if (u) {
       s.S.dispatch(a.CkL.SHAKE_APP, {
         duration: 300,
@@ -29,13 +29,13 @@ function u(e) {
       return
     }
     e()
-  }, [u]), O = i.useMemo(() => ({
-    navigateWithValidation: T,
+  }, [u]), E = l.useMemo(() => ({
+    navigateWithValidation: _,
     showNotice: u,
     handleStoreUpdate: d
-  }), [T, u, d]);
-  return (0, l.jsx)(o.Provider, {
-    value: O,
+  }), [_, u, d]);
+  return (0, i.jsx)(o.Provider, {
+    value: E,
     children: t
   })
 }
