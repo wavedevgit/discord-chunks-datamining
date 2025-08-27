@@ -40,10 +40,10 @@ function w(t, e, n) {
 function P(t) {
   for (var e = 1; e < arguments.length; e++) {
     var n = null != arguments[e] ? arguments[e] : {},
-      l = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(t) {
+      a = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(n).filter(function(t) {
       return Object.getOwnPropertyDescriptor(n, t).enumerable
-    }))), l.forEach(function(e) {
+    }))), a.forEach(function(e) {
       w(t, e, n[e])
     })
   }
@@ -54,8 +54,8 @@ function N(t, e) {
   return e = null != e ? e : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(e)) : (function(t, e) {
     var n = Object.keys(t);
     if (Object.getOwnPropertySymbols) {
-      var l = Object.getOwnPropertySymbols(t);
-      n.push.apply(n, l)
+      var a = Object.getOwnPropertySymbols(t);
+      n.push.apply(n, a)
     }
     return n
   })(Object(e)).forEach(function(n) {
@@ -64,12 +64,12 @@ function N(t, e) {
 }
 
 function E(t) {
-  return (0, l.jsxs)("div", {
-    className: y.statusOptionItem,
-    children: [(0, l.jsx)(s.qbd, {
+  return (0, a.jsxs)("div", {
+    className: T.statusOptionItem,
+    children: [(0, a.jsx)(s.qbd, {
       status: t.value,
       size: 10,
-      className: y.statusIcon
+      className: T.statusIcon
     }), t.label]
   })
 }
@@ -141,10 +141,10 @@ class D extends Chunk647438.PureComponent {
                 let {
                   isShown: n
                 } = e;
-                return (0, l.jsx)(d.Z, N(P({}, t), {
+                return (0, a.jsx)(d.Z, N(P({}, t), {
                   ref: this.emojiButtonRef,
                   active: n,
-                  className: y.emojiButton,
+                  className: T.emojiButton,
                   tabIndex: 0,
                   renderButtonContents: this.getEmojiButtonRenderer()
                 }))
@@ -244,7 +244,7 @@ class D extends Chunk647438.PureComponent {
     }))
   }
   constructor(...t) {
-    super(...t), w(this, "emojiButtonRef", a.createRef()), w(this, "state", {
+    super(...t), w(this, "emojiButtonRef", l.createRef()), w(this, "state", {
       emojiInfo: null != this.props.customStatus ? this.props.customStatus.emoji : null,
       text: null != this.props.customStatus && null != this.props.customStatus.state ? this.props.customStatus.state : "",
       clearAfter: (0, j.Z)(),
@@ -288,8 +288,8 @@ class D extends Chunk647438.PureComponent {
         onClose: e
       } = this.props, {
         emojiInfo: n,
-        text: l,
-        clearAfter: a,
+        text: a,
+        clearAfter: l,
         status: r
       } = this.state, i = p.co.getSetting();
       i !== r && (0, f.Z)({
@@ -297,9 +297,9 @@ class D extends Chunk647438.PureComponent {
         prevStatus: i,
         analyticsContext: t
       }), (0, g.Z)({
-        text: l,
+        text: a,
         emojiInfo: n,
-        clearAfter: a,
+        clearAfter: l,
         analyticsContext: t
       }), e()
     }), w(this, "handleKeyPress", t => {
@@ -310,14 +310,14 @@ class D extends Chunk647438.PureComponent {
       } = t, {
         onClose: n
       } = this.props;
-      return (0, l.jsx)(m.Z, {
+      return (0, a.jsx)(m.Z, {
         closePopout: e,
         onSelectEmoji: t => {
           let {
             emoji: n,
-            willClose: l
+            willClose: a
           } = t;
-          this.handleEmojiChange(n), l && e()
+          this.handleEmojiChange(n), a && e()
         },
         pickerIntention: _.Hz.STATUS,
         onNavigateAway: n

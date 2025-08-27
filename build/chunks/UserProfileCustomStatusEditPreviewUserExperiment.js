@@ -1,9 +1,9 @@
 /** Chunk was on 31649 **/
 /** chunk id: 503817, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  D: () => a
+  D: () => l
 });
-let l = (0, require("./818083.js").B)({
+let a = (0, require("./818083.js").B)({
   kind: "user",
   id: "2025-01_user_profile_custom_status_edit_preview",
   label: "User Profile Custom Status Edit Preview",
@@ -28,17 +28,17 @@ let l = (0, require("./818083.js").B)({
   }]
 });
 
-function a(t) {
+function l(t) {
   let {
     location: e,
     autoTrackExposure: n = true
   } = t, {
-    enabledWithStatusSelection: a,
+    enabledWithStatusSelection: l,
     enabledWithoutSatusSelection: r
-  } = l.getCurrentConfig({
+  } = a.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: n
   });
-  return a || r
+  return l || r
 }

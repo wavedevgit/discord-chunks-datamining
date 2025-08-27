@@ -56,8 +56,7 @@ function x() {
         value: require,
         onChange: Chunk512722,
         maxVisibleItems: 5,
-        isDisabled: !y || N,
-        look: Chunk481060.qQH.CUSTOM
+        isDisabled: !y || N
       })]
     }), (0, Chunk951288.jsx)(Chunk481060.LZC, {
       size: 24
@@ -76,8 +75,7 @@ function x() {
         value: x,
         onChange: j,
         maxVisibleItems: 5,
-        isDisabled: !y || N,
-        look: Chunk481060.qQH.CUSTOM
+        isDisabled: !y || N
       })]
     })]
   })

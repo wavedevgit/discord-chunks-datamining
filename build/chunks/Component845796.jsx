@@ -80,12 +80,10 @@ let C = () => {
     }), t(v(e))
   }, [Chunk120356, O, v, exports]), y = O(module);
   return (0, Chunk951288.jsx)("div", {
-    className: s()({
+    className: s()(Chunk182668.container, {
       [Chunk345213.shopTakeOver]: C
     }),
     children: (0, Chunk951288.jsx)(Chunk481060.PhF, {
-      look: Chunk481060.qQH.CUSTOM,
-      className: Chunk182668.custom,
       options: S.map(O),
       select: x,
       isSelected: e => e === y.value,

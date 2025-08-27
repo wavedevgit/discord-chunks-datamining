@@ -60,7 +60,8 @@ function y(e) {
           variant: "text-md/medium",
           children: E.intl.string(E.t["+uI23N"])
         }), (0, r.jsx)(o.q4e, {
-          look: o.qQH.CUSTOM,
+          variant: "text-only",
+          className: b.select,
           options: S,
           value: v,
           onChange: e => T({
@@ -82,7 +83,8 @@ function y(e) {
           variant: "text-md/medium",
           children: E.intl.string(E.t["Yh+HX1"])
         }), (0, r.jsx)(o.q4e, {
-          look: o.qQH.CUSTOM,
+          variant: "text-only",
+          className: b.select,
           options: S,
           value: I,
           onChange: e => T({
@@ -105,7 +107,8 @@ function y(e) {
           color: y ? "text-primary" : "text-muted",
           children: E.intl.string(E.t["FP+a4+"])
         }), (0, r.jsx)(o.q4e, {
-          look: o.qQH.CUSTOM,
+          variant: "text-only",
+          className: b.select,
           options: A,
           value: O,
           onChange: e => T({
@@ -138,6 +141,8 @@ function y(e) {
         title: E.intl.string(E.t["6k0AgI"]),
         titleClassName: b.selectItemTitle,
         children: (0, r.jsx)(o.q4e, {
+          variant: "text-only",
+          className: b.select,
           options: S,
           value: v,
           onChange: e => T({
@@ -149,6 +154,8 @@ function y(e) {
         title: E.intl.string(E.t.D2EGSk),
         titleClassName: b.selectItemTitle,
         children: (0, r.jsx)(o.q4e, {
+          variant: "text-only",
+          className: b.select,
           options: S,
           value: I,
           onChange: e => T({
@@ -160,6 +167,8 @@ function y(e) {
         title: E.intl.string(E.t["FP+a4+"]),
         titleClassName: b.selectItemTitle,
         children: (0, r.jsx)(o.q4e, {
+          variant: "text-only",
+          className: b.select,
           options: A,
           value: O,
           onChange: e => T({

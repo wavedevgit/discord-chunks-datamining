@@ -65,10 +65,10 @@ let w = e => {
         onClose: F
       } = (0, k.Db)(),
       {
-        currentTab: M,
-        hasFilters: D
+        currentTab: D,
+        hasFilters: M
       } = (0, y.S)(),
-      H = l.useMemo(() => n === N.AW.HOME && M && D() ? M : n, [n, M, D]),
+      H = l.useMemo(() => n === N.AW.HOME && D && M() ? D : n, [n, D, M]),
       {
         categories: W,
         refreshCategories: U

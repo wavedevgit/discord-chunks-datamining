@@ -43,11 +43,11 @@ let j = e => {
   } = e, A = (0, i.e7)([d.default], () => d.default.getCurrentUser()), R = m.ZP.canUseCollectibles(A), Z = (0, v.G)("FeedBlock"), {
     sortType: w,
     setSortType: F,
-    sortedItems: M,
-    sortOptions: D,
+    sortedItems: D,
+    sortOptions: M,
     shuffleProducts: H,
     showRecommendationOption: W
-  } = (0, S.Z)(j, R, B), U = (0, O.St)(M), V = (0, i.e7)([u.Z], () => u.Z.useReducedMotion), z = (0, i.e7)([g.Z], () => g.Z.isFocused()), G = !V && z, {
+  } = (0, S.Z)(j, R, B), U = (0, O.St)(D), V = (0, i.e7)([u.Z], () => u.Z.useReducedMotion), z = (0, i.e7)([g.Z], () => g.Z.isFocused()), G = !V && z, {
     animationPhase: q,
     startAnimation: K
   } = (0, E.y)(), Y = (0, _.sp)(), X = null != (t = null == Y ? true : Y.sessionId) ? t : "", Q = l.useRef(null), J = l.useCallback(e => {
@@ -119,7 +119,7 @@ let j = e => {
         }), (0, r.jsx)("div", {
           className: P,
           children: (0, r.jsx)(o.PhF, {
-            options: D,
+            options: M,
             select: J,
             className: L.sortSelect,
             popoutClassName: s()({

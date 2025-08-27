@@ -82,7 +82,6 @@ function O(e) {
             value: N,
             onChange: E,
             maxVisibleItems: 5,
-            look: s.qQH.CUSTOM,
             "aria-labelledby": M
           })
         })

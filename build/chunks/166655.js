@@ -9,17 +9,17 @@ var Chunk134632 = require("./134632.js"),
 
 function i(t) {
   switch (t) {
-    case l.w.QUESTION:
+    case a.w.QUESTION:
       return r.intl.string(r.t.nLMBxM);
-    case l.w.EXCITED:
+    case a.w.EXCITED:
       return r.intl.string(r.t.UZ5AQk);
-    case l.w.RECOMMEND:
+    case a.w.RECOMMEND:
       return r.intl.string(r.t.lneQf3);
-    case l.w.THINK:
+    case a.w.THINK:
       return r.intl.string(r.t["xod36+"]);
-    case l.w.LOVE:
+    case a.w.LOVE:
       return r.intl.string(r.t.xaCthI);
     default:
-      (0, a.vE)(t)
+      (0, l.vE)(t)
   }
 }

@@ -18,12 +18,12 @@ function f(t) {
   let {
     option: e,
     isSelected: n,
-    onClick: a
+    onClick: l
   } = t, c = (0, s.Z)(e.value);
-  return (0, l.jsx)(o.DY3, {
+  return (0, a.jsx)(o.DY3, {
     text: c,
-    children: (0, l.jsx)(o.P3F, {
-      onClick: a,
+    children: (0, a.jsx)(o.P3F, {
+      onClick: l,
       "aria-pressed": n,
       className: r()(m.customStatusLabelSelectorItem, n && m.customStatusLabelSelectorItemSelected),
       "aria-label": n ? d.intl.formatToPlainString(d.t["+KXSFh"], {
@@ -31,7 +31,7 @@ function f(t) {
       }) : d.intl.formatToPlainString(d.t.mDVlTk, {
         label: c
       }),
-      children: (0, l.jsx)(u.Z, {
+      children: (0, a.jsx)(u.Z, {
         label: e.value,
         size: "xs",
         color: n ? i.Z.colors.INTERACTIVE_ACTIVE : i.Z.colors.INTERACTIVE_NORMAL,
@@ -46,9 +46,9 @@ function p(t) {
     currentValue: e,
     onChange: n
   } = t;
-  return (0, l.jsx)("div", {
+  return (0, a.jsx)("div", {
     className: m.customStatusLabelSelector,
-    children: c.Ub.map(t => (0, l.jsx)(f, {
+    children: c.Ub.map(t => (0, a.jsx)(f, {
       option: t,
       isSelected: e === t.value,
       onClick: () => n(t.value)

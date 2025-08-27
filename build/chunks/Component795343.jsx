@@ -61,9 +61,9 @@ function v(e) {
       cacheDisabled: L
     })
   }, [T, a, j, L, n, x]);
-  let M = l.useRef(null),
+  let D = l.useRef(null),
     {
-      setQueryPageSize: D,
+      setQueryPageSize: M,
       setQueryPageOffset: H,
       queryPageSize: W
     } = (0, f.S)(),
@@ -76,10 +76,10 @@ function v(e) {
   let G = W > 0 && !z && 0 === F.length;
   l.useEffect(() => {
     let e = new ResizeObserver(() => {
-      null != M.current && D(Math.floor(5 * getComputedStyle(M.current).gridTemplateColumns.split(/\s+/).length))
+      null != D.current && M(Math.floor(5 * getComputedStyle(D.current).gridTemplateColumns.split(/\s+/).length))
     });
-    if (null != M.current) return e.observe(M.current), () => e.disconnect()
-  }, [D]);
+    if (null != D.current) return e.observe(D.current), () => e.disconnect()
+  }, [M]);
   let q = l.useCallback(e => {
     u.default.track(S.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
       collectibles_shop_session_id: null == y ? true : y.sessionId,
@@ -100,7 +100,7 @@ function v(e) {
         className: s()(O.products, {
           [O.loadIn]: U
         }),
-        ref: M,
+        ref: D,
         children: [z && [...Array(W)].map((e, t) => (0, r.jsx)(h.K, {}, t)), !z && F.map((e, t) => {
           let n = g.Z.getCategory(e.categorySkuId);
           return null == n ? null : (0, r.jsx)(d.k0, {

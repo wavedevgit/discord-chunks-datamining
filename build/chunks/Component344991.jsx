@@ -162,23 +162,17 @@ function I(e) {
     children: [(0, r.jsx)("div", {
       className: h.container,
       children: H ? (0, r.jsx)(c.VcW, E({
-        className: h.badges,
         value: Array.from(R.values()),
         onChange: K,
         multi: true,
         inputClassNames: a()({
-          [h.soloInput]: 0 === R.size,
-          [h.inlineInput]: R.size > 0,
           [h.hidden]: !Q
         }),
-        closeOnSelect: false,
-        centerCaret: true
+        closeOnSelect: false
       }, J), j) : (0, r.jsx)(c.VcW, E({
-        className: h.singleSelect,
         value: [...R.values()][0],
         onChange: z,
-        clearable: true,
-        centerCaret: true
+        clearable: true
       }, J), j)
     }), null == F || V ? null : (0, r.jsx)(d.st, y(E({}, (0, d.c4)(F)), {
       className: m.error

@@ -1,9 +1,9 @@
 /** Chunk was on 31649 **/
 /** chunk id: 644540, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  P: () => a
+  P: () => l
 });
-let l = (0, require("./818083.js").B)({
+let a = (0, require("./818083.js").B)({
   kind: "user",
   id: "2025-04_custom_status_clear_after_times",
   label: "Custom Status Clear After Times Experiment",
@@ -19,16 +19,16 @@ let l = (0, require("./818083.js").B)({
   }]
 });
 
-function a(t) {
+function l(t) {
   let {
     location: e,
     autoTrackExposure: n = true
   } = t, {
-    enabled: a
-  } = l.useExperiment({
+    enabled: l
+  } = a.useExperiment({
     location: e
   }, {
     autoTrackExposure: n
   });
-  return a
+  return l
 }

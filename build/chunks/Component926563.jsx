@@ -28,44 +28,44 @@ function b(t) {
     transitionState: j,
     label: O
   } = t, v = (0, i.ZP)(e.id);
-  return (0, l.jsxs)(c.Z, {
+  return (0, a.jsxs)(c.Z, {
     user: e,
     displayProfile: v,
     themeType: p.l.POPOUT,
     className: h.profilePreviewContainer,
-    children: [(0, l.jsxs)("header", {
-      children: [(0, l.jsx)(u.Z, {
+    children: [(0, a.jsxs)("header", {
+      children: [(0, a.jsx)(u.Z, {
         user: e,
         displayProfile: v,
         themeType: p.l.POPOUT
-      }), (0, l.jsx)("div", {
+      }), (0, a.jsx)("div", {
         inert: true,
-        children: (0, l.jsx)(o.Z, {
+        children: (0, a.jsx)(o.Z, {
           user: e,
           displayProfile: v,
           themeType: p.l.POPOUT,
           previewStatus: S,
           className: h.avatar
         })
-      }), (0, l.jsx)(m.Z, {
+      }), (0, a.jsx)(m.Z, {
         user: e,
         themeType: p.l.POPOUT,
         previewText: n,
         previewEmoji: b,
         placeholderText: g,
-        hasEntered: j === a.Dvm.ENTERED,
+        hasEntered: j === l.Dvm.ENTERED,
         previewLabel: O
       })]
-    }), (null == v ? true : v.profileEffect) != null && (0, l.jsx)(r.Z, {
+    }), (null == v ? true : v.profileEffect) != null && (0, a.jsx)(r.Z, {
       profileEffectId: v.profileEffect.id
-    }), (0, l.jsx)("div", {
+    }), (0, a.jsx)("div", {
       className: h.usernameContainer,
       inert: true,
-      children: (0, l.jsx)(d.Z, {
+      children: (0, a.jsx)(d.Z, {
         user: e,
         nickname: f.ZP.getName(null, null, e),
         pronouns: null == v ? true : v.pronouns,
-        tags: (0, l.jsx)(s.Z, {
+        tags: (0, a.jsx)(s.Z, {
           displayProfile: v,
           themeType: p.l.POPOUT
         })

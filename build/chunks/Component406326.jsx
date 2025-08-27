@@ -119,9 +119,8 @@ function _(e) {
         options: T,
         value: l,
         onChange: s,
-        look: o.qQH.CUSTOM,
-        className: g.searchModeSelect,
-        popoutWidth: 130
+        popoutWidth: 130,
+        size: "sm"
       }), (0, r.jsx)(o.zxk, {
         variant: "secondary",
         onClick: N,

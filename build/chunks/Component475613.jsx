@@ -11,17 +11,17 @@ var Chunk951288 = require("./951288.js"),
 function o(t) {
   for (var e = 1; e < arguments.length; e++) {
     var n = null != arguments[e] ? arguments[e] : {},
-      l = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(t) {
+      a = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(n).filter(function(t) {
       return Object.getOwnPropertyDescriptor(n, t).enumerable
-    }))), l.forEach(function(e) {
-      var l;
-      l = n[e], e in t ? Object.defineProperty(t, e, {
-        value: l,
+    }))), a.forEach(function(e) {
+      var a;
+      a = n[e], e in t ? Object.defineProperty(t, e, {
+        value: a,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : t[e] = l
+      }) : t[e] = a
     })
   }
   return t
@@ -32,20 +32,20 @@ function s(t) {
     location: e
   } = t, n = function(t, e) {
     if (null == t) return {};
-    var n, l, a = function(t, e) {
+    var n, a, l = function(t, e) {
       if (null == t) return {};
-      var n, l, a = {},
+      var n, a, l = {},
         r = Object.keys(t);
-      for (l = 0; l < r.length; l++) n = r[l], e.indexOf(n) >= 0 || (a[n] = t[n]);
-      return a
+      for (a = 0; a < r.length; a++) n = r[a], e.indexOf(n) >= 0 || (l[n] = t[n]);
+      return l
     }(t, e);
     if (Object.getOwnPropertySymbols) {
       var r = Object.getOwnPropertySymbols(t);
-      for (l = 0; l < r.length; l++) n = r[l], !(e.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(t, n) && (a[n] = t[n])
+      for (a = 0; a < r.length; a++) n = r[a], !(e.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(t, n) && (l[n] = t[n])
     }
-    return a
+    return l
   }(t, ["location"]);
-  return (0, a.D)({
+  return (0, l.D)({
     location: e
-  }) ? (0, l.jsx)(i.Z, o({}, n)) : (0, l.jsx)(r.Z, o({}, n))
+  }) ? (0, a.jsx)(i.Z, o({}, n)) : (0, a.jsx)(r.Z, o({}, n))
 }

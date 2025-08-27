@@ -187,7 +187,6 @@ function T(e) {
       onChange: B,
       options: V(),
       isDisabled: !U,
-      className: m.selector,
       popoutPosition: "bottom",
       renderOptionLabel: F,
       renderOptionValue: e => {

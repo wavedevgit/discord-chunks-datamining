@@ -58,7 +58,8 @@ function g() {
         variant: "text-md/medium",
         children: Chunk388032.intl.string(Chunk388032.t["+uI23N"])
       }), (0, Chunk951288.jsx)(Chunk481060.q4e, {
-        look: Chunk481060.qQH.CUSTOM,
+        variant: "text-only",
+        className: Chunk789318.select,
         options: y,
         value: g,
         onChange: e => b({
@@ -80,7 +81,8 @@ function g() {
         variant: "text-md/medium",
         children: Chunk388032.intl.string(Chunk388032.t["Yh+HX1"])
       }), (0, Chunk951288.jsx)(Chunk481060.q4e, {
-        look: Chunk481060.qQH.CUSTOM,
+        variant: "text-only",
+        className: Chunk789318.select,
         options: y,
         value: E,
         onChange: e => b({
@@ -102,7 +104,8 @@ function g() {
         variant: "text-md/medium",
         children: Chunk388032.intl.string(Chunk388032.t["FP+a4+"])
       }), (0, Chunk951288.jsx)(Chunk481060.q4e, {
-        look: Chunk481060.qQH.CUSTOM,
+        variant: "text-only",
+        className: Chunk789318.select,
         options: O,
         value: require,
         onChange: e => b({

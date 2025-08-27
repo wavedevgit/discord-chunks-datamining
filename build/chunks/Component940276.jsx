@@ -113,8 +113,7 @@ let m = function() {
       }), module.length > 0 && (0, Chunk951288.jsxs)("div", {
         className: Chunk378976.controlsContainer,
         children: [(0, Chunk951288.jsx)(Chunk481060.PhF, {
-          className: Chunk378976.sortOrderSelect,
-          look: Chunk481060.qQH.CUSTOM,
+          variant: "text-only",
           popoutWidth: "auto",
           options: [{
             label: Chunk388032.intl.string(Chunk388032.t.STMPJy),
