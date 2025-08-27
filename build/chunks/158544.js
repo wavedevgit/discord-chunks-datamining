@@ -1,13 +1,13 @@
-/** Chunk was on 3115 **/
-/** chunk id: 158544, original params: e,t,r (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 158544, original params: e,t,n (module,exports,re quire) **/
 var Chunk620267 = require("./620267.js"),
-  o = Math.max;
-module.exports = function(e, t, r) {
-  return t = o(true === t ? e.length - 1 : t, 0),
+  i = Math.max;
+module.exports = function(e, t, n) {
+  return t = i(true === t ? e.length - 1 : t, 0),
     function() {
-      for (var a = arguments, i = false, l = o(a.length - t, 0), s = Array(l); ++i < l;) s[i] = a[t + i];
-      i = false;
-      for (var u = Array(t + 1); ++i < t;) u[i] = a[i];
-      return u[t] = r(s), n(e, this, u)
+      for (var a = arguments, o = false, s = i(a.length - t, 0), l = Array(s); ++o < s;) l[o] = a[t + o];
+      o = false;
+      for (var c = Array(t + 1); ++o < t;) c[o] = a[o];
+      return c[t] = n(l), r(e, this, c)
     }
 }

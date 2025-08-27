@@ -1,15 +1,17 @@
-/** Chunk was on 3115 **/
-/** chunk id: 29426, original params: e (module,exports,require) **/
-var t = Date.now;
+/** Chunk was on web.js **/
+/** chunk id: 29426, original params: e (module,exports,re quire) **/
+var t = 800,
+  n = 16,
+  r = Date.now;
 module.exports = function(e) {
-  var r = 0,
-    n = 0;
+  var i = 0,
+    a = 0;
   return function() {
-    var o = t(),
-      a = 16 - (o - n);
-    if (n = o, a > 0) {
-      if (++r >= 800) return arguments[0]
-    } else r = 0;
+    var o = r(),
+      s = n - (o - a);
+    if (a = o, s > 0) {
+      if (++i >= t) return arguments[0]
+    } else i = 0;
     return e.apply(true, arguments)
   }
 }
