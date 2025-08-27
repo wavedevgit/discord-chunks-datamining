@@ -120,7 +120,7 @@ function P(e) {
   let {
     discountOffer: t,
     premiumSubscription: n
-  } = e, i = (0, h._)(n, b.Xh.PREMIUM_MONTH_TIER_2, t);
+  } = e, i = (0, h._n)(n, b.Xh.PREMIUM_MONTH_TIER_2, t);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(a.X6q, {
       variant: "heading-xl/semibold",
@@ -160,7 +160,7 @@ let w = function(e) {
     (0, a.ZDy)(async () => {
       let {
         default: i
-      } = await Promise.all([n.e("58067"), n.e("81709")]).then(n.bind(n, 833569));
+      } = await Promise.all([n.e("58067"), n.e("81709"), n.e("70349")]).then(n.bind(n, 833569));
       return n => (0, r.jsx)(i, C(S({}, n), {
         premiumSubscription: t,
         analyticsLocation: h,

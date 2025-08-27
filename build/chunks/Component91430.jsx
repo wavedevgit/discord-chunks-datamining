@@ -273,7 +273,7 @@ function Q(e) {
     [O] = (0, R.ED)(y);
   O = null != d ? d : O;
   let v = (0, b.Z)(),
-    I = (0, D.$)(),
+    I = (0, D.$)("subscription_details"),
     T = (0, P.lr)(),
     S = C.ZP.isBaseSubscriptionCanceled(t),
     A = (0, x.P)(t, i);
@@ -381,7 +381,7 @@ function ee(e) {
   null != a && null != a[0] && (i = a[0]);
   let {
     analyticsLocations: f
-  } = (0, g.ZP)(m.Z.SUBSCRIPTION_DETAILS), _ = (0, D.$)(), h = null != a ? a.slice(1) : [], [E] = (0, R.ED)({
+  } = (0, g.ZP)(m.Z.SUBSCRIPTION_DETAILS), _ = (0, D.$)("subscription_details"), h = null != a ? a.slice(1) : [], [E] = (0, R.ED)({
     subscriptionId: i.id,
     renewal: true,
     analyticsLocations: f,

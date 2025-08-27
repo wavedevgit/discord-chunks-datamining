@@ -191,7 +191,7 @@ let Z = () => {
       $ = (0, y.rT)(),
       ee = (0, v.Ng)(),
       et = null != ee && (0, v.Wp)(ee, P.Si.TIER_2),
-      en = (0, A.A)(P.Xh.PREMIUM_MONTH_TIER_2),
+      en = (0, A.Aq)(P.Xh.PREMIUM_MONTH_TIER_2),
       er = "".concat(en, "/").concat((0, E.eP)(P.rV.MONTH)),
       ei = (0, E.CY)(P.Xh.PREMIUM_MONTH_TIER_0),
       ea = (0, E.CY)(P.Xh.PREMIUM_MONTH_TIER_2),

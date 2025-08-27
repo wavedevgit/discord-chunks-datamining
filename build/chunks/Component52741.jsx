@@ -30,7 +30,7 @@ function O(e) {
     defaultPriceString: n,
     subscriptionPlan: i,
     discountOffer: a
-  } = e, o = (0, m.A)(i);
+  } = e, o = (0, m.Aq)(i);
   return (0, r.jsx)(r.Fragment, {
     children: b.intl.format(b.t.sJTwHR, {
       numMonths: null != (t = a.discount.user_usage_limit) ? t : E.rt,

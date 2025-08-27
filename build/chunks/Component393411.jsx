@@ -238,7 +238,7 @@ let W = function(e) {
       (0, c.ZDy)(async () => {
         let {
           default: t
-        } = await Promise.all([n.e("58067"), n.e("81709")]).then(n.bind(n, 833569));
+        } = await Promise.all([n.e("58067"), n.e("81709"), n.e("70349")]).then(n.bind(n, 833569));
         return n => (0, r.jsx)(t, U(M({}, n), {
           premiumSubscription: i,
           analyticsLocation: j,

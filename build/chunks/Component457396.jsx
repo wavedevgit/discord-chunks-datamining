@@ -1,8 +1,8 @@
 /** Chunk was on 1272 **/
 /** chunk id: 457396, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  g: () => H,
-  i: () => V
+  g: () => Y,
+  i: () => W
 }), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -24,15 +24,19 @@ var Chunk951288 = require("./951288.js"),
   Chunk502087 = require("./502087.js"),
   Chunk367074 = require("./367074.js"),
   Chunk695349 = require("./695349.js"),
+  Chunk219673 = require("./219673.js"),
   Chunk532245 = require("./532245.js"),
   Chunk870041 = require("./870041.js"),
   Chunk963590 = require("./963590.js"),
   Chunk767870 = require("./767870.jsx"),
+  Chunk331972 = require("./331972.js"),
   Chunk104494 = require("./104494.js"),
   Chunk639119 = require("./639119.js"),
   Chunk655525 = require("./655525.jsx"),
   Chunk93237 = require("./93237.js"),
   Chunk138176 = require("./138176.jsx"),
+  Chunk484605 = require("./484605.jsx"),
+  Chunk961892 = require("./961892.jsx"),
   Chunk924540 = require("./924540.jsx"),
   Chunk474486 = require("./474486.jsx"),
   Chunk497334 = require("./497334.jsx"),
@@ -43,21 +47,21 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx");
-let V = e => {
+let W = e => {
     let {
       selected: t
-    } = e, n = (0, a.e7)([m.default], () => m.default.getCurrentUser()), r = (0, a.e7)([b.Z], () => b.Z.getPremiumTypeSubscription()), i = (0, P.N)(), l = (0, T.Ng)(), o = (0, y.Vi)(), s = (0, R.V)(), c = (0, O.Qo)(n, r), u = (0, a.e7)([E.Z], () => E.Z.getCreatedAtOverride()), d = t || null != i || null != l || o || null != s || c, p = null != u ? u : null == n ? true : n.createdAt;
+    } = e, n = (0, a.e7)([m.default], () => m.default.getCurrentUser()), r = (0, a.e7)([b.Z], () => b.Z.getPremiumTypeSubscription()), i = (0, x.N)(), l = (0, j.Ng)(), o = (0, y.Vi)(), s = (0, U.V)(), c = (0, O.Qo)(n, r), u = (0, a.e7)([E.Z], () => E.Z.getCreatedAtOverride()), d = t || null != i || null != l || o || null != s || c, p = null != u ? u : null == n ? true : n.createdAt;
     return d || null != n && null != p && Date.now() - p.getTime() > 12096e5
   },
-  H = e => {
+  Y = e => {
     let t, n, E;
-    var H, F, {
-        selected: z,
-        nitroTabButtonRef: W,
-        route: Y,
-        locationState: K
+    var Y, K, {
+        selected: q,
+        nitroTabButtonRef: Q,
+        route: X,
+        locationState: J
       } = e,
-      q = function(e, t) {
+      $ = function(e, t) {
         if (null == e) return {};
         var n, r, i = function(e, t) {
           if (null == e) return {};
@@ -72,117 +76,127 @@ let V = e => {
         }
         return i
       }(e, ["selected", "nitroTabButtonRef", "route", "locationState"]);
-    let Q = (0, a.e7)([m.default], () => m.default.getCurrentUser()),
-      X = (0, a.e7)([b.Z], () => b.Z.getPremiumTypeSubscription()),
-      J = (0, O.Qo)(Q, X),
+    let ee = (0, a.e7)([m.default], () => m.default.getCurrentUser()),
+      et = (0, a.e7)([b.Z], () => b.Z.getPremiumTypeSubscription()),
+      en = (0, O.Qo)(ee, et),
       {
-        enabled: $,
-        variant: ee
-      } = I.p1.useExperiment({
+        enabled: er,
+        variant: ei
+      } = C.p1.useExperiment({
         location: "NitroTabButton"
       }),
       {
-        enabled: et
-      } = I.pd.useExperiment({
+        enabled: el
+      } = C.pd.useExperiment({
+        location: "NitroTabButton"
+      }),
+      {
+        enabled: ea
+      } = I.b.useConfig({
         location: "NitroTabButton"
       });
-    I.VL.useConfig({
+    C.VL.useConfig({
       location: "NitroTabButton"
-    }), I.CF.useConfig({
+    }), C.CF.useConfig({
       location: "NitroTabButton"
     });
-    let en = (0, l.JA)("nitro"),
-      er = (0, P.N)(),
-      ei = (0, T.Ng)(),
-      el = (0, v.W)(),
-      ea = (0, y.Vi)(),
-      eo = (0, x.HI)({
-        trialOffer: er
+    let eo = (0, l.JA)("nitro"),
+      es = (0, x.N)(),
+      ec = (0, j.Ng)(),
+      eu = (0, P.$)("nitro tab"),
+      ed = (0, v.W)(),
+      ep = (0, y.Vi)(),
+      ef = (0, Z.HI)({
+        trialOffer: es
       }),
-      es = (0, R.V)(),
-      ec = (0, x.eW)(),
-      eu = C.ZP.useExperiment({
+      eh = (0, U.V)(),
+      eg = (0, Z.eW)(),
+      em = S.ZP.useExperiment({
         location: "NitroTabButton"
       }),
-      ed = (0, D.Kn)("NitroTabButton") && eu.cohort === C.xI.Control,
+      eb = (0, G.Kn)("NitroTabButton") && em.cohort === S.xI.Control,
+      e_ = ea && null != eu && null != et && et.status === H.O0b.CANCELED,
       {
-        fractionalState: ep,
-        startsAt: ef,
-        endsAt: eh
+        fractionalState: eO,
+        startsAt: eE,
+        endsAt: ey
       } = (0, d.Z)({
         forceFetch: true
       }),
-      [eg, em] = (0, g.bf)(ep !== M.a$.NONE ? o.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL : null, {
-        showAfterTimestamp: ef.valueOf(),
+      [ev, eI] = (0, g.bf)(eO !== V.a$.NONE ? o.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL : null, {
+        showAfterTimestamp: eE.valueOf(),
         cooldownDurationMs: 0
       }),
-      eb = (0, S.Z)({
+      eC = (0, N.Z)({
         location: "NitroTabButton"
       }),
-      e_ = (null == er ? true : er.trial_id) === M.a7,
-      eO = (0, p.YZ)("NitroTabButton"),
-      eE = [];
-    (0, f.Kl)() && (ea && eE.push(o.z.BOGO_2025_NITRO_TAB_BADGE), eb && eE.push(o.z.VOICE_FILTER_EARLY_ACCESS_PREMIUM_TAB_BADGE), el && eE.push(o.z.Q2_2025_MARKETING_MOMENT_NITRO_TAB_BADGE_V2), eO && eE.push(o.z.CUSTOM_THEMES_PREMIUM_TAB_BADGE));
-    let [ey, ev] = (0, g.US)(eE, true, true);
+      eS = (null == es ? true : es.trial_id) === V.a7,
+      eN = (0, p.YZ)("NitroTabButton"),
+      eT = [];
+    (0, f.Kl)() && (ep && eT.push(o.z.BOGO_2025_NITRO_TAB_BADGE), eC && eT.push(o.z.VOICE_FILTER_EARLY_ACCESS_PREMIUM_TAB_BADGE), ed && eT.push(o.z.Q2_2025_MARKETING_MOMENT_NITRO_TAB_BADGE_V2), eN && eT.push(o.z.CUSTOM_THEMES_PREMIUM_TAB_BADGE));
+    let [eP, ej] = (0, g.US)(eT, true, true);
     if (i.useEffect(() => {
-        true === z && null != ey && ev(G.L.AUTO_DISMISS)
-      }, [ev, z, ey]), !V({
-        selected: z
+        true === q && null != eP && ej(F.L.AUTO_DISMISS)
+      }, [ej, q, eP]), !W({
+        selected: q
       })) return null;
-    let eI = () => {
-      eg === o.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL && em(G.L.TAKE_ACTION), _.default.track(U.rMx.NITRO_TAB_VISITED, {
+    let ex = () => {
+      ev === o.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL && eI(F.L.TAKE_ACTION), _.default.track(H.rMx.NITRO_TAB_VISITED, {
         badge_decorator: E,
-        has_premium: J
-      }), null != ey && ev(G.L.USER_DISMISS)
+        has_premium: en
+      }), null != eP && ej(F.L.USER_DISMISS)
     };
-    if (ep === M.a$.NONE || el || (E = 7, n = (0, r.jsx)(N.Z, {
+    if (eO === V.a$.NONE || ed || (E = 7, n = (0, r.jsx)(T.Z, {
         className: "",
-        startsAt: ef,
-        endsAt: eh,
+        startsAt: eE,
+        endsAt: ey,
         messageStyle: u.aj.SHORT_TIME,
         upperCase: true
-      })), ea) n = (0, r.jsx)(j.Z, {}), E = 0;
-    else if (eo) {
-      let e = (0, x.$q)();
-      n = (0, r.jsx)(Z._y, {
-        isTabSelected: z,
-        badgeCopy: B.intl.string(B.t.OS9KPj),
-        offerExpiresAt: true === e ? null == er ? true : er.expires_at : null
+      })), ep) n = (0, r.jsx)(A.Z, {}), E = 0;
+    else if (ef) {
+      let e = (0, Z.$q)();
+      n = (0, r.jsx)(D._y, {
+        isTabSelected: q,
+        badgeCopy: z.intl.string(z.t.OS9KPj),
+        offerExpiresAt: true === e ? null == es ? true : es.expires_at : null
       }), E = 4
-    } else ey === o.z.VOICE_FILTER_EARLY_ACCESS_PREMIUM_TAB_BADGE || ey === o.z.CUSTOM_THEMES_PREMIUM_TAB_BADGE ? (n = (0, r.jsx)(Z._y, {
-      isTabSelected: z,
-      badgeCopy: B.intl.string(B.t.y2b7CA),
+    } else eP === o.z.VOICE_FILTER_EARLY_ACCESS_PREMIUM_TAB_BADGE || eP === o.z.CUSTOM_THEMES_PREMIUM_TAB_BADGE ? (n = (0, r.jsx)(D._y, {
+      isTabSelected: q,
+      badgeCopy: z.intl.string(z.t.y2b7CA),
       offerExpiresAt: null
-    }), E = 2) : el ? (n = (0, r.jsx)(L.S, {
-      expiresAt: eh
-    }), E = 4) : null != es ? (n = (0, r.jsx)(k.Z, {
-      copy: es,
+    }), E = 2) : ed ? (n = (0, r.jsx)(M.S, {
+      expiresAt: ey
+    }), E = 4) : null != eh ? (n = (0, r.jsx)(B.Z, {
+      copy: eh,
       showStars: false
-    }), E = 1) : null != ei ? (n = (0, r.jsx)(Z.GN, {
-      userDiscount: ei,
-      isTabSelected: z,
+    }), E = 1) : null != ec ? (n = (0, r.jsx)(D.GN, {
+      userDiscount: ec,
+      isTabSelected: q,
       includesAmountOff: false
-    }), E = 3) : null == er || e_ ? ed && (n = (0, r.jsx)(w.l, {
-      isSelected: z,
+    }), E = 3) : null == es || eS ? eb ? (n = (0, r.jsx)(k.l, {
+      isSelected: q,
       onSelect: () => (0, h.Q3)(o.z.REFERRAL_PROGRAM_PREMIUM_TAB_BADGE, {
-        dismissAction: G.L.TAKE_ACTION
+        dismissAction: F.L.TAKE_ACTION
       })
-    }), E = 6) : (n = (0, r.jsx)(Z.$H, {
-      trialOffer: er,
-      isTabSelected: z
+    }), E = 6) : e_ && (n = (0, r.jsx)(R.Z, {
+      isSelected: q,
+      discountOffer: eu
+    }), E = 8) : (n = (0, r.jsx)(D.$H, {
+      trialOffer: es,
+      isTabSelected: q
     }), E = 4);
-    let eC = B.intl.string(B.t.Ipxkoq);
-    J && et && (eC = B.intl.string(B.t["4gwVVl"])), !J && $ && (ee === I.Rx.TRY_NITRO && null != er ? eC = B.intl.string(B.t["3O6A4e"]) : ee === I.Rx.JOIN_NITRO ? eC = B.intl.string(B.t.brBiOz) : ee === I.Rx.GET_NITRO && (eC = B.intl.string(B.t.GayC1t))), ec && eu.cohort !== C.xI.Control && (n = (0, r.jsx)(Z._y, {
-      isTabSelected: z,
-      badgeCopy: B.intl.string(B.t.RDE0SU),
+    let eA = z.intl.string(z.t.Ipxkoq);
+    en && el && (eA = z.intl.string(z.t["4gwVVl"])), !en && er && (ei === C.Rx.TRY_NITRO && null != es ? eA = z.intl.string(z.t["3O6A4e"]) : ei === C.Rx.JOIN_NITRO ? eA = z.intl.string(z.t.brBiOz) : ei === C.Rx.GET_NITRO && (eA = z.intl.string(z.t.GayC1t))), eg && em.cohort !== S.xI.Control && (n = (0, r.jsx)(D._y, {
+      isTabSelected: q,
+      badgeCopy: z.intl.string(z.t.RDE0SU),
       offerExpiresAt: null
-    }), E = 4, eI = () => {
-      _.default.track(U.rMx.NITRO_TAB_VISITED, {
+    }), E = 4, ex = () => {
+      _.default.track(H.rMx.NITRO_TAB_VISITED, {
         badge_decorator: E,
-        has_premium: J
-      }), (0, x.ZL)()
+        has_premium: en
+      }), (0, Z.ZL)()
     });
-    let eS = (0, r.jsx)(c.Qj, (H = function(e) {
+    let eZ = (0, r.jsx)(c.Qj, (Y = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -200,29 +214,34 @@ let V = e => {
       }
       return e
     }({
-      listItemRef: W,
-      selected: z,
-      route: Y,
+      listItemRef: Q,
+      selected: q,
+      route: X,
       icon: s.SrA,
-      text: eC,
-      locationState: K,
-      onClick: eI
-    }, q, en), F = F = {
+      text: eA,
+      locationState: J,
+      onClick: ex
+    }, $, eo), K = K = {
       className: t,
       children: n
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(H, Object.getOwnPropertyDescriptors(F)) : (function(e, t) {
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(Y, Object.getOwnPropertyDescriptors(K)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
         var r = Object.getOwnPropertySymbols(e);
         n.push.apply(n, r)
       }
       return n
-    })(Object(F)).forEach(function(e) {
-      Object.defineProperty(H, e, Object.getOwnPropertyDescriptor(F, e))
-    }), H));
-    return ec && eu.cohort === C.xI.Static ? (0, r.jsx)(A.X, {
-      children: eS
-    }) : ed ? (0, r.jsx)(w.C, {
-      children: eS
-    }) : eS
+    })(Object(K)).forEach(function(e) {
+      Object.defineProperty(Y, e, Object.getOwnPropertyDescriptor(K, e))
+    }), Y));
+    return eg && em.cohort === S.xI.Static ? (0, r.jsx)(w.X, {
+      children: eZ
+    }) : eb ? (0, r.jsx)(k.C, {
+      children: eZ
+    }) : e_ && 8 === E ? (0, r.jsx)(L.Z, {
+      targetElementRef: Q,
+      discountOffer: eu,
+      premiumSubscription: et,
+      children: eZ
+    }) : eZ
   }

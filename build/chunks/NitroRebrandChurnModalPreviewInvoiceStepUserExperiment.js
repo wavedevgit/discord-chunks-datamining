@@ -1,12 +1,12 @@
-/** Chunk was on 81709 **/
-/** chunk id: 140447, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 70349 **/
+/** chunk id: 140447, original params: o,e,n (module,exports,require) **/
 require.d(exports, {
-  P: () => s,
-  R: () => a
+  P: () => r,
+  R: () => c
 });
 var Chunk818083 = require("./818083.js"),
   Chunk987338 = require("./987338.js");
-let a = (0, Chunk818083.B)({
+let c = (0, Chunk818083.B)({
     id: "2025-08_nitro_rebrand_churn_modal_preview_invoice_step",
     kind: "user",
     label: "Nitro Rebrand Churn Modal Preview Invoice Step",
@@ -22,11 +22,11 @@ let a = (0, Chunk818083.B)({
       }
     }]
   }),
-  s = e => {
+  r = o => {
     let {
-      location: t
-    } = e;
-    return a.useExperiment({
-      location: t
+      location: e
+    } = o;
+    return c.useExperiment({
+      location: e
     })
   }
