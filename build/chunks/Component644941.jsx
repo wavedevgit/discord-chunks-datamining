@@ -293,7 +293,8 @@ let K = e => {
       viewId: y,
       applicationId: r,
       gameName: null != M ? M : "",
-      authorId: s
+      authorId: s,
+      profileType: N.j7.FullProfile
     }), (0, v.Jn)()
   }), (0, j.Z)(w), i.useEffect(() => {
     b.startsWith("en") || (null == L ? true : L.summaryLocalized) != null || m.Z.getDetectableGamesSupplemental([r], {

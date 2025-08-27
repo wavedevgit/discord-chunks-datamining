@@ -107,7 +107,7 @@ let L = Chunk647438.memo(e => {
       isGuest: V,
       isSelf: k,
       requestToStreamActivity: eo ? Y : true,
-      application: ea && (null == Y ? true : Y.session_id) != null ? K : true,
+      application: (ea || et) && (null == Y ? true : Y.session_id) != null ? K : true,
       showHangStatus: en && et && (k || null != ei),
       hangStatusActivity: k ? er : ei
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {

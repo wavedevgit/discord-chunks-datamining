@@ -44,16 +44,16 @@ function j(t) {
     G = null != (k = null == (x = A.chatInputType) || null == (E = x.submit) ? true : E.button) && k,
     H = F || R,
     U = "" !== N ? [(0, l.jsx)(s.sNh, {
-      id: "copy",
-      label: S.intl.string(S.t.OpuAlJ),
-      hint: (0, p.isMac)() ? "⌘C" : "Ctrl+C",
-      action: () => setTimeout(() => g.ZP.copy(), 0)
-    }, "copy"), (0, l.jsx)(s.sNh, {
       id: "cut",
       label: S.intl.string(S.t.pNPVhY),
       hint: (0, p.isMac)() ? "⌘X" : "Ctrl+X",
       action: () => setTimeout(() => g.ZP.cut(), 0)
-    }, "cut")] : null,
+    }, "cut"), (0, l.jsx)(s.sNh, {
+      id: "copy",
+      label: S.intl.string(S.t.OpuAlJ),
+      hint: (0, p.isMac)() ? "⌘C" : "Ctrl+C",
+      action: () => setTimeout(() => g.ZP.copy(), 0)
+    }, "copy")] : null,
     X = (0, l.jsx)(s.S89, {
       id: "command-suggestions",
       label: S.intl.string(S.t["9rJKFx"]),

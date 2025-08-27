@@ -72,8 +72,9 @@ function f(e) {
     name: n,
     position: o = "right",
     onClose: l,
-    targetElementRef: d
-  } = e, f = u(e, ["applicationId", "name", "position", "onClose", "targetElementRef"]);
+    targetElementRef: d,
+    source: f
+  } = e, _ = u(e, ["applicationId", "name", "position", "onClose", "targetElementRef", "source"]);
   return (0, r.jsx)(i.yRy, s({
     targetElementRef: d,
     position: o,
@@ -83,7 +84,8 @@ function f(e) {
         e.closePopout(), null == l || l()
       },
       applicationId: t,
-      name: n
+      name: n,
+      source: f
     }))
-  }, f))
+  }, _))
 }

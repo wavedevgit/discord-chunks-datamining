@@ -73,18 +73,20 @@ var b = function(e) {
 }({});
 
 function y(e) {
+  var t, n;
   let {
-    message: t,
-    interactionType: n,
-    viewId: r
+    message: r,
+    interactionType: i,
+    viewId: a
   } = e;
   c.default.track(_.rMx.NOTIFICATIONS_INBOX_ITEM_INTERACTED, {
-    interaction_type: n,
-    message_id: t.id,
-    channel_id: t.channel_id,
-    author_id: t.author.id,
-    message_type: t.type,
-    view_id: r
+    interaction_type: i,
+    message_id: r.id,
+    channel_id: r.channel_id,
+    author_id: r.author.id,
+    message_type: r.type,
+    view_id: a,
+    mentioned_game_ids: null != (n = null == (t = r.mentionGames) ? true : t.map(e => e.id)) ? n : []
   })
 }
 

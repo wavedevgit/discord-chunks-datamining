@@ -124,9 +124,9 @@ let E = {
       index: i,
       options: a,
       channel: o
-    } = e, s = t[i], l = n[i - t.length], c = r[i - t.length - n.length];
-    return null != s ? a.insertText(_(s.user, o, a.hidePersonalInformation), p(s.user)) : null != l ? null != l.inlineAutocompleteType ? a.insertAutocompleteInput(l.inlineAutocompleteType) : a.insertText(h(l)) : null != c && a.insertText(m(c), g(c)), {
-      type: u.z2.MENTION
+    } = e, s = t[i], l = n[i - t.length], c = r[i - t.length - n.length], d = false;
+    return null != s ? a.insertText(_(s.user, o, a.hidePersonalInformation), p(s.user)) : null != l ? null != l.inlineAutocompleteType ? (a.insertAutocompleteInput(l.inlineAutocompleteType), d = true) : a.insertText(h(l)) : null != c && a.insertText(m(c), g(c)), {
+      type: d ? u.z2.GAME_MENTION : u.z2.MENTION
     }
   }
 }

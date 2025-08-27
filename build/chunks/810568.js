@@ -2,13 +2,14 @@
 /** chunk id: 810568, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  IS: () => d,
-  MH: () => p,
-  UE: () => _,
+  IS: () => f,
+  MH: () => h,
+  UE: () => p,
   as: () => l,
-  fP: () => u,
+  fP: () => d,
+  j7: () => u,
   m1: () => c,
-  wz: () => f
+  wz: () => _
 });
 var Chunk772848 = require("./772848.js"),
   Chunk146282 = require("./146282.js"),
@@ -20,15 +21,19 @@ var Chunk772848 = require("./772848.js"),
   }({}),
   c = function(e) {
     return e.ActivityCard = "activity_card", e.ActivityCardContextMenu = "activity_card_context_menu", e.UserProfile = "user_profile", e.UserProfileCardContextMenu = "user_profile_card_context_menu", e.SimilarGames = "similar_games", e.DevTools = "dev_tools", e.Embed = "embed", e.RtcPanel = "rtc_panel", e.FriendsActivityFeed = "friends_activity_feed", e.GuildProfile = "guild_profile", e.MiniGameProfile = "mini_game_profile", e.GameMention = "game_mention", e.QuestBar = "quest_bar", e
+  }({}),
+  u = function(e) {
+    return e.FullProfile = "full_profile", e.MiniProfile = "mini_profile", e
   }({});
-let u = () => (0, Chunk772848.Z)(),
-  d = e => {
+let d = () => (0, Chunk772848.Z)(),
+  f = e => {
     let {
       viewId: t,
       source: n,
       gameName: r,
       applicationId: l,
-      authorId: c
+      authorId: c,
+      profileType: u
     } = e;
     return a.default.track(o.rMx.GAME_PROFILE_OPEN, {
       view_id: t,
@@ -36,10 +41,11 @@ let u = () => (0, Chunk772848.Z)(),
       game_name: r,
       application_id: l,
       author_id: c,
-      request_id: i.Z.getFeedRequestId(s.YN.GLOBAL_FEED)
+      request_id: i.Z.getFeedRequestId(s.YN.GLOBAL_FEED),
+      profile_type: u
     }), t
   },
-  f = e => {
+  _ = e => {
     let {
       viewId: t,
       gameName: n,
@@ -60,7 +66,7 @@ let u = () => (0, Chunk772848.Z)(),
       official_guild_id: d
     })
   },
-  _ = e => {
+  p = e => {
     let {
       gameName: t,
       applicationId: n,
@@ -80,7 +86,7 @@ let u = () => (0, Chunk772848.Z)(),
       official_guild_id: c
     })
   },
-  p = e => {
+  h = e => {
     let {
       viewId: t,
       applicationId: n,

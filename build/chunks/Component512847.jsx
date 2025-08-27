@@ -269,14 +269,16 @@ function B() {
   return j([Chunk106301.Z, Chunk944486.Z], () => ({
     hangStatus: Chunk106301.Z.getCurrentHangStatus(),
     customHangStatus: Chunk106301.Z.getCustomHangStatus(),
+    gameActivityHangStatus: Chunk106301.Z.getGameActivityHangStatus(),
     inVoice: null != Chunk944486.Z.getVoiceChannelId()
   }), (e, t) => {
     var n, r;
     let {
       hangStatus: i,
-      customHangStatus: a
+      customHangStatus: a,
+      gameActivityHangStatus: o
     } = t;
-    if (e.inVoice && (null != i && i !== e.hangStatus || null != a && (a.status !== (null == (n = e.customHangStatus) ? true : n.status) || !(0, l.isEqual)(a.emoji, null == (r = e.customHangStatus) ? true : r.emoji)))) return "hang_status_select"
+    if (e.inVoice && (null != i && i !== e.hangStatus || null != a && (a.status !== (null == (n = e.customHangStatus) ? true : n.status) || !(0, l.isEqual)(a.emoji, null == (r = e.customHangStatus) ? true : r.emoji)) || null != o && e.gameActivityHangStatus !== o)) return "hang_status_select"
   }, .15), null
 }
 

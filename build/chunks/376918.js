@@ -50,13 +50,14 @@ function u(e, t) {
   }), e
 }
 
-function d(e, t, n) {
-  var i, s, c;
+function d(e, t, n, i) {
+  var s, c, d;
   a.default.track(o.rMx.CHANNEL_AUTOCOMPLETE_OPEN, u(l({}, (0, r.v_)(t), (0, r.hH)(t.guild_id)), {
     autocomplete_type: e,
-    num_emoji_results: null != (i = null == n ? true : n.numEmojiResults) ? i : 0,
-    num_locked_emoji_results: null != (s = null == n ? true : n.numLockedEmojiResults) ? s : 0,
-    num_sticker_results: null != (c = null == n ? true : n.numStickerResults) ? c : 0
+    num_emoji_results: null != (s = null == n ? true : n.numEmojiResults) ? s : 0,
+    num_locked_emoji_results: null != (c = null == n ? true : n.numLockedEmojiResults) ? c : 0,
+    num_sticker_results: null != (d = null == n ? true : n.numStickerResults) ? d : 0,
+    game_mentions_available: null != i && i
   }))
 }
 
@@ -71,7 +72,8 @@ function f(e, t, n, i) {
     num_sticker_results: null != (c = null == i ? true : i.numStickerResults) ? c : 0,
     emoji_name: null != (d = null == i ? true : i.expressionName) ? d : "",
     is_custom: null != (f = null == i ? true : i.isCustom) && f,
-    is_animated: null != (_ = null == i ? true : i.isAnimated) && _
+    is_animated: null != (_ = null == i ? true : i.isAnimated) && _,
+    application_id: null == i ? true : i.applicationId
   }))
 }
 

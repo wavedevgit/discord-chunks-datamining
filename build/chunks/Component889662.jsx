@@ -28,16 +28,16 @@ function b(t) {
   });
   if (!a.isPlatformEmbedded || !((0, c.k)(n, HTMLInputElement) || (0, c.k)(n, HTMLTextAreaElement))) return null;
   let O = "" !== e ? [(0, r.jsx)(i.sNh, {
-    id: "copy",
-    label: p.intl.string(p.t.OpuAlJ),
-    hint: (0, a.isMac)() ? "⌘C" : "Ctrl+C",
-    action: () => u.ZP.copy(e)
-  }, "copy"), (0, r.jsx)(i.sNh, {
     id: "cut",
     label: p.intl.string(p.t.pNPVhY),
     hint: (0, a.isMac)() ? "⌘X" : "Ctrl+X",
     action: () => setTimeout(() => u.ZP.cut(), 0)
-  }, "cut")] : null;
+  }, "cut"), (0, r.jsx)(i.sNh, {
+    id: "copy",
+    label: p.intl.string(p.t.OpuAlJ),
+    hint: (0, a.isMac)() ? "⌘C" : "Ctrl+C",
+    action: () => u.ZP.copy(e)
+  }, "copy")] : null;
   return (0, r.jsxs)(i.v2r, {
     navId: "textarea-context",
     onClose: f,
