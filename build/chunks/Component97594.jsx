@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk105969 = require("./105969.js");
 
-function h(e, t) {
+function E(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
   true === n || d.Z.useReducedMotion ? e.set(t) : e.start(t)
 }
@@ -64,7 +64,7 @@ function S(e) {
     }
   }, [t]), i.useEffect(() => {
     var e, t;
-    v === s.Dvm.ENTERING && h(x.scale, 1), v === s.Dvm.ENTERED && (u.Z.disable(), u.Z.enableTemp(c.P)), v === s.Dvm.HIDDEN && (h(x.scale, .9), u.Z.disable(), u.Z.enableTemp(c.v)), v === s.Dvm.EXITING && h(x.scale, .9);
+    v === s.Dvm.ENTERING && E(x.scale, 1), v === s.Dvm.ENTERED && (u.Z.disable(), u.Z.enableTemp(c.P)), v === s.Dvm.HIDDEN && (E(x.scale, .9), u.Z.disable(), u.Z.enableTemp(c.v)), v === s.Dvm.EXITING && E(x.scale, .9);
     let n = () => {
         u.Z.disable(), v === s.Dvm.ENTERED ? u.Z.enableTemp(c.P) : u.Z.enableTemp(c.v)
       },
@@ -84,14 +84,14 @@ function S(e) {
       x: x.x,
       y: x.y,
       setScale(e, t) {
-        h(x.scale, e, null == t ? true : t.immediate)
+        E(x.scale, e, null == t ? true : t.immediate)
       },
       setOffset(e, t, n) {
-        h(x.x, e, null == n ? true : n.immediate), h(x.y, t, null == n ? true : n.immediate)
+        E(x.x, e, null == n ? true : n.immediate), E(x.y, t, null == n ? true : n.immediate)
       },
       zoomed: P,
       setZoomed(e) {
-        D(e), h(x.scale, e ? 2.5 : 1), e || (h(x.x, 0), h(x.y, 0))
+        D(e), E(x.scale, e ? 2.5 : 1), e || (E(x.x, 0), E(x.y, 0))
       }
     }), [P, x]);
   return (0, r.jsx)(s.f6W, {
@@ -118,7 +118,7 @@ function S(e) {
       }({
         "data-migration-pending": true,
         hideShadow: true,
-        className: o()(E.carouselModal, e),
+        className: o()(h.carouselModal, e),
         transitionState: v
       }, T), l = l = {
         size: s.CgR.DYNAMIC,

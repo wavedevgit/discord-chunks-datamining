@@ -96,15 +96,15 @@ function S(e, t) {
           keywordFilter: [...null != (r = null == (n = t.triggerMetadata) ? true : n.keywordFilter) ? r : [], e]
         })
       });
-      await E(i, x), A(i), null != P ? (0, l.showToast)((0, l.createToast)(y.intl.string(y.t.wH6L0t), l.ToastType.FAILURE)) : (0, l.showToast)((0, l.createToast)(y.intl.string(y.t["0rdYm5"]), l.ToastType.SUCCESS))
+      await E(i, x), A(i), null != P ? (0, l.showToast)((0, l.createToast)(m.intl.string(m.t.wH6L0t), l.ToastType.FAILURE)) : (0, l.showToast)((0, l.createToast)(m.intl.string(m.t["0rdYm5"]), l.ToastType.SUCCESS))
     }, G = (0, r.jsx)(l.sNh, {
       id: "automod-rules-loading",
-      label: y.intl.string(y.t.ZTNur6)
+      label: m.intl.string(m.t.ZTNur6)
     });
   return w || (G = (0, r.jsxs)(r.Fragment, {
     children: [D && (0, r.jsx)(l.sNh, {
       id: "add-first-rule",
-      label: y.intl.string(y.t.f72Zqa),
+      label: m.intl.string(m.t.f72Zqa),
       action: L,
       disabled: S
     }), x.map(e => {
@@ -124,7 +124,7 @@ function S(e, t) {
         label: e.name,
         subtext: (0, r.jsx)(l.Text, {
           color: "text-muted",
-          className: m.actionTextHeader,
+          className: y.actionTextHeader,
           variant: "text-xs/normal",
           children: t.slice(2)
         }),
@@ -136,14 +136,14 @@ function S(e, t) {
     }), M && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(l.Clw, {}), (0, r.jsx)(l.sNh, {
         id: "add-another-rule",
-        label: y.intl.string(y.t["0K5jDA"]),
+        label: m.intl.string(m.t["0K5jDA"]),
         action: L,
         disabled: S
       })]
     })]
   })), (0, r.jsx)(l.sNh, {
     id: "guild-automod-add-selection",
-    label: y.intl.formatToPlainString(y.t.Kkjv1t, {
+    label: m.intl.formatToPlainString(m.t.Kkjv1t, {
       keywordCount: R
     }),
     onFocus: () => {

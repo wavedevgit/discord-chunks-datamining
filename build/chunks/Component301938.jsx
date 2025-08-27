@@ -25,7 +25,7 @@ function x(e) {
     setSlide: l,
     ready: x,
     token: v
-  } = e, [E, j] = i.useState(false), [b, I] = i.useState(null), [N, O] = i.useState(null), [y, S] = i.useState(""), C = i.useRef(null);
+  } = e, [E, b] = i.useState(false), [j, I] = i.useState(null), [N, O] = i.useState(null), [y, S] = i.useState(""), C = i.useRef(null);
   return i.useEffect(() => {
     if (x) {
       var e;
@@ -51,7 +51,7 @@ function x(e) {
         className: _.marginBottom20,
         value: y,
         onChange: S,
-        error: b,
+        error: j,
         autoComplete: "new-password",
         maxLength: 72,
         placeholder: g.intl.string(g.t["yY/PXV"])
@@ -63,7 +63,7 @@ function x(e) {
               I(g.intl.string(g.t.R98xDw)), d.S.dispatch(p.CkL.WAVE_EMPHASIZE);
               return
             }
-            return null != N && O(null), null != b && I(null), t(""), j(true), h.Z.post({
+            return null != N && O(null), null != j && I(null), t(""), b(true), h.Z.post({
               url: p.ANM.ACCOUNT_REVERT,
               body: {
                 token: v,
@@ -103,7 +103,7 @@ function x(e) {
               }
               d.S.dispatch(p.CkL.WAVE_EMPHASIZE)
             }).finally(() => {
-              j(false)
+              b(false)
             })
           }
         },

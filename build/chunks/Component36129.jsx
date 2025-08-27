@@ -50,12 +50,13 @@ let E = e => e.map(e => "#".concat(e)),
   y = e => p.yW[e],
   O = (e, t) => e.split(" ").map((e, n) => "__USERNAME__" !== e ? (0, r.jsxs)(i.Fragment, {
     children: [e, " "]
-  }, n) : (0, r.jsxs)(i.Fragment, {
+  }, n) : (0, r.jsxs)("span", {
+    className: g.avatarContainer,
     children: [(0, r.jsx)(a.qE, {
       "aria-label": t.username,
       src: t.getAvatarURL(null, 20),
       size: l.EFr.SIZE_20
-    }), " ", t.username]
+    }), " ", t.username, " "]
   }, n)),
   v = e => {
     let {

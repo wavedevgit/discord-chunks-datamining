@@ -112,7 +112,7 @@ class H extends Chunk647438.PureComponent {
         channel: e
       } = t;
       if (null != e)
-        if ((0, j.c)(k.M5.INVITE_UNCLAIMED), null != t.guild) {
+        if ((0, b.c)(k.M5.INVITE_UNCLAIMED), null != t.guild) {
           var o, c, u;
           let e = (0, C.yE)(null != (u = t.flags) ? u : 0, s.$.IS_APPLICATION_BYPASS),
             n = (null == (o = t.guild.features) ? true : o.includes(L.oNc.MEMBER_VERIFICATION_GATE_ENABLED)) && (null == (c = t.guild.features) ? true : c.includes(L.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL));

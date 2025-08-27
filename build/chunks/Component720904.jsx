@@ -75,7 +75,7 @@ function E(e) {
     spacing: 16,
     forceOpen: i,
     children: e => (0, r.jsx)("div", j(v({
-      "aria-label": m.intl.formatToPlainString(m.t["/iYSo6"], {
+      "aria-label": y.intl.formatToPlainString(y.t["/iYSo6"], {
         emojiName: n.name
       }),
       className: l()(h.button, {
@@ -101,7 +101,7 @@ function P(e, t) {
     return !(e.useSpriteSheet && S.indexOf(null != (n = e.uniqueName) ? n : "") >= 0) && !p.ZP.isEmojiPremiumLocked({
       emoji: e,
       channel: t,
-      intention: y.Hz.REACTION
+      intention: m.Hz.REACTION
     })
   });
   n.length > 4 && (n.length = 4);

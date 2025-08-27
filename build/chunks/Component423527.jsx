@@ -477,8 +477,8 @@ class eu extends(r = Chunk647438.PureComponent) {
       apiErrors: {
         email: v,
         username: E,
-        global_name: j,
-        password: b,
+        global_name: b,
+        password: j,
         date_of_birth: N
       } = {}
     } = this.state, {
@@ -539,7 +539,7 @@ class eu extends(r = Chunk647438.PureComponent) {
         onChange: e => this.setState({
           globalName: e
         }),
-        error: ec(j),
+        error: ec(b),
         maxLength: et.hy,
         autoComplete: "off",
         setRef: e => {
@@ -593,7 +593,7 @@ class eu extends(r = Chunk647438.PureComponent) {
           password: e,
           passwordClientError: 0 === e.length ? en.intl.string(en.t.EkokLy) : null
         }),
-        error: null != g ? g : ec(b),
+        error: null != g ? g : ec(j),
         type: "password",
         autoComplete: "new-password",
         setRef: e => {

@@ -1,7 +1,7 @@
 /** Chunk was on 39476 **/
 /** chunk id: 860153, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => E
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk545093 = require("./545093.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk774846 = require("./774846.js");
-let E = Chunk647438.memo(function(e) {
+let h = Chunk647438.memo(function(e) {
   let {
     message: t
   } = e, n = (0, a.e7)([f.Z], () => f.Z.getChannel(t.channel_id));
@@ -51,7 +51,7 @@ let E = Chunk647438.memo(function(e) {
   })
 });
 
-function h(e) {
+function E(e) {
   var t;
   let {
     item: n,
@@ -60,7 +60,7 @@ function h(e) {
   } = e, a = null == (t = n.sourceMetadata) ? true : t.message;
   return (0, r.jsxs)("div", {
     className: g.topBar,
-    children: [null != a && (0, r.jsx)(E, {
+    children: [null != a && (0, r.jsx)(h, {
       message: a
     }), (0, r.jsx)(y.Z, {
       item: n,

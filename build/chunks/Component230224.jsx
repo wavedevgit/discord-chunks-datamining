@@ -5,8 +5,8 @@ require.d(exports, {
   JI: () => N,
   UM: () => A,
   V6: () => S,
-  WT: () => j,
-  X7: () => b,
+  WT: () => b,
+  X7: () => j,
   jq: () => C,
   mx: () => x
 }), require("./415506.js");
@@ -35,11 +35,11 @@ let x = 100,
     return 0 === r.memberCount && 0 === r.memberCount ? null : r
   },
   E = e => e.target_type === f.Iq.STREAM && null != e.target_user,
-  j = e => {
+  b = e => {
     var t;
     return (null == (t = e.channel) ? true : t.type) === p.d4z.GROUP_DM
   },
-  b = e => null == e.channel && null == e.guild && null != e.inviter,
+  j = e => null == e.channel && null == e.guild && null != e.inviter,
   I = e => e.state === p.r2o.ACCEPTED,
   N = e => {
     let {
@@ -47,7 +47,7 @@ let x = 100,
     } = e;
     return null != t
   },
-  O = e => !N(e) && (!!b(e) || null != e.inviter && !I(e) && !(e => {
+  O = e => !N(e) && (!!j(e) || null != e.inviter && !I(e) && !(e => {
     var t;
     let n = v(e);
     return (null != (t = null == n ? true : n.memberCount) ? t : 0) > x
@@ -95,7 +95,7 @@ function C(e) {
     invite: t,
     showBigUserIcon: n
   } = e, l = i.useMemo(() => n ? null : E(t) && null != t.target_user ? d.ZP.getUserAvatarURL(t.target_user) : O(t) && null != t.inviter ? d.ZP.getUserAvatarURL(t.inviter) : null, [t, n]), o = m.intl.string(m.t["3rE1Pz"]);
-  if (j(t)) {
+  if (b(t)) {
     var c, u;
     o = (null == (c = t.channel) ? true : c.name) != null && (null == (u = t.inviter) ? true : u.username) != null ? m.intl.format(m.t.Lu4h19, {
       username: t.inviter.username

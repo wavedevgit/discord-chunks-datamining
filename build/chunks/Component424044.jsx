@@ -23,7 +23,7 @@ Chunk442837.ZP.initialize();
 let v = e => {
   let {
     location: t
-  } = e, n = (0, l.e7)([g.default], () => g.default.isAuthenticated()), v = (0, l.e7)([d.Z], () => d.Z.hasLoadedExperiments), E = (0, f.oK)("RSL - Landing Page"), [j, b] = i.useState(false), [I, N] = i.useState(_.intl.string(_.t["9exy+f"])), [O, y] = i.useState(true), S = e => {
+  } = e, n = (0, l.e7)([g.default], () => g.default.isAuthenticated()), v = (0, l.e7)([d.Z], () => d.Z.hasLoadedExperiments), E = (0, f.oK)("RSL - Landing Page"), [b, j] = i.useState(false), [I, N] = i.useState(_.intl.string(_.t["9exy+f"])), [O, y] = i.useState(true), S = e => {
     switch (e) {
       case m.evJ.INVALID_FORM_BODY:
       case m.evJ.DSA_RSL_REPORT_NOT_FOUND:
@@ -57,14 +57,14 @@ let v = e => {
       } catch (e) {
         S(null == (n = e.body) ? true : n.code)
       } finally {
-        b(false)
+        j(false)
       }
     };
-    b(true), e((0, c.Z)(t)), (0, p.e)("report_second_look")
+    j(true), e((0, c.Z)(t)), (0, p.e)("report_second_look")
   }, [t]), E && !O && (0, r.jsxs)(u.ZP, {
     children: [(0, r.jsx)(u.Dx, {
       className: x.marginBottom8,
       children: I
-    }), j && (0, r.jsx)(o.$jN, {})]
+    }), b && (0, r.jsx)(o.$jN, {})]
   })
 }

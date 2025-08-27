@@ -119,7 +119,7 @@ if (null != P) {
       client_launch_id: Chunk923452.s
     }, (null == (o = d().name) ? true : o.toLocaleLowerCase()) === "electron" && (r.browser_user_agent = d().ua || "", r.browser_version = d().version || ""), "linux" === require) {
     let e = P.crashReporter.getMetadata();
-    r.window_manager = module.wm, r.distro = module.distro
+    r.window_manager = module.wm, r.distro = module.distro, r.runtime_environment = module.runtime_environment, r.display_server = module.display_server
   } else "darwin" === require ? r.os_sdk_version = null == i ? true : i.split(".")[0] : "win32" === require && (r.os_sdk_version = null == i ? true : i.split(".")[2])
 }
 let w = "utm_source utm_medium utm_campaign utm_content utm_term".split(" ");
@@ -255,7 +255,7 @@ function W() {
   let n = {},
     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
   r && (null == require.release_channel || "" === require.release_channel) && (require.release_channel = r.split("-")[0]);
-  let i = parseInt("437855", 10);
+  let i = parseInt("437886", 10);
   isNaN(i) || (require.client_build_number = i);
   let o = null == P || null == (e = (t = P.remoteApp).getBuildNumber) ? true : module.call(exports);
   return isNaN(o) || (require.native_build_number = o), require.client_event_source = Y(), require.has_client_mods = (0, Chunk903772.e)(), require.client_launch_id = Chunk923452.s, require

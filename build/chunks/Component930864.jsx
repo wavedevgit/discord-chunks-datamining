@@ -1,7 +1,7 @@
-/** Chunk was on 33648 **/
+/** Chunk was on 9797 **/
 /** chunk id: 930864, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  ForwardModal: () => E
+  ForwardModal: () => R
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -26,31 +26,31 @@ var Chunk951288 = require("./951288.js"),
   Chunk773921 = require("./773921.js"),
   Chunk621054 = require("./621054.js");
 
-function P(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      l = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      a = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), l.forEach(function(t) {
-      var l;
-      l = n[t], t in e ? Object.defineProperty(e, t, {
-        value: l,
+    }))), a.forEach(function(t) {
+      var a;
+      a = n[t], t in e ? Object.defineProperty(e, t, {
+        value: a,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = l
+      }) : e[t] = a
     })
   }
   return e
 }
 
-function S(e, t) {
+function O(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var l = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, l)
+      var a = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, a)
     }
     return n
   })(Object(t)).forEach(function(n) {
@@ -58,230 +58,230 @@ function S(e, t) {
   }), e
 }
 
-function E(e) {
+function R(e) {
   var {
     message: t,
-    initialSelectedDestinations: E,
-    forwardOptions: C,
-    onClose: Z,
-    onRequestSent: N
-  } = e, L = function(e, t) {
+    initialSelectedDestinations: R,
+    forwardOptions: S,
+    onClose: k,
+    onRequestSent: I
+  } = e, Z = function(e, t) {
     if (null == e) return {};
-    var n, l, r = function(e, t) {
+    var n, a, l = function(e, t) {
       if (null == e) return {};
-      var n, l, r = {},
-        a = Object.keys(e);
-      for (l = 0; l < a.length; l++) n = a[l], t.indexOf(n) >= 0 || (r[n] = e[n]);
-      return r
+      var n, a, l = {},
+        r = Object.keys(e);
+      for (a = 0; a < r.length; a++) n = r[a], t.indexOf(n) >= 0 || (l[n] = e[n]);
+      return l
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var a = Object.getOwnPropertySymbols(e);
-      for (l = 0; l < a.length; l++) n = a[l], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
+      var r = Object.getOwnPropertySymbols(e);
+      for (a = 0; a < r.length; a++) n = r[a], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
     }
-    return r
+    return l
   }(e, ["message", "initialSelectedDestinations", "forwardOptions", "onClose", "onRequestSent"]);
   let {
     channel_id: M,
-    id: T
-  } = t, R = r.useMemo(() => (0, c.dL)(M), [M]), [D, I] = r.useState(false), A = (0, s.e7)([f.Z], () => {
+    id: N
+  } = t, T = l.useMemo(() => (0, u.dL)(M), [M]), [D, W] = l.useState(false), E = (0, s.e7)([m.Z], () => {
     var e;
-    return null != (e = f.Z.getMessage(t.channel_id, t.id)) ? e : t
-  }, [t]), k = (0, s.e7)([h.Z], () => h.Z.getChannel(M), [M]), F = (0, p.ZF)(), W = (0, p.mh)(), G = r.useRef(0), U = r.useRef(0), [z, H] = r.useState(E), B = z.length, V = B >= y.G, [q, X] = r.useState(""), {
-    results: Y,
-    updateSearchText: K
+    return null != (e = m.Z.getMessage(t.channel_id, t.id)) ? e : t
+  }, [t]), F = (0, s.e7)([h.Z], () => h.Z.getChannel(M), [M]), L = (0, _.ZF)(), A = (0, _.mh)(), G = l.useRef(0), B = l.useRef(0), [U, V] = l.useState(R), q = U.length, K = q >= x.G, [X, z] = l.useState(""), {
+    results: H,
+    updateSearchText: Y
   } = (0, d.s)({
-    selectedDestinations: z,
-    originDestination: R,
+    selectedDestinations: U,
+    originDestination: T,
     includeMissingDMs: true
-  }), J = r.useCallback(e => {
-    X(e), K(e)
-  }, [K]), Q = r.useCallback(e => {
-    J(e), U.current += 1, "" !== e && W(M, T)
-  }, [M, T, W, J]), $ = r.useCallback(() => {
-    J("")
-  }, [J]), ee = r.useCallback(() => {
-    (0, p.sF)({
+  }), Q = l.useCallback(e => {
+    z(e), Y(e)
+  }, [Y]), J = l.useCallback(e => {
+    Q(e), B.current += 1, "" !== e && A(M, N)
+  }, [M, N, A, Q]), $ = l.useCallback(() => {
+    Q("")
+  }, [Q]), ee = l.useCallback(() => {
+    (0, _.sF)({
       channelId: M,
-      messageId: T,
+      messageId: N,
       numDestinationChanges: G.current,
-      numQueryChanges: U.current
-    }), Z()
-  }, [M, T, Z]), et = r.useRef(null);
-  r.useEffect(() => {
-    if ("" === q) {
+      numQueryChanges: B.current
+    }), k()
+  }, [M, N, k]), et = l.useRef(null);
+  l.useEffect(() => {
+    if ("" === X) {
       var e;
       null == (e = et.current) || e.focus()
     }
-  }, [q]);
-  let en = r.useMemo(() => (0, a.throttle)(() => {
-      (0, i.showToast)((0, i.createToast)(w.intl.string(w.t.kwmYkp), i.ToastType.FORWARD))
+  }, [X]);
+  let en = l.useMemo(() => (0, r.throttle)(() => {
+      (0, i.showToast)((0, i.createToast)(j.intl.string(j.t.kwmYkp), i.ToastType.FORWARD))
     }, 3e3, {
       leading: true,
       trailing: false
     }), []),
-    el = r.useCallback(e => {
-      F(M, T, "" !== q), H(t => {
+    ea = l.useCallback(e => {
+      L(M, N, "" !== X), V(t => {
         let n = t.findIndex(t => {
           let {
             type: n,
-            id: l
+            id: a
           } = t;
-          return n === e.type && l === e.id
+          return n === e.type && a === e.id
         });
-        if (false === n) return V ? t : (J(""), G.current += 1, [e, ...t]);
-        let l = [...t];
-        return l.splice(n, 1), G.current += 1, l
+        if (false === n) return K ? t : (Q(""), G.current += 1, [e, ...t]);
+        let a = [...t];
+        return a.splice(n, 1), G.current += 1, a
       })
-    }, [M, V, T, q, J, F]),
-    er = r.useCallback(async function(e) {
-      var r;
+    }, [M, K, N, X, Q, L]),
+    el = l.useCallback(async function(e) {
+      var l;
       let {
-        withMessage: a,
+        withMessage: r,
         transitionToDestination: s,
         closeAfterSend: d
-      } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {}, _ = null != (r = f.Z.getMessage(M, T)) ? r : t;
-      if (null == _) return void(0, i.showToast)((0, i.createToast)(w.intl.string(w.t.R0RpRU), i.ToastType.FAILURE));
-      I(true);
-      let v = (await Promise.all(e.map(c.qx))).filter(m.lm);
-      if ((0, b.Z)(_, v) && !await new Promise(e => {
+      } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {}, w = null != (l = m.Z.getMessage(M, N)) ? l : t;
+      if (null == w) return void(0, i.showToast)((0, i.createToast)(j.intl.string(j.t.R0RpRU), i.ToastType.FAILURE));
+      W(true);
+      let b = (await Promise.all(e.map(u.qx))).filter(g.lm);
+      if ((0, p.Z)(w, b) && !await new Promise(e => {
           (0, i.ZDy)(async () => {
             let {
               default: t
             } = await n.e("88643").then(n.bind(n, 466080));
-            return n => (0, l.jsx)(t, S(P({}, n), {
+            return n => (0, a.jsx)(t, O(C({}, n), {
               onConfirm: () => e(true),
               onBack: () => e(false)
             }))
           })
-        })) return void I(false);
-      d && (0, x.mc)(), null == N || N(), s && (await o.Z.fetchMessages({
-        channelId: v[0]
-      }), (0, u.Kh)(v[0], {
+        })) return void W(false);
+      d && (0, v.mc)(), null == I || I(), s && (await o.Z.fetchMessages({
+        channelId: b[0]
+      }), (0, c.Kh)(b[0], {
         openTextInVoiceIfVoiceChannel: true
       }));
-      let y = await g.Z.sendForwards(_, v, S(P({}, C), {
-          withMessage: a
+      let x = await f.Z.sendForwards(w, b, O(C({}, S), {
+          withMessage: r
         })),
-        j = v.some(e => {
+        y = b.some(e => {
           let t = h.Z.getChannel(e);
           return null != t && t.rateLimitPerUser > 0
         });
-      if (y.every(e => {
+      if (x.every(e => {
           let {
             status: t
           } = e;
           return "fulfilled" === t
         })) {
-        (0, p.gP)({
+        (0, _.gP)({
           channelId: M,
-          messageId: T,
+          messageId: N,
           hasError: false,
-          hasContextMessage: null != a && "" !== a,
-          numDestinations: v.length,
+          hasContextMessage: null != r && "" !== r,
+          numDestinations: b.length,
           numDestinationChanges: G.current,
-          numQueryChanges: U.current,
-          anyDestinationHasSlowmode: j
+          numQueryChanges: B.current,
+          anyDestinationHasSlowmode: y
         }), en();
         return
-      }(0, p.gP)({
+      }(0, _.gP)({
         channelId: M,
-        messageId: T,
+        messageId: N,
         hasError: true,
-        hasContextMessage: null != a && "" !== a,
-        numDestinations: v.length,
+        hasContextMessage: null != r && "" !== r,
+        numDestinations: b.length,
         numDestinationChanges: G.current,
-        numQueryChanges: U.current,
-        anyDestinationHasSlowmode: j
+        numQueryChanges: B.current,
+        anyDestinationHasSlowmode: y
       });
-      let O = e.filter((e, t) => "rejected" === y[t].status);
-      (0, x.Np)({
-        message: _,
-        failedDestinations: O,
-        forwardOptions: C
+      let P = e.filter((e, t) => "rejected" === x[t].status);
+      (0, v.Np)({
+        message: w,
+        failedDestinations: P,
+        forwardOptions: S
       })
-    }, [M, C, T, t, N, en]),
-    ea = r.useCallback(e => {
-      er(z, {
+    }, [M, S, N, t, I, en]),
+    er = l.useCallback(e => {
+      el(U, {
         withMessage: e,
-        transitionToDestination: 1 === z.length,
+        transitionToDestination: 1 === U.length,
         closeAfterSend: true
       })
-    }, [er, z]);
-  if (null == A || null == k) return null;
-  let es = Y.length > 0 ? (0, l.jsx)(_.F, {
+    }, [el, U]);
+  if (null == E || null == F) return null;
+  let es = H.length > 0 ? (0, a.jsx)(w.F, {
       paddingBottom: 16,
       paddingTop: 16,
-      rowData: Y,
-      rowMode: _.G.TOGGLE,
-      message: A,
-      originChannel: k,
-      handleToggleDestination: el,
-      selectedDestinations: z,
-      disableSelection: V
-    }) : (0, l.jsxs)(i.hzk, {
-      className: j.noResults,
-      children: [(0, l.jsx)("img", {
-        className: j.noResultsImg,
-        src: O,
+      rowData: H,
+      rowMode: w.G.TOGGLE,
+      message: E,
+      originChannel: F,
+      handleToggleDestination: ea,
+      selectedDestinations: U,
+      disableSelection: K
+    }) : (0, a.jsxs)(i.hzk, {
+      className: y.noResults,
+      children: [(0, a.jsx)("img", {
+        className: y.noResultsImg,
+        src: P,
         alt: ""
-      }), (0, l.jsx)(i.Text, {
+      }), (0, a.jsx)(i.Text, {
         variant: "text-md/normal",
         color: "text-muted",
-        children: w.intl.string(w.t.V6nAfH)
+        children: j.intl.string(j.t.V6nAfH)
       })]
     }),
-    ei = B <= 1 ? w.intl.string(w.t.TXNS7e) : w.intl.formatToPlainString(w.t.jWtYUl, {
-      count: B
+    ei = q <= 1 ? j.intl.string(j.t.TXNS7e) : j.intl.formatToPlainString(j.t.jWtYUl, {
+      count: q
     });
-  return (0, l.jsxs)(i.Y0X, S(P({
-    className: j.modal,
-    "aria-label": w.intl.string(w.t["+SkRRk"])
-  }, L), {
+  return (0, a.jsxs)(i.Y0X, O(C({
+    className: y.modal,
+    "aria-label": j.intl.string(j.t["+SkRRk"])
+  }, Z), {
     parentComponent: "ForwardModal",
-    children: [(0, l.jsxs)(i.xBx, {
-      className: j.header,
-      children: [(0, l.jsxs)("div", {
-        className: j.titleLine,
-        children: [(0, l.jsx)("div", {
-          className: j.title,
-          children: (0, l.jsx)(i.y5t, {
-            component: (0, l.jsx)(i.X6q, {
+    children: [(0, a.jsxs)(i.xBx, {
+      className: y.header,
+      children: [(0, a.jsxs)("div", {
+        className: y.titleLine,
+        children: [(0, a.jsx)("div", {
+          className: y.title,
+          children: (0, a.jsx)(i.y5t, {
+            component: (0, a.jsx)(i.X6q, {
               variant: "heading-lg/semibold",
-              children: w.intl.string(w.t["+SkRRk"])
+              children: j.intl.string(j.t["+SkRRk"])
             }),
-            children: V ? (0, l.jsx)(i.Text, {
+            children: K ? (0, a.jsx)(i.Text, {
               variant: "text-sm/normal",
               color: "text-feedback-warning",
-              children: w.intl.format(w.t["3Fbkio"], {
-                count: y.G
+              children: j.intl.format(j.t["3Fbkio"], {
+                count: x.G
               })
-            }) : (0, l.jsx)(i.X6q, {
+            }) : (0, a.jsx)(i.X6q, {
               variant: "heading-sm/normal",
               color: "header-muted",
-              children: w.intl.string(w.t["VA+btL"])
+              children: j.intl.string(j.t["VA+btL"])
             })
           })
-        }), (0, l.jsx)(i.olH, {
-          className: j.closeButton,
+        }), (0, a.jsx)(i.olH, {
+          className: y.closeButton,
           onClick: ee
         })]
-      }), (0, l.jsx)(i.E1j, {
+      }), (0, a.jsx)(i.E1j, {
         ref: et,
-        query: q,
-        onChange: Q,
+        query: X,
+        onChange: J,
         onClear: $,
-        placeholder: w.intl.string(w.t["5h0QOD"]),
-        "aria-label": w.intl.string(w.t["5h0QOD"]),
+        placeholder: j.intl.string(j.t["5h0QOD"]),
+        "aria-label": j.intl.string(j.t["5h0QOD"]),
         autoFocus: true
       })]
-    }), es, (0, l.jsx)(v.n, {
-      message: A,
-      forwardOptions: C,
+    }), es, (0, a.jsx)(b.n, {
+      message: E,
+      forwardOptions: S,
       sendLabel: ei,
-      canSend: B > 0,
-      selectedDestinations: z,
+      canSend: q > 0,
+      selectedDestinations: U,
       isSending: D,
-      onSend: ea
+      onSend: er
     })]
   }))
 }

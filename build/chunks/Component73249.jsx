@@ -154,7 +154,7 @@ function M(e) {
   let {
     item: t
   } = e, [n, l] = i.useState(false), o = "VIDEO" === t.type, a = "IMAGE" === t.type, c = null != t.children, u = (0, f.gS)((0, f.lT)(t.original, t.url), t.contentType, t.originalContentType);
-  if (!(o || E.isPlatformEmbedded && !c && a && u)) return null;
+  if (!(o || h.isPlatformEmbedded && !c && a && u)) return null;
   let d = (0, f.s$)((0, f.lT)(t.original, t.url), t.contentType, t.originalContentType, f.wV);
   async function p() {
     if ((0, S.yg)(S.uG.SAVE_MEDIA_PRESSED), "VIDEO" === t.type && (0, g.q)({
@@ -162,7 +162,7 @@ function M(e) {
       }), "IMAGE" === t.type) {
       l(true);
       try {
-        await h.ZP.saveImage(d, t.contentType, f.wV), (0, S.rm)(d, true), (0, s.showToast)((0, s.createToast)(j.intl.string(j.t.cqpdJS), s.ToastType.SUCCESS))
+        await E.ZP.saveImage(d, t.contentType, f.wV), (0, S.rm)(d, true), (0, s.showToast)((0, s.createToast)(j.intl.string(j.t.cqpdJS), s.ToastType.SUCCESS))
       } catch (e) {
         (0, S.rm)(d, false), (0, s.showToast)((0, s.createToast)(j.intl.string(j.t["8Ve/S0"]), s.ToastType.FAILURE))
       } finally {
@@ -236,7 +236,7 @@ function N(e) {
     let e = (0, f.s$)((0, f.lT)(i.original, i.url), i.contentType, i.originalContentType, f.wV);
     try {
       var t;
-      await h.ZP.copyImage(e, null != (t = i.originalContentType) ? t : i.contentType), (0, S.gR)(e, true), (0, s.showToast)((0, s.createToast)(j.intl.string(j.t.bhUpvL), s.ToastType.SUCCESS))
+      await E.ZP.copyImage(e, null != (t = i.originalContentType) ? t : i.contentType), (0, S.gR)(e, true), (0, s.showToast)((0, s.createToast)(j.intl.string(j.t.bhUpvL), s.ToastType.SUCCESS))
     } catch (t) {
       (0, S.gR)(e, false), (0, s.showToast)((0, s.createToast)(j.intl.string(j.t.PTPbj4), s.ToastType.FAILURE))
     }

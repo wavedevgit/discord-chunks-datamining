@@ -25,7 +25,7 @@ function v(e) {
   var t, n, v, j;
   let {
     analyticsLocations: S
-  } = (0, u.ZP)(), E = null == (t = e.interactionMetadata) ? true : t.authorizing_integration_owners[l.Y.USER_INSTALL], P = null == (n = e.interactionMetadata) ? true : n.authorizing_integration_owners[l.Y.GUILD_INSTALL], _ = null == (v = e.interactionMetadata) ? true : v.user.id, Z = (0, a.e7)([y.default], () => y.default.getUser(E)), T = (0, a.e7)([O.Z], () => O.Z.getGuild(P)), w = p.Z.getChannel(e.channel_id), I = null == w ? true : w.getGuildId(), N = (0, a.e7)([y.default], () => y.default.getUser(_));
+  } = (0, u.ZP)(), E = null == (t = e.interactionMetadata) ? true : t.authorizing_integration_owners[l.Y.USER_INSTALL], P = null == (n = e.interactionMetadata) ? true : n.authorizing_integration_owners[l.Y.GUILD_INSTALL], _ = null == (v = e.interactionMetadata) ? true : v.user.id, Z = (0, a.e7)([m.default], () => m.default.getUser(E)), T = (0, a.e7)([O.Z], () => O.Z.getGuild(P)), w = p.Z.getChannel(e.channel_id), I = null == w ? true : w.getGuildId(), N = (0, a.e7)([m.default], () => m.default.getUser(_));
   if (i.useEffect(() => {
       null == Z && null != E && (0, s.PR)(E)
     }, [Z, E]), !(0, d.a)(e)) return null;
@@ -40,7 +40,7 @@ function v(e) {
     }),
     id: "integration-owner",
     label: T.name,
-    subtext: m.intl.formatToPlainString(m.t.ShLXXF, {
+    subtext: y.intl.formatToPlainString(y.t.ShLXXF, {
       application: e.author.username
     })
   }) : null != Z && (A = (0, r.jsx)(o.sNh, {
@@ -57,12 +57,12 @@ function v(e) {
     }),
     id: "integration-owner",
     label: Z.username,
-    subtext: m.intl.formatToPlainString(m.t.ShLXXF, {
+    subtext: y.intl.formatToPlainString(y.t.ShLXXF, {
       application: e.author.username
     })
   })), (0, r.jsxs)(o.sNh, {
     id: "view-interaction-info",
-    label: m.intl.string(m.t.Rjezb2),
+    label: y.intl.string(y.t.Rjezb2),
     children: [A, null != N ? (0, r.jsx)(o.sNh, {
       action: () => (0, g.openUserProfileModal)({
         userId: N.id,
@@ -77,7 +77,7 @@ function v(e) {
       }),
       id: "interaction-user",
       label: N.username,
-      subtext: m.intl.string(m.t["04gxNj"])
+      subtext: y.intl.string(y.t["04gxNj"])
     }) : null]
   })
 }

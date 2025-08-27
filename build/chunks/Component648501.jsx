@@ -48,7 +48,7 @@ function N(e) {
   } = e, U = (0, i.e7)([m.ZP], () => m.ZP.getMentionCount(n.id)), G = (0, i.e7)([m.ZP], () => m.ZP.getIsMentionLowImportance(n.id)), B = (0, a.ZP)(n), F = (0, i.e7)([g.Z], () => !g.Z.can(S.Plq.CONNECT, n)), V = (0, s.P)(n), H = (0, i.e7)([b.Z], () => b.Z.hasVideo(n.id)), z = (0, p.PK)(n.id) && n.isGuildStageVoice(), W = (0, v.ZP)({
     channel: n,
     locked: F,
-    video: H || z,
+    video: (H || z) && null == V,
     selected: N
   }), K = (0, i.e7)([h.Z], () => h.Z.getNewThreadCount(n.guild_id, n.id)), Y = (0, u.n2)(n.guild_id, n.id), q = (0, i.e7)([f.Z], () => {
     var e, t;

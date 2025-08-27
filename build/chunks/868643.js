@@ -14,7 +14,7 @@ var Chunk647438 = require("./647438.js"),
 let u = Chunk981631.iLy.CROSSPOSTED | Chunk981631.iLy.FAILED_TO_MENTION_SOME_ROLES_IN_THREAD | Chunk981631.iLy.GUILD_FEED_HIDDEN | Chunk981631.iLy.HAS_SNAPSHOT | Chunk981631.iLy.HAS_THREAD | Chunk981631.iLy.IS_CROSSPOST | Chunk981631.iLy.IS_VOICE_MESSAGE | Chunk981631.iLy.SHOULD_SHOW_LINK_NOT_DISCORD_WARNING | Chunk981631.iLy.SUPPRESS_EMBEDS | Chunk981631.iLy.SUPPRESS_NOTIFICATIONS | Chunk981631.iLy.URGENT | Chunk981631.iLy.IS_COMPONENTS_V2;
 
 function d(e) {
-  return e.state !== c.yb.SEND_FAILED && !!c.V$x.FORWARDABLE.has(e.type) && null == e.poll && null == e.activity && null == e.call && null == e.activityInstance && 0 === (0, s.Ge)(e.flags, u) && true
+  return e.state !== c.yb.SEND_FAILED && !!c.V$x.FORWARDABLE.has(e.type) && null == e.poll && null == e.sharedClientTheme && null == e.activity && null == e.call && null == e.activityInstance && 0 === (0, s.Ge)(e.flags, u) && true
 }
 
 function p(e) {

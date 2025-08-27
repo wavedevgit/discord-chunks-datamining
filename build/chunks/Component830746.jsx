@@ -26,7 +26,7 @@ let y = () => {
   let e = (0, Chunk631885.mq)(Chunk292352.ne.ACTIVE),
     t = module.length > 0,
     n = (0, Chunk277537.PO)("family_center_activity_page"),
-    y = (0, Chunk780985.c)(),
+    y = (0, Chunk780985.cz)(),
     O = (0, Chunk399606.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
     v = (0, Chunk785681.o)(Chunk388032.intl.string(Chunk345909.default["5RZ8Tk"]), Chunk388032.intl.string(Chunk345909.default.bmhCnJ)),
     I = (0, Chunk785681.o)(Chunk388032.intl.string(Chunk345909.default.XKnFFh), Chunk388032.intl.string(Chunk345909.default["68zfxM"])),

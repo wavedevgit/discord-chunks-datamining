@@ -287,7 +287,7 @@ let P = Chunk442837.ZP.connectStores([Chunk82142.Z, Chunk283595.Z, Chunk314897.d
   return {
     giftCode: n,
     sku: r,
-    libraryApplication: null != r && (null == n ? true : n.entitlementBranches) != null ? j.z2(n.entitlementBranches, r, v.Z) : null,
+    libraryApplication: null != r && (null == n ? true : n.entitlementBranches) != null ? b.z2(n.entitlementBranches, r, v.Z) : null,
     authenticated: m.default.isAuthenticated(),
     defaultRoute: _.Z.defaultRoute,
     isResolved: x.Z.getIsResolved(t),

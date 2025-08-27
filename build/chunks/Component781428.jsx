@@ -464,7 +464,7 @@ class X extends(r = Chunk647438.PureComponent) {
       onSubmit: this.handleLogin,
       tag: "form",
       className: s()(this.props.authBoxClassName, K.horizontalAuthBox),
-      children: () => [(0, i.jsx)(j.Z, {
+      children: () => [(0, i.jsx)(b.Z, {
         guildTemplate: e
       }, "template"), this.renderDefaultForm(false)]
     })

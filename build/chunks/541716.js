@@ -2,7 +2,7 @@
 /** chunk id: 541716, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ie: () => R,
+  Ie: () => P,
   OW: () => c,
   gy: () => u
 });
@@ -561,6 +561,25 @@ let d = {
     }
   },
   R = {
+    analyticsName: "atomic_reator_reply_input",
+    drafts: {
+      type: Chunk703558.d.ChannelMessage
+    },
+    permissions: {
+      requireSendMessages: true
+    },
+    users: {
+      allowMentioning: true
+    },
+    submit: {
+      useDisabledStylesOnSubmit: true,
+      disableEnterToSubmit: true
+    },
+    disableAutoFocus: true,
+    showCharacterCount: true,
+    layout: 1
+  },
+  P = {
     NORMAL: d,
     OVERLAY: f,
     OVERLAY_INLINE_REPLY: v,
@@ -579,27 +598,37 @@ let d = {
     CREATE_POLL: y,
     FORUM_CHANNEL_GUIDELINES: C,
     CHANNEL_TOPIC: N,
-    ATOMIC_REACTOR_REPLY_INPUT: {
-      analyticsName: "atomic_reator_reply_input",
+    ATOMIC_REACTOR_REPLY_INPUT: R,
+    FORWARD_MESSAGE_INPUT: {
+      analyticsName: "forward_message_input",
       drafts: {
         type: Chunk703558.d.ChannelMessage
+      },
+      emojis: {
+        button: true
+      },
+      soundmoji: {
+        allowSending: true
       },
       permissions: {
         requireSendMessages: true
       },
+      submit: {
+        useDisabledStylesOnSubmit: true
+      },
       users: {
         allowMentioning: true
       },
-      submit: {
-        useDisabledStylesOnSubmit: true,
-        disableEnterToSubmit: true
+      autocomplete: {
+        alwaysUseLayer: true,
+        small: true
       },
       disableAutoFocus: true,
       showCharacterCount: true,
       layout: 1
     },
-    FORWARD_MESSAGE_INPUT: {
-      analyticsName: "forward_message_input",
+    SHARE_CUSTOM_CLIENT_THEME_INPUT: {
+      analyticsName: "share_custom_client_theme_input",
       drafts: {
         type: Chunk703558.d.ChannelMessage
       },

@@ -108,8 +108,8 @@ let el = (0, Chunk320830.Z)(Chunk781428.Z),
   ex = (0, Chunk320830.Z)(Chunk761305.Z),
   ev = (0, Chunk320830.Z)(Chunk637776.Z),
   eE = (0, Chunk320830.Z)(Chunk73906.Z),
-  ej = (0, Chunk320830.Z)(Chunk649156.Z),
-  eb = (0, Chunk320830.Z)(Chunk881317.Z),
+  eb = (0, Chunk320830.Z)(Chunk649156.Z),
+  ej = (0, Chunk320830.Z)(Chunk881317.Z),
   eI = (0, Chunk320830.Z)(Chunk424044.Z),
   eN = (0, Chunk320830.Z)(Chunk521379.Z);
 class eO extends Chunk647438.PureComponent {
@@ -324,7 +324,7 @@ class eO extends Chunk647438.PureComponent {
         }, e))
       }), (0, Chunk951288.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.PICK_GUILD_SETTINGS(":section?", ":subsection?"),
-        render: e => (0, r.jsx)(ej, er({}, e))
+        render: e => (0, r.jsx)(eb, er({}, e))
       }), (0, Chunk951288.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.CHANNEL(Chunk893607.Hw.guildId(), Chunk893607.Hw.channelId({
           optional: true
@@ -332,7 +332,7 @@ class eO extends Chunk647438.PureComponent {
         render: e => (0, r.jsx)(eE, er({}, e))
       }), (0, Chunk951288.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.REPORT,
-        render: e => (0, r.jsx)(eb, er({}, e))
+        render: e => (0, r.jsx)(ej, er({}, e))
       }), (0, Chunk951288.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.REPORT_SECOND_LOOK,
         render: e => (0, r.jsx)(eI, er({}, e))

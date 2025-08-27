@@ -7,5 +7,6 @@ module.exports = {
   colorPreview: "colorPreview__7473d",
   sharedByContainer: "sharedByContainer__7473d",
   sharedTitle: "sharedTitle__7473d",
-  sharedBy: "sharedBy__7473d"
+  sharedBy: "sharedBy__7473d",
+  avatarContainer: "avatarContainer__7473d"
 }

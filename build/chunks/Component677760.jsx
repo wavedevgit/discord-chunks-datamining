@@ -69,18 +69,18 @@ let C = e => {
   if (null == e || null == e.state || t) return 0;
   let n = e.state;
   switch (n) {
-    case b.r2o.RESOLVED:
-    case b.r2o.ACCEPTED:
-    case b.r2o.APP_NOT_OPENED:
-    case b.r2o.APP_OPENED:
-    case b.r2o.ACCEPTING:
-    case b.r2o.APP_OPENING:
+    case j.r2o.RESOLVED:
+    case j.r2o.ACCEPTED:
+    case j.r2o.APP_NOT_OPENED:
+    case j.r2o.APP_OPENED:
+    case j.r2o.ACCEPTING:
+    case j.r2o.APP_OPENING:
       return 1;
-    case b.r2o.EXPIRED:
-    case b.r2o.BANNED:
-    case b.r2o.ERROR:
+    case j.r2o.EXPIRED:
+    case j.r2o.BANNED:
+    case j.r2o.ERROR:
       return 2;
-    case b.r2o.RESOLVING:
+    case j.r2o.RESOLVING:
       return 0;
     default:
       (0, _.vE)(n)
@@ -92,7 +92,7 @@ function A(e) {
     invite: t,
     onAcceptInvite: n
   } = e;
-  return (null == t ? true : t.state) === b.r2o.BANNED ? (0, r.jsx)(c.u, {
+  return (null == t ? true : t.state) === j.r2o.BANNED ? (0, r.jsx)(c.u, {
     text: I.intl.string(I.t["5AkWAQ"]),
     buttonCta: I.intl.string(I.t["8osdkp"]),
     onClick: n
@@ -159,7 +159,7 @@ function T(e) {
     startAnimHeightPx: 0,
     innerStyle: () => N.guildInfoInner
   }, e), {
-    children: e => null == t ? null : 1 === e ? (0, r.jsx)(j.X, {
+    children: e => null == t ? null : 1 === e ? (0, r.jsx)(b.X, {
       invite: t
     }) : null
   })) : null
@@ -210,7 +210,7 @@ function R(e) {
     null != e && (l.backgroundImage = "url(".concat(e, ")"), l.backgroundSize = "cover")
   }
   return (0, r.jsxs)(d.ZP, {
-    theme: b.BRd.DARK,
+    theme: j.BRd.DARK,
     className: N.splashBackground,
     style: l,
     contentClassName: N.centerAuthBoxContent,
@@ -228,7 +228,7 @@ function w(e) {
   return i.useEffect(() => {
     (0, h.e)("invite_mobile")
   }, []), i.useEffect(() => {
-    null != l && l.state === b.r2o.RESOLVED && g.default.track(b.rMx.INVITE_VIEWED, {
+    null != l && l.state === j.r2o.RESOLVED && g.default.track(j.rMx.INVITE_VIEWED, {
       invite_code: t,
       friends_count: null == l ? true : l.friends_count
     }, {
@@ -239,13 +239,13 @@ function w(e) {
     onAcceptInvite: e => {
       ! function(e, t, n) {
         var r, i, l;
-        null == e || e.preventDefault(), g.default.track(b.rMx.INVITE_APP_OPENED, {
+        null == e || e.preventDefault(), g.default.track(j.rMx.INVITE_APP_OPENED, {
           invite_code: (0, x.jX)(t),
           guild_id: null == n || null == (r = n.guild) ? true : r.id,
           channel_id: null == n || null == (i = n.channel) ? true : i.id,
           inviter_id: null == n || null == (l = n.inviter) ? true : l.id
         });
-        let o = null != n && n.state !== b.r2o.EXPIRED && n.state !== b.r2o.BANNED ? t : true,
+        let o = null != n && n.state !== j.r2o.EXPIRED && n.state !== j.r2o.BANNED ? t : true,
           s = f.default.getFingerprint(),
           c = null != s ? s : f.default.getId(),
           u = null != n && (null == n ? true : n.type) != null ? Number(null == n ? true : n.type) : true;

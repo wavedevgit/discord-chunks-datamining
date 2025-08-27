@@ -136,7 +136,7 @@ function R(e) {
           children: y.intl.string(y.t.apGCUV)
         }), (0, r.jsx)(g.DK, {
           children: y.intl.format(y.t.Cbl5JC, {
-            username: "".concat(b.ZP.getUserTag(e))
+            username: "".concat(j.ZP.getUserTag(e))
           })
         }), (0, r.jsx)(c.zx, {
           look: c.zx.Looks.BLANK,
@@ -207,7 +207,7 @@ function w(e) {
         switch (l.op) {
           case "nonce_proof": {
             let e = l.encrypted_nonce,
-              t = await (0, j.qd)(f(), e);
+              t = await (0, b.qd)(f(), e);
             i("computed nonce proof"), r.send(JSON.stringify({
               op: "nonce_proof",
               nonce: t
@@ -216,7 +216,7 @@ function w(e) {
           }
           case "pending_remote_init": {
             h.succeed(), v.S.dispatch(N.CkL.WAVE_EMPHASIZE);
-            let e = await (0, j.Pk)(f());
+            let e = await (0, b.Pk)(f());
             if (e !== l.fingerprint) throw Error("bad fingerprint ".concat(e, " !== ").concat(l.fingerprint));
             i("handshake complete awaiting remote auth."), a({
               step: 1,
@@ -237,7 +237,7 @@ function w(e) {
             let e = l.encrypted_user_payload;
             a({
               step: 3,
-              user: await (0, j.Rq)(f(), e)
+              user: await (0, b.Rq)(f(), e)
             });
             return
           }
@@ -246,7 +246,7 @@ function w(e) {
             let e = l.encrypted_user_payload;
             a({
               step: 2,
-              user: await (0, j.Rq)(f(), e)
+              user: await (0, b.Rq)(f(), e)
             });
             return
           }
@@ -255,7 +255,7 @@ function w(e) {
             let t = l.encrypted_token;
             a({
               step: 5
-            }), e(await (0, j.FW)(f(), t));
+            }), e(await (0, b.FW)(f(), t));
             return
           }
           case "cancel":
@@ -273,8 +273,8 @@ function w(e) {
             d = true
         }
       }, r.onopen = async () => {
-        l = await (0, j.W_)(), o = await (0, j.dK)(l);
-        let e = await (0, j.Pk)(l);
+        l = await (0, b.W_)(), o = await (0, b.dK)(l);
+        let e = await (0, b.Pk)(l);
         i("connected, handshaking with fingerprint: ".concat(e)), r.send(JSON.stringify({
           op: "init",
           encoded_public_key: o
@@ -314,7 +314,7 @@ function w(e) {
       rejectWithError: true
     }).then(async e => {
       if (null != d) try {
-        let n = await (0, j.FW)(d, e.body.encrypted_token);
+        let n = await (0, b.FW)(d, e.body.encrypted_token);
         t(n)
       } catch (e) {
         g()

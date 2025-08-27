@@ -88,7 +88,7 @@ function x(e, t, n) {
     message: t,
     shouldMention: !n.shiftKey && !i,
     showMentionToggle: !r && !i
-  }), y.S.dispatch(S.CkL.FOCUS_CHANNEL_TEXT_AREA, {
+  }), m.S.dispatch(S.CkL.FOCUS_CHANNEL_TEXT_AREA, {
     channelId: e.id
   })
 }
@@ -98,7 +98,7 @@ function D(e, t) {
 }
 
 function M(e, t) {
-  let n = g.Z.getChannel(m.default.castMessageIdAsChannelId(t.id));
+  let n = g.Z.getChannel(y.default.castMessageIdAsChannelId(t.id));
   null != n && (0, d.ok)(n)
 }
 

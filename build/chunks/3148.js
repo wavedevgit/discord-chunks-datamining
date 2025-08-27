@@ -45,13 +45,14 @@ function d(e) {
     flags: h,
     nonce: m,
     poll: g,
-    changelogId: E,
-    giftingPrompt: b,
-    state: y
-  } = e, O = [];
+    sharedCustomTheme: E,
+    changelogId: b,
+    giftingPrompt: y,
+    state: O
+  } = e, v = [];
   if (d === c.uaV.REPLY && (i()(null != f, "Replies must have a message reference"), null == _ || _.replied_user)) {
     let e = o.Z.getMessageByReference(f);
-    (null == e ? true : e.state) === o.Y.LOADED && O.push(u(e.message.author))
+    (null == e ? true : e.state) === o.Y.LOADED && v.push(u(e.message.author))
   }
   return null == p && (p = s.default.getCurrentUser()), p instanceof a.Z && (p = u(p)), i()(null != p, "createMessage: author cannot be undefined"), {
     id: null != m ? m : (0, l.r)(),
@@ -62,20 +63,21 @@ function d(e) {
     attachments: [],
     embeds: [],
     pinned: false,
-    mentions: O,
+    mentions: v,
     mention_channels: [],
     mention_roles: [],
     mention_everyone: false,
     timestamp: new Date().toISOString(),
-    state: y || c.yb.SENDING,
+    state: O || c.yb.SENDING,
     tts: r,
     message_reference: f,
     message_snapshots: [],
     flags: h,
     nonce: m,
     poll: g,
-    changelog_id: E,
-    gifting_prompt: b
+    shared_client_theme: E,
+    changelog_id: b,
+    gifting_prompt: y
   }
 }
 
