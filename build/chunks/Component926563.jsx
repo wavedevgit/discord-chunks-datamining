@@ -25,48 +25,46 @@ function b(t) {
     previewEmoji: b,
     previewStatus: S,
     placeHolderText: g,
-    transitionState: j,
-    label: O
-  } = t, v = (0, i.ZP)(e.id);
-  return (0, a.jsxs)(c.Z, {
+    transitionState: O
+  } = t, j = (0, l.ZP)(e.id);
+  return (0, r.jsxs)(c.Z, {
     user: e,
-    displayProfile: v,
+    displayProfile: j,
     themeType: p.l.POPOUT,
     className: h.profilePreviewContainer,
-    children: [(0, a.jsxs)("header", {
-      children: [(0, a.jsx)(u.Z, {
+    children: [(0, r.jsxs)("header", {
+      children: [(0, r.jsx)(u.Z, {
         user: e,
-        displayProfile: v,
+        displayProfile: j,
         themeType: p.l.POPOUT
-      }), (0, a.jsx)("div", {
+      }), (0, r.jsx)("div", {
         inert: true,
-        children: (0, a.jsx)(o.Z, {
+        children: (0, r.jsx)(o.Z, {
           user: e,
-          displayProfile: v,
+          displayProfile: j,
           themeType: p.l.POPOUT,
           previewStatus: S,
           className: h.avatar
         })
-      }), (0, a.jsx)(m.Z, {
+      }), (0, r.jsx)(m.Z, {
         user: e,
         themeType: p.l.POPOUT,
         previewText: n,
         previewEmoji: b,
         placeholderText: g,
-        hasEntered: j === l.Dvm.ENTERED,
-        previewLabel: O
+        hasEntered: O === a.Dvm.ENTERED
       })]
-    }), (null == v ? true : v.profileEffect) != null && (0, a.jsx)(r.Z, {
-      profileEffectId: v.profileEffect.id
-    }), (0, a.jsx)("div", {
+    }), (null == j ? true : j.profileEffect) != null && (0, r.jsx)(i.Z, {
+      profileEffectId: j.profileEffect.id
+    }), (0, r.jsx)("div", {
       className: h.usernameContainer,
       inert: true,
-      children: (0, a.jsx)(d.Z, {
+      children: (0, r.jsx)(d.Z, {
         user: e,
         nickname: f.ZP.getName(null, null, e),
-        pronouns: null == v ? true : v.pronouns,
-        tags: (0, a.jsx)(s.Z, {
-          displayProfile: v,
+        pronouns: null == j ? true : j.pronouns,
+        tags: (0, r.jsx)(s.Z, {
+          displayProfile: j,
           themeType: p.l.POPOUT
         })
       })

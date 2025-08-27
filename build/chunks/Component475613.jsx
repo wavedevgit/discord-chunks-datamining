@@ -11,17 +11,17 @@ var Chunk951288 = require("./951288.js"),
 function o(t) {
   for (var e = 1; e < arguments.length; e++) {
     var n = null != arguments[e] ? arguments[e] : {},
-      a = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(n).filter(function(t) {
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(t) {
       return Object.getOwnPropertyDescriptor(n, t).enumerable
-    }))), a.forEach(function(e) {
-      var a;
-      a = n[e], e in t ? Object.defineProperty(t, e, {
-        value: a,
+    }))), r.forEach(function(e) {
+      var r;
+      r = n[e], e in t ? Object.defineProperty(t, e, {
+        value: r,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : t[e] = a
+      }) : t[e] = r
     })
   }
   return t
@@ -32,20 +32,20 @@ function s(t) {
     location: e
   } = t, n = function(t, e) {
     if (null == t) return {};
-    var n, a, l = function(t, e) {
+    var n, r, a = function(t, e) {
       if (null == t) return {};
-      var n, a, l = {},
-        r = Object.keys(t);
-      for (a = 0; a < r.length; a++) n = r[a], e.indexOf(n) >= 0 || (l[n] = t[n]);
-      return l
+      var n, r, a = {},
+        i = Object.keys(t);
+      for (r = 0; r < i.length; r++) n = i[r], e.indexOf(n) >= 0 || (a[n] = t[n]);
+      return a
     }(t, e);
     if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(t);
-      for (a = 0; a < r.length; a++) n = r[a], !(e.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(t, n) && (l[n] = t[n])
+      var i = Object.getOwnPropertySymbols(t);
+      for (r = 0; r < i.length; r++) n = i[r], !(e.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(t, n) && (a[n] = t[n])
     }
-    return l
+    return a
   }(t, ["location"]);
-  return (0, l.D)({
+  return (0, a.D)({
     location: e
-  }) ? (0, a.jsx)(i.Z, o({}, n)) : (0, a.jsx)(r.Z, o({}, n))
+  }) ? (0, r.jsx)(l.Z, o({}, n)) : (0, r.jsx)(i.Z, o({}, n))
 }
