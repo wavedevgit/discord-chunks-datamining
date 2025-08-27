@@ -125,8 +125,11 @@ let G = e => {
         })
       }), (0, Chunk951288.jsx)(G, {
         inOfferExperience: er
-      }), (0, Chunk951288.jsx)("div", {
-        children: (0, Chunk951288.jsx)(Chunk622535.$, {
+      }), (0, Chunk951288.jsxs)("div", {
+        children: [null != ea && (0, Chunk951288.jsx)(Chunk218390.C, {
+          className: Chunk689095.giftPromoCard,
+          config: ea
+        }), (0, Chunk951288.jsx)(Chunk622535.$, {
           innerRef: Chunk120356,
           onChange: e => V(e),
           threshold: 0,
@@ -142,16 +145,13 @@ let G = e => {
             }),
             isDarkMode: Z
           })
-        })
+        })]
       }), (0, Chunk951288.jsx)("div", {
         className: Chunk689095.promoBannerContainer,
         children: (0, Chunk951288.jsx)(Chunk8647.Z, {
           variant: Chunk8647.C.NITRO_SETTINGS
         })
-      }), el, null != ea && (0, Chunk951288.jsx)(Chunk218390.C, {
-        className: Chunk689095.giftPromoCard,
-        config: ea
-      }), (0, Chunk951288.jsx)(Chunk177839.Z, {
+      }), el, (0, Chunk951288.jsx)(Chunk177839.Z, {
         className: Chunk689095.perkCardsContainerSpacingSettings
       }), (0, Chunk951288.jsx)("div", {
         className: Chunk689095.planComparisonTableContainer,
