@@ -2,9 +2,9 @@
 /** chunk id: 125186, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  lG: () => _,
-  ub: () => p
-}), require("./953529.js"), require("./388685.js"), require("./415506.js"), require("./410992.js"), require("./227481.js"), require("./730884.js"), require("./20464.js"), require("./341884.js"), require("./364341.js"), require("./629680.js"), require("./505025.js"), require("./918970.js"), require("./121784.js"), require("./644351.js"), require("./146733.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js");
+  lG: () => p,
+  ub: () => h
+}), require("./410992.js"), require("./227481.js"), require("./730884.js"), require("./20464.js"), require("./341884.js"), require("./364341.js"), require("./629680.js"), require("./505025.js"), require("./918970.js"), require("./121784.js"), require("./644351.js"), require("./146733.js"), require("./953529.js"), require("./388685.js"), require("./415506.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js");
 var Chunk108131 = require("./108131.js"),
   i = require.n(Chunk108131),
   Chunk605387 = require("./605387.js"),
@@ -12,7 +12,15 @@ var Chunk108131 = require("./108131.js"),
 let s = new(require("./710845.js")).Z("WebP"),
   Chunk4667 = require("./4667.js"),
   c = 0;
-async function u(e) {
+
+function u(e) {
+  if (4 !== e.ctype && 6 !== e.ctype) returnfalse;
+  let t = new Uint8Array(o().toRGBA8(e));
+  for (let e = 3; e < t.length; e += 4)
+    if (t[e] < 255) returntrue;
+  returnfalse
+}
+async function d(e) {
   let t = await l.load(e, {
     async: true,
     expanded: true,
@@ -29,7 +37,7 @@ async function u(e) {
   }
   return s.verbose("[webp] ICC profile detected but could not parse description - assuming non-sRGB"), false
 }
-async function d(e) {
+async function f(e) {
   let t;
   if ("image/webp" === e.type) return s.verbose("[WebP] File already WebP format"), "already_webp";
   if (!["image/png"].includes(e.type)) return s.verbose("[WebP] Unsupported format: ".concat(e.type)), "unsupported_format";
@@ -43,24 +51,24 @@ async function d(e) {
   }
   try {
     let e = o().decode(t);
-    if (4 === e.ctype || 6 === e.ctype) return s.verbose("[webp] png has transparency - skipping conversion"), "has_transparency";
+    if (u(e)) return s.verbose("[webp] png uses actual transparency - skipping conversion"), "has_transparency";
     if (null != e.tabs.acTL) return s.verbose("[webp] png is animated (apng) - skipping conversion"), "animated_image"
   } catch (e) {
     return s.warn("[WebP] PNG analysis failed:", e), "corrupted_file"
   }
   try {
-    if (!await u(t)) return "icc_non_srgb_profile"
+    if (!await d(t)) return "icc_non_srgb_profile"
   } catch (e) {
     return s.warn("[WebP] ICC profile detection failed:", e), "icc_detection_failed"
   }
   return null
 }
 
-function f(e) {
+function _(e) {
   let t = new Uint8Array(e.data.buffer);
   return i()(t).toString(16)
 }
-async function _(e) {
+async function p(e) {
   let t, n;
   if (null == e) throw Error("file is null or undefined");
   s.verbose("[WebP] Starting conversion for: ".concat(e.name));
@@ -78,19 +86,19 @@ async function _(e) {
       }
     };
   try {
-    let a = await d(e);
+    let a = await f(e);
     if (null != a) return s.verbose("[WebP] Conversion rejected: ".concat(a)), i(a);
     let o = document.createElement("canvas"),
       l = o.getContext("2d");
     if (null == l) throw Error("could not get canvas context");
     let u = new Image,
-      _ = URL.createObjectURL(e);
+      d = URL.createObjectURL(e);
     try {
       await new Promise((e, t) => {
-        u.onload = () => e(), u.onerror = () => t(Error("failed to load image")), u.src = _
+        u.onload = () => e(), u.onerror = () => t(Error("failed to load image")), u.src = d
       }), o.width = u.width, o.height = u.height, l.drawImage(u, 0, 0)
     } finally {
-      URL.revokeObjectURL(_)
+      URL.revokeObjectURL(d)
     }
     let p = await new Promise(e => {
       o.toBlob(e, "image/webp", 1)
@@ -110,10 +118,10 @@ async function _(e) {
         URL.revokeObjectURL(c)
       }
       let u = await l.getImageData(0, 0, o.width, o.height),
-        d = f(r),
-        _ = f(u),
-        h = d === _;
-      if (t = performance.now() - n, s.verbose("[WebP] Pixel hash results: " + "fileName=".concat(e.name, " ") + "fileLength={".concat(e.size, "} ") + "width=".concat(a.width, " ") + "height=".concat(a.height, " ") + "pixelHash=".concat(d, " ") + "mezzanineFileLength={".concat(p.size, "} ") + "mezzaninePixelHash=".concat(_, " ") + "match=".concat(h, " ") + "elapsed_ms=".concat(Math.round(t))), !h) return i("pixel_hash_mismatch")
+        d = _(r),
+        f = _(u),
+        h = d === f;
+      if (t = performance.now() - n, s.verbose("[WebP] Pixel hash results: " + "fileName=".concat(e.name, " ") + "fileLength={".concat(e.size, "} ") + "width=".concat(a.width, " ") + "height=".concat(a.height, " ") + "pixelHash=".concat(d, " ") + "mezzanineFileLength={".concat(p.size, "} ") + "mezzaninePixelHash=".concat(f, " ") + "match=".concat(h, " ") + "elapsed_ms=".concat(Math.round(t))), !h) return i("pixel_hash_mismatch")
     }
     let h = e.size > 0 ? p.size / e.size : 1,
       m = 1 - h;
@@ -139,6 +147,6 @@ async function _(e) {
   }
 }
 
-function p(e) {
+function h(e) {
   return e.success && null != e.convertedFile ? e.convertedFile : e.originalFile
 }
