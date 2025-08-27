@@ -294,7 +294,8 @@ function A(e) {
         isCurrentUser: T,
         widgetType: l,
         applicationId: b,
-        disableInteraction: u
+        disableInteraction: u,
+        className: P.tags
       }), !u && (0, n.jsx)(C, {
         className: P.socialProof,
         applicationId: b,

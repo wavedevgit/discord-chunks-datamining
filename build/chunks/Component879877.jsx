@@ -1,10 +1,12 @@
 /** Chunk was on 21585 **/
 /** chunk id: 879877, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => O
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk120356 = require("./120356.js"),
+  l = require.n(Chunk120356),
   Chunk379405 = require("./379405.js"),
   Chunk481060 = require("./481060.js"),
   Chunk259580 = require("./259580.jsx"),
@@ -16,93 +18,94 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk44258 = require("./44258.js");
 
-function p(e) {
+function O(e) {
   var t;
   let {
     tags: r,
-    isCurrentUser: l,
-    widgetType: o,
+    isCurrentUser: i,
+    widgetType: c,
     applicationId: s,
-    disableInteraction: p = false
-  } = e, v = null != (t = null == r ? true : r.filter(e => null != (0, f.zK)(e))) ? t : [], x = v.length > 0, h = Object.values(i._).length, _ = l && !p && (0, u.M8)(o) && v.length < h, {
-    trackUserProfileAction: P
-  } = (0, c.KZ)(), w = (0, a.useRef)(new Map), S = (0, a.useRef)(null), E = (0, a.useRef)(null), [I, T] = (0, a.useState)(0), [N, k] = (0, a.useState)(false), C = y(S, E, v, w, T);
-  if ((0, a.useEffect)(() => (C(), window.addEventListener("resize", C), () => {
-      window.removeEventListener("resize", C)
-    }), [C, null == v ? true : v.join("")]), !x && !_) return null;
-  let A = N ? v : v.slice(0, v.length - I);
+    className: d,
+    disableInteraction: O = false
+  } = e, h = null != (t = null == r ? true : r.filter(e => null != (0, b.zK)(e))) ? t : [], _ = h.length > 0, P = Object.values(o._).length, w = i && !O && (0, f.M8)(c) && h.length < P, {
+    trackUserProfileAction: S
+  } = (0, u.KZ)(), E = (0, a.useRef)(new Map), I = (0, a.useRef)(null), T = (0, a.useRef)(null), [N, k] = (0, a.useState)(0), [C, A] = (0, a.useState)(false), D = x(I, T, h, E, k);
+  if ((0, a.useEffect)(() => (D(), window.addEventListener("resize", D), () => {
+      window.removeEventListener("resize", D)
+    }), [D, null == h ? true : h.join("")]), !_ && !w) return null;
+  let G = C ? h : h.slice(0, h.length - N);
   return (0, n.jsxs)("div", {
-    className: b.tagListContainer,
-    children: [x && (0, n.jsxs)(n.Fragment, {
+    className: l()(m.tagListContainer, d),
+    children: [_ && (0, n.jsxs)(n.Fragment, {
       children: [(0, n.jsx)("ul", {
-        className: b.tagList,
-        "aria-label": g.intl.string(g.t.EfjTi4),
-        children: A.map(e => (0, n.jsx)(m, {
+        className: m.tagList,
+        "aria-label": p.intl.string(p.t.EfjTi4),
+        children: G.map(e => (0, n.jsx)(j, {
           tag: e,
-          isCurrentUser: l,
+          isCurrentUser: i,
           applicationId: s,
-          widgetType: o,
+          widgetType: c,
           ref: t => {
-            null != t && w.current.set(e, t)
+            null != t && E.current.set(e, t)
           },
-          disableInteraction: p
+          disableInteraction: O
         }, e))
-      }), I > 0 && (N ? (0, n.jsx)(j, {
+      }), N > 0 && (C ? (0, n.jsx)(v, {
         onClick: () => {
-          k(false), P({
+          A(false), S({
             action: "COLLAPSE_GAME_TAGS"
           })
         }
-      }) : (0, n.jsx)(O, {
-        numHidden: I,
+      }) : (0, n.jsx)(y, {
+        numHidden: N,
         onClick: () => {
-          k(true), P({
+          A(true), S({
             action: "EXPAND_GAME_TAGS"
           })
         },
-        ref: S,
-        disableInteraction: p
+        ref: I,
+        disableInteraction: O
       }))]
-    }), _ && (0, n.jsx)(d.Z, {
+    }), w && (0, n.jsx)(g.Z, {
       tags: r,
-      widgetType: o,
+      widgetType: c,
       applicationId: s,
-      ref: E
+      ref: T
     })]
   })
 }
-let m = e => {
+let j = e => {
     let {
       tag: t,
       isCurrentUser: r,
       applicationId: a,
       widgetType: i,
-      disableInteraction: o,
-      ref: c
-    } = e, d = (0, f.zK)(t);
-    if (null == d) return null;
+      disableInteraction: l,
+      ref: o
+    } = e, s = (0, b.zK)(t);
+    if (null == s) return null;
     let {
-      getText: p,
-      icon: m
-    } = d, O = () => {
-      (0, u.RZ)(i, a, t), (0, s.pQ)({
+      getText: u,
+      icon: g
+    } = s, O = () => {
+      (0, f.RZ)(i, a, t), (0, d.pQ)({
         action: "REMOVE_GAME_TAGS"
       })
     };
     return (0, n.jsxs)("li", {
-      className: b.tag,
-      ref: c,
-      children: [(0, n.jsx)(m, {
+      className: m.tag,
+      ref: o,
+      children: [(0, n.jsx)(g, {
         size: "xxs"
-      }), (0, n.jsx)(l.Text, {
+      }), (0, n.jsx)(c.Text, {
         variant: "text-xxs/medium",
         color: "text-secondary",
-        children: p()
-      }), r && !o && (0, n.jsx)(l.ua7, {
-        text: g.intl.string(g.t.Otv9fH),
+        children: u()
+      }), r && !l && (0, n.jsx)(c.ua7, {
+        text: p.intl.string(p.t.Otv9fH),
         children: e => {
           var t, r;
-          return (0, n.jsx)(l.P3F, (t = function(e) {
+          return (0, n.jsx)(c.P3F, (t = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var r = null != arguments[t] ? arguments[t] : {},
                 n = Object.keys(r);
@@ -121,11 +124,11 @@ let m = e => {
             return e
           }({}, e), r = r = {
             onClick: O,
-            className: b.removeButton,
-            "aria-label": g.intl.formatToPlainString(g.t.GCn1nZ, {
-              tag: p()
+            className: m.removeButton,
+            "aria-label": p.intl.formatToPlainString(p.t.GCn1nZ, {
+              tag: u()
             }),
-            children: (0, n.jsx)(l.Dio, {
+            children: (0, n.jsx)(c.Dio, {
               size: "xxs",
               color: "currentColor"
             })
@@ -143,7 +146,7 @@ let m = e => {
       })]
     })
   },
-  O = e => {
+  y = e => {
     let {
       numHidden: t,
       onClick: r,
@@ -151,21 +154,21 @@ let m = e => {
       ref: i
     } = e;
     return a ? (0, n.jsx)("div", {
-      className: b.expandButton,
-      children: (0, n.jsx)(l.Text, {
+      className: m.expandButton,
+      children: (0, n.jsx)(c.Text, {
         variant: "text-xxs/medium",
         color: "none",
         children: "+".concat(t)
       })
-    }) : (0, n.jsx)(l.DY3, {
-      className: b.buttonContainer,
-      text: g.intl.string(g.t.mriLXF),
-      children: (0, n.jsx)(l.P3F, {
+    }) : (0, n.jsx)(c.DY3, {
+      className: m.buttonContainer,
+      text: p.intl.string(p.t.mriLXF),
+      children: (0, n.jsx)(c.P3F, {
         onClick: r,
-        className: b.expandButton,
+        className: m.expandButton,
         innerRef: i,
-        "aria-label": g.intl.string(g.t.mriLXF),
-        children: (0, n.jsx)(l.Text, {
+        "aria-label": p.intl.string(p.t.mriLXF),
+        children: (0, n.jsx)(c.Text, {
           variant: "text-xxs/medium",
           color: "none",
           children: "+".concat(t)
@@ -173,27 +176,27 @@ let m = e => {
       })
     })
   },
-  j = e => {
+  v = e => {
     let {
       onClick: t
     } = e;
-    return (0, n.jsx)(l.DY3, {
-      className: b.buttonContainer,
-      text: g.intl.string(g.t.z9VPra),
-      children: (0, n.jsx)(l.P3F, {
+    return (0, n.jsx)(c.DY3, {
+      className: m.buttonContainer,
+      text: p.intl.string(p.t.z9VPra),
+      children: (0, n.jsx)(c.P3F, {
         onClick: t,
-        className: b.collapseButton,
-        "aria-label": g.intl.string(g.t.z9VPra),
-        children: (0, n.jsx)(o.Z, {
-          direction: o.Z.Directions.LEFT,
+        className: m.collapseButton,
+        "aria-label": p.intl.string(p.t.z9VPra),
+        children: (0, n.jsx)(s.Z, {
+          direction: s.Z.Directions.LEFT,
           width: 12,
           height: 12,
-          className: b.caret
+          className: m.caret
         })
       })
     })
   },
-  y = (e, t, r, n, i) => (0, a.useCallback)(() => {
+  x = (e, t, r, n, i) => (0, a.useCallback)(() => {
     var a, l, o, c;
     if (null == r) return void i(0);
     let s = null != (o = null == (a = e.current) ? true : a.getBoundingClientRect().width) ? o : 0,

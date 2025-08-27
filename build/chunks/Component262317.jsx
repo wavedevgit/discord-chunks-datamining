@@ -184,7 +184,9 @@ let F = (0, Chunk888651.$)(function(e) {
         })
       }))
     })
-  }, eN = e => eh ? (0, r.jsx)(O.$, L({}, e)) : null != em ? (0, r.jsx)(j.I, k(L({}, e), {
+  }, eN = e => eh ? (0, r.jsx)(O.$, k(L({}, e), {
+    channel: U
+  })) : null != em ? (0, r.jsx)(j.I, k(L({}, e), {
     hangStatusActivity: em,
     channel: U
   })) : null, eA = () => (0, r.jsx)(E.Z, {
