@@ -2,13 +2,14 @@
 /** chunk id: 913002, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => v
+  Z: () => I
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
+  Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk607070 = require("./607070.js"),
   Chunk906732 = require("./906732.jsx"),
@@ -18,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk81064 = require("./81064.js");
 
-function m(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -27,20 +28,20 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      g(e, t, n[t])
     })
   }
   return e
 }
 
-function E(e, t) {
+function b(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -51,73 +52,75 @@ function E(e, t) {
   return n
 }
 
-function b(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
+function y(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let y = 300,
-  O = e => (0, l.ZDy)(async () => {
+let O = 300,
+  v = e => (0, c.ZDy)(async () => {
     let {
       default: t
     } = await n.e("31649").then(n.bind(n, 475613));
-    return n => (0, r.jsx)(t, b(g({}, n), {
+    return n => (0, r.jsx)(t, y(E({}, n), {
       sourceAnalyticsLocations: e,
       location: "UserProfileCustomStatusBubbleEditBar"
     }))
   });
 
-function v(e) {
+function I(e) {
   let {
     isVisible: t,
     isExpandable: n,
     onCloseProfile: a
   } = e, {
-    analyticsLocations: m
-  } = (0, u.ZP)(), {
-    trackUserProfileAction: g
-  } = (0, _.KZ)(), E = i.useRef(null), b = i.useRef(null), [v, I] = (0, s.Wu)([c.Z], () => [c.Z.useReducedMotion, c.Z.keyboardModeEnabled]), T = !n || v || I ? 0 : y, S = () => {
-    g({
+    analyticsLocations: g
+  } = (0, d.ZP)(), {
+    trackUserProfileAction: E
+  } = (0, p.KZ)(), b = i.useRef(null), y = i.useRef(null), [I, T] = (0, s.Wu)([u.Z], () => [u.Z.useReducedMotion, u.Z.keyboardModeEnabled]), S = !n || I || T ? 0 : O, A = () => {
+    E({
       action: "PRESS_EDIT_CUSTOM_STATUS"
-    }), O(m), null == a || a()
-  }, A = () => {
-    g({
+    }), v(g), null == a || a()
+  }, C = () => {
+    E({
       action: "PRESS_CLEAR_CUSTOM_STATUS"
-    }), f.Ok.updateSetting(true)
+    }), _.Ok.updateSetting(true)
   };
-  return (0, r.jsxs)(d.ZP, {
-    className: o()(h.popover, {
-      [h.visible]: t,
-      [h.expandable]: n
+  return (0, r.jsxs)(f.ZP, {
+    className: o()(m.popover, {
+      [m.visible]: t,
+      [m.expandable]: n
     }),
-    children: [(0, r.jsx)(l.DY3, {
-      targetElementRef: E,
-      text: p.intl.string(p.t.bt75u7),
-      delay: T,
+    children: [(0, r.jsx)(l.u, {
+      asContainer: true,
+      targetElementRef: b,
+      text: h.intl.string(h.t.bt75u7),
+      delay: S,
       "aria-label": false,
-      children: (0, r.jsx)(d.zx, {
-        ref: E,
-        className: o()(h.button, h.left),
-        "aria-label": p.intl.string(p.t.QdHxoq),
+      children: (0, r.jsx)(f.zx, {
+        ref: b,
+        className: o()(m.button, m.left),
+        "aria-label": h.intl.string(h.t.QdHxoq),
         "aria-haspopup": "dialog",
-        onClick: S,
-        children: (0, r.jsx)(l.vdY, {
+        onClick: A,
+        children: (0, r.jsx)(c.vdY, {
           size: "xs",
-          colorClass: h.icon
+          colorClass: m.icon
         })
       })
-    }), (0, r.jsx)(l.DY3, {
-      text: p.intl.string(p.t.VkKicX),
-      delay: T,
+    }), (0, r.jsx)(l.u, {
+      asContainer: true,
+      text: h.intl.string(h.t.VkKicX),
+      delay: S,
       "aria-label": false,
-      children: (0, r.jsx)(d.zx, {
-        ref: b,
-        className: o()(h.button, h.right),
-        "aria-label": p.intl.string(p.t.wfYTHR),
-        onClick: A,
-        children: (0, r.jsx)(l.XHJ, {
+      children: (0, r.jsx)(f.zx, {
+        ref: y,
+        className: o()(m.button, m.right),
+        "aria-label": h.intl.string(h.t.wfYTHR),
+        onClick: C,
+        children: (0, r.jsx)(c.XHJ, {
           size: "xs",
-          colorClass: h.icon
+          colorClass: m.icon
         })
       })
     })]

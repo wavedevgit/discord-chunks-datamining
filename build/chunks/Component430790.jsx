@@ -19,8 +19,8 @@ function s() {
         default: t
       } = await require.e("38576").then(require.bind(require, 925170));
       return r => {
-        var a, i;
-        return (0, n.jsx)(t, (a = function(e) {
+        var i, a;
+        return (0, n.jsx)(t, (i = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var r = null != arguments[t] ? arguments[t] : {},
               n = Object.keys(r);
@@ -37,18 +37,18 @@ function s() {
             })
           }
           return e
-        }({}, r), i = i = {
+        }({}, r), a = a = {
           trackUserProfileAction: e
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
           var r = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var n = Object.getOwnPropertySymbols(e);
             r.push.apply(r, n)
           }
           return r
-        })(Object(i)).forEach(function(e) {
-          Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(i, e))
-        }), a))
+        })(Object(a)).forEach(function(e) {
+          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(a, e))
+        }), i))
       }
     }, {
       stackingBehavior: "stack"

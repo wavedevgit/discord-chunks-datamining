@@ -1,11 +1,12 @@
 /** Chunk was on 91488 **/
 /** chunk id: 818186, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => f
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
-var Chunk481060 = require("./481060.js"),
+var Chunk28664 = require("./28664.jsx"),
+  Chunk481060 = require("./481060.js"),
   Chunk529103 = require("./529103.js"),
   Chunk377171 = require("./377171.js"),
   Chunk497089 = require("./497089.js"),
@@ -15,28 +16,29 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk658235 = require("./658235.js");
 
-function h(e) {
+function f(e) {
   let {
     closePopout: t
-  } = e, n = (0, s.If)();
-  return (0, r.jsx)(i.DY3, {
-    text: d.intl.string(d.t["lMR96+"]),
-    children: (0, r.jsxs)(i.P3F, {
-      "aria-label": "".concat(d.intl.string(d.t["lMR96+"]), ", ").concat(n),
-      className: p.friendRequestsButton,
+  } = e, n = (0, c.If)();
+  return (0, r.jsx)(i.u, {
+    asContainer: true,
+    text: p.intl.string(p.t["lMR96+"]),
+    children: (0, r.jsxs)(l.P3F, {
+      "aria-label": "".concat(p.intl.string(p.t["lMR96+"]), ", ").concat(n),
+      className: h.friendRequestsButton,
       onClick: () => {
-        c.default.track(u.rMx.NOTIFICATION_CENTER_ACTION, {
-          action_type: a.ud.FRIEND_REQUESTS_BUTTON_CLICK
-        }), l.Z.transitionToSection(u.pJs.PENDING, {
+        u.default.track(d.rMx.NOTIFICATION_CENTER_ACTION, {
+          action_type: s.ud.FRIEND_REQUESTS_BUTTON_CLICK
+        }), o.Z.transitionToSection(d.pJs.PENDING, {
           explicit: true
         }), t()
       },
-      children: [(0, r.jsx)(i.iFz, {
+      children: [(0, r.jsx)(l.iFz, {
         size: "xs",
         color: "currentColor"
-      }), (0, r.jsx)(i.mAB, {
+      }), (0, r.jsx)(l.mAB, {
         count: n,
-        color: o.Z.BACKGROUND_ACCENT
+        color: a.Z.BACKGROUND_ACCENT
       })]
     })
   })

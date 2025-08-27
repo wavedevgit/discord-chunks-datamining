@@ -18,7 +18,6 @@ module.exports = {
   children: "children__29444",
   collapsed: "collapsed__29444",
   muted: "muted__29444",
-  dismissWrapper: "dismissWrapper__29444",
   dismissButton: "dismissButton__29444",
   dismiss: "dismiss__29444",
   voiceChannelsToggleIcon: "voiceChannelsToggleIcon__29444",

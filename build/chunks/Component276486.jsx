@@ -1,26 +1,28 @@
 /** Chunk was on 36605 **/
 /** chunk id: 276486, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  l: () => u,
-  v: () => d
+  l: () => d,
+  v: () => m
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
-var Chunk481060 = require("./481060.js"),
+var Chunk28664 = require("./28664.jsx"),
+  Chunk481060 = require("./481060.js"),
   Chunk144114 = require("./144114.js"),
   Chunk489813 = require("./489813.jsx"),
   Chunk815660 = require("./815660.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk624463 = require("./624463.js");
 
-function u() {
+function d() {
   return (0, Chunk951288.jsx)(Chunk489813.PU, {
     className: Chunk624463.editableRequirementContainer,
     icon: Chunk481060.AtH,
     text: Chunk388032.intl.string(Chunk388032.t.woMjLS),
     footnote: Chunk388032.intl.string(Chunk388032.t["jMh+TU"]),
     meetsRequirement: false,
-    children: (0, Chunk951288.jsx)(Chunk481060.DY3, {
+    children: (0, Chunk951288.jsx)(Chunk28664.u, {
+      asContainer: true,
       text: Chunk388032.intl.string(Chunk388032.t.mGlP39),
       children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
         variant: "primary",
@@ -32,22 +34,22 @@ function u() {
   })
 }
 
-function d(e) {
+function m(e) {
   let {
     isUserVerified: t
-  } = e, u = t ? o.intl.string(o.t.WWzQtb) : o.intl.string(o.t.woMjLS);
-  return (0, r.jsx)(s.PU, {
-    className: c.editableRequirementContainer,
-    icon: l.AtH,
-    text: u,
-    footnote: o.intl.string(o.t["jMh+TU"]),
+  } = e, l = t ? c.intl.string(c.t.WWzQtb) : c.intl.string(c.t.woMjLS);
+  return (0, r.jsx)(a.PU, {
+    className: u.editableRequirementContainer,
+    icon: i.AtH,
+    text: l,
+    footnote: c.intl.string(c.t["jMh+TU"]),
     meetsRequirement: t,
-    children: (0, r.jsx)(l.zxk, {
+    children: (0, r.jsx)(i.zxk, {
       variant: "primary",
       size: "sm",
-      text: o.intl.string(o.t["13ofGh"]),
+      text: c.intl.string(c.t["13ofGh"]),
       onClick: () => {
-        (0, l.ZDy)(async () => {
+        (0, i.ZDy)(async () => {
           let {
             default: e
           } = await Promise.resolve().then(n.bind(n, 607018));
@@ -69,10 +71,10 @@ function d(e) {
             }
             return e
           }({
-            reason: i.L.GUILD_PHONE_REQUIRED
+            reason: s.L.GUILD_PHONE_REQUIRED
           }, t))
         }, {
-          modalKey: a.M
+          modalKey: o.M
         })
       }
     })

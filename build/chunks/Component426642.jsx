@@ -2,90 +2,92 @@
 /** chunk id: 426642, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => u,
-  d: () => c
+  Z: () => d,
+  d: () => u
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk692547 = require("./692547.js"),
+  Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk752657 = require("./752657.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk749085 = require("./749085.js"),
-  c = function(e) {
+  u = function(e) {
     return e[e.TOO_BIG = 0] = "TOO_BIG", e[e.RATE_LIMIT = 1] = "RATE_LIMIT", e[e.TOO_MANY_EMOJI = 2] = "TOO_MANY_EMOJI", e[e.TOO_MANY_ANIMATED_EMOJI = 3] = "TOO_MANY_ANIMATED_EMOJI", e[e.WRONG_TYPE = 4] = "WRONG_TYPE", e[e.RESIZE_GIF = 5] = "RESIZE_GIF", e
   }({});
-let u = e => {
+let d = e => {
   let {
     error: t
   } = e, {
     type: n,
-    filename: c
+    filename: u
   } = t, {
-    icon: u,
-    description: d,
-    color: f,
-    tooltip: _
+    icon: d,
+    description: f,
+    color: _,
+    tooltip: p
   } = {
     0: {
-      icon: a.gm1,
-      description: s.intl.string(s.t.YbdEFB),
+      icon: o.gm1,
+      description: l.intl.string(l.t.YbdEFB),
       color: i.Z.unsafe_rawColors.RED_400.css,
-      tooltip: s.intl.string(s.t.PanA4O)
+      tooltip: l.intl.string(l.t.PanA4O)
     },
     4: {
-      icon: a.LB9,
-      description: s.intl.string(s.t["01Papq"]),
+      icon: o.LB9,
+      description: l.intl.string(l.t["01Papq"]),
       color: i.Z.unsafe_rawColors.RED_400.css,
-      tooltip: s.intl.string(s.t.PanA4O)
+      tooltip: l.intl.string(l.t.PanA4O)
     },
     5: {
-      icon: o.Z,
-      description: s.intl.string(s.t.sp16MT),
+      icon: s.Z,
+      description: l.intl.string(l.t.sp16MT),
       color: i.Z.unsafe_rawColors.RED_400.css,
-      tooltip: s.intl.string(s.t.PanA4O)
+      tooltip: l.intl.string(l.t.PanA4O)
     },
     1: {
-      icon: a.EmW,
-      description: s.intl.string(s.t["4rjikp"]),
+      icon: o.EmW,
+      description: l.intl.string(l.t["4rjikp"]),
       color: i.Z.unsafe_rawColors.ORANGE_345.css,
-      tooltip: s.intl.string(s.t.dq9aTk)
+      tooltip: l.intl.string(l.t.dq9aTk)
     },
     2: {
-      icon: a.d3s,
-      description: s.intl.string(s.t["5VmbbG"]),
+      icon: o.d3s,
+      description: l.intl.string(l.t["5VmbbG"]),
       color: i.Z.unsafe_rawColors.RED_400.css,
-      tooltip: s.intl.string(s.t.PanA4O)
+      tooltip: l.intl.string(l.t.PanA4O)
     },
     3: {
-      icon: a.d3s,
-      description: s.intl.string(s.t.rjFOZ2),
+      icon: o.d3s,
+      description: l.intl.string(l.t.rjFOZ2),
       color: i.Z.unsafe_rawColors.RED_400.css,
-      tooltip: s.intl.string(s.t.PanA4O)
+      tooltip: l.intl.string(l.t.PanA4O)
     }
   } [n];
   return (0, r.jsxs)("div", {
-    className: l.emojiErrorItem,
-    children: [(0, r.jsx)(u, {
-      className: l.fileIcon,
+    className: c.emojiErrorItem,
+    children: [(0, r.jsx)(d, {
+      className: c.fileIcon,
       color: i.Z.unsafe_rawColors.PRIMARY_300.css
-    }), (0, r.jsxs)(a.hjN, {
-      className: l.fileInfo,
-      children: [(0, r.jsx)(a.vwX, {
-        className: l.fileName,
-        children: c
-      }), (0, r.jsx)(a.R94, {
-        type: a.geA.DESCRIPTION,
-        children: d
+    }), (0, r.jsxs)(o.hjN, {
+      className: c.fileInfo,
+      children: [(0, r.jsx)(o.vwX, {
+        className: c.fileName,
+        children: u
+      }), (0, r.jsx)(o.R94, {
+        type: o.geA.DESCRIPTION,
+        children: f
       })]
-    }), (0, r.jsx)(a.DY3, {
+    }), (0, r.jsx)(a.u, {
+      asContainer: true,
       position: "right",
-      text: _,
-      children: (0, r.jsx)(a.Mgn, {
+      text: p,
+      children: (0, r.jsx)(o.Mgn, {
         size: "custom",
         width: 20,
         height: 20,
-        color: f
+        color: _
       })
     })]
   })

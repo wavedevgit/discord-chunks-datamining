@@ -117,7 +117,7 @@ let P = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
       } = (0, p.O)(),
       L = (0, s.e7)([b.default], () => b.default.getCurrentUser()),
       F = u && !v.ZP.isPremium(L, _.p9.TIER_1) && !v.ZP.canStreamQuality(v.ZP.StreamQuality.MID, L),
-      k = l.useCallback(() => {
+      V = l.useCallback(() => {
         F && D && (0, f.ZDy)(async () => {
           let {
             default: e
@@ -135,12 +135,12 @@ let P = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
           location_stack: N
         }), A(true))
       }, [t, i, D, P, A, N]), null == x) return null;
-    let V = (0, r.jsx)(f.ua7, {
+    let k = (0, r.jsx)(f.ua7, {
       text: T ? j.intl.string(j.t.q8TiVl) : D ? j.intl.string(j.t.IHgpEh) : j.intl.string(j.t.vLb0VV),
       position: "bottom",
       color: f.ua7.Colors.GREY,
       children: e => (0, r.jsxs)(f.P3F, w(I({}, e), {
-        onClick: k,
+        onClick: V,
         className: a()(Z.qualityIndicator, g, E.eE[d], T ? Z.qualityIndicatorLowQuality : Z.qualityIndicatorFullQuality, {
           [Z.clickable]: F && D
         }),
@@ -157,7 +157,7 @@ let P = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
       }))
     });
     return (0, r.jsx)(f.IGR, {
-      text: V,
+      text: k,
       className: a()(C, Z.qualityIndicatorBadge, {
         [Z.qualityIndicatorBadgePremium]: D && R
       }),

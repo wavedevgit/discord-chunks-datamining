@@ -1,13 +1,14 @@
 /** Chunk was on 47463 **/
 /** chunk id: 144991, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => x
 }), require("./415506.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk149765 = require("./149765.js"),
+  Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk208884 = require("./208884.js"),
   Chunk453628 = require("./453628.jsx"),
@@ -16,14 +17,14 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk557806 = require("./557806.js"),
   Chunk197571 = require("./197571.js");
-class f extends Chunk647438.PureComponent {
+class h extends Chunk647438.PureComponent {
   getOverwriteValue(e) {
     let {
       allow: t,
       deny: n
     } = this.props;
     if (null == t || null == n) throw Error("PermissionsForm.getOverwriteValue: Invalid allow or deny props");
-    return o.e$(t, e) ? d.y.ALLOW : o.e$(n, e) ? d.y.DENY : d.y.PASSTHROUGH
+    return o.e$(t, e) ? u.y.ALLOW : o.e$(n, e) ? u.y.DENY : u.y.PASSTHROUGH
   }
   getPermissionValue(e, t) {
     return o.e$(t, e)
@@ -35,10 +36,10 @@ class f extends Chunk647438.PureComponent {
     n(e, t)
   }
   renderDisabledIndicator(e) {
-    return (0, i.jsx)(s.ua7, {
+    return (0, i.jsx)(c.ua7, {
       text: e,
       position: "top",
-      color: s.ua7.Colors.RED,
+      color: c.ua7.Colors.RED,
       children: e => {
         var t, n;
         return (0, i.jsx)("span", (t = function(e) {
@@ -59,10 +60,10 @@ class f extends Chunk647438.PureComponent {
           }
           return e
         }({}, e), n = n = {
-          children: (0, i.jsx)(s.t6m, {
+          children: (0, i.jsx)(c.t6m, {
             size: "sm",
             color: "currentColor",
-            className: b.icon
+            className: g.icon
           })
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);
@@ -78,11 +79,14 @@ class f extends Chunk647438.PureComponent {
     })
   }
   renderTitleAccessory(e, t) {
-    return e === p.Pl.MANAGE_MESSAGES && t ? (0, i.jsx)(s.DY3, {
-      text: m.intl.string(m.t["2XIdPj"]),
-      className: b.accessory,
-      children: (0, i.jsx)(s.aNP, {
-        color: s.TVs.colors.STATUS_WARNING
+    return e === m.Pl.MANAGE_MESSAGES && t ? (0, i.jsx)("div", {
+      className: g.accessory,
+      children: (0, i.jsx)(s.u, {
+        asContainer: true,
+        text: b.intl.string(b.t["2XIdPj"]),
+        children: (0, i.jsx)(c.aNP, {
+          color: c.TVs.colors.STATUS_WARNING
+        })
       })
     }) : null
   }
@@ -94,31 +98,31 @@ class f extends Chunk647438.PureComponent {
       helpdeskArticleId: l,
       flag: o
     } = e, {
-      permissions: d,
-      locked: p,
+      permissions: s,
+      locked: u,
       permissionRender: m
-    } = this.props, g = null != (t = this.props.inPinPermissionExperiment) && t, f = null == m ? true : m(o), h = !!(p || f), x = "string" == typeof f ? this.renderDisabledIndicator(f) : null, j = a()({
-      [b.title]: null != x
+    } = this.props, b = null != (t = this.props.inPinPermissionExperiment) && t, f = null == m ? true : m(o), h = !!(u || f), x = "string" == typeof f ? this.renderDisabledIndicator(f) : null, j = a()({
+      [g.title]: null != x
     });
-    return null == d ? (0, i.jsxs)(u.Z, {
+    return null == s ? (0, i.jsxs)(p.Z, {
       disabled: h,
       value: this.getOverwriteValue(o),
       onChange: e => this.handleChange(o, e),
-      note: (0, c._u)(r),
+      note: (0, d._u)(r),
       helpdeskArticleId: l,
       children: [x, (0, i.jsx)("span", {
         className: j,
         children: n
-      }), this.renderTitleAccessory(o, g)]
-    }, String(o)) : (0, i.jsxs)(s.j7V, {
+      }), this.renderTitleAccessory(o, b)]
+    }, String(o)) : (0, i.jsxs)(c.j7V, {
       disabled: h,
-      value: this.getPermissionValue(o, d),
+      value: this.getPermissionValue(o, s),
       onChange: e => this.handleChange(o, e),
-      note: (0, c._u)(r),
+      note: (0, d._u)(r),
       children: [x, (0, i.jsx)("span", {
         className: j,
         children: n
-      }), this.renderTitleAccessory(o, g)]
+      }), this.renderTitleAccessory(o, b)]
     }, String(o))
   }
   render() {
@@ -144,4 +148,4 @@ class f extends Chunk647438.PureComponent {
     })
   }
 }
-let h = f
+let x = h

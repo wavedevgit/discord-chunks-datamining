@@ -2,11 +2,12 @@
 /** chunk id: 666984, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
-var Chunk755721 = require("./755721.js"),
+var Chunk28664 = require("./28664.jsx"),
+  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk620662 = require("./620662.js"),
   Chunk503438 = require("./503438.js"),
@@ -19,70 +20,72 @@ var Chunk755721 = require("./755721.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk704543 = require("./704543.js");
 
-function m(e) {
-  var t, n, m, g;
+function g(e) {
+  var t, n, g, E;
   let {
-    user: E,
-    activity: b,
-    onAction: y
+    user: b,
+    activity: y,
+    onAction: O
   } = e, {
-    themeType: O
-  } = (0, u.z)(), v = (0, l.Ih)(b, E), I = (0, l.Fe)(b, E);
-  if (!(0, s.Z)(b) || !(0, o.Z)(b, f.xjy.PLAY) && !(0, o.Z)(b, f.xjy.SYNC)) return null;
-  let T = e => {
-      null == e || e.stopPropagation(), null == y || y({
+    themeType: v
+  } = (0, d.z)(), I = (0, c.Ih)(y, b), T = (0, c.Fe)(y, b);
+  if (!(0, l.Z)(y) || !(0, s.Z)(y, _.xjy.PLAY) && !(0, s.Z)(y, _.xjy.SYNC)) return null;
+  let S = e => {
+      null == e || e.stopPropagation(), null == O || O({
         action: "PRESS_PLAY_ON_SPOTIFY_BUTTON"
-      }), v.onClick()
-    },
-    S = e => {
-      e.stopPropagation(), null == y || y({
-        action: "PRESS_LISTEN_ALONG_ON_SPOTIFY_BUTTON"
       }), I.onClick()
+    },
+    A = e => {
+      e.stopPropagation(), null == O || O({
+        action: "PRESS_LISTEN_ALONG_ON_SPOTIFY_BUTTON"
+      }), T.onClick()
     };
-  return O === _.l.MODAL_V2 ? (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(a.DY3, {
+  return v === p.l.MODAL_V2 ? (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(i.u, {
+      asContainer: true,
+      text: T.tooltip,
+      children: (0, r.jsx)(f.tG, {
+        text: null != (t = T.label) ? t : h.intl.string(h.t.eU3inJ),
+        disabled: T.disabled,
+        submitting: T.loading,
+        size: a.Ph.TINY,
+        themeColor: "secondary",
+        onClick: A
+      })
+    }), (0, r.jsx)(i.u, {
+      asContainer: true,
       text: I.tooltip,
-      children: (0, r.jsx)(d.tG, {
-        text: null != (t = I.label) ? t : p.intl.string(p.t.eU3inJ),
+      children: (0, r.jsx)(f.tG, {
+        text: null != (n = I.label) ? n : h.intl.string(h.t.rRffNz),
         disabled: I.disabled,
         submitting: I.loading,
-        size: i.Ph.TINY,
+        size: a.Ph.TINY,
         themeColor: "secondary",
         onClick: S
       })
-    }), (0, r.jsx)(a.DY3, {
-      text: v.tooltip,
-      children: (0, r.jsx)(d.tG, {
-        text: null != (n = v.label) ? n : p.intl.string(p.t.rRffNz),
-        disabled: v.disabled,
-        submitting: v.loading,
-        size: i.Ph.TINY,
-        themeColor: "secondary",
-        onClick: T
-      })
     })]
   }) : (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(a.DY3, {
-      text: v.tooltip,
-      className: h.primaryButton,
-      children: (0, r.jsx)(d.tG, {
-        icon: () => (0, r.jsx)(c.Z, {}),
-        text: null != (m = v.label) ? m : p.intl.string(p.t.rRffNz),
-        disabled: v.disabled,
-        submitting: v.loading,
-        wrapperClassName: h.primaryButton,
+    children: [(0, r.jsx)(i.u, {
+      asContainer: true,
+      text: I.tooltip,
+      children: (0, r.jsx)(f.tG, {
+        icon: () => (0, r.jsx)(u.Z, {}),
+        text: null != (g = I.label) ? g : h.intl.string(h.t.rRffNz),
+        disabled: I.disabled,
+        submitting: I.loading,
+        wrapperClassName: m.primaryButton,
         themeColor: "secondary",
         fullWidth: true,
-        onClick: T
+        onClick: S
       })
-    }), (0, r.jsx)(d.ef, {
-      icon: a.iOO,
-      tooltipText: null != (g = I.tooltip) ? g : p.intl.string(p.t.eU3inJ),
-      disabled: I.disabled,
-      submitting: I.loading,
+    }), (0, r.jsx)(f.ef, {
+      icon: o.iOO,
+      tooltipText: null != (E = T.tooltip) ? E : h.intl.string(h.t.eU3inJ),
+      disabled: T.disabled,
+      submitting: T.loading,
       themeColor: "secondary",
       fullWidth: true,
-      onClick: S
+      onClick: A
     })]
   })
 }

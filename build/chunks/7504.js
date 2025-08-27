@@ -45,7 +45,6 @@ module.exports = {
   blockedAvatar: "blockedAvatar__2f4f7",
   small: "small__2f4f7",
   stopStreamIcon: "stopStreamIcon__2f4f7",
-  darkCircle: "darkCircle__2f4f7",
   streamUnavailable: "streamUnavailable__2f4f7",
   streamUnavailableText: "streamUnavailableText__2f4f7",
   voiceChannelEffectsContainer: "voiceChannelEffectsContainer__2f4f7",

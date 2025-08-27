@@ -1,7 +1,7 @@
 /** Chunk was on 63141 **/
 /** chunk id: 839434, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => es
+  Z: () => ea
 }), require("./388685.js"), require("./642613.js");
 var i, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -9,6 +9,7 @@ var i, Chunk951288 = require("./951288.js"),
   s = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk692547 = require("./692547.js"),
+  Chunk28664 = require("./28664.jsx"),
   Chunk477690 = require("./477690.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -56,7 +57,7 @@ var i, Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk226833 = require("./226833.js");
 
-function en(e, t, n) {
+function ei(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -65,20 +66,20 @@ function en(e, t, n) {
   }) : e[t] = n, e
 }
 
-function ei(e) {
+function er(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), i.forEach(function(t) {
-      en(e, t, n[t])
+      ei(e, t, n[t])
     })
   }
   return e
 }
 
-function er(e, t) {
+function eo(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -91,7 +92,7 @@ function er(e, t) {
   }), e
 }
 
-function eo(e) {
+function el(e) {
   let {
     flipped: t = false,
     locked: n = false,
@@ -99,67 +100,67 @@ function eo(e) {
     nick: l,
     displayNameMode: c,
     displayUserMode: d,
-    size: u = q.ipw.LARGE,
+    size: u = $.ipw.LARGE,
     onClick: h,
     onContextMenu: p,
     context: f,
     guildId: g,
     voiceState: m
-  } = e, O = (0, Q.Z)({
+  } = e, y = (0, q.Z)({
     location: "overlay_voice_widget"
-  }), v = (0, a.e7)([B.default], () => B.default.showKeybindIndicators), _ = (0, a.e7)([R.default], () => R.default.getId()), b = (0, a.e7)([L.Z], () => L.Z.isLocalMute(i.id)), E = (0, a.e7)([k.Z], () => k.Z.getCurrentUserActiveStream()), S = (0, a.Wu)([k.Z], () => null != E ? k.Z.getViewerIds(E) : []), x = (0, y.Z)({
+  }), v = (0, a.e7)([G.default], () => G.default.showKeybindIndicators), _ = (0, a.e7)([A.default], () => A.default.getId()), b = (0, a.e7)([z.Z], () => z.Z.isLocalMute(i.id)), E = (0, a.e7)([R.Z], () => R.Z.getCurrentUserActiveStream()), S = (0, a.Wu)([R.Z], () => null != E ? R.Z.getViewerIds(E) : []), x = (0, O.Z)({
     userId: i.id,
     context: f
-  }), j = (0, a.e7)([V.Z], () => V.Z.isPrioritySpeaker(i.id, f)), Z = (0, a.e7)([k.Z], () => null != k.Z.getStreamForUser(i.id, g)), C = o.useMemo(() => null != E && E.ownerId !== i.id && S.includes(i.id), [E, i.id, S]);
-  if (d === q.OYC.ONLY_WHILE_SPEAKING && n && !x) return null;
+  }), j = (0, a.e7)([W.Z], () => W.Z.isPrioritySpeaker(i.id, f)), Z = (0, a.e7)([R.Z], () => null != R.Z.getStreamForUser(i.id, g)), C = o.useMemo(() => null != E && E.ownerId !== i.id && S.includes(i.id), [E, i.id, S]);
+  if (d === $.OYC.ONLY_WHILE_SPEAKING && n && !x) return null;
   let I = i.id === _,
     {
       mute: P,
       selfMute: w,
       suppress: N,
       deaf: T,
-      selfDeaf: A
+      selfDeaf: D
     } = m,
-    M = O && v,
-    z = w && (!I || !M);
+    M = y && v,
+    L = w && (!I || !M);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(D.ZP, {
+    children: [(0, r.jsx)(k.ZP, {
       guildId: g,
       onClick: n ? true : e => null == h ? true : h(e, i),
       onContextMenu: n ? true : e => null == p ? true : p(e, i),
-      className: s()(et.voiceUserWrapper, {
-        [et.faded]: !x,
-        [et.interactive]: !n
+      className: s()(en.voiceUserWrapper, {
+        [en.faded]: !x,
+        [en.interactive]: !n
       }),
       user: i,
       nick: l,
       speaking: false,
       flipped: t,
       isStreaming: Z,
-      iconClassName: s()(et.voiceIcon, {
-        [et.locked]: n
+      iconClassName: s()(en.voiceIcon, {
+        [en.locked]: n
       }),
       isWatching: C,
       isOverlay: true,
       size: u,
       priority: j,
-      mute: P || z || b,
+      mute: P || L || b,
       localMute: b,
       serverMute: P || N,
-      deaf: T || A,
+      deaf: T || D,
       serverDeaf: T,
-      userNameClassName: s()(et.username, {
-        [et.locked]: n,
-        [et.hidden]: n && (c === q.wC$.NEVER || !x && c === q.wC$.ONLY_WHILE_SPEAKING)
+      userNameClassName: s()(en.username, {
+        [en.locked]: n,
+        [en.hidden]: n && (c === $.wC$.NEVER || !x && c === $.wC$.ONLY_WHILE_SPEAKING)
       })
-    }), I && M && (0, r.jsx)(K.Z, {
+    }), I && M && (0, r.jsx)(X.Z, {
       value: w,
-      action: q.kg4.TOGGLE_MUTE,
+      action: $.kg4.TOGGLE_MUTE,
       shouldShow: !P && !N
     })]
   })
 }
-class el extends(i = Chunk647438.PureComponent) {
+class es extends(i = Chunk647438.PureComponent) {
   renderVoiceUsers() {
     let {
       context: e,
@@ -170,25 +171,25 @@ class el extends(i = Chunk647438.PureComponent) {
       isPreviewingInGame: l,
       channel: a,
       anchor: c,
-      avatarSizeMode: u
+      avatarSizeMode: d
     } = this.props, h = null != Chunk692547.right, p = exports.map(t => {
       var s;
       let {
         user: c,
-        voiceState: d,
+        voiceState: u,
         member: p
       } = t;
       if (null == c || null == a || null == e) return null;
       let f = o || l;
-      return (0, r.jsx)(eo, {
+      return (0, r.jsx)(el, {
         guildId: null == a ? true : a.guild_id,
         user: c,
-        nick: null != (s = null == p ? true : p.nick) ? s : F.ZP.getName(c),
+        nick: null != (s = null == p ? true : p.nick) ? s : H.ZP.getName(c),
         flipped: h,
-        voiceState: d,
+        voiceState: u,
         displayNameMode: n,
         displayUserMode: i,
-        size: u,
+        size: d,
         locked: f,
         onContextMenu: this.handleUserContextMenu,
         onClick: this.handleUserContextMenu,
@@ -202,7 +203,7 @@ class el extends(i = Chunk647438.PureComponent) {
       }),
       children: (0, Chunk951288.jsx)(Chunk597998.eJ, {
         className: Chunk226833.voiceList,
-        children: Chunk239091
+        children: Chunk481060
       })
     })
   }
@@ -267,12 +268,12 @@ class el extends(i = Chunk647438.PureComponent) {
       application: l,
       streamMetadata: a,
       streamApplication: c,
-      stream: d
+      stream: u
     } = this.props;
     if (exports || null == Chunk477690 || null == Chunk647438) return null;
     let {
-      sanitizedTitle: p,
-      title: f
+      sanitizedTitle: f,
+      title: g
     } = (0, Chunk914923.Z)(Chunk442837);
     return (0, Chunk951288.jsx)(Chunk518084.ZP.Bar, {
       className: s()(Chunk226833.streamerControls, {
@@ -318,7 +319,8 @@ class el extends(i = Chunk647438.PureComponent) {
             })
           }), (0, Chunk951288.jsx)("div", {
             className: Chunk226833.streamerIconWrapper,
-            children: (0, Chunk951288.jsx)(Chunk481060.DY3, {
+            children: (0, Chunk951288.jsx)(Chunk28664.u, {
+              asContainer: true,
               text: Chunk388032.intl.string(Chunk388032.t.S5anIS),
               children: (0, Chunk951288.jsx)(Chunk755721.zx, {
                 onClick: this.handleStopStream,
@@ -340,7 +342,7 @@ class el extends(i = Chunk647438.PureComponent) {
     (0, Chunk906037.m3)(this.props, this.shouldDisplay())
   }
   componentDidUpdate(e) {
-    (0, X.CR)(e, this.props, this.shouldDisplay)
+    (0, J.CR)(e, this.props, this.shouldDisplay)
   }
   shouldDisplay() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : this.props,
@@ -382,92 +384,92 @@ class el extends(i = Chunk647438.PureComponent) {
     })
   }
   constructor(...e) {
-    super(...e), en(this, "handleUserContextMenu", (e, t) => {
+    super(...e), ei(this, "handleUserContextMenu", (e, t) => {
       let {
         context: i
       } = this.props;
-      (0, p.jW)(e, async () => {
+      (0, f.jW)(e, async () => {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("69220")]).then(n.bind(n, 881351));
-        return n => (0, r.jsx)(e, er(ei({}, n), {
+        return n => (0, r.jsx)(e, eo(er({}, n), {
           user: t,
           showMediaItems: true,
           mediaEngineContext: i
         }))
       })
-    }), en(this, "handleOpenVoiceSettings", () => {
+    }), ei(this, "handleOpenVoiceSettings", () => {
       let {
         context: e,
         channel: t,
         title: i
       } = this.props;
-      (0, h.ZDy)(async () => {
+      (0, p.ZDy)(async () => {
         let {
           default: o
         } = await n.e("66063").then(n.bind(n, 344516));
-        return n => (0, r.jsx)(o, er(ei({}, n), {
+        return n => (0, r.jsx)(o, eo(er({}, n), {
           mediaEngineContext: e,
           title: null != t ? null : i
         }))
       })
-    }), en(this, "handlePin", () => {
+    }), ei(this, "handlePin", () => {
       var e, t, n;
       let i = !this.props.pinned;
-      g.Z.track(q.rMx.OVERLAY_PIN_TOGGLED, {
+      m.Z.track($.rMx.OVERLAY_PIN_TOGGLED, {
         pinned: i,
         guild_id: null == (e = this.props.channel) ? true : e.guild_id,
         channel_id: null == (t = this.props.channel) ? true : t.id,
         channel_type: null == (n = this.props.channel) ? true : n.type,
-        widget_type: q.Odu.VOICE
+        widget_type: $.Odu.VOICE
       });
       let {
         id: r
       } = this.props;
-      (0, f.xh)(r)
-    }), en(this, "handleStopStream", () => {
+      (0, g.xh)(r)
+    }), ei(this, "handleStopStream", () => {
       let {
         stream: e
       } = this.props;
-      null != e && m.g((0, S.V9)(e))
+      null != e && y.g((0, x.V9)(e))
     })
   }
 }
 
-function es(e) {
+function ea(e) {
   var t;
-  let n = (0, a.e7)([z.Z, A.Z], () => A.Z.getChannel(z.Z.getVoiceChannelId())),
-    i = (0, v.ZP)(n),
+  let n = (0, a.e7)([V.Z, M.Z], () => M.Z.getChannel(V.Z.getVoiceChannelId())),
+    i = (0, _.ZP)(n),
     l = function() {
-      let [e] = (0, a.e7)([U.ZP, P.Z, z.Z, A.Z], () => {
-        let e = A.Z.getChannel(z.Z.getVoiceChannelId());
+      let [e] = (0, a.e7)([B.ZP, w.Z, V.Z, M.Z], () => {
+        let e = M.Z.getChannel(V.Z.getVoiceChannelId());
         return null == e ? [
           [], false
-        ] : e.isGuildStageVoice() ? [P.Z.getMutableParticipants(e.id, w.pV.SPEAKER), P.Z.getParticipantsVersion(e.id)] : [U.ZP.getVoiceStatesForChannel(e), U.ZP.getVoiceStateVersion(e.getGuildId())]
-      }, [], G.Q), t = (0, a.e7)([R.default], () => R.default.getId()), n = (0, Q.Z)({
+        ] : e.isGuildStageVoice() ? [w.Z.getMutableParticipants(e.id, N.pV.SPEAKER), w.Z.getParticipantsVersion(e.id)] : [B.ZP.getVoiceStatesForChannel(e), B.ZP.getVoiceStateVersion(e.getGuildId())]
+      }, [], F.Q), t = (0, a.e7)([A.default], () => A.default.getId()), n = (0, q.Z)({
         location: "voice_widget"
       });
       return o.useMemo(() => n ? [...e].sort((e, n) => e.user.id === t ? false : +(n.user.id === t)) : e, [e, t, n])
     }(),
-    s = (0, a.e7)([k.Z], () => k.Z.getStreamerActiveStreamMetadata()),
-    c = (0, a.e7)([b.ZP, W.Z, M.Z], () => {
+    s = (0, a.e7)([R.Z], () => R.Z.getStreamerActiveStreamMetadata()),
+    c = (0, a.e7)([E.ZP, U.Z, L.Z], () => {
       var e;
-      let t = (0, Z.Z)(b.ZP, W.Z);
-      return null != t ? null == (e = M.Z.getGameByGameData(t)) ? true : e.id : null
+      let t = (0, C.Z)(E.ZP, U.Z);
+      return null != t ? null == (e = L.Z.getGameByGameData(t)) ? true : e.id : null
     }),
-    d = (0, O.q)(c),
-    u = (0, a.cj)([b.ZP, W.Z, k.Z, B.default], () => {
-      let e = (0, Z.Z)(b.ZP, W.Z),
-        t = k.Z.getCurrentUserActiveStream();
+    d = (0, v.q)(c),
+    u = (0, a.cj)([E.ZP, U.Z, R.Z, G.default], () => {
+      let e = (0, C.Z)(E.ZP, U.Z),
+        t = R.Z.getCurrentUserActiveStream();
       return {
-        displayUserMode: B.default.getDisplayUserMode(),
-        displayNameMode: B.default.getDisplayNameMode(),
-        avatarSizeMode: B.default.getAvatarSizeMode(),
-        streamApplication: (null == s ? true : s.pid) === (0, H.getPID)() ? (0, C.Z)(e) : null,
+        displayUserMode: G.default.getDisplayUserMode(),
+        displayNameMode: G.default.getDisplayNameMode(),
+        avatarSizeMode: G.default.getAvatarSizeMode(),
+        streamApplication: (null == s ? true : s.pid) === (0, Y.getPID)() ? (0, I.Z)(e) : null,
         stream: t
       }
     });
-  return (0, r.jsx)(el, er(ei(er(ei({}, u), {
+  return (0, r.jsx)(es, eo(er(eo(er({}, u), {
     application: d
   }), e), {
     sortedVoiceStates: l,
@@ -480,6 +482,6 @@ function es(e) {
     }
   }))
 }
-en(el, "defaultProps", {
+ei(es, "defaultProps", {
   context: Chunk65154.Yn.DEFAULT
 })

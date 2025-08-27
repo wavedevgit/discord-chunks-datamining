@@ -1,13 +1,14 @@
 /** Chunk was on 27278 **/
 /** chunk id: 325749, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => V
+  Z: () => G
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
+  Chunk28664 = require("./28664.jsx"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk13245 = require("./13245.js"),
@@ -45,158 +46,160 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk896681 = require("./896681.js");
-let J = Chunk884338.u8.SIZE_24;
+let V = Chunk884338.u8.SIZE_24;
 
-function V(e) {
+function G(e) {
   let {
     applicationId: n,
     channelId: t
-  } = e, i = (0, a.e7)([f.Z], () => f.Z.getApplication(n)), V = (0, a.e7)([E.ZP], () => E.ZP.getSelfEmbeddedActivities().get(n)), G = (0, a.e7)([C.Z], () => C.Z.getChannel(t)), F = O.Sb.useSetting(), H = (0, a.Wu)([_.ZP], () => {
+  } = e, i = (0, a.e7)([m.Z], () => m.Z.getApplication(n)), G = (0, a.e7)([R.ZP], () => R.ZP.getSelfEmbeddedActivities().get(n)), F = (0, a.e7)([_.Z], () => _.Z.getChannel(t)), H = j.Sb.useSetting(), q = (0, a.Wu)([S.ZP], () => {
     var e;
-    return null == G || null == V ? [] : Array.from(null != (e = V.userIds) ? e : []).map(e => _.ZP.getMember(G.guild_id, e))
-  }, [V, G]), q = o.useMemo(() => {
+    return null == F || null == G ? [] : Array.from(null != (e = G.userIds) ? e : []).map(e => S.ZP.getMember(F.guild_id, e))
+  }, [G, F]), X = o.useMemo(() => {
     let e = new Map;
-    return H.forEach(n => {
+    return q.forEach(n => {
       null != n && true !== n && e.set(n.userId, n)
     }), e
-  }, [H]), X = o.useCallback((e, n) => {
+  }, [q]), $ = o.useCallback((e, n) => {
     var t;
-    if (null == e || e === D.ag) return null;
-    let o = q.get(e.id),
-      i = null != (t = null == o ? true : o.nick) ? t : w.ZP.getName(e);
-    return (0, r.jsx)(u.DY3, {
+    if (null == e || e === B.ag) return null;
+    let o = X.get(e.id),
+      i = null != (t = null == o ? true : o.nick) ? t : N.ZP.getName(e);
+    return (0, r.jsx)(c.u, {
+      asContainer: true,
       text: i,
       position: "bottom",
       children: (0, r.jsx)("img", {
-        src: e.getAvatarURL(null == n ? true : n.guild_id, J),
+        src: e.getAvatarURL(null == n ? true : n.guild_id, V),
         alt: i,
-        className: M.avatar
+        className: J.avatar
       }, e.id)
     }, e.id)
-  }, [q]), $ = null == V ? true : V.userIds, Q = (0, a.Wu)([S.default], () => Array.from(null != $ ? $ : []).map(e => S.default.getUser(e)).filter(e => null != e), [$]), ee = o.useCallback(() => {
-    let e = (0, k.getPID)();
-    s.Z.setInputLocked(!v.ZP.isInputLocked(e), e)
-  }, []), en = (0, R.P)(), {
-    canStayOnTop: et,
-    popoutWindowAlwaysOnTop: er,
-    handleStayOnTop: eo
+  }, [X]), Q = null == G ? true : G.userIds, ee = (0, a.Wu)([T.default], () => Array.from(null != Q ? Q : []).map(e => T.default.getUser(e)).filter(e => null != e), [Q]), en = o.useCallback(() => {
+    let e = (0, E.getPID)();
+    d.Z.setInputLocked(!b.ZP.isInputLocked(e), e)
+  }, []), et = (0, U.P)(), {
+    canStayOnTop: er,
+    popoutWindowAlwaysOnTop: eo,
+    handleStayOnTop: ei
   } = function() {
-    let e = (0, a.e7)([b.Z], () => b.Z.getIsAlwaysOnTop(K.KJ3.ACTIVITY_POPOUT)),
+    let e = (0, a.e7)([h.Z], () => h.Z.getIsAlwaysOnTop(Y.KJ3.ACTIVITY_POPOUT)),
       n = o.useCallback(e => {
-        h.hY(K.KJ3.ACTIVITY_POPOUT, e)
+        O.hY(Y.KJ3.ACTIVITY_POPOUT, e)
       }, []);
     return {
-      canStayOnTop: T.isPlatformEmbedded && N.ZP.supportsFeature(K.eRX.POPOUT_WINDOWS),
+      canStayOnTop: w.isPlatformEmbedded && A.ZP.supportsFeature(Y.eRX.POPOUT_WINDOWS),
       popoutWindowAlwaysOnTop: e,
       handleStayOnTop: n
     }
-  }(), ei = (0, z.y)(), {
-    rootNode: el,
-    popoutWindow: ea,
-    toggleFullScreen: ec
+  }(), el = (0, W.y)(), {
+    rootNode: ea,
+    popoutWindow: ec,
+    toggleFullScreen: eu
   } = function() {
     let {
       popoutWindow: e,
       currentDocument: n,
       rootNode: t
-    } = (0, Y.Z)(), [r, i] = o.useState(false), l = o.useCallback(() => {
-      null != t && r && (i(false), (0, A.Pr)(t, n))
+    } = (0, K.Z)(), [r, i] = o.useState(false), l = o.useCallback(() => {
+      null != t && r && (i(false), (0, k.Pr)(t, n))
     }, [t, n, r]), a = o.useCallback(() => {
-      null != t && (r ? l() : (i(true), (0, A.Dj)(t)))
+      null != t && (r ? l() : (i(true), (0, k.Dj)(t)))
     }, [t, r, l]), c = o.useCallback(() => {
-      null != t && !(0, A.rB)(t, n) && r && a()
+      null != t && !(0, k.rB)(t, n) && r && a()
     }, [t, n, r, a]);
-    return o.useEffect(() => (null == n || n.addEventListener(A.NO, c), () => {
-      null == n || n.removeEventListener(A.NO, c)
+    return o.useEffect(() => (null == n || n.addEventListener(k.NO, c), () => {
+      null == n || n.removeEventListener(k.NO, c)
     }), [n, c]), {
       rootNode: t,
       popoutWindow: e,
       toggleFullScreen: a
     }
-  }(), eu = o.useRef(null);
-  if (null == i || null == V) return null;
-  let es = (0, r.jsx)(p.Z, {
+  }(), es = o.useRef(null);
+  if (null == i || null == G) return null;
+  let ed = (0, r.jsx)(f.Z, {
     application: i,
     size: 24,
-    className: M.appIcon
+    className: J.appIcon
   });
-  return F && (es = (0, r.jsx)(u.DY3, {
-    text: V.compositeInstanceId,
+  return H && (ed = (0, r.jsx)(c.u, {
+    asContainer: true,
+    text: G.compositeInstanceId,
     position: "bottom",
-    children: es
-  })), (0, r.jsx)(u.f6W, {
-    theme: K.BRd.DARK,
+    children: ed
+  })), (0, r.jsx)(s.f6W, {
+    theme: Y.BRd.DARK,
     children: e => (0, r.jsxs)("div", {
-      className: l()(M.container, e),
+      className: l()(J.container, e),
       children: [(0, r.jsxs)("div", {
-        className: l()(M.headerSection, M.headerSectionLeft),
-        children: [es, (0, r.jsx)(u.Text, {
+        className: l()(J.headerSection, J.headerSectionLeft),
+        children: [ed, (0, r.jsx)(s.Text, {
           variant: "text-md/normal",
           color: "header-primary",
-          className: M.applicationName,
-          children: (0, r.jsx)(m.Z, {
+          className: J.applicationName,
+          children: (0, r.jsx)(v.Z, {
             children: i.name
           })
         }), (0, r.jsx)("div", {
-          className: M.dotSpacer,
-          children: (0, r.jsx)(u.Text, {
+          className: J.dotSpacer,
+          children: (0, r.jsx)(s.Text, {
             variant: "text-md/normal",
             color: "text-muted",
             children: "."
           })
-        }), (0, r.jsx)(D.ZP, {
+        }), (0, r.jsx)(B.ZP, {
           renderIcon: false,
-          users: Q,
-          size: J,
+          users: ee,
+          size: V,
           max: 6,
-          renderUser: e => X(e, G)
+          renderUser: e => $(e, F)
         })]
       }), (0, r.jsxs)("div", {
-        className: l()(M.headerSection, M.headerSectionRight),
+        className: l()(J.headerSection, J.headerSectionRight),
         children: [(0, r.jsx)("div", {
-          className: M.fade
+          className: J.fade
         }), (0, r.jsxs)("div", {
-          className: M.actionButtonsContainer,
-          children: [(0, r.jsx)(I.Z, {
-            appContext: K.IlC.POPOUT,
+          className: J.actionButtonsContainer,
+          children: [(0, r.jsx)(y.Z, {
+            appContext: Y.IlC.POPOUT,
             applicationId: n,
-            channel: G,
+            channel: F,
             shouldPrioritizeGroupPlusIcon: true,
-            iconClassName: M.inviteButtonIcon,
-            size: c.zx.Sizes.TINY,
-            look: c.zx.Looks.FILLED,
-            buttonText: W.intl.string(W.t["6F9ivr"]),
-            color: c.zx.Colors.TRANSPARENT
-          }), en ? (0, r.jsx)(P.Z, {
-            onClick: ee,
-            iconComponent: u.epB,
-            label: W.intl.string(W.t.mseZsL)
-          }) : null, et ? (0, r.jsx)(Z.Z, {
-            popoutWindowAlwaysOnTop: er,
-            onToggleStayOnTop: eo
-          }) : null, ei ? (0, r.jsx)(y.Z, {
+            iconClassName: J.inviteButtonIcon,
+            size: u.zx.Sizes.TINY,
+            look: u.zx.Looks.FILLED,
+            buttonText: M.intl.string(M.t["6F9ivr"]),
+            color: u.zx.Colors.TRANSPARENT
+          }), et ? (0, r.jsx)(g.Z, {
+            onClick: en,
+            iconComponent: s.epB,
+            label: M.intl.string(M.t.mseZsL)
+          }) : null, er ? (0, r.jsx)(Z.Z, {
+            popoutWindowAlwaysOnTop: eo,
+            onToggleStayOnTop: ei
+          }) : null, el ? (0, r.jsx)(C.Z, {
             popoutOpen: true,
             onOpenPopout: () => {},
             onClosePopout: () => {
-              (0, d.yw)(K.rMx.ACTIVITY_POPOUT_POP_IN_BUTTON_CLICKED), (0, L.Z)({
+              (0, p.yw)(Y.rMx.ACTIVITY_POPOUT_POP_IN_BUTTON_CLICKED), (0, D.Z)({
                 onConfirm: () => {
-                  U.Z.popInActivity()
+                  L.Z.popInActivity()
                 }
               })
             }
-          }) : null, (0, r.jsx)(g.Z, {
-            node: el,
-            guestWindow: ea,
-            onClick: ec
-          }), (0, r.jsx)(u.yRy, {
-            targetElementRef: eu,
+          }) : null, (0, r.jsx)(I.Z, {
+            node: ea,
+            guestWindow: ec,
+            onClick: eu
+          }), (0, r.jsx)(s.yRy, {
+            targetElementRef: es,
             position: "bottom",
             renderPopout: e => {
               let {
                 closePopout: n
               } = e;
-              return (0, r.jsx)(j.Z, {
-                children: (0, r.jsx)(B.Z, {
+              return (0, r.jsx)(x.Z, {
+                children: (0, r.jsx)(z.Z, {
                   application: i,
                   channelId: t,
                   onClose: n
@@ -208,7 +211,7 @@ function V(e) {
               let {
                 isShown: i
               } = n;
-              return (0, o.createElement)(x.Z, (t = function(e) {
+              return (0, o.createElement)(P.Z, (t = function(e) {
                 for (var n = 1; n < arguments.length; n++) {
                   var t = null != arguments[n] ? arguments[n] : {},
                     r = Object.keys(t);
@@ -226,7 +229,7 @@ function V(e) {
                 }
                 return e
               }({}, e), r = r = {
-                buttonRef: eu,
+                buttonRef: es,
                 key: "more-options",
                 isActive: i
               }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, n) {

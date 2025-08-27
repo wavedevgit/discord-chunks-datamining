@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk313201 = require("./313201.js"),
@@ -20,7 +20,7 @@ function b(e) {
   let {
     userId: t,
     widget: r,
-    children: a,
+    children: i,
     disableInteraction: b,
     className: p
   } = e, m = (0, c.Dt)(), O = (0, o.e7)([s.default], () => s.default.getId() === t), {
@@ -28,7 +28,7 @@ function b(e) {
     handleDismissSuggestions: y
   } = (0, u.h)(r);
   return (0, n.jsxs)("section", {
-    className: i()(g.container, p),
+    className: a()(g.container, p),
     "aria-labelledby": m,
     children: [(0, n.jsx)(d.Z, {
       userId: t,
@@ -36,7 +36,7 @@ function b(e) {
       widget: r,
       disableInteraction: b
     }), (0, n.jsxs)(l.y5, {
-      children: [a, O && !b && j && (0, n.jsx)(f.Z, {
+      children: [i, O && !b && j && (0, n.jsx)(f.Z, {
         userId: t,
         widgetType: r.type,
         onDismiss: y,

@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk313201 = require("./313201.js"),
   Chunk817053 = require("./817053.jsx"),
@@ -51,27 +51,27 @@ function p(e) {
   var {
     gameName: t,
     onClick: r,
-    loading: a = true
-  } = e, i = function(e, t) {
+    loading: i = true
+  } = e, a = function(e, t) {
     if (null == e) return {};
-    var r, n, a = function(e, t) {
+    var r, n, i = function(e, t) {
       if (null == e) return {};
-      var r, n, a = {},
-        i = Object.keys(e);
-      for (n = 0; n < i.length; n++) r = i[n], t.indexOf(r) >= 0 || (a[r] = e[r]);
-      return a
+      var r, n, i = {},
+        a = Object.keys(e);
+      for (n = 0; n < a.length; n++) r = a[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
+      return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var i = Object.getOwnPropertySymbols(e);
-      for (n = 0; n < i.length; n++) r = i[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r])
+      var a = Object.getOwnPropertySymbols(e);
+      for (n = 0; n < a.length; n++) r = a[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
     }
-    return a
+    return i
   }(e, ["gameName", "onClick", "loading"]);
   let o = null != t ? t : u.intl.string(u.t.GIWFlJ),
     s = u.intl.formatToPlainString(u.t["3mb1s7"], {
       game: o
     });
-  return a ? (0, n.jsx)("div", {
+  return i ? (0, n.jsx)("div", {
     className: d.loadingCover
   }) : (0, n.jsx)(l.ua7, {
     text: s,
@@ -82,7 +82,7 @@ function p(e) {
       children: [(0, n.jsx)(c.Z, b(g({
         className: f.cover,
         gameName: t
-      }, i), {
+      }, a), {
         disableInteraction: true
       })), (0, n.jsx)(l.svS, {
         size: "md",
@@ -97,14 +97,14 @@ function m(e) {
   let {
     userId: t,
     games: r,
-    isGameFetching: a,
+    isGameFetching: i,
     isSuggestedGamesLoading: c,
     onDismiss: d,
     onClick: g,
     className: b
   } = e, m = (0, o.Dt)();
   return (0, n.jsxs)("aside", {
-    className: i()(f.container, b),
+    className: a()(f.container, b),
     "aria-labelledby": m,
     children: [(0, n.jsxs)("div", {
       className: f.header,
@@ -127,15 +127,15 @@ function m(e) {
       renderGame: e => {
         let {
           applicationId: r,
-          gameName: i,
+          gameName: a,
           imageSrc: l
         } = e;
         return (0, n.jsx)(p, {
-          onClick: () => g(r, i, l),
+          onClick: () => g(r, a, l),
           userId: t,
-          loading: c || a(r),
+          loading: c || i(r),
           applicationId: r,
-          gameName: i,
+          gameName: a,
           imageSrc: l
         })
       }

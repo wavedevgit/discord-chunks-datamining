@@ -17,8 +17,8 @@ function f(e) {
   let {
     widget: t,
     userId: r,
-    className: i
-  } = e, f = a.useRef(null), g = () => {
+    className: a
+  } = e, f = i.useRef(null), g = () => {
     (0, s.G1)(r, t)
   };
   return (0, n.jsx)(o.yRy, {
@@ -70,7 +70,7 @@ function f(e) {
       }({}, e), r = r = {
         innerRef: f,
         "aria-label": u.intl.string(u.t.xpSHSk),
-        className: l()(d.button, i),
+        className: l()(d.button, a),
         children: (0, n.jsx)(o.xhG, {
           size: "sm",
           color: "currentColor"

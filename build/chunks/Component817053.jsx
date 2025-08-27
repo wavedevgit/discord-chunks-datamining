@@ -50,8 +50,8 @@ function b(e) {
   let {
     imageSrc: t,
     gameName: r
-  } = e, [i, l] = a.useState(false), c = null != r ? r : u.intl.string(u.t.GIWFlJ);
-  return i || null == t ? (0, n.jsx)("div", {
+  } = e, [a, l] = i.useState(false), c = null != r ? r : u.intl.string(u.t.GIWFlJ);
+  return a || null == t ? (0, n.jsx)("div", {
     role: "img",
     "aria-label": c,
     className: d.fallback,
@@ -74,15 +74,15 @@ function p(e) {
   let {
     imageSrc: t,
     gameName: r,
-    applicationId: a,
-    userId: i,
+    applicationId: i,
+    userId: a,
     className: p,
     hideTooltip: m = false
   } = e, O = (0, s.Z)({
     location: "GameCover",
-    applicationId: a,
+    applicationId: i,
     source: c.m1.UserProfile,
-    sourceUserId: i,
+    sourceUserId: a,
     trackEntryPointImpression: true
   }), j = null != r ? r : u.intl.string(u.t.GIWFlJ), y = u.intl.formatToPlainString(u.t["8QLQBw"], {
     gameName: j
@@ -112,26 +112,26 @@ function m(e) {
   var {
     applicationId: t,
     userId: r,
-    className: a,
-    disableInteraction: i = false,
+    className: i,
+    disableInteraction: a = false,
     hideTooltip: o
   } = e, c = function(e, t) {
     if (null == e) return {};
-    var r, n, a = function(e, t) {
+    var r, n, i = function(e, t) {
       if (null == e) return {};
-      var r, n, a = {},
-        i = Object.keys(e);
-      for (n = 0; n < i.length; n++) r = i[n], t.indexOf(r) >= 0 || (a[r] = e[r]);
-      return a
+      var r, n, i = {},
+        a = Object.keys(e);
+      for (n = 0; n < a.length; n++) r = a[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
+      return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var i = Object.getOwnPropertySymbols(e);
-      for (n = 0; n < i.length; n++) r = i[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r])
+      var a = Object.getOwnPropertySymbols(e);
+      for (n = 0; n < a.length; n++) r = a[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
     }
-    return a
+    return i
   }(e, ["applicationId", "userId", "className", "disableInteraction", "hideTooltip"]);
-  let s = l()(d.coverContainer, a);
-  return i ? (0, n.jsx)("div", {
+  let s = l()(d.coverContainer, i);
+  return a ? (0, n.jsx)("div", {
     className: s,
     children: (0, n.jsx)(b, f({}, c))
   }) : (0, n.jsx)(p, f({

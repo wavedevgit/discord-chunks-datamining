@@ -88,9 +88,9 @@ function Y(e) {
   (0, d.ZP)(() => {
     !$ && (null == X ? true : X.isGuildStageVoice()) && !et && ((0, c.rn)(q), s.Z.updateStageStreamSize(q.channelId, false))
   });
-  let ei = (0, E.c)(k.Yn.STREAM, t.user.id);
+  let ei = (0, E.c)(V.Yn.STREAM, t.user.id);
   if (l.useEffect(() => {
-      H.info("Stream Tile State - activeStream: ".concat(null != Q, " | selected: ").concat(n, " | Video: ").concat(null != z, " | MediaEngine: ").concat(I.Z.supports(k.AN.VIDEO)))
+      H.info("Stream Tile State - activeStream: ".concat(null != Q, " | selected: ").concat(n, " | Video: ").concat(null != z, " | MediaEngine: ").concat(I.Z.supports(V.AN.VIDEO)))
     }, [z, Q, n]), K) return (0, r.jsx)(T.Z, {
     stream: t.stream,
     isSmall: el,
@@ -114,7 +114,7 @@ function Y(e) {
     participant: t,
     width: D
   });
-  if (!(null != Q && !n && null != z && I.Z.supports(k.AN.VIDEO))) return (0, r.jsxs)("div", {
+  if (!(null != Q && !n && null != z && I.Z.supports(V.AN.VIDEO))) return (0, r.jsxs)("div", {
     className: a()(U.content, U.streamPreview, {
       [U.small]: el
     }),
@@ -131,11 +131,11 @@ function Y(e) {
         children: (0, r.jsx)(u.Text, {
           variant: el ? "text-sm/semibold" : "text-md/semibold",
           color: "none",
-          children: D < 175 ? V.intl.string(V.t["I6JG4+"]) : V.intl.string(V.t["7Xq/nZ"])
+          children: D < 175 ? k.intl.string(k.t["I6JG4+"]) : k.intl.string(k.t["7Xq/nZ"])
         })
       }), $ ? (0, r.jsx)(P.a, {
         className: U.addCTA,
-        tooltip: V.intl.string(V.t.wCrzur),
+        tooltip: k.intl.string(k.t.wCrzur),
         onClick: e => {
           e.stopPropagation(), (0, c.rn)(q, {
             forceMultiple: true

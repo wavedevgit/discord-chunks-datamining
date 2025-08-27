@@ -98,8 +98,8 @@ function D(e) {
     ignored: M,
     noVideoRender: L = false,
     pulseSpeakingIndicator: F = false,
-    inOverlayPopout: k = false,
-    paused: V = false
+    inOverlayPopout: V = false,
+    paused: k = false
   } = e, U = y.Z.getVideoComponent(), H = (0, o.e7)([h.default], () => h.default.getId()), {
     user: W,
     streamId: Y,
@@ -140,7 +140,7 @@ function D(e) {
     videoComponent: U,
     fit: w,
     videoSpinnerContext: W.id === H ? c.m.SELF_VIDEO : c.m.REMOTE_VIDEO,
-    paused: V,
+    paused: k,
     userId: W.id
   }, Y) : (0, r.jsx)("div", {
     className: a()(R.content, {

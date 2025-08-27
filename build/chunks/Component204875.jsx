@@ -1,21 +1,22 @@
 /** Chunk was on 88479 **/
 /** chunk id: 204875, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => a
+  Z: () => s
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
-var Chunk481060 = require("./481060.js"),
+var Chunk28664 = require("./28664.jsx"),
+  Chunk481060 = require("./481060.js"),
   Chunk760564 = require("./760564.js");
 
-function a(e) {
+function s(e) {
   var t, n, {
-      children: a,
-      disabled: s,
-      disabledTooltip: o,
-      id: c
+      children: s,
+      disabled: o,
+      disabledTooltip: c,
+      id: d
     } = e,
-    d = function(e, t) {
+    u = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -30,9 +31,10 @@ function a(e) {
       }
       return i
     }(e, ["children", "disabled", "disabledTooltip", "id"]);
-  return (0, r.jsx)(i.DY3, {
-    text: s ? o : null,
-    children: (0, r.jsx)(i.njP.Item, (t = function(e) {
+  return (0, r.jsx)(i.u, {
+    asContainer: true,
+    text: o ? c : null,
+    children: (0, r.jsx)(l.njP.Item, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -50,11 +52,11 @@ function a(e) {
       }
       return e
     }({
-      className: l.tabBarItem,
-      id: c,
-      disabled: s
-    }, d), n = n = {
-      children: a
+      className: a.tabBarItem,
+      id: d,
+      disabled: o
+    }, u), n = n = {
+      children: s
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {

@@ -2,12 +2,13 @@
 /** chunk id: 668700, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  W: () => v,
-  Z: () => I
+  W: () => I,
+  Z: () => T
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk442837 = require("./442837.js"),
+  Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk287734 = require("./287734.js"),
   Chunk933557 = require("./933557.js"),
@@ -25,102 +26,103 @@ var Chunk442837 = require("./442837.js"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk704543 = require("./704543.js");
-let v = 3;
+let I = 3;
 
-function I(e) {
+function T(e) {
   let {
     user: t,
     guild: n,
-    channel: I,
-    onAction: T,
-    onClose: S
+    channel: T,
+    onAction: S,
+    onClose: A
   } = e, {
-    themeType: A
-  } = (0, m.z)(), C = (0, p.Z)(I), N = (0, s.ZP)(I), {
-    canViewChannel: R,
-    canConnect: P
-  } = (0, i.cj)([_.Z], () => ({
-    canViewChannel: _.Z.can(E.Plq.VIEW_CHANNEL, I),
-    canConnect: I.isPrivate() || _.Z.can(E.Plq.CONNECT, I)
+    themeType: C
+  } = (0, g.z)(), N = (0, h.Z)(T), R = (0, l.ZP)(T), {
+    canViewChannel: P,
+    canConnect: w
+  } = (0, i.cj)([p.Z], () => ({
+    canViewChannel: p.Z.can(b.Plq.VIEW_CHANNEL, T),
+    canConnect: T.isPrivate() || p.Z.can(b.Plq.CONNECT, T)
   }));
-  if (!R) return null;
-  let w = () => {
+  if (!P) return null;
+  let D = () => {
       let e = e => {
-        e.stopPropagation(), (0, f.X)(n.id), null == T || T({
+        e.stopPropagation(), (0, _.X)(n.id), null == S || S({
           action: "OPEN_VOICE_GUILD"
-        }), null == S || S()
+        }), null == A || A()
       };
-      return (0, r.jsx)(a.DY3, {
+      return (0, r.jsx)(a.u, {
+        asContainer: true,
         text: n.name,
         "aria-label": false,
-        children: (0, r.jsx)(u.Z, {
+        children: (0, r.jsx)(d.Z, {
           guild: n,
-          size: u.Z.Sizes.SMOL,
-          className: O.guildIcon,
+          size: d.Z.Sizes.SMOL,
+          className: v.guildIcon,
           onClick: e
         })
       })
     },
-    D = () => {
-      if (!P) return (0, r.jsx)(a.Text, {
+    x = () => {
+      if (!w) return (0, r.jsx)(o.Text, {
         variant: "text-xs/normal",
         color: "text-secondary",
         lineClamp: 1,
-        children: (0, r.jsx)(l.Z, {
-          children: N
+        children: (0, r.jsx)(c.Z, {
+          children: R
         })
       });
       let e = e => {
-        e.stopPropagation(), o.default.selectVoiceChannel(I.id), (0, d.Kh)(I.id), null == T || T({
+        e.stopPropagation(), s.default.selectVoiceChannel(T.id), (0, f.Kh)(T.id), null == S || S({
           action: "OPEN_VOICE_CHANNEL"
-        }), null == S || S()
+        }), null == A || A()
       };
-      return (0, r.jsx)(a.P3F, {
+      return (0, r.jsx)(o.P3F, {
         onClick: e,
-        className: O.clickableText,
-        children: (0, r.jsx)(a.Text, {
+        className: v.clickableText,
+        children: (0, r.jsx)(o.Text, {
           variant: "text-xs/normal",
           color: "text-secondary",
           lineClamp: 1,
-          children: (0, r.jsx)(l.Z, {
-            children: N
+          children: (0, r.jsx)(c.Z, {
+            children: R
           })
         })
       })
     },
-    x = A !== b.l.MODAL && A !== b.l.MODAL_V2 && A !== b.l.SIDEBAR;
+    L = C !== y.l.MODAL && C !== y.l.MODAL_V2 && C !== y.l.SIDEBAR;
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(h.Z, {
-      className: O.voiceChannelDivider
+    children: [(0, r.jsx)(m.Z, {
+      className: v.voiceChannelDivider
     }), (0, r.jsxs)("div", {
-      className: O.voiceChannel,
-      children: [w(), (0, r.jsx)(a.Fbu, {
+      className: v.voiceChannel,
+      children: [D(), (0, r.jsx)(o.Fbu, {
         size: "xxs",
-        color: a.TVs.colors.TEXT_SECONDARY
+        color: o.TVs.colors.TEXT_SECONDARY
       }), (0, r.jsxs)("div", {
-        className: O.voiceChannelText,
-        children: [(0, r.jsx)(g.Z, {
-          channel: I,
+        className: v.voiceChannelText,
+        children: [(0, r.jsx)(E.Z, {
+          channel: T,
           size: "xxs",
-          color: a.TVs.colors.TEXT_SECONDARY,
-          className: O.voiceIcon
-        }), D()]
-      }), (0, r.jsx)(c.Z, {
-        users: C,
+          color: o.TVs.colors.TEXT_SECONDARY,
+          className: v.voiceIcon
+        }), x()]
+      }), (0, r.jsx)(u.Z, {
+        users: N,
         guildId: n.id,
-        channelId: I.id,
-        maxUsers: v,
-        size: a.EFr.SIZE_16,
+        channelId: T.id,
+        maxUsers: I,
+        size: o.EFr.SIZE_16,
         overflowCountColor: "text-secondary",
-        overflowCountClassName: O.voiceChannelOverflowCount,
+        overflowCountClassName: v.voiceChannelOverflowCount,
         onClickOverflow: e => {
-          e.stopPropagation(), null == T || T({
+          e.stopPropagation(), null == S || S({
             action: "PRESS_VOICE_CHANNEL_AVATARS"
           })
         },
         onUserClick: e => e.stopPropagation(),
-        disableUserPopout: !!x || (e => e === t.id),
-        "aria-label": y.intl.string(y.t.jNqDh4)
+        disableUserPopout: !!L || (e => e === t.id),
+        "aria-label": O.intl.string(O.t.jNqDh4)
       })]
     })]
   })

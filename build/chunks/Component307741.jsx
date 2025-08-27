@@ -2,7 +2,7 @@
 /** chunk id: 307741, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => S
+  ZP: () => A
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -10,6 +10,7 @@ var Chunk951288 = require("./951288.js"),
   o = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
+  Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk26732 = require("./26732.js"),
   Chunk406763 = require("./406763.js"),
@@ -22,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk488463 = require("./488463.js");
 
-function y(e) {
+function O(e) {
   let {
     detectedGame: t
   } = e, n = i.useMemo(() => {
@@ -42,47 +43,47 @@ function y(e) {
     return ""
   }, [t]);
   return (0, r.jsx)("div", {
-    className: b.gameArtHero,
+    className: y.gameArtHero,
     style: null != n && n.length > 0 ? {
       backgroundImage: 'url("'.concat(n, '")')
     } : {
-      backgroundColor: c.TVs.colors.BG_BRAND.css
+      backgroundColor: u.TVs.colors.BG_BRAND.css
     }
   })
 }
 
-function O(e) {
+function v(e) {
   let {
     application: t
-  } = e, n = null == t ? true : t.getIconURL(160, _.$k ? "webp" : "png");
+  } = e, n = null == t ? true : t.getIconURL(160, p.$k ? "webp" : "png");
   return (0, r.jsx)("div", {
-    className: b.iconContainer,
+    className: y.iconContainer,
     children: null != n && n.length > 0 ? (0, r.jsx)("img", {
-      className: b.gameIcon,
+      className: y.gameIcon,
       src: n,
       height: 80,
-      alt: E.intl.formatToPlainString(E.t["nh+jWl"], {
+      alt: b.intl.formatToPlainString(b.t["nh+jWl"], {
         game: t.name
       })
-    }) : (0, r.jsx)(c.IMN, {
+    }) : (0, r.jsx)(u.IMN, {
       size: "lg",
-      className: b.gameIconFallback,
-      color: c.TVs.colors.BACKGROUND_SURFACE_HIGH,
+      className: y.gameIconFallback,
+      color: u.TVs.colors.BACKGROUND_SURFACE_HIGH,
       style: {
-        backgroundColor: c.TVs.colors.BG_BRAND.css
+        backgroundColor: u.TVs.colors.BG_BRAND.css
       }
     })
   })
 }
 
-function v(e) {
+function I(e) {
   var t;
   let {
     application: n,
     detectedGame: a
-  } = e, o = i.useMemo(() => null == a ? true : a.genres.map(p.P3).join(", "), [a]), l = null != (t = a.name) ? t : null == n ? true : n.name;
+  } = e, o = i.useMemo(() => null == a ? true : a.genres.map(h.P3).join(", "), [a]), l = null != (t = a.name) ? t : null == n ? true : n.name;
   return (0, r.jsxs)("div", {
-    className: b.headingContainer,
+    className: y.headingContainer,
     children: [(0, r.jsx)(s.X6, {
       variant: "heading-lg/bold",
       color: "header-primary",
@@ -95,31 +96,31 @@ function v(e) {
   })
 }
 
-function I(e) {
+function T(e) {
   var t;
   let {
     detectedGame: n,
     openFullGameProfile: i
   } = e;
   return (0, r.jsxs)("div", {
-    className: b.bodyContainer,
+    className: y.bodyContainer,
     children: [(0, r.jsxs)("div", {
-      className: b.summaryContainer,
+      className: y.summaryContainer,
       children: [(0, r.jsx)(s.xv, {
         variant: "text-sm/medium",
         color: "text-primary",
         lineClamp: 3,
         children: null != (t = n.summaryLocalized) ? t : n.summary
-      }), (0, r.jsx)(c.P3F, {
-        className: b.clickable,
+      }), (0, r.jsx)(u.P3F, {
+        className: y.clickable,
         onClick: i,
         children: (0, r.jsx)(s.xv, {
           variant: "text-xs/normal",
           color: "text-secondary",
-          children: E.intl.string(E.t.lBeKY2)
+          children: b.intl.string(b.t.lBeKY2)
         })
       })]
-    }), (0, r.jsx)(c.zxk, {
+    }), (0, r.jsx)(u.zxk, {
       variant: "secondary",
       size: "sm",
       onClick: i,
@@ -129,71 +130,72 @@ function I(e) {
   })
 }
 
-function T(e) {
+function S(e) {
   let {
     application: t
-  } = e, n = i.useMemo(() => (0, h.fP)(), []), a = (0, l.e7)([f.Z], () => f.Z.getMute(t.id)), o = i.useMemo(() => a ? E.intl.string(E.t.tpvw4e) : E.intl.string(E.t["6EwEws"]), [a]);
+  } = e, n = i.useMemo(() => (0, m.fP)(), []), a = (0, l.e7)([_.Z], () => _.Z.getMute(t.id)), o = i.useMemo(() => a ? b.intl.string(b.t.tpvw4e) : b.intl.string(b.t["6EwEws"]), [a]);
   return (0, r.jsxs)("div", {
-    className: b.actionButtonsContainer,
-    children: [(0, r.jsx)(c.DY3, {
-      element: "span",
+    className: y.actionButtonsContainer,
+    children: [(0, r.jsx)(c.u, {
+      asContainer: true,
+      tag: "span",
       text: o,
       "aria-label": o,
       delay: 750,
-      children: (0, r.jsx)(c.P3F, {
-        className: b.actionButton,
+      children: (0, r.jsx)(u.P3F, {
+        className: y.actionButton,
         "aria-label": o,
         onClick: () => {
-          (0, u.Eq)({
+          (0, d.Eq)({
             gameName: t.name,
             applicationId: t.id,
-            label: a ? u.$_.UNMUTED : u.$_.MUTED,
-            source: u.UE.MINI_GAME_PROFILE_BELL_ICON
-          }), (0, d.X)(t.id, !a)
+            label: a ? d.$_.UNMUTED : d.$_.MUTED,
+            source: d.UE.MINI_GAME_PROFILE_BELL_ICON
+          }), (0, f.X)(t.id, !a)
         },
-        children: a ? (0, r.jsx)(c.owu, {
+        children: a ? (0, r.jsx)(u.owu, {
           size: "xs",
-          color: c.TVs.colors.WHITE
-        }) : (0, r.jsx)(c.Dkj, {
+          color: u.TVs.colors.WHITE
+        }) : (0, r.jsx)(u.Dkj, {
           size: "xs",
-          color: c.TVs.colors.WHITE
+          color: u.TVs.colors.WHITE
         })
       })
-    }), (0, r.jsx)(g.Z, {
+    }), (0, r.jsx)(E.Z, {
       applicationId: t.id,
       viewId: n,
-      className: b.actionButton
+      className: y.actionButton
     })]
   })
 }
 
-function S(e) {
+function A(e) {
   let {
     application: t,
     detectedGame: n,
     className: a,
     onClose: s
-  } = e, l = (0, m.Z)({
+  } = e, l = (0, g.Z)({
     location: "MiniGameProfile",
     applicationId: t.id,
-    source: h.m1.MiniGameProfile,
+    source: m.m1.MiniGameProfile,
     trackEntryPointImpression: true,
     sourceUserId: true
   }, {}), c = i.useCallback(e => {
     null == s || s(), null == l || l(e)
   }, [s, l]);
   return (0, r.jsxs)("div", {
-    className: o()(b.container, a),
-    children: [(0, r.jsx)(y, {
+    className: o()(y.container, a),
+    children: [(0, r.jsx)(O, {
       detectedGame: n
-    }), (0, r.jsx)(T, {
-      application: t
-    }), (0, r.jsx)(O, {
+    }), (0, r.jsx)(S, {
       application: t
     }), (0, r.jsx)(v, {
+      application: t
+    }), (0, r.jsx)(I, {
       application: t,
       detectedGame: n
-    }), (0, r.jsx)(I, {
+    }), (0, r.jsx)(T, {
       application: t,
       detectedGame: n,
       openFullGameProfile: c

@@ -14,22 +14,22 @@ function l(e) {
     isGameFetching: r
   } = e, l = function(e, t) {
     if (null == e) return {};
-    var r, n, a = function(e, t) {
+    var r, n, i = function(e, t) {
       if (null == e) return {};
-      var r, n, a = {},
-        i = Object.keys(e);
-      for (n = 0; n < i.length; n++) r = i[n], t.indexOf(r) >= 0 || (a[r] = e[r]);
-      return a
+      var r, n, i = {},
+        a = Object.keys(e);
+      for (n = 0; n < a.length; n++) r = a[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
+      return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var i = Object.getOwnPropertySymbols(e);
-      for (n = 0; n < i.length; n++) r = i[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r])
+      var a = Object.getOwnPropertySymbols(e);
+      for (n = 0; n < a.length; n++) r = a[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
     }
-    return a
+    return i
   }(e, ["games", "isGameFetching"]);
-  return (0, n.jsx)(a.Z, {
+  return (0, n.jsx)(i.Z, {
     games: t,
-    renderGame: e => (0, n.jsx)(i.S, function(e) {
+    renderGame: e => (0, n.jsx)(a.S, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var r = null != arguments[t] ? arguments[t] : {},
           n = Object.keys(r);

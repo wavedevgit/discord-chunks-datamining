@@ -1,23 +1,24 @@
 /** Chunk was on 36605 **/
 /** chunk id: 118346, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  B: () => m,
-  b: () => d
+  B: () => f,
+  b: () => m
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk893776 = require("./893776.js"),
   Chunk489813 = require("./489813.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk624463 = require("./624463.js");
 
-function u() {
-  let [e, t] = Chunk647438.useState(false), [n, a] = Chunk647438.useState(false), [u, d] = Chunk647438.useState(false);
+function d() {
+  let [e, t] = Chunk647438.useState(false), [n, i] = Chunk647438.useState(false), [o, d] = Chunk647438.useState(false);
   Chunk647438.useEffect(() => {
     let e;
     return require && (e = setTimeout(() => {
-      Chunk489813(false)
+      Chunk28664(false)
     }, 2e3)), () => {
       null != module && clearTimeout(module)
     }
@@ -26,7 +27,7 @@ function u() {
     if (!module) {
       exports(true);
       try {
-        await Chunk893776.Z.verifyResend(), Chunk489813(true), d(true)
+        await Chunk893776.Z.verifyResend(), Chunk28664(true), d(true)
       } catch (e) {} finally {
         exports(false)
       }
@@ -40,20 +41,21 @@ function u() {
   }) : (0, Chunk951288.jsx)(Chunk481060.zxk, {
     variant: "primary",
     size: "sm",
-    text: u ? Chunk388032.intl.string(Chunk388032.t.WnX4Jy) : Chunk388032.intl.string(Chunk388032.t["13ofGh"]),
+    text: Chunk489813 ? Chunk388032.intl.string(Chunk388032.t.WnX4Jy) : Chunk388032.intl.string(Chunk388032.t["13ofGh"]),
     loading: module,
     onClick: m
   })
 }
 
-function d() {
+function m() {
   return (0, Chunk951288.jsx)(Chunk489813.PU, {
     className: Chunk624463.editableRequirementContainer,
     icon: Chunk481060._XJ,
     text: Chunk388032.intl.string(Chunk388032.t.c6EUJC),
     footnote: Chunk388032.intl.string(Chunk388032.t["jMh+TU"]),
     meetsRequirement: false,
-    children: (0, Chunk951288.jsx)(Chunk481060.DY3, {
+    children: (0, Chunk951288.jsx)(Chunk28664.u, {
+      asContainer: true,
       text: Chunk388032.intl.string(Chunk388032.t.mGlP39),
       children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
         variant: "primary",
@@ -65,16 +67,16 @@ function d() {
   })
 }
 
-function m(e) {
+function f(e) {
   let {
     isUserVerified: t
-  } = e, n = t ? o.intl.string(o.t.qY1jHB) : o.intl.string(o.t.c6EUJC);
-  return (0, r.jsx)(a.PU, {
-    className: c.editableRequirementContainer,
-    icon: i._XJ,
+  } = e, n = t ? c.intl.string(c.t.qY1jHB) : c.intl.string(c.t.c6EUJC);
+  return (0, r.jsx)(o.PU, {
+    className: u.editableRequirementContainer,
+    icon: s._XJ,
     text: n,
-    footnote: o.intl.string(o.t["jMh+TU"]),
+    footnote: c.intl.string(c.t["jMh+TU"]),
     meetsRequirement: t,
-    children: (0, r.jsx)(u, {})
+    children: (0, r.jsx)(d, {})
   })
 }

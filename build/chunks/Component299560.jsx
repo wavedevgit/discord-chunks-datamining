@@ -52,13 +52,13 @@ function j(e) {
   let {
     widgetType: t,
     onAddWidget: r,
-    size: i = "default",
+    size: a = "default",
     loading: o = false,
     trackUserProfileAction: s
   } = e, {
     placeholder: j,
     getAriaLabel: y
-  } = O[t], v = "small" === i, x = a.useCallback(() => {
+  } = O[t], v = "small" === a, x = i.useCallback(() => {
     o || ((0, u.qH)(t), s({
       action: "EDIT_ACTION"
     }), (0, d.L$)(g.qb.WIDGET_ADDED), null == r || r())
@@ -70,10 +70,10 @@ function j(e) {
     "aria-busy": o,
     children: ["details" === j.variant ? (0, n.jsx)(f.i, {
       applicationId: j.applicationId,
-      size: i
+      size: a
     }) : (0, n.jsx)(f.c, {
       applicationIds: j.applicationIds,
-      size: i
+      size: a
     }), (0, n.jsxs)("div", {
       className: m.overlay,
       children: [(0, n.jsx)(c.oFk, {

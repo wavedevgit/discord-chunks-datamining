@@ -1,14 +1,12 @@
 /** Chunk was on 68197 **/
 /** chunk id: 236091, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => g
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
-var Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+var Chunk951288 = require("./951288.js"),
   Chunk442837 = require("./442837.js"),
   Chunk692547 = require("./692547.js"),
+  Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk358221 = require("./358221.js"),
   Chunk594190 = require("./594190.js"),
@@ -18,31 +16,29 @@ var Chunk120356 = require("./120356.js"),
   Chunk354459 = require("./354459.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk363862 = require("./363862.js");
-let b = e => {
+let g = e => {
   let {
-    className: t,
-    channelId: n
-  } = e, i = (0, p.Go)(), b = h.Z.isDecoupledGameClippingEnabled();
-  return (0, a.e7)([d.Z, c.Z, h.Z, u.ZP], () => {
+    channelId: t
+  } = e, n = (0, d.Go)(), g = p.Z.isDecoupledGameClippingEnabled();
+  return (0, i.e7)([u.Z, s.Z, p.Z, c.ZP], () => {
     var e;
-    if (null == n) returnfalse;
-    let t = d.Z.getCurrentUserActiveStream(),
-      r = null == (e = u.ZP.getVisibleGame()) ? true : e.windowHandle;
-    return null != t && !!h.Z.getSettings().clipsEnabled && !!i || null != r && !!h.Z.getSettings().decoupledClipsEnabled && !!b || c.Z.getParticipants(n).some(e => e.type === f.fO.USER && h.Z.isClipsEnabledForUser(e.user.id))
-  }) ? (0, r.jsxs)(s.DY3, {
-    text: m.intl.string(m.t.DJXW3N),
-    color: s.FGA.GREY,
-    className: l()(t, g.clipsEnabledIndicator),
-    children: [(0, r.jsx)(s.G2e, {
-      icon: s.AlX,
-      shape: s.Dv2.ROUND_LEFT,
-      color: o.Z.unsafe_rawColors.PRIMARY_500.css,
-      className: g.clipBadgeIcon
-    }), (0, r.jsx)(s.IGR, {
-      text: m.intl.string(m.t.pCMkDQ),
-      shape: s.Dv2.ROUND_RIGHT,
-      color: o.Z.unsafe_rawColors.PRIMARY_500.css,
-      className: g.clipBadgeText
+    if (null == t) returnfalse;
+    let r = u.Z.getCurrentUserActiveStream(),
+      i = null == (e = c.ZP.getVisibleGame()) ? true : e.windowHandle;
+    return null != r && !!p.Z.getSettings().clipsEnabled && !!n || null != i && !!p.Z.getSettings().decoupledClipsEnabled && !!g || s.Z.getParticipants(t).some(e => e.type === h.fO.USER && p.Z.isClipsEnabledForUser(e.user.id))
+  }) ? (0, r.jsxs)(a.u, {
+    asContainer: true,
+    text: f.intl.string(f.t.DJXW3N),
+    children: [(0, r.jsx)(o.G2e, {
+      icon: o.AlX,
+      shape: o.Dv2.ROUND_LEFT,
+      color: l.Z.unsafe_rawColors.PRIMARY_500.css,
+      className: m.clipBadgeIcon
+    }), (0, r.jsx)(o.IGR, {
+      text: f.intl.string(f.t.pCMkDQ),
+      shape: o.Dv2.ROUND_RIGHT,
+      color: l.Z.unsafe_rawColors.PRIMARY_500.css,
+      className: m.clipBadgeText
     })]
   }) : null
 }

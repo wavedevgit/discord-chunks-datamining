@@ -1,7 +1,7 @@
 /** Chunk was on 47463 **/
 /** chunk id: 585835, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => C
 }), require("./539854.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -9,6 +9,7 @@ var Chunk951288 = require("./951288.js"),
   a = require.n(Chunk120356),
   Chunk243814 = require("./243814.js"),
   Chunk442837 = require("./442837.js"),
+  Chunk28664 = require("./28664.jsx"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk367907 = require("./367907.js"),
@@ -24,50 +25,50 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk473059 = require("./473059.js");
 
-function _(e) {
+function C(e) {
   var t, n, l;
   let {
-    name: _,
-    icon: C,
-    imageSrc: N,
-    iconBackgroundColor: Z,
-    iconClassName: S,
-    iconWrapperClassName: w,
-    details: I,
-    integration: T,
-    buttonText: P,
-    buttonDisabled: E,
-    hasNextSection: k,
-    onButtonClick: A,
-    guildId: D,
-    isScrolling: R,
-    canShowMigrationTooltip: L,
-    trailing: M
-  } = e, [B, W] = r.useState(false), [U, H] = r.useState(false), G = L && !R && !U && true !== D && null != T, z = r.useRef(null), F = r.useRef(null), K = r.useCallback((e, t, n, r) => null == e || null == r ? null : n ? (0, i.jsxs)(m.Z, {
-    align: m.Z.Align.CENTER,
-    ref: F,
-    children: [(0, i.jsx)(d.Text, {
+    name: C,
+    icon: N,
+    imageSrc: Z,
+    iconBackgroundColor: S,
+    iconClassName: w,
+    iconWrapperClassName: I,
+    details: T,
+    integration: P,
+    buttonText: E,
+    buttonDisabled: k,
+    hasNextSection: A,
+    onButtonClick: D,
+    guildId: R,
+    isScrolling: L,
+    canShowMigrationTooltip: M,
+    trailing: B
+  } = e, [W, U] = r.useState(false), [H, G] = r.useState(false), z = M && !L && !H && true !== R && null != P, F = r.useRef(null), K = r.useRef(null), V = r.useCallback((e, t, n, r) => null == e || null == r ? null : n ? (0, i.jsxs)(b.Z, {
+    align: b.Z.Align.CENTER,
+    ref: K,
+    children: [(0, i.jsx)(u.Text, {
       variant: "text-sm/normal",
       children: e
-    }), n ? (0, i.jsx)(d.Fbu, {
+    }), n ? (0, i.jsx)(u.Fbu, {
       size: "custom",
       color: "currentColor",
       width: 10,
       height: 10,
-      className: O.caret
+      className: _.caret
     }) : null]
-  }) : (0, i.jsx)(c.zx, {
-    buttonRef: z,
-    size: c.zx.Sizes.SMALL,
-    look: n ? c.zx.Looks.LINK : c.zx.Looks.FILLED,
-    color: n ? c.zx.Colors.PRIMARY : c.zx.Colors.BRAND,
+  }) : (0, i.jsx)(d.zx, {
+    buttonRef: F,
+    size: d.zx.Sizes.SMALL,
+    look: n ? d.zx.Looks.LINK : d.zx.Looks.FILLED,
+    color: n ? d.zx.Colors.PRIMARY : d.zx.Colors.BRAND,
     disabled: t,
     onClick: r,
     children: e
-  }), [z, F])(P, E, k, A);
+  }), [F, K])(E, k, A, D);
   r.useEffect(() => {
     var e, t;
-    G && h.default.track(v.rMx.COMMANDS_MIGRATION_TOOLTIP_VIEWED, (e = function(e) {
+    z && x.default.track(y.rMx.COMMANDS_MIGRATION_TOOLTIP_VIEWED, (e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           i = Object.keys(n);
@@ -84,8 +85,8 @@ function _(e) {
         })
       }
       return e
-    }({}, (0, u.hH)(D)), t = t = {
-      application_id: null == T ? true : T.application.id,
+    }({}, (0, p.hH)(R)), t = t = {
+      application_id: null == P ? true : P.application.id,
       location: "overview"
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
       var n = Object.keys(e);
@@ -97,103 +98,103 @@ function _(e) {
     })(Object(t)).forEach(function(n) {
       Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e))
-  }, [D, null == T ? true : T.application.id, G]);
-  let V = G ? (0, i.jsx)(d.yRy, {
-      targetElementRef: k ? F : z,
-      renderPopout: () => (0, i.jsx)(d.P3F, {
+  }, [R, null == P ? true : P.application.id, z]);
+  let q = z ? (0, i.jsx)(u.yRy, {
+      targetElementRef: A ? K : F,
+      renderPopout: () => (0, i.jsx)(u.P3F, {
         onClick: e => {
-          e.stopPropagation(), H(true), j.Z.dismissOverviewTooltip(D, T.integration)
+          e.stopPropagation(), G(true), v.Z.dismissOverviewTooltip(R, P.integration)
         },
-        children: (0, i.jsx)(g.ZP, {
-          content: y.intl.string(y.t.TyMJwM),
+        children: (0, i.jsx)(f.ZP, {
+          content: O.intl.string(O.t.TyMJwM),
           onClick: () => {}
         })
       }),
       position: "bottom",
       align: "center",
-      animation: d.yRy.Animation.TRANSLATE,
+      animation: u.yRy.Animation.TRANSLATE,
       shouldShow: true,
-      children: () => K
-    }) : K,
-    q = (0, s.Wu)([b.Z], () => {
+      children: () => V
+    }) : V,
+    Y = (0, s.Wu)([g.Z], () => {
       var e;
-      return null != T && null != D && null != (e = b.Z.getApplicationEntitlementsForGuild(T.application.id, D)) ? e : []
+      return null != P && null != R && null != (e = g.Z.getApplicationEntitlementsForGuild(P.application.id, R)) ? e : []
     }),
-    Y = (0, p.LD)(D, true),
-    $ = (null == T ? true : T.application) != null && Object.keys(null != (l = null == (n = Y.result) || null == (t = n.sections[T.application.id]) ? true : t.commands) ? l : {}).length > 0,
-    J = (0, i.jsxs)(m.Z, {
-      children: [(0, i.jsx)(x.Z, {
-        name: _,
-        icon: C,
-        imageSrc: N,
-        iconBackgroundColor: Z,
-        iconClassName: S,
-        iconWrapperClassName: w,
-        details: I,
-        isPremium: q.length > 0
-      }), (0, i.jsx)(m.Z.Child, {
+    $ = (0, m.LD)(R, true),
+    J = (null == P ? true : P.application) != null && Object.keys(null != (l = null == (n = $.result) || null == (t = n.sections[P.application.id]) ? true : t.commands) ? l : {}).length > 0,
+    X = (0, i.jsxs)(b.Z, {
+      children: [(0, i.jsx)(j.Z, {
+        name: C,
+        icon: N,
+        imageSrc: Z,
+        iconBackgroundColor: S,
+        iconClassName: w,
+        iconWrapperClassName: I,
+        details: T,
+        isPremium: Y.length > 0
+      }), (0, i.jsx)(b.Z.Child, {
         shrink: 0,
         grow: 0,
-        children: (0, i.jsxs)(m.Z, {
-          align: m.Z.Align.CENTER,
-          justify: m.Z.Justify.END,
+        children: (0, i.jsxs)(b.Z, {
+          align: b.Z.Align.CENTER,
+          justify: b.Z.Justify.END,
           children: [function(e, t, n) {
             var r, l;
             if (null == e) return null;
             let a = [],
               {
                 application: s,
-                integration: c,
-                webhooks: u
+                integration: d,
+                webhooks: p
               } = e;
-            return null != s.bot && (null == c || null == (r = c.scopes) ? true : r.includes(o.x.BOT)) && a.push((0, i.jsx)(d.DY3, {
+            return null != s.bot && (null == d || null == (r = d.scopes) ? true : r.includes(o.x.BOT)) && a.push((0, i.jsx)(c.u, {
+              asContainer: true,
               forceOpen: t,
-              text: new f.Z(s.bot).isVerifiedBot() ? y.intl.string(y.t.xxcTGx) : y.intl.string(y.t.AOdOYm),
-              className: O.feature,
-              children: (0, i.jsx)(d.wGt, {
+              text: new h.Z(s.bot).isVerifiedBot() ? O.intl.string(O.t.xxcTGx) : O.intl.string(O.t.AOdOYm),
+              children: (0, i.jsx)(u.wGt, {
                 size: "md",
                 color: "currentColor",
-                className: O.featureIcon
+                className: _.featureIcon
               })
-            }, "bot")), u.length > 0 && a.push((0, i.jsx)(d.DY3, {
+            }, "bot")), p.length > 0 && a.push((0, i.jsx)(c.u, {
+              asContainer: true,
               forceOpen: t,
-              text: y.intl.formatToPlainString(y.t["6HqDfX"], {
-                count: u.length
+              text: O.intl.formatToPlainString(O.t["6HqDfX"], {
+                count: p.length
               }),
-              className: O.feature,
-              children: (0, i.jsx)(d.tYf, {
+              children: (0, i.jsx)(u.tYf, {
                 size: "md",
                 color: "currentColor",
-                className: O.featureIcon
+                className: _.featureIcon
               })
-            }, "webhooks")), (null == c || null == (l = c.scopes) ? true : l.includes(o.x.APPLICATIONS_COMMANDS)) === true && n && a.push((0, i.jsx)(d.DY3, {
+            }, "webhooks")), (null == d || null == (l = d.scopes) ? true : l.includes(o.x.APPLICATIONS_COMMANDS)) === true && n && a.push((0, i.jsx)(c.u, {
+              asContainer: true,
               forceOpen: t,
-              text: y.intl.string(y.t["0hKkS0"]),
-              className: O.feature,
-              children: (0, i.jsx)(d.SsZ, {
+              text: O.intl.string(O.t["0hKkS0"]),
+              children: (0, i.jsx)(u.SsZ, {
                 size: "md",
                 color: "currentColor",
-                className: O.featureIcon
+                className: _.featureIcon
               })
             }, "commands")), a
-          }(T, B, $), V, M]
+          }(P, W, J), q, B]
         })
       })]
     });
-  return k ? (0, i.jsx)(d.P3F, {
+  return A ? (0, i.jsx)(u.P3F, {
     onClick: () => {
-      L && null != D && null != T && j.Z.dismissOverviewTooltip(D, T.integration), null == A || A()
+      M && null != R && null != P && v.Z.dismissOverviewTooltip(R, P.integration), null == D || D()
     },
-    onFocus: () => W(true),
-    onBlur: () => W(false),
-    children: (0, i.jsx)(d.Zbd, {
+    onFocus: () => U(true),
+    onBlur: () => U(false),
+    children: (0, i.jsx)(u.Zbd, {
       editable: true,
-      className: a()(O.card, O.clickable),
-      children: J
+      className: a()(_.card, _.clickable),
+      children: X
     })
-  }) : (0, i.jsx)(d.Zbd, {
+  }) : (0, i.jsx)(u.Zbd, {
     editable: true,
-    className: O.card,
-    children: J
+    className: _.card,
+    children: X
   })
 }

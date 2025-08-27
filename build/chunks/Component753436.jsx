@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk594174 = require("./594174.js"),
   Chunk971082 = require("./971082.jsx"),
   Chunk817053 = require("./817053.jsx"),
@@ -20,7 +20,7 @@ function b(e) {
   let {
     game: t,
     userId: r,
-    widgetType: a,
+    widgetType: i,
     guildId: b,
     channelId: p,
     loading: m = false,
@@ -36,10 +36,10 @@ function b(e) {
       applicationId: t.applicationId,
       userId: r,
       disableInteraction: O,
-      className: i()(y ? g.socialProofBackdrop : true, (null == t ? true : t.imageSrc) == null || O ? true : f.hoverActiveEffect)
+      className: a()(y ? g.socialProofBackdrop : true, (null == t ? true : t.imageSrc) == null || O ? true : f.hoverActiveEffect)
     }), !O && x && (0, n.jsx)(s.Z, {
       game: t,
-      widgetType: a,
+      widgetType: i,
       className: g.removeGameButton,
       iconSize: "xs"
     }), !O && y && (0, n.jsx)(o.Z, {

@@ -1,7 +1,7 @@
 /** Chunk was on 89289 **/
 /** chunk id: 782818, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => C
+  Z: () => v
 }), require("./953529.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -109,14 +109,14 @@ function A(e) {
   })
 }
 
-function v(e) {
+function C(e) {
   let {
     onComplete: t
   } = e, l = (0, s.e7)([c.default], () => c.default.getCurrentUser()), {
     avatars: i,
     loading: g,
-    error: v
-  } = (0, f.S)(), C = a.useRef([]), O = a.useRef(null), E = a.useRef(i.length), N = a.useRef(null), [S, w] = a.useState(false), [P, T] = a.useState(false), [R, _] = a.useState(null), F = null != R ? R : null == v ? true : v.message, Z = i.length, D = Math.max(b.iZ - Z, 0), I = (0, o.vRw)(), k = a.useCallback(async e => {
+    error: C
+  } = (0, f.S)(), v = a.useRef([]), O = a.useRef(null), E = a.useRef(i.length), N = a.useRef(null), [S, w] = a.useState(false), [P, T] = a.useState(false), [R, _] = a.useState(null), F = null != R ? R : null == C ? true : C.message, Z = i.length, D = Math.max(b.iZ - Z, 0), I = (0, o.vRw)(), k = a.useCallback(async e => {
     if (null == l || S) return;
     w(true), _(null);
     let {
@@ -162,7 +162,7 @@ function v(e) {
     }
   }, [I, S, t, l]), M = a.useCallback((e, t, a, l, s) => {
     let c = t + 1 < i.length ? t + 1 : t - 1;
-    N.current = c >= 0 ? C.current[c] : O.current, e.shiftKey ? (0, d.B)(a) : (T(true), (0, o.ZDy)(async () => {
+    N.current = c >= 0 ? v.current[c] : O.current, e.shiftKey ? (0, d.B)(a) : (T(true), (0, o.ZDy)(async () => {
       let {
         default: e
       } = await n.e("70871").then(n.bind(n, 225525));
@@ -225,7 +225,7 @@ function v(e) {
             onSelectRecentAvatar: k,
             onDeleteRecentAvatar: M,
             avatarButtonRef: e => {
-              C.current[t] = e
+              v.current[t] = e
             }
           })
         }, e.id))
@@ -247,7 +247,7 @@ function v(e) {
   })
 }
 
-function C(e) {
+function v(e) {
   let {
     className: t,
     onComplete: n
@@ -265,7 +265,7 @@ function C(e) {
           recentAvatarsLimit: b.iZ
         })
       })]
-    }), (0, r.jsx)(v, {
+    }), (0, r.jsx)(C, {
       onComplete: n
     })]
   })

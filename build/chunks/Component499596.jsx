@@ -7,7 +7,7 @@ var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
-  Chunk481060 = require("./481060.js"),
+  Chunk28664 = require("./28664.jsx"),
   Chunk884338 = require("./884338.jsx"),
   Chunk933557 = require("./933557.js"),
   Chunk471445 = require("./471445.js"),
@@ -29,7 +29,8 @@ function m(e) {
       if (null == e || e === o.ag) return null;
       let n = d.ZP.getName(t.guild_id, t.id, e),
         i = e.getAvatarURL(t.guild_id, 24);
-      return (0, r.jsx)(s.DY3, {
+      return (0, r.jsx)(s.u, {
+        asContainer: true,
         text: n,
         children: (0, r.jsx)("img", {
           src: null != i ? i : true,
@@ -57,7 +58,8 @@ function m(e) {
         })
       }(n.slice(4), t);
       return (0, r.jsx)("div", {
-        children: (0, r.jsx)(s.DY3, {
+        children: (0, r.jsx)(s.u, {
+          asContainer: true,
           text: i,
           children: (0, r.jsx)("div", {
             className: f.userListOverflow,

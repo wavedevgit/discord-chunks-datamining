@@ -2,58 +2,59 @@
 /** chunk id: 91218, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => u
+  Z: () => d
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
+  Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk274424 = require("./274424.js");
-let u = Chunk647438.forwardRef(function(e, t) {
+let d = Chunk647438.forwardRef(function(e, t) {
   let {
     className: n,
     src: i,
     unicodeEmoji: a,
-    name: u,
-    size: d = 20,
-    enableTooltip: f = true,
-    enableHeight: _ = true,
-    onClick: p
+    name: d,
+    size: f = 20,
+    enableTooltip: _ = true,
+    enableHeight: p = true,
+    onClick: h
   } = e;
   if (null == i && null == a) return null;
-  let h = () => {
+  let m = () => {
     let e = (0, r.jsx)("img", {
       ref: t,
       alt: "",
-      "aria-label": l.intl.formatToPlainString(l.t["9+YWrK"], {
-        name: u
+      "aria-label": c.intl.formatToPlainString(c.t["9+YWrK"], {
+        name: d
       }),
-      className: o()(c.roleIcon, n, {
-        [c.clickable]: null != p
+      className: o()(u.roleIcon, n, {
+        [u.clickable]: null != h
       }),
-      height: _ ? d : true,
+      height: p ? f : true,
       src: i,
-      width: d
+      width: f
     });
     return (null != a && (e = (0, r.jsx)("img", {
       ref: t,
       alt: "",
       "aria-label": a.allNamesString,
-      className: o()(c.roleIcon, n, {
-        [c.clickable]: null != p
+      className: o()(u.roleIcon, n, {
+        [u.clickable]: null != h
       }),
-      height: _ ? d : true,
+      height: p ? f : true,
       src: a.url,
-      width: d
-    })), null == p) ? (0, r.jsx)(s.tEY, {
+      width: f
+    })), null == h) ? (0, r.jsx)(l.tEY, {
       offset: {
         left: 5
       },
       children: e
-    }) : (0, r.jsx)(s.P3F, {
-      onClick: p,
+    }) : (0, r.jsx)(l.P3F, {
+      onClick: h,
       tag: "span",
       focusProps: {
         offset: {
@@ -63,11 +64,12 @@ let u = Chunk647438.forwardRef(function(e, t) {
       children: e
     })
   };
-  return (0, r.jsx)(s.DY3, {
-    text: u,
+  return (0, r.jsx)(s.u, {
+    asContainer: true,
+    text: d,
     "aria-label": false,
-    shouldShow: f,
-    element: "span",
-    children: h()
+    shouldShow: _,
+    tag: "span",
+    children: m()
   })
 })

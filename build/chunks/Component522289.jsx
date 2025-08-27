@@ -2,7 +2,7 @@
 /** chunk id: 522289, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => h
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -10,12 +10,13 @@ var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   s = require.n(Chunk392711),
+  Chunk28664 = require("./28664.jsx"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk565138 = require("./565138.jsx"),
   Chunk581143 = require("./581143.js");
 
-function f() {
+function _() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk565138.Z.Sizes.SMALLER;
   switch (module) {
     case Chunk565138.Z.Sizes.SMOL:
@@ -28,7 +29,7 @@ function f() {
   }
 }
 
-function _() {
+function p() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk565138.Z.Sizes.SMALLER;
   switch (module) {
     case Chunk565138.Z.Sizes.SMOL:
@@ -40,63 +41,63 @@ function _() {
   }
 }
 
-function p(e) {
+function h(e) {
   let {
     className: t,
     maxGuilds: n,
     guilds: i,
     onFocus: o,
-    onClick: p,
-    size: h = u.Z.Sizes.SMALLER,
-    hideOverflowCount: m = false,
-    disableGuildNameTooltip: g = false
-  } = e, E = f(h);
+    onClick: h,
+    size: m = d.Z.Sizes.SMALLER,
+    hideOverflowCount: g = false,
+    disableGuildNameTooltip: E = false
+  } = e, b = _(m);
 
-  function b() {
+  function y() {
     let e = i.length - n,
       t = e + 1,
-      f = e > 0 && !m,
-      b = Math.min(i.length, n) - 1,
-      y = s()(i).take(n).map((e, t) => {
+      _ = e > 0 && !g,
+      y = Math.min(i.length, n) - 1,
+      O = s()(i).take(n).map((e, t) => {
         let n = e.name,
-          i = t === b && !f,
-          o = a()(d.avatar, E, i && d.isLast);
-        return g ? (0, r.jsx)("div", {
+          i = t === y && !_,
+          o = a()(f.avatar, b, i && f.isLast);
+        return E ? (0, r.jsx)("div", {
           className: o,
-          children: (0, r.jsx)(u.Z, {
+          children: (0, r.jsx)(d.Z, {
             guild: e,
-            onClick: p,
-            size: h,
+            onClick: h,
+            size: m,
             showTooltip: false
           })
-        }) : (0, r.jsx)(c.DY3, {
+        }) : (0, r.jsx)(l.u, {
+          asContainer: true,
           text: n,
-          className: o,
-          children: (0, r.jsx)(u.Z, {
+          children: (0, r.jsx)(d.Z, {
             guild: e,
-            onClick: p,
-            size: h
+            onClick: h,
+            size: m
           })
         }, e.id)
       }).value();
-    if (f) {
-      let e = _(h);
-      y[y.length - 1] = (0, r.jsx)(l.zx, {
-        className: a()(d.overflow, E),
+    if (_) {
+      let e = p(m);
+      O[O.length - 1] = (0, r.jsx)(c.zx, {
+        className: a()(f.overflow, b),
         onFocus: o,
-        onClick: e => null == p ? true : p(e),
-        look: l.zx.Looks.BLANK,
-        size: l.zx.Sizes.NONE,
-        children: (0, r.jsx)(c.Text, {
+        onClick: e => null == h ? true : h(e),
+        look: c.zx.Looks.BLANK,
+        size: c.zx.Sizes.NONE,
+        children: (0, r.jsx)(u.Text, {
           variant: e,
           children: t > 99 ? ">99" : "+".concat(t)
         })
       })
     }
-    return y
+    return O
   }
   return i.length <= 0 ? null : (0, r.jsx)("div", {
-    className: a()(t, d.avatars),
-    children: b()
+    className: a()(t, f.avatars),
+    children: y()
   })
 }
