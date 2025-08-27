@@ -120,28 +120,32 @@ function K() {
       })
   }
   let i = [],
-    o = [];
+    o = new Set,
+    a = [];
   for (let e = 1; module < V.length; e += 1) {
     let t = W(V[module]);
-    null != exports && (exports.type !== Chunk212819.h8.TEXT_CHANNEL && exports.type !== Chunk212819.h8.VOICE_CHANNEL || Chunk496675.Z.can(Chunk981631.Plq.VIEW_CHANNEL, exports.record)) && Chunk392711.push(exports)
+    null != exports && (exports.type !== Chunk212819.h8.TEXT_CHANNEL && exports.type !== Chunk212819.h8.VOICE_CHANNEL || Chunk496675.Z.can(Chunk981631.Plq.VIEW_CHANNEL, exports.record)) && (a.push(exports), Chunk392711.add(exports.record.id))
   }
-  Chunk392711.length > 0 && i.push((0, Chunk212819.o6)(Chunk388032.intl.string(Chunk388032.t["80lOZ2"])), ...Chunk392711);
-  let s = Y(e => e === r || V.includes(e));
-  Chunk442837.length > 0 && i.push((0, Chunk212819.o6)(Chunk388032.intl.string(Chunk388032.t["4B63jY"])), ...Chunk442837);
-  let l = Chunk306680.ZP.getMentionChannelIds().filter(e => e !== r && !V.includes(e)).map(e => W(e)).filter(Chunk823379.lm).reverse();
-  if (Chunk433517.length > 0 && (i.push((0, Chunk212819.o6)(Chunk388032.intl.string(Chunk388032.t["61Df19"]))), i = i.concat(Chunk433517)), null != require) {
+  a.length > 0 && i.push((0, Chunk212819.o6)(Chunk388032.intl.string(Chunk388032.t["80lOZ2"])), ...a);
+  let s = Y(e => e === r || V.includes(e) || o.has(e));
+  if (Chunk442837.length > 0)
+    for (let e of (i.push((0, Chunk212819.o6)(Chunk388032.intl.string(Chunk388032.t["4B63jY"]))), Chunk442837)) Chunk392711.add(module.record.id), i.push(module);
+  let l = Chunk306680.ZP.getMentionChannelIds().filter(e => e !== r && !V.includes(e) && !o.has(e)).map(e => W(e)).filter(Chunk823379.lm).reverse();
+  if (Chunk433517.length > 0)
+    for (let e of (i.push((0, Chunk212819.o6)(Chunk388032.intl.string(Chunk388032.t["61Df19"]))), Chunk433517)) Chunk392711.add(module.record.id), i.push(module);
+  if (null != require) {
     let e = Chunk984933.ZP.getSelectableChannelIds(require).filter(e => {
       let t = m.Z.getChannel(e);
-      return !(null == t || e === r || V.includes(e) || S.ZP.isChannelMuted(t.guild_id, e) || null != t.parent_id && S.ZP.isChannelMuted(t.guild_id, t.parent_id)) && (0, f.d)(t)
+      return !(null == t || e === r || V.includes(e) || o.has(e) || S.ZP.isChannelMuted(t.guild_id, e) || null != t.parent_id && S.ZP.isChannelMuted(t.guild_id, t.parent_id)) && (0, f.d)(t)
     }).map(e => W(e)).filter(e => e);
     Object.values(Chunk601070.Z.getActiveJoinedUnreadThreadsForGuild(require)).forEach(t => {
       for (let n in t) {
         let t = W(n);
-        null != t && e.push(t)
+        null == t || o.has(t.record.id) || e.push(t)
       }
     }), module.length > 0 && (i.push((0, Chunk212819.o6)(Chunk388032.intl.string(Chunk388032.t.ieCAhI))), i = i.concat(module))
   }
-  return a()(i).uniqBy(e => e.record.id).value()
+  return i
 }
 
 function z(e, t) {
