@@ -54,7 +54,7 @@ let N = Chunk442837.ZP.connectStores([Chunk55563.Z, Chunk812206.Z, Chunk509545.Z
     children: [null != n.giftStyle ? (0, r.jsx)(f.Z, {
       defaultAnimationState: h.SR.LOOP,
       giftStyle: n.giftStyle,
-      className: b.seasonalIcon
+      className: j.seasonalIcon
     }) : (0, r.jsx)(u.qE, {
       src: null != l ? l.getAvatarURL(true, 100) : null,
       size: a.EFr.DEPRECATED_SIZE_100,
@@ -69,10 +69,10 @@ let N = Chunk442837.ZP.connectStores([Chunk55563.Z, Chunk812206.Z, Chunk509545.Z
       children: [(0, r.jsx)(u.DK, {
         children: g
       }), (0, r.jsxs)(u.Dx, {
-        className: o()(I.marginTop8, j.flexCenter),
+        className: o()(I.marginTop8, b.flexCenter),
         children: [s.productLine !== x.POd.COLLECTIBLES && (0, r.jsx)(d.Z, {
           size: d.Z.Sizes.MEDIUM,
-          className: b.applicationIcon,
+          className: j.applicationIcon,
           game: c,
           skuId: s.id
         }), m]

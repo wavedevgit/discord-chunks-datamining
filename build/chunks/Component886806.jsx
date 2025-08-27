@@ -58,7 +58,7 @@ function _(e) {
     title: g.intl.string(g.t.dAfGb2),
     buttonText: g.intl.string(g.t.uJWIj4),
     onButtonClick: E,
-    image: (0, r.jsx)(o.dQ, {
+    image: (0, r.jsx)(o.Om, {
       alt: g.intl.string(g.t.dAfGb2)
     })
   }) : (0, r.jsx)(u.Z, {

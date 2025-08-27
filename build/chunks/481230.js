@@ -79,8 +79,8 @@ function _(e) {
     password: x,
     guildTemplateCode: v,
     birthday: E,
-    invite: b = null,
-    giftCodeSKUId: j = null,
+    invite: j = null,
+    giftCodeSKUId: b = null,
     promoEmailConsent: I = null,
     usedUsernameSuggestion: N = null
   } = e;
@@ -104,18 +104,18 @@ function _(e) {
       username: r,
       global_name: m,
       password: x,
-      invite: b,
+      invite: j,
       consent: _,
       phone_token: n,
       date_of_birth: null == E ? true : E.format("YYYY-MM-DD"),
-      gift_code_sku_id: j,
+      gift_code_sku_id: b,
       guild_template_code: v,
       promotional_email_opt_in: null == I ? true : I.checked
     },
     trackedActionData: {
       event: l.NetworkActionNames.USER_REGISTER,
       properties: {
-        invite_code: b,
+        invite_code: j,
         used_username_suggestion: N,
         promotional_email_opt_in: null == I ? true : I.checked,
         promotional_email_pre_checked: null == I ? true : I.preChecked,

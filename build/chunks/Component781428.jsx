@@ -464,7 +464,7 @@ class X extends(r = Chunk647438.PureComponent) {
       onSubmit: this.handleLogin,
       tag: "form",
       className: s()(this.props.authBoxClassName, K.horizontalAuthBox),
-      children: () => [(0, i.jsx)(b.Z, {
+      children: () => [(0, i.jsx)(j.Z, {
         guildTemplate: e
       }, "template"), this.renderDefaultForm(false)]
     })
@@ -646,7 +646,7 @@ class X extends(r = Chunk647438.PureComponent) {
       try {
         let {
           token: n
-        } = await O.Z.verifyPhone(t, e, false);
+        } = await y.Z.verifyPhone(t, e, false);
         await f.Z.authorizeIPAddress(n), this.handleLogin()
       } catch (e) {
         null != e.body && null != e.body.message && this.setState({
@@ -663,7 +663,7 @@ class X extends(r = Chunk647438.PureComponent) {
       try {
         let {
           token: n
-        } = await O.Z.verifyPhone(this.getFullLogin(), e, false);
+        } = await y.Z.verifyPhone(this.getFullLogin(), e, false);
         t(G.Z5c.RESET, {
           search: (0, a.stringify)({
             token: n,
@@ -716,7 +716,7 @@ class X extends(r = Chunk647438.PureComponent) {
         })
       }
     }), W(this, "handleResendCode", () => {
-      O.Z.resendCode(this.getFullLogin())
+      y.Z.resendCode(this.getFullLogin())
     }), W(this, "handleReset", e => {
       null != e && e.preventDefault(), f.Z.loginReset(), this.setState({
         password: "",

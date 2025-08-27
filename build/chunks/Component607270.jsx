@@ -2,7 +2,7 @@
 /** chunk id: 607270, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -13,13 +13,14 @@ var Chunk990547 = require("./990547.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk213609 = require("./213609.js"),
   Chunk550385 = require("./550385.js"),
+  Chunk799360 = require("./799360.js"),
   Chunk507962 = require("./507962.js"),
   Chunk119475 = require("./119475.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk640744 = require("./640744.js"),
   Chunk758335 = require("./758335.js");
 
-function m() {
+function g() {
   let {
     analyticsLocations: e
   } = (0, Chunk906732.ZP)();
@@ -30,11 +31,15 @@ function m() {
       location_stack: module
     }
   });
-  let t = () => {
-    (0, Chunk507962.DI)(Chunk507962.Ln.APPEARANCE_SETTINGS), (0, Chunk550385.XO)(Chunk550385.wh.CUSTOM_THEME, {
-      from: Chunk550385.tE.SETTING
-    }), (0, Chunk37234.xf)()
-  };
+  let t = (0, Chunk799360.B)({
+      "en-US": Chunk119475.default["f/cLEh"],
+      "en-GB": Chunk119475.default["f/cLEh"]
+    }, Chunk119475.default.CARxAA),
+    n = () => {
+      (0, Chunk507962.DI)(Chunk507962.Ln.APPEARANCE_SETTINGS), (0, Chunk550385.XO)(Chunk550385.wh.CUSTOM_THEME, {
+        from: Chunk550385.tE.SETTING
+      }), (0, Chunk37234.xf)()
+    };
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk640744.container,
     children: [(0, Chunk951288.jsx)("div", {
@@ -49,7 +54,7 @@ function m() {
       children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
         variant: "heading-lg/semibold",
         color: "text-primary",
-        children: Chunk388032.intl.string(Chunk119475.default.CARxAA)
+        children: exports
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",
         children: Chunk388032.intl.string(Chunk119475.default.nla4RE)
@@ -59,7 +64,7 @@ function m() {
       children: (0, Chunk951288.jsx)(Chunk680018.z, {
         variant: "primary",
         text: Chunk388032.intl.string(Chunk388032.t.uw9zIy),
-        onClick: exports
+        onClick: require
       })
     })]
   })

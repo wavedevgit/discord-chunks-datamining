@@ -1,12 +1,12 @@
 /** Chunk was on 27978 **/
 /** chunk id: 230224, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  GB: () => O,
+  GB: () => y,
   JI: () => N,
   UM: () => A,
   V6: () => S,
-  WT: () => b,
-  X7: () => j,
+  WT: () => j,
+  X7: () => b,
   jq: () => C,
   mx: () => x
 }), require("./415506.js");
@@ -35,11 +35,11 @@ let x = 100,
     return 0 === r.memberCount && 0 === r.memberCount ? null : r
   },
   E = e => e.target_type === f.Iq.STREAM && null != e.target_user,
-  b = e => {
+  j = e => {
     var t;
     return (null == (t = e.channel) ? true : t.type) === p.d4z.GROUP_DM
   },
-  j = e => null == e.channel && null == e.guild && null != e.inviter,
+  b = e => null == e.channel && null == e.guild && null != e.inviter,
   I = e => e.state === p.r2o.ACCEPTED,
   N = e => {
     let {
@@ -47,12 +47,12 @@ let x = 100,
     } = e;
     return null != t
   },
-  y = e => !N(e) && (!!j(e) || null != e.inviter && !I(e) && !(e => {
+  O = e => !N(e) && (!!b(e) || null != e.inviter && !I(e) && !(e => {
     var t;
     let n = v(e);
     return (null != (t = null == n ? true : n.memberCount) ? t : 0) > x
   })(e)),
-  O = e => {
+  y = e => {
     let {
       guild: t,
       user: n,
@@ -81,7 +81,7 @@ function S(e) {
     textClassName: i,
     className: l
   } = e, s = v(n);
-  return null == s || y(n) || (null == n || null == (t = n.guild) ? true : t.id) === g.fQ ? null : (0, r.jsx)(a.EJ, {
+  return null == s || O(n) || (null == n || null == (t = n.guild) ? true : t.id) === g.fQ ? null : (0, r.jsx)(a.EJ, {
     className: o()(_.activityCount, l),
     online: s.onlineCount,
     total: s.memberCount,
@@ -94,15 +94,15 @@ function C(e) {
   let {
     invite: t,
     showBigUserIcon: n
-  } = e, l = i.useMemo(() => n ? null : E(t) && null != t.target_user ? d.ZP.getUserAvatarURL(t.target_user) : y(t) && null != t.inviter ? d.ZP.getUserAvatarURL(t.inviter) : null, [t, n]), o = m.intl.string(m.t["3rE1Pz"]);
-  if (b(t)) {
+  } = e, l = i.useMemo(() => n ? null : E(t) && null != t.target_user ? d.ZP.getUserAvatarURL(t.target_user) : O(t) && null != t.inviter ? d.ZP.getUserAvatarURL(t.inviter) : null, [t, n]), o = m.intl.string(m.t["3rE1Pz"]);
+  if (j(t)) {
     var c, u;
     o = (null == (c = t.channel) ? true : c.name) != null && (null == (u = t.inviter) ? true : u.username) != null ? m.intl.format(m.t.Lu4h19, {
       username: t.inviter.username
     }) : m.intl.string(m.t.OsdY8P)
   } else E(t) && null != t.target_user ? o = m.intl.formatToPlainString(m.t.x2L32d, {
     username: t.target_user.username
-  }) : I(t) ? o = m.intl.string(m.t["FDsl+P"]) : y(t) && null != t.inviter && (o = m.intl.format(m.t.spU2mJ, {
+  }) : I(t) ? o = m.intl.string(m.t["FDsl+P"]) : O(t) && null != t.inviter && (o = m.intl.format(m.t.spU2mJ, {
     username: h.ZP.getFormattedName(t.inviter)
   }));
   return (0, r.jsxs)("div", {

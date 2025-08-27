@@ -25,7 +25,7 @@ function x(e) {
     setSlide: l,
     ready: x,
     token: v
-  } = e, [E, b] = i.useState(false), [j, I] = i.useState(null), [N, y] = i.useState(null), [O, S] = i.useState(""), C = i.useRef(null);
+  } = e, [E, j] = i.useState(false), [b, I] = i.useState(null), [N, O] = i.useState(null), [y, S] = i.useState(""), C = i.useRef(null);
   return i.useEffect(() => {
     if (x) {
       var e;
@@ -49,9 +49,9 @@ function x(e) {
         label: g.intl.string(g.t["8dM4FB"]),
         setRef: C,
         className: _.marginBottom20,
-        value: O,
+        value: y,
         onChange: S,
-        error: j,
+        error: b,
         autoComplete: "new-password",
         maxLength: 72,
         placeholder: g.intl.string(g.t["yY/PXV"])
@@ -59,15 +59,15 @@ function x(e) {
         className: _.marginTop8,
         onClick: () => {
           if (!E) {
-            if (0 === O.length) {
+            if (0 === y.length) {
               I(g.intl.string(g.t.R98xDw)), d.S.dispatch(p.CkL.WAVE_EMPHASIZE);
               return
             }
-            return null != N && y(null), null != j && I(null), t(""), b(true), h.Z.post({
+            return null != N && O(null), null != b && I(null), t(""), j(true), h.Z.post({
               url: p.ANM.ACCOUNT_REVERT,
               body: {
                 token: v,
-                password: O
+                password: y
               },
               trackedActionData: {
                 event: s.NetworkActionNames.ACCOUNT_REVERT
@@ -81,12 +81,12 @@ function x(e) {
               } = e;
               S(""), t(n), l(f.n.SUCCESS)
             }).catch(e => {
-              if (e instanceof Error) y(g.intl.formatToPlainString(g.t.aTVNen, {
+              if (e instanceof Error) O(g.intl.formatToPlainString(g.t.aTVNen, {
                 statusPageURL: p.yXt.STATUS
               }));
               else {
                 let t = new c.Z(e);
-                t.hasFieldErrors() ? I(t.getAnyErrorMessage()) : y((function(e) {
+                t.hasFieldErrors() ? I(t.getAnyErrorMessage()) : O((function(e) {
                   switch (e) {
                     case p.evJ.ACCOUNT_REVERT_INVALID_TOKEN:
                       return g.intl.string(g.t["11zzGR"]);
@@ -103,7 +103,7 @@ function x(e) {
               }
               d.S.dispatch(p.CkL.WAVE_EMPHASIZE)
             }).finally(() => {
-              b(false)
+              j(false)
             })
           }
         },

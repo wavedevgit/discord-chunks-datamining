@@ -477,16 +477,16 @@ class eu extends(r = Chunk647438.PureComponent) {
       apiErrors: {
         email: v,
         username: E,
-        global_name: b,
-        password: j,
+        global_name: j,
+        password: b,
         date_of_birth: N
       } = {}
     } = this.state, {
-      consentRequired: y,
+      consentRequired: O,
       authBoxClassName: S,
       hasLoggedInAccounts: C
     } = this.props, A = this.renderErrorMessage(), Z = (0, i.jsx)(f.ua7, {
-      text: !c && y ? en.intl.string(en.t.AY4IVF) : null,
+      text: !c && O ? en.intl.string(en.t.AY4IVF) : null,
       children: e => (0, i.jsx)("div", es(eo({
         className: ei.marginTop20
       }, e), {
@@ -539,7 +539,7 @@ class eu extends(r = Chunk647438.PureComponent) {
         onChange: e => this.setState({
           globalName: e
         }),
-        error: ec(b),
+        error: ec(j),
         maxLength: et.hy,
         autoComplete: "off",
         setRef: e => {
@@ -593,7 +593,7 @@ class eu extends(r = Chunk647438.PureComponent) {
           password: e,
           passwordClientError: 0 === e.length ? en.intl.string(en.t.EkokLy) : null
         }),
-        error: null != g ? g : ec(j),
+        error: null != g ? g : ec(b),
         type: "password",
         autoComplete: "new-password",
         setRef: e => {
@@ -613,7 +613,7 @@ class eu extends(r = Chunk647438.PureComponent) {
         required: true,
         onFocus: this.trackInputFocus,
         onBlur: this.trackInputBlur
-      }), (0, i.jsx)(O.Z, {}), this.renderConsentComponent(), Z, A, $.a ? null : (0, i.jsx)(I.zx, {
+      }), (0, i.jsx)(y.Z, {}), this.renderConsentComponent(), Z, A, $.a ? null : (0, i.jsx)(I.zx, {
         look: I.zx.Looks.LINK,
         color: I.zx.Colors.LINK,
         onClick: this.handleGotoLogin,

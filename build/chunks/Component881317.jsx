@@ -1,7 +1,7 @@
 /** Chunk was on 27978 **/
 /** chunk id: 881317, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => O
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk884110 = require("./884110.js"),
   Chunk197571 = require("./197571.js");
 
-function b(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -41,7 +41,7 @@ function b(e) {
   return e
 }
 
-function j(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -74,7 +74,7 @@ let I = {
         let {
           default: e
         } = await n.e("94566").then(n.bind(n, 965072));
-        return n => (0, r.jsx)(e, j(b({}, n), {
+        return n => (0, r.jsx)(e, b(j({}, n), {
           onFormSubmit: o,
           onResend: t,
           onSuccess: a,
@@ -92,7 +92,7 @@ let I = {
         let {
           default: e
         } = await n.e("93288").then(n.bind(n, 396410));
-        return t => (0, r.jsx)(e, j(b({}, t), {
+        return t => (0, r.jsx)(e, b(j({}, t), {
           onSuccess: o,
           headerText: x.intl.string(x.t.ZLRYGR),
           confirmButtonText: x.intl.string(x.t.PDTjLC)
@@ -107,8 +107,8 @@ let I = {
       })]
     })
   },
-  y = () => {
-    let [e, t] = Chunk647438.useState(true), [n, l] = Chunk647438.useState([]), h = (0, Chunk442837.e7)([Chunk314897.default], () => Chunk314897.default.isAuthenticated()), f = (0, Chunk442837.e7)([Chunk353926.Z], () => Chunk353926.Z.hasLoadedExperiments), b = () => {
+  O = () => {
+    let [e, t] = Chunk647438.useState(true), [n, l] = Chunk647438.useState([]), h = (0, Chunk442837.e7)([Chunk314897.default], () => Chunk314897.default.isAuthenticated()), f = (0, Chunk442837.e7)([Chunk353926.Z], () => Chunk353926.Z.hasLoadedExperiments), j = () => {
       (0, Chunk185625.Jj)().then(e => {
         let {
           body: {
@@ -123,7 +123,7 @@ let I = {
     return Chunk647438.useEffect(() => {
       Chunk82554 ? (exports(true), Chunk232567.k({
         withAnalyticsToken: true
-      }).then(() => b()).catch(() => exports(false))) : b()
+      }).then(() => j()).catch(() => exports(false))) : j()
     }, [Chunk82554]), Chunk647438.useEffect(() => {
       (async () => {
         Chunk726521 || (await Chunk893776.Z.getLocationMetadata(), Chunk893776.Z.getExperiments())

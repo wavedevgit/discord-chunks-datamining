@@ -42,12 +42,12 @@ function x(e) {
       loginStatus: p.default.getLoginStatus()
     })),
     {
-      location: b,
-      redirectTo: j
+      location: j,
+      redirectTo: b
     } = e,
     [I, N] = i.useState(v);
 
-  function y(e) {
+  function O(e) {
     let {
       handoffKey: t,
       handoffToken: n,
@@ -60,20 +60,20 @@ function x(e) {
     }), N(false)
   }
   return ((0, u.ZP)(() => {
-    if (null != b) {
+    if (null != j) {
       let {
         handoff_key: e,
         handoff_token: t
-      } = (0, l.parse)(b.search);
+      } = (0, l.parse)(j.search);
       if (null != e && null != t) {
-        let n = null != j ? (0, d.L)(j) : true;
+        let n = null != b ? (0, d.L)(b) : true;
         I ? a.Z.logout("handoff", null).finally(() => {
-          y({
+          O({
             handoffKey: e,
             handoffToken: t,
             handoffSource: n
           })
-        }) : y({
+        }) : O({
           handoffKey: e,
           handoffToken: t,
           handoffSource: n

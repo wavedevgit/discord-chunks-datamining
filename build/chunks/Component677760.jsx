@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk271922 = require("./271922.js");
 
-function y(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -45,7 +45,7 @@ function y(e) {
   return e
 }
 
-function O(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -69,18 +69,18 @@ let C = e => {
   if (null == e || null == e.state || t) return 0;
   let n = e.state;
   switch (n) {
-    case j.r2o.RESOLVED:
-    case j.r2o.ACCEPTED:
-    case j.r2o.APP_NOT_OPENED:
-    case j.r2o.APP_OPENED:
-    case j.r2o.ACCEPTING:
-    case j.r2o.APP_OPENING:
+    case b.r2o.RESOLVED:
+    case b.r2o.ACCEPTED:
+    case b.r2o.APP_NOT_OPENED:
+    case b.r2o.APP_OPENED:
+    case b.r2o.ACCEPTING:
+    case b.r2o.APP_OPENING:
       return 1;
-    case j.r2o.EXPIRED:
-    case j.r2o.BANNED:
-    case j.r2o.ERROR:
+    case b.r2o.EXPIRED:
+    case b.r2o.BANNED:
+    case b.r2o.ERROR:
       return 2;
-    case j.r2o.RESOLVING:
+    case b.r2o.RESOLVING:
       return 0;
     default:
       (0, _.vE)(n)
@@ -92,7 +92,7 @@ function A(e) {
     invite: t,
     onAcceptInvite: n
   } = e;
-  return (null == t ? true : t.state) === j.r2o.BANNED ? (0, r.jsx)(c.u, {
+  return (null == t ? true : t.state) === b.r2o.BANNED ? (0, r.jsx)(c.u, {
     text: I.intl.string(I.t["5AkWAQ"]),
     buttonCta: I.intl.string(I.t["8osdkp"]),
     onClick: n
@@ -155,11 +155,11 @@ function T(e) {
   let {
     invite: t
   } = e;
-  return null != t && (0, v.JI)(t) ? (0, r.jsx)(Z, O(y({
+  return null != t && (0, v.JI)(t) ? (0, r.jsx)(Z, y(O({
     startAnimHeightPx: 0,
     innerStyle: () => N.guildInfoInner
   }, e), {
-    children: e => null == t ? null : 1 === e ? (0, r.jsx)(b.X, {
+    children: e => null == t ? null : 1 === e ? (0, r.jsx)(j.X, {
       invite: t
     }) : null
   })) : null
@@ -173,7 +173,7 @@ function P(e) {
     2: N.inviteCardInnerError,
     0: N.inviteCardInnerLoading
   };
-  return (0, r.jsx)(Z, O(y({
+  return (0, r.jsx)(Z, y(O({
     startAnimHeightPx: 200,
     innerStyle: e => n[e]
   }, e), {
@@ -181,11 +181,11 @@ function P(e) {
       if (null == t) return (0, r.jsx)(S, {});
       switch (n) {
         case 1:
-          return (0, r.jsx)(E.Z, O(y({}, e), {
+          return (0, r.jsx)(E.Z, y(O({}, e), {
             invite: t
           }));
         case 2:
-          return (0, r.jsx)(A, O(y({}, e), {
+          return (0, r.jsx)(A, y(O({}, e), {
             invite: t
           }));
         default:
@@ -210,13 +210,13 @@ function R(e) {
     null != e && (l.backgroundImage = "url(".concat(e, ")"), l.backgroundSize = "cover")
   }
   return (0, r.jsxs)(d.ZP, {
-    theme: j.BRd.DARK,
+    theme: b.BRd.DARK,
     className: N.splashBackground,
     style: l,
     contentClassName: N.centerAuthBoxContent,
-    children: [(0, r.jsx)(P, O(y({}, e), {
+    children: [(0, r.jsx)(P, y(O({}, e), {
       onAcceptInvite: n
-    })), (0, r.jsx)(T, y({}, e))]
+    })), (0, r.jsx)(T, O({}, e))]
   })
 }
 
@@ -228,7 +228,7 @@ function w(e) {
   return i.useEffect(() => {
     (0, h.e)("invite_mobile")
   }, []), i.useEffect(() => {
-    null != l && l.state === j.r2o.RESOLVED && g.default.track(j.rMx.INVITE_VIEWED, {
+    null != l && l.state === b.r2o.RESOLVED && g.default.track(b.rMx.INVITE_VIEWED, {
       invite_code: t,
       friends_count: null == l ? true : l.friends_count
     }, {
@@ -239,13 +239,13 @@ function w(e) {
     onAcceptInvite: e => {
       ! function(e, t, n) {
         var r, i, l;
-        null == e || e.preventDefault(), g.default.track(j.rMx.INVITE_APP_OPENED, {
+        null == e || e.preventDefault(), g.default.track(b.rMx.INVITE_APP_OPENED, {
           invite_code: (0, x.jX)(t),
           guild_id: null == n || null == (r = n.guild) ? true : r.id,
           channel_id: null == n || null == (i = n.channel) ? true : i.id,
           inviter_id: null == n || null == (l = n.inviter) ? true : l.id
         });
-        let o = null != n && n.state !== j.r2o.EXPIRED && n.state !== j.r2o.BANNED ? t : true,
+        let o = null != n && n.state !== b.r2o.EXPIRED && n.state !== b.r2o.BANNED ? t : true,
           s = f.default.getFingerprint(),
           c = null != s ? s : f.default.getId(),
           u = null != n && (null == n ? true : n.type) != null ? Number(null == n ? true : n.type) : true;

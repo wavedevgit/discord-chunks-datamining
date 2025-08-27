@@ -112,7 +112,7 @@ class H extends Chunk647438.PureComponent {
         channel: e
       } = t;
       if (null != e)
-        if ((0, b.c)(k.M5.INVITE_UNCLAIMED), null != t.guild) {
+        if ((0, j.c)(k.M5.INVITE_UNCLAIMED), null != t.guild) {
           var o, c, u;
           let e = (0, C.yE)(null != (u = t.flags) ? u : 0, s.$.IS_APPLICATION_BYPASS),
             n = (null == (o = t.guild.features) ? true : o.includes(L.oNc.MEMBER_VERIFICATION_GATE_ENABLED)) && (null == (c = t.guild.features) ? true : c.includes(L.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL));
@@ -358,10 +358,10 @@ let W = Chunk442837.ZP.connectStores([Chunk701190.Z, Chunk896797.Z, Chunk314897.
     inviteKey: n
   } = e;
   return {
-    invite: null != (t = O.Z.getInvite(n)) ? t : {},
+    invite: null != (t = y.Z.getInvite(n)) ? t : {},
     nativeAppState: x.Z.getState(n),
     authenticated: N.default.isAuthenticated(),
-    defaultRoute: y.Z.defaultRoute,
+    defaultRoute: O.Z.defaultRoute,
     isUnderage: f.Z.isUnderageAnonymous()
   }
 })(H)

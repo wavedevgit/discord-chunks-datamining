@@ -1,7 +1,7 @@
 /** Chunk was on 27978 **/
 /** chunk id: 822699, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => eO
+  default: () => ey
 }), require("./35282.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -108,11 +108,11 @@ let el = (0, Chunk320830.Z)(Chunk781428.Z),
   ex = (0, Chunk320830.Z)(Chunk761305.Z),
   ev = (0, Chunk320830.Z)(Chunk637776.Z),
   eE = (0, Chunk320830.Z)(Chunk73906.Z),
-  eb = (0, Chunk320830.Z)(Chunk649156.Z),
-  ej = (0, Chunk320830.Z)(Chunk881317.Z),
+  ej = (0, Chunk320830.Z)(Chunk649156.Z),
+  eb = (0, Chunk320830.Z)(Chunk881317.Z),
   eI = (0, Chunk320830.Z)(Chunk424044.Z),
   eN = (0, Chunk320830.Z)(Chunk521379.Z);
-class ey extends Chunk647438.PureComponent {
+class eO extends Chunk647438.PureComponent {
   static getDerivedStateFromProps(e, t) {
     var n;
     let {
@@ -324,7 +324,7 @@ class ey extends Chunk647438.PureComponent {
         }, e))
       }), (0, Chunk951288.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.PICK_GUILD_SETTINGS(":section?", ":subsection?"),
-        render: e => (0, r.jsx)(eb, er({}, e))
+        render: e => (0, r.jsx)(ej, er({}, e))
       }), (0, Chunk951288.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.CHANNEL(Chunk893607.Hw.guildId(), Chunk893607.Hw.channelId({
           optional: true
@@ -332,7 +332,7 @@ class ey extends Chunk647438.PureComponent {
         render: e => (0, r.jsx)(eE, er({}, e))
       }), (0, Chunk951288.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.REPORT,
-        render: e => (0, r.jsx)(ej, er({}, e))
+        render: e => (0, r.jsx)(eb, er({}, e))
       }), (0, Chunk951288.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.REPORT_SECOND_LOOK,
         render: e => (0, r.jsx)(eI, er({}, e))
@@ -350,7 +350,7 @@ class ey extends Chunk647438.PureComponent {
     })
   }
 }
-let eO = Chunk442837.ZP.connectStores([Chunk314897.default, Chunk701190.Z, Chunk82142.Z, Chunk353926.Z, Chunk409059.Z], e => {
+let ey = Chunk442837.ZP.connectStores([Chunk314897.default, Chunk701190.Z, Chunk82142.Z, Chunk353926.Z, Chunk409059.Z], e => {
   var t, n, r;
   let {
     match: i,
@@ -358,7 +358,7 @@ let eO = Chunk442837.ZP.connectStores([Chunk314897.default, Chunk701190.Z, Chunk
   } = e, o = null == i || null == (t = i.params) ? true : t.inviteCode, s = ee.a ? ee.Y : true, a = null != o ? (0, I.mb)(o, l.search) : s, c = null == i || null == (n = i.params) ? true : n.giftCode, u = null == i || null == (r = i.params) ? true : r.guildTemplateCode;
   return {
     inviteKey: a,
-    isAuthenticated: O.default.isAuthenticated(),
+    isAuthenticated: y.default.isAuthenticated(),
     giftCode: c,
     guildTemplateCode: u,
     gift: null != c ? S.Z.get(c) : null,
@@ -366,4 +366,4 @@ let eO = Chunk442837.ZP.connectStores([Chunk314897.default, Chunk701190.Z, Chunk
     guildTemplate: null != u ? E.Z.getGuildTemplate(u) : null,
     hasLoadedExperiments: v.Z.hasLoadedExperiments
   }
-})(ey)
+})(eO)
