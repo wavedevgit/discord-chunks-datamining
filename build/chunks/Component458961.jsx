@@ -33,7 +33,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk923400 = require("./923400.js"),
   Chunk623488 = require("./623488.jsx"),
   Chunk152980 = require("./152980.jsx"),
-  Chunk120651 = require("./120651.jsx"),
+  Chunk809659 = require("./809659.jsx"),
   Chunk871388 = require("./871388.jsx"),
   Chunk412110 = require("./412110.jsx"),
   Chunk513669 = require("./513669.jsx"),
@@ -251,7 +251,7 @@ function _(e) {
   }, [eW, _, ei]), r.useEffect(() => {
     eH && eY(true)
   }, [eH]);
-  let e3 = r.useRef(null);
+  let e9 = r.useRef(null);
   return (0, n.jsxs)(g.Y0X, {
     transitionState: eA,
     size: g.CgR.DYNAMIC,
@@ -287,7 +287,7 @@ function _(e) {
       children: [(0, n.jsx)(g.zJl, {
         children: (0, n.jsxs)("div", {
           className: L.productFieldsSection,
-          ref: e3,
+          ref: e9,
           children: [(0, n.jsx)(g.xJW, {
             title: B.intl.string(B.t.Hsk7xc),
             tag: "label",
@@ -356,7 +356,7 @@ function _(e) {
             children: (0, n.jsx)(N.s, {
               onFileAdded: () => {
                 var e;
-                null == (e = e3.current) || e.scrollIntoView({
+                null == (e = e9.current) || e.scrollIntoView({
                   behavior: "smooth",
                   block: "end"
                 })
