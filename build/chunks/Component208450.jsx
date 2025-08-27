@@ -71,7 +71,7 @@ class Y extends Chunk647438.PureComponent {
         r = O.g9(e, t);
       v.Z.updateAutocompleteQuery(n, e, r), null != this._editorRef && y.iE(this._editorRef.editor)
     }
-    n !== e.searchContext && v.Z.openSearchScreen(n)
+    n !== e.searchContext && v.Z.initializeAutocomplete(n)
   }
   componentWillUnmount() {
     Chunk585483.S.unsubscribe(Chunk981631.CkL.PERFORM_SEARCH, this.search), Chunk585483.S.unsubscribe(Chunk981631.CkL.SET_SEARCH_QUERY, this.handleSetSearchQuery), Chunk585483.S.unsubscribe(Chunk981631.CkL.FOCUS_SEARCH, this.handleFocusSearch)

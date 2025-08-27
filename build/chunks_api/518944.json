@@ -1,1 +1,0 @@
-{"id":"518944","type":"store","data":{"name":"SearchStore","functions":[{"name":"initialize","args":[]},{"name":"getSelectedSearchContextId","args":[]}],"events":["CONNECTION_OPEN","SEARCH_SCREEN_OPEN","CHANNEL_SELECT"]},"fromModule":{"id":"web.js"}}

@@ -243,11 +243,10 @@ let g = {
       id: t
     })
   },
-  openSearchScreen: function(e) {
+  initializeAutocomplete: function(e) {
     o.Z.dispatch({
-      type: "SEARCH_SCREEN_OPEN",
-      searchContext: e,
-      id: (0, s.Tm)(e)
+      type: "SEARCH_AUTOCOMPLETE_INITIALIZE",
+      searchContext: e
     })
   },
   setShowBlockedResults: function(e, t) {
