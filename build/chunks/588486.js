@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   dR: () => d,
-  qK: () => p
+  qK: () => h
 }), require("./980754.js"), require("./388685.js"), require("./953529.js"), require("./539854.js"), require("./415506.js");
 var Chunk230367 = require("./230367.js"),
   Chunk320215 = require("./320215.js"),
@@ -25,15 +25,18 @@ var Chunk230367 = require("./230367.js"),
     return e[e.FULL = 0] = "FULL", e[e.FORCE_DEFAULT = 1] = "FORCE_DEFAULT", e[e.OVERRIDE_ONLY = 2] = "OVERRIDE_ONLY", e
   }({}),
   p = function(e) {
-    return e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.CONTROL = 1] = "CONTROL", e[e.TREATMENT = 2] = "TREATMENT", e[e.OVERRIDE = 3] = "OVERRIDE", e
+    return e[e.DEFAULT = 0] = "DEFAULT", e[e.HOLDOUT = 1] = "HOLDOUT", e
   }({}),
   h = function(e) {
-    return e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.ACTIVE = 1] = "ACTIVE", e[e.UNUSED = 2] = "UNUSED", e[e.BURNED = 3] = "BURNED", e
+    return e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.CONTROL = 1] = "CONTROL", e[e.TREATMENT = 2] = "TREATMENT", e[e.OVERRIDE = 3] = "OVERRIDE", e
   }({}),
   m = function(e) {
+    return e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.ACTIVE = 1] = "ACTIVE", e[e.UNUSED = 2] = "UNUSED", e[e.BURNED = 3] = "BURNED", e
+  }({}),
+  g = function(e) {
     return e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.DRAFT = 1] = "DRAFT", e[e.MEASUREMENT = 2] = "MEASUREMENT", e[e.MEASUREMENT_ENDED = 3] = "MEASUREMENT_ENDED", e[e.ROLLING_OUT = 4] = "ROLLING_OUT", e[e.ROLLED_OUT = 5] = "ROLLED_OUT", e[e.ARCHIVED = 6] = "ARCHIVED", e[e.AA_MODE = 7] = "AA_MODE", e
   }({});
-class g extends Chunk495852.C {
+class E extends Chunk495852.C {
   create(e) {
     let t = {
       id: "0",
@@ -55,7 +58,9 @@ class g extends Chunk495852.C {
       exposureTracking: 0,
       assignmentMode: 0,
       enableEditRawJsonUi: false,
-      winningVariationId: 0
+      winningVariationId: 0,
+      type: 0,
+      isTemplate: false
     };
     return globalThis.Object.defineProperty(t, o.C, {
       enumerable: false,
@@ -111,7 +116,7 @@ class g extends Chunk495852.C {
           o.unitType = e.int32();
           break;
         case 15:
-          o.variations.push(b.internalBinaryRead(e, e.uint32(), n));
+          o.variations.push(y.internalBinaryRead(e, e.uint32(), n));
           break;
         case 16:
           o.rules.push(s.$9.internalBinaryRead(e, e.uint32(), n));
@@ -142,6 +147,12 @@ class g extends Chunk495852.C {
         case 24:
           o.winningVariationId = e.int32();
           break;
+        case 26:
+          o.type = e.int32();
+          break;
+        case 27:
+          o.isTemplate = e.bool();
+          break;
         default:
           let a = n.readUnknownField;
           if ("throw" === a) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(i, ") for ").concat(this.typeName));
@@ -153,14 +164,14 @@ class g extends Chunk495852.C {
   }
   internalBinaryWrite(e, t, n) {
     "0" !== e.id && t.tag(1, r.TD.Bit64).fixed64(e.id), "" !== e.name && t.tag(2, r.TD.LengthDelimited).string(e.name), e.createdAt && c.E.internalBinaryWrite(e.createdAt, t.tag(3, r.TD.LengthDelimited).fork(), n).join(), "0" !== e.creatorId && t.tag(4, r.TD.Bit64).fixed64(e.creatorId), 0 !== e.version && t.tag(5, r.TD.Varint).int32(e.version), e.editedAt && c.E.internalBinaryWrite(e.editedAt, t.tag(6, r.TD.LengthDelimited).fork(), n).join(), "0" !== e.editorId && t.tag(7, r.TD.Bit64).fixed64(e.editorId), "" !== e.title && t.tag(8, r.TD.LengthDelimited).string(e.title), "" !== e.description && t.tag(9, r.TD.LengthDelimited).string(e.description), e.hypothesis && l.Gm.internalBinaryWrite(e.hypothesis, t.tag(10, r.TD.LengthDelimited).fork(), n).join(), e.techSpecLink && l.Gm.internalBinaryWrite(e.techSpecLink, t.tag(11, r.TD.LengthDelimited).fork(), n).join(), 0 !== e.revision && t.tag(12, r.TD.Varint).int32(e.revision), "" !== e.hashKey && t.tag(13, r.TD.LengthDelimited).string(e.hashKey), 0 !== e.unitType && t.tag(14, r.TD.Varint).int32(e.unitType);
-    for (let i = 0; i < e.variations.length; i++) b.internalBinaryWrite(e.variations[i], t.tag(15, r.TD.LengthDelimited).fork(), n).join();
+    for (let i = 0; i < e.variations.length; i++) y.internalBinaryWrite(e.variations[i], t.tag(15, r.TD.LengthDelimited).fork(), n).join();
     for (let i = 0; i < e.rules.length; i++) s.$9.internalBinaryWrite(e.rules[i], t.tag(16, r.TD.LengthDelimited).fork(), n).join();
     if (0 !== e.phase && t.tag(18, r.TD.Varint).int32(e.phase), e.surfaces.length) {
       t.tag(19, r.TD.LengthDelimited).fork();
       for (let n = 0; n < e.surfaces.length; n++) t.int32(e.surfaces[n]);
       t.join()
     }
-    "" !== e.owningTeamName && t.tag(20, r.TD.LengthDelimited).string(e.owningTeamName), "0" !== e.cachedNotificationChannelId && t.tag(21, r.TD.Bit64).fixed64(e.cachedNotificationChannelId), 0 !== e.exposureTracking && t.tag(22, r.TD.Varint).int32(e.exposureTracking), 0 !== e.assignmentMode && t.tag(25, r.TD.Varint).int32(e.assignmentMode), false !== e.enableEditRawJsonUi && t.tag(23, r.TD.Varint).bool(e.enableEditRawJsonUi), 0 !== e.winningVariationId && t.tag(24, r.TD.Varint).int32(e.winningVariationId);
+    "" !== e.owningTeamName && t.tag(20, r.TD.LengthDelimited).string(e.owningTeamName), "0" !== e.cachedNotificationChannelId && t.tag(21, r.TD.Bit64).fixed64(e.cachedNotificationChannelId), 0 !== e.exposureTracking && t.tag(22, r.TD.Varint).int32(e.exposureTracking), 0 !== e.assignmentMode && t.tag(25, r.TD.Varint).int32(e.assignmentMode), false !== e.enableEditRawJsonUi && t.tag(23, r.TD.Varint).bool(e.enableEditRawJsonUi), 0 !== e.winningVariationId && t.tag(24, r.TD.Varint).int32(e.winningVariationId), 0 !== e.type && t.tag(26, r.TD.Varint).int32(e.type), false !== e.isTemplate && t.tag(27, r.TD.Varint).bool(e.isTemplate);
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.z.onWrite : i)(this.typeName, e, t), t
   }
@@ -240,7 +251,7 @@ class g extends Chunk495852.C {
       name: "variations",
       kind: "message",
       repeat: 1,
-      T: () => b
+      T: () => y
     }, {
       no: 16,
       name: "rules",
@@ -251,7 +262,7 @@ class g extends Chunk495852.C {
       no: 18,
       name: "phase",
       kind: "enum",
-      T: () => ["discord_protos.discord_experimentation.v1.Phase", m]
+      T: () => ["discord_protos.discord_experimentation.v1.Phase", g]
     }, {
       no: 19,
       name: "surfaces",
@@ -288,11 +299,21 @@ class g extends Chunk495852.C {
       name: "winning_variation_id",
       kind: "scalar",
       T: 5
+    }, {
+      no: 26,
+      name: "type",
+      kind: "enum",
+      T: () => ["discord_protos.discord_experimentation.v1.Experiment.Type", p]
+    }, {
+      no: 27,
+      name: "is_template",
+      kind: "scalar",
+      T: 8
     }])
   }
 }
-new g;
-class E extends Chunk495852.C {
+new E;
+class b extends Chunk495852.C {
   create(e) {
     let t = {
       id: 0,
@@ -322,7 +343,7 @@ class E extends Chunk495852.C {
           o.targetAllocation = e.int32();
           break;
         case 4:
-          o.buckets.push(O.internalBinaryRead(e, e.uint32(), n));
+          o.buckets.push(v.internalBinaryRead(e, e.uint32(), n));
           break;
         case 5:
           o.type = e.int32();
@@ -341,7 +362,7 @@ class E extends Chunk495852.C {
   }
   internalBinaryWrite(e, t, n) {
     0 !== e.id && t.tag(1, r.TD.Varint).int32(e.id), "" !== e.label && t.tag(2, r.TD.LengthDelimited).string(e.label), 0 !== e.targetAllocation && t.tag(3, r.TD.Varint).int32(e.targetAllocation);
-    for (let i = 0; i < e.buckets.length; i++) O.internalBinaryWrite(e.buckets[i], t.tag(4, r.TD.LengthDelimited).fork(), n).join();
+    for (let i = 0; i < e.buckets.length; i++) v.internalBinaryWrite(e.buckets[i], t.tag(4, r.TD.LengthDelimited).fork(), n).join();
     0 !== e.type && t.tag(5, r.TD.Varint).int32(e.type), e.configuration && l.Gm.internalBinaryWrite(e.configuration, t.tag(6, r.TD.LengthDelimited).fork(), n).join();
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.z.onWrite : i)(this.typeName, e, t), t
@@ -367,12 +388,12 @@ class E extends Chunk495852.C {
       name: "buckets",
       kind: "message",
       repeat: 1,
-      T: () => O
+      T: () => v
     }, {
       no: 5,
       name: "type",
       kind: "enum",
-      T: () => ["discord_protos.discord_experimentation.v1.Variation.Type", p]
+      T: () => ["discord_protos.discord_experimentation.v1.Variation.Type", h]
     }, {
       no: 6,
       name: "configuration",
@@ -381,8 +402,8 @@ class E extends Chunk495852.C {
     }])
   }
 }
-let b = new E;
-class y extends Chunk495852.C {
+let y = new b;
+class O extends Chunk495852.C {
   create(e) {
     let t = {
       start: 0,
@@ -438,8 +459,8 @@ class y extends Chunk495852.C {
       no: 3,
       name: "type",
       kind: "enum",
-      T: () => ["discord_protos.discord_experimentation.v1.Bucket.Type", h]
+      T: () => ["discord_protos.discord_experimentation.v1.Bucket.Type", m]
     }])
   }
 }
-let O = new y
+let v = new O
