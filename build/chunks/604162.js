@@ -22,21 +22,21 @@ function u(e) {
 
 function d(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : 2e3,
-    [o, l] = (0, r.useState)(e),
-    a = (0, r.useRef)(null);
+    [o, a] = (0, r.useState)(e),
+    l = (0, r.useRef)(null);
   return (0, r.useEffect)(() => () => {
-    null != a.current && clearTimeout(a.current)
+    null != l.current && clearTimeout(l.current)
   }, [e]), [o, () => {
-    l(t), null != a.current && clearTimeout(a.current), a.current = setTimeout(() => {
-      l(e)
+    a(t), null != l.current && clearTimeout(l.current), l.current = setTimeout(() => {
+      a(e)
     }, n)
   }]
 }
 async function f(e) {
   try {
     var t;
-    let n = (0, a.zO)(e);
-    if (null == n || n.type !== l.g.INVITE) returnfalse;
+    let n = (0, l.zO)(e);
+    if (null == n || n.type !== a.g.INVITE) returnfalse;
     let r = i.Z.getInvite(n.code);
     if (null == r) {
       let {

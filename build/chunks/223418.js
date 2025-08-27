@@ -3,8 +3,8 @@
 require.d(exports, {
   CY: () => i,
   Y1: () => s,
-  rq: () => a
+  rq: () => l
 });
-var r, o, l, a = ((r = {}).PLAYING = "playing", r.PAUSED = "paused", r.ENDED = "ended", r),
+var r, o, a, l = ((r = {}).PLAYING = "playing", r.PAUSED = "paused", r.ENDED = "ended", r),
   i = ((o = {}).ERROR = "ERROR", o.SOURCE_ERROR = "SOURCE_ERROR", o.ABORT = "ABORT", o.EMPTIED = "EMPTIED", o.STALLED = "STALLED", o.SUSPEND = "SUSPEND", o.HLS_NETWORK_ERROR = "HLS_NETWORK_ERROR", o.HLS_MEDIA_ERROR = "HLS_MEDIA_ERROR", o.HLS_MUX_ERROR = "HLS_MUX_ERROR", o.HLS_KEY_SYSTEM_ERROR = "HLS_KEY_SYSTEM_ERROR", o.HLS_OTHER_ERROR = "HLS_OTHER_ERROR", o),
-  s = ((l = {}).PLAYBACK = "k", l.SPACE = " ", l.SEEK_BACK = "j", l.SEEK_FORWARD = "l", l.CAPTION = "c", l.FULLSCREEN = "f", l.MUTE = "m", l)
+  s = ((a = {}).PLAYBACK = "k", a.SPACE = " ", a.SEEK_BACK = "j", a.SEEK_FORWARD = "l", a.CAPTION = "c", a.FULLSCREEN = "f", a.MUTE = "m", a)

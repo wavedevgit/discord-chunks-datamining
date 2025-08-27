@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk754700 = require("./754700.js"),
   Chunk481060 = require("./481060.js"),
   Chunk497505 = require("./497505.js"),
@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk602667 = require("./602667.jsx"),
   Chunk524953 = require("./524953.js");
 
-function m(e) {
+function p(e) {
   let {
     asset: t
   } = e;
@@ -25,7 +25,7 @@ function m(e) {
   })
 }
 
-function p(e) {
+function m(e) {
   let {
     quest: t,
     asset: n,
@@ -51,17 +51,17 @@ function v(e) {
     ctaBtnLabel: t,
     title: n,
     subtitle: o,
-    onCTAClick: l
+    onCTAClick: a
   } = e;
   return (0, r.jsxs)("div", {
     className: f.endScreenCtaContainer,
     children: [(0, r.jsx)(C, {
       title: n,
       subtitle: o
-    }), (0, r.jsx)(E, {
+    }), (0, r.jsx)(g, {
       label: t,
       icon: s.d4D,
-      onClick: l
+      onClick: a
     })]
   })
 }
@@ -85,24 +85,24 @@ function C(e) {
   })
 }
 
-function E(e) {
+function g(e) {
   let {
     label: t,
     icon: n,
-    onClick: l,
+    onClick: a,
     className: i
   } = e, [c, u] = o.useState(false), d = () => {
     u(true)
-  }, m = () => {
+  }, p = () => {
     u(false)
   };
   return (0, r.jsxs)(s.P3F, {
-    className: a()(f.endScreenCtaBtn, f.accentOnHover, i),
+    className: l()(f.endScreenCtaBtn, f.accentOnHover, i),
     onMouseEnter: d,
-    onMouseLeave: m,
+    onMouseLeave: p,
     onFocus: d,
-    onBlur: m,
-    onClick: l,
+    onBlur: p,
+    onClick: a,
     children: [(0, r.jsx)(s.X6q, {
       variant: "heading-md/semibold",
       className: f.endScreenCtaBtnTitle,
@@ -118,25 +118,25 @@ let _ = function(e) {
   let {
     quest: t,
     ctaBtnLabel: n,
-    title: l,
-    subtitle: a,
+    title: a,
+    subtitle: l,
     onCTAClick: s,
     sourceQuestContent: c
   } = e, d = o.useMemo(() => (0, u.z0)(t, i.X.WATCH_VIDEO, u.n1.VIDEO, u.O.THUMBNAIL), [t]);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(m, {
+    children: [(0, r.jsx)(p, {
       asset: d
     }), (0, r.jsx)("div", {
       className: f.endScreenOverlay
     }), (0, r.jsxs)("div", {
       className: f.endScreenContainer,
-      children: [(0, r.jsx)(p, {
+      children: [(0, r.jsx)(m, {
         quest: t,
         asset: d,
         sourceQuestContent: c
       }), (0, r.jsx)(v, {
-        title: l,
-        subtitle: a,
+        title: a,
+        subtitle: l,
         ctaBtnLabel: n,
         onCTAClick: s
       })]

@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk430799 = require("./430799.js");
 
 function i(e) {
@@ -20,7 +20,7 @@ function i(e) {
     height: "40",
     viewBox: "0 0 2 40",
     fill: "none",
-    className: l()(a.verticalDivider, t),
+    className: a()(l.verticalDivider, t),
     children: (0, r.jsx)("path", {
       d: "M1 0V40",
       stroke: n,
