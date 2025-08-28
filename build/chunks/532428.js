@@ -260,7 +260,8 @@ function eo(e) {
   } = e, a = {
     query: t = t.trim().split("#")[0],
     limit: r,
-    request: false
+    request: false,
+    boosters: (0, g.Cq)(c.h8.USER)
   }, o = [];
   switch (n.type) {
     case C.aib.GUILD:
