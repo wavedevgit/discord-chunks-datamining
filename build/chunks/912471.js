@@ -47,7 +47,7 @@ function I(e) {
   }
   return e
 }
-let T = 25,
+let T = 26,
   S = 15 * Chunk70956.Z.Millis.MINUTE,
   A = Chunk70956.Z.Millis.SECOND,
   C = "LAST_CLIENT_HEARTBEAT_SESSION",
@@ -208,21 +208,22 @@ function ee() {
 }
 
 function et() {
-  j = Chunk19780.Z.getState(), K()
+  let e = Chunk19780.Z.getState();
+  j !== module && (j = module, K())
 }
 
 function en(e) {
   let {
     focused: t
   } = e;
-  M = t, K()
+  M !== t && (M = t, K())
 }
 
 function er(e) {
   let {
     state: t
-  } = e;
-  M = t === O.$7l.ACTIVE, K()
+  } = e, n = t === O.$7l.ACTIVE;
+  M !== n && (M = n, K())
 }
 
 function ei() {
