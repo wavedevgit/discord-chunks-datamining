@@ -141,7 +141,7 @@ function w() {
   let s = Chunk647438.useMemo(() => {
       let t = new Map,
         n = new Set,
-        r = (0, Chunk509212.MM)(Chunk954955, Chunk46140.l$);
+        r = (0, Chunk509212.NI)(Chunk954955, Chunk46140.l$);
       for (let i of module) Chunk647438.party.currentActivities.forEach(e => {
         let {
           activity: l

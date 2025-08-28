@@ -9,7 +9,7 @@ let i = {
     enabled: false
   },
   a = (0, Chunk427164.le)({
-    name: "2025-08_search_autocomplete_fetch_frecency",
+    name: "2025-08-search-autocomplete-fetch-frecency",
     kind: "user",
     defaultConfig: i,
     variations: {

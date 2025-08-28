@@ -283,7 +283,7 @@ function W(e) {
   let t = i.useContext(p.h9),
     n = (0, s.e7)([O.Z], () => null != O.Z.questEnrollmentBlockedUntil, []),
     a = (0, s.e7)([O.Z], () => O.Z.quests),
-    o = i.useMemo(() => (0, E.MM)(a, L.Lv), [a]),
+    o = i.useMemo(() => (0, E.NI)(a, L.Lv), [a]),
     l = (0, s.e7)([u.Z], () => u.Z.getParticipants(e.channelId), [e.channelId]),
     c = (0, s.e7)([h.Z], () => null != e.previewQuest ? e.previewQuest : V(l, o, h.Z), [l, o, e.previewQuest]);
   return null == c || n ? null : (0, r.jsx)(A.A, {

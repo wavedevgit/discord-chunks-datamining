@@ -25,8 +25,8 @@ require.d(exports, {
   KM: () => eL,
   Kr: () => eg,
   LM: () => eI,
-  MM: () => tD,
   Mo: () => tx,
+  NI: () => tD,
   Nj: () => eR,
   OG: () => ts,
   PB: () => e5,
@@ -1006,11 +1006,13 @@ function tw(e) {
 function tD(e, t) {
   let n = new Map;
   for (let [r, i] of e)
-    for (let e of tw(i))
-      if (t.has(e)) {
-        n.set(r, i);
-        break
-      } return n
+    if (!ex(i)) {
+      for (let e of tw(i))
+        if (t.has(e)) {
+          n.set(r, i);
+          break
+        }
+    } return n
 }
 
 function tx(e) {
