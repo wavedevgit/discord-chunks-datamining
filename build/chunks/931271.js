@@ -7,10 +7,10 @@ require.d(exports, {
 var Chunk358085 = require("./358085.js"),
   Chunk150248 = require("./150248.js"),
   Chunk691731 = require("./691731.js"),
-  Chunk984211 = require("./984211.js");
+  Chunk984211 = require("./984211.js"),
+  Chunk687131 = require("./687131.js");
 require("./620662.js");
 var Chunk120021 = require("./120021.js"),
-  Chunk742889 = require("./742889.js"),
   Chunk994339 = require("./994339.js"),
   Chunk233487 = require("./233487.js"),
   Chunk981631 = require("./981631.js");
@@ -29,23 +29,29 @@ function f(e) {
   } = e;
   if (p.author.id === _ || !(0, c.Z)(n, p, h.id)) return {
     canJoin: false,
-    isRemoteJoin: false
+    remoteJoinPlatform: null
   };
   let b = (0, o._)(n);
-  return !(0, s.n)(b) || (0, u.y)(b) || (0, a.g)(f, n) || (0, i.H)(p) ? {
+  if (!(0, l.n)(b) || (0, u.y)(b) || (0, a.g)(f, n) || (0, i.H)(p)) return {
     canJoin: false,
-    isRemoteJoin: false
-  } : m && g ? {
+    remoteJoinPlatform: null
+  };
+  if (m && g) return {
     canJoin: true,
-    isRemoteJoin: false
-  } : (null == (t = p.activity) ? true : t.type) === d.mFx.JOIN && null != n && (0, l.K)(n) ? {
+    remoteJoinPlatform: null
+  };
+  if ((null == (t = p.activity) ? true : t.type) === d.mFx.JOIN && null != n) {
+    let e = (0, s.z)(n);
+    if (null != e) return {
+      canJoin: true,
+      remoteJoinPlatform: e
+    }
+  }
+  return r.isPlatformEmbedded && E ? {
     canJoin: true,
-    isRemoteJoin: true
-  } : r.isPlatformEmbedded && E ? {
-    canJoin: true,
-    isRemoteJoin: false
+    remoteJoinPlatform: null
   } : {
     canJoin: false,
-    isRemoteJoin: false
+    remoteJoinPlatform: null
   }
 }

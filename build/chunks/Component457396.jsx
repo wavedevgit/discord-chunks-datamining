@@ -128,13 +128,13 @@ let W = e => {
         showAfterTimestamp: ey.valueOf(),
         cooldownDurationMs: 0
       }),
-      eS = (0, N.Z)({
+      eS = (0, T.Z)({
         location: "NitroTabButton"
       }),
-      eN = (null == ec ? true : ec.trial_id) === V.a7,
-      eT = (0, p.YZ)("NitroTabButton"),
+      eT = (null == ec ? true : ec.trial_id) === V.a7,
+      eN = (0, p.YZ)("NitroTabButton"),
       eP = [];
-    (0, f.Kl)() && (ef && eP.push(o.z.BOGO_2025_NITRO_TAB_BADGE), eS && eP.push(o.z.VOICE_FILTER_EARLY_ACCESS_PREMIUM_TAB_BADGE), ep && eP.push(o.z.Q2_2025_MARKETING_MOMENT_NITRO_TAB_BADGE_V2), eT && eP.push(o.z.CUSTOM_THEMES_PREMIUM_TAB_BADGE));
+    (0, f.Kl)() && (ef && eP.push(o.z.BOGO_2025_NITRO_TAB_BADGE), eS && eP.push(o.z.VOICE_FILTER_EARLY_ACCESS_PREMIUM_TAB_BADGE), ep && eP.push(o.z.Q2_2025_MARKETING_MOMENT_NITRO_TAB_BADGE_V2), eN && eP.push(o.z.CUSTOM_THEMES_PREMIUM_TAB_BADGE));
     let [ej, ex] = (0, g.US)(eP, true, true);
     if (i.useEffect(() => {
         true === q && null != ej && ex(F.L.AUTO_DISMISS)
@@ -147,7 +147,7 @@ let W = e => {
         has_premium: en
       }), null != ej && ex(F.L.USER_DISMISS)
     };
-    if (eE === V.a$.NONE || ep || (E = 7, n = (0, r.jsx)(T.Z, {
+    if (eE === V.a$.NONE || ep || (E = 7, n = (0, r.jsx)(N.Z, {
         className: "",
         startsAt: ey,
         endsAt: ev,
@@ -174,7 +174,7 @@ let W = e => {
       userDiscount: eu,
       isTabSelected: q,
       includesAmountOff: false
-    }), E = 3) : null == ec || eN ? e_ ? (n = (0, r.jsx)(k.l, {
+    }), E = 3) : null == ec || eT ? e_ ? (n = (0, r.jsx)(k.l, {
       isSelected: q,
       onSelect: () => (0, h.Q3)(o.z.REFERRAL_PROGRAM_PREMIUM_TAB_BADGE, {
         dismissAction: F.L.TAKE_ACTION

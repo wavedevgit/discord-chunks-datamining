@@ -26,7 +26,7 @@ let _ = e => {
     children: E
   } = e, {
     analyticsLocations: y
-  } = (0, c.ZP)(s.Z.CHURN_DISCOUNT_POPOVER), [v, I] = (0, u.US)([l.z.CHURN_DISCOUNT_PREMIUM_TAB_COACHMARK], true, true), [C, S] = i.useState(false), N = C && v === l.z.CHURN_DISCOUNT_PREMIUM_TAB_COACHMARK, T = (0, p.W7)(O, h.Xh.PREMIUM_MONTH_TIER_2, _), P = (0, r.jsx)(a.Z, {
+  } = (0, c.ZP)(s.Z.CHURN_DISCOUNT_POPOVER), [v, I] = (0, u.US)([l.z.CHURN_DISCOUNT_PREMIUM_TAB_COACHMARK], true, true), [C, S] = i.useState(false), T = C && v === l.z.CHURN_DISCOUNT_PREMIUM_TAB_COACHMARK, N = (0, p.W7)(O, h.Xh.PREMIUM_MONTH_TIER_2, _), P = (0, r.jsx)(a.Z, {
     targetElementRef: t,
     position: "right",
     align: "top",
@@ -39,7 +39,7 @@ let _ = e => {
       percent: _.discount.amount
     }).toString(),
     body: m.intl.format(m.t["3Q4wCw"], {
-      discountedPrice: T,
+      discountedPrice: N,
       billingPeriod: (0, d.JP)(_.discount.user_usage_limit_interval),
       numMonths: _.discount.user_usage_limit
     }),
@@ -101,6 +101,6 @@ let _ = e => {
     children: [(0, r.jsx)("div", {
       onMouseEnter: () => S(true),
       children: E
-    }), N && P]
+    }), T && P]
   })
 }

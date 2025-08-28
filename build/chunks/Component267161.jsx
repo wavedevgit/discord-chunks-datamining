@@ -101,7 +101,7 @@ function et(e) {
     g = null != f ? f : null == h ? true : h.guild_id,
     m = (0, c.e7)([k.Z], () => k.Z.getGuild(g), [g]),
     b = (0, O.Z)(),
-    _ = (0, T.D)(),
+    _ = (0, N.D)(),
     {
       application: y,
       isFrameInFocusedMode: I
@@ -146,7 +146,7 @@ function et(e) {
   })) : d.pathname.startsWith(z.Z5c.FAMILY_CENTER) && (t = q.intl.string(Q.default.RZqaJi), S = (0, r.jsx)(u.BFJ, {
     size: "xs"
   }));
-  let N = i.useCallback(e => {
+  let T = i.useCallback(e => {
     (0, x.ZN)("fast-travel")
   }, []);
   return null == t || "" === t ? null : (0, r.jsx)(u.ua7, {
@@ -163,7 +163,7 @@ function et(e) {
         [X.fastTravel]: l
       })
     }, e, s), {
-      onClick: l ? N : true,
+      onClick: l ? T : true,
       children: [S, (0, r.jsx)(u.Text, {
         variant: "text-sm/medium",
         lineClamp: 1,
@@ -254,7 +254,7 @@ let ei = Chunk647438.memo(function() {
     Chunk998502.ZP.setMinimumSize(Chunk741764.J, Chunk741764.N)
   }, []);
   let v = (0, Chunk984802.Ll)(),
-    T = (0, Chunk442837.e7)([Chunk451478.Z, Chunk522474.Z], () => (0, Chunk228488.rB)()),
+    N = (0, Chunk442837.e7)([Chunk451478.Z, Chunk522474.Z], () => (0, Chunk228488.rB)()),
     x = function(e) {
       let {
         showBackForwardButtons: t,

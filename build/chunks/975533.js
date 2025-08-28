@@ -162,7 +162,7 @@ let R = {
       onTrigger(e, t) {
         if (!(0, C.I1)(t.shortcut)) return;
         let n = (0, P.Z)();
-        null != n && l.Z.setInputLocked(!N.default.isLocked(n), n)
+        null != n && l.Z.setInputLocked(!T.default.isLocked(n), n)
       },
       keyEvents: {
         keyup: true,

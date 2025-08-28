@@ -503,11 +503,11 @@ function eO(e) {
   let [et, en] = (0, v.ZP)(e => [eo.XN.some(t => e.currentlyShown.has(t.dismissibleContentType)), e.currentlyShownGroup.has(es.R.GUILD_HEADER_TOOLTIPS)], s.X), er = (0, y.Z)(o), ei = (0, p.s9z)(p.JQI), el = (0, c.e7)([Y.Z], () => Y.Z.hasLayers()), ec = (0, c.e7)([G.Z], () => G.Z.shouldShow(em)), eu = (0, R.cT)(n, "GuildSidebar") && g && (null == o ? true : o.premiumProgressBarEnabled) === false && !$.s.isDisallowPopupsSet(), ed = (0, P.Z)(n), ep = (null == o ? true : o.features.has(ea.oNc.HUB)) === true, ef = g && (null == o ? true : o.features.has(ea.oNc.DISCOVERABLE)) === true, eh = (0, E.Q)(), eg = (g || (null == o ? true : o.premiumTier) === ea.Eu4.NONE) && !$.s.isDisallowPopupsSet() && !eh, eb = (0, c.e7)([x.Z, Y.Z], () => null != o && null != Z && g && !Y.Z.hasLayers() && x.Z.shouldShowGuildTemplateDirtyTooltip(n)), eO = (0, c.e7)([V.Z], () => V.Z.getChannel(a)), {
     isPopoutOpen: eE
   } = (0, S.y)(), ey = null != (t = null == o ? true : o.features.has(ea.oNc.COMMUNITY)) && t, ev = J.ZP.isNewUser(Z), eI = U && !ev;
-  (0, N.Z)(o);
+  (0, T.Z)(o);
   let eC = (0, I.Nj)(u.z.PREMIUM_TUTORIAL_SERVER_MENU_TOOLTIP),
     eS = (0, L.Z)(n),
-    eN = (0, T.Z)(n),
-    eT = (0, c.e7)([Q.Z], () => Q.Z.getChannelId()),
+    eT = (0, N.Z)(n),
+    eN = (0, c.e7)([Q.Z], () => Q.Z.getChannelId()),
     eP = (0, c.e7)([q.Z], () => q.Z.desyncedVoiceStatesCount),
     ej = k.Y.useExperiment({
       location: "GuildSidebar"
@@ -524,7 +524,7 @@ function eO(e) {
     selectedChannel: eO,
     selectedVoiceChannelId: h,
     voiceStates: d,
-    rtcConnectedChannelId: eT,
+    rtcConnectedChannelId: eN,
     rtcDesyncedVoiceStatesCount: eP,
     isUnavailable: j,
     user: Z,
@@ -539,7 +539,7 @@ function eO(e) {
     showHubPrivacySettingsTooltip: ep,
     showNewUnreadsBar: ey,
     showMediaChannelUpsell: eS,
-    showTierTemplatesUpsell: eN,
+    showTierTemplatesUpsell: eT,
     isHeaderPopoutOpen: eE,
     enableStudyGroup: w,
     isGuildHeaderDismissibleTooltipShown: en,

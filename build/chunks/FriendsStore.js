@@ -65,7 +65,7 @@ function S(e) {
   }
 }
 
-function N(e) {
+function T(e) {
   return {
     status: b.Z.getStatus(e),
     isMobile: b.Z.isMobileOnline(e),
@@ -74,7 +74,7 @@ function N(e) {
   }
 }
 
-function T(e) {
+function N(e) {
   let t = [];
   return l()(g.ZP.memberOf(e)).map(m.Z.getGuild).sortBy(e => null != e ? e.name.toLowerCase() : null).forEach(e => {
     null != e && t.push(e)
@@ -103,7 +103,7 @@ class j {
           type: r,
           userId: n,
           nickname: _.Z.getNickname(n)
-        }, S(n), N(n), T(n)), {
+        }, S(n), T(n), N(n)), {
           spam: _.Z.isSpam(n),
           ignoredUser: _.Z.isIgnored(n),
           giftIntentType: r === E.OGo.FRIEND && f.Z.isTopAffinityFriendAnniversary({
@@ -127,7 +127,7 @@ class j {
         userId: r,
         applicationId: l,
         nickname: _.Z.getNickname(r)
-      }, S(r), N(r), T(r)), {
+      }, S(r), T(r), N(r)), {
         spam: _.Z.isSpam(r),
         ignoredUser: _.Z.isIgnored(r),
         isGameRelationship: true
@@ -138,7 +138,7 @@ class j {
       userId: e.key,
       type: 99,
       nickname: e.name
-    }, S(e.key), N(e.key), T(e.key))));
+    }, S(e.key), T(e.key), N(e.key))));
     return new j(l().concat(exports, require, Chunk442837))
   }
   clone() {
@@ -224,7 +224,7 @@ function U(e) {
 }
 class G extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk699516.Z, Chunk158776.Z, Chunk594174.default, Chunk430824.Z, Chunk271383.ZP, Chunk199902.Z, Chunk5254.Z, Chunk353926.Z), this.syncWith([Chunk699516.Z], M), this.syncWith([Chunk91896.Z], M), this.syncWith([Chunk5254.Z], M), this.syncWith([Chunk441623.Z], M), this.syncWith([Chunk594174.default], U(S)), this.syncWith([Chunk158776.Z, Chunk199902.Z], U(N)), k()
+    this.waitFor(Chunk699516.Z, Chunk158776.Z, Chunk594174.default, Chunk430824.Z, Chunk271383.ZP, Chunk199902.Z, Chunk5254.Z, Chunk353926.Z), this.syncWith([Chunk699516.Z], M), this.syncWith([Chunk91896.Z], M), this.syncWith([Chunk5254.Z], M), this.syncWith([Chunk441623.Z], M), this.syncWith([Chunk594174.default], U(S)), this.syncWith([Chunk158776.Z, Chunk199902.Z], U(T)), k()
   }
   getState() {
     return {

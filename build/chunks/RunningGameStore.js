@@ -451,7 +451,7 @@ function eG(e) {
       if (e.hidden) return;
       eo.gamesSeen.unshift(ey(e))
     }
-  }), eo.gamesSeen.sort((e, t) => t.lastFocused - e.lastFocused), ex(), w.Z.setRecentGames(eB().map(e => eL(e, e5, A.Z, C.Z))))
+  }), eo.gamesSeen.sort((e, t) => t.lastFocused - e.lastFocused), ex(), w.Z.setRecentGames(eB().map(e => eL(e, e6, A.Z, C.Z))))
 }
 
 function eB() {
@@ -706,7 +706,7 @@ function e8() {
     })
   })
 });
-class e6 extends(i = Chunk442837.ZP.Store) {
+class e5 extends(i = Chunk442837.ZP.Store) {
   initialize() {
     var e, t, n, r, i;
     let a = null != (e = Chunk433517.K.get(Y)) ? module : {
@@ -819,8 +819,8 @@ class e6 extends(i = Chunk442837.ZP.Store) {
     ep.add(null != (t = (0, p.F)(e)) ? t : e)
   }
 }
-B(e6, "displayName", "RunningGameStore");
-let e5 = new e6(Chunk570140.Z, {
+B(e5, "displayName", "RunningGameStore");
+let e6 = new e5(Chunk570140.Z, {
     ROBLOX_SUBGAME_UPDATE: eF,
     ROBLOX_SUBGAME_APPLICATION_FETCH_SUCCESS: eF,
     RUNNING_GAMES_CHANGE: eV,
@@ -841,4 +841,4 @@ let e5 = new e6(Chunk570140.Z, {
     GAME_DETECTION_DEBUGGING_STOP: eJ,
     GAME_DETECTION_DEBUGGING_TICK: e$
   }),
-  e7 = e5
+  e7 = e6

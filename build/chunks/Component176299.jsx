@@ -179,57 +179,57 @@ let eZ = (0, Chunk608787.Un)({
     });
     (0, en.WF)(a) && (0, en.WF)(c) || (null != u && (0, eo.uL)(eS.Z5c.CHANNEL(u.id, (0, er.Z)(u))), (0, W.V)());
     let h = (0, j.C4)(l, "channel_renderer");
-    if (null != l && null != a && (0, eN.AB)(a)) switch (a) {
-      case eN.oC.ROLE_SUBSCRIPTIONS:
+    if (null != l && null != a && (0, eT.AB)(a)) switch (a) {
+      case eT.oC.ROLE_SUBSCRIPTIONS:
         return h ? (0, r.jsx)(eL, {
           guildId: l,
           initialTab: x.y.GUILD_ROLE_SUBSCRIPTIONS
         }) : (0, r.jsx)(G.Z, {
           guildId: l
         });
-      case eN.oC.SERVER_MONETIZATION_ONBOARDING:
+      case eT.oC.SERVER_MONETIZATION_ONBOARDING:
         return (0, r.jsx)(eR, {
           guildId: l
         });
-      case eN.oC.GUILD_SHOP:
+      case eT.oC.GUILD_SHOP:
         return (0, r.jsx)(eL, {
           guildId: l,
           productId: o,
           initialTab: f
         });
-      case eN.oC.MEMBER_APPLICATIONS:
+      case eT.oC.MEMBER_APPLICATIONS:
         return (0, r.jsx)(s.l_, {
-          to: eS.Z5c.CHANNEL(l, eN.oC.MEMBER_SAFETY)
+          to: eS.Z5c.CHANNEL(l, eT.oC.MEMBER_SAFETY)
         });
-      case eN.oC.GUILD_HOME:
+      case eT.oC.GUILD_HOME:
         return (0, r.jsx)(eD, {
           guildId: l
         });
-      case eN.oC.CHANNEL_BROWSER:
+      case eT.oC.CHANNEL_BROWSER:
         return (0, r.jsx)(eM, {
           guildId: l,
           selectedSection: eP.l7.BROWSE
         });
-      case eN.oC.GUILD_ONBOARDING:
+      case eT.oC.GUILD_ONBOARDING:
         return (0, r.jsx)(eU, {
           guildId: l
         });
-      case eN.oC.CUSTOMIZE_COMMUNITY:
+      case eT.oC.CUSTOMIZE_COMMUNITY:
         return (0, r.jsx)(eM, {
           guildId: l,
           selectedSection: eP.l7.CUSTOMIZE
         });
-      case eN.oC.MEMBER_SAFETY:
+      case eT.oC.MEMBER_SAFETY:
         return (0, r.jsx)(ek, {
           guildId: l
         });
-      case eN.oC.GUILD_BOOSTS:
+      case eT.oC.GUILD_BOOSTS:
         var g;
         return (0, r.jsx)(eG, {
           guildId: l,
           powerupListingId: null != (g = n.get("powerupId")) ? g : n.get("powerupSkuId")
         });
-      case eN.oC.REPORT_TO_MOD:
+      case eT.oC.REPORT_TO_MOD:
         return (0, r.jsx)(S.Z, {});
       default:
         (0, em.vE)(a)
@@ -305,10 +305,10 @@ let eZ = (0, Chunk608787.Un)({
       let {
         tab: n
       } = (0, o.parse)(t.location.search);
-      return Object.values(eT.AW).includes(n) ? (0, r.jsx)(T.Z, eA({
+      return Object.values(eN.AW).includes(n) ? (0, r.jsx)(N.Z, eA({
         isFullScreen: e,
         tab: n
-      }, t)) : (0, r.jsx)(T.Z, eA({
+      }, t)) : (0, r.jsx)(N.Z, eA({
         isFullScreen: e
       }, t))
     }
@@ -468,7 +468,7 @@ function e3(e) {
         width: e
       })
     }, []),
-    N = (0, O.Z)({
+    T = (0, O.Z)({
       minDimension: ev.li,
       maxDimension: ev.zx,
       resizableDomNodeRef: y,
@@ -478,7 +478,7 @@ function e3(e) {
       orientation: O.y.HORIZONTAL_RIGHT,
       throttleDuration: 0
     }),
-    T = i.useCallback(() => {
+    N = i.useCallback(() => {
       P.useAppSidebarState.setState(e => ({
         isOpen: !e.isOpen
       }))
@@ -519,10 +519,10 @@ function e3(e) {
           })(Object(i)).forEach(function(e) {
             Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(i, e))
           }), t)), (0, r.jsx)(h.P3F, {
-            onClick: T,
+            onClick: N,
             "aria-label": "Resize Sidebar",
             className: ex.sidebarResizeHandle,
-            onMouseDown: N
+            onMouseDown: T
           }), (0, r.jsx)(e_.b, {})]
         })]
       })

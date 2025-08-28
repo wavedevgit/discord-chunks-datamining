@@ -53,7 +53,7 @@ function x(e) {
   var t;
   let {
     quest: n
-  } = e, i = (0, f.B6)(n.config.expiresAt), l = (0, f.B6)(_.r.build(n.config).rewardsExpireAt), a = (0, o.e7)([c.Z], () => c.Z.getState().theme), u = (0, s.wjy)(a) ? N.BRd.DARK : N.BRd.LIGHT, d = (null == (t = n.userStatus) ? true : t.completedAt) != null;
+  } = e, i = (0, f.B6)(n.config.expiresAt), l = (0, f.B6)(_.r.build(n.config).rewardsExpireAt), a = (0, o.e7)([c.Z], () => c.Z.getState().theme), u = (0, s.wjy)(a) ? T.BRd.DARK : T.BRd.LIGHT, d = (null == (t = n.userStatus) ? true : t.completedAt) != null;
   return (0, r.jsxs)("div", {
     className: P.heading,
     children: [(0, r.jsx)("img", {
@@ -65,15 +65,15 @@ function x(e) {
       children: [(0, r.jsx)(s.X6q, {
         variant: "heading-md/semibold",
         color: "header-primary",
-        children: d ? T.intl.string(T.t.XBboAA) : T.intl.formatToPlainString(T.t.EQa7oq, {
+        children: d ? N.intl.string(N.t.XBboAA) : N.intl.formatToPlainString(N.t.EQa7oq, {
           questName: n.config.messages.questName
         })
       }), (0, r.jsx)(s.Text, {
         variant: "text-xs/normal",
         color: "header-secondary",
-        children: d ? T.intl.formatToPlainString(T.t.APddvL, {
+        children: d ? N.intl.formatToPlainString(N.t.APddvL, {
           expirationDate: l
-        }) : T.intl.formatToPlainString(T.t["pX+fmp"], {
+        }) : N.intl.formatToPlainString(N.t["pX+fmp"], {
           expirationDate: i
         })
       })]
@@ -86,7 +86,7 @@ function A(e) {
   let {
     nodeRef: b,
     quest: _
-  } = e, O = (0, u.O5)(), N = (0, o.e7)([h.Z], () => h.Z.isEnrolling(_.id), [_]), A = (0, o.e7)([h.Z], () => null != h.Z.questEnrollmentBlockedUntil, []), [Z, w] = i.useState(false), L = i.useCallback(() => w(true), []), R = i.useCallback(() => w(false), []), D = i.useCallback(e => {
+  } = e, O = (0, u.O5)(), T = (0, o.e7)([h.Z], () => h.Z.isEnrolling(_.id), [_]), A = (0, o.e7)([h.Z], () => null != h.Z.questEnrollmentBlockedUntil, []), [Z, w] = i.useState(false), L = i.useCallback(() => w(true), []), R = i.useCallback(() => w(false), []), D = i.useCallback(e => {
     e.stopPropagation()
   }, []), k = i.useCallback(() => {
     (0, p.AH)(_.id, {
@@ -151,7 +151,7 @@ function A(e) {
         children: e => {
           var t, n;
           return (0, r.jsx)(s.P3F, (t = j({}, e), n = n = {
-            "aria-label": T.intl.string(T.t.DEoVWV),
+            "aria-label": N.intl.string(N.t.DEoVWV),
             children: (0, r.jsx)(s.xhG, {
               size: "md",
               color: "currentColor",
@@ -195,25 +195,25 @@ function A(e) {
         fullWidth: true,
         children: [(0, r.jsx)(s.zxk, {
           variant: "secondary",
-          text: T.intl.string(T.t.LLLLPD),
+          text: N.intl.string(N.t.LLLLPD),
           onClick: U
         }), (0, r.jsx)(s.zxk, {
           variant: "primary",
-          text: T.intl.string(T.t.l7E81t),
+          text: N.intl.string(N.t.l7E81t),
           onClick: k,
-          loading: N
+          loading: T
         })]
       }), V && !H && (0, r.jsx)(s.zxk, {
         variant: "primary",
         size: "sm",
         fullWidth: true,
-        text: T.intl.string(T.t.VN1Ajo),
+        text: N.intl.string(N.t.VN1Ajo),
         onClick: M
       }), H && (0, r.jsx)(s.zxk, {
         variant: "primary",
         size: "sm",
         fullWidth: true,
-        text: T.intl.string(T.t.cfY4PD),
+        text: N.intl.string(N.t.cfY4PD),
         onClick: G
       })]
     })]

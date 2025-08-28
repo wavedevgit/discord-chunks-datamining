@@ -127,7 +127,7 @@ function x(e) {
     value: B,
     children: (0, r.jsx)(d.ua7, {
       targetElementRef: x,
-      text: A ? N.intl.string(N.t["Ox4/zc"]) : Z ? N.intl.string(N.t["+YBKYG"]) : w ? N.intl.string(N.t.X1lQlp) : N.intl.string(N.t["6EJvHh"]),
+      text: A ? T.intl.string(T.t["Ox4/zc"]) : Z ? T.intl.string(T.t["+YBKYG"]) : w ? T.intl.string(T.t.X1lQlp) : T.intl.string(T.t["6EJvHh"]),
       children: e => (0, r.jsx)(d.yRy, {
         targetElementRef: x,
         animation: d.yRy.Animation.FADE,
@@ -154,12 +154,12 @@ function x(e) {
           children: (0, r.jsx)(u.zx, j(P(j(P({
             "data-migration-pending": true
           }, e, t), {
-            className: a()(T.button, T.buttonColor, {
-              [T.greyButtonActive]: R,
-              [T.disabled]: L
+            className: a()(N.button, N.buttonColor, {
+              [N.greyButtonActive]: R,
+              [N.disabled]: L
             }),
-            wrapperClassName: T.button,
-            innerClassName: T.buttonContents,
+            wrapperClassName: N.button,
+            innerClassName: N.buttonContents,
             disabled: L,
             onClick: () => {
               var t;
@@ -178,7 +178,7 @@ function x(e) {
             size: u.zx.Sizes.MEDIUM
           }), l), {
             children: (0, r.jsx)(F, {
-              className: T.buttonIcon,
+              className: N.buttonIcon,
               size: "sm",
               color: "currentColor"
             })

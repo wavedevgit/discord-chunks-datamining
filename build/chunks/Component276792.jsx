@@ -58,8 +58,8 @@ function E(e) {
       content: I,
       renderModalProps: C,
       analyticsLocations: S,
-      analyticsLocation: N,
-      isLightTheme: T
+      analyticsLocation: T,
+      isLightTheme: N
     } = e,
     P = "AnnouncementModalVariant1_".concat(l.z[Number(I.dismissKey)]),
     {
@@ -77,7 +77,7 @@ function E(e) {
       v = () => (0, c.Z)({
         subscriptionTier: h.Si.TIER_1,
         analyticsLocations: S,
-        analyticsObject: O(_({}, N), {
+        analyticsObject: O(_({}, T), {
           object: g.qAy.BUTTON_CTA,
           objectType: g.Qqv.TIER_1
         }),
@@ -92,7 +92,7 @@ function E(e) {
       v = () => (0, c.Z)({
         subscriptionTier: h.Si.TIER_2,
         analyticsLocations: S,
-        analyticsObject: O(_({}, N), {
+        analyticsObject: O(_({}, T), {
           object: g.qAy.BUTTON_CTA,
           objectType: g.Qqv.TIER_2
         }),
@@ -110,7 +110,7 @@ function E(e) {
     }) : true,
     w = {
       type: "video",
-      src: T ? I.heroArtVideoLinkLightTheme : I.videoLink
+      src: N ? I.heroArtVideoLinkLightTheme : I.videoLink
     };
   null != I.heroArtVideoSubtitles && (w.subtitles = I.heroArtVideoSubtitles.map(e => ({
     locale: e.locale,
@@ -118,7 +118,7 @@ function E(e) {
     isDefault: false
   }))), ("" !== I.heroArtImageLinkDarkTheme || "" !== I.heroArtImageLinkLightTheme) && (w = {
     type: "image",
-    src: T ? I.heroArtImageLinkLightTheme : I.heroArtImageLinkDarkTheme
+    src: N ? I.heroArtImageLinkLightTheme : I.heroArtImageLinkDarkTheme
   });
   let L = "" !== I.modalTopPill ? () => (0, r.jsx)(f.mn, {
     text: I.modalTopPill,
@@ -135,7 +135,7 @@ function E(e) {
     featureCards: I.featureCards.map(e => ({
       header: e.header,
       subHeader: e.body,
-      imageSrc: T ? e.imageLinkLightTheme : e.imageLink,
+      imageSrc: N ? e.imageLinkLightTheme : e.imageLink,
       tagText: "" !== e.pill ? e.pill : true
     })),
     changeLogId: P,

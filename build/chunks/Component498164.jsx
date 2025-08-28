@@ -85,10 +85,10 @@ let w = {
       let {
         guildTemplate: i
       } = await _.Z.resolveGuildTemplate(t);
-      if (null == i) throw new T.Z({
+      if (null == i) throw new N.Z({
         errorCode: x.lTL.INVALID_GUILD_TEMPLATE
       }, "Invalid guild template id: ".concat(t));
-      return N.ZP.focus(), (0, a.ZDy)(async () => {
+      return T.ZP.focus(), (0, a.ZDy)(async () => {
         let {
           default: e
         } = await Promise.all([n.e("10778"), n.e("86015")]).then(n.bind(n, 766775));
@@ -127,7 +127,7 @@ let w = {
             let {
               giftCode: l
             } = i;
-            N.ZP.focus(), I.default.track(x.rMx.OPEN_MODAL, {
+            T.ZP.focus(), I.default.track(x.rMx.OPEN_MODAL, {
               type: "gift_accept",
               location: x.SaU
             }), (0, a.ZDy)(async () => {
@@ -140,7 +140,7 @@ let w = {
             }), e({
               giftCode: l
             })
-          }).catch(() => i(new T.Z({
+          }).catch(() => i(new N.Z({
             errorCode: x.lTL.INVALID_GIFT_CODE
           }, "Invalid gift code: ".concat(t))))
         })
@@ -158,7 +158,7 @@ let w = {
           params: n
         }
       } = e;
-      switch (N.ZP.focus(), t) {
+      switch (T.ZP.focus(), t) {
         case j.jE.USER_SETTINGS:
           null != n && ((0, E.dL)(x.Z5c.SETTINGS(n.section, n.subsection)), Z(n.fingerprint, (0, j.O)(t)));
           break;
@@ -280,7 +280,7 @@ let w = {
           fingerprint: n
         }
       } = e;
-      N.ZP.focus(null, true), (0, c.lx)(t, n)
+      T.ZP.focus(null, true), (0, c.lx)(t, n)
     }
   },
   [Chunk981631.Etm.CONNECTIONS_CALLBACK]: {
@@ -295,7 +295,7 @@ let w = {
           state: l
         }
       } = e;
-      if (!y.Z.hasPendingAuthorizedState(l)) throw new T.Z({
+      if (!y.Z.hasPendingAuthorizedState(l)) throw new N.Z({
         errorCode: x.lTL.INVALID_CONNECTION_CALLBACK_STATE
       }, "Provider authorization did not originate from this discord client");
       try {
@@ -306,7 +306,7 @@ let w = {
           state: l
         })
       } catch (e) {
-        if ((null == e ? true : e.status) === 400) throw new T.Z({
+        if ((null == e ? true : e.status) === 400) throw new N.Z({
           errorCode: x.lTL.BAD_REQUEST_FOR_PROVIDER
         }, "Bad request for provider");
         throw C.S.dispatch(x.CkL.CONNECTIONS_CALLBACK_ERROR), e

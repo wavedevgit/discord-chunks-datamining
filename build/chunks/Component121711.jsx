@@ -56,7 +56,7 @@ function K(e) {
     enabled: n
   } = (0, S.WX)({
     location: G.dr.QUEST_HOME_DESKTOP
-  }), l = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), o = (0, s.e7)([T.Z], () => T.Z.isFocused()), {
+  }), l = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), o = (0, s.e7)([N.Z], () => N.Z.isFocused()), {
     ref: c,
     inViewport: d
   } = (0, w.a)(), p = i.useRef(null);
@@ -98,7 +98,7 @@ let q = function() {
     scrollPosition: s
   } = (0, Chunk979233.M)(), u = Chunk150560.Z.getState().getUtmCurrentContext(), g = (0, Chunk833435._)({
     location: Chunk46140.dr.QUEST_HOME_DESKTOP
-  }) ? Chunk736683.Z : Chunk736683.j, T = (0, Chunk879438.z)(e => e.registerAssetLoad), P = Chunk647438.useRef(Chunk607070);
+  }) ? Chunk736683.Z : Chunk736683.j, N = (0, Chunk879438.z)(e => e.registerAssetLoad), P = Chunk647438.useRef(Chunk607070);
   Chunk647438.useEffect(() => {
     Chunk526167.current = Chunk607070
   }), Chunk647438.useEffect(() => {

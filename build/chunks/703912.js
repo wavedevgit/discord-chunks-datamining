@@ -56,15 +56,15 @@ function C(e, t) {
   }), e
 }
 let S = "CachedTokens";
-async function N(e, t, n) {
+async function T(e, t, n) {
   let r, l, o, s, c, {
     client_id: u,
     response_type: y = "code",
     redirect_uri: I,
     code_challenge: C,
     code_challenge_method: S,
-    state: N,
-    nonce: T,
+    state: T,
+    nonce: N,
     scope: P,
     permissions: j,
     guild_id: x,
@@ -109,7 +109,7 @@ async function N(e, t, n) {
       redirectUri: I,
       codeChallenge: C,
       codeChallengeMethod: S,
-      state: N,
+      state: T,
       integrationType: l,
       signal: D
     }), (0, p.de)(u)])
@@ -130,8 +130,8 @@ async function N(e, t, n) {
       redirectUri: I,
       codeChallenge: C,
       codeChallengeMethod: S,
-      state: N,
-      nonce: T,
+      state: T,
+      nonce: N,
       integrationType: l
     })).location
   } catch (t) {
@@ -156,7 +156,7 @@ async function N(e, t, n) {
     redirectUri: I,
     codeChallenge: C,
     codeChallengeMethod: S,
-    state: N,
+    state: T,
     guildId: x,
     channelId: A,
     prompt: Z,
@@ -168,7 +168,7 @@ async function N(e, t, n) {
   })
 }
 
-function T(e, t) {
+function N(e, t) {
   if (e.authorization.accessToken) throw new E.Z({
     errorCode: v.lTL.INVALID_COMMAND
   }, "Already authenticated");
@@ -230,7 +230,7 @@ function P(e, t) {
             errorCode: v.lTL.INVALID_COMMAND
           }, "No application.");
           let s = l.x.IDENTIFY,
-            u = () => N({
+            u = () => T({
               client_id: n,
               scope: s,
               response_type: "token",
@@ -256,7 +256,7 @@ function P(e, t) {
                   scope: n,
                   expires: Date.now() + r
                 }, c.K.set(S, l)
-              }(n, l.access_token, l.scope, l.expires_in), T(i, l.access_token)
+              }(n, l.access_token, l.scope, l.expires_in), N(i, l.access_token)
             });
           return null != (o = function(e, t) {
             let n = c.K.get(S);
@@ -265,7 +265,7 @@ function P(e, t) {
               if (!(r.scope !== t || r.expires <= Date.now())) return r.accessToken;
               delete n[e], c.K.set(S, n)
             }
-          }(n, s)) ? T(i, o).catch(() => {
+          }(n, s)) ? N(i, o).catch(() => {
             var e;
             let t = null != (e = c.K.get(S)) ? e : {};
             return delete t[n], c.K.set(S, t), u()
@@ -274,7 +274,7 @@ function P(e, t) {
         if (null == o) throw new E.Z({
           errorCode: v.lTL.INVALID_TOKEN
         }, "No access token provided");
-        return T(i, o)
+        return N(i, o)
       }
     }),
     [v.Etm.AUTHORIZE]: {
@@ -301,7 +301,7 @@ function P(e, t) {
           errorCode: v.lTL.INVALID_CLIENTID
         }, "Application does not match the connection's");
         let s = l.scopes || l.scope;
-        return delete l.scopes, N(C(I({}, l), {
+        return delete l.scopes, T(C(I({}, l), {
           scope: s,
           signal: i,
           isSocketRpcPrivateScope: o

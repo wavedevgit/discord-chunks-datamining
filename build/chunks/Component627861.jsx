@@ -318,7 +318,7 @@ function eh(e) {
     onClick: ea
   }, [ea]), {
     canJoin: ec,
-    isRemoteJoin: eu
+    remoteJoinPlatform: eu
   } = (0, Y.h)({
     presenceActivity: w,
     currentUserPresenceActivity: A,
@@ -343,7 +343,7 @@ function eh(e) {
         source: ei.Sbl.MESSAGE_EMBED,
         analyticsLocations: O,
         embedded: (0, Q.Z)(w, ei.xjy.EMBEDDED),
-        remotePartyId: eu ? null == (e = w.party) ? true : e.id : true
+        remotePartyId: null != eu ? null == (e = w.party) ? true : e.id : true
       }), (0, $.Z)({
         type: ei.q5t.JOIN,
         source: ei.Sbl.MESSAGE_EMBED,

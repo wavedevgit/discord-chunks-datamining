@@ -34,11 +34,11 @@ function C() {
     } = (0, Chunk979233.M)(),
     {
       tabs: S,
-      selectedTab: N,
-      setSelectedTab: T
+      selectedTab: T,
+      setSelectedTab: N
     } = (0, Chunk29086.Y)(),
-    P = (0, Chunk726115.lg)(N),
-    j = !Chunk128449.MU.has(N),
+    P = (0, Chunk726115.lg)(T),
+    j = !Chunk128449.MU.has(T),
     {
       searchQuery: x,
       onSearchTextChange: A,
@@ -64,8 +64,8 @@ function C() {
     }),
     G = Chunk164991.Z.useField("fetchedQuery"),
     B = Chunk647438.useCallback(e => {
-      T(e), L && Z()
-    }, [L, Z, T]),
+      N(e), L && Z()
+    }, [L, Z, N]),
     V = Chunk647438.useMemo(() => L ? S.filter(e => {
       let {
         id: t
@@ -84,7 +84,7 @@ function C() {
     H.current.flushSeenGuilds(module.current)
   }, [P]), Chunk647438.useEffect(() => {
     C()
-  }, [N, C]), Chunk647438.useEffect(() => {
+  }, [T, C]), Chunk647438.useEffect(() => {
     L || Chunk164991.Z.setState({
       scrollPosition: null
     })
@@ -102,7 +102,7 @@ function C() {
       }), !L && (0, Chunk951288.jsx)(c.Z, {
         className: U,
         tabs: V,
-        selectedTab: L ? null : N,
+        selectedTab: L ? null : T,
         onTabSelect: B,
         onAvailableWidthChange: D
       }), L && (0, Chunk951288.jsx)(Chunk481060.X6q, {
@@ -127,7 +127,7 @@ function C() {
       onGuildCardClick: z,
       onGuildCardSeen: F
     }) : (0, Chunk951288.jsx)(Chunk590771.Z, {
-      selectedTab: N,
+      selectedTab: T,
       onScroll: exports,
       onGuildCardClick: z,
       onGuildCardSeen: F

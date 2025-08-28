@@ -31,13 +31,13 @@ let S = Object.freeze({
     left: 32,
     right: 202
   }),
-  N = Object.freeze({
+  T = Object.freeze({
     top: 0,
     bottom: 0,
     left: 32,
     right: 32
   }),
-  T = {
+  N = {
     page: Chunk981631.ZY5.GUILD_DISCOVERY,
     object: Chunk981631.qAy.CARD,
     section: Chunk981631.jXE.DISCOVER_SEARCH
@@ -162,7 +162,7 @@ function j(e) {
           style: n,
           children: (0, r.jsx)(v.ZP, {
             guildId: e,
-            onClick: async e => await X(e, t, x, T),
+            onClick: async e => await X(e, t, x, N),
             onView: e => z(e)
           })
         }, i)
@@ -201,7 +201,7 @@ function j(e) {
     }, 100, {
       leading: true
     }), [j]),
-    ee = R ? S : N;
+    ee = R ? S : T;
   return (0, r.jsx)("div", {
     className: C.container,
     ref: F,

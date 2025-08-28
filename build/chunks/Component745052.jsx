@@ -272,7 +272,7 @@ let eo = (0, Chunk112724.Z)(function(e) {
   (0, b.ZP)(() => {
     f.Y(q.Z5c.MESSAGE_REQUESTS), (0, x.e)("message-requests"), R.default.track(q.rMx.MESSAGE_REQUESTS_VIEWED, {
       num_message_requests: n
-    }), N.Z.increment({
+    }), T.Z.increment({
       name: s.V.MESSAGE_REQUEST_VIEW
     })
   });
@@ -289,7 +289,7 @@ let eo = (0, Chunk112724.Z)(function(e) {
     O = (0, D.J)(g),
     E = i.useRef(null);
   i.useEffect(() => {
-    null != g && !_ && O && m && ((0, T.Kh)(g), P.Z.closeChannelSidebar(Z.uZ))
+    null != g && !_ && O && m && ((0, N.Kh)(g), P.Z.closeChannelSidebar(Z.uZ))
   }, [g, O, m, _]);
   let [y, I] = i.useState(K.pS.REQUESTS), C = e => {
     I(e)

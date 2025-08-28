@@ -223,7 +223,7 @@ let eu = e => {
       selected: t
     } = e, n = (0, c.JA)("messageRequests"), {
       channelId: i
-    } = (0, N._)();
+    } = (0, T._)();
     if (!(0, P.a)()) return null;
     let l = null == i ? true : () => m.Z.preload(et.ME, i);
     return (0, r.jsx)(J.Qj, es(eo({

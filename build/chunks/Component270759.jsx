@@ -46,7 +46,7 @@ let x = function(e) {
   i.useEffect(() => {
     "true" === new URLSearchParams(n.search).get("confirm-age") && u.Z.dispatch({
       type: "AGE_GATE_MODAL_OPEN",
-      source: N.L0.DEEP_LINK_PROMPT
+      source: T.L0.DEEP_LINK_PROMPT
     }).then(() => {
       l.replace(S.Z5c.ME)
     })
@@ -74,23 +74,23 @@ let x = function(e) {
     M = [{
       id: S.pJs.ONLINE,
       show: Z.filter(S.pJs.ONLINE).length > 0,
-      content: T.intl.string(T.t.b9w3bG),
+      content: N.intl.string(N.t.b9w3bG),
       className: P.item
     }, {
       id: S.pJs.ALL,
       show: L[S.OGo.FRIEND] > 0,
-      content: T.intl.string(T.t.PfjFjY),
+      content: N.intl.string(N.t.PfjFjY),
       className: P.item
     }, {
       id: S.pJs.PENDING,
       show: Z.filter(S.pJs.PENDING).length > 0,
       content: (0, r.jsxs)(r.Fragment, {
-        children: [T.intl.string(T.t.p6IHGB), x > 0 && (0, r.jsx)(c.mAB, {
+        children: [N.intl.string(N.t.p6IHGB), x > 0 && (0, r.jsx)(c.mAB, {
           count: x,
           className: P.badge
         })]
       }),
-      ariaLabel: T.intl.formatToPlainString(T.t.OAC0Z2, {
+      ariaLabel: N.intl.formatToPlainString(N.t.OAC0Z2, {
         count: x.toString()
       }),
       className: P.item
@@ -98,12 +98,12 @@ let x = function(e) {
       id: S.pJs.SUGGESTIONS,
       show: w > 0,
       content: (0, r.jsxs)(r.Fragment, {
-        children: [T.intl.string(T.t["8rSi19"]), (0, r.jsx)(c.mAB, {
+        children: [N.intl.string(N.t["8rSi19"]), (0, r.jsx)(c.mAB, {
           count: w,
           className: P.badge
         })]
       }),
-      ariaLabel: T.intl.formatToPlainString(T.t.AbMQp6, {
+      ariaLabel: N.intl.formatToPlainString(N.t.AbMQp6, {
         count: w.toString()
       }),
       className: P.item
@@ -111,16 +111,16 @@ let x = function(e) {
       id: S.pJs.ADD_FRIEND,
       show: true,
       content: (0, r.jsx)("span", {
-        children: T.intl.string(T.t.j0wbEx)
+        children: N.intl.string(N.t.j0wbEx)
       }),
-      ariaLabel: T.intl.string(T.t.j0wbEx),
+      ariaLabel: N.intl.string(N.t.j0wbEx),
       className: a()(P.item, P.addFriend)
     }];
   return (0, r.jsxs)("main", {
     className: P.container,
-    "aria-label": T.intl.string(T.t.TdEu5e),
+    "aria-label": N.intl.string(N.t.TdEu5e),
     children: [(0, r.jsx)(f.yY, {
-      location: T.intl.string(T.t.TdEu5e)
+      location: N.intl.string(N.t.TdEu5e)
     }), (0, r.jsx)(c.f6W, {
       theme: b,
       children: e => (0, r.jsxs)(m.Z, {
@@ -134,9 +134,9 @@ let x = function(e) {
           "aria-hidden": true
         }), (0, r.jsx)(m.Z.Title, {
           id: D,
-          children: T.intl.string(T.t.TdEu5e)
+          children: N.intl.string(N.t.TdEu5e)
         }), (0, r.jsx)(m.Z.Divider, {}), (0, r.jsx)(c.njP, {
-          "aria-label": T.intl.string(T.t.TdEu5e),
+          "aria-label": N.intl.string(N.t.TdEu5e),
           selectedItem: A,
           type: "top-pill",
           onItemSelect: R,

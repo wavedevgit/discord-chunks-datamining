@@ -10,6 +10,7 @@ var Chunk647438 = require("./647438.js"),
   a = function(e) {
     return e.DESKTOP = "desktop", e.MOBILE = "mobile", e.ANDROID = "android", e.IOS = "ios", e.PLAYSTATION = "playstation", e.XBOX = "xbox", e
   }({});
+Chunk981631.M7m.DESKTOP, Chunk981631.M7m.ANDROID, Chunk981631.M7m.IOS, Chunk981631.M7m.XBOX, Chunk981631.M7m.PS4, Chunk981631.M7m.PS5, Chunk981631.M7m.SAMSUNG, Chunk981631.M7m.EMBEDDED;
 let o = [];
 
 function s(e) {
