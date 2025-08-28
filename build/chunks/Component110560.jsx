@@ -209,9 +209,7 @@ function K(e) {
       location: R.dr.QUESTS_BAR
     };
   if (!(0, T.j)(n) || Math.random() > W) return;
-  let r = (0, A.Z)({
-    entityName: e.config.messages.gameTitle
-  });
+  let r = (0, A.Z)(e);
   t.log("Showing survey ".concat(r.id)), (0, C.C)({
     questId: e.id,
     survey: r

@@ -2,38 +2,37 @@
 /** chunk id: 492112, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => s
+  Z: () => l
 });
 var Chunk423650 = require("./423650.js"),
   i = require.n(Chunk423650),
+  Chunk509212 = require("./509212.js"),
   Chunk388032 = require("./388032.jsx");
-let o = "1290718710658629658";
+let s = "1290718710658629658";
 
-function s(e) {
-  let {
-    entityName: t
-  } = e, n = [{
+function l(e) {
+  let t = [{
     key: "NOT_INTERESTED",
-    text: a.intl.formatToPlainString(a.t.AZRWVV, {
-      entityName: t
+    text: (0, a.q8)(e) ? o.intl.string(o.t["tgi+np"]) : o.intl.formatToPlainString(o.t.AZRWVV, {
+      entityName: e.config.messages.gameTitle
     })
   }, {
     key: "INVALUABLE",
-    text: a.intl.string(a.t.ETU4NT)
+    text: o.intl.string(o.t.ETU4NT)
   }, {
     key: "TOO_LONG",
-    text: a.intl.string(a.t.uRIIpK)
+    text: o.intl.string(o.t.uRIIpK)
   }, {
     key: "UNSURE_HOW",
-    text: a.intl.string(a.t["5dxvxs"])
+    text: o.intl.string(o.t["5dxvxs"])
   }, {
     key: "OTHER",
-    text: a.intl.string(a.t.RFasgo)
+    text: o.intl.string(o.t.RFasgo)
   }];
   return {
-    id: o,
-    title: a.intl.string(a.t.ugbhDQ),
-    subtitle: a.intl.string(a.t.FIYcpK),
-    choices: i()(n.slice(0, 4)).concat(n[4])
+    id: s,
+    title: o.intl.string(o.t.ugbhDQ),
+    subtitle: o.intl.string(o.t.FIYcpK),
+    choices: i()(t.slice(0, 4)).concat(t[4])
   }
 }
