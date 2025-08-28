@@ -163,12 +163,12 @@ class x extends Chunk839548.Z {
               decode: e.decode
             }
           })], this.logger.info("Audio codecs: ".concat(this.codecs.filter(e => "audio" === e.type).map(e => e.name))), this.logger.info("Video codecs: ".concat(this.codecs.filter(e => "video" === e.type).map(e => e.name + "[encode: " + e.encode + ", decode: " + e.decode + "]"))), t.getEncryptionModes(r => {
-            var i, a, c, u, d, f, _, p, h, g, E, b, y;
+            var i, a, c, u, d, f, _, p, h, g, E, b, y, O;
             this.logger.info("Encryption modes: ".concat(r));
-            let O = A(T({}, this.getConnectionTransportOptions()), {
+            let I = A(T({}, this.getConnectionTransportOptions()), {
               callMinBitRate: e.callMinBitrate
             });
-            t.setTransportOptions(O), t.setSelfMute(this.selfMute || this.context === v.Yn.STREAM), t.setSelfDeafen(this.selfDeaf), t.setOnSpeakingCallback(this.handleSpeakingNative), null == (i = t.setOnNativeMuteToggleCallback) || i.call(t, this.handleNativeMuteToggled), null == (a = t.setOnNativeMuteChangedCallback) || a.call(t, this.handleNativeMuteChanged), null == (c = t.setOnSpeakingWhileMutedCallback) || c.call(t, this.handleSpeakingWhileMuted), null == (u = t.setPingInterval) || u.call(t, v.$B), t.setPingCallback(this.handlePing), null == (d = t.setPingTimeoutCallback) || d.call(t, this.handlePingTimeout), null == (f = t.setOnVideoEncoderFallbackCallback) || f.call(t, this.handleVideoEncoderFallback), null == (_ = t.setOnRtcpMessageCallback) || _.call(t, this.handleRTCPMessage), n.setTransportOptions({
+            t.setTransportOptions(I), t.setSelfMute(this.selfMute || this.context === v.Yn.STREAM), t.setSelfDeafen(this.selfDeaf), t.setOnSpeakingCallback(this.handleSpeakingNative), null == (i = t.setOnNativeMuteToggleCallback) || i.call(t, this.handleNativeMuteToggled), null == (a = t.setOnNativeMuteChangedCallback) || a.call(t, this.handleNativeMuteChanged), null == (c = t.setOnSpeakingWhileMutedCallback) || c.call(t, this.handleSpeakingWhileMuted), null == (u = t.setPingInterval) || u.call(t, v.$B), t.setPingCallback(this.handlePing), null == (d = t.setPingTimeoutCallback) || d.call(t, this.handlePingTimeout), null == (f = t.setOnVideoEncoderFallbackCallback) || f.call(t, this.handleVideoEncoderFallback), null == (_ = t.setOnRtcpMessageCallback) || _.call(t, this.handleRTCPMessage), n.setTransportOptions({
               builtInEchoCancellation: true,
               echoCancellation: this.echoCancellation,
               noiseSuppression: this.noiseSuppression,
@@ -177,17 +177,17 @@ class x extends Chunk839548.Z {
               noiseCancellation: this.noiseCancellation,
               noiseCancellationDuringProcessing: this.noiseCancellationDuringProcessing,
               voiceFilters: null != this.voiceFilterId
-            }), n.setNoInputThreshold(false), n.setNoInputCallback(this.handleNoInput), this.videoSupported && (t.setOnVideoCallback(this.handleVideo), null == (h = t.setOnFirstFrameCallback) || h.call(t, this.handleFirstFrame), null == (g = t.setOnDesktopSourceEnded) || g.call(t, this.handleDesktopSourceEnded), null == (E = t.setOnSoundshare) || E.call(t, this.handleSoundshare), null == (b = t.setOnSoundshareEnded) || b.call(t, this.handleSoundshareEnded), null == (y = t.setOnSoundshareFailed) || y.call(t, this.handleSoundshareFailed)), null == (p = t.setOnMLSFailureCallback) || p.call(t, this.handleMLSFailure), this.setConnectionState(v.$j.CONNECTED), this.emit(m.Sh.Connected, o, {
+            }), n.setNoInputThreshold(false), n.setNoInputCallback(this.handleNoInput), this.videoSupported && (t.setOnVideoCallback(this.handleVideo), null == (h = t.setOnFirstFrameCallback) || h.call(t, this.handleFirstFrame), null == (g = t.setOnFirstFrameDeliveredStatsCallback) || g.call(t, this.handleFirstFrameStats), null == (E = t.setOnDesktopSourceEnded) || E.call(t, this.handleDesktopSourceEnded), null == (b = t.setOnSoundshare) || b.call(t, this.handleSoundshare), null == (y = t.setOnSoundshareEnded) || y.call(t, this.handleSoundshareEnded), null == (O = t.setOnSoundshareFailed) || O.call(t, this.handleSoundshareFailed)), null == (p = t.setOnMLSFailureCallback) || p.call(t, this.handleMLSFailure), this.setConnectionState(v.$j.CONNECTED), this.emit(m.Sh.Connected, o, {
               address: s,
               port: l,
               mode: this.chooseEncryptionMode(e.modes, r),
               codecs: this.codecs
             }), this.on(m.Sh.Stats, this.handleStats);
-            let I = this.getUserOptions();
-            for (let e of (I.forEach(e => {
+            let S = this.getUserOptions();
+            for (let e of (S.forEach(e => {
                 var t, n;
                 return this.logger.info("Creating user: ".concat(e.id, " with audio SSRC: ").concat(e.ssrc, " and video SSRCs: ").concat(null != (n = null == (t = e.videoSsrcs) ? true : t.join(",")) ? n : 0))
-              }), this.mergeUsers(I), this.emit(m.Sh.RemoteStreamsReady, I.length), Object.keys(this.localSpeakingFlags))) e !== this.userId && this.setSpeakingFlags(e, this.localSpeakingFlags[e])
+              }), this.mergeUsers(S), this.emit(m.Sh.RemoteStreamsReady, S.length), Object.keys(this.localSpeakingFlags))) e !== this.userId && this.setSpeakingFlags(e, this.localSpeakingFlags[e])
           })
         })
       };
@@ -888,6 +888,8 @@ class x extends Chunk839548.Z {
       }) : t > 0 ? (i[0].active = true, i[0].ssrc = t, i[0].rtxSsrc = D(t)) : i[0].active = false : t > 0 && (true !== this.remoteVideoSSRCs[e] ? this.remoteVideoSSRCs[e].includes(t) || (this.remoteVideoSSRCs[e] = [...this.remoteVideoSSRCs[e], t]) : this.remoteVideoSSRCs[e] = [t]), this.videoStreamParameters = i, this.emit(m.Sh.Video, e, null != n && "" !== n ? n : null, e === this.userId ? this.audioSSRC : this.remoteAudioSSRCs[e], t, D(t), this.videoStreamParameters)
     }), I(this, "handleFirstFrame", (e, t, n) => {
       this.emit(m.Sh.FirstFrame, e, t, n)
+    }), I(this, "handleFirstFrameStats", e => {
+      this.emit(m.Sh.FirstFrameStats, e)
     }), I(this, "handleNoInput", e => {
       this.emit(m.Sh.Silence, !e)
     }), I(this, "handleDesktopSourceEnded", (e, t) => {
