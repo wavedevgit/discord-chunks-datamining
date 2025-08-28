@@ -2,11 +2,13 @@
 /** chunk id: 718580, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  H: () => S,
-  M: () => T
+  H: () => N,
+  M: () => C
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk120356 = require("./120356.js"),
+  o = require.n(Chunk120356),
   Chunk202841 = require("./202841.js"),
   Chunk990547 = require("./990547.js"),
   Chunk873546 = require("./873546.js"),
@@ -16,9 +18,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk699682 = require("./699682.js"),
   Chunk793903 = require("./793903.js"),
   Chunk906732 = require("./906732.jsx"),
-  Chunk237617 = require("./237617.js");
+  Chunk237617 = require("./237617.js"),
+  Chunk430723 = require("./430723.js");
 
-function h(e, t, n) {
+function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -27,20 +30,20 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      E(e, t, n[t])
     })
   }
   return e
 }
 
-function g(e, t) {
+function y(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -51,15 +54,15 @@ function g(e, t) {
   return n
 }
 
-function E(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
+function O(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function b(e, t) {
+function v(e, t) {
   if (null == e) return {};
-  var n, r, i = y(e, t);
+  var n, r, i = I(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -67,25 +70,25 @@ function b(e, t) {
   return i
 }
 
-function y(e, t) {
+function I(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let O = {
+let T = {
   mass: 1,
   tension: 300,
   friction: 28,
   clamp: true
 };
 
-function v(e, t) {
+function S(e, t) {
   return null == e ? null : e.index > t.index ? "backwards" : e.index < t.index ? "forwards" : null
 }
 
-function I(e, t) {
+function A(e, t) {
   return n => {
     if (0 === n) return "auto";
     let r = "forwards" === t.current,
@@ -95,58 +98,58 @@ function I(e, t) {
   }
 }
 
-function T(e) {
+function C(e) {
   return null
 }
 
-function S(e) {
-  var t, n, h, {
-      contentDisplay: g,
+function N(e) {
+  var t, n, a, {
+      contentDisplay: E,
       fadeInOut: y = false
     } = e,
-    T = b(e, ["contentDisplay", "fadeInOut"]);
-  let S = {},
+    I = v(e, ["contentDisplay", "fadeInOut"]);
+  let C = {},
     {
-      analyticsLocations: A
-    } = (0, _.ZP)();
-  i.Children.forEach(T.children, (e, t) => {
-    S[e.props.id] = {
+      analyticsLocations: N
+    } = (0, h.ZP)();
+  i.Children.forEach(I.children, (e, t) => {
+    C[e.props.id] = {
       children: e.props.children,
       impressionName: e.props.impressionName,
       impressionProperties: e.props.impressionProperties,
       index: t
     }
   });
-  let C = T.activeSlide,
-    N = (0, d.Z)(T.activeSlide),
-    R = null != (t = T.directionOverride) ? t : v(null != N ? S[N] : null, S[C]),
+  let R = I.activeSlide,
+    P = (0, _.Z)(I.activeSlide),
+    w = null != (t = I.directionOverride) ? t : S(null != P ? C[P] : null, C[R]),
     {
-      reducedMotion: P
-    } = i.useContext(l.S),
-    w = i.useContext(f.Z),
-    D = S[C].impressionName,
-    x = E(m({}, S[C].impressionProperties), {
-      location_stack: A
+      reducedMotion: D
+    } = i.useContext(u.S),
+    x = i.useContext(p.Z),
+    L = C[R].impressionName,
+    j = O(b({}, C[R].impressionProperties), {
+      location_stack: N
     });
-  w({
-    type: o.ImpressionTypes.MODAL,
-    name: D,
-    properties: x,
+  x({
+    type: l.ImpressionTypes.MODAL,
+    name: L,
+    properties: j,
     _stackContext: {
       isSlide: true
     }
   });
   let {
-    ref: L,
-    width: j = 0,
-    height: M = 0
-  } = (0, u.ZP)(C), k = m({}, O, T.springConfig, P.enabled ? {
+    ref: M,
+    width: k = 0,
+    height: U = 0
+  } = (0, f.ZP)(R), G = b({}, T, I.springConfig, D.enabled ? {
     clamp: true
-  } : null), U = (0, c.q_F)({
-    width: null != (n = T.width) ? n : j,
-    height: M,
-    config: k
-  }, null == N ? "animate-never" : "respect-motion-settings"), G = (0, c.Yzy)(C, {
+  } : null), B = (0, d.q_F)({
+    width: null != (n = I.width) ? n : k,
+    height: U,
+    config: G
+  }, null == P ? "animate-never" : "respect-motion-settings"), Z = (0, d.Yzy)(R, {
     value: 0,
     from: {
       value: 1
@@ -157,49 +160,52 @@ function S(e) {
     leave: {
       value: false
     },
-    config: k,
+    config: G,
     onRest: (e, t) => {
       let {
         item: n
       } = t;
-      n === C && null != T.onSlideReady && T.onSlideReady(n)
+      n === R && null != I.onSlideReady && I.onSlideReady(n)
     }
-  }, null == N ? "animate-never" : "respect-motion-settings"), B = (0, p.Z)(R), {
-    width: Z,
-    centered: F = true
-  } = T, V = s.tq ? "100%" : U.width.to(e => "string" == typeof e ? e : Math.round(e)), H = s.tq ? "100%" : U.height.to(e => Math.round(e)), Y = s.tq ? {} : F ? {
+  }, null == P ? "animate-never" : "respect-motion-settings"), F = (0, m.Z)(w), {
+    width: V,
+    centered: H = true
+  } = I, Y = c.tq ? "100%" : B.width.to(e => "string" == typeof e ? e : Math.round(e)), W = c.tq && !I.shouldUseMediaQueryToSetHeight ? "100%" : B.height.to(e => Math.round(e)), K = c.tq ? {} : H ? {
     transform: "translate3d(0, -50%, 0) scale(1.0, 1.0)",
     top: "50%"
   } : {
     transform: "scale(1.0, 1.0)"
-  }, W = s.tq ? {} : {
-    overflow: null != (h = T.overflow) ? h : "hidden"
+  }, z = c.tq ? {} : {
+    overflow: null != (a = I.overflow) ? a : "hidden"
   };
-  return (0, r.jsx)(a.animated.div, {
-    style: m({
+  return (0, r.jsx)(s.animated.div, {
+    style: b({
       position: "relative",
-      minWidth: V,
-      minHeight: H
-    }, W),
-    children: G((e, t, n) => {
+      minWidth: Y,
+      minHeight: W
+    }, z),
+    className: o()({
+      [g.animatedDivDynamicHeight]: I.shouldUseMediaQueryToSetHeight
+    }),
+    children: Z((e, t, n) => {
       let {
         key: i
-      } = n, o = {
+      } = n, a = {
         opacity: e.value.to(e => 1 - Math.abs(e))
       };
-      return (0, r.jsx)(a.animated.div, {
-        ref: t === C ? L : null,
-        style: m({
+      return (0, r.jsx)(s.animated.div, {
+        ref: t === R ? M : null,
+        style: b({
           position: "absolute",
-          display: g,
+          display: E,
           flexDirection: "column",
           backfaceVisibility: "hidden",
-          width: s.tq ? "100%" : Z
-        }, Y, P.enabled ? o : m({
-          left: e.value.to(I("left", B)),
-          right: e.value.to(I("right", B))
-        }, y && o)),
-        children: S[t].children
+          width: c.tq ? "100%" : V
+        }, K, D.enabled ? a : b({
+          left: e.value.to(A("left", F)),
+          right: e.value.to(A("right", F))
+        }, y && a)),
+        children: C[t].children
       }, i)
     })
   })
