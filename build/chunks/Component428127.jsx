@@ -75,12 +75,12 @@ function y(e) {
     mode: v,
     mentionCount: j,
     targetChannelId: x
-  } = "bottom" === t ? h : y, C = v === f.x.HIDDEN, S = (0, c.q_F)({
+  } = "bottom" === t ? h : y, C = v === f.x.HIDDEN, E = (0, c.q_F)({
     to: {
       transform: C ? "bottom" === t ? "translateY(180%)" : "translateY(-180%)" : "translateY(0%)"
     },
     config: b
-  }, _ ? "respect-motion-settings" : "animate-never"), E = i.useCallback(e => {
+  }, _ ? "respect-motion-settings" : "animate-never"), S = i.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), null != x && d(x)
   }, [d, x]);
   return (0, r.jsx)("div", {
@@ -90,13 +90,13 @@ function y(e) {
     }),
     children: (0, r.jsx)(a.animated.div, {
       className: m.containerPadding,
-      style: S,
+      style: E,
       "aria-hidden": C,
       children: v === f.x.HIDDEN ? (0, r.jsx)("div", {
         className: o()(m.bar, m.emptyBar)
       }) : v === f.x.UNREAD ? (0, r.jsxs)(c.P3F, {
         className: m.bar,
-        onClick: E,
+        onClick: S,
         children: ["bottom" === t ? (0, r.jsx)(c.CJ0, {
           size: "custom",
           color: "currentColor",
@@ -117,7 +117,7 @@ function y(e) {
         })]
       }) : v === f.x.MENTIONS ? (0, r.jsx)(c.P3F, {
         className: o()(m.bar, m.mentionsBar),
-        onClick: E,
+        onClick: S,
         children: (0, r.jsx)(c.Text, {
           variant: "text-xs/semibold",
           color: "status-danger-text",

@@ -1,7 +1,7 @@
 /** Chunk was on 91488 **/
 /** chunk id: 770858, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => S
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -30,20 +30,20 @@ function C() {
   return (0, Chunk442837.e7)([Chunk306680.ZP], () => (null == module ? true : module.id) != null && Chunk306680.ZP.getMentionCount(module.id, Chunk490897.W.NOTIFICATION_CENTER) > 0)
 }
 
-function S(e) {
+function E(e) {
   var t, n;
   let {
     onClick: d,
     selectedOverride: p = false,
     popoutProps: f,
     ref: O
-  } = e, j = (0, l.Ie)("notifications-inbox"), [S, E] = i.useState(false), P = (0, m.D)(), I = p || P, {
+  } = e, j = (0, l.Ie)("notifications-inbox"), [E, S] = i.useState(false), P = (0, m.D)(), I = p || P, {
     notificationCenterVariant: N
   } = (0, g.pN)({
     location: "NotificationsInboxButtonInner"
   }), {
-    badge: w,
-    badgeDimensions: Z,
+    badge: Z,
+    badgeDimensions: w,
     unreadChannelsCount: T
   } = function(e) {
     let {
@@ -84,15 +84,15 @@ function S(e) {
     ref: O,
     children: [(0, r.jsx)(c.Z, {
       selected: I && N === g.jP.SIDEBAR,
-      hovered: S && N === g.jP.SIDEBAR,
+      hovered: E && N === g.jP.SIDEBAR,
       unread: T > 0,
       className: x.pill,
       disabled: N === g.jP.LEGACY
     }), (0, r.jsx)(y.Z, {
       children: (0, r.jsx)(a.aRk, {
-        selected: I || S,
-        lowerBadge: w,
-        lowerBadgeSize: Z,
+        selected: I || E,
+        lowerBadge: Z,
+        lowerBadgeSize: w,
         children: (0, r.jsx)(a.LYs, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
@@ -113,9 +113,9 @@ function S(e) {
         }({}, j, f), n = n = {
           onClick: d,
           to: D,
-          selected: I || S,
-          onMouseEnter: () => E(true),
-          onMouseLeave: () => E(false),
+          selected: I || E,
+          onMouseEnter: () => S(true),
+          onMouseLeave: () => S(false),
           children: (0, r.jsx)(A, {
             size: "custom",
             color: "currentColor",
@@ -138,7 +138,7 @@ function S(e) {
   })
 }
 
-function E() {
+function S() {
   let e = Chunk647438.useRef(null),
     {
       notificationCenterVariant: t
@@ -147,13 +147,13 @@ function E() {
     }),
     n = C(),
     l = (0, Chunk128008.mv)();
-  return exports === Chunk821020.jP.SIDEBAR ? (0, Chunk951288.jsx)(S, {
+  return exports === Chunk821020.jP.SIDEBAR ? (0, Chunk951288.jsx)(E, {
     onClick: Chunk91192
   }) : exports === Chunk821020.jP.POPOUT ? (0, Chunk951288.jsx)(Chunk961040.Z, {
     targetElementRef: module,
     popoutPosition: "right",
     popoutAlign: "bottom",
-    children: (t, n, i) => (0, r.jsx)(S, {
+    children: (t, n, i) => (0, r.jsx)(E, {
       ref: e,
       selectedOverride: n,
       onClick: () => {
@@ -170,7 +170,7 @@ function E() {
     popoutPosition: "right",
     popoutAlign: "top",
     dialogClassName: Chunk888158.positionLayer,
-    children: (t, n, i) => (0, r.jsx)(S, {
+    children: (t, n, i) => (0, r.jsx)(E, {
       ref: e,
       selectedOverride: n,
       onClick: () => {

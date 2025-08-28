@@ -123,7 +123,7 @@ class ep extends(r = Chunk647438.PureComponent) {
       initialized: l
     } = this.state, {
       scrollTop: o
-    } = Z.Z.getGuildDimensions(r);
+    } = w.Z.getGuildDimensions(r);
     null != n ? (this.scrollToChannel(n), p.Z.clearChannelListScrollTo(r)) : r !== e.guildId ? null != o && this.scrollTo(o) : i !== e.selectedChannelId ? this.scrollToChannel(i) : !t.initialized && l && (null == o && null != i ? this.scrollToChannel(i, false, er.yE, this.handleListScroll) : this.scrollTo(null != o ? o : 0, this.handleListScroll)), this.testShouldSkipTutorial()
   }
   getSectionRowsFromChannel(e) {
@@ -181,7 +181,7 @@ class ep extends(r = Chunk647438.PureComponent) {
         channel: o,
         category: a
       } = l;
-      return !!(0, N.vc)(o.record.type) && (!a.isCollapsed || !a.isMuted) && !o.isMuted && !!t.isItemVisible(r, i, true) && (0, E.d)(o.record)
+      return !!(0, N.vc)(o.record.type) && (!a.isCollapsed || !a.isMuted) && !o.isMuted && !!t.isItemVisible(r, i, true) && (0, S.d)(o.record)
     })
   }
   renderTopUnread() {
@@ -566,7 +566,7 @@ class ep extends(r = Chunk647438.PureComponent) {
             }, en.z.GUILD_HUB_HEADER_OPTIONS);
           case en.z.GUILD_PREMIUM_PROGRESS_BAR:
             let l = e.getRows();
-            return (0, i.jsx)(S.Z, {
+            return (0, i.jsx)(E.Z, {
               guild: r,
               withMargin: l.length > 1
             }, en.z.GUILD_PREMIUM_PROGRESS_BAR);
@@ -654,7 +654,7 @@ class ep extends(r = Chunk647438.PureComponent) {
             }) : null]
           }, x);
         case ei.d4z.GUILD_STAGE_VOICE:
-          var E, P;
+          var S, P;
           return (0, i.jsx)(q.Z, {
             channel: j,
             guild: r,
@@ -662,7 +662,7 @@ class ep extends(r = Chunk647438.PureComponent) {
             selected: a === O.id,
             connected: c === O.id,
             collapsed: O.isCollapsed || b.isCollapsed,
-            voiceStates: null != (E = d[O.id]) ? E : [],
+            voiceStates: null != (S = d[O.id]) ? S : [],
             speakerVoiceStates: null != (P = h[O.id]) ? P : [],
             disableManageChannels: p,
             isFavoriteCategory: y
@@ -768,7 +768,7 @@ let eh = e => {
     selectedVoiceChannelId: r
   } = e, o = (0, u.e7)([g.Z], () => g.Z.keyboardModeEnabled), {
     analyticsLocations: a
-  } = (0, b.ZP)(m.Z.GUILD_CHANNEL_LIST), d = (0, u.e7)([w.Z], () => w.Z.getChannel(n)), p = (0, u.e7)([w.Z], () => w.Z.getChannel(r)), h = (0, u.e7)([A.Z], () => A.Z.getGuildId()), O = (0, x.DM)(t), y = l.useRef(null), _ = l.useCallback((e, t) => {
+  } = (0, b.ZP)(m.Z.GUILD_CHANNEL_LIST), d = (0, u.e7)([Z.Z], () => Z.Z.getChannel(n)), p = (0, u.e7)([Z.Z], () => Z.Z.getChannel(r)), h = (0, u.e7)([A.Z], () => A.Z.getGuildId()), O = (0, x.DM)(t), y = l.useRef(null), _ = l.useCallback((e, t) => {
     let n = y.current;
     if (null != n)
       if (ei.Xyh.test(t) || (0, el.AB)(t)) n.scrollToChannel(t, false, 2 * er.yE, () => {
@@ -796,11 +796,11 @@ let eh = e => {
     setFocus: _,
     scrollToStart: v,
     scrollToEnd: j
-  }), S = C.setFocus;
+  }), E = C.setFocus;
   l.useEffect(() => {
-    null != n && S(n)
-  }, [n, S]);
-  let E = (0, P.Z)(t);
+    null != n && E(n)
+  }, [n, E]);
+  let S = (0, P.Z)(t);
   return (0, i.jsx)(b.Gt, {
     value: a,
     children: (0, i.jsx)(f.Z, {
@@ -812,7 +812,7 @@ let eh = e => {
           ref: y,
           selectedChannel: d,
           selectedVoiceChannel: p,
-          stageChannelSpeakerVoiceStates: E,
+          stageChannelSpeakerVoiceStates: S,
           selectedGuildId: h,
           optInEnabled: O
         }))

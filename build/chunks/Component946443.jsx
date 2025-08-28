@@ -2,7 +2,7 @@
 /** chunk id: 946443, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   QP: () => N,
-  ZP: () => E,
+  ZP: () => S,
   h6: () => I
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -29,12 +29,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk915087 = require("./915087.js");
 
-function E(e) {
-  var t, n, l, a, y, E, I;
+function S(e) {
+  var t, n, l, a, y, S, I;
   let {
     onJump: N,
-    showTutorial: w,
-    setSeenTutorial: Z,
+    showTutorial: Z,
+    setSeenTutorial: w,
     closePopout: T
   } = e, A = i.useRef(null), [R, D] = (0, j.ZP)(A), {
     loadState: M,
@@ -71,14 +71,14 @@ function E(e) {
     return b.S.subscribe(x.CkL.MARK_TOP_INBOX_CHANNEL_READ, e), () => {
       b.S.unsubscribe(x.CkL.MARK_TOP_INBOX_CHANNEL_READ, e)
     }
-  }, [y, a.channels]), E = D, i.useEffect(() => {
+  }, [y, a.channels]), S = D, i.useEffect(() => {
     let e = e => {
-      ((0, O.isMac)() || (0, O.isMacWeb)() ? e.metaKey : e.ctrlKey) && !e.shiftKey && !e.altKey && "z" === e.key && E.undoMarkChannelRead()
+      ((0, O.isMac)() || (0, O.isMacWeb)() ? e.metaKey : e.ctrlKey) && !e.shiftKey && !e.altKey && "z" === e.key && S.undoMarkChannelRead()
     };
     return document.addEventListener("keydown", e), () => {
       document.removeEventListener("keydown", e)
     }
-  }, [E]), i.useEffect(() => {
+  }, [S]), i.useEffect(() => {
     m.default.track(x.rMx.OPEN_POPOUT, {
       type: "Inbox"
     })
@@ -141,11 +141,11 @@ function E(e) {
           }
         }, l), n = n = {
           onScroll: M === j.jd.Done ? true : k,
-          className: o()(S.scroller, "group-spacing-".concat(U)),
-          children: [w ? (0, r.jsx)(P, {
-            setSeenTutorial: Z
+          className: o()(E.scroller, "group-spacing-".concat(U)),
+          children: [Z ? (0, r.jsx)(P, {
+            setSeenTutorial: w
           }) : null, (0, v.Z)(L, D, N), M === j.jd.Done ? null : (0, r.jsx)(d.$jN, {
-            className: S.spinner
+            className: E.spinner
           })]
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);
@@ -167,16 +167,16 @@ function P(e) {
     setSeenTutorial: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: S.tutorial,
+    className: E.tutorial,
     children: [(0, r.jsx)("div", {
-      className: S.tutorialIcon,
+      className: E.tutorialIcon,
       children: (0, r.jsx)(d.xx7, {
         size: "md",
         color: "currentColor"
       })
     }), (0, r.jsxs)("div", {
       children: [(0, r.jsx)(d.X6q, {
-        className: S.__invalid_tutorialHeader,
+        className: E.__invalid_tutorialHeader,
         variant: "heading-md/semibold",
         children: C.intl.string(C.t.vZPktL)
       }), (0, r.jsx)(d.Text, {
@@ -185,7 +185,7 @@ function P(e) {
         children: C.intl.string(C.t.vWkIIC)
       }), (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
-        className: S.tutorialButton,
+        className: E.tutorialButton,
         children: (0, r.jsx)(d.zxk, {
           variant: "primary",
           size: "sm",

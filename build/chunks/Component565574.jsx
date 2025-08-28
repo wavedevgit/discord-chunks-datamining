@@ -13,27 +13,23 @@ var Chunk951288 = require("./951288.js"),
 
 function d(e) {
   let {
-    align: t = "left",
-    useSimplifiedMenu: n = false
-  } = e, d = i.useRef(null);
+    align: t = "left"
+  } = e, n = i.useRef(null);
   return (0, r.jsx)(s.yRy, {
-    targetElementRef: d,
+    targetElementRef: n,
     position: "top",
     align: t,
     renderPopout: e => {
       let {
         closePopout: t
       } = e;
-      return n ? (0, r.jsx)(o.l9, {
-        onClose: t,
-        onSelect: true
-      }) : (0, r.jsx)(o.ZP, {
+      return (0, r.jsx)(o.ZP, {
         onClose: t,
         onSelect: true
       })
     },
     children: e => {
-      var t, n;
+      var t, i;
       return (0, r.jsx)(l.zx, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -56,22 +52,22 @@ function d(e) {
         "aria-label": a.intl.string(a.t["+1H47u"]),
         color: l.zx.Colors.PRIMARY,
         className: c.streamOptionsButton,
-        buttonRef: d
-      }, e), n = n = {
+        buttonRef: n
+      }, e), i = i = {
         children: (0, r.jsx)(s.ewm, {
           className: c.settingsIcon,
           size: "refresh_sm",
           color: "currentColor"
         })
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e);
           n.push.apply(n, r)
         }
         return n
-      })(Object(n)).forEach(function(e) {
-        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+      })(Object(i)).forEach(function(e) {
+        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(i, e))
       }), t))
     }
   })

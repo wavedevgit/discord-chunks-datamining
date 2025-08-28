@@ -1,7 +1,6 @@
 /** Chunk was on 46746 **/
 /** chunk id: 586290, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  K: () => S,
   Z: () => b
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -23,14 +22,6 @@ var Chunk951288 = require("./951288.js"),
   Chunk542257 = require("./542257.js"),
   Chunk197571 = require("./197571.js");
 
-function S(e, t, n) {
-  var r;
-  let i = t.find(t => t.id === e);
-  if (null == i) return null;
-  let l = a().reduce(n, (e, t) => (0, c.stringSimilarity)(i.name, t.name) > (0, c.stringSimilarity)(i.name, e.name) ? t : e);
-  return null != (r = null == l ? true : l.id) ? r : null
-}
-
 function b(e) {
   let {
     selectedSource: t,
@@ -39,12 +30,18 @@ function b(e) {
   } = e;
   s()(null != t, "Camera capture device cannot be null");
   let o = (0, p.Z)(),
-    [a, c] = (0, m.Ls)(x.h7.AUDIO_INPUT, {
+    [b, C] = (0, m.Ls)(x.h7.AUDIO_INPUT, {
       location: "CaptureDeviceConfig"
     }),
-    b = a.concat(c),
-    [C, y] = i.useState(S(t.id, o, b));
-  return null != C && l(C), (0, r.jsxs)(u.xJW, {
+    S = b.concat(C),
+    [y, O] = i.useState(function(e, t, n) {
+      var r;
+      let i = t.find(t => t.id === e);
+      if (null == i) return null;
+      let l = a().reduce(n, (e, t) => (0, c.stringSimilarity)(i.name, t.name) > (0, c.stringSimilarity)(i.name, e.name) ? t : e);
+      return null != (r = null == l ? true : l.id) ? r : null
+    }(t.id, o, S));
+  return null != y && l(y), (0, r.jsxs)(u.xJW, {
     title: "Capture Device",
     className: v.modalContent,
     children: [(0, r.jsx)(u.xJW, {
@@ -68,8 +65,8 @@ function b(e) {
         deviceType: x.h7.AUDIO_INPUT,
         location: "CaptureDeviceConfig",
         className: j.__invalid_marginaTop8,
-        selectedDeviceId: C,
-        onSelectDevice: e => (y(e), l(e), false)
+        selectedDeviceId: y,
+        onSelectDevice: e => (O(e), l(e), false)
       })
     })]
   })

@@ -186,14 +186,14 @@ class en extends Chunk98597.ZP {
       embeddedApps: j,
       isSubscriptionGated: x,
       isFavoriteSuggestion: C,
-      withGuildIcon: S,
-      hasStartTime: E
+      withGuildIcon: E,
+      hasStartTime: S
     } = this.props, {
       shouldShowActivities: P,
       shouldShowGuildVerificationPopout: I
     } = this.state, N = (0, Chunk340541.jW)({
       location: "voice_channel"
-    }).entrypoints, Z = this.getVoiceStatesCount(), T = (0, Chunk951288.jsxs)("li", {
+    }).entrypoints, w = this.getVoiceStatesCount(), T = (0, Chunk951288.jsxs)("li", {
       ref: this.ref,
       className: o()(this.getModeClass(), {
         [Chunk55940.disabled]: this.isDisabled()
@@ -234,7 +234,7 @@ class en extends Chunk98597.ZP {
                 ref: this.channelItemRef,
                 className: J.iconVisibility,
                 iconClassName: o()({
-                  [J.iconLive]: v || E
+                  [J.iconLive]: v || S
                 }),
                 hasActiveEvent: v,
                 channel: e,
@@ -257,7 +257,7 @@ class en extends Chunk98597.ZP {
                   channel: e,
                   unread: i,
                   mentionCount: a,
-                  userCount: Z,
+                  userCount: w,
                   embeddedActivitiesCount: j.length,
                   isSubscriptionGated: x
                 }),
@@ -265,7 +265,7 @@ class en extends Chunk98597.ZP {
                   channel: e,
                   embeddedApps: j
                 }),
-                withGuildIcon: S
+                withGuildIcon: E
               }, p), {
                 children: [C && (0, r.jsxs)(r.Fragment, {
                   children: [this.renderAcceptSuggestionButton(), this.renderRemoveSuggestionButton()]
@@ -349,7 +349,7 @@ class en extends Chunk98597.ZP {
       let {
         channel: e
       } = this.props, t = e.getGuildId();
-      null != t && (0, S.n)(t) && (0, C.hk)(t), this.handleVoiceConnect()
+      null != t && (0, E.n)(t) && (0, C.hk)(t), this.handleVoiceConnect()
     }), $(this, "handleVoiceStatusClick", e => {
       let {
         connected: t,
@@ -459,8 +459,8 @@ function ei(e) {
     location: "VoiceChannel"
   }), j = (0, a.e7)([b.Z], () => !!v && null != b.Z.getStartTime(n), [n, v]), {
     isSubscriptionGated: C,
-    needSubscriptionToAccess: S
-  } = (0, E.Z)(n.id), I = (0, x.Z)(), w = (0, a.e7)([G.ZP], () => G.ZP.isFavorite(t.id, n.id)), T = e.connected || (null == I ? true : I.channelId) === n.id, {
+    needSubscriptionToAccess: E
+  } = (0, S.Z)(n.id), I = (0, x.Z)(), Z = (0, a.e7)([G.ZP], () => G.ZP.isFavorite(t.id, n.id)), T = e.connected || (null == I ? true : I.channelId) === n.id, {
     enableHangStatus: A,
     allowChannelTopic: R
   } = N.n.useExperiment({
@@ -470,7 +470,7 @@ function ei(e) {
     autoTrackExposure: false
   }), {
     enableOpenTIVForPing: M
-  } = Z.A.useExperiment({
+  } = w.A.useExperiment({
     guildId: n.guild_id,
     location: "VoiceChannel"
   }, {
@@ -481,7 +481,7 @@ function ei(e) {
     isChannelCollapsed: s,
     voiceStates: c,
     isSubscriptionGated: C,
-    needSubscriptionToAccess: S,
+    needSubscriptionToAccess: E,
     enableConnectedUserLimit: true,
     enableActivities: true
   }), V = T && null == F;
@@ -492,10 +492,10 @@ function ei(e) {
     video: h,
     hasActiveEvent: null != y,
     isSubscriptionGated: C,
-    needSubscriptionToAccess: S
+    needSubscriptionToAccess: E
   }, u, p, e), {
     connected: T,
-    isFavoriteSuggestion: l && !w,
+    isFavoriteSuggestion: l && !Z,
     forceShowButtons: V,
     channelInfo: F,
     resolvedUnreadSetting: d,

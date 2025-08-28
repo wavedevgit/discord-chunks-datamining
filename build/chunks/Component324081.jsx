@@ -65,7 +65,7 @@ function I(e) {
       }
       return e
     }({
-      className: E.channelHeader
+      className: S.channelHeader
     }, p), n = n = {
       tabIndex: 0,
       "data-recents-channel": i.id,
@@ -98,16 +98,16 @@ function N(e) {
     channel: t,
     gotoChannel: n
   } = e;
-  return t.isPrivate() ? (0, r.jsx)(w, {
+  return t.isPrivate() ? (0, r.jsx)(Z, {
     channel: t,
     gotoChannel: n
-  }) : (0, r.jsx)(Z, {
+  }) : (0, r.jsx)(w, {
     channel: t,
     gotoChannel: n
   })
 }
 
-function w(e) {
+function Z(e) {
   let {
     channel: t,
     gotoChannel: n
@@ -116,7 +116,7 @@ function w(e) {
     onClick: n,
     tabIndex: false,
     children: (0, r.jsx)("img", {
-      className: E.dmIcon,
+      className: S.dmIcon,
       src: l,
       alt: "",
       "aria-hidden": true
@@ -124,14 +124,14 @@ function w(e) {
   })
 }
 
-function Z(e) {
+function w(e) {
   let {
     channel: t,
     gotoChannel: n
   } = e, i = (0, a.e7)([v.Z], () => v.Z.getGuild(t.guild_id));
   return null == i ? null : (0, r.jsx)(O.Z, {
     "aria-hidden": true,
-    className: E.guildIcon,
+    className: S.guildIcon,
     guild: i,
     size: O.Z.Sizes.MEDIUM,
     active: true,
@@ -145,34 +145,34 @@ function T(e) {
     channel: t,
     gotoChannel: n,
     mentionCount: i
-  } = e, o = (0, a.e7)([v.Z], () => v.Z.getGuild(t.guild_id)), c = (0, a.e7)([_.Z], () => _.Z.getChannel(t.parent_id)), u = (0, a.e7)([x.ZP], () => x.ZP.getIsMentionLowImportance(t.id)), d = (0, g.KS)(t, o), p = (0, f.ZP)(t, false), h = null == c ? null == o ? true : o.name : "".concat(null == o ? true : o.name, " › ").concat(c.name), b = t.isMultiUserDM() ? S.intl.formatToPlainString(S.t.CxSA5O, {
+  } = e, o = (0, a.e7)([v.Z], () => v.Z.getGuild(t.guild_id)), c = (0, a.e7)([_.Z], () => _.Z.getChannel(t.parent_id)), u = (0, a.e7)([x.ZP], () => x.ZP.getIsMentionLowImportance(t.id)), d = (0, g.KS)(t, o), p = (0, f.ZP)(t, false), h = null == c ? null == o ? true : o.name : "".concat(null == o ? true : o.name, " › ").concat(c.name), b = t.isMultiUserDM() ? E.intl.formatToPlainString(E.t.CxSA5O, {
     members: t.recipients.length + 1
   }) : t.isPrivate() ? (0, r.jsx)(A, {
     channel: t
   }) : (0, r.jsx)(s.P3F, {
-    className: l()(E.subtext, E.guildName),
+    className: l()(S.subtext, S.guildName),
     onClick: n,
     children: h
   });
   return (0, r.jsxs)("div", {
-    className: E.channelNameSection,
+    className: S.channelNameSection,
     children: [(0, r.jsx)(s.X6q, {
       variant: "heading-md/semibold",
-      className: E.channelNameHeader,
+      className: S.channelNameHeader,
       children: (0, r.jsxs)(s.P3F, {
-        className: E.channelName,
+        className: S.channelName,
         onClick: n,
         children: [t.isThread() || t.isGroupDM() || null == d ? null : (0, r.jsx)(d, {
-          className: t.isForumLikeChannel() ? E.forumIcon : true,
+          className: t.isForumLikeChannel() ? S.forumIcon : true,
           width: 18,
           height: 18,
           size: "custom",
           color: "currentColor"
         }), (0, r.jsx)("span", {
-          className: E.channelNameSpan,
+          className: S.channelNameSpan,
           children: p
         }), null != i && i > 0 ? (0, r.jsx)("div", {
-          className: E.badge,
+          className: S.badge,
           children: (0, r.jsx)(s.mAB, {
             count: i,
             color: u ? m.Z.BACKGROUND_ACCENT : m.Z.STATUS_DANGER
@@ -182,7 +182,7 @@ function T(e) {
     }), (0, r.jsx)(s.Text, {
       color: "header-secondary",
       variant: "text-xs/normal",
-      className: E.subtextContainer,
+      className: S.subtextContainer,
       children: b
     })]
   })

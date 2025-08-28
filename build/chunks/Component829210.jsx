@@ -21,21 +21,21 @@ function E(e) {
     visibleContent: E
   } = e, {
     currentPanel: g,
-    setCurrentPanel: f,
-    setShowNavigationMobile: O
+    setCurrentPanel: O,
+    setShowNavigationMobile: I
   } = (0, u.t)(), {
-    useTitle: I,
-    trailing: T
-  } = _, A = I(), C = null != (o = null == T || null == (t = T.useDecoration) ? true : t.call(T)) ? o : null, y = null != (a = null == T || null == (n = T.useBadgeCount) ? true : n.call(T)) ? a : null, S = r.useMemo(() => _.layout.flatMap(e => e.layout), [_]), v = null != E && (null == T || null == (l = T.newIndicatorDismissibleContentTypes) ? true : l.includes(E)), p = (null == g ? true : g.key) === _.key;
+    useTitle: f,
+    trailing: A
+  } = _, T = f(), C = null != (o = null == A || null == (t = A.useDecoration) ? true : t.call(A)) ? o : null, y = null != (a = null == A || null == (n = A.useBadgeCount) ? true : n.call(A)) ? a : null, S = r.useMemo(() => _.layout.flatMap(e => e.layout), [_]), P = null != E && (null == A || null == (l = A.newIndicatorDismissibleContentTypes) ? true : l.includes(E)), p = (null == g ? true : g.key) === _.key;
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(c.Z, {
       icon: _.icon,
-      title: A,
+      title: T,
       active: p,
       trailing: (0, i.jsx)(() => {
-        if (v) {
+        if (P) {
           var e;
-          return null != (e = null == T ? true : T.newIndicatorBadgeOverride) ? e : (0, i.jsx)(s.IGR, {
+          return null != (e = null == A ? true : A.newIndicatorBadgeOverride) ? e : (0, i.jsx)(s.IGR, {
             text: d.intl.string(d.t.y2b7CA)
           })
         }
@@ -44,7 +44,7 @@ function E(e) {
         }) : null != C ? C : null
       }, {}),
       onClick: () => {
-        f(_), O(false)
+        O(_), I(false)
       }
     }), p && S.length > 1 && (0, i.jsx)(N, {
       categories: S

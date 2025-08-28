@@ -1,7 +1,7 @@
 /** Chunk was on 46746 **/
 /** chunk id: 328242, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => x
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -10,14 +10,13 @@ var Chunk120356 = require("./120356.js"),
   Chunk268146 = require("./268146.js"),
   Chunk481060 = require("./481060.js"),
   Chunk63063 = require("./63063.js"),
-  Chunk668519 = require("./668519.js"),
   Chunk855403 = require("./855403.js"),
   Chunk615161 = require("./615161.jsx"),
   Chunk637824 = require("./637824.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk602804 = require("./602804.js");
 
-function p(e) {
+function h(e) {
   let {
     source: t
   } = e;
@@ -25,7 +24,7 @@ function p(e) {
     size: "xs"
   }) : t.id.startsWith(s.vA.WINDOW) ? null != t.icon && "" !== t.icon ? (0, r.jsx)("img", {
     src: t.icon,
-    className: h.sourceIcon,
+    className: m.sourceIcon,
     alt: ""
   }) : (0, r.jsx)(o.GON, {
     size: "xs"
@@ -34,86 +33,79 @@ function p(e) {
   })
 }
 
-function x(e) {
+function p(e) {
   let {
     source: t,
     selected: n,
-    twoClickVariant: i,
-    onClick: s
+    onClick: i
   } = e, {
-    url: a,
-    name: c
+    url: s,
+    name: a
   } = t;
   return (0, r.jsxs)(o.P3F, {
-    onClick: () => s(t),
-    className: l()(h.source, {
-      [h.selectedSource]: n
+    onClick: () => i(t),
+    className: l()(m.source, {
+      [m.selectedSource]: n
     }),
     children: [(0, r.jsx)("div", {
-      className: h.sourcePreviewContainer,
+      className: m.sourcePreviewContainer,
       children: (0, r.jsxs)("div", {
-        className: h.sourcePreview,
+        className: m.sourcePreview,
         children: [(0, r.jsx)("img", {
-          src: a,
-          className: h.sourcePreviewImage,
+          src: s,
+          className: m.sourcePreviewImage,
           alt: ""
-        }), !i && (0, r.jsx)("div", {
-          className: h.sourceOverlay,
+        }), (0, r.jsx)("div", {
+          className: m.sourceOverlay,
           children: (0, r.jsx)("div", {
-            className: h.sourceOverlayCTA,
+            className: m.sourceOverlayCTA,
             children: (0, r.jsx)(o.Text, {
               variant: "text-sm/medium",
               color: "button-filled-white-text",
-              children: m.intl.string(m.t.z7WGho)
+              children: f.intl.string(f.t.z7WGho)
             })
           })
         })]
       })
     }), (0, r.jsxs)("div", {
-      className: h.sourceNameContainer,
-      children: [(0, r.jsx)(p, {
+      className: m.sourceNameContainer,
+      children: [(0, r.jsx)(h, {
         source: t
       }), (0, r.jsx)(o.Text, {
         variant: "text-sm/medium",
-        className: h.sourceName,
-        children: c
+        className: m.sourceName,
+        children: a
       })]
     })]
   })
 }
 
-function g(e) {
+function x(e) {
   var t;
   let {
     onClick: n
-  } = e, {
-    twoClickVariant: i
-  } = (0, c.a)({
-    autoTrackExposure: false,
-    location: "sourcegrid"
-  }), [{
-    windowSources: l,
-    deviceSources: a,
-    screenSources: f,
-    sourceType: m,
-    fetchingSources: p,
-    selectedSource: g
-  }] = (0, u.E_)();
-  return p ? (0, r.jsx)("div", {
-    className: h.loading,
+  } = e, [{
+    windowSources: i,
+    deviceSources: l,
+    screenSources: a,
+    sourceType: u,
+    fetchingSources: f,
+    selectedSource: h
+  }] = (0, d.E_)();
+  return f ? (0, r.jsx)("div", {
+    className: m.loading,
     children: (0, r.jsx)(o.$jN, {})
-  }) : (t = m === s.vA.WINDOW ? l : m === s.vA.SCREEN ? f : a, m === s.vA.CAMERA && 0 === t.length ? (0, r.jsx)(_, {}) : (0, r.jsx)("div", {
-    className: h.root,
-    children: t.map(e => (0, r.jsx)(x, {
+  }) : (t = u === s.vA.WINDOW ? i : u === s.vA.SCREEN ? a : l, u === s.vA.CAMERA && 0 === t.length ? (0, r.jsx)(g, {}) : (0, r.jsx)("div", {
+    className: m.root,
+    children: t.map(e => (0, r.jsx)(p, {
       onClick: n,
       source: e,
-      selected: null != g && "windowHandle" in g ? (0, d.Z)(e.id, g.windowHandle) : (null == g ? true : g.id) === e.id,
-      twoClickVariant: i
+      selected: null != h && "windowHandle" in h ? (0, c.Z)(e.id, h.windowHandle) : (null == h ? true : h.id) === e.id
     }, e.id))
   }))
 }
 
-function _() {
+function g() {
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk602804.emptyState,
     children: [(0, Chunk951288.jsx)(Chunk481060.Odl, {

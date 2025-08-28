@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk870525 = require("./870525.js");
 
-function S(e, t, n) {
+function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,7 +34,7 @@ function S(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let E = {
+let S = {
   UP: u().throttle(() => (0, Chunk460181.GN)("ddr-up"), 100),
   DOWN: u().throttle(() => (0, Chunk460181.GN)("ddr-down"), 100),
   LEFT: u().throttle(() => (0, Chunk460181.GN)("ddr-left"), 100),
@@ -68,7 +68,7 @@ function N(e) {
   })
 }
 
-function w() {
+function Z() {
   let e = Chunk647438.useMemo(() => u()((0, Chunk612226.Rv)()).groupBy(e => e.group).value(), []);
   return (0, Chunk951288.jsx)("div", {
     className: Chunk870525.keyboardShortcutList,
@@ -110,7 +110,7 @@ function w() {
     })
   })
 }
-class Z extends Chunk647438.PureComponent {
+class w extends Chunk647438.PureComponent {
   componentDidMount() {
     this.lastInputedKeys = [], Chunk585483.S.subscribe(Chunk981631.CkL.SCROLL_PAGE_UP, this.scrollPageUp), Chunk585483.S.subscribe(Chunk981631.CkL.SCROLL_PAGE_DOWN, this.scrollPageDown), window.addEventListener("keydown", this.handleKeyDown, {
       capture: true
@@ -173,13 +173,13 @@ class Z extends Chunk647438.PureComponent {
         ref: this.scrollerRef,
         fade: true,
         children: (0, Chunk951288.jsx)(Chunk481060.y5t, {
-          children: (0, Chunk951288.jsx)(w, {})
+          children: (0, Chunk951288.jsx)(Z, {})
         })
       })]
     })
   }
   constructor(...e) {
-    super(...e), S(this, "state", {
+    super(...e), E(this, "state", {
       UP: false,
       DOWN: false,
       LEFT: false,
@@ -188,31 +188,31 @@ class Z extends Chunk647438.PureComponent {
       scaleX: new d.Z.Value(1),
       scaleY: new d.Z.Value(0),
       animating: false
-    }), S(this, "scrollerRef", i.createRef()), S(this, "lastInputedKeys", []), S(this, "scrollPageUp", () => {
+    }), E(this, "scrollerRef", i.createRef()), E(this, "lastInputedKeys", []), E(this, "scrollPageUp", () => {
       let e = this.scrollerRef.current;
       s()(null != e, "Scroller is pagedUp when not mounted"), e.scrollPageUp({
         animate: true
       })
-    }), S(this, "scrollPageDown", () => {
+    }), E(this, "scrollPageDown", () => {
       let e = this.scrollerRef.current;
       s()(null != e, "Scroller is pagedDown when not mounted"), e.scrollPageDown({
         animate: true
       })
-    }), S(this, "arrowUp", e => {
+    }), E(this, "arrowUp", e => {
       let {
         direction: t
       } = e;
       this.setState({
         [t]: false
       })
-    }), S(this, "arrowDown", e => {
+    }), E(this, "arrowDown", e => {
       let {
         direction: t
       } = e;
-      E[t](), this.setState({
+      S[t](), this.setState({
         [t]: true
       })
-    }), S(this, "componentWillLeave", e => {
+    }), E(this, "componentWillLeave", e => {
       this.setState({
         animating: true
       }), this.state.opacity.setValue(1), this.state.scaleX.setValue(.5), this.state.scaleY.setValue(1), d.Z.sequence([d.Z.timing(this.state.opacity, {
@@ -220,9 +220,9 @@ class Z extends Chunk647438.PureComponent {
         duration: 800,
         easing: d.Z.Easing.cubic
       })]).start(e)
-    }), S(this, "toggleOpacity", () => {
+    }), E(this, "toggleOpacity", () => {
       1 === this.state.opacity._value ? this.state.opacity.setValue(0) : this.state.opacity.setValue(1)
-    }), S(this, "getStyles", () => ({
+    }), E(this, "getStyles", () => ({
       opacity: this.state.opacity.interpolate({
         inputRange: [0, 1],
         outputRange: [0, 1]
@@ -238,19 +238,19 @@ class Z extends Chunk647438.PureComponent {
           outputRange: [0, 1]
         })
       }]
-    })), S(this, "handleKeyDown", e => {
+    })), E(this, "handleKeyDown", e => {
       if (this.lastInputedKeys.push(e.keyCode), this.lastInputedKeys = this.lastInputedKeys.slice(false), this.lastInputedKeys[0] === j.yXg.H && this.lastInputedKeys[1] === j.yXg.H && this.lastInputedKeys[2] === j.yXg.ARROW_RIGHT && this.lastInputedKeys[3] === j.yXg.N && this.lastInputedKeys[4] === j.yXg.K && this.props.activateRagingDemon(), this.props.keyboardModeEnabled) return;
       let t = P(e);
       null !== t && (e.stopPropagation(), e.preventDefault(), this.arrowDown({
         direction: t
       }))
-    }), S(this, "handleKeyUp", e => {
+    }), E(this, "handleKeyUp", e => {
       if (this.props.keyboardModeEnabled) return;
       let t = P(e);
       null !== t && (e.stopPropagation(), e.preventDefault(), this.arrowUp({
         direction: t
       }))
-    }), S(this, "onArrowClick", e => {
+    }), E(this, "onArrowClick", e => {
       this.arrowDown({
         direction: e
       })
@@ -265,7 +265,7 @@ function T(e) {
     className: l,
     children: a
   } = e, [s, c] = i.useState(t), u = i.useCallback(() => {
-    E[n](), c(true)
+    S[n](), c(true)
   }, [n]);
   return i.useEffect(() => {
     if (s) {
@@ -309,7 +309,7 @@ function A(e) {
           handleDemonClose: function() {
             c(false), setTimeout(n, 500)
           }
-        }, "raging-demo") : (0, r.jsx)(Z, {
+        }, "raging-demo") : (0, r.jsx)(w, {
           content: u,
           keyboardModeEnabled: d,
           activateRagingDemon: function() {

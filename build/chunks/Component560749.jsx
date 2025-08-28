@@ -1,7 +1,7 @@
 /** Chunk was on 46746 **/
 /** chunk id: 560749, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => P
 }), require("./35282.js"), require("./539854.js"), require("./388685.js"), require("./387201.js"), require("./642613.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -35,7 +35,7 @@ function T(e) {
   let {
     result: t,
     onSelectChannel: n
-  } = e, i = (0, o.e7)([v.Z], () => v.Z.getGuild(t.record.guild_id)), l = (0, o.Wu)([C.ZP, b.default], () => C.ZP.getVoiceStatesForChannel(t.record).map(e => b.default.getUser(e.user.id)).filter(y.lm));
+  } = e, i = (0, o.e7)([v.Z], () => v.Z.getGuild(t.record.guild_id)), l = (0, o.Wu)([S.ZP, C.default], () => S.ZP.getVoiceStatesForChannel(t.record).map(e => C.default.getUser(e.user.id)).filter(y.lm));
   return (0, r.jsxs)(a.P3F, {
     className: N.channelResult,
     onClick: () => n(t.record.id),
@@ -68,7 +68,7 @@ function T(e) {
   })
 }
 
-function E(e) {
+function P(e) {
   let {
     onSelectChannel: t,
     className: n
@@ -80,34 +80,34 @@ function E(e) {
     searchOptions: {
       frecencyBoosters: true
     }
-  }), b = (0, o.Wu)([S.Z, _.ZP, x.Z, v.Z, j.Z], () => {
+  }), C = (0, o.Wu)([b.Z, _.ZP, x.Z, v.Z, j.Z], () => {
     let e = [],
-      t = S.Z.getGuildId();
+      t = b.Z.getGuildId();
     if (null == t) return e;
     for (let n of _.ZP.getVocalChannelIds(t)) {
       let t = x.Z.getChannel(n);
       null != t && (0, O.JL)(t, v.Z, j.Z) && e.push(t)
     }
     return e
-  }), C = (0, o.Wu)([f.Z, x.Z, g.Z, v.Z, j.Z], () => {
+  }), S = (0, o.Wu)([f.Z, x.Z, g.Z, v.Z, j.Z], () => {
     let e = [],
       t = new Set;
     for (let n of f.Z.getChannelHistory()) {
       let r = x.Z.getChannel(n);
-      (null == r ? true : r.type) === I.d4z.GUILD_VOICE && (0, O.JL)(r, v.Z, j.Z) && (t.add(r.id), e.push(r))
+      (null == r ? true : r.type) === Z.d4z.GUILD_VOICE && (0, O.JL)(r, v.Z, j.Z) && (t.add(r.id), e.push(r))
     }
-    for (let n of g.Z.getFrequentlyWithoutFetchingLatest()) n instanceof h.Sf && n.type === I.d4z.GUILD_VOICE && !t.has(n.id) && (0, O.JL)(n, v.Z, j.Z) && (t.add(n.id), e.push(n));
+    for (let n of g.Z.getFrequentlyWithoutFetchingLatest()) n instanceof h.Sf && n.type === Z.d4z.GUILD_VOICE && !t.has(n.id) && (0, O.JL)(n, v.Z, j.Z) && (t.add(n.id), e.push(n));
     return e
-  }), E = i.useMemo(() => {
-    let e = new Set(C.map(e => e.id)),
-      t = new Set(b.map(e => e.id));
-    return [...b.toSorted((t, n) => e.has(t.id) && !e.has(n.id) ? false : e.has(n.id) && !e.has(t.id) ? 1 : 0).map(e => (0, d.Z)(e.id)).filter(y.lm), ...C.filter(e => !t.has(e.id)).map(e => (0, d.Z)(e.id)).filter(y.lm)]
-  }, [C, b]), R = "" !== u ? p : E;
+  }), P = i.useMemo(() => {
+    let e = new Set(S.map(e => e.id)),
+      t = new Set(C.map(e => e.id));
+    return [...C.toSorted((t, n) => e.has(t.id) && !e.has(n.id) ? false : e.has(n.id) && !e.has(t.id) ? 1 : 0).map(e => (0, d.Z)(e.id)).filter(y.lm), ...S.filter(e => !t.has(e.id)).map(e => (0, d.Z)(e.id)).filter(y.lm)]
+  }, [S, C]), R = "" !== u ? p : P;
   return (0, r.jsxs)("div", {
     className: s()(N.root, n),
     children: [(0, r.jsx)(a.E1j, {
       className: N.searchBar,
-      placeholder: w.intl.string(w.t["3jvv+/"]),
+      placeholder: I.intl.string(I.t["3jvv+/"]),
       query: u,
       onChange: e => l({
         query: e,
@@ -123,7 +123,7 @@ function E(e) {
         return (0, r.jsx)(a.Text, {
           variant: "text-xs/semibold",
           color: "text-muted",
-          children: w.intl.string(Z.default.FZ9Fl5)
+          children: I.intl.string(w.default.FZ9Fl5)
         })
       },
       sections: [R.length],
@@ -138,11 +138,11 @@ function E(e) {
           onSelectChannel: t
         }, i.record.id)
       }
-    }) : (0, r.jsx)(P, {})]
+    }) : (0, r.jsx)(E, {})]
   })
 }
 
-function P() {
+function E() {
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk603410.emptyState,
     children: [(0, Chunk951288.jsx)(Chunk481060._Ve, {

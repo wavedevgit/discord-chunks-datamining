@@ -29,28 +29,28 @@ function j(e) {
     withMargin: l
   } = e, j = (0, b.Z)(t, "GuildPowerupsProgressBar"), x = (0, m.Z)(t.id), C = i.useCallback(() => {
     (0, O.Z)(t.id, p.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY)
-  }, [t.id]), S = (0, c.e7)([f.Z], () => {
+  }, [t.id]), E = (0, c.e7)([f.Z], () => {
     var e;
     return null != (e = f.Z.getCountForGuild(t.id)) ? e : 0
   });
   i.useEffect(() => {
-    S !== t.premiumSubscriberCount && (0, h.v)(t.id, t.premiumSubscriberCount)
-  }, [t.id, S, t.premiumSubscriberCount]);
-  let E = Math.min(S / j * 100, 100),
+    E !== t.premiumSubscriberCount && (0, h.v)(t.id, t.premiumSubscriberCount)
+  }, [t.id, E, t.premiumSubscriberCount]);
+  let S = Math.min(E / j * 100, 100),
     [P, I] = (0, u.q_F)(() => ({
-      width: S === t.premiumSubscriberCount ? "calc(".concat(E, "% - 4px)") : "0%",
+      width: E === t.premiumSubscriberCount ? "calc(".concat(S, "% - 4px)") : "0%",
       config: {
         tension: 250,
         damping: 5,
         mass: 1
       }
-    }), "respect-motion-settings", [S, t.premiumSubscriberCount]);
+    }), "respect-motion-settings", [E, t.premiumSubscriberCount]);
   i.useEffect(() => {
     I({
-      width: "calc(".concat(E, "% - 4px)")
+      width: "calc(".concat(S, "% - 4px)")
     })
-  }, [E, I]);
-  let N = S >= j;
+  }, [S, I]);
+  let N = E >= j;
   return (0, r.jsx)(u.P3F, {
     "aria-label": true,
     role: "button",
@@ -111,7 +111,7 @@ function j(e) {
         className: v.progressContainer
       }), (0, r.jsx)(a.animated.div, {
         className: o()(v.progress, {
-          [v.progressLow]: E <= 5
+          [v.progressLow]: S <= 5
         }),
         style: P
       }), (0, r.jsxs)("div", {
@@ -133,9 +133,9 @@ function j(e) {
             className: o()(v.text, v.boostCountText),
             variant: "text-xs/semibold",
             children: N ? _.intl.formatToPlainString(y.default["Ehpq+/"], {
-              appliedBoostCount: S
+              appliedBoostCount: E
             }) : _.intl.formatToPlainString(y.default["/rbPDg"], {
-              appliedBoostCount: S,
+              appliedBoostCount: E,
               maxBoostCount: j
             })
           }), (0, r.jsx)(g.Z, {

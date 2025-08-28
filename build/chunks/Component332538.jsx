@@ -1,7 +1,7 @@
 /** Chunk was on 91488 **/
 /** chunk id: 332538, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Wj: () => w,
+  Wj: () => Z,
   ZP: () => N
 }), require("./388685.js"), require("./361932.js"), require("./187205.js");
 var Chunk951288 = require("./951288.js"),
@@ -41,7 +41,7 @@ function N(e) {
       let l = (0, x.Z)(e).available,
         {
           shouldShow: o
-        } = (0, S._)(e, "useGuildPowerupsChannelListIndicators"),
+        } = (0, E._)(e, "useGuildPowerupsChannelListIndicators"),
         d = (0, u.OA)(a.z.VANITY_URL_POWERUP_ROLLBACK_NOTIFICATION, e),
         p = o && !d;
       return i.useMemo(() => {
@@ -78,18 +78,18 @@ function N(e) {
         let n = (0, v.qI)(e, "GuildPowerupsChannelRow"),
           r = (0, _.i)(e, "GuildPowerupsChannelRow");
         return i.useMemo(() => {
-          if (r && !Array.from(E.os[E.Du.GUILD_TAG_BADGE_PACKS_WAVE_ONE]).some(e => {
+          if (r && !Array.from(S.os[S.Du.GUILD_TAG_BADGE_PACKS_WAVE_ONE]).some(e => {
               var n;
               return (null == t || null == (n = t.unlockedPowerups) ? true : n[e]) != null
-            })) return E.Du.GUILD_TAG_BADGE_PACKS_WAVE_ONE;
+            })) return S.Du.GUILD_TAG_BADGE_PACKS_WAVE_ONE;
           if (n) {
             var i;
             let n = l.A$,
-              r = E.Rx[n],
+              r = S.Rx[n],
               o = (null == t || null == (i = t.unlockedPowerups) ? true : i[n]) != null;
-            if (null == r && !o) return E.Du.VANITY_URL;
+            if (null == r && !o) return S.Du.VANITY_URL;
             let a = (0, g.Jh)(e);
-            if (null != a && null != r && a < r && !o) return E.Du.VANITY_URL
+            if (null != a && null != r && a < r && !o) return S.Du.VANITY_URL
           }
           return 0
         }, [n, r, e, t])
@@ -97,14 +97,14 @@ function N(e) {
         if (null == t || o || b) return;
         let n = function(e, t) {
           let n = g.Oe.find(e => {
-            let n = E.Cp[e],
+            let n = S.Cp[e],
               r = null != n ? t.unlockedPowerups[n] : true;
-            return null != r && r.user_id !== E.Fq
+            return null != r && r.user_id !== S.Fq
           });
           if (null == n) return;
-          let r = E.Q1[n];
+          let r = S.Q1[n];
           if (null == r || (0, p.OY)(r, e)) return;
-          let i = E.Cp[n],
+          let i = S.Cp[n],
             l = null != i ? t.allPowerups[i] : true;
           if (null != l) return {
             type: y.J.LEVEL_REACHED,
@@ -118,9 +118,9 @@ function N(e) {
         let r = function(e, t, n) {
           var r, i;
           let l = null != (i = null == (r = h.Z.getGuild(e)) ? true : r.premiumTier) ? i : P.Eu4.NONE,
-            o = Array.from(E.Tg.values()).flatMap(r => r.length <= 0 || r.some(e => {
+            o = Array.from(S.Tg.values()).flatMap(r => r.length <= 0 || r.some(e => {
               if (null != t.unlockedPowerups[e]) returntrue;
-              let n = E.Rx[e];
+              let n = S.Rx[e];
               return null != n && !!(l >= n)
             }) ? [] : r.map(r => {
               let i = t.allPowerups[r];
@@ -144,7 +144,7 @@ function N(e) {
           }
         }(e, t, s);
         if (null != r) return r
-      }, [e, t, o, b, s]), [C, S] = (0, d.bf)(null != O ? a.z.GUILD_POWERUP_NOTIFICATION : null, {
+      }, [e, t, o, b, s]), [C, E] = (0, d.bf)(null != O ? a.z.GUILD_POWERUP_NOTIFICATION : null, {
         cooldownDurationMs: y.d
       });
       return i.useMemo(() => {
@@ -154,7 +154,7 @@ function N(e) {
             markAsDismissed: r
           };
           if (b) {
-            let e = E.os[c],
+            let e = S.os[c],
               n = Object.values(t.allPowerups).filter(t => e.has(t.skuId));
             if (0 === n.length) return;
             return {
@@ -184,7 +184,7 @@ function N(e) {
               return e
             }({}, O), n = n = {
               markAsDismissed: e => {
-                S(e), O.markAsDismissed(e)
+                E(e), O.markAsDismissed(e)
               }
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
               var n = Object.keys(e);
@@ -198,7 +198,7 @@ function N(e) {
             }), e
           }
         }
-      }, [t, o, r, O, C, S, b, m, c])
+      }, [t, o, r, O, C, E, b, m, c])
     }(e, n);
   if (null !== n && (null != m || I || null != N)) return {
     trailing: m,
@@ -207,7 +207,7 @@ function N(e) {
   }
 }
 
-function w(e) {
+function Z(e) {
   let t = (0, o.e7)([O.Z], () => O.Z.getStateForGuild(e)),
     n = N(e);
   i.useEffect(() => {
@@ -217,9 +217,9 @@ function w(e) {
     null == n || null == (e = n.popout) || e.markAsDismissed(I.L.AUTO_DISMISS)
   }, [n]), i.useEffect(() => {
     null != t && g.Oe.forEach(n => {
-      let r = E.Cp[n];
+      let r = S.Cp[n];
       if (null == r || null == t.unlockedPowerups[r]) return;
-      let i = E.Q1[n];
+      let i = S.Q1[n];
       null != i && (0, p.Qd)(i, e, false, I.L.AUTO_DISMISS)
     })
   }, [e, t])

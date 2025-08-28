@@ -28,17 +28,17 @@ function O(e) {
     onClick: y,
     enableHangStatus: _,
     allowChannelTopic: v
-  } = e, j = (0, a.e7)([u.Z], () => u.Z.getChannelStatus(t)), x = null != j && j.length > 0, C = (0, c.ZP)(t, true), S = (!_ || !!v) && C, E = null != O && O.length > 0;
+  } = e, j = (0, a.e7)([u.Z], () => u.Z.getChannelStatus(t)), x = null != j && j.length > 0, C = (0, c.ZP)(t, true), E = (!_ || !!v) && C, S = null != O && O.length > 0;
   if (i.useEffect(() => {
       x && h.default.track(f.rMx.VOICE_CHANNEL_TOPIC_VIEWED, {
         channel_id: t.id,
         guild_id: t.guild_id
       })
     }, [x, t.id, t.guild_id]), null == t.guild_id) return null;
-  let P = o()(m.statusDiv, n && S ? m.hoverable : null);
+  let P = o()(m.statusDiv, n && E ? m.hoverable : null);
   return x ? (0, r.jsx)(s.P3F, {
     className: P,
-    onClick: S ? y : true,
+    onClick: E ? y : true,
     children: (0, r.jsx)(s.Text, {
       variant: "text-xs/medium",
       className: o()(m.statusText, b.markup),
@@ -48,7 +48,7 @@ function O(e) {
         })
       })
     })
-  }) : n && S && (!E || l) ? (0, r.jsxs)(s.P3F, {
+  }) : n && E && (!S || l) ? (0, r.jsxs)(s.P3F, {
     className: P,
     onClick: y,
     children: [(0, r.jsx)(s.Text, {
@@ -60,7 +60,7 @@ function O(e) {
       className: m.pencilIcon,
       size: "xxs"
     })]
-  }) : E ? (0, r.jsx)(d.Z, {
+  }) : S ? (0, r.jsx)(d.Z, {
     children: O
   }) : null
 }

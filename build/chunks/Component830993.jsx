@@ -69,13 +69,13 @@ function I(e) {
       }), Object.values(e)
     }, [P], a.pF);
   return I.length + x.length === 0 ? null : (0, r.jsxs)(s.Ttm, {
-    className: E.container,
+    className: S.container,
     children: [(0, r.jsx)(N, {
       channel: o,
       isChannelSelected: b,
       voiceStatesCount: null != (l = null == g ? true : g.length) ? l : 0
     }), (0, r.jsx)("div", {
-      className: E.headerDivider
+      className: S.headerDivider
     }), x.map((e, t) => {
       var n;
       return (0, r.jsx)(_.Z, {
@@ -97,13 +97,13 @@ function I(e) {
       }, t)
     }), y && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
-        className: E.headerDivider
+        className: S.headerDivider
       }), (0, r.jsx)("div", {
-        className: E.settingNudgeText,
+        className: S.settingNudgeText,
         children: (0, r.jsx)(s.Text, {
           variant: "text-xs/normal",
           tag: "span",
-          children: S.intl.format(S.t.ePyoY2, {
+          children: E.intl.format(E.t.ePyoY2, {
             onClick: () => {
               (0, s.ZDy)(async () => {
                 let {
@@ -162,7 +162,7 @@ function N(e) {
     selected: n
   }), u = (0, a.e7)([f.Z], () => f.Z.getGuild(t.guild_id));
   return null == (0, h.KS)(t, u) ? null : (0, r.jsxs)("div", {
-    className: o()(E.popoutHeaderContainer, P.popoutHeaderContainer),
+    className: o()(S.popoutHeaderContainer, P.popoutHeaderContainer),
     children: [(0, r.jsx)(v.Z, {
       channel: t
     }), c ? (0, r.jsx)(j.Z, {

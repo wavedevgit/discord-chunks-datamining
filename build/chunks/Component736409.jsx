@@ -46,7 +46,7 @@ let v = e => {
     return null
   }({
     isForceShowSharingPopout: n
-  }), S = (0, i.useRef)(null);
+  }), E = (0, i.useRef)(null);
   return ((0, i.useEffect)(() => {
     n && g.default.track(O.rMx.OPEN_POPOUT, {
       type: "SharingPrivacyPopout"
@@ -64,7 +64,7 @@ let v = e => {
           }), v(false), x(false)
         };
         return (0, r.jsx)(a.yRy, {
-          targetElementRef: S,
+          targetElementRef: E,
           shouldShow: true,
           spacing: 10,
           position: "top",
@@ -81,7 +81,7 @@ let v = e => {
             })
           },
           children: () => (0, r.jsx)(a.P3F, {
-            innerRef: S,
+            innerRef: E,
             onClick: e,
             children: t
           })

@@ -118,7 +118,7 @@ let B = Chunk647438.memo(function e(t) {
     eu = (0, c.v)(s),
     ed = (0, O.ro)(s.id, s.channel_id),
     ep = (0, p.Z)(s),
-    eh = (0, S.iG)(s);
+    eh = (0, E.iG)(s);
   return ea ? (0, r.jsx)(e, G(U({}, t), {
     message: Y.message,
     channel: q,
@@ -136,11 +136,11 @@ let B = Chunk647438.memo(function e(t) {
       [k.groupStart]: t.isGroupStart
     }),
     childrenRepliedMessage: (0, A.Z)(s, l, K, Y, R),
-    childrenHeader: (0, w.Z)(G(U({}, t), {
+    childrenHeader: (0, Z.Z)(G(U({}, t), {
       author: el,
       guildId: l.guild_id
     })),
-    childrenAccessories: (0, r.jsx)(E.BB, {
+    childrenAccessories: (0, r.jsx)(S.BB, {
       channel: l,
       message: s,
       hasSpoilerEmbeds: ei,
@@ -165,7 +165,7 @@ let B = Chunk647438.memo(function e(t) {
     }),
     childrenExecutedCommand: (0, T.Z)(s, l, R),
     childrenMessageContent: (0, N.Z)(t, er),
-    childrenSystemMessage: (0, Z.Z)(t),
+    childrenSystemMessage: (0, w.Z)(t),
     onContextMenu: B,
     onClick: V,
     hasThread: false !== z && null != eo && s.hasFlag(D.iLy.HAS_THREAD),

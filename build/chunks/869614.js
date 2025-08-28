@@ -2,14 +2,14 @@
 /** chunk id: 869614, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => o
+  Z: () => l
 }), require("./388685.js");
-let l = new Set(["nvidia"]);
+let n = new Set(["nvidia"]);
 
-function o(e) {
+function l(e) {
   for (let t of Object.keys(e)) {
     let r = e[t];
-    if (null != r && null == r.error && l.has(t)) returntrue
+    if (null != r && null == r.error && n.has(t)) returntrue
   }
   returnfalse
 }

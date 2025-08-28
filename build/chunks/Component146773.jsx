@@ -1,7 +1,7 @@
 /** Chunk was on 91488 **/
 /** chunk id: 146773, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  B: () => E
+  B: () => S
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -45,7 +45,7 @@ function x(e) {
 }
 let C = "DRAGGABLE_GUILD_CHANNEL";
 
-function S(e, t) {
+function E(e, t) {
   var n, r;
   if (null == e || null == t) return null;
   if (e !== j.I_8) return f.Z.getChannel(t);
@@ -54,19 +54,19 @@ function S(e, t) {
   return null == l ? true : l.channel
 }
 
-function E(e) {
+function S(e) {
   return (0, i.G)(C, {
     drop(e, t) {
       let n, i = y.Z.getGuildId(),
         l = t.getItem(),
-        c = (0, _.if)(S(i, l.id), l.position, e.channel, e.position, l.channelList);
+        c = (0, _.if)(E(i, l.id), l.position, e.channel, e.position, l.channelList);
       if (null == c) return;
-      let d = S(i, l.id);
+      let d = E(i, l.id);
       if (null == d) return;
       let p = g.Z.getCategories(i),
         h = b.Z.getGuild(i);
       if (null == h) return;
-      let m = (0, _.Dn)(d, S(i, c.referenceId), c.parentId, p);
+      let m = (0, _.Dn)(d, E(i, c.referenceId), c.parentId, p);
       if (0 !== m.length) {
         if (i === j.I_8) return void(0, u.s3)(m);
         if (m = m.filter(e => {

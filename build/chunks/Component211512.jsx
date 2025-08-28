@@ -19,7 +19,7 @@ function s(e) {
     useVariant: c,
     useDisabled: d,
     onClick: _
-  } = t, E = s(), N = null == u ? true : u(), g = n(), f = null == c ? true : c(), O = null == d ? true : d();
+  } = t, E = s(), N = null == u ? true : u(), g = n(), O = null == c ? true : c(), I = null == d ? true : d();
   return (0, i.jsx)(r.x, {
     title: E,
     className: a.settingButtonContainer,
@@ -31,8 +31,8 @@ function s(e) {
       }), (0, i.jsx)(o.zxk, {
         onClick: _,
         text: g,
-        variant: f,
-        disabled: O
+        variant: O,
+        disabled: I
       })]
     })
   })

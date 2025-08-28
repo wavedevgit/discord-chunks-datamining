@@ -79,8 +79,8 @@ function M(e) {
 function L(e) {
   let {
     item: t
-  } = e, n = R, i = Z.intl.string(Z.t.SJTHJS);
-  return t.completed && (n = A, i = Z.intl.string(Z.t.f6RTAA)), (0, r.jsxs)("div", {
+  } = e, n = R, i = w.intl.string(w.t.SJTHJS);
+  return t.completed && (n = A, i = w.intl.string(w.t.f6RTAA)), (0, r.jsxs)("div", {
     className: T.lifecycleContainer,
     children: [(0, r.jsx)("img", {
       className: T.checkbox,
@@ -110,7 +110,7 @@ let U = Chunk647438.memo(function(e) {
       ackedBeforeId: s
     } = e, {
       analyticsLocations: u
-    } = (0, c.ZP)(), h = (0, E.I)(l, s), g = i.useCallback(async () => {
+    } = (0, c.ZP)(), h = (0, S.I)(l, s), g = i.useCallback(async () => {
       if (h || (0, v.wt)(l), null != l.item_enum && l.item_enum === j.AM.FIND_FRIENDS) return void(0, o.ZDy)(async () => {
         let {
           default: e
@@ -153,7 +153,7 @@ let U = Chunk647438.memo(function(e) {
             })
           } else await (0, d.Z)(r)
         }
-        O.default.track(w.rMx.NOTIFICATION_CENTER_ACTION, {
+        O.default.track(Z.rMx.NOTIFICATION_CENTER_ACTION, {
           action_type: j.ud.CLICKED,
           notification_center_id: l.id,
           item_type: l.type,
@@ -168,19 +168,19 @@ let U = Chunk647438.memo(function(e) {
       applicationId: l.applicationId
     }));
     let b = null != l.local_id,
-      S = (0, C.Z)({
+      E = (0, C.Z)({
         item: l,
         renderApplication: e => (0, r.jsx)(k, {
           applicationId: e
         })
       }),
       {
-        emoji_id: Z,
+        emoji_id: w,
         emoji_name: A
       } = l,
-      R = null != Z || null != A ? (0, r.jsx)(a.Z, {
+      R = null != w || null != A ? (0, r.jsx)(a.Z, {
         className: T.emoji,
-        emojiId: Z,
+        emojiId: w,
         emojiName: A
       }) : null;
     return (0, r.jsxs)("div", {
@@ -190,7 +190,7 @@ let U = Chunk647438.memo(function(e) {
         focusProps: {
           offset: 4
         },
-        "aria-label": S,
+        "aria-label": E,
         onClick: g,
         children: [h ? null : (0, r.jsx)("div", {
           className: T.unread
@@ -203,7 +203,7 @@ let U = Chunk647438.memo(function(e) {
           }), (0, r.jsxs)(o.Text, {
             variant: "text-md/normal",
             color: h ? "text-muted" : "text-default",
-            children: ["string" != typeof S ? S : p.Z.parse(S), R]
+            children: ["string" != typeof E ? E : p.Z.parse(E), R]
           }), (null == (t = l.message) ? true : t.content) != null ? (0, r.jsx)(D, {
             item: l
           }) : null, null != l.callout ? (0, r.jsx)(M, {
@@ -223,7 +223,7 @@ let U = Chunk647438.memo(function(e) {
     let {
       items: t
     } = e, n = g.d$.useSetting();
-    return (0, S.c)(t), (0, r.jsx)(r.Fragment, {
+    return (0, E.c)(t), (0, r.jsx)(r.Fragment, {
       children: t.map(e => (0, r.jsx)(U, {
         item: e,
         ackedBeforeId: n

@@ -1,7 +1,7 @@
 /** Chunk was on 91488 **/
 /** chunk id: 754231, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => S
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -141,7 +141,7 @@ function C(e) {
   })
 }
 
-function S(e) {
+function E(e) {
   let {
     activity: t
   } = e;
@@ -163,7 +163,7 @@ function S(e) {
   })
 }
 
-function E(e) {
+function S(e) {
   let {
     activity: t,
     embeddedApp: n,
@@ -175,7 +175,7 @@ function E(e) {
     onOpenSpotifyAlbum: g
   } = e, m = [];
   null != n ? m = Array.from(n.embeddedActivity.userIds) : (0, u.Z)(t) && null != c && (m = c.map(e => e.user.id));
-  let E = (0, a.Wu)([f.default], () => m.map(e => f.default.getUser(e)).filter(b.lm)),
+  let S = (0, a.Wu)([f.default], () => m.map(e => f.default.getUser(e)).filter(b.lm)),
     P = null != n || (0, u.Z)(t),
     I = i.useMemo(() => {
       let e = new Map;
@@ -208,7 +208,7 @@ function E(e) {
         }), m.length > 0 && (0, r.jsx)(p.ZP, {
           className: y.usersSummary,
           guildId: o.guild_id,
-          users: E,
+          users: S,
           size: _,
           max: 7,
           renderUser: e => {
@@ -229,7 +229,7 @@ function E(e) {
           }
         })]
       })]
-    }), (0, r.jsx)(S, {
+    }), (0, r.jsx)(E, {
       activity: t
     })]
   }) : null

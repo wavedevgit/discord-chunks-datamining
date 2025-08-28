@@ -18,16 +18,16 @@ function c(e) {
     onClose: c,
     sidebarHeader: d,
     sidebarFooter: _
-  } = e, [E, N] = r.useState(true), [g, f] = r.useState(n.key), {
-    navigateWithValidation: O
-  } = (0, a.Cu)(), I = r.useMemo(() => ({
+  } = e, [E, N] = r.useState(true), [g, O] = r.useState(n.key), {
+    navigateWithValidation: I
+  } = (0, a.Cu)(), f = r.useMemo(() => ({
     currentPanel: t.layout.flatMap(e => e.layout).find(e => e.key === g),
-    setCurrentPanel: e => O(() => f(e.key)),
+    setCurrentPanel: e => I(() => O(e.key)),
     showNavigationMobile: E,
     setShowNavigationMobile: N
-  }), [g, t, E, O, N]);
+  }), [g, t, E, I, N]);
   return (0, i.jsx)(s.j.Provider, {
-    value: I,
+    value: f,
     children: (0, i.jsxs)("div", {
       className: u.container,
       children: [(0, i.jsx)(o.P, {
@@ -35,8 +35,8 @@ function c(e) {
         header: d,
         footer: _
       }), (0, i.jsx)(l.Z, {
-        onClose: () => O(c),
-        setting: I.currentPanel
+        onClose: () => I(c),
+        setting: f.currentPanel
       })]
     })
   })

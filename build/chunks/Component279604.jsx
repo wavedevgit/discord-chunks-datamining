@@ -89,7 +89,7 @@ function y(e, t) {
       let [n] = e;
       return t.allPowerups[n]
     }).filter(d.lm)
-  }(t, j) : [], [t, j]), C = null == x ? true : x.reduce((e, t) => e + t.cost, 0), S = Math.max((null != (p = null == v ? true : v.premiumSubscriberCount) ? p : 0) - y + C, 0);
+  }(t, j) : [], [t, j]), C = null == x ? true : x.reduce((e, t) => e + t.cost, 0), E = Math.max((null != (p = null == v ? true : v.premiumSubscriberCount) ? p : 0) - y + C, 0);
   return {
     onActivate: i.useCallback(function(e) {
       var i;
@@ -98,12 +98,12 @@ function y(e, t) {
       let {
         shouldCloseAllModals: a = true
       } = l;
-      if (null != v && null != t) return S < t.cost ? void(0, s.u)({
+      if (null != v && null != t) return E < t.cost ? void(0, s.u)({
         analyticsLocation: {
           page: g.ZY5.GUILD_POWERUPS_OVERVIEW,
           section: g.jXE.GUILD_POWERUPS_OVERVIEW_CARD
         },
-        numberOfBoostsToAdd: t.cost - S,
+        numberOfBoostsToAdd: t.cost - E,
         analyticsLocations: b,
         guild: v,
         intent: t.type === f.Us.LEVEL ? c.P.LEVEL : c.P.PERK,
@@ -132,7 +132,7 @@ function y(e, t) {
           }, n))
         })
       })
-    }, [O, t, S, b, v])
+    }, [O, t, E, b, v])
   }
 }
 

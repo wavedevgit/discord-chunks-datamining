@@ -32,7 +32,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk809946 = require("./809946.js");
 
-function Z(e) {
+function w(e) {
   e.stopPropagation()
 }
 
@@ -45,8 +45,8 @@ function T(e) {
   return (0, r.jsx)(p.P3F, {
     "aria-expanded": n,
     onClick: i,
-    className: o()(w.messagesGroupHeaderWrap, {
-      [w.collapsed]: !n
+    className: o()(Z.messagesGroupHeaderWrap, {
+      [Z.collapsed]: !n
     }),
     children: (0, r.jsxs)(p.Kqy, {
       gap: 4,
@@ -55,11 +55,11 @@ function T(e) {
       children: [(0, r.jsx)(p.X6q, {
         variant: "text-sm/medium",
         color: "text-secondary",
-        className: w.messagesGroupHeader,
-        children: (0, a.capitalize)(N.intl.string(E.Vv[t]).toLowerCase())
+        className: Z.messagesGroupHeader,
+        children: (0, a.capitalize)(N.intl.string(S.Vv[t]).toLowerCase())
       }), (0, r.jsx)(p.CJ0, {
         size: "xxs",
-        className: w.chevron
+        className: Z.chevron
       })]
     })
   })
@@ -140,7 +140,7 @@ function D(e) {
       for (let r of e) {
         var n;
         let e = t[r];
-        if ((null == e || e.loadState === E.a7.UNLOADED) && null != (n = m.ZP.hasUnread(r)) && n) returntrue
+        if ((null == e || e.loadState === S.a7.UNLOADED) && null != (n = m.ZP.hasUnread(r)) && n) returntrue
       }
       returnfalse
     }, [e])
@@ -168,32 +168,32 @@ function D(e) {
       let t = null == (e = M.current) ? true : e.getScrollerState();
       if (null == t) return;
       let n = .5 * t.offsetHeight;
-      t.scrollHeight - (t.scrollTop + t.offsetHeight) <= n && (null == l || l(E.X.USER_SCROLL))
+      t.scrollHeight - (t.scrollTop + t.offsetHeight) <= n && (null == l || l(S.X.USER_SCROLL))
     }, [l]),
     Y = i.useMemo(() => {
       let e = {
-          [E.KZ.UNREAD]: [],
-          [E.KZ.TODAY]: [],
-          [E.KZ.YESTERDAY]: [],
-          [E.KZ.OLDER]: []
+          [S.KZ.UNREAD]: [],
+          [S.KZ.TODAY]: [],
+          [S.KZ.YESTERDAY]: [],
+          [S.KZ.OLDER]: []
         },
         r = {
-          [E.KZ.UNREAD]: [],
-          [E.KZ.TODAY]: [],
-          [E.KZ.YESTERDAY]: [],
-          [E.KZ.OLDER]: []
+          [S.KZ.UNREAD]: [],
+          [S.KZ.TODAY]: [],
+          [S.KZ.YESTERDAY]: [],
+          [S.KZ.OLDER]: []
         },
         i = {
-          [E.KZ.UNREAD]: {},
-          [E.KZ.TODAY]: {},
-          [E.KZ.YESTERDAY]: {},
-          [E.KZ.OLDER]: {}
+          [S.KZ.UNREAD]: {},
+          [S.KZ.TODAY]: {},
+          [S.KZ.YESTERDAY]: {},
+          [S.KZ.OLDER]: {}
         };
       return (t.length > 0 || n.length > 0) && (s().each(n, e => {
-        e.kind === E.fL.MENTION ? r[E.KZ.UNREAD].push(e) : e.channelId in i[E.KZ.UNREAD] ? i[E.KZ.UNREAD][e.channelId].push(e) : i[E.KZ.UNREAD][e.channelId] = [e]
+        e.kind === S.fL.MENTION ? r[S.KZ.UNREAD].push(e) : e.channelId in i[S.KZ.UNREAD] ? i[S.KZ.UNREAD][e.channelId].push(e) : i[S.KZ.UNREAD][e.channelId] = [e]
       }), s().each(t, e => {
         let t = (0, x.bl)(e);
-        e.kind === E.fL.MENTION ? r[t].push(e) : e.channelId in i[t] ? i[t][e.channelId].push(e) : i[t][e.channelId] = [e]
+        e.kind === S.fL.MENTION ? r[t].push(e) : e.channelId in i[t] ? i[t][e.channelId].push(e) : i[t][e.channelId] = [e]
       }), s().each(A, t => {
         [...Object.values(i[t]).map(e => e.reverse()), ...r[t].map(e => [e])].sort((e, t) => O.default.compare(t[0].id, e[0].id)).forEach(n => {
           e[t].push(n)
@@ -216,7 +216,7 @@ function D(e) {
               viewId: D
             })
           }
-        }, t)), H[t] && e.push(...Y[t].map(e => d(e, t === E.KZ.UNREAD))))
+        }, t)), H[t] && e.push(...Y[t].map(e => d(e, t === S.KZ.UNREAD))))
       }), e
     }, [t, n, a, H, z, Y, N, d, q, X, D]),
     J = Q[Q.length - 1],
@@ -247,11 +247,11 @@ function D(e) {
     return null == n ? 0 : Math.max(0, Math.ceil(n.offsetHeight / 64) - t)
   }, [H, Y]);
   i.useEffect(() => {
-    X || G || 0 >= en() || (!$ || W) && (null == l || l(E.X.FILL_SCROLLER))
+    X || G || 0 >= en() || (!$ || W) && (null == l || l(S.X.FILL_SCROLLER))
   }, [en, l, X, G, $, W]);
   let er = i.useMemo(() => {
     let e = Math.min(Math.max(2, en()), 20);
-    return (0, r.jsx)(S.Z, {
+    return (0, r.jsx)(E.Z, {
       withHeader: false,
       size: e
     })
@@ -264,9 +264,9 @@ function D(e) {
     messagesByCategory: Y,
     viewId: D
   }), (0, r.jsx)("div", {
-    className: o()(g, w.messagesPopoutWrap),
-    onClick: Z,
-    onDoubleClick: Z,
+    className: o()(g, Z.messagesPopoutWrap),
+    onClick: w,
+    onDoubleClick: w,
     "aria-label": e["aria-label"],
     children: (0, r.jsx)(c.bG, {
       navigator: L,
@@ -312,7 +312,7 @@ function D(e) {
               var t;
               M.current = e, i.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
             },
-            className: o()(w.messagesPopout, f),
+            className: o()(Z.messagesPopout, f),
             onScroll: K,
             fade: true
           }, l), n = n = {

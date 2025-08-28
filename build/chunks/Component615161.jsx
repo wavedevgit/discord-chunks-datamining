@@ -1,8 +1,8 @@
 /** Chunk was on 46746 **/
 /** chunk id: 615161, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  E_: () => b,
-  Ti: () => S,
+  E_: () => C,
+  Ti: () => b,
   Yw: () => j
 }), require("./415506.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -156,43 +156,43 @@ function j(e) {
   })
 }
 
-function S(e, t, n) {
+function b(e, t, n) {
   var r, l;
   let g = arguments.length > 3 && true !== arguments[3] ? arguments[3] : "source_select",
     {
       preset: _,
       resolution: j,
-      fps: S,
-      soundshareEnabled: b
+      fps: b,
+      soundshareEnabled: C
     } = (0, s.cj)([c.Z], () => c.Z.getState()),
-    C = (0, s.e7)([d.Z], () => d.Z.getInputDeviceId()),
+    S = (0, s.e7)([d.Z], () => d.Z.getInputDeviceId()),
     y = null != (r = a.I0.useSetting()) && r,
     O = null != (l = a.eo.useSetting()) && l;
-  (0, u.Z)(f.tI.PRESET_CUSTOM, j, S, t, n) || (j = f.LY.RESOLUTION_720, S = f.ws.FPS_30);
-  let [I, Z] = i.useReducer(v, p(h({}, x), {
-    muteStreamAudio: !b,
+  (0, u.Z)(f.tI.PRESET_CUSTOM, j, b, t, n) || (j = f.LY.RESOLUTION_720, b = f.ws.FPS_30);
+  let [Z, w] = i.useReducer(v, p(h({}, x), {
+    muteStreamAudio: !C,
     preset: _,
     resolution: j,
-    fps: S,
+    fps: b,
     hidePreview: y,
     notifyFriends: O,
     selectedSource: e,
-    audioSourceId: C,
+    audioSourceId: S,
     modalStep: g
   }));
   return i.useEffect(() => {
     o.Z.hasPermission(m.Eu.SCREEN_RECORDING, {
       showAuthorizationError: false
-    }).then(e => Z({
+    }).then(e => w({
       type: "set_has_permission",
       value: e
     }))
   }, []), {
-    state: I,
-    dispatch: Z
+    state: Z,
+    dispatch: w
   }
 }
 
-function b() {
+function C() {
   return [Chunk647438.useContext(g), Chunk647438.useContext(_)]
 }
