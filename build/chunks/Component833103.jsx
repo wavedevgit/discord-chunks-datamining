@@ -444,7 +444,7 @@ function A(e, t) {
           if (a.has(_.dCx.FILTER_IN)) {
             var p;
             let n = t[_.dCx.FILTER_IN],
-              r = (null != (p = e.getData("channels")) ? p : []).map(e => e.id);
+              r = null != (p = e.getData("channelIds")) ? p : [];
             n.push(...r), c += 1
           }
           break;

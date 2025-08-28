@@ -214,7 +214,7 @@ function x(e) {
           break;
         case b.dCx.ANSWER_IN:
           var s;
-          for (let t of null != (s = e.getData("channels")) ? s : []) o.add(t.id);
+          for (let t of null != (s = e.getData("channelIds")) ? s : []) o.add(t);
           break;
         case b.dCx.ANSWER_HAS:
           o.add(e.getData("has"));

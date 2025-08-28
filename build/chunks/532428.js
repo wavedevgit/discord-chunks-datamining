@@ -153,7 +153,7 @@ function X(e, t, n) {
       var n, r;
       return t === (null != (r = null == (n = i[e.id]) ? true : n.name) ? r : e.name)
     }).value();
-  return (null == s ? true : s.length) > 0 && (e.setData("channels", s), true)
+  return (null == s ? true : s.length) > 0 && (e.setData("channelIds", s.map(e => e.id)), true)
 }
 
 function Q(e, t) {
@@ -165,11 +165,12 @@ function Q(e, t) {
       return null != r && t === b.ZP.getUserTag(r)
     }
   });
-  return (null == n ? true : n.length) > 0 && (e.setData("channels", n), true)
+  return (null == n ? true : n.length) > 0 && (e.setData("channelIds", n.map(e => e.id)), true)
 }
 
 function J(e) {
   let t = e.getMatch(1);
+  if (C.Xyh.test(t)) return e.setData("channelIds", [t]), true;
   t.startsWith('"') && t.endsWith('"') && (t = t.substring(1, t.length - 1).replaceAll(/\\(.)/g, (e, t) => t));
   let n = y.Z.getSelectedSearchContext();
   if (null == n) returnfalse;
@@ -231,8 +232,8 @@ function ea(e) {
   let t = new Set,
     n = [];
   e.forEach(e => {
-    let t = e.getData("channels");
-    null != t && t.forEach(e => n.push(e.id))
+    let t = e.getData("channelIds");
+    null != t && t.forEach(e => n.push(e))
   });
   let r = e => {
       null == e || t.has(e.id) || (i.push(e), t.add(e.id))
