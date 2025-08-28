@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk267877 = require("./267877.js");
 
-function h(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -35,7 +35,7 @@ function h(e) {
   return e
 }
 
-function f(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -113,7 +113,7 @@ function j(e) {
         colorHex: (0, s.Rf)(t)
       })
     });
-  return (0, r.jsxs)("div", f(h({
+  return (0, r.jsxs)("div", h(f({
     className: p.buttonsContainer,
     "aria-label": g.intl.string(g.t.FJjrIy),
     ref: C
@@ -122,7 +122,7 @@ function j(e) {
       className: a()(p.colorSwatch, {
         [p.disabled]: l
       }),
-      children: (0, r.jsxs)(o.P3F, f(h({
+      children: (0, r.jsxs)(o.P3F, h(f({
         onClick: l ? true : function() {
           n(m.p6O)
         },
@@ -146,7 +146,7 @@ function j(e) {
       className: a()(p.colorSwatch, {
         [p.disabled]: l
       }),
-      children: [(0, r.jsxs)(o.P3F, f(h({
+      children: [(0, r.jsxs)(o.P3F, h(f({
         onClick: l ? true : b,
         "aria-disabled": l
       }, I), {
@@ -168,11 +168,11 @@ function j(e) {
       })), !l && (0, r.jsx)(o.yRy, {
         targetElementRef: c,
         onRequestOpen: b,
-        renderPopout: e => (0, r.jsx)(o.Z$W, f(h({}, e), {
+        renderPopout: e => (0, r.jsx)(o.Z$W, h(f({}, e), {
           value: t,
           onChange: j
         })),
-        children: e => (0, r.jsx)(o.P3F, f(h({}, e), {
+        children: e => (0, r.jsx)(o.P3F, h(f({}, e), {
           innerRef: c,
           className: p.dropperIconButton,
           "aria-label": g.intl.string(g.t.Qp04hI),

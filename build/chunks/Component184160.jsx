@@ -38,22 +38,22 @@ function f(e) {
   });
   return l()(null != S, "Expected premium type"), (0, r.jsx)(C.Z, {
     premiumType: S,
-    titleText: h.intl.string(h.t["7VcWW1"]),
-    subtitleText: h.intl.format(h.t.Qk34Ii, {
+    titleText: _.intl.string(_.t["7VcWW1"]),
+    subtitleText: _.intl.format(_.t.Qk34Ii, {
       subscriptionName: y
     }),
     footer: (0, r.jsxs)("div", {
-      className: _.whatYouLoseButtonContainer,
+      className: h.whatYouLoseButtonContainer,
       children: [(0, r.jsx)(a.zx, {
         onClick: () => {
           E ? (m((0, x.nA)(j, f)), t(u.h8.REVIEW)) : t(u.h8.PLAN_SELECT)
         },
-        children: h.intl.string(h.t["3PatS0"])
+        children: _.intl.string(_.t["3PatS0"])
       }), (0, r.jsx)(a.zx, {
         look: a.zx.Looks.LINK,
         color: (0, s.wj)(i) ? a.zx.Colors.WHITE : a.zx.Colors.PRIMARY,
         onClick: n,
-        children: h.intl.string(h.t.h9tkAA)
+        children: _.intl.string(_.t.h9tkAA)
       })]
     }),
     onClose: n,

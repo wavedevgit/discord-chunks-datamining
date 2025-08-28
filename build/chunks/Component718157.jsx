@@ -20,7 +20,7 @@ function u(e) {
     clearable: m = true
   } = e, g = (0, l.Wu)([o.Z], () => o.Z.getPrimaryCategories()), p = i.useCallback(e => {
     (0, s.TA)(t, null != e ? e : c.o3)
-  }, [t]), h = i.useMemo(() => g.map(e => {
+  }, [t]), f = i.useMemo(() => g.map(e => {
     let {
       categoryId: t,
       name: n
@@ -33,9 +33,9 @@ function u(e) {
   return 0 === g.length ? (0, r.jsx)(a.$jN, {}) : (0, r.jsx)(a.VcW, {
     value: n.primaryCategoryId === c.o3 ? null : n.primaryCategoryId,
     placeholder: d.intl.string(d.t.XqMe3N),
-    options: h,
+    options: f,
     onChange: p,
     isDisabled: u,
     clearable: m
-  }, h.length)
+  }, f.length)
 }

@@ -34,7 +34,7 @@ function p(e) {
   return e
 }
 
-function h(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -46,14 +46,14 @@ function h(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let f = [],
+let h = [],
   b = function(e) {
     let {
       guildId: t
     } = e, b = (0, l.Wu)([d.Z], () => {
       var e;
-      return null != (e = d.Z.getSettings().resourceChannels) ? e : f
-    }), x = i.useMemo(() => b.map(e => h(p({}, e), {
+      return null != (e = d.Z.getSettings().resourceChannels) ? e : h
+    }), x = i.useMemo(() => b.map(e => f(p({}, e), {
       id: e.channelId
     })), [b]), {
       handleDragStart: j,
@@ -69,7 +69,7 @@ let f = [],
         let {
           default: e
         } = await n.e("84725").then(n.bind(n, 462499));
-        return n => (0, r.jsx)(e, h(p({}, n), {
+        return n => (0, r.jsx)(e, f(p({}, n), {
           guildId: t,
           onSave: c.r2,
           onIconUpload: O

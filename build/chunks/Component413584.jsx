@@ -73,8 +73,8 @@ let k = "WELCOME_CHANNEL",
     let l, {
         guildId: s,
         welcomeChannel: o,
-        onEdit: h,
-        onChannelReorder: f,
+        onEdit: f,
+        onChannelReorder: h,
         isDropHovered: _,
         index: v
       } = e,
@@ -91,7 +91,7 @@ let k = "WELCOME_CHANNEL",
           } = await n.e("73196").then(n.bind(n, 514698));
           return t => (0, r.jsx)(e, L(A({}, t), {
             onConfirm: () => {
-              h(), t.onClose()
+              f(), t.onClose()
             },
             channelId: o.channel_id
           }))
@@ -106,16 +106,16 @@ let k = "WELCOME_CHANNEL",
           index: v
         },
         end: (e, t) => {
-          null == e || t.didDrop() || f(e.channel, null, true)
+          null == e || t.didDrop() || h(e.channel, null, true)
         }
       }),
       [, U] = (0, d.L)({
         accept: k,
         hover: e => {
-          f(e.channel, v, false)
+          h(e.channel, v, false)
         },
         drop: e => {
-          f(e.channel, v, true)
+          h(e.channel, v, true)
         }
       });
     return i.useLayoutEffect(() => (G(U(O)), () => {
@@ -146,7 +146,7 @@ let k = "WELCOME_CHANNEL",
           return t => (0, r.jsx)(e, L(A({}, t), {
             guildId: s,
             welcomeChannel: o,
-            onChannelReorder: f,
+            onChannelReorder: h,
             onShowDeleteModal: M,
             index: v
           }))
@@ -184,7 +184,7 @@ let k = "WELCOME_CHANNEL",
     } = e, {
       welcomeSettings: l,
       originalWelcomeSettings: a
-    } = (0, u.e7)([C.Z], () => C.Z.getSettingsProps()), s = (0, u.e7)([f.Z], () => f.Z.useReducedMotion), [c, d] = i.useState(null), [g, p] = i.useState(false), [b, x] = i.useState(false), {
+    } = (0, u.e7)([C.Z], () => C.Z.getSettingsProps()), s = (0, u.e7)([h.Z], () => h.Z.useReducedMotion), [c, d] = i.useState(null), [g, p] = i.useState(false), [b, x] = i.useState(false), {
       description: j,
       channels: N,
       enabled: S
@@ -204,7 +204,7 @@ let k = "WELCOME_CHANNEL",
         channels: i
       })), n ? (R(i), d(null)) : d(t)
     }, U = i.useRef(false);
-    (0, h.ZP)(() => () => {
+    (0, f.ZP)(() => () => {
       U.current = true
     }), i.useEffect(() => () => {
       if (U.current && g) {

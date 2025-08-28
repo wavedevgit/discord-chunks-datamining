@@ -78,7 +78,7 @@ function p(e) {
   })
 }
 
-function h(e) {
+function f(e) {
   let {
     guild: t,
     checkboxText: n
@@ -119,7 +119,7 @@ function h(e) {
   })
 }
 
-function f(e) {
+function h(e) {
   let {
     guild: t,
     monetizationEligibility: n
@@ -132,7 +132,7 @@ function f(e) {
     acceptTermsCheckboxText: d,
     wasRejectedInV1: u
   } = n;
-  return c ? u ? (0, r.jsx)(o.Z, m({}, n)) : (0, r.jsx)(h, {
+  return c ? u ? (0, r.jsx)(o.Z, m({}, n)) : (0, r.jsx)(f, {
     guild: t,
     checkboxText: d
   }) : (0, r.jsx)(p, {
@@ -169,7 +169,7 @@ function b(e) {
         children: c.intl.string(c.t["41wkMT"])
       }), (0, r.jsx)(l.LZC, {
         size: 24
-      }), (0, r.jsx)(f, {
+      }), (0, r.jsx)(h, {
         guild: t,
         monetizationEligibility: n
       })]

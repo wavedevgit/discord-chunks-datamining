@@ -25,10 +25,10 @@ function m(e) {
   } = (0, c.$)(t, {
     coverImageHeight: 336,
     coverImageWidth: 252
-  }), h = (0, o.e7)([d.Z], () => {
+  }), f = (0, o.e7)([d.Z], () => {
     var e, n;
     return null != (n = null == (e = d.Z.getDetectableGame(t)) ? true : e.name) ? n : ""
-  }), f = i.useCallback(() => {
+  }), h = i.useCallback(() => {
     null == l || l(t)
   }, [t, l]), b = i.useMemo(() => g ? null : null == p ? (0, r.jsx)("div", {
     className: u.gameUnknownImage,
@@ -37,9 +37,9 @@ function m(e) {
     })
   }) : (0, r.jsx)("img", {
     className: u.gameImage,
-    alt: h,
+    alt: f,
     src: p
-  }), [p, g, h]);
+  }), [p, g, f]);
   return (0, r.jsxs)("div", {
     className: a()(u.selectedGame, {
       [u.dimmed]: !n,
@@ -48,7 +48,7 @@ function m(e) {
     children: [(0, r.jsxs)(s.P3F, {
       "aria-disabled": m,
       tabIndex: m ? false : 0,
-      onClick: m ? true : f,
+      onClick: m ? true : h,
       className: a()(u.gameImageBackground, {
         [u.gameImageLoading]: g,
         [u.disabled]: m
@@ -64,7 +64,7 @@ function m(e) {
       className: u.gameName,
       variant: "text-xs/medium",
       color: "header-primary",
-      children: h
+      children: f
     })]
   })
 }

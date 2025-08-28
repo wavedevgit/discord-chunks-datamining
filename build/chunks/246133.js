@@ -54,18 +54,21 @@ async function _(e) {
     nextStatus: t,
     prevStatus: n,
     analyticsContext: c,
-    durationMillis: d
+    durationMillis: d,
+    disableTracking: _ = false
   } = e;
-  null == n && (n = o.Z.getStatus()), await a.hW.updateAsync("status", e => {
-    e.status = r.Gm.create({
-      value: t
-    }), e.statusExpiresAtMs = null != d ? "".concat(Date.now() + d) : "0"
-  }, a.fy.INFREQUENT_USER_ACTION);
-  let _ = u({
+  if (null == n && (n = o.Z.getStatus()), await a.hW.updateAsync("status", e => {
+      e.status = r.Gm.create({
+        value: t
+      }), e.statusExpiresAtMs = null != d ? "".concat(Date.now() + d) : "0", e.statusCreatedAtMs = n === t && null != e.statusCreatedAtMs ? e.statusCreatedAtMs : r.wA.create({
+        value: "".concat(Date.now())
+      })
+    }, a.fy.INFREQUENT_USER_ACTION), _) return;
+  let p = u({
     next_status: t,
     prev_status: n
   }, i.Z.getGlobalStats());
-  null != d && (_ = f(u({}, _), {
+  null != d && (p = f(u({}, p), {
     expire_duration_minutes: null != d ? d / 6e4 : null
-  })), null != c && (_ = u({}, _, c)), s.default.track(l.rMx.USER_STATUS_UPDATED, _)
+  })), null != c && (p = u({}, p, c)), s.default.track(l.rMx.USER_STATUS_UPDATED, p)
 }

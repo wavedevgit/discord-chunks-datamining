@@ -22,6 +22,7 @@ require.d(exports, {
   lE: () => g,
   mq: () => l,
   nS: () => N,
+  oK: () => P,
   ur: () => _,
   xs: () => A,
   yR: () => y,
@@ -480,4 +481,20 @@ let o = (0, Chunk987170.Z)({
       isEnabled: true
     }
   }
+});
+let P = (0, Chunk987170.Z)({
+  id: "2025-07_apex_cluster_randomization_aa",
+  kind: "user",
+  label: "Apex Cluster Randomization AA",
+  defaultConfig: {
+    isEnabled: false
+  },
+  treatments: [{
+    id: 1,
+    label: "AA test enabled. Noop on UI effect.",
+    config: {
+      isEnabled: true
+    }
+  }],
+  commonTriggerPoint: Chunk987338.$P.CONNECTION_OPEN
 })

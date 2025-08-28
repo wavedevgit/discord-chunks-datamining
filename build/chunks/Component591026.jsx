@@ -1,7 +1,7 @@
 /** Chunk was on 88479 **/
 /** chunk id: 591026, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => h
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -34,7 +34,7 @@ function p(e) {
   return e
 }
 
-function h(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -47,12 +47,12 @@ function h(e, t) {
   }), e
 }
 
-function f(e) {
+function h(e) {
   var t, n;
   let {
-    rule: f,
+    rule: h,
     onChangeRule: b
-  } = e, [x, j] = i.useState(null == (t = f.triggerMetadata) ? true : t.mentionTotalLimit), _ = (0, a.a)(f.guildId, false);
+  } = e, [x, j] = i.useState(null == (t = h.triggerMetadata) ? true : t.mentionTotalLimit), _ = (0, a.a)(h.guildId, false);
   return (0, r.jsxs)("div", {
     className: g.cardContentsContainer,
     children: [(0, r.jsxs)(c.Z, {
@@ -83,8 +83,8 @@ function f(e) {
           children: (0, r.jsx)(l.FiK, {
             value: x,
             onChange: e => {
-              j(e), b(h(p({}, f), {
-                triggerMetadata: h(p({}, f.triggerMetadata), {
+              j(e), b(f(p({}, h), {
+                triggerMetadata: f(p({}, h.triggerMetadata), {
                   mentionTotalLimit: e
                 })
               }))
@@ -117,10 +117,10 @@ function f(e) {
         }), (0, r.jsx)("div", {
           children: (0, r.jsx)(l.XZJ, {
             type: l.XZJ.Types.INVERTED,
-            value: null == (n = f.triggerMetadata) ? true : n.mentionRaidProtectionEnabled,
+            value: null == (n = h.triggerMetadata) ? true : n.mentionRaidProtectionEnabled,
             onChange: (e, t) => {
-              b(h(p({}, f), {
-                triggerMetadata: h(p({}, f.triggerMetadata), {
+              b(f(p({}, h), {
+                triggerMetadata: f(p({}, h.triggerMetadata), {
                   mentionRaidProtectionEnabled: t
                 })
               }))
@@ -135,7 +135,7 @@ function f(e) {
       step: 2,
       header: m.intl.string(m.t["18TOiY"]),
       children: (0, r.jsx)(s.Z, {
-        rule: f,
+        rule: h,
         onChangeRule: b
       })
     }), (0, r.jsx)(d.Z, {
@@ -144,7 +144,7 @@ function f(e) {
       step: 3,
       header: m.intl.string(m.t.eq3gjo),
       children: (0, r.jsx)(o.Z, {
-        rule: f,
+        rule: h,
         onChangeRule: b
       })
     })]

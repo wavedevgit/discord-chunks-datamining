@@ -42,29 +42,29 @@ function x(e) {
     allowSelfRemoveMonetization: D
   } = (0, c.gX)(j);
   return null == v ? null : (0, r.jsx)(p.Z, {
-    title: h.intl.string(h.t["7Si8Ul"]),
+    title: f.intl.string(f.t["7Si8Ul"]),
     children: (0, r.jsxs)(o.Kqy, {
       gap: 16,
       children: [null !== S && (0, r.jsx)(o.Wn, {
         messageType: o.QYI.ERROR,
-        children: h.intl.string(h.t["9k8H//"])
+        children: f.intl.string(f.t["9k8H//"])
       }), null !== w && (0, r.jsx)(o.Wn, {
         messageType: o.QYI.ERROR,
-        children: h.intl.string(h.t.up8gUl)
+        children: f.intl.string(f.t.up8gUl)
       }), I ? (0, r.jsxs)(o.hjN, {
-        title: h.intl.string(h.t["2D14T0"]),
+        title: f.intl.string(f.t["2D14T0"]),
         disabled: !D,
         children: [(0, r.jsx)(o.R94, {
           type: o.R94.Types.DESCRIPTION,
-          className: f.formDescription,
+          className: h.formDescription,
           disabled: !D,
-          children: h.intl.string(h.t.Y4KjUF)
+          children: f.intl.string(f.t.Y4KjUF)
         }), (0, r.jsxs)(o.Kqy, {
           gap: 16,
           children: [!N && (0, r.jsx)(o.Text, {
             variant: "text-sm/normal",
             className: b.warning,
-            children: h.intl.formatToPlainString(h.t.ABeonZ, {
+            children: f.intl.formatToPlainString(f.t.ABeonZ, {
               listingMemberCount: C
             })
           }), (0, r.jsx)(o.zxk, {
@@ -78,15 +78,15 @@ function x(e) {
                   Modal: t
                 } = await Promise.resolve().then(n.bind(n, 82659));
                 return n => (0, r.jsx)(t, {
-                  title: h.intl.string(h.t["8ZRTsr"]),
+                  title: f.intl.string(f.t["8ZRTsr"]),
                   onClose: n.onClose,
                   transitionState: n.transitionState,
                   actions: [{
-                    text: h.intl.string(h.t["ETE/oK"]),
+                    text: f.intl.string(f.t["ETE/oK"]),
                     variant: "secondary",
                     onClick: () => n.onClose()
                   }, {
-                    text: h.intl.string(h.t.GMtG6u),
+                    text: f.intl.string(f.t.GMtG6u),
                     variant: "critical-primary",
                     onClick: async () => {
                       await e(), n.onClose()
@@ -94,24 +94,24 @@ function x(e) {
                   }],
                   children: (0, r.jsx)(o.Text, {
                     variant: "text-md/normal",
-                    children: h.intl.string(h.t.Y4KjUF)
+                    children: f.intl.string(f.t.Y4KjUF)
                   })
                 })
               })
             },
             loading: P,
             disabled: !D || !N,
-            text: h.intl.string(h.t.GMtG6u)
+            text: f.intl.string(f.t.GMtG6u)
           })]
         })]
       }) : (0, r.jsxs)(o.hjN, {
-        title: h.intl.string(h.t["MS/4U1"]),
+        title: f.intl.string(f.t["MS/4U1"]),
         disabled: !D,
         children: [(0, r.jsx)(o.R94, {
           type: o.R94.Types.DESCRIPTION,
-          className: f.formDescription,
+          className: h.formDescription,
           disabled: !D,
-          children: h.intl.string(h.t["5/Jeg4"])
+          children: f.intl.string(f.t["5/Jeg4"])
         }), (0, r.jsx)(o.zxk, {
           variant: "critical-primary",
           onClick: () => {
@@ -121,14 +121,14 @@ function x(e) {
               } = await Promise.resolve().then(n.bind(n, 82659));
               return t => (0, r.jsx)(e, {
                 transitionState: t.transitionState,
-                title: h.intl.string(h.t["8ZRTsr"]),
+                title: f.intl.string(f.t["8ZRTsr"]),
                 onClose: t.onClose,
                 actions: [{
-                  text: h.intl.string(h.t["ETE/oK"]),
+                  text: f.intl.string(f.t["ETE/oK"]),
                   variant: "secondary",
                   onClick: () => t.onClose()
                 }, {
-                  text: h.intl.string(h.t.RL0wjo),
+                  text: f.intl.string(f.t.RL0wjo),
                   variant: "critical-primary",
                   onClick: async () => {
                     await R(j, _, O), t.onClose()
@@ -136,14 +136,14 @@ function x(e) {
                 }],
                 children: (0, r.jsx)(o.Text, {
                   variant: "text-md/normal",
-                  children: h.intl.string(h.t["5/Jeg4"])
+                  children: f.intl.string(f.t["5/Jeg4"])
                 })
               })
             })
           },
           loading: Z,
           disabled: !D,
-          text: h.intl.string(h.t.RL0wjo)
+          text: f.intl.string(f.t.RL0wjo)
         })]
       })]
     })

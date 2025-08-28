@@ -36,11 +36,11 @@ let m = {
   },
   g = null,
   p = Object.assign({}, m),
-  h = false,
-  f = {};
+  f = false,
+  h = {};
 
 function b() {
-  g = null, p = Object.assign({}, m), h = false, g = Chunk999382.Z.getGuildId(), p = l().cloneDeep(Object.assign({}, Chunk563534.Z.getSettings(g)))
+  g = null, p = Object.assign({}, m), f = false, g = Chunk999382.Z.getGuildId(), p = l().cloneDeep(Object.assign({}, Chunk563534.Z.getSettings(g)))
 }
 
 function x(e, t) {
@@ -58,15 +58,15 @@ function j(e, t) {
 }
 
 function _() {
-  h = false, p = l().cloneDeep(Object.assign({}, Chunk563534.Z.getSettings(g)))
+  f = false, p = l().cloneDeep(Object.assign({}, Chunk563534.Z.getSettings(g)))
 }
 class v extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    null != e && (f = e.dismissedSuggestedChannelIdsByGuildId), this.waitFor(c.Z, o.Z)
+    null != e && (h = e.dismissedSuggestedChannelIdsByGuildId), this.waitFor(c.Z, o.Z)
   }
   getState() {
     return {
-      dismissedSuggestedChannelIdsByGuildId: f
+      dismissedSuggestedChannelIdsByGuildId: h
     }
   }
   getSettings() {
@@ -82,11 +82,11 @@ class v extends(r = Chunk442837.ZP.PersistedStore) {
     return this.hasChanges()
   }
   getSubmitting() {
-    return h
+    return f
   }
   getDismissedSuggestedChannelIds(e) {
     var t;
-    return null == e ? [] : null != (t = f[e]) ? t : []
+    return null == e ? [] : null != (t = h[e]) ? t : []
   }
   getResourceChannel(e) {
     var t;
@@ -110,7 +110,7 @@ let O = new v(Chunk570140.Z, {
     p = l().cloneDeep(Object.assign({}, Chunk563534.Z.getSettings(g)))
   },
   GUILD_HOME_SETTINGS_UPDATE_START: function() {
-    h = true
+    f = true
   },
   GUILD_HOME_SETTINGS_UPDATE_SUCCESS: _,
   GUILD_HOME_SETTINGS_UPDATE_FAIL: _,
@@ -199,6 +199,6 @@ let O = new v(Chunk570140.Z, {
       guildId: n,
       channelIds: r
     } = e;
-    f[n] = [...null != (t = f[n]) ? t : [], ...r]
+    h[n] = [...null != (t = h[n]) ? t : [], ...r]
   }
 })

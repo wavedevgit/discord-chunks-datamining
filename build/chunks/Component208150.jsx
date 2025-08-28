@@ -94,9 +94,9 @@ let y = {
         guildStickers: a
       } = e,
       s = l.premiumTier,
-      o = (0, f.Qi)(a, s),
-      c = (0, f.FZ)(s),
-      u = (0, f.A3)(s),
+      o = (0, h.Qi)(a, s),
+      c = (0, h.FZ)(s),
+      u = (0, h.A3)(s),
       m = a.length;
     return null == c || s === j.Eu4.TIER_3 || o > 0 ? null : (m > u ? (t = v.intl.formatToPlainString(v.t.ZtAY1d, {
       level: c
@@ -104,7 +104,7 @@ let y = {
       level: c
     }), i = j.qAy.BOOST_UPSELL_BANNER_LOST_LEVEL) : (t = v.intl.string(v.t.zT9Sxc), n = v.intl.formatToPlainString(v.t.YaW9wM, {
       level: c,
-      numAdditional: (0, f.ig)(c)
+      numAdditional: (0, h.ig)(c)
     }), i = j.qAy.BOOST_UPSELL_BANNER_SLOTS_FULL), (0, r.jsx)(d.Z, {
       header: t,
       text: n,
@@ -113,7 +113,7 @@ let y = {
         page: j.ZY5.GUILD_SETTINGS,
         section: j.jXE.GUILD_SETTINGS_STICKERS,
         object: i,
-        objectType: (0, f.ge)(c)
+        objectType: (0, h.ge)(c)
       }
     }))
   },

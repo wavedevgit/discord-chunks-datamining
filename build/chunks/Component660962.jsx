@@ -81,7 +81,7 @@ function q(e) {
     selectedStyle: i,
     disabled: l,
     shouldShowUpsell: s
-  } = e, o = (0, P.F)(U.intl.string(U.t.Mi9KbW)), d = (0, h.ZP)(), f = (0, _.oC)(n, t), x = {
+  } = e, o = (0, P.F)(U.intl.string(U.t.Mi9KbW)), d = (0, f.ZP)(), h = (0, _.oC)(n, t), x = {
     dark: {
       src: z,
       name: t.name
@@ -114,7 +114,7 @@ function q(e) {
         let {
           id: u,
           colors: p,
-          labelString: h
+          labelString: f
         } = e;
         return (0, r.jsxs)("button", {
           className: a()(F.roleStylePreviewContainer, {
@@ -138,7 +138,7 @@ function q(e) {
                 },
                 message: o,
                 preview: true,
-                roleIcon: null != f ? f : (0, m.ap)(d) ? x.light : x.dark,
+                roleIcon: null != h ? h : (0, m.ap)(d) ? x.light : x.dark,
                 isGroupStart: true,
                 disableInteraction: true,
                 previewGuildId: n
@@ -146,7 +146,7 @@ function q(e) {
             })
           }), (0, r.jsx)("div", {
             className: F.roleStyleLabel,
-            children: U.intl.string(h)
+            children: U.intl.string(f)
           })]
         }, u)
       })
@@ -335,8 +335,8 @@ function ee(e) {
     role: n,
     locked: i,
     setSelectedSection: l
-  } = e, s = (0, y.yH)(t.id, n), o = (0, d.e7)([T.Z], () => T.Z.getRoleStyleData(n.id)), c = !s, u = null != o && s ? o.currentStyle : T.g.SOLID, m = (0, E.fI)(n), p = i || m, h = (0, d.e7)([I.Z], () => I.Z.canImpersonateRole(t, n)), {
-    headerHeight: f,
+  } = e, s = (0, y.yH)(t.id, n), o = (0, d.e7)([T.Z], () => T.Z.getRoleStyleData(n.id)), c = !s, u = null != o && s ? o.currentStyle : T.g.SOLID, m = (0, E.fI)(n), p = i || m, f = (0, d.e7)([I.Z], () => I.Z.canImpersonateRole(t, n)), {
+    headerHeight: h,
     headerRef: b
   } = (0, w.Z)(0), {
     scrolledToTop: x,
@@ -345,7 +345,7 @@ function ee(e) {
   return (0, r.jsx)(g.yWw, {
     className: F.scroller,
     style: {
-      scrollPaddingTop: f
+      scrollPaddingTop: h
     },
     onScroll: j,
     children: (0, r.jsxs)("div", {
@@ -402,7 +402,7 @@ function ee(e) {
       }), (0, r.jsx)($, {
         role: n,
         disabled: p
-      }), h ? (0, r.jsxs)(r.Fragment, {
+      }), f ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(g.$i$, {
           className: F.divider
         }), (0, r.jsx)(D.L, {

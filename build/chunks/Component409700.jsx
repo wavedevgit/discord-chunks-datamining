@@ -185,7 +185,7 @@ function N(e) {
     onRequestClose: () => d(false),
     animationPosition: "bottom",
     positionKey: f,
-    closeOnScroll: true,
+    scrollBehavior: "close",
     children: e => (0, r.jsx)(c.ua7, {
       onTooltipHide: () => {
         g && (null == s || s(false))

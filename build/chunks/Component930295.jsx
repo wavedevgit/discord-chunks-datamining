@@ -2,13 +2,15 @@
 /** chunk id: 930295, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  F: () => S,
-  H: () => C
+  F: () => C,
+  H: () => R
 }), require("./953529.js"), require("./388685.js"), require("./415506.js");
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk299608 = require("./299608.js"),
+  s = require.n(Chunk299608),
   Chunk97613 = require("./97613.js"),
-  s = require.n(Chunk97613),
+  c = require.n(Chunk97613),
   Chunk603113 = require("./603113.js"),
   Chunk374470 = require("./374470.js"),
   Chunk846519 = require("./846519.js"),
@@ -23,7 +25,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk920676 = require("./920676.jsx"),
   Chunk981631 = require("./981631.js");
 
-function O(e, t, n) {
+function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -32,20 +34,20 @@ function O(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      O(e, t, n[t])
+      I(e, t, n[t])
     })
   }
   return e
 }
 
-function I(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -56,14 +58,14 @@ function I(e, t) {
   return n
 }
 
-function T(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
+function A(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let S = Symbol("POPOUT_PREVENT_CLOSE"),
-  A = new Set(["Spacebar", " ", "Enter"]);
-class C extends(r = Chunk647438.Component) {
+let C = Symbol("POPOUT_PREVENT_CLOSE"),
+  N = new Set(["Spacebar", " ", "Enter"]);
+class R extends(r = Chunk647438.Component) {
   shouldShowPopout(e, t) {
     return null != e.shouldShow ? e.shouldShow : t.shouldShowPopout
   }
@@ -73,11 +75,11 @@ class C extends(r = Chunk647438.Component) {
   componentDidUpdate(e, t) {
     e.shouldShow, this.props.shouldShow;
     let n = this.shouldShowPopout(this.props, this.state);
-    if ((this.shouldShowPopout(e, t) !== n || t.isLoading !== this.state.isLoading || e.ignoreModalClicks !== this.props.ignoreModalClicks) && (n ? this.setupShowPopout() : this.unsubscribe()), this.props.closeOnScroll !== e.closeOnScroll) {
-      var r, i;
+    if ((this.shouldShowPopout(e, t) !== n || t.isLoading !== this.state.isLoading || e.ignoreModalClicks !== this.props.ignoreModalClicks) && (n ? this.setupShowPopout() : this.unsubscribe()), this.props.scrollBehavior !== e.scrollBehavior) {
+      var r, i, a, o;
       let e = this.getDomElement();
       if (null == e) return;
-      this.props.closeOnScroll ? null == (r = e.ownerDocument) || r.addEventListener("scroll", this.handleScroll, true) : null == (i = e.ownerDocument) || i.removeEventListener("scroll", this.handleScroll, true)
+      null == (r = e.ownerDocument) || r.removeEventListener("scroll", this.handleScroll, true), null == (i = e.ownerDocument) || i.removeEventListener("scroll", this.handleStickyScroll, true), "close" === this.props.scrollBehavior ? null == (a = e.ownerDocument) || a.addEventListener("scroll", this.handleScroll, true) : "sticky" === this.props.scrollBehavior && (null == (o = e.ownerDocument) || o.addEventListener("scroll", this.handleStickyScroll, true))
     }
   }
   getDomElement() {
@@ -93,14 +95,14 @@ class C extends(r = Chunk647438.Component) {
     return this.props.ignoreModalClicks ? Chunk981631.CkL.POPOUT_CLOSE_AFTER_MODALS : Chunk981631.CkL.POPOUT_CLOSE
   }
   setupShowPopout() {
-    var e, t, n;
-    let r = this.getDomElement();
-    null != r && (null == (e = r.ownerDocument) || module.addEventListener("mousedown", this.handleDocumentMouseDown, true), null == (t = r.ownerDocument) || exports.addEventListener("mouseup", this.handleDocumentMouseUp, true), this.props.closeOnScroll && (null == (n = r.ownerDocument) || require.addEventListener("scroll", this.handleScroll, true)), this.context.windowDispatch.subscribe(this.closeAction, this.close), this.domElementRef.current = r, this.isValidClickStart = false, this.forceUpdate())
+    var e, t, n, r;
+    let i = this.getDomElement();
+    null != Chunk951288 && (null == (e = Chunk951288.ownerDocument) || module.addEventListener("mousedown", this.handleDocumentMouseDown, true), null == (t = Chunk951288.ownerDocument) || exports.addEventListener("mouseup", this.handleDocumentMouseUp, true), "close" === this.props.scrollBehavior ? null == (n = Chunk951288.ownerDocument) || require.addEventListener("scroll", this.handleScroll, true) : "sticky" === this.props.scrollBehavior && (null == (r = Chunk951288.ownerDocument) || r.addEventListener("scroll", this.handleStickyScroll, true)), this.context.windowDispatch.subscribe(this.closeAction, this.handleEscapeClose), this.domElementRef.current = Chunk951288, this.isValidClickStart = false, this.forceUpdate())
   }
   unsubscribe() {
-    var e, t, n, r;
-    let i = this.domElementRef.current;
-    null != Chunk951288 && (null == (t = Chunk951288.ownerDocument) || exports.removeEventListener("mousedown", this.handleDocumentMouseDown, true), null == (n = Chunk951288.ownerDocument) || require.removeEventListener("mouseup", this.handleDocumentMouseUp, true), null == (r = Chunk951288.ownerDocument) || r.removeEventListener("scroll", this.handleScroll, true)), this.context.windowDispatch.unsubscribe(Chunk981631.CkL.POPOUT_CLOSE, this.close), this.context.windowDispatch.unsubscribe(Chunk981631.CkL.POPOUT_CLOSE_AFTER_MODALS, this.close), null == (e = this.resizeObserver) || module.disconnect()
+    var e, t, n, r, i;
+    let a = this.domElementRef.current;
+    null != Chunk647438 && (null == (t = Chunk647438.ownerDocument) || exports.removeEventListener("mousedown", this.handleDocumentMouseDown, true), null == (n = Chunk647438.ownerDocument) || require.removeEventListener("mouseup", this.handleDocumentMouseUp, true), null == (r = Chunk647438.ownerDocument) || r.removeEventListener("scroll", this.handleScroll, true), null == (i = Chunk647438.ownerDocument) || Chunk951288.removeEventListener("scroll", this.handleStickyScroll, true)), this.context.windowDispatch.unsubscribe(Chunk981631.CkL.POPOUT_CLOSE, this.handleEscapeClose), this.context.windowDispatch.unsubscribe(Chunk981631.CkL.POPOUT_CLOSE_AFTER_MODALS, this.handleEscapeClose), null == (e = this.resizeObserver) || module.disconnect()
   }
   componentWillUnmount() {
     this.unsubscribe(), this.domElementRef.current = null, this.loadingTimeout.stop(), this.validClickTimeout.stop()
@@ -111,7 +113,7 @@ class C extends(r = Chunk647438.Component) {
       useMouseEnter: t
     } = this.props, n = this.shouldShowPopout(this.props, this.state);
     return (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
-      children: [module(T(v({
+      children: [module(A(T({
         onMouseDown: this.handlePreload
       }, exports ? {
         onMouseEnter: this.handleMouseEnter
@@ -142,14 +144,14 @@ class C extends(r = Chunk647438.Component) {
       positionKey: l,
       disablePointerEvents: c,
       layerContext: u,
-      clickTrap: _ = false
+      clickTrap: d = false
     } = this.props, {
-      resizeKey: p,
+      resizeKey: f,
       isLoading: h,
-      shouldShowLoadingState: g
+      shouldShowLoadingState: m
     } = this.state;
-    return Chunk40851 && !Chunk574254 ? null : (0, Chunk951288.jsx)(Chunk302901.mh, {
-      layerContext: null != Chunk846519 ? Chunk846519 : Chunk314910.nz,
+    return Chunk952265 && !Chunk481060 ? null : (0, Chunk951288.jsx)(Chunk302901.mh, {
+      layerContext: null != Chunk603113 ? Chunk603113 : Chunk314910.nz,
       children: (0, Chunk951288.jsx)(Chunk539907.j, {
         ref: this.layerRef,
         onMount: this.handlePopoutShow,
@@ -161,12 +163,12 @@ class C extends(r = Chunk647438.Component) {
         nudgeAlignIntoViewport: require,
         useRawTargetDimensions: r,
         spacing: Chunk647438,
-        autoInvert: Chunk97613,
+        autoInvert: Chunk299608,
         fixed: s,
-        positionKey: null != Chunk603113 ? Chunk603113 : String(Chunk481060),
-        disablePointerEvents: Chunk374470,
+        positionKey: null != Chunk97613 ? Chunk97613 : String(Chunk846519),
+        disablePointerEvents: c,
         onPositionChange: this.handlePopoutPositionChange,
-        clickTrap: Chunk952265,
+        clickTrap: Chunk374470,
         children: this.renderPopout
       })
     })
@@ -177,42 +179,42 @@ class C extends(r = Chunk647438.Component) {
     })
   }
   constructor(...e) {
-    super(...e), O(this, "domElementRef", a.createRef()), O(this, "layerRef", a.createRef()), O(this, "popoutRef", a.createRef()), O(this, "resizeObserver", true), O(this, "popoutId", "popout_".concat(s()())), O(this, "loadingTimeout", new u.V7), O(this, "validClickTimeout", new u.V7), O(this, "isValidClickStart", false), O(this, "state", {
+    super(...e), I(this, "domElementRef", a.createRef()), I(this, "layerRef", a.createRef()), I(this, "popoutRef", a.createRef()), I(this, "resizeObserver", true), I(this, "popoutId", "popout_".concat(c()())), I(this, "loadingTimeout", new f.V7), I(this, "validClickTimeout", new f.V7), I(this, "isValidClickStart", false), I(this, "state", {
       renderedPosition: this.props.position,
       shouldShowPopout: false,
       shouldShowLoadingState: false,
       isLoading: false,
       resizeKey: 0
-    }), O(this, "handlePopoutShow", () => {
-      this.context.windowDispatch.dispatch(y.CkL.POPOUT_SHOW, this.props.popoutKey)
-    }), O(this, "handlePopoutHide", () => {
-      this.context.windowDispatch.dispatch(y.CkL.POPOUT_HIDE, this.props.popoutKey)
-    }), O(this, "handleSetPopoutRef", e => {
+    }), I(this, "handlePopoutShow", () => {
+      this.context.windowDispatch.dispatch(v.CkL.POPOUT_SHOW, this.props.popoutKey)
+    }), I(this, "handlePopoutHide", () => {
+      this.context.windowDispatch.dispatch(v.CkL.POPOUT_HIDE, this.props.popoutKey)
+    }), I(this, "handleSetPopoutRef", e => {
       var t;
       let n = null == e ? true : e.ownerDocument.defaultView;
       null != e && null != n && (this.popoutRef.current = e, null == (t = this.resizeObserver) || t.disconnect(), this.resizeObserver = new n.ResizeObserver(() => {
-        l.flushSync(() => {
+        u.flushSync(() => {
           this.setState({
             resizeKey: this.state.resizeKey + 1
           })
         })
       }), this.resizeObserver.observe(e))
-    }), O(this, "renderPopout", (e, t) => {
+    }), I(this, "renderPopout", (e, t) => {
       let {
         renderPopout: n
       } = this.props;
-      return this.state.isLoading ? this.props.loadingComponent : n(T(v({}, e), {
+      return this.state.isLoading ? this.props.loadingComponent : n(A(T({}, e), {
         updatePosition: t,
         closePopout: this.close,
         setPopoutRef: this.handleSetPopoutRef
       }))
-    }), O(this, "close", e => {
+    }), I(this, "close", (e, t) => {
       let {
-        onRequestClose: t,
-        shouldShow: n
+        onRequestClose: n,
+        shouldShow: r
       } = this.props;
-      (null == t ? true : t(e)) !== S && null == n && this.toggleShow(false)
-    }), O(this, "handleClick", e => {
+      (null == n ? true : n(e, t)) !== C && null == r && this.toggleShow(false)
+    }), I(this, "handleClick", e => {
       let {
         onShiftClick: t,
         shouldShow: n,
@@ -221,7 +223,7 @@ class C extends(r = Chunk647438.Component) {
       } = this.props;
       if ((null == e ? true : e.shiftKey) && null != t) return void t(e);
       let a = null != n;
-      (a ? n : this.state.shouldShowPopout) ? null == i || i(): null == r || r(), a || this.setState(e => {
+      (a ? n : this.state.shouldShowPopout) ? null == i || i(null == e ? true : e.nativeEvent, "user:explicit"): null == r || r(), a || this.setState(e => {
         let {
           shouldShowPopout: t
         } = e;
@@ -229,14 +231,14 @@ class C extends(r = Chunk647438.Component) {
           shouldShowPopout: !t
         }
       })
-    }), O(this, "handleMouseEnter", () => {
+    }), I(this, "handleMouseEnter", () => {
       let {
         onRequestOpen: e
       } = this.props;
       null == e || e(), this.setState({
         shouldShowPopout: true
       })
-    }), O(this, "handlePreload", async () => {
+    }), I(this, "handlePreload", async () => {
       let {
         preload: e
       } = this.props;
@@ -254,9 +256,9 @@ class C extends(r = Chunk647438.Component) {
           })
         }
       }
-    }), O(this, "handleKeyboardPreload", e => {
-      A.has(e.key) && this.handlePreload()
-    }), O(this, "handleDocumentMouseDown", e => {
+    }), I(this, "handleKeyboardPreload", e => {
+      N.has(e.key) && this.handlePreload()
+    }), I(this, "handleDocumentMouseDown", e => {
       let {
         ignoreModalClicks: t,
         closeOnClickOutside: n
@@ -265,24 +267,41 @@ class C extends(r = Chunk647438.Component) {
       let r = e.target,
         i = this.domElementRef.current;
       if (null != i) {
-        if ((0, f.t)(i, r) || g.Z.isOpen() || t && (0, _.$s)()) return;
+        if ((0, p.t)(i, r) || b.Z.isOpen() || t && (0, h.$s)()) return;
         this.isValidClickStart = true
       }
-    }), O(this, "handleDocumentMouseUp", e => {
-      this.isValidClickStart && (this.isValidClickStart = false, this.close(e))
-    }), O(this, "handlePopoutPositionChange", e => {
+    }), I(this, "handleDocumentMouseUp", e => {
+      this.isValidClickStart && (this.isValidClickStart = false, this.close(e, "system:click_outside"))
+    }), I(this, "handlePopoutPositionChange", e => {
       this.setState({
         renderedPosition: e
       })
-    }), O(this, "handleScroll", () => {
-      this.close()
-    })
+    }), I(this, "handleScroll", () => {
+      this.close(true, "system:scroll")
+    }), I(this, "handleEscapeClose", e => {
+      this.close(e, "user:escape")
+    }), I(this, "handleStickyScroll", s()(() => {
+      requestAnimationFrame(() => {
+        let e = this.popoutRef.current;
+        if (null != e && this.shouldShowPopout(this.props, this.state)) {
+          var t;
+          P(e) || this.close(true, "system:viewport_exit"), null == (t = this.layerRef.current) || t.updatePosition()
+        }
+      })
+    }, 1e3 / 60))
   }
 }
-O(C, "defaultProps", {
+I(R, "defaultProps", {
   autoInvert: false,
   nudgeAlignIntoViewport: false,
   spacing: 0,
   loadingComponent: (0, Chunk951288.jsx)(Chunk920676.x, {}),
   closeOnClickOutside: true
-}), O(C, "contextType", Chunk40851.ZP)
+}), I(R, "contextType", Chunk40851.ZP);
+let P = e => {
+  var t, n, r, i, a, o;
+  let s = e.getBoundingClientRect(),
+    l = null != (a = null == (n = e.ownerDocument) || null == (t = n.defaultView) ? true : t.innerHeight) ? a : 0,
+    c = null != (o = null == (i = e.ownerDocument) || null == (r = i.defaultView) ? true : r.innerWidth) ? o : 0;
+  return s.top < l && s.bottom > 0 && s.left < c && s.right > 0
+}

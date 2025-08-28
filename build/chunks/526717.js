@@ -27,21 +27,21 @@ function s(e, t, n) {
       }(null == m || null == (e = m.role_subscription) ? true : e.group_listings),
       r = null == m || null == (t = m.role_subscription) ? true : t.benefit_emojis;
     return null == r ? true : r.filter(e => e.roles.some(e => n.has(e)))
-  }, [null == m ? true : m.role_subscription]), p = null == m ? true : m.guild.icon_hash, h = i.ZP.getGuildIconURL({
+  }, [null == m ? true : m.role_subscription]), p = null == m ? true : m.guild.icon_hash, f = i.ZP.getGuildIconURL({
     id: e,
     icon: p,
     size: n
-  }), f = r.useMemo(() => null != g && g.length > t ? g.slice(0, t) : g, [g, t]), b = null != g && g.length > t ? g.length - t : null, x = null == u ? true : u.slug, j = null != x ? a.EYA.ROLE_SUBSCRIPTION_STORE_PAGE(x) : true, _ = null == m || null == (s = m.guild) ? true : s.name, v = null == m || null == (o = m.role_subscription) ? true : o.subscriber_count, O = !c && null != _ && null != p && null != h;
+  }), h = r.useMemo(() => null != g && g.length > t ? g.slice(0, t) : g, [g, t]), b = null != g && g.length > t ? g.length - t : null, x = null == u ? true : u.slug, j = null != x ? a.EYA.ROLE_SUBSCRIPTION_STORE_PAGE(x) : true, _ = null == m || null == (s = m.guild) ? true : s.name, v = null == m || null == (o = m.role_subscription) ? true : o.subscriber_count, O = !c && null != _ && null != p && null != f;
   return O ? {
     hasAllImperativeDetails: O,
     isLoading: c,
     details: {
       guildName: _,
       guildIcon: p,
-      guildAvatarUrl: h,
+      guildAvatarUrl: f,
       storePageUrl: j,
       subscriberCount: v,
-      emojisToShow: f,
+      emojisToShow: h,
       notShownEmojiCount: b
     }
   } : {

@@ -18,8 +18,8 @@ let m = e => {
       guildFeature: m,
       guild: g,
       className: p,
-      hideTooltip: h = false,
-      tooltipPosition: f = "left",
+      hideTooltip: f = false,
+      tooltipPosition: h = "left",
       onClick: b
     } = e,
     x = g.features.has(m),
@@ -43,11 +43,11 @@ let m = e => {
       className: u.description,
       children: null != _ && (0, o.e9)(_)
     })]
-  })), n = h || null == i ? (0, r.jsx)("div", {
+  })), n = f || null == i ? (0, r.jsx)("div", {
     className: l()(u.availabilityIndicator, p),
     children: t
   }) : (0, r.jsx)(a.ua7, {
-    position: f,
+    position: h,
     text: i,
     children: e => {
       var n, i;

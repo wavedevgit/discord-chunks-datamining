@@ -66,7 +66,7 @@ function T(e, t) {
 function P(e) {
   let {
     guild: t
-  } = e, n = (0, o.e7)([h.Z], () => null != t && h.Z.can(N.Plq.MANAGE_GUILD, t), [t]), l = i.useCallback(async e => {
+  } = e, n = (0, o.e7)([f.Z], () => null != t && f.Z.can(N.Plq.MANAGE_GUILD, t), [t]), l = i.useCallback(async e => {
     let {
       value: n
     } = e;
@@ -113,7 +113,7 @@ function w(e) {
     guild: t,
     className: n,
     withDivider: l = true
-  } = e, s = (0, o.e7)([h.Z], () => null != t && h.Z.can(N.Plq.MANAGE_GUILD, t), [t]), d = i.useCallback(async e => {
+  } = e, s = (0, o.e7)([f.Z], () => null != t && f.Z.can(N.Plq.MANAGE_GUILD, t), [t]), d = i.useCallback(async e => {
     let {
       value: n
     } = e;
@@ -171,7 +171,7 @@ async function R(e, t) {
 function Z(e) {
   let {
     guild: t
-  } = e, n = (0, o.e7)([h.Z], () => null != t && h.Z.can(N.Plq.MANAGE_GUILD, t), [t]), l = t.features.has(N.oNc.COMMUNITY), a = (0, g.n2)(t.id), [s, d] = i.useState(t.features.has(N.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), u = i.useCallback(async e => {
+  } = e, n = (0, o.e7)([f.Z], () => null != t && f.Z.can(N.Plq.MANAGE_GUILD, t), [t]), l = t.features.has(N.oNc.COMMUNITY), a = (0, g.n2)(t.id), [s, d] = i.useState(t.features.has(N.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), u = i.useCallback(async e => {
     d(e), await R(t, e)
   }, [t]);
   return l || !a ? null : (0, r.jsxs)(r.Fragment, {
@@ -212,7 +212,7 @@ function D(e) {
   let {
     guild: t,
     mfaLevel: n
-  } = e, l = (0, o.e7)([h.Z], () => null != t && h.Z.can(N.Plq.MANAGE_GUILD, t), [t]), a = (0, o.e7)([b.default], () => b.default.getCurrentUser()), {
+  } = e, l = (0, o.e7)([f.Z], () => null != t && f.Z.can(N.Plq.MANAGE_GUILD, t), [t]), a = (0, o.e7)([b.default], () => b.default.getCurrentUser()), {
     isGuildOwnerWithMFA: u,
     showMFAUserTooltip: m
   } = i.useMemo(() => null == a ? {
@@ -221,7 +221,7 @@ function D(e) {
   } : {
     isGuildOwnerWithMFA: (0, p.yn)(t, a),
     showMFAUserTooltip: !a.mfaEnabled && (0, p.eM)(t, a)
-  }, [a, t]), g = n === N.BpS.ELEVATED, f = (0, s.throttle)(async e => {
+  }, [a, t]), g = n === N.BpS.ELEVATED, h = (0, s.throttle)(async e => {
     u && (m || await _.Z.updateMFALevel({
       guildId: t.id,
       level: e ? N.BpS.ELEVATED : N.BpS.NONE,
@@ -235,7 +235,7 @@ function D(e) {
       className: I.setupContainer,
       children: [(0, r.jsx)(c.j7V, {
         value: g,
-        onChange: f,
+        onChange: h,
         className: I.switchItem,
         disabled: !u,
         hideBorder: true,

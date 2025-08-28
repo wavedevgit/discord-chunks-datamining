@@ -21,8 +21,8 @@ function g(e) {
     action: n,
     triggerType: g,
     toggled: p,
-    onToggleAction: h
-  } = e, f = e => () => h(e), b = (0, d.c)(n.type, n, g), x = null == (t = n.metadata) ? true : t.channelId, j = (0, i.e7)([c.default, o.Z, s.Z], () => {
+    onToggleAction: f
+  } = e, h = e => () => f(e), b = (0, d.c)(n.type, n, g), x = null == (t = n.metadata) ? true : t.channelId, j = (0, i.e7)([c.default, o.Z, s.Z], () => {
     let e = s.Z.getChannel(x);
     return null == e ? null : (0, a.F6)(e, c.default, o.Z)
   }, [x]);
@@ -56,7 +56,7 @@ function g(e) {
         children: [null != j && u.intl.format(u.t["8Sr/am"], {
           channelName: j
         }), (0, r.jsx)(l.P3F, {
-          onClick: f(true),
+          onClick: h(true),
           className: m.editChannel,
           tag: "span",
           role: "link",
@@ -67,7 +67,7 @@ function g(e) {
       children: (0, r.jsx)(l.XZJ, {
         type: l.XZJ.Types.INVERTED,
         value: p,
-        onChange: f(false),
+        onChange: h(false),
         className: m.__invalid_actionCheckbox
       })
     })]

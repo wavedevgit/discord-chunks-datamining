@@ -44,26 +44,26 @@ function x(e) {
     switch (t) {
       case p.QJ.MULTIPLE_CHOICE:
         return {
-          icon: m.jE$, text: h.intl.string(h.t.ooKh3t)
+          icon: m.jE$, text: f.intl.string(f.t.ooKh3t)
         };
       case p.QJ.PARAGRAPH:
         return {
-          icon: m.OvV, text: h.intl.string(h.t.gG0JBA)
+          icon: m.OvV, text: f.intl.string(f.t.gG0JBA)
         };
       case p.QJ.TEXT_INPUT:
         return {
-          icon: (0, m.GSL)(g.Z), text: h.intl.string(h.t.w6Q9w8)
+          icon: (0, m.GSL)(g.Z), text: f.intl.string(f.t.w6Q9w8)
         };
       case p.QJ.TERMS:
         return {
-          icon: m.snC, text: h.intl.string(h.t["3pz9t7"])
+          icon: m.snC, text: f.intl.string(f.t["3pz9t7"])
         };
       default:
         return null
     }
   }, [t]);
   return null == n ? null : (0, r.jsxs)("div", {
-    className: f.typeTag,
+    className: h.typeTag,
     children: [(0, r.jsx)(n.icon, {
       size: "xs",
       color: "currentColor"
@@ -83,19 +83,19 @@ function j(e) {
     field: l
   } = e;
   return (0, r.jsx)("div", {
-    className: f.backgroundContainer,
+    className: h.backgroundContainer,
     children: i === p.it.REGULAR ? (0, r.jsxs)("div", {
-      className: f.containerPadding,
+      className: h.containerPadding,
       children: [(0, r.jsx)(m.vwX, {
         tag: "h3",
-        className: f.containerTitle,
+        className: h.containerTitle,
         children: t
       }), n]
     }) : (0, r.jsxs)("div", {
-      className: f.compactContainer,
+      className: h.compactContainer,
       children: [(0, r.jsx)(m.vwX, {
         tag: "h3",
-        className: f.compactTitle,
+        className: h.compactTitle,
         children: t
       }), (0, r.jsx)(x, {
         type: l.field_type
@@ -112,7 +112,7 @@ function v(e) {
     isDropHovered: l,
     onDrop: d,
     fieldStyle: g
-  } = e, h = (0, s.debounce)(async (e, t, n) => {
+  } = e, f = (0, s.debounce)(async (e, t, n) => {
     await d(e, t, n)
   }), x = i.useRef(null), [, v] = (0, o.c)({
     type: _,
@@ -121,7 +121,7 @@ function v(e) {
       field: n
     },
     end: (e, t) => {
-      null == e || t.didDrop() || h(e.field, null, true)
+      null == e || t.didDrop() || f(e.field, null, true)
     }
   }), [, O] = (0, c.L)({
     accept: _,
@@ -133,10 +133,10 @@ function v(e) {
       if (null == l || null == a) return;
       let s = (l.bottom - l.top) / 2,
         o = a.y - l.top;
-      i < t && o < s || i > t && o < s || i === t || h(e.field, t, false)
+      i < t && o < s || i > t && o < s || i === t || f(e.field, t, false)
     },
     drop: e => {
-      h(e.field, t, true)
+      f(e.field, t, true)
     }
   });
   return i.useLayoutEffect(() => (v(O(x)), () => {
@@ -144,16 +144,16 @@ function v(e) {
   }), [v, O]), (0, r.jsxs)("div", {
     ref: x,
     "data-dnd-name": "field-".concat(t),
-    className: a()(f.dragContainer, {
-      [f.dropHovered]: l
+    className: a()(h.dragContainer, {
+      [h.dropHovered]: l
     }),
     children: [(0, r.jsx)("div", {
-      className: a()(f.dragIconContainer, {
-        [f.compact]: g === p.it.COMPACT
+      className: a()(h.dragIconContainer, {
+        [h.compact]: g === p.it.COMPACT
       }),
       children: (0, r.jsx)(m.Vni, {
         size: "xs",
-        className: f.dragIcon,
+        className: h.dragIcon,
         color: u.Z.unsafe_rawColors.PRIMARY_400.css
       })
     }), (0, r.jsx)(j, b({}, e))]
@@ -162,28 +162,28 @@ function v(e) {
 
 function O(e) {
   return (0, r.jsxs)("div", {
-    className: a()(f.formFieldContainer, {
-      [f.compact]: e.fieldStyle === p.it.COMPACT
+    className: a()(h.formFieldContainer, {
+      [h.compact]: e.fieldStyle === p.it.COMPACT
     }),
     children: [(0, r.jsx)("div", {
-      className: f.spacingContainer,
+      className: h.spacingContainer,
       children: e.isDragEnabled ? (0, r.jsx)(v, b({}, e)) : (0, r.jsx)(j, b({}, e))
     }), "side" === e.actionsLocation && (0, r.jsxs)("div", {
-      className: a()(f.actionButtonsContainer, {
-        [f.compact]: e.fieldStyle === p.it.COMPACT,
-        [f.canRemove]: e.canRemove
+      className: a()(h.actionButtonsContainer, {
+        [h.compact]: e.fieldStyle === p.it.COMPACT,
+        [h.canRemove]: e.canRemove
       }),
       children: [(0, r.jsx)(m.P3F, {
-        className: f.actionButton,
+        className: h.actionButton,
         onClick: e.onEdit,
-        "aria-label": h.intl.string(h.t.bt75u7),
+        "aria-label": f.intl.string(f.t.bt75u7),
         children: (0, r.jsx)(m.vdY, {
           size: "xs"
         })
       }), e.canRemove && (0, r.jsx)(m.P3F, {
-        className: f.actionButton,
+        className: h.actionButton,
         onClick: e.onRemove,
-        "aria-label": h.intl.string(h.t.N86XcH),
+        "aria-label": f.intl.string(f.t.N86XcH),
         children: (0, r.jsx)(m.XHJ, {
           size: "xs"
         })

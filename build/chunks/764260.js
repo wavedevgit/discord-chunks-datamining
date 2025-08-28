@@ -8,8 +8,8 @@ require.d(exports, {
   TW: () => m,
   TY: () => c,
   Uv: () => d,
-  _l: () => h,
-  d_: () => f,
+  _l: () => f,
+  d_: () => h,
   lO: () => o,
   sI: () => a,
   we: () => p
@@ -89,7 +89,7 @@ function p(e, t, n) {
   })
 }
 
-function h(e, t, n) {
+function f(e, t, n) {
   r.Z.dispatch({
     type: "GUILD_SETTINGS_ROLES_UPDATE_ROLE_ICON",
     id: e,
@@ -98,7 +98,7 @@ function h(e, t, n) {
   })
 }
 
-function f(e, t) {
+function h(e, t) {
   r.Z.dispatch({
     type: "GUILD_SETTINGS_ROLES_UPDATE_ROLE_CONNECTION_CONFIGURATIONS",
     roleId: e,

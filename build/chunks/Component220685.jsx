@@ -96,7 +96,7 @@ let E = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
           children: (0, r.jsx)(g.zxk, {
             variant: "primary",
             text: C.intl.string(C.t.CaOYqa),
-            onClick: () => (0, f.Z)(B),
+            onClick: () => (0, h.Z)(B),
             disabled: H
           })
         })]
@@ -197,7 +197,7 @@ let E = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
         component: "div",
         className: N.contentRegion,
         children: G && (0, r.jsx)(g.oXn, {
-          children: (0, r.jsx)(h.Z, {
+          children: (0, r.jsx)(f.Z, {
             submitting: j,
             onReset: () => {
               var e, t;

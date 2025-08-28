@@ -2,7 +2,8 @@
 /** chunk id: 920155, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  m: () => I
+  m: () => S,
+  q: () => A
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -56,11 +57,29 @@ function b(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let y = 10,
-  O = 4,
-  v = Chunk231338.Vq;
 
-function I(e) {
+function y(e, t) {
+  if (null == e) return {};
+  var n, r, i = O(e, t);
+  if (Object.getOwnPropertySymbols) {
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+  }
+  return i
+}
+
+function O(e, t) {
+  if (null == e) return {};
+  var n, r, i = {},
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+  return i
+}
+let v = 10,
+  I = 4,
+  T = Chunk231338.Vq;
+
+function S(e) {
   var t;
   let {
     children: n,
@@ -68,74 +87,82 @@ function I(e) {
     shouldShow: p = true,
     onRequestClose: m,
     position: E = "top",
-    align: I = "center",
-    hasVideo: T = false,
-    gradientColor: S,
-    caretConfig: A
-  } = e, [C, N] = i.useState(p), R = (0, l.e7)([f.Z], () => f.Z.getLayers()), P = null != (t = R[R.length - 1]) ? t : "base", w = i.useMemo(() => {
+    align: O = "center",
+    hasVideo: S = false,
+    gradientColor: C,
+    onPositionChange: N
+  } = e, [R, P] = i.useState(p), [w, D] = i.useState(E), x = i.useRef(E), L = (0, l.e7)([f.Z], () => f.Z.getLayers()), j = null != (t = L[L.length - 1]) ? t : "base", M = i.useMemo(() => {
     var e;
-    return null == a.current || (null == (e = a.current.closest("[data-layer]")) ? true : e.getAttribute("data-layer")) === P
-  }, [a, P]);
+    return null == a.current || (null == (e = a.current.closest("[data-layer]")) ? true : e.getAttribute("data-layer")) === j
+  }, [a, j]);
   i.useEffect(() => {
-    N(w && p)
-  }, [w, p]);
-  let D = () => {
-      N(false)
+    P(M && p)
+  }, [M, p]);
+  let k = () => {
+      P(false)
     },
-    x = e => {
-      switch (e) {
-        case "top":
-          return "bottom";
-        case "bottom":
-        default:
-          return "top";
-        case "left":
-          return "right";
-        case "right":
-          return "left"
-      }
-    },
-    L = (0, _.i)({
+    U = (0, _.i)({
       shouldShow: p,
-      caretPosition: (null == A ? true : A.position) != null ? A.position : x(E),
-      onExitComplete: D
+      caretPosition: A(w),
+      onExitComplete: k
     }),
-    j = e => L((t, i) => {
-      if (!i) return null;
-      let l = (0, r.jsx)(u.V, b(g({}, e), {
-        modal: false,
-        className: o()(null != S ? h.popoverContentWithGradient : h.popover, {
-          [h["popover--video"]]: T
-        }),
-        returnRef: a,
-        children: n
-      }));
-      return (0, r.jsx)(s.animated.div, {
-        "data-mana-component": "popover",
-        style: t,
-        children: null != S ? (0, r.jsx)(d.$, {
-          offsetBottom: .4,
-          color: S,
-          className: h.popoverGradientWrapper,
-          children: l
-        }) : l
+    G = e => {
+      var {
+        setPopoutRef: t,
+        position: i
+      } = e, l = y(e, ["setPopoutRef", "position"]);
+      return null != i && i !== x.current && (x.current = i, D(i), null == N || N(i)), U((e, i) => {
+        if (!i) return null;
+        let c = (0, r.jsx)(u.V, b(g({}, l), {
+          setDialogRef: t,
+          modal: false,
+          className: o()(null != C ? h.popoverContentWithGradient : h.popover, {
+            [h["popover--video"]]: S
+          }),
+          returnRef: a,
+          children: n
+        }));
+        return (0, r.jsx)(s.animated.div, {
+          "data-mana-component": "popover",
+          style: e,
+          children: null != C ? (0, r.jsx)(d.$, {
+            offsetBottom: .4,
+            color: C,
+            className: h.popoverGradientWrapper,
+            children: c
+          }) : c
+        })
       })
-    });
+    };
   return (0, r.jsx)(c.H, {
     targetElementRef: a,
-    shouldShow: C,
+    shouldShow: R,
     onRequestClose: m,
-    position: E,
-    align: I,
-    spacing: y + O,
+    position: w,
+    align: O,
+    spacing: v + I,
     layerContext: true,
     positionKey: true,
     popoutKey: true,
     fixed: false,
     autoInvert: true,
-    nudgeAlignIntoViewport: true,
+    nudgeAlignIntoViewport: "top" === w || "bottom" === w,
     closeOnClickOutside: false,
-    renderPopout: j,
-    children: v
+    scrollBehavior: "sticky",
+    renderPopout: G,
+    children: T
   })
+}
+let A = e => {
+  switch (e) {
+    case "top":
+      return "bottom";
+    case "bottom":
+    default:
+      return "top";
+    case "left":
+      return "right";
+    case "right":
+      return "left"
+  }
 }

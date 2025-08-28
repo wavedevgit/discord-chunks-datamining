@@ -2,9 +2,8 @@
 /** chunk id: 41534, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  D1: () => d,
-  IK: () => u,
-  V6: () => f
+  D1: () => u,
+  V6: () => d
 });
 var Chunk960048 = require("./960048.js"),
   Chunk837268 = require("./837268.js");
@@ -63,16 +62,10 @@ function c() {
 function u(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null,
     n = arguments.length > 2 ? arguments[2] : true;
-  r.Z.captureMessage(e, c(t, n))
-}
-
-function d(e) {
-  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null,
-    n = arguments.length > 2 ? arguments[2] : true;
   r.Z.captureException(e, c(t, n))
 }
 
-function f(e) {
+function d(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null,
     n = arguments.length > 2 ? arguments[2] : true;
   return r.Z.captureCrash(e, c(t, n))

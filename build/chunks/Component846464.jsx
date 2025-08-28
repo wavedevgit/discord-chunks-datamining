@@ -37,7 +37,7 @@ function L(e) {
   } = (0, u.JL)(), {
     isGift: b,
     claimableRewards: y
-  } = (0, p.wD)(), S = b && null != y && y.length > 0, E = (0, C.N)(i), O = (0, a.Nx)(), P = (0, o.ZP)({
+  } = (0, p.wD)(), S = b && null != y && y.length > 0, E = (0, C.N)(i), v = (0, a.Nx)(), P = (0, o.ZP)({
     location: "PremiumPaymentSelect"
   });
   return (0, r.jsx)(g, {
@@ -57,18 +57,18 @@ function L(e) {
       let d = x.h8.PLAN_SELECT,
         p = (0, c.k5)(t);
       p !== f.Si.TIER_1 && p !== f.Si.TIER_2 || n !== f.Si.TIER_0 || l || (d = x.h8.WHAT_YOU_LOSE);
-      let u = (0, _.T)({
+      let u = (0, h.T)({
           userTrialOffer: s,
           isGift: l,
           skuId: n
         }),
-        j = (0, h.Kp)({
+        j = (0, _.Kp)({
           isTrial: u,
           isGift: l,
           selectedSkuId: n,
           startedPaymentFlowWithPaymentSources: o
         });
-      d !== x.h8.WHAT_YOU_LOSE && j && (d = x.h8.REVIEW, a((0, h.nA)(n, t, C))), i(d, {
+      d !== x.h8.WHAT_YOU_LOSE && j && (d = x.h8.REVIEW, a((0, _.nA)(n, t, C))), i(d, {
         analyticsDataOverride: {
           sku_id: n
         }
@@ -86,7 +86,7 @@ function L(e) {
     }),
     onClose: n,
     isGift: b,
-    inOfferExperience: O,
+    inOfferExperience: v,
     priceOptions: m,
     showPromotionalGiftBanner: S,
     enablePremiumBrandRefresh: P

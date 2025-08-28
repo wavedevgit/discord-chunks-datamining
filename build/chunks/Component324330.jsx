@@ -1,8 +1,9 @@
 /** Chunk was on 88479 **/
 /** chunk id: 324330, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  $: () => h,
-  Z: () => f
+  $r: () => b,
+  JA: () => h,
+  ZP: () => x
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -18,20 +19,25 @@ var Chunk392711 = require("./392711.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk703662 = require("./703662.js");
 
+function f(e) {
+  if (null == e) returnfalse;
+  let t = e.features.has(m.oNc.COMMUNITY),
+    n = e.features.has(m.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL);
+  return t || n
+}
+
 function h() {
-  var e, t;
-  let n = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getProps().guild, []),
-    i = null != (e = null == require ? true : require.features.has(Chunk981631.oNc.COMMUNITY)) && module,
-    s = null != (t = null == require ? true : require.features.has(Chunk981631.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL)) && exports,
-    c = Chunk392711 || Chunk241559;
-  return (0, Chunk951288.jsxs)(Chunk481060.P3F, {
-    onClick: e => {
-      null != n && (c ? (e.preventDefault(), d.Z.close(), (0, o._X)(n.id)) : d.Z.open(n.id, m.pNK.MEMBERS))
-    },
+  let e = Chunk999382.Z.getProps().guild;
+  null != module && (f(module) ? (Chunk434404.Z.close(), (0, Chunk527379._X)(module.id)) : Chunk434404.Z.open(module.id, Chunk981631.pNK.MEMBERS))
+}
+
+function b() {
+  let e = f((0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getProps().guild, []));
+  return (0, Chunk951288.jsxs)("div", {
     className: Chunk703662.rowContainer,
     children: [(0, Chunk951288.jsx)("div", {
       children: Chunk388032.intl.string(Chunk388032.t["9Oq93t"])
-    }), Chunk313364 && (0, Chunk951288.jsx)(Chunk481060.rgF, {
+    }), module && (0, Chunk951288.jsx)(Chunk481060.rgF, {
       size: "xs",
       color: "currentColor",
       className: Chunk703662.linkIcon
@@ -39,7 +45,7 @@ function h() {
   })
 }
 
-function f() {
+function x() {
   var e;
   let {
     guild: t

@@ -1,7 +1,7 @@
 /** Chunk was on 88479 **/
 /** chunk id: 863562, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => f
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -15,12 +15,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk419922 = require("./419922.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk539437 = require("./539437.js");
-let h = e => {
+let f = e => {
   let {
     className: t,
     isDisabled: l,
-    sticker: h,
-    canManageSticker: f
+    sticker: f,
+    canManageSticker: h
   } = e, [b, x] = i.useState(false), [j, _] = (0, c.Z)(null, 4e3), v = () => {
     (0, s.ZDy)(async () => {
       let {
@@ -44,18 +44,18 @@ let h = e => {
         }
         return e
       }({
-        sticker: h,
-        guildId: h.guild_id
+        sticker: f,
+        guildId: f.guild_id
       }, t))
     })
   }, O = async () => {
     _(null), x(true);
     try {
-      await (0, u.Um)(h)
+      await (0, u.Um)(f)
     } catch (e) {
       _(e.body.message), x(false)
     }
-  }, y = d.ZP.useUserTag(h.user);
+  }, y = d.ZP.useUserTag(f.user);
   return (0, r.jsx)(s.ua7, {
     color: s.ua7.Colors.RED,
     forceOpen: null != j,
@@ -71,26 +71,26 @@ let h = e => {
         children: [(0, r.jsx)(m.Z, {
           className: p.sticker,
           size: 72,
-          sticker: h
+          sticker: f
         }), (0, r.jsxs)("div", {
           children: [(0, r.jsx)(s.Text, {
             color: "header-primary",
             variant: "text-xs/semibold",
             className: p.stickerName,
-            children: h.name
-          }), null != h.user && (0, r.jsxs)("div", {
+            children: f.name
+          }), null != f.user && (0, r.jsxs)("div", {
             className: p.user,
             children: [(0, r.jsx)(o.Z, {
               className: p.userAvatar,
               size: s.EFr.SIZE_16,
-              user: h.user
+              user: f.user
             }), (0, r.jsx)(s.Text, {
               color: "header-secondary",
               variant: "text-xs/normal",
               children: y
             })]
           })]
-        }), f ? (0, r.jsxs)("div", {
+        }), h ? (0, r.jsxs)("div", {
           className: p.actions,
           children: [(0, r.jsx)(s.P3F, {
             className: p.action,

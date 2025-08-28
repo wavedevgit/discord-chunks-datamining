@@ -15,9 +15,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk448369 = require("./448369.js"),
   Chunk270856 = require("./270856.js");
-let h = () => null;
+let f = () => null;
 
-function f(e) {
+function h(e) {
   let {
     gameApplicationIds: t,
     handleChange: n,
@@ -38,7 +38,7 @@ function f(e) {
     matchSorterOptions: a,
     clearQueryOnSelect: true,
     customPillContainerClassName: g.pills,
-    renderCustomPill: h
+    renderCustomPill: f
   })
 }
 
@@ -65,7 +65,7 @@ function j(e) {
   let {
     profile: n,
     canManageGuild: l
-  } = e, o = n.id, d = null != (t = null == n ? true : n.gameApplicationIds) ? t : x, h = i.useCallback(e => {
+  } = e, o = n.id, d = null != (t = null == n ? true : n.gameApplicationIds) ? t : x, f = i.useCallback(e => {
     c.Z.updateGuildProfile(o, {
       gameApplicationIds: e
     })
@@ -87,9 +87,9 @@ function j(e) {
       })]
     }), (0, r.jsxs)("div", {
       className: g.sectionBody,
-      children: [(0, r.jsx)(f, {
+      children: [(0, r.jsx)(h, {
         gameApplicationIds: d,
-        handleChange: h,
+        handleChange: f,
         disabled: !l
       }), (0, r.jsx)(b, {
         gameApplicationIds: v,
@@ -98,7 +98,7 @@ function j(e) {
       }), (0, r.jsx)(u.Z, {
         guildId: o,
         selectedGameApplicationIds: d,
-        onUpdateGames: h,
+        onUpdateGames: f,
         disabled: !l
       })]
     })]

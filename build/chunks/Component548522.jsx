@@ -1,7 +1,7 @@
 /** Chunk was on 88479 **/
 /** chunk id: 548522, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  y: () => h
+  y: () => f
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,58 +16,58 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk194973 = require("./194973.js");
 
-function h(e) {
+function f(e) {
   var t;
   let {
     guild: n,
     formFields: c
-  } = e, [h, b] = i.useState(c);
+  } = e, [f, b] = i.useState(c);
   i.useEffect(() => b(c), [c]);
   let x = null != (t = (0, s.A)({
       guildId: n.id
     })) ? t : 0,
     [j, _] = i.useState(null),
-    v = i.useMemo(() => null == h ? true : h.some(e => (0, a.J)(e)), [h]),
-    O = i.useMemo(() => h.length === m.nx, [h]),
+    v = i.useMemo(() => null == f ? true : f.some(e => (0, a.J)(e)), [f]),
+    O = i.useMemo(() => f.length === m.nx, [f]),
     y = i.useCallback(e => {
       u.Z.setPendingMemberVerificationRules(n.id, e), b(e), null != j && _(null)
     }, [j, n.id]),
     C = i.useCallback(e => {
-      y([...h, e])
-    }, [h, y]),
+      y([...f, e])
+    }, [f, y]),
     N = i.useCallback(e => {
-      y([...h.slice(0, e), ...h.slice(e + 1)])
-    }, [h, y]),
+      y([...f.slice(0, e), ...f.slice(e + 1)])
+    }, [f, y]),
     E = i.useCallback((e, t) => {
-      if (h[e] === t) return;
-      let n = [...h];
+      if (f[e] === t) return;
+      let n = [...f];
       n[e] = t, y(n)
-    }, [h, y]),
+    }, [f, y]),
     I = i.useCallback((e, t, n) => {
-      let r = h.indexOf(e),
-        i = [...h];
+      let r = f.indexOf(e),
+        i = [...f];
       null != t && t !== r && (i.splice(r, 1), i.splice(t, 0, e), b(i)), n ? (y(i), null !== j && _(null)) : j !== t && _(t)
-    }, [j, h, y]);
+    }, [j, f, y]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.X6, {
       variant: "text-xs/bold",
       color: "text-muted",
       className: p.title,
       children: g.intl.format(g.t["sm+75u"], {
-        currentCount: h.length,
+        currentCount: f.length,
         maxCount: m.nx
       })
-    }), h.map(e => (0, d.a0)({
+    }), f.map(e => (0, d.a0)({
       dropHoveredIndex: j,
       formField: e,
       guild: n,
-      index: h.indexOf(e),
-      isDragEnabled: h.length > 1,
+      index: f.indexOf(e),
+      isDragEnabled: f.length > 1,
       submittedGuildJoinRequestsCount: x,
       removeFormField: N,
       updateFormField: E,
       updateFormFieldOrder: I,
-      canRemove: h.length > 1,
+      canRemove: f.length > 1,
       actionsLocation: "side",
       fieldStyle: a.it.COMPACT
     })), !O && (0, r.jsx)("div", {
@@ -77,13 +77,13 @@ function h(e) {
         guild: n,
         allowTerms: !v
       })
-    }), !O && (0, r.jsx)(f, {
+    }), !O && (0, r.jsx)(h, {
       addFormField: C
     })]
   })
 }
 
-function f(e) {
+function h(e) {
   let {
     addFormField: t
   } = e, n = i.useMemo(() => [{

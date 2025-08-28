@@ -2,7 +2,7 @@
 /** chunk id: 210887, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => j
+  Z: () => M
 });
 var r, Chunk442837 = require("./442837.js"),
   Chunk780384 = require("./780384.js"),
@@ -123,13 +123,17 @@ function x(e) {
 function L() {
   return T = null, A()
 }
+
+function j() {
+  return A()
+}
 m(C, "displayName", "ThemeStore"), m(C, "persistKey", "ThemeStore"), m(C, "migrations", [e => {
   let t = e.theme;
   return "amoled" === t && (t = "midnight"), b(g({}, e), {
     theme: t
   })
 }, e => e]);
-let j = new C(Chunk570140.Z, {
+let M = new C(Chunk570140.Z, {
   CACHE_LOADED: A,
   CONNECTION_OPEN: N,
   LOGOUT: P,
@@ -142,5 +146,6 @@ let j = new C(Chunk570140.Z, {
   ACCESSIBILITY_DARK_SIDEBAR_TOGGLE: R,
   UPDATE_THEME_PREFERENCES: D,
   SET_THEME_OVERRIDE: x,
-  CLEAR_THEME_OVERRIDE: L
+  CLEAR_THEME_OVERRIDE: L,
+  REFRESH_THEME: j
 })

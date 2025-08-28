@@ -18,8 +18,8 @@ let m = e => {
       tags: m,
       value: g,
       onRemoveTag: p,
-      onAddTag: h,
-      onAddTagError: f,
+      onAddTag: f,
+      onAddTagError: h,
       maxTaxLength: b,
       maxTags: x,
       disabled: j,
@@ -55,12 +55,12 @@ let m = e => {
     let e = O.trim();
     if (0 !== e.length) {
       if (null != x && m.length >= x) {
-        null == f || f(d.intl.string(d.t.Xx7XeH));
+        null == h || h(d.intl.string(d.t.Xx7XeH));
         return
       }
-      h(e), y("")
+      f(e), y("")
     }
-  }, [O, x, h, f, m.length]), E = i.useCallback(e => {
+  }, [O, x, f, h, m.length]), E = i.useCallback(e => {
     switch (e.keyCode) {
       case c.yXg.BACKSPACE:
         0 === O.length && m.length > 0 && (e.preventDefault(), e.stopPropagation(), p(m.length - 1));

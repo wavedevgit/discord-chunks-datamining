@@ -15,8 +15,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk781391 = require("./781391.js"),
   Chunk575196 = require("./575196.js"),
   Chunk233398 = require("./233398.js"),
+  Chunk47760 = require("./47760.js"),
   Chunk629452 = require("./629452.js"),
-  Chunk874893 = require("./874893.js"),
   Chunk119475 = require("./119475.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk306518 = require("./306518.js");
@@ -29,9 +29,9 @@ let b = e => e.map(e => "#".concat(e)),
     } = t, {
       setAll: i
     } = (0, _.Ig)();
-    return (0, p.b)("Share Client Theme Widget") && true !== n ? (0, r.jsxs)("div", {
+    return (0, h.b)("Share Client Theme Widget") && true !== n ? (0, r.jsxs)("div", {
       className: E.container,
-      children: [(0, r.jsx)(I, {
+      children: [(0, r.jsx)(v, {
         message: t
       }), (0, r.jsx)(s.zx, {
         text: g.intl.string(g.t.SKNnqq),
@@ -44,13 +44,12 @@ let b = e => e.map(e => "#".concat(e)),
             colors: b(n.colors),
             chassisMixAmount: n.base_mix,
             gradientAngle: n.gradient_angle
-          }), (0, d.y)(O(n.base_theme))
+          }), (0, d.y)((0, p.e)(n.base_theme))
         }
       })]
     }) : null
   },
-  O = e => h.yW[e],
-  v = (e, t, n) => e.split(" ").map((e, a) => "__USERNAME__" !== e ? (0, r.jsxs)(i.Fragment, {
+  O = (e, t, n) => e.split(" ").map((e, a) => "__USERNAME__" !== e ? (0, r.jsxs)(i.Fragment, {
     children: [e, " "]
   }, a) : (0, r.jsxs)("span", {
     className: E.avatarContainer,
@@ -60,7 +59,7 @@ let b = e => e.map(e => "#".concat(e)),
       size: l.EFr.SIZE_20
     }), " ", n, " "]
   }, a)),
-  I = e => {
+  v = e => {
     let {
       message: t
     } = e, {
@@ -86,7 +85,7 @@ let b = e => e.map(e => "#".concat(e)),
           variant: "text-sm/medium",
           color: "text-secondary",
           className: E.sharedBy,
-          children: v("".concat(g.intl.format(m.default.fQPSER, {
+          children: O("".concat(g.intl.format(m.default.fQPSER, {
             username: "__USERNAME__"
           })), t.author, o.nick)
         })]

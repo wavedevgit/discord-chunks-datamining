@@ -35,12 +35,12 @@ function j(e) {
       className: x.section,
       variant: "text-xs/medium",
       color: "text-muted",
-      children: y ? b.intl.string(f.default["6xBCpK"]) : b.intl.string(f.default.eSRKe3)
+      children: y ? b.intl.string(h.default["6xBCpK"]) : b.intl.string(h.default.eSRKe3)
     }), (0, r.jsx)("div", {
       className: x.divider
     }), (0, r.jsxs)("div", {
       className: l()(x.section, x.body),
-      children: [(0, r.jsx)(h.l, {
+      children: [(0, r.jsx)(f.l, {
         avatar: (0, r.jsx)(o.Z, {
           user: _,
           guildId: i,

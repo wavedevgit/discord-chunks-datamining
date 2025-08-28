@@ -19,8 +19,8 @@ let m = Chunk647438.memo(function(e) {
     children: m,
     isExpanded: g,
     isStuck: p,
-    onExpand: h,
-    disableAnimation: f,
+    onExpand: f,
+    disableAnimation: h,
     disableBackground: b
   } = e, [x, j] = i.useState(true), [_, v] = i.useState(false), {
     ref: O,
@@ -65,7 +65,7 @@ let m = Chunk647438.memo(function(e) {
     onRest: () => {
       v(true)
     }
-  }, x || f ? "animate-never" : "respect-motion-settings");
+  }, x || h ? "animate-never" : "respect-motion-settings");
   return i.useLayoutEffect(() => {
     v(false), I(g)
   }, [g]), i.useLayoutEffect(() => {
@@ -85,7 +85,7 @@ let m = Chunk647438.memo(function(e) {
       style: S,
       children: [(0, r.jsx)(o.P3F, {
         innerRef: O,
-        onClick: p ? true : h,
+        onClick: p ? true : f,
         className: a()(u.innerHeader, {
           [u.toggled]: g && p
         }),

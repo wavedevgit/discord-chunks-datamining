@@ -24,22 +24,22 @@ function b(e) {
     subscribers: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: f.guildSubscriberCount,
+    className: h.guildSubscriberCount,
     children: [(0, r.jsx)("div", {
-      className: f.subscriberCountValue,
+      className: h.subscriberCountValue,
       children: (0, r.jsx)(a.Text, {
         variant: "text-md/normal",
         color: "always-white",
         children: t
       })
     }), (0, r.jsxs)("div", {
-      className: f.subscriberCountText,
+      className: h.subscriberCountText,
       children: [(0, r.jsx)(p.Z, {
         color: c.Z.WHITE
       }), (0, r.jsx)(a.Text, {
         variant: "text-md/normal",
         color: "always-white",
-        children: h.intl.string(h.t["3NNXPT"])
+        children: f.intl.string(f.t["3NNXPT"])
       })]
     })]
   })
@@ -56,14 +56,14 @@ function x(e) {
     icon: n
   });
   return (0, r.jsxs)("div", {
-    className: f.guildCardHeader,
+    className: h.guildCardHeader,
     children: [(0, r.jsx)(d.Z, {
-      className: f.guildCardHeaderAvatar,
+      className: h.guildCardHeaderAvatar,
       iconSrc: i,
       guild: s,
       size: d.Z.Sizes.LARGE
     }), (0, r.jsxs)("div", {
-      className: f.guildCardHeaderTitle,
+      className: h.guildCardHeaderTitle,
       children: [(0, r.jsx)(a.X6q, {
         variant: "heading-lg/semibold",
         color: "header-primary",
@@ -82,7 +82,7 @@ function j(e) {
     quoteAttributionTitle: i
   } = e;
   return (0, r.jsxs)("div", {
-    className: f.guildCardQuote,
+    className: h.guildCardQuote,
     children: [(0, r.jsx)(a.Text, {
       variant: "text-lg/normal",
       color: "interactive-active",
@@ -90,9 +90,9 @@ function j(e) {
     }), (0, r.jsx)(a.Text, {
       variant: "text-md/normal",
       color: "interactive-active",
-      children: h.intl.format(h.t.m0b6Ki, {
+      children: f.intl.format(f.t.m0b6Ki, {
         attributionName: n,
-        attributionTitle: null != i ? i : h.intl.string(h.t.pclUFB)
+        attributionTitle: null != i ? i : f.intl.string(f.t.pclUFB)
       })
     })]
   })
@@ -107,24 +107,24 @@ function _(e) {
     null != i && (0, o.Z)(i)
   };
   return (0, r.jsx)("div", {
-    className: f.guildPremiumEmojis,
+    className: h.guildPremiumEmojis,
     children: c ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(a.Text, {
         variant: "text-xs/semibold",
         color: "header-primary",
-        className: f.premiumEmojisTitle,
-        children: h.intl.string(h.t.wg53Ly)
+        className: h.premiumEmojisTitle,
+        children: f.intl.string(f.t.wg53Ly)
       }), (0, r.jsxs)("div", {
-        className: f.premiumEmojisRow,
+        className: h.premiumEmojisRow,
         children: [(0, r.jsxs)("div", {
-          className: l()(f.emojisContainer, null != n && f.fullEmojisContainer),
+          className: l()(h.emojisContainer, null != n && h.fullEmojisContainer),
           children: [t.map(e => (0, r.jsx)(s.Z, {
-            className: f.emoji,
+            className: h.emoji,
             emojiId: e.id,
             emojiName: e.name,
             animated: e.animated
           }, e.id)), null != n && (0, r.jsx)("div", {
-            className: f.extraEmojiCount,
+            className: h.extraEmojiCount,
             children: (0, r.jsxs)(a.Text, {
               variant: "text-md/semibold",
               color: "text-default",
@@ -132,23 +132,23 @@ function _(e) {
             })
           })]
         }), (0, r.jsx)("div", {
-          className: f.viewServerButtonContainer,
+          className: h.viewServerButtonContainer,
           children: (0, r.jsx)(a.zxk, {
             variant: "secondary",
             disabled: null == i,
             onClick: d,
-            text: h.intl.string(h.t.mQ2IGR),
+            text: f.intl.string(f.t.mQ2IGR),
             fullWidth: true
           })
         })]
       })]
     }) : (0, r.jsx)("div", {
-      className: f.viewServerButtonContainer,
+      className: h.viewServerButtonContainer,
       children: (0, r.jsx)(a.zxk, {
         variant: "secondary",
         disabled: null == i,
         onClick: d,
-        text: h.intl.string(h.t.mQ2IGR),
+        text: f.intl.string(f.t.mQ2IGR),
         fullWidth: true
       })
     })
@@ -168,7 +168,7 @@ function v(e) {
     hasAllImperativeDetails: d
   } = o;
   if (c) return (0, r.jsx)("div", {
-    className: f.guildCard,
+    className: h.guildCard,
     children: (0, r.jsx)(a.$jN, {})
   });
   if (!d) return null;
@@ -176,18 +176,18 @@ function v(e) {
     guildIcon: u,
     guildName: g,
     guildAvatarUrl: p,
-    subscriberCount: h,
+    subscriberCount: f,
     emojisToShow: b,
     notShownEmojiCount: v,
     storePageUrl: O
   } = o.details;
   return (0, r.jsxs)("div", {
-    className: f.guildCard,
+    className: h.guildCard,
     children: [(0, r.jsx)(x, {
       guildIcon: u,
       guildName: g,
       guildAvatarUrl: p,
-      subscriberCount: h
+      subscriberCount: f
     }), (0, r.jsx)(j, {
       quote: i,
       quoteAttribution: l,
@@ -208,11 +208,11 @@ function O(e) {
     children: [(0, r.jsx)(a.X6q, {
       variant: "heading-lg/semibold",
       color: "header-primary",
-      children: h.intl.string(h.t["tJp+QU"])
+      children: f.intl.string(f.t["tJp+QU"])
     }), (0, r.jsx)(a.LZC, {
       size: 24
     }), (0, r.jsx)(g.Z, {
-      carouselClassName: f.creatorGuildCarousel,
+      carouselClassName: h.creatorGuildCarousel,
       items: t,
       renderItem: e => (0, r.jsx)(v, {
         highlightedCreatorGuild: e

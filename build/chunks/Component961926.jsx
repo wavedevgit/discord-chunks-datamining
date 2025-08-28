@@ -1,7 +1,7 @@
 /** Chunk was on 88479 **/
 /** chunk id: 961926, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => h
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -34,7 +34,7 @@ function p(e) {
   return e
 }
 
-function h(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -47,14 +47,14 @@ function h(e, t) {
   }), e
 }
 
-function f(e) {
-  var t, n, f;
+function h(e) {
+  var t, n, h;
   let {
     rule: b,
     onChangeRule: x
   } = e, j = i.useCallback(e => {
-    x(h(p({}, b), {
-      triggerMetadata: h(p({}, b.triggerMetadata), {
+    x(f(p({}, b), {
+      triggerMetadata: f(p({}, b.triggerMetadata), {
         allowList: e
       })
     }))
@@ -71,7 +71,7 @@ function f(e) {
         onChange: j,
         initialValue: null == (t = b.triggerMetadata) ? true : t.allowList,
         maxWordCount: u.I3,
-        collapsed: (null == (n = b.triggerMetadata) ? true : n.allowList) == null || (null == (f = b.triggerMetadata) ? true : f.allowList.length) === 0
+        collapsed: (null == (n = b.triggerMetadata) ? true : n.allowList) == null || (null == (h = b.triggerMetadata) ? true : h.allowList.length) === 0
       })]
     }), (0, r.jsx)(d.Z, {
       type: d.Z.Type.ARROW_DOWN

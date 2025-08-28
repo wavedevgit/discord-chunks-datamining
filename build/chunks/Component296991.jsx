@@ -66,7 +66,7 @@ function I(e) {
     onChange: s,
     onKeyDown: o,
     onClear: u,
-    onRuleReorder: f,
+    onRuleReorder: h,
     isDropHovered: b,
     focused: x,
     onFocus: j,
@@ -83,7 +83,7 @@ function I(e) {
       index: l
     },
     end: (e, t) => {
-      null == e || t.didDrop() || f(e.rule, null, true)
+      null == e || t.didDrop() || h(e.rule, null, true)
     }
   }), [, D] = (0, d.L)({
     accept: E,
@@ -95,10 +95,10 @@ function I(e) {
       if (null == i || null == a) return;
       let s = (i.bottom - i.top) / 2,
         o = a.y - i.top;
-      r < l && o < s || r > l && o > s || f(e.rule, l, false)
+      r < l && o < s || r > l && o > s || h(e.rule, l, false)
     },
     drop: e => {
-      f(e.rule, l, true)
+      h(e.rule, l, true)
     }
   });
   if (i.useLayoutEffect(() => (R(S), Z(D(I)), () => {
@@ -117,7 +117,7 @@ function I(e) {
       className: y.inputWrapper,
       children: [(0, r.jsx)(m.P3F, {
         onMouseDown: () => j(l),
-        children: (0, r.jsx)(h.ZP, {
+        children: (0, r.jsx)(f.ZP, {
           innerClassName: y.rulesTextAreaInput,
           type: g.Ie.RULES_INPUT,
           textValue: T,
@@ -170,7 +170,7 @@ function S(e) {
     setRules: n,
     guild: l,
     disabled: a
-  } = e, s = l.rulesChannelId, c = l.features.has(v.oNc.PREVIEW_ENABLED), d = (0, u.e7)([f.Z], () => null != s ? f.Z.getChannel(s) : null), g = (0, u.e7)([b.ZP], () => b.ZP.getDefaultChannel(l.id)), [p, h] = i.useState(null), [E, S] = i.useState(null), T = i.useCallback(e => {
+  } = e, s = l.rulesChannelId, c = l.features.has(v.oNc.PREVIEW_ENABLED), d = (0, u.e7)([h.Z], () => null != s ? h.Z.getChannel(s) : null), g = (0, u.e7)([b.ZP], () => b.ZP.getDefaultChannel(l.id)), [p, f] = i.useState(null), [E, S] = i.useState(null), T = i.useCallback(e => {
     if (!a && t.length !== _.X2)
       if (null != e && "" === t[t.length - 1].value) {
         let r = [...t];
@@ -196,7 +196,7 @@ function S(e) {
       let i = [...t];
       i.splice(l, 1), i.splice(r, 0, e), n(i)
     }
-    i ? null !== p && h(null) : r !== p && h(r)
+    i ? null !== p && f(null) : r !== p && f(r)
   }, [a, p, t, n]), Z = t.length === _.X2, D = i.useMemo(() => {
     let e = Z ? O.intl.formatToPlainString(O.t.tU718P, {
       number: _.X2

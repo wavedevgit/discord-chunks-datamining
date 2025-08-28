@@ -18,14 +18,14 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk689409 = require("./689409.js");
 
-function f(e) {
+function h(e) {
   let {
     pills: t
   } = e;
   return (0, r.jsx)("div", {
-    className: h.row,
+    className: f.row,
     children: t.map(e => (0, r.jsx)("div", {
-      className: h.pill,
+      className: f.pill,
       children: (0, r.jsx)(s.Text, {
         variant: "text-sm/normal",
         children: e
@@ -47,19 +47,19 @@ function b(e) {
   ];
   return (0, r.jsx)("div", {
     className: l()({
-      [h.responsive]: i
+      [f.responsive]: i
     }),
     children: (0, r.jsxs)("div", {
-      className: h.container,
+      className: f.container,
       children: [(0, r.jsxs)("div", {
-        className: h.content,
+        className: f.content,
         children: [(0, r.jsx)("div", {
-          className: h.pillContainer,
-          children: b.map((e, t) => (0, r.jsx)(f, {
+          className: f.pillContainer,
+          children: b.map((e, t) => (0, r.jsx)(h, {
             pills: e
           }, "pill-row-".concat(t)))
         }), (0, r.jsxs)("div", {
-          className: h.ctaContent,
+          className: f.ctaContent,
           children: [(0, r.jsx)(s.Text, {
             variant: "text-lg/medium",
             color: "header-primary",
@@ -104,15 +104,15 @@ function b(e) {
           })]
         })]
       }), (0, r.jsxs)("div", {
-        className: h.muralImageContainer,
+        className: f.muralImageContainer,
         children: [(0, r.jsx)("img", {
           src: (0, c.b)("server_products/storefront/preview-mural.png"),
           alt: "",
-          className: h.muralImage
+          className: f.muralImage
         }), (0, r.jsx)("img", {
           src: (0, c.b)("server_products/storefront/preview-mural-reduced.png"),
           alt: "",
-          className: h.muralImageReducedWidth
+          className: f.muralImageReducedWidth
         })]
       })]
     })

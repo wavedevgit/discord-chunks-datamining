@@ -95,9 +95,9 @@ function w(e) {
   } = (0, x.Z)(0), {
     scrolledToTop: R,
     handleScroll: Z
-  } = (0, _.V)(), D = (0, c.e7)([h.Z], () => {
+  } = (0, _.V)(), D = (0, c.e7)([f.Z], () => {
     var e;
-    return null == (e = h.Z.getRoleMemberCount(t.id)) ? true : e[n.id]
+    return null == (e = f.Z.getRoleMemberCount(t.id)) ? true : e[n.id]
   }, [n.id, t.id]), A = (0, c.Wu)([b.Z], () => {
     var e;
     return null != (e = b.Z.getEditedRoleConnectionConfigurationsMap().get(n.id)) ? e : []
@@ -112,7 +112,7 @@ function w(e) {
       applicationId: t,
       operator: true,
       value: true
-    }), (0, f.d_)(n.id, T(r, L))
+    }), (0, h.d_)(n.id, T(r, L))
   }
 
   function U() {
@@ -140,7 +140,7 @@ function w(e) {
       fullWidth: true,
       variant: "secondary"
     })), B = (0, r.jsxs)(r.Fragment, {
-      children: [(F = () => (0, f.d_)(n.id, []), (0, r.jsxs)(r.Fragment, {
+      children: [(F = () => (0, h.d_)(n.id, []), (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)("div", {
           className: N.headerTitleContainer,
           children: [(0, r.jsx)("div", {
@@ -181,7 +181,7 @@ function w(e) {
             "aria-labelledby": S
           })
         })
-      }(l, n.id, L, k, (e, t) => (0, f.d_)(n.id, T(e, t))), function(e, t, n, i, l) {
+      }(l, n.id, L, k, (e, t) => (0, h.d_)(n.id, T(e, t))), function(e, t, n, i, l) {
         function a(n, r) {
           let i = [];
           for (let t of e) i.push(I({}, t));
@@ -242,7 +242,7 @@ function w(e) {
             integrations: l
           }, e[0].configuration.connectionType + ":" + e[0].index))
         })
-      }(k, e => (0, f.d_)(n.id, T(e, L)), l, n.id, o), e]
+      }(k, e => (0, h.d_)(n.id, T(e, L)), l, n.id, o), e]
     })
   }
   return (0, r.jsx)(d.yWw, {

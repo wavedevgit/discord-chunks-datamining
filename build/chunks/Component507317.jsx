@@ -59,7 +59,7 @@ let _ = function(e) {
             homeHeader: n
           })
         },
-        uploadType: f.pC.HOME_HEADER
+        uploadType: h.pC.HOME_HEADER
       }, n))
     })
   }, [t.id]), O = i.useCallback(e => {
@@ -78,7 +78,7 @@ let _ = function(e) {
         page: p.ZY5.GUILD_SETTINGS
       },
       guild: t,
-      perks: (0, h.XO)()
+      perks: (0, f.XO)()
     })
   }, [t]), y = (0, r.jsx)(d.Z, {
     image: t.homeHeader,

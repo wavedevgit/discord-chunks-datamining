@@ -67,10 +67,10 @@ function N(e) {
   c.object = n ? _.qAy.ONBOARDING_EDIT : _.qAy.ONBOARDING_REVIEW;
   let u = async function() {
     let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
-    l ? (await (0, f.$y)(t, false), m.default.track(_.rMx.GUILD_SETTINGS_ONBOARDING_EDIT_PAGE_CLICKED, C(y({}, (0, s.hH)(t)), {
+    l ? (await (0, h.$y)(t, false), m.default.track(_.rMx.GUILD_SETTINGS_ONBOARDING_EDIT_PAGE_CLICKED, C(y({}, (0, s.hH)(t)), {
       action_taken: b.W$[b.W$.TOGGLE_DISABLED],
       location: c
-    }))) : (await (0, f.$y)(t, true), e && (0, p.To)(t, true), n ? m.default.track(_.rMx.GUILD_SETTINGS_ONBOARDING_EDIT_PAGE_CLICKED, C(y({}, (0, s.hH)(t)), {
+    }))) : (await (0, h.$y)(t, true), e && (0, p.To)(t, true), n ? m.default.track(_.rMx.GUILD_SETTINGS_ONBOARDING_EDIT_PAGE_CLICKED, C(y({}, (0, s.hH)(t)), {
       action_taken: b.W$[b.W$.TOGGLE_ENABLED],
       location: c
     })) : m.default.track(_.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, C(y({}, (0, s.hH)(t)), {
@@ -79,7 +79,7 @@ function N(e) {
       skip: false,
       completed: true
     })))
-  }, h = () => {
+  }, f = () => {
     m.default.track(_.rMx.GUILD_SETTINGS_ONBOARDING_EDIT_PAGE_CLICKED, C(y({}, (0, s.hH)(t)), {
       action_taken: b.W$[b.W$.PREVIEW],
       location: c
@@ -121,7 +121,7 @@ function N(e) {
   return n ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(E, {
       guildId: t,
-      handlePreview: h
+      handlePreview: f
     }), (0, r.jsx)(I, {}), (0, r.jsxs)("div", {
       className: O.content,
       children: [(0, r.jsx)(S, {
@@ -135,7 +135,7 @@ function N(e) {
       children: [(0, r.jsx)(T, {
         guildId: t,
         handleOnboardingToggle: u,
-        handlePreview: h
+        handlePreview: f
       }), x]
     }), (0, r.jsx)(P, {
       guildId: t
@@ -244,7 +244,7 @@ function T(e) {
     guildId: t,
     handleOnboardingToggle: n,
     handlePreview: a
-  } = e, s = (0, j.$$)(t), o = (0, i.e7)([h.Z], () => h.Z.getSettings()), d = (0, c.uo)(o);
+  } = e, s = (0, j.$$)(t), o = (0, i.e7)([f.Z], () => f.Z.getSettings()), d = (0, c.uo)(o);
   return (0, r.jsxs)("div", {
     className: O.reviewHeader,
     children: [(0, r.jsxs)("div", {

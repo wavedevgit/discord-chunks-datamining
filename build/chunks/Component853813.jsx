@@ -35,14 +35,14 @@ function I(e) {
       selectedSection: I,
       setSelectedSection: S
     } = e,
-    T = (0, s.e7)([f.Z], () => f.Z.guild, []);
+    T = (0, s.e7)([h.Z], () => h.Z.guild, []);
   a()(null != T, "guildId cannot be null here");
   let {
     role: P,
     permissionSearchQuery: w
-  } = (0, s.cj)([f.Z], () => ({
-    role: f.Z.getRole(n),
-    permissionSearchQuery: f.Z.getPermissionSearchQuery()
+  } = (0, s.cj)([h.Z], () => ({
+    role: h.Z.getRole(n),
+    permissionSearchQuery: h.Z.getPermissionSearchQuery()
   }), [n]);
   i.useEffect(() => {
     null == P && l(null)
@@ -63,7 +63,7 @@ function I(e) {
       let {
         role: n,
         editRoleId: r
-      } = k.current, i = (0, x.UT)(I), l = null != (t = null == (e = h.Z.getRoleMemberCount(T.id)) ? true : e[r]) ? t : 0;
+      } = k.current, i = (0, x.UT)(I), l = null != (t = null == (e = f.Z.getRoleMemberCount(T.id)) ? true : e[r]) ? t : 0;
       g.default.track(N.rMx.ROLE_PAGE_VIEWED, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},

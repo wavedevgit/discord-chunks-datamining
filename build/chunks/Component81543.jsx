@@ -1,7 +1,7 @@
 /** Chunk was on 88479 **/
 /** chunk id: 81543, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f,
+  Z: () => h,
   n: () => g
 });
 var r, Chunk951288 = require("./951288.js"),
@@ -39,7 +39,7 @@ let p = {
   tension: 40,
   overshootClamping: true
 };
-class h extends Chunk647438.PureComponent {
+class f extends Chunk647438.PureComponent {
   componentWillEnter(e) {
     var t, n;
     null == (t = (n = this.props).onAnimationStart) || t.call(n), this._animated.setValue(-this.props.direction), o.Z.spring(this._animated, m({
@@ -78,7 +78,7 @@ class h extends Chunk647438.PureComponent {
     super(e), u(this, "_animated", true), this._animated = new o.Z.Value(false * e.direction)
   }
 }
-let f = e => {
+let h = e => {
   let {
     children: t,
     step: n,
@@ -90,7 +90,7 @@ let f = e => {
   return (0, i.jsx)(c.W, {
     component: "div",
     className: s()(d.animator, l),
-    children: (0, i.jsx)(h, {
+    children: (0, i.jsx)(f, {
       direction: r,
       onAnimationStart: a,
       onAnimationEnd: o,

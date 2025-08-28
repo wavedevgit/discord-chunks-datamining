@@ -20,14 +20,14 @@ function g(e) {
     title: n,
     description: l,
     children: g
-  } = e, [p, h] = i.useState(t), f = () => h(e => !e), b = (0, o.Dt)();
+  } = e, [p, f] = i.useState(t), h = () => f(e => !e), b = (0, o.Dt)();
   return (0, r.jsxs)("div", {
     className: m.container,
     children: [(0, r.jsx)(d.Z, {
       className: a()(m.header, {
         [m.headerWithDescription]: p && null != l
       }),
-      onClick: f,
+      onClick: h,
       children: e => {
         let {
           areaRef: t,
@@ -38,7 +38,7 @@ function g(e) {
             variant: "heading-md/semibold",
             children: n
           }), (0, r.jsx)(s.P3F, {
-            onClick: i(f),
+            onClick: i(h),
             "aria-label": u.intl.string(u.t.e5eQOz),
             "aria-controls": b,
             "aria-expanded": p,

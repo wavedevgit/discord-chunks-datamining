@@ -43,8 +43,8 @@ function g(e) {
     buttonLabel: l,
     buttonCallback: a,
     disabled: o
-  } = e, [g, p] = i.useState(false), h = n.flatMap(e => e.items.map(e => e.completed)), f = h.filter(e => e).length / h.length, b = (0, c.q_F)({
-    width: "".concat(100 * f, "%")
+  } = e, [g, p] = i.useState(false), f = n.flatMap(e => e.items.map(e => e.completed)), h = f.filter(e => e).length / f.length, b = (0, c.q_F)({
+    width: "".concat(100 * h, "%")
   });
   return (0, r.jsxs)("div", {
     className: u.container,
@@ -92,7 +92,7 @@ function g(e) {
           size: "sm",
           text: l,
           onClick: a,
-          disabled: 1 !== f || o
+          disabled: 1 !== h || o
         })
       })]
     })]

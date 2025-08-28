@@ -57,7 +57,7 @@ function O(e) {
   let {
     rule: t,
     triggerType: n
-  } = e, l = i.useMemo(() => null == t ? (0, m.V9)(n).map(e => (0, r.jsx)(h.Z, {
+  } = e, l = i.useMemo(() => null == t ? (0, m.V9)(n).map(e => (0, r.jsx)(f.Z, {
     actionType: e,
     triggerType: n
   }, e)) : (0, m.V9)(n).reduce((e, i) => {
@@ -68,7 +68,7 @@ function O(e) {
       } = e;
       return i === t
     });
-    return null == a || e.push((0, r.jsx)(h.Z, {
+    return null == a || e.push((0, r.jsx)(f.Z, {
       actionType: i,
       action: a,
       triggerType: null != (l = null == t ? true : t.triggerType) ? l : n
@@ -125,7 +125,7 @@ function N(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: j.ruleTextContainer,
-      children: (0, r.jsx)(f.Z, {
+      children: (0, r.jsx)(h.Z, {
         rule: n,
         onChangeRule: i
       })
@@ -170,15 +170,15 @@ function I(e) {
     isLoading: c,
     saveRule: m
   } = (0, g.w)(), {
-    updateRule: h
-  } = (0, u.pH)(t.guildId), [f, b] = i.useState(t.enabled), N = (0, l.throttle)(async (e, n) => {
+    updateRule: f
+  } = (0, u.pH)(t.guildId), [h, b] = i.useState(t.enabled), N = (0, l.throttle)(async (e, n) => {
     if (n.preventDefault(), n.stopPropagation(), !c) {
       let e = v(_({}, t), {
-        enabled: !f
+        enabled: !h
       });
-      b(!f);
+      b(!h);
       let n = await m(e, []);
-      null != n && (h(n), b(n.enabled))
+      null != n && (f(n), b(n.enabled))
     }
   }, 300), I = e => {
     y(e), s(e)
@@ -225,7 +225,7 @@ function I(e) {
       children: [(0, r.jsx)(a.rsf, {
         className: j.toggle,
         onChange: N,
-        checked: null != f && f
+        checked: null != h && h
       }), !n && (0, r.jsx)(a.ua7, {
         text: x.intl.string(x.t.UKOtz8),
         position: "top",

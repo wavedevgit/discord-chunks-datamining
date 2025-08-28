@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk54028 = require("./54028.js");
 
-function f(e) {
+function h(e) {
   let t, {
     title: n,
     description: i,
@@ -36,11 +36,11 @@ function f(e) {
         children: [(0, r.jsx)(a.dz2, {
           size: "xs",
           color: "currentColor",
-          className: h.checkmark
+          className: f.checkmark
         }), (0, r.jsx)(a.Text, {
           variant: "text-xs/semibold",
           color: "status-positive",
-          className: h.statusText,
+          className: f.statusText,
           children: p.intl.string(p.t.rPnzRU)
         })]
       });
@@ -50,11 +50,11 @@ function f(e) {
         children: [(0, r.jsx)(a.Mgn, {
           size: "xs",
           color: "currentColor",
-          className: h.warning
+          className: f.warning
         }), (0, r.jsx)(a.Text, {
           variant: "text-xs/semibold",
           color: "status-warning",
-          className: h.statusText,
+          className: f.statusText,
           children: p.intl.string(p.t["yTa+dn"])
         })]
       });
@@ -64,24 +64,24 @@ function f(e) {
         children: [(0, r.jsx)(a.Mgn, {
           size: "xs",
           color: "currentColor",
-          className: h.danger
+          className: f.danger
         }), (0, r.jsx)(a.Text, {
           variant: "text-xs/semibold",
           color: "status-danger",
-          className: h.statusText,
+          className: f.statusText,
           children: p.intl.string(p.t.EkokLy)
         })]
       })
   }
   return (0, r.jsxs)("div", {
-    className: h.onboardingStepContainer,
+    className: f.onboardingStepContainer,
     children: [(0, r.jsxs)("div", {
-      className: h.leftContainer,
+      className: f.leftContainer,
       children: [(0, r.jsx)("div", {
-        className: h.iconContainer,
+        className: f.iconContainer,
         children: l
       }), (0, r.jsxs)("div", {
-        className: h.onboardingStepText,
+        className: f.onboardingStepText,
         children: [(0, r.jsx)(a.X6q, {
           variant: "heading-md/semibold",
           children: n
@@ -92,9 +92,9 @@ function f(e) {
         })]
       })]
     }), (0, r.jsxs)("div", {
-      className: h.rightContainer,
+      className: f.rightContainer,
       children: [t, d, (0, r.jsx)("div", {
-        className: h.cta,
+        className: f.cta,
         children: s ? (0, r.jsx)(a.zxk, {
           size: "sm",
           variant: "secondary",
@@ -140,13 +140,13 @@ function j(e) {
     numDefaultChannels: g.md,
     numChattableChannels: g.X
   });
-  return (0, r.jsx)(f, {
+  return (0, r.jsx)(h, {
     title: y ? p.intl.string(p.t.YZookZ) : p.intl.string(p.t["4GSygo"]),
     description: C,
     icon: (0, r.jsx)(a.VL1, {
       size: "md",
       color: "currentColor",
-      className: h.channelIcon
+      className: f.channelIcon
     }),
     hasStarted: _ > 0 || y,
     status: v || O ? c ? "none" : "good" : "required",
@@ -160,7 +160,7 @@ function _(e) {
     onEdit: n,
     disableGoodStatus: i
   } = e, c = (0, l.Wu)([s.Z], () => s.Z.getDefaultChannelIds(t)), d = (0, l.Wu)([s.Z], () => s.Z.getOnboardingPrompts(t)), u = d.length, [m, g] = (0, o.dF)(t, d, c), b = m.length, x = m.length + g.length, j = b / x * 100, _ = (0, l.e7)([s.Z], () => s.Z.isAdvancedMode(t)), v = u > 0, O = "none";
-  return v && (j >= 85 && !i ? O = "good" : j < 85 && (O = "warning")), (0, r.jsx)(f, {
+  return v && (j >= 85 && !i ? O = "good" : j < 85 && (O = "warning")), (0, r.jsx)(h, {
     title: _ ? p.intl.string(p.t.AGjtFh) : p.intl.string(p.t.dqCzoa),
     description: p.intl.format(p.t.iuNisr, {
       numChannels: b,
@@ -175,7 +175,7 @@ function _(e) {
     icon: (0, r.jsx)(a.iFz, {
       size: "md",
       color: "currentColor",
-      className: h.channelIcon
+      className: f.channelIcon
     }),
     hasStarted: v,
     status: O,
@@ -196,17 +196,17 @@ function v(e) {
   b ? _ || (O = p.intl.string(p.t.wHOoyM)) : O = p.intl.string(p.t.wXFbgY);
   let y = null;
   return _ && g && (y = (0, r.jsx)(a.rsf, {
-    className: h.inlineSwitch,
+    className: f.inlineSwitch,
     checked: x,
     onChange: j,
     disabled: !b
-  })), (0, r.jsx)(f, {
+  })), (0, r.jsx)(h, {
     title: p.intl.string(p.t.mRHqsr),
     description: O,
     icon: (0, r.jsx)(a.Vy8, {
       size: "md",
       color: "currentColor",
-      className: h.channelIcon
+      className: f.channelIcon
     }),
     hasStarted: _,
     status: v,

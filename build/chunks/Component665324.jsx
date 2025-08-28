@@ -202,12 +202,12 @@ function K(e) {
     return [null != (e = v.Z.getSoundsForGuild(t.id)) ? e : L.Hy, v.Z.isFetchingSounds() || v.Z.isFetchingDefaultSounds()]
   }), {
     canCreateExpressions: s
-  } = (0, j.XJ)(t), o = i.useRef(null), d = (0, h.ZP)(), u = t.premiumTier, g = (0, P.yw)(t, l, u);
+  } = (0, j.XJ)(t), o = i.useRef(null), d = (0, f.ZP)(), u = t.premiumTier, g = (0, P.yw)(t, l, u);
   i.useEffect(() => {
     (0, _.w)()
   }, []);
   let p = i.useMemo(() => l.reduce((e, t) => (e[t.soundId] = new Audio((0, O.Z)(t.soundId)), e), {}), [l]),
-    f = 0 === l.length && !a;
+    h = 0 === l.length && !a;
 
   function b(e) {
     var t;
@@ -243,9 +243,9 @@ function K(e) {
         children: k.intl.string(k.t.BohnsL)
       }), (0, r.jsx)("div", {
         className: M.buttons,
-        children: !f && x
+        children: !h && x
       })]
-    }), f ? (0, r.jsxs)(m.ubH, {
+    }), h ? (0, r.jsxs)(m.ubH, {
       theme: d,
       className: M.empty,
       children: [(0, r.jsx)(m.oxh, {
@@ -305,13 +305,13 @@ function Y(e) {
   } = e, {
     soundId: d,
     name: u,
-    user: h,
-    userId: f,
+    user: f,
+    userId: h,
     emojiId: x,
     emojiName: v
   } = t, {
     analyticsLocations: O
-  } = (0, b.ZP)(), y = (0, c.e7)([I.default], () => null != h ? h : I.default.getUser(f), [f, h]), {
+  } = (0, b.ZP)(), y = (0, c.e7)([I.default], () => null != f ? f : I.default.getUser(h), [h, f]), {
     canManageGuildExpression: E
   } = (0, j.XJ)(o), S = i.useMemo(() => E(t), [t, E]), P = null != x || null != v, [w, Z] = i.useState(false), D = (0, C.z)(t, o.id);
   async function A() {
@@ -327,9 +327,9 @@ function Y(e) {
   i.useEffect(() => {
     null == y && e();
     async function e() {
-      await (0, g.PR)(f)
+      await (0, g.PR)(h)
     }
-  }, [y, f]);
+  }, [y, h]);
   let L = i.useCallback(() => {
       null != y && (0, N.openUserProfileModal)({
         userId: y.id,

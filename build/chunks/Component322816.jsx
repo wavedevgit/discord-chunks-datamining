@@ -65,14 +65,14 @@ function T(e) {
     guild: t,
     role: n,
     locked: l
-  } = e, a = (0, o.e7)([g.default], () => g.default.getCurrentUser()), d = i.useMemo(() => f.uB({
+  } = e, a = (0, o.e7)([g.default], () => g.default.getCurrentUser()), d = i.useMemo(() => h.uB({
     user: a,
     context: t
   }), [a, t]), u = i.useMemo(() => ({
     [n.id]: S(I({}, n), {
-      permissions: f.Hn
+      permissions: h.Hn
     })
-  }), [n]), m = i.useMemo(() => f.uB({
+  }), [n]), m = i.useMemo(() => h.uB({
     user: a,
     context: t,
     roles: u
@@ -94,7 +94,7 @@ function T(e) {
           variant: "primary",
           textVariant: "text-sm/semibold",
           onClick: () => (0, b.TY)(n.id),
-          disabled: s.fS(n.permissions, f.Hn) || p || l,
+          disabled: s.fS(n.permissions, h.Hn) || p || l,
           text: C.intl.string(C.t["UYq7+P"])
         })
       })
@@ -157,14 +157,14 @@ function w(e) {
     locked: l,
     setSelectedSection: s,
     initialSearchQuery: o
-  } = e, [d, u] = i.useState(null != o ? o : ""), m = i.useMemo(() => h.Z.generateGuildPermissionSpec(t), [t]).map(e => S(I({}, e), {
+  } = e, [d, u] = i.useState(null != o ? o : ""), m = i.useMemo(() => f.Z.generateGuildPermissionSpec(t), [t]).map(e => S(I({}, e), {
     permissions: e.permissions.filter(e => {
       let t = d.trimStart().toLowerCase();
       return e.title.toLowerCase().includes(t) || null != e.description && e.description.toString().toLowerCase().includes(t)
     })
   })).filter(e => e.permissions.length > 0), {
     headerHeight: g,
-    headerRef: f
+    headerRef: h
   } = (0, j.Z)(0), {
     scrolledToTop: b,
     handleScroll: x
@@ -185,7 +185,7 @@ function w(e) {
         className: a()(E.header, E.stickyHeader, {
           [E.stickyHeaderElevated]: !b
         }),
-        ref: f,
+        ref: h,
         children: [(0, r.jsx)(_.Z, {
           guild: t,
           role: n,

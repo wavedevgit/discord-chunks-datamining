@@ -97,9 +97,9 @@ function _(e) {
         className: j.formDescription,
         disabled: S,
         children: x.intl.string(x.t.zAww7e)
-      }), (0, r.jsx)(f.Z, {})]
+      }), (0, r.jsx)(h.Z, {})]
     }), (0, r.jsx)(l.LZC, {
       size: 24
-    }), (0, r.jsx)(h.Z, {})]
+    }), (0, r.jsx)(f.Z, {})]
   })
 }

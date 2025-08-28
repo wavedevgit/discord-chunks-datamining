@@ -2295,6 +2295,9 @@ class eb extends Chunk495852.C {
         case 4:
           a.statusExpiresAtMs = e.fixed64().toString();
           break;
+        case 5:
+          a.statusCreatedAtMs = s.wA.internalBinaryRead(e, e.uint32(), n, a.statusCreatedAtMs);
+          break;
         default:
           let o = n.readUnknownField;
           if ("throw" === o) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(i, ") for ").concat(this.typeName));
@@ -2305,7 +2308,7 @@ class eb extends Chunk495852.C {
     return a
   }
   internalBinaryWrite(e, t, n) {
-    e.status && s.Gm.internalBinaryWrite(e.status, t.tag(1, r.TD.LengthDelimited).fork(), n).join(), e.customStatus && ev.internalBinaryWrite(e.customStatus, t.tag(2, r.TD.LengthDelimited).fork(), n).join(), e.showCurrentGame && s.D5.internalBinaryWrite(e.showCurrentGame, t.tag(3, r.TD.LengthDelimited).fork(), n).join(), "0" !== e.statusExpiresAtMs && t.tag(4, r.TD.Bit64).fixed64(e.statusExpiresAtMs);
+    e.status && s.Gm.internalBinaryWrite(e.status, t.tag(1, r.TD.LengthDelimited).fork(), n).join(), e.customStatus && ev.internalBinaryWrite(e.customStatus, t.tag(2, r.TD.LengthDelimited).fork(), n).join(), e.showCurrentGame && s.D5.internalBinaryWrite(e.showCurrentGame, t.tag(3, r.TD.LengthDelimited).fork(), n).join(), "0" !== e.statusExpiresAtMs && t.tag(4, r.TD.Bit64).fixed64(e.statusExpiresAtMs), e.statusCreatedAtMs && s.wA.internalBinaryWrite(e.statusCreatedAtMs, t.tag(5, r.TD.LengthDelimited).fork(), n).join();
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.z.onWrite : i)(this.typeName, e, t), t
   }
@@ -2330,6 +2333,11 @@ class eb extends Chunk495852.C {
       name: "status_expires_at_ms",
       kind: "scalar",
       T: 6
+    }, {
+      no: 5,
+      name: "status_created_at_ms",
+      kind: "message",
+      T: () => Chunk381499.wA
     }])
   }
 }

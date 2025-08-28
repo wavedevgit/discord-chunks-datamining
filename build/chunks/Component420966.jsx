@@ -1,8 +1,8 @@
 /** Chunk was on 88479 **/
 /** chunk id: 420966, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  V: () => h,
-  Z: () => f
+  V: () => f,
+  Z: () => h
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk345987 = require("./345987.js");
 
-function h() {
+function f() {
   let [e, t] = Chunk647438.useState(true);
   return {
     scrolledToTop: module,
@@ -27,22 +27,22 @@ function h() {
   }
 }
 
-function f(e) {
+function h(e) {
   let {
     guild: t,
-    role: h,
-    selectedSection: f,
+    role: f,
+    selectedSection: h,
     setSelectedSection: b
   } = e, x = i.useCallback(e => {
     b(e)
   }, [b]), j = (0, l.e7)([d.Z], () => {
     var e;
-    return null == (e = d.Z.getRoleMemberCount(t.id)) ? true : e[h.id]
-  }, [h.id, t.id]), _ = (0, c.fI)(h), v = (0, u.Z)(t.id, h);
+    return null == (e = d.Z.getRoleMemberCount(t.id)) ? true : e[f.id]
+  }, [f.id, t.id]), _ = (0, c.fI)(f), v = (0, u.Z)(t.id, f);
   i.useEffect(() => {
     _ && b(m.ZI.PERMISSIONS)
   }, [_, b]);
-  let O = (0, o.e)(t, h);
+  let O = (0, o.e)(t, f);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: p.titleContainer,
@@ -51,7 +51,7 @@ function f(e) {
         color: "header-primary",
         variant: "text-md/semibold",
         children: g.intl.format(g.t.BUdGkJ, {
-          roleName: h.name
+          roleName: f.name
         })
       }), O ? (0, r.jsx)(a.P3F, {
         className: p.menu,
@@ -81,7 +81,7 @@ function f(e) {
                 return e
               }({}, n), l = l = {
                 guild: t,
-                role: h
+                role: f
               }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
@@ -107,7 +107,7 @@ function f(e) {
     }) : null, (0, r.jsxs)(a.njP, {
       className: p.tabBar,
       "aria-label": g.intl.string(g.t["+1H47u"]),
-      selectedItem: f,
+      selectedItem: h,
       type: "top",
       look: "brand",
       onItemSelect: x,

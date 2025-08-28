@@ -1,7 +1,7 @@
 /** Chunk was on 88479 **/
 /** chunk id: 594980, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  c: () => f
+  c: () => h
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,11 +17,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk200299 = require("./200299.js"),
   Chunk388032 = require("./388032.jsx");
 
-function f(e) {
+function h(e) {
   let {
     guild: t,
     canManageGuild: n,
-    buttonClassName: f
+    buttonClassName: h
   } = e, {
     analyticsLocations: b
   } = (0, a.ZP)(), x = t.features.has(m.oNc.INVITE_SPLASH), j = n && x, _ = i.useCallback(e => {
@@ -40,15 +40,15 @@ function f(e) {
   return x ? (0, r.jsxs)(l.zx, {
     disabled: !j,
     color: l.Tt.BRAND,
-    className: f,
-    children: [h.intl.string(h.t.yG2pUl), (0, r.jsx)(o.ZP, {
+    className: h,
+    children: [f.intl.string(f.t.yG2pUl), (0, r.jsx)(o.ZP, {
       disabled: !j,
       onChange: _,
       maxFileSizeBytes: p.B,
       onFileSizeError: () => (0, s.Z)(p.B)
     })]
   }) : (0, r.jsx)(d.P, {
-    className: f,
+    className: h,
     onClick: v
   })
 }

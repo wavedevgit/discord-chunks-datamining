@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk83552 = require("./83552.js"),
   Chunk270856 = require("./270856.js");
 
-function h(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -34,7 +34,7 @@ function h(e) {
   }
   return e
 }
-let f = {
+let h = {
   label: ""
 };
 
@@ -74,7 +74,7 @@ function b(e) {
       let {
         isShown: l
       } = t;
-      return (0, r.jsx)(s.Z, (n = h({}, e), i = i = {
+      return (0, r.jsx)(s.Z, (n = f({}, e), i = i = {
         ref: m,
         tabIndex: 0,
         active: l,
@@ -148,7 +148,7 @@ function _(e) {
     canManageGuild: n
   } = e, a = i.useMemo(() => t.traits, [t]), s = i.useCallback((e, t, n) => {
     let r = [...a];
-    r[t] = h({}, a[t], n), d.Z.updateGuildProfile(e, {
+    r[t] = f({}, a[t], n), d.Z.updateGuildProfile(e, {
       traits: r
     })
   }, [a]);
@@ -168,7 +168,7 @@ function _(e) {
         var i;
         return (0, r.jsx)(x, {
           guildId: t.id,
-          trait: null != (i = a[e]) ? i : f,
+          trait: null != (i = a[e]) ? i : h,
           index: e,
           onTraitUpdate: s,
           disabled: !n

@@ -35,7 +35,7 @@ function I(e) {
     isExpanded: n,
     selectedChannelId: l,
     className: s
-  } = e, f = (0, g.BT)(t), x = (0, p.Z)(t), [j, _] = i.useState(x), v = (0, o.e7)([b.Z], () => b.Z.getChannel(l), [l]), O = (0, u.ZP)(v), I = async () => {
+  } = e, h = (0, g.BT)(t), x = (0, p.Z)(t), [j, _] = i.useState(x), v = (0, o.e7)([b.Z], () => b.Z.getChannel(l), [l]), O = (0, u.ZP)(v), I = async () => {
     _(!j);
     try {
       var e;
@@ -43,7 +43,7 @@ function I(e) {
       let n = null != (e = null != l ? l : t.safetyAlertsChannelId) ? e : null;
       if (null != n) {
         let e = {
-          raid_alert_type: h.wR.JOIN_RAID,
+          raid_alert_type: f.wR.JOIN_RAID,
           enabled: !x,
           raid_alert_channel_id: n,
           guild_id: t.id,
@@ -79,7 +79,7 @@ function I(e) {
     }), (0, r.jsx)(y.Z, {
       checked: j,
       onChange: I,
-      disabled: !f || null == l
+      disabled: !h || null == l
     })]
   })
 }
@@ -91,7 +91,7 @@ function S(e) {
     selectedChannelId: i,
     setSelectedChannelId: l,
     className: m
-  } = e, g = null != (t = n.safetyAlertsChannelId) ? t : null, f = (0, o.Wu)([x.ZP, v.default, _.Z, j.Z], () => {
+  } = e, g = null != (t = n.safetyAlertsChannelId) ? t : null, h = (0, o.Wu)([x.ZP, v.default, _.Z, j.Z], () => {
     let e = x.ZP.getChannels(n.id)[x.sH].filter(e => {
       let {
         channel: t
@@ -118,7 +118,7 @@ function S(e) {
           safetyAlertsChannelId: e
         })), null != e) {
         let t = {
-          raid_alert_type: h.wR.JOIN_RAID,
+          raid_alert_type: f.wR.JOIN_RAID,
           enabled: (0, p.Z)(n),
           raid_alert_channel_id: e,
           guild_id: n.id,
@@ -138,7 +138,7 @@ function S(e) {
         children: N.intl.string(N.t.sMkYEx)
       }), (0, r.jsx)(c.VcW, {
         wrapperClassName: E.bringToFront,
-        options: f,
+        options: h,
         onChange: b,
         value: i,
         maxVisibleItems: 5
@@ -156,7 +156,7 @@ function T(e) {
   let {
     guild: l
   } = e, [a, s] = i.useState(false), o = null != (t = l.safetyAlertsChannelId) ? t : null, [c, d] = i.useState(null != o ? o : null != (n = null == l ? true : l.publicUpdatesChannelId) ? n : null);
-  return (0, r.jsx)(f.Z, {
+  return (0, r.jsx)(h.Z, {
     renderHeader: (0, r.jsx)(I, {
       isExpanded: a,
       guild: l,

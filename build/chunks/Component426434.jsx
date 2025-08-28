@@ -1,7 +1,7 @@
 /** Chunk was on 88479 **/
 /** chunk id: 426434, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => h
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -18,16 +18,16 @@ var Chunk392711 = require("./392711.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk824804 = require("./824804.js");
 
-function f(e) {
+function h(e) {
   let t, {
       guild: n
     } = e,
-    f = n.mfaLevel,
+    h = n.mfaLevel,
     b = (0, l.e7)([c.Z], () => null != n && c.Z.can(g.Plq.MANAGE_GUILD, n), [n]),
     x = (0, l.e7)([d.default], () => d.default.getCurrentUser()),
     j = (0, o.eM)(n, x),
     _ = null == x ? true : x.mfaEnabled,
-    v = f === g.BpS.ELEVATED,
+    v = h === g.BpS.ELEVATED,
     O = j && _,
     y = (0, i.throttle)(async e => {
       O && await u.Z.updateMFALevel({
@@ -42,9 +42,9 @@ function f(e) {
   }) : p.intl.string(p.t["9Ghu4+"]));
   let C = n.features.has(g.oNc.DISCOVERABLE);
   return (0, r.jsxs)("div", {
-    className: h.simpleItemWrapper,
+    className: f.simpleItemWrapper,
     children: [(0, r.jsxs)("div", {
-      className: h.itemContent,
+      className: f.itemContent,
       children: [(0, r.jsx)(a.X6q, {
         variant: "text-md/semibold",
         color: "header-primary",
@@ -60,13 +60,13 @@ function f(e) {
         checked: v,
         disabled: true,
         onChange: y,
-        className: h.bringToFront,
+        className: f.bringToFront,
         tooltipProps: e
       })
     }) : (0, r.jsx)(m.Z, {
       checked: v,
       onChange: y,
-      className: h.bringToFront
+      className: f.bringToFront
     })]
   })
 }

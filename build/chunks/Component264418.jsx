@@ -4,7 +4,7 @@
 require.d(exports, {
   J: () => y,
   Z: () => O
-});
+}), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
@@ -75,13 +75,9 @@ function b(e, t) {
 }
 
 function y(e) {
-  var t, {
-      title: n,
-      body: a,
-      caretConfig: p = {
-        position: "bottom",
-        align: "center"
-      },
+  var t, n, {
+      title: a,
+      body: p,
       badge: m,
       graphic: b,
       size: y = "md",
@@ -89,41 +85,52 @@ function y(e) {
       textLink: v,
       gradientColor: I,
       onRequestClose: T,
-      popoverRef: S
+      popoverRef: S,
+      position: A,
+      caretConfig: C
     } = e,
-    A = E(e, ["title", "body", "caretConfig", "badge", "graphic", "size", "actions", "textLink", "gradientColor", "onRequestClose", "popoverRef"]);
-  let C = i.useCallback(() => {
-      null == T || T()
-    }, [T]),
-    N = i.useCallback(() => {
-      null == T || T()
-    }, [T]);
-  return (0, r.jsx)(l.m, g(h({}, A), {
-    onRequestClose: C,
+    N = E(e, ["title", "body", "badge", "graphic", "size", "actions", "textLink", "gradientColor", "onRequestClose", "popoverRef", "position", "caretConfig"]);
+  let [R, P] = i.useState(null != A ? A : "top"), [w, D] = i.useState({
+    position: (0, l.q)(R),
+    align: null != (t = null == C ? true : C.align) ? t : "center",
+    customOffset: null == C ? true : C.customOffset
+  }), x = i.useCallback((e, t) => {
+    null == T || T(t)
+  }, [T]), L = i.useCallback(() => {
+    null == T || T("user:explicit")
+  }, [T]), j = i.useCallback(e => {
+    P(e), D(t => g(h({}, t), {
+      position: (0, l.q)(e)
+    }))
+  }, []);
+  return (0, r.jsx)(l.m, g(h({}, N), {
+    position: R,
+    onRequestClose: x,
     gradientColor: I,
-    caretConfig: p,
+    onPositionChange: j,
+    caretConfig: w,
     children: (0, r.jsxs)("div", {
       ref: S,
       children: [(0, r.jsx)(d.u, {
-        onClick: N,
+        onClick: L,
         variant: null != I ? "color-mix" : true
       }), null != b && (0, r.jsx)("div", {
         className: o()(_.graphic, {
           [_["graphic--".concat(y)]]: null != y
         }),
         children: (0, r.jsx)(s.z, g(h({}, b), {
-          aspectRatio: null != (t = b.aspectRatio) ? t : "sm" === y ? "2/1" : "16/9"
+          aspectRatio: null != (n = b.aspectRatio) ? n : "sm" === y ? "2/1" : "16/9"
         }))
       }), (0, r.jsx)(f.Y, {
-        title: n,
-        body: a,
+        title: a,
+        body: p,
         badge: m,
         textLink: v,
         hasBottomMargin: null != O
       }), null != O && O.length > 0 ? (0, r.jsx)(c.k, {
         actions: O
       }) : null, (0, r.jsx)(u.$, {
-        caretConfig: p
+        caretConfig: w
       })]
     })
   }))

@@ -19,16 +19,16 @@ function x() {
   var e, t;
   let n = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion),
     x = (0, Chunk410030.ZP)(),
-    h = (0, Chunk780384.wj)(x),
-    _ = (0, Chunk347896.Z)(),
-    f = null == _ ? true : _.planSelectionBanner,
+    _ = (0, Chunk780384.wj)(x),
+    h = (0, Chunk347896.Z)(),
+    f = null == h ? true : h.planSelectionBanner,
     {
       claimableRewards: j
     } = (0, Chunk987209.wD)();
   if (null == f || null == j) return null;
-  let m = null == (e = f.getBackgroundImageUrl) ? true : module.call(f, h),
+  let m = null == (e = f.getBackgroundImageUrl) ? true : module.call(f, _),
     L = null == (t = f.gradientConfig) ? true : exports.call(f, {
-      isDarkMode: h,
+      isDarkMode: _,
       isAndroid: false
     }),
     g = (0, Chunk717401.Tl)(L);
@@ -39,7 +39,7 @@ function x() {
     } : g,
     children: [(0, Chunk951288.jsx)(Chunk897942.Z, {
       claimableRewards: j,
-      maxRewardImageSrc: f.getImageUrl(h, require),
+      maxRewardImageSrc: f.getImageUrl(_, require),
       size: Chunk481060.EFr.SIZE_40
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-md/medium",

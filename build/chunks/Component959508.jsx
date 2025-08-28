@@ -39,7 +39,7 @@ function y(e) {
     onPromptDragComplete: S,
     onPromptDragStart: T,
     onPromptDragReset: P
-  } = e, w = (0, s.e7)([h.Z], () => h.Z.editedDefaultChannelIds), {
+  } = e, w = (0, s.e7)([f.Z], () => f.Z.editedDefaultChannelIds), {
     drag: R,
     dragSourcePosition: Z,
     drop: D,
@@ -110,7 +110,7 @@ function y(e) {
         text: _.intl.string(_.t["Ku+86e"]),
         children: (0, r.jsx)(c.P3F, {
           className: v.closeIcon,
-          onClick: () => (0, f.fi)(n, l.id),
+          onClick: () => (0, h.fi)(n, l.id),
           children: (0, r.jsx)(c.XHJ, {
             size: "xs",
             color: "currentColor"
@@ -149,7 +149,7 @@ function y(e) {
           children: (0, r.jsx)(c.oil, {
             inputRef: W,
             value: l.title,
-            onChange: e => (0, f.Kk)(n, l.id, {
+            onChange: e => (0, h.Kk)(n, l.id, {
               title: e
             }),
             placeholder: _.intl.string(_.t.QMCuCg),
@@ -185,7 +185,7 @@ function y(e) {
             size: 20,
             type: c.XZJ.Types.INVERTED,
             value: !l.singleSelect,
-            onChange: (e, t) => (0, f.Kk)(n, l.id, {
+            onChange: (e, t) => (0, h.Kk)(n, l.id, {
               singleSelect: !t
             }),
             children: (0, r.jsx)(c.Text, {
@@ -197,7 +197,7 @@ function y(e) {
             size: 20,
             type: c.XZJ.Types.INVERTED,
             value: l.inOnboarding && l.required,
-            onChange: (e, t) => (0, f.Kk)(n, l.id, {
+            onChange: (e, t) => (0, h.Kk)(n, l.id, {
               required: t
             }),
             disabled: !l.inOnboarding,
@@ -222,7 +222,7 @@ function y(e) {
           text: _.intl.string(_.t["Ku+86e"]),
           children: (0, r.jsx)(c.P3F, {
             className: v.closeIcon,
-            onClick: () => (0, f.fi)(n, l.id),
+            onClick: () => (0, h.fi)(n, l.id),
             children: (0, r.jsx)(c.XHJ, {
               size: "xs",
               color: "currentColor"
@@ -248,7 +248,7 @@ function C(e) {
   function s(e) {
     return (0, r.jsx)(c.P3F, {
       className: v.example,
-      onClick: () => (0, f.Kk)(n, t.id, {
+      onClick: () => (0, h.Kk)(n, t.id, {
         title: e
       }),
       children: (0, r.jsx)(c.Text, {
@@ -281,7 +281,7 @@ function N(e) {
     handleDragStart: s,
     handleDragReset: o,
     handleDragComplete: c
-  } = (0, u.Z)(n.options, e => (0, f.Kk)(t, n.id, {
+  } = (0, u.Z)(n.options, e => (0, h.Kk)(t, n.id, {
     options: e
   }));
   return (0, r.jsxs)("div", {

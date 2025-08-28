@@ -33,7 +33,7 @@ function y(e) {
     variant: "text-md/normal",
     color: "text-danger",
     className: O.vanityInfo,
-    children: (0, h.i)(null == t ? true : t.code)
+    children: (0, f.i)(null == t ? true : t.code)
   });
   if (null != n && n.length > 0) {
     let e = (0, d.Z)(n);
@@ -114,13 +114,13 @@ function N(e) {
     })
   }, [p, t, x]);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, h.p)(t) ? (0, r.jsx)(C, {
+    children: [(0, f.p)(t) ? (0, r.jsx)(C, {
       guild: t,
       vanityURLCode: n,
       vanityURLUses: a,
       originalVanityURLCode: s,
       hasError: null != d
-    }) : (0, r.jsx)(f.P, {
+    }) : (0, r.jsx)(h.P, {
       onClick: v,
       className: O.upsellButton
     }), (0, r.jsx)(y, {

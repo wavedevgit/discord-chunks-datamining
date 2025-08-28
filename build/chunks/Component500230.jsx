@@ -61,8 +61,8 @@ function j(e) {
     label: (0, c.Z)(t.primary, t.secondary)
   });
   return (0, r.jsx)(o.P3F, x(b({}, s), {
-    className: a()(f.pickerItem, {
-      [f.pickerItemSelected]: i
+    className: a()(h.pickerItem, {
+      [h.pickerItemSelected]: i
     }),
     onClick: l,
     children: (0, r.jsx)(u.v, {
@@ -87,7 +87,7 @@ function _(e) {
     handleChange: p
   } = e, j = (0, o.xUy)({
     isSelected: l,
-    label: h.intl.formatToPlainString(h.t.hr4D2d, {
+    label: f.intl.formatToPlainString(f.t.hr4D2d, {
       primaryColor: n,
       secondaryColor: i
     })
@@ -116,8 +116,8 @@ function _(e) {
       onClick: () => {
         u(e => !e)
       },
-      className: a()(f.pickerItem, {
-        [f.pickerItemSelected]: l
+      className: a()(h.pickerItem, {
+        [h.pickerItemSelected]: l
       }),
       children: (0, r.jsx)(o.ilE, {
         size: "custom",
@@ -148,14 +148,14 @@ let v = function(e) {
     className: t,
     children: [(0, r.jsx)(o.vwX, {
       id: v,
-      className: f.sectionTitle,
-      children: h.intl.string(p.default.zSbMdX)
+      className: h.sectionTitle,
+      children: f.intl.string(p.default.zSbMdX)
     }), (0, r.jsx)(o.nn4, {
       id: O,
-      children: h.intl.string(h.t.ovbW0d)
+      children: f.intl.string(f.t.ovbW0d)
     }), (0, r.jsxs)("div", x(b({}, C), {
       "aria-describedby": O,
-      className: f.pickerGrid,
+      className: h.pickerGrid,
       children: [g.Ek.map(e => (0, r.jsx)(j, {
         palette: e,
         badge: l,

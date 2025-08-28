@@ -79,7 +79,7 @@ let K = d().throttle(Chunk80932.OQ, 1e3),
       id: n.id,
       animated: n.animated,
       size: 32
-    }), g = (0, h.q_F)({
+    }), g = (0, f.q_F)({
       from: {
         transform: "rotate(0)"
       },
@@ -99,7 +99,7 @@ let K = d().throttle(Chunk80932.OQ, 1e3),
       className: a()(z.emojiRow, W.card),
       children: [(0, r.jsx)("div", {
         className: z.emojiColumn,
-        children: (0, r.jsx)(h.ua7, {
+        children: (0, r.jsx)(f.ua7, {
           text: n.available ? null : H.intl.string(H.t["KUzI7+"]),
           children: e => {
             var t, i;
@@ -152,19 +152,19 @@ let K = d().throttle(Chunk80932.OQ, 1e3),
         })
       }), (0, r.jsxs)("div", {
         className: z.column,
-        children: [(0, r.jsx)(h.qEK, {
+        children: [(0, r.jsx)(f.qEK, {
           src: n.user.getAvatarURL(t, 20),
           "aria-label": p,
-          size: h.EFr.SIZE_20
-        }), (0, r.jsx)(h.R94, {
+          size: f.EFr.SIZE_20
+        }), (0, r.jsx)(f.R94, {
           className: z.emojiRowText,
           children: p
         })]
-      }), null != l && !s && (0, r.jsx)(h.P3F, {
+      }), null != l && !s && (0, r.jsx)(f.P3F, {
         "aria-label": H.intl.string(H.t.bt75u7),
         className: z.editEmojiRolesButton,
         onClick: () => l(n, t),
-        children: (0, r.jsx)(h.vdY, {
+        children: (0, r.jsx)(f.vdY, {
           size: "md",
           color: "currentColor",
           className: z.editEmojiRolesIcon
@@ -176,7 +176,7 @@ let K = d().throttle(Chunk80932.OQ, 1e3),
             let {
               status: t
             } = e;
-            429 === t && f.Z.show({
+            429 === t && h.Z.show({
               title: H.intl.string(H.t.iufib2),
               body: H.intl.string(H.t["Whhv4+"])
             })
@@ -195,18 +195,18 @@ let K = d().throttle(Chunk80932.OQ, 1e3),
       onEdit: o,
       newlyAddedEmojiIds: c
     } = e;
-    return t ? (0, r.jsx)(h.$jN, {
+    return t ? (0, r.jsx)(f.$jN, {
       className: z.spinner,
-      type: h.$jN.Type.SPINNING_CIRCLE
-    }) : 0 === i.length && 0 === l.length ? (0, r.jsxs)(h.ubH, {
+      type: f.$jN.Type.SPINNING_CIRCLE
+    }) : 0 === i.length && 0 === l.length ? (0, r.jsxs)(f.ubH, {
       theme: a,
       className: z.empty,
-      children: [(0, r.jsx)(h.oxh, {
+      children: [(0, r.jsx)(f.oxh, {
         darkSrc: n(458601),
         lightSrc: n(673557),
         width: 272,
         height: 212
-      }), (0, r.jsx)(h.OZU, {
+      }), (0, r.jsx)(f.OZU, {
         note: H.intl.string(H.t.RBbtMz),
         children: H.intl.string(H.t.lxsmBQ)
       })]
@@ -238,8 +238,8 @@ let K = d().throttle(Chunk80932.OQ, 1e3),
       maxSlots: n,
       emojiCount: i
     } = e, l = Math.max(n - i, 0);
-    return (0, r.jsxs)(h.vwX, {
-      tag: h.RB0.H2,
+    return (0, r.jsxs)(f.vwX, {
+      tag: f.RB0.H2,
       className: z.title,
       children: [t, (0, r.jsxs)("span", {
         children: [" — ", H.intl.format(H.t.sgL8sL, {
@@ -258,24 +258,24 @@ let K = d().throttle(Chunk80932.OQ, 1e3),
     } = e, o = i.useMemo(() => [...t].reverse(), [t]), {
       canManageGuildExpression: c
     } = (0, P.Gw)(n);
-    return 0 === t.length ? (0, r.jsx)(h.R94, {
-      type: h.geA.DESCRIPTION,
+    return 0 === t.length ? (0, r.jsx)(f.R94, {
+      type: f.geA.DESCRIPTION,
       className: z.content,
       children: H.intl.string(H.t.SpxYoa)
-    }) : (0, r.jsxs)(h.hjN, {
+    }) : (0, r.jsxs)(f.hjN, {
       className: z.content,
       children: [(0, r.jsxs)("div", {
         className: z.emojiTable,
-        children: [(0, r.jsx)(h.R94, {
-          type: h.geA.DESCRIPTION,
+        children: [(0, r.jsx)(f.R94, {
+          type: f.geA.DESCRIPTION,
           className: z.emojiColumn,
           children: H.intl.string(H.t.Z0i3Gh)
-        }), (0, r.jsx)(h.R94, {
-          type: h.geA.DESCRIPTION,
+        }), (0, r.jsx)(f.R94, {
+          type: f.geA.DESCRIPTION,
           className: z.columnLabel,
           children: H.intl.string(H.t.giajw8)
-        }), (0, r.jsx)(h.R94, {
-          type: h.geA.DESCRIPTION,
+        }), (0, r.jsx)(f.R94, {
+          type: f.geA.DESCRIPTION,
           className: z.columnLabel,
           children: H.intl.string(H.t.edavpq)
         })]
@@ -362,7 +362,7 @@ let K = d().throttle(Chunk80932.OQ, 1e3),
       } = (0, Chunk357156.XJ)(exports),
       {
         revision: u,
-        emojis: f,
+        emojis: h,
         autoOpen: b
       } = (0, Chunk442837.cj)([Chunk471613.Z], () => ({
         revision: Chunk471613.Z.getEmojiRevision(exports.id),
@@ -455,7 +455,7 @@ let K = d().throttle(Chunk80932.OQ, 1e3),
       }, eo = () => {
         null !== Chunk267642.current && ((0, Chunk481060.Mr3)(Chunk267642.current), Chunk267642.current = null)
       }, ec = async e => {
-        A.current = await (0, h.ZDy)(async () => {
+        A.current = await (0, f.ZDy)(async () => {
           let {
             default: t
           } = await n.e("16169").then(n.bind(n, 935333));
