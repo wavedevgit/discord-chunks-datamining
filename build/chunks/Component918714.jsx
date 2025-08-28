@@ -44,8 +44,8 @@ function h(e) {
 let g = function(e) {
   let {
     onClose: t
-  } = e, [n, o] = i.useState(null), [u, d] = i.useState(true), [g, b] = i.useState(null), [v, j] = i.useState(false), x = i.useCallback(async () => {
-    d(true), b(null);
+  } = e, [n, o] = i.useState(null), [u, d] = i.useState(true), [g, v] = i.useState(null), [b, j] = i.useState(false), x = i.useCallback(async () => {
+    d(true), v(null);
     try {
       var e;
       let n = await (0, c.PA)();
@@ -66,7 +66,7 @@ let g = function(e) {
         }
       })
     } catch (e) {
-      b(p.intl.string(f.default["/f++3t"]))
+      v(p.intl.string(f.default["/f++3t"]))
     } finally {
       d(false)
     }
@@ -81,7 +81,7 @@ let g = function(e) {
         };
         await (0, c.Wl)(t), x()
       } catch (e) {
-        b(p.intl.string(f.default["+QRSxc"]))
+        v(p.intl.string(f.default["+QRSxc"]))
       } finally {
         j(false)
       }
@@ -111,7 +111,7 @@ let g = function(e) {
         }), !u && null === g && null != n && (0, r.jsx)(h, {
           task: n,
           handleSubmit: E,
-          disabled: v
+          disabled: b
         })]
       })
     })]

@@ -1,7 +1,7 @@
 /** Chunk was on 72853 **/
 /** chunk id: 32574, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => d
+  Z: () => f
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -11,12 +11,13 @@ var Chunk442837 = require("./442837.js"),
   Chunk168107 = require("./168107.jsx"),
   Chunk480916 = require("./480916.js"),
   Chunk594174 = require("./594174.js"),
+  Chunk118589 = require("./118589.js"),
   Chunk62272 = require("./62272.jsx");
-let d = function(e) {
+let f = function(e) {
   let {
     onSubmit: t
   } = e, n = (0, i.e7)([s.default], () => s.default.getCurrentUser());
-  return (0, r.jsx)(u.Q, {
+  return (0, r.jsx)(d.Q, {
     title: "Lorem ipsum dolor",
     actions: [{
       text: "Consectetur adipiscing",
@@ -25,10 +26,10 @@ let d = function(e) {
         (null == n ? true : n.ageVerificationStatus) === l.F$.UNVERIFIED ? c.Z.showAgeVerificationGetStartedModal({
           entryPoint: o.cU.SAFETY_FLOWS,
           onClose: () => t({
-            type: "empty"
+            type: u.rY.Empty
           })
         }) : t({
-          type: "empty"
+          type: u.rY.Empty
         })
       }
     }],
