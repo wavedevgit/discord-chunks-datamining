@@ -1,7 +1,7 @@
 /** Chunk was on 47129 **/
 /** chunk id: 636298, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => T
+  Z: () => f
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -15,13 +15,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk214779 = require("./214779.js");
 
-function f(e) {
+function N(e) {
   let {
     icon: t,
     label: n,
     onClick: r
   } = e;
-  return (0, i.jsx)(a.h, {
+  return (0, i.jsx)(s.h, {
     onClick: r,
     icon: t,
     size: "sm",
@@ -30,7 +30,7 @@ function f(e) {
   })
 }
 
-function N(e) {
+function g(e) {
   let {
     title: t,
     onClose: n
@@ -41,7 +41,7 @@ function N(e) {
     className: E.contentHeader,
     children: [(0, i.jsxs)("div", {
       className: E.contentHeaderLeft,
-      children: [s.tq && (0, i.jsx)(f, {
+      children: [a.tq && (0, i.jsx)(N, {
         icon: u.yFM,
         onClick: () => r(true),
         label: _.intl.string(_.t["13/7kZ"])
@@ -50,14 +50,14 @@ function N(e) {
         color: "header-secondary",
         children: t
       })]
-    }), (0, i.jsx)(f, {
+    }), (0, i.jsx)(N, {
       icon: u.Uz9,
       onClick: n,
       label: _.intl.string(_.t.cpT0Cg)
     })]
   })
 }
-let T = Chunk647438.memo(function(e) {
+let f = Chunk647438.memo(function(e) {
   let {
     onClose: t,
     setting: n
@@ -66,10 +66,10 @@ let T = Chunk647438.memo(function(e) {
   } = (0, c.t)();
   return (0, i.jsxs)("div", {
     className: o()(E.content, {
-      [E.mobile]: s.tq,
+      [E.mobile]: a.tq,
       [E.mobileNavigationOpen]: l
     }),
-    children: [(0, i.jsx)(N, {
+    children: [(0, i.jsx)(g, {
       title: r,
       onClose: t
     }), (0, i.jsx)("div", {

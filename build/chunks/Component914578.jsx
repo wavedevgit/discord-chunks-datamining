@@ -1,7 +1,7 @@
 /** Chunk was on 47129 **/
 /** chunk id: 914578, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => N
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -27,7 +27,7 @@ function E(e) {
       children: [(0, i.jsx)(l.sNh, {
         id: "changelog",
         label: d.intl.string(d.t.LRmNAg),
-        action: () => (0, s.Z)(true)
+        action: () => (0, a.Z)(true)
       }), (0, i.jsx)(l.sNh, {
         id: "acknowledgements",
         label: d.intl.string(d.t["0nUKy8"]),
@@ -35,13 +35,13 @@ function E(e) {
       }), (0, i.jsx)(l.sNh, {
         id: "support",
         label: d.intl.string(d.t["Yl/Rio"]),
-        action: () => (0, o.Z)(a.w)
+        action: () => (0, o.Z)(s.w)
       })]
     })
   })
 }
 
-function f() {
+function N() {
   let e = Chunk647438.useRef(null);
   return (0, Chunk951288.jsxs)("div", {
     children: [(0, Chunk951288.jsx)(Chunk604227.Z, {

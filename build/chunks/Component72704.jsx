@@ -13,11 +13,11 @@ function o(e) {
   } = e, {
     useValue: n,
     setValue: o,
-    useTitle: s,
-    useSubtitle: a,
+    useTitle: a,
+    useSubtitle: s,
     useOptions: u,
     renderOptionLabel: c
-  } = t, d = s(), _ = null == a ? true : a(), E = n(), f = u();
+  } = t, d = a(), _ = null == s ? true : s(), E = n(), N = u();
   return (0, i.jsx)(r.xJW, {
     title: d,
     className: l.selectContainer,
@@ -29,7 +29,7 @@ function o(e) {
       }), (0, i.jsx)(r.q4e, {
         value: E,
         onChange: e => o(e),
-        options: f,
+        options: N,
         renderOptionLabel: null != c ? c : true,
         renderOptionValue: null != c ? e => {
           let [t] = e;

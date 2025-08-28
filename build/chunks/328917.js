@@ -15,7 +15,7 @@ var Chunk657707 = require("./657707.js"),
 let _ = (0, Chunk509613.x1)(Chunk869235.t.NOTIFICATIONS_PANE, {
     getLayout: () => [Chunk147814.Z, Chunk81214.Z, Chunk221431.Z, Chunk763551.Z, Chunk131948.Z]
   }),
-  E = (0, Chunk509613.wf)(Chunk869235.t.NOTIFICATIONS_SETTINGS_PANEL, {
+  E = (0, Chunk509613.wf)(Chunk869235.t.NOTIFICATIONS_PANEL, {
     icon: Chunk657707.Dkj,
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.HcoRu7),
     getLayout: () => [_]

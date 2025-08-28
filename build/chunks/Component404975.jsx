@@ -24,25 +24,25 @@ function _(e) {
     var t;
     return null == (t = e.trailing) ? true : t.newIndicatorDismissibleContentTypes
   }).filter(e => null != e);
-  return (0, i.jsx)(a.ZP, {
+  return (0, i.jsx)(s.ZP, {
     contentTypes: _,
     children: e => {
       let {
-        visibleContent: a
+        visibleContent: s
       } = e;
       return (0, i.jsxs)("div", {
         className: l()(d.sidebar, {
           [d.mobile]: o.tq,
           [d.mobileNavigationOpen]: c
         }),
-        children: [null != n && (0, i.jsx)(n, {}), (0, i.jsx)(s.zJl, {
+        children: [null != n && (0, i.jsx)(n, {}), (0, i.jsx)(a.zJl, {
           className: d.navScroller,
           fade: true,
           children: (0, i.jsx)("nav", {
             className: d.nav,
             children: t.layout.map(e => (0, i.jsx)(E, {
               section: e,
-              visibleContent: a
+              visibleContent: s
             }, e.key))
           })
         }), null != r && (0, i.jsx)("footer", {
@@ -62,7 +62,7 @@ function E(e) {
   } = e, l = null == (t = n.useLabel) ? true : t.call(n);
   return (0, i.jsxs)("ul", {
     className: d.section,
-    children: [null != l && (0, i.jsx)(s.X6q, {
+    children: [null != l && (0, i.jsx)(a.X6q, {
       className: d.label,
       variant: "heading-sm/medium",
       color: "text-tertiary",

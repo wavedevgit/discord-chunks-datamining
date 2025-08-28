@@ -13,7 +13,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk920952 = require("./920952.js");
 
 function c(e) {
-  let t = (0, s.Z7)(),
+  let t = (0, a.Z7)(),
     n = (0, o.Z)(u.Z, t);
   return (0, i.jsx)(l.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -35,7 +35,7 @@ function c(e) {
   }({
     root: n,
     sidebarHeader: d,
-    sidebarFooter: a.Z
+    sidebarFooter: s.Z
   }, e))
 }
 

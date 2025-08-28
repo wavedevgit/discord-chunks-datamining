@@ -1,17 +1,17 @@
 /** Chunk was on 47129 **/
 /** chunk id: 82084, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => a
 });
 var Chunk951288 = require("./951288.js"),
   Chunk257465 = require("./257465.jsx"),
-  Chunk985092 = require("./985092.js"),
+  Chunk985092 = require("./985092.jsx"),
   Chunk79808 = require("./79808.jsx");
 
-function s(e) {
+function a(e) {
   var t, n, {
-      root: s,
-      sidebarHeader: a,
+      root: a,
+      sidebarHeader: s,
       sidebarFooter: u
     } = e,
     c = function(e, t) {
@@ -52,8 +52,8 @@ function s(e) {
   }, c), n = n = {
     children: (0, i.jsx)(o.Z, {
       onClose: c.onClose,
-      root: s,
-      sidebarHeader: a,
+      root: a,
+      sidebarHeader: s,
       sidebarFooter: u,
       initialPanel: l.Z
     })

@@ -19,7 +19,7 @@ function d(e) {
   } = e, {
     showNotice: u,
     handleStoreUpdate: d
-  } = (0, a.Cu)(), _ = null == t ? true : t.stores;
+  } = (0, s.Cu)(), _ = null == t ? true : t.stores;
   r.useEffect(() => {
     if (null != _) {
       let e = new l.Fh(_, () => {
@@ -35,7 +35,7 @@ function d(e) {
     let {
       element: e
     } = t;
-    return (0, i.jsx)(s.oXn, {
+    return (0, i.jsx)(a.oXn, {
       className: c.notice,
       children: (0, i.jsx)(e, {})
     })
@@ -56,7 +56,7 @@ function _(e) {
   if (1 !== t.layout.length) throw Error("Panels with multiple panes must define a render prop to handle the multiple panes");
   return (0, i.jsx)(d, {
     notice: t.notice,
-    children: (0, i.jsx)(s.w0Z, {
+    children: (0, i.jsx)(a.w0Z, {
       className: c.scroller,
       children: (0, i.jsx)("div", {
         className: c.panel,

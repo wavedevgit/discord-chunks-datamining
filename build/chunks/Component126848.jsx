@@ -2,7 +2,8 @@
 /** chunk id: 126848, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => E
+  Z: () => b,
+  x: () => E
 }), require("./539854.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,39 +21,45 @@ var Chunk951288 = require("./951288.js"),
   Chunk474936 = require("./474936.js"),
   Chunk563042 = require("./563042.js");
 
-function E(e) {
-  let t, {
-      decoration: n,
-      label: a,
-      isSelected: E
-    } = e,
-    b = (0, d.N)(),
-    y = (0, u.Ng)(),
-    O = (0, c.Vi)(),
-    v = (null == b ? true : b.trial_id) === m.a7,
-    I = [];
-  O && I.push(s.z.BOGO_2025_NITRO_TAB_BADGE);
-  let [T, S] = (0, l.US)(I, true, true);
-  return i.useEffect(() => {
-    true === E && T === s.z.BOGO_2025_NITRO_TAB_BADGE && S(h.L.AUTO_DISMISS)
-  }, [S, E, T]), t = O ? (0, r.jsx)(f.Z, {}) : null != y ? (0, r.jsx)(_.GN, {
-    isTabSelected: E,
-    userDiscount: y,
+function E() {
+  let e, t = arguments.length > 0 && true !== arguments[0] && arguments[0],
+    n = (0, Chunk639119.N)(),
+    a = (0, Chunk104494.Ng)(),
+    o = (0, Chunk367074.Vi)(),
+    p = (null == require ? true : require.trial_id) === Chunk474936.a7,
+    g = [];
+  o && Chunk563042.push(Chunk704215.z.BOGO_2025_NITRO_TAB_BADGE);
+  let [E, b] = (0, Chunk243778.US)(Chunk563042, true, true);
+  return Chunk647438.useEffect(() => {
+    true === exports && E === Chunk704215.z.BOGO_2025_NITRO_TAB_BADGE && b(Chunk921944.L.AUTO_DISMISS)
+  }, [b, exports, E]), o ? e = (0, Chunk951288.jsx)(Chunk655525.Z, {}) : null != Chunk120356 ? e = (0, Chunk951288.jsx)(Chunk924540.GN, {
+    isTabSelected: exports,
+    userDiscount: Chunk120356,
     includesAmountOff: false
-  }) : null == b || v ? null != n ? n : (0, r.jsx)(p.Z, {
-    isSelected: E
-  }) : (0, r.jsx)(_.$H, {
-    isTabSelected: E,
-    trialOffer: b
-  }), (0, r.jsxs)(r.Fragment, {
+  }) : null == require || Chunk170671 || (e = (0, Chunk951288.jsx)(Chunk924540.$H, {
+    isTabSelected: exports,
+    trialOffer: require
+  })), module
+}
+
+function b(e) {
+  var t, n;
+  let {
+    decoration: i,
+    label: a,
+    isSelected: s
+  } = e, l = (0, c.Vi)(), u = null != (n = null != (t = E(s)) ? t : i) ? n : (0, r.jsx)(p.Z, {
+    isSelected: s
+  });
+  return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: o()(g.premiumLabel, {
-        [g.selected]: E && !O
+        [g.selected]: s && !l
       }),
-      children: [a, t]
+      children: [a, u]
     }), (0, r.jsx)("div", {
       className: o()(g.background, {
-        [g.selectedBackground]: !O && E
+        [g.selectedBackground]: !l && s
       })
     })]
   })

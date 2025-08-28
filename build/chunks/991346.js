@@ -199,7 +199,7 @@ function H() {
       inputMode: Chunk131951.Z.getMode(),
       isInputProfileCustom: Chunk131951.Z.isInputProfileCustom()
     }));
-  return Chunk647438.useMemo(() => (0, Chunk620163.i)({
+  return Chunk647438.useMemo(() => (0, Chunk620163.iE)({
     unseenGiftCount: Chunk906467,
     showPrepaidPaymentPastDueWarning: Chunk413182,
     impressionSource: Chunk839469,

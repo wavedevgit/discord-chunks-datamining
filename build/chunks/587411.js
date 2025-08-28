@@ -14,5 +14,5 @@ let c = (0, Chunk509613.qs)(Chunk869235.t.DESKTOP_NOTIFICATIONS, {
   useTitle: () => Chunk388032.intl.string(Chunk388032.t["/0WClp"]),
   useSubtitle: () => Chunk388032.intl.string(Chunk388032.t.wF9ih4),
   useValue: () => (0, Chunk442837.e7)([Chunk292959.Z], () => Chunk292959.Z.getDesktopType()) !== Chunk981631.qrD.NEVER,
-  setValue: e => r.default.setDesktopType(e ? a.qrD.ALL : a.qrD.NEVER)
+  setValue: e => r.default.setDesktopType(e ? s.qrD.ALL : s.qrD.NEVER)
 })

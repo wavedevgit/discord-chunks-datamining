@@ -1,7 +1,7 @@
 /** Chunk was on 47129 **/
 /** chunk id: 36361, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => N
+  Z: () => g
 }), require("./415506.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -16,7 +16,7 @@ var Chunk28682 = require("./28682.js"),
   Chunk409322 = require("./409322.jsx"),
   Chunk670304 = require("./670304.jsx"),
   Chunk357660 = require("./357660.jsx");
-let N = function(e) {
+let g = function(e) {
   let {
     node: t
   } = e;
@@ -25,7 +25,7 @@ let N = function(e) {
     case r.J.SECTION:
       throw Error("".concat(t.type, " nodes should never be rendered directly"));
     case r.J.PANEL:
-      return (0, i.jsx)(f.T, {
+      return (0, i.jsx)(N.T, {
         node: t
       });
     case r.J.PANE:
@@ -53,11 +53,11 @@ let N = function(e) {
         node: t
       });
     case r.J.SELECT:
-      return (0, i.jsx)(a.Z, {
+      return (0, i.jsx)(s.Z, {
         node: t
       });
     case r.J.RADIO:
-      return (0, i.jsx)(s.Z, {
+      return (0, i.jsx)(a.Z, {
         node: t
       });
     case r.J.CUSTOM:

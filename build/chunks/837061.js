@@ -14,7 +14,7 @@ let u = (0, Chunk509613.x1)(Chunk869235.t.ACCOUNT_PANE, {
     getLayout: () => [],
     render: Chunk393681.Z
   }),
-  c = (0, Chunk509613.wf)(Chunk869235.t.ACCOUNT_SETTINGS_PANEL, {
+  c = (0, Chunk509613.wf)(Chunk869235.t.ACCOUNT_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["JAIM/v"]),
     icon: Chunk657707.tBG,
     legacySearchKey: Chunk726985.s6.ACCOUNT,
